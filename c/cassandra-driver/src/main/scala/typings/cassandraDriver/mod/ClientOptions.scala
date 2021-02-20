@@ -12,12 +12,13 @@ import typings.cassandraDriver.metricsMod.metrics.ClientMetrics
 import typings.cassandraDriver.trackerMod.tracker.RequestTracker
 import typings.node.tlsMod.ConnectionOptions
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientOptions extends js.Object {
+trait ClientOptions extends StObject {
   
   var authProvider: js.UndefOr[AuthProvider] = js.native
   
@@ -80,109 +81,97 @@ object ClientOptions {
   }
   
   @scala.inline
-  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthProvider(value: AuthProvider): Self = StObject.set(x, "authProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthProviderUndefined: Self = StObject.set(x, "authProvider", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloud(value: SecureConnectBundle): Self = StObject.set(x, "cloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthProvider(value: AuthProvider): Self = this.set("authProvider", value.asInstanceOf[js.Any])
+    def setCloudUndefined: Self = StObject.set(x, "cloud", js.undefined)
     
     @scala.inline
-    def deleteAuthProvider: Self = this.set("authProvider", js.undefined)
+    def setContactPoints(value: js.Array[String]): Self = StObject.set(x, "contactPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloud(value: SecureConnectBundle): Self = this.set("cloud", value.asInstanceOf[js.Any])
+    def setContactPointsUndefined: Self = StObject.set(x, "contactPoints", js.undefined)
     
     @scala.inline
-    def deleteCloud: Self = this.set("cloud", js.undefined)
+    def setContactPointsVarargs(value: String*): Self = StObject.set(x, "contactPoints", js.Array(value :_*))
     
     @scala.inline
-    def setContactPointsVarargs(value: String*): Self = this.set("contactPoints", js.Array(value :_*))
+    def setCredentials(value: Password): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactPoints(value: js.Array[String]): Self = this.set("contactPoints", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteContactPoints: Self = this.set("contactPoints", js.undefined)
+    def setEncoding(value: CopyBuffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Password): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setIsMetadataSyncEnabled(value: Boolean): Self = StObject.set(x, "isMetadataSyncEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: CopyBuffer): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setIsMetadataSyncEnabledUndefined: Self = StObject.set(x, "isMetadataSyncEnabled", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setKeyspace(value: String): Self = StObject.set(x, "keyspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMetadataSyncEnabled(value: Boolean): Self = this.set("isMetadataSyncEnabled", value.asInstanceOf[js.Any])
+    def setKeyspaceUndefined: Self = StObject.set(x, "keyspace", js.undefined)
     
     @scala.inline
-    def deleteIsMetadataSyncEnabled: Self = this.set("isMetadataSyncEnabled", js.undefined)
+    def setLocalDataCenter(value: String): Self = StObject.set(x, "localDataCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyspace(value: String): Self = this.set("keyspace", value.asInstanceOf[js.Any])
+    def setLocalDataCenterUndefined: Self = StObject.set(x, "localDataCenter", js.undefined)
     
     @scala.inline
-    def deleteKeyspace: Self = this.set("keyspace", js.undefined)
+    def setMaxPrepared(value: Double): Self = StObject.set(x, "maxPrepared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalDataCenter(value: String): Self = this.set("localDataCenter", value.asInstanceOf[js.Any])
+    def setMaxPreparedUndefined: Self = StObject.set(x, "maxPrepared", js.undefined)
     
     @scala.inline
-    def deleteLocalDataCenter: Self = this.set("localDataCenter", js.undefined)
+    def setMetrics(value: ClientMetrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPrepared(value: Double): Self = this.set("maxPrepared", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
     @scala.inline
-    def deleteMaxPrepared: Self = this.set("maxPrepared", js.undefined)
+    def setPolicies(value: AddressResolution): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: ClientMetrics): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    def setPooling(value: CoreConnectionsPerHost): Self = StObject.set(x, "pooling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: AddressResolution): Self = this.set("policies", value.asInstanceOf[js.Any])
+    def setPoolingUndefined: Self = StObject.set(x, "pooling", js.undefined)
     
     @scala.inline
-    def deletePolicies: Self = this.set("policies", js.undefined)
+    def setPrepareOnAllHosts(value: Boolean): Self = StObject.set(x, "prepareOnAllHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPooling(value: CoreConnectionsPerHost): Self = this.set("pooling", value.asInstanceOf[js.Any])
+    def setPrepareOnAllHostsUndefined: Self = StObject.set(x, "prepareOnAllHosts", js.undefined)
     
     @scala.inline
-    def deletePooling: Self = this.set("pooling", js.undefined)
+    def setProfiles(value: js.Array[ExecutionProfile]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrepareOnAllHosts(value: Boolean): Self = this.set("prepareOnAllHosts", value.asInstanceOf[js.Any])
+    def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
     @scala.inline
-    def deletePrepareOnAllHosts: Self = this.set("prepareOnAllHosts", js.undefined)
-    
-    @scala.inline
-    def setProfilesVarargs(value: ExecutionProfile*): Self = this.set("profiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setProfiles(value: js.Array[ExecutionProfile]): Self = this.set("profiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfiles: Self = this.set("profiles", js.undefined)
+    def setProfilesVarargs(value: ExecutionProfile*): Self = StObject.set(x, "profiles", js.Array(value :_*))
     
     @scala.inline
     def setPromiseFactory(
@@ -190,51 +179,51 @@ object ClientOptions {
           /* callback */ js.Function2[/* err */ Error, /* result */ js.UndefOr[js.Any], Unit], 
           Unit
         ] => js.Promise[_]
-    ): Self = this.set("promiseFactory", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "promiseFactory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePromiseFactory: Self = this.set("promiseFactory", js.undefined)
+    def setPromiseFactoryUndefined: Self = StObject.set(x, "promiseFactory", js.undefined)
     
     @scala.inline
-    def setProtocolOptions(value: MaxSchemaAgreementWaitSeconds): Self = this.set("protocolOptions", value.asInstanceOf[js.Any])
+    def setProtocolOptions(value: MaxSchemaAgreementWaitSeconds): Self = StObject.set(x, "protocolOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocolOptions: Self = this.set("protocolOptions", js.undefined)
+    def setProtocolOptionsUndefined: Self = StObject.set(x, "protocolOptions", js.undefined)
     
     @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = this.set("queryOptions", value.asInstanceOf[js.Any])
+    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryOptions: Self = this.set("queryOptions", js.undefined)
+    def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
     
     @scala.inline
-    def setRePrepareOnUp(value: Boolean): Self = this.set("rePrepareOnUp", value.asInstanceOf[js.Any])
+    def setRePrepareOnUp(value: Boolean): Self = StObject.set(x, "rePrepareOnUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRePrepareOnUp: Self = this.set("rePrepareOnUp", js.undefined)
+    def setRePrepareOnUpUndefined: Self = StObject.set(x, "rePrepareOnUp", js.undefined)
     
     @scala.inline
-    def setRefreshSchemaDelay(value: Double): Self = this.set("refreshSchemaDelay", value.asInstanceOf[js.Any])
+    def setRefreshSchemaDelay(value: Double): Self = StObject.set(x, "refreshSchemaDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefreshSchemaDelay: Self = this.set("refreshSchemaDelay", js.undefined)
+    def setRefreshSchemaDelayUndefined: Self = StObject.set(x, "refreshSchemaDelay", js.undefined)
     
     @scala.inline
-    def setRequestTracker(value: RequestTracker): Self = this.set("requestTracker", value.asInstanceOf[js.Any])
+    def setRequestTracker(value: RequestTracker): Self = StObject.set(x, "requestTracker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestTracker: Self = this.set("requestTracker", js.undefined)
+    def setRequestTrackerUndefined: Self = StObject.set(x, "requestTracker", js.undefined)
     
     @scala.inline
-    def setSocketOptions(value: CoalescingThreshold): Self = this.set("socketOptions", value.asInstanceOf[js.Any])
+    def setSocketOptions(value: CoalescingThreshold): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSocketOptions: Self = this.set("socketOptions", js.undefined)
+    def setSocketOptionsUndefined: Self = StObject.set(x, "socketOptions", js.undefined)
     
     @scala.inline
-    def setSslOptions(value: ConnectionOptions): Self = this.set("sslOptions", value.asInstanceOf[js.Any])
+    def setSslOptions(value: ConnectionOptions): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSslOptions: Self = this.set("sslOptions", js.undefined)
+    def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.handsontable.mod._Handsontable.Core
 import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,84 +97,72 @@ object CollapsibleColumns {
   }
   
   @scala.inline
-  implicit class CollapsibleColumnsOps[Self <: CollapsibleColumns] (val x: Self) extends AnyVal {
+  implicit class CollapsibleColumnsMutableBuilder[Self <: CollapsibleColumns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonEnabledList(value: Map[Double, Set[Double]]): Self = StObject.set(x, "buttonEnabledList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckDependencies(value: () => Unit): Self = StObject.set(x, "checkDependencies", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapsableCoordsList(value: Map[Double, Set[Double]]): Self = StObject.set(x, "collapsableCoordsList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonEnabledList(value: Map[Double, Set[Double]]): Self = this.set("buttonEnabledList", value.asInstanceOf[js.Any])
+    def setCollapseAll(value: () => Unit): Self = StObject.set(x, "collapseAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckDependencies(value: () => Unit): Self = this.set("checkDependencies", js.Any.fromFunction0(value))
+    def setCollapseSection(value: js.Object => Unit): Self = StObject.set(x, "collapseSection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapsableCoordsList(value: Map[Double, Set[Double]]): Self = this.set("collapsableCoordsList", value.asInstanceOf[js.Any])
+    def setCollapsedColumns(value: js.Array[Double]): Self = StObject.set(x, "collapsedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseAll(value: () => Unit): Self = this.set("collapseAll", js.Any.fromFunction0(value))
+    def setCollapsedColumnsVarargs(value: Double*): Self = StObject.set(x, "collapsedColumns", js.Array(value :_*))
     
     @scala.inline
-    def setCollapseSection(value: js.Object => Unit): Self = this.set("collapseSection", js.Any.fromFunction1(value))
+    def setCollapsedSections(value: Map[Double, js.Array[_]]): Self = StObject.set(x, "collapsedSections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsedColumnsVarargs(value: Double*): Self = this.set("collapsedColumns", js.Array(value :_*))
+    def setColumnHeaderLevelCount(value: Double): Self = StObject.set(x, "columnHeaderLevelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsedColumns(value: js.Array[Double]): Self = this.set("collapsedColumns", value.asInstanceOf[js.Any])
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsedSections(value: Map[Double, js.Array[_]]): Self = this.set("collapsedSections", value.asInstanceOf[js.Any])
+    def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnHeaderLevelCount(value: Double): Self = this.set("columnHeaderLevelCount", value.asInstanceOf[js.Any])
+    def setExpandSection(value: js.Object => Unit): Self = StObject.set(x, "expandSection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setGenerateIndicator(value: (Double, HTMLElement) => HTMLElement): Self = StObject.set(x, "generateIndicator", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExpandAll(value: () => Unit): Self = this.set("expandAll", js.Any.fromFunction0(value))
+    def setHiddenColumnsPlugin(value: js.Object): Self = StObject.set(x, "hiddenColumnsPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandSection(value: js.Object => Unit): Self = this.set("expandSection", js.Any.fromFunction1(value))
+    def setMarkSectionAs(value: (String, Double, Double, Boolean) => Unit): Self = StObject.set(x, "markSectionAs", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGenerateIndicator(value: (Double, HTMLElement) => HTMLElement): Self = this.set("generateIndicator", js.Any.fromFunction2(value))
+    def setMeetsDependencies(value: () => Boolean): Self = StObject.set(x, "meetsDependencies", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHiddenColumnsPlugin(value: js.Object): Self = this.set("hiddenColumnsPlugin", value.asInstanceOf[js.Any])
+    def setNestedHeadersPlugin(value: js.Object): Self = StObject.set(x, "nestedHeadersPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkSectionAs(value: (String, Double, Double, Boolean) => Unit): Self = this.set("markSectionAs", js.Any.fromFunction4(value))
+    def setParseSettings(value: () => Unit): Self = StObject.set(x, "parseSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMeetsDependencies(value: () => Boolean): Self = this.set("meetsDependencies", js.Any.fromFunction0(value))
+    def setSettings(value: Boolean | js.Array[_]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedHeadersPlugin(value: js.Object): Self = this.set("nestedHeadersPlugin", value.asInstanceOf[js.Any])
+    def setSettingsVarargs(value: js.Any*): Self = StObject.set(x, "settings", js.Array(value :_*))
     
     @scala.inline
-    def setParseSettings(value: () => Unit): Self = this.set("parseSettings", js.Any.fromFunction0(value))
+    def setToggleAllCollapsibleSections(value: String => Unit): Self = StObject.set(x, "toggleAllCollapsibleSections", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSettingsVarargs(value: js.Any*): Self = this.set("settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: Boolean | js.Array[_]): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToggleAllCollapsibleSections(value: String => Unit): Self = this.set("toggleAllCollapsibleSections", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleCollapsibleSection(value: (js.Array[js.Object], String) => Unit): Self = this.set("toggleCollapsibleSection", js.Any.fromFunction2(value))
+    def setToggleCollapsibleSection(value: (js.Array[js.Object], String) => Unit): Self = StObject.set(x, "toggleCollapsibleSection", js.Any.fromFunction2(value))
   }
 }

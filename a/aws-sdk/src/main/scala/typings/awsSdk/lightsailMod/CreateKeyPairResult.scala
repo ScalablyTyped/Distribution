@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateKeyPairResult extends js.Object {
+trait CreateKeyPairResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about the new key pair you just created.
@@ -36,42 +37,30 @@ object CreateKeyPairResult {
   }
   
   @scala.inline
-  implicit class CreateKeyPairResultOps[Self <: CreateKeyPairResult] (val x: Self) extends AnyVal {
+  implicit class CreateKeyPairResultMutableBuilder[Self <: CreateKeyPairResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyPair(value: KeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPair(value: KeyPair): Self = this.set("keyPair", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+    def setPrivateKeyBase64(value: Base64): Self = StObject.set(x, "privateKeyBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: Operation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setPrivateKeyBase64Undefined: Self = StObject.set(x, "privateKeyBase64", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setPublicKeyBase64(value: Base64): Self = StObject.set(x, "publicKeyBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeyBase64(value: Base64): Self = this.set("privateKeyBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKeyBase64: Self = this.set("privateKeyBase64", js.undefined)
-    
-    @scala.inline
-    def setPublicKeyBase64(value: Base64): Self = this.set("publicKeyBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyBase64: Self = this.set("publicKeyBase64", js.undefined)
+    def setPublicKeyBase64Undefined: Self = StObject.set(x, "publicKeyBase64", js.undefined)
   }
 }

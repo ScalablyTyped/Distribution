@@ -1,11 +1,12 @@
 package typings.angularAnimations.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationPlayer extends js.Object {
+trait AnimationPlayer extends StObject {
   
   /**
     * Provides a callback to invoke before the animation is destroyed.
@@ -122,72 +123,60 @@ object AnimationPlayer {
   }
   
   @scala.inline
-  implicit class AnimationPlayerOps[Self <: AnimationPlayer] (val x: Self) extends AnyVal {
+  implicit class AnimationPlayerMutableBuilder[Self <: AnimationPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeDestroy(value: () => _): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFinish(value: () => Unit): Self = this.set("finish", js.Any.fromFunction0(value))
+    def setGetPosition(value: () => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => Double): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setHasStarted(value: () => Boolean): Self = StObject.set(x, "hasStarted", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasStarted(value: () => Boolean): Self = this.set("hasStarted", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setOnDestroy(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onDestroy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDestroy(value: js.Function0[Unit] => Unit): Self = this.set("onDestroy", js.Any.fromFunction1(value))
+    def setOnDone(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onDone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDone(value: js.Function0[Unit] => Unit): Self = this.set("onDone", js.Any.fromFunction1(value))
+    def setOnStart(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnStart(value: js.Function0[Unit] => Unit): Self = this.set("onStart", js.Any.fromFunction1(value))
+    def setParentPlayer(value: AnimationPlayer): Self = StObject.set(x, "parentPlayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setParentPlayerNull: Self = StObject.set(x, "parentPlayer", null)
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRestart(value: () => Unit): Self = this.set("restart", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetPosition(value: js.Any => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
+    def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTotalTime(value: Double): Self = this.set("totalTime", value.asInstanceOf[js.Any])
+    def setSetPosition(value: js.Any => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeDestroy(value: () => _): Self = this.set("beforeDestroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteBeforeDestroy: Self = this.set("beforeDestroy", js.undefined)
-    
-    @scala.inline
-    def setParentPlayer(value: AnimationPlayer): Self = this.set("parentPlayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentPlayerNull: Self = this.set("parentPlayer", null)
+    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
   }
 }

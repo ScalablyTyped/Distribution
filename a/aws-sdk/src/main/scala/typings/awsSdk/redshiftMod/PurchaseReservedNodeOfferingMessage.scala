@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PurchaseReservedNodeOfferingMessage extends js.Object {
+trait PurchaseReservedNodeOfferingMessage extends StObject {
   
   /**
     * The number of reserved nodes that you want to purchase. Default: 1 
@@ -26,27 +27,15 @@ object PurchaseReservedNodeOfferingMessage {
   }
   
   @scala.inline
-  implicit class PurchaseReservedNodeOfferingMessageOps[Self <: PurchaseReservedNodeOfferingMessage] (val x: Self) extends AnyVal {
+  implicit class PurchaseReservedNodeOfferingMessageMutableBuilder[Self <: PurchaseReservedNodeOfferingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeCount(value: IntegerOptional): Self = StObject.set(x, "NodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeCountUndefined: Self = StObject.set(x, "NodeCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReservedNodeOfferingId(value: String): Self = this.set("ReservedNodeOfferingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeCount(value: IntegerOptional): Self = this.set("NodeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeCount: Self = this.set("NodeCount", js.undefined)
+    def setReservedNodeOfferingId(value: String): Self = StObject.set(x, "ReservedNodeOfferingId", value.asInstanceOf[js.Any])
   }
 }

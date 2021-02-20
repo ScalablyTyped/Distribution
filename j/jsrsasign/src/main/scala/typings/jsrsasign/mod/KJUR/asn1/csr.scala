@@ -3,6 +3,7 @@ package typings.jsrsasign.mod.KJUR.asn1
 import typings.jsrsasign.anon.Csrinfo
 import typings.jsrsasign.anon.Ext
 import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.PEMInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `KJUR.asn1.csr.CSRUtil.newCSRPEM` method is very useful to
   * get your certificate signing request (CSR/PKCS#10) file.
   */
-@JSImport("jsrsasign", "KJUR.asn1.csr")
-@js.native
-object csr extends js.Object {
+object csr {
   
   /**
     * Certification Request (CSR/PKCS#10) utilities class
@@ -41,8 +40,7 @@ object csr extends js.Object {
     * - `KJUR.asn1.csr.CSRUtil.newCSRPEM`
     * - `KJUR.asn1.csr.CSRUtil.getInfo`
     */
-  @js.native
-  object CSRUtil extends js.Object {
+  object CSRUtil {
     
     /**
       * get field values from CSR/PKCS#10 PEM string
@@ -63,6 +61,8 @@ object csr extends js.Object {
       * o = KJUR.asn1.csr.CSRUtil.getInfo("-----BEGIN CERTIFICATE REQUEST...");
       * console.log(o.subject.name) → "/C=US/O=Test"
       */
+    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil.getInfo")
+    @js.native
     def getInfo(sPEM: String): PEMInfo = js.native
     
     /**
@@ -115,7 +115,11 @@ object csr extends js.Object {
       *   sbjprvkey: prvKeyPEM
       * });
       */
+    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil.newCSRPEM")
+    @js.native
     def newCSRPEM(): String = js.native
+    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil.newCSRPEM")
+    @js.native
     def newCSRPEM(param: Ext): String = js.native
   }
   
@@ -142,6 +146,7 @@ object csr extends js.Object {
     * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
     * //   attributes    [0] Attributes{{ CRIAttributes }} }
     */
+  @JSImport("jsrsasign", "KJUR.asn1.csr.CertificationRequest")
   @js.native
   class CertificationRequest ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
@@ -166,6 +171,7 @@ object csr extends js.Object {
     * csri.setSubjectByParam({'str': '/C=US/O=Test/CN=example.com'});
     * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
     */
+  @JSImport("jsrsasign", "KJUR.asn1.csr.CertificationRequestInfo")
   @js.native
   class CertificationRequestInfo ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo

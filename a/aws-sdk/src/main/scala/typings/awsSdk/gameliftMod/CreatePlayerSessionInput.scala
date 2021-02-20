@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePlayerSessionInput extends js.Object {
+trait CreatePlayerSessionInput extends StObject {
   
   /**
     * A unique identifier for the game session to add a player to.
@@ -31,30 +32,18 @@ object CreatePlayerSessionInput {
   }
   
   @scala.inline
-  implicit class CreatePlayerSessionInputOps[Self <: CreatePlayerSessionInput] (val x: Self) extends AnyVal {
+  implicit class CreatePlayerSessionInputMutableBuilder[Self <: CreatePlayerSessionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayerData(value: PlayerData): Self = StObject.set(x, "PlayerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayerDataUndefined: Self = StObject.set(x, "PlayerData", js.undefined)
     
     @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayerId(value: NonZeroAndMaxString): Self = this.set("PlayerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayerData(value: PlayerData): Self = this.set("PlayerData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerData: Self = this.set("PlayerData", js.undefined)
+    def setPlayerId(value: NonZeroAndMaxString): Self = StObject.set(x, "PlayerId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceUsage extends js.Object {
+trait InstanceUsage extends StObject {
   
   /**
     * The ID of the AWS account that is making use of the Capacity Reservation.
@@ -26,30 +27,18 @@ object InstanceUsage {
   }
   
   @scala.inline
-  implicit class InstanceUsageOps[Self <: InstanceUsage] (val x: Self) extends AnyVal {
+  implicit class InstanceUsageMutableBuilder[Self <: InstanceUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsedInstanceCount(value: Integer): Self = StObject.set(x, "UsedInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("AccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
-    
-    @scala.inline
-    def setUsedInstanceCount(value: Integer): Self = this.set("UsedInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsedInstanceCount: Self = this.set("UsedInstanceCount", js.undefined)
+    def setUsedInstanceCountUndefined: Self = StObject.set(x, "UsedInstanceCount", js.undefined)
   }
 }

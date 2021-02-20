@@ -1,12 +1,13 @@
 package typings.activexAdodb.ADODB
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Command extends js.Object {
+trait Command extends StObject {
   
   @JSName("ADODB.Command_typekey")
   var ADODBDotCommand_typekey: Command = js.native

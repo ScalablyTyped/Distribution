@@ -1,11 +1,12 @@
 package typings.vkOpenapi.vk.OpenAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitParams extends js.Object {
+trait InitParams extends StObject {
   
   var apiId: Double = js.native
   
@@ -22,33 +23,21 @@ object InitParams {
   }
   
   @scala.inline
-  implicit class InitParamsOps[Self <: InitParams] (val x: Self) extends AnyVal {
+  implicit class InitParamsMutableBuilder[Self <: InitParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: Double): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnlyWidgets(value: Boolean): Self = StObject.set(x, "onlyWidgets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnlyWidgetsUndefined: Self = StObject.set(x, "onlyWidgets", js.undefined)
     
     @scala.inline
-    def setApiId(value: Double): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyWidgets(value: Boolean): Self = this.set("onlyWidgets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnlyWidgets: Self = this.set("onlyWidgets", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

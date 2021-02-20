@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPermissionSetsProvisionedToAccountResponse extends js.Object {
+trait ListPermissionSetsProvisionedToAccountResponse extends StObject {
   
   /**
     * The pagination token for the list API. Initially the value is null. Use the output of previous API calls to make subsequent calls.
@@ -26,33 +27,21 @@ object ListPermissionSetsProvisionedToAccountResponse {
   }
   
   @scala.inline
-  implicit class ListPermissionSetsProvisionedToAccountResponseOps[Self <: ListPermissionSetsProvisionedToAccountResponse] (val x: Self) extends AnyVal {
+  implicit class ListPermissionSetsProvisionedToAccountResponseMutableBuilder[Self <: ListPermissionSetsProvisionedToAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissionSets(value: PermissionSetList): Self = StObject.set(x, "PermissionSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPermissionSetsUndefined: Self = StObject.set(x, "PermissionSets", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPermissionSetsVarargs(value: PermissionSetArn*): Self = this.set("PermissionSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setPermissionSets(value: PermissionSetList): Self = this.set("PermissionSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionSets: Self = this.set("PermissionSets", js.undefined)
+    def setPermissionSetsVarargs(value: PermissionSetArn*): Self = StObject.set(x, "PermissionSets", js.Array(value :_*))
   }
 }

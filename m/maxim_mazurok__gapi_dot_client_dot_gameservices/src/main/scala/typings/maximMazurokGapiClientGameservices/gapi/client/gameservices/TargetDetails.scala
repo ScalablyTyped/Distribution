@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetDetails extends js.Object {
+trait TargetDetails extends StObject {
   
   /** Agones fleet details for game server clusters and game server deployments. */
   var fleetDetails: js.UndefOr[js.Array[TargetFleetDetails]] = js.native
@@ -25,39 +26,27 @@ object TargetDetails {
   }
   
   @scala.inline
-  implicit class TargetDetailsOps[Self <: TargetDetails] (val x: Self) extends AnyVal {
+  implicit class TargetDetailsMutableBuilder[Self <: TargetDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFleetDetails(value: js.Array[TargetFleetDetails]): Self = StObject.set(x, "fleetDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleetDetailsUndefined: Self = StObject.set(x, "fleetDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetDetailsVarargs(value: TargetFleetDetails*): Self = StObject.set(x, "fleetDetails", js.Array(value :_*))
     
     @scala.inline
-    def setFleetDetailsVarargs(value: TargetFleetDetails*): Self = this.set("fleetDetails", js.Array(value :_*))
+    def setGameServerClusterName(value: String): Self = StObject.set(x, "gameServerClusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetDetails(value: js.Array[TargetFleetDetails]): Self = this.set("fleetDetails", value.asInstanceOf[js.Any])
+    def setGameServerClusterNameUndefined: Self = StObject.set(x, "gameServerClusterName", js.undefined)
     
     @scala.inline
-    def deleteFleetDetails: Self = this.set("fleetDetails", js.undefined)
+    def setGameServerDeploymentName(value: String): Self = StObject.set(x, "gameServerDeploymentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameServerClusterName(value: String): Self = this.set("gameServerClusterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameServerClusterName: Self = this.set("gameServerClusterName", js.undefined)
-    
-    @scala.inline
-    def setGameServerDeploymentName(value: String): Self = this.set("gameServerDeploymentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameServerDeploymentName: Self = this.set("gameServerDeploymentName", js.undefined)
+    def setGameServerDeploymentNameUndefined: Self = StObject.set(x, "gameServerDeploymentName", js.undefined)
   }
 }

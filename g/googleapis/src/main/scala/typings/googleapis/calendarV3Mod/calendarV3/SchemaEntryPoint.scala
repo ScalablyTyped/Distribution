@@ -1,11 +1,12 @@
 package typings.googleapis.calendarV3Mod.calendarV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaEntryPoint extends js.Object {
+trait SchemaEntryPoint extends StObject {
   
   /**
     * The access code to access the conference. The maximum length is 128
@@ -106,81 +107,69 @@ object SchemaEntryPoint {
   }
   
   @scala.inline
-  implicit class SchemaEntryPointOps[Self <: SchemaEntryPoint] (val x: Self) extends AnyVal {
+  implicit class SchemaEntryPointMutableBuilder[Self <: SchemaEntryPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntryPointFeatures(value: js.Array[String]): Self = StObject.set(x, "entryPointFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessCode(value: String): Self = this.set("accessCode", value.asInstanceOf[js.Any])
+    def setEntryPointFeaturesUndefined: Self = StObject.set(x, "entryPointFeatures", js.undefined)
     
     @scala.inline
-    def deleteAccessCode: Self = this.set("accessCode", js.undefined)
+    def setEntryPointFeaturesVarargs(value: String*): Self = StObject.set(x, "entryPointFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setEntryPointFeaturesVarargs(value: String*): Self = this.set("entryPointFeatures", js.Array(value :_*))
+    def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPointFeatures(value: js.Array[String]): Self = this.set("entryPointFeatures", value.asInstanceOf[js.Any])
+    def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
     
     @scala.inline
-    def deleteEntryPointFeatures: Self = this.set("entryPointFeatures", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntryPointType(value: String): Self = this.set("entryPointType", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteEntryPointType: Self = this.set("entryPointType", js.undefined)
+    def setMeetingCode(value: String): Self = StObject.set(x, "meetingCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMeetingCodeUndefined: Self = StObject.set(x, "meetingCode", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setPasscode(value: String): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeetingCode(value: String): Self = this.set("meetingCode", value.asInstanceOf[js.Any])
+    def setPasscodeUndefined: Self = StObject.set(x, "passcode", js.undefined)
     
     @scala.inline
-    def deleteMeetingCode: Self = this.set("meetingCode", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasscode(value: String): Self = this.set("passcode", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deletePasscode: Self = this.set("passcode", js.undefined)
+    def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPin(value: String): Self = this.set("pin", value.asInstanceOf[js.Any])
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
     @scala.inline
-    def deletePin: Self = this.set("pin", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

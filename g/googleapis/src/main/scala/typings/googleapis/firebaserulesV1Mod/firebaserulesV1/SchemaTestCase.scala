@@ -1,5 +1,6 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * executed.
   */
 @js.native
-trait SchemaTestCase extends js.Object {
+trait SchemaTestCase extends StObject {
   
   /**
     * Test expectation.
@@ -58,45 +59,33 @@ object SchemaTestCase {
   }
   
   @scala.inline
-  implicit class SchemaTestCaseOps[Self <: SchemaTestCase] (val x: Self) extends AnyVal {
+  implicit class SchemaTestCaseMutableBuilder[Self <: SchemaTestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpectation(value: String): Self = StObject.set(x, "expectation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpectationUndefined: Self = StObject.set(x, "expectation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionMocks(value: js.Array[SchemaFunctionMock]): Self = StObject.set(x, "functionMocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectation(value: String): Self = this.set("expectation", value.asInstanceOf[js.Any])
+    def setFunctionMocksUndefined: Self = StObject.set(x, "functionMocks", js.undefined)
     
     @scala.inline
-    def deleteExpectation: Self = this.set("expectation", js.undefined)
+    def setFunctionMocksVarargs(value: SchemaFunctionMock*): Self = StObject.set(x, "functionMocks", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionMocksVarargs(value: SchemaFunctionMock*): Self = this.set("functionMocks", js.Array(value :_*))
+    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionMocks(value: js.Array[SchemaFunctionMock]): Self = this.set("functionMocks", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteFunctionMocks: Self = this.set("functionMocks", js.undefined)
+    def setResource(value: js.Any): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: js.Any): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
-    
-    @scala.inline
-    def setResource(value: js.Any): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

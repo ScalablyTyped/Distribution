@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalAlignment extends js.Object
+sealed trait VerticalAlignment extends StObject
 @JSGlobal("__esri.CIM.VerticalAlignment")
 @js.native
-object VerticalAlignment extends js.Object {
+object VerticalAlignment extends StObject {
   
   /**
     * Text is aligned so that the geometry lines up with the baseline of the text symbol. Descenders will go past the baseline.

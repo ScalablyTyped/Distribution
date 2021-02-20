@@ -4,12 +4,13 @@ import typings.glaze.glazeNumbers.`9999`
 import typings.glaze.glazeStrings.Dot125rem
 import typings.glaze.glazeStrings.Dot25rem
 import typings.glaze.glazeStrings.Dot5rem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Full extends js.Object {
+trait Full extends StObject {
   
   val full: `9999` = js.native
   
@@ -28,30 +29,18 @@ object Full {
   }
   
   @scala.inline
-  implicit class FullOps[Self <: Full] (val x: Self) extends AnyVal {
+  implicit class FullMutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: `9999`): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLg(value: Dot5rem): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd(value: Dot25rem): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull(value: `9999`): Self = this.set("full", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLg(value: Dot5rem): Self = this.set("lg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMd(value: Dot25rem): Self = this.set("md", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSm(value: Dot125rem): Self = this.set("sm", value.asInstanceOf[js.Any])
+    def setSm(value: Dot125rem): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
   }
 }

@@ -36,19 +36,22 @@ import typings.vscodeLanguageserverTypes.mod.Location
 import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient/lib/codeConverter", JSImport.Namespace)
-@js.native
-object codeConverterMod extends js.Object {
+object codeConverterMod {
   
+  @JSImport("vscode-languageclient/lib/codeConverter", "createConverter")
+  @js.native
   def createConverter(): Converter = js.native
+  @JSImport("vscode-languageclient/lib/codeConverter", "createConverter")
+  @js.native
   def createConverter(uriConverter: URIConverter): Converter = js.native
   
   @js.native
-  trait Converter extends js.Object {
+  trait Converter extends StObject {
     
     def asChangeTextDocumentParams(event: TextDocumentChangeEvent): DidChangeTextDocumentParams = js.native
     def asChangeTextDocumentParams(textDocument: TextDocument): DidChangeTextDocumentParams = js.native

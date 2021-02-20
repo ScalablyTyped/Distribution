@@ -1,11 +1,12 @@
 package typings.rascal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Redeliveries extends js.Object {
+trait Redeliveries extends StObject {
   
   var publications: Confirm = js.native
   
@@ -29,30 +30,18 @@ object Redeliveries {
   }
   
   @scala.inline
-  implicit class RedeliveriesOps[Self <: Redeliveries] (val x: Self) extends AnyVal {
+  implicit class RedeliveriesMutableBuilder[Self <: Redeliveries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublications(value: Confirm): Self = StObject.set(x, "publications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedeliveries(value: Counters): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscriptions(value: DeferCloseChannel): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublications(value: Confirm): Self = this.set("publications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedeliveries(value: Counters): Self = this.set("redeliveries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptions(value: DeferCloseChannel): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVhosts(value: Connection): Self = this.set("vhosts", value.asInstanceOf[js.Any])
+    def setVhosts(value: Connection): Self = StObject.set(x, "vhosts", value.asInstanceOf[js.Any])
   }
 }

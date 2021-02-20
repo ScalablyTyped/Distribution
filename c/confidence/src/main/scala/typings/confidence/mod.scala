@@ -1,19 +1,19 @@
 package typings.confidence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("confidence", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("confidence", "Store")
   @js.native
   /**
     * @constructor
     * @param {any} document - the configuration document for this document store
     */
-  class Store () extends js.Object {
+  class Store () extends StObject {
     def this(document: js.Any) = this()
     
     /**

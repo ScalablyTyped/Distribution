@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenSettingSuccessCallbackResult extends js.Object {
+trait OpenSettingSuccessCallbackResult extends StObject {
   
   /** [AuthSetting](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html)
     *
@@ -30,27 +31,15 @@ object OpenSettingSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class OpenSettingSuccessCallbackResultOps[Self <: OpenSettingSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class OpenSettingSuccessCallbackResultMutableBuilder[Self <: OpenSettingSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthSetting(value: AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuthSetting(value: AuthSetting): Self = this.set("authSetting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionsSetting(value: SubscriptionsSetting): Self = this.set("subscriptionsSetting", value.asInstanceOf[js.Any])
+    def setSubscriptionsSetting(value: SubscriptionsSetting): Self = StObject.set(x, "subscriptionsSetting", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.chrome.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bookmarks extends js.Object {
+trait Bookmarks extends StObject {
   
   var bookmarks: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object Bookmarks {
   }
   
   @scala.inline
-  implicit class BookmarksOps[Self <: Bookmarks] (val x: Self) extends AnyVal {
+  implicit class BookmarksMutableBuilder[Self <: Bookmarks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmarks(value: String): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: String): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarks(value: String): Self = this.set("bookmarks", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def deleteBookmarks: Self = this.set("bookmarks", js.undefined)
+    def setNewtab(value: String): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: String): Self = this.set("history", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
-    
-    @scala.inline
-    def setNewtab(value: String): Self = this.set("newtab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewtab: Self = this.set("newtab", js.undefined)
+    def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
   }
 }

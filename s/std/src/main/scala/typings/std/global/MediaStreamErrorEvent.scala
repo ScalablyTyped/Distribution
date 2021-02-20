@@ -1,12 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.MediaStreamErrorEventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MediaStreamErrorEvent")
 @js.native
 class MediaStreamErrorEvent protected ()
@@ -14,12 +14,3 @@ class MediaStreamErrorEvent protected ()
   def this(typeArg: java.lang.String) = this()
   def this(typeArg: java.lang.String, eventInitDict: MediaStreamErrorEventInit) = this()
 }
-@JSGlobal("MediaStreamErrorEvent")
-@js.native
-object MediaStreamErrorEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, typings.std.MediaStreamErrorEvent]
-     with Instantiable2[
-      /* typeArg */ java.lang.String, 
-      /* eventInitDict */ MediaStreamErrorEventInit, 
-      typings.std.MediaStreamErrorEvent
-    ]

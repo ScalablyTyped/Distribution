@@ -2,6 +2,7 @@ package typings.node.childProcessMod
 
 import typings.node.processMod.global.NodeJS.Signals
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object ExecException {
   }
   
   @scala.inline
-  implicit class ExecExceptionOps[Self <: ExecException] (val x: Self) extends AnyVal {
+  implicit class ExecExceptionMutableBuilder[Self <: ExecException] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteCmd: Self = this.set("cmd", js.undefined)
+    def setKilled(value: Boolean): Self = StObject.set(x, "killed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setKilledUndefined: Self = StObject.set(x, "killed", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setSignal(value: Signals): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKilled(value: Boolean): Self = this.set("killed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKilled: Self = this.set("killed", js.undefined)
-    
-    @scala.inline
-    def setSignal(value: Signals): Self = this.set("signal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

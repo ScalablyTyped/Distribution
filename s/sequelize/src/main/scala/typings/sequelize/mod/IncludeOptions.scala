@@ -1,6 +1,7 @@
 package typings.sequelize.mod
 
 import typings.sequelize.anon.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Complex include options
   */
 @js.native
-trait IncludeOptions extends js.Object {
+trait IncludeOptions extends StObject {
   
   var all: js.UndefOr[Boolean | String] = js.native
   
@@ -82,96 +83,84 @@ object IncludeOptions {
   }
   
   @scala.inline
-  implicit class IncludeOptionsOps[Self <: IncludeOptions] (val x: Self) extends AnyVal {
+  implicit class IncludeOptionsMutableBuilder[Self <: IncludeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean | String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean | String): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setAssociation(value: IncludeAssociation | String): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociation(value: IncludeAssociation | String): Self = this.set("association", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def deleteAssociation: Self = this.set("association", js.undefined)
+    def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: (String | literal | (js.Tuple2[String | cast | fn | literal, String]) | fn | cast)*): Self = this.set("attributes", js.Array(value :_*))
+    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: FindOptionsAttributesArray | Exclude): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = StObject.set(x, "include", js.Array(value :_*))
     
     @scala.inline
-    def setIncludeVarargs(value: ((Model[js.Any, js.Any, js.Any]) | IncludeOptions)*): Self = this.set("include", js.Array(value :_*))
+    def setModel(value: Model[_, _, _]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = this.set("include", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteInclude: Self = this.set("include", js.undefined)
+    def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: Model[_, _, _]): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setParanoid(value: Boolean): Self = StObject.set(x, "paranoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNested(value: Boolean): Self = this.set("nested", value.asInstanceOf[js.Any])
+    def setParanoidUndefined: Self = StObject.set(x, "paranoid", js.undefined)
     
     @scala.inline
-    def deleteNested: Self = this.set("nested", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParanoid(value: Boolean): Self = this.set("paranoid", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteParanoid: Self = this.set("paranoid", js.undefined)
+    def setSeparate(value: Boolean): Self = StObject.set(x, "separate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setSeparateUndefined: Self = StObject.set(x, "separate", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setThrough(value: IncludeThroughOptions): Self = StObject.set(x, "through", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparate(value: Boolean): Self = this.set("separate", value.asInstanceOf[js.Any])
+    def setThroughUndefined: Self = StObject.set(x, "through", js.undefined)
     
     @scala.inline
-    def deleteSeparate: Self = this.set("separate", js.undefined)
+    def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrough(value: IncludeThroughOptions): Self = this.set("through", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrough: Self = this.set("through", js.undefined)
-    
-    @scala.inline
-    def setWhere(value: AnyWhereOptions): Self = this.set("where", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

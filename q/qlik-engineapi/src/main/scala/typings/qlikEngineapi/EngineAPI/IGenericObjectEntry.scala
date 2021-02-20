@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GenericObjectEntry...
   */
 @js.native
-trait IGenericObjectEntry extends js.Object {
+trait IGenericObjectEntry extends StObject {
   
   /**
     * Information about the children of the generic object.
@@ -38,30 +39,18 @@ object IGenericObjectEntry {
   }
   
   @scala.inline
-  implicit class IGenericObjectEntryOps[Self <: IGenericObjectEntry] (val x: Self) extends AnyVal {
+  implicit class IGenericObjectEntryMutableBuilder[Self <: IGenericObjectEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQChildren(value: js.Array[IGenericObjectEntry]): Self = StObject.set(x, "qChildren", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQChildrenVarargs(value: IGenericObjectEntry*): Self = StObject.set(x, "qChildren", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQEmbeddedSnapshotRef(value: IGenericBookmarkEntry): Self = StObject.set(x, "qEmbeddedSnapshotRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQChildrenVarargs(value: IGenericObjectEntry*): Self = this.set("qChildren", js.Array(value :_*))
-    
-    @scala.inline
-    def setQChildren(value: js.Array[IGenericObjectEntry]): Self = this.set("qChildren", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQEmbeddedSnapshotRef(value: IGenericBookmarkEntry): Self = this.set("qEmbeddedSnapshotRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQProperty(value: IGenericObjectProperties): Self = this.set("qProperty", value.asInstanceOf[js.Any])
+    def setQProperty(value: IGenericObjectProperties): Self = StObject.set(x, "qProperty", value.asInstanceOf[js.Any])
   }
 }

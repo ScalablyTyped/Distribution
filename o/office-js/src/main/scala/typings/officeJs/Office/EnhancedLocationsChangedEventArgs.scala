@@ -1,12 +1,13 @@
 package typings.officeJs.Office
 
 import typings.officeJs.officeJsStrings.olkEnhancedLocationsChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnhancedLocationsChangedEventArgs extends js.Object {
+trait EnhancedLocationsChangedEventArgs extends StObject {
   
   /**
     * Gets the set of enhanced locations.
@@ -32,27 +33,15 @@ object EnhancedLocationsChangedEventArgs {
   }
   
   @scala.inline
-  implicit class EnhancedLocationsChangedEventArgsOps[Self <: EnhancedLocationsChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class EnhancedLocationsChangedEventArgsMutableBuilder[Self <: EnhancedLocationsChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnhancedLocations(value: js.Array[LocationDetails]): Self = StObject.set(x, "enhancedLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnhancedLocationsVarargs(value: LocationDetails*): Self = StObject.set(x, "enhancedLocations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnhancedLocationsVarargs(value: LocationDetails*): Self = this.set("enhancedLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnhancedLocations(value: js.Array[LocationDetails]): Self = this.set("enhancedLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: olkEnhancedLocationsChanged): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: olkEnhancedLocationsChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

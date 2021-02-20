@@ -3,6 +3,7 @@ package typings.stellarSdk.serverApiMod.ServerApi
 import org.scalablytyped.runtime.TopLevel
 import typings.stellarSdk.anon.Assetissuer
 import typings.stellarSdk.horizonApiMod.Horizon.BaseResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,48 +52,36 @@ object PaymentPathRecord {
   }
   
   @scala.inline
-  implicit class PaymentPathRecordOps[Self <: PaymentPathRecord] (val x: Self) extends AnyVal {
+  implicit class PaymentPathRecordMutableBuilder[Self <: PaymentPathRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination_amount(value: String): Self = StObject.set(x, "destination_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestination_asset_code(value: String): Self = StObject.set(x, "destination_asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination_asset_issuer(value: String): Self = StObject.set(x, "destination_asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_amount(value: String): Self = this.set("destination_amount", value.asInstanceOf[js.Any])
+    def setDestination_asset_type(value: String): Self = StObject.set(x, "destination_asset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_asset_code(value: String): Self = this.set("destination_asset_code", value.asInstanceOf[js.Any])
+    def setPath(value: js.Array[Assetissuer]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination_asset_issuer(value: String): Self = this.set("destination_asset_issuer", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: Assetissuer*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setDestination_asset_type(value: String): Self = this.set("destination_asset_type", value.asInstanceOf[js.Any])
+    def setSource_amount(value: String): Self = StObject.set(x, "source_amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: Assetissuer*): Self = this.set("path", js.Array(value :_*))
+    def setSource_asset_code(value: String): Self = StObject.set(x, "source_asset_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[Assetissuer]): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSource_asset_issuer(value: String): Self = StObject.set(x, "source_asset_issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource_amount(value: String): Self = this.set("source_amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource_asset_code(value: String): Self = this.set("source_asset_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource_asset_issuer(value: String): Self = this.set("source_asset_issuer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource_asset_type(value: String): Self = this.set("source_asset_type", value.asInstanceOf[js.Any])
+    def setSource_asset_type(value: String): Self = StObject.set(x, "source_asset_type", value.asInstanceOf[js.Any])
   }
 }

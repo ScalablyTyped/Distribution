@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderUpdated")
 @js.native
-class OrderUpdated () extends js.Object {
+class OrderUpdated () extends StObject {
   
   /**
     * Timestamp for when the order was created in RFC 3339 format.

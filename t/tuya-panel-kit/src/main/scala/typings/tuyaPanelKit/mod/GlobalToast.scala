@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tuya-panel-kit", "GlobalToast")
 @js.native
-class GlobalToast () extends js.Object {
+class GlobalToast () extends StObject {
   
   def hide(): Unit = js.native
   

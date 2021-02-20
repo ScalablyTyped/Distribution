@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadDBLogFilePortionDetails extends js.Object {
+trait DownloadDBLogFilePortionDetails extends StObject {
   
   /**
     * Boolean value that if true, indicates there is more data to be downloaded.
@@ -31,36 +32,24 @@ object DownloadDBLogFilePortionDetails {
   }
   
   @scala.inline
-  implicit class DownloadDBLogFilePortionDetailsOps[Self <: DownloadDBLogFilePortionDetails] (val x: Self) extends AnyVal {
+  implicit class DownloadDBLogFilePortionDetailsMutableBuilder[Self <: DownloadDBLogFilePortionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalDataPending(value: Boolean): Self = StObject.set(x, "AdditionalDataPending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalDataPendingUndefined: Self = StObject.set(x, "AdditionalDataPending", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogFileData(value: String): Self = StObject.set(x, "LogFileData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalDataPending(value: Boolean): Self = this.set("AdditionalDataPending", value.asInstanceOf[js.Any])
+    def setLogFileDataUndefined: Self = StObject.set(x, "LogFileData", js.undefined)
     
     @scala.inline
-    def deleteAdditionalDataPending: Self = this.set("AdditionalDataPending", js.undefined)
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogFileData(value: String): Self = this.set("LogFileData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogFileData: Self = this.set("LogFileData", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

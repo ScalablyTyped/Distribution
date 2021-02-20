@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationsData extends js.Object {
+trait NotificationsData extends StObject {
   
   /**
     * Notification data needed
@@ -37,27 +38,15 @@ object NotificationsData {
   }
   
   @scala.inline
-  implicit class NotificationsDataOps[Self <: NotificationsData] (val x: Self) extends AnyVal {
+  implicit class NotificationsDataMutableBuilder[Self <: NotificationsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentities(value: StringDictionary[js.Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentities(value: StringDictionary[js.Any]): Self = this.set("identities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: NotificationTemplateType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: NotificationTemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

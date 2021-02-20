@@ -3,12 +3,13 @@ package typings.plugapi.mod.Event
 import typings.plugapi.mod.LastPlay
 import typings.plugapi.mod.Media
 import typings.plugapi.mod.User.DJ
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Advance extends js.Object {
+trait Advance extends StObject {
   
   var currentDJ: DJ = js.native
   
@@ -41,42 +42,30 @@ object Advance {
   }
   
   @scala.inline
-  implicit class AdvanceOps[Self <: Advance] (val x: Self) extends AnyVal {
+  implicit class AdvanceMutableBuilder[Self <: Advance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentDJ(value: DJ): Self = StObject.set(x, "currentDJ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentDJ(value: DJ): Self = this.set("currentDJ", value.asInstanceOf[js.Any])
+    def setHistoryID(value: String): Self = StObject.set(x, "historyID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDjsVarargs(value: DJ*): Self = this.set("djs", js.Array(value :_*))
+    def setLastPlay(value: LastPlay): Self = StObject.set(x, "lastPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDjs(value: js.Array[DJ]): Self = this.set("djs", value.asInstanceOf[js.Any])
+    def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryID(value: String): Self = this.set("historyID", value.asInstanceOf[js.Any])
+    def setPlaylistID(value: Double): Self = StObject.set(x, "playlistID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPlay(value: LastPlay): Self = this.set("lastPlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedia(value: Media): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaylistID(value: Double): Self = this.set("playlistID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

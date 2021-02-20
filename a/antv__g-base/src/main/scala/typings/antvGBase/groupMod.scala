@@ -1,13 +1,15 @@
 package typings.antvGBase
 
-import typings.antvGBase.containerMod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/abstract/group", JSImport.Namespace)
-@js.native
-object groupMod extends js.Object {
+object groupMod {
+  
+  @JSImport("@antv/g-base/lib/abstract/group", JSImport.Default)
+  @js.native
+  abstract class default () extends AbstractGroup
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.antvGBase.interfacesMod.IObservable because Already inherited
@@ -15,7 +17,8 @@ object groupMod extends js.Object {
   - typings.antvGBase.interfacesMod.IElement because Already inherited
   - typings.antvGBase.interfacesMod.IContainer because Already inherited
   - typings.antvGBase.interfacesMod.IGroup because var conflicts: cfg, destroyed. Inlined isEntityGroup */ @js.native
-  trait AbstractGroup extends Container {
+  trait AbstractGroup
+    extends typings.antvGBase.containerMod.default {
     
     /**
       * 是否是实体分组，即对应实际的渲染元素
@@ -23,7 +26,4 @@ object groupMod extends js.Object {
       */
     def isEntityGroup(): Boolean = js.native
   }
-  
-  @js.native
-  abstract class default () extends AbstractGroup
 }

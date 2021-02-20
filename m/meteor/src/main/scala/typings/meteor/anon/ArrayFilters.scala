@@ -1,12 +1,13 @@
 package typings.meteor.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArrayFilters extends js.Object {
+trait ArrayFilters extends StObject {
   
   var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
   
@@ -23,39 +24,27 @@ object ArrayFilters {
   }
   
   @scala.inline
-  implicit class ArrayFiltersOps[Self <: ArrayFilters] (val x: Self) extends AnyVal {
+  implicit class ArrayFiltersMutableBuilder[Self <: ArrayFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayFilters(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
     
     @scala.inline
-    def setArrayFiltersVarargs(value: StringDictionary[js.Any]*): Self = this.set("arrayFilters", js.Array(value :_*))
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayFilters(value: js.Array[StringDictionary[_]]): Self = this.set("arrayFilters", value.asInstanceOf[js.Any])
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     @scala.inline
-    def deleteArrayFilters: Self = this.set("arrayFilters", js.undefined)
+    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
-    
-    @scala.inline
-    def setUpsert(value: Boolean): Self = this.set("upsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsert: Self = this.set("upsert", js.undefined)
+    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

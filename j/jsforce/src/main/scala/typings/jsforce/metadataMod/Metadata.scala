@@ -4,13 +4,14 @@ import typings.jsforce.connectionMod.Callback
 import typings.jsforce.connectionMod.Connection
 import typings.node.Buffer
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsforce/api/metadata", "Metadata")
 @js.native
-class Metadata protected () extends js.Object {
+class Metadata protected () extends StObject {
   def this(conn: Connection) = this()
   
   def checkDeployStatus(id: String): js.Promise[DeployResult] = js.native

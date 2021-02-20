@@ -1,6 +1,7 @@
 package typings.sharepoint.CUI
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,48 +90,36 @@ object Tab {
   }
   
   @scala.inline
-  implicit class TabOps[Self <: Tab] (val x: Self) extends AnyVal {
+  implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_command(value: () => String): Self = StObject.set(x, "get_command", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_contextual(value: () => Boolean): Self = StObject.set(x, "get_contextual", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_contextualGroupId(value: () => String): Self = StObject.set(x, "get_contextualGroupId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_command(value: () => String): Self = this.set("get_command", js.Any.fromFunction0(value))
+    def setGet_currentScalingIndex(value: () => Double): Self = StObject.set(x, "get_currentScalingIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_contextual(value: () => Boolean): Self = this.set("get_contextual", js.Any.fromFunction0(value))
+    def setGet_scaling(value: () => String): Self = StObject.set(x, "get_scaling", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_contextualGroupId(value: () => String): Self = this.set("get_contextualGroupId", js.Any.fromFunction0(value))
+    def setGet_selected(value: () => Boolean): Self = StObject.set(x, "get_selected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_currentScalingIndex(value: () => Double): Self = this.set("get_currentScalingIndex", js.Any.fromFunction0(value))
+    def setScaleDown(value: () => scala.Unit): Self = StObject.set(x, "scaleDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_scaling(value: () => String): Self = this.set("get_scaling", js.Any.fromFunction0(value))
+    def setScaleMax(value: () => scala.Unit): Self = StObject.set(x, "scaleMax", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_selected(value: () => Boolean): Self = this.set("get_selected", js.Any.fromFunction0(value))
+    def setScaleUp(value: () => scala.Unit): Self = StObject.set(x, "scaleUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScaleDown(value: () => scala.Unit): Self = this.set("scaleDown", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScaleMax(value: () => scala.Unit): Self = this.set("scaleMax", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setScaleUp(value: () => scala.Unit): Self = this.set("scaleUp", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_selected(value: Boolean => scala.Unit): Self = this.set("set_selected", js.Any.fromFunction1(value))
+    def setSet_selected(value: Boolean => scala.Unit): Self = StObject.set(x, "set_selected", js.Any.fromFunction1(value))
   }
 }

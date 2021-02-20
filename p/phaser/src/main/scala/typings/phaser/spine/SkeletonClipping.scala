@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkeletonClipping extends js.Object {
+trait SkeletonClipping extends StObject {
   
   def clip(
     x1: Double,
@@ -77,70 +78,58 @@ object SkeletonClipping {
   }
   
   @scala.inline
-  implicit class SkeletonClippingOps[Self <: SkeletonClipping] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SkeletonClippingMutableBuilder[Self <: SkeletonClipping] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setClip(
       value: (Double, Double, Double, Double, Double, Double, js.Array[Double], js.Array[Double]) => Boolean
-    ): Self = this.set("clip", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "clip", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setClipAttachment(value: js.Any): Self = this.set("clipAttachment", value.asInstanceOf[js.Any])
+    def setClipAttachment(value: js.Any): Self = StObject.set(x, "clipAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipEnd(value: () => Unit): Self = this.set("clipEnd", js.Any.fromFunction0(value))
+    def setClipEnd(value: () => Unit): Self = StObject.set(x, "clipEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClipEndWithSlot(value: Slot => Unit): Self = this.set("clipEndWithSlot", js.Any.fromFunction1(value))
+    def setClipEndWithSlot(value: Slot => Unit): Self = StObject.set(x, "clipEndWithSlot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClipOutput(value: js.Any): Self = this.set("clipOutput", value.asInstanceOf[js.Any])
+    def setClipOutput(value: js.Any): Self = StObject.set(x, "clipOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipStart(value: (Slot, ClippingAttachment) => Double): Self = this.set("clipStart", js.Any.fromFunction2(value))
+    def setClipStart(value: (Slot, ClippingAttachment) => Double): Self = StObject.set(x, "clipStart", js.Any.fromFunction2(value))
     
     @scala.inline
     def setClipTriangles(
       value: (ArrayLike[Double], Double, ArrayLike[Double], Double, ArrayLike[Double], Color, Color, Boolean) => Unit
-    ): Self = this.set("clipTriangles", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "clipTriangles", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setClippedTrianglesVarargs(value: Double*): Self = this.set("clippedTriangles", js.Array(value :_*))
+    def setClippedTriangles(value: js.Array[Double]): Self = StObject.set(x, "clippedTriangles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippedTriangles(value: js.Array[Double]): Self = this.set("clippedTriangles", value.asInstanceOf[js.Any])
+    def setClippedTrianglesVarargs(value: Double*): Self = StObject.set(x, "clippedTriangles", js.Array(value :_*))
     
     @scala.inline
-    def setClippedVerticesVarargs(value: Double*): Self = this.set("clippedVertices", js.Array(value :_*))
+    def setClippedVertices(value: js.Array[Double]): Self = StObject.set(x, "clippedVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippedVertices(value: js.Array[Double]): Self = this.set("clippedVertices", value.asInstanceOf[js.Any])
+    def setClippedVerticesVarargs(value: Double*): Self = StObject.set(x, "clippedVertices", js.Array(value :_*))
     
     @scala.inline
-    def setClippingPolygon(value: js.Any): Self = this.set("clippingPolygon", value.asInstanceOf[js.Any])
+    def setClippingPolygon(value: js.Any): Self = StObject.set(x, "clippingPolygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippingPolygons(value: js.Any): Self = this.set("clippingPolygons", value.asInstanceOf[js.Any])
+    def setClippingPolygons(value: js.Any): Self = StObject.set(x, "clippingPolygons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClipping(value: () => Boolean): Self = this.set("isClipping", js.Any.fromFunction0(value))
+    def setIsClipping(value: () => Boolean): Self = StObject.set(x, "isClipping", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScratch(value: js.Any): Self = this.set("scratch", value.asInstanceOf[js.Any])
+    def setScratch(value: js.Any): Self = StObject.set(x, "scratch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriangulator(value: js.Any): Self = this.set("triangulator", value.asInstanceOf[js.Any])
+    def setTriangulator(value: js.Any): Self = StObject.set(x, "triangulator", value.asInstanceOf[js.Any])
   }
 }

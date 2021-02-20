@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2BatchUpdateIntentsRequest extends js.Object {
+trait GoogleCloudDialogflowV2BatchUpdateIntentsRequest extends StObject {
   
   /** The collection of intents to update or create. */
   var intentBatchInline: js.UndefOr[GoogleCloudDialogflowV2IntentBatch] = js.native
@@ -37,48 +38,36 @@ object GoogleCloudDialogflowV2BatchUpdateIntentsRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2BatchUpdateIntentsRequestOps[Self <: GoogleCloudDialogflowV2BatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2BatchUpdateIntentsRequestMutableBuilder[Self <: GoogleCloudDialogflowV2BatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntentBatchInline(value: GoogleCloudDialogflowV2IntentBatch): Self = StObject.set(x, "intentBatchInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntentBatchInlineUndefined: Self = StObject.set(x, "intentBatchInline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntentBatchUri(value: String): Self = StObject.set(x, "intentBatchUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentBatchInline(value: GoogleCloudDialogflowV2IntentBatch): Self = this.set("intentBatchInline", value.asInstanceOf[js.Any])
+    def setIntentBatchUriUndefined: Self = StObject.set(x, "intentBatchUri", js.undefined)
     
     @scala.inline
-    def deleteIntentBatchInline: Self = this.set("intentBatchInline", js.undefined)
+    def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentBatchUri(value: String): Self = this.set("intentBatchUri", value.asInstanceOf[js.Any])
+    def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
     
     @scala.inline
-    def deleteIntentBatchUri: Self = this.set("intentBatchUri", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentView(value: String): Self = this.set("intentView", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteIntentView: Self = this.set("intentView", js.undefined)
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

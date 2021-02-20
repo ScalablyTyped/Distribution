@@ -1,11 +1,12 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IThemeConfig extends js.Object {
+trait IThemeConfig extends StObject {
   
   var alwaysWatchTheme: Boolean = js.native
   
@@ -35,39 +36,27 @@ object IThemeConfig {
   }
   
   @scala.inline
-  implicit class IThemeConfigOps[Self <: IThemeConfig] (val x: Self) extends AnyVal {
+  implicit class IThemeConfigMutableBuilder[Self <: IThemeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysWatchTheme(value: Boolean): Self = StObject.set(x, "alwaysWatchTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTheme(value: String): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableTheming(value: Boolean): Self = StObject.set(x, "disableTheming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysWatchTheme(value: Boolean): Self = this.set("alwaysWatchTheme", value.asInstanceOf[js.Any])
+    def setGenerateOnDemand(value: Boolean): Self = StObject.set(x, "generateOnDemand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTheme(value: String): Self = this.set("defaultTheme", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTheming(value: Boolean): Self = this.set("disableTheming", value.asInstanceOf[js.Any])
+    def setRegisteredStyles(value: js.Array[String]): Self = StObject.set(x, "registeredStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateOnDemand(value: Boolean): Self = this.set("generateOnDemand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegisteredStylesVarargs(value: String*): Self = this.set("registeredStyles", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegisteredStyles(value: js.Array[String]): Self = this.set("registeredStyles", value.asInstanceOf[js.Any])
+    def setRegisteredStylesVarargs(value: String*): Self = StObject.set(x, "registeredStyles", js.Array(value :_*))
   }
 }

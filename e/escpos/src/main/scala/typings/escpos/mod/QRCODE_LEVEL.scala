@@ -1,5 +1,6 @@
 package typings.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.escpos.escposStrings.Q
   - typings.escpos.escposStrings.H
 */
-trait QRCODE_LEVEL extends js.Object
+trait QRCODE_LEVEL extends StObject
 object QRCODE_LEVEL {
   
   @scala.inline

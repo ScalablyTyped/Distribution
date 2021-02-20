@@ -2,12 +2,13 @@ package typings.activexExcel.Excel
 
 import typings.activexOffice.Office.ByteArray
 import typings.activexOffice.Office.MsoExtraInfoMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hyperlink extends js.Object {
+trait Hyperlink extends StObject {
   
   def AddToFavorites(): Unit = js.native
   

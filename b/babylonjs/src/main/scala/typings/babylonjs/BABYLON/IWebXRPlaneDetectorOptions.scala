@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRPlaneDetectorOptions extends js.Object {
+trait IWebXRPlaneDetectorOptions extends StObject {
   
   /**
     * If set to true a reference of the created planes will be kept until the next session starts
@@ -27,30 +28,18 @@ object IWebXRPlaneDetectorOptions {
   }
   
   @scala.inline
-  implicit class IWebXRPlaneDetectorOptionsOps[Self <: IWebXRPlaneDetectorOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRPlaneDetectorOptionsMutableBuilder[Self <: IWebXRPlaneDetectorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoNotRemovePlanesOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoNotRemovePlanesOnSessionEndedUndefined: Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotRemovePlanesOnSessionEnded(value: Boolean): Self = this.set("doNotRemovePlanesOnSessionEnded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDoNotRemovePlanesOnSessionEnded: Self = this.set("doNotRemovePlanesOnSessionEnded", js.undefined)
-    
-    @scala.inline
-    def setWorldParentNode(value: TransformNode): Self = this.set("worldParentNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldParentNode: Self = this.set("worldParentNode", js.undefined)
+    def setWorldParentNodeUndefined: Self = StObject.set(x, "worldParentNode", js.undefined)
   }
 }

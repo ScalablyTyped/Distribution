@@ -1,7 +1,8 @@
 package typings.pixiJs.mod
 
-import typings.pixiJs.PIXI.Application.Plugin
 import typings.pixiJs.anon.Antialias
+import typings.std.Plugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,15 +31,15 @@ class Application ()
   extends typings.pixiJs.PIXI.Application {
   def this(options: Antialias) = this()
 }
-/* static members */
-@JSImport("pixi.js", "Application")
-@js.native
-object Application extends js.Object {
+object Application {
   
   /**
     * Register a middleware plugin for the application
     * @static
     * @param {PIXI.Application.Plugin} plugin - Plugin being installed
     */
+  /* static member */
+  @JSImport("pixi.js", "Application.registerPlugin")
+  @js.native
   def registerPlugin(plugin: Plugin): Unit = js.native
 }

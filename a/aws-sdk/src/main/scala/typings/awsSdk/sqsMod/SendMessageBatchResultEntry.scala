@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMessageBatchResultEntry extends js.Object {
+trait SendMessageBatchResultEntry extends StObject {
   
   /**
     * An identifier for the message in this batch.
@@ -46,45 +47,33 @@ object SendMessageBatchResultEntry {
   }
   
   @scala.inline
-  implicit class SendMessageBatchResultEntryOps[Self <: SendMessageBatchResultEntry] (val x: Self) extends AnyVal {
+  implicit class SendMessageBatchResultEntryMutableBuilder[Self <: SendMessageBatchResultEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMD5OfMessageAttributes(value: String): Self = StObject.set(x, "MD5OfMessageAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMD5OfMessageAttributesUndefined: Self = StObject.set(x, "MD5OfMessageAttributes", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMD5OfMessageBody(value: String): Self = StObject.set(x, "MD5OfMessageBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMD5OfMessageBody(value: String): Self = this.set("MD5OfMessageBody", value.asInstanceOf[js.Any])
+    def setMD5OfMessageSystemAttributes(value: String): Self = StObject.set(x, "MD5OfMessageSystemAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    def setMD5OfMessageSystemAttributesUndefined: Self = StObject.set(x, "MD5OfMessageSystemAttributes", js.undefined)
     
     @scala.inline
-    def setMD5OfMessageAttributes(value: String): Self = this.set("MD5OfMessageAttributes", value.asInstanceOf[js.Any])
+    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMD5OfMessageAttributes: Self = this.set("MD5OfMessageAttributes", js.undefined)
+    def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMD5OfMessageSystemAttributes(value: String): Self = this.set("MD5OfMessageSystemAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMD5OfMessageSystemAttributes: Self = this.set("MD5OfMessageSystemAttributes", js.undefined)
-    
-    @scala.inline
-    def setSequenceNumber(value: String): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceNumber: Self = this.set("SequenceNumber", js.undefined)
+    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
   }
 }

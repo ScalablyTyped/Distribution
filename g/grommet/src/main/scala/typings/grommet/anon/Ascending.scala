@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ascending extends js.Object {
+trait Ascending extends StObject {
   
   var ascending: js.UndefOr[js.Any] = js.native
   
@@ -26,48 +27,36 @@ object Ascending {
   }
   
   @scala.inline
-  implicit class AscendingOps[Self <: Ascending] (val x: Self) extends AnyVal {
+  implicit class AscendingMutableBuilder[Self <: Ascending] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: js.Any): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContract(value: js.Any): Self = StObject.set(x, "contract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAscending(value: js.Any): Self = this.set("ascending", value.asInstanceOf[js.Any])
+    def setContractUndefined: Self = StObject.set(x, "contract", js.undefined)
     
     @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
+    def setDescending(value: js.Any): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContract(value: js.Any): Self = this.set("contract", value.asInstanceOf[js.Any])
+    def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
     
     @scala.inline
-    def deleteContract: Self = this.set("contract", js.undefined)
+    def setExpand(value: js.Any): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescending(value: js.Any): Self = this.set("descending", value.asInstanceOf[js.Any])
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteDescending: Self = this.set("descending", js.undefined)
+    def setSortable(value: js.Any): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: js.Any): Self = this.set("expand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
-    
-    @scala.inline
-    def setSortable(value: js.Any): Self = this.set("sortable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
   }
 }

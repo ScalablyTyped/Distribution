@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,114 +107,102 @@ object KiiThingFields {
   }
   
   @scala.inline
-  implicit class KiiThingFieldsOps[Self <: KiiThingFields] (val x: Self) extends AnyVal {
+  implicit class KiiThingFieldsMutableBuilder[Self <: KiiThingFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_firmwareVersion(value: String): Self = StObject.set(x, "_firmwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_firmwareVersionUndefined: Self = StObject.set(x, "_firmwareVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_lot(value: String): Self = StObject.set(x, "_lot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_password(value: String): Self = this.set("_password", value.asInstanceOf[js.Any])
+    def set_lotUndefined: Self = StObject.set(x, "_lot", js.undefined)
     
     @scala.inline
-    def set_vendorThingID(value: String): Self = this.set("_vendorThingID", value.asInstanceOf[js.Any])
+    def set_numberField1(value: Double): Self = StObject.set(x, "_numberField1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_firmwareVersion(value: String): Self = this.set("_firmwareVersion", value.asInstanceOf[js.Any])
+    def set_numberField1Undefined: Self = StObject.set(x, "_numberField1", js.undefined)
     
     @scala.inline
-    def delete_firmwareVersion: Self = this.set("_firmwareVersion", js.undefined)
+    def set_numberField2(value: Double): Self = StObject.set(x, "_numberField2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_lot(value: String): Self = this.set("_lot", value.asInstanceOf[js.Any])
+    def set_numberField2Undefined: Self = StObject.set(x, "_numberField2", js.undefined)
     
     @scala.inline
-    def delete_lot: Self = this.set("_lot", js.undefined)
+    def set_numberField3(value: Double): Self = StObject.set(x, "_numberField3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_numberField1(value: Double): Self = this.set("_numberField1", value.asInstanceOf[js.Any])
+    def set_numberField3Undefined: Self = StObject.set(x, "_numberField3", js.undefined)
     
     @scala.inline
-    def delete_numberField1: Self = this.set("_numberField1", js.undefined)
+    def set_numberField4(value: Double): Self = StObject.set(x, "_numberField4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_numberField2(value: Double): Self = this.set("_numberField2", value.asInstanceOf[js.Any])
+    def set_numberField4Undefined: Self = StObject.set(x, "_numberField4", js.undefined)
     
     @scala.inline
-    def delete_numberField2: Self = this.set("_numberField2", js.undefined)
+    def set_numberField5(value: Double): Self = StObject.set(x, "_numberField5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_numberField3(value: Double): Self = this.set("_numberField3", value.asInstanceOf[js.Any])
+    def set_numberField5Undefined: Self = StObject.set(x, "_numberField5", js.undefined)
     
     @scala.inline
-    def delete_numberField3: Self = this.set("_numberField3", js.undefined)
+    def set_password(value: String): Self = StObject.set(x, "_password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_numberField4(value: Double): Self = this.set("_numberField4", value.asInstanceOf[js.Any])
+    def set_productName(value: String): Self = StObject.set(x, "_productName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_numberField4: Self = this.set("_numberField4", js.undefined)
+    def set_productNameUndefined: Self = StObject.set(x, "_productName", js.undefined)
     
     @scala.inline
-    def set_numberField5(value: Double): Self = this.set("_numberField5", value.asInstanceOf[js.Any])
+    def set_stringField1(value: String): Self = StObject.set(x, "_stringField1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_numberField5: Self = this.set("_numberField5", js.undefined)
+    def set_stringField1Undefined: Self = StObject.set(x, "_stringField1", js.undefined)
     
     @scala.inline
-    def set_productName(value: String): Self = this.set("_productName", value.asInstanceOf[js.Any])
+    def set_stringField2(value: String): Self = StObject.set(x, "_stringField2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_productName: Self = this.set("_productName", js.undefined)
+    def set_stringField2Undefined: Self = StObject.set(x, "_stringField2", js.undefined)
     
     @scala.inline
-    def set_stringField1(value: String): Self = this.set("_stringField1", value.asInstanceOf[js.Any])
+    def set_stringField3(value: String): Self = StObject.set(x, "_stringField3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_stringField1: Self = this.set("_stringField1", js.undefined)
+    def set_stringField3Undefined: Self = StObject.set(x, "_stringField3", js.undefined)
     
     @scala.inline
-    def set_stringField2(value: String): Self = this.set("_stringField2", value.asInstanceOf[js.Any])
+    def set_stringField4(value: String): Self = StObject.set(x, "_stringField4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_stringField2: Self = this.set("_stringField2", js.undefined)
+    def set_stringField4Undefined: Self = StObject.set(x, "_stringField4", js.undefined)
     
     @scala.inline
-    def set_stringField3(value: String): Self = this.set("_stringField3", value.asInstanceOf[js.Any])
+    def set_stringField5(value: String): Self = StObject.set(x, "_stringField5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_stringField3: Self = this.set("_stringField3", js.undefined)
+    def set_stringField5Undefined: Self = StObject.set(x, "_stringField5", js.undefined)
     
     @scala.inline
-    def set_stringField4(value: String): Self = this.set("_stringField4", value.asInstanceOf[js.Any])
+    def set_thingType(value: String): Self = StObject.set(x, "_thingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_stringField4: Self = this.set("_stringField4", js.undefined)
+    def set_thingTypeUndefined: Self = StObject.set(x, "_thingType", js.undefined)
     
     @scala.inline
-    def set_stringField5(value: String): Self = this.set("_stringField5", value.asInstanceOf[js.Any])
+    def set_vendor(value: String): Self = StObject.set(x, "_vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_stringField5: Self = this.set("_stringField5", js.undefined)
+    def set_vendorThingID(value: String): Self = StObject.set(x, "_vendorThingID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_thingType(value: String): Self = this.set("_thingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_thingType: Self = this.set("_thingType", js.undefined)
-    
-    @scala.inline
-    def set_vendor(value: String): Self = this.set("_vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_vendor: Self = this.set("_vendor", js.undefined)
+    def set_vendorUndefined: Self = StObject.set(x, "_vendor", js.undefined)
   }
 }

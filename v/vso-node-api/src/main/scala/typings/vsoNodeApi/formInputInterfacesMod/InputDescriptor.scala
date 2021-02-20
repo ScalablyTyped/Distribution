@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.formInputInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDescriptor extends js.Object {
+trait InputDescriptor extends StObject {
   
   /**
     * The ids of all inputs that the value of this input is dependent on.
@@ -89,57 +90,45 @@ object InputDescriptor {
   }
   
   @scala.inline
-  implicit class InputDescriptorOps[Self <: InputDescriptor] (val x: Self) extends AnyVal {
+  implicit class InputDescriptorMutableBuilder[Self <: InputDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependencyInputIds(value: js.Array[String]): Self = StObject.set(x, "dependencyInputIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencyInputIdsVarargs(value: String*): Self = StObject.set(x, "dependencyInputIds", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyInputIdsVarargs(value: String*): Self = this.set("dependencyInputIds", js.Array(value :_*))
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencyInputIds(value: js.Array[String]): Self = this.set("dependencyInputIds", value.asInstanceOf[js.Any])
+    def setHasDynamicValueInformation(value: Boolean): Self = StObject.set(x, "hasDynamicValueInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setInputMode(value: InputMode): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDynamicValueInformation(value: Boolean): Self = this.set("hasDynamicValueInformation", value.asInstanceOf[js.Any])
+    def setIsConfidential(value: Boolean): Self = StObject.set(x, "isConfidential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputMode(value: InputMode): Self = this.set("inputMode", value.asInstanceOf[js.Any])
+    def setUseInDefaultDescription(value: Boolean): Self = StObject.set(x, "useInDefaultDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConfidential(value: Boolean): Self = this.set("isConfidential", value.asInstanceOf[js.Any])
+    def setValidation(value: InputValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValueHint(value: String): Self = StObject.set(x, "valueHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseInDefaultDescription(value: Boolean): Self = this.set("useInDefaultDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidation(value: InputValidation): Self = this.set("validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueHint(value: String): Self = this.set("valueHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: InputValues): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: InputValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

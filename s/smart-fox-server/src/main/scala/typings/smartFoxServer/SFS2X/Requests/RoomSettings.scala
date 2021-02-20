@@ -1,12 +1,13 @@
 package typings.smartFoxServer.SFS2X.Requests
 
 import typings.smartFoxServer.SFS2X.Entities.Variables.ReservedRoomVariables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoomSettings extends js.Object {
+trait RoomSettings extends StObject {
   
   /** @type {RoomEvents} Sets the flags indicating which events related to the Room are dispatched by the SmartFox client. */
   var events: RoomEvents = js.native
@@ -62,54 +63,42 @@ object RoomSettings {
   }
   
   @scala.inline
-  implicit class RoomSettingsOps[Self <: RoomSettings] (val x: Self) extends AnyVal {
+  implicit class RoomSettingsMutableBuilder[Self <: RoomSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: RoomEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtension(value: RoomExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: RoomEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setIsGame(value: Boolean): Self = StObject.set(x, "isGame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: RoomExtension): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setMaxSpectators(value: Double): Self = StObject.set(x, "maxSpectators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: String): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setMaxUsers(value: Double): Self = StObject.set(x, "maxUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGame(value: Boolean): Self = this.set("isGame", value.asInstanceOf[js.Any])
+    def setMaxVariables(value: Double): Self = StObject.set(x, "maxVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSpectators(value: Double): Self = this.set("maxSpectators", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxUsers(value: Double): Self = this.set("maxUsers", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVariables(value: Double): Self = this.set("maxVariables", value.asInstanceOf[js.Any])
+    def setPermissions(value: RoomPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setVariables(value: js.Array[ReservedRoomVariables]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissions(value: RoomPermissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariablesVarargs(value: ReservedRoomVariables*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariables(value: js.Array[ReservedRoomVariables]): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariablesVarargs(value: ReservedRoomVariables*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

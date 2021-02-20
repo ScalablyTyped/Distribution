@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionButtonInOption extends js.Object {
+trait OptionButtonInOption extends StObject {
   
   @JSName("Access._OptionButtonInOption_typekey")
   var AccessDot_OptionButtonInOption_typekey: OptionButtonInOption = js.native

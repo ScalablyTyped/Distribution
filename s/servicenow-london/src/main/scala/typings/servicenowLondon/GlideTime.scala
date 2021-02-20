@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideTime extends js.Object {
+trait GlideTime extends StObject {
   
   /**
     * Gets the time in the specified format.
@@ -181,60 +182,48 @@ object GlideTime {
   }
   
   @scala.inline
-  implicit class GlideTimeOps[Self <: GlideTime] (val x: Self) extends AnyVal {
+  implicit class GlideTimeMutableBuilder[Self <: GlideTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDisplayValueInternal(value: () => String): Self = StObject.set(x, "getDisplayValueInternal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetByFormat(value: String => String): Self = this.set("getByFormat", js.Any.fromFunction1(value))
+    def setGetHourLocalTime(value: () => Double): Self = StObject.set(x, "getHourLocalTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayValue(value: () => String): Self = this.set("getDisplayValue", js.Any.fromFunction0(value))
+    def setGetHourOfDayLocalTime(value: () => Double): Self = StObject.set(x, "getHourOfDayLocalTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayValueInternal(value: () => String): Self = this.set("getDisplayValueInternal", js.Any.fromFunction0(value))
+    def setGetHourOfDayUTC(value: () => Double): Self = StObject.set(x, "getHourOfDayUTC", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHourLocalTime(value: () => Double): Self = this.set("getHourLocalTime", js.Any.fromFunction0(value))
+    def setGetHourUTC(value: () => Double): Self = StObject.set(x, "getHourUTC", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHourOfDayLocalTime(value: () => Double): Self = this.set("getHourOfDayLocalTime", js.Any.fromFunction0(value))
+    def setGetMinutesLocalTime(value: () => Double): Self = StObject.set(x, "getMinutesLocalTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHourOfDayUTC(value: () => Double): Self = this.set("getHourOfDayUTC", js.Any.fromFunction0(value))
+    def setGetMinutesUTC(value: () => Double): Self = StObject.set(x, "getMinutesUTC", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHourUTC(value: () => Double): Self = this.set("getHourUTC", js.Any.fromFunction0(value))
+    def setGetSeconds(value: () => Double): Self = StObject.set(x, "getSeconds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinutesLocalTime(value: () => Double): Self = this.set("getMinutesLocalTime", js.Any.fromFunction0(value))
+    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMinutesUTC(value: () => Double): Self = this.set("getMinutesUTC", js.Any.fromFunction0(value))
+    def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSeconds(value: () => Double): Self = this.set("getSeconds", js.Any.fromFunction0(value))
+    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDisplayValue(value: String => Unit): Self = this.set("setDisplayValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubtract(value: (GlideTime, GlideTime) => GlideDuration): Self = this.set("subtract", js.Any.fromFunction2(value))
+    def setSubtract(value: (GlideTime, GlideTime) => GlideDuration): Self = StObject.set(x, "subtract", js.Any.fromFunction2(value))
   }
 }

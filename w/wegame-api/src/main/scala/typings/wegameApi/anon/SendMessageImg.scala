@@ -1,11 +1,12 @@
 package typings.wegameApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendMessageImg extends js.Object {
+trait SendMessageImg extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -47,66 +48,54 @@ object SendMessageImg {
   }
   
   @scala.inline
-  implicit class SendMessageImgOps[Self <: SendMessageImg] (val x: Self) extends AnyVal {
+  implicit class SendMessageImgMutableBuilder[Self <: SendMessageImg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSendMessageImg(value: String): Self = StObject.set(x, "sendMessageImg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: () => Unit): Self = this.set("fail", js.Any.fromFunction0(value))
+    def setSendMessageImgUndefined: Self = StObject.set(x, "sendMessageImg", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSendMessagePath(value: String): Self = StObject.set(x, "sendMessagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendMessageImg(value: String): Self = this.set("sendMessageImg", value.asInstanceOf[js.Any])
+    def setSendMessagePathUndefined: Self = StObject.set(x, "sendMessagePath", js.undefined)
     
     @scala.inline
-    def deleteSendMessageImg: Self = this.set("sendMessageImg", js.undefined)
+    def setSendMessageTitle(value: String): Self = StObject.set(x, "sendMessageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendMessagePath(value: String): Self = this.set("sendMessagePath", value.asInstanceOf[js.Any])
+    def setSendMessageTitleUndefined: Self = StObject.set(x, "sendMessageTitle", js.undefined)
     
     @scala.inline
-    def deleteSendMessagePath: Self = this.set("sendMessagePath", js.undefined)
+    def setSessionFrom(value: String): Self = StObject.set(x, "sessionFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendMessageTitle(value: String): Self = this.set("sendMessageTitle", value.asInstanceOf[js.Any])
+    def setSessionFromUndefined: Self = StObject.set(x, "sessionFrom", js.undefined)
     
     @scala.inline
-    def deleteSendMessageTitle: Self = this.set("sendMessageTitle", js.undefined)
+    def setShowMessageCard(value: Boolean): Self = StObject.set(x, "showMessageCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionFrom(value: String): Self = this.set("sessionFrom", value.asInstanceOf[js.Any])
+    def setShowMessageCardUndefined: Self = StObject.set(x, "showMessageCard", js.undefined)
     
     @scala.inline
-    def deleteSessionFrom: Self = this.set("sessionFrom", js.undefined)
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowMessageCard(value: Boolean): Self = this.set("showMessageCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowMessageCard: Self = this.set("showMessageCard", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

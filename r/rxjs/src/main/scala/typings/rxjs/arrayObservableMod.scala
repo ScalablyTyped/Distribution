@@ -1,22 +1,25 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/observable/ArrayObservable", JSImport.Namespace)
-@js.native
-object arrayObservableMod extends js.Object {
+object arrayObservableMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs/observable/ArrayObservable", "ArrayObservable")
+  @js.native
   class ArrayObservable[T] ()
     extends typings.rxjsCompat.arrayObservableMod.ArrayObservable[T]
   /* static members */
-  @js.native
-  object ArrayObservable extends js.Object {
+  object ArrayObservable {
     
+    @JSImport("rxjs/observable/ArrayObservable", "ArrayObservable.create")
+    @js.native
     def create[T](array: js.Array[T]): js.Any = js.native
+    @JSImport("rxjs/observable/ArrayObservable", "ArrayObservable.create")
+    @js.native
     def create[T](
       array: js.Array[T],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any

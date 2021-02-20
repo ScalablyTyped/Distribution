@@ -1,24 +1,21 @@
 package typings.dialogflow.mod.google.protobuf
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NullValue extends js.Object
-
+sealed trait NullValue extends StObject
 /** NullValue enum. */
 @JSImport("dialogflow/protos/protos", "google.protobuf.NullValue")
 @js.native
-object NullValue extends js.Object {
-  @js.native
-  sealed trait NULL_VALUE extends NullValue
+object NullValue extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NullValue with Double] = js.native
-  /* 0 */ @js.native
-  object NULL_VALUE extends TopLevel[NULL_VALUE with Double]
   
+  @js.native
+  sealed trait NULL_VALUE extends NullValue
+  /* 0 */ val NULL_VALUE: typings.dialogflow.mod.google.protobuf.NullValue.NULL_VALUE with Double = js.native
 }
-

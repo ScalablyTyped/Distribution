@@ -12,16 +12,21 @@ import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.sourceTileMod.TileSourceEvent
 import typings.ol.stateMod.State
 import typings.ol.tilecoordMod.TileCoord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/source/UrlTile", JSImport.Namespace)
-@js.native
-object urlTileMod extends js.Object {
+object urlTileMod {
+  
+  @JSImport("ol/source/UrlTile", JSImport.Default)
+  @js.native
+  class default protected () extends UrlTile {
+    def this(options: Options) = this()
+  }
   
   @js.native
-  trait Options extends js.Object {
+  trait Options extends StObject {
     
     var attributions: js.UndefOr[AttributionLike] = js.native
     
@@ -138,10 +143,5 @@ object urlTileMod extends js.Object {
       * Marks a tile coord as being used, without triggering a load.
       */
     def useTile(z: Double, x: Double, y: Double): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends UrlTile {
-    def this(options: Options) = this()
   }
 }

@@ -1,11 +1,12 @@
 package typings.ckeditor.CKEDITOR
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait htmlDataProcessorOptions extends js.Object {
+trait htmlDataProcessorOptions extends StObject {
   
   var context: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object htmlDataProcessorOptions {
   }
   
   @scala.inline
-  implicit class htmlDataProcessorOptionsOps[Self <: htmlDataProcessorOptions] (val x: Self) extends AnyVal {
+  implicit class htmlDataProcessorOptionsMutableBuilder[Self <: htmlDataProcessorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDontFilter(value: Boolean): Self = StObject.set(x, "dontFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDontFilterUndefined: Self = StObject.set(x, "dontFilter", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setEnterMode(value: Double): Self = StObject.set(x, "enterMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDontFilter(value: Boolean): Self = this.set("dontFilter", value.asInstanceOf[js.Any])
+    def setEnterModeUndefined: Self = StObject.set(x, "enterMode", js.undefined)
     
     @scala.inline
-    def deleteDontFilter: Self = this.set("dontFilter", js.undefined)
+    def setFilter(value: filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterMode(value: Double): Self = this.set("enterMode", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteEnterMode: Self = this.set("enterMode", js.undefined)
+    def setFixForBody(value: Boolean): Self = StObject.set(x, "fixForBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFixForBodyUndefined: Self = StObject.set(x, "fixForBody", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setProtectedWhitespaces(value: Boolean): Self = StObject.set(x, "protectedWhitespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixForBody(value: Boolean): Self = this.set("fixForBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixForBody: Self = this.set("fixForBody", js.undefined)
-    
-    @scala.inline
-    def setProtectedWhitespaces(value: Boolean): Self = this.set("protectedWhitespaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtectedWhitespaces: Self = this.set("protectedWhitespaces", js.undefined)
+    def setProtectedWhitespacesUndefined: Self = StObject.set(x, "protectedWhitespaces", js.undefined)
   }
 }

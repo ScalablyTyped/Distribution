@@ -1,12 +1,13 @@
 package typings.typescriptServices.TypeScript.Services
 
 import typings.typescriptServices.TypeScript.SyntaxTree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SyntaxTreeCache extends js.Object {
+trait SyntaxTreeCache extends StObject {
   
   var _currentFileName: js.Any = js.native
   
@@ -54,48 +55,36 @@ object SyntaxTreeCache {
   }
   
   @scala.inline
-  implicit class SyntaxTreeCacheOps[Self <: SyntaxTreeCache] (val x: Self) extends AnyVal {
+  implicit class SyntaxTreeCacheMutableBuilder[Self <: SyntaxTreeCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateSyntaxTree(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createSyntaxTree", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnsureInvariants(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "ensureInvariants", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentFileSyntaxTree(value: String => SyntaxTree): Self = StObject.set(x, "getCurrentFileSyntaxTree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_currentFileName(value: js.Any): Self = this.set("_currentFileName", value.asInstanceOf[js.Any])
+    def setUpdateSyntaxTree(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "updateSyntaxTree", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set_currentFileScriptSnapshot(value: js.Any): Self = this.set("_currentFileScriptSnapshot", value.asInstanceOf[js.Any])
+    def set_currentFileName(value: js.Any): Self = StObject.set(x, "_currentFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentFileSyntaxTree(value: js.Any): Self = this.set("_currentFileSyntaxTree", value.asInstanceOf[js.Any])
+    def set_currentFileScriptSnapshot(value: js.Any): Self = StObject.set(x, "_currentFileScriptSnapshot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_currentFileVersion(value: js.Any): Self = this.set("_currentFileVersion", value.asInstanceOf[js.Any])
+    def set_currentFileSyntaxTree(value: js.Any): Self = StObject.set(x, "_currentFileSyntaxTree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_host(value: js.Any): Self = this.set("_host", value.asInstanceOf[js.Any])
+    def set_currentFileVersion(value: js.Any): Self = StObject.set(x, "_currentFileVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_hostCache(value: js.Any): Self = this.set("_hostCache", value.asInstanceOf[js.Any])
+    def set_host(value: js.Any): Self = StObject.set(x, "_host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSyntaxTree(value: (js.Any, js.Any) => js.Any): Self = this.set("createSyntaxTree", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setEnsureInvariants(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("ensureInvariants", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setGetCurrentFileSyntaxTree(value: String => SyntaxTree): Self = this.set("getCurrentFileSyntaxTree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateSyntaxTree(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("updateSyntaxTree", js.Any.fromFunction4(value))
+    def set_hostCache(value: js.Any): Self = StObject.set(x, "_hostCache", value.asInstanceOf[js.Any])
   }
 }

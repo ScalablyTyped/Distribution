@@ -1,11 +1,12 @@
 package typings.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlayOptions extends js.Object {
+trait OverlayOptions extends StObject {
   
   var fitHeight: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object OverlayOptions {
   }
   
   @scala.inline
-  implicit class OverlayOptionsOps[Self <: OverlayOptions] (val x: Self) extends AnyVal {
+  implicit class OverlayOptionsMutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFitHeight(value: Boolean): Self = StObject.set(x, "fitHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFitHeightUndefined: Self = StObject.set(x, "fitHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFitWidth(value: Boolean): Self = StObject.set(x, "fitWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitHeight(value: Boolean): Self = this.set("fitHeight", value.asInstanceOf[js.Any])
+    def setFitWidthUndefined: Self = StObject.set(x, "fitWidth", js.undefined)
     
     @scala.inline
-    def deleteFitHeight: Self = this.set("fitHeight", js.undefined)
+    def setKeepAspectRatio(value: Boolean): Self = StObject.set(x, "keepAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitWidth(value: Boolean): Self = this.set("fitWidth", value.asInstanceOf[js.Any])
+    def setKeepAspectRatioUndefined: Self = StObject.set(x, "keepAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteFitWidth: Self = this.set("fitWidth", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepAspectRatio(value: Boolean): Self = this.set("keepAspectRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepAspectRatio: Self = this.set("keepAspectRatio", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

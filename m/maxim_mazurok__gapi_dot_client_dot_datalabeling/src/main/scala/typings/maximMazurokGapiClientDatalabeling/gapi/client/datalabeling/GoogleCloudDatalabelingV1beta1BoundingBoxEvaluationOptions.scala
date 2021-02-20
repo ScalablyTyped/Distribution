@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends js.Object {
+trait GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions extends StObject {
   
   /**
     * Minimum [intersection-over-union (IOU)](/vision/automl/object-detection/docs/evaluate#intersection-over-union) required for 2 bounding boxes to be considered a match. This must be a
@@ -22,24 +23,12 @@ object GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptionsOps[Self <: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptionsMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIouThreshold(value: Double): Self = this.set("iouThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIouThreshold: Self = this.set("iouThreshold", js.undefined)
+    def setIouThresholdUndefined: Self = StObject.set(x, "iouThreshold", js.undefined)
   }
 }

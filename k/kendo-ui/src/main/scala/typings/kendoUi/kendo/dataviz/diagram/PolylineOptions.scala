@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolylineOptions extends js.Object {
+trait PolylineOptions extends StObject {
   
   var endCap: js.UndefOr[String | PolylineEndCap] = js.native
   
@@ -26,48 +27,36 @@ object PolylineOptions {
   }
   
   @scala.inline
-  implicit class PolylineOptionsOps[Self <: PolylineOptions] (val x: Self) extends AnyVal {
+  implicit class PolylineOptionsMutableBuilder[Self <: PolylineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndCap(value: String | PolylineEndCap): Self = StObject.set(x, "endCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndCapUndefined: Self = StObject.set(x, "endCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: String | PolylineFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndCap(value: String | PolylineEndCap): Self = this.set("endCap", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteEndCap: Self = this.set("endCap", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String | PolylineFill): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setStartCap(value: String | PolylineStartCap): Self = StObject.set(x, "startCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStartCapUndefined: Self = StObject.set(x, "startCap", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStroke(value: PolylineStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartCap(value: String | PolylineStartCap): Self = this.set("startCap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartCap: Self = this.set("startCap", js.undefined)
-    
-    @scala.inline
-    def setStroke(value: PolylineStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

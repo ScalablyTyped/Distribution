@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabElement extends js.Object {
+trait TabElement extends StObject {
   
   var bodyElem: String = js.native
   
@@ -20,24 +21,12 @@ object TabElement {
   }
   
   @scala.inline
-  implicit class TabElementOps[Self <: TabElement] (val x: Self) extends AnyVal {
+  implicit class TabElementMutableBuilder[Self <: TabElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBodyElem(value: String): Self = StObject.set(x, "bodyElem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBodyElem(value: String): Self = this.set("bodyElem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaderElem(value: String): Self = this.set("headerElem", value.asInstanceOf[js.Any])
+    def setHeaderElem(value: String): Self = StObject.set(x, "headerElem", value.asInstanceOf[js.Any])
   }
 }

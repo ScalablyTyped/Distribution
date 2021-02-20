@@ -31,6 +31,7 @@ import typings.aceBuilds.anon.Action
 import typings.aceBuilds.anon.Data
 import typings.aceBuilds.anon.Max
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

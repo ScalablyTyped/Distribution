@@ -6,12 +6,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.end
 import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelHalign extends js.Object {
+trait LabelHalign extends StObject {
   
   var labelHalign: center | end | start = js.native
   
@@ -41,36 +42,24 @@ object LabelHalign {
   }
   
   @scala.inline
-  implicit class LabelHalignOps[Self <: LabelHalign] (val x: Self) extends AnyVal {
+  implicit class LabelHalignMutableBuilder[Self <: LabelHalign] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelHalign(value: center | end | start): Self = StObject.set(x, "labelHalign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximizedSvgStyle(value: js.Object): Self = StObject.set(x, "maximizedSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHalign(value: center | end | start): Self = this.set("labelHalign", value.asInstanceOf[js.Any])
+    def setMinimizedSvgStyle(value: js.Object): Self = StObject.set(x, "minimizedSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setShowCount(value: on | off | auto): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximizedSvgStyle(value: js.Object): Self = this.set("maximizedSvgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimizedSvgStyle(value: js.Object): Self = this.set("minimizedSvgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowCount(value: on | off | auto): Self = this.set("showCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
   }
 }

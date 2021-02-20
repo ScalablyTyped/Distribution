@@ -3,6 +3,7 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.attribute
 import typings.webidl2.webidl2Strings.static
 import typings.webidl2.webidl2Strings.stringifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,42 +54,30 @@ object AttributeMemberType {
   }
   
   @scala.inline
-  implicit class AttributeMemberTypeOps[Self <: AttributeMemberType] (val x: Self) extends AnyVal {
+  implicit class AttributeMemberTypeMutableBuilder[Self <: AttributeMemberType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = this.set("idlType", value.asInstanceOf[js.Any])
+    def setParent(value: InterfaceMixinType | InterfaceType | NamespaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSpecial(value: static | stringifier): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: InterfaceMixinType | InterfaceType | NamespaceType): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setSpecialNull: Self = StObject.set(x, "special", null)
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: attribute): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecial(value: static | stringifier): Self = this.set("special", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecialNull: Self = this.set("special", null)
+    def setType(value: attribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

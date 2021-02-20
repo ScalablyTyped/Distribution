@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveDialogReturnValue extends js.Object {
+trait SaveDialogReturnValue extends StObject {
   
   /**
     * Base64 encoded string which contains the security scoped bookmark data for the
@@ -35,33 +36,21 @@ object SaveDialogReturnValue {
   }
   
   @scala.inline
-  implicit class SaveDialogReturnValueOps[Self <: SaveDialogReturnValue] (val x: Self) extends AnyVal {
+  implicit class SaveDialogReturnValueMutableBuilder[Self <: SaveDialogReturnValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceled(value: Boolean): Self = this.set("canceled", value.asInstanceOf[js.Any])
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmark(value: String): Self = this.set("bookmark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBookmark: Self = this.set("bookmark", js.undefined)
-    
-    @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
   }
 }

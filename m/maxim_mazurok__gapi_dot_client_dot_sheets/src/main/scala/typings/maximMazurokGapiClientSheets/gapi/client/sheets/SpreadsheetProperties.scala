@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpreadsheetProperties extends js.Object {
+trait SpreadsheetProperties extends StObject {
   
   /** The amount of time to wait before volatile functions are recalculated. */
   var autoRecalc: js.UndefOr[String] = js.native
@@ -40,60 +41,48 @@ object SpreadsheetProperties {
   }
   
   @scala.inline
-  implicit class SpreadsheetPropertiesOps[Self <: SpreadsheetProperties] (val x: Self) extends AnyVal {
+  implicit class SpreadsheetPropertiesMutableBuilder[Self <: SpreadsheetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRecalc(value: String): Self = StObject.set(x, "autoRecalc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRecalcUndefined: Self = StObject.set(x, "autoRecalc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultFormat(value: CellFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRecalc(value: String): Self = this.set("autoRecalc", value.asInstanceOf[js.Any])
+    def setDefaultFormatUndefined: Self = StObject.set(x, "defaultFormat", js.undefined)
     
     @scala.inline
-    def deleteAutoRecalc: Self = this.set("autoRecalc", js.undefined)
+    def setIterativeCalculationSettings(value: IterativeCalculationSettings): Self = StObject.set(x, "iterativeCalculationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFormat(value: CellFormat): Self = this.set("defaultFormat", value.asInstanceOf[js.Any])
+    def setIterativeCalculationSettingsUndefined: Self = StObject.set(x, "iterativeCalculationSettings", js.undefined)
     
     @scala.inline
-    def deleteDefaultFormat: Self = this.set("defaultFormat", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterativeCalculationSettings(value: IterativeCalculationSettings): Self = this.set("iterativeCalculationSettings", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteIterativeCalculationSettings: Self = this.set("iterativeCalculationSettings", js.undefined)
+    def setSpreadsheetTheme(value: SpreadsheetTheme): Self = StObject.set(x, "spreadsheetTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setSpreadsheetThemeUndefined: Self = StObject.set(x, "spreadsheetTheme", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetTheme(value: SpreadsheetTheme): Self = this.set("spreadsheetTheme", value.asInstanceOf[js.Any])
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def deleteSpreadsheetTheme: Self = this.set("spreadsheetTheme", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.steamClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CMsgClientLogonResponse extends js.Object {
+trait CMsgClientLogonResponse extends StObject {
   
   /**
     * The logon was successful if equal to EResult.OK
@@ -26,24 +27,12 @@ object CMsgClientLogonResponse {
   }
   
   @scala.inline
-  implicit class CMsgClientLogonResponseOps[Self <: CMsgClientLogonResponse] (val x: Self) extends AnyVal {
+  implicit class CMsgClientLogonResponseMutableBuilder[Self <: CMsgClientLogonResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEresult(value: EResult): Self = StObject.set(x, "eresult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEresult(value: EResult): Self = this.set("eresult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebapi_authenticate_user_nonce(value: String): Self = this.set("webapi_authenticate_user_nonce", value.asInstanceOf[js.Any])
+    def setWebapi_authenticate_user_nonce(value: String): Self = StObject.set(x, "webapi_authenticate_user_nonce", value.asInstanceOf[js.Any])
   }
 }

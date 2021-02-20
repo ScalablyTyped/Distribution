@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,54 +67,42 @@ object WebXRInput {
   }
   
   @scala.inline
-  implicit class WebXRInputOps[Self <: WebXRInput] (val x: Self) extends AnyVal {
+  implicit class WebXRInputMutableBuilder[Self <: WebXRInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControllers(value: js.Array[WebXRInputSource]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllersVarargs(value: WebXRInputSource*): Self = StObject.set(x, "controllers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnControllerAddedObservable(value: Observable[WebXRInputSource]): Self = StObject.set(x, "onControllerAddedObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_addAndRemoveControllers(value: js.Any): Self = this.set("_addAndRemoveControllers", value.asInstanceOf[js.Any])
+    def setOnControllerRemovedObservable(value: Observable[WebXRInputSource]): Self = StObject.set(x, "onControllerRemovedObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_frameObserver(value: js.Any): Self = this.set("_frameObserver", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_onInputSourcesChange(value: js.Any): Self = this.set("_onInputSourcesChange", value.asInstanceOf[js.Any])
+    def setXrCamera(value: WebXRCamera): Self = StObject.set(x, "xrCamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sessionEndedObserver(value: js.Any): Self = this.set("_sessionEndedObserver", value.asInstanceOf[js.Any])
+    def setXrSessionManager(value: WebXRSessionManager): Self = StObject.set(x, "xrSessionManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sessionInitObserver(value: js.Any): Self = this.set("_sessionInitObserver", value.asInstanceOf[js.Any])
+    def set_addAndRemoveControllers(value: js.Any): Self = StObject.set(x, "_addAndRemoveControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllersVarargs(value: WebXRInputSource*): Self = this.set("controllers", js.Array(value :_*))
+    def set_frameObserver(value: js.Any): Self = StObject.set(x, "_frameObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllers(value: js.Array[WebXRInputSource]): Self = this.set("controllers", value.asInstanceOf[js.Any])
+    def set_onInputSourcesChange(value: js.Any): Self = StObject.set(x, "_onInputSourcesChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnControllerAddedObservable(value: Observable[WebXRInputSource]): Self = this.set("onControllerAddedObservable", value.asInstanceOf[js.Any])
+    def set_sessionEndedObserver(value: js.Any): Self = StObject.set(x, "_sessionEndedObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnControllerRemovedObservable(value: Observable[WebXRInputSource]): Self = this.set("onControllerRemovedObservable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXrCamera(value: WebXRCamera): Self = this.set("xrCamera", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXrSessionManager(value: WebXRSessionManager): Self = this.set("xrSessionManager", value.asInstanceOf[js.Any])
+    def set_sessionInitObserver(value: js.Any): Self = StObject.set(x, "_sessionInitObserver", value.asInstanceOf[js.Any])
   }
 }

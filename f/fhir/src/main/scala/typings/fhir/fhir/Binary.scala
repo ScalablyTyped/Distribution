@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,42 +47,30 @@ object Binary {
   }
   
   @scala.inline
-  implicit class BinaryOps[Self <: Binary] (val x: Self) extends AnyVal {
+  implicit class BinaryMutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: base64Binary): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecurityContext(value: Reference): Self = StObject.set(x, "securityContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: base64Binary): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
     
     @scala.inline
-    def setContentType(value: code): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def set_content(value: Element): Self = StObject.set(x, "_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_content(value: Element): Self = this.set("_content", value.asInstanceOf[js.Any])
+    def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_content: Self = this.set("_content", js.undefined)
+    def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
     
     @scala.inline
-    def set_contentType(value: Element): Self = this.set("_contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_contentType: Self = this.set("_contentType", js.undefined)
-    
-    @scala.inline
-    def setSecurityContext(value: Reference): Self = this.set("securityContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityContext: Self = this.set("securityContext", js.undefined)
+    def set_contentUndefined: Self = StObject.set(x, "_content", js.undefined)
   }
 }

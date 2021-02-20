@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -180,240 +181,228 @@ object IField {
   }
   
   @scala.inline
-  implicit class IFieldOps[Self <: IField] (val x: Self) extends AnyVal {
+  implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvert(value: js.Any): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNull(value: Boolean): Self = this.set("allowNull", value.asInstanceOf[js.Any])
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def deleteAllowNull: Self = this.set("allowNull", js.undefined)
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: js.Any): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setGetAllowNull(value: () => Boolean): Self = StObject.set(x, "getAllowNull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setGetAllowNullUndefined: Self = StObject.set(x, "getAllowNull", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setGetBubbleEvents(value: () => String): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowNull(value: () => Boolean): Self = this.set("getAllowNull", js.Any.fromFunction0(value))
+    def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
     
     @scala.inline
-    def deleteGetAllowNull: Self = this.set("getAllowNull", js.undefined)
+    def setGetConvert(value: () => _): Self = StObject.set(x, "getConvert", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBubbleEvents(value: () => String): Self = this.set("getBubbleEvents", js.Any.fromFunction0(value))
+    def setGetConvertUndefined: Self = StObject.set(x, "getConvert", js.undefined)
     
     @scala.inline
-    def deleteGetBubbleEvents: Self = this.set("getBubbleEvents", js.undefined)
+    def setGetDateFormat(value: () => String): Self = StObject.set(x, "getDateFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConvert(value: () => _): Self = this.set("getConvert", js.Any.fromFunction0(value))
+    def setGetDateFormatUndefined: Self = StObject.set(x, "getDateFormat", js.undefined)
     
     @scala.inline
-    def deleteGetConvert: Self = this.set("getConvert", js.undefined)
+    def setGetDecode(value: () => _): Self = StObject.set(x, "getDecode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDateFormat(value: () => String): Self = this.set("getDateFormat", js.Any.fromFunction0(value))
+    def setGetDecodeUndefined: Self = StObject.set(x, "getDecode", js.undefined)
     
     @scala.inline
-    def deleteGetDateFormat: Self = this.set("getDateFormat", js.undefined)
+    def setGetDefaultValue(value: () => _): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDecode(value: () => _): Self = this.set("getDecode", js.Any.fromFunction0(value))
+    def setGetDefaultValueUndefined: Self = StObject.set(x, "getDefaultValue", js.undefined)
     
     @scala.inline
-    def deleteGetDecode: Self = this.set("getDecode", js.undefined)
+    def setGetEncode(value: () => _): Self = StObject.set(x, "getEncode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultValue(value: () => _): Self = this.set("getDefaultValue", js.Any.fromFunction0(value))
+    def setGetEncodeUndefined: Self = StObject.set(x, "getEncode", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultValue: Self = this.set("getDefaultValue", js.undefined)
+    def setGetMapping(value: () => _): Self = StObject.set(x, "getMapping", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEncode(value: () => _): Self = this.set("getEncode", js.Any.fromFunction0(value))
+    def setGetMappingUndefined: Self = StObject.set(x, "getMapping", js.undefined)
     
     @scala.inline
-    def deleteGetEncode: Self = this.set("getEncode", js.undefined)
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMapping(value: () => _): Self = this.set("getMapping", js.Any.fromFunction0(value))
+    def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
     @scala.inline
-    def deleteGetMapping: Self = this.set("getMapping", js.undefined)
+    def setGetPersist(value: () => Boolean): Self = StObject.set(x, "getPersist", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetPersistUndefined: Self = StObject.set(x, "getPersist", js.undefined)
     
     @scala.inline
-    def deleteGetName: Self = this.set("getName", js.undefined)
+    def setGetSortDir(value: () => String): Self = StObject.set(x, "getSortDir", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPersist(value: () => Boolean): Self = this.set("getPersist", js.Any.fromFunction0(value))
+    def setGetSortDirUndefined: Self = StObject.set(x, "getSortDir", js.undefined)
     
     @scala.inline
-    def deleteGetPersist: Self = this.set("getPersist", js.undefined)
+    def setGetSortType(value: () => _): Self = StObject.set(x, "getSortType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSortDir(value: () => String): Self = this.set("getSortDir", js.Any.fromFunction0(value))
+    def setGetSortTypeUndefined: Self = StObject.set(x, "getSortType", js.undefined)
     
     @scala.inline
-    def deleteGetSortDir: Self = this.set("getSortDir", js.undefined)
+    def setGetType(value: () => _): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSortType(value: () => _): Self = this.set("getSortType", js.Any.fromFunction0(value))
+    def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
     
     @scala.inline
-    def deleteGetSortType: Self = this.set("getSortType", js.undefined)
+    def setMapping(value: js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetType(value: () => _): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
     @scala.inline
-    def deleteGetType: Self = this.set("getType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapping(value: js.Any): Self = this.set("mapping", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMapping: Self = this.set("mapping", js.undefined)
+    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSetAllowNull(value: /* allowNull */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAllowNull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setSetAllowNullUndefined: Self = StObject.set(x, "setAllowNull", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setBubbleEvents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAllowNull(value: /* allowNull */ js.UndefOr[Boolean] => Unit): Self = this.set("setAllowNull", js.Any.fromFunction1(value))
+    def setSetBubbleEventsUndefined: Self = StObject.set(x, "setBubbleEvents", js.undefined)
     
     @scala.inline
-    def deleteSetAllowNull: Self = this.set("setAllowNull", js.undefined)
+    def setSetConvert(value: /* convert */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setConvert", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBubbleEvents(value: /* bubbleEvents */ js.UndefOr[String] => Unit): Self = this.set("setBubbleEvents", js.Any.fromFunction1(value))
+    def setSetConvertUndefined: Self = StObject.set(x, "setConvert", js.undefined)
     
     @scala.inline
-    def deleteSetBubbleEvents: Self = this.set("setBubbleEvents", js.undefined)
+    def setSetDateFormat(value: /* dateFormat */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDateFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetConvert(value: /* convert */ js.UndefOr[js.Any] => Unit): Self = this.set("setConvert", js.Any.fromFunction1(value))
+    def setSetDateFormatUndefined: Self = StObject.set(x, "setDateFormat", js.undefined)
     
     @scala.inline
-    def deleteSetConvert: Self = this.set("setConvert", js.undefined)
+    def setSetDecode(value: /* decode */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDecode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDateFormat(value: /* dateFormat */ js.UndefOr[String] => Unit): Self = this.set("setDateFormat", js.Any.fromFunction1(value))
+    def setSetDecodeUndefined: Self = StObject.set(x, "setDecode", js.undefined)
     
     @scala.inline
-    def deleteSetDateFormat: Self = this.set("setDateFormat", js.undefined)
+    def setSetDefaultValue(value: /* defaultValue */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDecode(value: /* decode */ js.UndefOr[js.Any] => Unit): Self = this.set("setDecode", js.Any.fromFunction1(value))
+    def setSetDefaultValueUndefined: Self = StObject.set(x, "setDefaultValue", js.undefined)
     
     @scala.inline
-    def deleteSetDecode: Self = this.set("setDecode", js.undefined)
+    def setSetEncode(value: /* encode */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEncode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaultValue(value: /* defaultValue */ js.UndefOr[js.Any] => Unit): Self = this.set("setDefaultValue", js.Any.fromFunction1(value))
+    def setSetEncodeUndefined: Self = StObject.set(x, "setEncode", js.undefined)
     
     @scala.inline
-    def deleteSetDefaultValue: Self = this.set("setDefaultValue", js.undefined)
+    def setSetMapping(value: /* mapping */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMapping", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEncode(value: /* encode */ js.UndefOr[js.Any] => Unit): Self = this.set("setEncode", js.Any.fromFunction1(value))
+    def setSetMappingUndefined: Self = StObject.set(x, "setMapping", js.undefined)
     
     @scala.inline
-    def deleteSetEncode: Self = this.set("setEncode", js.undefined)
+    def setSetName(value: /* name */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMapping(value: /* mapping */ js.UndefOr[js.Any] => Unit): Self = this.set("setMapping", js.Any.fromFunction1(value))
+    def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
     
     @scala.inline
-    def deleteSetMapping: Self = this.set("setMapping", js.undefined)
+    def setSetPersist(value: /* persist */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setPersist", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetName(value: /* name */ js.UndefOr[String] => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetPersistUndefined: Self = StObject.set(x, "setPersist", js.undefined)
     
     @scala.inline
-    def deleteSetName: Self = this.set("setName", js.undefined)
+    def setSetSortDir(value: /* sortDir */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setSortDir", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPersist(value: /* persist */ js.UndefOr[Boolean] => Unit): Self = this.set("setPersist", js.Any.fromFunction1(value))
+    def setSetSortDirUndefined: Self = StObject.set(x, "setSortDir", js.undefined)
     
     @scala.inline
-    def deleteSetPersist: Self = this.set("setPersist", js.undefined)
+    def setSetSortType(value: /* sortType */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSortType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSortDir(value: /* sortDir */ js.UndefOr[String] => Unit): Self = this.set("setSortDir", js.Any.fromFunction1(value))
+    def setSetSortTypeUndefined: Self = StObject.set(x, "setSortType", js.undefined)
     
     @scala.inline
-    def deleteSetSortDir: Self = this.set("setSortDir", js.undefined)
+    def setSetType(value: /* type */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSortType(value: /* sortType */ js.UndefOr[js.Any] => Unit): Self = this.set("setSortType", js.Any.fromFunction1(value))
+    def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
     
     @scala.inline
-    def deleteSetSortType: Self = this.set("setSortType", js.undefined)
+    def setSortDir(value: String): Self = StObject.set(x, "sortDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetType(value: /* type */ js.UndefOr[js.Any] => Unit): Self = this.set("setType", js.Any.fromFunction1(value))
+    def setSortDirUndefined: Self = StObject.set(x, "sortDir", js.undefined)
     
     @scala.inline
-    def deleteSetType: Self = this.set("setType", js.undefined)
+    def setSortType(value: js.Any): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDir(value: String): Self = this.set("sortDir", value.asInstanceOf[js.Any])
+    def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
     
     @scala.inline
-    def deleteSortDir: Self = this.set("sortDir", js.undefined)
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortType(value: js.Any): Self = this.set("sortType", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSortType: Self = this.set("sortType", js.undefined)
+    def setUseNull(value: Boolean): Self = StObject.set(x, "useNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUseNull(value: Boolean): Self = this.set("useNull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNull: Self = this.set("useNull", js.undefined)
+    def setUseNullUndefined: Self = StObject.set(x, "useNull", js.undefined)
   }
 }

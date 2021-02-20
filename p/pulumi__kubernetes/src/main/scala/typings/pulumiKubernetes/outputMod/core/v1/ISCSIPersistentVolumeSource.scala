@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ISCSIPersistentVolumeSource represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.
   */
 @js.native
-trait ISCSIPersistentVolumeSource extends js.Object {
+trait ISCSIPersistentVolumeSource extends StObject {
   
   /**
     * whether support iSCSI Discovery CHAP authentication
@@ -86,54 +87,42 @@ object ISCSIPersistentVolumeSource {
   }
   
   @scala.inline
-  implicit class ISCSIPersistentVolumeSourceOps[Self <: ISCSIPersistentVolumeSource] (val x: Self) extends AnyVal {
+  implicit class ISCSIPersistentVolumeSourceMutableBuilder[Self <: ISCSIPersistentVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChapAuthDiscovery(value: Boolean): Self = StObject.set(x, "chapAuthDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChapAuthSession(value: Boolean): Self = StObject.set(x, "chapAuthSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChapAuthDiscovery(value: Boolean): Self = this.set("chapAuthDiscovery", value.asInstanceOf[js.Any])
+    def setInitiatorName(value: String): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChapAuthSession(value: Boolean): Self = this.set("chapAuthSession", value.asInstanceOf[js.Any])
+    def setIqn(value: String): Self = StObject.set(x, "iqn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: String): Self = this.set("fsType", value.asInstanceOf[js.Any])
+    def setIscsiInterface(value: String): Self = StObject.set(x, "iscsiInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiatorName(value: String): Self = this.set("initiatorName", value.asInstanceOf[js.Any])
+    def setLun(value: Double): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIqn(value: String): Self = this.set("iqn", value.asInstanceOf[js.Any])
+    def setPortals(value: js.Array[String]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIscsiInterface(value: String): Self = this.set("iscsiInterface", value.asInstanceOf[js.Any])
+    def setPortalsVarargs(value: String*): Self = StObject.set(x, "portals", js.Array(value :_*))
     
     @scala.inline
-    def setLun(value: Double): Self = this.set("lun", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalsVarargs(value: String*): Self = this.set("portals", js.Array(value :_*))
+    def setSecretRef(value: SecretReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortals(value: js.Array[String]): Self = this.set("portals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretRef(value: SecretReference): Self = this.set("secretRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetPortal(value: String): Self = this.set("targetPortal", value.asInstanceOf[js.Any])
+    def setTargetPortal(value: String): Self = StObject.set(x, "targetPortal", value.asInstanceOf[js.Any])
   }
 }

@@ -5,6 +5,7 @@ import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,60 +75,48 @@ object ParamsResourceCaptionsUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourceCaptionsUpdateOps[Self <: ParamsResourceCaptionsUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceCaptionsUpdateMutableBuilder[Self <: ParamsResourceCaptionsUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setOnBehalfOf(value: String): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: Body): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
     @scala.inline
-    def setOnBehalfOf(value: String): Self = this.set("onBehalfOf", value.asInstanceOf[js.Any])
+    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
     
     @scala.inline
-    def deleteOnBehalfOf: Self = this.set("onBehalfOf", js.undefined)
+    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = this.set("onBehalfOfContentOwner", value.asInstanceOf[js.Any])
+    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
     @scala.inline
-    def deleteOnBehalfOfContentOwner: Self = this.set("onBehalfOfContentOwner", js.undefined)
+    def setRequestBody(value: SchemaCaption): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deletePart: Self = this.set("part", js.undefined)
+    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaCaption): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setSync(value: Boolean): Self = this.set("sync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSync: Self = this.set("sync", js.undefined)
+    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
   }
 }

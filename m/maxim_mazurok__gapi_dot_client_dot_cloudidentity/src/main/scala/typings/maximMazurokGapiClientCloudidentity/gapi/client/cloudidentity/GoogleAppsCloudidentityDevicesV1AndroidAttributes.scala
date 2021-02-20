@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAppsCloudidentityDevicesV1AndroidAttributes extends js.Object {
+trait GoogleAppsCloudidentityDevicesV1AndroidAttributes extends StObject {
   
   /** Whether applications from unknown sources can be installed on device. */
   var enabledUnknownSources: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object GoogleAppsCloudidentityDevicesV1AndroidAttributes {
   }
   
   @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1AndroidAttributesOps[Self <: GoogleAppsCloudidentityDevicesV1AndroidAttributes] (val x: Self) extends AnyVal {
+  implicit class GoogleAppsCloudidentityDevicesV1AndroidAttributesMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1AndroidAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabledUnknownSources(value: Boolean): Self = StObject.set(x, "enabledUnknownSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUnknownSourcesUndefined: Self = StObject.set(x, "enabledUnknownSources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwnerProfileAccount(value: Boolean): Self = StObject.set(x, "ownerProfileAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledUnknownSources(value: Boolean): Self = this.set("enabledUnknownSources", value.asInstanceOf[js.Any])
+    def setOwnerProfileAccountUndefined: Self = StObject.set(x, "ownerProfileAccount", js.undefined)
     
     @scala.inline
-    def deleteEnabledUnknownSources: Self = this.set("enabledUnknownSources", js.undefined)
+    def setOwnershipPrivilege(value: String): Self = StObject.set(x, "ownershipPrivilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerProfileAccount(value: Boolean): Self = this.set("ownerProfileAccount", value.asInstanceOf[js.Any])
+    def setOwnershipPrivilegeUndefined: Self = StObject.set(x, "ownershipPrivilege", js.undefined)
     
     @scala.inline
-    def deleteOwnerProfileAccount: Self = this.set("ownerProfileAccount", js.undefined)
+    def setSupportsWorkProfile(value: Boolean): Self = StObject.set(x, "supportsWorkProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnershipPrivilege(value: String): Self = this.set("ownershipPrivilege", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnershipPrivilege: Self = this.set("ownershipPrivilege", js.undefined)
-    
-    @scala.inline
-    def setSupportsWorkProfile(value: Boolean): Self = this.set("supportsWorkProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsWorkProfile: Self = this.set("supportsWorkProfile", js.undefined)
+    def setSupportsWorkProfileUndefined: Self = StObject.set(x, "supportsWorkProfile", js.undefined)
   }
 }

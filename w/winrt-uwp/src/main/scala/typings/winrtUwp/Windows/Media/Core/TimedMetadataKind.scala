@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedMetadataKind extends js.Object
+sealed trait TimedMetadataKind extends StObject
 /** Specifies the types of metadata that may be present in a TimedMetadataTrack . */
 @JSGlobal("Windows.Media.Core.TimedMetadataKind")
 @js.native
-object TimedMetadataKind extends js.Object {
+object TimedMetadataKind extends StObject {
   
   /** The metadata contains caption text. */
   @js.native

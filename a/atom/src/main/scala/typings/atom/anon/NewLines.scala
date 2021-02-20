@@ -1,11 +1,12 @@
 package typings.atom.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewLines extends js.Object {
+trait NewLines extends StObject {
   
   var newLines: Double = js.native
   
@@ -24,30 +25,18 @@ object NewLines {
   }
   
   @scala.inline
-  implicit class NewLinesOps[Self <: NewLines] (val x: Self) extends AnyVal {
+  implicit class NewLinesMutableBuilder[Self <: NewLines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewLines(value: Double): Self = StObject.set(x, "newLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewStart(value: Double): Self = StObject.set(x, "newStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldLines(value: Double): Self = StObject.set(x, "oldLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewLines(value: Double): Self = this.set("newLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewStart(value: Double): Self = this.set("newStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldLines(value: Double): Self = this.set("oldLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldStart(value: Double): Self = this.set("oldStart", value.asInstanceOf[js.Any])
+    def setOldStart(value: Double): Self = StObject.set(x, "oldStart", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("validator/lib/isUppercase", JSImport.Namespace)
-@js.native
-object isUppercaseMod extends js.Object {
+object isUppercaseMod {
   
   /**
     * Check if the string is uppercase.
     */
+  @JSImport("validator/lib/isUppercase", JSImport.Default)
+  @js.native
   def default(str: String): Boolean = js.native
 }

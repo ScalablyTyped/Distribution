@@ -1,5 +1,6 @@
 package typings.reactSketchapp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactSketchapp.reactSketchappStrings.repeat
   - typings.reactSketchapp.reactSketchappStrings.none
 */
-trait ResizeMode extends js.Object
+trait ResizeMode extends StObject
 object ResizeMode {
   
   @scala.inline

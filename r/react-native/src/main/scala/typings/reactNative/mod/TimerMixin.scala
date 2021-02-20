@@ -1,12 +1,13 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.FnCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimerMixin extends js.Object {
+trait TimerMixin extends StObject {
   
   var cancelAnimationFrame: js.Function1[/* handle */ Double, Unit] = js.native
   
@@ -42,42 +43,30 @@ object TimerMixin {
   }
   
   @scala.inline
-  implicit class TimerMixinOps[Self <: TimerMixin] (val x: Self) extends AnyVal {
+  implicit class TimerMixinMutableBuilder[Self <: TimerMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelAnimationFrame(value: /* handle */ Double => Unit): Self = StObject.set(x, "cancelAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearImmediate(value: /* handle */ Double => Unit): Self = StObject.set(x, "clearImmediate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearInterval(value: /* handle */ Double => Unit): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelAnimationFrame(value: /* handle */ Double => Unit): Self = this.set("cancelAnimationFrame", js.Any.fromFunction1(value))
+    def setClearTimeout(value: /* handle */ Double => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearImmediate(value: /* handle */ Double => Unit): Self = this.set("clearImmediate", js.Any.fromFunction1(value))
+    def setRequestAnimationFrame(value: /* callback */ js.Function1[/* time */ Double, Unit] => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearInterval(value: /* handle */ Double => Unit): Self = this.set("clearInterval", js.Any.fromFunction1(value))
+    def setSetImmediate(value: /* handler */ js.Function1[/* repeated */ js.Any, Unit] => Double): Self = StObject.set(x, "setImmediate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearTimeout(value: /* handle */ Double => Unit): Self = this.set("clearTimeout", js.Any.fromFunction1(value))
+    def setSetInterval(value: FnCall): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestAnimationFrame(value: /* callback */ js.Function1[/* time */ Double, Unit] => Double): Self = this.set("requestAnimationFrame", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetImmediate(value: /* handler */ js.Function1[/* repeated */ js.Any, Unit] => Double): Self = this.set("setImmediate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetInterval(value: FnCall): Self = this.set("setInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetTimeout(value: FnCall): Self = this.set("setTimeout", value.asInstanceOf[js.Any])
+    def setSetTimeout(value: FnCall): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
   }
 }

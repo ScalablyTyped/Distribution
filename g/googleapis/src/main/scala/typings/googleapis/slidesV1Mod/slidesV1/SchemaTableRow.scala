@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties and contents of each row in a table.
   */
 @js.native
-trait SchemaTableRow extends js.Object {
+trait SchemaTableRow extends StObject {
   
   /**
     * Height of a row.
@@ -37,39 +38,27 @@ object SchemaTableRow {
   }
   
   @scala.inline
-  implicit class SchemaTableRowOps[Self <: SchemaTableRow] (val x: Self) extends AnyVal {
+  implicit class SchemaTableRowMutableBuilder[Self <: SchemaTableRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRowHeight(value: SchemaDimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableCells(value: js.Array[SchemaTableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeight(value: SchemaDimension): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
     
     @scala.inline
-    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    def setTableCellsVarargs(value: SchemaTableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
     
     @scala.inline
-    def setTableCellsVarargs(value: SchemaTableCell*): Self = this.set("tableCells", js.Array(value :_*))
+    def setTableRowProperties(value: SchemaTableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableCells(value: js.Array[SchemaTableCell]): Self = this.set("tableCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCells: Self = this.set("tableCells", js.undefined)
-    
-    @scala.inline
-    def setTableRowProperties(value: SchemaTableRowProperties): Self = this.set("tableRowProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRowProperties: Self = this.set("tableRowProperties", js.undefined)
+    def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
   }
 }

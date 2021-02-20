@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputGroupSettings extends js.Object {
+trait OutputGroupSettings extends StObject {
   
   /**
     * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to CMAF_GROUP_SETTINGS. Each output in a CMAF Output Group may only contain a single video, audio, or caption output.
@@ -46,54 +47,42 @@ object OutputGroupSettings {
   }
   
   @scala.inline
-  implicit class OutputGroupSettingsOps[Self <: OutputGroupSettings] (val x: Self) extends AnyVal {
+  implicit class OutputGroupSettingsMutableBuilder[Self <: OutputGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmafGroupSettings(value: CmafGroupSettings): Self = StObject.set(x, "CmafGroupSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmafGroupSettingsUndefined: Self = StObject.set(x, "CmafGroupSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashIsoGroupSettings(value: DashIsoGroupSettings): Self = StObject.set(x, "DashIsoGroupSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmafGroupSettings(value: CmafGroupSettings): Self = this.set("CmafGroupSettings", value.asInstanceOf[js.Any])
+    def setDashIsoGroupSettingsUndefined: Self = StObject.set(x, "DashIsoGroupSettings", js.undefined)
     
     @scala.inline
-    def deleteCmafGroupSettings: Self = this.set("CmafGroupSettings", js.undefined)
+    def setFileGroupSettings(value: FileGroupSettings): Self = StObject.set(x, "FileGroupSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashIsoGroupSettings(value: DashIsoGroupSettings): Self = this.set("DashIsoGroupSettings", value.asInstanceOf[js.Any])
+    def setFileGroupSettingsUndefined: Self = StObject.set(x, "FileGroupSettings", js.undefined)
     
     @scala.inline
-    def deleteDashIsoGroupSettings: Self = this.set("DashIsoGroupSettings", js.undefined)
+    def setHlsGroupSettings(value: HlsGroupSettings): Self = StObject.set(x, "HlsGroupSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileGroupSettings(value: FileGroupSettings): Self = this.set("FileGroupSettings", value.asInstanceOf[js.Any])
+    def setHlsGroupSettingsUndefined: Self = StObject.set(x, "HlsGroupSettings", js.undefined)
     
     @scala.inline
-    def deleteFileGroupSettings: Self = this.set("FileGroupSettings", js.undefined)
+    def setMsSmoothGroupSettings(value: MsSmoothGroupSettings): Self = StObject.set(x, "MsSmoothGroupSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsGroupSettings(value: HlsGroupSettings): Self = this.set("HlsGroupSettings", value.asInstanceOf[js.Any])
+    def setMsSmoothGroupSettingsUndefined: Self = StObject.set(x, "MsSmoothGroupSettings", js.undefined)
     
     @scala.inline
-    def deleteHlsGroupSettings: Self = this.set("HlsGroupSettings", js.undefined)
+    def setType(value: OutputGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsSmoothGroupSettings(value: MsSmoothGroupSettings): Self = this.set("MsSmoothGroupSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMsSmoothGroupSettings: Self = this.set("MsSmoothGroupSettings", js.undefined)
-    
-    @scala.inline
-    def setType(value: OutputGroupType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

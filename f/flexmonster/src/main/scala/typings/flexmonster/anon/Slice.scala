@@ -1,11 +1,12 @@
 package typings.flexmonster.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slice extends js.Object {
+trait Slice extends StObject {
   
   var slice: js.UndefOr[typings.flexmonster.mod.Slice] = js.native
 }
@@ -18,24 +19,12 @@ object Slice {
   }
   
   @scala.inline
-  implicit class SliceOps[Self <: Slice] (val x: Self) extends AnyVal {
+  implicit class SliceMutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSlice(value: typings.flexmonster.mod.Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSlice(value: typings.flexmonster.mod.Slice): Self = this.set("slice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlice: Self = this.set("slice", js.undefined)
+    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

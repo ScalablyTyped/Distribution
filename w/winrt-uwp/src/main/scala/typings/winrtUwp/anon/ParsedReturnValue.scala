@@ -1,12 +1,13 @@
 package typings.winrtUwp.anon
 
 import typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParsedReturnValue extends js.Object {
+trait ParsedReturnValue extends StObject {
   
   /** Receives a UsbEndpointDescriptor object. */ var parsed: UsbEndpointDescriptor = js.native
   
@@ -21,24 +22,12 @@ object ParsedReturnValue {
   }
   
   @scala.inline
-  implicit class ParsedReturnValueOps[Self <: ParsedReturnValue] (val x: Self) extends AnyVal {
+  implicit class ParsedReturnValueMutableBuilder[Self <: ParsedReturnValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParsed(value: UsbEndpointDescriptor): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParsed(value: UsbEndpointDescriptor): Self = this.set("parsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = this.set("returnValue", value.asInstanceOf[js.Any])
+    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

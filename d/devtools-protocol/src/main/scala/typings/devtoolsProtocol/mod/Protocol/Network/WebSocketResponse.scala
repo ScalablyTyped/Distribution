@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebSocketResponse extends js.Object {
+trait WebSocketResponse extends StObject {
   
   /**
     * HTTP response headers.
@@ -47,45 +48,33 @@ object WebSocketResponse {
   }
   
   @scala.inline
-  implicit class WebSocketResponseOps[Self <: WebSocketResponse] (val x: Self) extends AnyVal {
+  implicit class WebSocketResponseMutableBuilder[Self <: WebSocketResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersText(value: String): Self = StObject.set(x, "headersText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersTextUndefined: Self = StObject.set(x, "headersText", js.undefined)
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setRequestHeaders(value: Headers): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: integer): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setRequestHeadersText(value: String): Self = StObject.set(x, "requestHeadersText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    def setRequestHeadersTextUndefined: Self = StObject.set(x, "requestHeadersText", js.undefined)
     
     @scala.inline
-    def setHeadersText(value: String): Self = this.set("headersText", value.asInstanceOf[js.Any])
+    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     @scala.inline
-    def deleteHeadersText: Self = this.set("headersText", js.undefined)
+    def setStatus(value: integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeaders(value: Headers): Self = this.set("requestHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestHeaders: Self = this.set("requestHeaders", js.undefined)
-    
-    @scala.inline
-    def setRequestHeadersText(value: String): Self = this.set("requestHeadersText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestHeadersText: Self = this.set("requestHeadersText", js.undefined)
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
   }
 }

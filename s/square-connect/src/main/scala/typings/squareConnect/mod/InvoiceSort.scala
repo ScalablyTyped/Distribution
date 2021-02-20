@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "InvoiceSort")
 @js.native
-class InvoiceSort () extends js.Object {
+class InvoiceSort () extends StObject {
   
   /**
     * The field to sort on. See [InvoiceSortField](#type-invoicesortfield) for possible values.

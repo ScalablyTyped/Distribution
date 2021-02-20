@@ -1,6 +1,7 @@
 package typings.twilioVideo.mod
 
 import typings.twilioVideo.twilioVideoStrings.VP8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object VP8CodecSettings {
   }
   
   @scala.inline
-  implicit class VP8CodecSettingsOps[Self <: VP8CodecSettings] (val x: Self) extends AnyVal {
+  implicit class VP8CodecSettingsMutableBuilder[Self <: VP8CodecSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: VP8): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSimulcast(value: Boolean): Self = StObject.set(x, "simulcast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCodec(value: VP8): Self = this.set("codec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSimulcast(value: Boolean): Self = this.set("simulcast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSimulcast: Self = this.set("simulcast", js.undefined)
+    def setSimulcastUndefined: Self = StObject.set(x, "simulcast", js.undefined)
   }
 }

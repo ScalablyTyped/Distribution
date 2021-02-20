@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A builder for form triggers.
   */
 @js.native
-trait FormTriggerBuilder extends js.Object {
+trait FormTriggerBuilder extends StObject {
   
   def create(): Trigger = js.native
   
@@ -25,27 +26,15 @@ object FormTriggerBuilder {
   }
   
   @scala.inline
-  implicit class FormTriggerBuilderOps[Self <: FormTriggerBuilder] (val x: Self) extends AnyVal {
+  implicit class FormTriggerBuilderMutableBuilder[Self <: FormTriggerBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFormSubmit(value: () => FormTriggerBuilder): Self = StObject.set(x, "onFormSubmit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: () => Trigger): Self = this.set("create", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnFormSubmit(value: () => FormTriggerBuilder): Self = this.set("onFormSubmit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnOpen(value: () => FormTriggerBuilder): Self = this.set("onOpen", js.Any.fromFunction0(value))
+    def setOnOpen(value: () => FormTriggerBuilder): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
   }
 }

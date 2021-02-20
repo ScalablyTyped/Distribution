@@ -1,6 +1,7 @@
 package typings.otplibPresetV11
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,48 +54,36 @@ object TOTP {
   }
   
   @scala.inline
-  implicit class TOTPOps[Self <: TOTP] (val x: Self) extends AnyVal {
+  implicit class TOTPMutableBuilder[Self <: TOTP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheck(value: (String, String) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckDelta(value: (String, String) => Double | Null): Self = StObject.set(x, "checkDelta", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultOptions(value: TotpOptionsInterface): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTOTP(value: Instantiable0[TOTP]): Self = this.set("TOTP", value.asInstanceOf[js.Any])
+    def setGenerate(value: String => String): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheck(value: (String, String) => Boolean): Self = this.set("check", js.Any.fromFunction2(value))
+    def setOptions(value: TotpOptionsInterface): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckDelta(value: (String, String) => Double | Null): Self = this.set("checkDelta", js.Any.fromFunction2(value))
+    def setOptionsAll(value: TotpOptionsInterface): Self = StObject.set(x, "optionsAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOptions(value: TotpOptionsInterface): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
+    def setTOTP(value: Instantiable0[TOTP]): Self = StObject.set(x, "TOTP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerate(value: String => String): Self = this.set("generate", js.Any.fromFunction1(value))
+    def setTimeRemaining(value: () => Double): Self = StObject.set(x, "timeRemaining", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptions(value: TotpOptionsInterface): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setTimeUsed(value: () => Double): Self = StObject.set(x, "timeUsed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOptionsAll(value: TotpOptionsInterface): Self = this.set("optionsAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeRemaining(value: () => Double): Self = this.set("timeRemaining", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTimeUsed(value: () => Double): Self = this.set("timeUsed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVerify(value: TotpVerifyOptionsInterface => Boolean): Self = this.set("verify", js.Any.fromFunction1(value))
+    def setVerify(value: TotpVerifyOptionsInterface => Boolean): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,14 @@
 package typings.grammarkdown.grammarkdownMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "HtmlEmitter")
 @js.native
-class HtmlEmitter () extends Emitter {
+class HtmlEmitter protected () extends Emitter {
+  def this(options: CompilerOptions) = this()
   
   var emitLinkAnchor: js.Any = js.native
   

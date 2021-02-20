@@ -5,14 +5,14 @@ import typings.angularHttp.interfacesMod.ConnectionBackend
 import typings.angularHttp.staticRequestMod.Request
 import typings.angularHttp.staticResponseMod.Response
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/backends/jsonp_backend", JSImport.Namespace)
-@js.native
-object jsonpBackendMod extends js.Object {
+object jsonpBackendMod {
   
+  @JSImport("@angular/http/src/backends/jsonp_backend", "JSONPBackend")
   @js.native
   class JSONPBackend () extends ConnectionBackend {
     
@@ -23,6 +23,7 @@ object jsonpBackendMod extends js.Object {
     def createConnection(request: Request): JSONPConnection = js.native
   }
   
+  @JSImport("@angular/http/src/backends/jsonp_backend", "JSONPConnection")
   @js.native
   class JSONPConnection () extends Connection {
     

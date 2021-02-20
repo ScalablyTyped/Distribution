@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Video extends js.Object {
+trait Video extends StObject {
   
   /** Age restriction details related to a video. This data can only be retrieved by the video owner. */
   var ageGating: js.UndefOr[VideoAgeGating] = js.native
@@ -89,130 +90,118 @@ object Video {
   }
   
   @scala.inline
-  implicit class VideoOps[Self <: Video] (val x: Self) extends AnyVal {
+  implicit class VideoMutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgeGating(value: VideoAgeGating): Self = StObject.set(x, "ageGating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeGatingUndefined: Self = StObject.set(x, "ageGating", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentDetails(value: VideoContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeGating(value: VideoAgeGating): Self = this.set("ageGating", value.asInstanceOf[js.Any])
+    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
     @scala.inline
-    def deleteAgeGating: Self = this.set("ageGating", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: VideoContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    def setFileDetails(value: VideoFileDetails): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setFileDetailsUndefined: Self = StObject.set(x, "fileDetails", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDetails(value: VideoFileDetails): Self = this.set("fileDetails", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFileDetails: Self = this.set("fileDetails", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLiveStreamingDetails(value: VideoLiveStreamingDetails): Self = StObject.set(x, "liveStreamingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setLiveStreamingDetails(value: VideoLiveStreamingDetails): Self = this.set("liveStreamingDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLiveStreamingDetails: Self = this.set("liveStreamingDetails", js.undefined)
+    def setLiveStreamingDetailsUndefined: Self = StObject.set(x, "liveStreamingDetails", js.undefined)
     
     @scala.inline
     def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.VideoLocalization}
       */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Video with TopLevel[js.Any]
-    ): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     
     @scala.inline
-    def setMonetizationDetails(value: VideoMonetizationDetails): Self = this.set("monetizationDetails", value.asInstanceOf[js.Any])
+    def setMonetizationDetails(value: VideoMonetizationDetails): Self = StObject.set(x, "monetizationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonetizationDetails: Self = this.set("monetizationDetails", js.undefined)
+    def setMonetizationDetailsUndefined: Self = StObject.set(x, "monetizationDetails", js.undefined)
     
     @scala.inline
-    def setPlayer(value: VideoPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setPlayer(value: VideoPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayer: Self = this.set("player", js.undefined)
+    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
     @scala.inline
-    def setProcessingDetails(value: VideoProcessingDetails): Self = this.set("processingDetails", value.asInstanceOf[js.Any])
+    def setProcessingDetails(value: VideoProcessingDetails): Self = StObject.set(x, "processingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessingDetails: Self = this.set("processingDetails", js.undefined)
+    def setProcessingDetailsUndefined: Self = StObject.set(x, "processingDetails", js.undefined)
     
     @scala.inline
-    def setProjectDetails(value: VideoProjectDetails): Self = this.set("projectDetails", value.asInstanceOf[js.Any])
+    def setProjectDetails(value: VideoProjectDetails): Self = StObject.set(x, "projectDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProjectDetails: Self = this.set("projectDetails", js.undefined)
+    def setProjectDetailsUndefined: Self = StObject.set(x, "projectDetails", js.undefined)
     
     @scala.inline
-    def setRecordingDetails(value: VideoRecordingDetails): Self = this.set("recordingDetails", value.asInstanceOf[js.Any])
+    def setRecordingDetails(value: VideoRecordingDetails): Self = StObject.set(x, "recordingDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordingDetails: Self = this.set("recordingDetails", js.undefined)
+    def setRecordingDetailsUndefined: Self = StObject.set(x, "recordingDetails", js.undefined)
     
     @scala.inline
-    def setSnippet(value: VideoSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSnippet(value: VideoSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def setStatistics(value: VideoStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setStatistics(value: VideoStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def setStatus(value: VideoStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: VideoStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setSuggestions(value: VideoSuggestions): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    def setSuggestions(value: VideoSuggestions): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
     @scala.inline
-    def setTopicDetails(value: VideoTopicDetails): Self = this.set("topicDetails", value.asInstanceOf[js.Any])
+    def setTopicDetails(value: VideoTopicDetails): Self = StObject.set(x, "topicDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopicDetails: Self = this.set("topicDetails", js.undefined)
+    def setTopicDetailsUndefined: Self = StObject.set(x, "topicDetails", js.undefined)
   }
 }

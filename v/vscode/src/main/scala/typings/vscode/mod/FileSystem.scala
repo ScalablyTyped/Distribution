@@ -4,12 +4,13 @@ import typings.std.Uint8Array
 import typings.vscode.Thenable
 import typings.vscode.anon.UseTrash
 import typings.vscode.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystem extends js.Object {
+trait FileSystem extends StObject {
   
   /**
     * Copy files or folders.

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an error that occurred. */
 @js.native
-trait ErrorDetails extends js.Object {
+trait ErrorDetails extends StObject {
   
   /** Gets a short description of the error. */
   var description: String = js.native
@@ -27,27 +28,15 @@ object ErrorDetails {
   }
   
   @scala.inline
-  implicit class ErrorDetailsOps[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+  implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHelpUri(value: Uri): Self = StObject.set(x, "helpUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHelpUri(value: Uri): Self = this.set("helpUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongDescription(value: String): Self = this.set("longDescription", value.asInstanceOf[js.Any])
+    def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
   }
 }

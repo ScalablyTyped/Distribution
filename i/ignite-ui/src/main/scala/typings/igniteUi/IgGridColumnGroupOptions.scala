@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,36 +46,24 @@ object IgGridColumnGroupOptions {
   }
   
   @scala.inline
-  implicit class IgGridColumnGroupOptionsOps[Self <: IgGridColumnGroupOptions] (val x: Self) extends AnyVal {
+  implicit class IgGridColumnGroupOptionsMutableBuilder[Self <: IgGridColumnGroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowGroupCollapsing(value: Boolean): Self = StObject.set(x, "allowGroupCollapsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowGroupCollapsingUndefined: Self = StObject.set(x, "allowGroupCollapsing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowGroupCollapsing(value: Boolean): Self = this.set("allowGroupCollapsing", value.asInstanceOf[js.Any])
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def deleteAllowGroupCollapsing: Self = this.set("allowGroupCollapsing", js.undefined)
+    def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
-    
-    @scala.inline
-    def setHidden(value: String): Self = this.set("hidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
   }
 }

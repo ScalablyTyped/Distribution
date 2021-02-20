@@ -1,5 +1,6 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for KeyManagementService.ListCryptoKeys.
   */
 @js.native
-trait SchemaListCryptoKeysResponse extends js.Object {
+trait SchemaListCryptoKeysResponse extends StObject {
   
   /**
     * The list of CryptoKeys.
@@ -35,39 +36,27 @@ object SchemaListCryptoKeysResponse {
   }
   
   @scala.inline
-  implicit class SchemaListCryptoKeysResponseOps[Self <: SchemaListCryptoKeysResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListCryptoKeysResponseMutableBuilder[Self <: SchemaListCryptoKeysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCryptoKeys(value: js.Array[SchemaCryptoKey]): Self = StObject.set(x, "cryptoKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCryptoKeysUndefined: Self = StObject.set(x, "cryptoKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCryptoKeysVarargs(value: SchemaCryptoKey*): Self = StObject.set(x, "cryptoKeys", js.Array(value :_*))
     
     @scala.inline
-    def setCryptoKeysVarargs(value: SchemaCryptoKey*): Self = this.set("cryptoKeys", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoKeys(value: js.Array[SchemaCryptoKey]): Self = this.set("cryptoKeys", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteCryptoKeys: Self = this.set("cryptoKeys", js.undefined)
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

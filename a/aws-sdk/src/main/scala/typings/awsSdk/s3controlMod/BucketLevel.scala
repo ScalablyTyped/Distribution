@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketLevel extends js.Object {
+trait BucketLevel extends StObject {
   
   /**
     * A container for the bucket-level activity metrics for Amazon S3 Storage Lens
@@ -26,30 +27,18 @@ object BucketLevel {
   }
   
   @scala.inline
-  implicit class BucketLevelOps[Self <: BucketLevel] (val x: Self) extends AnyVal {
+  implicit class BucketLevelMutableBuilder[Self <: BucketLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityMetricsUndefined: Self = StObject.set(x, "ActivityMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixLevel(value: PrefixLevel): Self = StObject.set(x, "PrefixLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityMetrics(value: ActivityMetrics): Self = this.set("ActivityMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivityMetrics: Self = this.set("ActivityMetrics", js.undefined)
-    
-    @scala.inline
-    def setPrefixLevel(value: PrefixLevel): Self = this.set("PrefixLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefixLevel: Self = this.set("PrefixLevel", js.undefined)
+    def setPrefixLevelUndefined: Self = StObject.set(x, "PrefixLevel", js.undefined)
   }
 }

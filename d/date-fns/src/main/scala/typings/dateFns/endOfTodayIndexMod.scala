@@ -1,17 +1,17 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/endOfToday/index", JSImport.Namespace)
-@js.native
-object endOfTodayIndexMod extends js.Object {
+object endOfTodayIndexMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/endOfToday/index", JSImport.Default)
+    @js.native
     def apply(): Date = js.native
   }
 }

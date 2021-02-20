@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UiccAccessCondition extends js.Object
+sealed trait UiccAccessCondition extends StObject
 /** Describes the conditions placed on operations using a UICC application. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAccessCondition")
 @js.native
-object UiccAccessCondition extends js.Object {
+object UiccAccessCondition extends StObject {
   
   /** Access requires Administrative 5. */
   @js.native

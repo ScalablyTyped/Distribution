@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScalingInstanceDetails extends js.Object {
+trait AutoScalingInstanceDetails extends StObject {
   
   /**
     * The name of the Auto Scaling group for the instance.
@@ -73,60 +74,48 @@ object AutoScalingInstanceDetails {
   }
   
   @scala.inline
-  implicit class AutoScalingInstanceDetailsOps[Self <: AutoScalingInstanceDetails] (val x: Self) extends AnyVal {
+  implicit class AutoScalingInstanceDetailsMutableBuilder[Self <: AutoScalingInstanceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZone(value: XmlStringMaxLen255): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthStatus(value: XmlStringMaxLen32): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setInstanceId(value: XmlStringMaxLen19): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: XmlStringMaxLen255): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setInstanceType(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthStatus(value: XmlStringMaxLen32): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def setInstanceId(value: XmlStringMaxLen19): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycleState(value: XmlStringMaxLen32): Self = this.set("LifecycleState", value.asInstanceOf[js.Any])
+    def setLaunchConfigurationNameUndefined: Self = StObject.set(x, "LaunchConfigurationName", js.undefined)
     
     @scala.inline
-    def setProtectedFromScaleIn(value: InstanceProtected): Self = this.set("ProtectedFromScaleIn", value.asInstanceOf[js.Any])
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: XmlStringMaxLen255): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setLaunchTemplateUndefined: Self = StObject.set(x, "LaunchTemplate", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setLifecycleState(value: XmlStringMaxLen32): Self = StObject.set(x, "LifecycleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = this.set("LaunchConfigurationName", value.asInstanceOf[js.Any])
+    def setProtectedFromScaleIn(value: InstanceProtected): Self = StObject.set(x, "ProtectedFromScaleIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLaunchConfigurationName: Self = this.set("LaunchConfigurationName", js.undefined)
+    def setWeightedCapacity(value: XmlStringMaxLen32): Self = StObject.set(x, "WeightedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
-    
-    @scala.inline
-    def setWeightedCapacity(value: XmlStringMaxLen32): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+    def setWeightedCapacityUndefined: Self = StObject.set(x, "WeightedCapacity", js.undefined)
   }
 }

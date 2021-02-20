@@ -6,12 +6,13 @@ import typings.react.mod.Validator
 import typings.reactVirtualized.esTableMod.TableCellDataGetter
 import typings.reactVirtualized.esTableMod.TableCellRenderer
 import typings.reactVirtualized.esTableMod.TableHeaderRowRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellDataGetter extends js.Object {
+trait CellDataGetter extends StObject {
   
   var `aria-label`: Requireable[String] = js.native
   
@@ -75,69 +76,57 @@ object CellDataGetter {
   }
   
   @scala.inline
-  implicit class CellDataGetterOps[Self <: CellDataGetter] (val x: Self) extends AnyVal {
+  implicit class CellDataGetterMutableBuilder[Self <: CellDataGetter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellDataGetter(value: Requireable[TableCellDataGetter]): Self = StObject.set(x, "cellDataGetter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellRenderer(value: Requireable[TableCellRenderer]): Self = StObject.set(x, "cellRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-label`(value: Requireable[String]): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellDataGetter(value: Requireable[TableCellDataGetter]): Self = this.set("cellDataGetter", value.asInstanceOf[js.Any])
+    def setColumnData(value: Requireable[js.Object]): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellRenderer(value: Requireable[TableCellRenderer]): Self = this.set("cellRenderer", value.asInstanceOf[js.Any])
+    def setDataKey(value: Validator[String]): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: Requireable[String]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisableSort(value: Requireable[Boolean]): Self = StObject.set(x, "disableSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnData(value: Requireable[js.Object]): Self = this.set("columnData", value.asInstanceOf[js.Any])
+    def setFlexGrow(value: Requireable[Double]): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataKey(value: Validator[String]): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    def setFlexShrink(value: Requireable[Double]): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSort(value: Requireable[Boolean]): Self = this.set("disableSort", value.asInstanceOf[js.Any])
+    def setHeaderClassName(value: Requireable[String]): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexGrow(value: Requireable[Double]): Self = this.set("flexGrow", value.asInstanceOf[js.Any])
+    def setHeaderRenderer(value: Validator[TableHeaderRowRenderer]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlexShrink(value: Requireable[Double]): Self = this.set("flexShrink", value.asInstanceOf[js.Any])
+    def setId(value: Requireable[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderClassName(value: Requireable[String]): Self = this.set("headerClassName", value.asInstanceOf[js.Any])
+    def setLabel(value: Requireable[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRenderer(value: Validator[TableHeaderRowRenderer]): Self = this.set("headerRenderer", value.asInstanceOf[js.Any])
+    def setMaxWidth(value: Requireable[Double]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Requireable[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMinWidth(value: Requireable[Double]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Requireable[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Requireable[Double]): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinWidth(value: Requireable[Double]): Self = this.set("minWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: Requireable[CSSProperties]): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Validator[Double]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

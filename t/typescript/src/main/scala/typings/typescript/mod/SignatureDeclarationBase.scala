@@ -8,6 +8,7 @@ import typings.typescript.mod.SyntaxKind.FunctionType
 import typings.typescript.mod.SyntaxKind.GetAccessor
 import typings.typescript.mod.SyntaxKind.IndexSignature
 import typings.typescript.mod.SyntaxKind.SetAccessor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

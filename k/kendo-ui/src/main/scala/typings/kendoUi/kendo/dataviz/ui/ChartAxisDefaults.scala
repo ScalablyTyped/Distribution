@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAxisDefaults extends js.Object {
+trait ChartAxisDefaults extends StObject {
   
   var background: js.UndefOr[String] = js.native
   
@@ -48,117 +49,105 @@ object ChartAxisDefaults {
   }
   
   @scala.inline
-  implicit class ChartAxisDefaultsOps[Self <: ChartAxisDefaults] (val x: Self) extends AnyVal {
+  implicit class ChartAxisDefaultsMutableBuilder[Self <: ChartAxisDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setCrosshair(value: ChartAxisDefaultsCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabels(value: ChartAxisDefaultsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrosshair(value: ChartAxisDefaultsCrosshair): Self = this.set("crosshair", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteCrosshair: Self = this.set("crosshair", js.undefined)
+    def setLine(value: ChartAxisDefaultsLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: ChartAxisDefaultsLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMajorGridLines(value: ChartAxisDefaultsMajorGridLines): Self = StObject.set(x, "majorGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: ChartAxisDefaultsLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setMajorGridLinesUndefined: Self = StObject.set(x, "majorGridLines", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setMajorTicks(value: ChartAxisDefaultsMajorTicks): Self = StObject.set(x, "majorTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorGridLines(value: ChartAxisDefaultsMajorGridLines): Self = this.set("majorGridLines", value.asInstanceOf[js.Any])
+    def setMajorTicksUndefined: Self = StObject.set(x, "majorTicks", js.undefined)
     
     @scala.inline
-    def deleteMajorGridLines: Self = this.set("majorGridLines", js.undefined)
+    def setMinorGridLines(value: ChartAxisDefaultsMinorGridLines): Self = StObject.set(x, "minorGridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTicks(value: ChartAxisDefaultsMajorTicks): Self = this.set("majorTicks", value.asInstanceOf[js.Any])
+    def setMinorGridLinesUndefined: Self = StObject.set(x, "minorGridLines", js.undefined)
     
     @scala.inline
-    def deleteMajorTicks: Self = this.set("majorTicks", js.undefined)
+    def setMinorTicks(value: ChartAxisDefaultsMinorTicks): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorGridLines(value: ChartAxisDefaultsMinorGridLines): Self = this.set("minorGridLines", value.asInstanceOf[js.Any])
+    def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
     
     @scala.inline
-    def deleteMinorGridLines: Self = this.set("minorGridLines", js.undefined)
+    def setNarrowRange(value: Boolean): Self = StObject.set(x, "narrowRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTicks(value: ChartAxisDefaultsMinorTicks): Self = this.set("minorTicks", value.asInstanceOf[js.Any])
+    def setNarrowRangeUndefined: Self = StObject.set(x, "narrowRange", js.undefined)
     
     @scala.inline
-    def deleteMinorTicks: Self = this.set("minorTicks", js.undefined)
+    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNarrowRange(value: Boolean): Self = this.set("narrowRange", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteNarrowRange: Self = this.set("narrowRange", js.undefined)
+    def setPlotBands(value: js.Array[ChartAxisDefaultsPlotBand]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
+    def setPlotBandsVarargs(value: ChartAxisDefaultsPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
     
     @scala.inline
-    def setPlotBandsVarargs(value: ChartAxisDefaultsPlotBand*): Self = this.set("plotBands", js.Array(value :_*))
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlotBands(value: js.Array[ChartAxisDefaultsPlotBand]): Self = this.set("plotBands", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deletePlotBands: Self = this.set("plotBands", js.undefined)
+    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setTitle(value: ChartAxisDefaultsTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAngle(value: Double): Self = this.set("startAngle", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStartAngle: Self = this.set("startAngle", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: ChartAxisDefaultsTitle): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

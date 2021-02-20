@@ -1,5 +1,6 @@
 package typings.reactHotkeys.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,27 +21,15 @@ object KeyMapOptions {
   }
   
   @scala.inline
-  implicit class KeyMapOptionsOps[Self <: KeyMapOptions] (val x: Self) extends AnyVal {
+  implicit class KeyMapOptionsMutableBuilder[Self <: KeyMapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: KeyEventName): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSequence(value: MouseTrapKeySequence): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: KeyEventName): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceVarargs(value: String*): Self = this.set("sequence", js.Array(value :_*))
-    
-    @scala.inline
-    def setSequence(value: MouseTrapKeySequence): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setSequenceVarargs(value: String*): Self = StObject.set(x, "sequence", js.Array(value :_*))
   }
 }

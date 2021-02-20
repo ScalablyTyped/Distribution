@@ -5,14 +5,14 @@ import typings.googlemaps.google.maps.places.SearchBoxOptions
 import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.maps.places")
-@js.native
-object places extends js.Object {
+object places {
   
+  @JSGlobal("google.maps.places.Autocomplete")
   @js.native
   class Autocomplete protected ()
     extends typings.googlemaps.google.maps.places.Autocomplete {
@@ -20,14 +20,17 @@ object places extends js.Object {
     def this(inputField: HTMLInputElement, opts: AutocompleteOptions) = this()
   }
   
+  @JSGlobal("google.maps.places.AutocompleteService")
   @js.native
   class AutocompleteService ()
     extends typings.googlemaps.google.maps.places.AutocompleteService
   
+  @JSGlobal("google.maps.places.AutocompleteSessionToken")
   @js.native
   class AutocompleteSessionToken ()
     extends typings.googlemaps.google.maps.places.AutocompleteSessionToken
   
+  @JSGlobal("google.maps.places.PlacesService")
   @js.native
   class PlacesService protected ()
     extends typings.googlemaps.google.maps.places.PlacesService {
@@ -35,8 +38,9 @@ object places extends js.Object {
     def this(attrContainer: HTMLDivElement) = this()
   }
   
+  @JSGlobal("google.maps.places.PlacesServiceStatus")
   @js.native
-  object PlacesServiceStatus extends js.Object {
+  object PlacesServiceStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.places.PlacesServiceStatus with String] = js.native
@@ -56,8 +60,9 @@ object places extends js.Object {
     /* "ZERO_RESULTS" */ val ZERO_RESULTS: typings.googlemaps.google.maps.places.PlacesServiceStatus.ZERO_RESULTS with String = js.native
   }
   
+  @JSGlobal("google.maps.places.RankBy")
   @js.native
-  object RankBy extends js.Object {
+  object RankBy extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googlemaps.google.maps.places.RankBy with Double] = js.native
@@ -67,6 +72,7 @@ object places extends js.Object {
     /* 0 */ val PROMINENCE: typings.googlemaps.google.maps.places.RankBy.PROMINENCE with Double = js.native
   }
   
+  @JSGlobal("google.maps.places.SearchBox")
   @js.native
   class SearchBox protected ()
     extends typings.googlemaps.google.maps.places.SearchBox {

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuditCheckDetails extends js.Object {
+trait AuditCheckDetails extends StObject {
   
   /**
     * True if the check is complete and found all resources compliant.
@@ -51,60 +52,48 @@ object AuditCheckDetails {
   }
   
   @scala.inline
-  implicit class AuditCheckDetailsOps[Self <: AuditCheckDetails] (val x: Self) extends AnyVal {
+  implicit class AuditCheckDetailsMutableBuilder[Self <: AuditCheckDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckCompliant(value: CheckCompliant): Self = StObject.set(x, "checkCompliant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckCompliantUndefined: Self = StObject.set(x, "checkCompliant", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckRunStatus(value: AuditCheckRunStatus): Self = StObject.set(x, "checkRunStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckCompliant(value: CheckCompliant): Self = this.set("checkCompliant", value.asInstanceOf[js.Any])
+    def setCheckRunStatusUndefined: Self = StObject.set(x, "checkRunStatus", js.undefined)
     
     @scala.inline
-    def deleteCheckCompliant: Self = this.set("checkCompliant", js.undefined)
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckRunStatus(value: AuditCheckRunStatus): Self = this.set("checkRunStatus", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def deleteCheckRunStatus: Self = this.set("checkRunStatus", js.undefined)
+    def setMessage(value: ErrorMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setNonCompliantResourcesCount(value: NonCompliantResourcesCount): Self = StObject.set(x, "nonCompliantResourcesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: ErrorMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNonCompliantResourcesCountUndefined: Self = StObject.set(x, "nonCompliantResourcesCount", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSuppressedNonCompliantResourcesCount(value: SuppressedNonCompliantResourcesCount): Self = StObject.set(x, "suppressedNonCompliantResourcesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonCompliantResourcesCount(value: NonCompliantResourcesCount): Self = this.set("nonCompliantResourcesCount", value.asInstanceOf[js.Any])
+    def setSuppressedNonCompliantResourcesCountUndefined: Self = StObject.set(x, "suppressedNonCompliantResourcesCount", js.undefined)
     
     @scala.inline
-    def deleteNonCompliantResourcesCount: Self = this.set("nonCompliantResourcesCount", js.undefined)
+    def setTotalResourcesCount(value: TotalResourcesCount): Self = StObject.set(x, "totalResourcesCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressedNonCompliantResourcesCount(value: SuppressedNonCompliantResourcesCount): Self = this.set("suppressedNonCompliantResourcesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressedNonCompliantResourcesCount: Self = this.set("suppressedNonCompliantResourcesCount", js.undefined)
-    
-    @scala.inline
-    def setTotalResourcesCount(value: TotalResourcesCount): Self = this.set("totalResourcesCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResourcesCount: Self = this.set("totalResourcesCount", js.undefined)
+    def setTotalResourcesCountUndefined: Self = StObject.set(x, "totalResourcesCount", js.undefined)
   }
 }

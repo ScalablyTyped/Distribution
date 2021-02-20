@@ -5,13 +5,12 @@ import typings.dogeSeed.dogeSeedNumbers.`160`
 import typings.dogeSeed.dogeSeedNumbers.`192`
 import typings.dogeSeed.dogeSeedNumbers.`224`
 import typings.dogeSeed.dogeSeedNumbers.`256`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("doge-seed", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Generates a cryptographically secure mnemonic seed phrase with added dankness.
@@ -23,10 +22,22 @@ object mod extends js.Object {
     * @param bits The number of bits to derive a BIP39 mnemonic from. Default: `128`.
     * @returns A BIP39 mnemonic seed phrase.
     */
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
   def apply(): String = js.native
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
   def apply(bits: `128`): String = js.native
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
   def apply(bits: `160`): String = js.native
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
   def apply(bits: `192`): String = js.native
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
   def apply(bits: `224`): String = js.native
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
   def apply(bits: `256`): String = js.native
 }

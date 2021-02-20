@@ -7,16 +7,16 @@ import typings.typeorm.queryExpressionMapMod.QueryExpressionMap
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import typings.typeorm.typeormStrings.INNER
 import typings.typeorm.typeormStrings.LEFT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/JoinAttribute", JSImport.Namespace)
-@js.native
-object joinAttributeMod extends js.Object {
+object joinAttributeMod {
   
+  @JSImport("typeorm/browser/query-builder/JoinAttribute", "JoinAttribute")
   @js.native
-  class JoinAttribute protected () extends js.Object {
+  class JoinAttribute protected () extends StObject {
     def this(connection: Connection, queryExpressionMap: QueryExpressionMap) = this()
     def this(connection: Connection, queryExpressionMap: QueryExpressionMap, joinAttribute: JoinAttribute) = this()
     

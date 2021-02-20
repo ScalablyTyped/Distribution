@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,90 +41,78 @@ object Platform {
   }
   
   @scala.inline
-  implicit class PlatformOps[Self <: Platform] (val x: Self) extends AnyVal {
+  implicit class PlatformMutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi_name(value: String): Self = StObject.set(x, "api_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApi_nameUndefined: Self = StObject.set(x, "api_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomation_backend(value: String): Self = StObject.set(x, "automation_backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi_name(value: String): Self = this.set("api_name", value.asInstanceOf[js.Any])
+    def setAutomation_backendUndefined: Self = StObject.set(x, "automation_backend", js.undefined)
     
     @scala.inline
-    def deleteApi_name: Self = this.set("api_name", js.undefined)
+    def setDeprecated_backend_versions(value: js.Array[String]): Self = StObject.set(x, "deprecated_backend_versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomation_backend(value: String): Self = this.set("automation_backend", value.asInstanceOf[js.Any])
+    def setDeprecated_backend_versionsUndefined: Self = StObject.set(x, "deprecated_backend_versions", js.undefined)
     
     @scala.inline
-    def deleteAutomation_backend: Self = this.set("automation_backend", js.undefined)
+    def setDeprecated_backend_versionsVarargs(value: String*): Self = StObject.set(x, "deprecated_backend_versions", js.Array(value :_*))
     
     @scala.inline
-    def setDeprecated_backend_versionsVarargs(value: String*): Self = this.set("deprecated_backend_versions", js.Array(value :_*))
+    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecated_backend_versions(value: js.Array[String]): Self = this.set("deprecated_backend_versions", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteDeprecated_backend_versions: Self = this.set("deprecated_backend_versions", js.undefined)
+    def setLatest_stable_version(value: String): Self = StObject.set(x, "latest_stable_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setLatest_stable_versionUndefined: Self = StObject.set(x, "latest_stable_version", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setLong_name(value: String): Self = StObject.set(x, "long_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest_stable_version(value: String): Self = this.set("latest_stable_version", value.asInstanceOf[js.Any])
+    def setLong_nameUndefined: Self = StObject.set(x, "long_name", js.undefined)
     
     @scala.inline
-    def deleteLatest_stable_version: Self = this.set("latest_stable_version", js.undefined)
+    def setLong_version(value: String): Self = StObject.set(x, "long_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLong_name(value: String): Self = this.set("long_name", value.asInstanceOf[js.Any])
+    def setLong_versionUndefined: Self = StObject.set(x, "long_version", js.undefined)
     
     @scala.inline
-    def deleteLong_name: Self = this.set("long_name", js.undefined)
+    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLong_version(value: String): Self = this.set("long_version", value.asInstanceOf[js.Any])
+    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
     @scala.inline
-    def deleteLong_version: Self = this.set("long_version", js.undefined)
+    def setRecommended_backend_version(value: String): Self = StObject.set(x, "recommended_backend_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setRecommended_backend_versionUndefined: Self = StObject.set(x, "recommended_backend_version", js.undefined)
     
     @scala.inline
-    def deleteOs: Self = this.set("os", js.undefined)
+    def setShort_version(value: String): Self = StObject.set(x, "short_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommended_backend_version(value: String): Self = this.set("recommended_backend_version", value.asInstanceOf[js.Any])
+    def setShort_versionUndefined: Self = StObject.set(x, "short_version", js.undefined)
     
     @scala.inline
-    def deleteRecommended_backend_version: Self = this.set("recommended_backend_version", js.undefined)
+    def setSupported_backend_versions(value: js.Array[String]): Self = StObject.set(x, "supported_backend_versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShort_version(value: String): Self = this.set("short_version", value.asInstanceOf[js.Any])
+    def setSupported_backend_versionsUndefined: Self = StObject.set(x, "supported_backend_versions", js.undefined)
     
     @scala.inline
-    def deleteShort_version: Self = this.set("short_version", js.undefined)
-    
-    @scala.inline
-    def setSupported_backend_versionsVarargs(value: String*): Self = this.set("supported_backend_versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupported_backend_versions(value: js.Array[String]): Self = this.set("supported_backend_versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupported_backend_versions: Self = this.set("supported_backend_versions", js.undefined)
+    def setSupported_backend_versionsVarargs(value: String*): Self = StObject.set(x, "supported_backend_versions", js.Array(value :_*))
   }
 }

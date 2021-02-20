@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.assetCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSDocumentAssets extends js.Object {
+trait SketchMSDocumentAssets extends StObject {
   
   var _class: assetCollection = js.native
   
@@ -33,42 +34,30 @@ object SketchMSDocumentAssets {
   }
   
   @scala.inline
-  implicit class SketchMSDocumentAssetsOps[Self <: SketchMSDocumentAssets] (val x: Self) extends AnyVal {
+  implicit class SketchMSDocumentAssetsMutableBuilder[Self <: SketchMSDocumentAssets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGradients(value: js.Array[_]): Self = StObject.set(x, "gradients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: assetCollection): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setGradientsVarargs(value: js.Any*): Self = StObject.set(x, "gradients", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: js.Any*): Self = this.set("colors", js.Array(value :_*))
+    def setImageCollection(value: SketchMSImageCollection): Self = StObject.set(x, "imageCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[_]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientsVarargs(value: js.Any*): Self = this.set("gradients", js.Array(value :_*))
+    def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setGradients(value: js.Array[_]): Self = this.set("gradients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImageCollection(value: SketchMSImageCollection): Self = this.set("imageCollection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImagesVarargs(value: js.Any*): Self = this.set("images", js.Array(value :_*))
-    
-    @scala.inline
-    def setImages(value: js.Array[_]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def set_class(value: assetCollection): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

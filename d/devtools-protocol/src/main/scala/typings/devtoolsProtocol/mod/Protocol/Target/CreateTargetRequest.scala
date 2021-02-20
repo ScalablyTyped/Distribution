@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTargetRequest extends js.Object {
+trait CreateTargetRequest extends StObject {
   
   /**
     * Whether to create the target in background or foreground (chrome-only,
@@ -55,57 +56,45 @@ object CreateTargetRequest {
   }
   
   @scala.inline
-  implicit class CreateTargetRequestOps[Self <: CreateTargetRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTargetRequestMutableBuilder[Self <: CreateTargetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
     @scala.inline
-    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setEnableBeginFrameControl(value: Boolean): Self = StObject.set(x, "enableBeginFrameControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setEnableBeginFrameControlUndefined: Self = StObject.set(x, "enableBeginFrameControl", js.undefined)
     
     @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = this.set("browserContextId", value.asInstanceOf[js.Any])
+    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowserContextId: Self = this.set("browserContextId", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setEnableBeginFrameControl(value: Boolean): Self = this.set("enableBeginFrameControl", value.asInstanceOf[js.Any])
+    def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableBeginFrameControl: Self = this.set("enableBeginFrameControl", js.undefined)
+    def setNewWindowUndefined: Self = StObject.set(x, "newWindow", js.undefined)
     
     @scala.inline
-    def setHeight(value: integer): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewWindow(value: Boolean): Self = this.set("newWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewWindow: Self = this.set("newWindow", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: integer): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

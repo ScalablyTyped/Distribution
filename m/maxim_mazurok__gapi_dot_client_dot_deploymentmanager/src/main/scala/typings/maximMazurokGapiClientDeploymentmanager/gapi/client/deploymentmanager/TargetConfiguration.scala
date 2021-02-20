@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetConfiguration extends js.Object {
+trait TargetConfiguration extends StObject {
   
   /** The configuration to use for this deployment. */
   var config: js.UndefOr[ConfigFile] = js.native
@@ -25,33 +26,21 @@ object TargetConfiguration {
   }
   
   @scala.inline
-  implicit class TargetConfigurationOps[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
+  implicit class TargetConfigurationMutableBuilder[Self <: TargetConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: ConfigFile): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImports(value: js.Array[ImportFile]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: ConfigFile): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
-    
-    @scala.inline
-    def setImportsVarargs(value: ImportFile*): Self = this.set("imports", js.Array(value :_*))
-    
-    @scala.inline
-    def setImports(value: js.Array[ImportFile]): Self = this.set("imports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
+    def setImportsVarargs(value: ImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
   }
 }

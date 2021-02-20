@@ -1,11 +1,12 @@
 package typings.jqueryColorbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorboxStatic extends js.Object {
+trait ColorboxStatic extends StObject {
   
   /**
     * This method allows you to call Colorbox without having to assign it to an element.

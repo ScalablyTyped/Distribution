@@ -1,5 +1,6 @@
 package typings.bizcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bizcharts.bizchartsStrings.vertical
   - typings.bizcharts.bizchartsStrings.horizontal
 */
-trait LegendLayoutType extends js.Object
+trait LegendLayoutType extends StObject
 object LegendLayoutType {
   
   @scala.inline

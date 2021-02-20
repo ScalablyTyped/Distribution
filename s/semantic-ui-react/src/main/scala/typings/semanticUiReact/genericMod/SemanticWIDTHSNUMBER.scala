@@ -1,5 +1,6 @@
 package typings.semanticUiReact.genericMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.semanticUiReact.semanticUiReactNumbers.`15`
   - typings.semanticUiReact.semanticUiReactNumbers.`16`
 */
-trait SemanticWIDTHSNUMBER extends js.Object
+trait SemanticWIDTHSNUMBER extends StObject
 object SemanticWIDTHSNUMBER {
   
   @scala.inline

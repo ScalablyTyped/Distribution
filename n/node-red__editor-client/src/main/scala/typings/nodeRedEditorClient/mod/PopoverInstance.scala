@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopoverInstance extends js.Object {
+trait PopoverInstance extends StObject {
   
   def close(): PopoverInstance = js.native
   def close(instant: Boolean): PopoverInstance = js.native

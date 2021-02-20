@@ -3,13 +3,12 @@ package typings.phaser.phaserMod
 import typings.phaser.Phaser.Types.Create.GenerateTextureConfig
 import typings.phaser.Phaser.Types.Create.Palette
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("phaser", "Create")
-@js.native
-object Create extends js.Object {
+object Create {
   
   /**
     * Generates a texture based on the given Create configuration object.
@@ -43,34 +42,59 @@ object Create extends js.Object {
     * The default palette is Arne16, but you can specify your own using the `palette` property.
     * @param config The Generate Texture Configuration object.
     */
+  @JSImport("phaser", "Create.GenerateTexture")
+  @js.native
   def GenerateTexture(config: GenerateTextureConfig): HTMLCanvasElement = js.native
   
-  @js.native
-  object Palettes extends js.Object {
+  object Palettes {
+    
+    @JSImport("phaser", "Create.Palettes")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A 16 color palette by [Arne](http://androidarts.com/palette/16pal.htm)
       */
-    var ARNE16: Palette = js.native
+    @JSImport("phaser", "Create.Palettes.ARNE16")
+    @js.native
+    def ARNE16: Palette = js.native
+    @scala.inline
+    def ARNE16_=(x: Palette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARNE16")(x.asInstanceOf[js.Any])
     
     /**
       * A 16 color palette inspired by the Commodore 64.
       */
-    var C64: Palette = js.native
+    @JSImport("phaser", "Create.Palettes.C64")
+    @js.native
+    def C64: Palette = js.native
+    @scala.inline
+    def C64_=(x: Palette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("C64")(x.asInstanceOf[js.Any])
     
     /**
       * A 16 color CGA inspired palette by [Arne](http://androidarts.com/palette/16pal.htm)
       */
-    var CGA: Palette = js.native
+    @JSImport("phaser", "Create.Palettes.CGA")
+    @js.native
+    def CGA: Palette = js.native
+    @scala.inline
+    def CGA_=(x: Palette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CGA")(x.asInstanceOf[js.Any])
     
     /**
       * A 16 color JMP palette by [Arne](http://androidarts.com/palette/16pal.htm)
       */
-    var JMP: Palette = js.native
+    @JSImport("phaser", "Create.Palettes.JMP")
+    @js.native
+    def JMP: Palette = js.native
+    @scala.inline
+    def JMP_=(x: Palette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JMP")(x.asInstanceOf[js.Any])
     
     /**
       * A 16 color palette inspired by Japanese computers like the MSX.
       */
-    var MSX: Palette = js.native
+    @JSImport("phaser", "Create.Palettes.MSX")
+    @js.native
+    def MSX: Palette = js.native
+    @scala.inline
+    def MSX_=(x: Palette): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MSX")(x.asInstanceOf[js.Any])
   }
 }

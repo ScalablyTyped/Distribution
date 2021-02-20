@@ -12,15 +12,18 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestResponseType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-request", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-request", "csv")
+  @js.native
   def csv(url: String): DsvRequest = js.native
+  @JSImport("d3-request", "csv")
+  @js.native
   def csv(
     url: String,
     callback: js.ThisFunction2[
@@ -30,6 +33,8 @@ object mod extends js.Object {
       Unit
     ]
   ): DsvRequest = js.native
+  @JSImport("d3-request", "csv")
+  @js.native
   def csv[ParsedRow /* <: js.Object */](
     url: String,
     row: js.Function3[
@@ -41,31 +46,51 @@ object mod extends js.Object {
     callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
   ): DsvRequest = js.native
   
+  @JSImport("d3-request", "html")
+  @js.native
   def html(url: String): Request_ = js.native
+  @JSImport("d3-request", "html")
+  @js.native
   def html(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ DocumentFragment, Unit]
   ): Request_ = js.native
   
+  @JSImport("d3-request", "json")
+  @js.native
   def json(url: String): Request_ = js.native
+  @JSImport("d3-request", "json")
+  @js.native
   def json[ParsedObject /* <: StringDictionary[js.Any] */](
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ ParsedObject, Unit]
   ): Request_ = js.native
   
+  @JSImport("d3-request", "request")
+  @js.native
   def request(url: String): Request_ = js.native
+  @JSImport("d3-request", "request")
+  @js.native
   def request(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ XMLHttpRequest, Unit]
   ): Request_ = js.native
   
+  @JSImport("d3-request", "text")
+  @js.native
   def text(url: String): Request_ = js.native
+  @JSImport("d3-request", "text")
+  @js.native
   def text(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ String, Unit]
   ): Request_ = js.native
   
+  @JSImport("d3-request", "tsv")
+  @js.native
   def tsv(url: String): DsvRequest = js.native
+  @JSImport("d3-request", "tsv")
+  @js.native
   def tsv(
     url: String,
     callback: js.ThisFunction2[
@@ -75,6 +100,8 @@ object mod extends js.Object {
       Unit
     ]
   ): DsvRequest = js.native
+  @JSImport("d3-request", "tsv")
+  @js.native
   def tsv[ParsedRow /* <: js.Object */](
     url: String,
     row: js.Function3[
@@ -86,7 +113,11 @@ object mod extends js.Object {
     callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
   ): DsvRequest = js.native
   
+  @JSImport("d3-request", "xml")
+  @js.native
   def xml(url: String): Request_ = js.native
+  @JSImport("d3-request", "xml")
+  @js.native
   def xml(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ js.Any, Unit]
@@ -106,7 +137,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Request_ extends js.Object {
+  trait Request_ extends StObject {
     
     /**
       * Aborts this request, if it is currently in-flight, and returns this request instance.

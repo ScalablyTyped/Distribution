@@ -1,5 +1,6 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 坐标转换结果
   */
 @js.native
-trait ConvertorResult extends js.Object {
+trait ConvertorResult extends StObject {
   
   var info: String = js.native
   
@@ -23,27 +24,15 @@ object ConvertorResult {
   }
   
   @scala.inline
-  implicit class ConvertorResultOps[Self <: ConvertorResult] (val x: Self) extends AnyVal {
+  implicit class ConvertorResultMutableBuilder[Self <: ConvertorResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocations(value: js.Array[LngLat]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocationsVarargs(value: LngLat*): Self = this.set("locations", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocations(value: js.Array[LngLat]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

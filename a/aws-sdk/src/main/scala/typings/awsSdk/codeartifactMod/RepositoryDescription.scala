@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RepositoryDescription extends js.Object {
+trait RepositoryDescription extends StObject {
   
   /**
     *  The 12-digit account number of the AWS account that manages the repository. 
@@ -56,72 +57,60 @@ object RepositoryDescription {
   }
   
   @scala.inline
-  implicit class RepositoryDescriptionOps[Self <: RepositoryDescription] (val x: Self) extends AnyVal {
+  implicit class RepositoryDescriptionMutableBuilder[Self <: RepositoryDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministratorAccount(value: AccountId): Self = StObject.set(x, "administratorAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministratorAccountUndefined: Self = StObject.set(x, "administratorAccount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministratorAccount(value: AccountId): Self = this.set("administratorAccount", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def deleteAdministratorAccount: Self = this.set("administratorAccount", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setExternalConnections(value: RepositoryExternalConnectionInfoList): Self = StObject.set(x, "externalConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    def setExternalConnectionsUndefined: Self = StObject.set(x, "externalConnections", js.undefined)
     
     @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    def setExternalConnectionsVarargs(value: RepositoryExternalConnectionInfo*): Self = StObject.set(x, "externalConnections", js.Array(value :_*))
     
     @scala.inline
-    def setExternalConnectionsVarargs(value: RepositoryExternalConnectionInfo*): Self = this.set("externalConnections", js.Array(value :_*))
+    def setName(value: RepositoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalConnections(value: RepositoryExternalConnectionInfoList): Self = this.set("externalConnections", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteExternalConnections: Self = this.set("externalConnections", js.undefined)
+    def setUpstreams(value: UpstreamRepositoryInfoList): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: RepositoryName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUpstreamsVarargs(value: UpstreamRepositoryInfo*): Self = this.set("upstreams", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpstreams(value: UpstreamRepositoryInfoList): Self = this.set("upstreams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpstreams: Self = this.set("upstreams", js.undefined)
+    def setUpstreamsVarargs(value: UpstreamRepositoryInfo*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
   }
 }

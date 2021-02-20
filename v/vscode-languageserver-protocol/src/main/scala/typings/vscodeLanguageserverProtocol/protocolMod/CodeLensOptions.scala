@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object CodeLensOptions {
   }
   
   @scala.inline
-  implicit class CodeLensOptionsOps[Self <: CodeLensOptions] (val x: Self) extends AnyVal {
+  implicit class CodeLensOptionsMutableBuilder[Self <: CodeLensOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResolveProvider(value: Boolean): Self = this.set("resolveProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolveProvider: Self = this.set("resolveProvider", js.undefined)
+    def setResolveProviderUndefined: Self = StObject.set(x, "resolveProvider", js.undefined)
   }
 }

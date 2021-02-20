@@ -1,11 +1,12 @@
 package typings.baseui.datepickerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatepickerOverrides[T] extends js.Object {
+trait DatepickerOverrides[T] extends StObject {
   
   var CalendarContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
@@ -120,226 +121,214 @@ object DatepickerOverrides {
   }
   
   @scala.inline
-  implicit class DatepickerOverridesOps[Self <: DatepickerOverrides[_], T] (val x: Self with DatepickerOverrides[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DatepickerOverridesMutableBuilder[Self <: DatepickerOverrides[_], T] (val x: Self with DatepickerOverrides[T]) extends AnyVal {
     
     @scala.inline
     def setCalendarContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("CalendarContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "CalendarContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendarContainer: Self = this.set("CalendarContainer", js.undefined)
+    def setCalendarContainerUndefined: Self = StObject.set(x, "CalendarContainer", js.undefined)
     
     @scala.inline
     def setCalendarHeader(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("CalendarHeader", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "CalendarHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendarHeader: Self = this.set("CalendarHeader", js.undefined)
+    def setCalendarHeaderUndefined: Self = StObject.set(x, "CalendarHeader", js.undefined)
     
     @scala.inline
     def setDay(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("Day", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDay: Self = this.set("Day", js.undefined)
+    def setDayUndefined: Self = StObject.set(x, "Day", js.undefined)
     
     @scala.inline
     def setInput(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("Input", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("Input", js.undefined)
+    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
     @scala.inline
     def setInputWrapper(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("InputWrapper", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "InputWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputWrapper: Self = this.set("InputWrapper", js.undefined)
+    def setInputWrapperUndefined: Self = StObject.set(x, "InputWrapper", js.undefined)
     
     @scala.inline
     def setMonth(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("Month", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonth: Self = this.set("Month", js.undefined)
+    ): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMonthContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("MonthContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthContainer: Self = this.set("MonthContainer", js.undefined)
+    def setMonthContainerUndefined: Self = StObject.set(x, "MonthContainer", js.undefined)
     
     @scala.inline
     def setMonthHeader(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("MonthHeader", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthHeader: Self = this.set("MonthHeader", js.undefined)
+    def setMonthHeaderUndefined: Self = StObject.set(x, "MonthHeader", js.undefined)
+    
+    @scala.inline
+    def setMonthUndefined: Self = StObject.set(x, "Month", js.undefined)
     
     @scala.inline
     def setMonthYearSelectButton(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("MonthYearSelectButton", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthYearSelectButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthYearSelectButton: Self = this.set("MonthYearSelectButton", js.undefined)
+    def setMonthYearSelectButtonUndefined: Self = StObject.set(x, "MonthYearSelectButton", js.undefined)
     
     @scala.inline
     def setMonthYearSelectIconContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("MonthYearSelectIconContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthYearSelectIconContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthYearSelectIconContainer: Self = this.set("MonthYearSelectIconContainer", js.undefined)
+    def setMonthYearSelectIconContainerUndefined: Self = StObject.set(x, "MonthYearSelectIconContainer", js.undefined)
     
     @scala.inline
     def setMonthYearSelectPopover(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("MonthYearSelectPopover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthYearSelectPopover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthYearSelectPopover: Self = this.set("MonthYearSelectPopover", js.undefined)
+    def setMonthYearSelectPopoverUndefined: Self = StObject.set(x, "MonthYearSelectPopover", js.undefined)
     
     @scala.inline
     def setMonthYearSelectStatefulMenu(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("MonthYearSelectStatefulMenu", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "MonthYearSelectStatefulMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthYearSelectStatefulMenu: Self = this.set("MonthYearSelectStatefulMenu", js.undefined)
+    def setMonthYearSelectStatefulMenuUndefined: Self = StObject.set(x, "MonthYearSelectStatefulMenu", js.undefined)
     
     @scala.inline
     def setNextButton(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("NextButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextButton: Self = this.set("NextButton", js.undefined)
+    ): Self = StObject.set(x, "NextButton", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNextButtonIcon(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("NextButtonIcon", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "NextButtonIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextButtonIcon: Self = this.set("NextButtonIcon", js.undefined)
+    def setNextButtonIconUndefined: Self = StObject.set(x, "NextButtonIcon", js.undefined)
+    
+    @scala.inline
+    def setNextButtonUndefined: Self = StObject.set(x, "NextButton", js.undefined)
     
     @scala.inline
     def setPopover(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("Popover", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopover: Self = this.set("Popover", js.undefined)
+    def setPopoverUndefined: Self = StObject.set(x, "Popover", js.undefined)
     
     @scala.inline
     def setPrevButton(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("PrevButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevButton: Self = this.set("PrevButton", js.undefined)
+    ): Self = StObject.set(x, "PrevButton", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPrevButtonIcon(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("PrevButtonIcon", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "PrevButtonIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrevButtonIcon: Self = this.set("PrevButtonIcon", js.undefined)
+    def setPrevButtonIconUndefined: Self = StObject.set(x, "PrevButtonIcon", js.undefined)
+    
+    @scala.inline
+    def setPrevButtonUndefined: Self = StObject.set(x, "PrevButton", js.undefined)
     
     @scala.inline
     def setQuickSelect(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("QuickSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuickSelect: Self = this.set("QuickSelect", js.undefined)
+    ): Self = StObject.set(x, "QuickSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQuickSelectContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("QuickSelectContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "QuickSelectContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuickSelectContainer: Self = this.set("QuickSelectContainer", js.undefined)
+    def setQuickSelectContainerUndefined: Self = StObject.set(x, "QuickSelectContainer", js.undefined)
     
     @scala.inline
     def setQuickSelectFormControl(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("QuickSelectFormControl", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "QuickSelectFormControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQuickSelectFormControl: Self = this.set("QuickSelectFormControl", js.undefined)
+    def setQuickSelectFormControlUndefined: Self = StObject.set(x, "QuickSelectFormControl", js.undefined)
+    
+    @scala.inline
+    def setQuickSelectUndefined: Self = StObject.set(x, "QuickSelect", js.undefined)
     
     @scala.inline
     def setRoot(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("Root", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("Root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     
     @scala.inline
     def setTimeSelect(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("TimeSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSelect: Self = this.set("TimeSelect", js.undefined)
+    ): Self = StObject.set(x, "TimeSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTimeSelectContainer(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("TimeSelectContainer", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "TimeSelectContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeSelectContainer: Self = this.set("TimeSelectContainer", js.undefined)
+    def setTimeSelectContainerUndefined: Self = StObject.set(x, "TimeSelectContainer", js.undefined)
     
     @scala.inline
     def setTimeSelectFormControl(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("TimeSelectFormControl", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "TimeSelectFormControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeSelectFormControl: Self = this.set("TimeSelectFormControl", js.undefined)
+    def setTimeSelectFormControlUndefined: Self = StObject.set(x, "TimeSelectFormControl", js.undefined)
+    
+    @scala.inline
+    def setTimeSelectUndefined: Self = StObject.set(x, "TimeSelect", js.undefined)
     
     @scala.inline
     def setWeek(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("Week", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWeek: Self = this.set("Week", js.undefined)
+    def setWeekUndefined: Self = StObject.set(x, "Week", js.undefined)
     
     @scala.inline
     def setWeekdayHeader(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-    ): Self = this.set("WeekdayHeader", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "WeekdayHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWeekdayHeader: Self = this.set("WeekdayHeader", js.undefined)
+    def setWeekdayHeaderUndefined: Self = StObject.set(x, "WeekdayHeader", js.undefined)
   }
 }

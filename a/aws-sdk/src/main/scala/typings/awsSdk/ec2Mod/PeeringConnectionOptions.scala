@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PeeringConnectionOptions extends js.Object {
+trait PeeringConnectionOptions extends StObject {
   
   /**
     * If true, the public DNS hostnames of instances in the specified VPC resolve to private IP addresses when queried from instances in the peer VPC.
@@ -31,36 +32,24 @@ object PeeringConnectionOptions {
   }
   
   @scala.inline
-  implicit class PeeringConnectionOptionsOps[Self <: PeeringConnectionOptions] (val x: Self) extends AnyVal {
+  implicit class PeeringConnectionOptionsMutableBuilder[Self <: PeeringConnectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDnsResolutionFromRemoteVpc(value: Boolean): Self = StObject.set(x, "AllowDnsResolutionFromRemoteVpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDnsResolutionFromRemoteVpcUndefined: Self = StObject.set(x, "AllowDnsResolutionFromRemoteVpc", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowEgressFromLocalClassicLinkToRemoteVpc(value: Boolean): Self = StObject.set(x, "AllowEgressFromLocalClassicLinkToRemoteVpc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDnsResolutionFromRemoteVpc(value: Boolean): Self = this.set("AllowDnsResolutionFromRemoteVpc", value.asInstanceOf[js.Any])
+    def setAllowEgressFromLocalClassicLinkToRemoteVpcUndefined: Self = StObject.set(x, "AllowEgressFromLocalClassicLinkToRemoteVpc", js.undefined)
     
     @scala.inline
-    def deleteAllowDnsResolutionFromRemoteVpc: Self = this.set("AllowDnsResolutionFromRemoteVpc", js.undefined)
+    def setAllowEgressFromLocalVpcToRemoteClassicLink(value: Boolean): Self = StObject.set(x, "AllowEgressFromLocalVpcToRemoteClassicLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEgressFromLocalClassicLinkToRemoteVpc(value: Boolean): Self = this.set("AllowEgressFromLocalClassicLinkToRemoteVpc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowEgressFromLocalClassicLinkToRemoteVpc: Self = this.set("AllowEgressFromLocalClassicLinkToRemoteVpc", js.undefined)
-    
-    @scala.inline
-    def setAllowEgressFromLocalVpcToRemoteClassicLink(value: Boolean): Self = this.set("AllowEgressFromLocalVpcToRemoteClassicLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowEgressFromLocalVpcToRemoteClassicLink: Self = this.set("AllowEgressFromLocalVpcToRemoteClassicLink", js.undefined)
+    def setAllowEgressFromLocalVpcToRemoteClassicLinkUndefined: Self = StObject.set(x, "AllowEgressFromLocalVpcToRemoteClassicLink", js.undefined)
   }
 }

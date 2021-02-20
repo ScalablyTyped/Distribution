@@ -3,13 +3,12 @@ package typings.classnames
 import org.scalablytyped.runtime.StringDictionary
 import typings.classnames.anon.DefaultClassNamesFn
 import typings.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("classnames/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
   @js.native
   trait ClassArray extends Array[ClassValue]

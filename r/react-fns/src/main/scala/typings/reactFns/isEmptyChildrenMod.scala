@@ -1,12 +1,13 @@
 package typings.reactFns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-fns/dist/utils/isEmptyChildren", JSImport.Namespace)
-@js.native
-object isEmptyChildrenMod extends js.Object {
+object isEmptyChildrenMod {
   
+  @JSImport("react-fns/dist/utils/isEmptyChildren", "isEmptyChildren")
+  @js.native
   def isEmptyChildren(children: js.Any): Boolean = js.native
 }

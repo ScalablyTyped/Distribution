@@ -1,12 +1,13 @@
 package typings.slimerjs
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FsModule extends js.Object {
+trait FsModule extends StObject {
   
   def absolute(path: String): String = js.native
   
@@ -141,132 +142,120 @@ object FsModule {
   }
   
   @scala.inline
-  implicit class FsModuleOps[Self <: FsModule] (val x: Self) extends AnyVal {
+  implicit class FsModuleMutableBuilder[Self <: FsModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolute(value: String => String): Self = StObject.set(x, "absolute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBase(value: String => String): Self = StObject.set(x, "base", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBasename(value: String => String): Self = StObject.set(x, "basename", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbsolute(value: String => String): Self = this.set("absolute", js.Any.fromFunction1(value))
+    def setChangeWorkingDirectory(value: String => Unit): Self = StObject.set(x, "changeWorkingDirectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBase(value: String => String): Self = this.set("base", js.Any.fromFunction1(value))
+    def setCopy(value: (String, String) => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBasename(value: String => String): Self = this.set("basename", js.Any.fromFunction1(value))
+    def setCopyTree(value: (String, String) => Unit): Self = StObject.set(x, "copyTree", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setChangeWorkingDirectory(value: String => Unit): Self = this.set("changeWorkingDirectory", js.Any.fromFunction1(value))
+    def setDirectory(value: String => String): Self = StObject.set(x, "directory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopy(value: (String, String) => Unit): Self = this.set("copy", js.Any.fromFunction2(value))
+    def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyTree(value: (String, String) => Unit): Self = this.set("copyTree", js.Any.fromFunction2(value))
+    def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDirectory(value: String => String): Self = this.set("directory", js.Any.fromFunction1(value))
+    def setExtension(value: (String, Boolean) => String): Self = StObject.set(x, "extension", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDirname(value: String => String): Self = this.set("dirname", js.Any.fromFunction1(value))
+    def setIsAbsolute(value: String => Boolean): Self = StObject.set(x, "isAbsolute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExists(value: String => Boolean): Self = this.set("exists", js.Any.fromFunction1(value))
+    def setIsDirectory(value: String => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtension(value: (String, Boolean) => String): Self = this.set("extension", js.Any.fromFunction2(value))
+    def setIsExecutable(value: String => Boolean): Self = StObject.set(x, "isExecutable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsAbsolute(value: String => Boolean): Self = this.set("isAbsolute", js.Any.fromFunction1(value))
+    def setIsFile(value: String => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDirectory(value: String => Boolean): Self = this.set("isDirectory", js.Any.fromFunction1(value))
+    def setIsLink(value: String => Boolean): Self = StObject.set(x, "isLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsExecutable(value: String => Boolean): Self = this.set("isExecutable", js.Any.fromFunction1(value))
+    def setIsReadable(value: String => Boolean): Self = StObject.set(x, "isReadable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsFile(value: String => Boolean): Self = this.set("isFile", js.Any.fromFunction1(value))
+    def setIsWritable(value: String => Boolean): Self = StObject.set(x, "isWritable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsLink(value: String => Boolean): Self = this.set("isLink", js.Any.fromFunction1(value))
+    def setJoin(value: (String, String, /* repeated */ String) => String): Self = StObject.set(x, "join", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsReadable(value: String => Boolean): Self = this.set("isReadable", js.Any.fromFunction1(value))
+    def setLastModified(value: String => Date): Self = StObject.set(x, "lastModified", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsWritable(value: String => Boolean): Self = this.set("isWritable", js.Any.fromFunction1(value))
+    def setList(value: String => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setJoin(value: (String, String, /* repeated */ String) => String): Self = this.set("join", js.Any.fromFunction3(value))
+    def setMakeDirectory(value: String => Unit): Self = StObject.set(x, "makeDirectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLastModified(value: String => Date): Self = this.set("lastModified", js.Any.fromFunction1(value))
+    def setMakeTree(value: String => Unit): Self = StObject.set(x, "makeTree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setList(value: String => js.Array[String]): Self = this.set("list", js.Any.fromFunction1(value))
+    def setMkpath(value: String => Unit): Self = StObject.set(x, "mkpath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMakeDirectory(value: String => Unit): Self = this.set("makeDirectory", js.Any.fromFunction1(value))
+    def setMove(value: (String, String) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMakeTree(value: String => Unit): Self = this.set("makeTree", js.Any.fromFunction1(value))
+    def setOpen(value: (String, Opts) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMkpath(value: String => Unit): Self = this.set("mkpath", js.Any.fromFunction1(value))
+    def setRead(value: (String, String) => String): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMove(value: (String, String) => Unit): Self = this.set("move", js.Any.fromFunction2(value))
+    def setReadLink(value: String => String): Self = StObject.set(x, "readLink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: (String, Opts) => Unit): Self = this.set("open", js.Any.fromFunction2(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRead(value: (String, String) => String): Self = this.set("read", js.Any.fromFunction2(value))
+    def setRemoveDirectory(value: String => Unit): Self = StObject.set(x, "removeDirectory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReadLink(value: String => String): Self = this.set("readLink", js.Any.fromFunction1(value))
+    def setRemoveTree(value: String => Unit): Self = StObject.set(x, "removeTree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRename(value: (String, String) => Unit): Self = StObject.set(x, "rename", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveDirectory(value: String => Unit): Self = this.set("removeDirectory", js.Any.fromFunction1(value))
+    def setRmdir(value: String => Unit): Self = StObject.set(x, "rmdir", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveTree(value: String => Unit): Self = this.set("removeTree", js.Any.fromFunction1(value))
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRename(value: (String, String) => Unit): Self = this.set("rename", js.Any.fromFunction2(value))
+    def setSize(value: String => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRmdir(value: String => Unit): Self = this.set("rmdir", js.Any.fromFunction1(value))
+    def setSplit(value: String => js.Array[String]): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    def setTouch(value: (String, Date) => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSize(value: String => Double): Self = this.set("size", js.Any.fromFunction1(value))
+    def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplit(value: String => js.Array[String]): Self = this.set("split", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTouch(value: (String, Date) => Unit): Self = this.set("touch", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setWorkingDirectory(value: String): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrite(value: (String, js.Any, String) => Unit): Self = this.set("write", js.Any.fromFunction3(value))
+    def setWrite(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
   }
 }

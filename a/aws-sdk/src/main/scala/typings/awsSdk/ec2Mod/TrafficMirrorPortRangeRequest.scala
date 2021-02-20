@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrafficMirrorPortRangeRequest extends js.Object {
+trait TrafficMirrorPortRangeRequest extends StObject {
   
   /**
     * The first port in the Traffic Mirror port range. This applies to the TCP and UDP protocols.
@@ -26,30 +27,18 @@ object TrafficMirrorPortRangeRequest {
   }
   
   @scala.inline
-  implicit class TrafficMirrorPortRangeRequestOps[Self <: TrafficMirrorPortRangeRequest] (val x: Self) extends AnyVal {
+  implicit class TrafficMirrorPortRangeRequestMutableBuilder[Self <: TrafficMirrorPortRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: Integer): Self = this.set("FromPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromPort: Self = this.set("FromPort", js.undefined)
-    
-    @scala.inline
-    def setToPort(value: Integer): Self = this.set("ToPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPort: Self = this.set("ToPort", js.undefined)
+    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Acl[T] extends js.Object {
+trait Acl[T] extends StObject {
   
   var _id: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
@@ -24,30 +25,18 @@ object Acl {
   }
   
   @scala.inline
-  implicit class AclOps[Self <: Acl[_], T] (val x: Self with Acl[T]) extends AnyVal {
+  implicit class AclMutableBuilder[Self <: Acl[_], T] (val x: Self with Acl[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_id(value: /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any): Self = this.set("_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_id: Self = this.set("_id", js.undefined)
-    
-    @scala.inline
-    def setAcl(value: /* import warning: importer.ImportType#apply Failed type conversion: T['acl'] */ js.Any): Self = this.set("acl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcl: Self = this.set("acl", js.undefined)
+    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary to specify a boundary identifier for <Titanium.UI.iOS.CollisionBehavior.addBoundary>.
   */
 @js.native
-trait BoundaryIdentifier extends js.Object {
+trait BoundaryIdentifier extends StObject {
   
   /**
     * Arbitrary identifier for the boundary
@@ -34,36 +35,24 @@ object BoundaryIdentifier {
   }
   
   @scala.inline
-  implicit class BoundaryIdentifierOps[Self <: BoundaryIdentifier] (val x: Self) extends AnyVal {
+  implicit class BoundaryIdentifierMutableBuilder[Self <: BoundaryIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoint1(value: Point): Self = StObject.set(x, "point1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setPoint1Undefined: Self = StObject.set(x, "point1", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setPoint2(value: Point): Self = StObject.set(x, "point2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint1(value: Point): Self = this.set("point1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoint1: Self = this.set("point1", js.undefined)
-    
-    @scala.inline
-    def setPoint2(value: Point): Self = this.set("point2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoint2: Self = this.set("point2", js.undefined)
+    def setPoint2Undefined: Self = StObject.set(x, "point2", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait HeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The height CSS property specifies the height of an element. By default, the property defines the height of the
@@ -24,30 +25,18 @@ object HeightProps {
   }
   
   @scala.inline
-  implicit class HeightPropsOps[Self <: HeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (HeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class HeightPropsMutableBuilder[Self <: HeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (HeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightNull: Self = StObject.set(x, "height", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHeightVarargs(value: (TVal | Null)*): Self = this.set("height", js.Array(value :_*))
-    
-    @scala.inline
-    def setHeight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setHeightNull: Self = this.set("height", null)
+    def setHeightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "height", js.Array(value :_*))
   }
 }

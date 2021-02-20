@@ -1,11 +1,12 @@
 package typings.hexo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Model[T] extends js.Object {
+trait Model[T] extends StObject {
   
   /**
     * Warehouse method
@@ -52,33 +53,21 @@ object Model {
   }
   
   @scala.inline
-  implicit class ModelOps[Self <: Model[_], T] (val x: Self with Model[T]) extends AnyVal {
+  implicit class ModelMutableBuilder[Self <: Model[_], T] (val x: Self with Model[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: js.Function2[/* v */ T, /* i */ Double, Boolean] => Model[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForEach(value: js.Function2[/* v */ T, /* i */ Double, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: () => Double): Self = this.set("count", js.Any.fromFunction0(value))
+    def setMap(value: js.Function2[/* v */ T, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilter(value: js.Function2[/* v */ T, /* i */ Double, Boolean] => Model[T]): Self = this.set("filter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setForEach(value: js.Function2[/* v */ T, /* i */ Double, Unit] => Unit): Self = this.set("forEach", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMap(value: js.Function2[/* v */ T, /* i */ Double, js.Any] => js.Array[js.Any]): Self = this.set("map", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToArray(value: () => js.Array[T]): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
   }
 }

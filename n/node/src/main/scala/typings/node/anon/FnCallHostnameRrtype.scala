@@ -16,12 +16,13 @@ import typings.node.nodeStrings.PTR
 import typings.node.nodeStrings.SOA
 import typings.node.nodeStrings.SRV
 import typings.node.nodeStrings.TXT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallHostnameRrtype extends js.Object {
+trait FnCallHostnameRrtype extends StObject {
   
   def apply(hostname: String): js.Promise[js.Array[String]] = js.native
   def apply(hostname: String, rrtype: String): js.Promise[

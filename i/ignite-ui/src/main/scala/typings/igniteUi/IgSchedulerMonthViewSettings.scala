@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,78 +90,66 @@ object IgSchedulerMonthViewSettings {
   }
   
   @scala.inline
-  implicit class IgSchedulerMonthViewSettingsOps[Self <: IgSchedulerMonthViewSettings] (val x: Self) extends AnyVal {
+  implicit class IgSchedulerMonthViewSettingsMutableBuilder[Self <: IgSchedulerMonthViewSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgendaVisibilityType(value: String): Self = StObject.set(x, "agendaVisibilityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgendaVisibilityTypeUndefined: Self = StObject.set(x, "agendaVisibilityType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppointmentMode(value: String): Self = StObject.set(x, "appointmentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgendaVisibilityType(value: String): Self = this.set("agendaVisibilityType", value.asInstanceOf[js.Any])
+    def setAppointmentModeUndefined: Self = StObject.set(x, "appointmentMode", js.undefined)
     
     @scala.inline
-    def deleteAgendaVisibilityType: Self = this.set("agendaVisibilityType", js.undefined)
+    def setIsAgendaVisible(value: Boolean): Self = StObject.set(x, "isAgendaVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointmentMode(value: String): Self = this.set("appointmentMode", value.asInstanceOf[js.Any])
+    def setIsAgendaVisibleUndefined: Self = StObject.set(x, "isAgendaVisible", js.undefined)
     
     @scala.inline
-    def deleteAppointmentMode: Self = this.set("appointmentMode", js.undefined)
+    def setIsHorizontalSeparatorVisibile(value: Boolean): Self = StObject.set(x, "isHorizontalSeparatorVisibile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAgendaVisible(value: Boolean): Self = this.set("isAgendaVisible", value.asInstanceOf[js.Any])
+    def setIsHorizontalSeparatorVisibileUndefined: Self = StObject.set(x, "isHorizontalSeparatorVisibile", js.undefined)
     
     @scala.inline
-    def deleteIsAgendaVisible: Self = this.set("isAgendaVisible", js.undefined)
+    def setIsNextMonthShown(value: Boolean): Self = StObject.set(x, "isNextMonthShown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHorizontalSeparatorVisibile(value: Boolean): Self = this.set("isHorizontalSeparatorVisibile", value.asInstanceOf[js.Any])
+    def setIsNextMonthShownUndefined: Self = StObject.set(x, "isNextMonthShown", js.undefined)
     
     @scala.inline
-    def deleteIsHorizontalSeparatorVisibile: Self = this.set("isHorizontalSeparatorVisibile", js.undefined)
+    def setIsPreviousMonthShown(value: Boolean): Self = StObject.set(x, "isPreviousMonthShown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNextMonthShown(value: Boolean): Self = this.set("isNextMonthShown", value.asInstanceOf[js.Any])
+    def setIsPreviousMonthShownUndefined: Self = StObject.set(x, "isPreviousMonthShown", js.undefined)
     
     @scala.inline
-    def deleteIsNextMonthShown: Self = this.set("isNextMonthShown", js.undefined)
+    def setIsVerticalSeparatorVisibile(value: Boolean): Self = StObject.set(x, "isVerticalSeparatorVisibile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPreviousMonthShown(value: Boolean): Self = this.set("isPreviousMonthShown", value.asInstanceOf[js.Any])
+    def setIsVerticalSeparatorVisibileUndefined: Self = StObject.set(x, "isVerticalSeparatorVisibile", js.undefined)
     
     @scala.inline
-    def deleteIsPreviousMonthShown: Self = this.set("isPreviousMonthShown", js.undefined)
+    def setIsWeekNumberVisible(value: Boolean): Self = StObject.set(x, "isWeekNumberVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVerticalSeparatorVisibile(value: Boolean): Self = this.set("isVerticalSeparatorVisibile", value.asInstanceOf[js.Any])
+    def setIsWeekNumberVisibleUndefined: Self = StObject.set(x, "isWeekNumberVisible", js.undefined)
     
     @scala.inline
-    def deleteIsVerticalSeparatorVisibile: Self = this.set("isVerticalSeparatorVisibile", js.undefined)
+    def setIsWeekdayVisible(value: Boolean): Self = StObject.set(x, "isWeekdayVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWeekNumberVisible(value: Boolean): Self = this.set("isWeekNumberVisible", value.asInstanceOf[js.Any])
+    def setIsWeekdayVisibleUndefined: Self = StObject.set(x, "isWeekdayVisible", js.undefined)
     
     @scala.inline
-    def deleteIsWeekNumberVisible: Self = this.set("isWeekNumberVisible", js.undefined)
+    def setViewSplitOrientation(value: String): Self = StObject.set(x, "viewSplitOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWeekdayVisible(value: Boolean): Self = this.set("isWeekdayVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsWeekdayVisible: Self = this.set("isWeekdayVisible", js.undefined)
-    
-    @scala.inline
-    def setViewSplitOrientation(value: String): Self = this.set("viewSplitOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewSplitOrientation: Self = this.set("viewSplitOrientation", js.undefined)
+    def setViewSplitOrientationUndefined: Self = StObject.set(x, "viewSplitOrientation", js.undefined)
   }
 }

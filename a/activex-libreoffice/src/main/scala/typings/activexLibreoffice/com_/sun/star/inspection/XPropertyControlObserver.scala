@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.inspection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.2
   */
 @js.native
-trait XPropertyControlObserver extends js.Object {
+trait XPropertyControlObserver extends StObject {
   
   /**
     * notifies the observer that a certain {@link XPropertyControl} 's UI representation gained the focus.
@@ -33,24 +34,12 @@ object XPropertyControlObserver {
   }
   
   @scala.inline
-  implicit class XPropertyControlObserverOps[Self <: XPropertyControlObserver] (val x: Self) extends AnyVal {
+  implicit class XPropertyControlObserverMutableBuilder[Self <: XPropertyControlObserver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFocusGained(value: XPropertyControl => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFocusGained(value: XPropertyControl => Unit): Self = this.set("focusGained", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValueChanged(value: XPropertyControl => Unit): Self = this.set("valueChanged", js.Any.fromFunction1(value))
+    def setValueChanged(value: XPropertyControl => Unit): Self = StObject.set(x, "valueChanged", js.Any.fromFunction1(value))
   }
 }

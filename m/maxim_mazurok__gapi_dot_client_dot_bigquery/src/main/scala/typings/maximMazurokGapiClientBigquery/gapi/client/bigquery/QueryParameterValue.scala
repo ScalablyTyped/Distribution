@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryParameterValue extends js.Object {
+trait QueryParameterValue extends StObject {
   
   /** [Optional] The array values, if this is an array type. */
   var arrayValues: js.UndefOr[js.Array[QueryParameterValue]] = js.native
@@ -30,43 +31,31 @@ object QueryParameterValue {
   }
   
   @scala.inline
-  implicit class QueryParameterValueOps[Self <: QueryParameterValue] (val x: Self) extends AnyVal {
+  implicit class QueryParameterValueMutableBuilder[Self <: QueryParameterValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayValues(value: js.Array[QueryParameterValue]): Self = StObject.set(x, "arrayValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArrayValuesVarargs(value: QueryParameterValue*): Self = this.set("arrayValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setArrayValues(value: js.Array[QueryParameterValue]): Self = this.set("arrayValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArrayValues: Self = this.set("arrayValues", js.undefined)
+    def setArrayValuesVarargs(value: QueryParameterValue*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
     
     @scala.inline
     def setStructValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.QueryParameterValue}
       */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue with TopLevel[js.Any]
-    ): Self = this.set("structValues", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "structValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructValues: Self = this.set("structValues", js.undefined)
+    def setStructValuesUndefined: Self = StObject.set(x, "structValues", js.undefined)
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

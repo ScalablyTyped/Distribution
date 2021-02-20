@@ -1,5 +1,6 @@
 package typings.reactNative
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.`same-origin`
   - typings.reactNative.reactNativeStrings.include
 */
-trait RequestCredentials extends js.Object
+trait RequestCredentials extends StObject
 object RequestCredentials {
   
   @scala.inline

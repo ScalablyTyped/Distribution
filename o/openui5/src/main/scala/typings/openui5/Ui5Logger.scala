@@ -1,11 +1,12 @@
 package typings.openui5
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ui5Logger extends js.Object {
+trait Ui5Logger extends StObject {
   
   //Allows to add a new LogListener that will be notified for new log entries.
   def addLogListener(oListener: js.Any): Unit = js.native

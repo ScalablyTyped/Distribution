@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/editor/format-align-justify", JSImport.Namespace)
-@js.native
-object formatAlignJustifyMod extends js.Object {
+object formatAlignJustifyMod {
   
+  @JSImport("material-ui/svg-icons/editor/format-align-justify", JSImport.Default)
+  @js.native
+  class default () extends EditorFormatAlignJustify
+  
+  @JSImport("material-ui/svg-icons/editor/format-align-justify", "EditorFormatAlignJustify")
   @js.native
   class EditorFormatAlignJustify ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

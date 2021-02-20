@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Candidate extends js.Object {
+trait Candidate extends StObject {
   
   /** The URL for the candidate's campaign web site. */
   var candidateUrl: js.UndefOr[String] = js.native
@@ -43,69 +44,57 @@ object Candidate {
   }
   
   @scala.inline
-  implicit class CandidateOps[Self <: Candidate] (val x: Self) extends AnyVal {
+  implicit class CandidateMutableBuilder[Self <: Candidate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCandidateUrl(value: String): Self = StObject.set(x, "candidateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidateUrlUndefined: Self = StObject.set(x, "candidateUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannels(value: js.Array[Channel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandidateUrl(value: String): Self = this.set("candidateUrl", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def deleteCandidateUrl: Self = this.set("candidateUrl", js.undefined)
+    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = this.set("channels", js.Array(value :_*))
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[Channel]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setOrderOnBallot(value: String): Self = StObject.set(x, "orderOnBallot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrderOnBallotUndefined: Self = StObject.set(x, "orderOnBallot", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderOnBallot(value: String): Self = this.set("orderOnBallot", value.asInstanceOf[js.Any])
+    def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
     
     @scala.inline
-    def deleteOrderOnBallot: Self = this.set("orderOnBallot", js.undefined)
+    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParty(value: String): Self = this.set("party", value.asInstanceOf[js.Any])
+    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
     @scala.inline
-    def deleteParty: Self = this.set("party", js.undefined)
+    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhone: Self = this.set("phone", js.undefined)
-    
-    @scala.inline
-    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
   }
 }

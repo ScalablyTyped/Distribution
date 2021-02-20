@@ -1,12 +1,13 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gdal", "FieldDefn")
 @js.native
-class FieldDefn protected () extends js.Object {
+class FieldDefn protected () extends StObject {
   def this(name: String, `type`: String) = this()
   
   var ignored: Boolean = js.native

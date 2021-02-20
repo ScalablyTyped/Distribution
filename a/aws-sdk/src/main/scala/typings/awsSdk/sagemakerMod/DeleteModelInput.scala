@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteModelInput extends js.Object {
+trait DeleteModelInput extends StObject {
   
   /**
     * The name of the model to delete.
@@ -21,21 +22,9 @@ object DeleteModelInput {
   }
   
   @scala.inline
-  implicit class DeleteModelInputOps[Self <: DeleteModelInput] (val x: Self) extends AnyVal {
+  implicit class DeleteModelInputMutableBuilder[Self <: DeleteModelInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }
 }

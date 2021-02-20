@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFlowResponse extends js.Object {
+trait DescribeFlowResponse extends StObject {
   
   var Flow: js.UndefOr[typings.awsSdk.mediaconnectMod.Flow] = js.native
   
@@ -20,30 +21,18 @@ object DescribeFlowResponse {
   }
   
   @scala.inline
-  implicit class DescribeFlowResponseOps[Self <: DescribeFlowResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeFlowResponseMutableBuilder[Self <: DescribeFlowResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlow(value: Flow): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowUndefined: Self = StObject.set(x, "Flow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: Messages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlow(value: Flow): Self = this.set("Flow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlow: Self = this.set("Flow", js.undefined)
-    
-    @scala.inline
-    def setMessages(value: Messages): Self = this.set("Messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
   }
 }

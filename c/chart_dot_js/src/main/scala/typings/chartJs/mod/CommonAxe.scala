@@ -1,11 +1,12 @@
 package typings.chartJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonAxe extends js.Object {
+trait CommonAxe extends StObject {
   
   var afterBuildTicks: js.UndefOr[js.Function2[/* scale */ js.Any, /* ticks */ js.Array[Double], js.Array[Double]]] = js.native
   
@@ -68,177 +69,165 @@ object CommonAxe {
   }
   
   @scala.inline
-  implicit class CommonAxeOps[Self <: CommonAxe] (val x: Self) extends AnyVal {
+  implicit class CommonAxeMutableBuilder[Self <: CommonAxe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterBuildTicks(value: (/* scale */ js.Any, /* ticks */ js.Array[Double]) => js.Array[Double]): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterBuildTicksUndefined: Self = StObject.set(x, "afterBuildTicks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterCalculateTickRotation(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterCalculateTickRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterBuildTicks(value: (/* scale */ js.Any, /* ticks */ js.Array[Double]) => js.Array[Double]): Self = this.set("afterBuildTicks", js.Any.fromFunction2(value))
+    def setAfterCalculateTickRotationUndefined: Self = StObject.set(x, "afterCalculateTickRotation", js.undefined)
     
     @scala.inline
-    def deleteAfterBuildTicks: Self = this.set("afterBuildTicks", js.undefined)
+    def setAfterDataLimits(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterDataLimits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterCalculateTickRotation(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterCalculateTickRotation", js.Any.fromFunction1(value))
+    def setAfterDataLimitsUndefined: Self = StObject.set(x, "afterDataLimits", js.undefined)
     
     @scala.inline
-    def deleteAfterCalculateTickRotation: Self = this.set("afterCalculateTickRotation", js.undefined)
+    def setAfterFit(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterFit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterDataLimits(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterDataLimits", js.Any.fromFunction1(value))
+    def setAfterFitUndefined: Self = StObject.set(x, "afterFit", js.undefined)
     
     @scala.inline
-    def deleteAfterDataLimits: Self = this.set("afterDataLimits", js.undefined)
+    def setAfterSetDimension(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterSetDimension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterFit(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterFit", js.Any.fromFunction1(value))
+    def setAfterSetDimensionUndefined: Self = StObject.set(x, "afterSetDimension", js.undefined)
     
     @scala.inline
-    def deleteAfterFit: Self = this.set("afterFit", js.undefined)
+    def setAfterTickToLabelConversion(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterTickToLabelConversion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterSetDimension(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterSetDimension", js.Any.fromFunction1(value))
+    def setAfterTickToLabelConversionUndefined: Self = StObject.set(x, "afterTickToLabelConversion", js.undefined)
     
     @scala.inline
-    def deleteAfterSetDimension: Self = this.set("afterSetDimension", js.undefined)
+    def setAfterUpdate(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterTickToLabelConversion(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterTickToLabelConversion", js.Any.fromFunction1(value))
+    def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
     @scala.inline
-    def deleteAfterTickToLabelConversion: Self = this.set("afterTickToLabelConversion", js.undefined)
+    def setBeforeBuildTicks(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeBuildTicks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterUpdate(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("afterUpdate", js.Any.fromFunction1(value))
+    def setBeforeBuildTicksUndefined: Self = StObject.set(x, "beforeBuildTicks", js.undefined)
     
     @scala.inline
-    def deleteAfterUpdate: Self = this.set("afterUpdate", js.undefined)
+    def setBeforeCalculateTickRotation(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeCalculateTickRotation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeBuildTicks(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeBuildTicks", js.Any.fromFunction1(value))
+    def setBeforeCalculateTickRotationUndefined: Self = StObject.set(x, "beforeCalculateTickRotation", js.undefined)
     
     @scala.inline
-    def deleteBeforeBuildTicks: Self = this.set("beforeBuildTicks", js.undefined)
+    def setBeforeDataLimits(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeDataLimits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeCalculateTickRotation(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeCalculateTickRotation", js.Any.fromFunction1(value))
+    def setBeforeDataLimitsUndefined: Self = StObject.set(x, "beforeDataLimits", js.undefined)
     
     @scala.inline
-    def deleteBeforeCalculateTickRotation: Self = this.set("beforeCalculateTickRotation", js.undefined)
+    def setBeforeFit(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeFit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeDataLimits(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeDataLimits", js.Any.fromFunction1(value))
+    def setBeforeFitUndefined: Self = StObject.set(x, "beforeFit", js.undefined)
     
     @scala.inline
-    def deleteBeforeDataLimits: Self = this.set("beforeDataLimits", js.undefined)
+    def setBeforeSetDimension(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeSetDimension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeFit(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeFit", js.Any.fromFunction1(value))
+    def setBeforeSetDimensionUndefined: Self = StObject.set(x, "beforeSetDimension", js.undefined)
     
     @scala.inline
-    def deleteBeforeFit: Self = this.set("beforeFit", js.undefined)
+    def setBeforeTickToLabelConversion(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeTickToLabelConversion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeSetDimension(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeSetDimension", js.Any.fromFunction1(value))
+    def setBeforeTickToLabelConversionUndefined: Self = StObject.set(x, "beforeTickToLabelConversion", js.undefined)
     
     @scala.inline
-    def deleteBeforeSetDimension: Self = this.set("beforeSetDimension", js.undefined)
+    def setBeforeUpdate(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeTickToLabelConversion(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeTickToLabelConversion", js.Any.fromFunction1(value))
+    def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
     
     @scala.inline
-    def deleteBeforeTickToLabelConversion: Self = this.set("beforeTickToLabelConversion", js.undefined)
+    def setBounds(value: String): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeUpdate(value: /* scale */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeUpdate", js.Any.fromFunction1(value))
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def deleteBeforeUpdate: Self = this.set("beforeUpdate", js.undefined)
+    def setDisplay(value: Boolean | String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: String): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setGridLines(value: GridLineOptions): Self = StObject.set(x, "gridLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: Boolean | String): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setGridLinesUndefined: Self = StObject.set(x, "gridLines", js.undefined)
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridLines(value: GridLineOptions): Self = this.set("gridLines", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGridLines: Self = this.set("gridLines", js.undefined)
+    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Boolean): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setScaleLabel(value: ScaleTitleOptions): Self = StObject.set(x, "scaleLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setScaleLabelUndefined: Self = StObject.set(x, "scaleLabel", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleLabel(value: ScaleTitleOptions): Self = this.set("scaleLabel", value.asInstanceOf[js.Any])
+    def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
     
     @scala.inline
-    def deleteScaleLabel: Self = this.set("scaleLabel", js.undefined)
+    def setTicks(value: TickOptions): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStacked(value: Boolean): Self = this.set("stacked", value.asInstanceOf[js.Any])
+    def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
     @scala.inline
-    def deleteStacked: Self = this.set("stacked", js.undefined)
+    def setTime(value: TimeScale): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicks(value: TickOptions): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteTicks: Self = this.set("ticks", js.undefined)
+    def setType(value: ScaleType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: TimeScale): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
-    
-    @scala.inline
-    def setType(value: ScaleType | String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

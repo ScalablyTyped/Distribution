@@ -15,16 +15,15 @@ import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableDataInser
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableDataInsertAllResponse
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableDataList
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.TableList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.BigQuery.Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
   
   @js.native
-  trait DatasetsCollection extends js.Object {
+  trait DatasetsCollection extends StObject {
     
     // Returns the dataset specified by datasetID.
     def get(projectId: String, datasetId: String): Dataset = js.native
@@ -50,7 +49,7 @@ object Collection extends js.Object {
   }
   
   @js.native
-  trait JobsCollection extends js.Object {
+  trait JobsCollection extends StObject {
     
     // Requests that a job be cancelled. This call will return immediately, and the client will need to poll for the job status to see if the cancel completed successfully. Cancelled jobs may still incur costs.
     def cancel(projectId: String, jobId: String): JobCancelResponse = js.native
@@ -82,7 +81,7 @@ object Collection extends js.Object {
   }
   
   @js.native
-  trait ProjectsCollection extends js.Object {
+  trait ProjectsCollection extends StObject {
     
     // Returns the email address of the service account for your project used for interactions with Google Cloud KMS.
     def getServiceAccount(projectId: String): GetServiceAccountResponse = js.native
@@ -94,7 +93,7 @@ object Collection extends js.Object {
   }
   
   @js.native
-  trait TabledataCollection extends js.Object {
+  trait TabledataCollection extends StObject {
     
     // Streams data into BigQuery one record at a time without needing to run a load job. Requires the WRITER dataset role.
     def insertAll(resource: TableDataInsertAllRequest, projectId: String, datasetId: String, tableId: String): TableDataInsertAllResponse = js.native
@@ -106,7 +105,7 @@ object Collection extends js.Object {
   }
   
   @js.native
-  trait TablesCollection extends js.Object {
+  trait TablesCollection extends StObject {
     
     // Gets the specified table resource by table ID. This method does not return the data in the table, it only returns the table resource, which describes the structure of this table.
     def get(projectId: String, datasetId: String, tableId: String): Table = js.native

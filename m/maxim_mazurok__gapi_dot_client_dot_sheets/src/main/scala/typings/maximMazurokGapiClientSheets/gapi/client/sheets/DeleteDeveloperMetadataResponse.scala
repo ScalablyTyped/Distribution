@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDeveloperMetadataResponse extends js.Object {
+trait DeleteDeveloperMetadataResponse extends StObject {
   
   /** The metadata that was deleted. */
   var deletedDeveloperMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
@@ -19,27 +20,15 @@ object DeleteDeveloperMetadataResponse {
   }
   
   @scala.inline
-  implicit class DeleteDeveloperMetadataResponseOps[Self <: DeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteDeveloperMetadataResponseMutableBuilder[Self <: DeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletedDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "deletedDeveloperMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedDeveloperMetadataUndefined: Self = StObject.set(x, "deletedDeveloperMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeletedDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = this.set("deletedDeveloperMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeletedDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = this.set("deletedDeveloperMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedDeveloperMetadata: Self = this.set("deletedDeveloperMetadata", js.undefined)
+    def setDeletedDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value :_*))
   }
 }

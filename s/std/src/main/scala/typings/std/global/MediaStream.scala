@@ -1,11 +1,11 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MediaStream")
 @js.native
 class MediaStream ()
@@ -13,11 +13,3 @@ class MediaStream ()
   def this(stream: typings.std.MediaStream) = this()
   def this(tracks: js.Array[typings.std.MediaStreamTrack]) = this()
 }
-@JSGlobal("MediaStream")
-@js.native
-object MediaStream
-  extends Instantiable0[typings.std.MediaStream]
-     with Instantiable1[
-      (/* tracks */ js.Array[typings.std.MediaStreamTrack]) | (/* stream */ typings.std.MediaStream), 
-      typings.std.MediaStream
-    ]

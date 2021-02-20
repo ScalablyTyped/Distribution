@@ -1,11 +1,12 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IELangSearchDelegates extends js.Object {
+trait IELangSearchDelegates extends StObject {
   
   var langDirectionClickHandler: js.Function = js.native
   
@@ -35,36 +36,24 @@ object IELangSearchDelegates {
   }
   
   @scala.inline
-  implicit class IELangSearchDelegatesOps[Self <: IELangSearchDelegates] (val x: Self) extends AnyVal {
+  implicit class IELangSearchDelegatesMutableBuilder[Self <: IELangSearchDelegates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLangDirectionClickHandler(value: js.Function): Self = StObject.set(x, "langDirectionClickHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLangDirectionHandler(value: js.Function): Self = StObject.set(x, "langDirectionHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchClickHandler(value: js.Function): Self = StObject.set(x, "searchClickHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLangDirectionClickHandler(value: js.Function): Self = this.set("langDirectionClickHandler", value.asInstanceOf[js.Any])
+    def setSearchHandler(value: js.Function): Self = StObject.set(x, "searchHandler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLangDirectionHandler(value: js.Function): Self = this.set("langDirectionHandler", value.asInstanceOf[js.Any])
+    def setSelectCallback(value: js.Function): Self = StObject.set(x, "selectCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchClickHandler(value: js.Function): Self = this.set("searchClickHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchHandler(value: js.Function): Self = this.set("searchHandler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectCallback(value: js.Function): Self = this.set("selectCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectHandler(value: js.Function): Self = this.set("selectHandler", value.asInstanceOf[js.Any])
+    def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
   }
 }

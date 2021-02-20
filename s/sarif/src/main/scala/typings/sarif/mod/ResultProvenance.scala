@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultProvenance extends js.Object {
+trait ResultProvenance extends StObject {
   
   /**
     * An array of physicalLocation objects which specify the portions of an analysis tool's output that a converter
@@ -57,63 +58,51 @@ object ResultProvenance {
   }
   
   @scala.inline
-  implicit class ResultProvenanceOps[Self <: ResultProvenance] (val x: Self) extends AnyVal {
+  implicit class ResultProvenanceMutableBuilder[Self <: ResultProvenance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversionSources(value: js.Array[PhysicalLocation]): Self = StObject.set(x, "conversionSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversionSourcesUndefined: Self = StObject.set(x, "conversionSources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConversionSourcesVarargs(value: PhysicalLocation*): Self = StObject.set(x, "conversionSources", js.Array(value :_*))
     
     @scala.inline
-    def setConversionSourcesVarargs(value: PhysicalLocation*): Self = this.set("conversionSources", js.Array(value :_*))
+    def setFirstDetectionRunGuid(value: String): Self = StObject.set(x, "firstDetectionRunGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversionSources(value: js.Array[PhysicalLocation]): Self = this.set("conversionSources", value.asInstanceOf[js.Any])
+    def setFirstDetectionRunGuidUndefined: Self = StObject.set(x, "firstDetectionRunGuid", js.undefined)
     
     @scala.inline
-    def deleteConversionSources: Self = this.set("conversionSources", js.undefined)
+    def setFirstDetectionTimeUtc(value: String): Self = StObject.set(x, "firstDetectionTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDetectionRunGuid(value: String): Self = this.set("firstDetectionRunGuid", value.asInstanceOf[js.Any])
+    def setFirstDetectionTimeUtcUndefined: Self = StObject.set(x, "firstDetectionTimeUtc", js.undefined)
     
     @scala.inline
-    def deleteFirstDetectionRunGuid: Self = this.set("firstDetectionRunGuid", js.undefined)
+    def setInvocationIndex(value: Double): Self = StObject.set(x, "invocationIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDetectionTimeUtc(value: String): Self = this.set("firstDetectionTimeUtc", value.asInstanceOf[js.Any])
+    def setInvocationIndexUndefined: Self = StObject.set(x, "invocationIndex", js.undefined)
     
     @scala.inline
-    def deleteFirstDetectionTimeUtc: Self = this.set("firstDetectionTimeUtc", js.undefined)
+    def setLastDetectionRunGuid(value: String): Self = StObject.set(x, "lastDetectionRunGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvocationIndex(value: Double): Self = this.set("invocationIndex", value.asInstanceOf[js.Any])
+    def setLastDetectionRunGuidUndefined: Self = StObject.set(x, "lastDetectionRunGuid", js.undefined)
     
     @scala.inline
-    def deleteInvocationIndex: Self = this.set("invocationIndex", js.undefined)
+    def setLastDetectionTimeUtc(value: String): Self = StObject.set(x, "lastDetectionTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDetectionRunGuid(value: String): Self = this.set("lastDetectionRunGuid", value.asInstanceOf[js.Any])
+    def setLastDetectionTimeUtcUndefined: Self = StObject.set(x, "lastDetectionTimeUtc", js.undefined)
     
     @scala.inline
-    def deleteLastDetectionRunGuid: Self = this.set("lastDetectionRunGuid", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDetectionTimeUtc(value: String): Self = this.set("lastDetectionTimeUtc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastDetectionTimeUtc: Self = this.set("lastDetectionTimeUtc", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

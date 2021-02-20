@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskAgentPoolMaintenanceSchedule extends js.Object {
+trait TaskAgentPoolMaintenanceSchedule extends StObject {
   
   /**
     * Days for a build (flags enum for days of the week)
@@ -47,33 +48,21 @@ object TaskAgentPoolMaintenanceSchedule {
   }
   
   @scala.inline
-  implicit class TaskAgentPoolMaintenanceScheduleOps[Self <: TaskAgentPoolMaintenanceSchedule] (val x: Self) extends AnyVal {
+  implicit class TaskAgentPoolMaintenanceScheduleMutableBuilder[Self <: TaskAgentPoolMaintenanceSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaysToBuild(value: TaskAgentPoolMaintenanceScheduleDays): Self = StObject.set(x, "daysToBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScheduleJobId(value: String): Self = StObject.set(x, "scheduleJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartHours(value: Double): Self = StObject.set(x, "startHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysToBuild(value: TaskAgentPoolMaintenanceScheduleDays): Self = this.set("daysToBuild", value.asInstanceOf[js.Any])
+    def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleJobId(value: String): Self = this.set("scheduleJobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartHours(value: Double): Self = this.set("startHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartMinutes(value: Double): Self = this.set("startMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeZoneId(value: String): Self = this.set("timeZoneId", value.asInstanceOf[js.Any])
+    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
   }
 }

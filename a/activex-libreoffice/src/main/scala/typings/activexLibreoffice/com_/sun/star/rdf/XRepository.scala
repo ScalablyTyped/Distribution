@@ -4,6 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.2
   */
 @js.native
-trait XRepository extends js.Object {
+trait XRepository extends StObject {
   
   /**
     * gets the names of all the graphs in the repository.
@@ -187,54 +188,42 @@ object XRepository {
   }
   
   @scala.inline
-  implicit class XRepositoryOps[Self <: XRepository] (val x: Self) extends AnyVal {
+  implicit class XRepositoryMutableBuilder[Self <: XRepository] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateBlankNode(value: () => XBlankNode): Self = StObject.set(x, "createBlankNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateGraph(value: XURI => XNamedGraph): Self = StObject.set(x, "createGraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestroyGraph(value: XURI => Unit): Self = StObject.set(x, "destroyGraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGraphNames(value: SafeArray[XURI]): Self = this.set("GraphNames", value.asInstanceOf[js.Any])
+    def setExportGraph(value: (Double, XOutputStream, XURI, XURI) => Unit): Self = StObject.set(x, "exportGraph", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCreateBlankNode(value: () => XBlankNode): Self = this.set("createBlankNode", js.Any.fromFunction0(value))
+    def setGetGraph(value: XURI => XNamedGraph): Self = StObject.set(x, "getGraph", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateGraph(value: XURI => XNamedGraph): Self = this.set("createGraph", js.Any.fromFunction1(value))
+    def setGetGraphNames(value: () => SafeArray[XURI]): Self = StObject.set(x, "getGraphNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroyGraph(value: XURI => Unit): Self = this.set("destroyGraph", js.Any.fromFunction1(value))
+    def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = StObject.set(x, "getStatements", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setExportGraph(value: (Double, XOutputStream, XURI, XURI) => Unit): Self = this.set("exportGraph", js.Any.fromFunction4(value))
+    def setGraphNames(value: SafeArray[XURI]): Self = StObject.set(x, "GraphNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetGraph(value: XURI => XNamedGraph): Self = this.set("getGraph", js.Any.fromFunction1(value))
+    def setImportGraph(value: (Double, XInputStream, XURI, XURI) => XNamedGraph): Self = StObject.set(x, "importGraph", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetGraphNames(value: () => SafeArray[XURI]): Self = this.set("getGraphNames", js.Any.fromFunction0(value))
+    def setQueryAsk(value: String => Boolean): Self = StObject.set(x, "queryAsk", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStatements(value: (XResource, XURI, XNode) => XEnumeration): Self = this.set("getStatements", js.Any.fromFunction3(value))
+    def setQueryConstruct(value: String => XEnumeration): Self = StObject.set(x, "queryConstruct", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImportGraph(value: (Double, XInputStream, XURI, XURI) => XNamedGraph): Self = this.set("importGraph", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setQueryAsk(value: String => Boolean): Self = this.set("queryAsk", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueryConstruct(value: String => XEnumeration): Self = this.set("queryConstruct", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQuerySelect(value: String => XQuerySelectResult): Self = this.set("querySelect", js.Any.fromFunction1(value))
+    def setQuerySelect(value: String => XQuerySelectResult): Self = StObject.set(x, "querySelect", js.Any.fromFunction1(value))
   }
 }

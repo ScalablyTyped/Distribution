@@ -1,12 +1,13 @@
 package typings.aceBuilds.anon
 
 import typings.aceBuilds.mod.Ace.EditSession
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OldSession extends js.Object {
+trait OldSession extends StObject {
   
   var oldSession: EditSession = js.native
   
@@ -21,24 +22,12 @@ object OldSession {
   }
   
   @scala.inline
-  implicit class OldSessionOps[Self <: OldSession] (val x: Self) extends AnyVal {
+  implicit class OldSessionMutableBuilder[Self <: OldSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOldSession(value: EditSession): Self = StObject.set(x, "oldSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOldSession(value: EditSession): Self = this.set("oldSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: EditSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setSession(value: EditSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.sticker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object InlineQueryResultCachedSticker {
   }
   
   @scala.inline
-  implicit class InlineQueryResultCachedStickerOps[Self <: InlineQueryResultCachedSticker] (val x: Self) extends AnyVal {
+  implicit class InlineQueryResultCachedStickerMutableBuilder[Self <: InlineQueryResultCachedSticker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSticker_file_id(value: String): Self = StObject.set(x, "sticker_file_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSticker_file_id(value: String): Self = this.set("sticker_file_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: sticker): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput_message_content: Self = this.set("input_message_content", js.undefined)
+    def setType(value: sticker): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

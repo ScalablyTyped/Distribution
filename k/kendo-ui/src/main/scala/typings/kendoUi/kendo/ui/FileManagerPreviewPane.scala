@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileManagerPreviewPane extends js.Object {
+trait FileManagerPreviewPane extends StObject {
   
   var metaFields: js.UndefOr[js.Any] = js.native
   
@@ -24,42 +25,30 @@ object FileManagerPreviewPane {
   }
   
   @scala.inline
-  implicit class FileManagerPreviewPaneOps[Self <: FileManagerPreviewPane] (val x: Self) extends AnyVal {
+  implicit class FileManagerPreviewPaneMutableBuilder[Self <: FileManagerPreviewPane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetaFields(value: js.Any): Self = StObject.set(x, "metaFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetaFieldsUndefined: Self = StObject.set(x, "metaFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultipleFilesTemplate(value: String | js.Function): Self = StObject.set(x, "multipleFilesTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaFields(value: js.Any): Self = this.set("metaFields", value.asInstanceOf[js.Any])
+    def setMultipleFilesTemplateUndefined: Self = StObject.set(x, "multipleFilesTemplate", js.undefined)
     
     @scala.inline
-    def deleteMetaFields: Self = this.set("metaFields", js.undefined)
+    def setNoFileTemplate(value: String | js.Function): Self = StObject.set(x, "noFileTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleFilesTemplate(value: String | js.Function): Self = this.set("multipleFilesTemplate", value.asInstanceOf[js.Any])
+    def setNoFileTemplateUndefined: Self = StObject.set(x, "noFileTemplate", js.undefined)
     
     @scala.inline
-    def deleteMultipleFilesTemplate: Self = this.set("multipleFilesTemplate", js.undefined)
+    def setSingleFileTemplate(value: String | js.Function): Self = StObject.set(x, "singleFileTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoFileTemplate(value: String | js.Function): Self = this.set("noFileTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoFileTemplate: Self = this.set("noFileTemplate", js.undefined)
-    
-    @scala.inline
-    def setSingleFileTemplate(value: String | js.Function): Self = this.set("singleFileTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleFileTemplate: Self = this.set("singleFileTemplate", js.undefined)
+    def setSingleFileTemplateUndefined: Self = StObject.set(x, "singleFileTemplate", js.undefined)
   }
 }

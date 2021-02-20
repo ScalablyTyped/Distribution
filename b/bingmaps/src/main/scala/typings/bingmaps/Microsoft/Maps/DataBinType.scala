@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataBinType extends js.Object
+sealed trait DataBinType extends StObject
 @JSGlobal("Microsoft.Maps.DataBinType")
 @js.native
-object DataBinType extends js.Object {
+object DataBinType extends StObject {
   
   /* Renders data bins as circles in a square grid. */
   @js.native

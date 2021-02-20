@@ -1,13 +1,14 @@
 package typings.rgb2hex
 
 import typings.rgb2hex.anon.Alpha
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rgb2hex", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("rgb2hex", JSImport.Namespace)
+  @js.native
   def apply(rgb: String): Alpha = js.native
 }

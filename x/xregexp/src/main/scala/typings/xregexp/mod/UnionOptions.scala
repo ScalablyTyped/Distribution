@@ -2,6 +2,7 @@ package typings.xregexp.mod
 
 import typings.xregexp.xregexpStrings.none
 import typings.xregexp.xregexpStrings.or
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Additional options for when doing a RegExp union.
   */
 @js.native
-trait UnionOptions extends js.Object {
+trait UnionOptions extends StObject {
   
   /**
     * The conjunction to use for the union. Default is `none`.
@@ -26,27 +27,15 @@ object UnionOptions {
   }
   
   @scala.inline
-  implicit class UnionOptionsOps[Self <: UnionOptions] (val x: Self) extends AnyVal {
+  implicit class UnionOptionsMutableBuilder[Self <: UnionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConjunction(value: or | none): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConjunctionNull: Self = StObject.set(x, "conjunction", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConjunction(value: or | none): Self = this.set("conjunction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConjunction: Self = this.set("conjunction", js.undefined)
-    
-    @scala.inline
-    def setConjunctionNull: Self = this.set("conjunction", null)
+    def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
   }
 }

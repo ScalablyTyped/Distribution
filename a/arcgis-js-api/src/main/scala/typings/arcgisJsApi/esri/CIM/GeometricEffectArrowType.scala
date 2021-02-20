@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectArrowType extends js.Object
+sealed trait GeometricEffectArrowType extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectArrowType")
 @js.native
-object GeometricEffectArrowType extends js.Object {
+object GeometricEffectArrowType extends StObject {
   
   /**
     * A block arrow.

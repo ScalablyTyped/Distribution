@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesUntagResourceInputMod.UntagResou
 import typings.awsSdkClientDynamodbBrowser.typesUntagResourceOutputMod.UntagResourceOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/UntagResourceCommand", JSImport.Namespace)
-@js.native
-object untagResourceCommandMod extends js.Object {
+object untagResourceCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/UntagResourceCommand", "UntagResourceCommand")
   @js.native
   class UntagResourceCommand protected () extends Command[
           InputTypesUnion, 

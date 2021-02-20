@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationCloudwatchLoggingOptions extends js.Object {
+trait ApplicationCloudwatchLoggingOptions extends StObject {
   
   var cloudwatchLoggingOptionId: String = js.native
   
@@ -23,24 +24,12 @@ object ApplicationCloudwatchLoggingOptions {
   }
   
   @scala.inline
-  implicit class ApplicationCloudwatchLoggingOptionsOps[Self <: ApplicationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
+  implicit class ApplicationCloudwatchLoggingOptionsMutableBuilder[Self <: ApplicationCloudwatchLoggingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchLoggingOptionId(value: String): Self = StObject.set(x, "cloudwatchLoggingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudwatchLoggingOptionId(value: String): Self = this.set("cloudwatchLoggingOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogStreamArn(value: String): Self = this.set("logStreamArn", value.asInstanceOf[js.Any])
+    def setLogStreamArn(value: String): Self = StObject.set(x, "logStreamArn", value.asInstanceOf[js.Any])
   }
 }

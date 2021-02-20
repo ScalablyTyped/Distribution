@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object FlowElementsContainer {
   }
   
   @scala.inline
-  implicit class FlowElementsContainerOps[Self <: FlowElementsContainer] (val x: Self) extends AnyVal {
+  implicit class FlowElementsContainerMutableBuilder[Self <: FlowElementsContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "flowElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "flowElements", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLaneSets(value: js.Array[LaneSet]): Self = StObject.set(x, "laneSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowElementsVarargs(value: FlowElement*): Self = this.set("flowElements", js.Array(value :_*))
-    
-    @scala.inline
-    def setFlowElements(value: js.Array[FlowElement]): Self = this.set("flowElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLaneSetsVarargs(value: LaneSet*): Self = this.set("laneSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setLaneSets(value: js.Array[LaneSet]): Self = this.set("laneSets", value.asInstanceOf[js.Any])
+    def setLaneSetsVarargs(value: LaneSet*): Self = StObject.set(x, "laneSets", js.Array(value :_*))
   }
 }

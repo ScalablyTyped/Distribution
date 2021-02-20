@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BandwidthStatistics extends js.Object {
+trait BandwidthStatistics extends StObject {
   
   var inboundBandwidthPeaked: Boolean = js.native
   
@@ -35,36 +36,24 @@ object BandwidthStatistics {
   }
   
   @scala.inline
-  implicit class BandwidthStatisticsOps[Self <: BandwidthStatistics] (val x: Self) extends AnyVal {
+  implicit class BandwidthStatisticsMutableBuilder[Self <: BandwidthStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "inboundBandwidthPeaked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInboundBitsPerSecond(value: Double): Self = StObject.set(x, "inboundBitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInboundBitsPerSecondInstability(value: Double): Self = StObject.set(x, "inboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundBandwidthPeaked(value: Boolean): Self = this.set("inboundBandwidthPeaked", value.asInstanceOf[js.Any])
+    def setOutboundBandwidthPeaked(value: Boolean): Self = StObject.set(x, "outboundBandwidthPeaked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundBitsPerSecond(value: Double): Self = this.set("inboundBitsPerSecond", value.asInstanceOf[js.Any])
+    def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboundBitsPerSecondInstability(value: Double): Self = this.set("inboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutboundBandwidthPeaked(value: Boolean): Self = this.set("outboundBandwidthPeaked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutboundBitsPerSecond(value: Double): Self = this.set("outboundBitsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutboundBitsPerSecondInstability(value: Double): Self = this.set("outboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
+    def setOutboundBitsPerSecondInstability(value: Double): Self = StObject.set(x, "outboundBitsPerSecondInstability", value.asInstanceOf[js.Any])
   }
 }

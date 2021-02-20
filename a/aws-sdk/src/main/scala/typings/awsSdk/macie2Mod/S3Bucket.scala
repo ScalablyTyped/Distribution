@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Bucket extends js.Object {
+trait S3Bucket extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the bucket.
@@ -51,63 +52,51 @@ object S3Bucket {
   }
   
   @scala.inline
-  implicit class S3BucketOps[Self <: S3Bucket] (val x: Self) extends AnyVal {
+  implicit class S3BucketMutableBuilder[Self <: S3Bucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDefaultServerSideEncryption(value: ServerSideEncryption): Self = StObject.set(x, "defaultServerSideEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDefaultServerSideEncryptionUndefined: Self = StObject.set(x, "defaultServerSideEncryption", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultServerSideEncryption(value: ServerSideEncryption): Self = this.set("defaultServerSideEncryption", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDefaultServerSideEncryption: Self = this.set("defaultServerSideEncryption", js.undefined)
+    def setOwner(value: S3BucketOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublicAccess(value: BucketPublicAccess): Self = StObject.set(x, "publicAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: S3BucketOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPublicAccessUndefined: Self = StObject.set(x, "publicAccess", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setTags(value: KeyValuePairList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicAccess(value: BucketPublicAccess): Self = this.set("publicAccess", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deletePublicAccess: Self = this.set("publicAccess", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: KeyValuePair*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: KeyValuePairList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

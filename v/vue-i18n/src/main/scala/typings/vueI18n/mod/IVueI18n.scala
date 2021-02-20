@@ -5,12 +5,13 @@ import typings.std.Date
 import typings.std.RegExp
 import typings.vue.vueMod.Vue
 import typings.vueI18n.mod.VueI18n.PluralizationRulesMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVueI18n extends js.Object {
+trait IVueI18n extends StObject {
   
   def d(value: Double): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
   def d(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native

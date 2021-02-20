@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +21,9 @@ class Description () extends DescriptionDefinition {
   def update(content: DescriptionDefinition): Unit = js.native
 }
 /* static members */
-@JSImport("postman-collection", "Description")
-@js.native
-object Description extends js.Object {
+object Description {
   
+  @JSImport("postman-collection", "Description.isDescription")
+  @js.native
   def isDescription(obj: js.Any): Boolean = js.native
 }

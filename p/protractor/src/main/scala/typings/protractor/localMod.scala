@@ -2,14 +2,14 @@ package typings.protractor
 
 import typings.protractor.configMod.Config
 import typings.protractor.driverProviderMod.DriverProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/driverProviders/local", JSImport.Namespace)
-@js.native
-object localMod extends js.Object {
+object localMod {
   
+  @JSImport("protractor/built/driverProviders/local", "Local")
   @js.native
   class Local protected () extends DriverProvider {
     def this(config: Config) = this()

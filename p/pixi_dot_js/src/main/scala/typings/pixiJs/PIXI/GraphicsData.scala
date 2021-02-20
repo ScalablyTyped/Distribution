@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait GraphicsData extends js.Object {
+trait GraphicsData extends StObject {
   
   /**
     * Destroys the Graphics data.
@@ -80,48 +81,36 @@ object GraphicsData {
   }
   
   @scala.inline
-  implicit class GraphicsDataOps[Self <: GraphicsData] (val x: Self) extends AnyVal {
+  implicit class GraphicsDataMutableBuilder[Self <: GraphicsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoles(value: js.Array[GraphicsData]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setHolesVarargs(value: GraphicsData*): Self = StObject.set(x, "holes", js.Array(value :_*))
     
     @scala.inline
-    def setFillStyle(value: FillStyle): Self = this.set("fillStyle", value.asInstanceOf[js.Any])
+    def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHolesVarargs(value: GraphicsData*): Self = this.set("holes", js.Array(value :_*))
+    def setMatrix(value: Matrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoles(value: js.Array[GraphicsData]): Self = this.set("holes", value.asInstanceOf[js.Any])
+    def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStyle(value: LineStyle): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setMatrix(value: Matrix): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    def setShape(value: Circle | Ellipse | Polygon | Rectangle | RoundedRectangle): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVarargs(value: Double*): Self = this.set("points", js.Array(value :_*))
-    
-    @scala.inline
-    def setPoints(value: js.Array[Double]): Self = this.set("points", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape(value: Circle | Ellipse | Polygon | Rectangle | RoundedRectangle): Self = this.set("shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

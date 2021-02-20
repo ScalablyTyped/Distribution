@@ -9,33 +9,25 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyState
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.beans.SetPropertyTolerantFailed
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
-import typings.activexLibreoffice.com_.sun.star.beans.XPropertyState
 import typings.activexLibreoffice.com_.sun.star.beans.XTolerantMultiPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
-import typings.activexLibreoffice.com_.sun.star.container.XContentEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XIndexReplace
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.style.BreakType
-import typings.activexLibreoffice.com_.sun.star.style.CharacterProperties
-import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesAsian
-import typings.activexLibreoffice.com_.sun.star.style.CharacterPropertiesComplex
 import typings.activexLibreoffice.com_.sun.star.style.DropCapFormat
 import typings.activexLibreoffice.com_.sun.star.style.GraphicLocation
 import typings.activexLibreoffice.com_.sun.star.style.LineSpacing
 import typings.activexLibreoffice.com_.sun.star.style.ParagraphAdjust
-import typings.activexLibreoffice.com_.sun.star.style.ParagraphProperties
-import typings.activexLibreoffice.com_.sun.star.style.ParagraphPropertiesAsian
-import typings.activexLibreoffice.com_.sun.star.style.ParagraphPropertiesComplex
 import typings.activexLibreoffice.com_.sun.star.style.TabStop
 import typings.activexLibreoffice.com_.sun.star.table.BorderLine
 import typings.activexLibreoffice.com_.sun.star.table.BorderLine2
 import typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,16 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait TextPortion
-  extends XTextRange
-     with XPropertySet
-     with XPropertyState
-     with XContentEnumerationAccess
-     with CharacterProperties
-     with CharacterPropertiesAsian
-     with CharacterPropertiesComplex
-     with ParagraphProperties
-     with ParagraphPropertiesAsian
-     with ParagraphPropertiesComplex
+  extends TextRange
      with XTolerantMultiPropertySet {
   
   /** contains the bookmark of a text portion of type {@link Bookmark} . */
@@ -329,48 +312,36 @@ object TextPortion {
   }
   
   @scala.inline
-  implicit class TextPortionOps[Self <: TextPortion] (val x: Self) extends AnyVal {
+  implicit class TextPortionMutableBuilder[Self <: TextPortion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: XTextContent): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlCharacter(value: Double): Self = StObject.set(x, "ControlCharacter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentIndexMark(value: XTextContent): Self = StObject.set(x, "DocumentIndexMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmark(value: XTextContent): Self = this.set("Bookmark", value.asInstanceOf[js.Any])
+    def setFootnote(value: XFootnote): Self = StObject.set(x, "Footnote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlCharacter(value: Double): Self = this.set("ControlCharacter", value.asInstanceOf[js.Any])
+    def setInContentMetadata(value: XTextContent): Self = StObject.set(x, "InContentMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentIndexMark(value: XTextContent): Self = this.set("DocumentIndexMark", value.asInstanceOf[js.Any])
+    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "IsCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFootnote(value: XFootnote): Self = this.set("Footnote", value.asInstanceOf[js.Any])
+    def setIsStart(value: Boolean): Self = StObject.set(x, "IsStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInContentMetadata(value: XTextContent): Self = this.set("InContentMetadata", value.asInstanceOf[js.Any])
+    def setReferenceMark(value: XTextContent): Self = StObject.set(x, "ReferenceMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCollapsed(value: Boolean): Self = this.set("IsCollapsed", value.asInstanceOf[js.Any])
+    def setTextField(value: XTextField): Self = StObject.set(x, "TextField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStart(value: Boolean): Self = this.set("IsStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceMark(value: XTextContent): Self = this.set("ReferenceMark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextField(value: XTextField): Self = this.set("TextField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextPortionType(value: String): Self = this.set("TextPortionType", value.asInstanceOf[js.Any])
+    def setTextPortionType(value: String): Self = StObject.set(x, "TextPortionType", value.asInstanceOf[js.Any])
   }
 }

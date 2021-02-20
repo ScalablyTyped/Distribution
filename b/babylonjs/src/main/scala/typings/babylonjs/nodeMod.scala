@@ -16,14 +16,14 @@ import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
   
+  @JSImport("babylonjs/node", "Node")
   @js.native
   class Node protected () extends IBehaviorAware[Node] {
     /**
@@ -446,14 +446,19 @@ object nodeMod extends js.Object {
     def worldMatrixFromCache: Matrix = js.native
   }
   /* static members */
-  @js.native
-  object Node extends js.Object {
+  object Node {
+    
+    @JSImport("babylonjs/node", "Node")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Add a new node constructor
       * @param type defines the type name of the node to construct
       * @param constructorFunc defines the constructor function
       */
+    @JSImport("babylonjs/node", "Node.AddNodeConstructor")
+    @js.native
     def AddNodeConstructor(`type`: String, constructorFunc: NodeConstructor): Unit = js.native
     
     /**
@@ -464,7 +469,11 @@ object nodeMod extends js.Object {
       * @param options defines optional options to transmit to constructors
       * @returns the new constructor or null
       */
+    @JSImport("babylonjs/node", "Node.Construct")
+    @js.native
     def Construct(`type`: String, name: String, scene: Scene): Nullable[js.Function0[this.type]] = js.native
+    @JSImport("babylonjs/node", "Node.Construct")
+    @js.native
     def Construct(`type`: String, name: String, scene: Scene, options: js.Any): Nullable[js.Function0[this.type]] = js.native
     
     /**
@@ -473,12 +482,20 @@ object nodeMod extends js.Object {
       * @param parsedNode defines the serialization object to read data from
       * @param scene defines the hosting scene
       */
+    @JSImport("babylonjs/node", "Node.ParseAnimationRanges")
+    @js.native
     def ParseAnimationRanges(node: Node, parsedNode: js.Any, scene: Scene): Unit = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/node", "Node._AnimationRangeFactory")
+    @js.native
     def _AnimationRangeFactory(name: String, from: Double, to: Double): AnimationRange = js.native
     
-    var _NodeConstructors: js.Any = js.native
+    @JSImport("babylonjs/node", "Node._NodeConstructors")
+    @js.native
+    def _NodeConstructors: js.Any = js.native
+    @scala.inline
+    def _NodeConstructors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_NodeConstructors")(x.asInstanceOf[js.Any])
   }
   
   type NodeConstructor = js.Function3[

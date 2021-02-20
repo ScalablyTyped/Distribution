@@ -2,6 +2,7 @@ package typings.babylonjs.mod
 
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,17 +24,27 @@ class WebXRHTCViveMotionController protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "WebXRHTCViveMotionController")
-@js.native
-object WebXRHTCViveMotionController extends js.Object {
+object WebXRHTCViveMotionController {
+  
+  @JSImport("babylonjs", "WebXRHTCViveMotionController")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The base url used to load the left and right controller models
     */
-  var MODEL_BASE_URL: String = js.native
+  @JSImport("babylonjs", "WebXRHTCViveMotionController.MODEL_BASE_URL")
+  @js.native
+  def MODEL_BASE_URL: String = js.native
+  @scala.inline
+  def MODEL_BASE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_BASE_URL")(x.asInstanceOf[js.Any])
   
   /**
     * File name for the controller model.
     */
-  var MODEL_FILENAME: String = js.native
+  @JSImport("babylonjs", "WebXRHTCViveMotionController.MODEL_FILENAME")
+  @js.native
+  def MODEL_FILENAME: String = js.native
+  @scala.inline
+  def MODEL_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_FILENAME")(x.asInstanceOf[js.Any])
 }

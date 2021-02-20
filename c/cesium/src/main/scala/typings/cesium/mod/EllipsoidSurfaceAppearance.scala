@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.AboveGround
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +19,16 @@ class EllipsoidSurfaceAppearance () extends Appearance {
   
   val vertexFormat: VertexFormat = js.native
 }
-/* static members */
-@JSImport("cesium", "EllipsoidSurfaceAppearance")
-@js.native
-object EllipsoidSurfaceAppearance extends js.Object {
+object EllipsoidSurfaceAppearance {
   
-  var VERTEX_FORMAT: VertexFormat = js.native
+  @JSImport("cesium", "EllipsoidSurfaceAppearance")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "EllipsoidSurfaceAppearance.VERTEX_FORMAT")
+  @js.native
+  def VERTEX_FORMAT: VertexFormat = js.native
+  @scala.inline
+  def VERTEX_FORMAT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERTEX_FORMAT")(x.asInstanceOf[js.Any])
 }

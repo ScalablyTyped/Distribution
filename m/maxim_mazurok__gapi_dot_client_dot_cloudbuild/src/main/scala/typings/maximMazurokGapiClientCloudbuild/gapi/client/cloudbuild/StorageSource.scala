@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageSource extends js.Object {
+trait StorageSource extends StObject {
   
   /** Google Cloud Storage bucket containing the source (see [Bucket Name Requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements)). */
   var bucket: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object StorageSource {
   }
   
   @scala.inline
-  implicit class StorageSourceOps[Self <: StorageSource] (val x: Self) extends AnyVal {
+  implicit class StorageSourceMutableBuilder[Self <: StorageSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("bucket", js.undefined)
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneration(value: String): Self = this.set("generation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGeneration: Self = this.set("generation", js.undefined)
-    
-    @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }
 }

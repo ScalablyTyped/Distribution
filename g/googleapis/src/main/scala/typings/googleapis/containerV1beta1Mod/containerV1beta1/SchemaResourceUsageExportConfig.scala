@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for exporting cluster resource usages.
   */
 @js.native
-trait SchemaResourceUsageExportConfig extends js.Object {
+trait SchemaResourceUsageExportConfig extends StObject {
   
   /**
     * Configuration to use BigQuery as usage export destination.
@@ -30,30 +31,18 @@ object SchemaResourceUsageExportConfig {
   }
   
   @scala.inline
-  implicit class SchemaResourceUsageExportConfigOps[Self <: SchemaResourceUsageExportConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaResourceUsageExportConfigMutableBuilder[Self <: SchemaResourceUsageExportConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigqueryDestination(value: SchemaBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableNetworkEgressMetering(value: Boolean): Self = StObject.set(x, "enableNetworkEgressMetering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigqueryDestination(value: SchemaBigQueryDestination): Self = this.set("bigqueryDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBigqueryDestination: Self = this.set("bigqueryDestination", js.undefined)
-    
-    @scala.inline
-    def setEnableNetworkEgressMetering(value: Boolean): Self = this.set("enableNetworkEgressMetering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableNetworkEgressMetering: Self = this.set("enableNetworkEgressMetering", js.undefined)
+    def setEnableNetworkEgressMeteringUndefined: Self = StObject.set(x, "enableNetworkEgressMetering", js.undefined)
   }
 }

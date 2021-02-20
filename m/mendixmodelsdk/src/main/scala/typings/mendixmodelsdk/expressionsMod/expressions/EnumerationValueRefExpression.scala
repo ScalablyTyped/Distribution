@@ -37,6 +37,7 @@ import typings.mendixmodelsdk.pagesMod.pages.ConditionalSettings
 import typings.mendixmodelsdk.pagesMod.pages.WidgetValidation
 import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,16 +67,20 @@ class EnumerationValueRefExpression protected () extends Expression {
   
   def value_=(newValue: IEnumerationValue): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression")
-@js.native
-object EnumerationValueRefExpression extends js.Object {
+object EnumerationValueRefExpression {
+  
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new EnumerationValueRefExpression instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.create")
+  @js.native
   def create(model: IModel): EnumerationValueRefExpression = js.native
   
   /**
@@ -86,6 +91,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInAppServiceCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInAppServiceCallParameterMappingUnderArgumentModel(container: AppServiceCallParameterMapping): EnumerationValueRefExpression = js.native
   
   /**
@@ -96,6 +104,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.21.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInBasicCodeActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicCodeActionParameterValueUnderArgumentModel(container: BasicCodeActionParameterValue): EnumerationValueRefExpression = js.native
   
   /**
@@ -106,6 +117,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 to 7.20.0
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInBasicJavaActionParameterValueUnderArgumentModel")
+  @js.native
   def createInBasicJavaActionParameterValueUnderArgumentModel(container: BasicJavaActionParameterValue): EnumerationValueRefExpression = js.native
   
   /**
@@ -116,6 +130,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInBinaryExpressionUnderLeft")
+  @js.native
   def createInBinaryExpressionUnderLeft(container: BinaryExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -126,6 +143,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInBinaryExpressionUnderRight")
+  @js.native
   def createInBinaryExpressionUnderRight(container: BinaryExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -136,6 +156,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInBinaryRequestHandlingUnderExpressionModel")
+  @js.native
   def createInBinaryRequestHandlingUnderExpressionModel(container: BinaryRequestHandling): EnumerationValueRefExpression = js.native
   
   /**
@@ -146,6 +169,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInChangeListActionUnderValueModel")
+  @js.native
   def createInChangeListActionUnderValueModel(container: ChangeListAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -156,6 +182,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInChangeVariableActionUnderValueModel")
+  @js.native
   def createInChangeVariableActionUnderValueModel(container: ChangeVariableAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -166,6 +195,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInConditionalSettingsUnderExpressionModel")
+  @js.native
   def createInConditionalSettingsUnderExpressionModel(container: ConditionalSettings): EnumerationValueRefExpression = js.native
   
   /**
@@ -176,6 +208,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.5.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInConsumedODataServiceUnderTimeoutModel")
+  @js.native
   def createInConsumedODataServiceUnderTimeoutModel(container: ConsumedODataService): EnumerationValueRefExpression = js.native
   
   /**
@@ -186,6 +221,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInCreateVariableActionUnderInitialValueModel")
+  @js.native
   def createInCreateVariableActionUnderInitialValueModel(container: CreateVariableAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -196,6 +234,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInCustomRangeUnderLimitExpressionModel")
+  @js.native
   def createInCustomRangeUnderLimitExpressionModel(container: CustomRange): EnumerationValueRefExpression = js.native
   
   /**
@@ -206,6 +247,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInCustomRangeUnderOffsetExpressionModel")
+  @js.native
   def createInCustomRangeUnderOffsetExpressionModel(container: CustomRange): EnumerationValueRefExpression = js.native
   
   /**
@@ -216,6 +260,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInDocumentTemplateParameterMappingUnderArgumentModel")
+  @js.native
   def createInDocumentTemplateParameterMappingUnderArgumentModel(container: DocumentTemplateParameterMapping): EnumerationValueRefExpression = js.native
   
   /**
@@ -226,6 +273,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInEndEventUnderReturnValueModel")
+  @js.native
   def createInEndEventUnderReturnValueModel(container: EndEvent): EnumerationValueRefExpression = js.native
   
   /**
@@ -236,6 +286,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInExpressionSplitConditionUnderExpressionModel")
+  @js.native
   def createInExpressionSplitConditionUnderExpressionModel(container: ExpressionSplitCondition): EnumerationValueRefExpression = js.native
   
   /**
@@ -246,6 +299,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInFormDataPartUnderValueModel")
+  @js.native
   def createInFormDataPartUnderValueModel(container: FormDataPart): EnumerationValueRefExpression = js.native
   
   /**
@@ -256,6 +312,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInFunctionCallExpressionUnderArguments")
+  @js.native
   def createInFunctionCallExpressionUnderArguments(container: FunctionCallExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -266,6 +325,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInGenerateDocumentActionUnderMarginBottomInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginBottomInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -276,6 +338,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInGenerateDocumentActionUnderMarginLeftInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginLeftInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -286,6 +351,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInGenerateDocumentActionUnderMarginRightInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginRightInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -296,6 +364,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInGenerateDocumentActionUnderMarginTopInInchModel")
+  @js.native
   def createInGenerateDocumentActionUnderMarginTopInInchModel(container: GenerateDocumentAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -306,6 +377,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInHttpConfigurationUnderCustomLocationModel")
+  @js.native
   def createInHttpConfigurationUnderCustomLocationModel(container: HttpConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -316,6 +390,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInHttpConfigurationUnderPassword")
+  @js.native
   def createInHttpConfigurationUnderPassword(container: HttpConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -326,6 +403,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInHttpConfigurationUnderUsername")
+  @js.native
   def createInHttpConfigurationUnderUsername(container: HttpConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -336,6 +416,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInHttpHeaderEntryUnderValueModel")
+  @js.native
   def createInHttpHeaderEntryUnderValueModel(container: HttpHeaderEntry): EnumerationValueRefExpression = js.native
   
   /**
@@ -346,6 +429,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInIfExpressionUnderCondition")
+  @js.native
   def createInIfExpressionUnderCondition(container: IfExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -356,6 +442,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInIfExpressionUnderIfFalse")
+  @js.native
   def createInIfExpressionUnderIfFalse(container: IfExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -366,6 +455,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInIfExpressionUnderIfTrue")
+  @js.native
   def createInIfExpressionUnderIfTrue(container: IfExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -376,6 +468,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInInspectAttributeUnderExpressionModel")
+  @js.native
   def createInInspectAttributeUnderExpressionModel(container: InspectAttribute): EnumerationValueRefExpression = js.native
   
   /**
@@ -386,6 +481,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInLogMessageActionUnderNodeModel")
+  @js.native
   def createInLogMessageActionUnderNodeModel(container: LogMessageAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -396,6 +494,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInMemberChangeUnderValueModel")
+  @js.native
   def createInMemberChangeUnderValueModel(container: MemberChange): EnumerationValueRefExpression = js.native
   
   /**
@@ -406,6 +507,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInMicroflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInMicroflowCallParameterMappingUnderArgumentModel(container: MicroflowCallParameterMapping): EnumerationValueRefExpression = js.native
   
   /**
@@ -416,6 +520,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.0.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInNanoflowCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInNanoflowCallParameterMappingUnderArgumentModel(container: NanoflowCallParameterMapping): EnumerationValueRefExpression = js.native
   
   /**
@@ -426,6 +533,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInParenthesisExpressionUnderExpression")
+  @js.native
   def createInParenthesisExpressionUnderExpression(container: ParenthesisExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -436,6 +546,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInProxyConfigurationUnderHostExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderHostExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -446,6 +559,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInProxyConfigurationUnderPasswordExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPasswordExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -456,6 +572,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInProxyConfigurationUnderPortExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderPortExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -466,6 +585,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInProxyConfigurationUnderUseConfigurationExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUseConfigurationExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -476,6 +598,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInProxyConfigurationUnderUsernameExpressionModel")
+  @js.native
   def createInProxyConfigurationUnderUsernameExpressionModel(container: ProxyConfiguration): EnumerationValueRefExpression = js.native
   
   /**
@@ -486,6 +611,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInRestCallActionUnderTimeOutModel")
+  @js.native
   def createInRestCallActionUnderTimeOutModel(container: RestCallAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -496,6 +624,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInRuleCallParameterMappingUnderArgumentModel")
+  @js.native
   def createInRuleCallParameterMappingUnderArgumentModel(container: RuleCallParameterMapping): EnumerationValueRefExpression = js.native
   
   /**
@@ -506,6 +637,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInTemplateArgumentUnderExpressionModel")
+  @js.native
   def createInTemplateArgumentUnderExpressionModel(container: TemplateArgument): EnumerationValueRefExpression = js.native
   
   /**
@@ -516,6 +650,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInUnaryExpressionUnderExpression")
+  @js.native
   def createInUnaryExpressionUnderExpression(container: UnaryExpression): EnumerationValueRefExpression = js.native
   
   /**
@@ -526,6 +663,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInWebServiceCallActionUnderTimeOutModel")
+  @js.native
   def createInWebServiceCallActionUnderTimeOutModel(container: WebServiceCallAction): EnumerationValueRefExpression = js.native
   
   /**
@@ -536,6 +676,9 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInWebServiceOperationParameterMappingUnderArgumentModel")
+  @js.native
   def createInWebServiceOperationParameterMappingUnderArgumentModel(container: WebServiceOperationParameterMapping): EnumerationValueRefExpression = js.native
   
   /**
@@ -546,9 +689,22 @@ object EnumerationValueRefExpression extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.createInWidgetValidationUnderExpressionModel")
+  @js.native
   def createInWidgetValidationUnderExpressionModel(container: WidgetValidation): EnumerationValueRefExpression = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.EnumerationValueRefExpression.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

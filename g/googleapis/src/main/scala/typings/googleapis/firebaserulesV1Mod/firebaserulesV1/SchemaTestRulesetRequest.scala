@@ -1,5 +1,6 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for FirebaseRulesService.TestRuleset.
   */
 @js.native
-trait SchemaTestRulesetRequest extends js.Object {
+trait SchemaTestRulesetRequest extends StObject {
   
   /**
     * Optional `Source` to be checked for correctness.  This field must not be
@@ -30,30 +31,18 @@ object SchemaTestRulesetRequest {
   }
   
   @scala.inline
-  implicit class SchemaTestRulesetRequestOps[Self <: SchemaTestRulesetRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaTestRulesetRequestMutableBuilder[Self <: SchemaTestRulesetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestSuite(value: SchemaTestSuite): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setTestSuite(value: SchemaTestSuite): Self = this.set("testSuite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSuite: Self = this.set("testSuite", js.undefined)
+    def setTestSuiteUndefined: Self = StObject.set(x, "testSuite", js.undefined)
   }
 }

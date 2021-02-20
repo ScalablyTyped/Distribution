@@ -1,11 +1,12 @@
 package typings.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Keyboard extends js.Object {
+trait Keyboard extends StObject {
   
   var automaticScrollToTopOnHiding: Boolean = js.native
   
@@ -44,45 +45,33 @@ object Keyboard {
   }
   
   @scala.inline
-  implicit class KeyboardOps[Self <: Keyboard] (val x: Self) extends AnyVal {
+  implicit class KeyboardMutableBuilder[Self <: Keyboard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticScrollToTopOnHiding(value: Boolean): Self = StObject.set(x, "automaticScrollToTopOnHiding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableScrollingInShrinkView(value: Boolean => Unit): Self = StObject.set(x, "disableScrollingInShrinkView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideFormAccessoryBar(value: Boolean => Unit): Self = StObject.set(x, "hideFormAccessoryBar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutomaticScrollToTopOnHiding(value: Boolean): Self = this.set("automaticScrollToTopOnHiding", value.asInstanceOf[js.Any])
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableScrollingInShrinkView(value: Boolean => Unit): Self = this.set("disableScrollingInShrinkView", js.Any.fromFunction1(value))
+    def setOnhide(value: js.Function): Self = StObject.set(x, "onhide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideFormAccessoryBar(value: Boolean => Unit): Self = this.set("hideFormAccessoryBar", js.Any.fromFunction1(value))
+    def setOnhiding(value: js.Function): Self = StObject.set(x, "onhiding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    def setOnshow(value: js.Function): Self = StObject.set(x, "onshow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnhide(value: js.Function): Self = this.set("onhide", value.asInstanceOf[js.Any])
+    def setOnshowing(value: js.Function): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnhiding(value: js.Function): Self = this.set("onhiding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnshow(value: js.Function): Self = this.set("onshow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnshowing(value: js.Function): Self = this.set("onshowing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShrinkView(value: Boolean => Unit): Self = this.set("shrinkView", js.Any.fromFunction1(value))
+    def setShrinkView(value: Boolean => Unit): Self = StObject.set(x, "shrinkView", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GF256Poly extends js.Object {
+trait GF256Poly extends StObject {
   
   val Coefficients: js.Array[Double] = js.native
   
@@ -53,54 +54,42 @@ object GF256Poly {
   }
   
   @scala.inline
-  implicit class GF256PolyOps[Self <: GF256Poly] (val x: Self) extends AnyVal {
+  implicit class GF256PolyMutableBuilder[Self <: GF256Poly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOrSubtract(value: GF256Poly => GF256Poly): Self = StObject.set(x, "addOrSubtract", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoefficients(value: js.Array[Double]): Self = StObject.set(x, "Coefficients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoefficientsVarargs(value: Double*): Self = StObject.set(x, "Coefficients", js.Array(value :_*))
     
     @scala.inline
-    def setCoefficientsVarargs(value: Double*): Self = this.set("Coefficients", js.Array(value :_*))
+    def setDegree(value: Double): Self = StObject.set(x, "Degree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoefficients(value: js.Array[Double]): Self = this.set("Coefficients", value.asInstanceOf[js.Any])
+    def setDivide(value: GF256Poly => js.Tuple2[GF256Poly, GF256Poly]): Self = StObject.set(x, "divide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDegree(value: Double): Self = this.set("Degree", value.asInstanceOf[js.Any])
+    def setEvaluateAt(value: Double => Double): Self = StObject.set(x, "evaluateAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setZero(value: Boolean): Self = this.set("Zero", value.asInstanceOf[js.Any])
+    def setField(value: GF256): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOrSubtract(value: GF256Poly => GF256Poly): Self = this.set("addOrSubtract", js.Any.fromFunction1(value))
+    def setGetCoefficient(value: Double => Double): Self = StObject.set(x, "getCoefficient", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDivide(value: GF256Poly => js.Tuple2[GF256Poly, GF256Poly]): Self = this.set("divide", js.Any.fromFunction1(value))
+    def setMultiply1(value: GF256Poly => GF256Poly): Self = StObject.set(x, "multiply1", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvaluateAt(value: Double => Double): Self = this.set("evaluateAt", js.Any.fromFunction1(value))
+    def setMultiply2(value: Double => GF256Poly): Self = StObject.set(x, "multiply2", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setField(value: GF256): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setMultiplyByMonomial(value: (Double, Double) => GF256Poly): Self = StObject.set(x, "multiplyByMonomial", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCoefficient(value: Double => Double): Self = this.set("getCoefficient", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMultiply1(value: GF256Poly => GF256Poly): Self = this.set("multiply1", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMultiply2(value: Double => GF256Poly): Self = this.set("multiply2", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMultiplyByMonomial(value: (Double, Double) => GF256Poly): Self = this.set("multiplyByMonomial", js.Any.fromFunction2(value))
+    def setZero(value: Boolean): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
   }
 }

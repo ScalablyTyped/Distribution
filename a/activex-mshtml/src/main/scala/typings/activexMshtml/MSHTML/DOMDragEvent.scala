@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMDragEvent extends js.Object {
+trait DOMDragEvent extends StObject {
   
   @JSName("MSHTML.DOMDragEvent_typekey")
   var MSHTMLDotDOMDragEvent_typekey: DOMDragEvent = js.native

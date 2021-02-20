@@ -1,5 +1,6 @@
 package typings.openfin.mod.fin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Clipboard API allows reading and writting to the clipboard in multiple formats.
   */
 @js.native
-trait OpenFinClipboard extends js.Object {
+trait OpenFinClipboard extends StObject {
   
   /**
     * Reads available formats for the clipboard type

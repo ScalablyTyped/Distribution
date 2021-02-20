@@ -1,11 +1,12 @@
 package typings.pgwmodal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PgwModalOption extends js.Object {
+trait PgwModalOption extends StObject {
   
   var ajaxOptions: js.UndefOr[js.Any] = js.native
   
@@ -52,126 +53,114 @@ object PgwModalOption {
   }
   
   @scala.inline
-  implicit class PgwModalOptionOps[Self <: PgwModalOption] (val x: Self) extends AnyVal {
+  implicit class PgwModalOptionMutableBuilder[Self <: PgwModalOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAjaxOptions(value: js.Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAjaxOptionsUndefined: Self = StObject.set(x, "ajaxOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngular(value: Boolean): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAjaxOptions(value: js.Any): Self = this.set("ajaxOptions", value.asInstanceOf[js.Any])
+    def setAngularUndefined: Self = StObject.set(x, "angular", js.undefined)
     
     @scala.inline
-    def deleteAjaxOptions: Self = this.set("ajaxOptions", js.undefined)
+    def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngular(value: Boolean): Self = this.set("angular", value.asInstanceOf[js.Any])
+    def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
     
     @scala.inline
-    def deleteAngular: Self = this.set("angular", js.undefined)
+    def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackdropClassName(value: String): Self = this.set("backdropClassName", value.asInstanceOf[js.Any])
+    def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
     
     @scala.inline
-    def deleteBackdropClassName: Self = this.set("backdropClassName", js.undefined)
+    def setCloseContent(value: String): Self = StObject.set(x, "closeContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    def setCloseContentUndefined: Self = StObject.set(x, "closeContent", js.undefined)
     
     @scala.inline
-    def deleteClosable: Self = this.set("closable", js.undefined)
+    def setCloseOnBackgroundClick(value: Boolean): Self = StObject.set(x, "closeOnBackgroundClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseContent(value: String): Self = this.set("closeContent", value.asInstanceOf[js.Any])
+    def setCloseOnBackgroundClickUndefined: Self = StObject.set(x, "closeOnBackgroundClick", js.undefined)
     
     @scala.inline
-    def deleteCloseContent: Self = this.set("closeContent", js.undefined)
+    def setCloseOnEscape(value: Boolean): Self = StObject.set(x, "closeOnEscape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnBackgroundClick(value: Boolean): Self = this.set("closeOnBackgroundClick", value.asInstanceOf[js.Any])
+    def setCloseOnEscapeUndefined: Self = StObject.set(x, "closeOnEscape", js.undefined)
     
     @scala.inline
-    def deleteCloseOnBackgroundClick: Self = this.set("closeOnBackgroundClick", js.undefined)
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnEscape(value: Boolean): Self = this.set("closeOnEscape", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteCloseOnEscape: Self = this.set("closeOnEscape", js.undefined)
+    def setErrorContent(value: String): Self = StObject.set(x, "errorContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setErrorContentUndefined: Self = StObject.set(x, "errorContent", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setLoadingContent(value: String): Self = StObject.set(x, "loadingContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorContent(value: String): Self = this.set("errorContent", value.asInstanceOf[js.Any])
+    def setLoadingContentUndefined: Self = StObject.set(x, "loadingContent", js.undefined)
     
     @scala.inline
-    def deleteErrorContent: Self = this.set("errorContent", js.undefined)
+    def setMainClassName(value: String): Self = StObject.set(x, "mainClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingContent(value: String): Self = this.set("loadingContent", value.asInstanceOf[js.Any])
+    def setMainClassNameUndefined: Self = StObject.set(x, "mainClassName", js.undefined)
     
     @scala.inline
-    def deleteLoadingContent: Self = this.set("loadingContent", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainClassName(value: String): Self = this.set("mainClassName", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMainClassName: Self = this.set("mainClassName", js.undefined)
+    def setModalData(value: js.Any): Self = StObject.set(x, "modalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setModalDataUndefined: Self = StObject.set(x, "modalData", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setPushContent(value: String): Self = StObject.set(x, "pushContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalData(value: js.Any): Self = this.set("modalData", value.asInstanceOf[js.Any])
+    def setPushContentUndefined: Self = StObject.set(x, "pushContent", js.undefined)
     
     @scala.inline
-    def deleteModalData: Self = this.set("modalData", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushContent(value: String): Self = this.set("pushContent", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deletePushContent: Self = this.set("pushContent", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTitleBar(value: Boolean): Self = StObject.set(x, "titleBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTitleBarUndefined: Self = StObject.set(x, "titleBar", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleBar(value: Boolean): Self = this.set("titleBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleBar: Self = this.set("titleBar", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

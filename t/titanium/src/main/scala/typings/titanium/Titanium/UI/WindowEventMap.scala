@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,93 +94,81 @@ object WindowEventMap {
   }
   
   @scala.inline
-  implicit class WindowEventMapOps[Self <: WindowEventMap] (val x: Self) extends AnyVal {
+  implicit class WindowEventMapMutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidback(value: WindowAndroidbackEvent): Self = StObject.set(x, "androidback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidcamera(value: WindowAndroidcameraEvent): Self = StObject.set(x, "androidcamera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidfocus(value: WindowAndroidfocusEvent): Self = StObject.set(x, "androidfocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidback(value: WindowAndroidbackEvent): Self = this.set("androidback", value.asInstanceOf[js.Any])
+    def setAndroidsearch(value: WindowAndroidsearchEvent): Self = StObject.set(x, "androidsearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidcamera(value: WindowAndroidcameraEvent): Self = this.set("androidcamera", value.asInstanceOf[js.Any])
+    def setAndroidvoldown(value: WindowAndroidvoldownEvent): Self = StObject.set(x, "androidvoldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidfocus(value: WindowAndroidfocusEvent): Self = this.set("androidfocus", value.asInstanceOf[js.Any])
+    def setAndroidvolup(value: WindowAndroidvolupEvent): Self = StObject.set(x, "androidvolup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidsearch(value: WindowAndroidsearchEvent): Self = this.set("androidsearch", value.asInstanceOf[js.Any])
+    def setBlur(value: WindowBlurEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidvoldown(value: WindowAndroidvoldownEvent): Self = this.set("androidvoldown", value.asInstanceOf[js.Any])
+    def setClick(value: WindowClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidvolup(value: WindowAndroidvolupEvent): Self = this.set("androidvolup", value.asInstanceOf[js.Any])
+    def setClose(value: WindowCloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: WindowBlurEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setDblclick(value: WindowDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: WindowClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: WindowDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: WindowCloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setFocus(value: WindowFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: WindowDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: WindowKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: WindowDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: WindowLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: WindowFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: WindowLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: WindowKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setOpen(value: WindowOpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: WindowLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPinch(value: WindowPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: WindowLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPostlayout(value: WindowPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: WindowOpenEvent): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setSingletap(value: WindowSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: WindowPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSwipe(value: WindowSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: WindowPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: WindowTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: WindowSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: WindowTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: WindowSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: WindowTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: WindowTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: WindowTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: WindowTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: WindowTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: WindowTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: WindowTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: WindowTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

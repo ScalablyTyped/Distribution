@@ -1,21 +1,12 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CircleProps
-  extends TransformProps
-     with FillProps
-     with StrokeProps
-     with ClipProps
-     with VectorEffectProps
-     with ResponderProps
-     with TouchableProps
-     with DefinitionProps
-     with CommonMarkerProps
-     with CommonMaskProps {
+trait CircleProps extends CommonPathProps {
   
   var cx: js.UndefOr[NumberProp] = js.native
   
@@ -34,42 +25,30 @@ object CircleProps {
   }
   
   @scala.inline
-  implicit class CirclePropsOps[Self <: CircleProps] (val x: Self) extends AnyVal {
+  implicit class CirclePropsMutableBuilder[Self <: CircleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCx(value: NumberProp): Self = this.set("cx", value.asInstanceOf[js.Any])
+    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
     @scala.inline
-    def deleteCx: Self = this.set("cx", js.undefined)
+    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCy(value: NumberProp): Self = this.set("cy", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteCy: Self = this.set("cy", js.undefined)
+    def setR(value: NumberProp): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: NumberProp): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setR(value: NumberProp): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteR: Self = this.set("r", js.undefined)
+    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

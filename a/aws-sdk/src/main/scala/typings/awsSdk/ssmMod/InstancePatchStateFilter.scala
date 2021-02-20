@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancePatchStateFilter extends js.Object {
+trait InstancePatchStateFilter extends StObject {
   
   /**
     * The key for the filter. Supported values are FailedCount, InstalledCount, InstalledOtherCount, MissingCount and NotApplicableCount.
@@ -35,30 +36,18 @@ object InstancePatchStateFilter {
   }
   
   @scala.inline
-  implicit class InstancePatchStateFilterOps[Self <: InstancePatchStateFilter] (val x: Self) extends AnyVal {
+  implicit class InstancePatchStateFilterMutableBuilder[Self <: InstancePatchStateFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: InstancePatchStateFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setType(value: InstancePatchStateOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: InstancePatchStateFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: InstancePatchStateFilterKey): Self = this.set("Key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: InstancePatchStateOperatorType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: InstancePatchStateFilterValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: InstancePatchStateFilterValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: InstancePatchStateFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

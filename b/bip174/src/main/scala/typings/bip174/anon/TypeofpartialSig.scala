@@ -3,12 +3,13 @@ package typings.bip174.anon
 import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.PartialSig
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofpartialSig extends js.Object {
+trait TypeofpartialSig extends StObject {
   
   def canAddToArray(array: js.Array[PartialSig], item: PartialSig, dupeSet: Set[String]): Boolean = js.native
   
@@ -35,33 +36,21 @@ object TypeofpartialSig {
   }
   
   @scala.inline
-  implicit class TypeofpartialSigOps[Self <: TypeofpartialSig] (val x: Self) extends AnyVal {
+  implicit class TypeofpartialSigMutableBuilder[Self <: TypeofpartialSig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAddToArray(value: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecode(value: KeyValue => PartialSig): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanAddToArray(value: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean): Self = this.set("canAddToArray", js.Any.fromFunction3(value))
+    def setEncode(value: PartialSig => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean): Self = this.set("check", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDecode(value: KeyValue => PartialSig): Self = this.set("decode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEncode(value: PartialSig => KeyValue): Self = this.set("encode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExpected(value: /* "{ pubkey: Buffer; signature: Buffer; }" */ String): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setExpected(value: /* "{ pubkey: Buffer; signature: Buffer; }" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

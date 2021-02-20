@@ -1,6 +1,7 @@
 package typings.pixiJs.PIXI
 
 import typings.pixiJs.PIXI.Loader.loaderMiddleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *           arguments for this are `(resource, next)`
   */
 @js.native
-trait ILoaderPlugin extends js.Object {
+trait ILoaderPlugin extends StObject {
   
   var add: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   
@@ -34,40 +35,28 @@ object ILoaderPlugin {
   }
   
   @scala.inline
-  implicit class ILoaderPluginOps[Self <: ILoaderPlugin] (val x: Self) extends AnyVal {
+  implicit class ILoaderPluginMutableBuilder[Self <: ILoaderPlugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: /* repeated */ js.Any => _): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdd(value: /* repeated */ js.Any => _): Self = this.set("add", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
     def setPre(
       value: (/* resource */ LoaderResource, /* next */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit
-    ): Self = this.set("pre", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deletePre: Self = this.set("pre", js.undefined)
+    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
     @scala.inline
     def setUse(
       value: (/* resource */ LoaderResource, /* next */ js.Function1[/* repeated */ js.Any, js.Any]) => Unit
-    ): Self = this.set("use", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "use", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
   }
 }

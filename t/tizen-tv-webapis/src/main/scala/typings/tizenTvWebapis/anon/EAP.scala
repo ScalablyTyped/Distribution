@@ -6,12 +6,13 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`4`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EAP extends js.Object {
+trait EAP extends StObject {
   
   /**
     * EAP security mode
@@ -52,36 +53,24 @@ object EAP {
   }
   
   @scala.inline
-  implicit class EAPOps[Self <: EAP] (val x: Self) extends AnyVal {
+  implicit class EAPMutableBuilder[Self <: EAP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEAP(value: `4`): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNONE(value: `5`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUNKNOWN(value: `6`): Self = StObject.set(x, "UNKNOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEAP(value: `4`): Self = this.set("EAP", value.asInstanceOf[js.Any])
+    def setWEP(value: `1`): Self = StObject.set(x, "WEP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNONE(value: `5`): Self = this.set("NONE", value.asInstanceOf[js.Any])
+    def setWPA2_PSK(value: `3`): Self = StObject.set(x, "WPA2_PSK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNKNOWN(value: `6`): Self = this.set("UNKNOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWEP(value: `1`): Self = this.set("WEP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWPA2_PSK(value: `3`): Self = this.set("WPA2_PSK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWPA_PSK(value: `2`): Self = this.set("WPA_PSK", value.asInstanceOf[js.Any])
+    def setWPA_PSK(value: `2`): Self = StObject.set(x, "WPA_PSK", value.asInstanceOf[js.Any])
   }
 }

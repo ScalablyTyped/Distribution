@@ -1,5 +1,6 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,63 +78,51 @@ object IELangTestDefaults {
   }
   
   @scala.inline
-  implicit class IELangTestDefaultsOps[Self <: IELangTestDefaults] (val x: Self) extends AnyVal {
+  implicit class IELangTestDefaultsMutableBuilder[Self <: IELangTestDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormHtml(value: String): Self = StObject.set(x, "formHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRdoOrderedLabel(value: String): Self = StObject.set(x, "rdoOrderedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRdoOrderedTooltip(value: String): Self = StObject.set(x, "rdoOrderedTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormHtml(value: String): Self = this.set("formHtml", value.asInstanceOf[js.Any])
+    def setRdoRandomlyLabel(value: String): Self = StObject.set(x, "rdoRandomlyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoOrderedLabel(value: String): Self = this.set("rdoOrderedLabel", value.asInstanceOf[js.Any])
+    def setRdoRandomlyTooltip(value: String): Self = StObject.set(x, "rdoRandomlyTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoOrderedTooltip(value: String): Self = this.set("rdoOrderedTooltip", value.asInstanceOf[js.Any])
+    def setRdoSelectedLabel(value: String): Self = StObject.set(x, "rdoSelectedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoRandomlyLabel(value: String): Self = this.set("rdoRandomlyLabel", value.asInstanceOf[js.Any])
+    def setRdoSelectedTooltip(value: String): Self = StObject.set(x, "rdoSelectedTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoRandomlyTooltip(value: String): Self = this.set("rdoRandomlyTooltip", value.asInstanceOf[js.Any])
+    def setRdoTypedLabel(value: String): Self = StObject.set(x, "rdoTypedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoSelectedLabel(value: String): Self = this.set("rdoSelectedLabel", value.asInstanceOf[js.Any])
+    def setRdoTypedTooltip(value: String): Self = StObject.set(x, "rdoTypedTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoSelectedTooltip(value: String): Self = this.set("rdoSelectedTooltip", value.asInstanceOf[js.Any])
+    def setRdoVoicedLabel(value: String): Self = StObject.set(x, "rdoVoicedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoTypedLabel(value: String): Self = this.set("rdoTypedLabel", value.asInstanceOf[js.Any])
+    def setRdoVoicedTooltip(value: String): Self = StObject.set(x, "rdoVoicedTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoTypedTooltip(value: String): Self = this.set("rdoTypedTooltip", value.asInstanceOf[js.Any])
+    def setRdoWrittedLabel(value: String): Self = StObject.set(x, "rdoWrittedLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoVoicedLabel(value: String): Self = this.set("rdoVoicedLabel", value.asInstanceOf[js.Any])
+    def setRdoWrittedTooltip(value: String): Self = StObject.set(x, "rdoWrittedTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoVoicedTooltip(value: String): Self = this.set("rdoVoicedTooltip", value.asInstanceOf[js.Any])
+    def setStartButtonLabel(value: String): Self = StObject.set(x, "startButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdoWrittedLabel(value: String): Self = this.set("rdoWrittedLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRdoWrittedTooltip(value: String): Self = this.set("rdoWrittedTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartButtonLabel(value: String): Self = this.set("startButtonLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopButtonLabel(value: String): Self = this.set("stopButtonLabel", value.asInstanceOf[js.Any])
+    def setStopButtonLabel(value: String): Self = StObject.set(x, "stopButtonLabel", value.asInstanceOf[js.Any])
   }
 }

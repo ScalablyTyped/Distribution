@@ -3,12 +3,13 @@ package typings.appframework
 import typings.appframework.anon.Bottom
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait appFrameworkCollection extends js.Object {
+trait appFrameworkCollection extends StObject {
   
   /**
     * Adds a css class to elements.

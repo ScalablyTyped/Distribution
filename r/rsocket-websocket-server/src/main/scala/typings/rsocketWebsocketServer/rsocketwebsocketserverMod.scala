@@ -4,14 +4,14 @@ import typings.rsocketCore.rsocketencodingMod.Encoders
 import typings.rsocketCore.rsocketserverMod.TransportServer
 import typings.ws.mod.Server
 import typings.ws.mod.ServerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-websocket-server/RSocketWebSocketServer", JSImport.Namespace)
-@js.native
-object rsocketwebsocketserverMod extends js.Object {
+object rsocketwebsocketserverMod {
   
+  @JSImport("rsocket-websocket-server/RSocketWebSocketServer", "RSocketWebSocketServer")
   @js.native
   class RSocketWebSocketServer protected () extends TransportServer {
     def this(options: ServerOptions) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTypeRegistrationsInput extends js.Object {
+trait ListTypeRegistrationsInput extends StObject {
   
   /**
     * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
@@ -46,54 +47,42 @@ object ListTypeRegistrationsInput {
   }
   
   @scala.inline
-  implicit class ListTypeRegistrationsInputOps[Self <: ListTypeRegistrationsInput] (val x: Self) extends AnyVal {
+  implicit class ListTypeRegistrationsInputMutableBuilder[Self <: ListTypeRegistrationsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setRegistrationStatusFilter(value: RegistrationStatus): Self = StObject.set(x, "RegistrationStatusFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRegistrationStatusFilterUndefined: Self = StObject.set(x, "RegistrationStatusFilter", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrationStatusFilter(value: RegistrationStatus): Self = this.set("RegistrationStatusFilter", value.asInstanceOf[js.Any])
+    def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistrationStatusFilter: Self = this.set("RegistrationStatusFilter", js.undefined)
+    def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
     
     @scala.inline
-    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
     @scala.inline
-    def setTypeArn(value: TypeArn): Self = this.set("TypeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeArn: Self = this.set("TypeArn", js.undefined)
-    
-    @scala.inline
-    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsCreateDiscussionLegacyEndpoint extends js.Object {
+trait TeamsCreateDiscussionLegacyEndpoint extends StObject {
   
   /**
     * The discussion post's body text.
@@ -33,33 +34,21 @@ object TeamsCreateDiscussionLegacyEndpoint {
   }
   
   @scala.inline
-  implicit class TeamsCreateDiscussionLegacyEndpointOps[Self <: TeamsCreateDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
+  implicit class TeamsCreateDiscussionLegacyEndpointMutableBuilder[Self <: TeamsCreateDiscussionLegacyEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeam_id(value: Double): Self = this.set("team_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivate: Self = this.set("private", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

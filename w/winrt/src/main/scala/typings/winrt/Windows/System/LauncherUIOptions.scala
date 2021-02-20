@@ -3,6 +3,7 @@ package typings.winrt.Windows.System
 import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.UI.Popups.Placement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

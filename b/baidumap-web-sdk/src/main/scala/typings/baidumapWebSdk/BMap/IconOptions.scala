@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IconOptions extends js.Object {
+trait IconOptions extends StObject {
   
   var anchor: js.UndefOr[Size] = js.native
   
@@ -24,42 +25,30 @@ object IconOptions {
   }
   
   @scala.inline
-  implicit class IconOptionsOps[Self <: IconOptions] (val x: Self) extends AnyVal {
+  implicit class IconOptionsMutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageOffset(value: Size): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Size): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setImageOffsetUndefined: Self = StObject.set(x, "imageOffset", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setInfoWindowAnchor(value: Size): Self = StObject.set(x, "infoWindowAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageOffset(value: Size): Self = this.set("imageOffset", value.asInstanceOf[js.Any])
+    def setInfoWindowAnchorUndefined: Self = StObject.set(x, "infoWindowAnchor", js.undefined)
     
     @scala.inline
-    def deleteImageOffset: Self = this.set("imageOffset", js.undefined)
+    def setPrintImageUrl(value: String): Self = StObject.set(x, "printImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoWindowAnchor(value: Size): Self = this.set("infoWindowAnchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfoWindowAnchor: Self = this.set("infoWindowAnchor", js.undefined)
-    
-    @scala.inline
-    def setPrintImageUrl(value: String): Self = this.set("printImageUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrintImageUrl: Self = this.set("printImageUrl", js.undefined)
+    def setPrintImageUrlUndefined: Self = StObject.set(x, "printImageUrl", js.undefined)
   }
 }

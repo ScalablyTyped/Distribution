@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Click Through URL Suffix settings.
   */
 @js.native
-trait SchemaClickThroughUrlSuffixProperties extends js.Object {
+trait SchemaClickThroughUrlSuffixProperties extends StObject {
   
   /**
     * Click-through URL suffix to apply to all ads in this entity&#39;s scope.
@@ -31,30 +32,18 @@ object SchemaClickThroughUrlSuffixProperties {
   }
   
   @scala.inline
-  implicit class SchemaClickThroughUrlSuffixPropertiesOps[Self <: SchemaClickThroughUrlSuffixProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaClickThroughUrlSuffixPropertiesMutableBuilder[Self <: SchemaClickThroughUrlSuffixProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickThroughUrlSuffix(value: String): Self = StObject.set(x, "clickThroughUrlSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickThroughUrlSuffixUndefined: Self = StObject.set(x, "clickThroughUrlSuffix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrideInheritedSuffix(value: Boolean): Self = StObject.set(x, "overrideInheritedSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrlSuffix(value: String): Self = this.set("clickThroughUrlSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClickThroughUrlSuffix: Self = this.set("clickThroughUrlSuffix", js.undefined)
-    
-    @scala.inline
-    def setOverrideInheritedSuffix(value: Boolean): Self = this.set("overrideInheritedSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrideInheritedSuffix: Self = this.set("overrideInheritedSuffix", js.undefined)
+    def setOverrideInheritedSuffixUndefined: Self = StObject.set(x, "overrideInheritedSuffix", js.undefined)
   }
 }

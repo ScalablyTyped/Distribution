@@ -2,14 +2,14 @@ package typings.rsocketWebsocketClient
 
 import typings.rsocketCore.rsocketencodingMod.Encoders
 import typings.rsocketWebsocketClient.rsocketwebsocketclientMod.ClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-websocket-client", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("rsocket-websocket-client", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.rsocketWebsocketClient.rsocketwebsocketclientMod.default {

@@ -5,12 +5,13 @@ import typings.nodeRedEditorClient.anon.Element
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editor extends js.Object {
+trait Editor extends StObject {
   
   def buildEditForm(container: JQuery[HTMLElement], formId: String, `type`: String, ns: String, node: js.Any): JQuery[HTMLElement] = js.native
   

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudTalentV4BatchOperationMetadata extends js.Object {
+trait GoogleCloudTalentV4BatchOperationMetadata extends StObject {
   
   /** The time when the batch operation is created. */
   var createTime: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object GoogleCloudTalentV4BatchOperationMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudTalentV4BatchOperationMetadataOps[Self <: GoogleCloudTalentV4BatchOperationMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudTalentV4BatchOperationMetadataMutableBuilder[Self <: GoogleCloudTalentV4BatchOperationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setFailureCount(value: Double): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCount(value: Double): Self = this.set("failureCount", value.asInstanceOf[js.Any])
+    def setStateDescription(value: String): Self = StObject.set(x, "stateDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureCount: Self = this.set("failureCount", js.undefined)
+    def setStateDescriptionUndefined: Self = StObject.set(x, "stateDescription", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateDescription(value: String): Self = this.set("stateDescription", value.asInstanceOf[js.Any])
+    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
     
     @scala.inline
-    def deleteStateDescription: Self = this.set("stateDescription", js.undefined)
+    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessCount(value: Double): Self = this.set("successCount", value.asInstanceOf[js.Any])
+    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
     
     @scala.inline
-    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalCount(value: Double): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("totalCount", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -15,16 +15,14 @@ import typings.ngTable.publicInterfacesMod.IColumnDef
 import typings.ngTable.publicInterfacesMod.IDynamicTableColDef
 import typings.ngTable.publicInterfacesMod.IFilterConfigValues
 import typings.ngTable.publicInterfacesMod.ITableInputAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/browser", JSImport.Namespace)
-@js.native
-object browserMod extends js.Object {
+object browserMod {
   
-  val ngTableBrowserModule: IModule = js.native
-  
+  @JSImport("ng-table/src/browser", "NgTableController")
   @js.native
   class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected ()
     extends typings.ngTable.ngTableControllerMod.NgTableController[TParams, TCol] {
@@ -41,13 +39,20 @@ object browserMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object NgTableController extends js.Object {
+  object NgTableController {
     
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
+    @JSImport("ng-table/src/browser", "NgTableController")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ng-table/src/browser", "NgTableController.$inject")
+    @js.native
+    def $inject: js.Array[String] = js.native
+    @scala.inline
+    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("ng-table/src/browser", "NgTableFilterConfig")
   @js.native
   class NgTableFilterConfig protected ()
     extends typings.ngTable.ngTableFilterConfigMod.NgTableFilterConfig {
@@ -57,23 +62,40 @@ object browserMod extends js.Object {
     config: IFilterConfigValues) = this()
   }
   /* static members */
-  @js.native
-  object NgTableFilterConfig extends js.Object {
+  object NgTableFilterConfig {
     
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
+    @JSImport("ng-table/src/browser", "NgTableFilterConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ng-table/src/browser", "NgTableFilterConfig.$inject")
+    @js.native
+    def $inject: js.Array[String] = js.native
+    @scala.inline
+    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider")
   @js.native
   class NgTableFilterConfigProvider protected ()
     extends typings.ngTable.ngTableFilterConfigMod.NgTableFilterConfigProvider {
     def this($injector: IInjectorService) = this()
   }
   /* static members */
-  @js.native
-  object NgTableFilterConfigProvider extends js.Object {
+  object NgTableFilterConfigProvider {
     
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
+    @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider.$inject")
+    @js.native
+    def $inject: js.Array[String] = js.native
+    @scala.inline
+    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("ng-table/src/browser", "ngTableBrowserModule")
+  @js.native
+  val ngTableBrowserModule: IModule = js.native
 }

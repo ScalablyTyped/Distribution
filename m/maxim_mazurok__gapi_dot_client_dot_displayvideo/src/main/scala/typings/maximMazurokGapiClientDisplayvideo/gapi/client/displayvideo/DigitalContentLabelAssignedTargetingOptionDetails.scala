@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DigitalContentLabelAssignedTargetingOptionDetails extends js.Object {
+trait DigitalContentLabelAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The display name of the digital content label rating tier. */
   var contentRatingTier: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object DigitalContentLabelAssignedTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class DigitalContentLabelAssignedTargetingOptionDetailsOps[Self <: DigitalContentLabelAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class DigitalContentLabelAssignedTargetingOptionDetailsMutableBuilder[Self <: DigitalContentLabelAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentRatingTier(value: String): Self = StObject.set(x, "contentRatingTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentRatingTierUndefined: Self = StObject.set(x, "contentRatingTier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedTargetingOptionId(value: String): Self = StObject.set(x, "excludedTargetingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRatingTier(value: String): Self = this.set("contentRatingTier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentRatingTier: Self = this.set("contentRatingTier", js.undefined)
-    
-    @scala.inline
-    def setExcludedTargetingOptionId(value: String): Self = this.set("excludedTargetingOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedTargetingOptionId: Self = this.set("excludedTargetingOptionId", js.undefined)
+    def setExcludedTargetingOptionIdUndefined: Self = StObject.set(x, "excludedTargetingOptionId", js.undefined)
   }
 }

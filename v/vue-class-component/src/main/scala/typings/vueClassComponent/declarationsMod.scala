@@ -24,13 +24,12 @@ import typings.vue.vueMod.ExtendedVue
 import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConfiguration
 import typings.vue.vueMod.VueConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-class-component/lib/declarations", JSImport.Namespace)
-@js.native
-object declarationsMod extends js.Object {
+object declarationsMod {
   
   /* Inlined vue-class-component.vue-class-component/lib/declarations.VueClass<vue.vue.default> & {  __decorators__ :std.Array<(options : vue.vue.ComponentOptions<vue.vue.default, vue.vue/types/options.DefaultData<vue.vue.default>, vue.vue/types/options.DefaultMethods<vue.vue.default>, vue.vue/types/options.DefaultComputed, vue.vue/types/options.PropsDefinition<vue.vue/types/options.DefaultProps>, vue.vue/types/options.DefaultProps>): void> | undefined} */
   @js.native

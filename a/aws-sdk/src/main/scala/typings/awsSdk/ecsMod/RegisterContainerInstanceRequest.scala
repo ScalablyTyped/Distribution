@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterContainerInstanceRequest extends js.Object {
+trait RegisterContainerInstanceRequest extends StObject {
   
   /**
     * The container instance attributes that this container instance supports.
@@ -61,84 +62,72 @@ object RegisterContainerInstanceRequest {
   }
   
   @scala.inline
-  implicit class RegisterContainerInstanceRequestOps[Self <: RegisterContainerInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterContainerInstanceRequestMutableBuilder[Self <: RegisterContainerInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setContainerInstanceArn(value: String): Self = StObject.set(x, "containerInstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setContainerInstanceArnUndefined: Self = StObject.set(x, "containerInstanceArn", js.undefined)
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setInstanceIdentityDocument(value: String): Self = StObject.set(x, "instanceIdentityDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerInstanceArn(value: String): Self = this.set("containerInstanceArn", value.asInstanceOf[js.Any])
+    def setInstanceIdentityDocumentSignature(value: String): Self = StObject.set(x, "instanceIdentityDocumentSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerInstanceArn: Self = this.set("containerInstanceArn", js.undefined)
+    def setInstanceIdentityDocumentSignatureUndefined: Self = StObject.set(x, "instanceIdentityDocumentSignature", js.undefined)
     
     @scala.inline
-    def setInstanceIdentityDocument(value: String): Self = this.set("instanceIdentityDocument", value.asInstanceOf[js.Any])
+    def setInstanceIdentityDocumentUndefined: Self = StObject.set(x, "instanceIdentityDocument", js.undefined)
     
     @scala.inline
-    def deleteInstanceIdentityDocument: Self = this.set("instanceIdentityDocument", js.undefined)
+    def setPlatformDevices(value: PlatformDevices): Self = StObject.set(x, "platformDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceIdentityDocumentSignature(value: String): Self = this.set("instanceIdentityDocumentSignature", value.asInstanceOf[js.Any])
+    def setPlatformDevicesUndefined: Self = StObject.set(x, "platformDevices", js.undefined)
     
     @scala.inline
-    def deleteInstanceIdentityDocumentSignature: Self = this.set("instanceIdentityDocumentSignature", js.undefined)
+    def setPlatformDevicesVarargs(value: PlatformDevice*): Self = StObject.set(x, "platformDevices", js.Array(value :_*))
     
     @scala.inline
-    def setPlatformDevicesVarargs(value: PlatformDevice*): Self = this.set("platformDevices", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformDevices(value: PlatformDevices): Self = this.set("platformDevices", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deletePlatformDevices: Self = this.set("platformDevices", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTotalResources(value: Resources): Self = StObject.set(x, "totalResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTotalResourcesUndefined: Self = StObject.set(x, "totalResources", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTotalResourcesVarargs(value: Resource*): Self = StObject.set(x, "totalResources", js.Array(value :_*))
     
     @scala.inline
-    def setTotalResourcesVarargs(value: Resource*): Self = this.set("totalResources", js.Array(value :_*))
+    def setVersionInfo(value: VersionInfo): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalResources(value: Resources): Self = this.set("totalResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResources: Self = this.set("totalResources", js.undefined)
-    
-    @scala.inline
-    def setVersionInfo(value: VersionInfo): Self = this.set("versionInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionInfo: Self = this.set("versionInfo", js.undefined)
+    def setVersionInfoUndefined: Self = StObject.set(x, "versionInfo", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/VerticalAlignTopOutline", JSImport.Namespace)
-@js.native
-object verticalAlignTopOutlineMod extends js.Object {
+object verticalAlignTopOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/VerticalAlignTopOutline", "VerticalAlignTopOutline")
+  @js.native
   val VerticalAlignTopOutline: IconDefinition = js.native
 }

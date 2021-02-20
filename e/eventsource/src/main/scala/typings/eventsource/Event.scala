@@ -1,5 +1,6 @@
 package typings.eventsource
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods which are common to all events.
   */
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   val AT_TARGET: Double = js.native
   

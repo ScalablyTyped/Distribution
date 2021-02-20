@@ -1,12 +1,13 @@
 package typings.tuyaPanelKit.anon
 
 import typings.tuyaPanelKit.typesMod.PathConfigMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitialRouteName extends js.Object {
+trait InitialRouteName extends StObject {
   
   var initialRouteName: js.UndefOr[String] = js.native
   
@@ -21,27 +22,15 @@ object InitialRouteName {
   }
   
   @scala.inline
-  implicit class InitialRouteNameOps[Self <: InitialRouteName] (val x: Self) extends AnyVal {
+  implicit class InitialRouteNameMutableBuilder[Self <: InitialRouteName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScreens(value: PathConfigMap): Self = this.set("screens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialRouteName(value: String): Self = this.set("initialRouteName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialRouteName: Self = this.set("initialRouteName", js.undefined)
+    def setScreens(value: PathConfigMap): Self = StObject.set(x, "screens", value.asInstanceOf[js.Any])
   }
 }

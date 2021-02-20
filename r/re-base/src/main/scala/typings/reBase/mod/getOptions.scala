@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait getOptions extends js.Object {
+trait getOptions extends StObject {
   
   /**
     * A function that receives the created ref as its only argument. You
@@ -35,36 +36,24 @@ object getOptions {
   }
   
   @scala.inline
-  implicit class getOptionsOps[Self <: getOptions] (val x: Self) extends AnyVal {
+  implicit class getOptionsMutableBuilder[Self <: getOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuery(value: () => Unit): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithIds(value: Boolean): Self = StObject.set(x, "withIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("query", js.Any.fromFunction0(value))
+    def setWithIdsUndefined: Self = StObject.set(x, "withIds", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setWithRefs(value: Boolean): Self = StObject.set(x, "withRefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithIds(value: Boolean): Self = this.set("withIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithIds: Self = this.set("withIds", js.undefined)
-    
-    @scala.inline
-    def setWithRefs(value: Boolean): Self = this.set("withRefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithRefs: Self = this.set("withRefs", js.undefined)
+    def setWithRefsUndefined: Self = StObject.set(x, "withRefs", js.undefined)
   }
 }

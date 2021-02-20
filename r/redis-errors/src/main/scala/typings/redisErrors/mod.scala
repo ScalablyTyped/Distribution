@@ -1,24 +1,25 @@
 package typings.redisErrors
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redis-errors", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("redis-errors", "AbortError")
   @js.native
-  class AbortError () extends Error {
+  class AbortError () extends RedisError {
     
     var args: js.UndefOr[js.Array[_]] = js.native
     
     var command: js.UndefOr[String] = js.native
   }
   
+  @JSImport("redis-errors", "InterruptError")
   @js.native
-  class InterruptError () extends Error {
+  class InterruptError () extends RedisError {
     
     var args: js.UndefOr[js.Array[_]] = js.native
     
@@ -27,8 +28,9 @@ object mod extends js.Object {
     var origin: Error = js.native
   }
   
+  @JSImport("redis-errors", "ParserError")
   @js.native
-  class ParserError protected () extends Error {
+  class ParserError protected () extends RedisError {
     def this(message: String, buffer: String, offset: Double) = this()
     
     var buffer: String = js.native
@@ -36,11 +38,13 @@ object mod extends js.Object {
     var offset: Double = js.native
   }
   
+  @JSImport("redis-errors", "RedisError")
   @js.native
   class RedisError () extends Error
   
+  @JSImport("redis-errors", "ReplyError")
   @js.native
-  class ReplyError protected () extends Error {
+  class ReplyError protected () extends RedisError {
     def this(message: String) = this()
     
     var args: js.UndefOr[js.Array[_]] = js.native

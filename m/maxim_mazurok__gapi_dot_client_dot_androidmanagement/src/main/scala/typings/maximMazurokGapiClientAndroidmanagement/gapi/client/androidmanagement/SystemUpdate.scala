@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemUpdate extends js.Object {
+trait SystemUpdate extends StObject {
   
   /**
     * If the type is WINDOWED, the end of the maintenance window, measured as the number of minutes after midnight in device's local time. This value must be between 0 and 1439,
@@ -38,45 +39,33 @@ object SystemUpdate {
   }
   
   @scala.inline
-  implicit class SystemUpdateOps[Self <: SystemUpdate] (val x: Self) extends AnyVal {
+  implicit class SystemUpdateMutableBuilder[Self <: SystemUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndMinutes(value: Double): Self = StObject.set(x, "endMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndMinutesUndefined: Self = StObject.set(x, "endMinutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreezePeriods(value: js.Array[FreezePeriod]): Self = StObject.set(x, "freezePeriods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndMinutes(value: Double): Self = this.set("endMinutes", value.asInstanceOf[js.Any])
+    def setFreezePeriodsUndefined: Self = StObject.set(x, "freezePeriods", js.undefined)
     
     @scala.inline
-    def deleteEndMinutes: Self = this.set("endMinutes", js.undefined)
+    def setFreezePeriodsVarargs(value: FreezePeriod*): Self = StObject.set(x, "freezePeriods", js.Array(value :_*))
     
     @scala.inline
-    def setFreezePeriodsVarargs(value: FreezePeriod*): Self = this.set("freezePeriods", js.Array(value :_*))
+    def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreezePeriods(value: js.Array[FreezePeriod]): Self = this.set("freezePeriods", value.asInstanceOf[js.Any])
+    def setStartMinutesUndefined: Self = StObject.set(x, "startMinutes", js.undefined)
     
     @scala.inline
-    def deleteFreezePeriods: Self = this.set("freezePeriods", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartMinutes(value: Double): Self = this.set("startMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartMinutes: Self = this.set("startMinutes", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

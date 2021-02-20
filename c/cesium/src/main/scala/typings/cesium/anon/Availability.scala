@@ -22,12 +22,13 @@ import typings.cesium.mod.Quaternion
 import typings.cesium.mod.RectangleGraphics
 import typings.cesium.mod.TimeIntervalCollection
 import typings.cesium.mod.WallGraphics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Availability extends js.Object {
+trait Availability extends StObject {
   
   var availability: js.UndefOr[TimeIntervalCollection] = js.native
   
@@ -92,180 +93,168 @@ object Availability {
   }
   
   @scala.inline
-  implicit class AvailabilityOps[Self <: Availability] (val x: Self) extends AnyVal {
+  implicit class AvailabilityMutableBuilder[Self <: Availability] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailability(value: TimeIntervalCollection): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillboard(value: BillboardGraphics): Self = StObject.set(x, "billboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailability(value: TimeIntervalCollection): Self = this.set("availability", value.asInstanceOf[js.Any])
+    def setBillboardUndefined: Self = StObject.set(x, "billboard", js.undefined)
     
     @scala.inline
-    def deleteAvailability: Self = this.set("availability", js.undefined)
+    def setBox(value: BoxGraphics): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillboard(value: BillboardGraphics): Self = this.set("billboard", value.asInstanceOf[js.Any])
+    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
     @scala.inline
-    def deleteBillboard: Self = this.set("billboard", js.undefined)
+    def setCorridor(value: CorridorGraphics): Self = StObject.set(x, "corridor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBox(value: BoxGraphics): Self = this.set("box", value.asInstanceOf[js.Any])
+    def setCorridorUndefined: Self = StObject.set(x, "corridor", js.undefined)
     
     @scala.inline
-    def deleteBox: Self = this.set("box", js.undefined)
+    def setCylinder(value: CylinderGraphics): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorridor(value: CorridorGraphics): Self = this.set("corridor", value.asInstanceOf[js.Any])
+    def setCylinderUndefined: Self = StObject.set(x, "cylinder", js.undefined)
     
     @scala.inline
-    def deleteCorridor: Self = this.set("corridor", js.undefined)
+    def setDescription(value: Property): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCylinder(value: CylinderGraphics): Self = this.set("cylinder", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCylinder: Self = this.set("cylinder", js.undefined)
+    def setEllipse(value: EllipseGraphics): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Property): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEllipsoid(value: EllipsoidGraphics): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipse(value: EllipseGraphics): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
     @scala.inline
-    def deleteEllipse: Self = this.set("ellipse", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsoid(value: EllipsoidGraphics): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    def setLabel(value: LabelGraphics): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModel(value: ModelGraphics): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: LabelGraphics): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: ModelGraphics): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setOrientation(value: Property | Quaternion): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParent(value: typings.cesium.mod.Entity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Property | Quaternion): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setPath(value: PathGraphics): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: typings.cesium.mod.Entity): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setPlane(value: js.Any): Self = StObject.set(x, "plane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: PathGraphics): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPlaneUndefined: Self = StObject.set(x, "plane", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPoint(value: PointGraphics): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlane(value: js.Any): Self = this.set("plane", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deletePlane: Self = this.set("plane", js.undefined)
+    def setPolygon(value: PolygonGraphics): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: PointGraphics): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setPolygonUndefined: Self = StObject.set(x, "polygon", js.undefined)
     
     @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setPolyline(value: PolylineGraphics): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygon(value: PolygonGraphics): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
     
     @scala.inline
-    def deletePolygon: Self = this.set("polygon", js.undefined)
+    def setPolylineVolume(value: PolylineVolumeGraphics): Self = StObject.set(x, "polylineVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyline(value: PolylineGraphics): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    def setPolylineVolumeUndefined: Self = StObject.set(x, "polylineVolume", js.undefined)
     
     @scala.inline
-    def deletePolyline: Self = this.set("polyline", js.undefined)
+    def setPosition(value: CallbackProperty | PositionProperty): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolylineVolume(value: PolylineVolumeGraphics): Self = this.set("polylineVolume", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePolylineVolume: Self = this.set("polylineVolume", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: CallbackProperty | PositionProperty): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setRectangle(value: RectangleGraphics): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectangle(value: RectangleGraphics): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRectangle: Self = this.set("rectangle", js.undefined)
+    def setTileset(value: Cesium3DTilesetGraphics): Self = StObject.set(x, "tileset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setTilesetUndefined: Self = StObject.set(x, "tileset", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setViewFrom(value: Property): Self = StObject.set(x, "viewFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTileset(value: Cesium3DTilesetGraphics): Self = this.set("tileset", value.asInstanceOf[js.Any])
+    def setViewFromUndefined: Self = StObject.set(x, "viewFrom", js.undefined)
     
     @scala.inline
-    def deleteTileset: Self = this.set("tileset", js.undefined)
+    def setWall(value: WallGraphics): Self = StObject.set(x, "wall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewFrom(value: Property): Self = this.set("viewFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewFrom: Self = this.set("viewFrom", js.undefined)
-    
-    @scala.inline
-    def setWall(value: WallGraphics): Self = this.set("wall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWall: Self = this.set("wall", js.undefined)
+    def setWallUndefined: Self = StObject.set(x, "wall", js.undefined)
   }
 }

@@ -5,13 +5,14 @@ import typings.nodal.nodalStrings.ASC
 import typings.nodal.nodalStrings.DESC
 import typings.nodal.nodalStrings.DSC
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Composer")
 @js.native
-class Composer[T /* <: Model */] protected () extends js.Object {
+class Composer[T /* <: Model */] protected () extends StObject {
   /**
     * Created by Model#query, used for composing SQL queries based on Models
     * @param {Nodal.Model} Model The model class the composer is querying from

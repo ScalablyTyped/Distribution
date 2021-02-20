@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Search
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Storage.StorageFolder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Stores settings that determine whether the app provides suggestions based on local files, and that define the criteria used to locate and filter these suggestions. */
 @js.native
-trait LocalContentSuggestionSettings extends js.Object {
+trait LocalContentSuggestionSettings extends StObject {
   
   /** An Advanced Query Syntax (AQS) string that limits the types and kinds of files that are used to provide suggestions. If no AQS string is specified, suggestions are provided from all local files in locations specified by the locations property. */
   var aqsFilter: String = js.native
@@ -36,30 +37,18 @@ object LocalContentSuggestionSettings {
   }
   
   @scala.inline
-  implicit class LocalContentSuggestionSettingsOps[Self <: LocalContentSuggestionSettings] (val x: Self) extends AnyVal {
+  implicit class LocalContentSuggestionSettingsMutableBuilder[Self <: LocalContentSuggestionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAqsFilter(value: String): Self = StObject.set(x, "aqsFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocations(value: IVector[StorageFolder]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAqsFilter(value: String): Self = this.set("aqsFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocations(value: IVector[StorageFolder]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertiesToMatch(value: IVector[String]): Self = this.set("propertiesToMatch", value.asInstanceOf[js.Any])
+    def setPropertiesToMatch(value: IVector[String]): Self = StObject.set(x, "propertiesToMatch", value.asInstanceOf[js.Any])
   }
 }

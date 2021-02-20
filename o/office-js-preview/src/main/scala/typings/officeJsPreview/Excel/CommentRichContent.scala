@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.11]
   */
 @js.native
-trait CommentRichContent extends js.Object {
+trait CommentRichContent extends StObject {
   
   /**
     *
@@ -38,30 +39,18 @@ object CommentRichContent {
   }
   
   @scala.inline
-  implicit class CommentRichContentOps[Self <: CommentRichContent] (val x: Self) extends AnyVal {
+  implicit class CommentRichContentMutableBuilder[Self <: CommentRichContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMentions(value: js.Array[CommentMention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMentionsVarargs(value: CommentMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
     @scala.inline
-    def setRichContent(value: String): Self = this.set("richContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMentionsVarargs(value: CommentMention*): Self = this.set("mentions", js.Array(value :_*))
-    
-    @scala.inline
-    def setMentions(value: js.Array[CommentMention]): Self = this.set("mentions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setRichContent(value: String): Self = StObject.set(x, "richContent", value.asInstanceOf[js.Any])
   }
 }

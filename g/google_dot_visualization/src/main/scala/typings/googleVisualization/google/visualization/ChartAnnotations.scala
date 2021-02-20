@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAnnotations extends js.Object {
+trait ChartAnnotations extends StObject {
   
   var boxStyle: js.UndefOr[ChartBoxStyle] = js.native
   
@@ -30,60 +31,48 @@ object ChartAnnotations {
   }
   
   @scala.inline
-  implicit class ChartAnnotationsOps[Self <: ChartAnnotations] (val x: Self) extends AnyVal {
+  implicit class ChartAnnotationsMutableBuilder[Self <: ChartAnnotations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoxStyle(value: ChartBoxStyle): Self = StObject.set(x, "boxStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoxStyleUndefined: Self = StObject.set(x, "boxStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatum(value: ChartStemAndStyle): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxStyle(value: ChartBoxStyle): Self = this.set("boxStyle", value.asInstanceOf[js.Any])
+    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
     @scala.inline
-    def deleteBoxStyle: Self = this.set("boxStyle", js.undefined)
+    def setDomain(value: ChartStemAndStyle): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatum(value: ChartStemAndStyle): Self = this.set("datum", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteDatum: Self = this.set("datum", js.undefined)
+    def setHighContrast(value: Boolean): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: ChartStemAndStyle): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setHighContrastUndefined: Self = StObject.set(x, "highContrast", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setStem(value: ChartStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighContrast(value: Boolean): Self = this.set("highContrast", value.asInstanceOf[js.Any])
+    def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
     
     @scala.inline
-    def deleteHighContrast: Self = this.set("highContrast", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStem(value: ChartStem): Self = this.set("stem", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStem: Self = this.set("stem", js.undefined)
+    def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: ChartTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

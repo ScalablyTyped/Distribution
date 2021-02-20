@@ -2,12 +2,13 @@ package typings.cassanknex.mod
 
 import typings.cassanknex.cassanknexStrings.asc
 import typings.cassanknex.cassanknexStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateableColumnFamilyBuilder[T] extends js.Object {
+trait CreateableColumnFamilyBuilder[T] extends StObject {
   
   def withCaching(): this.type = js.native
   

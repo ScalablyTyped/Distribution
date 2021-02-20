@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Tab.TabClassKey>> */
 @js.native
-trait PartialStyleRulesTabClass extends js.Object {
+trait PartialStyleRulesTabClass extends StObject {
   
   var disabled: js.UndefOr[CSSProperties] = js.native
   
@@ -42,90 +43,78 @@ object PartialStyleRulesTabClass {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesTabClassOps[Self <: PartialStyleRulesTabClass] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesTabClassMutableBuilder[Self <: PartialStyleRulesTabClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullWidth(value: CSSProperties): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: CSSProperties): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setLabelContainer(value: CSSProperties): Self = StObject.set(x, "labelContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setLabelContainerUndefined: Self = StObject.set(x, "labelContainer", js.undefined)
     
     @scala.inline
-    def setLabel(value: CSSProperties): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLabelIcon(value: CSSProperties): Self = StObject.set(x, "labelIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setLabelIconUndefined: Self = StObject.set(x, "labelIcon", js.undefined)
     
     @scala.inline
-    def setLabelContainer(value: CSSProperties): Self = this.set("labelContainer", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteLabelContainer: Self = this.set("labelContainer", js.undefined)
+    def setLabelWrapped(value: CSSProperties): Self = StObject.set(x, "labelWrapped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelIcon(value: CSSProperties): Self = this.set("labelIcon", value.asInstanceOf[js.Any])
+    def setLabelWrappedUndefined: Self = StObject.set(x, "labelWrapped", js.undefined)
     
     @scala.inline
-    def deleteLabelIcon: Self = this.set("labelIcon", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelWrapped(value: CSSProperties): Self = this.set("labelWrapped", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteLabelWrapped: Self = this.set("labelWrapped", js.undefined)
+    def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setTextColorInherit(value: CSSProperties): Self = StObject.set(x, "textColorInherit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: CSSProperties): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setTextColorInheritUndefined: Self = StObject.set(x, "textColorInherit", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setTextColorPrimary(value: CSSProperties): Self = StObject.set(x, "textColorPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColorInherit(value: CSSProperties): Self = this.set("textColorInherit", value.asInstanceOf[js.Any])
+    def setTextColorPrimaryUndefined: Self = StObject.set(x, "textColorPrimary", js.undefined)
     
     @scala.inline
-    def deleteTextColorInherit: Self = this.set("textColorInherit", js.undefined)
+    def setTextColorSecondary(value: CSSProperties): Self = StObject.set(x, "textColorSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColorPrimary(value: CSSProperties): Self = this.set("textColorPrimary", value.asInstanceOf[js.Any])
+    def setTextColorSecondaryUndefined: Self = StObject.set(x, "textColorSecondary", js.undefined)
     
     @scala.inline
-    def deleteTextColorPrimary: Self = this.set("textColorPrimary", js.undefined)
+    def setWrapper(value: CSSProperties): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColorSecondary(value: CSSProperties): Self = this.set("textColorSecondary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColorSecondary: Self = this.set("textColorSecondary", js.undefined)
-    
-    @scala.inline
-    def setWrapper(value: CSSProperties): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
   }
 }

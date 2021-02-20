@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * HPAScalingRules configures the scaling behavior for one direction. These Rules are applied after calculating DesiredReplicas from metrics for the HPA. They can limit the scaling velocity by specifying scaling policies. They can prevent flapping by specifying the stabilization window, so that the number of replicas is not set instantly, instead, the safest value from the stabilization window is chosen.
   */
 @js.native
-trait HPAScalingRules extends js.Object {
+trait HPAScalingRules extends StObject {
   
   /**
     * policies is a list of potential scaling polices which can be used during scaling. At least one policy must be specified, otherwise the HPAScalingRules will be discarded as invalid
@@ -35,39 +36,27 @@ object HPAScalingRules {
   }
   
   @scala.inline
-  implicit class HPAScalingRulesOps[Self <: HPAScalingRules] (val x: Self) extends AnyVal {
+  implicit class HPAScalingRulesMutableBuilder[Self <: HPAScalingRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicies(value: Input[js.Array[Input[HPAScalingPolicy]]]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoliciesVarargs(value: Input[HPAScalingPolicy]*): Self = StObject.set(x, "policies", js.Array(value :_*))
     
     @scala.inline
-    def setPoliciesVarargs(value: Input[HPAScalingPolicy]*): Self = this.set("policies", js.Array(value :_*))
+    def setSelectPolicy(value: Input[String]): Self = StObject.set(x, "selectPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: Input[js.Array[Input[HPAScalingPolicy]]]): Self = this.set("policies", value.asInstanceOf[js.Any])
+    def setSelectPolicyUndefined: Self = StObject.set(x, "selectPolicy", js.undefined)
     
     @scala.inline
-    def deletePolicies: Self = this.set("policies", js.undefined)
+    def setStabilizationWindowSeconds(value: Input[Double]): Self = StObject.set(x, "stabilizationWindowSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectPolicy(value: Input[String]): Self = this.set("selectPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectPolicy: Self = this.set("selectPolicy", js.undefined)
-    
-    @scala.inline
-    def setStabilizationWindowSeconds(value: Input[Double]): Self = this.set("stabilizationWindowSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStabilizationWindowSeconds: Self = this.set("stabilizationWindowSeconds", js.undefined)
+    def setStabilizationWindowSecondsUndefined: Self = StObject.set(x, "stabilizationWindowSeconds", js.undefined)
   }
 }

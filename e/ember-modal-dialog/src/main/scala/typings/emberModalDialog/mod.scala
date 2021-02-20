@@ -1,18 +1,21 @@
 package typings.emberModalDialog
 
+import typings.ember.mod.default.Component
 import typings.emberModalDialog.emberModalDialogStrings.parent
 import typings.emberModalDialog.emberModalDialogStrings.sibling
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-modal-dialog/components/modal-dialog", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("ember-modal-dialog/components/modal-dialog", JSImport.Default)
+  @js.native
+  class default () extends ModalDialog
   
   @js.native
-  trait ModalDialog
-    extends typings.emberComponent.mod.default {
+  trait ModalDialog extends Component {
     
     /**
       * A boolean, when true makes modal animatable using liquid-fire
@@ -107,7 +110,4 @@ object mod extends js.Object {
       */
     var wrapperClassNames: js.Array[String] = js.native
   }
-  
-  @js.native
-  class default () extends ModalDialog
 }

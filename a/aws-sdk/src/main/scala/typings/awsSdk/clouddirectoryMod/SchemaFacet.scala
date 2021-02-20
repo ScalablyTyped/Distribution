@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaFacet extends js.Object {
+trait SchemaFacet extends StObject {
   
   /**
     * The name of the facet.
@@ -26,30 +27,18 @@ object SchemaFacet {
   }
   
   @scala.inline
-  implicit class SchemaFacetOps[Self <: SchemaFacet] (val x: Self) extends AnyVal {
+  implicit class SchemaFacetMutableBuilder[Self <: SchemaFacet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFacetName(value: FacetName): Self = StObject.set(x, "FacetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFacetNameUndefined: Self = StObject.set(x, "FacetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetName(value: FacetName): Self = this.set("FacetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFacetName: Self = this.set("FacetName", js.undefined)
-    
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
   }
 }

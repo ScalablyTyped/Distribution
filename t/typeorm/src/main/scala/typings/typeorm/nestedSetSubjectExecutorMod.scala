@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.queryRunnerMod.QueryRunner
 import typings.typeorm.subjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/persistence/tree/NestedSetSubjectExecutor", JSImport.Namespace)
-@js.native
-object nestedSetSubjectExecutorMod extends js.Object {
+object nestedSetSubjectExecutorMod {
   
+  @JSImport("typeorm/browser/persistence/tree/NestedSetSubjectExecutor", "NestedSetSubjectExecutor")
   @js.native
-  class NestedSetSubjectExecutor protected () extends js.Object {
+  class NestedSetSubjectExecutor protected () extends StObject {
     def this(queryRunner: QueryRunner) = this()
     
     /**

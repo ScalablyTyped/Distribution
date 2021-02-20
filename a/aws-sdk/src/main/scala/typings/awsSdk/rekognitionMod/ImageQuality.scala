@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageQuality extends js.Object {
+trait ImageQuality extends StObject {
   
   /**
     * Value representing brightness of the face. The service returns a value between 0 and 100 (inclusive). A higher value indicates a brighter face image.
@@ -26,30 +27,18 @@ object ImageQuality {
   }
   
   @scala.inline
-  implicit class ImageQualityOps[Self <: ImageQuality] (val x: Self) extends AnyVal {
+  implicit class ImageQualityMutableBuilder[Self <: ImageQuality] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: Float): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrightnessUndefined: Self = StObject.set(x, "Brightness", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharpness(value: Float): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Float): Self = this.set("Brightness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrightness: Self = this.set("Brightness", js.undefined)
-    
-    @scala.inline
-    def setSharpness(value: Float): Self = this.set("Sharpness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharpness: Self = this.set("Sharpness", js.undefined)
+    def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
   }
 }

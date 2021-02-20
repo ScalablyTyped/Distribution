@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionControls extends js.Object {
+trait ExecutionControls extends StObject {
   
   /**
     * A SsmControls object.
@@ -21,24 +22,12 @@ object ExecutionControls {
   }
   
   @scala.inline
-  implicit class ExecutionControlsOps[Self <: ExecutionControls] (val x: Self) extends AnyVal {
+  implicit class ExecutionControlsMutableBuilder[Self <: ExecutionControls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSsmControls(value: SsmControls): Self = StObject.set(x, "SsmControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSsmControls(value: SsmControls): Self = this.set("SsmControls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsmControls: Self = this.set("SsmControls", js.undefined)
+    def setSsmControlsUndefined: Self = StObject.set(x, "SsmControls", js.undefined)
   }
 }

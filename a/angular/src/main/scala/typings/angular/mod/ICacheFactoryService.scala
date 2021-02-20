@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import typings.angular.anon.Capacity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see https://docs.angularjs.org/api/ng/service/$cacheFactory
   */
 @js.native
-trait ICacheFactoryService extends js.Object {
+trait ICacheFactoryService extends StObject {
   
   /**
     * Factory that constructs Cache objects and gives access to them.

@@ -2,6 +2,7 @@ package typings.coreJs
 
 import typings.std.ArrayLike
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Modules: js.array.statics
 // #############################################################################################
 @js.native
-trait ArrayConstructor extends js.Object {
+trait ArrayConstructor extends StObject {
   
   /**
     * Combines two or more arrays.

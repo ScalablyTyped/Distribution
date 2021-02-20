@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeThingResponse extends js.Object {
+trait DescribeThingResponse extends StObject {
   
   /**
     * The thing attributes.
@@ -56,66 +57,54 @@ object DescribeThingResponse {
   }
   
   @scala.inline
-  implicit class DescribeThingResponseOps[Self <: DescribeThingResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeThingResponseMutableBuilder[Self <: DescribeThingResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setBillingGroupNameUndefined: Self = StObject.set(x, "billingGroupName", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setDefaultClientId(value: ClientId): Self = StObject.set(x, "defaultClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = this.set("billingGroupName", value.asInstanceOf[js.Any])
+    def setDefaultClientIdUndefined: Self = StObject.set(x, "defaultClientId", js.undefined)
     
     @scala.inline
-    def deleteBillingGroupName: Self = this.set("billingGroupName", js.undefined)
+    def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultClientId(value: ClientId): Self = this.set("defaultClientId", value.asInstanceOf[js.Any])
+    def setThingArnUndefined: Self = StObject.set(x, "thingArn", js.undefined)
     
     @scala.inline
-    def deleteDefaultClientId: Self = this.set("defaultClientId", js.undefined)
+    def setThingId(value: ThingId): Self = StObject.set(x, "thingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingArn(value: ThingArn): Self = this.set("thingArn", value.asInstanceOf[js.Any])
+    def setThingIdUndefined: Self = StObject.set(x, "thingId", js.undefined)
     
     @scala.inline
-    def deleteThingArn: Self = this.set("thingArn", js.undefined)
+    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingId(value: ThingId): Self = this.set("thingId", value.asInstanceOf[js.Any])
+    def setThingNameUndefined: Self = StObject.set(x, "thingName", js.undefined)
     
     @scala.inline
-    def deleteThingId: Self = this.set("thingId", js.undefined)
+    def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
     
     @scala.inline
-    def deleteThingName: Self = this.set("thingName", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

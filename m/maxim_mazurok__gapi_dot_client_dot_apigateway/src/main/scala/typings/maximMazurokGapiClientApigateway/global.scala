@@ -3,29 +3,31 @@ package typings.maximMazurokGapiClientApigateway
 import typings.maximMazurokGapiClientApigateway.gapi.client.apigateway.ProjectsResource
 import typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.apigateway
 import typings.maximMazurokGapiClientApigateway.maximMazurokGapiClientApigatewayStrings.v1beta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load API Gateway API v1beta */
-      def load(name: apigateway, version: v1beta): js.Thenable[Unit] = js.native
-      def load(name: apigateway, version: v1beta, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object apigateway extends js.Object {
+      object apigateway {
         
+        @JSGlobal("gapi.client.apigateway.projects")
+        @js.native
         val projects: ProjectsResource = js.native
       }
+      
+      /** Load API Gateway API v1beta */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: apigateway, version: v1beta): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: apigateway, version: v1beta, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

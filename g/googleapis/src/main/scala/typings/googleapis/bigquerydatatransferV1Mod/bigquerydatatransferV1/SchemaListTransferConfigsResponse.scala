@@ -1,5 +1,6 @@
 package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The returned list of pipelines in the project.
   */
 @js.native
-trait SchemaListTransferConfigsResponse extends js.Object {
+trait SchemaListTransferConfigsResponse extends StObject {
   
   /**
     * Output only. The next-pagination token. For multiple-page list results,
@@ -31,33 +32,21 @@ object SchemaListTransferConfigsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListTransferConfigsResponseOps[Self <: SchemaListTransferConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListTransferConfigsResponseMutableBuilder[Self <: SchemaListTransferConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransferConfigs(value: js.Array[SchemaTransferConfig]): Self = StObject.set(x, "transferConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTransferConfigsUndefined: Self = StObject.set(x, "transferConfigs", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setTransferConfigsVarargs(value: SchemaTransferConfig*): Self = this.set("transferConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransferConfigs(value: js.Array[SchemaTransferConfig]): Self = this.set("transferConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferConfigs: Self = this.set("transferConfigs", js.undefined)
+    def setTransferConfigsVarargs(value: SchemaTransferConfig*): Self = StObject.set(x, "transferConfigs", js.Array(value :_*))
   }
 }

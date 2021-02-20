@@ -1,31 +1,19 @@
 package typings.operationRetrier
 
 import typings.operationRetrier.anon.Initial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("operation-retrier", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  
-  @js.native
-  class Backoff protected ()
-    extends typings.operationRetrier.backoffMod.Backoff {
-    def this(options: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object Backoff extends js.Object {
-    
-    def exponential(options: js.Any): typings.operationRetrier.backoffMod.Backoff = js.native
-  }
+object mod {
   
   /**
     * Provides retrier service
     */
+  @JSImport("operation-retrier", JSImport.Default)
   @js.native
-  class Retrier protected ()
+  class default protected ()
     extends typings.operationRetrier.retrierMod.Retrier {
     /**
       * Creates a new Retrier instance
@@ -33,11 +21,26 @@ object mod extends js.Object {
     def this(options: Initial) = this()
   }
   
+  @JSImport("operation-retrier", "Backoff")
+  @js.native
+  class Backoff protected ()
+    extends typings.operationRetrier.backoffMod.Backoff {
+    def this(options: js.Any) = this()
+  }
+  object Backoff {
+    
+    /* static member */
+    @JSImport("operation-retrier", "Backoff.exponential")
+    @js.native
+    def exponential(options: js.Any): typings.operationRetrier.backoffMod.Backoff = js.native
+  }
+  
   /**
     * Provides retrier service
     */
+  @JSImport("operation-retrier", "Retrier")
   @js.native
-  class default protected ()
+  class Retrier protected ()
     extends typings.operationRetrier.retrierMod.Retrier {
     /**
       * Creates a new Retrier instance

@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * defined.
   */
 @js.native
-trait SchemaCustomAttributeHistogramRequest extends js.Object {
+trait SchemaCustomAttributeHistogramRequest extends StObject {
   
   /**
     * Required.  Specifies the custom field key to perform a histogram on. If
@@ -42,36 +43,24 @@ object SchemaCustomAttributeHistogramRequest {
   }
   
   @scala.inline
-  implicit class SchemaCustomAttributeHistogramRequestOps[Self <: SchemaCustomAttributeHistogramRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomAttributeHistogramRequestMutableBuilder[Self <: SchemaCustomAttributeHistogramRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongValueHistogramBucketingOption(value: SchemaNumericBucketingOption): Self = StObject.set(x, "longValueHistogramBucketingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLongValueHistogramBucketingOptionUndefined: Self = StObject.set(x, "longValueHistogramBucketingOption", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setStringValueHistogram(value: Boolean): Self = StObject.set(x, "stringValueHistogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongValueHistogramBucketingOption(value: SchemaNumericBucketingOption): Self = this.set("longValueHistogramBucketingOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongValueHistogramBucketingOption: Self = this.set("longValueHistogramBucketingOption", js.undefined)
-    
-    @scala.inline
-    def setStringValueHistogram(value: Boolean): Self = this.set("stringValueHistogram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValueHistogram: Self = this.set("stringValueHistogram", js.undefined)
+    def setStringValueHistogramUndefined: Self = StObject.set(x, "stringValueHistogram", js.undefined)
   }
 }

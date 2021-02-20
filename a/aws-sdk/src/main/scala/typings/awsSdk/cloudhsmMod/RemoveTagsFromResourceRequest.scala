@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveTagsFromResourceRequest extends js.Object {
+trait RemoveTagsFromResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS CloudHSM resource.
@@ -26,27 +27,15 @@ object RemoveTagsFromResourceRequest {
   }
   
   @scala.inline
-  implicit class RemoveTagsFromResourceRequestOps[Self <: RemoveTagsFromResourceRequest] (val x: Self) extends AnyVal {
+  implicit class RemoveTagsFromResourceRequestMutableBuilder[Self <: RemoveTagsFromResourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTagKeyList(value: TagKeyList): Self = StObject.set(x, "TagKeyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceArn(value: String): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagKeyListVarargs(value: TagKey*): Self = this.set("TagKeyList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagKeyList(value: TagKeyList): Self = this.set("TagKeyList", value.asInstanceOf[js.Any])
+    def setTagKeyListVarargs(value: TagKey*): Self = StObject.set(x, "TagKeyList", js.Array(value :_*))
   }
 }

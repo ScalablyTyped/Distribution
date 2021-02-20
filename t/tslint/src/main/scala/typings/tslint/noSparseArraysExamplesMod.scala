@@ -1,13 +1,14 @@
 package typings.tslint
 
 import typings.tslint.anon.Config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/code-examples/noSparseArrays.examples", JSImport.Namespace)
-@js.native
-object noSparseArraysExamplesMod extends js.Object {
+object noSparseArraysExamplesMod {
   
+  @JSImport("tslint/lib/rules/code-examples/noSparseArrays.examples", "codeExamples")
+  @js.native
   val codeExamples: js.Array[Config] = js.native
 }

@@ -1,6 +1,6 @@
 package typings.couchbase.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,29 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "N1qlQuery")
 @js.native
-class N1qlQuery () extends js.Object {
+class N1qlQuery () extends StObject {
   
   // Private declaration to avoid other queries being misstaken for N1qlQuery
   var __nominal: Unit = js.native
 }
-/* static members */
-@JSImport("couchbase", "N1qlQuery")
-@js.native
-object N1qlQuery extends js.Object {
-  
-  /**
-    * Creates a query object directly from the passed query string.
-    * @param str
-    */
-  def fromString(str: String): N1qlStringQuery = js.native
+object N1qlQuery {
   
   @js.native
-  sealed trait Consistency extends js.Object
+  sealed trait Consistency extends StObject
   /**
     * Enumeration for specifying N1QL consistency semantics.
     */
+  @JSImport("couchbase", "N1qlQuery.Consistency")
   @js.native
-  object Consistency extends js.Object {
+  object Consistency extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[Consistency with Double] = js.native
@@ -42,23 +34,29 @@ object N1qlQuery extends js.Object {
       */
     @js.native
     sealed trait NOT_BOUND extends Consistency
-    /* 0 */ @js.native
-    object NOT_BOUND extends TopLevel[NOT_BOUND with Double]
+    /* 0 */ val NOT_BOUND: typings.couchbase.mod.N1qlQuery.Consistency.NOT_BOUND with Double = js.native
     
     /**
       * This implements strong consistency per request.
       */
     @js.native
     sealed trait REQUEST_PLUS extends Consistency
-    /* 1 */ @js.native
-    object REQUEST_PLUS extends TopLevel[REQUEST_PLUS with Double]
+    /* 1 */ val REQUEST_PLUS: typings.couchbase.mod.N1qlQuery.Consistency.REQUEST_PLUS with Double = js.native
     
     /**
       * This implements strong consistency per statement.
       */
     @js.native
     sealed trait STATEMENT_PLUS extends Consistency
-    /* 2 */ @js.native
-    object STATEMENT_PLUS extends TopLevel[STATEMENT_PLUS with Double]
+    /* 2 */ val STATEMENT_PLUS: typings.couchbase.mod.N1qlQuery.Consistency.STATEMENT_PLUS with Double = js.native
   }
+  
+  /**
+    * Creates a query object directly from the passed query string.
+    * @param str
+    */
+  /* static member */
+  @JSImport("couchbase", "N1qlQuery.fromString")
+  @js.native
+  def fromString(str: String): N1qlStringQuery = js.native
 }

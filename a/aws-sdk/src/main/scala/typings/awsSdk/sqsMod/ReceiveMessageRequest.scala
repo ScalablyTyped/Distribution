@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceiveMessageRequest extends js.Object {
+trait ReceiveMessageRequest extends StObject {
   
   /**
     * A list of attributes that need to be returned along with each message. These attributes include:    All – Returns all values.    ApproximateFirstReceiveTimestamp – Returns the time the message was first received from the queue (epoch time in milliseconds).    ApproximateReceiveCount – Returns the number of times a message has been received across all queues but not deleted.    AWSTraceHeader – Returns the AWS X-Ray trace header string.     SenderId    For an IAM user, returns the IAM user ID, for example ABCDEFGHI1JKLMNOPQ23R.   For an IAM role, returns the IAM role ID, for example ABCDE1F2GH3I4JK5LMNOP:i-a123b456.      SentTimestamp – Returns the time the message was sent to the queue (epoch time in milliseconds).    MessageDeduplicationId – Returns the value provided by the producer that calls the  SendMessage  action.    MessageGroupId – Returns the value provided by the producer that calls the  SendMessage  action. Messages with the same MessageGroupId are returned in sequence.    SequenceNumber – Returns the value provided by Amazon SQS.  
@@ -51,63 +52,51 @@ object ReceiveMessageRequest {
   }
   
   @scala.inline
-  implicit class ReceiveMessageRequestOps[Self <: ReceiveMessageRequest] (val x: Self) extends AnyVal {
+  implicit class ReceiveMessageRequestMutableBuilder[Self <: ReceiveMessageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeNamesVarargs(value: QueueAttributeName*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
     @scala.inline
-    def setQueueUrl(value: String): Self = this.set("QueueUrl", value.asInstanceOf[js.Any])
+    def setMaxNumberOfMessages(value: Integer): Self = StObject.set(x, "MaxNumberOfMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNamesVarargs(value: QueueAttributeName*): Self = this.set("AttributeNames", js.Array(value :_*))
+    def setMaxNumberOfMessagesUndefined: Self = StObject.set(x, "MaxNumberOfMessages", js.undefined)
     
     @scala.inline
-    def setAttributeNames(value: AttributeNameList): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
+    def setMessageAttributeNames(value: MessageAttributeNameList): Self = StObject.set(x, "MessageAttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributeNames: Self = this.set("AttributeNames", js.undefined)
+    def setMessageAttributeNamesUndefined: Self = StObject.set(x, "MessageAttributeNames", js.undefined)
     
     @scala.inline
-    def setMaxNumberOfMessages(value: Integer): Self = this.set("MaxNumberOfMessages", value.asInstanceOf[js.Any])
+    def setMessageAttributeNamesVarargs(value: MessageAttributeName*): Self = StObject.set(x, "MessageAttributeNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteMaxNumberOfMessages: Self = this.set("MaxNumberOfMessages", js.undefined)
+    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageAttributeNamesVarargs(value: MessageAttributeName*): Self = this.set("MessageAttributeNames", js.Array(value :_*))
+    def setReceiveRequestAttemptId(value: String): Self = StObject.set(x, "ReceiveRequestAttemptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageAttributeNames(value: MessageAttributeNameList): Self = this.set("MessageAttributeNames", value.asInstanceOf[js.Any])
+    def setReceiveRequestAttemptIdUndefined: Self = StObject.set(x, "ReceiveRequestAttemptId", js.undefined)
     
     @scala.inline
-    def deleteMessageAttributeNames: Self = this.set("MessageAttributeNames", js.undefined)
+    def setVisibilityTimeout(value: Integer): Self = StObject.set(x, "VisibilityTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveRequestAttemptId(value: String): Self = this.set("ReceiveRequestAttemptId", value.asInstanceOf[js.Any])
+    def setVisibilityTimeoutUndefined: Self = StObject.set(x, "VisibilityTimeout", js.undefined)
     
     @scala.inline
-    def deleteReceiveRequestAttemptId: Self = this.set("ReceiveRequestAttemptId", js.undefined)
+    def setWaitTimeSeconds(value: Integer): Self = StObject.set(x, "WaitTimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibilityTimeout(value: Integer): Self = this.set("VisibilityTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibilityTimeout: Self = this.set("VisibilityTimeout", js.undefined)
-    
-    @scala.inline
-    def setWaitTimeSeconds(value: Integer): Self = this.set("WaitTimeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitTimeSeconds: Self = this.set("WaitTimeSeconds", js.undefined)
+    def setWaitTimeSecondsUndefined: Self = StObject.set(x, "WaitTimeSeconds", js.undefined)
   }
 }

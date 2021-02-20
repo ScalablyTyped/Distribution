@@ -1,11 +1,12 @@
 package typings.inboxsdk.mod.ButterBar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadingMessageDescriptorBase extends js.Object {
+trait LoadingMessageDescriptorBase extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object LoadingMessageDescriptorBase {
   }
   
   @scala.inline
-  implicit class LoadingMessageDescriptorBaseOps[Self <: LoadingMessageDescriptorBase] (val x: Self) extends AnyVal {
+  implicit class LoadingMessageDescriptorBaseMutableBuilder[Self <: LoadingMessageDescriptorBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideOnViewChanged(value: Boolean): Self = StObject.set(x, "hideOnViewChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setHideOnViewChangedUndefined: Self = StObject.set(x, "hideOnViewChanged", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setMessageKey(value: js.Object | String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideOnViewChanged(value: Boolean): Self = this.set("hideOnViewChanged", value.asInstanceOf[js.Any])
+    def setMessageKeyUndefined: Self = StObject.set(x, "messageKey", js.undefined)
     
     @scala.inline
-    def deleteHideOnViewChanged: Self = this.set("hideOnViewChanged", js.undefined)
+    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageKey(value: js.Object | String): Self = this.set("messageKey", value.asInstanceOf[js.Any])
+    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
     @scala.inline
-    def deleteMessageKey: Self = this.set("messageKey", js.undefined)
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("persistent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersistent: Self = this.set("persistent", js.undefined)
-    
-    @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

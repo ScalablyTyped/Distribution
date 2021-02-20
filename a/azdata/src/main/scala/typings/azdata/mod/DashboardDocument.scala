@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashboardDocument extends js.Object {
+trait DashboardDocument extends StObject {
   
   var profile: IConnectionProfile = js.native
   
@@ -20,24 +21,12 @@ object DashboardDocument {
   }
   
   @scala.inline
-  implicit class DashboardDocumentOps[Self <: DashboardDocument] (val x: Self) extends AnyVal {
+  implicit class DashboardDocumentMutableBuilder[Self <: DashboardDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProfile(value: IConnectionProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProfile(value: IConnectionProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerInfo(value: ServerInfo): Self = this.set("serverInfo", value.asInstanceOf[js.Any])
+    def setServerInfo(value: ServerInfo): Self = StObject.set(x, "serverInfo", value.asInstanceOf[js.Any])
   }
 }

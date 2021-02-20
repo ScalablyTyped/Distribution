@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionEventCallbackCollection extends js.Object {
+trait ExtensionEventCallbackCollection extends StObject {
   
   /**
     * Optional.  Defines an endpoint that gets called via a POST reqeust to notify that an extension disable has occurred.
@@ -59,39 +60,27 @@ object ExtensionEventCallbackCollection {
   }
   
   @scala.inline
-  implicit class ExtensionEventCallbackCollectionOps[Self <: ExtensionEventCallbackCollection] (val x: Self) extends AnyVal {
+  implicit class ExtensionEventCallbackCollectionMutableBuilder[Self <: ExtensionEventCallbackCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostDisable(value: ExtensionEventCallback): Self = StObject.set(x, "postDisable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostEnable(value: ExtensionEventCallback): Self = StObject.set(x, "postEnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPostInstall(value: ExtensionEventCallback): Self = StObject.set(x, "postInstall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostDisable(value: ExtensionEventCallback): Self = this.set("postDisable", value.asInstanceOf[js.Any])
+    def setPostUninstall(value: ExtensionEventCallback): Self = StObject.set(x, "postUninstall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostEnable(value: ExtensionEventCallback): Self = this.set("postEnable", value.asInstanceOf[js.Any])
+    def setPostUpdate(value: ExtensionEventCallback): Self = StObject.set(x, "postUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostInstall(value: ExtensionEventCallback): Self = this.set("postInstall", value.asInstanceOf[js.Any])
+    def setPreInstall(value: ExtensionEventCallback): Self = StObject.set(x, "preInstall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostUninstall(value: ExtensionEventCallback): Self = this.set("postUninstall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPostUpdate(value: ExtensionEventCallback): Self = this.set("postUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreInstall(value: ExtensionEventCallback): Self = this.set("preInstall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionCheck(value: ExtensionEventCallback): Self = this.set("versionCheck", value.asInstanceOf[js.Any])
+    def setVersionCheck(value: ExtensionEventCallback): Self = StObject.set(x, "versionCheck", value.asInstanceOf[js.Any])
   }
 }

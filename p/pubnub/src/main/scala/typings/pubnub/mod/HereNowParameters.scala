@@ -1,12 +1,13 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // hereNow
 @js.native
-trait HereNowParameters extends js.Object {
+trait HereNowParameters extends StObject {
   
   var channelGroups: js.UndefOr[js.Array[String]] = js.native
   
@@ -25,48 +26,36 @@ object HereNowParameters {
   }
   
   @scala.inline
-  implicit class HereNowParametersOps[Self <: HereNowParameters] (val x: Self) extends AnyVal {
+  implicit class HereNowParametersMutableBuilder[Self <: HereNowParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
     
     @scala.inline
-    def setChannelGroupsVarargs(value: String*): Self = this.set("channelGroups", js.Array(value :_*))
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelGroups(value: js.Array[String]): Self = this.set("channelGroups", value.asInstanceOf[js.Any])
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def deleteChannelGroups: Self = this.set("channelGroups", js.undefined)
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    def setIncludeState(value: Boolean): Self = StObject.set(x, "includeState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setIncludeStateUndefined: Self = StObject.set(x, "includeState", js.undefined)
     
     @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
+    def setIncludeUUIDs(value: Boolean): Self = StObject.set(x, "includeUUIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeState(value: Boolean): Self = this.set("includeState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeState: Self = this.set("includeState", js.undefined)
-    
-    @scala.inline
-    def setIncludeUUIDs(value: Boolean): Self = this.set("includeUUIDs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeUUIDs: Self = this.set("includeUUIDs", js.undefined)
+    def setIncludeUUIDsUndefined: Self = StObject.set(x, "includeUUIDs", js.undefined)
   }
 }

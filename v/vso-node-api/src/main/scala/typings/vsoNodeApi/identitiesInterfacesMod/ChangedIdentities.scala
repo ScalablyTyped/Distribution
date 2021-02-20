@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangedIdentities extends js.Object {
+trait ChangedIdentities extends StObject {
   
   /**
     * Changed Identities
@@ -26,27 +27,15 @@ object ChangedIdentities {
   }
   
   @scala.inline
-  implicit class ChangedIdentitiesOps[Self <: ChangedIdentities] (val x: Self) extends AnyVal {
+  implicit class ChangedIdentitiesMutableBuilder[Self <: ChangedIdentities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentities(value: js.Array[Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentitiesVarargs(value: Identity*): Self = StObject.set(x, "identities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIdentitiesVarargs(value: Identity*): Self = this.set("identities", js.Array(value :_*))
-    
-    @scala.inline
-    def setIdentities(value: js.Array[Identity]): Self = this.set("identities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceContext(value: ChangedIdentitiesContext): Self = this.set("sequenceContext", value.asInstanceOf[js.Any])
+    def setSequenceContext(value: ChangedIdentitiesContext): Self = StObject.set(x, "sequenceContext", value.asInstanceOf[js.Any])
   }
 }

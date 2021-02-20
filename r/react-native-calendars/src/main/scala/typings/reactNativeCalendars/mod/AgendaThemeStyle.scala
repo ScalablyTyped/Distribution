@@ -1,5 +1,6 @@
 package typings.reactNativeCalendars.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object AgendaThemeStyle {
   }
   
   @scala.inline
-  implicit class AgendaThemeStyleOps[Self <: AgendaThemeStyle] (val x: Self) extends AnyVal {
+  implicit class AgendaThemeStyleMutableBuilder[Self <: AgendaThemeStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgendaDayNumColor(value: String): Self = StObject.set(x, "agendaDayNumColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgendaDayNumColorUndefined: Self = StObject.set(x, "agendaDayNumColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgendaDayTextColor(value: String): Self = StObject.set(x, "agendaDayTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgendaDayNumColor(value: String): Self = this.set("agendaDayNumColor", value.asInstanceOf[js.Any])
+    def setAgendaDayTextColorUndefined: Self = StObject.set(x, "agendaDayTextColor", js.undefined)
     
     @scala.inline
-    def deleteAgendaDayNumColor: Self = this.set("agendaDayNumColor", js.undefined)
+    def setAgendaKnobColor(value: String): Self = StObject.set(x, "agendaKnobColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgendaDayTextColor(value: String): Self = this.set("agendaDayTextColor", value.asInstanceOf[js.Any])
+    def setAgendaKnobColorUndefined: Self = StObject.set(x, "agendaKnobColor", js.undefined)
     
     @scala.inline
-    def deleteAgendaDayTextColor: Self = this.set("agendaDayTextColor", js.undefined)
+    def setAgendaTodayColor(value: String): Self = StObject.set(x, "agendaTodayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgendaKnobColor(value: String): Self = this.set("agendaKnobColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgendaKnobColor: Self = this.set("agendaKnobColor", js.undefined)
-    
-    @scala.inline
-    def setAgendaTodayColor(value: String): Self = this.set("agendaTodayColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAgendaTodayColor: Self = this.set("agendaTodayColor", js.undefined)
+    def setAgendaTodayColorUndefined: Self = StObject.set(x, "agendaTodayColor", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePolicyVersionRequest extends js.Object {
+trait CreatePolicyVersionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM policy to which you want to add a new version. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
@@ -31,30 +32,18 @@ object CreatePolicyVersionRequest {
   }
   
   @scala.inline
-  implicit class CreatePolicyVersionRequestOps[Self <: CreatePolicyVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePolicyVersionRequestMutableBuilder[Self <: CreatePolicyVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyDocument(value: policyDocumentType): Self = StObject.set(x, "PolicyDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetAsDefault(value: booleanType): Self = StObject.set(x, "SetAsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArn(value: arnType): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicyDocument(value: policyDocumentType): Self = this.set("PolicyDocument", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetAsDefault(value: booleanType): Self = this.set("SetAsDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetAsDefault: Self = this.set("SetAsDefault", js.undefined)
+    def setSetAsDefaultUndefined: Self = StObject.set(x, "SetAsDefault", js.undefined)
   }
 }

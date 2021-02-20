@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyCacheParameterGroupMessage extends js.Object {
+trait ModifyCacheParameterGroupMessage extends StObject {
   
   /**
     * The name of the cache parameter group to modify.
@@ -26,27 +27,15 @@ object ModifyCacheParameterGroupMessage {
   }
   
   @scala.inline
-  implicit class ModifyCacheParameterGroupMessageOps[Self <: ModifyCacheParameterGroupMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyCacheParameterGroupMessageMutableBuilder[Self <: ModifyCacheParameterGroupMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = this.set("CacheParameterGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = this.set("ParameterNameValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setParameterNameValues(value: ParameterNameValueList): Self = this.set("ParameterNameValues", value.asInstanceOf[js.Any])
+    def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
   }
 }

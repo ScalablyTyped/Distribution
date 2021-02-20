@@ -1,5 +1,6 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait TableCellCollectionLoadOptions extends js.Object {
+trait TableCellCollectionLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -73,60 +74,48 @@ object TableCellCollectionLoadOptions {
   }
   
   @scala.inline
-  implicit class TableCellCollectionLoadOptionsOps[Self <: TableCellCollectionLoadOptions] (val x: Self) extends AnyVal {
+  implicit class TableCellCollectionLoadOptionsMutableBuilder[Self <: TableCellCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellIndex(value: Boolean): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellIndex(value: Boolean): Self = this.set("cellIndex", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCellIndex: Self = this.set("cellIndex", js.undefined)
+    def setParagraphs(value: ParagraphCollectionLoadOptions): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setParentRow(value: TableRowLoadOptions): Self = StObject.set(x, "parentRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphs(value: ParagraphCollectionLoadOptions): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
+    def setParentRowUndefined: Self = StObject.set(x, "parentRow", js.undefined)
     
     @scala.inline
-    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentRow(value: TableRowLoadOptions): Self = this.set("parentRow", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deleteParentRow: Self = this.set("parentRow", js.undefined)
+    def setShadingColor(value: Boolean): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Boolean): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
-    
-    @scala.inline
-    def setShadingColor(value: Boolean): Self = this.set("shadingColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadingColor: Self = this.set("shadingColor", js.undefined)
+    def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
   }
 }

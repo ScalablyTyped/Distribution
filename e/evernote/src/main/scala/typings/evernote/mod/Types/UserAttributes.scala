@@ -1,13 +1,14 @@
 package typings.evernote.mod.Types
 
 import typings.evernote.anon.BusinessAddress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.UserAttributes")
 @js.native
-class UserAttributes () extends js.Object {
+class UserAttributes () extends StObject {
   def this(args: BusinessAddress) = this()
   
   var businessAddress: js.UndefOr[String] = js.native

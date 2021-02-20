@@ -7,6 +7,7 @@ import typings.materialUi.anon.Text
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,138 +66,126 @@ object AutoCompleteProps {
   }
   
   @scala.inline
-  implicit class AutoCompletePropsOps[Self <: AutoCompleteProps[_], DataItem] (val x: Self with AutoCompleteProps[DataItem]) extends AnyVal {
+  implicit class AutoCompletePropsMutableBuilder[Self <: AutoCompleteProps[_], DataItem] (val x: Self with AutoCompleteProps[DataItem]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceVarargs(value: DataItem*): Self = this.set("dataSource", js.Array(value :_*))
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Array[DataItem]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorOrigin(value: origin): Self = this.set("anchorOrigin", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAnchorOrigin: Self = this.set("anchorOrigin", js.undefined)
+    def setDataSource(value: js.Array[DataItem]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setDataSourceConfig(value: Text): Self = StObject.set(x, "dataSourceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setDataSourceConfigUndefined: Self = StObject.set(x, "dataSourceConfig", js.undefined)
     
     @scala.inline
-    def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setDataSourceVarargs(value: DataItem*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setDisableFocusRipple(value: Boolean): Self = StObject.set(x, "disableFocusRipple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceConfig(value: Text): Self = this.set("dataSourceConfig", value.asInstanceOf[js.Any])
+    def setDisableFocusRippleUndefined: Self = StObject.set(x, "disableFocusRipple", js.undefined)
     
     @scala.inline
-    def deleteDataSourceConfig: Self = this.set("dataSourceConfig", js.undefined)
+    def setFilter(value: (/* searchText */ String, /* key */ String, /* item */ DataItem) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDisableFocusRipple(value: Boolean): Self = this.set("disableFocusRipple", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDisableFocusRipple: Self = this.set("disableFocusRipple", js.undefined)
+    def setListStyle(value: CSSProperties): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: (/* searchText */ String, /* key */ String, /* item */ DataItem) => Boolean): Self = this.set("filter", js.Any.fromFunction3(value))
+    def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMaxSearchResults(value: Double): Self = StObject.set(x, "maxSearchResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListStyle(value: CSSProperties): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    def setMaxSearchResultsUndefined: Self = StObject.set(x, "maxSearchResults", js.undefined)
     
     @scala.inline
-    def deleteListStyle: Self = this.set("listStyle", js.undefined)
+    def setMenuCloseDelay(value: Double): Self = StObject.set(x, "menuCloseDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSearchResults(value: Double): Self = this.set("maxSearchResults", value.asInstanceOf[js.Any])
+    def setMenuCloseDelayUndefined: Self = StObject.set(x, "menuCloseDelay", js.undefined)
     
     @scala.inline
-    def deleteMaxSearchResults: Self = this.set("maxSearchResults", js.undefined)
+    def setMenuProps(value: js.Any): Self = StObject.set(x, "menuProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuCloseDelay(value: Double): Self = this.set("menuCloseDelay", value.asInstanceOf[js.Any])
+    def setMenuPropsUndefined: Self = StObject.set(x, "menuProps", js.undefined)
     
     @scala.inline
-    def deleteMenuCloseDelay: Self = this.set("menuCloseDelay", js.undefined)
+    def setMenuStyle(value: CSSProperties): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuProps(value: js.Any): Self = this.set("menuProps", value.asInstanceOf[js.Any])
+    def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
     
     @scala.inline
-    def deleteMenuProps: Self = this.set("menuProps", js.undefined)
+    def setOnNewRequest(value: (/* chosenRequest */ DataItem, /* index */ Double) => Unit): Self = StObject.set(x, "onNewRequest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMenuStyle(value: CSSProperties): Self = this.set("menuStyle", value.asInstanceOf[js.Any])
+    def setOnNewRequestUndefined: Self = StObject.set(x, "onNewRequest", js.undefined)
     
     @scala.inline
-    def deleteMenuStyle: Self = this.set("menuStyle", js.undefined)
+    def setOnUpdateInput(value: (/* searchText */ String, /* dataSource */ js.Array[DataItem]) => Unit): Self = StObject.set(x, "onUpdateInput", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnNewRequest(value: (/* chosenRequest */ DataItem, /* index */ Double) => Unit): Self = this.set("onNewRequest", js.Any.fromFunction2(value))
+    def setOnUpdateInputUndefined: Self = StObject.set(x, "onUpdateInput", js.undefined)
     
     @scala.inline
-    def deleteOnNewRequest: Self = this.set("onNewRequest", js.undefined)
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnUpdateInput(value: (/* searchText */ String, /* dataSource */ js.Array[DataItem]) => Unit): Self = this.set("onUpdateInput", js.Any.fromFunction2(value))
+    def setOpenOnFocus(value: Boolean): Self = StObject.set(x, "openOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnUpdateInput: Self = this.set("onUpdateInput", js.undefined)
+    def setOpenOnFocusUndefined: Self = StObject.set(x, "openOnFocus", js.undefined)
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setPopoverProps(value: PopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenOnFocus(value: Boolean): Self = this.set("openOnFocus", value.asInstanceOf[js.Any])
+    def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
     
     @scala.inline
-    def deleteOpenOnFocus: Self = this.set("openOnFocus", js.undefined)
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopoverProps(value: PopoverProps): Self = this.set("popoverProps", value.asInstanceOf[js.Any])
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def deletePopoverProps: Self = this.set("popoverProps", js.undefined)
+    def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
     
     @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setTextFieldStyle(value: CSSProperties): Self = StObject.set(x, "textFieldStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetOrigin(value: origin): Self = this.set("targetOrigin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetOrigin: Self = this.set("targetOrigin", js.undefined)
-    
-    @scala.inline
-    def setTextFieldStyle(value: CSSProperties): Self = this.set("textFieldStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFieldStyle: Self = this.set("textFieldStyle", js.undefined)
+    def setTextFieldStyleUndefined: Self = StObject.set(x, "textFieldStyle", js.undefined)
   }
 }

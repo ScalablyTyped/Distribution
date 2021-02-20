@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a client-side equivalent of the AppointmentType enumeration.
   */
 @js.native
-trait ASPxAppointmentType extends js.Object {
+trait ASPxAppointmentType extends StObject {
   
   /**
     * Gets a string representation equivalent of AppointmentType.ChangedOccurrence enumeration for use in client scripts.
@@ -50,33 +51,21 @@ object ASPxAppointmentType {
   }
   
   @scala.inline
-  implicit class ASPxAppointmentTypeOps[Self <: ASPxAppointmentType] (val x: Self) extends AnyVal {
+  implicit class ASPxAppointmentTypeMutableBuilder[Self <: ASPxAppointmentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedOccurrence(value: String): Self = StObject.set(x, "ChangedOccurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletedOccurrence(value: String): Self = StObject.set(x, "DeletedOccurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormal(value: String): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedOccurrence(value: String): Self = this.set("ChangedOccurrence", value.asInstanceOf[js.Any])
+    def setOccurrence(value: String): Self = StObject.set(x, "Occurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedOccurrence(value: String): Self = this.set("DeletedOccurrence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: String): Self = this.set("Normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOccurrence(value: String): Self = this.set("Occurrence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPattern(value: String): Self = this.set("Pattern", value.asInstanceOf[js.Any])
+    def setPattern(value: String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
   }
 }

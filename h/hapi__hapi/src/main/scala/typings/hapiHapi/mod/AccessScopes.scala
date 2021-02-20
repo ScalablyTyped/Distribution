@@ -1,11 +1,12 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessScopes extends js.Object {
+trait AccessScopes extends StObject {
   
   var forbidden: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,45 +23,33 @@ object AccessScopes {
   }
   
   @scala.inline
-  implicit class AccessScopesOps[Self <: AccessScopes] (val x: Self) extends AnyVal {
+  implicit class AccessScopesMutableBuilder[Self <: AccessScopes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForbidden(value: js.Array[String]): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value :_*))
     
     @scala.inline
-    def setForbiddenVarargs(value: String*): Self = this.set("forbidden", js.Array(value :_*))
+    def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbidden(value: js.Array[String]): Self = this.set("forbidden", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteForbidden: Self = this.set("forbidden", js.undefined)
+    def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
     
     @scala.inline
-    def setRequiredVarargs(value: String*): Self = this.set("required", js.Array(value :_*))
+    def setSelection(value: js.Array[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: js.Array[String]): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setSelectionVarargs(value: String*): Self = this.set("selection", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelection(value: js.Array[String]): Self = this.set("selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setSelectionVarargs(value: String*): Self = StObject.set(x, "selection", js.Array(value :_*))
   }
 }

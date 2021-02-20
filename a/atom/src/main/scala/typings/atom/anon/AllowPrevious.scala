@@ -1,12 +1,13 @@
 package typings.atom.anon
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowPrevious extends js.Object {
+trait AllowPrevious extends StObject {
   
   var allowPrevious: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object AllowPrevious {
   }
   
   @scala.inline
-  implicit class AllowPreviousOps[Self <: AllowPrevious] (val x: Self) extends AnyVal {
+  implicit class AllowPreviousMutableBuilder[Self <: AllowPrevious] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPrevious(value: Boolean): Self = StObject.set(x, "allowPrevious", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPreviousUndefined: Self = StObject.set(x, "allowPrevious", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeNonWordCharacters(value: Boolean): Self = StObject.set(x, "includeNonWordCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPrevious(value: Boolean): Self = this.set("allowPrevious", value.asInstanceOf[js.Any])
+    def setIncludeNonWordCharactersUndefined: Self = StObject.set(x, "includeNonWordCharacters", js.undefined)
     
     @scala.inline
-    def deleteAllowPrevious: Self = this.set("allowPrevious", js.undefined)
+    def setWordRegex(value: RegExp): Self = StObject.set(x, "wordRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNonWordCharacters(value: Boolean): Self = this.set("includeNonWordCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeNonWordCharacters: Self = this.set("includeNonWordCharacters", js.undefined)
-    
-    @scala.inline
-    def setWordRegex(value: RegExp): Self = this.set("wordRegex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordRegex: Self = this.set("wordRegex", js.undefined)
+    def setWordRegexUndefined: Self = StObject.set(x, "wordRegex", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketAnalyticsConfigurationOutput extends js.Object {
+trait GetBucketAnalyticsConfigurationOutput extends StObject {
   
   /**
     * The configuration and any analyses for the analytics filter.
@@ -21,24 +22,12 @@ object GetBucketAnalyticsConfigurationOutput {
   }
   
   @scala.inline
-  implicit class GetBucketAnalyticsConfigurationOutputOps[Self <: GetBucketAnalyticsConfigurationOutput] (val x: Self) extends AnyVal {
+  implicit class GetBucketAnalyticsConfigurationOutputMutableBuilder[Self <: GetBucketAnalyticsConfigurationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyticsConfiguration(value: AnalyticsConfiguration): Self = StObject.set(x, "AnalyticsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnalyticsConfiguration(value: AnalyticsConfiguration): Self = this.set("AnalyticsConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnalyticsConfiguration: Self = this.set("AnalyticsConfiguration", js.undefined)
+    def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "AnalyticsConfiguration", js.undefined)
   }
 }

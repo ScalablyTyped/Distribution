@@ -1,6 +1,7 @@
 package typings.typescriptServices.mod.Services
 
 import typings.typescriptServices.TypeScript.PullSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class FindReferenceHelpers ()
   extends typings.typescriptServices.TypeScript.Services.FindReferenceHelpers
-/* static members */
-@JSImport("typescript-services", "Services.FindReferenceHelpers")
-@js.native
-object FindReferenceHelpers extends js.Object {
+object FindReferenceHelpers {
   
-  /* private */ def checkSymbolsForDeclarationEquality(firstSymbol: js.Any, secondSymbol: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("typescript-services", "Services.FindReferenceHelpers.checkSymbolsForDeclarationEquality")
+  @js.native
+  def checkSymbolsForDeclarationEquality(firstSymbol: js.Any, secondSymbol: js.Any): js.Any = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "Services.FindReferenceHelpers.compareSymbolsForLexicalIdentity")
+  @js.native
   def compareSymbolsForLexicalIdentity(firstSymbol: PullSymbol, secondSymbol: PullSymbol): Boolean = js.native
   
-  /* private */ def declarationsAreSameOrParents(firstDecl: js.Any, secondDecl: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("typescript-services", "Services.FindReferenceHelpers.declarationsAreSameOrParents")
+  @js.native
+  def declarationsAreSameOrParents(firstDecl: js.Any, secondDecl: js.Any): js.Any = js.native
 }

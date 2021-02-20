@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The service account keys list response.
   */
 @js.native
-trait SchemaListServiceAccountKeysResponse extends js.Object {
+trait SchemaListServiceAccountKeysResponse extends StObject {
   
   /**
     * The public keys for the service account.
@@ -24,27 +25,15 @@ object SchemaListServiceAccountKeysResponse {
   }
   
   @scala.inline
-  implicit class SchemaListServiceAccountKeysResponseOps[Self <: SchemaListServiceAccountKeysResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListServiceAccountKeysResponseMutableBuilder[Self <: SchemaListServiceAccountKeysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeys(value: js.Array[SchemaServiceAccountKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeysVarargs(value: SchemaServiceAccountKey*): Self = this.set("keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: js.Array[SchemaServiceAccountKey]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
+    def setKeysVarargs(value: SchemaServiceAccountKey*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

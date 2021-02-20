@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Init extends js.Object {
+trait Init extends StObject {
   
   /**
     * Initializes the seedable pseudo-random number generator (PRNG) and integrates it into the story state and saves.

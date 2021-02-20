@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationsStartForAuthenticatedUserEndpoint extends js.Object {
+trait MigrationsStartForAuthenticatedUserEndpoint extends StObject {
   
   /**
     * Does not include attachments uploaded to GitHub.com in the migration data when set to `true`. Excluding attachments will reduce the migration archive file size.
@@ -31,36 +32,24 @@ object MigrationsStartForAuthenticatedUserEndpoint {
   }
   
   @scala.inline
-  implicit class MigrationsStartForAuthenticatedUserEndpointOps[Self <: MigrationsStartForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class MigrationsStartForAuthenticatedUserEndpointMutableBuilder[Self <: MigrationsStartForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclude_attachments(value: Boolean): Self = StObject.set(x, "exclude_attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclude_attachmentsUndefined: Self = StObject.set(x, "exclude_attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLock_repositories(value: Boolean): Self = StObject.set(x, "lock_repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoriesVarargs(value: String*): Self = this.set("repositories", js.Array(value :_*))
+    def setLock_repositoriesUndefined: Self = StObject.set(x, "lock_repositories", js.undefined)
     
     @scala.inline
-    def setRepositories(value: js.Array[String]): Self = this.set("repositories", value.asInstanceOf[js.Any])
+    def setRepositories(value: js.Array[String]): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclude_attachments(value: Boolean): Self = this.set("exclude_attachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclude_attachments: Self = this.set("exclude_attachments", js.undefined)
-    
-    @scala.inline
-    def setLock_repositories(value: Boolean): Self = this.set("lock_repositories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLock_repositories: Self = this.set("lock_repositories", js.undefined)
+    def setRepositoriesVarargs(value: String*): Self = StObject.set(x, "repositories", js.Array(value :_*))
   }
 }

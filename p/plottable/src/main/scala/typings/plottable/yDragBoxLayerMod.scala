@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.dragBoxLayerMod.DragBoxLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/yDragBoxLayer", JSImport.Namespace)
-@js.native
-object yDragBoxLayerMod extends js.Object {
+object yDragBoxLayerMod {
   
+  @JSImport("plottable/build/src/components/yDragBoxLayer", "YDragBoxLayer")
   @js.native
   /**
     * A YDragBoxLayer is a DragBoxLayer whose size can only be set in the Y-direction.

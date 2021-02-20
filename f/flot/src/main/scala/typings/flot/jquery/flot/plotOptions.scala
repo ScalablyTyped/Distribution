@@ -1,11 +1,12 @@
 package typings.flot.jquery.flot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait plotOptions extends js.Object {
+trait plotOptions extends StObject {
   
   var colors: js.UndefOr[js.Array[_]] = js.native
   
@@ -36,87 +37,75 @@ object plotOptions {
   }
   
   @scala.inline
-  implicit class plotOptionsOps[Self <: plotOptions] (val x: Self) extends AnyVal {
+  implicit class plotOptionsMutableBuilder[Self <: plotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColors(value: js.Array[_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
     @scala.inline
-    def setColorsVarargs(value: js.Any*): Self = this.set("colors", js.Array(value :_*))
+    def setGrid(value: gridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[_]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setHooks(value: hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: gridOptions): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setInteraction(value: interaction): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: hooks): Self = this.set("hooks", value.asInstanceOf[js.Any])
+    def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
     @scala.inline
-    def deleteHooks: Self = this.set("hooks", js.undefined)
+    def setLegend(value: legendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteraction(value: interaction): Self = this.set("interaction", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteInteraction: Self = this.set("interaction", js.undefined)
+    def setSeries(value: seriesOptions): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: legendOptions): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setXaxes(value: js.Array[axisOptions]): Self = StObject.set(x, "xaxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: seriesOptions): Self = this.set("series", value.asInstanceOf[js.Any])
+    def setXaxesUndefined: Self = StObject.set(x, "xaxes", js.undefined)
     
     @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
+    def setXaxesVarargs(value: axisOptions*): Self = StObject.set(x, "xaxes", js.Array(value :_*))
     
     @scala.inline
-    def setXaxesVarargs(value: axisOptions*): Self = this.set("xaxes", js.Array(value :_*))
+    def setXaxis(value: axisOptions): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXaxes(value: js.Array[axisOptions]): Self = this.set("xaxes", value.asInstanceOf[js.Any])
+    def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
     @scala.inline
-    def deleteXaxes: Self = this.set("xaxes", js.undefined)
+    def setYaxes(value: js.Array[axisOptions]): Self = StObject.set(x, "yaxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXaxis(value: axisOptions): Self = this.set("xaxis", value.asInstanceOf[js.Any])
+    def setYaxesUndefined: Self = StObject.set(x, "yaxes", js.undefined)
     
     @scala.inline
-    def deleteXaxis: Self = this.set("xaxis", js.undefined)
+    def setYaxesVarargs(value: axisOptions*): Self = StObject.set(x, "yaxes", js.Array(value :_*))
     
     @scala.inline
-    def setYaxesVarargs(value: axisOptions*): Self = this.set("yaxes", js.Array(value :_*))
+    def setYaxis(value: axisOptions): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYaxes(value: js.Array[axisOptions]): Self = this.set("yaxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYaxes: Self = this.set("yaxes", js.undefined)
-    
-    @scala.inline
-    def setYaxis(value: axisOptions): Self = this.set("yaxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYaxis: Self = this.set("yaxis", js.undefined)
+    def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Account
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppsListInstallationsForAuthenticatedUserResponseData extends js.Object {
+trait AppsListInstallationsForAuthenticatedUserResponseData extends StObject {
   
   var installations: js.Array[Account] = js.native
   
@@ -21,27 +22,15 @@ object AppsListInstallationsForAuthenticatedUserResponseData {
   }
   
   @scala.inline
-  implicit class AppsListInstallationsForAuthenticatedUserResponseDataOps[Self <: AppsListInstallationsForAuthenticatedUserResponseData] (val x: Self) extends AnyVal {
+  implicit class AppsListInstallationsForAuthenticatedUserResponseDataMutableBuilder[Self <: AppsListInstallationsForAuthenticatedUserResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallations(value: js.Array[Account]): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallationsVarargs(value: Account*): Self = StObject.set(x, "installations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstallationsVarargs(value: Account*): Self = this.set("installations", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstallations(value: js.Array[Account]): Self = this.set("installations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

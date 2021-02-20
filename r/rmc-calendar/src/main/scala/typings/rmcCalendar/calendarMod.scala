@@ -1,23 +1,70 @@
 package typings.rmcCalendar
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.rmcCalendar.anon.EndDate
 import typings.rmcCalendar.anon.ReadonlychildrenReactNode
 import typings.rmcCalendar.anon.TypeofHeader
 import typings.rmcCalendar.calendarPropsMod.PropsType
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-calendar/lib/Calendar", JSImport.Namespace)
-@js.native
-object calendarMod extends js.Object {
+object calendarMod {
+  
+  @JSImport("rmc-calendar/lib/Calendar", JSImport.Default)
+  @js.native
+  class default protected () extends Calendar {
+    def this(props: PropsType) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("rmc-calendar/lib/Calendar", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-calendar/lib/Calendar", "default.DefaultHeader")
+    @js.native
+    def DefaultHeader: TypeofHeader = js.native
+    @scala.inline
+    def DefaultHeader_=(x: TypeofHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultHeader")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rmc-calendar/lib/Calendar", "default.DefaultShortcut")
+    @js.native
+    def DefaultShortcut: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default] = js.native
+    @scala.inline
+    def DefaultShortcut_=(x: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultShortcut")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rmc-calendar/lib/Calendar", "default.defaultProps")
+    @js.native
+    def defaultProps: PropsType = js.native
+    @scala.inline
+    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("rmc-calendar/lib/Calendar", "StateType")
+  @js.native
+  class StateType () extends StObject {
+    
+    var clientHight: js.UndefOr[Double] = js.native
+    
+    var disConfirmBtn: js.UndefOr[Boolean] = js.native
+    
+    var endDate: js.UndefOr[Date] = js.native
+    
+    var showTimePicker: Boolean = js.native
+    
+    var startDate: js.UndefOr[Date] = js.native
+    
+    var timePickerTitle: js.UndefOr[String] = js.native
+  }
   
   @js.native
   trait Calendar
-    extends Component[PropsType, StateType, js.Any] {
+    extends PureComponent[PropsType, StateType, js.Any] {
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MCalendar(nextProps: PropsType): Unit = js.native
@@ -64,37 +111,6 @@ object calendarMod extends js.Object {
     
     def shortcutSelect(startDate: Date, endDate: Date): Unit = js.native
     def shortcutSelect(startDate: Date, endDate: Date, props: ReadonlychildrenReactNode): Unit = js.native
-  }
-  
-  @js.native
-  class StateType () extends js.Object {
-    
-    var clientHight: js.UndefOr[Double] = js.native
-    
-    var disConfirmBtn: js.UndefOr[Boolean] = js.native
-    
-    var endDate: js.UndefOr[Date] = js.native
-    
-    var showTimePicker: Boolean = js.native
-    
-    var startDate: js.UndefOr[Date] = js.native
-    
-    var timePickerTitle: js.UndefOr[String] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Calendar {
-    def this(props: PropsType) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var DefaultHeader: TypeofHeader = js.native
-    
-    var DefaultShortcut: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default] = js.native
-    
-    var defaultProps: PropsType = js.native
   }
   
   type ExtraData = typings.rmcCalendar.dataTypesMod.Models.ExtraData

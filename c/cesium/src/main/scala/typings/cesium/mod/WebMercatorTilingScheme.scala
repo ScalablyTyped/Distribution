@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.NumberOfLevelZeroTilesY
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "WebMercatorTilingScheme")
 @js.native
-class WebMercatorTilingScheme () extends js.Object {
+class WebMercatorTilingScheme () extends StObject {
   def this(options: NumberOfLevelZeroTilesY) = this()
   
   var ellipsoid: Ellipsoid = js.native

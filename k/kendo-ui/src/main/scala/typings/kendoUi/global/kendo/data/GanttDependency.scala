@@ -1,9 +1,11 @@
 package typings.kendoUi.global.kendo.data
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.kendoUi.anon.TypeofGanttDependency
 import typings.kendoUi.kendo.data.DataSourceSchemaModelFields
 import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsArray
 import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +16,32 @@ class GanttDependency ()
   extends typings.kendoUi.kendo.data.GanttDependency {
   def this(data: js.Any) = this()
 }
-/* static members */
-@JSGlobal("kendo.data.GanttDependency")
-@js.native
-object GanttDependency extends js.Object {
+object GanttDependency {
   
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttDependency = js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttDependency = js.native
+  @JSGlobal("kendo.data.GanttDependency")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var fields: DataSourceSchemaModelFields = js.native
+  /* static member */
+  @JSGlobal("kendo.data.GanttDependency.define")
+  @js.native
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttDependency with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency]) = js.native
+  /* static member */
+  @JSGlobal("kendo.data.GanttDependency.define")
+  @js.native
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttDependency with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency]) = js.native
   
-  var idField: String = js.native
+  /* static member */
+  @JSGlobal("kendo.data.GanttDependency.fields")
+  @js.native
+  def fields: DataSourceSchemaModelFields = js.native
+  @scala.inline
+  def fields_=(x: DataSourceSchemaModelFields): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("kendo.data.GanttDependency.idField")
+  @js.native
+  def idField: String = js.native
+  @scala.inline
+  def idField_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idField")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveCaseRequest extends js.Object {
+trait ResolveCaseRequest extends StObject {
   
   /**
     * The AWS Support case ID requested or returned in the call. The case ID is an alphanumeric string formatted as shown in this example: case-12345678910-2013-c4c1d2bf33c5cf47 
@@ -21,24 +22,12 @@ object ResolveCaseRequest {
   }
   
   @scala.inline
-  implicit class ResolveCaseRequestOps[Self <: ResolveCaseRequest] (val x: Self) extends AnyVal {
+  implicit class ResolveCaseRequestMutableBuilder[Self <: ResolveCaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCaseId(value: CaseId): Self = this.set("caseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCaseId: Self = this.set("caseId", js.undefined)
+    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaFindThreatMatchesResponse extends js.Object {
+trait SchemaFindThreatMatchesResponse extends StObject {
   
   /**
     * The threat list matches.
@@ -21,27 +22,15 @@ object SchemaFindThreatMatchesResponse {
   }
   
   @scala.inline
-  implicit class SchemaFindThreatMatchesResponseOps[Self <: SchemaFindThreatMatchesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaFindThreatMatchesResponseMutableBuilder[Self <: SchemaFindThreatMatchesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatches(value: js.Array[SchemaThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMatchesVarargs(value: SchemaThreatMatch*): Self = this.set("matches", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatches(value: js.Array[SchemaThreatMatch]): Self = this.set("matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setMatchesVarargs(value: SchemaThreatMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

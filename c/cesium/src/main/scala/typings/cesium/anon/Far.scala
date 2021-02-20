@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Far extends js.Object {
+trait Far extends StObject {
   
   var aspectRatio: Double = js.native
   
@@ -28,48 +29,36 @@ object Far {
   }
   
   @scala.inline
-  implicit class FarOps[Self <: Far] (val x: Self) extends AnyVal {
+  implicit class FarMutableBuilder[Self <: Far] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
     
     @scala.inline
-    def setAspectRatio(value: Double): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFov(value: Double): Self = this.set("fov", value.asInstanceOf[js.Any])
+    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFar(value: Double): Self = this.set("far", value.asInstanceOf[js.Any])
+    def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
     
     @scala.inline
-    def deleteFar: Self = this.set("far", js.undefined)
+    def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNear(value: Double): Self = this.set("near", value.asInstanceOf[js.Any])
+    def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
     
     @scala.inline
-    def deleteNear: Self = this.set("near", js.undefined)
+    def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXOffset(value: Double): Self = this.set("xOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXOffset: Self = this.set("xOffset", js.undefined)
-    
-    @scala.inline
-    def setYOffset(value: Double): Self = this.set("yOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOffset: Self = this.set("yOffset", js.undefined)
+    def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
   }
 }

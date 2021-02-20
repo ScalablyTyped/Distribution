@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.luxon.anon.Literal
 import typings.std.RegExp
 import typings.std.RegExpMatchArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExplainedFormat extends js.Object {
+trait ExplainedFormat extends StObject {
   
   var input: String = js.native
   
@@ -36,72 +37,60 @@ object ExplainedFormat {
   }
   
   @scala.inline
-  implicit class ExplainedFormatOps[Self <: ExplainedFormat] (val x: Self) extends AnyVal {
+  implicit class ExplainedFormatMutableBuilder[Self <: ExplainedFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInvalidReason(value: String): Self = StObject.set(x, "invalidReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidReasonUndefined: Self = StObject.set(x, "invalidReason", js.undefined)
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setMatches(value: StringDictionary[js.Any]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokensVarargs(value: Literal*): Self = this.set("tokens", js.Array(value :_*))
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def setTokens(value: js.Array[Literal]): Self = this.set("tokens", value.asInstanceOf[js.Any])
+    def setRawMatches(value: RegExpMatchArray): Self = StObject.set(x, "rawMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidReason(value: String): Self = this.set("invalidReason", value.asInstanceOf[js.Any])
+    def setRawMatchesNull: Self = StObject.set(x, "rawMatches", null)
     
     @scala.inline
-    def deleteInvalidReason: Self = this.set("invalidReason", js.undefined)
+    def setRawMatchesUndefined: Self = StObject.set(x, "rawMatches", js.undefined)
     
     @scala.inline
-    def setMatches(value: StringDictionary[js.Any]): Self = this.set("matches", value.asInstanceOf[js.Any])
+    def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     
     @scala.inline
-    def setRawMatches(value: RegExpMatchArray): Self = this.set("rawMatches", value.asInstanceOf[js.Any])
+    def setResult(value: StringDictionary[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRawMatches: Self = this.set("rawMatches", js.undefined)
+    def setResultNull: Self = StObject.set(x, "result", null)
     
     @scala.inline
-    def setRawMatchesNull: Self = this.set("rawMatches", null)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def setRegex(value: RegExp): Self = this.set("regex", value.asInstanceOf[js.Any])
+    def setTokens(value: js.Array[Literal]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegex: Self = this.set("regex", js.undefined)
+    def setTokensVarargs(value: Literal*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     
     @scala.inline
-    def setResult(value: StringDictionary[js.Any]): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setZoneNull: Self = StObject.set(x, "zone", null)
     
     @scala.inline
-    def setResultNull: Self = this.set("result", null)
-    
-    @scala.inline
-    def setZone(value: Zone): Self = this.set("zone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
-    
-    @scala.inline
-    def setZoneNull: Self = this.set("zone", null)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

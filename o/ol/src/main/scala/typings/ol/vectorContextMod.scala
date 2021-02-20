@@ -3,16 +3,19 @@ package typings.ol
 import typings.ol.canvasMod.DeclutterGroup
 import typings.ol.canvasMod.DeclutterGroups
 import typings.ol.olFeatureMod.FeatureLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/render/VectorContext", JSImport.Namespace)
-@js.native
-object vectorContextMod extends js.Object {
+object vectorContextMod {
+  
+  @JSImport("ol/render/VectorContext", JSImport.Default)
+  @js.native
+  class default () extends VectorContext
   
   @js.native
-  trait VectorContext extends js.Object {
+  trait VectorContext extends StObject {
     
     def drawCircle(
       circleGeometry: typings.ol.circleMod.default,
@@ -72,7 +75,4 @@ object vectorContextMod extends js.Object {
     def setTextStyle(textStyle: typings.ol.textMod.default): Unit = js.native
     def setTextStyle(textStyle: typings.ol.textMod.default, opt_declutterGroups: DeclutterGroups): Unit = js.native
   }
-  
-  @js.native
-  class default () extends VectorContext
 }

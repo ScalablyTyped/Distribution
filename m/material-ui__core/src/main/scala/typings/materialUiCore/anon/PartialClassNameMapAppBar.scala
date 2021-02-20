@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/AppBar/AppBar.AppBarClassKey>> */
 @js.native
-trait PartialClassNameMapAppBar extends js.Object {
+trait PartialClassNameMapAppBar extends StObject {
   
   var colorDefault: js.UndefOr[String] = js.native
   
@@ -35,72 +36,60 @@ object PartialClassNameMapAppBar {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapAppBarOps[Self <: PartialClassNameMapAppBar] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapAppBarMutableBuilder[Self <: PartialClassNameMapAppBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorDefault(value: String): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorDefaultUndefined: Self = StObject.set(x, "colorDefault", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorDefault(value: String): Self = this.set("colorDefault", value.asInstanceOf[js.Any])
+    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
     @scala.inline
-    def deleteColorDefault: Self = this.set("colorDefault", js.undefined)
+    def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
     @scala.inline
-    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    def setPositionAbsolute(value: String): Self = StObject.set(x, "positionAbsolute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    def setPositionAbsoluteUndefined: Self = StObject.set(x, "positionAbsolute", js.undefined)
     
     @scala.inline
-    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    def setPositionFixed(value: String): Self = StObject.set(x, "positionFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionAbsolute(value: String): Self = this.set("positionAbsolute", value.asInstanceOf[js.Any])
+    def setPositionFixedUndefined: Self = StObject.set(x, "positionFixed", js.undefined)
     
     @scala.inline
-    def deletePositionAbsolute: Self = this.set("positionAbsolute", js.undefined)
+    def setPositionRelative(value: String): Self = StObject.set(x, "positionRelative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionFixed(value: String): Self = this.set("positionFixed", value.asInstanceOf[js.Any])
+    def setPositionRelativeUndefined: Self = StObject.set(x, "positionRelative", js.undefined)
     
     @scala.inline
-    def deletePositionFixed: Self = this.set("positionFixed", js.undefined)
+    def setPositionStatic(value: String): Self = StObject.set(x, "positionStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionRelative(value: String): Self = this.set("positionRelative", value.asInstanceOf[js.Any])
+    def setPositionStaticUndefined: Self = StObject.set(x, "positionStatic", js.undefined)
     
     @scala.inline
-    def deletePositionRelative: Self = this.set("positionRelative", js.undefined)
+    def setPositionSticky(value: String): Self = StObject.set(x, "positionSticky", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionStatic(value: String): Self = this.set("positionStatic", value.asInstanceOf[js.Any])
+    def setPositionStickyUndefined: Self = StObject.set(x, "positionSticky", js.undefined)
     
     @scala.inline
-    def deletePositionStatic: Self = this.set("positionStatic", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionSticky(value: String): Self = this.set("positionSticky", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositionSticky: Self = this.set("positionSticky", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancer extends js.Object {
+trait LoadBalancer extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
@@ -96,126 +97,114 @@ object LoadBalancer {
   }
   
   @scala.inline
-  implicit class LoadBalancerOps[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerMutableBuilder[Self <: LoadBalancer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationOptions(value: LoadBalancerConfigurationOptions): Self = StObject.set(x, "configurationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setConfigurationOptionsUndefined: Self = StObject.set(x, "configurationOptions", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationOptions(value: LoadBalancerConfigurationOptions): Self = this.set("configurationOptions", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteConfigurationOptions: Self = this.set("configurationOptions", js.undefined)
+    def setDnsName(value: NonEmptyString): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setHealthCheckPath(value: NonEmptyString): Self = StObject.set(x, "healthCheckPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsName(value: NonEmptyString): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    def setHealthCheckPathUndefined: Self = StObject.set(x, "healthCheckPath", js.undefined)
     
     @scala.inline
-    def deleteDnsName: Self = this.set("dnsName", js.undefined)
+    def setInstanceHealthSummary(value: InstanceHealthSummaryList): Self = StObject.set(x, "instanceHealthSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckPath(value: NonEmptyString): Self = this.set("healthCheckPath", value.asInstanceOf[js.Any])
+    def setInstanceHealthSummaryUndefined: Self = StObject.set(x, "instanceHealthSummary", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckPath: Self = this.set("healthCheckPath", js.undefined)
+    def setInstanceHealthSummaryVarargs(value: InstanceHealthSummary*): Self = StObject.set(x, "instanceHealthSummary", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceHealthSummaryVarargs(value: InstanceHealthSummary*): Self = this.set("instanceHealthSummary", js.Array(value :_*))
+    def setInstancePort(value: integer): Self = StObject.set(x, "instancePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceHealthSummary(value: InstanceHealthSummaryList): Self = this.set("instanceHealthSummary", value.asInstanceOf[js.Any])
+    def setInstancePortUndefined: Self = StObject.set(x, "instancePort", js.undefined)
     
     @scala.inline
-    def deleteInstanceHealthSummary: Self = this.set("instanceHealthSummary", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancePort(value: integer): Self = this.set("instancePort", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteInstancePort: Self = this.set("instancePort", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setProtocol(value: LoadBalancerProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublicPorts(value: PortList): Self = StObject.set(x, "publicPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: LoadBalancerProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setPublicPortsUndefined: Self = StObject.set(x, "publicPorts", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setPublicPortsVarargs(value: Port*): Self = StObject.set(x, "publicPorts", js.Array(value :_*))
     
     @scala.inline
-    def setPublicPortsVarargs(value: Port*): Self = this.set("publicPorts", js.Array(value :_*))
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicPorts(value: PortList): Self = this.set("publicPorts", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deletePublicPorts: Self = this.set("publicPorts", js.undefined)
+    def setState(value: LoadBalancerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: LoadBalancerState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setTlsCertificateSummaries(value: LoadBalancerTlsCertificateSummaryList): Self = StObject.set(x, "tlsCertificateSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTlsCertificateSummariesUndefined: Self = StObject.set(x, "tlsCertificateSummaries", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTlsCertificateSummariesVarargs(value: LoadBalancerTlsCertificateSummary*): Self = this.set("tlsCertificateSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setTlsCertificateSummaries(value: LoadBalancerTlsCertificateSummaryList): Self = this.set("tlsCertificateSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsCertificateSummaries: Self = this.set("tlsCertificateSummaries", js.undefined)
+    def setTlsCertificateSummariesVarargs(value: LoadBalancerTlsCertificateSummary*): Self = StObject.set(x, "tlsCertificateSummaries", js.Array(value :_*))
   }
 }

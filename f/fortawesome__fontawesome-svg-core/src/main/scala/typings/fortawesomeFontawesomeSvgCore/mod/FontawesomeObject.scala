@@ -1,12 +1,13 @@
 package typings.fortawesomeFontawesomeSvgCore.mod
 
 import typings.std.HTMLCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontawesomeObject extends js.Object {
+trait FontawesomeObject extends StObject {
   
   val `abstract`: js.Array[AbstractElement] = js.native
   
@@ -24,33 +25,21 @@ object FontawesomeObject {
   }
   
   @scala.inline
-  implicit class FontawesomeObjectOps[Self <: FontawesomeObject] (val x: Self) extends AnyVal {
+  implicit class FontawesomeObjectMutableBuilder[Self <: FontawesomeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstract(value: js.Array[AbstractElement]): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbstractVarargs(value: AbstractElement*): Self = StObject.set(x, "abstract", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtml(value: js.Array[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbstractVarargs(value: AbstractElement*): Self = this.set("abstract", js.Array(value :_*))
+    def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value :_*))
     
     @scala.inline
-    def setAbstract(value: js.Array[AbstractElement]): Self = this.set("abstract", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlVarargs(value: String*): Self = this.set("html", js.Array(value :_*))
-    
-    @scala.inline
-    def setHtml(value: js.Array[String]): Self = this.set("html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNode(value: HTMLCollection): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setNode(value: HTMLCollection): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

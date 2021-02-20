@@ -1,12 +1,13 @@
 package typings.typedoc.mod.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.HighlightSpanKind")
 @js.native
-object HighlightSpanKind extends js.Object {
+object HighlightSpanKind extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.typescript.mod.HighlightSpanKind with String] = js.native

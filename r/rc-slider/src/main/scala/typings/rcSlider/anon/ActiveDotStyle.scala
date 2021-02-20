@@ -1,11 +1,12 @@
 package typings.rcSlider.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveDotStyle extends js.Object {
+trait ActiveDotStyle extends StObject {
   
   var activeDotStyle: js.Any = js.native
   
@@ -56,57 +57,45 @@ object ActiveDotStyle {
   }
   
   @scala.inline
-  implicit class ActiveDotStyleOps[Self <: ActiveDotStyle] (val x: Self) extends AnyVal {
+  implicit class ActiveDotStyleMutableBuilder[Self <: ActiveDotStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDotStyle(value: js.Any): Self = StObject.set(x, "activeDotStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotStyle(value: js.Any): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDots(value: js.Any): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDotStyle(value: js.Any): Self = this.set("activeDotStyle", value.asInstanceOf[js.Any])
+    def setIncluded(value: js.Any): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotStyle(value: js.Any): Self = this.set("dotStyle", value.asInstanceOf[js.Any])
+    def setLowerBound(value: js.Any): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDots(value: js.Any): Self = this.set("dots", value.asInstanceOf[js.Any])
+    def setMarks(value: js.Any): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncluded(value: js.Any): Self = this.set("included", value.asInstanceOf[js.Any])
+    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerBound(value: js.Any): Self = this.set("lowerBound", value.asInstanceOf[js.Any])
+    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarks(value: js.Any): Self = this.set("marks", value.asInstanceOf[js.Any])
+    def setPrefixCls(value: js.Any): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: js.Any): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setReverse(value: js.Any): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: js.Any): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixCls(value: js.Any): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    def setUpperBound(value: js.Any): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: js.Any): Self = this.set("reverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: js.Any): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpperBound(value: js.Any): Self = this.set("upperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertical(value: js.Any): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: js.Any): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
   }
 }

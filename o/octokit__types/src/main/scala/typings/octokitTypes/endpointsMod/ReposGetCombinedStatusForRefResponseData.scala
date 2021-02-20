@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Archiveurl
 import typings.octokitTypes.anon.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposGetCombinedStatusForRefResponseData extends js.Object {
+trait ReposGetCombinedStatusForRefResponseData extends StObject {
   
   var commit_url: String = js.native
   
@@ -40,42 +41,30 @@ object ReposGetCombinedStatusForRefResponseData {
   }
   
   @scala.inline
-  implicit class ReposGetCombinedStatusForRefResponseDataOps[Self <: ReposGetCombinedStatusForRefResponseData] (val x: Self) extends AnyVal {
+  implicit class ReposGetCombinedStatusForRefResponseDataMutableBuilder[Self <: ReposGetCombinedStatusForRefResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommit_url(value: String): Self = StObject.set(x, "commit_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepository(value: Archiveurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit_url(value: String): Self = this.set("commit_url", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: Archiveurl): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setStatuses(value: js.Array[Context]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha(value: String): Self = this.set("sha", value.asInstanceOf[js.Any])
+    def setStatusesVarargs(value: Context*): Self = StObject.set(x, "statuses", js.Array(value :_*))
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusesVarargs(value: Context*): Self = this.set("statuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatuses(value: js.Array[Context]): Self = this.set("statuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

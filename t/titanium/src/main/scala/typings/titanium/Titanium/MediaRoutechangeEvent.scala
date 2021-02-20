@@ -1,6 +1,7 @@
 package typings.titanium.Titanium
 
 import typings.titanium.RouteDescription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object MediaRoutechangeEvent {
   }
   
   @scala.inline
-  implicit class MediaRoutechangeEventOps[Self <: MediaRoutechangeEvent] (val x: Self) extends AnyVal {
+  implicit class MediaRoutechangeEventMutableBuilder[Self <: MediaRoutechangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentRoute(value: RouteDescription): Self = StObject.set(x, "currentRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOldRoute(value: RouteDescription): Self = StObject.set(x, "oldRoute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentRoute(value: RouteDescription): Self = this.set("currentRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldRoute(value: RouteDescription): Self = this.set("oldRoute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

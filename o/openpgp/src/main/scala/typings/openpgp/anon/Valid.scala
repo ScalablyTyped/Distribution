@@ -1,11 +1,12 @@
 package typings.openpgp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Valid extends js.Object {
+trait Valid extends StObject {
   
   var keyid: typings.openpgp.mod.`type`.keyid.Keyid = js.native
   
@@ -22,27 +23,15 @@ object Valid {
   }
   
   @scala.inline
-  implicit class ValidOps[Self <: Valid] (val x: Self) extends AnyVal {
+  implicit class ValidMutableBuilder[Self <: Valid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = this.set("keyid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerified(value: js.Promise[Boolean]): Self = this.set("verified", value.asInstanceOf[js.Any])
+    def setVerified(value: js.Promise[Boolean]): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
   }
 }

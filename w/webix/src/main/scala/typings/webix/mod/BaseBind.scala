@@ -1,12 +1,12 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseBind extends js.Object {
+trait BaseBind extends StObject {
   
   def bind(target: js.Any): Unit = js.native
   def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
@@ -15,6 +15,3 @@ trait BaseBind extends js.Object {
   
   def unbind(): Unit = js.native
 }
-@JSImport("webix", "BaseBind")
-@js.native
-object BaseBind extends TopLevel[BaseBind]

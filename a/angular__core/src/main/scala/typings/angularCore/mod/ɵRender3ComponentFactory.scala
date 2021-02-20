@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ class ɵRender3ComponentFactory[T] protected () extends ComponentFactory[T] {
   var componentDef: js.Any = js.native
   
   @JSName("componentType")
-  var componentType_FɵRender3ComponentFactory: Type[_] = js.native
+  var componentType_FɵRender3ComponentFactory: typings.angularCore.mod.Type[_] = js.native
   
   var isBoundToModule: Boolean = js.native
   

@@ -1,7 +1,7 @@
 package typings.ddTrace.mod.plugins
 
-import typings.ddTrace.mod.Analyzable
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [ioredis](https://github.com/luin/ioredis) module.
   */
 @js.native
-trait ioredis
-  extends Integration
-     with Analyzable {
+trait ioredis extends Instrumentation {
   
   /**
     * List of commands that should not be instrumented. Takes precedence over
@@ -43,46 +41,34 @@ object ioredis {
   }
   
   @scala.inline
-  implicit class ioredisOps[Self <: ioredis] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlacklistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = this.set("blacklist", js.Array(value :_*))
-    
-    @scala.inline
-    def setBlacklistFunction1(value: /* command */ String => Boolean): Self = this.set("blacklist", js.Any.fromFunction1(value))
+  implicit class ioredisMutableBuilder[Self <: ioredis] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBlacklist(
       value: String | RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* command */ String, Boolean])])
-    ): Self = this.set("blacklist", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlacklist: Self = this.set("blacklist", js.undefined)
+    def setBlacklistFunction1(value: /* command */ String => Boolean): Self = StObject.set(x, "blacklist", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWhitelistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = this.set("whitelist", js.Array(value :_*))
+    def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
     
     @scala.inline
-    def setWhitelistFunction1(value: /* command */ String => Boolean): Self = this.set("whitelist", js.Any.fromFunction1(value))
+    def setBlacklistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     
     @scala.inline
     def setWhitelist(
       value: String | RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* command */ String, Boolean])])
-    ): Self = this.set("whitelist", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhitelist: Self = this.set("whitelist", js.undefined)
+    def setWhitelistFunction1(value: /* command */ String => Boolean): Self = StObject.set(x, "whitelist", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    
+    @scala.inline
+    def setWhitelistVarargs(value: (String | RegExp | (js.Function1[/* command */ String, Boolean]))*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
   }
 }

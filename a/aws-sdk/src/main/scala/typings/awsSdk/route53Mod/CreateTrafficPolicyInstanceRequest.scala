@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTrafficPolicyInstanceRequest extends js.Object {
+trait CreateTrafficPolicyInstanceRequest extends StObject {
   
   /**
     * The ID of the hosted zone that you want Amazon Route 53 to create resource record sets in by using the configuration in a traffic policy.
@@ -47,33 +48,21 @@ object CreateTrafficPolicyInstanceRequest {
   }
   
   @scala.inline
-  implicit class CreateTrafficPolicyInstanceRequestOps[Self <: CreateTrafficPolicyInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTrafficPolicyInstanceRequestMutableBuilder[Self <: CreateTrafficPolicyInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    def setTrafficPolicyId(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DNSName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTTL(value: TTL): Self = this.set("TTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicyId(value: TrafficPolicyId): Self = this.set("TrafficPolicyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = this.set("TrafficPolicyVersion", value.asInstanceOf[js.Any])
+    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyVersion", value.asInstanceOf[js.Any])
   }
 }

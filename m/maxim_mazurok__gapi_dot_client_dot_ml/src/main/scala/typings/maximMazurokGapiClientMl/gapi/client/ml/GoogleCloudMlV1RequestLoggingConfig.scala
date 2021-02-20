@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1RequestLoggingConfig extends js.Object {
+trait GoogleCloudMlV1RequestLoggingConfig extends StObject {
   
   /**
     * Required. Fully qualified BigQuery table name in the following format: " project_id.dataset_name.table_name" The specified table must already exist, and the "Cloud ML Service Agent"
@@ -29,30 +30,18 @@ object GoogleCloudMlV1RequestLoggingConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1RequestLoggingConfigOps[Self <: GoogleCloudMlV1RequestLoggingConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1RequestLoggingConfigMutableBuilder[Self <: GoogleCloudMlV1RequestLoggingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigqueryTableName(value: String): Self = StObject.set(x, "bigqueryTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigqueryTableNameUndefined: Self = StObject.set(x, "bigqueryTableName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSamplingPercentage(value: Double): Self = StObject.set(x, "samplingPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigqueryTableName(value: String): Self = this.set("bigqueryTableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBigqueryTableName: Self = this.set("bigqueryTableName", js.undefined)
-    
-    @scala.inline
-    def setSamplingPercentage(value: Double): Self = this.set("samplingPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamplingPercentage: Self = this.set("samplingPercentage", js.undefined)
+    def setSamplingPercentageUndefined: Self = StObject.set(x, "samplingPercentage", js.undefined)
   }
 }

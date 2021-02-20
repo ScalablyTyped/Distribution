@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLocaleData for links to DTD of XML locale data files.
   */
 @js.native
-trait Calendar extends js.Object {
+trait Calendar extends StObject {
   
   var Days: SafeArray[CalendarItem] = js.native
   
@@ -43,39 +44,27 @@ object Calendar {
   }
   
   @scala.inline
-  implicit class CalendarOps[Self <: Calendar] (val x: Self) extends AnyVal {
+  implicit class CalendarMutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDays(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEras(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Eras", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDays(value: SafeArray[CalendarItem]): Self = this.set("Days", value.asInstanceOf[js.Any])
+    def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("Default", value.asInstanceOf[js.Any])
+    def setMonths(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEras(value: SafeArray[CalendarItem]): Self = this.set("Eras", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = this.set("MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonths(value: SafeArray[CalendarItem]): Self = this.set("Months", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartOfWeek(value: String): Self = this.set("StartOfWeek", value.asInstanceOf[js.Any])
+    def setStartOfWeek(value: String): Self = StObject.set(x, "StartOfWeek", value.asInstanceOf[js.Any])
   }
 }

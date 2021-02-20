@@ -2,20 +2,21 @@ package typings.homeworks
 
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/spinner/main", JSImport.Namespace)
-@js.native
-object spinnerMainMod extends js.Object {
+object spinnerMainMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/spinner/main", "WorksOption")
   @js.native
   class WorksOption protected ()
     extends typings.homeworks.componentOptionMod.WorksOption {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
   }
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/spinner/main", "WorksSpinner")
   @js.native
   class WorksSpinner protected ()
     extends typings.homeworks.componentSpinnerMod.WorksSpinner {

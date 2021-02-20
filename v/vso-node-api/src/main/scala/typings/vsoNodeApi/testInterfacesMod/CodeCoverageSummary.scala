@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeCoverageSummary extends js.Object {
+trait CodeCoverageSummary extends StObject {
   
   /**
     * Uri of build for which data is retrieved/published
@@ -31,30 +32,18 @@ object CodeCoverageSummary {
   }
   
   @scala.inline
-  implicit class CodeCoverageSummaryOps[Self <: CodeCoverageSummary] (val x: Self) extends AnyVal {
+  implicit class CodeCoverageSummaryMutableBuilder[Self <: CodeCoverageSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoverageData(value: js.Array[CodeCoverageData]): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoverageDataVarargs(value: CodeCoverageData*): Self = StObject.set(x, "coverageData", js.Array(value :_*))
     
     @scala.inline
-    def setBuild(value: ShallowReference): Self = this.set("build", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCoverageDataVarargs(value: CodeCoverageData*): Self = this.set("coverageData", js.Array(value :_*))
-    
-    @scala.inline
-    def setCoverageData(value: js.Array[CodeCoverageData]): Self = this.set("coverageData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeltaBuild(value: ShallowReference): Self = this.set("deltaBuild", value.asInstanceOf[js.Any])
+    def setDeltaBuild(value: ShallowReference): Self = StObject.set(x, "deltaBuild", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionOrderedCacheBehaviorForwardedValuesCookies extends js.Object {
+trait DistributionOrderedCacheBehaviorForwardedValuesCookies extends StObject {
   
   /**
     * Specifies whether you want CloudFront to forward
@@ -32,30 +33,18 @@ object DistributionOrderedCacheBehaviorForwardedValuesCookies {
   }
   
   @scala.inline
-  implicit class DistributionOrderedCacheBehaviorForwardedValuesCookiesOps[Self <: DistributionOrderedCacheBehaviorForwardedValuesCookies] (val x: Self) extends AnyVal {
+  implicit class DistributionOrderedCacheBehaviorForwardedValuesCookiesMutableBuilder[Self <: DistributionOrderedCacheBehaviorForwardedValuesCookies] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForward(value: Input[String]): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWhitelistedNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "whitelistedNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWhitelistedNamesUndefined: Self = StObject.set(x, "whitelistedNames", js.undefined)
     
     @scala.inline
-    def setForward(value: Input[String]): Self = this.set("forward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhitelistedNamesVarargs(value: Input[String]*): Self = this.set("whitelistedNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelistedNames(value: Input[js.Array[Input[String]]]): Self = this.set("whitelistedNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistedNames: Self = this.set("whitelistedNames", js.undefined)
+    def setWhitelistedNamesVarargs(value: Input[String]*): Self = StObject.set(x, "whitelistedNames", js.Array(value :_*))
   }
 }

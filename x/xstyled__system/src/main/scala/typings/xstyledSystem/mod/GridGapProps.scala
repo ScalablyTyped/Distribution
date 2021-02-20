@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridGapProps[TLength] extends js.Object {
+trait GridGapProps[TLength] extends StObject {
   
   val gridGap: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object GridGapProps {
   }
   
   @scala.inline
-  implicit class GridGapPropsOps[Self <: GridGapProps[_], TLength] (val x: Self with GridGapProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGridGapVarargs(value: js.Any*): Self = this.set("gridGap", js.Array(value :_*))
+  implicit class GridGapPropsMutableBuilder[Self <: GridGapProps[_], TLength] (val x: Self with GridGapProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setGridGap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridGap<TLength> */ _
         ]
-    ): Self = this.set("gridGap", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridGap: Self = this.set("gridGap", js.undefined)
+    def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
+    
+    @scala.inline
+    def setGridGapVarargs(value: js.Any*): Self = StObject.set(x, "gridGap", js.Array(value :_*))
   }
 }

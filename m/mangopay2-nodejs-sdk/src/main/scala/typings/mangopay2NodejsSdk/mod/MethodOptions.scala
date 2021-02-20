@@ -3,13 +3,14 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.anon.DeepPartialPartialHeaders
 import typings.mangopay2NodejsSdk.anon.DeepPartialclientIdstring
 import typings.mangopay2NodejsSdk.anon.DeepPartialtimeoutnumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.RequestOptions> */
 @js.native
-trait MethodOptions extends js.Object {
+trait MethodOptions extends StObject {
   
   var data: js.UndefOr[WithToJson[js.Object] | String] = js.native
   
@@ -32,54 +33,42 @@ object MethodOptions {
   }
   
   @scala.inline
-  implicit class MethodOptionsOps[Self <: MethodOptions] (val x: Self) extends AnyVal {
+  implicit class MethodOptionsMutableBuilder[Self <: MethodOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: WithToJson[js.Object] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: DeepPartialPartialHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: WithToJson[js.Object] | String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setParameters(value: FilterOptions with PaginationOptions): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: DeepPartialPartialHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setPath(value: DeepPartialclientIdstring): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: FilterOptions with PaginationOptions): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setRequestConfig(value: DeepPartialtimeoutnumber): Self = StObject.set(x, "requestConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: DeepPartialclientIdstring): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setRequestConfigUndefined: Self = StObject.set(x, "requestConfig", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setResponseConfig(value: DeepPartialtimeoutnumber): Self = StObject.set(x, "responseConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestConfig(value: DeepPartialtimeoutnumber): Self = this.set("requestConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestConfig: Self = this.set("requestConfig", js.undefined)
-    
-    @scala.inline
-    def setResponseConfig(value: DeepPartialtimeoutnumber): Self = this.set("responseConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseConfig: Self = this.set("responseConfig", js.undefined)
+    def setResponseConfigUndefined: Self = StObject.set(x, "responseConfig", js.undefined)
   }
 }

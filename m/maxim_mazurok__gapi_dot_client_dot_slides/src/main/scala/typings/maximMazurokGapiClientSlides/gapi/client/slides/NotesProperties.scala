@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotesProperties extends js.Object {
+trait NotesProperties extends StObject {
   
   /**
     * The object ID of the shape on this notes page that contains the speaker notes for the corresponding slide. The actual shape may not always exist on the notes page. Inserting text
@@ -23,24 +24,12 @@ object NotesProperties {
   }
   
   @scala.inline
-  implicit class NotesPropertiesOps[Self <: NotesProperties] (val x: Self) extends AnyVal {
+  implicit class NotesPropertiesMutableBuilder[Self <: NotesProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpeakerNotesObjectId(value: String): Self = StObject.set(x, "speakerNotesObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSpeakerNotesObjectId(value: String): Self = this.set("speakerNotesObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeakerNotesObjectId: Self = this.set("speakerNotesObjectId", js.undefined)
+    def setSpeakerNotesObjectIdUndefined: Self = StObject.set(x, "speakerNotesObjectId", js.undefined)
   }
 }

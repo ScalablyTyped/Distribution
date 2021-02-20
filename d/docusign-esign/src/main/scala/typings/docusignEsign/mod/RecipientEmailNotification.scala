@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientEmailNotification extends js.Object {
+trait RecipientEmailNotification extends StObject {
   
   /**
     * The body of the email message.
@@ -56,54 +57,42 @@ object RecipientEmailNotification {
   }
   
   @scala.inline
-  implicit class RecipientEmailNotificationOps[Self <: RecipientEmailNotification] (val x: Self) extends AnyVal {
+  implicit class RecipientEmailNotificationMutableBuilder[Self <: RecipientEmailNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailBody(value: String): Self = StObject.set(x, "emailBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailBodyMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "emailBodyMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailBodyMetadataUndefined: Self = StObject.set(x, "emailBodyMetadata", js.undefined)
     
     @scala.inline
-    def setEmailBody(value: String): Self = this.set("emailBody", value.asInstanceOf[js.Any])
+    def setEmailBodyUndefined: Self = StObject.set(x, "emailBody", js.undefined)
     
     @scala.inline
-    def deleteEmailBody: Self = this.set("emailBody", js.undefined)
+    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailBodyMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("emailBodyMetadata", value.asInstanceOf[js.Any])
+    def setEmailSubjectMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "emailSubjectMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailBodyMetadata: Self = this.set("emailBodyMetadata", js.undefined)
+    def setEmailSubjectMetadataUndefined: Self = StObject.set(x, "emailSubjectMetadata", js.undefined)
     
     @scala.inline
-    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
     @scala.inline
-    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    def setSupportedLanguage(value: String): Self = StObject.set(x, "supportedLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailSubjectMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("emailSubjectMetadata", value.asInstanceOf[js.Any])
+    def setSupportedLanguageMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "supportedLanguageMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailSubjectMetadata: Self = this.set("emailSubjectMetadata", js.undefined)
+    def setSupportedLanguageMetadataUndefined: Self = StObject.set(x, "supportedLanguageMetadata", js.undefined)
     
     @scala.inline
-    def setSupportedLanguage(value: String): Self = this.set("supportedLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedLanguage: Self = this.set("supportedLanguage", js.undefined)
-    
-    @scala.inline
-    def setSupportedLanguageMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = this.set("supportedLanguageMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedLanguageMetadata: Self = this.set("supportedLanguageMetadata", js.undefined)
+    def setSupportedLanguageUndefined: Self = StObject.set(x, "supportedLanguage", js.undefined)
   }
 }

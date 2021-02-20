@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Allowed ArrayBuffer types for the buffer of an ArrayBufferView and related Typed Arrays.
   */
 @js.native
-trait ArrayBufferTypes extends js.Object {
+trait ArrayBufferTypes extends StObject {
   
   var ArrayBuffer: typings.std.ArrayBuffer = js.native
   
@@ -23,24 +24,12 @@ object ArrayBufferTypes {
   }
   
   @scala.inline
-  implicit class ArrayBufferTypesOps[Self <: ArrayBufferTypes] (val x: Self) extends AnyVal {
+  implicit class ArrayBufferTypesMutableBuilder[Self <: ArrayBufferTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayBuffer(value: ArrayBuffer): Self = StObject.set(x, "ArrayBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArrayBuffer(value: ArrayBuffer): Self = this.set("ArrayBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedArrayBuffer(value: SharedArrayBuffer): Self = this.set("SharedArrayBuffer", value.asInstanceOf[js.Any])
+    def setSharedArrayBuffer(value: SharedArrayBuffer): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
   }
 }

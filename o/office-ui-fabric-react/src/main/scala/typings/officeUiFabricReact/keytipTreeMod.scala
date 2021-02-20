@@ -3,19 +3,19 @@ package typings.officeUiFabricReact
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeUiFabricReact.ikeytiptreenodeMod.IKeytipTreeNode
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipTree", JSImport.Namespace)
-@js.native
-object keytipTreeMod extends js.Object {
+object keytipTreeMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipTree", "KeytipTree")
   @js.native
   /**
     * KeytipTree constructor
     */
-  class KeytipTree () extends js.Object {
+  class KeytipTree () extends StObject {
     
     var _createNode: js.Any = js.native
     

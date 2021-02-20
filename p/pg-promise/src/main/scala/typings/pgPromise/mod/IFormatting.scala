@@ -3,6 +3,7 @@ package typings.pgPromise.mod
 import typings.pgPromise.anon.CapSQL
 import typings.pgPromise.anon.RawType
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Query formatting namespace;
 // API: http://vitaly-t.github.io/pg-promise/formatting.html
 @js.native
-trait IFormatting extends js.Object {
+trait IFormatting extends StObject {
   
   def alias(name: String): String = js.native
   def alias(name: js.Function0[String]): String = js.native

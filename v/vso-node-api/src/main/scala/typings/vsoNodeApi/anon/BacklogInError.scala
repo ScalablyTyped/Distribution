@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BacklogInError extends js.Object {
+trait BacklogInError extends StObject {
   
   var backlogInError: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object BacklogInError {
   }
   
   @scala.inline
-  implicit class BacklogInErrorOps[Self <: BacklogInError] (val x: Self) extends AnyVal {
+  implicit class BacklogInErrorMutableBuilder[Self <: BacklogInError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBacklogInError(value: scala.Double): Self = StObject.set(x, "backlogInError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoesntExistOrAccessDenied(value: scala.Double): Self = StObject.set(x, "doesntExistOrAccessDenied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxTeamFieldsExceeded(value: scala.Double): Self = StObject.set(x, "maxTeamFieldsExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBacklogInError(value: scala.Double): Self = this.set("backlogInError", value.asInstanceOf[js.Any])
+    def setMaxTeamsExceeded(value: scala.Double): Self = StObject.set(x, "maxTeamsExceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesntExistOrAccessDenied(value: scala.Double): Self = this.set("doesntExistOrAccessDenied", value.asInstanceOf[js.Any])
+    def setMissingTeamFieldValue(value: scala.Double): Self = StObject.set(x, "missingTeamFieldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTeamFieldsExceeded(value: scala.Double): Self = this.set("maxTeamFieldsExceeded", value.asInstanceOf[js.Any])
+    def setNoIterationsExist(value: scala.Double): Self = StObject.set(x, "noIterationsExist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTeamsExceeded(value: scala.Double): Self = this.set("maxTeamsExceeded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMissingTeamFieldValue(value: scala.Double): Self = this.set("missingTeamFieldValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoIterationsExist(value: scala.Double): Self = this.set("noIterationsExist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOK(value: scala.Double): Self = this.set("oK", value.asInstanceOf[js.Any])
+    def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
   }
 }

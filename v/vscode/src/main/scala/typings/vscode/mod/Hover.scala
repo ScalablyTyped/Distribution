@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Hover")
 @js.native
-class Hover protected () extends js.Object {
+class Hover protected () extends StObject {
   def this(contents: js.Array[MarkedString]) = this()
   /**
     * Creates a new hover object.

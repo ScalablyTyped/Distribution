@@ -1,11 +1,12 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavImages extends js.Object {
+trait NavImages extends StObject {
   
   var flip: NavImagesValues = js.native
   
@@ -44,45 +45,33 @@ object NavImages {
   }
   
   @scala.inline
-  implicit class NavImagesOps[Self <: NavImages] (val x: Self) extends AnyVal {
+  implicit class NavImagesMutableBuilder[Self <: NavImages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlip(value: NavImagesValues): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullpage(value: NavImagesValues): Self = StObject.set(x, "fullpage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHome(value: NavImagesValues): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlip(value: NavImagesValues): Self = this.set("flip", value.asInstanceOf[js.Any])
+    def setNext(value: NavImagesValues): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullpage(value: NavImagesValues): Self = this.set("fullpage", value.asInstanceOf[js.Any])
+    def setPrevious(value: NavImagesValues): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHome(value: NavImagesValues): Self = this.set("home", value.asInstanceOf[js.Any])
+    def setRotateleft(value: NavImagesValues): Self = StObject.set(x, "rotateleft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: NavImagesValues): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setRotateright(value: NavImagesValues): Self = StObject.set(x, "rotateright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevious(value: NavImagesValues): Self = this.set("previous", value.asInstanceOf[js.Any])
+    def setZoomIn(value: NavImagesValues): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateleft(value: NavImagesValues): Self = this.set("rotateleft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRotateright(value: NavImagesValues): Self = this.set("rotateright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomIn(value: NavImagesValues): Self = this.set("zoomIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomOut(value: NavImagesValues): Self = this.set("zoomOut", value.asInstanceOf[js.Any])
+    def setZoomOut(value: NavImagesValues): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
   }
 }

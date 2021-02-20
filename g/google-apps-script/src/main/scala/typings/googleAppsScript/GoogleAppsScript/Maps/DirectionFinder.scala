@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +62,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Directions API
   */
 @js.native
-trait DirectionFinder extends js.Object {
+trait DirectionFinder extends StObject {
   
   def addWaypoint(address: String): DirectionFinder = js.native
   def addWaypoint(latitude: Double, longitude: Double): DirectionFinder = js.native

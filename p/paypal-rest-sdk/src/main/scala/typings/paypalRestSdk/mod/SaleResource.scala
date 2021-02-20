@@ -1,5 +1,6 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,63 +31,51 @@ object SaleResource {
   }
   
   @scala.inline
-  implicit class SaleResourceOps[Self <: SaleResource] (val x: Self) extends AnyVal {
+  implicit class SaleResourceMutableBuilder[Self <: SaleResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilling_agreement_id(value: String): Self = StObject.set(x, "billing_agreement_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilling_agreement_idUndefined: Self = StObject.set(x, "billing_agreement_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearing_time(value: String): Self = StObject.set(x, "clearing_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilling_agreement_id(value: String): Self = this.set("billing_agreement_id", value.asInstanceOf[js.Any])
+    def setClearing_timeUndefined: Self = StObject.set(x, "clearing_time", js.undefined)
     
     @scala.inline
-    def deleteBilling_agreement_id: Self = this.set("billing_agreement_id", js.undefined)
+    def setExchange_rate(value: String): Self = StObject.set(x, "exchange_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearing_time(value: String): Self = this.set("clearing_time", value.asInstanceOf[js.Any])
+    def setExchange_rateUndefined: Self = StObject.set(x, "exchange_rate", js.undefined)
     
     @scala.inline
-    def deleteClearing_time: Self = this.set("clearing_time", js.undefined)
+    def setPayment_hold_reasons(value: js.Array[String]): Self = StObject.set(x, "payment_hold_reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchange_rate(value: String): Self = this.set("exchange_rate", value.asInstanceOf[js.Any])
+    def setPayment_hold_reasonsUndefined: Self = StObject.set(x, "payment_hold_reasons", js.undefined)
     
     @scala.inline
-    def deleteExchange_rate: Self = this.set("exchange_rate", js.undefined)
+    def setPayment_hold_reasonsVarargs(value: String*): Self = StObject.set(x, "payment_hold_reasons", js.Array(value :_*))
     
     @scala.inline
-    def setPayment_hold_reasonsVarargs(value: String*): Self = this.set("payment_hold_reasons", js.Array(value :_*))
+    def setPayment_hold_status(value: String): Self = StObject.set(x, "payment_hold_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_hold_reasons(value: js.Array[String]): Self = this.set("payment_hold_reasons", value.asInstanceOf[js.Any])
+    def setPayment_hold_statusUndefined: Self = StObject.set(x, "payment_hold_status", js.undefined)
     
     @scala.inline
-    def deletePayment_hold_reasons: Self = this.set("payment_hold_reasons", js.undefined)
+    def setPurchase_unit_reference_id(value: String): Self = StObject.set(x, "purchase_unit_reference_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayment_hold_status(value: String): Self = this.set("payment_hold_status", value.asInstanceOf[js.Any])
+    def setPurchase_unit_reference_idUndefined: Self = StObject.set(x, "purchase_unit_reference_id", js.undefined)
     
     @scala.inline
-    def deletePayment_hold_status: Self = this.set("payment_hold_status", js.undefined)
+    def setTransaction_fee(value: Currency): Self = StObject.set(x, "transaction_fee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchase_unit_reference_id(value: String): Self = this.set("purchase_unit_reference_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePurchase_unit_reference_id: Self = this.set("purchase_unit_reference_id", js.undefined)
-    
-    @scala.inline
-    def setTransaction_fee(value: Currency): Self = this.set("transaction_fee", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction_fee: Self = this.set("transaction_fee", js.undefined)
+    def setTransaction_feeUndefined: Self = StObject.set(x, "transaction_fee", js.undefined)
   }
 }

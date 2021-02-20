@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Input
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mouse
 import typings.devtoolsProtocol.devtoolsProtocolStrings.pen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.mouse
   - typings.devtoolsProtocol.devtoolsProtocolStrings.pen
 */
-trait DispatchMouseEventRequestPointerType extends js.Object
+trait DispatchMouseEventRequestPointerType extends StObject
 object DispatchMouseEventRequestPointerType {
   
   @scala.inline

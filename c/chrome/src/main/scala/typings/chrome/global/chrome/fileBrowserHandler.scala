@@ -3,6 +3,7 @@ package typings.chrome.global.chrome
 import typings.chrome.chrome.fileBrowserHandler.FileBrowserHandlerExecuteEvent
 import typings.chrome.chrome.fileBrowserHandler.SelectionParams
 import typings.chrome.chrome.fileBrowserHandler.SelectionResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  "fileBrowserHandler"
   * Important: This API works only on Chrome OS.
   */
-@JSGlobal("chrome.fileBrowserHandler")
-@js.native
-object fileBrowserHandler extends js.Object {
+object fileBrowserHandler {
   
-  var onExecute: FileBrowserHandlerExecuteEvent = js.native
+  @JSGlobal("chrome.fileBrowserHandler")
+  @js.native
+  val ^ : js.Any = js.native
   
+  @JSGlobal("chrome.fileBrowserHandler.onExecute")
+  @js.native
+  def onExecute: FileBrowserHandlerExecuteEvent = js.native
+  @scala.inline
+  def onExecute_=(x: FileBrowserHandlerExecuteEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onExecute")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("chrome.fileBrowserHandler.selectFile")
+  @js.native
   def selectFile(selectionParams: SelectionParams, callback: js.Function1[/* result */ SelectionResult, Unit]): Unit = js.native
 }

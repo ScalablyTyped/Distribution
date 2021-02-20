@@ -1,12 +1,13 @@
 package typings.webpack.webpackOptionsMod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleOptions extends js.Object {
+trait ModuleOptions extends StObject {
   
   /**
   	 * An array of rules applied by default for modules.
@@ -102,129 +103,117 @@ object ModuleOptions {
   }
   
   @scala.inline
-  implicit class ModuleOptionsOps[Self <: ModuleOptions] (val x: Self) extends AnyVal {
+  implicit class ModuleOptionsMutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultRules(value: RuleSetRules): Self = StObject.set(x, "defaultRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRulesUndefined: Self = StObject.set(x, "defaultRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRulesVarargs(value: RuleSetRule*): Self = StObject.set(x, "defaultRules", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultRulesVarargs(value: RuleSetRule*): Self = this.set("defaultRules", js.Array(value :_*))
+    def setExprContextCritical(value: Boolean): Self = StObject.set(x, "exprContextCritical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRules(value: RuleSetRules): Self = this.set("defaultRules", value.asInstanceOf[js.Any])
+    def setExprContextCriticalUndefined: Self = StObject.set(x, "exprContextCritical", js.undefined)
     
     @scala.inline
-    def deleteDefaultRules: Self = this.set("defaultRules", js.undefined)
+    def setExprContextRecursive(value: Boolean): Self = StObject.set(x, "exprContextRecursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprContextCritical(value: Boolean): Self = this.set("exprContextCritical", value.asInstanceOf[js.Any])
+    def setExprContextRecursiveUndefined: Self = StObject.set(x, "exprContextRecursive", js.undefined)
     
     @scala.inline
-    def deleteExprContextCritical: Self = this.set("exprContextCritical", js.undefined)
+    def setExprContextRegExp(value: Boolean | RegExp): Self = StObject.set(x, "exprContextRegExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprContextRecursive(value: Boolean): Self = this.set("exprContextRecursive", value.asInstanceOf[js.Any])
+    def setExprContextRegExpUndefined: Self = StObject.set(x, "exprContextRegExp", js.undefined)
     
     @scala.inline
-    def deleteExprContextRecursive: Self = this.set("exprContextRecursive", js.undefined)
+    def setExprContextRequest(value: String): Self = StObject.set(x, "exprContextRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprContextRegExp(value: Boolean | RegExp): Self = this.set("exprContextRegExp", value.asInstanceOf[js.Any])
+    def setExprContextRequestUndefined: Self = StObject.set(x, "exprContextRequest", js.undefined)
     
     @scala.inline
-    def deleteExprContextRegExp: Self = this.set("exprContextRegExp", js.undefined)
+    def setNoParse(value: (js.Array[RegExp | String]) | RegExp | js.Function | String): Self = StObject.set(x, "noParse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExprContextRequest(value: String): Self = this.set("exprContextRequest", value.asInstanceOf[js.Any])
+    def setNoParseUndefined: Self = StObject.set(x, "noParse", js.undefined)
     
     @scala.inline
-    def deleteExprContextRequest: Self = this.set("exprContextRequest", js.undefined)
+    def setNoParseVarargs(value: (RegExp | String)*): Self = StObject.set(x, "noParse", js.Array(value :_*))
     
     @scala.inline
-    def setNoParseVarargs(value: (RegExp | String)*): Self = this.set("noParse", js.Array(value :_*))
+    def setRules(value: RuleSetRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoParse(value: (js.Array[RegExp | String]) | RegExp | js.Function | String): Self = this.set("noParse", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteNoParse: Self = this.set("noParse", js.undefined)
+    def setRulesVarargs(value: RuleSetRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: RuleSetRule*): Self = this.set("rules", js.Array(value :_*))
+    def setStrictExportPresence(value: Boolean): Self = StObject.set(x, "strictExportPresence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: RuleSetRules): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setStrictExportPresenceUndefined: Self = StObject.set(x, "strictExportPresence", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setStrictThisContextOnImports(value: Boolean): Self = StObject.set(x, "strictThisContextOnImports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictExportPresence(value: Boolean): Self = this.set("strictExportPresence", value.asInstanceOf[js.Any])
+    def setStrictThisContextOnImportsUndefined: Self = StObject.set(x, "strictThisContextOnImports", js.undefined)
     
     @scala.inline
-    def deleteStrictExportPresence: Self = this.set("strictExportPresence", js.undefined)
+    def setUnknownContextCritical(value: Boolean): Self = StObject.set(x, "unknownContextCritical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictThisContextOnImports(value: Boolean): Self = this.set("strictThisContextOnImports", value.asInstanceOf[js.Any])
+    def setUnknownContextCriticalUndefined: Self = StObject.set(x, "unknownContextCritical", js.undefined)
     
     @scala.inline
-    def deleteStrictThisContextOnImports: Self = this.set("strictThisContextOnImports", js.undefined)
+    def setUnknownContextRecursive(value: Boolean): Self = StObject.set(x, "unknownContextRecursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownContextCritical(value: Boolean): Self = this.set("unknownContextCritical", value.asInstanceOf[js.Any])
+    def setUnknownContextRecursiveUndefined: Self = StObject.set(x, "unknownContextRecursive", js.undefined)
     
     @scala.inline
-    def deleteUnknownContextCritical: Self = this.set("unknownContextCritical", js.undefined)
+    def setUnknownContextRegExp(value: Boolean | RegExp): Self = StObject.set(x, "unknownContextRegExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownContextRecursive(value: Boolean): Self = this.set("unknownContextRecursive", value.asInstanceOf[js.Any])
+    def setUnknownContextRegExpUndefined: Self = StObject.set(x, "unknownContextRegExp", js.undefined)
     
     @scala.inline
-    def deleteUnknownContextRecursive: Self = this.set("unknownContextRecursive", js.undefined)
+    def setUnknownContextRequest(value: String): Self = StObject.set(x, "unknownContextRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownContextRegExp(value: Boolean | RegExp): Self = this.set("unknownContextRegExp", value.asInstanceOf[js.Any])
+    def setUnknownContextRequestUndefined: Self = StObject.set(x, "unknownContextRequest", js.undefined)
     
     @scala.inline
-    def deleteUnknownContextRegExp: Self = this.set("unknownContextRegExp", js.undefined)
+    def setUnsafeCache(value: Boolean | js.Function): Self = StObject.set(x, "unsafeCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknownContextRequest(value: String): Self = this.set("unknownContextRequest", value.asInstanceOf[js.Any])
+    def setUnsafeCacheUndefined: Self = StObject.set(x, "unsafeCache", js.undefined)
     
     @scala.inline
-    def deleteUnknownContextRequest: Self = this.set("unknownContextRequest", js.undefined)
+    def setWrappedContextCritical(value: Boolean): Self = StObject.set(x, "wrappedContextCritical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnsafeCache(value: Boolean | js.Function): Self = this.set("unsafeCache", value.asInstanceOf[js.Any])
+    def setWrappedContextCriticalUndefined: Self = StObject.set(x, "wrappedContextCritical", js.undefined)
     
     @scala.inline
-    def deleteUnsafeCache: Self = this.set("unsafeCache", js.undefined)
+    def setWrappedContextRecursive(value: Boolean): Self = StObject.set(x, "wrappedContextRecursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrappedContextCritical(value: Boolean): Self = this.set("wrappedContextCritical", value.asInstanceOf[js.Any])
+    def setWrappedContextRecursiveUndefined: Self = StObject.set(x, "wrappedContextRecursive", js.undefined)
     
     @scala.inline
-    def deleteWrappedContextCritical: Self = this.set("wrappedContextCritical", js.undefined)
+    def setWrappedContextRegExp(value: RegExp): Self = StObject.set(x, "wrappedContextRegExp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrappedContextRecursive(value: Boolean): Self = this.set("wrappedContextRecursive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrappedContextRecursive: Self = this.set("wrappedContextRecursive", js.undefined)
-    
-    @scala.inline
-    def setWrappedContextRegExp(value: RegExp): Self = this.set("wrappedContextRegExp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrappedContextRegExp: Self = this.set("wrappedContextRegExp", js.undefined)
+    def setWrappedContextRegExpUndefined: Self = StObject.set(x, "wrappedContextRegExp", js.undefined)
   }
 }

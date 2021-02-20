@@ -1,15 +1,16 @@
 package typings.jspath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jspath", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @JSName("apply")
+  @JSImport("jspath", "apply")
+  @js.native
   def apply(path: String, data: js.Any): js.Array[_] = js.native
-  @JSName("apply")
+  @JSImport("jspath", "apply")
+  @js.native
   def apply(path: String, data: js.Any, replacement: js.Any): js.Array[_] = js.native
 }

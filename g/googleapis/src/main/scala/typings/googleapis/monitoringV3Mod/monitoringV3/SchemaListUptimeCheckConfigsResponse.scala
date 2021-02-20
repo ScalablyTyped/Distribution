@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The protocol for the ListUptimeCheckConfigs response.
   */
 @js.native
-trait SchemaListUptimeCheckConfigsResponse extends js.Object {
+trait SchemaListUptimeCheckConfigsResponse extends StObject {
   
   /**
     * This field represents the pagination token to retrieve the next page of
@@ -39,39 +40,27 @@ object SchemaListUptimeCheckConfigsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListUptimeCheckConfigsResponseOps[Self <: SchemaListUptimeCheckConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListUptimeCheckConfigsResponseMutableBuilder[Self <: SchemaListUptimeCheckConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setUptimeCheckConfigs(value: js.Array[SchemaUptimeCheckConfig]): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    def setUptimeCheckConfigsUndefined: Self = StObject.set(x, "uptimeCheckConfigs", js.undefined)
     
     @scala.inline
-    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
-    
-    @scala.inline
-    def setUptimeCheckConfigsVarargs(value: SchemaUptimeCheckConfig*): Self = this.set("uptimeCheckConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setUptimeCheckConfigs(value: js.Array[SchemaUptimeCheckConfig]): Self = this.set("uptimeCheckConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUptimeCheckConfigs: Self = this.set("uptimeCheckConfigs", js.undefined)
+    def setUptimeCheckConfigsVarargs(value: SchemaUptimeCheckConfig*): Self = StObject.set(x, "uptimeCheckConfigs", js.Array(value :_*))
   }
 }

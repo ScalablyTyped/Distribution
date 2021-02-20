@@ -2,13 +2,14 @@ package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.mod.client.PlatformCategorization
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.client.ClientData> */
 @js.native
-trait PartialClientData extends js.Object {
+trait PartialClientData extends StObject {
   
   var AdminEmails: js.UndefOr[js.Array[String]] = js.native
   
@@ -57,144 +58,132 @@ object PartialClientData {
   }
   
   @scala.inline
-  implicit class PartialClientDataOps[Self <: PartialClientData] (val x: Self) extends AnyVal {
+  implicit class PartialClientDataMutableBuilder[Self <: PartialClientData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminEmailsUndefined: Self = StObject.set(x, "AdminEmails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value :_*))
     
     @scala.inline
-    def setAdminEmailsVarargs(value: String*): Self = this.set("AdminEmails", js.Array(value :_*))
+    def setBillingEmails(value: js.Array[String]): Self = StObject.set(x, "BillingEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminEmails(value: js.Array[String]): Self = this.set("AdminEmails", value.asInstanceOf[js.Any])
+    def setBillingEmailsUndefined: Self = StObject.set(x, "BillingEmails", js.undefined)
     
     @scala.inline
-    def deleteAdminEmails: Self = this.set("AdminEmails", js.undefined)
+    def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value :_*))
     
     @scala.inline
-    def setBillingEmailsVarargs(value: String*): Self = this.set("BillingEmails", js.Array(value :_*))
+    def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingEmails(value: js.Array[String]): Self = this.set("BillingEmails", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def deleteBillingEmails: Self = this.set("BillingEmails", js.undefined)
+    def setCompanyReference(value: String): Self = StObject.set(x, "CompanyReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setCompanyReferenceUndefined: Self = StObject.set(x, "CompanyReference", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyReference(value: String): Self = this.set("CompanyReference", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteCompanyReference: Self = this.set("CompanyReference", js.undefined)
+    def setFraudEmails(value: js.Array[String]): Self = StObject.set(x, "FraudEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setFraudEmailsUndefined: Self = StObject.set(x, "FraudEmails", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value :_*))
     
     @scala.inline
-    def setFraudEmailsVarargs(value: String*): Self = this.set("FraudEmails", js.Array(value :_*))
+    def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFraudEmails(value: js.Array[String]): Self = this.set("FraudEmails", value.asInstanceOf[js.Any])
+    def setHeadquartersAddressUndefined: Self = StObject.set(x, "HeadquartersAddress", js.undefined)
     
     @scala.inline
-    def deleteFraudEmails: Self = this.set("FraudEmails", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadquartersAddress(value: AddressType): Self = this.set("HeadquartersAddress", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteHeadquartersAddress: Self = this.set("HeadquartersAddress", js.undefined)
+    def setLogo(value: String): Self = StObject.set(x, "Logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "Logo", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("Logo", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("Logo", js.undefined)
+    def setPlatformCategorization(value: PlatformCategorization): Self = StObject.set(x, "PlatformCategorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPlatformCategorizationUndefined: Self = StObject.set(x, "PlatformCategorization", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPlatformDescription(value: String): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformCategorization(value: PlatformCategorization): Self = this.set("PlatformCategorization", value.asInstanceOf[js.Any])
+    def setPlatformDescriptionUndefined: Self = StObject.set(x, "PlatformDescription", js.undefined)
     
     @scala.inline
-    def deletePlatformCategorization: Self = this.set("PlatformCategorization", js.undefined)
+    def setPlatformURL(value: String): Self = StObject.set(x, "PlatformURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformDescription(value: String): Self = this.set("PlatformDescription", value.asInstanceOf[js.Any])
+    def setPlatformURLUndefined: Self = StObject.set(x, "PlatformURL", js.undefined)
     
     @scala.inline
-    def deletePlatformDescription: Self = this.set("PlatformDescription", js.undefined)
+    def setPrimaryButtonColour(value: String): Self = StObject.set(x, "PrimaryButtonColour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformURL(value: String): Self = this.set("PlatformURL", value.asInstanceOf[js.Any])
+    def setPrimaryButtonColourUndefined: Self = StObject.set(x, "PrimaryButtonColour", js.undefined)
     
     @scala.inline
-    def deletePlatformURL: Self = this.set("PlatformURL", js.undefined)
+    def setPrimaryThemeColour(value: String): Self = StObject.set(x, "PrimaryThemeColour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryButtonColour(value: String): Self = this.set("PrimaryButtonColour", value.asInstanceOf[js.Any])
+    def setPrimaryThemeColourUndefined: Self = StObject.set(x, "PrimaryThemeColour", js.undefined)
     
     @scala.inline
-    def deletePrimaryButtonColour: Self = this.set("PrimaryButtonColour", js.undefined)
+    def setRegisteredName(value: String): Self = StObject.set(x, "RegisteredName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryThemeColour(value: String): Self = this.set("PrimaryThemeColour", value.asInstanceOf[js.Any])
+    def setRegisteredNameUndefined: Self = StObject.set(x, "RegisteredName", js.undefined)
     
     @scala.inline
-    def deletePrimaryThemeColour: Self = this.set("PrimaryThemeColour", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredName(value: String): Self = this.set("RegisteredName", value.asInstanceOf[js.Any])
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     
     @scala.inline
-    def deleteRegisteredName: Self = this.set("RegisteredName", js.undefined)
+    def setTaxNumber(value: String): Self = StObject.set(x, "TaxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    def setTaxNumberUndefined: Self = StObject.set(x, "TaxNumber", js.undefined)
     
     @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setTechEmails(value: js.Array[String]): Self = StObject.set(x, "TechEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaxNumber(value: String): Self = this.set("TaxNumber", value.asInstanceOf[js.Any])
+    def setTechEmailsUndefined: Self = StObject.set(x, "TechEmails", js.undefined)
     
     @scala.inline
-    def deleteTaxNumber: Self = this.set("TaxNumber", js.undefined)
-    
-    @scala.inline
-    def setTechEmailsVarargs(value: String*): Self = this.set("TechEmails", js.Array(value :_*))
-    
-    @scala.inline
-    def setTechEmails(value: js.Array[String]): Self = this.set("TechEmails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechEmails: Self = this.set("TechEmails", js.undefined)
+    def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value :_*))
   }
 }

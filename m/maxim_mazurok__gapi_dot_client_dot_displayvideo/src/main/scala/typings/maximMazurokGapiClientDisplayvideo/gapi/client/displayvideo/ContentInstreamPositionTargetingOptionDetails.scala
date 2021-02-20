@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentInstreamPositionTargetingOptionDetails extends js.Object {
+trait ContentInstreamPositionTargetingOptionDetails extends StObject {
   
   /** Output only. The content instream position. */
   var contentInstreamPosition: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object ContentInstreamPositionTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class ContentInstreamPositionTargetingOptionDetailsOps[Self <: ContentInstreamPositionTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class ContentInstreamPositionTargetingOptionDetailsMutableBuilder[Self <: ContentInstreamPositionTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentInstreamPosition(value: String): Self = StObject.set(x, "contentInstreamPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentInstreamPosition(value: String): Self = this.set("contentInstreamPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentInstreamPosition: Self = this.set("contentInstreamPosition", js.undefined)
+    def setContentInstreamPositionUndefined: Self = StObject.set(x, "contentInstreamPosition", js.undefined)
   }
 }

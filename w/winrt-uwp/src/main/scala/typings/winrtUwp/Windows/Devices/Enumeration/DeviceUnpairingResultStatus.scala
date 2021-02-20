@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceUnpairingResultStatus extends js.Object
+sealed trait DeviceUnpairingResultStatus extends StObject
 /** The result of the unpairing action. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceUnpairingResultStatus")
 @js.native
-object DeviceUnpairingResultStatus extends js.Object {
+object DeviceUnpairingResultStatus extends StObject {
   
   /** The caller does not have sufficient permissions to unpair the device. */
   @js.native

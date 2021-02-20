@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,78 +70,66 @@ object ValueSetExpansion {
   }
   
   @scala.inline
-  implicit class ValueSetExpansionOps[Self <: ValueSetExpansion] (val x: Self) extends AnyVal {
+  implicit class ValueSetExpansionMutableBuilder[Self <: ValueSetExpansion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: js.Array[ValueSetExpansionContains]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsVarargs(value: ValueSetExpansionContains*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifier(value: uri): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setIdentifier(value: uri): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: dateTime): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_identifier(value: Element): Self = this.set("_identifier", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def delete_identifier: Self = this.set("_identifier", js.undefined)
+    def setParameter(value: js.Array[ValueSetExpansionParameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_offset(value: Element): Self = this.set("_offset", value.asInstanceOf[js.Any])
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def delete_offset: Self = this.set("_offset", js.undefined)
+    def setParameterVarargs(value: ValueSetExpansionParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
     
     @scala.inline
-    def set_timestamp(value: Element): Self = this.set("_timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: dateTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_timestamp: Self = this.set("_timestamp", js.undefined)
+    def setTotal(value: integer): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_total(value: Element): Self = this.set("_total", value.asInstanceOf[js.Any])
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def delete_total: Self = this.set("_total", js.undefined)
+    def set_identifier(value: Element): Self = StObject.set(x, "_identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsVarargs(value: ValueSetExpansionContains*): Self = this.set("contains", js.Array(value :_*))
+    def set_identifierUndefined: Self = StObject.set(x, "_identifier", js.undefined)
     
     @scala.inline
-    def setContains(value: js.Array[ValueSetExpansionContains]): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def set_offset(value: Element): Self = StObject.set(x, "_offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def set_offsetUndefined: Self = StObject.set(x, "_offset", js.undefined)
     
     @scala.inline
-    def setOffset(value: integer): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def set_timestamp(value: Element): Self = StObject.set(x, "_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def set_timestampUndefined: Self = StObject.set(x, "_timestamp", js.undefined)
     
     @scala.inline
-    def setParameterVarargs(value: ValueSetExpansionParameter*): Self = this.set("parameter", js.Array(value :_*))
+    def set_total(value: Element): Self = StObject.set(x, "_total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: js.Array[ValueSetExpansionParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: integer): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def set_totalUndefined: Self = StObject.set(x, "_total", js.undefined)
   }
 }

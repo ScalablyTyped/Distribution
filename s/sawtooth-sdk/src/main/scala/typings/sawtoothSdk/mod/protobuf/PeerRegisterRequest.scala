@@ -6,6 +6,7 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.IPeerRegisterRequest
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,18 @@ class PeerRegisterRequest ()
   def this(properties: IPeerRegisterRequest) = this()
 }
 /* static members */
-@JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest")
-@js.native
-object PeerRegisterRequest extends js.Object {
+object PeerRegisterRequest {
   
   /**
     * Creates a new PeerRegisterRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns PeerRegisterRequest instance
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.create")
+  @js.native
   def create(): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.create")
+  @js.native
   def create(properties: IPeerRegisterRequest): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
   
   /**
@@ -41,9 +44,17 @@ object PeerRegisterRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.decode")
+  @js.native
   def decode(reader: Reader): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
   
   /**
@@ -53,7 +64,11 @@ object PeerRegisterRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
   
   /**
@@ -62,7 +77,11 @@ object PeerRegisterRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.encode")
+  @js.native
   def encode(message: IPeerRegisterRequest): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.encode")
+  @js.native
   def encode(message: IPeerRegisterRequest, writer: Writer): Writer = js.native
   
   /**
@@ -71,7 +90,11 @@ object PeerRegisterRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IPeerRegisterRequest): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IPeerRegisterRequest, writer: Writer): Writer = js.native
   
   /**
@@ -79,6 +102,8 @@ object PeerRegisterRequest extends js.Object {
     * @param object Plain object
     * @returns PeerRegisterRequest
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.PeerRegisterRequest = js.native
   
   /**
@@ -87,7 +112,11 @@ object PeerRegisterRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.toObject")
+  @js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.PeerRegisterRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.toObject")
+  @js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.PeerRegisterRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -95,5 +124,7 @@ object PeerRegisterRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk", "protobuf.PeerRegisterRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

@@ -1,12 +1,13 @@
 package typings.typeorm.typingsMod
 
 import typings.typeorm.anon.BatchSizeNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionAggregationOptions extends js.Object {
+trait CollectionAggregationOptions extends StObject {
   
   /**
     * allowDiskUse lets the server know if it can use disk to store temporary results for the aggregation (requires mongodb 2.6 >).
@@ -44,54 +45,42 @@ object CollectionAggregationOptions {
   }
   
   @scala.inline
-  implicit class CollectionAggregationOptionsOps[Self <: CollectionAggregationOptions] (val x: Self) extends AnyVal {
+  implicit class CollectionAggregationOptionsMutableBuilder[Self <: CollectionAggregationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDiskUseUndefined: Self = StObject.set(x, "allowDiskUse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDiskUse(value: Boolean): Self = this.set("allowDiskUse", value.asInstanceOf[js.Any])
+    def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
     
     @scala.inline
-    def deleteAllowDiskUse: Self = this.set("allowDiskUse", js.undefined)
+    def setCursor(value: BatchSizeNumber): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassDocumentValidation(value: Boolean): Self = this.set("bypassDocumentValidation", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteBypassDocumentValidation: Self = this.set("bypassDocumentValidation", js.undefined)
+    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: BatchSizeNumber): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setMaxTimeMS(value: Boolean): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
     @scala.inline
-    def deleteExplain: Self = this.set("explain", js.undefined)
+    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTimeMS(value: Boolean): Self = this.set("maxTimeMS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTimeMS: Self = this.set("maxTimeMS", js.undefined)
-    
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

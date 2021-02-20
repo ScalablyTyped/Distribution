@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildConfiguration extends js.Object {
+trait BuildConfiguration extends StObject {
   
   var branchName: String = js.native
   
@@ -47,48 +48,36 @@ object BuildConfiguration {
   }
   
   @scala.inline
-  implicit class BuildConfigurationOps[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
+  implicit class BuildConfigurationMutableBuilder[Self <: BuildConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranchName(value: String): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildDefinitionId(value: Double): Self = StObject.set(x, "buildDefinitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlavor(value: String): Self = StObject.set(x, "flavor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchName(value: String): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildDefinitionId(value: Double): Self = this.set("buildDefinitionId", value.asInstanceOf[js.Any])
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlavor(value: String): Self = this.set("flavor", value.asInstanceOf[js.Any])
+    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProject(value: ShallowReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setRepositoryId(value: Double): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setSourceVersion(value: String): Self = StObject.set(x, "sourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: ShallowReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryId(value: Double): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

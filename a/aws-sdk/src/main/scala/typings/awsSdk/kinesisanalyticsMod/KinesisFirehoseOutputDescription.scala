@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KinesisFirehoseOutputDescription extends js.Object {
+trait KinesisFirehoseOutputDescription extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the Amazon Kinesis Firehose delivery stream.
@@ -26,30 +27,18 @@ object KinesisFirehoseOutputDescription {
   }
   
   @scala.inline
-  implicit class KinesisFirehoseOutputDescriptionOps[Self <: KinesisFirehoseOutputDescription] (val x: Self) extends AnyVal {
+  implicit class KinesisFirehoseOutputDescriptionMutableBuilder[Self <: KinesisFirehoseOutputDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
-    
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object PlannerAssignedToTaskBoardTaskFormat {
   }
   
   @scala.inline
-  implicit class PlannerAssignedToTaskBoardTaskFormatOps[Self <: PlannerAssignedToTaskBoardTaskFormat] (val x: Self) extends AnyVal {
+  implicit class PlannerAssignedToTaskBoardTaskFormatMutableBuilder[Self <: PlannerAssignedToTaskBoardTaskFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderHintsByAssignee(value: NullableOption[PlannerOrderHintsByAssignee]): Self = StObject.set(x, "orderHintsByAssignee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderHintsByAssigneeNull: Self = StObject.set(x, "orderHintsByAssignee", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderHintsByAssigneeUndefined: Self = StObject.set(x, "orderHintsByAssignee", js.undefined)
     
     @scala.inline
-    def setOrderHintsByAssignee(value: NullableOption[PlannerOrderHintsByAssignee]): Self = this.set("orderHintsByAssignee", value.asInstanceOf[js.Any])
+    def setUnassignedOrderHint(value: NullableOption[String]): Self = StObject.set(x, "unassignedOrderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderHintsByAssignee: Self = this.set("orderHintsByAssignee", js.undefined)
+    def setUnassignedOrderHintNull: Self = StObject.set(x, "unassignedOrderHint", null)
     
     @scala.inline
-    def setOrderHintsByAssigneeNull: Self = this.set("orderHintsByAssignee", null)
-    
-    @scala.inline
-    def setUnassignedOrderHint(value: NullableOption[String]): Self = this.set("unassignedOrderHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnassignedOrderHint: Self = this.set("unassignedOrderHint", js.undefined)
-    
-    @scala.inline
-    def setUnassignedOrderHintNull: Self = this.set("unassignedOrderHint", null)
+    def setUnassignedOrderHintUndefined: Self = StObject.set(x, "unassignedOrderHint", js.undefined)
   }
 }

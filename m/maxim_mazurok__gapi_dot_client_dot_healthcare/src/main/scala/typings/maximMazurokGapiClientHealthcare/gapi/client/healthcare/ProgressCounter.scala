@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressCounter extends js.Object {
+trait ProgressCounter extends StObject {
   
   /** The number of units that failed in the operation. */
   var failure: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ProgressCounter {
   }
   
   @scala.inline
-  implicit class ProgressCounterOps[Self <: ProgressCounter] (val x: Self) extends AnyVal {
+  implicit class ProgressCounterMutableBuilder[Self <: ProgressCounter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailure(value: String): Self = this.set("failure", value.asInstanceOf[js.Any])
+    def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
     
     @scala.inline
-    def deleteFailure: Self = this.set("failure", js.undefined)
+    def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: String): Self = this.set("pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("pending", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: String): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

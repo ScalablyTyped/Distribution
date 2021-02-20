@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Retry-After HTTP header on an HTTP response. */
 @js.native
-trait HttpDateOrDeltaHeaderValue extends js.Object {
+trait HttpDateOrDeltaHeaderValue extends StObject {
   
   /** Gets the value of the HTTP-date information used in the Retry-After HTTP header. */
   var date: Date = js.native
@@ -24,24 +25,12 @@ object HttpDateOrDeltaHeaderValue {
   }
   
   @scala.inline
-  implicit class HttpDateOrDeltaHeaderValueOps[Self <: HttpDateOrDeltaHeaderValue] (val x: Self) extends AnyVal {
+  implicit class HttpDateOrDeltaHeaderValueMutableBuilder[Self <: HttpDateOrDeltaHeaderValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
   }
 }

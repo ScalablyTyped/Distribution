@@ -1,13 +1,13 @@
 package typings.awsSdkClientKmsBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/model/_KeyList", JSImport.Namespace)
-@js.native
-object keyListMod extends js.Object {
+object keyListMod {
   
-  @JSName("_KeyList")
+  @JSImport("@aws-sdk/client-kms-browser/model/_KeyList", "_KeyList")
+  @js.native
   val KeyList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
 }

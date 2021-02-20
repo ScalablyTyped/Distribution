@@ -1,6 +1,7 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;example.googleapis.com/20160206&quot;: 100.00         }       }     }
   */
 @js.native
-trait SchemaTrafficPercentStrategy extends js.Object {
+trait SchemaTrafficPercentStrategy extends StObject {
   
   /**
     * Maps service configuration IDs to their corresponding traffic percentage.
@@ -39,24 +40,12 @@ object SchemaTrafficPercentStrategy {
   }
   
   @scala.inline
-  implicit class SchemaTrafficPercentStrategyOps[Self <: SchemaTrafficPercentStrategy] (val x: Self) extends AnyVal {
+  implicit class SchemaTrafficPercentStrategyMutableBuilder[Self <: SchemaTrafficPercentStrategy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPercentages(value: StringDictionary[Double]): Self = StObject.set(x, "percentages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPercentages(value: StringDictionary[Double]): Self = this.set("percentages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentages: Self = this.set("percentages", js.undefined)
+    def setPercentagesUndefined: Self = StObject.set(x, "percentages", js.undefined)
   }
 }

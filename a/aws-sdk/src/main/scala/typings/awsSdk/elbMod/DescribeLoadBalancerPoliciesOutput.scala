@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLoadBalancerPoliciesOutput extends js.Object {
+trait DescribeLoadBalancerPoliciesOutput extends StObject {
   
   /**
     * Information about the policies.
@@ -21,27 +22,15 @@ object DescribeLoadBalancerPoliciesOutput {
   }
   
   @scala.inline
-  implicit class DescribeLoadBalancerPoliciesOutputOps[Self <: DescribeLoadBalancerPoliciesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeLoadBalancerPoliciesOutputMutableBuilder[Self <: DescribeLoadBalancerPoliciesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyDescriptions(value: PolicyDescriptions): Self = StObject.set(x, "PolicyDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyDescriptionsUndefined: Self = StObject.set(x, "PolicyDescriptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyDescriptionsVarargs(value: PolicyDescription*): Self = this.set("PolicyDescriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyDescriptions(value: PolicyDescriptions): Self = this.set("PolicyDescriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyDescriptions: Self = this.set("PolicyDescriptions", js.undefined)
+    def setPolicyDescriptionsVarargs(value: PolicyDescription*): Self = StObject.set(x, "PolicyDescriptions", js.Array(value :_*))
   }
 }

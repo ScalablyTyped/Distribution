@@ -1,11 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoryPointInfo extends js.Object {
+trait StoryPointInfo extends StObject {
   
   /** Gets the content of the textual description for this story point. */
   def getCaption(): String = js.native
@@ -37,33 +38,21 @@ object StoryPointInfo {
   }
   
   @scala.inline
-  implicit class StoryPointInfoOps[Self <: StoryPointInfo] (val x: Self) extends AnyVal {
+  implicit class StoryPointInfoMutableBuilder[Self <: StoryPointInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCaption(value: () => String): Self = this.set("getCaption", js.Any.fromFunction0(value))
+    def setGetIsUpdated(value: () => Boolean): Self = StObject.set(x, "getIsUpdated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndex(value: () => Double): Self = this.set("getIndex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsActive(value: () => Boolean): Self = this.set("getIsActive", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIsUpdated(value: () => Boolean): Self = this.set("getIsUpdated", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParentStory(value: () => Story): Self = this.set("getParentStory", js.Any.fromFunction0(value))
+    def setGetParentStory(value: () => Story): Self = StObject.set(x, "getParentStory", js.Any.fromFunction0(value))
   }
 }

@@ -2,12 +2,13 @@ package typings.promiseFs.anon
 
 import typings.node.BufferEncoding
 import typings.promiseFs.promiseFsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WithFileTypes extends js.Object {
+trait WithFileTypes extends StObject {
   
   var encoding: BufferEncoding | Null = js.native
   
@@ -22,30 +23,18 @@ object WithFileTypes {
   }
   
   @scala.inline
-  implicit class WithFileTypesOps[Self <: WithFileTypes] (val x: Self) extends AnyVal {
+  implicit class WithFileTypesMutableBuilder[Self <: WithFileTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithFileTypes(value: `false`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
-    
-    @scala.inline
-    def setWithFileTypes(value: `false`): Self = this.set("withFileTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithFileTypes: Self = this.set("withFileTypes", js.undefined)
+    def setWithFileTypesUndefined: Self = StObject.set(x, "withFileTypes", js.undefined)
   }
 }

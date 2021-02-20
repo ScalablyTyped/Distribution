@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRangeRequest extends js.Object {
+trait DeleteRangeRequest extends StObject {
   
   /** The range of cells to delete. */
   var range: js.UndefOr[GridRange] = js.native
@@ -25,30 +26,18 @@ object DeleteRangeRequest {
   }
   
   @scala.inline
-  implicit class DeleteRangeRequestOps[Self <: DeleteRangeRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteRangeRequestMutableBuilder[Self <: DeleteRangeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShiftDimension(value: String): Self = StObject.set(x, "shiftDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setShiftDimension(value: String): Self = this.set("shiftDimension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShiftDimension: Self = this.set("shiftDimension", js.undefined)
+    def setShiftDimensionUndefined: Self = StObject.set(x, "shiftDimension", js.undefined)
   }
 }

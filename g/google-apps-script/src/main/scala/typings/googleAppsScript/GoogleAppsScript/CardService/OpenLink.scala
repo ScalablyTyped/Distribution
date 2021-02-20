@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .build();
   */
 @js.native
-trait OpenLink extends js.Object {
+trait OpenLink extends StObject {
   
   def setOnClose(onClose: OnClose): OpenLink = js.native
   
@@ -43,27 +44,15 @@ object OpenLink {
   }
   
   @scala.inline
-  implicit class OpenLinkOps[Self <: OpenLink] (val x: Self) extends AnyVal {
+  implicit class OpenLinkMutableBuilder[Self <: OpenLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetOnClose(value: OnClose => OpenLink): Self = StObject.set(x, "setOnClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetOpenAs(value: OpenAs => OpenLink): Self = StObject.set(x, "setOpenAs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetOnClose(value: OnClose => OpenLink): Self = this.set("setOnClose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOpenAs(value: OpenAs => OpenLink): Self = this.set("setOpenAs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUrl(value: String => OpenLink): Self = this.set("setUrl", js.Any.fromFunction1(value))
+    def setSetUrl(value: String => OpenLink): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * index buffer will be initialized to zeros.
   */
 @js.native
-trait IndexBuffer extends js.Object {
+trait IndexBuffer extends StObject {
   
   /**
     * Frees resources associated with this index buffer.
@@ -88,33 +89,21 @@ object IndexBuffer {
   }
   
   @scala.inline
-  implicit class IndexBufferOps[Self <: IndexBuffer] (val x: Self) extends AnyVal {
+  implicit class IndexBufferMutableBuilder[Self <: IndexBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFormat(value: () => Double): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNumIndices(value: () => Double): Self = StObject.set(x, "getNumIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setLock(value: () => ArrayBuffer): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormat(value: () => Double): Self = this.set("getFormat", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNumIndices(value: () => Double): Self = this.set("getNumIndices", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLock(value: () => ArrayBuffer): Self = this.set("lock", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
+    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.swiftclick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwiftClickObject extends js.Object {
+trait SwiftClickObject extends StObject {
   
   def addNodeNamesToTrack(nodeNamesArray: js.Array[String]): Unit = js.native
   
@@ -26,27 +27,15 @@ object SwiftClickObject {
   }
   
   @scala.inline
-  implicit class SwiftClickObjectOps[Self <: SwiftClickObject] (val x: Self) extends AnyVal {
+  implicit class SwiftClickObjectMutableBuilder[Self <: SwiftClickObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "addNodeNamesToTrack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplaceNodeNamesToTrack(value: js.Array[String] => Unit): Self = StObject.set(x, "replaceNodeNamesToTrack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddNodeNamesToTrack(value: js.Array[String] => Unit): Self = this.set("addNodeNamesToTrack", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceNodeNamesToTrack(value: js.Array[String] => Unit): Self = this.set("replaceNodeNamesToTrack", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUseCssParser(value: Boolean => Unit): Self = this.set("useCssParser", js.Any.fromFunction1(value))
+    def setUseCssParser(value: Boolean => Unit): Self = StObject.set(x, "useCssParser", js.Any.fromFunction1(value))
   }
 }

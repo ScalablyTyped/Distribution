@@ -2,12 +2,13 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FragmentSpecResolver extends js.Object {
+trait FragmentSpecResolver extends StObject {
   
   /**
     * Stop watching for changes to the results of the fragments.
@@ -52,33 +53,21 @@ object FragmentSpecResolver {
   }
   
   @scala.inline
-  implicit class FragmentSpecResolverOps[Self <: FragmentSpecResolver] (val x: Self) extends AnyVal {
+  implicit class FragmentSpecResolverMutableBuilder[Self <: FragmentSpecResolver] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolve(value: () => FragmentSpecResults): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetCallback(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setSetProps(value: Props => Unit): Self = StObject.set(x, "setProps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResolve(value: () => FragmentSpecResults): Self = this.set("resolve", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCallback(value: js.Function0[Unit] => Unit): Self = this.set("setCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetProps(value: Props => Unit): Self = this.set("setProps", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVariables(value: (Variables, ConcreteRequest) => Unit): Self = this.set("setVariables", js.Any.fromFunction2(value))
+    def setSetVariables(value: (Variables, ConcreteRequest) => Unit): Self = StObject.set(x, "setVariables", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextLine extends js.Object {
+trait ITextLine extends StObject {
   
   def end(): Double = js.native
   
@@ -35,36 +36,24 @@ object ITextLine {
   }
   
   @scala.inline
-  implicit class ITextLineOps[Self <: ITextLine] (val x: Self) extends AnyVal {
+  implicit class ITextLineMutableBuilder[Self <: ITextLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndIncludingLineBreak(value: () => Double): Self = StObject.set(x, "endIncludingLineBreak", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtent(value: () => TextSpan): Self = StObject.set(x, "extent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnd(value: () => Double): Self = this.set("end", js.Any.fromFunction0(value))
+    def setExtentIncludingLineBreak(value: () => TextSpan): Self = StObject.set(x, "extentIncludingLineBreak", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndIncludingLineBreak(value: () => Double): Self = this.set("endIncludingLineBreak", js.Any.fromFunction0(value))
+    def setLineNumber(value: () => Double): Self = StObject.set(x, "lineNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExtent(value: () => TextSpan): Self = this.set("extent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExtentIncludingLineBreak(value: () => TextSpan): Self = this.set("extentIncludingLineBreak", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLineNumber(value: () => Double): Self = this.set("lineNumber", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStart(value: () => Double): Self = this.set("start", js.Any.fromFunction0(value))
+    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
   }
 }

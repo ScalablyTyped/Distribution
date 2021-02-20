@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * also to update the set to indicate that permissions have been accepted.
   */
 @js.native
-trait SchemaProductPermission extends js.Object {
+trait SchemaProductPermission extends StObject {
   
   /**
     * An opaque string uniquely identifying the permission.
@@ -32,30 +33,18 @@ object SchemaProductPermission {
   }
   
   @scala.inline
-  implicit class SchemaProductPermissionOps[Self <: SchemaProductPermission] (val x: Self) extends AnyVal {
+  implicit class SchemaProductPermissionMutableBuilder[Self <: SchemaProductPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionId(value: String): Self = this.set("permissionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissionId: Self = this.set("permissionId", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NameCollisionOption extends js.Object
+sealed trait NameCollisionOption extends StObject
 @JSGlobal("Windows.Storage.NameCollisionOption")
 @js.native
-object NameCollisionOption extends js.Object {
+object NameCollisionOption extends StObject {
   
   @js.native
   sealed trait failIfExists extends NameCollisionOption

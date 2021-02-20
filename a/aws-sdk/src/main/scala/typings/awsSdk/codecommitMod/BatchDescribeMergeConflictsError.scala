@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDescribeMergeConflictsError extends js.Object {
+trait BatchDescribeMergeConflictsError extends StObject {
   
   /**
     * The name of the exception.
@@ -31,27 +32,15 @@ object BatchDescribeMergeConflictsError {
   }
   
   @scala.inline
-  implicit class BatchDescribeMergeConflictsErrorOps[Self <: BatchDescribeMergeConflictsError] (val x: Self) extends AnyVal {
+  implicit class BatchDescribeMergeConflictsErrorMutableBuilder[Self <: BatchDescribeMergeConflictsError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptionName(value: ExceptionName): Self = StObject.set(x, "exceptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExceptionName(value: ExceptionName): Self = this.set("exceptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

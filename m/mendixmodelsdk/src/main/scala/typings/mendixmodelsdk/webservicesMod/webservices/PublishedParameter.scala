@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflowParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,16 +79,20 @@ class PublishedParameter protected () extends Element[IModel] {
   def `type`: String = js.native
   def type_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter")
-@js.native
-object PublishedParameter extends js.Object {
+object PublishedParameter {
+  
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new PublishedParameter instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter.create")
+  @js.native
   def create(model: IModel): PublishedParameter = js.native
   
   /**
@@ -95,9 +100,22 @@ object PublishedParameter extends js.Object {
     * The new PublishedParameter will be automatically stored in the 'parameters' property
     * of the parent PublishedOperation element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter.createIn")
+  @js.native
   def createIn(container: PublishedOperation): PublishedParameter = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PublishedParameter.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

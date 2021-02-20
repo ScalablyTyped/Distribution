@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterDomainRequest extends js.Object {
+trait RegisterDomainRequest extends StObject {
   
   /**
     * Provides detailed contact information. For information about the values that you specify for each element, see ContactDetail.
@@ -72,63 +73,51 @@ object RegisterDomainRequest {
   }
   
   @scala.inline
-  implicit class RegisterDomainRequestOps[Self <: RegisterDomainRequest] (val x: Self) extends AnyVal {
+  implicit class RegisterDomainRequestMutableBuilder[Self <: RegisterDomainRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
     @scala.inline
-    def setAdminContact(value: ContactDetail): Self = this.set("AdminContact", value.asInstanceOf[js.Any])
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDurationInYears(value: DurationInYears): Self = StObject.set(x, "DurationInYears", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInYears(value: DurationInYears): Self = this.set("DurationInYears", value.asInstanceOf[js.Any])
+    def setIdnLangCode(value: LangCode): Self = StObject.set(x, "IdnLangCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistrantContact(value: ContactDetail): Self = this.set("RegistrantContact", value.asInstanceOf[js.Any])
+    def setIdnLangCodeUndefined: Self = StObject.set(x, "IdnLangCode", js.undefined)
     
     @scala.inline
-    def setTechContact(value: ContactDetail): Self = this.set("TechContact", value.asInstanceOf[js.Any])
+    def setPrivacyProtectAdminContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectAdminContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRenew(value: Boolean): Self = this.set("AutoRenew", value.asInstanceOf[js.Any])
+    def setPrivacyProtectAdminContactUndefined: Self = StObject.set(x, "PrivacyProtectAdminContact", js.undefined)
     
     @scala.inline
-    def deleteAutoRenew: Self = this.set("AutoRenew", js.undefined)
+    def setPrivacyProtectRegistrantContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectRegistrantContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdnLangCode(value: LangCode): Self = this.set("IdnLangCode", value.asInstanceOf[js.Any])
+    def setPrivacyProtectRegistrantContactUndefined: Self = StObject.set(x, "PrivacyProtectRegistrantContact", js.undefined)
     
     @scala.inline
-    def deleteIdnLangCode: Self = this.set("IdnLangCode", js.undefined)
+    def setPrivacyProtectTechContact(value: Boolean): Self = StObject.set(x, "PrivacyProtectTechContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyProtectAdminContact(value: Boolean): Self = this.set("PrivacyProtectAdminContact", value.asInstanceOf[js.Any])
+    def setPrivacyProtectTechContactUndefined: Self = StObject.set(x, "PrivacyProtectTechContact", js.undefined)
     
     @scala.inline
-    def deletePrivacyProtectAdminContact: Self = this.set("PrivacyProtectAdminContact", js.undefined)
+    def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyProtectRegistrantContact(value: Boolean): Self = this.set("PrivacyProtectRegistrantContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyProtectRegistrantContact: Self = this.set("PrivacyProtectRegistrantContact", js.undefined)
-    
-    @scala.inline
-    def setPrivacyProtectTechContact(value: Boolean): Self = this.set("PrivacyProtectTechContact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyProtectTechContact: Self = this.set("PrivacyProtectTechContact", js.undefined)
+    def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
   }
 }

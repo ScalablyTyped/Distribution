@@ -1,12 +1,13 @@
 package typings.cassandraDriver.typesMod.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Tuple")
 @js.native
-class Tuple protected () extends js.Object {
+class Tuple protected () extends StObject {
   def this(args: js.Any*) = this()
   
   var elements: js.Array[_] = js.native
@@ -19,10 +20,10 @@ class Tuple protected () extends js.Object {
   
   def values(): js.Array[_] = js.native
 }
-/* static members */
-@JSImport("cassandra-driver/lib/types", "types.Tuple")
-@js.native
-object Tuple extends js.Object {
+object Tuple {
   
+  /* static member */
+  @JSImport("cassandra-driver/lib/types", "types.Tuple.fromArray")
+  @js.native
   def fromArray(elements: js.Array[_]): Tuple = js.native
 }

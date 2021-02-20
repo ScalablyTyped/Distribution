@@ -1,11 +1,12 @@
 package typings.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveRet extends js.Object {
+trait RemoveRet extends StObject {
   
   def in(collection: js.Any): RemoveExpression = js.native
   

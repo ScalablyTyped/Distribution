@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Profile extends js.Object {
+trait Profile extends StObject {
   
   var profile: js.UndefOr[js.Object] = js.native
 }
@@ -18,24 +19,12 @@ object Profile {
   }
   
   @scala.inline
-  implicit class ProfileOps[Self <: Profile] (val x: Self) extends AnyVal {
+  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProfile(value: js.Object): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("profile", js.undefined)
+    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
   }
 }

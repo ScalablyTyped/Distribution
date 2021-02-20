@@ -60,16 +60,16 @@ import typings.instagramPrivateApi.storySliderVotersFeedResponseResponseMod.Stor
 import typings.instagramPrivateApi.storySliderVotersFeedResponseResponseMod.StorySliderVotersFeedResponseResponseVotersItem
 import typings.instagramPrivateApi.timelineFeedTypesMod.TimelineFeedReason
 import typings.instagramPrivateApi.userStoryFeedMod.UserStoryFeed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/core/feed.factory", JSImport.Namespace)
-@js.native
-object feedFactoryMod extends js.Object {
+object feedFactoryMod {
   
+  @JSImport("instagram-private-api/dist/core/feed.factory", "FeedFactory")
   @js.native
-  class FeedFactory protected () extends js.Object {
+  class FeedFactory protected () extends StObject {
     def this(client: IgApiClient) = this()
     
     def accountFollowers(): AccountFollowersFeed = js.native

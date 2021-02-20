@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ByteOrderMark extends js.Object
+sealed trait ByteOrderMark extends StObject
 @JSGlobal("TypeScript.ByteOrderMark")
 @js.native
-object ByteOrderMark extends js.Object {
+object ByteOrderMark extends StObject {
   
   @js.native
   sealed trait None extends ByteOrderMark

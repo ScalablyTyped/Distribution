@@ -4,12 +4,13 @@ import typings.xstate.typesMod.AnyEventObject
 import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.SendAction
 import typings.xstate.typesMod.SendActionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FnCallTargetOptions extends js.Object {
+trait FnCallTargetOptions extends StObject {
   
   def apply[TContext, TEvent /* <: EventObject */](
     target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any

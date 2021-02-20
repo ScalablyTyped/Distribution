@@ -1,11 +1,12 @@
 package typings.awsSdk.migrationhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationTaskSummary extends js.Object {
+trait MigrationTaskSummary extends StObject {
   
   /**
     * Unique identifier that references the migration task. Do not store personal data in this field. 
@@ -46,54 +47,42 @@ object MigrationTaskSummary {
   }
   
   @scala.inline
-  implicit class MigrationTaskSummaryOps[Self <: MigrationTaskSummary] (val x: Self) extends AnyVal {
+  implicit class MigrationTaskSummaryMutableBuilder[Self <: MigrationTaskSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMigrationTaskNameUndefined: Self = StObject.set(x, "MigrationTaskName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = this.set("MigrationTaskName", value.asInstanceOf[js.Any])
+    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
     @scala.inline
-    def deleteMigrationTaskName: Self = this.set("MigrationTaskName", js.undefined)
+    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    def setProgressUpdateStreamUndefined: Self = StObject.set(x, "ProgressUpdateStream", js.undefined)
     
     @scala.inline
-    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = this.set("ProgressUpdateStream", value.asInstanceOf[js.Any])
+    def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressUpdateStream: Self = this.set("ProgressUpdateStream", js.undefined)
+    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetail(value: StatusDetail): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
-    
-    @scala.inline
-    def setUpdateDateTime(value: UpdateDateTime): Self = this.set("UpdateDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDateTime: Self = this.set("UpdateDateTime", js.undefined)
+    def setUpdateDateTimeUndefined: Self = StObject.set(x, "UpdateDateTime", js.undefined)
   }
 }

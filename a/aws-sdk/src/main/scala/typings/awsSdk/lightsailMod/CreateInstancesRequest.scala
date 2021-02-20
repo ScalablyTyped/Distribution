@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateInstancesRequest extends js.Object {
+trait CreateInstancesRequest extends StObject {
   
   /**
     * An array of objects representing the add-ons to enable for the new instance.
@@ -66,69 +67,57 @@ object CreateInstancesRequest {
   }
   
   @scala.inline
-  implicit class CreateInstancesRequestOps[Self <: CreateInstancesRequest] (val x: Self) extends AnyVal {
+  implicit class CreateInstancesRequestMutableBuilder[Self <: CreateInstancesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOns(value: AddOnRequestList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddOnsVarargs(value: AddOnRequest*): Self = StObject.set(x, "addOns", js.Array(value :_*))
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueprintId(value: NonEmptyString): Self = this.set("blueprintId", value.asInstanceOf[js.Any])
+    def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: NonEmptyString): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setBundleId(value: NonEmptyString): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceNamesVarargs(value: String*): Self = this.set("instanceNames", js.Array(value :_*))
+    def setCustomImageName(value: ResourceName): Self = StObject.set(x, "customImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceNames(value: StringList): Self = this.set("instanceNames", value.asInstanceOf[js.Any])
+    def setCustomImageNameUndefined: Self = StObject.set(x, "customImageName", js.undefined)
     
     @scala.inline
-    def setAddOnsVarargs(value: AddOnRequest*): Self = this.set("addOns", js.Array(value :_*))
+    def setInstanceNames(value: StringList): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOns(value: AddOnRequestList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomImageName(value: ResourceName): Self = this.set("customImageName", value.asInstanceOf[js.Any])
+    def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
     
     @scala.inline
-    def deleteCustomImageName: Self = this.set("customImageName", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPairName(value: ResourceName): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUserData(value: String): Self = this.set("userData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserData: Self = this.set("userData", js.undefined)
+    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

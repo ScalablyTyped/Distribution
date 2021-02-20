@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,71 +65,59 @@ object CIMPointSymbol {
   }
   
   @scala.inline
-  implicit class CIMPointSymbolOps[Self <: CIMPointSymbol] (val x: Self) extends AnyVal {
+  implicit class CIMPointSymbolMutableBuilder[Self <: CIMPointSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPointSymbol): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAngleAlignment(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AngleAlignment * / any */ String
-    ): Self = this.set("angleAlignment", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "angleAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAngleAlignment: Self = this.set("angleAlignment", js.undefined)
+    def setAngleAlignmentUndefined: Self = StObject.set(x, "angleAlignment", js.undefined)
     
     @scala.inline
-    def setCallout(value: CIMCalloutType): Self = this.set("callout", value.asInstanceOf[js.Any])
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def deleteCallout: Self = this.set("callout", js.undefined)
+    def setCallout(value: CIMCalloutType): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaloSize(value: Double): Self = this.set("haloSize", value.asInstanceOf[js.Any])
+    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
     @scala.inline
-    def deleteHaloSize: Self = this.set("haloSize", js.undefined)
+    def setHaloSize(value: Double): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaloSymbol(value: CIMPolygonSymbol): Self = this.set("haloSymbol", value.asInstanceOf[js.Any])
+    def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
     
     @scala.inline
-    def deleteHaloSymbol: Self = this.set("haloSymbol", js.undefined)
+    def setHaloSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "haloSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimitiveName(value: String): Self = this.set("primitiveName", value.asInstanceOf[js.Any])
+    def setHaloSymbolUndefined: Self = StObject.set(x, "haloSymbol", js.undefined)
     
     @scala.inline
-    def deletePrimitiveName: Self = this.set("primitiveName", js.undefined)
+    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
     @scala.inline
-    def deleteScaleX: Self = this.set("scaleX", js.undefined)
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol3DProperties(value: CIM3DSymbolProperties): Self = this.set("symbol3DProperties", value.asInstanceOf[js.Any])
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
     @scala.inline
-    def deleteSymbol3DProperties: Self = this.set("symbol3DProperties", js.undefined)
+    def setSymbol3DProperties(value: CIM3DSymbolProperties): Self = StObject.set(x, "symbol3DProperties", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSymbol3DPropertiesUndefined: Self = StObject.set(x, "symbol3DProperties", js.undefined)
+    
+    @scala.inline
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMPointSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

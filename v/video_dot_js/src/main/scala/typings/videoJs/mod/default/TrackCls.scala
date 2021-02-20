@@ -1,11 +1,14 @@
 package typings.videoJs.mod.default
 
+import typings.videoJs.mod.videojs.Track
 import typings.videoJs.mod.videojs.TrackOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "Track")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.Track")
 @js.native
 /**
   * Create an instance of this class.
@@ -25,7 +28,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.language='']
   *        A valid two character language code.
   */
-class TrackCls ()
-  extends typings.videoJs.mod.videojs.Track {
+class TrackCls () extends Track {
   def this(options: TrackOptions) = this()
 }

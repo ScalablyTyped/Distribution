@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpEndpointCommonAttribute extends js.Object {
+trait HttpEndpointCommonAttribute extends StObject {
   
   /**
     * The name of the HTTP endpoint common attribute.
@@ -26,24 +27,12 @@ object HttpEndpointCommonAttribute {
   }
   
   @scala.inline
-  implicit class HttpEndpointCommonAttributeOps[Self <: HttpEndpointCommonAttribute] (val x: Self) extends AnyVal {
+  implicit class HttpEndpointCommonAttributeMutableBuilder[Self <: HttpEndpointCommonAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: HttpEndpointAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributeName(value: HttpEndpointAttributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributeValue(value: HttpEndpointAttributeValue): Self = this.set("AttributeValue", value.asInstanceOf[js.Any])
+    def setAttributeValue(value: HttpEndpointAttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
   }
 }

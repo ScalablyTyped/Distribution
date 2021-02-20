@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactNameOrder extends js.Object
+sealed trait ContactNameOrder extends StObject
 /** Specifies the name order for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactNameOrder")
 @js.native
-object ContactNameOrder extends js.Object {
+object ContactNameOrder extends StObject {
   
   /** Show name by first name, then last name. */
   @js.native

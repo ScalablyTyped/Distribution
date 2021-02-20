@@ -1,11 +1,12 @@
 package typings.jquerySticky
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStickyOptions extends js.Object {
+trait JQueryStickyOptions extends StObject {
   
   /**
     * Pixels between the page bottom and the element's bottom.
@@ -72,72 +73,60 @@ object JQueryStickyOptions {
   }
   
   @scala.inline
-  implicit class JQueryStickyOptionsOps[Self <: JQueryStickyOptions] (val x: Self) extends AnyVal {
+  implicit class JQueryStickyOptionsMutableBuilder[Self <: JQueryStickyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomSpacing(value: Double): Self = StObject.set(x, "bottomSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomSpacingUndefined: Self = StObject.set(x, "bottomSpacing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomSpacing(value: Double): Self = this.set("bottomSpacing", value.asInstanceOf[js.Any])
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBottomSpacing: Self = this.set("bottomSpacing", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Boolean): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setGetWidthFrom(value: String): Self = StObject.set(x, "getWidthFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setGetWidthFromUndefined: Self = StObject.set(x, "getWidthFrom", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setResponsiveWidth(value: Boolean): Self = StObject.set(x, "responsiveWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetWidthFrom(value: String): Self = this.set("getWidthFrom", value.asInstanceOf[js.Any])
+    def setResponsiveWidthUndefined: Self = StObject.set(x, "responsiveWidth", js.undefined)
     
     @scala.inline
-    def deleteGetWidthFrom: Self = this.set("getWidthFrom", js.undefined)
+    def setTopSpacing(value: Double): Self = StObject.set(x, "topSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveWidth(value: Boolean): Self = this.set("responsiveWidth", value.asInstanceOf[js.Any])
+    def setTopSpacingUndefined: Self = StObject.set(x, "topSpacing", js.undefined)
     
     @scala.inline
-    def deleteResponsiveWidth: Self = this.set("responsiveWidth", js.undefined)
+    def setWidthFromWrapper(value: Boolean): Self = StObject.set(x, "widthFromWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopSpacing(value: Double): Self = this.set("topSpacing", value.asInstanceOf[js.Any])
+    def setWidthFromWrapperUndefined: Self = StObject.set(x, "widthFromWrapper", js.undefined)
     
     @scala.inline
-    def deleteTopSpacing: Self = this.set("topSpacing", js.undefined)
+    def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidthFromWrapper(value: Boolean): Self = this.set("widthFromWrapper", value.asInstanceOf[js.Any])
+    def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
     
     @scala.inline
-    def deleteWidthFromWrapper: Self = this.set("widthFromWrapper", js.undefined)
+    def setZIndex(value: String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapperClassName(value: String): Self = this.set("wrapperClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperClassName: Self = this.set("wrapperClassName", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: String): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

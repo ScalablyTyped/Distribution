@@ -1,11 +1,12 @@
 package typings.node.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowHalfOpen extends js.Object {
+trait AllowHalfOpen extends StObject {
   
   var allowHalfOpen: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object AllowHalfOpen {
   }
   
   @scala.inline
-  implicit class AllowHalfOpenOps[Self <: AllowHalfOpen] (val x: Self) extends AnyVal {
+  implicit class AllowHalfOpenMutableBuilder[Self <: AllowHalfOpen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPauseOnConnect(value: Boolean): Self = StObject.set(x, "pauseOnConnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHalfOpen(value: Boolean): Self = this.set("allowHalfOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowHalfOpen: Self = this.set("allowHalfOpen", js.undefined)
-    
-    @scala.inline
-    def setPauseOnConnect(value: Boolean): Self = this.set("pauseOnConnect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePauseOnConnect: Self = this.set("pauseOnConnect", js.undefined)
+    def setPauseOnConnectUndefined: Self = StObject.set(x, "pauseOnConnect", js.undefined)
   }
 }

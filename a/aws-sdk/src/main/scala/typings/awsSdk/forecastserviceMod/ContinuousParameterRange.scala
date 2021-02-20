@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinuousParameterRange extends js.Object {
+trait ContinuousParameterRange extends StObject {
   
   /**
     * The maximum tunable value of the hyperparameter.
@@ -36,33 +37,21 @@ object ContinuousParameterRange {
   }
   
   @scala.inline
-  implicit class ContinuousParameterRangeOps[Self <: ContinuousParameterRange] (val x: Self) extends AnyVal {
+  implicit class ContinuousParameterRangeMutableBuilder[Self <: ContinuousParameterRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxValue(value: Double): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinValue(value: Double): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: Double): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    def setScalingType(value: ScalingType): Self = StObject.set(x, "ScalingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: Double): Self = this.set("MinValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScalingType(value: ScalingType): Self = this.set("ScalingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingType: Self = this.set("ScalingType", js.undefined)
+    def setScalingTypeUndefined: Self = StObject.set(x, "ScalingType", js.undefined)
   }
 }

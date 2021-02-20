@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setGroup('DATETIME');
   */
 @js.native
-trait Field extends js.Object {
+trait Field extends StObject {
   
   def getAggregation(): AggregationType | Null = js.native
   
@@ -94,81 +95,69 @@ object Field {
   }
   
   @scala.inline
-  implicit class FieldOps[Self <: Field] (val x: Self) extends AnyVal {
+  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAggregation(value: () => AggregationType | Null): Self = StObject.set(x, "getAggregation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDescription(value: () => String | Null): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFormula(value: () => String | Null): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAggregation(value: () => AggregationType | Null): Self = this.set("getAggregation", js.Any.fromFunction0(value))
+    def setGetGroup(value: () => String | Null): Self = StObject.set(x, "getGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String | Null): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    def setGetId(value: () => String | Null): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormula(value: () => String | Null): Self = this.set("getFormula", js.Any.fromFunction0(value))
+    def setGetIsReaggregatable(value: () => Boolean | Null): Self = StObject.set(x, "getIsReaggregatable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroup(value: () => String | Null): Self = this.set("getGroup", js.Any.fromFunction0(value))
+    def setGetName(value: () => String | Null): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String | Null): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetType(value: () => FieldType | Null): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsReaggregatable(value: () => Boolean | Null): Self = this.set("getIsReaggregatable", js.Any.fromFunction0(value))
+    def setIsDefault(value: () => Boolean): Self = StObject.set(x, "isDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String | Null): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setIsDimension(value: () => Boolean): Self = StObject.set(x, "isDimension", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetType(value: () => FieldType | Null): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setIsHidden(value: () => Boolean): Self = StObject.set(x, "isHidden", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDefault(value: () => Boolean): Self = this.set("isDefault", js.Any.fromFunction0(value))
+    def setIsMetric(value: () => Boolean): Self = StObject.set(x, "isMetric", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDimension(value: () => Boolean): Self = this.set("isDimension", js.Any.fromFunction0(value))
+    def setSetAggregation(value: AggregationType => Field): Self = StObject.set(x, "setAggregation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsHidden(value: () => Boolean): Self = this.set("isHidden", js.Any.fromFunction0(value))
+    def setSetDescription(value: String => Field): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsMetric(value: () => Boolean): Self = this.set("isMetric", js.Any.fromFunction0(value))
+    def setSetFormula(value: String => Field): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAggregation(value: AggregationType => Field): Self = this.set("setAggregation", js.Any.fromFunction1(value))
+    def setSetGroup(value: String => Field): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDescription(value: String => Field): Self = this.set("setDescription", js.Any.fromFunction1(value))
+    def setSetId(value: String => Field): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFormula(value: String => Field): Self = this.set("setFormula", js.Any.fromFunction1(value))
+    def setSetIsHidden(value: Boolean => Field): Self = StObject.set(x, "setIsHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGroup(value: String => Field): Self = this.set("setGroup", js.Any.fromFunction1(value))
+    def setSetIsReaggregatable(value: Boolean => Field): Self = StObject.set(x, "setIsReaggregatable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetId(value: String => Field): Self = this.set("setId", js.Any.fromFunction1(value))
+    def setSetName(value: String => Field): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIsHidden(value: Boolean => Field): Self = this.set("setIsHidden", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetIsReaggregatable(value: Boolean => Field): Self = this.set("setIsReaggregatable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetName(value: String => Field): Self = this.set("setName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetType(value: FieldType => Field): Self = this.set("setType", js.Any.fromFunction1(value))
+    def setSetType(value: FieldType => Field): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
   }
 }

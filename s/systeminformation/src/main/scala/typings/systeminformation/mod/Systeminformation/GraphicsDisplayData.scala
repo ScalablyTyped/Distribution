@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphicsDisplayData extends js.Object {
+trait GraphicsDisplayData extends StObject {
   
   var builtin: Boolean = js.native
   
@@ -65,66 +66,54 @@ object GraphicsDisplayData {
   }
   
   @scala.inline
-  implicit class GraphicsDisplayDataOps[Self <: GraphicsDisplayData] (val x: Self) extends AnyVal {
+  implicit class GraphicsDisplayDataMutableBuilder[Self <: GraphicsDisplayData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuiltin(value: Boolean): Self = StObject.set(x, "builtin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentRefreshRate(value: Double): Self = StObject.set(x, "currentRefreshRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuiltin(value: Boolean): Self = this.set("builtin", value.asInstanceOf[js.Any])
+    def setCurrentResX(value: Double): Self = StObject.set(x, "currentResX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setCurrentResY(value: Double): Self = StObject.set(x, "currentResY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRefreshRate(value: Double): Self = this.set("currentRefreshRate", value.asInstanceOf[js.Any])
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentResX(value: Double): Self = this.set("currentResX", value.asInstanceOf[js.Any])
+    def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentResY(value: Double): Self = this.set("currentResY", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setPixeldepth(value: Double): Self = StObject.set(x, "pixeldepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: Boolean): Self = this.set("main", value.asInstanceOf[js.Any])
+    def setPositionX(value: Double): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setPositionY(value: Double): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixeldepth(value: Double): Self = this.set("pixeldepth", value.asInstanceOf[js.Any])
+    def setResolutionx(value: Double): Self = StObject.set(x, "resolutionx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionX(value: Double): Self = this.set("positionX", value.asInstanceOf[js.Any])
+    def setResolutiony(value: Double): Self = StObject.set(x, "resolutiony", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionY(value: Double): Self = this.set("positionY", value.asInstanceOf[js.Any])
+    def setSizex(value: Double): Self = StObject.set(x, "sizex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionx(value: Double): Self = this.set("resolutionx", value.asInstanceOf[js.Any])
+    def setSizey(value: Double): Self = StObject.set(x, "sizey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutiony(value: Double): Self = this.set("resolutiony", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizex(value: Double): Self = this.set("sizex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizey(value: Double): Self = this.set("sizey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVendor(value: String): Self = this.set("vendor", value.asInstanceOf[js.Any])
+    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.antdMobile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Placement extends js.Object {
+trait Placement extends StObject {
   
   var align: Overflow = js.native
   
@@ -24,33 +25,21 @@ object Placement {
   }
   
   @scala.inline
-  implicit class PlacementOps[Self <: Placement] (val x: Self) extends AnyVal {
+  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Overflow): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: Overflow): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setTrigger(value: js.Array[String]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: String): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerVarargs(value: String*): Self = this.set("trigger", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrigger(value: js.Array[String]): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setTriggerVarargs(value: String*): Self = StObject.set(x, "trigger", js.Array(value :_*))
   }
 }

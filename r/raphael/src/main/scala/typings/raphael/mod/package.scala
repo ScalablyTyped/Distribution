@@ -1,10 +1,14 @@
 package typings.raphael
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def default: typings.raphael.mod.RaphaelStatic[typings.raphael.raphaelStrings.SVG | typings.raphael.raphaelStrings.VML] = typings.raphael.mod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.raphael.mod.RaphaelStatic[typings.raphael.raphaelStrings.SVG | typings.raphael.raphaelStrings.VML]]
   
   type RaphaelBasicEventHandler[ThisContext, TEvent /* <: typings.std.Event */] = /**
     * @param event The original DOM event that triggered the event this handler was registered for.

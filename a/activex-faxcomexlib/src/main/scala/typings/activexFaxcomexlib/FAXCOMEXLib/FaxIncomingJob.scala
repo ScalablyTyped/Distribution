@@ -1,13 +1,14 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxIncomingJob Class */
 @js.native
-trait FaxIncomingJob extends js.Object {
+trait FaxIncomingJob extends StObject {
   
   /** Available operations, a bit-wise combination of FAX_JOB_OPERATIONS values */
   val AvailableOperations: FAX_JOB_OPERATIONS_ENUM = js.native
@@ -100,78 +101,66 @@ object FaxIncomingJob {
   }
   
   @scala.inline
-  implicit class FaxIncomingJobOps[Self <: FaxIncomingJob] (val x: Self) extends AnyVal {
+  implicit class FaxIncomingJobMutableBuilder[Self <: FaxIncomingJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableOperations(value: FAX_JOB_OPERATIONS_ENUM): Self = StObject.set(x, "AvailableOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableOperations(value: FAX_JOB_OPERATIONS_ENUM): Self = this.set("AvailableOperations", value.asInstanceOf[js.Any])
+    def setCancel(value: () => Unit): Self = StObject.set(x, "Cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCSID(value: String): Self = this.set("CSID", value.asInstanceOf[js.Any])
+    def setCopyTiff(value: String => Unit): Self = StObject.set(x, "CopyTiff", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallerId(value: String): Self = this.set("CallerId", value.asInstanceOf[js.Any])
+    def setCurrentPage(value: Double): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("Cancel", js.Any.fromFunction0(value))
+    def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTiff(value: String => Unit): Self = this.set("CopyTiff", js.Any.fromFunction1(value))
+    def setExtendedStatus(value: String): Self = StObject.set(x, "ExtendedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPage(value: Double): Self = this.set("CurrentPage", value.asInstanceOf[js.Any])
+    def setExtendedStatusCode(value: FAX_JOB_EXTENDED_STATUS_ENUM): Self = StObject.set(x, "ExtendedStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: Double): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setFAXCOMEXLibDotFaxIncomingJob_typekey(value: FaxIncomingJob): Self = StObject.set(x, "FAXCOMEXLib.FaxIncomingJob_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedStatus(value: String): Self = this.set("ExtendedStatus", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedStatusCode(value: FAX_JOB_EXTENDED_STATUS_ENUM): Self = this.set("ExtendedStatusCode", value.asInstanceOf[js.Any])
+    def setJobType(value: FAX_JOB_TYPE_ENUM): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFAXCOMEXLibDotFaxIncomingJob_typekey(value: FaxIncomingJob): Self = this.set("FAXCOMEXLib.FaxIncomingJob_typekey", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: FAX_JOB_TYPE_ENUM): Self = this.set("JobType", value.asInstanceOf[js.Any])
+    def setRoutingInformation(value: String): Self = StObject.set(x, "RoutingInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("Refresh", js.Any.fromFunction0(value))
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double): Self = this.set("Retries", value.asInstanceOf[js.Any])
+    def setStatus(value: FAX_JOB_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingInformation(value: String): Self = this.set("RoutingInformation", value.asInstanceOf[js.Any])
+    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: FAX_JOB_STATUS_ENUM): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTSID(value: String): Self = this.set("TSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmissionEnd(value: VarDate): Self = this.set("TransmissionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransmissionStart(value: VarDate): Self = this.set("TransmissionStart", value.asInstanceOf[js.Any])
+    def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
   }
 }

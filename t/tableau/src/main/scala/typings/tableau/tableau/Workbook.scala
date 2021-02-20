@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region Workbook Classes
 @js.native
-trait Workbook extends js.Object {
+trait Workbook extends StObject {
   
   /** Activates the sheet, either by name or index, and returns a promise of the sheet that was activated. */
   def activateSheetAsync(sheetNameOrIndex: String): js.Promise[Sheet] = js.native

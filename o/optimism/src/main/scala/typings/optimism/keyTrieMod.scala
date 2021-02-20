@@ -1,16 +1,16 @@
 package typings.optimism
 
 import typings.std.IArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("optimism/lib/key-trie", JSImport.Namespace)
-@js.native
-object keyTrieMod extends js.Object {
+object keyTrieMod {
   
+  @JSImport("optimism/lib/key-trie", "KeyTrie")
   @js.native
-  class KeyTrie[K] protected () extends js.Object {
+  class KeyTrie[K] protected () extends StObject {
     def this(weakness: Boolean) = this()
     def this(weakness: Boolean, makeData: js.Function1[/* array */ js.Array[_], K]) = this()
     

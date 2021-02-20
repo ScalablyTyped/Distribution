@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/ListGlobalTablesOutput", JSImport.Namespace)
-@js.native
-object listGlobalTablesOutputMod extends js.Object {
+object listGlobalTablesOutputMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/ListGlobalTablesOutput", "ListGlobalTablesOutput")
+  @js.native
   val ListGlobalTablesOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

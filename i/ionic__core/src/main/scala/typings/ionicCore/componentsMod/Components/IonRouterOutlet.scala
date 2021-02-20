@@ -11,12 +11,13 @@ import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.navInterfaceMod.RouterOutletOptions
 import typings.ionicCore.navInterfaceMod.SwipeGestureHandler
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonRouterOutlet extends js.Object {
+trait IonRouterOutlet extends StObject {
   
   /**
     * If `true`, the router-outlet should animate the transition of components.

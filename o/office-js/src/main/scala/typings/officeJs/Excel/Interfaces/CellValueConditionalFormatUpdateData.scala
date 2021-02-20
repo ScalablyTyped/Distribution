@@ -1,13 +1,14 @@
 package typings.officeJs.Excel.Interfaces
 
 import typings.officeJs.Excel.ConditionalCellValueRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CellValueConditionalFormat object, for use in `cellValueConditionalFormat.set({ ... })`. */
 @js.native
-trait CellValueConditionalFormatUpdateData extends js.Object {
+trait CellValueConditionalFormatUpdateData extends StObject {
   
   /**
     *
@@ -34,30 +35,18 @@ object CellValueConditionalFormatUpdateData {
   }
   
   @scala.inline
-  implicit class CellValueConditionalFormatUpdateDataOps[Self <: CellValueConditionalFormatUpdateData] (val x: Self) extends AnyVal {
+  implicit class CellValueConditionalFormatUpdateDataMutableBuilder[Self <: CellValueConditionalFormatUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: ConditionalRangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRule(value: ConditionalCellValueRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ConditionalRangeFormatUpdateData): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setRule(value: ConditionalCellValueRule): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

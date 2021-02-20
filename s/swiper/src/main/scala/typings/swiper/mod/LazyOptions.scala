@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LazyOptions extends js.Object {
+trait LazyOptions extends StObject {
   
   var elementClass: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object LazyOptions {
   }
   
   @scala.inline
-  implicit class LazyOptionsOps[Self <: LazyOptions] (val x: Self) extends AnyVal {
+  implicit class LazyOptionsMutableBuilder[Self <: LazyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementClass(value: String): Self = StObject.set(x, "elementClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementClassUndefined: Self = StObject.set(x, "elementClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadOnTransitionStart(value: Boolean): Self = StObject.set(x, "loadOnTransitionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementClass(value: String): Self = this.set("elementClass", value.asInstanceOf[js.Any])
+    def setLoadOnTransitionStartUndefined: Self = StObject.set(x, "loadOnTransitionStart", js.undefined)
     
     @scala.inline
-    def deleteElementClass: Self = this.set("elementClass", js.undefined)
+    def setLoadPrevNext(value: Boolean): Self = StObject.set(x, "loadPrevNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadOnTransitionStart(value: Boolean): Self = this.set("loadOnTransitionStart", value.asInstanceOf[js.Any])
+    def setLoadPrevNextAmount(value: Double): Self = StObject.set(x, "loadPrevNextAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadOnTransitionStart: Self = this.set("loadOnTransitionStart", js.undefined)
+    def setLoadPrevNextAmountUndefined: Self = StObject.set(x, "loadPrevNextAmount", js.undefined)
     
     @scala.inline
-    def setLoadPrevNext(value: Boolean): Self = this.set("loadPrevNext", value.asInstanceOf[js.Any])
+    def setLoadPrevNextUndefined: Self = StObject.set(x, "loadPrevNext", js.undefined)
     
     @scala.inline
-    def deleteLoadPrevNext: Self = this.set("loadPrevNext", js.undefined)
+    def setLoadedClass(value: String): Self = StObject.set(x, "loadedClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadPrevNextAmount(value: Double): Self = this.set("loadPrevNextAmount", value.asInstanceOf[js.Any])
+    def setLoadedClassUndefined: Self = StObject.set(x, "loadedClass", js.undefined)
     
     @scala.inline
-    def deleteLoadPrevNextAmount: Self = this.set("loadPrevNextAmount", js.undefined)
+    def setLoadingClass(value: String): Self = StObject.set(x, "loadingClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadedClass(value: String): Self = this.set("loadedClass", value.asInstanceOf[js.Any])
+    def setLoadingClassUndefined: Self = StObject.set(x, "loadingClass", js.undefined)
     
     @scala.inline
-    def deleteLoadedClass: Self = this.set("loadedClass", js.undefined)
+    def setPreloaderClass(value: String): Self = StObject.set(x, "preloaderClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingClass(value: String): Self = this.set("loadingClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadingClass: Self = this.set("loadingClass", js.undefined)
-    
-    @scala.inline
-    def setPreloaderClass(value: String): Self = this.set("preloaderClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreloaderClass: Self = this.set("preloaderClass", js.undefined)
+    def setPreloaderClassUndefined: Self = StObject.set(x, "preloaderClass", js.undefined)
   }
 }

@@ -3,16 +3,16 @@ package typings.firebaseRemoteConfig
 import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.FirebaseRemoteConfigObject
 import typings.firebaseRemoteConfig.storageMod.Storage
 import typings.firebaseRemoteConfigTypes.mod.FetchStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/remote-config/dist/src/storage/storage_cache", JSImport.Namespace)
-@js.native
-object storageCacheMod extends js.Object {
+object storageCacheMod {
   
+  @JSImport("@firebase/remote-config/dist/src/storage/storage_cache", "StorageCache")
   @js.native
-  class StorageCache protected () extends js.Object {
+  class StorageCache protected () extends StObject {
     def this(storage: Storage) = this()
     
     var activeConfig: js.Any = js.native

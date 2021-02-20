@@ -1,15 +1,15 @@
 package typings.antlr4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/InputStream", JSImport.Namespace)
-@js.native
-object inputStreamMod extends js.Object {
+object inputStreamMod {
   
+  @JSImport("antlr4/InputStream", "InputStream")
   @js.native
-  class InputStream protected () extends js.Object {
+  class InputStream protected () extends StObject {
     def this(data: String) = this()
     def this(data: String, decodeToUnicodeCodePoints: Boolean) = this()
     

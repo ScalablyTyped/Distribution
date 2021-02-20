@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.automatic
 import typings.arcgisJsApi.arcgisJsApiStrings.dd
 import typings.arcgisJsApi.arcgisJsApiStrings.ddm
 import typings.arcgisJsApi.arcgisJsApiStrings.dms
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-coordinateFormatter.html)
   */
 @js.native
-trait coordinateFormatter extends js.Object {
+trait coordinateFormatter extends StObject {
   
   /**
     * Parses coordinates in latitude/longitude notation, and returns a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) representing that location.

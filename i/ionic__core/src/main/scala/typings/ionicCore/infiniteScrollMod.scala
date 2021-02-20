@@ -5,14 +5,14 @@ import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/infinite-scroll/infinite-scroll", JSImport.Namespace)
-@js.native
-object infiniteScrollMod extends js.Object {
+object infiniteScrollMod {
   
+  @JSImport("@ionic/core/dist/types/components/infinite-scroll/infinite-scroll", "InfiniteScroll")
   @js.native
   class InfiniteScroll () extends ComponentInterface {
     

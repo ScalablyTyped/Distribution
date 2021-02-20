@@ -1,11 +1,12 @@
 package typings.fundamentalReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeridiemAM extends js.Object {
+trait MeridiemAM extends StObject {
   
   var meridiemAM: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object MeridiemAM {
   }
   
   @scala.inline
-  implicit class MeridiemAMOps[Self <: MeridiemAM] (val x: Self) extends AnyVal {
+  implicit class MeridiemAMMutableBuilder[Self <: MeridiemAM] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMeridiemAM(value: String): Self = StObject.set(x, "meridiemAM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeridiemAMUndefined: Self = StObject.set(x, "meridiemAM", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeridiemPM(value: String): Self = StObject.set(x, "meridiemPM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeridiemAM(value: String): Self = this.set("meridiemAM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeridiemAM: Self = this.set("meridiemAM", js.undefined)
-    
-    @scala.inline
-    def setMeridiemPM(value: String): Self = this.set("meridiemPM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeridiemPM: Self = this.set("meridiemPM", js.undefined)
+    def setMeridiemPMUndefined: Self = StObject.set(x, "meridiemPM", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.webXRManagedOutputCanvasMod.WebXRManagedOutputCanvasOptions
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXRSessionManager", JSImport.Namespace)
-@js.native
-object webXRSessionManagerMod extends js.Object {
+object webXRSessionManagerMod {
   
+  @JSImport("babylonjs/XR/webXRSessionManager", "WebXRSessionManager")
   @js.native
   class WebXRSessionManager protected () extends IDisposable {
     /**
@@ -173,14 +173,15 @@ object webXRSessionManagerMod extends js.Object {
     var viewerReferenceSpace: XRReferenceSpace = js.native
   }
   /* static members */
-  @js.native
-  object WebXRSessionManager extends js.Object {
+  object WebXRSessionManager {
     
     /**
       * Returns a promise that resolves with a boolean indicating if the provided session mode is supported by this browser
       * @param sessionMode defines the session to test
       * @returns a promise with boolean as final value
       */
+    @JSImport("babylonjs/XR/webXRSessionManager", "WebXRSessionManager.IsSessionSupportedAsync")
+    @js.native
     def IsSessionSupportedAsync(sessionMode: XRSessionMode): js.Promise[Boolean] = js.native
   }
 }

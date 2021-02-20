@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetTaskStatusInput extends js.Object {
+trait SetTaskStatusInput extends StObject {
   
   /**
     * If an error occurred during the task, this value specifies the error code. This value is set on the physical attempt object. It is used to display error information to the user. It should not start with string "Service_" which is reserved by the system.
@@ -41,42 +42,30 @@ object SetTaskStatusInput {
   }
   
   @scala.inline
-  implicit class SetTaskStatusInputOps[Self <: SetTaskStatusInput] (val x: Self) extends AnyVal {
+  implicit class SetTaskStatusInputMutableBuilder[Self <: SetTaskStatusInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorId(value: String): Self = StObject.set(x, "errorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorIdUndefined: Self = StObject.set(x, "errorId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: errorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskId(value: taskId): Self = this.set("taskId", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setTaskStatus(value: TaskStatus): Self = this.set("taskStatus", value.asInstanceOf[js.Any])
+    def setErrorStackTrace(value: String): Self = StObject.set(x, "errorStackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorId(value: String): Self = this.set("errorId", value.asInstanceOf[js.Any])
+    def setErrorStackTraceUndefined: Self = StObject.set(x, "errorStackTrace", js.undefined)
     
     @scala.inline
-    def deleteErrorId: Self = this.set("errorId", js.undefined)
+    def setTaskId(value: taskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: errorMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setErrorStackTrace(value: String): Self = this.set("errorStackTrace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorStackTrace: Self = this.set("errorStackTrace", js.undefined)
+    def setTaskStatus(value: TaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
   }
 }

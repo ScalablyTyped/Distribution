@@ -20,20 +20,20 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.node.processMod.global.NodeJS.ProcessEnv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/build", JSImport.Namespace)
-@js.native
-object libBuildMod extends js.Object {
+object libBuildMod {
   
+  @JSImport("ionic/lib/build", "BUILD_SCRIPT")
+  @js.native
   val BUILD_SCRIPT: /* "ionic:build" */ String = js.native
   
-  val COMMON_BUILD_COMMAND_OPTIONS: js.Array[CommandMetadataOption] = js.native
-  
+  @JSImport("ionic/lib/build", "BuildCLI")
   @js.native
-  abstract class BuildCLI[T /* <: js.Object */] protected () extends js.Object {
+  abstract class BuildCLI[T /* <: js.Object */] protected () extends StObject {
     def this(e: BuildRunnerDeps) = this()
     
     var _resolvedProgram: js.Any = js.native
@@ -91,6 +91,7 @@ object libBuildMod extends js.Object {
     val script: js.UndefOr[String] = js.native
   }
   
+  @JSImport("ionic/lib/build", "BuildRunner")
   @js.native
   abstract class BuildRunner[T /* <: BuildOptions[_] */] () extends Runner[T, Unit] {
     
@@ -113,8 +114,20 @@ object libBuildMod extends js.Object {
     def getPkgManagerBuildCLI(): PkgManagerBuildCLI = js.native
   }
   
+  @JSImport("ionic/lib/build", "COMMON_BUILD_COMMAND_OPTIONS")
   @js.native
-  trait BuildRunnerDeps extends js.Object {
+  val COMMON_BUILD_COMMAND_OPTIONS: js.Array[CommandMetadataOption] = js.native
+  
+  @JSImport("ionic/lib/build", "NpmBuildCLI")
+  @js.native
+  class NpmBuildCLI () extends PkgManagerBuildCLI
+  
+  @JSImport("ionic/lib/build", "YarnBuildCLI")
+  @js.native
+  class YarnBuildCLI () extends PkgManagerBuildCLI
+  
+  @js.native
+  trait BuildRunnerDeps extends StObject {
     
     val config: IConfig = js.native
     
@@ -132,9 +145,6 @@ object libBuildMod extends js.Object {
   }
   
   @js.native
-  class NpmBuildCLI () extends PkgManagerBuildCLI
-  
-  @js.native
   trait PkgManagerBuildCLI extends BuildCLI[BaseBuildOptions] {
     
     @JSName("program")
@@ -143,7 +153,4 @@ object libBuildMod extends js.Object {
     @JSName("script")
     val script_PkgManagerBuildCLI: /* "ionic:build" */ String = js.native
   }
-  
-  @js.native
-  class YarnBuildCLI () extends PkgManagerBuildCLI
 }

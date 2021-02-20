@@ -9,12 +9,13 @@ import typings.chromeApps.chrome.sockets.SendInfo
 import typings.chromeApps.chrome.sockets.SocketInfo
 import typings.chromeApps.chrome.sockets.SocketProperties
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofudp extends js.Object {
+trait Typeofudp extends StObject {
   
   /**
     * Binds the local address and port for the socket. For a client socket, it

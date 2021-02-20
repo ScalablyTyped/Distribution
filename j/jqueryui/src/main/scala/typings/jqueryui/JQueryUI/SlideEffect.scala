@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlideEffect extends js.Object {
+trait SlideEffect extends StObject {
   
   var direction: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object SlideEffect {
   }
   
   @scala.inline
-  implicit class SlideEffectOps[Self <: SlideEffect] (val x: Self) extends AnyVal {
+  implicit class SlideEffectMutableBuilder[Self <: SlideEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
-    
-    @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Script
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A script trigger.
   */
 @js.native
-trait Trigger extends js.Object {
+trait Trigger extends StObject {
   
   def getEventType(): EventType = js.native
   
@@ -35,33 +36,21 @@ object Trigger {
   }
   
   @scala.inline
-  implicit class TriggerOps[Self <: Trigger] (val x: Self) extends AnyVal {
+  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEventType(value: () => EventType): Self = StObject.set(x, "getEventType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHandlerFunction(value: () => String): Self = StObject.set(x, "getHandlerFunction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTriggerSource(value: () => TriggerSource): Self = StObject.set(x, "getTriggerSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEventType(value: () => EventType): Self = this.set("getEventType", js.Any.fromFunction0(value))
+    def setGetTriggerSourceId(value: () => String): Self = StObject.set(x, "getTriggerSourceId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHandlerFunction(value: () => String): Self = this.set("getHandlerFunction", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTriggerSource(value: () => TriggerSource): Self = this.set("getTriggerSource", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTriggerSourceId(value: () => String): Self = this.set("getTriggerSourceId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetUniqueId(value: () => String): Self = this.set("getUniqueId", js.Any.fromFunction0(value))
+    def setGetUniqueId(value: () => String): Self = StObject.set(x, "getUniqueId", js.Any.fromFunction0(value))
   }
 }

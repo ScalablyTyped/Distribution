@@ -3,6 +3,7 @@ package typings.rethinkdb.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.rethinkdb.rethinkdbStrings.`object`
 import typings.rethinkdb.rethinkdbStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ trait Sequence
   
   def concatMap(transform: ExpressionFunction[_]): Sequence = js.native
   
-   // TODO: reduction object
+  // TODO: reduction object
   def contains(prop: String): Expression[Boolean] = js.native
   
   def count(): Expression[Double] = js.native

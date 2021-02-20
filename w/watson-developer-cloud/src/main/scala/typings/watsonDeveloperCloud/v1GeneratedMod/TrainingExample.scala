@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingExample. */
 @js.native
-trait TrainingExample extends js.Object {
+trait TrainingExample extends StObject {
   
   /** The cross reference associated with this training example. */
   var cross_reference: js.UndefOr[String] = js.native
@@ -26,36 +27,24 @@ object TrainingExample {
   }
   
   @scala.inline
-  implicit class TrainingExampleOps[Self <: TrainingExample] (val x: Self) extends AnyVal {
+  implicit class TrainingExampleMutableBuilder[Self <: TrainingExample] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCross_reference(value: String): Self = StObject.set(x, "cross_reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCross_referenceUndefined: Self = StObject.set(x, "cross_reference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCross_reference(value: String): Self = this.set("cross_reference", value.asInstanceOf[js.Any])
+    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
     @scala.inline
-    def deleteCross_reference: Self = this.set("cross_reference", js.undefined)
+    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_id(value: String): Self = this.set("document_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocument_id: Self = this.set("document_id", js.undefined)
-    
-    @scala.inline
-    def setRelevance(value: Double): Self = this.set("relevance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelevance: Self = this.set("relevance", js.undefined)
+    def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PropertyBag")
 @js.native
-class PropertyBag () extends js.Object {
+class PropertyBag () extends StObject {
   def this(value: js.Object) = this()
   def this(
     value: js.UndefOr[scala.Nothing],

@@ -1,46 +1,40 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MetadataConditionOperator extends js.Object
+sealed trait MetadataConditionOperator extends StObject
 @JSGlobal("Sdk.Mdq.MetadataConditionOperator")
 @js.native
-object MetadataConditionOperator extends js.Object {
+object MetadataConditionOperator extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[MetadataConditionOperator with Double] = js.native
   
   @js.native
   sealed trait Equals extends MetadataConditionOperator
-  /* 0 */ @js.native
-  object Equals extends TopLevel[Equals with Double]
+  /* 0 */ val Equals: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.MetadataConditionOperator.Equals with Double = js.native
   
   @js.native
   sealed trait GreaterThan extends MetadataConditionOperator
-  /* 4 */ @js.native
-  object GreaterThan extends TopLevel[GreaterThan with Double]
+  /* 4 */ val GreaterThan: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.MetadataConditionOperator.GreaterThan with Double = js.native
   
   @js.native
   sealed trait In extends MetadataConditionOperator
-  /* 2 */ @js.native
-  object In extends TopLevel[In with Double]
+  /* 2 */ val In: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.MetadataConditionOperator.In with Double = js.native
   
   @js.native
   sealed trait LessThan extends MetadataConditionOperator
-  /* 5 */ @js.native
-  object LessThan extends TopLevel[LessThan with Double]
+  /* 5 */ val LessThan: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.MetadataConditionOperator.LessThan with Double = js.native
   
   @js.native
   sealed trait NotEquals extends MetadataConditionOperator
-  /* 1 */ @js.native
-  object NotEquals extends TopLevel[NotEquals with Double]
+  /* 1 */ val NotEquals: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.MetadataConditionOperator.NotEquals with Double = js.native
   
   @js.native
   sealed trait NotIn extends MetadataConditionOperator
-  /* 3 */ @js.native
-  object NotIn extends TopLevel[NotIn with Double]
+  /* 3 */ val NotIn: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.MetadataConditionOperator.NotIn with Double = js.native
 }

@@ -5,14 +5,15 @@ import typings.reduxOrm.ormMod.ORM
 import typings.reduxOrm.ormMod.OrmState
 import typings.reduxOrm.sessionMod.OrmSession
 import typings.std.Extract
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-orm/redux", JSImport.Namespace)
-@js.native
-object reduxMod extends js.Object {
+object reduxMod {
   
+  @JSImport("redux-orm/redux", "createReducer")
+  @js.native
   def createReducer[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
@@ -20,6 +21,8 @@ object reduxMod extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: {}[keyof {}]['modelName'] */ js.Any
     ]
   ] */, TAction /* <: js.Any */](orm: ORM[I, /* keyof I */ String]): ORMReducer[I, TAction] = js.native
+  @JSImport("redux-orm/redux", "createReducer")
+  @js.native
   def createReducer[I /* <: IndexedModelClasses[
     js.Object, 
     Extract[
@@ -28,18 +31,26 @@ object reduxMod extends js.Object {
     ]
   ] */, TAction /* <: js.Any */](orm: ORM[I, /* keyof I */ String], updater: defaultUpdater[I, TAction]): ORMReducer[I, TAction] = js.native
   
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[I, R](orm: ORM[I, /* keyof I */ String], ormSelector: ORMSelector[I, js.Array[js.Any], R]): Selector[OrmState[I], R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
     ormSelector: ORMSelector[I, js.Array[js.Any], R]
   ): Selector[S, R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R1, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
     selector1: Selector[S, R1],
     ormSelector: ORMSelector[I, js.Array[R1], R]
   ): Selector[S, R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R1, R2, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
@@ -47,6 +58,8 @@ object reduxMod extends js.Object {
     selector2: Selector[S, R2],
     ormSelector: ORMSelector[I, js.Tuple2[R1, R2], R]
   ): Selector[S, R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R1, R2, R3, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
@@ -55,6 +68,8 @@ object reduxMod extends js.Object {
     selector3: Selector[S, R3],
     ormSelector: ORMSelector[I, js.Tuple3[R1, R2, R3], R]
   ): Selector[S, R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R1, R2, R3, R4, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
@@ -64,6 +79,8 @@ object reduxMod extends js.Object {
     selector4: Selector[S, R4],
     ormSelector: ORMSelector[I, js.Tuple4[R1, R2, R3, R4], R]
   ): Selector[S, R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R1, R2, R3, R4, R5, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],
@@ -74,6 +91,8 @@ object reduxMod extends js.Object {
     selector5: Selector[S, R5],
     ormSelector: ORMSelector[I, js.Tuple5[R1, R2, R3, R4, R5], R]
   ): Selector[S, R] = js.native
+  @JSImport("redux-orm/redux", "createSelector")
+  @js.native
   def createSelector[S, I, R1, R2, R3, R4, R5, R6, R](
     orm: ORM[I, /* keyof I */ String],
     ormStateSelector: Selector[S, OrmState[I]],

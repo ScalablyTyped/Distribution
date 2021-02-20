@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A representation of a floating point mean metric contribution.
   */
 @js.native
-trait SchemaFloatingPointMean extends js.Object {
+trait SchemaFloatingPointMean extends StObject {
   
   /**
     * The number of values being aggregated.
@@ -29,30 +30,18 @@ object SchemaFloatingPointMean {
   }
   
   @scala.inline
-  implicit class SchemaFloatingPointMeanOps[Self <: SchemaFloatingPointMean] (val x: Self) extends AnyVal {
+  implicit class SchemaFloatingPointMeanMutableBuilder[Self <: SchemaFloatingPointMean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: SchemaSplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: SchemaSplitInt64): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setSum(value: Double): Self = this.set("sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSum: Self = this.set("sum", js.undefined)
+    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
   }
 }

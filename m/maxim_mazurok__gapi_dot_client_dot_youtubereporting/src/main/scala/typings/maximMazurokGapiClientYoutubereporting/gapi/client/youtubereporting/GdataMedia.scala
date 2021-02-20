@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GdataMedia extends js.Object {
+trait GdataMedia extends StObject {
   
   /** gdata */
   var algorithm: js.UndefOr[String] = js.native
@@ -106,201 +107,189 @@ object GdataMedia {
   }
   
   @scala.inline
-  implicit class GdataMediaOps[Self <: GdataMedia] (val x: Self) extends AnyVal {
+  implicit class GdataMediaMutableBuilder[Self <: GdataMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBigstoreObjectRef(value: String): Self = StObject.set(x, "bigstoreObjectRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setBigstoreObjectRefUndefined: Self = StObject.set(x, "bigstoreObjectRef", js.undefined)
     
     @scala.inline
-    def deleteAlgorithm: Self = this.set("algorithm", js.undefined)
+    def setBlobRef(value: String): Self = StObject.set(x, "blobRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigstoreObjectRef(value: String): Self = this.set("bigstoreObjectRef", value.asInstanceOf[js.Any])
+    def setBlobRefUndefined: Self = StObject.set(x, "blobRef", js.undefined)
     
     @scala.inline
-    def deleteBigstoreObjectRef: Self = this.set("bigstoreObjectRef", js.undefined)
+    def setBlobstore2Info(value: GdataBlobstore2Info): Self = StObject.set(x, "blobstore2Info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobRef(value: String): Self = this.set("blobRef", value.asInstanceOf[js.Any])
+    def setBlobstore2InfoUndefined: Self = StObject.set(x, "blobstore2Info", js.undefined)
     
     @scala.inline
-    def deleteBlobRef: Self = this.set("blobRef", js.undefined)
+    def setCompositeMedia(value: js.Array[GdataCompositeMedia]): Self = StObject.set(x, "compositeMedia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlobstore2Info(value: GdataBlobstore2Info): Self = this.set("blobstore2Info", value.asInstanceOf[js.Any])
+    def setCompositeMediaUndefined: Self = StObject.set(x, "compositeMedia", js.undefined)
     
     @scala.inline
-    def deleteBlobstore2Info: Self = this.set("blobstore2Info", js.undefined)
+    def setCompositeMediaVarargs(value: GdataCompositeMedia*): Self = StObject.set(x, "compositeMedia", js.Array(value :_*))
     
     @scala.inline
-    def setCompositeMediaVarargs(value: GdataCompositeMedia*): Self = this.set("compositeMedia", js.Array(value :_*))
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompositeMedia(value: js.Array[GdataCompositeMedia]): Self = this.set("compositeMedia", value.asInstanceOf[js.Any])
+    def setContentTypeInfo(value: GdataContentTypeInfo): Self = StObject.set(x, "contentTypeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompositeMedia: Self = this.set("compositeMedia", js.undefined)
+    def setContentTypeInfoUndefined: Self = StObject.set(x, "contentTypeInfo", js.undefined)
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setCosmoBinaryReference(value: String): Self = StObject.set(x, "cosmoBinaryReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentTypeInfo(value: GdataContentTypeInfo): Self = this.set("contentTypeInfo", value.asInstanceOf[js.Any])
+    def setCosmoBinaryReferenceUndefined: Self = StObject.set(x, "cosmoBinaryReference", js.undefined)
     
     @scala.inline
-    def deleteContentTypeInfo: Self = this.set("contentTypeInfo", js.undefined)
+    def setCrc32cHash(value: Double): Self = StObject.set(x, "crc32cHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCosmoBinaryReference(value: String): Self = this.set("cosmoBinaryReference", value.asInstanceOf[js.Any])
+    def setCrc32cHashUndefined: Self = StObject.set(x, "crc32cHash", js.undefined)
     
     @scala.inline
-    def deleteCosmoBinaryReference: Self = this.set("cosmoBinaryReference", js.undefined)
+    def setDiffChecksumsResponse(value: GdataDiffChecksumsResponse): Self = StObject.set(x, "diffChecksumsResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrc32cHash(value: Double): Self = this.set("crc32cHash", value.asInstanceOf[js.Any])
+    def setDiffChecksumsResponseUndefined: Self = StObject.set(x, "diffChecksumsResponse", js.undefined)
     
     @scala.inline
-    def deleteCrc32cHash: Self = this.set("crc32cHash", js.undefined)
+    def setDiffDownloadResponse(value: GdataDiffDownloadResponse): Self = StObject.set(x, "diffDownloadResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffChecksumsResponse(value: GdataDiffChecksumsResponse): Self = this.set("diffChecksumsResponse", value.asInstanceOf[js.Any])
+    def setDiffDownloadResponseUndefined: Self = StObject.set(x, "diffDownloadResponse", js.undefined)
     
     @scala.inline
-    def deleteDiffChecksumsResponse: Self = this.set("diffChecksumsResponse", js.undefined)
+    def setDiffUploadRequest(value: GdataDiffUploadRequest): Self = StObject.set(x, "diffUploadRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffDownloadResponse(value: GdataDiffDownloadResponse): Self = this.set("diffDownloadResponse", value.asInstanceOf[js.Any])
+    def setDiffUploadRequestUndefined: Self = StObject.set(x, "diffUploadRequest", js.undefined)
     
     @scala.inline
-    def deleteDiffDownloadResponse: Self = this.set("diffDownloadResponse", js.undefined)
+    def setDiffUploadResponse(value: GdataDiffUploadResponse): Self = StObject.set(x, "diffUploadResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffUploadRequest(value: GdataDiffUploadRequest): Self = this.set("diffUploadRequest", value.asInstanceOf[js.Any])
+    def setDiffUploadResponseUndefined: Self = StObject.set(x, "diffUploadResponse", js.undefined)
     
     @scala.inline
-    def deleteDiffUploadRequest: Self = this.set("diffUploadRequest", js.undefined)
+    def setDiffVersionResponse(value: GdataDiffVersionResponse): Self = StObject.set(x, "diffVersionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffUploadResponse(value: GdataDiffUploadResponse): Self = this.set("diffUploadResponse", value.asInstanceOf[js.Any])
+    def setDiffVersionResponseUndefined: Self = StObject.set(x, "diffVersionResponse", js.undefined)
     
     @scala.inline
-    def deleteDiffUploadResponse: Self = this.set("diffUploadResponse", js.undefined)
+    def setDownloadParameters(value: GdataDownloadParameters): Self = StObject.set(x, "downloadParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffVersionResponse(value: GdataDiffVersionResponse): Self = this.set("diffVersionResponse", value.asInstanceOf[js.Any])
+    def setDownloadParametersUndefined: Self = StObject.set(x, "downloadParameters", js.undefined)
     
     @scala.inline
-    def deleteDiffVersionResponse: Self = this.set("diffVersionResponse", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadParameters(value: GdataDownloadParameters): Self = this.set("downloadParameters", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteDownloadParameters: Self = this.set("downloadParameters", js.undefined)
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setHashVerified(value: Boolean): Self = StObject.set(x, "hashVerified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHashVerifiedUndefined: Self = StObject.set(x, "hashVerified", js.undefined)
     
     @scala.inline
-    def deleteHash: Self = this.set("hash", js.undefined)
+    def setInline(value: String): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashVerified(value: Boolean): Self = this.set("hashVerified", value.asInstanceOf[js.Any])
+    def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
     
     @scala.inline
-    def deleteHashVerified: Self = this.set("hashVerified", js.undefined)
+    def setIsPotentialRetry(value: Boolean): Self = StObject.set(x, "isPotentialRetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline(value: String): Self = this.set("inline", value.asInstanceOf[js.Any])
+    def setIsPotentialRetryUndefined: Self = StObject.set(x, "isPotentialRetry", js.undefined)
     
     @scala.inline
-    def deleteInline: Self = this.set("inline", js.undefined)
+    def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPotentialRetry(value: Boolean): Self = this.set("isPotentialRetry", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteIsPotentialRetry: Self = this.set("isPotentialRetry", js.undefined)
+    def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: String): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5Hash(value: String): Self = this.set("md5Hash", value.asInstanceOf[js.Any])
+    def setMediaIdUndefined: Self = StObject.set(x, "mediaId", js.undefined)
     
     @scala.inline
-    def deleteMd5Hash: Self = this.set("md5Hash", js.undefined)
+    def setObjectId(value: GdataObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaId(value: String): Self = this.set("mediaId", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteMediaId: Self = this.set("mediaId", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: GdataObjectId): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setReferenceType(value: String): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setReferenceTypeUndefined: Self = StObject.set(x, "referenceType", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSha1Hash(value: String): Self = StObject.set(x, "sha1Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceType(value: String): Self = this.set("referenceType", value.asInstanceOf[js.Any])
+    def setSha1HashUndefined: Self = StObject.set(x, "sha1Hash", js.undefined)
     
     @scala.inline
-    def deleteReferenceType: Self = this.set("referenceType", js.undefined)
+    def setSha256Hash(value: String): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha1Hash(value: String): Self = this.set("sha1Hash", value.asInstanceOf[js.Any])
+    def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
     
     @scala.inline
-    def deleteSha1Hash: Self = this.set("sha1Hash", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha256Hash(value: String): Self = this.set("sha256Hash", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteSha256Hash: Self = this.set("sha256Hash", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

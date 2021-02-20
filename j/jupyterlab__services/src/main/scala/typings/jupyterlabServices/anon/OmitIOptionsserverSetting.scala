@@ -1,13 +1,14 @@
 package typings.jupyterlabServices.anon
 
 import typings.jupyterlabServices.kernelRestapiMod.IModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@jupyterlab/services.@jupyterlab/services/lib/kernel/kernel.IKernelConnection.IOptions, 'serverSettings'> */
 @js.native
-trait OmitIOptionsserverSetting extends js.Object {
+trait OmitIOptionsserverSetting extends StObject {
   
   var clientId: js.UndefOr[String] = js.native
   
@@ -26,39 +27,27 @@ object OmitIOptionsserverSetting {
   }
   
   @scala.inline
-  implicit class OmitIOptionsserverSettingOps[Self <: OmitIOptionsserverSetting] (val x: Self) extends AnyVal {
+  implicit class OmitIOptionsserverSettingMutableBuilder[Self <: OmitIOptionsserverSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleComms(value: Boolean): Self = StObject.set(x, "handleComms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: IModel): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setHandleCommsUndefined: Self = StObject.set(x, "handleComms", js.undefined)
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setModel(value: IModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleComms(value: Boolean): Self = this.set("handleComms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleComms: Self = this.set("handleComms", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

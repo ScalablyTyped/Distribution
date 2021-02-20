@@ -9,12 +9,13 @@ import typings.stripeV3.stripeV3Strings.receiver
 import typings.stripeV3.stripeV3Strings.redirect
 import typings.stripeV3.stripeV3Strings.reusable
 import typings.stripeV3.stripeV3Strings.single_use
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceOptions extends js.Object {
+trait SourceOptions extends StObject {
   
   var amount: js.UndefOr[Double] = js.native
   
@@ -54,99 +55,87 @@ object SourceOptions {
   }
   
   @scala.inline
-  implicit class SourceOptionsOps[Self <: SourceOptions] (val x: Self) extends AnyVal {
+  implicit class SourceOptionsMutableBuilder[Self <: SourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setFlow(value: redirect | receiver | code_verification | none): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setMandate(value: SourceMandate): Self = StObject.set(x, "mandate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setMandateUndefined: Self = StObject.set(x, "mandate", js.undefined)
     
     @scala.inline
-    def setFlow(value: redirect | receiver | code_verification | none): Self = this.set("flow", value.asInstanceOf[js.Any])
+    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlow: Self = this.set("flow", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setMandate(value: SourceMandate): Self = this.set("mandate", value.asInstanceOf[js.Any])
+    def setOwner(value: OwnerInfo): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMandate: Self = this.set("mandate", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setMetadata(value: js.Object): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setRedirect(value: Returnurl): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
     @scala.inline
-    def setOwner(value: OwnerInfo): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSepa_debit(value: Iban): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setSepa_debitUndefined: Self = StObject.set(x, "sepa_debit", js.undefined)
     
     @scala.inline
-    def setRedirect(value: Returnurl): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    def setSofort(value: Country): Self = StObject.set(x, "sofort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedirect: Self = this.set("redirect", js.undefined)
+    def setSofortUndefined: Self = StObject.set(x, "sofort", js.undefined)
     
     @scala.inline
-    def setSepa_debit(value: Iban): Self = this.set("sepa_debit", value.asInstanceOf[js.Any])
+    def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSepa_debit: Self = this.set("sepa_debit", js.undefined)
+    def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
     
     @scala.inline
-    def setSofort(value: Country): Self = this.set("sofort", value.asInstanceOf[js.Any])
+    def setThree_d_secure(value: typings.stripeV3.anon.Card): Self = StObject.set(x, "three_d_secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSofort: Self = this.set("sofort", js.undefined)
+    def setThree_d_secureUndefined: Self = StObject.set(x, "three_d_secure", js.undefined)
     
     @scala.inline
-    def setStatement_descriptor(value: String): Self = this.set("statement_descriptor", value.asInstanceOf[js.Any])
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatement_descriptor: Self = this.set("statement_descriptor", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def setThree_d_secure(value: typings.stripeV3.anon.Card): Self = this.set("three_d_secure", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThree_d_secure: Self = this.set("three_d_secure", js.undefined)
+    def setUsage(value: reusable | single_use): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: reusable | single_use): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

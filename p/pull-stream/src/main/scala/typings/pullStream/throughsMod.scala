@@ -5,74 +5,77 @@ import typings.pullStream.mod.EndOrError
 import typings.pullStream.mod.Source
 import typings.pullStream.mod.SourceCallback
 import typings.pullStream.mod.Through_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pull-stream/throughs", JSImport.Namespace)
-@js.native
-object throughsMod extends js.Object {
+object throughsMod {
   
+  @JSImport("pull-stream/throughs", "asyncMap")
   @js.native
-  object asyncMap extends js.Object {
-    
-    def apply[In, Out](fn: js.Function2[/* data */ In, /* cb */ SourceCallback[Out], _]): Through_[In, Out] = js.native
-  }
+  def asyncMap[In, Out](fn: js.Function2[/* data */ In, /* cb */ SourceCallback[Out], _]): Through_[In, Out] = js.native
   
+  @JSImport("pull-stream/throughs", "filter")
   @js.native
-  object filter extends js.Object {
-    
-    def apply[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
-  }
+  def filter[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
   
+  @JSImport("pull-stream/throughs", "filterNot")
   @js.native
-  object filterNot extends js.Object {
-    
-    def apply[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
-  }
+  def filterNot[InOut](test: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
   
+  @JSImport("pull-stream/throughs", "filter")
   @js.native
-  object flatten extends js.Object {
-    
-    def apply[Out](): Through_[js.Array[Out | Source[Out] | (Through_[_, Out])], Out] = js.native
-  }
+  def filter_InOut_In[In, Out /* <: In */](test: js.Function1[/* data */ In, /* is Out */ Boolean]): Through_[In, Out] = js.native
   
+  @JSImport("pull-stream/throughs", "flatten")
   @js.native
-  object map extends js.Object {
-    
-    def apply[In, Out](fn: js.Function1[/* data */ In, Out]): Through_[In, Out] = js.native
-  }
+  def flatten[Out](): Through_[js.Array[Out | Source[Out] | (Through_[_, Out])], Out] = js.native
   
+  @JSImport("pull-stream/throughs", "map")
   @js.native
-  object nonUnique extends js.Object {
-    
-    def apply[InOut](): Through_[InOut, InOut] = js.native
-    def apply[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
-    def apply[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
-  }
+  def map[In, Out](fn: js.Function1[/* data */ In, Out]): Through_[In, Out] = js.native
   
+  @JSImport("pull-stream/throughs", "nonUnique")
   @js.native
-  object take extends js.Object {
-    
-    def apply[InOut](n: Double): Through_[InOut, InOut] = js.native
-    def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
-    def apply[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: Last): Through_[InOut, InOut] = js.native
-  }
+  def nonUnique[InOut](): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "nonUnique")
+  @js.native
+  def nonUnique[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "nonUnique")
+  @js.native
+  def nonUnique[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
   
+  @JSImport("pull-stream/throughs", "take")
   @js.native
-  object through extends js.Object {
-    
-    def apply[InOut](): Through_[InOut, InOut] = js.native
-    def apply[InOut](op: js.UndefOr[scala.Nothing], onEnd: js.Function1[/* err */ EndOrError, _]): Through_[InOut, InOut] = js.native
-    def apply[InOut](op: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
-    def apply[InOut](op: js.Function1[/* data */ InOut, _], onEnd: js.Function1[/* err */ EndOrError, _]): Through_[InOut, InOut] = js.native
-  }
+  def take[InOut](n: Double): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "take")
+  @js.native
+  def take[InOut](testFn: js.Function1[/* data */ InOut, Boolean]): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "take")
+  @js.native
+  def take[InOut](testFn: js.Function1[/* data */ InOut, Boolean], opts: Last): Through_[InOut, InOut] = js.native
   
+  @JSImport("pull-stream/throughs", "through")
   @js.native
-  object unique extends js.Object {
-    
-    def apply[InOut](): Through_[InOut, InOut] = js.native
-    def apply[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
-    def apply[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
-  }
+  def through[InOut](): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "through")
+  @js.native
+  def through[InOut](op: js.UndefOr[scala.Nothing], onEnd: js.Function1[/* err */ EndOrError, _]): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "through")
+  @js.native
+  def through[InOut](op: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "through")
+  @js.native
+  def through[InOut](op: js.Function1[/* data */ InOut, _], onEnd: js.Function1[/* err */ EndOrError, _]): Through_[InOut, InOut] = js.native
+  
+  @JSImport("pull-stream/throughs", "unique")
+  @js.native
+  def unique[InOut](): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "unique")
+  @js.native
+  def unique[InOut](prop: /* keyof InOut */ String): Through_[InOut, InOut] = js.native
+  @JSImport("pull-stream/throughs", "unique")
+  @js.native
+  def unique[InOut](prop: js.Function1[/* data */ InOut, _]): Through_[InOut, InOut] = js.native
 }

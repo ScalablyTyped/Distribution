@@ -1,11 +1,12 @@
 package typings.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryFunction extends js.Object {
+trait QueryFunction extends StObject {
   
   def apply(options: String): Query = js.native
   def apply(options: String, callback: queryCallback): Query = js.native

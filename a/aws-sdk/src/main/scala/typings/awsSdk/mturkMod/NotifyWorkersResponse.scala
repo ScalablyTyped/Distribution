@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotifyWorkersResponse extends js.Object {
+trait NotifyWorkersResponse extends StObject {
   
   /**
     *  When MTurk sends notifications to the list of Workers, it returns back any failures it encounters in this list of NotifyWorkersFailureStatus objects. 
@@ -21,27 +22,15 @@ object NotifyWorkersResponse {
   }
   
   @scala.inline
-  implicit class NotifyWorkersResponseOps[Self <: NotifyWorkersResponse] (val x: Self) extends AnyVal {
+  implicit class NotifyWorkersResponseMutableBuilder[Self <: NotifyWorkersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotifyWorkersFailureStatuses(value: NotifyWorkersFailureStatusList): Self = StObject.set(x, "NotifyWorkersFailureStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotifyWorkersFailureStatusesUndefined: Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNotifyWorkersFailureStatusesVarargs(value: NotifyWorkersFailureStatus*): Self = this.set("NotifyWorkersFailureStatuses", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotifyWorkersFailureStatuses(value: NotifyWorkersFailureStatusList): Self = this.set("NotifyWorkersFailureStatuses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotifyWorkersFailureStatuses: Self = this.set("NotifyWorkersFailureStatuses", js.undefined)
+    def setNotifyWorkersFailureStatusesVarargs(value: NotifyWorkersFailureStatus*): Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.Array(value :_*))
   }
 }

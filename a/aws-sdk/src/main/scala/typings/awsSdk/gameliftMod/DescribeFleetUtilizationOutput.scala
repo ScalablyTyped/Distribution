@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFleetUtilizationOutput extends js.Object {
+trait DescribeFleetUtilizationOutput extends StObject {
   
   /**
     * A collection of objects containing utilization information for each requested fleet ID.
@@ -26,33 +27,21 @@ object DescribeFleetUtilizationOutput {
   }
   
   @scala.inline
-  implicit class DescribeFleetUtilizationOutputOps[Self <: DescribeFleetUtilizationOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeFleetUtilizationOutputMutableBuilder[Self <: DescribeFleetUtilizationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFleetUtilization(value: FleetUtilizationList): Self = StObject.set(x, "FleetUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFleetUtilizationUndefined: Self = StObject.set(x, "FleetUtilization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetUtilizationVarargs(value: FleetUtilization*): Self = StObject.set(x, "FleetUtilization", js.Array(value :_*))
     
     @scala.inline
-    def setFleetUtilizationVarargs(value: FleetUtilization*): Self = this.set("FleetUtilization", js.Array(value :_*))
+    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFleetUtilization(value: FleetUtilizationList): Self = this.set("FleetUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetUtilization: Self = this.set("FleetUtilization", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

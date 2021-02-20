@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Approved extends js.Object {
+trait Approved extends StObject {
   
   var approved: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Approved {
   }
   
   @scala.inline
-  implicit class ApprovedOps[Self <: Approved] (val x: Self) extends AnyVal {
+  implicit class ApprovedMutableBuilder[Self <: Approved] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: scala.Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleted(value: scala.Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproved(value: scala.Double): Self = this.set("approved", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreated(value: scala.Double): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleted(value: scala.Double): Self = this.set("deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRejected(value: scala.Double): Self = this.set("rejected", value.asInstanceOf[js.Any])
+    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
   }
 }

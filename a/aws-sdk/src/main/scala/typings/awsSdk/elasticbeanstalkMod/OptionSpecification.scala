@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionSpecification extends js.Object {
+trait OptionSpecification extends StObject {
   
   /**
     * A unique namespace identifying the option's associated AWS resource.
@@ -31,36 +32,24 @@ object OptionSpecification {
   }
   
   @scala.inline
-  implicit class OptionSpecificationOps[Self <: OptionSpecification] (val x: Self) extends AnyVal {
+  implicit class OptionSpecificationMutableBuilder[Self <: OptionSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionName(value: ConfigurationOptionName): Self = StObject.set(x, "OptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: OptionNamespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setOptionNameUndefined: Self = StObject.set(x, "OptionName", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionName(value: ConfigurationOptionName): Self = this.set("OptionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionName: Self = this.set("OptionName", js.undefined)
-    
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("ResourceName", js.undefined)
+    def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
   }
 }

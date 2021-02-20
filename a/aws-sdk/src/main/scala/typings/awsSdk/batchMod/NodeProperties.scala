@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeProperties extends js.Object {
+trait NodeProperties extends StObject {
   
   /**
     * Specifies the node index for the main node of a multi-node parallel job. This node index value must be fewer than the number of nodes.
@@ -31,30 +32,18 @@ object NodeProperties {
   }
   
   @scala.inline
-  implicit class NodePropertiesOps[Self <: NodeProperties] (val x: Self) extends AnyVal {
+  implicit class NodePropertiesMutableBuilder[Self <: NodeProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMainNode(value: Integer): Self = StObject.set(x, "mainNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeRangeProperties(value: NodeRangeProperties): Self = StObject.set(x, "nodeRangeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeRangePropertiesVarargs(value: NodeRangeProperty*): Self = StObject.set(x, "nodeRangeProperties", js.Array(value :_*))
     
     @scala.inline
-    def setMainNode(value: Integer): Self = this.set("mainNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeRangePropertiesVarargs(value: NodeRangeProperty*): Self = this.set("nodeRangeProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setNodeRangeProperties(value: NodeRangeProperties): Self = this.set("nodeRangeProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumNodes(value: Integer): Self = this.set("numNodes", value.asInstanceOf[js.Any])
+    def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
   }
 }

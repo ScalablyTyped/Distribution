@@ -5,12 +5,13 @@ import typings.rascal.rascalStrings.direct
 import typings.rascal.rascalStrings.fanout
 import typings.rascal.rascalStrings.headers
 import typings.rascal.rascalStrings.topic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExchangeConfig extends js.Object {
+trait ExchangeConfig extends StObject {
   
   var assert: js.UndefOr[Boolean] = js.native
   
@@ -29,42 +30,30 @@ object ExchangeConfig {
   }
   
   @scala.inline
-  implicit class ExchangeConfigOps[Self <: ExchangeConfig] (val x: Self) extends AnyVal {
+  implicit class ExchangeConfigMutableBuilder[Self <: ExchangeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssert(value: Boolean): Self = this.set("assert", value.asInstanceOf[js.Any])
+    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
     @scala.inline
-    def deleteAssert: Self = this.set("assert", js.undefined)
+    def setOptions(value: AssertExchange): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck(value: Boolean): Self = this.set("check", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteCheck: Self = this.set("check", js.undefined)
+    def setType(value: direct | fanout | headers | topic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: AssertExchange): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setType(value: direct | fanout | headers | topic): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

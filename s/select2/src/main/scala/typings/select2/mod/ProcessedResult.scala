@@ -1,12 +1,13 @@
 package typings.select2.mod
 
 import typings.select2.anon.More
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessedResult[Result] extends js.Object {
+trait ProcessedResult[Result] extends StObject {
   
   var pagination: js.UndefOr[More] = js.native
   
@@ -21,30 +22,18 @@ object ProcessedResult {
   }
   
   @scala.inline
-  implicit class ProcessedResultOps[Self <: ProcessedResult[_], Result] (val x: Self with ProcessedResult[Result]) extends AnyVal {
+  implicit class ProcessedResultMutableBuilder[Self <: ProcessedResult[_], Result] (val x: Self with ProcessedResult[Result]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPagination(value: More): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultsVarargs(value: Result*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[Result]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagination(value: More): Self = this.set("pagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePagination: Self = this.set("pagination", js.undefined)
+    def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

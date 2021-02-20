@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssignedPlan extends js.Object {
+trait AssignedPlan extends StObject {
   
   /**
     * The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date
@@ -32,54 +33,42 @@ object AssignedPlan {
   }
   
   @scala.inline
-  implicit class AssignedPlanOps[Self <: AssignedPlan] (val x: Self) extends AnyVal {
+  implicit class AssignedPlanMutableBuilder[Self <: AssignedPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedDateTime(value: NullableOption[String]): Self = StObject.set(x, "assignedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignedDateTimeNull: Self = StObject.set(x, "assignedDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignedDateTimeUndefined: Self = StObject.set(x, "assignedDateTime", js.undefined)
     
     @scala.inline
-    def setAssignedDateTime(value: NullableOption[String]): Self = this.set("assignedDateTime", value.asInstanceOf[js.Any])
+    def setCapabilityStatus(value: NullableOption[String]): Self = StObject.set(x, "capabilityStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedDateTime: Self = this.set("assignedDateTime", js.undefined)
+    def setCapabilityStatusNull: Self = StObject.set(x, "capabilityStatus", null)
     
     @scala.inline
-    def setAssignedDateTimeNull: Self = this.set("assignedDateTime", null)
+    def setCapabilityStatusUndefined: Self = StObject.set(x, "capabilityStatus", js.undefined)
     
     @scala.inline
-    def setCapabilityStatus(value: NullableOption[String]): Self = this.set("capabilityStatus", value.asInstanceOf[js.Any])
+    def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilityStatus: Self = this.set("capabilityStatus", js.undefined)
+    def setServiceNull: Self = StObject.set(x, "service", null)
     
     @scala.inline
-    def setCapabilityStatusNull: Self = this.set("capabilityStatus", null)
+    def setServicePlanId(value: NullableOption[String]): Self = StObject.set(x, "servicePlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: NullableOption[String]): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setServicePlanIdNull: Self = StObject.set(x, "servicePlanId", null)
     
     @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServicePlanIdUndefined: Self = StObject.set(x, "servicePlanId", js.undefined)
     
     @scala.inline
-    def setServiceNull: Self = this.set("service", null)
-    
-    @scala.inline
-    def setServicePlanId(value: NullableOption[String]): Self = this.set("servicePlanId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServicePlanId: Self = this.set("servicePlanId", js.undefined)
-    
-    @scala.inline
-    def setServicePlanIdNull: Self = this.set("servicePlanId", null)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

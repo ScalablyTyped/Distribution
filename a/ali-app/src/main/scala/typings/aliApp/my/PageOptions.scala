@@ -1,6 +1,7 @@
 package typings.aliApp.my
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,39 +48,27 @@ object PageOptions {
   }
   
   @scala.inline
-  implicit class PageOptionsOps[Self <: PageOptions] (val x: Self) extends AnyVal {
+  implicit class PageOptionsMutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOnLaunch(value: Options => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    def setOnPullDownRefresh(value: js.ThisFunction0[/* this */ Page, Unit]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
     
     @scala.inline
-    def setOnLaunch(value: Options => Unit): Self = this.set("onLaunch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnShow(value: Options => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnPullDownRefresh(value: js.ThisFunction0[/* this */ Page, Unit]): Self = this.set("onPullDownRefresh", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnPullDownRefresh: Self = this.set("onPullDownRefresh", js.undefined)
+    def setOnShow(value: Options => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
   }
 }

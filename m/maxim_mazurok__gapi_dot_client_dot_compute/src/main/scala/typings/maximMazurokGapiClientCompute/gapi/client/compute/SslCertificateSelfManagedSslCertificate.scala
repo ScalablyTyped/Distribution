@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslCertificateSelfManagedSslCertificate extends js.Object {
+trait SslCertificateSelfManagedSslCertificate extends StObject {
   
   /** A local certificate file. The certificate must be in PEM format. The certificate chain must be no greater than 5 certs long. The chain must include at least one intermediate cert. */
   var certificate: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object SslCertificateSelfManagedSslCertificate {
   }
   
   @scala.inline
-  implicit class SslCertificateSelfManagedSslCertificateOps[Self <: SslCertificateSelfManagedSslCertificate] (val x: Self) extends AnyVal {
+  implicit class SslCertificateSelfManagedSslCertificateMutableBuilder[Self <: SslCertificateSelfManagedSslCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
-    
-    @scala.inline
-    def setPrivateKey(value: String): Self = this.set("privateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
   }
 }

@@ -6,12 +6,13 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloseButtonAriaLabel extends js.Object {
+trait CloseButtonAriaLabel extends StObject {
   
   var closeButtonAriaLabel: String = js.native
   
@@ -38,36 +39,24 @@ object CloseButtonAriaLabel {
   }
   
   @scala.inline
-  implicit class CloseButtonAriaLabelOps[Self <: CloseButtonAriaLabel] (val x: Self) extends AnyVal {
+  implicit class CloseButtonAriaLabelMutableBuilder[Self <: CloseButtonAriaLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyboardShortcuts(value: js.Array[Recordunicodelabelactions]): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyboardShortcutsVarargs(value: Recordunicodelabelactions*): Self = StObject.set(x, "keyboardShortcuts", js.Array(value :_*))
     
     @scala.inline
-    def setCloseButtonAriaLabel(value: String): Self = this.set("closeButtonAriaLabel", value.asInstanceOf[js.Any])
+    def setOnCloseButtonClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCloseButtonClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyboardShortcutsVarargs(value: Recordunicodelabelactions*): Self = this.set("keyboardShortcuts", js.Array(value :_*))
+    def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyboardShortcuts(value: js.Array[Recordunicodelabelactions]): Self = this.set("keyboardShortcuts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnCloseButtonClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("onCloseButtonClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnKeyDown(value: KeyboardEvent[Element] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISupports extends js.Object {
+trait ISupports extends StObject {
   
   /** [Property] (Object) */
   var AudioTag: js.UndefOr[js.Any] = js.native
@@ -31,48 +32,36 @@ object ISupports {
   }
   
   @scala.inline
-  implicit class ISupportsOps[Self <: ISupports] (val x: Self) extends AnyVal {
+  implicit class ISupportsMutableBuilder[Self <: ISupports] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioTag(value: js.Any): Self = StObject.set(x, "AudioTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioTagUndefined: Self = StObject.set(x, "AudioTag", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeoLocation(value: js.Any): Self = StObject.set(x, "GeoLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioTag(value: js.Any): Self = this.set("AudioTag", value.asInstanceOf[js.Any])
+    def setGeoLocationUndefined: Self = StObject.set(x, "GeoLocation", js.undefined)
     
     @scala.inline
-    def deleteAudioTag: Self = this.set("AudioTag", js.undefined)
+    def setSVG(value: js.Any): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoLocation(value: js.Any): Self = this.set("GeoLocation", value.asInstanceOf[js.Any])
+    def setSVGUndefined: Self = StObject.set(x, "SVG", js.undefined)
     
     @scala.inline
-    def deleteGeoLocation: Self = this.set("GeoLocation", js.undefined)
+    def setTransitions(value: js.Any): Self = StObject.set(x, "Transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSVG(value: js.Any): Self = this.set("SVG", value.asInstanceOf[js.Any])
+    def setTransitionsUndefined: Self = StObject.set(x, "Transitions", js.undefined)
     
     @scala.inline
-    def deleteSVG: Self = this.set("SVG", js.undefined)
+    def setVML(value: js.Any): Self = StObject.set(x, "VML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitions(value: js.Any): Self = this.set("Transitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitions: Self = this.set("Transitions", js.undefined)
-    
-    @scala.inline
-    def setVML(value: js.Any): Self = this.set("VML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVML: Self = this.set("VML", js.undefined)
+    def setVMLUndefined: Self = StObject.set(x, "VML", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThemeAlias extends js.Object {
+trait ThemeAlias extends StObject {
   
   /**
     * The display name of the theme alias.
@@ -31,36 +32,24 @@ object ThemeAlias {
   }
   
   @scala.inline
-  implicit class ThemeAliasOps[Self <: ThemeAlias] (val x: Self) extends AnyVal {
+  implicit class ThemeAliasMutableBuilder[Self <: ThemeAlias] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasName(value: AliasName): Self = this.set("AliasName", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def deleteAliasName: Self = this.set("AliasName", js.undefined)
+    def setThemeVersionNumber(value: VersionNumber): Self = StObject.set(x, "ThemeVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
-    
-    @scala.inline
-    def setThemeVersionNumber(value: VersionNumber): Self = this.set("ThemeVersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeVersionNumber: Self = this.set("ThemeVersionNumber", js.undefined)
+    def setThemeVersionNumberUndefined: Self = StObject.set(x, "ThemeVersionNumber", js.undefined)
   }
 }

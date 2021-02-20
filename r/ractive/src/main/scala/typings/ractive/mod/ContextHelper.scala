@@ -3,13 +3,14 @@ package typings.ractive.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ractive", "ContextHelper")
 @js.native
-class ContextHelper () extends js.Object {
+class ContextHelper () extends StObject {
   
   /** Add to the number at the given keypath
   	 * @param keypath a Context-relative keypath to a number

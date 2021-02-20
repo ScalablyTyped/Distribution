@@ -2,12 +2,13 @@ package typings.leafletGeosearch.mod
 
 import typings.leafletGeosearch.anon.AdminDistrict
 import typings.leafletGeosearch.anon.BingProviderResultPointca
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BingProviderResultRaw extends js.Object {
+trait BingProviderResultRaw extends StObject {
   
   var __type: String = js.native
   
@@ -46,51 +47,39 @@ object BingProviderResultRaw {
   }
   
   @scala.inline
-  implicit class BingProviderResultRawOps[Self <: BingProviderResultRaw] (val x: Self) extends AnyVal {
+  implicit class BingProviderResultRawMutableBuilder[Self <: BingProviderResultRaw] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: AdminDistrict): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfidence(value: String): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__type(value: String): Self = this.set("__type", value.asInstanceOf[js.Any])
+    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: AdminDistrict): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setGeocodePoints(value: js.Array[BingProviderResultPointca]): Self = StObject.set(x, "geocodePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBbox(value: js.Tuple4[Double, Double, Double, Double]): Self = this.set("bbox", value.asInstanceOf[js.Any])
+    def setGeocodePointsVarargs(value: BingProviderResultPointca*): Self = StObject.set(x, "geocodePoints", js.Array(value :_*))
     
     @scala.inline
-    def setConfidence(value: String): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    def setMatchCodes(value: js.Array[String]): Self = StObject.set(x, "matchCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityType(value: String): Self = this.set("entityType", value.asInstanceOf[js.Any])
+    def setMatchCodesVarargs(value: String*): Self = StObject.set(x, "matchCodes", js.Array(value :_*))
     
     @scala.inline
-    def setGeocodePointsVarargs(value: BingProviderResultPointca*): Self = this.set("geocodePoints", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocodePoints(value: js.Array[BingProviderResultPointca]): Self = this.set("geocodePoints", value.asInstanceOf[js.Any])
+    def setPoint(value: BingProviderResultPoint): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchCodesVarargs(value: String*): Self = this.set("matchCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatchCodes(value: js.Array[String]): Self = this.set("matchCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: BingProviderResultPoint): Self = this.set("point", value.asInstanceOf[js.Any])
+    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

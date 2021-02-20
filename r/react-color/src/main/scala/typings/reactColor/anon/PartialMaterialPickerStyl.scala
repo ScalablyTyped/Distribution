@@ -1,13 +1,14 @@
 package typings.reactColor.anon
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/material/Material.MaterialPickerStylesProps> */
 @js.native
-trait PartialMaterialPickerStyl extends js.Object {
+trait PartialMaterialPickerStyl extends StObject {
   
   var HEXinput: js.UndefOr[CSSProperties] = js.native
   
@@ -38,78 +39,66 @@ object PartialMaterialPickerStyl {
   }
   
   @scala.inline
-  implicit class PartialMaterialPickerStylOps[Self <: PartialMaterialPickerStyl] (val x: Self) extends AnyVal {
+  implicit class PartialMaterialPickerStylMutableBuilder[Self <: PartialMaterialPickerStyl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHEXinput(value: CSSProperties): Self = StObject.set(x, "HEXinput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHEXinputUndefined: Self = StObject.set(x, "HEXinput", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHEXlabel(value: CSSProperties): Self = StObject.set(x, "HEXlabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEXinput(value: CSSProperties): Self = this.set("HEXinput", value.asInstanceOf[js.Any])
+    def setHEXlabelUndefined: Self = StObject.set(x, "HEXlabel", js.undefined)
     
     @scala.inline
-    def deleteHEXinput: Self = this.set("HEXinput", js.undefined)
+    def setHEXwrap(value: CSSProperties): Self = StObject.set(x, "HEXwrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEXlabel(value: CSSProperties): Self = this.set("HEXlabel", value.asInstanceOf[js.Any])
+    def setHEXwrapUndefined: Self = StObject.set(x, "HEXwrap", js.undefined)
     
     @scala.inline
-    def deleteHEXlabel: Self = this.set("HEXlabel", js.undefined)
+    def setHex(value: CSSProperties): Self = StObject.set(x, "Hex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHEXwrap(value: CSSProperties): Self = this.set("HEXwrap", value.asInstanceOf[js.Any])
+    def setHexUndefined: Self = StObject.set(x, "Hex", js.undefined)
     
     @scala.inline
-    def deleteHEXwrap: Self = this.set("HEXwrap", js.undefined)
+    def setMaterial(value: CSSProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHex(value: CSSProperties): Self = this.set("Hex", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteHex: Self = this.set("Hex", js.undefined)
+    def setRGBinput(value: CSSProperties): Self = StObject.set(x, "RGBinput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBinput(value: CSSProperties): Self = this.set("RGBinput", value.asInstanceOf[js.Any])
+    def setRGBinputUndefined: Self = StObject.set(x, "RGBinput", js.undefined)
     
     @scala.inline
-    def deleteRGBinput: Self = this.set("RGBinput", js.undefined)
+    def setRGBlabel(value: CSSProperties): Self = StObject.set(x, "RGBlabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBlabel(value: CSSProperties): Self = this.set("RGBlabel", value.asInstanceOf[js.Any])
+    def setRGBlabelUndefined: Self = StObject.set(x, "RGBlabel", js.undefined)
     
     @scala.inline
-    def deleteRGBlabel: Self = this.set("RGBlabel", js.undefined)
+    def setRGBwrap(value: CSSProperties): Self = StObject.set(x, "RGBwrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRGBwrap(value: CSSProperties): Self = this.set("RGBwrap", value.asInstanceOf[js.Any])
+    def setRGBwrapUndefined: Self = StObject.set(x, "RGBwrap", js.undefined)
     
     @scala.inline
-    def deleteRGBwrap: Self = this.set("RGBwrap", js.undefined)
+    def setSplit(value: CSSProperties): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: CSSProperties): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setThird(value: CSSProperties): Self = StObject.set(x, "third", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplit(value: CSSProperties): Self = this.set("split", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplit: Self = this.set("split", js.undefined)
-    
-    @scala.inline
-    def setThird(value: CSSProperties): Self = this.set("third", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThird: Self = this.set("third", js.undefined)
+    def setThirdUndefined: Self = StObject.set(x, "third", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.three.webXRMod
 
 import typings.std.DOMPointReadOnly
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webxr/WebXR", "XRRay")
 @js.native
-class XRRay protected () extends js.Object {
+class XRRay protected () extends StObject {
   def this(transformOrOrigin: DOMPointInit) = this()
   def this(transformOrOrigin: XRRigidTransform) = this()
   def this(transformOrOrigin: DOMPointInit, direction: XRRayDirectionInit) = this()

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,48 +85,36 @@ object ColumnDescriptor {
   }
   
   @scala.inline
-  implicit class ColumnDescriptorOps[Self <: ColumnDescriptor] (val x: Self) extends AnyVal {
+  implicit class ColumnDescriptorMutableBuilder[Self <: ColumnDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoIncrementCreation(value: String): Self = StObject.set(x, "AutoIncrementCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValue(value: String): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoIncrementCreation(value: String): Self = this.set("AutoIncrementCreation", value.asInstanceOf[js.Any])
+    def setIsAutoIncrement(value: Boolean): Self = StObject.set(x, "IsAutoIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setIsNullable(value: Double): Self = StObject.set(x, "IsNullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsRowVersion(value: Boolean): Self = StObject.set(x, "IsRowVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoIncrement(value: Boolean): Self = this.set("IsAutoIncrement", value.asInstanceOf[js.Any])
+    def setPrecision(value: Double): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNullable(value: Double): Self = this.set("IsNullable", value.asInstanceOf[js.Any])
+    def setScale(value: Double): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRowVersion(value: Boolean): Self = this.set("IsRowVersion", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("Precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("Scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeName(value: String): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    def setTypeName(value: String): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAccessPolicyResponse extends js.Object {
+trait DescribeAccessPolicyResponse extends StObject {
   
   /**
     * The ARN of the access policy, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId} 
@@ -59,39 +60,27 @@ object DescribeAccessPolicyResponse {
   }
   
   @scala.inline
-  implicit class DescribeAccessPolicyResponseOps[Self <: DescribeAccessPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAccessPolicyResponseMutableBuilder[Self <: DescribeAccessPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPolicyCreationDate(value: Timestamp): Self = StObject.set(x, "accessPolicyCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyArn(value: ARN): Self = this.set("accessPolicyArn", value.asInstanceOf[js.Any])
+    def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyCreationDate(value: Timestamp): Self = this.set("accessPolicyCreationDate", value.asInstanceOf[js.Any])
+    def setAccessPolicyLastUpdateDate(value: Timestamp): Self = StObject.set(x, "accessPolicyLastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyId(value: ID): Self = this.set("accessPolicyId", value.asInstanceOf[js.Any])
+    def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyIdentity(value: Identity): Self = this.set("accessPolicyIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessPolicyLastUpdateDate(value: Timestamp): Self = this.set("accessPolicyLastUpdateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessPolicyPermission(value: Permission): Self = this.set("accessPolicyPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessPolicyResource(value: Resource): Self = this.set("accessPolicyResource", value.asInstanceOf[js.Any])
+    def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
   }
 }

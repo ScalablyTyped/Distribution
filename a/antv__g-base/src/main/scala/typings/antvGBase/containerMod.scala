@@ -7,13 +7,16 @@ import typings.antvGBase.typesMod.ElementFilterFn
 import typings.antvGBase.typesMod.GroupCfg
 import typings.antvGBase.typesMod.ShapeCfg
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/abstract/container", JSImport.Namespace)
-@js.native
-object containerMod extends js.Object {
+object containerMod {
+  
+  @JSImport("@antv/g-base/lib/abstract/container", JSImport.Default)
+  @js.native
+  abstract class default () extends Container
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.antvGBase.interfacesMod.IObservable because Already inherited
@@ -225,7 +228,4 @@ object containerMod extends js.Object {
     @JSName("sort")
     def sort_Unit(): Unit = js.native
   }
-  
-  @js.native
-  abstract class default () extends Container
 }

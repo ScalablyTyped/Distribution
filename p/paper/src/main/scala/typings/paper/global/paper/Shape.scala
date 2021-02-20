@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Shape ()
   extends typings.paper.paper.Shape
-@JSGlobal("paper.Shape")
-@js.native
-object Shape extends js.Object {
+object Shape {
   
+  @JSGlobal("paper.Shape.Circle")
   @js.native
   class Circle protected ()
     extends typings.paper.paper.Shape {
@@ -32,6 +32,7 @@ object Shape extends js.Object {
     def this(center: typings.paper.paper.Point, radius: Double) = this()
   }
   
+  @JSGlobal("paper.Shape.Ellipse")
   @js.native
   class Ellipse protected ()
     extends typings.paper.paper.Shape {
@@ -51,6 +52,7 @@ object Shape extends js.Object {
     def this(rectangle: typings.paper.paper.Rectangle) = this()
   }
   
+  @JSGlobal("paper.Shape.Rectangle")
   @js.native
   class Rectangle protected ()
     extends typings.paper.paper.Shape {

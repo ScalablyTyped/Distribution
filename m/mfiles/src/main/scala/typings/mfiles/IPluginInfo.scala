@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPluginInfo extends js.Object {
+trait IPluginInfo extends StObject {
   
   var AssemblyName: String = js.native
   
@@ -47,48 +48,36 @@ object IPluginInfo {
   }
   
   @scala.inline
-  implicit class IPluginInfoOps[Self <: IPluginInfo] (val x: Self) extends AnyVal {
+  implicit class IPluginInfoMutableBuilder[Self <: IPluginInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssemblyName(value: String): Self = StObject.set(x, "AssemblyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBridgeClassName(value: String): Self = StObject.set(x, "BridgeClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClone(value: () => IPluginInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAssemblyName(value: String): Self = this.set("AssemblyName", value.asInstanceOf[js.Any])
+    def setConfiguration(value: INamedValues): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBridgeClassName(value: String): Self = this.set("BridgeClassName", value.asInstanceOf[js.Any])
+    def setConfigurationScope(value: String): Self = StObject.set(x, "ConfigurationScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IPluginInfo): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setConfigurationSource(value: INamedValues): Self = StObject.set(x, "ConfigurationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: INamedValues): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    def setConfigurationVaultGUID(value: String): Self = StObject.set(x, "ConfigurationVaultGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationScope(value: String): Self = this.set("ConfigurationScope", value.asInstanceOf[js.Any])
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSource(value: INamedValues): Self = this.set("ConfigurationSource", value.asInstanceOf[js.Any])
+    def setIsScopeIndependent(value: Boolean): Self = StObject.set(x, "IsScopeIndependent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationVaultGUID(value: String): Self = this.set("ConfigurationVaultGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsScopeIndependent(value: Boolean): Self = this.set("IsScopeIndependent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasicDataStatsDto extends js.Object {
+trait BasicDataStatsDto extends StObject {
   
   var FlatArmorMod: Double = js.native
   
@@ -212,213 +213,201 @@ object BasicDataStatsDto {
   }
   
   @scala.inline
-  implicit class BasicDataStatsDtoOps[Self <: BasicDataStatsDto] (val x: Self) extends AnyVal {
+  implicit class BasicDataStatsDtoMutableBuilder[Self <: BasicDataStatsDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlatArmorMod(value: Double): Self = StObject.set(x, "FlatArmorMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlatAttackSpeedMod(value: Double): Self = StObject.set(x, "FlatAttackSpeedMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlatBlockMod(value: Double): Self = StObject.set(x, "FlatBlockMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatArmorMod(value: Double): Self = this.set("FlatArmorMod", value.asInstanceOf[js.Any])
+    def setFlatCritChanceMod(value: Double): Self = StObject.set(x, "FlatCritChanceMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatAttackSpeedMod(value: Double): Self = this.set("FlatAttackSpeedMod", value.asInstanceOf[js.Any])
+    def setFlatCritDamageMod(value: Double): Self = StObject.set(x, "FlatCritDamageMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatBlockMod(value: Double): Self = this.set("FlatBlockMod", value.asInstanceOf[js.Any])
+    def setFlatEXPBonus(value: Double): Self = StObject.set(x, "FlatEXPBonus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatCritChanceMod(value: Double): Self = this.set("FlatCritChanceMod", value.asInstanceOf[js.Any])
+    def setFlatEnergyPoolMod(value: Double): Self = StObject.set(x, "FlatEnergyPoolMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatCritDamageMod(value: Double): Self = this.set("FlatCritDamageMod", value.asInstanceOf[js.Any])
+    def setFlatEnergyRegenMod(value: Double): Self = StObject.set(x, "FlatEnergyRegenMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatEXPBonus(value: Double): Self = this.set("FlatEXPBonus", value.asInstanceOf[js.Any])
+    def setFlatHPPoolMod(value: Double): Self = StObject.set(x, "FlatHPPoolMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatEnergyPoolMod(value: Double): Self = this.set("FlatEnergyPoolMod", value.asInstanceOf[js.Any])
+    def setFlatHPRegenMod(value: Double): Self = StObject.set(x, "FlatHPRegenMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatEnergyRegenMod(value: Double): Self = this.set("FlatEnergyRegenMod", value.asInstanceOf[js.Any])
+    def setFlatMPPoolMod(value: Double): Self = StObject.set(x, "FlatMPPoolMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatHPPoolMod(value: Double): Self = this.set("FlatHPPoolMod", value.asInstanceOf[js.Any])
+    def setFlatMPRegenMod(value: Double): Self = StObject.set(x, "FlatMPRegenMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatHPRegenMod(value: Double): Self = this.set("FlatHPRegenMod", value.asInstanceOf[js.Any])
+    def setFlatMagicDamageMod(value: Double): Self = StObject.set(x, "FlatMagicDamageMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatMPPoolMod(value: Double): Self = this.set("FlatMPPoolMod", value.asInstanceOf[js.Any])
+    def setFlatMovementSpeedMod(value: Double): Self = StObject.set(x, "FlatMovementSpeedMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatMPRegenMod(value: Double): Self = this.set("FlatMPRegenMod", value.asInstanceOf[js.Any])
+    def setFlatPhysicalDamageMod(value: Double): Self = StObject.set(x, "FlatPhysicalDamageMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatMagicDamageMod(value: Double): Self = this.set("FlatMagicDamageMod", value.asInstanceOf[js.Any])
+    def setFlatSpellBlockMod(value: Double): Self = StObject.set(x, "FlatSpellBlockMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatMovementSpeedMod(value: Double): Self = this.set("FlatMovementSpeedMod", value.asInstanceOf[js.Any])
+    def setPercentArmorMod(value: Double): Self = StObject.set(x, "PercentArmorMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatPhysicalDamageMod(value: Double): Self = this.set("FlatPhysicalDamageMod", value.asInstanceOf[js.Any])
+    def setPercentAttackSpeedMod(value: Double): Self = StObject.set(x, "PercentAttackSpeedMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatSpellBlockMod(value: Double): Self = this.set("FlatSpellBlockMod", value.asInstanceOf[js.Any])
+    def setPercentBlockMod(value: Double): Self = StObject.set(x, "PercentBlockMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentArmorMod(value: Double): Self = this.set("PercentArmorMod", value.asInstanceOf[js.Any])
+    def setPercentCritChanceMod(value: Double): Self = StObject.set(x, "PercentCritChanceMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentAttackSpeedMod(value: Double): Self = this.set("PercentAttackSpeedMod", value.asInstanceOf[js.Any])
+    def setPercentCritDamageMod(value: Double): Self = StObject.set(x, "PercentCritDamageMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentBlockMod(value: Double): Self = this.set("PercentBlockMod", value.asInstanceOf[js.Any])
+    def setPercentDodgeMod(value: Double): Self = StObject.set(x, "PercentDodgeMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentCritChanceMod(value: Double): Self = this.set("PercentCritChanceMod", value.asInstanceOf[js.Any])
+    def setPercentEXPBonus(value: Double): Self = StObject.set(x, "PercentEXPBonus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentCritDamageMod(value: Double): Self = this.set("PercentCritDamageMod", value.asInstanceOf[js.Any])
+    def setPercentHPPoolMod(value: Double): Self = StObject.set(x, "PercentHPPoolMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentDodgeMod(value: Double): Self = this.set("PercentDodgeMod", value.asInstanceOf[js.Any])
+    def setPercentHPRegenMod(value: Double): Self = StObject.set(x, "PercentHPRegenMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentEXPBonus(value: Double): Self = this.set("PercentEXPBonus", value.asInstanceOf[js.Any])
+    def setPercentLifeStealMod(value: Double): Self = StObject.set(x, "PercentLifeStealMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentHPPoolMod(value: Double): Self = this.set("PercentHPPoolMod", value.asInstanceOf[js.Any])
+    def setPercentMPPoolMod(value: Double): Self = StObject.set(x, "PercentMPPoolMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentHPRegenMod(value: Double): Self = this.set("PercentHPRegenMod", value.asInstanceOf[js.Any])
+    def setPercentMPRegenMod(value: Double): Self = StObject.set(x, "PercentMPRegenMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentLifeStealMod(value: Double): Self = this.set("PercentLifeStealMod", value.asInstanceOf[js.Any])
+    def setPercentMagicDamageMod(value: Double): Self = StObject.set(x, "PercentMagicDamageMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentMPPoolMod(value: Double): Self = this.set("PercentMPPoolMod", value.asInstanceOf[js.Any])
+    def setPercentMovementSpeedMod(value: Double): Self = StObject.set(x, "PercentMovementSpeedMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentMPRegenMod(value: Double): Self = this.set("PercentMPRegenMod", value.asInstanceOf[js.Any])
+    def setPercentPhysicalDamageMod(value: Double): Self = StObject.set(x, "PercentPhysicalDamageMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentMagicDamageMod(value: Double): Self = this.set("PercentMagicDamageMod", value.asInstanceOf[js.Any])
+    def setPercentSpellBlockMod(value: Double): Self = StObject.set(x, "PercentSpellBlockMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentMovementSpeedMod(value: Double): Self = this.set("PercentMovementSpeedMod", value.asInstanceOf[js.Any])
+    def setPercentSpellVampMod(value: Double): Self = StObject.set(x, "PercentSpellVampMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentPhysicalDamageMod(value: Double): Self = this.set("PercentPhysicalDamageMod", value.asInstanceOf[js.Any])
+    def setRFlatArmorModPerLevel(value: Double): Self = StObject.set(x, "rFlatArmorModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentSpellBlockMod(value: Double): Self = this.set("PercentSpellBlockMod", value.asInstanceOf[js.Any])
+    def setRFlatArmorPenetrationMod(value: Double): Self = StObject.set(x, "rFlatArmorPenetrationMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentSpellVampMod(value: Double): Self = this.set("PercentSpellVampMod", value.asInstanceOf[js.Any])
+    def setRFlatArmorPenetrationModPerLevel(value: Double): Self = StObject.set(x, "rFlatArmorPenetrationModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatArmorModPerLevel(value: Double): Self = this.set("rFlatArmorModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatCritChanceModPerLevel(value: Double): Self = StObject.set(x, "rFlatCritChanceModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatArmorPenetrationMod(value: Double): Self = this.set("rFlatArmorPenetrationMod", value.asInstanceOf[js.Any])
+    def setRFlatCritDamageModPerLevel(value: Double): Self = StObject.set(x, "rFlatCritDamageModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatArmorPenetrationModPerLevel(value: Double): Self = this.set("rFlatArmorPenetrationModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatDodgeMod(value: Double): Self = StObject.set(x, "rFlatDodgeMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatCritChanceModPerLevel(value: Double): Self = this.set("rFlatCritChanceModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatDodgeModPerLevel(value: Double): Self = StObject.set(x, "rFlatDodgeModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatCritDamageModPerLevel(value: Double): Self = this.set("rFlatCritDamageModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatEnergyModPerLevel(value: Double): Self = StObject.set(x, "rFlatEnergyModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatDodgeMod(value: Double): Self = this.set("rFlatDodgeMod", value.asInstanceOf[js.Any])
+    def setRFlatEnergyRegenModPerLevel(value: Double): Self = StObject.set(x, "rFlatEnergyRegenModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatDodgeModPerLevel(value: Double): Self = this.set("rFlatDodgeModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatGoldPer10Mod(value: Double): Self = StObject.set(x, "rFlatGoldPer10Mod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatEnergyModPerLevel(value: Double): Self = this.set("rFlatEnergyModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatHPModPerLevel(value: Double): Self = StObject.set(x, "rFlatHPModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatEnergyRegenModPerLevel(value: Double): Self = this.set("rFlatEnergyRegenModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatHPRegenModPerLevel(value: Double): Self = StObject.set(x, "rFlatHPRegenModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatGoldPer10Mod(value: Double): Self = this.set("rFlatGoldPer10Mod", value.asInstanceOf[js.Any])
+    def setRFlatMPModPerLevel(value: Double): Self = StObject.set(x, "rFlatMPModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatHPModPerLevel(value: Double): Self = this.set("rFlatHPModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatMPRegenModPerLevel(value: Double): Self = StObject.set(x, "rFlatMPRegenModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatHPRegenModPerLevel(value: Double): Self = this.set("rFlatHPRegenModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatMagicDamageModPerLevel(value: Double): Self = StObject.set(x, "rFlatMagicDamageModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatMPModPerLevel(value: Double): Self = this.set("rFlatMPModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatMagicPenetrationMod(value: Double): Self = StObject.set(x, "rFlatMagicPenetrationMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatMPRegenModPerLevel(value: Double): Self = this.set("rFlatMPRegenModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatMagicPenetrationModPerLevel(value: Double): Self = StObject.set(x, "rFlatMagicPenetrationModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatMagicDamageModPerLevel(value: Double): Self = this.set("rFlatMagicDamageModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatMovementSpeedModPerLevel(value: Double): Self = StObject.set(x, "rFlatMovementSpeedModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatMagicPenetrationMod(value: Double): Self = this.set("rFlatMagicPenetrationMod", value.asInstanceOf[js.Any])
+    def setRFlatPhysicalDamageModPerLevel(value: Double): Self = StObject.set(x, "rFlatPhysicalDamageModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatMagicPenetrationModPerLevel(value: Double): Self = this.set("rFlatMagicPenetrationModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatSpellBlockModPerLevel(value: Double): Self = StObject.set(x, "rFlatSpellBlockModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatMovementSpeedModPerLevel(value: Double): Self = this.set("rFlatMovementSpeedModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatTimeDeadMod(value: Double): Self = StObject.set(x, "rFlatTimeDeadMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatPhysicalDamageModPerLevel(value: Double): Self = this.set("rFlatPhysicalDamageModPerLevel", value.asInstanceOf[js.Any])
+    def setRFlatTimeDeadModPerLevel(value: Double): Self = StObject.set(x, "rFlatTimeDeadModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatSpellBlockModPerLevel(value: Double): Self = this.set("rFlatSpellBlockModPerLevel", value.asInstanceOf[js.Any])
+    def setRPercentArmorPenetrationMod(value: Double): Self = StObject.set(x, "rPercentArmorPenetrationMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatTimeDeadMod(value: Double): Self = this.set("rFlatTimeDeadMod", value.asInstanceOf[js.Any])
+    def setRPercentArmorPenetrationModPerLevel(value: Double): Self = StObject.set(x, "rPercentArmorPenetrationModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRFlatTimeDeadModPerLevel(value: Double): Self = this.set("rFlatTimeDeadModPerLevel", value.asInstanceOf[js.Any])
+    def setRPercentAttackSpeedModPerLevel(value: Double): Self = StObject.set(x, "rPercentAttackSpeedModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentArmorPenetrationMod(value: Double): Self = this.set("rPercentArmorPenetrationMod", value.asInstanceOf[js.Any])
+    def setRPercentCooldownMod(value: Double): Self = StObject.set(x, "rPercentCooldownMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentArmorPenetrationModPerLevel(value: Double): Self = this.set("rPercentArmorPenetrationModPerLevel", value.asInstanceOf[js.Any])
+    def setRPercentCooldownModPerLevel(value: Double): Self = StObject.set(x, "rPercentCooldownModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentAttackSpeedModPerLevel(value: Double): Self = this.set("rPercentAttackSpeedModPerLevel", value.asInstanceOf[js.Any])
+    def setRPercentMagicPenetrationMod(value: Double): Self = StObject.set(x, "rPercentMagicPenetrationMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentCooldownMod(value: Double): Self = this.set("rPercentCooldownMod", value.asInstanceOf[js.Any])
+    def setRPercentMagicPenetrationModPerLevel(value: Double): Self = StObject.set(x, "rPercentMagicPenetrationModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentCooldownModPerLevel(value: Double): Self = this.set("rPercentCooldownModPerLevel", value.asInstanceOf[js.Any])
+    def setRPercentMovementSpeedModPerLevel(value: Double): Self = StObject.set(x, "rPercentMovementSpeedModPerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentMagicPenetrationMod(value: Double): Self = this.set("rPercentMagicPenetrationMod", value.asInstanceOf[js.Any])
+    def setRPercentTimeDeadMod(value: Double): Self = StObject.set(x, "rPercentTimeDeadMod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRPercentMagicPenetrationModPerLevel(value: Double): Self = this.set("rPercentMagicPenetrationModPerLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRPercentMovementSpeedModPerLevel(value: Double): Self = this.set("rPercentMovementSpeedModPerLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRPercentTimeDeadMod(value: Double): Self = this.set("rPercentTimeDeadMod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRPercentTimeDeadModPerLevel(value: Double): Self = this.set("rPercentTimeDeadModPerLevel", value.asInstanceOf[js.Any])
+    def setRPercentTimeDeadModPerLevel(value: Double): Self = StObject.set(x, "rPercentTimeDeadModPerLevel", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkDeploymentResult extends js.Object {
+trait BulkDeploymentResult extends StObject {
   
   /**
     * The time, in ISO format, when the deployment was created.
@@ -56,69 +57,57 @@ object BulkDeploymentResult {
   }
   
   @scala.inline
-  implicit class BulkDeploymentResultOps[Self <: BulkDeploymentResult] (val x: Self) extends AnyVal {
+  implicit class BulkDeploymentResultMutableBuilder[Self <: BulkDeploymentResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentArn(value: string): Self = StObject.set(x, "DeploymentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: string): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDeploymentArnUndefined: Self = StObject.set(x, "DeploymentArn", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setDeploymentId(value: string): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentArn(value: string): Self = this.set("DeploymentArn", value.asInstanceOf[js.Any])
+    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
     @scala.inline
-    def deleteDeploymentArn: Self = this.set("DeploymentArn", js.undefined)
+    def setDeploymentStatus(value: string): Self = StObject.set(x, "DeploymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentId(value: string): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    def setDeploymentStatusUndefined: Self = StObject.set(x, "DeploymentStatus", js.undefined)
     
     @scala.inline
-    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentStatus(value: string): Self = this.set("DeploymentStatus", value.asInstanceOf[js.Any])
+    def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
     
     @scala.inline
-    def deleteDeploymentStatus: Self = this.set("DeploymentStatus", js.undefined)
+    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentType(value: DeploymentType): Self = this.set("DeploymentType", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "ErrorDetails", js.undefined)
     
     @scala.inline
-    def deleteDeploymentType: Self = this.set("DeploymentType", js.undefined)
+    def setErrorDetailsVarargs(value: ErrorDetail*): Self = StObject.set(x, "ErrorDetails", js.Array(value :_*))
     
     @scala.inline
-    def setErrorDetailsVarargs(value: ErrorDetail*): Self = this.set("ErrorDetails", js.Array(value :_*))
+    def setErrorMessage(value: string): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = this.set("ErrorDetails", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("ErrorDetails", js.undefined)
+    def setGroupArn(value: string): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: string): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
-    
-    @scala.inline
-    def setGroupArn(value: string): Self = this.set("GroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupArn: Self = this.set("GroupArn", js.undefined)
+    def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
   }
 }

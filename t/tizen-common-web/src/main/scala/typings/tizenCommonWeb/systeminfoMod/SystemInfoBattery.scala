@@ -1,5 +1,6 @@
 package typings.tizenCommonWeb.systeminfoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,36 +58,24 @@ object SystemInfoBattery {
   }
   
   @scala.inline
-  implicit class SystemInfoBatteryOps[Self <: SystemInfoBattery] (val x: Self) extends AnyVal {
+  implicit class SystemInfoBatteryMutableBuilder[Self <: SystemInfoBattery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeToDischarge(value: Double): Self = StObject.set(x, "timeToDischarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCharging(value: Boolean): Self = this.set("isCharging", value.asInstanceOf[js.Any])
+    def setTimeToDischargeUndefined: Self = StObject.set(x, "timeToDischarge", js.undefined)
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setTimeToFullCharge(value: Double): Self = StObject.set(x, "timeToFullCharge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToDischarge(value: Double): Self = this.set("timeToDischarge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToDischarge: Self = this.set("timeToDischarge", js.undefined)
-    
-    @scala.inline
-    def setTimeToFullCharge(value: Double): Self = this.set("timeToFullCharge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToFullCharge: Self = this.set("timeToFullCharge", js.undefined)
+    def setTimeToFullChargeUndefined: Self = StObject.set(x, "timeToFullCharge", js.undefined)
   }
 }

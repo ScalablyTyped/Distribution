@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddResourcePermissionsRequest extends js.Object {
+trait AddResourcePermissionsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
@@ -36,39 +37,27 @@ object AddResourcePermissionsRequest {
   }
   
   @scala.inline
-  implicit class AddResourcePermissionsRequestOps[Self <: AddResourcePermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class AddResourcePermissionsRequestMutableBuilder[Self <: AddResourcePermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotificationOptions(value: NotificationOptions): Self = StObject.set(x, "NotificationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalsVarargs(value: SharePrincipal*): Self = this.set("Principals", js.Array(value :_*))
+    def setNotificationOptionsUndefined: Self = StObject.set(x, "NotificationOptions", js.undefined)
     
     @scala.inline
-    def setPrincipals(value: SharePrincipalList): Self = this.set("Principals", value.asInstanceOf[js.Any])
+    def setPrincipals(value: SharePrincipalList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceId(value: ResourceIdType): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setPrincipalsVarargs(value: SharePrincipal*): Self = StObject.set(x, "Principals", js.Array(value :_*))
     
     @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
-    
-    @scala.inline
-    def setNotificationOptions(value: NotificationOptions): Self = this.set("NotificationOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationOptions: Self = this.set("NotificationOptions", js.undefined)
+    def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

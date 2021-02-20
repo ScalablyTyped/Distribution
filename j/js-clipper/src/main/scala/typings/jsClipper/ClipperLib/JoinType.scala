@@ -1,14 +1,15 @@
 package typings.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JoinType extends js.Object
+sealed trait JoinType extends StObject
 @JSGlobal("ClipperLib.JoinType")
 @js.native
-object JoinType extends js.Object {
+object JoinType extends StObject {
   
   @js.native
   sealed trait jtMiter extends JoinType

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Flag extends js.Object {
+trait Flag extends StObject {
   
   /** Use this field if only certain integers are accepted. Can be combined with min_value and max_value to add additional values. */
   var allowedIntValues: js.UndefOr[js.Array[String]] = js.native
@@ -46,87 +47,75 @@ object Flag {
   }
   
   @scala.inline
-  implicit class FlagOps[Self <: Flag] (val x: Self) extends AnyVal {
+  implicit class FlagMutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedIntValues(value: js.Array[String]): Self = StObject.set(x, "allowedIntValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedIntValuesUndefined: Self = StObject.set(x, "allowedIntValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedIntValuesVarargs(value: String*): Self = StObject.set(x, "allowedIntValues", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedIntValuesVarargs(value: String*): Self = this.set("allowedIntValues", js.Array(value :_*))
+    def setAllowedStringValues(value: js.Array[String]): Self = StObject.set(x, "allowedStringValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedIntValues(value: js.Array[String]): Self = this.set("allowedIntValues", value.asInstanceOf[js.Any])
+    def setAllowedStringValuesUndefined: Self = StObject.set(x, "allowedStringValues", js.undefined)
     
     @scala.inline
-    def deleteAllowedIntValues: Self = this.set("allowedIntValues", js.undefined)
+    def setAllowedStringValuesVarargs(value: String*): Self = StObject.set(x, "allowedStringValues", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedStringValuesVarargs(value: String*): Self = this.set("allowedStringValues", js.Array(value :_*))
+    def setAppliesTo(value: js.Array[String]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedStringValues(value: js.Array[String]): Self = this.set("allowedStringValues", value.asInstanceOf[js.Any])
+    def setAppliesToUndefined: Self = StObject.set(x, "appliesTo", js.undefined)
     
     @scala.inline
-    def deleteAllowedStringValues: Self = this.set("allowedStringValues", js.undefined)
+    def setAppliesToVarargs(value: String*): Self = StObject.set(x, "appliesTo", js.Array(value :_*))
     
     @scala.inline
-    def setAppliesToVarargs(value: String*): Self = this.set("appliesTo", js.Array(value :_*))
+    def setInBeta(value: Boolean): Self = StObject.set(x, "inBeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppliesTo(value: js.Array[String]): Self = this.set("appliesTo", value.asInstanceOf[js.Any])
+    def setInBetaUndefined: Self = StObject.set(x, "inBeta", js.undefined)
     
     @scala.inline
-    def deleteAppliesTo: Self = this.set("appliesTo", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInBeta(value: Boolean): Self = this.set("inBeta", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInBeta: Self = this.set("inBeta", js.undefined)
+    def setMaxValue(value: String): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMinValue(value: String): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: String): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: String): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setRequiresRestart(value: Boolean): Self = StObject.set(x, "requiresRestart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRequiresRestartUndefined: Self = StObject.set(x, "requiresRestart", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiresRestart(value: Boolean): Self = this.set("requiresRestart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiresRestart: Self = this.set("requiresRestart", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.ionicCore.ionicCoreStrings.center
 import typings.ionicCore.ionicCoreStrings.end
 import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonFab extends js.Object {
+trait IonFab extends StObject {
   
   /**
     * If `true`, both the `ion-fab-button` and all `ion-fab-list` inside `ion-fab` will become active. That means `ion-fab-button` will become a `close` icon and `ion-fab-list` will become visible.
@@ -46,39 +47,27 @@ object IonFab {
   }
   
   @scala.inline
-  implicit class IonFabOps[Self <: IonFab] (val x: Self) extends AnyVal {
+  implicit class IonFabMutableBuilder[Self <: IonFab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivated(value: Boolean): Self = this.set("activated", value.asInstanceOf[js.Any])
+    def setHorizontal(value: start | end | center): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = this.set("close", js.Any.fromFunction0(value))
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def setEdge(value: Boolean): Self = this.set("edge", value.asInstanceOf[js.Any])
+    def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: start | end | center): Self = this.set("horizontal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: top | bottom | center): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

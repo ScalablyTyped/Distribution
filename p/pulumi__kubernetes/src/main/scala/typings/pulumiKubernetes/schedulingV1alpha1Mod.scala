@@ -5,14 +5,14 @@ import typings.pulumiKubernetes.priorityClassMod.PriorityClassArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/scheduling/v1alpha1", JSImport.Namespace)
-@js.native
-object schedulingV1alpha1Mod extends js.Object {
+object schedulingV1alpha1Mod {
   
+  @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClass")
   @js.native
   class PriorityClass protected ()
     extends typings.pulumiKubernetes.priorityClassMod.PriorityClass {
@@ -29,8 +29,7 @@ object schedulingV1alpha1Mod extends js.Object {
     def this(name: String, args: PriorityClassArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PriorityClass extends js.Object {
+  object PriorityClass {
     
     /**
       * Get an existing PriorityClass resource's state with the given name, ID, and optional extra
@@ -40,16 +39,23 @@ object schedulingV1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClass.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.priorityClassMod.PriorityClass = js.native
+    @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClass.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.priorityClassMod.PriorityClass = js.native
     
     /**
       * Returns true if the given object is an instance of PriorityClass.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClass.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1alpha1/priorityClass.PriorityClass */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClassList")
   @js.native
   class PriorityClassList protected ()
     extends typings.pulumiKubernetes.priorityClassListMod.PriorityClassList {
@@ -66,8 +72,7 @@ object schedulingV1alpha1Mod extends js.Object {
     def this(name: String, args: PriorityClassListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PriorityClassList extends js.Object {
+  object PriorityClassList {
     
     /**
       * Get an existing PriorityClassList resource's state with the given name, ID, and optional extra
@@ -77,13 +82,19 @@ object schedulingV1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClassList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.priorityClassListMod.PriorityClassList = js.native
+    @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClassList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.priorityClassListMod.PriorityClassList = js.native
     
     /**
       * Returns true if the given object is an instance of PriorityClassList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/scheduling/v1alpha1", "PriorityClassList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/scheduling/v1alpha1/priorityClassList.PriorityClassList */ Boolean = js.native
   }
 }

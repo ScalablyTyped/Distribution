@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmbeddedDestinationSettings extends js.Object {
+trait EmbeddedDestinationSettings extends StObject {
   
   /**
     * Ignore this setting unless your input captions are SCC format and your output captions are embedded in the video stream. Specify a CC number for each captions channel in this output. If you have two channels, choose CC numbers that aren't in the same field. For example, choose 1 and 3. For more information, see https://docs.aws.amazon.com/console/mediaconvert/dual-scc-to-embedded.
@@ -26,30 +27,18 @@ object EmbeddedDestinationSettings {
   }
   
   @scala.inline
-  implicit class EmbeddedDestinationSettingsOps[Self <: EmbeddedDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class EmbeddedDestinationSettingsMutableBuilder[Self <: EmbeddedDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Destination608ChannelNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestination608ChannelNumberUndefined: Self = StObject.set(x, "Destination608ChannelNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination708ServiceNumber(value: integerMin1Max6): Self = StObject.set(x, "Destination708ServiceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination608ChannelNumber(value: integerMin1Max4): Self = this.set("Destination608ChannelNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination608ChannelNumber: Self = this.set("Destination608ChannelNumber", js.undefined)
-    
-    @scala.inline
-    def setDestination708ServiceNumber(value: integerMin1Max6): Self = this.set("Destination708ServiceNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination708ServiceNumber: Self = this.set("Destination708ServiceNumber", js.undefined)
+    def setDestination708ServiceNumberUndefined: Self = StObject.set(x, "Destination708ServiceNumber", js.undefined)
   }
 }

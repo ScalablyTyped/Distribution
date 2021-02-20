@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.hsl
   - typings.devtoolsProtocol.devtoolsProtocolStrings.hex
 */
-trait ColorFormat extends js.Object
+trait ColorFormat extends StObject
 object ColorFormat {
   
   @scala.inline

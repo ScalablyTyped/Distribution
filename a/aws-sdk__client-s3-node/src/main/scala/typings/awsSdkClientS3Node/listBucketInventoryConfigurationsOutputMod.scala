@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/ListBucketInventoryConfigurationsOutput", JSImport.Namespace)
-@js.native
-object listBucketInventoryConfigurationsOutputMod extends js.Object {
+object listBucketInventoryConfigurationsOutputMod {
   
+  @JSImport("@aws-sdk/client-s3-node/model/ListBucketInventoryConfigurationsOutput", "ListBucketInventoryConfigurationsOutput")
+  @js.native
   val ListBucketInventoryConfigurationsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

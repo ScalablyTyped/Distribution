@@ -4,13 +4,14 @@ import typings.std.stdStrings.jwk
 import typings.std.stdStrings.pkcs8
 import typings.std.stdStrings.raw
 import typings.std.stdStrings.spki
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Web Crypto API interface provides a number of low-level cryptographic functions. It is accessed via the Crypto.subtle properties available in a window context (via Window.crypto). */
 @js.native
-trait SubtleCrypto extends js.Object {
+trait SubtleCrypto extends StObject {
   
   def decrypt(
     algorithm: AlgorithmIdentifier | RsaOaepParams | AesCtrParams | AesCbcParams | AesCmacParams | AesGcmParams | AesCfbParams,

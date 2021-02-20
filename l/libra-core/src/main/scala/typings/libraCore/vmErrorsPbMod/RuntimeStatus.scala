@@ -1,96 +1,80 @@
 package typings.libraCore.vmErrorsPbMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RuntimeStatus extends js.Object
+sealed trait RuntimeStatus extends StObject
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "RuntimeStatus")
 @js.native
-object RuntimeStatus extends js.Object {
+object RuntimeStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[RuntimeStatus with Double] = js.native
   
   @js.native
   sealed trait ACCOUNTADDRESSALREADYEXISTS extends RuntimeStatus
-  /* 6 */ @js.native
-  object ACCOUNTADDRESSALREADYEXISTS extends TopLevel[ACCOUNTADDRESSALREADYEXISTS with Double]
+  /* 6 */ val ACCOUNTADDRESSALREADYEXISTS: typings.libraCore.vmErrorsPbMod.RuntimeStatus.ACCOUNTADDRESSALREADYEXISTS with Double = js.native
   
   @js.native
   sealed trait CANNOTWRITEEXISTINGRESOURCE extends RuntimeStatus
-  /* 12 */ @js.native
-  object CANNOTWRITEEXISTINGRESOURCE extends TopLevel[CANNOTWRITEEXISTINGRESOURCE with Double]
+  /* 12 */ val CANNOTWRITEEXISTINGRESOURCE: typings.libraCore.vmErrorsPbMod.RuntimeStatus.CANNOTWRITEEXISTINGRESOURCE with Double = js.native
   
   @js.native
   sealed trait DATAFORMATERROR extends RuntimeStatus
-  /* 9 */ @js.native
-  object DATAFORMATERROR extends TopLevel[DATAFORMATERROR with Double]
+  /* 9 */ val DATAFORMATERROR: typings.libraCore.vmErrorsPbMod.RuntimeStatus.DATAFORMATERROR with Double = js.native
   
   @js.native
   sealed trait DUPLICATEMODULENAME extends RuntimeStatus
-  /* 15 */ @js.native
-  object DUPLICATEMODULENAME extends TopLevel[DUPLICATEMODULENAME with Double]
+  /* 15 */ val DUPLICATEMODULENAME: typings.libraCore.vmErrorsPbMod.RuntimeStatus.DUPLICATEMODULENAME with Double = js.native
   
   @js.native
   sealed trait EVICTEDACCOUNTACCESS extends RuntimeStatus
-  /* 5 */ @js.native
-  object EVICTEDACCOUNTACCESS extends TopLevel[EVICTEDACCOUNTACCESS with Double]
+  /* 5 */ val EVICTEDACCOUNTACCESS: typings.libraCore.vmErrorsPbMod.RuntimeStatus.EVICTEDACCOUNTACCESS with Double = js.native
   
   @js.native
   sealed trait EXECUTED extends RuntimeStatus
-  /* 1 */ @js.native
-  object EXECUTED extends TopLevel[EXECUTED with Double]
+  /* 1 */ val EXECUTED: typings.libraCore.vmErrorsPbMod.RuntimeStatus.EXECUTED with Double = js.native
   
   @js.native
   sealed trait INVALIDDATA extends RuntimeStatus
-  /* 10 */ @js.native
-  object INVALIDDATA extends TopLevel[INVALIDDATA with Double]
+  /* 10 */ val INVALIDDATA: typings.libraCore.vmErrorsPbMod.RuntimeStatus.INVALIDDATA with Double = js.native
   
   @js.native
   sealed trait MISSINGDATA extends RuntimeStatus
-  /* 8 */ @js.native
-  object MISSINGDATA extends TopLevel[MISSINGDATA with Double]
+  /* 8 */ val MISSINGDATA: typings.libraCore.vmErrorsPbMod.RuntimeStatus.MISSINGDATA with Double = js.native
   
   @js.native
   sealed trait OUTOFGAS extends RuntimeStatus
-  /* 2 */ @js.native
-  object OUTOFGAS extends TopLevel[OUTOFGAS with Double]
+  /* 2 */ val OUTOFGAS: typings.libraCore.vmErrorsPbMod.RuntimeStatus.OUTOFGAS with Double = js.native
   
   @js.native
   sealed trait REMOTEDATAERROR extends RuntimeStatus
-  /* 11 */ @js.native
-  object REMOTEDATAERROR extends TopLevel[REMOTEDATAERROR with Double]
+  /* 11 */ val REMOTEDATAERROR: typings.libraCore.vmErrorsPbMod.RuntimeStatus.REMOTEDATAERROR with Double = js.native
   
   @js.native
   sealed trait RESOURCEALREADYEXISTS extends RuntimeStatus
-  /* 4 */ @js.native
-  object RESOURCEALREADYEXISTS extends TopLevel[RESOURCEALREADYEXISTS with Double]
+  /* 4 */ val RESOURCEALREADYEXISTS: typings.libraCore.vmErrorsPbMod.RuntimeStatus.RESOURCEALREADYEXISTS with Double = js.native
   
   @js.native
   sealed trait RESOURCEDOESNOTEXIST extends RuntimeStatus
-  /* 3 */ @js.native
-  object RESOURCEDOESNOTEXIST extends TopLevel[RESOURCEDOESNOTEXIST with Double]
+  /* 3 */ val RESOURCEDOESNOTEXIST: typings.libraCore.vmErrorsPbMod.RuntimeStatus.RESOURCEDOESNOTEXIST with Double = js.native
   
   @js.native
   sealed trait TYPEERROR extends RuntimeStatus
-  /* 7 */ @js.native
-  object TYPEERROR extends TopLevel[TYPEERROR with Double]
+  /* 7 */ val TYPEERROR: typings.libraCore.vmErrorsPbMod.RuntimeStatus.TYPEERROR with Double = js.native
   
   @js.native
   sealed trait UNKNOWNRUNTIMESTATUS extends RuntimeStatus
-  /* 0 */ @js.native
-  object UNKNOWNRUNTIMESTATUS extends TopLevel[UNKNOWNRUNTIMESTATUS with Double]
+  /* 0 */ val UNKNOWNRUNTIMESTATUS: typings.libraCore.vmErrorsPbMod.RuntimeStatus.UNKNOWNRUNTIMESTATUS with Double = js.native
   
   @js.native
   sealed trait VALUEDESERIALIZATIONERROR extends RuntimeStatus
-  /* 14 */ @js.native
-  object VALUEDESERIALIZATIONERROR extends TopLevel[VALUEDESERIALIZATIONERROR with Double]
+  /* 14 */ val VALUEDESERIALIZATIONERROR: typings.libraCore.vmErrorsPbMod.RuntimeStatus.VALUEDESERIALIZATIONERROR with Double = js.native
   
   @js.native
   sealed trait VALUESERIALIZATIONERROR extends RuntimeStatus
-  /* 13 */ @js.native
-  object VALUESERIALIZATIONERROR extends TopLevel[VALUESERIALIZATIONERROR with Double]
+  /* 13 */ val VALUESERIALIZATIONERROR: typings.libraCore.vmErrorsPbMod.RuntimeStatus.VALUESERIALIZATIONERROR with Double = js.native
 }

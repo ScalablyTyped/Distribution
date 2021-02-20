@@ -4,16 +4,16 @@ import typings.angularCore.updateRecorderMod.UpdateRecorder
 import typings.typescript.mod.PropertyAssignment
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/initial-navigation/transform", JSImport.Namespace)
-@js.native
-object transformMod extends js.Object {
+object transformMod {
   
+  @JSImport("@angular/core/schematics/migrations/initial-navigation/transform", "InitialNavigationTransform")
   @js.native
-  class InitialNavigationTransform protected () extends js.Object {
+  class InitialNavigationTransform protected () extends StObject {
     def this(typeChecker: TypeChecker, getUpdateRecorder: js.Function1[/* sf */ SourceFile, UpdateRecorder]) = this()
     
     var _updateNode: js.Any = js.native

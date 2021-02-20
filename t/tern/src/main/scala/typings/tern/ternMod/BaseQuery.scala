@@ -1,12 +1,13 @@
 package typings.tern.ternMod
 
 import typings.tern.ternStrings.full
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseQuery extends js.Object {
+trait BaseQuery extends StObject {
   
   var docFormat: js.UndefOr[full] = js.native
   
@@ -24,33 +25,21 @@ object BaseQuery {
   }
   
   @scala.inline
-  implicit class BaseQueryOps[Self <: BaseQuery] (val x: Self) extends AnyVal {
+  implicit class BaseQueryMutableBuilder[Self <: BaseQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocFormat(value: full): Self = StObject.set(x, "docFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocFormatUndefined: Self = StObject.set(x, "docFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineCharPositions(value: Boolean): Self = StObject.set(x, "lineCharPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLineCharPositionsUndefined: Self = StObject.set(x, "lineCharPositions", js.undefined)
     
     @scala.inline
-    def setDocFormat(value: full): Self = this.set("docFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocFormat: Self = this.set("docFormat", js.undefined)
-    
-    @scala.inline
-    def setLineCharPositions(value: Boolean): Self = this.set("lineCharPositions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineCharPositions: Self = this.set("lineCharPositions", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

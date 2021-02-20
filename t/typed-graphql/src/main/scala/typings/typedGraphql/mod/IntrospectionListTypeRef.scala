@@ -1,6 +1,7 @@
 package typings.typedGraphql.mod
 
 import typings.typedGraphql.typedGraphqlStrings.LIST
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object IntrospectionListTypeRef {
   }
   
   @scala.inline
-  implicit class IntrospectionListTypeRefOps[Self <: IntrospectionListTypeRef] (val x: Self) extends AnyVal {
+  implicit class IntrospectionListTypeRefMutableBuilder[Self <: IntrospectionListTypeRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: LIST): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOfType(value: IntrospectionTypeRef): Self = StObject.set(x, "ofType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKind(value: LIST): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfType(value: IntrospectionTypeRef): Self = this.set("ofType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfType: Self = this.set("ofType", js.undefined)
+    def setOfTypeUndefined: Self = StObject.set(x, "ofType", js.undefined)
   }
 }

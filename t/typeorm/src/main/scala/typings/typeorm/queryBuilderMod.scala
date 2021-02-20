@@ -16,16 +16,16 @@ import typings.typeorm.relationQueryBuilderMod.RelationQueryBuilder
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import typings.typeorm.softDeleteQueryBuilderMod.SoftDeleteQueryBuilder
 import typings.typeorm.updateQueryBuilderMod.UpdateQueryBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/QueryBuilder", JSImport.Namespace)
-@js.native
-object queryBuilderMod extends js.Object {
+object queryBuilderMod {
   
+  @JSImport("typeorm/browser/query-builder/QueryBuilder", "QueryBuilder")
   @js.native
-  abstract class QueryBuilder[Entity] protected () extends js.Object {
+  abstract class QueryBuilder[Entity] protected () extends StObject {
     /**
       * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
       */

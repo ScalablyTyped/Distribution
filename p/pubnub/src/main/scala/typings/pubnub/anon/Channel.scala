@@ -1,12 +1,13 @@
 package typings.pubnub.anon
 
 import typings.pubnub.mod.ObjectCustom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Channel[MembershipCustom /* <: ObjectCustom */] extends js.Object {
+trait Channel[MembershipCustom /* <: ObjectCustom */] extends StObject {
   
   var channel: Id = js.native
   
@@ -27,36 +28,24 @@ object Channel {
   }
   
   @scala.inline
-  implicit class ChannelOps[Self <: Channel[_], MembershipCustom /* <: ObjectCustom */] (val x: Self with Channel[MembershipCustom]) extends AnyVal {
+  implicit class ChannelMutableBuilder[Self <: Channel[_], MembershipCustom /* <: ObjectCustom */] (val x: Self with Channel[MembershipCustom]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Id): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom(value: MembershipCustom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomNull: Self = StObject.set(x, "custom", null)
     
     @scala.inline
-    def setChannel(value: Id): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setETag(value: String): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("eTag", value.asInstanceOf[js.Any])
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: Id): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustom(value: MembershipCustom): Self = this.set("custom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomNull: Self = this.set("custom", null)
+    def setUuid(value: Id): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

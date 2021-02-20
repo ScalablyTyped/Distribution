@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpgradeAppliedSchemaResponse extends js.Object {
+trait UpgradeAppliedSchemaResponse extends StObject {
   
   /**
     * The ARN of the directory that is returned as part of the response.
@@ -26,30 +27,18 @@ object UpgradeAppliedSchemaResponse {
   }
   
   @scala.inline
-  implicit class UpgradeAppliedSchemaResponseOps[Self <: UpgradeAppliedSchemaResponse] (val x: Self) extends AnyVal {
+  implicit class UpgradeAppliedSchemaResponseMutableBuilder[Self <: UpgradeAppliedSchemaResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoryArnUndefined: Self = StObject.set(x, "DirectoryArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpgradedSchemaArn(value: Arn): Self = StObject.set(x, "UpgradedSchemaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectoryArn: Self = this.set("DirectoryArn", js.undefined)
-    
-    @scala.inline
-    def setUpgradedSchemaArn(value: Arn): Self = this.set("UpgradedSchemaArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradedSchemaArn: Self = this.set("UpgradedSchemaArn", js.undefined)
+    def setUpgradedSchemaArnUndefined: Self = StObject.set(x, "UpgradedSchemaArn", js.undefined)
   }
 }

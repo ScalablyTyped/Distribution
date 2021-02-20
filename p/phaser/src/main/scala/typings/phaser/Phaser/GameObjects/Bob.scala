@@ -2,6 +2,7 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * handled via the Blitter parent.
   */
 @js.native
-trait Bob extends js.Object {
+trait Bob extends StObject {
   
   /**
     * The alpha value of the Bob, between 0 and 1.

@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSearchconsole.anon.Alt
 import typings.maximMazurokGapiClientSearchconsole.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SitesResource extends js.Object {
+trait SitesResource extends StObject {
   
   /** Adds a site to the set of the user's sites in Search Console. */
   def add(): Request[Unit] = js.native

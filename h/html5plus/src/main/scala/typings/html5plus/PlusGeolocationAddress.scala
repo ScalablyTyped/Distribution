@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
 @js.native
-trait PlusGeolocationAddress extends js.Object {
+trait PlusGeolocationAddress extends StObject {
   
   /**
     * 城市名称
@@ -93,72 +94,60 @@ object PlusGeolocationAddress {
   }
   
   @scala.inline
-  implicit class PlusGeolocationAddressOps[Self <: PlusGeolocationAddress] (val x: Self) extends AnyVal {
+  implicit class PlusGeolocationAddressMutableBuilder[Self <: PlusGeolocationAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCityCode(value: String): Self = StObject.set(x, "cityCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCityCodeUndefined: Self = StObject.set(x, "cityCode", js.undefined)
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("city", js.undefined)
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityCode(value: String): Self = this.set("cityCode", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteCityCode: Self = this.set("cityCode", js.undefined)
+    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDistrictUndefined: Self = StObject.set(x, "district", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setPoiName(value: String): Self = StObject.set(x, "poiName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistrict(value: String): Self = this.set("district", value.asInstanceOf[js.Any])
+    def setPoiNameUndefined: Self = StObject.set(x, "poiName", js.undefined)
     
     @scala.inline
-    def deleteDistrict: Self = this.set("district", js.undefined)
+    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoiName(value: String): Self = this.set("poiName", value.asInstanceOf[js.Any])
+    def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     
     @scala.inline
-    def deletePoiName: Self = this.set("poiName", js.undefined)
+    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCode(value: String): Self = this.set("postalCode", value.asInstanceOf[js.Any])
+    def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
     
     @scala.inline
-    def deletePostalCode: Self = this.set("postalCode", js.undefined)
+    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
+    def setStreetNum(value: String): Self = StObject.set(x, "streetNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvince: Self = this.set("province", js.undefined)
+    def setStreetNumUndefined: Self = StObject.set(x, "streetNum", js.undefined)
     
     @scala.inline
-    def setStreet(value: String): Self = this.set("street", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreet: Self = this.set("street", js.undefined)
-    
-    @scala.inline
-    def setStreetNum(value: String): Self = this.set("streetNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreetNum: Self = this.set("streetNum", js.undefined)
+    def setStreetUndefined: Self = StObject.set(x, "street", js.undefined)
   }
 }

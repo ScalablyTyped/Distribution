@@ -2,12 +2,13 @@ package typings.chocolatechipjs
 
 import typings.std.Document
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
   
   /**
     * If no argument is provided, return the document as a ChocolateChipElementArray.

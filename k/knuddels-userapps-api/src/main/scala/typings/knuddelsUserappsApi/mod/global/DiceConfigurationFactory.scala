@@ -1,5 +1,6 @@
 package typings.knuddelsUserappsApi.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("DiceConfigurationFactory")
 @js.native
-class DiceConfigurationFactory () extends js.Object {
+class DiceConfigurationFactory () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/DiceConfigurationFactory.html#method_addDice
@@ -36,13 +37,13 @@ class DiceConfigurationFactory () extends js.Object {
   		 */
   def setUseOpenThrow(shouldUseOpenThrow: Boolean): Unit = js.native
 }
-/* static members */
-@JSGlobal("DiceConfigurationFactory")
-@js.native
-object DiceConfigurationFactory extends js.Object {
+object DiceConfigurationFactory {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/DiceConfigurationFactory.html#method_fromString
   		 */
+  /* static member */
+  @JSGlobal("DiceConfigurationFactory.fromString")
+  @js.native
   def fromString(diceConfigurationString: java.lang.String): DiceConfiguration = js.native
 }

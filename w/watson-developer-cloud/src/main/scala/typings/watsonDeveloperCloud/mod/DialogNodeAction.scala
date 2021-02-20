@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DialogNodeAction. */
 @js.native
-trait DialogNodeAction extends js.Object {
+trait DialogNodeAction extends StObject {
   
   /** The type of action to invoke. */
   var action_type: js.UndefOr[String] = js.native
@@ -32,42 +33,30 @@ object DialogNodeAction {
   }
   
   @scala.inline
-  implicit class DialogNodeActionOps[Self <: DialogNodeAction] (val x: Self) extends AnyVal {
+  implicit class DialogNodeActionMutableBuilder[Self <: DialogNodeAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction_type(value: String): Self = StObject.set(x, "action_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAction_typeUndefined: Self = StObject.set(x, "action_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def setResult_variable(value: String): Self = this.set("result_variable", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction_type(value: String): Self = this.set("action_type", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Object): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAction_type: Self = this.set("action_type", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setCredentials(value: String): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
-    
-    @scala.inline
-    def setParameters(value: js.Object): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setResult_variable(value: String): Self = StObject.set(x, "result_variable", value.asInstanceOf[js.Any])
   }
 }

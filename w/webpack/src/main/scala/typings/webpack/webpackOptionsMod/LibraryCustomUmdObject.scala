@@ -1,11 +1,12 @@
 package typings.webpack.webpackOptionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LibraryCustomUmdObject extends js.Object {
+trait LibraryCustomUmdObject extends StObject {
   
   /**
   	 * Name of the exposed AMD library in the UMD
@@ -31,39 +32,27 @@ object LibraryCustomUmdObject {
   }
   
   @scala.inline
-  implicit class LibraryCustomUmdObjectOps[Self <: LibraryCustomUmdObject] (val x: Self) extends AnyVal {
+  implicit class LibraryCustomUmdObjectMutableBuilder[Self <: LibraryCustomUmdObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmd(value: String): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommonjs(value: String): Self = StObject.set(x, "commonjs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmd(value: String): Self = this.set("amd", value.asInstanceOf[js.Any])
+    def setCommonjsUndefined: Self = StObject.set(x, "commonjs", js.undefined)
     
     @scala.inline
-    def deleteAmd: Self = this.set("amd", js.undefined)
+    def setRoot(value: String | ArrayOfStringValues): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonjs(value: String): Self = this.set("commonjs", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteCommonjs: Self = this.set("commonjs", js.undefined)
-    
-    @scala.inline
-    def setRootVarargs(value: String*): Self = this.set("root", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoot(value: String | ArrayOfStringValues): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootVarargs(value: String*): Self = StObject.set(x, "root", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Transform ()
   extends typings.pixiJs.PIXI.Transform
-/* static members */
-@JSImport("pixi.js", "Transform")
-@js.native
-object Transform extends js.Object {
+object Transform {
+  
+  @JSImport("pixi.js", "Transform")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A default (identity) transform
@@ -26,5 +28,10 @@ object Transform extends js.Object {
     * @constant
     * @member {PIXI.Transform}
     */
-  var IDENTITY: typings.pixiJs.PIXI.Transform = js.native
+  /* static member */
+  @JSImport("pixi.js", "Transform.IDENTITY")
+  @js.native
+  def IDENTITY: typings.pixiJs.PIXI.Transform = js.native
+  @scala.inline
+  def IDENTITY_=(x: typings.pixiJs.PIXI.Transform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY")(x.asInstanceOf[js.Any])
 }

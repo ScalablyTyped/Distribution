@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBackgroundTaskRegistration extends js.Object {
+trait IBackgroundTaskRegistration extends StObject {
   
   var name: String = js.native
   
@@ -26,33 +27,21 @@ object IBackgroundTaskRegistration {
   }
   
   @scala.inline
-  implicit class IBackgroundTaskRegistrationOps[Self <: IBackgroundTaskRegistration] (val x: Self) extends AnyVal {
+  implicit class IBackgroundTaskRegistrationMutableBuilder[Self <: IBackgroundTaskRegistration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnprogress(value: js.Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOncompleted(value: js.Any): Self = this.set("oncompleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnprogress(value: js.Any): Self = this.set("onprogress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskId(value: String): Self = this.set("taskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnregister(value: Boolean => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
+    def setUnregister(value: Boolean => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .build();
   */
 @js.native
-trait DataTableBuilder extends js.Object {
+trait DataTableBuilder extends StObject {
   
   def addColumn(`type`: ColumnType, label: String): DataTableBuilder = js.native
   
@@ -45,30 +46,18 @@ object DataTableBuilder {
   }
   
   @scala.inline
-  implicit class DataTableBuilderOps[Self <: DataTableBuilder] (val x: Self) extends AnyVal {
+  implicit class DataTableBuilderMutableBuilder[Self <: DataTableBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRow(value: js.Array[_] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuild(value: () => DataTable): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = this.set("addColumn", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setAddRow(value: js.Array[_] => DataTableBuilder): Self = this.set("addRow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBuild(value: () => DataTable): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetValue(value: (Integer, Integer, js.Any) => DataTableBuilder): Self = this.set("setValue", js.Any.fromFunction3(value))
+    def setSetValue(value: (Integer, Integer, js.Any) => DataTableBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
   }
 }

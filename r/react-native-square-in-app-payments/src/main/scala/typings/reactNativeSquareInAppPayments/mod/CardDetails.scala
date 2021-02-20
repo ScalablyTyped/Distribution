@@ -1,11 +1,12 @@
 package typings.reactNativeSquareInAppPayments.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardDetails extends js.Object {
+trait CardDetails extends StObject {
   
   /** Non-confidential details about the entered card, such as the brand and last four digits of the card number. */
   var card: Card = js.native
@@ -22,24 +23,12 @@ object CardDetails {
   }
   
   @scala.inline
-  implicit class CardDetailsOps[Self <: CardDetails] (val x: Self) extends AnyVal {
+  implicit class CardDetailsMutableBuilder[Self <: CardDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCard(value: Card): Self = this.set("card", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
   }
 }

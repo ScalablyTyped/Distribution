@@ -1,6 +1,7 @@
 package typings.exceljs.mod
 
 import typings.exceljs.exceljsStrings.timePeriod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,27 +25,15 @@ object TimePeriodRuleType {
   }
   
   @scala.inline
-  implicit class TimePeriodRuleTypeOps[Self <: TimePeriodRuleType] (val x: Self) extends AnyVal {
+  implicit class TimePeriodRuleTypeMutableBuilder[Self <: TimePeriodRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimePeriod(value: TimePeriodTypes): Self = StObject.set(x, "timePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimePeriodUndefined: Self = StObject.set(x, "timePeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: timePeriod): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimePeriod(value: TimePeriodTypes): Self = this.set("timePeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimePeriod: Self = this.set("timePeriod", js.undefined)
+    def setType(value: timePeriod): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

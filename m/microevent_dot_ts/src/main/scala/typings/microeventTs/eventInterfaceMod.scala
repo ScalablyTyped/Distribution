@@ -1,16 +1,15 @@
 package typings.microeventTs
 
 import typings.microeventTs.eventInterfaceMod.EventInterface.HandlerInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("microevent/lib/EventInterface", JSImport.Namespace)
-@js.native
-object eventInterfaceMod extends js.Object {
+object eventInterfaceMod {
   
   @js.native
-  trait EventInterface[EventPayload] extends js.Object {
+  trait EventInterface[EventPayload] extends StObject {
     
     def addHandler[T](handler: HandlerInterface[EventPayload, T]): EventInterface[EventPayload] = js.native
     def addHandler[T](handler: HandlerInterface[EventPayload, T], context: T): EventInterface[EventPayload] = js.native
@@ -18,8 +17,7 @@ object eventInterfaceMod extends js.Object {
     def removeHandler[T](handler: HandlerInterface[EventPayload, T]): EventInterface[EventPayload] = js.native
     def removeHandler[T](handler: HandlerInterface[EventPayload, T], context: T): EventInterface[EventPayload] = js.native
   }
-  @js.native
-  object EventInterface extends js.Object {
+  object EventInterface {
     
     type HandlerInterface[EventPayload, T] = js.Function2[/* payload */ EventPayload, /* context */ T, Unit]
   }

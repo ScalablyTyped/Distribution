@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the coordinates of a 3-dimensional poly polygon. */
 @js.native
-trait PolyPolygonShape3D extends js.Object {
+trait PolyPolygonShape3D extends StObject {
   
   var SequenceX: DoubleSequenceSequence = js.native
   
@@ -27,36 +28,24 @@ object PolyPolygonShape3D {
   }
   
   @scala.inline
-  implicit class PolyPolygonShape3DOps[Self <: PolyPolygonShape3D] (val x: Self) extends AnyVal {
+  implicit class PolyPolygonShape3DMutableBuilder[Self <: PolyPolygonShape3D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSequenceX(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSequenceXVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceX", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSequenceY(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceXVarargs(value: DoubleSequence*): Self = this.set("SequenceX", js.Array(value :_*))
+    def setSequenceYVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceY", js.Array(value :_*))
     
     @scala.inline
-    def setSequenceX(value: DoubleSequenceSequence): Self = this.set("SequenceX", value.asInstanceOf[js.Any])
+    def setSequenceZ(value: DoubleSequenceSequence): Self = StObject.set(x, "SequenceZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceYVarargs(value: DoubleSequence*): Self = this.set("SequenceY", js.Array(value :_*))
-    
-    @scala.inline
-    def setSequenceY(value: DoubleSequenceSequence): Self = this.set("SequenceY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceZVarargs(value: DoubleSequence*): Self = this.set("SequenceZ", js.Array(value :_*))
-    
-    @scala.inline
-    def setSequenceZ(value: DoubleSequenceSequence): Self = this.set("SequenceZ", value.asInstanceOf[js.Any])
+    def setSequenceZVarargs(value: DoubleSequence*): Self = StObject.set(x, "SequenceZ", js.Array(value :_*))
   }
 }

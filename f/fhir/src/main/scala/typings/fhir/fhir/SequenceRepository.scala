@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,87 +81,75 @@ object SequenceRepository {
   }
   
   @scala.inline
-  implicit class SequenceRepositoryOps[Self <: SequenceRepository] (val x: Self) extends AnyVal {
+  implicit class SequenceRepositoryMutableBuilder[Self <: SequenceRepository] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set_datasetId(value: Element): Self = this.set("_datasetId", value.asInstanceOf[js.Any])
+    def setReadsetId(value: String): Self = StObject.set(x, "readsetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_datasetId: Self = this.set("_datasetId", js.undefined)
+    def setReadsetIdUndefined: Self = StObject.set(x, "readsetId", js.undefined)
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_readsetId(value: Element): Self = this.set("_readsetId", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def delete_readsetId: Self = this.set("_readsetId", js.undefined)
+    def setVariantsetId(value: String): Self = StObject.set(x, "variantsetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setVariantsetIdUndefined: Self = StObject.set(x, "variantsetId", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def set_datasetId(value: Element): Self = StObject.set(x, "_datasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def set_datasetIdUndefined: Self = StObject.set(x, "_datasetId", js.undefined)
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_variantsetId(value: Element): Self = this.set("_variantsetId", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def delete_variantsetId: Self = this.set("_variantsetId", js.undefined)
+    def set_readsetId(value: Element): Self = StObject.set(x, "_readsetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    def set_readsetIdUndefined: Self = StObject.set(x, "_readsetId", js.undefined)
     
     @scala.inline
-    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadsetId(value: String): Self = this.set("readsetId", value.asInstanceOf[js.Any])
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     @scala.inline
-    def deleteReadsetId: Self = this.set("readsetId", js.undefined)
+    def set_variantsetId(value: Element): Self = StObject.set(x, "_variantsetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setVariantsetId(value: String): Self = this.set("variantsetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariantsetId: Self = this.set("variantsetId", js.undefined)
+    def set_variantsetIdUndefined: Self = StObject.set(x, "_variantsetId", js.undefined)
   }
 }

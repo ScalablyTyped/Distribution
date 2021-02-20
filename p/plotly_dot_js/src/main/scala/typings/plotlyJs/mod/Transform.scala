@@ -6,12 +6,13 @@ import typings.plotlyJs.plotlyJsStrings.descending
 import typings.plotlyJs.plotlyJsStrings.filter
 import typings.plotlyJs.plotlyJsStrings.groupby
 import typings.plotlyJs.plotlyJsStrings.sort
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Transform extends js.Object {
+trait Transform extends StObject {
   
   var aggregations: js.Array[TransformAggregation] = js.native
   
@@ -57,63 +58,51 @@ object Transform {
   }
   
   @scala.inline
-  implicit class TransformOps[Self <: Transform] (val x: Self) extends AnyVal {
+  implicit class TransformMutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregations(value: js.Array[TransformAggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationsVarargs(value: TransformAggregation*): Self = StObject.set(x, "aggregations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationsVarargs(value: TransformAggregation*): Self = this.set("aggregations", js.Array(value :_*))
+    def setGroups(value: String | (js.Array[Double | String])): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregations(value: js.Array[TransformAggregation]): Self = this.set("aggregations", value.asInstanceOf[js.Any])
+    def setGroupsVarargs(value: (Double | String)*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setNameformat(value: String): Self = StObject.set(x, "nameformat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: (Double | String)*): Self = this.set("groups", js.Array(value :_*))
+    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: String | (js.Array[Double | String])): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setOrder(value: ascending | descending): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameformat(value: String): Self = this.set("nameformat", value.asInstanceOf[js.Any])
+    def setPreservegaps(value: Boolean): Self = StObject.set(x, "preservegaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setStyles(value: js.Array[TransformStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: ascending | descending): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setStylesVarargs(value: TransformStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
     @scala.inline
-    def setPreservegaps(value: Boolean): Self = this.set("preservegaps", value.asInstanceOf[js.Any])
+    def setTarget(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStylesVarargs(value: TransformStyle*): Self = this.set("styles", js.Array(value :_*))
+    def setTargetVarargs(value: (Double | String)*): Self = StObject.set(x, "target", js.Array(value :_*))
     
     @scala.inline
-    def setStyles(value: js.Array[TransformStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setType(value: aggregate | filter | groupby | sort): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetVarargs(value: (Double | String)*): Self = this.set("target", js.Array(value :_*))
-    
-    @scala.inline
-    def setTarget(value: Double | String | (js.Array[Double | String])): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: aggregate | filter | groupby | sort): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

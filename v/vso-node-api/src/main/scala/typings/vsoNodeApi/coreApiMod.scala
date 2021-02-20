@@ -20,23 +20,24 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import typings.vsoNodeApi.vssinterfacesMod.JsonPatchDocument
 import typings.vsoNodeApi.vssinterfacesMod.TeamMember
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/CoreApi", JSImport.Namespace)
-@js.native
-object coreApiMod extends js.Object {
+object coreApiMod {
   
+  @JSImport("vso-node-api/CoreApi", "CoreApi")
   @js.native
   class CoreApi protected () extends ICoreApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
   /* static members */
-  @js.native
-  object CoreApi extends js.Object {
+  object CoreApi {
     
+    @JSImport("vso-node-api/CoreApi", "CoreApi.RESOURCE_AREA_ID")
+    @js.native
     val RESOURCE_AREA_ID: String = js.native
   }
   

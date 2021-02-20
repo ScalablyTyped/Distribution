@@ -1,12 +1,13 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.ICreateSubscriptionOptions> */
 @js.native
-trait CreateSubscriptionOptions extends js.Object {
+trait CreateSubscriptionOptions extends StObject {
   
   var DefaultMessageTimeToLive: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object CreateSubscriptionOptions {
   }
   
   @scala.inline
-  implicit class CreateSubscriptionOptionsOps[Self <: CreateSubscriptionOptions] (val x: Self) extends AnyVal {
+  implicit class CreateSubscriptionOptionsMutableBuilder[Self <: CreateSubscriptionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultMessageTimeToLiveUndefined: Self = StObject.set(x, "DefaultMessageTimeToLive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMessageTimeToLive(value: String): Self = this.set("DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    def setEnableDeadLetteringOnFilterEvaluationExceptionsUndefined: Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultMessageTimeToLive: Self = this.set("DefaultMessageTimeToLive", js.undefined)
+    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = this.set("EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
+    def setEnableDeadLetteringOnMessageExpirationUndefined: Self = StObject.set(x, "EnableDeadLetteringOnMessageExpiration", js.undefined)
     
     @scala.inline
-    def deleteEnableDeadLetteringOnFilterEvaluationExceptions: Self = this.set("EnableDeadLetteringOnFilterEvaluationExceptions", js.undefined)
+    def setLockDuration(value: String): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDeadLetteringOnMessageExpiration(value: Boolean): Self = this.set("EnableDeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    def setLockDurationUndefined: Self = StObject.set(x, "LockDuration", js.undefined)
     
     @scala.inline
-    def deleteEnableDeadLetteringOnMessageExpiration: Self = this.set("EnableDeadLetteringOnMessageExpiration", js.undefined)
+    def setRequiresSession(value: Boolean): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockDuration(value: String): Self = this.set("LockDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockDuration: Self = this.set("LockDuration", js.undefined)
-    
-    @scala.inline
-    def setRequiresSession(value: Boolean): Self = this.set("RequiresSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiresSession: Self = this.set("RequiresSession", js.undefined)
+    def setRequiresSessionUndefined: Self = StObject.set(x, "RequiresSession", js.undefined)
   }
 }

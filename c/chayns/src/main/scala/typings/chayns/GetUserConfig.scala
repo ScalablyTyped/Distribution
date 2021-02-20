@@ -1,5 +1,6 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 // chayns.getUser()
 @js.native
-trait GetUserConfig extends js.Object {
+trait GetUserConfig extends StObject {
   
   var accessToken: js.UndefOr[String] = js.native
   
@@ -30,42 +31,30 @@ object GetUserConfig {
   }
   
   @scala.inline
-  implicit class GetUserConfigOps[Self <: GetUserConfig] (val x: Self) extends AnyVal {
+  implicit class GetUserConfigMutableBuilder[Self <: GetUserConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFbId(value: String): Self = StObject.set(x, "fbId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setFbIdUndefined: Self = StObject.set(x, "fbId", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setPersonId(value: String): Self = StObject.set(x, "personId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFbId(value: String): Self = this.set("fbId", value.asInstanceOf[js.Any])
+    def setPersonIdUndefined: Self = StObject.set(x, "personId", js.undefined)
     
     @scala.inline
-    def deleteFbId: Self = this.set("fbId", js.undefined)
+    def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonId(value: String): Self = this.set("personId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersonId: Self = this.set("personId", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: Double): Self = this.set("userId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("userId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

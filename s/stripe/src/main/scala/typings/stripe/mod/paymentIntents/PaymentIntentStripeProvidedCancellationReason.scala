@@ -1,5 +1,6 @@
 package typings.stripe.mod.paymentIntents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.stripeStrings.void_invoice
   - typings.stripe.stripeStrings.automatic
 */
-trait PaymentIntentStripeProvidedCancellationReason extends js.Object
+trait PaymentIntentStripeProvidedCancellationReason extends StObject
 object PaymentIntentStripeProvidedCancellationReason {
   
   @scala.inline

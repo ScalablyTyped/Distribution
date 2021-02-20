@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,30 +41,18 @@ object DockingEvent {
   }
   
   @scala.inline
-  implicit class DockingEventOps[Self <: DockingEvent] (val x: Self) extends AnyVal {
+  implicit class DockingEventMutableBuilder[Self <: DockingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBInteractive(value: Boolean): Self = StObject.set(x, "bInteractive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBLiveMode(value: Boolean): Self = StObject.set(x, "bLiveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMousePos(value: Point): Self = StObject.set(x, "MousePos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePos(value: Point): Self = this.set("MousePos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackingRectangle(value: Rectangle): Self = this.set("TrackingRectangle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBInteractive(value: Boolean): Self = this.set("bInteractive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBLiveMode(value: Boolean): Self = this.set("bLiveMode", value.asInstanceOf[js.Any])
+    def setTrackingRectangle(value: Rectangle): Self = StObject.set(x, "TrackingRectangle", value.asInstanceOf[js.Any])
   }
 }

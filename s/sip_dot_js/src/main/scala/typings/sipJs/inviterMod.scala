@@ -10,14 +10,14 @@ import typings.sipJs.inviterInviteOptionsMod.InviterInviteOptions
 import typings.sipJs.inviterOptionsMod.InviterOptions
 import typings.sipJs.sessionMod.Session
 import typings.sipJs.userAgentMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/inviter", JSImport.Namespace)
-@js.native
-object inviterMod extends js.Object {
+object inviterMod {
   
+  @JSImport("sip.js/lib/api/inviter", "Inviter")
   @js.native
   class Inviter protected () extends Session {
     /**

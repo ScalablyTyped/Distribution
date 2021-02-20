@@ -2,12 +2,13 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestInfo extends js.Object {
+trait RequestInfo extends StObject {
   
   var binaryStringRequestBody: js.UndefOr[Boolean] = js.native
   
@@ -47,77 +48,65 @@ object RequestInfo {
   }
   
   @scala.inline
-  implicit class RequestInfoOps[Self <: RequestInfo] (val x: Self) extends AnyVal {
+  implicit class RequestInfoMutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryStringRequestBody(value: Boolean): Self = StObject.set(x, "binaryStringRequestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryStringRequestBodyUndefined: Self = StObject.set(x, "binaryStringRequestBody", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinaryStringResponseBody(value: Boolean): Self = StObject.set(x, "binaryStringResponseBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setBinaryStringResponseBodyUndefined: Self = StObject.set(x, "binaryStringResponseBody", js.undefined)
     
     @scala.inline
-    def setBinaryStringRequestBody(value: Boolean): Self = this.set("binaryStringRequestBody", value.asInstanceOf[js.Any])
+    def setBody(value: String | Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinaryStringRequestBody: Self = this.set("binaryStringRequestBody", js.undefined)
-    
-    @scala.inline
-    def setBinaryStringResponseBody(value: Boolean): Self = this.set("binaryStringResponseBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinaryStringResponseBody: Self = this.set("binaryStringResponseBody", js.undefined)
-    
-    @scala.inline
-    def setBody(value: String | Uint8Array): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
     def setError(
       value: (/* response */ ResponseInfo, /* error */ RequestExecutorErrors, /* statusText */ String) => Unit
-    ): Self = this.set("error", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setState(value: js.Any): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setSuccess(value: /* response */ ResponseInfo => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccess(value: /* response */ ResponseInfo => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    @scala.inline
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

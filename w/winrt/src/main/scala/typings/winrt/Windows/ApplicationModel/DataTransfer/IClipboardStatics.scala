@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClipboardStatics extends js.Object {
+trait IClipboardStatics extends StObject {
   
   def clear(): Unit = js.native
   
@@ -32,33 +33,21 @@ object IClipboardStatics {
   }
   
   @scala.inline
-  implicit class IClipboardStaticsOps[Self <: IClipboardStatics] (val x: Self) extends AnyVal {
+  implicit class IClipboardStaticsMutableBuilder[Self <: IClipboardStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContent(value: () => DataPackageView): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setOncontentchanged(value: js.Any): Self = StObject.set(x, "oncontentchanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlush(value: () => Unit): Self = this.set("flush", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetContent(value: () => DataPackageView): Self = this.set("getContent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOncontentchanged(value: js.Any): Self = this.set("oncontentchanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetContent(value: DataPackage => Unit): Self = this.set("setContent", js.Any.fromFunction1(value))
+    def setSetContent(value: DataPackage => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
   }
 }

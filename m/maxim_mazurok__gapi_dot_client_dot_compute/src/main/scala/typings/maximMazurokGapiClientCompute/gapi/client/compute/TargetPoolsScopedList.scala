@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.maximMazurokGapiClientCompute.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetPoolsScopedList extends js.Object {
+trait TargetPoolsScopedList extends StObject {
   
   /** A list of target pools contained in this scope. */
   var targetPools: js.UndefOr[js.Array[TargetPool]] = js.native
@@ -23,33 +24,21 @@ object TargetPoolsScopedList {
   }
   
   @scala.inline
-  implicit class TargetPoolsScopedListOps[Self <: TargetPoolsScopedList] (val x: Self) extends AnyVal {
+  implicit class TargetPoolsScopedListMutableBuilder[Self <: TargetPoolsScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetPools(value: js.Array[TargetPool]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetPoolsVarargs(value: TargetPool*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
     
     @scala.inline
-    def setTargetPoolsVarargs(value: TargetPool*): Self = this.set("targetPools", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetPools(value: js.Array[TargetPool]): Self = this.set("targetPools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetPools: Self = this.set("targetPools", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

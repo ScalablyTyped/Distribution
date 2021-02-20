@@ -12,12 +12,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.primary
 import typings.tuyaPanelKit.tuyaPanelKitStrings.primaryBorder
 import typings.tuyaPanelKit.tuyaPanelKitStrings.primaryGradient
 import typings.tuyaPanelKit.tuyaPanelKitStrings.small
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrickButtonProps extends js.Object {
+trait BrickButtonProps extends StObject {
   
   var activeOpacity: js.UndefOr[Double] = js.native
   
@@ -68,150 +69,138 @@ object BrickButtonProps {
   }
   
   @scala.inline
-  implicit class BrickButtonPropsOps[Self <: BrickButtonProps] (val x: Self) extends AnyVal {
+  implicit class BrickButtonPropsMutableBuilder[Self <: BrickButtonProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    def setBackgroundColorTouched(value: String): Self = StObject.set(x, "backgroundColorTouched", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    def setBackgroundColorTouchedUndefined: Self = StObject.set(x, "backgroundColorTouched", js.undefined)
     
     @scala.inline
-    def setBackground(value: BackgroundProps): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorTouched(value: String): Self = this.set("backgroundColorTouched", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorTouched: Self = this.set("backgroundColorTouched", js.undefined)
+    def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setLoadingBackground(value: String): Self = StObject.set(x, "loadingBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLoadingBackgroundUndefined: Self = StObject.set(x, "loadingBackground", js.undefined)
     
     @scala.inline
-    def setLoading(value: Boolean): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setLoadingColor(value: String): Self = StObject.set(x, "loadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setLoadingColorUndefined: Self = StObject.set(x, "loadingColor", js.undefined)
     
     @scala.inline
-    def setLoadingBackground(value: String): Self = this.set("loadingBackground", value.asInstanceOf[js.Any])
+    def setLoadingSize(value: small | large | Double): Self = StObject.set(x, "loadingSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadingBackground: Self = this.set("loadingBackground", js.undefined)
+    def setLoadingSizeUndefined: Self = StObject.set(x, "loadingSize", js.undefined)
     
     @scala.inline
-    def setLoadingColor(value: String): Self = this.set("loadingColor", value.asInstanceOf[js.Any])
+    def setLoadingStrokeWidth(value: Double): Self = StObject.set(x, "loadingStrokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadingColor: Self = this.set("loadingColor", js.undefined)
+    def setLoadingStrokeWidthUndefined: Self = StObject.set(x, "loadingStrokeWidth", js.undefined)
     
     @scala.inline
-    def setLoadingSize(value: small | large | Double): Self = this.set("loadingSize", value.asInstanceOf[js.Any])
+    def setLoadingStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "loadingStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadingSize: Self = this.set("loadingSize", js.undefined)
+    def setLoadingStyleNull: Self = StObject.set(x, "loadingStyle", null)
     
     @scala.inline
-    def setLoadingStrokeWidth(value: Double): Self = this.set("loadingStrokeWidth", value.asInstanceOf[js.Any])
+    def setLoadingStyleUndefined: Self = StObject.set(x, "loadingStyle", js.undefined)
     
     @scala.inline
-    def deleteLoadingStrokeWidth: Self = this.set("loadingStrokeWidth", js.undefined)
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def setLoadingStyle(value: StyleProp[ViewStyle]): Self = this.set("loadingStyle", value.asInstanceOf[js.Any])
+    def setOnChange(value: (/* eventName */ String, /* args */ js.Any) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLoadingStyle: Self = this.set("loadingStyle", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setLoadingStyleNull: Self = this.set("loadingStyle", null)
+    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: (/* eventName */ String, /* args */ js.Any) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setShowUnderlay(value: Boolean): Self = StObject.set(x, "showUnderlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    def setShowUnderlayUndefined: Self = StObject.set(x, "showUnderlay", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowUnderlay(value: Boolean): Self = this.set("showUnderlay", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteShowUnderlay: Self = this.set("showUnderlay", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    def setTheme(value: BgBorder): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def setTextStyleNull: Self = this.set("textStyle", null)
+    def setType(value: primary | primaryGradient | primaryBorder | normal | small): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: BgBorder): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: primary | primaryGradient | primaryBorder | normal | small): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnderlayColor(value: String): Self = this.set("underlayColor", value.asInstanceOf[js.Any])
+    def setWrapperStyleNull: Self = StObject.set(x, "wrapperStyle", null)
     
     @scala.inline
-    def deleteUnderlayColor: Self = this.set("underlayColor", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyle(value: StyleProp[ViewStyle]): Self = this.set("wrapperStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapperStyle: Self = this.set("wrapperStyle", js.undefined)
-    
-    @scala.inline
-    def setWrapperStyleNull: Self = this.set("wrapperStyle", null)
+    def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
   }
 }

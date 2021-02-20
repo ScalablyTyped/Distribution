@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PlaybackBitrateChanged event. */
 @js.native
-trait AdaptiveMediaSourcePlaybackBitrateChangedEventArgs extends js.Object {
+trait AdaptiveMediaSourcePlaybackBitrateChangedEventArgs extends StObject {
   
   /** Gets a value indicating whether the media source contains only audio data. */
   var audioOnly: Boolean = js.native
@@ -26,27 +27,15 @@ object AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
   }
   
   @scala.inline
-  implicit class AdaptiveMediaSourcePlaybackBitrateChangedEventArgsOps[Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class AdaptiveMediaSourcePlaybackBitrateChangedEventArgsMutableBuilder[Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioOnly(value: Boolean): Self = StObject.set(x, "audioOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudioOnly(value: Boolean): Self = this.set("audioOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewValue(value: Double): Self = this.set("newValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldValue(value: Double): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

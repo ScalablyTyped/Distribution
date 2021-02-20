@@ -1,11 +1,12 @@
 package typings.jsforce.describeResultMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilteredLookupInfo extends js.Object {
+trait FilteredLookupInfo extends StObject {
   
   var controllingFields: js.Array[String] = js.native
   
@@ -22,30 +23,18 @@ object FilteredLookupInfo {
   }
   
   @scala.inline
-  implicit class FilteredLookupInfoOps[Self <: FilteredLookupInfo] (val x: Self) extends AnyVal {
+  implicit class FilteredLookupInfoMutableBuilder[Self <: FilteredLookupInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControllingFields(value: js.Array[String]): Self = StObject.set(x, "controllingFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllingFieldsVarargs(value: String*): Self = StObject.set(x, "controllingFields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependent(value: Boolean): Self = StObject.set(x, "dependent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllingFieldsVarargs(value: String*): Self = this.set("controllingFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setControllingFields(value: js.Array[String]): Self = this.set("controllingFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDependent(value: Boolean): Self = this.set("dependent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptionalFilter(value: Boolean): Self = this.set("optionalFilter", value.asInstanceOf[js.Any])
+    def setOptionalFilter(value: Boolean): Self = StObject.set(x, "optionalFilter", value.asInstanceOf[js.Any])
   }
 }

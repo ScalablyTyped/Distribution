@@ -2,12 +2,13 @@ package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditOperationBuilder extends js.Object {
+trait IEditOperationBuilder extends StObject {
   
   /**
     * Add a new edit operation (a replace operation).

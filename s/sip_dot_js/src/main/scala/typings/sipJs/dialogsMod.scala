@@ -10,14 +10,14 @@ import typings.sipJs.subscriptionSubscriptionMod.SubscriptionState
 import typings.sipJs.transactionsMod.InviteClientTransaction
 import typings.sipJs.transactionsMod.InviteServerTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/dialogs", JSImport.Namespace)
-@js.native
-object dialogsMod extends js.Object {
+object dialogsMod {
   
+  @JSImport("sip.js/lib/core/dialogs", "Dialog")
   @js.native
   class Dialog protected ()
     extends typings.sipJs.dialogMod.Dialog {
@@ -29,8 +29,7 @@ object dialogsMod extends js.Object {
     protected def this(core: UserAgentCore, dialogState: DialogState) = this()
   }
   /* static members */
-  @js.native
-  object Dialog extends js.Object {
+  object Dialog {
     
     /**
       * When a UAC receives a response that establishes a dialog, it
@@ -40,6 +39,8 @@ object dialogsMod extends js.Object {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
+    @JSImport("sip.js/lib/core/dialogs", "Dialog.initialDialogStateForUserAgentClient")
+    @js.native
     def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = js.native
     
     /**
@@ -49,10 +50,15 @@ object dialogsMod extends js.Object {
       * @param incomingRequestMessage - Incoming request message creating dialog.
       * @param toTag - Tag in the To field in the response to the incoming request.
       */
+    @JSImport("sip.js/lib/core/dialogs", "Dialog.initialDialogStateForUserAgentServer")
+    @js.native
     def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = js.native
+    @JSImport("sip.js/lib/core/dialogs", "Dialog.initialDialogStateForUserAgentServer")
+    @js.native
     def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = js.native
   }
   
+  @JSImport("sip.js/lib/core/dialogs", "SessionDialog")
   @js.native
   class SessionDialog protected ()
     extends typings.sipJs.sessionDialogMod.SessionDialog {
@@ -72,6 +78,7 @@ object dialogsMod extends js.Object {
     ) = this()
   }
   
+  @JSImport("sip.js/lib/core/dialogs", "SubscriptionDialog")
   @js.native
   class SubscriptionDialog protected ()
     extends typings.sipJs.subscriptionDialogMod.SubscriptionDialog {
@@ -92,8 +99,7 @@ object dialogsMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object SubscriptionDialog extends js.Object {
+  object SubscriptionDialog {
     
     /**
       * When a UAC receives a response that establishes a dialog, it
@@ -103,6 +109,8 @@ object dialogsMod extends js.Object {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
+    @JSImport("sip.js/lib/core/dialogs", "SubscriptionDialog.initialDialogStateForSubscription")
+    @js.native
     def initialDialogStateForSubscription(
       outgoingSubscribeRequestMessage: OutgoingRequestMessage,
       incomingNotifyRequestMessage: IncomingRequestMessage

@@ -18,13 +18,14 @@ import typings.angularCommon.anon.SetHeaders
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.FormData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpRequest")
 @js.native
-class HttpRequest[T] protected () extends js.Object {
+class HttpRequest[T] protected () extends StObject {
   def this(method: String, url: String) = this()
   def this(method: DELETE, url: String) = this()
   def this(method: GET, url: String) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverallVolume extends js.Object {
+trait OverallVolume extends StObject {
   
   /**
     * An object that contains inbox and junk mail placement metrics for individual email providers.
@@ -31,39 +32,27 @@ object OverallVolume {
   }
   
   @scala.inline
-  implicit class OverallVolumeOps[Self <: OverallVolume] (val x: Self) extends AnyVal {
+  implicit class OverallVolumeMutableBuilder[Self <: OverallVolume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainIspPlacements(value: DomainIspPlacements): Self = StObject.set(x, "DomainIspPlacements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainIspPlacementsUndefined: Self = StObject.set(x, "DomainIspPlacements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = StObject.set(x, "DomainIspPlacements", js.Array(value :_*))
     
     @scala.inline
-    def setDomainIspPlacementsVarargs(value: DomainIspPlacement*): Self = this.set("DomainIspPlacements", js.Array(value :_*))
+    def setReadRatePercent(value: Percentage): Self = StObject.set(x, "ReadRatePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainIspPlacements(value: DomainIspPlacements): Self = this.set("DomainIspPlacements", value.asInstanceOf[js.Any])
+    def setReadRatePercentUndefined: Self = StObject.set(x, "ReadRatePercent", js.undefined)
     
     @scala.inline
-    def deleteDomainIspPlacements: Self = this.set("DomainIspPlacements", js.undefined)
+    def setVolumeStatistics(value: VolumeStatistics): Self = StObject.set(x, "VolumeStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadRatePercent(value: Percentage): Self = this.set("ReadRatePercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadRatePercent: Self = this.set("ReadRatePercent", js.undefined)
-    
-    @scala.inline
-    def setVolumeStatistics(value: VolumeStatistics): Self = this.set("VolumeStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeStatistics: Self = this.set("VolumeStatistics", js.undefined)
+    def setVolumeStatisticsUndefined: Self = StObject.set(x, "VolumeStatistics", js.undefined)
   }
 }

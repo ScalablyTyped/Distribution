@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITransactionReceipt extends js.Object {
+trait ITransactionReceipt extends StObject {
   
   /** TransactionReceipt data */
   var data: js.UndefOr[js.Array[Uint8Array] | Null] = js.native
@@ -29,63 +30,51 @@ object ITransactionReceipt {
   }
   
   @scala.inline
-  implicit class ITransactionReceiptOps[Self <: ITransactionReceipt] (val x: Self) extends AnyVal {
+  implicit class ITransactionReceiptMutableBuilder[Self <: ITransactionReceipt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[Uint8Array]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataNull: Self = StObject.set(x, "data", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: Uint8Array*): Self = this.set("data", js.Array(value :_*))
+    def setDataVarargs(value: Uint8Array*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[Uint8Array]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEventsNull: Self = StObject.set(x, "events", null)
     
     @scala.inline
-    def setDataNull: Self = this.set("data", null)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setEventsVarargs(value: IEvent*): Self = this.set("events", js.Array(value :_*))
+    def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEvents(value: js.Array[IEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setStateChanges(value: js.Array[IStateChange]): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setStateChangesNull: Self = StObject.set(x, "stateChanges", null)
     
     @scala.inline
-    def setEventsNull: Self = this.set("events", null)
+    def setStateChangesUndefined: Self = StObject.set(x, "stateChanges", js.undefined)
     
     @scala.inline
-    def setStateChangesVarargs(value: IStateChange*): Self = this.set("stateChanges", js.Array(value :_*))
+    def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
     
     @scala.inline
-    def setStateChanges(value: js.Array[IStateChange]): Self = this.set("stateChanges", value.asInstanceOf[js.Any])
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStateChanges: Self = this.set("stateChanges", js.undefined)
+    def setTransactionIdNull: Self = StObject.set(x, "transactionId", null)
     
     @scala.inline
-    def setStateChangesNull: Self = this.set("stateChanges", null)
-    
-    @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
-    
-    @scala.inline
-    def setTransactionIdNull: Self = this.set("transactionId", null)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

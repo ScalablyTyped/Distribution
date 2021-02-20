@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * pool.
   */
 @js.native
-trait SchemaOutlierDetection extends js.Object {
+trait SchemaOutlierDetection extends StObject {
   
   /**
     * The base time that a host is ejected for. The real time is equal to the
@@ -104,84 +105,72 @@ object SchemaOutlierDetection {
   }
   
   @scala.inline
-  implicit class SchemaOutlierDetectionOps[Self <: SchemaOutlierDetection] (val x: Self) extends AnyVal {
+  implicit class SchemaOutlierDetectionMutableBuilder[Self <: SchemaOutlierDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseEjectionTime(value: SchemaDuration): Self = StObject.set(x, "baseEjectionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseEjectionTimeUndefined: Self = StObject.set(x, "baseEjectionTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsecutiveErrors(value: Double): Self = StObject.set(x, "consecutiveErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseEjectionTime(value: SchemaDuration): Self = this.set("baseEjectionTime", value.asInstanceOf[js.Any])
+    def setConsecutiveErrorsUndefined: Self = StObject.set(x, "consecutiveErrors", js.undefined)
     
     @scala.inline
-    def deleteBaseEjectionTime: Self = this.set("baseEjectionTime", js.undefined)
+    def setConsecutiveGatewayFailure(value: Double): Self = StObject.set(x, "consecutiveGatewayFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsecutiveErrors(value: Double): Self = this.set("consecutiveErrors", value.asInstanceOf[js.Any])
+    def setConsecutiveGatewayFailureUndefined: Self = StObject.set(x, "consecutiveGatewayFailure", js.undefined)
     
     @scala.inline
-    def deleteConsecutiveErrors: Self = this.set("consecutiveErrors", js.undefined)
+    def setEnforcingConsecutiveErrors(value: Double): Self = StObject.set(x, "enforcingConsecutiveErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsecutiveGatewayFailure(value: Double): Self = this.set("consecutiveGatewayFailure", value.asInstanceOf[js.Any])
+    def setEnforcingConsecutiveErrorsUndefined: Self = StObject.set(x, "enforcingConsecutiveErrors", js.undefined)
     
     @scala.inline
-    def deleteConsecutiveGatewayFailure: Self = this.set("consecutiveGatewayFailure", js.undefined)
+    def setEnforcingConsecutiveGatewayFailure(value: Double): Self = StObject.set(x, "enforcingConsecutiveGatewayFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforcingConsecutiveErrors(value: Double): Self = this.set("enforcingConsecutiveErrors", value.asInstanceOf[js.Any])
+    def setEnforcingConsecutiveGatewayFailureUndefined: Self = StObject.set(x, "enforcingConsecutiveGatewayFailure", js.undefined)
     
     @scala.inline
-    def deleteEnforcingConsecutiveErrors: Self = this.set("enforcingConsecutiveErrors", js.undefined)
+    def setEnforcingSuccessRate(value: Double): Self = StObject.set(x, "enforcingSuccessRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforcingConsecutiveGatewayFailure(value: Double): Self = this.set("enforcingConsecutiveGatewayFailure", value.asInstanceOf[js.Any])
+    def setEnforcingSuccessRateUndefined: Self = StObject.set(x, "enforcingSuccessRate", js.undefined)
     
     @scala.inline
-    def deleteEnforcingConsecutiveGatewayFailure: Self = this.set("enforcingConsecutiveGatewayFailure", js.undefined)
+    def setInterval(value: SchemaDuration): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforcingSuccessRate(value: Double): Self = this.set("enforcingSuccessRate", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteEnforcingSuccessRate: Self = this.set("enforcingSuccessRate", js.undefined)
+    def setMaxEjectionPercent(value: Double): Self = StObject.set(x, "maxEjectionPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: SchemaDuration): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setMaxEjectionPercentUndefined: Self = StObject.set(x, "maxEjectionPercent", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setSuccessRateMinimumHosts(value: Double): Self = StObject.set(x, "successRateMinimumHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEjectionPercent(value: Double): Self = this.set("maxEjectionPercent", value.asInstanceOf[js.Any])
+    def setSuccessRateMinimumHostsUndefined: Self = StObject.set(x, "successRateMinimumHosts", js.undefined)
     
     @scala.inline
-    def deleteMaxEjectionPercent: Self = this.set("maxEjectionPercent", js.undefined)
+    def setSuccessRateRequestVolume(value: Double): Self = StObject.set(x, "successRateRequestVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessRateMinimumHosts(value: Double): Self = this.set("successRateMinimumHosts", value.asInstanceOf[js.Any])
+    def setSuccessRateRequestVolumeUndefined: Self = StObject.set(x, "successRateRequestVolume", js.undefined)
     
     @scala.inline
-    def deleteSuccessRateMinimumHosts: Self = this.set("successRateMinimumHosts", js.undefined)
+    def setSuccessRateStdevFactor(value: Double): Self = StObject.set(x, "successRateStdevFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessRateRequestVolume(value: Double): Self = this.set("successRateRequestVolume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessRateRequestVolume: Self = this.set("successRateRequestVolume", js.undefined)
-    
-    @scala.inline
-    def setSuccessRateStdevFactor(value: Double): Self = this.set("successRateStdevFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessRateStdevFactor: Self = this.set("successRateStdevFactor", js.undefined)
+    def setSuccessRateStdevFactorUndefined: Self = StObject.set(x, "successRateStdevFactor", js.undefined)
   }
 }

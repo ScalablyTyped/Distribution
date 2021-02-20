@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreatePaymentRequest")
 @js.native
-class CreatePaymentRequest () extends js.Object {
+class CreatePaymentRequest () extends StObject {
   
   /**
     * If set to `true` and charging a Square Gift Card, a payment might be returned with `amount_money` equal to less than what was requested.

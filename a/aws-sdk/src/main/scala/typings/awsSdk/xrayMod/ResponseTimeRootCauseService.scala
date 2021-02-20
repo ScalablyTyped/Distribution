@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseTimeRootCauseService extends js.Object {
+trait ResponseTimeRootCauseService extends StObject {
   
   /**
     * The account ID associated to the service.
@@ -46,60 +47,48 @@ object ResponseTimeRootCauseService {
   }
   
   @scala.inline
-  implicit class ResponseTimeRootCauseServiceOps[Self <: ResponseTimeRootCauseService] (val x: Self) extends AnyVal {
+  implicit class ResponseTimeRootCauseServiceMutableBuilder[Self <: ResponseTimeRootCauseService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityPath(value: ResponseTimeRootCauseEntityPath): Self = StObject.set(x, "EntityPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setEntityPathUndefined: Self = StObject.set(x, "EntityPath", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setEntityPathVarargs(value: ResponseTimeRootCauseEntity*): Self = StObject.set(x, "EntityPath", js.Array(value :_*))
     
     @scala.inline
-    def setEntityPathVarargs(value: ResponseTimeRootCauseEntity*): Self = this.set("EntityPath", js.Array(value :_*))
+    def setInferred(value: NullableBoolean): Self = StObject.set(x, "Inferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityPath(value: ResponseTimeRootCauseEntityPath): Self = this.set("EntityPath", value.asInstanceOf[js.Any])
+    def setInferredUndefined: Self = StObject.set(x, "Inferred", js.undefined)
     
     @scala.inline
-    def deleteEntityPath: Self = this.set("EntityPath", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInferred(value: NullableBoolean): Self = this.set("Inferred", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteInferred: Self = this.set("Inferred", js.undefined)
+    def setNames(value: ServiceNames): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("Names", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: ServiceNames): Self = this.set("Names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNames: Self = this.set("Names", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

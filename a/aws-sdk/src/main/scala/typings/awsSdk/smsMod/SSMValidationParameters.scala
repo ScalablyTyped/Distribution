@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SSMValidationParameters extends js.Object {
+trait SSMValidationParameters extends StObject {
   
   /**
     * The command to run the validation script
@@ -46,54 +47,42 @@ object SSMValidationParameters {
   }
   
   @scala.inline
-  implicit class SSMValidationParametersOps[Self <: SSMValidationParameters] (val x: Self) extends AnyVal {
+  implicit class SSMValidationParametersMutableBuilder[Self <: SSMValidationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionTimeoutSeconds(value: ExecutionTimeoutSeconds): Self = StObject.set(x, "executionTimeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: Command): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setExecutionTimeoutSecondsUndefined: Self = StObject.set(x, "executionTimeoutSeconds", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTimeoutSeconds(value: ExecutionTimeoutSeconds): Self = this.set("executionTimeoutSeconds", value.asInstanceOf[js.Any])
+    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
     @scala.inline
-    def deleteExecutionTimeoutSeconds: Self = this.set("executionTimeoutSeconds", js.undefined)
+    def setOutputS3BucketName(value: BucketName): Self = StObject.set(x, "outputS3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    def setOutputS3BucketNameUndefined: Self = StObject.set(x, "outputS3BucketName", js.undefined)
     
     @scala.inline
-    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    def setScriptType(value: ScriptType): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3BucketName(value: BucketName): Self = this.set("outputS3BucketName", value.asInstanceOf[js.Any])
+    def setScriptTypeUndefined: Self = StObject.set(x, "scriptType", js.undefined)
     
     @scala.inline
-    def deleteOutputS3BucketName: Self = this.set("outputS3BucketName", js.undefined)
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScriptType(value: ScriptType): Self = this.set("scriptType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScriptType: Self = this.set("scriptType", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

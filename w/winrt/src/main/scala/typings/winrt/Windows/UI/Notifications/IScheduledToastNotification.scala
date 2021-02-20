@@ -2,12 +2,13 @@ package typings.winrt.Windows.UI.Notifications
 
 import typings.std.Date
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IScheduledToastNotification extends js.Object {
+trait IScheduledToastNotification extends StObject {
   
   var content: XmlDocument = js.native
   
@@ -34,33 +35,21 @@ object IScheduledToastNotification {
   }
   
   @scala.inline
-  implicit class IScheduledToastNotificationOps[Self <: IScheduledToastNotification] (val x: Self) extends AnyVal {
+  implicit class IScheduledToastNotificationMutableBuilder[Self <: IScheduledToastNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: XmlDocument): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setMaximumSnoozeCount(value: Double): Self = StObject.set(x, "maximumSnoozeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryTime(value: Date): Self = this.set("deliveryTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaximumSnoozeCount(value: Double): Self = this.set("maximumSnoozeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnoozeInterval(value: Double): Self = this.set("snoozeInterval", value.asInstanceOf[js.Any])
+    def setSnoozeInterval(value: Double): Self = StObject.set(x, "snoozeInterval", value.asInstanceOf[js.Any])
   }
 }

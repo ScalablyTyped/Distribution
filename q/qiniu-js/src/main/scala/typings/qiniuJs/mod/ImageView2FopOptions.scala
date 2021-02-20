@@ -10,6 +10,7 @@ import typings.qiniuJs.qiniuJsStrings.gif
 import typings.qiniuJs.qiniuJsStrings.jpg
 import typings.qiniuJs.qiniuJsStrings.png
 import typings.qiniuJs.qiniuJsStrings.webp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,21 +36,9 @@ object ImageView2FopOptions {
   }
   
   @scala.inline
-  implicit class ImageView2FopOptionsOps[Self <: ImageView2FopOptions] (val x: Self) extends AnyVal {
+  implicit class ImageView2FopOptionsMutableBuilder[Self <: ImageView2FopOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFop(value: typings.qiniuJs.qiniuJsStrings.imageView2): Self = this.set("fop", value.asInstanceOf[js.Any])
+    def setFop(value: typings.qiniuJs.qiniuJsStrings.imageView2): Self = StObject.set(x, "fop", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.sharepoint.anon
 
 import typings.sharepoint.SP.JsGrid.IChangeKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnyChanges extends js.Object {
+trait AnyChanges extends StObject {
   
   def AnyChanges(): Boolean = js.native
   

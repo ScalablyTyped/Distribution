@@ -1,11 +1,12 @@
 package typings.ssri.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Algorithms extends js.Object {
+trait Algorithms extends StObject {
   
   var algorithms: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,42 +23,30 @@ object Algorithms {
   }
   
   @scala.inline
-  implicit class AlgorithmsOps[Self <: Algorithms] (val x: Self) extends AnyVal {
+  implicit class AlgorithmsMutableBuilder[Self <: Algorithms] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
     
     @scala.inline
-    def setAlgorithmsVarargs(value: String*): Self = this.set("algorithms", js.Array(value :_*))
+    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithms(value: js.Array[String]): Self = this.set("algorithms", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteAlgorithms: Self = this.set("algorithms", js.undefined)
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[String]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

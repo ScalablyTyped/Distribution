@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobConfig extends js.Object {
+trait JobConfig extends StObject {
   
   /** List of ad breaks. Specifies where to insert ad break tags in the output manifests. */
   var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.native
@@ -46,102 +47,90 @@ object JobConfig {
   }
   
   @scala.inline
-  implicit class JobConfigOps[Self <: JobConfig] (val x: Self) extends AnyVal {
+  implicit class JobConfigMutableBuilder[Self <: JobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdBreaks(value: js.Array[AdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdBreaksUndefined: Self = StObject.set(x, "adBreaks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdBreaksVarargs(value: AdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value :_*))
     
     @scala.inline
-    def setAdBreaksVarargs(value: AdBreak*): Self = this.set("adBreaks", js.Array(value :_*))
+    def setEditList(value: js.Array[EditAtom]): Self = StObject.set(x, "editList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdBreaks(value: js.Array[AdBreak]): Self = this.set("adBreaks", value.asInstanceOf[js.Any])
+    def setEditListUndefined: Self = StObject.set(x, "editList", js.undefined)
     
     @scala.inline
-    def deleteAdBreaks: Self = this.set("adBreaks", js.undefined)
+    def setEditListVarargs(value: EditAtom*): Self = StObject.set(x, "editList", js.Array(value :_*))
     
     @scala.inline
-    def setEditListVarargs(value: EditAtom*): Self = this.set("editList", js.Array(value :_*))
+    def setElementaryStreams(value: js.Array[ElementaryStream]): Self = StObject.set(x, "elementaryStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditList(value: js.Array[EditAtom]): Self = this.set("editList", value.asInstanceOf[js.Any])
+    def setElementaryStreamsUndefined: Self = StObject.set(x, "elementaryStreams", js.undefined)
     
     @scala.inline
-    def deleteEditList: Self = this.set("editList", js.undefined)
+    def setElementaryStreamsVarargs(value: ElementaryStream*): Self = StObject.set(x, "elementaryStreams", js.Array(value :_*))
     
     @scala.inline
-    def setElementaryStreamsVarargs(value: ElementaryStream*): Self = this.set("elementaryStreams", js.Array(value :_*))
+    def setInputs(value: js.Array[Input]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementaryStreams(value: js.Array[ElementaryStream]): Self = this.set("elementaryStreams", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteElementaryStreams: Self = this.set("elementaryStreams", js.undefined)
+    def setInputsVarargs(value: Input*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: Input*): Self = this.set("inputs", js.Array(value :_*))
+    def setManifests(value: js.Array[Manifest]): Self = StObject.set(x, "manifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[Input]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setManifestsUndefined: Self = StObject.set(x, "manifests", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setManifestsVarargs(value: Manifest*): Self = StObject.set(x, "manifests", js.Array(value :_*))
     
     @scala.inline
-    def setManifestsVarargs(value: Manifest*): Self = this.set("manifests", js.Array(value :_*))
+    def setMuxStreams(value: js.Array[MuxStream]): Self = StObject.set(x, "muxStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifests(value: js.Array[Manifest]): Self = this.set("manifests", value.asInstanceOf[js.Any])
+    def setMuxStreamsUndefined: Self = StObject.set(x, "muxStreams", js.undefined)
     
     @scala.inline
-    def deleteManifests: Self = this.set("manifests", js.undefined)
+    def setMuxStreamsVarargs(value: MuxStream*): Self = StObject.set(x, "muxStreams", js.Array(value :_*))
     
     @scala.inline
-    def setMuxStreamsVarargs(value: MuxStream*): Self = this.set("muxStreams", js.Array(value :_*))
+    def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuxStreams(value: js.Array[MuxStream]): Self = this.set("muxStreams", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteMuxStreams: Self = this.set("muxStreams", js.undefined)
+    def setOverlays(value: js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: Output): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
     @scala.inline
-    def setOverlaysVarargs(value: Overlay*): Self = this.set("overlays", js.Array(value :_*))
+    def setPubsubDestination(value: PubsubDestination): Self = StObject.set(x, "pubsubDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlays(value: js.Array[Overlay]): Self = this.set("overlays", value.asInstanceOf[js.Any])
+    def setPubsubDestinationUndefined: Self = StObject.set(x, "pubsubDestination", js.undefined)
     
     @scala.inline
-    def deleteOverlays: Self = this.set("overlays", js.undefined)
+    def setSpriteSheets(value: js.Array[SpriteSheet]): Self = StObject.set(x, "spriteSheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsubDestination(value: PubsubDestination): Self = this.set("pubsubDestination", value.asInstanceOf[js.Any])
+    def setSpriteSheetsUndefined: Self = StObject.set(x, "spriteSheets", js.undefined)
     
     @scala.inline
-    def deletePubsubDestination: Self = this.set("pubsubDestination", js.undefined)
-    
-    @scala.inline
-    def setSpriteSheetsVarargs(value: SpriteSheet*): Self = this.set("spriteSheets", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpriteSheets(value: js.Array[SpriteSheet]): Self = this.set("spriteSheets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpriteSheets: Self = this.set("spriteSheets", js.undefined)
+    def setSpriteSheetsVarargs(value: SpriteSheet*): Self = StObject.set(x, "spriteSheets", js.Array(value :_*))
   }
 }

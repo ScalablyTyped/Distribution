@@ -8,14 +8,14 @@ import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.recognizerMod.Recognizer
 import typings.antlr4.tokenMod.Token
 import typings.antlr4.treeMod.ParseTreeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/Parser", JSImport.Namespace)
-@js.native
-object parserMod extends js.Object {
+object parserMod {
   
+  @JSImport("antlr4/Parser", "Parser")
   @js.native
   class Parser protected () extends Recognizer {
     def this(input: CommonTokenStream) = this()

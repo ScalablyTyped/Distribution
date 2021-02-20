@@ -1,5 +1,6 @@
 package typings.twitterForWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for additional configuration for all widgets.
   */
 @js.native
-trait TwitterWidgetOptions extends js.Object {
+trait TwitterWidgetOptions extends StObject {
   
   /**
     * Enable Do Not Track for this widget.
@@ -44,48 +45,36 @@ object TwitterWidgetOptions {
   }
   
   @scala.inline
-  implicit class TwitterWidgetOptionsOps[Self <: TwitterWidgetOptions] (val x: Self) extends AnyVal {
+  implicit class TwitterWidgetOptionsMutableBuilder[Self <: TwitterWidgetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnt(value: Boolean): Self = StObject.set(x, "dnt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDntUndefined: Self = StObject.set(x, "dnt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHashtags(value: String): Self = StObject.set(x, "hashtags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnt(value: Boolean): Self = this.set("dnt", value.asInstanceOf[js.Any])
+    def setHashtagsUndefined: Self = StObject.set(x, "hashtags", js.undefined)
     
     @scala.inline
-    def deleteDnt: Self = this.set("dnt", js.undefined)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashtags(value: String): Self = this.set("hashtags", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteHashtags: Self = this.set("hashtags", js.undefined)
+    def setRelated(value: String): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setRelatedUndefined: Self = StObject.set(x, "related", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelated(value: String): Self = this.set("related", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelated: Self = this.set("related", js.undefined)
-    
-    @scala.inline
-    def setVia(value: String): Self = this.set("via", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVia: Self = this.set("via", js.undefined)
+    def setViaUndefined: Self = StObject.set(x, "via", js.undefined)
   }
 }

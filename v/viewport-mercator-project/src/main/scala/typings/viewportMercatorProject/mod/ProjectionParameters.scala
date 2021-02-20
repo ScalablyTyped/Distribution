@@ -1,11 +1,12 @@
 package typings.viewportMercatorProject.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectionParameters extends js.Object {
+trait ProjectionParameters extends StObject {
   
   var aspect: Double = js.native
   
@@ -26,33 +27,21 @@ object ProjectionParameters {
   }
   
   @scala.inline
-  implicit class ProjectionParametersOps[Self <: ProjectionParameters] (val x: Self) extends AnyVal {
+  implicit class ProjectionParametersMutableBuilder[Self <: ProjectionParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocalDistance(value: Double): Self = StObject.set(x, "focalDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspect(value: Double): Self = this.set("aspect", value.asInstanceOf[js.Any])
+    def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFar(value: Double): Self = this.set("far", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocalDistance(value: Double): Self = this.set("focalDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFov(value: Double): Self = this.set("fov", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNear(value: Double): Self = this.set("near", value.asInstanceOf[js.Any])
+    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,11 @@
 package typings.wordpressBlockEditor.anon
 
-import org.scalablytyped.runtime.TopLevel
 import typings.react.mod.ForwardRefExoticComponent
 import typings.reactAutosizeTextarea.anon.PickHTMLPropsHTMLTextArea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofTextareaAutosize extends TopLevel[ForwardRefExoticComponent[PickHTMLPropsHTMLTextArea]]
+trait TypeofTextareaAutosize extends ForwardRefExoticComponent[PickHTMLPropsHTMLTextArea]

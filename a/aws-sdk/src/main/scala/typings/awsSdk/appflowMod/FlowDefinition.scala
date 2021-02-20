@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowDefinition extends js.Object {
+trait FlowDefinition extends StObject {
   
   /**
     *  Specifies when the flow was created. 
@@ -81,96 +82,84 @@ object FlowDefinition {
   }
   
   @scala.inline
-  implicit class FlowDefinitionOps[Self <: FlowDefinition] (val x: Self) extends AnyVal {
+  implicit class FlowDefinitionMutableBuilder[Self <: FlowDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Date): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setDescription(value: FlowDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: CreatedBy): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setDestinationConnectorType(value: ConnectorType): Self = StObject.set(x, "destinationConnectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: FlowDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDestinationConnectorTypeUndefined: Self = StObject.set(x, "destinationConnectorType", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFlowArn(value: FlowArn): Self = StObject.set(x, "flowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationConnectorType(value: ConnectorType): Self = this.set("destinationConnectorType", value.asInstanceOf[js.Any])
+    def setFlowArnUndefined: Self = StObject.set(x, "flowArn", js.undefined)
     
     @scala.inline
-    def deleteDestinationConnectorType: Self = this.set("destinationConnectorType", js.undefined)
+    def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowArn(value: FlowArn): Self = this.set("flowArn", value.asInstanceOf[js.Any])
+    def setFlowNameUndefined: Self = StObject.set(x, "flowName", js.undefined)
     
     @scala.inline
-    def deleteFlowArn: Self = this.set("flowArn", js.undefined)
+    def setFlowStatus(value: FlowStatus): Self = StObject.set(x, "flowStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowName(value: FlowName): Self = this.set("flowName", value.asInstanceOf[js.Any])
+    def setFlowStatusUndefined: Self = StObject.set(x, "flowStatus", js.undefined)
     
     @scala.inline
-    def deleteFlowName: Self = this.set("flowName", js.undefined)
+    def setLastRunExecutionDetails(value: ExecutionDetails): Self = StObject.set(x, "lastRunExecutionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowStatus(value: FlowStatus): Self = this.set("flowStatus", value.asInstanceOf[js.Any])
+    def setLastRunExecutionDetailsUndefined: Self = StObject.set(x, "lastRunExecutionDetails", js.undefined)
     
     @scala.inline
-    def deleteFlowStatus: Self = this.set("flowStatus", js.undefined)
+    def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunExecutionDetails(value: ExecutionDetails): Self = this.set("lastRunExecutionDetails", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteLastRunExecutionDetails: Self = this.set("lastRunExecutionDetails", js.undefined)
+    def setLastUpdatedBy(value: UpdatedBy): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: Date): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setLastUpdatedByUndefined: Self = StObject.set(x, "lastUpdatedBy", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setSourceConnectorType(value: ConnectorType): Self = StObject.set(x, "sourceConnectorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedBy(value: UpdatedBy): Self = this.set("lastUpdatedBy", value.asInstanceOf[js.Any])
+    def setSourceConnectorTypeUndefined: Self = StObject.set(x, "sourceConnectorType", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedBy: Self = this.set("lastUpdatedBy", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceConnectorType(value: ConnectorType): Self = this.set("sourceConnectorType", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSourceConnectorType: Self = this.set("sourceConnectorType", js.undefined)
+    def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTriggerType(value: TriggerType): Self = this.set("triggerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerType: Self = this.set("triggerType", js.undefined)
+    def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

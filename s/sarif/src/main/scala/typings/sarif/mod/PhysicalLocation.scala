@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhysicalLocation extends js.Object {
+trait PhysicalLocation extends StObject {
   
   /**
     * The address of the location.
@@ -42,48 +43,36 @@ object PhysicalLocation {
   }
   
   @scala.inline
-  implicit class PhysicalLocationOps[Self <: PhysicalLocation] (val x: Self) extends AnyVal {
+  implicit class PhysicalLocationMutableBuilder[Self <: PhysicalLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArtifactLocation(value: ArtifactLocation): Self = StObject.set(x, "artifactLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: Address): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setArtifactLocationUndefined: Self = StObject.set(x, "artifactLocation", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setContextRegion(value: Region): Self = StObject.set(x, "contextRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactLocation(value: ArtifactLocation): Self = this.set("artifactLocation", value.asInstanceOf[js.Any])
+    def setContextRegionUndefined: Self = StObject.set(x, "contextRegion", js.undefined)
     
     @scala.inline
-    def deleteArtifactLocation: Self = this.set("artifactLocation", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextRegion(value: Region): Self = this.set("contextRegion", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteContextRegion: Self = this.set("contextRegion", js.undefined)
+    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

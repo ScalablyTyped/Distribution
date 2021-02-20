@@ -3,14 +3,14 @@ package typings.pulumiKubernetes
 import typings.pulumiKubernetes.v3HelmMod.ChartOpts
 import typings.pulumiKubernetes.v3HelmMod.LocalChartOpts
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/helm/v3", JSImport.Namespace)
-@js.native
-object v3Mod extends js.Object {
+object v3Mod {
   
+  @JSImport("@pulumi/kubernetes/helm/v3", "Chart")
   @js.native
   class Chart protected ()
     extends typings.pulumiKubernetes.v3HelmMod.Chart {

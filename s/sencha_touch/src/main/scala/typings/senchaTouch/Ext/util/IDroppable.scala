@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,104 +79,92 @@ object IDroppable {
   }
   
   @scala.inline
-  implicit class IDroppableOps[Self <: IDroppable] (val x: Self) extends AnyVal {
+  implicit class IDroppableMutableBuilder[Self <: IDroppable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCls(value: String): Self = StObject.set(x, "activeCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveClsUndefined: Self = StObject.set(x, "activeCls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseCls(value: String): Self = StObject.set(x, "baseCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCls(value: String): Self = this.set("activeCls", value.asInstanceOf[js.Any])
+    def setBaseClsUndefined: Self = StObject.set(x, "baseCls", js.undefined)
     
     @scala.inline
-    def deleteActiveCls: Self = this.set("activeCls", js.undefined)
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBaseCls(value: String): Self = this.set("baseCls", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteBaseCls: Self = this.set("baseCls", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setGetBaseCls(value: () => String): Self = StObject.set(x, "getBaseCls", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setGetBaseClsUndefined: Self = StObject.set(x, "getBaseCls", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBaseCls(value: () => String): Self = this.set("getBaseCls", js.Any.fromFunction0(value))
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteGetBaseCls: Self = this.set("getBaseCls", js.undefined)
+    def setHoverCls(value: String): Self = StObject.set(x, "hoverCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setHoverClsUndefined: Self = StObject.set(x, "hoverCls", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setInvalidCls(value: String): Self = StObject.set(x, "invalidCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverCls(value: String): Self = this.set("hoverCls", value.asInstanceOf[js.Any])
+    def setInvalidClsUndefined: Self = StObject.set(x, "invalidCls", js.undefined)
     
     @scala.inline
-    def deleteHoverCls: Self = this.set("hoverCls", js.undefined)
+    def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInvalidCls(value: String): Self = this.set("invalidCls", value.asInstanceOf[js.Any])
+    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
     @scala.inline
-    def deleteInvalidCls: Self = this.set("invalidCls", js.undefined)
+    def setIsMonitoring(value: () => Boolean): Self = StObject.set(x, "isMonitoring", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDisabled(value: () => Boolean): Self = this.set("isDisabled", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
-    
-    @scala.inline
-    def setIsMonitoring(value: () => Boolean): Self = this.set("isMonitoring", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsMonitoring: Self = this.set("isMonitoring", js.undefined)
+    def setIsMonitoringUndefined: Self = StObject.set(x, "isMonitoring", js.undefined)
     
     @scala.inline
     def setRelayEvents(
       value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
-    ): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     @scala.inline
-    def setSetBaseCls(value: /* baseCls */ js.UndefOr[String] => Unit): Self = this.set("setBaseCls", js.Any.fromFunction1(value))
+    def setSetBaseCls(value: /* baseCls */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setBaseCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetBaseCls: Self = this.set("setBaseCls", js.undefined)
+    def setSetBaseClsUndefined: Self = StObject.set(x, "setBaseCls", js.undefined)
     
     @scala.inline
-    def setValidDropMode(value: String): Self = this.set("validDropMode", value.asInstanceOf[js.Any])
+    def setValidDropMode(value: String): Self = StObject.set(x, "validDropMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidDropMode: Self = this.set("validDropMode", js.undefined)
+    def setValidDropModeUndefined: Self = StObject.set(x, "validDropMode", js.undefined)
   }
 }

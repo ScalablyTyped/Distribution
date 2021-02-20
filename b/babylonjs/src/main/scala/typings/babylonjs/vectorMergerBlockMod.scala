@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/vectorMergerBlock", JSImport.Namespace)
-@js.native
-object vectorMergerBlockMod extends js.Object {
+object vectorMergerBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/vectorMergerBlock", "VectorMergerBlock")
   @js.native
   class VectorMergerBlock protected () extends NodeMaterialBlock {
     /**

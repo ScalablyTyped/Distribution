@@ -2,12 +2,13 @@ package typings.mfiles
 
 import typings.mfiles.MFiles.MFOfflineTransitionResultFlags
 import typings.mfiles.MFiles.MFOnlineTransitionResultFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultClientOperations extends js.Object {
+trait IVaultClientOperations extends StObject {
   
   def DisableCheckInReminderForCallingProcess(): Unit = js.native
   
@@ -37,36 +38,24 @@ object IVaultClientOperations {
   }
   
   @scala.inline
-  implicit class IVaultClientOperationsOps[Self <: IVaultClientOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultClientOperationsMutableBuilder[Self <: IVaultClientOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "DisableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableCheckInReminderForCallingProcess(value: () => Unit): Self = StObject.set(x, "EnableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOffline(value: () => Boolean): Self = StObject.set(x, "IsOffline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisableCheckInReminderForCallingProcess(value: () => Unit): Self = this.set("DisableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
+    def setIsOnline(value: () => Boolean): Self = StObject.set(x, "IsOnline", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnableCheckInReminderForCallingProcess(value: () => Unit): Self = this.set("EnableCheckInReminderForCallingProcess", js.Any.fromFunction0(value))
+    def setSetVaultToOffline(value: Double => MFOfflineTransitionResultFlags): Self = StObject.set(x, "SetVaultToOffline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsOffline(value: () => Boolean): Self = this.set("IsOffline", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOnline(value: () => Boolean): Self = this.set("IsOnline", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetVaultToOffline(value: Double => MFOfflineTransitionResultFlags): Self = this.set("SetVaultToOffline", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVaultToOnline(value: Double => MFOnlineTransitionResultFlags): Self = this.set("SetVaultToOnline", js.Any.fromFunction1(value))
+    def setSetVaultToOnline(value: Double => MFOnlineTransitionResultFlags): Self = StObject.set(x, "SetVaultToOnline", js.Any.fromFunction1(value))
   }
 }

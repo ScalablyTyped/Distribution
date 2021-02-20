@@ -1,11 +1,12 @@
 package typings.gldatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlDatePicker extends js.Object {
+trait GlDatePicker extends StObject {
   
   def hide(): Unit = js.native
   

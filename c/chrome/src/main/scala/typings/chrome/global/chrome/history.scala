@@ -7,6 +7,7 @@ import typings.chrome.chrome.history.HistoryVisitedEvent
 import typings.chrome.chrome.history.Range
 import typings.chrome.chrome.history.Url
 import typings.chrome.chrome.history.VisitItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,25 +20,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Availability: Since Chrome 5.
   * Permissions:  "history"
   */
-@JSGlobal("chrome.history")
-@js.native
-object history extends js.Object {
+object history {
   
+  @JSGlobal("chrome.history")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("chrome.history.addUrl")
+  @js.native
   def addUrl(details: Url): Unit = js.native
+  @JSGlobal("chrome.history.addUrl")
+  @js.native
   def addUrl(details: Url, callback: js.Function0[Unit]): Unit = js.native
   
+  @JSGlobal("chrome.history.deleteAll")
+  @js.native
   def deleteAll(callback: js.Function0[Unit]): Unit = js.native
   
+  @JSGlobal("chrome.history.deleteRange")
+  @js.native
   def deleteRange(range: Range, callback: js.Function0[Unit]): Unit = js.native
   
+  @JSGlobal("chrome.history.deleteUrl")
+  @js.native
   def deleteUrl(details: Url): Unit = js.native
+  @JSGlobal("chrome.history.deleteUrl")
+  @js.native
   def deleteUrl(details: Url, callback: js.Function0[Unit]): Unit = js.native
   
+  @JSGlobal("chrome.history.getVisits")
+  @js.native
   def getVisits(details: Url, callback: js.Function1[/* results */ js.Array[VisitItem], Unit]): Unit = js.native
   
-  var onVisitRemoved: HistoryVisitRemovedEvent = js.native
+  @JSGlobal("chrome.history.onVisitRemoved")
+  @js.native
+  def onVisitRemoved: HistoryVisitRemovedEvent = js.native
+  @scala.inline
+  def onVisitRemoved_=(x: HistoryVisitRemovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onVisitRemoved")(x.asInstanceOf[js.Any])
   
-  var onVisited: HistoryVisitedEvent = js.native
+  @JSGlobal("chrome.history.onVisited")
+  @js.native
+  def onVisited: HistoryVisitedEvent = js.native
+  @scala.inline
+  def onVisited_=(x: HistoryVisitedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onVisited")(x.asInstanceOf[js.Any])
   
+  @JSGlobal("chrome.history.search")
+  @js.native
   def search(query: HistoryQuery, callback: js.Function1[/* results */ js.Array[HistoryItem], Unit]): Unit = js.native
 }

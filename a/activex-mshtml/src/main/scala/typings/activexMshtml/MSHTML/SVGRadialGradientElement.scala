@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGRadialGradientElement extends js.Object {
+trait SVGRadialGradientElement extends StObject {
   
   @JSName("MSHTML.SVGRadialGradientElement_typekey")
   var MSHTMLDotSVGRadialGradientElement_typekey: SVGRadialGradientElement = js.native
@@ -67,66 +68,54 @@ object SVGRadialGradientElement {
   }
   
   @scala.inline
-  implicit class SVGRadialGradientElementOps[Self <: SVGRadialGradientElement] (val x: Self) extends AnyVal {
+  implicit class SVGRadialGradientElementMutableBuilder[Self <: SVGRadialGradientElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCx(value: SVGAnimatedLength): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCy(value: SVGAnimatedLength): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotSVGRadialGradientElement_typekey(value: SVGRadialGradientElement): Self = this.set("MSHTML.SVGRadialGradientElement_typekey", value.asInstanceOf[js.Any])
+    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = StObject.set(x, "externalResourcesRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: SVGAnimatedString): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCx(value: SVGAnimatedLength): Self = this.set("cx", value.asInstanceOf[js.Any])
+    def setFx(value: SVGAnimatedLength): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCy(value: SVGAnimatedLength): Self = this.set("cy", value.asInstanceOf[js.Any])
+    def setFy(value: SVGAnimatedLength): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalResourcesRequired(value: SVGAnimatedBoolean): Self = this.set("externalResourcesRequired", value.asInstanceOf[js.Any])
+    def setGradientTransform(value: SVGAnimatedTransformList): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    def setGradientUnits(value: SVGAnimatedEnumeration): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFx(value: SVGAnimatedLength): Self = this.set("fx", value.asInstanceOf[js.Any])
+    def setHref(value: SVGAnimatedString): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFy(value: SVGAnimatedLength): Self = this.set("fy", value.asInstanceOf[js.Any])
+    def setMSHTMLDotSVGRadialGradientElement_typekey(value: SVGRadialGradientElement): Self = StObject.set(x, "MSHTML.SVGRadialGradientElement_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientTransform(value: SVGAnimatedTransformList): Self = this.set("gradientTransform", value.asInstanceOf[js.Any])
+    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientUnits(value: SVGAnimatedEnumeration): Self = this.set("gradientUnits", value.asInstanceOf[js.Any])
+    def setR(value: SVGAnimatedLength): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: SVGAnimatedString): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setSpreadMethod(value: SVGAnimatedEnumeration): Self = StObject.set(x, "spreadMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = this.set("ownerSVGElement", value.asInstanceOf[js.Any])
+    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setR(value: SVGAnimatedLength): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpreadMethod(value: SVGAnimatedEnumeration): Self = this.set("spreadMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = this.set("viewportElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlbase(value: String): Self = this.set("xmlbase", value.asInstanceOf[js.Any])
+    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
   }
 }

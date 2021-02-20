@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiCallDetails extends js.Object {
+trait ApiCallDetails extends StObject {
   
   /**
     * The name of the operation that was invoked most recently and produced the finding.
@@ -36,42 +37,30 @@ object ApiCallDetails {
   }
   
   @scala.inline
-  implicit class ApiCallDetailsOps[Self <: ApiCallDetails] (val x: Self) extends AnyVal {
+  implicit class ApiCallDetailsMutableBuilder[Self <: ApiCallDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: string): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiServiceName(value: string): Self = StObject.set(x, "apiServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiServiceNameUndefined: Self = StObject.set(x, "apiServiceName", js.undefined)
     
     @scala.inline
-    def setApi(value: string): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
+    def setFirstSeen(value: timestampIso8601): Self = StObject.set(x, "firstSeen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiServiceName(value: string): Self = this.set("apiServiceName", value.asInstanceOf[js.Any])
+    def setFirstSeenUndefined: Self = StObject.set(x, "firstSeen", js.undefined)
     
     @scala.inline
-    def deleteApiServiceName: Self = this.set("apiServiceName", js.undefined)
+    def setLastSeen(value: timestampIso8601): Self = StObject.set(x, "lastSeen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSeen(value: timestampIso8601): Self = this.set("firstSeen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirstSeen: Self = this.set("firstSeen", js.undefined)
-    
-    @scala.inline
-    def setLastSeen(value: timestampIso8601): Self = this.set("lastSeen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastSeen: Self = this.set("lastSeen", js.undefined)
+    def setLastSeenUndefined: Self = StObject.set(x, "lastSeen", js.undefined)
   }
 }

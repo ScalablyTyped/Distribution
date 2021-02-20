@@ -2,12 +2,13 @@ package typings.vscodeLanguageserver.mod
 
 import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ApplyWorkspaceEditResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _RemoteWorkspace extends js.Object {
+trait _RemoteWorkspace extends StObject {
   
   /**
     * Applies a `WorkspaceEdit` to the workspace

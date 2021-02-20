@@ -4,6 +4,7 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
 import typings.angularForms.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,10 +101,16 @@ class NgModel protected ()
   var viewModel: js.Any = js.native
 }
 /* static members */
-@JSImport("@angular/forms", "NgModel")
-@js.native
-object NgModel extends js.Object {
+object NgModel {
+  
+  @JSImport("@angular/forms", "NgModel")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nodoc */
-  var ngAcceptInputType_isDisabled: Boolean | String = js.native
+  @JSImport("@angular/forms", "NgModel.ngAcceptInputType_isDisabled")
+  @js.native
+  def ngAcceptInputType_isDisabled: Boolean | String = js.native
+  @scala.inline
+  def ngAcceptInputType_isDisabled_=(x: Boolean | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngAcceptInputType_isDisabled")(x.asInstanceOf[js.Any])
 }

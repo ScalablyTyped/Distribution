@@ -1,11 +1,12 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStroke extends js.Object {
+trait IStroke extends StObject {
   
   var cap: String = js.native
   
@@ -38,42 +39,30 @@ object IStroke {
   }
   
   @scala.inline
-  implicit class IStrokeOps[Self <: IStroke] (val x: Self) extends AnyVal {
+  implicit class IStrokeMutableBuilder[Self <: IStroke] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCap(value: String): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCap(value: String): Self = this.set("cap", value.asInstanceOf[js.Any])
+    def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
     
     @scala.inline
-    def setChart(value: IChart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashVarargs(value: Double*): Self = this.set("dash", js.Array(value :_*))
+    def setGradient(value: IGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: js.Array[Double]): Self = this.set("dash", value.asInstanceOf[js.Any])
+    def setJoin(value: String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGradient(value: IGradient): Self = this.set("gradient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJoin(value: String): Self = this.set("join", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

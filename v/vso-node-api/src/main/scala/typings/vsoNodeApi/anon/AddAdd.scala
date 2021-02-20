@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddAdd extends js.Object {
+trait AddAdd extends StObject {
   
   var addAdd: scala.Double = js.native
   
@@ -62,63 +63,51 @@ object AddAdd {
   }
   
   @scala.inline
-  implicit class AddAddOps[Self <: AddAdd] (val x: Self) extends AnyVal {
+  implicit class AddAddMutableBuilder[Self <: AddAdd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAdd(value: scala.Double): Self = StObject.set(x, "addAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRename(value: scala.Double): Self = StObject.set(x, "addRename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteEdit(value: scala.Double): Self = StObject.set(x, "deleteEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAdd(value: scala.Double): Self = this.set("addAdd", value.asInstanceOf[js.Any])
+    def setDeleteRename(value: scala.Double): Self = StObject.set(x, "deleteRename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddRename(value: scala.Double): Self = this.set("addRename", value.asInstanceOf[js.Any])
+    def setDirectoryChild(value: scala.Double): Self = StObject.set(x, "directoryChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteEdit(value: scala.Double): Self = this.set("deleteEdit", value.asInstanceOf[js.Any])
+    def setDirectoryFile(value: scala.Double): Self = StObject.set(x, "directoryFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRename(value: scala.Double): Self = this.set("deleteRename", value.asInstanceOf[js.Any])
+    def setEditDelete(value: scala.Double): Self = StObject.set(x, "editDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryChild(value: scala.Double): Self = this.set("directoryChild", value.asInstanceOf[js.Any])
+    def setEditEdit(value: scala.Double): Self = StObject.set(x, "editEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryFile(value: scala.Double): Self = this.set("directoryFile", value.asInstanceOf[js.Any])
+    def setFileDirectory(value: scala.Double): Self = StObject.set(x, "fileDirectory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditDelete(value: scala.Double): Self = this.set("editDelete", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditEdit(value: scala.Double): Self = this.set("editEdit", value.asInstanceOf[js.Any])
+    def setRename1to2(value: scala.Double): Self = StObject.set(x, "rename1to2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileDirectory(value: scala.Double): Self = this.set("fileDirectory", value.asInstanceOf[js.Any])
+    def setRename2to1(value: scala.Double): Self = StObject.set(x, "rename2to1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setRenameAdd(value: scala.Double): Self = StObject.set(x, "renameAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRename1to2(value: scala.Double): Self = this.set("rename1to2", value.asInstanceOf[js.Any])
+    def setRenameDelete(value: scala.Double): Self = StObject.set(x, "renameDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRename2to1(value: scala.Double): Self = this.set("rename2to1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenameAdd(value: scala.Double): Self = this.set("renameAdd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenameDelete(value: scala.Double): Self = this.set("renameDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenameRename(value: scala.Double): Self = this.set("renameRename", value.asInstanceOf[js.Any])
+    def setRenameRename(value: scala.Double): Self = StObject.set(x, "renameRename", value.asInstanceOf[js.Any])
   }
 }

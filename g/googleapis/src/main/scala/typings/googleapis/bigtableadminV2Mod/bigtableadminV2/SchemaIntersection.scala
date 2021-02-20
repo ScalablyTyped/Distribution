@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A GcRule which deletes cells matching all of the given rules.
   */
 @js.native
-trait SchemaIntersection extends js.Object {
+trait SchemaIntersection extends StObject {
   
   /**
     * Only delete cells which would be deleted by every element of `rules`.
@@ -24,27 +25,15 @@ object SchemaIntersection {
   }
   
   @scala.inline
-  implicit class SchemaIntersectionOps[Self <: SchemaIntersection] (val x: Self) extends AnyVal {
+  implicit class SchemaIntersectionMutableBuilder[Self <: SchemaIntersection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRules(value: js.Array[SchemaGcRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRulesVarargs(value: SchemaGcRule*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[SchemaGcRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

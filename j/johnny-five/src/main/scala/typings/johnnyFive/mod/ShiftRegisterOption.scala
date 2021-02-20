@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShiftRegisterOption extends js.Object {
+trait ShiftRegisterOption extends StObject {
   
   var isAnode: js.UndefOr[Boolean] = js.native
   
@@ -20,27 +21,15 @@ object ShiftRegisterOption {
   }
   
   @scala.inline
-  implicit class ShiftRegisterOptionOps[Self <: ShiftRegisterOption] (val x: Self) extends AnyVal {
+  implicit class ShiftRegisterOptionMutableBuilder[Self <: ShiftRegisterOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAnode(value: Boolean): Self = StObject.set(x, "isAnode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPins(value: js.Any): Self = this.set("pins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsAnode(value: Boolean): Self = this.set("isAnode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsAnode: Self = this.set("isAnode", js.undefined)
+    def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
   }
 }

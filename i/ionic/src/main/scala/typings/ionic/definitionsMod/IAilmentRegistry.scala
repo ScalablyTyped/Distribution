@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAilmentRegistry extends js.Object {
+trait IAilmentRegistry extends StObject {
   
   var ailments: js.Array[IAilment] = js.native
   
@@ -22,30 +23,18 @@ object IAilmentRegistry {
   }
   
   @scala.inline
-  implicit class IAilmentRegistryOps[Self <: IAilmentRegistry] (val x: Self) extends AnyVal {
+  implicit class IAilmentRegistryMutableBuilder[Self <: IAilmentRegistry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAilments(value: js.Array[IAilment]): Self = StObject.set(x, "ailments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAilmentsVarargs(value: IAilment*): Self = StObject.set(x, "ailments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: String => js.UndefOr[IAilment]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAilmentsVarargs(value: IAilment*): Self = this.set("ailments", js.Array(value :_*))
-    
-    @scala.inline
-    def setAilments(value: js.Array[IAilment]): Self = this.set("ailments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGet(value: String => js.UndefOr[IAilment]): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegister(value: IAilment => Unit): Self = this.set("register", js.Any.fromFunction1(value))
+    def setRegister(value: IAilment => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }
 }

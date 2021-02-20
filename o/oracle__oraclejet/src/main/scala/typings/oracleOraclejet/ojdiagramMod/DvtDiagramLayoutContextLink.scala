@@ -9,12 +9,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.left
 import typings.oracleOraclejet.oracleOraclejetStrings.middle
 import typings.oracleOraclejet.oracleOraclejetStrings.right
 import typings.oracleOraclejet.oracleOraclejetStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DvtDiagramLayoutContextLink extends js.Object {
+trait DvtDiagramLayoutContextLink extends StObject {
   
   def getCoordinateSpace(): js.Any = js.native
   

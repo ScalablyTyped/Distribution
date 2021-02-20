@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListThreadsResponse extends js.Object {
+trait ListThreadsResponse extends StObject {
   
   /** Page token to retrieve the next page of results in the list. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object ListThreadsResponse {
   }
   
   @scala.inline
-  implicit class ListThreadsResponseOps[Self <: ListThreadsResponse] (val x: Self) extends AnyVal {
+  implicit class ListThreadsResponseMutableBuilder[Self <: ListThreadsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setThreads(value: js.Array[Thread]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSizeEstimate(value: Double): Self = this.set("resultSizeEstimate", value.asInstanceOf[js.Any])
+    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
     @scala.inline
-    def deleteResultSizeEstimate: Self = this.set("resultSizeEstimate", js.undefined)
-    
-    @scala.inline
-    def setThreadsVarargs(value: Thread*): Self = this.set("threads", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreads(value: js.Array[Thread]): Self = this.set("threads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreads: Self = this.set("threads", js.undefined)
+    def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value :_*))
   }
 }

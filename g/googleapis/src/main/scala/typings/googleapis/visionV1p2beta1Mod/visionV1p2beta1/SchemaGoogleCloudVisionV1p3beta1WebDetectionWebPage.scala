@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata for web pages.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage extends js.Object {
+trait SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage extends StObject {
   
   /**
     * Fully matching images on the page. Can include resized copies of the
@@ -47,54 +48,42 @@ object SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPageOps[Self <: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPageMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = StObject.set(x, "fullMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullMatchingImagesUndefined: Self = StObject.set(x, "fullMatchingImages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = StObject.set(x, "fullMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setFullMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = this.set("fullMatchingImages", js.Array(value :_*))
+    def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = this.set("fullMatchingImages", value.asInstanceOf[js.Any])
+    def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
     
     @scala.inline
-    def deleteFullMatchingImages: Self = this.set("fullMatchingImages", js.undefined)
+    def setPartialMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = StObject.set(x, "partialMatchingImages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageTitle(value: String): Self = this.set("pageTitle", value.asInstanceOf[js.Any])
+    def setPartialMatchingImagesUndefined: Self = StObject.set(x, "partialMatchingImages", js.undefined)
     
     @scala.inline
-    def deletePageTitle: Self = this.set("pageTitle", js.undefined)
+    def setPartialMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = StObject.set(x, "partialMatchingImages", js.Array(value :_*))
     
     @scala.inline
-    def setPartialMatchingImagesVarargs(value: SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage*): Self = this.set("partialMatchingImages", js.Array(value :_*))
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialMatchingImages(value: js.Array[SchemaGoogleCloudVisionV1p3beta1WebDetectionWebImage]): Self = this.set("partialMatchingImages", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deletePartialMatchingImages: Self = this.set("partialMatchingImages", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

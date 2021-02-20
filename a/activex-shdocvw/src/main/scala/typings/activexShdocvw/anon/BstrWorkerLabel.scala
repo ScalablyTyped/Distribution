@@ -1,11 +1,12 @@
 package typings.activexShdocvw.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BstrWorkerLabel extends js.Object {
+trait BstrWorkerLabel extends StObject {
   
   val bstrWorkerLabel: String = js.native
   
@@ -20,24 +21,12 @@ object BstrWorkerLabel {
   }
   
   @scala.inline
-  implicit class BstrWorkerLabelOps[Self <: BstrWorkerLabel] (val x: Self) extends AnyVal {
+  implicit class BstrWorkerLabelMutableBuilder[Self <: BstrWorkerLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBstrWorkerLabel(value: String): Self = StObject.set(x, "bstrWorkerLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBstrWorkerLabel(value: String): Self = this.set("bstrWorkerLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDwUniqueID(value: Double): Self = this.set("dwUniqueID", value.asInstanceOf[js.Any])
+    def setDwUniqueID(value: Double): Self = StObject.set(x, "dwUniqueID", value.asInstanceOf[js.Any])
   }
 }

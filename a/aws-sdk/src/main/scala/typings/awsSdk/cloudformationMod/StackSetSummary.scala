@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackSetSummary extends js.Object {
+trait StackSetSummary extends StObject {
   
   /**
     * [Service-managed permissions] Describes whether StackSets automatically deploys to AWS Organizations accounts that are added to a target organizational unit (OU).
@@ -56,66 +57,54 @@ object StackSetSummary {
   }
   
   @scala.inline
-  implicit class StackSetSummaryOps[Self <: StackSetSummary] (val x: Self) extends AnyVal {
+  implicit class StackSetSummaryMutableBuilder[Self <: StackSetSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDeployment(value: AutoDeployment): Self = StObject.set(x, "AutoDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoDeploymentUndefined: Self = StObject.set(x, "AutoDeployment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDeployment(value: AutoDeployment): Self = this.set("AutoDeployment", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteAutoDeployment: Self = this.set("AutoDeployment", js.undefined)
+    def setDriftStatus(value: StackDriftStatus): Self = StObject.set(x, "DriftStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDriftStatusUndefined: Self = StObject.set(x, "DriftStatus", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastDriftCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftStatus(value: StackDriftStatus): Self = this.set("DriftStatus", value.asInstanceOf[js.Any])
+    def setLastDriftCheckTimestampUndefined: Self = StObject.set(x, "LastDriftCheckTimestamp", js.undefined)
     
     @scala.inline
-    def deleteDriftStatus: Self = this.set("DriftStatus", js.undefined)
+    def setPermissionModel(value: PermissionModels): Self = StObject.set(x, "PermissionModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDriftCheckTimestamp(value: Timestamp): Self = this.set("LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
+    def setPermissionModelUndefined: Self = StObject.set(x, "PermissionModel", js.undefined)
     
     @scala.inline
-    def deleteLastDriftCheckTimestamp: Self = this.set("LastDriftCheckTimestamp", js.undefined)
+    def setStackSetId(value: StackSetId): Self = StObject.set(x, "StackSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionModel(value: PermissionModels): Self = this.set("PermissionModel", value.asInstanceOf[js.Any])
+    def setStackSetIdUndefined: Self = StObject.set(x, "StackSetId", js.undefined)
     
     @scala.inline
-    def deletePermissionModel: Self = this.set("PermissionModel", js.undefined)
+    def setStackSetName(value: StackSetName): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetId(value: StackSetId): Self = this.set("StackSetId", value.asInstanceOf[js.Any])
+    def setStackSetNameUndefined: Self = StObject.set(x, "StackSetName", js.undefined)
     
     @scala.inline
-    def deleteStackSetId: Self = this.set("StackSetId", js.undefined)
+    def setStatus(value: StackSetStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackSetName: Self = this.set("StackSetName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: StackSetStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

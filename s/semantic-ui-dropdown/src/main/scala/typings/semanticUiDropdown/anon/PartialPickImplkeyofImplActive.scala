@@ -1,12 +1,13 @@
 package typings.semanticUiDropdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.ClassNameSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.Dropdown.ClassNameSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplActive extends js.Object {
+trait PartialPickImplkeyofImplActive extends StObject {
   
   var active: js.UndefOr[String] = js.native
   
@@ -55,132 +56,120 @@ object PartialPickImplkeyofImplActive {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplActiveOps[Self <: PartialPickImplkeyofImplActive] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplActiveMutableBuilder[Self <: PartialPickImplkeyofImplActive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAdditionUndefined: Self = StObject.set(x, "addition", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddition(value: String): Self = this.set("addition", value.asInstanceOf[js.Any])
+    def setAnimatingUndefined: Self = StObject.set(x, "animating", js.undefined)
     
     @scala.inline
-    def deleteAddition: Self = this.set("addition", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimating(value: String): Self = this.set("animating", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteAnimating: Self = this.set("animating", js.undefined)
+    def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFiltered(value: String): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdown(value: String): Self = this.set("dropdown", value.asInstanceOf[js.Any])
+    def setFilteredUndefined: Self = StObject.set(x, "filtered", js.undefined)
     
     @scala.inline
-    def deleteDropdown: Self = this.set("dropdown", js.undefined)
+    def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltered(value: String): Self = this.set("filtered", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteFiltered: Self = this.set("filtered", js.undefined)
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: String): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: String): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
+    def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: String): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setUpward(value: String): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: String): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setUpwardUndefined: Self = StObject.set(x, "upward", js.undefined)
     
     @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
+    def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpward(value: String): Self = this.set("upward", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpward: Self = this.set("upward", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: String): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

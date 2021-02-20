@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlApplicationConfiguration extends js.Object {
+trait SqlApplicationConfiguration extends StObject {
   
   /**
     * The array of Input objects describing the input streams used by the application.
@@ -31,45 +32,33 @@ object SqlApplicationConfiguration {
   }
   
   @scala.inline
-  implicit class SqlApplicationConfigurationOps[Self <: SqlApplicationConfiguration] (val x: Self) extends AnyVal {
+  implicit class SqlApplicationConfigurationMutableBuilder[Self <: SqlApplicationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputs(value: Inputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: Input*): Self = this.set("Inputs", js.Array(value :_*))
+    def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: Inputs): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: Output*): Self = this.set("Outputs", js.Array(value :_*))
+    def setReferenceDataSources(value: ReferenceDataSources): Self = StObject.set(x, "ReferenceDataSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: Outputs): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    def setReferenceDataSourcesUndefined: Self = StObject.set(x, "ReferenceDataSources", js.undefined)
     
     @scala.inline
-    def deleteOutputs: Self = this.set("Outputs", js.undefined)
-    
-    @scala.inline
-    def setReferenceDataSourcesVarargs(value: ReferenceDataSource*): Self = this.set("ReferenceDataSources", js.Array(value :_*))
-    
-    @scala.inline
-    def setReferenceDataSources(value: ReferenceDataSources): Self = this.set("ReferenceDataSources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceDataSources: Self = this.set("ReferenceDataSources", js.undefined)
+    def setReferenceDataSourcesVarargs(value: ReferenceDataSource*): Self = StObject.set(x, "ReferenceDataSources", js.Array(value :_*))
   }
 }

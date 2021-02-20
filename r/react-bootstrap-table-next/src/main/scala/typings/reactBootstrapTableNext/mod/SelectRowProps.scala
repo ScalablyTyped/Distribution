@@ -9,12 +9,13 @@ import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.left
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.right
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectRowProps[T] extends js.Object {
+trait SelectRowProps[T] extends StObject {
   
   var bgColor: js.UndefOr[js.Function2[/* row */ T, /* rowIndex */ Double, String]] = js.native
   
@@ -89,167 +90,155 @@ object SelectRowProps {
   }
   
   @scala.inline
-  implicit class SelectRowPropsOps[Self <: SelectRowProps[_], T] (val x: Self with SelectRowProps[T]) extends AnyVal {
+  implicit class SelectRowPropsMutableBuilder[Self <: SelectRowProps[_], T] (val x: Self with SelectRowProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBgColor(value: (/* row */ T, /* rowIndex */ Double) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClasses(value: (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: RowSelectionType): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setClassesFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[String]): Self = StObject.set(x, "classes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBgColor(value: (/* row */ T, /* rowIndex */ Double) => String): Self = this.set("bgColor", js.Any.fromFunction2(value))
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    def setClickToEdit(value: Boolean): Self = StObject.set(x, "clickToEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassesFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[String]): Self = this.set("classes", js.Any.fromFunction2(value))
+    def setClickToEditUndefined: Self = StObject.set(x, "clickToEdit", js.undefined)
     
     @scala.inline
-    def setClasses(value: (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String): Self = this.set("classes", value.asInstanceOf[js.Any])
+    def setClickToExpand(value: Boolean): Self = StObject.set(x, "clickToExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
+    def setClickToExpandUndefined: Self = StObject.set(x, "clickToExpand", js.undefined)
     
     @scala.inline
-    def setClickToEdit(value: Boolean): Self = this.set("clickToEdit", value.asInstanceOf[js.Any])
+    def setClickToSelect(value: Boolean): Self = StObject.set(x, "clickToSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickToEdit: Self = this.set("clickToEdit", js.undefined)
+    def setClickToSelectUndefined: Self = StObject.set(x, "clickToSelect", js.undefined)
     
     @scala.inline
-    def setClickToExpand(value: Boolean): Self = this.set("clickToExpand", value.asInstanceOf[js.Any])
+    def setHeaderColumnStyle(value: (js.Function1[/* status */ TableCheckboxStatus, js.UndefOr[CSSProperties]]) | CSSProperties): Self = StObject.set(x, "headerColumnStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickToExpand: Self = this.set("clickToExpand", js.undefined)
+    def setHeaderColumnStyleFunction1(value: /* status */ TableCheckboxStatus => js.UndefOr[CSSProperties]): Self = StObject.set(x, "headerColumnStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClickToSelect(value: Boolean): Self = this.set("clickToSelect", value.asInstanceOf[js.Any])
+    def setHeaderColumnStyleUndefined: Self = StObject.set(x, "headerColumnStyle", js.undefined)
     
     @scala.inline
-    def deleteClickToSelect: Self = this.set("clickToSelect", js.undefined)
+    def setHideSelectAll(value: Boolean): Self = StObject.set(x, "hideSelectAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderColumnStyleFunction1(value: /* status */ TableCheckboxStatus => js.UndefOr[CSSProperties]): Self = this.set("headerColumnStyle", js.Any.fromFunction1(value))
+    def setHideSelectAllUndefined: Self = StObject.set(x, "hideSelectAll", js.undefined)
     
     @scala.inline
-    def setHeaderColumnStyle(value: (js.Function1[/* status */ TableCheckboxStatus, js.UndefOr[CSSProperties]]) | CSSProperties): Self = this.set("headerColumnStyle", value.asInstanceOf[js.Any])
+    def setHideSelectColumn(value: Boolean): Self = StObject.set(x, "hideSelectColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderColumnStyle: Self = this.set("headerColumnStyle", js.undefined)
+    def setHideSelectColumnUndefined: Self = StObject.set(x, "hideSelectColumn", js.undefined)
     
     @scala.inline
-    def setHideSelectAll(value: Boolean): Self = this.set("hideSelectAll", value.asInstanceOf[js.Any])
+    def setMode(value: RowSelectionType): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideSelectAll: Self = this.set("hideSelectAll", js.undefined)
+    def setNonSelectable(value: js.Array[Double]): Self = StObject.set(x, "nonSelectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideSelectColumn(value: Boolean): Self = this.set("hideSelectColumn", value.asInstanceOf[js.Any])
+    def setNonSelectableClasses(value: (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String): Self = StObject.set(x, "nonSelectableClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideSelectColumn: Self = this.set("hideSelectColumn", js.undefined)
+    def setNonSelectableClassesFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[String]): Self = StObject.set(x, "nonSelectableClasses", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNonSelectableVarargs(value: Double*): Self = this.set("nonSelectable", js.Array(value :_*))
-    
-    @scala.inline
-    def setNonSelectable(value: js.Array[Double]): Self = this.set("nonSelectable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonSelectable: Self = this.set("nonSelectable", js.undefined)
-    
-    @scala.inline
-    def setNonSelectableClassesFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[String]): Self = this.set("nonSelectableClasses", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNonSelectableClasses(value: (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String): Self = this.set("nonSelectableClasses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonSelectableClasses: Self = this.set("nonSelectableClasses", js.undefined)
-    
-    @scala.inline
-    def setNonSelectableStyleFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[CSSProperties]): Self = this.set("nonSelectableStyle", js.Any.fromFunction2(value))
+    def setNonSelectableClassesUndefined: Self = StObject.set(x, "nonSelectableClasses", js.undefined)
     
     @scala.inline
     def setNonSelectableStyle(
       value: (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[CSSProperties]]) | CSSProperties
-    ): Self = this.set("nonSelectableStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "nonSelectableStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNonSelectableStyle: Self = this.set("nonSelectableStyle", js.undefined)
+    def setNonSelectableStyleFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[CSSProperties]): Self = StObject.set(x, "nonSelectableStyle", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setNonSelectableStyleUndefined: Self = StObject.set(x, "nonSelectableStyle", js.undefined)
+    
+    @scala.inline
+    def setNonSelectableUndefined: Self = StObject.set(x, "nonSelectable", js.undefined)
+    
+    @scala.inline
+    def setNonSelectableVarargs(value: Double*): Self = StObject.set(x, "nonSelectable", js.Array(value :_*))
     
     @scala.inline
     def setOnSelect(
       value: (/* row */ T, /* isSelected */ Boolean, /* rowIndex */ Double, /* e */ SyntheticEvent[Element, Event]) => Unit | Boolean
-    ): Self = this.set("onSelect", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    ): Self = StObject.set(x, "onSelect", js.Any.fromFunction4(value))
     
     @scala.inline
     def setOnSelectAll(
       value: (/* isSelect */ Boolean, /* rows */ js.Array[T], /* e */ SyntheticEvent[Element, Event]) => Unit | js.Array[Double]
-    ): Self = this.set("onSelectAll", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnSelectAll: Self = this.set("onSelectAll", js.undefined)
+    def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
     
     @scala.inline
-    def setSelectColumnPosition(value: left | right): Self = this.set("selectColumnPosition", value.asInstanceOf[js.Any])
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def deleteSelectColumnPosition: Self = this.set("selectColumnPosition", js.undefined)
+    def setSelectColumnPosition(value: left | right): Self = StObject.set(x, "selectColumnPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectColumnStyleFunction1(value: /* props */ Disabled => js.UndefOr[CSSProperties]): Self = this.set("selectColumnStyle", js.Any.fromFunction1(value))
+    def setSelectColumnPositionUndefined: Self = StObject.set(x, "selectColumnPosition", js.undefined)
     
     @scala.inline
-    def setSelectColumnStyle(value: (js.Function1[/* props */ Disabled, js.UndefOr[CSSProperties]]) | CSSProperties): Self = this.set("selectColumnStyle", value.asInstanceOf[js.Any])
+    def setSelectColumnStyle(value: (js.Function1[/* props */ Disabled, js.UndefOr[CSSProperties]]) | CSSProperties): Self = StObject.set(x, "selectColumnStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectColumnStyle: Self = this.set("selectColumnStyle", js.undefined)
+    def setSelectColumnStyleFunction1(value: /* props */ Disabled => js.UndefOr[CSSProperties]): Self = StObject.set(x, "selectColumnStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedVarargs(value: (Double | String)*): Self = this.set("selected", js.Array(value :_*))
+    def setSelectColumnStyleUndefined: Self = StObject.set(x, "selectColumnStyle", js.undefined)
     
     @scala.inline
-    def setSelected(value: js.Array[Double | String]): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: js.Array[Double | String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def setSelectionHeaderRenderer(value: /* options */ Indeterminate => typings.react.mod.global.JSX.Element): Self = this.set("selectionHeaderRenderer", js.Any.fromFunction1(value))
+    def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value :_*))
     
     @scala.inline
-    def deleteSelectionHeaderRenderer: Self = this.set("selectionHeaderRenderer", js.undefined)
+    def setSelectionHeaderRenderer(value: /* options */ Indeterminate => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "selectionHeaderRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectionRenderer(value: /* options */ Checked => typings.react.mod.global.JSX.Element): Self = this.set("selectionRenderer", js.Any.fromFunction1(value))
+    def setSelectionHeaderRendererUndefined: Self = StObject.set(x, "selectionHeaderRenderer", js.undefined)
     
     @scala.inline
-    def deleteSelectionRenderer: Self = this.set("selectionRenderer", js.undefined)
+    def setSelectionRenderer(value: /* options */ Checked => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStyleFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[CSSProperties]): Self = this.set("style", js.Any.fromFunction2(value))
+    def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
     
     @scala.inline
     def setStyle(
       value: (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[CSSProperties]]) | CSSProperties
-    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleFunction2(value: (/* row */ T, /* rowIndex */ Double) => js.UndefOr[CSSProperties]): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

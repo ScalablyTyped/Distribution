@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   /** An optional list of additional attributes to attach to each Cloud PubSub message published for this notification subscription. */
   var custom_attributes: js.UndefOr[
@@ -48,79 +49,67 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCustom_attributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification with TopLevel[js.Any]
-    ): Self = this.set("custom_attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustom_attributes: Self = this.set("custom_attributes", js.undefined)
+    def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def setEvent_typesVarargs(value: String*): Self = this.set("event_types", js.Array(value :_*))
+    def setEvent_types(value: js.Array[String]): Self = StObject.set(x, "event_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_types(value: js.Array[String]): Self = this.set("event_types", value.asInstanceOf[js.Any])
+    def setEvent_typesUndefined: Self = StObject.set(x, "event_types", js.undefined)
     
     @scala.inline
-    def deleteEvent_types: Self = this.set("event_types", js.undefined)
+    def setEvent_typesVarargs(value: String*): Self = StObject.set(x, "event_types", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setObject_name_prefix(value: String): Self = this.set("object_name_prefix", value.asInstanceOf[js.Any])
+    def setObject_name_prefix(value: String): Self = StObject.set(x, "object_name_prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObject_name_prefix: Self = this.set("object_name_prefix", js.undefined)
+    def setObject_name_prefixUndefined: Self = StObject.set(x, "object_name_prefix", js.undefined)
     
     @scala.inline
-    def setPayload_format(value: String): Self = this.set("payload_format", value.asInstanceOf[js.Any])
+    def setPayload_format(value: String): Self = StObject.set(x, "payload_format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload_format: Self = this.set("payload_format", js.undefined)
+    def setPayload_formatUndefined: Self = StObject.set(x, "payload_format", js.undefined)
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

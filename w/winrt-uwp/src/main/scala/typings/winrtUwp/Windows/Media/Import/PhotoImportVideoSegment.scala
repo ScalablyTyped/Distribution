@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Import
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an imported video segment. */
 @js.native
-trait PhotoImportVideoSegment extends js.Object {
+trait PhotoImportVideoSegment extends StObject {
   
   /** Gets the date of the imported video segment. */
   var date: Date = js.native
@@ -40,33 +41,21 @@ object PhotoImportVideoSegment {
   }
   
   @scala.inline
-  implicit class PhotoImportVideoSegmentOps[Self <: PhotoImportVideoSegment] (val x: Self) extends AnyVal {
+  implicit class PhotoImportVideoSegmentMutableBuilder[Self <: PhotoImportVideoSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSibling(value: PhotoImportSidecar): Self = this.set("sibling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = this.set("sidecars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizeInBytes(value: Double): Self = this.set("sizeInBytes", value.asInstanceOf[js.Any])
+    def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
   }
 }

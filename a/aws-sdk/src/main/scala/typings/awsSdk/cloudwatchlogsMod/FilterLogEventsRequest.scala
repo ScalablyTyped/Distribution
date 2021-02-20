@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterLogEventsRequest extends js.Object {
+trait FilterLogEventsRequest extends StObject {
   
   /**
     * The end of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not returned.
@@ -61,72 +62,60 @@ object FilterLogEventsRequest {
   }
   
   @scala.inline
-  implicit class FilterLogEventsRequestOps[Self <: FilterLogEventsRequest] (val x: Self) extends AnyVal {
+  implicit class FilterLogEventsRequestMutableBuilder[Self <: FilterLogEventsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    def setFilterPatternUndefined: Self = StObject.set(x, "filterPattern", js.undefined)
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setInterleaved(value: Interleaved): Self = StObject.set(x, "interleaved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setInterleavedUndefined: Self = StObject.set(x, "interleaved", js.undefined)
     
     @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    def setLimit(value: EventsLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterPattern: Self = this.set("filterPattern", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setInterleaved(value: Interleaved): Self = this.set("interleaved", value.asInstanceOf[js.Any])
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInterleaved: Self = this.set("interleaved", js.undefined)
+    def setLogStreamNamePrefix(value: LogStreamName): Self = StObject.set(x, "logStreamNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: EventsLimit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setLogStreamNamePrefixUndefined: Self = StObject.set(x, "logStreamNamePrefix", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setLogStreamNames(value: InputLogStreamNames): Self = StObject.set(x, "logStreamNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStreamNamePrefix(value: LogStreamName): Self = this.set("logStreamNamePrefix", value.asInstanceOf[js.Any])
+    def setLogStreamNamesUndefined: Self = StObject.set(x, "logStreamNames", js.undefined)
     
     @scala.inline
-    def deleteLogStreamNamePrefix: Self = this.set("logStreamNamePrefix", js.undefined)
+    def setLogStreamNamesVarargs(value: LogStreamName*): Self = StObject.set(x, "logStreamNames", js.Array(value :_*))
     
     @scala.inline
-    def setLogStreamNamesVarargs(value: LogStreamName*): Self = this.set("logStreamNames", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStreamNames(value: InputLogStreamNames): Self = this.set("logStreamNames", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteLogStreamNames: Self = this.set("logStreamNames", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

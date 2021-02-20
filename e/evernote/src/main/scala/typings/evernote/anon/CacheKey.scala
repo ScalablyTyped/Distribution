@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.evernote.mod.NoteStore.NoteFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CacheKey extends js.Object {
+trait CacheKey extends StObject {
   
   var cacheKey: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object CacheKey {
   }
   
   @scala.inline
-  implicit class CacheKeyOps[Self <: CacheKey] (val x: Self) extends AnyVal {
+  implicit class CacheKeyMutableBuilder[Self <: CacheKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheKey(value: String): Self = this.set("cacheKey", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCacheKey: Self = this.set("cacheKey", js.undefined)
+    def setFilter(value: NoteFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setNoteGuid(value: String): Self = StObject.set(x, "noteGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: NoteFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setNoteGuidUndefined: Self = StObject.set(x, "noteGuid", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setPlainText(value: String): Self = StObject.set(x, "plainText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteGuid(value: String): Self = this.set("noteGuid", value.asInstanceOf[js.Any])
+    def setPlainTextUndefined: Self = StObject.set(x, "plainText", js.undefined)
     
     @scala.inline
-    def deleteNoteGuid: Self = this.set("noteGuid", js.undefined)
+    def setReferenceUri(value: String): Self = StObject.set(x, "referenceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlainText(value: String): Self = this.set("plainText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlainText: Self = this.set("plainText", js.undefined)
-    
-    @scala.inline
-    def setReferenceUri(value: String): Self = this.set("referenceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceUri: Self = this.set("referenceUri", js.undefined)
+    def setReferenceUriUndefined: Self = StObject.set(x, "referenceUri", js.undefined)
   }
 }

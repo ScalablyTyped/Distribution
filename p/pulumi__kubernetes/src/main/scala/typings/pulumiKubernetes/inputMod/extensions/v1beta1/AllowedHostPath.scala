@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.extensions.v1beta1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AllowedHostPath defines the host volume conditions that will be enabled by a policy for pods to use. It requires the path prefix to be defined. Deprecated: use AllowedHostPath from policy API Group instead.
   */
 @js.native
-trait AllowedHostPath extends js.Object {
+trait AllowedHostPath extends StObject {
   
   /**
     * pathPrefix is the path prefix that the host volume must match. It does not support `*`. Trailing slashes are trimmed when validating the path prefix with a host path.
@@ -32,30 +33,18 @@ object AllowedHostPath {
   }
   
   @scala.inline
-  implicit class AllowedHostPathOps[Self <: AllowedHostPath] (val x: Self) extends AnyVal {
+  implicit class AllowedHostPathMutableBuilder[Self <: AllowedHostPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPathPrefix(value: Input[String]): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathPrefixUndefined: Self = StObject.set(x, "pathPrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPrefix(value: Input[String]): Self = this.set("pathPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathPrefix: Self = this.set("pathPrefix", js.undefined)
-    
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
   }
 }

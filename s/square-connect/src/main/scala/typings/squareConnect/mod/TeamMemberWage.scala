@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "TeamMemberWage")
 @js.native
-class TeamMemberWage () extends js.Object {
+class TeamMemberWage () extends StObject {
   
   /**
     * Can be a custom-set hourly wage or the calculated effective hourly wage based on annual wage and hours worked per week.

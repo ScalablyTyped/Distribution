@@ -7,6 +7,7 @@ import typings.oracleOraclejet.ojdatetimepickerMod.ojDatePicker.ojAnimateStart
 import typings.oracleOraclejet.oracleOraclejetStrings.disabled
 import typings.oracleOraclejet.oracleOraclejetStrings.jet
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,7 @@ trait ojDatePicker extends ojInputDate[ojDatePickerSettableProperties] {
   
   def setProperties(properties: ojDatePickerSettablePropertiesLenient): Unit = js.native
 }
-@JSImport("@oracle/oraclejet/ojdatetimepicker", "ojDatePicker")
-@js.native
-object ojDatePicker extends js.Object {
+object ojDatePicker {
   
   type ojAnimateEnd = CustomEvent[Action]
   

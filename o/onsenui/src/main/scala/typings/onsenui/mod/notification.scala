@@ -1,6 +1,7 @@
 package typings.onsenui.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @description Utility methods to create different kinds of alert dialogs. There are three methods available: alert, confirm and prompt
   */
-@JSImport("onsenui", "notification")
-@js.native
-object notification extends js.Object {
+object notification {
   
   /**
     * @param {Object} options Parameter object
@@ -27,9 +26,17 @@ object notification extends js.Object {
     *   The content of the message can be either simple text or HTML
     *   Must specify either message or messageHTML
     */
+  @JSImport("onsenui", "notification.alert")
+  @js.native
   def alert(message: String): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.alert")
+  @js.native
   def alert(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.alert")
+  @js.native
   def alert(message: AlertOptions): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.alert")
+  @js.native
   def alert(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
   
   /**
@@ -51,9 +58,17 @@ object notification extends js.Object {
     *   The default button labels are "Cancel" and "OK" but they can be customized
     *   Must specify either message or messageHTML
     */
+  @JSImport("onsenui", "notification.confirm")
+  @js.native
   def confirm(message: String): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.confirm")
+  @js.native
   def confirm(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.confirm")
+  @js.native
   def confirm(message: AlertOptions): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.confirm")
+  @js.native
   def confirm(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
   
   /**
@@ -74,10 +89,20 @@ object notification extends js.Object {
     *   Display a dialog with a prompt to ask the user a question
     *   Must specify either message or messageHTML
     */
+  @JSImport("onsenui", "notification.prompt")
+  @js.native
   def prompt(message: String): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.prompt")
+  @js.native
   def prompt(message: String, options: AlertOptions): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.prompt")
+  @js.native
   def prompt(message: AlertOptions): js.Promise[HTMLElement] = js.native
+  @JSImport("onsenui", "notification.prompt")
+  @js.native
   def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = js.native
   
+  @JSImport("onsenui", "notification.toast")
+  @js.native
   def toast(args: js.Any*): js.Any = js.native
 }

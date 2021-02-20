@@ -2,12 +2,13 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Util extends js.Object {
+trait Util extends StObject {
   
   def countdown(
     endtime: Double,

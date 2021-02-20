@@ -19,13 +19,14 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.gestureStart
 import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionEnd
 import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionStart
 import typings.tuyaPanelKit.typesMod.EventArg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/native.NavigationHelpers<tuya-panel-kit.tuya-panel-kit/@react-navigation/native.ParamListBase, tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap> & tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackActionHelpers<tuya-panel-kit.tuya-panel-kit/@react-navigation/native.ParamListBase> */
 @js.native
-trait StackNavigationHelpers extends js.Object {
+trait StackNavigationHelpers extends StObject {
   
   /**
     * UGLY HACK! DO NOT USE THE TYPE!!!

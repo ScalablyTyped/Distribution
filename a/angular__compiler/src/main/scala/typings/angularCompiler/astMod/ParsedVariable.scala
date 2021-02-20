@@ -1,13 +1,14 @@
 package typings.angularCompiler.astMod
 
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "ParsedVariable")
 @js.native
-class ParsedVariable protected () extends js.Object {
+class ParsedVariable protected () extends StObject {
   def this(name: String, value: String, sourceSpan: ParseSourceSpan, keySpan: ParseSourceSpan) = this()
   def this(
     name: String,

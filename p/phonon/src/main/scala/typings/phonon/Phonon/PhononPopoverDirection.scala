@@ -1,5 +1,6 @@
 package typings.phonon.Phonon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.phonon.phononStrings.right
   - typings.phonon.phononStrings.title
 */
-trait PhononPopoverDirection extends js.Object
+trait PhononPopoverDirection extends StObject
 object PhononPopoverDirection {
   
   @scala.inline

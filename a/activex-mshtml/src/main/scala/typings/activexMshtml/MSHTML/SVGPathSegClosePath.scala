@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGPathSegClosePath extends js.Object {
+trait SVGPathSegClosePath extends StObject {
   
   @JSName("MSHTML.SVGPathSegClosePath_typekey")
   var MSHTMLDotSVGPathSegClosePath_typekey: SVGPathSegClosePath = js.native
@@ -28,27 +29,15 @@ object SVGPathSegClosePath {
   }
   
   @scala.inline
-  implicit class SVGPathSegClosePathOps[Self <: SVGPathSegClosePath] (val x: Self) extends AnyVal {
+  implicit class SVGPathSegClosePathMutableBuilder[Self <: SVGPathSegClosePath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMSHTMLDotSVGPathSegClosePath_typekey(value: SVGPathSegClosePath): Self = StObject.set(x, "MSHTML.SVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathSegType(value: Double): Self = StObject.set(x, "pathSegType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotSVGPathSegClosePath_typekey(value: SVGPathSegClosePath): Self = this.set("MSHTML.SVGPathSegClosePath_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathSegType(value: Double): Self = this.set("pathSegType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathSegTypeAsLetter(value: String): Self = this.set("pathSegTypeAsLetter", value.asInstanceOf[js.Any])
+    def setPathSegTypeAsLetter(value: String): Self = StObject.set(x, "pathSegTypeAsLetter", value.asInstanceOf[js.Any])
   }
 }

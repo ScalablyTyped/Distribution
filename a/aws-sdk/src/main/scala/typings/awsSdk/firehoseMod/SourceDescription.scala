@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceDescription extends js.Object {
+trait SourceDescription extends StObject {
   
   /**
     * The KinesisStreamSourceDescription value for the source Kinesis data stream.
@@ -21,24 +22,12 @@ object SourceDescription {
   }
   
   @scala.inline
-  implicit class SourceDescriptionOps[Self <: SourceDescription] (val x: Self) extends AnyVal {
+  implicit class SourceDescriptionMutableBuilder[Self <: SourceDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKinesisStreamSourceDescription(value: KinesisStreamSourceDescription): Self = StObject.set(x, "KinesisStreamSourceDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKinesisStreamSourceDescription(value: KinesisStreamSourceDescription): Self = this.set("KinesisStreamSourceDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKinesisStreamSourceDescription: Self = this.set("KinesisStreamSourceDescription", js.undefined)
+    def setKinesisStreamSourceDescriptionUndefined: Self = StObject.set(x, "KinesisStreamSourceDescription", js.undefined)
   }
 }

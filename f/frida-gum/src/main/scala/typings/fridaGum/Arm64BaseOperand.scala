@@ -1,12 +1,13 @@
 package typings.fridaGum
 
 import typings.fridaGum.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Arm64BaseOperand extends js.Object {
+trait Arm64BaseOperand extends StObject {
   
   var ext: js.UndefOr[Arm64Extender] = js.native
   
@@ -25,42 +26,30 @@ object Arm64BaseOperand {
   }
   
   @scala.inline
-  implicit class Arm64BaseOperandOps[Self <: Arm64BaseOperand] (val x: Self) extends AnyVal {
+  implicit class Arm64BaseOperandMutableBuilder[Self <: Arm64BaseOperand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExt(value: Arm64Extender): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShift(value: Value): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: Arm64Extender): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
     
     @scala.inline
-    def deleteExt: Self = this.set("ext", js.undefined)
+    def setVas(value: Arm64Vas): Self = StObject.set(x, "vas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShift(value: Value): Self = this.set("shift", value.asInstanceOf[js.Any])
+    def setVasUndefined: Self = StObject.set(x, "vas", js.undefined)
     
     @scala.inline
-    def deleteShift: Self = this.set("shift", js.undefined)
+    def setVectorIndex(value: Double): Self = StObject.set(x, "vectorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVas(value: Arm64Vas): Self = this.set("vas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVas: Self = this.set("vas", js.undefined)
-    
-    @scala.inline
-    def setVectorIndex(value: Double): Self = this.set("vectorIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVectorIndex: Self = this.set("vectorIndex", js.undefined)
+    def setVectorIndexUndefined: Self = StObject.set(x, "vectorIndex", js.undefined)
   }
 }

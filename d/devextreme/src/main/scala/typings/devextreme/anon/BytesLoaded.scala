@@ -4,12 +4,13 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxFileUploader
 import typings.std.XMLHttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BytesLoaded extends js.Object {
+trait BytesLoaded extends StObject {
   
   var bytesLoaded: js.UndefOr[Double] = js.native
   
@@ -38,72 +39,60 @@ object BytesLoaded {
   }
   
   @scala.inline
-  implicit class BytesLoadedOps[Self <: BytesLoaded] (val x: Self) extends AnyVal {
+  implicit class BytesLoadedMutableBuilder[Self <: BytesLoaded] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesLoadedUndefined: Self = StObject.set(x, "bytesLoaded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesLoaded(value: Double): Self = this.set("bytesLoaded", value.asInstanceOf[js.Any])
+    def setBytesTotalUndefined: Self = StObject.set(x, "bytesTotal", js.undefined)
     
     @scala.inline
-    def deleteBytesLoaded: Self = this.set("bytesLoaded", js.undefined)
+    def setComponent(value: dxFileUploader): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesTotal(value: Double): Self = this.set("bytesTotal", value.asInstanceOf[js.Any])
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def deleteBytesTotal: Self = this.set("bytesTotal", js.undefined)
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxFileUploader): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: typings.std.File): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setRequest(value: XMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setSegmentSize(value: Double): Self = StObject.set(x, "segmentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: XMLHttpRequest): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
-    
-    @scala.inline
-    def setSegmentSize(value: Double): Self = this.set("segmentSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentSize: Self = this.set("segmentSize", js.undefined)
+    def setSegmentSizeUndefined: Self = StObject.set(x, "segmentSize", js.undefined)
   }
 }

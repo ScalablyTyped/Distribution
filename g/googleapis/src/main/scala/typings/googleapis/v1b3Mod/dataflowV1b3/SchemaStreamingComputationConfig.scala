@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration information for a single streaming computation.
   */
 @js.native
-trait SchemaStreamingComputationConfig extends js.Object {
+trait SchemaStreamingComputationConfig extends StObject {
   
   /**
     * Unique identifier for this computation.
@@ -46,51 +47,39 @@ object SchemaStreamingComputationConfig {
   }
   
   @scala.inline
-  implicit class SchemaStreamingComputationConfigOps[Self <: SchemaStreamingComputationConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaStreamingComputationConfigMutableBuilder[Self <: SchemaStreamingComputationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstructions(value: js.Array[SchemaParallelInstruction]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputationId(value: String): Self = this.set("computationId", value.asInstanceOf[js.Any])
+    def setInstructionsUndefined: Self = StObject.set(x, "instructions", js.undefined)
     
     @scala.inline
-    def deleteComputationId: Self = this.set("computationId", js.undefined)
+    def setInstructionsVarargs(value: SchemaParallelInstruction*): Self = StObject.set(x, "instructions", js.Array(value :_*))
     
     @scala.inline
-    def setInstructionsVarargs(value: SchemaParallelInstruction*): Self = this.set("instructions", js.Array(value :_*))
+    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstructions(value: js.Array[SchemaParallelInstruction]): Self = this.set("instructions", value.asInstanceOf[js.Any])
+    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
     @scala.inline
-    def deleteInstructions: Self = this.set("instructions", js.undefined)
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     @scala.inline
-    def deleteStageName: Self = this.set("stageName", js.undefined)
+    def setTransformUserNameToStateFamily(value: StringDictionary[String]): Self = StObject.set(x, "transformUserNameToStateFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
-    
-    @scala.inline
-    def setTransformUserNameToStateFamily(value: StringDictionary[String]): Self = this.set("transformUserNameToStateFamily", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformUserNameToStateFamily: Self = this.set("transformUserNameToStateFamily", js.undefined)
+    def setTransformUserNameToStateFamilyUndefined: Self = StObject.set(x, "transformUserNameToStateFamily", js.undefined)
   }
 }

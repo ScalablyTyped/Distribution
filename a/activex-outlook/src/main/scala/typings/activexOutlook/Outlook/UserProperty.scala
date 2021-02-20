@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserProperty extends js.Object {
+trait UserProperty extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -58,57 +59,45 @@ object UserProperty {
   }
   
   @scala.inline
-  implicit class UserPropertyOps[Self <: UserProperty] (val x: Self) extends AnyVal {
+  implicit class UserPropertyMutableBuilder[Self <: UserProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setIsUserProperty(value: Boolean): Self = StObject.set(x, "IsUserProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
+    def setOutlookDotUserProperty_typekey(value: UserProperty): Self = StObject.set(x, "Outlook.UserProperty_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUserProperty(value: Boolean): Self = this.set("IsUserProperty", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotUserProperty_typekey(value: UserProperty): Self = this.set("Outlook.UserProperty_typekey", value.asInstanceOf[js.Any])
+    def setType(value: OlUserPropertyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setValidationFormula(value: String): Self = StObject.set(x, "ValidationFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    def setValidationText(value: String): Self = StObject.set(x, "ValidationText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: OlUserPropertyType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationFormula(value: String): Self = this.set("ValidationFormula", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationText(value: String): Self = this.set("ValidationText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

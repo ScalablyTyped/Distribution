@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineGroupEditableOption extends js.Object {
+trait TimelineGroupEditableOption extends StObject {
   
   var add: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object TimelineGroupEditableOption {
   }
   
   @scala.inline
-  implicit class TimelineGroupEditableOptionOps[Self <: TimelineGroupEditableOption] (val x: Self) extends AnyVal {
+  implicit class TimelineGroupEditableOptionMutableBuilder[Self <: TimelineGroupEditableOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: Boolean): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: Boolean): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
-    
-    @scala.inline
-    def setRemove(value: Boolean): Self = this.set("remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

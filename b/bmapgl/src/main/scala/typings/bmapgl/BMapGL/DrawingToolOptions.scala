@@ -1,12 +1,13 @@
 package typings.bmapgl.BMapGL
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrawingToolOptions extends js.Object {
+trait DrawingToolOptions extends StObject {
   
   var anchor: js.UndefOr[ControlAnchor] = js.native
   
@@ -31,63 +32,51 @@ object DrawingToolOptions {
   }
   
   @scala.inline
-  implicit class DrawingToolOptionsOps[Self <: DrawingToolOptions] (val x: Self) extends AnyVal {
+  implicit class DrawingToolOptionsMutableBuilder[Self <: DrawingToolOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomContainer(value: String | HTMLElement): Self = StObject.set(x, "customContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: ControlAnchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setCustomContainerUndefined: Self = StObject.set(x, "customContainer", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setDrawingModes(value: js.Array[DrawingType]): Self = StObject.set(x, "drawingModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomContainer(value: String | HTMLElement): Self = this.set("customContainer", value.asInstanceOf[js.Any])
+    def setDrawingModesUndefined: Self = StObject.set(x, "drawingModes", js.undefined)
     
     @scala.inline
-    def deleteCustomContainer: Self = this.set("customContainer", js.undefined)
+    def setDrawingModesVarargs(value: DrawingType*): Self = StObject.set(x, "drawingModes", js.Array(value :_*))
     
     @scala.inline
-    def setDrawingModesVarargs(value: DrawingType*): Self = this.set("drawingModes", js.Array(value :_*))
+    def setEnableTips(value: Boolean): Self = StObject.set(x, "enableTips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawingModes(value: js.Array[DrawingType]): Self = this.set("drawingModes", value.asInstanceOf[js.Any])
+    def setEnableTipsUndefined: Self = StObject.set(x, "enableTips", js.undefined)
     
     @scala.inline
-    def deleteDrawingModes: Self = this.set("drawingModes", js.undefined)
+    def setHasCustomStyle(value: Boolean): Self = StObject.set(x, "hasCustomStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTips(value: Boolean): Self = this.set("enableTips", value.asInstanceOf[js.Any])
+    def setHasCustomStyleUndefined: Self = StObject.set(x, "hasCustomStyle", js.undefined)
     
     @scala.inline
-    def deleteEnableTips: Self = this.set("enableTips", js.undefined)
+    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCustomStyle(value: Boolean): Self = this.set("hasCustomStyle", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteHasCustomStyle: Self = this.set("hasCustomStyle", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Size): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

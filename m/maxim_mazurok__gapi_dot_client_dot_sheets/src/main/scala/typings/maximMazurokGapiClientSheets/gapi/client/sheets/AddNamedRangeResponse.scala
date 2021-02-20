@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddNamedRangeResponse extends js.Object {
+trait AddNamedRangeResponse extends StObject {
   
   /** The named range to add. */
   var namedRange: js.UndefOr[NamedRange] = js.native
@@ -19,24 +20,12 @@ object AddNamedRangeResponse {
   }
   
   @scala.inline
-  implicit class AddNamedRangeResponseOps[Self <: AddNamedRangeResponse] (val x: Self) extends AnyVal {
+  implicit class AddNamedRangeResponseMutableBuilder[Self <: AddNamedRangeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedRange(value: NamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamedRange(value: NamedRange): Self = this.set("namedRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedRange: Self = this.set("namedRange", js.undefined)
+    def setNamedRangeUndefined: Self = StObject.set(x, "namedRange", js.undefined)
   }
 }

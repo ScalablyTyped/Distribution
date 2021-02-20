@@ -1,11 +1,12 @@
 package typings.reactJoyride.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoreHelpers extends js.Object {
+trait StoreHelpers extends StObject {
   
   def close(): Unit = js.native
   
@@ -41,42 +42,30 @@ object StoreHelpers {
   }
   
   @scala.inline
-  implicit class StoreHelpersOps[Self <: StoreHelpers] (val x: Self) extends AnyVal {
+  implicit class StoreHelpersMutableBuilder[Self <: StoreHelpers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: () => StoreState): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGo(value: Double => Unit): Self = this.set("go", js.Any.fromFunction1(value))
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInfo(value: () => StoreState): Self = this.set("info", js.Any.fromFunction0(value))
+    def setPrev(value: () => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => Unit): Self = this.set("next", js.Any.fromFunction0(value))
+    def setReset(value: Boolean => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrev(value: () => Unit): Self = this.set("prev", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: Boolean => Unit): Self = this.set("reset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSkip(value: () => Unit): Self = this.set("skip", js.Any.fromFunction0(value))
+    def setSkip(value: () => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction0(value))
   }
 }

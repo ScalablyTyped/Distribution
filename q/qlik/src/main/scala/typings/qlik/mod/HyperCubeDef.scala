@@ -6,12 +6,13 @@ import typings.qlik.qlikNumbers.`1`
 import typings.qlik.qlikStrings.K
 import typings.qlik.qlikStrings.P
 import typings.qlik.qlikStrings.S
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HyperCubeDef extends js.Object {
+trait HyperCubeDef extends StObject {
   
   var qAlwaysFullyExpanded: js.UndefOr[Boolean] = js.native
   
@@ -54,126 +55,114 @@ object HyperCubeDef {
   }
   
   @scala.inline
-  implicit class HyperCubeDefOps[Self <: HyperCubeDef] (val x: Self) extends AnyVal {
+  implicit class HyperCubeDefMutableBuilder[Self <: HyperCubeDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAlwaysFullyExpanded(value: Boolean): Self = StObject.set(x, "qAlwaysFullyExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAlwaysFullyExpandedUndefined: Self = StObject.set(x, "qAlwaysFullyExpanded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQCalcCond(value: ValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAlwaysFullyExpanded(value: Boolean): Self = this.set("qAlwaysFullyExpanded", value.asInstanceOf[js.Any])
+    def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
     
     @scala.inline
-    def deleteQAlwaysFullyExpanded: Self = this.set("qAlwaysFullyExpanded", js.undefined)
+    def setQDimensions(value: js.Array[NxDimension]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCalcCond(value: ValueExpr): Self = this.set("qCalcCond", value.asInstanceOf[js.Any])
+    def setQDimensionsUndefined: Self = StObject.set(x, "qDimensions", js.undefined)
     
     @scala.inline
-    def deleteQCalcCond: Self = this.set("qCalcCond", js.undefined)
+    def setQDimensionsVarargs(value: NxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
     
     @scala.inline
-    def setQDimensionsVarargs(value: NxDimension*): Self = this.set("qDimensions", js.Array(value :_*))
+    def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDimensions(value: js.Array[NxDimension]): Self = this.set("qDimensions", value.asInstanceOf[js.Any])
+    def setQIndentModeUndefined: Self = StObject.set(x, "qIndentMode", js.undefined)
     
     @scala.inline
-    def deleteQDimensions: Self = this.set("qDimensions", js.undefined)
+    def setQInitialDataFetch(value: js.Array[NxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIndentMode(value: Boolean): Self = this.set("qIndentMode", value.asInstanceOf[js.Any])
+    def setQInitialDataFetchUndefined: Self = StObject.set(x, "qInitialDataFetch", js.undefined)
     
     @scala.inline
-    def deleteQIndentMode: Self = this.set("qIndentMode", js.undefined)
+    def setQInitialDataFetchVarargs(value: NxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
     
     @scala.inline
-    def setQInitialDataFetchVarargs(value: NxPage*): Self = this.set("qInitialDataFetch", js.Array(value :_*))
+    def setQInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qInterColumnSortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQInitialDataFetch(value: js.Array[NxPage]): Self = this.set("qInitialDataFetch", value.asInstanceOf[js.Any])
+    def setQInterColumnSortOrderUndefined: Self = StObject.set(x, "qInterColumnSortOrder", js.undefined)
     
     @scala.inline
-    def deleteQInitialDataFetch: Self = this.set("qInitialDataFetch", js.undefined)
+    def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value :_*))
     
     @scala.inline
-    def setQInterColumnSortOrderVarargs(value: Double*): Self = this.set("qInterColumnSortOrder", js.Array(value :_*))
+    def setQMaxStackedCells(value: Double): Self = StObject.set(x, "qMaxStackedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQInterColumnSortOrder(value: js.Array[Double]): Self = this.set("qInterColumnSortOrder", value.asInstanceOf[js.Any])
+    def setQMaxStackedCellsUndefined: Self = StObject.set(x, "qMaxStackedCells", js.undefined)
     
     @scala.inline
-    def deleteQInterColumnSortOrder: Self = this.set("qInterColumnSortOrder", js.undefined)
+    def setQMeasures(value: js.Array[NxMeasure]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMaxStackedCells(value: Double): Self = this.set("qMaxStackedCells", value.asInstanceOf[js.Any])
+    def setQMeasuresUndefined: Self = StObject.set(x, "qMeasures", js.undefined)
     
     @scala.inline
-    def deleteQMaxStackedCells: Self = this.set("qMaxStackedCells", js.undefined)
+    def setQMeasuresVarargs(value: NxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
     
     @scala.inline
-    def setQMeasuresVarargs(value: NxMeasure*): Self = this.set("qMeasures", js.Array(value :_*))
+    def setQMode(value: S | P | K): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMeasures(value: js.Array[NxMeasure]): Self = this.set("qMeasures", value.asInstanceOf[js.Any])
+    def setQModeUndefined: Self = StObject.set(x, "qMode", js.undefined)
     
     @scala.inline
-    def deleteQMeasures: Self = this.set("qMeasures", js.undefined)
+    def setQNoOfLeftDims(value: Double): Self = StObject.set(x, "qNoOfLeftDims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMode(value: S | P | K): Self = this.set("qMode", value.asInstanceOf[js.Any])
+    def setQNoOfLeftDimsUndefined: Self = StObject.set(x, "qNoOfLeftDims", js.undefined)
     
     @scala.inline
-    def deleteQMode: Self = this.set("qMode", js.undefined)
+    def setQPopulateMissing(value: Boolean): Self = StObject.set(x, "qPopulateMissing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNoOfLeftDims(value: Double): Self = this.set("qNoOfLeftDims", value.asInstanceOf[js.Any])
+    def setQPopulateMissingUndefined: Self = StObject.set(x, "qPopulateMissing", js.undefined)
     
     @scala.inline
-    def deleteQNoOfLeftDims: Self = this.set("qNoOfLeftDims", js.undefined)
+    def setQShowTotalsAbove(value: Boolean): Self = StObject.set(x, "qShowTotalsAbove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQPopulateMissing(value: Boolean): Self = this.set("qPopulateMissing", value.asInstanceOf[js.Any])
+    def setQShowTotalsAboveUndefined: Self = StObject.set(x, "qShowTotalsAbove", js.undefined)
     
     @scala.inline
-    def deleteQPopulateMissing: Self = this.set("qPopulateMissing", js.undefined)
+    def setQSortByYValue(value: `-1` | `0` | `1`): Self = StObject.set(x, "qSortByYValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQShowTotalsAbove(value: Boolean): Self = this.set("qShowTotalsAbove", value.asInstanceOf[js.Any])
+    def setQSortByYValueUndefined: Self = StObject.set(x, "qSortByYValue", js.undefined)
     
     @scala.inline
-    def deleteQShowTotalsAbove: Self = this.set("qShowTotalsAbove", js.undefined)
+    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSortByYValue(value: `-1` | `0` | `1`): Self = this.set("qSortByYValue", value.asInstanceOf[js.Any])
+    def setQStateNameUndefined: Self = StObject.set(x, "qStateName", js.undefined)
     
     @scala.inline
-    def deleteQSortByYValue: Self = this.set("qSortByYValue", js.undefined)
+    def setQSuppressZero(value: Boolean): Self = StObject.set(x, "qSuppressZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQStateName(value: String): Self = this.set("qStateName", value.asInstanceOf[js.Any])
+    def setQSuppressZeroUndefined: Self = StObject.set(x, "qSuppressZero", js.undefined)
     
     @scala.inline
-    def deleteQStateName: Self = this.set("qStateName", js.undefined)
+    def setQSupressMissing(value: Boolean): Self = StObject.set(x, "qSupressMissing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSuppressZero(value: Boolean): Self = this.set("qSuppressZero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQSuppressZero: Self = this.set("qSuppressZero", js.undefined)
-    
-    @scala.inline
-    def setQSupressMissing(value: Boolean): Self = this.set("qSupressMissing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQSupressMissing: Self = this.set("qSupressMissing", js.undefined)
+    def setQSupressMissingUndefined: Self = StObject.set(x, "qSupressMissing", js.undefined)
   }
 }

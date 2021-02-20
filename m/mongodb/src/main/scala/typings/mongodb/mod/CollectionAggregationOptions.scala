@@ -1,12 +1,13 @@
 package typings.mongodb.mod
 
 import typings.mongodb.anon.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionAggregationOptions extends js.Object {
+trait CollectionAggregationOptions extends StObject {
   
   /**
     * Lets the server know if it can use disk to store
@@ -63,102 +64,90 @@ object CollectionAggregationOptions {
   }
   
   @scala.inline
-  implicit class CollectionAggregationOptionsOps[Self <: CollectionAggregationOptions] (val x: Self) extends AnyVal {
+  implicit class CollectionAggregationOptionsMutableBuilder[Self <: CollectionAggregationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDiskUseUndefined: Self = StObject.set(x, "allowDiskUse", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDiskUse(value: Boolean): Self = this.set("allowDiskUse", value.asInstanceOf[js.Any])
+    def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
     
     @scala.inline
-    def deleteAllowDiskUse: Self = this.set("allowDiskUse", js.undefined)
+    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBypassDocumentValidation(value: Boolean): Self = this.set("bypassDocumentValidation", value.asInstanceOf[js.Any])
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def deleteBypassDocumentValidation: Self = this.set("bypassDocumentValidation", js.undefined)
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setCursor(value: `3`): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: `3`): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setHint(value: String | js.Object): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def deleteExplain: Self = this.set("explain", js.undefined)
+    def setMaxTimeMS(value: scala.Double): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String | js.Object): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setPromoteBuffers(value: Boolean): Self = StObject.set(x, "promoteBuffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTimeMS(value: scala.Double): Self = this.set("maxTimeMS", value.asInstanceOf[js.Any])
+    def setPromoteBuffersUndefined: Self = StObject.set(x, "promoteBuffers", js.undefined)
     
     @scala.inline
-    def deleteMaxTimeMS: Self = this.set("maxTimeMS", js.undefined)
+    def setPromoteLongs(value: Boolean): Self = StObject.set(x, "promoteLongs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoteBuffers(value: Boolean): Self = this.set("promoteBuffers", value.asInstanceOf[js.Any])
+    def setPromoteLongsUndefined: Self = StObject.set(x, "promoteLongs", js.undefined)
     
     @scala.inline
-    def deletePromoteBuffers: Self = this.set("promoteBuffers", js.undefined)
+    def setPromoteValues(value: Boolean): Self = StObject.set(x, "promoteValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoteLongs(value: Boolean): Self = this.set("promoteLongs", value.asInstanceOf[js.Any])
+    def setPromoteValuesUndefined: Self = StObject.set(x, "promoteValues", js.undefined)
     
     @scala.inline
-    def deletePromoteLongs: Self = this.set("promoteLongs", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromoteValues(value: Boolean): Self = this.set("promoteValues", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deletePromoteValues: Self = this.set("promoteValues", js.undefined)
+    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
-    
-    @scala.inline
-    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

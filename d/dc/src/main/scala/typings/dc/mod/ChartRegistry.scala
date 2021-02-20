@@ -1,11 +1,12 @@
 package typings.dc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartRegistry extends js.Object {
+trait ChartRegistry extends StObject {
   
   def clear(): Unit = js.native
   def clear(group: String): Unit = js.native

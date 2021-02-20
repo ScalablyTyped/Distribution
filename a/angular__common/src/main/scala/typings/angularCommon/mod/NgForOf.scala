@@ -6,6 +6,7 @@ import typings.angularCore.mod.NgIterable
 import typings.angularCore.mod.TemplateRef
 import typings.angularCore.mod.TrackByFunction
 import typings.angularCore.mod.ViewContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,9 +71,7 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
   def ngForTrackBy_=(fn: TrackByFunction[T]): Unit = js.native
 }
 /* static members */
-@JSImport("@angular/common", "NgForOf")
-@js.native
-object NgForOf extends js.Object {
+object NgForOf {
   
   /**
     * Asserts the correct type of the context for the template that `NgForOf` will render.
@@ -80,5 +79,7 @@ object NgForOf extends js.Object {
     * The presence of this method is a signal to the Ivy template type-check compiler that the
     * `NgForOf` structural directive renders its template with a specific context type.
     */
+  @JSImport("@angular/common", "NgForOf.ngTemplateContextGuard")
+  @js.native
   def ngTemplateContextGuard[T, U /* <: NgIterable[T] */](dir: NgForOf[T, U], ctx: js.Any): /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean = js.native
 }

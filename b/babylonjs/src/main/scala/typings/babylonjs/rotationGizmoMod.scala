@@ -7,14 +7,14 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.planeRotationGizmoMod.PlaneRotationGizmo
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/rotationGizmo", JSImport.Namespace)
-@js.native
-object rotationGizmoMod extends js.Object {
+object rotationGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/rotationGizmo", "RotationGizmo")
   @js.native
   /**
     * Creates a RotationGizmo

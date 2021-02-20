@@ -1,16 +1,27 @@
 package typings.typeorm
 
+import typings.typeorm.connectionMod.Connection
 import typings.typeorm.queryBuilderMod.QueryBuilder
+import typings.typeorm.queryRunnerMod.QueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/RelationQueryBuilder", JSImport.Namespace)
-@js.native
-object relationQueryBuilderMod extends js.Object {
+object relationQueryBuilderMod {
   
+  @JSImport("typeorm/browser/query-builder/RelationQueryBuilder", "RelationQueryBuilder")
   @js.native
-  class RelationQueryBuilder[Entity] () extends QueryBuilder[Entity] {
+  class RelationQueryBuilder[Entity] protected () extends QueryBuilder[Entity] {
+    /**
+      * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
+      */
+    def this(connection: Connection) = this()
+    /**
+      * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
+      */
+    def this(queryBuilder: QueryBuilder[_]) = this()
+    def this(connection: Connection, queryRunner: QueryRunner) = this()
     
     /**
       * Adds (binds) given value to entity relation.

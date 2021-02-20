@@ -2,13 +2,18 @@ package typings.rotJs
 
 import typings.rotJs.featuresMod.Corridor
 import typings.rotJs.featuresMod.Room
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/map/dungeon", JSImport.Namespace)
-@js.native
-object dungeonMod extends js.Object {
+object dungeonMod {
+  
+  @JSImport("rot-js/lib/map/dungeon", JSImport.Default)
+  @js.native
+  abstract class default protected () extends Dungeon {
+    def this(width: Double, height: Double) = this()
+  }
   
   @js.native
   trait Dungeon
@@ -29,10 +34,5 @@ object dungeonMod extends js.Object {
       * @returns {ROT.Map.Feature.Room[]}
       */
     def getRooms(): js.Array[Room] = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends Dungeon {
-    def this(width: Double, height: Double) = this()
   }
 }

@@ -16,6 +16,7 @@ import typings.iobroker.iobrokerStrings.script
 import typings.iobroker.iobrokerStrings.state
 import typings.iobroker.iobrokerStrings.user
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,77 +37,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.objectsMod.global.ioBroker.ScriptObject
   - typings.iobroker.objectsMod.global.ioBroker.OtherObject
 */
-trait AnyObject extends js.Object
+trait AnyObject extends StObject
 object AnyObject {
   
   @scala.inline
-  def MetaObject(_id: String, common: MetaCommon, native: Record[String, _], `type`: meta): AnyObject = {
+  def AdapterObject(_id: String, common: AdapterCommon, native: Record[String, _], `type`: adapter): typings.iobroker.objectsMod.global.ioBroker.AdapterObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.AdapterObject]
   }
   
   @scala.inline
-  def ScriptObject(_id: String, common: ScriptCommon, native: Record[String, _], `type`: script): AnyObject = {
+  def ChannelObject(_id: String, common: ChannelCommon, native: Record[String, _], `type`: channel): typings.iobroker.objectsMod.global.ioBroker.ChannelObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.ChannelObject]
   }
   
   @scala.inline
-  def GroupObject(_id: String, common: GroupCommon, native: Record[String, _], `type`: group): AnyObject = {
+  def DeviceObject(_id: String, common: DeviceCommon, native: Record[String, _], `type`: device): typings.iobroker.objectsMod.global.ioBroker.DeviceObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.DeviceObject]
   }
   
   @scala.inline
-  def DeviceObject(_id: String, common: DeviceCommon, native: Record[String, _], `type`: device): AnyObject = {
+  def EnumObject(_id: String, common: EnumCommon, native: Record[String, _], `type`: enum): typings.iobroker.objectsMod.global.ioBroker.EnumObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.EnumObject]
   }
   
   @scala.inline
-  def AdapterObject(_id: String, common: AdapterCommon, native: Record[String, _], `type`: adapter): AnyObject = {
+  def FolderObject(_id: String, common: OtherCommon, native: Record[String, _], `type`: folder): typings.iobroker.objectsMod.global.ioBroker.FolderObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.FolderObject]
   }
   
   @scala.inline
-  def StateObject(_id: String, common: StateCommon, native: Record[String, _], `type`: state): AnyObject = {
+  def GroupObject(_id: String, common: GroupCommon, native: Record[String, _], `type`: group): typings.iobroker.objectsMod.global.ioBroker.GroupObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.GroupObject]
   }
   
   @scala.inline
-  def HostObject(_id: String, common: HostCommon, native: HostNative, `type`: host): AnyObject = {
+  def HostObject(_id: String, common: HostCommon, native: HostNative, `type`: host): typings.iobroker.objectsMod.global.ioBroker.HostObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.HostObject]
   }
   
   @scala.inline
-  def ChannelObject(_id: String, common: ChannelCommon, native: Record[String, _], `type`: channel): AnyObject = {
+  def InstanceObject(_id: String, common: InstanceCommon, native: Record[String, _], `type`: instance): typings.iobroker.objectsMod.global.ioBroker.InstanceObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.InstanceObject]
   }
   
   @scala.inline
-  def UserObject(_id: String, common: UserCommon, native: Record[String, _], `type`: user): AnyObject = {
+  def MetaObject(_id: String, common: MetaCommon, native: Record[String, _], `type`: meta): typings.iobroker.objectsMod.global.ioBroker.MetaObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
-  }
-  
-  @scala.inline
-  def EnumObject(_id: String, common: EnumCommon, native: Record[String, _], `type`: enum): AnyObject = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.MetaObject]
   }
   
   @scala.inline
@@ -115,23 +109,30 @@ object AnyObject {
     common: OtherCommon,
     native: Record[String, _],
     `type`: adapter | config | info | chart
-  ): AnyObject = {
+  ): typings.iobroker.objectsMod.global.ioBroker.OtherObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.OtherObject]
   }
   
   @scala.inline
-  def FolderObject(_id: String, common: OtherCommon, native: Record[String, _], `type`: folder): AnyObject = {
+  def ScriptObject(_id: String, common: ScriptCommon, native: Record[String, _], `type`: script): typings.iobroker.objectsMod.global.ioBroker.ScriptObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.ScriptObject]
   }
   
   @scala.inline
-  def InstanceObject(_id: String, common: InstanceCommon, native: Record[String, _], `type`: instance): AnyObject = {
+  def StateObject(_id: String, common: StateCommon, native: Record[String, _], `type`: state): typings.iobroker.objectsMod.global.ioBroker.StateObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AnyObject]
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.StateObject]
+  }
+  
+  @scala.inline
+  def UserObject(_id: String, common: UserCommon, native: Record[String, _], `type`: user): typings.iobroker.objectsMod.global.ioBroker.UserObject = {
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.iobroker.objectsMod.global.ioBroker.UserObject]
   }
 }

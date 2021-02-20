@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "PackStorage")
 @js.native
-class PackStorage protected () extends js.Object {
+class PackStorage protected () extends StObject {
   def this(file: js.Any) = this()
   
   var cache: js.Any = js.native

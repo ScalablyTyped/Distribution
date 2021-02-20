@@ -1,11 +1,12 @@
 package typings.bootstrapTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimepickerTime extends js.Object {
+trait TimepickerTime extends StObject {
   
   var hours: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object TimepickerTime {
   }
   
   @scala.inline
-  implicit class TimepickerTimeOps[Self <: TimepickerTime] (val x: Self) extends AnyVal {
+  implicit class TimepickerTimeMutableBuilder[Self <: TimepickerTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeridian(value: String): Self = StObject.set(x, "meridian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: Double): Self = this.set("hours", value.asInstanceOf[js.Any])
+    def setMeridianUndefined: Self = StObject.set(x, "meridian", js.undefined)
     
     @scala.inline
-    def deleteHours: Self = this.set("hours", js.undefined)
+    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeridian(value: String): Self = this.set("meridian", value.asInstanceOf[js.Any])
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
     @scala.inline
-    def deleteMeridian: Self = this.set("meridian", js.undefined)
+    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     
     @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeconds: Self = this.set("seconds", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

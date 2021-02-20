@@ -1,5 +1,6 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object IChartistAutoScaleAxis {
   }
   
   @scala.inline
-  implicit class IChartistAutoScaleAxisOps[Self <: IChartistAutoScaleAxis] (val x: Self) extends AnyVal {
+  implicit class IChartistAutoScaleAxisMutableBuilder[Self <: IChartistAutoScaleAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLow(value: Double): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh(value: Double): Self = this.set("high", value.asInstanceOf[js.Any])
+    def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
     
     @scala.inline
-    def deleteHigh: Self = this.set("high", js.undefined)
+    def setOnlyInteger(value: Boolean): Self = StObject.set(x, "onlyInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLow(value: Double): Self = this.set("low", value.asInstanceOf[js.Any])
+    def setOnlyIntegerUndefined: Self = StObject.set(x, "onlyInteger", js.undefined)
     
     @scala.inline
-    def deleteLow: Self = this.set("low", js.undefined)
+    def setReferenceValue(value: Double): Self = StObject.set(x, "referenceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyInteger(value: Boolean): Self = this.set("onlyInteger", value.asInstanceOf[js.Any])
+    def setReferenceValueUndefined: Self = StObject.set(x, "referenceValue", js.undefined)
     
     @scala.inline
-    def deleteOnlyInteger: Self = this.set("onlyInteger", js.undefined)
+    def setScaleMinSpace(value: Double): Self = StObject.set(x, "scaleMinSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceValue(value: Double): Self = this.set("referenceValue", value.asInstanceOf[js.Any])
+    def setScaleMinSpaceUndefined: Self = StObject.set(x, "scaleMinSpace", js.undefined)
     
     @scala.inline
-    def deleteReferenceValue: Self = this.set("referenceValue", js.undefined)
+    def setType(value: IAutoScaleAxisStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleMinSpace(value: Double): Self = this.set("scaleMinSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleMinSpace: Self = this.set("scaleMinSpace", js.undefined)
-    
-    @scala.inline
-    def setType(value: IAutoScaleAxisStatic): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

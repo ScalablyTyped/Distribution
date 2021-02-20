@@ -1,11 +1,12 @@
 package typings.calidation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidatorContext[T /* <: js.Object */] extends js.Object {
+trait ValidatorContext[T /* <: js.Object */] extends StObject {
   
   var errors: Errors[T] = js.native
   
@@ -22,27 +23,15 @@ object ValidatorContext {
   }
   
   @scala.inline
-  implicit class ValidatorContextOps[Self <: ValidatorContext[_], T /* <: js.Object */] (val x: Self with ValidatorContext[T]) extends AnyVal {
+  implicit class ValidatorContextMutableBuilder[Self <: ValidatorContext[_], T /* <: js.Object */] (val x: Self with ValidatorContext[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: Errors[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: Fields[T]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrors(value: Errors[T]): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFields(value: Fields[T]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDirty(value: Boolean): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionConfig extends js.Object {
+trait DistributionConfig extends StObject {
   
   /**
     * A complex type that contains information about CNAMEs (alternate domain names), if any, for this distribution.
@@ -107,105 +108,93 @@ object DistributionConfig {
   }
   
   @scala.inline
-  implicit class DistributionConfigOps[Self <: DistributionConfig] (val x: Self) extends AnyVal {
+  implicit class DistributionConfigMutableBuilder[Self <: DistributionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: Aliases): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheBehaviors(value: CacheBehaviors): Self = StObject.set(x, "CacheBehaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerReference(value: String): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    def setCacheBehaviorsUndefined: Self = StObject.set(x, "CacheBehaviors", js.undefined)
     
     @scala.inline
-    def setComment(value: CommentType): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = this.set("DefaultCacheBehavior", value.asInstanceOf[js.Any])
+    def setComment(value: CommentType): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setCustomErrorResponses(value: CustomErrorResponses): Self = StObject.set(x, "CustomErrorResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigins(value: Origins): Self = this.set("Origins", value.asInstanceOf[js.Any])
+    def setCustomErrorResponsesUndefined: Self = StObject.set(x, "CustomErrorResponses", js.undefined)
     
     @scala.inline
-    def setAliases(value: Aliases): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    def setDefaultCacheBehavior(value: DefaultCacheBehavior): Self = StObject.set(x, "DefaultCacheBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    def setDefaultRootObject(value: String): Self = StObject.set(x, "DefaultRootObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheBehaviors(value: CacheBehaviors): Self = this.set("CacheBehaviors", value.asInstanceOf[js.Any])
+    def setDefaultRootObjectUndefined: Self = StObject.set(x, "DefaultRootObject", js.undefined)
     
     @scala.inline
-    def deleteCacheBehaviors: Self = this.set("CacheBehaviors", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomErrorResponses(value: CustomErrorResponses): Self = this.set("CustomErrorResponses", value.asInstanceOf[js.Any])
+    def setHttpVersion(value: HttpVersion): Self = StObject.set(x, "HttpVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomErrorResponses: Self = this.set("CustomErrorResponses", js.undefined)
+    def setHttpVersionUndefined: Self = StObject.set(x, "HttpVersion", js.undefined)
     
     @scala.inline
-    def setDefaultRootObject(value: String): Self = this.set("DefaultRootObject", value.asInstanceOf[js.Any])
+    def setIsIPV6Enabled(value: Boolean): Self = StObject.set(x, "IsIPV6Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultRootObject: Self = this.set("DefaultRootObject", js.undefined)
+    def setIsIPV6EnabledUndefined: Self = StObject.set(x, "IsIPV6Enabled", js.undefined)
     
     @scala.inline
-    def setHttpVersion(value: HttpVersion): Self = this.set("HttpVersion", value.asInstanceOf[js.Any])
+    def setLogging(value: LoggingConfig): Self = StObject.set(x, "Logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttpVersion: Self = this.set("HttpVersion", js.undefined)
+    def setLoggingUndefined: Self = StObject.set(x, "Logging", js.undefined)
     
     @scala.inline
-    def setIsIPV6Enabled(value: Boolean): Self = this.set("IsIPV6Enabled", value.asInstanceOf[js.Any])
+    def setOriginGroups(value: OriginGroups): Self = StObject.set(x, "OriginGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsIPV6Enabled: Self = this.set("IsIPV6Enabled", js.undefined)
+    def setOriginGroupsUndefined: Self = StObject.set(x, "OriginGroups", js.undefined)
     
     @scala.inline
-    def setLogging(value: LoggingConfig): Self = this.set("Logging", value.asInstanceOf[js.Any])
+    def setOrigins(value: Origins): Self = StObject.set(x, "Origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogging: Self = this.set("Logging", js.undefined)
+    def setPriceClass(value: PriceClass): Self = StObject.set(x, "PriceClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginGroups(value: OriginGroups): Self = this.set("OriginGroups", value.asInstanceOf[js.Any])
+    def setPriceClassUndefined: Self = StObject.set(x, "PriceClass", js.undefined)
     
     @scala.inline
-    def deleteOriginGroups: Self = this.set("OriginGroups", js.undefined)
+    def setRestrictions(value: Restrictions): Self = StObject.set(x, "Restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceClass(value: PriceClass): Self = this.set("PriceClass", value.asInstanceOf[js.Any])
+    def setRestrictionsUndefined: Self = StObject.set(x, "Restrictions", js.undefined)
     
     @scala.inline
-    def deletePriceClass: Self = this.set("PriceClass", js.undefined)
+    def setViewerCertificate(value: ViewerCertificate): Self = StObject.set(x, "ViewerCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictions(value: Restrictions): Self = this.set("Restrictions", value.asInstanceOf[js.Any])
+    def setViewerCertificateUndefined: Self = StObject.set(x, "ViewerCertificate", js.undefined)
     
     @scala.inline
-    def deleteRestrictions: Self = this.set("Restrictions", js.undefined)
+    def setWebACLId(value: String): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewerCertificate(value: ViewerCertificate): Self = this.set("ViewerCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewerCertificate: Self = this.set("ViewerCertificate", js.undefined)
-    
-    @scala.inline
-    def setWebACLId(value: String): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebACLId: Self = this.set("WebACLId", js.undefined)
+    def setWebACLIdUndefined: Self = StObject.set(x, "WebACLId", js.undefined)
   }
 }

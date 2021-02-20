@@ -1,12 +1,13 @@
 package typings.awsSdkTypes.middlewareMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @aws-sdk/types.@aws-sdk/types/dist/cjs/middleware.RelativeLocation & std.Omit<@aws-sdk/types.@aws-sdk/types/dist/cjs/middleware.HandlerOptions, 'step'> */
 @js.native
-trait RelativeMiddlewareOptions extends js.Object {
+trait RelativeMiddlewareOptions extends StObject {
   
   var name: js.UndefOr[String] = js.native
   
@@ -31,39 +32,27 @@ object RelativeMiddlewareOptions {
   }
   
   @scala.inline
-  implicit class RelativeMiddlewareOptionsOps[Self <: RelativeMiddlewareOptions] (val x: Self) extends AnyVal {
+  implicit class RelativeMiddlewareOptionsMutableBuilder[Self <: RelativeMiddlewareOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelation(value: Relation): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelation(value: Relation): Self = this.set("relation", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToMiddleware(value: String): Self = this.set("toMiddleware", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setToMiddleware(value: String): Self = StObject.set(x, "toMiddleware", value.asInstanceOf[js.Any])
   }
 }

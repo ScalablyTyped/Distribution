@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchFacesResponse extends js.Object {
+trait SearchFacesResponse extends StObject {
   
   /**
     * An array of faces that matched the input face, along with the confidence in the match.
@@ -31,39 +32,27 @@ object SearchFacesResponse {
   }
   
   @scala.inline
-  implicit class SearchFacesResponseOps[Self <: SearchFacesResponse] (val x: Self) extends AnyVal {
+  implicit class SearchFacesResponseMutableBuilder[Self <: SearchFacesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
     @scala.inline
-    def setFaceMatchesVarargs(value: FaceMatch*): Self = this.set("FaceMatches", js.Array(value :_*))
+    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceMatches(value: FaceMatchList): Self = this.set("FaceMatches", value.asInstanceOf[js.Any])
+    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
     
     @scala.inline
-    def deleteFaceMatches: Self = this.set("FaceMatches", js.undefined)
+    def setSearchedFaceId(value: FaceId): Self = StObject.set(x, "SearchedFaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
-    
-    @scala.inline
-    def setSearchedFaceId(value: FaceId): Self = this.set("SearchedFaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchedFaceId: Self = this.set("SearchedFaceId", js.undefined)
+    def setSearchedFaceIdUndefined: Self = StObject.set(x, "SearchedFaceId", js.undefined)
   }
 }

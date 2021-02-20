@@ -2,13 +2,16 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.Value
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/date-picker-view/demo/basic", JSImport.Namespace)
-@js.native
-object datePickerViewDemoBasicMod extends js.Object {
+object datePickerViewDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/date-picker-view/demo/basic", JSImport.Default)
+  @js.native
+  class default () extends DatePickerViewExample
   
   @js.native
   trait DatePickerViewExample
@@ -21,7 +24,4 @@ object datePickerViewDemoBasicMod extends js.Object {
     @JSName("state")
     var state_DatePickerViewExample: Value = js.native
   }
-  
-  @js.native
-  class default () extends DatePickerViewExample
 }

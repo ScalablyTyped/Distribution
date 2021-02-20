@@ -7,14 +7,14 @@ import typings.awsSdkClientKinesisBrowser.typesDeleteStreamInputMod.DeleteStream
 import typings.awsSdkClientKinesisBrowser.typesDeleteStreamOutputMod.DeleteStreamOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/commands/DeleteStreamCommand", JSImport.Namespace)
-@js.native
-object deleteStreamCommandMod extends js.Object {
+object deleteStreamCommandMod {
   
+  @JSImport("@aws-sdk/client-kinesis-browser/commands/DeleteStreamCommand", "DeleteStreamCommand")
   @js.native
   class DeleteStreamCommand protected () extends Command[
           InputTypesUnion, 

@@ -1,11 +1,12 @@
 package typings.jupyterlabServices.messagesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHeader[T /* <: MessageType */] extends js.Object {
+trait IHeader[T /* <: MessageType */] extends StObject {
   
   /**
     * ISO 8601 timestamp for when the message is created
@@ -46,36 +47,24 @@ object IHeader {
   }
   
   @scala.inline
-  implicit class IHeaderOps[Self <: IHeader[_], T /* <: MessageType */] (val x: Self with IHeader[T]) extends AnyVal {
+  implicit class IHeaderMutableBuilder[Self <: IHeader[_], T /* <: MessageType */] (val x: Self with IHeader[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMsg_id(value: String): Self = StObject.set(x, "msg_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMsg_type(value: T): Self = StObject.set(x, "msg_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg_id(value: String): Self = this.set("msg_id", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsg_type(value: T): Self = this.set("msg_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: String): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

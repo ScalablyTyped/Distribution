@@ -2,12 +2,13 @@ package typings.phaser.spine.webgl
 
 import typings.phaser.spine.Skeleton
 import typings.phaser.spine.VertexEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkeletonRenderer extends js.Object {
+trait SkeletonRenderer extends StObject {
   
   var clipper: js.Any = js.native
   

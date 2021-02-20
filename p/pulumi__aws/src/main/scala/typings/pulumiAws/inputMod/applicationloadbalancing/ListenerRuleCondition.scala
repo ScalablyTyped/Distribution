@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.applicationloadbalancing
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenerRuleCondition extends js.Object {
+trait ListenerRuleCondition extends StObject {
   
   /**
     * Contains a single `values` item which is a list of host header patterns to match. The maximum size of each pattern is 128 characters. Comparison is case insensitive. Wildcard characters supported: * (matches 0 or more characters) and ? (matches exactly 1 character). Only one pattern needs to match for the condition to be satisfied.
@@ -47,57 +48,45 @@ object ListenerRuleCondition {
   }
   
   @scala.inline
-  implicit class ListenerRuleConditionOps[Self <: ListenerRuleCondition] (val x: Self) extends AnyVal {
+  implicit class ListenerRuleConditionMutableBuilder[Self <: ListenerRuleCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostHeader(value: Input[ListenerRuleConditionHostHeader]): Self = StObject.set(x, "hostHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostHeaderUndefined: Self = StObject.set(x, "hostHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpHeader(value: Input[ListenerRuleConditionHttpHeader]): Self = StObject.set(x, "httpHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostHeader(value: Input[ListenerRuleConditionHostHeader]): Self = this.set("hostHeader", value.asInstanceOf[js.Any])
+    def setHttpHeaderUndefined: Self = StObject.set(x, "httpHeader", js.undefined)
     
     @scala.inline
-    def deleteHostHeader: Self = this.set("hostHeader", js.undefined)
+    def setHttpRequestMethod(value: Input[ListenerRuleConditionHttpRequestMethod]): Self = StObject.set(x, "httpRequestMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeader(value: Input[ListenerRuleConditionHttpHeader]): Self = this.set("httpHeader", value.asInstanceOf[js.Any])
+    def setHttpRequestMethodUndefined: Self = StObject.set(x, "httpRequestMethod", js.undefined)
     
     @scala.inline
-    def deleteHttpHeader: Self = this.set("httpHeader", js.undefined)
+    def setPathPattern(value: Input[ListenerRuleConditionPathPattern]): Self = StObject.set(x, "pathPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequestMethod(value: Input[ListenerRuleConditionHttpRequestMethod]): Self = this.set("httpRequestMethod", value.asInstanceOf[js.Any])
+    def setPathPatternUndefined: Self = StObject.set(x, "pathPattern", js.undefined)
     
     @scala.inline
-    def deleteHttpRequestMethod: Self = this.set("httpRequestMethod", js.undefined)
+    def setQueryStrings(value: Input[js.Array[Input[ListenerRuleConditionQueryString]]]): Self = StObject.set(x, "queryStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPattern(value: Input[ListenerRuleConditionPathPattern]): Self = this.set("pathPattern", value.asInstanceOf[js.Any])
+    def setQueryStringsUndefined: Self = StObject.set(x, "queryStrings", js.undefined)
     
     @scala.inline
-    def deletePathPattern: Self = this.set("pathPattern", js.undefined)
+    def setQueryStringsVarargs(value: Input[ListenerRuleConditionQueryString]*): Self = StObject.set(x, "queryStrings", js.Array(value :_*))
     
     @scala.inline
-    def setQueryStringsVarargs(value: Input[ListenerRuleConditionQueryString]*): Self = this.set("queryStrings", js.Array(value :_*))
+    def setSourceIp(value: Input[ListenerRuleConditionSourceIp]): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryStrings(value: Input[js.Array[Input[ListenerRuleConditionQueryString]]]): Self = this.set("queryStrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryStrings: Self = this.set("queryStrings", js.undefined)
-    
-    @scala.inline
-    def setSourceIp(value: Input[ListenerRuleConditionSourceIp]): Self = this.set("sourceIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceIp: Self = this.set("sourceIp", js.undefined)
+    def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
   }
 }

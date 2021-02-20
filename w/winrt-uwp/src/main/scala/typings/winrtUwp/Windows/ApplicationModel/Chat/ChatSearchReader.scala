@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to search for chat messages in the ChatMessageStore . */
 @js.native
-trait ChatSearchReader extends js.Object {
+trait ChatSearchReader extends StObject {
   
   /**
     * Returns a batch of found items matching the search criteria.

@@ -1,12 +1,13 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.SimplesortOptions> */
 @js.native
-trait PartialSimplesortOptions extends js.Object {
+trait PartialSimplesortOptions extends StObject {
   
   var desc: js.UndefOr[Boolean] = js.native
   
@@ -25,42 +26,30 @@ object PartialSimplesortOptions {
   }
   
   @scala.inline
-  implicit class PartialSimplesortOptionsOps[Self <: PartialSimplesortOptions] (val x: Self) extends AnyVal {
+  implicit class PartialSimplesortOptionsMutableBuilder[Self <: PartialSimplesortOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesc(value: Boolean): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableIndexIntersect(value: Boolean): Self = StObject.set(x, "disableIndexIntersect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: Boolean): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setDisableIndexIntersectUndefined: Self = StObject.set(x, "disableIndexIntersect", js.undefined)
     
     @scala.inline
-    def deleteDesc: Self = this.set("desc", js.undefined)
+    def setForceIndexIntersect(value: Boolean): Self = StObject.set(x, "forceIndexIntersect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableIndexIntersect(value: Boolean): Self = this.set("disableIndexIntersect", value.asInstanceOf[js.Any])
+    def setForceIndexIntersectUndefined: Self = StObject.set(x, "forceIndexIntersect", js.undefined)
     
     @scala.inline
-    def deleteDisableIndexIntersect: Self = this.set("disableIndexIntersect", js.undefined)
+    def setUseJavascriptSorting(value: Boolean): Self = StObject.set(x, "useJavascriptSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceIndexIntersect(value: Boolean): Self = this.set("forceIndexIntersect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceIndexIntersect: Self = this.set("forceIndexIntersect", js.undefined)
-    
-    @scala.inline
-    def setUseJavascriptSorting(value: Boolean): Self = this.set("useJavascriptSorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseJavascriptSorting: Self = this.set("useJavascriptSorting", js.undefined)
+    def setUseJavascriptSortingUndefined: Self = StObject.set(x, "useJavascriptSorting", js.undefined)
   }
 }

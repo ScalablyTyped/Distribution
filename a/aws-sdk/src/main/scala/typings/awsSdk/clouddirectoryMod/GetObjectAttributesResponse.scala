@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetObjectAttributesResponse extends js.Object {
+trait GetObjectAttributesResponse extends StObject {
   
   /**
     * The attributes that are associated with the object.
@@ -21,27 +22,15 @@ object GetObjectAttributesResponse {
   }
   
   @scala.inline
-  implicit class GetObjectAttributesResponseOps[Self <: GetObjectAttributesResponse] (val x: Self) extends AnyVal {
+  implicit class GetObjectAttributesResponseMutableBuilder[Self <: GetObjectAttributesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributesVarargs(value: AttributeKeyAndValue*): Self = this.set("Attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: AttributeKeyAndValueList): Self = this.set("Attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
   }
 }

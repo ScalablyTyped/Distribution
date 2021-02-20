@@ -1,12 +1,13 @@
 package typings.reactInstantsearchCore.mod
 
 import typings.reactInstantsearchCore.anon.End
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumericMenuExposed extends js.Object {
+trait NumericMenuExposed extends StObject {
   
   /** the name of the attribute in the records */
   var attribute: String = js.native
@@ -31,45 +32,33 @@ object NumericMenuExposed {
   }
   
   @scala.inline
-  implicit class NumericMenuExposedOps[Self <: NumericMenuExposed] (val x: Self) extends AnyVal {
+  implicit class NumericMenuExposedMutableBuilder[Self <: NumericMenuExposed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: End*): Self = this.set("items", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[End]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[End]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRefinement(value: String): Self = this.set("defaultRefinement", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: End*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultRefinement: Self = this.set("defaultRefinement", js.undefined)
+    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = this.set("transformItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTransformItems: Self = this.set("transformItems", js.undefined)
+    def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }
 }

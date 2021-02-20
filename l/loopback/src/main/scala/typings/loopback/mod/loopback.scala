@@ -2,6 +2,7 @@ package typings.loopback.mod
 
 import typings.loopback.anon.Connector
 import typings.loopback.anon.Relations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "loopback")
 @js.native
-class loopback () extends js.Object {
+class loopback () extends StObject {
   
   /** Path to a default favicon shipped with LoopBack.
     * Use as follows: `app.use(require('serve-favicon')(loopback.faviconFile));`
@@ -66,10 +67,7 @@ class loopback () extends js.Object {
   /** Version of LoopBack framework.  Static read-only property. */
   var version: String = js.native
 }
-/* static members */
-@JSImport("loopback", "loopback")
-@js.native
-object loopback extends js.Object {
+object loopback {
   
   /**
     * Alter an existing Model class.
@@ -79,6 +77,9 @@ object loopback extends js.Object {
     * @property {any} [relations] Model relations to add/update
     * @header loopback.configureModel(ModelCtor, config
     */
+  /* static member */
+  @JSImport("loopback", "loopback.configureModel")
+  @js.native
   def configureModel(ModelCtor: Model, config: Relations): Unit = js.native
   
   /**
@@ -89,6 +90,9 @@ object loopback extends js.Object {
     * @property {*} [*] Other&nbsp;connector properties.
     * See the relevant connector documentation
     */
+  /* static member */
+  @JSImport("loopback", "loopback.createDataSource")
+  @js.native
   def createDataSource(name: String, options: Connector): Unit = js.native
   
   /**
@@ -145,6 +149,9 @@ object loopback extends js.Object {
     * @param {any} options (optional
     * @header loopback.createMode
     */
+  /* static member */
+  @JSImport("loopback", "loopback.createModel")
+  @js.native
   def createModel(name: String, properties: js.Any, options: js.Any): Unit = js.native
   
   /**
@@ -154,6 +161,9 @@ object loopback extends js.Object {
     * @returns {Model} The model clas
     * @header loopback.findModel(modelName
     */
+  /* static member */
+  @JSImport("loopback", "loopback.findModel")
+  @js.native
   def findModel(modelName: String): Model = js.native
   
   /**
@@ -163,6 +173,9 @@ object loopback extends js.Object {
     * @returns {Model} The model clas
     * @header loopback.getModel(modelName
     */
+  /* static member */
+  @JSImport("loopback", "loopback.getModel")
+  @js.native
   def getModel(modelName: String): Model = js.native
   
   /**
@@ -173,6 +186,9 @@ object loopback extends js.Object {
     * @returns {Model} The subclass if found or the base clas
     * @header loopback.getModelByType(modelType
     */
+  /* static member */
+  @JSImport("loopback", "loopback.getModelByType")
+  @js.native
   def getModelByType(modelType: Model): Model = js.native
   
   /**
@@ -180,7 +196,12 @@ object loopback extends js.Object {
     * @param {string} [name] The name of the data source.
     * If not provided, the `'default'` is used
     */
+  /* static member */
+  @JSImport("loopback", "loopback.memory")
+  @js.native
   def memory(): Unit = js.native
+  @JSImport("loopback", "loopback.memory")
+  @js.native
   def memory(name: String): Unit = js.native
   
   /**
@@ -188,6 +209,9 @@ object loopback extends js.Object {
     * @param {() => void} fn
     * @param {any} options (optional
     */
+  /* static member */
+  @JSImport("loopback", "loopback.remoteMethod")
+  @js.native
   def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = js.native
   
   /**
@@ -197,5 +221,8 @@ object loopback extends js.Object {
     * @param {string} path Path to the template file.
     * @returns {() => void
     */
+  /* static member */
+  @JSImport("loopback", "loopback.template")
+  @js.native
   def template(path: String): Unit = js.native
 }

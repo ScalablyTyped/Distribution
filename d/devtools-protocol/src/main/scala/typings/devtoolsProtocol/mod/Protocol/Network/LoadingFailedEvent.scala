@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadingFailedEvent extends js.Object {
+trait LoadingFailedEvent extends StObject {
   
   /**
     * The reason why loading was blocked, if any.
@@ -47,42 +48,30 @@ object LoadingFailedEvent {
   }
   
   @scala.inline
-  implicit class LoadingFailedEventOps[Self <: LoadingFailedEvent] (val x: Self) extends AnyVal {
+  implicit class LoadingFailedEventMutableBuilder[Self <: LoadingFailedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockedReason(value: BlockedReason): Self = StObject.set(x, "blockedReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedReasonUndefined: Self = StObject.set(x, "blockedReason", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorText(value: String): Self = this.set("errorText", value.asInstanceOf[js.Any])
+    def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ResourceType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedReason(value: BlockedReason): Self = this.set("blockedReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockedReason: Self = this.set("blockedReason", js.undefined)
-    
-    @scala.inline
-    def setCanceled(value: Boolean): Self = this.set("canceled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanceled: Self = this.set("canceled", js.undefined)
+    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

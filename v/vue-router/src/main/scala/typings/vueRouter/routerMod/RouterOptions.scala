@@ -1,11 +1,12 @@
 package typings.vueRouter.routerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouterOptions extends js.Object {
+trait RouterOptions extends StObject {
   
   var base: js.UndefOr[String] = js.native
   
@@ -41,77 +42,65 @@ object RouterOptions {
   }
   
   @scala.inline
-  implicit class RouterOptionsOps[Self <: RouterOptions] (val x: Self) extends AnyVal {
+  implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: String): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setLinkActiveClass(value: String): Self = StObject.set(x, "linkActiveClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallback(value: Boolean): Self = this.set("fallback", value.asInstanceOf[js.Any])
+    def setLinkActiveClassUndefined: Self = StObject.set(x, "linkActiveClass", js.undefined)
     
     @scala.inline
-    def deleteFallback: Self = this.set("fallback", js.undefined)
+    def setLinkExactActiveClass(value: String): Self = StObject.set(x, "linkExactActiveClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkActiveClass(value: String): Self = this.set("linkActiveClass", value.asInstanceOf[js.Any])
+    def setLinkExactActiveClassUndefined: Self = StObject.set(x, "linkExactActiveClass", js.undefined)
     
     @scala.inline
-    def deleteLinkActiveClass: Self = this.set("linkActiveClass", js.undefined)
+    def setMode(value: RouterMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkExactActiveClass(value: String): Self = this.set("linkExactActiveClass", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteLinkExactActiveClass: Self = this.set("linkExactActiveClass", js.undefined)
+    def setParseQuery(value: /* query */ String => js.Object): Self = StObject.set(x, "parseQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMode(value: RouterMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setParseQueryUndefined: Self = StObject.set(x, "parseQuery", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setRoutes(value: js.Array[RouteConfig]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseQuery(value: /* query */ String => js.Object): Self = this.set("parseQuery", js.Any.fromFunction1(value))
+    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
     @scala.inline
-    def deleteParseQuery: Self = this.set("parseQuery", js.undefined)
-    
-    @scala.inline
-    def setRoutesVarargs(value: RouteConfig*): Self = this.set("routes", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutes(value: js.Array[RouteConfig]): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutes: Self = this.set("routes", js.undefined)
+    def setRoutesVarargs(value: RouteConfig*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
     def setScrollBehavior(
       value: (/* to */ Route, /* from */ Route, /* savedPosition */ Position | Unit) => js.UndefOr[PositionResult | js.Promise[PositionResult] | Null]
-    ): Self = this.set("scrollBehavior", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "scrollBehavior", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteScrollBehavior: Self = this.set("scrollBehavior", js.undefined)
+    def setScrollBehaviorUndefined: Self = StObject.set(x, "scrollBehavior", js.undefined)
     
     @scala.inline
-    def setStringifyQuery(value: /* query */ js.Object => String): Self = this.set("stringifyQuery", js.Any.fromFunction1(value))
+    def setStringifyQuery(value: /* query */ js.Object => String): Self = StObject.set(x, "stringifyQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStringifyQuery: Self = this.set("stringifyQuery", js.undefined)
+    def setStringifyQueryUndefined: Self = StObject.set(x, "stringifyQuery", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CastColumnTypeOperation extends js.Object {
+trait CastColumnTypeOperation extends StObject {
   
   /**
     * Column name.
@@ -31,30 +32,18 @@ object CastColumnTypeOperation {
   }
   
   @scala.inline
-  implicit class CastColumnTypeOperationOps[Self <: CastColumnTypeOperation] (val x: Self) extends AnyVal {
+  implicit class CastColumnTypeOperationMutableBuilder[Self <: CastColumnTypeOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: TypeCastFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def setColumnName(value: ColumnName): Self = this.set("ColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewColumnType(value: ColumnDataType): Self = this.set("NewColumnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormat(value: TypeCastFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setNewColumnType(value: ColumnDataType): Self = StObject.set(x, "NewColumnType", value.asInstanceOf[js.Any])
   }
 }

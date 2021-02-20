@@ -10,6 +10,7 @@ import typings.activexMshtml.activexMshtmlNumbers.`5`
 import typings.activexMshtml.activexMshtmlNumbers.`6`
 import typings.activexMshtml.activexMshtmlNumbers.`7`
 import typings.activexMshtml.activexMshtmlNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`2`
   - typings.activexMshtml.activexMshtmlNumbers.`8`
 */
-trait _HTML_PAINT_ZORDER extends js.Object
+trait _HTML_PAINT_ZORDER extends StObject
 object _HTML_PAINT_ZORDER {
   
   @scala.inline

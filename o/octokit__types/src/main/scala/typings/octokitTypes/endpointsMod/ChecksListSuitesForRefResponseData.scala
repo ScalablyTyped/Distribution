@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.After
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChecksListSuitesForRefResponseData extends js.Object {
+trait ChecksListSuitesForRefResponseData extends StObject {
   
   var check_suites: js.Array[After] = js.native
   
@@ -21,27 +22,15 @@ object ChecksListSuitesForRefResponseData {
   }
   
   @scala.inline
-  implicit class ChecksListSuitesForRefResponseDataOps[Self <: ChecksListSuitesForRefResponseData] (val x: Self) extends AnyVal {
+  implicit class ChecksListSuitesForRefResponseDataMutableBuilder[Self <: ChecksListSuitesForRefResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheck_suites(value: js.Array[After]): Self = StObject.set(x, "check_suites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheck_suitesVarargs(value: After*): Self = StObject.set(x, "check_suites", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheck_suitesVarargs(value: After*): Self = this.set("check_suites", js.Array(value :_*))
-    
-    @scala.inline
-    def setCheck_suites(value: js.Array[After]): Self = this.set("check_suites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_count(value: Double): Self = this.set("total_count", value.asInstanceOf[js.Any])
+    def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }
 }

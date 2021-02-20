@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UniversalAdId extends js.Object {
+trait UniversalAdId extends StObject {
   
   /** The unique creative identifier. */
   var id: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object UniversalAdId {
   }
   
   @scala.inline
-  implicit class UniversalAdIdOps[Self <: UniversalAdId] (val x: Self) extends AnyVal {
+  implicit class UniversalAdIdMutableBuilder[Self <: UniversalAdId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setRegistry(value: String): Self = this.set("registry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistry: Self = this.set("registry", js.undefined)
+    def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
   }
 }

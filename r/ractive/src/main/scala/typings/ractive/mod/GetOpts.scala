@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpts extends js.Object {
+trait GetOpts extends StObject {
   
   /**
   	 * Whether or not to unwrap the value if it happens to be wrapped, returning the original value. Defaults to true.
@@ -26,30 +27,18 @@ object GetOpts {
   }
   
   @scala.inline
-  implicit class GetOptsOps[Self <: GetOpts] (val x: Self) extends AnyVal {
+  implicit class GetOptsMutableBuilder[Self <: GetOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnwrapUndefined: Self = StObject.set(x, "unwrap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnwrap(value: Boolean): Self = this.set("unwrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnwrap: Self = this.set("unwrap", js.undefined)
-    
-    @scala.inline
-    def setVirtual(value: Boolean): Self = this.set("virtual", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtual: Self = this.set("virtual", js.undefined)
+    def setVirtualUndefined: Self = StObject.set(x, "virtual", js.undefined)
   }
 }

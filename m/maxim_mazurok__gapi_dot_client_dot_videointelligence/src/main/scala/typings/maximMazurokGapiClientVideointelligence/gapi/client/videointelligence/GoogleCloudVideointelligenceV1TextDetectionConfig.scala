@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1TextDetectionConfig extends js.Object {
+trait GoogleCloudVideointelligenceV1TextDetectionConfig extends StObject {
   
   /**
     * Language hint can be specified if the language to be detected is known a priori. It can increase the accuracy of the detection. Language hint must be language code in BCP-47 format.
@@ -25,33 +26,21 @@ object GoogleCloudVideointelligenceV1TextDetectionConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1TextDetectionConfigOps[Self <: GoogleCloudVideointelligenceV1TextDetectionConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1TextDetectionConfigMutableBuilder[Self <: GoogleCloudVideointelligenceV1TextDetectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
     
     @scala.inline
-    def setLanguageHintsVarargs(value: String*): Self = this.set("languageHints", js.Array(value :_*))
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageHints(value: js.Array[String]): Self = this.set("languageHints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageHints: Self = this.set("languageHints", js.undefined)
-    
-    @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

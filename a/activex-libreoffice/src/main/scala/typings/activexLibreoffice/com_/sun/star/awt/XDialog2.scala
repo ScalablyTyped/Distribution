@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object XDialog2 {
   }
   
   @scala.inline
-  implicit class XDialog2Ops[Self <: XDialog2] (val x: Self) extends AnyVal {
+  implicit class XDialog2MutableBuilder[Self <: XDialog2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDialog(value: Double => Unit): Self = StObject.set(x, "endDialog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEndDialog(value: Double => Unit): Self = this.set("endDialog", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetHelpId(value: String => Unit): Self = this.set("setHelpId", js.Any.fromFunction1(value))
+    def setSetHelpId(value: String => Unit): Self = StObject.set(x, "setHelpId", js.Any.fromFunction1(value))
   }
 }

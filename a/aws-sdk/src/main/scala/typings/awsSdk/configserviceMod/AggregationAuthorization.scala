@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregationAuthorization extends js.Object {
+trait AggregationAuthorization extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the aggregation object.
@@ -36,42 +37,30 @@ object AggregationAuthorization {
   }
   
   @scala.inline
-  implicit class AggregationAuthorizationOps[Self <: AggregationAuthorization] (val x: Self) extends AnyVal {
+  implicit class AggregationAuthorizationMutableBuilder[Self <: AggregationAuthorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationAuthorizationArn(value: String): Self = StObject.set(x, "AggregationAuthorizationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregationAuthorizationArnUndefined: Self = StObject.set(x, "AggregationAuthorizationArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizedAccountId(value: AccountId): Self = StObject.set(x, "AuthorizedAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregationAuthorizationArn(value: String): Self = this.set("AggregationAuthorizationArn", value.asInstanceOf[js.Any])
+    def setAuthorizedAccountIdUndefined: Self = StObject.set(x, "AuthorizedAccountId", js.undefined)
     
     @scala.inline
-    def deleteAggregationAuthorizationArn: Self = this.set("AggregationAuthorizationArn", js.undefined)
+    def setAuthorizedAwsRegion(value: AwsRegion): Self = StObject.set(x, "AuthorizedAwsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedAccountId(value: AccountId): Self = this.set("AuthorizedAccountId", value.asInstanceOf[js.Any])
+    def setAuthorizedAwsRegionUndefined: Self = StObject.set(x, "AuthorizedAwsRegion", js.undefined)
     
     @scala.inline
-    def deleteAuthorizedAccountId: Self = this.set("AuthorizedAccountId", js.undefined)
+    def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedAwsRegion(value: AwsRegion): Self = this.set("AuthorizedAwsRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizedAwsRegion: Self = this.set("AuthorizedAwsRegion", js.undefined)
-    
-    @scala.inline
-    def setCreationTime(value: Date): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
   }
 }

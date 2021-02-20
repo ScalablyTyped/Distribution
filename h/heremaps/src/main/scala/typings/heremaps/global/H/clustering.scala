@@ -3,14 +3,13 @@ package typings.heremaps.global.H
 import typings.heremaps.H.clustering.Provider.Options
 import typings.heremaps.H.geo.Latitude
 import typings.heremaps.H.geo.Longitude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** clustering *****/
-@JSGlobal("H.clustering")
-@js.native
-object clustering extends js.Object {
+object clustering {
   
   /**
     * This class represents the input data structure for data points to be clustered.
@@ -19,6 +18,7 @@ object clustering extends js.Object {
     * @property wt {number} - The weight of the data point
     * @property data {*} - Data associated with this data point
     */
+  @JSGlobal("H.clustering.DataPoint")
   @js.native
   class DataPoint protected ()
     extends typings.heremaps.H.clustering.DataPoint {
@@ -41,6 +41,7 @@ object clustering extends js.Object {
     * @property min {number} - Minimum zoom level at which provider can cluster data
     * @property max {number} - Maximum zoom level at which provider can cluster data
     */
+  @JSGlobal("H.clustering.Provider")
   @js.native
   class Provider protected ()
     extends typings.heremaps.H.clustering.Provider {
@@ -52,8 +53,7 @@ object clustering extends js.Object {
     def this(dataPoints: js.Array[typings.heremaps.H.clustering.DataPoint]) = this()
     def this(dataPoints: js.Array[typings.heremaps.H.clustering.DataPoint], opt_options: Options) = this()
   }
-  @js.native
-  object Provider extends js.Object {
+  object Provider {
     
     /**
       * Enumeration represents possible clustering strategies. FASTGRID clustering is the efficient way to cluster large sets of data points.
@@ -61,8 +61,9 @@ object clustering extends js.Object {
       * on desktop devices. DYNAMICGRID clustering uses the same algorithm of clustering as the GRID, but clusters on the viewport basis is meant to be used with data sets that are subject
       * to the frequent update operations.
       */
+    @JSGlobal("H.clustering.Provider.Strategy")
     @js.native
-    object Strategy extends js.Object {
+    object Strategy extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.clustering.Provider.Strategy with Double] = js.native

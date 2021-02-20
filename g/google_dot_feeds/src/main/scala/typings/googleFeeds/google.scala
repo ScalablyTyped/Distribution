@@ -1,18 +1,16 @@
 package typings.googleFeeds
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google")
-@js.native
-object google extends js.Object {
+object google {
   
-  @js.native
-  object feeds extends js.Object {
+  object feeds {
     
     @js.native
-    trait Feed extends js.Object {
+    trait Feed extends StObject {
       
       def findFeeds(): Unit = js.native
       def findFeeds(query: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ findResult, Unit]): Unit = js.native

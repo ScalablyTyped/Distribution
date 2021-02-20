@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for the `ToneAnalyzerV3` constructor. */
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var headers: js.UndefOr[js.Object] = js.native
   
@@ -35,69 +36,57 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIam_access_token(value: String): Self = StObject.set(x, "iam_access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setIam_access_tokenUndefined: Self = StObject.set(x, "iam_access_token", js.undefined)
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setIam_apikey(value: String): Self = StObject.set(x, "iam_apikey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setIam_apikeyUndefined: Self = StObject.set(x, "iam_apikey", js.undefined)
     
     @scala.inline
-    def setIam_access_token(value: String): Self = this.set("iam_access_token", value.asInstanceOf[js.Any])
+    def setIam_url(value: String): Self = StObject.set(x, "iam_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIam_access_token: Self = this.set("iam_access_token", js.undefined)
+    def setIam_urlUndefined: Self = StObject.set(x, "iam_url", js.undefined)
     
     @scala.inline
-    def setIam_apikey(value: String): Self = this.set("iam_apikey", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIam_apikey: Self = this.set("iam_apikey", js.undefined)
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def setIam_url(value: String): Self = this.set("iam_url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIam_url: Self = this.set("iam_url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setUse_unauthenticated(value: Boolean): Self = StObject.set(x, "use_unauthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setUse_unauthenticatedUndefined: Self = StObject.set(x, "use_unauthenticated", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
     @scala.inline
-    def setUse_unauthenticated(value: Boolean): Self = this.set("use_unauthenticated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse_unauthenticated: Self = this.set("use_unauthenticated", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

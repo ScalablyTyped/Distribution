@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,30 +40,18 @@ object ASPxClientReportViewerPageLoadEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientReportViewerPageLoadEventArgsOps[Self <: ASPxClientReportViewerPageLoadEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientReportViewerPageLoadEventArgsMutableBuilder[Self <: ASPxClientReportViewerPageLoadEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsFirstPage(value: () => Boolean): Self = StObject.set(x, "IsFirstPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLastPage(value: () => Boolean): Self = StObject.set(x, "IsLastPage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageCount(value: Double): Self = StObject.set(x, "PageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstPage(value: () => Boolean): Self = this.set("IsFirstPage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsLastPage(value: () => Boolean): Self = this.set("IsLastPage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPageCount(value: Double): Self = this.set("PageCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageIndex(value: Double): Self = this.set("PageIndex", value.asInstanceOf[js.Any])
+    def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
   }
 }

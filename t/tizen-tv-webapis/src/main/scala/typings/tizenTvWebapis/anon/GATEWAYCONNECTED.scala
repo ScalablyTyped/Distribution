@@ -8,12 +8,13 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`6`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`7`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GATEWAYCONNECTED extends js.Object {
+trait GATEWAYCONNECTED extends StObject {
   
   /**
     * Gateway connected
@@ -73,42 +74,30 @@ object GATEWAYCONNECTED {
   }
   
   @scala.inline
-  implicit class GATEWAYCONNECTEDOps[Self <: GATEWAYCONNECTED] (val x: Self) extends AnyVal {
+  implicit class GATEWAYCONNECTEDMutableBuilder[Self <: GATEWAYCONNECTED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGATEWAY_CONNECTED(value: `4`): Self = StObject.set(x, "GATEWAY_CONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGATEWAY_DISCONNECTED(value: `5`): Self = StObject.set(x, "GATEWAY_DISCONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLAN_CABLE_ATTACHED(value: `1`): Self = StObject.set(x, "LAN_CABLE_ATTACHED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGATEWAY_CONNECTED(value: `4`): Self = this.set("GATEWAY_CONNECTED", value.asInstanceOf[js.Any])
+    def setLAN_CABLE_DETACHED(value: `2`): Self = StObject.set(x, "LAN_CABLE_DETACHED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGATEWAY_DISCONNECTED(value: `5`): Self = this.set("GATEWAY_DISCONNECTED", value.asInstanceOf[js.Any])
+    def setLAN_CABLE_STATE_UNKNOWN(value: `3`): Self = StObject.set(x, "LAN_CABLE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLAN_CABLE_ATTACHED(value: `1`): Self = this.set("LAN_CABLE_ATTACHED", value.asInstanceOf[js.Any])
+    def setWIFI_MODULE_STATE_ATTACHED(value: `6`): Self = StObject.set(x, "WIFI_MODULE_STATE_ATTACHED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLAN_CABLE_DETACHED(value: `2`): Self = this.set("LAN_CABLE_DETACHED", value.asInstanceOf[js.Any])
+    def setWIFI_MODULE_STATE_DETACHED(value: `7`): Self = StObject.set(x, "WIFI_MODULE_STATE_DETACHED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLAN_CABLE_STATE_UNKNOWN(value: `3`): Self = this.set("LAN_CABLE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIFI_MODULE_STATE_ATTACHED(value: `6`): Self = this.set("WIFI_MODULE_STATE_ATTACHED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIFI_MODULE_STATE_DETACHED(value: `7`): Self = this.set("WIFI_MODULE_STATE_DETACHED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIFI_MODULE_STATE_UNKNOWN(value: `8`): Self = this.set("WIFI_MODULE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
+    def setWIFI_MODULE_STATE_UNKNOWN(value: `8`): Self = StObject.set(x, "WIFI_MODULE_STATE_UNKNOWN", value.asInstanceOf[js.Any])
   }
 }

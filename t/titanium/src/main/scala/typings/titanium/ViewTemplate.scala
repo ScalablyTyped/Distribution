@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Template that represents a view subcomponent of an <ItemTemplate>.
   */
 @js.native
-trait ViewTemplate extends js.Object {
+trait ViewTemplate extends StObject {
   
   /**
     * View's ID (or set of IDs) used for data binding. This value must be unique.
@@ -45,48 +46,36 @@ object ViewTemplate {
   }
   
   @scala.inline
-  implicit class ViewTemplateOps[Self <: ViewTemplate] (val x: Self) extends AnyVal {
+  implicit class ViewTemplateMutableBuilder[Self <: ViewTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindId(value: String): Self = StObject.set(x, "bindId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindIdUndefined: Self = StObject.set(x, "bindId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildTemplates(value: js.Array[ViewTemplate]): Self = StObject.set(x, "childTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setChildTemplatesUndefined: Self = StObject.set(x, "childTemplates", js.undefined)
     
     @scala.inline
-    def setBindId(value: String): Self = this.set("bindId", value.asInstanceOf[js.Any])
+    def setChildTemplatesVarargs(value: ViewTemplate*): Self = StObject.set(x, "childTemplates", js.Array(value :_*))
     
     @scala.inline
-    def deleteBindId: Self = this.set("bindId", js.undefined)
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildTemplatesVarargs(value: ViewTemplate*): Self = this.set("childTemplates", js.Array(value :_*))
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setChildTemplates(value: js.Array[ViewTemplate]): Self = this.set("childTemplates", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildTemplates: Self = this.set("childTemplates", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

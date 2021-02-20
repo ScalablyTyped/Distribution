@@ -1,5 +1,6 @@
 package typings.photonui.global.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class SpriteSheet ()
   extends typings.photonui.photonui.SpriteSheet
-/* static members */
-@JSGlobal("photonui.SpriteSheet")
-@js.native
-object SpriteSheet extends js.Object {
+object SpriteSheet {
   
+  /* static member */
+  @JSGlobal("photonui.SpriteSheet.getSpriteSheet")
+  @js.native
   def getSpriteSheet(name: String): typings.photonui.photonui.SpriteSheet = js.native
 }

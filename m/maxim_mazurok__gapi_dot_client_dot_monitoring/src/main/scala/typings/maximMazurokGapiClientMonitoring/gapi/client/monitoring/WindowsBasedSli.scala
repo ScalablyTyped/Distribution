@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsBasedSli extends js.Object {
+trait WindowsBasedSli extends StObject {
   
   /** A monitoring filter (https://cloud.google.com/monitoring/api/v3/filters) specifying a TimeSeries with ValueType = BOOL. The window is good if any true values appear in the window. */
   var goodBadMetricFilter: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object WindowsBasedSli {
   }
   
   @scala.inline
-  implicit class WindowsBasedSliOps[Self <: WindowsBasedSli] (val x: Self) extends AnyVal {
+  implicit class WindowsBasedSliMutableBuilder[Self <: WindowsBasedSli] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGoodBadMetricFilter(value: String): Self = StObject.set(x, "goodBadMetricFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGoodBadMetricFilterUndefined: Self = StObject.set(x, "goodBadMetricFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoodTotalRatioThreshold(value: PerformanceThreshold): Self = StObject.set(x, "goodTotalRatioThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoodBadMetricFilter(value: String): Self = this.set("goodBadMetricFilter", value.asInstanceOf[js.Any])
+    def setGoodTotalRatioThresholdUndefined: Self = StObject.set(x, "goodTotalRatioThreshold", js.undefined)
     
     @scala.inline
-    def deleteGoodBadMetricFilter: Self = this.set("goodBadMetricFilter", js.undefined)
+    def setMetricMeanInRange(value: MetricRange): Self = StObject.set(x, "metricMeanInRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoodTotalRatioThreshold(value: PerformanceThreshold): Self = this.set("goodTotalRatioThreshold", value.asInstanceOf[js.Any])
+    def setMetricMeanInRangeUndefined: Self = StObject.set(x, "metricMeanInRange", js.undefined)
     
     @scala.inline
-    def deleteGoodTotalRatioThreshold: Self = this.set("goodTotalRatioThreshold", js.undefined)
+    def setMetricSumInRange(value: MetricRange): Self = StObject.set(x, "metricSumInRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricMeanInRange(value: MetricRange): Self = this.set("metricMeanInRange", value.asInstanceOf[js.Any])
+    def setMetricSumInRangeUndefined: Self = StObject.set(x, "metricSumInRange", js.undefined)
     
     @scala.inline
-    def deleteMetricMeanInRange: Self = this.set("metricMeanInRange", js.undefined)
+    def setWindowPeriod(value: String): Self = StObject.set(x, "windowPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricSumInRange(value: MetricRange): Self = this.set("metricSumInRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricSumInRange: Self = this.set("metricSumInRange", js.undefined)
-    
-    @scala.inline
-    def setWindowPeriod(value: String): Self = this.set("windowPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowPeriod: Self = this.set("windowPeriod", js.undefined)
+    def setWindowPeriodUndefined: Self = StObject.set(x, "windowPeriod", js.undefined)
   }
 }

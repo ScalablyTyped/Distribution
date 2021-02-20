@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.Audio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an equalizer band for the equalizer effect. */
 @js.native
-trait EqualizerBand extends js.Object {
+trait EqualizerBand extends StObject {
   
   /** Gets or sets the bandwidth for the equalizer band. */
   var bandwidth: Double = js.native
@@ -26,27 +27,15 @@ object EqualizerBand {
   }
   
   @scala.inline
-  implicit class EqualizerBandOps[Self <: EqualizerBand] (val x: Self) extends AnyVal {
+  implicit class EqualizerBandMutableBuilder[Self <: EqualizerBand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrequencyCenter(value: Double): Self = StObject.set(x, "frequencyCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBandwidth(value: Double): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrequencyCenter(value: Double): Self = this.set("frequencyCenter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGain(value: Double): Self = this.set("gain", value.asInstanceOf[js.Any])
+    def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
   }
 }

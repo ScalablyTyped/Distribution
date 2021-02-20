@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/refractBlock", JSImport.Namespace)
-@js.native
-object refractBlockMod extends js.Object {
+object refractBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/refractBlock", "RefractBlock")
   @js.native
   class RefractBlock protected () extends NodeMaterialBlock {
     /**

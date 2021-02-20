@@ -2,6 +2,7 @@ package typings.qlikEngineapi.EngineAPI
 
 import typings.qlikEngineapi.qlikEngineapiStrings.Utf16
 import typings.qlikEngineapi.qlikEngineapiStrings.Utf8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchCombinationOptions...
   */
 @js.native
-trait ISearchCombinationOptions extends js.Object {
+trait ISearchCombinationOptions extends StObject {
   
   /**
     * For SearchSuggest method, this array is empty.
@@ -62,39 +63,27 @@ object ISearchCombinationOptions {
   }
   
   @scala.inline
-  implicit class ISearchCombinationOptionsOps[Self <: ISearchCombinationOptions] (val x: Self) extends AnyVal {
+  implicit class ISearchCombinationOptionsMutableBuilder[Self <: ISearchCombinationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttributesUndefined: Self = StObject.set(x, "qAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setQCharEncoding(value: Utf8 | Utf16): Self = this.set("qCharEncoding", value.asInstanceOf[js.Any])
+    def setQCharEncoding(value: Utf8 | Utf16): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQContext(value: ContextType): Self = this.set("qContext", value.asInstanceOf[js.Any])
+    def setQContext(value: ContextType): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSearchFieldsVarargs(value: String*): Self = this.set("qSearchFields", js.Array(value :_*))
+    def setQSearchFields(value: js.Array[String]): Self = StObject.set(x, "qSearchFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSearchFields(value: js.Array[String]): Self = this.set("qSearchFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQAttributesVarargs(value: String*): Self = this.set("qAttributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setQAttributes(value: js.Array[String]): Self = this.set("qAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQAttributes: Self = this.set("qAttributes", js.undefined)
+    def setQSearchFieldsVarargs(value: String*): Self = StObject.set(x, "qSearchFields", js.Array(value :_*))
   }
 }

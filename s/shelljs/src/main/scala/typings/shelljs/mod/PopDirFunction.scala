@@ -2,12 +2,13 @@ package typings.shelljs.mod
 
 import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopDirFunction extends js.Object {
+trait PopDirFunction extends StObject {
   
   /**
     * When no arguments are given, popd removes the top directory from the stack

@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalGlyphOrientation extends js.Object
+sealed trait VerticalGlyphOrientation extends StObject
 @JSGlobal("__esri.CIM.VerticalGlyphOrientation")
 @js.native
-object VerticalGlyphOrientation extends js.Object {
+object VerticalGlyphOrientation extends StObject {
   
   /**
     * Align right.

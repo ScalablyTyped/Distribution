@@ -14,26 +14,32 @@ import typings.vexdb.vexdbStrings.rankings
 import typings.vexdb.vexdbStrings.season_rankings
 import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vexdb/out/methods/size", JSImport.Namespace)
-@js.native
-object sizeMod extends js.Object {
+object sizeMod {
   
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_awards(endpoint: awards, params: AwardsRequestObject): js.Promise[Double] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_events(endpoint: events, params: EventsRequestObject): js.Promise[Double] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_matches(endpoint: matches, params: MatchesRequestObject): js.Promise[Double] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_rankings(endpoint: rankings, params: RankingsRequestObject): js.Promise[Double] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_seasonrankings(endpoint: season_rankings, params: SeasonRankingsRequestObject): js.Promise[Double] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_skills(endpoint: skills, params: SkillsRequestObject): js.Promise[Double] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/size", JSImport.Default)
+  @js.native
   def default_teams(endpoint: teams, params: TeamsRequestObject): js.Promise[Double] = js.native
 }

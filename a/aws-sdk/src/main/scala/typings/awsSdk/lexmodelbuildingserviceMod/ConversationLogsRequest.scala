@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConversationLogsRequest extends js.Object {
+trait ConversationLogsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role with permission to write to your CloudWatch Logs for text logs and your S3 bucket for audio logs. If audio encryption is enabled, this role also provides access permission for the AWS KMS key used for encrypting audio logs. For more information, see Creating an IAM Role and Policy for Conversation Logs.
@@ -26,27 +27,15 @@ object ConversationLogsRequest {
   }
   
   @scala.inline
-  implicit class ConversationLogsRequestOps[Self <: ConversationLogsRequest] (val x: Self) extends AnyVal {
+  implicit class ConversationLogsRequestMutableBuilder[Self <: ConversationLogsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogSettings(value: LogSettingsRequestList): Self = StObject.set(x, "logSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIamRoleArn(value: IamRoleArn): Self = this.set("iamRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogSettingsVarargs(value: LogSettingsRequest*): Self = this.set("logSettings", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogSettings(value: LogSettingsRequestList): Self = this.set("logSettings", value.asInstanceOf[js.Any])
+    def setLogSettingsVarargs(value: LogSettingsRequest*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
   }
 }

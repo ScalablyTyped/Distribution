@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SummonerSpellDto extends js.Object {
+trait SummonerSpellDto extends StObject {
   
   var cooldown: js.Array[Double] = js.native
   
@@ -86,108 +87,96 @@ object SummonerSpellDto {
   }
   
   @scala.inline
-  implicit class SummonerSpellDtoOps[Self <: SummonerSpellDto] (val x: Self) extends AnyVal {
+  implicit class SummonerSpellDtoMutableBuilder[Self <: SummonerSpellDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCooldown(value: js.Array[Double]): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCooldownBurn(value: String): Self = StObject.set(x, "cooldownBurn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCooldownVarargs(value: Double*): Self = StObject.set(x, "cooldown", js.Array(value :_*))
     
     @scala.inline
-    def setCooldownVarargs(value: Double*): Self = this.set("cooldown", js.Array(value :_*))
+    def setCost(value: js.Array[Double]): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldown(value: js.Array[Double]): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setCostBurn(value: String): Self = StObject.set(x, "costBurn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldownBurn(value: String): Self = this.set("cooldownBurn", value.asInstanceOf[js.Any])
+    def setCostType(value: String): Self = StObject.set(x, "costType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostVarargs(value: Double*): Self = this.set("cost", js.Array(value :_*))
+    def setCostVarargs(value: Double*): Self = StObject.set(x, "cost", js.Array(value :_*))
     
     @scala.inline
-    def setCost(value: js.Array[Double]): Self = this.set("cost", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostBurn(value: String): Self = this.set("costBurn", value.asInstanceOf[js.Any])
+    def setEffect(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCostType(value: String): Self = this.set("costType", value.asInstanceOf[js.Any])
+    def setEffectBurn(value: js.Array[String]): Self = StObject.set(x, "effectBurn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEffectBurnVarargs(value: String*): Self = StObject.set(x, "effectBurn", js.Array(value :_*))
     
     @scala.inline
-    def setEffectVarargs(value: js.Array[Double]*): Self = this.set("effect", js.Array(value :_*))
+    def setEffectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "effect", js.Array(value :_*))
     
     @scala.inline
-    def setEffect(value: js.Array[js.Array[Double]]): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectBurnVarargs(value: String*): Self = this.set("effectBurn", js.Array(value :_*))
+    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectBurn(value: js.Array[String]): Self = this.set("effectBurn", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLeveltip(value: LevelTipDto): Self = StObject.set(x, "leveltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageDto): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setMaxrank(value: Double): Self = StObject.set(x, "maxrank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeveltip(value: LevelTipDto): Self = this.set("leveltip", value.asInstanceOf[js.Any])
+    def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
     @scala.inline
-    def setMaxrank(value: Double): Self = this.set("maxrank", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModesVarargs(value: String*): Self = this.set("modes", js.Array(value :_*))
+    def setRange(value: js.Array[Double] | String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModes(value: js.Array[String]): Self = this.set("modes", value.asInstanceOf[js.Any])
+    def setRangeBurn(value: String): Self = StObject.set(x, "rangeBurn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     
     @scala.inline
-    def setRangeVarargs(value: Double*): Self = this.set("range", js.Array(value :_*))
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Array[Double] | String): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setSanitizedDescription(value: String): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeBurn(value: String): Self = this.set("rangeBurn", value.asInstanceOf[js.Any])
+    def setSanitizedTooltip(value: String): Self = StObject.set(x, "sanitizedTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setSummonerLevel(value: Double): Self = StObject.set(x, "summonerLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSanitizedDescription(value: String): Self = this.set("sanitizedDescription", value.asInstanceOf[js.Any])
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSanitizedTooltip(value: String): Self = this.set("sanitizedTooltip", value.asInstanceOf[js.Any])
+    def setVars(value: js.Array[SpellVarsDto]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummonerLevel(value: Double): Self = this.set("summonerLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVarsVarargs(value: SpellVarsDto*): Self = this.set("vars", js.Array(value :_*))
-    
-    @scala.inline
-    def setVars(value: js.Array[SpellVarsDto]): Self = this.set("vars", value.asInstanceOf[js.Any])
+    def setVarsVarargs(value: SpellVarsDto*): Self = StObject.set(x, "vars", js.Array(value :_*))
   }
 }

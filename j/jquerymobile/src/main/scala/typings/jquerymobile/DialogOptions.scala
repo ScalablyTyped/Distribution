@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogOptions extends js.Object {
+trait DialogOptions extends StObject {
   
   var closeBtn: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object DialogOptions {
   }
   
   @scala.inline
-  implicit class DialogOptionsOps[Self <: DialogOptions] (val x: Self) extends AnyVal {
+  implicit class DialogOptionsMutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseBtn(value: String): Self = StObject.set(x, "closeBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseBtnText(value: String): Self = StObject.set(x, "closeBtnText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseBtnTextUndefined: Self = StObject.set(x, "closeBtnText", js.undefined)
     
     @scala.inline
-    def setCloseBtn(value: String): Self = this.set("closeBtn", value.asInstanceOf[js.Any])
+    def setCloseBtnUndefined: Self = StObject.set(x, "closeBtn", js.undefined)
     
     @scala.inline
-    def deleteCloseBtn: Self = this.set("closeBtn", js.undefined)
+    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBtnText(value: String): Self = this.set("closeBtnText", value.asInstanceOf[js.Any])
+    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     @scala.inline
-    def deleteCloseBtnText: Self = this.set("closeBtnText", js.undefined)
+    def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorners(value: Boolean): Self = this.set("corners", value.asInstanceOf[js.Any])
+    def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
     
     @scala.inline
-    def deleteCorners: Self = this.set("corners", js.undefined)
+    def setOverlayTheme(value: String): Self = StObject.set(x, "overlayTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitSelector(value: String): Self = this.set("initSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitSelector: Self = this.set("initSelector", js.undefined)
-    
-    @scala.inline
-    def setOverlayTheme(value: String): Self = this.set("overlayTheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverlayTheme: Self = this.set("overlayTheme", js.undefined)
+    def setOverlayThemeUndefined: Self = StObject.set(x, "overlayTheme", js.undefined)
   }
 }

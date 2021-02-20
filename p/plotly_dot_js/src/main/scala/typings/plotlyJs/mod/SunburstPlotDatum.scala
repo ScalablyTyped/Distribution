@@ -1,11 +1,12 @@
 package typings.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SunburstPlotDatum extends js.Object {
+trait SunburstPlotDatum extends StObject {
   
   var color: Double = js.native
   
@@ -62,63 +63,51 @@ object SunburstPlotDatum {
   }
   
   @scala.inline
-  implicit class SunburstPlotDatumOps[Self <: SunburstPlotDatum] (val x: Self) extends AnyVal {
+  implicit class SunburstPlotDatumMutableBuilder[Self <: SunburstPlotDatum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Double): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveNumber(value: Double): Self = this.set("curveNumber", value.asInstanceOf[js.Any])
+    def setFullData(value: Data): Self = StObject.set(x, "fullData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setHovertext(value: String): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntry(value: String): Self = this.set("entry", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullData(value: Data): Self = this.set("fullData", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHovertext(value: String): Self = this.set("hovertext", value.asInstanceOf[js.Any])
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPercentEntry(value: Double): Self = StObject.set(x, "percentEntry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setPercentParent(value: Double): Self = StObject.set(x, "percentParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setPercentRoot(value: Double): Self = StObject.set(x, "percentRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentEntry(value: Double): Self = this.set("percentEntry", value.asInstanceOf[js.Any])
+    def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentParent(value: Double): Self = this.set("percentParent", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentRoot(value: Double): Self = this.set("percentRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPointNumber(value: Double): Self = this.set("pointNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

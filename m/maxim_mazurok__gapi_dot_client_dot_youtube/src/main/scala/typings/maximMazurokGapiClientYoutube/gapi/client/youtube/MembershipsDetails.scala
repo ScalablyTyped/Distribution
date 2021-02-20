@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MembershipsDetails extends js.Object {
+trait MembershipsDetails extends StObject {
   
   /** Ids of all levels that the user has access to. This includes the currently active level and all other levels that are included because of a higher purchase. */
   var accessibleLevels: js.UndefOr[js.Array[String]] = js.native
@@ -31,54 +32,42 @@ object MembershipsDetails {
   }
   
   @scala.inline
-  implicit class MembershipsDetailsOps[Self <: MembershipsDetails] (val x: Self) extends AnyVal {
+  implicit class MembershipsDetailsMutableBuilder[Self <: MembershipsDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleLevels(value: js.Array[String]): Self = StObject.set(x, "accessibleLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleLevelsUndefined: Self = StObject.set(x, "accessibleLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibleLevelsVarargs(value: String*): Self = StObject.set(x, "accessibleLevels", js.Array(value :_*))
     
     @scala.inline
-    def setAccessibleLevelsVarargs(value: String*): Self = this.set("accessibleLevels", js.Array(value :_*))
+    def setHighestAccessibleLevel(value: String): Self = StObject.set(x, "highestAccessibleLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleLevels(value: js.Array[String]): Self = this.set("accessibleLevels", value.asInstanceOf[js.Any])
+    def setHighestAccessibleLevelDisplayName(value: String): Self = StObject.set(x, "highestAccessibleLevelDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibleLevels: Self = this.set("accessibleLevels", js.undefined)
+    def setHighestAccessibleLevelDisplayNameUndefined: Self = StObject.set(x, "highestAccessibleLevelDisplayName", js.undefined)
     
     @scala.inline
-    def setHighestAccessibleLevel(value: String): Self = this.set("highestAccessibleLevel", value.asInstanceOf[js.Any])
+    def setHighestAccessibleLevelUndefined: Self = StObject.set(x, "highestAccessibleLevel", js.undefined)
     
     @scala.inline
-    def deleteHighestAccessibleLevel: Self = this.set("highestAccessibleLevel", js.undefined)
+    def setMembershipsDuration(value: MembershipsDuration): Self = StObject.set(x, "membershipsDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighestAccessibleLevelDisplayName(value: String): Self = this.set("highestAccessibleLevelDisplayName", value.asInstanceOf[js.Any])
+    def setMembershipsDurationAtLevels(value: js.Array[MembershipsDurationAtLevel]): Self = StObject.set(x, "membershipsDurationAtLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighestAccessibleLevelDisplayName: Self = this.set("highestAccessibleLevelDisplayName", js.undefined)
+    def setMembershipsDurationAtLevelsUndefined: Self = StObject.set(x, "membershipsDurationAtLevels", js.undefined)
     
     @scala.inline
-    def setMembershipsDuration(value: MembershipsDuration): Self = this.set("membershipsDuration", value.asInstanceOf[js.Any])
+    def setMembershipsDurationAtLevelsVarargs(value: MembershipsDurationAtLevel*): Self = StObject.set(x, "membershipsDurationAtLevels", js.Array(value :_*))
     
     @scala.inline
-    def deleteMembershipsDuration: Self = this.set("membershipsDuration", js.undefined)
-    
-    @scala.inline
-    def setMembershipsDurationAtLevelsVarargs(value: MembershipsDurationAtLevel*): Self = this.set("membershipsDurationAtLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembershipsDurationAtLevels(value: js.Array[MembershipsDurationAtLevel]): Self = this.set("membershipsDurationAtLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembershipsDurationAtLevels: Self = this.set("membershipsDurationAtLevels", js.undefined)
+    def setMembershipsDurationUndefined: Self = StObject.set(x, "membershipsDuration", js.undefined)
   }
 }

@@ -1,24 +1,41 @@
 package typings.string
 
 import typings.string.anon.Delimiter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("string", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("string", JSImport.Namespace)
+  @js.native
   def apply(o: js.Any): StringJS = js.native
   
-  var TMPL_CLOSE: String = js.native
+  @JSImport("string", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var TMPL_OPEN: String = js.native
+  @JSImport("string", "TMPL_CLOSE")
+  @js.native
+  def TMPL_CLOSE: String = js.native
+  @scala.inline
+  def TMPL_CLOSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TMPL_CLOSE")(x.asInstanceOf[js.Any])
   
-  var VERSION: String = js.native
+  @JSImport("string", "TMPL_OPEN")
+  @js.native
+  def TMPL_OPEN: String = js.native
+  @scala.inline
+  def TMPL_OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TMPL_OPEN")(x.asInstanceOf[js.Any])
+  
+  @JSImport("string", "VERSION")
+  @js.native
+  def VERSION: String = js.native
+  @scala.inline
+  def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait StringJS extends js.Object {
+  trait StringJS extends StObject {
     
     def between(left: String): StringJS = js.native
     def between(left: String, right: String): StringJS = js.native

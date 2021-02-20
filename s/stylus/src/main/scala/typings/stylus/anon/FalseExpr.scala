@@ -1,12 +1,13 @@
 package typings.stylus.anon
 
 import typings.stylus.mod.Stylus.Nodes.Expression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FalseExpr extends js.Object {
+trait FalseExpr extends StObject {
   
   var __type: String = js.native
   
@@ -39,39 +40,27 @@ object FalseExpr {
   }
   
   @scala.inline
-  implicit class FalseExprOps[Self <: FalseExpr] (val x: Self) extends AnyVal {
+  implicit class FalseExprMutableBuilder[Self <: FalseExpr] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFalseExpr(value: Expression): Self = StObject.set(x, "falseExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__type(value: String): Self = this.set("__type", value.asInstanceOf[js.Any])
+    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalseExpr(value: Expression): Self = this.set("falseExpr", value.asInstanceOf[js.Any])
+    def setTrueExpr(value: Expression): Self = StObject.set(x, "trueExpr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineno(value: Double): Self = this.set("lineno", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOp(value: String): Self = this.set("op", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrueExpr(value: Expression): Self = this.set("trueExpr", value.asInstanceOf[js.Any])
+    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

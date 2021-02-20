@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ClientRequest ()
   extends typings.sharepoint.SP.ClientRequest
-/* static members */
-@JSGlobal("SP.ClientRequest")
-@js.native
-object ClientRequest extends js.Object {
+object ClientRequest {
   
-  def get_nextSequenceId(): Double = js.native
+  /* static member */
+  @JSGlobal("SP.ClientRequest.get_nextSequenceId")
+  @js.native
+  def getNextSequenceId(): Double = js.native
 }

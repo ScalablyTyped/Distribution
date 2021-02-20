@@ -3,12 +3,13 @@ package typings.qlik.mod
 import typings.qlik.anon.Data
 import typings.qlik.qlikStrings.accordion
 import typings.qlik.qlikStrings.items
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Definition extends js.Object {
+trait Definition extends StObject {
   
   var component: accordion = js.native
   
@@ -26,27 +27,15 @@ object Definition {
   }
   
   @scala.inline
-  implicit class DefinitionOps[Self <: Definition] (val x: Self) extends AnyVal {
+  implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: accordion): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: Data): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponent(value: accordion): Self = this.set("component", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItems(value: Data): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: items): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

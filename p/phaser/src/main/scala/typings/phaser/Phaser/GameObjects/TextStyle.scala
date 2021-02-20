@@ -5,6 +5,7 @@ import typings.phaser.TextStyleWordWrapCallback
 import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * instantiate one yourself.
   */
 @js.native
-trait TextStyle extends js.Object {
+trait TextStyle extends StObject {
   
   /**
     * The text alignment.

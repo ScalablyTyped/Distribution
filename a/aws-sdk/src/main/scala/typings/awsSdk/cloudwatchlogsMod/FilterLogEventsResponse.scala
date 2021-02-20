@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterLogEventsResponse extends js.Object {
+trait FilterLogEventsResponse extends StObject {
   
   /**
     * The matched events.
@@ -31,42 +32,30 @@ object FilterLogEventsResponse {
   }
   
   @scala.inline
-  implicit class FilterLogEventsResponseOps[Self <: FilterLogEventsResponse] (val x: Self) extends AnyVal {
+  implicit class FilterLogEventsResponseMutableBuilder[Self <: FilterLogEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: FilteredLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventsVarargs(value: FilteredLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: FilteredLogEvent*): Self = this.set("events", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: FilteredLogEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setSearchedLogStreams(value: SearchedLogStreams): Self = StObject.set(x, "searchedLogStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setSearchedLogStreamsUndefined: Self = StObject.set(x, "searchedLogStreams", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = this.set("searchedLogStreams", js.Array(value :_*))
-    
-    @scala.inline
-    def setSearchedLogStreams(value: SearchedLogStreams): Self = this.set("searchedLogStreams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchedLogStreams: Self = this.set("searchedLogStreams", js.undefined)
+    def setSearchedLogStreamsVarargs(value: SearchedLogStream*): Self = StObject.set(x, "searchedLogStreams", js.Array(value :_*))
   }
 }

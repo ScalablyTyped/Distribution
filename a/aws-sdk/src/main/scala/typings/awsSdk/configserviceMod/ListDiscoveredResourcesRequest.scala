@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListDiscoveredResourcesRequest extends js.Object {
+trait ListDiscoveredResourcesRequest extends StObject {
   
   /**
     * Specifies whether AWS Config includes deleted resources in the results. By default, deleted resources are not included.
@@ -46,54 +47,42 @@ object ListDiscoveredResourcesRequest {
   }
   
   @scala.inline
-  implicit class ListDiscoveredResourcesRequestOps[Self <: ListDiscoveredResourcesRequest] (val x: Self) extends AnyVal {
+  implicit class ListDiscoveredResourcesRequestMutableBuilder[Self <: ListDiscoveredResourcesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeDeletedResources(value: Boolean): Self = StObject.set(x, "includeDeletedResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeDeletedResourcesUndefined: Self = StObject.set(x, "includeDeletedResources", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setIncludeDeletedResources(value: Boolean): Self = this.set("includeDeletedResources", value.asInstanceOf[js.Any])
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeDeletedResources: Self = this.set("includeDeletedResources", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setResourceIds(value: ResourceIdList): Self = StObject.set(x, "resourceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setResourceIdsVarargs(value: ResourceId*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdsVarargs(value: ResourceId*): Self = this.set("resourceIds", js.Array(value :_*))
+    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
     @scala.inline
-    def setResourceIds(value: ResourceIdList): Self = this.set("resourceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceIds: Self = this.set("resourceIds", js.undefined)
-    
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

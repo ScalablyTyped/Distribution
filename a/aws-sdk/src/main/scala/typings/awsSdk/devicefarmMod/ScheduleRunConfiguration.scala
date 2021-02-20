@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleRunConfiguration extends js.Object {
+trait ScheduleRunConfiguration extends StObject {
   
   /**
     * A list of upload ARNs for app packages to be installed with your app.
@@ -61,78 +62,66 @@ object ScheduleRunConfiguration {
   }
   
   @scala.inline
-  implicit class ScheduleRunConfigurationOps[Self <: ScheduleRunConfiguration] (val x: Self) extends AnyVal {
+  implicit class ScheduleRunConfigurationMutableBuilder[Self <: ScheduleRunConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuxiliaryApps(value: AmazonResourceNames): Self = StObject.set(x, "auxiliaryApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuxiliaryAppsUndefined: Self = StObject.set(x, "auxiliaryApps", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuxiliaryAppsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "auxiliaryApps", js.Array(value :_*))
     
     @scala.inline
-    def setAuxiliaryAppsVarargs(value: AmazonResourceName*): Self = this.set("auxiliaryApps", js.Array(value :_*))
+    def setBillingMethod(value: BillingMethod): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuxiliaryApps(value: AmazonResourceNames): Self = this.set("auxiliaryApps", value.asInstanceOf[js.Any])
+    def setBillingMethodUndefined: Self = StObject.set(x, "billingMethod", js.undefined)
     
     @scala.inline
-    def deleteAuxiliaryApps: Self = this.set("auxiliaryApps", js.undefined)
+    def setCustomerArtifactPaths(value: CustomerArtifactPaths): Self = StObject.set(x, "customerArtifactPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingMethod(value: BillingMethod): Self = this.set("billingMethod", value.asInstanceOf[js.Any])
+    def setCustomerArtifactPathsUndefined: Self = StObject.set(x, "customerArtifactPaths", js.undefined)
     
     @scala.inline
-    def deleteBillingMethod: Self = this.set("billingMethod", js.undefined)
+    def setExtraDataPackageArn(value: AmazonResourceName): Self = StObject.set(x, "extraDataPackageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerArtifactPaths(value: CustomerArtifactPaths): Self = this.set("customerArtifactPaths", value.asInstanceOf[js.Any])
+    def setExtraDataPackageArnUndefined: Self = StObject.set(x, "extraDataPackageArn", js.undefined)
     
     @scala.inline
-    def deleteCustomerArtifactPaths: Self = this.set("customerArtifactPaths", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraDataPackageArn(value: AmazonResourceName): Self = this.set("extraDataPackageArn", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteExtraDataPackageArn: Self = this.set("extraDataPackageArn", js.undefined)
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setNetworkProfileArn(value: AmazonResourceName): Self = StObject.set(x, "networkProfileArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNetworkProfileArnUndefined: Self = StObject.set(x, "networkProfileArn", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRadios(value: Radios): Self = StObject.set(x, "radios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkProfileArn(value: AmazonResourceName): Self = this.set("networkProfileArn", value.asInstanceOf[js.Any])
+    def setRadiosUndefined: Self = StObject.set(x, "radios", js.undefined)
     
     @scala.inline
-    def deleteNetworkProfileArn: Self = this.set("networkProfileArn", js.undefined)
+    def setVpceConfigurationArns(value: AmazonResourceNames): Self = StObject.set(x, "vpceConfigurationArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadios(value: Radios): Self = this.set("radios", value.asInstanceOf[js.Any])
+    def setVpceConfigurationArnsUndefined: Self = StObject.set(x, "vpceConfigurationArns", js.undefined)
     
     @scala.inline
-    def deleteRadios: Self = this.set("radios", js.undefined)
-    
-    @scala.inline
-    def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = this.set("vpceConfigurationArns", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpceConfigurationArns(value: AmazonResourceNames): Self = this.set("vpceConfigurationArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpceConfigurationArns: Self = this.set("vpceConfigurationArns", js.undefined)
+    def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = StObject.set(x, "vpceConfigurationArns", js.Array(value :_*))
   }
 }

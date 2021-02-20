@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.StateACL> */
 @js.native
-trait PartialStateACL extends js.Object {
+trait PartialStateACL extends StObject {
   
   var `object`: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object PartialStateACL {
   }
   
   @scala.inline
-  implicit class PartialStateACLOps[Self <: PartialStateACL] (val x: Self) extends AnyVal {
+  implicit class PartialStateACLMutableBuilder[Self <: PartialStateACL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObject(value: Double): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Double): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setOwnerGroup(value: String): Self = StObject.set(x, "ownerGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteObject: Self = this.set("object", js.undefined)
+    def setOwnerGroupUndefined: Self = StObject.set(x, "ownerGroup", js.undefined)
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerGroup(value: String): Self = this.set("ownerGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerGroup: Self = this.set("ownerGroup", js.undefined)
-    
-    @scala.inline
-    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

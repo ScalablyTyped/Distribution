@@ -1,12 +1,13 @@
 package typings.videoJs.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "ReadyState")
+@JSImport("video.js", "default.ReadyState")
 @js.native
-object ReadyState extends js.Object {
+object ReadyState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.videoJs.mod.videojs.ReadyState with Double] = js.native

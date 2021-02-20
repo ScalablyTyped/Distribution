@@ -5,12 +5,13 @@ import typings.babylonjs.anon.Y
 import typings.std.AudioNode
 import typings.std.Float32Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Analyser extends js.Object {
+trait Analyser extends StObject {
   
   /**
     * Gets or sets the bar graph amplitude
@@ -142,84 +143,72 @@ object Analyser {
   }
   
   @scala.inline
-  implicit class AnalyserOps[Self <: Analyser] (val x: Self) extends AnyVal {
+  implicit class AnalyserMutableBuilder[Self <: Analyser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBARGRAPHAMPLITUDE(value: Double): Self = StObject.set(x, "BARGRAPHAMPLITUDE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectAudioNodes(value: (AudioNode, AudioNode) => Unit): Self = StObject.set(x, "connectAudioNodes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDEBUGCANVASPOS(value: Y): Self = StObject.set(x, "DEBUGCANVASPOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBARGRAPHAMPLITUDE(value: Double): Self = this.set("BARGRAPHAMPLITUDE", value.asInstanceOf[js.Any])
+    def setDEBUGCANVASSIZE(value: Width): Self = StObject.set(x, "DEBUGCANVASSIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEBUGCANVASPOS(value: Y): Self = this.set("DEBUGCANVASPOS", value.asInstanceOf[js.Any])
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDEBUGCANVASSIZE(value: Width): Self = this.set("DEBUGCANVASSIZE", value.asInstanceOf[js.Any])
+    def setDrawDebugCanvas(value: () => Unit): Self = StObject.set(x, "drawDebugCanvas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFFT_SIZE(value: Double): Self = this.set("FFT_SIZE", value.asInstanceOf[js.Any])
+    def setFFT_SIZE(value: Double): Self = StObject.set(x, "FFT_SIZE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMOOTHING(value: Double): Self = this.set("SMOOTHING", value.asInstanceOf[js.Any])
+    def setGetByteFrequencyData(value: () => Uint8Array): Self = StObject.set(x, "getByteFrequencyData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_audioEngine(value: js.Any): Self = this.set("_audioEngine", value.asInstanceOf[js.Any])
+    def setGetByteTimeDomainData(value: () => Uint8Array): Self = StObject.set(x, "getByteTimeDomainData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_byteFreqs(value: js.Any): Self = this.set("_byteFreqs", value.asInstanceOf[js.Any])
+    def setGetFloatFrequencyData(value: () => Float32Array): Self = StObject.set(x, "getFloatFrequencyData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_byteTime(value: js.Any): Self = this.set("_byteTime", value.asInstanceOf[js.Any])
+    def setGetFrequencyBinCount(value: () => Double): Self = StObject.set(x, "getFrequencyBinCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_debugCanvas(value: js.Any): Self = this.set("_debugCanvas", value.asInstanceOf[js.Any])
+    def setSMOOTHING(value: Double): Self = StObject.set(x, "SMOOTHING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_debugCanvasContext(value: js.Any): Self = this.set("_debugCanvasContext", value.asInstanceOf[js.Any])
+    def setStopDebugCanvas(value: () => Unit): Self = StObject.set(x, "stopDebugCanvas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_floatFreqs(value: js.Any): Self = this.set("_floatFreqs", value.asInstanceOf[js.Any])
+    def set_audioEngine(value: js.Any): Self = StObject.set(x, "_audioEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_registerFunc(value: js.Any): Self = this.set("_registerFunc", value.asInstanceOf[js.Any])
+    def set_byteFreqs(value: js.Any): Self = StObject.set(x, "_byteFreqs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_scene(value: js.Any): Self = this.set("_scene", value.asInstanceOf[js.Any])
+    def set_byteTime(value: js.Any): Self = StObject.set(x, "_byteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_webAudioAnalyser(value: js.Any): Self = this.set("_webAudioAnalyser", value.asInstanceOf[js.Any])
+    def set_debugCanvas(value: js.Any): Self = StObject.set(x, "_debugCanvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectAudioNodes(value: (AudioNode, AudioNode) => Unit): Self = this.set("connectAudioNodes", js.Any.fromFunction2(value))
+    def set_debugCanvasContext(value: js.Any): Self = StObject.set(x, "_debugCanvasContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def set_floatFreqs(value: js.Any): Self = StObject.set(x, "_floatFreqs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawDebugCanvas(value: () => Unit): Self = this.set("drawDebugCanvas", js.Any.fromFunction0(value))
+    def set_registerFunc(value: js.Any): Self = StObject.set(x, "_registerFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetByteFrequencyData(value: () => Uint8Array): Self = this.set("getByteFrequencyData", js.Any.fromFunction0(value))
+    def set_scene(value: js.Any): Self = StObject.set(x, "_scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetByteTimeDomainData(value: () => Uint8Array): Self = this.set("getByteTimeDomainData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFloatFrequencyData(value: () => Float32Array): Self = this.set("getFloatFrequencyData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFrequencyBinCount(value: () => Double): Self = this.set("getFrequencyBinCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopDebugCanvas(value: () => Unit): Self = this.set("stopDebugCanvas", js.Any.fromFunction0(value))
+    def set_webAudioAnalyser(value: js.Any): Self = StObject.set(x, "_webAudioAnalyser", value.asInstanceOf[js.Any])
   }
 }

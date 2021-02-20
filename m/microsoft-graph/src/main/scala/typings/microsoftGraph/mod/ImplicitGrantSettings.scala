@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImplicitGrantSettings extends js.Object {
+trait ImplicitGrantSettings extends StObject {
   
   // Specifies whether this web application can request an access token using the OAuth 2.0 implicit flow.
   var enableAccessTokenIssuance: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -22,36 +23,24 @@ object ImplicitGrantSettings {
   }
   
   @scala.inline
-  implicit class ImplicitGrantSettingsOps[Self <: ImplicitGrantSettings] (val x: Self) extends AnyVal {
+  implicit class ImplicitGrantSettingsMutableBuilder[Self <: ImplicitGrantSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableAccessTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableAccessTokenIssuance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableAccessTokenIssuanceNull: Self = StObject.set(x, "enableAccessTokenIssuance", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableAccessTokenIssuanceUndefined: Self = StObject.set(x, "enableAccessTokenIssuance", js.undefined)
     
     @scala.inline
-    def setEnableAccessTokenIssuance(value: NullableOption[Boolean]): Self = this.set("enableAccessTokenIssuance", value.asInstanceOf[js.Any])
+    def setEnableIdTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableIdTokenIssuance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableAccessTokenIssuance: Self = this.set("enableAccessTokenIssuance", js.undefined)
+    def setEnableIdTokenIssuanceNull: Self = StObject.set(x, "enableIdTokenIssuance", null)
     
     @scala.inline
-    def setEnableAccessTokenIssuanceNull: Self = this.set("enableAccessTokenIssuance", null)
-    
-    @scala.inline
-    def setEnableIdTokenIssuance(value: NullableOption[Boolean]): Self = this.set("enableIdTokenIssuance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableIdTokenIssuance: Self = this.set("enableIdTokenIssuance", js.undefined)
-    
-    @scala.inline
-    def setEnableIdTokenIssuanceNull: Self = this.set("enableIdTokenIssuance", null)
+    def setEnableIdTokenIssuanceUndefined: Self = StObject.set(x, "enableIdTokenIssuance", js.undefined)
   }
 }

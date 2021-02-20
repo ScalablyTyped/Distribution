@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2KMapEstimationConfig extends js.Object {
+trait GooglePrivacyDlpV2KMapEstimationConfig extends StObject {
   
   /** Several auxiliary tables can be used in the analysis. Each custom_tag used to tag a quasi-identifiers column must appear in exactly one column of one auxiliary table. */
   var auxiliaryTables: js.UndefOr[js.Array[GooglePrivacyDlpV2AuxiliaryTable]] = js.native
@@ -25,42 +26,30 @@ object GooglePrivacyDlpV2KMapEstimationConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2KMapEstimationConfigOps[Self <: GooglePrivacyDlpV2KMapEstimationConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2KMapEstimationConfigMutableBuilder[Self <: GooglePrivacyDlpV2KMapEstimationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuxiliaryTables(value: js.Array[GooglePrivacyDlpV2AuxiliaryTable]): Self = StObject.set(x, "auxiliaryTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2AuxiliaryTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
     
     @scala.inline
-    def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2AuxiliaryTable*): Self = this.set("auxiliaryTables", js.Array(value :_*))
+    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2TaggedField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuxiliaryTables(value: js.Array[GooglePrivacyDlpV2AuxiliaryTable]): Self = this.set("auxiliaryTables", value.asInstanceOf[js.Any])
+    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
     @scala.inline
-    def deleteAuxiliaryTables: Self = this.set("auxiliaryTables", js.undefined)
+    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2TaggedField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
     
     @scala.inline
-    def setQuasiIdsVarargs(value: GooglePrivacyDlpV2TaggedField*): Self = this.set("quasiIds", js.Array(value :_*))
+    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuasiIds(value: js.Array[GooglePrivacyDlpV2TaggedField]): Self = this.set("quasiIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuasiIds: Self = this.set("quasiIds", js.undefined)
-    
-    @scala.inline
-    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

@@ -7,12 +7,13 @@ import typings.cookieclicker.cookieclickerNumbers.`0`
 import typings.cookieclicker.cookieclickerStrings.fortune
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameObject extends js.Object {
+trait GameObject extends StObject {
   
   /**
     * The way the building makes cookies
@@ -384,261 +385,249 @@ object GameObject {
   }
   
   @scala.inline
-  implicit class GameObjectOps[Self <: GameObject] (val x: Self) extends AnyVal {
+  implicit class GameObjectMutableBuilder[Self <: GameObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArt(value: Art): Self = StObject.set(x, "art", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: String): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    def setBaseCps(value: Double): Self = StObject.set(x, "baseCps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setBasePrice(value: Double): Self = StObject.set(x, "basePrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArt(value: Art): Self = this.set("art", value.asInstanceOf[js.Any])
+    def setBought(value: Double): Self = StObject.set(x, "bought", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseCps(value: Double): Self = this.set("baseCps", value.asInstanceOf[js.Any])
+    def setBulkPrice(value: Double): Self = StObject.set(x, "bulkPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePrice(value: Double): Self = this.set("basePrice", value.asInstanceOf[js.Any])
+    def setBuy(value: Double => Unit | `0`): Self = StObject.set(x, "buy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBought(value: Double): Self = this.set("bought", value.asInstanceOf[js.Any])
+    def setBuyFree(value: Double => Unit): Self = StObject.set(x, "buyFree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBulkPrice(value: Double): Self = this.set("bulkPrice", value.asInstanceOf[js.Any])
+    def setBuyFunction(value: () => Unit): Self = StObject.set(x, "buyFunction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBuy(value: Double => Unit | `0`): Self = this.set("buy", js.Any.fromFunction1(value))
+    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyFree(value: Double => Unit): Self = this.set("buyFree", js.Any.fromFunction1(value))
+    def setCps(value: GameObject => Double): Self = StObject.set(x, "cps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuyFunction(value: () => Unit): Self = this.set("buyFunction", js.Any.fromFunction0(value))
+    def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCps(value: GameObject => Double): Self = this.set("cps", js.Any.fromFunction1(value))
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtx(value: CanvasRenderingContext2D): Self = this.set("ctx", value.asInstanceOf[js.Any])
+    def setDraw(value: () => Unit | `false`): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setEachFrame(value: js.Function0[Unit] | PseudoNull): Self = StObject.set(x, "eachFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEachFrameFunction0(value: () => Unit): Self = StObject.set(x, "eachFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDraw(value: () => Unit | `false`): Self = this.set("draw", js.Any.fromFunction0(value))
+    def setExtraName(value: String): Self = StObject.set(x, "extraName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEachFrameFunction0(value: () => Unit): Self = this.set("eachFrame", js.Any.fromFunction0(value))
+    def setExtraPlural(value: String): Self = StObject.set(x, "extraPlural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEachFrame(value: js.Function0[Unit] | PseudoNull): Self = this.set("eachFrame", value.asInstanceOf[js.Any])
+    def setFortune(value: TieredUpgradeClass[fortune] | PseudoNull): Self = StObject.set(x, "fortune", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraName(value: String): Self = this.set("extraName", value.asInstanceOf[js.Any])
+    def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraPlural(value: String): Self = this.set("extraPlural", value.asInstanceOf[js.Any])
+    def setGetFree(value: Double => Unit): Self = StObject.set(x, "getFree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFortune(value: TieredUpgradeClass[fortune] | PseudoNull): Self = this.set("fortune", value.asInstanceOf[js.Any])
+    def setGetFreeRanks(value: Double => Unit): Self = StObject.set(x, "getFreeRanks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFree(value: Double): Self = this.set("free", value.asInstanceOf[js.Any])
+    def setGetPrice(value: Double => Double): Self = StObject.set(x, "getPrice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFree(value: Double => Unit): Self = this.set("getFree", js.Any.fromFunction1(value))
+    def setGetReverseSumPrice(value: Double => Double): Self = StObject.set(x, "getReverseSumPrice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFreeRanks(value: Double => Unit): Self = this.set("getFreeRanks", js.Any.fromFunction1(value))
+    def setGetSellMultiplier(value: () => Double): Self = StObject.set(x, "getSellMultiplier", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPrice(value: Double => Double): Self = this.set("getPrice", js.Any.fromFunction1(value))
+    def setGetSumPrice(value: Double => Double): Self = StObject.set(x, "getSumPrice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetReverseSumPrice(value: Double => Double): Self = this.set("getReverseSumPrice", js.Any.fromFunction1(value))
+    def setGrandma(value: GrandmaSynergyClass): Self = StObject.set(x, "grandma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSellMultiplier(value: () => Double): Self = this.set("getSellMultiplier", js.Any.fromFunction0(value))
+    def setGrandmaUndefined: Self = StObject.set(x, "grandma", js.undefined)
     
     @scala.inline
-    def setGetSumPrice(value: Double => Double): Self = this.set("getSumPrice", js.Any.fromFunction1(value))
+    def setHighest(value: Double): Self = StObject.set(x, "highest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighest(value: Double): Self = this.set("highest", value.asInstanceOf[js.Any])
+    def setIcon(value: Double): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Double): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconColumn(value: Double): Self = StObject.set(x, "iconColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconColumn(value: Double): Self = this.set("iconColumn", value.asInstanceOf[js.Any])
+    def setIconFunc(value: /* type */ js.UndefOr[scala.Nothing] => js.Tuple2[Double, Double]): Self = StObject.set(x, "iconFunc", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIconFuncUndefined: Self = StObject.set(x, "iconFunc", js.undefined)
     
     @scala.inline
-    def setL(value: HTMLDivElement): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setL(value: HTMLDivElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelAchiev10(value: Achievement): Self = this.set("levelAchiev10", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelTooltip(value: () => String): Self = this.set("levelTooltip", js.Any.fromFunction0(value))
+    def setLevelAchiev10(value: Achievement): Self = StObject.set(x, "levelAchiev10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelUp(value: () => js.Function0[Unit]): Self = this.set("levelUp", js.Any.fromFunction0(value))
+    def setLevelTooltip(value: () => String): Self = StObject.set(x, "levelTooltip", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocked(value: PseudoBoolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setLevelUp(value: () => js.Function0[Unit]): Self = StObject.set(x, "levelUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMinigameLoaded(value: Boolean): Self = this.set("minigameLoaded", value.asInstanceOf[js.Any])
+    def setLocked(value: PseudoBoolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinigameName(value: String): Self = this.set("minigameName", value.asInstanceOf[js.Any])
+    def setMinigame(value: Minigame): Self = StObject.set(x, "minigame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinigameSave(value: String): Self = this.set("minigameSave", value.asInstanceOf[js.Any])
+    def setMinigameLoaded(value: Boolean): Self = StObject.set(x, "minigameLoaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinigameUrl(value: String): Self = this.set("minigameUrl", value.asInstanceOf[js.Any])
+    def setMinigameLoading(value: Boolean): Self = StObject.set(x, "minigameLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseOn(value: Boolean): Self = this.set("mouseOn", value.asInstanceOf[js.Any])
+    def setMinigameLoadingUndefined: Self = StObject.set(x, "minigameLoading", js.undefined)
     
     @scala.inline
-    def setMousePos(value: js.Tuple2[Double, Double]): Self = this.set("mousePos", value.asInstanceOf[js.Any])
+    def setMinigameName(value: String): Self = StObject.set(x, "minigameName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMute(value: Double => Unit): Self = this.set("mute", js.Any.fromFunction1(value))
+    def setMinigameSave(value: String): Self = StObject.set(x, "minigameSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuted(value: Double): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setMinigameUndefined: Self = StObject.set(x, "minigame", js.undefined)
     
     @scala.inline
-    def setN(value: Double): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setMinigameUrl(value: String): Self = StObject.set(x, "minigameUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMouseOn(value: Boolean): Self = StObject.set(x, "mouseOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMinigame(value: Double): Self = this.set("onMinigame", value.asInstanceOf[js.Any])
+    def setMousePos(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "mousePos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicsVarargs(value: Frame*): Self = this.set("pics", js.Array(value :_*))
+    def setMute(value: Double => Unit): Self = StObject.set(x, "mute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPics(value: js.Array[Frame]): Self = this.set("pics", value.asInstanceOf[js.Any])
+    def setMuted(value: Double): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlural(value: String): Self = this.set("plural", value.asInstanceOf[js.Any])
+    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrice(value: Double): Self = this.set("price", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductionAchievsVarargs(value: ProductionAchievementRequirement*): Self = this.set("productionAchievs", js.Array(value :_*))
+    def setOnMinigame(value: Double): Self = StObject.set(x, "onMinigame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductionAchievs(value: js.Array[ProductionAchievementRequirement]): Self = this.set("productionAchievs", value.asInstanceOf[js.Any])
+    def setPics(value: js.Array[Frame]): Self = StObject.set(x, "pics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRebuild(value: () => Unit): Self = this.set("rebuild", js.Any.fromFunction0(value))
+    def setPicsVarargs(value: Frame*): Self = StObject.set(x, "pics", js.Array(value :_*))
     
     @scala.inline
-    def setRedraw(value: () => Unit): Self = this.set("redraw", js.Any.fromFunction0(value))
+    def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh(value: () => Unit): Self = this.set("refresh", js.Any.fromFunction0(value))
+    def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSacrafice(value: Double => Unit): Self = this.set("sacrafice", js.Any.fromFunction1(value))
+    def setProductionAchievs(value: js.Array[ProductionAchievementRequirement]): Self = StObject.set(x, "productionAchievs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSell(value: (Double, js.UndefOr[scala.Nothing]) => Unit): Self = this.set("sell", js.Any.fromFunction2(value))
+    def setProductionAchievsVarargs(value: ProductionAchievementRequirement*): Self = StObject.set(x, "productionAchievs", js.Array(value :_*))
     
     @scala.inline
-    def setSingle(value: String): Self = this.set("single", value.asInstanceOf[js.Any])
+    def setRebuild(value: () => Unit): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoredCps(value: Double): Self = this.set("storedCps", value.asInstanceOf[js.Any])
+    def setRedraw(value: () => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStoredTotalCps(value: Double): Self = this.set("storedTotalCps", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSwitchMinigame(value: Double => Unit): Self = this.set("switchMinigame", js.Any.fromFunction1(value))
+    def setSacrafice(value: Double => Unit): Self = StObject.set(x, "sacrafice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSynergiesVarargs(value: SynergyUpgradeClass[String]*): Self = this.set("synergies", js.Array(value :_*))
+    def setSell(value: (Double, js.UndefOr[scala.Nothing]) => Unit): Self = StObject.set(x, "sell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSynergies(value: js.Array[SynergyUpgradeClass[String]]): Self = this.set("synergies", value.asInstanceOf[js.Any])
+    def setSingle(value: String): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTieredAchievsVarargs(value: TieredAchievementClass[Double]*): Self = this.set("tieredAchievs", js.Array(value :_*))
+    def setStoredCps(value: Double): Self = StObject.set(x, "storedCps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTieredAchievs(value: js.Array[TieredAchievementClass[Double]]): Self = this.set("tieredAchievs", value.asInstanceOf[js.Any])
+    def setStoredTotalCps(value: Double): Self = StObject.set(x, "storedTotalCps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTieredUpgradesVarargs(value: TieredUpgradeClass[Double]*): Self = this.set("tieredUpgrades", js.Array(value :_*))
+    def setSwitchMinigame(value: Double => Unit): Self = StObject.set(x, "switchMinigame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTieredUpgrades(value: js.Array[TieredUpgradeClass[Double]]): Self = this.set("tieredUpgrades", value.asInstanceOf[js.Any])
+    def setSynergies(value: js.Array[SynergyUpgradeClass[String]]): Self = StObject.set(x, "synergies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: () => String): Self = this.set("tooltip", js.Any.fromFunction0(value))
+    def setSynergiesVarargs(value: SynergyUpgradeClass[String]*): Self = StObject.set(x, "synergies", js.Array(value :_*))
     
     @scala.inline
-    def setTotalCookies(value: Double): Self = this.set("totalCookies", value.asInstanceOf[js.Any])
+    def setTieredAchievs(value: js.Array[TieredAchievementClass[Double]]): Self = StObject.set(x, "tieredAchievs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVanilla(value: PseudoBoolean): Self = this.set("vanilla", value.asInstanceOf[js.Any])
+    def setTieredAchievsVarargs(value: TieredAchievementClass[Double]*): Self = StObject.set(x, "tieredAchievs", js.Array(value :_*))
     
     @scala.inline
-    def setGrandma(value: GrandmaSynergyClass): Self = this.set("grandma", value.asInstanceOf[js.Any])
+    def setTieredUpgrades(value: js.Array[TieredUpgradeClass[Double]]): Self = StObject.set(x, "tieredUpgrades", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrandma: Self = this.set("grandma", js.undefined)
+    def setTieredUpgradesVarargs(value: TieredUpgradeClass[Double]*): Self = StObject.set(x, "tieredUpgrades", js.Array(value :_*))
     
     @scala.inline
-    def setIconFunc(value: /* type */ js.UndefOr[scala.Nothing] => js.Tuple2[Double, Double]): Self = this.set("iconFunc", js.Any.fromFunction1(value))
+    def setTooltip(value: () => String): Self = StObject.set(x, "tooltip", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteIconFunc: Self = this.set("iconFunc", js.undefined)
+    def setTotalCookies(value: Double): Self = StObject.set(x, "totalCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinigame(value: Minigame): Self = this.set("minigame", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinigame: Self = this.set("minigame", js.undefined)
-    
-    @scala.inline
-    def setMinigameLoading(value: Boolean): Self = this.set("minigameLoading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinigameLoading: Self = this.set("minigameLoading", js.undefined)
+    def setVanilla(value: PseudoBoolean): Self = StObject.set(x, "vanilla", value.asInstanceOf[js.Any])
   }
 }

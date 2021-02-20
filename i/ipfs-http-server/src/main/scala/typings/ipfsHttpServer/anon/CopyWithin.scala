@@ -1,11 +1,12 @@
 package typings.ipfsHttpServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyWithin extends js.Object {
+trait CopyWithin extends StObject {
   
   var copyWithin: Boolean = js.native
   
@@ -38,39 +39,27 @@ object CopyWithin {
   }
   
   @scala.inline
-  implicit class CopyWithinOps[Self <: CopyWithin] (val x: Self) extends AnyVal {
+  implicit class CopyWithinMutableBuilder[Self <: CopyWithin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyWithin(value: Boolean): Self = StObject.set(x, "copyWithin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntries(value: Boolean): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyWithin(value: Boolean): Self = this.set("copyWithin", value.asInstanceOf[js.Any])
+    def setFind(value: Boolean): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: Boolean): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setFindIndex(value: Boolean): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFind(value: Boolean): Self = this.set("find", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFindIndex(value: Boolean): Self = this.set("findIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeys(value: Boolean): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: Boolean): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

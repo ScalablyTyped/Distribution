@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returned when a WiFiDirectServiceAdvertiser.AutoAcceptSessionConnected event is raised. */
 @js.native
-trait WiFiDirectServiceAutoAcceptSessionConnectedEventArgs extends js.Object {
+trait WiFiDirectServiceAutoAcceptSessionConnectedEventArgs extends StObject {
   
   /** Gets the WiFiDirectServiceSession that was created when the connection was automatically accepted. */
   var session: WiFiDirectServiceSession = js.native
@@ -24,24 +25,12 @@ object WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
   }
   
   @scala.inline
-  implicit class WiFiDirectServiceAutoAcceptSessionConnectedEventArgsOps[Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectServiceAutoAcceptSessionConnectedEventArgsMutableBuilder[Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSession(value: WiFiDirectServiceSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSession(value: WiFiDirectServiceSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionInfo(value: IBuffer): Self = this.set("sessionInfo", value.asInstanceOf[js.Any])
+    def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
   }
 }

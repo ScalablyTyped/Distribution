@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartTooltip extends js.Object {
+trait ChartTooltip extends StObject {
   
   var ignoreBounds: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object ChartTooltip {
   }
   
   @scala.inline
-  implicit class ChartTooltipOps[Self <: ChartTooltip] (val x: Self) extends AnyVal {
+  implicit class ChartTooltipMutableBuilder[Self <: ChartTooltip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreBounds(value: Boolean): Self = StObject.set(x, "ignoreBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreBoundsUndefined: Self = StObject.set(x, "ignoreBounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsHtml(value: Boolean): Self = StObject.set(x, "isHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreBounds(value: Boolean): Self = this.set("ignoreBounds", value.asInstanceOf[js.Any])
+    def setIsHtmlUndefined: Self = StObject.set(x, "isHtml", js.undefined)
     
     @scala.inline
-    def deleteIgnoreBounds: Self = this.set("ignoreBounds", js.undefined)
+    def setShowColorCode(value: Boolean): Self = StObject.set(x, "showColorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHtml(value: Boolean): Self = this.set("isHtml", value.asInstanceOf[js.Any])
+    def setShowColorCodeUndefined: Self = StObject.set(x, "showColorCode", js.undefined)
     
     @scala.inline
-    def deleteIsHtml: Self = this.set("isHtml", js.undefined)
+    def setTextStyle(value: ChartTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowColorCode(value: Boolean): Self = this.set("showColorCode", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteShowColorCode: Self = this.set("showColorCode", js.undefined)
+    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyle(value: ChartTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
-    
-    @scala.inline
-    def setTrigger(value: String): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

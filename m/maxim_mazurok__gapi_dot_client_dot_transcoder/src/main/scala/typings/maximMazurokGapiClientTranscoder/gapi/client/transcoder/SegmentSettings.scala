@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SegmentSettings extends js.Object {
+trait SegmentSettings extends StObject {
   
   /** Required. Create an individual segment file. The default is `false`. */
   var individualSegments: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object SegmentSettings {
   }
   
   @scala.inline
-  implicit class SegmentSettingsOps[Self <: SegmentSettings] (val x: Self) extends AnyVal {
+  implicit class SegmentSettingsMutableBuilder[Self <: SegmentSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndividualSegments(value: Boolean): Self = StObject.set(x, "individualSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndividualSegmentsUndefined: Self = StObject.set(x, "individualSegments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentDuration(value: String): Self = StObject.set(x, "segmentDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividualSegments(value: Boolean): Self = this.set("individualSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividualSegments: Self = this.set("individualSegments", js.undefined)
-    
-    @scala.inline
-    def setSegmentDuration(value: String): Self = this.set("segmentDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentDuration: Self = this.set("segmentDuration", js.undefined)
+    def setSegmentDurationUndefined: Self = StObject.set(x, "segmentDuration", js.undefined)
   }
 }

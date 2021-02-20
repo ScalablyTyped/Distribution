@@ -2,19 +2,20 @@ package typings.d3Box
 
 import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.Selection_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
-@JSImport("d3", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3", "box")
+  @js.native
   def box(): Box_ = js.native
   
   @js.native
-  trait Box_ extends js.Object {
+  trait Box_ extends StObject {
     
     def apply(
       sel: Selection_[

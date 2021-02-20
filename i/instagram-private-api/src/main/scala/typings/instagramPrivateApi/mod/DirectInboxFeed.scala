@@ -1,10 +1,13 @@
 package typings.instagramPrivateApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api", "DirectInboxFeed")
 @js.native
-class DirectInboxFeed ()
-  extends typings.instagramPrivateApi.directInboxFeedMod.DirectInboxFeed
+class DirectInboxFeed protected ()
+  extends typings.instagramPrivateApi.feedsMod.DirectInboxFeed {
+  def this(client: typings.instagramPrivateApi.clientMod.IgApiClient) = this()
+}

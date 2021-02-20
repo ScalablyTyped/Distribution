@@ -1,12 +1,13 @@
 package typings.wxServerSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type
 @js.native
-trait AggregationOperators extends js.Object {
+trait AggregationOperators extends StObject {
   
   def abs(operand: Double): Double = js.native
   
@@ -53,51 +54,39 @@ object AggregationOperators {
   }
   
   @scala.inline
-  implicit class AggregationOperatorsOps[Self <: AggregationOperators] (val x: Self) extends AnyVal {
+  implicit class AggregationOperatorsMutableBuilder[Self <: AggregationOperators] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbs(value: Double => Double): Self = StObject.set(x, "abs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddToSet(value: String => js.Any): Self = StObject.set(x, "addToSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbs(value: Double => Double): Self = this.set("abs", js.Any.fromFunction1(value))
+    def setAllElementsTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "allElementsTrue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: /* repeated */ js.Any => js.Any): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAnd(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddToSet(value: String => js.Any): Self = this.set("addToSet", js.Any.fromFunction1(value))
+    def setAnyElementTrue(value: js.Array[String] => Boolean): Self = StObject.set(x, "anyElementTrue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllElementsTrue(value: js.Array[String] => Boolean): Self = this.set("allElementsTrue", js.Any.fromFunction1(value))
+    def setArrayElemAt(value: js.Tuple2[String, Double] => js.Any): Self = StObject.set(x, "arrayElemAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnd(value: js.Array[Boolean] => Boolean): Self = this.set("and", js.Any.fromFunction1(value))
+    def setArrayToObject(value: String => js.Object): Self = StObject.set(x, "arrayToObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAnyElementTrue(value: js.Array[String] => Boolean): Self = this.set("anyElementTrue", js.Any.fromFunction1(value))
+    def setAvg(value: String => Double): Self = StObject.set(x, "avg", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArrayElemAt(value: js.Tuple2[String, Double] => js.Any): Self = this.set("arrayElemAt", js.Any.fromFunction1(value))
+    def setLt(value: (String, Double) => Boolean): Self = StObject.set(x, "lt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setArrayToObject(value: String => js.Object): Self = this.set("arrayToObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAvg(value: String => Double): Self = this.set("avg", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLt(value: (String, Double) => Boolean): Self = this.set("lt", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLte(value: (String, Double) => Boolean): Self = this.set("lte", js.Any.fromFunction2(value))
+    def setLte(value: (String, Double) => Boolean): Self = StObject.set(x, "lte", js.Any.fromFunction2(value))
   }
 }

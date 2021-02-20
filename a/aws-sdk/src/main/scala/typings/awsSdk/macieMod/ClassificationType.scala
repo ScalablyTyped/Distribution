@@ -1,11 +1,12 @@
 package typings.awsSdk.macieMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassificationType extends js.Object {
+trait ClassificationType extends StObject {
   
   /**
     * A continuous classification of the objects that are added to a specified S3 bucket. Amazon Macie Classic begins performing continuous classification after a bucket is successfully associated with Amazon Macie Classic. 
@@ -26,24 +27,12 @@ object ClassificationType {
   }
   
   @scala.inline
-  implicit class ClassificationTypeOps[Self <: ClassificationType] (val x: Self) extends AnyVal {
+  implicit class ClassificationTypeMutableBuilder[Self <: ClassificationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuous(value: S3ContinuousClassificationType): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContinuous(value: S3ContinuousClassificationType): Self = this.set("continuous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneTime(value: S3OneTimeClassificationType): Self = this.set("oneTime", value.asInstanceOf[js.Any])
+    def setOneTime(value: S3OneTimeClassificationType): Self = StObject.set(x, "oneTime", value.asInstanceOf[js.Any])
   }
 }

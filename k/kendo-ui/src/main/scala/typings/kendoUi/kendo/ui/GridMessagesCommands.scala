@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridMessagesCommands extends js.Object {
+trait GridMessagesCommands extends StObject {
   
   var cancel: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object GridMessagesCommands {
   }
   
   @scala.inline
-  implicit class GridMessagesCommandsOps[Self <: GridMessagesCommands] (val x: Self) extends AnyVal {
+  implicit class GridMessagesCommandsMutableBuilder[Self <: GridMessagesCommands] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanceledit(value: String): Self = StObject.set(x, "canceledit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setCanceleditUndefined: Self = StObject.set(x, "canceledit", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanceledit(value: String): Self = this.set("canceledit", value.asInstanceOf[js.Any])
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def deleteCanceledit: Self = this.set("canceledit", js.undefined)
+    def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreate(value: String): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: String): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setExcel(value: String): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: String): Self = this.set("edit", value.asInstanceOf[js.Any])
+    def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
     
     @scala.inline
-    def deleteEdit: Self = this.set("edit", js.undefined)
+    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcel(value: String): Self = this.set("excel", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteExcel: Self = this.set("excel", js.undefined)
+    def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: String): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

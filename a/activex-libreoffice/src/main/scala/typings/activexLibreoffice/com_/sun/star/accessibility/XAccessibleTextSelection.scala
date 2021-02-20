@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,39 +45,27 @@ object XAccessibleTextSelection {
   }
   
   @scala.inline
-  implicit class XAccessibleTextSelectionOps[Self <: XAccessibleTextSelection] (val x: Self) extends AnyVal {
+  implicit class XAccessibleTextSelectionMutableBuilder[Self <: XAccessibleTextSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSelection(value: (Double, Double, Double) => Double): Self = StObject.set(x, "addSelection", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelectedPortionCount(value: () => Double): Self = StObject.set(x, "getSelectedPortionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSeletedPositionEnd(value: Double => Double): Self = StObject.set(x, "getSeletedPositionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectedPortionCount(value: Double): Self = this.set("SelectedPortionCount", value.asInstanceOf[js.Any])
+    def setGetSeletedPositionStart(value: Double => Double): Self = StObject.set(x, "getSeletedPositionStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSelection(value: (Double, Double, Double) => Double): Self = this.set("addSelection", js.Any.fromFunction3(value))
+    def setRemoveSelection(value: Double => Boolean): Self = StObject.set(x, "removeSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedPortionCount(value: () => Double): Self = this.set("getSelectedPortionCount", js.Any.fromFunction0(value))
+    def setScrollToPosition(value: (Point, Boolean) => Boolean): Self = StObject.set(x, "scrollToPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetSeletedPositionEnd(value: Double => Double): Self = this.set("getSeletedPositionEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSeletedPositionStart(value: Double => Double): Self = this.set("getSeletedPositionStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSelection(value: Double => Boolean): Self = this.set("removeSelection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScrollToPosition(value: (Point, Boolean) => Boolean): Self = this.set("scrollToPosition", js.Any.fromFunction2(value))
+    def setSelectedPortionCount(value: Double): Self = StObject.set(x, "SelectedPortionCount", value.asInstanceOf[js.Any])
   }
 }

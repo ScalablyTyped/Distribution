@@ -1,11 +1,12 @@
 package typings.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Learnset extends js.Object {
+trait Learnset extends StObject {
   
   var egg_move: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object Learnset {
   }
   
   @scala.inline
-  implicit class LearnsetOps[Self <: Learnset] (val x: Self) extends AnyVal {
+  implicit class LearnsetMutableBuilder[Self <: Learnset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEgg_move(value: Boolean): Self = StObject.set(x, "egg_move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEgg_moveUndefined: Self = StObject.set(x, "egg_move", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: String): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def setEgg_move(value: Boolean): Self = this.set("egg_move", value.asInstanceOf[js.Any])
+    def setMove(value: String): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEgg_move: Self = this.set("egg_move", js.undefined)
+    def setTm(value: String): Self = StObject.set(x, "tm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setTmUndefined: Self = StObject.set(x, "tm", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setVariations(value: js.Array[String]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTm(value: String): Self = this.set("tm", value.asInstanceOf[js.Any])
+    def setVariationsUndefined: Self = StObject.set(x, "variations", js.undefined)
     
     @scala.inline
-    def deleteTm: Self = this.set("tm", js.undefined)
-    
-    @scala.inline
-    def setVariationsVarargs(value: String*): Self = this.set("variations", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariations(value: js.Array[String]): Self = this.set("variations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariations: Self = this.set("variations", js.undefined)
+    def setVariationsVarargs(value: String*): Self = StObject.set(x, "variations", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml
 
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0.4
   */
 @js.native
-trait TextUserDefinedAttributesSupplier extends js.Object {
+trait TextUserDefinedAttributesSupplier extends StObject {
   
   /**
     * This container holds the {@link AttributeData} elements that represent uninterpreted XML attributes of a text.
@@ -32,21 +33,9 @@ object TextUserDefinedAttributesSupplier {
   }
   
   @scala.inline
-  implicit class TextUserDefinedAttributesSupplierOps[Self <: TextUserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
+  implicit class TextUserDefinedAttributesSupplierMutableBuilder[Self <: TextUserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextUserDefinedAttributes(value: XNameContainer): Self = this.set("TextUserDefinedAttributes", value.asInstanceOf[js.Any])
+    def setTextUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "TextUserDefinedAttributes", value.asInstanceOf[js.Any])
   }
 }

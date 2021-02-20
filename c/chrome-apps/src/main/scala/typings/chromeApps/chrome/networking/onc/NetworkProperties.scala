@@ -9,6 +9,7 @@ import typings.chromeApps.chromeAppsStrings.User
 import typings.chromeApps.chromeAppsStrings.UserPolicy
 import typings.chromeApps.chromeAppsStrings.getter
 import typings.chromeApps.chromeAppsStrings.unmanaged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,48 +91,25 @@ object NetworkProperties {
   }
   
   @scala.inline
-  implicit class NetworkPropertiesOps[Self <: NetworkProperties[_, _], M /* <: ManagedObject */, IF /* <: InterfaceType */] (val x: Self with (NetworkProperties[M, IF])) extends AnyVal {
+  implicit class NetworkPropertiesMutableBuilder[Self <: NetworkProperties[_, _], M /* <: ManagedObject */, IF /* <: InterfaceType */] (val x: Self with (NetworkProperties[M, IF])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectable(value: Boolean): Self = StObject.set(x, "Connectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectableUndefined: Self = StObject.set(x, "Connectable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionState(value: ConnectionStateType): Self = StObject.set(x, "ConnectionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectable(value: Boolean): Self = this.set("Connectable", value.asInstanceOf[js.Any])
+    def setConnectionStateUndefined: Self = StObject.set(x, "ConnectionState", js.undefined)
     
     @scala.inline
-    def deleteConnectable: Self = this.set("Connectable", js.undefined)
+    def setErrorState(value: String): Self = StObject.set(x, "ErrorState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionState(value: ConnectionStateType): Self = this.set("ConnectionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionState: Self = this.set("ConnectionState", js.undefined)
-    
-    @scala.inline
-    def setErrorState(value: String): Self = this.set("ErrorState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorState: Self = this.set("ErrorState", js.undefined)
-    
-    @scala.inline
-    def setIPConfigsVarargs(
-      value: (IPConfigProperties[
-          unmanaged, 
-          Boolean | ManagedBoolean, 
-          String | ManagedDOMString, 
-          js.Array[String] | ManagedDOMStringList, 
-          integer | ManagedLong
-        ])*
-    ): Self = this.set("IPConfigs", js.Array(value :_*))
+    def setErrorStateUndefined: Self = StObject.set(x, "ErrorState", js.undefined)
     
     @scala.inline
     def setIPConfigs(
@@ -144,30 +122,41 @@ object NetworkProperties {
             integer | ManagedLong
           ]
         ]
-    ): Self = this.set("IPConfigs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "IPConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIPConfigs: Self = this.set("IPConfigs", js.undefined)
+    def setIPConfigsUndefined: Self = StObject.set(x, "IPConfigs", js.undefined)
     
     @scala.inline
-    def setMacAddress(value: String): Self = this.set("MacAddress", value.asInstanceOf[js.Any])
+    def setIPConfigsVarargs(
+      value: (IPConfigProperties[
+          unmanaged, 
+          Boolean | ManagedBoolean, 
+          String | ManagedDOMString, 
+          js.Array[String] | ManagedDOMStringList, 
+          integer | ManagedLong
+        ])*
+    ): Self = StObject.set(x, "IPConfigs", js.Array(value :_*))
     
     @scala.inline
-    def deleteMacAddress: Self = this.set("MacAddress", js.undefined)
+    def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
     
     @scala.inline
     def setProxySettings(
       value: ProxySettings[unmanaged, String | ManagedDOMString, js.Array[String] | ManagedDOMStringList]
-    ): Self = this.set("ProxySettings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "ProxySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProxySettings: Self = this.set("ProxySettings", js.undefined)
+    def setProxySettingsUndefined: Self = StObject.set(x, "ProxySettings", js.undefined)
     
     @scala.inline
-    def setRestrictedConnectivity(value: Boolean): Self = this.set("RestrictedConnectivity", value.asInstanceOf[js.Any])
+    def setRestrictedConnectivity(value: Boolean): Self = StObject.set(x, "RestrictedConnectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestrictedConnectivity: Self = this.set("RestrictedConnectivity", js.undefined)
+    def setRestrictedConnectivityUndefined: Self = StObject.set(x, "RestrictedConnectivity", js.undefined)
     
     @scala.inline
     def setSavedIPConfig(
@@ -178,16 +167,16 @@ object NetworkProperties {
           js.Array[String] | ManagedDOMStringList, 
           integer | ManagedLong
         ]
-    ): Self = this.set("SavedIPConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "SavedIPConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSavedIPConfig: Self = this.set("SavedIPConfig", js.undefined)
+    def setSavedIPConfigUndefined: Self = StObject.set(x, "SavedIPConfig", js.undefined)
     
     @scala.inline
-    def setSource(value: Device_ | DevicePolicy | User | UserPolicy | None): Self = this.set("Source", value.asInstanceOf[js.Any])
+    def setSource(value: Device_ | DevicePolicy | User | UserPolicy | None): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
     def setStaticIPConfig(
@@ -198,9 +187,9 @@ object NetworkProperties {
           js.Array[String] | ManagedDOMStringList, 
           integer | ManagedLong
         ]
-    ): Self = this.set("StaticIPConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "StaticIPConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStaticIPConfig: Self = this.set("StaticIPConfig", js.undefined)
+    def setStaticIPConfigUndefined: Self = StObject.set(x, "StaticIPConfig", js.undefined)
   }
 }

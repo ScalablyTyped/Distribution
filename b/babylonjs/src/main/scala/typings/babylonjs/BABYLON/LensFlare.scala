@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LensFlare extends js.Object {
+trait LensFlare extends StObject {
   
   var _system: js.Any = js.native
   
@@ -55,42 +56,30 @@ object LensFlare {
   }
   
   @scala.inline
-  implicit class LensFlareOps[Self <: LensFlare] (val x: Self) extends AnyVal {
+  implicit class LensFlareMutableBuilder[Self <: LensFlare] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaMode(value: Double): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: Color3): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_system(value: js.Any): Self = this.set("_system", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaMode(value: Double): Self = this.set("alphaMode", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color3): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setTexture(value: Nullable[Texture]): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setTextureNull: Self = StObject.set(x, "texture", null)
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTexture(value: Nullable[Texture]): Self = this.set("texture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextureNull: Self = this.set("texture", null)
+    def set_system(value: js.Any): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.vscodeLanguageclient.clientMod
 
 import typings.vscodeJsonrpc.eventsMod.EmitterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class Emitter[T] ()
   def this(_options: EmitterOptions) = this()
 }
 /* static members */
-@JSImport("vscode-languageclient/lib/client", "Emitter")
-@js.native
-object Emitter extends js.Object {
+object Emitter {
   
-  var _noop: js.Any = js.native
+  @JSImport("vscode-languageclient/lib/client", "Emitter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("vscode-languageclient/lib/client", "Emitter._noop")
+  @js.native
+  def _noop: js.Any = js.native
+  @scala.inline
+  def _noop_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
 }

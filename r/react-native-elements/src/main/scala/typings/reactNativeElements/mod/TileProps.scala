@@ -7,12 +7,13 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.anon.PartialImageProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileProps extends js.Object {
+trait TileProps extends StObject {
   
   /**
     * Specify a different component as the Image component
@@ -120,144 +121,132 @@ object TileProps {
   }
   
   @scala.inline
-  implicit class TilePropsOps[Self <: TileProps] (val x: Self) extends AnyVal {
+  implicit class TilePropsMutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSrc(value: ImageURISource | String | Double): Self = this.set("imageSrc", value.asInstanceOf[js.Any])
+    def setCaptionStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "captionStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageComponent(value: ComponentClass[js.Object, ComponentState]): Self = this.set("ImageComponent", value.asInstanceOf[js.Any])
+    def setCaptionStyleNull: Self = StObject.set(x, "captionStyle", null)
     
     @scala.inline
-    def deleteImageComponent: Self = this.set("ImageComponent", js.undefined)
+    def setCaptionStyleUndefined: Self = StObject.set(x, "captionStyle", js.undefined)
     
     @scala.inline
-    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def setCaptionStyle(value: StyleProp[TextStyle]): Self = this.set("captionStyle", value.asInstanceOf[js.Any])
+    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaptionStyle: Self = this.set("captionStyle", js.undefined)
+    def setContentContainerStyleNull: Self = StObject.set(x, "contentContainerStyle", null)
     
     @scala.inline
-    def setCaptionStyleNull: Self = this.set("captionStyle", null)
+    def setContentContainerStyleUndefined: Self = StObject.set(x, "contentContainerStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setFeatured(value: Boolean): Self = StObject.set(x, "featured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setFeaturedUndefined: Self = StObject.set(x, "featured", js.undefined)
     
     @scala.inline
-    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("contentContainerStyle", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteContentContainerStyle: Self = this.set("contentContainerStyle", js.undefined)
+    def setIcon(value: IconObject): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentContainerStyleNull: Self = this.set("contentContainerStyle", null)
+    def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "iconContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatured(value: Boolean): Self = this.set("featured", value.asInstanceOf[js.Any])
+    def setIconContainerStyleNull: Self = StObject.set(x, "iconContainerStyle", null)
     
     @scala.inline
-    def deleteFeatured: Self = this.set("featured", js.undefined)
+    def setIconContainerStyleUndefined: Self = StObject.set(x, "iconContainerStyle", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setImageComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: IconObject): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setImageContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "imageContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("iconContainerStyle", value.asInstanceOf[js.Any])
+    def setImageContainerStyleNull: Self = StObject.set(x, "imageContainerStyle", null)
     
     @scala.inline
-    def deleteIconContainerStyle: Self = this.set("iconContainerStyle", js.undefined)
+    def setImageContainerStyleUndefined: Self = StObject.set(x, "imageContainerStyle", js.undefined)
     
     @scala.inline
-    def setIconContainerStyleNull: Self = this.set("iconContainerStyle", null)
+    def setImageProps(value: PartialImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("imageContainerStyle", value.asInstanceOf[js.Any])
+    def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
     
     @scala.inline
-    def deleteImageContainerStyle: Self = this.set("imageContainerStyle", js.undefined)
+    def setImageSrc(value: ImageURISource | String | Double): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageContainerStyleNull: Self = this.set("imageContainerStyle", null)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImageProps(value: PartialImageProps): Self = this.set("imageProps", value.asInstanceOf[js.Any])
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteImageProps: Self = this.set("imageProps", js.undefined)
+    def setOverlayContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "overlayContainerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setOverlayContainerStyleNull: Self = StObject.set(x, "overlayContainerStyle", null)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setOverlayContainerStyleUndefined: Self = StObject.set(x, "overlayContainerStyle", js.undefined)
     
     @scala.inline
-    def setOverlayContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("overlayContainerStyle", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverlayContainerStyle: Self = this.set("overlayContainerStyle", js.undefined)
+    def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayContainerStyleNull: Self = this.set("overlayContainerStyle", null)
+    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitleStyle(value: StyleProp[TextStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
-    
-    @scala.inline
-    def setTitleStyleNull: Self = this.set("titleStyle", null)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

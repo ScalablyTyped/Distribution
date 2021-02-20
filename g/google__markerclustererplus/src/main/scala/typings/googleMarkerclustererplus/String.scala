@@ -1,11 +1,12 @@
 package typings.googleMarkerclustererplus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait String extends js.Object {
+trait String extends StObject {
   
   def trim(): java.lang.String = js.native
 }
@@ -18,21 +19,9 @@ object String {
   }
   
   @scala.inline
-  implicit class StringOps[Self <: String] (val x: Self) extends AnyVal {
+  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTrim(value: () => java.lang.String): Self = this.set("trim", js.Any.fromFunction0(value))
+    def setTrim(value: () => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction0(value))
   }
 }

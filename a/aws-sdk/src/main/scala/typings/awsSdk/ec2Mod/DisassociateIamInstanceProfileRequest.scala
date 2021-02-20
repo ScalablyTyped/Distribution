@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateIamInstanceProfileRequest extends js.Object {
+trait DisassociateIamInstanceProfileRequest extends StObject {
   
   /**
     * The ID of the IAM instance profile association.
@@ -21,21 +22,9 @@ object DisassociateIamInstanceProfileRequest {
   }
   
   @scala.inline
-  implicit class DisassociateIamInstanceProfileRequestOps[Self <: DisassociateIamInstanceProfileRequest] (val x: Self) extends AnyVal {
+  implicit class DisassociateIamInstanceProfileRequestMutableBuilder[Self <: DisassociateIamInstanceProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssociationId(value: IamInstanceProfileAssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    def setAssociationId(value: IamInstanceProfileAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
   }
 }

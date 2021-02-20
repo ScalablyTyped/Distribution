@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3PaymentParameters extends js.Object {
+trait GoogleActionsTransactionsV3PaymentParameters extends StObject {
   
   /**
     * Info for requesting payment info from google.
@@ -26,30 +27,18 @@ object GoogleActionsTransactionsV3PaymentParameters {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3PaymentParametersOps[Self <: GoogleActionsTransactionsV3PaymentParameters] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3PaymentParametersMutableBuilder[Self <: GoogleActionsTransactionsV3PaymentParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGooglePaymentOption(value: GoogleActionsTransactionsV3GooglePaymentOption): Self = StObject.set(x, "googlePaymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGooglePaymentOptionUndefined: Self = StObject.set(x, "googlePaymentOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMerchantPaymentOption(value: GoogleActionsTransactionsV3MerchantPaymentOption): Self = StObject.set(x, "merchantPaymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGooglePaymentOption(value: GoogleActionsTransactionsV3GooglePaymentOption): Self = this.set("googlePaymentOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGooglePaymentOption: Self = this.set("googlePaymentOption", js.undefined)
-    
-    @scala.inline
-    def setMerchantPaymentOption(value: GoogleActionsTransactionsV3MerchantPaymentOption): Self = this.set("merchantPaymentOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerchantPaymentOption: Self = this.set("merchantPaymentOption", js.undefined)
+    def setMerchantPaymentOptionUndefined: Self = StObject.set(x, "merchantPaymentOption", js.undefined)
   }
 }

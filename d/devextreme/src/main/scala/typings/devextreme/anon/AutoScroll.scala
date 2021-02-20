@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoScroll extends js.Object {
+trait AutoScroll extends StObject {
   
   var autoScroll: js.UndefOr[Boolean] = js.native
   
@@ -36,78 +37,66 @@ object AutoScroll {
   }
   
   @scala.inline
-  implicit class AutoScrollOps[Self <: AutoScroll] (val x: Self) extends AnyVal {
+  implicit class AutoScrollMutableBuilder[Self <: AutoScroll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScroll(value: Boolean): Self = this.set("autoScroll", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteAutoScroll: Self = this.set("autoScroll", js.undefined)
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setOnAdd(value: /* e */ EventFromComponent => _): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setOnDragEnd(value: /* e */ CancelEvent => _): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAdd(value: /* e */ EventFromComponent => _): Self = this.set("onAdd", js.Any.fromFunction1(value))
+    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def deleteOnAdd: Self = this.set("onAdd", js.undefined)
+    def setOnDragMove(value: /* e */ CancelEvent => _): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragEnd(value: /* e */ CancelEvent => _): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
     
     @scala.inline
-    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    def setOnDragStart(value: /* e */ FromDataItemData => _): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragMove(value: /* e */ CancelEvent => _): Self = this.set("onDragMove", js.Any.fromFunction1(value))
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def deleteOnDragMove: Self = this.set("onDragMove", js.undefined)
+    def setOnRemove(value: /* e */ FromComponentFromData => _): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragStart(value: /* e */ FromDataItemData => _): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     
     @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRemove(value: /* e */ FromComponentFromData => _): Self = this.set("onRemove", js.Any.fromFunction1(value))
+    def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
     
     @scala.inline
-    def deleteOnRemove: Self = this.set("onRemove", js.undefined)
+    def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSensitivity(value: Double): Self = this.set("scrollSensitivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollSensitivity: Self = this.set("scrollSensitivity", js.undefined)
-    
-    @scala.inline
-    def setScrollSpeed(value: Double): Self = this.set("scrollSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollSpeed: Self = this.set("scrollSpeed", js.undefined)
+    def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
   }
 }

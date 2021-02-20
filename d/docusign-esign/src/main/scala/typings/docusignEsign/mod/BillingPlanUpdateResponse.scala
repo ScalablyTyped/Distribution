@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingPlanUpdateResponse extends js.Object {
+trait BillingPlanUpdateResponse extends StObject {
   
   /**
     * The type of payment method used for the account. Valid values are:
@@ -76,66 +77,54 @@ object BillingPlanUpdateResponse {
   }
   
   @scala.inline
-  implicit class BillingPlanUpdateResponseOps[Self <: BillingPlanUpdateResponse] (val x: Self) extends AnyVal {
+  implicit class BillingPlanUpdateResponseMutableBuilder[Self <: BillingPlanUpdateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountPaymentMethod(value: String): Self = StObject.set(x, "accountPaymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountPaymentMethodUndefined: Self = StObject.set(x, "accountPaymentMethod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingPlanPreview(value: /* Information used to provide a preview of a billing plan. */ BillingPlanPreview): Self = StObject.set(x, "billingPlanPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountPaymentMethod(value: String): Self = this.set("accountPaymentMethod", value.asInstanceOf[js.Any])
+    def setBillingPlanPreviewUndefined: Self = StObject.set(x, "billingPlanPreview", js.undefined)
     
     @scala.inline
-    def deleteAccountPaymentMethod: Self = this.set("accountPaymentMethod", js.undefined)
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingPlanPreview(value: /* Information used to provide a preview of a billing plan. */ BillingPlanPreview): Self = this.set("billingPlanPreview", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def deleteBillingPlanPreview: Self = this.set("billingPlanPreview", js.undefined)
+    def setIncludedSeats(value: String): Self = StObject.set(x, "includedSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setIncludedSeatsUndefined: Self = StObject.set(x, "includedSeats", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setPaymentCycle(value: String): Self = StObject.set(x, "paymentCycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedSeats(value: String): Self = this.set("includedSeats", value.asInstanceOf[js.Any])
+    def setPaymentCycleUndefined: Self = StObject.set(x, "paymentCycle", js.undefined)
     
     @scala.inline
-    def deleteIncludedSeats: Self = this.set("includedSeats", js.undefined)
+    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentCycle(value: String): Self = this.set("paymentCycle", value.asInstanceOf[js.Any])
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def deletePaymentCycle: Self = this.set("paymentCycle", js.undefined)
+    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethod(value: String): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
     
     @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setPlanName(value: String): Self = StObject.set(x, "planName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanId(value: String): Self = this.set("planId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanId: Self = this.set("planId", js.undefined)
-    
-    @scala.inline
-    def setPlanName(value: String): Self = this.set("planName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanName: Self = this.set("planName", js.undefined)
+    def setPlanNameUndefined: Self = StObject.set(x, "planName", js.undefined)
   }
 }

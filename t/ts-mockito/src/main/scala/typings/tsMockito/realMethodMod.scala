@@ -1,16 +1,16 @@
 package typings.tsMockito
 
 import typings.std.PropertyDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/spy/RealMethod", JSImport.Namespace)
-@js.native
-object realMethodMod extends js.Object {
+object realMethodMod {
   
+  @JSImport("ts-mockito/lib/spy/RealMethod", "RealMethod")
   @js.native
-  class RealMethod protected () extends js.Object {
+  class RealMethod protected () extends StObject {
     def this(descriptor: PropertyDescriptor, instance: Boolean) = this()
     
     var descriptor: PropertyDescriptor = js.native

@@ -1,5 +1,6 @@
 package typings.iitc.iitctypesMod.IITC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,33 +42,21 @@ object PortalDataDetail {
   }
   
   @scala.inline
-  implicit class PortalDataDetailOps[Self <: PortalDataDetail] (val x: Self) extends AnyVal {
+  implicit class PortalDataDetailMutableBuilder[Self <: PortalDataDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactDetail(value: ArtifactDetail): Self = StObject.set(x, "artifactDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMods(value: js.Tuple4[Mod | Null, Mod | Null, Mod | Null, Mod | Null]): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifactDetail(value: ArtifactDetail): Self = this.set("artifactDetail", value.asInstanceOf[js.Any])
+    def setResonators(value: js.Array[Resonator]): Self = StObject.set(x, "resonators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMods(value: js.Tuple4[Mod | Null, Mod | Null, Mod | Null, Mod | Null]): Self = this.set("mods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResonatorsVarargs(value: Resonator*): Self = this.set("resonators", js.Array(value :_*))
-    
-    @scala.inline
-    def setResonators(value: js.Array[Resonator]): Self = this.set("resonators", value.asInstanceOf[js.Any])
+    def setResonatorsVarargs(value: Resonator*): Self = StObject.set(x, "resonators", js.Array(value :_*))
   }
 }

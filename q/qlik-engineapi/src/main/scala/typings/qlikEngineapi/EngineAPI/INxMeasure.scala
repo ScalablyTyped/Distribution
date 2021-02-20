@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Attribute expressions do not affect the layout of an object. The sorting order is unchanged.
   */
 @js.native
-trait INxMeasure extends js.Object {
+trait INxMeasure extends StObject {
   
   /**
     * List of attribute dimensions.
@@ -60,57 +61,45 @@ object INxMeasure {
   }
   
   @scala.inline
-  implicit class INxMeasureOps[Self <: INxMeasure] (val x: Self) extends AnyVal {
+  implicit class INxMeasureMutableBuilder[Self <: INxMeasure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttributeDimensions(value: js.Array[INxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttributeDimensionsUndefined: Self = StObject.set(x, "qAttributeDimensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQAttributeDimensionsVarargs(value: INxAttrDimDef*): Self = StObject.set(x, "qAttributeDimensions", js.Array(value :_*))
     
     @scala.inline
-    def setQDef(value: INxInlineMeasureDef): Self = this.set("qDef", value.asInstanceOf[js.Any])
+    def setQAttributeExpressions(value: js.Array[INxAttrExprDef]): Self = StObject.set(x, "qAttributeExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttributeDimensionsVarargs(value: INxAttrDimDef*): Self = this.set("qAttributeDimensions", js.Array(value :_*))
+    def setQAttributeExpressionsUndefined: Self = StObject.set(x, "qAttributeExpressions", js.undefined)
     
     @scala.inline
-    def setQAttributeDimensions(value: js.Array[INxAttrDimDef]): Self = this.set("qAttributeDimensions", value.asInstanceOf[js.Any])
+    def setQAttributeExpressionsVarargs(value: INxAttrExprDef*): Self = StObject.set(x, "qAttributeExpressions", js.Array(value :_*))
     
     @scala.inline
-    def deleteQAttributeDimensions: Self = this.set("qAttributeDimensions", js.undefined)
+    def setQCalcCond(value: IValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttributeExpressionsVarargs(value: INxAttrExprDef*): Self = this.set("qAttributeExpressions", js.Array(value :_*))
+    def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
     
     @scala.inline
-    def setQAttributeExpressions(value: js.Array[INxAttrExprDef]): Self = this.set("qAttributeExpressions", value.asInstanceOf[js.Any])
+    def setQDef(value: INxInlineMeasureDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQAttributeExpressions: Self = this.set("qAttributeExpressions", js.undefined)
+    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCalcCond(value: IValueExpr): Self = this.set("qCalcCond", value.asInstanceOf[js.Any])
+    def setQLibraryIdUndefined: Self = StObject.set(x, "qLibraryId", js.undefined)
     
     @scala.inline
-    def deleteQCalcCond: Self = this.set("qCalcCond", js.undefined)
+    def setQSortBy(value: ISortCriteria): Self = StObject.set(x, "qSortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLibraryId(value: String): Self = this.set("qLibraryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQLibraryId: Self = this.set("qLibraryId", js.undefined)
-    
-    @scala.inline
-    def setQSortBy(value: ISortCriteria): Self = this.set("qSortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQSortBy: Self = this.set("qSortBy", js.undefined)
+    def setQSortByUndefined: Self = StObject.set(x, "qSortBy", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OAuthCallbackChecks extends js.Object {
+trait OAuthCallbackChecks extends StObject {
   
   /**
     * PKCE code_verifier to be sent to the token endpoint during code exchange. Use of this check is required
@@ -39,42 +40,30 @@ object OAuthCallbackChecks {
   }
   
   @scala.inline
-  implicit class OAuthCallbackChecksOps[Self <: OAuthCallbackChecks] (val x: Self) extends AnyVal {
+  implicit class OAuthCallbackChecksMutableBuilder[Self <: OAuthCallbackChecks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode_verifier(value: String): Self = StObject.set(x, "code_verifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode_verifierUndefined: Self = StObject.set(x, "code_verifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJarm(value: Boolean): Self = StObject.set(x, "jarm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode_verifier(value: String): Self = this.set("code_verifier", value.asInstanceOf[js.Any])
+    def setJarmUndefined: Self = StObject.set(x, "jarm", js.undefined)
     
     @scala.inline
-    def deleteCode_verifier: Self = this.set("code_verifier", js.undefined)
+    def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJarm(value: Boolean): Self = this.set("jarm", value.asInstanceOf[js.Any])
+    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
     @scala.inline
-    def deleteJarm: Self = this.set("jarm", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_type(value: String): Self = this.set("response_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse_type: Self = this.set("response_type", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

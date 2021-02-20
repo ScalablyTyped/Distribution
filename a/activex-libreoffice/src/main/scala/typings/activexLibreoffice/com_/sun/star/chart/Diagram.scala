@@ -11,6 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,33 +120,21 @@ object Diagram {
   }
   
   @scala.inline
-  implicit class DiagramOps[Self <: Diagram] (val x: Self) extends AnyVal {
+  implicit class DiagramMutableBuilder[Self <: Diagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticSize(value: Boolean): Self = StObject.set(x, "AutomaticSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticPosition(value: Boolean): Self = this.set("AutomaticPosition", value.asInstanceOf[js.Any])
+    def setDataRowSource(value: ChartDataRowSource): Self = StObject.set(x, "DataRowSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticSize(value: Boolean): Self = this.set("AutomaticSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataCaption(value: Double): Self = this.set("DataCaption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataRowSource(value: ChartDataRowSource): Self = this.set("DataRowSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMissingValueTreatment(value: Double): Self = this.set("MissingValueTreatment", value.asInstanceOf[js.Any])
+    def setMissingValueTreatment(value: Double): Self = StObject.set(x, "MissingValueTreatment", value.asInstanceOf[js.Any])
   }
 }

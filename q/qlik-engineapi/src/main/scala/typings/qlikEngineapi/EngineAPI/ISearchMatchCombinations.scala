@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchMatchCombinations...
   */
 @js.native
-trait ISearchMatchCombinations extends js.Object {
+trait ISearchMatchCombinations extends StObject {
   
   /**
     * Array of search combinations.
@@ -24,24 +25,12 @@ object ISearchMatchCombinations {
   }
   
   @scala.inline
-  implicit class ISearchMatchCombinationsOps[Self <: ISearchMatchCombinations] (val x: Self) extends AnyVal {
+  implicit class ISearchMatchCombinationsMutableBuilder[Self <: ISearchMatchCombinations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQSearchMatchCombinations(value: js.Array[ISerachMatchCombination]): Self = StObject.set(x, "qSearchMatchCombinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQSearchMatchCombinationsVarargs(value: ISerachMatchCombination*): Self = this.set("qSearchMatchCombinations", js.Array(value :_*))
-    
-    @scala.inline
-    def setQSearchMatchCombinations(value: js.Array[ISerachMatchCombination]): Self = this.set("qSearchMatchCombinations", value.asInstanceOf[js.Any])
+    def setQSearchMatchCombinationsVarargs(value: ISerachMatchCombination*): Self = StObject.set(x, "qSearchMatchCombinations", js.Array(value :_*))
   }
 }

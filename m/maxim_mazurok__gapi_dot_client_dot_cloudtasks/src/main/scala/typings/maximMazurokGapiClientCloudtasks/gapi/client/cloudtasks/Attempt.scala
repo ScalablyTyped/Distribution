@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attempt extends js.Object {
+trait Attempt extends StObject {
   
   /** Output only. The time that this attempt was dispatched. `dispatch_time` will be truncated to the nearest microsecond. */
   var dispatchTime: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object Attempt {
   }
   
   @scala.inline
-  implicit class AttemptOps[Self <: Attempt] (val x: Self) extends AnyVal {
+  implicit class AttemptMutableBuilder[Self <: Attempt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDispatchTime(value: String): Self = StObject.set(x, "dispatchTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispatchTimeUndefined: Self = StObject.set(x, "dispatchTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseStatus(value: Status): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatchTime(value: String): Self = this.set("dispatchTime", value.asInstanceOf[js.Any])
+    def setResponseStatusUndefined: Self = StObject.set(x, "responseStatus", js.undefined)
     
     @scala.inline
-    def deleteDispatchTime: Self = this.set("dispatchTime", js.undefined)
+    def setResponseTime(value: String): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStatus(value: Status): Self = this.set("responseStatus", value.asInstanceOf[js.Any])
+    def setResponseTimeUndefined: Self = StObject.set(x, "responseTime", js.undefined)
     
     @scala.inline
-    def deleteResponseStatus: Self = this.set("responseStatus", js.undefined)
+    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTime(value: String): Self = this.set("responseTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseTime: Self = this.set("responseTime", js.undefined)
-    
-    @scala.inline
-    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

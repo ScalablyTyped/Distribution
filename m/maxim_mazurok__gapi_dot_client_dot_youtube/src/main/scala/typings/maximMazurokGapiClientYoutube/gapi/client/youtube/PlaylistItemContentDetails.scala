@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaylistItemContentDetails extends js.Object {
+trait PlaylistItemContentDetails extends StObject {
   
   /**
     * The time, measured in seconds from the start of the video, when the video should stop playing. (The playlist owner can specify the times when the video should start and stop playing
@@ -37,48 +38,36 @@ object PlaylistItemContentDetails {
   }
   
   @scala.inline
-  implicit class PlaylistItemContentDetailsOps[Self <: PlaylistItemContentDetails] (val x: Self) extends AnyVal {
+  implicit class PlaylistItemContentDetailsMutableBuilder[Self <: PlaylistItemContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndAt(value: String): Self = this.set("endAt", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def deleteEndAt: Self = this.set("endAt", js.undefined)
+    def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartAt(value: String): Self = this.set("startAt", value.asInstanceOf[js.Any])
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
     
     @scala.inline
-    def deleteStartAt: Self = this.set("startAt", js.undefined)
+    def setVideoPublishedAt(value: String): Self = StObject.set(x, "videoPublishedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
-    
-    @scala.inline
-    def setVideoPublishedAt(value: String): Self = this.set("videoPublishedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoPublishedAt: Self = this.set("videoPublishedAt", js.undefined)
+    def setVideoPublishedAtUndefined: Self = StObject.set(x, "videoPublishedAt", js.undefined)
   }
 }

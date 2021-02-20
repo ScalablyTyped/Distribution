@@ -5,12 +5,13 @@ import typings.evernote.mod.Types.NotebookRestrictions
 import typings.evernote.mod.Types.Publishing
 import typings.evernote.mod.Types.SharedNotebook
 import typings.evernote.mod.Types.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusinessNotebook extends js.Object {
+trait BusinessNotebook extends StObject {
   
   var businessNotebook: js.UndefOr[typings.evernote.mod.Types.BusinessNotebook] = js.native
   
@@ -51,114 +52,102 @@ object BusinessNotebook {
   }
   
   @scala.inline
-  implicit class BusinessNotebookOps[Self <: BusinessNotebook] (val x: Self) extends AnyVal {
+  implicit class BusinessNotebookMutableBuilder[Self <: BusinessNotebook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusinessNotebook(value: typings.evernote.mod.Types.BusinessNotebook): Self = StObject.set(x, "businessNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusinessNotebookUndefined: Self = StObject.set(x, "businessNotebook", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContact(value: User): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessNotebook(value: typings.evernote.mod.Types.BusinessNotebook): Self = this.set("businessNotebook", value.asInstanceOf[js.Any])
+    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     @scala.inline
-    def deleteBusinessNotebook: Self = this.set("businessNotebook", js.undefined)
+    def setDefaultNotebook(value: Boolean): Self = StObject.set(x, "defaultNotebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContact(value: User): Self = this.set("contact", value.asInstanceOf[js.Any])
+    def setDefaultNotebookUndefined: Self = StObject.set(x, "defaultNotebook", js.undefined)
     
     @scala.inline
-    def deleteContact: Self = this.set("contact", js.undefined)
+    def setGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNotebook(value: Boolean): Self = this.set("defaultNotebook", value.asInstanceOf[js.Any])
+    def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
     
     @scala.inline
-    def deleteDefaultNotebook: Self = this.set("defaultNotebook", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: typings.evernote.mod.Types.Guid): Self = this.set("guid", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGuid: Self = this.set("guid", js.undefined)
+    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublishing(value: Publishing): Self = StObject.set(x, "publishing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished(value: Boolean): Self = this.set("published", value.asInstanceOf[js.Any])
+    def setPublishingUndefined: Self = StObject.set(x, "publishing", js.undefined)
     
     @scala.inline
-    def deletePublished: Self = this.set("published", js.undefined)
+    def setRecipientSettings(value: NotebookRecipientSettings): Self = StObject.set(x, "recipientSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishing(value: Publishing): Self = this.set("publishing", value.asInstanceOf[js.Any])
+    def setRecipientSettingsUndefined: Self = StObject.set(x, "recipientSettings", js.undefined)
     
     @scala.inline
-    def deletePublishing: Self = this.set("publishing", js.undefined)
+    def setRestrictions(value: NotebookRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientSettings(value: NotebookRecipientSettings): Self = this.set("recipientSettings", value.asInstanceOf[js.Any])
+    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
     @scala.inline
-    def deleteRecipientSettings: Self = this.set("recipientSettings", js.undefined)
+    def setServiceCreated(value: Double): Self = StObject.set(x, "serviceCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictions(value: NotebookRestrictions): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    def setServiceCreatedUndefined: Self = StObject.set(x, "serviceCreated", js.undefined)
     
     @scala.inline
-    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+    def setServiceUpdated(value: Double): Self = StObject.set(x, "serviceUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCreated(value: Double): Self = this.set("serviceCreated", value.asInstanceOf[js.Any])
+    def setServiceUpdatedUndefined: Self = StObject.set(x, "serviceUpdated", js.undefined)
     
     @scala.inline
-    def deleteServiceCreated: Self = this.set("serviceCreated", js.undefined)
+    def setSharedNotebookIds(value: js.Array[Double]): Self = StObject.set(x, "sharedNotebookIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceUpdated(value: Double): Self = this.set("serviceUpdated", value.asInstanceOf[js.Any])
+    def setSharedNotebookIdsUndefined: Self = StObject.set(x, "sharedNotebookIds", js.undefined)
     
     @scala.inline
-    def deleteServiceUpdated: Self = this.set("serviceUpdated", js.undefined)
+    def setSharedNotebookIdsVarargs(value: Double*): Self = StObject.set(x, "sharedNotebookIds", js.Array(value :_*))
     
     @scala.inline
-    def setSharedNotebookIdsVarargs(value: Double*): Self = this.set("sharedNotebookIds", js.Array(value :_*))
+    def setSharedNotebooks(value: js.Array[SharedNotebook]): Self = StObject.set(x, "sharedNotebooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedNotebookIds(value: js.Array[Double]): Self = this.set("sharedNotebookIds", value.asInstanceOf[js.Any])
+    def setSharedNotebooksUndefined: Self = StObject.set(x, "sharedNotebooks", js.undefined)
     
     @scala.inline
-    def deleteSharedNotebookIds: Self = this.set("sharedNotebookIds", js.undefined)
+    def setSharedNotebooksVarargs(value: SharedNotebook*): Self = StObject.set(x, "sharedNotebooks", js.Array(value :_*))
     
     @scala.inline
-    def setSharedNotebooksVarargs(value: SharedNotebook*): Self = this.set("sharedNotebooks", js.Array(value :_*))
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedNotebooks(value: js.Array[SharedNotebook]): Self = this.set("sharedNotebooks", value.asInstanceOf[js.Any])
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     @scala.inline
-    def deleteSharedNotebooks: Self = this.set("sharedNotebooks", js.undefined)
+    def setUpdateSequenceNum(value: Double): Self = StObject.set(x, "updateSequenceNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
-    
-    @scala.inline
-    def setUpdateSequenceNum(value: Double): Self = this.set("updateSequenceNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateSequenceNum: Self = this.set("updateSequenceNum", js.undefined)
+    def setUpdateSequenceNumUndefined: Self = StObject.set(x, "updateSequenceNum", js.undefined)
   }
 }

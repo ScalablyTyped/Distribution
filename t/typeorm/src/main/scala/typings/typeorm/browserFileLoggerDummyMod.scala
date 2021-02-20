@@ -1,15 +1,15 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/platform/BrowserFileLoggerDummy", JSImport.Namespace)
-@js.native
-object browserFileLoggerDummyMod extends js.Object {
+object browserFileLoggerDummyMod {
   
+  @JSImport("typeorm/browser/platform/BrowserFileLoggerDummy", "DummyLogger")
   @js.native
-  class DummyLogger () extends js.Object {
+  class DummyLogger () extends StObject {
     
     /**
       * Perform logging using given logger, or by default to the console.
@@ -43,6 +43,7 @@ object browserFileLoggerDummyMod extends js.Object {
     def logSchemaBuild(): Unit = js.native
   }
   
+  @JSImport("typeorm/browser/platform/BrowserFileLoggerDummy", "FileLogger")
   @js.native
   class FileLogger () extends DummyLogger
 }

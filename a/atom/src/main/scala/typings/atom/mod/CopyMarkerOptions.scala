@@ -5,12 +5,13 @@ import typings.atom.atomStrings.never
 import typings.atom.atomStrings.overlap
 import typings.atom.atomStrings.surround
 import typings.atom.atomStrings.touch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyMarkerOptions extends js.Object {
+trait CopyMarkerOptions extends StObject {
   
   /**
     *  Indicates whether insertions at the start or end of the marked range should
@@ -39,48 +40,36 @@ object CopyMarkerOptions {
   }
   
   @scala.inline
-  implicit class CopyMarkerOptionsOps[Self <: CopyMarkerOptions] (val x: Self) extends AnyVal {
+  implicit class CopyMarkerOptionsMutableBuilder[Self <: CopyMarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
+    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
     @scala.inline
-    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = this.set("invalidate", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteInvalidate: Self = this.set("invalidate", js.undefined)
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Object): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setTailed(value: Boolean): Self = StObject.set(x, "tailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReversed: Self = this.set("reversed", js.undefined)
-    
-    @scala.inline
-    def setTailed(value: Boolean): Self = this.set("tailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTailed: Self = this.set("tailed", js.undefined)
+    def setTailedUndefined: Self = StObject.set(x, "tailed", js.undefined)
   }
 }

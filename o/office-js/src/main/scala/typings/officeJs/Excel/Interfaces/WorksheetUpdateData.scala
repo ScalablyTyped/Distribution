@@ -4,13 +4,14 @@ import typings.officeJs.Excel.SheetVisibility
 import typings.officeJs.officeJsStrings.Hidden
 import typings.officeJs.officeJsStrings.VeryHidden
 import typings.officeJs.officeJsStrings.Visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`. */
 @js.native
-trait WorksheetUpdateData extends js.Object {
+trait WorksheetUpdateData extends StObject {
   
   /**
     *
@@ -97,72 +98,60 @@ object WorksheetUpdateData {
   }
   
   @scala.inline
-  implicit class WorksheetUpdateDataOps[Self <: WorksheetUpdateData] (val x: Self) extends AnyVal {
+  implicit class WorksheetUpdateDataMutableBuilder[Self <: WorksheetUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableCalculation(value: Boolean): Self = StObject.set(x, "enableCalculation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableCalculationUndefined: Self = StObject.set(x, "enableCalculation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCalculation(value: Boolean): Self = this.set("enableCalculation", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEnableCalculation: Self = this.set("enableCalculation", js.undefined)
+    def setPageLayout(value: PageLayoutUpdateData): Self = StObject.set(x, "pageLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPageLayoutUndefined: Self = StObject.set(x, "pageLayout", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLayout(value: PageLayoutUpdateData): Self = this.set("pageLayout", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePageLayout: Self = this.set("pageLayout", js.undefined)
+    def setShowGridlines(value: Boolean): Self = StObject.set(x, "showGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShowGridlinesUndefined: Self = StObject.set(x, "showGridlines", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShowHeadings(value: Boolean): Self = StObject.set(x, "showHeadings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGridlines(value: Boolean): Self = this.set("showGridlines", value.asInstanceOf[js.Any])
+    def setShowHeadingsUndefined: Self = StObject.set(x, "showHeadings", js.undefined)
     
     @scala.inline
-    def deleteShowGridlines: Self = this.set("showGridlines", js.undefined)
+    def setStandardWidth(value: Double): Self = StObject.set(x, "standardWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHeadings(value: Boolean): Self = this.set("showHeadings", value.asInstanceOf[js.Any])
+    def setStandardWidthUndefined: Self = StObject.set(x, "standardWidth", js.undefined)
     
     @scala.inline
-    def deleteShowHeadings: Self = this.set("showHeadings", js.undefined)
+    def setTabColor(value: String): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardWidth(value: Double): Self = this.set("standardWidth", value.asInstanceOf[js.Any])
+    def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
     
     @scala.inline
-    def deleteStandardWidth: Self = this.set("standardWidth", js.undefined)
+    def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabColor(value: String): Self = this.set("tabColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabColor: Self = this.set("tabColor", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: SheetVisibility | Visible | Hidden | VeryHidden): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

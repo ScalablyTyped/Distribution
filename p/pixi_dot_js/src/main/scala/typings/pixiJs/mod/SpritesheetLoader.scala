@@ -1,6 +1,7 @@
 package typings.pixiJs.mod
 
 import typings.pixiJs.PIXI.ILoaderPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,16 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "SpritesheetLoader")
 @js.native
 class SpritesheetLoader () extends ILoaderPlugin
-/* static members */
-@JSImport("pixi.js", "SpritesheetLoader")
-@js.native
-object SpritesheetLoader extends js.Object {
+object SpritesheetLoader {
   
   /**
     * Get the spritesheets root path
     * @param {PIXI.LoaderResource} resource - Resource to check path
     * @param {string} baseUrl - Base root url
     */
+  /* static member */
+  @JSImport("pixi.js", "SpritesheetLoader.getResourcePath")
+  @js.native
   def getResourcePath(resource: typings.pixiJs.PIXI.LoaderResource, baseUrl: String): Unit = js.native
   
   /**
@@ -36,5 +37,8 @@ object SpritesheetLoader extends js.Object {
     * @param {PIXI.LoaderResource} resource
     * @param {function} next
     */
+  /* static member */
+  @JSImport("pixi.js", "SpritesheetLoader.use")
+  @js.native
   def use(resource: typings.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
 }

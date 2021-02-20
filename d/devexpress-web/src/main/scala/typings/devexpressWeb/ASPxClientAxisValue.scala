@@ -1,6 +1,7 @@
 package typings.devexpressWeb
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the information about an axis value.
   */
 @js.native
-trait ASPxClientAxisValue extends js.Object {
+trait ASPxClientAxisValue extends StObject {
   
   /**
     * Gets the axis value, if the axis scale type is date-time.
@@ -48,33 +49,21 @@ object ASPxClientAxisValue {
   }
   
   @scala.inline
-  implicit class ASPxClientAxisValueOps[Self <: ASPxClientAxisValue] (val x: Self) extends AnyVal {
+  implicit class ASPxClientAxisValueMutableBuilder[Self <: ASPxClientAxisValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQualitativeValue(value: String): Self = StObject.set(x, "qualitativeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeValue(value: Date): Self = this.set("dateTimeValue", value.asInstanceOf[js.Any])
+    def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericalValue(value: Double): Self = this.set("numericalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQualitativeValue(value: String): Self = this.set("qualitativeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaleType(value: String): Self = this.set("scaleType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSpanValue(value: js.Any): Self = this.set("timeSpanValue", value.asInstanceOf[js.Any])
+    def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
   }
 }

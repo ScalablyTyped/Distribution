@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.AsyncActionCompletedHandler
 import typings.winrtUwp.Windows.Foundation.AsyncStatus
 import typings.winrtUwp.Windows.Foundation.IAsyncAction
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables start, track, and end asynchronous SMS message delete operations for multiple messages. */
 @js.native
-trait DeleteSmsMessagesOperation extends js.Object {
+trait DeleteSmsMessagesOperation extends StObject {
   
   /** Cancels the asynchronous SMS message delete operations. */
   def cancel(): Unit = js.native

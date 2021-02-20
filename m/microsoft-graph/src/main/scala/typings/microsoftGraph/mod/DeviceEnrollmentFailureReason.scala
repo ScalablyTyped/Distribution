@@ -1,6 +1,7 @@
 package typings.microsoftGraph.mod
 
 import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.clientDisconnected
   - typings.microsoftGraph.microsoftGraphStrings.userAbandonment
 */
-trait DeviceEnrollmentFailureReason extends js.Object
+trait DeviceEnrollmentFailureReason extends StObject
 object DeviceEnrollmentFailureReason {
   
   @scala.inline

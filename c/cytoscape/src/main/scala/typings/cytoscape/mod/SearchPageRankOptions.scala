@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#eles.pageRank
   */
 @js.native
-trait SearchPageRankOptions extends js.Object {
+trait SearchPageRankOptions extends StObject {
   
   /** Numeric parameter for the algorithm. */
   var dampingFactor: js.UndefOr[Double] = js.native
@@ -32,36 +33,24 @@ object SearchPageRankOptions {
   }
   
   @scala.inline
-  implicit class SearchPageRankOptionsOps[Self <: SearchPageRankOptions] (val x: Self) extends AnyVal {
+  implicit class SearchPageRankOptionsMutableBuilder[Self <: SearchPageRankOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDampingFactor(value: Double): Self = StObject.set(x, "dampingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDampingFactorUndefined: Self = StObject.set(x, "dampingFactor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDampingFactor(value: Double): Self = this.set("dampingFactor", value.asInstanceOf[js.Any])
+    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
     @scala.inline
-    def deleteDampingFactor: Self = this.set("dampingFactor", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIterations: Self = this.set("iterations", js.undefined)
-    
-    @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DesiredWeightAndCapacity extends js.Object {
+trait DesiredWeightAndCapacity extends StObject {
   
   /**
     * The variant's capacity.
@@ -31,33 +32,21 @@ object DesiredWeightAndCapacity {
   }
   
   @scala.inline
-  implicit class DesiredWeightAndCapacityOps[Self <: DesiredWeightAndCapacity] (val x: Self) extends AnyVal {
+  implicit class DesiredWeightAndCapacityMutableBuilder[Self <: DesiredWeightAndCapacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesiredInstanceCount(value: TaskCount): Self = StObject.set(x, "DesiredInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesiredInstanceCountUndefined: Self = StObject.set(x, "DesiredInstanceCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesiredWeight(value: VariantWeight): Self = StObject.set(x, "DesiredWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariantName(value: VariantName): Self = this.set("VariantName", value.asInstanceOf[js.Any])
+    def setDesiredWeightUndefined: Self = StObject.set(x, "DesiredWeight", js.undefined)
     
     @scala.inline
-    def setDesiredInstanceCount(value: TaskCount): Self = this.set("DesiredInstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredInstanceCount: Self = this.set("DesiredInstanceCount", js.undefined)
-    
-    @scala.inline
-    def setDesiredWeight(value: VariantWeight): Self = this.set("DesiredWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDesiredWeight: Self = this.set("DesiredWeight", js.undefined)
+    def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
   }
 }

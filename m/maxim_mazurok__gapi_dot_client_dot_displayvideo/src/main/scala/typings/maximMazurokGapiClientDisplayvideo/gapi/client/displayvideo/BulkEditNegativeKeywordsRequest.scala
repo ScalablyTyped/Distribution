@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEditNegativeKeywordsRequest extends js.Object {
+trait BulkEditNegativeKeywordsRequest extends StObject {
   
   /** The negative keywords to create in batch, specified as a list of NegativeKeywords. */
   var createdNegativeKeywords: js.UndefOr[js.Array[NegativeKeyword]] = js.native
@@ -22,36 +23,24 @@ object BulkEditNegativeKeywordsRequest {
   }
   
   @scala.inline
-  implicit class BulkEditNegativeKeywordsRequestOps[Self <: BulkEditNegativeKeywordsRequest] (val x: Self) extends AnyVal {
+  implicit class BulkEditNegativeKeywordsRequestMutableBuilder[Self <: BulkEditNegativeKeywordsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "createdNegativeKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedNegativeKeywordsUndefined: Self = StObject.set(x, "createdNegativeKeywords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedNegativeKeywordsVarargs(value: NegativeKeyword*): Self = StObject.set(x, "createdNegativeKeywords", js.Array(value :_*))
     
     @scala.inline
-    def setCreatedNegativeKeywordsVarargs(value: NegativeKeyword*): Self = this.set("createdNegativeKeywords", js.Array(value :_*))
+    def setDeletedNegativeKeywords(value: js.Array[String]): Self = StObject.set(x, "deletedNegativeKeywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedNegativeKeywords(value: js.Array[NegativeKeyword]): Self = this.set("createdNegativeKeywords", value.asInstanceOf[js.Any])
+    def setDeletedNegativeKeywordsUndefined: Self = StObject.set(x, "deletedNegativeKeywords", js.undefined)
     
     @scala.inline
-    def deleteCreatedNegativeKeywords: Self = this.set("createdNegativeKeywords", js.undefined)
-    
-    @scala.inline
-    def setDeletedNegativeKeywordsVarargs(value: String*): Self = this.set("deletedNegativeKeywords", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeletedNegativeKeywords(value: js.Array[String]): Self = this.set("deletedNegativeKeywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletedNegativeKeywords: Self = this.set("deletedNegativeKeywords", js.undefined)
+    def setDeletedNegativeKeywordsVarargs(value: String*): Self = StObject.set(x, "deletedNegativeKeywords", js.Array(value :_*))
   }
 }

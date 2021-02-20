@@ -5,6 +5,7 @@ import typings.std.EventTarget
 import typings.w3cGenericSensor.w3cGenericSensorStrings.activate
 import typings.w3cGenericSensor.w3cGenericSensorStrings.error
 import typings.w3cGenericSensor.w3cGenericSensorStrings.reading
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +46,7 @@ trait Sensor extends EventTarget {
   
   def onreading(ev: Event): js.Any = js.native
   
-   // Should be DOMHighResTimeStamp.
+  // Should be DOMHighResTimeStamp.
   def start(): Unit = js.native
   
   def stop(): Unit = js.native

@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/styles/hljs/ocean", JSImport.Namespace)
-@js.native
-object hljsOceanMod extends js.Object {
+object hljsOceanMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/styles/hljs/ocean", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

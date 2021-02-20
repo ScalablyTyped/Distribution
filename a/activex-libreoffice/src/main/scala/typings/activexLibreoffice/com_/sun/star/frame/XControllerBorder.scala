@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,33 +56,21 @@ object XControllerBorder {
   }
   
   @scala.inline
-  implicit class XControllerBorderOps[Self <: XControllerBorder] (val x: Self) extends AnyVal {
+  implicit class XControllerBorderMutableBuilder[Self <: XControllerBorder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "addBorderResizeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorder(value: BorderWidths): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBorder(value: () => BorderWidths): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBorder(value: BorderWidths): Self = this.set("Border", value.asInstanceOf[js.Any])
+    def setQueryBorderedArea(value: Rectangle => Rectangle): Self = StObject.set(x, "queryBorderedArea", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddBorderResizeListener(value: XBorderResizeListener => Unit): Self = this.set("addBorderResizeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetBorder(value: () => BorderWidths): Self = this.set("getBorder", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryBorderedArea(value: Rectangle => Rectangle): Self = this.set("queryBorderedArea", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveBorderResizeListener(value: XBorderResizeListener => Unit): Self = this.set("removeBorderResizeListener", js.Any.fromFunction1(value))
+    def setRemoveBorderResizeListener(value: XBorderResizeListener => Unit): Self = StObject.set(x, "removeBorderResizeListener", js.Any.fromFunction1(value))
   }
 }

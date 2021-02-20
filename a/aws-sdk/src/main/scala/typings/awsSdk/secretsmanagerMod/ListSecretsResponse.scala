@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSecretsResponse extends js.Object {
+trait ListSecretsResponse extends StObject {
   
   /**
     * If present in the response, this value indicates that there's more output available than included in the current response. This can occur even when the response includes no values at all, such as when you ask for a filtered view of a very long list. Use this value in the NextToken request parameter in a subsequent call to the operation to continue processing and get the next part of the output. You should repeat this until the NextToken response element comes back empty (as null).
@@ -26,33 +27,21 @@ object ListSecretsResponse {
   }
   
   @scala.inline
-  implicit class ListSecretsResponseOps[Self <: ListSecretsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSecretsResponseMutableBuilder[Self <: ListSecretsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretList(value: SecretListType): Self = StObject.set(x, "SecretList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextTokenType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSecretListUndefined: Self = StObject.set(x, "SecretList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSecretListVarargs(value: SecretListEntry*): Self = this.set("SecretList", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecretList(value: SecretListType): Self = this.set("SecretList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretList: Self = this.set("SecretList", js.undefined)
+    def setSecretListVarargs(value: SecretListEntry*): Self = StObject.set(x, "SecretList", js.Array(value :_*))
   }
 }

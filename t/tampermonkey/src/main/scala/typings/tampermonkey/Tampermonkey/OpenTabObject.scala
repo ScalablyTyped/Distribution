@@ -1,11 +1,12 @@
 package typings.tampermonkey.Tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenTabObject extends js.Object {
+trait OpenTabObject extends StObject {
   
   /** Closes tab */
   def close(): Unit = js.native
@@ -24,30 +25,18 @@ object OpenTabObject {
   }
   
   @scala.inline
-  implicit class OpenTabObjectOps[Self <: OpenTabObject] (val x: Self) extends AnyVal {
+  implicit class OpenTabObjectMutableBuilder[Self <: OpenTabObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnclosed(value: () => Unit): Self = StObject.set(x, "onclosed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setClosed(value: Boolean): Self = this.set("closed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnclosed(value: () => Unit): Self = this.set("onclosed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnclosed: Self = this.set("onclosed", js.undefined)
+    def setOnclosedUndefined: Self = StObject.set(x, "onclosed", js.undefined)
   }
 }

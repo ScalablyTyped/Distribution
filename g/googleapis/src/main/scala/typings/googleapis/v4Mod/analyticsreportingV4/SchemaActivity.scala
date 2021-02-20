@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Activity.
   */
 @js.native
-trait SchemaActivity extends js.Object {
+trait SchemaActivity extends StObject {
   
   /**
     * Timestamp of the activity.
@@ -123,111 +124,99 @@ object SchemaActivity {
   }
   
   @scala.inline
-  implicit class SchemaActivityOps[Self <: SchemaActivity] (val x: Self) extends AnyVal {
+  implicit class SchemaActivityMutableBuilder[Self <: SchemaActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityTime(value: String): Self = StObject.set(x, "activityTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityTimeUndefined: Self = StObject.set(x, "activityTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityTime(value: String): Self = this.set("activityTime", value.asInstanceOf[js.Any])
+    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
     @scala.inline
-    def deleteActivityTime: Self = this.set("activityTime", js.undefined)
+    def setAppview(value: SchemaScreenviewData): Self = StObject.set(x, "appview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityType(value: String): Self = this.set("activityType", value.asInstanceOf[js.Any])
+    def setAppviewUndefined: Self = StObject.set(x, "appview", js.undefined)
     
     @scala.inline
-    def deleteActivityType: Self = this.set("activityType", js.undefined)
+    def setCampaign(value: String): Self = StObject.set(x, "campaign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppview(value: SchemaScreenviewData): Self = this.set("appview", value.asInstanceOf[js.Any])
+    def setCampaignUndefined: Self = StObject.set(x, "campaign", js.undefined)
     
     @scala.inline
-    def deleteAppview: Self = this.set("appview", js.undefined)
+    def setChannelGrouping(value: String): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaign(value: String): Self = this.set("campaign", value.asInstanceOf[js.Any])
+    def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
     
     @scala.inline
-    def deleteCampaign: Self = this.set("campaign", js.undefined)
+    def setCustomDimension(value: js.Array[SchemaCustomDimension]): Self = StObject.set(x, "customDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelGrouping(value: String): Self = this.set("channelGrouping", value.asInstanceOf[js.Any])
+    def setCustomDimensionUndefined: Self = StObject.set(x, "customDimension", js.undefined)
     
     @scala.inline
-    def deleteChannelGrouping: Self = this.set("channelGrouping", js.undefined)
+    def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = StObject.set(x, "customDimension", js.Array(value :_*))
     
     @scala.inline
-    def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = this.set("customDimension", js.Array(value :_*))
+    def setEcommerce(value: SchemaEcommerceData): Self = StObject.set(x, "ecommerce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDimension(value: js.Array[SchemaCustomDimension]): Self = this.set("customDimension", value.asInstanceOf[js.Any])
+    def setEcommerceUndefined: Self = StObject.set(x, "ecommerce", js.undefined)
     
     @scala.inline
-    def deleteCustomDimension: Self = this.set("customDimension", js.undefined)
+    def setEvent(value: SchemaEventData): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcommerce(value: SchemaEcommerceData): Self = this.set("ecommerce", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteEcommerce: Self = this.set("ecommerce", js.undefined)
+    def setGoals(value: SchemaGoalSetData): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: SchemaEventData): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setGoalsUndefined: Self = StObject.set(x, "goals", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoals(value: SchemaGoalSetData): Self = this.set("goals", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteGoals: Self = this.set("goals", js.undefined)
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setKeywordUndefined: Self = StObject.set(x, "keyword", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setLandingPagePath(value: String): Self = StObject.set(x, "landingPagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    def setLandingPagePathUndefined: Self = StObject.set(x, "landingPagePath", js.undefined)
     
     @scala.inline
-    def deleteKeyword: Self = this.set("keyword", js.undefined)
+    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandingPagePath(value: String): Self = this.set("landingPagePath", value.asInstanceOf[js.Any])
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def deleteLandingPagePath: Self = this.set("landingPagePath", js.undefined)
+    def setPageview(value: SchemaPageviewData): Self = StObject.set(x, "pageview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: String): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setPageviewUndefined: Self = StObject.set(x, "pageview", js.undefined)
     
     @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageview(value: SchemaPageviewData): Self = this.set("pageview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageview: Self = this.set("pageview", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

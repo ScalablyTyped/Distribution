@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchCatalogObjectsRequest")
 @js.native
-class SearchCatalogObjectsRequest () extends js.Object {
+class SearchCatalogObjectsRequest () extends StObject {
   
   /**
     * Return objects modified after this [timestamp](https://developer.squareup.com/docs/build-basics/working-with-dates),

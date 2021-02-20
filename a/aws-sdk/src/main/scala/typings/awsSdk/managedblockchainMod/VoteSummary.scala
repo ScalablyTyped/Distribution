@@ -1,11 +1,12 @@
 package typings.awsSdk.managedblockchainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoteSummary extends js.Object {
+trait VoteSummary extends StObject {
   
   /**
     *  The unique identifier of the member that cast the vote. 
@@ -31,36 +32,24 @@ object VoteSummary {
   }
   
   @scala.inline
-  implicit class VoteSummaryOps[Self <: VoteSummary] (val x: Self) extends AnyVal {
+  implicit class VoteSummaryMutableBuilder[Self <: VoteSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemberName(value: NetworkMemberNameString): Self = StObject.set(x, "MemberName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberId(value: ResourceIdString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
+    def setMemberNameUndefined: Self = StObject.set(x, "MemberName", js.undefined)
     
     @scala.inline
-    def deleteMemberId: Self = this.set("MemberId", js.undefined)
+    def setVote(value: VoteValue): Self = StObject.set(x, "Vote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberName(value: NetworkMemberNameString): Self = this.set("MemberName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberName: Self = this.set("MemberName", js.undefined)
-    
-    @scala.inline
-    def setVote(value: VoteValue): Self = this.set("Vote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVote: Self = this.set("Vote", js.undefined)
+    def setVoteUndefined: Self = StObject.set(x, "Vote", js.undefined)
   }
 }

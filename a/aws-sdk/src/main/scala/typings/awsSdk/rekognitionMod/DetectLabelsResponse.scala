@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectLabelsResponse extends js.Object {
+trait DetectLabelsResponse extends StObject {
   
   /**
     * Version number of the label detection model that was used to detect labels.
@@ -31,39 +32,27 @@ object DetectLabelsResponse {
   }
   
   @scala.inline
-  implicit class DetectLabelsResponseOps[Self <: DetectLabelsResponse] (val x: Self) extends AnyVal {
+  implicit class DetectLabelsResponseMutableBuilder[Self <: DetectLabelsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelModelVersion(value: String): Self = StObject.set(x, "LabelModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelModelVersionUndefined: Self = StObject.set(x, "LabelModelVersion", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabels(value: Labels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelModelVersion(value: String): Self = this.set("LabelModelVersion", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
     @scala.inline
-    def deleteLabelModelVersion: Self = this.set("LabelModelVersion", js.undefined)
+    def setLabelsVarargs(value: Label*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: Label*): Self = this.set("Labels", js.Array(value :_*))
+    def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: Labels): Self = this.set("Labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("Labels", js.undefined)
-    
-    @scala.inline
-    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
+    def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
   }
 }

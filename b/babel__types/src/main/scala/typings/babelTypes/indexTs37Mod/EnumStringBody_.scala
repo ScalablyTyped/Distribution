@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.EnumStringBody
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object EnumStringBody_ {
   }
   
   @scala.inline
-  implicit class EnumStringBody_Ops[Self <: EnumStringBody_] (val x: Self) extends AnyVal {
+  implicit class EnumStringBody_MutableBuilder[Self <: EnumStringBody_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembers(value: js.Array[EnumStringMember_ | EnumDefaultedMember_]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembersVarargs(value: (EnumStringMember_ | EnumDefaultedMember_)*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setExplicit(value: Boolean): Self = this.set("explicit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMembersVarargs(value: (EnumStringMember_ | EnumDefaultedMember_)*): Self = this.set("members", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembers(value: js.Array[EnumStringMember_ | EnumDefaultedMember_]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: EnumStringBody): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: EnumStringBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

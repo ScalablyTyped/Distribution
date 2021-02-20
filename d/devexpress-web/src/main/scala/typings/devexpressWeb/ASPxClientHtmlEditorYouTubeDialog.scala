@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,33 +62,21 @@ object ASPxClientHtmlEditorYouTubeDialog {
   }
   
   @scala.inline
-  implicit class ASPxClientHtmlEditorYouTubeDialogOps[Self <: ASPxClientHtmlEditorYouTubeDialog] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHtmlEditorYouTubeDialogMutableBuilder[Self <: ASPxClientHtmlEditorYouTubeDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConfidentModeCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetConfidentModeCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowFullscreenCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetAllowFullscreenCheckBox", js.Any.fromFunction0(value))
+    def setGetShowSameVideosCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowSameVideosCheckBox", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConfidentModeCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetConfidentModeCheckBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShowPlayerControlsCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetShowPlayerControlsCheckBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShowSameVideosCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetShowSameVideosCheckBox", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShowVideoNameCheckBox(value: () => ASPxClientCheckBox): Self = this.set("GetShowVideoNameCheckBox", js.Any.fromFunction0(value))
+    def setGetShowVideoNameCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetShowVideoNameCheckBox", js.Any.fromFunction0(value))
   }
 }

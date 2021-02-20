@@ -1,11 +1,12 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaWindowsDetail extends js.Object {
+trait SchemaWindowsDetail extends StObject {
   
   /**
     * Required. The CPE URI in [cpe
@@ -42,45 +43,33 @@ object SchemaWindowsDetail {
   }
   
   @scala.inline
-  implicit class SchemaWindowsDetailOps[Self <: SchemaWindowsDetail] (val x: Self) extends AnyVal {
+  implicit class SchemaWindowsDetailMutableBuilder[Self <: SchemaWindowsDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    def setFixingKbs(value: js.Array[SchemaKnowledgeBase]): Self = StObject.set(x, "fixingKbs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFixingKbsUndefined: Self = StObject.set(x, "fixingKbs", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFixingKbsVarargs(value: SchemaKnowledgeBase*): Self = StObject.set(x, "fixingKbs", js.Array(value :_*))
     
     @scala.inline
-    def setFixingKbsVarargs(value: SchemaKnowledgeBase*): Self = this.set("fixingKbs", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixingKbs(value: js.Array[SchemaKnowledgeBase]): Self = this.set("fixingKbs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixingKbs: Self = this.set("fixingKbs", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

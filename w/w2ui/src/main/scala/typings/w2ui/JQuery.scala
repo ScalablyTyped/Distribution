@@ -7,12 +7,13 @@ import typings.w2ui.W2UI.W2Popup
 import typings.w2ui.W2UI.W2Sidebar
 import typings.w2ui.W2UI.W2Tabs
 import typings.w2ui.W2UI.W2Toolbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def w2form(options: js.Object): W2Form = js.native
   
@@ -45,39 +46,27 @@ object JQuery {
   }
   
   @scala.inline
-  implicit class JQueryOps[Self <: JQuery] (val x: Self) extends AnyVal {
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setW2form(value: js.Object => W2Form): Self = StObject.set(x, "w2form", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setW2grid(value: js.Object => W2Grid): Self = StObject.set(x, "w2grid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setW2layout(value: js.Object => W2Layout): Self = StObject.set(x, "w2layout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setW2form(value: js.Object => W2Form): Self = this.set("w2form", js.Any.fromFunction1(value))
+    def setW2popup(value: js.Object => W2Popup): Self = StObject.set(x, "w2popup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setW2grid(value: js.Object => W2Grid): Self = this.set("w2grid", js.Any.fromFunction1(value))
+    def setW2sidebar(value: js.Object => W2Sidebar): Self = StObject.set(x, "w2sidebar", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setW2layout(value: js.Object => W2Layout): Self = this.set("w2layout", js.Any.fromFunction1(value))
+    def setW2tabs(value: js.Object => W2Tabs): Self = StObject.set(x, "w2tabs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setW2popup(value: js.Object => W2Popup): Self = this.set("w2popup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setW2sidebar(value: js.Object => W2Sidebar): Self = this.set("w2sidebar", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setW2tabs(value: js.Object => W2Tabs): Self = this.set("w2tabs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setW2toolbar(value: js.Object => W2Toolbar): Self = this.set("w2toolbar", js.Any.fromFunction1(value))
+    def setW2toolbar(value: js.Object => W2Toolbar): Self = StObject.set(x, "w2toolbar", js.Any.fromFunction1(value))
   }
 }

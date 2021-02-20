@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultipartUpload extends js.Object {
+trait MultipartUpload extends StObject {
   
   /**
     * Date and time at which the multipart upload was initiated.
@@ -46,54 +47,42 @@ object MultipartUpload {
   }
   
   @scala.inline
-  implicit class MultipartUploadOps[Self <: MultipartUpload] (val x: Self) extends AnyVal {
+  implicit class MultipartUploadMutableBuilder[Self <: MultipartUpload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitiated(value: Initiated): Self = StObject.set(x, "Initiated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitiatedUndefined: Self = StObject.set(x, "Initiated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiated(value: Initiated): Self = this.set("Initiated", value.asInstanceOf[js.Any])
+    def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
     
     @scala.inline
-    def deleteInitiated: Self = this.set("Initiated", js.undefined)
+    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiator(value: Initiator): Self = this.set("Initiator", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteInitiator: Self = this.set("Initiator", js.undefined)
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setUploadId(value: MultipartUploadId): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
-    
-    @scala.inline
-    def setUploadId(value: MultipartUploadId): Self = this.set("UploadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadId: Self = this.set("UploadId", js.undefined)
+    def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
   }
 }

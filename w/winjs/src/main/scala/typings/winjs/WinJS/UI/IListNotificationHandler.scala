@@ -1,5 +1,6 @@
 package typings.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used by an IListBinding to provide change notifications when items in a IListDataSource change.
   **/
 @js.native
-trait IListNotificationHandler[T] extends js.Object {
+trait IListNotificationHandler[T] extends StObject {
   
   //#region Methods
   /**
@@ -91,45 +92,33 @@ object IListNotificationHandler {
   }
   
   @scala.inline
-  implicit class IListNotificationHandlerOps[Self <: IListNotificationHandler[_], T] (val x: Self with IListNotificationHandler[T]) extends AnyVal {
+  implicit class IListNotificationHandlerMutableBuilder[Self <: IListNotificationHandler[_], T] (val x: Self with IListNotificationHandler[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginNotifications(value: () => Unit): Self = StObject.set(x, "beginNotifications", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChanged(value: (IItem[T], IItem[T]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountChanged(value: (Double, Double) => Unit): Self = StObject.set(x, "countChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeginNotifications(value: () => Unit): Self = this.set("beginNotifications", js.Any.fromFunction0(value))
+    def setEndNotifications(value: () => Unit): Self = StObject.set(x, "endNotifications", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChanged(value: (IItem[T], IItem[T]) => Unit): Self = this.set("changed", js.Any.fromFunction2(value))
+    def setIndexChanged(value: (String, Double, Double) => Unit): Self = StObject.set(x, "indexChanged", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCountChanged(value: (Double, Double) => Unit): Self = this.set("countChanged", js.Any.fromFunction2(value))
+    def setInserted(value: (IItemPromise[T], String, String) => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEndNotifications(value: () => Unit): Self = this.set("endNotifications", js.Any.fromFunction0(value))
+    def setItemAvailable(value: IItem[T] => Unit): Self = StObject.set(x, "itemAvailable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIndexChanged(value: (String, Double, Double) => Unit): Self = this.set("indexChanged", js.Any.fromFunction3(value))
+    def setMoved(value: (IItemPromise[T], String, String) => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setInserted(value: (IItemPromise[T], String, String) => Unit): Self = this.set("inserted", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setItemAvailable(value: IItem[T] => Unit): Self = this.set("itemAvailable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMoved(value: (IItemPromise[T], String, String) => Unit): Self = this.set("moved", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoved(value: (String, Boolean) => Unit): Self = this.set("removed", js.Any.fromFunction2(value))
+    def setRemoved(value: (String, Boolean) => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactCalendarTimeline.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeFormat extends js.Object {
+trait TimeFormat extends StObject {
   
   var long: String = js.native
   
@@ -24,30 +25,18 @@ object TimeFormat {
   }
   
   @scala.inline
-  implicit class TimeFormatOps[Self <: TimeFormat] (val x: Self) extends AnyVal {
+  implicit class TimeFormatMutableBuilder[Self <: TimeFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediumLong(value: String): Self = StObject.set(x, "mediumLong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLong(value: String): Self = this.set("long", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedium(value: String): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediumLong(value: String): Self = this.set("mediumLong", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRobotApplicationVersionRequest extends js.Object {
+trait CreateRobotApplicationVersionRequest extends StObject {
   
   /**
     * The application information for the robot application.
@@ -26,27 +27,15 @@ object CreateRobotApplicationVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateRobotApplicationVersionRequestOps[Self <: CreateRobotApplicationVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRobotApplicationVersionRequestMutableBuilder[Self <: CreateRobotApplicationVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRevisionId(value: RevisionId): Self = StObject.set(x, "currentRevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplication(value: Arn): Self = this.set("application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentRevisionId(value: RevisionId): Self = this.set("currentRevisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentRevisionId: Self = this.set("currentRevisionId", js.undefined)
+    def setCurrentRevisionIdUndefined: Self = StObject.set(x, "currentRevisionId", js.undefined)
   }
 }

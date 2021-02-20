@@ -1,5 +1,6 @@
 package typings.titanium.Titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The top-level Platform module.  The Platform module is used to access the device's platform-related
   * functionality.
   */
-@JSGlobal("Titanium.Platform")
-@js.native
-object Platform extends js.Object {
+object Platform {
+  
+  /**
+    * The Android-specific Platform module, used to access the device's platform-related functionality.
+    */
+  type Android = Module
   
   /**
     * The Display Caps object returned by the <Titanium.Platform.displayCaps> property.
@@ -98,9 +102,4 @@ object Platform extends js.Object {
       */
     val ydpi: Double = js.native
   }
-  
-  /**
-    * The Android-specific Platform module, used to access the device's platform-related functionality.
-    */
-  type Android = Module
 }

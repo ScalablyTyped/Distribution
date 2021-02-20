@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoSpatialColumnGroup extends js.Object {
+trait GeoSpatialColumnGroup extends StObject {
   
   /**
     * Columns in this hierarchy.
@@ -31,30 +32,18 @@ object GeoSpatialColumnGroup {
   }
   
   @scala.inline
-  implicit class GeoSpatialColumnGroupOps[Self <: GeoSpatialColumnGroup] (val x: Self) extends AnyVal {
+  implicit class GeoSpatialColumnGroupMutableBuilder[Self <: GeoSpatialColumnGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "Columns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountryCode(value: GeoSpatialCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: ColumnName*): Self = this.set("Columns", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumns(value: ColumnList): Self = this.set("Columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCountryCode(value: GeoSpatialCountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: ColumnGroupName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: ColumnGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

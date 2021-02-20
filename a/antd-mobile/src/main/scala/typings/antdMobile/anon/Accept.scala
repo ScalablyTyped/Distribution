@@ -1,11 +1,12 @@
 package typings.antdMobile.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accept extends js.Object {
+trait Accept extends StObject {
   
   var accept: String = js.native
   
@@ -50,54 +51,42 @@ object Accept {
   }
   
   @scala.inline
-  implicit class AcceptOps[Self <: Accept] (val x: Self) extends AnyVal {
+  implicit class AcceptMutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableDelete(value: Boolean): Self = StObject.set(x, "disableDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: js.Array[scala.Nothing]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setFilesVarargs(value: scala.Nothing*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setDisableDelete(value: Boolean): Self = this.set("disableDelete", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesVarargs(value: scala.Nothing*): Self = this.set("files", js.Array(value :_*))
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[scala.Nothing]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setOnAddImageClick(value: () => Unit): Self = StObject.set(x, "onAddImageClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setOnFail(value: () => Unit): Self = StObject.set(x, "onFail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnAddImageClick(value: () => Unit): Self = this.set("onAddImageClick", js.Any.fromFunction0(value))
+    def setOnImageClick(value: () => Unit): Self = StObject.set(x, "onImageClick", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnChange(value: () => Unit): Self = this.set("onChange", js.Any.fromFunction0(value))
+    def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFail(value: () => Unit): Self = this.set("onFail", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnImageClick(value: () => Unit): Self = this.set("onImageClick", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
   }
 }

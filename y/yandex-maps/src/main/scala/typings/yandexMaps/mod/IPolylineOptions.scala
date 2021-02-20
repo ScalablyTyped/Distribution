@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPolylineOptions extends js.Object {
+trait IPolylineOptions extends StObject {
   
   var cursor: js.UndefOr[String] = js.native
   
@@ -64,174 +65,162 @@ object IPolylineOptions {
   }
   
   @scala.inline
-  implicit class IPolylineOptionsOps[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
+  implicit class IPolylineOptionsMutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setHasBalloon(value: Boolean): Self = StObject.set(x, "hasBalloon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setHasBalloonUndefined: Self = StObject.set(x, "hasBalloon", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setHasHint(value: Boolean): Self = StObject.set(x, "hasHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBalloon(value: Boolean): Self = this.set("hasBalloon", value.asInstanceOf[js.Any])
+    def setHasHintUndefined: Self = StObject.set(x, "hasHint", js.undefined)
     
     @scala.inline
-    def deleteHasBalloon: Self = this.set("hasBalloon", js.undefined)
+    def setInteractiveZIndex(value: Boolean): Self = StObject.set(x, "interactiveZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasHint(value: Boolean): Self = this.set("hasHint", value.asInstanceOf[js.Any])
+    def setInteractiveZIndexUndefined: Self = StObject.set(x, "interactiveZIndex", js.undefined)
     
     @scala.inline
-    def deleteHasHint: Self = this.set("hasHint", js.undefined)
+    def setInteractivityModel(value: String): Self = StObject.set(x, "interactivityModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteractiveZIndex(value: Boolean): Self = this.set("interactiveZIndex", value.asInstanceOf[js.Any])
+    def setInteractivityModelUndefined: Self = StObject.set(x, "interactivityModel", js.undefined)
     
     @scala.inline
-    def deleteInteractiveZIndex: Self = this.set("interactiveZIndex", js.undefined)
+    def setLineStringOverlay(value: () => js.Object | String): Self = StObject.set(x, "lineStringOverlay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInteractivityModel(value: String): Self = this.set("interactivityModel", value.asInstanceOf[js.Any])
+    def setLineStringOverlayUndefined: Self = StObject.set(x, "lineStringOverlay", js.undefined)
     
     @scala.inline
-    def deleteInteractivityModel: Self = this.set("interactivityModel", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineStringOverlay(value: () => js.Object | String): Self = this.set("lineStringOverlay", js.Any.fromFunction0(value))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLineStringOverlay: Self = this.set("lineStringOverlay", js.undefined)
+    def setOpenBalloonOnClick(value: Boolean): Self = StObject.set(x, "openBalloonOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setOpenBalloonOnClickUndefined: Self = StObject.set(x, "openBalloonOnClick", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setOpenEmptyBalloon(value: Boolean): Self = StObject.set(x, "openEmptyBalloon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenBalloonOnClick(value: Boolean): Self = this.set("openBalloonOnClick", value.asInstanceOf[js.Any])
+    def setOpenEmptyBalloonUndefined: Self = StObject.set(x, "openEmptyBalloon", js.undefined)
     
     @scala.inline
-    def deleteOpenBalloonOnClick: Self = this.set("openBalloonOnClick", js.undefined)
+    def setOpenEmptyHint(value: Boolean): Self = StObject.set(x, "openEmptyHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenEmptyBalloon(value: Boolean): Self = this.set("openEmptyBalloon", value.asInstanceOf[js.Any])
+    def setOpenEmptyHintUndefined: Self = StObject.set(x, "openEmptyHint", js.undefined)
     
     @scala.inline
-    def deleteOpenEmptyBalloon: Self = this.set("openEmptyBalloon", js.undefined)
+    def setOpenHintOnHover(value: Boolean): Self = StObject.set(x, "openHintOnHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenEmptyHint(value: Boolean): Self = this.set("openEmptyHint", value.asInstanceOf[js.Any])
+    def setOpenHintOnHoverUndefined: Self = StObject.set(x, "openHintOnHover", js.undefined)
     
     @scala.inline
-    def deleteOpenEmptyHint: Self = this.set("openEmptyHint", js.undefined)
+    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenHintOnHover(value: Boolean): Self = this.set("openHintOnHover", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteOpenHintOnHover: Self = this.set("openHintOnHover", js.undefined)
+    def setStrokeColor(value: String | js.Array[String]): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
+    def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeColorVarargs(value: String*): Self = this.set("strokeColor", js.Array(value :_*))
+    def setStrokeOpacity(value: Double | js.Array[Double]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeColor(value: String | js.Array[String]): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    def setStrokeOpacityVarargs(value: Double*): Self = StObject.set(x, "strokeOpacity", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeOpacityVarargs(value: Double*): Self = this.set("strokeOpacity", js.Array(value :_*))
+    def setStrokeStyle(value: String | (js.Array[js.Object | String]) | js.Object): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeOpacity(value: Double | js.Array[Double]): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    def setStrokeStyleUndefined: Self = StObject.set(x, "strokeStyle", js.undefined)
     
     @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    def setStrokeStyleVarargs(value: (js.Object | String)*): Self = StObject.set(x, "strokeStyle", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeStyleVarargs(value: (js.Object | String)*): Self = this.set("strokeStyle", js.Array(value :_*))
+    def setStrokeWidth(value: Double | js.Array[Double]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeStyle(value: String | (js.Array[js.Object | String]) | js.Object): Self = this.set("strokeStyle", value.asInstanceOf[js.Any])
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
     @scala.inline
-    def deleteStrokeStyle: Self = this.set("strokeStyle", js.undefined)
+    def setStrokeWidthVarargs(value: Double*): Self = StObject.set(x, "strokeWidth", js.Array(value :_*))
     
     @scala.inline
-    def setStrokeWidthVarargs(value: Double*): Self = this.set("strokeWidth", js.Array(value :_*))
+    def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeWidth(value: Double | js.Array[Double]): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    def setSyncOverlayInitUndefined: Self = StObject.set(x, "syncOverlayInit", js.undefined)
     
     @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setUseMapMarginInDragging(value: Boolean): Self = StObject.set(x, "useMapMarginInDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncOverlayInit(value: Boolean): Self = this.set("syncOverlayInit", value.asInstanceOf[js.Any])
+    def setUseMapMarginInDraggingUndefined: Self = StObject.set(x, "useMapMarginInDragging", js.undefined)
     
     @scala.inline
-    def deleteSyncOverlayInit: Self = this.set("syncOverlayInit", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMapMarginInDragging(value: Boolean): Self = this.set("useMapMarginInDragging", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteUseMapMarginInDragging: Self = this.set("useMapMarginInDragging", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setZIndexActive(value: Double): Self = StObject.set(x, "zIndexActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setZIndexActiveUndefined: Self = StObject.set(x, "zIndexActive", js.undefined)
     
     @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    def setZIndexDrag(value: Double): Self = StObject.set(x, "zIndexDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexDragUndefined: Self = StObject.set(x, "zIndexDrag", js.undefined)
     
     @scala.inline
-    def setZIndexActive(value: Double): Self = this.set("zIndexActive", value.asInstanceOf[js.Any])
+    def setZIndexHover(value: Double): Self = StObject.set(x, "zIndexHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndexActive: Self = this.set("zIndexActive", js.undefined)
+    def setZIndexHoverUndefined: Self = StObject.set(x, "zIndexHover", js.undefined)
     
     @scala.inline
-    def setZIndexDrag(value: Double): Self = this.set("zIndexDrag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndexDrag: Self = this.set("zIndexDrag", js.undefined)
-    
-    @scala.inline
-    def setZIndexHover(value: Double): Self = this.set("zIndexHover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndexHover: Self = this.set("zIndexHover", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

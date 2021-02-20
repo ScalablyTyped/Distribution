@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,27 +52,15 @@ object XRemoteContentProviderDistributor {
   }
   
   @scala.inline
-  implicit class XRemoteContentProviderDistributorOps[Self <: XRemoteContentProviderDistributor] (val x: Self) extends AnyVal {
+  implicit class XRemoteContentProviderDistributorMutableBuilder[Self <: XRemoteContentProviderDistributor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectToRemoteAcceptor(value: (String, String) => Boolean): Self = StObject.set(x, "connectToRemoteAcceptor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisconnectFromAll(value: () => Unit): Self = StObject.set(x, "disconnectFromAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectToRemoteAcceptor(value: (String, String) => Boolean): Self = this.set("connectToRemoteAcceptor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDisconnectFromAll(value: () => Unit): Self = this.set("disconnectFromAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDisconnectFromRemoteAcceptor(value: String => Boolean): Self = this.set("disconnectFromRemoteAcceptor", js.Any.fromFunction1(value))
+    def setDisconnectFromRemoteAcceptor(value: String => Boolean): Self = StObject.set(x, "disconnectFromRemoteAcceptor", js.Any.fromFunction1(value))
   }
 }

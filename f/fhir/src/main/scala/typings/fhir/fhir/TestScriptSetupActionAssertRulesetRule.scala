@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object TestScriptSetupActionAssertRulesetRule {
   }
   
   @scala.inline
-  implicit class TestScriptSetupActionAssertRulesetRuleOps[Self <: TestScriptSetupActionAssertRulesetRule] (val x: Self) extends AnyVal {
+  implicit class TestScriptSetupActionAssertRulesetRuleMutableBuilder[Self <: TestScriptSetupActionAssertRulesetRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParam(value: js.Array[TestScriptSetupActionAssertRulesetRuleParam]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParamVarargs(value: TestScriptSetupActionAssertRulesetRuleParam*): Self = StObject.set(x, "param", js.Array(value :_*))
     
     @scala.inline
-    def setRuleId(value: id): Self = this.set("ruleId", value.asInstanceOf[js.Any])
+    def setRuleId(value: id): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_ruleId(value: Element): Self = this.set("_ruleId", value.asInstanceOf[js.Any])
+    def set_ruleId(value: Element): Self = StObject.set(x, "_ruleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_ruleId: Self = this.set("_ruleId", js.undefined)
-    
-    @scala.inline
-    def setParamVarargs(value: TestScriptSetupActionAssertRulesetRuleParam*): Self = this.set("param", js.Array(value :_*))
-    
-    @scala.inline
-    def setParam(value: js.Array[TestScriptSetupActionAssertRulesetRuleParam]): Self = this.set("param", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def set_ruleIdUndefined: Self = StObject.set(x, "_ruleId", js.undefined)
   }
 }

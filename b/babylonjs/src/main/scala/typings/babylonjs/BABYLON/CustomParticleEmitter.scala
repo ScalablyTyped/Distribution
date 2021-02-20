@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,27 +45,15 @@ object CustomParticleEmitter {
   }
   
   @scala.inline
-  implicit class CustomParticleEmitterOps[Self <: CustomParticleEmitter] (val x: Self) extends AnyVal {
+  implicit class CustomParticleEmitterMutableBuilder[Self <: CustomParticleEmitter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: js.Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParticleDestinationGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = StObject.set(x, "particleDestinationGenerator", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: js.Any => Unit): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParticleDestinationGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = this.set("particleDestinationGenerator", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setParticlePositionGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = this.set("particlePositionGenerator", js.Any.fromFunction3(value))
+    def setParticlePositionGenerator(value: (Double, Nullable[Particle], Vector3) => Unit): Self = StObject.set(x, "particlePositionGenerator", js.Any.fromFunction3(value))
   }
 }

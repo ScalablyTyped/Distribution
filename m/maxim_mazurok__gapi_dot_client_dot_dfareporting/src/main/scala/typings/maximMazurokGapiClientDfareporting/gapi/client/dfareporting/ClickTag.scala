@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClickTag extends js.Object {
+trait ClickTag extends StObject {
   
   /** Parameter value for the specified click tag. This field contains a click-through url. */
   var clickThroughUrl: js.UndefOr[CreativeClickThroughUrl] = js.native
@@ -28,36 +29,24 @@ object ClickTag {
   }
   
   @scala.inline
-  implicit class ClickTagOps[Self <: ClickTag] (val x: Self) extends AnyVal {
+  implicit class ClickTagMutableBuilder[Self <: ClickTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickThroughUrl(value: CreativeClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickThroughUrl(value: CreativeClickThroughUrl): Self = this.set("clickThroughUrl", value.asInstanceOf[js.Any])
+    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
     @scala.inline
-    def deleteClickThroughUrl: Self = this.set("clickThroughUrl", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventName: Self = this.set("eventName", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

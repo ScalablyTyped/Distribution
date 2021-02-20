@@ -1,11 +1,12 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ratio extends js.Object {
+trait Ratio extends StObject {
   
   /**
     * Set max width of each bar
@@ -27,27 +28,15 @@ object Ratio {
   }
   
   @scala.inline
-  implicit class RatioOps[Self <: Ratio] (val x: Self) extends AnyVal {
+  implicit class RatioMutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRatio(value: Double): Self = this.set("ratio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
   }
 }

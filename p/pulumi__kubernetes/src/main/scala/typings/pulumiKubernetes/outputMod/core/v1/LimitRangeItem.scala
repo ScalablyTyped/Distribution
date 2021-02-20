@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * LimitRangeItem defines a min/max usage limit for any resource that matches on kind.
   */
 @js.native
-trait LimitRangeItem extends js.Object {
+trait LimitRangeItem extends StObject {
   
   /**
     * Default resource requirement limit value by resource name if resource limit is omitted.
@@ -58,36 +59,24 @@ object LimitRangeItem {
   }
   
   @scala.inline
-  implicit class LimitRangeItemOps[Self <: LimitRangeItem] (val x: Self) extends AnyVal {
+  implicit class LimitRangeItemMutableBuilder[Self <: LimitRangeItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefault(value: StringDictionary[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRequest(value: StringDictionary[String]): Self = StObject.set(x, "defaultRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: StringDictionary[String]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: StringDictionary[String]): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setMaxLimitRequestRatio(value: StringDictionary[String]): Self = StObject.set(x, "maxLimitRequestRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultRequest(value: StringDictionary[String]): Self = this.set("defaultRequest", value.asInstanceOf[js.Any])
+    def setMin(value: StringDictionary[String]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: StringDictionary[String]): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxLimitRequestRatio(value: StringDictionary[String]): Self = this.set("maxLimitRequestRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: StringDictionary[String]): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

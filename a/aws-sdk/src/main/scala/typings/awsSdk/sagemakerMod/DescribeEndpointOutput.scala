@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEndpointOutput extends js.Object {
+trait DescribeEndpointOutput extends StObject {
   
   /**
     * A timestamp that shows when the endpoint was created.
@@ -65,57 +66,45 @@ object DescribeEndpointOutput {
   }
   
   @scala.inline
-  implicit class DescribeEndpointOutputOps[Self <: DescribeEndpointOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeEndpointOutputMutableBuilder[Self <: DescribeEndpointOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataCaptureConfig(value: DataCaptureConfigSummary): Self = StObject.set(x, "DataCaptureConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataCaptureConfigUndefined: Self = StObject.set(x, "DataCaptureConfig", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointArn(value: EndpointArn): Self = this.set("EndpointArn", value.asInstanceOf[js.Any])
+    def setEndpointConfigName(value: EndpointConfigName): Self = StObject.set(x, "EndpointConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointConfigName(value: EndpointConfigName): Self = this.set("EndpointConfigName", value.asInstanceOf[js.Any])
+    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointName(value: EndpointName): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    def setEndpointStatus(value: EndpointStatus): Self = StObject.set(x, "EndpointStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointStatus(value: EndpointStatus): Self = this.set("EndpointStatus", value.asInstanceOf[js.Any])
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def setDataCaptureConfig(value: DataCaptureConfigSummary): Self = this.set("DataCaptureConfig", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataCaptureConfig: Self = this.set("DataCaptureConfig", js.undefined)
+    def setProductionVariants(value: ProductionVariantSummaryList): Self = StObject.set(x, "ProductionVariants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setProductionVariantsUndefined: Self = StObject.set(x, "ProductionVariants", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
-    
-    @scala.inline
-    def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = this.set("ProductionVariants", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductionVariants(value: ProductionVariantSummaryList): Self = this.set("ProductionVariants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductionVariants: Self = this.set("ProductionVariants", js.undefined)
+    def setProductionVariantsVarargs(value: ProductionVariantSummary*): Self = StObject.set(x, "ProductionVariants", js.Array(value :_*))
   }
 }

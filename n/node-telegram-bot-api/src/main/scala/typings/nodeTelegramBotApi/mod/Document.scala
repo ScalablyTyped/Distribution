@@ -1,5 +1,6 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object Document {
   }
   
   @scala.inline
-  implicit class DocumentOps[Self <: Document] (val x: Self) extends AnyVal {
+  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile_nameUndefined: Self = StObject.set(x, "file_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile_name(value: String): Self = this.set("file_name", value.asInstanceOf[js.Any])
+    def setMime_typeUndefined: Self = StObject.set(x, "mime_type", js.undefined)
     
     @scala.inline
-    def deleteFile_name: Self = this.set("file_name", js.undefined)
+    def setThumb(value: PhotoSize): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime_type(value: String): Self = this.set("mime_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMime_type: Self = this.set("mime_type", js.undefined)
-    
-    @scala.inline
-    def setThumb(value: PhotoSize): Self = this.set("thumb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumb: Self = this.set("thumb", js.undefined)
+    def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
   }
 }

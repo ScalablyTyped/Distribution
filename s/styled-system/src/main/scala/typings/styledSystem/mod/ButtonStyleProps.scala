@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait ButtonStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var variant: js.UndefOr[ResponsiveValue[String, ThemeType]] = js.native
 }
@@ -18,30 +19,18 @@ object ButtonStyleProps {
   }
   
   @scala.inline
-  implicit class ButtonStylePropsOps[Self <: ButtonStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with ButtonStyleProps[ThemeType]) extends AnyVal {
+  implicit class ButtonStylePropsMutableBuilder[Self <: ButtonStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with ButtonStyleProps[ThemeType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVariant(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVariantNull: Self = StObject.set(x, "variant", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
     
     @scala.inline
-    def setVariantVarargs(value: (String | Null)*): Self = this.set("variant", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariant(value: ResponsiveValue[String, ThemeType]): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
-    
-    @scala.inline
-    def setVariantNull: Self = this.set("variant", null)
+    def setVariantVarargs(value: (String | Null)*): Self = StObject.set(x, "variant", js.Array(value :_*))
   }
 }

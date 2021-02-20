@@ -331,13 +331,14 @@ import typings.std.ScrollIntoViewOptions
 import typings.std.ScrollToOptions
 import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Element & {  __events :{[key: string] : (e : std.Event): any | undefined} | undefined} */
 @js.native
-trait ElementeventskeystringeEv extends js.Object {
+trait ElementeventskeystringeEv extends StObject {
   
   val ATTRIBUTE_NODE: Double = js.native
   

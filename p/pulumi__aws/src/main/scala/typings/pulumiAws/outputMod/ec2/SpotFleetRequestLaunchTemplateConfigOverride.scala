@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpotFleetRequestLaunchTemplateConfigOverride extends js.Object {
+trait SpotFleetRequestLaunchTemplateConfigOverride extends StObject {
   
   /**
     * The availability zone in which to place the request.
@@ -46,42 +47,30 @@ object SpotFleetRequestLaunchTemplateConfigOverride {
   }
   
   @scala.inline
-  implicit class SpotFleetRequestLaunchTemplateConfigOverrideOps[Self <: SpotFleetRequestLaunchTemplateConfigOverride] (val x: Self) extends AnyVal {
+  implicit class SpotFleetRequestLaunchTemplateConfigOverrideMutableBuilder[Self <: SpotFleetRequestLaunchTemplateConfigOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
     @scala.inline
-    def setSpotPrice(value: String): Self = this.set("spotPrice", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: String): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    def setSpotPrice(value: String): Self = StObject.set(x, "spotPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeightedCapacity(value: Double): Self = this.set("weightedCapacity", value.asInstanceOf[js.Any])
+    def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
-    
-    @scala.inline
-    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    def setWeightedCapacity(value: Double): Self = StObject.set(x, "weightedCapacity", value.asInstanceOf[js.Any])
   }
 }

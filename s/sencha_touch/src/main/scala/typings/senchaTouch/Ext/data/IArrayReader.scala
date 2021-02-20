@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.data.reader.IJson
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object IArrayReader {
   }
   
   @scala.inline
-  implicit class IArrayReaderOps[Self <: IArrayReader] (val x: Self) extends AnyVal {
+  implicit class IArrayReaderMutableBuilder[Self <: IArrayReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetSuccessPropertyUndefined: Self = StObject.set(x, "setSuccessProperty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[js.Any] => Unit): Self = this.set("setSuccessProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetSuccessProperty: Self = this.set("setSuccessProperty", js.undefined)
-    
-    @scala.inline
-    def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[js.Any] => Unit): Self = this.set("setTotalProperty", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetTotalProperty: Self = this.set("setTotalProperty", js.undefined)
+    def setSetTotalPropertyUndefined: Self = StObject.set(x, "setTotalProperty", js.undefined)
   }
 }

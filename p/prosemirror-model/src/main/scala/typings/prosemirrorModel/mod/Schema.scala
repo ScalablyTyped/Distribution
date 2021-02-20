@@ -2,13 +2,14 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Schema")
 @js.native
-class Schema[N /* <: String */, M /* <: String */] protected () extends js.Object {
+class Schema[N /* <: String */, M /* <: String */] protected () extends StObject {
   /**
     * Construct a schema from a schema [specification](#model.SchemaSpec).
     */

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisioningArtifactView extends js.Object {
+trait ProvisioningArtifactView extends StObject {
   
   /**
     * Summary information about a product view.
@@ -26,30 +27,18 @@ object ProvisioningArtifactView {
   }
   
   @scala.inline
-  implicit class ProvisioningArtifactViewOps[Self <: ProvisioningArtifactView] (val x: Self) extends AnyVal {
+  implicit class ProvisioningArtifactViewMutableBuilder[Self <: ProvisioningArtifactView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductViewSummary(value: ProductViewSummary): Self = StObject.set(x, "ProductViewSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductViewSummaryUndefined: Self = StObject.set(x, "ProductViewSummary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvisioningArtifact(value: ProvisioningArtifact): Self = StObject.set(x, "ProvisioningArtifact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductViewSummary(value: ProductViewSummary): Self = this.set("ProductViewSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductViewSummary: Self = this.set("ProductViewSummary", js.undefined)
-    
-    @scala.inline
-    def setProvisioningArtifact(value: ProvisioningArtifact): Self = this.set("ProvisioningArtifact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningArtifact: Self = this.set("ProvisioningArtifact", js.undefined)
+    def setProvisioningArtifactUndefined: Self = StObject.set(x, "ProvisioningArtifact", js.undefined)
   }
 }

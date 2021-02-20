@@ -1,12 +1,12 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import typings.std.AudioWorkletNodeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AudioWorkletNode")
 @js.native
 class AudioWorkletNode protected ()
@@ -14,17 +14,3 @@ class AudioWorkletNode protected ()
   def this(context: typings.std.BaseAudioContext, name: java.lang.String) = this()
   def this(context: typings.std.BaseAudioContext, name: java.lang.String, options: AudioWorkletNodeOptions) = this()
 }
-@JSGlobal("AudioWorkletNode")
-@js.native
-object AudioWorkletNode
-  extends Instantiable2[
-      /* context */ typings.std.BaseAudioContext, 
-      /* name */ java.lang.String, 
-      typings.std.AudioWorkletNode
-    ]
-     with Instantiable3[
-      /* context */ typings.std.BaseAudioContext, 
-      /* name */ java.lang.String, 
-      /* options */ AudioWorkletNodeOptions, 
-      typings.std.AudioWorkletNode
-    ]

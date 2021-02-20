@@ -9,12 +9,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.stddev
 import typings.arcgisJsApi.arcgisJsApiStrings.sum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatisticDefinitionProperties extends js.Object {
+trait StatisticDefinitionProperties extends StObject {
   
   /**
     * Defines the field for which statistics will be calculated.
@@ -55,44 +56,32 @@ object StatisticDefinitionProperties {
   }
   
   @scala.inline
-  implicit class StatisticDefinitionPropertiesOps[Self <: StatisticDefinitionProperties] (val x: Self) extends AnyVal {
+  implicit class StatisticDefinitionPropertiesMutableBuilder[Self <: StatisticDefinitionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnStatisticField(value: String): Self = StObject.set(x, "onStatisticField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnStatisticFieldUndefined: Self = StObject.set(x, "onStatisticField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutStatisticFieldName(value: String): Self = StObject.set(x, "outStatisticFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStatisticField(value: String): Self = this.set("onStatisticField", value.asInstanceOf[js.Any])
+    def setOutStatisticFieldNameUndefined: Self = StObject.set(x, "outStatisticFieldName", js.undefined)
     
     @scala.inline
-    def deleteOnStatisticField: Self = this.set("onStatisticField", js.undefined)
+    def setStatisticParameters(value: StatisticDefinitionStatisticParameters): Self = StObject.set(x, "statisticParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutStatisticFieldName(value: String): Self = this.set("outStatisticFieldName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutStatisticFieldName: Self = this.set("outStatisticFieldName", js.undefined)
-    
-    @scala.inline
-    def setStatisticParameters(value: StatisticDefinitionStatisticParameters): Self = this.set("statisticParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatisticParameters: Self = this.set("statisticParameters", js.undefined)
+    def setStatisticParametersUndefined: Self = StObject.set(x, "statisticParameters", js.undefined)
     
     @scala.inline
     def setStatisticType(
       value: count | sum | min | max | avg | stddev | `var` | `percentile-continuous` | `percentile-discrete`
-    ): Self = this.set("statisticType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "statisticType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatisticType: Self = this.set("statisticType", js.undefined)
+    def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)
   }
 }

@@ -2,19 +2,23 @@ package typings.materialDrawer
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialDrawer.adapterMod.MDCDrawerAdapter
-import typings.materialDrawer.anon.ANIMATE
-import typings.materialDrawer.anon.APPCONTENTSELECTOR
 import typings.materialDrawer.anon.PartialMDCDrawerAdapter
 import typings.std.KeyboardEvent
 import typings.std.TransitionEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/drawer/dismissible/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/drawer/dismissible/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCDismissibleDrawerFoundation {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
+  }
+  
+  @JSImport("@material/drawer/dismissible/foundation", "MDCDismissibleDrawerFoundation")
   @js.native
   class MDCDismissibleDrawerFoundation () extends MDCFoundation[MDCDrawerAdapter] {
     def this(adapter: PartialMDCDrawerAdapter) = this()
@@ -66,30 +70,5 @@ object foundationMod extends js.Object {
       * Extension point for when drawer finishes open animation.
       */
     /* protected */ def opened_(): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCDismissibleDrawerFoundation extends js.Object {
-    
-    def cssClasses: ANIMATE = js.native
-    
-    def defaultAdapter: MDCDrawerAdapter = js.native
-    
-    def strings: APPCONTENTSELECTOR = js.native
-  }
-  
-  @js.native
-  class default () extends MDCDismissibleDrawerFoundation {
-    def this(adapter: PartialMDCDrawerAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: ANIMATE = js.native
-    
-    def defaultAdapter: MDCDrawerAdapter = js.native
-    
-    def strings: APPCONTENTSELECTOR = js.native
   }
 }

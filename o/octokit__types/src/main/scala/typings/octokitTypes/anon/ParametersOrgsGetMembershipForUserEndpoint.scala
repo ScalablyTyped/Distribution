@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.OrgsGetMembershipForUserEndpoint
 import typings.octokitTypes.endpointsMod.OrgsGetMembershipForUserRequestOptions
 import typings.octokitTypes.endpointsMod.OrgsGetMembershipForUserResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersOrgsGetMembershipForUserEndpoint extends js.Object {
+trait ParametersOrgsGetMembershipForUserEndpoint extends StObject {
   
   var parameters: OrgsGetMembershipForUserEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersOrgsGetMembershipForUserEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersOrgsGetMembershipForUserEndpointOps[Self <: ParametersOrgsGetMembershipForUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersOrgsGetMembershipForUserEndpointMutableBuilder[Self <: ParametersOrgsGetMembershipForUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: OrgsGetMembershipForUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: OrgsGetMembershipForUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: OrgsGetMembershipForUserEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: OrgsGetMembershipForUserRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[OrgsGetMembershipForUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[OrgsGetMembershipForUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

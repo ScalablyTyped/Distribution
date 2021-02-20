@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDataflow.anon.PrettyPrint
 import typings.maximMazurokGapiClientDataflow.anon.ProjectId
 import typings.maximMazurokGapiClientDataflow.anon.QuotaUser
 import typings.maximMazurokGapiClientDataflow.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugResource extends js.Object {
+trait DebugResource extends StObject {
   
   /** Get encoded debug configuration for component. Not cacheable. */
   def getConfig(request: JobId): Request[GetDebugConfigResponse] = js.native

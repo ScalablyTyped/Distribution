@@ -1,11 +1,12 @@
 package typings.stripeV3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Addressline1check extends js.Object {
+trait Addressline1check extends StObject {
   
   var address_line1_check: Boolean | Null = js.native
   
@@ -22,36 +23,24 @@ object Addressline1check {
   }
   
   @scala.inline
-  implicit class Addressline1checkOps[Self <: Addressline1check] (val x: Self) extends AnyVal {
+  implicit class Addressline1checkMutableBuilder[Self <: Addressline1check] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress_line1_check(value: Boolean): Self = StObject.set(x, "address_line1_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddress_line1_checkNull: Self = StObject.set(x, "address_line1_check", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress_postal_code_check(value: Boolean): Self = StObject.set(x, "address_postal_code_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_line1_check(value: Boolean): Self = this.set("address_line1_check", value.asInstanceOf[js.Any])
+    def setAddress_postal_code_checkNull: Self = StObject.set(x, "address_postal_code_check", null)
     
     @scala.inline
-    def setAddress_line1_checkNull: Self = this.set("address_line1_check", null)
+    def setCvc_check(value: Boolean): Self = StObject.set(x, "cvc_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_postal_code_check(value: Boolean): Self = this.set("address_postal_code_check", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddress_postal_code_checkNull: Self = this.set("address_postal_code_check", null)
-    
-    @scala.inline
-    def setCvc_check(value: Boolean): Self = this.set("cvc_check", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCvc_checkNull: Self = this.set("cvc_check", null)
+    def setCvc_checkNull: Self = StObject.set(x, "cvc_check", null)
   }
 }

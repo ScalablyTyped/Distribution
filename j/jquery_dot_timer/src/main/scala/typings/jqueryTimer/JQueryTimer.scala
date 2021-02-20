@@ -1,12 +1,13 @@
 package typings.jqueryTimer
 
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryTimer extends js.Object {
+trait JQueryTimer extends StObject {
   
   // #region Constructors
   def apply(): js.Object = js.native

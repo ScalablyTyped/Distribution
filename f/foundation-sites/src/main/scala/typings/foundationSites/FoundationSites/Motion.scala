@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Motion extends js.Object {
+trait Motion extends StObject {
   
   def animateIn(element: js.Object, animation: js.Any, cb: js.Function): Unit = js.native
   
@@ -23,24 +24,12 @@ object Motion {
   }
   
   @scala.inline
-  implicit class MotionOps[Self <: Motion] (val x: Self) extends AnyVal {
+  implicit class MotionMutableBuilder[Self <: Motion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimateIn(value: (js.Object, js.Any, js.Function) => Unit): Self = StObject.set(x, "animateIn", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimateIn(value: (js.Object, js.Any, js.Function) => Unit): Self = this.set("animateIn", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setAnimateOut(value: (js.Object, js.Any, js.Function) => Unit): Self = this.set("animateOut", js.Any.fromFunction3(value))
+    def setAnimateOut(value: (js.Object, js.Any, js.Function) => Unit): Self = StObject.set(x, "animateOut", js.Any.fromFunction3(value))
   }
 }

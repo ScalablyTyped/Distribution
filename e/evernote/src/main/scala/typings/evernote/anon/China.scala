@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait China extends js.Object {
+trait China extends StObject {
   
   var china: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object China {
   }
   
   @scala.inline
-  implicit class ChinaOps[Self <: China] (val x: Self) extends AnyVal {
+  implicit class ChinaMutableBuilder[Self <: China] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChina(value: Boolean): Self = StObject.set(x, "china", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChinaUndefined: Self = StObject.set(x, "china", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChina(value: Boolean): Self = this.set("china", value.asInstanceOf[js.Any])
+    def setConsumerKeyUndefined: Self = StObject.set(x, "consumerKey", js.undefined)
     
     @scala.inline
-    def deleteChina: Self = this.set("china", js.undefined)
+    def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerKey(value: String): Self = this.set("consumerKey", value.asInstanceOf[js.Any])
+    def setConsumerSecretUndefined: Self = StObject.set(x, "consumerSecret", js.undefined)
     
     @scala.inline
-    def deleteConsumerKey: Self = this.set("consumerKey", js.undefined)
+    def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerSecret(value: String): Self = this.set("consumerSecret", value.asInstanceOf[js.Any])
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def deleteConsumerSecret: Self = this.set("consumerSecret", js.undefined)
+    def setServiceHost(value: String): Self = StObject.set(x, "serviceHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Boolean): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    def setServiceHostUndefined: Self = StObject.set(x, "serviceHost", js.undefined)
     
     @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceHost(value: String): Self = this.set("serviceHost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceHost: Self = this.set("serviceHost", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

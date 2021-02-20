@@ -10,6 +10,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,16 +61,20 @@ class TabPage protected () extends Element[IModel] {
     */
   def widgets: IList[Widget] = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage")
-@js.native
-object TabPage extends js.Object {
+object TabPage {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new TabPage instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.create")
+  @js.native
   def create(model: IModel): TabPage = js.native
   
   /**
@@ -77,9 +82,22 @@ object TabPage extends js.Object {
     * The new TabPage will be automatically stored in the 'tabPages' property
     * of the parent TabContainer element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.createIn")
+  @js.native
   def createIn(container: TabContainer): TabPage = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationResourceLifecycleDescriptionMessage extends js.Object {
+trait ApplicationResourceLifecycleDescriptionMessage extends StObject {
   
   /**
     * The name of the application.
@@ -26,30 +27,18 @@ object ApplicationResourceLifecycleDescriptionMessage {
   }
   
   @scala.inline
-  implicit class ApplicationResourceLifecycleDescriptionMessageOps[Self <: ApplicationResourceLifecycleDescriptionMessage] (val x: Self) extends AnyVal {
+  implicit class ApplicationResourceLifecycleDescriptionMessageMutableBuilder[Self <: ApplicationResourceLifecycleDescriptionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
-    
-    @scala.inline
-    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = this.set("ResourceLifecycleConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLifecycleConfig: Self = this.set("ResourceLifecycleConfig", js.undefined)
+    def setResourceLifecycleConfigUndefined: Self = StObject.set(x, "ResourceLifecycleConfig", js.undefined)
   }
 }

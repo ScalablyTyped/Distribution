@@ -1,11 +1,12 @@
 package typings.awsSdk.connectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstanceResponse extends js.Object {
+trait DescribeInstanceResponse extends StObject {
   
   /**
     * The name of the instance.
@@ -21,24 +22,12 @@ object DescribeInstanceResponse {
   }
   
   @scala.inline
-  implicit class DescribeInstanceResponseOps[Self <: DescribeInstanceResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeInstanceResponseMutableBuilder[Self <: DescribeInstanceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstance(value: Instance): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstance(value: Instance): Self = this.set("Instance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstance: Self = this.set("Instance", js.undefined)
+    def setInstanceUndefined: Self = StObject.set(x, "Instance", js.undefined)
   }
 }

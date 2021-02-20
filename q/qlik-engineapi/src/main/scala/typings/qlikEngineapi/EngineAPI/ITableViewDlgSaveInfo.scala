@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TableViewDlgSaveInfo...
   */
 @js.native
-trait ITableViewDlgSaveInfo extends js.Object {
+trait ITableViewDlgSaveInfo extends StObject {
   
   /**
     * Set of data for internal and source view modes.
@@ -38,27 +39,15 @@ object ITableViewDlgSaveInfo {
   }
   
   @scala.inline
-  implicit class ITableViewDlgSaveInfoOps[Self <: ITableViewDlgSaveInfo] (val x: Self) extends AnyVal {
+  implicit class ITableViewDlgSaveInfoMutableBuilder[Self <: ITableViewDlgSaveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCtlInfo(value: ITableViewCtlSaveInfo): Self = StObject.set(x, "qCtlInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQMode(value: Double): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQCtlInfo(value: ITableViewCtlSaveInfo): Self = this.set("qCtlInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMode(value: Double): Self = this.set("qMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQPos(value: IRect): Self = this.set("qPos", value.asInstanceOf[js.Any])
+    def setQPos(value: IRect): Self = StObject.set(x, "qPos", value.asInstanceOf[js.Any])
   }
 }

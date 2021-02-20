@@ -3,12 +3,13 @@ package typings.winrt.Windows.System
 import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.UI.Popups.Placement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILauncherUIOptions extends js.Object {
+trait ILauncherUIOptions extends StObject {
   
   var invocationPoint: Point = js.native
   
@@ -25,27 +26,15 @@ object ILauncherUIOptions {
   }
   
   @scala.inline
-  implicit class ILauncherUIOptionsOps[Self <: ILauncherUIOptions] (val x: Self) extends AnyVal {
+  implicit class ILauncherUIOptionsMutableBuilder[Self <: ILauncherUIOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvocationPoint(value: Point): Self = StObject.set(x, "invocationPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreferredPlacement(value: Placement): Self = StObject.set(x, "preferredPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvocationPoint(value: Point): Self = this.set("invocationPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredPlacement(value: Placement): Self = this.set("preferredPlacement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionRect(value: Rect): Self = this.set("selectionRect", value.asInstanceOf[js.Any])
+    def setSelectionRect(value: Rect): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
   }
 }

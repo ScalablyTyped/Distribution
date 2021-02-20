@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CryptographicPrivateKeyBlobType extends js.Object
+sealed trait CryptographicPrivateKeyBlobType extends StObject
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPrivateKeyBlobType")
 @js.native
-object CryptographicPrivateKeyBlobType extends js.Object {
+object CryptographicPrivateKeyBlobType extends StObject {
   
   @js.native
   sealed trait bCryptPrivateKey extends CryptographicPrivateKeyBlobType

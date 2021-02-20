@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogPublishingOption extends js.Object {
+trait LogPublishingOption extends StObject {
   
   var CloudWatchLogsLogGroupArn: js.UndefOr[typings.awsSdk.esMod.CloudWatchLogsLogGroupArn] = js.native
   
@@ -23,30 +24,18 @@ object LogPublishingOption {
   }
   
   @scala.inline
-  implicit class LogPublishingOptionOps[Self <: LogPublishingOption] (val x: Self) extends AnyVal {
+  implicit class LogPublishingOptionMutableBuilder[Self <: LogPublishingOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = StObject.set(x, "CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogsLogGroupArnUndefined: Self = StObject.set(x, "CloudWatchLogsLogGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogsLogGroupArn(value: CloudWatchLogsLogGroupArn): Self = this.set("CloudWatchLogsLogGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudWatchLogsLogGroupArn: Self = this.set("CloudWatchLogsLogGroupArn", js.undefined)
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

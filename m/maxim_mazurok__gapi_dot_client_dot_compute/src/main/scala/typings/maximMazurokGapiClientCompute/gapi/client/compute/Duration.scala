@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Duration extends js.Object {
+trait Duration extends StObject {
   
   /**
     * Span of time that's a fraction of a second at nanosecond resolution. Durations less than one second are represented with a 0 `seconds` field and a positive `nanos` field. Must be
@@ -28,30 +29,18 @@ object Duration {
   }
   
   @scala.inline
-  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNanos: Self = this.set("nanos", js.undefined)
-    
-    @scala.inline
-    def setSeconds(value: String): Self = this.set("seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }
 }

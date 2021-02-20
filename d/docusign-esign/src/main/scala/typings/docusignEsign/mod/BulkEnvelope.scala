@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkEnvelope extends js.Object {
+trait BulkEnvelope extends StObject {
   
   /**
     * The row of the recipient in the CSV file used to create the bulk recipient list.
@@ -70,74 +71,62 @@ object BulkEnvelope {
   }
   
   @scala.inline
-  implicit class BulkEnvelopeOps[Self <: BulkEnvelope] (val x: Self) extends AnyVal {
+  implicit class BulkEnvelopeMutableBuilder[Self <: BulkEnvelope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkRecipientRow(value: String): Self = StObject.set(x, "bulkRecipientRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkRecipientRowUndefined: Self = StObject.set(x, "bulkRecipientRow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBulkStatus(value: String): Self = StObject.set(x, "bulkStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkRecipientRow(value: String): Self = this.set("bulkRecipientRow", value.asInstanceOf[js.Any])
+    def setBulkStatusUndefined: Self = StObject.set(x, "bulkStatus", js.undefined)
     
     @scala.inline
-    def deleteBulkRecipientRow: Self = this.set("bulkRecipientRow", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkStatus(value: String): Self = this.set("bulkStatus", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteBulkStatus: Self = this.set("bulkStatus", js.undefined)
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setEnvelopeUri(value: String): Self = StObject.set(x, "envelopeUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
-    
-    @scala.inline
-    def setEnvelopeUri(value: String): Self = this.set("envelopeUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvelopeUri: Self = this.set("envelopeUri", js.undefined)
+    def setEnvelopeUriUndefined: Self = StObject.set(x, "envelopeUri", js.undefined)
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setSubmittedDateTime(value: String): Self = this.set("submittedDateTime", value.asInstanceOf[js.Any])
+    def setSubmittedDateTime(value: String): Self = StObject.set(x, "submittedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubmittedDateTime: Self = this.set("submittedDateTime", js.undefined)
+    def setSubmittedDateTimeUndefined: Self = StObject.set(x, "submittedDateTime", js.undefined)
     
     @scala.inline
-    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
   }
 }

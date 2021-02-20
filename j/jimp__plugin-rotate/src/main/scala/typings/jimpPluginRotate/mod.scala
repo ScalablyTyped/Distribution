@@ -1,18 +1,19 @@
 package typings.jimpPluginRotate
 
 import typings.jimpCore.etcMod.ImageCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/plugin-rotate", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jimp/plugin-rotate", JSImport.Default)
+  @js.native
   def default(): Rotate = js.native
   
   @js.native
-  trait Rotate extends js.Object {
+  trait Rotate extends StObject {
     
     def rotate(deg: Double): this.type = js.native
     def rotate(deg: Double, cb: ImageCallback[this.type]): this.type = js.native

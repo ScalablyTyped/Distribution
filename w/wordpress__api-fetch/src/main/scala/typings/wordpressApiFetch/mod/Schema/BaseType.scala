@@ -5,6 +5,7 @@ import typings.wordpressApiFetch.anon.Addnew
 import typings.wordpressApiFetch.anon.Author
 import typings.wordpressApiFetch.anon.Createposts
 import typings.wordpressApiFetch.anon.Dictk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,51 +54,39 @@ object BaseType {
   }
   
   @scala.inline
-  implicit class BaseTypeOps[Self <: BaseType[_], T /* <: Context */] (val x: Self with BaseType[T]) extends AnyVal {
+  implicit class BaseTypeMutableBuilder[Self <: BaseType[_], T /* <: Context */] (val x: Self with BaseType[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: Createposts): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHierarchical(value: Boolean): Self = StObject.set(x, "hierarchical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: Createposts): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setLabels(value: Addnew): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchical(value: Boolean): Self = this.set("hierarchical", value.asInstanceOf[js.Any])
+    def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: Addnew): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSupports(value: Author): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRest_base(value: String): Self = this.set("rest_base", value.asInstanceOf[js.Any])
+    def setTaxonomies(value: js.Array[TaxonomyKind]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    def setTaxonomiesVarargs(value: TaxonomyKind*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
     
     @scala.inline
-    def setSupports(value: Author): Self = this.set("supports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaxonomiesVarargs(value: TaxonomyKind*): Self = this.set("taxonomies", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaxonomies(value: js.Array[TaxonomyKind]): Self = this.set("taxonomies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewable(value: Boolean): Self = this.set("viewable", value.asInstanceOf[js.Any])
+    def setViewable(value: Boolean): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
   }
 }

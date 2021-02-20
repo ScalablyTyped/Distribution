@@ -1,12 +1,13 @@
 package typings.stripe.mod.paymentIntents
 
 import typings.stripe.stripeStrings.use_stripe_sdk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPaymentIntentNextActionUseStripeSdk extends js.Object {
+trait IPaymentIntentNextActionUseStripeSdk extends StObject {
   
   var `type`: use_stripe_sdk = js.native
   
@@ -25,24 +26,12 @@ object IPaymentIntentNextActionUseStripeSdk {
   }
   
   @scala.inline
-  implicit class IPaymentIntentNextActionUseStripeSdkOps[Self <: IPaymentIntentNextActionUseStripeSdk] (val x: Self) extends AnyVal {
+  implicit class IPaymentIntentNextActionUseStripeSdkMutableBuilder[Self <: IPaymentIntentNextActionUseStripeSdk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: use_stripe_sdk): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse_stripe_sdk(value: js.Any): Self = this.set("use_stripe_sdk", value.asInstanceOf[js.Any])
+    def setUse_stripe_sdk(value: js.Any): Self = StObject.set(x, "use_stripe_sdk", value.asInstanceOf[js.Any])
   }
 }

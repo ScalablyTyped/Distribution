@@ -1,13 +1,14 @@
 package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Notification")
 @js.native
-class Notification () extends js.Object {
+class Notification () extends StObject {
   
   var android: AndroidNotification = js.native
   

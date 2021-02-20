@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart
 
 import typings.senchaTouch.Ext.draw.sprite.IInstancing
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,48 +71,36 @@ object IMarkers {
   }
   
   @scala.inline
-  implicit class IMarkersOps[Self <: IMarkers] (val x: Self) extends AnyVal {
+  implicit class IMarkersMutableBuilder[Self <: IMarkers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: /* category */ js.UndefOr[String] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClear(value: /* category */ js.UndefOr[String] => Unit): Self = this.set("clear", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
     def setGetMarkerBBoxFor(
       value: (/* category */ js.UndefOr[String], /* index */ js.UndefOr[js.Any], /* isWithoutTransform */ js.UndefOr[Boolean]) => Unit
-    ): Self = this.set("getMarkerBBoxFor", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getMarkerBBoxFor", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetMarkerBBoxFor: Self = this.set("getMarkerBBoxFor", js.undefined)
+    def setGetMarkerBBoxForUndefined: Self = StObject.set(x, "getMarkerBBoxFor", js.undefined)
     
     @scala.inline
     def setPutMarkerFor(
       value: (/* category */ js.UndefOr[String], /* markerAttr */ js.UndefOr[js.Any], /* index */ js.UndefOr[js.Any], /* canonical */ js.UndefOr[Boolean], /* keepRevision */ js.UndefOr[Boolean]) => Unit
-    ): Self = this.set("putMarkerFor", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "putMarkerFor", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deletePutMarkerFor: Self = this.set("putMarkerFor", js.undefined)
+    def setPutMarkerForUndefined: Self = StObject.set(x, "putMarkerFor", js.undefined)
     
     @scala.inline
     def setRender(
       value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* clipRegion */ js.UndefOr[js.Any]) => _
-    ): Self = this.set("render", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

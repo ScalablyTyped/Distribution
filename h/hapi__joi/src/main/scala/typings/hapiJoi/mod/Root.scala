@@ -3,13 +3,14 @@ package typings.hapiJoi.mod
 import org.scalablytyped.runtime.Instantiable3
 import typings.hapiJoi.anon.Alternatives
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 @js.native
-trait Root extends js.Object {
+trait Root extends StObject {
   
   var ValidationError: Instantiable3[
     /* message */ String, 

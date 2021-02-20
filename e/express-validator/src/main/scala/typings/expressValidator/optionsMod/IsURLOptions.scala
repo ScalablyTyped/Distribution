@@ -1,12 +1,13 @@
 package typings.expressValidator.optionsMod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsURLOptions extends js.Object {
+trait IsURLOptions extends StObject {
   
   var allow_protocol_relative_urls: js.UndefOr[Boolean] = js.native
   
@@ -39,93 +40,81 @@ object IsURLOptions {
   }
   
   @scala.inline
-  implicit class IsURLOptionsOps[Self <: IsURLOptions] (val x: Self) extends AnyVal {
+  implicit class IsURLOptionsMutableBuilder[Self <: IsURLOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_protocol_relative_urls(value: Boolean): Self = StObject.set(x, "allow_protocol_relative_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_protocol_relative_urlsUndefined: Self = StObject.set(x, "allow_protocol_relative_urls", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_trailing_dot(value: Boolean): Self = StObject.set(x, "allow_trailing_dot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_protocol_relative_urls(value: Boolean): Self = this.set("allow_protocol_relative_urls", value.asInstanceOf[js.Any])
+    def setAllow_trailing_dotUndefined: Self = StObject.set(x, "allow_trailing_dot", js.undefined)
     
     @scala.inline
-    def deleteAllow_protocol_relative_urls: Self = this.set("allow_protocol_relative_urls", js.undefined)
+    def setAllow_underscores(value: Boolean): Self = StObject.set(x, "allow_underscores", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_trailing_dot(value: Boolean): Self = this.set("allow_trailing_dot", value.asInstanceOf[js.Any])
+    def setAllow_underscoresUndefined: Self = StObject.set(x, "allow_underscores", js.undefined)
     
     @scala.inline
-    def deleteAllow_trailing_dot: Self = this.set("allow_trailing_dot", js.undefined)
+    def setDisallow_auth(value: Boolean): Self = StObject.set(x, "disallow_auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_underscores(value: Boolean): Self = this.set("allow_underscores", value.asInstanceOf[js.Any])
+    def setDisallow_authUndefined: Self = StObject.set(x, "disallow_auth", js.undefined)
     
     @scala.inline
-    def deleteAllow_underscores: Self = this.set("allow_underscores", js.undefined)
+    def setHost_blacklist(value: js.Array[String | RegExp]): Self = StObject.set(x, "host_blacklist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisallow_auth(value: Boolean): Self = this.set("disallow_auth", value.asInstanceOf[js.Any])
+    def setHost_blacklistUndefined: Self = StObject.set(x, "host_blacklist", js.undefined)
     
     @scala.inline
-    def deleteDisallow_auth: Self = this.set("disallow_auth", js.undefined)
+    def setHost_blacklistVarargs(value: (String | RegExp)*): Self = StObject.set(x, "host_blacklist", js.Array(value :_*))
     
     @scala.inline
-    def setHost_blacklistVarargs(value: (String | RegExp)*): Self = this.set("host_blacklist", js.Array(value :_*))
+    def setHost_whitelist(value: js.Array[String | RegExp]): Self = StObject.set(x, "host_whitelist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost_blacklist(value: js.Array[String | RegExp]): Self = this.set("host_blacklist", value.asInstanceOf[js.Any])
+    def setHost_whitelistUndefined: Self = StObject.set(x, "host_whitelist", js.undefined)
     
     @scala.inline
-    def deleteHost_blacklist: Self = this.set("host_blacklist", js.undefined)
+    def setHost_whitelistVarargs(value: (String | RegExp)*): Self = StObject.set(x, "host_whitelist", js.Array(value :_*))
     
     @scala.inline
-    def setHost_whitelistVarargs(value: (String | RegExp)*): Self = this.set("host_whitelist", js.Array(value :_*))
+    def setProtocols(value: js.Array[URLProtocol]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost_whitelist(value: js.Array[String | RegExp]): Self = this.set("host_whitelist", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def deleteHost_whitelist: Self = this.set("host_whitelist", js.undefined)
+    def setProtocolsVarargs(value: URLProtocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
     @scala.inline
-    def setProtocolsVarargs(value: URLProtocol*): Self = this.set("protocols", js.Array(value :_*))
+    def setRequire_host(value: Boolean): Self = StObject.set(x, "require_host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: js.Array[URLProtocol]): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    def setRequire_hostUndefined: Self = StObject.set(x, "require_host", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    def setRequire_protocol(value: Boolean): Self = StObject.set(x, "require_protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_host(value: Boolean): Self = this.set("require_host", value.asInstanceOf[js.Any])
+    def setRequire_protocolUndefined: Self = StObject.set(x, "require_protocol", js.undefined)
     
     @scala.inline
-    def deleteRequire_host: Self = this.set("require_host", js.undefined)
+    def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_protocol(value: Boolean): Self = this.set("require_protocol", value.asInstanceOf[js.Any])
+    def setRequire_tldUndefined: Self = StObject.set(x, "require_tld", js.undefined)
     
     @scala.inline
-    def deleteRequire_protocol: Self = this.set("require_protocol", js.undefined)
+    def setRequire_valid_protocol(value: Boolean): Self = StObject.set(x, "require_valid_protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_tld(value: Boolean): Self = this.set("require_tld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_tld: Self = this.set("require_tld", js.undefined)
-    
-    @scala.inline
-    def setRequire_valid_protocol(value: Boolean): Self = this.set("require_valid_protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_valid_protocol: Self = this.set("require_valid_protocol", js.undefined)
+    def setRequire_valid_protocolUndefined: Self = StObject.set(x, "require_valid_protocol", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object SliderVisibleElements {
   }
   
   @scala.inline
-  implicit class SliderVisibleElementsOps[Self <: SliderVisibleElements] (val x: Self) extends AnyVal {
+  implicit class SliderVisibleElementsMutableBuilder[Self <: SliderVisibleElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeLabels(value: Boolean): Self = StObject.set(x, "rangeLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: Boolean): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setRangeLabels(value: Boolean): Self = this.set("rangeLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeLabels: Self = this.set("rangeLabels", js.undefined)
+    def setRangeLabelsUndefined: Self = StObject.set(x, "rangeLabels", js.undefined)
   }
 }

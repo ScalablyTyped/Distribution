@@ -1,24 +1,24 @@
 package typings.antvComponent
 
-import typings.antvComponent.baseMod.AxisBase
 import typings.antvComponent.typesMod.CircleAxisCfg
 import typings.antvGBase.typesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/axis/circle", JSImport.Namespace)
-@js.native
-object circleMod extends js.Object {
+object circleMod {
+  
+  @JSImport("@antv/component/lib/axis/circle", JSImport.Default)
+  @js.native
+  class default () extends Circle
   
   @js.native
-  trait Circle extends AxisBase[CircleAxisCfg] {
+  trait Circle
+    extends typings.antvComponent.baseMod.default[CircleAxisCfg] {
     
     var getCirclePoint: js.Any = js.native
     
     /* protected */ def getTickPoint(tickValue: js.Any): Point = js.native
   }
-  
-  @js.native
-  class default () extends Circle
 }

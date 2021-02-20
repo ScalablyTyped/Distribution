@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CashDrawerShiftSummary")
 @js.native
-class CashDrawerShiftSummary () extends js.Object {
+class CashDrawerShiftSummary () extends StObject {
   
   /**
     * The shift close time in ISO 8601 format.

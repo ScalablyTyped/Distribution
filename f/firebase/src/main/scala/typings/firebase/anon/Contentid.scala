@@ -3,6 +3,7 @@ package typings.firebase.anon
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebase.mod.firebase.analytics.Item
 import typings.firebase.mod.firebase.analytics.Promotion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,48 +29,36 @@ object Contentid {
   }
   
   @scala.inline
-  implicit class ContentidOps[Self <: Contentid] (val x: Self) extends AnyVal {
+  implicit class ContentidMutableBuilder[Self <: Contentid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent_id(value: String): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_id(value: String): Self = this.set("content_id", value.asInstanceOf[js.Any])
+    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
     @scala.inline
-    def deleteContent_id: Self = this.set("content_id", js.undefined)
+    def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteContent_type: Self = this.set("content_type", js.undefined)
+    def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    def setPromotions(value: js.Array[Promotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
-    
-    @scala.inline
-    def setPromotionsVarargs(value: Promotion*): Self = this.set("promotions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPromotions(value: js.Array[Promotion]): Self = this.set("promotions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromotions: Self = this.set("promotions", js.undefined)
+    def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
   }
 }

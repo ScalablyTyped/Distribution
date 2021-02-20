@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLDOMRange extends js.Object {
+trait HTMLDOMRange extends StObject {
   
   def Detach(): Unit = js.native
   
@@ -97,96 +98,84 @@ object HTMLDOMRange {
   }
   
   @scala.inline
-  implicit class HTMLDOMRangeOps[Self <: HTMLDOMRange] (val x: Self) extends AnyVal {
+  implicit class HTMLDOMRangeMutableBuilder[Self <: HTMLDOMRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneContents(value: () => js.Any): Self = StObject.set(x, "cloneContents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloneRange(value: () => IHTMLDOMRange): Self = StObject.set(x, "cloneRange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapse(value: Boolean => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("Detach", js.Any.fromFunction0(value))
+    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLDOMRange_typekey(value: HTMLDOMRange): Self = this.set("MSHTML.HTMLDOMRange_typekey", value.asInstanceOf[js.Any])
+    def setCommonAncestorContainer(value: IHTMLDOMNode): Self = StObject.set(x, "commonAncestorContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneContents(value: () => js.Any): Self = this.set("cloneContents", js.Any.fromFunction0(value))
+    def setCompareBoundaryPoints(value: (Double, js.Any) => Double): Self = StObject.set(x, "compareBoundaryPoints", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCloneRange(value: () => IHTMLDOMRange): Self = this.set("cloneRange", js.Any.fromFunction0(value))
+    def setDeleteContents(value: () => Unit): Self = StObject.set(x, "deleteContents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapse(value: Boolean => Unit): Self = this.set("collapse", js.Any.fromFunction1(value))
+    def setDetach(value: () => Unit): Self = StObject.set(x, "Detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    def setEndContainer(value: IHTMLDOMNode): Self = StObject.set(x, "endContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonAncestorContainer(value: IHTMLDOMNode): Self = this.set("commonAncestorContainer", value.asInstanceOf[js.Any])
+    def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareBoundaryPoints(value: (Double, js.Any) => Double): Self = this.set("compareBoundaryPoints", js.Any.fromFunction2(value))
+    def setExtractContents(value: () => js.Any): Self = StObject.set(x, "extractContents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteContents(value: () => Unit): Self = this.set("deleteContents", js.Any.fromFunction0(value))
+    def setGetBoundingClientRect(value: () => IHTMLRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndContainer(value: IHTMLDOMNode): Self = this.set("endContainer", value.asInstanceOf[js.Any])
+    def setGetClientRects(value: () => IHTMLRectCollection): Self = StObject.set(x, "getClientRects", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndOffset(value: Double): Self = this.set("endOffset", value.asInstanceOf[js.Any])
+    def setInsertNode(value: js.Any => Unit): Self = StObject.set(x, "insertNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtractContents(value: () => js.Any): Self = this.set("extractContents", js.Any.fromFunction0(value))
+    def setMSHTMLDotHTMLDOMRange_typekey(value: HTMLDOMRange): Self = StObject.set(x, "MSHTML.HTMLDOMRange_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBoundingClientRect(value: () => IHTMLRect): Self = this.set("getBoundingClientRect", js.Any.fromFunction0(value))
+    def setSelectNode(value: js.Any => Unit): Self = StObject.set(x, "selectNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetClientRects(value: () => IHTMLRectCollection): Self = this.set("getClientRects", js.Any.fromFunction0(value))
+    def setSelectNodeContents(value: js.Any => Unit): Self = StObject.set(x, "selectNodeContents", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertNode(value: js.Any => Unit): Self = this.set("insertNode", js.Any.fromFunction1(value))
+    def setSetEnd(value: (js.Any, Double) => Unit): Self = StObject.set(x, "setEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectNode(value: js.Any => Unit): Self = this.set("selectNode", js.Any.fromFunction1(value))
+    def setSetEndAfter(value: js.Any => Unit): Self = StObject.set(x, "setEndAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectNodeContents(value: js.Any => Unit): Self = this.set("selectNodeContents", js.Any.fromFunction1(value))
+    def setSetEndBefore(value: js.Any => Unit): Self = StObject.set(x, "setEndBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEnd(value: (js.Any, Double) => Unit): Self = this.set("setEnd", js.Any.fromFunction2(value))
+    def setSetStart(value: (js.Any, Double) => Unit): Self = StObject.set(x, "setStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetEndAfter(value: js.Any => Unit): Self = this.set("setEndAfter", js.Any.fromFunction1(value))
+    def setSetStartAfter(value: js.Any => Unit): Self = StObject.set(x, "setStartAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetEndBefore(value: js.Any => Unit): Self = this.set("setEndBefore", js.Any.fromFunction1(value))
+    def setSetStartBefore(value: js.Any => Unit): Self = StObject.set(x, "setStartBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStart(value: (js.Any, Double) => Unit): Self = this.set("setStart", js.Any.fromFunction2(value))
+    def setStartContainer(value: IHTMLDOMNode): Self = StObject.set(x, "startContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStartAfter(value: js.Any => Unit): Self = this.set("setStartAfter", js.Any.fromFunction1(value))
+    def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStartBefore(value: js.Any => Unit): Self = this.set("setStartBefore", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartContainer(value: IHTMLDOMNode): Self = this.set("startContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartOffset(value: Double): Self = this.set("startOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurroundContents(value: js.Any => Unit): Self = this.set("surroundContents", js.Any.fromFunction1(value))
+    def setSurroundContents(value: js.Any => Unit): Self = StObject.set(x, "surroundContents", js.Any.fromFunction1(value))
   }
 }

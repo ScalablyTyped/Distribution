@@ -4,14 +4,14 @@ import typings.gulpTypescript.anon.Typeofts
 import typings.gulpTypescript.inputMod.FileCache
 import typings.typescript.mod.CompilerHost
 import typings.typescript.mod.CompilerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-typescript/release/host", JSImport.Namespace)
-@js.native
-object hostMod extends js.Object {
+object hostMod {
   
+  @JSImport("gulp-typescript/release/host", "Host")
   @js.native
   class Host protected () extends CompilerHost {
     def this(typescript: Typeofts, currentDirectory: String, input: FileCache, options: CompilerOptions) = this()

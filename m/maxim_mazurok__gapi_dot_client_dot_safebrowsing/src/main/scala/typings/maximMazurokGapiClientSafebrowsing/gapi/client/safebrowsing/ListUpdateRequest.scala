@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUpdateRequest extends js.Object {
+trait ListUpdateRequest extends StObject {
   
   /** The constraints associated with this request. */
   var constraints: js.UndefOr[Constraints] = js.native
@@ -31,48 +32,36 @@ object ListUpdateRequest {
   }
   
   @scala.inline
-  implicit class ListUpdateRequestOps[Self <: ListUpdateRequest] (val x: Self) extends AnyVal {
+  implicit class ListUpdateRequestMutableBuilder[Self <: ListUpdateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConstraints(value: Constraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraints(value: Constraints): Self = this.set("constraints", value.asInstanceOf[js.Any])
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def deleteConstraints: Self = this.set("constraints", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreatEntryType(value: String): Self = this.set("threatEntryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatEntryType: Self = this.set("threatEntryType", js.undefined)
-    
-    @scala.inline
-    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatType: Self = this.set("threatType", js.undefined)
+    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
   }
 }

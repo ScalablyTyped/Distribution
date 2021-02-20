@@ -1,31 +1,28 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CardType extends js.Object
+sealed trait CardType extends StObject
 @JSImport("azdata", "CardType")
 @js.native
-object CardType extends js.Object {
+object CardType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[CardType with String] = js.native
   
   @js.native
   sealed trait Details extends CardType
-  /* "Details" */ @js.native
-  object Details extends TopLevel[Details with String]
+  /* "Details" */ val Details: typings.azdata.mod.CardType.Details with String = js.native
   
   @js.native
   sealed trait ListItem extends CardType
-  /* "ListItem" */ @js.native
-  object ListItem extends TopLevel[ListItem with String]
+  /* "ListItem" */ val ListItem: typings.azdata.mod.CardType.ListItem with String = js.native
   
   @js.native
   sealed trait VerticalButton extends CardType
-  /* "VerticalButton" */ @js.native
-  object VerticalButton extends TopLevel[VerticalButton with String]
+  /* "VerticalButton" */ val VerticalButton: typings.azdata.mod.CardType.VerticalButton with String = js.native
 }

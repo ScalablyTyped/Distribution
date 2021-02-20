@@ -5,6 +5,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.closed
 import typings.elasticElasticsearch.elasticElasticsearchStrings.hidden
 import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object IndicesResolveIndex {
   }
   
   @scala.inline
-  implicit class IndicesResolveIndexOps[Self <: IndicesResolveIndex] (val x: Self) extends AnyVal {
+  implicit class IndicesResolveIndexMutableBuilder[Self <: IndicesResolveIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameVarargs(value: String*): Self = this.set("name", js.Array(value :_*))
-    
-    @scala.inline
-    def setName(value: String | js.Array[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = this.set("expand_wildcards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpand_wildcards: Self = this.set("expand_wildcards", js.undefined)
+    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

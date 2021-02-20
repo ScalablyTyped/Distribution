@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Push contains filter properties for matching GitHub git pushes.
   */
 @js.native
-trait SchemaPushFilter extends js.Object {
+trait SchemaPushFilter extends StObject {
   
   /**
     * Regexes of branches to match.  The syntax of the regular expressions
@@ -33,30 +34,18 @@ object SchemaPushFilter {
   }
   
   @scala.inline
-  implicit class SchemaPushFilterOps[Self <: SchemaPushFilter] (val x: Self) extends AnyVal {
+  implicit class SchemaPushFilterMutableBuilder[Self <: SchemaPushFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBranch: Self = this.set("branch", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

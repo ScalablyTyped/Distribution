@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,51 +83,39 @@ object XViewSplitable {
   }
   
   @scala.inline
-  implicit class XViewSplitableOps[Self <: XViewSplitable] (val x: Self) extends AnyVal {
+  implicit class XViewSplitableMutableBuilder[Self <: XViewSplitable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetIsWindowSplit(value: () => Boolean): Self = StObject.set(x, "getIsWindowSplit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSplitColumn(value: () => Double): Self = StObject.set(x, "getSplitColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSplitHorizontal(value: () => Double): Self = StObject.set(x, "getSplitHorizontal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsWindowSplit(value: Boolean): Self = this.set("IsWindowSplit", value.asInstanceOf[js.Any])
+    def setGetSplitRow(value: () => Double): Self = StObject.set(x, "getSplitRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSplitColumn(value: Double): Self = this.set("SplitColumn", value.asInstanceOf[js.Any])
+    def setGetSplitVertical(value: () => Double): Self = StObject.set(x, "getSplitVertical", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSplitHorizontal(value: Double): Self = this.set("SplitHorizontal", value.asInstanceOf[js.Any])
+    def setIsWindowSplit(value: Boolean): Self = StObject.set(x, "IsWindowSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplitRow(value: Double): Self = this.set("SplitRow", value.asInstanceOf[js.Any])
+    def setSplitAtPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "splitAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSplitVertical(value: Double): Self = this.set("SplitVertical", value.asInstanceOf[js.Any])
+    def setSplitColumn(value: Double): Self = StObject.set(x, "SplitColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIsWindowSplit(value: () => Boolean): Self = this.set("getIsWindowSplit", js.Any.fromFunction0(value))
+    def setSplitHorizontal(value: Double): Self = StObject.set(x, "SplitHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSplitColumn(value: () => Double): Self = this.set("getSplitColumn", js.Any.fromFunction0(value))
+    def setSplitRow(value: Double): Self = StObject.set(x, "SplitRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSplitHorizontal(value: () => Double): Self = this.set("getSplitHorizontal", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSplitRow(value: () => Double): Self = this.set("getSplitRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSplitVertical(value: () => Double): Self = this.set("getSplitVertical", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSplitAtPosition(value: (Double, Double) => Unit): Self = this.set("splitAtPosition", js.Any.fromFunction2(value))
+    def setSplitVertical(value: Double): Self = StObject.set(x, "SplitVertical", value.asInstanceOf[js.Any])
   }
 }

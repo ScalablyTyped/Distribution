@@ -7,16 +7,15 @@ import typings.azureArmResource.lockModelsMod.ManagementLockObject
 import typings.azureArmResource.lockModelsMod.OperationListResult
 import typings.msRest.mod.HttpOperationResponse
 import typings.msRest.mod.ServiceCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource/lib/lock/operations", JSImport.Namespace)
-@js.native
-object lockOperationsMod extends js.Object {
+object lockOperationsMod {
   
   @js.native
-  trait AuthorizationOperations extends js.Object {
+  trait AuthorizationOperations extends StObject {
     
     /**
       * Lists all of the available Microsoft.Authorization REST API operations.
@@ -130,7 +129,7 @@ object lockOperationsMod extends js.Object {
   }
   
   @js.native
-  trait ManagementLocks extends js.Object {
+  trait ManagementLocks extends StObject {
     
     /**
       * @summary Creates or updates a management lock at the resource group level.

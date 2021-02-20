@@ -3,13 +3,14 @@ package typings.pulumiPulumi.automationStackMod
 import typings.pulumiPulumi.automationConfigMod.ConfigMap
 import typings.pulumiPulumi.automationConfigMod.ConfigValue
 import typings.pulumiPulumi.workspaceMod.Workspace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi/x/automation/stack", "Stack")
 @js.native
-class Stack protected () extends js.Object {
+class Stack protected () extends StObject {
   
   /**
     * Destroy deletes all resources in a stack, leaving all history and configuration intact.
@@ -120,9 +121,7 @@ class Stack protected () extends js.Object {
   val workspace: Workspace = js.native
 }
 /* static members */
-@JSImport("@pulumi/pulumi/x/automation/stack", "Stack")
-@js.native
-object Stack extends js.Object {
+object Stack {
   
   /**
     * Creates a new stack using the given workspace, and stack name.
@@ -131,6 +130,8 @@ object Stack extends js.Object {
     * @param name The name identifying the Stack.
     * @param workspace The Workspace the Stack was created from.
     */
+  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack.create")
+  @js.native
   def create(name: String, workspace: Workspace): js.Promise[Stack] = js.native
   
   /**
@@ -142,6 +143,8 @@ object Stack extends js.Object {
     * @param name The name identifying the Stack.
     * @param workspace The Workspace the Stack was created from.
     */
+  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack.createOrSelect")
+  @js.native
   def createOrSelect(name: String, workspace: Workspace): js.Promise[Stack] = js.native
   
   /**
@@ -152,5 +155,7 @@ object Stack extends js.Object {
     * @param name The name identifying the Stack.
     * @param workspace The Workspace the Stack was created from.
     */
+  @JSImport("@pulumi/pulumi/x/automation/stack", "Stack.select")
+  @js.native
   def select(name: String, workspace: Workspace): js.Promise[Stack] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Interpolation extends js.Object {
+trait Interpolation extends StObject {
   
   var interpolation: js.UndefOr[Type] = js.native
 }
@@ -18,24 +19,12 @@ object Interpolation {
   }
   
   @scala.inline
-  implicit class InterpolationOps[Self <: Interpolation] (val x: Self) extends AnyVal {
+  implicit class InterpolationMutableBuilder[Self <: Interpolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpolation(value: Type): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInterpolation(value: Type): Self = this.set("interpolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
   }
 }

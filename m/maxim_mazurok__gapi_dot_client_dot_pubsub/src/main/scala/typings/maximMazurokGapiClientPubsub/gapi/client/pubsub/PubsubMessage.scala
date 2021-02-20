@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PubsubMessage extends js.Object {
+trait PubsubMessage extends StObject {
   
   /** Attributes for this message. If this field is empty, the message must contain non-empty data. This can be used to filter messages on the subscription. */
   var attributes: js.UndefOr[
@@ -43,52 +44,40 @@ object PubsubMessage {
   }
   
   @scala.inline
-  implicit class PubsubMessageOps[Self <: PubsubMessage] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class PubsubMessageMutableBuilder[Self <: PubsubMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PubsubMessage with TopLevel[js.Any]
-    ): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
     @scala.inline
-    def setOrderingKey(value: String): Self = this.set("orderingKey", value.asInstanceOf[js.Any])
+    def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderingKey: Self = this.set("orderingKey", js.undefined)
+    def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
     
     @scala.inline
-    def setPublishTime(value: String): Self = this.set("publishTime", value.asInstanceOf[js.Any])
+    def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublishTime: Self = this.set("publishTime", js.undefined)
+    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,33 +53,21 @@ object RotationalMotorEquation {
   }
   
   @scala.inline
-  implicit class RotationalMotorEquationOps[Self <: RotationalMotorEquation] (val x: Self) extends AnyVal {
+  implicit class RotationalMotorEquationMutableBuilder[Self <: RotationalMotorEquation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisB(value: Vec3): Self = StObject.set(x, "axisB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvIj(value: Mat3): Self = StObject.set(x, "invIj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisA(value: Vec3): Self = this.set("axisA", value.asInstanceOf[js.Any])
+    def setInvLi(value: Mat3): Self = StObject.set(x, "invLi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisB(value: Vec3): Self = this.set("axisB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvIj(value: Mat3): Self = this.set("invIj", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvLi(value: Mat3): Self = this.set("invLi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetVelocity(value: Double): Self = this.set("targetVelocity", value.asInstanceOf[js.Any])
+    def setTargetVelocity(value: Double): Self = StObject.set(x, "targetVelocity", value.asInstanceOf[js.Any])
   }
 }

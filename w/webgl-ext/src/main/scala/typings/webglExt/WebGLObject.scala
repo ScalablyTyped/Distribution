@@ -1,12 +1,13 @@
 package typings.webglExt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebGL 1 Type Branding
 @js.native
-trait WebGLObject extends js.Object {
+trait WebGLObject extends StObject {
   
   val __WebGLObject: Unit = js.native
 }
@@ -19,21 +20,9 @@ object WebGLObject {
   }
   
   @scala.inline
-  implicit class WebGLObjectOps[Self <: WebGLObject] (val x: Self) extends AnyVal {
+  implicit class WebGLObjectMutableBuilder[Self <: WebGLObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__WebGLObject(value: Unit): Self = this.set("__WebGLObject", value.asInstanceOf[js.Any])
+    def set__WebGLObject(value: Unit): Self = StObject.set(x, "__WebGLObject", value.asInstanceOf[js.Any])
   }
 }

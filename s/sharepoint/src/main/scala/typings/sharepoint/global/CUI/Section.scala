@@ -2,6 +2,7 @@ package typings.sharepoint.global.CUI
 
 import typings.sharepoint.CUI.Alignment
 import typings.sharepoint.CUI.RowType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

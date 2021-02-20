@@ -1,16 +1,16 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsController", JSImport.Namespace)
-@js.native
-object suggestionsControllerMod extends js.Object {
+object suggestionsControllerMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsController", "SuggestionsController")
   @js.native
-  class SuggestionsController[T] () extends js.Object {
+  class SuggestionsController[T] () extends StObject {
     
     var _ensureSuggestionModel: js.Any = js.native
     

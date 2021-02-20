@@ -1,11 +1,12 @@
 package typings.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBrokerProperties extends js.Object {
+trait IBrokerProperties extends StObject {
   
   var CorrelationId: String = js.native
   
@@ -47,48 +48,36 @@ object IBrokerProperties {
   }
   
   @scala.inline
-  implicit class IBrokerPropertiesOps[Self <: IBrokerProperties] (val x: Self) extends AnyVal {
+  implicit class IBrokerPropertiesMutableBuilder[Self <: IBrokerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrelationId(value: String): Self = this.set("CorrelationId", value.asInstanceOf[js.Any])
+    def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+    def setReplyToSessionId(value: String): Self = StObject.set(x, "ReplyToSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionKey(value: String): Self = this.set("PartitionKey", value.asInstanceOf[js.Any])
+    def setScheduledEnqueueTimeUtc(value: String): Self = StObject.set(x, "ScheduledEnqueueTimeUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyTo(value: String): Self = this.set("ReplyTo", value.asInstanceOf[js.Any])
+    def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyToSessionId(value: String): Self = this.set("ReplyToSessionId", value.asInstanceOf[js.Any])
+    def setTimeToLive(value: String): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledEnqueueTimeUtc(value: String): Self = this.set("ScheduledEnqueueTimeUtc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("SessionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeToLive(value: String): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("To", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

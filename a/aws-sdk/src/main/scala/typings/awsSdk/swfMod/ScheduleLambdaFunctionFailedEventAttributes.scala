@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduleLambdaFunctionFailedEventAttributes extends js.Object {
+trait ScheduleLambdaFunctionFailedEventAttributes extends StObject {
   
   /**
     * The cause of the failure. To help diagnose issues, use this information to trace back the chain of events leading up to this event.  If cause is set to OPERATION_NOT_PERMITTED, the decision failed because it lacked sufficient permissions. For details and example IAM policies, see Using IAM to Manage Access to Amazon SWF Workflows in the Amazon SWF Developer Guide. 
@@ -41,30 +42,18 @@ object ScheduleLambdaFunctionFailedEventAttributes {
   }
   
   @scala.inline
-  implicit class ScheduleLambdaFunctionFailedEventAttributesOps[Self <: ScheduleLambdaFunctionFailedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class ScheduleLambdaFunctionFailedEventAttributesMutableBuilder[Self <: ScheduleLambdaFunctionFailedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCause(value: ScheduleLambdaFunctionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: FunctionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: ScheduleLambdaFunctionFailedCause): Self = this.set("cause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: FunctionId): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: FunctionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: FunctionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

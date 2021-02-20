@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeAppliance extends js.Object {
+trait SmartHomeAppliance extends StObject {
   
   /**
     * The description of the smart home appliance.
@@ -31,36 +32,24 @@ object SmartHomeAppliance {
   }
   
   @scala.inline
-  implicit class SmartHomeApplianceOps[Self <: SmartHomeAppliance] (val x: Self) extends AnyVal {
+  implicit class SmartHomeApplianceMutableBuilder[Self <: SmartHomeAppliance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: ApplianceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriendlyName(value: ApplianceFriendlyName): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ApplianceDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFriendlyNameUndefined: Self = StObject.set(x, "FriendlyName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setManufacturerName(value: ApplianceManufacturerName): Self = StObject.set(x, "ManufacturerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: ApplianceFriendlyName): Self = this.set("FriendlyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFriendlyName: Self = this.set("FriendlyName", js.undefined)
-    
-    @scala.inline
-    def setManufacturerName(value: ApplianceManufacturerName): Self = this.set("ManufacturerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManufacturerName: Self = this.set("ManufacturerName", js.undefined)
+    def setManufacturerNameUndefined: Self = StObject.set(x, "ManufacturerName", js.undefined)
   }
 }

@@ -7,15 +7,14 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XColumnsSupplier
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XDataDescriptorFactory
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XRename
-import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.ucb.XContentEventListener
 import typings.activexLibreoffice.com_.sun.star.ucb.XContentIdentifier
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Query
-  extends XPropertySet
-     with XContent
-     with XComponent
+  extends XQueryDefinition
      with DataSettings
      with XDataDescriptorFactory
      with XRename

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to property values containing information on current usage of the attributed network connection. */
 @js.native
-trait AttributedNetworkUsage extends js.Object {
+trait AttributedNetworkUsage extends StObject {
   
   /** Gets the Id of the of the app. */
   var attributionId: String = js.native
@@ -39,33 +40,21 @@ object AttributedNetworkUsage {
   }
   
   @scala.inline
-  implicit class AttributedNetworkUsageOps[Self <: AttributedNetworkUsage] (val x: Self) extends AnyVal {
+  implicit class AttributedNetworkUsageMutableBuilder[Self <: AttributedNetworkUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributionId(value: String): Self = StObject.set(x, "attributionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionName(value: String): Self = StObject.set(x, "attributionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "attributionThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionId(value: String): Self = this.set("attributionId", value.asInstanceOf[js.Any])
+    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionName(value: String): Self = this.set("attributionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAttributionThumbnail(value: IRandomAccessStreamReference): Self = this.set("attributionThumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBytesReceived(value: Double): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
   }
 }

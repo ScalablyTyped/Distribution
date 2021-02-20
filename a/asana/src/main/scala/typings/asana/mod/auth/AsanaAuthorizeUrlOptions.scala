@@ -1,11 +1,12 @@
 package typings.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsanaAuthorizeUrlOptions extends js.Object {
+trait AsanaAuthorizeUrlOptions extends StObject {
   
   var asanaBaseUrl: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object AsanaAuthorizeUrlOptions {
   }
   
   @scala.inline
-  implicit class AsanaAuthorizeUrlOptionsOps[Self <: AsanaAuthorizeUrlOptions] (val x: Self) extends AnyVal {
+  implicit class AsanaAuthorizeUrlOptionsMutableBuilder[Self <: AsanaAuthorizeUrlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsanaBaseUrl(value: String): Self = StObject.set(x, "asanaBaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsanaBaseUrlUndefined: Self = StObject.set(x, "asanaBaseUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsanaBaseUrl(value: String): Self = this.set("asanaBaseUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsanaBaseUrl: Self = this.set("asanaBaseUrl", js.undefined)
-    
-    @scala.inline
-    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

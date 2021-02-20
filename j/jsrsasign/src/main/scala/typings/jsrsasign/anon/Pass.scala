@@ -1,12 +1,13 @@
 package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pass extends js.Object {
+trait Pass extends StObject {
   
   var alg: String = js.native
   
@@ -21,24 +22,12 @@ object Pass {
   }
   
   @scala.inline
-  implicit class PassOps[Self <: Pass] (val x: Self) extends AnyVal {
+  implicit class PassMutableBuilder[Self <: Pass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlg(value: String): Self = this.set("alg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPass(value: StringDictionary[String]): Self = this.set("pass", value.asInstanceOf[js.Any])
+    def setPass(value: StringDictionary[String]): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
   }
 }

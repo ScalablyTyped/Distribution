@@ -1,11 +1,12 @@
 package typings.antDesignReactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Actionsheetitemfontsize extends js.Object {
+trait Actionsheetitemfontsize extends StObject {
   
   var action_sheet_zindex: Double = js.native
   
@@ -320,321 +321,309 @@ object Actionsheetitemfontsize {
   }
   
   @scala.inline
-  implicit class ActionsheetitemfontsizeOps[Self <: Actionsheetitemfontsize] (val x: Self) extends AnyVal {
+  implicit class ActionsheetitemfontsizeMutableBuilder[Self <: Actionsheetitemfontsize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsheet_item_font_size(value: Double): Self = StObject.set(x, "actionsheet_item_font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsheet_item_height(value: Double): Self = StObject.set(x, "actionsheet_item_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction_sheet_zindex(value: Double): Self = this.set("action_sheet_zindex", value.asInstanceOf[js.Any])
+    def setBorder_color_base(value: String): Self = StObject.set(x, "border_color_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsheet_item_font_size(value: Double): Self = this.set("actionsheet_item_font_size", value.asInstanceOf[js.Any])
+    def setBorder_width_lg(value: Double): Self = StObject.set(x, "border_width_lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsheet_item_height(value: Double): Self = this.set("actionsheet_item_height", value.asInstanceOf[js.Any])
+    def setBorder_width_md(value: Double): Self = StObject.set(x, "border_width_md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder_color_base(value: String): Self = this.set("border_color_base", value.asInstanceOf[js.Any])
+    def setBorder_width_sm(value: Double): Self = StObject.set(x, "border_width_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder_width_lg(value: Double): Self = this.set("border_width_lg", value.asInstanceOf[js.Any])
+    def setBrand_error(value: String): Self = StObject.set(x, "brand_error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder_width_md(value: Double): Self = this.set("border_width_md", value.asInstanceOf[js.Any])
+    def setBrand_important(value: String): Self = StObject.set(x, "brand_important", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder_width_sm(value: Double): Self = this.set("border_width_sm", value.asInstanceOf[js.Any])
+    def setBrand_primary(value: String): Self = StObject.set(x, "brand_primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_error(value: String): Self = this.set("brand_error", value.asInstanceOf[js.Any])
+    def setBrand_primary_tap(value: String): Self = StObject.set(x, "brand_primary_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_important(value: String): Self = this.set("brand_important", value.asInstanceOf[js.Any])
+    def setBrand_success(value: String): Self = StObject.set(x, "brand_success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_primary(value: String): Self = this.set("brand_primary", value.asInstanceOf[js.Any])
+    def setBrand_wait(value: String): Self = StObject.set(x, "brand_wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_primary_tap(value: String): Self = this.set("brand_primary_tap", value.asInstanceOf[js.Any])
+    def setBrand_warning(value: String): Self = StObject.set(x, "brand_warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_success(value: String): Self = this.set("brand_success", value.asInstanceOf[js.Any])
+    def setButton_font_size(value: Double): Self = StObject.set(x, "button_font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_wait(value: String): Self = this.set("brand_wait", value.asInstanceOf[js.Any])
+    def setButton_font_size_sm(value: Double): Self = StObject.set(x, "button_font_size_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand_warning(value: String): Self = this.set("brand_warning", value.asInstanceOf[js.Any])
+    def setButton_height(value: Double): Self = StObject.set(x, "button_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton_font_size(value: Double): Self = this.set("button_font_size", value.asInstanceOf[js.Any])
+    def setButton_height_sm(value: Double): Self = StObject.set(x, "button_height_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton_font_size_sm(value: Double): Self = this.set("button_font_size_sm", value.asInstanceOf[js.Any])
+    def setColor_icon_base(value: String): Self = StObject.set(x, "color_icon_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton_height(value: Double): Self = this.set("button_height", value.asInstanceOf[js.Any])
+    def setColor_link(value: String): Self = StObject.set(x, "color_link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton_height_sm(value: Double): Self = this.set("button_height_sm", value.asInstanceOf[js.Any])
+    def setColor_text_base(value: String): Self = StObject.set(x, "color_text_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_icon_base(value: String): Self = this.set("color_icon_base", value.asInstanceOf[js.Any])
+    def setColor_text_base_inverse(value: String): Self = StObject.set(x, "color_text_base_inverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_link(value: String): Self = this.set("color_link", value.asInstanceOf[js.Any])
+    def setColor_text_caption(value: String): Self = StObject.set(x, "color_text_caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_base(value: String): Self = this.set("color_text_base", value.asInstanceOf[js.Any])
+    def setColor_text_disabled(value: String): Self = StObject.set(x, "color_text_disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_base_inverse(value: String): Self = this.set("color_text_base_inverse", value.asInstanceOf[js.Any])
+    def setColor_text_paragraph(value: String): Self = StObject.set(x, "color_text_paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_caption(value: String): Self = this.set("color_text_caption", value.asInstanceOf[js.Any])
+    def setColor_text_placeholder(value: String): Self = StObject.set(x, "color_text_placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_disabled(value: String): Self = this.set("color_text_disabled", value.asInstanceOf[js.Any])
+    def setColor_text_secondary(value: String): Self = StObject.set(x, "color_text_secondary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_paragraph(value: String): Self = this.set("color_text_paragraph", value.asInstanceOf[js.Any])
+    def setEase_in_out_quint(value: String): Self = StObject.set(x, "ease_in_out_quint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_placeholder(value: String): Self = this.set("color_text_placeholder", value.asInstanceOf[js.Any])
+    def setFill_base(value: String): Self = StObject.set(x, "fill_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor_text_secondary(value: String): Self = this.set("color_text_secondary", value.asInstanceOf[js.Any])
+    def setFill_body(value: String): Self = StObject.set(x, "fill_body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEase_in_out_quint(value: String): Self = this.set("ease_in_out_quint", value.asInstanceOf[js.Any])
+    def setFill_disabled(value: String): Self = StObject.set(x, "fill_disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_base(value: String): Self = this.set("fill_base", value.asInstanceOf[js.Any])
+    def setFill_grey(value: String): Self = StObject.set(x, "fill_grey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_body(value: String): Self = this.set("fill_body", value.asInstanceOf[js.Any])
+    def setFill_mask(value: String): Self = StObject.set(x, "fill_mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_disabled(value: String): Self = this.set("fill_disabled", value.asInstanceOf[js.Any])
+    def setFill_tap(value: String): Self = StObject.set(x, "fill_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_grey(value: String): Self = this.set("fill_grey", value.asInstanceOf[js.Any])
+    def setFont_size_base(value: Double): Self = StObject.set(x, "font_size_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_mask(value: String): Self = this.set("fill_mask", value.asInstanceOf[js.Any])
+    def setFont_size_caption(value: Double): Self = StObject.set(x, "font_size_caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill_tap(value: String): Self = this.set("fill_tap", value.asInstanceOf[js.Any])
+    def setFont_size_caption_sm(value: Double): Self = StObject.set(x, "font_size_caption_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size_base(value: Double): Self = this.set("font_size_base", value.asInstanceOf[js.Any])
+    def setFont_size_heading(value: Double): Self = StObject.set(x, "font_size_heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size_caption(value: Double): Self = this.set("font_size_caption", value.asInstanceOf[js.Any])
+    def setFont_size_icontext(value: Double): Self = StObject.set(x, "font_size_icontext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size_caption_sm(value: Double): Self = this.set("font_size_caption_sm", value.asInstanceOf[js.Any])
+    def setFont_size_subhead(value: Double): Self = StObject.set(x, "font_size_subhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size_heading(value: Double): Self = this.set("font_size_heading", value.asInstanceOf[js.Any])
+    def setGhost_button_color(value: String): Self = StObject.set(x, "ghost_button_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size_icontext(value: Double): Self = this.set("font_size_icontext", value.asInstanceOf[js.Any])
+    def setGhost_button_fill_tap(value: String): Self = StObject.set(x, "ghost_button_fill_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont_size_subhead(value: Double): Self = this.set("font_size_subhead", value.asInstanceOf[js.Any])
+    def setH_spacing_lg(value: Double): Self = StObject.set(x, "h_spacing_lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhost_button_color(value: String): Self = this.set("ghost_button_color", value.asInstanceOf[js.Any])
+    def setH_spacing_md(value: Double): Self = StObject.set(x, "h_spacing_md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGhost_button_fill_tap(value: String): Self = this.set("ghost_button_fill_tap", value.asInstanceOf[js.Any])
+    def setH_spacing_sm(value: Double): Self = StObject.set(x, "h_spacing_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH_spacing_lg(value: Double): Self = this.set("h_spacing_lg", value.asInstanceOf[js.Any])
+    def setIcon_size_lg(value: Double): Self = StObject.set(x, "icon_size_lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH_spacing_md(value: Double): Self = this.set("h_spacing_md", value.asInstanceOf[js.Any])
+    def setIcon_size_md(value: Double): Self = StObject.set(x, "icon_size_md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH_spacing_sm(value: Double): Self = this.set("h_spacing_sm", value.asInstanceOf[js.Any])
+    def setIcon_size_sm(value: Double): Self = StObject.set(x, "icon_size_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_size_lg(value: Double): Self = this.set("icon_size_lg", value.asInstanceOf[js.Any])
+    def setIcon_size_xs(value: Double): Self = StObject.set(x, "icon_size_xs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_size_md(value: Double): Self = this.set("icon_size_md", value.asInstanceOf[js.Any])
+    def setIcon_size_xxs(value: Double): Self = StObject.set(x, "icon_size_xxs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_size_sm(value: Double): Self = this.set("icon_size_sm", value.asInstanceOf[js.Any])
+    def setInput_color_icon(value: String): Self = StObject.set(x, "input_color_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_size_xs(value: Double): Self = this.set("icon_size_xs", value.asInstanceOf[js.Any])
+    def setInput_color_icon_tap(value: String): Self = StObject.set(x, "input_color_icon_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon_size_xxs(value: Double): Self = this.set("icon_size_xxs", value.asInstanceOf[js.Any])
+    def setInput_font_size(value: Double): Self = StObject.set(x, "input_font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_color_icon(value: String): Self = this.set("input_color_icon", value.asInstanceOf[js.Any])
+    def setInput_label_width(value: Double): Self = StObject.set(x, "input_label_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_color_icon_tap(value: String): Self = this.set("input_color_icon_tap", value.asInstanceOf[js.Any])
+    def setLine_height_base(value: Double): Self = StObject.set(x, "line_height_base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_font_size(value: Double): Self = this.set("input_font_size", value.asInstanceOf[js.Any])
+    def setLine_height_paragraph(value: Double): Self = StObject.set(x, "line_height_paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_label_width(value: Double): Self = this.set("input_label_width", value.asInstanceOf[js.Any])
+    def setLink_button_fill_tap(value: String): Self = StObject.set(x, "link_button_fill_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_height_base(value: Double): Self = this.set("line_height_base", value.asInstanceOf[js.Any])
+    def setLink_button_font_size(value: Double): Self = StObject.set(x, "link_button_font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_height_paragraph(value: Double): Self = this.set("line_height_paragraph", value.asInstanceOf[js.Any])
+    def setList_item_height(value: Double): Self = StObject.set(x, "list_item_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_button_fill_tap(value: String): Self = this.set("link_button_fill_tap", value.asInstanceOf[js.Any])
+    def setList_item_height_sm(value: Double): Self = StObject.set(x, "list_item_height_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_button_font_size(value: Double): Self = this.set("link_button_font_size", value.asInstanceOf[js.Any])
+    def setList_title_height(value: Double): Self = StObject.set(x, "list_title_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList_item_height(value: Double): Self = this.set("list_item_height", value.asInstanceOf[js.Any])
+    def setModal_button_font_size(value: Double): Self = StObject.set(x, "modal_button_font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList_item_height_sm(value: Double): Self = this.set("list_item_height_sm", value.asInstanceOf[js.Any])
+    def setModal_button_height(value: Double): Self = StObject.set(x, "modal_button_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList_title_height(value: Double): Self = this.set("list_title_height", value.asInstanceOf[js.Any])
+    def setModal_font_size_heading(value: Double): Self = StObject.set(x, "modal_font_size_heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal_button_font_size(value: Double): Self = this.set("modal_button_font_size", value.asInstanceOf[js.Any])
+    def setModal_zindex(value: Double): Self = StObject.set(x, "modal_zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal_button_height(value: Double): Self = this.set("modal_button_height", value.asInstanceOf[js.Any])
+    def setNotice_bar_fill(value: String): Self = StObject.set(x, "notice_bar_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal_font_size_heading(value: Double): Self = this.set("modal_font_size_heading", value.asInstanceOf[js.Any])
+    def setNotice_bar_height(value: Double): Self = StObject.set(x, "notice_bar_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModal_zindex(value: Double): Self = this.set("modal_zindex", value.asInstanceOf[js.Any])
+    def setOpacity_disabled(value: String): Self = StObject.set(x, "opacity_disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotice_bar_fill(value: String): Self = this.set("notice_bar_fill", value.asInstanceOf[js.Any])
+    def setOption_height(value: Double): Self = StObject.set(x, "option_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotice_bar_height(value: Double): Self = this.set("notice_bar_height", value.asInstanceOf[js.Any])
+    def setPopup_zindex(value: Double): Self = StObject.set(x, "popup_zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity_disabled(value: String): Self = this.set("opacity_disabled", value.asInstanceOf[js.Any])
+    def setPrimary_button_fill(value: String): Self = StObject.set(x, "primary_button_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption_height(value: Double): Self = this.set("option_height", value.asInstanceOf[js.Any])
+    def setPrimary_button_fill_tap(value: String): Self = StObject.set(x, "primary_button_fill_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopup_zindex(value: Double): Self = this.set("popup_zindex", value.asInstanceOf[js.Any])
+    def setRadius_lg(value: Double): Self = StObject.set(x, "radius_lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_button_fill(value: String): Self = this.set("primary_button_fill", value.asInstanceOf[js.Any])
+    def setRadius_md(value: Double): Self = StObject.set(x, "radius_md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary_button_fill_tap(value: String): Self = this.set("primary_button_fill_tap", value.asInstanceOf[js.Any])
+    def setRadius_sm(value: Double): Self = StObject.set(x, "radius_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius_lg(value: Double): Self = this.set("radius_lg", value.asInstanceOf[js.Any])
+    def setRadius_xs(value: Double): Self = StObject.set(x, "radius_xs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius_md(value: Double): Self = this.set("radius_md", value.asInstanceOf[js.Any])
+    def setSearch_bar_fill(value: String): Self = StObject.set(x, "search_bar_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius_sm(value: Double): Self = this.set("radius_sm", value.asInstanceOf[js.Any])
+    def setSearch_bar_font_size(value: Double): Self = StObject.set(x, "search_bar_font_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius_xs(value: Double): Self = this.set("radius_xs", value.asInstanceOf[js.Any])
+    def setSearch_bar_height(value: Double): Self = StObject.set(x, "search_bar_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_bar_fill(value: String): Self = this.set("search_bar_fill", value.asInstanceOf[js.Any])
+    def setSearch_bar_input_height(value: Double): Self = StObject.set(x, "search_bar_input_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_bar_font_size(value: Double): Self = this.set("search_bar_font_size", value.asInstanceOf[js.Any])
+    def setSearch_color_icon(value: String): Self = StObject.set(x, "search_color_icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_bar_height(value: Double): Self = this.set("search_bar_height", value.asInstanceOf[js.Any])
+    def setSegmented_control_color(value: String): Self = StObject.set(x, "segmented_control_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_bar_input_height(value: Double): Self = this.set("search_bar_input_height", value.asInstanceOf[js.Any])
+    def setSegmented_control_fill_tap(value: String): Self = StObject.set(x, "segmented_control_fill_tap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch_color_icon(value: String): Self = this.set("search_color_icon", value.asInstanceOf[js.Any])
+    def setSegmented_control_height(value: Double): Self = StObject.set(x, "segmented_control_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmented_control_color(value: String): Self = this.set("segmented_control_color", value.asInstanceOf[js.Any])
+    def setSwitch_fill(value: String): Self = StObject.set(x, "switch_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmented_control_fill_tap(value: String): Self = this.set("segmented_control_fill_tap", value.asInstanceOf[js.Any])
+    def setTab_bar_fill(value: String): Self = StObject.set(x, "tab_bar_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmented_control_height(value: Double): Self = this.set("segmented_control_height", value.asInstanceOf[js.Any])
+    def setTab_bar_height(value: Double): Self = StObject.set(x, "tab_bar_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitch_fill(value: String): Self = this.set("switch_fill", value.asInstanceOf[js.Any])
+    def setTabs_color(value: String): Self = StObject.set(x, "tabs_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTab_bar_fill(value: String): Self = this.set("tab_bar_fill", value.asInstanceOf[js.Any])
+    def setTabs_font_size_heading(value: Double): Self = StObject.set(x, "tabs_font_size_heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTab_bar_height(value: Double): Self = this.set("tab_bar_height", value.asInstanceOf[js.Any])
+    def setTabs_height(value: Double): Self = StObject.set(x, "tabs_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabs_color(value: String): Self = this.set("tabs_color", value.asInstanceOf[js.Any])
+    def setTag_height(value: Double): Self = StObject.set(x, "tag_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabs_font_size_heading(value: Double): Self = this.set("tabs_font_size_heading", value.asInstanceOf[js.Any])
+    def setTag_small_height(value: Double): Self = StObject.set(x, "tag_small_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabs_height(value: Double): Self = this.set("tabs_height", value.asInstanceOf[js.Any])
+    def setToast_fill(value: String): Self = StObject.set(x, "toast_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag_height(value: Double): Self = this.set("tag_height", value.asInstanceOf[js.Any])
+    def setToast_zindex(value: Double): Self = StObject.set(x, "toast_zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag_small_height(value: Double): Self = this.set("tag_small_height", value.asInstanceOf[js.Any])
+    def setV_spacing_lg(value: Double): Self = StObject.set(x, "v_spacing_lg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToast_fill(value: String): Self = this.set("toast_fill", value.asInstanceOf[js.Any])
+    def setV_spacing_md(value: Double): Self = StObject.set(x, "v_spacing_md", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToast_zindex(value: Double): Self = this.set("toast_zindex", value.asInstanceOf[js.Any])
+    def setV_spacing_sm(value: Double): Self = StObject.set(x, "v_spacing_sm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV_spacing_lg(value: Double): Self = this.set("v_spacing_lg", value.asInstanceOf[js.Any])
+    def setV_spacing_xl(value: Double): Self = StObject.set(x, "v_spacing_xl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV_spacing_md(value: Double): Self = this.set("v_spacing_md", value.asInstanceOf[js.Any])
+    def setV_spacing_xs(value: Double): Self = StObject.set(x, "v_spacing_xs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV_spacing_sm(value: Double): Self = this.set("v_spacing_sm", value.asInstanceOf[js.Any])
+    def setWarning_button_fill(value: String): Self = StObject.set(x, "warning_button_fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV_spacing_xl(value: Double): Self = this.set("v_spacing_xl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV_spacing_xs(value: Double): Self = this.set("v_spacing_xs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarning_button_fill(value: String): Self = this.set("warning_button_fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarning_button_fill_tap(value: String): Self = this.set("warning_button_fill_tap", value.asInstanceOf[js.Any])
+    def setWarning_button_fill_tap(value: String): Self = StObject.set(x, "warning_button_fill_tap", value.asInstanceOf[js.Any])
   }
 }

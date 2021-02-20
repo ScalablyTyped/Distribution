@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Relationship extends js.Object {
+trait Relationship extends StObject {
   
   /**
     * An array of IDs for related blocks. You can get the type of the relationship from the Type element.
@@ -26,33 +27,21 @@ object Relationship {
   }
   
   @scala.inline
-  implicit class RelationshipOps[Self <: Relationship] (val x: Self) extends AnyVal {
+  implicit class RelationshipMutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIds(value: IdList): Self = StObject.set(x, "Ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdsUndefined: Self = StObject.set(x, "Ids", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "Ids", js.Array(value :_*))
     
     @scala.inline
-    def setIdsVarargs(value: NonEmptyString*): Self = this.set("Ids", js.Array(value :_*))
+    def setType(value: RelationshipType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: IdList): Self = this.set("Ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIds: Self = this.set("Ids", js.undefined)
-    
-    @scala.inline
-    def setType(value: RelationshipType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -1,27 +1,27 @@
 package typings.storybookReactNative
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.storybookAddons.distMod.Collection
 import typings.storybookReactNative.anon.AddonSelected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons", JSImport.Namespace)
-@js.native
-object addonsMod extends js.Object {
+object addonsMod {
+  
+  @JSImport("@storybook/react-native/dist/preview/components/OnDeviceUI/addons", JSImport.Default)
+  @js.native
+  class default protected () extends Addons {
+    def this(props: js.Object) = this()
+  }
   
   @js.native
   trait Addons
-    extends Component[js.Object, AddonSelected, js.Any] {
+    extends PureComponent[js.Object, AddonSelected, js.Any] {
     
     def onPressAddon(addonSelected: String): Unit = js.native
     
     var panels: Collection = js.native
-  }
-  
-  @js.native
-  class default protected () extends Addons {
-    def this(props: js.Object) = this()
   }
 }

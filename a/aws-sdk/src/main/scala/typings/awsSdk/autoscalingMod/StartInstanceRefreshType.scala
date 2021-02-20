@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartInstanceRefreshType extends js.Object {
+trait StartInstanceRefreshType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
@@ -31,33 +32,21 @@ object StartInstanceRefreshType {
   }
   
   @scala.inline
-  implicit class StartInstanceRefreshTypeOps[Self <: StartInstanceRefreshType] (val x: Self) extends AnyVal {
+  implicit class StartInstanceRefreshTypeMutableBuilder[Self <: StartInstanceRefreshType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreferences(value: RefreshPreferences): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    def setStrategy(value: RefreshStrategy): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferences(value: RefreshPreferences): Self = this.set("Preferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferences: Self = this.set("Preferences", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: RefreshStrategy): Self = this.set("Strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("Strategy", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
   }
 }

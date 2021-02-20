@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMailboxExportJobResponse extends js.Object {
+trait DescribeMailboxExportJobResponse extends StObject {
   
   /**
     * The mailbox export job description.
@@ -76,90 +77,78 @@ object DescribeMailboxExportJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeMailboxExportJobResponseOps[Self <: DescribeMailboxExportJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeMailboxExportJobResponseMutableBuilder[Self <: DescribeMailboxExportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "EntityId", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setErrorInfo(value: MailboxExportErrorInfo): Self = StObject.set(x, "ErrorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: WorkMailIdentifier): Self = this.set("EntityId", value.asInstanceOf[js.Any])
+    def setErrorInfoUndefined: Self = StObject.set(x, "ErrorInfo", js.undefined)
     
     @scala.inline
-    def deleteEntityId: Self = this.set("EntityId", js.undefined)
+    def setEstimatedProgress(value: Percentage): Self = StObject.set(x, "EstimatedProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorInfo(value: MailboxExportErrorInfo): Self = this.set("ErrorInfo", value.asInstanceOf[js.Any])
+    def setEstimatedProgressUndefined: Self = StObject.set(x, "EstimatedProgress", js.undefined)
     
     @scala.inline
-    def deleteErrorInfo: Self = this.set("ErrorInfo", js.undefined)
+    def setKmsKeyArn(value: KmsKeyArn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedProgress(value: Percentage): Self = this.set("EstimatedProgress", value.asInstanceOf[js.Any])
+    def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
     
     @scala.inline
-    def deleteEstimatedProgress: Self = this.set("EstimatedProgress", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+    def setS3BucketName(value: S3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setS3Path(value: S3ObjectKey): Self = StObject.set(x, "S3Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketName(value: S3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    def setS3PathUndefined: Self = StObject.set(x, "S3Path", js.undefined)
     
     @scala.inline
-    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    def setS3Prefix(value: S3ObjectKey): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Path(value: S3ObjectKey): Self = this.set("S3Path", value.asInstanceOf[js.Any])
+    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
     @scala.inline
-    def deleteS3Path: Self = this.set("S3Path", js.undefined)
+    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Prefix(value: S3ObjectKey): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+    def setState(value: MailboxExportJobState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
-    
-    @scala.inline
-    def setState(value: MailboxExportJobState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

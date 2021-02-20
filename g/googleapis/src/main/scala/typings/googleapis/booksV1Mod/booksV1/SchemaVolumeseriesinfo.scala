@@ -1,12 +1,13 @@
 package typings.googleapis.booksV1Mod.booksV1
 
 import typings.googleapis.anon.Issue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaVolumeseriesinfo extends js.Object {
+trait SchemaVolumeseriesinfo extends StObject {
   
   /**
     * The display number string. This should be used only for display purposes
@@ -35,45 +36,33 @@ object SchemaVolumeseriesinfo {
   }
   
   @scala.inline
-  implicit class SchemaVolumeseriesinfoOps[Self <: SchemaVolumeseriesinfo] (val x: Self) extends AnyVal {
+  implicit class SchemaVolumeseriesinfoMutableBuilder[Self <: SchemaVolumeseriesinfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookDisplayNumber(value: String): Self = StObject.set(x, "bookDisplayNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookDisplayNumberUndefined: Self = StObject.set(x, "bookDisplayNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookDisplayNumber(value: String): Self = this.set("bookDisplayNumber", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteBookDisplayNumber: Self = this.set("bookDisplayNumber", js.undefined)
+    def setShortSeriesBookTitle(value: String): Self = StObject.set(x, "shortSeriesBookTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setShortSeriesBookTitleUndefined: Self = StObject.set(x, "shortSeriesBookTitle", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setVolumeSeries(value: js.Array[Issue]): Self = StObject.set(x, "volumeSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortSeriesBookTitle(value: String): Self = this.set("shortSeriesBookTitle", value.asInstanceOf[js.Any])
+    def setVolumeSeriesUndefined: Self = StObject.set(x, "volumeSeries", js.undefined)
     
     @scala.inline
-    def deleteShortSeriesBookTitle: Self = this.set("shortSeriesBookTitle", js.undefined)
-    
-    @scala.inline
-    def setVolumeSeriesVarargs(value: Issue*): Self = this.set("volumeSeries", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumeSeries(value: js.Array[Issue]): Self = this.set("volumeSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSeries: Self = this.set("volumeSeries", js.undefined)
+    def setVolumeSeriesVarargs(value: Issue*): Self = StObject.set(x, "volumeSeries", js.Array(value :_*))
   }
 }

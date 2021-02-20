@@ -2,12 +2,13 @@ package typings.sketchapp
 
 import typings.sketchapp.anon.Archive
 import typings.sketchapp.sketchappStrings.attributedString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSAttributedString extends js.Object {
+trait SketchMSAttributedString extends StObject {
   
   var _class: attributedString = js.native
   
@@ -26,36 +27,24 @@ object SketchMSAttributedString {
   }
   
   @scala.inline
-  implicit class SketchMSAttributedStringOps[Self <: SketchMSAttributedString] (val x: Self) extends AnyVal {
+  implicit class SketchMSAttributedStringMutableBuilder[Self <: SketchMSAttributedString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchivedAttributedString(value: Archive): Self = StObject.set(x, "archivedAttributedString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchivedAttributedStringUndefined: Self = StObject.set(x, "archivedAttributedString", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: js.Array[SketchMSStringAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: attributedString): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setAttributesVarargs(value: SketchMSStringAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: SketchMSStringAttribute*): Self = this.set("attributes", js.Array(value :_*))
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[SketchMSStringAttribute]): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArchivedAttributedString(value: Archive): Self = this.set("archivedAttributedString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArchivedAttributedString: Self = this.set("archivedAttributedString", js.undefined)
+    def set_class(value: attributedString): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

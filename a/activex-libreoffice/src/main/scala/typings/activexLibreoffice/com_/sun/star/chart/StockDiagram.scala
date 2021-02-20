@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -162,24 +163,12 @@ object StockDiagram {
   }
   
   @scala.inline
-  implicit class StockDiagramOps[Self <: StockDiagram] (val x: Self) extends AnyVal {
+  implicit class StockDiagramMutableBuilder[Self <: StockDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpDown(value: Boolean): Self = StObject.set(x, "UpDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpDown(value: Boolean): Self = this.set("UpDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: Boolean): Self = this.set("Volume", value.asInstanceOf[js.Any])
+    def setVolume(value: Boolean): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.jqueryDropotron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DropotronConfiguration extends js.Object {
+trait DropotronConfiguration extends StObject {
   
   /**
     * @summary IE Offset X.
@@ -164,81 +165,69 @@ object DropotronConfiguration {
   }
   
   @scala.inline
-  implicit class DropotronConfigurationOps[Self <: DropotronConfiguration] (val x: Self) extends AnyVal {
+  implicit class DropotronConfigurationMutableBuilder[Self <: DropotronConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseZIndex(value: Double): Self = StObject.set(x, "baseZIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloneOnDetach(value: Boolean): Self = StObject.set(x, "cloneOnDetach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIEOffsetX(value: Double): Self = this.set("IEOffsetX", value.asInstanceOf[js.Any])
+    def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIEOffsetY(value: Double): Self = this.set("IEOffsetY", value.asInstanceOf[js.Any])
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setExpandMode(value: String): Self = StObject.set(x, "expandMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseZIndex(value: Double): Self = this.set("baseZIndex", value.asInstanceOf[js.Any])
+    def setGlobalOffsetY(value: Double): Self = StObject.set(x, "globalOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneOnDetach(value: Boolean): Self = this.set("cloneOnDetach", value.asInstanceOf[js.Any])
+    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetach(value: Boolean): Self = this.set("detach", value.asInstanceOf[js.Any])
+    def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setIEOffsetX(value: Double): Self = StObject.set(x, "IEOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandMode(value: String): Self = this.set("expandMode", value.asInstanceOf[js.Any])
+    def setIEOffsetY(value: Double): Self = StObject.set(x, "IEOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalOffsetY(value: Double): Self = this.set("globalOffsetY", value.asInstanceOf[js.Any])
+    def setMenuClass(value: String): Self = StObject.set(x, "menuClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDelay(value: Double): Self = this.set("hideDelay", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverDelay(value: Double): Self = this.set("hoverDelay", value.asInstanceOf[js.Any])
+    def setNoOpenerFade(value: Boolean): Self = StObject.set(x, "noOpenerFade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuClass(value: String): Self = this.set("menuClass", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoOpenerFade(value: Boolean): Self = this.set("noOpenerFade", value.asInstanceOf[js.Any])
+    def setOpenerActiveClass(value: String): Self = StObject.set(x, "openerActiveClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOpenerClass(value: String): Self = StObject.set(x, "openerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setSelectorParent(value: JQuery): Self = StObject.set(x, "selectorParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenerActiveClass(value: String): Self = this.set("openerActiveClass", value.asInstanceOf[js.Any])
+    def setSpeed(value: String): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenerClass(value: String): Self = this.set("openerClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorParent(value: JQuery): Self = this.set("selectorParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeed(value: String): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmenuClassPrefix(value: String): Self = this.set("submenuClassPrefix", value.asInstanceOf[js.Any])
+    def setSubmenuClassPrefix(value: String): Self = StObject.set(x, "submenuClassPrefix", value.asInstanceOf[js.Any])
   }
 }

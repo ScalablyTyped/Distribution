@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Backup extends js.Object {
+trait Backup extends StObject {
   
   /**
     * The identifier (ID) of the backup.
@@ -71,84 +72,72 @@ object Backup {
   }
   
   @scala.inline
-  implicit class BackupOps[Self <: Backup] (val x: Self) extends AnyVal {
+  implicit class BackupMutableBuilder[Self <: Backup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupState(value: BackupState): Self = StObject.set(x, "BackupState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupStateUndefined: Self = StObject.set(x, "BackupState", js.undefined)
     
     @scala.inline
-    def setBackupId(value: BackupId): Self = this.set("BackupId", value.asInstanceOf[js.Any])
+    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupState(value: BackupState): Self = this.set("BackupState", value.asInstanceOf[js.Any])
+    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
     @scala.inline
-    def deleteBackupState: Self = this.set("BackupState", js.undefined)
+    def setCopyTimestamp(value: Timestamp): Self = StObject.set(x, "CopyTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    def setCopyTimestampUndefined: Self = StObject.set(x, "CopyTimestamp", js.undefined)
     
     @scala.inline
-    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTimestamp(value: Timestamp): Self = this.set("CopyTimestamp", value.asInstanceOf[js.Any])
+    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCopyTimestamp: Self = this.set("CopyTimestamp", js.undefined)
+    def setDeleteTimestamp(value: Timestamp): Self = StObject.set(x, "DeleteTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    def setDeleteTimestampUndefined: Self = StObject.set(x, "DeleteTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    def setNeverExpires(value: Boolean): Self = StObject.set(x, "NeverExpires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTimestamp(value: Timestamp): Self = this.set("DeleteTimestamp", value.asInstanceOf[js.Any])
+    def setNeverExpiresUndefined: Self = StObject.set(x, "NeverExpires", js.undefined)
     
     @scala.inline
-    def deleteDeleteTimestamp: Self = this.set("DeleteTimestamp", js.undefined)
+    def setSourceBackup(value: BackupId): Self = StObject.set(x, "SourceBackup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeverExpires(value: Boolean): Self = this.set("NeverExpires", value.asInstanceOf[js.Any])
+    def setSourceBackupUndefined: Self = StObject.set(x, "SourceBackup", js.undefined)
     
     @scala.inline
-    def deleteNeverExpires: Self = this.set("NeverExpires", js.undefined)
+    def setSourceCluster(value: ClusterId): Self = StObject.set(x, "SourceCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceBackup(value: BackupId): Self = this.set("SourceBackup", value.asInstanceOf[js.Any])
+    def setSourceClusterUndefined: Self = StObject.set(x, "SourceCluster", js.undefined)
     
     @scala.inline
-    def deleteSourceBackup: Self = this.set("SourceBackup", js.undefined)
+    def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCluster(value: ClusterId): Self = this.set("SourceCluster", value.asInstanceOf[js.Any])
+    def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
     
     @scala.inline
-    def deleteSourceCluster: Self = this.set("SourceCluster", js.undefined)
+    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRegion(value: Region): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
     @scala.inline
-    def deleteSourceRegion: Self = this.set("SourceRegion", js.undefined)
-    
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = this.set("TagList", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagList(value: TagList): Self = this.set("TagList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagList: Self = this.set("TagList", js.undefined)
+    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

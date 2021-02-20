@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListExecutionsResponse extends js.Object {
+trait ListExecutionsResponse extends StObject {
   
   /** Executions. Always set. */
   var executions: js.UndefOr[js.Array[Execution]] = js.native
@@ -22,33 +23,21 @@ object ListExecutionsResponse {
   }
   
   @scala.inline
-  implicit class ListExecutionsResponseOps[Self <: ListExecutionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListExecutionsResponseMutableBuilder[Self <: ListExecutionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutions(value: js.Array[Execution]): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionsUndefined: Self = StObject.set(x, "executions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionsVarargs(value: Execution*): Self = StObject.set(x, "executions", js.Array(value :_*))
     
     @scala.inline
-    def setExecutionsVarargs(value: Execution*): Self = this.set("executions", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutions(value: js.Array[Execution]): Self = this.set("executions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecutions: Self = this.set("executions", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

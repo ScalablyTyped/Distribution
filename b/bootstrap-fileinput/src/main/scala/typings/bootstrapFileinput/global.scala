@@ -1,14 +1,12 @@
 package typings.bootstrapFileinput
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
   // tslint:enable:unified-signatures
-  @js.native
-  object BootstrapFileInput extends js.Object
+  object BootstrapFileInput
 }

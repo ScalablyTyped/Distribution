@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VisibilityConfig extends js.Object {
+trait VisibilityConfig extends StObject {
   
   /**
     * A boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see AWS WAF Metrics.
@@ -31,27 +32,15 @@ object VisibilityConfig {
   }
   
   @scala.inline
-  implicit class VisibilityConfigOps[Self <: VisibilityConfig] (val x: Self) extends AnyVal {
+  implicit class VisibilityConfigMutableBuilder[Self <: VisibilityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudWatchMetricsEnabled(value: Boolean): Self = this.set("CloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSampledRequestsEnabled(value: Boolean): Self = this.set("SampledRequestsEnabled", value.asInstanceOf[js.Any])
+    def setSampledRequestsEnabled(value: Boolean): Self = StObject.set(x, "SampledRequestsEnabled", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.list
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.listbox
 import typings.std.Event
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends js.Object {
+trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends StObject {
   
   var `aria-activedescendant`: String = js.native
   
@@ -75,75 +76,63 @@ object InputContainerPropsSingle {
   }
   
   @scala.inline
-  implicit class InputContainerPropsSingleOps[Self <: InputContainerPropsSingle[_], T /* <: TypeaheadModel */] (val x: Self with InputContainerPropsSingle[T]) extends AnyVal {
+  implicit class InputContainerPropsSingleMutableBuilder[Self <: InputContainerPropsSingle[_], T /* <: TypeaheadModel */] (val x: Self with InputContainerPropsSingle[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAria-autocomplete`(value: list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-activedescendant`(value: String): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    def `setAria-haspopup`(value: listbox): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-autocomplete`(value: list | both): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-expanded`(value: Boolean): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-haspopup`(value: listbox): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-owns`(value: String): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    def setInputRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoComplete(value: String): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setInputRefNull: Self = StObject.set(x, "inputRef", null)
     
     @scala.inline
-    def setOnBlur(value: Event => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: Event => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnChange(value: js.Array[T] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: js.Array[T] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: Event => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFocus(value: Event => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: Event => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnKeyDown(value: Event => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    def setOnKeyDown(value: Event => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRole(value: combobox): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
     
     @scala.inline
-    def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = this.set("inputRef", js.Any.fromFunction1(value))
+    def setRole(value: combobox): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRef(value: LegacyRef[HTMLInputElement]): Self = this.set("inputRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputRefNull: Self = this.set("inputRef", null)
-    
-    @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlaceholderNull: Self = this.set("placeholder", null)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

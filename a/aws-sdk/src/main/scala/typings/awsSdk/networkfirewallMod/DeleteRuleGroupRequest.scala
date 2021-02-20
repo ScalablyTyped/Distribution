@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteRuleGroupRequest extends js.Object {
+trait DeleteRuleGroupRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule group. You must specify the ARN or the name, and you can specify both. 
@@ -31,36 +32,24 @@ object DeleteRuleGroupRequest {
   }
   
   @scala.inline
-  implicit class DeleteRuleGroupRequestOps[Self <: DeleteRuleGroupRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteRuleGroupRequestMutableBuilder[Self <: DeleteRuleGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleGroupArnUndefined: Self = StObject.set(x, "RuleGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleGroupArn(value: ResourceArn): Self = this.set("RuleGroupArn", value.asInstanceOf[js.Any])
+    def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
     
     @scala.inline
-    def deleteRuleGroupArn: Self = this.set("RuleGroupArn", js.undefined)
+    def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleGroupName(value: ResourceName): Self = this.set("RuleGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleGroupName: Self = this.set("RuleGroupName", js.undefined)
-    
-    @scala.inline
-    def setType(value: RuleGroupType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

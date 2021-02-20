@@ -1,6 +1,7 @@
 package typings.nodeZendesk.mod.Tickets
 
 import typings.nodeZendesk.mod.PaginablePayload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object ListPayload {
   }
   
   @scala.inline
-  implicit class ListPayloadOps[Self <: ListPayload] (val x: Self) extends AnyVal {
+  implicit class ListPayloadMutableBuilder[Self <: ListPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTickets(value: js.Array[ResponseModel]): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTicketsVarargs(value: ResponseModel*): Self = this.set("tickets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTickets(value: js.Array[ResponseModel]): Self = this.set("tickets", value.asInstanceOf[js.Any])
+    def setTicketsVarargs(value: ResponseModel*): Self = StObject.set(x, "tickets", js.Array(value :_*))
   }
 }

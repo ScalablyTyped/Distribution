@@ -3,13 +3,14 @@ package typings.nano.mod
 import typings.nano.nanoStrings.continuous
 import typings.nano.nanoStrings.eventsource
 import typings.nano.nanoStrings.longpoll
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
 @js.native
-trait UpdatesParams extends js.Object {
+trait UpdatesParams extends StObject {
   
   var feed: longpoll | continuous | eventsource = js.native
   
@@ -28,30 +29,18 @@ object UpdatesParams {
   }
   
   @scala.inline
-  implicit class UpdatesParamsOps[Self <: UpdatesParams] (val x: Self) extends AnyVal {
+  implicit class UpdatesParamsMutableBuilder[Self <: UpdatesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeed(value: longpoll | continuous | eventsource): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeartbeat(value: Boolean): Self = StObject.set(x, "heartbeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeed(value: longpoll | continuous | eventsource): Self = this.set("feed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeartbeat(value: Boolean): Self = this.set("heartbeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSince(value: String): Self = this.set("since", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

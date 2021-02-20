@@ -7,14 +7,14 @@ import typings.awsSdkClientDynamodbBrowser.typesBatchGetItemInputMod.BatchGetIte
 import typings.awsSdkClientDynamodbBrowser.typesBatchGetItemOutputMod.BatchGetItemOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/commands/BatchGetItemCommand", JSImport.Namespace)
-@js.native
-object batchGetItemCommandMod extends js.Object {
+object batchGetItemCommandMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/commands/BatchGetItemCommand", "BatchGetItemCommand")
   @js.native
   class BatchGetItemCommand protected () extends Command[
           InputTypesUnion, 

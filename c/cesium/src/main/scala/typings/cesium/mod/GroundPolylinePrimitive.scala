@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.DebugShowShadowVolume
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GroundPolylinePrimitive")
 @js.native
-class GroundPolylinePrimitive protected () extends js.Object {
+class GroundPolylinePrimitive protected () extends StObject {
   def this(options: DebugShowShadowVolume) = this()
   
   val allowPicking: Boolean = js.native
@@ -42,12 +43,15 @@ class GroundPolylinePrimitive protected () extends js.Object {
   
   def update(): Unit = js.native
 }
-/* static members */
-@JSImport("cesium", "GroundPolylinePrimitive")
-@js.native
-object GroundPolylinePrimitive extends js.Object {
+object GroundPolylinePrimitive {
   
+  /* static member */
+  @JSImport("cesium", "GroundPolylinePrimitive.initializeTerrainHeights")
+  @js.native
   def initializeTerrainHeights(): js.Promise[_] = js.native
   
+  /* static member */
+  @JSImport("cesium", "GroundPolylinePrimitive.isSupported")
+  @js.native
   def isSupported(scene: Scene): Boolean = js.native
 }

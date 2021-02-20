@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,24 +57,12 @@ object XInteractionSupplyAuthentication2 {
   }
   
   @scala.inline
-  implicit class XInteractionSupplyAuthentication2Ops[Self <: XInteractionSupplyAuthentication2] (val x: Self) extends AnyVal {
+  implicit class XInteractionSupplyAuthentication2MutableBuilder[Self <: XInteractionSupplyAuthentication2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanUseSystemCredentials(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "canUseSystemCredentials", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanUseSystemCredentials(value: js.Array[Boolean] => Boolean): Self = this.set("canUseSystemCredentials", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUseSystemCredentials(value: Boolean => Unit): Self = this.set("setUseSystemCredentials", js.Any.fromFunction1(value))
+    def setSetUseSystemCredentials(value: Boolean => Unit): Self = StObject.set(x, "setUseSystemCredentials", js.Any.fromFunction1(value))
   }
 }

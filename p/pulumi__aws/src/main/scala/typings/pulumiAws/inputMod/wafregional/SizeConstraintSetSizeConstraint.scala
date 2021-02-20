@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafregional
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizeConstraintSetSizeConstraint extends js.Object {
+trait SizeConstraintSetSizeConstraint extends StObject {
   
   /**
     * The type of comparison you want to perform.
@@ -50,30 +51,18 @@ object SizeConstraintSetSizeConstraint {
   }
   
   @scala.inline
-  implicit class SizeConstraintSetSizeConstraintOps[Self <: SizeConstraintSetSizeConstraint] (val x: Self) extends AnyVal {
+  implicit class SizeConstraintSetSizeConstraintMutableBuilder[Self <: SizeConstraintSetSizeConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldToMatch(value: Input[SizeConstraintSetSizeConstraintFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonOperator(value: Input[String]): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldToMatch(value: Input[SizeConstraintSetSizeConstraintFieldToMatch]): Self = this.set("fieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Input[Double]): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformation(value: Input[String]): Self = this.set("textTransformation", value.asInstanceOf[js.Any])
+    def setTextTransformation(value: Input[String]): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

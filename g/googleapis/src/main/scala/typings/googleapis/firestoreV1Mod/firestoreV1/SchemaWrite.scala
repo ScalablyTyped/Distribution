@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1Mod.firestoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A write on a document.
   */
 @js.native
-trait SchemaWrite extends js.Object {
+trait SchemaWrite extends StObject {
   
   /**
     * An optional precondition on the document.  The write will fail if this is
@@ -54,48 +55,36 @@ object SchemaWrite {
   }
   
   @scala.inline
-  implicit class SchemaWriteOps[Self <: SchemaWrite] (val x: Self) extends AnyVal {
+  implicit class SchemaWriteMutableBuilder[Self <: SchemaWrite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentDocument(value: SchemaPrecondition): Self = StObject.set(x, "currentDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentDocumentUndefined: Self = StObject.set(x, "currentDocument", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDocument(value: SchemaPrecondition): Self = this.set("currentDocument", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def deleteCurrentDocument: Self = this.set("currentDocument", js.undefined)
+    def setTransform(value: SchemaDocumentTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: String): Self = this.set("delete", value.asInstanceOf[js.Any])
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
+    def setUpdate(value: SchemaDocument): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: SchemaDocumentTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setUpdateMask(value: SchemaDocumentMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     @scala.inline
-    def setUpdate(value: SchemaDocument): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: SchemaDocumentMask): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

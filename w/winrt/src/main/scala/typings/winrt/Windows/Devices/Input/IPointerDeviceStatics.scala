@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Devices.Input
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPointerDeviceStatics extends js.Object {
+trait IPointerDeviceStatics extends StObject {
   
   def getPointerDevice(pointerId: Double): PointerDevice = js.native
   
@@ -21,24 +22,12 @@ object IPointerDeviceStatics {
   }
   
   @scala.inline
-  implicit class IPointerDeviceStaticsOps[Self <: IPointerDeviceStatics] (val x: Self) extends AnyVal {
+  implicit class IPointerDeviceStaticsMutableBuilder[Self <: IPointerDeviceStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPointerDevice(value: Double => PointerDevice): Self = StObject.set(x, "getPointerDevice", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPointerDevice(value: Double => PointerDevice): Self = this.set("getPointerDevice", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPointerDevices(value: () => IVectorView[PointerDevice]): Self = this.set("getPointerDevices", js.Any.fromFunction0(value))
+    def setGetPointerDevices(value: () => IVectorView[PointerDevice]): Self = StObject.set(x, "getPointerDevices", js.Any.fromFunction0(value))
   }
 }

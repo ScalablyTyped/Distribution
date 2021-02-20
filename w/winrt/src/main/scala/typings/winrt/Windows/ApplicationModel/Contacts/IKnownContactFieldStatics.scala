@@ -1,11 +1,12 @@
 package typings.winrt.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKnownContactFieldStatics extends js.Object {
+trait IKnownContactFieldStatics extends StObject {
   
   def convertNameToType(name: String): ContactFieldType = js.native
   
@@ -35,36 +36,24 @@ object IKnownContactFieldStatics {
   }
   
   @scala.inline
-  implicit class IKnownContactFieldStaticsOps[Self <: IKnownContactFieldStatics] (val x: Self) extends AnyVal {
+  implicit class IKnownContactFieldStaticsMutableBuilder[Self <: IKnownContactFieldStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvertNameToType(value: String => ContactFieldType): Self = StObject.set(x, "convertNameToType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertTypeToName(value: ContactFieldType => String): Self = StObject.set(x, "convertTypeToName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertNameToType(value: String => ContactFieldType): Self = this.set("convertNameToType", js.Any.fromFunction1(value))
+    def setInstantMessage(value: String): Self = StObject.set(x, "instantMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertTypeToName(value: ContactFieldType => String): Self = this.set("convertTypeToName", js.Any.fromFunction1(value))
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstantMessage(value: String): Self = this.set("instantMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
   }
 }

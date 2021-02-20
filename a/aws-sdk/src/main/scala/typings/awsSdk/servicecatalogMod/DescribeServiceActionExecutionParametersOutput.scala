@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeServiceActionExecutionParametersOutput extends js.Object {
+trait DescribeServiceActionExecutionParametersOutput extends StObject {
   
   /**
     * The parameters of the self-service action.
@@ -21,27 +22,15 @@ object DescribeServiceActionExecutionParametersOutput {
   }
   
   @scala.inline
-  implicit class DescribeServiceActionExecutionParametersOutputOps[Self <: DescribeServiceActionExecutionParametersOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeServiceActionExecutionParametersOutputMutableBuilder[Self <: DescribeServiceActionExecutionParametersOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceActionParameters(value: ExecutionParameters): Self = StObject.set(x, "ServiceActionParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceActionParametersUndefined: Self = StObject.set(x, "ServiceActionParameters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setServiceActionParametersVarargs(value: ExecutionParameter*): Self = this.set("ServiceActionParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceActionParameters(value: ExecutionParameters): Self = this.set("ServiceActionParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceActionParameters: Self = this.set("ServiceActionParameters", js.undefined)
+    def setServiceActionParametersVarargs(value: ExecutionParameter*): Self = StObject.set(x, "ServiceActionParameters", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinimumOrderValueTable extends js.Object {
+trait MinimumOrderValueTable extends StObject {
   
   var storeCodeSetWithMovs: js.UndefOr[js.Array[MinimumOrderValueTableStoreCodeSetWithMov]] = js.native
 }
@@ -18,27 +19,15 @@ object MinimumOrderValueTable {
   }
   
   @scala.inline
-  implicit class MinimumOrderValueTableOps[Self <: MinimumOrderValueTable] (val x: Self) extends AnyVal {
+  implicit class MinimumOrderValueTableMutableBuilder[Self <: MinimumOrderValueTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStoreCodeSetWithMovs(value: js.Array[MinimumOrderValueTableStoreCodeSetWithMov]): Self = StObject.set(x, "storeCodeSetWithMovs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStoreCodeSetWithMovsUndefined: Self = StObject.set(x, "storeCodeSetWithMovs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStoreCodeSetWithMovsVarargs(value: MinimumOrderValueTableStoreCodeSetWithMov*): Self = this.set("storeCodeSetWithMovs", js.Array(value :_*))
-    
-    @scala.inline
-    def setStoreCodeSetWithMovs(value: js.Array[MinimumOrderValueTableStoreCodeSetWithMov]): Self = this.set("storeCodeSetWithMovs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreCodeSetWithMovs: Self = this.set("storeCodeSetWithMovs", js.undefined)
+    def setStoreCodeSetWithMovsVarargs(value: MinimumOrderValueTableStoreCodeSetWithMov*): Self = StObject.set(x, "storeCodeSetWithMovs", js.Array(value :_*))
   }
 }

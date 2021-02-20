@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskRunFilterCriteria extends js.Object {
+trait TaskRunFilterCriteria extends StObject {
   
   /**
     * Filter on task runs started after this date.
@@ -36,42 +37,30 @@ object TaskRunFilterCriteria {
   }
   
   @scala.inline
-  implicit class TaskRunFilterCriteriaOps[Self <: TaskRunFilterCriteria] (val x: Self) extends AnyVal {
+  implicit class TaskRunFilterCriteriaMutableBuilder[Self <: TaskRunFilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartedAfter(value: Timestamp): Self = StObject.set(x, "StartedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartedAfterUndefined: Self = StObject.set(x, "StartedAfter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartedBefore(value: Timestamp): Self = StObject.set(x, "StartedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedAfter(value: Timestamp): Self = this.set("StartedAfter", value.asInstanceOf[js.Any])
+    def setStartedBeforeUndefined: Self = StObject.set(x, "StartedBefore", js.undefined)
     
     @scala.inline
-    def deleteStartedAfter: Self = this.set("StartedAfter", js.undefined)
+    def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedBefore(value: Timestamp): Self = this.set("StartedBefore", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStartedBefore: Self = this.set("StartedBefore", js.undefined)
+    def setTaskRunType(value: TaskType): Self = StObject.set(x, "TaskRunType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TaskStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTaskRunType(value: TaskType): Self = this.set("TaskRunType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskRunType: Self = this.set("TaskRunType", js.undefined)
+    def setTaskRunTypeUndefined: Self = StObject.set(x, "TaskRunType", js.undefined)
   }
 }

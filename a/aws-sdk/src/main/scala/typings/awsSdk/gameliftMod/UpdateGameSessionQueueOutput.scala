@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateGameSessionQueueOutput extends js.Object {
+trait UpdateGameSessionQueueOutput extends StObject {
   
   /**
     * An object that describes the newly updated game session queue.
@@ -21,24 +22,12 @@ object UpdateGameSessionQueueOutput {
   }
   
   @scala.inline
-  implicit class UpdateGameSessionQueueOutputOps[Self <: UpdateGameSessionQueueOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateGameSessionQueueOutputMutableBuilder[Self <: UpdateGameSessionQueueOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSessionQueue(value: GameSessionQueue): Self = StObject.set(x, "GameSessionQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGameSessionQueue(value: GameSessionQueue): Self = this.set("GameSessionQueue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameSessionQueue: Self = this.set("GameSessionQueue", js.undefined)
+    def setGameSessionQueueUndefined: Self = StObject.set(x, "GameSessionQueue", js.undefined)
   }
 }

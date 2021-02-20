@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueueTransition extends js.Object {
+trait QueueTransition extends StObject {
   
   /**
     * The queue that the job was on after the transition.
@@ -31,36 +32,24 @@ object QueueTransition {
   }
   
   @scala.inline
-  implicit class QueueTransitionOps[Self <: QueueTransition] (val x: Self) extends AnyVal {
+  implicit class QueueTransitionMutableBuilder[Self <: QueueTransition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationQueue(value: string): Self = StObject.set(x, "DestinationQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationQueueUndefined: Self = StObject.set(x, "DestinationQueue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceQueue(value: string): Self = StObject.set(x, "SourceQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationQueue(value: string): Self = this.set("DestinationQueue", value.asInstanceOf[js.Any])
+    def setSourceQueueUndefined: Self = StObject.set(x, "SourceQueue", js.undefined)
     
     @scala.inline
-    def deleteDestinationQueue: Self = this.set("DestinationQueue", js.undefined)
+    def setTimestamp(value: timestampUnix): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceQueue(value: string): Self = this.set("SourceQueue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceQueue: Self = this.set("SourceQueue", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: timestampUnix): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

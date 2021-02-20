@@ -4,12 +4,13 @@ import typings.devextreme.anon.CloseIcon
 import typings.devextreme.devextremeStrings.filled
 import typings.devextreme.devextremeStrings.outlined
 import typings.devextreme.devextremeStrings.underlined
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait globalConfig extends js.Object {
+trait globalConfig extends StObject {
   
   /**
     * [descr:globalConfig.decimalSeparator]
@@ -77,84 +78,72 @@ object globalConfig {
   }
   
   @scala.inline
-  implicit class globalConfigOps[Self <: globalConfig] (val x: Self) extends AnyVal {
+  implicit class globalConfigMutableBuilder[Self <: globalConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultCurrency(value: String): Self = StObject.set(x, "defaultCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalSeparator(value: String): Self = this.set("decimalSeparator", value.asInstanceOf[js.Any])
+    def setDefaultCurrencyUndefined: Self = StObject.set(x, "defaultCurrency", js.undefined)
     
     @scala.inline
-    def deleteDecimalSeparator: Self = this.set("decimalSeparator", js.undefined)
+    def setEditorStylingMode(value: outlined | underlined | filled): Self = StObject.set(x, "editorStylingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCurrency(value: String): Self = this.set("defaultCurrency", value.asInstanceOf[js.Any])
+    def setEditorStylingModeUndefined: Self = StObject.set(x, "editorStylingMode", js.undefined)
     
     @scala.inline
-    def deleteDefaultCurrency: Self = this.set("defaultCurrency", js.undefined)
+    def setFloatingActionButtonConfig(value: CloseIcon): Self = StObject.set(x, "floatingActionButtonConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorStylingMode(value: outlined | underlined | filled): Self = this.set("editorStylingMode", value.asInstanceOf[js.Any])
+    def setFloatingActionButtonConfigUndefined: Self = StObject.set(x, "floatingActionButtonConfig", js.undefined)
     
     @scala.inline
-    def deleteEditorStylingMode: Self = this.set("editorStylingMode", js.undefined)
+    def setForceIsoDateParsing(value: Boolean): Self = StObject.set(x, "forceIsoDateParsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatingActionButtonConfig(value: CloseIcon): Self = this.set("floatingActionButtonConfig", value.asInstanceOf[js.Any])
+    def setForceIsoDateParsingUndefined: Self = StObject.set(x, "forceIsoDateParsing", js.undefined)
     
     @scala.inline
-    def deleteFloatingActionButtonConfig: Self = this.set("floatingActionButtonConfig", js.undefined)
+    def setODataFilterToLower(value: Boolean): Self = StObject.set(x, "oDataFilterToLower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceIsoDateParsing(value: Boolean): Self = this.set("forceIsoDateParsing", value.asInstanceOf[js.Any])
+    def setODataFilterToLowerUndefined: Self = StObject.set(x, "oDataFilterToLower", js.undefined)
     
     @scala.inline
-    def deleteForceIsoDateParsing: Self = this.set("forceIsoDateParsing", js.undefined)
+    def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setODataFilterToLower(value: Boolean): Self = this.set("oDataFilterToLower", value.asInstanceOf[js.Any])
+    def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
     
     @scala.inline
-    def deleteODataFilterToLower: Self = this.set("oDataFilterToLower", js.undefined)
+    def setServerDecimalSeparator(value: String): Self = StObject.set(x, "serverDecimalSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtlEnabled(value: Boolean): Self = this.set("rtlEnabled", value.asInstanceOf[js.Any])
+    def setServerDecimalSeparatorUndefined: Self = StObject.set(x, "serverDecimalSeparator", js.undefined)
     
     @scala.inline
-    def deleteRtlEnabled: Self = this.set("rtlEnabled", js.undefined)
+    def setThousandsSeparator(value: String): Self = StObject.set(x, "thousandsSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerDecimalSeparator(value: String): Self = this.set("serverDecimalSeparator", value.asInstanceOf[js.Any])
+    def setThousandsSeparatorUndefined: Self = StObject.set(x, "thousandsSeparator", js.undefined)
     
     @scala.inline
-    def deleteServerDecimalSeparator: Self = this.set("serverDecimalSeparator", js.undefined)
+    def setUseLegacyStoreResult(value: Boolean): Self = StObject.set(x, "useLegacyStoreResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThousandsSeparator(value: String): Self = this.set("thousandsSeparator", value.asInstanceOf[js.Any])
+    def setUseLegacyStoreResultUndefined: Self = StObject.set(x, "useLegacyStoreResult", js.undefined)
     
     @scala.inline
-    def deleteThousandsSeparator: Self = this.set("thousandsSeparator", js.undefined)
+    def setUseLegacyVisibleIndex(value: Boolean): Self = StObject.set(x, "useLegacyVisibleIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseLegacyStoreResult(value: Boolean): Self = this.set("useLegacyStoreResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLegacyStoreResult: Self = this.set("useLegacyStoreResult", js.undefined)
-    
-    @scala.inline
-    def setUseLegacyVisibleIndex(value: Boolean): Self = this.set("useLegacyVisibleIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLegacyVisibleIndex: Self = this.set("useLegacyVisibleIndex", js.undefined)
+    def setUseLegacyVisibleIndexUndefined: Self = StObject.set(x, "useLegacyVisibleIndex", js.undefined)
   }
 }

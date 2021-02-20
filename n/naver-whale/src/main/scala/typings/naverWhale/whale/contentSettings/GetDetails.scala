@@ -1,11 +1,12 @@
 package typings.naverWhale.whale.contentSettings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDetails extends js.Object {
+trait GetDetails extends StObject {
   
   /** Optional. Whether to check the content settings for an incognito session. (default false)  */
   var incognito: js.UndefOr[Boolean] = js.native
@@ -28,39 +29,27 @@ object GetDetails {
   }
   
   @scala.inline
-  implicit class GetDetailsOps[Self <: GetDetails] (val x: Self) extends AnyVal {
+  implicit class GetDetailsMutableBuilder[Self <: GetDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimaryUrl(value: String): Self = StObject.set(x, "primaryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryUrl(value: String): Self = this.set("primaryUrl", value.asInstanceOf[js.Any])
+    def setResourceIdentifier(value: typings.chrome.chrome.contentSettings.ResourceIdentifier): Self = StObject.set(x, "resourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncognito(value: Boolean): Self = this.set("incognito", value.asInstanceOf[js.Any])
+    def setResourceIdentifierUndefined: Self = StObject.set(x, "resourceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteIncognito: Self = this.set("incognito", js.undefined)
+    def setSecondaryUrl(value: String): Self = StObject.set(x, "secondaryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdentifier(value: typings.chrome.chrome.contentSettings.ResourceIdentifier): Self = this.set("resourceIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceIdentifier: Self = this.set("resourceIdentifier", js.undefined)
-    
-    @scala.inline
-    def setSecondaryUrl(value: String): Self = this.set("secondaryUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryUrl: Self = this.set("secondaryUrl", js.undefined)
+    def setSecondaryUrlUndefined: Self = StObject.set(x, "secondaryUrl", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportAssetToSignedUrlResponseDetails extends js.Object {
+trait ExportAssetToSignedUrlResponseDetails extends StObject {
   
   /**
     * The unique identifier for the asset associated with this export job.
@@ -41,39 +42,27 @@ object ExportAssetToSignedUrlResponseDetails {
   }
   
   @scala.inline
-  implicit class ExportAssetToSignedUrlResponseDetailsOps[Self <: ExportAssetToSignedUrlResponseDetails] (val x: Self) extends AnyVal {
+  implicit class ExportAssetToSignedUrlResponseDetailsMutableBuilder[Self <: ExportAssetToSignedUrlResponseDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: Id): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: Id): Self = this.set("AssetId", value.asInstanceOf[js.Any])
+    def setSignedUrl(value: string): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    def setSignedUrlExpiresAt(value: Timestamp): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    def setSignedUrlExpiresAtUndefined: Self = StObject.set(x, "SignedUrlExpiresAt", js.undefined)
     
     @scala.inline
-    def setSignedUrl(value: string): Self = this.set("SignedUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedUrl: Self = this.set("SignedUrl", js.undefined)
-    
-    @scala.inline
-    def setSignedUrlExpiresAt(value: Timestamp): Self = this.set("SignedUrlExpiresAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedUrlExpiresAt: Self = this.set("SignedUrlExpiresAt", js.undefined)
+    def setSignedUrlUndefined: Self = StObject.set(x, "SignedUrl", js.undefined)
   }
 }

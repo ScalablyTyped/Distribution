@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageEstimate extends js.Object {
+trait StorageEstimate extends StObject {
   
   var quota: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object StorageEstimate {
   }
   
   @scala.inline
-  implicit class StorageEstimateOps[Self <: StorageEstimate] (val x: Self) extends AnyVal {
+  implicit class StorageEstimateMutableBuilder[Self <: StorageEstimate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuotaUndefined: Self = StObject.set(x, "quota", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: Double): Self = this.set("quota", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuota: Self = this.set("quota", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: Double): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

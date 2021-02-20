@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestStatus extends js.Object {
+trait SuggestStatus extends StObject {
   
   /**
     * The encrypted resource ID for the request.
@@ -26,30 +27,18 @@ object SuggestStatus {
   }
   
   @scala.inline
-  implicit class SuggestStatusOps[Self <: SuggestStatus] (val x: Self) extends AnyVal {
+  implicit class SuggestStatusMutableBuilder[Self <: SuggestStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRidUndefined: Self = StObject.set(x, "rid", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimems(value: Long): Self = StObject.set(x, "timems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRid(value: String): Self = this.set("rid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRid: Self = this.set("rid", js.undefined)
-    
-    @scala.inline
-    def setTimems(value: Long): Self = this.set("timems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimems: Self = this.set("timems", js.undefined)
+    def setTimemsUndefined: Self = StObject.set(x, "timems", js.undefined)
   }
 }

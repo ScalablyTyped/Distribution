@@ -61,13 +61,14 @@ import typings.react.mod.Validator
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<antd.antd/lib/time-picker.TimePickerProps & react.react.RefAttributes<any>> */
 @js.native
-trait WeakValidationMapTimePick extends js.Object {
+trait WeakValidationMapTimePick extends StObject {
   
   var addon: js.UndefOr[Validator[js.UndefOr[js.Function0[ReactNode] | Null]]] = js.native
   
@@ -330,241 +331,229 @@ object WeakValidationMapTimePick {
   }
   
   @scala.inline
-  implicit class WeakValidationMapTimePickOps[Self <: WeakValidationMapTimePick] (val x: Self) extends AnyVal {
+  implicit class WeakValidationMapTimePickMutableBuilder[Self <: WeakValidationMapTimePick] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddon(value: Validator[js.UndefOr[js.Function0[ReactNode] | Null]]): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddonUndefined: Self = StObject.set(x, "addon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowClear(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddon(value: Validator[js.UndefOr[js.Function0[ReactNode] | Null]]): Self = this.set("addon", value.asInstanceOf[js.Any])
+    def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
     
     @scala.inline
-    def deleteAddon: Self = this.set("addon", js.undefined)
+    def `setAria-activedescendant`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowClear(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("allowClear", value.asInstanceOf[js.Any])
+    def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
     @scala.inline
-    def deleteAllowClear: Self = this.set("allowClear", js.undefined)
+    def `setAria-atomic`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-activedescendant`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
     @scala.inline
-    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    def `setAria-autocomplete`(value: Validator[js.UndefOr[none | `inline` | list | both | Null]]): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-atomic`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
     @scala.inline
-    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    def `setAria-busy`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-autocomplete`(value: Validator[js.UndefOr[none | `inline` | list | both | Null]]): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
     @scala.inline
-    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    def `setAria-checked`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-busy`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
     
     @scala.inline
-    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    def `setAria-colcount`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-checked`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
     
     @scala.inline
-    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    def `setAria-colindex`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-colcount`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
     
     @scala.inline
-    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    def `setAria-colspan`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-colindex`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
     
     @scala.inline
-    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    def `setAria-controls`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-colspan`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
     
     @scala.inline
-    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    def `setAria-current`(value: Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-controls`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
     
     @scala.inline
-    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    def `setAria-describedby`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-current`(value: Validator[js.UndefOr[page | step | location | date | time | Boolean | Null]]): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
     
     @scala.inline
-    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    def `setAria-details`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-describedby`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
     @scala.inline
-    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    def `setAria-disabled`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-details`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
     @scala.inline
-    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    def `setAria-dropeffect`(value: Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-disabled`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
     @scala.inline
-    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    def `setAria-errormessage`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-dropeffect`(value: Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
     @scala.inline
-    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    def `setAria-expanded`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-errormessage`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
     @scala.inline
-    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    def `setAria-flowto`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-expanded`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
     @scala.inline
-    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    def `setAria-grabbed`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-flowto`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
     @scala.inline
-    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    def `setAria-haspopup`(value: Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-grabbed`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
     @scala.inline
-    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    def `setAria-hidden`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-haspopup`(value: Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
     @scala.inline
-    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    def `setAria-invalid`(value: Validator[js.UndefOr[grammar | spelling | Boolean | Null]]): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-hidden`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
     
     @scala.inline
-    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    def `setAria-keyshortcuts`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-invalid`(value: Validator[js.UndefOr[grammar | spelling | Boolean | Null]]): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
     
     @scala.inline
-    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    def `setAria-label`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-keyshortcuts`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
     
     @scala.inline
-    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    def `setAria-labelledby`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-label`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
     
     @scala.inline
-    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    def `setAria-level`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-labelledby`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
     
     @scala.inline
-    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    def `setAria-live`(value: Validator[js.UndefOr[off | assertive | polite | Null]]): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-level`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
     @scala.inline
-    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    def `setAria-modal`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-live`(value: Validator[js.UndefOr[off | assertive | polite | Null]]): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
     @scala.inline
-    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    def `setAria-multiline`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-modal`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
     @scala.inline
-    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    def `setAria-multiselectable`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-multiline`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
     @scala.inline
-    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    def `setAria-orientation`(value: Validator[js.UndefOr[horizontal | vertical | Null]]): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-multiselectable`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
     
     @scala.inline
-    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    def `setAria-owns`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-orientation`(value: Validator[js.UndefOr[horizontal | vertical | Null]]): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
     
     @scala.inline
-    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    def `setAria-placeholder`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-owns`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
     
     @scala.inline
-    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    def `setAria-posinset`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-placeholder`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
     
     @scala.inline
-    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    def `setAria-pressed`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-posinset`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
     @scala.inline
-    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    def `setAria-readonly`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-pressed`(value: Validator[js.UndefOr[mixed | Boolean | Null]]): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
-    
-    @scala.inline
-    def `setAria-readonly`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     @scala.inline
     def `setAria-relevant`(
@@ -573,479 +562,479 @@ object WeakValidationMapTimePick {
             additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`) | Null
           ]
         ]
-    ): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
     @scala.inline
-    def `setAria-required`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    def `setAria-required`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
     @scala.inline
-    def `setAria-roledescription`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    def `setAria-roledescription`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
     
     @scala.inline
-    def `setAria-rowcount`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    def `setAria-rowcount`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
     
     @scala.inline
-    def `setAria-rowindex`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    def `setAria-rowindex`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
     
     @scala.inline
-    def `setAria-rowspan`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    def `setAria-rowspan`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
     @scala.inline
-    def `setAria-selected`(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    def `setAria-selected`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
     @scala.inline
-    def `setAria-setsize`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    def `setAria-setsize`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
     @scala.inline
-    def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other | Null]]): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other | Null]]): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
     @scala.inline
-    def `setAria-valuemax`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    def `setAria-valuemax`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
     
     @scala.inline
-    def `setAria-valuemin`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    def `setAria-valuemin`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
     
     @scala.inline
-    def `setAria-valuenow`(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    def `setAria-valuenow`(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
     
     @scala.inline
-    def `setAria-valuetext`(value: Validator[js.UndefOr[Null | String]]): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    def `setAria-valuetext`(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
     
     @scala.inline
-    def setAutoComplete(value: Validator[js.UndefOr[Null | String]]): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    def setAutoComplete(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
     @scala.inline
-    def setAutoFocus(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setAutoFocus(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def setBordered(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    def setBordered(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBordered: Self = this.set("bordered", js.undefined)
+    def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     
     @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setClearIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    def setClearIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
     @scala.inline
-    def setDateRender(value: Validator[js.UndefOr[DateRender[Moment] | Null]]): Self = this.set("dateRender", value.asInstanceOf[js.Any])
+    def setDateRender(value: Validator[js.UndefOr[DateRender[Moment] | Null]]): Self = StObject.set(x, "dateRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateRender: Self = this.set("dateRender", js.undefined)
+    def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
     
     @scala.inline
-    def setDefaultOpen(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("defaultOpen", value.asInstanceOf[js.Any])
+    def setDefaultOpen(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultOpen: Self = this.set("defaultOpen", js.undefined)
+    def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
     
     @scala.inline
-    def setDefaultOpenValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("defaultOpenValue", value.asInstanceOf[js.Any])
+    def setDefaultOpenValue(value: Validator[js.UndefOr[Moment | Null]]): Self = StObject.set(x, "defaultOpenValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultOpenValue: Self = this.set("defaultOpenValue", js.undefined)
+    def setDefaultOpenValueUndefined: Self = StObject.set(x, "defaultOpenValue", js.undefined)
     
     @scala.inline
-    def setDefaultPickerValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("defaultPickerValue", value.asInstanceOf[js.Any])
+    def setDefaultPickerValue(value: Validator[js.UndefOr[Moment | Null]]): Self = StObject.set(x, "defaultPickerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultPickerValue: Self = this.set("defaultPickerValue", js.undefined)
+    def setDefaultPickerValueUndefined: Self = StObject.set(x, "defaultPickerValue", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: Validator[js.UndefOr[Moment | Null]]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setDirection(value: Validator[js.UndefOr[ltr | rtl | Null]]): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDirection(value: Validator[js.UndefOr[ltr | rtl | Null]]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDisabled(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setDisabledDate(value: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Boolean]) | Null]]): Self = StObject.set(x, "disabledDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledDate(value: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Boolean]) | Null]]): Self = this.set("disabledDate", value.asInstanceOf[js.Any])
+    def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
     
     @scala.inline
-    def deleteDisabledDate: Self = this.set("disabledDate", js.undefined)
+    def setDisabledHours(value: Validator[js.UndefOr[js.Function0[js.Array[Double]] | Null]]): Self = StObject.set(x, "disabledHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledHours(value: Validator[js.UndefOr[js.Function0[js.Array[Double]] | Null]]): Self = this.set("disabledHours", value.asInstanceOf[js.Any])
+    def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
     
     @scala.inline
-    def deleteDisabledHours: Self = this.set("disabledHours", js.undefined)
+    def setDisabledMinutes(value: Validator[js.UndefOr[(js.Function1[/* hour */ Double, js.Array[Double]]) | Null]]): Self = StObject.set(x, "disabledMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledMinutes(value: Validator[js.UndefOr[(js.Function1[/* hour */ Double, js.Array[Double]]) | Null]]): Self = this.set("disabledMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabledMinutes: Self = this.set("disabledMinutes", js.undefined)
+    def setDisabledMinutesUndefined: Self = StObject.set(x, "disabledMinutes", js.undefined)
     
     @scala.inline
     def setDisabledSeconds(
       value: Validator[
           js.UndefOr[(js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]) | Null]
         ]
-    ): Self = this.set("disabledSeconds", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "disabledSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisabledSeconds: Self = this.set("disabledSeconds", js.undefined)
+    def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
     
     @scala.inline
-    def setDropdownAlign(value: Validator[js.UndefOr[AlignType | Null]]): Self = this.set("dropdownAlign", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDropdownAlign: Self = this.set("dropdownAlign", js.undefined)
+    def setDropdownAlign(value: Validator[js.UndefOr[AlignType | Null]]): Self = StObject.set(x, "dropdownAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropdownClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("dropdownClassName", value.asInstanceOf[js.Any])
+    def setDropdownAlignUndefined: Self = StObject.set(x, "dropdownAlign", js.undefined)
     
     @scala.inline
-    def deleteDropdownClassName: Self = this.set("dropdownClassName", js.undefined)
+    def setDropdownClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
     
     @scala.inline
     def setFormat(
       value: Validator[
           js.UndefOr[(js.Array[CustomFormat[Moment] | String]) | CustomFormat[Moment] | Null | String]
         ]
-    ): Self = this.set("format", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setGetPopupContainer(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, HTMLElement]) | Null]]): Self = this.set("getPopupContainer", value.asInstanceOf[js.Any])
+    def setGetPopupContainer(value: Validator[js.UndefOr[(js.Function1[/* node */ HTMLElement, HTMLElement]) | Null]]): Self = StObject.set(x, "getPopupContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
     
     @scala.inline
-    def setHideDisabledOptions(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("hideDisabledOptions", value.asInstanceOf[js.Any])
+    def setHideDisabledOptions(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "hideDisabledOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideDisabledOptions: Self = this.set("hideDisabledOptions", js.undefined)
+    def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
     
     @scala.inline
-    def setHourStep(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("hourStep", value.asInstanceOf[js.Any])
+    def setHourStep(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHourStep: Self = this.set("hourStep", js.undefined)
+    def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
     
     @scala.inline
-    def setId(value: Validator[js.UndefOr[Null | String]]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setInputReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("inputReadOnly", value.asInstanceOf[js.Any])
+    def setInputReadOnly(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "inputReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInputReadOnly: Self = this.set("inputReadOnly", js.undefined)
+    def setInputReadOnlyUndefined: Self = StObject.set(x, "inputReadOnly", js.undefined)
     
     @scala.inline
-    def setKey(value: Validator[js.UndefOr[typings.react.mod.Key | Null]]): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: Validator[js.UndefOr[typings.react.mod.Key | Null]]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setLocale(value: Validator[js.UndefOr[Null | PickerLocale]]): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLocale(value: Validator[js.UndefOr[Null | PickerLocale]]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setMinuteStep(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("minuteStep", value.asInstanceOf[js.Any])
+    def setMinuteStep(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinuteStep: Self = this.set("minuteStep", js.undefined)
+    def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
     
     @scala.inline
-    def setMode(value: Validator[js.UndefOr[Null | PanelMode]]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMode(value: Validator[js.UndefOr[Null | PanelMode]]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setMonthCellRender(value: Validator[js.UndefOr[MonthCellRender[Moment] | Null]]): Self = this.set("monthCellRender", value.asInstanceOf[js.Any])
+    def setMonthCellRender(value: Validator[js.UndefOr[MonthCellRender[Moment] | Null]]): Self = StObject.set(x, "monthCellRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMonthCellRender: Self = this.set("monthCellRender", js.undefined)
+    def setMonthCellRenderUndefined: Self = StObject.set(x, "monthCellRender", js.undefined)
     
     @scala.inline
-    def setName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    def setOnBlur(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnChange(value: Validator[js.UndefOr[(js.Function2[Moment | Null, /* dateString */ String, Unit]) | Null]]): Self = this.set("onChange", value.asInstanceOf[js.Any])
+    def setOnChange(value: Validator[js.UndefOr[(js.Function2[Moment | Null, /* dateString */ String, Unit]) | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    def setOnClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnContextMenu(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onContextMenu", value.asInstanceOf[js.Any])
+    def setOnContextMenu(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    def setOnFocus(value: Validator[js.UndefOr[FocusEventHandler[HTMLInputElement] | Null]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def setOnMouseDown(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseDown", value.asInstanceOf[js.Any])
+    def setOnMouseDown(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseEnter", value.asInstanceOf[js.Any])
+    def setOnMouseEnter(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseLeave", value.asInstanceOf[js.Any])
+    def setOnMouseLeave(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnMouseUp(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = this.set("onMouseUp", value.asInstanceOf[js.Any])
+    def setOnMouseUp(value: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def setOnOk(value: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Unit]) | Null]]): Self = this.set("onOk", value.asInstanceOf[js.Any])
+    def setOnOk(value: Validator[js.UndefOr[(js.Function1[/* date */ Moment, Unit]) | Null]]): Self = StObject.set(x, "onOk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
     
     @scala.inline
-    def setOnOpenChange(value: Validator[js.UndefOr[(js.Function1[/* open */ Boolean, Unit]) | Null]]): Self = this.set("onOpenChange", value.asInstanceOf[js.Any])
+    def setOnOpenChange(value: Validator[js.UndefOr[(js.Function1[/* open */ Boolean, Unit]) | Null]]): Self = StObject.set(x, "onOpenChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOpenChange: Self = this.set("onOpenChange", js.undefined)
+    def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
     
     @scala.inline
-    def setOnPanelChange(value: Validator[js.UndefOr[Null | OnPanelChange[Moment]]]): Self = this.set("onPanelChange", value.asInstanceOf[js.Any])
+    def setOnPanelChange(value: Validator[js.UndefOr[Null | OnPanelChange[Moment]]]): Self = StObject.set(x, "onPanelChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPanelChange: Self = this.set("onPanelChange", js.undefined)
+    def setOnPanelChangeUndefined: Self = StObject.set(x, "onPanelChange", js.undefined)
     
     @scala.inline
-    def setOnSelect(value: Validator[js.UndefOr[(js.Function1[/* value */ Moment, Unit]) | Null]]): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    def setOnSelect(value: Validator[js.UndefOr[(js.Function1[/* value */ Moment, Unit]) | Null]]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def setOpen(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOpen(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def setPanelRender(value: Validator[js.UndefOr[(js.Function1[/* originPanel */ ReactNode, ReactNode]) | Null]]): Self = this.set("panelRender", value.asInstanceOf[js.Any])
+    def setPanelRender(value: Validator[js.UndefOr[(js.Function1[/* originPanel */ ReactNode, ReactNode]) | Null]]): Self = StObject.set(x, "panelRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePanelRender: Self = this.set("panelRender", js.undefined)
+    def setPanelRenderUndefined: Self = StObject.set(x, "panelRender", js.undefined)
     
     @scala.inline
-    def setPickerRef(value: Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]]): Self = this.set("pickerRef", value.asInstanceOf[js.Any])
+    def setPickerRef(value: Validator[js.UndefOr[MutableRefObject[PickerRefConfig] | Null]]): Self = StObject.set(x, "pickerRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePickerRef: Self = this.set("pickerRef", js.undefined)
+    def setPickerRefUndefined: Self = StObject.set(x, "pickerRef", js.undefined)
     
     @scala.inline
-    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setPlaceholder(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def setPopupClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("popupClassName", value.asInstanceOf[js.Any])
+    def setPopupClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopupClassName: Self = this.set("popupClassName", js.undefined)
+    def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
     
     @scala.inline
-    def setPopupStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("popupStyle", value.asInstanceOf[js.Any])
+    def setPopupStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = StObject.set(x, "popupStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePopupStyle: Self = this.set("popupStyle", js.undefined)
+    def setPopupStyleUndefined: Self = StObject.set(x, "popupStyle", js.undefined)
     
     @scala.inline
-    def setPrefixCls(value: Validator[js.UndefOr[Null | String]]): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    def setPrefixCls(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def setRef(value: Validator[js.UndefOr[Null | typings.react.mod.Ref[_]]]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRef(value: Validator[js.UndefOr[Null | typings.react.mod.Ref[_]]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRef: Self = this.set("ref", js.undefined)
+    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setRenderExtraFooter(value: Validator[js.UndefOr[(js.Function1[/* mode */ PanelMode, ReactNode]) | Null]]): Self = this.set("renderExtraFooter", value.asInstanceOf[js.Any])
+    def setRenderExtraFooter(value: Validator[js.UndefOr[(js.Function1[/* mode */ PanelMode, ReactNode]) | Null]]): Self = StObject.set(x, "renderExtraFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderExtraFooter: Self = this.set("renderExtraFooter", js.undefined)
+    def setRenderExtraFooterUndefined: Self = StObject.set(x, "renderExtraFooter", js.undefined)
     
     @scala.inline
-    def setRole(value: Validator[js.UndefOr[Null | String]]): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setRole(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def setSecondStep(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("secondStep", value.asInstanceOf[js.Any])
+    def setSecondStep(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecondStep: Self = this.set("secondStep", js.undefined)
+    def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
     
     @scala.inline
-    def setShowHour(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showHour", value.asInstanceOf[js.Any])
+    def setShowHour(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "showHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowHour: Self = this.set("showHour", js.undefined)
+    def setShowHourUndefined: Self = StObject.set(x, "showHour", js.undefined)
     
     @scala.inline
-    def setShowMinute(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showMinute", value.asInstanceOf[js.Any])
+    def setShowMinute(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "showMinute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowMinute: Self = this.set("showMinute", js.undefined)
+    def setShowMinuteUndefined: Self = StObject.set(x, "showMinute", js.undefined)
     
     @scala.inline
-    def setShowNow(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showNow", value.asInstanceOf[js.Any])
+    def setShowNow(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "showNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowNow: Self = this.set("showNow", js.undefined)
+    def setShowNowUndefined: Self = StObject.set(x, "showNow", js.undefined)
     
     @scala.inline
-    def setShowSecond(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("showSecond", value.asInstanceOf[js.Any])
+    def setShowSecond(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "showSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowSecond: Self = this.set("showSecond", js.undefined)
+    def setShowSecondUndefined: Self = StObject.set(x, "showSecond", js.undefined)
     
     @scala.inline
-    def setSize(value: Validator[js.UndefOr[Null | SizeType]]): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Validator[js.UndefOr[Null | SizeType]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setSuffixIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("suffixIcon", value.asInstanceOf[js.Any])
+    def setSuffixIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuffixIcon: Self = this.set("suffixIcon", js.undefined)
+    def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
     
     @scala.inline
-    def setTabIndex(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setTabIndex(value: Validator[js.UndefOr[Double | Null]]): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     @scala.inline
-    def setTransitionName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    def setTransitionName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
     
     @scala.inline
-    def setUse12Hours(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("use12Hours", value.asInstanceOf[js.Any])
+    def setUse12Hours(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUse12Hours: Self = this.set("use12Hours", js.undefined)
+    def setUse12HoursUndefined: Self = StObject.set(x, "use12Hours", js.undefined)
     
     @scala.inline
-    def setValue(value: Validator[js.UndefOr[Moment | Null]]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Validator[js.UndefOr[Moment | Null]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

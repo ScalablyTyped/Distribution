@@ -17,12 +17,13 @@ import typings.aliApp.aliAppStrings.square
 import typings.aliApp.aliAppStrings.start
 import typings.aliApp.aliAppStrings.top
 import typings.aliApp.anon.PartialToTempFilePathOpti
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConvasContext extends js.Object {
+trait ConvasContext extends StObject {
   
   /**
     * 画一条弧线。

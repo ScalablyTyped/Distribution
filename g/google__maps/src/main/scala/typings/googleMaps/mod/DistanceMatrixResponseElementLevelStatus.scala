@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.ZERO_RESULTS
   - typings.googleMaps.googleMapsStrings.MAX_ROUTE_LENGTH_EXCEEDED
 */
-trait DistanceMatrixResponseElementLevelStatus extends js.Object
+trait DistanceMatrixResponseElementLevelStatus extends StObject
 object DistanceMatrixResponseElementLevelStatus {
   
   @scala.inline

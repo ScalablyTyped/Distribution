@@ -5,6 +5,7 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BUBBLE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.CANDLE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.LINE
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SCATTER
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,51 +32,39 @@ object CombinedChartProps {
   }
   
   @scala.inline
-  implicit class CombinedChartPropsOps[Self <: CombinedChartProps] (val x: Self) extends AnyVal {
+  implicit class CombinedChartPropsMutableBuilder[Self <: CombinedChartProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: CombinedData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawBarShadow(value: Boolean): Self = StObject.set(x, "drawBarShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: CombinedData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDrawBarShadowUndefined: Self = StObject.set(x, "drawBarShadow", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDrawOrder(value: js.Array[BAR | BUBBLE | LINE | CANDLE | SCATTER]): Self = StObject.set(x, "drawOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBarShadow(value: Boolean): Self = this.set("drawBarShadow", value.asInstanceOf[js.Any])
+    def setDrawOrderUndefined: Self = StObject.set(x, "drawOrder", js.undefined)
     
     @scala.inline
-    def deleteDrawBarShadow: Self = this.set("drawBarShadow", js.undefined)
+    def setDrawOrderVarargs(value: (BAR | BUBBLE | LINE | CANDLE | SCATTER)*): Self = StObject.set(x, "drawOrder", js.Array(value :_*))
     
     @scala.inline
-    def setDrawOrderVarargs(value: (BAR | BUBBLE | LINE | CANDLE | SCATTER)*): Self = this.set("drawOrder", js.Array(value :_*))
+    def setDrawValueAboveBar(value: Boolean): Self = StObject.set(x, "drawValueAboveBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawOrder(value: js.Array[BAR | BUBBLE | LINE | CANDLE | SCATTER]): Self = this.set("drawOrder", value.asInstanceOf[js.Any])
+    def setDrawValueAboveBarUndefined: Self = StObject.set(x, "drawValueAboveBar", js.undefined)
     
     @scala.inline
-    def deleteDrawOrder: Self = this.set("drawOrder", js.undefined)
+    def setHighlightFullBarEnabled(value: Boolean): Self = StObject.set(x, "highlightFullBarEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawValueAboveBar(value: Boolean): Self = this.set("drawValueAboveBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDrawValueAboveBar: Self = this.set("drawValueAboveBar", js.undefined)
-    
-    @scala.inline
-    def setHighlightFullBarEnabled(value: Boolean): Self = this.set("highlightFullBarEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlightFullBarEnabled: Self = this.set("highlightFullBarEnabled", js.undefined)
+    def setHighlightFullBarEnabledUndefined: Self = StObject.set(x, "highlightFullBarEnabled", js.undefined)
   }
 }

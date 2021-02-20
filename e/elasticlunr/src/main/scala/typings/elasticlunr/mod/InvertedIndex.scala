@@ -1,12 +1,13 @@
 package typings.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "InvertedIndex")
 @js.native
-class InvertedIndex () extends js.Object {
+class InvertedIndex () extends StObject {
   
   def addToken(token: String, tokenInfo: TokenInfo): Unit = js.native
   def addToken(token: String, tokenInfo: TokenInfo, root: InvertedIndexNode): Unit = js.native
@@ -32,10 +33,10 @@ class InvertedIndex () extends js.Object {
   
   def toJSON(): SerialisedInvertedIndex = js.native
 }
-/* static members */
-@JSImport("elasticlunr", "InvertedIndex")
-@js.native
-object InvertedIndex extends js.Object {
+object InvertedIndex {
   
+  /* static member */
+  @JSImport("elasticlunr", "InvertedIndex.load")
+  @js.native
   def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = js.native
 }

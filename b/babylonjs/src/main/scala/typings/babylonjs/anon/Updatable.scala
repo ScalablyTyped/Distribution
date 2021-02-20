@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Updatable extends js.Object {
+trait Updatable extends StObject {
   
   var precision: js.UndefOr[H] = js.native
   
@@ -30,48 +31,36 @@ object Updatable {
   }
   
   @scala.inline
-  implicit class UpdatableOps[Self <: Updatable] (val x: Self) extends AnyVal {
+  implicit class UpdatableMutableBuilder[Self <: Updatable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrecision(value: H): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubdivisions(value: H): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXmax(value: Double): Self = this.set("xmax", value.asInstanceOf[js.Any])
+    def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
     
     @scala.inline
-    def setXmin(value: Double): Self = this.set("xmin", value.asInstanceOf[js.Any])
+    def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZmax(value: Double): Self = this.set("zmax", value.asInstanceOf[js.Any])
+    def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     @scala.inline
-    def setZmin(value: Double): Self = this.set("zmin", value.asInstanceOf[js.Any])
+    def setXmax(value: Double): Self = StObject.set(x, "xmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: H): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setXmin(value: Double): Self = StObject.set(x, "xmin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setZmax(value: Double): Self = StObject.set(x, "zmax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdivisions(value: H): Self = this.set("subdivisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdivisions: Self = this.set("subdivisions", js.undefined)
-    
-    @scala.inline
-    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatable: Self = this.set("updatable", js.undefined)
+    def setZmin(value: Double): Self = StObject.set(x, "zmin", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Company extends js.Object {
+trait Company extends StObject {
   
   /** Optional. The URI to employer's career site or careers page on the employer's web site, for example, "https://careers.google.com". */
   var careerSiteUri: js.UndefOr[String] = js.native
@@ -68,99 +69,87 @@ object Company {
   }
   
   @scala.inline
-  implicit class CompanyOps[Self <: Company] (val x: Self) extends AnyVal {
+  implicit class CompanyMutableBuilder[Self <: Company] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCareerSiteUri(value: String): Self = StObject.set(x, "careerSiteUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCareerSiteUriUndefined: Self = StObject.set(x, "careerSiteUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDerivedInfo(value: CompanyDerivedInfo): Self = StObject.set(x, "derivedInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCareerSiteUri(value: String): Self = this.set("careerSiteUri", value.asInstanceOf[js.Any])
+    def setDerivedInfoUndefined: Self = StObject.set(x, "derivedInfo", js.undefined)
     
     @scala.inline
-    def deleteCareerSiteUri: Self = this.set("careerSiteUri", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDerivedInfo(value: CompanyDerivedInfo): Self = this.set("derivedInfo", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDerivedInfo: Self = this.set("derivedInfo", js.undefined)
+    def setEeoText(value: String): Self = StObject.set(x, "eeoText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEeoTextUndefined: Self = StObject.set(x, "eeoText", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEeoText(value: String): Self = this.set("eeoText", value.asInstanceOf[js.Any])
+    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
     @scala.inline
-    def deleteEeoText: Self = this.set("eeoText", js.undefined)
+    def setHeadquartersAddress(value: String): Self = StObject.set(x, "headquartersAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    def setHeadquartersAddressUndefined: Self = StObject.set(x, "headquartersAddress", js.undefined)
     
     @scala.inline
-    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    def setHiringAgency(value: Boolean): Self = StObject.set(x, "hiringAgency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadquartersAddress(value: String): Self = this.set("headquartersAddress", value.asInstanceOf[js.Any])
+    def setHiringAgencyUndefined: Self = StObject.set(x, "hiringAgency", js.undefined)
     
     @scala.inline
-    def deleteHeadquartersAddress: Self = this.set("headquartersAddress", js.undefined)
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHiringAgency(value: Boolean): Self = this.set("hiringAgency", value.asInstanceOf[js.Any])
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
     @scala.inline
-    def deleteHiringAgency: Self = this.set("hiringAgency", js.undefined)
+    def setKeywordSearchableJobCustomAttributes(value: js.Array[String]): Self = StObject.set(x, "keywordSearchableJobCustomAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    def setKeywordSearchableJobCustomAttributesUndefined: Self = StObject.set(x, "keywordSearchableJobCustomAttributes", js.undefined)
     
     @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    def setKeywordSearchableJobCustomAttributesVarargs(value: String*): Self = StObject.set(x, "keywordSearchableJobCustomAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setKeywordSearchableJobCustomAttributesVarargs(value: String*): Self = this.set("keywordSearchableJobCustomAttributes", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywordSearchableJobCustomAttributes(value: js.Array[String]): Self = this.set("keywordSearchableJobCustomAttributes", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeywordSearchableJobCustomAttributes: Self = this.set("keywordSearchableJobCustomAttributes", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setWebsiteUri(value: String): Self = StObject.set(x, "websiteUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspended(value: Boolean): Self = this.set("suspended", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuspended: Self = this.set("suspended", js.undefined)
-    
-    @scala.inline
-    def setWebsiteUri(value: String): Self = this.set("websiteUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteUri: Self = this.set("websiteUri", js.undefined)
+    def setWebsiteUriUndefined: Self = StObject.set(x, "websiteUri", js.undefined)
   }
 }

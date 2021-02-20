@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Node.typesPutBucketReplicationInputMod.PutBucketRep
 import typings.awsSdkClientS3Node.typesPutBucketReplicationOutputMod.PutBucketReplicationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/PutBucketReplicationCommand", JSImport.Namespace)
-@js.native
-object putBucketReplicationCommandMod extends js.Object {
+object putBucketReplicationCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/PutBucketReplicationCommand", "PutBucketReplicationCommand")
   @js.native
   class PutBucketReplicationCommand protected () extends Command[
           InputTypesUnion, 

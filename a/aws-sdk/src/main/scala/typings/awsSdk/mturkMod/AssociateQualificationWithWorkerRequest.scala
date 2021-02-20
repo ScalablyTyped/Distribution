@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateQualificationWithWorkerRequest extends js.Object {
+trait AssociateQualificationWithWorkerRequest extends StObject {
   
   /**
     * The value of the Qualification to assign.
@@ -36,36 +37,24 @@ object AssociateQualificationWithWorkerRequest {
   }
   
   @scala.inline
-  implicit class AssociateQualificationWithWorkerRequestOps[Self <: AssociateQualificationWithWorkerRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateQualificationWithWorkerRequestMutableBuilder[Self <: AssociateQualificationWithWorkerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntegerValueUndefined: Self = StObject.set(x, "IntegerValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    def setSendNotification(value: Boolean): Self = StObject.set(x, "SendNotification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerId(value: CustomerId): Self = this.set("WorkerId", value.asInstanceOf[js.Any])
+    def setSendNotificationUndefined: Self = StObject.set(x, "SendNotification", js.undefined)
     
     @scala.inline
-    def setIntegerValue(value: Integer): Self = this.set("IntegerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegerValue: Self = this.set("IntegerValue", js.undefined)
-    
-    @scala.inline
-    def setSendNotification(value: Boolean): Self = this.set("SendNotification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendNotification: Self = this.set("SendNotification", js.undefined)
+    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.ApplicationModel.VoiceCommands
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The command given to Cortana, using either speech or text, and routed to a background app. */
 @js.native
-trait VoiceCommand extends js.Object {
+trait VoiceCommand extends StObject {
   
   /** Gets the value of the Name attribute for the Command element declared in the Voice Command Definition (VCD) file. */
   var commandName: String = js.native
@@ -33,27 +34,15 @@ object VoiceCommand {
   }
   
   @scala.inline
-  implicit class VoiceCommandOps[Self <: VoiceCommand] (val x: Self) extends AnyVal {
+  implicit class VoiceCommandMutableBuilder[Self <: VoiceCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperties(value: IMapView[String, IVectorView[_]]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommandName(value: String): Self = this.set("commandName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: IMapView[String, IVectorView[_]]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeechRecognitionResult(value: SpeechRecognitionResult): Self = this.set("speechRecognitionResult", value.asInstanceOf[js.Any])
+    def setSpeechRecognitionResult(value: SpeechRecognitionResult): Self = StObject.set(x, "speechRecognitionResult", value.asInstanceOf[js.Any])
   }
 }

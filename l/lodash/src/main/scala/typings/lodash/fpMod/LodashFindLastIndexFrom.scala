@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.List
 import typings.lodash.mod.ValueIterateeCustom
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFindLastIndexFrom extends js.Object {
+trait LodashFindLastIndexFrom extends StObject {
   
   def apply(predicate: __, fromIndex: Double): LodashFindLastIndexFrom1x2 = js.native
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): LodashFindLastIndexFrom1x1[T] = js.native

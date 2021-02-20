@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MsSmoothOutputSettings extends js.Object {
+trait MsSmoothOutputSettings extends StObject {
   
   /**
     * Only applicable when this output is referencing an H.265 video description.
@@ -27,30 +28,18 @@ object MsSmoothOutputSettings {
   }
   
   @scala.inline
-  implicit class MsSmoothOutputSettingsOps[Self <: MsSmoothOutputSettings] (val x: Self) extends AnyVal {
+  implicit class MsSmoothOutputSettingsMutableBuilder[Self <: MsSmoothOutputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setH265PackagingType(value: MsSmoothH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setH265PackagingTypeUndefined: Self = StObject.set(x, "H265PackagingType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameModifier(value: string): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH265PackagingType(value: MsSmoothH265PackagingType): Self = this.set("H265PackagingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteH265PackagingType: Self = this.set("H265PackagingType", js.undefined)
-    
-    @scala.inline
-    def setNameModifier(value: string): Self = this.set("NameModifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNameModifier: Self = this.set("NameModifier", js.undefined)
+    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
   }
 }

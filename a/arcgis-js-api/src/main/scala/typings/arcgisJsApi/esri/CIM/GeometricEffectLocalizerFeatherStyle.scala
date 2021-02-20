@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeometricEffectLocalizerFeatherStyle extends js.Object
+sealed trait GeometricEffectLocalizerFeatherStyle extends StObject
 @JSGlobal("__esri.CIM.GeometricEffectLocalizerFeatherStyle")
 @js.native
-object GeometricEffectLocalizerFeatherStyle extends js.Object {
+object GeometricEffectLocalizerFeatherStyle extends StObject {
   
   /**
     * Displays a complete localizer feather.

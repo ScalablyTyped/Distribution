@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallFunctionOnRequest extends js.Object {
+trait CallFunctionOnRequest extends StObject {
   
   /**
     * Call arguments. All call arguments must belong to the same JavaScript world as the target
@@ -72,78 +73,66 @@ object CallFunctionOnRequest {
   }
   
   @scala.inline
-  implicit class CallFunctionOnRequestOps[Self <: CallFunctionOnRequest] (val x: Self) extends AnyVal {
+  implicit class CallFunctionOnRequestMutableBuilder[Self <: CallFunctionOnRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: js.Array[CallArgument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgumentsVarargs(value: CallArgument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionDeclaration(value: String): Self = this.set("functionDeclaration", value.asInstanceOf[js.Any])
+    def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgumentsVarargs(value: CallArgument*): Self = this.set("arguments", js.Array(value :_*))
+    def setAwaitPromiseUndefined: Self = StObject.set(x, "awaitPromise", js.undefined)
     
     @scala.inline
-    def setArguments(value: js.Array[CallArgument]): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArguments: Self = this.set("arguments", js.undefined)
+    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
     
     @scala.inline
-    def setAwaitPromise(value: Boolean): Self = this.set("awaitPromise", value.asInstanceOf[js.Any])
+    def setFunctionDeclaration(value: String): Self = StObject.set(x, "functionDeclaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAwaitPromise: Self = this.set("awaitPromise", js.undefined)
+    def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = this.set("executionContextId", value.asInstanceOf[js.Any])
+    def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
     
     @scala.inline
-    def deleteExecutionContextId: Self = this.set("executionContextId", js.undefined)
+    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratePreview(value: Boolean): Self = this.set("generatePreview", value.asInstanceOf[js.Any])
+    def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
     
     @scala.inline
-    def deleteGeneratePreview: Self = this.set("generatePreview", js.undefined)
+    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectGroup(value: String): Self = this.set("objectGroup", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteObjectGroup: Self = this.set("objectGroup", js.undefined)
+    def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnByValue(value: Boolean): Self = this.set("returnByValue", value.asInstanceOf[js.Any])
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def deleteReturnByValue: Self = this.set("returnByValue", js.undefined)
+    def setUserGesture(value: Boolean): Self = StObject.set(x, "userGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
-    
-    @scala.inline
-    def setUserGesture(value: Boolean): Self = this.set("userGesture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserGesture: Self = this.set("userGesture", js.undefined)
+    def setUserGestureUndefined: Self = StObject.set(x, "userGesture", js.undefined)
   }
 }

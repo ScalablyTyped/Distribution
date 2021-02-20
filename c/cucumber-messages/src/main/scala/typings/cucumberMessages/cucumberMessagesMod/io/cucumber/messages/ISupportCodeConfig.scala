@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SupportCodeConfig. */
 @js.native
-trait ISupportCodeConfig extends js.Object {
+trait ISupportCodeConfig extends StObject {
   
   /** SupportCodeConfig afterTestCaseHooks */
   var afterTestCaseHooks: js.UndefOr[js.Array[IHook] | Null] = js.native
@@ -29,66 +30,54 @@ object ISupportCodeConfig {
   }
   
   @scala.inline
-  implicit class ISupportCodeConfigOps[Self <: ISupportCodeConfig] (val x: Self) extends AnyVal {
+  implicit class ISupportCodeConfigMutableBuilder[Self <: ISupportCodeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterTestCaseHooks(value: js.Array[IHook]): Self = StObject.set(x, "afterTestCaseHooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterTestCaseHooksNull: Self = StObject.set(x, "afterTestCaseHooks", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAfterTestCaseHooksUndefined: Self = StObject.set(x, "afterTestCaseHooks", js.undefined)
     
     @scala.inline
-    def setAfterTestCaseHooksVarargs(value: IHook*): Self = this.set("afterTestCaseHooks", js.Array(value :_*))
+    def setAfterTestCaseHooksVarargs(value: IHook*): Self = StObject.set(x, "afterTestCaseHooks", js.Array(value :_*))
     
     @scala.inline
-    def setAfterTestCaseHooks(value: js.Array[IHook]): Self = this.set("afterTestCaseHooks", value.asInstanceOf[js.Any])
+    def setBeforeTestCaseHooks(value: js.Array[IHook]): Self = StObject.set(x, "beforeTestCaseHooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAfterTestCaseHooks: Self = this.set("afterTestCaseHooks", js.undefined)
+    def setBeforeTestCaseHooksNull: Self = StObject.set(x, "beforeTestCaseHooks", null)
     
     @scala.inline
-    def setAfterTestCaseHooksNull: Self = this.set("afterTestCaseHooks", null)
+    def setBeforeTestCaseHooksUndefined: Self = StObject.set(x, "beforeTestCaseHooks", js.undefined)
     
     @scala.inline
-    def setBeforeTestCaseHooksVarargs(value: IHook*): Self = this.set("beforeTestCaseHooks", js.Array(value :_*))
+    def setBeforeTestCaseHooksVarargs(value: IHook*): Self = StObject.set(x, "beforeTestCaseHooks", js.Array(value :_*))
     
     @scala.inline
-    def setBeforeTestCaseHooks(value: js.Array[IHook]): Self = this.set("beforeTestCaseHooks", value.asInstanceOf[js.Any])
+    def setParameterTypes(value: js.Array[IParameterType]): Self = StObject.set(x, "parameterTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeforeTestCaseHooks: Self = this.set("beforeTestCaseHooks", js.undefined)
+    def setParameterTypesNull: Self = StObject.set(x, "parameterTypes", null)
     
     @scala.inline
-    def setBeforeTestCaseHooksNull: Self = this.set("beforeTestCaseHooks", null)
+    def setParameterTypesUndefined: Self = StObject.set(x, "parameterTypes", js.undefined)
     
     @scala.inline
-    def setParameterTypesVarargs(value: IParameterType*): Self = this.set("parameterTypes", js.Array(value :_*))
+    def setParameterTypesVarargs(value: IParameterType*): Self = StObject.set(x, "parameterTypes", js.Array(value :_*))
     
     @scala.inline
-    def setParameterTypes(value: js.Array[IParameterType]): Self = this.set("parameterTypes", value.asInstanceOf[js.Any])
+    def setStepDefinitions(value: js.Array[IStepDefinition]): Self = StObject.set(x, "stepDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameterTypes: Self = this.set("parameterTypes", js.undefined)
+    def setStepDefinitionsNull: Self = StObject.set(x, "stepDefinitions", null)
     
     @scala.inline
-    def setParameterTypesNull: Self = this.set("parameterTypes", null)
+    def setStepDefinitionsUndefined: Self = StObject.set(x, "stepDefinitions", js.undefined)
     
     @scala.inline
-    def setStepDefinitionsVarargs(value: IStepDefinition*): Self = this.set("stepDefinitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setStepDefinitions(value: js.Array[IStepDefinition]): Self = this.set("stepDefinitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepDefinitions: Self = this.set("stepDefinitions", js.undefined)
-    
-    @scala.inline
-    def setStepDefinitionsNull: Self = this.set("stepDefinitions", null)
+    def setStepDefinitionsVarargs(value: IStepDefinition*): Self = StObject.set(x, "stepDefinitions", js.Array(value :_*))
   }
 }

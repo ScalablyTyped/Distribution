@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the constants that indicate the cash drawer power status. */
 @JSGlobal("Windows.Devices.PointOfService.CashDrawerStatusKind")
 @js.native
-object CashDrawerStatusKind extends js.Object {
+object CashDrawerStatusKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.PointOfService.CashDrawerStatusKind with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryHighlightsTrayResponseCoverMedia extends js.Object {
+trait HighlightsRepositoryHighlightsTrayResponseCoverMedia extends StObject {
   
   var crop_rect: js.Array[Double | String] = js.native
   
@@ -26,30 +27,18 @@ object HighlightsRepositoryHighlightsTrayResponseCoverMedia {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseCoverMediaOps[Self <: HighlightsRepositoryHighlightsTrayResponseCoverMedia] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryHighlightsTrayResponseCoverMediaMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseCoverMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrop_rect(value: js.Array[Double | String]): Self = StObject.set(x, "crop_rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrop_rectVarargs(value: (Double | String)*): Self = StObject.set(x, "crop_rect", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCropped_image_version(value: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion): Self = StObject.set(x, "cropped_image_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop_rectVarargs(value: (Double | String)*): Self = this.set("crop_rect", js.Array(value :_*))
-    
-    @scala.inline
-    def setCrop_rect(value: js.Array[Double | String]): Self = this.set("crop_rect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCropped_image_version(value: HighlightsRepositoryHighlightsTrayResponseCroppedImageVersion): Self = this.set("cropped_image_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedia_id(value: String): Self = this.set("media_id", value.asInstanceOf[js.Any])
+    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
   }
 }

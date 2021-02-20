@@ -87,12 +87,13 @@ import typings.std.stdStrings.transitionstart
 import typings.std.stdStrings.volumechange
 import typings.std.stdStrings.waiting
 import typings.std.stdStrings.wheel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalEventHandlers extends js.Object {
+trait GlobalEventHandlers extends StObject {
   
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native

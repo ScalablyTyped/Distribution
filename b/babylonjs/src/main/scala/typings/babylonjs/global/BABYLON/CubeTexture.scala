@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,9 +51,7 @@ class CubeTexture protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.CubeTexture")
-@js.native
-object CubeTexture extends js.Object {
+object CubeTexture {
   
   /**
     * Creates a cube texture from an array of image urls
@@ -61,7 +60,11 @@ object CubeTexture extends js.Object {
     * @param noMipmap specifies if mip maps are not used
     * @returns a cube texture
     */
+  @JSGlobal("BABYLON.CubeTexture.CreateFromImages")
+  @js.native
   def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.CubeTexture = js.native
+  @JSGlobal("BABYLON.CubeTexture.CreateFromImages")
+  @js.native
   def CreateFromImages(files: js.Array[String], scene: typings.babylonjs.BABYLON.Scene, noMipmap: Boolean): typings.babylonjs.BABYLON.CubeTexture = js.native
   
   /**
@@ -72,14 +75,22 @@ object CubeTexture extends js.Object {
     * @param createPolynomials defines whether or not to create polynomial harmonics from the texture data if necessary
     * @return the prefiltered texture
     */
+  @JSGlobal("BABYLON.CubeTexture.CreateFromPrefilteredData")
+  @js.native
   def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.CubeTexture = js.native
+  @JSGlobal("BABYLON.CubeTexture.CreateFromPrefilteredData")
+  @js.native
   def CreateFromPrefilteredData(
     url: String,
     scene: typings.babylonjs.BABYLON.Scene,
     forcedExtension: js.UndefOr[scala.Nothing],
     createPolynomials: Boolean
   ): typings.babylonjs.BABYLON.CubeTexture = js.native
+  @JSGlobal("BABYLON.CubeTexture.CreateFromPrefilteredData")
+  @js.native
   def CreateFromPrefilteredData(url: String, scene: typings.babylonjs.BABYLON.Scene, forcedExtension: js.Any): typings.babylonjs.BABYLON.CubeTexture = js.native
+  @JSGlobal("BABYLON.CubeTexture.CreateFromPrefilteredData")
+  @js.native
   def CreateFromPrefilteredData(
     url: String,
     scene: typings.babylonjs.BABYLON.Scene,
@@ -94,5 +105,7 @@ object CubeTexture extends js.Object {
     * @param rootUrl defines the root url of the cube texture
     * @returns a cube texture
     */
+  @JSGlobal("BABYLON.CubeTexture.Parse")
+  @js.native
   def Parse(parsedTexture: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.CubeTexture = js.native
 }

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientTagmanager.anon.Uploadprotocol
 import typings.maximMazurokGapiClientTagmanager.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagsResource extends js.Object {
+trait TagsResource extends StObject {
   
   def create(request: Alt, body: Tag): Request[Tag] = js.native
   /** Creates a GTM Tag. */

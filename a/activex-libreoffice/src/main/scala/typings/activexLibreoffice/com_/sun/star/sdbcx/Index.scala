@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,33 +67,21 @@ object Index {
   }
   
   @scala.inline
-  implicit class IndexOps[Self <: Index] (val x: Self) extends AnyVal {
+  implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: String): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsClustered(value: Boolean): Self = StObject.set(x, "IsClustered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPrimaryKeyIndex(value: Boolean): Self = StObject.set(x, "IsPrimaryKeyIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: String): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    def setIsUnique(value: Boolean): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClustered(value: Boolean): Self = this.set("IsClustered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsPrimaryKeyIndex(value: Boolean): Self = this.set("IsPrimaryKeyIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUnique(value: Boolean): Self = this.set("IsUnique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientCheckBoxList ()
   extends typings.devexpressWeb.ASPxClientCheckBoxList
-/* static members */
-@JSGlobal("ASPxClientCheckBoxList")
-@js.native
-object ASPxClientCheckBoxList extends js.Object {
+object ASPxClientCheckBoxList {
   
   /**
     * Converts the specified object to the ASPxClientCheckBoxList type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientCheckBoxList.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientCheckBoxList = js.native
 }

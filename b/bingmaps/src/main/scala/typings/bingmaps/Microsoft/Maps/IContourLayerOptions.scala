@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The contour layer options
   */
 @js.native
-trait IContourLayerOptions extends js.Object {
+trait IContourLayerOptions extends StObject {
   
   /** A callback function which defines the color of the contour line fill. */
   var colorCallback: js.UndefOr[js.Function1[/* contourValue */ Double | String, String | Color]] = js.native
@@ -31,42 +32,30 @@ object IContourLayerOptions {
   }
   
   @scala.inline
-  implicit class IContourLayerOptionsOps[Self <: IContourLayerOptions] (val x: Self) extends AnyVal {
+  implicit class IContourLayerOptionsMutableBuilder[Self <: IContourLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorCallback(value: /* contourValue */ Double | String => String | Color): Self = StObject.set(x, "colorCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorCallbackUndefined: Self = StObject.set(x, "colorCallback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorCallback(value: /* contourValue */ Double | String => String | Color): Self = this.set("colorCallback", js.Any.fromFunction1(value))
+    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
     @scala.inline
-    def deleteColorCallback: Self = this.set("colorCallback", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolygonOptions(value: IPolygonOptions): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

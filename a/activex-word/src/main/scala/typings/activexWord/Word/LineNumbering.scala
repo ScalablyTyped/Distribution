@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineNumbering extends js.Object {
+trait LineNumbering extends StObject {
   
   var Active: Double = js.native
   
@@ -46,45 +47,33 @@ object LineNumbering {
   }
   
   @scala.inline
-  implicit class LineNumberingOps[Self <: LineNumbering] (val x: Self) extends AnyVal {
+  implicit class LineNumberingMutableBuilder[Self <: LineNumbering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Double): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountBy(value: Double): Self = StObject.set(x, "CountBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Double): Self = this.set("Active", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDistanceFromText(value: Double): Self = StObject.set(x, "DistanceFromText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountBy(value: Double): Self = this.set("CountBy", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setRestartMode(value: WdNumberingRule): Self = StObject.set(x, "RestartMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceFromText(value: Double): Self = this.set("DistanceFromText", value.asInstanceOf[js.Any])
+    def setStartingNumber(value: Double): Self = StObject.set(x, "StartingNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestartMode(value: WdNumberingRule): Self = this.set("RestartMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartingNumber(value: Double): Self = this.set("StartingNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotLineNumbering_typekey(value: LineNumbering): Self = this.set("Word.LineNumbering_typekey", value.asInstanceOf[js.Any])
+    def setWordDotLineNumbering_typekey(value: LineNumbering): Self = StObject.set(x, "Word.LineNumbering_typekey", value.asInstanceOf[js.Any])
   }
 }

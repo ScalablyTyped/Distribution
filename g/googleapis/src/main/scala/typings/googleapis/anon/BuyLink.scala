@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuyLink extends js.Object {
+trait BuyLink extends StObject {
   
   var buyLink: js.UndefOr[String] = js.native
   
@@ -32,69 +33,57 @@ object BuyLink {
   }
   
   @scala.inline
-  implicit class BuyLinkOps[Self <: BuyLink] (val x: Self) extends AnyVal {
+  implicit class BuyLinkMutableBuilder[Self <: BuyLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuyLink(value: String): Self = StObject.set(x, "buyLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuyLinkUndefined: Self = StObject.set(x, "buyLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyLink(value: String): Self = this.set("buyLink", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteBuyLink: Self = this.set("buyLink", js.undefined)
+    def setIsEbook(value: Boolean): Self = StObject.set(x, "isEbook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setIsEbookUndefined: Self = StObject.set(x, "isEbook", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setListPrice(value: Amount): Self = StObject.set(x, "listPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEbook(value: Boolean): Self = this.set("isEbook", value.asInstanceOf[js.Any])
+    def setListPriceUndefined: Self = StObject.set(x, "listPrice", js.undefined)
     
     @scala.inline
-    def deleteIsEbook: Self = this.set("isEbook", js.undefined)
+    def setOffers(value: js.Array[FinskyOfferType]): Self = StObject.set(x, "offers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListPrice(value: Amount): Self = this.set("listPrice", value.asInstanceOf[js.Any])
+    def setOffersUndefined: Self = StObject.set(x, "offers", js.undefined)
     
     @scala.inline
-    def deleteListPrice: Self = this.set("listPrice", js.undefined)
+    def setOffersVarargs(value: FinskyOfferType*): Self = StObject.set(x, "offers", js.Array(value :_*))
     
     @scala.inline
-    def setOffersVarargs(value: FinskyOfferType*): Self = this.set("offers", js.Array(value :_*))
+    def setOnSaleDate(value: String): Self = StObject.set(x, "onSaleDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffers(value: js.Array[FinskyOfferType]): Self = this.set("offers", value.asInstanceOf[js.Any])
+    def setOnSaleDateUndefined: Self = StObject.set(x, "onSaleDate", js.undefined)
     
     @scala.inline
-    def deleteOffers: Self = this.set("offers", js.undefined)
+    def setRetailPrice(value: Amount): Self = StObject.set(x, "retailPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSaleDate(value: String): Self = this.set("onSaleDate", value.asInstanceOf[js.Any])
+    def setRetailPriceUndefined: Self = StObject.set(x, "retailPrice", js.undefined)
     
     @scala.inline
-    def deleteOnSaleDate: Self = this.set("onSaleDate", js.undefined)
+    def setSaleability(value: String): Self = StObject.set(x, "saleability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetailPrice(value: Amount): Self = this.set("retailPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetailPrice: Self = this.set("retailPrice", js.undefined)
-    
-    @scala.inline
-    def setSaleability(value: String): Self = this.set("saleability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaleability: Self = this.set("saleability", js.undefined)
+    def setSaleabilityUndefined: Self = StObject.set(x, "saleability", js.undefined)
   }
 }

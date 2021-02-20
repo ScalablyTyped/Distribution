@@ -2,15 +2,15 @@ package typings.pathfinding.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Grid
-  extends Instantiable1[/* matrix */ js.Array[js.Array[Double]], Grid]
-     with Instantiable2[/* width */ Double, /* height */ Double, Grid] {
+  extends Instantiable1[/* matrix */ js.Array[js.Array[Double]], typings.pathfinding.mod.Grid]
+     with Instantiable2[/* width */ Double, /* height */ Double, typings.pathfinding.mod.Grid] {
   
   def getNeighbors(node: Node, diagonalMovement: DiagonalMovement): js.Array[Node] = js.native
   
@@ -26,6 +26,3 @@ trait Grid
   
   var width: Double = js.native
 }
-@JSImport("pathfinding", "Grid")
-@js.native
-object Grid extends TopLevel[Grid]

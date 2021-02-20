@@ -5,12 +5,13 @@ import typings.std.DOMHighResTimeStamp
 import typings.std.Event
 import typings.std.EventListenerOptions
 import typings.webxr.anon.PlaneDetectionState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRSession extends js.Object {
+trait XRSession extends StObject {
   
   def addEventListener(`type`: XREventType, listener: XREventHandler): Unit = js.native
   def addEventListener(`type`: XREventType, listener: XREventHandler, options: Boolean): Unit = js.native

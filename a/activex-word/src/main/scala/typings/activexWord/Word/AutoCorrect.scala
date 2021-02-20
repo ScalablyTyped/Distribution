@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoCorrect extends js.Object {
+trait AutoCorrect extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -88,87 +89,75 @@ object AutoCorrect {
   }
   
   @scala.inline
-  implicit class AutoCorrectOps[Self <: AutoCorrect] (val x: Self) extends AnyVal {
+  implicit class AutoCorrectMutableBuilder[Self <: AutoCorrect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrectCapsLock(value: Boolean): Self = StObject.set(x, "CorrectCapsLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorrectDays(value: Boolean): Self = StObject.set(x, "CorrectDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCorrectHangulAndAlphabet(value: Boolean): Self = StObject.set(x, "CorrectHangulAndAlphabet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectCapsLock(value: Boolean): Self = this.set("CorrectCapsLock", value.asInstanceOf[js.Any])
+    def setCorrectInitialCaps(value: Boolean): Self = StObject.set(x, "CorrectInitialCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectDays(value: Boolean): Self = this.set("CorrectDays", value.asInstanceOf[js.Any])
+    def setCorrectKeyboardSetting(value: Boolean): Self = StObject.set(x, "CorrectKeyboardSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectHangulAndAlphabet(value: Boolean): Self = this.set("CorrectHangulAndAlphabet", value.asInstanceOf[js.Any])
+    def setCorrectSentenceCaps(value: Boolean): Self = StObject.set(x, "CorrectSentenceCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectInitialCaps(value: Boolean): Self = this.set("CorrectInitialCaps", value.asInstanceOf[js.Any])
+    def setCorrectTableCells(value: Boolean): Self = StObject.set(x, "CorrectTableCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectKeyboardSetting(value: Boolean): Self = this.set("CorrectKeyboardSetting", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectSentenceCaps(value: Boolean): Self = this.set("CorrectSentenceCaps", value.asInstanceOf[js.Any])
+    def setDisplayAutoCorrectOptions(value: Boolean): Self = StObject.set(x, "DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrectTableCells(value: Boolean): Self = this.set("CorrectTableCells", value.asInstanceOf[js.Any])
+    def setEntries(value: AutoCorrectEntries): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFirstLetterAutoAdd(value: Boolean): Self = StObject.set(x, "FirstLetterAutoAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayAutoCorrectOptions(value: Boolean): Self = this.set("DisplayAutoCorrectOptions", value.asInstanceOf[js.Any])
+    def setFirstLetterExceptions(value: FirstLetterExceptions): Self = StObject.set(x, "FirstLetterExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: AutoCorrectEntries): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    def setHangulAndAlphabetAutoAdd(value: Boolean): Self = StObject.set(x, "HangulAndAlphabetAutoAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLetterAutoAdd(value: Boolean): Self = this.set("FirstLetterAutoAdd", value.asInstanceOf[js.Any])
+    def setHangulAndAlphabetExceptions(value: HangulAndAlphabetExceptions): Self = StObject.set(x, "HangulAndAlphabetExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLetterExceptions(value: FirstLetterExceptions): Self = this.set("FirstLetterExceptions", value.asInstanceOf[js.Any])
+    def setOtherCorrectionsAutoAdd(value: Boolean): Self = StObject.set(x, "OtherCorrectionsAutoAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangulAndAlphabetAutoAdd(value: Boolean): Self = this.set("HangulAndAlphabetAutoAdd", value.asInstanceOf[js.Any])
+    def setOtherCorrectionsExceptions(value: OtherCorrectionsExceptions): Self = StObject.set(x, "OtherCorrectionsExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHangulAndAlphabetExceptions(value: HangulAndAlphabetExceptions): Self = this.set("HangulAndAlphabetExceptions", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherCorrectionsAutoAdd(value: Boolean): Self = this.set("OtherCorrectionsAutoAdd", value.asInstanceOf[js.Any])
+    def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherCorrectionsExceptions(value: OtherCorrectionsExceptions): Self = this.set("OtherCorrectionsExceptions", value.asInstanceOf[js.Any])
+    def setReplaceTextFromSpellingChecker(value: Boolean): Self = StObject.set(x, "ReplaceTextFromSpellingChecker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setTwoInitialCapsAutoAdd(value: Boolean): Self = StObject.set(x, "TwoInitialCapsAutoAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceText(value: Boolean): Self = this.set("ReplaceText", value.asInstanceOf[js.Any])
+    def setTwoInitialCapsExceptions(value: TwoInitialCapsExceptions): Self = StObject.set(x, "TwoInitialCapsExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceTextFromSpellingChecker(value: Boolean): Self = this.set("ReplaceTextFromSpellingChecker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwoInitialCapsAutoAdd(value: Boolean): Self = this.set("TwoInitialCapsAutoAdd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwoInitialCapsExceptions(value: TwoInitialCapsExceptions): Self = this.set("TwoInitialCapsExceptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotAutoCorrect_typekey(value: AutoCorrect): Self = this.set("Word.AutoCorrect_typekey", value.asInstanceOf[js.Any])
+    def setWordDotAutoCorrect_typekey(value: AutoCorrect): Self = StObject.set(x, "Word.AutoCorrect_typekey", value.asInstanceOf[js.Any])
   }
 }

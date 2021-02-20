@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.Comparator
 import typings.lodash.mod.List
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashUniqWith extends js.Object {
+trait LodashUniqWith extends StObject {
   
   def apply[T](comparator: Comparator[T]): js.Array[T] = js.native
   def apply[T](comparator: Comparator[T], array: List[T]): js.Array[T] = js.native

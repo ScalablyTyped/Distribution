@@ -2,12 +2,13 @@ package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNativeNavigation.reactNativeNavigationStrings.dark
 import typings.reactNativeNavigation.reactNativeNavigationStrings.light
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsStatusBar extends js.Object {
+trait OptionsStatusBar extends StObject {
   
   /**
     * Animate StatusBar style changes.
@@ -66,66 +67,54 @@ object OptionsStatusBar {
   }
   
   @scala.inline
-  implicit class OptionsStatusBarOps[Self <: OptionsStatusBar] (val x: Self) extends AnyVal {
+  implicit class OptionsStatusBarMutableBuilder[Self <: OptionsStatusBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDrawBehind(value: Boolean): Self = StObject.set(x, "drawBehind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: Boolean): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setDrawBehindUndefined: Self = StObject.set(x, "drawBehind", js.undefined)
     
     @scala.inline
-    def deleteBlur: Self = this.set("blur", js.undefined)
+    def setHideWithTopBar(value: Boolean): Self = StObject.set(x, "hideWithTopBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawBehind(value: Boolean): Self = this.set("drawBehind", value.asInstanceOf[js.Any])
+    def setHideWithTopBarUndefined: Self = StObject.set(x, "hideWithTopBar", js.undefined)
     
     @scala.inline
-    def deleteDrawBehind: Self = this.set("drawBehind", js.undefined)
+    def setStyle(value: light | dark): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideWithTopBar(value: Boolean): Self = this.set("hideWithTopBar", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteHideWithTopBar: Self = this.set("hideWithTopBar", js.undefined)
+    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: light | dark): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslucent: Self = this.set("translucent", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

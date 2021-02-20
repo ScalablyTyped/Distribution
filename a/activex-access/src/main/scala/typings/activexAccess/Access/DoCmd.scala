@@ -16,12 +16,13 @@ import typings.activexAccess.activexAccessNumbers.`8`
 import typings.activexAccess.activexAccessNumbers.`9`
 import typings.activexAccess.activexAccessStrings.`MS-DOS Text LeftparenthesisAsteriskDottxtRightparenthesis`
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoCmd extends js.Object {
+trait DoCmd extends StObject {
   
   @JSName("Access.DoCmd_typekey")
   var AccessDotDoCmd_typekey: DoCmd = js.native

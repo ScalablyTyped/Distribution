@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportFilter extends js.Object {
+trait ExportFilter extends StObject {
   
   /**
     * Supported condition: EQUALS 
@@ -31,30 +32,18 @@ object ExportFilter {
   }
   
   @scala.inline
-  implicit class ExportFilterOps[Self <: ExportFilter] (val x: Self) extends AnyVal {
+  implicit class ExportFilterMutableBuilder[Self <: ExportFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: FilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: FilterValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: Condition): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: FilterName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: FilterValue*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: FilterValues): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: FilterValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

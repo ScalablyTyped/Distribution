@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashBitmap extends js.Object {
+trait FlashBitmap extends StObject {
   
   var bits: js.Any = js.native
   
@@ -26,39 +27,27 @@ object FlashBitmap {
   }
   
   @scala.inline
-  implicit class FlashBitmapOps[Self <: FlashBitmap] (val x: Self) extends AnyVal {
+  implicit class FlashBitmapMutableBuilder[Self <: FlashBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBits(value: js.Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCTab(value: js.Array[String]): Self = StObject.set(x, "cTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCTabUndefined: Self = StObject.set(x, "cTab", js.undefined)
     
     @scala.inline
-    def setBits(value: js.Any): Self = this.set("bits", value.asInstanceOf[js.Any])
+    def setCTabVarargs(value: String*): Self = StObject.set(x, "cTab", js.Array(value :_*))
     
     @scala.inline
-    def setDepth(value: js.Any): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setDepth(value: js.Any): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: js.Any): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: js.Any): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCTabVarargs(value: String*): Self = this.set("cTab", js.Array(value :_*))
-    
-    @scala.inline
-    def setCTab(value: js.Array[String]): Self = this.set("cTab", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCTab: Self = this.set("cTab", js.undefined)
+    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

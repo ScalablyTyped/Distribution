@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CampaignManagerIds extends js.Object {
+trait CampaignManagerIds extends StObject {
   
   /** Ad ID for Campaign Manager. */
   var adId: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object CampaignManagerIds {
   }
   
   @scala.inline
-  implicit class CampaignManagerIdsOps[Self <: CampaignManagerIds] (val x: Self) extends AnyVal {
+  implicit class CampaignManagerIdsMutableBuilder[Self <: CampaignManagerIds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdId(value: String): Self = StObject.set(x, "adId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdIdUndefined: Self = StObject.set(x, "adId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdId(value: String): Self = this.set("adId", value.asInstanceOf[js.Any])
+    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
     @scala.inline
-    def deleteAdId: Self = this.set("adId", js.undefined)
+    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     @scala.inline
-    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeId(value: String): Self = this.set("creativeId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteCreativeId: Self = this.set("creativeId", js.undefined)
+    def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementId(value: String): Self = this.set("placementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacementId: Self = this.set("placementId", js.undefined)
-    
-    @scala.inline
-    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
   }
 }

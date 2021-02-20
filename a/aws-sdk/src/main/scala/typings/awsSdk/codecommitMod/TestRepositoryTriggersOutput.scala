@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestRepositoryTriggersOutput extends js.Object {
+trait TestRepositoryTriggersOutput extends StObject {
   
   /**
     * The list of triggers that were not tested. This list provides the names of the triggers that could not be tested, separated by commas.
@@ -26,36 +27,24 @@ object TestRepositoryTriggersOutput {
   }
   
   @scala.inline
-  implicit class TestRepositoryTriggersOutputOps[Self <: TestRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+  implicit class TestRepositoryTriggersOutputMutableBuilder[Self <: TestRepositoryTriggersOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedExecutions(value: RepositoryTriggerExecutionFailureList): Self = StObject.set(x, "failedExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedExecutionsUndefined: Self = StObject.set(x, "failedExecutions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedExecutionsVarargs(value: RepositoryTriggerExecutionFailure*): Self = StObject.set(x, "failedExecutions", js.Array(value :_*))
     
     @scala.inline
-    def setFailedExecutionsVarargs(value: RepositoryTriggerExecutionFailure*): Self = this.set("failedExecutions", js.Array(value :_*))
+    def setSuccessfulExecutions(value: RepositoryTriggerNameList): Self = StObject.set(x, "successfulExecutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedExecutions(value: RepositoryTriggerExecutionFailureList): Self = this.set("failedExecutions", value.asInstanceOf[js.Any])
+    def setSuccessfulExecutionsUndefined: Self = StObject.set(x, "successfulExecutions", js.undefined)
     
     @scala.inline
-    def deleteFailedExecutions: Self = this.set("failedExecutions", js.undefined)
-    
-    @scala.inline
-    def setSuccessfulExecutionsVarargs(value: RepositoryTriggerName*): Self = this.set("successfulExecutions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuccessfulExecutions(value: RepositoryTriggerNameList): Self = this.set("successfulExecutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessfulExecutions: Self = this.set("successfulExecutions", js.undefined)
+    def setSuccessfulExecutionsVarargs(value: RepositoryTriggerName*): Self = StObject.set(x, "successfulExecutions", js.Array(value :_*))
   }
 }

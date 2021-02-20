@@ -2,12 +2,13 @@ package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockResponse.Status
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusSummarizeBlockResponse extends js.Object {
+trait IConsensusSummarizeBlockResponse extends StObject {
   
   /** ConsensusSummarizeBlockResponse status */
   var status: js.UndefOr[Status | Null] = js.native
@@ -24,36 +25,24 @@ object IConsensusSummarizeBlockResponse {
   }
   
   @scala.inline
-  implicit class IConsensusSummarizeBlockResponseOps[Self <: IConsensusSummarizeBlockResponse] (val x: Self) extends AnyVal {
+  implicit class IConsensusSummarizeBlockResponseMutableBuilder[Self <: IConsensusSummarizeBlockResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSummary(value: Uint8Array): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
-    
-    @scala.inline
-    def setSummary(value: Uint8Array): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setSummaryNull: Self = this.set("summary", null)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/ArgMin_grad", JSImport.Namespace)
-@js.native
-object argMinGradMod extends js.Object {
+object argMinGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/ArgMin_grad", "argMinGradConfig")
+  @js.native
   val argMinGradConfig: GradConfig = js.native
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextMenuOpeningEventUIParam extends js.Object {
+trait ContextMenuOpeningEventUIParam extends StObject {
   
   /**
     * Get the [area](ig.spreadsheet.SpreadsheetContextMenuArea) for which the menu is being displayed.
@@ -26,30 +27,18 @@ object ContextMenuOpeningEventUIParam {
   }
   
   @scala.inline
-  implicit class ContextMenuOpeningEventUIParamOps[Self <: ContextMenuOpeningEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ContextMenuOpeningEventUIParamMutableBuilder[Self <: ContextMenuOpeningEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMenuArea(value: String): Self = StObject.set(x, "menuArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMenuAreaUndefined: Self = StObject.set(x, "menuArea", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuArea(value: String): Self = this.set("menuArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenuArea: Self = this.set("menuArea", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

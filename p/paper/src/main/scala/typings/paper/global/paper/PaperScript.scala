@@ -1,6 +1,7 @@
 package typings.paper.global.paper
 
 import typings.std.HTMLScriptElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PaperScript ()
   extends typings.paper.paper.PaperScript
-/* static members */
-@JSGlobal("paper.PaperScript")
-@js.native
-object PaperScript extends js.Object {
+object PaperScript {
   
   /** 
     * Compiles PaperScript code into JavaScript code.
@@ -28,7 +26,12 @@ object PaperScript extends js.Object {
     * @return an object holding the compiled PaperScript translated
     *     into JavaScript code along with source-maps and other information.
     */
+  /* static member */
+  @JSGlobal("paper.PaperScript.compile")
+  @js.native
   def compile(code: String): js.Object = js.native
+  @JSGlobal("paper.PaperScript.compile")
+  @js.native
   def compile(code: String, options: js.Object): js.Object = js.native
   
   /** 
@@ -49,7 +52,12 @@ object PaperScript extends js.Object {
     * 
     * @return the exports defined in the executed code
     */
+  /* static member */
+  @JSGlobal("paper.PaperScript.execute")
+  @js.native
   def execute(code: String, scope: typings.paper.paper.PaperScope): js.Object = js.native
+  @JSGlobal("paper.PaperScript.execute")
+  @js.native
   def execute(code: String, scope: typings.paper.paper.PaperScope, options: js.Object): js.Object = js.native
   
   /** 
@@ -68,6 +76,11 @@ object PaperScript extends js.Object {
     * @return the scope produced for the passed `script`, or
     *     `undefined` of multiple scripts area loaded
     */
+  /* static member */
+  @JSGlobal("paper.PaperScript.load")
+  @js.native
   def load(): typings.paper.paper.PaperScope = js.native
+  @JSGlobal("paper.PaperScript.load")
+  @js.native
   def load(script: HTMLScriptElement): typings.paper.paper.PaperScope = js.native
 }

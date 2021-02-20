@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpcPeeringAuthorization extends js.Object {
+trait VpcPeeringAuthorization extends StObject {
   
   /**
     * Time stamp indicating when this authorization was issued. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
@@ -41,48 +42,36 @@ object VpcPeeringAuthorization {
   }
   
   @scala.inline
-  implicit class VpcPeeringAuthorizationOps[Self <: VpcPeeringAuthorization] (val x: Self) extends AnyVal {
+  implicit class VpcPeeringAuthorizationMutableBuilder[Self <: VpcPeeringAuthorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationTime(value: Timestamp): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftAwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: Timestamp): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    def setGameLiftAwsAccountIdUndefined: Self = StObject.set(x, "GameLiftAwsAccountId", js.undefined)
     
     @scala.inline
-    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    def setPeerVpcAwsAccountId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcAwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = this.set("GameLiftAwsAccountId", value.asInstanceOf[js.Any])
+    def setPeerVpcAwsAccountIdUndefined: Self = StObject.set(x, "PeerVpcAwsAccountId", js.undefined)
     
     @scala.inline
-    def deleteGameLiftAwsAccountId: Self = this.set("GameLiftAwsAccountId", js.undefined)
+    def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerVpcAwsAccountId(value: NonZeroAndMaxString): Self = this.set("PeerVpcAwsAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeerVpcAwsAccountId: Self = this.set("PeerVpcAwsAccountId", js.undefined)
-    
-    @scala.inline
-    def setPeerVpcId(value: NonZeroAndMaxString): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+    def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
   }
 }

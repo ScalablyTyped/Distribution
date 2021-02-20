@@ -1,12 +1,13 @@
 package typings.playcanvas.anon
 
 import typings.playcanvas.pc.Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HalfExtents extends js.Object {
+trait HalfExtents extends StObject {
   
   var halfExtents: js.UndefOr[Vec2] = js.native
   
@@ -23,36 +24,24 @@ object HalfExtents {
   }
   
   @scala.inline
-  implicit class HalfExtentsOps[Self <: HalfExtents] (val x: Self) extends AnyVal {
+  implicit class HalfExtentsMutableBuilder[Self <: HalfExtents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHalfExtents(value: Vec2): Self = StObject.set(x, "halfExtents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHalfExtentsUndefined: Self = StObject.set(x, "halfExtents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLengthSegments(value: Double): Self = StObject.set(x, "lengthSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHalfExtents(value: Vec2): Self = this.set("halfExtents", value.asInstanceOf[js.Any])
+    def setLengthSegmentsUndefined: Self = StObject.set(x, "lengthSegments", js.undefined)
     
     @scala.inline
-    def deleteHalfExtents: Self = this.set("halfExtents", js.undefined)
+    def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLengthSegments(value: Double): Self = this.set("lengthSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLengthSegments: Self = this.set("lengthSegments", js.undefined)
-    
-    @scala.inline
-    def setWidthSegments(value: Double): Self = this.set("widthSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthSegments: Self = this.set("widthSegments", js.undefined)
+    def setWidthSegmentsUndefined: Self = StObject.set(x, "widthSegments", js.undefined)
   }
 }

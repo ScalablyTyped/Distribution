@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddCardSuccessCallbackResult extends js.Object {
+trait AddCardSuccessCallbackResult extends StObject {
   
   /** 卡券添加结果列表 */
   var cardList: js.Array[AddCardResponseInfo] = js.native
@@ -21,27 +22,15 @@ object AddCardSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class AddCardSuccessCallbackResultOps[Self <: AddCardSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class AddCardSuccessCallbackResultMutableBuilder[Self <: AddCardSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardList(value: js.Array[AddCardResponseInfo]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardListVarargs(value: AddCardResponseInfo*): Self = StObject.set(x, "cardList", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCardListVarargs(value: AddCardResponseInfo*): Self = this.set("cardList", js.Array(value :_*))
-    
-    @scala.inline
-    def setCardList(value: js.Array[AddCardResponseInfo]): Self = this.set("cardList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

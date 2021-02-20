@@ -3,6 +3,7 @@ package typings.carbonComponents.componentsMod
 import typings.carbonComponents.anon.BACKWARD
 import typings.carbonComponents.navigationMenuMod.default
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +14,21 @@ class NavigationMenu protected () extends default {
   def this(element: js.Any, options: js.Any) = this()
 }
 /* static members */
-@JSImport("carbon-components/globals/js/components", "NavigationMenu")
-@js.native
-object NavigationMenu extends js.Object {
+object NavigationMenu {
   
-  var NAVIGATE: BACKWARD = js.native
+  @JSImport("carbon-components/globals/js/components", "NavigationMenu")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var components: WeakMap[js.Object, _] = js.native
+  @JSImport("carbon-components/globals/js/components", "NavigationMenu.NAVIGATE")
+  @js.native
+  def NAVIGATE: BACKWARD = js.native
+  @scala.inline
+  def NAVIGATE_=(x: BACKWARD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
   
-  def options: js.Any = js.native
+  @JSImport("carbon-components/globals/js/components", "NavigationMenu.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

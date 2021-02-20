@@ -1,11 +1,12 @@
 package typings.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SDKError extends js.Object {
+trait SDKError extends StObject {
   
   var httpStatusCode: Double = js.native
   
@@ -26,36 +27,24 @@ object SDKError {
   }
   
   @scala.inline
-  implicit class SDKErrorOps[Self <: SDKError] (val x: Self) extends AnyVal {
+  implicit class SDKErrorMutableBuilder[Self <: SDKError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponse(value: PayPalError): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpStatusCode(value: Double): Self = this.set("httpStatusCode", value.asInstanceOf[js.Any])
+    def setResponse_stringified(value: String): Self = StObject.set(x, "response_stringified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setResponse_stringifiedUndefined: Self = StObject.set(x, "response_stringified", js.undefined)
     
     @scala.inline
-    def setResponse(value: PayPalError): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse_stringified(value: String): Self = this.set("response_stringified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse_stringified: Self = this.set("response_stringified", js.undefined)
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

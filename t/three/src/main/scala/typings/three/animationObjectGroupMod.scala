@@ -2,16 +2,16 @@ package typings.three
 
 import typings.three.anon.BindingsPerObject
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/animation/AnimationObjectGroup", JSImport.Namespace)
-@js.native
-object animationObjectGroupMod extends js.Object {
+object animationObjectGroupMod {
   
+  @JSImport("three/src/animation/AnimationObjectGroup", "AnimationObjectGroup")
   @js.native
-  class AnimationObjectGroup protected () extends js.Object {
+  class AnimationObjectGroup protected () extends StObject {
     def this(args: js.Any*) = this()
     
     def add(args: js.Any*): Unit = js.native

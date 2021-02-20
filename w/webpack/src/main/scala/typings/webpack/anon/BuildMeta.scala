@@ -2,12 +2,13 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.webpack.webpackBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildMeta extends js.Object {
+trait BuildMeta extends StObject {
   
   /**
   		 * Meta information about the module
@@ -33,36 +34,24 @@ object BuildMeta {
   }
   
   @scala.inline
-  implicit class BuildMetaOps[Self <: BuildMeta] (val x: Self) extends AnyVal {
+  implicit class BuildMetaMutableBuilder[Self <: BuildMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildMeta(value: StringDictionary[js.Any]): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildMetaUndefined: Self = StObject.set(x, "buildMeta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExports(value: `true` | js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double | String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
     @scala.inline
-    def setBuildMeta(value: StringDictionary[js.Any]): Self = this.set("buildMeta", value.asInstanceOf[js.Any])
+    def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
     @scala.inline
-    def deleteBuildMeta: Self = this.set("buildMeta", js.undefined)
-    
-    @scala.inline
-    def setExportsVarargs(value: String*): Self = this.set("exports", js.Array(value :_*))
-    
-    @scala.inline
-    def setExports(value: `true` | js.Array[String]): Self = this.set("exports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExports: Self = this.set("exports", js.undefined)
+    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -6,40 +6,18 @@ import typings.ibmCloudSdkCore.helperMod.FileObject
 import typings.ibmCloudSdkCore.helperMod.FileParamAttributes
 import typings.ibmCloudSdkCore.v1Mod.Options
 import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Stream
 import typings.std.Error
 import typings.std.File
+import typings.std.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ibm-cloud-sdk-core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = js.native
-  
-  def getContentType(inputData: String): String = js.native
-  def getContentType(inputData: Buffer): String = js.native
-  def getContentType(inputData: ReadableStream): String = js.native
-  
-  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = js.native
-  
-  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = js.native
-  
-  def isEmptyObject(obj: js.Any): Boolean = js.native
-  
-  def isFileParam(obj: js.Any): Boolean = js.native
-  
-  def isHTML(text: String): Boolean = js.native
-  
-  def streamToPromise(stream: Stream): js.Promise[_] = js.native
-  
-  def stripTrailingSlash(url: String): String = js.native
-  
-  def toLowerKeys(obj: js.Object): js.Object = js.native
-  
+  @JSImport("ibm-cloud-sdk-core", "BaseService")
   @js.native
   class BaseService protected ()
     extends typings.ibmCloudSdkCore.baseServiceMod.BaseService {
@@ -61,12 +39,20 @@ object mod extends js.Object {
     def this(userOptions: UserOptions) = this()
   }
   /* static members */
-  @js.native
-  object BaseService extends js.Object {
+  object BaseService {
     
-    var URL: String = js.native
+    @JSImport("ibm-cloud-sdk-core", "BaseService")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ibm-cloud-sdk-core", "BaseService.URL")
+    @js.native
+    def URL: String = js.native
+    @scala.inline
+    def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("ibm-cloud-sdk-core", "IamTokenManagerV1")
   @js.native
   class IamTokenManagerV1 protected ()
     extends typings.ibmCloudSdkCore.v1Mod.IamTokenManagerV1 {
@@ -84,21 +70,79 @@ object mod extends js.Object {
     def this(options: Options) = this()
   }
   
+  @JSImport("ibm-cloud-sdk-core", "buildRequestFileObject")
   @js.native
-  object contentType extends js.Object {
+  def buildRequestFileObject(fileParams: FileParamAttributes): FileObject = js.native
+  
+  object contentType {
     
+    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
+    @js.native
     def fromFilename(file: String): String = js.native
+    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
+    @js.native
     def fromFilename(file: FileObject): String = js.native
+    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
+    @js.native
     def fromFilename(file: Buffer): String = js.native
+    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
+    @js.native
     def fromFilename(file: File): String = js.native
-    def fromFilename(file: typings.std.ReadableStream[_]): String = js.native
+    @JSImport("ibm-cloud-sdk-core", "contentType.fromFilename")
+    @js.native
+    def fromFilename(file: ReadableStream[_]): String = js.native
     
+    @JSImport("ibm-cloud-sdk-core", "contentType.fromHeader")
+    @js.native
     def fromHeader(buffer: Buffer): String = js.native
   }
   
+  @JSImport("ibm-cloud-sdk-core", "getContentType")
   @js.native
-  object qs extends js.Object {
+  def getContentType(inputData: String): String = js.native
+  @JSImport("ibm-cloud-sdk-core", "getContentType")
+  @js.native
+  def getContentType(inputData: Buffer): String = js.native
+  @JSImport("ibm-cloud-sdk-core", "getContentType")
+  @js.native
+  def getContentType(inputData: typings.node.NodeJS.ReadableStream): String = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "getFormat")
+  @js.native
+  def getFormat(params: StringDictionary[js.Any], formats: js.Array[String]): String = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "getMissingParams")
+  @js.native
+  def getMissingParams(params: StringDictionary[js.Any], requires: js.Array[String]): Null | Error = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "isEmptyObject")
+  @js.native
+  def isEmptyObject(obj: js.Any): Boolean = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "isFileParam")
+  @js.native
+  def isFileParam(obj: js.Any): Boolean = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "isHTML")
+  @js.native
+  def isHTML(text: String): Boolean = js.native
+  
+  object qs {
     
+    @JSImport("ibm-cloud-sdk-core", "qs.stringify")
+    @js.native
     def stringify(queryParams: js.Object): String = js.native
   }
+  
+  @JSImport("ibm-cloud-sdk-core", "streamToPromise")
+  @js.native
+  def streamToPromise(stream: Stream): js.Promise[_] = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "stripTrailingSlash")
+  @js.native
+  def stripTrailingSlash(url: String): String = js.native
+  
+  @JSImport("ibm-cloud-sdk-core", "toLowerKeys")
+  @js.native
+  def toLowerKeys(obj: js.Object): js.Object = js.native
 }

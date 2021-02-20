@@ -1,12 +1,13 @@
 package typings.weixinApp.wx
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnFrameRecordedOptions extends js.Object {
+trait OnFrameRecordedOptions extends StObject {
   
   /**  录音分片结果数据 */
   var frameBuffer: ArrayBuffer = js.native
@@ -23,24 +24,12 @@ object OnFrameRecordedOptions {
   }
   
   @scala.inline
-  implicit class OnFrameRecordedOptionsOps[Self <: OnFrameRecordedOptions] (val x: Self) extends AnyVal {
+  implicit class OnFrameRecordedOptionsMutableBuilder[Self <: OnFrameRecordedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameBuffer(value: ArrayBuffer): Self = StObject.set(x, "frameBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrameBuffer(value: ArrayBuffer): Self = this.set("frameBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsLastFrame(value: Boolean): Self = this.set("isLastFrame", value.asInstanceOf[js.Any])
+    def setIsLastFrame(value: Boolean): Self = StObject.set(x, "isLastFrame", value.asInstanceOf[js.Any])
   }
 }

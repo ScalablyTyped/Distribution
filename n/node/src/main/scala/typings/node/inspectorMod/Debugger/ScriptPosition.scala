@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @experimental
   */
 @js.native
-trait ScriptPosition extends js.Object {
+trait ScriptPosition extends StObject {
   
   var columnNumber: Double = js.native
   
@@ -24,24 +25,12 @@ object ScriptPosition {
   }
   
   @scala.inline
-  implicit class ScriptPositionOps[Self <: ScriptPosition] (val x: Self) extends AnyVal {
+  implicit class ScriptPositionMutableBuilder[Self <: ScriptPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnNumber(value: Double): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
   }
 }

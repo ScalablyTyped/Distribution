@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpressionReport extends js.Object {
+trait ExpressionReport extends StObject {
   
   /** Subexpressions */
   var children: js.UndefOr[js.Array[ExpressionReport]] = js.native
@@ -25,42 +26,30 @@ object ExpressionReport {
   }
   
   @scala.inline
-  implicit class ExpressionReportOps[Self <: ExpressionReport] (val x: Self) extends AnyVal {
+  implicit class ExpressionReportMutableBuilder[Self <: ExpressionReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[ExpressionReport]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: ExpressionReport*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: ExpressionReport*): Self = this.set("children", js.Array(value :_*))
+    def setSourcePosition(value: SourcePosition): Self = StObject.set(x, "sourcePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[ExpressionReport]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setValues(value: js.Array[ValueCount]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePosition(value: SourcePosition): Self = this.set("sourcePosition", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteSourcePosition: Self = this.set("sourcePosition", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: ValueCount*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[ValueCount]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: ValueCount*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

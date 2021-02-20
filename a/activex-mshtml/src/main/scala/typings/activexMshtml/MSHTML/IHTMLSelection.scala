@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLSelection extends js.Object {
+trait IHTMLSelection extends StObject {
   
   @JSName("MSHTML.IHTMLSelection_typekey")
   var MSHTMLDotIHTMLSelection_typekey: IHTMLSelection = js.native
@@ -67,66 +68,54 @@ object IHTMLSelection {
   }
   
   @scala.inline
-  implicit class IHTMLSelectionOps[Self <: IHTMLSelection] (val x: Self) extends AnyVal {
+  implicit class IHTMLSelectionMutableBuilder[Self <: IHTMLSelection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRange(value: js.Any => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorNode(value: IHTMLDOMNode): Self = StObject.set(x, "anchorNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorOffset(value: Double): Self = StObject.set(x, "anchorOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLSelection_typekey(value: IHTMLSelection): Self = this.set("MSHTML.IHTMLSelection_typekey", value.asInstanceOf[js.Any])
+    def setCollapse(value: (js.Any, Double) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddRange(value: js.Any => Unit): Self = this.set("addRange", js.Any.fromFunction1(value))
+    def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnchorNode(value: IHTMLDOMNode): Self = this.set("anchorNode", value.asInstanceOf[js.Any])
+    def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnchorOffset(value: Double): Self = this.set("anchorOffset", value.asInstanceOf[js.Any])
+    def setDeleteFromDocument(value: () => Unit): Self = StObject.set(x, "deleteFromDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapse(value: (js.Any, Double) => Unit): Self = this.set("collapse", js.Any.fromFunction2(value))
+    def setFocusNode(value: IHTMLDOMNode): Self = StObject.set(x, "focusNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseToEnd(value: () => Unit): Self = this.set("collapseToEnd", js.Any.fromFunction0(value))
+    def setFocusOffset(value: Double): Self = StObject.set(x, "focusOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseToStart(value: () => Unit): Self = this.set("collapseToStart", js.Any.fromFunction0(value))
+    def setGetRangeAt(value: Double => IHTMLDOMRange): Self = StObject.set(x, "getRangeAt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteFromDocument(value: () => Unit): Self = this.set("deleteFromDocument", js.Any.fromFunction0(value))
+    def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusNode(value: IHTMLDOMNode): Self = this.set("focusNode", value.asInstanceOf[js.Any])
+    def setMSHTMLDotIHTMLSelection_typekey(value: IHTMLSelection): Self = StObject.set(x, "MSHTML.IHTMLSelection_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusOffset(value: Double): Self = this.set("focusOffset", value.asInstanceOf[js.Any])
+    def setRangeCount(value: Double): Self = StObject.set(x, "rangeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRangeAt(value: Double => IHTMLDOMRange): Self = this.set("getRangeAt", js.Any.fromFunction1(value))
+    def setRemoveAllRanges(value: () => Unit): Self = StObject.set(x, "removeAllRanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsCollapsed(value: Boolean): Self = this.set("isCollapsed", value.asInstanceOf[js.Any])
+    def setRemoveRange(value: js.Any => Unit): Self = StObject.set(x, "removeRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRangeCount(value: Double): Self = this.set("rangeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveAllRanges(value: () => Unit): Self = this.set("removeAllRanges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveRange(value: js.Any => Unit): Self = this.set("removeRange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectAllChildren(value: js.Any => Unit): Self = this.set("selectAllChildren", js.Any.fromFunction1(value))
+    def setSelectAllChildren(value: js.Any => Unit): Self = StObject.set(x, "selectAllChildren", js.Any.fromFunction1(value))
   }
 }

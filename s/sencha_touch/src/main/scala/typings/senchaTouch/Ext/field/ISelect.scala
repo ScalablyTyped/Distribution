@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.field
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -148,198 +149,186 @@ object ISelect {
   }
   
   @scala.inline
-  implicit class ISelectOps[Self <: ISelect] (val x: Self) extends AnyVal {
+  implicit class ISelectMutableBuilder[Self <: ISelect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultPhonePickerConfig(value: js.Any): Self = StObject.set(x, "defaultPhonePickerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSelect(value: Boolean): Self = this.set("autoSelect", value.asInstanceOf[js.Any])
+    def setDefaultPhonePickerConfigUndefined: Self = StObject.set(x, "defaultPhonePickerConfig", js.undefined)
     
     @scala.inline
-    def deleteAutoSelect: Self = this.set("autoSelect", js.undefined)
+    def setDefaultTabletPickerConfig(value: js.Any): Self = StObject.set(x, "defaultTabletPickerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPhonePickerConfig(value: js.Any): Self = this.set("defaultPhonePickerConfig", value.asInstanceOf[js.Any])
+    def setDefaultTabletPickerConfigUndefined: Self = StObject.set(x, "defaultTabletPickerConfig", js.undefined)
     
     @scala.inline
-    def deleteDefaultPhonePickerConfig: Self = this.set("defaultPhonePickerConfig", js.undefined)
+    def setDisplayField(value: js.Any): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTabletPickerConfig(value: js.Any): Self = this.set("defaultTabletPickerConfig", value.asInstanceOf[js.Any])
+    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
     @scala.inline
-    def deleteDefaultTabletPickerConfig: Self = this.set("defaultTabletPickerConfig", js.undefined)
+    def setGetAutoSelect(value: () => Boolean): Self = StObject.set(x, "getAutoSelect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplayField(value: js.Any): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    def setGetAutoSelectUndefined: Self = StObject.set(x, "getAutoSelect", js.undefined)
     
     @scala.inline
-    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    def setGetDefaultPhonePickerConfig(value: () => _): Self = StObject.set(x, "getDefaultPhonePickerConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoSelect(value: () => Boolean): Self = this.set("getAutoSelect", js.Any.fromFunction0(value))
+    def setGetDefaultPhonePickerConfigUndefined: Self = StObject.set(x, "getDefaultPhonePickerConfig", js.undefined)
     
     @scala.inline
-    def deleteGetAutoSelect: Self = this.set("getAutoSelect", js.undefined)
+    def setGetDefaultTabletPickerConfig(value: () => _): Self = StObject.set(x, "getDefaultTabletPickerConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultPhonePickerConfig(value: () => _): Self = this.set("getDefaultPhonePickerConfig", js.Any.fromFunction0(value))
+    def setGetDefaultTabletPickerConfigUndefined: Self = StObject.set(x, "getDefaultTabletPickerConfig", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultPhonePickerConfig: Self = this.set("getDefaultPhonePickerConfig", js.undefined)
+    def setGetDisplayField(value: () => _): Self = StObject.set(x, "getDisplayField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDefaultTabletPickerConfig(value: () => _): Self = this.set("getDefaultTabletPickerConfig", js.Any.fromFunction0(value))
+    def setGetDisplayFieldUndefined: Self = StObject.set(x, "getDisplayField", js.undefined)
     
     @scala.inline
-    def deleteGetDefaultTabletPickerConfig: Self = this.set("getDefaultTabletPickerConfig", js.undefined)
+    def setGetHiddenName(value: () => String): Self = StObject.set(x, "getHiddenName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayField(value: () => _): Self = this.set("getDisplayField", js.Any.fromFunction0(value))
+    def setGetHiddenNameUndefined: Self = StObject.set(x, "getHiddenName", js.undefined)
     
     @scala.inline
-    def deleteGetDisplayField: Self = this.set("getDisplayField", js.undefined)
+    def setGetOptions(value: () => Array): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHiddenName(value: () => String): Self = this.set("getHiddenName", js.Any.fromFunction0(value))
+    def setGetOptionsUndefined: Self = StObject.set(x, "getOptions", js.undefined)
     
     @scala.inline
-    def deleteGetHiddenName: Self = this.set("getHiddenName", js.undefined)
+    def setGetStore(value: () => _): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOptions(value: () => Array): Self = this.set("getOptions", js.Any.fromFunction0(value))
+    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
     @scala.inline
-    def deleteGetOptions: Self = this.set("getOptions", js.undefined)
+    def setGetUsePicker(value: () => _): Self = StObject.set(x, "getUsePicker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStore(value: () => _): Self = this.set("getStore", js.Any.fromFunction0(value))
+    def setGetUsePickerUndefined: Self = StObject.set(x, "getUsePicker", js.undefined)
     
     @scala.inline
-    def deleteGetStore: Self = this.set("getStore", js.undefined)
+    def setGetValueField(value: () => _): Self = StObject.set(x, "getValueField", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUsePicker(value: () => _): Self = this.set("getUsePicker", js.Any.fromFunction0(value))
+    def setGetValueFieldUndefined: Self = StObject.set(x, "getValueField", js.undefined)
     
     @scala.inline
-    def deleteGetUsePicker: Self = this.set("getUsePicker", js.undefined)
+    def setHiddenName(value: String): Self = StObject.set(x, "hiddenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValueField(value: () => _): Self = this.set("getValueField", js.Any.fromFunction0(value))
+    def setHiddenNameUndefined: Self = StObject.set(x, "hiddenName", js.undefined)
     
     @scala.inline
-    def deleteGetValueField: Self = this.set("getValueField", js.undefined)
+    def setOnStoreDataChanged(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStoreDataChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHiddenName(value: String): Self = this.set("hiddenName", value.asInstanceOf[js.Any])
+    def setOnStoreDataChangedUndefined: Self = StObject.set(x, "onStoreDataChanged", js.undefined)
     
     @scala.inline
-    def deleteHiddenName: Self = this.set("hiddenName", js.undefined)
+    def setOptions(value: Array): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStoreDataChanged(value: /* store */ js.UndefOr[js.Any] => Unit): Self = this.set("onStoreDataChanged", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOnStoreDataChanged: Self = this.set("onStoreDataChanged", js.undefined)
+    def setSetAutoSelect(value: /* autoSelect */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptions(value: Array): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSetAutoSelectUndefined: Self = StObject.set(x, "setAutoSelect", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setSetDefaultPhonePickerConfig(value: /* defaultPhonePickerConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultPhonePickerConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoSelect(value: /* autoSelect */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoSelect", js.Any.fromFunction1(value))
+    def setSetDefaultPhonePickerConfigUndefined: Self = StObject.set(x, "setDefaultPhonePickerConfig", js.undefined)
     
     @scala.inline
-    def deleteSetAutoSelect: Self = this.set("setAutoSelect", js.undefined)
+    def setSetDefaultTabletPickerConfig(value: /* defaultTabletPickerConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaultTabletPickerConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaultPhonePickerConfig(value: /* defaultPhonePickerConfig */ js.UndefOr[js.Any] => Unit): Self = this.set("setDefaultPhonePickerConfig", js.Any.fromFunction1(value))
+    def setSetDefaultTabletPickerConfigUndefined: Self = StObject.set(x, "setDefaultTabletPickerConfig", js.undefined)
     
     @scala.inline
-    def deleteSetDefaultPhonePickerConfig: Self = this.set("setDefaultPhonePickerConfig", js.undefined)
+    def setSetDisplayField(value: /* displayField */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDisplayField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDefaultTabletPickerConfig(value: /* defaultTabletPickerConfig */ js.UndefOr[js.Any] => Unit): Self = this.set("setDefaultTabletPickerConfig", js.Any.fromFunction1(value))
+    def setSetDisplayFieldUndefined: Self = StObject.set(x, "setDisplayField", js.undefined)
     
     @scala.inline
-    def deleteSetDefaultTabletPickerConfig: Self = this.set("setDefaultTabletPickerConfig", js.undefined)
+    def setSetHiddenName(value: /* hiddenName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setHiddenName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDisplayField(value: /* displayField */ js.UndefOr[js.Any] => Unit): Self = this.set("setDisplayField", js.Any.fromFunction1(value))
+    def setSetHiddenNameUndefined: Self = StObject.set(x, "setHiddenName", js.undefined)
     
     @scala.inline
-    def deleteSetDisplayField: Self = this.set("setDisplayField", js.undefined)
+    def setSetOptions(value: /* options */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHiddenName(value: /* hiddenName */ js.UndefOr[String] => Unit): Self = this.set("setHiddenName", js.Any.fromFunction1(value))
+    def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
     @scala.inline
-    def deleteSetHiddenName: Self = this.set("setHiddenName", js.undefined)
+    def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetOptions(value: /* options */ js.UndefOr[Array] => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
     @scala.inline
-    def deleteSetOptions: Self = this.set("setOptions", js.undefined)
+    def setSetUsePicker(value: /* usePicker */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUsePicker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = this.set("setStore", js.Any.fromFunction1(value))
+    def setSetUsePickerUndefined: Self = StObject.set(x, "setUsePicker", js.undefined)
     
     @scala.inline
-    def deleteSetStore: Self = this.set("setStore", js.undefined)
+    def setSetValueField(value: /* valueField */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValueField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetUsePicker(value: /* usePicker */ js.UndefOr[js.Any] => Unit): Self = this.set("setUsePicker", js.Any.fromFunction1(value))
+    def setSetValueFieldUndefined: Self = StObject.set(x, "setValueField", js.undefined)
     
     @scala.inline
-    def deleteSetUsePicker: Self = this.set("setUsePicker", js.undefined)
+    def setShowPicker(value: () => Unit): Self = StObject.set(x, "showPicker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetValueField(value: /* valueField */ js.UndefOr[js.Any] => Unit): Self = this.set("setValueField", js.Any.fromFunction1(value))
+    def setShowPickerUndefined: Self = StObject.set(x, "showPicker", js.undefined)
     
     @scala.inline
-    def deleteSetValueField: Self = this.set("setValueField", js.undefined)
+    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPicker(value: () => Unit): Self = this.set("showPicker", js.Any.fromFunction0(value))
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deleteShowPicker: Self = this.set("showPicker", js.undefined)
+    def setUpdateOptions(value: /* newOptions */ js.UndefOr[Array] => ISelect): Self = StObject.set(x, "updateOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStore(value: js.Any): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setUpdateOptionsUndefined: Self = StObject.set(x, "updateOptions", js.undefined)
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setUsePicker(value: js.Any): Self = StObject.set(x, "usePicker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateOptions(value: /* newOptions */ js.UndefOr[Array] => ISelect): Self = this.set("updateOptions", js.Any.fromFunction1(value))
+    def setUsePickerUndefined: Self = StObject.set(x, "usePicker", js.undefined)
     
     @scala.inline
-    def deleteUpdateOptions: Self = this.set("updateOptions", js.undefined)
+    def setValueField(value: js.Any): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsePicker(value: js.Any): Self = this.set("usePicker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePicker: Self = this.set("usePicker", js.undefined)
-    
-    @scala.inline
-    def setValueField(value: js.Any): Self = this.set("valueField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueField: Self = this.set("valueField", js.undefined)
+    def setValueFieldUndefined: Self = StObject.set(x, "valueField", js.undefined)
   }
 }

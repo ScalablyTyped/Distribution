@@ -12,18 +12,14 @@ import typings.cssom.cssomNumbers.`4`
 import typings.cssom.cssomNumbers.`5`
 import typings.cssom.cssomNumbers.`7`
 import typings.cssom.cssomNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cssom", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def clone(stylesheet: CSSStyleSheet): CSSStyleSheet = js.native
-  
-  def parse(token: String): CSSStyleSheet = js.native
-  
+  @JSImport("cssom", "CSSDocumentRule")
   @js.native
   class CSSDocumentRule () extends CSSRule {
     
@@ -35,6 +31,7 @@ object mod extends js.Object {
     val type_CSSDocumentRule: `13` = js.native
   }
   
+  @JSImport("cssom", "CSSFontFaceRule")
   @js.native
   class CSSFontFaceRule () extends CSSRule {
     
@@ -44,6 +41,7 @@ object mod extends js.Object {
     val type_CSSFontFaceRule: `5` = js.native
   }
   
+  @JSImport("cssom", "CSSHostRule")
   @js.native
   class CSSHostRule () extends CSSRule {
     
@@ -53,6 +51,7 @@ object mod extends js.Object {
     val type_CSSHostRule: `1001` = js.native
   }
   
+  @JSImport("cssom", "CSSImportRule")
   @js.native
   class CSSImportRule () extends CSSRule {
     
@@ -66,6 +65,7 @@ object mod extends js.Object {
     val type_CSSImportRule: `3` = js.native
   }
   
+  @JSImport("cssom", "CSSKeyframeRule")
   @js.native
   class CSSKeyframeRule () extends CSSRule {
     
@@ -77,6 +77,7 @@ object mod extends js.Object {
     val type_CSSKeyframeRule: `8` = js.native
   }
   
+  @JSImport("cssom", "CSSKeyframesRule")
   @js.native
   class CSSKeyframesRule () extends CSSRule {
     
@@ -88,6 +89,7 @@ object mod extends js.Object {
     val type_CSSKeyframesRule: `7` = js.native
   }
   
+  @JSImport("cssom", "CSSMediaRule")
   @js.native
   class CSSMediaRule () extends CSSRule {
     
@@ -99,8 +101,9 @@ object mod extends js.Object {
     val type_CSSMediaRule: `4` = js.native
   }
   
+  @JSImport("cssom", "CSSRule")
   @js.native
-  abstract class CSSRule () extends js.Object {
+  abstract class CSSRule () extends StObject {
     
     val cssText: String = js.native
     
@@ -110,46 +113,80 @@ object mod extends js.Object {
     
     val `type`: Double = js.native
   }
-  @js.native
-  object CSSRule extends js.Object {
+  object CSSRule {
     
     /** @deprecated Obsolete */
+    @JSImport("cssom", "CSSRule.CHARSET_RULE")
+    @js.native
     val CHARSET_RULE: /* 2 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.COUNTER_STYLE_RULE")
+    @js.native
     val COUNTER_STYLE_RULE: /* 11 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.DOCUMENT_RULE")
+    @js.native
     val DOCUMENT_RULE: /* 13 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.FONT_FACE_RULE")
+    @js.native
     val FONT_FACE_RULE: /* 5 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.FONT_FEATURE_VALUES_RULE")
+    @js.native
     val FONT_FEATURE_VALUES_RULE: /* 14 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.IMPORT_RULE")
+    @js.native
     val IMPORT_RULE: /* 3 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.KEYFRAMES_RULE")
+    @js.native
     val KEYFRAMES_RULE: /* 7 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.KEYFRAME_RULE")
+    @js.native
     val KEYFRAME_RULE: /* 8 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.MARGIN_RULE")
+    @js.native
     val MARGIN_RULE: /* 9 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.MEDIA_RULE")
+    @js.native
     val MEDIA_RULE: /* 4 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.NAMESPACE_RULE")
+    @js.native
     val NAMESPACE_RULE: /* 10 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.PAGE_RULE")
+    @js.native
     val PAGE_RULE: /* 6 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.REGION_STYLE_RULE")
+    @js.native
     val REGION_STYLE_RULE: /* 16 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.STYLE_RULE")
+    @js.native
     val STYLE_RULE: /* 1 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.SUPPORTS_RULE")
+    @js.native
     val SUPPORTS_RULE: /* 12 */ Double = js.native
     
     /** @deprecated Obsolete */
+    @JSImport("cssom", "CSSRule.UNKNOWN_RULE")
+    @js.native
     val UNKNOWN_RULE: /* 0 */ Double = js.native
     
+    @JSImport("cssom", "CSSRule.VIEWPORT_RULE")
+    @js.native
     val VIEWPORT_RULE: /* 15 */ Double = js.native
   }
   
+  @JSImport("cssom", "CSSStyleDeclaration")
   @js.native
   class CSSStyleDeclaration () extends /* index */ NumberDictionary[String] {
     
@@ -171,6 +208,7 @@ object mod extends js.Object {
     def setProperty(name: String, value: Null, priority: String): Unit = js.native
   }
   
+  @JSImport("cssom", "CSSStyleRule")
   @js.native
   class CSSStyleRule () extends CSSRule {
     
@@ -182,12 +220,14 @@ object mod extends js.Object {
     val type_CSSStyleRule: `1` = js.native
   }
   /* static members */
-  @js.native
-  object CSSStyleRule extends js.Object {
+  object CSSStyleRule {
     
+    @JSImport("cssom", "CSSStyleRule.parse")
+    @js.native
     def parse(ruleText: js.Any): js.Any = js.native
   }
   
+  @JSImport("cssom", "CSSStyleSheet")
   @js.native
   class CSSStyleSheet () extends StyleSheet {
     
@@ -199,6 +239,7 @@ object mod extends js.Object {
     def insertRule(rule: String, index: Double): Double = js.native
   }
   
+  @JSImport("cssom", "CSSSupportsRule")
   @js.native
   class CSSSupportsRule () extends CSSRule {
     
@@ -210,13 +251,15 @@ object mod extends js.Object {
     val type_CSSSupportsRule: `12` = js.native
   }
   
+  @JSImport("cssom", "CSSValue")
   @js.native
-  class CSSValue () extends js.Object {
+  class CSSValue () extends StObject {
     
     /** @unsupported The getter and setter are currently unimplemented and throw unconditionally. */
     var cssText: String = js.native
   }
   
+  @JSImport("cssom", "CSSValueExpression")
   @js.native
   class CSSValueExpression protected () extends CSSValue {
     def this(token: String, idx: Double) = this()
@@ -224,6 +267,7 @@ object mod extends js.Object {
     def parse(): Error | Expression = js.native
   }
   
+  @JSImport("cssom", "MatcherList")
   @js.native
   class MatcherList () extends /* index */ NumberDictionary[String] {
     
@@ -236,6 +280,7 @@ object mod extends js.Object {
     var matcherText: String = js.native
   }
   
+  @JSImport("cssom", "MediaList")
   @js.native
   class MediaList () extends /* index */ NumberDictionary[String] {
     
@@ -248,9 +293,18 @@ object mod extends js.Object {
     var mediaText: String = js.native
   }
   
+  @JSImport("cssom", "StyleSheet")
   @js.native
-  abstract class StyleSheet () extends js.Object {
+  abstract class StyleSheet () extends StObject {
     
     var parentStyleSheet: StyleSheet | Null = js.native
   }
+  
+  @JSImport("cssom", "clone")
+  @js.native
+  def clone_(stylesheet: CSSStyleSheet): CSSStyleSheet = js.native
+  
+  @JSImport("cssom", "parse")
+  @js.native
+  def parse(token: String): CSSStyleSheet = js.native
 }

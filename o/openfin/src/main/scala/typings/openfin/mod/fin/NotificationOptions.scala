@@ -1,12 +1,13 @@
 package typings.openfin.mod.fin
 
 import typings.openfin.openfinStrings.never
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationOptions extends js.Object {
+trait NotificationOptions extends StObject {
   
   /**
     * A boolean that will force dismissal even if the mouse is hovering over the notification
@@ -77,80 +78,68 @@ object NotificationOptions {
   }
   
   @scala.inline
-  implicit class NotificationOptionsOps[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreMouseOver(value: Boolean): Self = StObject.set(x, "ignoreMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreMouseOverUndefined: Self = StObject.set(x, "ignoreMouseOver", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreMouseOver(value: Boolean): Self = this.set("ignoreMouseOver", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteIgnoreMouseOver: Self = this.set("ignoreMouseOver", js.undefined)
+    def setOnClick(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMessage(value: js.Any): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setOnClose(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClick(value: /* callback */ js.Function0[Unit] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnDismiss(value: /* callback */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnClose(value: /* callback */ js.Function0[Unit] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
-    
-    @scala.inline
-    def setOnDismiss(value: /* callback */ js.Function0[Unit] => Unit): Self = this.set("onDismiss", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     
     @scala.inline
     def setOnError(
       value: /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit] => Unit
-    ): Self = this.set("onError", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnMessage(value: /* callback */ js.Function1[/* message */ js.Any, Unit] => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    def setOnMessage(value: /* callback */ js.Function1[/* message */ js.Any, Unit] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     
     @scala.inline
-    def setOnShow(value: /* callback */ js.Function1[/* successObj */ SuccessObj, Unit] => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
+    def setOnShow(value: /* callback */ js.Function1[/* successObj */ SuccessObj, Unit] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def setTimeout(value: Double | never): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double | never): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

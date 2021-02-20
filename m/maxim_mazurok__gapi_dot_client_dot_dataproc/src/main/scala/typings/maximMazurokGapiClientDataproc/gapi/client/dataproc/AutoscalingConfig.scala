@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoscalingConfig extends js.Object {
+trait AutoscalingConfig extends StObject {
   
   /**
     * Optional. The autoscaling policy used by the cluster.Only resource names including projectid and location (region) are valid. Examples:
@@ -23,24 +24,12 @@ object AutoscalingConfig {
   }
   
   @scala.inline
-  implicit class AutoscalingConfigOps[Self <: AutoscalingConfig] (val x: Self) extends AnyVal {
+  implicit class AutoscalingConfigMutableBuilder[Self <: AutoscalingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyUri(value: String): Self = StObject.set(x, "policyUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyUri(value: String): Self = this.set("policyUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyUri: Self = this.set("policyUri", js.undefined)
+    def setPolicyUriUndefined: Self = StObject.set(x, "policyUri", js.undefined)
   }
 }

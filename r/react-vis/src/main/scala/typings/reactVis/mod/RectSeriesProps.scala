@@ -1,5 +1,6 @@
 package typings.reactVis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object RectSeriesProps {
   }
   
   @scala.inline
-  implicit class RectSeriesPropsOps[Self <: RectSeriesProps] (val x: Self) extends AnyVal {
+  implicit class RectSeriesPropsMutableBuilder[Self <: RectSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinePosAttr(value: String): Self = StObject.set(x, "linePosAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinePosAttrUndefined: Self = StObject.set(x, "linePosAttr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineSizeAttr(value: String): Self = StObject.set(x, "lineSizeAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinePosAttr(value: String): Self = this.set("linePosAttr", value.asInstanceOf[js.Any])
+    def setLineSizeAttrUndefined: Self = StObject.set(x, "lineSizeAttr", js.undefined)
     
     @scala.inline
-    def deleteLinePosAttr: Self = this.set("linePosAttr", js.undefined)
+    def setValuePosAttr(value: String): Self = StObject.set(x, "valuePosAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSizeAttr(value: String): Self = this.set("lineSizeAttr", value.asInstanceOf[js.Any])
+    def setValuePosAttrUndefined: Self = StObject.set(x, "valuePosAttr", js.undefined)
     
     @scala.inline
-    def deleteLineSizeAttr: Self = this.set("lineSizeAttr", js.undefined)
+    def setValueSizeAttr(value: String): Self = StObject.set(x, "valueSizeAttr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuePosAttr(value: String): Self = this.set("valuePosAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuePosAttr: Self = this.set("valuePosAttr", js.undefined)
-    
-    @scala.inline
-    def setValueSizeAttr(value: String): Self = this.set("valueSizeAttr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSizeAttr: Self = this.set("valueSizeAttr", js.undefined)
+    def setValueSizeAttrUndefined: Self = StObject.set(x, "valueSizeAttr", js.undefined)
   }
 }

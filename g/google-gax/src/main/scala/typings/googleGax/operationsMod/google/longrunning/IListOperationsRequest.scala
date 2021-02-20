@@ -1,35 +1,71 @@
 package typings.googleGax.operationsMod.google.longrunning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListOperationsRequest. */
-trait IListOperationsRequest extends js.Object {
+@js.native
+trait IListOperationsRequest extends StObject {
+  
   /** ListOperationsRequest filter */
-  var filter: js.UndefOr[String | Null] = js.undefined
+  var filter: js.UndefOr[String | Null] = js.native
+  
   /** ListOperationsRequest name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
+  
   /** ListOperationsRequest pageSize */
-  var pageSize: js.UndefOr[Double | Null] = js.undefined
+  var pageSize: js.UndefOr[Double | Null] = js.native
+  
   /** ListOperationsRequest pageToken */
-  var pageToken: js.UndefOr[String | Null] = js.undefined
+  var pageToken: js.UndefOr[String | Null] = js.native
 }
-
 object IListOperationsRequest {
+  
   @scala.inline
-  def apply(
-    filter: js.UndefOr[Null | String] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined,
-    pageSize: js.UndefOr[Null | Double] = js.undefined,
-    pageToken: js.UndefOr[Null | String] = js.undefined
-  ): IListOperationsRequest = {
+  def apply(): IListOperationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageToken)) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListOperationsRequest]
   }
+  
+  @scala.inline
+  implicit class IListOperationsRequestMutableBuilder[Self <: IListOperationsRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFilterNull: Self = StObject.set(x, "filter", null)
+    
+    @scala.inline
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPageSizeNull: Self = StObject.set(x, "pageSize", null)
+    
+    @scala.inline
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    @scala.inline
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
+    
+    @scala.inline
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+  }
 }
-

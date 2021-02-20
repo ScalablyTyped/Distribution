@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReplicationRunStageDetails extends js.Object {
+trait ReplicationRunStageDetails extends StObject {
   
   /**
     * The current stage of a replication run.
@@ -26,30 +27,18 @@ object ReplicationRunStageDetails {
   }
   
   @scala.inline
-  implicit class ReplicationRunStageDetailsOps[Self <: ReplicationRunStageDetails] (val x: Self) extends AnyVal {
+  implicit class ReplicationRunStageDetailsMutableBuilder[Self <: ReplicationRunStageDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStage(value: ReplicationRunStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStageProgress(value: ReplicationRunStageProgress): Self = StObject.set(x, "stageProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStageProgressUndefined: Self = StObject.set(x, "stageProgress", js.undefined)
     
     @scala.inline
-    def setStage(value: ReplicationRunStage): Self = this.set("stage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStage: Self = this.set("stage", js.undefined)
-    
-    @scala.inline
-    def setStageProgress(value: ReplicationRunStageProgress): Self = this.set("stageProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStageProgress: Self = this.set("stageProgress", js.undefined)
+    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

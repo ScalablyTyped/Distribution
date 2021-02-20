@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents targeting information about video.
   */
 @js.native
-trait SchemaVideoTargeting extends js.Object {
+trait SchemaVideoTargeting extends StObject {
   
   /**
     * A list of video positions to be excluded. Position types can either be
@@ -32,36 +33,24 @@ object SchemaVideoTargeting {
   }
   
   @scala.inline
-  implicit class SchemaVideoTargetingOps[Self <: SchemaVideoTargeting] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoTargetingMutableBuilder[Self <: SchemaVideoTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "excludedPositionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedPositionTypesUndefined: Self = StObject.set(x, "excludedPositionTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedPositionTypesVarargs(value: String*): Self = StObject.set(x, "excludedPositionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedPositionTypesVarargs(value: String*): Self = this.set("excludedPositionTypes", js.Array(value :_*))
+    def setTargetedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "targetedPositionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedPositionTypes(value: js.Array[String]): Self = this.set("excludedPositionTypes", value.asInstanceOf[js.Any])
+    def setTargetedPositionTypesUndefined: Self = StObject.set(x, "targetedPositionTypes", js.undefined)
     
     @scala.inline
-    def deleteExcludedPositionTypes: Self = this.set("excludedPositionTypes", js.undefined)
-    
-    @scala.inline
-    def setTargetedPositionTypesVarargs(value: String*): Self = this.set("targetedPositionTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetedPositionTypes(value: js.Array[String]): Self = this.set("targetedPositionTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetedPositionTypes: Self = this.set("targetedPositionTypes", js.undefined)
+    def setTargetedPositionTypesVarargs(value: String*): Self = StObject.set(x, "targetedPositionTypes", js.Array(value :_*))
   }
 }

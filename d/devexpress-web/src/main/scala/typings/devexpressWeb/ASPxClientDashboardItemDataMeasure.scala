@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the measure metadata.
   */
 @js.native
-trait ASPxClientDashboardItemDataMeasure extends js.Object {
+trait ASPxClientDashboardItemDataMeasure extends StObject {
   
   /**
     * Gets the data member that identifies the data source list used to provide data for the current measure.
@@ -45,33 +46,21 @@ object ASPxClientDashboardItemDataMeasure {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemDataMeasureOps[Self <: ASPxClientDashboardItemDataMeasure] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemDataMeasureMutableBuilder[Self <: ASPxClientDashboardItemDataMeasure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMember(value: String): Self = this.set("DataMember", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: js.Any => String): Self = this.set("Format", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummaryType(value: String): Self = this.set("SummaryType", value.asInstanceOf[js.Any])
+    def setSummaryType(value: String): Self = StObject.set(x, "SummaryType", value.asInstanceOf[js.Any])
   }
 }

@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,17 +48,19 @@ class Attachment () extends IAttachment {
     */
   def toJSON(): StringDictionary[js.Any] = js.native
 }
-/* static members */
-@JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment")
-@js.native
-object Attachment extends js.Object {
+object Attachment {
   
   /**
     * Creates a new Attachment instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Attachment instance
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.create")
+  @js.native
   def create(): Attachment = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.create")
+  @js.native
   def create(properties: IAttachment): Attachment = js.native
   
   /**
@@ -68,9 +71,18 @@ object Attachment extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.decode")
+  @js.native
   def decode(reader: Reader): Attachment = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.decode")
+  @js.native
   def decode(reader: Reader, length: Double): Attachment = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.decode")
+  @js.native
   def decode(reader: Uint8Array): Attachment = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): Attachment = js.native
   
   /**
@@ -80,7 +92,12 @@ object Attachment extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): Attachment = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): Attachment = js.native
   
   /**
@@ -89,7 +106,12 @@ object Attachment extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.encode")
+  @js.native
   def encode(message: IAttachment): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.encode")
+  @js.native
   def encode(message: IAttachment, writer: Writer): Writer = js.native
   
   /**
@@ -98,7 +120,12 @@ object Attachment extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IAttachment): Writer = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IAttachment, writer: Writer): Writer = js.native
   
   /**
@@ -106,6 +133,9 @@ object Attachment extends js.Object {
     * @param object Plain object
     * @returns Attachment
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): Attachment = js.native
   
   /**
@@ -114,7 +144,12 @@ object Attachment extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.toObject")
+  @js.native
   def toObject(message: Attachment): StringDictionary[js.Any] = js.native
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.toObject")
+  @js.native
   def toObject(message: Attachment, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -122,5 +157,8 @@ object Attachment extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  /* static member */
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.Attachment.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

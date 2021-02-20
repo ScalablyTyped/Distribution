@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about faces in the image. */
 @js.native
-trait ImageWithFaces extends js.Object {
+trait ImageWithFaces extends StObject {
   
   /** Information about what might have caused a failure, such as an image that is too large. Not returned when there is no error. */
   var error: js.UndefOr[ErrorInfo] = js.native
@@ -32,48 +33,36 @@ object ImageWithFaces {
   }
   
   @scala.inline
-  implicit class ImageWithFacesOps[Self <: ImageWithFaces] (val x: Self) extends AnyVal {
+  implicit class ImageWithFacesMutableBuilder[Self <: ImageWithFaces] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: ErrorInfo): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaces(value: js.Array[Face]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacesVarargs(value: Face*): Self = this.set("faces", js.Array(value :_*))
+    def setFacesVarargs(value: Face*): Self = StObject.set(x, "faces", js.Array(value :_*))
     
     @scala.inline
-    def setFaces(value: js.Array[Face]): Self = this.set("faces", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: ErrorInfo): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setResolved_url(value: String): Self = StObject.set(x, "resolved_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setResolved_urlUndefined: Self = StObject.set(x, "resolved_url", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setSource_url(value: String): Self = StObject.set(x, "source_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolved_url(value: String): Self = this.set("resolved_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolved_url: Self = this.set("resolved_url", js.undefined)
-    
-    @scala.inline
-    def setSource_url(value: String): Self = this.set("source_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource_url: Self = this.set("source_url", js.undefined)
+    def setSource_urlUndefined: Self = StObject.set(x, "source_url", js.undefined)
   }
 }

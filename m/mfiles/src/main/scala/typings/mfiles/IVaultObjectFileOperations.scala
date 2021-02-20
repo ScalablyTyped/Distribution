@@ -4,12 +4,13 @@ import typings.mfiles.MFiles.MFFileFormat
 import typings.mfiles.MFiles.MFFileOpenMethod
 import typings.mfiles.MFiles.MFLatestSpecificBehavior
 import typings.mfiles.MFiles.MFOCRZoneRecognitionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultObjectFileOperations extends js.Object {
+trait IVaultObjectFileOperations extends StObject {
   
   def AddEmptyFile(ObjVer: IObjVer, Title: String, Extension: String): IFileVer = js.native
   
@@ -179,143 +180,131 @@ object IVaultObjectFileOperations {
   }
   
   @scala.inline
-  implicit class IVaultObjectFileOperationsOps[Self <: IVaultObjectFileOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultObjectFileOperationsMutableBuilder[Self <: IVaultObjectFileOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEmptyFile(value: (IObjVer, String, String) => IFileVer): Self = StObject.set(x, "AddEmptyFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFile(value: (IObjVer, String, String, String) => IFileVer): Self = StObject.set(x, "AddFile", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseUploadSession(value: Double => Unit): Self = StObject.set(x, "CloseUploadSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddEmptyFile(value: (IObjVer, String, String) => IFileVer): Self = this.set("AddEmptyFile", js.Any.fromFunction3(value))
+    def setConvertToPDF(value: (IObjVer, Double, Boolean, Boolean, Boolean, Boolean) => IObjectVersion): Self = StObject.set(x, "ConvertToPDF", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setAddFile(value: (IObjVer, String, String, String) => IFileVer): Self = this.set("AddFile", js.Any.fromFunction4(value))
+    def setDownloadFile(value: (Double, Double, String) => Unit): Self = StObject.set(x, "DownloadFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCloseUploadSession(value: Double => Unit): Self = this.set("CloseUploadSession", js.Any.fromFunction1(value))
+    def setDownloadFileAsDataURI(value: (IObjVer, Double, Double) => String): Self = StObject.set(x, "DownloadFileAsDataURI", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setConvertToPDF(value: (IObjVer, Double, Boolean, Boolean, Boolean, Boolean) => IObjectVersion): Self = this.set("ConvertToPDF", js.Any.fromFunction6(value))
+    def setDownloadFileEx(value: (Double, Double, String, MFFileFormat) => Unit): Self = StObject.set(x, "DownloadFileEx", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDownloadFile(value: (Double, Double, String) => Unit): Self = this.set("DownloadFile", js.Any.fromFunction3(value))
+    def setDownloadFileInBlocks_Begin(value: (Double, Double) => IFileDownloadSession): Self = StObject.set(x, "DownloadFileInBlocks_Begin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDownloadFileAsDataURI(value: (IObjVer, Double, Double) => String): Self = this.set("DownloadFileAsDataURI", js.Any.fromFunction3(value))
+    def setDownloadFileInBlocks_BeginEx(value: (Double, Double, MFFileFormat) => IFileDownloadSession): Self = StObject.set(x, "DownloadFileInBlocks_BeginEx", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDownloadFileEx(value: (Double, Double, String, MFFileFormat) => Unit): Self = this.set("DownloadFileEx", js.Any.fromFunction4(value))
+    def setDownloadFileInBlocks_BeginEx_32bit(value: (Double, Double, MFFileFormat) => IFileDownloadSession): Self = StObject.set(x, "DownloadFileInBlocks_BeginEx_32bit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDownloadFileInBlocks_Begin(value: (Double, Double) => IFileDownloadSession): Self = this.set("DownloadFileInBlocks_Begin", js.Any.fromFunction2(value))
+    def setDownloadFileInBlocks_Begin_32bit(value: (Double, Double) => IFileDownloadSession): Self = StObject.set(x, "DownloadFileInBlocks_Begin_32bit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDownloadFileInBlocks_BeginEx(value: (Double, Double, MFFileFormat) => IFileDownloadSession): Self = this.set("DownloadFileInBlocks_BeginEx", js.Any.fromFunction3(value))
+    def setDownloadFileInBlocks_ReadBlock(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadFileInBlocks_ReadBlock", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDownloadFileInBlocks_BeginEx_32bit(value: (Double, Double, MFFileFormat) => IFileDownloadSession): Self = this.set("DownloadFileInBlocks_BeginEx_32bit", js.Any.fromFunction3(value))
+    def setDownloadFileInBlocks_ReadBlock_32bit(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "DownloadFileInBlocks_ReadBlock_32bit", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDownloadFileInBlocks_Begin_32bit(value: (Double, Double) => IFileDownloadSession): Self = this.set("DownloadFileInBlocks_Begin_32bit", js.Any.fromFunction2(value))
+    def setGetFileSize(value: IFileVer => Double): Self = StObject.set(x, "GetFileSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDownloadFileInBlocks_ReadBlock(value: (Double, Double, Double) => js.Array[Double]): Self = this.set("DownloadFileInBlocks_ReadBlock", js.Any.fromFunction3(value))
+    def setGetFileSize_32bit(value: IFileVer => Double): Self = StObject.set(x, "GetFileSize_32bit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDownloadFileInBlocks_ReadBlock_32bit(value: (Double, Double, Double) => js.Array[Double]): Self = this.set("DownloadFileInBlocks_ReadBlock_32bit", js.Any.fromFunction3(value))
+    def setGetFiles(value: IObjVer => IObjectFiles): Self = StObject.set(x, "GetFiles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFileSize(value: IFileVer => Double): Self = this.set("GetFileSize", js.Any.fromFunction1(value))
+    def setGetFilesForModificationInEventHandler(value: IObjVer => IObjectFiles): Self = StObject.set(x, "GetFilesForModificationInEventHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFileSize_32bit(value: IFileVer => Double): Self = this.set("GetFileSize_32bit", js.Any.fromFunction1(value))
+    def setGetLatestFileVersion(value: (Double, Boolean) => IFileVer): Self = StObject.set(x, "GetLatestFileVersion", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetFiles(value: IObjVer => IObjectFiles): Self = this.set("GetFiles", js.Any.fromFunction1(value))
+    def setGetObjIDOfFile(value: Double => IObjID): Self = StObject.set(x, "GetObjIDOfFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFilesForModificationInEventHandler(value: IObjVer => IObjectFiles): Self = this.set("GetFilesForModificationInEventHandler", js.Any.fromFunction1(value))
+    def setGetPathInDefaultView(value: (IObjID, Double, Double, Double, MFLatestSpecificBehavior, Boolean) => String): Self = StObject.set(x, "GetPathInDefaultView", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setGetLatestFileVersion(value: (Double, Boolean) => IFileVer): Self = this.set("GetLatestFileVersion", js.Any.fromFunction2(value))
+    def setGetPathInDefaultViewEx(value: (IObjID, Double, Double, Double, MFLatestSpecificBehavior, Boolean, Boolean) => String): Self = StObject.set(x, "GetPathInDefaultViewEx", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setGetObjIDOfFile(value: Double => IObjID): Self = this.set("GetObjIDOfFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPathInDefaultView(value: (IObjID, Double, Double, Double, MFLatestSpecificBehavior, Boolean) => String): Self = this.set("GetPathInDefaultView", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setGetPathInDefaultViewEx(value: (IObjID, Double, Double, Double, MFLatestSpecificBehavior, Boolean, Boolean) => String): Self = this.set("GetPathInDefaultViewEx", js.Any.fromFunction7(value))
-    
-    @scala.inline
-    def setOpenFileInDefaultApplication(value: (Double, IObjVer, IFileVer, MFFileOpenMethod) => Unit): Self = this.set("OpenFileInDefaultApplication", js.Any.fromFunction4(value))
+    def setOpenFileInDefaultApplication(value: (Double, IObjVer, IFileVer, MFFileOpenMethod) => Unit): Self = StObject.set(x, "OpenFileInDefaultApplication", js.Any.fromFunction4(value))
     
     @scala.inline
     def setPerformOCROperation(
       value: (IObjVer, IFileVer, IOCROptions, MFOCRZoneRecognitionMode, IOCRPages, Boolean) => IOCRPageResults
-    ): Self = this.set("PerformOCROperation", js.Any.fromFunction6(value))
+    ): Self = StObject.set(x, "PerformOCROperation", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setRemoveFile(value: (IObjVer, IFileVer) => IObjectVersion): Self = this.set("RemoveFile", js.Any.fromFunction2(value))
+    def setRemoveFile(value: (IObjVer, IFileVer) => IObjectVersion): Self = StObject.set(x, "RemoveFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRenameFile(value: (IObjVer, IFileVer, String, String, Boolean) => IObjectVersion): Self = this.set("RenameFile", js.Any.fromFunction5(value))
+    def setRenameFile(value: (IObjVer, IFileVer, String, String, Boolean) => IObjectVersion): Self = StObject.set(x, "RenameFile", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setUpdateMetadataInFile(value: (IObjVer, Double, Boolean) => IObjectVersion): Self = this.set("UpdateMetadataInFile", js.Any.fromFunction3(value))
+    def setUpdateMetadataInFile(value: (IObjVer, Double, Boolean) => IObjectVersion): Self = StObject.set(x, "UpdateMetadataInFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUploadFile(value: (Double, Double, String) => Unit): Self = this.set("UploadFile", js.Any.fromFunction3(value))
+    def setUploadFile(value: (Double, Double, String) => Unit): Self = StObject.set(x, "UploadFile", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUploadFileBlock(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = this.set("UploadFileBlock", js.Any.fromFunction4(value))
+    def setUploadFileBlock(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "UploadFileBlock", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadFileBlockBegin(value: () => Double): Self = this.set("UploadFileBlockBegin", js.Any.fromFunction0(value))
+    def setUploadFileBlockBegin(value: () => Double): Self = StObject.set(x, "UploadFileBlockBegin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUploadFileBlockBegin_32bit(value: () => Double): Self = this.set("UploadFileBlockBegin_32bit", js.Any.fromFunction0(value))
+    def setUploadFileBlockBegin_32bit(value: () => Double): Self = StObject.set(x, "UploadFileBlockBegin_32bit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUploadFileBlock_32bit(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = this.set("UploadFileBlock_32bit", js.Any.fromFunction4(value))
+    def setUploadFileBlock_32bit(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "UploadFileBlock_32bit", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadFileCommit(value: (Double, Double, Double, Double) => Unit): Self = this.set("UploadFileCommit", js.Any.fromFunction4(value))
+    def setUploadFileCommit(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "UploadFileCommit", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadFileCommit_32bit(value: (Double, Double, Double, Double) => Unit): Self = this.set("UploadFileCommit_32bit", js.Any.fromFunction4(value))
+    def setUploadFileCommit_32bit(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "UploadFileCommit_32bit", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadFromDataURI(value: (IObjVer, Double, Double, String) => Unit): Self = this.set("UploadFromDataURI", js.Any.fromFunction4(value))
+    def setUploadFromDataURI(value: (IObjVer, Double, Double, String) => Unit): Self = StObject.set(x, "UploadFromDataURI", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadTemporaryFile(value: String => Double): Self = this.set("UploadTemporaryFile", js.Any.fromFunction1(value))
+    def setUploadTemporaryFile(value: String => Double): Self = StObject.set(x, "UploadTemporaryFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUploadTemporaryFileBlock(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = this.set("UploadTemporaryFileBlock", js.Any.fromFunction4(value))
+    def setUploadTemporaryFileBlock(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "UploadTemporaryFileBlock", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadTemporaryFileBlockBegin(value: String => Double): Self = this.set("UploadTemporaryFileBlockBegin", js.Any.fromFunction1(value))
+    def setUploadTemporaryFileBlockBegin(value: String => Double): Self = StObject.set(x, "UploadTemporaryFileBlockBegin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUploadTemporaryFileBlockBegin_32bit(value: String => Double): Self = this.set("UploadTemporaryFileBlockBegin_32bit", js.Any.fromFunction1(value))
+    def setUploadTemporaryFileBlockBegin_32bit(value: String => Double): Self = StObject.set(x, "UploadTemporaryFileBlockBegin_32bit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUploadTemporaryFileBlock_32bit(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = this.set("UploadTemporaryFileBlock_32bit", js.Any.fromFunction4(value))
+    def setUploadTemporaryFileBlock_32bit(value: (Double, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "UploadTemporaryFileBlock_32bit", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUploadTemporaryFileCommit(value: (Double, Double) => Unit): Self = this.set("UploadTemporaryFileCommit", js.Any.fromFunction2(value))
+    def setUploadTemporaryFileCommit(value: (Double, Double) => Unit): Self = StObject.set(x, "UploadTemporaryFileCommit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUploadTemporaryFileCommit_32bit(value: (Double, Double) => Unit): Self = this.set("UploadTemporaryFileCommit_32bit", js.Any.fromFunction2(value))
+    def setUploadTemporaryFileCommit_32bit(value: (Double, Double) => Unit): Self = StObject.set(x, "UploadTemporaryFileCommit_32bit", js.Any.fromFunction2(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object APNSNotificationPayload {
   }
   
   @scala.inline
-  implicit class APNSNotificationPayloadOps[Self <: APNSNotificationPayload] (val x: Self) extends AnyVal {
+  implicit class APNSNotificationPayloadMutableBuilder[Self <: APNSNotificationPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApnsPushType(value: String): Self = StObject.set(x, "apnsPushType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApnsPushTypeUndefined: Self = StObject.set(x, "apnsPushType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurations(value: js.Array[APNS2Configuration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationsVarargs(value: APNS2Configuration*): Self = this.set("configurations", js.Array(value :_*))
+    def setConfigurationsVarargs(value: APNS2Configuration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurations(value: js.Array[APNS2Configuration]): Self = this.set("configurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsSilent(value: Boolean): Self = this.set("isSilent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApnsPushType(value: String): Self = this.set("apnsPushType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApnsPushType: Self = this.set("apnsPushType", js.undefined)
+    def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
   }
 }

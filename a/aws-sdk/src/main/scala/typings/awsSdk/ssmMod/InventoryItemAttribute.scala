@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryItemAttribute extends js.Object {
+trait InventoryItemAttribute extends StObject {
   
   /**
     * The data type of the inventory item attribute. 
@@ -26,24 +27,12 @@ object InventoryItemAttribute {
   }
   
   @scala.inline
-  implicit class InventoryItemAttributeOps[Self <: InventoryItemAttribute] (val x: Self) extends AnyVal {
+  implicit class InventoryItemAttributeMutableBuilder[Self <: InventoryItemAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: InventoryAttributeDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataType(value: InventoryAttributeDataType): Self = this.set("DataType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: InventoryItemAttributeName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: InventoryItemAttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

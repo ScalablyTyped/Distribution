@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,48 +45,36 @@ object MedicationIngredient {
   }
   
   @scala.inline
-  implicit class MedicationIngredientOps[Self <: MedicationIngredient] (val x: Self) extends AnyVal {
+  implicit class MedicationIngredientMutableBuilder[Self <: MedicationIngredient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Ratio): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isActive(value: Element): Self = this.set("_isActive", value.asInstanceOf[js.Any])
+    def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
     
     @scala.inline
-    def delete_isActive: Self = this.set("_isActive", js.undefined)
+    def setItemCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "itemCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Ratio): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setItemCodeableConceptUndefined: Self = StObject.set(x, "itemCodeableConcept", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setItemReference(value: Reference): Self = StObject.set(x, "itemReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setItemReferenceUndefined: Self = StObject.set(x, "itemReference", js.undefined)
     
     @scala.inline
-    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    def set_isActive(value: Element): Self = StObject.set(x, "_isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCodeableConcept(value: CodeableConcept): Self = this.set("itemCodeableConcept", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemCodeableConcept: Self = this.set("itemCodeableConcept", js.undefined)
-    
-    @scala.inline
-    def setItemReference(value: Reference): Self = this.set("itemReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemReference: Self = this.set("itemReference", js.undefined)
+    def set_isActiveUndefined: Self = StObject.set(x, "_isActive", js.undefined)
   }
 }

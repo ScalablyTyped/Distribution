@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.CanAnimate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Clock")
 @js.native
-class Clock protected () extends js.Object {
+class Clock protected () extends StObject {
   def this(options: CanAnimate) = this()
   
   var canAnimate: Boolean = js.native

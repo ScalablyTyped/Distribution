@@ -1,11 +1,12 @@
 package typings.iban
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBANStatic extends js.Object {
+trait IBANStatic extends StObject {
   
   /**
     * @summary Returns the IBAN in a electronic format.

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscriptionQuery extends js.Object {
+trait SubscriptionQuery extends StObject {
   
   /**
     * One or more conditions to query on. If more than 2 conditions are specified, the combined results of each condition is returned (i.e. conditions are logically OR'ed).
@@ -26,27 +27,15 @@ object SubscriptionQuery {
   }
   
   @scala.inline
-  implicit class SubscriptionQueryOps[Self <: SubscriptionQuery] (val x: Self) extends AnyVal {
+  implicit class SubscriptionQueryMutableBuilder[Self <: SubscriptionQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[SubscriptionQueryCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsVarargs(value: SubscriptionQueryCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionsVarargs(value: SubscriptionQueryCondition*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[SubscriptionQueryCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryFlags(value: SubscriptionQueryFlags): Self = this.set("queryFlags", value.asInstanceOf[js.Any])
+    def setQueryFlags(value: SubscriptionQueryFlags): Self = StObject.set(x, "queryFlags", value.asInstanceOf[js.Any])
   }
 }

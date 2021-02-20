@@ -5,12 +5,13 @@ import typings.phonegap.anon.Value
 import typings.phonegap.anon.ValueArray
 import typings.phonegap.anon.ValueNumber
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Globalization extends js.Object {
+trait Globalization extends StObject {
   
   def dateToString(
     date: Date,

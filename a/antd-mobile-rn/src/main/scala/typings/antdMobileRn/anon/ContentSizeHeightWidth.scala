@@ -1,11 +1,12 @@
 package typings.antdMobileRn.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentSizeHeightWidth extends js.Object {
+trait ContentSizeHeightWidth extends StObject {
   
   var contentSize: HeightWidth = js.native
 }
@@ -18,21 +19,9 @@ object ContentSizeHeightWidth {
   }
   
   @scala.inline
-  implicit class ContentSizeHeightWidthOps[Self <: ContentSizeHeightWidth] (val x: Self) extends AnyVal {
+  implicit class ContentSizeHeightWidthMutableBuilder[Self <: ContentSizeHeightWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentSize(value: HeightWidth): Self = this.set("contentSize", value.asInstanceOf[js.Any])
+    def setContentSize(value: HeightWidth): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
   }
 }

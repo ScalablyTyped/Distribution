@@ -4,16 +4,16 @@ import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/postProcessManager", JSImport.Namespace)
-@js.native
-object postProcessManagerMod extends js.Object {
+object postProcessManagerMod {
   
+  @JSImport("babylonjs/PostProcesses/postProcessManager", "PostProcessManager")
   @js.native
-  class PostProcessManager protected () extends js.Object {
+  class PostProcessManager protected () extends StObject {
     /**
       * Creates a new instance PostProcess
       * @param scene The scene that the post process is associated with.

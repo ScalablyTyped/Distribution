@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientHealthcare.anon.OrderBy
 import typings.maximMazurokGapiClientHealthcare.anon.UpdateMask
 import typings.maximMazurokGapiClientHealthcare.anon.Uploadprotocol
 import typings.maximMazurokGapiClientHealthcare.anon.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessagesResource extends js.Object {
+trait MessagesResource extends StObject {
   
   /**
     * Parses and stores an HL7v2 message. This method triggers an asynchronous notification to any Cloud Pub/Sub topic configured in

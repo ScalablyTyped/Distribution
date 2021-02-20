@@ -5,6 +5,7 @@ import typings.officeJs.officeJsStrings.BottomPercent
 import typings.officeJs.officeJsStrings.Invalid
 import typings.officeJs.officeJsStrings.TopItems
 import typings.officeJs.officeJsStrings.TopPercent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalTopBottomRule extends js.Object {
+trait ConditionalTopBottomRule extends StObject {
   
   /**
     *
@@ -47,26 +48,14 @@ object ConditionalTopBottomRule {
   }
   
   @scala.inline
-  implicit class ConditionalTopBottomRuleOps[Self <: ConditionalTopBottomRule] (val x: Self) extends AnyVal {
+  implicit class ConditionalTopBottomRuleMutableBuilder[Self <: ConditionalTopBottomRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRank(value: Double): Self = this.set("rank", value.asInstanceOf[js.Any])
+    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(
       value: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

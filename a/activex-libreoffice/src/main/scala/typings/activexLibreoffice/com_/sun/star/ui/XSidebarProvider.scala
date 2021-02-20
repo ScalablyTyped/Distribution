@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.ui
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.frame.XFrame
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,45 +68,33 @@ object XSidebarProvider {
   }
   
   @scala.inline
-  implicit class XSidebarProviderOps[Self <: XSidebarProvider] (val x: Self) extends AnyVal {
+  implicit class XSidebarProviderMutableBuilder[Self <: XSidebarProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecks(value: XDecks): Self = StObject.set(x, "Decks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDecks(value: () => XDecks): Self = StObject.set(x, "getDecks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecks(value: XDecks): Self = this.set("Decks", value.asInstanceOf[js.Any])
+    def setGetFrame(value: () => XFrame): Self = StObject.set(x, "getFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFrame(value: XFrame): Self = this.set("Frame", value.asInstanceOf[js.Any])
+    def setGetSidebar(value: () => XSidebar): Self = StObject.set(x, "getSidebar", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSidebar(value: XSidebar): Self = this.set("Sidebar", value.asInstanceOf[js.Any])
+    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDecks(value: () => XDecks): Self = this.set("getDecks", js.Any.fromFunction0(value))
+    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFrame(value: () => XFrame): Self = this.set("getFrame", js.Any.fromFunction0(value))
+    def setShowDecks(value: Boolean => Unit): Self = StObject.set(x, "showDecks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSidebar(value: () => XSidebar): Self = this.set("getSidebar", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = this.set("isVisible", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = this.set("setVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowDecks(value: Boolean => Unit): Self = this.set("showDecks", js.Any.fromFunction1(value))
+    def setSidebar(value: XSidebar): Self = StObject.set(x, "Sidebar", value.asInstanceOf[js.Any])
   }
 }

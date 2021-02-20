@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object ThreeSymbolsSet {
   }
   
   @scala.inline
-  implicit class ThreeSymbolsSetOps[Self <: ThreeSymbolsSet] (val x: Self) extends AnyVal {
+  implicit class ThreeSymbolsSetMutableBuilder[Self <: ThreeSymbolsSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGreenCheckSymbol(value: Icon): Self = StObject.set(x, "greenCheckSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRedCrossSymbol(value: Icon): Self = StObject.set(x, "redCrossSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGreenCheckSymbol(value: Icon): Self = this.set("greenCheckSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedCrossSymbol(value: Icon): Self = this.set("redCrossSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYellowExclamationSymbol(value: Icon): Self = this.set("yellowExclamationSymbol", value.asInstanceOf[js.Any])
+    def setYellowExclamationSymbol(value: Icon): Self = StObject.set(x, "yellowExclamationSymbol", value.asInstanceOf[js.Any])
   }
 }

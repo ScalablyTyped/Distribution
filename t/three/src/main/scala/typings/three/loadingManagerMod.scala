@@ -2,18 +2,20 @@ package typings.three
 
 import typings.std.RegExp
 import typings.three.loaderMod.Loader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/LoadingManager", JSImport.Namespace)
-@js.native
-object loadingManagerMod extends js.Object {
+object loadingManagerMod {
   
+  @JSImport("three/src/loaders/LoadingManager", "DefaultLoadingManager")
+  @js.native
   val DefaultLoadingManager: LoadingManager = js.native
   
+  @JSImport("three/src/loaders/LoadingManager", "LoadingManager")
   @js.native
-  class LoadingManager () extends js.Object {
+  class LoadingManager () extends StObject {
     def this(onLoad: js.Function0[Unit]) = this()
     def this(
       onLoad: js.UndefOr[scala.Nothing],

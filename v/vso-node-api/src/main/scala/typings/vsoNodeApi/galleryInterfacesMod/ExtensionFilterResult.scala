@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionFilterResult extends js.Object {
+trait ExtensionFilterResult extends StObject {
   
   /**
     * This is the set of appplications that matched the query filter supplied.
@@ -35,33 +36,21 @@ object ExtensionFilterResult {
   }
   
   @scala.inline
-  implicit class ExtensionFilterResultOps[Self <: ExtensionFilterResult] (val x: Self) extends AnyVal {
+  implicit class ExtensionFilterResultMutableBuilder[Self <: ExtensionFilterResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensions(value: js.Array[PublishedExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionsVarargs(value: PublishedExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPagingToken(value: String): Self = StObject.set(x, "pagingToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: PublishedExtension*): Self = this.set("extensions", js.Array(value :_*))
+    def setResultMetadata(value: js.Array[ExtensionFilterResultMetadata]): Self = StObject.set(x, "resultMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[PublishedExtension]): Self = this.set("extensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagingToken(value: String): Self = this.set("pagingToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultMetadataVarargs(value: ExtensionFilterResultMetadata*): Self = this.set("resultMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setResultMetadata(value: js.Array[ExtensionFilterResultMetadata]): Self = this.set("resultMetadata", value.asInstanceOf[js.Any])
+    def setResultMetadataVarargs(value: ExtensionFilterResultMetadata*): Self = StObject.set(x, "resultMetadata", js.Array(value :_*))
   }
 }

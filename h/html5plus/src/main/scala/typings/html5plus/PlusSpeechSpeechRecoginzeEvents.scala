@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
   */
 @js.native
-trait PlusSpeechSpeechRecoginzeEvents extends js.Object {
+trait PlusSpeechSpeechRecoginzeEvents extends StObject {
   
   /**
     * 结束语音识别
@@ -76,54 +77,42 @@ object PlusSpeechSpeechRecoginzeEvents {
   }
   
   @scala.inline
-  implicit class PlusSpeechSpeechRecoginzeEventsOps[Self <: PlusSpeechSpeechRecoginzeEvents] (val x: Self) extends AnyVal {
+  implicit class PlusSpeechSpeechRecoginzeEventsMutableBuilder[Self <: PlusSpeechSpeechRecoginzeEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setRecognition(value: String): Self = StObject.set(x, "recognition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setRecognitionUndefined: Self = StObject.set(x, "recognition", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setRecognizing(value: String): Self = StObject.set(x, "recognizing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecognition(value: String): Self = this.set("recognition", value.asInstanceOf[js.Any])
+    def setRecognizingUndefined: Self = StObject.set(x, "recognizing", js.undefined)
     
     @scala.inline
-    def deleteRecognition: Self = this.set("recognition", js.undefined)
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecognizing(value: String): Self = this.set("recognizing", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteRecognizing: Self = this.set("recognizing", js.undefined)
+    def setVolumeChange(value: String): Self = StObject.set(x, "volumeChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setVolumeChange(value: String): Self = this.set("volumeChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeChange: Self = this.set("volumeChange", js.undefined)
+    def setVolumeChangeUndefined: Self = StObject.set(x, "volumeChange", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceParameters extends js.Object {
+trait DataSourceParameters extends StObject {
   
   /**
     * Amazon Elasticsearch Service parameters.
@@ -116,138 +117,126 @@ object DataSourceParameters {
   }
   
   @scala.inline
-  implicit class DataSourceParametersOps[Self <: DataSourceParameters] (val x: Self) extends AnyVal {
+  implicit class DataSourceParametersMutableBuilder[Self <: DataSourceParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmazonElasticsearchParameters(value: AmazonElasticsearchParameters): Self = StObject.set(x, "AmazonElasticsearchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmazonElasticsearchParametersUndefined: Self = StObject.set(x, "AmazonElasticsearchParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAthenaParameters(value: AthenaParameters): Self = StObject.set(x, "AthenaParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazonElasticsearchParameters(value: AmazonElasticsearchParameters): Self = this.set("AmazonElasticsearchParameters", value.asInstanceOf[js.Any])
+    def setAthenaParametersUndefined: Self = StObject.set(x, "AthenaParameters", js.undefined)
     
     @scala.inline
-    def deleteAmazonElasticsearchParameters: Self = this.set("AmazonElasticsearchParameters", js.undefined)
+    def setAuroraParameters(value: AuroraParameters): Self = StObject.set(x, "AuroraParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAthenaParameters(value: AthenaParameters): Self = this.set("AthenaParameters", value.asInstanceOf[js.Any])
+    def setAuroraParametersUndefined: Self = StObject.set(x, "AuroraParameters", js.undefined)
     
     @scala.inline
-    def deleteAthenaParameters: Self = this.set("AthenaParameters", js.undefined)
+    def setAuroraPostgreSqlParameters(value: AuroraPostgreSqlParameters): Self = StObject.set(x, "AuroraPostgreSqlParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuroraParameters(value: AuroraParameters): Self = this.set("AuroraParameters", value.asInstanceOf[js.Any])
+    def setAuroraPostgreSqlParametersUndefined: Self = StObject.set(x, "AuroraPostgreSqlParameters", js.undefined)
     
     @scala.inline
-    def deleteAuroraParameters: Self = this.set("AuroraParameters", js.undefined)
+    def setAwsIotAnalyticsParameters(value: AwsIotAnalyticsParameters): Self = StObject.set(x, "AwsIotAnalyticsParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuroraPostgreSqlParameters(value: AuroraPostgreSqlParameters): Self = this.set("AuroraPostgreSqlParameters", value.asInstanceOf[js.Any])
+    def setAwsIotAnalyticsParametersUndefined: Self = StObject.set(x, "AwsIotAnalyticsParameters", js.undefined)
     
     @scala.inline
-    def deleteAuroraPostgreSqlParameters: Self = this.set("AuroraPostgreSqlParameters", js.undefined)
+    def setJiraParameters(value: JiraParameters): Self = StObject.set(x, "JiraParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsIotAnalyticsParameters(value: AwsIotAnalyticsParameters): Self = this.set("AwsIotAnalyticsParameters", value.asInstanceOf[js.Any])
+    def setJiraParametersUndefined: Self = StObject.set(x, "JiraParameters", js.undefined)
     
     @scala.inline
-    def deleteAwsIotAnalyticsParameters: Self = this.set("AwsIotAnalyticsParameters", js.undefined)
+    def setMariaDbParameters(value: MariaDbParameters): Self = StObject.set(x, "MariaDbParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJiraParameters(value: JiraParameters): Self = this.set("JiraParameters", value.asInstanceOf[js.Any])
+    def setMariaDbParametersUndefined: Self = StObject.set(x, "MariaDbParameters", js.undefined)
     
     @scala.inline
-    def deleteJiraParameters: Self = this.set("JiraParameters", js.undefined)
+    def setMySqlParameters(value: MySqlParameters): Self = StObject.set(x, "MySqlParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMariaDbParameters(value: MariaDbParameters): Self = this.set("MariaDbParameters", value.asInstanceOf[js.Any])
+    def setMySqlParametersUndefined: Self = StObject.set(x, "MySqlParameters", js.undefined)
     
     @scala.inline
-    def deleteMariaDbParameters: Self = this.set("MariaDbParameters", js.undefined)
+    def setOracleParameters(value: OracleParameters): Self = StObject.set(x, "OracleParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMySqlParameters(value: MySqlParameters): Self = this.set("MySqlParameters", value.asInstanceOf[js.Any])
+    def setOracleParametersUndefined: Self = StObject.set(x, "OracleParameters", js.undefined)
     
     @scala.inline
-    def deleteMySqlParameters: Self = this.set("MySqlParameters", js.undefined)
+    def setPostgreSqlParameters(value: PostgreSqlParameters): Self = StObject.set(x, "PostgreSqlParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOracleParameters(value: OracleParameters): Self = this.set("OracleParameters", value.asInstanceOf[js.Any])
+    def setPostgreSqlParametersUndefined: Self = StObject.set(x, "PostgreSqlParameters", js.undefined)
     
     @scala.inline
-    def deleteOracleParameters: Self = this.set("OracleParameters", js.undefined)
+    def setPrestoParameters(value: PrestoParameters): Self = StObject.set(x, "PrestoParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostgreSqlParameters(value: PostgreSqlParameters): Self = this.set("PostgreSqlParameters", value.asInstanceOf[js.Any])
+    def setPrestoParametersUndefined: Self = StObject.set(x, "PrestoParameters", js.undefined)
     
     @scala.inline
-    def deletePostgreSqlParameters: Self = this.set("PostgreSqlParameters", js.undefined)
+    def setRdsParameters(value: RdsParameters): Self = StObject.set(x, "RdsParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrestoParameters(value: PrestoParameters): Self = this.set("PrestoParameters", value.asInstanceOf[js.Any])
+    def setRdsParametersUndefined: Self = StObject.set(x, "RdsParameters", js.undefined)
     
     @scala.inline
-    def deletePrestoParameters: Self = this.set("PrestoParameters", js.undefined)
+    def setRedshiftParameters(value: RedshiftParameters): Self = StObject.set(x, "RedshiftParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRdsParameters(value: RdsParameters): Self = this.set("RdsParameters", value.asInstanceOf[js.Any])
+    def setRedshiftParametersUndefined: Self = StObject.set(x, "RedshiftParameters", js.undefined)
     
     @scala.inline
-    def deleteRdsParameters: Self = this.set("RdsParameters", js.undefined)
+    def setS3Parameters(value: S3Parameters): Self = StObject.set(x, "S3Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftParameters(value: RedshiftParameters): Self = this.set("RedshiftParameters", value.asInstanceOf[js.Any])
+    def setS3ParametersUndefined: Self = StObject.set(x, "S3Parameters", js.undefined)
     
     @scala.inline
-    def deleteRedshiftParameters: Self = this.set("RedshiftParameters", js.undefined)
+    def setServiceNowParameters(value: ServiceNowParameters): Self = StObject.set(x, "ServiceNowParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Parameters(value: S3Parameters): Self = this.set("S3Parameters", value.asInstanceOf[js.Any])
+    def setServiceNowParametersUndefined: Self = StObject.set(x, "ServiceNowParameters", js.undefined)
     
     @scala.inline
-    def deleteS3Parameters: Self = this.set("S3Parameters", js.undefined)
+    def setSnowflakeParameters(value: SnowflakeParameters): Self = StObject.set(x, "SnowflakeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNowParameters(value: ServiceNowParameters): Self = this.set("ServiceNowParameters", value.asInstanceOf[js.Any])
+    def setSnowflakeParametersUndefined: Self = StObject.set(x, "SnowflakeParameters", js.undefined)
     
     @scala.inline
-    def deleteServiceNowParameters: Self = this.set("ServiceNowParameters", js.undefined)
+    def setSparkParameters(value: SparkParameters): Self = StObject.set(x, "SparkParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnowflakeParameters(value: SnowflakeParameters): Self = this.set("SnowflakeParameters", value.asInstanceOf[js.Any])
+    def setSparkParametersUndefined: Self = StObject.set(x, "SparkParameters", js.undefined)
     
     @scala.inline
-    def deleteSnowflakeParameters: Self = this.set("SnowflakeParameters", js.undefined)
+    def setSqlServerParameters(value: SqlServerParameters): Self = StObject.set(x, "SqlServerParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSparkParameters(value: SparkParameters): Self = this.set("SparkParameters", value.asInstanceOf[js.Any])
+    def setSqlServerParametersUndefined: Self = StObject.set(x, "SqlServerParameters", js.undefined)
     
     @scala.inline
-    def deleteSparkParameters: Self = this.set("SparkParameters", js.undefined)
+    def setTeradataParameters(value: TeradataParameters): Self = StObject.set(x, "TeradataParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlServerParameters(value: SqlServerParameters): Self = this.set("SqlServerParameters", value.asInstanceOf[js.Any])
+    def setTeradataParametersUndefined: Self = StObject.set(x, "TeradataParameters", js.undefined)
     
     @scala.inline
-    def deleteSqlServerParameters: Self = this.set("SqlServerParameters", js.undefined)
+    def setTwitterParameters(value: TwitterParameters): Self = StObject.set(x, "TwitterParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeradataParameters(value: TeradataParameters): Self = this.set("TeradataParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeradataParameters: Self = this.set("TeradataParameters", js.undefined)
-    
-    @scala.inline
-    def setTwitterParameters(value: TwitterParameters): Self = this.set("TwitterParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwitterParameters: Self = this.set("TwitterParameters", js.undefined)
+    def setTwitterParametersUndefined: Self = StObject.set(x, "TwitterParameters", js.undefined)
   }
 }

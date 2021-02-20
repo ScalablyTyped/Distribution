@@ -1,6 +1,7 @@
 package typings.stremioAddonSdk.mod
 
 import typings.stremioAddonSdk.anon.resourceShortManifestReso
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The addonInterface, as returned from builder.getInterface()
   */
 @js.native
-trait AddonInterface extends js.Object {
+trait AddonInterface extends StObject {
   
   def get(args: resourceShortManifestReso): js.Promise[_] = js.native
   
@@ -24,24 +25,12 @@ object AddonInterface {
   }
   
   @scala.inline
-  implicit class AddonInterfaceOps[Self <: AddonInterface] (val x: Self) extends AnyVal {
+  implicit class AddonInterfaceMutableBuilder[Self <: AddonInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: resourceShortManifestReso => js.Promise[_]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: resourceShortManifestReso => js.Promise[_]): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setManifest(value: Manifest): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    def setManifest(value: Manifest): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
   }
 }

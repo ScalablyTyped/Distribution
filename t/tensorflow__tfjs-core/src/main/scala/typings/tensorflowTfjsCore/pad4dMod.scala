@@ -2,14 +2,15 @@ package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/ops/pad4d", JSImport.Namespace)
-@js.native
-object pad4dMod extends js.Object {
+object pad4dMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/ops/pad4d", "pad4d")
+  @js.native
   val pad4d: js.Function3[
     /* x */ Tensor4D | TensorLike, 
     /* paddings */ js.Tuple4[

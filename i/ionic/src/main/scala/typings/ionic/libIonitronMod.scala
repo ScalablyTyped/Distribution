@@ -1,20 +1,32 @@
 package typings.ionic
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/ionitron", JSImport.Namespace)
-@js.native
-object libIonitronMod extends js.Object {
+object libIonitronMod {
   
+  @JSImport("ionic/lib/ionitron", "getIonitronString")
+  @js.native
   def getIonitronString(quote: String): String = js.native
   
-  @js.native
-  object ionitronStatements extends js.Object {
+  object ionitronStatements {
     
-    var en: js.Array[String] = js.native
+    @JSImport("ionic/lib/ionitron", "ionitronStatements")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var es: js.Array[String] = js.native
+    @JSImport("ionic/lib/ionitron", "ionitronStatements.en")
+    @js.native
+    def en: js.Array[String] = js.native
+    @scala.inline
+    def en_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("en")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ionic/lib/ionitron", "ionitronStatements.es")
+    @js.native
+    def es: js.Array[String] = js.native
+    @scala.inline
+    def es_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("es")(x.asInstanceOf[js.Any])
   }
 }

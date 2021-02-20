@@ -3,14 +3,14 @@ package typings.strtok3
 import typings.node.streamMod.Readable
 import typings.strtok3.abstractTokenizerMod.AbstractTokenizer
 import typings.strtok3.typesMod.IFileInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("strtok3/lib/ReadStreamTokenizer", JSImport.Namespace)
-@js.native
-object readStreamTokenizerMod extends js.Object {
+object readStreamTokenizerMod {
   
+  @JSImport("strtok3/lib/ReadStreamTokenizer", "ReadStreamTokenizer")
   @js.native
   class ReadStreamTokenizer protected () extends AbstractTokenizer {
     def this(stream: Readable) = this()

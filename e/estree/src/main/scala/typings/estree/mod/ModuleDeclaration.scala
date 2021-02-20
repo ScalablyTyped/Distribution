@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,37 +15,37 @@ trait ModuleDeclaration extends Node
 object ModuleDeclaration {
   
   @scala.inline
-  def ImportDeclaration(
-    source: Literal,
-    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier],
-    `type`: typings.estree.estreeStrings.ImportDeclaration
-  ): ModuleDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any])
+  def ExportAllDeclaration(source: Literal, `type`: typings.estree.estreeStrings.ExportAllDeclaration): typings.estree.mod.ExportAllDeclaration = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
-  }
-  
-  @scala.inline
-  def ExportNamedDeclaration(specifiers: js.Array[ExportSpecifier], `type`: typings.estree.estreeStrings.ExportNamedDeclaration): ModuleDeclaration = {
-    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.estree.mod.ExportAllDeclaration]
   }
   
   @scala.inline
   def ExportDefaultDeclaration(
     declaration: Declaration | Expression,
     `type`: typings.estree.estreeStrings.ExportDefaultDeclaration
-  ): ModuleDeclaration = {
+  ): typings.estree.mod.ExportDefaultDeclaration = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.estree.mod.ExportDefaultDeclaration]
   }
   
   @scala.inline
-  def ExportAllDeclaration(source: Literal, `type`: typings.estree.estreeStrings.ExportAllDeclaration): ModuleDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+  def ExportNamedDeclaration(specifiers: js.Array[ExportSpecifier], `type`: typings.estree.estreeStrings.ExportNamedDeclaration): typings.estree.mod.ExportNamedDeclaration = {
+    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.asInstanceOf[typings.estree.mod.ExportNamedDeclaration]
+  }
+  
+  @scala.inline
+  def ImportDeclaration(
+    source: Literal,
+    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier],
+    `type`: typings.estree.estreeStrings.ImportDeclaration
+  ): typings.estree.mod.ImportDeclaration = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.estree.mod.ImportDeclaration]
   }
 }

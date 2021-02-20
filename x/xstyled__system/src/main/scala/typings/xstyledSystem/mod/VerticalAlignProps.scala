@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VerticalAlignProps[TLength] extends js.Object {
+trait VerticalAlignProps[TLength] extends StObject {
   
   val verticalAlign: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object VerticalAlignProps {
   }
   
   @scala.inline
-  implicit class VerticalAlignPropsOps[Self <: VerticalAlignProps[_], TLength] (val x: Self with VerticalAlignProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVerticalAlignVarargs(value: js.Any*): Self = this.set("verticalAlign", js.Array(value :_*))
+  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[_], TLength] (val x: Self with VerticalAlignProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setVerticalAlign(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
         ]
-    ): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    @scala.inline
+    def setVerticalAlignVarargs(value: js.Any*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
   }
 }

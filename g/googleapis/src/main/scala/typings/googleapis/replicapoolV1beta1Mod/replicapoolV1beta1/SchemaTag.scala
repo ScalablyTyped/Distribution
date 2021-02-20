@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Compute Engine Instance resource.
   */
 @js.native
-trait SchemaTag extends js.Object {
+trait SchemaTag extends StObject {
   
   /**
     * The fingerprint of the tag. Required for updating the list of tags.
@@ -30,33 +31,21 @@ object SchemaTag {
   }
   
   @scala.inline
-  implicit class SchemaTagOps[Self <: SchemaTag] (val x: Self) extends AnyVal {
+  implicit class SchemaTagMutableBuilder[Self <: SchemaTag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingerPrint(value: String): Self = StObject.set(x, "fingerPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerPrintUndefined: Self = StObject.set(x, "fingerPrint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerPrint(value: String): Self = this.set("fingerPrint", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteFingerPrint: Self = this.set("fingerPrint", js.undefined)
-    
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[String]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

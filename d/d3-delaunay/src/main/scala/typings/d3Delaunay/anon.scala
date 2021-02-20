@@ -5,13 +5,12 @@ import typings.d3Delaunay.mod.Delaunay.Point
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import typings.std.anon.CopyWithin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined d3-delaunay.d3-delaunay.Delaunay.Polygon & {  index :number} */
   @js.native

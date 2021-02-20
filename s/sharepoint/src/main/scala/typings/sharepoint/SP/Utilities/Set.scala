@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.Utilities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Set extends js.Object {
+trait Set extends StObject {
   
   /** Adds an item to the set */
   def Add(item: js.Any): js.Any = js.native
@@ -79,63 +80,51 @@ object Set {
   }
   
   @scala.inline
-  implicit class SetOps[Self <: Set] (val x: Self) extends AnyVal {
+  implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: js.Any => js.Any): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddArray(value: js.Array[_] => Set): Self = StObject.set(x, "AddArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Set): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: js.Any => js.Any): Self = this.set("Add", js.Any.fromFunction1(value))
+    def setClone(value: () => Set): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddArray(value: js.Array[_] => Set): Self = this.set("AddArray", js.Any.fromFunction1(value))
+    def setContains(value: js.Any => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Set): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setDifference(value: Set => Set): Self = StObject.set(x, "Difference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClone(value: () => Set): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setFirst(value: () => js.Any): Self = StObject.set(x, "First", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: js.Any => Boolean): Self = this.set("Contains", js.Any.fromFunction1(value))
+    def setGetCollection(value: () => js.Any): Self = StObject.set(x, "GetCollection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDifference(value: Set => Set): Self = this.set("Difference", js.Any.fromFunction1(value))
+    def setIntersection(value: Set => Set): Self = StObject.set(x, "Intersection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirst(value: () => js.Any): Self = this.set("First", js.Any.fromFunction0(value))
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCollection(value: () => js.Any): Self = this.set("GetCollection", js.Any.fromFunction0(value))
+    def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIntersection(value: Set => Set): Self = this.set("Intersection", js.Any.fromFunction1(value))
+    def setSymmetricDifference(value: Set => Set): Self = StObject.set(x, "SymmetricDifference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("IsEmpty", js.Any.fromFunction0(value))
+    def setToArray(value: () => js.Array[_]): Self = StObject.set(x, "ToArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemove(value: js.Any => js.Any): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setUnion(value: Set => Set): Self = StObject.set(x, "Union", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSymmetricDifference(value: Set => Set): Self = this.set("SymmetricDifference", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToArray(value: () => js.Array[_]): Self = this.set("ToArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnion(value: Set => Set): Self = this.set("Union", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnionWith(value: Set => Set): Self = this.set("UnionWith", js.Any.fromFunction1(value))
+    def setUnionWith(value: Set => Set): Self = StObject.set(x, "UnionWith", js.Any.fromFunction1(value))
   }
 }

@@ -3,13 +3,14 @@ package typings.evernote.mod.NoteStore
 import typings.evernote.anon.CurrentTime
 import typings.evernote.mod.Types.MessageEventID
 import typings.evernote.mod.Types.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.SyncState")
 @js.native
-class SyncState () extends js.Object {
+class SyncState () extends StObject {
   def this(args: CurrentTime) = this()
   
   var currentTime: js.UndefOr[Timestamp] = js.native

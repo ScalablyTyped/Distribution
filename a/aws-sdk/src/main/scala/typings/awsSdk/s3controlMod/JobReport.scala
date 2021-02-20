@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobReport extends js.Object {
+trait JobReport extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the bucket where specified job-completion report will be stored.
@@ -41,45 +42,33 @@ object JobReport {
   }
   
   @scala.inline
-  implicit class JobReportOps[Self <: JobReport] (val x: Self) extends AnyVal {
+  implicit class JobReportMutableBuilder[Self <: JobReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: S3BucketArnString): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setFormat(value: JobReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: S3BucketArnString): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    def setPrefix(value: ReportPrefixString): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: JobReportFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setReportScope(value: JobReportScope): Self = StObject.set(x, "ReportScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: ReportPrefixString): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setReportScope(value: JobReportScope): Self = this.set("ReportScope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportScope: Self = this.set("ReportScope", js.undefined)
+    def setReportScopeUndefined: Self = StObject.set(x, "ReportScope", js.undefined)
   }
 }

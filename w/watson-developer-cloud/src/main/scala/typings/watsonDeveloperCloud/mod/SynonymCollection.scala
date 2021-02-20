@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SynonymCollection. */
 @js.native
-trait SynonymCollection extends js.Object {
+trait SynonymCollection extends StObject {
   
   /** The pagination data for the returned objects. */
   var pagination: Pagination = js.native
@@ -23,27 +24,15 @@ object SynonymCollection {
   }
   
   @scala.inline
-  implicit class SynonymCollectionOps[Self <: SynonymCollection] (val x: Self) extends AnyVal {
+  implicit class SynonymCollectionMutableBuilder[Self <: SynonymCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSynonyms(value: js.Array[Synonym]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPagination(value: Pagination): Self = this.set("pagination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynonymsVarargs(value: Synonym*): Self = this.set("synonyms", js.Array(value :_*))
-    
-    @scala.inline
-    def setSynonyms(value: js.Array[Synonym]): Self = this.set("synonyms", value.asInstanceOf[js.Any])
+    def setSynonymsVarargs(value: Synonym*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
   }
 }

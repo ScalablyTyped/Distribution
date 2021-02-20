@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateIpGroupsRequest extends js.Object {
+trait AssociateIpGroupsRequest extends StObject {
   
   /**
     * The identifier of the directory.
@@ -26,27 +27,15 @@ object AssociateIpGroupsRequest {
   }
   
   @scala.inline
-  implicit class AssociateIpGroupsRequestOps[Self <: AssociateIpGroupsRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateIpGroupsRequestMutableBuilder[Self <: AssociateIpGroupsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIds(value: IpGroupIdList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupIdsVarargs(value: IpGroupId*): Self = this.set("GroupIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupIds(value: IpGroupIdList): Self = this.set("GroupIds", value.asInstanceOf[js.Any])
+    def setGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
   }
 }

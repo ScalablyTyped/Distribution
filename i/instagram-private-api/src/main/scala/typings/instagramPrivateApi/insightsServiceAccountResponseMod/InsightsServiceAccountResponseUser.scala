@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServiceAccountResponseUser extends js.Object {
+trait InsightsServiceAccountResponseUser extends StObject {
   
   var business_manager: InsightsServiceAccountResponseBusinessManager = js.native
   
@@ -38,39 +39,27 @@ object InsightsServiceAccountResponseUser {
   }
   
   @scala.inline
-  implicit class InsightsServiceAccountResponseUserOps[Self <: InsightsServiceAccountResponseUser] (val x: Self) extends AnyVal {
+  implicit class InsightsServiceAccountResponseUserMutableBuilder[Self <: InsightsServiceAccountResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBusiness_manager(value: InsightsServiceAccountResponseBusinessManager): Self = StObject.set(x, "business_manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBusiness_profile(value: InsightsServiceAccountResponseBusinessProfile): Self = StObject.set(x, "business_profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowers_count(value: Double): Self = StObject.set(x, "followers_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness_manager(value: InsightsServiceAccountResponseBusinessManager): Self = this.set("business_manager", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusiness_profile(value: InsightsServiceAccountResponseBusinessProfile): Self = this.set("business_profile", value.asInstanceOf[js.Any])
+    def setInstagram_user_id(value: String): Self = StObject.set(x, "instagram_user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowers_count(value: Double): Self = this.set("followers_count", value.asInstanceOf[js.Any])
+    def setProfile_picture(value: InsightsServiceAccountResponseProfilePicture): Self = StObject.set(x, "profile_picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstagram_user_id(value: String): Self = this.set("instagram_user_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile_picture(value: InsightsServiceAccountResponseProfilePicture): Self = this.set("profile_picture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

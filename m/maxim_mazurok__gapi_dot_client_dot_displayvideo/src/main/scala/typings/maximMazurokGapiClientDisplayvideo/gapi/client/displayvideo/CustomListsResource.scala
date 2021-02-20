@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDisplayvideo.anon.CallbackFieldsFilter
 import typings.maximMazurokGapiClientDisplayvideo.anon.CustomListId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomListsResource extends js.Object {
+trait CustomListsResource extends StObject {
   
   /** Gets a custom list. */
   def get(): Request[CustomList] = js.native

@@ -23,6 +23,7 @@ import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,16 +73,20 @@ class StringType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MStringType: MicroflowParameterBase = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType")
-@js.native
-object StringType extends js.Object {
+object StringType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new StringType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.create")
+  @js.native
   def create(model: IModel): StringType = js.native
   
   /**
@@ -92,6 +97,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInAppServiceActionParameterUnderParameterType")
+  @js.native
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): StringType = js.native
   
   /**
@@ -102,6 +110,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInAppServiceActionUnderActionReturnType")
+  @js.native
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): StringType = js.native
   
   /**
@@ -112,6 +123,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInConstantUnderType")
+  @js.native
   def createInConstantUnderType(container: Constant): StringType = js.native
   
   /**
@@ -122,6 +136,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInCreateVariableActionUnderVariableType")
+  @js.native
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): StringType = js.native
   
   /**
@@ -132,6 +149,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInDataSetColumnUnderColumnType")
+  @js.native
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): StringType = js.native
   
   /**
@@ -142,6 +162,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInDataSetParameterUnderParameterType")
+  @js.native
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): StringType = js.native
   
   /**
@@ -152,6 +175,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInDocumentTemplateParameterUnderParameterType")
+  @js.native
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): StringType = js.native
   
   /**
@@ -162,6 +188,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.16.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInImportMappingUnderParameterType")
+  @js.native
   def createInImportMappingUnderParameterType(container: ImportMapping): StringType = js.native
   
   /**
@@ -172,6 +201,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInMicroflowBaseUnderMicroflowReturnType")
+  @js.native
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): StringType = js.native
   
   /**
@@ -182,6 +214,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInMicroflowParameterBaseUnderParameterType")
+  @js.native
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): StringType = js.native
   
   /**
@@ -192,6 +227,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInMicroflowParameterObjectUnderVariableType")
+  @js.native
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): StringType = js.native
   
   /**
@@ -202,6 +240,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInPublishedOperationUnderOperationReturnType")
+  @js.native
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): StringType = js.native
   
   /**
@@ -212,6 +253,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInPublishedParameterUnderParameterType")
+  @js.native
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): StringType = js.native
   
   /**
@@ -222,6 +266,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.17.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInRestOperationParameterUnderType")
+  @js.native
   def createInRestOperationParameterUnderType(container: RestOperationParameter): StringType = js.native
   
   /**
@@ -232,6 +279,9 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInResultHandlingUnderVariableType")
+  @js.native
   def createInResultHandlingUnderVariableType(container: ResultHandling): StringType = js.native
   
   /**
@@ -242,9 +292,22 @@ object StringType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.createInValueMappingElementUnderType")
+  @js.native
   def createInValueMappingElementUnderType(container: ValueMappingElement): StringType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.StringType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

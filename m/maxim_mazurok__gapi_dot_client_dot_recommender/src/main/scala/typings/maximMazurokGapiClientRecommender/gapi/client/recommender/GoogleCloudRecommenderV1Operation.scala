@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommenderV1Operation extends js.Object {
+trait GoogleCloudRecommenderV1Operation extends StObject {
   
   /** Type of this operation. Contains one of 'and', 'remove', 'replace', 'move', 'copy', 'test' and custom operations. This field is case-insensitive and always populated. */
   var action: js.UndefOr[String] = js.native
@@ -69,86 +70,74 @@ object GoogleCloudRecommenderV1Operation {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommenderV1OperationOps[Self <: GoogleCloudRecommenderV1Operation] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommenderV1OperationMutableBuilder[Self <: GoogleCloudRecommenderV1Operation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPathFilters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation with TopLevel[js.Any]
-    ): Self = this.set("pathFilters", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePathFilters: Self = this.set("pathFilters", js.undefined)
+    def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
+    
+    @scala.inline
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
     def setPathValueMatchers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation with TopLevel[js.Any]
-    ): Self = this.set("pathValueMatchers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pathValueMatchers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePathValueMatchers: Self = this.set("pathValueMatchers", js.undefined)
+    def setPathValueMatchersUndefined: Self = StObject.set(x, "pathValueMatchers", js.undefined)
     
     @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def setSourcePath(value: String): Self = this.set("sourcePath", value.asInstanceOf[js.Any])
+    def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourcePath: Self = this.set("sourcePath", js.undefined)
+    def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
     
     @scala.inline
-    def setSourceResource(value: String): Self = this.set("sourceResource", value.asInstanceOf[js.Any])
+    def setSourceResource(value: String): Self = StObject.set(x, "sourceResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceResource: Self = this.set("sourceResource", js.undefined)
+    def setSourceResourceUndefined: Self = StObject.set(x, "sourceResource", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueMatcher(value: GoogleCloudRecommenderV1ValueMatcher): Self = StObject.set(x, "valueMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueMatcher(value: GoogleCloudRecommenderV1ValueMatcher): Self = this.set("valueMatcher", value.asInstanceOf[js.Any])
+    def setValueMatcherUndefined: Self = StObject.set(x, "valueMatcher", js.undefined)
     
     @scala.inline
-    def deleteValueMatcher: Self = this.set("valueMatcher", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

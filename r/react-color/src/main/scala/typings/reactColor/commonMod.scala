@@ -1,36 +1,34 @@
 package typings.reactColor
 
-import typings.react.mod.Component
-import typings.reactColor.checkboardMod.CheckboardProps
-import typings.reactColor.commonAlphaMod.AlphaProps
-import typings.reactColor.editableInputMod.EditableInputProps
-import typings.reactColor.hueMod.HueProps
-import typings.reactColor.saturationMod.SaturationProps
+import typings.reactColor.commonAlphaMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-color/lib/components/common", JSImport.Namespace)
-@js.native
-object commonMod extends js.Object {
+object commonMod {
   
+  @JSImport("react-color/lib/components/common", "Alpha")
   @js.native
-  class Alpha ()
-    extends Component[AlphaProps, js.Object, js.Any]
+  class Alpha () extends default
   
+  @JSImport("react-color/lib/components/common", "Checkboard")
   @js.native
   class Checkboard ()
-    extends Component[CheckboardProps, js.Object, js.Any]
+    extends typings.reactColor.checkboardMod.default
   
+  @JSImport("react-color/lib/components/common", "EditableInput")
   @js.native
   class EditableInput ()
-    extends Component[EditableInputProps, js.Object, js.Any]
+    extends typings.reactColor.editableInputMod.default
   
+  @JSImport("react-color/lib/components/common", "Hue")
   @js.native
   class Hue ()
-    extends Component[HueProps, js.Object, js.Any]
+    extends typings.reactColor.hueMod.default
   
+  @JSImport("react-color/lib/components/common", "Saturation")
   @js.native
   class Saturation ()
-    extends Component[SaturationProps, js.Object, js.Any]
+    extends typings.reactColor.saturationMod.default
 }

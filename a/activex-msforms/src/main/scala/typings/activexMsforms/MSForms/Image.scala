@@ -1,12 +1,13 @@
 package typings.activexMsforms.MSForms
 
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   var AutoSize: Boolean = js.native
   
@@ -62,60 +63,48 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackStyle(value: fmBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("AutoSize", value.asInstanceOf[js.Any])
+    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Double): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBorderStyle(value: fmBorderStyle): Self = StObject.set(x, "BorderStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackStyle(value: fmBackStyle): Self = this.set("BackStyle", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    def setMSFormsDotImage_typekey(value: Image): Self = StObject.set(x, "MSForms.Image_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderStyle(value: fmBorderStyle): Self = this.set("BorderStyle", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSFormsDotImage_typekey(value: Image): Self = this.set("MSForms.Image_typekey", value.asInstanceOf[js.Any])
+    def setPicture(value: StdPicture): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setPictureAlignment(value: fmPictureAlignment): Self = StObject.set(x, "PictureAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: fmMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    def setPictureSizeMode(value: fmPictureSizeMode): Self = StObject.set(x, "PictureSizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: StdPicture): Self = this.set("Picture", value.asInstanceOf[js.Any])
+    def setPictureTiling(value: Boolean): Self = StObject.set(x, "PictureTiling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureAlignment(value: fmPictureAlignment): Self = this.set("PictureAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPictureSizeMode(value: fmPictureSizeMode): Self = this.set("PictureSizeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPictureTiling(value: Boolean): Self = this.set("PictureTiling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecialEffect(value: fmSpecialEffect): Self = this.set("SpecialEffect", value.asInstanceOf[js.Any])
+    def setSpecialEffect(value: fmSpecialEffect): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
   }
 }

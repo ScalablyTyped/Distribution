@@ -2,16 +2,16 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
 import typings.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/SpinButton", JSImport.Namespace)
-@js.native
-object libSpinButtonMod extends js.Object {
+object libSpinButtonMod {
   
+  @JSImport("office-ui-fabric-react/lib/SpinButton", "KeyboardSpinDirection")
   @js.native
-  object KeyboardSpinDirection extends js.Object {
+  object KeyboardSpinDirection extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -25,15 +25,23 @@ object libSpinButtonMod extends js.Object {
     /* 1 */ val up: typings.officeUiFabricReact.spinButtonSpinButtonMod.KeyboardSpinDirection.up with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
   @js.native
   class SpinButton protected ()
     extends typings.officeUiFabricReact.spinButtonMod.SpinButton {
     def this(props: ISpinButtonProps) = this()
   }
   /* static members */
-  @js.native
-  object SpinButton extends js.Object {
+  object SpinButton {
     
-    var defaultProps: DefaultProps = js.native
+    @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton.defaultProps")
+    @js.native
+    def defaultProps: DefaultProps = js.native
+    @scala.inline
+    def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

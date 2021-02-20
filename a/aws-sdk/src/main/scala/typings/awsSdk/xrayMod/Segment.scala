@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Segment extends js.Object {
+trait Segment extends StObject {
   
   /**
     * The segment document.
@@ -26,30 +27,18 @@ object Segment {
   }
   
   @scala.inline
-  implicit class SegmentOps[Self <: Segment] (val x: Self) extends AnyVal {
+  implicit class SegmentMutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: SegmentDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: SegmentId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: SegmentDocument): Self = this.set("Document", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocument: Self = this.set("Document", js.undefined)
-    
-    @scala.inline
-    def setId(value: SegmentId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

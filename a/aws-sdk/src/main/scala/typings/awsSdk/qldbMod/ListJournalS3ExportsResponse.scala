@@ -1,11 +1,12 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJournalS3ExportsResponse extends js.Object {
+trait ListJournalS3ExportsResponse extends StObject {
   
   /**
     * The array of journal export job descriptions for all ledgers that are associated with the current AWS account and Region.
@@ -26,33 +27,21 @@ object ListJournalS3ExportsResponse {
   }
   
   @scala.inline
-  implicit class ListJournalS3ExportsResponseOps[Self <: ListJournalS3ExportsResponse] (val x: Self) extends AnyVal {
+  implicit class ListJournalS3ExportsResponseMutableBuilder[Self <: ListJournalS3ExportsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJournalS3Exports(value: JournalS3ExportList): Self = StObject.set(x, "JournalS3Exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJournalS3ExportsUndefined: Self = StObject.set(x, "JournalS3Exports", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = StObject.set(x, "JournalS3Exports", js.Array(value :_*))
     
     @scala.inline
-    def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = this.set("JournalS3Exports", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJournalS3Exports(value: JournalS3ExportList): Self = this.set("JournalS3Exports", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJournalS3Exports: Self = this.set("JournalS3Exports", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

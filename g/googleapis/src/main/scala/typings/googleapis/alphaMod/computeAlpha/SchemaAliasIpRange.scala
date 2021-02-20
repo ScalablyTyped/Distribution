@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An alias IP range attached to an instance&#39;s network interface.
   */
 @js.native
-trait SchemaAliasIpRange extends js.Object {
+trait SchemaAliasIpRange extends StObject {
   
   /**
     * The IP CIDR range represented by this alias IP range. This IP CIDR range
@@ -35,30 +36,18 @@ object SchemaAliasIpRange {
   }
   
   @scala.inline
-  implicit class SchemaAliasIpRangeOps[Self <: SchemaAliasIpRange] (val x: Self) extends AnyVal {
+  implicit class SchemaAliasIpRangeMutableBuilder[Self <: SchemaAliasIpRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpCidrRange(value: String): Self = StObject.set(x, "ipCidrRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpCidrRangeUndefined: Self = StObject.set(x, "ipCidrRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubnetworkRangeName(value: String): Self = StObject.set(x, "subnetworkRangeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpCidrRange(value: String): Self = this.set("ipCidrRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpCidrRange: Self = this.set("ipCidrRange", js.undefined)
-    
-    @scala.inline
-    def setSubnetworkRangeName(value: String): Self = this.set("subnetworkRangeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetworkRangeName: Self = this.set("subnetworkRangeName", js.undefined)
+    def setSubnetworkRangeNameUndefined: Self = StObject.set(x, "subnetworkRangeName", js.undefined)
   }
 }

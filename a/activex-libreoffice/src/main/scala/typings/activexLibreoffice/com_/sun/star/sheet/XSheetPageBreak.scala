@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,33 +72,21 @@ object XSheetPageBreak {
   }
   
   @scala.inline
-  implicit class XSheetPageBreakOps[Self <: XSheetPageBreak] (val x: Self) extends AnyVal {
+  implicit class XSheetPageBreakMutableBuilder[Self <: XSheetPageBreak] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "ColumnPageBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColumnPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = StObject.set(x, "getColumnPageBreaks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRowPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = StObject.set(x, "getRowPageBreaks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnPageBreaks(value: SafeArray[TablePageBreakData]): Self = this.set("ColumnPageBreaks", value.asInstanceOf[js.Any])
+    def setRemoveAllManualPageBreaks(value: () => Unit): Self = StObject.set(x, "removeAllManualPageBreaks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRowPageBreaks(value: SafeArray[TablePageBreakData]): Self = this.set("RowPageBreaks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetColumnPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = this.set("getColumnPageBreaks", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRowPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = this.set("getRowPageBreaks", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveAllManualPageBreaks(value: () => Unit): Self = this.set("removeAllManualPageBreaks", js.Any.fromFunction0(value))
+    def setRowPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "RowPageBreaks", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,21 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/symbol/iterator", JSImport.Namespace)
-@js.native
-object iteratorMod extends js.Object {
+object iteratorMod {
   
-  @JSName("$$iterator")
+  @JSImport("rxjs/internal/symbol/iterator", "$$iterator")
+  @js.native
   val $iterator: js.Symbol = js.native
   
+  @JSImport("rxjs/internal/symbol/iterator", "getSymbolIterator")
+  @js.native
   def getSymbolIterator(): js.Symbol = js.native
   
+  @JSImport("rxjs/internal/symbol/iterator", "iterator")
+  @js.native
   val iterator: js.Symbol = js.native
 }

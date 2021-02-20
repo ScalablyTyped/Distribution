@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcePermission extends js.Object {
+trait ResourcePermission extends StObject {
   
   /**
     * The IAM action to grant or revoke permissions on.
@@ -26,27 +27,15 @@ object ResourcePermission {
   }
   
   @scala.inline
-  implicit class ResourcePermissionOps[Self <: ResourcePermission] (val x: Self) extends AnyVal {
+  implicit class ResourcePermissionMutableBuilder[Self <: ResourcePermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: String*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = this.set("Actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setActions(value: ActionList): Self = this.set("Actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrincipal(value: Principal): Self = this.set("Principal", value.asInstanceOf[js.Any])
+    def setPrincipal(value: Principal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
   }
 }

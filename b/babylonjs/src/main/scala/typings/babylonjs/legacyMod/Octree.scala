@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,13 +35,13 @@ class Octree[T] protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "Octree")
-@js.native
-object Octree extends js.Object {
+object Octree {
   
   /**
     * Adds a mesh into the octree block if it intersects the block
     */
+  @JSImport("babylonjs/Legacy/legacy", "Octree.CreationFuncForMeshes")
+  @js.native
   def CreationFuncForMeshes(
     entry: typings.babylonjs.abstractMeshMod.AbstractMesh,
     block: typings.babylonjs.octreeBlockMod.OctreeBlock[typings.babylonjs.abstractMeshMod.AbstractMesh]
@@ -49,6 +50,8 @@ object Octree extends js.Object {
   /**
     * Adds a submesh into the octree block if it intersects the block
     */
+  @JSImport("babylonjs/Legacy/legacy", "Octree.CreationFuncForSubMeshes")
+  @js.native
   def CreationFuncForSubMeshes(
     entry: typings.babylonjs.subMeshMod.SubMesh,
     block: typings.babylonjs.octreeBlockMod.OctreeBlock[typings.babylonjs.subMeshMod.SubMesh]

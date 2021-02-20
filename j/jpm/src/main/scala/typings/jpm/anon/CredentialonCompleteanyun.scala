@@ -1,13 +1,14 @@
 package typings.jpm.anon
 
 import typings.jpm.FFAddonSDK.NSIException
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined jpm.sdk/passwords.Credential & {  onComplete :(): any | undefined,   onError :(error : jpm.FFAddonSDK.NSIException): any | undefined} */
 @js.native
-trait CredentialonCompleteanyun extends js.Object {
+trait CredentialonCompleteanyun extends StObject {
   
   var formSubmitURL: js.UndefOr[String] = js.native
   
@@ -36,66 +37,54 @@ object CredentialonCompleteanyun {
   }
   
   @scala.inline
-  implicit class CredentialonCompleteanyunOps[Self <: CredentialonCompleteanyun] (val x: Self) extends AnyVal {
+  implicit class CredentialonCompleteanyunMutableBuilder[Self <: CredentialonCompleteanyun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormSubmitURL(value: String): Self = StObject.set(x, "formSubmitURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormSubmitURLUndefined: Self = StObject.set(x, "formSubmitURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnComplete(value: () => _): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setOnError(value: /* error */ NSIException => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormSubmitURL(value: String): Self = this.set("formSubmitURL", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteFormSubmitURL: Self = this.set("formSubmitURL", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnComplete(value: () => _): Self = this.set("onComplete", js.Any.fromFunction0(value))
+    def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setPasswordFieldUndefined: Self = StObject.set(x, "passwordField", js.undefined)
     
     @scala.inline
-    def setOnError(value: /* error */ NSIException => _): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
     
     @scala.inline
-    def setPasswordField(value: String): Self = this.set("passwordField", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasswordField: Self = this.set("passwordField", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRealm: Self = this.set("realm", js.undefined)
+    def setUsernameField(value: String): Self = StObject.set(x, "usernameField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUsernameField(value: String): Self = this.set("usernameField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsernameField: Self = this.set("usernameField", js.undefined)
+    def setUsernameFieldUndefined: Self = StObject.set(x, "usernameField", js.undefined)
   }
 }

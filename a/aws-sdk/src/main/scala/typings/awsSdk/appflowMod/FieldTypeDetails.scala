@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldTypeDetails extends js.Object {
+trait FieldTypeDetails extends StObject {
   
   /**
     *  The type of field, such as string, integer, date, and so on. 
@@ -31,36 +32,24 @@ object FieldTypeDetails {
   }
   
   @scala.inline
-  implicit class FieldTypeDetailsOps[Self <: FieldTypeDetails] (val x: Self) extends AnyVal {
+  implicit class FieldTypeDetailsMutableBuilder[Self <: FieldTypeDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldType(value: FieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterOperators(value: FilterOperatorList): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterOperatorsVarargs(value: Operator*): Self = StObject.set(x, "filterOperators", js.Array(value :_*))
     
     @scala.inline
-    def setFieldType(value: FieldType): Self = this.set("fieldType", value.asInstanceOf[js.Any])
+    def setSupportedValues(value: SupportedValueList): Self = StObject.set(x, "supportedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOperatorsVarargs(value: Operator*): Self = this.set("filterOperators", js.Array(value :_*))
+    def setSupportedValuesUndefined: Self = StObject.set(x, "supportedValues", js.undefined)
     
     @scala.inline
-    def setFilterOperators(value: FilterOperatorList): Self = this.set("filterOperators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedValuesVarargs(value: Value*): Self = this.set("supportedValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedValues(value: SupportedValueList): Self = this.set("supportedValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedValues: Self = this.set("supportedValues", js.undefined)
+    def setSupportedValuesVarargs(value: Value*): Self = StObject.set(x, "supportedValues", js.Array(value :_*))
   }
 }

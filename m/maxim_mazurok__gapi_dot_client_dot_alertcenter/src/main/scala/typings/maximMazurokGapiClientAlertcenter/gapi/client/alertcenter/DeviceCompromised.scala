@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceCompromised extends js.Object {
+trait DeviceCompromised extends StObject {
   
   /** The email of the user this alert was created for. */
   var email: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object DeviceCompromised {
   }
   
   @scala.inline
-  implicit class DeviceCompromisedOps[Self <: DeviceCompromised] (val x: Self) extends AnyVal {
+  implicit class DeviceCompromisedMutableBuilder[Self <: DeviceCompromised] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: js.Array[DeviceCompromisedSecurityDetail]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
-    
-    @scala.inline
-    def setEventsVarargs(value: DeviceCompromisedSecurityDetail*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: js.Array[DeviceCompromisedSecurityDetail]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setEventsVarargs(value: DeviceCompromisedSecurityDetail*): Self = StObject.set(x, "events", js.Array(value :_*))
   }
 }

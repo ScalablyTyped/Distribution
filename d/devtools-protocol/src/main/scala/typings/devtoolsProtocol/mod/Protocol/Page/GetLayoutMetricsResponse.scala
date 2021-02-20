@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLayoutMetricsResponse extends js.Object {
+trait GetLayoutMetricsResponse extends StObject {
   
   /**
     * Size of scrollable area.
@@ -32,27 +33,15 @@ object GetLayoutMetricsResponse {
   }
   
   @scala.inline
-  implicit class GetLayoutMetricsResponseOps[Self <: GetLayoutMetricsResponse] (val x: Self) extends AnyVal {
+  implicit class GetLayoutMetricsResponseMutableBuilder[Self <: GetLayoutMetricsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentSize(value: Rect): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayoutViewport(value: LayoutViewport): Self = StObject.set(x, "layoutViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentSize(value: Rect): Self = this.set("contentSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayoutViewport(value: LayoutViewport): Self = this.set("layoutViewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisualViewport(value: VisualViewport): Self = this.set("visualViewport", value.asInstanceOf[js.Any])
+    def setVisualViewport(value: VisualViewport): Self = StObject.set(x, "visualViewport", value.asInstanceOf[js.Any])
   }
 }

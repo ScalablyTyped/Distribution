@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -183,69 +184,57 @@ object XRowUpdate {
   }
   
   @scala.inline
-  implicit class XRowUpdateOps[Self <: XRowUpdate] (val x: Self) extends AnyVal {
+  implicit class XRowUpdateMutableBuilder[Self <: XRowUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateBinaryStream(value: (Double, XInputStream, Double) => Unit): Self = StObject.set(x, "updateBinaryStream", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUpdateBoolean(value: (Double, Boolean) => Unit): Self = StObject.set(x, "updateBoolean", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateByte(value: (Double, Double) => Unit): Self = StObject.set(x, "updateByte", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateBinaryStream(value: (Double, XInputStream, Double) => Unit): Self = this.set("updateBinaryStream", js.Any.fromFunction3(value))
+    def setUpdateBytes(value: (Double, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "updateBytes", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateBoolean(value: (Double, Boolean) => Unit): Self = this.set("updateBoolean", js.Any.fromFunction2(value))
+    def setUpdateCharacterStream(value: (Double, XInputStream, Double) => Unit): Self = StObject.set(x, "updateCharacterStream", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateByte(value: (Double, Double) => Unit): Self = this.set("updateByte", js.Any.fromFunction2(value))
+    def setUpdateDate(value: (Double, Date) => Unit): Self = StObject.set(x, "updateDate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateBytes(value: (Double, SeqEquiv[Double]) => Unit): Self = this.set("updateBytes", js.Any.fromFunction2(value))
+    def setUpdateDouble(value: (Double, Double) => Unit): Self = StObject.set(x, "updateDouble", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateCharacterStream(value: (Double, XInputStream, Double) => Unit): Self = this.set("updateCharacterStream", js.Any.fromFunction3(value))
+    def setUpdateFloat(value: (Double, Double) => Unit): Self = StObject.set(x, "updateFloat", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateDate(value: (Double, Date) => Unit): Self = this.set("updateDate", js.Any.fromFunction2(value))
+    def setUpdateInt(value: (Double, Double) => Unit): Self = StObject.set(x, "updateInt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateDouble(value: (Double, Double) => Unit): Self = this.set("updateDouble", js.Any.fromFunction2(value))
+    def setUpdateLong(value: (Double, Double) => Unit): Self = StObject.set(x, "updateLong", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateFloat(value: (Double, Double) => Unit): Self = this.set("updateFloat", js.Any.fromFunction2(value))
+    def setUpdateNull(value: Double => Unit): Self = StObject.set(x, "updateNull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdateInt(value: (Double, Double) => Unit): Self = this.set("updateInt", js.Any.fromFunction2(value))
+    def setUpdateNumericObject(value: (Double, js.Any, Double) => Unit): Self = StObject.set(x, "updateNumericObject", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdateLong(value: (Double, Double) => Unit): Self = this.set("updateLong", js.Any.fromFunction2(value))
+    def setUpdateObject(value: (Double, js.Any) => Unit): Self = StObject.set(x, "updateObject", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateNull(value: Double => Unit): Self = this.set("updateNull", js.Any.fromFunction1(value))
+    def setUpdateShort(value: (Double, Double) => Unit): Self = StObject.set(x, "updateShort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateNumericObject(value: (Double, js.Any, Double) => Unit): Self = this.set("updateNumericObject", js.Any.fromFunction3(value))
+    def setUpdateString(value: (Double, String) => Unit): Self = StObject.set(x, "updateString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateObject(value: (Double, js.Any) => Unit): Self = this.set("updateObject", js.Any.fromFunction2(value))
+    def setUpdateTime(value: (Double, Time) => Unit): Self = StObject.set(x, "updateTime", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdateShort(value: (Double, Double) => Unit): Self = this.set("updateShort", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateString(value: (Double, String) => Unit): Self = this.set("updateString", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateTime(value: (Double, Time) => Unit): Self = this.set("updateTime", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateTimestamp(value: (Double, DateTime) => Unit): Self = this.set("updateTimestamp", js.Any.fromFunction2(value))
+    def setUpdateTimestamp(value: (Double, DateTime) => Unit): Self = StObject.set(x, "updateTimestamp", js.Any.fromFunction2(value))
   }
 }

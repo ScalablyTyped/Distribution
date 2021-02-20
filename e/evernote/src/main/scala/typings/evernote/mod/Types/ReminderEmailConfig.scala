@@ -1,26 +1,24 @@
 package typings.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReminderEmailConfig extends js.Object
+sealed trait ReminderEmailConfig extends StObject
 @JSImport("evernote", "Types.ReminderEmailConfig")
 @js.native
-object ReminderEmailConfig extends js.Object {
+object ReminderEmailConfig extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReminderEmailConfig with Double] = js.native
   
   @js.native
   sealed trait DO_NOT_SEND extends ReminderEmailConfig
-  /* 1 */ @js.native
-  object DO_NOT_SEND extends TopLevel[DO_NOT_SEND with Double]
+  /* 1 */ val DO_NOT_SEND: typings.evernote.mod.Types.ReminderEmailConfig.DO_NOT_SEND with Double = js.native
   
   @js.native
   sealed trait SEND_DAILY_EMAIL extends ReminderEmailConfig
-  /* 2 */ @js.native
-  object SEND_DAILY_EMAIL extends TopLevel[SEND_DAILY_EMAIL with Double]
+  /* 2 */ val SEND_DAILY_EMAIL: typings.evernote.mod.Types.ReminderEmailConfig.SEND_DAILY_EMAIL with Double = js.native
 }

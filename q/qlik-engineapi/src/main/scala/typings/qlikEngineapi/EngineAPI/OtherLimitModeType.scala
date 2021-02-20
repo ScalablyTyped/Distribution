@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.OTHER_GT_LIMIT
   - typings.qlikEngineapi.qlikEngineapiStrings.OTHER_LT_LIMIT
 */
-trait OtherLimitModeType extends js.Object
+trait OtherLimitModeType extends StObject
 object OtherLimitModeType {
   
   @scala.inline

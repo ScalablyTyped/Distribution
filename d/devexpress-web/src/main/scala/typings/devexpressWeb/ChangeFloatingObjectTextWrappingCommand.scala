@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A command to modify a floating object's text wrapping settings.
   */
 @js.native
-trait ChangeFloatingObjectTextWrappingCommand extends js.Object {
+trait ChangeFloatingObjectTextWrappingCommand extends StObject {
   
   /**
     * Executes the ChangeFloatingObjectTextWrappingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
@@ -33,24 +34,12 @@ object ChangeFloatingObjectTextWrappingCommand {
   }
   
   @scala.inline
-  implicit class ChangeFloatingObjectTextWrappingCommandOps[Self <: ChangeFloatingObjectTextWrappingCommand] (val x: Self) extends AnyVal {
+  implicit class ChangeFloatingObjectTextWrappingCommandMutableBuilder[Self <: ChangeFloatingObjectTextWrappingCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecute(value: FloatingObjectTextWrappingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExecute(value: FloatingObjectTextWrappingSettings => Boolean): Self = this.set("execute", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetState(value: () => CommandState[FloatingObjectTextWrappingSettings]): Self = this.set("getState", js.Any.fromFunction0(value))
+    def setGetState(value: () => CommandState[FloatingObjectTextWrappingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

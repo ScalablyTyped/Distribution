@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a session of the USSD network protocol. */
 @js.native
-trait UssdSession extends js.Object {
+trait UssdSession extends StObject {
   
   /** Closes the USSD session with the network. */
   def close(): Unit = js.native
@@ -31,24 +32,12 @@ object UssdSession {
   }
   
   @scala.inline
-  implicit class UssdSessionOps[Self <: UssdSession] (val x: Self) extends AnyVal {
+  implicit class UssdSessionMutableBuilder[Self <: UssdSession] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSendMessageAndGetReplyAsync(value: UssdMessage => IPromiseWithIAsyncOperation[UssdReply]): Self = this.set("sendMessageAndGetReplyAsync", js.Any.fromFunction1(value))
+    def setSendMessageAndGetReplyAsync(value: UssdMessage => IPromiseWithIAsyncOperation[UssdReply]): Self = StObject.set(x, "sendMessageAndGetReplyAsync", js.Any.fromFunction1(value))
   }
 }

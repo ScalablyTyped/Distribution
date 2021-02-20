@@ -1,16 +1,16 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTTIFFCompressionType extends js.Object
+sealed trait EnumDWTTIFFCompressionType extends StObject
 /** TIFF file compression type. */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_TIFFCompressionType")
 @js.native
-object EnumDWTTIFFCompressionType extends js.Object {
+object EnumDWTTIFFCompressionType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTTIFFCompressionType with Double] = js.native
@@ -18,58 +18,48 @@ object EnumDWTTIFFCompressionType extends js.Object {
   /** Auto mode. */
   @js.native
   sealed trait TIFF_AUTO extends EnumDWTTIFFCompressionType
-  /* 0 */ @js.native
-  object TIFF_AUTO extends TopLevel[TIFF_AUTO with Double]
+  /* 0 */ val TIFF_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_AUTO with Double = js.native
   
   /** CCITT Group 3 fax encoding. */
   @js.native
   sealed trait TIFF_FAX3 extends EnumDWTTIFFCompressionType
-  /* 3 */ @js.native
-  object TIFF_FAX3 extends TopLevel[TIFF_FAX3 with Double]
+  /* 3 */ val TIFF_FAX3: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_FAX3 with Double = js.native
   
   /** CCITT Group 4 fax encoding */
   @js.native
   sealed trait TIFF_FAX4 extends EnumDWTTIFFCompressionType
-  /* 4 */ @js.native
-  object TIFF_FAX4 extends TopLevel[TIFF_FAX4 with Double]
+  /* 4 */ val TIFF_FAX4: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_FAX4 with Double = js.native
   
   @js.native
   sealed trait TIFF_JPEG extends EnumDWTTIFFCompressionType
-  /* 7 */ @js.native
-  object TIFF_JPEG extends TopLevel[TIFF_JPEG with Double]
+  /* 7 */ val TIFF_JPEG: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_JPEG with Double = js.native
   
   /** Lempel Ziv and Welch */
   @js.native
   sealed trait TIFF_LZW extends EnumDWTTIFFCompressionType
-  /* 5 */ @js.native
-  object TIFF_LZW extends TopLevel[TIFF_LZW with Double]
+  /* 5 */ val TIFF_LZW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_LZW with Double = js.native
   
   /** Dump mode. */
   @js.native
   sealed trait TIFF_NONE extends EnumDWTTIFFCompressionType
-  /* 1 */ @js.native
-  object TIFF_NONE extends TopLevel[TIFF_NONE with Double]
+  /* 1 */ val TIFF_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_NONE with Double = js.native
   
   @js.native
   sealed trait TIFF_PACKBITS extends EnumDWTTIFFCompressionType
-  /* 32773 */ @js.native
-  object TIFF_PACKBITS extends TopLevel[TIFF_PACKBITS with Double]
+  /* 32773 */ val TIFF_PACKBITS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_PACKBITS with Double = js.native
   
   /** CCITT modified Huffman RLE. */
   @js.native
   sealed trait TIFF_RLE extends EnumDWTTIFFCompressionType
-  /* 2 */ @js.native
-  object TIFF_RLE extends TopLevel[TIFF_RLE with Double]
+  /* 2 */ val TIFF_RLE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_RLE with Double = js.native
   
   /** CCITT T.4 (TIFF 6 name). */
   @js.native
   sealed trait TIFF_T4 extends EnumDWTTIFFCompressionType
-  /* 3 */ @js.native
-  object TIFF_T4 extends TopLevel[TIFF_T4 with Double]
+  /* 3 */ val TIFF_T4: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_T4 with Double = js.native
   
   /** CCITT T.6 (TIFF 6 name). */
   @js.native
   sealed trait TIFF_T6 extends EnumDWTTIFFCompressionType
-  /* 4 */ @js.native
-  object TIFF_T6 extends TopLevel[TIFF_T6 with Double]
+  /* 4 */ val TIFF_T6: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType.TIFF_T6 with Double = js.native
 }

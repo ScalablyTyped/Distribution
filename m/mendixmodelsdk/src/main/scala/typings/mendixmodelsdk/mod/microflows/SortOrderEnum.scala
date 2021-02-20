@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.mod.microflows
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.SortOrderEnum")
 @js.native
-class SortOrderEnum ()
-  extends typings.mendixmodelsdk.allModelClassesMod.microflows.SortOrderEnum
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.SortOrderEnum")
-@js.native
-object SortOrderEnum extends js.Object {
+class SortOrderEnum protected ()
+  extends typings.mendixmodelsdk.allModelClassesMod.microflows.SortOrderEnum {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object SortOrderEnum {
   
-  var Ascending: typings.mendixmodelsdk.microflowsMod.microflows.SortOrderEnum = js.native
+  @JSImport("mendixmodelsdk", "microflows.SortOrderEnum")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Descending: typings.mendixmodelsdk.microflowsMod.microflows.SortOrderEnum = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.SortOrderEnum.Ascending")
+  @js.native
+  def Ascending: typings.mendixmodelsdk.microflowsMod.microflows.SortOrderEnum = js.native
+  @scala.inline
+  def Ascending_=(x: typings.mendixmodelsdk.microflowsMod.microflows.SortOrderEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.SortOrderEnum.Descending")
+  @js.native
+  def Descending: typings.mendixmodelsdk.microflowsMod.microflows.SortOrderEnum = js.native
+  @scala.inline
+  def Descending_=(x: typings.mendixmodelsdk.microflowsMod.microflows.SortOrderEnum): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
 }

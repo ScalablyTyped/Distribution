@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3Time extends js.Object {
+trait GoogleActionsOrdersV3Time extends StObject {
   
   /**
     * Represents an order-event time like reservation time, delivery time and so
@@ -23,24 +24,12 @@ object GoogleActionsOrdersV3Time {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3TimeOps[Self <: GoogleActionsOrdersV3Time] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3TimeMutableBuilder[Self <: GoogleActionsOrdersV3Time] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeIso8601(value: String): Self = StObject.set(x, "timeIso8601", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimeIso8601(value: String): Self = this.set("timeIso8601", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeIso8601: Self = this.set("timeIso8601", js.undefined)
+    def setTimeIso8601Undefined: Self = StObject.set(x, "timeIso8601", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMetricWidgetImageInput extends js.Object {
+trait GetMetricWidgetImageInput extends StObject {
   
   /**
     * A JSON string that defines the bitmap graph to be retrieved. The string includes the metrics to include in the graph, statistics, annotations, title, axis limits, and so on. You can include only one MetricWidget parameter in each GetMetricWidgetImage call. For more information about the syntax of MetricWidget see GetMetricWidgetImage: Metric Widget Structure and Syntax. If any metric on the graph could not load all the requested data points, an orange triangle with an exclamation point appears next to the graph legend.
@@ -26,27 +27,15 @@ object GetMetricWidgetImageInput {
   }
   
   @scala.inline
-  implicit class GetMetricWidgetImageInputOps[Self <: GetMetricWidgetImageInput] (val x: Self) extends AnyVal {
+  implicit class GetMetricWidgetImageInputMutableBuilder[Self <: GetMetricWidgetImageInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetricWidget(value: MetricWidget): Self = StObject.set(x, "MetricWidget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "OutputFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMetricWidget(value: MetricWidget): Self = this.set("MetricWidget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputFormat(value: OutputFormat): Self = this.set("OutputFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputFormat: Self = this.set("OutputFormat", js.undefined)
+    def setOutputFormatUndefined: Self = StObject.set(x, "OutputFormat", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * files](sites.versions) that is set to be public at a particular time.
   */
 @js.native
-trait SchemaRelease extends js.Object {
+trait SchemaRelease extends StObject {
   
   /**
     * The deploy description when the release was created. The value can be up
@@ -55,54 +56,42 @@ object SchemaRelease {
   }
   
   @scala.inline
-  implicit class SchemaReleaseOps[Self <: SchemaRelease] (val x: Self) extends AnyVal {
+  implicit class SchemaReleaseMutableBuilder[Self <: SchemaRelease] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setReleaseTime(value: String): Self = StObject.set(x, "releaseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReleaseTimeUndefined: Self = StObject.set(x, "releaseTime", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReleaseUser(value: SchemaActingUser): Self = StObject.set(x, "releaseUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseTime(value: String): Self = this.set("releaseTime", value.asInstanceOf[js.Any])
+    def setReleaseUserUndefined: Self = StObject.set(x, "releaseUser", js.undefined)
     
     @scala.inline
-    def deleteReleaseTime: Self = this.set("releaseTime", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseUser(value: SchemaActingUser): Self = this.set("releaseUser", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteReleaseUser: Self = this.set("releaseUser", js.undefined)
+    def setVersion(value: SchemaVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: SchemaVersion): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

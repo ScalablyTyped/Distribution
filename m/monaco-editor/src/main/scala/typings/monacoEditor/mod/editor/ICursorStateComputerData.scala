@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICursorStateComputerData extends js.Object {
+trait ICursorStateComputerData extends StObject {
   
   /**
     * Get the inverse edit operations of the added edit operations.
@@ -32,24 +33,12 @@ object ICursorStateComputerData {
   }
   
   @scala.inline
-  implicit class ICursorStateComputerDataOps[Self <: ICursorStateComputerData] (val x: Self) extends AnyVal {
+  implicit class ICursorStateComputerDataMutableBuilder[Self <: ICursorStateComputerData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInverseEditOperations(value: () => js.Array[IValidEditOperation]): Self = StObject.set(x, "getInverseEditOperations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInverseEditOperations(value: () => js.Array[IValidEditOperation]): Self = this.set("getInverseEditOperations", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTrackedSelection(value: String => Selection): Self = this.set("getTrackedSelection", js.Any.fromFunction1(value))
+    def setGetTrackedSelection(value: String => Selection): Self = StObject.set(x, "getTrackedSelection", js.Any.fromFunction1(value))
   }
 }

@@ -1,14 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/catch", JSImport.Namespace)
-@js.native
-object catchMod extends js.Object {
+object catchMod {
   
-  @JSName("_catch")
+  @JSImport("rxjs/operator/catch", "_catch")
+  @js.native
   def `catch`[T, R](
     selector: js.Function2[
       /* err */ js.Any, 

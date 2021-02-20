@@ -1,5 +1,6 @@
 package typings.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onViewResize
   - typings.webix.webixStrings.onViewShow
 */
-trait alignEventName extends js.Object
+trait alignEventName extends StObject
 object alignEventName {
   
   @scala.inline

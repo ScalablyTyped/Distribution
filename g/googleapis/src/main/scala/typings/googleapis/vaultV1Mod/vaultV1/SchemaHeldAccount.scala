@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * corpus.
   */
 @js.native
-trait SchemaHeldAccount extends js.Object {
+trait SchemaHeldAccount extends StObject {
   
   /**
     * The account&#39;s ID as provided by the &lt;a
@@ -33,30 +34,18 @@ object SchemaHeldAccount {
   }
   
   @scala.inline
-  implicit class SchemaHeldAccountOps[Self <: SchemaHeldAccount] (val x: Self) extends AnyVal {
+  implicit class SchemaHeldAccountMutableBuilder[Self <: SchemaHeldAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoldTime(value: String): Self = StObject.set(x, "holdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
-    
-    @scala.inline
-    def setHoldTime(value: String): Self = this.set("holdTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoldTime: Self = this.set("holdTime", js.undefined)
+    def setHoldTimeUndefined: Self = StObject.set(x, "holdTime", js.undefined)
   }
 }

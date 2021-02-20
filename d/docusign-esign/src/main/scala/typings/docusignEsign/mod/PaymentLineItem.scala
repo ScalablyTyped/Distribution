@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaymentLineItem extends js.Object {
+trait PaymentLineItem extends StObject {
   
   /**
     * This is a the `tabLabel`
@@ -47,42 +48,30 @@ object PaymentLineItem {
   }
   
   @scala.inline
-  implicit class PaymentLineItemOps[Self <: PaymentLineItem] (val x: Self) extends AnyVal {
+  implicit class PaymentLineItemMutableBuilder[Self <: PaymentLineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmountReference(value: String): Self = StObject.set(x, "amountReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountReferenceUndefined: Self = StObject.set(x, "amountReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmountReference(value: String): Self = this.set("amountReference", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAmountReference: Self = this.set("amountReference", js.undefined)
+    def setItemCode(value: String): Self = StObject.set(x, "itemCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setItemCodeUndefined: Self = StObject.set(x, "itemCode", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCode(value: String): Self = this.set("itemCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemCode: Self = this.set("itemCode", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

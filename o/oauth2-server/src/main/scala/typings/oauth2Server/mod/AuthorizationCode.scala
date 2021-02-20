@@ -2,6 +2,7 @@ package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,42 +35,30 @@ object AuthorizationCode {
   }
   
   @scala.inline
-  implicit class AuthorizationCodeOps[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
+  implicit class AuthorizationCodeMutableBuilder[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationCode(value: String): Self = this.set("authorizationCode", value.asInstanceOf[js.Any])
+    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: Client): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresAt(value: Date): Self = this.set("expiresAt", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def setRedirectUri(value: String): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
     @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
-    
-    @scala.inline
-    def setScope(value: String | js.Array[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

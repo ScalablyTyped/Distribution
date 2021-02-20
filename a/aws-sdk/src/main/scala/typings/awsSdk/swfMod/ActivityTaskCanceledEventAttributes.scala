@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivityTaskCanceledEventAttributes extends js.Object {
+trait ActivityTaskCanceledEventAttributes extends StObject {
   
   /**
     * Details of the cancellation.
@@ -36,36 +37,24 @@ object ActivityTaskCanceledEventAttributes {
   }
   
   @scala.inline
-  implicit class ActivityTaskCanceledEventAttributesOps[Self <: ActivityTaskCanceledEventAttributes] (val x: Self) extends AnyVal {
+  implicit class ActivityTaskCanceledEventAttributesMutableBuilder[Self <: ActivityTaskCanceledEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestCancelRequestedEventId(value: EventId): Self = StObject.set(x, "latestCancelRequestedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
+    def setLatestCancelRequestedEventIdUndefined: Self = StObject.set(x, "latestCancelRequestedEventId", js.undefined)
     
     @scala.inline
-    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Data): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
-    
-    @scala.inline
-    def setLatestCancelRequestedEventId(value: EventId): Self = this.set("latestCancelRequestedEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestCancelRequestedEventId: Self = this.set("latestCancelRequestedEventId", js.undefined)
+    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
   }
 }

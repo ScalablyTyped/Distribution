@@ -1,5 +1,6 @@
 package typings.nwJs.mod.global.NWJSHelpers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * nw.Window Option that is in the same format as the Window subfields in manifest format.
   */
 @js.native
-trait WindowOption extends js.Object {
+trait WindowOption extends StObject {
   
   /**
     * Whether the window should always stay on top of other windows.
@@ -119,138 +120,126 @@ object WindowOption {
   }
   
   @scala.inline
-  implicit class WindowOptionOps[Self <: WindowOption] (val x: Self) extends AnyVal {
+  implicit class WindowOptionMutableBuilder[Self <: WindowOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlways_on_top(value: Boolean): Self = StObject.set(x, "always_on_top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlways_on_topUndefined: Self = StObject.set(x, "always_on_top", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAs_desktop(value: Boolean): Self = StObject.set(x, "as_desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlways_on_top(value: Boolean): Self = this.set("always_on_top", value.asInstanceOf[js.Any])
+    def setAs_desktopUndefined: Self = StObject.set(x, "as_desktop", js.undefined)
     
     @scala.inline
-    def deleteAlways_on_top: Self = this.set("always_on_top", js.undefined)
+    def setFrame(value: Boolean): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAs_desktop(value: Boolean): Self = this.set("as_desktop", value.asInstanceOf[js.Any])
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def deleteAs_desktop: Self = this.set("as_desktop", js.undefined)
+    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: Boolean): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setKiosk(value: Boolean): Self = StObject.set(x, "kiosk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKioskUndefined: Self = StObject.set(x, "kiosk", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMax_height(value: Double): Self = StObject.set(x, "max_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKiosk(value: Boolean): Self = this.set("kiosk", value.asInstanceOf[js.Any])
+    def setMax_heightUndefined: Self = StObject.set(x, "max_height", js.undefined)
     
     @scala.inline
-    def deleteKiosk: Self = this.set("kiosk", js.undefined)
+    def setMax_width(value: Double): Self = StObject.set(x, "max_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_height(value: Double): Self = this.set("max_height", value.asInstanceOf[js.Any])
+    def setMax_widthUndefined: Self = StObject.set(x, "max_width", js.undefined)
     
     @scala.inline
-    def deleteMax_height: Self = this.set("max_height", js.undefined)
+    def setMin_height(value: Double): Self = StObject.set(x, "min_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_width(value: Double): Self = this.set("max_width", value.asInstanceOf[js.Any])
+    def setMin_heightUndefined: Self = StObject.set(x, "min_height", js.undefined)
     
     @scala.inline
-    def deleteMax_width: Self = this.set("max_width", js.undefined)
+    def setMin_width(value: Double): Self = StObject.set(x, "min_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_height(value: Double): Self = this.set("min_height", value.asInstanceOf[js.Any])
+    def setMin_widthUndefined: Self = StObject.set(x, "min_width", js.undefined)
     
     @scala.inline
-    def deleteMin_height: Self = this.set("min_height", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin_width(value: Double): Self = this.set("min_width", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteMin_width: Self = this.set("min_width", js.undefined)
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
+    def setShow_in_taskbar(value: Boolean): Self = StObject.set(x, "show_in_taskbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow_in_taskbarUndefined: Self = StObject.set(x, "show_in_taskbar", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_in_taskbar(value: Boolean): Self = this.set("show_in_taskbar", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShow_in_taskbar: Self = this.set("show_in_taskbar", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setVisible_on_all_workspaces(value: Boolean): Self = StObject.set(x, "visible_on_all_workspaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    def setVisible_on_all_workspacesUndefined: Self = StObject.set(x, "visible_on_all_workspaces", js.undefined)
     
     @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible_on_all_workspaces(value: Boolean): Self = this.set("visible_on_all_workspaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible_on_all_workspaces: Self = this.set("visible_on_all_workspaces", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

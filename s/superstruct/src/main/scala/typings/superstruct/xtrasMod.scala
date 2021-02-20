@@ -10,14 +10,15 @@ import typings.superstruct.structMod.Struct
 import typings.superstruct.structMod.StructContext
 import typings.superstruct.structMod.StructFailure
 import typings.superstruct.structMod.StructResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("superstruct/lib/xtras", JSImport.Namespace)
-@js.native
-object xtrasMod extends js.Object {
+object xtrasMod {
   
+  @JSImport("superstruct/lib/xtras", "toFailures")
+  @js.native
   def toFailures(result: StructResult, context: StructContext): Iterable[StructFailure] = js.native
   
   type Assign[T, U] = Simplify[U with (Omit[T, /* keyof U */ String])]

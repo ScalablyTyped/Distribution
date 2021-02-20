@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.oneCells
   - typings.exceljs.exceljsStrings.absolute
 */
-trait CommentEditAs extends js.Object
+trait CommentEditAs extends StObject
 object CommentEditAs {
   
   @scala.inline

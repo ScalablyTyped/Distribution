@@ -1,12 +1,13 @@
 package typings.awsLambda.anon
 
 import typings.awsLambda.codepipelineMod.Credentials
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionConfiguration extends js.Object {
+trait ActionConfiguration extends StObject {
   
   var actionConfiguration: Configuration = js.native
   
@@ -34,48 +35,36 @@ object ActionConfiguration {
   }
   
   @scala.inline
-  implicit class ActionConfigurationOps[Self <: ActionConfiguration] (val x: Self) extends AnyVal {
+  implicit class ActionConfigurationMutableBuilder[Self <: ActionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionConfiguration(value: Configuration): Self = StObject.set(x, "actionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactCredentials(value: Credentials): Self = StObject.set(x, "artifactCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionConfiguration(value: Configuration): Self = this.set("actionConfiguration", value.asInstanceOf[js.Any])
+    def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
     
     @scala.inline
-    def setArtifactCredentials(value: Credentials): Self = this.set("artifactCredentials", value.asInstanceOf[js.Any])
+    def setEncryptionKey(value: EncryptionKeytypeKMS): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = this.set("inputArtifacts", js.Array(value :_*))
+    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
     @scala.inline
-    def setInputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = this.set("inputArtifacts", value.asInstanceOf[js.Any])
+    def setInputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = StObject.set(x, "inputArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = this.set("outputArtifacts", js.Array(value :_*))
+    def setInputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
     
     @scala.inline
-    def setOutputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = this.set("outputArtifacts", value.asInstanceOf[js.Any])
+    def setOutputArtifacts(value: js.Array[typings.awsLambda.codepipelineMod.Artifact]): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: String): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContinuationToken: Self = this.set("continuationToken", js.undefined)
-    
-    @scala.inline
-    def setEncryptionKey(value: EncryptionKeytypeKMS): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    def setOutputArtifactsVarargs(value: typings.awsLambda.codepipelineMod.Artifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
   }
 }

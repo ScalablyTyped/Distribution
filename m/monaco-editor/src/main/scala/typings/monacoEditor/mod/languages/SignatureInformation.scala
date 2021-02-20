@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.IMarkdownString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureInformation extends js.Object {
+trait SignatureInformation extends StObject {
   
   /**
     * Index of the active parameter.
@@ -41,39 +42,27 @@ object SignatureInformation {
   }
   
   @scala.inline
-  implicit class SignatureInformationOps[Self <: SignatureInformation] (val x: Self) extends AnyVal {
+  implicit class SignatureInformationMutableBuilder[Self <: SignatureInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveParameter(value: Double): Self = StObject.set(x, "activeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveParameterUndefined: Self = StObject.set(x, "activeParameter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentation(value: String | IMarkdownString): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setParametersVarargs(value: ParameterInformation*): Self = this.set("parameters", js.Array(value :_*))
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: js.Array[ParameterInformation]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: js.Array[ParameterInformation]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveParameter(value: Double): Self = this.set("activeParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveParameter: Self = this.set("activeParameter", js.undefined)
-    
-    @scala.inline
-    def setDocumentation(value: String | IMarkdownString): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setParametersVarargs(value: ParameterInformation*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

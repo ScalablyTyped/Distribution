@@ -1,11 +1,12 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalizedLabel extends js.Object {
+trait LocalizedLabel extends StObject {
   
   var HasChanged: Boolean = js.native
   
@@ -26,33 +27,21 @@ object LocalizedLabel {
   }
   
   @scala.inline
-  implicit class LocalizedLabelOps[Self <: LocalizedLabel] (val x: Self) extends AnyVal {
+  implicit class LocalizedLabelMutableBuilder[Self <: LocalizedLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasChanged(value: Boolean): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChanged(value: Boolean): Self = this.set("HasChanged", value.asInstanceOf[js.Any])
+    def setLangaugeCode(value: Double): Self = StObject.set(x, "LangaugeCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsManaged(value: Boolean): Self = this.set("IsManaged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLangaugeCode(value: Double): Self = this.set("LangaugeCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetadataId(value: String): Self = this.set("MetadataId", value.asInstanceOf[js.Any])
+    def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
   }
 }

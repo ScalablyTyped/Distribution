@@ -1,12 +1,13 @@
 package typings.expressValidator.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<express-validator.express-validator/src/matched-data.MatchedDataOptions> */
 @js.native
-trait PartialMatchedDataOptions extends js.Object {
+trait PartialMatchedDataOptions extends StObject {
   
   var includeOptionals: js.UndefOr[Boolean] = js.native
   
@@ -23,39 +24,27 @@ object PartialMatchedDataOptions {
   }
   
   @scala.inline
-  implicit class PartialMatchedDataOptionsOps[Self <: PartialMatchedDataOptions] (val x: Self) extends AnyVal {
+  implicit class PartialMatchedDataOptionsMutableBuilder[Self <: PartialMatchedDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeOptionals(value: Boolean): Self = StObject.set(x, "includeOptionals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeOptionalsUndefined: Self = StObject.set(x, "includeOptionals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocations(value: js.Array[typings.expressValidator.baseMod.Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOptionals(value: Boolean): Self = this.set("includeOptionals", value.asInstanceOf[js.Any])
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def deleteIncludeOptionals: Self = this.set("includeOptionals", js.undefined)
+    def setLocationsVarargs(value: typings.expressValidator.baseMod.Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocationsVarargs(value: typings.expressValidator.baseMod.Location*): Self = this.set("locations", js.Array(value :_*))
+    def setOnlyValidData(value: Boolean): Self = StObject.set(x, "onlyValidData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocations(value: js.Array[typings.expressValidator.baseMod.Location]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
-    
-    @scala.inline
-    def setOnlyValidData(value: Boolean): Self = this.set("onlyValidData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnlyValidData: Self = this.set("onlyValidData", js.undefined)
+    def setOnlyValidDataUndefined: Self = StObject.set(x, "onlyValidData", js.undefined)
   }
 }

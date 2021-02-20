@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.anon.DiameterTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CylinderBuilder ()
   extends typings.babylonjs.BABYLON.CylinderBuilder
 /* static members */
-@JSGlobal("BABYLON.CylinderBuilder")
-@js.native
-object CylinderBuilder extends js.Object {
+object CylinderBuilder {
   
   /**
     * Creates a cylinder or a cone mesh
@@ -42,5 +41,7 @@ object CylinderBuilder extends js.Object {
     * @returns the cylinder mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#cylinder-or-cone
     */
+  @JSGlobal("BABYLON.CylinderBuilder.CreateCylinder")
+  @js.native
   def CreateCylinder(name: String, options: DiameterTop, scene: js.Any): typings.babylonjs.BABYLON.Mesh = js.native
 }

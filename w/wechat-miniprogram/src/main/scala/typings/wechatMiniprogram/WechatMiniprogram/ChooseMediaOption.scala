@@ -6,12 +6,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.camera
 import typings.wechatMiniprogram.wechatMiniprogramStrings.front
 import typings.wechatMiniprogram.wechatMiniprogramStrings.image
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseMediaOption extends js.Object {
+trait ChooseMediaOption extends StObject {
   
   /** 仅在 sourceType 为 camera 时生效，使用前置或后置摄像头
     *
@@ -61,81 +62,69 @@ object ChooseMediaOption {
   }
   
   @scala.inline
-  implicit class ChooseMediaOptionOps[Self <: ChooseMediaOption] (val x: Self) extends AnyVal {
+  implicit class ChooseMediaOptionMutableBuilder[Self <: ChooseMediaOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCamera(value: back | front): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCamera(value: back | front): Self = this.set("camera", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteCamera: Self = this.set("camera", js.undefined)
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setMediaType(value: js.Array[image | video]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
     @scala.inline
-    def deleteMaxDuration: Self = this.set("maxDuration", js.undefined)
+    def setMediaTypeVarargs(value: (image | video)*): Self = StObject.set(x, "mediaType", js.Array(value :_*))
     
     @scala.inline
-    def setMediaTypeVarargs(value: (image | video)*): Self = this.set("mediaType", js.Array(value :_*))
+    def setSizeType(value: js.Array[String]): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: js.Array[image | video]): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
     @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setSizeTypeVarargs(value: String*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
     
     @scala.inline
-    def setSizeTypeVarargs(value: String*): Self = this.set("sizeType", js.Array(value :_*))
+    def setSourceType(value: js.Array[album | camera]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeType(value: js.Array[String]): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    def setSourceTypeVarargs(value: (album | camera)*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
     @scala.inline
-    def setSourceTypeVarargs(value: (album | camera)*): Self = this.set("sourceType", js.Array(value :_*))
+    def setSuccess(value: /* result */ ChooseMediaSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSourceType(value: js.Array[album | camera]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ ChooseMediaSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDns.gapi.client.dns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Policy extends js.Object {
+trait Policy extends StObject {
   
   /**
     * Sets an alternative name server for the associated networks. When specified, all DNS queries are forwarded to a name server that you choose. Names such as .internal are not
@@ -45,69 +46,57 @@ object Policy {
   }
   
   @scala.inline
-  implicit class PolicyOps[Self <: Policy] (val x: Self) extends AnyVal {
+  implicit class PolicyMutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternativeNameServerConfig(value: PolicyAlternativeNameServerConfig): Self = StObject.set(x, "alternativeNameServerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativeNameServerConfigUndefined: Self = StObject.set(x, "alternativeNameServerConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeNameServerConfig(value: PolicyAlternativeNameServerConfig): Self = this.set("alternativeNameServerConfig", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAlternativeNameServerConfig: Self = this.set("alternativeNameServerConfig", js.undefined)
+    def setEnableInboundForwarding(value: Boolean): Self = StObject.set(x, "enableInboundForwarding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnableInboundForwardingUndefined: Self = StObject.set(x, "enableInboundForwarding", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnableLogging(value: Boolean): Self = StObject.set(x, "enableLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableInboundForwarding(value: Boolean): Self = this.set("enableInboundForwarding", value.asInstanceOf[js.Any])
+    def setEnableLoggingUndefined: Self = StObject.set(x, "enableLogging", js.undefined)
     
     @scala.inline
-    def deleteEnableInboundForwarding: Self = this.set("enableInboundForwarding", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableLogging(value: Boolean): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNetworks(value: js.Array[PolicyNetwork]): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNetworksVarargs(value: PolicyNetwork*): Self = this.set("networks", js.Array(value :_*))
-    
-    @scala.inline
-    def setNetworks(value: js.Array[PolicyNetwork]): Self = this.set("networks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworks: Self = this.set("networks", js.undefined)
+    def setNetworksVarargs(value: PolicyNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
   }
 }

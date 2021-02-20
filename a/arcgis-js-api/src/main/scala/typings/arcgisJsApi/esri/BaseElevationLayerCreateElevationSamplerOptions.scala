@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object BaseElevationLayerCreateElevationSamplerOptions {
   }
   
   @scala.inline
-  implicit class BaseElevationLayerCreateElevationSamplerOptionsOps[Self <: BaseElevationLayerCreateElevationSamplerOptions] (val x: Self) extends AnyVal {
+  implicit class BaseElevationLayerCreateElevationSamplerOptionsMutableBuilder[Self <: BaseElevationLayerCreateElevationSamplerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemResolution(value: Double | String): Self = this.set("demResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDemResolution: Self = this.set("demResolution", js.undefined)
-    
-    @scala.inline
-    def setNoDataValue(value: Double): Self = this.set("noDataValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDataValue: Self = this.set("noDataValue", js.undefined)
+    def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
   }
 }

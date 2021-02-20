@@ -2,6 +2,7 @@ package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesServer.anon.Namefilter
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Nameable component describes an entity's ability to be named using a nametag and whether the name shows up or not once applied. Additionally, scripting allows setting the name of the entity directly with the property 'name'.
   */
 @js.native
-trait INameableComponent extends js.Object {
+trait INameableComponent extends StObject {
   
   /**
     * If true, this entity can be renamed with name tags
@@ -54,36 +55,24 @@ object INameableComponent {
   }
   
   @scala.inline
-  implicit class INameableComponentOps[Self <: INameableComponent] (val x: Self) extends AnyVal {
+  implicit class INameableComponentMutableBuilder[Self <: INameableComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNameTagRenaming(value: Boolean): Self = StObject.set(x, "allowNameTagRenaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysShow(value: Boolean): Self = StObject.set(x, "alwaysShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault_trigger(value: MinecraftTrigger | String): Self = StObject.set(x, "default_trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowNameTagRenaming(value: Boolean): Self = this.set("allowNameTagRenaming", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysShow(value: Boolean): Self = this.set("alwaysShow", value.asInstanceOf[js.Any])
+    def setName_actions(value: js.Array[Namefilter]): Self = StObject.set(x, "name_actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_trigger(value: MinecraftTrigger | String): Self = this.set("default_trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName_actionsVarargs(value: Namefilter*): Self = this.set("name_actions", js.Array(value :_*))
-    
-    @scala.inline
-    def setName_actions(value: js.Array[Namefilter]): Self = this.set("name_actions", value.asInstanceOf[js.Any])
+    def setName_actionsVarargs(value: Namefilter*): Self = StObject.set(x, "name_actions", js.Array(value :_*))
   }
 }

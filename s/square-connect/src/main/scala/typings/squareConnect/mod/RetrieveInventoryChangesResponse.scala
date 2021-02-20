@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RetrieveInventoryChangesResponse")
 @js.native
-class RetrieveInventoryChangesResponse () extends js.Object {
+class RetrieveInventoryChangesResponse () extends StObject {
   
   /**
     * The set of inventory changes for the requested object and locations.

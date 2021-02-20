@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Video processing progress and completion time estimate.
   */
 @js.native
-trait SchemaVideoProcessingDetailsProcessingProgress extends js.Object {
+trait SchemaVideoProcessingDetailsProcessingProgress extends StObject {
   
   /**
     * The number of parts of the video that YouTube has already processed. You
@@ -43,36 +44,24 @@ object SchemaVideoProcessingDetailsProcessingProgress {
   }
   
   @scala.inline
-  implicit class SchemaVideoProcessingDetailsProcessingProgressOps[Self <: SchemaVideoProcessingDetailsProcessingProgress] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoProcessingDetailsProcessingProgressMutableBuilder[Self <: SchemaVideoProcessingDetailsProcessingProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartsProcessedUndefined: Self = StObject.set(x, "partsProcessed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartsTotal(value: String): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartsProcessed(value: String): Self = this.set("partsProcessed", value.asInstanceOf[js.Any])
+    def setPartsTotalUndefined: Self = StObject.set(x, "partsTotal", js.undefined)
     
     @scala.inline
-    def deletePartsProcessed: Self = this.set("partsProcessed", js.undefined)
+    def setTimeLeftMs(value: String): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartsTotal(value: String): Self = this.set("partsTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartsTotal: Self = this.set("partsTotal", js.undefined)
-    
-    @scala.inline
-    def setTimeLeftMs(value: String): Self = this.set("timeLeftMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeLeftMs: Self = this.set("timeLeftMs", js.undefined)
+    def setTimeLeftMsUndefined: Self = StObject.set(x, "timeLeftMs", js.undefined)
   }
 }

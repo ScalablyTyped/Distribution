@@ -1,5 +1,6 @@
 package typings.ot.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Create a new UndoManager with an optional maximum history size.
   * @param maxItems The max history size
   */
-class UndoManager () extends js.Object {
+class UndoManager () extends StObject {
   def this(maxItems: Double) = this()
   
   /**

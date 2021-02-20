@@ -1,8 +1,9 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnabledPropagator extends js.Object
+trait EnabledPropagator extends StObject

@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the settings used when converting the XML document to string.
   */
 @js.native
-trait XMLToStringOptions extends js.Object {
+trait XMLToStringOptions extends StObject {
   
   /**
     * Whether to output closing tags for empty element nodes
@@ -66,72 +67,60 @@ object XMLToStringOptions {
   }
   
   @scala.inline
-  implicit class XMLToStringOptionsOps[Self <: XMLToStringOptions] (val x: Self) extends AnyVal {
+  implicit class XMLToStringOptionsMutableBuilder[Self <: XMLToStringOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDontPrettyTextNodes(value: Boolean): Self = StObject.set(x, "dontPrettyTextNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    def setDontPrettyTextNodesUndefined: Self = StObject.set(x, "dontPrettyTextNodes", js.undefined)
     
     @scala.inline
-    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDontPrettyTextNodes(value: Boolean): Self = this.set("dontPrettyTextNodes", value.asInstanceOf[js.Any])
+    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
     @scala.inline
-    def deleteDontPrettyTextNodes: Self = this.set("dontPrettyTextNodes", js.undefined)
+    def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndent(value: String): Self = this.set("indent", value.asInstanceOf[js.Any])
+    def setNewlineUndefined: Self = StObject.set(x, "newline", js.undefined)
     
     @scala.inline
-    def deleteIndent: Self = this.set("indent", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewline(value: String): Self = this.set("newline", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteNewline: Self = this.set("newline", js.undefined)
+    def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setSpaceBeforeSlash(value: String | Boolean): Self = StObject.set(x, "spaceBeforeSlash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPretty(value: Boolean): Self = this.set("pretty", value.asInstanceOf[js.Any])
+    def setSpaceBeforeSlashUndefined: Self = StObject.set(x, "spaceBeforeSlash", js.undefined)
     
     @scala.inline
-    def deletePretty: Self = this.set("pretty", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBeforeSlash(value: String | Boolean): Self = this.set("spaceBeforeSlash", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteSpaceBeforeSlash: Self = this.set("spaceBeforeSlash", js.undefined)
+    def setWriter(value: XMLWriter): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setWriter(value: XMLWriter): Self = this.set("writer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriter: Self = this.set("writer", js.undefined)
+    def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
   }
 }

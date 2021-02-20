@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A simple object representing a push notification.
   */
 @js.native
-trait PushNotificationData extends js.Object {
+trait PushNotificationData extends StObject {
   
   /**
     * The `userinfo` dictionary passed to the Apple Push Notification Service.
@@ -29,30 +30,18 @@ object PushNotificationData {
   }
   
   @scala.inline
-  implicit class PushNotificationDataOps[Self <: PushNotificationData] (val x: Self) extends AnyVal {
+  implicit class PushNotificationDataMutableBuilder[Self <: PushNotificationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInBackground(value: Boolean): Self = StObject.set(x, "inBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setInBackground(value: Boolean): Self = this.set("inBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInBackground: Self = this.set("inBackground", js.undefined)
+    def setInBackgroundUndefined: Self = StObject.set(x, "inBackground", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForwardedValues extends js.Object {
+trait ForwardedValues extends StObject {
   
   /**
     * This field is deprecated. We recommend that you use a cache policy or an origin request policy instead of this field. If you want to include cookies in the cache key, use a cache policy. For more information, see Creating cache policies in the Amazon CloudFront Developer Guide. If you want to send cookies to the origin but not include them in the cache key, use an origin request policy. For more information, see Creating origin request policies in the Amazon CloudFront Developer Guide. A complex type that specifies whether you want CloudFront to forward cookies to the origin and, if so, which ones. For more information about forwarding cookies to the origin, see How CloudFront Forwards, Caches, and Logs Cookies in the Amazon CloudFront Developer Guide.
@@ -36,36 +37,24 @@ object ForwardedValues {
   }
   
   @scala.inline
-  implicit class ForwardedValuesOps[Self <: ForwardedValues] (val x: Self) extends AnyVal {
+  implicit class ForwardedValuesMutableBuilder[Self <: ForwardedValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookies(value: CookiePreference): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: Headers): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
     @scala.inline
-    def setCookies(value: CookiePreference): Self = this.set("Cookies", value.asInstanceOf[js.Any])
+    def setQueryString(value: Boolean): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryString(value: Boolean): Self = this.set("QueryString", value.asInstanceOf[js.Any])
+    def setQueryStringCacheKeys(value: QueryStringCacheKeys): Self = StObject.set(x, "QueryStringCacheKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("Headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("Headers", js.undefined)
-    
-    @scala.inline
-    def setQueryStringCacheKeys(value: QueryStringCacheKeys): Self = this.set("QueryStringCacheKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryStringCacheKeys: Self = this.set("QueryStringCacheKeys", js.undefined)
+    def setQueryStringCacheKeysUndefined: Self = StObject.set(x, "QueryStringCacheKeys", js.undefined)
   }
 }

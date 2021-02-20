@@ -1,12 +1,13 @@
 package typings.reactNativeFirebase.mod.RNFirebase.notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.IOSAttachmentOptions")
 @js.native
-class IOSAttachmentOptions () extends js.Object {
+class IOSAttachmentOptions () extends StObject {
   
   var thumbnailClippingRect: js.Any = js.native
   

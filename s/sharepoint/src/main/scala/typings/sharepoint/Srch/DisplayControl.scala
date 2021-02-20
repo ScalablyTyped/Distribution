@@ -2,6 +2,7 @@ package typings.sharepoint.Srch
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,96 +153,84 @@ object DisplayControl {
   }
   
   @scala.inline
-  implicit class DisplayControlOps[Self <: DisplayControl] (val x: Self) extends AnyVal {
+  implicit class DisplayControlMutableBuilder[Self <: DisplayControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd_oneTimeResultRendered(value: js.Any => Unit): Self = StObject.set(x, "add_oneTimeResultRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdd_queryReady(value: js.Any => Unit): Self = StObject.set(x, "add_queryReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdd_resultRendered(value: js.Any => Unit): Self = StObject.set(x, "add_resultRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd_oneTimeResultRendered(value: js.Any => Unit): Self = this.set("add_oneTimeResultRendered", js.Any.fromFunction1(value))
+    def setDataProvider_QueryIssuing(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_QueryIssuing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAdd_queryReady(value: js.Any => Unit): Self = this.set("add_queryReady", js.Any.fromFunction1(value))
+    def setDataProvider_ResultReady(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "dataProvider_ResultReady", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAdd_resultRendered(value: js.Any => Unit): Self = this.set("add_resultRendered", js.Any.fromFunction1(value))
+    def setGet_currentResultTableCollection(value: () => js.Any): Self = StObject.set(x, "get_currentResultTableCollection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataProvider_QueryIssuing(value: (js.Any, js.Any) => Unit): Self = this.set("dataProvider_QueryIssuing", js.Any.fromFunction2(value))
+    def setGet_dataProvider(value: () => DataProvider): Self = StObject.set(x, "get_dataProvider", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataProvider_ResultReady(value: (js.Any, js.Any) => Unit): Self = this.set("dataProvider_ResultReady", js.Any.fromFunction2(value))
+    def setGet_emptyMessage(value: () => String): Self = StObject.set(x, "get_emptyMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_currentResultTableCollection(value: () => js.Any): Self = this.set("get_currentResultTableCollection", js.Any.fromFunction0(value))
+    def setGet_queryGroupName(value: () => String): Self = StObject.set(x, "get_queryGroupName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_dataProvider(value: () => DataProvider): Self = this.set("get_dataProvider", js.Any.fromFunction0(value))
+    def setGet_renderedResult(value: () => Boolean): Self = StObject.set(x, "get_renderedResult", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_emptyMessage(value: () => String): Self = this.set("get_emptyMessage", js.Any.fromFunction0(value))
+    def setGet_shouldShowNoResultMessage(value: () => Boolean): Self = StObject.set(x, "get_shouldShowNoResultMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_queryGroupName(value: () => String): Self = this.set("get_queryGroupName", js.Any.fromFunction0(value))
+    def setProcessQueryIssuing(value: js.Any => Unit): Self = StObject.set(x, "processQueryIssuing", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_renderedResult(value: () => Boolean): Self = this.set("get_renderedResult", js.Any.fromFunction0(value))
+    def setProcessResultReady(value: js.Any => Unit): Self = StObject.set(x, "processResultReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_shouldShowNoResultMessage(value: () => Boolean): Self = this.set("get_shouldShowNoResultMessage", js.Any.fromFunction0(value))
+    def setRaiseOneTimeResultRenderedEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseOneTimeResultRenderedEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProcessQueryIssuing(value: js.Any => Unit): Self = this.set("processQueryIssuing", js.Any.fromFunction1(value))
+    def setRaiseQueryReadyEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseQueryReadyEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProcessResultReady(value: js.Any => Unit): Self = this.set("processResultReady", js.Any.fromFunction1(value))
+    def setRaiseResultRenderedEvent(value: js.Any => Unit): Self = StObject.set(x, "raiseResultRenderedEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRaiseOneTimeResultRenderedEvent(value: js.Any => Unit): Self = this.set("raiseOneTimeResultRenderedEvent", js.Any.fromFunction1(value))
+    def setRefresh(value: js.Any => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRaiseQueryReadyEvent(value: js.Any => Unit): Self = this.set("raiseQueryReadyEvent", js.Any.fromFunction1(value))
+    def setRemove_oneTimeResultRendered(value: js.Any => Unit): Self = StObject.set(x, "remove_oneTimeResultRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRaiseResultRenderedEvent(value: js.Any => Unit): Self = this.set("raiseResultRenderedEvent", js.Any.fromFunction1(value))
+    def setRemove_queryReady(value: js.Any => Unit): Self = StObject.set(x, "remove_queryReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRefresh(value: js.Any => Unit): Self = this.set("refresh", js.Any.fromFunction1(value))
+    def setRemove_resultRendered(value: js.Any => Unit): Self = StObject.set(x, "remove_resultRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove_oneTimeResultRendered(value: js.Any => Unit): Self = this.set("remove_oneTimeResultRendered", js.Any.fromFunction1(value))
+    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemove_queryReady(value: js.Any => Unit): Self = this.set("remove_queryReady", js.Any.fromFunction1(value))
+    def setSet_currentResultTableCollection(value: js.Any => js.Any): Self = StObject.set(x, "set_currentResultTableCollection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove_resultRendered(value: js.Any => Unit): Self = this.set("remove_resultRendered", js.Any.fromFunction1(value))
+    def setSet_emptyMessage(value: String => String): Self = StObject.set(x, "set_emptyMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRender(value: () => Unit): Self = this.set("render", js.Any.fromFunction0(value))
+    def setSet_queryGroupName(value: String => String): Self = StObject.set(x, "set_queryGroupName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_currentResultTableCollection(value: js.Any => js.Any): Self = this.set("set_currentResultTableCollection", js.Any.fromFunction1(value))
+    def setSet_renderedResult(value: Boolean => Boolean): Self = StObject.set(x, "set_renderedResult", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet_emptyMessage(value: String => String): Self = this.set("set_emptyMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_queryGroupName(value: String => String): Self = this.set("set_queryGroupName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_renderedResult(value: Boolean => Boolean): Self = this.set("set_renderedResult", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_shouldShowNoResultMessage(value: Boolean => Boolean): Self = this.set("set_shouldShowNoResultMessage", js.Any.fromFunction1(value))
+    def setSet_shouldShowNoResultMessage(value: Boolean => Boolean): Self = StObject.set(x, "set_shouldShowNoResultMessage", js.Any.fromFunction1(value))
   }
 }

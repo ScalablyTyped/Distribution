@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Video content for a creative.
   */
 @js.native
-trait SchemaVideoContent extends js.Object {
+trait SchemaVideoContent extends StObject {
   
   /**
     * The URL to fetch a video ad.
@@ -30,30 +31,18 @@ object SchemaVideoContent {
   }
   
   @scala.inline
-  implicit class SchemaVideoContentOps[Self <: SchemaVideoContent] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoContentMutableBuilder[Self <: SchemaVideoContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVideoUrl(value: String): Self = StObject.set(x, "videoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVideoUrlUndefined: Self = StObject.set(x, "videoUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVideoVastXml(value: String): Self = StObject.set(x, "videoVastXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoUrl(value: String): Self = this.set("videoUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoUrl: Self = this.set("videoUrl", js.undefined)
-    
-    @scala.inline
-    def setVideoVastXml(value: String): Self = this.set("videoVastXml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoVastXml: Self = this.set("videoVastXml", js.undefined)
+    def setVideoVastXmlUndefined: Self = StObject.set(x, "videoVastXml", js.undefined)
   }
 }

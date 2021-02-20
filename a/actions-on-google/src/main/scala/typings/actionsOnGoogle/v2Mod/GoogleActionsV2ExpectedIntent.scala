@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2ExpectedIntent extends js.Object {
+trait GoogleActionsV2ExpectedIntent extends StObject {
   
   /**
     * Additional configuration data required by a built-in intent. Possible
@@ -49,36 +50,24 @@ object GoogleActionsV2ExpectedIntent {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2ExpectedIntentOps[Self <: GoogleActionsV2ExpectedIntent] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2ExpectedIntentMutableBuilder[Self <: GoogleActionsV2ExpectedIntent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputValueData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputValueDataUndefined: Self = StObject.set(x, "inputValueData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputValueData(value: ApiClientObjectMap[_]): Self = this.set("inputValueData", value.asInstanceOf[js.Any])
+    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
     @scala.inline
-    def deleteInputValueData: Self = this.set("inputValueData", js.undefined)
+    def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntent: Self = this.set("intent", js.undefined)
-    
-    @scala.inline
-    def setParameterName(value: String): Self = this.set("parameterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterName: Self = this.set("parameterName", js.undefined)
+    def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
   }
 }

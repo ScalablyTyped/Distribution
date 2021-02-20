@@ -1,15 +1,15 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/query-builder/result/DeleteResult", JSImport.Namespace)
-@js.native
-object deleteResultMod extends js.Object {
+object deleteResultMod {
   
+  @JSImport("typeorm/browser/query-builder/result/DeleteResult", "DeleteResult")
   @js.native
-  class DeleteResult () extends js.Object {
+  class DeleteResult () extends StObject {
     
     /**
       * Number of affected rows/documents

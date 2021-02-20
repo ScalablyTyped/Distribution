@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Detected start or end of a structural component.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak extends js.Object {
+trait SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak extends StObject {
   
   /**
     * True if break prepends the element.
@@ -29,30 +30,18 @@ object SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreakOps[Self <: SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreakMutableBuilder[Self <: SchemaGoogleCloudVisionV1p1beta1TextAnnotationDetectedBreak] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPrefixUndefined: Self = StObject.set(x, "isPrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrefix(value: Boolean): Self = this.set("isPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsPrefix: Self = this.set("isPrefix", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

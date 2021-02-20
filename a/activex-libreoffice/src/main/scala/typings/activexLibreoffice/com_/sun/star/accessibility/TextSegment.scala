@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.accessibility
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 1.1.2
   */
 @js.native
-trait TextSegment extends js.Object {
+trait TextSegment extends StObject {
   
   /** Index of the character directly behind the last character of the text segment represented by this structure. The index refers to the enclosing text. */
   var SegmentEnd: Double = js.native
@@ -44,27 +45,15 @@ object TextSegment {
   }
   
   @scala.inline
-  implicit class TextSegmentOps[Self <: TextSegment] (val x: Self) extends AnyVal {
+  implicit class TextSegmentMutableBuilder[Self <: TextSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSegmentEnd(value: Double): Self = StObject.set(x, "SegmentEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSegmentStart(value: Double): Self = StObject.set(x, "SegmentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSegmentEnd(value: Double): Self = this.set("SegmentEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSegmentStart(value: Double): Self = this.set("SegmentStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSegmentText(value: String): Self = this.set("SegmentText", value.asInstanceOf[js.Any])
+    def setSegmentText(value: String): Self = StObject.set(x, "SegmentText", value.asInstanceOf[js.Any])
   }
 }

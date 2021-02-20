@@ -3,13 +3,14 @@ package typings.p5.mod
 import typings.std.Event
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
-trait p5InstanceExtensions extends js.Object {
+trait p5InstanceExtensions extends StObject {
   
   val ADD: typings.p5.mod.ADD = js.native
   

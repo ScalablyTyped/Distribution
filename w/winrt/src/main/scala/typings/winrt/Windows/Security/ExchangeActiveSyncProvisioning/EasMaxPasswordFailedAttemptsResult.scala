@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EasMaxPasswordFailedAttemptsResult extends js.Object
+sealed trait EasMaxPasswordFailedAttemptsResult extends StObject
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult")
 @js.native
-object EasMaxPasswordFailedAttemptsResult extends js.Object {
+object EasMaxPasswordFailedAttemptsResult extends StObject {
   
   @js.native
   sealed trait canBeCompliant extends EasMaxPasswordFailedAttemptsResult

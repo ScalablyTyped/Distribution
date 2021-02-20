@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait APNSMessage extends js.Object {
+trait APNSMessage extends StObject {
   
   /**
     * The type of push notification to send. Valid values are: alert - For a standard notification that's displayed on recipients' devices and prompts a recipient to interact with the notification. background - For a silent notification that delivers content in the background and isn't displayed on recipients' devices. complication - For a notification that contains update information for an app’s complication timeline. fileprovider - For a notification that signals changes to a File Provider extension. mdm - For a notification that tells managed devices to contact the MDM server. voip - For a notification that provides information about an incoming VoIP call. Amazon Pinpoint specifies this value in the apns-push-type request header when it sends the notification message to APNs. If you don't specify a value for this property, Amazon Pinpoint sets the value to alert or background automatically, based on the value that you specify for the SilentPush or RawContent property of the message. For more information about the apns-push-type request header, see Sending Notification Requests to APNs on the Apple Developer website.
@@ -106,126 +107,114 @@ object APNSMessage {
   }
   
   @scala.inline
-  implicit class APNSMessageOps[Self <: APNSMessage] (val x: Self) extends AnyVal {
+  implicit class APNSMessageMutableBuilder[Self <: APNSMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAPNSPushType(value: string): Self = StObject.set(x, "APNSPushType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAPNSPushTypeUndefined: Self = StObject.set(x, "APNSPushType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPNSPushType(value: string): Self = this.set("APNSPushType", value.asInstanceOf[js.Any])
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def deleteAPNSPushType: Self = this.set("APNSPushType", js.undefined)
+    def setBadge(value: integer): Self = StObject.set(x, "Badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "Badge", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadge(value: integer): Self = this.set("Badge", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def deleteBadge: Self = this.set("Badge", js.undefined)
+    def setCategory(value: string): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setCollapseId(value: string): Self = StObject.set(x, "CollapseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: string): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setCollapseIdUndefined: Self = StObject.set(x, "CollapseId", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setData(value: MapOfString): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseId(value: string): Self = this.set("CollapseId", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
     @scala.inline
-    def deleteCollapseId: Self = this.set("CollapseId", js.undefined)
+    def setMediaUrl(value: string): Self = StObject.set(x, "MediaUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: MapOfString): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setMediaUrlUndefined: Self = StObject.set(x, "MediaUrl", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("Data", js.undefined)
+    def setPreferredAuthenticationMethod(value: string): Self = StObject.set(x, "PreferredAuthenticationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaUrl(value: string): Self = this.set("MediaUrl", value.asInstanceOf[js.Any])
+    def setPreferredAuthenticationMethodUndefined: Self = StObject.set(x, "PreferredAuthenticationMethod", js.undefined)
     
     @scala.inline
-    def deleteMediaUrl: Self = this.set("MediaUrl", js.undefined)
+    def setPriority(value: string): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredAuthenticationMethod(value: string): Self = this.set("PreferredAuthenticationMethod", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def deletePreferredAuthenticationMethod: Self = this.set("PreferredAuthenticationMethod", js.undefined)
+    def setRawContent(value: string): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: string): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
+    def setSilentPush(value: boolean): Self = StObject.set(x, "SilentPush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
     
     @scala.inline
-    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    def setSound(value: string): Self = StObject.set(x, "Sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilentPush(value: boolean): Self = this.set("SilentPush", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "Sound", js.undefined)
     
     @scala.inline
-    def deleteSilentPush: Self = this.set("SilentPush", js.undefined)
+    def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: string): Self = this.set("Sound", value.asInstanceOf[js.Any])
+    def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
     
     @scala.inline
-    def deleteSound: Self = this.set("Sound", js.undefined)
+    def setThreadId(value: string): Self = StObject.set(x, "ThreadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
+    def setThreadIdUndefined: Self = StObject.set(x, "ThreadId", js.undefined)
     
     @scala.inline
-    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
+    def setTimeToLive(value: integer): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadId(value: string): Self = this.set("ThreadId", value.asInstanceOf[js.Any])
+    def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
     
     @scala.inline
-    def deleteThreadId: Self = this.set("ThreadId", js.undefined)
+    def setTitle(value: string): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToLive(value: integer): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     
     @scala.inline
-    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

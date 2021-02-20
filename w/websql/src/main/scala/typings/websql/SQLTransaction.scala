@@ -1,5 +1,6 @@
 package typings.websql
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** 4.3.1 Executing SQL statements
   */
 @js.native
-trait SQLTransaction extends js.Object {
+trait SQLTransaction extends StObject {
   
   def executeSql(sqlStatement: DOMString): Unit = js.native
   def executeSql(

@@ -1,17 +1,20 @@
 package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdaptiveMediaSourceAdvancedSettings extends js.Object {
+trait AdaptiveMediaSourceAdvancedSettings extends StObject {
   
   var allSegmentsIndependent: js.Any = js.native
   
-   /* unmapped type */ var bitrateDowngradeTriggerRatio: js.Any = js.native
+  /* unmapped type */
+  var bitrateDowngradeTriggerRatio: js.Any = js.native
   
-   /* unmapped type */ var desiredBitrateHeadroomRatio: js.Any = js.native
+  /* unmapped type */
+  var desiredBitrateHeadroomRatio: js.Any = js.native
 }
 object AdaptiveMediaSourceAdvancedSettings {
   
@@ -26,27 +29,15 @@ object AdaptiveMediaSourceAdvancedSettings {
   }
   
   @scala.inline
-  implicit class AdaptiveMediaSourceAdvancedSettingsOps[Self <: AdaptiveMediaSourceAdvancedSettings] (val x: Self) extends AnyVal {
+  implicit class AdaptiveMediaSourceAdvancedSettingsMutableBuilder[Self <: AdaptiveMediaSourceAdvancedSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllSegmentsIndependent(value: js.Any): Self = StObject.set(x, "allSegmentsIndependent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitrateDowngradeTriggerRatio(value: js.Any): Self = StObject.set(x, "bitrateDowngradeTriggerRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllSegmentsIndependent(value: js.Any): Self = this.set("allSegmentsIndependent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBitrateDowngradeTriggerRatio(value: js.Any): Self = this.set("bitrateDowngradeTriggerRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDesiredBitrateHeadroomRatio(value: js.Any): Self = this.set("desiredBitrateHeadroomRatio", value.asInstanceOf[js.Any])
+    def setDesiredBitrateHeadroomRatio(value: js.Any): Self = StObject.set(x, "desiredBitrateHeadroomRatio", value.asInstanceOf[js.Any])
   }
 }

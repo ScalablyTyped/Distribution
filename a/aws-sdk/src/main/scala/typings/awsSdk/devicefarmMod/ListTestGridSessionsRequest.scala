@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTestGridSessionsRequest extends js.Object {
+trait ListTestGridSessionsRequest extends StObject {
   
   /**
     * Return only sessions created after this time.
@@ -56,63 +57,51 @@ object ListTestGridSessionsRequest {
   }
   
   @scala.inline
-  implicit class ListTestGridSessionsRequestOps[Self <: ListTestGridSessionsRequest] (val x: Self) extends AnyVal {
+  implicit class ListTestGridSessionsRequestMutableBuilder[Self <: ListTestGridSessionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimeAfter(value: DateTime): Self = StObject.set(x, "creationTimeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeAfterUndefined: Self = StObject.set(x, "creationTimeAfter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeBefore(value: DateTime): Self = StObject.set(x, "creationTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "creationTimeBefore", js.undefined)
     
     @scala.inline
-    def setCreationTimeAfter(value: DateTime): Self = this.set("creationTimeAfter", value.asInstanceOf[js.Any])
+    def setEndTimeAfter(value: DateTime): Self = StObject.set(x, "endTimeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTimeAfter: Self = this.set("creationTimeAfter", js.undefined)
+    def setEndTimeAfterUndefined: Self = StObject.set(x, "endTimeAfter", js.undefined)
     
     @scala.inline
-    def setCreationTimeBefore(value: DateTime): Self = this.set("creationTimeBefore", value.asInstanceOf[js.Any])
+    def setEndTimeBefore(value: DateTime): Self = StObject.set(x, "endTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTimeBefore: Self = this.set("creationTimeBefore", js.undefined)
+    def setEndTimeBeforeUndefined: Self = StObject.set(x, "endTimeBefore", js.undefined)
     
     @scala.inline
-    def setEndTimeAfter(value: DateTime): Self = this.set("endTimeAfter", value.asInstanceOf[js.Any])
+    def setMaxResult(value: MaxPageSize): Self = StObject.set(x, "maxResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTimeAfter: Self = this.set("endTimeAfter", js.undefined)
+    def setMaxResultUndefined: Self = StObject.set(x, "maxResult", js.undefined)
     
     @scala.inline
-    def setEndTimeBefore(value: DateTime): Self = this.set("endTimeBefore", value.asInstanceOf[js.Any])
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTimeBefore: Self = this.set("endTimeBefore", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def setMaxResult(value: MaxPageSize): Self = this.set("maxResult", value.asInstanceOf[js.Any])
+    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResult: Self = this.set("maxResult", js.undefined)
+    def setStatus(value: TestGridSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: TestGridSessionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

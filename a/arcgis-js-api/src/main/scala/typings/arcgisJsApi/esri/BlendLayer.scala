@@ -30,12 +30,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reflect
 import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlendLayer extends js.Object {
+trait BlendLayer extends StObject {
   
   /**
     * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
@@ -55,23 +56,11 @@ object BlendLayer {
   }
   
   @scala.inline
-  implicit class BlendLayerOps[Self <: BlendLayer] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BlendLayerMutableBuilder[Self <: BlendLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBlendMode(
       value: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor
-    ): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpFaultAbort extends js.Object {
+trait HttpFaultAbort extends StObject {
   
   /**
     * The HTTP status code used to abort the request.
@@ -28,30 +29,18 @@ object HttpFaultAbort {
   }
   
   @scala.inline
-  implicit class HttpFaultAbortOps[Self <: HttpFaultAbort] (val x: Self) extends AnyVal {
+  implicit class HttpFaultAbortMutableBuilder[Self <: HttpFaultAbort] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpStatus(value: Double): Self = this.set("httpStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpStatus: Self = this.set("httpStatus", js.undefined)
-    
-    @scala.inline
-    def setPercentage(value: Double): Self = this.set("percentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePercentage: Self = this.set("percentage", js.undefined)
+    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }
 }

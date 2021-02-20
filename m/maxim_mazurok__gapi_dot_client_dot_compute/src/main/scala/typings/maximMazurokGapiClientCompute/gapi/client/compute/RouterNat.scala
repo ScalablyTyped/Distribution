@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouterNat extends js.Object {
+trait RouterNat extends StObject {
   
   /**
     * A list of URLs of the IP resources to be drained. These IPs must be valid static external IPs that have been assigned to the NAT. These IPs should be used for updating/patching a
@@ -71,105 +72,93 @@ object RouterNat {
   }
   
   @scala.inline
-  implicit class RouterNatOps[Self <: RouterNat] (val x: Self) extends AnyVal {
+  implicit class RouterNatMutableBuilder[Self <: RouterNat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrainNatIps(value: js.Array[String]): Self = StObject.set(x, "drainNatIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrainNatIpsUndefined: Self = StObject.set(x, "drainNatIps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrainNatIpsVarargs(value: String*): Self = StObject.set(x, "drainNatIps", js.Array(value :_*))
     
     @scala.inline
-    def setDrainNatIpsVarargs(value: String*): Self = this.set("drainNatIps", js.Array(value :_*))
+    def setEnableEndpointIndependentMapping(value: Boolean): Self = StObject.set(x, "enableEndpointIndependentMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrainNatIps(value: js.Array[String]): Self = this.set("drainNatIps", value.asInstanceOf[js.Any])
+    def setEnableEndpointIndependentMappingUndefined: Self = StObject.set(x, "enableEndpointIndependentMapping", js.undefined)
     
     @scala.inline
-    def deleteDrainNatIps: Self = this.set("drainNatIps", js.undefined)
+    def setIcmpIdleTimeoutSec(value: Double): Self = StObject.set(x, "icmpIdleTimeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableEndpointIndependentMapping(value: Boolean): Self = this.set("enableEndpointIndependentMapping", value.asInstanceOf[js.Any])
+    def setIcmpIdleTimeoutSecUndefined: Self = StObject.set(x, "icmpIdleTimeoutSec", js.undefined)
     
     @scala.inline
-    def deleteEnableEndpointIndependentMapping: Self = this.set("enableEndpointIndependentMapping", js.undefined)
+    def setLogConfig(value: RouterNatLogConfig): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcmpIdleTimeoutSec(value: Double): Self = this.set("icmpIdleTimeoutSec", value.asInstanceOf[js.Any])
+    def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
     
     @scala.inline
-    def deleteIcmpIdleTimeoutSec: Self = this.set("icmpIdleTimeoutSec", js.undefined)
+    def setMinPortsPerVm(value: Double): Self = StObject.set(x, "minPortsPerVm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogConfig(value: RouterNatLogConfig): Self = this.set("logConfig", value.asInstanceOf[js.Any])
+    def setMinPortsPerVmUndefined: Self = StObject.set(x, "minPortsPerVm", js.undefined)
     
     @scala.inline
-    def deleteLogConfig: Self = this.set("logConfig", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinPortsPerVm(value: Double): Self = this.set("minPortsPerVm", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMinPortsPerVm: Self = this.set("minPortsPerVm", js.undefined)
+    def setNatIpAllocateOption(value: String): Self = StObject.set(x, "natIpAllocateOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNatIpAllocateOptionUndefined: Self = StObject.set(x, "natIpAllocateOption", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNatIps(value: js.Array[String]): Self = StObject.set(x, "natIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatIpAllocateOption(value: String): Self = this.set("natIpAllocateOption", value.asInstanceOf[js.Any])
+    def setNatIpsUndefined: Self = StObject.set(x, "natIps", js.undefined)
     
     @scala.inline
-    def deleteNatIpAllocateOption: Self = this.set("natIpAllocateOption", js.undefined)
+    def setNatIpsVarargs(value: String*): Self = StObject.set(x, "natIps", js.Array(value :_*))
     
     @scala.inline
-    def setNatIpsVarargs(value: String*): Self = this.set("natIps", js.Array(value :_*))
+    def setSourceSubnetworkIpRangesToNat(value: String): Self = StObject.set(x, "sourceSubnetworkIpRangesToNat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNatIps(value: js.Array[String]): Self = this.set("natIps", value.asInstanceOf[js.Any])
+    def setSourceSubnetworkIpRangesToNatUndefined: Self = StObject.set(x, "sourceSubnetworkIpRangesToNat", js.undefined)
     
     @scala.inline
-    def deleteNatIps: Self = this.set("natIps", js.undefined)
+    def setSubnetworks(value: js.Array[RouterNatSubnetworkToNat]): Self = StObject.set(x, "subnetworks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSubnetworkIpRangesToNat(value: String): Self = this.set("sourceSubnetworkIpRangesToNat", value.asInstanceOf[js.Any])
+    def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
     @scala.inline
-    def deleteSourceSubnetworkIpRangesToNat: Self = this.set("sourceSubnetworkIpRangesToNat", js.undefined)
+    def setSubnetworksVarargs(value: RouterNatSubnetworkToNat*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetworksVarargs(value: RouterNatSubnetworkToNat*): Self = this.set("subnetworks", js.Array(value :_*))
+    def setTcpEstablishedIdleTimeoutSec(value: Double): Self = StObject.set(x, "tcpEstablishedIdleTimeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetworks(value: js.Array[RouterNatSubnetworkToNat]): Self = this.set("subnetworks", value.asInstanceOf[js.Any])
+    def setTcpEstablishedIdleTimeoutSecUndefined: Self = StObject.set(x, "tcpEstablishedIdleTimeoutSec", js.undefined)
     
     @scala.inline
-    def deleteSubnetworks: Self = this.set("subnetworks", js.undefined)
+    def setTcpTransitoryIdleTimeoutSec(value: Double): Self = StObject.set(x, "tcpTransitoryIdleTimeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpEstablishedIdleTimeoutSec(value: Double): Self = this.set("tcpEstablishedIdleTimeoutSec", value.asInstanceOf[js.Any])
+    def setTcpTransitoryIdleTimeoutSecUndefined: Self = StObject.set(x, "tcpTransitoryIdleTimeoutSec", js.undefined)
     
     @scala.inline
-    def deleteTcpEstablishedIdleTimeoutSec: Self = this.set("tcpEstablishedIdleTimeoutSec", js.undefined)
+    def setUdpIdleTimeoutSec(value: Double): Self = StObject.set(x, "udpIdleTimeoutSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTcpTransitoryIdleTimeoutSec(value: Double): Self = this.set("tcpTransitoryIdleTimeoutSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpTransitoryIdleTimeoutSec: Self = this.set("tcpTransitoryIdleTimeoutSec", js.undefined)
-    
-    @scala.inline
-    def setUdpIdleTimeoutSec(value: Double): Self = this.set("udpIdleTimeoutSec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUdpIdleTimeoutSec: Self = this.set("udpIdleTimeoutSec", js.undefined)
+    def setUdpIdleTimeoutSecUndefined: Self = StObject.set(x, "udpIdleTimeoutSec", js.undefined)
   }
 }

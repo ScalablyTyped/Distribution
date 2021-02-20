@@ -1,11 +1,12 @@
 package typings.braintreeWeb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrencyCode extends js.Object {
+trait CurrencyCode extends StObject {
   
   var currencyCode: String = js.native
   
@@ -22,27 +23,15 @@ object CurrencyCode {
   }
   
   @scala.inline
-  implicit class CurrencyCodeOps[Self <: CurrencyCode] (val x: Self) extends AnyVal {
+  implicit class CurrencyCodeMutableBuilder[Self <: CurrencyCode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotalPrice(value: String): Self = StObject.set(x, "totalPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalPrice(value: String): Self = this.set("totalPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalPriceStatus(value: String): Self = this.set("totalPriceStatus", value.asInstanceOf[js.Any])
+    def setTotalPriceStatus(value: String): Self = StObject.set(x, "totalPriceStatus", value.asInstanceOf[js.Any])
   }
 }

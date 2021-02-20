@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBlogger.anon
 
 import typings.maximMazurokGapiClientBlogger.gapi.client.blogger.Comment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TotalItems extends js.Object {
+trait TotalItems extends StObject {
   
   /** The List of Comments for this Post. */
   var items: js.UndefOr[js.Array[Comment]] = js.native
@@ -26,39 +27,27 @@ object TotalItems {
   }
   
   @scala.inline
-  implicit class TotalItemsOps[Self <: TotalItems] (val x: Self) extends AnyVal {
+  implicit class TotalItemsMutableBuilder[Self <: TotalItems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[Comment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: Comment*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: Comment*): Self = this.set("items", js.Array(value :_*))
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[Comment]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setTotalItems(value: String): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
-    
-    @scala.inline
-    def setTotalItems(value: String): Self = this.set("totalItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
+    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

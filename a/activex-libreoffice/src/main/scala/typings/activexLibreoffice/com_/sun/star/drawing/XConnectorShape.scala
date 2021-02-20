@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object XConnectorShape {
   }
   
   @scala.inline
-  implicit class XConnectorShapeOps[Self <: XConnectorShape] (val x: Self) extends AnyVal {
+  implicit class XConnectorShapeMutableBuilder[Self <: XConnectorShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectEnd(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectStart(value: (XConnectableShape, ConnectionType) => Unit): Self = StObject.set(x, "connectStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisconnectBegin(value: XConnectableShape => Unit): Self = StObject.set(x, "disconnectBegin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setConnectEnd(value: (XConnectableShape, ConnectionType) => Unit): Self = this.set("connectEnd", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setConnectStart(value: (XConnectableShape, ConnectionType) => Unit): Self = this.set("connectStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setDisconnectBegin(value: XConnectableShape => Unit): Self = this.set("disconnectBegin", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDisconnectEnd(value: XConnectableShape => Unit): Self = this.set("disconnectEnd", js.Any.fromFunction1(value))
+    def setDisconnectEnd(value: XConnectableShape => Unit): Self = StObject.set(x, "disconnectEnd", js.Any.fromFunction1(value))
   }
 }

@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/columnController/groupInstanceIdCreator", JSImport.Namespace)
-@js.native
-object groupInstanceIdCreatorMod extends js.Object {
+object groupInstanceIdCreatorMod {
   
+  @JSImport("ag-grid/dist/lib/columnController/groupInstanceIdCreator", "GroupInstanceIdCreator")
   @js.native
-  class GroupInstanceIdCreator () extends js.Object {
+  class GroupInstanceIdCreator () extends StObject {
     
     var existingIds: js.Any = js.native
     

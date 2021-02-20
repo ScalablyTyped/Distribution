@@ -1,12 +1,13 @@
 package typings.plotlyJs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ type in plotly.js.plotly.js.PlotType ]:? std.Partial<plotly.js.plotly.js.PlotData>} */
 @js.native
-trait typeinPlotTypePartialPlot extends js.Object {
+trait typeinPlotTypePartialPlot extends StObject {
   
   var bar: js.UndefOr[PartialPlotData] = js.native
   
@@ -111,300 +112,288 @@ object typeinPlotTypePartialPlot {
   }
   
   @scala.inline
-  implicit class typeinPlotTypePartialPlotOps[Self <: typeinPlotTypePartialPlot] (val x: Self) extends AnyVal {
+  implicit class typeinPlotTypePartialPlotMutableBuilder[Self <: typeinPlotTypePartialPlot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBar(value: PartialPlotData): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBarpolar(value: PartialPlotData): Self = StObject.set(x, "barpolar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBar(value: PartialPlotData): Self = this.set("bar", value.asInstanceOf[js.Any])
+    def setBarpolarUndefined: Self = StObject.set(x, "barpolar", js.undefined)
     
     @scala.inline
-    def deleteBar: Self = this.set("bar", js.undefined)
+    def setBox(value: PartialPlotData): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarpolar(value: PartialPlotData): Self = this.set("barpolar", value.asInstanceOf[js.Any])
+    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
     @scala.inline
-    def deleteBarpolar: Self = this.set("barpolar", js.undefined)
+    def setCandlestick(value: PartialPlotData): Self = StObject.set(x, "candlestick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBox(value: PartialPlotData): Self = this.set("box", value.asInstanceOf[js.Any])
+    def setCandlestickUndefined: Self = StObject.set(x, "candlestick", js.undefined)
     
     @scala.inline
-    def deleteBox: Self = this.set("box", js.undefined)
+    def setCarpet(value: PartialPlotData): Self = StObject.set(x, "carpet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCandlestick(value: PartialPlotData): Self = this.set("candlestick", value.asInstanceOf[js.Any])
+    def setCarpetUndefined: Self = StObject.set(x, "carpet", js.undefined)
     
     @scala.inline
-    def deleteCandlestick: Self = this.set("candlestick", js.undefined)
+    def setChoropleth(value: PartialPlotData): Self = StObject.set(x, "choropleth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarpet(value: PartialPlotData): Self = this.set("carpet", value.asInstanceOf[js.Any])
+    def setChoroplethUndefined: Self = StObject.set(x, "choropleth", js.undefined)
     
     @scala.inline
-    def deleteCarpet: Self = this.set("carpet", js.undefined)
+    def setChoroplethmapbox(value: PartialPlotData): Self = StObject.set(x, "choroplethmapbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoropleth(value: PartialPlotData): Self = this.set("choropleth", value.asInstanceOf[js.Any])
+    def setChoroplethmapboxUndefined: Self = StObject.set(x, "choroplethmapbox", js.undefined)
     
     @scala.inline
-    def deleteChoropleth: Self = this.set("choropleth", js.undefined)
+    def setCone(value: PartialPlotData): Self = StObject.set(x, "cone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChoroplethmapbox(value: PartialPlotData): Self = this.set("choroplethmapbox", value.asInstanceOf[js.Any])
+    def setConeUndefined: Self = StObject.set(x, "cone", js.undefined)
     
     @scala.inline
-    def deleteChoroplethmapbox: Self = this.set("choroplethmapbox", js.undefined)
+    def setContour(value: PartialPlotData): Self = StObject.set(x, "contour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCone(value: PartialPlotData): Self = this.set("cone", value.asInstanceOf[js.Any])
+    def setContourUndefined: Self = StObject.set(x, "contour", js.undefined)
     
     @scala.inline
-    def deleteCone: Self = this.set("cone", js.undefined)
+    def setContourcarpet(value: PartialPlotData): Self = StObject.set(x, "contourcarpet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContour(value: PartialPlotData): Self = this.set("contour", value.asInstanceOf[js.Any])
+    def setContourcarpetUndefined: Self = StObject.set(x, "contourcarpet", js.undefined)
     
     @scala.inline
-    def deleteContour: Self = this.set("contour", js.undefined)
+    def setContourgl(value: PartialPlotData): Self = StObject.set(x, "contourgl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContourcarpet(value: PartialPlotData): Self = this.set("contourcarpet", value.asInstanceOf[js.Any])
+    def setContourglUndefined: Self = StObject.set(x, "contourgl", js.undefined)
     
     @scala.inline
-    def deleteContourcarpet: Self = this.set("contourcarpet", js.undefined)
+    def setDensitymapbox(value: PartialPlotData): Self = StObject.set(x, "densitymapbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContourgl(value: PartialPlotData): Self = this.set("contourgl", value.asInstanceOf[js.Any])
+    def setDensitymapboxUndefined: Self = StObject.set(x, "densitymapbox", js.undefined)
     
     @scala.inline
-    def deleteContourgl: Self = this.set("contourgl", js.undefined)
+    def setFunnel(value: PartialPlotData): Self = StObject.set(x, "funnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDensitymapbox(value: PartialPlotData): Self = this.set("densitymapbox", value.asInstanceOf[js.Any])
+    def setFunnelUndefined: Self = StObject.set(x, "funnel", js.undefined)
     
     @scala.inline
-    def deleteDensitymapbox: Self = this.set("densitymapbox", js.undefined)
+    def setFunnelarea(value: PartialPlotData): Self = StObject.set(x, "funnelarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunnel(value: PartialPlotData): Self = this.set("funnel", value.asInstanceOf[js.Any])
+    def setFunnelareaUndefined: Self = StObject.set(x, "funnelarea", js.undefined)
     
     @scala.inline
-    def deleteFunnel: Self = this.set("funnel", js.undefined)
+    def setHeatmap(value: PartialPlotData): Self = StObject.set(x, "heatmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunnelarea(value: PartialPlotData): Self = this.set("funnelarea", value.asInstanceOf[js.Any])
+    def setHeatmapUndefined: Self = StObject.set(x, "heatmap", js.undefined)
     
     @scala.inline
-    def deleteFunnelarea: Self = this.set("funnelarea", js.undefined)
+    def setHeatmapgl(value: PartialPlotData): Self = StObject.set(x, "heatmapgl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeatmap(value: PartialPlotData): Self = this.set("heatmap", value.asInstanceOf[js.Any])
+    def setHeatmapglUndefined: Self = StObject.set(x, "heatmapgl", js.undefined)
     
     @scala.inline
-    def deleteHeatmap: Self = this.set("heatmap", js.undefined)
+    def setHistogram(value: PartialPlotData): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeatmapgl(value: PartialPlotData): Self = this.set("heatmapgl", value.asInstanceOf[js.Any])
+    def setHistogram2d(value: PartialPlotData): Self = StObject.set(x, "histogram2d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeatmapgl: Self = this.set("heatmapgl", js.undefined)
+    def setHistogram2dUndefined: Self = StObject.set(x, "histogram2d", js.undefined)
     
     @scala.inline
-    def setHistogram(value: PartialPlotData): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    def setHistogram2dcontour(value: PartialPlotData): Self = StObject.set(x, "histogram2dcontour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    def setHistogram2dcontourUndefined: Self = StObject.set(x, "histogram2dcontour", js.undefined)
     
     @scala.inline
-    def setHistogram2d(value: PartialPlotData): Self = this.set("histogram2d", value.asInstanceOf[js.Any])
+    def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
     
     @scala.inline
-    def deleteHistogram2d: Self = this.set("histogram2d", js.undefined)
+    def setImage(value: PartialPlotData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogram2dcontour(value: PartialPlotData): Self = this.set("histogram2dcontour", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteHistogram2dcontour: Self = this.set("histogram2dcontour", js.undefined)
+    def setIndicator(value: PartialPlotData): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: PartialPlotData): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setIsosurface(value: PartialPlotData): Self = StObject.set(x, "isosurface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicator(value: PartialPlotData): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setIsosurfaceUndefined: Self = StObject.set(x, "isosurface", js.undefined)
     
     @scala.inline
-    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    def setMesh3d(value: PartialPlotData): Self = StObject.set(x, "mesh3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsosurface(value: PartialPlotData): Self = this.set("isosurface", value.asInstanceOf[js.Any])
+    def setMesh3dUndefined: Self = StObject.set(x, "mesh3d", js.undefined)
     
     @scala.inline
-    def deleteIsosurface: Self = this.set("isosurface", js.undefined)
+    def setOhlc(value: PartialPlotData): Self = StObject.set(x, "ohlc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMesh3d(value: PartialPlotData): Self = this.set("mesh3d", value.asInstanceOf[js.Any])
+    def setOhlcUndefined: Self = StObject.set(x, "ohlc", js.undefined)
     
     @scala.inline
-    def deleteMesh3d: Self = this.set("mesh3d", js.undefined)
+    def setParcats(value: PartialPlotData): Self = StObject.set(x, "parcats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOhlc(value: PartialPlotData): Self = this.set("ohlc", value.asInstanceOf[js.Any])
+    def setParcatsUndefined: Self = StObject.set(x, "parcats", js.undefined)
     
     @scala.inline
-    def deleteOhlc: Self = this.set("ohlc", js.undefined)
+    def setParcoords(value: PartialPlotData): Self = StObject.set(x, "parcoords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParcats(value: PartialPlotData): Self = this.set("parcats", value.asInstanceOf[js.Any])
+    def setParcoordsUndefined: Self = StObject.set(x, "parcoords", js.undefined)
     
     @scala.inline
-    def deleteParcats: Self = this.set("parcats", js.undefined)
+    def setPie(value: PartialPlotData): Self = StObject.set(x, "pie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParcoords(value: PartialPlotData): Self = this.set("parcoords", value.asInstanceOf[js.Any])
+    def setPieUndefined: Self = StObject.set(x, "pie", js.undefined)
     
     @scala.inline
-    def deleteParcoords: Self = this.set("parcoords", js.undefined)
+    def setPointcloud(value: PartialPlotData): Self = StObject.set(x, "pointcloud", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPie(value: PartialPlotData): Self = this.set("pie", value.asInstanceOf[js.Any])
+    def setPointcloudUndefined: Self = StObject.set(x, "pointcloud", js.undefined)
     
     @scala.inline
-    def deletePie: Self = this.set("pie", js.undefined)
+    def setSankey(value: PartialPlotData): Self = StObject.set(x, "sankey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointcloud(value: PartialPlotData): Self = this.set("pointcloud", value.asInstanceOf[js.Any])
+    def setSankeyUndefined: Self = StObject.set(x, "sankey", js.undefined)
     
     @scala.inline
-    def deletePointcloud: Self = this.set("pointcloud", js.undefined)
+    def setScatter(value: PartialPlotData): Self = StObject.set(x, "scatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSankey(value: PartialPlotData): Self = this.set("sankey", value.asInstanceOf[js.Any])
+    def setScatter3d(value: PartialPlotData): Self = StObject.set(x, "scatter3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSankey: Self = this.set("sankey", js.undefined)
+    def setScatter3dUndefined: Self = StObject.set(x, "scatter3d", js.undefined)
     
     @scala.inline
-    def setScatter(value: PartialPlotData): Self = this.set("scatter", value.asInstanceOf[js.Any])
+    def setScatterUndefined: Self = StObject.set(x, "scatter", js.undefined)
     
     @scala.inline
-    def deleteScatter: Self = this.set("scatter", js.undefined)
+    def setScattercarpet(value: PartialPlotData): Self = StObject.set(x, "scattercarpet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatter3d(value: PartialPlotData): Self = this.set("scatter3d", value.asInstanceOf[js.Any])
+    def setScattercarpetUndefined: Self = StObject.set(x, "scattercarpet", js.undefined)
     
     @scala.inline
-    def deleteScatter3d: Self = this.set("scatter3d", js.undefined)
+    def setScattergeo(value: PartialPlotData): Self = StObject.set(x, "scattergeo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScattercarpet(value: PartialPlotData): Self = this.set("scattercarpet", value.asInstanceOf[js.Any])
+    def setScattergeoUndefined: Self = StObject.set(x, "scattergeo", js.undefined)
     
     @scala.inline
-    def deleteScattercarpet: Self = this.set("scattercarpet", js.undefined)
+    def setScattergl(value: PartialPlotData): Self = StObject.set(x, "scattergl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScattergeo(value: PartialPlotData): Self = this.set("scattergeo", value.asInstanceOf[js.Any])
+    def setScatterglUndefined: Self = StObject.set(x, "scattergl", js.undefined)
     
     @scala.inline
-    def deleteScattergeo: Self = this.set("scattergeo", js.undefined)
+    def setScattermapbox(value: PartialPlotData): Self = StObject.set(x, "scattermapbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScattergl(value: PartialPlotData): Self = this.set("scattergl", value.asInstanceOf[js.Any])
+    def setScattermapboxUndefined: Self = StObject.set(x, "scattermapbox", js.undefined)
     
     @scala.inline
-    def deleteScattergl: Self = this.set("scattergl", js.undefined)
+    def setScatterpolar(value: PartialPlotData): Self = StObject.set(x, "scatterpolar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScattermapbox(value: PartialPlotData): Self = this.set("scattermapbox", value.asInstanceOf[js.Any])
+    def setScatterpolarUndefined: Self = StObject.set(x, "scatterpolar", js.undefined)
     
     @scala.inline
-    def deleteScattermapbox: Self = this.set("scattermapbox", js.undefined)
+    def setScatterpolargl(value: PartialPlotData): Self = StObject.set(x, "scatterpolargl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatterpolar(value: PartialPlotData): Self = this.set("scatterpolar", value.asInstanceOf[js.Any])
+    def setScatterpolarglUndefined: Self = StObject.set(x, "scatterpolargl", js.undefined)
     
     @scala.inline
-    def deleteScatterpolar: Self = this.set("scatterpolar", js.undefined)
+    def setScatterternary(value: PartialPlotData): Self = StObject.set(x, "scatterternary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatterpolargl(value: PartialPlotData): Self = this.set("scatterpolargl", value.asInstanceOf[js.Any])
+    def setScatterternaryUndefined: Self = StObject.set(x, "scatterternary", js.undefined)
     
     @scala.inline
-    def deleteScatterpolargl: Self = this.set("scatterpolargl", js.undefined)
+    def setSplom(value: PartialPlotData): Self = StObject.set(x, "splom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScatterternary(value: PartialPlotData): Self = this.set("scatterternary", value.asInstanceOf[js.Any])
+    def setSplomUndefined: Self = StObject.set(x, "splom", js.undefined)
     
     @scala.inline
-    def deleteScatterternary: Self = this.set("scatterternary", js.undefined)
+    def setStreamtube(value: PartialPlotData): Self = StObject.set(x, "streamtube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplom(value: PartialPlotData): Self = this.set("splom", value.asInstanceOf[js.Any])
+    def setStreamtubeUndefined: Self = StObject.set(x, "streamtube", js.undefined)
     
     @scala.inline
-    def deleteSplom: Self = this.set("splom", js.undefined)
+    def setSunburst(value: PartialPlotData): Self = StObject.set(x, "sunburst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamtube(value: PartialPlotData): Self = this.set("streamtube", value.asInstanceOf[js.Any])
+    def setSunburstUndefined: Self = StObject.set(x, "sunburst", js.undefined)
     
     @scala.inline
-    def deleteStreamtube: Self = this.set("streamtube", js.undefined)
+    def setSurface(value: PartialPlotData): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSunburst(value: PartialPlotData): Self = this.set("sunburst", value.asInstanceOf[js.Any])
+    def setSurfaceUndefined: Self = StObject.set(x, "surface", js.undefined)
     
     @scala.inline
-    def deleteSunburst: Self = this.set("sunburst", js.undefined)
+    def setTable(value: PartialPlotData): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurface(value: PartialPlotData): Self = this.set("surface", value.asInstanceOf[js.Any])
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
     @scala.inline
-    def deleteSurface: Self = this.set("surface", js.undefined)
+    def setTreemap(value: PartialPlotData): Self = StObject.set(x, "treemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: PartialPlotData): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTreemapUndefined: Self = StObject.set(x, "treemap", js.undefined)
     
     @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
+    def setViolin(value: PartialPlotData): Self = StObject.set(x, "violin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreemap(value: PartialPlotData): Self = this.set("treemap", value.asInstanceOf[js.Any])
+    def setViolinUndefined: Self = StObject.set(x, "violin", js.undefined)
     
     @scala.inline
-    def deleteTreemap: Self = this.set("treemap", js.undefined)
+    def setVolume(value: PartialPlotData): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViolin(value: PartialPlotData): Self = this.set("violin", value.asInstanceOf[js.Any])
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
     @scala.inline
-    def deleteViolin: Self = this.set("violin", js.undefined)
+    def setWaterfall(value: PartialPlotData): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolume(value: PartialPlotData): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
-    
-    @scala.inline
-    def setWaterfall(value: PartialPlotData): Self = this.set("waterfall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterfall: Self = this.set("waterfall", js.undefined)
+    def setWaterfallUndefined: Self = StObject.set(x, "waterfall", js.undefined)
   }
 }

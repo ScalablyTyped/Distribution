@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetSourceEntry extends js.Object {
+trait AssetSourceEntry extends StObject {
   
   /**
     * The S3 bucket that's part of the source of the asset.
@@ -26,24 +27,12 @@ object AssetSourceEntry {
   }
   
   @scala.inline
-  implicit class AssetSourceEntryOps[Self <: AssetSourceEntry] (val x: Self) extends AnyVal {
+  implicit class AssetSourceEntryMutableBuilder[Self <: AssetSourceEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucket(value: string): Self = this.set("Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: string): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }
 }

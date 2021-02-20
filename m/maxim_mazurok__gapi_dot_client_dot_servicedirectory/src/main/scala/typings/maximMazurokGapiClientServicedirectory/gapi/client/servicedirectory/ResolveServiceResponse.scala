@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirectory
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveServiceResponse extends js.Object {
+trait ResolveServiceResponse extends StObject {
   
   var service: js.UndefOr[Service] = js.native
 }
@@ -18,24 +19,12 @@ object ResolveServiceResponse {
   }
   
   @scala.inline
-  implicit class ResolveServiceResponseOps[Self <: ResolveServiceResponse] (val x: Self) extends AnyVal {
+  implicit class ResolveServiceResponseMutableBuilder[Self <: ResolveServiceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setService(value: Service): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setService(value: Service): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

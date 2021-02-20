@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
+sealed trait EventType extends StObject
 /**
   *
   * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
@@ -14,7 +15,7 @@ sealed trait EventType extends js.Object
   */
 @JSGlobal("Word.EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
   
   /**
     * AnnotationAdded represents the event an annotation has been added to the document.

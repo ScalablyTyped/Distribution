@@ -3,13 +3,12 @@ package typings.tensorflowTfjsBackendCpu
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.kernelRegistryMod.NamedAttrMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-cpu/dist/utils/unary_types", JSImport.Namespace)
-@js.native
-object unaryTypesMod extends js.Object {
+object unaryTypesMod {
   
   type SimpleUnaryImpl = js.Function3[
     /* values */ TypedArray, 

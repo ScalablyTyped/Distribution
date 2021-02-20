@@ -1,13 +1,16 @@
 package typings.amcharts
 
 import typings.amcharts.anon.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmAngularGauge", JSImport.Namespace)
-@js.native
-object amAngularGaugeMod extends js.Object {
+object amAngularGaugeMod {
+  
+  @JSImport("amcharts/AmAngularGauge", JSImport.Default)
+  @js.native
+  class default () extends AmAngularGauge
   
   @js.native
   trait AmAngularGauge
@@ -341,7 +344,4 @@ object amAngularGaugeMod extends js.Object {
       */
     var touchClickDuration: Double = js.native
   }
-  
-  @js.native
-  class default () extends AmAngularGauge
 }

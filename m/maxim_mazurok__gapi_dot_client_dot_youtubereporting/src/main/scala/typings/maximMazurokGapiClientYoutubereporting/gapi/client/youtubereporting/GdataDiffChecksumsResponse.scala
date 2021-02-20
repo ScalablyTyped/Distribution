@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GdataDiffChecksumsResponse extends js.Object {
+trait GdataDiffChecksumsResponse extends StObject {
   
   /** gdata */
   var checksumsLocation: js.UndefOr[GdataCompositeMedia] = js.native
@@ -31,48 +32,36 @@ object GdataDiffChecksumsResponse {
   }
   
   @scala.inline
-  implicit class GdataDiffChecksumsResponseOps[Self <: GdataDiffChecksumsResponse] (val x: Self) extends AnyVal {
+  implicit class GdataDiffChecksumsResponseMutableBuilder[Self <: GdataDiffChecksumsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksumsLocation(value: GdataCompositeMedia): Self = StObject.set(x, "checksumsLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumsLocationUndefined: Self = StObject.set(x, "checksumsLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChunkSizeBytes(value: String): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksumsLocation(value: GdataCompositeMedia): Self = this.set("checksumsLocation", value.asInstanceOf[js.Any])
+    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteChecksumsLocation: Self = this.set("checksumsLocation", js.undefined)
+    def setObjectLocation(value: GdataCompositeMedia): Self = StObject.set(x, "objectLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSizeBytes(value: String): Self = this.set("chunkSizeBytes", value.asInstanceOf[js.Any])
+    def setObjectLocationUndefined: Self = StObject.set(x, "objectLocation", js.undefined)
     
     @scala.inline
-    def deleteChunkSizeBytes: Self = this.set("chunkSizeBytes", js.undefined)
+    def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectLocation(value: GdataCompositeMedia): Self = this.set("objectLocation", value.asInstanceOf[js.Any])
+    def setObjectSizeBytesUndefined: Self = StObject.set(x, "objectSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteObjectLocation: Self = this.set("objectLocation", js.undefined)
+    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectSizeBytes(value: String): Self = this.set("objectSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectSizeBytes: Self = this.set("objectSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
+    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

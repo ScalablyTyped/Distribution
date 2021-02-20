@@ -1,11 +1,12 @@
 package typings.flipsnap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlipsnapOptions extends js.Object {
+trait FlipsnapOptions extends StObject {
   
   /**
     * When support 3D transform browser and this option set true, it is not used 3D transform and use 2D transform. You should set true, when it is a device which has a bug in 3D transform(old Android or BlackBerry etc). default is false.
@@ -41,48 +42,36 @@ object FlipsnapOptions {
   }
   
   @scala.inline
-  implicit class FlipsnapOptionsOps[Self <: FlipsnapOptions] (val x: Self) extends AnyVal {
+  implicit class FlipsnapOptionsMutableBuilder[Self <: FlipsnapOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable3d(value: Boolean): Self = StObject.set(x, "disable3d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisable3dUndefined: Self = StObject.set(x, "disable3d", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable3d(value: Boolean): Self = this.set("disable3d", value.asInstanceOf[js.Any])
+    def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
     
     @scala.inline
-    def deleteDisable3d: Self = this.set("disable3d", js.undefined)
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTouch(value: Boolean): Self = this.set("disableTouch", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def deleteDisableTouch: Self = this.set("disableTouch", js.undefined)
+    def setMaxPoint(value: Double): Self = StObject.set(x, "maxPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setMaxPointUndefined: Self = StObject.set(x, "maxPoint", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPoint(value: Double): Self = this.set("maxPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxPoint: Self = this.set("maxPoint", js.undefined)
-    
-    @scala.inline
-    def setTransitionDuration(value: Double): Self = this.set("transitionDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionDuration: Self = this.set("transitionDuration", js.undefined)
+    def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
   }
 }

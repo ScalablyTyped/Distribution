@@ -1,11 +1,12 @@
 package typings.twit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigKeys extends js.Object {
+trait ConfigKeys extends StObject {
   
   var access_token: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object ConfigKeys {
   }
   
   @scala.inline
-  implicit class ConfigKeysOps[Self <: ConfigKeys] (val x: Self) extends AnyVal {
+  implicit class ConfigKeysMutableBuilder[Self <: ConfigKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccess_token_secret(value: String): Self = StObject.set(x, "access_token_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumer_key(value: String): Self = this.set("consumer_key", value.asInstanceOf[js.Any])
+    def setAccess_token_secretUndefined: Self = StObject.set(x, "access_token_secret", js.undefined)
     
     @scala.inline
-    def setConsumer_secret(value: String): Self = this.set("consumer_secret", value.asInstanceOf[js.Any])
+    def setConsumer_key(value: String): Self = StObject.set(x, "consumer_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccess_token: Self = this.set("access_token", js.undefined)
-    
-    @scala.inline
-    def setAccess_token_secret(value: String): Self = this.set("access_token_secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccess_token_secret: Self = this.set("access_token_secret", js.undefined)
+    def setConsumer_secret(value: String): Self = StObject.set(x, "consumer_secret", value.asInstanceOf[js.Any])
   }
 }

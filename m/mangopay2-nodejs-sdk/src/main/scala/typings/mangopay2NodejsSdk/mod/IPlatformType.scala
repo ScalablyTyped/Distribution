@@ -8,12 +8,13 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P2P_PAYMENT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPlatformType extends js.Object {
+trait IPlatformType extends StObject {
   
   var CROWDFUNDING_DONATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION = js.native
   
@@ -49,42 +50,30 @@ object IPlatformType {
   }
   
   @scala.inline
-  implicit class IPlatformTypeOps[Self <: IPlatformType] (val x: Self) extends AnyVal {
+  implicit class IPlatformTypeMutableBuilder[Self <: IPlatformType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCROWDFUNDING_DONATION(value: CROWDFUNDING_DONATION): Self = StObject.set(x, "CROWDFUNDING_DONATION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCROWDFUNDING_EQUITY(value: CROWDFUNDING_EQUITY): Self = StObject.set(x, "CROWDFUNDING_EQUITY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCROWDFUNDING_LOAN(value: CROWDFUNDING_LOAN): Self = StObject.set(x, "CROWDFUNDING_LOAN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCROWDFUNDING_DONATION(value: CROWDFUNDING_DONATION): Self = this.set("CROWDFUNDING_DONATION", value.asInstanceOf[js.Any])
+    def setCROWDFUNDING_REWARD(value: CROWDFUNDING_REWARD): Self = StObject.set(x, "CROWDFUNDING_REWARD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCROWDFUNDING_EQUITY(value: CROWDFUNDING_EQUITY): Self = this.set("CROWDFUNDING_EQUITY", value.asInstanceOf[js.Any])
+    def setMARKETPLACE(value: MARKETPLACE): Self = StObject.set(x, "MARKETPLACE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCROWDFUNDING_LOAN(value: CROWDFUNDING_LOAN): Self = this.set("CROWDFUNDING_LOAN", value.asInstanceOf[js.Any])
+    def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCROWDFUNDING_REWARD(value: CROWDFUNDING_REWARD): Self = this.set("CROWDFUNDING_REWARD", value.asInstanceOf[js.Any])
+    def setOTHER(value: OTHER): Self = StObject.set(x, "OTHER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMARKETPLACE(value: MARKETPLACE): Self = this.set("MARKETPLACE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotSpecified(value: NotSpecified): Self = this.set("NotSpecified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOTHER(value: OTHER): Self = this.set("OTHER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP2P_PAYMENT(value: P2P_PAYMENT): Self = this.set("P2P_PAYMENT", value.asInstanceOf[js.Any])
+    def setP2P_PAYMENT(value: P2P_PAYMENT): Self = StObject.set(x, "P2P_PAYMENT", value.asInstanceOf[js.Any])
   }
 }

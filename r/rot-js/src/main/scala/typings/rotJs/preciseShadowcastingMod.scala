@@ -1,12 +1,17 @@
 package typings.rotJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/fov/precise-shadowcasting", JSImport.Namespace)
-@js.native
-object preciseShadowcastingMod extends js.Object {
+object preciseShadowcastingMod {
+  
+  @JSImport("rot-js/lib/fov/precise-shadowcasting", JSImport.Default)
+  @js.native
+  class default () extends PreciseShadowcasting
+  
+  type Arc = js.Tuple2[Double, Double]
   
   @js.native
   trait PreciseShadowcasting
@@ -20,9 +25,4 @@ object preciseShadowcastingMod extends js.Object {
       */
     def _checkVisibility(A1: Arc, A2: Arc, blocks: Boolean, SHADOWS: js.Array[Arc]): Double = js.native
   }
-  
-  @js.native
-  class default () extends PreciseShadowcasting
-  
-  type Arc = js.Tuple2[Double, Double]
 }

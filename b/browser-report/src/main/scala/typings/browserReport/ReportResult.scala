@@ -5,12 +5,13 @@ import typings.browserReport.anon.Colors
 import typings.browserReport.anon.Layout
 import typings.browserReport.anon.Name
 import typings.browserReport.anon.Version
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportResult extends js.Object {
+trait ReportResult extends StObject {
   
   var browser: Name = js.native
   
@@ -66,63 +67,51 @@ object ReportResult {
   }
   
   @scala.inline
-  implicit class ReportResultOps[Self <: ReportResult] (val x: Self) extends AnyVal {
+  implicit class ReportResultMutableBuilder[Self <: ReportResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookies(value: Boolean): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: City): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: Name): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setFlash(value: Version): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookies(value: Boolean): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: City): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setJava_(value: Version): Self = StObject.set(x, "java", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlash(value: Version): Self = this.set("flash", value.asInstanceOf[js.Any])
+    def setLang(value: js.Array[String]): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
     
     @scala.inline
-    def setJava_(value: Version): Self = this.set("java", value.asInstanceOf[js.Any])
+    def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLangVarargs(value: String*): Self = this.set("lang", js.Array(value :_*))
+    def setScreen(value: Colors): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: js.Array[String]): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOs(value: Name): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreen(value: Colors): Self = this.set("screen", value.asInstanceOf[js.Any])
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScripts(value: Boolean): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    def setViewport(value: Layout): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewport(value: Layout): Self = this.set("viewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebsockets(value: Boolean): Self = this.set("websockets", value.asInstanceOf[js.Any])
+    def setWebsockets(value: Boolean): Self = StObject.set(x, "websockets", value.asInstanceOf[js.Any])
   }
 }

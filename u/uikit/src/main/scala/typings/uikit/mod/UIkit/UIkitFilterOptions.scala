@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitFilterOptions extends js.Object {
+trait UIkitFilterOptions extends StObject {
   
   var selActive: js.UndefOr[String | Boolean] = js.native
   
@@ -20,30 +21,18 @@ object UIkitFilterOptions {
   }
   
   @scala.inline
-  implicit class UIkitFilterOptionsOps[Self <: UIkitFilterOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitFilterOptionsMutableBuilder[Self <: UIkitFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSelActive(value: String | Boolean): Self = StObject.set(x, "selActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelActiveUndefined: Self = StObject.set(x, "selActive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelActive(value: String | Boolean): Self = this.set("selActive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelActive: Self = this.set("selActive", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

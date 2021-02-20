@@ -1,5 +1,6 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object UpdateUserData {
   }
   
   @scala.inline
-  implicit class UpdateUserDataOps[Self <: UpdateUserData] (val x: Self) extends AnyVal {
+  implicit class UpdateUserDataMutableBuilder[Self <: UpdateUserData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def deleteClient_id: Self = this.set("client_id", js.undefined)
+    def setVerify_password(value: Boolean): Self = StObject.set(x, "verify_password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: String): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setVerify_passwordUndefined: Self = StObject.set(x, "verify_password", js.undefined)
     
     @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setVerify_phone_number(value: Boolean): Self = StObject.set(x, "verify_phone_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerify_password(value: Boolean): Self = this.set("verify_password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerify_password: Self = this.set("verify_password", js.undefined)
-    
-    @scala.inline
-    def setVerify_phone_number(value: Boolean): Self = this.set("verify_phone_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerify_phone_number: Self = this.set("verify_phone_number", js.undefined)
+    def setVerify_phone_numberUndefined: Self = StObject.set(x, "verify_phone_number", js.undefined)
   }
 }

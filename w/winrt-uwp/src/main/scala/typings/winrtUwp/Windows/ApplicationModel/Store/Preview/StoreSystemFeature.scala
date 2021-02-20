@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StoreSystemFeature extends js.Object
+sealed trait StoreSystemFeature extends StObject
 /** Defines values that represent hardware features that can be queried for the current device by using the FilterUnsupportedSystemFeaturesAsync method. */
 @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreSystemFeature")
 @js.native
-object StoreSystemFeature extends js.Object {
+object StoreSystemFeature extends StObject {
   
   /** The device chipset uses the ARM CPU architecture. */
   @js.native

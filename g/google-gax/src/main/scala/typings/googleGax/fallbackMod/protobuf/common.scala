@@ -2,14 +2,17 @@ package typings.googleGax.fallbackMod.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/fallback", "protobuf.common")
-@js.native
-object common extends js.Object {
+object common {
+  
+  @JSImport("google-gax/build/src/fallback", "protobuf.common")
+  @js.native
   def apply(name: String, json: StringDictionary[js.Any]): Unit = js.native
+  
   /**
     * Gets the root definition of the specified common proto file.
     *
@@ -25,6 +28,7 @@ object common extends js.Object {
     * @param file Proto file name
     * @returns Root definition or `null` if not defined
     */
+  @JSImport("google-gax/build/src/fallback", "protobuf.common.get")
+  @js.native
   def get(file: String): INamespace | Null = js.native
 }
-

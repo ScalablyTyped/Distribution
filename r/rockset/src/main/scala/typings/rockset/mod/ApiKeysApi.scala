@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiKeysApi extends js.Object {
+trait ApiKeysApi extends StObject {
   
   def create(body: CreateApiKeyRequest): CreateApiKeyResponse = js.native
   def create(body: CreateApiKeyRequest, callback: RequestCallback): CreateApiKeyResponse = js.native

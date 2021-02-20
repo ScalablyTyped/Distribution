@@ -7,6 +7,7 @@ import typings.resourceLoader.resourceLoaderMod.Loader.OnLoadSignal
 import typings.resourceLoader.resourceLoaderMod.Loader.OnProgressSignal
 import typings.resourceLoader.resourceLoaderMod.Loader.OnStartSignal
 import typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("resource-loader", "Loader")
 @js.native
-class Loader () extends js.Object {
+class Loader () extends StObject {
   def this(baseUrl: String) = this()
   def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
@@ -249,10 +250,7 @@ class Loader () extends js.Object {
     */
   def use(fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
 }
-/* static members */
-@JSImport("resource-loader", "Loader")
-@js.native
-object Loader extends js.Object {
+object Loader {
   
   /**
     * Sets up a middleware function that will run *before* the
@@ -262,6 +260,9 @@ object Loader extends js.Object {
     * @param {function} fn - The middleware function to register.
     * @return {Loader} Returns itself.
     */
+  /* static member */
+  @JSImport("resource-loader", "Loader.pre")
+  @js.native
   def pre(fn: js.Function1[/* repeated */ js.Any, _]): Loader = js.native
   
   /**
@@ -272,6 +273,9 @@ object Loader extends js.Object {
     * @param {function} fn - The middleware function to register.
     * @return {Loader} Returns itself.
     */
+  /* static member */
+  @JSImport("resource-loader", "Loader.use")
+  @js.native
   def use(fn: js.Function1[/* repeated */ js.Any, _]): Loader = js.native
   
   /**

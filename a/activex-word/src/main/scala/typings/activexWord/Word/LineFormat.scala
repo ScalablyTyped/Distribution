@@ -7,12 +7,13 @@ import typings.activexOffice.Office.MsoLineDashStyle
 import typings.activexOffice.Office.MsoLineStyle
 import typings.activexOffice.Office.MsoPatternType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineFormat extends js.Object {
+trait LineFormat extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -83,75 +84,63 @@ object LineFormat {
   }
   
   @scala.inline
-  implicit class LineFormatOps[Self <: LineFormat] (val x: Self) extends AnyVal {
+  implicit class LineFormatMutableBuilder[Self <: LineFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackColor(value: ColorFormat): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginArrowheadLength(value: MsoArrowheadLength): Self = StObject.set(x, "BeginArrowheadLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setBeginArrowheadStyle(value: MsoArrowheadStyle): Self = StObject.set(x, "BeginArrowheadStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: ColorFormat): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBeginArrowheadWidth(value: MsoArrowheadWidth): Self = StObject.set(x, "BeginArrowheadWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadLength(value: MsoArrowheadLength): Self = this.set("BeginArrowheadLength", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadStyle(value: MsoArrowheadStyle): Self = this.set("BeginArrowheadStyle", value.asInstanceOf[js.Any])
+    def setDashStyle(value: MsoLineDashStyle): Self = StObject.set(x, "DashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginArrowheadWidth(value: MsoArrowheadWidth): Self = this.set("BeginArrowheadWidth", value.asInstanceOf[js.Any])
+    def setEndArrowheadLength(value: MsoArrowheadLength): Self = StObject.set(x, "EndArrowheadLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setEndArrowheadStyle(value: MsoArrowheadStyle): Self = StObject.set(x, "EndArrowheadStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashStyle(value: MsoLineDashStyle): Self = this.set("DashStyle", value.asInstanceOf[js.Any])
+    def setEndArrowheadWidth(value: MsoArrowheadWidth): Self = StObject.set(x, "EndArrowheadWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadLength(value: MsoArrowheadLength): Self = this.set("EndArrowheadLength", value.asInstanceOf[js.Any])
+    def setForeColor(value: ColorFormat): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadStyle(value: MsoArrowheadStyle): Self = this.set("EndArrowheadStyle", value.asInstanceOf[js.Any])
+    def setInsetPen(value: MsoTriState): Self = StObject.set(x, "InsetPen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndArrowheadWidth(value: MsoArrowheadWidth): Self = this.set("EndArrowheadWidth", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: ColorFormat): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    def setPattern(value: MsoPatternType): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsetPen(value: MsoTriState): Self = this.set("InsetPen", value.asInstanceOf[js.Any])
+    def setStyle(value: MsoLineStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setTransparency(value: Double): Self = StObject.set(x, "Transparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: MsoPatternType): Self = this.set("Pattern", value.asInstanceOf[js.Any])
+    def setVisible(value: MsoTriState): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: MsoLineStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparency(value: Double): Self = this.set("Transparency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: MsoTriState): Self = this.set("Visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("Weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotLineFormat_typekey(value: LineFormat): Self = this.set("Word.LineFormat_typekey", value.asInstanceOf[js.Any])
+    def setWordDotLineFormat_typekey(value: LineFormat): Self = StObject.set(x, "Word.LineFormat_typekey", value.asInstanceOf[js.Any])
   }
 }

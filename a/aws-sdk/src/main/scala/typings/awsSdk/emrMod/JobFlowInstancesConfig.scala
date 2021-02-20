@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobFlowInstancesConfig extends js.Object {
+trait JobFlowInstancesConfig extends StObject {
   
   /**
     * A list of additional Amazon EC2 security group IDs for the master node.
@@ -101,135 +102,123 @@ object JobFlowInstancesConfig {
   }
   
   @scala.inline
-  implicit class JobFlowInstancesConfigOps[Self <: JobFlowInstancesConfig] (val x: Self) extends AnyVal {
+  implicit class JobFlowInstancesConfigMutableBuilder[Self <: JobFlowInstancesConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalMasterSecurityGroups(value: SecurityGroupsList): Self = StObject.set(x, "AdditionalMasterSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalMasterSecurityGroupsUndefined: Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalMasterSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalMasterSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = this.set("AdditionalMasterSecurityGroups", js.Array(value :_*))
+    def setAdditionalSlaveSecurityGroups(value: SecurityGroupsList): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalMasterSecurityGroups(value: SecurityGroupsList): Self = this.set("AdditionalMasterSecurityGroups", value.asInstanceOf[js.Any])
+    def setAdditionalSlaveSecurityGroupsUndefined: Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteAdditionalMasterSecurityGroups: Self = this.set("AdditionalMasterSecurityGroups", js.undefined)
+    def setAdditionalSlaveSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalSlaveSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = this.set("AdditionalSlaveSecurityGroups", js.Array(value :_*))
+    def setEc2KeyName(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2KeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalSlaveSecurityGroups(value: SecurityGroupsList): Self = this.set("AdditionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
+    def setEc2KeyNameUndefined: Self = StObject.set(x, "Ec2KeyName", js.undefined)
     
     @scala.inline
-    def deleteAdditionalSlaveSecurityGroups: Self = this.set("AdditionalSlaveSecurityGroups", js.undefined)
+    def setEc2SubnetId(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2KeyName(value: XmlStringMaxLen256): Self = this.set("Ec2KeyName", value.asInstanceOf[js.Any])
+    def setEc2SubnetIdUndefined: Self = StObject.set(x, "Ec2SubnetId", js.undefined)
     
     @scala.inline
-    def deleteEc2KeyName: Self = this.set("Ec2KeyName", js.undefined)
+    def setEc2SubnetIds(value: XmlStringMaxLen256List): Self = StObject.set(x, "Ec2SubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2SubnetId(value: XmlStringMaxLen256): Self = this.set("Ec2SubnetId", value.asInstanceOf[js.Any])
+    def setEc2SubnetIdsUndefined: Self = StObject.set(x, "Ec2SubnetIds", js.undefined)
     
     @scala.inline
-    def deleteEc2SubnetId: Self = this.set("Ec2SubnetId", js.undefined)
+    def setEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "Ec2SubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = this.set("Ec2SubnetIds", js.Array(value :_*))
+    def setEmrManagedMasterSecurityGroup(value: XmlStringMaxLen256): Self = StObject.set(x, "EmrManagedMasterSecurityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2SubnetIds(value: XmlStringMaxLen256List): Self = this.set("Ec2SubnetIds", value.asInstanceOf[js.Any])
+    def setEmrManagedMasterSecurityGroupUndefined: Self = StObject.set(x, "EmrManagedMasterSecurityGroup", js.undefined)
     
     @scala.inline
-    def deleteEc2SubnetIds: Self = this.set("Ec2SubnetIds", js.undefined)
+    def setEmrManagedSlaveSecurityGroup(value: XmlStringMaxLen256): Self = StObject.set(x, "EmrManagedSlaveSecurityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmrManagedMasterSecurityGroup(value: XmlStringMaxLen256): Self = this.set("EmrManagedMasterSecurityGroup", value.asInstanceOf[js.Any])
+    def setEmrManagedSlaveSecurityGroupUndefined: Self = StObject.set(x, "EmrManagedSlaveSecurityGroup", js.undefined)
     
     @scala.inline
-    def deleteEmrManagedMasterSecurityGroup: Self = this.set("EmrManagedMasterSecurityGroup", js.undefined)
+    def setHadoopVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "HadoopVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmrManagedSlaveSecurityGroup(value: XmlStringMaxLen256): Self = this.set("EmrManagedSlaveSecurityGroup", value.asInstanceOf[js.Any])
+    def setHadoopVersionUndefined: Self = StObject.set(x, "HadoopVersion", js.undefined)
     
     @scala.inline
-    def deleteEmrManagedSlaveSecurityGroup: Self = this.set("EmrManagedSlaveSecurityGroup", js.undefined)
+    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHadoopVersion(value: XmlStringMaxLen256): Self = this.set("HadoopVersion", value.asInstanceOf[js.Any])
+    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
     @scala.inline
-    def deleteHadoopVersion: Self = this.set("HadoopVersion", js.undefined)
+    def setInstanceFleets(value: InstanceFleetConfigList): Self = StObject.set(x, "InstanceFleets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    def setInstanceFleetsUndefined: Self = StObject.set(x, "InstanceFleets", js.undefined)
     
     @scala.inline
-    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    def setInstanceFleetsVarargs(value: InstanceFleetConfig*): Self = StObject.set(x, "InstanceFleets", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceFleetsVarargs(value: InstanceFleetConfig*): Self = this.set("InstanceFleets", js.Array(value :_*))
+    def setInstanceGroups(value: InstanceGroupConfigList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceFleets(value: InstanceFleetConfigList): Self = this.set("InstanceFleets", value.asInstanceOf[js.Any])
+    def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
     @scala.inline
-    def deleteInstanceFleets: Self = this.set("InstanceFleets", js.undefined)
+    def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = this.set("InstanceGroups", js.Array(value :_*))
+    def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceGroups(value: InstanceGroupConfigList): Self = this.set("InstanceGroups", value.asInstanceOf[js.Any])
+    def setKeepJobFlowAliveWhenNoStepsUndefined: Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", js.undefined)
     
     @scala.inline
-    def deleteInstanceGroups: Self = this.set("InstanceGroups", js.undefined)
+    def setMasterInstanceType(value: InstanceType): Self = StObject.set(x, "MasterInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = this.set("KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
+    def setMasterInstanceTypeUndefined: Self = StObject.set(x, "MasterInstanceType", js.undefined)
     
     @scala.inline
-    def deleteKeepJobFlowAliveWhenNoSteps: Self = this.set("KeepJobFlowAliveWhenNoSteps", js.undefined)
+    def setPlacement(value: PlacementType): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterInstanceType(value: InstanceType): Self = this.set("MasterInstanceType", value.asInstanceOf[js.Any])
+    def setPlacementUndefined: Self = StObject.set(x, "Placement", js.undefined)
     
     @scala.inline
-    def deleteMasterInstanceType: Self = this.set("MasterInstanceType", js.undefined)
+    def setServiceAccessSecurityGroup(value: XmlStringMaxLen256): Self = StObject.set(x, "ServiceAccessSecurityGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: PlacementType): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    def setServiceAccessSecurityGroupUndefined: Self = StObject.set(x, "ServiceAccessSecurityGroup", js.undefined)
     
     @scala.inline
-    def deletePlacement: Self = this.set("Placement", js.undefined)
+    def setSlaveInstanceType(value: InstanceType): Self = StObject.set(x, "SlaveInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccessSecurityGroup(value: XmlStringMaxLen256): Self = this.set("ServiceAccessSecurityGroup", value.asInstanceOf[js.Any])
+    def setSlaveInstanceTypeUndefined: Self = StObject.set(x, "SlaveInstanceType", js.undefined)
     
     @scala.inline
-    def deleteServiceAccessSecurityGroup: Self = this.set("ServiceAccessSecurityGroup", js.undefined)
+    def setTerminationProtected(value: Boolean): Self = StObject.set(x, "TerminationProtected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlaveInstanceType(value: InstanceType): Self = this.set("SlaveInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlaveInstanceType: Self = this.set("SlaveInstanceType", js.undefined)
-    
-    @scala.inline
-    def setTerminationProtected(value: Boolean): Self = this.set("TerminationProtected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminationProtected: Self = this.set("TerminationProtected", js.undefined)
+    def setTerminationProtectedUndefined: Self = StObject.set(x, "TerminationProtected", js.undefined)
   }
 }

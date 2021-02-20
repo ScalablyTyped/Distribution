@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCreateAccountStatusResponse extends js.Object {
+trait DescribeCreateAccountStatusResponse extends StObject {
   
   /**
     * A structure that contains the current status of an account creation request.
@@ -21,24 +22,12 @@ object DescribeCreateAccountStatusResponse {
   }
   
   @scala.inline
-  implicit class DescribeCreateAccountStatusResponseOps[Self <: DescribeCreateAccountStatusResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCreateAccountStatusResponseMutableBuilder[Self <: DescribeCreateAccountStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateAccountStatus(value: CreateAccountStatus): Self = StObject.set(x, "CreateAccountStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateAccountStatus(value: CreateAccountStatus): Self = this.set("CreateAccountStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreateAccountStatus: Self = this.set("CreateAccountStatus", js.undefined)
+    def setCreateAccountStatusUndefined: Self = StObject.set(x, "CreateAccountStatus", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "InventoryCount")
 @js.native
-class InventoryCount () extends js.Object {
+class InventoryCount () extends StObject {
   
   /**
     * A read-only timestamp in RFC 3339 format that indicates when Square received the most recent physical count or

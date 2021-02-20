@@ -1,11 +1,12 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Defaults extends js.Object {
+trait Defaults extends StObject {
   
   var Anchor: js.UndefOr[AnchorSpec] = js.native
   
@@ -19,7 +20,7 @@ trait Defaults extends js.Object {
   
   var Container: js.UndefOr[js.Any] = js.native
   
-   // string(selector or id) or element
+  // string(selector or id) or element
   var DragOptions: js.UndefOr[typings.jsplumb.mod.DragOptions] = js.native
   
   var Endpoint: js.UndefOr[EndpointSpec] = js.native
@@ -45,108 +46,96 @@ object Defaults {
   }
   
   @scala.inline
-  implicit class DefaultsOps[Self <: Defaults] (val x: Self) extends AnyVal {
+  implicit class DefaultsMutableBuilder[Self <: Defaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: AnchorSpec): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "Anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "Anchor", js.Array(value :_*))
     
     @scala.inline
-    def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = this.set("Anchor", js.Array(value :_*))
+    def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = StObject.set(x, "Anchors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: AnchorSpec): Self = this.set("Anchor", value.asInstanceOf[js.Any])
+    def setAnchorsUndefined: Self = StObject.set(x, "Anchors", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("Anchor", js.undefined)
+    def setConnectionOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "ConnectionOverlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = this.set("Anchors", value.asInstanceOf[js.Any])
+    def setConnectionOverlaysUndefined: Self = StObject.set(x, "ConnectionOverlays", js.undefined)
     
     @scala.inline
-    def deleteAnchors: Self = this.set("Anchors", js.undefined)
+    def setConnectionOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "ConnectionOverlays", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionOverlaysVarargs(value: OverlaySpec*): Self = this.set("ConnectionOverlays", js.Array(value :_*))
+    def setConnectionsDetachable(value: Boolean): Self = StObject.set(x, "ConnectionsDetachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionOverlays(value: js.Array[OverlaySpec]): Self = this.set("ConnectionOverlays", value.asInstanceOf[js.Any])
+    def setConnectionsDetachableUndefined: Self = StObject.set(x, "ConnectionsDetachable", js.undefined)
     
     @scala.inline
-    def deleteConnectionOverlays: Self = this.set("ConnectionOverlays", js.undefined)
+    def setConnector(value: ConnectorSpec): Self = StObject.set(x, "Connector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionsDetachable(value: Boolean): Self = this.set("ConnectionsDetachable", value.asInstanceOf[js.Any])
+    def setConnectorUndefined: Self = StObject.set(x, "Connector", js.undefined)
     
     @scala.inline
-    def deleteConnectionsDetachable: Self = this.set("ConnectionsDetachable", js.undefined)
+    def setContainer(value: js.Any): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnector(value: ConnectorSpec): Self = this.set("Connector", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "Container", js.undefined)
     
     @scala.inline
-    def deleteConnector: Self = this.set("Connector", js.undefined)
+    def setDragOptions(value: DragOptions): Self = StObject.set(x, "DragOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("Container", value.asInstanceOf[js.Any])
+    def setDragOptionsUndefined: Self = StObject.set(x, "DragOptions", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("Container", js.undefined)
+    def setEndpoint(value: EndpointSpec): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragOptions(value: DragOptions): Self = this.set("DragOptions", value.asInstanceOf[js.Any])
+    def setEndpointHoverStyle(value: PaintStyle): Self = StObject.set(x, "EndpointHoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDragOptions: Self = this.set("DragOptions", js.undefined)
+    def setEndpointHoverStyleUndefined: Self = StObject.set(x, "EndpointHoverStyle", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: EndpointSpec): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setEndpointStyle(value: PaintStyle): Self = StObject.set(x, "EndpointStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setEndpointStyleUndefined: Self = StObject.set(x, "EndpointStyle", js.undefined)
     
     @scala.inline
-    def setEndpointHoverStyle(value: PaintStyle): Self = this.set("EndpointHoverStyle", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def deleteEndpointHoverStyle: Self = this.set("EndpointHoverStyle", js.undefined)
+    def setEndpoints(value: js.Tuple2[EndpointSpec, EndpointSpec]): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointStyle(value: PaintStyle): Self = this.set("EndpointStyle", value.asInstanceOf[js.Any])
+    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
     @scala.inline
-    def deleteEndpointStyle: Self = this.set("EndpointStyle", js.undefined)
+    def setHoverPaintStyle(value: PaintStyle): Self = StObject.set(x, "HoverPaintStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoints(value: js.Tuple2[EndpointSpec, EndpointSpec]): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    def setHoverPaintStyleUndefined: Self = StObject.set(x, "HoverPaintStyle", js.undefined)
     
     @scala.inline
-    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    def setPaintStyle(value: PaintStyle): Self = StObject.set(x, "PaintStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverPaintStyle(value: PaintStyle): Self = this.set("HoverPaintStyle", value.asInstanceOf[js.Any])
+    def setPaintStyleUndefined: Self = StObject.set(x, "PaintStyle", js.undefined)
     
     @scala.inline
-    def deleteHoverPaintStyle: Self = this.set("HoverPaintStyle", js.undefined)
+    def setReattachConnections(value: Boolean): Self = StObject.set(x, "ReattachConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaintStyle(value: PaintStyle): Self = this.set("PaintStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaintStyle: Self = this.set("PaintStyle", js.undefined)
-    
-    @scala.inline
-    def setReattachConnections(value: Boolean): Self = this.set("ReattachConnections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReattachConnections: Self = this.set("ReattachConnections", js.undefined)
+    def setReattachConnectionsUndefined: Self = StObject.set(x, "ReattachConnections", js.undefined)
   }
 }

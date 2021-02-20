@@ -1,6 +1,7 @@
 package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * searches.
   */
 @js.native
-trait SchemaHistogramQueryResult extends js.Object {
+trait SchemaHistogramQueryResult extends StObject {
   
   /**
     * A map from the values of the facet associated with distinct values to the
@@ -37,30 +38,18 @@ object SchemaHistogramQueryResult {
   }
   
   @scala.inline
-  implicit class SchemaHistogramQueryResultOps[Self <: SchemaHistogramQueryResult] (val x: Self) extends AnyVal {
+  implicit class SchemaHistogramQueryResultMutableBuilder[Self <: SchemaHistogramQueryResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistogram(value: StringDictionary[String]): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHistogramQuery(value: String): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistogramQueryUndefined: Self = StObject.set(x, "histogramQuery", js.undefined)
     
     @scala.inline
-    def setHistogram(value: StringDictionary[String]): Self = this.set("histogram", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistogram: Self = this.set("histogram", js.undefined)
-    
-    @scala.inline
-    def setHistogramQuery(value: String): Self = this.set("histogramQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistogramQuery: Self = this.set("histogramQuery", js.undefined)
+    def setHistogramUndefined: Self = StObject.set(x, "histogram", js.undefined)
   }
 }

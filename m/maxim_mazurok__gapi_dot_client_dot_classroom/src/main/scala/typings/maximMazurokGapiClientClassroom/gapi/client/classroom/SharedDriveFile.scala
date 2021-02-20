@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedDriveFile extends js.Object {
+trait SharedDriveFile extends StObject {
   
   /** Drive file details. */
   var driveFile: js.UndefOr[DriveFile] = js.native
@@ -22,30 +23,18 @@ object SharedDriveFile {
   }
   
   @scala.inline
-  implicit class SharedDriveFileOps[Self <: SharedDriveFile] (val x: Self) extends AnyVal {
+  implicit class SharedDriveFileMutableBuilder[Self <: SharedDriveFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShareMode(value: String): Self = StObject.set(x, "shareMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveFile(value: DriveFile): Self = this.set("driveFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriveFile: Self = this.set("driveFile", js.undefined)
-    
-    @scala.inline
-    def setShareMode(value: String): Self = this.set("shareMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareMode: Self = this.set("shareMode", js.undefined)
+    def setShareModeUndefined: Self = StObject.set(x, "shareMode", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSuperStickerMetadata extends js.Object {
+trait SchemaSuperStickerMetadata extends StObject {
   
   /**
     * Internationalized alt text that describes the sticker image and any
@@ -34,36 +35,24 @@ object SchemaSuperStickerMetadata {
   }
   
   @scala.inline
-  implicit class SchemaSuperStickerMetadataOps[Self <: SchemaSuperStickerMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaSuperStickerMetadataMutableBuilder[Self <: SchemaSuperStickerMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltTextLanguage(value: String): Self = StObject.set(x, "altTextLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltTextLanguageUndefined: Self = StObject.set(x, "altTextLanguage", js.undefined)
     
     @scala.inline
-    def setAltText(value: String): Self = this.set("altText", value.asInstanceOf[js.Any])
+    def setAltTextUndefined: Self = StObject.set(x, "altText", js.undefined)
     
     @scala.inline
-    def deleteAltText: Self = this.set("altText", js.undefined)
+    def setStickerId(value: String): Self = StObject.set(x, "stickerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltTextLanguage(value: String): Self = this.set("altTextLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAltTextLanguage: Self = this.set("altTextLanguage", js.undefined)
-    
-    @scala.inline
-    def setStickerId(value: String): Self = this.set("stickerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStickerId: Self = this.set("stickerId", js.undefined)
+    def setStickerIdUndefined: Self = StObject.set(x, "stickerId", js.undefined)
   }
 }

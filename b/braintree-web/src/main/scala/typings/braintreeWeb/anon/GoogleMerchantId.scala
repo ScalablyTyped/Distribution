@@ -1,11 +1,12 @@
 package typings.braintreeWeb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleMerchantId extends js.Object {
+trait GoogleMerchantId extends StObject {
   
   var authorization: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object GoogleMerchantId {
   }
   
   @scala.inline
-  implicit class GoogleMerchantIdOps[Self <: GoogleMerchantId] (val x: Self) extends AnyVal {
+  implicit class GoogleMerchantIdMutableBuilder[Self <: GoogleMerchantId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClient(value: typings.braintreeWeb.clientMod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization(value: String): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+    def setGoogleMerchantId(value: String): Self = StObject.set(x, "googleMerchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient(value: typings.braintreeWeb.clientMod.Client): Self = this.set("client", value.asInstanceOf[js.Any])
+    def setGoogleMerchantIdUndefined: Self = StObject.set(x, "googleMerchantId", js.undefined)
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setGooglePayVersion(value: Double): Self = StObject.set(x, "googlePayVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleMerchantId(value: String): Self = this.set("googleMerchantId", value.asInstanceOf[js.Any])
+    def setGooglePayVersionUndefined: Self = StObject.set(x, "googlePayVersion", js.undefined)
     
     @scala.inline
-    def deleteGoogleMerchantId: Self = this.set("googleMerchantId", js.undefined)
+    def setUseDeferredClient(value: Boolean): Self = StObject.set(x, "useDeferredClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGooglePayVersion(value: Double): Self = this.set("googlePayVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGooglePayVersion: Self = this.set("googlePayVersion", js.undefined)
-    
-    @scala.inline
-    def setUseDeferredClient(value: Boolean): Self = this.set("useDeferredClient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseDeferredClient: Self = this.set("useDeferredClient", js.undefined)
+    def setUseDeferredClientUndefined: Self = StObject.set(x, "useDeferredClient", js.undefined)
   }
 }

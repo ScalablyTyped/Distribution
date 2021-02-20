@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauthorization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttestorPublicKey extends js.Object {
+trait AttestorPublicKey extends StObject {
   
   /**
     * ASCII-armored representation of a PGP public key, as the entire output by the command `gpg --export --armor foo@example.com` (either LF or CRLF line endings). When using this field,
@@ -38,42 +39,30 @@ object AttestorPublicKey {
   }
   
   @scala.inline
-  implicit class AttestorPublicKeyOps[Self <: AttestorPublicKey] (val x: Self) extends AnyVal {
+  implicit class AttestorPublicKeyMutableBuilder[Self <: AttestorPublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsciiArmoredPgpPublicKey(value: String): Self = StObject.set(x, "asciiArmoredPgpPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsciiArmoredPgpPublicKeyUndefined: Self = StObject.set(x, "asciiArmoredPgpPublicKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsciiArmoredPgpPublicKey(value: String): Self = this.set("asciiArmoredPgpPublicKey", value.asInstanceOf[js.Any])
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def deleteAsciiArmoredPgpPublicKey: Self = this.set("asciiArmoredPgpPublicKey", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setPkixPublicKey(value: PkixPublicKey): Self = StObject.set(x, "pkixPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setPkixPublicKey(value: PkixPublicKey): Self = this.set("pkixPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePkixPublicKey: Self = this.set("pkixPublicKey", js.undefined)
+    def setPkixPublicKeyUndefined: Self = StObject.set(x, "pkixPublicKey", js.undefined)
   }
 }

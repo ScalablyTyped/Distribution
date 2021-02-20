@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultConfigurationUpdates extends js.Object {
+trait ResultConfigurationUpdates extends StObject {
   
   /**
     * The encryption configuration for the query results.
@@ -36,42 +37,30 @@ object ResultConfigurationUpdates {
   }
   
   @scala.inline
-  implicit class ResultConfigurationUpdatesOps[Self <: ResultConfigurationUpdates] (val x: Self) extends AnyVal {
+  implicit class ResultConfigurationUpdatesMutableBuilder[Self <: ResultConfigurationUpdates] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputLocation(value: String): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
     
     @scala.inline
-    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
+    def setRemoveEncryptionConfiguration(value: BoxedBoolean): Self = StObject.set(x, "RemoveEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputLocation(value: String): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    def setRemoveEncryptionConfigurationUndefined: Self = StObject.set(x, "RemoveEncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    def setRemoveOutputLocation(value: BoxedBoolean): Self = StObject.set(x, "RemoveOutputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveEncryptionConfiguration(value: BoxedBoolean): Self = this.set("RemoveEncryptionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveEncryptionConfiguration: Self = this.set("RemoveEncryptionConfiguration", js.undefined)
-    
-    @scala.inline
-    def setRemoveOutputLocation(value: BoxedBoolean): Self = this.set("RemoveOutputLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveOutputLocation: Self = this.set("RemoveOutputLocation", js.undefined)
+    def setRemoveOutputLocationUndefined: Self = StObject.set(x, "RemoveOutputLocation", js.undefined)
   }
 }

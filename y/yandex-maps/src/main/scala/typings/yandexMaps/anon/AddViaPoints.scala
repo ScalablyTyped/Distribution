@@ -1,11 +1,12 @@
 package typings.yandexMaps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddViaPoints extends js.Object {
+trait AddViaPoints extends StObject {
   
   var addViaPoints: js.UndefOr[Boolean] = js.native
   
@@ -28,54 +29,42 @@ object AddViaPoints {
   }
   
   @scala.inline
-  implicit class AddViaPointsOps[Self <: AddViaPoints] (val x: Self) extends AnyVal {
+  implicit class AddViaPointsMutableBuilder[Self <: AddViaPoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddViaPoints(value: Boolean): Self = StObject.set(x, "addViaPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddViaPointsUndefined: Self = StObject.set(x, "addViaPoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddWayPoints(value: Boolean): Self = StObject.set(x, "addWayPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddViaPoints(value: Boolean): Self = this.set("addViaPoints", value.asInstanceOf[js.Any])
+    def setAddWayPointsUndefined: Self = StObject.set(x, "addWayPoints", js.undefined)
     
     @scala.inline
-    def deleteAddViaPoints: Self = this.set("addViaPoints", js.undefined)
+    def setEditViaPoints(value: Boolean): Self = StObject.set(x, "editViaPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddWayPoints(value: Boolean): Self = this.set("addWayPoints", value.asInstanceOf[js.Any])
+    def setEditViaPointsUndefined: Self = StObject.set(x, "editViaPoints", js.undefined)
     
     @scala.inline
-    def deleteAddWayPoints: Self = this.set("addWayPoints", js.undefined)
+    def setEditWayPoints(value: Boolean): Self = StObject.set(x, "editWayPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditViaPoints(value: Boolean): Self = this.set("editViaPoints", value.asInstanceOf[js.Any])
+    def setEditWayPointsUndefined: Self = StObject.set(x, "editWayPoints", js.undefined)
     
     @scala.inline
-    def deleteEditViaPoints: Self = this.set("editViaPoints", js.undefined)
+    def setRemoveViaPoints(value: Boolean): Self = StObject.set(x, "removeViaPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditWayPoints(value: Boolean): Self = this.set("editWayPoints", value.asInstanceOf[js.Any])
+    def setRemoveViaPointsUndefined: Self = StObject.set(x, "removeViaPoints", js.undefined)
     
     @scala.inline
-    def deleteEditWayPoints: Self = this.set("editWayPoints", js.undefined)
+    def setRemoveWayPoints(value: Boolean): Self = StObject.set(x, "removeWayPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveViaPoints(value: Boolean): Self = this.set("removeViaPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveViaPoints: Self = this.set("removeViaPoints", js.undefined)
-    
-    @scala.inline
-    def setRemoveWayPoints(value: Boolean): Self = this.set("removeWayPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveWayPoints: Self = this.set("removeWayPoints", js.undefined)
+    def setRemoveWayPointsUndefined: Self = StObject.set(x, "removeWayPoints", js.undefined)
   }
 }

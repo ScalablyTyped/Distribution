@@ -1,11 +1,12 @@
 package typings.jaegerClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SamplerConfig extends js.Object {
+trait SamplerConfig extends StObject {
   
   var host: js.UndefOr[String] = js.native
   
@@ -29,48 +30,36 @@ object SamplerConfig {
   }
   
   @scala.inline
-  implicit class SamplerConfigOps[Self <: SamplerConfig] (val x: Self) extends AnyVal {
+  implicit class SamplerConfigMutableBuilder[Self <: SamplerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
     @scala.inline
-    def setParam(value: Double): Self = this.set("param", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setParam(value: Double): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setHostPort(value: String): Self = this.set("hostPort", value.asInstanceOf[js.Any])
+    def setRefreshIntervalMs(value: Double): Self = StObject.set(x, "refreshIntervalMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostPort: Self = this.set("hostPort", js.undefined)
+    def setRefreshIntervalMsUndefined: Self = StObject.set(x, "refreshIntervalMs", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
-    
-    @scala.inline
-    def setRefreshIntervalMs(value: Double): Self = this.set("refreshIntervalMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshIntervalMs: Self = this.set("refreshIntervalMs", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

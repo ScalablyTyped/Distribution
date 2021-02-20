@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Controls extends js.Object {
+trait Controls extends StObject {
   
   /**
     * Determines whether the story's history controls (Backward, Jump To, & Forward buttons) are enabled within the UI bar.
@@ -41,24 +42,12 @@ object Controls {
   }
   
   @scala.inline
-  implicit class ControlsOps[Self <: Controls] (val x: Self) extends AnyVal {
+  implicit class ControlsMutableBuilder[Self <: Controls] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxStates(value: Double): Self = this.set("maxStates", value.asInstanceOf[js.Any])
+    def setMaxStates(value: Double): Self = StObject.set(x, "maxStates", value.asInstanceOf[js.Any])
   }
 }

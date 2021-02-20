@@ -1,13 +1,14 @@
 package typings.popperjsCore
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@popperjs/core/lib/dom-utils/getWindowScrollBarX", JSImport.Namespace)
-@js.native
-object getWindowScrollBarXMod extends js.Object {
+object getWindowScrollBarXMod {
   
+  @JSImport("@popperjs/core/lib/dom-utils/getWindowScrollBarX", JSImport.Default)
+  @js.native
   def default(element: Element): Double = js.native
 }

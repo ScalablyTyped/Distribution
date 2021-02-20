@@ -1,15 +1,24 @@
 package typings.feathersjsRestClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@feathersjs/rest-client", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@feathersjs/rest-client", JSImport.Default)
+  @js.native
   def default(): Transport = js.native
+  @JSImport("@feathersjs/rest-client", JSImport.Default)
+  @js.native
   def default(base: String): Transport = js.native
+  
+  type Handler = js.Function2[
+    /* connection */ js.Any, 
+    /* options */ js.UndefOr[js.Any], 
+    js.Function0[HandlerResult]
+  ]
   
   @js.native
   trait HandlerResult
@@ -32,7 +41,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Transport extends js.Object {
+  trait Transport extends StObject {
     
     def angular(connection: js.Any): js.Function0[HandlerResult] = js.native
     def angular(connection: js.Any, options: js.Any): js.Function0[HandlerResult] = js.native
@@ -70,10 +79,4 @@ object mod extends js.Object {
     @JSName("superagent")
     var superagent_Original: Handler = js.native
   }
-  
-  type Handler = js.Function2[
-    /* connection */ js.Any, 
-    /* options */ js.UndefOr[js.Any], 
-    js.Function0[HandlerResult]
-  ]
 }

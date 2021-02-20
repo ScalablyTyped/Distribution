@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppCaptureHistoricalBufferLengthUnit extends js.Object
+sealed trait AppCaptureHistoricalBufferLengthUnit extends StObject
 /** Specifies the units of the app capture historical buffer. */
 @JSGlobal("Windows.Media.Capture.AppCaptureHistoricalBufferLengthUnit")
 @js.native
-object AppCaptureHistoricalBufferLengthUnit extends js.Object {
+object AppCaptureHistoricalBufferLengthUnit extends StObject {
   
   /** Megabytes */
   @js.native

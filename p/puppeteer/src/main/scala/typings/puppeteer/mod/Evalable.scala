@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Evalable extends js.Object {
+trait Evalable extends StObject {
   
   /**
     * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.

@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import typings.continuationLocalStorage.mod.Namespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,6 +78,11 @@ Instantiable3[
     ] {
   
   /**
+    * Default export for `import Sequelize from 'sequelize';` kind of imports
+    */
+  var default: SequelizeStatic = js.native
+  
+  /**
     * Export sequelize static on the instance for `import Sequelize from 'sequelize';` kind of imports
     */
   var Sequelize: SequelizeStatic = js.native
@@ -85,11 +91,6 @@ Instantiable3[
     * Provide access to continuation-local-storage (http://docs.sequelizejs.com/en/latest/api/sequelize/#transactionoptions-promise)
     */
   var cls: js.Any = js.native
-  
-  /**
-    * Default export for `import Sequelize from 'sequelize';` kind of imports
-    */
-  var default: SequelizeStatic = js.native
   
   def useCLS(namespace: Namespace): Sequelize = js.native
 }

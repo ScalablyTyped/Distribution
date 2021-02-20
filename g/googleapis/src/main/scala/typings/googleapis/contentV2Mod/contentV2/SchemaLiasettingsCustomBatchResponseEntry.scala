@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiasettingsCustomBatchResponseEntry extends js.Object {
+trait SchemaLiasettingsCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry to which this entry responds.
@@ -47,57 +48,45 @@ object SchemaLiasettingsCustomBatchResponseEntry {
   }
   
   @scala.inline
-  implicit class SchemaLiasettingsCustomBatchResponseEntryOps[Self <: SchemaLiasettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaLiasettingsCustomBatchResponseEntryMutableBuilder[Self <: SchemaLiasettingsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setGmbAccounts(value: SchemaGmbAccounts): Self = StObject.set(x, "gmbAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: SchemaErrors): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGmbAccounts(value: SchemaGmbAccounts): Self = this.set("gmbAccounts", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGmbAccounts: Self = this.set("gmbAccounts", js.undefined)
+    def setLiaSettings(value: SchemaLiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLiaSettingsUndefined: Self = StObject.set(x, "liaSettings", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPosDataProviders(value: js.Array[SchemaPosDataProviders]): Self = StObject.set(x, "posDataProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiaSettings(value: SchemaLiaSettings): Self = this.set("liaSettings", value.asInstanceOf[js.Any])
+    def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
     @scala.inline
-    def deleteLiaSettings: Self = this.set("liaSettings", js.undefined)
-    
-    @scala.inline
-    def setPosDataProvidersVarargs(value: SchemaPosDataProviders*): Self = this.set("posDataProviders", js.Array(value :_*))
-    
-    @scala.inline
-    def setPosDataProviders(value: js.Array[SchemaPosDataProviders]): Self = this.set("posDataProviders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosDataProviders: Self = this.set("posDataProviders", js.undefined)
+    def setPosDataProvidersVarargs(value: SchemaPosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
   }
 }

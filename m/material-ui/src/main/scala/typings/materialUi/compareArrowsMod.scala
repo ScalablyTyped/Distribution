@@ -2,19 +2,19 @@ package typings.materialUi
 
 import typings.materialUi.MaterialUI.SvgIconProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/action/compare-arrows", JSImport.Namespace)
-@js.native
-object compareArrowsMod extends js.Object {
+object compareArrowsMod {
   
+  @JSImport("material-ui/svg-icons/action/compare-arrows", JSImport.Default)
+  @js.native
+  class default () extends ActionCompareArrows
+  
+  @JSImport("material-ui/svg-icons/action/compare-arrows", "ActionCompareArrows")
   @js.native
   class ActionCompareArrows ()
-    extends Component[SvgIconProps, js.Object, js.Any]
-  
-  @js.native
-  class default ()
     extends Component[SvgIconProps, js.Object, js.Any]
 }

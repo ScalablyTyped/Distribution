@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePullRequestApprovalRuleContentInput extends js.Object {
+trait UpdatePullRequestApprovalRuleContentInput extends StObject {
   
   /**
     * The name of the approval rule you want to update.
@@ -40,33 +41,21 @@ object UpdatePullRequestApprovalRuleContentInput {
   }
   
   @scala.inline
-  implicit class UpdatePullRequestApprovalRuleContentInputOps[Self <: UpdatePullRequestApprovalRuleContentInput] (val x: Self) extends AnyVal {
+  implicit class UpdatePullRequestApprovalRuleContentInputMutableBuilder[Self <: UpdatePullRequestApprovalRuleContentInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExistingRuleContentSha256(value: RuleContentSha256): Self = StObject.set(x, "existingRuleContentSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExistingRuleContentSha256Undefined: Self = StObject.set(x, "existingRuleContentSha256", js.undefined)
     
     @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = this.set("approvalRuleName", value.asInstanceOf[js.Any])
+    def setNewRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "newRuleContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewRuleContent(value: ApprovalRuleContent): Self = this.set("newRuleContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExistingRuleContentSha256(value: RuleContentSha256): Self = this.set("existingRuleContentSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExistingRuleContentSha256: Self = this.set("existingRuleContentSha256", js.undefined)
+    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

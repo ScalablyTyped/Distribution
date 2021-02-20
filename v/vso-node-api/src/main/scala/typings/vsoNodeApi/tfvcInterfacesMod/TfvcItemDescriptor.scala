@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcItemDescriptor extends js.Object {
+trait TfvcItemDescriptor extends StObject {
   
   var path: String = js.native
   
@@ -32,33 +33,21 @@ object TfvcItemDescriptor {
   }
   
   @scala.inline
-  implicit class TfvcItemDescriptorOps[Self <: TfvcItemDescriptor] (val x: Self) extends AnyVal {
+  implicit class TfvcItemDescriptorMutableBuilder[Self <: TfvcItemDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursionLevel(value: VersionControlRecursionType): Self = StObject.set(x, "recursionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setVersionOption(value: TfvcVersionOption): Self = StObject.set(x, "versionOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursionLevel(value: VersionControlRecursionType): Self = this.set("recursionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionOption(value: TfvcVersionOption): Self = this.set("versionOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionType(value: TfvcVersionType): Self = this.set("versionType", value.asInstanceOf[js.Any])
+    def setVersionType(value: TfvcVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
   }
 }

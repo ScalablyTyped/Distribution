@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DocListEntry...
   */
 @js.native
-trait IDocListEntry extends js.Object {
+trait IDocListEntry extends StObject {
   
   /**
     * Not used.
@@ -87,48 +88,36 @@ object IDocListEntry {
   }
   
   @scala.inline
-  implicit class IDocListEntryOps[Self <: IDocListEntry] (val x: Self) extends AnyVal {
+  implicit class IDocListEntryMutableBuilder[Self <: IDocListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQConnectedUsers(value: Double): Self = StObject.set(x, "qConnectedUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDocId(value: String): Self = StObject.set(x, "qDocId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDocName(value: String): Self = StObject.set(x, "qDocName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQConnectedUsers(value: Double): Self = this.set("qConnectedUsers", value.asInstanceOf[js.Any])
+    def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDocId(value: String): Self = this.set("qDocId", value.asInstanceOf[js.Any])
+    def setQFileTime(value: Double): Self = StObject.set(x, "qFileTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDocName(value: String): Self = this.set("qDocName", value.asInstanceOf[js.Any])
+    def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFileSize(value: Double): Self = this.set("qFileSize", value.asInstanceOf[js.Any])
+    def setQMeta(value: INxMeta): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFileTime(value: Double): Self = this.set("qFileTime", value.asInstanceOf[js.Any])
+    def setQReadOnly(value: Boolean): Self = StObject.set(x, "qReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLastReloadTime(value: String): Self = this.set("qLastReloadTime", value.asInstanceOf[js.Any])
+    def setQThumbnail(value: IStaticContentUrl): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMeta(value: INxMeta): Self = this.set("qMeta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQReadOnly(value: Boolean): Self = this.set("qReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQThumbnail(value: IStaticContentUrl): Self = this.set("qThumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTitle(value: String): Self = this.set("qTitle", value.asInstanceOf[js.Any])
+    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
   }
 }

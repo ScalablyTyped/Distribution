@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeGroupMember extends js.Object {
+trait NodeGroupMember extends StObject {
   
   /**
     * The ID of the cluster to which the node belongs.
@@ -46,54 +47,42 @@ object NodeGroupMember {
   }
   
   @scala.inline
-  implicit class NodeGroupMemberOps[Self <: NodeGroupMember] (val x: Self) extends AnyVal {
+  implicit class NodeGroupMemberMutableBuilder[Self <: NodeGroupMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    def setCurrentRole(value: String): Self = StObject.set(x, "CurrentRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeId(value: String): Self = this.set("CacheNodeId", value.asInstanceOf[js.Any])
+    def setCurrentRoleUndefined: Self = StObject.set(x, "CurrentRole", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeId: Self = this.set("CacheNodeId", js.undefined)
+    def setPreferredAvailabilityZone(value: String): Self = StObject.set(x, "PreferredAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRole(value: String): Self = this.set("CurrentRole", value.asInstanceOf[js.Any])
+    def setPreferredAvailabilityZoneUndefined: Self = StObject.set(x, "PreferredAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteCurrentRole: Self = this.set("CurrentRole", js.undefined)
+    def setPreferredOutpostArn(value: String): Self = StObject.set(x, "PreferredOutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredAvailabilityZone(value: String): Self = this.set("PreferredAvailabilityZone", value.asInstanceOf[js.Any])
+    def setPreferredOutpostArnUndefined: Self = StObject.set(x, "PreferredOutpostArn", js.undefined)
     
     @scala.inline
-    def deletePreferredAvailabilityZone: Self = this.set("PreferredAvailabilityZone", js.undefined)
+    def setReadEndpoint(value: Endpoint): Self = StObject.set(x, "ReadEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredOutpostArn(value: String): Self = this.set("PreferredOutpostArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredOutpostArn: Self = this.set("PreferredOutpostArn", js.undefined)
-    
-    @scala.inline
-    def setReadEndpoint(value: Endpoint): Self = this.set("ReadEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadEndpoint: Self = this.set("ReadEndpoint", js.undefined)
+    def setReadEndpointUndefined: Self = StObject.set(x, "ReadEndpoint", js.undefined)
   }
 }

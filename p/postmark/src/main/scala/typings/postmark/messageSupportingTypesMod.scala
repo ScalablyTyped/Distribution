@@ -1,16 +1,15 @@
 package typings.postmark
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/models/message/SupportingTypes", JSImport.Namespace)
-@js.native
-object messageSupportingTypesMod extends js.Object {
+object messageSupportingTypesMod {
   
+  @JSImport("postmark/dist/client/models/message/SupportingTypes", "Attachment")
   @js.native
-  class Attachment protected () extends js.Object {
+  class Attachment protected () extends StObject {
     def this(Name: String, Content: String, ContentType: String) = this()
     def this(Name: String, Content: String, ContentType: String, ContentID: String) = this()
     
@@ -23,8 +22,9 @@ object messageSupportingTypesMod extends js.Object {
     var Name: String = js.native
   }
   
+  @JSImport("postmark/dist/client/models/message/SupportingTypes", "Header")
   @js.native
-  class Header protected () extends js.Object {
+  class Header protected () extends StObject {
     def this(Name: String, Value: String) = this()
     
     var Name: String = js.native
@@ -33,50 +33,46 @@ object messageSupportingTypesMod extends js.Object {
   }
   
   @js.native
-  sealed trait LinkClickLocation extends js.Object
+  sealed trait LinkClickLocation extends StObject
+  @JSImport("postmark/dist/client/models/message/SupportingTypes", "LinkClickLocation")
   @js.native
-  object LinkClickLocation extends js.Object {
+  object LinkClickLocation extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LinkClickLocation with String] = js.native
     
     @js.native
     sealed trait HTML extends LinkClickLocation
-    /* "HTML" */ @js.native
-    object HTML extends TopLevel[HTML with String]
+    /* "HTML" */ val HTML: typings.postmark.messageSupportingTypesMod.LinkClickLocation.HTML with String = js.native
     
     @js.native
     sealed trait Text extends LinkClickLocation
-    /* "Text" */ @js.native
-    object Text extends TopLevel[Text with String]
+    /* "Text" */ val Text: typings.postmark.messageSupportingTypesMod.LinkClickLocation.Text with String = js.native
   }
   
   @js.native
-  sealed trait LinkTrackingOptions extends js.Object
+  sealed trait LinkTrackingOptions extends StObject
+  @JSImport("postmark/dist/client/models/message/SupportingTypes", "LinkTrackingOptions")
   @js.native
-  object LinkTrackingOptions extends js.Object {
+  object LinkTrackingOptions extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LinkTrackingOptions with String] = js.native
     
     @js.native
     sealed trait HtmlAndText extends LinkTrackingOptions
-    /* "HtmlAndText" */ @js.native
-    object HtmlAndText extends TopLevel[HtmlAndText with String]
+    /* "HtmlAndText" */ val HtmlAndText: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.HtmlAndText with String = js.native
     
     @js.native
     sealed trait HtmlOnly extends LinkTrackingOptions
-    /* "HtmlOnly" */ @js.native
-    object HtmlOnly extends TopLevel[HtmlOnly with String]
+    /* "HtmlOnly" */ val HtmlOnly: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.HtmlOnly with String = js.native
     
     @js.native
     sealed trait None extends LinkTrackingOptions
-    /* "None" */ @js.native
-    object None extends TopLevel[None with String]
+    /* "None" */ val None: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.None with String = js.native
     
     @js.native
     sealed trait TextOnly extends LinkTrackingOptions
-    /* "TextOnly" */ @js.native
-    object TextOnly extends TopLevel[TextOnly with String]
+    /* "TextOnly" */ val TextOnly: typings.postmark.messageSupportingTypesMod.LinkTrackingOptions.TextOnly with String = js.native
   }
 }

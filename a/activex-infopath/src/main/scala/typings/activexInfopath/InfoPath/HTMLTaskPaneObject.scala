@@ -2,12 +2,13 @@ package typings.activexInfopath.InfoPath
 
 import typings.activexMshtml.MSHTML.IHTMLDocument2
 import typings.activexMshtml.MSHTML.IHTMLWindow2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLTaskPaneObject extends js.Object {
+trait HTMLTaskPaneObject extends StObject {
   
   val HTMLDocument: IHTMLDocument2 = js.native
   

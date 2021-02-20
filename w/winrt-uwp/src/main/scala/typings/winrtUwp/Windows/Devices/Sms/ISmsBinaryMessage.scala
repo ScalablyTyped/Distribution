@@ -1,5 +1,6 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object ISmsBinaryMessage {
   }
   
   @scala.inline
-  implicit class ISmsBinaryMessageOps[Self <: ISmsBinaryMessage] (val x: Self) extends AnyVal {
+  implicit class ISmsBinaryMessageMutableBuilder[Self <: ISmsBinaryMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetData(value: () => js.Array[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormat(value: SmsDataFormat): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetData(value: () => js.Array[Double]): Self = this.set("getData", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetData(value: js.Array[Double] => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    def setSetData(value: js.Array[Double] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

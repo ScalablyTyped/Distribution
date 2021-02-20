@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * property&#39;s type in the app restrictions schema.
   */
 @js.native
-trait SchemaManagedProperty extends js.Object {
+trait SchemaManagedProperty extends StObject {
   
   /**
     * The unique key that identifies the property.
@@ -63,66 +64,54 @@ object SchemaManagedProperty {
   }
   
   @scala.inline
-  implicit class SchemaManagedPropertyOps[Self <: SchemaManagedProperty] (val x: Self) extends AnyVal {
+  implicit class SchemaManagedPropertyMutableBuilder[Self <: SchemaManagedProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueBool(value: Boolean): Self = StObject.set(x, "valueBool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setValueBoolUndefined: Self = StObject.set(x, "valueBool", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setValueBundle(value: SchemaManagedPropertyBundle): Self = StObject.set(x, "valueBundle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueBool(value: Boolean): Self = this.set("valueBool", value.asInstanceOf[js.Any])
+    def setValueBundleArray(value: js.Array[SchemaManagedPropertyBundle]): Self = StObject.set(x, "valueBundleArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueBool: Self = this.set("valueBool", js.undefined)
+    def setValueBundleArrayUndefined: Self = StObject.set(x, "valueBundleArray", js.undefined)
     
     @scala.inline
-    def setValueBundle(value: SchemaManagedPropertyBundle): Self = this.set("valueBundle", value.asInstanceOf[js.Any])
+    def setValueBundleArrayVarargs(value: SchemaManagedPropertyBundle*): Self = StObject.set(x, "valueBundleArray", js.Array(value :_*))
     
     @scala.inline
-    def deleteValueBundle: Self = this.set("valueBundle", js.undefined)
+    def setValueBundleUndefined: Self = StObject.set(x, "valueBundle", js.undefined)
     
     @scala.inline
-    def setValueBundleArrayVarargs(value: SchemaManagedPropertyBundle*): Self = this.set("valueBundleArray", js.Array(value :_*))
+    def setValueInteger(value: Double): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueBundleArray(value: js.Array[SchemaManagedPropertyBundle]): Self = this.set("valueBundleArray", value.asInstanceOf[js.Any])
+    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
     @scala.inline
-    def deleteValueBundleArray: Self = this.set("valueBundleArray", js.undefined)
+    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueInteger(value: Double): Self = this.set("valueInteger", value.asInstanceOf[js.Any])
+    def setValueStringArray(value: js.Array[String]): Self = StObject.set(x, "valueStringArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValueInteger: Self = this.set("valueInteger", js.undefined)
+    def setValueStringArrayUndefined: Self = StObject.set(x, "valueStringArray", js.undefined)
     
     @scala.inline
-    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
+    def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value :_*))
     
     @scala.inline
-    def deleteValueString: Self = this.set("valueString", js.undefined)
-    
-    @scala.inline
-    def setValueStringArrayVarargs(value: String*): Self = this.set("valueStringArray", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueStringArray(value: js.Array[String]): Self = this.set("valueStringArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueStringArray: Self = this.set("valueStringArray", js.undefined)
+    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
   }
 }

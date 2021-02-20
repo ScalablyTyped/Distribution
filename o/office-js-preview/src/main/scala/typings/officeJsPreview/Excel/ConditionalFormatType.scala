@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatType extends js.Object
+sealed trait ConditionalFormatType extends StObject
 /**
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatType")
 @js.native
-object ConditionalFormatType extends js.Object {
+object ConditionalFormatType extends StObject {
   
   @js.native
   sealed trait cellValue extends ConditionalFormatType

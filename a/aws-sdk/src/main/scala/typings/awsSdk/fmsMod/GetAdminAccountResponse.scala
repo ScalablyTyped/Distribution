@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAdminAccountResponse extends js.Object {
+trait GetAdminAccountResponse extends StObject {
   
   /**
     * The AWS account that is set as the AWS Firewall Manager administrator.
@@ -26,30 +27,18 @@ object GetAdminAccountResponse {
   }
   
   @scala.inline
-  implicit class GetAdminAccountResponseOps[Self <: GetAdminAccountResponse] (val x: Self) extends AnyVal {
+  implicit class GetAdminAccountResponseMutableBuilder[Self <: GetAdminAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminAccount(value: AWSAccountId): Self = StObject.set(x, "AdminAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminAccountUndefined: Self = StObject.set(x, "AdminAccount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleStatus(value: AccountRoleStatus): Self = StObject.set(x, "RoleStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminAccount(value: AWSAccountId): Self = this.set("AdminAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdminAccount: Self = this.set("AdminAccount", js.undefined)
-    
-    @scala.inline
-    def setRoleStatus(value: AccountRoleStatus): Self = this.set("RoleStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleStatus: Self = this.set("RoleStatus", js.undefined)
+    def setRoleStatusUndefined: Self = StObject.set(x, "RoleStatus", js.undefined)
   }
 }

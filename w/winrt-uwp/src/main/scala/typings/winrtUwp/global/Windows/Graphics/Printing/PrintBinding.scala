@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the print binding option. */
 @JSGlobal("Windows.Graphics.Printing.PrintBinding")
 @js.native
-object PrintBinding extends js.Object {
+object PrintBinding extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Printing.PrintBinding with Double] = js.native
+  
+  /* 0 */ val default: typings.winrtUwp.Windows.Graphics.Printing.PrintBinding.default with Double = js.native
   
   /* 4 */ val bale: typings.winrtUwp.Windows.Graphics.Printing.PrintBinding.bale with Double = js.native
   
@@ -23,8 +26,6 @@ object PrintBinding extends js.Object {
   /* 8 */ val bindTop: typings.winrtUwp.Windows.Graphics.Printing.PrintBinding.bindTop with Double = js.native
   
   /* 9 */ val booklet: typings.winrtUwp.Windows.Graphics.Printing.PrintBinding.booklet with Double = js.native
-  
-  /* 0 */ val default: typings.winrtUwp.Windows.Graphics.Printing.PrintBinding.default with Double = js.native
   
   /* 10 */ val edgeStitchBottom: typings.winrtUwp.Windows.Graphics.Printing.PrintBinding.edgeStitchBottom with Double = js.native
   

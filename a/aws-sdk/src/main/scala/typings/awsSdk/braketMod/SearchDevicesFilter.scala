@@ -1,11 +1,12 @@
 package typings.awsSdk.braketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchDevicesFilter extends js.Object {
+trait SearchDevicesFilter extends StObject {
   
   /**
     * The name to use to filter results.
@@ -26,27 +27,15 @@ object SearchDevicesFilter {
   }
   
   @scala.inline
-  implicit class SearchDevicesFilterOps[Self <: SearchDevicesFilter] (val x: Self) extends AnyVal {
+  implicit class SearchDevicesFilterMutableBuilder[Self <: SearchDevicesFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: SearchDevicesFilterNameString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: SearchDevicesFilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: SearchDevicesFilterNameString): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: String256*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: SearchDevicesFilterValuesList): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

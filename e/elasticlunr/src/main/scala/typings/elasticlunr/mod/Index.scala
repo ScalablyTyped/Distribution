@@ -3,13 +3,14 @@ package typings.elasticlunr.mod
 import org.scalablytyped.runtime.TopLevel
 import typings.elasticlunr.elasticlunrStrings.AND
 import typings.elasticlunr.elasticlunrStrings.OR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "Index")
 @js.native
-class Index[T] () extends js.Object {
+class Index[T] () extends StObject {
   
   def addDoc(doc: T): Unit = js.native
   def addDoc(doc: T, emitEvent: Boolean): Unit = js.native
@@ -71,10 +72,10 @@ class Index[T] () extends js.Object {
   
   def use(plugin: js.Function1[/* repeated */ js.Any, _], args: js.Any*): Unit = js.native
 }
-/* static members */
-@JSImport("elasticlunr", "Index")
-@js.native
-object Index extends js.Object {
+object Index {
   
+  /* static member */
+  @JSImport("elasticlunr", "Index.load")
+  @js.native
   def load[T](serialisedData: SerialisedIndexData[T]): Index[T] = js.native
 }

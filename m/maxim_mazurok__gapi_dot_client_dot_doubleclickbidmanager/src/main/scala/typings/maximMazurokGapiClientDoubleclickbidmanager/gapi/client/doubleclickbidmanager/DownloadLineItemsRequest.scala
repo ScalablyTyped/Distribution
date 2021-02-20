@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadLineItemsRequest extends js.Object {
+trait DownloadLineItemsRequest extends StObject {
   
   /** File specification (column names, types, order) in which the line items will be returned. Default to EWF. */
   var fileSpec: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object DownloadLineItemsRequest {
   }
   
   @scala.inline
-  implicit class DownloadLineItemsRequestOps[Self <: DownloadLineItemsRequest] (val x: Self) extends AnyVal {
+  implicit class DownloadLineItemsRequestMutableBuilder[Self <: DownloadLineItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSpec(value: String): Self = StObject.set(x, "fileSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSpecUndefined: Self = StObject.set(x, "fileSpec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSpec(value: String): Self = this.set("fileSpec", value.asInstanceOf[js.Any])
+    def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
     
     @scala.inline
-    def deleteFileSpec: Self = this.set("fileSpec", js.undefined)
+    def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
     
     @scala.inline
-    def setFilterIdsVarargs(value: String*): Self = this.set("filterIds", js.Array(value :_*))
+    def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterIds(value: js.Array[String]): Self = this.set("filterIds", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteFilterIds: Self = this.set("filterIds", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: String): Self = this.set("filterType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
-    
-    @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

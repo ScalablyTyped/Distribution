@@ -1,5 +1,6 @@
 package typings.markdownItHighlightjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("markdown-it-highlightjs", JSImport.Namespace)
 @js.native
-object markdownItHighlightjsRequire extends js.Object
+object markdownItHighlightjsRequire extends StObject

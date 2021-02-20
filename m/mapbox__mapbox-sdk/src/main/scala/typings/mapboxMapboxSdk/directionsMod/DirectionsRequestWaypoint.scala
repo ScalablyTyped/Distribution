@@ -3,12 +3,13 @@ package typings.mapboxMapboxSdk.directionsMod
 import typings.mapboxGl.mod.LngLatLike
 import typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unlimited
 import typings.mapboxMapboxSdk.mapiRequestMod.DirectionsApproach
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectionsRequestWaypoint extends js.Object {
+trait DirectionsRequestWaypoint extends StObject {
   
   /**
     * Used to indicate how requested routes consider from which side of the road to approach a waypoint.
@@ -42,36 +43,24 @@ object DirectionsRequestWaypoint {
   }
   
   @scala.inline
-  implicit class DirectionsRequestWaypointOps[Self <: DirectionsRequestWaypoint] (val x: Self) extends AnyVal {
+  implicit class DirectionsRequestWaypointMutableBuilder[Self <: DirectionsRequestWaypoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproach(value: DirectionsApproach): Self = StObject.set(x, "approach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproachUndefined: Self = StObject.set(x, "approach", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordinates(value: js.Array[Double] | LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinatesVarargs(value: Double*): Self = this.set("coordinates", js.Array(value :_*))
+    def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
     @scala.inline
-    def setCoordinates(value: js.Array[Double] | LngLatLike): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setRadius(value: String | unlimited): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproach(value: DirectionsApproach): Self = this.set("approach", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApproach: Self = this.set("approach", js.undefined)
-    
-    @scala.inline
-    def setRadius(value: String | unlimited): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

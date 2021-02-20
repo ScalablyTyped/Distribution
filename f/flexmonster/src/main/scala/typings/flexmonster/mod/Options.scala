@@ -3,12 +3,13 @@ package typings.flexmonster.mod
 import typings.flexmonster.anon.ActiveMeasure
 import typings.flexmonster.anon.DateFormat
 import typings.flexmonster.anon.Dragging
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var caseSensitiveMembers: js.UndefOr[Boolean] = js.native
   
@@ -87,222 +88,210 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitiveMembers(value: Boolean): Self = StObject.set(x, "caseSensitiveMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveMembersUndefined: Self = StObject.set(x, "caseSensitiveMembers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChart(value: ActiveMeasure): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitiveMembers(value: Boolean): Self = this.set("caseSensitiveMembers", value.asInstanceOf[js.Any])
+    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitiveMembers: Self = this.set("caseSensitiveMembers", js.undefined)
+    def setConfiguratorActive(value: Boolean): Self = StObject.set(x, "configuratorActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: ActiveMeasure): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setConfiguratorActiveUndefined: Self = StObject.set(x, "configuratorActive", js.undefined)
     
     @scala.inline
-    def deleteChart: Self = this.set("chart", js.undefined)
+    def setConfiguratorButton(value: Boolean): Self = StObject.set(x, "configuratorButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguratorActive(value: Boolean): Self = this.set("configuratorActive", value.asInstanceOf[js.Any])
+    def setConfiguratorButtonUndefined: Self = StObject.set(x, "configuratorButton", js.undefined)
     
     @scala.inline
-    def deleteConfiguratorActive: Self = this.set("configuratorActive", js.undefined)
+    def setDatePattern(value: String): Self = StObject.set(x, "datePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguratorButton(value: Boolean): Self = this.set("configuratorButton", value.asInstanceOf[js.Any])
+    def setDatePatternUndefined: Self = StObject.set(x, "datePattern", js.undefined)
     
     @scala.inline
-    def deleteConfiguratorButton: Self = this.set("configuratorButton", js.undefined)
+    def setDateTimePattern(value: String): Self = StObject.set(x, "dateTimePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatePattern(value: String): Self = this.set("datePattern", value.asInstanceOf[js.Any])
+    def setDateTimePatternUndefined: Self = StObject.set(x, "dateTimePattern", js.undefined)
     
     @scala.inline
-    def deleteDatePattern: Self = this.set("datePattern", js.undefined)
+    def setDateTimezoneOffset(value: Double): Self = StObject.set(x, "dateTimezoneOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimePattern(value: String): Self = this.set("dateTimePattern", value.asInstanceOf[js.Any])
+    def setDateTimezoneOffsetUndefined: Self = StObject.set(x, "dateTimezoneOffset", js.undefined)
     
     @scala.inline
-    def deleteDateTimePattern: Self = this.set("dateTimePattern", js.undefined)
+    def setDefaultDateType(value: String): Self = StObject.set(x, "defaultDateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimezoneOffset(value: Double): Self = this.set("dateTimezoneOffset", value.asInstanceOf[js.Any])
+    def setDefaultDateTypeUndefined: Self = StObject.set(x, "defaultDateType", js.undefined)
     
     @scala.inline
-    def deleteDateTimezoneOffset: Self = this.set("dateTimezoneOffset", js.undefined)
+    def setDefaultHierarchySortName(value: String): Self = StObject.set(x, "defaultHierarchySortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDateType(value: String): Self = this.set("defaultDateType", value.asInstanceOf[js.Any])
+    def setDefaultHierarchySortNameUndefined: Self = StObject.set(x, "defaultHierarchySortName", js.undefined)
     
     @scala.inline
-    def deleteDefaultDateType: Self = this.set("defaultDateType", js.undefined)
+    def setDrillThrough(value: Boolean): Self = StObject.set(x, "drillThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHierarchySortName(value: String): Self = this.set("defaultHierarchySortName", value.asInstanceOf[js.Any])
+    def setDrillThroughUndefined: Self = StObject.set(x, "drillThrough", js.undefined)
     
     @scala.inline
-    def deleteDefaultHierarchySortName: Self = this.set("defaultHierarchySortName", js.undefined)
+    def setEditing(value: Boolean): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillThrough(value: Boolean): Self = this.set("drillThrough", value.asInstanceOf[js.Any])
+    def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
     
     @scala.inline
-    def deleteDrillThrough: Self = this.set("drillThrough", js.undefined)
+    def setFilter(value: DateFormat): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditing(value: Boolean): Self = this.set("editing", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteEditing: Self = this.set("editing", js.undefined)
+    def setGrid(value: Dragging): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: DateFormat): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setGrouping(value: Boolean): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: Dragging): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setSaveAllFormats(value: Boolean): Self = StObject.set(x, "saveAllFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouping(value: Boolean): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    def setSaveAllFormatsUndefined: Self = StObject.set(x, "saveAllFormats", js.undefined)
     
     @scala.inline
-    def deleteGrouping: Self = this.set("grouping", js.undefined)
+    def setSelectEmptyCells(value: Boolean): Self = StObject.set(x, "selectEmptyCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveAllFormats(value: Boolean): Self = this.set("saveAllFormats", value.asInstanceOf[js.Any])
+    def setSelectEmptyCellsUndefined: Self = StObject.set(x, "selectEmptyCells", js.undefined)
     
     @scala.inline
-    def deleteSaveAllFormats: Self = this.set("saveAllFormats", js.undefined)
+    def setShowAggregationLabels(value: Boolean): Self = StObject.set(x, "showAggregationLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectEmptyCells(value: Boolean): Self = this.set("selectEmptyCells", value.asInstanceOf[js.Any])
+    def setShowAggregationLabelsUndefined: Self = StObject.set(x, "showAggregationLabels", js.undefined)
     
     @scala.inline
-    def deleteSelectEmptyCells: Self = this.set("selectEmptyCells", js.undefined)
+    def setShowAggregations(value: Boolean): Self = StObject.set(x, "showAggregations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAggregationLabels(value: Boolean): Self = this.set("showAggregationLabels", value.asInstanceOf[js.Any])
+    def setShowAggregationsUndefined: Self = StObject.set(x, "showAggregations", js.undefined)
     
     @scala.inline
-    def deleteShowAggregationLabels: Self = this.set("showAggregationLabels", js.undefined)
+    def setShowAllFieldsDrillThrough(value: Boolean): Self = StObject.set(x, "showAllFieldsDrillThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAggregations(value: Boolean): Self = this.set("showAggregations", value.asInstanceOf[js.Any])
+    def setShowAllFieldsDrillThroughUndefined: Self = StObject.set(x, "showAllFieldsDrillThrough", js.undefined)
     
     @scala.inline
-    def deleteShowAggregations: Self = this.set("showAggregations", js.undefined)
+    def setShowCalculatedValuesButton(value: Boolean): Self = StObject.set(x, "showCalculatedValuesButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAllFieldsDrillThrough(value: Boolean): Self = this.set("showAllFieldsDrillThrough", value.asInstanceOf[js.Any])
+    def setShowCalculatedValuesButtonUndefined: Self = StObject.set(x, "showCalculatedValuesButton", js.undefined)
     
     @scala.inline
-    def deleteShowAllFieldsDrillThrough: Self = this.set("showAllFieldsDrillThrough", js.undefined)
+    def setShowDefaultSlice(value: Boolean): Self = StObject.set(x, "showDefaultSlice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCalculatedValuesButton(value: Boolean): Self = this.set("showCalculatedValuesButton", value.asInstanceOf[js.Any])
+    def setShowDefaultSliceUndefined: Self = StObject.set(x, "showDefaultSlice", js.undefined)
     
     @scala.inline
-    def deleteShowCalculatedValuesButton: Self = this.set("showCalculatedValuesButton", js.undefined)
+    def setShowDrillThroughConfigurator(value: Boolean): Self = StObject.set(x, "showDrillThroughConfigurator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDefaultSlice(value: Boolean): Self = this.set("showDefaultSlice", value.asInstanceOf[js.Any])
+    def setShowDrillThroughConfiguratorUndefined: Self = StObject.set(x, "showDrillThroughConfigurator", js.undefined)
     
     @scala.inline
-    def deleteShowDefaultSlice: Self = this.set("showDefaultSlice", js.undefined)
+    def setShowEmptyData(value: Boolean): Self = StObject.set(x, "showEmptyData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDrillThroughConfigurator(value: Boolean): Self = this.set("showDrillThroughConfigurator", value.asInstanceOf[js.Any])
+    def setShowEmptyDataUndefined: Self = StObject.set(x, "showEmptyData", js.undefined)
     
     @scala.inline
-    def deleteShowDrillThroughConfigurator: Self = this.set("showDrillThroughConfigurator", js.undefined)
+    def setShowFieldListSearch(value: Boolean): Self = StObject.set(x, "showFieldListSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEmptyData(value: Boolean): Self = this.set("showEmptyData", value.asInstanceOf[js.Any])
+    def setShowFieldListSearchUndefined: Self = StObject.set(x, "showFieldListSearch", js.undefined)
     
     @scala.inline
-    def deleteShowEmptyData: Self = this.set("showEmptyData", js.undefined)
+    def setShowMemberProperties(value: Boolean): Self = StObject.set(x, "showMemberProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFieldListSearch(value: Boolean): Self = this.set("showFieldListSearch", value.asInstanceOf[js.Any])
+    def setShowMemberPropertiesUndefined: Self = StObject.set(x, "showMemberProperties", js.undefined)
     
     @scala.inline
-    def deleteShowFieldListSearch: Self = this.set("showFieldListSearch", js.undefined)
+    def setShowOutdatedDataAlert(value: Boolean): Self = StObject.set(x, "showOutdatedDataAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMemberProperties(value: Boolean): Self = this.set("showMemberProperties", value.asInstanceOf[js.Any])
+    def setShowOutdatedDataAlertUndefined: Self = StObject.set(x, "showOutdatedDataAlert", js.undefined)
     
     @scala.inline
-    def deleteShowMemberProperties: Self = this.set("showMemberProperties", js.undefined)
+    def setSimplifyFieldListFolders(value: Boolean): Self = StObject.set(x, "simplifyFieldListFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOutdatedDataAlert(value: Boolean): Self = this.set("showOutdatedDataAlert", value.asInstanceOf[js.Any])
+    def setSimplifyFieldListFoldersUndefined: Self = StObject.set(x, "simplifyFieldListFolders", js.undefined)
     
     @scala.inline
-    def deleteShowOutdatedDataAlert: Self = this.set("showOutdatedDataAlert", js.undefined)
+    def setSorting(value: String): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimplifyFieldListFolders(value: Boolean): Self = this.set("simplifyFieldListFolders", value.asInstanceOf[js.Any])
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
     @scala.inline
-    def deleteSimplifyFieldListFolders: Self = this.set("simplifyFieldListFolders", js.undefined)
+    def setStrictDataTypes(value: Boolean): Self = StObject.set(x, "strictDataTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorting(value: String): Self = this.set("sorting", value.asInstanceOf[js.Any])
+    def setStrictDataTypesUndefined: Self = StObject.set(x, "strictDataTypes", js.undefined)
     
     @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
+    def setTimePattern(value: String): Self = StObject.set(x, "timePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictDataTypes(value: Boolean): Self = this.set("strictDataTypes", value.asInstanceOf[js.Any])
+    def setTimePatternUndefined: Self = StObject.set(x, "timePattern", js.undefined)
     
     @scala.inline
-    def deleteStrictDataTypes: Self = this.set("strictDataTypes", js.undefined)
+    def setUseOlapFormatting(value: Boolean): Self = StObject.set(x, "useOlapFormatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePattern(value: String): Self = this.set("timePattern", value.asInstanceOf[js.Any])
+    def setUseOlapFormattingUndefined: Self = StObject.set(x, "useOlapFormatting", js.undefined)
     
     @scala.inline
-    def deleteTimePattern: Self = this.set("timePattern", js.undefined)
+    def setValidateFormulas(value: Boolean): Self = StObject.set(x, "validateFormulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseOlapFormatting(value: Boolean): Self = this.set("useOlapFormatting", value.asInstanceOf[js.Any])
+    def setValidateFormulasUndefined: Self = StObject.set(x, "validateFormulas", js.undefined)
     
     @scala.inline
-    def deleteUseOlapFormatting: Self = this.set("useOlapFormatting", js.undefined)
+    def setValidateReportFiles(value: Boolean): Self = StObject.set(x, "validateReportFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateFormulas(value: Boolean): Self = this.set("validateFormulas", value.asInstanceOf[js.Any])
+    def setValidateReportFilesUndefined: Self = StObject.set(x, "validateReportFiles", js.undefined)
     
     @scala.inline
-    def deleteValidateFormulas: Self = this.set("validateFormulas", js.undefined)
+    def setViewType(value: String): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateReportFiles(value: Boolean): Self = this.set("validateReportFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateReportFiles: Self = this.set("validateReportFiles", js.undefined)
-    
-    @scala.inline
-    def setViewType(value: String): Self = this.set("viewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewType: Self = this.set("viewType", js.undefined)
+    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

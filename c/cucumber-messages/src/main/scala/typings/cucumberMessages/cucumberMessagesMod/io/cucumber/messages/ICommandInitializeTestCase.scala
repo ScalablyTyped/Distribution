@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandInitializeTestCase. */
 @js.native
-trait ICommandInitializeTestCase extends js.Object {
+trait ICommandInitializeTestCase extends StObject {
   
   /** CommandInitializeTestCase actionId */
   var actionId: js.UndefOr[String | Null] = js.native
@@ -23,36 +24,24 @@ object ICommandInitializeTestCase {
   }
   
   @scala.inline
-  implicit class ICommandInitializeTestCaseOps[Self <: ICommandInitializeTestCase] (val x: Self) extends AnyVal {
+  implicit class ICommandInitializeTestCaseMutableBuilder[Self <: ICommandInitializeTestCase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
     @scala.inline
-    def setActionId(value: String): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    def setPickle(value: IPickle): Self = StObject.set(x, "pickle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionId: Self = this.set("actionId", js.undefined)
+    def setPickleNull: Self = StObject.set(x, "pickle", null)
     
     @scala.inline
-    def setActionIdNull: Self = this.set("actionId", null)
-    
-    @scala.inline
-    def setPickle(value: IPickle): Self = this.set("pickle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePickle: Self = this.set("pickle", js.undefined)
-    
-    @scala.inline
-    def setPickleNull: Self = this.set("pickle", null)
+    def setPickleUndefined: Self = StObject.set(x, "pickle", js.undefined)
   }
 }

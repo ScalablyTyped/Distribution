@@ -1,13 +1,14 @@
 package typings.pubnub.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // APNS2
 @js.native
-trait APNS2Configuration extends js.Object {
+trait APNS2Configuration extends StObject {
   
   var collapseId: js.UndefOr[String] = js.native
   
@@ -24,36 +25,24 @@ object APNS2Configuration {
   }
   
   @scala.inline
-  implicit class APNS2ConfigurationOps[Self <: APNS2Configuration] (val x: Self) extends AnyVal {
+  implicit class APNS2ConfigurationMutableBuilder[Self <: APNS2Configuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseId(value: String): Self = StObject.set(x, "collapseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseIdUndefined: Self = StObject.set(x, "collapseId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetsVarargs(value: APNS2Target*): Self = this.set("targets", js.Array(value :_*))
+    def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     
     @scala.inline
-    def setTargets(value: js.Array[APNS2Target]): Self = this.set("targets", value.asInstanceOf[js.Any])
+    def setTargets(value: js.Array[APNS2Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapseId(value: String): Self = this.set("collapseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollapseId: Self = this.set("collapseId", js.undefined)
-    
-    @scala.inline
-    def setExpirationDate(value: Date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    def setTargetsVarargs(value: APNS2Target*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

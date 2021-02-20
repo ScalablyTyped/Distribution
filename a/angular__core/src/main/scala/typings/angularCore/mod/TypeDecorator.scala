@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeDecorator extends js.Object {
+trait TypeDecorator extends StObject {
   
   def apply(target: js.Object): Unit = js.native
   def apply(target: js.Object, propertyKey: js.UndefOr[scala.Nothing], parameterIndex: Double): Unit = js.native
@@ -16,5 +17,5 @@ trait TypeDecorator extends js.Object {
   /**
     * Invoke as decorator.
     */
-  def apply[T /* <: Type[_] */](`type`: T): T = js.native
+  def apply[T /* <: typings.angularCore.mod.Type[_] */](`type`: T): T = js.native
 }

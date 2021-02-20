@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionSelectionConfig")
 @js.native
-class CatalogCustomAttributeDefinitionSelectionConfig () extends js.Object {
+class CatalogCustomAttributeDefinitionSelectionConfig () extends StObject {
   
   /**
     * The set of valid `CatalogCustomAttributeSelections`. Up to a maximum of 100 selections can be defined. Can be modified.

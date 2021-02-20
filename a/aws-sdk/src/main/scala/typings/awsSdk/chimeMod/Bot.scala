@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bot extends js.Object {
+trait Bot extends StObject {
   
   /**
     * The bot email address.
@@ -61,72 +62,60 @@ object Bot {
   }
   
   @scala.inline
-  implicit class BotOps[Self <: Bot] (val x: Self) extends AnyVal {
+  implicit class BotMutableBuilder[Self <: Bot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotEmail(value: SensitiveString): Self = StObject.set(x, "BotEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotEmailUndefined: Self = StObject.set(x, "BotEmail", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBotId(value: String): Self = StObject.set(x, "BotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotEmail(value: SensitiveString): Self = this.set("BotEmail", value.asInstanceOf[js.Any])
+    def setBotIdUndefined: Self = StObject.set(x, "BotId", js.undefined)
     
     @scala.inline
-    def deleteBotEmail: Self = this.set("BotEmail", js.undefined)
+    def setBotType(value: BotType): Self = StObject.set(x, "BotType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotId(value: String): Self = this.set("BotId", value.asInstanceOf[js.Any])
+    def setBotTypeUndefined: Self = StObject.set(x, "BotType", js.undefined)
     
     @scala.inline
-    def deleteBotId: Self = this.set("BotId", js.undefined)
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBotType(value: BotType): Self = this.set("BotType", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteBotType: Self = this.set("BotType", js.undefined)
+    def setDisabled(value: NullableBoolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setDisplayName(value: SensitiveString): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: NullableBoolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    def setSecurityToken(value: SensitiveString): Self = StObject.set(x, "SecurityToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: SensitiveString): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setSecurityTokenUndefined: Self = StObject.set(x, "SecurityToken", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityToken(value: SensitiveString): Self = this.set("SecurityToken", value.asInstanceOf[js.Any])
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteSecurityToken: Self = this.set("SecurityToken", js.undefined)
+    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserId: Self = this.set("UserId", js.undefined)
+    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

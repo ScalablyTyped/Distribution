@@ -7,14 +7,15 @@ import typings.expoLinearGradient.nativeLinearGradientTypesMod.NativeLinearGradi
 import typings.react.mod.ComponentProps
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-linear-gradient", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("expo-linear-gradient", "LinearGradient")
+  @js.native
   def LinearGradient(hasColorsLocationsStartEndProps: PropsWithChildren[LinearGradientProps]): ReactElement = js.native
   
   type LinearGradientPoint = X | NativeLinearGradientPoint

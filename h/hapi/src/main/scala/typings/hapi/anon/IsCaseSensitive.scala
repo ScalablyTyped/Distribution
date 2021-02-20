@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsCaseSensitive extends js.Object {
+trait IsCaseSensitive extends StObject {
   
   var isCaseSensitive: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object IsCaseSensitive {
   }
   
   @scala.inline
-  implicit class IsCaseSensitiveOps[Self <: IsCaseSensitive] (val x: Self) extends AnyVal {
+  implicit class IsCaseSensitiveMutableBuilder[Self <: IsCaseSensitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "isCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCaseSensitiveUndefined: Self = StObject.set(x, "isCaseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStripTrailingSlash(value: Boolean): Self = StObject.set(x, "stripTrailingSlash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = this.set("isCaseSensitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCaseSensitive: Self = this.set("isCaseSensitive", js.undefined)
-    
-    @scala.inline
-    def setStripTrailingSlash(value: Boolean): Self = this.set("stripTrailingSlash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStripTrailingSlash: Self = this.set("stripTrailingSlash", js.undefined)
+    def setStripTrailingSlashUndefined: Self = StObject.set(x, "stripTrailingSlash", js.undefined)
   }
 }

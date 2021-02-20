@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSubnetGroupResponse extends js.Object {
+trait CreateSubnetGroupResponse extends StObject {
   
   /**
     * Represents the output of a CreateSubnetGroup operation.
@@ -21,24 +22,12 @@ object CreateSubnetGroupResponse {
   }
   
   @scala.inline
-  implicit class CreateSubnetGroupResponseOps[Self <: CreateSubnetGroupResponse] (val x: Self) extends AnyVal {
+  implicit class CreateSubnetGroupResponseMutableBuilder[Self <: CreateSubnetGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubnetGroup(value: SubnetGroup): Self = StObject.set(x, "SubnetGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSubnetGroup(value: SubnetGroup): Self = this.set("SubnetGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetGroup: Self = this.set("SubnetGroup", js.undefined)
+    def setSubnetGroupUndefined: Self = StObject.set(x, "SubnetGroup", js.undefined)
   }
 }

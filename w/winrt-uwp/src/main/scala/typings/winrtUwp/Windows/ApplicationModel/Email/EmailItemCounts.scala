@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the counts for various email message attributes such as flagged, important, unread, and so on. */
 @js.native
-trait EmailItemCounts extends js.Object {
+trait EmailItemCounts extends StObject {
   
   /** Gets the number of flagged email messages. */
   var flagged: Double = js.native
@@ -29,30 +30,18 @@ object EmailItemCounts {
   }
   
   @scala.inline
-  implicit class EmailItemCountsOps[Self <: EmailItemCounts] (val x: Self) extends AnyVal {
+  implicit class EmailItemCountsMutableBuilder[Self <: EmailItemCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlagged(value: Double): Self = StObject.set(x, "flagged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportant(value: Double): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlagged(value: Double): Self = this.set("flagged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImportant(value: Double): Self = this.set("important", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnread(value: Double): Self = this.set("unread", value.asInstanceOf[js.Any])
+    def setUnread(value: Double): Self = StObject.set(x, "unread", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,14 @@
 package typings.officeJs.Excel.Interfaces
 
 import typings.officeJs.Excel.ConditionalTopBottomRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `topBottomConditionalFormat.toJSON()`. */
 @js.native
-trait TopBottomConditionalFormatData extends js.Object {
+trait TopBottomConditionalFormatData extends StObject {
   
   /**
     *
@@ -34,30 +35,18 @@ object TopBottomConditionalFormatData {
   }
   
   @scala.inline
-  implicit class TopBottomConditionalFormatDataOps[Self <: TopBottomConditionalFormatData] (val x: Self) extends AnyVal {
+  implicit class TopBottomConditionalFormatDataMutableBuilder[Self <: TopBottomConditionalFormatData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRule(value: ConditionalTopBottomRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ConditionalRangeFormatData): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setRule(value: ConditionalTopBottomRule): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

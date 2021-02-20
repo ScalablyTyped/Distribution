@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint extends js.Object {
+trait EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint extends StObject {
   
   /**
     * List of user emails.
@@ -55,51 +56,39 @@ object EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpointOps[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpointMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmails(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails*): Self = this.set("emails", js.Array(value :_*))
+    def setGroups(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmails(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsEmails]): Self = this.set("emails", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def setEnterprise(value: String): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    def setGroupsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemasVarargs(value: String*): Self = this.set("schemas", js.Array(value :_*))
+    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemas(value: js.Array[String]): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
     @scala.inline
-    def setScim_user_id(value: String): Self = this.set("scim_user_id", value.asInstanceOf[js.Any])
+    def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupsVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups*): Self = this.set("groups", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroups(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseUserParamsGroups]): Self = this.set("groups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

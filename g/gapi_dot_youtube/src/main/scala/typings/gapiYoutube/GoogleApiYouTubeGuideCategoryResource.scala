@@ -1,12 +1,13 @@
 package typings.gapiYoutube
 
 import typings.gapiYoutube.anon.Title
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiYouTubeGuideCategoryResource extends js.Object {
+trait GoogleApiYouTubeGuideCategoryResource extends StObject {
   
   /**
     * The ETag of the guideCategory resource.
@@ -37,30 +38,18 @@ object GoogleApiYouTubeGuideCategoryResource {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubeGuideCategoryResourceOps[Self <: GoogleApiYouTubeGuideCategoryResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiYouTubeGuideCategoryResourceMutableBuilder[Self <: GoogleApiYouTubeGuideCategoryResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnippet(value: Title): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSnippet(value: Title): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
   }
 }

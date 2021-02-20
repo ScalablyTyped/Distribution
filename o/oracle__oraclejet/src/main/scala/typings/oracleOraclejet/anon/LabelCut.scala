@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelCut extends js.Object {
+trait LabelCut extends StObject {
   
   var labelCut: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object LabelCut {
   }
   
   @scala.inline
-  implicit class LabelCutOps[Self <: LabelCut] (val x: Self) extends AnyVal {
+  implicit class LabelCutMutableBuilder[Self <: LabelCut] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelCut(value: String): Self = StObject.set(x, "labelCut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelCutUndefined: Self = StObject.set(x, "labelCut", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelPasteAfter(value: String): Self = StObject.set(x, "labelPasteAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCut(value: String): Self = this.set("labelCut", value.asInstanceOf[js.Any])
+    def setLabelPasteAfterUndefined: Self = StObject.set(x, "labelPasteAfter", js.undefined)
     
     @scala.inline
-    def deleteLabelCut: Self = this.set("labelCut", js.undefined)
+    def setLabelPasteBefore(value: String): Self = StObject.set(x, "labelPasteBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPasteAfter(value: String): Self = this.set("labelPasteAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelPasteAfter: Self = this.set("labelPasteAfter", js.undefined)
-    
-    @scala.inline
-    def setLabelPasteBefore(value: String): Self = this.set("labelPasteBefore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelPasteBefore: Self = this.set("labelPasteBefore", js.undefined)
+    def setLabelPasteBeforeUndefined: Self = StObject.set(x, "labelPasteBefore", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * <Titanium.App.iOS.scheduleLocalNotification>.
   */
 @js.native
-trait NotificationParams extends js.Object {
+trait NotificationParams extends StObject {
   
   /**
     * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)
@@ -110,120 +111,108 @@ object NotificationParams {
   }
   
   @scala.inline
-  implicit class NotificationParamsOps[Self <: NotificationParams] (val x: Self) extends AnyVal {
+  implicit class NotificationParamsMutableBuilder[Self <: NotificationParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertAction(value: String): Self = StObject.set(x, "alertAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertActionUndefined: Self = StObject.set(x, "alertAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertBody(value: String): Self = StObject.set(x, "alertBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setAlertBodyUndefined: Self = StObject.set(x, "alertBody", js.undefined)
     
     @scala.inline
-    def setAlertAction(value: String): Self = this.set("alertAction", value.asInstanceOf[js.Any])
+    def setAlertLaunchImage(value: String): Self = StObject.set(x, "alertLaunchImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlertAction: Self = this.set("alertAction", js.undefined)
+    def setAlertLaunchImageUndefined: Self = StObject.set(x, "alertLaunchImage", js.undefined)
     
     @scala.inline
-    def setAlertBody(value: String): Self = this.set("alertBody", value.asInstanceOf[js.Any])
+    def setAlertSubtitle(value: String): Self = StObject.set(x, "alertSubtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlertBody: Self = this.set("alertBody", js.undefined)
+    def setAlertSubtitleUndefined: Self = StObject.set(x, "alertSubtitle", js.undefined)
     
     @scala.inline
-    def setAlertLaunchImage(value: String): Self = this.set("alertLaunchImage", value.asInstanceOf[js.Any])
+    def setAlertTitle(value: String): Self = StObject.set(x, "alertTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlertLaunchImage: Self = this.set("alertLaunchImage", js.undefined)
+    def setAlertTitleUndefined: Self = StObject.set(x, "alertTitle", js.undefined)
     
     @scala.inline
-    def setAlertSubtitle(value: String): Self = this.set("alertSubtitle", value.asInstanceOf[js.Any])
+    def setAttachments(value: js.Array[UserNotificationAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlertSubtitle: Self = this.set("alertSubtitle", js.undefined)
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def setAlertTitle(value: String): Self = this.set("alertTitle", value.asInstanceOf[js.Any])
+    def setAttachmentsVarargs(value: UserNotificationAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def deleteAlertTitle: Self = this.set("alertTitle", js.undefined)
+    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsVarargs(value: UserNotificationAttachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def setAttachments(value: js.Array[UserNotificationAttachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def setBadge(value: Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: js.Any): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: String): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
     @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    def setSummaryArgument(value: String): Self = StObject.set(x, "summaryArgument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    def setSummaryArgumentCount(value: String): Self = StObject.set(x, "summaryArgumentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSound: Self = this.set("sound", js.undefined)
+    def setSummaryArgumentCountUndefined: Self = StObject.set(x, "summaryArgumentCount", js.undefined)
     
     @scala.inline
-    def setSummaryArgument(value: String): Self = this.set("summaryArgument", value.asInstanceOf[js.Any])
+    def setSummaryArgumentUndefined: Self = StObject.set(x, "summaryArgument", js.undefined)
     
     @scala.inline
-    def deleteSummaryArgument: Self = this.set("summaryArgument", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummaryArgumentCount(value: String): Self = this.set("summaryArgumentCount", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteSummaryArgumentCount: Self = this.set("summaryArgumentCount", js.undefined)
+    def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
-    
-    @scala.inline
-    def setUserInfo(value: js.Any): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

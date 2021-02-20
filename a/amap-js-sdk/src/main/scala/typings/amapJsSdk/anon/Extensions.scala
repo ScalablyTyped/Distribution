@@ -2,12 +2,13 @@ package typings.amapJsSdk.anon
 
 import typings.amapJsSdk.AMap.DrivingPolicy
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Extensions extends js.Object {
+trait Extensions extends StObject {
   
   var extensions: js.UndefOr[String] = js.native
   
@@ -30,54 +31,42 @@ object Extensions {
   }
   
   @scala.inline
-  implicit class ExtensionsOps[Self <: Extensions] (val x: Self) extends AnyVal {
+  implicit class ExtensionsMutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideMarkers(value: Boolean): Self = StObject.set(x, "hideMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: String): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setHideMarkersUndefined: Self = StObject.set(x, "hideMarkers", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setMap(value: typings.amapJsSdk.AMap.Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideMarkers(value: Boolean): Self = this.set("hideMarkers", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteHideMarkers: Self = this.set("hideMarkers", js.undefined)
+    def setPanel(value: String | HTMLElement): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: typings.amapJsSdk.AMap.Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setPolicy(value: DrivingPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanel(value: String | HTMLElement): Self = this.set("panel", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     @scala.inline
-    def deletePanel: Self = this.set("panel", js.undefined)
+    def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: DrivingPolicy): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
-    
-    @scala.inline
-    def setShowTraffic(value: Boolean): Self = this.set("showTraffic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowTraffic: Self = this.set("showTraffic", js.undefined)
+    def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
   }
 }

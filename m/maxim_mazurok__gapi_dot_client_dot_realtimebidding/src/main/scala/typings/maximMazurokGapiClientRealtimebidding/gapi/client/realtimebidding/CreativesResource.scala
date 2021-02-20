@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientRealtimebidding.anon.Fields
 import typings.maximMazurokGapiClientRealtimebidding.anon.Key
 import typings.maximMazurokGapiClientRealtimebidding.anon.Name
 import typings.maximMazurokGapiClientRealtimebidding.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreativesResource extends js.Object {
+trait CreativesResource extends StObject {
   
   def create(request: Callback, body: Creative): Request[Creative] = js.native
   /** Creates a creative. */

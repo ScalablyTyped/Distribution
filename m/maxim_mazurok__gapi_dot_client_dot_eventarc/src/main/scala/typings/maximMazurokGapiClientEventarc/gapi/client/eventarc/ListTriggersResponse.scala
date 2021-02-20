@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTriggersResponse extends js.Object {
+trait ListTriggersResponse extends StObject {
   
   /** A page token that can be sent to ListTriggers to request the next page. If this is empty, then there are no more pages. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -25,42 +26,30 @@ object ListTriggersResponse {
   }
   
   @scala.inline
-  implicit class ListTriggersResponseOps[Self <: ListTriggersResponse] (val x: Self) extends AnyVal {
+  implicit class ListTriggersResponseMutableBuilder[Self <: ListTriggersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggers(value: js.Array[Trigger]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTriggersVarargs(value: Trigger*): Self = StObject.set(x, "triggers", js.Array(value :_*))
     
     @scala.inline
-    def setTriggersVarargs(value: Trigger*): Self = this.set("triggers", js.Array(value :_*))
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggers(value: js.Array[Trigger]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteTriggers: Self = this.set("triggers", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

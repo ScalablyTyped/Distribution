@@ -6,12 +6,13 @@ import typings.jqueryRateit.jqueryRateitStrings.min
 import typings.jqueryRateit.jqueryRateitStrings.readonly
 import typings.jqueryRateit.jqueryRateitStrings.reset
 import typings.jqueryRateit.jqueryRateitStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def rateit(): JQuery = js.native
   def rateit(method: String, param: js.Any): js.Any = js.native

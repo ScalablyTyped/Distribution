@@ -2,16 +2,17 @@ package typings.xmldsigjs
 
 import typings.xmldsigjs.canonicalizerMod.XmlCanonicalizer
 import typings.xmldsigjs.transformMod.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmldsigjs/build/types/xml/transforms/exc_c14n", JSImport.Namespace)
-@js.native
-object excC14nMod extends js.Object {
+object excC14nMod {
   
+  @JSImport("xmldsigjs/build/types/xml/transforms/exc_c14n", "XmlDsigExcC14NTransform")
   @js.native
   class XmlDsigExcC14NTransform () extends Transform {
+    def this(properties: js.Object) = this()
     
     /**
       * Gets or sets a string that contains namespace prefixes to canonicalize
@@ -25,6 +26,9 @@ object excC14nMod extends js.Object {
     var xmlCanonicalizer: XmlCanonicalizer = js.native
   }
   
+  @JSImport("xmldsigjs/build/types/xml/transforms/exc_c14n", "XmlDsigExcC14NWithCommentsTransform")
   @js.native
-  class XmlDsigExcC14NWithCommentsTransform () extends XmlDsigExcC14NTransform
+  class XmlDsigExcC14NWithCommentsTransform () extends XmlDsigExcC14NTransform {
+    def this(properties: js.Object) = this()
+  }
 }

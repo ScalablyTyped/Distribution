@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightCaseSensitive extends js.Object {
+trait HighlightCaseSensitive extends StObject {
   
   var highlightCaseSensitive: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object HighlightCaseSensitive {
   }
   
   @scala.inline
-  implicit class HighlightCaseSensitiveOps[Self <: HighlightCaseSensitive] (val x: Self) extends AnyVal {
+  implicit class HighlightCaseSensitiveMutableBuilder[Self <: HighlightCaseSensitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightCaseSensitive(value: Boolean): Self = StObject.set(x, "highlightCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightCaseSensitiveUndefined: Self = StObject.set(x, "highlightCaseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightSearchText(value: Boolean): Self = StObject.set(x, "highlightSearchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightCaseSensitive(value: Boolean): Self = this.set("highlightCaseSensitive", value.asInstanceOf[js.Any])
+    def setHighlightSearchTextUndefined: Self = StObject.set(x, "highlightSearchText", js.undefined)
     
     @scala.inline
-    def deleteHighlightCaseSensitive: Self = this.set("highlightCaseSensitive", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightSearchText(value: Boolean): Self = this.set("highlightSearchText", value.asInstanceOf[js.Any])
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteHighlightSearchText: Self = this.set("highlightSearchText", js.undefined)
+    def setSearchVisibleColumnsOnly(value: Boolean): Self = StObject.set(x, "searchVisibleColumnsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    def setSearchVisibleColumnsOnlyUndefined: Self = StObject.set(x, "searchVisibleColumnsOnly", js.undefined)
     
     @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchVisibleColumnsOnly(value: Boolean): Self = this.set("searchVisibleColumnsOnly", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSearchVisibleColumnsOnly: Self = this.set("searchVisibleColumnsOnly", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

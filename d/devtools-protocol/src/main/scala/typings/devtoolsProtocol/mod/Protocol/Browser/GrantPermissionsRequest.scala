@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrantPermissionsRequest extends js.Object {
+trait GrantPermissionsRequest extends StObject {
   
   /**
     * BrowserContext to override permissions. When omitted, default browser context is used.
@@ -28,36 +29,24 @@ object GrantPermissionsRequest {
   }
   
   @scala.inline
-  implicit class GrantPermissionsRequestOps[Self <: GrantPermissionsRequest] (val x: Self) extends AnyVal {
+  implicit class GrantPermissionsRequestMutableBuilder[Self <: GrantPermissionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsVarargs(value: PermissionType*): Self = this.set("permissions", js.Array(value :_*))
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def setPermissions(value: js.Array[PermissionType]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setPermissions(value: js.Array[PermissionType]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = this.set("browserContextId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrowserContextId: Self = this.set("browserContextId", js.undefined)
-    
-    @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setPermissionsVarargs(value: PermissionType*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclOCB2ProgressiveMode extends js.Object {
+trait SjclOCB2ProgressiveMode extends StObject {
   
   def createDecryptor(prp: SjclCipher, iv: BitArray_): SjclOCB2ProgressiveProcessor = js.native
   def createDecryptor(

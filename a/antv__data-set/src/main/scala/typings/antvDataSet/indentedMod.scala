@@ -1,9 +1,8 @@
 package typings.antvDataSet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/data-set/lib/transform/hierarchy/indented", JSImport.Namespace)
-@js.native
-object indentedMod extends js.Object
+object indentedMod

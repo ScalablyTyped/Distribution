@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/PostCommentForComparedCommitOutput", JSImport.Namespace)
-@js.native
-object postCommentForComparedCommitOutputMod extends js.Object {
+object postCommentForComparedCommitOutputMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/PostCommentForComparedCommitOutput", "PostCommentForComparedCommitOutput")
+  @js.native
   val PostCommentForComparedCommitOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

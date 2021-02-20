@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.low
   - typings.highcharts.highchartsStrings.open
 */
-trait OptionsPointValKeyValue extends js.Object
+trait OptionsPointValKeyValue extends StObject
 object OptionsPointValKeyValue {
   
   @scala.inline

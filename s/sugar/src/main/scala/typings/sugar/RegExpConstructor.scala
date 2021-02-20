@@ -1,6 +1,7 @@
 package typings.sugar
 
 import typings.sugar.sugarjs._NativeConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadDocumentsRequest extends js.Object {
+trait UploadDocumentsRequest extends StObject {
   
   /**
     * The format of the batch you are uploading. Amazon CloudSearch supports two document batch formats:  application/json application/xml 
@@ -26,24 +27,12 @@ object UploadDocumentsRequest {
   }
   
   @scala.inline
-  implicit class UploadDocumentsRequestOps[Self <: UploadDocumentsRequest] (val x: Self) extends AnyVal {
+  implicit class UploadDocumentsRequestMutableBuilder[Self <: UploadDocumentsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDocuments(value: _Blob): Self = this.set("documents", value.asInstanceOf[js.Any])
+    def setDocuments(value: _Blob): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
   }
 }

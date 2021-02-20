@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IModelContentChangedEvent extends js.Object {
+trait IModelContentChangedEvent extends StObject {
   
   val changes: js.Array[IModelContentChange] = js.native
   
@@ -51,39 +52,27 @@ object IModelContentChangedEvent {
   }
   
   @scala.inline
-  implicit class IModelContentChangedEventOps[Self <: IModelContentChangedEvent] (val x: Self) extends AnyVal {
+  implicit class IModelContentChangedEventMutableBuilder[Self <: IModelContentChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChanges(value: js.Array[IModelContentChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangesVarargs(value: IModelContentChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangesVarargs(value: IModelContentChange*): Self = this.set("changes", js.Array(value :_*))
+    def setIsFlush(value: Boolean): Self = StObject.set(x, "isFlush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChanges(value: js.Array[IModelContentChange]): Self = this.set("changes", value.asInstanceOf[js.Any])
+    def setIsRedoing(value: Boolean): Self = StObject.set(x, "isRedoing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    def setIsUndoing(value: Boolean): Self = StObject.set(x, "isUndoing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFlush(value: Boolean): Self = this.set("isFlush", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsRedoing(value: Boolean): Self = this.set("isRedoing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUndoing(value: Boolean): Self = this.set("isUndoing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionId(value: Double): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    def setVersionId(value: Double): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

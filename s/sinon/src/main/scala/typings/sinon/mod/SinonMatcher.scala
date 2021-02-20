@@ -1,11 +1,12 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonMatcher extends js.Object {
+trait SinonMatcher extends StObject {
   
   /**
     * All matchers implement and and or. This allows to logically combine mutliple matchers.
@@ -34,27 +35,15 @@ object SinonMatcher {
   }
   
   @scala.inline
-  implicit class SinonMatcherOps[Self <: SinonMatcher] (val x: Self) extends AnyVal {
+  implicit class SinonMatcherMutableBuilder[Self <: SinonMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnd(value: SinonMatcher => SinonMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOr(value: SinonMatcher => SinonMatcher): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnd(value: SinonMatcher => SinonMatcher): Self = this.set("and", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOr(value: SinonMatcher => SinonMatcher): Self = this.set("or", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTest(value: js.Any => Boolean): Self = this.set("test", js.Any.fromFunction1(value))
+    def setTest(value: js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
   }
 }

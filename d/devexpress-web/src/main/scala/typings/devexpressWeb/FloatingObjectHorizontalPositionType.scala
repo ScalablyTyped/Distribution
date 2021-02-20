@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectHorizontalPositionType extends js.Object
+sealed trait FloatingObjectHorizontalPositionType extends StObject
 /**
   * Lists values specifying to what element the horizontal position of a floating object is relative.
   */
 @JSGlobal("FloatingObjectHorizontalPositionType")
 @js.native
-object FloatingObjectHorizontalPositionType extends js.Object {
+object FloatingObjectHorizontalPositionType extends StObject {
   
   /**
     * Relative to character.

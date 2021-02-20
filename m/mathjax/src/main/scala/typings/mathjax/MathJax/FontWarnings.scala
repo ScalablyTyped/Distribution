@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontWarnings extends js.Object {
+trait FontWarnings extends StObject {
   
   /*This object defines HTML snippets that are common to more than one message in the Message section above. They
     * can be included in other HTML snippets by by using ["name"] in an HTML snippet, where name refers to the name
@@ -53,54 +54,42 @@ object FontWarnings {
   }
   
   @scala.inline
-  implicit class FontWarningsOps[Self <: FontWarnings] (val x: Self) extends AnyVal {
+  implicit class FontWarningsMutableBuilder[Self <: FontWarnings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFadeoutSteps(value: Double): Self = StObject.set(x, "fadeoutSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFadeoutStepsUndefined: Self = StObject.set(x, "fadeoutSteps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFadeoutTime(value: Double): Self = StObject.set(x, "fadeoutTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTML(value: HTMLSnippets): Self = this.set("HTML", value.asInstanceOf[js.Any])
+    def setFadeoutTimeUndefined: Self = StObject.set(x, "fadeoutTime", js.undefined)
     
     @scala.inline
-    def deleteHTML: Self = this.set("HTML", js.undefined)
+    def setHTML(value: HTMLSnippets): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: HTMLMessages): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setHTMLUndefined: Self = StObject.set(x, "HTML", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setMessage(value: HTMLMessages): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFadeoutSteps(value: Double): Self = this.set("fadeoutSteps", value.asInstanceOf[js.Any])
+    def setMessageStyle(value: js.Any): Self = StObject.set(x, "messageStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFadeoutSteps: Self = this.set("fadeoutSteps", js.undefined)
+    def setMessageStyleUndefined: Self = StObject.set(x, "messageStyle", js.undefined)
     
     @scala.inline
-    def setFadeoutTime(value: Double): Self = this.set("fadeoutTime", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteFadeoutTime: Self = this.set("fadeoutTime", js.undefined)
+    def setRemoveAfter(value: Double): Self = StObject.set(x, "removeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageStyle(value: js.Any): Self = this.set("messageStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageStyle: Self = this.set("messageStyle", js.undefined)
-    
-    @scala.inline
-    def setRemoveAfter(value: Double): Self = this.set("removeAfter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveAfter: Self = this.set("removeAfter", js.undefined)
+    def setRemoveAfterUndefined: Self = StObject.set(x, "removeAfter", js.undefined)
   }
 }

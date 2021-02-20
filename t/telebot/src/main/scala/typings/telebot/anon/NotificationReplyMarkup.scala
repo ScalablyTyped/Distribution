@@ -1,11 +1,12 @@
 package typings.telebot.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationReplyMarkup extends js.Object {
+trait NotificationReplyMarkup extends StObject {
   
   var notification: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object NotificationReplyMarkup {
   }
   
   @scala.inline
-  implicit class NotificationReplyMarkupOps[Self <: NotificationReplyMarkup] (val x: Self) extends AnyVal {
+  implicit class NotificationReplyMarkupMutableBuilder[Self <: NotificationReplyMarkup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: Boolean): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setReplyToMessage(value: Double): Self = StObject.set(x, "replyToMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplyMarkup(value: js.Any): Self = this.set("replyMarkup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyMarkup: Self = this.set("replyMarkup", js.undefined)
-    
-    @scala.inline
-    def setReplyToMessage(value: Double): Self = this.set("replyToMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToMessage: Self = this.set("replyToMessage", js.undefined)
+    def setReplyToMessageUndefined: Self = StObject.set(x, "replyToMessage", js.undefined)
   }
 }

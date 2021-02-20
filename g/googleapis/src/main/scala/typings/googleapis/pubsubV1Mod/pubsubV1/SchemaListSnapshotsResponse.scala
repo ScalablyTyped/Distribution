@@ -1,5 +1,6 @@
 package typings.googleapis.pubsubV1Mod.pubsubV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for the `ListSnapshots` method.
   */
 @js.native
-trait SchemaListSnapshotsResponse extends js.Object {
+trait SchemaListSnapshotsResponse extends StObject {
   
   /**
     * If not empty, indicates that there may be more snapshot that match the
@@ -30,33 +31,21 @@ object SchemaListSnapshotsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListSnapshotsResponseOps[Self <: SchemaListSnapshotsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListSnapshotsResponseMutableBuilder[Self <: SchemaListSnapshotsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnapshots(value: js.Array[SchemaSnapshot]): Self = StObject.set(x, "snapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setSnapshotsUndefined: Self = StObject.set(x, "snapshots", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setSnapshotsVarargs(value: SchemaSnapshot*): Self = this.set("snapshots", js.Array(value :_*))
-    
-    @scala.inline
-    def setSnapshots(value: js.Array[SchemaSnapshot]): Self = this.set("snapshots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshots: Self = this.set("snapshots", js.undefined)
+    def setSnapshotsVarargs(value: SchemaSnapshot*): Self = StObject.set(x, "snapshots", js.Array(value :_*))
   }
 }

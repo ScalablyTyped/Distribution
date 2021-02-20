@@ -9,16 +9,18 @@ import typings.materialMenu.foundationMod.MDCMenuFoundation
 import typings.materialMenuSurface.componentMod.MDCMenuSurfaceFactory
 import typings.materialMenuSurface.constantsMod.Corner
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/menu/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/menu/component", "MDCMenu")
   @js.native
-  class MDCMenu () extends MDCComponent[MDCMenuFoundation] {
+  class MDCMenu protected () extends MDCComponent[MDCMenuFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCMenuFoundation, args: js.Any*) = this()
     
     /**
       * @return The item within the menu at the index specified.
@@ -145,9 +147,10 @@ object componentMod extends js.Object {
     def wrapFocus_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCMenu extends js.Object {
+  object MDCMenu {
     
+    @JSImport("@material/menu/component", "MDCMenu.attachTo")
+    @js.native
     def attachTo(root: Element): MDCMenu = js.native
   }
   

@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod.CallRecords
 
 import typings.microsoftGraph.mod.NullableOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Media extends js.Object {
+trait Media extends StObject {
   
   // Device information associated with the callee endpoint of this media.
   var calleeDevice: js.UndefOr[NullableOption[DeviceInfo]] = js.native
@@ -35,75 +36,63 @@ object Media {
   }
   
   @scala.inline
-  implicit class MediaOps[Self <: Media] (val x: Self) extends AnyVal {
+  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalleeDevice(value: NullableOption[DeviceInfo]): Self = StObject.set(x, "calleeDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalleeDeviceNull: Self = StObject.set(x, "calleeDevice", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalleeDeviceUndefined: Self = StObject.set(x, "calleeDevice", js.undefined)
     
     @scala.inline
-    def setCalleeDevice(value: NullableOption[DeviceInfo]): Self = this.set("calleeDevice", value.asInstanceOf[js.Any])
+    def setCalleeNetwork(value: NullableOption[NetworkInfo]): Self = StObject.set(x, "calleeNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalleeDevice: Self = this.set("calleeDevice", js.undefined)
+    def setCalleeNetworkNull: Self = StObject.set(x, "calleeNetwork", null)
     
     @scala.inline
-    def setCalleeDeviceNull: Self = this.set("calleeDevice", null)
+    def setCalleeNetworkUndefined: Self = StObject.set(x, "calleeNetwork", js.undefined)
     
     @scala.inline
-    def setCalleeNetwork(value: NullableOption[NetworkInfo]): Self = this.set("calleeNetwork", value.asInstanceOf[js.Any])
+    def setCallerDevice(value: NullableOption[DeviceInfo]): Self = StObject.set(x, "callerDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalleeNetwork: Self = this.set("calleeNetwork", js.undefined)
+    def setCallerDeviceNull: Self = StObject.set(x, "callerDevice", null)
     
     @scala.inline
-    def setCalleeNetworkNull: Self = this.set("calleeNetwork", null)
+    def setCallerDeviceUndefined: Self = StObject.set(x, "callerDevice", js.undefined)
     
     @scala.inline
-    def setCallerDevice(value: NullableOption[DeviceInfo]): Self = this.set("callerDevice", value.asInstanceOf[js.Any])
+    def setCallerNetwork(value: NullableOption[NetworkInfo]): Self = StObject.set(x, "callerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallerDevice: Self = this.set("callerDevice", js.undefined)
+    def setCallerNetworkNull: Self = StObject.set(x, "callerNetwork", null)
     
     @scala.inline
-    def setCallerDeviceNull: Self = this.set("callerDevice", null)
+    def setCallerNetworkUndefined: Self = StObject.set(x, "callerNetwork", js.undefined)
     
     @scala.inline
-    def setCallerNetwork(value: NullableOption[NetworkInfo]): Self = this.set("callerNetwork", value.asInstanceOf[js.Any])
+    def setLabel(value: NullableOption[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallerNetwork: Self = this.set("callerNetwork", js.undefined)
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def setCallerNetworkNull: Self = this.set("callerNetwork", null)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabel(value: NullableOption[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setStreams(value: NullableOption[js.Array[MediaStream]]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setStreamsNull: Self = StObject.set(x, "streams", null)
     
     @scala.inline
-    def setLabelNull: Self = this.set("label", null)
+    def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
     @scala.inline
-    def setStreamsVarargs(value: MediaStream*): Self = this.set("streams", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreams(value: NullableOption[js.Array[MediaStream]]): Self = this.set("streams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreams: Self = this.set("streams", js.undefined)
-    
-    @scala.inline
-    def setStreamsNull: Self = this.set("streams", null)
+    def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
   }
 }

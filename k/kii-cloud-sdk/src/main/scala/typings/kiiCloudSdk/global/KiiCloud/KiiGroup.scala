@@ -1,6 +1,7 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
 import typings.kiiCloudSdk.anon.`10`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiGroup ()
   extends typings.kiiCloudSdk.KiiCloud.KiiGroup
-/* static members */
-@JSGlobal("KiiCloud.KiiGroup")
-@js.native
-object KiiGroup extends js.Object {
+object KiiGroup {
   
   /**
     * Instantiate KiiGroup that refers to existing group which has specified ID.
@@ -33,6 +31,9 @@ object KiiGroup extends js.Object {
     * @example
     *     var group = new KiiUser.groupWithID("__GROUP_ID__");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiGroup.groupWithID")
+  @js.native
   def groupWithID(groupId: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
   
   /**
@@ -49,6 +50,9 @@ object KiiGroup extends js.Object {
     * @example
     *     var group = new KiiGroup.groupWithName("myGroup");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiGroup.groupWithName")
+  @js.native
   def groupWithName(groupName: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
   
   /**
@@ -66,6 +70,9 @@ object KiiGroup extends js.Object {
     * @example
     *     var group = new KiiGroup.groupWithName("myGroup", members);
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiGroup.groupWithNameAndMembers")
+  @js.native
   def groupWithNameAndMembers(groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
   
   /**
@@ -84,6 +91,9 @@ object KiiGroup extends js.Object {
     * @example
     *     var group = new KiiGroup.groupWithURI("kiicloud://myuri");
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiGroup.groupWithURI")
+  @js.native
   def groupWithURI(uri: String): typings.kiiCloudSdk.KiiCloud.KiiGroup = js.native
   
   /**
@@ -136,7 +146,12 @@ object KiiGroup extends js.Object {
     *             // do something with the error response
     *     });
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiGroup.registerGroupWithID")
+  @js.native
   def registerGroupWithID(groupID: String, groupName: String, members: js.Array[typings.kiiCloudSdk.KiiCloud.KiiUser]): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
+  @JSGlobal("KiiCloud.KiiGroup.registerGroupWithID")
+  @js.native
   def registerGroupWithID(
     groupID: String,
     groupName: String,

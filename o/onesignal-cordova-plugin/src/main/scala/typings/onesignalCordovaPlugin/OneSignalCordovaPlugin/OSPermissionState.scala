@@ -1,11 +1,12 @@
 package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OSPermissionState extends js.Object {
+trait OSPermissionState extends StObject {
   
   var hasPrompted: Boolean = js.native
   
@@ -29,30 +30,18 @@ object OSPermissionState {
   }
   
   @scala.inline
-  implicit class OSPermissionStateOps[Self <: OSPermissionState] (val x: Self) extends AnyVal {
+  implicit class OSPermissionStateMutableBuilder[Self <: OSPermissionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasPrompted(value: Boolean): Self = StObject.set(x, "hasPrompted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvisional(value: Boolean): Self = StObject.set(x, "provisional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: OSNotificationPermissionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPrompted(value: Boolean): Self = this.set("hasPrompted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvisional(value: Boolean): Self = this.set("provisional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: OSNotificationPermissionState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: OSNotificationPermission): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: OSNotificationPermission): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

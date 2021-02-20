@@ -19,12 +19,13 @@ import typings.minecraftScriptingTypesShared.IComponent
 import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IEventData
 import typings.minecraftScriptingTypesShared.IQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVanillaClientSystemBase extends js.Object {
+trait IVanillaClientSystemBase extends StObject {
   
   /**
     * 

@@ -1,11 +1,12 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IELangDB extends js.Object {
+trait IELangDB extends StObject {
   
   def _onInsert(id: String, value: String): Unit = js.native
   def _onInsert(id: String, value: String, callback: js.Function): Unit = js.native

@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej.Sunburst
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstClickAction extends js.Object
+sealed trait SunburstClickAction extends StObject
 @JSGlobal("ej.Sunburst.SunburstClickAction")
 @js.native
-object SunburstClickAction extends js.Object {
+object SunburstClickAction extends StObject {
   
   //string
   @js.native

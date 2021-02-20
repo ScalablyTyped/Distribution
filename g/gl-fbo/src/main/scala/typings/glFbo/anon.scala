@@ -6,16 +6,15 @@ import typings.glTexture2d.mod.RawObject
 import typings.glTexture2d.mod.Texture
 import typings.ndarray.mod.ndarray
 import typings.std.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(gl: WebGLRenderingContext, array: ndarray[Double]): Texture = js.native
     def apply(gl: WebGLRenderingContext, input: js.Tuple2[Double, Double]): Texture = js.native

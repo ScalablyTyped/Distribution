@@ -5,16 +5,16 @@ import typings.typeorm.connectionMod.Connection
 import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.joinTableMetadataArgsMod.JoinTableMetadataArgs
 import typings.typeorm.relationMetadataMod.RelationMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata-builder/JunctionEntityMetadataBuilder", JSImport.Namespace)
-@js.native
-object junctionEntityMetadataBuilderMod extends js.Object {
+object junctionEntityMetadataBuilderMod {
   
+  @JSImport("typeorm/browser/metadata-builder/JunctionEntityMetadataBuilder", "JunctionEntityMetadataBuilder")
   @js.native
-  class JunctionEntityMetadataBuilder protected () extends js.Object {
+  class JunctionEntityMetadataBuilder protected () extends StObject {
     def this(connection: Connection) = this()
     
     /**

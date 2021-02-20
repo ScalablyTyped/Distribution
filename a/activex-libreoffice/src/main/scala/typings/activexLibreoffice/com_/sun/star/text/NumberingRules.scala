@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XIndexReplace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,39 +77,27 @@ object NumberingRules {
   }
   
   @scala.inline
-  implicit class NumberingRulesOps[Self <: NumberingRules] (val x: Self) extends AnyVal {
+  implicit class NumberingRulesMutableBuilder[Self <: NumberingRules] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultListId(value: String): Self = StObject.set(x, "DefaultListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAbsoluteMargins(value: Boolean): Self = StObject.set(x, "IsAbsoluteMargins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAutomatic(value: Boolean): Self = StObject.set(x, "IsAutomatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultListId(value: String): Self = this.set("DefaultListId", value.asInstanceOf[js.Any])
+    def setIsContinuousNumbering(value: Boolean): Self = StObject.set(x, "IsContinuousNumbering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAbsoluteMargins(value: Boolean): Self = this.set("IsAbsoluteMargins", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutomatic(value: Boolean): Self = this.set("IsAutomatic", value.asInstanceOf[js.Any])
+    def setNumberingIsOutline(value: Boolean): Self = StObject.set(x, "NumberingIsOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsContinuousNumbering(value: Boolean): Self = this.set("IsContinuousNumbering", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberingIsOutline(value: Boolean): Self = this.set("NumberingIsOutline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberingType(value: Double): Self = this.set("NumberingType", value.asInstanceOf[js.Any])
+    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }
 }

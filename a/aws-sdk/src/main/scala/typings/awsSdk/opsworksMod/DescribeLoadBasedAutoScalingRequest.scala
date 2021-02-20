@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLoadBasedAutoScalingRequest extends js.Object {
+trait DescribeLoadBasedAutoScalingRequest extends StObject {
   
   /**
     * An array of layer IDs.
@@ -21,24 +22,12 @@ object DescribeLoadBasedAutoScalingRequest {
   }
   
   @scala.inline
-  implicit class DescribeLoadBasedAutoScalingRequestOps[Self <: DescribeLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeLoadBasedAutoScalingRequestMutableBuilder[Self <: DescribeLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = this.set("LayerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayerIds(value: Strings): Self = this.set("LayerIds", value.asInstanceOf[js.Any])
+    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "LayerIds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailedQueuedPurchaseDeletion extends js.Object {
+trait FailedQueuedPurchaseDeletion extends StObject {
   
   /**
     * The error.
@@ -26,30 +27,18 @@ object FailedQueuedPurchaseDeletion {
   }
   
   @scala.inline
-  implicit class FailedQueuedPurchaseDeletionOps[Self <: FailedQueuedPurchaseDeletion] (val x: Self) extends AnyVal {
+  implicit class FailedQueuedPurchaseDeletionMutableBuilder[Self <: FailedQueuedPurchaseDeletion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: DeleteQueuedReservedInstancesError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: DeleteQueuedReservedInstancesError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setReservedInstancesId(value: String): Self = this.set("ReservedInstancesId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedInstancesId: Self = this.set("ReservedInstancesId", js.undefined)
+    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
   }
 }

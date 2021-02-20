@@ -1,12 +1,13 @@
 package typings.babylonjs.nodeIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/Node/index", "PropertyTypeForEdition")
 @js.native
-object PropertyTypeForEdition extends js.Object {
+object PropertyTypeForEdition extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition with Double] = js.native

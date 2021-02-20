@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RasterBandStatistics extends js.Object {
+trait RasterBandStatistics extends StObject {
   
   var max: Double = js.native
   
@@ -24,30 +25,18 @@ object RasterBandStatistics {
   }
   
   @scala.inline
-  implicit class RasterBandStatisticsOps[Self <: RasterBandStatistics] (val x: Self) extends AnyVal {
+  implicit class RasterBandStatisticsMutableBuilder[Self <: RasterBandStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMean(value: Double): Self = this.set("mean", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStd_dev(value: Double): Self = this.set("std_dev", value.asInstanceOf[js.Any])
+    def setStd_dev(value: Double): Self = StObject.set(x, "std_dev", value.asInstanceOf[js.Any])
   }
 }

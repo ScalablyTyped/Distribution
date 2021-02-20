@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlexProps[TLength] extends js.Object {
+trait FlexProps[TLength] extends StObject {
   
   val flex: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object FlexProps {
   }
   
   @scala.inline
-  implicit class FlexPropsOps[Self <: FlexProps[_], TLength] (val x: Self with FlexProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFlexVarargs(value: js.Any*): Self = this.set("flex", js.Array(value :_*))
+  implicit class FlexPropsMutableBuilder[Self <: FlexProps[_], TLength] (val x: Self with FlexProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setFlex(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
         ]
-    ): Self = this.set("flex", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlex: Self = this.set("flex", js.undefined)
+    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    
+    @scala.inline
+    def setFlexVarargs(value: js.Any*): Self = StObject.set(x, "flex", js.Array(value :_*))
   }
 }

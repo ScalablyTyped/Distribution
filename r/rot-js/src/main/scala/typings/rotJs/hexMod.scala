@@ -1,12 +1,15 @@
 package typings.rotJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/display/hex", JSImport.Namespace)
-@js.native
-object hexMod extends js.Object {
+object hexMod {
+  
+  @JSImport("rot-js/lib/display/hex", JSImport.Default)
+  @js.native
+  class default () extends Hex
   
   @js.native
   trait Hex
@@ -23,7 +26,4 @@ object hexMod extends js.Object {
     
     var _spacingY: Double = js.native
   }
-  
-  @js.native
-  class default () extends Hex
 }

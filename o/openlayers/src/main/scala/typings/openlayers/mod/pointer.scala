@@ -1,12 +1,11 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "pointer")
-@js.native
-object pointer extends js.Object {
+object pointer {
   
   /**
     * @classdesc
@@ -20,6 +19,7 @@ object pointer extends js.Object {
     * @param opt_eventDict An optional dictionary of
     *    initial event properties.
     */
+  @JSImport("openlayers", "pointer.PointerEvent")
   @js.native
-  class PointerEvent () extends js.Object
+  class PointerEvent () extends StObject
 }

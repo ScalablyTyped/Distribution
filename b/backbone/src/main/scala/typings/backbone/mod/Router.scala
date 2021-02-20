@@ -1,13 +1,14 @@
 package typings.backbone.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "Router")
 @js.native
-class Router () extends js.Object {
+class Router () extends StObject {
   def this(options: RouterOptions) = this()
   
   /* private */ def _bindRoutes(): Unit = js.native
@@ -46,14 +47,16 @@ class Router () extends js.Object {
     **/
   var routes: RoutesHash | js.Any = js.native
 }
-/* static members */
-@JSImport("backbone", "Router")
-@js.native
-object Router extends js.Object {
+object Router {
   
   /**
     * Do not use, prefer TypeScript's extend functionality.
     **/
+  /* static member */
+  @JSImport("backbone", "Router.extend")
+  @js.native
   def extend(properties: js.Any): js.Any = js.native
+  @JSImport("backbone", "Router.extend")
+  @js.native
   def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
 }

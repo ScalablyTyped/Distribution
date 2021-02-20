@@ -1,12 +1,13 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "WorkItemsApi")
 @js.native
-class WorkItemsApi () extends js.Object {
+class WorkItemsApi () extends StObject {
   
   /**
     * Creates a new WorkItem.

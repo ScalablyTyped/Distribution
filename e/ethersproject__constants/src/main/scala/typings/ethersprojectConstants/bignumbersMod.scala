@@ -1,23 +1,34 @@
 package typings.ethersprojectConstants
 
 import typings.ethersprojectBignumber.mod.BigNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/constants/lib/bignumbers", JSImport.Namespace)
-@js.native
-object bignumbersMod extends js.Object {
+object bignumbersMod {
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "MaxUint256")
+  @js.native
   val MaxUint256: BigNumber = js.native
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "NegativeOne")
+  @js.native
   val NegativeOne: BigNumber = js.native
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "One")
+  @js.native
   val One: BigNumber = js.native
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "Two")
+  @js.native
   val Two: BigNumber = js.native
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "WeiPerEther")
+  @js.native
   val WeiPerEther: BigNumber = js.native
   
+  @JSImport("@ethersproject/constants/lib/bignumbers", "Zero")
+  @js.native
   val Zero: BigNumber = js.native
 }

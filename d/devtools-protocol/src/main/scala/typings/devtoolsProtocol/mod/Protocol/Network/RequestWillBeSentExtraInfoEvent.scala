@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestWillBeSentExtraInfoEvent extends js.Object {
+trait RequestWillBeSentExtraInfoEvent extends StObject {
   
   /**
     * A list of cookies potentially associated to the requested URL. This includes both cookies sent with
@@ -32,30 +33,18 @@ object RequestWillBeSentExtraInfoEvent {
   }
   
   @scala.inline
-  implicit class RequestWillBeSentExtraInfoEventOps[Self <: RequestWillBeSentExtraInfoEvent] (val x: Self) extends AnyVal {
+  implicit class RequestWillBeSentExtraInfoEventMutableBuilder[Self <: RequestWillBeSentExtraInfoEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedCookies(value: js.Array[BlockedCookieWithReason]): Self = StObject.set(x, "associatedCookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedCookiesVarargs(value: BlockedCookieWithReason*): Self = StObject.set(x, "associatedCookies", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedCookiesVarargs(value: BlockedCookieWithReason*): Self = this.set("associatedCookies", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssociatedCookies(value: js.Array[BlockedCookieWithReason]): Self = this.set("associatedCookies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

@@ -3,16 +3,16 @@ package typings.imageQ
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.pointContainerMod.PointContainer
 import typings.imageQ.utilsPaletteMod.Palette
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/palette/wu/wuQuant", JSImport.Namespace)
-@js.native
-object wuQuantMod extends js.Object {
+object wuQuantMod {
   
+  @JSImport("image-q/dist/palette/wu/wuQuant", "WuColorCube")
   @js.native
-  class WuColorCube () extends js.Object {
+  class WuColorCube () extends StObject {
     
     var alphaMaximum: Double = js.native
     
@@ -33,8 +33,9 @@ object wuQuantMod extends js.Object {
     var volume: Double = js.native
   }
   
+  @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant")
   @js.native
-  class WuQuant protected () extends js.Object {
+  class WuQuant protected () extends StObject {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
     def this(
@@ -130,35 +131,50 @@ object wuQuantMod extends js.Object {
     def sample(image: PointContainer): Unit = js.native
   }
   /* static members */
-  @js.native
-  object WuQuant extends js.Object {
+  object WuQuant {
     
     /**
       * Splits the cube in a given color direction at its minimum.
       */
-    /* private */ def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = js.native
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._bottom")
+    @js.native
+    def _bottom(cube: js.Any, direction: js.Any, moment: js.Any): js.Any = js.native
     
     /**
       * Splits the cube in given position][and color direction.
       */
-    /* private */ def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = js.native
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._top")
+    @js.native
+    def _top(cube: js.Any, direction: js.Any, position: js.Any, moment: js.Any): js.Any = js.native
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    /* private */ def _volume(cube: js.Any, moment: js.Any): js.Any = js.native
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._volume")
+    @js.native
+    def _volume(cube: js.Any, moment: js.Any): js.Any = js.native
     
     /**
       * Computes the volume of the cube in a specific moment.
       */
-    /* private */ def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = js.native
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant._volumeFloat")
+    @js.native
+    def _volumeFloat(cube: js.Any, moment: js.Any): js.Any = js.native
     
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.alpha")
+    @js.native
     val alpha: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.blue")
+    @js.native
     val blue: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.green")
+    @js.native
     val green: js.Any = js.native
     
+    @JSImport("image-q/dist/palette/wu/wuQuant", "WuQuant.red")
+    @js.native
     val red: js.Any = js.native
   }
 }

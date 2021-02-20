@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelParameterVersionRequest extends js.Object {
+trait LabelParameterVersionRequest extends StObject {
   
   /**
     * One or more labels to attach to the specified parameter version.
@@ -31,33 +32,21 @@ object LabelParameterVersionRequest {
   }
   
   @scala.inline
-  implicit class LabelParameterVersionRequestOps[Self <: LabelParameterVersionRequest] (val x: Self) extends AnyVal {
+  implicit class LabelParameterVersionRequestMutableBuilder[Self <: LabelParameterVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: ParameterLabelList): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVarargs(value: ParameterLabel*): Self = this.set("Labels", js.Array(value :_*))
+    def setParameterVersion(value: PSParameterVersion): Self = StObject.set(x, "ParameterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: ParameterLabelList): Self = this.set("Labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: PSParameterName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameterVersion(value: PSParameterVersion): Self = this.set("ParameterVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterVersion: Self = this.set("ParameterVersion", js.undefined)
+    def setParameterVersionUndefined: Self = StObject.set(x, "ParameterVersion", js.undefined)
   }
 }

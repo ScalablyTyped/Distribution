@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateBudgetWithResourceInput extends js.Object {
+trait AssociateBudgetWithResourceInput extends StObject {
   
   /**
     * The name of the budget you want to associate.
@@ -26,24 +27,12 @@ object AssociateBudgetWithResourceInput {
   }
   
   @scala.inline
-  implicit class AssociateBudgetWithResourceInputOps[Self <: AssociateBudgetWithResourceInput] (val x: Self) extends AnyVal {
+  implicit class AssociateBudgetWithResourceInputMutableBuilder[Self <: AssociateBudgetWithResourceInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceId(value: Id): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setResourceId(value: Id): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

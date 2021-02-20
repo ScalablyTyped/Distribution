@@ -2,13 +2,14 @@ package typings.aureliaBinding.mod
 
 import typings.std.Element
 import typings.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "EventSubscriber")
 @js.native
-class EventSubscriber protected () extends js.Object {
+class EventSubscriber protected () extends StObject {
   def this(events: js.Array[String]) = this()
   
   def dispose(): Unit = js.native

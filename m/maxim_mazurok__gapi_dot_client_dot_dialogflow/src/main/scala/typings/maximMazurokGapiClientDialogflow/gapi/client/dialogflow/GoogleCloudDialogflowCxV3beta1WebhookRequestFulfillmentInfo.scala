@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo extends js.Object {
+trait GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo extends StObject {
   
   /** Always present. The tag used to identify which fulfillment is being called. */
   var tag: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfoOps[Self <: GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookRequestFulfillmentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

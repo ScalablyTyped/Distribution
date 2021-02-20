@@ -1,5 +1,6 @@
 package typings.jqueryDropotron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @version 1.0
   */
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def dropotron(): Unit = js.native
   def dropotron(config: DropotronConfiguration): Unit = js.native

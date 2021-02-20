@@ -1,5 +1,6 @@
 package typings.rx.Rx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rx.Rx.Observable[T]
   - typings.rx.Rx.Promise[T]
 */
-trait ObservableOrPromise[T] extends js.Object
+trait ObservableOrPromise[T] extends StObject

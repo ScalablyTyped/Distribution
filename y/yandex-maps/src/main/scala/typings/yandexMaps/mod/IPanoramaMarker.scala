@@ -1,12 +1,13 @@
 package typings.yandexMaps.mod
 
 import typings.yandexMaps.mod.data.Manager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPanoramaMarker extends js.Object {
+trait IPanoramaMarker extends StObject {
   
   def getIconSet(): js.Promise[IPanoramaMarkerIconSet] = js.native
   
@@ -30,30 +31,18 @@ object IPanoramaMarker {
   }
   
   @scala.inline
-  implicit class IPanoramaMarkerOps[Self <: IPanoramaMarker] (val x: Self) extends AnyVal {
+  implicit class IPanoramaMarkerMutableBuilder[Self <: IPanoramaMarker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetIconSet(value: () => js.Promise[IPanoramaMarkerIconSet]): Self = StObject.set(x, "getIconSet", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPanorama(value: () => IPanorama): Self = StObject.set(x, "getPanorama", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPosition(value: () => js.Array[Double]): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIconSet(value: () => js.Promise[IPanoramaMarkerIconSet]): Self = this.set("getIconSet", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPanorama(value: () => IPanorama): Self = this.set("getPanorama", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPosition(value: () => js.Array[Double]): Self = this.set("getPosition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setProperties(value: Manager): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setProperties(value: Manager): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

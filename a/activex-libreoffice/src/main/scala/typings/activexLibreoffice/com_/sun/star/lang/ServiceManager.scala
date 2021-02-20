@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.container.XContentEnumerationAcc
 import typings.activexLibreoffice.com_.sun.star.container.XSet
 import typings.activexLibreoffice.com_.sun.star.uno.XComponentContext
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

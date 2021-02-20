@@ -5,22 +5,31 @@ import typings.baconjs.observableMod.ObservableConstructor
 import typings.baconjs.observableMod.Property
 import typings.baconjs.observableMod.default
 import typings.baconjs.sourceMod.Source
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baconjs/types/when", JSImport.Namespace)
-@js.native
-object whenMod extends js.Object {
+object whenMod {
   
+  @JSImport("baconjs/types/when", JSImport.Default)
+  @js.native
   def default[O](patterns: Pattern[O]*): EventStream[O] = js.native
   
+  @JSImport("baconjs/types/when", "extractRawPatterns")
+  @js.native
   def extractRawPatterns[O](patterns: js.Array[Pattern[O]]): js.Array[RawPattern] = js.native
   
+  @JSImport("baconjs/types/when", "when")
+  @js.native
   def when[O](patterns: Pattern[O]*): EventStream[O] = js.native
   
+  @JSImport("baconjs/types/when", "whenP")
+  @js.native
   def whenP[O](patterns: Pattern[O]*): Property[O] = js.native
   
+  @JSImport("baconjs/types/when", "when_")
+  @js.native
   def when_[O](ctor: ObservableConstructor, patterns: js.Array[Pattern[O]]): default[O] = js.native
   
   type AnyFunction = js.Function

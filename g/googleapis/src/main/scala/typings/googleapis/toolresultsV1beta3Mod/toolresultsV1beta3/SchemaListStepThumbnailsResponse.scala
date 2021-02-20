@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A response containing the thumbnails in a step.
   */
 @js.native
-trait SchemaListStepThumbnailsResponse extends js.Object {
+trait SchemaListStepThumbnailsResponse extends StObject {
   
   /**
     * A continuation token to resume the query at the next item.  If set,
@@ -36,33 +37,21 @@ object SchemaListStepThumbnailsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListStepThumbnailsResponseOps[Self <: SchemaListStepThumbnailsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListStepThumbnailsResponseMutableBuilder[Self <: SchemaListStepThumbnailsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThumbnails(value: js.Array[SchemaImage]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setThumbnailsVarargs(value: SchemaImage*): Self = this.set("thumbnails", js.Array(value :_*))
-    
-    @scala.inline
-    def setThumbnails(value: js.Array[SchemaImage]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    def setThumbnailsVarargs(value: SchemaImage*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
   }
 }

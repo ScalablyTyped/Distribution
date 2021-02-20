@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Destination extends js.Object {
+trait Destination extends StObject {
   
   /**
     * Specify this only in a cross-account scenario (where source and destination bucket owners are not the same), and you want to change replica ownership to the AWS account that owns the destination bucket. If this is not specified in the replication configuration, the replicas are owned by same AWS account that owns the source object.
@@ -51,57 +52,45 @@ object Destination {
   }
   
   @scala.inline
-  implicit class DestinationOps[Self <: Destination] (val x: Self) extends AnyVal {
+  implicit class DestinationMutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlTranslation(value: AccessControlTranslation): Self = StObject.set(x, "AccessControlTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlTranslationUndefined: Self = StObject.set(x, "AccessControlTranslation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
     @scala.inline
-    def setAccessControlTranslation(value: AccessControlTranslation): Self = this.set("AccessControlTranslation", value.asInstanceOf[js.Any])
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessControlTranslation: Self = this.set("AccessControlTranslation", js.undefined)
+    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: AccountId): Self = this.set("Account", value.asInstanceOf[js.Any])
+    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAccount: Self = this.set("Account", js.undefined)
+    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = this.set("EncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
     @scala.inline
-    def deleteEncryptionConfiguration: Self = this.set("EncryptionConfiguration", js.undefined)
+    def setReplicationTime(value: ReplicationTime): Self = StObject.set(x, "ReplicationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: Metrics): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    def setReplicationTimeUndefined: Self = StObject.set(x, "ReplicationTime", js.undefined)
     
     @scala.inline
-    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationTime(value: ReplicationTime): Self = this.set("ReplicationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationTime: Self = this.set("ReplicationTime", js.undefined)
-    
-    @scala.inline
-    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
   }
 }

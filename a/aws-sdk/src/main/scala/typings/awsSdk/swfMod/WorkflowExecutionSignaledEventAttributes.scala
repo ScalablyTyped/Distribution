@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowExecutionSignaledEventAttributes extends js.Object {
+trait WorkflowExecutionSignaledEventAttributes extends StObject {
   
   /**
     * The ID of the SignalExternalWorkflowExecutionInitiated event corresponding to the SignalExternalWorkflow decision to signal this workflow execution.The source event with this ID can be found in the history of the source workflow execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event. This field is set only if the signal was initiated by another workflow execution.
@@ -36,39 +37,27 @@ object WorkflowExecutionSignaledEventAttributes {
   }
   
   @scala.inline
-  implicit class WorkflowExecutionSignaledEventAttributesOps[Self <: WorkflowExecutionSignaledEventAttributes] (val x: Self) extends AnyVal {
+  implicit class WorkflowExecutionSignaledEventAttributesMutableBuilder[Self <: WorkflowExecutionSignaledEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalInitiatedEventIdUndefined: Self = StObject.set(x, "externalInitiatedEventId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "externalWorkflowExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalName(value: SignalName): Self = this.set("signalName", value.asInstanceOf[js.Any])
+    def setExternalWorkflowExecutionUndefined: Self = StObject.set(x, "externalWorkflowExecution", js.undefined)
     
     @scala.inline
-    def setExternalInitiatedEventId(value: EventId): Self = this.set("externalInitiatedEventId", value.asInstanceOf[js.Any])
+    def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalInitiatedEventId: Self = this.set("externalInitiatedEventId", js.undefined)
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def setExternalWorkflowExecution(value: WorkflowExecution): Self = this.set("externalWorkflowExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalWorkflowExecution: Self = this.set("externalWorkflowExecution", js.undefined)
-    
-    @scala.inline
-    def setInput(value: Data): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setSignalName(value: SignalName): Self = StObject.set(x, "signalName", value.asInstanceOf[js.Any])
   }
 }

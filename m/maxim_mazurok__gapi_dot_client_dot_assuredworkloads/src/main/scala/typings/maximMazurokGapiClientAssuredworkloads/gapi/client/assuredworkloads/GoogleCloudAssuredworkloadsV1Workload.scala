@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworkloads
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudAssuredworkloadsV1Workload extends js.Object {
+trait GoogleCloudAssuredworkloadsV1Workload extends StObject {
   
   /**
     * Required. Input only. The billing account used for the resources which are direct children of workload. This billing account is initially associated with the resources created as
@@ -64,85 +65,73 @@ object GoogleCloudAssuredworkloadsV1Workload {
   }
   
   @scala.inline
-  implicit class GoogleCloudAssuredworkloadsV1WorkloadOps[Self <: GoogleCloudAssuredworkloadsV1Workload] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudAssuredworkloadsV1WorkloadMutableBuilder[Self <: GoogleCloudAssuredworkloadsV1Workload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAccount(value: String): Self = StObject.set(x, "billingAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAccountUndefined: Self = StObject.set(x, "billingAccount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceRegime(value: String): Self = StObject.set(x, "complianceRegime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAccount(value: String): Self = this.set("billingAccount", value.asInstanceOf[js.Any])
+    def setComplianceRegimeUndefined: Self = StObject.set(x, "complianceRegime", js.undefined)
     
     @scala.inline
-    def deleteBillingAccount: Self = this.set("billingAccount", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceRegime(value: String): Self = this.set("complianceRegime", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteComplianceRegime: Self = this.set("complianceRegime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setKmsSettings(value: GoogleCloudAssuredworkloadsV1WorkloadKMSSettings): Self = StObject.set(x, "kmsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
-    
-    @scala.inline
-    def setKmsSettings(value: GoogleCloudAssuredworkloadsV1WorkloadKMSSettings): Self = this.set("kmsSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsSettings: Self = this.set("kmsSettings", js.undefined)
+    def setKmsSettingsUndefined: Self = StObject.set(x, "kmsSettings", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientAssuredworkloads.maximMazurokGapiClientAssuredworkloadsStrings.GoogleCloudAssuredworkloadsV1Workload with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setProvisionedResourcesParent(value: String): Self = this.set("provisionedResourcesParent", value.asInstanceOf[js.Any])
+    def setProvisionedResourcesParent(value: String): Self = StObject.set(x, "provisionedResourcesParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisionedResourcesParent: Self = this.set("provisionedResourcesParent", js.undefined)
+    def setProvisionedResourcesParentUndefined: Self = StObject.set(x, "provisionedResourcesParent", js.undefined)
     
     @scala.inline
-    def setResourcesVarargs(value: GoogleCloudAssuredworkloadsV1WorkloadResourceInfo*): Self = this.set("resources", js.Array(value :_*))
+    def setResources(value: js.Array[GoogleCloudAssuredworkloadsV1WorkloadResourceInfo]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[GoogleCloudAssuredworkloadsV1WorkloadResourceInfo]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
+    def setResourcesVarargs(value: GoogleCloudAssuredworkloadsV1WorkloadResourceInfo*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

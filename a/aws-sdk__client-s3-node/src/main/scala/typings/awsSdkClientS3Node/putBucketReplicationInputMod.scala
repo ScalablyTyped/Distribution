@@ -1,12 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/PutBucketReplicationInput", JSImport.Namespace)
-@js.native
-object putBucketReplicationInputMod extends js.Object {
+object putBucketReplicationInputMod {
   
+  @JSImport("@aws-sdk/client-s3-node/model/PutBucketReplicationInput", "PutBucketReplicationInput")
+  @js.native
   val PutBucketReplicationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

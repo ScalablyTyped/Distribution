@@ -1,15 +1,15 @@
 package typings.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChangeDetectionStrategy extends js.Object
+sealed trait ChangeDetectionStrategy extends StObject
 @JSImport("@angular/core", "ChangeDetectionStrategy")
 @js.native
-object ChangeDetectionStrategy extends js.Object {
+object ChangeDetectionStrategy extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ChangeDetectionStrategy with Double] = js.native
@@ -20,8 +20,7 @@ object ChangeDetectionStrategy extends js.Object {
     */
   @js.native
   sealed trait Default extends ChangeDetectionStrategy
-  /* 1 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  /* 1 */ val Default: typings.angularCore.mod.ChangeDetectionStrategy.Default with Double = js.native
   
   /**
     * Use the `CheckOnce` strategy, meaning that automatic change detection is deactivated
@@ -31,6 +30,5 @@ object ChangeDetectionStrategy extends js.Object {
     */
   @js.native
   sealed trait OnPush extends ChangeDetectionStrategy
-  /* 0 */ @js.native
-  object OnPush extends TopLevel[OnPush with Double]
+  /* 0 */ val OnPush: typings.angularCore.mod.ChangeDetectionStrategy.OnPush with Double = js.native
 }

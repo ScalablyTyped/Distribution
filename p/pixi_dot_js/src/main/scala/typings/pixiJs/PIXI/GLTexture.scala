@@ -1,6 +1,7 @@
 package typings.pixiJs.PIXI
 
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait GLTexture extends js.Object {
+trait GLTexture extends StObject {
   
   /**
     * Texture contents dirty flag
@@ -87,45 +88,33 @@ object GLTexture {
   }
   
   @scala.inline
-  implicit class GLTextureOps[Self <: GLTexture] (val x: Self) extends AnyVal {
+  implicit class GLTextureMutableBuilder[Self <: GLTexture] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirtyId(value: Double): Self = StObject.set(x, "dirtyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirtyStyleId(value: Double): Self = StObject.set(x, "dirtyStyleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirtyId(value: Double): Self = this.set("dirtyId", value.asInstanceOf[js.Any])
+    def setInternalFormat(value: Double): Self = StObject.set(x, "internalFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirtyStyleId(value: Double): Self = this.set("dirtyStyleId", value.asInstanceOf[js.Any])
+    def setMipmap(value: Boolean): Self = StObject.set(x, "mipmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalFormat(value: Double): Self = this.set("internalFormat", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMipmap(value: Boolean): Self = this.set("mipmap", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexture(value: WebGLTexture): Self = this.set("texture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrapMode(value: Double): Self = this.set("wrapMode", value.asInstanceOf[js.Any])
+    def setWrapMode(value: Double): Self = StObject.set(x, "wrapMode", value.asInstanceOf[js.Any])
   }
 }

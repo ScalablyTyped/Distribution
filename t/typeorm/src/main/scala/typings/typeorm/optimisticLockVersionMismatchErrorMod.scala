@@ -2,14 +2,14 @@ package typings.typeorm
 
 import typings.std.Date
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/error/OptimisticLockVersionMismatchError", JSImport.Namespace)
-@js.native
-object optimisticLockVersionMismatchErrorMod extends js.Object {
+object optimisticLockVersionMismatchErrorMod {
   
+  @JSImport("typeorm/browser/error/OptimisticLockVersionMismatchError", "OptimisticLockVersionMismatchError")
   @js.native
   class OptimisticLockVersionMismatchError protected () extends Error {
     def this(entity: String, expectedVersion: Double, actualVersion: Double) = this()

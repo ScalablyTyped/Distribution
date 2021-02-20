@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,110 +47,98 @@ object SVGAttributes {
   }
   
   @scala.inline
-  implicit class SVGAttributesOps[Self <: SVGAttributes] (val x: Self) extends AnyVal {
+  implicit class SVGAttributesMutableBuilder[Self <: SVGAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String | SVGPathArray): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
     def setDVarargs(
       value: (js.Array[SVGPathCommand] | (js.Tuple2[SVGPathCommand, Double]) | (js.Tuple3[SVGPathCommand, Double, Double]) | (js.Tuple5[SVGPathCommand, Double, Double, Double, Double]) | (js.Tuple7[SVGPathCommand, Double, Double, Double, Double, Double, Double]) | (js.Tuple8[SVGPathCommand, Double, Double, Double, Double, Double, Double, Double]))*
-    ): Self = this.set("d", js.Array(value :_*))
+    ): Self = StObject.set(x, "d", js.Array(value :_*))
     
     @scala.inline
-    def setD(value: String | SVGPathArray): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setFill(value: ColorString | GradientColorObject | PatternObject): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
     @scala.inline
-    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInverted: Self = this.set("inverted", js.undefined)
+    def setMatrixUndefined: Self = StObject.set(x, "matrix", js.undefined)
     
     @scala.inline
-    def setMatrixVarargs(value: Double*): Self = this.set("matrix", js.Array(value :_*))
+    def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
     
     @scala.inline
-    def setMatrix(value: js.Array[Double]): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMatrix: Self = this.set("matrix", js.undefined)
+    def setRotationOriginX(value: Double): Self = StObject.set(x, "rotationOriginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setRotationOriginXUndefined: Self = StObject.set(x, "rotationOriginX", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setRotationOriginY(value: Double): Self = StObject.set(x, "rotationOriginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationOriginX(value: Double): Self = this.set("rotationOriginX", value.asInstanceOf[js.Any])
+    def setRotationOriginYUndefined: Self = StObject.set(x, "rotationOriginY", js.undefined)
     
     @scala.inline
-    def deleteRotationOriginX: Self = this.set("rotationOriginX", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def setRotationOriginY(value: Double): Self = this.set("rotationOriginY", value.asInstanceOf[js.Any])
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotationOriginY: Self = this.set("rotationOriginY", js.undefined)
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScaleX: Self = this.set("scaleX", js.undefined)
+    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setStroke(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScaleY: Self = this.set("scaleY", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def setStroke(value: ColorString | GradientColorObject | PatternObject): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStyle(value: String | CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: String | CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
     @scala.inline
-    def setTranslateX(value: Double): Self = this.set("translateX", value.asInstanceOf[js.Any])
+    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTranslateX: Self = this.set("translateX", js.undefined)
+    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     
     @scala.inline
-    def setTranslateY(value: Double): Self = this.set("translateY", value.asInstanceOf[js.Any])
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTranslateY: Self = this.set("translateY", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

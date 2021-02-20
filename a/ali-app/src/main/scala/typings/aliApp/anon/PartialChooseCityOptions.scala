@@ -1,13 +1,14 @@
 package typings.aliApp.anon
 
 import typings.aliApp.my.City
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.ChooseCityOptions> */
 @js.native
-trait PartialChooseCityOptions extends js.Object {
+trait PartialChooseCityOptions extends StObject {
   
   var cities: js.UndefOr[js.Array[City]] = js.native
   
@@ -32,66 +33,54 @@ object PartialChooseCityOptions {
   }
   
   @scala.inline
-  implicit class PartialChooseCityOptionsOps[Self <: PartialChooseCityOptions] (val x: Self) extends AnyVal {
+  implicit class PartialChooseCityOptionsMutableBuilder[Self <: PartialChooseCityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCitiesVarargs(value: City*): Self = StObject.set(x, "cities", js.Array(value :_*))
     
     @scala.inline
-    def setCitiesVarargs(value: City*): Self = this.set("cities", js.Array(value :_*))
+    def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCities(value: js.Array[City]): Self = this.set("cities", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteCities: Self = this.set("cities", js.undefined)
+    def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ js.Any => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setHotCities(value: js.Array[City]): Self = StObject.set(x, "hotCities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ js.Any => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setHotCitiesUndefined: Self = StObject.set(x, "hotCities", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setHotCitiesVarargs(value: City*): Self = StObject.set(x, "hotCities", js.Array(value :_*))
     
     @scala.inline
-    def setHotCitiesVarargs(value: City*): Self = this.set("hotCities", js.Array(value :_*))
+    def setShowHotCities(value: Boolean): Self = StObject.set(x, "showHotCities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotCities(value: js.Array[City]): Self = this.set("hotCities", value.asInstanceOf[js.Any])
+    def setShowHotCitiesUndefined: Self = StObject.set(x, "showHotCities", js.undefined)
     
     @scala.inline
-    def deleteHotCities: Self = this.set("hotCities", js.undefined)
+    def setShowLocatedCity(value: Boolean): Self = StObject.set(x, "showLocatedCity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHotCities(value: Boolean): Self = this.set("showHotCities", value.asInstanceOf[js.Any])
+    def setShowLocatedCityUndefined: Self = StObject.set(x, "showLocatedCity", js.undefined)
     
     @scala.inline
-    def deleteShowHotCities: Self = this.set("showHotCities", js.undefined)
+    def setSuccess(value: /* result */ AdCode => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowLocatedCity(value: Boolean): Self = this.set("showLocatedCity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowLocatedCity: Self = this.set("showLocatedCity", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ AdCode => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1beta1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceDefinitionVersion describes a version for CRD.
   */
 @js.native
-trait CustomResourceDefinitionVersion extends js.Object {
+trait CustomResourceDefinitionVersion extends StObject {
   
   /**
     * additionalPrinterColumns specifies additional columns returned in Table output. See https://kubernetes.io/docs/reference/using-api/api-concepts/#receiving-resources-as-tables for details. Top-level and per-version columns are mutually exclusive. Per-version columns must not all be set to identical values (top-level columns should be used instead). If no top-level or per-version columns are specified, a single column displaying the age of the custom resource is used.
@@ -60,60 +61,48 @@ object CustomResourceDefinitionVersion {
   }
   
   @scala.inline
-  implicit class CustomResourceDefinitionVersionOps[Self <: CustomResourceDefinitionVersion] (val x: Self) extends AnyVal {
+  implicit class CustomResourceDefinitionVersionMutableBuilder[Self <: CustomResourceDefinitionVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalPrinterColumns(value: Input[js.Array[Input[CustomResourceColumnDefinition]]]): Self = StObject.set(x, "additionalPrinterColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalPrinterColumnsUndefined: Self = StObject.set(x, "additionalPrinterColumns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalPrinterColumnsVarargs(value: Input[CustomResourceColumnDefinition]*): Self = StObject.set(x, "additionalPrinterColumns", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDeprecated(value: Input[Boolean]): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServed(value: Input[Boolean]): Self = this.set("served", value.asInstanceOf[js.Any])
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def setStorage(value: Input[Boolean]): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setDeprecationWarning(value: Input[String]): Self = StObject.set(x, "deprecationWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalPrinterColumnsVarargs(value: Input[CustomResourceColumnDefinition]*): Self = this.set("additionalPrinterColumns", js.Array(value :_*))
+    def setDeprecationWarningUndefined: Self = StObject.set(x, "deprecationWarning", js.undefined)
     
     @scala.inline
-    def setAdditionalPrinterColumns(value: Input[js.Array[Input[CustomResourceColumnDefinition]]]): Self = this.set("additionalPrinterColumns", value.asInstanceOf[js.Any])
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalPrinterColumns: Self = this.set("additionalPrinterColumns", js.undefined)
+    def setSchema(value: Input[CustomResourceValidation]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecated(value: Input[Boolean]): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setServed(value: Input[Boolean]): Self = StObject.set(x, "served", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecationWarning(value: Input[String]): Self = this.set("deprecationWarning", value.asInstanceOf[js.Any])
+    def setStorage(value: Input[Boolean]): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeprecationWarning: Self = this.set("deprecationWarning", js.undefined)
+    def setSubresources(value: Input[CustomResourceSubresources]): Self = StObject.set(x, "subresources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: Input[CustomResourceValidation]): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
-    
-    @scala.inline
-    def setSubresources(value: Input[CustomResourceSubresources]): Self = this.set("subresources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubresources: Self = this.set("subresources", js.undefined)
+    def setSubresourcesUndefined: Self = StObject.set(x, "subresources", js.undefined)
   }
 }

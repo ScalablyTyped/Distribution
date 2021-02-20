@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketLevelPermissions extends js.Object {
+trait BucketLevelPermissions extends StObject {
   
   /**
     * Contains information on how Access Control Policies are applied to the bucket.
@@ -31,36 +32,24 @@ object BucketLevelPermissions {
   }
   
   @scala.inline
-  implicit class BucketLevelPermissionsOps[Self <: BucketLevelPermissions] (val x: Self) extends AnyVal {
+  implicit class BucketLevelPermissionsMutableBuilder[Self <: BucketLevelPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: AccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockPublicAccess(value: BlockPublicAccess): Self = StObject.set(x, "BlockPublicAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessControlList(value: AccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setBlockPublicAccessUndefined: Self = StObject.set(x, "BlockPublicAccess", js.undefined)
     
     @scala.inline
-    def deleteAccessControlList: Self = this.set("AccessControlList", js.undefined)
+    def setBucketPolicy(value: BucketPolicy): Self = StObject.set(x, "BucketPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockPublicAccess(value: BlockPublicAccess): Self = this.set("BlockPublicAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockPublicAccess: Self = this.set("BlockPublicAccess", js.undefined)
-    
-    @scala.inline
-    def setBucketPolicy(value: BucketPolicy): Self = this.set("BucketPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBucketPolicy: Self = this.set("BucketPolicy", js.undefined)
+    def setBucketPolicyUndefined: Self = StObject.set(x, "BucketPolicy", js.undefined)
   }
 }

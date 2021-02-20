@@ -9,13 +9,12 @@ import typings.unistUtilVisitParents.mod.Continue
 import typings.unistUtilVisitParents.mod.Exit
 import typings.unistUtilVisitParents.mod.Index
 import typings.unistUtilVisitParents.mod.Skip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("unist-util-visit", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Visit children of a tree
@@ -24,9 +23,17 @@ object mod extends js.Object {
     * @param visitor function to run for each node
     * @param reverse visit the tree in reverse, defaults to false
     */
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
   def apply(tree: Node, visitor: Visitor[Node]): Unit = js.native
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
   def apply(tree: Node, visitor: Visitor[Node], reverse: Boolean): Unit = js.native
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
   def apply[V /* <: Node */](tree: Node, test: js.Array[Test[_]], visitor: Visitor[V]): Unit = js.native
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
   def apply[V /* <: Node */](tree: Node, test: js.Array[Test[_]], visitor: Visitor[V], reverse: Boolean): Unit = js.native
   /**
     * Visit children of tree which pass a test
@@ -38,23 +45,43 @@ object mod extends js.Object {
     * @typeParam T tree node
     * @typeParam V node type found
     */
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
   def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V]): Unit = js.native
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
   def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V], reverse: Boolean): Unit = js.native
+  
+  @JSImport("unist-util-visit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Continue traversing as normal
     */
-  var CONTINUE: Continue = js.native
+  @JSImport("unist-util-visit", "CONTINUE")
+  @js.native
+  def CONTINUE: Continue = js.native
+  @scala.inline
+  def CONTINUE_=(x: Continue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUE")(x.asInstanceOf[js.Any])
   
   /**
     * Stop traversing immediately
     */
-  var EXIT: Exit = js.native
+  @JSImport("unist-util-visit", "EXIT")
+  @js.native
+  def EXIT: Exit = js.native
+  @scala.inline
+  def EXIT_=(x: Exit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXIT")(x.asInstanceOf[js.Any])
   
   /**
     * Do not traverse this node’s children
     */
-  var SKIP: Skip = js.native
+  @JSImport("unist-util-visit", "SKIP")
+  @js.native
+  def SKIP: Skip = js.native
+  @scala.inline
+  def SKIP_=(x: Skip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKIP")(x.asInstanceOf[js.Any])
   
   /**
     * Invoked when a node (matching test, if given) is found.

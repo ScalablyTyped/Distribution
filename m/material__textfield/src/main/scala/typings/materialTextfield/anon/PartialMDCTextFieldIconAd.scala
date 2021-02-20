@@ -2,13 +2,14 @@ package typings.materialTextfield.anon
 
 import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/icon/adapter.MDCTextFieldIconAdapter> */
 @js.native
-trait PartialMDCTextFieldIconAd extends js.Object {
+trait PartialMDCTextFieldIconAd extends StObject {
   
   var deregisterInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
@@ -37,60 +38,48 @@ object PartialMDCTextFieldIconAd {
   }
   
   @scala.inline
-  implicit class PartialMDCTextFieldIconAdOps[Self <: PartialMDCTextFieldIconAd] (val x: Self) extends AnyVal {
+  implicit class PartialMDCTextFieldIconAdMutableBuilder[Self <: PartialMDCTextFieldIconAd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterInteractionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeregisterInteractionHandlerUndefined: Self = StObject.set(x, "deregisterInteractionHandler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAttr(value: /* attr */ String => String | Null): Self = StObject.set(x, "getAttr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeregisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = this.set("deregisterInteractionHandler", js.Any.fromFunction2(value))
+    def setGetAttrUndefined: Self = StObject.set(x, "getAttr", js.undefined)
     
     @scala.inline
-    def deleteDeregisterInteractionHandler: Self = this.set("deregisterInteractionHandler", js.undefined)
+    def setNotifyIconAction(value: () => Unit): Self = StObject.set(x, "notifyIconAction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttr(value: /* attr */ String => String | Null): Self = this.set("getAttr", js.Any.fromFunction1(value))
+    def setNotifyIconActionUndefined: Self = StObject.set(x, "notifyIconAction", js.undefined)
     
     @scala.inline
-    def deleteGetAttr: Self = this.set("getAttr", js.undefined)
+    def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerInteractionHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNotifyIconAction(value: () => Unit): Self = this.set("notifyIconAction", js.Any.fromFunction0(value))
+    def setRegisterInteractionHandlerUndefined: Self = StObject.set(x, "registerInteractionHandler", js.undefined)
     
     @scala.inline
-    def deleteNotifyIconAction: Self = this.set("notifyIconAction", js.undefined)
+    def setRemoveAttr(value: /* attr */ String => Unit): Self = StObject.set(x, "removeAttr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterInteractionHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = this.set("registerInteractionHandler", js.Any.fromFunction2(value))
+    def setRemoveAttrUndefined: Self = StObject.set(x, "removeAttr", js.undefined)
     
     @scala.inline
-    def deleteRegisterInteractionHandler: Self = this.set("registerInteractionHandler", js.undefined)
+    def setSetAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "setAttr", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveAttr(value: /* attr */ String => Unit): Self = this.set("removeAttr", js.Any.fromFunction1(value))
+    def setSetAttrUndefined: Self = StObject.set(x, "setAttr", js.undefined)
     
     @scala.inline
-    def deleteRemoveAttr: Self = this.set("removeAttr", js.undefined)
+    def setSetContent(value: /* content */ String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAttr(value: (/* attr */ String, /* value */ String) => Unit): Self = this.set("setAttr", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSetAttr: Self = this.set("setAttr", js.undefined)
-    
-    @scala.inline
-    def setSetContent(value: /* content */ String => Unit): Self = this.set("setContent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetContent: Self = this.set("setContent", js.undefined)
+    def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
   }
 }

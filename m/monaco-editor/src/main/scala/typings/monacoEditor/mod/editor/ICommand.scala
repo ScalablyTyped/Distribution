@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.editor
 
 import typings.monacoEditor.mod.Selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICommand extends js.Object {
+trait ICommand extends StObject {
   
   /**
     * Compute the cursor state after the edit operations were applied.
@@ -35,24 +36,12 @@ object ICommand {
   }
   
   @scala.inline
-  implicit class ICommandOps[Self <: ICommand] (val x: Self) extends AnyVal {
+  implicit class ICommandMutableBuilder[Self <: ICommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeCursorState(value: (ITextModel, ICursorStateComputerData) => Selection): Self = StObject.set(x, "computeCursorState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComputeCursorState(value: (ITextModel, ICursorStateComputerData) => Selection): Self = this.set("computeCursorState", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetEditOperations(value: (ITextModel, IEditOperationBuilder) => Unit): Self = this.set("getEditOperations", js.Any.fromFunction2(value))
+    def setGetEditOperations(value: (ITextModel, IEditOperationBuilder) => Unit): Self = StObject.set(x, "getEditOperations", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.lex
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntentFollowUpPromptRejectionStatement extends js.Object {
+trait IntentFollowUpPromptRejectionStatement extends StObject {
   
   /**
     * A set of messages, each of which provides a message string and its type.
@@ -30,30 +31,18 @@ object IntentFollowUpPromptRejectionStatement {
   }
   
   @scala.inline
-  implicit class IntentFollowUpPromptRejectionStatementOps[Self <: IntentFollowUpPromptRejectionStatement] (val x: Self) extends AnyVal {
+  implicit class IntentFollowUpPromptRejectionStatementMutableBuilder[Self <: IntentFollowUpPromptRejectionStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: js.Array[IntentFollowUpPromptRejectionStatementMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesVarargs(value: IntentFollowUpPromptRejectionStatementMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseCard(value: String): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesVarargs(value: IntentFollowUpPromptRejectionStatementMessage*): Self = this.set("messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: js.Array[IntentFollowUpPromptRejectionStatementMessage]): Self = this.set("messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseCard(value: String): Self = this.set("responseCard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseCard: Self = this.set("responseCard", js.undefined)
+    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

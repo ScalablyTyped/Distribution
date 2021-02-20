@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRHitTestTrackableType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,57 +49,45 @@ object IWebXRHitTestOptions {
   }
   
   @scala.inline
-  implicit class IWebXRHitTestOptionsOps[Self <: IWebXRHitTestOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRHitTestOptionsMutableBuilder[Self <: IWebXRHitTestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisablePermanentHitTest(value: Boolean): Self = StObject.set(x, "disablePermanentHitTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisablePermanentHitTestUndefined: Self = StObject.set(x, "disablePermanentHitTest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableTransientHitTest(value: Boolean): Self = StObject.set(x, "enableTransientHitTest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePermanentHitTest(value: Boolean): Self = this.set("disablePermanentHitTest", value.asInstanceOf[js.Any])
+    def setEnableTransientHitTestUndefined: Self = StObject.set(x, "enableTransientHitTest", js.undefined)
     
     @scala.inline
-    def deleteDisablePermanentHitTest: Self = this.set("disablePermanentHitTest", js.undefined)
+    def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTransientHitTest(value: Boolean): Self = this.set("enableTransientHitTest", value.asInstanceOf[js.Any])
+    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
     @scala.inline
-    def deleteEnableTransientHitTest: Self = this.set("enableTransientHitTest", js.undefined)
+    def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setEntityTypesVarargs(value: XRHitTestTrackableType*): Self = this.set("entityTypes", js.Array(value :_*))
+    def setOffsetRay(value: Vector3): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityTypes(value: js.Array[XRHitTestTrackableType]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
+    def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
     
     @scala.inline
-    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
+    def setTransientOffsetRay(value: Vector3): Self = StObject.set(x, "transientOffsetRay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRay(value: Vector3): Self = this.set("offsetRay", value.asInstanceOf[js.Any])
+    def setTransientOffsetRayUndefined: Self = StObject.set(x, "transientOffsetRay", js.undefined)
     
     @scala.inline
-    def deleteOffsetRay: Self = this.set("offsetRay", js.undefined)
+    def setUseReferenceSpace(value: Boolean): Self = StObject.set(x, "useReferenceSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransientOffsetRay(value: Vector3): Self = this.set("transientOffsetRay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransientOffsetRay: Self = this.set("transientOffsetRay", js.undefined)
-    
-    @scala.inline
-    def setUseReferenceSpace(value: Boolean): Self = this.set("useReferenceSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseReferenceSpace: Self = this.set("useReferenceSpace", js.undefined)
+    def setUseReferenceSpaceUndefined: Self = StObject.set(x, "useReferenceSpace", js.undefined)
   }
 }

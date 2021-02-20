@@ -1,9 +1,8 @@
 package typings.chromeApps
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.chromeApps.anon.InstantiableAudioContext
 import typings.std.History
 import typings.std.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,12 +21,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see[Docs]{@link https://developer.chrome.com/apps/api_other}
   */
 @js.native
-trait ChromeWindow extends js.Object {
+trait ChromeWindow extends StObject {
   
   ///
   /// Other APIs
   ///
-  var AudioContext: InstantiableAudioContext with Instantiable0[typings.std.global.AudioContext] = js.native
+  var AudioContext: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AudioContext */ js.Any = js.native
   
   ///
   /// Disabled Web Features

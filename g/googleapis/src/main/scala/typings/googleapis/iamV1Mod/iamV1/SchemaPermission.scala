@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A permission which can be included by a role.
   */
 @js.native
-trait SchemaPermission extends js.Object {
+trait SchemaPermission extends StObject {
   
   /**
     * The service API associated with the permission is not enabled.
@@ -54,60 +55,48 @@ object SchemaPermission {
   }
   
   @scala.inline
-  implicit class SchemaPermissionOps[Self <: SchemaPermission] (val x: Self) extends AnyVal {
+  implicit class SchemaPermissionMutableBuilder[Self <: SchemaPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiDisabled(value: Boolean): Self = StObject.set(x, "apiDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiDisabledUndefined: Self = StObject.set(x, "apiDisabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomRolesSupportLevel(value: String): Self = StObject.set(x, "customRolesSupportLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiDisabled(value: Boolean): Self = this.set("apiDisabled", value.asInstanceOf[js.Any])
+    def setCustomRolesSupportLevelUndefined: Self = StObject.set(x, "customRolesSupportLevel", js.undefined)
     
     @scala.inline
-    def deleteApiDisabled: Self = this.set("apiDisabled", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomRolesSupportLevel(value: String): Self = this.set("customRolesSupportLevel", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomRolesSupportLevel: Self = this.set("customRolesSupportLevel", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOnlyInPredefinedRoles(value: Boolean): Self = StObject.set(x, "onlyInPredefinedRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnlyInPredefinedRolesUndefined: Self = StObject.set(x, "onlyInPredefinedRoles", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlyInPredefinedRoles(value: Boolean): Self = this.set("onlyInPredefinedRoles", value.asInstanceOf[js.Any])
+    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
     @scala.inline
-    def deleteOnlyInPredefinedRoles: Self = this.set("onlyInPredefinedRoles", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStage: Self = this.set("stage", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

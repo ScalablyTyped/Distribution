@@ -1,15 +1,18 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.igResponseErrorMod.IgResponseError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/errors/ig-sentry-block.error", JSImport.Namespace)
-@js.native
-object igSentryBlockErrorMod extends js.Object {
+object igSentryBlockErrorMod {
   
+  @JSImport("instagram-private-api/dist/errors/ig-sentry-block.error", "IgSentryBlockError")
   @js.native
-  class IgSentryBlockError ()
-    extends IgResponseError[js.Any]
+  class IgSentryBlockError protected ()
+    extends IgResponseError[js.Any] {
+    def this(response: IgResponse[_]) = this()
+  }
 }

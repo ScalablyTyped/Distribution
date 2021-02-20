@@ -2,21 +2,21 @@ package typings.plottable
 
 import typings.plottable.scalesMod.IIncludedValuesProvider
 import typings.plottable.scalesMod.ITransformableScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/scales/scale", JSImport.Namespace)
-@js.native
-object scaleMod extends js.Object {
+object scaleMod {
   
+  @JSImport("plottable/build/src/scales/scale", "Scale")
   @js.native
   /**
     * A Scale is a function (in the mathematical sense) that maps values from a domain to a range.
     *
     * @constructor
     */
-  class Scale[D, R] () extends js.Object {
+  class Scale[D, R] () extends StObject {
     
     var _autoDomainAutomatically: js.Any = js.native
     

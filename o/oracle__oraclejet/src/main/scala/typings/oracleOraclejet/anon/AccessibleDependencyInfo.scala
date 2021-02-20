@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibleDependencyInfo extends js.Object {
+trait AccessibleDependencyInfo extends StObject {
   
   var accessibleDependencyInfo: js.UndefOr[String] = js.native
   
@@ -102,276 +103,264 @@ object AccessibleDependencyInfo {
   }
   
   @scala.inline
-  implicit class AccessibleDependencyInfoOps[Self <: AccessibleDependencyInfo] (val x: Self) extends AnyVal {
+  implicit class AccessibleDependencyInfoMutableBuilder[Self <: AccessibleDependencyInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleDependencyInfo(value: String): Self = StObject.set(x, "accessibleDependencyInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleDependencyInfoUndefined: Self = StObject.set(x, "accessibleDependencyInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessiblePredecessorInfo(value: String): Self = StObject.set(x, "accessiblePredecessorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleDependencyInfo(value: String): Self = this.set("accessibleDependencyInfo", value.asInstanceOf[js.Any])
+    def setAccessiblePredecessorInfoUndefined: Self = StObject.set(x, "accessiblePredecessorInfo", js.undefined)
     
     @scala.inline
-    def deleteAccessibleDependencyInfo: Self = this.set("accessibleDependencyInfo", js.undefined)
+    def setAccessibleSuccessorInfo(value: String): Self = StObject.set(x, "accessibleSuccessorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessiblePredecessorInfo(value: String): Self = this.set("accessiblePredecessorInfo", value.asInstanceOf[js.Any])
+    def setAccessibleSuccessorInfoUndefined: Self = StObject.set(x, "accessibleSuccessorInfo", js.undefined)
     
     @scala.inline
-    def deleteAccessiblePredecessorInfo: Self = this.set("accessiblePredecessorInfo", js.undefined)
+    def setAccessibleTaskTypeMilestone(value: String): Self = StObject.set(x, "accessibleTaskTypeMilestone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleSuccessorInfo(value: String): Self = this.set("accessibleSuccessorInfo", value.asInstanceOf[js.Any])
+    def setAccessibleTaskTypeMilestoneUndefined: Self = StObject.set(x, "accessibleTaskTypeMilestone", js.undefined)
     
     @scala.inline
-    def deleteAccessibleSuccessorInfo: Self = this.set("accessibleSuccessorInfo", js.undefined)
+    def setAccessibleTaskTypeSummary(value: String): Self = StObject.set(x, "accessibleTaskTypeSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleTaskTypeMilestone(value: String): Self = this.set("accessibleTaskTypeMilestone", value.asInstanceOf[js.Any])
+    def setAccessibleTaskTypeSummaryUndefined: Self = StObject.set(x, "accessibleTaskTypeSummary", js.undefined)
     
     @scala.inline
-    def deleteAccessibleTaskTypeMilestone: Self = this.set("accessibleTaskTypeMilestone", js.undefined)
+    def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleTaskTypeSummary(value: String): Self = this.set("accessibleTaskTypeSummary", value.asInstanceOf[js.Any])
+    def setComponentNameUndefined: Self = StObject.set(x, "componentName", js.undefined)
     
     @scala.inline
-    def deleteAccessibleTaskTypeSummary: Self = this.set("accessibleTaskTypeSummary", js.undefined)
+    def setFinishFinishDependencyAriaDesc(value: String): Self = StObject.set(x, "finishFinishDependencyAriaDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentName(value: String): Self = this.set("componentName", value.asInstanceOf[js.Any])
+    def setFinishFinishDependencyAriaDescUndefined: Self = StObject.set(x, "finishFinishDependencyAriaDesc", js.undefined)
     
     @scala.inline
-    def deleteComponentName: Self = this.set("componentName", js.undefined)
+    def setFinishStartDependencyAriaDesc(value: String): Self = StObject.set(x, "finishStartDependencyAriaDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishFinishDependencyAriaDesc(value: String): Self = this.set("finishFinishDependencyAriaDesc", value.asInstanceOf[js.Any])
+    def setFinishStartDependencyAriaDescUndefined: Self = StObject.set(x, "finishStartDependencyAriaDesc", js.undefined)
     
     @scala.inline
-    def deleteFinishFinishDependencyAriaDesc: Self = this.set("finishFinishDependencyAriaDesc", js.undefined)
+    def setLabelAndValue(value: String): Self = StObject.set(x, "labelAndValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinishStartDependencyAriaDesc(value: String): Self = this.set("finishStartDependencyAriaDesc", value.asInstanceOf[js.Any])
+    def setLabelAndValueUndefined: Self = StObject.set(x, "labelAndValue", js.undefined)
     
     @scala.inline
-    def deleteFinishStartDependencyAriaDesc: Self = this.set("finishStartDependencyAriaDesc", js.undefined)
+    def setLabelBaselineDate(value: String): Self = StObject.set(x, "labelBaselineDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAndValue(value: String): Self = this.set("labelAndValue", value.asInstanceOf[js.Any])
+    def setLabelBaselineDateUndefined: Self = StObject.set(x, "labelBaselineDate", js.undefined)
     
     @scala.inline
-    def deleteLabelAndValue: Self = this.set("labelAndValue", js.undefined)
+    def setLabelBaselineEnd(value: String): Self = StObject.set(x, "labelBaselineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelBaselineDate(value: String): Self = this.set("labelBaselineDate", value.asInstanceOf[js.Any])
+    def setLabelBaselineEndUndefined: Self = StObject.set(x, "labelBaselineEnd", js.undefined)
     
     @scala.inline
-    def deleteLabelBaselineDate: Self = this.set("labelBaselineDate", js.undefined)
+    def setLabelBaselineStart(value: String): Self = StObject.set(x, "labelBaselineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelBaselineEnd(value: String): Self = this.set("labelBaselineEnd", value.asInstanceOf[js.Any])
+    def setLabelBaselineStartUndefined: Self = StObject.set(x, "labelBaselineStart", js.undefined)
     
     @scala.inline
-    def deleteLabelBaselineEnd: Self = this.set("labelBaselineEnd", js.undefined)
+    def setLabelClearSelection(value: String): Self = StObject.set(x, "labelClearSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelBaselineStart(value: String): Self = this.set("labelBaselineStart", value.asInstanceOf[js.Any])
+    def setLabelClearSelectionUndefined: Self = StObject.set(x, "labelClearSelection", js.undefined)
     
     @scala.inline
-    def deleteLabelBaselineStart: Self = this.set("labelBaselineStart", js.undefined)
+    def setLabelCountWithTotal(value: String): Self = StObject.set(x, "labelCountWithTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelClearSelection(value: String): Self = this.set("labelClearSelection", value.asInstanceOf[js.Any])
+    def setLabelCountWithTotalUndefined: Self = StObject.set(x, "labelCountWithTotal", js.undefined)
     
     @scala.inline
-    def deleteLabelClearSelection: Self = this.set("labelClearSelection", js.undefined)
+    def setLabelDataVisualization(value: String): Self = StObject.set(x, "labelDataVisualization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCountWithTotal(value: String): Self = this.set("labelCountWithTotal", value.asInstanceOf[js.Any])
+    def setLabelDataVisualizationUndefined: Self = StObject.set(x, "labelDataVisualization", js.undefined)
     
     @scala.inline
-    def deleteLabelCountWithTotal: Self = this.set("labelCountWithTotal", js.undefined)
+    def setLabelDate(value: String): Self = StObject.set(x, "labelDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDataVisualization(value: String): Self = this.set("labelDataVisualization", value.asInstanceOf[js.Any])
+    def setLabelDateUndefined: Self = StObject.set(x, "labelDate", js.undefined)
     
     @scala.inline
-    def deleteLabelDataVisualization: Self = this.set("labelDataVisualization", js.undefined)
+    def setLabelEnd(value: String): Self = StObject.set(x, "labelEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelDate(value: String): Self = this.set("labelDate", value.asInstanceOf[js.Any])
+    def setLabelEndUndefined: Self = StObject.set(x, "labelEnd", js.undefined)
     
     @scala.inline
-    def deleteLabelDate: Self = this.set("labelDate", js.undefined)
+    def setLabelInvalidData(value: String): Self = StObject.set(x, "labelInvalidData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelEnd(value: String): Self = this.set("labelEnd", value.asInstanceOf[js.Any])
+    def setLabelInvalidDataUndefined: Self = StObject.set(x, "labelInvalidData", js.undefined)
     
     @scala.inline
-    def deleteLabelEnd: Self = this.set("labelEnd", js.undefined)
+    def setLabelLabel(value: String): Self = StObject.set(x, "labelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInvalidData(value: String): Self = this.set("labelInvalidData", value.asInstanceOf[js.Any])
+    def setLabelLabelUndefined: Self = StObject.set(x, "labelLabel", js.undefined)
     
     @scala.inline
-    def deleteLabelInvalidData: Self = this.set("labelInvalidData", js.undefined)
+    def setLabelMoveBy(value: String): Self = StObject.set(x, "labelMoveBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelLabel(value: String): Self = this.set("labelLabel", value.asInstanceOf[js.Any])
+    def setLabelMoveByUndefined: Self = StObject.set(x, "labelMoveBy", js.undefined)
     
     @scala.inline
-    def deleteLabelLabel: Self = this.set("labelLabel", js.undefined)
+    def setLabelNoData(value: String): Self = StObject.set(x, "labelNoData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMoveBy(value: String): Self = this.set("labelMoveBy", value.asInstanceOf[js.Any])
+    def setLabelNoDataUndefined: Self = StObject.set(x, "labelNoData", js.undefined)
     
     @scala.inline
-    def deleteLabelMoveBy: Self = this.set("labelMoveBy", js.undefined)
+    def setLabelProgress(value: String): Self = StObject.set(x, "labelProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelNoData(value: String): Self = this.set("labelNoData", value.asInstanceOf[js.Any])
+    def setLabelProgressUndefined: Self = StObject.set(x, "labelProgress", js.undefined)
     
     @scala.inline
-    def deleteLabelNoData: Self = this.set("labelNoData", js.undefined)
+    def setLabelRow(value: String): Self = StObject.set(x, "labelRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelProgress(value: String): Self = this.set("labelProgress", value.asInstanceOf[js.Any])
+    def setLabelRowUndefined: Self = StObject.set(x, "labelRow", js.undefined)
     
     @scala.inline
-    def deleteLabelProgress: Self = this.set("labelProgress", js.undefined)
+    def setLabelStart(value: String): Self = StObject.set(x, "labelStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelRow(value: String): Self = this.set("labelRow", value.asInstanceOf[js.Any])
+    def setLabelStartUndefined: Self = StObject.set(x, "labelStart", js.undefined)
     
     @scala.inline
-    def deleteLabelRow: Self = this.set("labelRow", js.undefined)
+    def setStartFinishDependencyAriaDesc(value: String): Self = StObject.set(x, "startFinishDependencyAriaDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStart(value: String): Self = this.set("labelStart", value.asInstanceOf[js.Any])
+    def setStartFinishDependencyAriaDescUndefined: Self = StObject.set(x, "startFinishDependencyAriaDesc", js.undefined)
     
     @scala.inline
-    def deleteLabelStart: Self = this.set("labelStart", js.undefined)
+    def setStartStartDependencyAriaDesc(value: String): Self = StObject.set(x, "startStartDependencyAriaDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartFinishDependencyAriaDesc(value: String): Self = this.set("startFinishDependencyAriaDesc", value.asInstanceOf[js.Any])
+    def setStartStartDependencyAriaDescUndefined: Self = StObject.set(x, "startStartDependencyAriaDesc", js.undefined)
     
     @scala.inline
-    def deleteStartFinishDependencyAriaDesc: Self = this.set("startFinishDependencyAriaDesc", js.undefined)
+    def setStateCollapsed(value: String): Self = StObject.set(x, "stateCollapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartStartDependencyAriaDesc(value: String): Self = this.set("startStartDependencyAriaDesc", value.asInstanceOf[js.Any])
+    def setStateCollapsedUndefined: Self = StObject.set(x, "stateCollapsed", js.undefined)
     
     @scala.inline
-    def deleteStartStartDependencyAriaDesc: Self = this.set("startStartDependencyAriaDesc", js.undefined)
+    def setStateDrillable(value: String): Self = StObject.set(x, "stateDrillable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateCollapsed(value: String): Self = this.set("stateCollapsed", value.asInstanceOf[js.Any])
+    def setStateDrillableUndefined: Self = StObject.set(x, "stateDrillable", js.undefined)
     
     @scala.inline
-    def deleteStateCollapsed: Self = this.set("stateCollapsed", js.undefined)
+    def setStateExpanded(value: String): Self = StObject.set(x, "stateExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateDrillable(value: String): Self = this.set("stateDrillable", value.asInstanceOf[js.Any])
+    def setStateExpandedUndefined: Self = StObject.set(x, "stateExpanded", js.undefined)
     
     @scala.inline
-    def deleteStateDrillable: Self = this.set("stateDrillable", js.undefined)
+    def setStateHidden(value: String): Self = StObject.set(x, "stateHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateExpanded(value: String): Self = this.set("stateExpanded", value.asInstanceOf[js.Any])
+    def setStateHiddenUndefined: Self = StObject.set(x, "stateHidden", js.undefined)
     
     @scala.inline
-    def deleteStateExpanded: Self = this.set("stateExpanded", js.undefined)
+    def setStateIsolated(value: String): Self = StObject.set(x, "stateIsolated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateHidden(value: String): Self = this.set("stateHidden", value.asInstanceOf[js.Any])
+    def setStateIsolatedUndefined: Self = StObject.set(x, "stateIsolated", js.undefined)
     
     @scala.inline
-    def deleteStateHidden: Self = this.set("stateHidden", js.undefined)
+    def setStateMaximized(value: String): Self = StObject.set(x, "stateMaximized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateIsolated(value: String): Self = this.set("stateIsolated", value.asInstanceOf[js.Any])
+    def setStateMaximizedUndefined: Self = StObject.set(x, "stateMaximized", js.undefined)
     
     @scala.inline
-    def deleteStateIsolated: Self = this.set("stateIsolated", js.undefined)
+    def setStateMinimized(value: String): Self = StObject.set(x, "stateMinimized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateMaximized(value: String): Self = this.set("stateMaximized", value.asInstanceOf[js.Any])
+    def setStateMinimizedUndefined: Self = StObject.set(x, "stateMinimized", js.undefined)
     
     @scala.inline
-    def deleteStateMaximized: Self = this.set("stateMaximized", js.undefined)
+    def setStateSelected(value: String): Self = StObject.set(x, "stateSelected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateMinimized(value: String): Self = this.set("stateMinimized", value.asInstanceOf[js.Any])
+    def setStateSelectedUndefined: Self = StObject.set(x, "stateSelected", js.undefined)
     
     @scala.inline
-    def deleteStateMinimized: Self = this.set("stateMinimized", js.undefined)
+    def setStateUnselected(value: String): Self = StObject.set(x, "stateUnselected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateSelected(value: String): Self = this.set("stateSelected", value.asInstanceOf[js.Any])
+    def setStateUnselectedUndefined: Self = StObject.set(x, "stateUnselected", js.undefined)
     
     @scala.inline
-    def deleteStateSelected: Self = this.set("stateSelected", js.undefined)
+    def setStateVisible(value: String): Self = StObject.set(x, "stateVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateUnselected(value: String): Self = this.set("stateUnselected", value.asInstanceOf[js.Any])
+    def setStateVisibleUndefined: Self = StObject.set(x, "stateVisible", js.undefined)
     
     @scala.inline
-    def deleteStateUnselected: Self = this.set("stateUnselected", js.undefined)
+    def setTaskMoveCancelled(value: String): Self = StObject.set(x, "taskMoveCancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateVisible(value: String): Self = this.set("stateVisible", value.asInstanceOf[js.Any])
+    def setTaskMoveCancelledUndefined: Self = StObject.set(x, "taskMoveCancelled", js.undefined)
     
     @scala.inline
-    def deleteStateVisible: Self = this.set("stateVisible", js.undefined)
+    def setTaskMoveFinalized(value: String): Self = StObject.set(x, "taskMoveFinalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskMoveCancelled(value: String): Self = this.set("taskMoveCancelled", value.asInstanceOf[js.Any])
+    def setTaskMoveFinalizedUndefined: Self = StObject.set(x, "taskMoveFinalized", js.undefined)
     
     @scala.inline
-    def deleteTaskMoveCancelled: Self = this.set("taskMoveCancelled", js.undefined)
+    def setTaskMoveInitiated(value: String): Self = StObject.set(x, "taskMoveInitiated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskMoveFinalized(value: String): Self = this.set("taskMoveFinalized", value.asInstanceOf[js.Any])
+    def setTaskMoveInitiatedInstruction(value: String): Self = StObject.set(x, "taskMoveInitiatedInstruction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTaskMoveFinalized: Self = this.set("taskMoveFinalized", js.undefined)
+    def setTaskMoveInitiatedInstructionUndefined: Self = StObject.set(x, "taskMoveInitiatedInstruction", js.undefined)
     
     @scala.inline
-    def setTaskMoveInitiated(value: String): Self = this.set("taskMoveInitiated", value.asInstanceOf[js.Any])
+    def setTaskMoveInitiatedUndefined: Self = StObject.set(x, "taskMoveInitiated", js.undefined)
     
     @scala.inline
-    def deleteTaskMoveInitiated: Self = this.set("taskMoveInitiated", js.undefined)
+    def setTaskMoveSelectionInfo(value: String): Self = StObject.set(x, "taskMoveSelectionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskMoveInitiatedInstruction(value: String): Self = this.set("taskMoveInitiatedInstruction", value.asInstanceOf[js.Any])
+    def setTaskMoveSelectionInfoUndefined: Self = StObject.set(x, "taskMoveSelectionInfo", js.undefined)
     
     @scala.inline
-    def deleteTaskMoveInitiatedInstruction: Self = this.set("taskMoveInitiatedInstruction", js.undefined)
+    def setTooltipZoomIn(value: String): Self = StObject.set(x, "tooltipZoomIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskMoveSelectionInfo(value: String): Self = this.set("taskMoveSelectionInfo", value.asInstanceOf[js.Any])
+    def setTooltipZoomInUndefined: Self = StObject.set(x, "tooltipZoomIn", js.undefined)
     
     @scala.inline
-    def deleteTaskMoveSelectionInfo: Self = this.set("taskMoveSelectionInfo", js.undefined)
+    def setTooltipZoomOut(value: String): Self = StObject.set(x, "tooltipZoomOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipZoomIn(value: String): Self = this.set("tooltipZoomIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipZoomIn: Self = this.set("tooltipZoomIn", js.undefined)
-    
-    @scala.inline
-    def setTooltipZoomOut(value: String): Self = this.set("tooltipZoomOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltipZoomOut: Self = this.set("tooltipZoomOut", js.undefined)
+    def setTooltipZoomOutUndefined: Self = StObject.set(x, "tooltipZoomOut", js.undefined)
   }
 }

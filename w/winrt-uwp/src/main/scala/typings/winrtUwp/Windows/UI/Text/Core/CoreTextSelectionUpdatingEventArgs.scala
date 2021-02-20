@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.UI.Text.Core
 
 import typings.winrtUwp.Windows.Foundation.Deferral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the SelectionUpdating event. */
 @js.native
-trait CoreTextSelectionUpdatingEventArgs extends js.Object {
+trait CoreTextSelectionUpdatingEventArgs extends StObject {
   
   /**
     * Requests that the selection update operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
@@ -38,30 +39,18 @@ object CoreTextSelectionUpdatingEventArgs {
   }
   
   @scala.inline
-  implicit class CoreTextSelectionUpdatingEventArgsOps[Self <: CoreTextSelectionUpdatingEventArgs] (val x: Self) extends AnyVal {
+  implicit class CoreTextSelectionUpdatingEventArgsMutableBuilder[Self <: CoreTextSelectionUpdatingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResult(value: CoreTextSelectionUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = this.set("isCanceled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResult(value: CoreTextSelectionUpdatingResult): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelection(value: CoreTextRange): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSelection(value: CoreTextRange): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

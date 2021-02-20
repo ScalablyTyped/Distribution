@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Storage.Provider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileUpdateStatus extends js.Object
+sealed trait FileUpdateStatus extends StObject
 /** Describes the status of a file update request. */
 @JSGlobal("Windows.Storage.Provider.FileUpdateStatus")
 @js.native
-object FileUpdateStatus extends js.Object {
+object FileUpdateStatus extends StObject {
   
   /** The file update was completed successfully. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Artifactsurl extends js.Object {
+trait Artifactsurl extends StObject {
   
   var artifacts_url: String = js.native
   
@@ -89,93 +90,81 @@ object Artifactsurl {
   }
   
   @scala.inline
-  implicit class ArtifactsurlOps[Self <: Artifactsurl] (val x: Self) extends AnyVal {
+  implicit class ArtifactsurlMutableBuilder[Self <: Artifactsurl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts_url(value: String): Self = StObject.set(x, "artifacts_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancel_url(value: String): Self = StObject.set(x, "cancel_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheck_suite_url(value: String): Self = StObject.set(x, "check_suite_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts_url(value: String): Self = this.set("artifacts_url", value.asInstanceOf[js.Any])
+    def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel_url(value: String): Self = this.set("cancel_url", value.asInstanceOf[js.Any])
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck_suite_url(value: String): Self = this.set("check_suite_url", value.asInstanceOf[js.Any])
+    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConclusion(value: String): Self = this.set("conclusion", value.asInstanceOf[js.Any])
+    def setHead_branch(value: String): Self = StObject.set(x, "head_branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setHead_commit(value: Author): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: String): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setHead_repository(value: Assigneesurl): Self = StObject.set(x, "head_repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead_branch(value: String): Self = this.set("head_branch", value.asInstanceOf[js.Any])
+    def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead_commit(value: Author): Self = this.set("head_commit", value.asInstanceOf[js.Any])
+    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead_repository(value: Assigneesurl): Self = this.set("head_repository", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead_sha(value: String): Self = this.set("head_sha", value.asInstanceOf[js.Any])
+    def setJobs_url(value: String): Self = StObject.set(x, "jobs_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml_url(value: String): Self = this.set("html_url", value.asInstanceOf[js.Any])
+    def setLogs_url(value: String): Self = StObject.set(x, "logs_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobs_url(value: String): Self = this.set("jobs_url", value.asInstanceOf[js.Any])
+    def setPull_requests(value: js.Array[_]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs_url(value: String): Self = this.set("logs_url", value.asInstanceOf[js.Any])
+    def setPull_requestsVarargs(value: js.Any*): Self = StObject.set(x, "pull_requests", js.Array(value :_*))
     
     @scala.inline
-    def setNode_id(value: String): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    def setRepository(value: Archiveurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_requestsVarargs(value: js.Any*): Self = this.set("pull_requests", js.Array(value :_*))
+    def setRerun_url(value: String): Self = StObject.set(x, "rerun_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPull_requests(value: js.Array[_]): Self = this.set("pull_requests", value.asInstanceOf[js.Any])
+    def setRun_number(value: Double): Self = StObject.set(x, "run_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: Archiveurl): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRerun_url(value: String): Self = this.set("rerun_url", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun_number(value: Double): Self = this.set("run_number", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflow_id(value: Double): Self = this.set("workflow_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflow_url(value: String): Self = this.set("workflow_url", value.asInstanceOf[js.Any])
+    def setWorkflow_url(value: String): Self = StObject.set(x, "workflow_url", value.asInstanceOf[js.Any])
   }
 }

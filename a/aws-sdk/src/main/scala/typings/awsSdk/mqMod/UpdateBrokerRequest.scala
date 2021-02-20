@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateBrokerRequest extends js.Object {
+trait UpdateBrokerRequest extends StObject {
   
   /**
     * The authentication strategy used to secure the broker.
@@ -61,72 +62,60 @@ object UpdateBrokerRequest {
   }
   
   @scala.inline
-  implicit class UpdateBrokerRequestOps[Self <: UpdateBrokerRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateBrokerRequestMutableBuilder[Self <: UpdateBrokerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "AuthenticationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthenticationStrategyUndefined: Self = StObject.set(x, "AuthenticationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMinorVersionUpgrade(value: boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
     @scala.inline
-    def setAuthenticationStrategy(value: AuthenticationStrategy): Self = this.set("AuthenticationStrategy", value.asInstanceOf[js.Any])
+    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthenticationStrategy: Self = this.set("AuthenticationStrategy", js.undefined)
+    def setConfiguration(value: ConfigurationId): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMinorVersionUpgrade(value: boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
     @scala.inline
-    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    def setEngineVersion(value: string): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: ConfigurationId): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
+    def setHostInstanceType(value: string): Self = StObject.set(x, "HostInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: string): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setHostInstanceTypeUndefined: Self = StObject.set(x, "HostInstanceType", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setLdapServerMetadata(value: LdapServerMetadataInput): Self = StObject.set(x, "LdapServerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostInstanceType(value: string): Self = this.set("HostInstanceType", value.asInstanceOf[js.Any])
+    def setLdapServerMetadataUndefined: Self = StObject.set(x, "LdapServerMetadata", js.undefined)
     
     @scala.inline
-    def deleteHostInstanceType: Self = this.set("HostInstanceType", js.undefined)
+    def setLogs(value: Logs): Self = StObject.set(x, "Logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLdapServerMetadata(value: LdapServerMetadataInput): Self = this.set("LdapServerMetadata", value.asInstanceOf[js.Any])
+    def setLogsUndefined: Self = StObject.set(x, "Logs", js.undefined)
     
     @scala.inline
-    def deleteLdapServerMetadata: Self = this.set("LdapServerMetadata", js.undefined)
+    def setSecurityGroups(value: listOfString): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: Logs): Self = this.set("Logs", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteLogs: Self = this.set("Logs", js.undefined)
-    
-    @scala.inline
-    def setSecurityGroupsVarargs(value: string*): Self = this.set("SecurityGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityGroups(value: listOfString): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
   }
 }

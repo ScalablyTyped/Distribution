@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectFacesResponse extends js.Object {
+trait DetectFacesResponse extends StObject {
   
   /**
     * Details of each face found in the image. 
@@ -26,33 +27,21 @@ object DetectFacesResponse {
   }
   
   @scala.inline
-  implicit class DetectFacesResponseOps[Self <: DetectFacesResponse] (val x: Self) extends AnyVal {
+  implicit class DetectFacesResponseMutableBuilder[Self <: DetectFacesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFaceDetails(value: FaceDetailList): Self = StObject.set(x, "FaceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFaceDetailsUndefined: Self = StObject.set(x, "FaceDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceDetailsVarargs(value: FaceDetail*): Self = StObject.set(x, "FaceDetails", js.Array(value :_*))
     
     @scala.inline
-    def setFaceDetailsVarargs(value: FaceDetail*): Self = this.set("FaceDetails", js.Array(value :_*))
+    def setOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "OrientationCorrection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceDetails(value: FaceDetailList): Self = this.set("FaceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceDetails: Self = this.set("FaceDetails", js.undefined)
-    
-    @scala.inline
-    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
+    def setOrientationCorrectionUndefined: Self = StObject.set(x, "OrientationCorrection", js.undefined)
   }
 }

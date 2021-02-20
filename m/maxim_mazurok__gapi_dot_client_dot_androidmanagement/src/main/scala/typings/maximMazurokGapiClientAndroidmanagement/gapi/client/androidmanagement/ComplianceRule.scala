@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceRule extends js.Object {
+trait ComplianceRule extends StObject {
   
   /** A condition which is satisfied if the Android Framework API level on the device doesn't meet a minimum requirement. */
   var apiLevelCondition: js.UndefOr[ApiLevelCondition] = js.native
@@ -31,45 +32,33 @@ object ComplianceRule {
   }
   
   @scala.inline
-  implicit class ComplianceRuleOps[Self <: ComplianceRule] (val x: Self) extends AnyVal {
+  implicit class ComplianceRuleMutableBuilder[Self <: ComplianceRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiLevelCondition(value: ApiLevelCondition): Self = StObject.set(x, "apiLevelCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiLevelConditionUndefined: Self = StObject.set(x, "apiLevelCondition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableApps(value: Boolean): Self = StObject.set(x, "disableApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiLevelCondition(value: ApiLevelCondition): Self = this.set("apiLevelCondition", value.asInstanceOf[js.Any])
+    def setDisableAppsUndefined: Self = StObject.set(x, "disableApps", js.undefined)
     
     @scala.inline
-    def deleteApiLevelCondition: Self = this.set("apiLevelCondition", js.undefined)
+    def setNonComplianceDetailCondition(value: NonComplianceDetailCondition): Self = StObject.set(x, "nonComplianceDetailCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableApps(value: Boolean): Self = this.set("disableApps", value.asInstanceOf[js.Any])
+    def setNonComplianceDetailConditionUndefined: Self = StObject.set(x, "nonComplianceDetailCondition", js.undefined)
     
     @scala.inline
-    def deleteDisableApps: Self = this.set("disableApps", js.undefined)
+    def setPackageNamesToDisable(value: js.Array[String]): Self = StObject.set(x, "packageNamesToDisable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonComplianceDetailCondition(value: NonComplianceDetailCondition): Self = this.set("nonComplianceDetailCondition", value.asInstanceOf[js.Any])
+    def setPackageNamesToDisableUndefined: Self = StObject.set(x, "packageNamesToDisable", js.undefined)
     
     @scala.inline
-    def deleteNonComplianceDetailCondition: Self = this.set("nonComplianceDetailCondition", js.undefined)
-    
-    @scala.inline
-    def setPackageNamesToDisableVarargs(value: String*): Self = this.set("packageNamesToDisable", js.Array(value :_*))
-    
-    @scala.inline
-    def setPackageNamesToDisable(value: js.Array[String]): Self = this.set("packageNamesToDisable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageNamesToDisable: Self = this.set("packageNamesToDisable", js.undefined)
+    def setPackageNamesToDisableVarargs(value: String*): Self = StObject.set(x, "packageNamesToDisable", js.Array(value :_*))
   }
 }

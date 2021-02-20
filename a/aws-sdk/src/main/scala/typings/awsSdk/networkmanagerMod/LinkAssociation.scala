@@ -1,11 +1,12 @@
 package typings.awsSdk.networkmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkAssociation extends js.Object {
+trait LinkAssociation extends StObject {
   
   /**
     * The device ID for the link association.
@@ -36,42 +37,30 @@ object LinkAssociation {
   }
   
   @scala.inline
-  implicit class LinkAssociationOps[Self <: LinkAssociation] (val x: Self) extends AnyVal {
+  implicit class LinkAssociationMutableBuilder[Self <: LinkAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("DeviceId", value.asInstanceOf[js.Any])
+    def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("DeviceId", js.undefined)
+    def setLinkAssociationState(value: LinkAssociationState): Self = StObject.set(x, "LinkAssociationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    def setLinkAssociationStateUndefined: Self = StObject.set(x, "LinkAssociationState", js.undefined)
     
     @scala.inline
-    def deleteGlobalNetworkId: Self = this.set("GlobalNetworkId", js.undefined)
+    def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkAssociationState(value: LinkAssociationState): Self = this.set("LinkAssociationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkAssociationState: Self = this.set("LinkAssociationState", js.undefined)
-    
-    @scala.inline
-    def setLinkId(value: String): Self = this.set("LinkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkId: Self = this.set("LinkId", js.undefined)
+    def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
   }
 }

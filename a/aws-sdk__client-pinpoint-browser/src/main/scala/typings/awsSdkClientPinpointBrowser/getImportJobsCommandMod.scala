@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetImportJobsInputMod.GetImportJ
 import typings.awsSdkClientPinpointBrowser.typesGetImportJobsOutputMod.GetImportJobsOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetImportJobsCommand", JSImport.Namespace)
-@js.native
-object getImportJobsCommandMod extends js.Object {
+object getImportJobsCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetImportJobsCommand", "GetImportJobsCommand")
   @js.native
   class GetImportJobsCommand protected () extends Command[
           InputTypesUnion, 

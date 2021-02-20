@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Maintain extends js.Object {
+trait Maintain extends StObject {
   
   var admin: Boolean = js.native
   
@@ -26,33 +27,21 @@ object Maintain {
   }
   
   @scala.inline
-  implicit class MaintainOps[Self <: Maintain] (val x: Self) extends AnyVal {
+  implicit class MaintainMutableBuilder[Self <: Maintain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaintain(value: Boolean): Self = StObject.set(x, "maintain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPull(value: Boolean): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdmin(value: Boolean): Self = this.set("admin", value.asInstanceOf[js.Any])
+    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaintain(value: Boolean): Self = this.set("maintain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPull(value: Boolean): Self = this.set("pull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPush(value: Boolean): Self = this.set("push", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriage(value: Boolean): Self = this.set("triage", value.asInstanceOf[js.Any])
+    def setTriage(value: Boolean): Self = StObject.set(x, "triage", value.asInstanceOf[js.Any])
   }
 }

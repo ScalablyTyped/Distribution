@@ -5,14 +5,14 @@ import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.entityMod.Entity
 import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed/DistributedProcess", JSImport.Namespace)
-@js.native
-object distributedProcessMod extends js.Object {
+object distributedProcessMod {
   
+  @JSImport("samchon/templates/distributed/DistributedProcess", "DistributedProcess")
   @js.native
   abstract class DistributedProcess protected ()
     extends Entity

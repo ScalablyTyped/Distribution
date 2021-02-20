@@ -1,12 +1,13 @@
 package typings.sarif.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreadFlow extends js.Object {
+trait ThreadFlow extends StObject {
   
   /**
     * An string that uniquely identifies the threadFlow within the codeFlow in which it occurs.
@@ -48,54 +49,42 @@ object ThreadFlow {
   }
   
   @scala.inline
-  implicit class ThreadFlowOps[Self <: ThreadFlow] (val x: Self) extends AnyVal {
+  implicit class ThreadFlowMutableBuilder[Self <: ThreadFlow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "immutableState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationsVarargs(value: ThreadFlowLocation*): Self = this.set("locations", js.Array(value :_*))
+    def setImmutableStateUndefined: Self = StObject.set(x, "immutableState", js.undefined)
     
     @scala.inline
-    def setLocations(value: js.Array[ThreadFlowLocation]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setInitialState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLocations(value: js.Array[ThreadFlowLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = this.set("immutableState", value.asInstanceOf[js.Any])
+    def setLocationsVarargs(value: ThreadFlowLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def deleteImmutableState: Self = this.set("immutableState", js.undefined)
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: StringDictionary[MultiformatMessageString]): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

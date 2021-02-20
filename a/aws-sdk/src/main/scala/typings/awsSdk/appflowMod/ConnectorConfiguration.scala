@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorConfiguration extends js.Object {
+trait ConnectorConfiguration extends StObject {
   
   /**
     *  Specifies whether the connector can be used as a destination. 
@@ -56,75 +57,63 @@ object ConnectorConfiguration {
   }
   
   @scala.inline
-  implicit class ConnectorConfigurationOps[Self <: ConnectorConfiguration] (val x: Self) extends AnyVal {
+  implicit class ConnectorConfigurationMutableBuilder[Self <: ConnectorConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanUseAsDestination(value: Boolean): Self = StObject.set(x, "canUseAsDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanUseAsDestinationUndefined: Self = StObject.set(x, "canUseAsDestination", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanUseAsSource(value: Boolean): Self = StObject.set(x, "canUseAsSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanUseAsDestination(value: Boolean): Self = this.set("canUseAsDestination", value.asInstanceOf[js.Any])
+    def setCanUseAsSourceUndefined: Self = StObject.set(x, "canUseAsSource", js.undefined)
     
     @scala.inline
-    def deleteCanUseAsDestination: Self = this.set("canUseAsDestination", js.undefined)
+    def setConnectorMetadata(value: ConnectorMetadata): Self = StObject.set(x, "connectorMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanUseAsSource(value: Boolean): Self = this.set("canUseAsSource", value.asInstanceOf[js.Any])
+    def setConnectorMetadataUndefined: Self = StObject.set(x, "connectorMetadata", js.undefined)
     
     @scala.inline
-    def deleteCanUseAsSource: Self = this.set("canUseAsSource", js.undefined)
+    def setIsPrivateLinkEnabled(value: Boolean): Self = StObject.set(x, "isPrivateLinkEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorMetadata(value: ConnectorMetadata): Self = this.set("connectorMetadata", value.asInstanceOf[js.Any])
+    def setIsPrivateLinkEnabledUndefined: Self = StObject.set(x, "isPrivateLinkEnabled", js.undefined)
     
     @scala.inline
-    def deleteConnectorMetadata: Self = this.set("connectorMetadata", js.undefined)
+    def setIsPrivateLinkEndpointUrlRequired(value: Boolean): Self = StObject.set(x, "isPrivateLinkEndpointUrlRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrivateLinkEnabled(value: Boolean): Self = this.set("isPrivateLinkEnabled", value.asInstanceOf[js.Any])
+    def setIsPrivateLinkEndpointUrlRequiredUndefined: Self = StObject.set(x, "isPrivateLinkEndpointUrlRequired", js.undefined)
     
     @scala.inline
-    def deleteIsPrivateLinkEnabled: Self = this.set("isPrivateLinkEnabled", js.undefined)
+    def setSupportedDestinationConnectors(value: ConnectorTypeList): Self = StObject.set(x, "supportedDestinationConnectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrivateLinkEndpointUrlRequired(value: Boolean): Self = this.set("isPrivateLinkEndpointUrlRequired", value.asInstanceOf[js.Any])
+    def setSupportedDestinationConnectorsUndefined: Self = StObject.set(x, "supportedDestinationConnectors", js.undefined)
     
     @scala.inline
-    def deleteIsPrivateLinkEndpointUrlRequired: Self = this.set("isPrivateLinkEndpointUrlRequired", js.undefined)
+    def setSupportedDestinationConnectorsVarargs(value: ConnectorType*): Self = StObject.set(x, "supportedDestinationConnectors", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedDestinationConnectorsVarargs(value: ConnectorType*): Self = this.set("supportedDestinationConnectors", js.Array(value :_*))
+    def setSupportedSchedulingFrequencies(value: SchedulingFrequencyTypeList): Self = StObject.set(x, "supportedSchedulingFrequencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedDestinationConnectors(value: ConnectorTypeList): Self = this.set("supportedDestinationConnectors", value.asInstanceOf[js.Any])
+    def setSupportedSchedulingFrequenciesUndefined: Self = StObject.set(x, "supportedSchedulingFrequencies", js.undefined)
     
     @scala.inline
-    def deleteSupportedDestinationConnectors: Self = this.set("supportedDestinationConnectors", js.undefined)
+    def setSupportedSchedulingFrequenciesVarargs(value: ScheduleFrequencyType*): Self = StObject.set(x, "supportedSchedulingFrequencies", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedSchedulingFrequenciesVarargs(value: ScheduleFrequencyType*): Self = this.set("supportedSchedulingFrequencies", js.Array(value :_*))
+    def setSupportedTriggerTypes(value: TriggerTypeList): Self = StObject.set(x, "supportedTriggerTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedSchedulingFrequencies(value: SchedulingFrequencyTypeList): Self = this.set("supportedSchedulingFrequencies", value.asInstanceOf[js.Any])
+    def setSupportedTriggerTypesUndefined: Self = StObject.set(x, "supportedTriggerTypes", js.undefined)
     
     @scala.inline
-    def deleteSupportedSchedulingFrequencies: Self = this.set("supportedSchedulingFrequencies", js.undefined)
-    
-    @scala.inline
-    def setSupportedTriggerTypesVarargs(value: TriggerType*): Self = this.set("supportedTriggerTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedTriggerTypes(value: TriggerTypeList): Self = this.set("supportedTriggerTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedTriggerTypes: Self = this.set("supportedTriggerTypes", js.undefined)
+    def setSupportedTriggerTypesVarargs(value: TriggerType*): Self = StObject.set(x, "supportedTriggerTypes", js.Array(value :_*))
   }
 }

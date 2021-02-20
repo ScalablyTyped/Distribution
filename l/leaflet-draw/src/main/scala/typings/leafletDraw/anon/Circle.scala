@@ -1,11 +1,12 @@
 package typings.leafletDraw.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Circle extends js.Object {
+trait Circle extends StObject {
   
   var circle: String = js.native
   
@@ -35,36 +36,24 @@ object Circle {
   }
   
   @scala.inline
-  implicit class CircleOps[Self <: Circle] (val x: Self) extends AnyVal {
+  implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCirclemarker(value: String): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircle(value: String): Self = this.set("circle", value.asInstanceOf[js.Any])
+    def setPolygon(value: String): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCirclemarker(value: String): Self = this.set("circlemarker", value.asInstanceOf[js.Any])
+    def setPolyline(value: String): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolygon(value: String): Self = this.set("polygon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolyline(value: String): Self = this.set("polyline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRectangle(value: String): Self = this.set("rectangle", value.asInstanceOf[js.Any])
+    def setRectangle(value: String): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
   }
 }

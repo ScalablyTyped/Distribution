@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * MetricValueStatus holds the current value for a metric
   */
 @js.native
-trait MetricValueStatus extends js.Object {
+trait MetricValueStatus extends StObject {
   
   /**
     * currentAverageUtilization is the current value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods.
@@ -35,36 +36,24 @@ object MetricValueStatus {
   }
   
   @scala.inline
-  implicit class MetricValueStatusOps[Self <: MetricValueStatus] (val x: Self) extends AnyVal {
+  implicit class MetricValueStatusMutableBuilder[Self <: MetricValueStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageUtilization(value: Input[Double]): Self = StObject.set(x, "averageUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUtilizationUndefined: Self = StObject.set(x, "averageUtilization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAverageValue(value: Input[String]): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageUtilization(value: Input[Double]): Self = this.set("averageUtilization", value.asInstanceOf[js.Any])
+    def setAverageValueUndefined: Self = StObject.set(x, "averageValue", js.undefined)
     
     @scala.inline
-    def deleteAverageUtilization: Self = this.set("averageUtilization", js.undefined)
+    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageValue(value: Input[String]): Self = this.set("averageValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAverageValue: Self = this.set("averageValue", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Input[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,30 +70,18 @@ object XDockingAreaAcceptor {
   }
   
   @scala.inline
-  implicit class XDockingAreaAcceptorOps[Self <: XDockingAreaAcceptor] (val x: Self) extends AnyVal {
+  implicit class XDockingAreaAcceptorMutableBuilder[Self <: XDockingAreaAcceptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerWindow(value: XWindow): Self = StObject.set(x, "ContainerWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContainerWindow(value: () => XWindow): Self = StObject.set(x, "getContainerWindow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestDockingAreaSpace(value: Rectangle => Boolean): Self = StObject.set(x, "requestDockingAreaSpace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainerWindow(value: XWindow): Self = this.set("ContainerWindow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetContainerWindow(value: () => XWindow): Self = this.set("getContainerWindow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestDockingAreaSpace(value: Rectangle => Boolean): Self = this.set("requestDockingAreaSpace", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDockingAreaSpace(value: Rectangle => Unit): Self = this.set("setDockingAreaSpace", js.Any.fromFunction1(value))
+    def setSetDockingAreaSpace(value: Rectangle => Unit): Self = StObject.set(x, "setDockingAreaSpace", js.Any.fromFunction1(value))
   }
 }

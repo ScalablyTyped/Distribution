@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RouteOptimization extends js.Object
+sealed trait RouteOptimization extends StObject
 @JSGlobal("Microsoft.Maps.Directions.RouteOptimization")
 @js.native
-object RouteOptimization extends js.Object {
+object RouteOptimization extends StObject {
   
   /** Minimize the cost when calculating directions. This option only affects routes with a transitRouteMode that have the culture set to ja-jp.*/
   @js.native

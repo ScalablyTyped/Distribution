@@ -1,11 +1,12 @@
 package typings.rcSlider.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Marks extends js.Object {
+trait Marks extends StObject {
   
   var marks: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Marks {
   }
   
   @scala.inline
-  implicit class MarksOps[Self <: Marks] (val x: Self) extends AnyVal {
+  implicit class MarksMutableBuilder[Self <: Marks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarks(value: js.Any): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMax(value: js.Any): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMin(value: js.Any): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarks(value: js.Any): Self = this.set("marks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: js.Any): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMin(value: js.Any): Self = this.set("min", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStep(value: js.Any): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStep(value: js.Any): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

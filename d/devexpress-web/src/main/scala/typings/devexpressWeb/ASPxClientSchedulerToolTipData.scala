@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information about a client tooltip.
   */
 @js.native
-trait ASPxClientSchedulerToolTipData extends js.Object {
+trait ASPxClientSchedulerToolTipData extends StObject {
   
   /**
     * Returns the client appointment for which the tooltip is displayed.
@@ -38,27 +39,15 @@ object ASPxClientSchedulerToolTipData {
   }
   
   @scala.inline
-  implicit class ASPxClientSchedulerToolTipDataOps[Self <: ASPxClientSchedulerToolTipData] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSchedulerToolTipDataMutableBuilder[Self <: ASPxClientSchedulerToolTipData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAppointment(value: () => ASPxClientAppointment): Self = StObject.set(x, "GetAppointment", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetInterval(value: () => ASPxClientTimeInterval): Self = StObject.set(x, "GetInterval", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAppointment(value: () => ASPxClientAppointment): Self = this.set("GetAppointment", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetInterval(value: () => ASPxClientTimeInterval): Self = this.set("GetInterval", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetResources(value: () => js.Array[String]): Self = this.set("GetResources", js.Any.fromFunction0(value))
+    def setGetResources(value: () => js.Array[String]): Self = StObject.set(x, "GetResources", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultUserOperations extends js.Object {
+trait IVaultUserOperations extends StObject {
   
   def AddOrUndeleteUserAccount(User: IUserAccount): IUserAccount = js.native
   
@@ -47,48 +48,36 @@ object IVaultUserOperations {
   }
   
   @scala.inline
-  implicit class IVaultUserOperationsOps[Self <: IVaultUserOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultUserOperationsMutableBuilder[Self <: IVaultUserOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOrUndeleteUserAccount(value: IUserAccount => IUserAccount): Self = StObject.set(x, "AddOrUndeleteUserAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUserAccount(value: IUserAccount => IUserAccount): Self = StObject.set(x, "AddUserAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLoginAccountOfUser(value: Double => ILoginAccount): Self = StObject.set(x, "GetLoginAccountOfUser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddOrUndeleteUserAccount(value: IUserAccount => IUserAccount): Self = this.set("AddOrUndeleteUserAccount", js.Any.fromFunction1(value))
+    def setGetLoginAccounts(value: () => ILoginAccounts): Self = StObject.set(x, "GetLoginAccounts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddUserAccount(value: IUserAccount => IUserAccount): Self = this.set("AddUserAccount", js.Any.fromFunction1(value))
+    def setGetUserAccount(value: Double => IUserAccount): Self = StObject.set(x, "GetUserAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLoginAccountOfUser(value: Double => ILoginAccount): Self = this.set("GetLoginAccountOfUser", js.Any.fromFunction1(value))
+    def setGetUserAccounts(value: () => IUserAccounts): Self = StObject.set(x, "GetUserAccounts", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoginAccounts(value: () => ILoginAccounts): Self = this.set("GetLoginAccounts", js.Any.fromFunction0(value))
+    def setGetUserIDByGUID(value: String => Double): Self = StObject.set(x, "GetUserIDByGUID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserAccount(value: Double => IUserAccount): Self = this.set("GetUserAccount", js.Any.fromFunction1(value))
+    def setGetUserList(value: () => IKeyNamePairs): Self = StObject.set(x, "GetUserList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetUserAccounts(value: () => IUserAccounts): Self = this.set("GetUserAccounts", js.Any.fromFunction0(value))
+    def setModifyUserAccount(value: IUserAccount => Unit): Self = StObject.set(x, "ModifyUserAccount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserIDByGUID(value: String => Double): Self = this.set("GetUserIDByGUID", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetUserList(value: () => IKeyNamePairs): Self = this.set("GetUserList", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setModifyUserAccount(value: IUserAccount => Unit): Self = this.set("ModifyUserAccount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveUserAccount(value: Double => Unit): Self = this.set("RemoveUserAccount", js.Any.fromFunction1(value))
+    def setRemoveUserAccount(value: Double => Unit): Self = StObject.set(x, "RemoveUserAccount", js.Any.fromFunction1(value))
   }
 }

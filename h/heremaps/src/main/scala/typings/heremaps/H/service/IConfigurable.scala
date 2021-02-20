@@ -1,5 +1,6 @@
 package typings.heremaps.H.service
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An interface represents an object, that can be configured credentials, settings etc. by H.service.Platform
   */
 @js.native
-trait IConfigurable extends js.Object {
+trait IConfigurable extends StObject {
   
   /**
     * This methods receive configuration parameters from the platform, that can be used by the object implementing the interface.

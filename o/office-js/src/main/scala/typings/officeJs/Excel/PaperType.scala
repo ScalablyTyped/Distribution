@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PaperType extends js.Object
+sealed trait PaperType extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PaperType")
 @js.native
-object PaperType extends js.Object {
+object PaperType extends StObject {
   
   @js.native
   sealed trait a3 extends PaperType

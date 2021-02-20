@@ -2,6 +2,7 @@ package typings.kendoUi.global.kendo.ui
 
 import typings.kendoUi.kendo.ui.FilterOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,21 @@ class Filter protected ()
   def this(element: Element) = this()
   def this(element: Element, options: FilterOptions) = this()
 }
-/* static members */
-@JSGlobal("kendo.ui.Filter")
-@js.native
-object Filter extends js.Object {
+object Filter {
   
+  @JSGlobal("kendo.ui.Filter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("kendo.ui.Filter.extend")
+  @js.native
   def extend(proto: js.Object): typings.kendoUi.kendo.ui.Filter = js.native
   
-  var fn: typings.kendoUi.kendo.ui.Filter = js.native
+  /* static member */
+  @JSGlobal("kendo.ui.Filter.fn")
+  @js.native
+  def fn: typings.kendoUi.kendo.ui.Filter = js.native
+  @scala.inline
+  def fn_=(x: typings.kendoUi.kendo.ui.Filter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

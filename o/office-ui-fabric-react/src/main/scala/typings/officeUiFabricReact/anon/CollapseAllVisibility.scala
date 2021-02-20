@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollapseAllVisibility extends js.Object {
+trait CollapseAllVisibility extends StObject {
   
   var collapseAllVisibility: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility = js.native
   
@@ -27,27 +28,15 @@ object CollapseAllVisibility {
   }
   
   @scala.inline
-  implicit class CollapseAllVisibilityOps[Self <: CollapseAllVisibility] (val x: Self) extends AnyVal {
+  implicit class CollapseAllVisibilityMutableBuilder[Self <: CollapseAllVisibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseAllVisibility(value: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility): Self = StObject.set(x, "collapseAllVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectAllVisibility(value: SelectAllVisibility): Self = StObject.set(x, "selectAllVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollapseAllVisibility(value: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility): Self = this.set("collapseAllVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectAllVisibility(value: SelectAllVisibility): Self = this.set("selectAllVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseFastIcons(value: Boolean): Self = this.set("useFastIcons", value.asInstanceOf[js.Any])
+    def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
   }
 }

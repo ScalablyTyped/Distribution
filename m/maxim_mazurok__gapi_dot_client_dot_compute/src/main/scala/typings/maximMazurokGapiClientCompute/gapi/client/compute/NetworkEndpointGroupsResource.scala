@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserUserIp
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserRequestIdResourceUserIpZone
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserResource
 import typings.maximMazurokGapiClientCompute.anon.UserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkEndpointGroupsResource extends js.Object {
+trait NetworkEndpointGroupsResource extends StObject {
   
   /** Retrieves the list of network endpoint groups and sorts them by zone. */
   def aggregatedList(): Request[NetworkEndpointGroupAggregatedList] = js.native

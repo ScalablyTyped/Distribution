@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutDeliverabilityDashboardOptionRequest extends js.Object {
+trait PutDeliverabilityDashboardOptionRequest extends StObject {
   
   /**
     * Specifies whether to enable the Deliverability dashboard for your Amazon Pinpoint account. To enable the dashboard, set this value to true.
@@ -26,30 +27,18 @@ object PutDeliverabilityDashboardOptionRequest {
   }
   
   @scala.inline
-  implicit class PutDeliverabilityDashboardOptionRequestOps[Self <: PutDeliverabilityDashboardOptionRequest] (val x: Self) extends AnyVal {
+  implicit class PutDeliverabilityDashboardOptionRequestMutableBuilder[Self <: PutDeliverabilityDashboardOptionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashboardEnabled(value: Enabled): Self = StObject.set(x, "DashboardEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = StObject.set(x, "SubscribedDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscribedDomainsUndefined: Self = StObject.set(x, "SubscribedDomains", js.undefined)
     
     @scala.inline
-    def setDashboardEnabled(value: Enabled): Self = this.set("DashboardEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = this.set("SubscribedDomains", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscribedDomains(value: DomainDeliverabilityTrackingOptions): Self = this.set("SubscribedDomains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribedDomains: Self = this.set("SubscribedDomains", js.undefined)
+    def setSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "SubscribedDomains", js.Array(value :_*))
   }
 }

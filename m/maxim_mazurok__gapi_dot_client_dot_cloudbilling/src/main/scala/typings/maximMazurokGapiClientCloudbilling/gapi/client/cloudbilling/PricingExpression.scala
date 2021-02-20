@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbilling.gapi.client.cloudbilling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PricingExpression extends js.Object {
+trait PricingExpression extends StObject {
   
   /** The base unit for the SKU which is the unit used in usage exports. Example: "By" */
   var baseUnit: js.UndefOr[String] = js.native
@@ -47,63 +48,51 @@ object PricingExpression {
   }
   
   @scala.inline
-  implicit class PricingExpressionOps[Self <: PricingExpression] (val x: Self) extends AnyVal {
+  implicit class PricingExpressionMutableBuilder[Self <: PricingExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseUnit(value: String): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUnitConversionFactor(value: Double): Self = StObject.set(x, "baseUnitConversionFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseUnitConversionFactorUndefined: Self = StObject.set(x, "baseUnitConversionFactor", js.undefined)
     
     @scala.inline
-    def setBaseUnit(value: String): Self = this.set("baseUnit", value.asInstanceOf[js.Any])
+    def setBaseUnitDescription(value: String): Self = StObject.set(x, "baseUnitDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseUnit: Self = this.set("baseUnit", js.undefined)
+    def setBaseUnitDescriptionUndefined: Self = StObject.set(x, "baseUnitDescription", js.undefined)
     
     @scala.inline
-    def setBaseUnitConversionFactor(value: Double): Self = this.set("baseUnitConversionFactor", value.asInstanceOf[js.Any])
+    def setBaseUnitUndefined: Self = StObject.set(x, "baseUnit", js.undefined)
     
     @scala.inline
-    def deleteBaseUnitConversionFactor: Self = this.set("baseUnitConversionFactor", js.undefined)
+    def setDisplayQuantity(value: Double): Self = StObject.set(x, "displayQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUnitDescription(value: String): Self = this.set("baseUnitDescription", value.asInstanceOf[js.Any])
+    def setDisplayQuantityUndefined: Self = StObject.set(x, "displayQuantity", js.undefined)
     
     @scala.inline
-    def deleteBaseUnitDescription: Self = this.set("baseUnitDescription", js.undefined)
+    def setTieredRates(value: js.Array[TierRate]): Self = StObject.set(x, "tieredRates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayQuantity(value: Double): Self = this.set("displayQuantity", value.asInstanceOf[js.Any])
+    def setTieredRatesUndefined: Self = StObject.set(x, "tieredRates", js.undefined)
     
     @scala.inline
-    def deleteDisplayQuantity: Self = this.set("displayQuantity", js.undefined)
+    def setTieredRatesVarargs(value: TierRate*): Self = StObject.set(x, "tieredRates", js.Array(value :_*))
     
     @scala.inline
-    def setTieredRatesVarargs(value: TierRate*): Self = this.set("tieredRates", js.Array(value :_*))
+    def setUsageUnit(value: String): Self = StObject.set(x, "usageUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTieredRates(value: js.Array[TierRate]): Self = this.set("tieredRates", value.asInstanceOf[js.Any])
+    def setUsageUnitDescription(value: String): Self = StObject.set(x, "usageUnitDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTieredRates: Self = this.set("tieredRates", js.undefined)
+    def setUsageUnitDescriptionUndefined: Self = StObject.set(x, "usageUnitDescription", js.undefined)
     
     @scala.inline
-    def setUsageUnit(value: String): Self = this.set("usageUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageUnit: Self = this.set("usageUnit", js.undefined)
-    
-    @scala.inline
-    def setUsageUnitDescription(value: String): Self = this.set("usageUnitDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageUnitDescription: Self = this.set("usageUnitDescription", js.undefined)
+    def setUsageUnitUndefined: Self = StObject.set(x, "usageUnit", js.undefined)
   }
 }

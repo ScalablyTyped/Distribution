@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobSummary extends js.Object {
+trait JobSummary extends StObject {
   
   /**
     * The S3 buckets that the job is configured to analyze.
@@ -56,69 +57,57 @@ object JobSummary {
   }
   
   @scala.inline
-  implicit class JobSummaryOps[Self <: JobSummary] (val x: Self) extends AnyVal {
+  implicit class JobSummaryMutableBuilder[Self <: JobSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = StObject.set(x, "bucketDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketDefinitionsUndefined: Self = StObject.set(x, "bucketDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = StObject.set(x, "bucketDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setBucketDefinitionsVarargs(value: S3BucketDefinitionForJob*): Self = this.set("bucketDefinitions", js.Array(value :_*))
+    def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketDefinitions(value: listOfS3BucketDefinitionForJob): Self = this.set("bucketDefinitions", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteBucketDefinitions: Self = this.set("bucketDefinitions", js.undefined)
+    def setJobId(value: string): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: string): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setJobType(value: JobType): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("jobStatus", value.asInstanceOf[js.Any])
+    def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("jobStatus", js.undefined)
+    def setLastRunErrorStatus(value: LastRunErrorStatus): Self = StObject.set(x, "lastRunErrorStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    def setLastRunErrorStatusUndefined: Self = StObject.set(x, "lastRunErrorStatus", js.undefined)
     
     @scala.inline
-    def deleteJobType: Self = this.set("jobType", js.undefined)
+    def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunErrorStatus(value: LastRunErrorStatus): Self = this.set("lastRunErrorStatus", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastRunErrorStatus: Self = this.set("lastRunErrorStatus", js.undefined)
+    def setUserPausedDetails(value: UserPausedDetails): Self = StObject.set(x, "userPausedDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setUserPausedDetails(value: UserPausedDetails): Self = this.set("userPausedDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPausedDetails: Self = this.set("userPausedDetails", js.undefined)
+    def setUserPausedDetailsUndefined: Self = StObject.set(x, "userPausedDetails", js.undefined)
   }
 }

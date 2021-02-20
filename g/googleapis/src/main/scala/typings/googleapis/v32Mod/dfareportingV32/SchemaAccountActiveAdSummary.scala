@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Gets a summary of active ads in an account.
   */
 @js.native
-trait SchemaAccountActiveAdSummary extends js.Object {
+trait SchemaAccountActiveAdSummary extends StObject {
   
   /**
     * ID of the account.
@@ -45,48 +46,36 @@ object SchemaAccountActiveAdSummary {
   }
   
   @scala.inline
-  implicit class SchemaAccountActiveAdSummaryOps[Self <: SchemaAccountActiveAdSummary] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountActiveAdSummaryMutableBuilder[Self <: SchemaAccountActiveAdSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveAds(value: String): Self = StObject.set(x, "activeAds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setActiveAdsLimitTier(value: String): Self = StObject.set(x, "activeAdsLimitTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setActiveAdsLimitTierUndefined: Self = StObject.set(x, "activeAdsLimitTier", js.undefined)
     
     @scala.inline
-    def setActiveAds(value: String): Self = this.set("activeAds", value.asInstanceOf[js.Any])
+    def setActiveAdsUndefined: Self = StObject.set(x, "activeAds", js.undefined)
     
     @scala.inline
-    def deleteActiveAds: Self = this.set("activeAds", js.undefined)
+    def setAvailableAds(value: String): Self = StObject.set(x, "availableAds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveAdsLimitTier(value: String): Self = this.set("activeAdsLimitTier", value.asInstanceOf[js.Any])
+    def setAvailableAdsUndefined: Self = StObject.set(x, "availableAds", js.undefined)
     
     @scala.inline
-    def deleteActiveAdsLimitTier: Self = this.set("activeAdsLimitTier", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableAds(value: String): Self = this.set("availableAds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableAds: Self = this.set("availableAds", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

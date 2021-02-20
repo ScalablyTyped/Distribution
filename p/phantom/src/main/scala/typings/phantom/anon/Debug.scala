@@ -1,12 +1,13 @@
 package typings.phantom.anon
 
 import typings.phantom.mod.winstonLeveledLogMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Debug extends js.Object {
+trait Debug extends StObject {
   
   var debug: js.UndefOr[winstonLeveledLogMethod] = js.native
   
@@ -25,42 +26,30 @@ object Debug {
   }
   
   @scala.inline
-  implicit class DebugOps[Self <: Debug] (val x: Self) extends AnyVal {
+  implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebug(value: winstonLeveledLogMethod): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: winstonLeveledLogMethod): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: winstonLeveledLogMethod): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setInfo(value: winstonLeveledLogMethod): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: winstonLeveledLogMethod): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setWarn(value: winstonLeveledLogMethod): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: winstonLeveledLogMethod): Self = this.set("info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInfo: Self = this.set("info", js.undefined)
-    
-    @scala.inline
-    def setWarn(value: winstonLeveledLogMethod): Self = this.set("warn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarn: Self = this.set("warn", js.undefined)
+    def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
   }
 }

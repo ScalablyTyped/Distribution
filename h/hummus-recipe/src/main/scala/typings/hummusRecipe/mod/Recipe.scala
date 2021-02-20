@@ -1,11 +1,12 @@
 package typings.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recipe extends js.Object {
+trait Recipe extends StObject {
   
   def annot(x: Double, y: Double, subtype: AnnotSubtype): Recipe = js.native
   def annot(x: Double, y: Double, subtype: AnnotSubtype, options: AnnotOptions): Recipe = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmbeddedSourceSettings extends js.Object {
+trait EmbeddedSourceSettings extends StObject {
   
   /**
     * Specify whether this set of input captions appears in your outputs in both 608 and 708 format. If you choose Upconvert (UPCONVERT), MediaConvert includes the captions data in two ways: it passes the 608 data through using the 608 compatibility bytes fields of the 708 wrapper, and it also translates the 608 data into 708.
@@ -36,42 +37,30 @@ object EmbeddedSourceSettings {
   }
   
   @scala.inline
-  implicit class EmbeddedSourceSettingsOps[Self <: EmbeddedSourceSettings] (val x: Self) extends AnyVal {
+  implicit class EmbeddedSourceSettingsMutableBuilder[Self <: EmbeddedSourceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvert608To708(value: EmbeddedConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvert608To708Undefined: Self = StObject.set(x, "Convert608To708", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource608ChannelNumber(value: integerMin1Max4): Self = StObject.set(x, "Source608ChannelNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert608To708(value: EmbeddedConvert608To708): Self = this.set("Convert608To708", value.asInstanceOf[js.Any])
+    def setSource608ChannelNumberUndefined: Self = StObject.set(x, "Source608ChannelNumber", js.undefined)
     
     @scala.inline
-    def deleteConvert608To708: Self = this.set("Convert608To708", js.undefined)
+    def setSource608TrackNumber(value: integerMin1Max1): Self = StObject.set(x, "Source608TrackNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource608ChannelNumber(value: integerMin1Max4): Self = this.set("Source608ChannelNumber", value.asInstanceOf[js.Any])
+    def setSource608TrackNumberUndefined: Self = StObject.set(x, "Source608TrackNumber", js.undefined)
     
     @scala.inline
-    def deleteSource608ChannelNumber: Self = this.set("Source608ChannelNumber", js.undefined)
+    def setTerminateCaptions(value: EmbeddedTerminateCaptions): Self = StObject.set(x, "TerminateCaptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource608TrackNumber(value: integerMin1Max1): Self = this.set("Source608TrackNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource608TrackNumber: Self = this.set("Source608TrackNumber", js.undefined)
-    
-    @scala.inline
-    def setTerminateCaptions(value: EmbeddedTerminateCaptions): Self = this.set("TerminateCaptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateCaptions: Self = this.set("TerminateCaptions", js.undefined)
+    def setTerminateCaptionsUndefined: Self = StObject.set(x, "TerminateCaptions", js.undefined)
   }
 }

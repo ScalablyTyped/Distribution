@@ -1,12 +1,13 @@
 package typings.leafletDraw.anon
 
 import typings.leafletDraw.mod.Localization.Action
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancel extends js.Object {
+trait Cancel extends StObject {
   
   var cancel: Action = js.native
   
@@ -23,27 +24,15 @@ object Cancel {
   }
   
   @scala.inline
-  implicit class CancelOps[Self <: Cancel] (val x: Self) extends AnyVal {
+  implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Action): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearAll(value: Action): Self = StObject.set(x, "clearAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancel(value: Action): Self = this.set("cancel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClearAll(value: Action): Self = this.set("clearAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSave(value: Action): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setSave(value: Action): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
   }
 }

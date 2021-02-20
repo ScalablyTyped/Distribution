@@ -1,12 +1,13 @@
 package typings.nano.mod
 
 import typings.nano.anon.Doc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentSearchResponse[V] extends js.Object {
+trait DocumentSearchResponse[V] extends StObject {
   
   // token which if supplied to a subsequent search will return the next page of results.
   var bookmark: String = js.native
@@ -34,48 +35,36 @@ object DocumentSearchResponse {
   }
   
   @scala.inline
-  implicit class DocumentSearchResponseOps[Self <: DocumentSearchResponse[_], V] (val x: Self with DocumentSearchResponse[V]) extends AnyVal {
+  implicit class DocumentSearchResponseMutableBuilder[Self <: DocumentSearchResponse[_], V] (val x: Self with DocumentSearchResponse[V]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCounts(value: js.Object): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
     @scala.inline
-    def setBookmark(value: String): Self = this.set("bookmark", value.asInstanceOf[js.Any])
+    def setHighlights(value: js.Object): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: Doc[V]*): Self = this.set("rows", js.Array(value :_*))
+    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[Doc[V]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setRanges(value: js.Object): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_rows(value: Double): Self = this.set("total_rows", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def setCounts(value: js.Object): Self = this.set("counts", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[Doc[V]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCounts: Self = this.set("counts", js.undefined)
+    def setRowsVarargs(value: Doc[V]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setHighlights(value: js.Object): Self = this.set("highlights", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighlights: Self = this.set("highlights", js.undefined)
-    
-    @scala.inline
-    def setRanges(value: js.Object): Self = this.set("ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setTotal_rows(value: Double): Self = StObject.set(x, "total_rows", value.asInstanceOf[js.Any])
   }
 }

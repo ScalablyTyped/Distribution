@@ -3,14 +3,14 @@ package typings.divaJs
 import typings.divaJs.interfacesMod.Offset
 import typings.divaJs.viewerCoreMod.default
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diva.js/handlers", JSImport.Namespace)
-@js.native
-object handlersMod extends js.Object {
+object handlersMod {
   
+  @JSImport("diva.js/handlers", "DocumentHandler")
   @js.native
   class DocumentHandler protected () extends ViewHandler {
     def this(viewerCore: default) = this()
@@ -18,6 +18,7 @@ object handlersMod extends js.Object {
     def onPinch(event: Event, coords: Offset, startDistance: Double, endDistance: Double): Unit = js.native
   }
   
+  @JSImport("diva.js/handlers", "GridHandler")
   @js.native
   class GridHandler protected () extends ViewHandler {
     def this(viewerCore: default) = this()
@@ -26,7 +27,7 @@ object handlersMod extends js.Object {
   }
   
   @js.native
-  trait ViewHandler extends js.Object {
+  trait ViewHandler extends StObject {
     
     var _viewerCore: default = js.native
     

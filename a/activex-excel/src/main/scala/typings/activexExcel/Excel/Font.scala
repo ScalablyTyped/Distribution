@@ -4,12 +4,13 @@ import typings.activexExcel.activexExcelStrings.Bold
 import typings.activexExcel.activexExcelStrings.Italic
 import typings.activexExcel.activexExcelStrings.Regular
 import typings.activexExcel.activexExcelStrings.`Bold Italic`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Font extends js.Object {
+trait Font extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -86,81 +87,69 @@ object Font {
   }
   
   @scala.inline
-  implicit class FontOps[Self <: Font] (val x: Self) extends AnyVal {
+  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackground(value: XlBackground): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setColor(value: XlRgbColor | Double): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: XlBackground): Self = this.set("Background", value.asInstanceOf[js.Any])
+    def setColorIndex(value: Double | XlColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("Bold", value.asInstanceOf[js.Any])
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: XlRgbColor | Double): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setExcelDotFont_typekey(value: Font): Self = StObject.set(x, "Excel.Font_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorIndex(value: Double | XlColorIndex): Self = this.set("ColorIndex", value.asInstanceOf[js.Any])
+    def setFontStyle(value: Regular | Italic | Bold | (`Bold Italic`)): Self = StObject.set(x, "FontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotFont_typekey(value: Font): Self = this.set("Excel.Font_typekey", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: Regular | Italic | Bold | (`Bold Italic`)): Self = this.set("FontStyle", value.asInstanceOf[js.Any])
+    def setOutlineFont(value: js.Any): Self = StObject.set(x, "OutlineFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("Italic", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setShadow(value: js.Any): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineFont(value: js.Any): Self = this.set("OutlineFont", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: js.Any): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    def setSubscript(value: Boolean): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSuperscript(value: Boolean): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikethrough(value: Boolean): Self = this.set("Strikethrough", value.asInstanceOf[js.Any])
+    def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscript(value: Boolean): Self = this.set("Subscript", value.asInstanceOf[js.Any])
+    def setThemeFont(value: XlThemeFont): Self = StObject.set(x, "ThemeFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperscript(value: Boolean): Self = this.set("Superscript", value.asInstanceOf[js.Any])
+    def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemeColor(value: XlThemeColor): Self = this.set("ThemeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThemeFont(value: XlThemeFont): Self = this.set("ThemeFont", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTintAndShade(value: Double): Self = this.set("TintAndShade", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: XlUnderlineStyle): Self = this.set("Underline", value.asInstanceOf[js.Any])
+    def setUnderline(value: XlUnderlineStyle): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
   }
 }

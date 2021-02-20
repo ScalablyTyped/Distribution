@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionDetails extends js.Object {
+trait ExecutionDetails extends StObject {
   
   /**
     *  Describes the details of the most recent flow run. 
@@ -31,36 +32,24 @@ object ExecutionDetails {
   }
   
   @scala.inline
-  implicit class ExecutionDetailsOps[Self <: ExecutionDetails] (val x: Self) extends AnyVal {
+  implicit class ExecutionDetailsMutableBuilder[Self <: ExecutionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMostRecentExecutionMessage(value: MostRecentExecutionMessage): Self = StObject.set(x, "mostRecentExecutionMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMostRecentExecutionMessageUndefined: Self = StObject.set(x, "mostRecentExecutionMessage", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMostRecentExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "mostRecentExecutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMostRecentExecutionMessage(value: MostRecentExecutionMessage): Self = this.set("mostRecentExecutionMessage", value.asInstanceOf[js.Any])
+    def setMostRecentExecutionStatusUndefined: Self = StObject.set(x, "mostRecentExecutionStatus", js.undefined)
     
     @scala.inline
-    def deleteMostRecentExecutionMessage: Self = this.set("mostRecentExecutionMessage", js.undefined)
+    def setMostRecentExecutionTime(value: Date): Self = StObject.set(x, "mostRecentExecutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMostRecentExecutionStatus(value: ExecutionStatus): Self = this.set("mostRecentExecutionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMostRecentExecutionStatus: Self = this.set("mostRecentExecutionStatus", js.undefined)
-    
-    @scala.inline
-    def setMostRecentExecutionTime(value: Date): Self = this.set("mostRecentExecutionTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMostRecentExecutionTime: Self = this.set("mostRecentExecutionTime", js.undefined)
+    def setMostRecentExecutionTimeUndefined: Self = StObject.set(x, "mostRecentExecutionTime", js.undefined)
   }
 }

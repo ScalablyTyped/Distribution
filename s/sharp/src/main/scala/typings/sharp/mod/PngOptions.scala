@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PngOptions extends js.Object {
+trait PngOptions extends StObject {
   
   /** use adaptive row filtering (optional, default false) */
   var adaptiveFiltering: js.UndefOr[Boolean] = js.native
@@ -43,72 +44,60 @@ object PngOptions {
   }
   
   @scala.inline
-  implicit class PngOptionsOps[Self <: PngOptions] (val x: Self) extends AnyVal {
+  implicit class PngOptionsMutableBuilder[Self <: PngOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdaptiveFiltering(value: Boolean): Self = StObject.set(x, "adaptiveFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdaptiveFilteringUndefined: Self = StObject.set(x, "adaptiveFiltering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdaptiveFiltering(value: Boolean): Self = this.set("adaptiveFiltering", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteAdaptiveFiltering: Self = this.set("adaptiveFiltering", js.undefined)
+    def setColours(value: Double): Self = StObject.set(x, "colours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: Double): Self = this.set("colors", value.asInstanceOf[js.Any])
+    def setColoursUndefined: Self = StObject.set(x, "colours", js.undefined)
     
     @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
+    def setCompressionLevel(value: Double): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColours(value: Double): Self = this.set("colours", value.asInstanceOf[js.Any])
+    def setCompressionLevelUndefined: Self = StObject.set(x, "compressionLevel", js.undefined)
     
     @scala.inline
-    def deleteColours: Self = this.set("colours", js.undefined)
+    def setDither(value: Double): Self = StObject.set(x, "dither", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionLevel(value: Double): Self = this.set("compressionLevel", value.asInstanceOf[js.Any])
+    def setDitherUndefined: Self = StObject.set(x, "dither", js.undefined)
     
     @scala.inline
-    def deleteCompressionLevel: Self = this.set("compressionLevel", js.undefined)
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDither(value: Double): Self = this.set("dither", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def deleteDither: Self = this.set("dither", js.undefined)
+    def setPalette(value: Boolean): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPalette(value: Boolean): Self = this.set("palette", value.asInstanceOf[js.Any])
+    def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
     
     @scala.inline
-    def deletePalette: Self = this.set("palette", js.undefined)
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressive(value: Boolean): Self = this.set("progressive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgressive: Self = this.set("progressive", js.undefined)
-    
-    @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuality: Self = this.set("quality", js.undefined)
+    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
   }
 }

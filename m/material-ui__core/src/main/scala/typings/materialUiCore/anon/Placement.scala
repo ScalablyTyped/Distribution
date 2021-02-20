@@ -2,12 +2,13 @@ package typings.materialUiCore.anon
 
 import typings.materialUiCore.popperPopperMod.PopperPlacementType
 import typings.materialUiCore.transitionMod.TransitionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Placement extends js.Object {
+trait Placement extends StObject {
   
   var TransitionProps: js.UndefOr[typings.materialUiCore.transitionMod.TransitionProps] = js.native
   
@@ -22,27 +23,15 @@ object Placement {
   }
   
   @scala.inline
-  implicit class PlacementOps[Self <: Placement] (val x: Self) extends AnyVal {
+  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlacement(value: PopperPlacementType): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTransitionProps(value: TransitionProps): Self = StObject.set(x, "TransitionProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlacement(value: PopperPlacementType): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionProps(value: TransitionProps): Self = this.set("TransitionProps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionProps: Self = this.set("TransitionProps", js.undefined)
+    def setTransitionPropsUndefined: Self = StObject.set(x, "TransitionProps", js.undefined)
   }
 }

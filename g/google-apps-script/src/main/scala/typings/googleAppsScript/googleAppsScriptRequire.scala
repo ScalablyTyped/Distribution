@@ -1,5 +1,6 @@
 package typings.googleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("google-apps-script", JSImport.Namespace)
 @js.native
-object googleAppsScriptRequire extends js.Object
+object googleAppsScriptRequire extends StObject

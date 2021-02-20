@@ -1,12 +1,13 @@
 package typings.reactVirtualized.anon
 
 import typings.reactVirtualized.esTableMod.SortDirectionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortDirection extends js.Object {
+trait SortDirection extends StObject {
   
   var sortDirection: js.UndefOr[SortDirectionType] = js.native
 }
@@ -19,24 +20,12 @@ object SortDirection {
   }
   
   @scala.inline
-  implicit class SortDirectionOps[Self <: SortDirection] (val x: Self) extends AnyVal {
+  implicit class SortDirectionMutableBuilder[Self <: SortDirection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
+    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
   }
 }

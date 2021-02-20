@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.GradConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients/Sigmoid_grad", JSImport.Namespace)
-@js.native
-object sigmoidGradMod extends js.Object {
+object sigmoidGradMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/gradients/Sigmoid_grad", "sigmoidGradConfig")
+  @js.native
   val sigmoidGradConfig: GradConfig = js.native
 }

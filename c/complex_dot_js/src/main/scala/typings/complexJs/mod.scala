@@ -1,15 +1,109 @@
 package typings.complexJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("complex.js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("complex.js", JSImport.Default)
+  @js.native
+  class default protected () extends Complex {
+    def this(x: Complex) = this()
+    def this(x: Double, y: Double) = this()
+  }
+  object default {
+    
+    @JSImport("complex.js", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A complex euler number instance.
+      */
+    /* static member */
+    @JSImport("complex.js", "default.E")
+    @js.native
+    def E: Complex = js.native
+    
+    /**
+      * A small epsilon value used for equals() comparison in order to circumvent double inprecision.
+      */
+    /* static member */
+    @JSImport("complex.js", "default.EPSILON")
+    @js.native
+    def EPSILON: Double = js.native
+    @scala.inline
+    def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def E_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
+    
+    /**
+      * An imaginary number i instance.
+      */
+    /* static member */
+    @JSImport("complex.js", "default.I")
+    @js.native
+    def I: Complex = js.native
+    
+    /**
+      * A complex infinity value (north pole on the Riemann Sphere).
+      */
+    /* static member */
+    @JSImport("complex.js", "default.INFINITY")
+    @js.native
+    def INFINITY: Complex = js.native
+    @scala.inline
+    def INFINITY_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFINITY")(x.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def I_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A complex NaN value (not on the Riemann Sphere).
+      */
+    /* static member */
+    @JSImport("complex.js", "default.NAN")
+    @js.native
+    def NAN: Complex = js.native
+    @scala.inline
+    def NAN_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAN")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A complex one instance.
+      */
+    /* static member */
+    @JSImport("complex.js", "default.ONE")
+    @js.native
+    def ONE: Complex = js.native
+    @scala.inline
+    def ONE_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A complex PI instance.
+      */
+    /* static member */
+    @JSImport("complex.js", "default.PI")
+    @js.native
+    def PI: Complex = js.native
+    @scala.inline
+    def PI_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A complex zero value (south pole on the Riemann Sphere).
+      */
+    /* static member */
+    @JSImport("complex.js", "default.ZERO")
+    @js.native
+    def ZERO: Complex = js.native
+    @scala.inline
+    def ZERO_=(x: Complex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
-  trait Complex extends js.Object {
+  trait Complex extends StObject {
     
     /**
       * Calculates the magnitude of the complex number.
@@ -261,55 +355,5 @@ object mod extends js.Object {
       * Returns a Vector of the actual complex number with two components.
       */
     def toVector(): js.Array[Double] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Complex {
-    def this(x: Complex) = this()
-    def this(x: Double, y: Double) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    /**
-      * A complex euler number instance.
-      */
-    var E: Complex = js.native
-    
-    /**
-      * A small epsilon value used for equals() comparison in order to circumvent double inprecision.
-      */
-    var EPSILON: Double = js.native
-    
-    /**
-      * An imaginary number i instance.
-      */
-    var I: Complex = js.native
-    
-    /**
-      * A complex infinity value (north pole on the Riemann Sphere).
-      */
-    var INFINITY: Complex = js.native
-    
-    /**
-      * A complex NaN value (not on the Riemann Sphere).
-      */
-    var NAN: Complex = js.native
-    
-    /**
-      * A complex one instance.
-      */
-    var ONE: Complex = js.native
-    
-    /**
-      * A complex PI instance.
-      */
-    var PI: Complex = js.native
-    
-    /**
-      * A complex zero value (south pole on the Riemann Sphere).
-      */
-    var ZERO: Complex = js.native
   }
 }

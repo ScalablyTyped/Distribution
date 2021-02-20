@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of an attestation occurrence.
   */
 @js.native
-trait SchemaDetails extends js.Object {
+trait SchemaDetails extends StObject {
   
   /**
     * Required. Attestation for the resource.
@@ -24,24 +25,12 @@ object SchemaDetails {
   }
   
   @scala.inline
-  implicit class SchemaDetailsOps[Self <: SchemaDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaDetailsMutableBuilder[Self <: SchemaDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestation(value: SchemaAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttestation(value: SchemaAttestation): Self = this.set("attestation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
   }
 }

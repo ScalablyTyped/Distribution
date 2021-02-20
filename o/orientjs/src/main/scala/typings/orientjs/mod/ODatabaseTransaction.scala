@@ -1,12 +1,13 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ODatabaseTransaction")
 @js.native
-class ODatabaseTransaction () extends js.Object {
+class ODatabaseTransaction () extends StObject {
   
   /**
     * Execute an SQL command against the database and retreive the results

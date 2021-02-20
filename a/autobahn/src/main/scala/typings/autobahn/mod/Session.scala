@@ -1,13 +1,14 @@
 package typings.autobahn.mod
 
 import typings.when.When.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autobahn", "Session")
 @js.native
-class Session protected () extends js.Object {
+class Session protected () extends StObject {
   def this(transport: ITransport, defer: DeferFactory, challenge: OnChallengeHandler) = this()
   
   def call[TResult](procedure: String): Promise[TResult] = js.native

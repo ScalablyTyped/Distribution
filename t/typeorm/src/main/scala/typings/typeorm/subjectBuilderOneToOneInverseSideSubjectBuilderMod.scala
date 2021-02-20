@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.metadataRelationMetadataMod.RelationMetadata
 import typings.typeorm.persistenceSubjectMod.Subject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/persistence/subject-builder/OneToOneInverseSideSubjectBuilder", JSImport.Namespace)
-@js.native
-object subjectBuilderOneToOneInverseSideSubjectBuilderMod extends js.Object {
+object subjectBuilderOneToOneInverseSideSubjectBuilderMod {
   
+  @JSImport("typeorm/persistence/subject-builder/OneToOneInverseSideSubjectBuilder", "OneToOneInverseSideSubjectBuilder")
   @js.native
-  class OneToOneInverseSideSubjectBuilder protected () extends js.Object {
+  class OneToOneInverseSideSubjectBuilder protected () extends StObject {
     def this(subjects: js.Array[Subject]) = this()
     
     /**

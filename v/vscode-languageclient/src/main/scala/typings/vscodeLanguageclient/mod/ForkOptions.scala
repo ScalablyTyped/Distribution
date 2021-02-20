@@ -1,11 +1,12 @@
 package typings.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForkOptions extends js.Object {
+trait ForkOptions extends StObject {
   
   var cwd: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object ForkOptions {
   }
   
   @scala.inline
-  implicit class ForkOptionsOps[Self <: ForkOptions] (val x: Self) extends AnyVal {
+  implicit class ForkOptionsMutableBuilder[Self <: ForkOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Any): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
-    
-    @scala.inline
-    def setExecArgvVarargs(value: String*): Self = this.set("execArgv", js.Array(value :_*))
-    
-    @scala.inline
-    def setExecArgv(value: js.Array[String]): Self = this.set("execArgv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExecArgv: Self = this.set("execArgv", js.undefined)
+    def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
   }
 }

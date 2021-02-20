@@ -1,12 +1,13 @@
 package typings.consola.mod
 
 import typings.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsolaReporterArgs extends js.Object {
+trait ConsolaReporterArgs extends StObject {
   
   var async: Boolean = js.native
   
@@ -23,27 +24,15 @@ object ConsolaReporterArgs {
   }
   
   @scala.inline
-  implicit class ConsolaReporterArgsOps[Self <: ConsolaReporterArgs] (val x: Self) extends AnyVal {
+  implicit class ConsolaReporterArgsMutableBuilder[Self <: ConsolaReporterArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStderr(value: WritableStream): Self = this.set("stderr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStdout(value: WritableStream): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
   }
 }

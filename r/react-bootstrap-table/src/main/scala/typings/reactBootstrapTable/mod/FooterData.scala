@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FooterData extends js.Object {
+trait FooterData extends StObject {
   
   /**
     * Text alignment for the data in this footer.
@@ -41,36 +42,24 @@ object FooterData {
   }
   
   @scala.inline
-  implicit class FooterDataOps[Self <: FooterData] (val x: Self) extends AnyVal {
+  implicit class FooterDataMutableBuilder[Self <: FooterData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: DataAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setFormatter(value: /* tableData */ js.Array[_] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def setAlign(value: DataAlignType): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
-    
-    @scala.inline
-    def setFormatter(value: /* tableData */ js.Array[_] => String | Double | ReactElement): Self = this.set("formatter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

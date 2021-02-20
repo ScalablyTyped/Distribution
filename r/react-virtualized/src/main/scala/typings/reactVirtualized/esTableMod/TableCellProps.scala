@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esTableMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableCellProps extends js.Object {
+trait TableCellProps extends StObject {
   
   var cellData: js.UndefOr[js.Any] = js.native
   
@@ -32,51 +33,39 @@ object TableCellProps {
   }
   
   @scala.inline
-  implicit class TableCellPropsOps[Self <: TableCellProps] (val x: Self) extends AnyVal {
+  implicit class TableCellPropsMutableBuilder[Self <: TableCellProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellData(value: js.Any): Self = StObject.set(x, "cellData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellDataUndefined: Self = StObject.set(x, "cellData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     
     @scala.inline
-    def setDataKey(value: String): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
+    def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellData(value: js.Any): Self = this.set("cellData", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteCellData: Self = this.set("cellData", js.undefined)
+    def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnData(value: js.Any): Self = this.set("columnData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnData: Self = this.set("columnData", js.undefined)
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

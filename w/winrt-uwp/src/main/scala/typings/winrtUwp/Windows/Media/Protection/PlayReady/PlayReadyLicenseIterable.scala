@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes the PlayReadyLicense class iterator. */
 @js.native
-trait PlayReadyLicenseIterable extends js.Object {
+trait PlayReadyLicenseIterable extends StObject {
   
   /**
     * Returns an iterator that iterates over the items in the PlayReady license collection.
@@ -24,21 +25,9 @@ object PlayReadyLicenseIterable {
   }
   
   @scala.inline
-  implicit class PlayReadyLicenseIterableOps[Self <: PlayReadyLicenseIterable] (val x: Self) extends AnyVal {
+  implicit class PlayReadyLicenseIterableMutableBuilder[Self <: PlayReadyLicenseIterable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirst(value: () => IIterator[IPlayReadyLicense]): Self = this.set("first", js.Any.fromFunction0(value))
+    def setFirst(value: () => IIterator[IPlayReadyLicense]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }
 }

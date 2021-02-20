@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hi extends js.Object {
+trait Hi extends StObject {
   
   var hi: js.UndefOr[Latitude] = js.native
   
@@ -20,30 +21,18 @@ object Hi {
   }
   
   @scala.inline
-  implicit class HiOps[Self <: Hi] (val x: Self) extends AnyVal {
+  implicit class HiMutableBuilder[Self <: Hi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHi(value: Latitude): Self = StObject.set(x, "hi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiUndefined: Self = StObject.set(x, "hi", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLo(value: Latitude): Self = StObject.set(x, "lo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHi(value: Latitude): Self = this.set("hi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHi: Self = this.set("hi", js.undefined)
-    
-    @scala.inline
-    def setLo(value: Latitude): Self = this.set("lo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLo: Self = this.set("lo", js.undefined)
+    def setLoUndefined: Self = StObject.set(x, "lo", js.undefined)
   }
 }

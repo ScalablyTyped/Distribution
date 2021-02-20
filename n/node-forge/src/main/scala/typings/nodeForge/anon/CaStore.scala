@@ -13,12 +13,13 @@ import typings.nodeForge.mod.tls.SessionCache
 import typings.nodeForge.mod.tls.TLSError
 import typings.nodeForge.mod.tls.Verified
 import typings.nodeForge.mod.util.ByteBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaStore extends js.Object {
+trait CaStore extends StObject {
   
   var caStore: js.UndefOr[CAStore | js.Array[Certificate]] = js.native
   
@@ -94,132 +95,120 @@ object CaStore {
   }
   
   @scala.inline
-  implicit class CaStoreOps[Self <: CaStore] (val x: Self) extends AnyVal {
+  implicit class CaStoreMutableBuilder[Self <: CaStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaStore(value: CAStore | js.Array[Certificate]): Self = StObject.set(x, "caStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaStoreUndefined: Self = StObject.set(x, "caStore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaStoreVarargs(value: Certificate*): Self = StObject.set(x, "caStore", js.Array(value :_*))
     
     @scala.inline
-    def setClosed(value: Connection => Unit): Self = this.set("closed", js.Any.fromFunction1(value))
+    def setCipherSuites(value: js.Array[CipherSuite]): Self = StObject.set(x, "cipherSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnected(value: Connection => Unit): Self = this.set("connected", js.Any.fromFunction1(value))
+    def setCipherSuitesUndefined: Self = StObject.set(x, "cipherSuites", js.undefined)
     
     @scala.inline
-    def setDataReady(value: Connection => Unit): Self = this.set("dataReady", js.Any.fromFunction1(value))
+    def setCipherSuitesVarargs(value: CipherSuite*): Self = StObject.set(x, "cipherSuites", js.Array(value :_*))
     
     @scala.inline
-    def setError(value: (Connection, TLSError) => Unit): Self = this.set("error", js.Any.fromFunction2(value))
+    def setClosed(value: Connection => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTlsDataReady(value: Connection => Unit): Self = this.set("tlsDataReady", js.Any.fromFunction1(value))
+    def setConnected(value: Connection => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaStoreVarargs(value: Certificate*): Self = this.set("caStore", js.Array(value :_*))
+    def setDataReady(value: Connection => Unit): Self = StObject.set(x, "dataReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaStore(value: CAStore | js.Array[Certificate]): Self = this.set("caStore", value.asInstanceOf[js.Any])
+    def setDeflate(value: /* inBytes */ Bytes => Bytes): Self = StObject.set(x, "deflate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCaStore: Self = this.set("caStore", js.undefined)
+    def setDeflateUndefined: Self = StObject.set(x, "deflate", js.undefined)
     
     @scala.inline
-    def setCipherSuitesVarargs(value: CipherSuite*): Self = this.set("cipherSuites", js.Array(value :_*))
-    
-    @scala.inline
-    def setCipherSuites(value: js.Array[CipherSuite]): Self = this.set("cipherSuites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCipherSuites: Self = this.set("cipherSuites", js.undefined)
-    
-    @scala.inline
-    def setDeflate(value: /* inBytes */ Bytes => Bytes): Self = this.set("deflate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteDeflate: Self = this.set("deflate", js.undefined)
+    def setError(value: (Connection, TLSError) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetCertificate(
       value: (/* conn */ Connection, /* hint */ CertificateRequest | js.Array[String]) => PEM | js.Array[PEM]
-    ): Self = this.set("getCertificate", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getCertificate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetCertificate: Self = this.set("getCertificate", js.undefined)
+    def setGetCertificateUndefined: Self = StObject.set(x, "getCertificate", js.undefined)
     
     @scala.inline
-    def setGetPrivateKey(value: (/* conn */ Connection, /* certificate */ Certificate) => PEM): Self = this.set("getPrivateKey", js.Any.fromFunction2(value))
+    def setGetPrivateKey(value: (/* conn */ Connection, /* certificate */ Certificate) => PEM): Self = StObject.set(x, "getPrivateKey", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetPrivateKey: Self = this.set("getPrivateKey", js.undefined)
+    def setGetPrivateKeyUndefined: Self = StObject.set(x, "getPrivateKey", js.undefined)
     
     @scala.inline
     def setGetSignature(
       value: (/* conn */ Connection, /* bytes */ Bytes, /* callback */ js.Function2[/* conn */ Connection, /* bytes */ Bytes, Unit]) => Unit
-    ): Self = this.set("getSignature", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getSignature", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetSignature: Self = this.set("getSignature", js.undefined)
+    def setGetSignatureUndefined: Self = StObject.set(x, "getSignature", js.undefined)
     
     @scala.inline
-    def setHeartbeatReceived(value: (/* conn */ Connection, /* payload */ ByteBuffer) => Unit): Self = this.set("heartbeatReceived", js.Any.fromFunction2(value))
+    def setHeartbeatReceived(value: (/* conn */ Connection, /* payload */ ByteBuffer) => Unit): Self = StObject.set(x, "heartbeatReceived", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteHeartbeatReceived: Self = this.set("heartbeatReceived", js.undefined)
+    def setHeartbeatReceivedUndefined: Self = StObject.set(x, "heartbeatReceived", js.undefined)
     
     @scala.inline
-    def setInflate(value: /* inBytes */ Bytes => Bytes): Self = this.set("inflate", js.Any.fromFunction1(value))
+    def setInflate(value: /* inBytes */ Bytes => Bytes): Self = StObject.set(x, "inflate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInflate: Self = this.set("inflate", js.undefined)
+    def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
     
     @scala.inline
-    def setServer(value: Boolean): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setServer(value: Boolean): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def setSessionCache(value: SessionCache | StringDictionary[Session]): Self = this.set("sessionCache", value.asInstanceOf[js.Any])
+    def setSessionCache(value: SessionCache | StringDictionary[Session]): Self = StObject.set(x, "sessionCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSessionCache: Self = this.set("sessionCache", js.undefined)
+    def setSessionCacheUndefined: Self = StObject.set(x, "sessionCache", js.undefined)
     
     @scala.inline
-    def setSessionId(value: Bytes): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    def setSessionId(value: Bytes): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    def setSessionIdNull: Self = StObject.set(x, "sessionId", null)
     
     @scala.inline
-    def setSessionIdNull: Self = this.set("sessionId", null)
+    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    
+    @scala.inline
+    def setTlsDataReady(value: Connection => Unit): Self = StObject.set(x, "tlsDataReady", js.Any.fromFunction1(value))
     
     @scala.inline
     def setVerify(
       value: (/* conn */ Connection, /* verified */ Verified, /* depth */ Double, /* certs */ js.Array[Certificate]) => Verified
-    ): Self = this.set("verify", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteVerify: Self = this.set("verify", js.undefined)
+    def setVerifyClient(value: Boolean): Self = StObject.set(x, "verifyClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerifyClient(value: Boolean): Self = this.set("verifyClient", value.asInstanceOf[js.Any])
+    def setVerifyClientUndefined: Self = StObject.set(x, "verifyClient", js.undefined)
     
     @scala.inline
-    def deleteVerifyClient: Self = this.set("verifyClient", js.undefined)
+    def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
     
     @scala.inline
-    def setVirtualHost(value: String): Self = this.set("virtualHost", value.asInstanceOf[js.Any])
+    def setVirtualHost(value: String): Self = StObject.set(x, "virtualHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVirtualHost: Self = this.set("virtualHost", js.undefined)
+    def setVirtualHostUndefined: Self = StObject.set(x, "virtualHost", js.undefined)
   }
 }

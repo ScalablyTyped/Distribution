@@ -2,6 +2,7 @@ package typings.c3.mod
 
 import typings.c3.anon.MaxNumber
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,63 +52,51 @@ object XTickConfiguration {
   }
   
   @scala.inline
-  implicit class XTickConfigurationOps[Self <: XTickConfiguration] (val x: Self) extends AnyVal {
+  implicit class XTickConfigurationMutableBuilder[Self <: XTickConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenteredUndefined: Self = StObject.set(x, "centered", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCulling(value: Boolean | MaxNumber): Self = StObject.set(x, "culling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCentered(value: Boolean): Self = this.set("centered", value.asInstanceOf[js.Any])
+    def setCullingUndefined: Self = StObject.set(x, "culling", js.undefined)
     
     @scala.inline
-    def deleteCentered: Self = this.set("centered", js.undefined)
+    def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCulling(value: Boolean | MaxNumber): Self = this.set("culling", value.asInstanceOf[js.Any])
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def deleteCulling: Self = this.set("culling", js.undefined)
+    def setFormat(value: String | (js.Function1[/* x */ Double | Date, String | Double])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFit(value: Boolean): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setFormatFunction1(value: /* x */ Double | Date => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setFormatFunction1(value: /* x */ Double | Date => String | Double): Self = this.set("format", js.Any.fromFunction1(value))
+    def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String | (js.Function1[/* x */ Double | Date, String | Double])): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setMultilineMax(value: Double): Self = StObject.set(x, "multilineMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMultilineMaxUndefined: Self = StObject.set(x, "multilineMax", js.undefined)
     
     @scala.inline
-    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
     
     @scala.inline
-    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultilineMax(value: Double): Self = this.set("multilineMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultilineMax: Self = this.set("multilineMax", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

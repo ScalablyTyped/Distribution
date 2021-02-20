@@ -1,22 +1,17 @@
 package typings.figma.mod.global
 
 import typings.figma.figmaStrings.VECTOR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VectorNode
-  extends SceneNode
-     with BaseNodeMixin
-     with SceneNodeMixin
-     with ReactionMixin
-     with BlendMixin
-     with GeometryMixin
-     with LayoutMixin
-     with ExportMixin
+  extends DefaultShapeMixin
      with ConstraintMixin
-     with CornerMixin {
+     with CornerMixin
+     with SceneNode {
   
   var handleMirroring: HandleMirroring | js.Symbol = js.native
   

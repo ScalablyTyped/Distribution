@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UiccAppRecordKind extends js.Object
+sealed trait UiccAppRecordKind extends StObject
 /** Describes the kinds of UICC application record. */
 @JSGlobal("Windows.Networking.NetworkOperators.UiccAppRecordKind")
 @js.native
-object UiccAppRecordKind extends js.Object {
+object UiccAppRecordKind extends StObject {
   
   /** A file that consists of a sequence of records. */
   @js.native

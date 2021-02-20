@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XStream
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -247,60 +248,48 @@ object XStorage {
   }
   
   @scala.inline
-  implicit class XStorageOps[Self <: XStorage] (val x: Self) extends AnyVal {
+  implicit class XStorageMutableBuilder[Self <: XStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneEncryptedStreamElement(value: (String, String) => XStream): Self = StObject.set(x, "cloneEncryptedStreamElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloneStreamElement(value: String => XStream): Self = StObject.set(x, "cloneStreamElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyElementTo(value: (String, XStorage, String) => Unit): Self = StObject.set(x, "copyElementTo", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCloneEncryptedStreamElement(value: (String, String) => XStream): Self = this.set("cloneEncryptedStreamElement", js.Any.fromFunction2(value))
+    def setCopyLastCommitTo(value: XStorage => Unit): Self = StObject.set(x, "copyLastCommitTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCloneStreamElement(value: String => XStream): Self = this.set("cloneStreamElement", js.Any.fromFunction1(value))
+    def setCopyStorageElementLastCommitTo(value: (String, XStorage) => Unit): Self = StObject.set(x, "copyStorageElementLastCommitTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCopyElementTo(value: (String, XStorage, String) => Unit): Self = this.set("copyElementTo", js.Any.fromFunction3(value))
+    def setCopyToStorage(value: XStorage => Unit): Self = StObject.set(x, "copyToStorage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyLastCommitTo(value: XStorage => Unit): Self = this.set("copyLastCommitTo", js.Any.fromFunction1(value))
+    def setIsStorageElement(value: String => Boolean): Self = StObject.set(x, "isStorageElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyStorageElementLastCommitTo(value: (String, XStorage) => Unit): Self = this.set("copyStorageElementLastCommitTo", js.Any.fromFunction2(value))
+    def setIsStreamElement(value: String => Boolean): Self = StObject.set(x, "isStreamElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCopyToStorage(value: XStorage => Unit): Self = this.set("copyToStorage", js.Any.fromFunction1(value))
+    def setMoveElementTo(value: (String, XStorage, String) => Unit): Self = StObject.set(x, "moveElementTo", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsStorageElement(value: String => Boolean): Self = this.set("isStorageElement", js.Any.fromFunction1(value))
+    def setOpenEncryptedStreamElement(value: (String, Double, String) => XStream): Self = StObject.set(x, "openEncryptedStreamElement", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsStreamElement(value: String => Boolean): Self = this.set("isStreamElement", js.Any.fromFunction1(value))
+    def setOpenStorageElement(value: (String, Double) => XStorage): Self = StObject.set(x, "openStorageElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMoveElementTo(value: (String, XStorage, String) => Unit): Self = this.set("moveElementTo", js.Any.fromFunction3(value))
+    def setOpenStreamElement(value: (String, Double) => XStream): Self = StObject.set(x, "openStreamElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOpenEncryptedStreamElement(value: (String, Double, String) => XStream): Self = this.set("openEncryptedStreamElement", js.Any.fromFunction3(value))
+    def setRemoveElement(value: String => Unit): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpenStorageElement(value: (String, Double) => XStorage): Self = this.set("openStorageElement", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOpenStreamElement(value: (String, Double) => XStream): Self = this.set("openStreamElement", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveElement(value: String => Unit): Self = this.set("removeElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRenameElement(value: (String, String) => Unit): Self = this.set("renameElement", js.Any.fromFunction2(value))
+    def setRenameElement(value: (String, String) => Unit): Self = StObject.set(x, "renameElement", js.Any.fromFunction2(value))
   }
 }

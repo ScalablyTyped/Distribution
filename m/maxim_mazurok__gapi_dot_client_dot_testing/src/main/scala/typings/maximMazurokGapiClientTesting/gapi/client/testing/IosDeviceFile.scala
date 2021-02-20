@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IosDeviceFile extends js.Object {
+trait IosDeviceFile extends StObject {
   
   /** The bundle id of the app where this file lives. iOS apps sandbox their own filesystem, so app files must specify which app installed on the device. */
   var bundleId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object IosDeviceFile {
   }
   
   @scala.inline
-  implicit class IosDeviceFileOps[Self <: IosDeviceFile] (val x: Self) extends AnyVal {
+  implicit class IosDeviceFileMutableBuilder[Self <: IosDeviceFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: FileReference): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setDevicePath(value: String): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: FileReference): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setDevicePath(value: String): Self = this.set("devicePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevicePath: Self = this.set("devicePath", js.undefined)
+    def setDevicePathUndefined: Self = StObject.set(x, "devicePath", js.undefined)
   }
 }

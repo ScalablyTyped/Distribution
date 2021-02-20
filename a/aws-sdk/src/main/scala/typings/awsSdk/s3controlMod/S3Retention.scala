@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Retention extends js.Object {
+trait S3Retention extends StObject {
   
   /**
     * The Object Lock retention mode to be applied to all objects in the Batch Operations job.
@@ -26,30 +27,18 @@ object S3Retention {
   }
   
   @scala.inline
-  implicit class S3RetentionOps[Self <: S3Retention] (val x: Self) extends AnyVal {
+  implicit class S3RetentionMutableBuilder[Self <: S3Retention] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: S3ObjectLockRetentionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetainUntilDate(value: TimeStamp): Self = StObject.set(x, "RetainUntilDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: S3ObjectLockRetentionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("Mode", js.undefined)
-    
-    @scala.inline
-    def setRetainUntilDate(value: TimeStamp): Self = this.set("RetainUntilDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainUntilDate: Self = this.set("RetainUntilDate", js.undefined)
+    def setRetainUntilDateUndefined: Self = StObject.set(x, "RetainUntilDate", js.undefined)
   }
 }

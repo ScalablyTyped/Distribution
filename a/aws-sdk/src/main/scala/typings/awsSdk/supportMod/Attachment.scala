@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachment extends js.Object {
+trait Attachment extends StObject {
   
   /**
     * The content of the attachment file.
@@ -26,30 +27,18 @@ object Attachment {
   }
   
   @scala.inline
-  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+  implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileName(value: FileName): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: Data): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setFileName(value: FileName): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
   }
 }

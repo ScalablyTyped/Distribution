@@ -1,12 +1,13 @@
 package typings.webpagetest.mod
 
 import typings.webpagetest.webpagetestBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestStatus extends js.Object {
+trait TestStatus extends StObject {
   
   var completeTime: String = js.native
   
@@ -66,66 +67,54 @@ object TestStatus {
   }
   
   @scala.inline
-  implicit class TestStatusOps[Self <: TestStatus] (val x: Self) extends AnyVal {
+  implicit class TestStatusMutableBuilder[Self <: TestStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompleteTime(value: String): Self = StObject.set(x, "completeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFvRunsCompleted(value: Double): Self = StObject.set(x, "fvRunsCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteTime(value: String): Self = this.set("completeTime", value.asInstanceOf[js.Any])
+    def setFvonly(value: Double): Self = StObject.set(x, "fvonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsed(value: Double): Self = this.set("elapsed", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFvRunsCompleted(value: Double): Self = this.set("fvRunsCompleted", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFvonly(value: Double): Self = this.set("fvonly", value.asInstanceOf[js.Any])
+    def setRemote(value: `false`): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRuns(value: Double): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRvRunsCompleted(value: Double): Self = StObject.set(x, "rvRunsCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemote(value: `false`): Self = this.set("remote", value.asInstanceOf[js.Any])
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuns(value: Double): Self = this.set("runs", value.asInstanceOf[js.Any])
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRvRunsCompleted(value: Double): Self = this.set("rvRunsCompleted", value.asInstanceOf[js.Any])
+    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTestId(value: String): Self = StObject.set(x, "testId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    def setTestInfo(value: TestInfo): Self = StObject.set(x, "testInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    def setTestsCompleted(value: Double): Self = StObject.set(x, "testsCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestId(value: String): Self = this.set("testId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestInfo(value: TestInfo): Self = this.set("testInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestsCompleted(value: Double): Self = this.set("testsCompleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestsExpected(value: Double): Self = this.set("testsExpected", value.asInstanceOf[js.Any])
+    def setTestsExpected(value: Double): Self = StObject.set(x, "testsExpected", value.asInstanceOf[js.Any])
   }
 }

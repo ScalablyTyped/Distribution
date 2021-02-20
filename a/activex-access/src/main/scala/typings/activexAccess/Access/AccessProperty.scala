@@ -1,12 +1,13 @@
 package typings.activexAccess.Access
 
 import typings.activexDao.DAO.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessProperty extends js.Object {
+trait AccessProperty extends StObject {
   
   @JSName("Access._AccessProperty_typekey")
   var AccessDot_AccessProperty_typekey: AccessProperty = js.native

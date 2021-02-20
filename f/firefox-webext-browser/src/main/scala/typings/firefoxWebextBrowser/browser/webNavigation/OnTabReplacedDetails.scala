@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnTabReplacedDetails extends js.Object {
+trait OnTabReplacedDetails extends StObject {
   
   /** The ID of the tab that was replaced. */
   var replacedTabId: Double = js.native
@@ -25,27 +26,15 @@ object OnTabReplacedDetails {
   }
   
   @scala.inline
-  implicit class OnTabReplacedDetailsOps[Self <: OnTabReplacedDetails] (val x: Self) extends AnyVal {
+  implicit class OnTabReplacedDetailsMutableBuilder[Self <: OnTabReplacedDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplacedTabId(value: Double): Self = this.set("replacedTabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Earth's surface.
   */
 @js.native
-trait Coordinate extends js.Object {
+trait Coordinate extends StObject {
   
   /**
     * Returns a copy of the coordinate.
@@ -46,47 +47,36 @@ object Coordinate {
   @scala.inline
   def apply(
     copy: () => Coordinate,
-    equals: Coordinate => Boolean,
+    equals_ : Coordinate => Boolean,
     latitude: Double,
     longitude: Double,
     toMapPoint: () => MapPoint,
     toUnwrappedMapPoint: () => MapPoint
   ): Coordinate = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toMapPoint = js.Any.fromFunction0(toMapPoint), toUnwrappedMapPoint = js.Any.fromFunction0(toUnwrappedMapPoint))
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], toMapPoint = js.Any.fromFunction0(toMapPoint), toUnwrappedMapPoint = js.Any.fromFunction0(toUnwrappedMapPoint))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Coordinate]
   }
   
   @scala.inline
-  implicit class CoordinateOps[Self <: Coordinate] (val x: Self) extends AnyVal {
+  implicit class CoordinateMutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => Coordinate): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_(value: Coordinate => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => Coordinate): Self = this.set("copy", js.Any.fromFunction0(value))
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: Coordinate => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setToMapPoint(value: () => MapPoint): Self = StObject.set(x, "toMapPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToMapPoint(value: () => MapPoint): Self = this.set("toMapPoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToUnwrappedMapPoint(value: () => MapPoint): Self = this.set("toUnwrappedMapPoint", js.Any.fromFunction0(value))
+    def setToUnwrappedMapPoint(value: () => MapPoint): Self = StObject.set(x, "toUnwrappedMapPoint", js.Any.fromFunction0(value))
   }
 }

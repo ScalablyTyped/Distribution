@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProfileJobRequest extends js.Object {
+trait CreateProfileJobRequest extends StObject {
   
   /**
     * The name of the dataset that this job is to act upon.
@@ -68,72 +69,60 @@ object CreateProfileJobRequest {
   }
   
   @scala.inline
-  implicit class CreateProfileJobRequestOps[Self <: CreateProfileJobRequest] (val x: Self) extends AnyVal {
+  implicit class CreateProfileJobRequestMutableBuilder[Self <: CreateProfileJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionKeyArn(value: EncryptionKeyArn): Self = StObject.set(x, "EncryptionKeyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
     
     @scala.inline
-    def setDatasetName(value: DatasetName): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "EncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: JobName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
     
     @scala.inline
-    def setOutputLocation(value: S3Location): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    def setLogSubscription(value: LogSubscription): Self = StObject.set(x, "LogSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: Arn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setLogSubscriptionUndefined: Self = StObject.set(x, "LogSubscription", js.undefined)
     
     @scala.inline
-    def setEncryptionKeyArn(value: EncryptionKeyArn): Self = this.set("EncryptionKeyArn", value.asInstanceOf[js.Any])
+    def setMaxCapacity(value: MaxCapacity): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionKeyArn: Self = this.set("EncryptionKeyArn", js.undefined)
+    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
     @scala.inline
-    def setEncryptionMode(value: EncryptionMode): Self = this.set("EncryptionMode", value.asInstanceOf[js.Any])
+    def setMaxRetries(value: MaxRetries): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionMode: Self = this.set("EncryptionMode", js.undefined)
+    def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
     
     @scala.inline
-    def setLogSubscription(value: LogSubscription): Self = this.set("LogSubscription", value.asInstanceOf[js.Any])
+    def setName(value: JobName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogSubscription: Self = this.set("LogSubscription", js.undefined)
+    def setOutputLocation(value: S3Location): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: MaxCapacity): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetries(value: MaxRetries): Self = this.set("MaxRetries", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("MaxRetries", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
   }
 }

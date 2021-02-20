@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectoryDescription extends js.Object {
+trait DirectoryDescription extends StObject {
   
   /**
     * The access URL for the directory, such as http://&lt;alias&gt;.awsapps.com. If no alias has been created for the directory, &lt;alias&gt; is the directory identifier, such as d-XXXXXXXXXX.
@@ -141,171 +142,159 @@ object DirectoryDescription {
   }
   
   @scala.inline
-  implicit class DirectoryDescriptionOps[Self <: DirectoryDescription] (val x: Self) extends AnyVal {
+  implicit class DirectoryDescriptionMutableBuilder[Self <: DirectoryDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessUrl(value: AccessUrl): Self = StObject.set(x, "AccessUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUrlUndefined: Self = StObject.set(x, "AccessUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlias(value: AliasName): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessUrl(value: AccessUrl): Self = this.set("AccessUrl", value.asInstanceOf[js.Any])
+    def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     @scala.inline
-    def deleteAccessUrl: Self = this.set("AccessUrl", js.undefined)
+    def setConnectSettings(value: DirectoryConnectSettingsDescription): Self = StObject.set(x, "ConnectSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlias(value: AliasName): Self = this.set("Alias", value.asInstanceOf[js.Any])
+    def setConnectSettingsUndefined: Self = StObject.set(x, "ConnectSettings", js.undefined)
     
     @scala.inline
-    def deleteAlias: Self = this.set("Alias", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectSettings(value: DirectoryConnectSettingsDescription): Self = this.set("ConnectSettings", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteConnectSettings: Self = this.set("ConnectSettings", js.undefined)
+    def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = StObject.set(x, "DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDesiredNumberOfDomainControllersUndefined: Self = StObject.set(x, "DesiredNumberOfDomainControllers", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesiredNumberOfDomainControllers(value: DesiredNumberOfDomainControllers): Self = this.set("DesiredNumberOfDomainControllers", value.asInstanceOf[js.Any])
+    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
     @scala.inline
-    def deleteDesiredNumberOfDomainControllers: Self = this.set("DesiredNumberOfDomainControllers", js.undefined)
+    def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
     @scala.inline
-    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
     
     @scala.inline
-    def setDnsIpAddrsVarargs(value: IpAddr*): Self = this.set("DnsIpAddrs", js.Array(value :_*))
+    def setEdition(value: DirectoryEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsIpAddrs(value: DnsIpAddrs): Self = this.set("DnsIpAddrs", value.asInstanceOf[js.Any])
+    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
     @scala.inline
-    def deleteDnsIpAddrs: Self = this.set("DnsIpAddrs", js.undefined)
+    def setLaunchTime(value: LaunchTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdition(value: DirectoryEdition): Self = this.set("Edition", value.asInstanceOf[js.Any])
+    def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
     @scala.inline
-    def deleteEdition: Self = this.set("Edition", js.undefined)
+    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTime(value: LaunchTime): Self = this.set("LaunchTime", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLaunchTime: Self = this.set("LaunchTime", js.undefined)
+    def setOwnerDirectoryDescription(value: OwnerDirectoryDescription): Self = StObject.set(x, "OwnerDirectoryDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DirectoryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOwnerDirectoryDescriptionUndefined: Self = StObject.set(x, "OwnerDirectoryDescription", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerDirectoryDescription(value: OwnerDirectoryDescription): Self = this.set("OwnerDirectoryDescription", value.asInstanceOf[js.Any])
+    def setRadiusSettingsUndefined: Self = StObject.set(x, "RadiusSettings", js.undefined)
     
     @scala.inline
-    def deleteOwnerDirectoryDescription: Self = this.set("OwnerDirectoryDescription", js.undefined)
+    def setRadiusStatus(value: RadiusStatus): Self = StObject.set(x, "RadiusStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusSettings(value: RadiusSettings): Self = this.set("RadiusSettings", value.asInstanceOf[js.Any])
+    def setRadiusStatusUndefined: Self = StObject.set(x, "RadiusStatus", js.undefined)
     
     @scala.inline
-    def deleteRadiusSettings: Self = this.set("RadiusSettings", js.undefined)
+    def setRegionsInfo(value: RegionsInfo): Self = StObject.set(x, "RegionsInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusStatus(value: RadiusStatus): Self = this.set("RadiusStatus", value.asInstanceOf[js.Any])
+    def setRegionsInfoUndefined: Self = StObject.set(x, "RegionsInfo", js.undefined)
     
     @scala.inline
-    def deleteRadiusStatus: Self = this.set("RadiusStatus", js.undefined)
+    def setShareMethod(value: ShareMethod): Self = StObject.set(x, "ShareMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionsInfo(value: RegionsInfo): Self = this.set("RegionsInfo", value.asInstanceOf[js.Any])
+    def setShareMethodUndefined: Self = StObject.set(x, "ShareMethod", js.undefined)
     
     @scala.inline
-    def deleteRegionsInfo: Self = this.set("RegionsInfo", js.undefined)
+    def setShareNotes(value: Notes): Self = StObject.set(x, "ShareNotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareMethod(value: ShareMethod): Self = this.set("ShareMethod", value.asInstanceOf[js.Any])
+    def setShareNotesUndefined: Self = StObject.set(x, "ShareNotes", js.undefined)
     
     @scala.inline
-    def deleteShareMethod: Self = this.set("ShareMethod", js.undefined)
+    def setShareStatus(value: ShareStatus): Self = StObject.set(x, "ShareStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareNotes(value: Notes): Self = this.set("ShareNotes", value.asInstanceOf[js.Any])
+    def setShareStatusUndefined: Self = StObject.set(x, "ShareStatus", js.undefined)
     
     @scala.inline
-    def deleteShareNotes: Self = this.set("ShareNotes", js.undefined)
+    def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareStatus(value: ShareStatus): Self = this.set("ShareStatus", value.asInstanceOf[js.Any])
+    def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
     
     @scala.inline
-    def deleteShareStatus: Self = this.set("ShareStatus", js.undefined)
+    def setSize(value: DirectorySize): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortName(value: DirectoryShortName): Self = this.set("ShortName", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     
     @scala.inline
-    def deleteShortName: Self = this.set("ShortName", js.undefined)
+    def setSsoEnabled(value: SsoEnabled): Self = StObject.set(x, "SsoEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: DirectorySize): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSsoEnabledUndefined: Self = StObject.set(x, "SsoEnabled", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("Size", js.undefined)
+    def setStage(value: DirectoryStage): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsoEnabled(value: SsoEnabled): Self = this.set("SsoEnabled", value.asInstanceOf[js.Any])
+    def setStageLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "StageLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSsoEnabled: Self = this.set("SsoEnabled", js.undefined)
+    def setStageLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StageLastUpdatedDateTime", js.undefined)
     
     @scala.inline
-    def setStage(value: DirectoryStage): Self = this.set("Stage", value.asInstanceOf[js.Any])
+    def setStageReason(value: StageReason): Self = StObject.set(x, "StageReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStage: Self = this.set("Stage", js.undefined)
+    def setStageReasonUndefined: Self = StObject.set(x, "StageReason", js.undefined)
     
     @scala.inline
-    def setStageLastUpdatedDateTime(value: LastUpdatedDateTime): Self = this.set("StageLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    def setStageUndefined: Self = StObject.set(x, "Stage", js.undefined)
     
     @scala.inline
-    def deleteStageLastUpdatedDateTime: Self = this.set("StageLastUpdatedDateTime", js.undefined)
+    def setType(value: DirectoryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageReason(value: StageReason): Self = this.set("StageReason", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteStageReason: Self = this.set("StageReason", js.undefined)
+    def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: DirectoryType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = this.set("VpcSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcSettings: Self = this.set("VpcSettings", js.undefined)
+    def setVpcSettingsUndefined: Self = StObject.set(x, "VpcSettings", js.undefined)
   }
 }

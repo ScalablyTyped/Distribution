@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/ScreenLockRotationSVGIcon", JSImport.Namespace)
-@js.native
-object screenLockRotationSVGIconMod extends js.Object {
+object screenLockRotationSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/ScreenLockRotationSVGIcon", "ScreenLockRotationSVGIcon")
+  @js.native
   val ScreenLockRotationSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

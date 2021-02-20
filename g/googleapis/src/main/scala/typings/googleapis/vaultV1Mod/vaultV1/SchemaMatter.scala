@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a matter.
   */
 @js.native
-trait SchemaMatter extends js.Object {
+trait SchemaMatter extends StObject {
   
   /**
     * The description of the matter.
@@ -46,51 +47,39 @@ object SchemaMatter {
   }
   
   @scala.inline
-  implicit class SchemaMatterOps[Self <: SchemaMatter] (val x: Self) extends AnyVal {
+  implicit class SchemaMatterMutableBuilder[Self <: SchemaMatter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMatterPermissions(value: js.Array[SchemaMatterPermission]): Self = StObject.set(x, "matterPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatterId(value: String): Self = this.set("matterId", value.asInstanceOf[js.Any])
+    def setMatterPermissionsUndefined: Self = StObject.set(x, "matterPermissions", js.undefined)
     
     @scala.inline
-    def deleteMatterId: Self = this.set("matterId", js.undefined)
+    def setMatterPermissionsVarargs(value: SchemaMatterPermission*): Self = StObject.set(x, "matterPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setMatterPermissionsVarargs(value: SchemaMatterPermission*): Self = this.set("matterPermissions", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatterPermissions(value: js.Array[SchemaMatterPermission]): Self = this.set("matterPermissions", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMatterPermissions: Self = this.set("matterPermissions", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

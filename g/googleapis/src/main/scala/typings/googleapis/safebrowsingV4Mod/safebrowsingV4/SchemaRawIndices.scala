@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of raw indices to remove from a local list.
   */
 @js.native
-trait SchemaRawIndices extends js.Object {
+trait SchemaRawIndices extends StObject {
   
   /**
     * The indices to remove from a lexicographically-sorted local list.
@@ -24,27 +25,15 @@ object SchemaRawIndices {
   }
   
   @scala.inline
-  implicit class SchemaRawIndicesOps[Self <: SchemaRawIndices] (val x: Self) extends AnyVal {
+  implicit class SchemaRawIndicesMutableBuilder[Self <: SchemaRawIndices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = this.set("indices", js.Array(value :_*))
-    
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = this.set("indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndices: Self = this.set("indices", js.undefined)
+    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
   }
 }

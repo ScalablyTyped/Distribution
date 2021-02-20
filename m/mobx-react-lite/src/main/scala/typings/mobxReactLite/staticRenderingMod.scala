@@ -1,14 +1,17 @@
 package typings.mobxReactLite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-react-lite/dist/staticRendering", JSImport.Namespace)
-@js.native
-object staticRenderingMod extends js.Object {
+object staticRenderingMod {
   
+  @JSImport("mobx-react-lite/dist/staticRendering", "enableStaticRendering")
+  @js.native
   def enableStaticRendering(enable: Boolean): Unit = js.native
   
+  @JSImport("mobx-react-lite/dist/staticRendering", "isUsingStaticRendering")
+  @js.native
   def isUsingStaticRendering(): Boolean = js.native
 }

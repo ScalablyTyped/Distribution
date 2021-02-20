@@ -3,14 +3,14 @@ package typings.googleMarkerclustererplus
 import typings.googlemaps.google.maps.Map
 import typings.googlemaps.google.maps.Marker
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("Cluster")
   @js.native
   class Cluster protected ()
     extends typings.googleMarkerclustererplus.Cluster {
@@ -23,6 +23,7 @@ object global extends js.Object {
     def this(mc: typings.googleMarkerclustererplus.MarkerClusterer) = this()
   }
   
+  @JSGlobal("ClusterIcon")
   @js.native
   class ClusterIcon protected ()
     extends typings.googleMarkerclustererplus.ClusterIcon {
@@ -36,6 +37,7 @@ object global extends js.Object {
     def this(cluster: typings.googleMarkerclustererplus.Cluster, styles: js.Array[ClusterIconStyle]) = this()
   }
   
+  @JSGlobal("MarkerClusterer")
   @js.native
   class MarkerClusterer protected ()
     extends typings.googleMarkerclustererplus.MarkerClusterer {
@@ -50,21 +52,33 @@ object global extends js.Object {
     def this(map: Map[Element], markers: js.UndefOr[scala.Nothing], options: MarkerClustererOptions) = this()
     def this(map: Map[Element], markers: js.Array[Marker], options: MarkerClustererOptions) = this()
   }
-  /* static members */
-  @js.native
-  object MarkerClusterer extends js.Object {
+  object MarkerClusterer {
+    
+    @JSGlobal("MarkerClusterer")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The number of markers to process in one batch.
       *
       */
-    var BATCH_SIZE: Double = js.native
+    /* static member */
+    @JSGlobal("MarkerClusterer.BATCH_SIZE")
+    @js.native
+    def BATCH_SIZE: Double = js.native
+    @scala.inline
+    def BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_SIZE")(x.asInstanceOf[js.Any])
     
     /**
       * The number of markers to process in one batch (IE only).
       *
       */
-    var BATCH_SIZE_IE: Double = js.native
+    /* static member */
+    @JSGlobal("MarkerClusterer.BATCH_SIZE_IE")
+    @js.native
+    def BATCH_SIZE_IE: Double = js.native
+    @scala.inline
+    def BATCH_SIZE_IE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_SIZE_IE")(x.asInstanceOf[js.Any])
     
     /**
       * The default function for determining the label text and style
@@ -75,35 +89,44 @@ object global extends js.Object {
       * @return The information resource for the cluster.
       * @ignore
       */
-    def CALCULATOR(markers: js.Array[Marker], clusterIconStylesCount: Double): ClusterIconInfo = js.native
-    /**
-      * The default function for determining the label text and style
-      * for a cluster icon.
-      *
-      * @param markers The array of markers represented by the cluster.
-      * @param numStyles The number of marker styles available.
-      * @return The information resource for the cluster.
-      * @ignore
-      */
-    @JSName("CALCULATOR")
-    var CALCULATOR_Original: Calculator = js.native
+    /* static member */
+    @JSGlobal("MarkerClusterer.CALCULATOR")
+    @js.native
+    def CALCULATOR: Calculator = js.native
+    @scala.inline
+    def CALCULATOR_=(x: Calculator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CALCULATOR")(x.asInstanceOf[js.Any])
     
     /**
       * The default extension name for the marker cluster images.
       *
       */
-    var IMAGE_EXTENSION: java.lang.String = js.native
+    /* static member */
+    @JSGlobal("MarkerClusterer.IMAGE_EXTENSION")
+    @js.native
+    def IMAGE_EXTENSION: java.lang.String = js.native
+    @scala.inline
+    def IMAGE_EXTENSION_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAGE_EXTENSION")(x.asInstanceOf[js.Any])
     
     /**
       * The default root name for the marker cluster images.
       *
       */
-    var IMAGE_PATH: java.lang.String = js.native
+    /* static member */
+    @JSGlobal("MarkerClusterer.IMAGE_PATH")
+    @js.native
+    def IMAGE_PATH: java.lang.String = js.native
+    @scala.inline
+    def IMAGE_PATH_=(x: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAGE_PATH")(x.asInstanceOf[js.Any])
     
     /**
       * The default array of sizes for the marker cluster images.
       *
       */
-    var IMAGE_SIZES: js.Array[Double] = js.native
+    /* static member */
+    @JSGlobal("MarkerClusterer.IMAGE_SIZES")
+    @js.native
+    def IMAGE_SIZES: js.Array[Double] = js.native
+    @scala.inline
+    def IMAGE_SIZES_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAGE_SIZES")(x.asInstanceOf[js.Any])
   }
 }

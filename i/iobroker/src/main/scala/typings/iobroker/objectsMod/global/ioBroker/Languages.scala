@@ -1,5 +1,6 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iobroker.iobrokerStrings.pl
   - typings.iobroker.iobrokerStrings.`zh-cn`
 */
-trait Languages extends js.Object
+trait Languages extends StObject
 object Languages {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNamedQueryOutput extends js.Object {
+trait GetNamedQueryOutput extends StObject {
   
   /**
     * Information about the query.
@@ -21,24 +22,12 @@ object GetNamedQueryOutput {
   }
   
   @scala.inline
-  implicit class GetNamedQueryOutputOps[Self <: GetNamedQueryOutput] (val x: Self) extends AnyVal {
+  implicit class GetNamedQueryOutputMutableBuilder[Self <: GetNamedQueryOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedQuery(value: NamedQuery): Self = StObject.set(x, "NamedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamedQuery(value: NamedQuery): Self = this.set("NamedQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamedQuery: Self = this.set("NamedQuery", js.undefined)
+    def setNamedQueryUndefined: Self = StObject.set(x, "NamedQuery", js.undefined)
   }
 }

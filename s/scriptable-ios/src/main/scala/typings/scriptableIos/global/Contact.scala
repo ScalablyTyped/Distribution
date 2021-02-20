@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Contact ()
   extends typings.scriptableIos.Contact
-/* static members */
-@JSGlobal("Contact")
-@js.native
-object Contact extends js.Object {
+object Contact {
   
   /**
     * _Queues a contact to be added._
@@ -38,7 +36,12 @@ object Contact extends js.Object {
     * @param containerIdentifier - Optional. Identifier of container to add the contact to. If null is specified, the contact will be added to the default container.
     * @see https://docs.scriptable.app/contact/#add
     */
+  /* static member */
+  @JSGlobal("Contact.add")
+  @js.native
   def add(contact: typings.scriptableIos.Contact): Unit = js.native
+  @JSGlobal("Contact.add")
+  @js.native
   def add(contact: typings.scriptableIos.Contact, containerIdentifier: String): Unit = js.native
   
   /**
@@ -48,6 +51,9 @@ object Contact extends js.Object {
     * @param containers - Containers to fetch contacts from.
     * @see https://docs.scriptable.app/contact/#all
     */
+  /* static member */
+  @JSGlobal("Contact.all")
+  @js.native
   def all(containers: js.Array[typings.scriptableIos.ContactsContainer]): js.Promise[js.Array[typings.scriptableIos.Contact]] = js.native
   
   /**
@@ -60,6 +66,9 @@ object Contact extends js.Object {
     * @param contact - Contact to queue to be deleted.
     * @see https://docs.scriptable.app/contact/#delete
     */
+  /* static member */
+  @JSGlobal("Contact.delete")
+  @js.native
   def delete(contact: typings.scriptableIos.Contact): Unit = js.native
   
   /**
@@ -69,6 +78,9 @@ object Contact extends js.Object {
     * @param groups - Groups to fetch contacts from.
     * @see https://docs.scriptable.app/contact/#ingroups
     */
+  /* static member */
+  @JSGlobal("Contact.inGroups")
+  @js.native
   def inGroups(groups: js.Array[typings.scriptableIos.ContactsGroup]): js.Promise[js.Array[typings.scriptableIos.Contact]] = js.native
   
   /**
@@ -80,6 +92,9 @@ object Contact extends js.Object {
     * large batches as possible and then call `Contact.persistChanges()` when you want to persist the changes to the address book.
     * @see https://docs.scriptable.app/contact/#persistchanges
     */
+  /* static member */
+  @JSGlobal("Contact.persistChanges")
+  @js.native
   def persistChanges(): js.Promise[Unit] = js.native
   
   /**
@@ -93,5 +108,8 @@ object Contact extends js.Object {
     * @param contact - Contact to queue to be updated.
     * @see https://docs.scriptable.app/contact/#update
     */
+  /* static member */
+  @JSGlobal("Contact.update")
+  @js.native
   def update(contact: typings.scriptableIos.Contact): Unit = js.native
 }

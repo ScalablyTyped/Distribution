@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'params' | 'indices'> */
 @js.native
-trait GatherNdInputs extends js.Object {
+trait GatherNdInputs extends StObject {
   
   var indices: js.UndefOr[js.Any] = js.native
   
@@ -21,30 +22,18 @@ object GatherNdInputs {
   }
   
   @scala.inline
-  implicit class GatherNdInputsOps[Self <: GatherNdInputs] (val x: Self) extends AnyVal {
+  implicit class GatherNdInputsMutableBuilder[Self <: GatherNdInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: js.Any): Self = this.set("indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndices: Self = this.set("indices", js.undefined)
-    
-    @scala.inline
-    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

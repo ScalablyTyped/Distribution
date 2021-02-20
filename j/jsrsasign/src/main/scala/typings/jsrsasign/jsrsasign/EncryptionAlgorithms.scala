@@ -1,5 +1,6 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsrsasign.jsrsasignStrings.`AES-192-CBC`
   - typings.jsrsasign.jsrsasignStrings.`AES-256-CBC`
 */
-trait EncryptionAlgorithms extends js.Object
+trait EncryptionAlgorithms extends StObject
 object EncryptionAlgorithms {
   
   @scala.inline

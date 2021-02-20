@@ -3,18 +3,18 @@ package typings.samchon
 import typings.samchon.iprotocolMod.IProtocol
 import typings.samchon.sharedWorkerCommunicatorMod.SharedWorkerCommunicator
 import typings.std.MessagePort
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/protocol/communicator/client_driver/SharedWorkerClientDriver", JSImport.Namespace)
-@js.native
-object sharedWorkerClientDriverMod extends js.Object {
+object sharedWorkerClientDriverMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.samchon.iprotocolMod.IProtocol because Already inherited
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
-  - typings.samchon.iclientdriverMod.IClientDriver because var conflicts: onClose. Inlined listen */ @js.native
+  - typings.samchon.iclientdriverMod.IClientDriver because var conflicts: onClose. Inlined listen */ @JSImport("samchon/protocol/communicator/client_driver/SharedWorkerClientDriver", "SharedWorkerClientDriver")
+  @js.native
   class SharedWorkerClientDriver protected () extends SharedWorkerCommunicator {
     /**
       * Construct from a MessagePort object.

@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IParticleEmitterType extends js.Object {
+trait IParticleEmitterType extends StObject {
   
   /**
     * Called by the GPUParticleSystem to setup the update shader
@@ -73,39 +74,27 @@ object IParticleEmitterType {
   }
   
   @scala.inline
-  implicit class IParticleEmitterTypeOps[Self <: IParticleEmitterType] (val x: Self) extends AnyVal {
+  implicit class IParticleEmitterTypeMutableBuilder[Self <: IParticleEmitterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyToShader(value: Effect => Unit): Self = StObject.set(x, "applyToShader", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetClassName(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEffectDefines(value: () => String): Self = StObject.set(x, "getEffectDefines", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyToShader(value: Effect => Unit): Self = this.set("applyToShader", js.Any.fromFunction1(value))
+    def setParse(value: (js.Any, Nullable[Scene]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetClassName(value: () => String): Self = this.set("getClassName", js.Any.fromFunction0(value))
+    def setSerialize(value: () => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEffectDefines(value: () => String): Self = this.set("getEffectDefines", js.Any.fromFunction0(value))
+    def setStartDirectionFunction(value: (Matrix, Vector3, Particle, Boolean) => Unit): Self = StObject.set(x, "startDirectionFunction", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setParse(value: (js.Any, Nullable[Scene]) => Unit): Self = this.set("parse", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSerialize(value: () => js.Any): Self = this.set("serialize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartDirectionFunction(value: (Matrix, Vector3, Particle, Boolean) => Unit): Self = this.set("startDirectionFunction", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStartPositionFunction(value: (Matrix, Vector3, Particle, Boolean) => Unit): Self = this.set("startPositionFunction", js.Any.fromFunction4(value))
+    def setStartPositionFunction(value: (Matrix, Vector3, Particle, Boolean) => Unit): Self = StObject.set(x, "startPositionFunction", js.Any.fromFunction4(value))
   }
 }

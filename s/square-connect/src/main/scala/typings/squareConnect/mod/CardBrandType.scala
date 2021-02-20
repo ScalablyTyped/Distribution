@@ -1,5 +1,6 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.squareConnect.squareConnectStrings.AMERICAN_EXPRESS
   - typings.squareConnect.squareConnectStrings.SQUARE_GIFT_CARD
 */
-trait CardBrandType extends js.Object
+trait CardBrandType extends StObject
 object CardBrandType {
   
   @scala.inline

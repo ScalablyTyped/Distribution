@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientPubsublite.anon.Parent
 import typings.maximMazurokGapiClientPubsublite.anon.PrettyPrint
 import typings.maximMazurokGapiClientPubsublite.anon.QuotaUser
 import typings.maximMazurokGapiClientPubsublite.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicsResource extends js.Object {
+trait TopicsResource extends StObject {
   
   /** Compute statistics about a range of messages in a given topic and partition. */
   def computeMessageStats(request: Resource): Request[ComputeMessageStatsResponse] = js.native

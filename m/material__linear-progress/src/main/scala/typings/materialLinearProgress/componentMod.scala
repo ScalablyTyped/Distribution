@@ -4,27 +4,30 @@ import typings.materialBase.componentMod.MDCComponent
 import typings.materialLinearProgress.foundationMod.MDCLinearProgressFoundation
 import typings.materialProgressIndicator.mod.MDCProgressIndicator
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/linear-progress/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/linear-progress/component", "MDCLinearProgress")
   @js.native
-  class MDCLinearProgress ()
+  class MDCLinearProgress protected ()
     extends MDCComponent[MDCLinearProgressFoundation]
        with MDCProgressIndicator {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCLinearProgressFoundation, args: js.Any*) = this()
     
     def buffer_=(value: Double): Unit = js.native
     
     def reverse_=(value: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCLinearProgress extends js.Object {
+  object MDCLinearProgress {
     
+    @JSImport("@material/linear-progress/component", "MDCLinearProgress.attachTo")
+    @js.native
     def attachTo(root: Element): MDCLinearProgress = js.native
   }
 }

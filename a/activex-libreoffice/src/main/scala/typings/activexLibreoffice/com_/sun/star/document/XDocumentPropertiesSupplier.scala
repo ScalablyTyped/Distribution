@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.document
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0
   */
 @js.native
-trait XDocumentPropertiesSupplier extends js.Object {
+trait XDocumentPropertiesSupplier extends StObject {
   
   /**
     * provides the document properties object.
@@ -36,24 +37,12 @@ object XDocumentPropertiesSupplier {
   }
   
   @scala.inline
-  implicit class XDocumentPropertiesSupplierOps[Self <: XDocumentPropertiesSupplier] (val x: Self) extends AnyVal {
+  implicit class XDocumentPropertiesSupplierMutableBuilder[Self <: XDocumentPropertiesSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentProperties(value: XDocumentProperties): Self = this.set("DocumentProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDocumentProperties(value: () => XDocumentProperties): Self = this.set("getDocumentProperties", js.Any.fromFunction0(value))
+    def setGetDocumentProperties(value: () => XDocumentProperties): Self = StObject.set(x, "getDocumentProperties", js.Any.fromFunction0(value))
   }
 }

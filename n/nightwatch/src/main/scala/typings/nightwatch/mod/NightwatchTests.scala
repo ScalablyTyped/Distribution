@@ -1,5 +1,6 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nightwatch.mod.NightwatchTestFunctions
   - typings.nightwatch.mod.NightwatchTestHooks
 */
-trait NightwatchTests extends js.Object
+trait NightwatchTests extends StObject
 object NightwatchTests {
   
   @scala.inline
-  def NightwatchTestFunctions(): NightwatchTests = {
+  def NightwatchTestFunctions(): typings.nightwatch.mod.NightwatchTestFunctions = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[NightwatchTests]
+    __obj.asInstanceOf[typings.nightwatch.mod.NightwatchTestFunctions]
   }
   
   @scala.inline
-  def NightwatchTestHooks(): NightwatchTests = {
+  def NightwatchTestHooks(): typings.nightwatch.mod.NightwatchTestHooks = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[NightwatchTests]
+    __obj.asInstanceOf[typings.nightwatch.mod.NightwatchTestHooks]
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessingError extends js.Object {
+trait ProcessingError extends StObject {
   
   /** Error code indicating the nature of the error. */
   var code: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object ProcessingError {
   }
   
   @scala.inline
-  implicit class ProcessingErrorOps[Self <: ProcessingError] (val x: Self) extends AnyVal {
+  implicit class ProcessingErrorMutableBuilder[Self <: ProcessingError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setFieldViolations(value: js.Array[FieldViolation]): Self = StObject.set(x, "fieldViolations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setFieldViolationsUndefined: Self = StObject.set(x, "fieldViolations", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setFieldViolationsVarargs(value: FieldViolation*): Self = this.set("fieldViolations", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldViolations(value: js.Array[FieldViolation]): Self = this.set("fieldViolations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldViolations: Self = this.set("fieldViolations", js.undefined)
+    def setFieldViolationsVarargs(value: FieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value :_*))
   }
 }

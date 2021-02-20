@@ -1,12 +1,13 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "TaskRouterCapability")
 @js.native
-class TaskRouterCapability protected () extends js.Object {
+class TaskRouterCapability protected () extends StObject {
   def this(accountSid: String, authToken: String, workspaceSid: String, channelId: String) = this()
   
   var _baseUrl: String = js.native

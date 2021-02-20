@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsBrowser.typesDescribeKeyInputMod.DescribeKeyInput
 import typings.awsSdkClientKmsBrowser.typesDescribeKeyOutputMod.DescribeKeyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/commands/DescribeKeyCommand", JSImport.Namespace)
-@js.native
-object describeKeyCommandMod extends js.Object {
+object describeKeyCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-browser/commands/DescribeKeyCommand", "DescribeKeyCommand")
   @js.native
   class DescribeKeyCommand protected () extends Command[
           InputTypesUnion, 

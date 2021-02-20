@@ -1,11 +1,12 @@
 package typings.mssql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBulkOptions extends js.Object {
+trait IBulkOptions extends StObject {
   
   /** Honors constraints during bulk load, using T-SQL CHECK_CONSTRAINTS. (default: false) */
   var checkConstraints: js.UndefOr[Boolean] = js.native
@@ -28,42 +29,30 @@ object IBulkOptions {
   }
   
   @scala.inline
-  implicit class IBulkOptionsOps[Self <: IBulkOptions] (val x: Self) extends AnyVal {
+  implicit class IBulkOptionsMutableBuilder[Self <: IBulkOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckConstraints(value: Boolean): Self = StObject.set(x, "checkConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckConstraintsUndefined: Self = StObject.set(x, "checkConstraints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFireTriggers(value: Boolean): Self = StObject.set(x, "fireTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckConstraints(value: Boolean): Self = this.set("checkConstraints", value.asInstanceOf[js.Any])
+    def setFireTriggersUndefined: Self = StObject.set(x, "fireTriggers", js.undefined)
     
     @scala.inline
-    def deleteCheckConstraints: Self = this.set("checkConstraints", js.undefined)
+    def setKeepNulls(value: Boolean): Self = StObject.set(x, "keepNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFireTriggers(value: Boolean): Self = this.set("fireTriggers", value.asInstanceOf[js.Any])
+    def setKeepNullsUndefined: Self = StObject.set(x, "keepNulls", js.undefined)
     
     @scala.inline
-    def deleteFireTriggers: Self = this.set("fireTriggers", js.undefined)
+    def setTableLock(value: Boolean): Self = StObject.set(x, "tableLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepNulls(value: Boolean): Self = this.set("keepNulls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeepNulls: Self = this.set("keepNulls", js.undefined)
-    
-    @scala.inline
-    def setTableLock(value: Boolean): Self = this.set("tableLock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableLock: Self = this.set("tableLock", js.undefined)
+    def setTableLockUndefined: Self = StObject.set(x, "tableLock", js.undefined)
   }
 }

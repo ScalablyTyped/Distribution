@@ -12,16 +12,15 @@ import typings.typeorm.typesColumnTypesMod.ColumnType
 import typings.typeorm.typesDataTypeDefaultsMod.DataTypeDefaults
 import typings.typeorm.typesMappedColumnTypesMod.MappedColumnTypes
 import typings.typeorm.typesReplicationModeMod.ReplicationMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/Driver", JSImport.Namespace)
-@js.native
-object driverDriverMod extends js.Object {
+object driverDriverMod {
   
   @js.native
-  trait Driver extends js.Object {
+  trait Driver extends StObject {
     
     /**
       * Makes any action after connection (e.g. create extensions in Postgres driver).

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdvertiserAndBrand extends js.Object {
+trait AdvertiserAndBrand extends StObject {
   
   /** See https://storage.googleapis.com/adx-rtb-dictionaries/advertisers.txt for the list of possible values. Can be used to filter the response of the creatives.list method. */
   var advertiserId: js.UndefOr[String] = js.native
@@ -31,42 +32,30 @@ object AdvertiserAndBrand {
   }
   
   @scala.inline
-  implicit class AdvertiserAndBrandOps[Self <: AdvertiserAndBrand] (val x: Self) extends AnyVal {
+  implicit class AdvertiserAndBrandMutableBuilder[Self <: AdvertiserAndBrand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserName(value: String): Self = StObject.set(x, "advertiserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserNameUndefined: Self = StObject.set(x, "advertiserName", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserName(value: String): Self = this.set("advertiserName", value.asInstanceOf[js.Any])
+    def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserName: Self = this.set("advertiserName", js.undefined)
+    def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrandId(value: String): Self = this.set("brandId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrandId: Self = this.set("brandId", js.undefined)
-    
-    @scala.inline
-    def setBrandName(value: String): Self = this.set("brandName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrandName: Self = this.set("brandName", js.undefined)
+    def setBrandNameUndefined: Self = StObject.set(x, "brandName", js.undefined)
   }
 }

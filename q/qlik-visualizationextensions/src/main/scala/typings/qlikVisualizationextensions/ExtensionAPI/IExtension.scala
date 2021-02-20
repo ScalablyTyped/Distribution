@@ -1,12 +1,13 @@
 package typings.qlikVisualizationextensions.ExtensionAPI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExtension extends js.Object {
+trait IExtension extends StObject {
   
   var controller: js.UndefOr[js.Any] = js.native
   
@@ -29,54 +30,42 @@ object IExtension {
   }
   
   @scala.inline
-  implicit class IExtensionOps[Self <: IExtension] (val x: Self) extends AnyVal {
+  implicit class IExtensionMutableBuilder[Self <: IExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinition(value: IDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: js.Any): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setInitialProperties(value: IInitialProperties): Self = StObject.set(x, "initialProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: IDefinition): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setInitialPropertiesUndefined: Self = StObject.set(x, "initialProperties", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setPaint(value: (/* $element */ HTMLElement, /* layout */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "paint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInitialProperties(value: IInitialProperties): Self = this.set("initialProperties", value.asInstanceOf[js.Any])
+    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
     @scala.inline
-    def deleteInitialProperties: Self = this.set("initialProperties", js.undefined)
+    def setSupport(value: ISupport): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaint(value: (/* $element */ HTMLElement, /* layout */ js.UndefOr[js.Any]) => Unit): Self = this.set("paint", js.Any.fromFunction2(value))
+    def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
     
     @scala.inline
-    def deletePaint: Self = this.set("paint", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupport(value: ISupport): Self = this.set("support", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupport: Self = this.set("support", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

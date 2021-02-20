@@ -1,16 +1,15 @@
 package typings.triePrefixTree
 
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait AddWord extends js.Object {
+  trait AddWord extends StObject {
     
     /**
       * Add a new word to the trie
@@ -89,7 +88,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait CountPrefix extends js.Object {
+  trait CountPrefix extends StObject {
     
     /**
       * Add a new word to the trie

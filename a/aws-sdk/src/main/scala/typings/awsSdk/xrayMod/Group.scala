@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends js.Object {
+trait Group extends StObject {
   
   /**
     * The filter expression defining the parameters to include traces.
@@ -36,42 +37,30 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterExpression(value: String): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterExpressionUndefined: Self = StObject.set(x, "FilterExpression", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupARN(value: String): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterExpression(value: String): Self = this.set("FilterExpression", value.asInstanceOf[js.Any])
+    def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
     
     @scala.inline
-    def deleteFilterExpression: Self = this.set("FilterExpression", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupARN(value: String): Self = this.set("GroupARN", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteGroupARN: Self = this.set("GroupARN", js.undefined)
+    def setInsightsConfiguration(value: InsightsConfiguration): Self = StObject.set(x, "InsightsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
-    
-    @scala.inline
-    def setInsightsConfiguration(value: InsightsConfiguration): Self = this.set("InsightsConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsightsConfiguration: Self = this.set("InsightsConfiguration", js.undefined)
+    def setInsightsConfigurationUndefined: Self = StObject.set(x, "InsightsConfiguration", js.undefined)
   }
 }

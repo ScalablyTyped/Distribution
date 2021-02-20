@@ -1,14 +1,13 @@
 package typings.rollupPluginTypescript2
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rollup-plugin-typescript2/dist/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("rollup-plugin-typescript2/dist/context", "ConsoleContext")
   @js.native
   class ConsoleContext protected () extends IContext {
     def this(verbosity: VerbosityLevel) = this()
@@ -20,7 +19,33 @@ object contextMod extends js.Object {
   }
   
   @js.native
-  trait IContext extends js.Object {
+  sealed trait VerbosityLevel extends StObject
+  @JSImport("rollup-plugin-typescript2/dist/context", "VerbosityLevel")
+  @js.native
+  object VerbosityLevel extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[VerbosityLevel with Double] = js.native
+    
+    @js.native
+    sealed trait Debug extends VerbosityLevel
+    /* 3 */ val Debug: typings.rollupPluginTypescript2.contextMod.VerbosityLevel.Debug with Double = js.native
+    
+    @js.native
+    sealed trait Error extends VerbosityLevel
+    /* 0 */ val Error: typings.rollupPluginTypescript2.contextMod.VerbosityLevel.Error with Double = js.native
+    
+    @js.native
+    sealed trait Info extends VerbosityLevel
+    /* 2 */ val Info: typings.rollupPluginTypescript2.contextMod.VerbosityLevel.Info with Double = js.native
+    
+    @js.native
+    sealed trait Warning extends VerbosityLevel
+    /* 1 */ val Warning: typings.rollupPluginTypescript2.contextMod.VerbosityLevel.Warning with Double = js.native
+  }
+  
+  @js.native
+  trait IContext extends StObject {
     
     def debug(message: String): Unit = js.native
     def debug(message: js.Function0[String]): Unit = js.native
@@ -33,34 +58,5 @@ object contextMod extends js.Object {
     
     def warn(message: String): Unit = js.native
     def warn(message: js.Function0[String]): Unit = js.native
-  }
-  
-  @js.native
-  sealed trait VerbosityLevel extends js.Object
-  @js.native
-  object VerbosityLevel extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[VerbosityLevel with Double] = js.native
-    
-    @js.native
-    sealed trait Debug extends VerbosityLevel
-    /* 3 */ @js.native
-    object Debug extends TopLevel[Debug with Double]
-    
-    @js.native
-    sealed trait Error extends VerbosityLevel
-    /* 0 */ @js.native
-    object Error extends TopLevel[Error with Double]
-    
-    @js.native
-    sealed trait Info extends VerbosityLevel
-    /* 2 */ @js.native
-    object Info extends TopLevel[Info with Double]
-    
-    @js.native
-    sealed trait Warning extends VerbosityLevel
-    /* 1 */ @js.native
-    object Warning extends TopLevel[Warning with Double]
   }
 }

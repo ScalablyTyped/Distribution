@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object RectHeightStyleEnumValues {
   }
   
   @scala.inline
-  implicit class RectHeightStyleEnumValuesOps[Self <: RectHeightStyleEnumValues] (val x: Self) extends AnyVal {
+  implicit class RectHeightStyleEnumValuesMutableBuilder[Self <: RectHeightStyleEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeLineSpacingBottom(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeLineSpacingMiddle(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingMiddle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeLineSpacingTop(value: RectHeightStyle): Self = StObject.set(x, "IncludeLineSpacingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLineSpacingBottom(value: RectHeightStyle): Self = this.set("IncludeLineSpacingBottom", value.asInstanceOf[js.Any])
+    def setMax(value: RectHeightStyle): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLineSpacingMiddle(value: RectHeightStyle): Self = this.set("IncludeLineSpacingMiddle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeLineSpacingTop(value: RectHeightStyle): Self = this.set("IncludeLineSpacingTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax(value: RectHeightStyle): Self = this.set("Max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTight(value: RectHeightStyle): Self = this.set("Tight", value.asInstanceOf[js.Any])
+    def setTight(value: RectHeightStyle): Self = StObject.set(x, "Tight", value.asInstanceOf[js.Any])
   }
 }

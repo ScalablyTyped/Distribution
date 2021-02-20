@@ -5,12 +5,13 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.seleniumWebdriver.httpMod.HttpClient
 import typings.seleniumWebdriver.httpMod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofhttp extends js.Object {
+trait Typeofhttp extends StObject {
   
   var Executor: Instantiable1[/* client */ HttpClient, typings.seleniumWebdriver.httpMod.Executor] = js.native
   

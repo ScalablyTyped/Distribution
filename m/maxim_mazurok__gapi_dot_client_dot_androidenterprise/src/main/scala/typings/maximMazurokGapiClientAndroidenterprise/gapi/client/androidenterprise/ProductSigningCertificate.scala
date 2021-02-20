@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductSigningCertificate extends js.Object {
+trait ProductSigningCertificate extends StObject {
   
   /** The base64 urlsafe encoded SHA1 hash of the certificate. (This field is deprecated in favor of SHA2-256. It should not be used and may be removed at any time.) */
   var certificateHashSha1: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ProductSigningCertificate {
   }
   
   @scala.inline
-  implicit class ProductSigningCertificateOps[Self <: ProductSigningCertificate] (val x: Self) extends AnyVal {
+  implicit class ProductSigningCertificateMutableBuilder[Self <: ProductSigningCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateHashSha1(value: String): Self = StObject.set(x, "certificateHashSha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateHashSha1Undefined: Self = StObject.set(x, "certificateHashSha1", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateHashSha256(value: String): Self = StObject.set(x, "certificateHashSha256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateHashSha1(value: String): Self = this.set("certificateHashSha1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateHashSha1: Self = this.set("certificateHashSha1", js.undefined)
-    
-    @scala.inline
-    def setCertificateHashSha256(value: String): Self = this.set("certificateHashSha256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateHashSha256: Self = this.set("certificateHashSha256", js.undefined)
+    def setCertificateHashSha256Undefined: Self = StObject.set(x, "certificateHashSha256", js.undefined)
   }
 }

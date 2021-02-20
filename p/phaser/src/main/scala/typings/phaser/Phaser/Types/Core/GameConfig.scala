@@ -7,12 +7,13 @@ import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameConfig extends js.Object {
+trait GameConfig extends StObject {
   
   /**
     * The Audio Configuration object.
@@ -180,215 +181,203 @@ object GameConfig {
   }
   
   @scala.inline
-  implicit class GameConfigOps[Self <: GameConfig] (val x: Self) extends AnyVal {
+  implicit class GameConfigMutableBuilder[Self <: GameConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: AudioConfig): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: AudioConfig): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setBackgroundColor(value: String | Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setBanner(value: Boolean | BannerConfig): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String | Double): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setCallbacks(value: CallbacksConfig): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBanner(value: Boolean | BannerConfig): Self = this.set("banner", value.asInstanceOf[js.Any])
+    def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
     @scala.inline
-    def deleteBanner: Self = this.set("banner", js.undefined)
+    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbacks(value: CallbacksConfig): Self = this.set("callbacks", value.asInstanceOf[js.Any])
+    def setCanvasStyle(value: String): Self = StObject.set(x, "canvasStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallbacks: Self = this.set("callbacks", js.undefined)
+    def setCanvasStyleUndefined: Self = StObject.set(x, "canvasStyle", js.undefined)
     
     @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
     @scala.inline
-    def deleteCanvas: Self = this.set("canvas", js.undefined)
+    def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasStyle(value: String): Self = this.set("canvasStyle", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCanvasStyle: Self = this.set("canvasStyle", js.undefined)
+    def setCustomEnvironment(value: Boolean): Self = StObject.set(x, "customEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: CanvasRenderingContext2D): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setCustomEnvironmentUndefined: Self = StObject.set(x, "customEnvironment", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setDisableContextMenu(value: Boolean): Self = StObject.set(x, "disableContextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomEnvironment(value: Boolean): Self = this.set("customEnvironment", value.asInstanceOf[js.Any])
+    def setDisableContextMenuUndefined: Self = StObject.set(x, "disableContextMenu", js.undefined)
     
     @scala.inline
-    def deleteCustomEnvironment: Self = this.set("customEnvironment", js.undefined)
+    def setDom(value: DOMContainerConfig): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableContextMenu(value: Boolean): Self = this.set("disableContextMenu", value.asInstanceOf[js.Any])
+    def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
     
     @scala.inline
-    def deleteDisableContextMenu: Self = this.set("disableContextMenu", js.undefined)
+    def setFps(value: FPSConfig): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDom(value: DOMContainerConfig): Self = this.set("dom", value.asInstanceOf[js.Any])
+    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
     @scala.inline
-    def deleteDom: Self = this.set("dom", js.undefined)
+    def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFps(value: FPSConfig): Self = this.set("fps", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFps: Self = this.set("fps", js.undefined)
+    def setImages(value: ImagesConfig): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integer | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInput(value: Boolean | InputConfig): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: ImagesConfig): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setLoader(value: LoaderConfig): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: Boolean | InputConfig): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: LoaderConfig): Self = this.set("loader", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteLoader: Self = this.set("loader", js.undefined)
+    def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: HTMLElement | String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setPlugins(value: PluginObject | js.Array[PluginObjectItem]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysics(value: PhysicsConfig): Self = this.set("physics", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePhysics: Self = this.set("physics", js.undefined)
+    def setPluginsVarargs(value: PluginObjectItem*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: PluginObjectItem*): Self = this.set("plugins", js.Array(value :_*))
+    def setRender(value: RenderConfig): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: PluginObject | js.Array[PluginObjectItem]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: RenderConfig): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setScale(value: ScaleConfig): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
-    
-    @scala.inline
-    def setScale(value: ScaleConfig): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setSceneVarargs(value: (CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig)*): Self = this.set("scene", js.Array(value :_*))
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
     def setScene(
       value: Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function
-    ): Self = this.set("scene", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScene: Self = this.set("scene", js.undefined)
+    def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
     @scala.inline
-    def setSeedVarargs(value: String*): Self = this.set("seed", js.Array(value :_*))
+    def setSceneVarargs(value: (CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig)*): Self = StObject.set(x, "scene", js.Array(value :_*))
     
     @scala.inline
-    def setSeed(value: js.Array[String]): Self = this.set("seed", value.asInstanceOf[js.Any])
+    def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value :_*))
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: integer | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

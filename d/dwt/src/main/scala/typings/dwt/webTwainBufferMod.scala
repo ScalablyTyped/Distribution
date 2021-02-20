@@ -2,13 +2,12 @@ package typings.dwt
 
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTImageType
 import typings.dwt.webTwainIOMod.WebTwainIO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dwt/WebTwain.Buffer", JSImport.Namespace)
-@js.native
-object webTwainBufferMod extends js.Object {
+object webTwainBufferMod {
   
   @js.native
   trait WebTwainBuffer extends WebTwainIO {

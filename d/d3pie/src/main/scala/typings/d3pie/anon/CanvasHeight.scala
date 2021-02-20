@@ -1,11 +1,12 @@
 package typings.d3pie.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasHeight extends js.Object {
+trait CanvasHeight extends StObject {
   
   var canvasHeight: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object CanvasHeight {
   }
   
   @scala.inline
-  implicit class CanvasHeightOps[Self <: CanvasHeight] (val x: Self) extends AnyVal {
+  implicit class CanvasHeightMutableBuilder[Self <: CanvasHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasHeight(value: Double): Self = StObject.set(x, "canvasHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasHeightUndefined: Self = StObject.set(x, "canvasHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanvasWidth(value: Double): Self = StObject.set(x, "canvasWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasHeight(value: Double): Self = this.set("canvasHeight", value.asInstanceOf[js.Any])
+    def setCanvasWidthUndefined: Self = StObject.set(x, "canvasWidth", js.undefined)
     
     @scala.inline
-    def deleteCanvasHeight: Self = this.set("canvasHeight", js.undefined)
+    def setPieInnerRadius(value: String | Double): Self = StObject.set(x, "pieInnerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasWidth(value: Double): Self = this.set("canvasWidth", value.asInstanceOf[js.Any])
+    def setPieInnerRadiusUndefined: Self = StObject.set(x, "pieInnerRadius", js.undefined)
     
     @scala.inline
-    def deleteCanvasWidth: Self = this.set("canvasWidth", js.undefined)
+    def setPieOuterRadius(value: String | Double): Self = StObject.set(x, "pieOuterRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieInnerRadius(value: String | Double): Self = this.set("pieInnerRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePieInnerRadius: Self = this.set("pieInnerRadius", js.undefined)
-    
-    @scala.inline
-    def setPieOuterRadius(value: String | Double): Self = this.set("pieOuterRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePieOuterRadius: Self = this.set("pieOuterRadius", js.undefined)
+    def setPieOuterRadiusUndefined: Self = StObject.set(x, "pieOuterRadius", js.undefined)
   }
 }

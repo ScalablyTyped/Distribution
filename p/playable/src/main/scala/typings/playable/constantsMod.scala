@@ -1,6 +1,5 @@
 package typings.playable
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.playable.engineStateMod.EngineState
 import typings.playable.errorsMod.Error
 import typings.playable.liveStateMod.LiveState
@@ -9,16 +8,16 @@ import typings.playable.mediaStreamMod.MediaStreamType
 import typings.playable.textLabelsMod.TextLabel
 import typings.playable.uiMod.UIEvent
 import typings.playable.videoMod.VideoEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
+object constantsMod {
   
+  @JSImport("playable/dist/src/constants", "ENGINE_STATES")
   @js.native
-  object ENGINE_STATES extends js.Object {
+  object ENGINE_STATES extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[EngineState with String] = js.native
@@ -44,8 +43,9 @@ object constantsMod extends js.Object {
     /* "engine-state/waiting" */ val WAITING: typings.playable.engineStateMod.EngineState.WAITING with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "ERRORS")
   @js.native
-  object ERRORS extends js.Object {
+  object ERRORS extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[Error with String] = js.native
@@ -69,8 +69,9 @@ object constantsMod extends js.Object {
     /* "error-unknown" */ val UNKNOWN: typings.playable.errorsMod.Error.UNKNOWN with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "EngineState")
   @js.native
-  object EngineState extends js.Object {
+  object EngineState extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.engineStateMod.EngineState with String] = js.native
@@ -96,8 +97,9 @@ object constantsMod extends js.Object {
     /* "engine-state/waiting" */ val WAITING: typings.playable.engineStateMod.EngineState.WAITING with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "Error")
   @js.native
-  object Error extends js.Object {
+  object Error extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.errorsMod.Error with String] = js.native
@@ -121,8 +123,9 @@ object constantsMod extends js.Object {
     /* "error-unknown" */ val UNKNOWN: typings.playable.errorsMod.Error.UNKNOWN with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "LIVE_STATES")
   @js.native
-  object LIVE_STATES extends js.Object {
+  object LIVE_STATES extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[LiveState with String] = js.native
@@ -138,8 +141,9 @@ object constantsMod extends js.Object {
     /* "live-state/sync" */ val SYNC: typings.playable.liveStateMod.LiveState.SYNC with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "LiveState")
   @js.native
-  object LiveState extends js.Object {
+  object LiveState extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.liveStateMod.LiveState with String] = js.native
@@ -155,8 +159,9 @@ object constantsMod extends js.Object {
     /* "live-state/sync" */ val SYNC: typings.playable.liveStateMod.LiveState.SYNC with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "MEDIA_STREAM_DELIVERY_PRIORITY")
   @js.native
-  object MEDIA_STREAM_DELIVERY_PRIORITY extends js.Object {
+  object MEDIA_STREAM_DELIVERY_PRIORITY extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[MediaStreamDeliveryPriority with Double] = js.native
@@ -170,8 +175,9 @@ object constantsMod extends js.Object {
     /* 0 */ val NATIVE_PROGRESSIVE: typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.NATIVE_PROGRESSIVE with Double = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "MEDIA_STREAM_TYPES")
   @js.native
-  object MEDIA_STREAM_TYPES extends js.Object {
+  object MEDIA_STREAM_TYPES extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[MediaStreamType with String] = js.native
@@ -191,8 +197,9 @@ object constantsMod extends js.Object {
     /* "WEBM" */ val WEBM: typings.playable.mediaStreamMod.MediaStreamType.WEBM with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "MediaStreamDeliveryPriority")
   @js.native
-  object MediaStreamDeliveryPriority extends js.Object {
+  object MediaStreamDeliveryPriority extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.playable.mediaStreamMod.MediaStreamDeliveryPriority with Double] = js.native
@@ -206,8 +213,9 @@ object constantsMod extends js.Object {
     /* 0 */ val NATIVE_PROGRESSIVE: typings.playable.mediaStreamMod.MediaStreamDeliveryPriority.NATIVE_PROGRESSIVE with Double = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "MediaStreamType")
   @js.native
-  object MediaStreamType extends js.Object {
+  object MediaStreamType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.mediaStreamMod.MediaStreamType with String] = js.native
@@ -227,11 +235,9 @@ object constantsMod extends js.Object {
     /* "WEBM" */ val WEBM: typings.playable.mediaStreamMod.MediaStreamType.WEBM with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "TEXT_LABELS")
   @js.native
-  object MimeToStreamTypeMap extends /* mimeType */ StringDictionary[MediaStreamType]
-  
-  @js.native
-  object TEXT_LABELS extends js.Object {
+  object TEXT_LABELS extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[TextLabel with String] = js.native
@@ -287,8 +293,9 @@ object constantsMod extends js.Object {
     /* "volume-control-value" */ val VOLUME_CONTROL_VALUE: typings.playable.textLabelsMod.TextLabel.VOLUME_CONTROL_VALUE with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "TextLabel")
   @js.native
-  object TextLabel extends js.Object {
+  object TextLabel extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.textLabelsMod.TextLabel with String] = js.native
@@ -344,8 +351,9 @@ object constantsMod extends js.Object {
     /* "volume-control-value" */ val VOLUME_CONTROL_VALUE: typings.playable.textLabelsMod.TextLabel.VOLUME_CONTROL_VALUE with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "UIEvent")
   @js.native
-  object UIEvent extends js.Object {
+  object UIEvent extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.uiMod.UIEvent with String] = js.native
@@ -441,8 +449,9 @@ object constantsMod extends js.Object {
     /* "ui-events/volume-change" */ val VOLUME_CHANGE: typings.playable.uiMod.UIEvent.VOLUME_CHANGE with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "UI_EVENTS")
   @js.native
-  object UI_EVENTS extends js.Object {
+  object UI_EVENTS extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[UIEvent with String] = js.native
@@ -538,8 +547,9 @@ object constantsMod extends js.Object {
     /* "ui-events/volume-change" */ val VOLUME_CHANGE: typings.playable.uiMod.UIEvent.VOLUME_CHANGE with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "VIDEO_EVENTS")
   @js.native
-  object VIDEO_EVENTS extends js.Object {
+  object VIDEO_EVENTS extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[VideoEvent with String] = js.native
@@ -577,8 +587,9 @@ object constantsMod extends js.Object {
     /* "video-events/volume-changed" */ val VOLUME_CHANGED: typings.playable.videoMod.VideoEvent.VOLUME_CHANGED with String = js.native
   }
   
+  @JSImport("playable/dist/src/constants", "VideoEvent")
   @js.native
-  object VideoEvent extends js.Object {
+  object VideoEvent extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.playable.videoMod.VideoEvent with String] = js.native

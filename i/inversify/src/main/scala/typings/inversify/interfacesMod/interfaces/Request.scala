@@ -1,11 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   def addChildRequest(serviceIdentifier: ServiceIdentifier[_], bindings: js.Array[Binding[_]], target: Target): Request = js.native
   def addChildRequest(serviceIdentifier: ServiceIdentifier[_], bindings: Binding[_], target: Target): Request = js.native

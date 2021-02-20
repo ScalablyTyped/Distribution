@@ -1,11 +1,12 @@
 package typings.reactNativeFs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadFileOptions extends js.Object {
+trait DownloadFileOptions extends StObject {
   
   // An object of headers to be passed to the server
   var background: js.UndefOr[Boolean] = js.native
@@ -53,96 +54,84 @@ object DownloadFileOptions {
   }
   
   @scala.inline
-  implicit class DownloadFileOptionsOps[Self <: DownloadFileOptions] (val x: Self) extends AnyVal {
+  implicit class DownloadFileOptionsMutableBuilder[Self <: DownloadFileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundTimeout(value: Double): Self = StObject.set(x, "backgroundTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundTimeoutUndefined: Self = StObject.set(x, "backgroundTimeout", js.undefined)
     
     @scala.inline
-    def setFromUrl(value: String): Self = this.set("fromUrl", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def setToFile(value: String): Self = this.set("toFile", value.asInstanceOf[js.Any])
+    def setBegin(value: /* res */ DownloadBeginCallbackResult => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundTimeout(value: Double): Self = this.set("backgroundTimeout", value.asInstanceOf[js.Any])
+    def setCacheableUndefined: Self = StObject.set(x, "cacheable", js.undefined)
     
     @scala.inline
-    def deleteBackgroundTimeout: Self = this.set("backgroundTimeout", js.undefined)
+    def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBegin(value: /* res */ DownloadBeginCallbackResult => Unit): Self = this.set("begin", js.Any.fromFunction1(value))
+    def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
     
     @scala.inline
-    def deleteBegin: Self = this.set("begin", js.undefined)
+    def setDiscretionary(value: Boolean): Self = StObject.set(x, "discretionary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheable(value: Boolean): Self = this.set("cacheable", value.asInstanceOf[js.Any])
+    def setDiscretionaryUndefined: Self = StObject.set(x, "discretionary", js.undefined)
     
     @scala.inline
-    def deleteCacheable: Self = this.set("cacheable", js.undefined)
+    def setFromUrl(value: String): Self = StObject.set(x, "fromUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTimeout(value: Double): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setDiscretionary(value: Boolean): Self = this.set("discretionary", value.asInstanceOf[js.Any])
+    def setProgress(value: /* res */ DownloadProgressCallbackResult => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDiscretionary: Self = this.set("discretionary", js.undefined)
+    def setProgressDivider(value: Double): Self = StObject.set(x, "progressDivider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setProgressDividerUndefined: Self = StObject.set(x, "progressDivider", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setProgressInterval(value: Double): Self = StObject.set(x, "progressInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: /* res */ DownloadProgressCallbackResult => Unit): Self = this.set("progress", js.Any.fromFunction1(value))
+    def setProgressIntervalUndefined: Self = StObject.set(x, "progressInterval", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def setProgressDivider(value: Double): Self = this.set("progressDivider", value.asInstanceOf[js.Any])
+    def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressDivider: Self = this.set("progressDivider", js.undefined)
+    def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
     
     @scala.inline
-    def setProgressInterval(value: Double): Self = this.set("progressInterval", value.asInstanceOf[js.Any])
+    def setResumable(value: () => Unit): Self = StObject.set(x, "resumable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteProgressInterval: Self = this.set("progressInterval", js.undefined)
+    def setResumableUndefined: Self = StObject.set(x, "resumable", js.undefined)
     
     @scala.inline
-    def setReadTimeout(value: Double): Self = this.set("readTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadTimeout: Self = this.set("readTimeout", js.undefined)
-    
-    @scala.inline
-    def setResumable(value: () => Unit): Self = this.set("resumable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteResumable: Self = this.set("resumable", js.undefined)
+    def setToFile(value: String): Self = StObject.set(x, "toFile", value.asInstanceOf[js.Any])
   }
 }

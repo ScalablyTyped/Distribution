@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LighthouseCategoryV5 extends js.Object {
+trait LighthouseCategoryV5 extends StObject {
   
   /** An array of references to all the audit members of this category. */
   var auditRefs: js.UndefOr[js.Array[AuditRefs]] = js.native
@@ -34,57 +35,45 @@ object LighthouseCategoryV5 {
   }
   
   @scala.inline
-  implicit class LighthouseCategoryV5Ops[Self <: LighthouseCategoryV5] (val x: Self) extends AnyVal {
+  implicit class LighthouseCategoryV5MutableBuilder[Self <: LighthouseCategoryV5] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditRefs(value: js.Array[AuditRefs]): Self = StObject.set(x, "auditRefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditRefsUndefined: Self = StObject.set(x, "auditRefs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuditRefsVarargs(value: AuditRefs*): Self = StObject.set(x, "auditRefs", js.Array(value :_*))
     
     @scala.inline
-    def setAuditRefsVarargs(value: AuditRefs*): Self = this.set("auditRefs", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditRefs(value: js.Array[AuditRefs]): Self = this.set("auditRefs", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAuditRefs: Self = this.set("auditRefs", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setManualDescription(value: String): Self = StObject.set(x, "manualDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setManualDescriptionUndefined: Self = StObject.set(x, "manualDescription", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setScore(value: js.Any): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualDescription(value: String): Self = this.set("manualDescription", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deleteManualDescription: Self = this.set("manualDescription", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScore(value: js.Any): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWebhooksOutput extends js.Object {
+trait ListWebhooksOutput extends StObject {
   
   /**
     * If the amount of returned information is significantly large, an identifier is also returned and can be used in a subsequent ListWebhooks call to return the next set of webhooks in the list. 
@@ -26,33 +27,21 @@ object ListWebhooksOutput {
   }
   
   @scala.inline
-  implicit class ListWebhooksOutputOps[Self <: ListWebhooksOutput] (val x: Self) extends AnyVal {
+  implicit class ListWebhooksOutputMutableBuilder[Self <: ListWebhooksOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWebhooks(value: WebhookList): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setWebhooksVarargs(value: ListWebhookItem*): Self = this.set("webhooks", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebhooks(value: WebhookList): Self = this.set("webhooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebhooks: Self = this.set("webhooks", js.undefined)
+    def setWebhooksVarargs(value: ListWebhookItem*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
   }
 }

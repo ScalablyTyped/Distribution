@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewActionDetail extends js.Object {
+trait ReviewActionDetail extends StObject {
   
   /**
     * The unique identifier for the action.
@@ -56,66 +57,54 @@ object ReviewActionDetail {
   }
   
   @scala.inline
-  implicit class ReviewActionDetailOps[Self <: ReviewActionDetail] (val x: Self) extends AnyVal {
+  implicit class ReviewActionDetailMutableBuilder[Self <: ReviewActionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionName(value: String): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionId(value: EntityId): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
     
     @scala.inline
-    def deleteActionId: Self = this.set("ActionId", js.undefined)
+    def setCompleteTime(value: Timestamp): Self = StObject.set(x, "CompleteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: String): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    def setCompleteTimeUndefined: Self = StObject.set(x, "CompleteTime", js.undefined)
     
     @scala.inline
-    def deleteActionName: Self = this.set("ActionName", js.undefined)
+    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteTime(value: Timestamp): Self = this.set("CompleteTime", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def deleteCompleteTime: Self = this.set("CompleteTime", js.undefined)
+    def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setStatus(value: ReviewActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: String): Self = this.set("Result", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteResult: Self = this.set("Result", js.undefined)
+    def setTargetId(value: EntityId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ReviewActionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTargetType(value: String): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetId(value: EntityId): Self = this.set("TargetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetId: Self = this.set("TargetId", js.undefined)
-    
-    @scala.inline
-    def setTargetType(value: String): Self = this.set("TargetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetType: Self = this.set("TargetType", js.undefined)
+    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

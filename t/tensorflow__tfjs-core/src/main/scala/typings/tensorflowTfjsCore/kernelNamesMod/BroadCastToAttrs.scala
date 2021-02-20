@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BroadCastToAttrs extends js.Object {
+trait BroadCastToAttrs extends StObject {
   
   var inputShape: js.Array[Double] = js.native
   
@@ -20,30 +21,18 @@ object BroadCastToAttrs {
   }
   
   @scala.inline
-  implicit class BroadCastToAttrsOps[Self <: BroadCastToAttrs] (val x: Self) extends AnyVal {
+  implicit class BroadCastToAttrsMutableBuilder[Self <: BroadCastToAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputShape(value: js.Array[Double]): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputShapeVarargs(value: Double*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputShapeVarargs(value: Double*): Self = this.set("inputShape", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputShape(value: js.Array[Double]): Self = this.set("inputShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShapeVarargs(value: Double*): Self = this.set("shape", js.Array(value :_*))
-    
-    @scala.inline
-    def setShape(value: js.Array[Double]): Self = this.set("shape", value.asInstanceOf[js.Any])
+    def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

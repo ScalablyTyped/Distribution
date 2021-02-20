@@ -2,13 +2,12 @@ package typings.tempWrite
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("temp-write", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Write string/buffer/stream to a random temp file.
@@ -32,11 +31,23 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("temp-write", JSImport.Namespace)
+  @js.native
   def apply(fileContent: String): js.Promise[String] = js.native
+  @JSImport("temp-write", JSImport.Namespace)
+  @js.native
   def apply(fileContent: String, filePath: String): js.Promise[String] = js.native
+  @JSImport("temp-write", JSImport.Namespace)
+  @js.native
   def apply(fileContent: Buffer): js.Promise[String] = js.native
+  @JSImport("temp-write", JSImport.Namespace)
+  @js.native
   def apply(fileContent: Buffer, filePath: String): js.Promise[String] = js.native
+  @JSImport("temp-write", JSImport.Namespace)
+  @js.native
   def apply(fileContent: ReadableStream): js.Promise[String] = js.native
+  @JSImport("temp-write", JSImport.Namespace)
+  @js.native
   def apply(fileContent: ReadableStream, filePath: String): js.Promise[String] = js.native
   
   /**
@@ -58,8 +69,16 @@ object mod extends js.Object {
   	//=> '/var/folders/_1/tk89k8215ts0rg0kmb096nj80000gn/T/4049f192-43e7-43b2-98d9-094e6760861b/rainbow/cake/pony.png'
   	```
   	*/
+  @JSImport("temp-write", "sync")
+  @js.native
   def sync(fileContent: String): String = js.native
+  @JSImport("temp-write", "sync")
+  @js.native
   def sync(fileContent: String, filePath: String): String = js.native
+  @JSImport("temp-write", "sync")
+  @js.native
   def sync(fileContent: Buffer): String = js.native
+  @JSImport("temp-write", "sync")
+  @js.native
   def sync(fileContent: Buffer, filePath: String): String = js.native
 }

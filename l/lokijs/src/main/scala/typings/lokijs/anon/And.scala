@@ -1,11 +1,12 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait And extends js.Object {
+trait And extends StObject {
   
   @JSName("$and")
   var $and: js.Any = js.native
@@ -22,24 +23,12 @@ object And {
   }
   
   @scala.inline
-  implicit class AndOps[Self <: And] (val x: Self) extends AnyVal {
+  implicit class AndMutableBuilder[Self <: And] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$and(value: js.Any): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$and(value: js.Any): Self = this.set("$and", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$or(value: js.Any): Self = this.set("$or", value.asInstanceOf[js.Any])
+    def set$or(value: js.Any): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
   }
 }

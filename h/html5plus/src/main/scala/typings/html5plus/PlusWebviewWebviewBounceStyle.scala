@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewBounceStyle extends js.Object {
+trait PlusWebviewWebviewBounceStyle extends StObject {
   
   /**
     * Webview窗口回弹时停靠的位置
@@ -81,48 +82,36 @@ object PlusWebviewWebviewBounceStyle {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewBounceStyleOps[Self <: PlusWebviewWebviewBounceStyle] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewBounceStyleMutableBuilder[Self <: PlusWebviewWebviewBounceStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeoffset(value: js.Any): Self = StObject.set(x, "changeoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeoffsetUndefined: Self = StObject.set(x, "changeoffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeoffset(value: js.Any): Self = this.set("changeoffset", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteChangeoffset: Self = this.set("changeoffset", js.undefined)
+    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPreventTouchEvent(value: Boolean): Self = StObject.set(x, "preventTouchEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: js.Any): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPreventTouchEventUndefined: Self = StObject.set(x, "preventTouchEvent", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSlideoffset(value: js.Any): Self = StObject.set(x, "slideoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventTouchEvent(value: Boolean): Self = this.set("preventTouchEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventTouchEvent: Self = this.set("preventTouchEvent", js.undefined)
-    
-    @scala.inline
-    def setSlideoffset(value: js.Any): Self = this.set("slideoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideoffset: Self = this.set("slideoffset", js.undefined)
+    def setSlideoffsetUndefined: Self = StObject.set(x, "slideoffset", js.undefined)
   }
 }

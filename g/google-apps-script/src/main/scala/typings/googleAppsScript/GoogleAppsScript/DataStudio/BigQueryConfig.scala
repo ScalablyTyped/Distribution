@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .build();
   */
 @js.native
-trait BigQueryConfig extends js.Object {
+trait BigQueryConfig extends StObject {
   
   def addQueryParameter(name: String, `type`: BigQueryParameterType, value: String): BigQueryConfig = js.native
   
@@ -53,39 +54,27 @@ object BigQueryConfig {
   }
   
   @scala.inline
-  implicit class BigQueryConfigOps[Self <: BigQueryConfig] (val x: Self) extends AnyVal {
+  implicit class BigQueryConfigMutableBuilder[Self <: BigQueryConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddQueryParameter(value: (String, BigQueryParameterType, String) => BigQueryConfig): Self = StObject.set(x, "addQueryParameter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuild(value: () => Config): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddQueryParameter(value: (String, BigQueryParameterType, String) => BigQueryConfig): Self = this.set("addQueryParameter", js.Any.fromFunction3(value))
+    def setSetAccessToken(value: String => BigQueryConfig): Self = StObject.set(x, "setAccessToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuild(value: () => Config): Self = this.set("build", js.Any.fromFunction0(value))
+    def setSetBillingProjectId(value: String => BigQueryConfig): Self = StObject.set(x, "setBillingProjectId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrintJson(value: () => String): Self = this.set("printJson", js.Any.fromFunction0(value))
+    def setSetQuery(value: String => BigQueryConfig): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAccessToken(value: String => BigQueryConfig): Self = this.set("setAccessToken", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetBillingProjectId(value: String => BigQueryConfig): Self = this.set("setBillingProjectId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetQuery(value: String => BigQueryConfig): Self = this.set("setQuery", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUseStandardSql(value: Boolean => BigQueryConfig): Self = this.set("setUseStandardSql", js.Any.fromFunction1(value))
+    def setSetUseStandardSql(value: Boolean => BigQueryConfig): Self = StObject.set(x, "setUseStandardSql", js.Any.fromFunction1(value))
   }
 }

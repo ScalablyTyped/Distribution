@@ -1,19 +1,20 @@
 package typings.winrt.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Capture")
-@js.native
-object Capture extends js.Object {
+object Capture {
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUI")
   @js.native
   class CameraCaptureUI ()
     extends typings.winrt.Windows.Media.Capture.CameraCaptureUI
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution")
   @js.native
-  object CameraCaptureUIMaxPhotoResolution extends js.Object {
+  object CameraCaptureUIMaxPhotoResolution extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -33,8 +34,9 @@ object Capture extends js.Object {
     /* 1 */ val verySmallQvga: typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.verySmallQvga with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIMaxVideoResolution")
   @js.native
-  object CameraCaptureUIMaxVideoResolution extends js.Object {
+  object CameraCaptureUIMaxVideoResolution extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -50,8 +52,9 @@ object Capture extends js.Object {
     /* 2 */ val standardDefinition: typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution.standardDefinition with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIMode")
   @js.native
-  object CameraCaptureUIMode extends js.Object {
+  object CameraCaptureUIMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.CameraCaptureUIMode with Double] = js.native
@@ -63,12 +66,14 @@ object Capture extends js.Object {
     /* 2 */ val video: typings.winrt.Windows.Media.Capture.CameraCaptureUIMode.video with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings")
   @js.native
   class CameraCaptureUIPhotoCaptureSettings ()
     extends typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIPhotoFormat")
   @js.native
-  object CameraCaptureUIPhotoFormat extends js.Object {
+  object CameraCaptureUIPhotoFormat extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat with Double] = js.native
@@ -80,12 +85,14 @@ object Capture extends js.Object {
     /* 1 */ val png: typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat.png with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings")
   @js.native
   class CameraCaptureUIVideoCaptureSettings ()
     extends typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings
   
+  @JSGlobal("Windows.Media.Capture.CameraCaptureUIVideoFormat")
   @js.native
-  object CameraCaptureUIVideoFormat extends js.Object {
+  object CameraCaptureUIVideoFormat extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat with Double] = js.native
@@ -95,34 +102,41 @@ object Capture extends js.Object {
     /* 1 */ val wmv: typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat.wmv with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.CameraOptionsUI")
   @js.native
   class CameraOptionsUI ()
     extends typings.winrt.Windows.Media.Capture.CameraOptionsUI
   /* static members */
-  @js.native
-  object CameraOptionsUI extends js.Object {
+  object CameraOptionsUI {
     
+    @JSGlobal("Windows.Media.Capture.CameraOptionsUI.show")
+    @js.native
     def show(mediaCapture: typings.winrt.Windows.Media.Capture.MediaCapture): Unit = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.MediaCapture")
   @js.native
   class MediaCapture ()
     extends typings.winrt.Windows.Media.Capture.MediaCapture
   
+  @JSGlobal("Windows.Media.Capture.MediaCaptureFailedEventArgs")
   @js.native
   class MediaCaptureFailedEventArgs ()
     extends typings.winrt.Windows.Media.Capture.MediaCaptureFailedEventArgs
   
+  @JSGlobal("Windows.Media.Capture.MediaCaptureInitializationSettings")
   @js.native
   class MediaCaptureInitializationSettings ()
     extends typings.winrt.Windows.Media.Capture.MediaCaptureInitializationSettings
   
+  @JSGlobal("Windows.Media.Capture.MediaCaptureSettings")
   @js.native
   class MediaCaptureSettings ()
     extends typings.winrt.Windows.Media.Capture.MediaCaptureSettings
   
+  @JSGlobal("Windows.Media.Capture.MediaStreamType")
   @js.native
-  object MediaStreamType extends js.Object {
+  object MediaStreamType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.MediaStreamType with Double] = js.native
@@ -136,8 +150,9 @@ object Capture extends js.Object {
     /* 1 */ val videoRecord: typings.winrt.Windows.Media.Capture.MediaStreamType.videoRecord with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.PhotoCaptureSource")
   @js.native
-  object PhotoCaptureSource extends js.Object {
+  object PhotoCaptureSource extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.PhotoCaptureSource with Double] = js.native
@@ -149,8 +164,9 @@ object Capture extends js.Object {
     /* 1 */ val videoPreview: typings.winrt.Windows.Media.Capture.PhotoCaptureSource.videoPreview with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.PowerlineFrequency")
   @js.native
-  object PowerlineFrequency extends js.Object {
+  object PowerlineFrequency extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.PowerlineFrequency with Double] = js.native
@@ -162,8 +178,9 @@ object Capture extends js.Object {
     /* 2 */ val sixtyHertz: typings.winrt.Windows.Media.Capture.PowerlineFrequency.sixtyHertz with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.StreamingCaptureMode")
   @js.native
-  object StreamingCaptureMode extends js.Object {
+  object StreamingCaptureMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.StreamingCaptureMode with Double] = js.native
@@ -175,8 +192,9 @@ object Capture extends js.Object {
     /* 2 */ val video: typings.winrt.Windows.Media.Capture.StreamingCaptureMode.video with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.VideoDeviceCharacteristic")
   @js.native
-  object VideoDeviceCharacteristic extends js.Object {
+  object VideoDeviceCharacteristic extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic with Double] = js.native
@@ -192,8 +210,9 @@ object Capture extends js.Object {
     /* 3 */ val recordPhotoStreamsIdentical: typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic.recordPhotoStreamsIdentical with Double = js.native
   }
   
+  @JSGlobal("Windows.Media.Capture.VideoRotation")
   @js.native
-  object VideoRotation extends js.Object {
+  object VideoRotation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrt.Windows.Media.Capture.VideoRotation with Double] = js.native

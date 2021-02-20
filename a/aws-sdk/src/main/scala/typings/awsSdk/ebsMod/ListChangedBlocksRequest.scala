@@ -1,11 +1,12 @@
 package typings.awsSdk.ebsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListChangedBlocksRequest extends js.Object {
+trait ListChangedBlocksRequest extends StObject {
   
   /**
     * The ID of the first snapshot to use for the comparison.  The FirstSnapshotID parameter must be specified with a SecondSnapshotId parameter; otherwise, an error occurs. 
@@ -41,45 +42,33 @@ object ListChangedBlocksRequest {
   }
   
   @scala.inline
-  implicit class ListChangedBlocksRequestOps[Self <: ListChangedBlocksRequest] (val x: Self) extends AnyVal {
+  implicit class ListChangedBlocksRequestMutableBuilder[Self <: ListChangedBlocksRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstSnapshotId(value: SnapshotId): Self = StObject.set(x, "FirstSnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstSnapshotIdUndefined: Self = StObject.set(x, "FirstSnapshotId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondSnapshotId(value: SnapshotId): Self = this.set("SecondSnapshotId", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setFirstSnapshotId(value: SnapshotId): Self = this.set("FirstSnapshotId", value.asInstanceOf[js.Any])
+    def setNextToken(value: PageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstSnapshotId: Self = this.set("FirstSnapshotId", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setSecondSnapshotId(value: SnapshotId): Self = StObject.set(x, "SecondSnapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setStartingBlockIndex(value: BlockIndex): Self = StObject.set(x, "StartingBlockIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PageToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStartingBlockIndex(value: BlockIndex): Self = this.set("StartingBlockIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartingBlockIndex: Self = this.set("StartingBlockIndex", js.undefined)
+    def setStartingBlockIndexUndefined: Self = StObject.set(x, "StartingBlockIndex", js.undefined)
   }
 }

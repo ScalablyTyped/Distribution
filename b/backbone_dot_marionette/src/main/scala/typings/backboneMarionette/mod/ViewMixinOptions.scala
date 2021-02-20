@@ -1,12 +1,13 @@
 package typings.backboneMarionette.mod
 
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewMixinOptions extends js.Object {
+trait ViewMixinOptions extends StObject {
   
   /**
     * Behavior objects to assign to this View.
@@ -63,69 +64,57 @@ object ViewMixinOptions {
   }
   
   @scala.inline
-  implicit class ViewMixinOptionsOps[Self <: ViewMixinOptions] (val x: Self) extends AnyVal {
+  implicit class ViewMixinOptionsMutableBuilder[Self <: ViewMixinOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBehaviors(value: js.Array[Behavior]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
     @scala.inline
-    def setBehaviorsVarargs(value: Behavior*): Self = this.set("behaviors", js.Array(value :_*))
+    def setChildViewEventPrefix(value: String | `false`): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviors(value: js.Array[Behavior]): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    def setChildViewEventPrefixUndefined: Self = StObject.set(x, "childViewEventPrefix", js.undefined)
     
     @scala.inline
-    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    def setChildViewEvents(value: EventsHash): Self = StObject.set(x, "childViewEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildViewEventPrefix(value: String | `false`): Self = this.set("childViewEventPrefix", value.asInstanceOf[js.Any])
+    def setChildViewEventsUndefined: Self = StObject.set(x, "childViewEvents", js.undefined)
     
     @scala.inline
-    def deleteChildViewEventPrefix: Self = this.set("childViewEventPrefix", js.undefined)
+    def setChildViewTriggers(value: EventsHash): Self = StObject.set(x, "childViewTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildViewEvents(value: EventsHash): Self = this.set("childViewEvents", value.asInstanceOf[js.Any])
+    def setChildViewTriggersUndefined: Self = StObject.set(x, "childViewTriggers", js.undefined)
     
     @scala.inline
-    def deleteChildViewEvents: Self = this.set("childViewEvents", js.undefined)
+    def setCollectionEvents(value: EventsHash): Self = StObject.set(x, "collectionEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildViewTriggers(value: EventsHash): Self = this.set("childViewTriggers", value.asInstanceOf[js.Any])
+    def setCollectionEventsUndefined: Self = StObject.set(x, "collectionEvents", js.undefined)
     
     @scala.inline
-    def deleteChildViewTriggers: Self = this.set("childViewTriggers", js.undefined)
+    def setModelEvents(value: EventsHash): Self = StObject.set(x, "modelEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionEvents(value: EventsHash): Self = this.set("collectionEvents", value.asInstanceOf[js.Any])
+    def setModelEventsUndefined: Self = StObject.set(x, "modelEvents", js.undefined)
     
     @scala.inline
-    def deleteCollectionEvents: Self = this.set("collectionEvents", js.undefined)
+    def setTriggers(value: EventsHash): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelEvents(value: EventsHash): Self = this.set("modelEvents", value.asInstanceOf[js.Any])
+    def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
     @scala.inline
-    def deleteModelEvents: Self = this.set("modelEvents", js.undefined)
+    def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggers(value: EventsHash): Self = this.set("triggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggers: Self = this.set("triggers", js.undefined)
-    
-    @scala.inline
-    def setUi(value: js.Any): Self = this.set("ui", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUi: Self = this.set("ui", js.undefined)
+    def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }
 }

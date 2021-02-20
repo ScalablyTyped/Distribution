@@ -3,6 +3,7 @@ package typings.mangopay2NodejsSdk.mod.models
 import typings.mangopay2NodejsSdk.mod.wallet.CreateWallet
 import typings.mangopay2NodejsSdk.mod.wallet.UpdateWallet
 import typings.mangopay2NodejsSdk.mod.wallet.WalletData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

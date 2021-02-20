@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,90 +74,78 @@ object IndexOptions {
   }
   
   @scala.inline
-  implicit class IndexOptionsOps[Self <: IndexOptions] (val x: Self) extends AnyVal {
+  implicit class IndexOptionsMutableBuilder[Self <: IndexOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setDefault_language(value: String): Self = StObject.set(x, "default_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    def setDefault_languageUndefined: Self = StObject.set(x, "default_language", js.undefined)
     
     @scala.inline
-    def deleteCollation: Self = this.set("collation", js.undefined)
+    def setDropDups(value: Boolean): Self = StObject.set(x, "dropDups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_language(value: String): Self = this.set("default_language", value.asInstanceOf[js.Any])
+    def setDropDupsUndefined: Self = StObject.set(x, "dropDups", js.undefined)
     
     @scala.inline
-    def deleteDefault_language: Self = this.set("default_language", js.undefined)
+    def setExpireAfterSeconds(value: scala.Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropDups(value: Boolean): Self = this.set("dropDups", value.asInstanceOf[js.Any])
+    def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
     
     @scala.inline
-    def deleteDropDups: Self = this.set("dropDups", js.undefined)
+    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireAfterSeconds(value: scala.Double): Self = this.set("expireAfterSeconds", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteExpireAfterSeconds: Self = this.set("expireAfterSeconds", js.undefined)
+    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: scala.Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: scala.Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setPartialFilterExpression(value: js.Any): Self = StObject.set(x, "partialFilterExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPartialFilterExpressionUndefined: Self = StObject.set(x, "partialFilterExpression", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialFilterExpression(value: js.Any): Self = this.set("partialFilterExpression", value.asInstanceOf[js.Any])
+    def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
     
     @scala.inline
-    def deletePartialFilterExpression: Self = this.set("partialFilterExpression", js.undefined)
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSparse(value: Boolean): Self = this.set("sparse", value.asInstanceOf[js.Any])
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     
     @scala.inline
-    def deleteSparse: Self = this.set("sparse", js.undefined)
+    def setV(value: scala.Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
-    
-    @scala.inline
-    def setV(value: scala.Double): Self = this.set("v", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteV: Self = this.set("v", js.undefined)
+    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

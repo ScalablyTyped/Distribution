@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListLevelFormat extends js.Object
+sealed trait ListLevelFormat extends StObject
 /**
   * Lists values that specify the numbering format used for a group of automatically numbered objects, such as pages.
   */
 @JSGlobal("ListLevelFormat")
 @js.native
-object ListLevelFormat extends js.Object {
+object ListLevelFormat extends StObject {
   
   /**
     * Specifies that the sequence shall consist of full-width hiragana characters in the traditional a-i-u-e-o order. Currently not supported.

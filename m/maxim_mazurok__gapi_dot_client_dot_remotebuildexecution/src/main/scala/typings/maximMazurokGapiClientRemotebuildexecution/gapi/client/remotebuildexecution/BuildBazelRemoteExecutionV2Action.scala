@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2Action extends js.Object {
+trait BuildBazelRemoteExecutionV2Action extends StObject {
   
   /** The digest of the Command to run, which MUST be present in the ContentAddressableStorage. */
   var commandDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
@@ -45,51 +46,39 @@ object BuildBazelRemoteExecutionV2Action {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ActionOps[Self <: BuildBazelRemoteExecutionV2Action] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2ActionMutableBuilder[Self <: BuildBazelRemoteExecutionV2Action] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "commandDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandDigestUndefined: Self = StObject.set(x, "commandDigest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoNotCache(value: Boolean): Self = StObject.set(x, "doNotCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandDigest(value: BuildBazelRemoteExecutionV2Digest): Self = this.set("commandDigest", value.asInstanceOf[js.Any])
+    def setDoNotCacheUndefined: Self = StObject.set(x, "doNotCache", js.undefined)
     
     @scala.inline
-    def deleteCommandDigest: Self = this.set("commandDigest", js.undefined)
+    def setInputRootDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "inputRootDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotCache(value: Boolean): Self = this.set("doNotCache", value.asInstanceOf[js.Any])
+    def setInputRootDigestUndefined: Self = StObject.set(x, "inputRootDigest", js.undefined)
     
     @scala.inline
-    def deleteDoNotCache: Self = this.set("doNotCache", js.undefined)
+    def setOutputNodeProperties(value: js.Array[String]): Self = StObject.set(x, "outputNodeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRootDigest(value: BuildBazelRemoteExecutionV2Digest): Self = this.set("inputRootDigest", value.asInstanceOf[js.Any])
+    def setOutputNodePropertiesUndefined: Self = StObject.set(x, "outputNodeProperties", js.undefined)
     
     @scala.inline
-    def deleteInputRootDigest: Self = this.set("inputRootDigest", js.undefined)
+    def setOutputNodePropertiesVarargs(value: String*): Self = StObject.set(x, "outputNodeProperties", js.Array(value :_*))
     
     @scala.inline
-    def setOutputNodePropertiesVarargs(value: String*): Self = this.set("outputNodeProperties", js.Array(value :_*))
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputNodeProperties(value: js.Array[String]): Self = this.set("outputNodeProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputNodeProperties: Self = this.set("outputNodeProperties", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -2,13 +2,14 @@ package typings.lokijs.anon
 
 import typings.lokijs.lokijsStrings.active
 import typings.lokijs.lokijsStrings.passive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.DynamicViewOptions> */
 @js.native
-trait PartialDynamicViewOptions extends js.Object {
+trait PartialDynamicViewOptions extends StObject {
   
   var minRebuildInterval: js.UndefOr[Double] = js.native
   
@@ -25,36 +26,24 @@ object PartialDynamicViewOptions {
   }
   
   @scala.inline
-  implicit class PartialDynamicViewOptionsOps[Self <: PartialDynamicViewOptions] (val x: Self) extends AnyVal {
+  implicit class PartialDynamicViewOptionsMutableBuilder[Self <: PartialDynamicViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinRebuildInterval(value: Double): Self = StObject.set(x, "minRebuildInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinRebuildIntervalUndefined: Self = StObject.set(x, "minRebuildInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinRebuildInterval(value: Double): Self = this.set("minRebuildInterval", value.asInstanceOf[js.Any])
+    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
     @scala.inline
-    def deleteMinRebuildInterval: Self = this.set("minRebuildInterval", js.undefined)
+    def setSortPriority(value: active | passive): Self = StObject.set(x, "sortPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistent(value: Boolean): Self = this.set("persistent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersistent: Self = this.set("persistent", js.undefined)
-    
-    @scala.inline
-    def setSortPriority(value: active | passive): Self = this.set("sortPriority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortPriority: Self = this.set("sortPriority", js.undefined)
+    def setSortPriorityUndefined: Self = StObject.set(x, "sortPriority", js.undefined)
   }
 }

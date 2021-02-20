@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStackInput extends js.Object {
+trait CreateStackInput extends StObject {
   
   /**
     * In some cases, you must explicitly acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to create the stack.    CAPABILITY_IAM and CAPABILITY_NAMED_IAM  Some stack templates might include resources that can affect permissions in your AWS account; for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge this by specifying one of these capabilities. The following IAM resources require you to specify either the CAPABILITY_IAM or CAPABILITY_NAMED_IAM capability.   If you have IAM resources, you can specify either capability.    If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM.    If you don't specify either of these capabilities, AWS CloudFormation returns an InsufficientCapabilities error.   If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary.     AWS::IAM::AccessKey      AWS::IAM::Group      AWS::IAM::InstanceProfile      AWS::IAM::Policy      AWS::IAM::Role      AWS::IAM::User      AWS::IAM::UserToGroupAddition    For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.    CAPABILITY_AUTO_EXPAND  Some template contain macros. Macros perform custom processing on templates; this can include simple actions like find-and-replace operations, all the way to extensive transformations of entire templates. Because of this, users typically create a change set from the processed template, so that they can review the changes resulting from the macros before actually creating the stack. If your stack template contains one or more macros, and you choose to create a stack directly from the processed template, without first reviewing the resulting changes in a change set, you must acknowledge this capability. This includes the AWS::Include and AWS::Serverless transforms, which are macros hosted by AWS CloudFormation. If you want to create a stack from a stack template that contains macros and nested stacks, you must create the stack directly from the template using this capability.  You should only create stacks directly from a stack template that contains macros if you know what processing the macro performs. Each macro relies on an underlying Lambda service function for processing stack templates. Be aware that the Lambda function owner can update the function operation without AWS CloudFormation being notified.  For more information, see Using AWS CloudFormation Macros to Perform Custom Processing on Templates.  
@@ -101,132 +102,120 @@ object CreateStackInput {
   }
   
   @scala.inline
-  implicit class CreateStackInputOps[Self <: CreateStackInput] (val x: Self) extends AnyVal {
+  implicit class CreateStackInputMutableBuilder[Self <: CreateStackInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setDisableRollback(value: DisableRollback): Self = StObject.set(x, "DisableRollback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setDisableRollbackUndefined: Self = StObject.set(x, "DisableRollback", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = StObject.set(x, "EnableTerminationProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setEnableTerminationProtectionUndefined: Self = StObject.set(x, "EnableTerminationProtection", js.undefined)
     
     @scala.inline
-    def setDisableRollback(value: DisableRollback): Self = this.set("DisableRollback", value.asInstanceOf[js.Any])
+    def setNotificationARNs(value: NotificationARNs): Self = StObject.set(x, "NotificationARNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableRollback: Self = this.set("DisableRollback", js.undefined)
+    def setNotificationARNsUndefined: Self = StObject.set(x, "NotificationARNs", js.undefined)
     
     @scala.inline
-    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = this.set("EnableTerminationProtection", value.asInstanceOf[js.Any])
+    def setNotificationARNsVarargs(value: NotificationARN*): Self = StObject.set(x, "NotificationARNs", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnableTerminationProtection: Self = this.set("EnableTerminationProtection", js.undefined)
+    def setOnFailure(value: OnFailure): Self = StObject.set(x, "OnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationARNsVarargs(value: NotificationARN*): Self = this.set("NotificationARNs", js.Array(value :_*))
+    def setOnFailureUndefined: Self = StObject.set(x, "OnFailure", js.undefined)
     
     @scala.inline
-    def setNotificationARNs(value: NotificationARNs): Self = this.set("NotificationARNs", value.asInstanceOf[js.Any])
+    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationARNs: Self = this.set("NotificationARNs", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setOnFailure(value: OnFailure): Self = this.set("OnFailure", value.asInstanceOf[js.Any])
+    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def deleteOnFailure: Self = this.set("OnFailure", js.undefined)
+    def setResourceTypes(value: ResourceTypes): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = StObject.set(x, "RollbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    def setRollbackConfigurationUndefined: Self = StObject.set(x, "RollbackConfiguration", js.undefined)
     
     @scala.inline
-    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
     
     @scala.inline
-    def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    def setStackPolicyURL(value: StackPolicyURL): Self = StObject.set(x, "StackPolicyURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackPolicyBody(value: StackPolicyBody): Self = this.set("StackPolicyBody", value.asInstanceOf[js.Any])
+    def setStackPolicyURLUndefined: Self = StObject.set(x, "StackPolicyURL", js.undefined)
     
     @scala.inline
-    def deleteStackPolicyBody: Self = this.set("StackPolicyBody", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackPolicyURL(value: StackPolicyURL): Self = this.set("StackPolicyURL", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStackPolicyURL: Self = this.set("StackPolicyURL", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTemplateURL(value: TemplateURL): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    def setTemplateURLUndefined: Self = StObject.set(x, "TemplateURL", js.undefined)
     
     @scala.inline
-    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    def setTimeoutInMinutes(value: TimeoutMinutes): Self = StObject.set(x, "TimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInMinutes(value: TimeoutMinutes): Self = this.set("TimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInMinutes: Self = this.set("TimeoutInMinutes", js.undefined)
+    def setTimeoutInMinutesUndefined: Self = StObject.set(x, "TimeoutInMinutes", js.undefined)
   }
 }

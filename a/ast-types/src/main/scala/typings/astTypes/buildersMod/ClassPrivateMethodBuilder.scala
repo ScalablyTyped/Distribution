@@ -9,12 +9,13 @@ import typings.astTypes.kindsMod.BlockStatementKind
 import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.PrivateNameKind
 import typings.astTypes.namedTypesMod.namedTypes.ClassPrivateMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassPrivateMethodBuilder extends js.Object {
+trait ClassPrivateMethodBuilder extends StObject {
   
   def apply(key: PrivateNameKind, params: js.Array[PatternKind], body: BlockStatementKind): ClassPrivateMethod = js.native
   def apply(

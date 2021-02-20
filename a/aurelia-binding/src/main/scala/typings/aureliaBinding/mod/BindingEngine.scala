@@ -2,13 +2,14 @@ package typings.aureliaBinding.mod
 
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "BindingEngine")
 @js.native
-class BindingEngine () extends js.Object {
+class BindingEngine () extends StObject {
   
   /**
     * Gets an observer for collection mutation.

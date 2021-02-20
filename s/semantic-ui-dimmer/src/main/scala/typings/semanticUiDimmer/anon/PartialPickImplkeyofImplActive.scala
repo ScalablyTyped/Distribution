@@ -1,12 +1,13 @@
 package typings.semanticUiDimmer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dimmer.SemanticUI.Dimmer.ClassNameSettings._Impl, keyof semantic-ui-dimmer.SemanticUI.Dimmer.ClassNameSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplActive extends js.Object {
+trait PartialPickImplkeyofImplActive extends StObject {
   
   var active: js.UndefOr[String] = js.native
   
@@ -33,66 +34,54 @@ object PartialPickImplkeyofImplActive {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplActiveOps[Self <: PartialPickImplkeyofImplActive] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplActiveMutableBuilder[Self <: PartialPickImplkeyofImplActive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimmable(value: String): Self = StObject.set(x, "dimmable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setDimmableUndefined: Self = StObject.set(x, "dimmable", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setDimmed(value: String): Self = StObject.set(x, "dimmed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimmable(value: String): Self = this.set("dimmable", value.asInstanceOf[js.Any])
+    def setDimmedUndefined: Self = StObject.set(x, "dimmed", js.undefined)
     
     @scala.inline
-    def deleteDimmable: Self = this.set("dimmable", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimmed(value: String): Self = this.set("dimmed", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDimmed: Self = this.set("dimmed", js.undefined)
+    def setHide(value: String): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setPageDimmer(value: String): Self = StObject.set(x, "pageDimmer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: String): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setPageDimmerUndefined: Self = StObject.set(x, "pageDimmer", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageDimmer(value: String): Self = this.set("pageDimmer", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deletePageDimmer: Self = this.set("pageDimmer", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: String): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

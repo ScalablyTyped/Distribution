@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveTagsInput extends js.Object {
+trait RemoveTagsInput extends StObject {
   
   /**
     * The ID of the pipeline.
@@ -26,27 +27,15 @@ object RemoveTagsInput {
   }
   
   @scala.inline
-  implicit class RemoveTagsInputOps[Self <: RemoveTagsInput] (val x: Self) extends AnyVal {
+  implicit class RemoveTagsInputMutableBuilder[Self <: RemoveTagsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPipelineId(value: id): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTagKeys(value: stringList): Self = StObject.set(x, "tagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagKeysVarargs(value: String*): Self = this.set("tagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setTagKeys(value: stringList): Self = this.set("tagKeys", value.asInstanceOf[js.Any])
+    def setTagKeysVarargs(value: String*): Self = StObject.set(x, "tagKeys", js.Array(value :_*))
   }
 }

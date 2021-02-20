@@ -1,5 +1,6 @@
 package typings.googleapis.mlV1Mod.mlV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for the SetDefaultVersion request.
   */
 @js.native
-trait SchemaGoogleCloudMlV1SetDefaultVersionRequest extends js.Object
+trait SchemaGoogleCloudMlV1SetDefaultVersionRequest extends StObject

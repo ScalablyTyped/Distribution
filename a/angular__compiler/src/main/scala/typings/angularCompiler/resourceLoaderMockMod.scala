@@ -1,14 +1,14 @@
 package typings.angularCompiler
 
-import typings.angularCompiler.resourceLoaderMod.ResourceLoader
+import typings.angularCompiler.mod.ResourceLoader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/testing/src/resource_loader_mock", JSImport.Namespace)
-@js.native
-object resourceLoaderMockMod extends js.Object {
+object resourceLoaderMockMod {
   
+  @JSImport("@angular/compiler/testing/src/resource_loader_mock", "MockResourceLoader")
   @js.native
   class MockResourceLoader () extends ResourceLoader {
     

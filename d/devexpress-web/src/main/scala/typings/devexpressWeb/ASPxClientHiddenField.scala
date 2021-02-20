@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,48 +104,36 @@ object ASPxClientHiddenField {
   }
   
   @scala.inline
-  implicit class ASPxClientHiddenFieldOps[Self <: ASPxClientHiddenField] (val x: Self) extends AnyVal {
+  implicit class ASPxClientHiddenFieldMutableBuilder[Self <: ASPxClientHiddenField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (String, js.Any) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientHiddenField]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (String, js.Any) => Unit): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientHiddenField]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setContains(value: String => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientHiddenField]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("Clear", js.Any.fromFunction0(value))
+    def setGet(value: String => js.Any): Self = StObject.set(x, "Get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContains(value: String => Boolean): Self = this.set("Contains", js.Any.fromFunction1(value))
+    def setPerformCallback(value: String => Unit): Self = StObject.set(x, "PerformCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientHiddenField]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setRemove(value: String => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: String => js.Any): Self = this.set("Get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPerformCallback(value: String => Unit): Self = this.set("PerformCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: (String, js.Any) => Unit): Self = this.set("Set", js.Any.fromFunction2(value))
+    def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "Set", js.Any.fromFunction2(value))
   }
 }

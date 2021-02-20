@@ -1,17 +1,17 @@
 package typings.emberData
 
-import typings.emberData.mod.DS.EmbeddedRecordsMixin
+import typings.emberData.mod.default.EmbeddedRecordsMixin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember-data/serializers/embedded-records-mixin", JSImport.Namespace)
-@js.native
-object embeddedRecordsMixinMod extends js.Object {
+object embeddedRecordsMixinMod {
   
   /**
     * ## Using Embedded Records
     */
+  @JSImport("ember-data/serializers/embedded-records-mixin", JSImport.Default)
   @js.native
   class default () extends EmbeddedRecordsMixin
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppointmentEditingEventUIParam extends js.Object {
+trait AppointmentEditingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the original appointment.
@@ -31,36 +32,24 @@ object AppointmentEditingEventUIParam {
   }
   
   @scala.inline
-  implicit class AppointmentEditingEventUIParamOps[Self <: AppointmentEditingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class AppointmentEditingEventUIParamMutableBuilder[Self <: AppointmentEditingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppointment(value: js.Any): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewAppointment(value: js.Any): Self = StObject.set(x, "newAppointment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppointment(value: js.Any): Self = this.set("appointment", value.asInstanceOf[js.Any])
+    def setNewAppointmentUndefined: Self = StObject.set(x, "newAppointment", js.undefined)
     
     @scala.inline
-    def deleteAppointment: Self = this.set("appointment", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewAppointment(value: js.Any): Self = this.set("newAppointment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewAppointment: Self = this.set("newAppointment", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `formatProtection.toJSON()`. */
 @js.native
-trait FormatProtectionData extends js.Object {
+trait FormatProtectionData extends StObject {
   
   /**
     *
@@ -33,30 +34,18 @@ object FormatProtectionData {
   }
   
   @scala.inline
-  implicit class FormatProtectionDataOps[Self <: FormatProtectionData] (val x: Self) extends AnyVal {
+  implicit class FormatProtectionDataMutableBuilder[Self <: FormatProtectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormulaHidden(value: Boolean): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormulaHiddenUndefined: Self = StObject.set(x, "formulaHidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulaHidden(value: Boolean): Self = this.set("formulaHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormulaHidden: Self = this.set("formulaHidden", js.undefined)
-    
-    @scala.inline
-    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocked: Self = this.set("locked", js.undefined)
+    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
   }
 }

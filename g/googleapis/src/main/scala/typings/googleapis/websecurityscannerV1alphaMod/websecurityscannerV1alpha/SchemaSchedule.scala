@@ -1,5 +1,6 @@
 package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Scan schedule configuration.
   */
 @js.native
-trait SchemaSchedule extends js.Object {
+trait SchemaSchedule extends StObject {
   
   /**
     * Required. The duration of time between executions in days.
@@ -32,30 +33,18 @@ object SchemaSchedule {
   }
   
   @scala.inline
-  implicit class SchemaScheduleOps[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
+  implicit class SchemaScheduleMutableBuilder[Self <: SchemaSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntervalDurationDays(value: Double): Self = StObject.set(x, "intervalDurationDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntervalDurationDaysUndefined: Self = StObject.set(x, "intervalDurationDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalDurationDays(value: Double): Self = this.set("intervalDurationDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntervalDurationDays: Self = this.set("intervalDurationDays", js.undefined)
-    
-    @scala.inline
-    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

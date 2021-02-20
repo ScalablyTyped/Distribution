@@ -7,36 +7,16 @@ import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.queryMod.Query
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/SyncTree", JSImport.Namespace)
-@js.native
-object syncTreeMod extends js.Object {
+object syncTreeMod {
   
+  @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree")
   @js.native
-  trait ListenProvider extends js.Object {
-    
-    def startListening(
-      query: Query,
-      tag: Double,
-      hashFn: js.Function0[String],
-      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[js.Any], js.Array[Event]]
-    ): js.Array[Event] = js.native
-    def startListening(
-      query: Query,
-      tag: Null,
-      hashFn: js.Function0[String],
-      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[js.Any], js.Array[Event]]
-    ): js.Array[Event] = js.native
-    
-    def stopListening(a: Query): Unit = js.native
-    def stopListening(a: Query, b: Double): Unit = js.native
-  }
-  
-  @js.native
-  class SyncTree protected () extends js.Object {
+  class SyncTree protected () extends StObject {
     /**
       * @param {!ListenProvider} listenProvider_ Used by SyncTree to start / stop listening
       *   to server data.
@@ -219,34 +199,77 @@ object syncTreeMod extends js.Object {
     val tagToQueryMap: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object SyncTree extends js.Object {
+  object SyncTree {
+    
+    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Static accessor for query tags.
       */
-    var getNextQueryTag_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.getNextQueryTag_")
+    @js.native
+    def getNextQueryTag_ : js.Any = js.native
+    @scala.inline
+    def getNextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNextQueryTag_")(x.asInstanceOf[js.Any])
     
     /**
       * Given a query, computes a "queryKey" suitable for use in our queryToTagMap_.
       */
-    var makeQueryKey_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.makeQueryKey_")
+    @js.native
+    def makeQueryKey_ : js.Any = js.native
+    @scala.inline
+    def makeQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeQueryKey_")(x.asInstanceOf[js.Any])
     
     /**
       * Static tracker for next query tag.
       */
-    var nextQueryTag_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.nextQueryTag_")
+    @js.native
+    def nextQueryTag_ : js.Any = js.native
+    @scala.inline
+    def nextQueryTag__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextQueryTag_")(x.asInstanceOf[js.Any])
     
     /**
       * Given a queryKey (created by makeQueryKey), parse it back into a path and queryId.
       */
-    var parseQueryKey_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.parseQueryKey_")
+    @js.native
+    def parseQueryKey_ : js.Any = js.native
+    @scala.inline
+    def parseQueryKey__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseQueryKey_")(x.asInstanceOf[js.Any])
     
     /**
       * Normalizes a query to a query we send the server for listening
       *
       * @return The normalized query
       */
-    var queryForListening_ : js.Any = js.native
+    @JSImport("@firebase/database/dist/src/core/SyncTree", "SyncTree.queryForListening_")
+    @js.native
+    def queryForListening_ : js.Any = js.native
+    @scala.inline
+    def queryForListening__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryForListening_")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait ListenProvider extends StObject {
+    
+    def startListening(
+      query: Query,
+      tag: Double,
+      hashFn: js.Function0[String],
+      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[js.Any], js.Array[Event]]
+    ): js.Array[Event] = js.native
+    def startListening(
+      query: Query,
+      tag: Null,
+      hashFn: js.Function0[String],
+      onComplete: js.Function2[/* a */ String, /* b */ js.UndefOr[js.Any], js.Array[Event]]
+    ): js.Array[Event] = js.native
+    
+    def stopListening(a: Query): Unit = js.native
+    def stopListening(a: Query, b: Double): Unit = js.native
   }
 }

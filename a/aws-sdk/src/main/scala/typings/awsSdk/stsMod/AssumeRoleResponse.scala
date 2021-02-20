@@ -1,11 +1,12 @@
 package typings.awsSdk.stsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssumeRoleResponse extends js.Object {
+trait AssumeRoleResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) and the assumed role ID, which are identifiers that you can use to refer to the resulting temporary security credentials. For example, you can reference these credentials as a principal in a resource-based policy by using the ARN or assumed role ID. The ARN and ID include the RoleSessionName that you specified when you called AssumeRole. 
@@ -31,36 +32,24 @@ object AssumeRoleResponse {
   }
   
   @scala.inline
-  implicit class AssumeRoleResponseOps[Self <: AssumeRoleResponse] (val x: Self) extends AnyVal {
+  implicit class AssumeRoleResponseMutableBuilder[Self <: AssumeRoleResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssumedRoleUser(value: AssumedRoleUser): Self = StObject.set(x, "AssumedRoleUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssumedRoleUserUndefined: Self = StObject.set(x, "AssumedRoleUser", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentials(value: Credentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssumedRoleUser(value: AssumedRoleUser): Self = this.set("AssumedRoleUser", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
     @scala.inline
-    def deleteAssumedRoleUser: Self = this.set("AssumedRoleUser", js.undefined)
+    def setPackedPolicySize(value: nonNegativeIntegerType): Self = StObject.set(x, "PackedPolicySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentials: Self = this.set("Credentials", js.undefined)
-    
-    @scala.inline
-    def setPackedPolicySize(value: nonNegativeIntegerType): Self = this.set("PackedPolicySize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackedPolicySize: Self = this.set("PackedPolicySize", js.undefined)
+    def setPackedPolicySizeUndefined: Self = StObject.set(x, "PackedPolicySize", js.undefined)
   }
 }

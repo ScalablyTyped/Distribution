@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorProfileConfig extends js.Object {
+trait ConnectorProfileConfig extends StObject {
   
   /**
     *  The connector-specific credentials required by each connector. 
@@ -29,24 +30,12 @@ object ConnectorProfileConfig {
   }
   
   @scala.inline
-  implicit class ConnectorProfileConfigOps[Self <: ConnectorProfileConfig] (val x: Self) extends AnyVal {
+  implicit class ConnectorProfileConfigMutableBuilder[Self <: ConnectorProfileConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorProfileCredentials(value: ConnectorProfileCredentials): Self = StObject.set(x, "connectorProfileCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectorProfileCredentials(value: ConnectorProfileCredentials): Self = this.set("connectorProfileCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = this.set("connectorProfileProperties", value.asInstanceOf[js.Any])
+    def setConnectorProfileProperties(value: ConnectorProfileProperties): Self = StObject.set(x, "connectorProfileProperties", value.asInstanceOf[js.Any])
   }
 }

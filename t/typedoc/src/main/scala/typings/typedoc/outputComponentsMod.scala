@@ -9,18 +9,22 @@ import typings.typedoc.eventsMod.RendererEvent
 import typings.typedoc.reflectionsMod.DeclarationReflection
 import typings.typedoc.reflectionsMod.ProjectReflection
 import typings.typedoc.rendererMod.Renderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/output/components", JSImport.Namespace)
-@js.native
-object outputComponentsMod extends js.Object {
+object outputComponentsMod {
   
+  @JSImport("typedoc/dist/lib/output/components", "Component")
+  @js.native
   def Component(options: ComponentOptions): ClassDecorator = js.native
   
+  @JSImport("typedoc/dist/lib/output/components", "ContextAwareRendererComponent")
   @js.native
-  abstract class ContextAwareRendererComponent () extends AbstractComponent[Renderer] {
+  abstract class ContextAwareRendererComponent protected () extends RendererComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Renderer) = this()
     
     def getRelativeUrl(absolute: String): String = js.native
     
@@ -37,6 +41,10 @@ object outputComponentsMod extends js.Object {
     var urlPrefix: RegExp = js.native
   }
   
+  @JSImport("typedoc/dist/lib/output/components", "RendererComponent")
   @js.native
-  abstract class RendererComponent () extends AbstractComponent[Renderer]
+  abstract class RendererComponent protected () extends AbstractComponent[Renderer] {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Renderer) = this()
+  }
 }

@@ -1,16 +1,17 @@
 package typings.xadesjs
 
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/data_object_format", JSImport.Namespace)
-@js.native
-object dataObjectFormatMod extends js.Object {
+object dataObjectFormatMod {
   
+  @JSImport("xadesjs/build/types/xml/data_object_format", "DataObjectFormat")
   @js.native
-  class DataObjectFormat () extends XmlObject {
+  class DataObjectFormat () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var Description: String = js.native
     

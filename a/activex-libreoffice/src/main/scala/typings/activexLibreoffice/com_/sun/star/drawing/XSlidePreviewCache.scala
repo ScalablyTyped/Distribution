@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.IntegerSize2D
 import typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Slides are referenced via their index in an XIndexAccess container in order to allow multiple references to a single slide (custom presentations).
   */
 @js.native
-trait XSlidePreviewCache extends js.Object {
+trait XSlidePreviewCache extends StObject {
   
   /** Register a listener that is called when a preview has been created asynchronously. */
   def addPreviewCreationNotifyListener(xListener: XSlidePreviewCacheListener): Unit = js.native
@@ -74,42 +75,30 @@ object XSlidePreviewCache {
   }
   
   @scala.inline
-  implicit class XSlidePreviewCacheOps[Self <: XSlidePreviewCache] (val x: Self) extends AnyVal {
+  implicit class XSlidePreviewCacheMutableBuilder[Self <: XSlidePreviewCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = StObject.set(x, "addPreviewCreationNotifyListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSlidePreview(value: (Double, XCanvas) => XBitmap): Self = StObject.set(x, "getSlidePreview", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = this.set("addPreviewCreationNotifyListener", js.Any.fromFunction1(value))
+    def setRemovePreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = StObject.set(x, "removePreviewCreationNotifyListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSlidePreview(value: (Double, XCanvas) => XBitmap): Self = this.set("getSlidePreview", js.Any.fromFunction2(value))
+    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setSetDocumentSlides(value: (XIndexAccess, XInterface) => Unit): Self = StObject.set(x, "setDocumentSlides", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemovePreviewCreationNotifyListener(value: XSlidePreviewCacheListener => Unit): Self = this.set("removePreviewCreationNotifyListener", js.Any.fromFunction1(value))
+    def setSetPreviewSize(value: IntegerSize2D => Unit): Self = StObject.set(x, "setPreviewSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDocumentSlides(value: (XIndexAccess, XInterface) => Unit): Self = this.set("setDocumentSlides", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetPreviewSize(value: IntegerSize2D => Unit): Self = this.set("setPreviewSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisibleRange(value: (Double, Double) => Unit): Self = this.set("setVisibleRange", js.Any.fromFunction2(value))
+    def setSetVisibleRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setVisibleRange", js.Any.fromFunction2(value))
   }
 }

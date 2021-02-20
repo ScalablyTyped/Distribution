@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConfigRuleEvaluationStatusResponse extends js.Object {
+trait DescribeConfigRuleEvaluationStatusResponse extends StObject {
   
   /**
     * Status information about your AWS managed Config rules.
@@ -26,33 +27,21 @@ object DescribeConfigRuleEvaluationStatusResponse {
   }
   
   @scala.inline
-  implicit class DescribeConfigRuleEvaluationStatusResponseOps[Self <: DescribeConfigRuleEvaluationStatusResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeConfigRuleEvaluationStatusResponseMutableBuilder[Self <: DescribeConfigRuleEvaluationStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigRulesEvaluationStatus(value: ConfigRuleEvaluationStatusList): Self = StObject.set(x, "ConfigRulesEvaluationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigRulesEvaluationStatusUndefined: Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigRulesEvaluationStatusVarargs(value: ConfigRuleEvaluationStatus*): Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.Array(value :_*))
     
     @scala.inline
-    def setConfigRulesEvaluationStatusVarargs(value: ConfigRuleEvaluationStatus*): Self = this.set("ConfigRulesEvaluationStatus", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigRulesEvaluationStatus(value: ConfigRuleEvaluationStatusList): Self = this.set("ConfigRulesEvaluationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRulesEvaluationStatus: Self = this.set("ConfigRulesEvaluationStatus", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

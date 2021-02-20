@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemoveFlowVpcInterfaceResponse extends js.Object {
+trait RemoveFlowVpcInterfaceResponse extends StObject {
   
   /**
     * The ARN of the flow that is associated with the VPC interface you removed.
@@ -31,39 +32,27 @@ object RemoveFlowVpcInterfaceResponse {
   }
   
   @scala.inline
-  implicit class RemoveFlowVpcInterfaceResponseOps[Self <: RemoveFlowVpcInterfaceResponse] (val x: Self) extends AnyVal {
+  implicit class RemoveFlowVpcInterfaceResponseMutableBuilder[Self <: RemoveFlowVpcInterfaceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNonDeletedNetworkInterfaceIds(value: listOfString): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowArn(value: string): Self = this.set("FlowArn", value.asInstanceOf[js.Any])
+    def setNonDeletedNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.undefined)
     
     @scala.inline
-    def deleteFlowArn: Self = this.set("FlowArn", js.undefined)
+    def setNonDeletedNetworkInterfaceIdsVarargs(value: string*): Self = StObject.set(x, "NonDeletedNetworkInterfaceIds", js.Array(value :_*))
     
     @scala.inline
-    def setNonDeletedNetworkInterfaceIdsVarargs(value: string*): Self = this.set("NonDeletedNetworkInterfaceIds", js.Array(value :_*))
+    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonDeletedNetworkInterfaceIds(value: listOfString): Self = this.set("NonDeletedNetworkInterfaceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonDeletedNetworkInterfaceIds: Self = this.set("NonDeletedNetworkInterfaceIds", js.undefined)
-    
-    @scala.inline
-    def setVpcInterfaceName(value: string): Self = this.set("VpcInterfaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcInterfaceName: Self = this.set("VpcInterfaceName", js.undefined)
+    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
   }
 }

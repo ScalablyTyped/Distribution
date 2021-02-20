@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.extensions.v1beta1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodSecurityPolicySpec defines the policy enforced. Deprecated: use PodSecurityPolicySpec from policy API Group instead.
   */
 @js.native
-trait PodSecurityPolicySpec extends js.Object {
+trait PodSecurityPolicySpec extends StObject {
   
   /**
     * allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.
@@ -149,183 +150,171 @@ object PodSecurityPolicySpec {
   }
   
   @scala.inline
-  implicit class PodSecurityPolicySpecOps[Self <: PodSecurityPolicySpec] (val x: Self) extends AnyVal {
+  implicit class PodSecurityPolicySpecMutableBuilder[Self <: PodSecurityPolicySpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPrivilegeEscalation(value: Input[Boolean]): Self = StObject.set(x, "allowPrivilegeEscalation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowPrivilegeEscalationUndefined: Self = StObject.set(x, "allowPrivilegeEscalation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedCSIDrivers(value: Input[js.Array[Input[AllowedCSIDriver]]]): Self = StObject.set(x, "allowedCSIDrivers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsGroup(value: Input[FSGroupStrategyOptions]): Self = this.set("fsGroup", value.asInstanceOf[js.Any])
+    def setAllowedCSIDriversUndefined: Self = StObject.set(x, "allowedCSIDrivers", js.undefined)
     
     @scala.inline
-    def setRunAsUser(value: Input[RunAsUserStrategyOptions]): Self = this.set("runAsUser", value.asInstanceOf[js.Any])
+    def setAllowedCSIDriversVarargs(value: Input[AllowedCSIDriver]*): Self = StObject.set(x, "allowedCSIDrivers", js.Array(value :_*))
     
     @scala.inline
-    def setSeLinux(value: Input[SELinuxStrategyOptions]): Self = this.set("seLinux", value.asInstanceOf[js.Any])
+    def setAllowedCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupplementalGroups(value: Input[SupplementalGroupsStrategyOptions]): Self = this.set("supplementalGroups", value.asInstanceOf[js.Any])
+    def setAllowedCapabilitiesUndefined: Self = StObject.set(x, "allowedCapabilities", js.undefined)
     
     @scala.inline
-    def setAllowPrivilegeEscalation(value: Input[Boolean]): Self = this.set("allowPrivilegeEscalation", value.asInstanceOf[js.Any])
+    def setAllowedCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedCapabilities", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowPrivilegeEscalation: Self = this.set("allowPrivilegeEscalation", js.undefined)
+    def setAllowedFlexVolumes(value: Input[js.Array[Input[AllowedFlexVolume]]]): Self = StObject.set(x, "allowedFlexVolumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedCSIDriversVarargs(value: Input[AllowedCSIDriver]*): Self = this.set("allowedCSIDrivers", js.Array(value :_*))
+    def setAllowedFlexVolumesUndefined: Self = StObject.set(x, "allowedFlexVolumes", js.undefined)
     
     @scala.inline
-    def setAllowedCSIDrivers(value: Input[js.Array[Input[AllowedCSIDriver]]]): Self = this.set("allowedCSIDrivers", value.asInstanceOf[js.Any])
+    def setAllowedFlexVolumesVarargs(value: Input[AllowedFlexVolume]*): Self = StObject.set(x, "allowedFlexVolumes", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedCSIDrivers: Self = this.set("allowedCSIDrivers", js.undefined)
+    def setAllowedHostPaths(value: Input[js.Array[Input[AllowedHostPath]]]): Self = StObject.set(x, "allowedHostPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedCapabilitiesVarargs(value: Input[String]*): Self = this.set("allowedCapabilities", js.Array(value :_*))
+    def setAllowedHostPathsUndefined: Self = StObject.set(x, "allowedHostPaths", js.undefined)
     
     @scala.inline
-    def setAllowedCapabilities(value: Input[js.Array[Input[String]]]): Self = this.set("allowedCapabilities", value.asInstanceOf[js.Any])
+    def setAllowedHostPathsVarargs(value: Input[AllowedHostPath]*): Self = StObject.set(x, "allowedHostPaths", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedCapabilities: Self = this.set("allowedCapabilities", js.undefined)
+    def setAllowedProcMountTypes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedProcMountTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedFlexVolumesVarargs(value: Input[AllowedFlexVolume]*): Self = this.set("allowedFlexVolumes", js.Array(value :_*))
+    def setAllowedProcMountTypesUndefined: Self = StObject.set(x, "allowedProcMountTypes", js.undefined)
     
     @scala.inline
-    def setAllowedFlexVolumes(value: Input[js.Array[Input[AllowedFlexVolume]]]): Self = this.set("allowedFlexVolumes", value.asInstanceOf[js.Any])
+    def setAllowedProcMountTypesVarargs(value: Input[String]*): Self = StObject.set(x, "allowedProcMountTypes", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedFlexVolumes: Self = this.set("allowedFlexVolumes", js.undefined)
+    def setAllowedUnsafeSysctls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "allowedUnsafeSysctls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedHostPathsVarargs(value: Input[AllowedHostPath]*): Self = this.set("allowedHostPaths", js.Array(value :_*))
+    def setAllowedUnsafeSysctlsUndefined: Self = StObject.set(x, "allowedUnsafeSysctls", js.undefined)
     
     @scala.inline
-    def setAllowedHostPaths(value: Input[js.Array[Input[AllowedHostPath]]]): Self = this.set("allowedHostPaths", value.asInstanceOf[js.Any])
+    def setAllowedUnsafeSysctlsVarargs(value: Input[String]*): Self = StObject.set(x, "allowedUnsafeSysctls", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedHostPaths: Self = this.set("allowedHostPaths", js.undefined)
+    def setDefaultAddCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "defaultAddCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedProcMountTypesVarargs(value: Input[String]*): Self = this.set("allowedProcMountTypes", js.Array(value :_*))
+    def setDefaultAddCapabilitiesUndefined: Self = StObject.set(x, "defaultAddCapabilities", js.undefined)
     
     @scala.inline
-    def setAllowedProcMountTypes(value: Input[js.Array[Input[String]]]): Self = this.set("allowedProcMountTypes", value.asInstanceOf[js.Any])
+    def setDefaultAddCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "defaultAddCapabilities", js.Array(value :_*))
     
     @scala.inline
-    def deleteAllowedProcMountTypes: Self = this.set("allowedProcMountTypes", js.undefined)
+    def setDefaultAllowPrivilegeEscalation(value: Input[Boolean]): Self = StObject.set(x, "defaultAllowPrivilegeEscalation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedUnsafeSysctlsVarargs(value: Input[String]*): Self = this.set("allowedUnsafeSysctls", js.Array(value :_*))
+    def setDefaultAllowPrivilegeEscalationUndefined: Self = StObject.set(x, "defaultAllowPrivilegeEscalation", js.undefined)
     
     @scala.inline
-    def setAllowedUnsafeSysctls(value: Input[js.Array[Input[String]]]): Self = this.set("allowedUnsafeSysctls", value.asInstanceOf[js.Any])
+    def setForbiddenSysctls(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "forbiddenSysctls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowedUnsafeSysctls: Self = this.set("allowedUnsafeSysctls", js.undefined)
+    def setForbiddenSysctlsUndefined: Self = StObject.set(x, "forbiddenSysctls", js.undefined)
     
     @scala.inline
-    def setDefaultAddCapabilitiesVarargs(value: Input[String]*): Self = this.set("defaultAddCapabilities", js.Array(value :_*))
+    def setForbiddenSysctlsVarargs(value: Input[String]*): Self = StObject.set(x, "forbiddenSysctls", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultAddCapabilities(value: Input[js.Array[Input[String]]]): Self = this.set("defaultAddCapabilities", value.asInstanceOf[js.Any])
+    def setFsGroup(value: Input[FSGroupStrategyOptions]): Self = StObject.set(x, "fsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultAddCapabilities: Self = this.set("defaultAddCapabilities", js.undefined)
+    def setHostIPC(value: Input[Boolean]): Self = StObject.set(x, "hostIPC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAllowPrivilegeEscalation(value: Input[Boolean]): Self = this.set("defaultAllowPrivilegeEscalation", value.asInstanceOf[js.Any])
+    def setHostIPCUndefined: Self = StObject.set(x, "hostIPC", js.undefined)
     
     @scala.inline
-    def deleteDefaultAllowPrivilegeEscalation: Self = this.set("defaultAllowPrivilegeEscalation", js.undefined)
+    def setHostNetwork(value: Input[Boolean]): Self = StObject.set(x, "hostNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbiddenSysctlsVarargs(value: Input[String]*): Self = this.set("forbiddenSysctls", js.Array(value :_*))
+    def setHostNetworkUndefined: Self = StObject.set(x, "hostNetwork", js.undefined)
     
     @scala.inline
-    def setForbiddenSysctls(value: Input[js.Array[Input[String]]]): Self = this.set("forbiddenSysctls", value.asInstanceOf[js.Any])
+    def setHostPID(value: Input[Boolean]): Self = StObject.set(x, "hostPID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForbiddenSysctls: Self = this.set("forbiddenSysctls", js.undefined)
+    def setHostPIDUndefined: Self = StObject.set(x, "hostPID", js.undefined)
     
     @scala.inline
-    def setHostIPC(value: Input[Boolean]): Self = this.set("hostIPC", value.asInstanceOf[js.Any])
+    def setHostPorts(value: Input[js.Array[Input[HostPortRange]]]): Self = StObject.set(x, "hostPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostIPC: Self = this.set("hostIPC", js.undefined)
+    def setHostPortsUndefined: Self = StObject.set(x, "hostPorts", js.undefined)
     
     @scala.inline
-    def setHostNetwork(value: Input[Boolean]): Self = this.set("hostNetwork", value.asInstanceOf[js.Any])
+    def setHostPortsVarargs(value: Input[HostPortRange]*): Self = StObject.set(x, "hostPorts", js.Array(value :_*))
     
     @scala.inline
-    def deleteHostNetwork: Self = this.set("hostNetwork", js.undefined)
+    def setPrivileged(value: Input[Boolean]): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPID(value: Input[Boolean]): Self = this.set("hostPID", value.asInstanceOf[js.Any])
+    def setPrivilegedUndefined: Self = StObject.set(x, "privileged", js.undefined)
     
     @scala.inline
-    def deleteHostPID: Self = this.set("hostPID", js.undefined)
+    def setReadOnlyRootFilesystem(value: Input[Boolean]): Self = StObject.set(x, "readOnlyRootFilesystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPortsVarargs(value: Input[HostPortRange]*): Self = this.set("hostPorts", js.Array(value :_*))
+    def setReadOnlyRootFilesystemUndefined: Self = StObject.set(x, "readOnlyRootFilesystem", js.undefined)
     
     @scala.inline
-    def setHostPorts(value: Input[js.Array[Input[HostPortRange]]]): Self = this.set("hostPorts", value.asInstanceOf[js.Any])
+    def setRequiredDropCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "requiredDropCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHostPorts: Self = this.set("hostPorts", js.undefined)
+    def setRequiredDropCapabilitiesUndefined: Self = StObject.set(x, "requiredDropCapabilities", js.undefined)
     
     @scala.inline
-    def setPrivileged(value: Input[Boolean]): Self = this.set("privileged", value.asInstanceOf[js.Any])
+    def setRequiredDropCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "requiredDropCapabilities", js.Array(value :_*))
     
     @scala.inline
-    def deletePrivileged: Self = this.set("privileged", js.undefined)
+    def setRunAsGroup(value: Input[RunAsGroupStrategyOptions]): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnlyRootFilesystem(value: Input[Boolean]): Self = this.set("readOnlyRootFilesystem", value.asInstanceOf[js.Any])
+    def setRunAsGroupUndefined: Self = StObject.set(x, "runAsGroup", js.undefined)
     
     @scala.inline
-    def deleteReadOnlyRootFilesystem: Self = this.set("readOnlyRootFilesystem", js.undefined)
+    def setRunAsUser(value: Input[RunAsUserStrategyOptions]): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredDropCapabilitiesVarargs(value: Input[String]*): Self = this.set("requiredDropCapabilities", js.Array(value :_*))
+    def setRuntimeClass(value: Input[RuntimeClassStrategyOptions]): Self = StObject.set(x, "runtimeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredDropCapabilities(value: Input[js.Array[Input[String]]]): Self = this.set("requiredDropCapabilities", value.asInstanceOf[js.Any])
+    def setRuntimeClassUndefined: Self = StObject.set(x, "runtimeClass", js.undefined)
     
     @scala.inline
-    def deleteRequiredDropCapabilities: Self = this.set("requiredDropCapabilities", js.undefined)
+    def setSeLinux(value: Input[SELinuxStrategyOptions]): Self = StObject.set(x, "seLinux", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunAsGroup(value: Input[RunAsGroupStrategyOptions]): Self = this.set("runAsGroup", value.asInstanceOf[js.Any])
+    def setSupplementalGroups(value: Input[SupplementalGroupsStrategyOptions]): Self = StObject.set(x, "supplementalGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRunAsGroup: Self = this.set("runAsGroup", js.undefined)
+    def setVolumes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeClass(value: Input[RuntimeClassStrategyOptions]): Self = this.set("runtimeClass", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deleteRuntimeClass: Self = this.set("runtimeClass", js.undefined)
-    
-    @scala.inline
-    def setVolumesVarargs(value: Input[String]*): Self = this.set("volumes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumes(value: Input[js.Array[Input[String]]]): Self = this.set("volumes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    def setVolumesVarargs(value: Input[String]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

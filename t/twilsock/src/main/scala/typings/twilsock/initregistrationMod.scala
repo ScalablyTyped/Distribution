@@ -1,15 +1,15 @@
 package typings.twilsock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilsock/lib/protocol/initregistration", JSImport.Namespace)
-@js.native
-object initregistrationMod extends js.Object {
+object initregistrationMod {
   
+  @JSImport("twilsock/lib/protocol/initregistration", "InitRegistration")
   @js.native
-  class InitRegistration () extends js.Object {
+  class InitRegistration () extends StObject {
     
     var message_types: js.Array[String] = js.native
     

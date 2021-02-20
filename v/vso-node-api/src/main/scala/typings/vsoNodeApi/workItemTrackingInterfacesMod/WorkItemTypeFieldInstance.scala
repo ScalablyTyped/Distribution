@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,36 +45,24 @@ object WorkItemTypeFieldInstance {
   }
   
   @scala.inline
-  implicit class WorkItemTypeFieldInstanceOps[Self <: WorkItemTypeFieldInstance] (val x: Self) extends AnyVal {
+  implicit class WorkItemTypeFieldInstanceMutableBuilder[Self <: WorkItemTypeFieldInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlwaysRequired(value: Boolean): Self = StObject.set(x, "alwaysRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValuesVarargs(value: String*): Self = this.set("allowedValues", js.Array(value :_*))
+    def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValues(value: js.Array[String]): Self = this.set("allowedValues", value.asInstanceOf[js.Any])
+    def setDependentFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "dependentFields", js.Array(value :_*))
     
     @scala.inline
-    def setAlwaysRequired(value: Boolean): Self = this.set("alwaysRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDependentFieldsVarargs(value: WorkItemFieldReference*): Self = this.set("dependentFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = this.set("dependentFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHelpText(value: String): Self = this.set("helpText", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
   }
 }

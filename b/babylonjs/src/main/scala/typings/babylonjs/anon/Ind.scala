@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ind extends js.Object {
+trait Ind extends StObject {
   
   var ind: Double = js.native
   
@@ -20,24 +21,12 @@ object Ind {
   }
   
   @scala.inline
-  implicit class IndOps[Self <: Ind] (val x: Self) extends AnyVal {
+  implicit class IndMutableBuilder[Self <: Ind] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInd(value: Double): Self = StObject.set(x, "ind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInd(value: Double): Self = this.set("ind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSqDistance(value: Double): Self = this.set("sqDistance", value.asInstanceOf[js.Any])
+    def setSqDistance(value: Double): Self = StObject.set(x, "sqDistance", value.asInstanceOf[js.Any])
   }
 }

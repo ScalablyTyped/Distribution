@@ -1,12 +1,13 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.6
 @js.native
-trait WebCLMemoryObject extends js.Object {
+trait WebCLMemoryObject extends StObject {
   
   def getInfo(name: MemInfo): js.Any = js.native
   
@@ -21,24 +22,12 @@ object WebCLMemoryObject {
   }
   
   @scala.inline
-  implicit class WebCLMemoryObjectOps[Self <: WebCLMemoryObject] (val x: Self) extends AnyVal {
+  implicit class WebCLMemoryObjectMutableBuilder[Self <: WebCLMemoryObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInfo(value: MemInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetInfo(value: MemInfo => js.Any): Self = this.set("getInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRelease(value: () => Unit): Self = this.set("release", js.Any.fromFunction0(value))
+    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }
 }

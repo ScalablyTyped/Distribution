@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Construct a solid color Brush that holds the given color information.
   * @param {string=} color a well-formed CSS string describing a solid color brush; if not supplied uses 'black'.
   */
-class Brush () extends js.Object {
+class Brush () extends StObject {
   def this(color: String) = this()
   /**
     * Construct a Brush class of a given type.
@@ -66,23 +67,47 @@ class Brush () extends js.Object {
   /**Gets or sets the type of brush.*/
   var `type`: EnumValue = js.native
 }
-/* static members */
-@JSImport("go", "Brush")
-@js.native
-object Brush extends js.Object {
+object Brush {
+  
+  @JSImport("go", "Brush")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**For linear gradient brushes, used as the value for Brush.type.*/
-  var Linear: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Linear")
+  @js.native
+  def Linear: EnumValue = js.native
+  @scala.inline
+  def Linear_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Linear")(x.asInstanceOf[js.Any])
   
   /**For pattern brushes, used as the value for Brush.type.*/
-  var Pattern: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Pattern")
+  @js.native
+  def Pattern: EnumValue = js.native
+  @scala.inline
+  def Pattern_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Pattern")(x.asInstanceOf[js.Any])
   
   /**For radial gradient brushes, used as the value for Brush.type.*/
-  var Radial: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Radial")
+  @js.native
+  def Radial: EnumValue = js.native
+  @scala.inline
+  def Radial_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Radial")(x.asInstanceOf[js.Any])
   
   /**For simple, solid color brushes, used as the value for Brush.type.*/
-  var Solid: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Brush.Solid")
+  @js.native
+  def Solid: EnumValue = js.native
+  @scala.inline
+  def Solid_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Solid")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("go", "Brush.isValidColor")
+  @js.native
   def isValidColor(color: String): Boolean = js.native
   
   /**
@@ -90,8 +115,17 @@ object Brush extends js.Object {
     * @param {number=} min a number between zero and 255, defaults to 128.
     * @param {number=} max a number between zero and 255, defaults to 255.
     */
+  /* static member */
+  @JSImport("go", "Brush.randomColor")
+  @js.native
   def randomColor(): String = js.native
+  @JSImport("go", "Brush.randomColor")
+  @js.native
   def randomColor(min: js.UndefOr[scala.Nothing], max: Double): String = js.native
+  @JSImport("go", "Brush.randomColor")
+  @js.native
   def randomColor(min: Double): String = js.native
+  @JSImport("go", "Brush.randomColor")
+  @js.native
   def randomColor(min: Double, max: Double): String = js.native
 }

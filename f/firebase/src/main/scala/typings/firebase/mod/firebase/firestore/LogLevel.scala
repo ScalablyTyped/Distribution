@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firebase.firebaseStrings.error
   - typings.firebase.firebaseStrings.silent
 */
-trait LogLevel extends js.Object
+trait LogLevel extends StObject
 object LogLevel {
   
   @scala.inline

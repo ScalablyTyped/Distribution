@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoboScriptExecution extends js.Object {
+trait RoboScriptExecution extends StObject {
   
   /** The number of Robo script actions executed successfully. */
   var successfulActions: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object RoboScriptExecution {
   }
   
   @scala.inline
-  implicit class RoboScriptExecutionOps[Self <: RoboScriptExecution] (val x: Self) extends AnyVal {
+  implicit class RoboScriptExecutionMutableBuilder[Self <: RoboScriptExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccessfulActions(value: Double): Self = StObject.set(x, "successfulActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessfulActionsUndefined: Self = StObject.set(x, "successfulActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalActions(value: Double): Self = StObject.set(x, "totalActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfulActions(value: Double): Self = this.set("successfulActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessfulActions: Self = this.set("successfulActions", js.undefined)
-    
-    @scala.inline
-    def setTotalActions(value: Double): Self = this.set("totalActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalActions: Self = this.set("totalActions", js.undefined)
+    def setTotalActionsUndefined: Self = StObject.set(x, "totalActions", js.undefined)
   }
 }

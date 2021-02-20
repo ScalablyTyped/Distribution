@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioBufferAccessMode extends js.Object
+sealed trait AudioBufferAccessMode extends StObject
 /** Defines the access mode of an AudioBuffer returned by AudioFrame::LockBuffer . */
 @JSGlobal("Windows.Media.AudioBufferAccessMode")
 @js.native
-object AudioBufferAccessMode extends js.Object {
+object AudioBufferAccessMode extends StObject {
   
   /** The audio buffer is read-only. */
   @js.native

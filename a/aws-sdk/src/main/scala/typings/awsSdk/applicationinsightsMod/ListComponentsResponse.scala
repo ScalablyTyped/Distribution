@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListComponentsResponse extends js.Object {
+trait ListComponentsResponse extends StObject {
   
   /**
     * The list of application components.
@@ -26,33 +27,21 @@ object ListComponentsResponse {
   }
   
   @scala.inline
-  implicit class ListComponentsResponseOps[Self <: ListComponentsResponse] (val x: Self) extends AnyVal {
+  implicit class ListComponentsResponseMutableBuilder[Self <: ListComponentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationComponentList(value: ApplicationComponentList): Self = StObject.set(x, "ApplicationComponentList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationComponentListUndefined: Self = StObject.set(x, "ApplicationComponentList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationComponentListVarargs(value: ApplicationComponent*): Self = StObject.set(x, "ApplicationComponentList", js.Array(value :_*))
     
     @scala.inline
-    def setApplicationComponentListVarargs(value: ApplicationComponent*): Self = this.set("ApplicationComponentList", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationComponentList(value: ApplicationComponentList): Self = this.set("ApplicationComponentList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApplicationComponentList: Self = this.set("ApplicationComponentList", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

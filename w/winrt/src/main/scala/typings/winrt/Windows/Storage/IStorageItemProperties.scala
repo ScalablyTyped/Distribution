@@ -5,12 +5,13 @@ import typings.winrt.Windows.Storage.FileProperties.StorageItemContentProperties
 import typings.winrt.Windows.Storage.FileProperties.StorageItemThumbnail
 import typings.winrt.Windows.Storage.FileProperties.ThumbnailMode
 import typings.winrt.Windows.Storage.FileProperties.ThumbnailOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStorageItemProperties extends js.Object {
+trait IStorageItemProperties extends StObject {
   
   var displayName: String = js.native
   

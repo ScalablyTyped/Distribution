@@ -5,6 +5,7 @@ import typings.oracledb.anon.Cache
 import typings.oracledb.anon.Index
 import typings.oracledb.anon.Method
 import typings.oracledb.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/adsdi/soda-collection-metadata-components-reference.html#GUID-46E36926-7E6C-4561-A19F-01C09428C56D
   */
 @js.native
-trait SodaMetadata extends js.Object {
+trait SodaMetadata extends StObject {
   
   /** Object containing information related to the content column. */
   var contentColumn: js.UndefOr[Cache] = js.native
@@ -58,78 +59,66 @@ object SodaMetadata {
   }
   
   @scala.inline
-  implicit class SodaMetadataOps[Self <: SodaMetadata] (val x: Self) extends AnyVal {
+  implicit class SodaMetadataMutableBuilder[Self <: SodaMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentColumn(value: Cache): Self = StObject.set(x, "contentColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentColumnUndefined: Self = StObject.set(x, "contentColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeColumn(value: Name): Self = StObject.set(x, "creationTimeColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentColumn(value: Cache): Self = this.set("contentColumn", value.asInstanceOf[js.Any])
+    def setCreationTimeColumnUndefined: Self = StObject.set(x, "creationTimeColumn", js.undefined)
     
     @scala.inline
-    def deleteContentColumn: Self = this.set("contentColumn", js.undefined)
+    def setKeyColumn(value: AssignmentMethod): Self = StObject.set(x, "keyColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimeColumn(value: Name): Self = this.set("creationTimeColumn", value.asInstanceOf[js.Any])
+    def setKeyColumnUndefined: Self = StObject.set(x, "keyColumn", js.undefined)
     
     @scala.inline
-    def deleteCreationTimeColumn: Self = this.set("creationTimeColumn", js.undefined)
+    def setLastModifiedColumn(value: Index): Self = StObject.set(x, "lastModifiedColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyColumn(value: AssignmentMethod): Self = this.set("keyColumn", value.asInstanceOf[js.Any])
+    def setLastModifiedColumnUndefined: Self = StObject.set(x, "lastModifiedColumn", js.undefined)
     
     @scala.inline
-    def deleteKeyColumn: Self = this.set("keyColumn", js.undefined)
+    def setMediaTypeColumn(value: Name): Self = StObject.set(x, "mediaTypeColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedColumn(value: Index): Self = this.set("lastModifiedColumn", value.asInstanceOf[js.Any])
+    def setMediaTypeColumnUndefined: Self = StObject.set(x, "mediaTypeColumn", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedColumn: Self = this.set("lastModifiedColumn", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaTypeColumn(value: Name): Self = this.set("mediaTypeColumn", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteMediaTypeColumn: Self = this.set("mediaTypeColumn", js.undefined)
+    def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaName(value: String): Self = this.set("schemaName", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
     @scala.inline
-    def deleteSchemaName: Self = this.set("schemaName", js.undefined)
+    def setVersionColumn(value: Method): Self = StObject.set(x, "versionColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setVersionColumnUndefined: Self = StObject.set(x, "versionColumn", js.undefined)
     
     @scala.inline
-    def deleteTableName: Self = this.set("tableName", js.undefined)
+    def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionColumn(value: Method): Self = this.set("versionColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionColumn: Self = this.set("versionColumn", js.undefined)
-    
-    @scala.inline
-    def setViewName(value: String): Self = this.set("viewName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewName: Self = this.set("viewName", js.undefined)
+    def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
   }
 }

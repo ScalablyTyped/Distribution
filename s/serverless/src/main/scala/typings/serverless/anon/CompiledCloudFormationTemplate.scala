@@ -1,11 +1,12 @@
 package typings.serverless.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompiledCloudFormationTemplate extends js.Object {
+trait CompiledCloudFormationTemplate extends StObject {
   
   var compiledCloudFormationTemplate: Outputs = js.native
   
@@ -36,45 +37,33 @@ object CompiledCloudFormationTemplate {
   }
   
   @scala.inline
-  implicit class CompiledCloudFormationTemplateOps[Self <: CompiledCloudFormationTemplate] (val x: Self) extends AnyVal {
+  implicit class CompiledCloudFormationTemplateMutableBuilder[Self <: CompiledCloudFormationTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompiledCloudFormationTemplate(value: Outputs): Self = StObject.set(x, "compiledCloudFormationTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompiledCloudFormationTemplate(value: Outputs): Self = this.set("compiledCloudFormationTemplate", value.asInstanceOf[js.Any])
+    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionFunctions(value: Boolean): Self = this.set("versionFunctions", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuntime: Self = this.set("runtime", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setVersionFunctions(value: Boolean): Self = StObject.set(x, "versionFunctions", value.asInstanceOf[js.Any])
   }
 }

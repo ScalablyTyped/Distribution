@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRun.gapi.client.run
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionSpec extends js.Object {
+trait RevisionSpec extends StObject {
   
   /**
     * (Optional) ContainerConcurrency specifies the maximum allowed in-flight (concurrent) requests per container instance of the Revision. Cloud Run fully managed: supported, defaults to
@@ -43,54 +44,42 @@ object RevisionSpec {
   }
   
   @scala.inline
-  implicit class RevisionSpecOps[Self <: RevisionSpec] (val x: Self) extends AnyVal {
+  implicit class RevisionSpecMutableBuilder[Self <: RevisionSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerConcurrency(value: Double): Self = StObject.set(x, "containerConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerConcurrencyUndefined: Self = StObject.set(x, "containerConcurrency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainers(value: js.Array[Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerConcurrency(value: Double): Self = this.set("containerConcurrency", value.asInstanceOf[js.Any])
+    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
     @scala.inline
-    def deleteContainerConcurrency: Self = this.set("containerConcurrency", js.undefined)
+    def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value :_*))
     
     @scala.inline
-    def setContainersVarargs(value: Container*): Self = this.set("containers", js.Array(value :_*))
+    def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainers(value: js.Array[Container]): Self = this.set("containers", value.asInstanceOf[js.Any])
+    def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
     
     @scala.inline
-    def deleteContainers: Self = this.set("containers", js.undefined)
+    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountName(value: String): Self = this.set("serviceAccountName", value.asInstanceOf[js.Any])
+    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountName: Self = this.set("serviceAccountName", js.undefined)
+    def setVolumes(value: js.Array[Volume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutSeconds(value: Double): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
-    
-    @scala.inline
-    def setVolumesVarargs(value: Volume*): Self = this.set("volumes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumes(value: js.Array[Volume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

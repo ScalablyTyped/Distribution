@@ -1,6 +1,7 @@
 package typings.nodeRedRuntime.mod
 
 import typings.nodeRedRuntime.nodeRedRuntimeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object AnonymousPermissions {
   }
   
   @scala.inline
-  implicit class AnonymousPermissionsOps[Self <: AnonymousPermissions] (val x: Self) extends AnyVal {
+  implicit class AnonymousPermissionsMutableBuilder[Self <: AnonymousPermissions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnonymous(value: `true`): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermissions(value: Permission | js.Array[Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnonymous(value: `true`): Self = this.set("anonymous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermissionsVarargs(value: Permission*): Self = this.set("permissions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPermissions(value: Permission | js.Array[Permission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

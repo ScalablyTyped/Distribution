@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseInput extends js.Object {
+trait DatabaseInput extends StObject {
   
   /**
     * Creates a set of default permissions on the table for principals. 
@@ -46,54 +47,42 @@ object DatabaseInput {
   }
   
   @scala.inline
-  implicit class DatabaseInputOps[Self <: DatabaseInput] (val x: Self) extends AnyVal {
+  implicit class DatabaseInputMutableBuilder[Self <: DatabaseInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTableDefaultPermissionsUndefined: Self = StObject.set(x, "CreateTableDefaultPermissions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateTableDefaultPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = this.set("CreateTableDefaultPermissions", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = this.set("CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
+    def setLocationUri(value: URI): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateTableDefaultPermissions: Self = this.set("CreateTableDefaultPermissions", js.undefined)
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationUri(value: URI): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setTargetDatabase(value: DatabaseIdentifier): Self = StObject.set(x, "TargetDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
-    
-    @scala.inline
-    def setTargetDatabase(value: DatabaseIdentifier): Self = this.set("TargetDatabase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetDatabase: Self = this.set("TargetDatabase", js.undefined)
+    def setTargetDatabaseUndefined: Self = StObject.set(x, "TargetDatabase", js.undefined)
   }
 }

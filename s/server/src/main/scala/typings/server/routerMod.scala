@@ -2,30 +2,43 @@ package typings.server
 
 import typings.server.commonMod.Middleware
 import typings.server.commonMod.Middlewares
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("server/router", JSImport.Namespace)
-@js.native
-object routerMod extends js.Object {
+object routerMod {
   
+  @JSImport("server/router", "del")
+  @js.native
   val del: delType = js.native
   
+  @JSImport("server/router", "error")
+  @js.native
   val error: errorType = js.native
   
+  @JSImport("server/router", "get")
+  @js.native
   val get: getType = js.native
   
+  @JSImport("server/router", "post")
+  @js.native
   val post: postType = js.native
   
+  @JSImport("server/router", "put")
+  @js.native
   val put: putType = js.native
   
+  @JSImport("server/router", "socket")
+  @js.native
   val socket: socketType = js.native
   
+  @JSImport("server/router", "sub")
+  @js.native
   val sub: subType = js.native
   
   @js.native
-  trait Router extends js.Object {
+  trait Router extends StObject {
     
     def del(
       path: String,

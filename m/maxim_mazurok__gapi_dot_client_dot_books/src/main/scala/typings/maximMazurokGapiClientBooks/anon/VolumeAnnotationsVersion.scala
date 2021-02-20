@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeAnnotationsVersion extends js.Object {
+trait VolumeAnnotationsVersion extends StObject {
   
   /** The layer id of this layer (e.g. "geo"). */
   var layerId: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object VolumeAnnotationsVersion {
   }
   
   @scala.inline
-  implicit class VolumeAnnotationsVersionOps[Self <: VolumeAnnotationsVersion] (val x: Self) extends AnyVal {
+  implicit class VolumeAnnotationsVersionMutableBuilder[Self <: VolumeAnnotationsVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeAnnotationsVersion(value: String): Self = StObject.set(x, "volumeAnnotationsVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayerId: Self = this.set("layerId", js.undefined)
-    
-    @scala.inline
-    def setVolumeAnnotationsVersion(value: String): Self = this.set("volumeAnnotationsVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeAnnotationsVersion: Self = this.set("volumeAnnotationsVersion", js.undefined)
+    def setVolumeAnnotationsVersionUndefined: Self = StObject.set(x, "volumeAnnotationsVersion", js.undefined)
   }
 }

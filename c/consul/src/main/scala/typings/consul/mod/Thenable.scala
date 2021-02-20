@@ -1,11 +1,12 @@
 package typings.consul.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Thenable[T] extends js.Object {
+trait Thenable[T] extends StObject {
   
   def `catch`[U](): Thenable[U] = js.native
   def `catch`[U](onRejected: js.Function1[/* error */ js.Any, U | Thenable[U]]): Thenable[U] = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1TextClassificationConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1TextClassificationConfig extends StObject {
   
   /** Optional. If allow_multi_label is true, contributors are able to choose multiple labels for one text segment. */
   var allowMultiLabel: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudDatalabelingV1beta1TextClassificationConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1TextClassificationConfigOps[Self <: GoogleCloudDatalabelingV1beta1TextClassificationConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1TextClassificationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TextClassificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultiLabel(value: Boolean): Self = StObject.set(x, "allowMultiLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMultiLabelUndefined: Self = StObject.set(x, "allowMultiLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiLabel(value: Boolean): Self = this.set("allowMultiLabel", value.asInstanceOf[js.Any])
+    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
     @scala.inline
-    def deleteAllowMultiLabel: Self = this.set("allowMultiLabel", js.undefined)
+    def setSentimentConfig(value: GoogleCloudDatalabelingV1beta1SentimentConfig): Self = StObject.set(x, "sentimentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationSpecSet(value: String): Self = this.set("annotationSpecSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnnotationSpecSet: Self = this.set("annotationSpecSet", js.undefined)
-    
-    @scala.inline
-    def setSentimentConfig(value: GoogleCloudDatalabelingV1beta1SentimentConfig): Self = this.set("sentimentConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentimentConfig: Self = this.set("sentimentConfig", js.undefined)
+    def setSentimentConfigUndefined: Self = StObject.set(x, "sentimentConfig", js.undefined)
   }
 }

@@ -12,12 +12,13 @@ import typings.stellarBase.stellarBaseStrings.changeTrustMalformed
 import typings.stellarBase.stellarBaseStrings.changeTrustNoIssuer
 import typings.stellarBase.stellarBaseStrings.changeTrustSelfNotAllowed
 import typings.stellarBase.stellarBaseStrings.changeTrustSuccess
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeTrustResultCode extends js.Object {
+trait ChangeTrustResultCode extends StObject {
   
   val name: changeTrustSuccess | changeTrustMalformed | changeTrustNoIssuer | changeTrustInvalidLimit | changeTrustLowReserve | changeTrustSelfNotAllowed = js.native
   
@@ -35,26 +36,14 @@ object ChangeTrustResultCode {
   }
   
   @scala.inline
-  implicit class ChangeTrustResultCodeOps[Self <: ChangeTrustResultCode] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ChangeTrustResultCodeMutableBuilder[Self <: ChangeTrustResultCode] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setName(
       value: changeTrustSuccess | changeTrustMalformed | changeTrustNoIssuer | changeTrustInvalidLimit | changeTrustLowReserve | changeTrustSelfNotAllowed
-    ): Self = this.set("name", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4` | `-5`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `0` | `-1` | `-2` | `-3` | `-4` | `-5`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,42 +42,30 @@ object CompoundExpressionNode {
   }
   
   @scala.inline
-  implicit class CompoundExpressionNodeOps[Self <: CompoundExpressionNode] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildrenVarargs(
-      value: (SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol)*
-    ): Self = this.set("children", js.Array(value :_*))
+  implicit class CompoundExpressionNodeMutableBuilder[Self <: CompoundExpressionNode] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setChildren(
       value: js.Array[
           SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
         ]
-    ): Self = this.set("children", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `8`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setChildrenVarargs(
+      value: (SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol)*
+    ): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setIdentifiersVarargs(value: String*): Self = this.set("identifiers", js.Array(value :_*))
+    def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifiers(value: js.Array[String]): Self = this.set("identifiers", value.asInstanceOf[js.Any])
+    def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
     @scala.inline
-    def deleteIdentifiers: Self = this.set("identifiers", js.undefined)
+    def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    
+    @scala.inline
+    def setType(value: `8`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

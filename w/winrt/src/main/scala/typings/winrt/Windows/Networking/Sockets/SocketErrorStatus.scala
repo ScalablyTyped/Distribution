@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocketErrorStatus extends js.Object
+sealed trait SocketErrorStatus extends StObject
 @JSGlobal("Windows.Networking.Sockets.SocketErrorStatus")
 @js.native
-object SocketErrorStatus extends js.Object {
+object SocketErrorStatus extends StObject {
   
   @js.native
   sealed trait addressAlreadyInUse extends SocketErrorStatus

@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentRevision extends js.Object {
+trait CurrentRevision extends StObject {
   
   /**
     * The change identifier for the current revision.
@@ -36,36 +37,24 @@ object CurrentRevision {
   }
   
   @scala.inline
-  implicit class CurrentRevisionOps[Self <: CurrentRevision] (val x: Self) extends AnyVal {
+  implicit class CurrentRevisionMutableBuilder[Self <: CurrentRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: Time): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def setChangeIdentifier(value: RevisionChangeIdentifier): Self = this.set("changeIdentifier", value.asInstanceOf[js.Any])
+    def setRevision(value: Revision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: Revision): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setRevisionSummary(value: RevisionSummary): Self = StObject.set(x, "revisionSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Time): Self = this.set("created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
-    
-    @scala.inline
-    def setRevisionSummary(value: RevisionSummary): Self = this.set("revisionSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionSummary: Self = this.set("revisionSummary", js.undefined)
+    def setRevisionSummaryUndefined: Self = StObject.set(x, "revisionSummary", js.undefined)
   }
 }

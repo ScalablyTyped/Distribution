@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplatePlacement extends js.Object {
+trait LaunchTemplatePlacement extends StObject {
   
   /**
     * The affinity setting for an instance on a Dedicated Host.
@@ -51,60 +52,48 @@ object LaunchTemplatePlacement {
   }
   
   @scala.inline
-  implicit class LaunchTemplatePlacementOps[Self <: LaunchTemplatePlacement] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplatePlacementMutableBuilder[Self <: LaunchTemplatePlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffinityUndefined: Self = StObject.set(x, "affinity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffinity(value: String): Self = this.set("affinity", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAffinity: Self = this.set("affinity", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setPartitionNumber(value: Double): Self = StObject.set(x, "partitionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostId(value: String): Self = this.set("hostId", value.asInstanceOf[js.Any])
+    def setPartitionNumberUndefined: Self = StObject.set(x, "partitionNumber", js.undefined)
     
     @scala.inline
-    def deleteHostId: Self = this.set("hostId", js.undefined)
+    def setSpreadDomain(value: String): Self = StObject.set(x, "spreadDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionNumber(value: Double): Self = this.set("partitionNumber", value.asInstanceOf[js.Any])
+    def setSpreadDomainUndefined: Self = StObject.set(x, "spreadDomain", js.undefined)
     
     @scala.inline
-    def deletePartitionNumber: Self = this.set("partitionNumber", js.undefined)
+    def setTenancy(value: String): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadDomain(value: String): Self = this.set("spreadDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadDomain: Self = this.set("spreadDomain", js.undefined)
-    
-    @scala.inline
-    def setTenancy(value: String): Self = this.set("tenancy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenancy: Self = this.set("tenancy", js.undefined)
+    def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
   }
 }

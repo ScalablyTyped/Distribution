@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstraintType extends js.Object {
+trait ConstraintType extends StObject {
   
   /**
     * Either the angle of BodyA, or a config value.
@@ -170,69 +171,57 @@ object ConstraintType {
   }
   
   @scala.inline
-  implicit class ConstraintTypeOps[Self <: ConstraintType] (val x: Self) extends AnyVal {
+  implicit class ConstraintTypeMutableBuilder[Self <: ConstraintType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngleA(value: Double): Self = StObject.set(x, "angleA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleB(value: Double): Self = StObject.set(x, "angleB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngularStiffness(value: Double): Self = StObject.set(x, "angularStiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleA(value: Double): Self = this.set("angleA", value.asInstanceOf[js.Any])
+    def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngleB(value: Double): Self = this.set("angleB", value.asInstanceOf[js.Any])
+    def setBodyAUndefined: Self = StObject.set(x, "bodyA", js.undefined)
     
     @scala.inline
-    def setAngularStiffness(value: Double): Self = this.set("angularStiffness", value.asInstanceOf[js.Any])
+    def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDamping(value: Double): Self = this.set("damping", value.asInstanceOf[js.Any])
+    def setBodyBUndefined: Self = StObject.set(x, "bodyB", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugin(value: js.Any): Self = this.set("plugin", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointA(value: Vector): Self = this.set("pointA", value.asInstanceOf[js.Any])
+    def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointB(value: Vector): Self = this.set("pointB", value.asInstanceOf[js.Any])
+    def setPointA(value: Vector): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: IConstraintRenderDefinition): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setPointB(value: Vector): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStiffness(value: Double): Self = this.set("stiffness", value.asInstanceOf[js.Any])
+    def setRender(value: IConstraintRenderDefinition): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyA(value: BodyType): Self = this.set("bodyA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBodyA: Self = this.set("bodyA", js.undefined)
-    
-    @scala.inline
-    def setBodyB(value: BodyType): Self = this.set("bodyB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBodyB: Self = this.set("bodyB", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

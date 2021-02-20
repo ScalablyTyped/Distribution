@@ -4,13 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.blueprintjsCore.blueprintjsCoreStrings.blueprintPortalClassName
 import typings.blueprintjsCore.contextMod.Validator
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/common/context.ValidationMap<@blueprintjs/core.@blueprintjs/core/lib/esm/components/portal/portal.IPortalContext> */
 @js.native
-trait ValidationMapIPortalConte extends js.Object {
+trait ValidationMapIPortalConte extends StObject {
   
   var blueprintPortalClassName: js.UndefOr[
     Validator[typings.blueprintjsCore.blueprintjsCoreStrings.blueprintPortalClassName]
@@ -25,26 +26,14 @@ object ValidationMapIPortalConte {
   }
   
   @scala.inline
-  implicit class ValidationMapIPortalConteOps[Self <: ValidationMapIPortalConte] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ValidationMapIPortalConteMutableBuilder[Self <: ValidationMapIPortalConte] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBlueprintPortalClassName(
       value: (/* props */ StringDictionary[js.Any], blueprintPortalClassName, /* componentName */ String, /* location */ String, /* propFullName */ String) => js.UndefOr[Error]
-    ): Self = this.set("blueprintPortalClassName", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "blueprintPortalClassName", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteBlueprintPortalClassName: Self = this.set("blueprintPortalClassName", js.undefined)
+    def setBlueprintPortalClassNameUndefined: Self = StObject.set(x, "blueprintPortalClassName", js.undefined)
   }
 }

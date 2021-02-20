@@ -1,15 +1,17 @@
 package typings.emberDataAdapter
 
 import typings.emberData.mod.DS.Adapter
+import typings.emberData.mod.default.BuildURLMixin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember-data/adapter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var BuildURLMixin: typings.emberData.mod.default.BuildURLMixin = js.native
+  @JSImport("@ember-data/adapter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * An adapter is an object that receives requests from a store and
@@ -19,6 +21,13 @@ object mod extends js.Object {
     * adapter is not invoked directly instead its functionality is accessed
     * through the `store`.
     */
+  @JSImport("@ember-data/adapter", JSImport.Default)
   @js.native
   class default () extends Adapter
+  
+  @JSImport("@ember-data/adapter", "BuildURLMixin")
+  @js.native
+  def BuildURLMixin: typings.emberData.mod.default.BuildURLMixin = js.native
+  @scala.inline
+  def BuildURLMixin_=(x: BuildURLMixin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BuildURLMixin")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.expoFileSystem.fileSystemTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadPauseState extends js.Object {
+trait DownloadPauseState extends StObject {
   
   var fileUri: String = js.native
   
@@ -24,33 +25,21 @@ object DownloadPauseState {
   }
   
   @scala.inline
-  implicit class DownloadPauseStateOps[Self <: DownloadPauseState] (val x: Self) extends AnyVal {
+  implicit class DownloadPauseStateMutableBuilder[Self <: DownloadPauseState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileUri(value: String): Self = StObject.set(x, "fileUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: DownloadOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResumeData(value: String): Self = StObject.set(x, "resumeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileUri(value: String): Self = this.set("fileUri", value.asInstanceOf[js.Any])
+    def setResumeDataUndefined: Self = StObject.set(x, "resumeData", js.undefined)
     
     @scala.inline
-    def setOptions(value: DownloadOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResumeData(value: String): Self = this.set("resumeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResumeData: Self = this.set("resumeData", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

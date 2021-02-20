@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMultiRenderTargetOptions extends js.Object {
+trait IMultiRenderTargetOptions extends StObject {
   
   /**
     * Define the default type of the buffers we are creating
@@ -61,78 +62,66 @@ object IMultiRenderTargetOptions {
   }
   
   @scala.inline
-  implicit class IMultiRenderTargetOptionsOps[Self <: IMultiRenderTargetOptions] (val x: Self) extends AnyVal {
+  implicit class IMultiRenderTargetOptionsMutableBuilder[Self <: IMultiRenderTargetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultType(value: Double): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoNotChangeAspectRatio(value: Boolean): Self = StObject.set(x, "doNotChangeAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultType(value: Double): Self = this.set("defaultType", value.asInstanceOf[js.Any])
+    def setDoNotChangeAspectRatioUndefined: Self = StObject.set(x, "doNotChangeAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteDefaultType: Self = this.set("defaultType", js.undefined)
+    def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoNotChangeAspectRatio(value: Boolean): Self = this.set("doNotChangeAspectRatio", value.asInstanceOf[js.Any])
+    def setGenerateDepthBufferUndefined: Self = StObject.set(x, "generateDepthBuffer", js.undefined)
     
     @scala.inline
-    def deleteDoNotChangeAspectRatio: Self = this.set("doNotChangeAspectRatio", js.undefined)
+    def setGenerateDepthTexture(value: Boolean): Self = StObject.set(x, "generateDepthTexture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateDepthBuffer(value: Boolean): Self = this.set("generateDepthBuffer", value.asInstanceOf[js.Any])
+    def setGenerateDepthTextureUndefined: Self = StObject.set(x, "generateDepthTexture", js.undefined)
     
     @scala.inline
-    def deleteGenerateDepthBuffer: Self = this.set("generateDepthBuffer", js.undefined)
+    def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateDepthTexture(value: Boolean): Self = this.set("generateDepthTexture", value.asInstanceOf[js.Any])
+    def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
     
     @scala.inline
-    def deleteGenerateDepthTexture: Self = this.set("generateDepthTexture", js.undefined)
+    def setGenerateStencilBuffer(value: Boolean): Self = StObject.set(x, "generateStencilBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateMipMaps(value: Boolean): Self = this.set("generateMipMaps", value.asInstanceOf[js.Any])
+    def setGenerateStencilBufferUndefined: Self = StObject.set(x, "generateStencilBuffer", js.undefined)
     
     @scala.inline
-    def deleteGenerateMipMaps: Self = this.set("generateMipMaps", js.undefined)
+    def setSamplingModes(value: js.Array[Double]): Self = StObject.set(x, "samplingModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateStencilBuffer(value: Boolean): Self = this.set("generateStencilBuffer", value.asInstanceOf[js.Any])
+    def setSamplingModesUndefined: Self = StObject.set(x, "samplingModes", js.undefined)
     
     @scala.inline
-    def deleteGenerateStencilBuffer: Self = this.set("generateStencilBuffer", js.undefined)
+    def setSamplingModesVarargs(value: Double*): Self = StObject.set(x, "samplingModes", js.Array(value :_*))
     
     @scala.inline
-    def setSamplingModesVarargs(value: Double*): Self = this.set("samplingModes", js.Array(value :_*))
+    def setTextureCount(value: Double): Self = StObject.set(x, "textureCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingModes(value: js.Array[Double]): Self = this.set("samplingModes", value.asInstanceOf[js.Any])
+    def setTextureCountUndefined: Self = StObject.set(x, "textureCount", js.undefined)
     
     @scala.inline
-    def deleteSamplingModes: Self = this.set("samplingModes", js.undefined)
+    def setTypes(value: js.Array[Double]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextureCount(value: Double): Self = this.set("textureCount", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteTextureCount: Self = this.set("textureCount", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: Double*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[Double]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: Double*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

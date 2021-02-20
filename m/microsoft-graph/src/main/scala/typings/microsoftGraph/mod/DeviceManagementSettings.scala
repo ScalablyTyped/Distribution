@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceManagementSettings extends js.Object {
+trait DeviceManagementSettings extends StObject {
   
   // The number of days a device is allowed to go without checking in to remain compliant. Valid values 0 to 120
   var deviceComplianceCheckinThresholdDays: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object DeviceManagementSettings {
   }
   
   @scala.inline
-  implicit class DeviceManagementSettingsOps[Self <: DeviceManagementSettings] (val x: Self) extends AnyVal {
+  implicit class DeviceManagementSettingsMutableBuilder[Self <: DeviceManagementSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceComplianceCheckinThresholdDays(value: Double): Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceComplianceCheckinThresholdDaysUndefined: Self = StObject.set(x, "deviceComplianceCheckinThresholdDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsScheduledActionEnabled(value: Boolean): Self = StObject.set(x, "isScheduledActionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceComplianceCheckinThresholdDays(value: Double): Self = this.set("deviceComplianceCheckinThresholdDays", value.asInstanceOf[js.Any])
+    def setIsScheduledActionEnabledUndefined: Self = StObject.set(x, "isScheduledActionEnabled", js.undefined)
     
     @scala.inline
-    def deleteDeviceComplianceCheckinThresholdDays: Self = this.set("deviceComplianceCheckinThresholdDays", js.undefined)
+    def setSecureByDefault(value: Boolean): Self = StObject.set(x, "secureByDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScheduledActionEnabled(value: Boolean): Self = this.set("isScheduledActionEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsScheduledActionEnabled: Self = this.set("isScheduledActionEnabled", js.undefined)
-    
-    @scala.inline
-    def setSecureByDefault(value: Boolean): Self = this.set("secureByDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecureByDefault: Self = this.set("secureByDefault", js.undefined)
+    def setSecureByDefaultUndefined: Self = StObject.set(x, "secureByDefault", js.undefined)
   }
 }

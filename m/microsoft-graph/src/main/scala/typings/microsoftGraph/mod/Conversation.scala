@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,63 +38,51 @@ object Conversation {
   }
   
   @scala.inline
-  implicit class ConversationOps[Self <: Conversation] (val x: Self) extends AnyVal {
+  implicit class ConversationMutableBuilder[Self <: Conversation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasAttachments(value: Boolean): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastDeliveredDateTime(value: String): Self = StObject.set(x, "lastDeliveredDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasAttachments(value: Boolean): Self = this.set("hasAttachments", value.asInstanceOf[js.Any])
+    def setLastDeliveredDateTimeUndefined: Self = StObject.set(x, "lastDeliveredDateTime", js.undefined)
     
     @scala.inline
-    def deleteHasAttachments: Self = this.set("hasAttachments", js.undefined)
+    def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastDeliveredDateTime(value: String): Self = this.set("lastDeliveredDateTime", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deleteLastDeliveredDateTime: Self = this.set("lastDeliveredDateTime", js.undefined)
+    def setThreads(value: NullableOption[js.Array[ConversationThread]]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: String): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setThreadsNull: Self = StObject.set(x, "threads", null)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
     @scala.inline
-    def setThreadsVarargs(value: ConversationThread*): Self = this.set("threads", js.Array(value :_*))
+    def setThreadsVarargs(value: ConversationThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
     
     @scala.inline
-    def setThreads(value: NullableOption[js.Array[ConversationThread]]): Self = this.set("threads", value.asInstanceOf[js.Any])
+    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreads: Self = this.set("threads", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     @scala.inline
-    def setThreadsNull: Self = this.set("threads", null)
+    def setUniqueSenders(value: js.Array[String]): Self = StObject.set(x, "uniqueSenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    def setUniqueSendersUndefined: Self = StObject.set(x, "uniqueSenders", js.undefined)
     
     @scala.inline
-    def deleteTopic: Self = this.set("topic", js.undefined)
-    
-    @scala.inline
-    def setUniqueSendersVarargs(value: String*): Self = this.set("uniqueSenders", js.Array(value :_*))
-    
-    @scala.inline
-    def setUniqueSenders(value: js.Array[String]): Self = this.set("uniqueSenders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueSenders: Self = this.set("uniqueSenders", js.undefined)
+    def setUniqueSendersVarargs(value: String*): Self = StObject.set(x, "uniqueSenders", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "FileIndex")
 @js.native
-class FileIndex protected () extends js.Object {
+class FileIndex protected () extends StObject {
   def this(repoPath: js.Any, callback: js.Function) = this()
   
   var all_files: js.Any = js.native

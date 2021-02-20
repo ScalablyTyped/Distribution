@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationMetadata extends js.Object {
+trait LocationMetadata extends StObject {
   
   /** The legacy BigQuery location ID, e.g. “EU” for the “europe” location. This is for any API consumers that need the legacy “US” and “EU” locations. */
   var legacyLocationId: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object LocationMetadata {
   }
   
   @scala.inline
-  implicit class LocationMetadataOps[Self <: LocationMetadata] (val x: Self) extends AnyVal {
+  implicit class LocationMetadataMutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLegacyLocationId(value: String): Self = StObject.set(x, "legacyLocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLegacyLocationId(value: String): Self = this.set("legacyLocationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegacyLocationId: Self = this.set("legacyLocationId", js.undefined)
+    def setLegacyLocationIdUndefined: Self = StObject.set(x, "legacyLocationId", js.undefined)
   }
 }

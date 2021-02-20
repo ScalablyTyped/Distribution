@@ -5,6 +5,7 @@ import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.react.mod.ReactNode
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,72 +44,60 @@ object OptionListProps {
   }
   
   @scala.inline
-  implicit class OptionListPropsOps[Self <: OptionListProps] (val x: Self) extends AnyVal {
+  implicit class OptionListPropsMutableBuilder[Self <: OptionListProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$isFocused(value: Boolean): Self = StObject.set(x, "$isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$isFocusedUndefined: Self = StObject.set(x, "$isFocused", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemLabel(value: js.Any => ReactNode): Self = this.set("getItemLabel", js.Any.fromFunction1(value))
+    def set$isHighlightedUndefined: Self = StObject.set(x, "$isHighlighted", js.undefined)
     
     @scala.inline
-    def setItem(value: js.Any): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setGetChildMenu(value: /* item */ js.Any => ReactNode): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set$isFocused(value: Boolean): Self = this.set("$isFocused", value.asInstanceOf[js.Any])
+    def setGetChildMenuUndefined: Self = StObject.set(x, "getChildMenu", js.undefined)
     
     @scala.inline
-    def delete$isFocused: Self = this.set("$isFocused", js.undefined)
+    def setGetItemLabel(value: js.Any => ReactNode): Self = StObject.set(x, "getItemLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set$isHighlighted(value: Boolean): Self = this.set("$isHighlighted", value.asInstanceOf[js.Any])
+    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$isHighlighted: Self = this.set("$isHighlighted", js.undefined)
+    def setOnMouseEnter(value: /* event */ MouseEvent => _): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetChildMenu(value: /* item */ js.Any => ReactNode): Self = this.set("getChildMenu", js.Any.fromFunction1(value))
+    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def deleteGetChildMenu: Self = this.set("getChildMenu", js.undefined)
+    def setOverrides(value: ChildMenuPopover): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMouseEnter(value: /* event */ MouseEvent => _): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
     @scala.inline
-    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    def setRenderHrefAsAnchor(value: Boolean): Self = StObject.set(x, "renderHrefAsAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrides(value: ChildMenuPopover): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    def setRenderHrefAsAnchorUndefined: Self = StObject.set(x, "renderHrefAsAnchor", js.undefined)
     
     @scala.inline
-    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    def setResetMenu(value: () => Unit): Self = StObject.set(x, "resetMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderHrefAsAnchor(value: Boolean): Self = this.set("renderHrefAsAnchor", value.asInstanceOf[js.Any])
+    def setResetMenuUndefined: Self = StObject.set(x, "resetMenu", js.undefined)
     
     @scala.inline
-    def deleteRenderHrefAsAnchor: Self = this.set("renderHrefAsAnchor", js.undefined)
+    def setSize(value: default_ | compact): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetMenu(value: () => Unit): Self = this.set("resetMenu", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteResetMenu: Self = this.set("resetMenu", js.undefined)
-    
-    @scala.inline
-    def setSize(value: default_ | compact): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

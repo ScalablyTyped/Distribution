@@ -7,12 +7,13 @@ import typings.openlayers.mod.ProjectionLike
 import typings.openlayers.mod.format.Feature
 import typings.openlayers.mod.geom.Point
 import typings.openlayers.mod.source.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterOptions extends js.Object {
+trait ClusterOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   
@@ -41,72 +42,60 @@ object ClusterOptions {
   }
   
   @scala.inline
-  implicit class ClusterOptionsOps[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+  implicit class ClusterOptionsMutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: Vector): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionsVarargs(value: (Attribution | String)*): Self = this.set("attributions", js.Array(value :_*))
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def setAttributions(value: AttributionLike): Self = this.set("attributions", value.asInstanceOf[js.Any])
+    def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributions: Self = this.set("attributions", js.undefined)
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setFormat(value: Feature): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setExtent(value: Extent_): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setGeometryFunction(value: /* feature */ typings.openlayers.mod.Feature => Point): Self = StObject.set(x, "geometryFunction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setGeometryFunctionUndefined: Self = StObject.set(x, "geometryFunction", js.undefined)
     
     @scala.inline
-    def setFormat(value: Feature): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def setGeometryFunction(value: /* feature */ typings.openlayers.mod.Feature => Point): Self = this.set("geometryFunction", js.Any.fromFunction1(value))
+    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGeometryFunction: Self = this.set("geometryFunction", js.undefined)
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
-    
-    @scala.inline
-    def setWrapX(value: Boolean): Self = this.set("wrapX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapX: Self = this.set("wrapX", js.undefined)
+    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

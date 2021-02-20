@@ -3,12 +3,13 @@ package typings.flexmonster.mod
 import typings.flexmonster.anon.Column
 import typings.flexmonster.anon.DrillAll
 import typings.flexmonster.anon.ExpandAll
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slice extends js.Object {
+trait Slice extends StObject {
   
   var columns: js.UndefOr[js.Array[Hierarchy]] = js.native
   
@@ -37,90 +38,78 @@ object Slice {
   }
   
   @scala.inline
-  implicit class SliceOps[Self <: Slice] (val x: Self) extends AnyVal {
+  implicit class SliceMutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[Hierarchy]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: Hierarchy*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: Hierarchy*): Self = this.set("columns", js.Array(value :_*))
+    def setDrillThrough(value: js.Array[String]): Self = StObject.set(x, "drillThrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[Hierarchy]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDrillThroughUndefined: Self = StObject.set(x, "drillThrough", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setDrillThroughVarargs(value: String*): Self = StObject.set(x, "drillThrough", js.Array(value :_*))
     
     @scala.inline
-    def setDrillThroughVarargs(value: String*): Self = this.set("drillThrough", js.Array(value :_*))
+    def setDrills(value: DrillAll): Self = StObject.set(x, "drills", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillThrough(value: js.Array[String]): Self = this.set("drillThrough", value.asInstanceOf[js.Any])
+    def setDrillsUndefined: Self = StObject.set(x, "drills", js.undefined)
     
     @scala.inline
-    def deleteDrillThrough: Self = this.set("drillThrough", js.undefined)
+    def setExpands(value: ExpandAll): Self = StObject.set(x, "expands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrills(value: DrillAll): Self = this.set("drills", value.asInstanceOf[js.Any])
+    def setExpandsUndefined: Self = StObject.set(x, "expands", js.undefined)
     
     @scala.inline
-    def deleteDrills: Self = this.set("drills", js.undefined)
+    def setFlatOrder(value: js.Array[String]): Self = StObject.set(x, "flatOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpands(value: ExpandAll): Self = this.set("expands", value.asInstanceOf[js.Any])
+    def setFlatOrderUndefined: Self = StObject.set(x, "flatOrder", js.undefined)
     
     @scala.inline
-    def deleteExpands: Self = this.set("expands", js.undefined)
+    def setFlatOrderVarargs(value: String*): Self = StObject.set(x, "flatOrder", js.Array(value :_*))
     
     @scala.inline
-    def setFlatOrderVarargs(value: String*): Self = this.set("flatOrder", js.Array(value :_*))
+    def setMeasures(value: js.Array[Measure]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlatOrder(value: js.Array[String]): Self = this.set("flatOrder", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteFlatOrder: Self = this.set("flatOrder", js.undefined)
+    def setMeasuresVarargs(value: Measure*): Self = StObject.set(x, "measures", js.Array(value :_*))
     
     @scala.inline
-    def setMeasuresVarargs(value: Measure*): Self = this.set("measures", js.Array(value :_*))
+    def setReportFilters(value: js.Array[Hierarchy]): Self = StObject.set(x, "reportFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: js.Array[Measure]): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setReportFiltersUndefined: Self = StObject.set(x, "reportFilters", js.undefined)
     
     @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setReportFiltersVarargs(value: Hierarchy*): Self = StObject.set(x, "reportFilters", js.Array(value :_*))
     
     @scala.inline
-    def setReportFiltersVarargs(value: Hierarchy*): Self = this.set("reportFilters", js.Array(value :_*))
+    def setRows(value: js.Array[Hierarchy]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportFilters(value: js.Array[Hierarchy]): Self = this.set("reportFilters", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteReportFilters: Self = this.set("reportFilters", js.undefined)
+    def setRowsVarargs(value: Hierarchy*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: Hierarchy*): Self = this.set("rows", js.Array(value :_*))
+    def setSorting(value: Column): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[Hierarchy]): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setSorting(value: Column): Self = this.set("sorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
   }
 }

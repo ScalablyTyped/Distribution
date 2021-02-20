@@ -1,11 +1,12 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodesRef extends js.Object {
+trait NodesRef extends StObject {
   
   /**
     * 添加节点的布局位置的查询请求，相对于显示区域，以像素为单位。

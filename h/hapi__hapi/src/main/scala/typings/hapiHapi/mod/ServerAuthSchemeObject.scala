@@ -2,12 +2,13 @@ package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Payload
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerAuthSchemeObject extends js.Object {
+trait ServerAuthSchemeObject extends StObject {
   
   /**
     * optional object which is exposed via the [server.auth.api](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.api) object.
@@ -68,51 +69,39 @@ object ServerAuthSchemeObject {
   }
   
   @scala.inline
-  implicit class ServerAuthSchemeObjectOps[Self <: ServerAuthSchemeObject] (val x: Self) extends AnyVal {
+  implicit class ServerAuthSchemeObjectMutableBuilder[Self <: ServerAuthSchemeObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: ServerAuthSchemeObjectApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthenticate(value: (Request, ResponseToolkit) => ReturnValue): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAuthenticate(value: (Request, ResponseToolkit) => ReturnValue): Self = this.set("authenticate", js.Any.fromFunction2(value))
+    def setOptions(value: Payload): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: ServerAuthSchemeObjectApi): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
+    def setPayload(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOptions(value: Payload): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setResponse(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPayload(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = this.set("payload", js.Any.fromFunction2(value))
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setVerify(value: /* auth */ RequestAuth => js.Promise[Unit]): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResponse(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = this.set("response", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
-    
-    @scala.inline
-    def setVerify(value: /* auth */ RequestAuth => js.Promise[Unit]): Self = this.set("verify", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteVerify: Self = this.set("verify", js.undefined)
+    def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
   }
 }

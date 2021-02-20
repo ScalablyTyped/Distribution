@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Replica extends js.Object {
+trait Replica extends StObject {
   
   /**
     * Optional. The customer-managed encryption configuration of the User-Managed Replica. If no configuration is provided, Google-managed default encryption is used. Updates to the
@@ -25,30 +26,18 @@ object Replica {
   }
   
   @scala.inline
-  implicit class ReplicaOps[Self <: Replica] (val x: Self) extends AnyVal {
+  implicit class ReplicaMutableBuilder[Self <: Replica] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerManagedEncryption(value: CustomerManagedEncryption): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerManagedEncryptionUndefined: Self = StObject.set(x, "customerManagedEncryption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerManagedEncryption(value: CustomerManagedEncryption): Self = this.set("customerManagedEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerManagedEncryption: Self = this.set("customerManagedEncryption", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OESVertexArrayObject extends js.Object {
+trait OESVertexArrayObject extends StObject {
   
   val VERTEX_ARRAY_BINDING_OES: GLenum = js.native
   

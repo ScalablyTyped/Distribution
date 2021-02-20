@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageStoreUrl extends js.Object {
+trait MessageStoreUrl extends StObject {
   
   var messageStoreUrl: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object MessageStoreUrl {
   }
   
   @scala.inline
-  implicit class MessageStoreUrlOps[Self <: MessageStoreUrl] (val x: Self) extends AnyVal {
+  implicit class MessageStoreUrlMutableBuilder[Self <: MessageStoreUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageStoreUrl(value: String): Self = StObject.set(x, "messageStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageStoreUrlUndefined: Self = StObject.set(x, "messageStoreUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoteStoreUrl(value: String): Self = StObject.set(x, "noteStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageStoreUrl(value: String): Self = this.set("messageStoreUrl", value.asInstanceOf[js.Any])
+    def setNoteStoreUrlUndefined: Self = StObject.set(x, "noteStoreUrl", js.undefined)
     
     @scala.inline
-    def deleteMessageStoreUrl: Self = this.set("messageStoreUrl", js.undefined)
+    def setUserStoreUrl(value: String): Self = StObject.set(x, "userStoreUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoteStoreUrl(value: String): Self = this.set("noteStoreUrl", value.asInstanceOf[js.Any])
+    def setUserStoreUrlUndefined: Self = StObject.set(x, "userStoreUrl", js.undefined)
     
     @scala.inline
-    def deleteNoteStoreUrl: Self = this.set("noteStoreUrl", js.undefined)
+    def setUserWebSocketUrl(value: String): Self = StObject.set(x, "userWebSocketUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserStoreUrl(value: String): Self = this.set("userStoreUrl", value.asInstanceOf[js.Any])
+    def setUserWebSocketUrlUndefined: Self = StObject.set(x, "userWebSocketUrl", js.undefined)
     
     @scala.inline
-    def deleteUserStoreUrl: Self = this.set("userStoreUrl", js.undefined)
+    def setUtilityUrl(value: String): Self = StObject.set(x, "utilityUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserWebSocketUrl(value: String): Self = this.set("userWebSocketUrl", value.asInstanceOf[js.Any])
+    def setUtilityUrlUndefined: Self = StObject.set(x, "utilityUrl", js.undefined)
     
     @scala.inline
-    def deleteUserWebSocketUrl: Self = this.set("userWebSocketUrl", js.undefined)
+    def setWebApiUrlPrefix(value: String): Self = StObject.set(x, "webApiUrlPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtilityUrl(value: String): Self = this.set("utilityUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilityUrl: Self = this.set("utilityUrl", js.undefined)
-    
-    @scala.inline
-    def setWebApiUrlPrefix(value: String): Self = this.set("webApiUrlPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebApiUrlPrefix: Self = this.set("webApiUrlPrefix", js.undefined)
+    def setWebApiUrlPrefixUndefined: Self = StObject.set(x, "webApiUrlPrefix", js.undefined)
   }
 }

@@ -22,12 +22,13 @@ import typings.jupyterlabServices.anon.Wait
 import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMessage[MSGTYPE /* <: MessageType */] extends js.Object {
+trait IMessage[MSGTYPE /* <: MessageType */] extends StObject {
   
   /**
     * An optional list of binary buffers.
@@ -78,46 +79,34 @@ object IMessage {
   }
   
   @scala.inline
-  implicit class IMessageOps[Self <: IMessage[_], MSGTYPE /* <: MessageType */] (val x: Self with IMessage[MSGTYPE]) extends AnyVal {
+  implicit class IMessageMutableBuilder[Self <: IMessage[_], MSGTYPE /* <: MessageType */] (val x: Self with IMessage[MSGTYPE]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuffersUndefined: Self = StObject.set(x, "buffers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = StObject.set(x, "buffers", js.Array(value :_*))
     
     @scala.inline
-    def setChannel(value: Channel): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContent(
       value: Wait | Commid | (ReplyContent[
           ICommInfoReply | ICompleteReply | IHistoryReply | IInfoReply | IInputReply | IInspectReply | IIsCompleteReplyIncomplete | IIsCompleteReplyOther
         ]) | Targetname | Data | Code | Metadata | Ename | Executioncount | (ReplyContent[IExecuteReply] with IExecuteCount) | Allowstdin | Transient | IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail | js.Object | Password | Cursorpos | CodeString | Executionstate | Name | ((/* import warning: importer.ImportType#apply Failed type conversion: @jupyterlab/services.@jupyterlab/services/lib/kernel/messages.IDisplayDataMsg['content'] */ js.Any) with TransientDisplayidString) | Arguments | Body | Event
-    ): Self = this.set("content", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: IHeader[MSGTYPE]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeader(value: IHeader[MSGTYPE]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: JSONObject): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent_header(value: IHeader[MessageType] | js.Object): Self = this.set("parent_header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBuffersVarargs(value: (ArrayBuffer | ArrayBufferView)*): Self = this.set("buffers", js.Array(value :_*))
-    
-    @scala.inline
-    def setBuffers(value: js.Array[ArrayBuffer | ArrayBufferView]): Self = this.set("buffers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuffers: Self = this.set("buffers", js.undefined)
+    def setParent_header(value: IHeader[MessageType] | js.Object): Self = StObject.set(x, "parent_header", value.asInstanceOf[js.Any])
   }
 }

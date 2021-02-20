@@ -1,17 +1,18 @@
 package typings.mutexify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mutexify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("mutexify", JSImport.Namespace)
+  @js.native
   def apply(): Lock = js.native
   
   @js.native
-  trait Lock extends js.Object {
+  trait Lock extends StObject {
     
     def apply(fn: Release): Double = js.native
     

@@ -2,12 +2,13 @@ package typings.aureliaBinding.mod
 
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InternalCollectionObserver extends js.Object {
+trait InternalCollectionObserver extends StObject {
   
   /**
     * This will flush the change records of this observer and call any subscribers if applicable.

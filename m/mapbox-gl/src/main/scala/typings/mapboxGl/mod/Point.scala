@@ -1,12 +1,13 @@
 package typings.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "Point")
 @js.native
-class Point protected () extends js.Object {
+class Point protected () extends StObject {
   def this(x: Double, y: Double) = this()
   
   def add(p: Point): Point = js.native
@@ -48,9 +49,9 @@ class Point protected () extends js.Object {
   var y: Double = js.native
 }
 /* static members */
-@JSImport("mapbox-gl", "Point")
-@js.native
-object Point extends js.Object {
+object Point {
   
+  @JSImport("mapbox-gl", "Point.convert")
+  @js.native
   def convert(a: PointLike): Point = js.native
 }

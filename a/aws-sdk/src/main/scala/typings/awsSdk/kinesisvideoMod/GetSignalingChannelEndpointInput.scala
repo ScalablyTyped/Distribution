@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSignalingChannelEndpointInput extends js.Object {
+trait GetSignalingChannelEndpointInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signalling channel for which you want to get an endpoint.
@@ -26,27 +27,15 @@ object GetSignalingChannelEndpointInput {
   }
   
   @scala.inline
-  implicit class GetSignalingChannelEndpointInputOps[Self <: GetSignalingChannelEndpointInput] (val x: Self) extends AnyVal {
+  implicit class GetSignalingChannelEndpointInputMutableBuilder[Self <: GetSignalingChannelEndpointInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSingleMasterChannelEndpointConfiguration(value: SingleMasterChannelEndpointConfiguration): Self = StObject.set(x, "SingleMasterChannelEndpointConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChannelARN(value: ResourceARN): Self = this.set("ChannelARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleMasterChannelEndpointConfiguration(value: SingleMasterChannelEndpointConfiguration): Self = this.set("SingleMasterChannelEndpointConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleMasterChannelEndpointConfiguration: Self = this.set("SingleMasterChannelEndpointConfiguration", js.undefined)
+    def setSingleMasterChannelEndpointConfigurationUndefined: Self = StObject.set(x, "SingleMasterChannelEndpointConfiguration", js.undefined)
   }
 }

@@ -38,21 +38,14 @@ import typings.angularCompiler.outputAstMod.WritePropExpr
 import typings.angularCompiler.outputAstMod.WriteVarExpr
 import typings.angularCompiler.sourceMapMod.SourceMapGenerator
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/output/abstract_emitter", JSImport.Namespace)
-@js.native
-object abstractEmitterMod extends js.Object {
+object abstractEmitterMod {
   
-  val CATCH_ERROR_VAR: ReadVarExpr = js.native
-  
-  val CATCH_STACK_VAR: ReadVarExpr = js.native
-  
-  def escapeIdentifier(input: String, escapeDollar: Boolean): js.Any = js.native
-  def escapeIdentifier(input: String, escapeDollar: Boolean, alwaysQuote: Boolean): js.Any = js.native
-  
+  @JSImport("@angular/compiler/src/output/abstract_emitter", "AbstractEmitterVisitor")
   @js.native
   abstract class AbstractEmitterVisitor protected ()
     extends StatementVisitor
@@ -137,8 +130,17 @@ object abstractEmitterMod extends js.Object {
     def visitWriteVarExpr(expr: WriteVarExpr, ctx: EmitterVisitorContext): js.Any = js.native
   }
   
+  @JSImport("@angular/compiler/src/output/abstract_emitter", "CATCH_ERROR_VAR")
   @js.native
-  class EmitterVisitorContext protected () extends js.Object {
+  val CATCH_ERROR_VAR: ReadVarExpr = js.native
+  
+  @JSImport("@angular/compiler/src/output/abstract_emitter", "CATCH_STACK_VAR")
+  @js.native
+  val CATCH_STACK_VAR: ReadVarExpr = js.native
+  
+  @JSImport("@angular/compiler/src/output/abstract_emitter", "EmitterVisitorContext")
+  @js.native
+  class EmitterVisitorContext protected () extends StObject {
     def this(_indent: Double) = this()
     
     var _classes: js.Any = js.native
@@ -186,14 +188,22 @@ object abstractEmitterMod extends js.Object {
     def toSourceMapGenerator(genFilePath: String, startsAtLine: Double): SourceMapGenerator = js.native
   }
   /* static members */
-  @js.native
-  object EmitterVisitorContext extends js.Object {
+  object EmitterVisitorContext {
     
+    @JSImport("@angular/compiler/src/output/abstract_emitter", "EmitterVisitorContext.createRoot")
+    @js.native
     def createRoot(): EmitterVisitorContext = js.native
   }
   
+  @JSImport("@angular/compiler/src/output/abstract_emitter", "escapeIdentifier")
   @js.native
-  trait OutputEmitter extends js.Object {
+  def escapeIdentifier(input: String, escapeDollar: Boolean): js.Any = js.native
+  @JSImport("@angular/compiler/src/output/abstract_emitter", "escapeIdentifier")
+  @js.native
+  def escapeIdentifier(input: String, escapeDollar: Boolean, alwaysQuote: Boolean): js.Any = js.native
+  
+  @js.native
+  trait OutputEmitter extends StObject {
     
     def emitStatements(genFilePath: String, stmts: js.Array[Statement]): String = js.native
     def emitStatements(genFilePath: String, stmts: js.Array[Statement], preamble: String): String = js.native

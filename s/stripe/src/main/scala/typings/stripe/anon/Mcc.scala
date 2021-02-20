@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mcc extends js.Object {
+trait Mcc extends StObject {
   
   /**
     * The merchant category code for the account. MCCs are used to classify businesses
@@ -58,66 +59,54 @@ object Mcc {
   }
   
   @scala.inline
-  implicit class MccOps[Self <: Mcc] (val x: Self) extends AnyVal {
+  implicit class MccMutableBuilder[Self <: Mcc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMcc(value: String): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMccUndefined: Self = StObject.set(x, "mcc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMcc(value: String): Self = this.set("mcc", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMcc: Self = this.set("mcc", js.undefined)
+    def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSupport_address(value: City): Self = StObject.set(x, "support_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProduct_description(value: String): Self = this.set("product_description", value.asInstanceOf[js.Any])
+    def setSupport_addressUndefined: Self = StObject.set(x, "support_address", js.undefined)
     
     @scala.inline
-    def deleteProduct_description: Self = this.set("product_description", js.undefined)
+    def setSupport_email(value: String): Self = StObject.set(x, "support_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupport_address(value: City): Self = this.set("support_address", value.asInstanceOf[js.Any])
+    def setSupport_emailUndefined: Self = StObject.set(x, "support_email", js.undefined)
     
     @scala.inline
-    def deleteSupport_address: Self = this.set("support_address", js.undefined)
+    def setSupport_phone(value: String): Self = StObject.set(x, "support_phone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupport_email(value: String): Self = this.set("support_email", value.asInstanceOf[js.Any])
+    def setSupport_phoneUndefined: Self = StObject.set(x, "support_phone", js.undefined)
     
     @scala.inline
-    def deleteSupport_email: Self = this.set("support_email", js.undefined)
+    def setSupport_url(value: String): Self = StObject.set(x, "support_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupport_phone(value: String): Self = this.set("support_phone", value.asInstanceOf[js.Any])
+    def setSupport_urlUndefined: Self = StObject.set(x, "support_url", js.undefined)
     
     @scala.inline
-    def deleteSupport_phone: Self = this.set("support_phone", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupport_url(value: String): Self = this.set("support_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupport_url: Self = this.set("support_url", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

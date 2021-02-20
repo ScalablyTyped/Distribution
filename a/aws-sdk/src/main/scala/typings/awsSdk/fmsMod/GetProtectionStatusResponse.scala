@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProtectionStatusResponse extends js.Object {
+trait GetProtectionStatusResponse extends StObject {
   
   /**
     * The ID of the AWS Firewall administrator account for this policy.
@@ -36,42 +37,30 @@ object GetProtectionStatusResponse {
   }
   
   @scala.inline
-  implicit class GetProtectionStatusResponseOps[Self <: GetProtectionStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetProtectionStatusResponseMutableBuilder[Self <: GetProtectionStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminAccountId(value: AWSAccountId): Self = StObject.set(x, "AdminAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminAccountIdUndefined: Self = StObject.set(x, "AdminAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: ProtectionData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminAccountId(value: AWSAccountId): Self = this.set("AdminAccountId", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
     @scala.inline
-    def deleteAdminAccountId: Self = this.set("AdminAccountId", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: ProtectionData): Self = this.set("Data", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("Data", js.undefined)
+    def setServiceType(value: SecurityServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setServiceType(value: SecurityServiceType): Self = this.set("ServiceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceType: Self = this.set("ServiceType", js.undefined)
+    def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
   }
 }

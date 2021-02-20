@@ -2,12 +2,13 @@ package typings.ipp.anon
 
 import typings.ipp.mod.CharacterSet
 import typings.ipp.mod.MimeMediaType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Documentformat extends js.Object {
+trait Documentformat extends StObject {
   
   var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
   
@@ -48,96 +49,84 @@ object Documentformat {
   }
   
   @scala.inline
-  implicit class DocumentformatOps[Self <: Documentformat] (val x: Self) extends AnyVal {
+  implicit class DocumentformatMutableBuilder[Self <: Documentformat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAttributes-charsetUndefined`: Self = StObject.set(x, "attributes-charset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAttributes-natural-language`(value: String): Self = StObject.set(x, "attributes-natural-language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-uri`(value: String): Self = this.set("document-uri", value.asInstanceOf[js.Any])
+    def `setAttributes-natural-languageUndefined`: Self = StObject.set(x, "attributes-natural-language", js.undefined)
     
     @scala.inline
-    def `setRequesting-user-name`(value: String): Self = this.set("requesting-user-name", value.asInstanceOf[js.Any])
+    def setCompression(value: typings.ipp.mod.Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAttributes-charset`(value: CharacterSet): Self = this.set("attributes-charset", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
     @scala.inline
-    def `deleteAttributes-charset`: Self = this.set("attributes-charset", js.undefined)
+    def `setDocument-format`(value: MimeMediaType): Self = StObject.set(x, "document-format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAttributes-natural-language`(value: String): Self = this.set("attributes-natural-language", value.asInstanceOf[js.Any])
+    def `setDocument-formatUndefined`: Self = StObject.set(x, "document-format", js.undefined)
     
     @scala.inline
-    def `deleteAttributes-natural-language`: Self = this.set("attributes-natural-language", js.undefined)
+    def `setDocument-name`(value: String): Self = StObject.set(x, "document-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: typings.ipp.mod.Compression): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def `setDocument-nameUndefined`: Self = StObject.set(x, "document-name", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
+    def `setDocument-natural-language`(value: String): Self = StObject.set(x, "document-natural-language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-format`(value: MimeMediaType): Self = this.set("document-format", value.asInstanceOf[js.Any])
+    def `setDocument-natural-languageUndefined`: Self = StObject.set(x, "document-natural-language", js.undefined)
     
     @scala.inline
-    def `deleteDocument-format`: Self = this.set("document-format", js.undefined)
+    def `setDocument-uri`(value: String): Self = StObject.set(x, "document-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setDocument-name`(value: String): Self = this.set("document-name", value.asInstanceOf[js.Any])
+    def `setIpp-attribute-fidelity`(value: Boolean): Self = StObject.set(x, "ipp-attribute-fidelity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteDocument-name`: Self = this.set("document-name", js.undefined)
+    def `setIpp-attribute-fidelityUndefined`: Self = StObject.set(x, "ipp-attribute-fidelity", js.undefined)
     
     @scala.inline
-    def `setDocument-natural-language`(value: String): Self = this.set("document-natural-language", value.asInstanceOf[js.Any])
+    def `setJob-impressions`(value: Double): Self = StObject.set(x, "job-impressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteDocument-natural-language`: Self = this.set("document-natural-language", js.undefined)
+    def `setJob-impressionsUndefined`: Self = StObject.set(x, "job-impressions", js.undefined)
     
     @scala.inline
-    def `setIpp-attribute-fidelity`(value: Boolean): Self = this.set("ipp-attribute-fidelity", value.asInstanceOf[js.Any])
+    def `setJob-k-octets`(value: Double): Self = StObject.set(x, "job-k-octets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteIpp-attribute-fidelity`: Self = this.set("ipp-attribute-fidelity", js.undefined)
+    def `setJob-k-octetsUndefined`: Self = StObject.set(x, "job-k-octets", js.undefined)
     
     @scala.inline
-    def `setJob-impressions`(value: Double): Self = this.set("job-impressions", value.asInstanceOf[js.Any])
+    def `setJob-media-sheets`(value: Double): Self = StObject.set(x, "job-media-sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-impressions`: Self = this.set("job-impressions", js.undefined)
+    def `setJob-media-sheetsUndefined`: Self = StObject.set(x, "job-media-sheets", js.undefined)
     
     @scala.inline
-    def `setJob-k-octets`(value: Double): Self = this.set("job-k-octets", value.asInstanceOf[js.Any])
+    def `setJob-name`(value: String): Self = StObject.set(x, "job-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-k-octets`: Self = this.set("job-k-octets", js.undefined)
+    def `setJob-nameUndefined`: Self = StObject.set(x, "job-name", js.undefined)
     
     @scala.inline
-    def `setJob-media-sheets`(value: Double): Self = this.set("job-media-sheets", value.asInstanceOf[js.Any])
+    def `setPrinter-uri`(value: String): Self = StObject.set(x, "printer-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteJob-media-sheets`: Self = this.set("job-media-sheets", js.undefined)
+    def `setPrinter-uriUndefined`: Self = StObject.set(x, "printer-uri", js.undefined)
     
     @scala.inline
-    def `setJob-name`(value: String): Self = this.set("job-name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteJob-name`: Self = this.set("job-name", js.undefined)
-    
-    @scala.inline
-    def `setPrinter-uri`(value: String): Self = this.set("printer-uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePrinter-uri`: Self = this.set("printer-uri", js.undefined)
+    def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
   }
 }

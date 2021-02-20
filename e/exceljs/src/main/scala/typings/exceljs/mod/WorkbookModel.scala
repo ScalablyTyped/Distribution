@@ -1,12 +1,13 @@
 package typings.exceljs.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkbookModel extends js.Object {
+trait WorkbookModel extends StObject {
   
   var category: String = js.native
   
@@ -84,102 +85,90 @@ object WorkbookModel {
   }
   
   @scala.inline
-  implicit class WorkbookModelOps[Self <: WorkbookModel] (val x: Self) extends AnyVal {
+  implicit class WorkbookModelMutableBuilder[Self <: WorkbookModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentStatus(value: String): Self = StObject.set(x, "contentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentStatus(value: String): Self = this.set("contentStatus", value.asInstanceOf[js.Any])
+    def setDefinedNames(value: DefinedNamesModel): Self = StObject.set(x, "definedNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Date): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDefinedNamesVarargs(value: DefinedNamesRanges*): Self = StObject.set(x, "definedNames", js.Array(value :_*))
     
     @scala.inline
-    def setCreator(value: String): Self = this.set("creator", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinedNamesVarargs(value: DefinedNamesRanges*): Self = this.set("definedNames", js.Array(value :_*))
+    def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinedNames(value: DefinedNamesModel): Self = this.set("definedNames", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    def setLastPrinted(value: Date): Self = StObject.set(x, "lastPrinted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedBy(value: String): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setMedia(value: js.Array[Media]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPrinted(value: Date): Self = this.set("lastPrinted", value.asInstanceOf[js.Any])
+    def setMediaVarargs(value: Media*): Self = StObject.set(x, "media", js.Array(value :_*))
     
     @scala.inline
-    def setManager(value: String): Self = this.set("manager", value.asInstanceOf[js.Any])
+    def setModified(value: Date): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaVarargs(value: Media*): Self = this.set("media", js.Array(value :_*))
+    def setProperties(value: WorkbookProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia(value: js.Array[Media]): Self = this.set("media", value.asInstanceOf[js.Any])
+    def setRevision(value: Date): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModified(value: Date): Self = this.set("modified", value.asInstanceOf[js.Any])
+    def setSheets(value: js.Array[WorksheetModel]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: WorkbookProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSheetsVarargs(value: WorksheetModel*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
     @scala.inline
-    def setRevision(value: Date): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetsVarargs(value: WorksheetModel*): Self = this.set("sheets", js.Array(value :_*))
+    def setThemes(value: js.Array[String]): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: js.Array[WorksheetModel]): Self = this.set("sheets", value.asInstanceOf[js.Any])
+    def setThemesVarargs(value: String*): Self = StObject.set(x, "themes", js.Array(value :_*))
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemesVarargs(value: String*): Self = this.set("themes", js.Array(value :_*))
+    def setViews(value: js.Array[WorkbookView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemes(value: js.Array[String]): Self = this.set("themes", value.asInstanceOf[js.Any])
+    def setViewsVarargs(value: WorkbookView*): Self = StObject.set(x, "views", js.Array(value :_*))
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setWorksheets(value: js.Array[Worksheet]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewsVarargs(value: WorkbookView*): Self = this.set("views", js.Array(value :_*))
-    
-    @scala.inline
-    def setViews(value: js.Array[WorkbookView]): Self = this.set("views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorksheetsVarargs(value: Worksheet*): Self = this.set("worksheets", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorksheets(value: js.Array[Worksheet]): Self = this.set("worksheets", value.asInstanceOf[js.Any])
+    def setWorksheetsVarargs(value: Worksheet*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
   }
 }

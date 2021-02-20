@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketByTime extends js.Object {
+trait BucketByTime extends StObject {
   
   /** Specifies that result buckets aggregate data by exactly durationMillis time frames. Time frames that contain no data will be included in the response with an empty dataset. */
   var durationMillis: js.UndefOr[String] = js.native
@@ -21,30 +22,18 @@ object BucketByTime {
   }
   
   @scala.inline
-  implicit class BucketByTimeOps[Self <: BucketByTime] (val x: Self) extends AnyVal {
+  implicit class BucketByTimeMutableBuilder[Self <: BucketByTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: BucketByTimePeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMillis(value: String): Self = this.set("durationMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDurationMillis: Self = this.set("durationMillis", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: BucketByTimePeriod): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

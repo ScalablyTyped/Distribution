@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.view
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These options are only valid for a single print job. They do not change layout or formatting of the document.
   */
 @js.native
-trait PrintOptions extends js.Object {
+trait PrintOptions extends StObject {
   
   /** advises the printer to collate the pages of the copies. */
   var Collate: Boolean = js.native
@@ -64,42 +65,30 @@ object PrintOptions {
   }
   
   @scala.inline
-  implicit class PrintOptionsOps[Self <: PrintOptions] (val x: Self) extends AnyVal {
+  implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollate(value: Boolean): Self = StObject.set(x, "Collate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyCount(value: Double): Self = StObject.set(x, "CopyCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuplexMode(value: Double): Self = StObject.set(x, "DuplexMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollate(value: Boolean): Self = this.set("Collate", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyCount(value: Double): Self = this.set("CopyCount", value.asInstanceOf[js.Any])
+    def setPages(value: String): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplexMode(value: Double): Self = this.set("DuplexMode", value.asInstanceOf[js.Any])
+    def setPrinterName(value: String): Self = StObject.set(x, "PrinterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("FileName", value.asInstanceOf[js.Any])
+    def setSort(value: Boolean): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: String): Self = this.set("Pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrinterName(value: String): Self = this.set("PrinterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSort(value: Boolean): Self = this.set("Sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWait(value: Boolean): Self = this.set("Wait", value.asInstanceOf[js.Any])
+    def setWait(value: Boolean): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
   }
 }

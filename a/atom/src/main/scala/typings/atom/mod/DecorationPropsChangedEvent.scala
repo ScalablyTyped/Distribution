@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecorationPropsChangedEvent extends js.Object {
+trait DecorationPropsChangedEvent extends StObject {
   
   /** Object the new parameters the decoration now has */
   var newProperties: DecorationOptions = js.native
@@ -22,24 +23,12 @@ object DecorationPropsChangedEvent {
   }
   
   @scala.inline
-  implicit class DecorationPropsChangedEventOps[Self <: DecorationPropsChangedEvent] (val x: Self) extends AnyVal {
+  implicit class DecorationPropsChangedEventMutableBuilder[Self <: DecorationPropsChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewProperties(value: DecorationOptions): Self = StObject.set(x, "newProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewProperties(value: DecorationOptions): Self = this.set("newProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldProperties(value: DecorationOptions): Self = this.set("oldProperties", value.asInstanceOf[js.Any])
+    def setOldProperties(value: DecorationOptions): Self = StObject.set(x, "oldProperties", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentPageNum extends js.Object {
+trait CurrentPageNum extends StObject {
   
   var currentPageNum: js.UndefOr[Double] = js.native
 }
@@ -18,24 +19,12 @@ object CurrentPageNum {
   }
   
   @scala.inline
-  implicit class CurrentPageNumOps[Self <: CurrentPageNum] (val x: Self) extends AnyVal {
+  implicit class CurrentPageNumMutableBuilder[Self <: CurrentPageNum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPageNum(value: Double): Self = StObject.set(x, "currentPageNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentPageNum(value: Double): Self = this.set("currentPageNum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentPageNum: Self = this.set("currentPageNum", js.undefined)
+    def setCurrentPageNumUndefined: Self = StObject.set(x, "currentPageNum", js.undefined)
   }
 }

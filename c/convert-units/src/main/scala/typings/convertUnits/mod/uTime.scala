@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Temperature
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.ns
   - typings.convertUnits.convertUnitsStrings.mu
@@ -16,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.month
   - typings.convertUnits.convertUnitsStrings.year
 */
-trait uTime extends js.Object
+trait uTime extends StObject
 object uTime {
   
   @scala.inline

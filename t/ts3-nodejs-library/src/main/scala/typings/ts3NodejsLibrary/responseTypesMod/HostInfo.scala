@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,72 +73,60 @@ object HostInfo {
   }
   
   @scala.inline
-  implicit class HostInfoOps[Self <: HostInfo] (val x: Self) extends AnyVal {
+  implicit class HostInfoMutableBuilder[Self <: HostInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionBandwidthReceivedLastSecondTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastSecondTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionBandwidthSentLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthSentLastMinuteTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = this.set("connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
+    def setConnectionBandwidthSentLastSecondTotal(value: Double): Self = StObject.set(x, "connectionBandwidthSentLastSecondTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBandwidthReceivedLastSecondTotal(value: Double): Self = this.set("connectionBandwidthReceivedLastSecondTotal", value.asInstanceOf[js.Any])
+    def setConnectionBytesReceivedTotal(value: Double): Self = StObject.set(x, "connectionBytesReceivedTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBandwidthSentLastMinuteTotal(value: Double): Self = this.set("connectionBandwidthSentLastMinuteTotal", value.asInstanceOf[js.Any])
+    def setConnectionBytesSentTotal(value: Double): Self = StObject.set(x, "connectionBytesSentTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBandwidthSentLastSecondTotal(value: Double): Self = this.set("connectionBandwidthSentLastSecondTotal", value.asInstanceOf[js.Any])
+    def setConnectionFiletransferBandwidthReceived(value: Double): Self = StObject.set(x, "connectionFiletransferBandwidthReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBytesReceivedTotal(value: Double): Self = this.set("connectionBytesReceivedTotal", value.asInstanceOf[js.Any])
+    def setConnectionFiletransferBandwidthSent(value: Double): Self = StObject.set(x, "connectionFiletransferBandwidthSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionBytesSentTotal(value: Double): Self = this.set("connectionBytesSentTotal", value.asInstanceOf[js.Any])
+    def setConnectionFiletransferBytesReceivedTotal(value: Double): Self = StObject.set(x, "connectionFiletransferBytesReceivedTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionFiletransferBandwidthReceived(value: Double): Self = this.set("connectionFiletransferBandwidthReceived", value.asInstanceOf[js.Any])
+    def setConnectionFiletransferBytesSentTotal(value: Double): Self = StObject.set(x, "connectionFiletransferBytesSentTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionFiletransferBandwidthSent(value: Double): Self = this.set("connectionFiletransferBandwidthSent", value.asInstanceOf[js.Any])
+    def setConnectionPacketsReceivedTotal(value: Double): Self = StObject.set(x, "connectionPacketsReceivedTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionFiletransferBytesReceivedTotal(value: Double): Self = this.set("connectionFiletransferBytesReceivedTotal", value.asInstanceOf[js.Any])
+    def setConnectionPacketsSentTotal(value: Double): Self = StObject.set(x, "connectionPacketsSentTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionFiletransferBytesSentTotal(value: Double): Self = this.set("connectionFiletransferBytesSentTotal", value.asInstanceOf[js.Any])
+    def setHostTimestampUtc(value: Double): Self = StObject.set(x, "hostTimestampUtc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionPacketsReceivedTotal(value: Double): Self = this.set("connectionPacketsReceivedTotal", value.asInstanceOf[js.Any])
+    def setInstanceUptime(value: Double): Self = StObject.set(x, "instanceUptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionPacketsSentTotal(value: Double): Self = this.set("connectionPacketsSentTotal", value.asInstanceOf[js.Any])
+    def setVirtualserversRunningTotal(value: Double): Self = StObject.set(x, "virtualserversRunningTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostTimestampUtc(value: Double): Self = this.set("hostTimestampUtc", value.asInstanceOf[js.Any])
+    def setVirtualserversTotalChannelsOnline(value: Double): Self = StObject.set(x, "virtualserversTotalChannelsOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceUptime(value: Double): Self = this.set("instanceUptime", value.asInstanceOf[js.Any])
+    def setVirtualserversTotalClientsOnline(value: Double): Self = StObject.set(x, "virtualserversTotalClientsOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserversRunningTotal(value: Double): Self = this.set("virtualserversRunningTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualserversTotalChannelsOnline(value: Double): Self = this.set("virtualserversTotalChannelsOnline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualserversTotalClientsOnline(value: Double): Self = this.set("virtualserversTotalClientsOnline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualserversTotalMaxclients(value: Double): Self = this.set("virtualserversTotalMaxclients", value.asInstanceOf[js.Any])
+    def setVirtualserversTotalMaxclients(value: Double): Self = StObject.set(x, "virtualserversTotalMaxclients", value.asInstanceOf[js.Any])
   }
 }

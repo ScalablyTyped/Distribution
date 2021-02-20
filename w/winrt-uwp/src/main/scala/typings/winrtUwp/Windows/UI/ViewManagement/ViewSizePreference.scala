@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewSizePreference extends js.Object
+sealed trait ViewSizePreference extends StObject
 /** Defines the set of possible general window (app view) size preferences. */
 @JSGlobal("Windows.UI.ViewManagement.ViewSizePreference")
 @js.native
-object ViewSizePreference extends js.Object {
+object ViewSizePreference extends StObject {
   
   /** The app does not have a window size preference specified. Windows, rather than the app, sets the size preference, which defaults to UseHalf. */
   @js.native

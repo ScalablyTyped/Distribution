@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options defining a data set within Google Cloud Datastore.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2DatastoreOptions extends js.Object {
+trait SchemaGooglePrivacyDlpV2DatastoreOptions extends StObject {
   
   /**
     * The kind to process.
@@ -30,30 +31,18 @@ object SchemaGooglePrivacyDlpV2DatastoreOptions {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DatastoreOptionsOps[Self <: SchemaGooglePrivacyDlpV2DatastoreOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2DatastoreOptionsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DatastoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: SchemaGooglePrivacyDlpV2KindExpression): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = StObject.set(x, "partitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: SchemaGooglePrivacyDlpV2KindExpression): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setPartitionId(value: SchemaGooglePrivacyDlpV2PartitionId): Self = this.set("partitionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionId: Self = this.set("partitionId", js.undefined)
+    def setPartitionIdUndefined: Self = StObject.set(x, "partitionId", js.undefined)
   }
 }

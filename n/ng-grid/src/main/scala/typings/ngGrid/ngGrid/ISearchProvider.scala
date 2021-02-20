@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISearchProvider extends js.Object {
+trait ISearchProvider extends StObject {
   
   def evalFilter(): Unit = js.native
   
@@ -22,27 +23,15 @@ object ISearchProvider {
   }
   
   @scala.inline
-  implicit class ISearchProviderOps[Self <: ISearchProvider] (val x: Self) extends AnyVal {
+  implicit class ISearchProviderMutableBuilder[Self <: ISearchProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvalFilter(value: () => Unit): Self = StObject.set(x, "evalFilter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtFilter(value: Boolean): Self = StObject.set(x, "extFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvalFilter(value: () => Unit): Self = this.set("evalFilter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExtFilter(value: Boolean): Self = this.set("extFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldMap(value: js.Any): Self = this.set("fieldMap", value.asInstanceOf[js.Any])
+    def setFieldMap(value: js.Any): Self = StObject.set(x, "fieldMap", value.asInstanceOf[js.Any])
   }
 }

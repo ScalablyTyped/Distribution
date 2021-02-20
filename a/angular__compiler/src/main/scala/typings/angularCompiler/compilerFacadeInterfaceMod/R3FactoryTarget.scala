@@ -1,41 +1,36 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait R3FactoryTarget extends js.Object
+sealed trait R3FactoryTarget extends StObject
 @JSImport("@angular/compiler/src/compiler_facade_interface", "R3FactoryTarget")
 @js.native
-object R3FactoryTarget extends js.Object {
+object R3FactoryTarget extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[R3FactoryTarget with Double] = js.native
   
   @js.native
   sealed trait Component extends R3FactoryTarget
-  /* 1 */ @js.native
-  object Component extends TopLevel[Component with Double]
+  /* 1 */ val Component: typings.angularCompiler.compilerFacadeInterfaceMod.R3FactoryTarget.Component with Double = js.native
   
   @js.native
   sealed trait Directive extends R3FactoryTarget
-  /* 0 */ @js.native
-  object Directive extends TopLevel[Directive with Double]
+  /* 0 */ val Directive: typings.angularCompiler.compilerFacadeInterfaceMod.R3FactoryTarget.Directive with Double = js.native
   
   @js.native
   sealed trait Injectable extends R3FactoryTarget
-  /* 2 */ @js.native
-  object Injectable extends TopLevel[Injectable with Double]
+  /* 2 */ val Injectable: typings.angularCompiler.compilerFacadeInterfaceMod.R3FactoryTarget.Injectable with Double = js.native
   
   @js.native
   sealed trait NgModule extends R3FactoryTarget
-  /* 4 */ @js.native
-  object NgModule extends TopLevel[NgModule with Double]
+  /* 4 */ val NgModule: typings.angularCompiler.compilerFacadeInterfaceMod.R3FactoryTarget.NgModule with Double = js.native
   
   @js.native
   sealed trait Pipe extends R3FactoryTarget
-  /* 3 */ @js.native
-  object Pipe extends TopLevel[Pipe with Double]
+  /* 3 */ val Pipe: typings.angularCompiler.compilerFacadeInterfaceMod.R3FactoryTarget.Pipe with Double = js.native
 }

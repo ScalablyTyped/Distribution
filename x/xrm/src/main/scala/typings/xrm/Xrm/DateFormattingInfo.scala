@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for UserSettings.dateFormattingInfo response
   */
 @js.native
-trait DateFormattingInfo extends js.Object {
+trait DateFormattingInfo extends StObject {
   
   var AbbreviatedDayNames: js.Array[String] = js.native
   
@@ -89,108 +90,96 @@ object DateFormattingInfo {
   }
   
   @scala.inline
-  implicit class DateFormattingInfoOps[Self <: DateFormattingInfo] (val x: Self) extends AnyVal {
+  implicit class DateFormattingInfoMutableBuilder[Self <: DateFormattingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbbreviatedDayNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedDayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbbreviatedDayNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedDayNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbbreviatedMonthGenitiveNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedMonthGenitiveNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbreviatedDayNamesVarargs(value: String*): Self = this.set("AbbreviatedDayNames", js.Array(value :_*))
+    def setAbbreviatedMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedMonthGenitiveNames", js.Array(value :_*))
     
     @scala.inline
-    def setAbbreviatedDayNames(value: js.Array[String]): Self = this.set("AbbreviatedDayNames", value.asInstanceOf[js.Any])
+    def setAbbreviatedMonthNames(value: js.Array[String]): Self = StObject.set(x, "AbbreviatedMonthNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbreviatedMonthGenitiveNamesVarargs(value: String*): Self = this.set("AbbreviatedMonthGenitiveNames", js.Array(value :_*))
+    def setAbbreviatedMonthNamesVarargs(value: String*): Self = StObject.set(x, "AbbreviatedMonthNames", js.Array(value :_*))
     
     @scala.inline
-    def setAbbreviatedMonthGenitiveNames(value: js.Array[String]): Self = this.set("AbbreviatedMonthGenitiveNames", value.asInstanceOf[js.Any])
+    def setAmDesignator(value: String): Self = StObject.set(x, "AmDesignator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbreviatedMonthNamesVarargs(value: String*): Self = this.set("AbbreviatedMonthNames", js.Array(value :_*))
+    def setCalendar(value: Calendar): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbreviatedMonthNames(value: js.Array[String]): Self = this.set("AbbreviatedMonthNames", value.asInstanceOf[js.Any])
+    def setCalendarWeekRule(value: Double): Self = StObject.set(x, "CalendarWeekRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmDesignator(value: String): Self = this.set("AmDesignator", value.asInstanceOf[js.Any])
+    def setDateSeparator(value: String): Self = StObject.set(x, "DateSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendar(value: Calendar): Self = this.set("Calendar", value.asInstanceOf[js.Any])
+    def setDayNames(value: js.Array[String]): Self = StObject.set(x, "DayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarWeekRule(value: Double): Self = this.set("CalendarWeekRule", value.asInstanceOf[js.Any])
+    def setDayNamesVarargs(value: String*): Self = StObject.set(x, "DayNames", js.Array(value :_*))
     
     @scala.inline
-    def setDateSeparator(value: String): Self = this.set("DateSeparator", value.asInstanceOf[js.Any])
+    def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "FirstDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayNamesVarargs(value: String*): Self = this.set("DayNames", js.Array(value :_*))
+    def setFullDateTimePattern(value: String): Self = StObject.set(x, "FullDateTimePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayNames(value: js.Array[String]): Self = this.set("DayNames", value.asInstanceOf[js.Any])
+    def setLongDatePattern(value: String): Self = StObject.set(x, "LongDatePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDayOfWeek(value: Double): Self = this.set("FirstDayOfWeek", value.asInstanceOf[js.Any])
+    def setLongTimePattern(value: String): Self = StObject.set(x, "LongTimePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullDateTimePattern(value: String): Self = this.set("FullDateTimePattern", value.asInstanceOf[js.Any])
+    def setMonthDayPattern(value: String): Self = StObject.set(x, "MonthDayPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDatePattern(value: String): Self = this.set("LongDatePattern", value.asInstanceOf[js.Any])
+    def setMonthGenitiveNames(value: js.Array[String]): Self = StObject.set(x, "MonthGenitiveNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongTimePattern(value: String): Self = this.set("LongTimePattern", value.asInstanceOf[js.Any])
+    def setMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "MonthGenitiveNames", js.Array(value :_*))
     
     @scala.inline
-    def setMonthDayPattern(value: String): Self = this.set("MonthDayPattern", value.asInstanceOf[js.Any])
+    def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "MonthNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthGenitiveNamesVarargs(value: String*): Self = this.set("MonthGenitiveNames", js.Array(value :_*))
+    def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "MonthNames", js.Array(value :_*))
     
     @scala.inline
-    def setMonthGenitiveNames(value: js.Array[String]): Self = this.set("MonthGenitiveNames", value.asInstanceOf[js.Any])
+    def setPmDesignator(value: String): Self = StObject.set(x, "PmDesignator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthNamesVarargs(value: String*): Self = this.set("MonthNames", js.Array(value :_*))
+    def setShortDatePattern(value: String): Self = StObject.set(x, "ShortDatePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthNames(value: js.Array[String]): Self = this.set("MonthNames", value.asInstanceOf[js.Any])
+    def setShortTimePattern(value: String): Self = StObject.set(x, "ShortTimePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPmDesignator(value: String): Self = this.set("PmDesignator", value.asInstanceOf[js.Any])
+    def setShortestDayNames(value: js.Array[String]): Self = StObject.set(x, "ShortestDayNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDatePattern(value: String): Self = this.set("ShortDatePattern", value.asInstanceOf[js.Any])
+    def setShortestDayNamesVarargs(value: String*): Self = StObject.set(x, "ShortestDayNames", js.Array(value :_*))
     
     @scala.inline
-    def setShortTimePattern(value: String): Self = this.set("ShortTimePattern", value.asInstanceOf[js.Any])
+    def setSortableDateTimePattern(value: String): Self = StObject.set(x, "SortableDateTimePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortestDayNamesVarargs(value: String*): Self = this.set("ShortestDayNames", js.Array(value :_*))
+    def setTimeSeparator(value: String): Self = StObject.set(x, "TimeSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortestDayNames(value: js.Array[String]): Self = this.set("ShortestDayNames", value.asInstanceOf[js.Any])
+    def setUniversalSortableDateTimePattern(value: String): Self = StObject.set(x, "UniversalSortableDateTimePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortableDateTimePattern(value: String): Self = this.set("SortableDateTimePattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSeparator(value: String): Self = this.set("TimeSeparator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniversalSortableDateTimePattern(value: String): Self = this.set("UniversalSortableDateTimePattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYearMonthPattern(value: String): Self = this.set("YearMonthPattern", value.asInstanceOf[js.Any])
+    def setYearMonthPattern(value: String): Self = StObject.set(x, "YearMonthPattern", value.asInstanceOf[js.Any])
   }
 }

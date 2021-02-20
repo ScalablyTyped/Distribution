@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.beans
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0
   */
 @js.native
-trait Pair[T, U] extends js.Object {
+trait Pair[T, U] extends StObject {
   
   var First: T = js.native
   
@@ -26,24 +27,12 @@ object Pair {
   }
   
   @scala.inline
-  implicit class PairOps[Self <: Pair[_, _], T, U] (val x: Self with (Pair[T, U])) extends AnyVal {
+  implicit class PairMutableBuilder[Self <: Pair[_, _], T, U] (val x: Self with (Pair[T, U])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst(value: T): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirst(value: T): Self = this.set("First", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecond(value: U): Self = this.set("Second", value.asInstanceOf[js.Any])
+    def setSecond(value: U): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
   }
 }

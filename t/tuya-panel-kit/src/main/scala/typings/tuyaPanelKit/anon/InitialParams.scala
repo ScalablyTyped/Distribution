@@ -5,12 +5,13 @@ import typings.tuyaPanelKit.routersTypesMod.NavigationState
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.typesMod.EventMapBase
 import typings.tuyaPanelKit.typesMod.ScreenListeners
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InitialParams[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] extends js.Object {
+trait InitialParams[RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] extends StObject {
   
   /**
     * Initial params object for the route.
@@ -49,51 +50,39 @@ object InitialParams {
   }
   
   @scala.inline
-  implicit class InitialParamsOps[Self <: InitialParams[_, _, _, _, _], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] (val x: Self with (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: RouteName): Self = this.set("name", value.asInstanceOf[js.Any])
+  implicit class InitialParamsMutableBuilder[Self <: InitialParams[_, _, _, _, _], RouteName /* <: /* keyof ParamList */ String */, ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] (val x: Self with (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) extends AnyVal {
     
     @scala.inline
     def setInitialParams(
       value: Partial[
           /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
         ]
-    ): Self = this.set("initialParams", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "initialParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitialParams: Self = this.set("initialParams", js.undefined)
-    
-    @scala.inline
-    def setListenersFunction1(value: /* props */ Route[ParamList, RouteName] => ScreenListeners[State, EventMap]): Self = this.set("listeners", js.Any.fromFunction1(value))
+    def setInitialParamsUndefined: Self = StObject.set(x, "initialParams", js.undefined)
     
     @scala.inline
     def setListeners(
       value: (ScreenListeners[State, EventMap]) | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenListeners[State, EventMap]])
-    ): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListeners: Self = this.set("listeners", js.undefined)
+    def setListenersFunction1(value: /* props */ Route[ParamList, RouteName] => ScreenListeners[State, EventMap]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptionsFunction1(value: /* props */ Route[ParamList, RouteName] => ScreenOptions): Self = this.set("options", js.Any.fromFunction1(value))
+    def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
     @scala.inline
-    def setOptions(value: ScreenOptions | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenOptions])): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptions(value: ScreenOptions | (js.Function1[/* props */ Route[ParamList, RouteName], ScreenOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptionsFunction1(value: /* props */ Route[ParamList, RouteName] => ScreenOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

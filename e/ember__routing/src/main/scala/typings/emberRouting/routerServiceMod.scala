@@ -7,17 +7,23 @@ import typings.emberRouting.emberRoutingStrings.routeWillChange
 import typings.emberRouting.routeInfoMod.RouteInfo
 import typings.emberRouting.routeInfoWithAttributesMod.RouteInfoWithAttributes
 import typings.emberRouting.transitionMod.Transition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/routing/router-service", JSImport.Namespace)
-@js.native
-object routerServiceMod extends js.Object {
+object routerServiceMod {
+  
+  @JSImport("@ember/routing/router-service", JSImport.Default)
+  @js.native
+  class default () extends RouterService
+  
+  // tslint:disable-next-line:strict-export-declare-modifiers
+  type RouteModel = js.Object | String | Double
   
   @js.native
   trait RouterService
-    extends typings.emberObject.mod.default {
+    extends typings.emberService.mod.default {
     
     //
     /**
@@ -332,10 +338,4 @@ object routerServiceMod extends js.Object {
     def urlFor(routeName: String, models: RouteModel, options: QueryParams): String = js.native
     def urlFor(routeName: String, options: QueryParams): String = js.native
   }
-  
-  @js.native
-  class default () extends RouterService
-  
-  // tslint:disable-next-line:strict-export-declare-modifiers
-  type RouteModel = js.Object | String | Double
 }

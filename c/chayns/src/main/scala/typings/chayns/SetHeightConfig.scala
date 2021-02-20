@@ -1,12 +1,13 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setHeight()
 @js.native
-trait SetHeightConfig extends js.Object {
+trait SetHeightConfig extends StObject {
   
   var full: js.UndefOr[Boolean] = js.native
   
@@ -25,39 +26,27 @@ object SetHeightConfig {
   }
   
   @scala.inline
-  implicit class SetHeightConfigOps[Self <: SetHeightConfig] (val x: Self) extends AnyVal {
+  implicit class SetHeightConfigMutableBuilder[Self <: SetHeightConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullViewport(value: Boolean): Self = StObject.set(x, "fullViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setFullViewportUndefined: Self = StObject.set(x, "fullViewport", js.undefined)
     
     @scala.inline
-    def setFull(value: Boolean): Self = this.set("full", value.asInstanceOf[js.Any])
+    def setGrowOnly(value: Boolean): Self = StObject.set(x, "growOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFull: Self = this.set("full", js.undefined)
+    def setGrowOnlyUndefined: Self = StObject.set(x, "growOnly", js.undefined)
     
     @scala.inline
-    def setFullViewport(value: Boolean): Self = this.set("fullViewport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullViewport: Self = this.set("fullViewport", js.undefined)
-    
-    @scala.inline
-    def setGrowOnly(value: Boolean): Self = this.set("growOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGrowOnly: Self = this.set("growOnly", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

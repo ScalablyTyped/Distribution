@@ -1,5 +1,6 @@
 package typings.iitc.iitctypesMod.IITC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.iitc.iitcStrings.TURRET
   - typings.iitc.iitcStrings.LINK_AMPLIFIER
 */
-trait ModType extends js.Object
+trait ModType extends StObject
 object ModType {
   
   @scala.inline

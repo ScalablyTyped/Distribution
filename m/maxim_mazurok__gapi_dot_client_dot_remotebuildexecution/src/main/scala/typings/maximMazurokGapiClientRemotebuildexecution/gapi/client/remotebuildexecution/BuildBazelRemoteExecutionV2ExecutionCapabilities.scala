@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuildBazelRemoteExecutionV2ExecutionCapabilities extends js.Object {
+trait BuildBazelRemoteExecutionV2ExecutionCapabilities extends StObject {
   
   /** Remote execution may only support a single digest function. */
   var digestFunction: js.UndefOr[String] = js.native
@@ -28,45 +29,33 @@ object BuildBazelRemoteExecutionV2ExecutionCapabilities {
   }
   
   @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ExecutionCapabilitiesOps[Self <: BuildBazelRemoteExecutionV2ExecutionCapabilities] (val x: Self) extends AnyVal {
+  implicit class BuildBazelRemoteExecutionV2ExecutionCapabilitiesMutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecutionCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigestFunction(value: String): Self = StObject.set(x, "digestFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDigestFunctionUndefined: Self = StObject.set(x, "digestFunction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecEnabled(value: Boolean): Self = StObject.set(x, "execEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigestFunction(value: String): Self = this.set("digestFunction", value.asInstanceOf[js.Any])
+    def setExecEnabledUndefined: Self = StObject.set(x, "execEnabled", js.undefined)
     
     @scala.inline
-    def deleteDigestFunction: Self = this.set("digestFunction", js.undefined)
+    def setExecutionPriorityCapabilities(value: BuildBazelRemoteExecutionV2PriorityCapabilities): Self = StObject.set(x, "executionPriorityCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecEnabled(value: Boolean): Self = this.set("execEnabled", value.asInstanceOf[js.Any])
+    def setExecutionPriorityCapabilitiesUndefined: Self = StObject.set(x, "executionPriorityCapabilities", js.undefined)
     
     @scala.inline
-    def deleteExecEnabled: Self = this.set("execEnabled", js.undefined)
+    def setSupportedNodeProperties(value: js.Array[String]): Self = StObject.set(x, "supportedNodeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionPriorityCapabilities(value: BuildBazelRemoteExecutionV2PriorityCapabilities): Self = this.set("executionPriorityCapabilities", value.asInstanceOf[js.Any])
+    def setSupportedNodePropertiesUndefined: Self = StObject.set(x, "supportedNodeProperties", js.undefined)
     
     @scala.inline
-    def deleteExecutionPriorityCapabilities: Self = this.set("executionPriorityCapabilities", js.undefined)
-    
-    @scala.inline
-    def setSupportedNodePropertiesVarargs(value: String*): Self = this.set("supportedNodeProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedNodeProperties(value: js.Array[String]): Self = this.set("supportedNodeProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedNodeProperties: Self = this.set("supportedNodeProperties", js.undefined)
+    def setSupportedNodePropertiesVarargs(value: String*): Self = StObject.set(x, "supportedNodeProperties", js.Array(value :_*))
   }
 }

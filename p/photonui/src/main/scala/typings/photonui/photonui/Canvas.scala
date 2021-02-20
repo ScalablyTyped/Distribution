@@ -3,6 +3,7 @@ package typings.photonui.photonui
 import org.scalablytyped.runtime.StringDictionary
 import typings.photonui.anon.X
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +25,10 @@ trait Canvas extends Widget {
   
   def toBlod(imageFormat: String): js.Any = js.native
   
-   // returns Blob
+  // returns Blob
   def toBlodHD(imageFormat: String): js.Any = js.native
   
-   // returns Blob
+  // returns Blob
   def toDataUrl(imageFormat: String): String = js.native
   
   def toDataUrlHD(imageFormat: String): String = js.native
@@ -78,54 +79,42 @@ object Canvas {
   }
   
   @scala.inline
-  implicit class CanvasOps[Self <: Canvas] (val x: Self) extends AnyVal {
+  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvas(value: HTMLElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: HTMLElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setInteractiveMode(value: HTMLElement): Self = StObject.set(x, "interactiveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetContext(value: String => js.Any): Self = this.set("getContext", js.Any.fromFunction1(value))
+    def setSetContext(value: String => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setSupportsContext(value: String => Boolean): Self = StObject.set(x, "supportsContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInteractiveMode(value: HTMLElement): Self = this.set("interactiveMode", value.asInstanceOf[js.Any])
+    def setToBlod(value: String => js.Any): Self = StObject.set(x, "toBlod", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetContext(value: String => Unit): Self = this.set("setContext", js.Any.fromFunction1(value))
+    def setToBlodHD(value: String => js.Any): Self = StObject.set(x, "toBlodHD", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSupportsContext(value: String => Boolean): Self = this.set("supportsContext", js.Any.fromFunction1(value))
+    def setToDataUrl(value: String => String): Self = StObject.set(x, "toDataUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToBlod(value: String => js.Any): Self = this.set("toBlod", js.Any.fromFunction1(value))
+    def setToDataUrlHD(value: String => String): Self = StObject.set(x, "toDataUrlHD", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToBlodHD(value: String => js.Any): Self = this.set("toBlodHD", js.Any.fromFunction1(value))
+    def setTransferControlToProxy(value: () => Unit): Self = StObject.set(x, "transferControlToProxy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToDataUrl(value: String => String): Self = this.set("toDataUrl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToDataUrlHD(value: String => String): Self = this.set("toDataUrlHD", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransferControlToProxy(value: () => Unit): Self = this.set("transferControlToProxy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

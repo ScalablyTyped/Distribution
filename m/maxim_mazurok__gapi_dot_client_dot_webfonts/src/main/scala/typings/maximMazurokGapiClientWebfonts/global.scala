@@ -3,27 +3,29 @@ package typings.maximMazurokGapiClientWebfonts
 import typings.maximMazurokGapiClientWebfonts.gapi.client.webfonts.WebfontsResource
 import typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.v1
 import typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.webfonts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Web Fonts Developer API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: webfonts, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: webfonts, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object webfonts extends js.Object {
+      object webfonts {
         
+        @JSGlobal("gapi.client.webfonts.webfonts")
+        @js.native
         val webfonts: WebfontsResource = js.native
       }
     }

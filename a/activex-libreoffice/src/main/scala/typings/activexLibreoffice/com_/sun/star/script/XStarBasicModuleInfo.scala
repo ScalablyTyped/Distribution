@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,36 +59,24 @@ object XStarBasicModuleInfo {
   }
   
   @scala.inline
-  implicit class XStarBasicModuleInfoOps[Self <: XStarBasicModuleInfo] (val x: Self) extends AnyVal {
+  implicit class XStarBasicModuleInfoMutableBuilder[Self <: XStarBasicModuleInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetLanguage(value: () => String): Self = this.set("getLanguage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSource(value: () => String): Self = this.set("getSource", js.Any.fromFunction0(value))
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

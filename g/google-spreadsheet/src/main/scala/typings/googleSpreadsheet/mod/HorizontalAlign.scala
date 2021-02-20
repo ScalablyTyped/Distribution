@@ -1,5 +1,6 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleSpreadsheet.googleSpreadsheetStrings.CENTER
   - typings.googleSpreadsheet.googleSpreadsheetStrings.RIGHT
 */
-trait HorizontalAlign extends js.Object
+trait HorizontalAlign extends StObject
 object HorizontalAlign {
   
   @scala.inline

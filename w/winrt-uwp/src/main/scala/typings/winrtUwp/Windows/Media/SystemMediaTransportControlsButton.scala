@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemMediaTransportControlsButton extends js.Object
+sealed trait SystemMediaTransportControlsButton extends StObject
 /** Defines values for the buttons on the SystemMediaTransportControls . */
 @JSGlobal("Windows.Media.SystemMediaTransportControlsButton")
 @js.native
-object SystemMediaTransportControlsButton extends js.Object {
+object SystemMediaTransportControlsButton extends StObject {
   
   /** The channel down button. */
   @js.native

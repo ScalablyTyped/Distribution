@@ -1,5 +1,6 @@
 package typings.webBluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webBluetooth.anon.Filters
   - typings.webBluetooth.anon.AcceptAllDevices
 */
-trait RequestDeviceOptions extends js.Object
+trait RequestDeviceOptions extends StObject
 object RequestDeviceOptions {
   
   @scala.inline
-  def Filters(filters: js.Array[BluetoothRequestDeviceFilter]): RequestDeviceOptions = {
-    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RequestDeviceOptions]
+  def AcceptAllDevices(acceptAllDevices: Boolean): typings.webBluetooth.anon.AcceptAllDevices = {
+    val __obj = js.Dynamic.literal(acceptAllDevices = acceptAllDevices.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.webBluetooth.anon.AcceptAllDevices]
   }
   
   @scala.inline
-  def AcceptAllDevices(acceptAllDevices: Boolean): RequestDeviceOptions = {
-    val __obj = js.Dynamic.literal(acceptAllDevices = acceptAllDevices.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RequestDeviceOptions]
+  def Filters(filters: js.Array[BluetoothRequestDeviceFilter]): typings.webBluetooth.anon.Filters = {
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.webBluetooth.anon.Filters]
   }
 }

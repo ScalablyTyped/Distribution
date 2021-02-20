@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the location of a panel on a computer. This enumeration is used for indicating the physical location of a device. */
 @JSGlobal("Windows.Devices.Enumeration.Panel")
 @js.native
-object Panel extends js.Object {
+object Panel extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Enumeration.Panel with Double] = js.native

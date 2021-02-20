@@ -1,6 +1,7 @@
 package typings.paper.paper
 
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that they inherit from Item.
   */
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   /** 
     * Adds the specified item as a child of this item at the end of the its

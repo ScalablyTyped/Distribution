@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWorkflowAdmin extends js.Object {
+trait IWorkflowAdmin extends StObject {
   
   def Clone(): IWorkflowAdmin = js.native
   
@@ -38,39 +39,27 @@ object IWorkflowAdmin {
   }
   
   @scala.inline
-  implicit class IWorkflowAdminOps[Self <: IWorkflowAdmin] (val x: Self) extends AnyVal {
+  implicit class IWorkflowAdminMutableBuilder[Self <: IWorkflowAdmin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IWorkflowAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissions(value: IAccessControlList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IWorkflowAdmin): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setStateTransitions(value: IStateTransitions): Self = StObject.set(x, "StateTransitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: IAccessControlList): Self = this.set("Permissions", value.asInstanceOf[js.Any])
+    def setStates(value: IStatesAdmin): Self = StObject.set(x, "States", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateTransitions(value: IStateTransitions): Self = this.set("StateTransitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStates(value: IStatesAdmin): Self = this.set("States", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflow(value: IWorkflow): Self = this.set("Workflow", value.asInstanceOf[js.Any])
+    def setWorkflow(value: IWorkflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
   }
 }

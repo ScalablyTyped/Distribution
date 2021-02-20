@@ -1,12 +1,15 @@
 package typings.jestConsole
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jest/console/build/NullConsole", JSImport.Namespace)
-@js.native
-object nullConsoleMod extends js.Object {
+object nullConsoleMod {
+  
+  @JSImport("@jest/console/build/NullConsole", JSImport.Default)
+  @js.native
+  class default () extends NullConsole
   
   @js.native
   trait NullConsole
@@ -26,7 +29,4 @@ object nullConsoleMod extends js.Object {
     
     def warn(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends NullConsole
 }

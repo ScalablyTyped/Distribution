@@ -1,6 +1,7 @@
 package typings.html5plus
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
   */
 @js.native
-trait PlusBluetoothBluetoothDeviceInfo extends js.Object {
+trait PlusBluetoothBluetoothDeviceInfo extends StObject {
   
   /**
     * 蓝牙设备的信号强度
@@ -72,63 +73,51 @@ object PlusBluetoothBluetoothDeviceInfo {
   }
   
   @scala.inline
-  implicit class PlusBluetoothBluetoothDeviceInfoOps[Self <: PlusBluetoothBluetoothDeviceInfo] (val x: Self) extends AnyVal {
+  implicit class PlusBluetoothBluetoothDeviceInfoMutableBuilder[Self <: PlusBluetoothBluetoothDeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisData(value: ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertisServiceUUIDs(value: js.Array[_]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRSSI(value: String): Self = this.set("RSSI", value.asInstanceOf[js.Any])
+    def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)
     
     @scala.inline
-    def deleteRSSI: Self = this.set("RSSI", js.undefined)
+    def setAdvertisServiceUUIDsVarargs(value: js.Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value :_*))
     
     @scala.inline
-    def setAdvertisData(value: ArrayBuffer): Self = this.set("advertisData", value.asInstanceOf[js.Any])
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdvertisData: Self = this.set("advertisData", js.undefined)
+    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
     @scala.inline
-    def setAdvertisServiceUUIDsVarargs(value: js.Any*): Self = this.set("advertisServiceUUIDs", js.Array(value :_*))
+    def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisServiceUUIDs(value: js.Array[_]): Self = this.set("advertisServiceUUIDs", value.asInstanceOf[js.Any])
+    def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
     
     @scala.inline
-    def deleteAdvertisServiceUUIDs: Self = this.set("advertisServiceUUIDs", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    def setRSSI(value: String): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalName(value: String): Self = this.set("localName", value.asInstanceOf[js.Any])
+    def setRSSIUndefined: Self = StObject.set(x, "RSSI", js.undefined)
     
     @scala.inline
-    def deleteLocalName: Self = this.set("localName", js.undefined)
+    def setServiceData(value: js.Any): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setServiceData(value: js.Any): Self = this.set("serviceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceData: Self = this.set("serviceData", js.undefined)
+    def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
   }
 }

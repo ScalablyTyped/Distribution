@@ -11,12 +11,13 @@ import typings.atom.atomStrings.beta
 import typings.atom.atomStrings.dev
 import typings.atom.atomStrings.nightly
 import typings.atom.atomStrings.stable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AtomEnvironment extends js.Object {
+trait AtomEnvironment extends StObject {
   
   // Messaging the User
   /** Visually and audibly trigger a beep. */

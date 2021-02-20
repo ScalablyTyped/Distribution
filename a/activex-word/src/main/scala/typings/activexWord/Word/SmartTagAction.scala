@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagAction extends js.Object {
+trait SmartTagAction extends StObject {
   
   val ActiveXControl: js.Any = js.native
   
@@ -64,63 +65,51 @@ object SmartTagAction {
   }
   
   @scala.inline
-  implicit class SmartTagActionOps[Self <: SmartTagAction] (val x: Self) extends AnyVal {
+  implicit class SmartTagActionMutableBuilder[Self <: SmartTagAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveXControl(value: js.Any): Self = StObject.set(x, "ActiveXControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckboxState(value: Boolean): Self = StObject.set(x, "CheckboxState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveXControl(value: js.Any): Self = this.set("ActiveXControl", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExecute(value: () => Unit): Self = StObject.set(x, "Execute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCheckboxState(value: Boolean): Self = this.set("CheckboxState", value.asInstanceOf[js.Any])
+    def setExpandDocumentFragment(value: Boolean): Self = StObject.set(x, "ExpandDocumentFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setExpandHelp(value: Boolean): Self = StObject.set(x, "ExpandHelp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecute(value: () => Unit): Self = this.set("Execute", js.Any.fromFunction0(value))
+    def setListSelection(value: Double): Self = StObject.set(x, "ListSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandDocumentFragment(value: Boolean): Self = this.set("ExpandDocumentFragment", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandHelp(value: Boolean): Self = this.set("ExpandHelp", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListSelection(value: Double): Self = this.set("ListSelection", value.asInstanceOf[js.Any])
+    def setPresentInPane(value: Boolean): Self = StObject.set(x, "PresentInPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRadioGroupSelection(value: Double): Self = StObject.set(x, "RadioGroupSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setTextboxText(value: String): Self = StObject.set(x, "TextboxText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentInPane(value: Boolean): Self = this.set("PresentInPane", value.asInstanceOf[js.Any])
+    def setType(value: WdSmartTagControlType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadioGroupSelection(value: Double): Self = this.set("RadioGroupSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextboxText(value: String): Self = this.set("TextboxText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WdSmartTagControlType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotSmartTagAction_typekey(value: SmartTagAction): Self = this.set("Word.SmartTagAction_typekey", value.asInstanceOf[js.Any])
+    def setWordDotSmartTagAction_typekey(value: SmartTagAction): Self = StObject.set(x, "Word.SmartTagAction_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Amountpercent extends js.Object {
+trait Amountpercent extends StObject {
   
   /**
     * A non-negative decimal between 0 and 100, with at most two decimal places.
@@ -28,27 +29,15 @@ object Amountpercent {
   }
   
   @scala.inline
-  implicit class AmountpercentOps[Self <: Amountpercent] (val x: Self) extends AnyVal {
+  implicit class AmountpercentMutableBuilder[Self <: Amountpercent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount_percent(value: Double): Self = StObject.set(x, "amount_percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmount_percentUndefined: Self = StObject.set(x, "amount_percent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAmount_percent(value: Double): Self = this.set("amount_percent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount_percent: Self = this.set("amount_percent", js.undefined)
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

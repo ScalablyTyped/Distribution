@@ -2,14 +2,14 @@ package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/route-redirect/route-redirect", JSImport.Namespace)
-@js.native
-object routeRedirectMod extends js.Object {
+object routeRedirectMod {
   
+  @JSImport("@ionic/core/dist/types/components/route-redirect/route-redirect", "RouteRedirect")
   @js.native
   class RouteRedirect () extends ComponentInterface {
     

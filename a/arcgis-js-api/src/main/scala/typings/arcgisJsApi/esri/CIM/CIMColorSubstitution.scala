@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMColorSubstitution extends js.Object {
+trait CIMColorSubstitution extends StObject {
   
   /**
     * The new color that will replace the old color.
@@ -29,39 +30,27 @@ object CIMColorSubstitution {
   }
   
   @scala.inline
-  implicit class CIMColorSubstitutionOps[Self <: CIMColorSubstitution] (val x: Self) extends AnyVal {
+  implicit class CIMColorSubstitutionMutableBuilder[Self <: CIMColorSubstitution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewColor(value: js.Array[Double]): Self = StObject.set(x, "newColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewColorUndefined: Self = StObject.set(x, "newColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewColorVarargs(value: Double*): Self = StObject.set(x, "newColor", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOldColor(value: js.Array[Double]): Self = StObject.set(x, "oldColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewColorVarargs(value: Double*): Self = this.set("newColor", js.Array(value :_*))
+    def setOldColorUndefined: Self = StObject.set(x, "oldColor", js.undefined)
     
     @scala.inline
-    def setNewColor(value: js.Array[Double]): Self = this.set("newColor", value.asInstanceOf[js.Any])
+    def setOldColorVarargs(value: Double*): Self = StObject.set(x, "oldColor", js.Array(value :_*))
     
     @scala.inline
-    def deleteNewColor: Self = this.set("newColor", js.undefined)
-    
-    @scala.inline
-    def setOldColorVarargs(value: Double*): Self = this.set("oldColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setOldColor(value: js.Array[Double]): Self = this.set("oldColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldColor: Self = this.set("oldColor", js.undefined)
+    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

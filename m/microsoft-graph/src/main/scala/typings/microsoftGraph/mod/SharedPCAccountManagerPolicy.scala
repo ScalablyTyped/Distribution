@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedPCAccountManagerPolicy extends js.Object {
+trait SharedPCAccountManagerPolicy extends StObject {
   
   /**
     * Configures when accounts are deleted. Possible values are: immediate, diskSpaceThreshold,
@@ -43,51 +44,39 @@ object SharedPCAccountManagerPolicy {
   }
   
   @scala.inline
-  implicit class SharedPCAccountManagerPolicyOps[Self <: SharedPCAccountManagerPolicy] (val x: Self) extends AnyVal {
+  implicit class SharedPCAccountManagerPolicyMutableBuilder[Self <: SharedPCAccountManagerPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountDeletionPolicy(value: SharedPCAccountDeletionPolicyType): Self = StObject.set(x, "accountDeletionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountDeletionPolicyUndefined: Self = StObject.set(x, "accountDeletionPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheAccountsAboveDiskFreePercentage(value: NullableOption[Double]): Self = StObject.set(x, "cacheAccountsAboveDiskFreePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountDeletionPolicy(value: SharedPCAccountDeletionPolicyType): Self = this.set("accountDeletionPolicy", value.asInstanceOf[js.Any])
+    def setCacheAccountsAboveDiskFreePercentageNull: Self = StObject.set(x, "cacheAccountsAboveDiskFreePercentage", null)
     
     @scala.inline
-    def deleteAccountDeletionPolicy: Self = this.set("accountDeletionPolicy", js.undefined)
+    def setCacheAccountsAboveDiskFreePercentageUndefined: Self = StObject.set(x, "cacheAccountsAboveDiskFreePercentage", js.undefined)
     
     @scala.inline
-    def setCacheAccountsAboveDiskFreePercentage(value: NullableOption[Double]): Self = this.set("cacheAccountsAboveDiskFreePercentage", value.asInstanceOf[js.Any])
+    def setInactiveThresholdDays(value: NullableOption[Double]): Self = StObject.set(x, "inactiveThresholdDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCacheAccountsAboveDiskFreePercentage: Self = this.set("cacheAccountsAboveDiskFreePercentage", js.undefined)
+    def setInactiveThresholdDaysNull: Self = StObject.set(x, "inactiveThresholdDays", null)
     
     @scala.inline
-    def setCacheAccountsAboveDiskFreePercentageNull: Self = this.set("cacheAccountsAboveDiskFreePercentage", null)
+    def setInactiveThresholdDaysUndefined: Self = StObject.set(x, "inactiveThresholdDays", js.undefined)
     
     @scala.inline
-    def setInactiveThresholdDays(value: NullableOption[Double]): Self = this.set("inactiveThresholdDays", value.asInstanceOf[js.Any])
+    def setRemoveAccountsBelowDiskFreePercentage(value: NullableOption[Double]): Self = StObject.set(x, "removeAccountsBelowDiskFreePercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInactiveThresholdDays: Self = this.set("inactiveThresholdDays", js.undefined)
+    def setRemoveAccountsBelowDiskFreePercentageNull: Self = StObject.set(x, "removeAccountsBelowDiskFreePercentage", null)
     
     @scala.inline
-    def setInactiveThresholdDaysNull: Self = this.set("inactiveThresholdDays", null)
-    
-    @scala.inline
-    def setRemoveAccountsBelowDiskFreePercentage(value: NullableOption[Double]): Self = this.set("removeAccountsBelowDiskFreePercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveAccountsBelowDiskFreePercentage: Self = this.set("removeAccountsBelowDiskFreePercentage", js.undefined)
-    
-    @scala.inline
-    def setRemoveAccountsBelowDiskFreePercentageNull: Self = this.set("removeAccountsBelowDiskFreePercentage", null)
+    def setRemoveAccountsBelowDiskFreePercentageUndefined: Self = StObject.set(x, "removeAccountsBelowDiskFreePercentage", js.undefined)
   }
 }

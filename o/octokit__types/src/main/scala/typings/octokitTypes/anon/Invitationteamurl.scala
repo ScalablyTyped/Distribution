@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invitationteamurl extends js.Object {
+trait Invitationteamurl extends StObject {
   
   var created_at: String = js.native
   
@@ -41,42 +42,30 @@ object Invitationteamurl {
   }
   
   @scala.inline
-  implicit class InvitationteamurlOps[Self <: Invitationteamurl] (val x: Self) extends AnyVal {
+  implicit class InvitationteamurlMutableBuilder[Self <: Invitationteamurl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setInvitation_team_url(value: String): Self = StObject.set(x, "invitation_team_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setInviter(value: Avatarurl): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitation_team_url(value: String): Self = this.set("invitation_team_url", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInviter(value: Avatarurl): Self = this.set("inviter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogin(value: String): Self = this.set("login", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam_count(value: Double): Self = this.set("team_count", value.asInstanceOf[js.Any])
+    def setTeam_count(value: Double): Self = StObject.set(x, "team_count", value.asInstanceOf[js.Any])
   }
 }

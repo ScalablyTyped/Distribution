@@ -3,16 +3,15 @@ package typings.materialDialog
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/dialog/adapter", JSImport.Namespace)
-@js.native
-object adapterMod extends js.Object {
+object adapterMod {
   
   @js.native
-  trait MDCDialogAdapter extends js.Object {
+  trait MDCDialogAdapter extends StObject {
     
     def addBodyClass(className: String): Unit = js.native
     

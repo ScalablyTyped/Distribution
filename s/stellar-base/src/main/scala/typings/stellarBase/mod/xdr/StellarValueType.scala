@@ -1,5 +1,6 @@
 package typings.stellarBase.mod.xdr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class StellarValueType ()
   extends typings.stellarBase.xdrMod.default.StellarValueType
-/* static members */
-@JSImport("stellar-base", "xdr.StellarValueType")
-@js.native
-object StellarValueType extends js.Object {
+object StellarValueType {
   
+  /* static member */
+  @JSImport("stellar-base", "xdr.StellarValueType.stellarValueBasic")
+  @js.native
   def stellarValueBasic(): typings.stellarBase.xdrMod.xdr.StellarValueType = js.native
   
+  /* static member */
+  @JSImport("stellar-base", "xdr.StellarValueType.stellarValueSigned")
+  @js.native
   def stellarValueSigned(): typings.stellarBase.xdrMod.xdr.StellarValueType = js.native
 }

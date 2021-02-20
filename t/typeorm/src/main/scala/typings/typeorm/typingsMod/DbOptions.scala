@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DbOptions extends js.Object {
+trait DbOptions extends StObject {
   
   /**
     * Do not make the db an event listener to the original connection.
@@ -26,30 +27,18 @@ object DbOptions {
   }
   
   @scala.inline
-  implicit class DbOptionsOps[Self <: DbOptions] (val x: Self) extends AnyVal {
+  implicit class DbOptionsMutableBuilder[Self <: DbOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoListener(value: Boolean): Self = StObject.set(x, "noListener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoListenerUndefined: Self = StObject.set(x, "noListener", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnNonCachedInstance(value: Boolean): Self = StObject.set(x, "returnNonCachedInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoListener(value: Boolean): Self = this.set("noListener", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoListener: Self = this.set("noListener", js.undefined)
-    
-    @scala.inline
-    def setReturnNonCachedInstance(value: Boolean): Self = this.set("returnNonCachedInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnNonCachedInstance: Self = this.set("returnNonCachedInstance", js.undefined)
+    def setReturnNonCachedInstanceUndefined: Self = StObject.set(x, "returnNonCachedInstance", js.undefined)
   }
 }

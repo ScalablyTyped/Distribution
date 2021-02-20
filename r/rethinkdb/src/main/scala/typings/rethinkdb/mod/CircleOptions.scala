@@ -1,5 +1,6 @@
 package typings.rethinkdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object CircleOptions {
   }
   
   @scala.inline
-  implicit class CircleOptionsOps[Self <: CircleOptions] (val x: Self) extends AnyVal {
+  implicit class CircleOptionsMutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumVertices(value: Double): Self = StObject.set(x, "numVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-    
-    @scala.inline
-    def setNumVertices(value: Double): Self = this.set("numVertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumVertices: Self = this.set("numVertices", js.undefined)
+    def setNumVerticesUndefined: Self = StObject.set(x, "numVertices", js.undefined)
   }
 }

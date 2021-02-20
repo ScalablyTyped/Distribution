@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositionParameters extends js.Object {
+trait CompositionParameters extends StObject {
   
   /** ID of the context where the composition text will be set */
   var contextID: Double = js.native
@@ -34,48 +35,36 @@ object CompositionParameters {
   }
   
   @scala.inline
-  implicit class CompositionParametersOps[Self <: CompositionParameters] (val x: Self) extends AnyVal {
+  implicit class CompositionParametersMutableBuilder[Self <: CompositionParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegments(value: js.Array[CompositionParameterSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextID(value: Double): Self = this.set("contextID", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
     @scala.inline
-    def setCursor(value: Double): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setSegmentsVarargs(value: CompositionParameterSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentsVarargs(value: CompositionParameterSegment*): Self = this.set("segments", js.Array(value :_*))
+    def setSelectionEndUndefined: Self = StObject.set(x, "selectionEnd", js.undefined)
     
     @scala.inline
-    def setSegments(value: js.Array[CompositionParameterSegment]): Self = this.set("segments", value.asInstanceOf[js.Any])
+    def setSelectionStart(value: Double): Self = StObject.set(x, "selectionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSegments: Self = this.set("segments", js.undefined)
+    def setSelectionStartUndefined: Self = StObject.set(x, "selectionStart", js.undefined)
     
     @scala.inline
-    def setSelectionEnd(value: Double): Self = this.set("selectionEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionEnd: Self = this.set("selectionEnd", js.undefined)
-    
-    @scala.inline
-    def setSelectionStart(value: Double): Self = this.set("selectionStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionStart: Self = this.set("selectionStart", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

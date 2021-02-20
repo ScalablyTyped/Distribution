@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitAlertOptions extends js.Object {
+trait UIkitAlertOptions extends StObject {
   
   var animation: js.UndefOr[Boolean | String] = js.native
   
@@ -22,36 +23,24 @@ object UIkitAlertOptions {
   }
   
   @scala.inline
-  implicit class UIkitAlertOptionsOps[Self <: UIkitAlertOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitAlertOptionsMutableBuilder[Self <: UIkitAlertOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def `setSel-close`(value: String): Self = StObject.set(x, "sel-close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def `setSel-close`(value: String): Self = this.set("sel-close", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteSel-close`: Self = this.set("sel-close", js.undefined)
+    def `setSel-closeUndefined`: Self = StObject.set(x, "sel-close", js.undefined)
   }
 }

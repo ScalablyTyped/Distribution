@@ -12,6 +12,7 @@ import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.Open
 import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.OpenFormSuccessResponse
 import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.OpenUrlOptions
 import typings.powerappsComponentFramework.ComponentFramework.NavigationApi.OpenWebResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The navigation interface of context.navigation
   */
 @js.native
-trait Navigation extends js.Object {
+trait Navigation extends StObject {
   
   /**
     * Opens Alert Dialog

@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoSetModify extends js.Object {
+trait NoSetModify extends StObject {
   
   var noSetFullAccess: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object NoSetModify {
   }
   
   @scala.inline
-  implicit class NoSetModifyOps[Self <: NoSetModify] (val x: Self) extends AnyVal {
+  implicit class NoSetModifyMutableBuilder[Self <: NoSetModify] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoSetFullAccess(value: Boolean): Self = StObject.set(x, "noSetFullAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoSetFullAccessUndefined: Self = StObject.set(x, "noSetFullAccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoSetModify(value: Boolean): Self = StObject.set(x, "noSetModify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSetFullAccess(value: Boolean): Self = this.set("noSetFullAccess", value.asInstanceOf[js.Any])
+    def setNoSetModifyUndefined: Self = StObject.set(x, "noSetModify", js.undefined)
     
     @scala.inline
-    def deleteNoSetFullAccess: Self = this.set("noSetFullAccess", js.undefined)
+    def setNoSetReadOnly(value: Boolean): Self = StObject.set(x, "noSetReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSetModify(value: Boolean): Self = this.set("noSetModify", value.asInstanceOf[js.Any])
+    def setNoSetReadOnlyUndefined: Self = StObject.set(x, "noSetReadOnly", js.undefined)
     
     @scala.inline
-    def deleteNoSetModify: Self = this.set("noSetModify", js.undefined)
+    def setNoSetReadPlusActivity(value: Boolean): Self = StObject.set(x, "noSetReadPlusActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSetReadOnly(value: Boolean): Self = this.set("noSetReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoSetReadOnly: Self = this.set("noSetReadOnly", js.undefined)
-    
-    @scala.inline
-    def setNoSetReadPlusActivity(value: Boolean): Self = this.set("noSetReadPlusActivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoSetReadPlusActivity: Self = this.set("noSetReadPlusActivity", js.undefined)
+    def setNoSetReadPlusActivityUndefined: Self = StObject.set(x, "noSetReadPlusActivity", js.undefined)
   }
 }

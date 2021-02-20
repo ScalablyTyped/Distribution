@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Creates a new instance of a ProvisioningAgent . */
 class ProvisioningAgent ()
   extends typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisioningAgent
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
-@js.native
-object ProvisioningAgent extends js.Object {
+object ProvisioningAgent {
   
   /**
     * Creates a provisioning agent for the mobile device associated with the supplied network account ID.
     * @param networkAccountId The network account ID to use to select the corresponding mobile broadband device to use for the provisioning agent.
     * @return The provisioning agent for the mobile device associated with the supplied network account ID.
     */
+  /* static member */
+  @JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent.createFromNetworkAccountId")
+  @js.native
   def createFromNetworkAccountId(networkAccountId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.ProvisioningAgent = js.native
 }

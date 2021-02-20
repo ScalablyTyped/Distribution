@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,10 +32,7 @@ class Geometry ()
   def this(buffers: js.UndefOr[scala.Nothing], attributes: js.Any) = this()
   def this(buffers: js.Array[typings.pixiJs.PIXI.Buffer], attributes: js.Any) = this()
 }
-/* static members */
-@JSGlobal("PIXI.Geometry")
-@js.native
-object Geometry extends js.Object {
+object Geometry {
   
   /**
     * merges an array of geometries into a new single one
@@ -43,5 +41,8 @@ object Geometry extends js.Object {
     * @param {PIXI.Geometry[]} geometries - array of geometries to merge
     * @returns {PIXI.Geometry} shiny new geometry!
     */
+  /* static member */
+  @JSGlobal("PIXI.Geometry.merge")
+  @js.native
   def merge(geometries: js.Array[typings.pixiJs.PIXI.Geometry]): typings.pixiJs.PIXI.Geometry = js.native
 }

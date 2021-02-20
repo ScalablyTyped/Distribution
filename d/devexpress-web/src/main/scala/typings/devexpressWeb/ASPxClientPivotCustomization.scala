@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,30 +61,18 @@ object ASPxClientPivotCustomization {
   }
   
   @scala.inline
-  implicit class ASPxClientPivotCustomizationOps[Self <: ASPxClientPivotCustomization] (val x: Self) extends AnyVal {
+  implicit class ASPxClientPivotCustomizationMutableBuilder[Self <: ASPxClientPivotCustomization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMainContainer(value: () => js.Any): Self = StObject.set(x, "GetMainContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPivotGrid(value: () => ASPxClientPivotGrid): Self = StObject.set(x, "GetPivotGrid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetLayout(value: String => Unit): Self = StObject.set(x, "SetLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMainContainer(value: () => js.Any): Self = this.set("GetMainContainer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPivotGrid(value: () => ASPxClientPivotGrid): Self = this.set("GetPivotGrid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLayout(value: String => Unit): Self = this.set("SetLayout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateHeight(value: () => Unit): Self = this.set("UpdateHeight", js.Any.fromFunction0(value))
+    def setUpdateHeight(value: () => Unit): Self = StObject.set(x, "UpdateHeight", js.Any.fromFunction0(value))
   }
 }

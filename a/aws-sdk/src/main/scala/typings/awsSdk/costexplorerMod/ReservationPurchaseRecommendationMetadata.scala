@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationPurchaseRecommendationMetadata extends js.Object {
+trait ReservationPurchaseRecommendationMetadata extends StObject {
   
   /**
     * The timestamp for when AWS made this recommendation.
@@ -26,30 +27,18 @@ object ReservationPurchaseRecommendationMetadata {
   }
   
   @scala.inline
-  implicit class ReservationPurchaseRecommendationMetadataOps[Self <: ReservationPurchaseRecommendationMetadata] (val x: Self) extends AnyVal {
+  implicit class ReservationPurchaseRecommendationMetadataMutableBuilder[Self <: ReservationPurchaseRecommendationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenerationTimestampUndefined: Self = StObject.set(x, "GenerationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecommendationId(value: GenericString): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerationTimestamp(value: GenericString): Self = this.set("GenerationTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenerationTimestamp: Self = this.set("GenerationTimestamp", js.undefined)
-    
-    @scala.inline
-    def setRecommendationId(value: GenericString): Self = this.set("RecommendationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendationId: Self = this.set("RecommendationId", js.undefined)
+    def setRecommendationIdUndefined: Self = StObject.set(x, "RecommendationId", js.undefined)
   }
 }

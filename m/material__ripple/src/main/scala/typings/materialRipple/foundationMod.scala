@@ -2,19 +2,22 @@ package typings.materialRipple
 
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialRipple.adapterMod.MDCRippleAdapter
-import typings.materialRipple.anon.BGFOCUSED
-import typings.materialRipple.anon.DEACTIVATIONTIMEOUTMS
 import typings.materialRipple.anon.PartialMDCRippleAdapter
-import typings.materialRipple.anon.VARFGSCALE
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/ripple/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
   
+  @JSImport("@material/ripple/foundation", JSImport.Default)
+  @js.native
+  class default () extends MDCRippleFoundation {
+    def this(adapter: PartialMDCRippleAdapter) = this()
+  }
+  
+  @JSImport("@material/ripple/foundation", "MDCRippleFoundation")
   @js.native
   class MDCRippleFoundation () extends MDCFoundation[MDCRippleAdapter] {
     def this(adapter: PartialMDCRippleAdapter) = this()
@@ -34,34 +37,5 @@ object foundationMod extends js.Object {
     def layout(): Unit = js.native
     
     def setUnbounded(unbounded: Boolean): Unit = js.native
-  }
-  /* static members */
-  @js.native
-  object MDCRippleFoundation extends js.Object {
-    
-    def cssClasses: BGFOCUSED = js.native
-    
-    def defaultAdapter: MDCRippleAdapter = js.native
-    
-    def numbers: DEACTIVATIONTIMEOUTMS = js.native
-    
-    def strings: VARFGSCALE = js.native
-  }
-  
-  @js.native
-  class default () extends MDCRippleFoundation {
-    def this(adapter: PartialMDCRippleAdapter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def cssClasses: BGFOCUSED = js.native
-    
-    def defaultAdapter: MDCRippleAdapter = js.native
-    
-    def numbers: DEACTIVATIONTIMEOUTMS = js.native
-    
-    def strings: VARFGSCALE = js.native
   }
 }

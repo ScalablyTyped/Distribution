@@ -1,12 +1,13 @@
 package typings.materialUiLab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/ToggleButtonGroup/ToggleButtonGroup.ToggleButtonGroupClassKey>> */
 @js.native
-trait PartialClassNameMapToggle extends js.Object {
+trait PartialClassNameMapToggle extends StObject {
   
   var grouped: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialClassNameMapToggle {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapToggleOps[Self <: PartialClassNameMapToggle] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapToggleMutableBuilder[Self <: PartialClassNameMapToggle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrouped(value: String): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupedHorizontal(value: String): Self = StObject.set(x, "groupedHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupedHorizontalUndefined: Self = StObject.set(x, "groupedHorizontal", js.undefined)
     
     @scala.inline
-    def setGrouped(value: String): Self = this.set("grouped", value.asInstanceOf[js.Any])
+    def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
     @scala.inline
-    def deleteGrouped: Self = this.set("grouped", js.undefined)
+    def setGroupedVertical(value: String): Self = StObject.set(x, "groupedVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupedHorizontal(value: String): Self = this.set("groupedHorizontal", value.asInstanceOf[js.Any])
+    def setGroupedVerticalUndefined: Self = StObject.set(x, "groupedVertical", js.undefined)
     
     @scala.inline
-    def deleteGroupedHorizontal: Self = this.set("groupedHorizontal", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupedVertical(value: String): Self = this.set("groupedVertical", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteGroupedVertical: Self = this.set("groupedVertical", js.undefined)
+    def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: String): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

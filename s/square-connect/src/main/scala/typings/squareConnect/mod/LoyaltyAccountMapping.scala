@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "LoyaltyAccountMapping")
 @js.native
-class LoyaltyAccountMapping () extends js.Object {
+class LoyaltyAccountMapping () extends StObject {
   
   /**
     * The timestamp when the mapping was created, in RFC 3339 format.

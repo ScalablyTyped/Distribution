@@ -6,12 +6,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.deviceDataChange
 import typings.tuyaPanelKit.tuyaPanelKitStrings.deviceLocalStateChange
 import typings.tuyaPanelKit.tuyaPanelKitStrings.linkageTimeUpdate
 import typings.tuyaPanelKit.tuyaPanelKitStrings.networkStateChange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Emit extends js.Object {
+trait Emit extends StObject {
   
   def emit(event: String, data: js.Any): Unit = js.native
   

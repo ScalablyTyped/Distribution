@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import typings.devtoolsProtocol.mod.Protocol.Runtime.TimeDelta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecuteWasmEvaluatorRequest extends js.Object {
+trait ExecuteWasmEvaluatorRequest extends StObject {
   
   /**
     * WebAssembly call frame identifier to evaluate on.
@@ -32,30 +33,18 @@ object ExecuteWasmEvaluatorRequest {
   }
   
   @scala.inline
-  implicit class ExecuteWasmEvaluatorRequestOps[Self <: ExecuteWasmEvaluatorRequest] (val x: Self) extends AnyVal {
+  implicit class ExecuteWasmEvaluatorRequestMutableBuilder[Self <: ExecuteWasmEvaluatorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluator(value: String): Self = StObject.set(x, "evaluator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimeout(value: TimeDelta): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallFrameId(value: CallFrameId): Self = this.set("callFrameId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvaluator(value: String): Self = this.set("evaluator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: TimeDelta): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

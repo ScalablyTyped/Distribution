@@ -1,13 +1,14 @@
 package typings.k6.htmlMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/html", "Element")
 @js.native
-abstract class Element () extends js.Object {
+abstract class Element () extends StObject {
   
   /** Dictionary of element attributes. */
   def attributes(): StringDictionary[Attribute] = js.native

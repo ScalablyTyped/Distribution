@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,39 +67,27 @@ object ASPxClientDashboardItemClickEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemClickEventArgsOps[Self <: ASPxClientDashboardItemClickEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemClickEventArgsMutableBuilder[Self <: ASPxClientDashboardItemClickEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAxisPoint(value: String => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetAxisPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetData(value: () => ASPxClientDashboardItemData): Self = StObject.set(x, "GetData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDeltas(value: () => js.Array[ASPxClientDashboardItemDataDelta]): Self = StObject.set(x, "GetDeltas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAxisPoint(value: String => ASPxClientDashboardItemDataAxisPoint): Self = this.set("GetAxisPoint", js.Any.fromFunction1(value))
+    def setGetDimensions(value: String => js.Array[ASPxClientDashboardItemDataDimension]): Self = StObject.set(x, "GetDimensions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetData(value: () => ASPxClientDashboardItemData): Self = this.set("GetData", js.Any.fromFunction0(value))
+    def setGetMeasures(value: () => js.Array[ASPxClientDashboardItemDataMeasure]): Self = StObject.set(x, "GetMeasures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDeltas(value: () => js.Array[ASPxClientDashboardItemDataDelta]): Self = this.set("GetDeltas", js.Any.fromFunction0(value))
+    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDimensions(value: String => js.Array[ASPxClientDashboardItemDataDimension]): Self = this.set("GetDimensions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMeasures(value: () => js.Array[ASPxClientDashboardItemDataMeasure]): Self = this.set("GetMeasures", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setItemName(value: String): Self = this.set("ItemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestUnderlyingData(value: (ASPxClientDashboardItemRequestUnderlyingDataCompleted, js.Array[String]) => Unit): Self = this.set("RequestUnderlyingData", js.Any.fromFunction2(value))
+    def setRequestUnderlyingData(value: (ASPxClientDashboardItemRequestUnderlyingDataCompleted, js.Array[String]) => Unit): Self = StObject.set(x, "RequestUnderlyingData", js.Any.fromFunction2(value))
   }
 }

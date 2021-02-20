@@ -1,13 +1,14 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
 import typings.activexLibreoffice.com_.sun.star.linguistic2.XHyphenatedWord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Results of method {@link XBreakIterator.getLineBreak()} . */
 @js.native
-trait LineBreakResults extends js.Object {
+trait LineBreakResults extends StObject {
   
   var breakIndex: Double = js.native
   
@@ -24,27 +25,15 @@ object LineBreakResults {
   }
   
   @scala.inline
-  implicit class LineBreakResultsOps[Self <: LineBreakResults] (val x: Self) extends AnyVal {
+  implicit class LineBreakResultsMutableBuilder[Self <: LineBreakResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakIndex(value: Double): Self = StObject.set(x, "breakIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakType(value: Double): Self = StObject.set(x, "breakType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBreakIndex(value: Double): Self = this.set("breakIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBreakType(value: Double): Self = this.set("breakType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRHyphenatedWord(value: XHyphenatedWord): Self = this.set("rHyphenatedWord", value.asInstanceOf[js.Any])
+    def setRHyphenatedWord(value: XHyphenatedWord): Self = StObject.set(x, "rHyphenatedWord", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,81 +37,69 @@ object ComponentDoc {
   }
   
   @scala.inline
-  implicit class ComponentDocOps[Self <: ComponentDoc] (val x: Self) extends AnyVal {
+  implicit class ComponentDocMutableBuilder[Self <: ComponentDoc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDocsBlocks(value: js.Array[String]): Self = StObject.set(x, "docsBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportName(value: String): Self = this.set("exportName", value.asInstanceOf[js.Any])
+    def setDocsBlocksUndefined: Self = StObject.set(x, "docsBlocks", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDocsBlocksVarargs(value: String*): Self = StObject.set(x, "docsBlocks", js.Array(value :_*))
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEvents(value: js.Array[EventDescriptor]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocsBlocksVarargs(value: String*): Self = this.set("docsBlocks", js.Array(value :_*))
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setDocsBlocks(value: js.Array[String]): Self = this.set("docsBlocks", value.asInstanceOf[js.Any])
+    def setEventsVarargs(value: EventDescriptor*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def deleteDocsBlocks: Self = this.set("docsBlocks", js.undefined)
+    def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: EventDescriptor*): Self = this.set("events", js.Array(value :_*))
+    def setMethods(value: js.Array[MethodDescriptor]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[EventDescriptor]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setMethodsVarargs(value: MethodDescriptor*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
     @scala.inline
-    def setMethodsVarargs(value: MethodDescriptor*): Self = this.set("methods", js.Array(value :_*))
+    def setProps(value: js.Array[PropDescriptor]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: js.Array[MethodDescriptor]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setPropsVarargs(value: PropDescriptor*): Self = StObject.set(x, "props", js.Array(value :_*))
     
     @scala.inline
-    def setPropsVarargs(value: PropDescriptor*): Self = this.set("props", js.Array(value :_*))
+    def setSlots(value: js.Array[SlotDescriptor]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: js.Array[PropDescriptor]): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     @scala.inline
-    def deleteProps: Self = this.set("props", js.undefined)
+    def setSlotsVarargs(value: SlotDescriptor*): Self = StObject.set(x, "slots", js.Array(value :_*))
     
     @scala.inline
-    def setSlotsVarargs(value: SlotDescriptor*): Self = this.set("slots", js.Array(value :_*))
+    def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlots(value: js.Array[SlotDescriptor]): Self = this.set("slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("slots", js.undefined)
-    
-    @scala.inline
-    def setTags(value: StringDictionary[js.Array[BlockTag]]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

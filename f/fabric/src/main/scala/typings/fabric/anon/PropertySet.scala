@@ -1,11 +1,12 @@
 package typings.fabric.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertySet extends js.Object {
+trait PropertySet extends StObject {
   
   var propertySet: js.UndefOr[String] = js.native
   
@@ -20,33 +21,21 @@ object PropertySet {
   }
   
   @scala.inline
-  implicit class PropertySetOps[Self <: PropertySet] (val x: Self) extends AnyVal {
+  implicit class PropertySetMutableBuilder[Self <: PropertySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPropertySet(value: String): Self = StObject.set(x, "propertySet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropertySetUndefined: Self = StObject.set(x, "propertySet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateProperties(value: js.Array[_]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertySet(value: String): Self = this.set("propertySet", value.asInstanceOf[js.Any])
+    def setStatePropertiesUndefined: Self = StObject.set(x, "stateProperties", js.undefined)
     
     @scala.inline
-    def deletePropertySet: Self = this.set("propertySet", js.undefined)
-    
-    @scala.inline
-    def setStatePropertiesVarargs(value: js.Any*): Self = this.set("stateProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setStateProperties(value: js.Array[_]): Self = this.set("stateProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateProperties: Self = this.set("stateProperties", js.undefined)
+    def setStatePropertiesVarargs(value: js.Any*): Self = StObject.set(x, "stateProperties", js.Array(value :_*))
   }
 }

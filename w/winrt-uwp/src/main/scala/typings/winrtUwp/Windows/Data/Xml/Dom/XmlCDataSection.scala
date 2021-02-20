@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CDATA section of an XML document. */
 @js.native
-trait XmlCDataSection extends js.Object {
+trait XmlCDataSection extends StObject {
   
   /**
     * This method is not applicable to this class. The CDataSection does not have children. This method will throw an exception.
@@ -229,123 +230,111 @@ object XmlCDataSection {
   }
   
   @scala.inline
-  implicit class XmlCDataSectionOps[Self <: XmlCDataSection] (val x: Self) extends AnyVal {
+  implicit class XmlCDataSectionMutableBuilder[Self <: XmlCDataSection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendData(value: String => Unit): Self = StObject.set(x, "appendData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: XmlNamedNodeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendChild(value: IXmlNode => IXmlNode): Self = this.set("appendChild", js.Any.fromFunction1(value))
+    def setChildNodes(value: XmlNodeList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendData(value: String => Unit): Self = this.set("appendData", js.Any.fromFunction1(value))
+    def setCloneNode(value: Boolean => IXmlNode): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttributes(value: XmlNamedNodeMap): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildNodes(value: XmlNodeList): Self = this.set("childNodes", value.asInstanceOf[js.Any])
+    def setDeleteData(value: (Double, Double) => Unit): Self = StObject.set(x, "deleteData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCloneNode(value: Boolean => IXmlNode): Self = this.set("cloneNode", js.Any.fromFunction1(value))
+    def setFirstChild(value: IXmlNode): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setGetXml(value: () => String): Self = StObject.set(x, "getXml", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteData(value: (Double, Double) => Unit): Self = this.set("deleteData", js.Any.fromFunction2(value))
+    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstChild(value: IXmlNode): Self = this.set("firstChild", value.asInstanceOf[js.Any])
+    def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetXml(value: () => String): Self = this.set("getXml", js.Any.fromFunction0(value))
+    def setInsertBefore(value: (IXmlNode, IXmlNode) => IXmlNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = this.set("hasChildNodes", js.Any.fromFunction0(value))
+    def setInsertData(value: (Double, String) => Unit): Self = StObject.set(x, "insertData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInnerText(value: String): Self = this.set("innerText", value.asInstanceOf[js.Any])
+    def setLastChild(value: IXmlNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertBefore(value: (IXmlNode, IXmlNode) => IXmlNode): Self = this.set("insertBefore", js.Any.fromFunction2(value))
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertData(value: (Double, String) => Unit): Self = this.set("insertData", js.Any.fromFunction2(value))
+    def setLocalName(value: js.Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChild(value: IXmlNode): Self = this.set("lastChild", value.asInstanceOf[js.Any])
+    def setNamespaceUri(value: js.Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setNextSibling(value: IXmlNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalName(value: js.Any): Self = this.set("localName", value.asInstanceOf[js.Any])
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceUri(value: js.Any): Self = this.set("namespaceUri", value.asInstanceOf[js.Any])
+    def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextSibling(value: IXmlNode): Self = this.set("nextSibling", value.asInstanceOf[js.Any])
+    def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNodeType(value: NodeType): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    def setOwnerDocument(value: XmlDocument): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeValue(value: js.Any): Self = this.set("nodeValue", value.asInstanceOf[js.Any])
+    def setParentNode(value: IXmlNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: () => Unit): Self = this.set("normalize", js.Any.fromFunction0(value))
+    def setPrefix(value: js.Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerDocument(value: XmlDocument): Self = this.set("ownerDocument", value.asInstanceOf[js.Any])
+    def setPreviousSibling(value: IXmlNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentNode(value: IXmlNode): Self = this.set("parentNode", value.asInstanceOf[js.Any])
+    def setRemoveChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrefix(value: js.Any): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setReplaceChild(value: (IXmlNode, IXmlNode) => IXmlNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreviousSibling(value: IXmlNode): Self = this.set("previousSibling", value.asInstanceOf[js.Any])
+    def setReplaceData(value: (Double, Double, String) => Unit): Self = StObject.set(x, "replaceData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemoveChild(value: IXmlNode => IXmlNode): Self = this.set("removeChild", js.Any.fromFunction1(value))
+    def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReplaceChild(value: (IXmlNode, IXmlNode) => IXmlNode): Self = this.set("replaceChild", js.Any.fromFunction2(value))
+    def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReplaceData(value: (Double, Double, String) => Unit): Self = this.set("replaceData", js.Any.fromFunction3(value))
+    def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectNodes(value: String => XmlNodeList): Self = this.set("selectNodes", js.Any.fromFunction1(value))
+    def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = this.set("selectNodesNS", js.Any.fromFunction2(value))
+    def setSplitText(value: Double => IXmlText): Self = StObject.set(x, "splitText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectSingleNode(value: String => IXmlNode): Self = this.set("selectSingleNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = this.set("selectSingleNodeNS", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSplitText(value: Double => IXmlText): Self = this.set("splitText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubstringData(value: (Double, Double) => String): Self = this.set("substringData", js.Any.fromFunction2(value))
+    def setSubstringData(value: (Double, Double) => String): Self = StObject.set(x, "substringData", js.Any.fromFunction2(value))
   }
 }

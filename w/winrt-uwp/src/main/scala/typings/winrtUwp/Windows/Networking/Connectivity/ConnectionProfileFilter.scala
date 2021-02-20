@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ConnectionProfileFilter class defines a set of properties that are used to improve the relevance of FindConnectionProfilesAsync results. */
 @js.native
-trait ConnectionProfileFilter extends js.Object {
+trait ConnectionProfileFilter extends StObject {
   
   /** Gets or sets whether background data usage is restricted by this connection profile filter. */
   var isBackgroundDataUsageRestricted: Boolean = js.native
@@ -55,45 +56,33 @@ object ConnectionProfileFilter {
   }
   
   @scala.inline
-  implicit class ConnectionProfileFilterOps[Self <: ConnectionProfileFilter] (val x: Self) extends AnyVal {
+  implicit class ConnectionProfileFilterMutableBuilder[Self <: ConnectionProfileFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsBackgroundDataUsageRestricted(value: Boolean): Self = StObject.set(x, "isBackgroundDataUsageRestricted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOverDataLimit(value: Boolean): Self = StObject.set(x, "isOverDataLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBackgroundDataUsageRestricted(value: Boolean): Self = this.set("isBackgroundDataUsageRestricted", value.asInstanceOf[js.Any])
+    def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsConnected(value: Boolean): Self = this.set("isConnected", value.asInstanceOf[js.Any])
+    def setIsWlanConnectionProfile(value: Boolean): Self = StObject.set(x, "isWlanConnectionProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOverDataLimit(value: Boolean): Self = this.set("isOverDataLimit", value.asInstanceOf[js.Any])
+    def setIsWwanConnectionProfile(value: Boolean): Self = StObject.set(x, "isWwanConnectionProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRoaming(value: Boolean): Self = this.set("isRoaming", value.asInstanceOf[js.Any])
+    def setNetworkCostType(value: NetworkCostType): Self = StObject.set(x, "networkCostType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWlanConnectionProfile(value: Boolean): Self = this.set("isWlanConnectionProfile", value.asInstanceOf[js.Any])
+    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWwanConnectionProfile(value: Boolean): Self = this.set("isWwanConnectionProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkCostType(value: NetworkCostType): Self = this.set("networkCostType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawData(value: IBuffer): Self = this.set("rawData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceProviderGuid(value: String): Self = this.set("serviceProviderGuid", value.asInstanceOf[js.Any])
+    def setServiceProviderGuid(value: String): Self = StObject.set(x, "serviceProviderGuid", value.asInstanceOf[js.Any])
   }
 }

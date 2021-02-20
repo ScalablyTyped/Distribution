@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnDescription extends js.Object {
+trait ColumnDescription extends StObject {
   
   /**
     * Data type of the column Supported types are auto_id, boolean, boolean_list, creator, create_timestamp, date, dropdown, location, integer, integer_list, number, number_list, person,
@@ -44,57 +45,45 @@ object ColumnDescription {
   }
   
   @scala.inline
-  implicit class ColumnDescriptionOps[Self <: ColumnDescription] (val x: Self) extends AnyVal {
+  implicit class ColumnDescriptionMutableBuilder[Self <: ColumnDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setLabels(value: js.Array[LabeledItem]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabelsVarargs(value: LabeledItem*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: LabeledItem*): Self = this.set("labels", js.Array(value :_*))
+    def setLookupDetails(value: LookupDetails): Self = StObject.set(x, "lookupDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[LabeledItem]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLookupDetailsUndefined: Self = StObject.set(x, "lookupDetails", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookupDetails(value: LookupDetails): Self = this.set("lookupDetails", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLookupDetails: Self = this.set("lookupDetails", js.undefined)
+    def setRelationshipDetails(value: RelationshipDetails): Self = StObject.set(x, "relationshipDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setRelationshipDetails(value: RelationshipDetails): Self = this.set("relationshipDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationshipDetails: Self = this.set("relationshipDetails", js.undefined)
+    def setRelationshipDetailsUndefined: Self = StObject.set(x, "relationshipDetails", js.undefined)
   }
 }

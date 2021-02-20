@@ -4,16 +4,16 @@ import typings.typeorm.connectionConnectionMod.Connection
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.relationCountRelationCountAttributeMod.RelationCountAttribute
 import typings.typeorm.relationCountRelationCountLoadResultMod.RelationCountLoadResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/relation-count/RelationCountLoader", JSImport.Namespace)
-@js.native
-object relationCountRelationCountLoaderMod extends js.Object {
+object relationCountRelationCountLoaderMod {
   
+  @JSImport("typeorm/query-builder/relation-count/RelationCountLoader", "RelationCountLoader")
   @js.native
-  class RelationCountLoader protected () extends js.Object {
+  class RelationCountLoader protected () extends StObject {
     def this(
       connection: Connection,
       queryRunner: js.UndefOr[scala.Nothing],

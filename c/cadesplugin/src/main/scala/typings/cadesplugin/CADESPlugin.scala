@@ -1,5 +1,6 @@
 package typings.cadesplugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cadesplugin.CADESPluginAsync
   - typings.cadesplugin.CADESPluginSync
 */
-trait CADESPlugin extends js.Object
+trait CADESPlugin extends StObject

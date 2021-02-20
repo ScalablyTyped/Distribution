@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "UpsertCatalogObjectResponse")
 @js.native
-class UpsertCatalogObjectResponse () extends js.Object {
+class UpsertCatalogObjectResponse () extends StObject {
   
   /**
     * The successfully created or updated CatalogObject.

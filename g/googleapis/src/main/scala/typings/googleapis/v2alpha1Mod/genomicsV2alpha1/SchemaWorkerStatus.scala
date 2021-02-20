@@ -1,6 +1,7 @@
 package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The status of the worker VM.
   */
 @js.native
-trait SchemaWorkerStatus extends js.Object {
+trait SchemaWorkerStatus extends StObject {
   
   /**
     * Status of attached disks.
@@ -45,48 +46,36 @@ object SchemaWorkerStatus {
   }
   
   @scala.inline
-  implicit class SchemaWorkerStatusOps[Self <: SchemaWorkerStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkerStatusMutableBuilder[Self <: SchemaWorkerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedDisks(value: StringDictionary[SchemaDiskStatus]): Self = StObject.set(x, "attachedDisks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedDisksUndefined: Self = StObject.set(x, "attachedDisks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBootDisk(value: SchemaDiskStatus): Self = StObject.set(x, "bootDisk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedDisks(value: StringDictionary[SchemaDiskStatus]): Self = this.set("attachedDisks", value.asInstanceOf[js.Any])
+    def setBootDiskUndefined: Self = StObject.set(x, "bootDisk", js.undefined)
     
     @scala.inline
-    def deleteAttachedDisks: Self = this.set("attachedDisks", js.undefined)
+    def setFreeRamBytes(value: String): Self = StObject.set(x, "freeRamBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootDisk(value: SchemaDiskStatus): Self = this.set("bootDisk", value.asInstanceOf[js.Any])
+    def setFreeRamBytesUndefined: Self = StObject.set(x, "freeRamBytes", js.undefined)
     
     @scala.inline
-    def deleteBootDisk: Self = this.set("bootDisk", js.undefined)
+    def setTotalRamBytes(value: String): Self = StObject.set(x, "totalRamBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreeRamBytes(value: String): Self = this.set("freeRamBytes", value.asInstanceOf[js.Any])
+    def setTotalRamBytesUndefined: Self = StObject.set(x, "totalRamBytes", js.undefined)
     
     @scala.inline
-    def deleteFreeRamBytes: Self = this.set("freeRamBytes", js.undefined)
+    def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalRamBytes(value: String): Self = this.set("totalRamBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRamBytes: Self = this.set("totalRamBytes", js.undefined)
-    
-    @scala.inline
-    def setUptimeSeconds(value: String): Self = this.set("uptimeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUptimeSeconds: Self = this.set("uptimeSeconds", js.undefined)
+    def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
   }
 }

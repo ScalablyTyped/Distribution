@@ -1,11 +1,12 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridParamNames extends js.Object {
+trait GridParamNames extends StObject {
   
   var direction: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object GridParamNames {
   }
   
   @scala.inline
-  implicit class GridParamNamesOps[Self <: GridParamNames] (val x: Self) extends AnyVal {
+  implicit class GridParamNamesMutableBuilder[Self <: GridParamNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setGroupByDirection(value: String): Self = StObject.set(x, "groupByDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setGroupByDirectionUndefined: Self = StObject.set(x, "groupByDirection", js.undefined)
     
     @scala.inline
-    def setGroupBy(value: String): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
     @scala.inline
-    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByDirection(value: String): Self = this.set("groupByDirection", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteGroupByDirection: Self = this.set("groupByDirection", js.undefined)
+    def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: String): Self = this.set("page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
-    
-    @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
   }
 }

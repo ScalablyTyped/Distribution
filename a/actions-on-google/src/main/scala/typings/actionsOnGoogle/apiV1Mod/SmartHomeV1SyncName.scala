@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.apiV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartHomeV1SyncName extends js.Object {
+trait SmartHomeV1SyncName extends StObject {
   
   var defaultNames: js.Array[String] = js.native
   
@@ -22,33 +23,21 @@ object SmartHomeV1SyncName {
   }
   
   @scala.inline
-  implicit class SmartHomeV1SyncNameOps[Self <: SmartHomeV1SyncName] (val x: Self) extends AnyVal {
+  implicit class SmartHomeV1SyncNameMutableBuilder[Self <: SmartHomeV1SyncName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultNames(value: js.Array[String]): Self = StObject.set(x, "defaultNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultNamesVarargs(value: String*): Self = StObject.set(x, "defaultNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNamesVarargs(value: String*): Self = this.set("defaultNames", js.Array(value :_*))
+    def setNicknames(value: js.Array[String]): Self = StObject.set(x, "nicknames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNames(value: js.Array[String]): Self = this.set("defaultNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNicknamesVarargs(value: String*): Self = this.set("nicknames", js.Array(value :_*))
-    
-    @scala.inline
-    def setNicknames(value: js.Array[String]): Self = this.set("nicknames", value.asInstanceOf[js.Any])
+    def setNicknamesVarargs(value: String*): Self = StObject.set(x, "nicknames", js.Array(value :_*))
   }
 }

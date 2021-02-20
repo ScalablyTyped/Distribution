@@ -2,6 +2,7 @@ package typings.geolib.anon
 
 import typings.geolib.typesMod.GeolibAltitudeInputValue
 import typings.geolib.typesMod.GeolibInputAltitude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,24 +21,12 @@ object `0` {
   }
   
   @scala.inline
-  implicit class `0Ops`[Self <: `0`] (val x: Self) extends AnyVal {
+  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: GeolibAltitudeInputValue): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAltitude(value: GeolibAltitudeInputValue): Self = this.set("altitude", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
   }
 }

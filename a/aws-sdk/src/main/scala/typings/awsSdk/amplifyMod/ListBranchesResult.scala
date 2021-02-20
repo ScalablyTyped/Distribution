@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBranchesResult extends js.Object {
+trait ListBranchesResult extends StObject {
   
   /**
     *  A list of branches for an Amplify app. 
@@ -26,30 +27,18 @@ object ListBranchesResult {
   }
   
   @scala.inline
-  implicit class ListBranchesResultOps[Self <: ListBranchesResult] (val x: Self) extends AnyVal {
+  implicit class ListBranchesResultMutableBuilder[Self <: ListBranchesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: Branches): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesVarargs(value: Branch*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchesVarargs(value: Branch*): Self = this.set("branches", js.Array(value :_*))
-    
-    @scala.inline
-    def setBranches(value: Branches): Self = this.set("branches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

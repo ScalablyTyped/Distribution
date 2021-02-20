@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExchangeConfigEnabledExchange extends js.Object {
+trait ExchangeConfigEnabledExchange extends StObject {
   
   /** The enabled exchange. */
   var exchange: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ExchangeConfigEnabledExchange {
   }
   
   @scala.inline
-  implicit class ExchangeConfigEnabledExchangeOps[Self <: ExchangeConfigEnabledExchange] (val x: Self) extends AnyVal {
+  implicit class ExchangeConfigEnabledExchangeMutableBuilder[Self <: ExchangeConfigEnabledExchange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoogleAdManagerAgencyId(value: String): Self = StObject.set(x, "googleAdManagerAgencyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchange(value: String): Self = this.set("exchange", value.asInstanceOf[js.Any])
+    def setGoogleAdManagerAgencyIdUndefined: Self = StObject.set(x, "googleAdManagerAgencyId", js.undefined)
     
     @scala.inline
-    def deleteExchange: Self = this.set("exchange", js.undefined)
+    def setGoogleAdManagerBuyerNetworkId(value: String): Self = StObject.set(x, "googleAdManagerBuyerNetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAdManagerAgencyId(value: String): Self = this.set("googleAdManagerAgencyId", value.asInstanceOf[js.Any])
+    def setGoogleAdManagerBuyerNetworkIdUndefined: Self = StObject.set(x, "googleAdManagerBuyerNetworkId", js.undefined)
     
     @scala.inline
-    def deleteGoogleAdManagerAgencyId: Self = this.set("googleAdManagerAgencyId", js.undefined)
+    def setSeatId(value: String): Self = StObject.set(x, "seatId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleAdManagerBuyerNetworkId(value: String): Self = this.set("googleAdManagerBuyerNetworkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGoogleAdManagerBuyerNetworkId: Self = this.set("googleAdManagerBuyerNetworkId", js.undefined)
-    
-    @scala.inline
-    def setSeatId(value: String): Self = this.set("seatId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeatId: Self = this.set("seatId", js.undefined)
+    def setSeatIdUndefined: Self = StObject.set(x, "seatId", js.undefined)
   }
 }

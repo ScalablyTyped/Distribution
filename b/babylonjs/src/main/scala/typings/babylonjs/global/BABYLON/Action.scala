@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,20 +24,24 @@ class Action protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.Action")
-@js.native
-object Action extends js.Object {
+object Action {
   
+  @JSGlobal("BABYLON.Action._GetTargetProperty")
+  @js.native
   def _GetTargetProperty(target: typings.babylonjs.BABYLON.Node): Name = js.native
   /**
     * Internal only
     * @hidden
     */
+  @JSGlobal("BABYLON.Action._GetTargetProperty")
+  @js.native
   def _GetTargetProperty(target: typings.babylonjs.BABYLON.Scene): Name = js.native
   
   /**
     * Internal only
     * @hidden
     */
+  @JSGlobal("BABYLON.Action._SerializeValueAsString")
+  @js.native
   def _SerializeValueAsString(value: js.Any): String = js.native
 }

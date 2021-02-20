@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Data.Json
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJsonValue extends js.Object {
+trait IJsonValue extends StObject {
   
   def getArray(): JsonArray = js.native
   
@@ -38,39 +39,27 @@ object IJsonValue {
   }
   
   @scala.inline
-  implicit class IJsonValueOps[Self <: IJsonValue] (val x: Self) extends AnyVal {
+  implicit class IJsonValueMutableBuilder[Self <: IJsonValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetArray(value: () => JsonArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBoolean(value: () => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetNumber(value: () => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetArray(value: () => JsonArray): Self = this.set("getArray", js.Any.fromFunction0(value))
+    def setGetObject(value: () => JsonObject): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBoolean(value: () => Boolean): Self = this.set("getBoolean", js.Any.fromFunction0(value))
+    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNumber(value: () => Double): Self = this.set("getNumber", js.Any.fromFunction0(value))
+    def setStringify(value: () => String): Self = StObject.set(x, "stringify", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetObject(value: () => JsonObject): Self = this.set("getObject", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetString(value: () => String): Self = this.set("getString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStringify(value: () => String): Self = this.set("stringify", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setValueType(value: JsonValueType): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    def setValueType(value: JsonValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
   }
 }

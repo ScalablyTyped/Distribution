@@ -5,14 +5,14 @@ import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.iEventEmitterMod.IEventEmitter
 import typings.std.HTMLElement
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/context/beanStub", JSImport.Namespace)
-@js.native
-object beanStubMod extends js.Object {
+object beanStubMod {
   
+  @JSImport("ag-grid/dist/lib/context/beanStub", "BeanStub")
   @js.native
   class BeanStub () extends IEventEmitter {
     
@@ -46,9 +46,16 @@ object beanStubMod extends js.Object {
     var localEventService: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object BeanStub extends js.Object {
+  object BeanStub {
     
-    var EVENT_DESTROYED: String = js.native
+    @JSImport("ag-grid/dist/lib/context/beanStub", "BeanStub")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ag-grid/dist/lib/context/beanStub", "BeanStub.EVENT_DESTROYED")
+    @js.native
+    def EVENT_DESTROYED: String = js.native
+    @scala.inline
+    def EVENT_DESTROYED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_DESTROYED")(x.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.web3Core.mod
 
 import typings.web3CoreHelpers.mod.WebsocketProviderBase
 import typings.web3CoreHelpers.mod.WebsocketProviderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

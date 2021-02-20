@@ -1,13 +1,14 @@
 package typings.forgeApis.mod
 
 import typings.forgeApis.anon.FilterExtensionTypeFilterId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ProjectsApi")
 @js.native
-class ProjectsApi () extends js.Object {
+class ProjectsApi () extends StObject {
   
   /**
     * Returns a collection of projects for a given `hub_id`. A project represents an A360 project or a BIM 360 project which

@@ -3,34 +3,50 @@ package typings.firebaseStorage
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseStorage.srcMetadataMod.Metadata
 import typings.firebaseStorage.srcServiceMod.StorageService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/src/implementation/metadata", JSImport.Namespace)
-@js.native
-object metadataMod extends js.Object {
+object metadataMod {
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "addRef")
+  @js.native
   def addRef(metadata: Metadata, service: StorageService): Unit = js.native
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "downloadUrlFromResourceString")
+  @js.native
   def downloadUrlFromResourceString(metadata: Metadata, resourceString: String): String | Null = js.native
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "fromResource")
+  @js.native
   def fromResource(service: StorageService, resource: StringDictionary[js.Any], mappings: Mappings): Metadata = js.native
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "fromResourceString")
+  @js.native
   def fromResourceString(service: StorageService, resourceString: String, mappings: Mappings): Metadata | Null = js.native
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "getMappings")
+  @js.native
   def getMappings(): Mappings = js.native
   
-  @JSName("noXform_")
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "noXform_")
+  @js.native
   def noXform[T](metadata: Metadata, value: T): T = js.native
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "toResourceString")
+  @js.native
   def toResourceString(metadata: Metadata, mappings: Mappings): String = js.native
   
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "xformPath")
+  @js.native
   def xformPath(): js.UndefOr[String] = js.native
+  @JSImport("@firebase/storage/dist/src/implementation/metadata", "xformPath")
+  @js.native
   def xformPath(fullPath: String): js.UndefOr[String] = js.native
   
   @js.native
-  trait Mapping[T] extends js.Object {
+  trait Mapping[T] extends StObject {
     
     var local: String = js.native
     

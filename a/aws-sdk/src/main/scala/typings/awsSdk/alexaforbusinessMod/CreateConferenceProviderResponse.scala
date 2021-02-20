@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateConferenceProviderResponse extends js.Object {
+trait CreateConferenceProviderResponse extends StObject {
   
   /**
     * The ARN of the newly-created conference provider.
@@ -21,24 +22,12 @@ object CreateConferenceProviderResponse {
   }
   
   @scala.inline
-  implicit class CreateConferenceProviderResponseOps[Self <: CreateConferenceProviderResponse] (val x: Self) extends AnyVal {
+  implicit class CreateConferenceProviderResponseMutableBuilder[Self <: CreateConferenceProviderResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConferenceProviderArn(value: Arn): Self = this.set("ConferenceProviderArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConferenceProviderArn: Self = this.set("ConferenceProviderArn", js.undefined)
+    def setConferenceProviderArnUndefined: Self = StObject.set(x, "ConferenceProviderArn", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A builder for the UniversalActionResponse objects.
   */
 @js.native
-trait UniversalActionResponseBuilder extends js.Object {
+trait UniversalActionResponseBuilder extends StObject {
   
   def build(): UniversalActionResponse = js.native
   
@@ -29,27 +30,15 @@ object UniversalActionResponseBuilder {
   }
   
   @scala.inline
-  implicit class UniversalActionResponseBuilderOps[Self <: UniversalActionResponseBuilder] (val x: Self) extends AnyVal {
+  implicit class UniversalActionResponseBuilderMutableBuilder[Self <: UniversalActionResponseBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: () => UniversalActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayAddOnCards(value: js.Array[Card] => UniversalActionResponseBuilder): Self = StObject.set(x, "displayAddOnCards", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBuild(value: () => UniversalActionResponse): Self = this.set("build", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDisplayAddOnCards(value: js.Array[Card] => UniversalActionResponseBuilder): Self = this.set("displayAddOnCards", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => UniversalActionResponseBuilder): Self = this.set("setOpenLink", js.Any.fromFunction1(value))
+    def setSetOpenLink(value: OpenLink => UniversalActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
   }
 }

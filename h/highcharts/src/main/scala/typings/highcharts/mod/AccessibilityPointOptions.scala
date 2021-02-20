@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityPointOptions extends js.Object {
+trait AccessibilityPointOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Date format to use for points on
@@ -79,60 +80,48 @@ object AccessibilityPointOptions {
   }
   
   @scala.inline
-  implicit class AccessibilityPointOptionsOps[Self <: AccessibilityPointOptions] (val x: Self) extends AnyVal {
+  implicit class AccessibilityPointOptionsMutableBuilder[Self <: AccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateFormatter(value: Point => String): Self = StObject.set(x, "dateFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setDateFormatterUndefined: Self = StObject.set(x, "dateFormatter", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setDescriptionFormatter(value: Point => String): Self = StObject.set(x, "descriptionFormatter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDateFormatter(value: Point => String): Self = this.set("dateFormatter", js.Any.fromFunction1(value))
+    def setDescriptionFormatterUndefined: Self = StObject.set(x, "descriptionFormatter", js.undefined)
     
     @scala.inline
-    def deleteDateFormatter: Self = this.set("dateFormatter", js.undefined)
+    def setValueDecimals(value: Double): Self = StObject.set(x, "valueDecimals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionFormatter(value: Point => String): Self = this.set("descriptionFormatter", js.Any.fromFunction1(value))
+    def setValueDecimalsUndefined: Self = StObject.set(x, "valueDecimals", js.undefined)
     
     @scala.inline
-    def deleteDescriptionFormatter: Self = this.set("descriptionFormatter", js.undefined)
+    def setValueDescriptionFormat(value: String): Self = StObject.set(x, "valueDescriptionFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDecimals(value: Double): Self = this.set("valueDecimals", value.asInstanceOf[js.Any])
+    def setValueDescriptionFormatUndefined: Self = StObject.set(x, "valueDescriptionFormat", js.undefined)
     
     @scala.inline
-    def deleteValueDecimals: Self = this.set("valueDecimals", js.undefined)
+    def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDescriptionFormat(value: String): Self = this.set("valueDescriptionFormat", value.asInstanceOf[js.Any])
+    def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
     
     @scala.inline
-    def deleteValueDescriptionFormat: Self = this.set("valueDescriptionFormat", js.undefined)
+    def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuePrefix(value: String): Self = this.set("valuePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuePrefix: Self = this.set("valuePrefix", js.undefined)
-    
-    @scala.inline
-    def setValueSuffix(value: String): Self = this.set("valueSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSuffix: Self = this.set("valueSuffix", js.undefined)
+    def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
   }
 }

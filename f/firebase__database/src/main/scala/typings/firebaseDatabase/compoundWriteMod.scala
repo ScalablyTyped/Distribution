@@ -5,16 +5,16 @@ import typings.firebaseDatabase.immutableTreeMod.ImmutableTree
 import typings.firebaseDatabase.nodeMod.NamedNode
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/CompoundWrite", JSImport.Namespace)
-@js.native
-object compoundWriteMod extends js.Object {
+object compoundWriteMod {
   
+  @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite")
   @js.native
-  class CompoundWrite protected () extends js.Object {
+  class CompoundWrite protected () extends StObject {
     def this(writeTree_ : ImmutableTree[Node]) = this()
     
     def addWrite(path: Path, node: Node): CompoundWrite = js.native
@@ -75,9 +75,16 @@ object compoundWriteMod extends js.Object {
     var writeTree_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object CompoundWrite extends js.Object {
+  object CompoundWrite {
     
-    var Empty: CompoundWrite = js.native
+    @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite.Empty")
+    @js.native
+    def Empty: CompoundWrite = js.native
+    @scala.inline
+    def Empty_=(x: CompoundWrite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
   }
 }

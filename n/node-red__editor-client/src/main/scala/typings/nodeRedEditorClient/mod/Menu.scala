@@ -3,12 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Options
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLUListElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Menu extends js.Object {
+trait Menu extends StObject {
   
   def addItem(id: String): Unit = js.native
   def addItem(id: String, opt: MenuItemOption): Unit = js.native

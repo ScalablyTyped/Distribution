@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,135 +78,123 @@ object UserActivity {
   }
   
   @scala.inline
-  implicit class UserActivityOps[Self <: UserActivity] (val x: Self) extends AnyVal {
+  implicit class UserActivityMutableBuilder[Self <: UserActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationUrl(value: String): Self = StObject.set(x, "activationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationUrlUndefined: Self = StObject.set(x, "activationUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivitySourceHost(value: String): Self = StObject.set(x, "activitySourceHost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationUrl(value: String): Self = this.set("activationUrl", value.asInstanceOf[js.Any])
+    def setActivitySourceHostUndefined: Self = StObject.set(x, "activitySourceHost", js.undefined)
     
     @scala.inline
-    def deleteActivationUrl: Self = this.set("activationUrl", js.undefined)
+    def setAppActivityId(value: String): Self = StObject.set(x, "appActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivitySourceHost(value: String): Self = this.set("activitySourceHost", value.asInstanceOf[js.Any])
+    def setAppActivityIdUndefined: Self = StObject.set(x, "appActivityId", js.undefined)
     
     @scala.inline
-    def deleteActivitySourceHost: Self = this.set("activitySourceHost", js.undefined)
+    def setAppDisplayName(value: NullableOption[String]): Self = StObject.set(x, "appDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppActivityId(value: String): Self = this.set("appActivityId", value.asInstanceOf[js.Any])
+    def setAppDisplayNameNull: Self = StObject.set(x, "appDisplayName", null)
     
     @scala.inline
-    def deleteAppActivityId: Self = this.set("appActivityId", js.undefined)
+    def setAppDisplayNameUndefined: Self = StObject.set(x, "appDisplayName", js.undefined)
     
     @scala.inline
-    def setAppDisplayName(value: NullableOption[String]): Self = this.set("appDisplayName", value.asInstanceOf[js.Any])
+    def setContentInfo(value: NullableOption[_]): Self = StObject.set(x, "contentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppDisplayName: Self = this.set("appDisplayName", js.undefined)
+    def setContentInfoNull: Self = StObject.set(x, "contentInfo", null)
     
     @scala.inline
-    def setAppDisplayNameNull: Self = this.set("appDisplayName", null)
+    def setContentInfoUndefined: Self = StObject.set(x, "contentInfo", js.undefined)
     
     @scala.inline
-    def setContentInfo(value: NullableOption[_]): Self = this.set("contentInfo", value.asInstanceOf[js.Any])
+    def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentInfo: Self = this.set("contentInfo", js.undefined)
+    def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
     
     @scala.inline
-    def setContentInfoNull: Self = this.set("contentInfo", null)
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def setContentUrl(value: NullableOption[String]): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def setContentUrlNull: Self = this.set("contentUrl", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setFallbackUrl(value: NullableOption[String]): Self = StObject.set(x, "fallbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setFallbackUrlNull: Self = StObject.set(x, "fallbackUrl", null)
     
     @scala.inline
-    def setExpirationDateTimeNull: Self = this.set("expirationDateTime", null)
+    def setFallbackUrlUndefined: Self = StObject.set(x, "fallbackUrl", js.undefined)
     
     @scala.inline
-    def setFallbackUrl(value: NullableOption[String]): Self = this.set("fallbackUrl", value.asInstanceOf[js.Any])
+    def setHistoryItems(value: NullableOption[js.Array[ActivityHistoryItem]]): Self = StObject.set(x, "historyItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFallbackUrl: Self = this.set("fallbackUrl", js.undefined)
+    def setHistoryItemsNull: Self = StObject.set(x, "historyItems", null)
     
     @scala.inline
-    def setFallbackUrlNull: Self = this.set("fallbackUrl", null)
+    def setHistoryItemsUndefined: Self = StObject.set(x, "historyItems", js.undefined)
     
     @scala.inline
-    def setHistoryItemsVarargs(value: ActivityHistoryItem*): Self = this.set("historyItems", js.Array(value :_*))
+    def setHistoryItemsVarargs(value: ActivityHistoryItem*): Self = StObject.set(x, "historyItems", js.Array(value :_*))
     
     @scala.inline
-    def setHistoryItems(value: NullableOption[js.Array[ActivityHistoryItem]]): Self = this.set("historyItems", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHistoryItems: Self = this.set("historyItems", js.undefined)
+    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     @scala.inline
-    def setHistoryItemsNull: Self = this.set("historyItems", null)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[Status]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setLastModifiedDateTimeNull: Self = this.set("lastModifiedDateTime", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: NullableOption[Status]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUserTimezone(value: NullableOption[String]): Self = StObject.set(x, "userTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUserTimezoneNull: Self = StObject.set(x, "userTimezone", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setUserTimezoneUndefined: Self = StObject.set(x, "userTimezone", js.undefined)
     
     @scala.inline
-    def setUserTimezone(value: NullableOption[String]): Self = this.set("userTimezone", value.asInstanceOf[js.Any])
+    def setVisualElements(value: VisualInfo): Self = StObject.set(x, "visualElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserTimezone: Self = this.set("userTimezone", js.undefined)
-    
-    @scala.inline
-    def setUserTimezoneNull: Self = this.set("userTimezone", null)
-    
-    @scala.inline
-    def setVisualElements(value: VisualInfo): Self = this.set("visualElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisualElements: Self = this.set("visualElements", js.undefined)
+    def setVisualElementsUndefined: Self = StObject.set(x, "visualElements", js.undefined)
   }
 }

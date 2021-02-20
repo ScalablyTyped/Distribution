@@ -2,18 +2,19 @@ package typings.baseX
 
 import typings.node.Buffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("base-x", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("base-x", JSImport.Namespace)
+  @js.native
   def apply(ALPHABET: String): BaseConverter = js.native
   
   @js.native
-  trait BaseConverter extends js.Object {
+  trait BaseConverter extends StObject {
     
     def decode(string: String): Buffer = js.native
     

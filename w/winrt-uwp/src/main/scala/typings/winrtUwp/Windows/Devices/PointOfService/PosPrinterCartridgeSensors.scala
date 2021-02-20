@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterCartridgeSensors extends js.Object
+sealed trait PosPrinterCartridgeSensors extends StObject
 /** Describes the possible sensors available for a printer station of a point-of-service printer to use to report the status of the printer. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterCartridgeSensors")
 @js.native
-object PosPrinterCartridgeSensors extends js.Object {
+object PosPrinterCartridgeSensors extends StObject {
   
   /** The printer station has a sensor that detects if the cartridge is empty. */
   @js.native

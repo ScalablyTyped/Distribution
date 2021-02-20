@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides contains information about a MIME type associated with a particular plugin. NavigatorPlugins.mimeTypes returns an array of this object. */
 @js.native
-trait MimeType extends js.Object {
+trait MimeType extends StObject {
   
   /**
     * Returns the MIME type's description.
@@ -43,30 +44,18 @@ object MimeType {
   }
   
   @scala.inline
-  implicit class MimeTypeOps[Self <: MimeType] (val x: Self) extends AnyVal {
+  implicit class MimeTypeMutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledPlugin(value: Plugin): Self = StObject.set(x, "enabledPlugin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuffixes(value: java.lang.String): Self = StObject.set(x, "suffixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: java.lang.String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnabledPlugin(value: Plugin): Self = this.set("enabledPlugin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuffixes(value: java.lang.String): Self = this.set("suffixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

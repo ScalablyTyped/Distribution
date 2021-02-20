@@ -1,12 +1,13 @@
 package typings.expoConfigureSplashScreen.anon
 
 import typings.expoConfigureSplashScreen.constantsMod.SplashScreenStatusBarStyleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hidden extends js.Object {
+trait Hidden extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.native
   
@@ -21,30 +22,18 @@ object Hidden {
   }
   
   @scala.inline
-  implicit class HiddenOps[Self <: Hidden] (val x: Self) extends AnyVal {
+  implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyle(value: SplashScreenStatusBarStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: SplashScreenStatusBarStyleType): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

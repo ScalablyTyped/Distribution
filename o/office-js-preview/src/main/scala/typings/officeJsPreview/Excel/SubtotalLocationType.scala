@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SubtotalLocationType extends js.Object
+sealed trait SubtotalLocationType extends StObject
 /**
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.SubtotalLocationType")
 @js.native
-object SubtotalLocationType extends js.Object {
+object SubtotalLocationType extends StObject {
   
   /**
     * Subtotals are at the bottom.

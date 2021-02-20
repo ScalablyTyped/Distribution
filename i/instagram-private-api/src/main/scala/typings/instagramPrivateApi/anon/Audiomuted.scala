@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Audiomuted extends js.Object {
+trait Audiomuted extends StObject {
   
   var audio_muted: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object Audiomuted {
   }
   
   @scala.inline
-  implicit class AudiomutedOps[Self <: Audiomuted] (val x: Self) extends AnyVal {
+  implicit class AudiomutedMutableBuilder[Self <: Audiomuted] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio_muted(value: Boolean): Self = StObject.set(x, "audio_muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudio_mutedUndefined: Self = StObject.set(x, "audio_muted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClips(value: js.Array[Length]): Self = StObject.set(x, "clips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setClipsUndefined: Self = StObject.set(x, "clips", js.undefined)
     
     @scala.inline
-    def setAudio_muted(value: Boolean): Self = this.set("audio_muted", value.asInstanceOf[js.Any])
+    def setClipsVarargs(value: Length*): Self = StObject.set(x, "clips", js.Array(value :_*))
     
     @scala.inline
-    def deleteAudio_muted: Self = this.set("audio_muted", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipsVarargs(value: Length*): Self = this.set("clips", js.Array(value :_*))
+    def setPoster_frame_index(value: Double): Self = StObject.set(x, "poster_frame_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClips(value: js.Array[Length]): Self = this.set("clips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClips: Self = this.set("clips", js.undefined)
-    
-    @scala.inline
-    def setPoster_frame_index(value: Double): Self = this.set("poster_frame_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoster_frame_index: Self = this.set("poster_frame_index", js.undefined)
+    def setPoster_frame_indexUndefined: Self = StObject.set(x, "poster_frame_index", js.undefined)
   }
 }

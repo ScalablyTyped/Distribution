@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTestGridUrlRequest extends js.Object {
+trait CreateTestGridUrlRequest extends StObject {
   
   /**
     * Lifetime, in seconds, of the URL.
@@ -26,24 +27,12 @@ object CreateTestGridUrlRequest {
   }
   
   @scala.inline
-  implicit class CreateTestGridUrlRequestOps[Self <: CreateTestGridUrlRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTestGridUrlRequestMutableBuilder[Self <: CreateTestGridUrlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpiresInSeconds(value: TestGridUrlExpiresInSecondsInput): Self = StObject.set(x, "expiresInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpiresInSeconds(value: TestGridUrlExpiresInSecondsInput): Self = this.set("expiresInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectArn(value: DeviceFarmArn): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }
 }

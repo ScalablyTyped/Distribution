@@ -2,6 +2,7 @@ package typings.cote.mod
 
 import typings.cote.coteStrings.coteColonadded
 import typings.cote.coteStrings.coteColonremoved
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

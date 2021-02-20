@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputDestination extends js.Object {
+trait OutputDestination extends StObject {
   
   /**
     * User-specified id. This is used in an output group or an output.
@@ -36,48 +37,36 @@ object OutputDestination {
   }
   
   @scala.inline
-  implicit class OutputDestinationOps[Self <: OutputDestination] (val x: Self) extends AnyVal {
+  implicit class OutputDestinationMutableBuilder[Self <: OutputDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaPackageSettings(value: listOfMediaPackageOutputDestinationSettings): Self = StObject.set(x, "MediaPackageSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMediaPackageSettingsUndefined: Self = StObject.set(x, "MediaPackageSettings", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setMediaPackageSettingsVarargs(value: MediaPackageOutputDestinationSettings*): Self = StObject.set(x, "MediaPackageSettings", js.Array(value :_*))
     
     @scala.inline
-    def setMediaPackageSettingsVarargs(value: MediaPackageOutputDestinationSettings*): Self = this.set("MediaPackageSettings", js.Array(value :_*))
+    def setMultiplexSettings(value: MultiplexProgramChannelDestinationSettings): Self = StObject.set(x, "MultiplexSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaPackageSettings(value: listOfMediaPackageOutputDestinationSettings): Self = this.set("MediaPackageSettings", value.asInstanceOf[js.Any])
+    def setMultiplexSettingsUndefined: Self = StObject.set(x, "MultiplexSettings", js.undefined)
     
     @scala.inline
-    def deleteMediaPackageSettings: Self = this.set("MediaPackageSettings", js.undefined)
+    def setSettings(value: listOfOutputDestinationSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplexSettings(value: MultiplexProgramChannelDestinationSettings): Self = this.set("MultiplexSettings", value.asInstanceOf[js.Any])
+    def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
     @scala.inline
-    def deleteMultiplexSettings: Self = this.set("MultiplexSettings", js.undefined)
-    
-    @scala.inline
-    def setSettingsVarargs(value: OutputDestinationSettings*): Self = this.set("Settings", js.Array(value :_*))
-    
-    @scala.inline
-    def setSettings(value: listOfOutputDestinationSettings): Self = this.set("Settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettings: Self = this.set("Settings", js.undefined)
+    def setSettingsVarargs(value: OutputDestinationSettings*): Self = StObject.set(x, "Settings", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.anon
 
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BIncomingQueueBlocked extends js.Object {
+trait BIncomingQueueBlocked extends StObject {
   
   val bIncomingQueueBlocked: Boolean = js.native
   
@@ -30,30 +31,18 @@ object BIncomingQueueBlocked {
   }
   
   @scala.inline
-  implicit class BIncomingQueueBlockedOps[Self <: BIncomingQueueBlocked] (val x: Self) extends AnyVal {
+  implicit class BIncomingQueueBlockedMutableBuilder[Self <: BIncomingQueueBlocked] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBIncomingQueueBlocked(value: Boolean): Self = StObject.set(x, "bIncomingQueueBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBOutgoingQueueBlocked(value: Boolean): Self = StObject.set(x, "bOutgoingQueueBlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBOutgoingQueuePaused(value: Boolean): Self = StObject.set(x, "bOutgoingQueuePaused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBIncomingQueueBlocked(value: Boolean): Self = this.set("bIncomingQueueBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBOutgoingQueueBlocked(value: Boolean): Self = this.set("bOutgoingQueueBlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBOutgoingQueuePaused(value: Boolean): Self = this.set("bOutgoingQueuePaused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = this.set("pFaxServer", value.asInstanceOf[js.Any])
+    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

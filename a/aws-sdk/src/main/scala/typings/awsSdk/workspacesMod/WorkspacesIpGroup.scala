@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspacesIpGroup extends js.Object {
+trait WorkspacesIpGroup extends StObject {
   
   /**
     * The description of the group.
@@ -36,45 +37,33 @@ object WorkspacesIpGroup {
   }
   
   @scala.inline
-  implicit class WorkspacesIpGroupOps[Self <: WorkspacesIpGroup] (val x: Self) extends AnyVal {
+  implicit class WorkspacesIpGroupMutableBuilder[Self <: WorkspacesIpGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupDesc(value: IpGroupDesc): Self = StObject.set(x, "groupDesc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupDescUndefined: Self = StObject.set(x, "groupDesc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupId(value: IpGroupId): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupDesc(value: IpGroupDesc): Self = this.set("groupDesc", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def deleteGroupDesc: Self = this.set("groupDesc", js.undefined)
+    def setGroupName(value: IpGroupName): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: IpGroupId): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    def setUserRules(value: IpRuleList): Self = StObject.set(x, "userRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: IpGroupName): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setUserRulesUndefined: Self = StObject.set(x, "userRules", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
-    
-    @scala.inline
-    def setUserRulesVarargs(value: IpRuleItem*): Self = this.set("userRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserRules(value: IpRuleList): Self = this.set("userRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRules: Self = this.set("userRules", js.undefined)
+    def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "userRules", js.Array(value :_*))
   }
 }

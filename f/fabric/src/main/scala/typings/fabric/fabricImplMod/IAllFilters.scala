@@ -20,6 +20,7 @@ import typings.fabric.anon.InstantiableISaturationFilter
 import typings.fabric.anon.InstantiableISepia2Filter
 import typings.fabric.anon.InstantiableISepiaFilter
 import typings.fabric.anon.InstantiableITintFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Filters
 ////////////////////////////////////////////////////////////
 @js.native
-trait IAllFilters extends js.Object {
+trait IAllFilters extends StObject {
   
   var BaseFilter: Instantiable = js.native
   
@@ -100,78 +101,66 @@ object IAllFilters {
   }
   
   @scala.inline
-  implicit class IAllFiltersOps[Self <: IAllFilters] (val x: Self) extends AnyVal {
+  implicit class IAllFiltersMutableBuilder[Self <: IAllFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseFilter(value: Instantiable): Self = StObject.set(x, "BaseFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlendColor(value: FromObject): Self = StObject.set(x, "BlendColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlendImage(value: InstantiableFromObject): Self = StObject.set(x, "BlendImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseFilter(value: Instantiable): Self = this.set("BaseFilter", value.asInstanceOf[js.Any])
+    def setBrightness(value: InstantiableIBrightnessFilter): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendColor(value: FromObject): Self = this.set("BlendColor", value.asInstanceOf[js.Any])
+    def setColorMatrix(value: InstantiableIColorMatrix): Self = StObject.set(x, "ColorMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendImage(value: InstantiableFromObject): Self = this.set("BlendImage", value.asInstanceOf[js.Any])
+    def setContrast(value: InstantiableIContrastFilter): Self = StObject.set(x, "Contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: InstantiableIBrightnessFilter): Self = this.set("Brightness", value.asInstanceOf[js.Any])
+    def setConvolute(value: InstantiableIConvoluteFilter): Self = StObject.set(x, "Convolute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMatrix(value: InstantiableIColorMatrix): Self = this.set("ColorMatrix", value.asInstanceOf[js.Any])
+    def setGradientTransparency(value: InstantiableIGradientTransparencyFilter): Self = StObject.set(x, "GradientTransparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: InstantiableIContrastFilter): Self = this.set("Contrast", value.asInstanceOf[js.Any])
+    def setGrayscale(value: InstantiableIGrayscaleFilter): Self = StObject.set(x, "Grayscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvolute(value: InstantiableIConvoluteFilter): Self = this.set("Convolute", value.asInstanceOf[js.Any])
+    def setInvert(value: InstantiableIInvertFilter): Self = StObject.set(x, "Invert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientTransparency(value: InstantiableIGradientTransparencyFilter): Self = this.set("GradientTransparency", value.asInstanceOf[js.Any])
+    def setMask(value: InstantiableIMaskFilter): Self = StObject.set(x, "Mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrayscale(value: InstantiableIGrayscaleFilter): Self = this.set("Grayscale", value.asInstanceOf[js.Any])
+    def setMultiply(value: InstantiableIMultiplyFilter): Self = StObject.set(x, "Multiply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvert(value: InstantiableIInvertFilter): Self = this.set("Invert", value.asInstanceOf[js.Any])
+    def setNoise(value: InstantiableINoiseFilter): Self = StObject.set(x, "Noise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: InstantiableIMaskFilter): Self = this.set("Mask", value.asInstanceOf[js.Any])
+    def setPixelate(value: InstantiableIPixelateFilter): Self = StObject.set(x, "Pixelate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiply(value: InstantiableIMultiplyFilter): Self = this.set("Multiply", value.asInstanceOf[js.Any])
+    def setRemoveWhite(value: InstantiableIRemoveWhiteFilter): Self = StObject.set(x, "RemoveWhite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoise(value: InstantiableINoiseFilter): Self = this.set("Noise", value.asInstanceOf[js.Any])
+    def setResize(value: InstantiableIResizeFilter): Self = StObject.set(x, "Resize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelate(value: InstantiableIPixelateFilter): Self = this.set("Pixelate", value.asInstanceOf[js.Any])
+    def setSaturation(value: InstantiableISaturationFilter): Self = StObject.set(x, "Saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveWhite(value: InstantiableIRemoveWhiteFilter): Self = this.set("RemoveWhite", value.asInstanceOf[js.Any])
+    def setSepia(value: InstantiableISepiaFilter): Self = StObject.set(x, "Sepia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResize(value: InstantiableIResizeFilter): Self = this.set("Resize", value.asInstanceOf[js.Any])
+    def setSepia2(value: InstantiableISepia2Filter): Self = StObject.set(x, "Sepia2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: InstantiableISaturationFilter): Self = this.set("Saturation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSepia(value: InstantiableISepiaFilter): Self = this.set("Sepia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSepia2(value: InstantiableISepia2Filter): Self = this.set("Sepia2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTint(value: InstantiableITintFilter): Self = this.set("Tint", value.asInstanceOf[js.Any])
+    def setTint(value: InstantiableITintFilter): Self = StObject.set(x, "Tint", value.asInstanceOf[js.Any])
   }
 }

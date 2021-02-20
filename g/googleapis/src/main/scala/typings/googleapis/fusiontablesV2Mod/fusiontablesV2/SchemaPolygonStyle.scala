@@ -1,5 +1,6 @@
 package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a PolygonStyle within a StyleSetting
   */
 @js.native
-trait SchemaPolygonStyle extends js.Object {
+trait SchemaPolygonStyle extends StObject {
   
   /**
     * Color of the interior of the polygon in #RRGGBB format.
@@ -63,66 +64,54 @@ object SchemaPolygonStyle {
   }
   
   @scala.inline
-  implicit class SchemaPolygonStyleOps[Self <: SchemaPolygonStyle] (val x: Self) extends AnyVal {
+  implicit class SchemaPolygonStyleMutableBuilder[Self <: SchemaPolygonStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillColorStyler(value: SchemaStyleFunction): Self = StObject.set(x, "fillColorStyler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillColorStylerUndefined: Self = StObject.set(x, "fillColorStyler", js.undefined)
     
     @scala.inline
-    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
     @scala.inline
-    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillColorStyler(value: SchemaStyleFunction): Self = this.set("fillColorStyler", value.asInstanceOf[js.Any])
+    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
     @scala.inline
-    def deleteFillColorStyler: Self = this.set("fillColorStyler", js.undefined)
+    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    def setStrokeColorStyler(value: SchemaStyleFunction): Self = StObject.set(x, "strokeColorStyler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    def setStrokeColorStylerUndefined: Self = StObject.set(x, "strokeColorStyler", js.undefined)
     
     @scala.inline
-    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
     @scala.inline
-    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeColorStyler(value: SchemaStyleFunction): Self = this.set("strokeColorStyler", value.asInstanceOf[js.Any])
+    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
     @scala.inline
-    def deleteStrokeColorStyler: Self = this.set("strokeColorStyler", js.undefined)
+    def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeOpacity(value: Double): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    def setStrokeWeightStyler(value: SchemaStyleFunction): Self = StObject.set(x, "strokeWeightStyler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    def setStrokeWeightStylerUndefined: Self = StObject.set(x, "strokeWeightStyler", js.undefined)
     
     @scala.inline
-    def setStrokeWeight(value: Double): Self = this.set("strokeWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWeight: Self = this.set("strokeWeight", js.undefined)
-    
-    @scala.inline
-    def setStrokeWeightStyler(value: SchemaStyleFunction): Self = this.set("strokeWeightStyler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWeightStyler: Self = this.set("strokeWeightStyler", js.undefined)
+    def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
   }
 }

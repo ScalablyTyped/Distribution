@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RestoreDatabaseFileInfo extends js.Object {
+trait RestoreDatabaseFileInfo extends StObject {
   
   var fileType: String = js.native
   
@@ -24,30 +25,18 @@ object RestoreDatabaseFileInfo {
   }
   
   @scala.inline
-  implicit class RestoreDatabaseFileInfoOps[Self <: RestoreDatabaseFileInfo] (val x: Self) extends AnyVal {
+  implicit class RestoreDatabaseFileInfoMutableBuilder[Self <: RestoreDatabaseFileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogicalFileName(value: String): Self = StObject.set(x, "logicalFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalFileName(value: String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalFileName(value: String): Self = this.set("logicalFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalFileName(value: String): Self = this.set("originalFileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestoreAsFileName(value: String): Self = this.set("restoreAsFileName", value.asInstanceOf[js.Any])
+    def setRestoreAsFileName(value: String): Self = StObject.set(x, "restoreAsFileName", value.asInstanceOf[js.Any])
   }
 }

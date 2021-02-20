@@ -1,11 +1,12 @@
 package typings.antvG2.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParsePath extends js.Object {
+trait ParsePath extends StObject {
   
   var parsePath: js.Any = js.native
   
@@ -22,27 +23,15 @@ object ParsePath {
   }
   
   @scala.inline
-  implicit class ParsePathOps[Self <: ParsePath] (val x: Self) extends AnyVal {
+  implicit class ParsePathMutableBuilder[Self <: ParsePath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParsePath(value: js.Any): Self = StObject.set(x, "parsePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParsePoint(value: js.Any): Self = StObject.set(x, "parsePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParsePath(value: js.Any): Self = this.set("parsePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParsePoint(value: js.Any): Self = this.set("parsePoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParsePoints(value: js.Any): Self = this.set("parsePoints", value.asInstanceOf[js.Any])
+    def setParsePoints(value: js.Any): Self = StObject.set(x, "parsePoints", value.asInstanceOf[js.Any])
   }
 }

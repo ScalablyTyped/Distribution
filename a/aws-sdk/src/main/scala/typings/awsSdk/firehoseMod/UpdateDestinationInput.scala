@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDestinationInput extends js.Object {
+trait UpdateDestinationInput extends StObject {
   
   /**
     * Obtain this value from the VersionId result of DeliveryStreamDescription. This value is required, and helps the service perform conditional operations. For example, if there is an interleaving update and this value is null, then the update destination fails. After the update is successful, the VersionId value is updated. The service then performs a merge of the old configuration with the new configuration.
@@ -65,63 +66,51 @@ object UpdateDestinationInput {
   }
   
   @scala.inline
-  implicit class UpdateDestinationInputOps[Self <: UpdateDestinationInput] (val x: Self) extends AnyVal {
+  implicit class UpdateDestinationInputMutableBuilder[Self <: UpdateDestinationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentDeliveryStreamVersionId(value: DeliveryStreamVersionId): Self = StObject.set(x, "CurrentDeliveryStreamVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationId(value: DestinationId): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDeliveryStreamVersionId(value: DeliveryStreamVersionId): Self = this.set("CurrentDeliveryStreamVersionId", value.asInstanceOf[js.Any])
+    def setElasticsearchDestinationUpdate(value: ElasticsearchDestinationUpdate): Self = StObject.set(x, "ElasticsearchDestinationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    def setElasticsearchDestinationUpdateUndefined: Self = StObject.set(x, "ElasticsearchDestinationUpdate", js.undefined)
     
     @scala.inline
-    def setDestinationId(value: DestinationId): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
+    def setExtendedS3DestinationUpdate(value: ExtendedS3DestinationUpdate): Self = StObject.set(x, "ExtendedS3DestinationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchDestinationUpdate(value: ElasticsearchDestinationUpdate): Self = this.set("ElasticsearchDestinationUpdate", value.asInstanceOf[js.Any])
+    def setExtendedS3DestinationUpdateUndefined: Self = StObject.set(x, "ExtendedS3DestinationUpdate", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchDestinationUpdate: Self = this.set("ElasticsearchDestinationUpdate", js.undefined)
+    def setHttpEndpointDestinationUpdate(value: HttpEndpointDestinationUpdate): Self = StObject.set(x, "HttpEndpointDestinationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedS3DestinationUpdate(value: ExtendedS3DestinationUpdate): Self = this.set("ExtendedS3DestinationUpdate", value.asInstanceOf[js.Any])
+    def setHttpEndpointDestinationUpdateUndefined: Self = StObject.set(x, "HttpEndpointDestinationUpdate", js.undefined)
     
     @scala.inline
-    def deleteExtendedS3DestinationUpdate: Self = this.set("ExtendedS3DestinationUpdate", js.undefined)
+    def setRedshiftDestinationUpdate(value: RedshiftDestinationUpdate): Self = StObject.set(x, "RedshiftDestinationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpEndpointDestinationUpdate(value: HttpEndpointDestinationUpdate): Self = this.set("HttpEndpointDestinationUpdate", value.asInstanceOf[js.Any])
+    def setRedshiftDestinationUpdateUndefined: Self = StObject.set(x, "RedshiftDestinationUpdate", js.undefined)
     
     @scala.inline
-    def deleteHttpEndpointDestinationUpdate: Self = this.set("HttpEndpointDestinationUpdate", js.undefined)
+    def setS3DestinationUpdate(value: S3DestinationUpdate): Self = StObject.set(x, "S3DestinationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftDestinationUpdate(value: RedshiftDestinationUpdate): Self = this.set("RedshiftDestinationUpdate", value.asInstanceOf[js.Any])
+    def setS3DestinationUpdateUndefined: Self = StObject.set(x, "S3DestinationUpdate", js.undefined)
     
     @scala.inline
-    def deleteRedshiftDestinationUpdate: Self = this.set("RedshiftDestinationUpdate", js.undefined)
+    def setSplunkDestinationUpdate(value: SplunkDestinationUpdate): Self = StObject.set(x, "SplunkDestinationUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DestinationUpdate(value: S3DestinationUpdate): Self = this.set("S3DestinationUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DestinationUpdate: Self = this.set("S3DestinationUpdate", js.undefined)
-    
-    @scala.inline
-    def setSplunkDestinationUpdate(value: SplunkDestinationUpdate): Self = this.set("SplunkDestinationUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplunkDestinationUpdate: Self = this.set("SplunkDestinationUpdate", js.undefined)
+    def setSplunkDestinationUpdateUndefined: Self = StObject.set(x, "SplunkDestinationUpdate", js.undefined)
   }
 }

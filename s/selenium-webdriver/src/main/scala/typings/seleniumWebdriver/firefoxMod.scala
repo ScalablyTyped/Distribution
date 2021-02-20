@@ -3,27 +3,30 @@ package typings.seleniumWebdriver
 import typings.seleniumWebdriver.anon.Height
 import typings.seleniumWebdriver.httpMod.Executor
 import typings.seleniumWebdriver.mod.Capabilities
+import typings.seleniumWebdriver.mod.Session
 import typings.seleniumWebdriver.mod.WebDriver
 import typings.seleniumWebdriver.remoteMod.DriverService
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
+import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("selenium-webdriver/firefox", JSImport.Namespace)
-@js.native
-object firefoxMod extends js.Object {
+object firefoxMod {
   
-  def createWiresService(binary: String): DriverService = js.native
-  def createWiresService(binary: js.Any): DriverService = js.native
-  
-  def findWires(): String = js.native
-  
-  def prepareProfile(profile: String, port: Double): js.Any = js.native
-  def prepareProfile(profile: js.Any, port: Double): js.Any = js.native
-  
+  @JSImport("selenium-webdriver/firefox", "Driver")
   @js.native
-  class Driver () extends WebDriver {
+  class Driver protected () extends WebDriver {
+    def this(session: js.Promise[Session], executor: Executor) = this()
+    // region Constructors
+    /**
+      * @param {!(Session|Promise<!Session>)} session Either a
+      *     known session or a promise that will be resolved to a session.
+      * @param {!command.Executor} executor The executor to use when sending
+      *     commands to the browser.
+      */
+    def this(session: Session, executor: Executor) = this()
     
     /**
       * Installs a new addon with the current session. This function will return an
@@ -60,8 +63,7 @@ object firefoxMod extends js.Object {
     def uninstallAddon(id: js.Promise[String]): js.Promise[Unit] = js.native
   }
   /* static members */
-  @js.native
-  object Driver extends js.Object {
+  object Driver {
     
     /**
       * Creates a new Firefox session.
@@ -85,19 +87,46 @@ object firefoxMod extends js.Object {
       *     configured to use the legacy FirefoxDriver from the Selenium project.
       * @return {!Driver} A new driver instance.
       */
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: js.UndefOr[scala.Nothing], opt_executor: Executor): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: js.UndefOr[scala.Nothing], opt_executor: DriverService): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: Options): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: Options, opt_executor: Executor): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: Options, opt_executor: DriverService): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: Capabilities): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: Capabilities, opt_executor: Executor): Driver = js.native
+    @JSImport("selenium-webdriver/firefox", "Driver.createSession")
+    @js.native
     def createSession(opt_config: Capabilities, opt_executor: DriverService): Driver = js.native
   }
   
+  @JSImport("selenium-webdriver/firefox", "Options")
   @js.native
+  // region Constructors
+  /**
+    * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
+    *     capabilities to initialize this instance from.
+    */
   class Options () extends Capabilities {
+    def this(other: js.Object) = this()
+    def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+    def this(other: Map[String, _]) = this()
     
     /**
       * Specify additional command line arguments that should be used when starting
@@ -173,6 +202,7 @@ object firefoxMod extends js.Object {
     def windowSize(size: Height): Options = js.native
   }
   
+  @JSImport("selenium-webdriver/firefox", "ServiceBuilder")
   @js.native
   /**
     * @param {string=} opt_exe Path to the server executable to use. If omitted,
@@ -202,4 +232,22 @@ object firefoxMod extends js.Object {
       */
     def setFirefoxBinary(binary: String): this.type = js.native
   }
+  
+  @JSImport("selenium-webdriver/firefox", "createWiresService")
+  @js.native
+  def createWiresService(binary: String): DriverService = js.native
+  @JSImport("selenium-webdriver/firefox", "createWiresService")
+  @js.native
+  def createWiresService(binary: js.Any): DriverService = js.native
+  
+  @JSImport("selenium-webdriver/firefox", "findWires")
+  @js.native
+  def findWires(): String = js.native
+  
+  @JSImport("selenium-webdriver/firefox", "prepareProfile")
+  @js.native
+  def prepareProfile(profile: String, port: Double): js.Any = js.native
+  @JSImport("selenium-webdriver/firefox", "prepareProfile")
+  @js.native
+  def prepareProfile(profile: js.Any, port: Double): js.Any = js.native
 }

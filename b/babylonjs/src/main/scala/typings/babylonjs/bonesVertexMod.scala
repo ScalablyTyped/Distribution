@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/ShadersInclude/bonesVertex", JSImport.Namespace)
-@js.native
-object bonesVertexMod extends js.Object {
+object bonesVertexMod {
   
-  @js.native
-  object bonesVertex extends js.Object {
+  object bonesVertex {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/ShadersInclude/bonesVertex", "bonesVertex")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/ShadersInclude/bonesVertex", "bonesVertex.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/ShadersInclude/bonesVertex", "bonesVertex.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

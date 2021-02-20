@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerfMetricsSummary extends js.Object {
+trait PerfMetricsSummary extends StObject {
   
   var appStartTime: js.UndefOr[AppStartTime] = js.native
   
@@ -39,69 +40,57 @@ object PerfMetricsSummary {
   }
   
   @scala.inline
-  implicit class PerfMetricsSummaryOps[Self <: PerfMetricsSummary] (val x: Self) extends AnyVal {
+  implicit class PerfMetricsSummaryMutableBuilder[Self <: PerfMetricsSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppStartTime(value: AppStartTime): Self = StObject.set(x, "appStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppStartTimeUndefined: Self = StObject.set(x, "appStartTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppStartTime(value: AppStartTime): Self = this.set("appStartTime", value.asInstanceOf[js.Any])
+    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
     @scala.inline
-    def deleteAppStartTime: Self = this.set("appStartTime", js.undefined)
+    def setGraphicsStats(value: GraphicsStats): Self = StObject.set(x, "graphicsStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    def setGraphicsStatsUndefined: Self = StObject.set(x, "graphicsStats", js.undefined)
     
     @scala.inline
-    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphicsStats(value: GraphicsStats): Self = this.set("graphicsStats", value.asInstanceOf[js.Any])
+    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
     @scala.inline
-    def deleteGraphicsStats: Self = this.set("graphicsStats", js.undefined)
+    def setPerfEnvironment(value: PerfEnvironment): Self = StObject.set(x, "perfEnvironment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    def setPerfEnvironmentUndefined: Self = StObject.set(x, "perfEnvironment", js.undefined)
     
     @scala.inline
-    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    def setPerfMetrics(value: js.Array[String]): Self = StObject.set(x, "perfMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerfEnvironment(value: PerfEnvironment): Self = this.set("perfEnvironment", value.asInstanceOf[js.Any])
+    def setPerfMetricsUndefined: Self = StObject.set(x, "perfMetrics", js.undefined)
     
     @scala.inline
-    def deletePerfEnvironment: Self = this.set("perfEnvironment", js.undefined)
+    def setPerfMetricsVarargs(value: String*): Self = StObject.set(x, "perfMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setPerfMetricsVarargs(value: String*): Self = this.set("perfMetrics", js.Array(value :_*))
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerfMetrics(value: js.Array[String]): Self = this.set("perfMetrics", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deletePerfMetrics: Self = this.set("perfMetrics", js.undefined)
+    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
-    
-    @scala.inline
-    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepId: Self = this.set("stepId", js.undefined)
+    def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
   }
 }

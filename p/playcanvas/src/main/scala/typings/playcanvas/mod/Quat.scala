@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,18 +45,21 @@ class Quat ()
   def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
 }
-/* static members */
-@JSImport("playcanvas", "Quat")
-@js.native
-object Quat extends js.Object {
+object Quat {
   
   /**
     * A constant quaternion set to [0, 0, 0, 1] (the identity).
     */
+  /* static member */
+  @JSImport("playcanvas", "Quat.IDENTITY")
+  @js.native
   val IDENTITY: typings.playcanvas.pc.Quat = js.native
   
   /**
     * A constant quaternion set to [0, 0, 0, 0].
     */
+  /* static member */
+  @JSImport("playcanvas", "Quat.ZERO")
+  @js.native
   val ZERO: typings.playcanvas.pc.Quat = js.native
 }

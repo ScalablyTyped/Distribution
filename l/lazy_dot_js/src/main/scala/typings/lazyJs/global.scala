@@ -1,45 +1,52 @@
 package typings.lazyJs
 
 import typings.lazyJs.LazyJS.LazyStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var Lazy: LazyStatic = js.native
-  
+  @JSGlobal("Lazy")
   @js.native
-  object LazyJS extends js.Object {
+  def Lazy: LazyStatic = js.native
+  
+  object LazyJS {
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    @js.native
-    object ArrayLikeSequence extends js.Object {
+    object ArrayLikeSequence {
       
+      @JSGlobal("LazyJS.ArrayLikeSequence.define")
+      @js.native
       def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    @js.native
-    object ObjectLikeSequence extends js.Object {
+    object ObjectLikeSequence {
       
+      @JSGlobal("LazyJS.ObjectLikeSequence.define")
+      @js.native
       def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    @js.native
-    object Sequence extends js.Object {
+    object Sequence {
       
+      @JSGlobal("LazyJS.Sequence.define")
+      @js.native
       def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
     }
     
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    @js.native
-    object StringLikeSequence extends js.Object {
+    object StringLikeSequence {
       
+      @JSGlobal("LazyJS.StringLikeSequence.define")
+      @js.native
       def define(methodName: js.Array[String], overrides: js.Any): js.Function = js.native
     }
   }
+  
+  @scala.inline
+  def Lazy_=(x: LazyStatic): Unit = js.Dynamic.global.updateDynamic("Lazy")(x.asInstanceOf[js.Any])
 }

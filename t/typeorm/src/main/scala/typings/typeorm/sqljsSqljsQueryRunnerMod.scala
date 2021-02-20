@@ -2,14 +2,14 @@ package typings.typeorm
 
 import typings.typeorm.sqliteAbstractAbstractSqliteQueryRunnerMod.AbstractSqliteQueryRunner
 import typings.typeorm.sqljsSqljsDriverMod.SqljsDriver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/sqljs/SqljsQueryRunner", JSImport.Namespace)
-@js.native
-object sqljsSqljsQueryRunnerMod extends js.Object {
+object sqljsSqljsQueryRunnerMod {
   
+  @JSImport("typeorm/driver/sqljs/SqljsQueryRunner", "SqljsQueryRunner")
   @js.native
   class SqljsQueryRunner protected () extends AbstractSqliteQueryRunner {
     def this(driver: SqljsDriver) = this()

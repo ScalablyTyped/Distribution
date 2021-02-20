@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AggregatedResultsByOutcome extends js.Object {
+trait AggregatedResultsByOutcome extends StObject {
   
   var count: Double = js.native
   
@@ -35,36 +36,24 @@ object AggregatedResultsByOutcome {
   }
   
   @scala.inline
-  implicit class AggregatedResultsByOutcomeOps[Self <: AggregatedResultsByOutcome] (val x: Self) extends AnyVal {
+  implicit class AggregatedResultsByOutcomeMutableBuilder[Self <: AggregatedResultsByOutcome] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupByField(value: String): Self = StObject.set(x, "groupByField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setGroupByValue(value: js.Any): Self = StObject.set(x, "groupByValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: js.Any): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setOutcome(value: TestOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByField(value: String): Self = this.set("groupByField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupByValue(value: js.Any): Self = this.set("groupByValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutcome(value: TestOutcome): Self = this.set("outcome", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRerunResultCount(value: Double): Self = this.set("rerunResultCount", value.asInstanceOf[js.Any])
+    def setRerunResultCount(value: Double): Self = StObject.set(x, "rerunResultCount", value.asInstanceOf[js.Any])
   }
 }

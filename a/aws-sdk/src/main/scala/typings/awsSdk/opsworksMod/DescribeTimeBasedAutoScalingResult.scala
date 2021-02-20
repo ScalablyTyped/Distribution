@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTimeBasedAutoScalingResult extends js.Object {
+trait DescribeTimeBasedAutoScalingResult extends StObject {
   
   /**
     * An array of TimeBasedAutoScalingConfiguration objects that describe the configuration for the specified instances.
@@ -21,27 +22,15 @@ object DescribeTimeBasedAutoScalingResult {
   }
   
   @scala.inline
-  implicit class DescribeTimeBasedAutoScalingResultOps[Self <: DescribeTimeBasedAutoScalingResult] (val x: Self) extends AnyVal {
+  implicit class DescribeTimeBasedAutoScalingResultMutableBuilder[Self <: DescribeTimeBasedAutoScalingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeBasedAutoScalingConfigurations(value: TimeBasedAutoScalingConfigurations): Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimeBasedAutoScalingConfigurationsUndefined: Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTimeBasedAutoScalingConfigurationsVarargs(value: TimeBasedAutoScalingConfiguration*): Self = this.set("TimeBasedAutoScalingConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTimeBasedAutoScalingConfigurations(value: TimeBasedAutoScalingConfigurations): Self = this.set("TimeBasedAutoScalingConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeBasedAutoScalingConfigurations: Self = this.set("TimeBasedAutoScalingConfigurations", js.undefined)
+    def setTimeBasedAutoScalingConfigurationsVarargs(value: TimeBasedAutoScalingConfiguration*): Self = StObject.set(x, "TimeBasedAutoScalingConfigurations", js.Array(value :_*))
   }
 }

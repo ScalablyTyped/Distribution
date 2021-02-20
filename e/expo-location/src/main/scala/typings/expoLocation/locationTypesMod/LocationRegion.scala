@@ -1,11 +1,12 @@
 package typings.expoLocation.locationTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationRegion extends js.Object {
+trait LocationRegion extends StObject {
   
   var identifier: js.UndefOr[String] = js.native
   
@@ -28,45 +29,33 @@ object LocationRegion {
   }
   
   @scala.inline
-  implicit class LocationRegionOps[Self <: LocationRegion] (val x: Self) extends AnyVal {
+  implicit class LocationRegionMutableBuilder[Self <: LocationRegion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setNotifyOnEnter(value: Boolean): Self = StObject.set(x, "notifyOnEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setNotifyOnEnterUndefined: Self = StObject.set(x, "notifyOnEnter", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setNotifyOnExit(value: Boolean): Self = StObject.set(x, "notifyOnExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setNotifyOnExitUndefined: Self = StObject.set(x, "notifyOnExit", js.undefined)
     
     @scala.inline
-    def setNotifyOnEnter(value: Boolean): Self = this.set("notifyOnEnter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotifyOnEnter: Self = this.set("notifyOnEnter", js.undefined)
-    
-    @scala.inline
-    def setNotifyOnExit(value: Boolean): Self = this.set("notifyOnExit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotifyOnExit: Self = this.set("notifyOnExit", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }
 }

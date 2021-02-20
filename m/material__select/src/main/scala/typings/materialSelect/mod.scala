@@ -1,37 +1,33 @@
 package typings.materialSelect
 
-import typings.materialSelect.adapterMod.MDCSelectAdapter
-import typings.materialSelect.anon.ACTIVATED
-import typings.materialSelect.anon.ARIACONTROLS
-import typings.materialSelect.anon.ARIAHIDDEN
-import typings.materialSelect.anon.HELPERTEXTVALIDATIONMSG
-import typings.materialSelect.anon.ICONEVENT
-import typings.materialSelect.anon.LABELSCALE
 import typings.materialSelect.anon.PartialMDCSelectAdapter
 import typings.materialSelect.anon.PartialMDCSelectFoundatio
 import typings.materialSelect.anon.PartialMDCSelectHelperTex
 import typings.materialSelect.anon.PartialMDCSelectIconAdapt
-import typings.materialSelect.helperTextAdapterMod.MDCSelectHelperTextAdapter
-import typings.materialSelect.iconAdapterMod.MDCSelectIconAdapter
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/select", "MDCSelect")
   @js.native
-  class MDCSelect ()
-    extends typings.materialSelect.componentMod.MDCSelect
+  class MDCSelect protected ()
+    extends typings.materialSelect.componentMod.MDCSelect {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: typings.materialSelect.foundationMod.MDCSelectFoundation, args: js.Any*) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSelect extends js.Object {
+  object MDCSelect {
     
+    @JSImport("@material/select", "MDCSelect.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialSelect.componentMod.MDCSelect = js.native
   }
   
+  @JSImport("@material/select", "MDCSelectFoundation")
   @js.native
   /**
     * @param adapter
@@ -43,76 +39,57 @@ object mod extends js.Object {
     def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCSelectFoundatio) = this()
     def this(adapter: PartialMDCSelectAdapter, foundationMap: PartialMDCSelectFoundatio) = this()
   }
-  /* static members */
-  @js.native
-  object MDCSelectFoundation extends js.Object {
-    
-    def cssClasses: ACTIVATED = js.native
-    
-    /**
-      * See {@link MDCSelectAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectAdapter = js.native
-    
-    def numbers: LABELSCALE = js.native
-    
-    def strings: ARIACONTROLS = js.native
-  }
   
+  @JSImport("@material/select", "MDCSelectHelperText")
   @js.native
-  class MDCSelectHelperText ()
-    extends typings.materialSelect.indexMod.MDCSelectHelperText
+  class MDCSelectHelperText protected ()
+    extends typings.materialSelect.indexMod.MDCSelectHelperText {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialSelect.helperTextFoundationMod.MDCSelectHelperTextFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSelectHelperText extends js.Object {
+  object MDCSelectHelperText {
     
+    @JSImport("@material/select", "MDCSelectHelperText.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialSelect.helperTextComponentMod.MDCSelectHelperText = js.native
   }
   
+  @JSImport("@material/select", "MDCSelectHelperTextFoundation")
   @js.native
   class MDCSelectHelperTextFoundation ()
     extends typings.materialSelect.indexMod.MDCSelectHelperTextFoundation {
     def this(adapter: PartialMDCSelectHelperTex) = this()
   }
-  /* static members */
-  @js.native
-  object MDCSelectHelperTextFoundation extends js.Object {
-    
-    def cssClasses: HELPERTEXTVALIDATIONMSG = js.native
-    
-    /**
-      * See {@link MDCSelectHelperTextAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectHelperTextAdapter = js.native
-    
-    def strings: ARIAHIDDEN = js.native
-  }
   
+  @JSImport("@material/select", "MDCSelectIcon")
   @js.native
-  class MDCSelectIcon ()
-    extends typings.materialSelect.iconIndexMod.MDCSelectIcon
+  class MDCSelectIcon protected ()
+    extends typings.materialSelect.iconIndexMod.MDCSelectIcon {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSelectIcon extends js.Object {
+  object MDCSelectIcon {
     
+    @JSImport("@material/select", "MDCSelectIcon.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
   }
   
+  @JSImport("@material/select", "MDCSelectIconFoundation")
   @js.native
   class MDCSelectIconFoundation ()
     extends typings.materialSelect.iconIndexMod.MDCSelectIconFoundation {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCSelectIconFoundation extends js.Object {
-    
-    /**
-      * See {@link MDCSelectIconAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectIconAdapter = js.native
-    
-    def strings: ICONEVENT = js.native
   }
   
   /**
@@ -137,34 +114,84 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var ACTIVATED: String = js.native
+    @JSImport("@material/select", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DISABLED: String = js.native
+    @JSImport("@material/select", "cssClasses.ACTIVATED")
+    @js.native
+    def ACTIVATED: String = js.native
+    @scala.inline
+    def ACTIVATED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVATED")(x.asInstanceOf[js.Any])
     
-    var FOCUSED: String = js.native
+    @JSImport("@material/select", "cssClasses.DISABLED")
+    @js.native
+    def DISABLED: String = js.native
+    @scala.inline
+    def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
     
-    var INVALID: String = js.native
+    @JSImport("@material/select", "cssClasses.FOCUSED")
+    @js.native
+    def FOCUSED: String = js.native
+    @scala.inline
+    def FOCUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSED")(x.asInstanceOf[js.Any])
     
-    var MENU_INVALID: String = js.native
+    @JSImport("@material/select", "cssClasses.INVALID")
+    @js.native
+    def INVALID: String = js.native
+    @scala.inline
+    def INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID")(x.asInstanceOf[js.Any])
     
-    var OUTLINED: String = js.native
+    @JSImport("@material/select", "cssClasses.MENU_INVALID")
+    @js.native
+    def MENU_INVALID: String = js.native
+    @scala.inline
+    def MENU_INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_INVALID")(x.asInstanceOf[js.Any])
     
-    var REQUIRED: String = js.native
+    @JSImport("@material/select", "cssClasses.OUTLINED")
+    @js.native
+    def OUTLINED: String = js.native
+    @scala.inline
+    def OUTLINED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINED")(x.asInstanceOf[js.Any])
     
-    var ROOT: String = js.native
+    @JSImport("@material/select", "cssClasses.REQUIRED")
+    @js.native
+    def REQUIRED: String = js.native
+    @scala.inline
+    def REQUIRED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUIRED")(x.asInstanceOf[js.Any])
     
-    var WITH_LEADING_ICON: String = js.native
+    @JSImport("@material/select", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    @scala.inline
+    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select", "cssClasses.WITH_LEADING_ICON")
+    @js.native
+    def WITH_LEADING_ICON: String = js.native
+    @scala.inline
+    def WITH_LEADING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_LEADING_ICON")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object helperTextCssClasses extends js.Object {
+  object helperTextCssClasses {
     
-    var HELPER_TEXT_VALIDATION_MSG: String = js.native
+    @JSImport("@material/select", "helperTextCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
+    @JSImport("@material/select", "helperTextCssClasses.HELPER_TEXT_VALIDATION_MSG")
+    @js.native
+    def HELPER_TEXT_VALIDATION_MSG: String = js.native
+    @scala.inline
+    def HELPER_TEXT_VALIDATION_MSG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select", "helperTextCssClasses.HELPER_TEXT_VALIDATION_MSG_PERSISTENT")
+    @js.native
+    def HELPER_TEXT_VALIDATION_MSG_PERSISTENT: String = js.native
+    @scala.inline
+    def HELPER_TEXT_VALIDATION_MSG_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG_PERSISTENT")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -189,12 +216,23 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object helperTextStrings extends js.Object {
+  object helperTextStrings {
     
-    var ARIA_HIDDEN: String = js.native
+    @JSImport("@material/select", "helperTextStrings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ROLE: String = js.native
+    @JSImport("@material/select", "helperTextStrings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    @scala.inline
+    def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select", "helperTextStrings.ROLE")
+    @js.native
+    def ROLE: String = js.native
+    @scala.inline
+    def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -219,49 +257,126 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object iconStrings extends js.Object {
+  object iconStrings {
     
-    var ICON_EVENT: String = js.native
+    @JSImport("@material/select", "iconStrings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ICON_ROLE: String = js.native
+    @JSImport("@material/select", "iconStrings.ICON_EVENT")
+    @js.native
+    def ICON_EVENT: String = js.native
+    @scala.inline
+    def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select", "iconStrings.ICON_ROLE")
+    @js.native
+    def ICON_ROLE: String = js.native
+    @scala.inline
+    def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object numbers extends js.Object {
+  object numbers {
     
-    var LABEL_SCALE: Double = js.native
+    @JSImport("@material/select", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var UNSET_INDEX: Double = js.native
+    @JSImport("@material/select", "numbers.LABEL_SCALE")
+    @js.native
+    def LABEL_SCALE: Double = js.native
+    @scala.inline
+    def LABEL_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SCALE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select", "numbers.UNSET_INDEX")
+    @js.native
+    def UNSET_INDEX: Double = js.native
+    @scala.inline
+    def UNSET_INDEX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSET_INDEX")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ARIA_CONTROLS: String = js.native
+    @JSImport("@material/select", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ARIA_DESCRIBEDBY: String = js.native
+    @JSImport("@material/select", "strings.ARIA_CONTROLS")
+    @js.native
+    def ARIA_CONTROLS: String = js.native
+    @scala.inline
+    def ARIA_CONTROLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CONTROLS")(x.asInstanceOf[js.Any])
     
-    var ARIA_SELECTED_ATTR: String = js.native
+    @JSImport("@material/select", "strings.ARIA_DESCRIBEDBY")
+    @js.native
+    def ARIA_DESCRIBEDBY: String = js.native
+    @scala.inline
+    def ARIA_DESCRIBEDBY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DESCRIBEDBY")(x.asInstanceOf[js.Any])
     
-    var CHANGE_EVENT: String = js.native
+    @JSImport("@material/select", "strings.ARIA_SELECTED_ATTR")
+    @js.native
+    def ARIA_SELECTED_ATTR: String = js.native
+    @scala.inline
+    def ARIA_SELECTED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_SELECTED_ATTR")(x.asInstanceOf[js.Any])
     
-    var HIDDEN_INPUT_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.CHANGE_EVENT")
+    @js.native
+    def CHANGE_EVENT: String = js.native
+    @scala.inline
+    def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
     
-    var LABEL_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.HIDDEN_INPUT_SELECTOR")
+    @js.native
+    def HIDDEN_INPUT_SELECTOR: String = js.native
+    @scala.inline
+    def HIDDEN_INPUT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HIDDEN_INPUT_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var LEADING_ICON_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.LABEL_SELECTOR")
+    @js.native
+    def LABEL_SELECTOR: String = js.native
+    @scala.inline
+    def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var LINE_RIPPLE_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.LEADING_ICON_SELECTOR")
+    @js.native
+    def LEADING_ICON_SELECTOR: String = js.native
+    @scala.inline
+    def LEADING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEADING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var MENU_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.LINE_RIPPLE_SELECTOR")
+    @js.native
+    def LINE_RIPPLE_SELECTOR: String = js.native
+    @scala.inline
+    def LINE_RIPPLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var OUTLINE_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.MENU_SELECTOR")
+    @js.native
+    def MENU_SELECTOR: String = js.native
+    @scala.inline
+    def MENU_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MENU_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var SELECTED_TEXT_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.OUTLINE_SELECTOR")
+    @js.native
+    def OUTLINE_SELECTOR: String = js.native
+    @scala.inline
+    def OUTLINE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var SELECT_ANCHOR_SELECTOR: String = js.native
+    @JSImport("@material/select", "strings.SELECTED_TEXT_SELECTOR")
+    @js.native
+    def SELECTED_TEXT_SELECTOR: String = js.native
+    @scala.inline
+    def SELECTED_TEXT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_TEXT_SELECTOR")(x.asInstanceOf[js.Any])
     
-    var VALUE_ATTR: String = js.native
+    @JSImport("@material/select", "strings.SELECT_ANCHOR_SELECTOR")
+    @js.native
+    def SELECT_ANCHOR_SELECTOR: String = js.native
+    @scala.inline
+    def SELECT_ANCHOR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECT_ANCHOR_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select", "strings.VALUE_ATTR")
+    @js.native
+    def VALUE_ATTR: String = js.native
+    @scala.inline
+    def VALUE_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE_ATTR")(x.asInstanceOf[js.Any])
   }
 }

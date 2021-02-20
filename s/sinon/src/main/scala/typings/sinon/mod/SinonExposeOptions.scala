@@ -1,11 +1,12 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonExposeOptions extends js.Object {
+trait SinonExposeOptions extends StObject {
   
   var includeFail: Boolean = js.native
   
@@ -20,24 +21,12 @@ object SinonExposeOptions {
   }
   
   @scala.inline
-  implicit class SinonExposeOptionsOps[Self <: SinonExposeOptions] (val x: Self) extends AnyVal {
+  implicit class SinonExposeOptionsMutableBuilder[Self <: SinonExposeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeFail(value: Boolean): Self = StObject.set(x, "includeFail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeFail(value: Boolean): Self = this.set("includeFail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

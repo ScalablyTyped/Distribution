@@ -12,6 +12,7 @@ import typings.std.Float32Array
 import typings.std.HTMLImageElement
 import typings.std.Int32Array
 import typings.std.WebGLBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

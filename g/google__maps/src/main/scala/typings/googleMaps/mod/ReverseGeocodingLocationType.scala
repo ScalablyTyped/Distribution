@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.GEOMETRIC_CENTER
   - typings.googleMaps.googleMapsStrings.APPROXIMATE
 */
-trait ReverseGeocodingLocationType extends js.Object
+trait ReverseGeocodingLocationType extends StObject
 object ReverseGeocodingLocationType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait BorderTopProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The border-top CSS property is a shorthand that sets the values of border-top-width, border-top-style,
@@ -24,30 +25,18 @@ object BorderTopProps {
   }
   
   @scala.inline
-  implicit class BorderTopPropsOps[Self <: BorderTopProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderTopProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderTopPropsMutableBuilder[Self <: BorderTopProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderTopProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderTopNull: Self = StObject.set(x, "borderTop", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
     @scala.inline
-    def setBorderTopVarargs(value: (TVal | Null)*): Self = this.set("borderTop", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderTop(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
-    
-    @scala.inline
-    def setBorderTopNull: Self = this.set("borderTop", null)
+    def setBorderTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTop", js.Array(value :_*))
   }
 }

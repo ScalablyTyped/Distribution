@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue extends js.Object {
+trait GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue extends StObject {
   
   /** Always present. Original text value extracted from user utterance. */
   var originalValue: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValu
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValueOps[Self <: GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValueMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOriginalValue(value: String): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedValue(value: js.Any): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalValue(value: String): Self = this.set("originalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalValue: Self = this.set("originalValue", js.undefined)
-    
-    @scala.inline
-    def setResolvedValue(value: js.Any): Self = this.set("resolvedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvedValue: Self = this.set("resolvedValue", js.undefined)
+    def setResolvedValueUndefined: Self = StObject.set(x, "resolvedValue", js.undefined)
   }
 }

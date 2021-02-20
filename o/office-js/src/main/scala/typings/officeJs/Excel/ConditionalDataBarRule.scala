@@ -8,6 +8,7 @@ import typings.officeJs.officeJsStrings.LowestValue
 import typings.officeJs.officeJsStrings.Number
 import typings.officeJs.officeJsStrings.Percent
 import typings.officeJs.officeJsStrings.Percentile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalDataBarRule extends js.Object {
+trait ConditionalDataBarRule extends StObject {
   
   /**
     *
@@ -49,29 +50,17 @@ object ConditionalDataBarRule {
   }
   
   @scala.inline
-  implicit class ConditionalDataBarRuleOps[Self <: ConditionalDataBarRule] (val x: Self) extends AnyVal {
+  implicit class ConditionalDataBarRuleMutableBuilder[Self <: ConditionalDataBarRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
     def setType(
       value: ConditionalFormatRuleType | Invalid | Automatic | LowestValue | HighestValue | Number | Percent | Formula | Percentile
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

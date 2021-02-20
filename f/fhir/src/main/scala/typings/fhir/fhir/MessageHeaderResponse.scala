@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object MessageHeaderResponse {
   }
   
   @scala.inline
-  implicit class MessageHeaderResponseOps[Self <: MessageHeaderResponse] (val x: Self) extends AnyVal {
+  implicit class MessageHeaderResponseMutableBuilder[Self <: MessageHeaderResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: Reference): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setIdentifier(value: id): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: id): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def set_identifier(value: Element): Self = StObject.set(x, "_identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_identifier(value: Element): Self = this.set("_identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_identifier: Self = this.set("_identifier", js.undefined)
-    
-    @scala.inline
-    def setDetails(value: Reference): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def set_identifierUndefined: Self = StObject.set(x, "_identifier", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetAttributes extends js.Object {
+trait AssetAttributes extends StObject {
   
   /**
     * The ID of the agent that is installed on the EC2 instance where the finding is generated.
@@ -56,72 +57,60 @@ object AssetAttributes {
   }
   
   @scala.inline
-  implicit class AssetAttributesOps[Self <: AssetAttributes] (val x: Self) extends AnyVal {
+  implicit class AssetAttributesMutableBuilder[Self <: AssetAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaVersion(value: NumericVersion): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    def setAmiIdUndefined: Self = StObject.set(x, "amiId", js.undefined)
     
     @scala.inline
-    def setAgentId(value: AgentId): Self = this.set("agentId", value.asInstanceOf[js.Any])
+    def setAutoScalingGroup(value: AutoScalingGroup): Self = StObject.set(x, "autoScalingGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgentId: Self = this.set("agentId", js.undefined)
+    def setAutoScalingGroupUndefined: Self = StObject.set(x, "autoScalingGroup", js.undefined)
     
     @scala.inline
-    def setAmiId(value: AmiId): Self = this.set("amiId", value.asInstanceOf[js.Any])
+    def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAmiId: Self = this.set("amiId", js.undefined)
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroup(value: AutoScalingGroup): Self = this.set("autoScalingGroup", value.asInstanceOf[js.Any])
+    def setIpv4Addresses(value: Ipv4AddressList): Self = StObject.set(x, "ipv4Addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoScalingGroup: Self = this.set("autoScalingGroup", js.undefined)
+    def setIpv4AddressesUndefined: Self = StObject.set(x, "ipv4Addresses", js.undefined)
     
     @scala.inline
-    def setHostname(value: Hostname): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setIpv4AddressesVarargs(value: Ipv4Address*): Self = StObject.set(x, "ipv4Addresses", js.Array(value :_*))
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setNetworkInterfaces(value: NetworkInterfaces): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv4AddressesVarargs(value: Ipv4Address*): Self = this.set("ipv4Addresses", js.Array(value :_*))
+    def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
     @scala.inline
-    def setIpv4Addresses(value: Ipv4AddressList): Self = this.set("ipv4Addresses", value.asInstanceOf[js.Any])
+    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
     
     @scala.inline
-    def deleteIpv4Addresses: Self = this.set("ipv4Addresses", js.undefined)
+    def setSchemaVersion(value: NumericVersion): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaces(value: NetworkInterfaces): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

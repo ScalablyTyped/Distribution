@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDataflow.anon.QuotaUserSnapshotId
 import typings.maximMazurokGapiClientDataflow.anon.SnapshotId
 import typings.maximMazurokGapiClientDataflow.anon.UploadTypeUploadprotocol
 import typings.maximMazurokGapiClientDataflow.anon.UploadprotocolXgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotsResource extends js.Object {
+trait SnapshotsResource extends StObject {
   
   /** Deletes a snapshot. */
   def delete(): Request[js.Object] = js.native

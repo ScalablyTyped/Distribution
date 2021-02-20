@@ -3,6 +3,24 @@
 
 Typings are for version 3.5
 
+## Library description:
+Generates symbol-based SVG spritemap from all .svg files in a directory
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | svg-spritemap-webpack-plugin |
+| Keywords           | svg, sprite, sprites, spritemap, symbols, icons, sass, scss, less, css, variables, webpack, plugin |
+| # releases         | 32 |
+| # dependents       | 14 |
+| # downloads        | 608393 |
+| # stars            | 1 |
+
+## Links
+- [Homepage](https://github.com/cascornelissen/svg-spritemap-webpack-plugin)
+- [Bugs](https://github.com/cascornelissen/svg-spritemap-webpack-plugin/issues)
+- [Repository](https://github.com/cascornelissen/svg-spritemap-webpack-plugin)
+- [Npm](https://www.npmjs.com/package/svg-spritemap-webpack-plugin)
+    
 
 
 ## Note

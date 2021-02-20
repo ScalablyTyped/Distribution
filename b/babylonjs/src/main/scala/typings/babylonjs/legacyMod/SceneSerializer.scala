@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SceneSerializer ()
   extends typings.babylonjs.indexMod.SceneSerializer
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "SceneSerializer")
-@js.native
-object SceneSerializer extends js.Object {
+object SceneSerializer {
   
   /**
     * Clear cache used by a previous serialization
     */
+  @JSImport("babylonjs/Legacy/legacy", "SceneSerializer.ClearCache")
+  @js.native
   def ClearCache(): Unit = js.native
   
   /**
@@ -23,6 +24,8 @@ object SceneSerializer extends js.Object {
     * @param scene defines the scene to serialize
     * @returns a JSON compatible object
     */
+  @JSImport("babylonjs/Legacy/legacy", "SceneSerializer.Serialize")
+  @js.native
   def Serialize(scene: typings.babylonjs.sceneMod.Scene): js.Any = js.native
   
   /**
@@ -32,8 +35,16 @@ object SceneSerializer extends js.Object {
     * @param withChildren defines if children must be serialized as well
     * @returns a JSON compatible object
     */
+  @JSImport("babylonjs/Legacy/legacy", "SceneSerializer.SerializeMesh")
+  @js.native
   def SerializeMesh(toSerialize: js.Any): js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "SceneSerializer.SerializeMesh")
+  @js.native
   def SerializeMesh(toSerialize: js.Any, withParents: js.UndefOr[scala.Nothing], withChildren: Boolean): js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "SceneSerializer.SerializeMesh")
+  @js.native
   def SerializeMesh(toSerialize: js.Any, withParents: Boolean): js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "SceneSerializer.SerializeMesh")
+  @js.native
   def SerializeMesh(toSerialize: js.Any, withParents: Boolean, withChildren: Boolean): js.Any = js.native
 }

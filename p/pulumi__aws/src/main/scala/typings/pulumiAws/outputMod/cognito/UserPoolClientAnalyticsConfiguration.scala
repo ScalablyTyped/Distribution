@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cognito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolClientAnalyticsConfiguration extends js.Object {
+trait UserPoolClientAnalyticsConfiguration extends StObject {
   
   /**
     * The application ID for an Amazon Pinpoint application.
@@ -36,33 +37,21 @@ object UserPoolClientAnalyticsConfiguration {
   }
   
   @scala.inline
-  implicit class UserPoolClientAnalyticsConfigurationOps[Self <: UserPoolClientAnalyticsConfiguration] (val x: Self) extends AnyVal {
+  implicit class UserPoolClientAnalyticsConfigurationMutableBuilder[Self <: UserPoolClientAnalyticsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    def setUserDataShared(value: Boolean): Self = StObject.set(x, "userDataShared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserDataShared(value: Boolean): Self = this.set("userDataShared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDataShared: Self = this.set("userDataShared", js.undefined)
+    def setUserDataSharedUndefined: Self = StObject.set(x, "userDataShared", js.undefined)
   }
 }

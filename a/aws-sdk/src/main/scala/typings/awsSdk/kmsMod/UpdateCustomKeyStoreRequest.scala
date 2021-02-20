@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCustomKeyStoreRequest extends js.Object {
+trait UpdateCustomKeyStoreRequest extends StObject {
   
   /**
     * Associates the custom key store with a related AWS CloudHSM cluster.  Enter the cluster ID of the cluster that you used to create the custom key store or a cluster that shares a backup history and has the same cluster certificate as the original cluster. You cannot use this parameter to associate a custom key store with an unrelated cluster. In addition, the replacement cluster must fulfill the requirements for a cluster associated with a custom key store. To view the cluster certificate of a cluster, use the DescribeClusters operation.
@@ -36,39 +37,27 @@ object UpdateCustomKeyStoreRequest {
   }
   
   @scala.inline
-  implicit class UpdateCustomKeyStoreRequestOps[Self <: UpdateCustomKeyStoreRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateCustomKeyStoreRequestMutableBuilder[Self <: UpdateCustomKeyStoreRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    def setKeyStorePassword(value: KeyStorePasswordType): Self = StObject.set(x, "KeyStorePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = this.set("CloudHsmClusterId", value.asInstanceOf[js.Any])
+    def setKeyStorePasswordUndefined: Self = StObject.set(x, "KeyStorePassword", js.undefined)
     
     @scala.inline
-    def deleteCloudHsmClusterId: Self = this.set("CloudHsmClusterId", js.undefined)
+    def setNewCustomKeyStoreName(value: CustomKeyStoreNameType): Self = StObject.set(x, "NewCustomKeyStoreName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyStorePassword(value: KeyStorePasswordType): Self = this.set("KeyStorePassword", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyStorePassword: Self = this.set("KeyStorePassword", js.undefined)
-    
-    @scala.inline
-    def setNewCustomKeyStoreName(value: CustomKeyStoreNameType): Self = this.set("NewCustomKeyStoreName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewCustomKeyStoreName: Self = this.set("NewCustomKeyStoreName", js.undefined)
+    def setNewCustomKeyStoreNameUndefined: Self = StObject.set(x, "NewCustomKeyStoreName", js.undefined)
   }
 }

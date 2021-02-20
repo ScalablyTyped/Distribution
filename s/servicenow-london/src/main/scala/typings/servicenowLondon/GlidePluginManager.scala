@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlidePluginManager extends js.Object {
+trait GlidePluginManager extends StObject {
   
   /**
     * Determines if the specified plugin has been activated.
@@ -43,21 +44,9 @@ object GlidePluginManager {
   }
   
   @scala.inline
-  implicit class GlidePluginManagerOps[Self <: GlidePluginManager] (val x: Self) extends AnyVal {
+  implicit class GlidePluginManagerMutableBuilder[Self <: GlidePluginManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsActive(value: String => Boolean): Self = this.set("isActive", js.Any.fromFunction1(value))
+    def setIsActive(value: String => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction1(value))
   }
 }

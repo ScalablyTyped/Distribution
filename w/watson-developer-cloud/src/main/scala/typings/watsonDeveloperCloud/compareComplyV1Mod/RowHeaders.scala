@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Row-level cells, each applicable as a header to other cells in the same row as itself, of the current table. */
 @js.native
-trait RowHeaders extends js.Object {
+trait RowHeaders extends StObject {
   
   /** The unique ID of the cell in the current table. */
   var cell_id: js.UndefOr[String] = js.native
@@ -41,66 +42,54 @@ object RowHeaders {
   }
   
   @scala.inline
-  implicit class RowHeadersOps[Self <: RowHeaders] (val x: Self) extends AnyVal {
+  implicit class RowHeadersMutableBuilder[Self <: RowHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell_id(value: String): Self = StObject.set(x, "cell_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCell_idUndefined: Self = StObject.set(x, "cell_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn_index_begin(value: Double): Self = StObject.set(x, "column_index_begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell_id(value: String): Self = this.set("cell_id", value.asInstanceOf[js.Any])
+    def setColumn_index_beginUndefined: Self = StObject.set(x, "column_index_begin", js.undefined)
     
     @scala.inline
-    def deleteCell_id: Self = this.set("cell_id", js.undefined)
+    def setColumn_index_end(value: Double): Self = StObject.set(x, "column_index_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn_index_begin(value: Double): Self = this.set("column_index_begin", value.asInstanceOf[js.Any])
+    def setColumn_index_endUndefined: Self = StObject.set(x, "column_index_end", js.undefined)
     
     @scala.inline
-    def deleteColumn_index_begin: Self = this.set("column_index_begin", js.undefined)
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn_index_end(value: Double): Self = this.set("column_index_end", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteColumn_index_end: Self = this.set("column_index_end", js.undefined)
+    def setRow_index_begin(value: Double): Self = StObject.set(x, "row_index_begin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setRow_index_beginUndefined: Self = StObject.set(x, "row_index_begin", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setRow_index_end(value: Double): Self = StObject.set(x, "row_index_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow_index_begin(value: Double): Self = this.set("row_index_begin", value.asInstanceOf[js.Any])
+    def setRow_index_endUndefined: Self = StObject.set(x, "row_index_end", js.undefined)
     
     @scala.inline
-    def deleteRow_index_begin: Self = this.set("row_index_begin", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRow_index_end(value: Double): Self = this.set("row_index_end", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteRow_index_end: Self = this.set("row_index_end", js.undefined)
+    def setText_normalized(value: String): Self = StObject.set(x, "text_normalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setText_normalized(value: String): Self = this.set("text_normalized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText_normalized: Self = this.set("text_normalized", js.undefined)
+    def setText_normalizedUndefined: Self = StObject.set(x, "text_normalized", js.undefined)
   }
 }

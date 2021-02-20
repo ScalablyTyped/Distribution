@@ -1,42 +1,19 @@
 package typings.tensorflowTfjsData
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Error
 import typings.std.IteratorResult
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
 import typings.tensorflowTfjsData.deepMapMod.DeepMapResult
 import typings.tensorflowTfjsData.ringBufferMod.RingBuffer
 import typings.tensorflowTfjsData.typesMod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", JSImport.Namespace)
-@js.native
-object lazyIteratorMod extends js.Object {
+object lazyIteratorMod {
   
-  def iteratorFromConcatenated[T](baseIterators: LazyIterator[LazyIterator[T]]): LazyIterator[T] = js.native
-  def iteratorFromConcatenated[T](
-    baseIterators: LazyIterator[LazyIterator[T]],
-    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
-  ): LazyIterator[T] = js.native
-  
-  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]], count: Double): LazyIterator[T] = js.native
-  def iteratorFromConcatenatedFunction[T](
-    iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]],
-    count: Double,
-    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
-  ): LazyIterator[T] = js.native
-  
-  def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): LazyIterator[T] = js.native
-  
-  def iteratorFromIncrementing(start: Double): LazyIterator[Double] = js.native
-  
-  def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = js.native
-  
-  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = js.native
-  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer, mismatchMode: ZipMismatchMode): LazyIterator[O] = js.native
-  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "ChainedIterator")
   @js.native
   class ChainedIterator[T] protected () extends LazyIterator[T] {
     def this(iterators: LazyIterator[LazyIterator[T]]) = this()
@@ -53,8 +30,9 @@ object lazyIteratorMod extends js.Object {
     var readFromChain: js.Any = js.native
   }
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "LazyIterator")
   @js.native
-  abstract class LazyIterator[T] () extends js.Object {
+  abstract class LazyIterator[T] () extends StObject {
     
     /**
       * Groups elements into batches, represented in column-major form.
@@ -314,6 +292,7 @@ object lazyIteratorMod extends js.Object {
     def toArrayForTest(): js.Promise[js.Array[T]] = js.native
   }
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "OneToManyIterator")
   @js.native
   abstract class OneToManyIterator[T] () extends LazyIterator[T] {
     
@@ -338,6 +317,7 @@ object lazyIteratorMod extends js.Object {
     def serialNext(): js.Promise[IteratorResult[T, _]] = js.native
   }
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "PrefetchIterator")
   @js.native
   class PrefetchIterator[T] protected () extends LazyIterator[T] {
     def this(upstream: LazyIterator[T], bufferSize: Double) = this()
@@ -355,6 +335,7 @@ object lazyIteratorMod extends js.Object {
     var upstream: LazyIterator[T] = js.native
   }
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "ShuffleIterator")
   @js.native
   class ShuffleIterator[T] protected () extends PrefetchIterator[T] {
     def this(upstream: LazyIterator[T], windowSize: Double) = this()
@@ -376,28 +357,66 @@ object lazyIteratorMod extends js.Object {
   }
   
   @js.native
-  sealed trait ZipMismatchMode extends js.Object
+  sealed trait ZipMismatchMode extends StObject
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "ZipMismatchMode")
   @js.native
-  object ZipMismatchMode extends js.Object {
+  object ZipMismatchMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[ZipMismatchMode with Double] = js.native
     
     @js.native
     sealed trait FAIL extends ZipMismatchMode
-    /* 0 */ @js.native
-    object FAIL extends TopLevel[FAIL with Double]
+    /* 0 */ val FAIL: typings.tensorflowTfjsData.lazyIteratorMod.ZipMismatchMode.FAIL with Double = js.native
     
     @js.native
     sealed trait LONGEST extends ZipMismatchMode
-    /* 2 */ @js.native
-    object LONGEST extends TopLevel[LONGEST with Double]
+    /* 2 */ val LONGEST: typings.tensorflowTfjsData.lazyIteratorMod.ZipMismatchMode.LONGEST with Double = js.native
     
     @js.native
     sealed trait SHORTEST extends ZipMismatchMode
-    /* 1 */ @js.native
-    object SHORTEST extends TopLevel[SHORTEST with Double]
+    /* 1 */ val SHORTEST: typings.tensorflowTfjsData.lazyIteratorMod.ZipMismatchMode.SHORTEST with Double = js.native
   }
+  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromConcatenated")
+  @js.native
+  def iteratorFromConcatenated[T](baseIterators: LazyIterator[LazyIterator[T]]): LazyIterator[T] = js.native
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromConcatenated")
+  @js.native
+  def iteratorFromConcatenated[T](
+    baseIterators: LazyIterator[LazyIterator[T]],
+    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
+  ): LazyIterator[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromConcatenatedFunction")
+  @js.native
+  def iteratorFromConcatenatedFunction[T](iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]], count: Double): LazyIterator[T] = js.native
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromConcatenatedFunction")
+  @js.native
+  def iteratorFromConcatenatedFunction[T](
+    iteratorFunc: js.Function0[IteratorResult[LazyIterator[T], _]],
+    count: Double,
+    baseErrorHandler: js.Function1[/* e */ Error, Boolean]
+  ): LazyIterator[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromFunction")
+  @js.native
+  def iteratorFromFunction[T](func: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): LazyIterator[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromIncrementing")
+  @js.native
+  def iteratorFromIncrementing(start: Double): LazyIterator[Double] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromItems")
+  @js.native
+  def iteratorFromItems[T](items: js.Array[T]): LazyIterator[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromZipped")
+  @js.native
+  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer): LazyIterator[O] = js.native
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/lazy_iterator", "iteratorFromZipped")
+  @js.native
+  def iteratorFromZipped[O /* <: TensorContainer */](iterators: IteratorContainer, mismatchMode: ZipMismatchMode): LazyIterator[O] = js.native
   
   type IteratorContainer = Container[LazyIterator[TensorContainer]]
 }

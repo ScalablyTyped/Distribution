@@ -1,11 +1,12 @@
 package typings.node.inspectorMod.HeapProfiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StopTrackingHeapObjectsParameterType extends js.Object {
+trait StopTrackingHeapObjectsParameterType extends StObject {
   
   /**
     * If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken when the tracking is stopped.
@@ -21,24 +22,12 @@ object StopTrackingHeapObjectsParameterType {
   }
   
   @scala.inline
-  implicit class StopTrackingHeapObjectsParameterTypeOps[Self <: StopTrackingHeapObjectsParameterType] (val x: Self) extends AnyVal {
+  implicit class StopTrackingHeapObjectsParameterTypeMutableBuilder[Self <: StopTrackingHeapObjectsParameterType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReportProgress(value: Boolean): Self = this.set("reportProgress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportProgress: Self = this.set("reportProgress", js.undefined)
+    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
   }
 }

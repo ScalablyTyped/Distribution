@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridFSBucketWriteStreamOptions extends js.Object {
+trait GridFSBucketWriteStreamOptions extends StObject {
   
   /**
     * The chunk size to use, in bytes.
@@ -41,48 +42,36 @@ object GridFSBucketWriteStreamOptions {
   }
   
   @scala.inline
-  implicit class GridFSBucketWriteStreamOptionsOps[Self <: GridFSBucketWriteStreamOptions] (val x: Self) extends AnyVal {
+  implicit class GridFSBucketWriteStreamOptionsMutableBuilder[Self <: GridFSBucketWriteStreamOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String | scala.Double | js.Object): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkSizeBytes(value: scala.Double): Self = this.set("chunkSizeBytes", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteChunkSizeBytes: Self = this.set("chunkSizeBytes", js.undefined)
+    def setJ(value: scala.Double): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | scala.Double | js.Object): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setW(value: scala.Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJ(value: scala.Double): Self = this.set("j", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteJ: Self = this.set("j", js.undefined)
+    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: scala.Double): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
-    
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = this.set("wtimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWtimeout: Self = this.set("wtimeout", js.undefined)
+    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.ebml.ebmlStrings.Informational
 import typings.ebml.ebmlStrings.`1 - bzlibComma`
 import typings.ebml.ebmlStrings.`2 - lzo1x`
 import typings.ebml.ebmlStrings.informational_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,96 +52,84 @@ object EBMLTagSchemaBase {
   }
   
   @scala.inline
-  implicit class EBMLTagSchemaBaseOps[Self <: EBMLTagSchemaBase] (val x: Self) extends AnyVal {
+  implicit class EBMLTagSchemaBaseMutableBuilder[Self <: EBMLTagSchemaBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCppname(value: String): Self = StObject.set(x, "cppname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCppnameUndefined: Self = StObject.set(x, "cppname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDel(value: (js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`)): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDivx(value: Boolean): Self = StObject.set(x, "divx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TagType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDivxUndefined: Self = StObject.set(x, "divx", js.undefined)
     
     @scala.inline
-    def setCppname(value: String): Self = this.set("cppname", value.asInstanceOf[js.Any])
+    def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCppname: Self = this.set("cppname", js.undefined)
+    def setIUndefined: Self = StObject.set(x, "i", js.undefined)
     
     @scala.inline
-    def setDel(value: (js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`)): Self = this.set("del", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDel: Self = this.set("del", js.undefined)
+    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivx(value: Boolean): Self = this.set("divx", value.asInstanceOf[js.Any])
+    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
     @scala.inline
-    def deleteDivx: Self = this.set("divx", js.undefined)
+    def setMaxver(value: String): Self = StObject.set(x, "maxver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI(value: String): Self = this.set("i", value.asInstanceOf[js.Any])
+    def setMaxverUndefined: Self = StObject.set(x, "maxver", js.undefined)
     
     @scala.inline
-    def deleteI: Self = this.set("i", js.undefined)
+    def setMinver(value: Double): Self = StObject.set(x, "minver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    def setMinverUndefined: Self = StObject.set(x, "minver", js.undefined)
     
     @scala.inline
-    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxver(value: String): Self = this.set("maxver", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMaxver: Self = this.set("maxver", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinver(value: Double): Self = this.set("minver", value.asInstanceOf[js.Any])
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinver: Self = this.set("minver", js.undefined)
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setStrong(value: informational_ | Informational): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    def setType(value: TagType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setWebm(value: Boolean): Self = StObject.set(x, "webm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrong(value: informational_ | Informational): Self = this.set("strong", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrong: Self = this.set("strong", js.undefined)
-    
-    @scala.inline
-    def setWebm(value: Boolean): Self = this.set("webm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebm: Self = this.set("webm", js.undefined)
+    def setWebmUndefined: Self = StObject.set(x, "webm", js.undefined)
   }
 }

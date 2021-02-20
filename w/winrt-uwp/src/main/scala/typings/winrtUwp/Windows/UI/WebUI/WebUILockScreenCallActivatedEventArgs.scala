@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.ApplicationModel.Calls.LockScreenCallUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event information when communication to and from the lock screen is required. */
 @js.native
-trait WebUILockScreenCallActivatedEventArgs extends js.Object {
+trait WebUILockScreenCallActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
   var activatedOperation: ActivatedOperation = js.native
@@ -54,42 +55,30 @@ object WebUILockScreenCallActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class WebUILockScreenCallActivatedEventArgsOps[Self <: WebUILockScreenCallActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WebUILockScreenCallActivatedEventArgsMutableBuilder[Self <: WebUILockScreenCallActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallUI(value: LockScreenCallUI): Self = StObject.set(x, "callUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = this.set("activatedOperation", value.asInstanceOf[js.Any])
+    def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: String): Self = this.set("arguments", value.asInstanceOf[js.Any])
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallUI(value: LockScreenCallUI): Self = this.set("callUI", value.asInstanceOf[js.Any])
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentlyShownApplicationViewId(value: Double): Self = this.set("currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTileId(value: String): Self = this.set("tileId", value.asInstanceOf[js.Any])
+    def setTileId(value: String): Self = StObject.set(x, "tileId", value.asInstanceOf[js.Any])
   }
 }

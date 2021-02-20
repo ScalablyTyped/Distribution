@@ -1,8 +1,7 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.anon.BACKWARD
-import typings.carbonComponents.anon.SelectorNavKind
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +12,36 @@ class HeaderNav protected ()
   extends typings.carbonComponents.componentsMod.HeaderNav {
   def this(element: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("carbon-components", "HeaderNav")
-@js.native
-object HeaderNav extends js.Object {
+object HeaderNav {
   
-  var NAVIGATE: BACKWARD = js.native
+  @JSImport("carbon-components", "HeaderNav")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var components: WeakMap[js.Object, _] = js.native
+  /* static member */
+  object NAVIGATE {
+    
+    @JSImport("carbon-components", "HeaderNav.NAVIGATE")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("carbon-components", "HeaderNav.NAVIGATE.BACKWARD")
+    @js.native
+    def BACKWARD: Double = js.native
+    @scala.inline
+    def BACKWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKWARD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("carbon-components", "HeaderNav.NAVIGATE.FORWARD")
+    @js.native
+    def FORWARD: Double = js.native
+    @scala.inline
+    def FORWARD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD")(x.asInstanceOf[js.Any])
+  }
   
-  def options: SelectorNavKind = js.native
+  /* static member */
+  @JSImport("carbon-components", "HeaderNav.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

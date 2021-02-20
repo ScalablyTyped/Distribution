@@ -2,14 +2,15 @@ package typings.snabbdom
 
 import typings.snabbdom.moduleMod.Module
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("snabbdom/build/package/modules/props", JSImport.Namespace)
-@js.native
-object propsMod extends js.Object {
+object propsMod {
   
+  @JSImport("snabbdom/build/package/modules/props", "propsModule")
+  @js.native
   val propsModule: Module = js.native
   
   type Props = Record[String, js.Any]

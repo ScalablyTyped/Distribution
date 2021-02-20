@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.Networking.EndpointPair
 import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports network communication using a stream socket over TCP or Bluetooth RFCOMM in Windows Store apps. */
 @js.native
-trait StreamSocket extends js.Object {
+trait StreamSocket extends StObject {
   
   /**
     * Cancels pending reads and writes over a StreamSocket object.

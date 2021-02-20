@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLunaClientRequest extends js.Object {
+trait DescribeLunaClientRequest extends StObject {
   
   /**
     * The certificate fingerprint.
@@ -26,30 +27,18 @@ object DescribeLunaClientRequest {
   }
   
   @scala.inline
-  implicit class DescribeLunaClientRequestOps[Self <: DescribeLunaClientRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeLunaClientRequestMutableBuilder[Self <: DescribeLunaClientRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateFingerprint(value: CertificateFingerprint): Self = StObject.set(x, "CertificateFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateFingerprintUndefined: Self = StObject.set(x, "CertificateFingerprint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateFingerprint(value: CertificateFingerprint): Self = this.set("CertificateFingerprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateFingerprint: Self = this.set("CertificateFingerprint", js.undefined)
-    
-    @scala.inline
-    def setClientArn(value: ClientArn): Self = this.set("ClientArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientArn: Self = this.set("ClientArn", js.undefined)
+    def setClientArnUndefined: Self = StObject.set(x, "ClientArn", js.undefined)
   }
 }

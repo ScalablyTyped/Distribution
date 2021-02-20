@@ -1,6 +1,7 @@
 package typings.typescript.mod
 
 import typings.typescript.typescriptStrings.characterTyped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,24 +29,12 @@ object SignatureHelpCharacterTypedReason {
   }
   
   @scala.inline
-  implicit class SignatureHelpCharacterTypedReasonOps[Self <: SignatureHelpCharacterTypedReason] (val x: Self) extends AnyVal {
+  implicit class SignatureHelpCharacterTypedReasonMutableBuilder[Self <: SignatureHelpCharacterTypedReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: characterTyped): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKind(value: characterTyped): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerCharacter(value: SignatureHelpTriggerCharacter): Self = this.set("triggerCharacter", value.asInstanceOf[js.Any])
+    def setTriggerCharacter(value: SignatureHelpTriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
   }
 }

@@ -2,14 +2,14 @@ package typings.ow
 
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/number", JSImport.Namespace)
-@js.native
-object numberMod extends js.Object {
+object numberMod {
   
+  @JSImport("ow/dist/source/predicates/number", "NumberPredicate")
   @js.native
   /**
     @hidden

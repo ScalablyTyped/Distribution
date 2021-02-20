@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,60 +38,48 @@ object DeviceConfigurationDeviceOverview {
   }
   
   @scala.inline
-  implicit class DeviceConfigurationDeviceOverviewOps[Self <: DeviceConfigurationDeviceOverview] (val x: Self) extends AnyVal {
+  implicit class DeviceConfigurationDeviceOverviewMutableBuilder[Self <: DeviceConfigurationDeviceOverview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationVersion(value: Double): Self = StObject.set(x, "configurationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationVersionUndefined: Self = StObject.set(x, "configurationVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationVersion(value: Double): Self = this.set("configurationVersion", value.asInstanceOf[js.Any])
+    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
     @scala.inline
-    def deleteConfigurationVersion: Self = this.set("configurationVersion", js.undefined)
+    def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCount(value: Double): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    def setFailedCountUndefined: Self = StObject.set(x, "failedCount", js.undefined)
     
     @scala.inline
-    def deleteErrorCount: Self = this.set("errorCount", js.undefined)
+    def setLastUpdateDateTime(value: String): Self = StObject.set(x, "lastUpdateDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedCount(value: Double): Self = this.set("failedCount", value.asInstanceOf[js.Any])
+    def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "lastUpdateDateTime", js.undefined)
     
     @scala.inline
-    def deleteFailedCount: Self = this.set("failedCount", js.undefined)
+    def setNotApplicableCount(value: Double): Self = StObject.set(x, "notApplicableCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateDateTime(value: String): Self = this.set("lastUpdateDateTime", value.asInstanceOf[js.Any])
+    def setNotApplicableCountUndefined: Self = StObject.set(x, "notApplicableCount", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateDateTime: Self = this.set("lastUpdateDateTime", js.undefined)
+    def setPendingCount(value: Double): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotApplicableCount(value: Double): Self = this.set("notApplicableCount", value.asInstanceOf[js.Any])
+    def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
     
     @scala.inline
-    def deleteNotApplicableCount: Self = this.set("notApplicableCount", js.undefined)
+    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingCount(value: Double): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
-    
-    @scala.inline
-    def setSuccessCount(value: Double): Self = this.set("successCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
   }
 }

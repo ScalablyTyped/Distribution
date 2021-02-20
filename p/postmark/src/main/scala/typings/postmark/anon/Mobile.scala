@@ -1,11 +1,12 @@
 package typings.postmark.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mobile extends js.Object {
+trait Mobile extends StObject {
   
   var Date: String = js.native
   
@@ -24,30 +25,18 @@ object Mobile {
   }
   
   @scala.inline
-  implicit class MobileOps[Self <: Mobile] (val x: Self) extends AnyVal {
+  implicit class MobileMutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesktop(value: Double): Self = StObject.set(x, "Desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobile(value: Double): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("Date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDesktop(value: Double): Self = this.set("Desktop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMobile(value: Double): Self = this.set("Mobile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown(value: Double): Self = this.set("Unknown", value.asInstanceOf[js.Any])
+    def setUnknown(value: Double): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
   }
 }

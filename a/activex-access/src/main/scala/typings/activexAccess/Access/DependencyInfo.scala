@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DependencyInfo extends js.Object {
+trait DependencyInfo extends StObject {
   
   @JSName("Access.DependencyInfo_typekey")
   var AccessDotDependencyInfo_typekey: DependencyInfo = js.native

@@ -1,11 +1,12 @@
 package typings.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaylistTrack extends js.Object {
+trait PlaylistTrack extends StObject {
   
   var album: js.UndefOr[String] = js.native
   
@@ -64,171 +65,159 @@ object PlaylistTrack {
   }
   
   @scala.inline
-  implicit class PlaylistTrackOps[Self <: PlaylistTrack] (val x: Self) extends AnyVal {
+  implicit class PlaylistTrackMutableBuilder[Self <: PlaylistTrack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlbumArtRef(value: js.Array[ArtRef]): Self = StObject.set(x, "albumArtRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlbumArtRefUndefined: Self = StObject.set(x, "albumArtRef", js.undefined)
     
     @scala.inline
-    def setAlbum(value: String): Self = this.set("album", value.asInstanceOf[js.Any])
+    def setAlbumArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "albumArtRef", js.Array(value :_*))
     
     @scala.inline
-    def deleteAlbum: Self = this.set("album", js.undefined)
+    def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArtRefVarargs(value: ArtRef*): Self = this.set("albumArtRef", js.Array(value :_*))
+    def setAlbumArtistUndefined: Self = StObject.set(x, "albumArtist", js.undefined)
     
     @scala.inline
-    def setAlbumArtRef(value: js.Array[ArtRef]): Self = this.set("albumArtRef", value.asInstanceOf[js.Any])
+    def setAlbumAvailableForPurchase(value: Boolean): Self = StObject.set(x, "albumAvailableForPurchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlbumArtRef: Self = this.set("albumArtRef", js.undefined)
+    def setAlbumAvailableForPurchaseUndefined: Self = StObject.set(x, "albumAvailableForPurchase", js.undefined)
     
     @scala.inline
-    def setAlbumArtist(value: String): Self = this.set("albumArtist", value.asInstanceOf[js.Any])
+    def setAlbumId(value: String): Self = StObject.set(x, "albumId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlbumArtist: Self = this.set("albumArtist", js.undefined)
+    def setAlbumIdUndefined: Self = StObject.set(x, "albumId", js.undefined)
     
     @scala.inline
-    def setAlbumAvailableForPurchase(value: Boolean): Self = this.set("albumAvailableForPurchase", value.asInstanceOf[js.Any])
+    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
     @scala.inline
-    def deleteAlbumAvailableForPurchase: Self = this.set("albumAvailableForPurchase", js.undefined)
+    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumId(value: String): Self = this.set("albumId", value.asInstanceOf[js.Any])
+    def setArtistArtRef(value: js.Array[ArtRef]): Self = StObject.set(x, "artistArtRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlbumId: Self = this.set("albumId", js.undefined)
+    def setArtistArtRefUndefined: Self = StObject.set(x, "artistArtRef", js.undefined)
     
     @scala.inline
-    def setArtist(value: String): Self = this.set("artist", value.asInstanceOf[js.Any])
+    def setArtistArtRefVarargs(value: ArtRef*): Self = StObject.set(x, "artistArtRef", js.Array(value :_*))
     
     @scala.inline
-    def deleteArtist: Self = this.set("artist", js.undefined)
+    def setArtistId(value: js.Array[String]): Self = StObject.set(x, "artistId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtistArtRefVarargs(value: ArtRef*): Self = this.set("artistArtRef", js.Array(value :_*))
+    def setArtistIdUndefined: Self = StObject.set(x, "artistId", js.undefined)
     
     @scala.inline
-    def setArtistArtRef(value: js.Array[ArtRef]): Self = this.set("artistArtRef", value.asInstanceOf[js.Any])
+    def setArtistIdVarargs(value: String*): Self = StObject.set(x, "artistId", js.Array(value :_*))
     
     @scala.inline
-    def deleteArtistArtRef: Self = this.set("artistArtRef", js.undefined)
+    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
     @scala.inline
-    def setArtistIdVarargs(value: String*): Self = this.set("artistId", js.Array(value :_*))
+    def setComposer(value: String): Self = StObject.set(x, "composer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtistId(value: js.Array[String]): Self = this.set("artistId", value.asInstanceOf[js.Any])
+    def setComposerUndefined: Self = StObject.set(x, "composer", js.undefined)
     
     @scala.inline
-    def deleteArtistId: Self = this.set("artistId", js.undefined)
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposer(value: String): Self = this.set("composer", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def deleteComposer: Self = this.set("composer", js.undefined)
+    def setDiscNumber(value: Double): Self = StObject.set(x, "discNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDiscNumberUndefined: Self = StObject.set(x, "discNumber", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscNumber(value: Double): Self = this.set("discNumber", value.asInstanceOf[js.Any])
+    def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
     
     @scala.inline
-    def deleteDiscNumber: Self = this.set("discNumber", js.undefined)
+    def setEstimatedSize(value: String): Self = StObject.set(x, "estimatedSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMillis(value: String): Self = this.set("durationMillis", value.asInstanceOf[js.Any])
+    def setEstimatedSizeUndefined: Self = StObject.set(x, "estimatedSize", js.undefined)
     
     @scala.inline
-    def deleteDurationMillis: Self = this.set("durationMillis", js.undefined)
+    def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedSize(value: String): Self = this.set("estimatedSize", value.asInstanceOf[js.Any])
+    def setGenreUndefined: Self = StObject.set(x, "genre", js.undefined)
     
     @scala.inline
-    def deleteEstimatedSize: Self = this.set("estimatedSize", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenre(value: String): Self = this.set("genre", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteGenre: Self = this.set("genre", js.undefined)
+    def setNid(value: String): Self = StObject.set(x, "nid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNidUndefined: Self = StObject.set(x, "nid", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPlayCount(value: Double): Self = StObject.set(x, "playCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNid(value: String): Self = this.set("nid", value.asInstanceOf[js.Any])
+    def setPlayCountUndefined: Self = StObject.set(x, "playCount", js.undefined)
     
     @scala.inline
-    def deleteNid: Self = this.set("nid", js.undefined)
+    def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayCount(value: Double): Self = this.set("playCount", value.asInstanceOf[js.Any])
+    def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
     
     @scala.inline
-    def deletePlayCount: Self = this.set("playCount", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreId(value: String): Self = this.set("storeId", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStoreId: Self = this.set("storeId", js.undefined)
+    def setTrackAvailableForPurchase(value: Boolean): Self = StObject.set(x, "trackAvailableForPurchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTrackAvailableForPurchaseUndefined: Self = StObject.set(x, "trackAvailableForPurchase", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTrackAvailableForSubscription(value: Boolean): Self = StObject.set(x, "trackAvailableForSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackAvailableForPurchase(value: Boolean): Self = this.set("trackAvailableForPurchase", value.asInstanceOf[js.Any])
+    def setTrackAvailableForSubscriptionUndefined: Self = StObject.set(x, "trackAvailableForSubscription", js.undefined)
     
     @scala.inline
-    def deleteTrackAvailableForPurchase: Self = this.set("trackAvailableForPurchase", js.undefined)
+    def setTrackNumber(value: Double): Self = StObject.set(x, "trackNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackAvailableForSubscription(value: Boolean): Self = this.set("trackAvailableForSubscription", value.asInstanceOf[js.Any])
+    def setTrackNumberUndefined: Self = StObject.set(x, "trackNumber", js.undefined)
     
     @scala.inline
-    def deleteTrackAvailableForSubscription: Self = this.set("trackAvailableForSubscription", js.undefined)
+    def setTrackType(value: String): Self = StObject.set(x, "trackType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackNumber(value: Double): Self = this.set("trackNumber", value.asInstanceOf[js.Any])
+    def setTrackTypeUndefined: Self = StObject.set(x, "trackType", js.undefined)
     
     @scala.inline
-    def deleteTrackNumber: Self = this.set("trackNumber", js.undefined)
+    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackType(value: String): Self = this.set("trackType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackType: Self = this.set("trackType", js.undefined)
-    
-    @scala.inline
-    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

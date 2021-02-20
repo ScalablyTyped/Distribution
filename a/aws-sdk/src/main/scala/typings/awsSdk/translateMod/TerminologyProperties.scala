@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminologyProperties extends js.Object {
+trait TerminologyProperties extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the custom terminology. 
@@ -66,81 +67,69 @@ object TerminologyProperties {
   }
   
   @scala.inline
-  implicit class TerminologyPropertiesOps[Self <: TerminologyProperties] (val x: Self) extends AnyVal {
+  implicit class TerminologyPropertiesMutableBuilder[Self <: TerminologyProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: TerminologyArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: TerminologyArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "EncryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEncryptionKeyUndefined: Self = StObject.set(x, "EncryptionKey", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLastUpdatedAt(value: Timestamp): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionKey(value: EncryptionKey): Self = this.set("EncryptionKey", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteEncryptionKey: Self = this.set("EncryptionKey", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: Timestamp): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    def setSizeBytes(value: Integer): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeBytes(value: Integer): Self = this.set("SizeBytes", value.asInstanceOf[js.Any])
+    def setSourceLanguageCodeUndefined: Self = StObject.set(x, "SourceLanguageCode", js.undefined)
     
     @scala.inline
-    def deleteSizeBytes: Self = this.set("SizeBytes", js.undefined)
+    def setTargetLanguageCodes(value: LanguageCodeStringList): Self = StObject.set(x, "TargetLanguageCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    def setTargetLanguageCodesUndefined: Self = StObject.set(x, "TargetLanguageCodes", js.undefined)
     
     @scala.inline
-    def deleteSourceLanguageCode: Self = this.set("SourceLanguageCode", js.undefined)
+    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value :_*))
     
     @scala.inline
-    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = this.set("TargetLanguageCodes", js.Array(value :_*))
+    def setTermCount(value: Integer): Self = StObject.set(x, "TermCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLanguageCodes(value: LanguageCodeStringList): Self = this.set("TargetLanguageCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLanguageCodes: Self = this.set("TargetLanguageCodes", js.undefined)
-    
-    @scala.inline
-    def setTermCount(value: Integer): Self = this.set("TermCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermCount: Self = this.set("TermCount", js.undefined)
+    def setTermCountUndefined: Self = StObject.set(x, "TermCount", js.undefined)
   }
 }

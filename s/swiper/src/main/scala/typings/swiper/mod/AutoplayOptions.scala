@@ -1,11 +1,12 @@
 package typings.swiper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoplayOptions extends js.Object {
+trait AutoplayOptions extends StObject {
   
   /**
     * Delay between transitions (in ms). If this parameter is not specified, auto play will be disabled
@@ -62,48 +63,36 @@ object AutoplayOptions {
   }
   
   @scala.inline
-  implicit class AutoplayOptionsOps[Self <: AutoplayOptions] (val x: Self) extends AnyVal {
+  implicit class AutoplayOptionsMutableBuilder[Self <: AutoplayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableOnInteraction(value: Boolean): Self = StObject.set(x, "disableOnInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDisableOnInteractionUndefined: Self = StObject.set(x, "disableOnInteraction", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setReverseDirection(value: Boolean): Self = StObject.set(x, "reverseDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableOnInteraction(value: Boolean): Self = this.set("disableOnInteraction", value.asInstanceOf[js.Any])
+    def setReverseDirectionUndefined: Self = StObject.set(x, "reverseDirection", js.undefined)
     
     @scala.inline
-    def deleteDisableOnInteraction: Self = this.set("disableOnInteraction", js.undefined)
+    def setStopOnLastSlide(value: Boolean): Self = StObject.set(x, "stopOnLastSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseDirection(value: Boolean): Self = this.set("reverseDirection", value.asInstanceOf[js.Any])
+    def setStopOnLastSlideUndefined: Self = StObject.set(x, "stopOnLastSlide", js.undefined)
     
     @scala.inline
-    def deleteReverseDirection: Self = this.set("reverseDirection", js.undefined)
+    def setWaitForTransition(value: Boolean): Self = StObject.set(x, "waitForTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopOnLastSlide(value: Boolean): Self = this.set("stopOnLastSlide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopOnLastSlide: Self = this.set("stopOnLastSlide", js.undefined)
-    
-    @scala.inline
-    def setWaitForTransition(value: Boolean): Self = this.set("waitForTransition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForTransition: Self = this.set("waitForTransition", js.undefined)
+    def setWaitForTransitionUndefined: Self = StObject.set(x, "waitForTransition", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.GanttDependency
 import typings.kendoUi.kendo.data.GanttTask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object GanttAddEvent {
   }
   
   @scala.inline
-  implicit class GanttAddEventOps[Self <: GanttAddEvent] (val x: Self) extends AnyVal {
+  implicit class GanttAddEventMutableBuilder[Self <: GanttAddEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDependency(value: GanttDependency): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependency(value: GanttDependency): Self = this.set("dependency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDependency: Self = this.set("dependency", js.undefined)
-    
-    @scala.inline
-    def setTask(value: GanttTask): Self = this.set("task", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTask: Self = this.set("task", js.undefined)
+    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,42 +26,30 @@ object WindowsInformationProtectionDesktopApp {
   }
   
   @scala.inline
-  implicit class WindowsInformationProtectionDesktopAppOps[Self <: WindowsInformationProtectionDesktopApp] (val x: Self) extends AnyVal {
+  implicit class WindowsInformationProtectionDesktopAppMutableBuilder[Self <: WindowsInformationProtectionDesktopApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryName(value: String): Self = StObject.set(x, "binaryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryNameUndefined: Self = StObject.set(x, "binaryName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinaryVersionHigh(value: NullableOption[String]): Self = StObject.set(x, "binaryVersionHigh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryName(value: String): Self = this.set("binaryName", value.asInstanceOf[js.Any])
+    def setBinaryVersionHighNull: Self = StObject.set(x, "binaryVersionHigh", null)
     
     @scala.inline
-    def deleteBinaryName: Self = this.set("binaryName", js.undefined)
+    def setBinaryVersionHighUndefined: Self = StObject.set(x, "binaryVersionHigh", js.undefined)
     
     @scala.inline
-    def setBinaryVersionHigh(value: NullableOption[String]): Self = this.set("binaryVersionHigh", value.asInstanceOf[js.Any])
+    def setBinaryVersionLow(value: NullableOption[String]): Self = StObject.set(x, "binaryVersionLow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinaryVersionHigh: Self = this.set("binaryVersionHigh", js.undefined)
+    def setBinaryVersionLowNull: Self = StObject.set(x, "binaryVersionLow", null)
     
     @scala.inline
-    def setBinaryVersionHighNull: Self = this.set("binaryVersionHigh", null)
-    
-    @scala.inline
-    def setBinaryVersionLow(value: NullableOption[String]): Self = this.set("binaryVersionLow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinaryVersionLow: Self = this.set("binaryVersionLow", js.undefined)
-    
-    @scala.inline
-    def setBinaryVersionLowNull: Self = this.set("binaryVersionLow", null)
+    def setBinaryVersionLowUndefined: Self = StObject.set(x, "binaryVersionLow", js.undefined)
   }
 }

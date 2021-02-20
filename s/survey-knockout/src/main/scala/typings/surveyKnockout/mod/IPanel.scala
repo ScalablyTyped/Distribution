@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,48 +59,36 @@ object IPanel {
   }
   
   @scala.inline
-  implicit class IPanelOps[Self <: IPanel] (val x: Self) extends AnyVal {
+  implicit class IPanelMutableBuilder[Self <: IPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddElement(value: (IElement, Double) => js.Any): Self = StObject.set(x, "addElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementWidthChanged(value: IElement => js.Any): Self = StObject.set(x, "elementWidthChanged", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElements(value: js.Array[IElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddElement(value: (IElement, Double) => js.Any): Self = this.set("addElement", js.Any.fromFunction2(value))
+    def setElementsVarargs(value: IElement*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setElementWidthChanged(value: IElement => js.Any): Self = this.set("elementWidthChanged", js.Any.fromFunction1(value))
+    def setGetChildrenLayoutType(value: () => String): Self = StObject.set(x, "getChildrenLayoutType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setElementsVarargs(value: IElement*): Self = this.set("elements", js.Array(value :_*))
+    def setGetQuestionStartIndex(value: () => String): Self = StObject.set(x, "getQuestionStartIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setElements(value: js.Array[IElement]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setGetQuestionTitleLocation(value: () => String): Self = StObject.set(x, "getQuestionTitleLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetChildrenLayoutType(value: () => String): Self = this.set("getChildrenLayoutType", js.Any.fromFunction0(value))
+    def setIndexOf(value: IElement => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetQuestionStartIndex(value: () => String): Self = this.set("getQuestionStartIndex", js.Any.fromFunction0(value))
+    def setParent(value: IPanel): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetQuestionTitleLocation(value: () => String): Self = this.set("getQuestionTitleLocation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIndexOf(value: IElement => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: IPanel): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveElement(value: IElement => Boolean): Self = this.set("removeElement", js.Any.fromFunction1(value))
+    def setRemoveElement(value: IElement => Boolean): Self = StObject.set(x, "removeElement", js.Any.fromFunction1(value))
   }
 }

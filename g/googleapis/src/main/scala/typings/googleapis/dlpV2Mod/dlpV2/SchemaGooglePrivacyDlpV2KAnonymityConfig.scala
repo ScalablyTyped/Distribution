@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * k-anonymity metric, used for analysis of reidentification risk.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2KAnonymityConfig extends js.Object {
+trait SchemaGooglePrivacyDlpV2KAnonymityConfig extends StObject {
   
   /**
     * Optional message indicating that multiple rows might be associated to a
@@ -40,33 +41,21 @@ object SchemaGooglePrivacyDlpV2KAnonymityConfig {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2KAnonymityConfigOps[Self <: SchemaGooglePrivacyDlpV2KAnonymityConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2KAnonymityConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2KAnonymityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityId(value: SchemaGooglePrivacyDlpV2EntityId): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuasiIds(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: SchemaGooglePrivacyDlpV2EntityId): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
     @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
-    
-    @scala.inline
-    def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = this.set("quasiIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuasiIds(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = this.set("quasiIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuasiIds: Self = this.set("quasiIds", js.undefined)
+    def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
   }
 }

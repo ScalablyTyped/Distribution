@@ -1,5 +1,6 @@
 package typings.riotjsDomBindings.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,33 +29,21 @@ object TagBindingData {
   }
   
   @scala.inline
-  implicit class TagBindingDataOps[Self <: TagBindingData] (val x: Self) extends AnyVal {
+  implicit class TagBindingDataMutableBuilder[Self <: TagBindingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[AttributeExpressionData]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: AttributeExpressionData*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetComponent(value: String => TemplateChunk[_, _]): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttributesVarargs(value: AttributeExpressionData*): Self = this.set("attributes", js.Array(value :_*))
+    def setSlots(value: js.Array[SlotBindingData]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[AttributeExpressionData]): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetComponent(value: String => TemplateChunk[_, _]): Self = this.set("getComponent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSlotsVarargs(value: SlotBindingData*): Self = this.set("slots", js.Array(value :_*))
-    
-    @scala.inline
-    def setSlots(value: js.Array[SlotBindingData]): Self = this.set("slots", value.asInstanceOf[js.Any])
+    def setSlotsVarargs(value: SlotBindingData*): Self = StObject.set(x, "slots", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchTransitGatewayRoutesResult extends js.Object {
+trait SearchTransitGatewayRoutesResult extends StObject {
   
   /**
     * Indicates whether there are additional routes available.
@@ -26,33 +27,21 @@ object SearchTransitGatewayRoutesResult {
   }
   
   @scala.inline
-  implicit class SearchTransitGatewayRoutesResultOps[Self <: SearchTransitGatewayRoutesResult] (val x: Self) extends AnyVal {
+  implicit class SearchTransitGatewayRoutesResultMutableBuilder[Self <: SearchTransitGatewayRoutesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalRoutesAvailable(value: Boolean): Self = StObject.set(x, "AdditionalRoutesAvailable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalRoutesAvailableUndefined: Self = StObject.set(x, "AdditionalRoutesAvailable", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoutes(value: TransitGatewayRouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalRoutesAvailable(value: Boolean): Self = this.set("AdditionalRoutesAvailable", value.asInstanceOf[js.Any])
+    def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
     @scala.inline
-    def deleteAdditionalRoutesAvailable: Self = this.set("AdditionalRoutesAvailable", js.undefined)
-    
-    @scala.inline
-    def setRoutesVarargs(value: TransitGatewayRoute*): Self = this.set("Routes", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoutes(value: TransitGatewayRouteList): Self = this.set("Routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutes: Self = this.set("Routes", js.undefined)
+    def setRoutesVarargs(value: TransitGatewayRoute*): Self = StObject.set(x, "Routes", js.Array(value :_*))
   }
 }

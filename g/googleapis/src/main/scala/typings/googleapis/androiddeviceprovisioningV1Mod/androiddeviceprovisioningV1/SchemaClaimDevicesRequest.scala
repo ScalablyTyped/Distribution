@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * customer&#39;s view of the portal.
   */
 @js.native
-trait SchemaClaimDevicesRequest extends js.Object {
+trait SchemaClaimDevicesRequest extends StObject {
   
   /**
     * Required. A list of device claims.
@@ -26,27 +27,15 @@ object SchemaClaimDevicesRequest {
   }
   
   @scala.inline
-  implicit class SchemaClaimDevicesRequestOps[Self <: SchemaClaimDevicesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaClaimDevicesRequestMutableBuilder[Self <: SchemaClaimDevicesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClaims(value: js.Array[SchemaPartnerClaim]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClaimsVarargs(value: SchemaPartnerClaim*): Self = this.set("claims", js.Array(value :_*))
-    
-    @scala.inline
-    def setClaims(value: js.Array[SchemaPartnerClaim]): Self = this.set("claims", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClaims: Self = this.set("claims", js.undefined)
+    def setClaimsVarargs(value: SchemaPartnerClaim*): Self = StObject.set(x, "claims", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   /** The result of creating an image. */
   var createImage: js.UndefOr[CreateImageResponse] = js.native
@@ -52,90 +53,78 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateImage(value: CreateImageResponse): Self = StObject.set(x, "createImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateImageUndefined: Self = StObject.set(x, "createImage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateLine(value: CreateLineResponse): Self = StObject.set(x, "createLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateImage(value: CreateImageResponse): Self = this.set("createImage", value.asInstanceOf[js.Any])
+    def setCreateLineUndefined: Self = StObject.set(x, "createLine", js.undefined)
     
     @scala.inline
-    def deleteCreateImage: Self = this.set("createImage", js.undefined)
+    def setCreateShape(value: CreateShapeResponse): Self = StObject.set(x, "createShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateLine(value: CreateLineResponse): Self = this.set("createLine", value.asInstanceOf[js.Any])
+    def setCreateShapeUndefined: Self = StObject.set(x, "createShape", js.undefined)
     
     @scala.inline
-    def deleteCreateLine: Self = this.set("createLine", js.undefined)
+    def setCreateSheetsChart(value: CreateSheetsChartResponse): Self = StObject.set(x, "createSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateShape(value: CreateShapeResponse): Self = this.set("createShape", value.asInstanceOf[js.Any])
+    def setCreateSheetsChartUndefined: Self = StObject.set(x, "createSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteCreateShape: Self = this.set("createShape", js.undefined)
+    def setCreateSlide(value: CreateSlideResponse): Self = StObject.set(x, "createSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSheetsChart(value: CreateSheetsChartResponse): Self = this.set("createSheetsChart", value.asInstanceOf[js.Any])
+    def setCreateSlideUndefined: Self = StObject.set(x, "createSlide", js.undefined)
     
     @scala.inline
-    def deleteCreateSheetsChart: Self = this.set("createSheetsChart", js.undefined)
+    def setCreateTable(value: CreateTableResponse): Self = StObject.set(x, "createTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateSlide(value: CreateSlideResponse): Self = this.set("createSlide", value.asInstanceOf[js.Any])
+    def setCreateTableUndefined: Self = StObject.set(x, "createTable", js.undefined)
     
     @scala.inline
-    def deleteCreateSlide: Self = this.set("createSlide", js.undefined)
+    def setCreateVideo(value: CreateVideoResponse): Self = StObject.set(x, "createVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTable(value: CreateTableResponse): Self = this.set("createTable", value.asInstanceOf[js.Any])
+    def setCreateVideoUndefined: Self = StObject.set(x, "createVideo", js.undefined)
     
     @scala.inline
-    def deleteCreateTable: Self = this.set("createTable", js.undefined)
+    def setDuplicateObject(value: DuplicateObjectResponse): Self = StObject.set(x, "duplicateObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateVideo(value: CreateVideoResponse): Self = this.set("createVideo", value.asInstanceOf[js.Any])
+    def setDuplicateObjectUndefined: Self = StObject.set(x, "duplicateObject", js.undefined)
     
     @scala.inline
-    def deleteCreateVideo: Self = this.set("createVideo", js.undefined)
+    def setGroupObjects(value: GroupObjectsResponse): Self = StObject.set(x, "groupObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicateObject(value: DuplicateObjectResponse): Self = this.set("duplicateObject", value.asInstanceOf[js.Any])
+    def setGroupObjectsUndefined: Self = StObject.set(x, "groupObjects", js.undefined)
     
     @scala.inline
-    def deleteDuplicateObject: Self = this.set("duplicateObject", js.undefined)
+    def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageResponse): Self = StObject.set(x, "replaceAllShapesWithImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupObjects(value: GroupObjectsResponse): Self = this.set("groupObjects", value.asInstanceOf[js.Any])
+    def setReplaceAllShapesWithImageUndefined: Self = StObject.set(x, "replaceAllShapesWithImage", js.undefined)
     
     @scala.inline
-    def deleteGroupObjects: Self = this.set("groupObjects", js.undefined)
+    def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartResponse): Self = StObject.set(x, "replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceAllShapesWithImage(value: ReplaceAllShapesWithImageResponse): Self = this.set("replaceAllShapesWithImage", value.asInstanceOf[js.Any])
+    def setReplaceAllShapesWithSheetsChartUndefined: Self = StObject.set(x, "replaceAllShapesWithSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteReplaceAllShapesWithImage: Self = this.set("replaceAllShapesWithImage", js.undefined)
+    def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceAllShapesWithSheetsChart(value: ReplaceAllShapesWithSheetsChartResponse): Self = this.set("replaceAllShapesWithSheetsChart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceAllShapesWithSheetsChart: Self = this.set("replaceAllShapesWithSheetsChart", js.undefined)
-    
-    @scala.inline
-    def setReplaceAllText(value: ReplaceAllTextResponse): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BandingProperties extends js.Object {
+trait BandingProperties extends StObject {
   
   /** The first color that is alternating. (Required) */
   var firstBandColor: js.UndefOr[Color] = js.native
@@ -53,66 +54,54 @@ object BandingProperties {
   }
   
   @scala.inline
-  implicit class BandingPropertiesOps[Self <: BandingProperties] (val x: Self) extends AnyVal {
+  implicit class BandingPropertiesMutableBuilder[Self <: BandingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstBandColor(value: Color): Self = StObject.set(x, "firstBandColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstBandColorStyle(value: ColorStyle): Self = StObject.set(x, "firstBandColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstBandColorStyleUndefined: Self = StObject.set(x, "firstBandColorStyle", js.undefined)
     
     @scala.inline
-    def setFirstBandColor(value: Color): Self = this.set("firstBandColor", value.asInstanceOf[js.Any])
+    def setFirstBandColorUndefined: Self = StObject.set(x, "firstBandColor", js.undefined)
     
     @scala.inline
-    def deleteFirstBandColor: Self = this.set("firstBandColor", js.undefined)
+    def setFooterColor(value: Color): Self = StObject.set(x, "footerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstBandColorStyle(value: ColorStyle): Self = this.set("firstBandColorStyle", value.asInstanceOf[js.Any])
+    def setFooterColorStyle(value: ColorStyle): Self = StObject.set(x, "footerColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstBandColorStyle: Self = this.set("firstBandColorStyle", js.undefined)
+    def setFooterColorStyleUndefined: Self = StObject.set(x, "footerColorStyle", js.undefined)
     
     @scala.inline
-    def setFooterColor(value: Color): Self = this.set("footerColor", value.asInstanceOf[js.Any])
+    def setFooterColorUndefined: Self = StObject.set(x, "footerColor", js.undefined)
     
     @scala.inline
-    def deleteFooterColor: Self = this.set("footerColor", js.undefined)
+    def setHeaderColor(value: Color): Self = StObject.set(x, "headerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterColorStyle(value: ColorStyle): Self = this.set("footerColorStyle", value.asInstanceOf[js.Any])
+    def setHeaderColorStyle(value: ColorStyle): Self = StObject.set(x, "headerColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFooterColorStyle: Self = this.set("footerColorStyle", js.undefined)
+    def setHeaderColorStyleUndefined: Self = StObject.set(x, "headerColorStyle", js.undefined)
     
     @scala.inline
-    def setHeaderColor(value: Color): Self = this.set("headerColor", value.asInstanceOf[js.Any])
+    def setHeaderColorUndefined: Self = StObject.set(x, "headerColor", js.undefined)
     
     @scala.inline
-    def deleteHeaderColor: Self = this.set("headerColor", js.undefined)
+    def setSecondBandColor(value: Color): Self = StObject.set(x, "secondBandColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderColorStyle(value: ColorStyle): Self = this.set("headerColorStyle", value.asInstanceOf[js.Any])
+    def setSecondBandColorStyle(value: ColorStyle): Self = StObject.set(x, "secondBandColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderColorStyle: Self = this.set("headerColorStyle", js.undefined)
+    def setSecondBandColorStyleUndefined: Self = StObject.set(x, "secondBandColorStyle", js.undefined)
     
     @scala.inline
-    def setSecondBandColor(value: Color): Self = this.set("secondBandColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondBandColor: Self = this.set("secondBandColor", js.undefined)
-    
-    @scala.inline
-    def setSecondBandColorStyle(value: ColorStyle): Self = this.set("secondBandColorStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondBandColorStyle: Self = this.set("secondBandColorStyle", js.undefined)
+    def setSecondBandColorUndefined: Self = StObject.set(x, "secondBandColor", js.undefined)
   }
 }

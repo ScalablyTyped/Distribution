@@ -1,5 +1,6 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object OverView {
   }
   
   @scala.inline
-  implicit class OverViewOps[Self <: OverView] (val x: Self) extends AnyVal {
+  implicit class OverViewMutableBuilder[Self <: OverView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTileLayer(value: () => TileLayer): Self = StObject.set(x, "getTileLayer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTileLayer(value: () => TileLayer): Self = this.set("getTileLayer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpen(value: () => Unit): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetTileLayer(value: TileLayer => Unit): Self = this.set("setTileLayer", js.Any.fromFunction1(value))
+    def setSetTileLayer(value: TileLayer => Unit): Self = StObject.set(x, "setTileLayer", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentResponse extends js.Object {
+trait EnvironmentResponse extends StObject {
   
   /**
     * Error messages for environment variables that couldn't be applied.
@@ -26,30 +27,18 @@ object EnvironmentResponse {
   }
   
   @scala.inline
-  implicit class EnvironmentResponseOps[Self <: EnvironmentResponse] (val x: Self) extends AnyVal {
+  implicit class EnvironmentResponseMutableBuilder[Self <: EnvironmentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: EnvironmentError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVariables(value: EnvironmentVariables): Self = StObject.set(x, "Variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: EnvironmentError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setVariables(value: EnvironmentVariables): Self = this.set("Variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("Variables", js.undefined)
+    def setVariablesUndefined: Self = StObject.set(x, "Variables", js.undefined)
   }
 }

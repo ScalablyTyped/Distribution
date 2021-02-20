@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLifecyclePoliciesRequest extends js.Object {
+trait GetLifecyclePoliciesRequest extends StObject {
   
   /**
     * The identifiers of the data lifecycle policies.
@@ -41,60 +42,48 @@ object GetLifecyclePoliciesRequest {
   }
   
   @scala.inline
-  implicit class GetLifecyclePoliciesRequestOps[Self <: GetLifecyclePoliciesRequest] (val x: Self) extends AnyVal {
+  implicit class GetLifecyclePoliciesRequestMutableBuilder[Self <: GetLifecyclePoliciesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyIds(value: PolicyIdList): Self = StObject.set(x, "PolicyIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyIdsUndefined: Self = StObject.set(x, "PolicyIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyIdsVarargs(value: PolicyId*): Self = StObject.set(x, "PolicyIds", js.Array(value :_*))
     
     @scala.inline
-    def setPolicyIdsVarargs(value: PolicyId*): Self = this.set("PolicyIds", js.Array(value :_*))
+    def setResourceTypes(value: ResourceTypeValuesList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyIds(value: PolicyIdList): Self = this.set("PolicyIds", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
     @scala.inline
-    def deletePolicyIds: Self = this.set("PolicyIds", js.undefined)
+    def setResourceTypesVarargs(value: ResourceTypeValues*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setResourceTypesVarargs(value: ResourceTypeValues*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    def setState(value: GettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTypes(value: ResourceTypeValuesList): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    def setTagsToAdd(value: TagsToAddFilterList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: GettablePolicyStateValues): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsToAddVarargs(value: TagFilter*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setTagsToAddVarargs(value: TagFilter*): Self = this.set("TagsToAdd", js.Array(value :_*))
+    def setTargetTags(value: TargetTagsFilterList): Self = StObject.set(x, "TargetTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsToAdd(value: TagsToAddFilterList): Self = this.set("TagsToAdd", value.asInstanceOf[js.Any])
+    def setTargetTagsUndefined: Self = StObject.set(x, "TargetTags", js.undefined)
     
     @scala.inline
-    def deleteTagsToAdd: Self = this.set("TagsToAdd", js.undefined)
-    
-    @scala.inline
-    def setTargetTagsVarargs(value: TagFilter*): Self = this.set("TargetTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetTags(value: TargetTagsFilterList): Self = this.set("TargetTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetTags: Self = this.set("TargetTags", js.undefined)
+    def setTargetTagsVarargs(value: TagFilter*): Self = StObject.set(x, "TargetTags", js.Array(value :_*))
   }
 }

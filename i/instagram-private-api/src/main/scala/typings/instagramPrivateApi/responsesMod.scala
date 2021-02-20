@@ -1,42 +1,64 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/responses", JSImport.Namespace)
-@js.native
-object responsesMod extends js.Object {
+object responsesMod {
   
+  @JSImport("instagram-private-api/dist/responses", "AccountFollowersFeedResponseUsersItem")
   @js.native
-  class AccountFollowersFeedResponseUsersItem ()
-    extends typings.instagramPrivateApi.accountFollowersFeedResponseMod.AccountFollowersFeedResponseUsersItem
+  class AccountFollowersFeedResponseUsersItem protected ()
+    extends typings.instagramPrivateApi.accountFollowersFeedResponseMod.AccountFollowersFeedResponseUsersItem {
+    def this(client: IgApiClient) = this()
+  }
   
+  @JSImport("instagram-private-api/dist/responses", "AccountFollowingFeedResponseUsersItem")
   @js.native
-  class AccountFollowingFeedResponseUsersItem ()
-    extends typings.instagramPrivateApi.accountFollowingFeedResponseMod.AccountFollowingFeedResponseUsersItem
+  class AccountFollowingFeedResponseUsersItem protected ()
+    extends typings.instagramPrivateApi.accountFollowingFeedResponseMod.AccountFollowingFeedResponseUsersItem {
+    def this(client: IgApiClient) = this()
+  }
   
+  @JSImport("instagram-private-api/dist/responses", "BestiesFeedResponseUsersItem")
   @js.native
-  class BestiesFeedResponseUsersItem ()
-    extends typings.instagramPrivateApi.accountFriendshipsBestiesFeedResponseMod.BestiesFeedResponseUsersItem
+  class BestiesFeedResponseUsersItem protected ()
+    extends typings.instagramPrivateApi.accountFriendshipsBestiesFeedResponseMod.BestiesFeedResponseUsersItem {
+    def this(client: IgApiClient) = this()
+  }
   
+  @JSImport("instagram-private-api/dist/responses", "BlockedUsersFeedResponseBlockedListItem")
   @js.native
-  class BlockedUsersFeedResponseBlockedListItem ()
-    extends typings.instagramPrivateApi.blockedUsersFeedResponseMod.BlockedUsersFeedResponseBlockedListItem
+  class BlockedUsersFeedResponseBlockedListItem protected ()
+    extends typings.instagramPrivateApi.blockedUsersFeedResponseMod.BlockedUsersFeedResponseBlockedListItem {
+    def this(client: IgApiClient) = this()
+  }
   
+  @JSImport("instagram-private-api/dist/responses", "DirectInboxFeedResponseThreadsItem")
   @js.native
   class DirectInboxFeedResponseThreadsItem ()
     extends typings.instagramPrivateApi.directInboxFeedResponseMod.DirectInboxFeedResponseThreadsItem
   
+  @JSImport("instagram-private-api/dist/responses", "DiscoverFeedResponseUser")
   @js.native
-  class DiscoverFeedResponseUser ()
-    extends typings.instagramPrivateApi.discoverFeedResponseMod.DiscoverFeedResponseUser
+  class DiscoverFeedResponseUser protected ()
+    extends typings.instagramPrivateApi.discoverFeedResponseMod.DiscoverFeedResponseUser {
+    def this(client: IgApiClient) = this()
+  }
   
+  @JSImport("instagram-private-api/dist/responses", "NewsFeedResponseStoriesItem")
   @js.native
-  class NewsFeedResponseStoriesItem ()
-    extends typings.instagramPrivateApi.newsFeedResponseMod.NewsFeedResponseStoriesItem
+  class NewsFeedResponseStoriesItem protected ()
+    extends typings.instagramPrivateApi.newsFeedResponseMod.NewsFeedResponseStoriesItem {
+    def this(client: IgApiClient) = this()
+  }
   
+  @JSImport("instagram-private-api/dist/responses", "PendingFriendshipsFeedResponseUsersItem")
   @js.native
-  class PendingFriendshipsFeedResponseUsersItem ()
-    extends typings.instagramPrivateApi.accountFriendshipsFeedResponseMod.PendingFriendshipsFeedResponseUsersItem
+  class PendingFriendshipsFeedResponseUsersItem protected ()
+    extends typings.instagramPrivateApi.accountFriendshipsFeedResponseMod.PendingFriendshipsFeedResponseUsersItem {
+    def this(client: IgApiClient) = this()
+  }
 }

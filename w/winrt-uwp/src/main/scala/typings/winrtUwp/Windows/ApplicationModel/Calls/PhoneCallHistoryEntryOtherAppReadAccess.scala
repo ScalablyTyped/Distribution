@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhoneCallHistoryEntryOtherAppReadAccess extends js.Object
+sealed trait PhoneCallHistoryEntryOtherAppReadAccess extends StObject
 /** The level of read access provided to other applications. */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryEntryOtherAppReadAccess")
 @js.native
-object PhoneCallHistoryEntryOtherAppReadAccess extends js.Object {
+object PhoneCallHistoryEntryOtherAppReadAccess extends StObject {
   
   /** Other applications have full read access to this PhoneCallHistoryEntry object. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUsageAndQuotaResponse extends js.Object {
+trait GetUsageAndQuotaResponse extends StObject {
   
   /**
     * Whether or not the origin has an active storage quota override
@@ -36,33 +37,21 @@ object GetUsageAndQuotaResponse {
   }
   
   @scala.inline
-  implicit class GetUsageAndQuotaResponseOps[Self <: GetUsageAndQuotaResponse] (val x: Self) extends AnyVal {
+  implicit class GetUsageAndQuotaResponseMutableBuilder[Self <: GetUsageAndQuotaResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOverrideActive(value: Boolean): Self = StObject.set(x, "overrideActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuota(value: Double): Self = StObject.set(x, "quota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideActive(value: Boolean): Self = this.set("overrideActive", value.asInstanceOf[js.Any])
+    def setUsageBreakdown(value: js.Array[UsageForType]): Self = StObject.set(x, "usageBreakdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuota(value: Double): Self = this.set("quota", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsage(value: Double): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageBreakdownVarargs(value: UsageForType*): Self = this.set("usageBreakdown", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsageBreakdown(value: js.Array[UsageForType]): Self = this.set("usageBreakdown", value.asInstanceOf[js.Any])
+    def setUsageBreakdownVarargs(value: UsageForType*): Self = StObject.set(x, "usageBreakdown", js.Array(value :_*))
   }
 }

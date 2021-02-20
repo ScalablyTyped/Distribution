@@ -1,16 +1,16 @@
 package typings.dateFns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/isDate", JSImport.Namespace)
-@js.native
-object dateFnsIsDateMod extends js.Object {
+object dateFnsIsDateMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/isDate", JSImport.Default)
+    @js.native
     def apply(value: js.Any): Boolean = js.native
   }
 }

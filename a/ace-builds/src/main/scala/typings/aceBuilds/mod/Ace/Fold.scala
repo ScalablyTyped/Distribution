@@ -1,11 +1,12 @@
 package typings.aceBuilds.mod.Ace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fold extends js.Object {
+trait Fold extends StObject {
   
   def addSubFold(fold: Fold): Fold = js.native
   
@@ -43,51 +44,39 @@ object Fold {
   }
   
   @scala.inline
-  implicit class FoldOps[Self <: Fold] (val x: Self) extends AnyVal {
+  implicit class FoldMutableBuilder[Self <: Fold] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSubFold(value: Fold => Fold): Self = StObject.set(x, "addSubFold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFoldLine(value: FoldLine): Self = StObject.set(x, "foldLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSubFold(value: Fold => Fold): Self = this.set("addSubFold", js.Any.fromFunction1(value))
+    def setFoldLineUndefined: Self = StObject.set(x, "foldLine", js.undefined)
     
     @scala.inline
-    def setEnd(value: Point): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRestoreRange(value: Range => Unit): Self = StObject.set(x, "restoreRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRestoreRange(value: Range => Unit): Self = this.set("restoreRange", js.Any.fromFunction1(value))
+    def setSameRow(value: Boolean): Self = StObject.set(x, "sameRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSameRow(value: Boolean): Self = this.set("sameRow", value.asInstanceOf[js.Any])
+    def setSetFoldLine(value: FoldLine => Unit): Self = StObject.set(x, "setFoldLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFoldLine(value: FoldLine => Unit): Self = this.set("setFoldLine", js.Any.fromFunction1(value))
+    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Point): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setSubFolds(value: js.Array[Fold]): Self = StObject.set(x, "subFolds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubFoldsVarargs(value: Fold*): Self = this.set("subFolds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubFolds(value: js.Array[Fold]): Self = this.set("subFolds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFoldLine(value: FoldLine): Self = this.set("foldLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFoldLine: Self = this.set("foldLine", js.undefined)
+    def setSubFoldsVarargs(value: Fold*): Self = StObject.set(x, "subFolds", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerTreeDidChangeEvent extends js.Object {
+trait LayerTreeDidChangeEvent extends StObject {
   
   /**
     * Layer tree, absent if not in the comspositing mode.
@@ -21,27 +22,15 @@ object LayerTreeDidChangeEvent {
   }
   
   @scala.inline
-  implicit class LayerTreeDidChangeEventOps[Self <: LayerTreeDidChangeEvent] (val x: Self) extends AnyVal {
+  implicit class LayerTreeDidChangeEventMutableBuilder[Self <: LayerTreeDidChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = this.set("layers", js.Array(value :_*))
-    
-    @scala.inline
-    def setLayers(value: js.Array[Layer]): Self = this.set("layers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLayers: Self = this.set("layers", js.undefined)
+    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

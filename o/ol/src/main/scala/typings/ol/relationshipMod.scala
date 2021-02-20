@@ -1,17 +1,37 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/extent/Relationship", JSImport.Namespace)
-@js.native
-object relationshipMod extends js.Object {
+object relationshipMod {
+  
+  @JSImport("ol/extent/Relationship", JSImport.Default)
+  @js.native
+  object default extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[Relationship with Double] = js.native
+    
+    /* 2 */ val ABOVE: typings.ol.relationshipMod.Relationship.ABOVE with Double = js.native
+    
+    /* 8 */ val BELOW: typings.ol.relationshipMod.Relationship.BELOW with Double = js.native
+    
+    /* 1 */ val INTERSECTING: typings.ol.relationshipMod.Relationship.INTERSECTING with Double = js.native
+    
+    /* 16 */ val LEFT: typings.ol.relationshipMod.Relationship.LEFT with Double = js.native
+    
+    /* 4 */ val RIGHT: typings.ol.relationshipMod.Relationship.RIGHT with Double = js.native
+    
+    /* 0 */ val UNKNOWN: typings.ol.relationshipMod.Relationship.UNKNOWN with Double = js.native
+  }
   
   @js.native
-  sealed trait Relationship extends js.Object
+  sealed trait Relationship extends StObject
+  @JSImport("ol/extent/Relationship", "Relationship")
   @js.native
-  object Relationship extends js.Object {
+  object Relationship extends StObject {
     
     @js.native
     sealed trait ABOVE extends Relationship
@@ -30,24 +50,5 @@ object relationshipMod extends js.Object {
     
     @js.native
     sealed trait UNKNOWN extends Relationship
-  }
-  
-  @js.native
-  object default extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Relationship with Double] = js.native
-    
-    /* 2 */ val ABOVE: typings.ol.relationshipMod.Relationship.ABOVE with Double = js.native
-    
-    /* 8 */ val BELOW: typings.ol.relationshipMod.Relationship.BELOW with Double = js.native
-    
-    /* 1 */ val INTERSECTING: typings.ol.relationshipMod.Relationship.INTERSECTING with Double = js.native
-    
-    /* 16 */ val LEFT: typings.ol.relationshipMod.Relationship.LEFT with Double = js.native
-    
-    /* 4 */ val RIGHT: typings.ol.relationshipMod.Relationship.RIGHT with Double = js.native
-    
-    /* 0 */ val UNKNOWN: typings.ol.relationshipMod.Relationship.UNKNOWN with Double = js.native
   }
 }

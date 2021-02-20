@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditModeValidationErrorEventUIParam extends js.Object {
+trait EditModeValidationErrorEventUIParam extends StObject {
   
   /**
     * Get or set the [action](ig.spreadsheet.SpreadsheetEditModeValidationErrorAction)  to take in response to the failed validation.
@@ -41,48 +42,36 @@ object EditModeValidationErrorEventUIParam {
   }
   
   @scala.inline
-  implicit class EditModeValidationErrorEventUIParamOps[Self <: EditModeValidationErrorEventUIParam] (val x: Self) extends AnyVal {
+  implicit class EditModeValidationErrorEventUIParamMutableBuilder[Self <: EditModeValidationErrorEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanStayInEditMode(value: Boolean): Self = StObject.set(x, "canStayInEditMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCanStayInEditModeUndefined: Self = StObject.set(x, "canStayInEditMode", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanStayInEditMode(value: Boolean): Self = this.set("canStayInEditMode", value.asInstanceOf[js.Any])
+    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     @scala.inline
-    def deleteCanStayInEditMode: Self = this.set("canStayInEditMode", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: String): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("cell", js.undefined)
+    def setValidationRule(value: String): Self = StObject.set(x, "validationRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setValidationRule(value: String): Self = this.set("validationRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationRule: Self = this.set("validationRule", js.undefined)
+    def setValidationRuleUndefined: Self = StObject.set(x, "validationRule", js.undefined)
   }
 }

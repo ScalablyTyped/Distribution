@@ -6,6 +6,7 @@ import typings.chrome.chrome.notifications.NotificationClosedEvent
 import typings.chrome.chrome.notifications.NotificationOptions
 import typings.chrome.chrome.notifications.NotificationPermissionLevelChangedEvent
 import typings.chrome.chrome.notifications.NotificationShowSettingsEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,37 +20,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  "notifications"
   * @since Chrome 28.
   */
-@JSGlobal("chrome.notifications")
-@js.native
-object notifications extends js.Object {
+object notifications {
   
+  @JSGlobal("chrome.notifications")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("chrome.notifications.clear")
+  @js.native
   def clear(notificationId: String): Unit = js.native
+  @JSGlobal("chrome.notifications.clear")
+  @js.native
   def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   
+  @JSGlobal("chrome.notifications.create")
+  @js.native
   def create(notificationId: String, options: NotificationOptions): Unit = js.native
+  @JSGlobal("chrome.notifications.create")
+  @js.native
   def create(
     notificationId: String,
     options: NotificationOptions,
     callback: js.Function1[/* notificationId */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("chrome.notifications.create")
+  @js.native
   def create(options: NotificationOptions): Unit = js.native
+  @JSGlobal("chrome.notifications.create")
+  @js.native
   def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = js.native
   
+  @JSGlobal("chrome.notifications.getAll")
+  @js.native
   def getAll(callback: js.Function1[/* notifications */ js.Object, Unit]): Unit = js.native
   
+  @JSGlobal("chrome.notifications.getPermissionLevel")
+  @js.native
   def getPermissionLevel(callback: js.Function1[/* level */ String, Unit]): Unit = js.native
   
-  var onButtonClicked: NotificationButtonClickedEvent = js.native
+  @JSGlobal("chrome.notifications.onButtonClicked")
+  @js.native
+  def onButtonClicked: NotificationButtonClickedEvent = js.native
+  @scala.inline
+  def onButtonClicked_=(x: NotificationButtonClickedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onButtonClicked")(x.asInstanceOf[js.Any])
   
-  var onClicked: NotificationClickedEvent = js.native
+  @JSGlobal("chrome.notifications.onClicked")
+  @js.native
+  def onClicked: NotificationClickedEvent = js.native
+  @scala.inline
+  def onClicked_=(x: NotificationClickedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClicked")(x.asInstanceOf[js.Any])
   
-  var onClosed: NotificationClosedEvent = js.native
+  @JSGlobal("chrome.notifications.onClosed")
+  @js.native
+  def onClosed: NotificationClosedEvent = js.native
+  @scala.inline
+  def onClosed_=(x: NotificationClosedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClosed")(x.asInstanceOf[js.Any])
   
-  var onPermissionLevelChanged: NotificationPermissionLevelChangedEvent = js.native
+  @JSGlobal("chrome.notifications.onPermissionLevelChanged")
+  @js.native
+  def onPermissionLevelChanged: NotificationPermissionLevelChangedEvent = js.native
+  @scala.inline
+  def onPermissionLevelChanged_=(x: NotificationPermissionLevelChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPermissionLevelChanged")(x.asInstanceOf[js.Any])
   
-  var onShowSettings: NotificationShowSettingsEvent = js.native
+  @JSGlobal("chrome.notifications.onShowSettings")
+  @js.native
+  def onShowSettings: NotificationShowSettingsEvent = js.native
+  @scala.inline
+  def onShowSettings_=(x: NotificationShowSettingsEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onShowSettings")(x.asInstanceOf[js.Any])
   
+  @JSGlobal("chrome.notifications.update")
+  @js.native
   def update(notificationId: String, options: NotificationOptions): Unit = js.native
+  @JSGlobal("chrome.notifications.update")
+  @js.native
   def update(
     notificationId: String,
     options: NotificationOptions,

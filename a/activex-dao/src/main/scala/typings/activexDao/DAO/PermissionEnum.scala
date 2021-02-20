@@ -15,6 +15,7 @@ import typings.activexDao.activexDaoNumbers.`64`
 import typings.activexDao.activexDaoNumbers.`65536`
 import typings.activexDao.activexDaoNumbers.`65548`
 import typings.activexDao.activexDaoNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexDao.activexDaoNumbers.`524288`
   - typings.activexDao.activexDaoNumbers.`262144`
 */
-trait PermissionEnum extends js.Object
+trait PermissionEnum extends StObject
 object PermissionEnum {
   
   @scala.inline

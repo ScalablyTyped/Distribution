@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,51 +51,39 @@ object InterfaceType {
   }
   
   @scala.inline
-  implicit class InterfaceTypeOps[Self <: InterfaceType] (val x: Self) extends AnyVal {
+  implicit class InterfaceTypeMutableBuilder[Self <: InterfaceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "localTypeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalTypeParametersUndefined: Self = StObject.set(x, "localTypeParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "localTypeParameters", js.Array(value :_*))
     
     @scala.inline
-    def setLocalTypeParametersVarargs(value: TypeParameter*): Self = this.set("localTypeParameters", js.Array(value :_*))
+    def setOuterTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "outerTypeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTypeParameters(value: js.Array[TypeParameter]): Self = this.set("localTypeParameters", value.asInstanceOf[js.Any])
+    def setOuterTypeParametersUndefined: Self = StObject.set(x, "outerTypeParameters", js.undefined)
     
     @scala.inline
-    def deleteLocalTypeParameters: Self = this.set("localTypeParameters", js.undefined)
+    def setOuterTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "outerTypeParameters", js.Array(value :_*))
     
     @scala.inline
-    def setOuterTypeParametersVarargs(value: TypeParameter*): Self = this.set("outerTypeParameters", js.Array(value :_*))
+    def setThisType(value: TypeParameter): Self = StObject.set(x, "thisType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterTypeParameters(value: js.Array[TypeParameter]): Self = this.set("outerTypeParameters", value.asInstanceOf[js.Any])
+    def setThisTypeUndefined: Self = StObject.set(x, "thisType", js.undefined)
     
     @scala.inline
-    def deleteOuterTypeParameters: Self = this.set("outerTypeParameters", js.undefined)
+    def setTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThisType(value: TypeParameter): Self = this.set("thisType", value.asInstanceOf[js.Any])
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
     
     @scala.inline
-    def deleteThisType: Self = this.set("thisType", js.undefined)
-    
-    @scala.inline
-    def setTypeParametersVarargs(value: TypeParameter*): Self = this.set("typeParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypeParameters(value: js.Array[TypeParameter]): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
+    def setTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "typeParameters", js.Array(value :_*))
   }
 }

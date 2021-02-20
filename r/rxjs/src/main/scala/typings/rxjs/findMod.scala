@@ -4,29 +4,14 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.OperatorFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/operators/find", JSImport.Namespace)
-@js.native
-object findMod extends js.Object {
+object findMod {
   
-  def find[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, js.UndefOr[T]] = js.native
-  def find[T](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
-    thisArg: js.Any
-  ): OperatorFunction[T, js.UndefOr[T]] = js.native
-  @JSName("find")
-  def find_TS_T[T, S /* <: T */](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
-  ): OperatorFunction[T, js.UndefOr[S]] = js.native
-  @JSName("find")
-  def find_TS_T[T, S /* <: T */](
-    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
-    thisArg: js.Any
-  ): OperatorFunction[T, js.UndefOr[S]] = js.native
-  
+  @JSImport("rxjs/internal/operators/find", "FindValueOperator")
   @js.native
   class FindValueOperator[T] protected ()
     extends Operator[T, js.UndefOr[T | Double]] {
@@ -51,6 +36,7 @@ object findMod extends js.Object {
     var yieldIndex: js.Any = js.native
   }
   
+  @JSImport("rxjs/internal/operators/find", "FindValueSubscriber")
   @js.native
   class FindValueSubscriber[T] protected () extends Subscriber[T] {
     def this(
@@ -79,4 +65,25 @@ object findMod extends js.Object {
     
     var yieldIndex: js.Any = js.native
   }
+  
+  @JSImport("rxjs/internal/operators/find", "find")
+  @js.native
+  def find[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, js.UndefOr[T]] = js.native
+  @JSImport("rxjs/internal/operators/find", "find")
+  @js.native
+  def find[T](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
+    thisArg: js.Any
+  ): OperatorFunction[T, js.UndefOr[T]] = js.native
+  @JSImport("rxjs/internal/operators/find", "find")
+  @js.native
+  def find_TS_T[T, S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean]
+  ): OperatorFunction[T, js.UndefOr[S]] = js.native
+  @JSImport("rxjs/internal/operators/find", "find")
+  @js.native
+  def find_TS_T[T, S /* <: T */](
+    predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
+    thisArg: js.Any
+  ): OperatorFunction[T, js.UndefOr[S]] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaGetOffersResponse extends js.Object {
+trait SchemaGetOffersResponse extends StObject {
   
   /**
     * The returned list of products.
@@ -21,27 +22,15 @@ object SchemaGetOffersResponse {
   }
   
   @scala.inline
-  implicit class SchemaGetOffersResponseOps[Self <: SchemaGetOffersResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGetOffersResponseMutableBuilder[Self <: SchemaGetOffersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProducts(value: js.Array[SchemaProduct]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductsVarargs(value: SchemaProduct*): Self = this.set("products", js.Array(value :_*))
-    
-    @scala.inline
-    def setProducts(value: js.Array[SchemaProduct]): Self = this.set("products", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducts: Self = this.set("products", js.undefined)
+    def setProductsVarargs(value: SchemaProduct*): Self = StObject.set(x, "products", js.Array(value :_*))
   }
 }

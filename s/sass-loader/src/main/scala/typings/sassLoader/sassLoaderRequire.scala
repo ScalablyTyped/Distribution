@@ -1,5 +1,6 @@
 package typings.sassLoader
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("sass-loader", JSImport.Namespace)
 @js.native
-object sassLoaderRequire extends js.Object
+object sassLoaderRequire extends StObject

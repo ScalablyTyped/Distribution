@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsModemErrorCode extends js.Object
+sealed trait SmsModemErrorCode extends StObject
 /** Values that describe error codes from the SMS modem in an SmsSendMessageResult. */
 @JSGlobal("Windows.Devices.Sms.SmsModemErrorCode")
 @js.native
-object SmsModemErrorCode extends js.Object {
+object SmsModemErrorCode extends StObject {
   
   /** The device failed. */
   @js.native

@@ -3,6 +3,7 @@ package typings.babylonjs.mod
 import typings.babylonjs.abstractSceneMod.BabylonFileParser
 import typings.babylonjs.abstractSceneMod.IndividualBabylonFileParser
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,15 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 abstract class AbstractScene ()
   extends typings.babylonjs.legacyMod.AbstractScene
 /* static members */
-@JSImport("babylonjs", "AbstractScene")
-@js.native
-object AbstractScene extends js.Object {
+object AbstractScene {
+  
+  @JSImport("babylonjs", "AbstractScene")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adds n individual parser in the list of available ones
     * @param name Defines the name of the parser
     * @param parser Defines the parser to add
     */
+  @JSImport("babylonjs", "AbstractScene.AddIndividualParser")
+  @js.native
   def AddIndividualParser(name: String, parser: IndividualBabylonFileParser): Unit = js.native
   
   /**
@@ -28,6 +33,8 @@ object AbstractScene extends js.Object {
     * @param name Defines the name of the parser
     * @param parser Defines the parser to add
     */
+  @JSImport("babylonjs", "AbstractScene.AddParser")
+  @js.native
   def AddParser(name: String, parser: BabylonFileParser): Unit = js.native
   
   /**
@@ -35,6 +42,8 @@ object AbstractScene extends js.Object {
     * @param name Defines the name of the parser
     * @returns the requested parser or null
     */
+  @JSImport("babylonjs", "AbstractScene.GetIndividualParser")
+  @js.native
   def GetIndividualParser(name: String): Nullable[IndividualBabylonFileParser] = js.native
   
   /**
@@ -42,6 +51,8 @@ object AbstractScene extends js.Object {
     * @param name Defines the name of the parser
     * @returns the requested parser or null
     */
+  @JSImport("babylonjs", "AbstractScene.GetParser")
+  @js.native
   def GetParser(name: String): Nullable[BabylonFileParser] = js.native
   
   /**
@@ -51,6 +62,8 @@ object AbstractScene extends js.Object {
     * @param container Defines the container attached to the parsing sequence
     * @param rootUrl Defines the root url of the data
     */
+  @JSImport("babylonjs", "AbstractScene.Parse")
+  @js.native
   def Parse(
     jsonData: js.Any,
     scene: typings.babylonjs.sceneMod.Scene,
@@ -61,10 +74,18 @@ object AbstractScene extends js.Object {
   /**
     * Stores the list of available parsers in the application.
     */
-  var _BabylonFileParsers: js.Any = js.native
+  @JSImport("babylonjs", "AbstractScene._BabylonFileParsers")
+  @js.native
+  def _BabylonFileParsers: js.Any = js.native
+  @scala.inline
+  def _BabylonFileParsers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonFileParsers")(x.asInstanceOf[js.Any])
   
   /**
     * Stores the list of available individual parsers in the application.
     */
-  var _IndividualBabylonFileParsers: js.Any = js.native
+  @JSImport("babylonjs", "AbstractScene._IndividualBabylonFileParsers")
+  @js.native
+  def _IndividualBabylonFileParsers: js.Any = js.native
+  @scala.inline
+  def _IndividualBabylonFileParsers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IndividualBabylonFileParsers")(x.asInstanceOf[js.Any])
 }

@@ -1,14 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLMarqueeElementEventMap
-  extends ElementEventMap
-     with GlobalEventHandlersEventMap
-     with DocumentAndElementEventHandlersEventMap {
+trait HTMLMarqueeElementEventMap extends HTMLElementEventMap {
   
   var bounce: Event = js.native
   
@@ -121,27 +119,15 @@ object HTMLMarqueeElementEventMap {
   }
   
   @scala.inline
-  implicit class HTMLMarqueeElementEventMapOps[Self <: HTMLMarqueeElementEventMap] (val x: Self) extends AnyVal {
+  implicit class HTMLMarqueeElementEventMapMutableBuilder[Self <: HTMLMarqueeElementEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounce(value: Event): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinish(value: Event): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBounce(value: Event): Self = this.set("bounce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinish(value: Event): Self = this.set("finish", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Event): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

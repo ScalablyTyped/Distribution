@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAssessmentTargetRequest extends js.Object {
+trait UpdateAssessmentTargetRequest extends StObject {
   
   /**
     * The ARN of the assessment target that you want to update.
@@ -31,30 +32,18 @@ object UpdateAssessmentTargetRequest {
   }
   
   @scala.inline
-  implicit class UpdateAssessmentTargetRequestOps[Self <: UpdateAssessmentTargetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAssessmentTargetRequestMutableBuilder[Self <: UpdateAssessmentTargetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentTargetName(value: AssessmentTargetName): Self = StObject.set(x, "assessmentTargetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentTargetArn(value: Arn): Self = this.set("assessmentTargetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssessmentTargetName(value: AssessmentTargetName): Self = this.set("assessmentTargetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceGroupArn(value: Arn): Self = this.set("resourceGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceGroupArn: Self = this.set("resourceGroupArn", js.undefined)
+    def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
   }
 }

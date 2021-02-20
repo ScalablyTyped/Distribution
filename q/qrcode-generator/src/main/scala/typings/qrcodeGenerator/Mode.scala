@@ -1,5 +1,6 @@
 package typings.qrcodeGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qrcodeGenerator.qrcodeGeneratorStrings.Byte
   - typings.qrcodeGenerator.qrcodeGeneratorStrings.Kanji
 */
-trait Mode extends js.Object
+trait Mode extends StObject
 object Mode {
   
   @scala.inline

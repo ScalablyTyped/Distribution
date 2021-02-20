@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxActionKind extends js.Object
+sealed trait EmailMailboxActionKind extends StObject
 /** Defines the kind of action to be taken. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxActionKind")
 @js.native
-object EmailMailboxActionKind extends js.Object {
+object EmailMailboxActionKind extends StObject {
   
   /** Change the flag state on the email message. */
   @js.native

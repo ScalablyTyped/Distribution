@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryEditReelResponseUser extends js.Object {
+trait HighlightsRepositoryEditReelResponseUser extends StObject {
   
   var allowed_commenter_type: js.UndefOr[String] = js.native
   
@@ -52,81 +53,69 @@ object HighlightsRepositoryEditReelResponseUser {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryEditReelResponseUserOps[Self <: HighlightsRepositoryEditReelResponseUser] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryEditReelResponseUserMutableBuilder[Self <: HighlightsRepositoryEditReelResponseUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowed_commenter_typeUndefined: Self = StObject.set(x, "allowed_commenter_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFull_name(value: String): Self = this.set("full_name", value.asInstanceOf[js.Any])
+    def setCan_boost_postUndefined: Self = StObject.set(x, "can_boost_post", js.undefined)
     
     @scala.inline
-    def setIs_private(value: Boolean): Self = this.set("is_private", value.asInstanceOf[js.Any])
+    def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_verified(value: Boolean): Self = this.set("is_verified", value.asInstanceOf[js.Any])
+    def setCan_see_organic_insightsUndefined: Self = StObject.set(x, "can_see_organic_insights", js.undefined)
     
     @scala.inline
-    def setPk(value: Double): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_id(value: String): Self = this.set("profile_pic_id", value.asInstanceOf[js.Any])
+    def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile_pic_url(value: String): Self = this.set("profile_pic_url", value.asInstanceOf[js.Any])
+    def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed_commenter_type(value: String): Self = this.set("allowed_commenter_type", value.asInstanceOf[js.Any])
+    def setIs_unpublished(value: Boolean): Self = StObject.set(x, "is_unpublished", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowed_commenter_type: Self = this.set("allowed_commenter_type", js.undefined)
+    def setIs_unpublishedUndefined: Self = StObject.set(x, "is_unpublished", js.undefined)
     
     @scala.inline
-    def setCan_boost_post(value: Boolean): Self = this.set("can_boost_post", value.asInstanceOf[js.Any])
+    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_boost_post: Self = this.set("can_boost_post", js.undefined)
+    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_see_organic_insights(value: Boolean): Self = this.set("can_see_organic_insights", value.asInstanceOf[js.Any])
+    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCan_see_organic_insights: Self = this.set("can_see_organic_insights", js.undefined)
+    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_anonymous_profile_picture(value: Boolean): Self = this.set("has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+    def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHas_anonymous_profile_picture: Self = this.set("has_anonymous_profile_picture", js.undefined)
+    def setReel_auto_archiveUndefined: Self = StObject.set(x, "reel_auto_archive", js.undefined)
     
     @scala.inline
-    def setIs_unpublished(value: Boolean): Self = this.set("is_unpublished", value.asInstanceOf[js.Any])
+    def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_unpublished: Self = this.set("is_unpublished", js.undefined)
+    def setShow_insights_termsUndefined: Self = StObject.set(x, "show_insights_terms", js.undefined)
     
     @scala.inline
-    def setReel_auto_archive(value: String): Self = this.set("reel_auto_archive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReel_auto_archive: Self = this.set("reel_auto_archive", js.undefined)
-    
-    @scala.inline
-    def setShow_insights_terms(value: Boolean): Self = this.set("show_insights_terms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow_insights_terms: Self = this.set("show_insights_terms", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

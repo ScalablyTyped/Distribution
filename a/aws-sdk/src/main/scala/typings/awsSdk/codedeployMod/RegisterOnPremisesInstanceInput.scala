@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterOnPremisesInstanceInput extends js.Object {
+trait RegisterOnPremisesInstanceInput extends StObject {
   
   /**
     * The ARN of the IAM session to associate with the on-premises instance.
@@ -31,33 +32,21 @@ object RegisterOnPremisesInstanceInput {
   }
   
   @scala.inline
-  implicit class RegisterOnPremisesInstanceInputOps[Self <: RegisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
+  implicit class RegisterOnPremisesInstanceInputMutableBuilder[Self <: RegisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIamSessionArnUndefined: Self = StObject.set(x, "iamSessionArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamUserArn(value: IamUserArn): Self = StObject.set(x, "iamUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceName(value: InstanceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    def setIamUserArnUndefined: Self = StObject.set(x, "iamUserArn", js.undefined)
     
     @scala.inline
-    def setIamSessionArn(value: IamSessionArn): Self = this.set("iamSessionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIamSessionArn: Self = this.set("iamSessionArn", js.undefined)
-    
-    @scala.inline
-    def setIamUserArn(value: IamUserArn): Self = this.set("iamUserArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIamUserArn: Self = this.set("iamUserArn", js.undefined)
+    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

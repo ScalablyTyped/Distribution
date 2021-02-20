@@ -5,12 +5,13 @@ import typings.mapsjs.anon.H
 import typings.mapsjs.mod.tile.layer
 import typings.std.HTMLElement
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait mapsjsWidget extends js.Object {
+trait mapsjsWidget extends StObject {
   
   /**
     * Add a fixed element to the content area which resides at a z-level 

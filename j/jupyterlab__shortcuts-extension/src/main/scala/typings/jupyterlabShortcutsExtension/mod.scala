@@ -1,13 +1,13 @@
 package typings.jupyterlabShortcutsExtension
 
+import org.scalablytyped.runtime.Shortcut
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEndPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/shortcuts-extension", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod extends Shortcut {
   
   /**
     * The default shortcuts extension.
@@ -38,5 +38,12 @@ object mod extends js.Object {
     * (`'*'`) selector. For almost any use case where a global keyboard shortcut is
     * required, using the `'body'` selector is more appropriate.
     */
+  @JSImport("@jupyterlab/shortcuts-extension", JSImport.Default)
+  @js.native
   val default: JupyterFrontEndPlugin[Unit] = js.native
+  
+  type _To = JupyterFrontEndPlugin[Unit]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: JupyterFrontEndPlugin[Unit] = default
 }

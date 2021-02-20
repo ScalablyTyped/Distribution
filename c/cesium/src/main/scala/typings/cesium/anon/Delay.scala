@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.JulianDate
 import typings.cesium.mod.ModelAnimationLoop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delay extends js.Object {
+trait Delay extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -34,63 +35,51 @@ object Delay {
   }
   
   @scala.inline
-  implicit class DelayOps[Self <: Delay] (val x: Self) extends AnyVal {
+  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoop(value: ModelAnimationLoop): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setRemoveOnStop(value: Boolean): Self = StObject.set(x, "removeOnStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: ModelAnimationLoop): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setRemoveOnStopUndefined: Self = StObject.set(x, "removeOnStop", js.undefined)
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveOnStop(value: Boolean): Self = this.set("removeOnStop", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deleteRemoveOnStop: Self = this.set("removeOnStop", js.undefined)
+    def setSpeedup(value: Double): Self = StObject.set(x, "speedup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setSpeedupUndefined: Self = StObject.set(x, "speedup", js.undefined)
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setStartTime(value: JulianDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedup(value: Double): Self = this.set("speedup", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteSpeedup: Self = this.set("speedup", js.undefined)
+    def setStopTime(value: JulianDate): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: JulianDate): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setStopTime(value: JulianDate): Self = this.set("stopTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopTime: Self = this.set("stopTime", js.undefined)
+    def setStopTimeUndefined: Self = StObject.set(x, "stopTime", js.undefined)
   }
 }

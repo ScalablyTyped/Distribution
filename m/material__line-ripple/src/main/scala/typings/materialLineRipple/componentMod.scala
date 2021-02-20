@@ -3,16 +3,18 @@ package typings.materialLineRipple
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialLineRipple.foundationMod.MDCLineRippleFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/line-ripple/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/line-ripple/component", "MDCLineRipple")
   @js.native
-  class MDCLineRipple () extends MDCComponent[MDCLineRippleFoundation] {
+  class MDCLineRipple protected () extends MDCComponent[MDCLineRippleFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCLineRippleFoundation, args: js.Any*) = this()
     
     /**
       * Activates the line ripple
@@ -31,9 +33,10 @@ object componentMod extends js.Object {
     def setRippleCenter(xCoordinate: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCLineRipple extends js.Object {
+  object MDCLineRipple {
     
+    @JSImport("@material/line-ripple/component", "MDCLineRipple.attachTo")
+    @js.native
     def attachTo(root: Element): MDCLineRipple = js.native
   }
   

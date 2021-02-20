@@ -1,11 +1,12 @@
 package typings.awsSdk.stsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssumedRoleUser extends js.Object {
+trait AssumedRoleUser extends StObject {
   
   /**
     * The ARN of the temporary security credentials that are returned from the AssumeRole action. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide.
@@ -26,24 +27,12 @@ object AssumedRoleUser {
   }
   
   @scala.inline
-  implicit class AssumedRoleUserOps[Self <: AssumedRoleUser] (val x: Self) extends AnyVal {
+  implicit class AssumedRoleUserMutableBuilder[Self <: AssumedRoleUser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssumedRoleId(value: assumedRoleIdType): Self = this.set("AssumedRoleId", value.asInstanceOf[js.Any])
+    def setAssumedRoleId(value: assumedRoleIdType): Self = StObject.set(x, "AssumedRoleId", value.asInstanceOf[js.Any])
   }
 }

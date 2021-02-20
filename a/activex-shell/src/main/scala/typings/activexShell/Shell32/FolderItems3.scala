@@ -1,12 +1,13 @@
 package typings.activexShell.Shell32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Definition of interface FolderItems3 */
 @js.native
-trait FolderItems3 extends js.Object {
+trait FolderItems3 extends StObject {
   
   /** Get Application object */
   val Application: js.Any = js.native

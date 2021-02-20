@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,27 +40,15 @@ object XVclContainerPeer {
   }
   
   @scala.inline
-  implicit class XVclContainerPeerOps[Self <: XVclContainerPeer] (val x: Self) extends AnyVal {
+  implicit class XVclContainerPeerMutableBuilder[Self <: XVclContainerPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableDialogControl(value: Boolean => Unit): Self = StObject.set(x, "enableDialogControl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetGroup(value: SeqEquiv[XWindow] => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableDialogControl(value: Boolean => Unit): Self = this.set("enableDialogControl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetGroup(value: SeqEquiv[XWindow] => Unit): Self = this.set("setGroup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTabOrder(value: (SeqEquiv[XWindow], SeqEquiv[_], Boolean) => Unit): Self = this.set("setTabOrder", js.Any.fromFunction3(value))
+    def setSetTabOrder(value: (SeqEquiv[XWindow], SeqEquiv[_], Boolean) => Unit): Self = StObject.set(x, "setTabOrder", js.Any.fromFunction3(value))
   }
 }

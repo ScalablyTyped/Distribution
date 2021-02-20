@@ -1,5 +1,6 @@
 package typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Config for TEXT_DETECTION.
   */
 @js.native
-trait SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfig extends js.Object {
+trait SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfig extends StObject {
   
   /**
     * Language hint can be specified if the language to be detected is known a
@@ -27,27 +28,15 @@ object SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfig {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfigOps[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfigMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1TextDetectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguageHintsVarargs(value: String*): Self = this.set("languageHints", js.Array(value :_*))
-    
-    @scala.inline
-    def setLanguageHints(value: js.Array[String]): Self = this.set("languageHints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageHints: Self = this.set("languageHints", js.undefined)
+    def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
   }
 }

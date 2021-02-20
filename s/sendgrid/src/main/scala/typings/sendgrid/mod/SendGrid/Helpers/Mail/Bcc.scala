@@ -1,11 +1,12 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bcc extends js.Object {
+trait Bcc extends StObject {
   
   def getEmail(): Email = js.native
   
@@ -32,33 +33,21 @@ object Bcc {
   }
   
   @scala.inline
-  implicit class BccOps[Self <: Bcc] (val x: Self) extends AnyVal {
+  implicit class BccMutableBuilder[Self <: Bcc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEmail(value: () => Email): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetEmail(value: Email => Unit): Self = StObject.set(x, "setEmail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEmail(value: () => Email): Self = this.set("getEmail", js.Any.fromFunction0(value))
+    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnable(value: () => Boolean): Self = this.set("getEnable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetEmail(value: Email => Unit): Self = this.set("setEmail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = this.set("setEnable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToJSON(value: () => typings.sendgrid.anon.Email): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => typings.sendgrid.anon.Email): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

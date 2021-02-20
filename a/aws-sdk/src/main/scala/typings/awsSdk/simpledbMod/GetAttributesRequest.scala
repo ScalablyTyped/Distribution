@@ -1,11 +1,12 @@
 package typings.awsSdk.simpledbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAttributesRequest extends js.Object {
+trait GetAttributesRequest extends StObject {
   
   /**
     * The names of the attributes.
@@ -36,39 +37,27 @@ object GetAttributesRequest {
   }
   
   @scala.inline
-  implicit class GetAttributesRequestOps[Self <: GetAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class GetAttributesRequestMutableBuilder[Self <: GetAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setConsistentRead(value: Boolean): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemName(value: String): Self = this.set("ItemName", value.asInstanceOf[js.Any])
+    def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
     
     @scala.inline
-    def setAttributeNamesVarargs(value: String*): Self = this.set("AttributeNames", js.Array(value :_*))
+    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeNames(value: AttributeNameList): Self = this.set("AttributeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeNames: Self = this.set("AttributeNames", js.undefined)
-    
-    @scala.inline
-    def setConsistentRead(value: Boolean): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

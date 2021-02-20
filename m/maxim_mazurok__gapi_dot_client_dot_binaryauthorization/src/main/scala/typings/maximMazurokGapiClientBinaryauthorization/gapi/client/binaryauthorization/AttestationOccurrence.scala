@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauthorization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttestationOccurrence extends js.Object {
+trait AttestationOccurrence extends StObject {
   
   /**
     * One or more JWTs encoding a self-contained attestation. Each JWT encodes the payload that it verifies within the JWT itself. Verifier implementation SHOULD ignore the
@@ -32,42 +33,30 @@ object AttestationOccurrence {
   }
   
   @scala.inline
-  implicit class AttestationOccurrenceOps[Self <: AttestationOccurrence] (val x: Self) extends AnyVal {
+  implicit class AttestationOccurrenceMutableBuilder[Self <: AttestationOccurrence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJwts(value: js.Array[Jwt]): Self = StObject.set(x, "jwts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJwtsUndefined: Self = StObject.set(x, "jwts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJwtsVarargs(value: Jwt*): Self = StObject.set(x, "jwts", js.Array(value :_*))
     
     @scala.inline
-    def setJwtsVarargs(value: Jwt*): Self = this.set("jwts", js.Array(value :_*))
+    def setSerializedPayload(value: String): Self = StObject.set(x, "serializedPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwts(value: js.Array[Jwt]): Self = this.set("jwts", value.asInstanceOf[js.Any])
+    def setSerializedPayloadUndefined: Self = StObject.set(x, "serializedPayload", js.undefined)
     
     @scala.inline
-    def deleteJwts: Self = this.set("jwts", js.undefined)
+    def setSignatures(value: js.Array[Signature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializedPayload(value: String): Self = this.set("serializedPayload", value.asInstanceOf[js.Any])
+    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
     @scala.inline
-    def deleteSerializedPayload: Self = this.set("serializedPayload", js.undefined)
-    
-    @scala.inline
-    def setSignaturesVarargs(value: Signature*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[Signature]): Self = this.set("signatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatures: Self = this.set("signatures", js.undefined)
+    def setSignaturesVarargs(value: Signature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

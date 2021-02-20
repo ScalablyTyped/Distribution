@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvBrowseFeedResponseBiographyWithEntities extends js.Object {
+trait IgtvBrowseFeedResponseBiographyWithEntities extends StObject {
   
   var entities: js.Array[_] = js.native
   
@@ -20,27 +21,15 @@ object IgtvBrowseFeedResponseBiographyWithEntities {
   }
   
   @scala.inline
-  implicit class IgtvBrowseFeedResponseBiographyWithEntitiesOps[Self <: IgtvBrowseFeedResponseBiographyWithEntities] (val x: Self) extends AnyVal {
+  implicit class IgtvBrowseFeedResponseBiographyWithEntitiesMutableBuilder[Self <: IgtvBrowseFeedResponseBiographyWithEntities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Array[_]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntitiesVarargs(value: js.Any*): Self = this.set("entities", js.Array(value :_*))
-    
-    @scala.inline
-    def setEntities(value: js.Array[_]): Self = this.set("entities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRaw_text(value: String): Self = this.set("raw_text", value.asInstanceOf[js.Any])
+    def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDisassociateApprovalRuleTemplateFromRepositoriesError extends js.Object {
+trait BatchDisassociateApprovalRuleTemplateFromRepositoriesError extends StObject {
   
   /**
     * An error code that specifies whether the repository name was not valid or not found.
@@ -31,36 +32,24 @@ object BatchDisassociateApprovalRuleTemplateFromRepositoriesError {
   }
   
   @scala.inline
-  implicit class BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorOps[Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesError] (val x: Self) extends AnyVal {
+  implicit class BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorMutableBuilder[Self <: BatchDisassociateApprovalRuleTemplateFromRepositoriesError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.jsrsasign.anon
 
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Digalg extends js.Object {
+trait Digalg extends StObject {
   
   var digalg: String = js.native
   
@@ -39,39 +40,27 @@ object Digalg {
   }
   
   @scala.inline
-  implicit class DigalgOps[Self <: Digalg] (val x: Self) extends AnyVal {
+  implicit class DigalgMutableBuilder[Self <: Digalg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDigalg(value: String): Self = StObject.set(x, "digalg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObj(value: SignerInfo): Self = StObject.set(x, "obj", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSattrs(value: String): Self = StObject.set(x, "sattrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigalg(value: String): Self = this.set("digalg", value.asInstanceOf[js.Any])
+    def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObj(value: SignerInfo): Self = this.set("obj", value.asInstanceOf[js.Any])
+    def setSigalg(value: String): Self = StObject.set(x, "sigalg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSattrs(value: String): Self = this.set("sattrs", value.asInstanceOf[js.Any])
+    def setSigval(value: String): Self = StObject.set(x, "sigval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSi(value: String): Self = this.set("si", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigalg(value: String): Self = this.set("sigalg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSigval(value: String): Self = this.set("sigval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

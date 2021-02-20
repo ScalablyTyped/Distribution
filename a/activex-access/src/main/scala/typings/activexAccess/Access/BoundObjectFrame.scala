@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundObjectFrame extends js.Object {
+trait BoundObjectFrame extends StObject {
   
   @JSName("Access.BoundObjectFrame_typekey")
   var AccessDotBoundObjectFrame_typekey: BoundObjectFrame = js.native

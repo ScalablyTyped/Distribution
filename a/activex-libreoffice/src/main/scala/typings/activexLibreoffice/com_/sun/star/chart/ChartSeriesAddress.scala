@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.chart
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The cell addresses are in the format of the application that contains this chart.
   */
 @js.native
-trait ChartSeriesAddress extends js.Object {
+trait ChartSeriesAddress extends StObject {
   
   /** contains the cell range address of the data for this series. */
   var DataRangeAddress: String = js.native
@@ -35,27 +36,15 @@ object ChartSeriesAddress {
   }
   
   @scala.inline
-  implicit class ChartSeriesAddressOps[Self <: ChartSeriesAddress] (val x: Self) extends AnyVal {
+  implicit class ChartSeriesAddressMutableBuilder[Self <: ChartSeriesAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataRangeAddress(value: String): Self = StObject.set(x, "DataRangeAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainRangeAddresses(value: SafeArray[String]): Self = StObject.set(x, "DomainRangeAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataRangeAddress(value: String): Self = this.set("DataRangeAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDomainRangeAddresses(value: SafeArray[String]): Self = this.set("DomainRangeAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabelAddress(value: String): Self = this.set("LabelAddress", value.asInstanceOf[js.Any])
+    def setLabelAddress(value: String): Self = StObject.set(x, "LabelAddress", value.asInstanceOf[js.Any])
   }
 }

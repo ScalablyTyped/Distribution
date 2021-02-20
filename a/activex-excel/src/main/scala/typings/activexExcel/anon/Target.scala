@@ -2,12 +2,13 @@ package typings.activexExcel.anon
 
 import typings.activexExcel.Excel.Range
 import typings.activexExcel.Excel.Worksheet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Target extends js.Object {
+trait Target extends StObject {
   
   var Cancel: Boolean = js.native
   

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReleasesResponse extends js.Object {
+trait ListReleasesResponse extends StObject {
   
   /** The pagination token to retrieve the next page of results. If the value is empty, no further results remain. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object ListReleasesResponse {
   }
   
   @scala.inline
-  implicit class ListReleasesResponseOps[Self <: ListReleasesResponse] (val x: Self) extends AnyVal {
+  implicit class ListReleasesResponseMutableBuilder[Self <: ListReleasesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setReleasesVarargs(value: Release*): Self = this.set("releases", js.Array(value :_*))
-    
-    @scala.inline
-    def setReleases(value: js.Array[Release]): Self = this.set("releases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReleases: Self = this.set("releases", js.undefined)
+    def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
   }
 }

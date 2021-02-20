@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsIamRolePolicy extends js.Object {
+trait AwsIamRolePolicy extends StObject {
   
   /**
     * The name of the policy.
@@ -21,24 +22,12 @@ object AwsIamRolePolicy {
   }
   
   @scala.inline
-  implicit class AwsIamRolePolicyOps[Self <: AwsIamRolePolicy] (val x: Self) extends AnyVal {
+  implicit class AwsIamRolePolicyMutableBuilder[Self <: AwsIamRolePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyName(value: NonEmptyString): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyName(value: NonEmptyString): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyName: Self = this.set("PolicyName", js.undefined)
+    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
   }
 }

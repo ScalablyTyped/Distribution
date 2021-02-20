@@ -1,14 +1,16 @@
 package typings.videoJs.videoCoreNovttMod.default
 
+import typings.videoJs.mod.videojs.ControlBar
 import typings.videoJs.mod.videojs.ControlBarOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core.novtt", "ControlBar")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core.novtt", "default.ControlBar")
 @js.native
-class ControlBarCls protected ()
-  extends typings.videoJs.mod.videojs.ControlBar {
+class ControlBarCls protected () extends ControlBar {
   /**
     * Creates an instance of this class.
     *

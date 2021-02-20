@@ -5,12 +5,13 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.DateParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accuracy extends js.Object {
+trait Accuracy extends StObject {
   
   var accuracy: js.UndefOr[Micros] = js.native
   
@@ -37,60 +38,48 @@ object Accuracy {
   }
   
   @scala.inline
-  implicit class AccuracyOps[Self <: Accuracy] (val x: Self) extends AnyVal {
+  implicit class AccuracyMutableBuilder[Self <: Accuracy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Micros): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenTime(value: StringParam | HexParam | DateParam | String): Self = StObject.set(x, "genTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageImprint(value: HashMsgHex): Self = this.set("messageImprint", value.asInstanceOf[js.Any])
+    def setGenTimeUndefined: Self = StObject.set(x, "genTime", js.undefined)
     
     @scala.inline
-    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setMessageImprint(value: HashMsgHex): Self = StObject.set(x, "messageImprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Micros): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setNonce(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
     
     @scala.inline
-    def setGenTime(value: StringParam | HexParam | DateParam | String): Self = this.set("genTime", value.asInstanceOf[js.Any])
+    def setOrdering(value: Boolean): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGenTime: Self = this.set("genTime", js.undefined)
+    def setOrderingUndefined: Self = StObject.set(x, "ordering", js.undefined)
     
     @scala.inline
-    def setNonce(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNonce: Self = this.set("nonce", js.undefined)
+    def setSerialNumber(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrdering(value: Boolean): Self = this.set("ordering", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
     @scala.inline
-    def deleteOrdering: Self = this.set("ordering", js.undefined)
+    def setTsa(value: StringParam): Self = StObject.set(x, "tsa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
-    
-    @scala.inline
-    def setTsa(value: StringParam): Self = this.set("tsa", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTsa: Self = this.set("tsa", js.undefined)
+    def setTsaUndefined: Self = StObject.set(x, "tsa", js.undefined)
   }
 }

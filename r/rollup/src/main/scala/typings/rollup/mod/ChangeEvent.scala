@@ -1,5 +1,6 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rollup.rollupStrings.update
   - typings.rollup.rollupStrings.delete
 */
-trait ChangeEvent extends js.Object
+trait ChangeEvent extends StObject
 object ChangeEvent {
   
   @scala.inline

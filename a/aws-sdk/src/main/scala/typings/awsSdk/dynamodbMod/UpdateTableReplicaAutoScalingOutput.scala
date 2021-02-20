@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTableReplicaAutoScalingOutput extends js.Object {
+trait UpdateTableReplicaAutoScalingOutput extends StObject {
   
   /**
     * Returns information about the auto scaling settings of a table with replicas.
@@ -21,24 +22,12 @@ object UpdateTableReplicaAutoScalingOutput {
   }
   
   @scala.inline
-  implicit class UpdateTableReplicaAutoScalingOutputOps[Self <: UpdateTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateTableReplicaAutoScalingOutputMutableBuilder[Self <: UpdateTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = this.set("TableAutoScalingDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableAutoScalingDescription: Self = this.set("TableAutoScalingDescription", js.undefined)
+    def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
   }
 }

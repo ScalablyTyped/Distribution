@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EgressEndpoint extends js.Object {
+trait EgressEndpoint extends StObject {
   
   /**
     * The ID of the PackagingConfiguration being applied to the Asset.
@@ -26,30 +27,18 @@ object EgressEndpoint {
   }
   
   @scala.inline
-  implicit class EgressEndpointOps[Self <: EgressEndpoint] (val x: Self) extends AnyVal {
+  implicit class EgressEndpointMutableBuilder[Self <: EgressEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPackagingConfigurationId(value: string): Self = StObject.set(x, "PackagingConfigurationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPackagingConfigurationIdUndefined: Self = StObject.set(x, "PackagingConfigurationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackagingConfigurationId(value: string): Self = this.set("PackagingConfigurationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackagingConfigurationId: Self = this.set("PackagingConfigurationId", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

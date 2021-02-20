@@ -2,12 +2,13 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.i18nAstMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locale extends js.Object {
+trait Locale extends StObject {
   
   var i18nNodesByMsgId: StringDictionary[js.Array[Node]] = js.native
   
@@ -22,24 +23,12 @@ object Locale {
   }
   
   @scala.inline
-  implicit class LocaleOps[Self <: Locale] (val x: Self) extends AnyVal {
+  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setI18nNodesByMsgId(value: StringDictionary[js.Array[Node]]): Self = StObject.set(x, "i18nNodesByMsgId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setI18nNodesByMsgId(value: StringDictionary[js.Array[Node]]): Self = this.set("i18nNodesByMsgId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
   }
 }

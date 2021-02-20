@@ -1,5 +1,6 @@
 package typings.jqueryTimepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("jquery.timepicker", JSImport.Namespace)
 @js.native
-object jqueryTimepickerRequire extends js.Object
+object jqueryTimepickerRequire extends StObject

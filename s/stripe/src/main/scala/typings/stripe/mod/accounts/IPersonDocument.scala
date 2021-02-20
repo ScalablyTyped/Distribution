@@ -1,5 +1,6 @@
 package typings.stripe.mod.accounts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object IPersonDocument {
   }
   
   @scala.inline
-  implicit class IPersonDocumentOps[Self <: IPersonDocument] (val x: Self) extends AnyVal {
+  implicit class IPersonDocumentMutableBuilder[Self <: IPersonDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetails_code(value: String): Self = StObject.set(x, "details_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
-    
-    @scala.inline
-    def setDetails_code(value: String): Self = this.set("details_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails_code: Self = this.set("details_code", js.undefined)
+    def setDetails_codeUndefined: Self = StObject.set(x, "details_code", js.undefined)
   }
 }

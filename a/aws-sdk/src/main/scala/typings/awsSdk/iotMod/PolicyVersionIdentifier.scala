@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyVersionIdentifier extends js.Object {
+trait PolicyVersionIdentifier extends StObject {
   
   /**
     * The name of the policy.
@@ -26,30 +27,18 @@ object PolicyVersionIdentifier {
   }
   
   @scala.inline
-  implicit class PolicyVersionIdentifierOps[Self <: PolicyVersionIdentifier] (val x: Self) extends AnyVal {
+  implicit class PolicyVersionIdentifierMutableBuilder[Self <: PolicyVersionIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyVersionId(value: PolicyVersionId): Self = StObject.set(x, "policyVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyName(value: PolicyName): Self = this.set("policyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyName: Self = this.set("policyName", js.undefined)
-    
-    @scala.inline
-    def setPolicyVersionId(value: PolicyVersionId): Self = this.set("policyVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyVersionId: Self = this.set("policyVersionId", js.undefined)
+    def setPolicyVersionIdUndefined: Self = StObject.set(x, "policyVersionId", js.undefined)
   }
 }

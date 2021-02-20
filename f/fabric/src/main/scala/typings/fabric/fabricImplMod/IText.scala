@@ -8,6 +8,7 @@ import typings.std.Event
 import typings.std.HTMLTextAreaElement
 import typings.std.MouseEvent
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -576,9 +577,7 @@ class IText protected () extends Text {
   var useNative: js.UndefOr[Boolean] = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "IText")
-@js.native
-object IText extends js.Object {
+object IText {
   
   /**
     * Returns fabric.IText instance from an object representation
@@ -587,6 +586,10 @@ object IText extends js.Object {
     * @param {Object} object Object to create an instance from
     * @param {function} [callback] invoked with new instance as argument
     */
+  @JSImport("fabric/fabric-impl", "IText.fromObject")
+  @js.native
   def fromObject(`object`: js.Any): IText = js.native
+  @JSImport("fabric/fabric-impl", "IText.fromObject")
+  @js.native
   def fromObject(`object`: js.Any, callback: js.Function): IText = js.native
 }

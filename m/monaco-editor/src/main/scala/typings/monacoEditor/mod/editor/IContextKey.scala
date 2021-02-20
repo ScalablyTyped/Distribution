@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContextKey[T] extends js.Object {
+trait IContextKey[T] extends StObject {
   
   def get(): js.UndefOr[T] = js.native
   
@@ -22,27 +23,15 @@ object IContextKey {
   }
   
   @scala.inline
-  implicit class IContextKeyOps[Self <: IContextKey[_], T] (val x: Self with IContextKey[T]) extends AnyVal {
+  implicit class IContextKeyMutableBuilder[Self <: IContextKey[_], T] (val x: Self with IContextKey[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: () => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: () => js.UndefOr[T]): Self = this.set("get", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: T => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

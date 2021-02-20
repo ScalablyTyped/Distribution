@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpParameters extends js.Object {
+trait HttpParameters extends StObject {
   
   /**
     * The headers that need to be sent as part of request invoking the API Gateway REST API.
@@ -31,39 +32,27 @@ object HttpParameters {
   }
   
   @scala.inline
-  implicit class HttpParametersOps[Self <: HttpParameters] (val x: Self) extends AnyVal {
+  implicit class HttpParametersMutableBuilder[Self <: HttpParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderParameters(value: HeaderParametersMap): Self = StObject.set(x, "HeaderParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderParametersUndefined: Self = StObject.set(x, "HeaderParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathParameterValues(value: PathParameterList): Self = StObject.set(x, "PathParameterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderParameters(value: HeaderParametersMap): Self = this.set("HeaderParameters", value.asInstanceOf[js.Any])
+    def setPathParameterValuesUndefined: Self = StObject.set(x, "PathParameterValues", js.undefined)
     
     @scala.inline
-    def deleteHeaderParameters: Self = this.set("HeaderParameters", js.undefined)
+    def setPathParameterValuesVarargs(value: PathParameter*): Self = StObject.set(x, "PathParameterValues", js.Array(value :_*))
     
     @scala.inline
-    def setPathParameterValuesVarargs(value: PathParameter*): Self = this.set("PathParameterValues", js.Array(value :_*))
+    def setQueryStringParameters(value: QueryStringParametersMap): Self = StObject.set(x, "QueryStringParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathParameterValues(value: PathParameterList): Self = this.set("PathParameterValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathParameterValues: Self = this.set("PathParameterValues", js.undefined)
-    
-    @scala.inline
-    def setQueryStringParameters(value: QueryStringParametersMap): Self = this.set("QueryStringParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryStringParameters: Self = this.set("QueryStringParameters", js.undefined)
+    def setQueryStringParametersUndefined: Self = StObject.set(x, "QueryStringParameters", js.undefined)
   }
 }

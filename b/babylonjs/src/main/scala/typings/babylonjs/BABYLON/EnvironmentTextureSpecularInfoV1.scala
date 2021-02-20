@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentTextureSpecularInfoV1 extends js.Object {
+trait EnvironmentTextureSpecularInfoV1 extends StObject {
   
   /**
     * Defines the scale applied to environment texture. This manages the range of LOD level used for IBL according to the roughness.
@@ -31,33 +32,21 @@ object EnvironmentTextureSpecularInfoV1 {
   }
   
   @scala.inline
-  implicit class EnvironmentTextureSpecularInfoV1Ops[Self <: EnvironmentTextureSpecularInfoV1] (val x: Self) extends AnyVal {
+  implicit class EnvironmentTextureSpecularInfoV1MutableBuilder[Self <: EnvironmentTextureSpecularInfoV1] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLodGenerationScale(value: Double): Self = StObject.set(x, "lodGenerationScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMipmaps(value: js.Array[BufferImageData]): Self = StObject.set(x, "mipmaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMipmapsVarargs(value: BufferImageData*): Self = StObject.set(x, "mipmaps", js.Array(value :_*))
     
     @scala.inline
-    def setLodGenerationScale(value: Double): Self = this.set("lodGenerationScale", value.asInstanceOf[js.Any])
+    def setSpecularDataPosition(value: Double): Self = StObject.set(x, "specularDataPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMipmapsVarargs(value: BufferImageData*): Self = this.set("mipmaps", js.Array(value :_*))
-    
-    @scala.inline
-    def setMipmaps(value: js.Array[BufferImageData]): Self = this.set("mipmaps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecularDataPosition(value: Double): Self = this.set("specularDataPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecularDataPosition: Self = this.set("specularDataPosition", js.undefined)
+    def setSpecularDataPositionUndefined: Self = StObject.set(x, "specularDataPosition", js.undefined)
   }
 }

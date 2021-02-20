@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProtectiveEquipmentSummary extends js.Object {
+trait ProtectiveEquipmentSummary extends StObject {
   
   /**
     * An array of IDs for persons where it was not possible to determine if they are wearing personal protective equipment. 
@@ -31,45 +32,33 @@ object ProtectiveEquipmentSummary {
   }
   
   @scala.inline
-  implicit class ProtectiveEquipmentSummaryOps[Self <: ProtectiveEquipmentSummary] (val x: Self) extends AnyVal {
+  implicit class ProtectiveEquipmentSummaryMutableBuilder[Self <: ProtectiveEquipmentSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPersonsIndeterminate(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsIndeterminate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPersonsIndeterminateUndefined: Self = StObject.set(x, "PersonsIndeterminate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPersonsIndeterminateVarargs(value: UInteger*): Self = StObject.set(x, "PersonsIndeterminate", js.Array(value :_*))
     
     @scala.inline
-    def setPersonsIndeterminateVarargs(value: UInteger*): Self = this.set("PersonsIndeterminate", js.Array(value :_*))
+    def setPersonsWithRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithRequiredEquipment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonsIndeterminate(value: ProtectiveEquipmentPersonIds): Self = this.set("PersonsIndeterminate", value.asInstanceOf[js.Any])
+    def setPersonsWithRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithRequiredEquipment", js.undefined)
     
     @scala.inline
-    def deletePersonsIndeterminate: Self = this.set("PersonsIndeterminate", js.undefined)
+    def setPersonsWithRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithRequiredEquipment", js.Array(value :_*))
     
     @scala.inline
-    def setPersonsWithRequiredEquipmentVarargs(value: UInteger*): Self = this.set("PersonsWithRequiredEquipment", js.Array(value :_*))
+    def setPersonsWithoutRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonsWithRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = this.set("PersonsWithRequiredEquipment", value.asInstanceOf[js.Any])
+    def setPersonsWithoutRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.undefined)
     
     @scala.inline
-    def deletePersonsWithRequiredEquipment: Self = this.set("PersonsWithRequiredEquipment", js.undefined)
-    
-    @scala.inline
-    def setPersonsWithoutRequiredEquipmentVarargs(value: UInteger*): Self = this.set("PersonsWithoutRequiredEquipment", js.Array(value :_*))
-    
-    @scala.inline
-    def setPersonsWithoutRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = this.set("PersonsWithoutRequiredEquipment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersonsWithoutRequiredEquipment: Self = this.set("PersonsWithoutRequiredEquipment", js.undefined)
+    def setPersonsWithoutRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.Array(value :_*))
   }
 }

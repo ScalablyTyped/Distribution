@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TranslationResult. */
 @js.native
-trait TranslationResult extends js.Object {
+trait TranslationResult extends StObject {
   
   /** Number of characters in the input text. */
   var character_count: Double = js.native
@@ -26,30 +27,18 @@ object TranslationResult {
   }
   
   @scala.inline
-  implicit class TranslationResultOps[Self <: TranslationResult] (val x: Self) extends AnyVal {
+  implicit class TranslationResultMutableBuilder[Self <: TranslationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacter_count(value: Double): Self = StObject.set(x, "character_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
     
     @scala.inline
-    def setCharacter_count(value: Double): Self = this.set("character_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslationsVarargs(value: Translation*): Self = this.set("translations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTranslations(value: js.Array[Translation]): Self = this.set("translations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWord_count(value: Double): Self = this.set("word_count", value.asInstanceOf[js.Any])
+    def setWord_count(value: Double): Self = StObject.set(x, "word_count", value.asInstanceOf[js.Any])
   }
 }

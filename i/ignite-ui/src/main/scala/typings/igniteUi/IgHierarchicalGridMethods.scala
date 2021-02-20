@@ -1,12 +1,13 @@
 package typings.igniteUi
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgHierarchicalGridMethods extends js.Object {
+trait IgHierarchicalGridMethods extends StObject {
   
   /**
     * Returns a flat list of all child grid elements (recursive)

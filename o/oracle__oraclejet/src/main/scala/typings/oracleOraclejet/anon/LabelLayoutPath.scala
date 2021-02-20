@@ -2,12 +2,13 @@ package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContext
 import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContextLink
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelLayoutPath extends js.Object {
+trait LabelLayoutPath extends StObject {
   
   def labelLayout(context: DvtDiagramLayoutContext, link: DvtDiagramLayoutContextLink): typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout = js.native
   
@@ -25,26 +26,14 @@ object LabelLayoutPath {
   }
   
   @scala.inline
-  implicit class LabelLayoutPathOps[Self <: LabelLayoutPath] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class LabelLayoutPathMutableBuilder[Self <: LabelLayoutPath] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setLabelLayout(
       value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
-    ): Self = this.set("labelLayout", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "labelLayout", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPath(value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => String): Self = this.set("path", js.Any.fromFunction2(value))
+    def setPath(value: (DvtDiagramLayoutContext, DvtDiagramLayoutContextLink) => String): Self = StObject.set(x, "path", js.Any.fromFunction2(value))
   }
 }

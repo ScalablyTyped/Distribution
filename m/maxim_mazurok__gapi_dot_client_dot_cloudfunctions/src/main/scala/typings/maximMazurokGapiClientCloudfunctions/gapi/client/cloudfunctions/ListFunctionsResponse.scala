@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFunctionsResponse extends js.Object {
+trait ListFunctionsResponse extends StObject {
   
   /** The functions that match the request. */
   var functions: js.UndefOr[js.Array[CloudFunction]] = js.native
@@ -28,42 +29,30 @@ object ListFunctionsResponse {
   }
   
   @scala.inline
-  implicit class ListFunctionsResponseOps[Self <: ListFunctionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListFunctionsResponseMutableBuilder[Self <: ListFunctionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctions(value: js.Array[CloudFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionsVarargs(value: CloudFunction*): Self = StObject.set(x, "functions", js.Array(value :_*))
     
     @scala.inline
-    def setFunctionsVarargs(value: CloudFunction*): Self = this.set("functions", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: js.Array[CloudFunction]): Self = this.set("functions", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteFunctions: Self = this.set("functions", js.undefined)
+    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = this.set("unreachable", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = this.set("unreachable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnreachable: Self = this.set("unreachable", js.undefined)
+    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
   }
 }

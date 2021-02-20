@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.global.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.CIM.PlacementEndings")
 @js.native
-object PlacementEndings extends js.Object {
+object PlacementEndings extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.arcgisJsApi.esri.CIM.PlacementEndings with String] = js.native

@@ -1,5 +1,6 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 开发者可以添加任意的函数或数据到 Object 参数中，用 this 可以访问
   */
 @js.native
-trait AppOptions extends js.Object {
+trait AppOptions extends StObject {
   
   /**
     * 全局Data
@@ -59,54 +60,42 @@ object AppOptions {
   }
   
   @scala.inline
-  implicit class AppOptionsOps[Self <: AppOptions] (val x: Self) extends AnyVal {
+  implicit class AppOptionsMutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalData(value: js.Object): Self = StObject.set(x, "globalData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalDataUndefined: Self = StObject.set(x, "globalData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnError(value: /* msg */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGlobalData(value: js.Object): Self = this.set("globalData", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteGlobalData: Self = this.set("globalData", js.undefined)
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* msg */ String => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnLaunch(value: /* option */ LaunchOptions => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnLaunchUndefined: Self = StObject.set(x, "onLaunch", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnShow(value: /* option */ LaunchOptions => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLaunch(value: /* option */ LaunchOptions => Unit): Self = this.set("onLaunch", js.Any.fromFunction1(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnLaunch: Self = this.set("onLaunch", js.undefined)
+    def setOnUnlaunch(value: () => Unit): Self = StObject.set(x, "onUnlaunch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnShow(value: /* option */ LaunchOptions => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
-    
-    @scala.inline
-    def setOnUnlaunch(value: () => Unit): Self = this.set("onUnlaunch", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnUnlaunch: Self = this.set("onUnlaunch", js.undefined)
+    def setOnUnlaunchUndefined: Self = StObject.set(x, "onUnlaunch", js.undefined)
   }
 }

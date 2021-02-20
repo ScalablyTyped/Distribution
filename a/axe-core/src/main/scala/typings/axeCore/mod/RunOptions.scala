@@ -1,11 +1,12 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunOptions extends js.Object {
+trait RunOptions extends StObject {
   
   var absolutePaths: js.UndefOr[Boolean] = js.native
   
@@ -42,102 +43,90 @@ object RunOptions {
   }
   
   @scala.inline
-  implicit class RunOptionsOps[Self <: RunOptions] (val x: Self) extends AnyVal {
+  implicit class RunOptionsMutableBuilder[Self <: RunOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePaths(value: Boolean): Self = StObject.set(x, "absolutePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePathsUndefined: Self = StObject.set(x, "absolutePaths", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAncestry(value: Boolean): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutePaths(value: Boolean): Self = this.set("absolutePaths", value.asInstanceOf[js.Any])
+    def setAncestryUndefined: Self = StObject.set(x, "ancestry", js.undefined)
     
     @scala.inline
-    def deleteAbsolutePaths: Self = this.set("absolutePaths", js.undefined)
+    def setElementRef(value: Boolean): Self = StObject.set(x, "elementRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAncestry(value: Boolean): Self = this.set("ancestry", value.asInstanceOf[js.Any])
+    def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
     
     @scala.inline
-    def deleteAncestry: Self = this.set("ancestry", js.undefined)
+    def setFrameWaitTime(value: Double): Self = StObject.set(x, "frameWaitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementRef(value: Boolean): Self = this.set("elementRef", value.asInstanceOf[js.Any])
+    def setFrameWaitTimeUndefined: Self = StObject.set(x, "frameWaitTime", js.undefined)
     
     @scala.inline
-    def deleteElementRef: Self = this.set("elementRef", js.undefined)
+    def setIframes(value: Boolean): Self = StObject.set(x, "iframes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameWaitTime(value: Double): Self = this.set("frameWaitTime", value.asInstanceOf[js.Any])
+    def setIframesUndefined: Self = StObject.set(x, "iframes", js.undefined)
     
     @scala.inline
-    def deleteFrameWaitTime: Self = this.set("frameWaitTime", js.undefined)
+    def setPerformanceTimer(value: Boolean): Self = StObject.set(x, "performanceTimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframes(value: Boolean): Self = this.set("iframes", value.asInstanceOf[js.Any])
+    def setPerformanceTimerUndefined: Self = StObject.set(x, "performanceTimer", js.undefined)
     
     @scala.inline
-    def deleteIframes: Self = this.set("iframes", js.undefined)
+    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformanceTimer(value: Boolean): Self = this.set("performanceTimer", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePerformanceTimer: Self = this.set("performanceTimer", js.undefined)
+    def setReporter(value: ReporterVersion): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreload(value: Boolean): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setResultTypes(value: js.Array[resultGroups]): Self = StObject.set(x, "resultTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReporter(value: ReporterVersion): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    def setResultTypesUndefined: Self = StObject.set(x, "resultTypes", js.undefined)
     
     @scala.inline
-    def deleteReporter: Self = this.set("reporter", js.undefined)
+    def setResultTypesVarargs(value: resultGroups*): Self = StObject.set(x, "resultTypes", js.Array(value :_*))
     
     @scala.inline
-    def setResultTypesVarargs(value: resultGroups*): Self = this.set("resultTypes", js.Array(value :_*))
+    def setRules(value: RuleObject): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultTypes(value: js.Array[resultGroups]): Self = this.set("resultTypes", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteResultTypes: Self = this.set("resultTypes", js.undefined)
+    def setRunOnly(value: RunOnly | (js.Array[String | TagValue])): Self = StObject.set(x, "runOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: RuleObject): Self = this.set("rules", value.asInstanceOf[js.Any])
+    def setRunOnlyUndefined: Self = StObject.set(x, "runOnly", js.undefined)
     
     @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRunOnlyVarargs(value: (String | TagValue)*): Self = StObject.set(x, "runOnly", js.Array(value :_*))
     
     @scala.inline
-    def setRunOnlyVarargs(value: (String | TagValue)*): Self = this.set("runOnly", js.Array(value :_*))
+    def setSelectors(value: Boolean): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunOnly(value: RunOnly | (js.Array[String | TagValue])): Self = this.set("runOnly", value.asInstanceOf[js.Any])
+    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
     @scala.inline
-    def deleteRunOnly: Self = this.set("runOnly", js.undefined)
+    def setXpath(value: Boolean): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectors(value: Boolean): Self = this.set("selectors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectors: Self = this.set("selectors", js.undefined)
-    
-    @scala.inline
-    def setXpath(value: Boolean): Self = this.set("xpath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXpath: Self = this.set("xpath", js.undefined)
+    def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
   }
 }

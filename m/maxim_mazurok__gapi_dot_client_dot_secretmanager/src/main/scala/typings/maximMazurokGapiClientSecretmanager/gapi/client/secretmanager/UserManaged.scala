@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserManaged extends js.Object {
+trait UserManaged extends StObject {
   
   /** Required. The list of Replicas for this Secret. Cannot be empty. */
   var replicas: js.UndefOr[js.Array[Replica]] = js.native
@@ -19,27 +20,15 @@ object UserManaged {
   }
   
   @scala.inline
-  implicit class UserManagedOps[Self <: UserManaged] (val x: Self) extends AnyVal {
+  implicit class UserManagedMutableBuilder[Self <: UserManaged] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicas(value: js.Array[Replica]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicasVarargs(value: Replica*): Self = this.set("replicas", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicas(value: js.Array[Replica]): Self = this.set("replicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicas: Self = this.set("replicas", js.undefined)
+    def setReplicasVarargs(value: Replica*): Self = StObject.set(x, "replicas", js.Array(value :_*))
   }
 }

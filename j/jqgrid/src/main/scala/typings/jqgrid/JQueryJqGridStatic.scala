@@ -1,11 +1,12 @@
 package typings.jqgrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryJqGridStatic extends js.Object {
+trait JQueryJqGridStatic extends StObject {
   
   def apply(): JQuery = js.native
   def apply(gridName: String): js.Any = js.native

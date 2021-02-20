@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZIndexProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait ZIndexProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The z-index CSS property sets the z-order of a positioned element and its descendants or
@@ -29,22 +30,7 @@ object ZIndexProps {
   }
   
   @scala.inline
-  implicit class ZIndexPropsOps[Self <: ZIndexProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with ZIndexProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setZIndexVarargs(value: (js.Any | Null)*): Self = this.set("zIndex", js.Array(value :_*))
+  implicit class ZIndexPropsMutableBuilder[Self <: ZIndexProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with ZIndexProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setZIndex(
@@ -52,12 +38,15 @@ object ZIndexProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _, 
           ThemeType
         ]
-    ): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexNull: Self = StObject.set(x, "zIndex", null)
     
     @scala.inline
-    def setZIndexNull: Self = this.set("zIndex", null)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    
+    @scala.inline
+    def setZIndexVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "zIndex", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.ractive.mod
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Registries[T /* <: Ractive[T] */] extends js.Object {
+trait Registries[T /* <: Ractive[T] */] extends StObject {
   
   var adaptors: Registry[Adaptor] = js.native
   
@@ -42,42 +43,30 @@ object Registries {
   }
   
   @scala.inline
-  implicit class RegistriesOps[Self <: Registries[_], T /* <: Ractive[T] */] (val x: Self with Registries[T]) extends AnyVal {
+  implicit class RegistriesMutableBuilder[Self <: Registries[_], T /* <: Ractive[T] */] (val x: Self with Registries[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdaptors(value: Registry[Adaptor]): Self = StObject.set(x, "adaptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponents(value: Registry[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecorators(value: Registry[Decorator[T]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdaptors(value: Registry[Adaptor]): Self = this.set("adaptors", value.asInstanceOf[js.Any])
+    def setEasings(value: Registry[Easing]): Self = StObject.set(x, "easings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: Registry[Component]): Self = this.set("components", value.asInstanceOf[js.Any])
+    def setEvents(value: Registry[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: Registry[Decorator[T]]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setHelpers(value: Registry[Helper]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasings(value: Registry[Easing]): Self = this.set("easings", value.asInstanceOf[js.Any])
+    def setInterpolators(value: Registry[Interpolator]): Self = StObject.set(x, "interpolators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: Registry[Event]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHelpers(value: Registry[Helper]): Self = this.set("helpers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterpolators(value: Registry[Interpolator]): Self = this.set("interpolators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartials(value: Registry[Partial]): Self = this.set("partials", value.asInstanceOf[js.Any])
+    def setPartials(value: Registry[Partial]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
   }
 }

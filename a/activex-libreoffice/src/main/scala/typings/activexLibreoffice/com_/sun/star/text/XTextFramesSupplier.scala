@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object XTextFramesSupplier {
   }
   
   @scala.inline
-  implicit class XTextFramesSupplierOps[Self <: XTextFramesSupplier] (val x: Self) extends AnyVal {
+  implicit class XTextFramesSupplierMutableBuilder[Self <: XTextFramesSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTextFrames(value: () => XNameAccess): Self = StObject.set(x, "getTextFrames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextFrames(value: XNameAccess): Self = this.set("TextFrames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetTextFrames(value: () => XNameAccess): Self = this.set("getTextFrames", js.Any.fromFunction0(value))
+    def setTextFrames(value: XNameAccess): Self = StObject.set(x, "TextFrames", value.asInstanceOf[js.Any])
   }
 }

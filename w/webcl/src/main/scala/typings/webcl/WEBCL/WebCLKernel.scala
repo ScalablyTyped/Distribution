@@ -1,13 +1,14 @@
 package typings.webcl.WEBCL
 
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.9
 @js.native
-trait WebCLKernel extends js.Object {
+trait WebCLKernel extends StObject {
   
   def getArgInfo(index: Double): WebCLKernelArgInfo = js.native
   

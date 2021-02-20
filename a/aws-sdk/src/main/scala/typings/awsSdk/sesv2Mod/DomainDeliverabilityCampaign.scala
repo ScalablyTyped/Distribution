@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainDeliverabilityCampaign extends js.Object {
+trait DomainDeliverabilityCampaign extends StObject {
   
   /**
     * The unique identifier for the campaign. The Deliverability dashboard automatically generates and assigns this identifier to a campaign.
@@ -86,108 +87,96 @@ object DomainDeliverabilityCampaign {
   }
   
   @scala.inline
-  implicit class DomainDeliverabilityCampaignOps[Self <: DomainDeliverabilityCampaign] (val x: Self) extends AnyVal {
+  implicit class DomainDeliverabilityCampaignMutableBuilder[Self <: DomainDeliverabilityCampaign] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaignId(value: CampaignId): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaignIdUndefined: Self = StObject.set(x, "CampaignId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteRate(value: Percentage): Self = StObject.set(x, "DeleteRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignId(value: CampaignId): Self = this.set("CampaignId", value.asInstanceOf[js.Any])
+    def setDeleteRateUndefined: Self = StObject.set(x, "DeleteRate", js.undefined)
     
     @scala.inline
-    def deleteCampaignId: Self = this.set("CampaignId", js.undefined)
+    def setEsps(value: Esps): Self = StObject.set(x, "Esps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteRate(value: Percentage): Self = this.set("DeleteRate", value.asInstanceOf[js.Any])
+    def setEspsUndefined: Self = StObject.set(x, "Esps", js.undefined)
     
     @scala.inline
-    def deleteDeleteRate: Self = this.set("DeleteRate", js.undefined)
+    def setEspsVarargs(value: Esp*): Self = StObject.set(x, "Esps", js.Array(value :_*))
     
     @scala.inline
-    def setEspsVarargs(value: Esp*): Self = this.set("Esps", js.Array(value :_*))
+    def setFirstSeenDateTime(value: Timestamp): Self = StObject.set(x, "FirstSeenDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEsps(value: Esps): Self = this.set("Esps", value.asInstanceOf[js.Any])
+    def setFirstSeenDateTimeUndefined: Self = StObject.set(x, "FirstSeenDateTime", js.undefined)
     
     @scala.inline
-    def deleteEsps: Self = this.set("Esps", js.undefined)
+    def setFromAddress(value: Identity): Self = StObject.set(x, "FromAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSeenDateTime(value: Timestamp): Self = this.set("FirstSeenDateTime", value.asInstanceOf[js.Any])
+    def setFromAddressUndefined: Self = StObject.set(x, "FromAddress", js.undefined)
     
     @scala.inline
-    def deleteFirstSeenDateTime: Self = this.set("FirstSeenDateTime", js.undefined)
+    def setImageUrl(value: ImageUrl): Self = StObject.set(x, "ImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromAddress(value: Identity): Self = this.set("FromAddress", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
     
     @scala.inline
-    def deleteFromAddress: Self = this.set("FromAddress", js.undefined)
+    def setInboxCount(value: Volume): Self = StObject.set(x, "InboxCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: ImageUrl): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    def setInboxCountUndefined: Self = StObject.set(x, "InboxCount", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    def setLastSeenDateTime(value: Timestamp): Self = StObject.set(x, "LastSeenDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInboxCount(value: Volume): Self = this.set("InboxCount", value.asInstanceOf[js.Any])
+    def setLastSeenDateTimeUndefined: Self = StObject.set(x, "LastSeenDateTime", js.undefined)
     
     @scala.inline
-    def deleteInboxCount: Self = this.set("InboxCount", js.undefined)
+    def setProjectedVolume(value: Volume): Self = StObject.set(x, "ProjectedVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSeenDateTime(value: Timestamp): Self = this.set("LastSeenDateTime", value.asInstanceOf[js.Any])
+    def setProjectedVolumeUndefined: Self = StObject.set(x, "ProjectedVolume", js.undefined)
     
     @scala.inline
-    def deleteLastSeenDateTime: Self = this.set("LastSeenDateTime", js.undefined)
+    def setReadDeleteRate(value: Percentage): Self = StObject.set(x, "ReadDeleteRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectedVolume(value: Volume): Self = this.set("ProjectedVolume", value.asInstanceOf[js.Any])
+    def setReadDeleteRateUndefined: Self = StObject.set(x, "ReadDeleteRate", js.undefined)
     
     @scala.inline
-    def deleteProjectedVolume: Self = this.set("ProjectedVolume", js.undefined)
+    def setReadRate(value: Percentage): Self = StObject.set(x, "ReadRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadDeleteRate(value: Percentage): Self = this.set("ReadDeleteRate", value.asInstanceOf[js.Any])
+    def setReadRateUndefined: Self = StObject.set(x, "ReadRate", js.undefined)
     
     @scala.inline
-    def deleteReadDeleteRate: Self = this.set("ReadDeleteRate", js.undefined)
+    def setSendingIps(value: IpList): Self = StObject.set(x, "SendingIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadRate(value: Percentage): Self = this.set("ReadRate", value.asInstanceOf[js.Any])
+    def setSendingIpsUndefined: Self = StObject.set(x, "SendingIps", js.undefined)
     
     @scala.inline
-    def deleteReadRate: Self = this.set("ReadRate", js.undefined)
+    def setSendingIpsVarargs(value: Ip*): Self = StObject.set(x, "SendingIps", js.Array(value :_*))
     
     @scala.inline
-    def setSendingIpsVarargs(value: Ip*): Self = this.set("SendingIps", js.Array(value :_*))
+    def setSpamCount(value: Volume): Self = StObject.set(x, "SpamCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendingIps(value: IpList): Self = this.set("SendingIps", value.asInstanceOf[js.Any])
+    def setSpamCountUndefined: Self = StObject.set(x, "SpamCount", js.undefined)
     
     @scala.inline
-    def deleteSendingIps: Self = this.set("SendingIps", js.undefined)
+    def setSubject(value: Subject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpamCount(value: Volume): Self = this.set("SpamCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpamCount: Self = this.set("SpamCount", js.undefined)
-    
-    @scala.inline
-    def setSubject(value: Subject): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("Subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
   }
 }

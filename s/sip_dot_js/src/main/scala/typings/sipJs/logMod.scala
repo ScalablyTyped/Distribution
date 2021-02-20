@@ -1,15 +1,15 @@
 package typings.sipJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/log", JSImport.Namespace)
-@js.native
-object logMod extends js.Object {
+object logMod {
   
+  @JSImport("sip.js/lib/core/log", "Levels")
   @js.native
-  object Levels extends js.Object {
+  object Levels extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sipJs.levelsMod.Levels with Double] = js.native
@@ -23,6 +23,7 @@ object logMod extends js.Object {
     /* 1 */ val warn: typings.sipJs.levelsMod.Levels.warn with Double = js.native
   }
   
+  @JSImport("sip.js/lib/core/log", "Logger")
   @js.native
   class Logger protected ()
     extends typings.sipJs.loggerMod.Logger {
@@ -30,6 +31,7 @@ object logMod extends js.Object {
     def this(logger: typings.sipJs.loggerFactoryMod.LoggerFactory, category: String, label: String) = this()
   }
   
+  @JSImport("sip.js/lib/core/log", "LoggerFactory")
   @js.native
   class LoggerFactory ()
     extends typings.sipJs.loggerFactoryMod.LoggerFactory

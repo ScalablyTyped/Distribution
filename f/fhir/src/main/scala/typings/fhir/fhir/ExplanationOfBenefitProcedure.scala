@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,51 +50,39 @@ object ExplanationOfBenefitProcedure {
   }
   
   @scala.inline
-  implicit class ExplanationOfBenefitProcedureOps[Self <: ExplanationOfBenefitProcedure] (val x: Self) extends AnyVal {
+  implicit class ExplanationOfBenefitProcedureMutableBuilder[Self <: ExplanationOfBenefitProcedure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcedureCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "procedureCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setProcedureCodeableConceptUndefined: Self = StObject.set(x, "procedureCodeableConcept", js.undefined)
     
     @scala.inline
-    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    def setProcedureReference(value: Reference): Self = StObject.set(x, "procedureReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_date: Self = this.set("_date", js.undefined)
+    def setProcedureReferenceUndefined: Self = StObject.set(x, "procedureReference", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcedureCodeableConcept(value: CodeableConcept): Self = this.set("procedureCodeableConcept", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcedureCodeableConcept: Self = this.set("procedureCodeableConcept", js.undefined)
-    
-    @scala.inline
-    def setProcedureReference(value: Reference): Self = this.set("procedureReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcedureReference: Self = this.set("procedureReference", js.undefined)
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
   }
 }

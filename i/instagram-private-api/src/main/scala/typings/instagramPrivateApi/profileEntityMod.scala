@@ -1,17 +1,19 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
+import typings.instagramPrivateApi.entityMod.Entity
 import typings.instagramPrivateApi.friendshipRepositoryChangeResponseMod.FriendshipRepositoryChangeResponseFriendshipStatus
-import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/entities/profile.entity", JSImport.Namespace)
-@js.native
-object profileEntityMod extends js.Object {
+object profileEntityMod {
   
+  @JSImport("instagram-private-api/dist/entities/profile.entity", "ProfileEntity")
   @js.native
-  class ProfileEntity () extends Repository {
+  class ProfileEntity protected () extends Entity {
+    def this(client: IgApiClient) = this()
     
     def checkFollow(): js.Promise[FriendshipRepositoryChangeResponseFriendshipStatus] = js.native
     

@@ -1,21 +1,38 @@
 package typings.dialogflow.mod.google.protobuf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListValue. */
-trait IListValue extends js.Object {
+@js.native
+trait IListValue extends StObject {
+  
   /** ListValue values */
-  var values: js.UndefOr[js.Array[IValue] | Null] = js.undefined
+  var values: js.UndefOr[js.Array[IValue] | Null] = js.native
 }
-
 object IListValue {
+  
   @scala.inline
-  def apply(values: js.UndefOr[Null | js.Array[IValue]] = js.undefined): IListValue = {
+  def apply(): IListValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListValue]
   }
+  
+  @scala.inline
+  implicit class IListValueMutableBuilder[Self <: IListValue] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setValues(value: js.Array[IValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValuesNull: Self = StObject.set(x, "values", null)
+    
+    @scala.inline
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    @scala.inline
+    def setValuesVarargs(value: IValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+  }
 }
-

@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDevicePoolCompatibilityRequest extends js.Object {
+trait GetDevicePoolCompatibilityRequest extends StObject {
   
   /**
     * The ARN of the app that is associated with the specified device pool.
@@ -41,45 +42,33 @@ object GetDevicePoolCompatibilityRequest {
   }
   
   @scala.inline
-  implicit class GetDevicePoolCompatibilityRequestOps[Self <: GetDevicePoolCompatibilityRequest] (val x: Self) extends AnyVal {
+  implicit class GetDevicePoolCompatibilityRequestMutableBuilder[Self <: GetDevicePoolCompatibilityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppArn(value: AmazonResourceName): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppArnUndefined: Self = StObject.set(x, "appArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfiguration(value: ScheduleRunConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePoolArn(value: AmazonResourceName): Self = this.set("devicePoolArn", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setAppArn(value: AmazonResourceName): Self = this.set("appArn", value.asInstanceOf[js.Any])
+    def setDevicePoolArn(value: AmazonResourceName): Self = StObject.set(x, "devicePoolArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppArn: Self = this.set("appArn", js.undefined)
+    def setTest(value: ScheduleRunTest): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: ScheduleRunConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setTestType(value: TestType): Self = StObject.set(x, "testType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setTestTypeUndefined: Self = StObject.set(x, "testType", js.undefined)
     
     @scala.inline
-    def setTest(value: ScheduleRunTest): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
-    
-    @scala.inline
-    def setTestType(value: TestType): Self = this.set("testType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestType: Self = this.set("testType", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

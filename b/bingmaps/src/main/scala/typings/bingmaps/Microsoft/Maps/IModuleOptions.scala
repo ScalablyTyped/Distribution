@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IModuleOptions extends js.Object {
+trait IModuleOptions extends StObject {
   
   /** 
     * @deprecated
@@ -29,36 +30,24 @@ object IModuleOptions {
   }
   
   @scala.inline
-  implicit class IModuleOptionsOps[Self <: IModuleOptions] (val x: Self) extends AnyVal {
+  implicit class IModuleOptionsMutableBuilder[Self <: IModuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => Unit): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setErrorCallback(value: () => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCredentials(value: String): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
-    
-    @scala.inline
-    def setErrorCallback(value: () => Unit): Self = this.set("errorCallback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteErrorCallback: Self = this.set("errorCallback", js.undefined)
+    def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UtteranceData extends js.Object {
+trait UtteranceData extends StObject {
   
   /**
     * The number of times that the utterance was processed.
@@ -41,48 +42,36 @@ object UtteranceData {
   }
   
   @scala.inline
-  implicit class UtteranceDataOps[Self <: UtteranceData] (val x: Self) extends AnyVal {
+  implicit class UtteranceDataMutableBuilder[Self <: UtteranceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistinctUsers(value: Count): Self = StObject.set(x, "distinctUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Count): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setDistinctUsersUndefined: Self = StObject.set(x, "distinctUsers", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setFirstUtteredDate(value: Timestamp): Self = StObject.set(x, "firstUtteredDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinctUsers(value: Count): Self = this.set("distinctUsers", value.asInstanceOf[js.Any])
+    def setFirstUtteredDateUndefined: Self = StObject.set(x, "firstUtteredDate", js.undefined)
     
     @scala.inline
-    def deleteDistinctUsers: Self = this.set("distinctUsers", js.undefined)
+    def setLastUtteredDate(value: Timestamp): Self = StObject.set(x, "lastUtteredDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstUtteredDate(value: Timestamp): Self = this.set("firstUtteredDate", value.asInstanceOf[js.Any])
+    def setLastUtteredDateUndefined: Self = StObject.set(x, "lastUtteredDate", js.undefined)
     
     @scala.inline
-    def deleteFirstUtteredDate: Self = this.set("firstUtteredDate", js.undefined)
+    def setUtteranceString(value: UtteranceString): Self = StObject.set(x, "utteranceString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUtteredDate(value: Timestamp): Self = this.set("lastUtteredDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUtteredDate: Self = this.set("lastUtteredDate", js.undefined)
-    
-    @scala.inline
-    def setUtteranceString(value: UtteranceString): Self = this.set("utteranceString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtteranceString: Self = this.set("utteranceString", js.undefined)
+    def setUtteranceStringUndefined: Self = StObject.set(x, "utteranceString", js.undefined)
   }
 }

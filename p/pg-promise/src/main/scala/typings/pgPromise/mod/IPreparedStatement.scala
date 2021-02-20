@@ -1,6 +1,7 @@
 package typings.pgPromise.mod
 
 import typings.pgPromise.pgPromiseStrings.array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,60 +30,48 @@ object IPreparedStatement {
   }
   
   @scala.inline
-  implicit class IPreparedStatementOps[Self <: IPreparedStatement] (val x: Self) extends AnyVal {
+  implicit class IPreparedStatementMutableBuilder[Self <: IPreparedStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setRowMode(value: array | Unit): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRowModeNull: Self = StObject.set(x, "rowMode", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRowModeUndefined: Self = StObject.set(x, "rowMode", js.undefined)
     
     @scala.inline
-    def setRowMode(value: array | Unit): Self = this.set("rowMode", value.asInstanceOf[js.Any])
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowMode: Self = this.set("rowMode", js.undefined)
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def setRowModeNull: Self = this.set("rowMode", null)
+    def setText(value: String | QueryFile): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String | QueryFile): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

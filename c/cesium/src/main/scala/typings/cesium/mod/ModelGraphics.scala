@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Articulations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ModelGraphics")
 @js.native
-class ModelGraphics () extends js.Object {
+class ModelGraphics () extends StObject {
   def this(options: Articulations) = this()
   
   var articulations: PropertyBag = js.native

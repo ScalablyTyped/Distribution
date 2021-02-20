@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatDirection extends js.Object
+sealed trait ConditionalFormatDirection extends StObject
 /**
   *
   * Represents the direction for a selection.
@@ -14,7 +15,7 @@ sealed trait ConditionalFormatDirection extends js.Object
   */
 @JSGlobal("Excel.ConditionalFormatDirection")
 @js.native
-object ConditionalFormatDirection extends js.Object {
+object ConditionalFormatDirection extends StObject {
   
   @js.native
   sealed trait bottom extends ConditionalFormatDirection

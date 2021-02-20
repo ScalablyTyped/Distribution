@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait bindDocOptions extends js.Object {
+trait bindDocOptions extends StObject {
   
   /**
     * The context of your component.
@@ -39,39 +40,27 @@ object bindDocOptions {
   }
   
   @scala.inline
-  implicit class bindDocOptionsOps[Self <: bindDocOptions] (val x: Self) extends AnyVal {
+  implicit class bindDocOptionsMutableBuilder[Self <: bindDocOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFailure(value: () => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
     @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFailure(value: () => Unit): Self = this.set("onFailure", js.Any.fromFunction0(value))
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    def setThen(value: () => Unit): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setThen(value: () => Unit): Self = this.set("then", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteThen: Self = this.set("then", js.undefined)
+    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

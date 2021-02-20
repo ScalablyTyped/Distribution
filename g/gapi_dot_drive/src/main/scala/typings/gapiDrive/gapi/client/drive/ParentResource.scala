@@ -1,12 +1,13 @@
 package typings.gapiDrive.gapi.client.drive
 
 import typings.gapiDrive.gapiDriveStrings.driveNumbersignparentReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentResource extends js.Object {
+trait ParentResource extends StObject {
   
   var id: String = js.native
   
@@ -33,33 +34,21 @@ object ParentResource {
   }
   
   @scala.inline
-  implicit class ParentResourceOps[Self <: ParentResource] (val x: Self) extends AnyVal {
+  implicit class ParentResourceMutableBuilder[Self <: ParentResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: driveNumbersignparentReference): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setParentLink(value: String): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRoot(value: Boolean): Self = this.set("isRoot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: driveNumbersignparentReference): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentLink(value: String): Self = this.set("parentLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
   }
 }

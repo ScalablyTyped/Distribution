@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddTargetedAppsRequest extends js.Object {
+trait AddTargetedAppsRequest extends StObject {
   
   /**
     * A list of app IDs to target in the pretargeting configuration. These values will be added to the list of targeted app IDs in
@@ -28,33 +29,21 @@ object AddTargetedAppsRequest {
   }
   
   @scala.inline
-  implicit class AddTargetedAppsRequestOps[Self <: AddTargetedAppsRequest] (val x: Self) extends AnyVal {
+  implicit class AddTargetedAppsRequestMutableBuilder[Self <: AddTargetedAppsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
     
     @scala.inline
-    def setAppIdsVarargs(value: String*): Self = this.set("appIds", js.Array(value :_*))
+    def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppIds(value: js.Array[String]): Self = this.set("appIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppIds: Self = this.set("appIds", js.undefined)
-    
-    @scala.inline
-    def setTargetingMode(value: String): Self = this.set("targetingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetingMode: Self = this.set("targetingMode", js.undefined)
+    def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
   }
 }

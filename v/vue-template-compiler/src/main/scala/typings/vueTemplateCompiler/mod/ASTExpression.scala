@@ -2,6 +2,7 @@ package typings.vueTemplateCompiler.mod
 
 import typings.std.Record
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,45 +33,33 @@ object ASTExpression {
   }
   
   @scala.inline
-  implicit class ASTExpressionOps[Self <: ASTExpression] (val x: Self) extends AnyVal {
+  implicit class ASTExpressionMutableBuilder[Self <: ASTExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSsrOptimizability(value: SSROptimizability): Self = StObject.set(x, "ssrOptimizability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSsrOptimizabilityUndefined: Self = StObject.set(x, "ssrOptimizability", js.undefined)
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
     @scala.inline
-    def setTokensVarargs(value: (String | (Record[String, js.Any]))*): Self = this.set("tokens", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokens(value: js.Array[String | (Record[String, _])]): Self = this.set("tokens", value.asInstanceOf[js.Any])
+    def setTokens(value: js.Array[String | (Record[String, _])]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: `2`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTokensVarargs(value: (String | (Record[String, js.Any]))*): Self = StObject.set(x, "tokens", js.Array(value :_*))
     
     @scala.inline
-    def setSsrOptimizability(value: SSROptimizability): Self = this.set("ssrOptimizability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrOptimizability: Self = this.set("ssrOptimizability", js.undefined)
-    
-    @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
+    def setType(value: `2`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cat extends js.Object {
+trait Cat extends StObject {
   
   def aliases(params: CatAliasesParams): js.Promise[_] = js.native
   def aliases(params: CatAliasesParams, callback: js.Function2[/* error */ js.Any, /* response */ js.Any, Unit]): Unit = js.native

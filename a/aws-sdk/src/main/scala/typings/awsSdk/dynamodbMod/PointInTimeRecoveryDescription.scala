@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointInTimeRecoveryDescription extends js.Object {
+trait PointInTimeRecoveryDescription extends StObject {
   
   /**
     * Specifies the earliest point in time you can restore your table to. You can restore your table to any point in time during the last 35 days. 
@@ -31,36 +32,24 @@ object PointInTimeRecoveryDescription {
   }
   
   @scala.inline
-  implicit class PointInTimeRecoveryDescriptionOps[Self <: PointInTimeRecoveryDescription] (val x: Self) extends AnyVal {
+  implicit class PointInTimeRecoveryDescriptionMutableBuilder[Self <: PointInTimeRecoveryDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEarliestRestorableDateTime(value: Date): Self = StObject.set(x, "EarliestRestorableDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEarliestRestorableDateTimeUndefined: Self = StObject.set(x, "EarliestRestorableDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatestRestorableDateTime(value: Date): Self = StObject.set(x, "LatestRestorableDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarliestRestorableDateTime(value: Date): Self = this.set("EarliestRestorableDateTime", value.asInstanceOf[js.Any])
+    def setLatestRestorableDateTimeUndefined: Self = StObject.set(x, "LatestRestorableDateTime", js.undefined)
     
     @scala.inline
-    def deleteEarliestRestorableDateTime: Self = this.set("EarliestRestorableDateTime", js.undefined)
+    def setPointInTimeRecoveryStatus(value: PointInTimeRecoveryStatus): Self = StObject.set(x, "PointInTimeRecoveryStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestRestorableDateTime(value: Date): Self = this.set("LatestRestorableDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestRestorableDateTime: Self = this.set("LatestRestorableDateTime", js.undefined)
-    
-    @scala.inline
-    def setPointInTimeRecoveryStatus(value: PointInTimeRecoveryStatus): Self = this.set("PointInTimeRecoveryStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePointInTimeRecoveryStatus: Self = this.set("PointInTimeRecoveryStatus", js.undefined)
+    def setPointInTimeRecoveryStatusUndefined: Self = StObject.set(x, "PointInTimeRecoveryStatus", js.undefined)
   }
 }

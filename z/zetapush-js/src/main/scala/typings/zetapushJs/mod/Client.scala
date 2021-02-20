@@ -1,13 +1,14 @@
 package typings.zetapushJs.mod
 
 import typings.zetapushJs.mod.services.Macro
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zetapush-js", "Client")
 @js.native
-class Client protected () extends js.Object {
+class Client protected () extends StObject {
   def this(options: ClientOptions) = this()
   
   def addConnectionStatusListener(listener: ConnectionStatusListener): ConnectionStatusHandler = js.native

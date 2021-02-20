@@ -1,9 +1,11 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Reactive Energy
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.deg
   - typings.convertUnits.convertUnitsStrings.rad
@@ -11,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.convertUnits.convertUnitsStrings.arcmin
   - typings.convertUnits.convertUnitsStrings.arcsec
 */
-trait uAngle extends js.Object
+trait uAngle extends StObject
 object uAngle {
   
   @scala.inline

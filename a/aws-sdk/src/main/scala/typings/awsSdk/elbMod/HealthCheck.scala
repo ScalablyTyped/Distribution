@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HealthCheck extends js.Object {
+trait HealthCheck extends StObject {
   
   /**
     * The number of consecutive health checks successes required before moving the instance to the Healthy state.
@@ -47,33 +48,21 @@ object HealthCheck {
   }
   
   @scala.inline
-  implicit class HealthCheckOps[Self <: HealthCheck] (val x: Self) extends AnyVal {
+  implicit class HealthCheckMutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthyThreshold(value: HealthyThreshold): Self = StObject.set(x, "HealthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterval(value: HealthCheckInterval): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: HealthCheckTarget): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyThreshold(value: HealthyThreshold): Self = this.set("HealthyThreshold", value.asInstanceOf[js.Any])
+    def setTimeout(value: HealthCheckTimeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: HealthCheckInterval): Self = this.set("Interval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: HealthCheckTarget): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: HealthCheckTimeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnhealthyThreshold(value: UnhealthyThreshold): Self = this.set("UnhealthyThreshold", value.asInstanceOf[js.Any])
+    def setUnhealthyThreshold(value: UnhealthyThreshold): Self = StObject.set(x, "UnhealthyThreshold", value.asInstanceOf[js.Any])
   }
 }

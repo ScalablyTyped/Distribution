@@ -4,12 +4,13 @@ import typings.react.mod.ComponentType
 import typings.reactBigCalendar.anon.Date
 import typings.reactBigCalendar.anon.DateHeader
 import typings.reactBigCalendar.anon.Header
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends js.Object {
+trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends StObject {
   
   var agenda: js.UndefOr[Date[TEvent]] = js.native
   
@@ -51,102 +52,90 @@ object Components_ {
   }
   
   @scala.inline
-  implicit class Components_Ops[Self <: Components_[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (Components_[TEvent, TResource])) extends AnyVal {
+  implicit class Components_MutableBuilder[Self <: Components_[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (Components_[TEvent, TResource])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgenda(value: Date[TEvent]): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateCellWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dateCellWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgenda(value: Date[TEvent]): Self = this.set("agenda", value.asInstanceOf[js.Any])
+    def setDateCellWrapperUndefined: Self = StObject.set(x, "dateCellWrapper", js.undefined)
     
     @scala.inline
-    def deleteAgenda: Self = this.set("agenda", js.undefined)
+    def setDay(value: Header[TEvent]): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCellWrapper(value: ComponentType[js.Object]): Self = this.set("dateCellWrapper", value.asInstanceOf[js.Any])
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def deleteDateCellWrapper: Self = this.set("dateCellWrapper", js.undefined)
+    def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: Header[TEvent]): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setEventContainerWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "eventContainerWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setEventContainerWrapperUndefined: Self = StObject.set(x, "eventContainerWrapper", js.undefined)
     
     @scala.inline
-    def setEvent(value: ComponentType[EventProps[TEvent]]): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setEventWrapper(value: ComponentType[EventWrapperProps[TEvent]]): Self = StObject.set(x, "eventWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventContainerWrapper(value: ComponentType[js.Object]): Self = this.set("eventContainerWrapper", value.asInstanceOf[js.Any])
+    def setEventWrapperUndefined: Self = StObject.set(x, "eventWrapper", js.undefined)
     
     @scala.inline
-    def deleteEventContainerWrapper: Self = this.set("eventContainerWrapper", js.undefined)
+    def setHeader(value: ComponentType[HeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventWrapper(value: ComponentType[EventWrapperProps[TEvent]]): Self = this.set("eventWrapper", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteEventWrapper: Self = this.set("eventWrapper", js.undefined)
+    def setMonth(value: DateHeader[TEvent]): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: ComponentType[HeaderProps]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setResourceHeader(value: ComponentType[ResourceHeaderProps]): Self = StObject.set(x, "resourceHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: DateHeader[TEvent]): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setResourceHeaderUndefined: Self = StObject.set(x, "resourceHeader", js.undefined)
     
     @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
+    def setTimeGutterHeader(value: ComponentType[js.Object]): Self = StObject.set(x, "timeGutterHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceHeader(value: ComponentType[ResourceHeaderProps]): Self = this.set("resourceHeader", value.asInstanceOf[js.Any])
+    def setTimeGutterHeaderUndefined: Self = StObject.set(x, "timeGutterHeader", js.undefined)
     
     @scala.inline
-    def deleteResourceHeader: Self = this.set("resourceHeader", js.undefined)
+    def setTimeGutterWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "timeGutterWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeGutterHeader(value: ComponentType[js.Object]): Self = this.set("timeGutterHeader", value.asInstanceOf[js.Any])
+    def setTimeGutterWrapperUndefined: Self = StObject.set(x, "timeGutterWrapper", js.undefined)
     
     @scala.inline
-    def deleteTimeGutterHeader: Self = this.set("timeGutterHeader", js.undefined)
+    def setTimeSlotWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "timeSlotWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeGutterWrapper(value: ComponentType[js.Object]): Self = this.set("timeGutterWrapper", value.asInstanceOf[js.Any])
+    def setTimeSlotWrapperUndefined: Self = StObject.set(x, "timeSlotWrapper", js.undefined)
     
     @scala.inline
-    def deleteTimeGutterWrapper: Self = this.set("timeGutterWrapper", js.undefined)
+    def setToolbar(value: ComponentType[ToolbarProps[TEvent, TResource]]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeSlotWrapper(value: ComponentType[js.Object]): Self = this.set("timeSlotWrapper", value.asInstanceOf[js.Any])
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteTimeSlotWrapper: Self = this.set("timeSlotWrapper", js.undefined)
+    def setWeek(value: Header[TEvent]): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolbar(value: ComponentType[ToolbarProps[TEvent, TResource]]): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
-    
-    @scala.inline
-    def setWeek(value: Header[TEvent]): Self = this.set("week", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeek: Self = this.set("week", js.undefined)
+    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
   }
 }

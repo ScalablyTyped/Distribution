@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/fill/PieChartFill", JSImport.Namespace)
-@js.native
-object pieChartFillMod extends js.Object {
+object pieChartFillMod {
   
+  @JSImport("@ant-design/icons-angular/icons/fill/PieChartFill", "PieChartFill")
+  @js.native
   val PieChartFill: IconDefinition = js.native
 }

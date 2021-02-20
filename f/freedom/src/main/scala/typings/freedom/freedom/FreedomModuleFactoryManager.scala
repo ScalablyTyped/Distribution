@@ -1,5 +1,6 @@
 package typings.freedom.freedom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // A Freedom module sub is both a function and an object with members. The
 // type |T| is the type of the module's stub interface.
 @js.native
-trait FreedomModuleFactoryManager[T] extends js.Object {
+trait FreedomModuleFactoryManager[T] extends StObject {
   
   // This is the factory constructor for a new instance of a stub/channel to a
   // module.

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStackResourcesOutput extends js.Object {
+trait DescribeStackResourcesOutput extends StObject {
   
   /**
     * A list of StackResource structures.
@@ -21,27 +22,15 @@ object DescribeStackResourcesOutput {
   }
   
   @scala.inline
-  implicit class DescribeStackResourcesOutputOps[Self <: DescribeStackResourcesOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeStackResourcesOutputMutableBuilder[Self <: DescribeStackResourcesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackResources(value: StackResources): Self = StObject.set(x, "StackResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackResourcesUndefined: Self = StObject.set(x, "StackResources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStackResourcesVarargs(value: StackResource*): Self = this.set("StackResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setStackResources(value: StackResources): Self = this.set("StackResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackResources: Self = this.set("StackResources", js.undefined)
+    def setStackResourcesVarargs(value: StackResource*): Self = StObject.set(x, "StackResources", js.Array(value :_*))
   }
 }

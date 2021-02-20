@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateComputerResult extends js.Object {
+trait CreateComputerResult extends StObject {
   
   /**
     * A Computer object that represents the computer account.
@@ -21,24 +22,12 @@ object CreateComputerResult {
   }
   
   @scala.inline
-  implicit class CreateComputerResultOps[Self <: CreateComputerResult] (val x: Self) extends AnyVal {
+  implicit class CreateComputerResultMutableBuilder[Self <: CreateComputerResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputer(value: Computer): Self = StObject.set(x, "Computer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComputer(value: Computer): Self = this.set("Computer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputer: Self = this.set("Computer", js.undefined)
+    def setComputerUndefined: Self = StObject.set(x, "Computer", js.undefined)
   }
 }

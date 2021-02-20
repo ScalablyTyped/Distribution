@@ -1,11 +1,12 @@
 package typings.miniprogramWxs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegExp extends js.Object {
+trait RegExp extends StObject {
   
   // Non-standard extensions
   def compile(): this.type = js.native
@@ -54,42 +55,30 @@ object RegExp {
   }
   
   @scala.inline
-  implicit class RegExpOps[Self <: RegExp] (val x: Self) extends AnyVal {
+  implicit class RegExpMutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompile(value: () => RegExp): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExec(value: java.lang.String => RegExpExecArray | Null): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobal(value: scala.Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompile(value: () => RegExp): Self = this.set("compile", js.Any.fromFunction0(value))
+    def setIgnoreCase(value: scala.Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExec(value: java.lang.String => RegExpExecArray | Null): Self = this.set("exec", js.Any.fromFunction1(value))
+    def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobal(value: scala.Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setMultiline(value: scala.Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreCase(value: scala.Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    def setSource(value: java.lang.String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastIndex(value: Double): Self = this.set("lastIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiline(value: scala.Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: java.lang.String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTest(value: java.lang.String => scala.Boolean): Self = this.set("test", js.Any.fromFunction1(value))
+    def setTest(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
   }
 }

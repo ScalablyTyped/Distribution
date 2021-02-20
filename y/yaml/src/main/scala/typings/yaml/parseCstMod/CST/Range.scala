@@ -1,11 +1,12 @@
 package typings.yaml.parseCstMod.CST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Range extends js.Object {
+trait Range extends StObject {
   
   var end: Double = js.native
   
@@ -26,39 +27,27 @@ object Range {
   }
   
   @scala.inline
-  implicit class RangeOps[Self <: Range] (val x: Self) extends AnyVal {
+  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigEnd(value: Double): Self = StObject.set(x, "origEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setOrigEndUndefined: Self = StObject.set(x, "origEnd", js.undefined)
     
     @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    def setOrigStart(value: Double): Self = StObject.set(x, "origStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setOrigStartUndefined: Self = StObject.set(x, "origStart", js.undefined)
     
     @scala.inline
-    def setOrigEnd(value: Double): Self = this.set("origEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigEnd: Self = this.set("origEnd", js.undefined)
-    
-    @scala.inline
-    def setOrigStart(value: Double): Self = this.set("origStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigStart: Self = this.set("origStart", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

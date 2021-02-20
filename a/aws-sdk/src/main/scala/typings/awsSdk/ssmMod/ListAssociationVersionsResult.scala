@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssociationVersionsResult extends js.Object {
+trait ListAssociationVersionsResult extends StObject {
   
   /**
     * Information about all versions of the association for the specified association ID.
@@ -26,33 +27,21 @@ object ListAssociationVersionsResult {
   }
   
   @scala.inline
-  implicit class ListAssociationVersionsResultOps[Self <: ListAssociationVersionsResult] (val x: Self) extends AnyVal {
+  implicit class ListAssociationVersionsResultMutableBuilder[Self <: ListAssociationVersionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociationVersions(value: AssociationVersionList): Self = StObject.set(x, "AssociationVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationVersionsUndefined: Self = StObject.set(x, "AssociationVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationVersionsVarargs(value: AssociationVersionInfo*): Self = StObject.set(x, "AssociationVersions", js.Array(value :_*))
     
     @scala.inline
-    def setAssociationVersionsVarargs(value: AssociationVersionInfo*): Self = this.set("AssociationVersions", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociationVersions(value: AssociationVersionList): Self = this.set("AssociationVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociationVersions: Self = this.set("AssociationVersions", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.babylonjs.anon.DashSize
 import typings.babylonjs.anon.Instance
 import typings.babylonjs.anon.Points
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LinesBuilder ()
   extends typings.babylonjs.indexMod.LinesBuilder
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "LinesBuilder")
-@js.native
-object LinesBuilder extends js.Object {
+object LinesBuilder {
   
   /**
     * Creates a dashed line mesh
@@ -35,7 +34,11 @@ object LinesBuilder extends js.Object {
     * @returns the dashed line mesh
     * @see https://doc.babylonjs.com/how_to/parametric_shapes#dashed-lines
     */
+  @JSImport("babylonjs/Legacy/legacy", "LinesBuilder.CreateDashedLines")
+  @js.native
   def CreateDashedLines(name: String, options: DashSize): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs/Legacy/legacy", "LinesBuilder.CreateDashedLines")
+  @js.native
   def CreateDashedLines(name: String, options: DashSize, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
   
   /**
@@ -55,6 +58,8 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line system mesh
     */
+  @JSImport("babylonjs/Legacy/legacy", "LinesBuilder.CreateLineSystem")
+  @js.native
   def CreateLineSystem(name: String, options: Instance, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
   
   /**
@@ -73,6 +78,10 @@ object LinesBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new line mesh
     */
+  @JSImport("babylonjs/Legacy/legacy", "LinesBuilder.CreateLines")
+  @js.native
   def CreateLines(name: String, options: Points): typings.babylonjs.linesMeshMod.LinesMesh = js.native
+  @JSImport("babylonjs/Legacy/legacy", "LinesBuilder.CreateLines")
+  @js.native
   def CreateLines(name: String, options: Points, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.linesMeshMod.LinesMesh = js.native
 }

@@ -2,16 +2,16 @@ package typings.smoothScrollbar
 
 import typings.smoothScrollbar.anon.PartialScrollbarOptions
 import typings.std.EventTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/options", JSImport.Namespace)
-@js.native
-object optionsMod extends js.Object {
+object optionsMod {
   
+  @JSImport("smooth-scrollbar/options", "Options")
   @js.native
-  class Options () extends js.Object {
+  class Options () extends StObject {
     def this(config: PartialScrollbarOptions) = this()
     
     /**

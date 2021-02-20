@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents the HTTP protocol version. */
 @JSGlobal("Windows.Web.Http.HttpVersion")
 @js.native
-object HttpVersion extends js.Object {
+object HttpVersion extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Web.Http.HttpVersion with Double] = js.native

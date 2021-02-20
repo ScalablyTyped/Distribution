@@ -2,6 +2,7 @@ package typings.activexWia.WIA
 
 import typings.activexWia.activexWiaNumbers.`131072`
 import typings.activexWia.activexWiaNumbers.`65536`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaNumbers.`131072`
   - typings.activexWia.activexWiaNumbers.`65536`
 */
-trait WiaImageBias extends js.Object
+trait WiaImageBias extends StObject
 object WiaImageBias {
   
   @scala.inline

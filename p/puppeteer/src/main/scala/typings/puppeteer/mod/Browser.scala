@@ -5,6 +5,7 @@ import typings.puppeteer.puppeteerStrings.disconnected
 import typings.puppeteer.puppeteerStrings.targetchanged
 import typings.puppeteer.puppeteerStrings.targetcreated
 import typings.puppeteer.puppeteerStrings.targetdestroyed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

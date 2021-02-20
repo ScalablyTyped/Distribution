@@ -4,13 +4,14 @@ import typings.std.PropertyKey
 import typings.storybookAddonKnobs.selectMod.SelectTypeKnobValue
 import typings.storybookAddonKnobs.selectMod.SelectTypeOptionsProp
 import typings.storybookAddonKnobs.storybookAddonKnobsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.SelectTypeKnob<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue>, 'value' | 'options'> & {  selectV2 :true} */
 @js.native
-trait PickSelectTypeKnobSelectT extends js.Object {
+trait PickSelectTypeKnobSelectT extends StObject {
   
   var options: SelectTypeOptionsProp[SelectTypeKnobValue] = js.native
   
@@ -27,39 +28,27 @@ object PickSelectTypeKnobSelectT {
   }
   
   @scala.inline
-  implicit class PickSelectTypeKnobSelectTOps[Self <: PickSelectTypeKnobSelectT] (val x: Self) extends AnyVal {
+  implicit class PickSelectTypeKnobSelectTMutableBuilder[Self <: PickSelectTypeKnobSelectT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: SelectTypeOptionsProp[SelectTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionsVarargs(value: SelectTypeKnobValue*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectV2(value: `true`): Self = StObject.set(x, "selectV2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: SelectTypeKnobValue*): Self = this.set("options", js.Array(value :_*))
+    def setValue(value: SelectTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: SelectTypeOptionsProp[SelectTypeKnobValue]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setValueNull: Self = StObject.set(x, "value", null)
     
     @scala.inline
-    def setSelectV2(value: `true`): Self = this.set("selectV2", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def setValueVarargs(value: PropertyKey*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: SelectTypeKnobValue): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueVarargs(value: PropertyKey*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

@@ -3,18 +3,16 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.anon.CoordRendering
 import typings.yandexMaps.yandexMapsStrings.evenOdd
 import typings.yandexMaps.yandexMapsStrings.nonZero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "geometry")
-@js.native
-object geometry extends js.Object {
+object geometry {
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
-  - typings.yandexMaps.mod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ @js.native
-  class LineString () extends IGeometry {
+  @JSImport("yandex-maps", "geometry.LineString")
+  @js.native
+  class LineString () extends ILineStringGeometry {
     def this(coordinates: js.Array[js.Array[Double]]) = this()
     def this(coordinates: js.UndefOr[scala.Nothing], options: CoordRendering) = this()
     def this(coordinates: js.Array[js.Array[Double]], options: CoordRendering) = this()
@@ -65,27 +63,10 @@ object geometry extends js.Object {
     def fire(`type`: String, eventobject: js.Object): this.type = js.native
     def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
     
-    def freeze(): IFreezable = js.native
-    
-    def get(index: Double): js.Array[Double] = js.native
-    
-    def getChildGeometry(index: Double): IPointGeometryAccess = js.native
-    
-    def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
-    
-    def getCoordinates(): js.Array[js.Array[Double]] = js.native
-    
-    def getLength(): Double = js.native
-    
     def getParent(): js.Object | Null = js.native
     
     def group(): IEventGroup = js.native
     
-    def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
-    
-    def isFrozen(): Boolean = js.native
-    
-    def remove(index: Double): js.Array[Double] = js.native
     def remove(
       types: String,
       callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit]
@@ -129,37 +110,31 @@ object geometry extends js.Object {
       priority: Double
     ): this.type = js.native
     
-    def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess = js.native
-    
-    def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
-    
     def setParent(): this.type = js.native
     def setParent(parent: IEventManager[js.Object]): this.type = js.native
-    
-    def splice(index: Double, length: Double): js.Array[js.Array[Double]] = js.native
-    
-    def unfreeze(): IFreezable = js.native
   }
-  /* static members */
-  @js.native
-  object LineString extends js.Object {
+  object LineString {
     
+    /* static member */
+    @JSImport("yandex-maps", "geometry.LineString.fromEncodedCoordinates")
+    @js.native
     def fromEncodedCoordinates(encodedCoordinates: String): LineString = js.native
     
+    /* static member */
+    @JSImport("yandex-maps", "geometry.LineString.toEncodedCoordinates")
+    @js.native
     def toEncodedCoordinates(geometry: LineString): String = js.native
   }
   
+  @JSImport("yandex-maps", "geometry.Point")
   @js.native
-  class Point ()
-    extends IGeometry
-       with IPointGeometryAccess {
+  class Point () extends IPointGeometry {
     def this(coordinates: js.Array[Double]) = this()
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
-  - typings.yandexMaps.mod.IPolygonGeometryAccess because var conflicts: events. Inlined contains, get, getChildGeometry, getClosest, getCoordinates, getFillRule, getLength, insert, remove, set, setCoordinates, setFillRule, splice */ @js.native
-  class Polygon () extends IGeometry {
+  @JSImport("yandex-maps", "geometry.Polygon")
+  @js.native
+  class Polygon () extends IPolygonGeometry {
     def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
     def this(coordinates: js.UndefOr[scala.Nothing], fillRule: evenOdd) = this()
     def this(coordinates: js.UndefOr[scala.Nothing], fillRule: nonZero) = this()
@@ -219,42 +194,13 @@ object geometry extends js.Object {
       priority: Double
     ): this.type = js.native
     
-    def contains(position: js.Array[Double]): Boolean = js.native
-    
     def fire(`type`: String, eventobject: js.Object): this.type = js.native
     def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
-    
-    def freeze(): IFreezable = js.native
-    
-    def get(index: Double): js.Array[js.Array[Double]] = js.native
-    
-    def getChildGeometry(index: Double): ILinearRingGeometryAccess = js.native
-    
-    def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
-    
-    def getCoordinates(): js.Array[js.Array[js.Array[Double]]] = js.native
-    
-    def getFillRule(): String = js.native
-    @JSName("getFillRule")
-    def getFillRule_Union(): evenOdd | nonZero = js.native
-    
-    def getLength(): Double = js.native
     
     def getParent(): js.Object | Null = js.native
     
     def group(): IEventGroup = js.native
     
-    def insert(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
-    
-    def isFrozen(): Boolean = js.native
-    
-    def remove(index: Double): ILinearRingGeometryAccess = js.native
-    
-    def set(index: Double, path: js.Array[js.Array[Double]]): IPolygonGeometryAccess = js.native
-    
-    def setCoordinates(coordinates: js.Array[js.Array[js.Array[Double]]]): IPolygonGeometryAccess = js.native
-    
-    def setFillRule(fillRule: String): IPolygonGeometryAccess = js.native
     @JSName("setFillRule")
     def setFillRule_evenOdd(fillRule: evenOdd): IPolygonGeometryAccess = js.native
     @JSName("setFillRule")
@@ -262,27 +208,25 @@ object geometry extends js.Object {
     
     def setParent(): this.type = js.native
     def setParent(parent: js.Object): this.type = js.native
-    
-    def splice(index: Double, number: Double): js.Array[ILinearRingGeometryAccess] = js.native
-    
-    def unfreeze(): IFreezable = js.native
   }
-  /* static members */
-  @js.native
-  object Polygon extends js.Object {
+  object Polygon {
     
+    /* static member */
+    @JSImport("yandex-maps", "geometry.Polygon.fromEncodedCoordinates")
+    @js.native
     def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.Polygon = js.native
     
+    /* static member */
+    @JSImport("yandex-maps", "geometry.Polygon.toEncodedCoordinates")
+    @js.native
     def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.Polygon): String = js.native
   }
   
-  @js.native
-  object base extends js.Object {
+  object base {
     
-    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
-    - typings.yandexMaps.mod.ILineStringGeometryAccess because var conflicts: events. Inlined get, getChildGeometry, getClosest, getCoordinates, getLength, insert, remove, set, setCoordinates, splice */ @js.native
-    class LineString () extends IBaseGeometry {
+    @JSImport("yandex-maps", "geometry.base.LineString")
+    @js.native
+    class LineString () extends IBaseLineStringGeometry {
       
       def add(
         types: String,
@@ -330,27 +274,10 @@ object geometry extends js.Object {
       def fire(`type`: String, eventobject: js.Object): this.type = js.native
       def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
       
-      def freeze(): IFreezable = js.native
-      
-      def get(index: Double): js.Array[Double] = js.native
-      
-      def getChildGeometry(index: Double): IPointGeometryAccess = js.native
-      
-      def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
-      
-      def getCoordinates(): js.Array[js.Array[Double]] = js.native
-      
-      def getLength(): Double = js.native
-      
       def getParent(): js.Object | Null = js.native
       
       def group(): IEventGroup = js.native
       
-      def insert(index: Double, coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
-      
-      def isFrozen(): Boolean = js.native
-      
-      def remove(index: Double): js.Array[Double] = js.native
       def remove(
         types: String,
         callback: js.Function1[/* event */ js.Object | (IEvent[js.Object, js.Object]), Unit]
@@ -394,35 +321,29 @@ object geometry extends js.Object {
         priority: Double
       ): this.type = js.native
       
-      def set(index: Double, coordinates: js.Array[Double]): ILineStringGeometryAccess = js.native
-      
-      def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILineStringGeometryAccess = js.native
-      
       def setParent(): this.type = js.native
       def setParent(parent: IEventManager[js.Object]): this.type = js.native
-      
-      def splice(index: Double, length: Double): js.Array[js.Array[Double]] = js.native
-      
-      def unfreeze(): IFreezable = js.native
     }
-    /* static members */
-    @js.native
-    object LineString extends js.Object {
+    object LineString {
       
+      /* static member */
+      @JSImport("yandex-maps", "geometry.base.LineString.fromEncodedCoordinates")
+      @js.native
       def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.LineString = js.native
       
+      /* static member */
+      @JSImport("yandex-maps", "geometry.base.LineString.toEncodedCoordinates")
+      @js.native
       def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.LineString): String = js.native
     }
     
+    @JSImport("yandex-maps", "geometry.base.Point")
     @js.native
-    class Point ()
-      extends IBaseGeometry
-         with IPointGeometryAccess
+    class Point () extends IBasePointGeometry
     
+    @JSImport("yandex-maps", "geometry.base.Polygon")
     @js.native
-    class Polygon ()
-      extends IBaseGeometry
-         with IPointGeometryAccess {
+    class Polygon () extends IBasePointGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
       def this(coordinates: js.UndefOr[scala.Nothing], fillRule: evenOdd) = this()
       def this(coordinates: js.UndefOr[scala.Nothing], fillRule: nonZero) = this()
@@ -460,19 +381,23 @@ object geometry extends js.Object {
       
       def unfreeze(): IFreezable = js.native
     }
-    /* static members */
-    @js.native
-    object Polygon extends js.Object {
+    object Polygon {
       
+      /* static member */
+      @JSImport("yandex-maps", "geometry.base.Polygon.fromEncodedCoordinates")
+      @js.native
       def fromEncodedCoordinates(encodedCoordinates: String): typings.yandexMaps.mod.geometry.base.Polygon = js.native
       
+      /* static member */
+      @JSImport("yandex-maps", "geometry.base.Polygon.toEncodedCoordinates")
+      @js.native
       def toEncodedCoordinates(geometry: typings.yandexMaps.mod.geometry.base.Polygon): String = js.native
     }
   }
   
-  @js.native
-  object pixel extends js.Object {
+  object pixel {
     
+    @JSImport("yandex-maps", "geometry.pixel.Circle")
     @js.native
     class Circle protected () extends IPixelCircleGeometry {
       def this(coordinates: js.Array[Double], radius: Double) = this()
@@ -481,18 +406,21 @@ object geometry extends js.Object {
       def this(coordinates: Null, radius: Double, metaData: js.Object) = this()
     }
     
+    @JSImport("yandex-maps", "geometry.pixel.LineString")
     @js.native
     class LineString protected () extends IPixelLineStringGeometry {
       def this(coordinates: js.Array[js.Array[Double]]) = this()
       def this(coordinates: js.Array[js.Array[Double]], metaData: js.Object) = this()
     }
     
+    @JSImport("yandex-maps", "geometry.pixel.MultiLineString")
     @js.native
     class MultiLineString protected () extends IPixelMultiLineGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]]) = this()
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], metaData: js.Object) = this()
     }
     
+    @JSImport("yandex-maps", "geometry.pixel.MultiPolygon")
     @js.native
     class MultiPolygon protected () extends IPixelMultiPolygonGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[js.Array[Double]]]], fillRule: evenOdd) = this()
@@ -509,6 +437,7 @@ object geometry extends js.Object {
       ) = this()
     }
     
+    @JSImport("yandex-maps", "geometry.pixel.Point")
     @js.native
     class Point () extends IPixelPointGeometry {
       def this(position: js.Array[Double]) = this()
@@ -516,6 +445,7 @@ object geometry extends js.Object {
       def this(position: Null, metaData: js.Object) = this()
     }
     
+    @JSImport("yandex-maps", "geometry.pixel.Polygon")
     @js.native
     class Polygon protected () extends IPixelPolygonGeometry {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: evenOdd) = this()
@@ -524,6 +454,7 @@ object geometry extends js.Object {
       def this(coordinates: js.Array[js.Array[js.Array[Double]]], fillRule: nonZero, metaData: js.Object) = this()
     }
     
+    @JSImport("yandex-maps", "geometry.pixel.Rectangle")
     @js.native
     class Rectangle () extends IPixelRectangleGeometry {
       def this(coordinates: js.Array[js.Array[Double]]) = this()

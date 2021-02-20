@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FrameClearedScheduledNavigationEvent extends js.Object {
+trait FrameClearedScheduledNavigationEvent extends StObject {
   
   /**
     * Id of the frame that has cleared its scheduled navigation.
@@ -21,21 +22,9 @@ object FrameClearedScheduledNavigationEvent {
   }
   
   @scala.inline
-  implicit class FrameClearedScheduledNavigationEventOps[Self <: FrameClearedScheduledNavigationEvent] (val x: Self) extends AnyVal {
+  implicit class FrameClearedScheduledNavigationEventMutableBuilder[Self <: FrameClearedScheduledNavigationEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

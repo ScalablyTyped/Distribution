@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KmlVec2 extends js.Object {
+trait KmlVec2 extends StObject {
   
   /**
     * Indicates the x coordinate.
@@ -95,45 +96,33 @@ object KmlVec2 {
   }
   
   @scala.inline
-  implicit class KmlVec2Ops[Self <: KmlVec2] (val x: Self) extends AnyVal {
+  implicit class KmlVec2MutableBuilder[Self <: KmlVec2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetXUnits(value: () => KmlUnitsEnum): Self = StObject.set(x, "getXUnits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetX(value: () => Double): Self = this.set("getX", js.Any.fromFunction0(value))
+    def setGetYUnits(value: () => KmlUnitsEnum): Self = StObject.set(x, "getYUnits", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetXUnits(value: () => KmlUnitsEnum): Self = this.set("getXUnits", js.Any.fromFunction0(value))
+    def setSet(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetY(value: () => Double): Self = this.set("getY", js.Any.fromFunction0(value))
+    def setSetX(value: Double => Unit): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetYUnits(value: () => KmlUnitsEnum): Self = this.set("getYUnits", js.Any.fromFunction0(value))
+    def setSetXUnits(value: KmlUnitsEnum => Unit): Self = StObject.set(x, "setXUnits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (Double, KmlUnitsEnum, Double, KmlUnitsEnum) => Unit): Self = this.set("set", js.Any.fromFunction4(value))
+    def setSetY(value: Double => Unit): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetX(value: Double => Unit): Self = this.set("setX", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetXUnits(value: KmlUnitsEnum => Unit): Self = this.set("setXUnits", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetY(value: Double => Unit): Self = this.set("setY", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetYUnits(value: KmlUnitsEnum => Unit): Self = this.set("setYUnits", js.Any.fromFunction1(value))
+    def setSetYUnits(value: KmlUnitsEnum => Unit): Self = StObject.set(x, "setYUnits", js.Any.fromFunction1(value))
   }
 }

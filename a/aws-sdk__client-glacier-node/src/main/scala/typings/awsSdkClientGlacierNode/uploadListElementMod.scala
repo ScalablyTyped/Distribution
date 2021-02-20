@@ -1,13 +1,13 @@
 package typings.awsSdkClientGlacierNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/model/_UploadListElement", JSImport.Namespace)
-@js.native
-object uploadListElementMod extends js.Object {
+object uploadListElementMod {
   
-  @JSName("_UploadListElement")
+  @JSImport("@aws-sdk/client-glacier-node/model/_UploadListElement", "_UploadListElement")
+  @js.native
   val UploadListElement: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

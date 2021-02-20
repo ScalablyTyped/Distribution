@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.geometry
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait EllipticalArc extends js.Object {
+trait EllipticalArc extends StObject {
   
   var EndPosition: RealPoint2D = js.native
   
@@ -51,39 +52,27 @@ object EllipticalArc {
   }
   
   @scala.inline
-  implicit class EllipticalArcOps[Self <: EllipticalArc] (val x: Self) extends AnyVal {
+  implicit class EllipticalArcMutableBuilder[Self <: EllipticalArc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPosition(value: RealPoint2D): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsClockwiseSweep(value: Boolean): Self = StObject.set(x, "IsClockwiseSweep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsLargeArc(value: Boolean): Self = StObject.set(x, "IsLargeArc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: RealPoint2D): Self = this.set("EndPosition", value.asInstanceOf[js.Any])
+    def setRadiusX(value: Double): Self = StObject.set(x, "RadiusX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsClockwiseSweep(value: Boolean): Self = this.set("IsClockwiseSweep", value.asInstanceOf[js.Any])
+    def setRadiusY(value: Double): Self = StObject.set(x, "RadiusY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLargeArc(value: Boolean): Self = this.set("IsLargeArc", value.asInstanceOf[js.Any])
+    def setStartPosition(value: RealPoint2D): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadiusX(value: Double): Self = this.set("RadiusX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadiusY(value: Double): Self = this.set("RadiusY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPosition(value: RealPoint2D): Self = this.set("StartPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXAxisRotation(value: Double): Self = this.set("XAxisRotation", value.asInstanceOf[js.Any])
+    def setXAxisRotation(value: Double): Self = StObject.set(x, "XAxisRotation", value.asInstanceOf[js.Any])
   }
 }

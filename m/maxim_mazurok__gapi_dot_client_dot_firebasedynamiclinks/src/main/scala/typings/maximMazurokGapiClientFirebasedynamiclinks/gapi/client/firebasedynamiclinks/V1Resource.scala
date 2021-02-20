@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientFirebasedynamiclinks.anon.Alt
 import typings.maximMazurokGapiClientFirebasedynamiclinks.anon.DurationDays
 import typings.maximMazurokGapiClientFirebasedynamiclinks.anon.Fields
 import typings.maximMazurokGapiClientFirebasedynamiclinks.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V1Resource extends js.Object {
+trait V1Resource extends StObject {
   
   /** Fetches analytics stats of a short Dynamic Link for a given duration. Metrics include number of clicks, redirects, installs, app first opens, and app reopens. */
   def getLinkStats(): Request[DynamicLinkStats] = js.native

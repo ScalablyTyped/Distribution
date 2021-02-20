@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataGroupingOptionsObject extends js.Object {
+trait DataGroupingOptionsObject extends StObject {
   
   /**
     * (Highstock) The method of approximation inside a group. When for example
@@ -116,69 +117,57 @@ object DataGroupingOptionsObject {
   }
   
   @scala.inline
-  implicit class DataGroupingOptionsObjectOps[Self <: DataGroupingOptionsObject] (val x: Self) extends AnyVal {
+  implicit class DataGroupingOptionsObjectMutableBuilder[Self <: DataGroupingOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximation(value: String | DataGroupingApproximationValue | js.Function): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTimeLabelFormats(value: js.Object): Self = StObject.set(x, "dateTimeLabelFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximation(value: String | DataGroupingApproximationValue | js.Function): Self = this.set("approximation", value.asInstanceOf[js.Any])
+    def setDateTimeLabelFormatsUndefined: Self = StObject.set(x, "dateTimeLabelFormats", js.undefined)
     
     @scala.inline
-    def deleteApproximation: Self = this.set("approximation", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeLabelFormats(value: js.Object): Self = this.set("dateTimeLabelFormats", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDateTimeLabelFormats: Self = this.set("dateTimeLabelFormats", js.undefined)
+    def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setForcedUndefined: Self = StObject.set(x, "forced", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setGroupAll(value: Boolean): Self = StObject.set(x, "groupAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForced(value: Boolean): Self = this.set("forced", value.asInstanceOf[js.Any])
+    def setGroupAllUndefined: Self = StObject.set(x, "groupAll", js.undefined)
     
     @scala.inline
-    def deleteForced: Self = this.set("forced", js.undefined)
+    def setGroupPixelWidth(value: Double): Self = StObject.set(x, "groupPixelWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupAll(value: Boolean): Self = this.set("groupAll", value.asInstanceOf[js.Any])
+    def setGroupPixelWidthUndefined: Self = StObject.set(x, "groupPixelWidth", js.undefined)
     
     @scala.inline
-    def deleteGroupAll: Self = this.set("groupAll", js.undefined)
+    def setSmoothed(value: Boolean): Self = StObject.set(x, "smoothed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupPixelWidth(value: Double): Self = this.set("groupPixelWidth", value.asInstanceOf[js.Any])
+    def setSmoothedUndefined: Self = StObject.set(x, "smoothed", js.undefined)
     
     @scala.inline
-    def deleteGroupPixelWidth: Self = this.set("groupPixelWidth", js.undefined)
+    def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmoothed(value: Boolean): Self = this.set("smoothed", value.asInstanceOf[js.Any])
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def deleteSmoothed: Self = this.set("smoothed", js.undefined)
-    
-    @scala.inline
-    def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = this.set("units", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
   }
 }

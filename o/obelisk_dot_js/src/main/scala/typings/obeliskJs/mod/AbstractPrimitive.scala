@@ -1,13 +1,14 @@
 package typings.obeliskJs.mod
 
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "AbstractPrimitive")
 @js.native
-class AbstractPrimitive () extends js.Object {
+class AbstractPrimitive () extends StObject {
   
   var bitmapData: BitmapData = js.native
   

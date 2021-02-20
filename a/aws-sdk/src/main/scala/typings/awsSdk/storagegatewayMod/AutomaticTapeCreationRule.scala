@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticTapeCreationRule extends js.Object {
+trait AutomaticTapeCreationRule extends StObject {
   
   /**
     * The minimum number of available virtual tapes that the gateway maintains at all times. If the number of tapes on the gateway goes below this value, the gateway creates as many new tapes as are needed to have MinimumNumTapes on the gateway. For more information about automatic tape creation, see Creating Tapes Automatically.
@@ -46,36 +47,24 @@ object AutomaticTapeCreationRule {
   }
   
   @scala.inline
-  implicit class AutomaticTapeCreationRuleOps[Self <: AutomaticTapeCreationRule] (val x: Self) extends AnyVal {
+  implicit class AutomaticTapeCreationRuleMutableBuilder[Self <: AutomaticTapeCreationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumNumTapes(value: MinimumNumTapes): Self = StObject.set(x, "MinimumNumTapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = StObject.set(x, "TapeBarcodePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumNumTapes(value: MinimumNumTapes): Self = this.set("MinimumNumTapes", value.asInstanceOf[js.Any])
+    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolId(value: PoolId): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = this.set("TapeBarcodePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = this.set("TapeSizeInBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorm(value: scala.Boolean): Self = this.set("Worm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorm: Self = this.set("Worm", js.undefined)
+    def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMouseConstraintDefinition extends js.Object {
+trait IMouseConstraintDefinition extends StObject {
   
   /**
     * The `Body` that is currently being moved by the user, or `null` if no body.
@@ -52,42 +53,30 @@ object IMouseConstraintDefinition {
   }
   
   @scala.inline
-  implicit class IMouseConstraintDefinitionOps[Self <: IMouseConstraintDefinition] (val x: Self) extends AnyVal {
+  implicit class IMouseConstraintDefinitionMutableBuilder[Self <: IMouseConstraintDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollisionFilter(value: ICollisionFilter): Self = StObject.set(x, "collisionFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: BodyType): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCollisionFilterUndefined: Self = StObject.set(x, "collisionFilter", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setConstraint(value: ConstraintType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionFilter(value: ICollisionFilter): Self = this.set("collisionFilter", value.asInstanceOf[js.Any])
+    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
     @scala.inline
-    def deleteCollisionFilter: Self = this.set("collisionFilter", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraint(value: ConstraintType): Self = this.set("constraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConstraint: Self = this.set("constraint", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

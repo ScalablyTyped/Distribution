@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientDatacatalog.anon.Key
 import typings.maximMazurokGapiClientDatacatalog.anon.PrettyPrint
 import typings.maximMazurokGapiClientDatacatalog.anon.TagTemplateFieldId
 import typings.maximMazurokGapiClientDatacatalog.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldsResource extends js.Object {
+trait FieldsResource extends StObject {
   
   /**
     * Creates a field in a tag template. The user should enable the Data Catalog API in the project identified by the `parent` parameter (see [Data Catalog Resource

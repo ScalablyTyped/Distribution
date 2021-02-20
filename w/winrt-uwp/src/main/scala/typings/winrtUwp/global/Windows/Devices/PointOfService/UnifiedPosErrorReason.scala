@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the constants that indicates the reason for the error event. */
 @JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorReason")
 @js.native
-object UnifiedPosErrorReason extends js.Object {
+object UnifiedPosErrorReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

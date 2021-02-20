@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.touchCancel
 import typings.devtoolsProtocol.devtoolsProtocolStrings.touchEnd
 import typings.devtoolsProtocol.devtoolsProtocolStrings.touchMove
 import typings.devtoolsProtocol.devtoolsProtocolStrings.touchStart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.touchMove
   - typings.devtoolsProtocol.devtoolsProtocolStrings.touchCancel
 */
-trait DispatchTouchEventRequestType extends js.Object
+trait DispatchTouchEventRequestType extends StObject
 object DispatchTouchEventRequestType {
   
   @scala.inline

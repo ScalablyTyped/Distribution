@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccountBalanceResponse extends js.Object {
+trait GetAccountBalanceResponse extends StObject {
   
   var AvailableBalance: js.UndefOr[CurrencyAmount] = js.native
   
@@ -20,30 +21,18 @@ object GetAccountBalanceResponse {
   }
   
   @scala.inline
-  implicit class GetAccountBalanceResponseOps[Self <: GetAccountBalanceResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccountBalanceResponseMutableBuilder[Self <: GetAccountBalanceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableBalance(value: CurrencyAmount): Self = StObject.set(x, "AvailableBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableBalanceUndefined: Self = StObject.set(x, "AvailableBalance", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnHoldBalance(value: CurrencyAmount): Self = StObject.set(x, "OnHoldBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableBalance(value: CurrencyAmount): Self = this.set("AvailableBalance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailableBalance: Self = this.set("AvailableBalance", js.undefined)
-    
-    @scala.inline
-    def setOnHoldBalance(value: CurrencyAmount): Self = this.set("OnHoldBalance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnHoldBalance: Self = this.set("OnHoldBalance", js.undefined)
+    def setOnHoldBalanceUndefined: Self = StObject.set(x, "OnHoldBalance", js.undefined)
   }
 }

@@ -1,18 +1,21 @@
 package typings.eventEmitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("event-emitter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("event-emitter", JSImport.Namespace)
+  @js.native
   def apply(): Emitter = js.native
+  @JSImport("event-emitter", JSImport.Namespace)
+  @js.native
   def apply(obj: js.Any): Emitter = js.native
   
   @js.native
-  trait Emitter extends js.Object {
+  trait Emitter extends StObject {
     
     def emit(`type`: String, args: js.Any*): Unit = js.native
     

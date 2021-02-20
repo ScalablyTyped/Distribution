@@ -1,13 +1,12 @@
 package typings.octokitTypes
 
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/types/dist-types/GetResponseTypeFromEndpointMethod", JSImport.Namespace)
-@js.native
-object getResponseTypeFromEndpointMethodMod extends js.Object {
+object getResponseTypeFromEndpointMethodMod {
   
   type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
   

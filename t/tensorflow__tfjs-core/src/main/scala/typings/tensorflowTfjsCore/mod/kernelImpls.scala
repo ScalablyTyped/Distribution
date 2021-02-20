@@ -7,14 +7,15 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.NumericDataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core", "kernel_impls")
-@js.native
-object kernelImpls extends js.Object {
+object kernelImpls {
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.nonMaxSuppressionV3Impl")
+  @js.native
   def nonMaxSuppressionV3Impl(
     boxes: TypedArray,
     scores: TypedArray,
@@ -23,6 +24,8 @@ object kernelImpls extends js.Object {
     scoreThreshold: Double
   ): Tensor1D = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.nonMaxSuppressionV4Impl")
+  @js.native
   def nonMaxSuppressionV4Impl(
     boxes: TypedArray,
     scores: TypedArray,
@@ -32,6 +35,8 @@ object kernelImpls extends js.Object {
     padToMaxOutputSize: Boolean
   ): NamedTensorMap = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.nonMaxSuppressionV5Impl")
+  @js.native
   def nonMaxSuppressionV5Impl(
     boxes: TypedArray,
     scores: TypedArray,
@@ -41,11 +46,19 @@ object kernelImpls extends js.Object {
     softNmsSigma: Double
   ): NamedTensorMap = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.split")
+  @js.native
   def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, sizeSplits: js.Array[Double], axis: Double): js.Array[T] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.tile")
+  @js.native
   def tile[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](xBuf: typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, DataType], reps: js.Array[Double]): Tensor[R] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.topkImpl")
+  @js.native
   def topkImpl[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TypedArray, xShape: js.Array[Double], xDtype: NumericDataType, k: Double, sorted: Boolean): js.Tuple2[T, T] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls.whereImpl")
+  @js.native
   def whereImpl(condShape: js.Array[Double], condVals: TypedArray): Tensor2D = js.native
 }

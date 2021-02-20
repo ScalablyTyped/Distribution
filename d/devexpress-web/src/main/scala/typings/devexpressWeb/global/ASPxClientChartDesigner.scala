@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientChartDesigner ()
   extends typings.devexpressWeb.ASPxClientChartDesigner
-/* static members */
-@JSGlobal("ASPxClientChartDesigner")
-@js.native
-object ASPxClientChartDesigner extends js.Object {
+object ASPxClientChartDesigner {
   
+  /* static member */
+  @JSGlobal("ASPxClientChartDesigner.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientChartDesigner = js.native
 }

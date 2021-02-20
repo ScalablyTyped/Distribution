@@ -11,6 +11,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,175 +189,163 @@ object SliderProperties {
   }
   
   @scala.inline
-  implicit class SliderPropertiesOps[Self <: SliderProperties] (val x: Self) extends AnyVal {
+  implicit class SliderPropertiesMutableBuilder[Self <: SliderProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDraggableSegmentsEnabled(value: Boolean): Self = StObject.set(x, "draggableSegmentsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setDraggableSegmentsEnabled(value: Boolean): Self = this.set("draggableSegmentsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDraggableSegmentsEnabled: Self = this.set("draggableSegmentsEnabled", js.undefined)
+    def setDraggableSegmentsEnabledUndefined: Self = StObject.set(x, "draggableSegmentsEnabled", js.undefined)
     
     @scala.inline
     def setInputCreatedFunction(
       value: (/* inputElement */ js.Any, /* type */ max | min | thumb, /* thumbIndex */ js.UndefOr[Double]) => Unit
-    ): Self = this.set("inputCreatedFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "inputCreatedFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInputCreatedFunction: Self = this.set("inputCreatedFunction", js.undefined)
+    def setInputCreatedFunctionUndefined: Self = StObject.set(x, "inputCreatedFunction", js.undefined)
     
     @scala.inline
     def setInputFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String
-    ): Self = this.set("inputFormatFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "inputFormatFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInputFormatFunction: Self = this.set("inputFormatFunction", js.undefined)
+    def setInputFormatFunctionUndefined: Self = StObject.set(x, "inputFormatFunction", js.undefined)
     
     @scala.inline
     def setInputParseFunction(
       value: (/* value */ String, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => Double
-    ): Self = this.set("inputParseFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "inputParseFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInputParseFunction: Self = this.set("inputParseFunction", js.undefined)
+    def setInputParseFunctionUndefined: Self = StObject.set(x, "inputParseFunction", js.undefined)
     
     @scala.inline
     def setLabelFormatFunction(
       value: (/* value */ Double, /* type */ js.UndefOr[average | min | max | tick | value], /* index */ js.UndefOr[Double]) => String
-    ): Self = this.set("labelFormatFunction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteLabelFormatFunction: Self = this.set("labelFormatFunction", js.undefined)
+    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
     @scala.inline
-    def setLabelInputsEnabled(value: Boolean): Self = this.set("labelInputsEnabled", value.asInstanceOf[js.Any])
+    def setLabelInputsEnabled(value: Boolean): Self = StObject.set(x, "labelInputsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelInputsEnabled: Self = this.set("labelInputsEnabled", js.undefined)
+    def setLabelInputsEnabledUndefined: Self = StObject.set(x, "labelInputsEnabled", js.undefined)
     
     @scala.inline
-    def setLabelsVisible(value: Boolean): Self = this.set("labelsVisible", value.asInstanceOf[js.Any])
+    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelsVisible: Self = this.set("labelsVisible", js.undefined)
+    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
     @scala.inline
-    def setLayout(value: horizontal | `horizontal-reversed` | vertical | `vertical-reversed`): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLayout(value: horizontal | `horizontal-reversed` | vertical | `vertical-reversed`): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def setRangeLabelInputsEnabled(value: Boolean): Self = this.set("rangeLabelInputsEnabled", value.asInstanceOf[js.Any])
+    def setRangeLabelInputsEnabled(value: Boolean): Self = StObject.set(x, "rangeLabelInputsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangeLabelInputsEnabled: Self = this.set("rangeLabelInputsEnabled", js.undefined)
+    def setRangeLabelInputsEnabledUndefined: Self = StObject.set(x, "rangeLabelInputsEnabled", js.undefined)
     
     @scala.inline
-    def setRangeLabelsVisible(value: Boolean): Self = this.set("rangeLabelsVisible", value.asInstanceOf[js.Any])
+    def setRangeLabelsVisible(value: Boolean): Self = StObject.set(x, "rangeLabelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangeLabelsVisible: Self = this.set("rangeLabelsVisible", js.undefined)
+    def setRangeLabelsVisibleUndefined: Self = StObject.set(x, "rangeLabelsVisible", js.undefined)
     
     @scala.inline
-    def setSnapOnClickEnabled(value: Boolean): Self = this.set("snapOnClickEnabled", value.asInstanceOf[js.Any])
+    def setSnapOnClickEnabled(value: Boolean): Self = StObject.set(x, "snapOnClickEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnapOnClickEnabled: Self = this.set("snapOnClickEnabled", js.undefined)
+    def setSnapOnClickEnabledUndefined: Self = StObject.set(x, "snapOnClickEnabled", js.undefined)
     
     @scala.inline
-    def setStepsVarargs(value: Double*): Self = this.set("steps", js.Array(value :_*))
+    def setSteps(value: Double | js.Array[Double]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteps(value: Double | js.Array[Double]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setStepsVarargs(value: Double*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
     @scala.inline
     def setThumbCreatedFunction(
       value: (/* index */ Double, /* value */ Double, /* thumbElement */ HTMLElement, /* labelElement */ js.UndefOr[HTMLElement]) => Unit
-    ): Self = this.set("thumbCreatedFunction", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "thumbCreatedFunction", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteThumbCreatedFunction: Self = this.set("thumbCreatedFunction", js.undefined)
+    def setThumbCreatedFunctionUndefined: Self = StObject.set(x, "thumbCreatedFunction", js.undefined)
     
     @scala.inline
-    def setThumbsConstrained(value: Boolean): Self = this.set("thumbsConstrained", value.asInstanceOf[js.Any])
+    def setThumbsConstrained(value: Boolean): Self = StObject.set(x, "thumbsConstrained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumbsConstrained: Self = this.set("thumbsConstrained", js.undefined)
+    def setThumbsConstrainedUndefined: Self = StObject.set(x, "thumbsConstrained", js.undefined)
     
     @scala.inline
-    def setTickConfigsVarargs(value: TickConfig*): Self = this.set("tickConfigs", js.Array(value :_*))
+    def setTickConfigs(value: js.Array[TickConfig]): Self = StObject.set(x, "tickConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickConfigs(value: js.Array[TickConfig]): Self = this.set("tickConfigs", value.asInstanceOf[js.Any])
+    def setTickConfigsUndefined: Self = StObject.set(x, "tickConfigs", js.undefined)
     
     @scala.inline
-    def deleteTickConfigs: Self = this.set("tickConfigs", js.undefined)
+    def setTickConfigsVarargs(value: TickConfig*): Self = StObject.set(x, "tickConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setTrackElement(value: HTMLElement): Self = this.set("trackElement", value.asInstanceOf[js.Any])
+    def setTrackElement(value: HTMLElement): Self = StObject.set(x, "trackElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrackElement: Self = this.set("trackElement", js.undefined)
+    def setTrackElementUndefined: Self = StObject.set(x, "trackElement", js.undefined)
     
     @scala.inline
-    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
+    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setViewModel(value: SliderViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    def setViewModel(value: SliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setVisibleElements(value: SliderVisibleElements): Self = this.set("visibleElements", value.asInstanceOf[js.Any])
+    def setVisibleElements(value: SliderVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisibleElements: Self = this.set("visibleElements", js.undefined)
+    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

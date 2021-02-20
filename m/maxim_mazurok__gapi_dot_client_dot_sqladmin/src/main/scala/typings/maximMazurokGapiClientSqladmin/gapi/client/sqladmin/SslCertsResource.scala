@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientSqladmin.anon.Callback
 import typings.maximMazurokGapiClientSqladmin.anon.InstanceKey
 import typings.maximMazurokGapiClientSqladmin.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientSqladmin.anon.Sha1Fingerprint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslCertsResource extends js.Object {
+trait SslCertsResource extends StObject {
   
   def createEphemeral(request: Callback, body: SslCertsCreateEphemeralRequest): Request[SslCert] = js.native
   /**

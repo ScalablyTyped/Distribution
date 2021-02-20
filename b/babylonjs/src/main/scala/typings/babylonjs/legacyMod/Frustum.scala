@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Frustum ()
   extends typings.babylonjs.indexMod.Frustum
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "Frustum")
-@js.native
-object Frustum extends js.Object {
+object Frustum {
   
   /**
     * Gets the bottom frustum plane transformed by the transform matrix
     * @param transform transformation matrix to be applied to the resulting frustum plane
     * @param frustumPlane the resuling frustum plane
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetBottomPlaneToRef")
+  @js.native
   def GetBottomPlaneToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlane: typings.babylonjs.mathPlaneMod.Plane
@@ -29,6 +30,8 @@ object Frustum extends js.Object {
     * @param transform transformation matrix to be applied to the resulting frustum plane
     * @param frustumPlane the resuling frustum plane
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetFarPlaneToRef")
+  @js.native
   def GetFarPlaneToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlane: typings.babylonjs.mathPlaneMod.Plane
@@ -39,6 +42,8 @@ object Frustum extends js.Object {
     * @param transform transformation matrix to be applied to the resulting frustum plane
     * @param frustumPlane the resuling frustum plane
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetLeftPlaneToRef")
+  @js.native
   def GetLeftPlaneToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlane: typings.babylonjs.mathPlaneMod.Plane
@@ -49,6 +54,8 @@ object Frustum extends js.Object {
     * @param transform transformation matrix to be applied to the resulting frustum plane
     * @param frustumPlane the resuling frustum plane
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetNearPlaneToRef")
+  @js.native
   def GetNearPlaneToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlane: typings.babylonjs.mathPlaneMod.Plane
@@ -59,6 +66,8 @@ object Frustum extends js.Object {
     * @param transform matrix to be applied to the returned planes
     * @returns a new array of 6 Frustum planes computed by the given transformation matrix.
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetPlanes")
+  @js.native
   def GetPlanes(transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix]): js.Array[typings.babylonjs.mathPlaneMod.Plane] = js.native
   
   /**
@@ -66,6 +75,8 @@ object Frustum extends js.Object {
     * @param transform transformation matrix to be applied to the resulting frustum planes
     * @param frustumPlanes the resuling frustum planes
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetPlanesToRef")
+  @js.native
   def GetPlanesToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlanes: js.Array[typings.babylonjs.mathPlaneMod.Plane]
@@ -76,6 +87,8 @@ object Frustum extends js.Object {
     * @param transform transformation matrix to be applied to the resulting frustum plane
     * @param frustumPlane the resuling frustum plane
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetRightPlaneToRef")
+  @js.native
   def GetRightPlaneToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlane: typings.babylonjs.mathPlaneMod.Plane
@@ -86,6 +99,8 @@ object Frustum extends js.Object {
     * @param transform transformation matrix to be applied to the resulting frustum plane
     * @param frustumPlane the resuling frustum plane
     */
+  @JSImport("babylonjs/Legacy/legacy", "Frustum.GetTopPlaneToRef")
+  @js.native
   def GetTopPlaneToRef(
     transform: DeepImmutable[typings.babylonjs.mathVectorMod.Matrix],
     frustumPlane: typings.babylonjs.mathPlaneMod.Plane

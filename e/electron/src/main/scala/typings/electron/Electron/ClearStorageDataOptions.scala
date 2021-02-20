@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearStorageDataOptions extends js.Object {
+trait ClearStorageDataOptions extends StObject {
   
   /**
     * Should follow `window.location.origin`’s representation `scheme://host:port`.
@@ -34,42 +35,30 @@ object ClearStorageDataOptions {
   }
   
   @scala.inline
-  implicit class ClearStorageDataOptionsOps[Self <: ClearStorageDataOptions] (val x: Self) extends AnyVal {
+  implicit class ClearStorageDataOptionsMutableBuilder[Self <: ClearStorageDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuotas(value: js.Array[String]): Self = StObject.set(x, "quotas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setQuotasUndefined: Self = StObject.set(x, "quotas", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setQuotasVarargs(value: String*): Self = StObject.set(x, "quotas", js.Array(value :_*))
     
     @scala.inline
-    def setQuotasVarargs(value: String*): Self = this.set("quotas", js.Array(value :_*))
+    def setStorages(value: js.Array[String]): Self = StObject.set(x, "storages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotas(value: js.Array[String]): Self = this.set("quotas", value.asInstanceOf[js.Any])
+    def setStoragesUndefined: Self = StObject.set(x, "storages", js.undefined)
     
     @scala.inline
-    def deleteQuotas: Self = this.set("quotas", js.undefined)
-    
-    @scala.inline
-    def setStoragesVarargs(value: String*): Self = this.set("storages", js.Array(value :_*))
-    
-    @scala.inline
-    def setStorages(value: js.Array[String]): Self = this.set("storages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorages: Self = this.set("storages", js.undefined)
+    def setStoragesVarargs(value: String*): Self = StObject.set(x, "storages", js.Array(value :_*))
   }
 }

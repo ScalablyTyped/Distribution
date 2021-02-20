@@ -1,6 +1,7 @@
 package typings.atom.mod
 
 import typings.atom.anon.ReadonlyPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("atom", "Point")
 @js.native
 /** Construct a Point object */
-class Point () extends js.Object {
+class Point () extends StObject {
   def this(row: Double) = this()
   def this(row: js.UndefOr[scala.Nothing], column: Double) = this()
   def this(row: Double, column: Double) = this()
@@ -81,19 +82,23 @@ class Point () extends js.Object {
   def traverse(other: PointCompatible): Point = js.native
 }
 /* static members */
-@JSImport("atom", "Point")
-@js.native
-object Point extends js.Object {
+object Point {
   
   // Construction
   /**
     *  Create a Point from an array containing two numbers representing the
     *  row and column.
     */
+  @JSImport("atom", "Point.fromObject")
+  @js.native
   def fromObject(`object`: PointCompatible): Point = js.native
+  @JSImport("atom", "Point.fromObject")
+  @js.native
   def fromObject(`object`: PointCompatible, copy: Boolean): Point = js.native
   
   // Comparison
   /** Returns the given Point that is earlier in the buffer. */
+  @JSImport("atom", "Point.min")
+  @js.native
   def min(point1: PointCompatible, point2: PointCompatible): Point = js.native
 }

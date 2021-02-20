@@ -1,13 +1,14 @@
 package typings.contentfulManagement.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined contentful-management.contentful-management/dist/typings/common-types.MetaSysProps & {  organizationMembership :{  sys :contentful-management.contentful-management/dist/typings/common-types.MetaLinkProps},   user :std.Record<string, any> | null,   invitationUrl :string,   status :string} */
 @js.native
-trait MetaSysPropsorganizationM extends js.Object {
+trait MetaSysPropsorganizationM extends StObject {
   
   var archivedVersion: js.UndefOr[Double] = js.native
   
@@ -56,78 +57,66 @@ object MetaSysPropsorganizationM {
   }
   
   @scala.inline
-  implicit class MetaSysPropsorganizationMOps[Self <: MetaSysPropsorganizationM] (val x: Self) extends AnyVal {
+  implicit class MetaSysPropsorganizationMMutableBuilder[Self <: MetaSysPropsorganizationM] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchivedVersion(value: Double): Self = StObject.set(x, "archivedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchivedVersionUndefined: Self = StObject.set(x, "archivedVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: String): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCreatedBy(value: Sys): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def setInvitationUrl(value: String): Self = this.set("invitationUrl", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationMembership(value: Sys): Self = this.set("organizationMembership", value.asInstanceOf[js.Any])
+    def setInvitationUrl(value: String): Self = StObject.set(x, "invitationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: js.UndefOr[Sys] with String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setOrganizationMembership(value: Sys): Self = StObject.set(x, "organizationMembership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPublishedVersion(value: Double): Self = StObject.set(x, "publishedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAt(value: String): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    def setPublishedVersionUndefined: Self = StObject.set(x, "publishedVersion", js.undefined)
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setSpace(value: Sys): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchivedVersion(value: Double): Self = this.set("archivedVersion", value.asInstanceOf[js.Any])
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def deleteArchivedVersion: Self = this.set("archivedVersion", js.undefined)
+    def setStatus(value: js.UndefOr[Sys] with String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: Sys): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedVersion(value: Double): Self = this.set("publishedVersion", value.asInstanceOf[js.Any])
+    def setUpdatedBy(value: Sys): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublishedVersion: Self = this.set("publishedVersion", js.undefined)
+    def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
     
     @scala.inline
-    def setSpace(value: Sys): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setUser(value: Record[String, _]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setUserNull: Self = StObject.set(x, "user", null)
     
     @scala.inline
-    def setUpdatedBy(value: Sys): Self = this.set("updatedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedBy: Self = this.set("updatedBy", js.undefined)
-    
-    @scala.inline
-    def setUser(value: Record[String, _]): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserNull: Self = this.set("user", null)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

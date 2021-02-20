@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProvisioningClaimResponse extends js.Object {
+trait CreateProvisioningClaimResponse extends StObject {
   
   /**
     * The ID of the certificate.
@@ -36,42 +37,30 @@ object CreateProvisioningClaimResponse {
   }
   
   @scala.inline
-  implicit class CreateProvisioningClaimResponseOps[Self <: CreateProvisioningClaimResponse] (val x: Self) extends AnyVal {
+  implicit class CreateProvisioningClaimResponseMutableBuilder[Self <: CreateProvisioningClaimResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificatePem(value: CertificatePem): Self = StObject.set(x, "certificatePem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    def setCertificatePemUndefined: Self = StObject.set(x, "certificatePem", js.undefined)
     
     @scala.inline
-    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    def setExpiration(value: DateType): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePem(value: CertificatePem): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
-    def deleteCertificatePem: Self = this.set("certificatePem", js.undefined)
+    def setKeyPair(value: KeyPair): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: DateType): Self = this.set("expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
-    
-    @scala.inline
-    def setKeyPair(value: KeyPair): Self = this.set("keyPair", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+    def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
   }
 }

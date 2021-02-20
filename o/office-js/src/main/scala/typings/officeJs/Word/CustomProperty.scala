@@ -9,6 +9,7 @@ import typings.officeJs.anon.Expand
 import typings.officeJs.officeJsStrings.Boolean
 import typings.officeJs.officeJsStrings.Date
 import typings.officeJs.officeJsStrings.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

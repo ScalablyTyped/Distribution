@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesDeleteEventSourceMappingInputMod.Dele
 import typings.awsSdkClientLambdaNode.typesDeleteEventSourceMappingOutputMod.DeleteEventSourceMappingOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/DeleteEventSourceMappingCommand", JSImport.Namespace)
-@js.native
-object deleteEventSourceMappingCommandMod extends js.Object {
+object deleteEventSourceMappingCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/DeleteEventSourceMappingCommand", "DeleteEventSourceMappingCommand")
   @js.native
   class DeleteEventSourceMappingCommand protected () extends Command[
           InputTypesUnion, 

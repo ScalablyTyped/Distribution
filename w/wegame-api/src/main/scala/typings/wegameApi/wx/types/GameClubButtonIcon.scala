@@ -1,5 +1,6 @@
 package typings.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wegameApi.wegameApiStrings.dark
   - typings.wegameApi.wegameApiStrings.light
 */
-trait GameClubButtonIcon extends js.Object
+trait GameClubButtonIcon extends StObject
 object GameClubButtonIcon {
   
   @scala.inline

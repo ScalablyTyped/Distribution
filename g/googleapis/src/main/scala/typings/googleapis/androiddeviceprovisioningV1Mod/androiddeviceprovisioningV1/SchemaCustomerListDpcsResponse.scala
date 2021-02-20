@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message of customer&#39;s listing DPCs.
   */
 @js.native
-trait SchemaCustomerListDpcsResponse extends js.Object {
+trait SchemaCustomerListDpcsResponse extends StObject {
   
   /**
     * The list of DPCs available to the customer that support zero-touch
@@ -25,27 +26,15 @@ object SchemaCustomerListDpcsResponse {
   }
   
   @scala.inline
-  implicit class SchemaCustomerListDpcsResponseOps[Self <: SchemaCustomerListDpcsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomerListDpcsResponseMutableBuilder[Self <: SchemaCustomerListDpcsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpcs(value: js.Array[SchemaDpc]): Self = StObject.set(x, "dpcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpcsUndefined: Self = StObject.set(x, "dpcs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDpcsVarargs(value: SchemaDpc*): Self = this.set("dpcs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDpcs(value: js.Array[SchemaDpc]): Self = this.set("dpcs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDpcs: Self = this.set("dpcs", js.undefined)
+    def setDpcsVarargs(value: SchemaDpc*): Self = StObject.set(x, "dpcs", js.Array(value :_*))
   }
 }

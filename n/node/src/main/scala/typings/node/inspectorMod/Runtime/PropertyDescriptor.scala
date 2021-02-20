@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object property descriptor.
   */
 @js.native
-trait PropertyDescriptor extends js.Object {
+trait PropertyDescriptor extends StObject {
   
   /**
     * True if the type of this property descriptor may be changed and if the property may be deleted from the corresponding object.
@@ -69,69 +70,57 @@ object PropertyDescriptor {
   }
   
   @scala.inline
-  implicit class PropertyDescriptorOps[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
+  implicit class PropertyDescriptorMutableBuilder[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: RemoteObject): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurable(value: Boolean): Self = this.set("configurable", value.asInstanceOf[js.Any])
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def setEnumerable(value: Boolean): Self = this.set("enumerable", value.asInstanceOf[js.Any])
+    def setIsOwn(value: Boolean): Self = StObject.set(x, "isOwn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsOwnUndefined: Self = StObject.set(x, "isOwn", js.undefined)
     
     @scala.inline
-    def setGet(value: RemoteObject): Self = this.set("get", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setSet(value: RemoteObject): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOwn(value: Boolean): Self = this.set("isOwn", value.asInstanceOf[js.Any])
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteIsOwn: Self = this.set("isOwn", js.undefined)
+    def setSymbol(value: RemoteObject): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: RemoteObject): Self = this.set("set", value.asInstanceOf[js.Any])
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbol(value: RemoteObject): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
     @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setWasThrown(value: Boolean): Self = StObject.set(x, "wasThrown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: RemoteObject): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setWasThrownUndefined: Self = StObject.set(x, "wasThrown", js.undefined)
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWasThrown(value: Boolean): Self = this.set("wasThrown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWasThrown: Self = this.set("wasThrown", js.undefined)
-    
-    @scala.inline
-    def setWritable(value: Boolean): Self = this.set("writable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWritable: Self = this.set("writable", js.undefined)
+    def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

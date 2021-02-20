@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GizmoAxisCache extends js.Object {
+trait GizmoAxisCache extends StObject {
   
   /** Used to indicate Active state of the Gizmo */
   var active: Boolean = js.native
@@ -41,42 +42,30 @@ object GizmoAxisCache {
   }
   
   @scala.inline
-  implicit class GizmoAxisCacheOps[Self <: GizmoAxisCache] (val x: Self) extends AnyVal {
+  implicit class GizmoAxisCacheMutableBuilder[Self <: GizmoAxisCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColliderMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "colliderMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColliderMeshesVarargs(value: Mesh*): Self = StObject.set(x, "colliderMeshes", js.Array(value :_*))
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setDisableMaterial(value: StandardMaterial): Self = StObject.set(x, "disableMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColliderMeshesVarargs(value: Mesh*): Self = this.set("colliderMeshes", js.Array(value :_*))
+    def setGizmoMeshes(value: js.Array[Mesh]): Self = StObject.set(x, "gizmoMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColliderMeshes(value: js.Array[Mesh]): Self = this.set("colliderMeshes", value.asInstanceOf[js.Any])
+    def setGizmoMeshesVarargs(value: Mesh*): Self = StObject.set(x, "gizmoMeshes", js.Array(value :_*))
     
     @scala.inline
-    def setDisableMaterial(value: StandardMaterial): Self = this.set("disableMaterial", value.asInstanceOf[js.Any])
+    def setHoverMaterial(value: StandardMaterial): Self = StObject.set(x, "hoverMaterial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGizmoMeshesVarargs(value: Mesh*): Self = this.set("gizmoMeshes", js.Array(value :_*))
-    
-    @scala.inline
-    def setGizmoMeshes(value: js.Array[Mesh]): Self = this.set("gizmoMeshes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHoverMaterial(value: StandardMaterial): Self = this.set("hoverMaterial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaterial(value: StandardMaterial): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setMaterial(value: StandardMaterial): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
   }
 }

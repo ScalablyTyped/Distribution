@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommitDiffSourceCodeType extends js.Object {
+trait CommitDiffSourceCodeType extends StObject {
   
   /**
     *  The SHA of the destination commit used to generate a commit diff. 
@@ -26,30 +27,18 @@ object CommitDiffSourceCodeType {
   }
   
   @scala.inline
-  implicit class CommitDiffSourceCodeTypeOps[Self <: CommitDiffSourceCodeType] (val x: Self) extends AnyVal {
+  implicit class CommitDiffSourceCodeTypeMutableBuilder[Self <: CommitDiffSourceCodeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationCommit(value: CommitId): Self = StObject.set(x, "DestinationCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationCommitUndefined: Self = StObject.set(x, "DestinationCommit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceCommit(value: CommitId): Self = StObject.set(x, "SourceCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationCommit(value: CommitId): Self = this.set("DestinationCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationCommit: Self = this.set("DestinationCommit", js.undefined)
-    
-    @scala.inline
-    def setSourceCommit(value: CommitId): Self = this.set("SourceCommit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCommit: Self = this.set("SourceCommit", js.undefined)
+    def setSourceCommitUndefined: Self = StObject.set(x, "SourceCommit", js.undefined)
   }
 }

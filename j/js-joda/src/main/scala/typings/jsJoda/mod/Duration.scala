@@ -1,5 +1,6 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,30 +87,66 @@ class Duration protected () extends TemporalAmount {
   
   def withSeconds(seconds: Double): Duration = js.native
 }
-/* static members */
-@JSImport("js-joda", "Duration")
-@js.native
-object Duration extends js.Object {
+object Duration {
   
-  var ZERO: Duration = js.native
+  @JSImport("js-joda", "Duration")
+  @js.native
+  val ^ : js.Any = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ZERO")
+  @js.native
+  def ZERO: Duration = js.native
+  @scala.inline
+  def ZERO_=(x: Duration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "Duration.between")
+  @js.native
   def between(startInclusive: Temporal, endExclusive: Temporal): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.from")
+  @js.native
   def from(amount: TemporalAmount): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.of")
+  @js.native
   def of(amount: Double, unit: TemporalUnit): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ofDays")
+  @js.native
   def ofDays(days: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ofHours")
+  @js.native
   def ofHours(hours: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ofMillis")
+  @js.native
   def ofMillis(millis: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ofMinutes")
+  @js.native
   def ofMinutes(minutes: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ofNanos")
+  @js.native
   def ofNanos(nanos: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.ofSeconds")
+  @js.native
   def ofSeconds(seconds: Double): Duration = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Duration.parse")
+  @js.native
   def parse(text: String): Duration = js.native
 }

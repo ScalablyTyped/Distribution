@@ -10,14 +10,14 @@ import typings.babylonjs.pointerDragBehaviorMod.PointerDragBehavior
 import typings.babylonjs.scaleGizmoMod.ScaleGizmo
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/axisScaleGizmo", JSImport.Namespace)
-@js.native
-object axisScaleGizmoMod extends js.Object {
+object axisScaleGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/axisScaleGizmo", "AxisScaleGizmo")
   @js.native
   class AxisScaleGizmo protected () extends Gizmo {
     /**

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest extends js.Object {
+trait GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest extends StObject {
   
   /** Optional. Requested page size. Server may return fewer results than requested. Default value is 100. */
   var pageSize: js.UndefOr[Double] = js.native
@@ -25,30 +26,18 @@ object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequestOps[Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
-    
-    @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

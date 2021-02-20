@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextColumn extends js.Object {
+trait TextColumn extends StObject {
   
   // Whether to allow multiple lines of text.
   var allowMultipleLines: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -31,63 +32,51 @@ object TextColumn {
   }
   
   @scala.inline
-  implicit class TextColumnOps[Self <: TextColumn] (val x: Self) extends AnyVal {
+  implicit class TextColumnMutableBuilder[Self <: TextColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowMultipleLines(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowMultipleLinesNull: Self = StObject.set(x, "allowMultipleLines", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowMultipleLinesUndefined: Self = StObject.set(x, "allowMultipleLines", js.undefined)
     
     @scala.inline
-    def setAllowMultipleLines(value: NullableOption[Boolean]): Self = this.set("allowMultipleLines", value.asInstanceOf[js.Any])
+    def setAppendChangesToExistingText(value: NullableOption[Boolean]): Self = StObject.set(x, "appendChangesToExistingText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowMultipleLines: Self = this.set("allowMultipleLines", js.undefined)
+    def setAppendChangesToExistingTextNull: Self = StObject.set(x, "appendChangesToExistingText", null)
     
     @scala.inline
-    def setAllowMultipleLinesNull: Self = this.set("allowMultipleLines", null)
+    def setAppendChangesToExistingTextUndefined: Self = StObject.set(x, "appendChangesToExistingText", js.undefined)
     
     @scala.inline
-    def setAppendChangesToExistingText(value: NullableOption[Boolean]): Self = this.set("appendChangesToExistingText", value.asInstanceOf[js.Any])
+    def setLinesForEditing(value: NullableOption[Double]): Self = StObject.set(x, "linesForEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppendChangesToExistingText: Self = this.set("appendChangesToExistingText", js.undefined)
+    def setLinesForEditingNull: Self = StObject.set(x, "linesForEditing", null)
     
     @scala.inline
-    def setAppendChangesToExistingTextNull: Self = this.set("appendChangesToExistingText", null)
+    def setLinesForEditingUndefined: Self = StObject.set(x, "linesForEditing", js.undefined)
     
     @scala.inline
-    def setLinesForEditing(value: NullableOption[Double]): Self = this.set("linesForEditing", value.asInstanceOf[js.Any])
+    def setMaxLength(value: NullableOption[Double]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinesForEditing: Self = this.set("linesForEditing", js.undefined)
+    def setMaxLengthNull: Self = StObject.set(x, "maxLength", null)
     
     @scala.inline
-    def setLinesForEditingNull: Self = this.set("linesForEditing", null)
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def setMaxLength(value: NullableOption[Double]): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setTextType(value: NullableOption[String]): Self = StObject.set(x, "textType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setTextTypeNull: Self = StObject.set(x, "textType", null)
     
     @scala.inline
-    def setMaxLengthNull: Self = this.set("maxLength", null)
-    
-    @scala.inline
-    def setTextType(value: NullableOption[String]): Self = this.set("textType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextType: Self = this.set("textType", js.undefined)
-    
-    @scala.inline
-    def setTextTypeNull: Self = this.set("textType", null)
+    def setTextTypeUndefined: Self = StObject.set(x, "textType", js.undefined)
   }
 }

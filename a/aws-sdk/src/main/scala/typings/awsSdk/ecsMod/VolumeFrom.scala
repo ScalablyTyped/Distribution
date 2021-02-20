@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeFrom extends js.Object {
+trait VolumeFrom extends StObject {
   
   /**
     * If this value is true, the container has read-only access to the volume. If this value is false, then the container can write to the volume. The default value is false.
@@ -26,30 +27,18 @@ object VolumeFrom {
   }
   
   @scala.inline
-  implicit class VolumeFromOps[Self <: VolumeFrom] (val x: Self) extends AnyVal {
+  implicit class VolumeFromMutableBuilder[Self <: VolumeFrom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadOnly(value: BoxedBoolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceContainer(value: String): Self = StObject.set(x, "sourceContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: BoxedBoolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setSourceContainer(value: String): Self = this.set("sourceContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceContainer: Self = this.set("sourceContainer", js.undefined)
+    def setSourceContainerUndefined: Self = StObject.set(x, "sourceContainer", js.undefined)
   }
 }

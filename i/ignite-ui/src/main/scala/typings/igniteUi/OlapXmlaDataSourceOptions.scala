@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,102 +94,90 @@ object OlapXmlaDataSourceOptions {
   }
   
   @scala.inline
-  implicit class OlapXmlaDataSourceOptionsOps[Self <: OlapXmlaDataSourceOptions] (val x: Self) extends AnyVal {
+  implicit class OlapXmlaDataSourceOptionsMutableBuilder[Self <: OlapXmlaDataSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalog(value: String): Self = this.set("catalog", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteCatalog: Self = this.set("catalog", js.undefined)
+    def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: String): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setDiscoverProperties(value: js.Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCube(value: String): Self = this.set("cube", value.asInstanceOf[js.Any])
+    def setDiscoverPropertiesUndefined: Self = StObject.set(x, "discoverProperties", js.undefined)
     
     @scala.inline
-    def deleteCube: Self = this.set("cube", js.undefined)
+    def setEnableResultCache(value: Boolean): Self = StObject.set(x, "enableResultCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscoverProperties(value: js.Any): Self = this.set("discoverProperties", value.asInstanceOf[js.Any])
+    def setEnableResultCacheUndefined: Self = StObject.set(x, "enableResultCache", js.undefined)
     
     @scala.inline
-    def deleteDiscoverProperties: Self = this.set("discoverProperties", js.undefined)
+    def setExecuteProperties(value: js.Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableResultCache(value: Boolean): Self = this.set("enableResultCache", value.asInstanceOf[js.Any])
+    def setExecutePropertiesUndefined: Self = StObject.set(x, "executeProperties", js.undefined)
     
     @scala.inline
-    def deleteEnableResultCache: Self = this.set("enableResultCache", js.undefined)
+    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteProperties(value: js.Any): Self = this.set("executeProperties", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteExecuteProperties: Self = this.set("executeProperties", js.undefined)
+    def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: String): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setIsRemoteUndefined: Self = StObject.set(x, "isRemote", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setMdxSettings(value: OlapXmlaDataSourceOptionsMdxSettings): Self = StObject.set(x, "mdxSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRemote(value: Boolean): Self = this.set("isRemote", value.asInstanceOf[js.Any])
+    def setMdxSettingsUndefined: Self = StObject.set(x, "mdxSettings", js.undefined)
     
     @scala.inline
-    def deleteIsRemote: Self = this.set("isRemote", js.undefined)
+    def setMeasureGroup(value: String): Self = StObject.set(x, "measureGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMdxSettings(value: OlapXmlaDataSourceOptionsMdxSettings): Self = this.set("mdxSettings", value.asInstanceOf[js.Any])
+    def setMeasureGroupUndefined: Self = StObject.set(x, "measureGroup", js.undefined)
     
     @scala.inline
-    def deleteMdxSettings: Self = this.set("mdxSettings", js.undefined)
+    def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasureGroup(value: String): Self = this.set("measureGroup", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteMeasureGroup: Self = this.set("measureGroup", js.undefined)
+    def setRequestOptions(value: OlapXmlaDataSourceOptionsRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: String): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
     @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestOptions(value: OlapXmlaDataSourceOptionsRequestOptions): Self = this.set("requestOptions", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteRequestOptions: Self = this.set("requestOptions", js.undefined)
+    def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: String): Self = this.set("rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
-    
-    @scala.inline
-    def setServerUrl(value: String): Self = this.set("serverUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerUrl: Self = this.set("serverUrl", js.undefined)
+    def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
   }
 }

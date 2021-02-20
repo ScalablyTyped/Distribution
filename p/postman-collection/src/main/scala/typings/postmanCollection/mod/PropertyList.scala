@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,9 +124,9 @@ class PropertyList[TElement] protected () extends PropertyBase[PropertyBaseDefin
   def upsert(item: TElement): Boolean | Null = js.native
 }
 /* static members */
-@JSImport("postman-collection", "PropertyList")
-@js.native
-object PropertyList extends js.Object {
+object PropertyList {
   
+  @JSImport("postman-collection", "PropertyList.isPropertyList")
+  @js.native
   def isPropertyList(obj: js.Any): Boolean = js.native
 }

@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.openDirectory
 import typings.chromeApps.chromeAppsStrings.openFile
 import typings.chromeApps.chromeAppsStrings.openWritableFile
 import typings.chromeApps.chromeAppsStrings.saveFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OPENDIRECTORY extends js.Object {
+trait OPENDIRECTORY extends StObject {
   
   var OPEN_DIRECTORY: openDirectory = js.native
   
@@ -33,30 +34,18 @@ object OPENDIRECTORY {
   }
   
   @scala.inline
-  implicit class OPENDIRECTORYOps[Self <: OPENDIRECTORY] (val x: Self) extends AnyVal {
+  implicit class OPENDIRECTORYMutableBuilder[Self <: OPENDIRECTORY] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOPEN_DIRECTORY(value: openDirectory): Self = StObject.set(x, "OPEN_DIRECTORY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOPEN_FILE(value: openFile): Self = StObject.set(x, "OPEN_FILE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOPEN_WRITABLE_FILE(value: openWritableFile): Self = StObject.set(x, "OPEN_WRITABLE_FILE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOPEN_DIRECTORY(value: openDirectory): Self = this.set("OPEN_DIRECTORY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOPEN_FILE(value: openFile): Self = this.set("OPEN_FILE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOPEN_WRITABLE_FILE(value: openWritableFile): Self = this.set("OPEN_WRITABLE_FILE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSAVE_FILE(value: saveFile): Self = this.set("SAVE_FILE", value.asInstanceOf[js.Any])
+    def setSAVE_FILE(value: saveFile): Self = StObject.set(x, "SAVE_FILE", value.asInstanceOf[js.Any])
   }
 }

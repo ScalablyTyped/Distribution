@@ -1,6 +1,7 @@
 package typings.nodeTelegramBotApi.mod
 
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.article
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,63 +39,51 @@ object InlineQueryResultArticle {
   }
   
   @scala.inline
-  implicit class InlineQueryResultArticleOps[Self <: InlineQueryResultArticle] (val x: Self) extends AnyVal {
+  implicit class InlineQueryResultArticleMutableBuilder[Self <: InlineQueryResultArticle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHide_url(value: Boolean): Self = StObject.set(x, "hide_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
+    def setHide_urlUndefined: Self = StObject.set(x, "hide_url", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: article): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setThumb_height(value: Double): Self = StObject.set(x, "thumb_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setThumb_heightUndefined: Self = StObject.set(x, "thumb_height", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setThumb_url(value: String): Self = StObject.set(x, "thumb_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide_url(value: Boolean): Self = this.set("hide_url", value.asInstanceOf[js.Any])
+    def setThumb_urlUndefined: Self = StObject.set(x, "thumb_url", js.undefined)
     
     @scala.inline
-    def deleteHide_url: Self = this.set("hide_url", js.undefined)
+    def setThumb_width(value: Double): Self = StObject.set(x, "thumb_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumb_height(value: Double): Self = this.set("thumb_height", value.asInstanceOf[js.Any])
+    def setThumb_widthUndefined: Self = StObject.set(x, "thumb_width", js.undefined)
     
     @scala.inline
-    def deleteThumb_height: Self = this.set("thumb_height", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumb_url(value: String): Self = this.set("thumb_url", value.asInstanceOf[js.Any])
+    def setType(value: article): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumb_url: Self = this.set("thumb_url", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumb_width(value: Double): Self = this.set("thumb_width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumb_width: Self = this.set("thumb_width", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

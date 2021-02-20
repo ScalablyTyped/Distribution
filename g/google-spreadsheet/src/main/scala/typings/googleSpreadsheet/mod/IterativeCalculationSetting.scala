@@ -1,11 +1,12 @@
 package typings.googleSpreadsheet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IterativeCalculationSetting extends js.Object {
+trait IterativeCalculationSetting extends StObject {
   
   var convergenceThreshold: Double = js.native
   
@@ -20,24 +21,12 @@ object IterativeCalculationSetting {
   }
   
   @scala.inline
-  implicit class IterativeCalculationSettingOps[Self <: IterativeCalculationSetting] (val x: Self) extends AnyVal {
+  implicit class IterativeCalculationSettingMutableBuilder[Self <: IterativeCalculationSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvergenceThreshold(value: Double): Self = StObject.set(x, "convergenceThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConvergenceThreshold(value: Double): Self = this.set("convergenceThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxIterations(value: Double): Self = this.set("maxIterations", value.asInstanceOf[js.Any])
+    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
   }
 }

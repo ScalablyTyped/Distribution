@@ -8,6 +8,7 @@ import typings.atom.atomStrings.highlight
 import typings.atom.atomStrings.line
 import typings.atom.atomStrings.overlay
 import typings.atom.atomStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object DecorationOptions {
   }
   
   @scala.inline
-  implicit class DecorationOptionsOps[Self <: DecorationOptions] (val x: Self) extends AnyVal {
+  implicit class DecorationOptionsMutableBuilder[Self <: DecorationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGutterName(value: String): Self = StObject.set(x, "gutterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGutterNameUndefined: Self = StObject.set(x, "gutterName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: line | `line-number` | text | highlight | overlay | gutter | block | cursor_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutterName(value: String): Self = this.set("gutterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGutterName: Self = this.set("gutterName", js.undefined)
-    
-    @scala.inline
-    def setType(value: line | `line-number` | text | highlight | overlay | gutter | block | cursor_): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -4,6 +4,7 @@ import typings.elasticApmNode.anon.Name
 import typings.elasticApmNode.anon.Spanid
 import typings.elasticApmNode.mod.AwsLambda.Handler
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

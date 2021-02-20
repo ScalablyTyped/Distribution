@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientAccesscontextmanager.anon.Parent
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.PrettyPrint
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.QuotaUser
 import typings.maximMazurokGapiClientAccesscontextmanager.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServicePerimetersResource extends js.Object {
+trait ServicePerimetersResource extends StObject {
   
   def commit(request: Alt, body: CommitServicePerimetersRequest): Request[Operation] = js.native
   /**

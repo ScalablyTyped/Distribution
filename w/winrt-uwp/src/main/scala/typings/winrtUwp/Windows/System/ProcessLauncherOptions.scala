@@ -1,19 +1,23 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessLauncherOptions extends js.Object {
+trait ProcessLauncherOptions extends StObject {
   
   var standardError: js.Any = js.native
   
-   /* unmapped type */ var standardInput: js.Any = js.native
+  /* unmapped type */
+  var standardInput: js.Any = js.native
   
-   /* unmapped type */ var standardOutput: js.Any = js.native
+  /* unmapped type */
+  var standardOutput: js.Any = js.native
   
-   /* unmapped type */ var workingDirectory: js.Any = js.native
+  /* unmapped type */
+  var workingDirectory: js.Any = js.native
 }
 object ProcessLauncherOptions {
   
@@ -24,30 +28,18 @@ object ProcessLauncherOptions {
   }
   
   @scala.inline
-  implicit class ProcessLauncherOptionsOps[Self <: ProcessLauncherOptions] (val x: Self) extends AnyVal {
+  implicit class ProcessLauncherOptionsMutableBuilder[Self <: ProcessLauncherOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStandardError(value: js.Any): Self = StObject.set(x, "standardError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStandardInput(value: js.Any): Self = StObject.set(x, "standardInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStandardOutput(value: js.Any): Self = StObject.set(x, "standardOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardError(value: js.Any): Self = this.set("standardError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardInput(value: js.Any): Self = this.set("standardInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardOutput(value: js.Any): Self = this.set("standardOutput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkingDirectory(value: js.Any): Self = this.set("workingDirectory", value.asInstanceOf[js.Any])
+    def setWorkingDirectory(value: js.Any): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
   }
 }

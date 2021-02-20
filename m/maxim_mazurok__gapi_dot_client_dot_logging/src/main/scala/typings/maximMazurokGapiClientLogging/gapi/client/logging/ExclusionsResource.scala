@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientLogging.anon.Name
 import typings.maximMazurokGapiClientLogging.anon.Parent
 import typings.maximMazurokGapiClientLogging.anon.Resource
 import typings.maximMazurokGapiClientLogging.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExclusionsResource extends js.Object {
+trait ExclusionsResource extends StObject {
   
   /** Creates a new exclusion in a specified parent resource. Only log entries belonging to that resource can be excluded. You can have up to 10 exclusions in a resource. */
   def create(request: Parent): Request[LogExclusion] = js.native

@@ -23,6 +23,7 @@ import typings.mendixmodelsdk.restMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.webservicesMod.webservices.PublishedParameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,16 +74,20 @@ class ListType protected () extends EntityType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MListType: MicroflowParameterBase = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType")
-@js.native
-object ListType extends js.Object {
+object ListType {
+  
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new ListType instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.create")
+  @js.native
   def create(model: IModel): ListType = js.native
   
   /**
@@ -93,6 +98,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInAppServiceActionParameterUnderParameterType")
+  @js.native
   def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): ListType = js.native
   
   /**
@@ -103,6 +111,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInAppServiceActionUnderActionReturnType")
+  @js.native
   def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): ListType = js.native
   
   /**
@@ -113,6 +124,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInConstantUnderType")
+  @js.native
   def createInConstantUnderType(container: Constant): ListType = js.native
   
   /**
@@ -123,6 +137,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInCreateVariableActionUnderVariableType")
+  @js.native
   def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): ListType = js.native
   
   /**
@@ -133,6 +150,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInDataSetColumnUnderColumnType")
+  @js.native
   def createInDataSetColumnUnderColumnType(container: DataSetColumn): ListType = js.native
   
   /**
@@ -143,6 +163,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInDataSetParameterUnderParameterType")
+  @js.native
   def createInDataSetParameterUnderParameterType(container: DataSetParameter): ListType = js.native
   
   /**
@@ -153,6 +176,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInDocumentTemplateParameterUnderParameterType")
+  @js.native
   def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): ListType = js.native
   
   /**
@@ -163,6 +189,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.16.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInImportMappingUnderParameterType")
+  @js.native
   def createInImportMappingUnderParameterType(container: ImportMapping): ListType = js.native
   
   /**
@@ -173,6 +202,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInMicroflowBaseUnderMicroflowReturnType")
+  @js.native
   def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): ListType = js.native
   
   /**
@@ -183,6 +215,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInMicroflowParameterBaseUnderParameterType")
+  @js.native
   def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): ListType = js.native
   
   /**
@@ -193,6 +228,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInMicroflowParameterObjectUnderVariableType")
+  @js.native
   def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): ListType = js.native
   
   /**
@@ -203,6 +241,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInPublishedOperationUnderOperationReturnType")
+  @js.native
   def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): ListType = js.native
   
   /**
@@ -213,6 +254,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInPublishedParameterUnderParameterType")
+  @js.native
   def createInPublishedParameterUnderParameterType(container: PublishedParameter): ListType = js.native
   
   /**
@@ -223,6 +267,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.17.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInRestOperationParameterUnderType")
+  @js.native
   def createInRestOperationParameterUnderType(container: RestOperationParameter): ListType = js.native
   
   /**
@@ -233,6 +280,9 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInResultHandlingUnderVariableType")
+  @js.native
   def createInResultHandlingUnderVariableType(container: ResultHandling): ListType = js.native
   
   /**
@@ -243,9 +293,22 @@ object ListType extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.9.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.createInValueMappingElementUnderType")
+  @js.native
   def createInValueMappingElementUnderType(container: ValueMappingElement): ListType = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.ListType.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

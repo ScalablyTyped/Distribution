@@ -1,13 +1,14 @@
 package typings.tinymce.mod
 
 import typings.tinymce.mod.html.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tinymce", "Formatter")
 @js.native
-class Formatter protected () extends js.Object {
+class Formatter protected () extends StObject {
   def this(ed: Editor) = this()
   
   @JSName("apply")

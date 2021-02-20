@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1Entity extends js.Object {
+trait GoogleCloudVideointelligenceV1Entity extends StObject {
   
   /** Textual description, e.g., `Fixed-gear bicycle`. */
   var description: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object GoogleCloudVideointelligenceV1Entity {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1EntityOps[Self <: GoogleCloudVideointelligenceV1Entity] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1EntityMutableBuilder[Self <: GoogleCloudVideointelligenceV1Entity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
-    
-    @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

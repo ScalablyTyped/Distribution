@@ -357,857 +357,1081 @@ import typings.storybookComponents.storybookComponentsStrings.view
 import typings.storybookComponents.storybookComponentsStrings.wbr
 import typings.storybookComponents.storybookComponentsStrings.webview
 import typings.storybookTheming.typesMod.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/components/dist/form", JSImport.Namespace)
-@js.native
-object formMod extends js.Object {
+object formMod {
   
-  @js.native
-  object Form extends js.Object {
+  /* Inlined @emotion/styled-base.@emotion/styled-base.StyledComponent<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, std.Pick<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'name' | 'method' | 'target' | 'acceptCharset' | 'action' | 'autoComplete' | 'encType' | 'noValidate'>, @storybook/theming.@storybook/theming.Theme> & {  Field :react.react.FunctionComponent<@storybook/components.@storybook/components/dist/form/field/field.FieldProps>,   Input :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<std.Pick<react.react.HTMLProps<std.HTMLInputElement>, 'color' | 'content' | 'translate' | 'width' | 'default' | 'hidden' | 'ref' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, 'color' | 'content' | 'height' | 'translate' | 'width' | 'default' | 'hidden' | 'key' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'formAction' | 'formEncType' | 'formMethod' | 'formNoValidate' | 'formTarget' | 'name' | 'type' | 'value' | 'start' | 'cite' | 'data' | 'label' | 'span' | 'summary' | 'pattern' | 'list' | 'step' | 'wrap' | 'href' | 'size' | 'open' | 'multiple' | 'cellPadding' | 'cellSpacing' | 'alt' | 'crossOrigin' | 'sizes' | 'src' | 'srcSet' | 'useMap' | 'reversed' | 'max' | 'media' | 'method' | 'min' | 'target' | 'download' | 'hrefLang' | 'rel' | 'htmlFor' | 'valid' | 'align' | 'accept' | 'acceptCharset' | 'action' | 'allowFullScreen' | 'allowTransparency' | 'as' | 'async' | 'autoComplete' | 'autoPlay' | 'capture' | 'charSet' | 'challenge' | 'checked' | 'classID' | 'cols' | 'colSpan' | 'controls' | 'coords' | 'dateTime' | 'defer' | 'encType' | 'frameBorder' | 'headers' | 'high' | 'httpEquiv' | 'integrity' | 'keyParams' | 'keyType' | 'kind' | 'loop' | 'low' | 'manifest' | 'marginHeight' | 'marginWidth' | 'maxLength' | 'mediaGroup' | 'minLength' | 'muted' | 'nonce' | 'noValidate' | 'optimum' | 'playsInline' | 'poster' | 'preload' | 'readOnly' | 'required' | 'rows' | 'rowSpan' | 'sandbox' | 'scope' | 'scoped' | 'scrolling' | 'seamless' | 'selected' | 'shape' | 'srcDoc' | 'srcLang' | 'wmode'> & react.react.RefAttributes<any>, @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Select :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, std.Pick<react.react.SelectHTMLAttributes<std.HTMLSelectElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'multiple' | 'autoComplete' | 'required'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Textarea :@emotion/styled-base.@emotion/styled-base.StyledComponent<std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps & react.react.RefAttributes<any>, std.Pick</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_react-textarea-autosize.TextareaAutosizeProps * / any, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'autoFocus' | 'disabled' | 'form' | 'name' | 'value' | 'wrap' | 'autoComplete' | 'cols' | 'maxLength' | 'minLength' | 'readOnly' | 'required' | 'rows' | 'dirName' | 'maxRows' | 'minRows' | 'onHeightChange' | 'cacheMeasurements'> & @storybook/components.@storybook/components/dist/form/input/input.InputStyleProps, @storybook/theming.@storybook/theming.Theme> & {  displayName :string},   Button :react.react.FunctionComponent<any>} */
+  object Form {
     
+    @JSImport("@storybook/components/dist/form", "Form")
+    @js.native
     def apply(props: PropsWithChildrenDetailed): ReactElement | Null = js.native
+    @JSImport("@storybook/components/dist/form", "Form")
+    @js.native
     def apply(props: PropsWithChildrenDetailed, context: js.Any): ReactElement | Null = js.native
+    @JSImport("@storybook/components/dist/form", "Form")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var Button: FunctionComponent[_] = js.native
+    @JSImport("@storybook/components/dist/form", "Form.Button")
+    @js.native
+    def Button: FunctionComponent[js.Any] = js.native
+    @scala.inline
+    def Button_=(x: FunctionComponent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
     
-    var Field: FunctionComponent[FieldProps] = js.native
+    @JSImport("@storybook/components/dist/form", "Form.Field")
+    @js.native
+    def Field: FunctionComponent[FieldProps] = js.native
+    @scala.inline
+    def Field_=(x: FunctionComponent[FieldProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Field")(x.asInstanceOf[js.Any])
     
-    var Input: StyledComponentPickPickHT = js.native
+    @JSImport("@storybook/components/dist/form", "Form.Input")
+    @js.native
+    def Input: StyledComponentPickPickHT = js.native
+    @scala.inline
+    def Input_=(x: StyledComponentPickPickHT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Input")(x.asInstanceOf[js.Any])
     
-    var Select: StyledComponentPickSelect = js.native
+    @JSImport("@storybook/components/dist/form", "Form.Select")
+    @js.native
+    def Select: StyledComponentPickSelect = js.native
+    @scala.inline
+    def Select_=(x: StyledComponentPickSelect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Select")(x.asInstanceOf[js.Any])
     
-    var Textarea: StyledComponentPickanycol = js.native
+    @JSImport("@storybook/components/dist/form", "Form.Textarea")
+    @js.native
+    def Textarea: StyledComponentPickanycol = js.native
+    @scala.inline
+    def Textarea_=(x: StyledComponentPickanycol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Textarea")(x.asInstanceOf[js.Any])
     
-    var __emotion_styles: js.Any = js.native
+    @JSImport("@storybook/components/dist/form", "Form.contextTypes")
+    @js.native
+    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+    @scala.inline
+    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
-    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+    @JSImport("@storybook/components/dist/form", "Form.defaultProps")
+    @js.native
+    def defaultProps: js.UndefOr[PartialDetailedHTMLPropsF] = js.native
+    @scala.inline
+    def defaultProps_=(x: js.UndefOr[PartialDetailedHTMLPropsF]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    var defaultProps: js.UndefOr[PartialDetailedHTMLPropsF] = js.native
+    @JSImport("@storybook/components/dist/form", "Form.displayName")
+    @js.native
+    def displayName: js.UndefOr[String] = js.native
+    @scala.inline
+    def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    var displayName: js.UndefOr[String] = js.native
+    @JSImport("@storybook/components/dist/form", "Form.__emotion_styles")
+    @js.native
+    def emotionStyles: js.Any = js.native
     
-    var propTypes: js.UndefOr[WeakValidationMapDetailed] = js.native
+    @scala.inline
+    def emotionStyles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__emotion_styles")(x.asInstanceOf[js.Any])
     
+    @JSImport("@storybook/components/dist/form", "Form.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapDetailed] = js.native
+    @scala.inline
+    def propTypes_=(x: js.UndefOr[WeakValidationMapDetailed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent[Tag /* <: ComponentType[_] */](tag: Tag): StyledComponent[PropsOf[Tag], PickDetailedHTMLPropsForm, Theme] = js.native
     /**
       * @desc this method is type-unsafe
       */
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_a(tag: a): StyledComponent[
         DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_abbr(tag: abbr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_address(tag: address): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_animate(tag: animate): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_animateMotion(tag: animateMotion): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_animateTransform(tag: animateTransform): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_area(tag: area): StyledComponent[
         DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_article(tag: article): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_aside(tag: aside): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_audio(tag: audio): StyledComponent[
         DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_b(tag: b): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_base(tag: base): StyledComponent[
         DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_bdi(tag: bdi): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_bdo(tag: bdo): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_big(tag: big): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_blockquote(tag: blockquote): StyledComponent[
         DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_body(tag: body): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_br(tag: br): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_button(tag: button): StyledComponent[
         DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_canvas(tag: canvas): StyledComponent[
         DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_caption(tag: caption): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_circle(tag: circle): StyledComponent[SVGProps[SVGCircleElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_cite(tag: cite): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_clipPath(tag: clipPath): StyledComponent[SVGProps[SVGClipPathElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_code(tag: code): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_col(tag: col): StyledComponent[
         DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_colgroup(tag: colgroup): StyledComponent[
         DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_data(tag: data): StyledComponent[
         DetailedHTMLProps[DataHTMLAttributes[HTMLDataElement], HTMLDataElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_datalist(tag: datalist): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_dd(tag: dd): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_del(tag: del): StyledComponent[
         DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_details(tag: details): StyledComponent[
         DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_dfn(tag: dfn): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_dialog(tag: dialog): StyledComponent[
         DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_div(tag: div): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_dl(tag: dl): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_dt(tag: dt): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_ellipse(tag: ellipse): StyledComponent[SVGProps[SVGEllipseElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_em(tag: em): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_embed(tag: embed): StyledComponent[
         DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feBlend(tag: feBlend): StyledComponent[SVGProps[SVGFEBlendElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feColorMatrix(tag: feColorMatrix): StyledComponent[SVGProps[SVGFEColorMatrixElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feComponentTransfer(tag: feComponentTransfer): StyledComponent[SVGProps[SVGFEComponentTransferElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feComposite(tag: feComposite): StyledComponent[SVGProps[SVGFECompositeElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feConvolveMatrix(tag: feConvolveMatrix): StyledComponent[SVGProps[SVGFEConvolveMatrixElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feDiffuseLighting(tag: feDiffuseLighting): StyledComponent[SVGProps[SVGFEDiffuseLightingElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feDisplacementMap(tag: feDisplacementMap): StyledComponent[SVGProps[SVGFEDisplacementMapElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feDistantLight(tag: feDistantLight): StyledComponent[SVGProps[SVGFEDistantLightElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feDropShadow(tag: feDropShadow): StyledComponent[SVGProps[SVGFEDropShadowElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feFlood(tag: feFlood): StyledComponent[SVGProps[SVGFEFloodElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feFuncA(tag: feFuncA): StyledComponent[SVGProps[SVGFEFuncAElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feFuncB(tag: feFuncB): StyledComponent[SVGProps[SVGFEFuncBElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feFuncG(tag: feFuncG): StyledComponent[SVGProps[SVGFEFuncGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feFuncR(tag: feFuncR): StyledComponent[SVGProps[SVGFEFuncRElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feGaussianBlur(tag: feGaussianBlur): StyledComponent[SVGProps[SVGFEGaussianBlurElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feImage(tag: feImage): StyledComponent[SVGProps[SVGFEImageElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feMerge(tag: feMerge): StyledComponent[SVGProps[SVGFEMergeElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feMergeNode(tag: feMergeNode): StyledComponent[SVGProps[SVGFEMergeNodeElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feMorphology(tag: feMorphology): StyledComponent[SVGProps[SVGFEMorphologyElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feOffset(tag: feOffset): StyledComponent[SVGProps[SVGFEOffsetElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_fePointLight(tag: fePointLight): StyledComponent[SVGProps[SVGFEPointLightElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feSpecularLighting(tag: feSpecularLighting): StyledComponent[SVGProps[SVGFESpecularLightingElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feSpotLight(tag: feSpotLight): StyledComponent[SVGProps[SVGFESpotLightElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feTile(tag: feTile): StyledComponent[SVGProps[SVGFETileElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_feTurbulence(tag: feTurbulence): StyledComponent[SVGProps[SVGFETurbulenceElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_fieldset(tag: fieldset): StyledComponent[
         DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_figcaption(tag: figcaption): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_figure(tag: figure): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_filter(tag: filter): StyledComponent[SVGProps[SVGFilterElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_footer(tag: footer): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_foreignObject(tag: foreignObject): StyledComponent[SVGProps[SVGForeignObjectElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_form(tag: form): StyledComponent[
         DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_g(tag: g): StyledComponent[SVGProps[SVGGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_h1(tag: h1): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_h2(tag: h2): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_h3(tag: h3): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_h4(tag: h4): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_h5(tag: h5): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_h6(tag: h6): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_head(tag: head): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_header(tag: header): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_hgroup(tag: hgroup): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_hr(tag: hr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_html(tag: html): StyledComponent[
         DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_i(tag: i): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_iframe(tag: iframe): StyledComponent[
         DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_image(tag: image): StyledComponent[SVGProps[SVGImageElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_img(tag: img): StyledComponent[
         DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_input(tag: input): StyledComponent[
         DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_ins(tag: ins): StyledComponent[
         DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_kbd(tag: kbd): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_keygen(tag: keygen): StyledComponent[
         DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_label(tag: label): StyledComponent[
         DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_legend(tag: legend): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_li(tag: li): StyledComponent[
         DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_line(tag: line): StyledComponent[SVGProps[SVGLineElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_linearGradient(tag: linearGradient): StyledComponent[SVGProps[SVGLinearGradientElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_link(tag: link): StyledComponent[
         DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_main(tag: main): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_map(tag: map): StyledComponent[
         DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_mark(tag: mark): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_marker(tag: marker): StyledComponent[SVGProps[SVGMarkerElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_mask(tag: mask): StyledComponent[SVGProps[SVGMaskElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_menu(tag: menu): StyledComponent[
         DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_menuitem(tag: menuitem): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_meta(tag: meta): StyledComponent[
         DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_meter(tag: meter): StyledComponent[
         DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_nav(tag: nav): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_noindex(tag: noindex): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_noscript(tag: noscript): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_object(tag: `object`): StyledComponent[
         DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_ol(tag: ol): StyledComponent[
         DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_optgroup(tag: optgroup): StyledComponent[
         DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_option(tag: option): StyledComponent[
         DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_output(tag: output): StyledComponent[
         DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_param(tag: param): StyledComponent[
         DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_path(tag: path): StyledComponent[SVGProps[SVGPathElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_pattern(tag: pattern): StyledComponent[SVGProps[SVGPatternElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_picture(tag: picture): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_polygon(tag: polygon): StyledComponent[SVGProps[SVGPolygonElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_polyline(tag: polyline): StyledComponent[SVGProps[SVGPolylineElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_pre(tag: pre): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_progress(tag: progress): StyledComponent[
         DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_q(tag: q): StyledComponent[
         DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_radialGradient(tag: radialGradient): StyledComponent[SVGProps[SVGRadialGradientElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_rect(tag: rect): StyledComponent[SVGProps[SVGRectElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_rp(tag: rp): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_rt(tag: rt): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_ruby(tag: ruby): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_s(tag: s): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_samp(tag: samp): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_script(tag: script): StyledComponent[
         DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_section(tag: section): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_select(tag: select): StyledComponent[
         DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_slot(tag: slot): StyledComponent[
         DetailedHTMLProps[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_small(tag: small): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_source(tag: source): StyledComponent[
         DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_span(tag: span): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_stop(tag: stop): StyledComponent[SVGProps[SVGStopElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_strong(tag: strong): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_style(tag: style): StyledComponent[
         DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_sub(tag: sub): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_summary(tag: summary): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_sup(tag: sup): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_svg(tag: svg): StyledComponent[SVGProps[SVGSVGElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_switch(tag: switch): StyledComponent[SVGProps[SVGSwitchElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_symbol(tag: symbol): StyledComponent[SVGProps[SVGSymbolElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_table(tag: table): StyledComponent[
         DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_tbody(tag: tbody): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_td(tag: td): StyledComponent[
         DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_template(tag: template): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_text(tag: text): StyledComponent[SVGProps[SVGTextElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_textPath(tag: textPath): StyledComponent[SVGProps[SVGTextPathElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_textarea(tag: textarea): StyledComponent[
         DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_tfoot(tag: tfoot): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_th(tag: th): StyledComponent[
         DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_thead(tag: thead): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_time(tag: time): StyledComponent[
         DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_tr(tag: tr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_track(tag: track): StyledComponent[
         DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_tspan(tag: tspan): StyledComponent[SVGProps[SVGTSpanElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_u(tag: u): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_ul(tag: ul): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_use(tag: use): StyledComponent[SVGProps[SVGUseElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_var(tag: `var`): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_video(tag: video): StyledComponent[
         DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_view(tag: view): StyledComponent[SVGProps[SVGViewElement], PickDetailedHTMLPropsForm, Theme] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_wbr(tag: wbr): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], 
         PickDetailedHTMLPropsForm, 
         Theme
       ] = js.native
-    @JSName("withComponent")
+    @JSImport("@storybook/components/dist/form", "Form.withComponent")
+    @js.native
     def withComponent_webview(tag: webview): StyledComponent[
         DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement], 
         PickDetailedHTMLPropsForm, 

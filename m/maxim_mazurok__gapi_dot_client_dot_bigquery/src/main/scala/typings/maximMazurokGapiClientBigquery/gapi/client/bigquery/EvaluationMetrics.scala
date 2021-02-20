@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EvaluationMetrics extends js.Object {
+trait EvaluationMetrics extends StObject {
   
   /** Populated for ARIMA models. */
   var arimaForecastingMetrics: js.UndefOr[ArimaForecastingMetrics] = js.native
@@ -34,54 +35,42 @@ object EvaluationMetrics {
   }
   
   @scala.inline
-  implicit class EvaluationMetricsOps[Self <: EvaluationMetrics] (val x: Self) extends AnyVal {
+  implicit class EvaluationMetricsMutableBuilder[Self <: EvaluationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArimaForecastingMetrics(value: ArimaForecastingMetrics): Self = StObject.set(x, "arimaForecastingMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArimaForecastingMetricsUndefined: Self = StObject.set(x, "arimaForecastingMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinaryClassificationMetrics(value: BinaryClassificationMetrics): Self = StObject.set(x, "binaryClassificationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArimaForecastingMetrics(value: ArimaForecastingMetrics): Self = this.set("arimaForecastingMetrics", value.asInstanceOf[js.Any])
+    def setBinaryClassificationMetricsUndefined: Self = StObject.set(x, "binaryClassificationMetrics", js.undefined)
     
     @scala.inline
-    def deleteArimaForecastingMetrics: Self = this.set("arimaForecastingMetrics", js.undefined)
+    def setClusteringMetrics(value: ClusteringMetrics): Self = StObject.set(x, "clusteringMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryClassificationMetrics(value: BinaryClassificationMetrics): Self = this.set("binaryClassificationMetrics", value.asInstanceOf[js.Any])
+    def setClusteringMetricsUndefined: Self = StObject.set(x, "clusteringMetrics", js.undefined)
     
     @scala.inline
-    def deleteBinaryClassificationMetrics: Self = this.set("binaryClassificationMetrics", js.undefined)
+    def setMultiClassClassificationMetrics(value: MultiClassClassificationMetrics): Self = StObject.set(x, "multiClassClassificationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusteringMetrics(value: ClusteringMetrics): Self = this.set("clusteringMetrics", value.asInstanceOf[js.Any])
+    def setMultiClassClassificationMetricsUndefined: Self = StObject.set(x, "multiClassClassificationMetrics", js.undefined)
     
     @scala.inline
-    def deleteClusteringMetrics: Self = this.set("clusteringMetrics", js.undefined)
+    def setRankingMetrics(value: RankingMetrics): Self = StObject.set(x, "rankingMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiClassClassificationMetrics(value: MultiClassClassificationMetrics): Self = this.set("multiClassClassificationMetrics", value.asInstanceOf[js.Any])
+    def setRankingMetricsUndefined: Self = StObject.set(x, "rankingMetrics", js.undefined)
     
     @scala.inline
-    def deleteMultiClassClassificationMetrics: Self = this.set("multiClassClassificationMetrics", js.undefined)
+    def setRegressionMetrics(value: RegressionMetrics): Self = StObject.set(x, "regressionMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRankingMetrics(value: RankingMetrics): Self = this.set("rankingMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRankingMetrics: Self = this.set("rankingMetrics", js.undefined)
-    
-    @scala.inline
-    def setRegressionMetrics(value: RegressionMetrics): Self = this.set("regressionMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegressionMetrics: Self = this.set("regressionMetrics", js.undefined)
+    def setRegressionMetricsUndefined: Self = StObject.set(x, "regressionMetrics", js.undefined)
   }
 }

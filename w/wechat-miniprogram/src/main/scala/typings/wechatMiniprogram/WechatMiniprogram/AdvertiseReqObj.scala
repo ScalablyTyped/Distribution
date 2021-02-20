@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 广播自定义参数 */
 @js.native
-trait AdvertiseReqObj extends js.Object {
+trait AdvertiseReqObj extends StObject {
   
   /** 当前Service是否可连接 */
   var connectable: js.UndefOr[Boolean] = js.native
@@ -29,48 +30,36 @@ object AdvertiseReqObj {
   }
   
   @scala.inline
-  implicit class AdvertiseReqObjOps[Self <: AdvertiseReqObj] (val x: Self) extends AnyVal {
+  implicit class AdvertiseReqObjMutableBuilder[Self <: AdvertiseReqObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectable(value: Boolean): Self = StObject.set(x, "connectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectableUndefined: Self = StObject.set(x, "connectable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectable(value: Boolean): Self = this.set("connectable", value.asInstanceOf[js.Any])
+    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
     @scala.inline
-    def deleteConnectable: Self = this.set("connectable", js.undefined)
+    def setManufacturerData(value: js.Array[ManufacturerData]): Self = StObject.set(x, "manufacturerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    def setManufacturerDataUndefined: Self = StObject.set(x, "manufacturerData", js.undefined)
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    def setManufacturerDataVarargs(value: ManufacturerData*): Self = StObject.set(x, "manufacturerData", js.Array(value :_*))
     
     @scala.inline
-    def setManufacturerDataVarargs(value: ManufacturerData*): Self = this.set("manufacturerData", js.Array(value :_*))
+    def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturerData(value: js.Array[ManufacturerData]): Self = this.set("manufacturerData", value.asInstanceOf[js.Any])
+    def setServiceUuidsUndefined: Self = StObject.set(x, "serviceUuids", js.undefined)
     
     @scala.inline
-    def deleteManufacturerData: Self = this.set("manufacturerData", js.undefined)
-    
-    @scala.inline
-    def setServiceUuidsVarargs(value: String*): Self = this.set("serviceUuids", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceUuids(value: js.Array[String]): Self = this.set("serviceUuids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceUuids: Self = this.set("serviceUuids", js.undefined)
+    def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
   }
 }

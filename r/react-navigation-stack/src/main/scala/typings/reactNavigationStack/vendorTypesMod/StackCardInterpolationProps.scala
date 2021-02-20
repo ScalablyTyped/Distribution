@@ -4,12 +4,13 @@ import typings.reactNative.mod.Animated.AnimatedInterpolation
 import typings.reactNavigationStack.anon.Left
 import typings.reactNavigationStack.anon.Progress
 import typings.reactNavigationStack.anon.Screen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackCardInterpolationProps extends js.Object {
+trait StackCardInterpolationProps extends StObject {
   
   /**
     * Animated node representing whether the card is closing (1 - closing, 0 - not closing).
@@ -69,45 +70,33 @@ object StackCardInterpolationProps {
   }
   
   @scala.inline
-  implicit class StackCardInterpolationPropsOps[Self <: StackCardInterpolationProps] (val x: Self) extends AnyVal {
+  implicit class StackCardInterpolationPropsMutableBuilder[Self <: StackCardInterpolationProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosing(value: AnimatedInterpolation): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosing(value: AnimatedInterpolation): Self = this.set("closing", value.asInstanceOf[js.Any])
+    def setInsets(value: Left): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: Progress): Self = this.set("current", value.asInstanceOf[js.Any])
+    def setInverted(value: AnimatedInterpolation): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLayouts(value: Screen): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsets(value: Left): Self = this.set("insets", value.asInstanceOf[js.Any])
+    def setNext(value: Progress): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverted(value: AnimatedInterpolation): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def setLayouts(value: Screen): Self = this.set("layouts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwiping(value: AnimatedInterpolation): Self = this.set("swiping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: Progress): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setSwiping(value: AnimatedInterpolation): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.personalizeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SolutionVersion extends js.Object {
+trait SolutionVersion extends StObject {
   
   /**
     * The date and time (in Unix time) that this version of the solution was created.
@@ -91,108 +92,96 @@ object SolutionVersion {
   }
   
   @scala.inline
-  implicit class SolutionVersionOps[Self <: SolutionVersion] (val x: Self) extends AnyVal {
+  implicit class SolutionVersionMutableBuilder[Self <: SolutionVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDateTime(value: Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    def setDatasetGroupArnUndefined: Self = StObject.set(x, "datasetGroupArn", js.undefined)
     
     @scala.inline
-    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetGroupArn(value: Arn): Self = this.set("datasetGroupArn", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     @scala.inline
-    def deleteDatasetGroupArn: Self = this.set("datasetGroupArn", js.undefined)
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: EventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("eventType", js.undefined)
+    def setLastUpdatedDateTime(value: Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    def setPerformAutoML(value: PerformAutoML): Self = StObject.set(x, "performAutoML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    def setPerformAutoMLUndefined: Self = StObject.set(x, "performAutoML", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    def setPerformHPO(value: PerformHPO): Self = StObject.set(x, "performHPO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformAutoML(value: PerformAutoML): Self = this.set("performAutoML", value.asInstanceOf[js.Any])
+    def setPerformHPOUndefined: Self = StObject.set(x, "performHPO", js.undefined)
     
     @scala.inline
-    def deletePerformAutoML: Self = this.set("performAutoML", js.undefined)
+    def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformHPO(value: PerformHPO): Self = this.set("performHPO", value.asInstanceOf[js.Any])
+    def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
     
     @scala.inline
-    def deletePerformHPO: Self = this.set("performHPO", js.undefined)
+    def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipeArn(value: Arn): Self = this.set("recipeArn", value.asInstanceOf[js.Any])
+    def setSolutionArnUndefined: Self = StObject.set(x, "solutionArn", js.undefined)
     
     @scala.inline
-    def deleteRecipeArn: Self = this.set("recipeArn", js.undefined)
+    def setSolutionConfig(value: SolutionConfig): Self = StObject.set(x, "solutionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolutionArn(value: Arn): Self = this.set("solutionArn", value.asInstanceOf[js.Any])
+    def setSolutionConfigUndefined: Self = StObject.set(x, "solutionConfig", js.undefined)
     
     @scala.inline
-    def deleteSolutionArn: Self = this.set("solutionArn", js.undefined)
+    def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolutionConfig(value: SolutionConfig): Self = this.set("solutionConfig", value.asInstanceOf[js.Any])
+    def setSolutionVersionArnUndefined: Self = StObject.set(x, "solutionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteSolutionConfig: Self = this.set("solutionConfig", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSolutionVersionArn(value: Arn): Self = this.set("solutionVersionArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSolutionVersionArn: Self = this.set("solutionVersionArn", js.undefined)
+    def setTrainingHours(value: TrainingHours): Self = StObject.set(x, "trainingHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTrainingHoursUndefined: Self = StObject.set(x, "trainingHours", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTrainingMode(value: TrainingMode): Self = StObject.set(x, "trainingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingHours(value: TrainingHours): Self = this.set("trainingHours", value.asInstanceOf[js.Any])
+    def setTrainingModeUndefined: Self = StObject.set(x, "trainingMode", js.undefined)
     
     @scala.inline
-    def deleteTrainingHours: Self = this.set("trainingHours", js.undefined)
+    def setTunedHPOParams(value: TunedHPOParams): Self = StObject.set(x, "tunedHPOParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrainingMode(value: TrainingMode): Self = this.set("trainingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingMode: Self = this.set("trainingMode", js.undefined)
-    
-    @scala.inline
-    def setTunedHPOParams(value: TunedHPOParams): Self = this.set("tunedHPOParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTunedHPOParams: Self = this.set("tunedHPOParams", js.undefined)
+    def setTunedHPOParamsUndefined: Self = StObject.set(x, "tunedHPOParams", js.undefined)
   }
 }

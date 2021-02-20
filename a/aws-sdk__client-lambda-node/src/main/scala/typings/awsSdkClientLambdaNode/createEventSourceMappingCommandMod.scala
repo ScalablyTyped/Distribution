@@ -7,14 +7,14 @@ import typings.awsSdkClientLambdaNode.typesCreateEventSourceMappingInputMod.Crea
 import typings.awsSdkClientLambdaNode.typesCreateEventSourceMappingOutputMod.CreateEventSourceMappingOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/CreateEventSourceMappingCommand", JSImport.Namespace)
-@js.native
-object createEventSourceMappingCommandMod extends js.Object {
+object createEventSourceMappingCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/CreateEventSourceMappingCommand", "CreateEventSourceMappingCommand")
   @js.native
   class CreateEventSourceMappingCommand protected () extends Command[
           InputTypesUnion, 

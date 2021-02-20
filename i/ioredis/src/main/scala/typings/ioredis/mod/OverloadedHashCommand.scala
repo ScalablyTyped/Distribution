@@ -2,12 +2,13 @@ package typings.ioredis.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverloadedHashCommand[T, U] extends js.Object {
+trait OverloadedHashCommand[T, U] extends StObject {
   
   def apply(arg1: T, arg2: T, arg3: T, arg4: T, arg5: T, arg6: T, cb: Callback[U]): Unit = js.native
   def apply(arg1: T, arg2: T, arg3: T, arg4: T, cb: Callback[U]): Unit = js.native

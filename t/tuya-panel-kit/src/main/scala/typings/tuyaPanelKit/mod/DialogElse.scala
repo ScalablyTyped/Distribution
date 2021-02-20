@@ -1,5 +1,6 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object DialogElse {
   }
   
   @scala.inline
-  implicit class DialogElseOps[Self <: DialogElse] (val x: Self) extends AnyVal {
+  implicit class DialogElseMutableBuilder[Self <: DialogElse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
-    
-    @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2DeliveryAddressValue extends js.Object {
+trait GoogleActionsV2DeliveryAddressValue extends StObject {
   
   /**
     * Contains delivery address only when user agrees to share the delivery
@@ -27,30 +28,18 @@ object GoogleActionsV2DeliveryAddressValue {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2DeliveryAddressValueOps[Self <: GoogleActionsV2DeliveryAddressValue] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2DeliveryAddressValueMutableBuilder[Self <: GoogleActionsV2DeliveryAddressValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserDecision(value: GoogleActionsV2DeliveryAddressValueUserDecision): Self = StObject.set(x, "userDecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setUserDecision(value: GoogleActionsV2DeliveryAddressValueUserDecision): Self = this.set("userDecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDecision: Self = this.set("userDecision", js.undefined)
+    def setUserDecisionUndefined: Self = StObject.set(x, "userDecision", js.undefined)
   }
 }

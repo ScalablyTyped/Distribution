@@ -1,12 +1,12 @@
 package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.GossipMessage.ContentType
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,16 +39,41 @@ class GossipMessage () extends IGossipMessage {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "GossipMessage")
-@js.native
-object GossipMessage extends js.Object {
+object GossipMessage {
+  
+  @js.native
+  sealed trait ContentType extends StObject
+  /** ContentType enum. */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.ContentType")
+  @js.native
+  object ContentType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
+    
+    @js.native
+    sealed trait BATCH extends ContentType
+    /* 2 */ val BATCH: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.BATCH with Double = js.native
+    
+    @js.native
+    sealed trait BLOCK extends ContentType
+    /* 1 */ val BLOCK: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.BLOCK with Double = js.native
+    
+    @js.native
+    sealed trait CONTENT_TYPE_UNSET extends ContentType
+    /* 0 */ val CONTENT_TYPE_UNSET: typings.sawtoothSdk.protobufMod.GossipMessage.ContentType.CONTENT_TYPE_UNSET with Double = js.native
+  }
   
   /**
     * Creates a new GossipMessage instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GossipMessage instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.create")
+  @js.native
   def create(): GossipMessage = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.create")
+  @js.native
   def create(properties: IGossipMessage): GossipMessage = js.native
   
   /**
@@ -59,9 +84,17 @@ object GossipMessage extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.decode")
+  @js.native
   def decode(reader: Reader): GossipMessage = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.decode")
+  @js.native
   def decode(reader: Reader, length: Double): GossipMessage = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.decode")
+  @js.native
   def decode(reader: Uint8Array): GossipMessage = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): GossipMessage = js.native
   
   /**
@@ -71,7 +104,11 @@ object GossipMessage extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): GossipMessage = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): GossipMessage = js.native
   
   /**
@@ -80,7 +117,11 @@ object GossipMessage extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.encode")
+  @js.native
   def encode(message: IGossipMessage): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.encode")
+  @js.native
   def encode(message: IGossipMessage, writer: Writer): Writer = js.native
   
   /**
@@ -89,7 +130,11 @@ object GossipMessage extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IGossipMessage): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IGossipMessage, writer: Writer): Writer = js.native
   
   /**
@@ -97,6 +142,8 @@ object GossipMessage extends js.Object {
     * @param object Plain object
     * @returns GossipMessage
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): GossipMessage = js.native
   
   /**
@@ -105,7 +152,11 @@ object GossipMessage extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.toObject")
+  @js.native
   def toObject(message: GossipMessage): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.toObject")
+  @js.native
   def toObject(message: GossipMessage, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -113,30 +164,7 @@ object GossipMessage extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "GossipMessage.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
-  
-  @js.native
-  sealed trait ContentType extends js.Object
-  /** ContentType enum. */
-  @js.native
-  object ContentType extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
-    
-    @js.native
-    sealed trait BATCH extends ContentType
-    /* 2 */ @js.native
-    object BATCH extends TopLevel[BATCH with Double]
-    
-    @js.native
-    sealed trait BLOCK extends ContentType
-    /* 1 */ @js.native
-    object BLOCK extends TopLevel[BLOCK with Double]
-    
-    @js.native
-    sealed trait CONTENT_TYPE_UNSET extends ContentType
-    /* 0 */ @js.native
-    object CONTENT_TYPE_UNSET extends TopLevel[CONTENT_TYPE_UNSET with Double]
-  }
 }

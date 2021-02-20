@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalloutStatusRow extends js.Object {
+trait CalloutStatusRow extends StObject {
   
   /** The ID of the callout status. See [callout-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/callout-status-codes). */
   var calloutStatusId: js.UndefOr[Double] = js.native
@@ -25,36 +26,24 @@ object CalloutStatusRow {
   }
   
   @scala.inline
-  implicit class CalloutStatusRowOps[Self <: CalloutStatusRow] (val x: Self) extends AnyVal {
+  implicit class CalloutStatusRowMutableBuilder[Self <: CalloutStatusRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalloutStatusId(value: Double): Self = StObject.set(x, "calloutStatusId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalloutStatusIdUndefined: Self = StObject.set(x, "calloutStatusId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressionCount(value: MetricValue): Self = StObject.set(x, "impressionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalloutStatusId(value: Double): Self = this.set("calloutStatusId", value.asInstanceOf[js.Any])
+    def setImpressionCountUndefined: Self = StObject.set(x, "impressionCount", js.undefined)
     
     @scala.inline
-    def deleteCalloutStatusId: Self = this.set("calloutStatusId", js.undefined)
+    def setRowDimensions(value: RowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionCount(value: MetricValue): Self = this.set("impressionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressionCount: Self = this.set("impressionCount", js.undefined)
-    
-    @scala.inline
-    def setRowDimensions(value: RowDimensions): Self = this.set("rowDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowDimensions: Self = this.set("rowDimensions", js.undefined)
+    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
   }
 }

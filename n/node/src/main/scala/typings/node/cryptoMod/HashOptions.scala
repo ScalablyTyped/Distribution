@@ -1,6 +1,7 @@
 package typings.node.cryptoMod
 
 import typings.node.streamMod.TransformOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,24 +24,12 @@ object HashOptions {
   }
   
   @scala.inline
-  implicit class HashOptionsOps[Self <: HashOptions] (val x: Self) extends AnyVal {
+  implicit class HashOptionsMutableBuilder[Self <: HashOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputLength(value: Double): Self = this.set("outputLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputLength: Self = this.set("outputLength", js.undefined)
+    def setOutputLengthUndefined: Self = StObject.set(x, "outputLength", js.undefined)
   }
 }

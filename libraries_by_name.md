@@ -10,7 +10,6 @@
 | [a2hs_dot_js](./a/a2hs_dot_js) | A useful modern JavaScript solution that helps you | add to home, add website to home screen, add pwa to home screen, install to home screen, install pwa, ios progressive web app, ios pwa |
 | [abab](./a/abab) | WHATWG spec-compliant implementations of window.at | atob, btoa, browser |
 | [abbrev](./a/abbrev) | Like ruby's abbrev module, but in js | - |
-| [ably](./a/ably) | Realtime client library for Ably.io, the realtime  | - |
 | [abort-controller](./a/abort-controller) | An implementation of WHATWG AbortController interf | w3c, whatwg, event, events, abort, cancel, abortcontroller, abortsignal, controller, signal, shim |
 | [abortable-iterator](./a/abortable-iterator) | Make any iterator or iterable abortable via an Abo | async, iterator, abort, abortable, cancel, stop, AbortController, AbortSignal, signal |
 | [abs](./a/abs) | A library to convert a path into an absolute path. | absolute, path |
@@ -211,7 +210,7 @@
 | [angular-jwt](./a/angular-jwt) | Library to help you work with JWTs on AngularJS | - |
 | [angular-load](./a/angular-load) | angular-load ============ | - |
 | [angular-loading-bar](./a/angular-loading-bar) | An automatic loading bar for AngularJS | angular, angularjs, loading, loadingbar, progress, progressbar |
-| [angular-local-storage](./a/angular-local-storage) | - | - |
+| [angular-local-storage](./a/angular-local-storage) | An Angular module that gives you access to the bro | AngularJS, local, storage |
 | [angular-localforage](./a/angular-localforage) | Angular service & directive for https://github.com | localstorage, local-storage, localForage, indexDB, webSQL, storage, module, angular, angularJS |
 | [angular-locker](./a/angular-locker) | A simple & configurable abstraction for local/sess | angular-locker, angular, locker, storage, localStorage, sessionStorage, session, local |
 | [angular-material](./a/angular-material) | This repository publishes the AngularJS Material v | angularjs, material, browser, client-side, material design, component library, components |
@@ -331,7 +330,7 @@
 | [apidevtools__openapi-sche](./a/apidevtools__openapi-schemas) | JSON Schemas for every version of the OpenAPI Spec | openapi, open-api, swagger, oas, api, rest, json, specification, definition, schema |
 | [apidevtools__swagger-pars](./a/apidevtools__swagger-parser) | Swagger 2.0 and OpenAPI 3.0 parser and validator f | swagger, openapi, open-api, json, yaml, parse, parser, validate, validator, validation, spec, specification, schema, reference, dereference |
 | [apidoc](./a/apidoc) | RESTful web API Documentation Generator | api, apidoc, doc, documentation, rest, restful |
-| [apigee-access](./a/apigee-access) | - | - |
+| [apigee-access](./a/apigee-access) | Provides access to Apigee-specific functionality | apigee |
 | [apimocker](./a/apimocker) | Simple HTTP server that returns mock service API r | express, mock, stub, REST, SOAP, testing, functional, api, grunt, gulp |
 | [apn](./a/apn) | An interface to the Apple Push Notification servic | apple, push, push notifications, iOS, apns, notifications |
 | [apollo-datasource](./a/apollo-datasource) | - | - |
@@ -422,7 +421,7 @@
 | [assert-plus](./a/assert-plus) | Extra assertions on top of node's assert module | - |
 | [assertion-error](./a/assertion-error) | Error constructor for test and validation framewor | test, assertion, assertion-error |
 | [assertsharp](./a/assertsharp) | Assert methods based on .NET Assert class. | assert |
-| [assets-webpack-plugin](./a/assets-webpack-plugin) | - | - |
+| [assets-webpack-plugin](./a/assets-webpack-plugin) | Emits a json file with assets paths | webpack, plugin, generate, assets, hashes |
 | [ast-types](./a/ast-types) | Esprima-compatible implementation of the Mozilla J | ast, abstract syntax tree, hierarchy, mozilla, spidermonkey, parser api, esprima, types, type system, type checking, dynamic types, parsing, transformation, syntax |
 | [astring](./a/astring) | JavaScript code generator from an ESTree-compliant | ast, codegen, code generator, estree, astravel |
 | [asymmetrik__leaflet-d3](./a/asymmetrik__leaflet-d3) | Custom d3 layers for leaflet | - |
@@ -668,7 +667,6 @@
 | [babel-code-frame](./b/babel-code-frame) | Generate errors that contain a code frame that poi | - |
 | [babel-core](./b/babel-core) | Babel compiler core. | 6to5, babel, classes, const, es6, harmony, let, modules, transpile, transpiler, var, babel-core, compiler |
 | [babel-generator](./b/babel-generator) | Turns an AST into code. | - |
-| [babel-jest](./b/babel-jest) | Jest plugin to use babel for transformation. | - |
 | [babel-plugin-glaze](./b/babel-plugin-glaze) | Babel plugin to transform sx prop | babel, sx, glaze |
 | [babel-plugin-jest-hoist](./b/babel-plugin-jest-hoist) | Babel plugin to hoist jest.disableAutomock, jest.e | - |
 | [babel-plugin-macros](./b/babel-plugin-macros) | Allows you to build compile-time libraries | babel-plugin, macros, macro, babel-macro, babel-plugin-macro, babel-macros, babel-plugin-macros |
@@ -969,6 +967,7 @@
 | [bunyan-blackhole](./b/bunyan-blackhole) | create a fully functional bunyan logger that doesn | bunyan, empty, logger, noop, blackhole, /dev/null |
 | [bunyan-bugsnag](./b/bunyan-bugsnag) | A Bunyan stream for logging errors and warnings to | bunyan, bugsnag, logging |
 | [bunyan-config](./b/bunyan-config) | Converts JSON configuration into a proper bunyan c | bunyan, config |
+| [bunyan-format](./b/bunyan-format) | Writable stream that formats bunyan records that a | bunyan, stream, log, logger, format, pretty, color, style |
 | [bunyan-logentries](./b/bunyan-logentries) | Bunyan logger stream for Logentries | bunyan, logentries |
 | [bunyan-prettystream](./b/bunyan-prettystream) | A stream implementation of the bunyan cli tool's p | log, logging, console, bunyan, development, stream |
 | [bunyan-seq](./b/bunyan-seq) | A Bunyan stream that sends log events to Seq | bunyan, seq |
@@ -1002,6 +1001,7 @@
 | [callsites](./c/callsites) | Get callsites from the V8 stack trace API | stacktrace, v8, callsite, callsites, stack, trace, function, file, line, debug |
 | [callstack__react-theme-pr](./c/callstack__react-theme-provider) | Theme provider for react and react-naitve applicat | react, react-native, theme, provider |
 | [calq](./c/calq) | The simplest crypto calculator out there. Convert  | crypto, cryptocurrency, calculator, cal, converter, conversion, cli, commandline, node, nodejs, ethereum, financial, ETH, BTC |
+| [camaro](./c/camaro) | Transforming XML to JSON using Node.js binding to  | xpath, json, transform, pugixml, xml, parser, n-api, xml2json, webassembly, wasm |
 | [camel-case](./c/camel-case) | Transform into a string with the separator denoted | camel, case, camelcase, camel-case, convert, transform, identifier |
 | [camelcase](./c/camelcase) | Convert a dash/dot/underscore/space separated stri | camelcase, camel-case, camel, case, dash, hyphen, dot, underscore, separator, string, text, convert, pascalcase, pascal-case |
 | [camelcase-css](./c/camelcase-css) | Convert a kebab-cased CSS property into a camelCas | camelcase, case, css, dom |
@@ -1082,7 +1082,7 @@
 | [chai-quantifiers](./c/chai-quantifiers) | Array quantifier assertions for chai assertion lib | chai, assertions, chai-plugin, quantifiers, array |
 | [chai-roughly](./c/chai-roughly) | deep equals assertions with tolerance for chai | assertions, testing, chai, chai-plugin, numbers, deep-eql, tolerance |
 | [chai-snapshot-matcher](./c/chai-snapshot-matcher) | A Snapshot testing library designed for Mocha and  | chai, mocha, snapshot, test, regression, matcher |
-| [chai-spies](./c/chai-spies) | - | - |
+| [chai-spies](./c/chai-spies) | Spies for the Chai assertion library. | chai, chai-plugin, browser, mocks-and-spies, testing, spies, stubs, mocks |
 | [chai-string](./c/chai-string) | strings comparison matchers for chai | chai, testing, string, chai-plugin, browser |
 | [chai-style](./c/chai-style) | CSS Style assertions for elements, using Chai.js | chai, chaijs, style, css, computedStyle, assertion, assert |
 | [chai-subset](./c/chai-subset) | Object properties matcher for Chai | chai, chai-plugin, objects, subset, contains, plugin, containSubset, deep, like, match, similar, includes, superset |
@@ -1299,6 +1299,7 @@
 | [condense-whitespace](./c/condense-whitespace) | Remove leading, trailing, and repeated whitespace  | whitespace, space, condense, collapse, compact, repeated, string, trim, remove, strip |
 | [conditional](./c/conditional) | A preconditions package based on Google's Precondi | coffee-script, grunt, preconditions, conditional, coverage, browser, bower |
 | [conductor-animate](./c/conductor-animate) | Orchestrating complex page layout animations with  | conductor, conductor-animate, react-transition-group, spring, animate, animations, react |
+| [conf](./c/conf) | Simple config handling for your app or module | config, store, app, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save, load, read, write, cache |
 | [confidence](./c/confidence) | Configuration API | hapi, plugin, configuration, api |
 | [config](./c/config) | Configuration control for production node deployme | conf, config, configuration, node-config, config-node, env, environment |
 | [config-yaml](./c/config-yaml) | YAML configuration for NodeJS | - |
@@ -1318,7 +1319,6 @@
 | [connect-history-api-fallb](./c/connect-history-api-fallback-exclusions) | Provides a fallback for non-existing directories s | - |
 | [connect-livereload](./c/connect-livereload) | connect middleware for adding the livereload scrip | connect, livereload, live-reload |
 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t | modrewrite |
-| [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect | connect, mongo, mongodb, session, express |
 | [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by | connect, mongo, mongodb, session, express |
 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con | - |
 | [connect-redis](./c/connect-redis) | Redis session store for Connect | - |
@@ -1345,7 +1345,6 @@
 | [contentstack](./c/contentstack) | Contentstack Javascript SDK | - |
 | [contextjs](./c/contextjs) | Context Oriented Programming (COP) for ECMAScript  | COP, Context, Oriented, Programming |
 | [continuation-local-storag](./c/continuation-local-storage) | userland implementation of https://github.com/joye | threading, shared, context, domains, tracing, logging |
-| [contract-proxy-kit](./c/contract-proxy-kit) | Enable batched transactions and contract account i | gnosis, safe, proxy, sdk, ethereum, smart, contract, batch, transaction, wallet |
 | [conventional-changelog](./c/conventional-changelog) | Generate a changelog from git metadata | conventional-changelog, conventional, changelog, log |
 | [conventional-changelog-co](./c/conventional-changelog-config-spec) | a spec describing the config options supported by  | conventional-changelog, conventional, changelog, spec |
 | [conventional-changelog-co](./c/conventional-changelog-core) | conventional-changelog core | conventional-changelog, conventional, changelog, log |
@@ -1405,7 +1404,7 @@
 | [cordova-plugin-media](./c/cordova-plugin-media) | Cordova Media Plugin | cordova, media, ecosystem:cordova, cordova-android, cordova-browser, cordova-ios, cordova-windows |
 | [cordova-plugin-media-capt](./c/cordova-plugin-media-capture) | Cordova Media Capture Plugin | cordova, media, capture, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
 | [cordova-plugin-ms-adal](./c/cordova-plugin-ms-adal) | Provides Microsoft Azure Active Directory (ADAL) O | microsoft, azure, adal, activedirectory, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
-| [cordova-plugin-native-key](./c/cordova-plugin-native-keyboard) | - | - |
+| [cordova-plugin-native-key](./c/cordova-plugin-native-keyboard) | This plugin aims to solve common keyboard problems | Keyboard, Native Keyboard, Messenger, Messenger Keyboard, ecosystem:cordova, cordova-ios, cordova-android |
 | [cordova-plugin-network-in](./c/cordova-plugin-network-information) | Cordova Network Information Plugin | cordova, network, information, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-browser |
 | [cordova-plugin-ouralabs](./c/cordova-plugin-ouralabs) | Cordova plugin for Ouralabs centralized remote log | cordova, ouralabs, logging, logger, logs, ecosystem:cordova, cordova-android, cordova-ios |
 | [cordova-plugin-qrscanner](./c/cordova-plugin-qrscanner) | Fast, energy-efficient, highly-configurable QR cod | cordova, qr, qr code, scanner, reader, ecosystem:cordova, cordova-ios, cordova-android, cordova-browser, UMD, library, electron, NW.js |
@@ -1561,6 +1560,7 @@
 | [d3-box](./d/d3-box) | An NPM mirror of mbostock's box.js. | d3, box, whisker, plot |
 | [d3-brush](./d/d3-brush) | Select a one- or two-dimensional region using the  | d3, d3-module, brush, interaction |
 | [d3-chord](./d/d3-chord) | Visualize relationships or network flow with an ae | d3, d3-module, chord, radial, network, flow |
+| [d3-cloud](./d/d3-cloud) | Generate word clouds in JavaScript. | word, cloud, tag, visualization, canvas |
 | [d3-collection](./d/d3-collection) | Handy data structures for elements keyed by string | d3, d3-module, nest, data, map, set, object, collection |
 | [d3-color](./d/d3-color) | Color spaces | d3, d3-module, color, rgb, hsl, lab, hcl, lch, cubehelix |
 | [d3-contour](./d/d3-contour) | Compute contour polygons using marching squares. | d3, d3-module, contour, isoline |
@@ -1593,7 +1593,7 @@
 | [d3-selection](./d/d3-selection) | Data-driven DOM manipulation: select elements and  | d3, d3-module, dom, selection, data-join |
 | [d3-selection-multi](./d/d3-selection-multi) | Multi-value map syntax for D3 selections. | d3, d3-module, dom, selection |
 | [d3-shape](./d/d3-shape) | Graphical primitives for visualization, such as li | d3, d3-module, graphics, visualization, canvas, svg |
-| [d3-simple-slider](./d/d3-simple-slider) | - | - |
+| [d3-simple-slider](./d/d3-simple-slider) | Renders an SVG slider | d3, d3-module, slider, visualization |
 | [d3-time](./d/d3-time) | A calculator for humanity’s peculiar conventions o | d3, d3-module, time, interval, calendar |
 | [d3-time-format](./d/d3-time-format) | A JavaScript time formatter and parser inspired by | d3, d3-module, time, format, strftime, strptime |
 | [d3-timer](./d/d3-timer) | An efficient queue capable of managing thousands o | d3, d3-module, timer, transition, animation, requestAnimationFrame, setTimeout, setInterval |
@@ -1749,8 +1749,6 @@
 | [device-uuid](./d/device-uuid) | Fast browser device uuid generation library. | useragent, browser, device, uuid |
 | [devtools-detect](./d/devtools-detect) | Detect if DevTools is open and its orientation | browser, detect, identify, check, dev, devtools, developer, orientation, placement, docked |
 | [devtools-protocol](./d/devtools-protocol) | The Chrome DevTools Protocol JSON | - |
-| [dexie](./d/dexie) | A Minimalistic Wrapper for IndexedDB | indexeddb, browser, database |
-| [dexie-batch](./d/dexie-batch) | Fetch DB entries in batches to improve performance | batch, bulk, dexie, fetch, get |
 | [df-visible](./d/df-visible) | - | - |
 | [dhtmlxgantt](./d/dhtmlxgantt) | - | - |
 | [dhtmlxscheduler](./d/dhtmlxscheduler) | - | - |
@@ -1760,6 +1758,7 @@
 | [diagnostic-channel](./d/diagnostic-channel) | Provides a context-saving pub/sub channel to conne | - |
 | [diagnostic-channel-publis](./d/diagnostic-channel-publishers) | A collection of pre-built module patches that enab | - |
 | [dialog-polyfill](./d/dialog-polyfill) | Polyfill for the dialog element | - |
+| [dialogflow](./d/dialogflow) | Dialogflow API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google dialogflow, dialogflow, Dialogflow API |
 | [dialogflow-fulfillment](./d/dialogflow-fulfillment) | Dialogflow Fulfillment Library for Node.js | dialogflow, api.ai, client library, webhook, fulfillment |
 | [dice-coefficient](./d/dice-coefficient) | Sørensen–Dice coefficient | sorensen, index, dice, coefficient, cli, bin, string, comparison, difference |
 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js | parser, parse, parsing, multipart, form-data, streaming |
@@ -1925,7 +1924,6 @@
 | [ebongarde-root](./e/ebongarde-root) | Utilize your package root directory from anywhere  | application, root, ebongarde |
 | [eccrypto](./e/eccrypto) | JavaScript Elliptic curve cryptography library | ecc, ecdsa, ecdh, ecies, crypto, cryptography, secp256k1, K-256, elliptic, curve |
 | [ecdsa-sig-formatter](./e/ecdsa-sig-formatter) | Translate ECDSA signatures between ASN.1/DER and J | ecdsa, der, asn.1, jwt, jwa, jsonwebtoken, jose |
-| [echarts](./e/echarts) | A powerful charting and visualization library for  | visualization, canvas |
 | [ecma-proposal-math-extens](./e/ecma-proposal-math-extensions) | Tests and a polyfill for the ES2017 Math Extension | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
 | [ecmarkdown](./e/ecmarkdown) | A compiler for "Ecmarkdown" algorithm shorthand in | ecmascript, javascript, specs, typography, markup, markdown, html, code |
 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for  | ecmascript, javascript, specs, specifications, markup, markdown, html, code |
@@ -1952,7 +1950,6 @@
 | [egg_dot_js](./e/egg_dot_js) | node.js mvc framework | egg, framework, mvc, node, javascript, js, framework |
 | [egjs__axes](./e/egjs__axes) | A module used to change the information of user ac | - |
 | [egjs__component](./e/egjs__component) | A base class utility that manages events and optio | - |
-| [egjs__hammerjs](./e/egjs__hammerjs) | A javascript library for multi-touch gestures | touch, gestures |
 | [ej_dot_web_dot_all](./e/ej_dot_web_dot_all) | - | - |
 | [ejs](./e/ejs) | Embedded JavaScript templates | template, engine, ejs |
 | [ejs-locals](./e/ejs-locals) | Express 3.x locals for layout, partial and blocks. | - |
@@ -1982,6 +1979,7 @@
 | [electron-publish](./e/electron-publish) | Part of  | - |
 | [electron-settings](./e/electron-settings) | A simple and robust settings management library fo | electron, app, user, data, settings, config, storage, json |
 | [electron-spellchecker](./e/electron-spellchecker) | Implement spellchecking, correctly | spelling, electron, rx |
+| [electron-store](./e/electron-store) | Simple data persistence for your Electron app or m | electron, store, app, config, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save |
 | [electron-unhandled](./e/electron-unhandled) | Catch unhandled errors and promise rejections in y | electron, unhandled, error, exception, promise, rejection, uncaught, handler, stack, report, log, logger, debug, debugging |
 | [electron-util](./e/electron-util) | Useful utilities for Electron apps and modules | electron, app, dev, development, utility, utilities, util, utils, useful |
 | [electron-window-state](./e/electron-window-state) | Simple module that helps to save and restore size  | electron |
@@ -2083,7 +2081,7 @@
 | [ensure-posix-path](./e/ensure-posix-path) | - | - |
 | [ent](./e/ent) | Encode and decode HTML entities | entities, entitify, entity, html, encode, decode |
 | [entities](./e/entities) | Encode & decode XML and HTML entities with ease | entity, decoding, encoding, html, xml, html entities |
-| [entria__relay-experimenta](./e/entria__relay-experimental) | - | - |
+| [entria__relay-experimenta](./e/entria__relay-experimental) | Contains unstable, experimental code | graphql, relay |
 | [entropy__winston-elastics](./e/entropy__winston-elasticsearch-apm) | Winston transport to send error stacks to Elastics | winston, elasticsearch, apm |
 | [env-ci](./e/env-ci) | Get environment variables exposed by CI services | appveyor, bamboo, bitbucket, bitrise, buddy, buildkite, ci, circle, cirrus, codebuild, codefresh, codeship, drone, environment, git, github, gitlab, jenkins, puppet, sail, scrutinizer, semaphore, shippable, teamcity, travis, variable, vsts, wercker |
 | [env-editor](./e/env-editor) | Get metadata on the default editor or a specific e | env, editor, environment, variable, default, editors, main, user, meta, metadata, info, name, binary, path, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, nano, emacs |
@@ -2169,7 +2167,6 @@
 | [ethereumjs-util](./e/ethereumjs-util) | a collection of utility functions for Ethereum | ethereum, utilties |
 | [ethereumjs-vm](./e/ethereumjs-vm) | An Ethereum VM implementation | ethereum, VM |
 | [ethereumjs-wallet](./e/ethereumjs-wallet) | Utilities for handling Ethereum keys | ethereum, wallets, keys |
-| [ethers](./e/ethers) | Umbrella package for most common Ethers libraries. | Ethereum, ethers |
 | [ethersproject__abi](./e/ethersproject__abi) | Utilities and Classes for parsing, formatting and  | Ethereum, ethers |
 | [ethersproject__abstract-p](./e/ethersproject__abstract-provider) | An Abstract Class for describing an Ethereum Provi | Ethereum, ethers |
 | [ethersproject__abstract-s](./e/ethersproject__abstract-signer) | An Abstract Class for desribing an Ethereum Signer | Ethereum, ethers |
@@ -2294,7 +2291,7 @@
 | [express-mongo-sanitize](./e/express-mongo-sanitize) | Sanitize your express payload to prevent MongoDB o | mongodb, express, middleware, operator, injection, security |
 | [express-mung](./e/express-mung) | Transform an express response (or make until no go | mung, middleware, transform, response, express |
 | [express-myconnection](./e/express-myconnection) | Connect/Express middleware that auto provides mysq | express, mysql, connect, pool, middleware |
-| [express-mysql-session](./e/express-mysql-session) | - | - |
+| [express-mysql-session](./e/express-mysql-session) | A MySQL session store for express.js | - |
 | [express-ntlm](./e/express-ntlm) | An express middleware to have simple NTLM-authenti | express, ntlm, ldap, authentication |
 | [express-oauth-server](./e/express-oauth-server) | OAuth provider for express | express, oauth, oauth2 |
 | [express-openapi](./e/express-openapi) | An unopinionated OpenAPI framework for express | openapi, swagger, express |
@@ -2509,6 +2506,7 @@
 | [fined](./f/fined) | Find a file given a declaration of locations. | find, lookup, config |
 | [fingerprintjs__fingerprin](./f/fingerprintjs__fingerprintjs) | Modern & flexible browser fingerprinting library | fraud, fraud-detection, fraud-prevention, browser, identification, fingerprint, fingerprinting, privacy |
 | [firebase](./f/firebase) | Firebase JavaScript library for web and Node.js | authentication, database, Firebase, firebase, firestore, realtime, storage, performance, remote-config |
+| [firebase-admin](./f/firebase-admin) | Firebase admin SDK for Node.js | admin, database, Firebase, realtime, authentication |
 | [firebase-client](./f/firebase-client) | A simple Node.js client for Firebase | firebase, rest, api, client |
 | [firebase-token-generator](./f/firebase-token-generator) | A utility to generate signed Firebase Authenticati | Firebase, JWT |
 | [firebase__analytics](./f/firebase__analytics) | A analytics package for new firebase packages | - |
@@ -2543,6 +2541,7 @@
 | [firmata](./f/firmata) | Firmata protocol implementation for programmatic i | - |
 | [first-mate](./f/first-mate) | TextMate helpers | - |
 | [first-run](./f/first-run) | Check if it's the first time the process is run | first, init, initial, run, time, process, start |
+| [fitbit-asap](./f/fitbit-asap) | Send peer messages reliably on Fitbit OS. | fitbitdev |
 | [fitbit-weather](./f/fitbit-weather) | This library permits to retrieve weather data from | fitbitdev |
 | [fitfont](./f/fitfont) | This library allows you to easily display text wit | fitbitdev |
 | [fitvids](./f/fitvids) | Makes your videos fluid-width. | video, responsive, fluid, width, fitvids, wrapper |
@@ -2584,7 +2583,6 @@
 | [fluent__sequence](./f/fluent__sequence) | Manage ordered sequences of FluentBundles | fluent, ftl |
 | [fluentui__date-time-utili](./f/fluentui__date-time-utilities) | Date-time utilities | - |
 | [fluentui__dom-utilities](./f/fluentui__dom-utilities) | DOM utilities for use within Fluent web components | - |
-| [fluentui__keyboard-key](./f/fluentui__keyboard-key) | A simple utility for determining the KeyboardEvent | - |
 | [fluentui__react-component](./f/fluentui__react-component-event-listener) | React components for binding events on the global  | - |
 | [fluentui__react-component](./f/fluentui__react-component-ref) | A set of components and utils to deal with React r | - |
 | [fluentui__react-focus](./f/fluentui__react-focus) | Focus helpers to be used in React applications. | - |
@@ -2921,10 +2919,12 @@
 | [gapi_dot_urlshortener](./g/gapi_dot_urlshortener) | - | - |
 | [gapi_dot_youtube](./g/gapi_dot_youtube) | - | - |
 | [gapi_dot_youtubeanalytics](./g/gapi_dot_youtubeanalytics) | - | - |
+| [gatsby-cli](./g/gatsby-cli) | Gatsby command-line interface for creating new sit | gatsby |
 | [gatsby-core-utils](./g/gatsby-core-utils) | A collection of gatsby utils used in different gat | gatsby, gatsby-core-utils |
 | [gatsby-image](./g/gatsby-image) | Lazy-loading React image component with optional s | gatsby, gatsby-component, react-component |
 | [gatsby-link](./g/gatsby-link) | An enhanced Link component for Gatsby sites with s | gatsby |
 | [gatsby-plugin-utils](./g/gatsby-plugin-utils) | Gatsby utils that help creating plugins | gatsby |
+| [gatsby-telemetry](./g/gatsby-telemetry) | Gatsby Telemetry | telemetry |
 | [gatsby-transformer-remark](./g/gatsby-transformer-remark) | Gatsby transformer plugin for Markdown using the R | gatsby, gatsby-plugin, markdown, remark |
 | [gaugejs](./g/gaugejs) | - | - |
 | [gaussian](./g/gaussian) | A JavaScript model of a Gaussian distribution | gaussian, normal, distribution |
@@ -3082,28 +3082,33 @@
 | [google-closure-compiler](./g/google-closure-compiler) | Check, compile, optimize and compress Javascript w | javascript, compiler, optimizer, minifier, closure, gulpplugin, gruntplugin |
 | [google-cloud__common](./g/google-cloud__common) | Common components for Cloud APIs Node.js Client Li | - |
 | [google-cloud__datastore](./g/google-cloud__datastore) | Cloud Datastore Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google datastore, datastore |
+| [google-cloud__firestore](./g/google-cloud__firestore) | Firestore Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, firestore |
 | [google-cloud__kms](./g/google-cloud__kms) | Google Cloud Key Management Service (KMS) API clie | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google kms, kms, Google Cloud Key Management Service (KMS) API |
 | [google-cloud__paginator](./g/google-cloud__paginator) | A result paging utility used by Google node.js mod | - |
 | [google-cloud__precise-dat](./g/google-cloud__precise-date) | A simple utility for precise-dateing functions and | nano, date, time, precise |
 | [google-cloud__projectify](./g/google-cloud__projectify) | A simple utility for replacing the projectid token | - |
 | [google-cloud__promisify](./g/google-cloud__promisify) | A simple utility for promisifying functions and cl | - |
+| [google-cloud__pubsub](./g/google-cloud__pubsub) | Cloud Pub/Sub Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
 | [google-cloud__storage](./g/google-cloud__storage) | Cloud Storage Client Library for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
+| [google-cloud__tasks](./g/google-cloud__tasks) | Cloud Tasks API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google cloud-tasks, cloud-tasks, Cloud Tasks API |
+| [google-cloud__text-to-spe](./g/google-cloud__text-to-speech) | Cloud Text-to-Speech API client for Node.js | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
 | [google-ddns](./g/google-ddns) | Google Dynamic DNS client update tool. Updates the | google, ddns, dynamic, dns, domain, domains, client, dynamic dns, google dynamic dns, google dynamic dns client, google ddns, google ddns client, google-dynamic-dns |
 | [google-drive-realtime-api](./g/google-drive-realtime-api) | - | - |
 | [google-earth](./g/google-earth) | - | - |
 | [google-fonts](./g/google-fonts) | A small helper library for embedding Google Fonts  | google, fonts, webfonts, inline, embed, append |
+| [google-gax](./g/google-gax) | Google API Extensions | grpc |
 | [google-images](./g/google-images) | Search images using Google Custom Search Engine AP | google, images, google images, image search |
 | [google-libphonenumber](./g/google-libphonenumber) | The up-to-date and reliable Google's libphonenumbe | browserify, e164, format, formatting, international, libphonenumber, number, phone, phonenumber, rfc3966, standardize, wrapper |
 | [google-map-react](./g/google-map-react) | Isomorphic component that allows rendering react c | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
 | [google-maps](./g/google-maps) | Async loader for google maps api (browser, typescr | google, maps, asynchronous, async, loader, browser |
 | [google-maps-react](./g/google-maps-react) | Google maps container | - |
-| [google-one-tap](./g/google-one-tap) | - | - |
+| [google-one-tap](./g/google-one-tap) | Google One Tap Login | google one tap, google sign in, google sign up |
 | [google-p12-pem](./g/google-p12-pem) | Convert Google .p12 keys to .pem keys. | - |
 | [google-profanity-words](./g/google-profanity-words) | Full List of Bad Words and Top Swear Words Banned  | node, google, profanity, words, machine learning |
 | [google-protobuf](./g/google-protobuf) | Protocol Buffers for JavaScript | - |
 | [google-spreadsheet](./g/google-spreadsheet) | Google Sheets API (v4) -- simple interface to read | google spreadsheets, google sheets, google docs, google, spreadsheet, spreadsheets, sheets, gdata, api, googleapis |
 | [google-translate-api](./g/google-translate-api) | A free and unlimited API for Google Translate | translate, translator, google, translate, api, free, language |
-| [google__maps](./g/google__maps) | - | - |
+| [google__maps](./g/google__maps) | Node.js client library for Google Maps API Web Ser | google, maps, googlemaps, geo, geocode, timezone, api, client, roads, directions, navigation |
 | [google__markerclustererpl](./g/google__markerclustererplus) | Creates and manages per-zoom-level clusters for la | cluster, google, maps, marker |
 | [google_dot_analytics](./g/google_dot_analytics) | - | - |
 | [google_dot_feeds](./g/google_dot_feeds) | - | - |
@@ -3472,7 +3477,7 @@
 | [http-aws-es](./h/http-aws-es) | Use the elasticsearch-js client with Amazon ES | elasticsearch, elasticsearch-js, aws-es, aws, amazon, es, http, connector, extension, sign |
 | [http-basic](./h/http-basic) | Very low level wrapper arround http.request/https. | http, https, request, fetch, gzip, deflate, redirect, cache, etag, cache-control |
 | [http-build-query](./h/http-build-query) | Generate URL-encoded query string from the object  | http, build, query, url |
-| [http-cache-semantics](./h/http-cache-semantics) | - | - |
+| [http-cache-semantics](./h/http-cache-semantics) | Parses Cache-Control and other headers. Helps buil | - |
 | [http-codes](./h/http-codes) | Map of HTTP status messages to codes based on Node | http, status, codes, messages, builtin, map, javascript, nodejs, node |
 | [http-context](./h/http-context) | High-level request & response object. Inspired by  | - |
 | [http-errors](./h/http-errors) | Create HTTP error objects | http, error |
@@ -3568,7 +3573,7 @@
 | [imagekit](./i/imagekit) | Offical NodeJS SDK for ImageKit.io integration | - |
 | [imagemagick](./i/imagemagick) | A wrapper around the imagemagick cli | - |
 | [imagemagick-native](./i/imagemagick-native) | ImageMagick's Magick++ bindings for NodeJS | imagemagick, magick++, resize, convert |
-| [imagemapster](./i/imagemapster) | - | - |
+| [imagemapster](./i/imagemapster) | jQuery plugin that activates areas in HTML imagema | jquery, imagemapster, activate, area, html, plugin, maps, image, imagemap, canvas, highlight, select, resize, tooltip |
 | [imagemin](./i/imagemin) | Minify images seamlessly | minify, compress, image, images, jpeg, jpg, png, gif, svg |
 | [imagemin-gifsicle](./i/imagemin-gifsicle) | Imagemin plugin for Gifsicle | compress, gif, gifsicle, gulpplugin, image, imageminplugin, img, minify, optimize |
 | [imagemin-jpegtran](./i/imagemin-jpegtran) | jpegtran imagemin plugin | compress, image, imageminplugin, img, jpeg, jpegtran, jpg, minify, optimize |
@@ -3661,7 +3666,6 @@
 | [inversify-devtools](./i/inversify-devtools) | inversify-devtools | redux, react, example |
 | [inversify-express-utils](./i/inversify-express-utils) | Some utilities for the development of express appl | InversifyJS, express |
 | [inversify-inject-decorato](./i/inversify-inject-decorators) | Lazy evaluated property injection decorators for I | inject, lazy, property, decorator, inversify, dependency, injection |
-| [inversify-logger-middlewa](./i/inversify-logger-middleware) | A basic logger middleware for InversifyJS | inversifyjs, logger, inversion, of, control, dependency, inversion |
 | [inversify-restify-utils](./i/inversify-restify-utils) | Some utilities for the development of restify appl | InversifyJS, restify, dependency, injection |
 | [invert-kv](./i/invert-kv) | Invert the key/value of an object. Example: {foo:  | object, key, value, invert, keys, values |
 | [invity-api](./i/invity-api) | - | - |
@@ -3695,7 +3699,6 @@
 | [ip6addr](./i/ip6addr) | IPv6/IPv4 address parsing and manipulation | ip, ipv4, ipv6, cidr, subnet |
 | [ipaddr_dot_js](./i/ipaddr_dot_js) | A library for manipulating IPv4 and IPv6 addresses | ip, ipv4, ipv6 |
 | [ipcheck](./i/ipcheck) | Super-efficient module to parse and check if an IP | ip, ipv6, ipv4, cidr |
-| [ipfs-core](./i/ipfs-core) | JavaScript implementation of the IPFS specificatio | IPFS |
 | [ipfs-core-utils](./i/ipfs-core-utils) | Package to share code between ipfs and ipfs-http-c | - |
 | [ipfs-http-gateway](./i/ipfs-http-gateway) | JavaScript implementation of the IPFS specificatio | IPFS |
 | [ipfs-http-server](./i/ipfs-http-server) | JavaScript implementation of the IPFS specificatio | IPFS |
@@ -3891,8 +3894,6 @@
 | [jest](./j/jest) | Delightful JavaScript Testing. | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
 | [jest-axe](./j/jest-axe) | Custom Jest matcher for aXe for testing accessibil | jest, matcher, axe, accessibility, a11y |
 | [jest-changed-files](./j/jest-changed-files) | A module used internally by Jest to check which fi | - |
-| [jest-cli](./j/jest-cli) | Delightful JavaScript Testing. | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
-| [jest-config](./j/jest-config) | - | - |
 | [jest-cucumber](./j/jest-cucumber) | Execute Gherkin scenarios in Jest | jest, gherkin, cucumber |
 | [jest-cucumber-fusion](./j/jest-cucumber-fusion) | Write cucumber test as part of a jest run (includi | jest, cucumber, BDD, gherkin |
 | [jest-dev-server](./j/jest-dev-server) | Starts a server before your Jest tests and tears i | jest, jest-environment, server |
@@ -3904,7 +3905,6 @@
 | [jest-environment-puppetee](./j/jest-environment-puppeteer) | Puppeteer environment for Jest. | jest, jest-environment, puppeteer, jest-puppeteer, chromeless, chrome-headless |
 | [jest-expect-message](./j/jest-expect-message) | Add custom message to Jest expects | jest, expect, message, matchers, assertions, test |
 | [jest-get-type](./j/jest-get-type) | A utility function to get the type of a value | - |
-| [jest-haste-map](./j/jest-haste-map) | - | - |
 | [jest-image-snapshot](./j/jest-image-snapshot) | Jest matcher for image comparisons. Most commonly  | test, amex, visual testing, css, jest, browser testing |
 | [jest-in-case](./j/jest-in-case) | Jest utility for creating variations of the same t | jest, test, testing |
 | [jest-json-schema](./j/jest-json-schema) | JSON schema matcher for jest | jest, json, schema, matcher, test |
@@ -3917,13 +3917,8 @@
 | [jest-plugin-set](./j/jest-plugin-set) | Declarative JS tests with lazy evaluation using je | declarative, jest, jest-plugin, let, plugin, set, tdd, test |
 | [jest-pnp-resolver](./j/jest-pnp-resolver) | plug'n'play resolver for Webpack | jest, yarn, plugnplay, pnp |
 | [jest-regex-util](./j/jest-regex-util) | - | - |
-| [jest-resolve](./j/jest-resolve) | - | - |
-| [jest-resolve-dependencies](./j/jest-resolve-dependencies) | - | - |
-| [jest-runner](./j/jest-runner) | - | - |
-| [jest-runtime](./j/jest-runtime) | - | - |
 | [jest-serializer](./j/jest-serializer) | Module for serializing and deserializing object in | - |
 | [jest-sinon](./j/jest-sinon) | Jest assertions for the mocking library Sinon.js | jest, sinon, mocks, spies, stubs, testing, test, assertions, matchers, tdd |
-| [jest-snapshot](./j/jest-snapshot) | - | - |
 | [jest-specific-snapshot](./j/jest-specific-snapshot) | - | - |
 | [jest-util](./j/jest-util) | - | - |
 | [jest-validate](./j/jest-validate) | Generic configuration validation tool that helps y | - |
@@ -3931,15 +3926,11 @@
 | [jest-when](./j/jest-when) | An extension lib for jest | - |
 | [jest-worker](./j/jest-worker) | Module for executing heavy tasks under forked proc | - |
 | [jest__console](./j/jest__console) | - | - |
-| [jest__core](./j/jest__core) | Delightful JavaScript Testing. | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
 | [jest__environment](./j/jest__environment) | - | - |
 | [jest__fake-timers](./j/jest__fake-timers) | - | - |
 | [jest__globals](./j/jest__globals) | - | - |
-| [jest__reporters](./j/jest__reporters) | Jest's reporters | - |
 | [jest__source-map](./j/jest__source-map) | - | - |
 | [jest__test-result](./j/jest__test-result) | - | - |
-| [jest__test-sequencer](./j/jest__test-sequencer) | - | - |
-| [jest__transform](./j/jest__transform) | - | - |
 | [jest__types](./j/jest__types) | - | - |
 | [jexcel](./j/jexcel) | jExcel is a lightweight, vanilla javascript plugin | spreadsheet, tables, table, excel, grid, grid-editor, data-table, data-grid, data-spreadsheet |
 | [jexl](./j/jexl) | Javascript Expression Language: Powerful context-b | JSON, expression, evaluator, parser, target, context, jsep, filter, selector |
@@ -3987,7 +3978,6 @@
 | [joi](./j/joi) | Object schema validation | schema, validation |
 | [joi-password-complexity](./j/joi-password-complexity) | Joi validation for password complexity requirement | Joi, validation, password, complexity |
 | [joi-phone-number](./j/joi-phone-number) | Phone number validation rule for Joi | joi, extention, phone number, rule |
-| [joigoose](./j/joigoose) | Joi validation for your Mongoose models without th | joi, mongoose, validation, schema, model, hapi |
 | [jointjs](./j/jointjs) | JavaScript diagramming library | diagram, flowchart, graph, visualization |
 | [josa](./j/josa) | Handles josa selection for dynamically generated s | 한글, 한국어, 문법, 조사, Korean, Hangul, Hangeul, syntax, grammar, josa |
 | [jose](./j/jose) | JSON Web Almost Everything - JWA, JWS, JWE, JWK, J | compact, decode, decrypt, detached, ec, ecdsa, eddsa, electron, embedded, encrypt, flattened, isomorphic, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, oct, okp, payload, rsa, secp256k1, sign, signature, universal, validate, verify, webcrypto |
@@ -4261,7 +4251,7 @@
 | [jsonwebtoken-promisified](./j/jsonwebtoken-promisified) | A thin wrapper that provides promisified methods f | jsonwebtoken, jwt, promises, bluebird |
 | [jspath](./j/jspath) | DSL that enables you to navigate and find data wit | json, path, filter, selection, jspath, jpath, jsonpath |
 | [jspdf](./j/jspdf) | PDF Document creation from JavaScript | pdf |
-| [jsplumb](./j/jsplumb) | - | - |
+| [jsplumb](./j/jsplumb) | Visual connectivity for webapps | javascript, svg, visual, connectivity |
 | [jsprintmanager](./j/jsprintmanager) | Print Commands & Files, Manage Printers & Scan Doc | Raw, Data, Print, Commands, ASP.NET, WebForms, MVC, Razor, Thermal, Label, POS, receipt, RFID, Dot-Matrix, Kiosk, ID, Card, Laser, Inkjet, USB, UNC, LPT, RS-232, IP, Ethernet, Network, ESC/P, PCL, PostScript, PRN, ZPL, EPL, IPL, DPL, EZPL, ZGL, SBPL, RCL, WPL, CLP, IBM, Proprinter, CPL, Dymo, ESC, codes, SPL, TCPL, TSPL-EZ, DASCOM, USPS, FedEx, UPS, DHL, shipping, labels, PDF, TXT, DOC, XLS, JPG, PNG, TIFF, Linux, Mac, Raspberry, Pi, iOS, Android, ChromeOS, trays, bins, papers, virtual, WIA, TWAIN, SANE, scan, scanner, webscan, pdf-password |
 | [jsqrcode](./j/jsqrcode) | a node port of Lazar Laszlo's jsqrcode qr code dec | qr, code, qrcode, jsqrcode, decode, decoder, read, reader |
 | [jsqubits](./j/jsqubits) | Quantum computation simulation JavaScript library | quantum |
@@ -4367,6 +4357,7 @@
 | [jupyterlab__markdownviewe](./j/jupyterlab__markdownviewer-extension) | JupyterLab - Markdown Renderer Extension | - |
 | [jupyterlab__mathjax2](./j/jupyterlab__mathjax2) | A MathJax 2 Typesetting provider for JupyterLab | - |
 | [jupyterlab__mathjax2-exte](./j/jupyterlab__mathjax2-extension) | A JupyterLab extension providing MathJax 2 Typeset | - |
+| [jupyterlab__metapackage](./j/jupyterlab__metapackage) | JupyterLab - Meta Package.  All of the packages us | - |
 | [jupyterlab__nbformat](./j/jupyterlab__nbformat) | Notebook format interfaces | - |
 | [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook | - |
 | [jupyterlab__notebook-exte](./j/jupyterlab__notebook-extension) | JupyterLab - Notebook Extension | - |
@@ -4398,6 +4389,7 @@
 | [jupyterlab__ui-components](./j/jupyterlab__ui-components-extension) | JupyterLab - UI component plugins | - |
 | [jupyterlab__vdom](./j/jupyterlab__vdom) | A viewer for VDOM documents. | - |
 | [jupyterlab__vdom-extensio](./j/jupyterlab__vdom-extension) | JupyterLab - VDOM Renderer | - |
+| [jupyterlab__vega5-extensi](./j/jupyterlab__vega5-extension) | JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer  | - |
 | [just-clone](./j/just-clone) | deep copies objects and arrays | object, clone, copy, deep-copy, extend, no-dependencies, just |
 | [just-debounce-it](./j/just-debounce-it) | return a debounced function | function, debounce, no-dependencies, just |
 | [just-extend](./j/just-extend) | extend an object | object, assign, clone, copy, merge, deep-copy, extend, no-dependencies, just |
@@ -4424,6 +4416,7 @@
 | [kafka-node-avro](./k/kafka-node-avro) | kafka avro serialization | kafka, node, avro, kafka-node, avsc |
 | [kagekiri](./k/kagekiri) | Shadow DOM-piercing querySelector/querySelectorAll | shadowdom, shadow, dom, CSS, selector, querySelector, querySelectorAll |
 | [kamailio-kemi](./k/kamailio-kemi) | - | - |
+| [kap-plugin](./k/kap-plugin) | - | - |
 | [karma](./k/karma) | Spectacular Test Runner for JavaScript. | karma, spectacular, runner, karma, js, javascript, testing, test, remote, execution |
 | [karma-brief-reporter](./k/karma-brief-reporter) | Reports test progress statistics and lists failure | karma-plugin, karma-reporter, progress, brief, test |
 | [karma-browserify](./k/karma-browserify) | A fast browserify integration for Karma that handl | karma-plugin, karma-preprocessor, browserify-tool, browserify |
@@ -4541,6 +4534,7 @@
 | [koa-cors](./k/koa-cors) | CORS middleware for Koa | cors, koa, koajs |
 | [koa-csrf](./k/koa-csrf) | CSRF tokens for Koa | cross, csrf, forgery, koa, koa2, koa@2, koa@next, koanext, next, request, security, site |
 | [koa-dec-router](./k/koa-dec-router) | An ES6 decorator + class based router, support inh | koa, router, decorator, es6, es7, koa-router |
+| [koa-docs](./k/koa-docs) | An automatic documentation generator for koa.js AP | koa, koajs, api, documentation, generator, joi, docs |
 | [koa-ejs](./k/koa-ejs) | ejs render middleware for koa | koa, render, ejs, view |
 | [koa-etag](./k/koa-etag) | ETag support for koa | koa, middleware, cache, caching, etag, file, static, sendfile |
 | [koa-favicon](./k/koa-favicon) | favicon bounce middleware for koa | koa, middleware, favicon |
@@ -4549,6 +4543,8 @@
 | [koa-helmet](./k/koa-helmet) | Security header middleware collection for koa | security, headers, koa, x-frame-options, csp, hsts |
 | [koa-html-minifier](./k/koa-html-minifier) | minify HTML responses like some crazy guy | koa, html, css, htmlmin, min, compress, minification, minifier, minify, uglifier, uglify, terser |
 | [koa-ignore](./k/koa-ignore) | Koa middleware to make other middleware conditiona | koa, skip, condition |
+| [koa-joi-router](./k/koa-joi-router) | Configurable, input validated routing for koa. | joi, koa, router, validate, validator, validation |
+| [koa-joi-router-docs](./k/koa-joi-router-docs) | OpenAPI(aka Swagger) API docs generator for koa-jo | - |
 | [koa-json](./k/koa-json) | pretty (non-compressed) json response middleware | koa, json |
 | [koa-json-error](./k/koa-json-error) | Error handler for pure-JSON Koa apps | koa, json, error, api, handler, middleware |
 | [koa-jwt](./k/koa-jwt) | Koa middleware for validating JSON Web Tokens | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, permissions, koa |
@@ -4587,7 +4583,6 @@
 | [koa-websocket](./k/koa-websocket) | Light wrapper around Koa providing a websocket mid | koa, websockets, ws, sockets, routes |
 | [koa-xml-body](./k/koa-xml-body) | koa middleware to parse xml request body | xml, body, bodyParser, koa, middleware, xml2js, xml parser |
 | [koa2-cors](./k/koa2-cors) | cors middleware for koa2 | koa2, cors, middleware |
-| [koa2-ratelimit](./k/koa2-ratelimit) | IP rate-limiting middleware for Koajs 2. Use to li | koa2-ratelimit, koa2-rate-limit, koa-rate-limit, koa2-ratelimit, koa-ratelimit, koa2-brute-force, koa-brute-force, koa2-bruteforce, koa-bruteforce, koa2, rate, limit, sequelize, mongodb, ratelimit, ratelimit-sequelize, ratelimit-mongodb, rate-limit, rate-limit-sequelize, rate-limit-mongodb, middleware, ip, auth, authorization, security, brute, force, bruteforce, bruteforce-sequelize, bruteforce-mongodb, brute-force, brute-force-sequelize, brute-force-mongodb, attack |
 | [koa2-session-redis](./k/koa2-session-redis) | A simple redis store of koa-session | koa, koa2, session, redis |
 | [koa__cors](./k/koa__cors) | Cross-Origin Resource Sharing(CORS) for koa | cors, koa-cors, Cross-Origin Resource Sharing, @koa/cors, koa, koajs |
 | [koa__multer](./k/koa__multer) | Route middleware for Koa that handles multipart/fo | form, form-data, formdata, koa, middleware, multipart, post |
@@ -5033,7 +5028,7 @@
 | [lodash_dot_template](./l/lodash_dot_template) | The Lodash method _.template exported as a module. | lodash-modularized, template |
 | [lodash_dot_throttle](./l/lodash_dot_throttle) | The lodash method _.throttle exported as a module. | lodash-modularized, throttle |
 | [lodash_dot_times](./l/lodash_dot_times) | The lodash method _.times exported as a module. | lodash-modularized, times |
-| [lodash_dot_toarray](./l/lodash_dot_toarray) | - | - |
+| [lodash_dot_toarray](./l/lodash_dot_toarray) | The lodash method _.toArray exported as a module. | lodash-modularized, toarray |
 | [lodash_dot_tofinite](./l/lodash_dot_tofinite) | The lodash method _.toFinite exported as a module. | lodash-modularized, tofinite |
 | [lodash_dot_tointeger](./l/lodash_dot_tointeger) | The lodash method _.toInteger exported as a module | lodash-modularized, tointeger |
 | [lodash_dot_tolength](./l/lodash_dot_tolength) | The lodash method _.toLength exported as a module. | lodash-modularized, tolength |
@@ -5291,15 +5286,16 @@
 | [mathjax](./m/mathjax) | Beautiful and accessible math in all browsers. Mat | math, svg, mathml, tex, latex, asciimath, browser, node |
 | [mathjs](./m/mathjs) | Math.js is an extensive math library for JavaScrip | math, mathematics, functions, numeric, algebra, parser, expression, number, bignumber, complex, fraction, matrix, unit |
 | [matrix-appservice](./m/matrix-appservice) | Matrix Application Service Framework | matrix-org |
+| [matrix-appservice-bridge](./m/matrix-appservice-bridge) | Bridging infrastructure for Matrix Application Ser | matrix-org |
 | [matrix-js-sdk](./m/matrix-js-sdk) | Matrix Client-Server SDK for Javascript | matrix-org |
 | [matter-js](./m/matter-js) | a 2D rigid body physics engine for the web | javascript, canvas, html5, physics, physics engine, game engine, rigid body physics |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_abusiveexperiencereport) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_acceleratedmobilepageurl) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_abusiveexperiencereport) | TypeScript typings for Abusive Experience Report A | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_acceleratedmobilepageurl) | TypeScript typings for Accelerated Mobile Pages (A | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_accessapproval) | TypeScript typings for Access Approval API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_accesscontextmanager) | TypeScript typings for Access Context Manager API  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_adexchangebuyer) | TypeScript typings for Ad Exchange Buyer API v1.4 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_adexchangebuyer2) | TypeScript typings for Ad Exchange Buyer API II v2 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_adexperiencereport) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_adexperiencereport) | TypeScript typings for Ad Experience Report API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_admin) | TypeScript typings for Admin SDK reports_v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_admob) | TypeScript typings for AdMob API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_adsense) | - | - |
@@ -5308,61 +5304,61 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_analytics) | TypeScript typings for Google Analytics API v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_analyticsadmin) | TypeScript typings for Google Analytics Admin API  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_analyticsdata) | TypeScript typings for Google Analytics Data API v | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_analyticsreporting) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_analyticsreporting) | TypeScript typings for Analytics Reporting API v4 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_androiddeviceprovisioning) | TypeScript typings for Android Device Provisioning | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_androidenterprise) | TypeScript typings for Google Play EMM API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_androidmanagement) | TypeScript typings for Android Management API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_androidpublisher) | TypeScript typings for Google Play Android Develop | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_apigateway) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_apigateway) | TypeScript typings for API Gateway API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_appengine) | TypeScript typings for App Engine Admin API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_area120tables) | TypeScript typings for Area120 Tables API v1alpha1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_artifactregistry) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_artifactregistry) | TypeScript typings for Artifact Registry API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_assuredworkloads) | TypeScript typings for Assured Workloads API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigquery) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigqueryconnection) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigquery) | TypeScript typings for BigQuery API v2 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigqueryconnection) | TypeScript typings for BigQuery Connection API v1b | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigquerydatatransfer) | TypeScript typings for BigQuery Data Transfer API  | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigqueryreservation) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigtableadmin) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigqueryreservation) | TypeScript typings for BigQuery Reservation API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_bigtableadmin) | TypeScript typings for Cloud Bigtable Admin API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_billingbudgets) | TypeScript typings for Cloud Billing Budget API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_binaryauthorization) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_binaryauthorization) | TypeScript typings for Binary Authorization API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_blogger) | TypeScript typings for Blogger API v3 v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_books) | TypeScript typings for Books API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_calendar) | TypeScript typings for Calendar API v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_chat) | TypeScript typings for Hangouts Chat API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_chromeuxreport) | TypeScript typings for Chrome UX Report API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_civicinfo) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_civicinfo) | TypeScript typings for Google Civic Information AP | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_classroom) | TypeScript typings for Google Classroom API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudasset) | TypeScript typings for Cloud Asset API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudbilling) | - | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudbuild) | TypeScript typings for Cloud Build API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_clouddebugger) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_clouderrorreporting) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudfunctions) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_clouddebugger) | TypeScript typings for Cloud Debugger API v2 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_clouderrorreporting) | TypeScript typings for Error Reporting API v1beta1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudfunctions) | TypeScript typings for Cloud Functions API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudidentity) | TypeScript typings for Cloud Identity API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudiot) | TypeScript typings for Cloud IoT API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudkms) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudkms) | TypeScript typings for Cloud Key Management Servic | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudprofiler) | TypeScript typings for Stackdriver Profiler API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudresourcemanager) | TypeScript typings for Cloud Resource Manager API  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudscheduler) | TypeScript typings for Cloud Scheduler API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudsearch) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudsearch) | TypeScript typings for Cloud Search API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudshell) | TypeScript typings for Cloud Shell API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudtasks) | TypeScript typings for Cloud Tasks API v2 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudtrace) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_composer) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_cloudtrace) | TypeScript typings for Cloud Trace API v2 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_composer) | TypeScript typings for Cloud Composer API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_compute) | TypeScript typings for Compute Engine API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_container) | TypeScript typings for Kubernetes Engine API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_containeranalysis) | TypeScript typings for Container Analysis API v1be | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_content) | TypeScript typings for Content API for Shopping v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_customsearch) | TypeScript typings for Custom Search API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datacatalog) | TypeScript typings for Google Cloud Data Catalog A | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dataflow) | TypeScript typings for Dataflow API v1b3 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datafusion) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datalabeling) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datafusion) | TypeScript typings for Cloud Data Fusion API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datalabeling) | TypeScript typings for Data Labeling API v1beta1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datamigration) | TypeScript typings for Database Migration API v1be | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dataproc) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datastore) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dataproc) | TypeScript typings for Cloud Dataproc API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_datastore) | TypeScript typings for Cloud Datastore API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_deploymentmanager) | TypeScript typings for Cloud Deployment Manager V2 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dfareporting) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dfareporting) | TypeScript typings for Campaign Manager 360 API v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dialogflow) | TypeScript typings for Dialogflow API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_digitalassetlinks) | TypeScript typings for Digital Asset Links API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_discovery) | - | - |
@@ -5370,28 +5366,28 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dlp) | TypeScript typings for Cloud Data Loss Prevention  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_dns) | TypeScript typings for Cloud DNS API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_docs) | TypeScript typings for Google Docs API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_domains) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_domains) | TypeScript typings for Cloud Domains API v1beta1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_domainsrdap) | TypeScript typings for Domains RDAP API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_doubleclickbidmanager) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_doubleclickbidmanager) | TypeScript typings for DoubleClick Bid Manager API | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_doubleclicksearch) | TypeScript typings for Search Ads 360 API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_drive) | TypeScript typings for Drive API v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_driveactivity) | TypeScript typings for Drive Activity API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_eventarc) | TypeScript typings for Eventarc API v1beta1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_factchecktools) | TypeScript typings for Fact Check Tools API v1alph | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_fcm) | TypeScript typings for Firebase Cloud Messaging AP | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_file) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_file) | TypeScript typings for Cloud Filestore API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebase) | TypeScript typings for Firebase Management API v1b | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebasedatabase) | TypeScript typings for Firebase Realtime Database  | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebasedynamiclinks) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebasehosting) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebasedynamiclinks) | TypeScript typings for Firebase Dynamic Links API  | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebasehosting) | TypeScript typings for Firebase Hosting API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebaseml) | TypeScript typings for Firebase ML API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebaserules) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firestore) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firebaserules) | TypeScript typings for Firebase Rules API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_firestore) | TypeScript typings for Cloud Firestore API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_fitness) | TypeScript typings for Fitness API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_games) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gamesconfiguration) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_games) | TypeScript typings for Google Play Game Services v | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gamesconfiguration) | TypeScript typings for Google Play Game Services P | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gameservices) | TypeScript typings for Game Services API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gamesmanagement) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gamesmanagement) | TypeScript typings for Google Play Game Management | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_genomics) | TypeScript typings for Genomics API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gmail) | TypeScript typings for Gmail API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_gmailpostmastertools) | TypeScript typings for Gmail Postmaster Tools API  | - |
@@ -5399,14 +5395,14 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_groupssettings) | TypeScript typings for Groups Settings API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_healthcare) | TypeScript typings for Cloud Healthcare API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_homegraph) | TypeScript typings for HomeGraph API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_iam) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_iam) | TypeScript typings for Identity and Access Managem | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_iamcredentials) | TypeScript typings for IAM Service Account Credent | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_iap) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_iap) | TypeScript typings for Cloud Identity-Aware Proxy  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_identitytoolkit) | - | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_indexing) | TypeScript typings for Indexing API v3 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_jobs) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_jobs) | TypeScript typings for Cloud Talent Solution API v | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_kgsearch) | TypeScript typings for Knowledge Graph Search API  | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_language) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_language) | TypeScript typings for Cloud Natural Language API  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_libraryagent) | TypeScript typings for Library Agent API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_licensing) | TypeScript typings for Enterprise License Manager  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_lifesciences) | TypeScript typings for Cloud Life Sciences API v2b | - |
@@ -5414,7 +5410,7 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_logging) | TypeScript typings for Cloud Logging API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_managedidentities) | TypeScript typings for Managed Service for Microso | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_manufacturers) | TypeScript typings for Manufacturer Center API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_memcache) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_memcache) | TypeScript typings for Cloud Memorystore for Memca | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_ml) | TypeScript typings for AI Platform Training & Pred | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_monitoring) | TypeScript typings for Cloud Monitoring API v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_networkmanagement) | - | - |
@@ -5422,12 +5418,12 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_oauth2) | - | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_osconfig) | TypeScript typings for OS Config API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_oslogin) | TypeScript typings for Cloud OS Login API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_pagespeedonline) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_pagespeedonline) | TypeScript typings for PageSpeed Insights API v5 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_people) | TypeScript typings for People API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_playablelocations) | TypeScript typings for Playable Locations API v3 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_playcustomapp) | TypeScript typings for Google Play Custom App Publ | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_policytroubleshooter) | TypeScript typings for Policy Troubleshooter API v | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_poly) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_poly) | TypeScript typings for Poly API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_privateca) | TypeScript typings for Certificate Authority API v | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_prod_tt_sasportal) | TypeScript typings for SAS Portal API (Testing) v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_pubsub) | TypeScript typings for Cloud Pub/Sub API v1 | - |
@@ -5435,19 +5431,19 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_realtimebidding) | TypeScript typings for Real-time Bidding API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_recommendationengine) | TypeScript typings for Recommendations AI v1beta1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_recommender) | TypeScript typings for Recommender API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_redis) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_redis) | TypeScript typings for Google Cloud Memorystore fo | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_remotebuildexecution) | TypeScript typings for Remote Build Execution API  | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_reseller) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_reseller) | TypeScript typings for Google Workspace Reseller A | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_run) | TypeScript typings for Cloud Run Admin API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_runtimeconfig) | TypeScript typings for Cloud Runtime Configuration | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_safebrowsing) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_safebrowsing) | TypeScript typings for Safe Browsing API v4 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_sasportal) | TypeScript typings for SAS Portal API v1alpha1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_script) | TypeScript typings for Apps Script API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_searchconsole) | TypeScript typings for Google Search Console API v | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_secretmanager) | TypeScript typings for Secret Manager API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_securitycenter) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_securitycenter) | TypeScript typings for Security Command Center API | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_serviceconsumermanagement) | TypeScript typings for Service Consumer Management | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_servicecontrol) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_servicecontrol) | TypeScript typings for Service Control API v2 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_servicedirectory) | TypeScript typings for Service Directory API v1bet | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_servicemanagement) | TypeScript typings for Service Management API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_servicenetworking) | TypeScript typings for Service Networking API v1 | - |
@@ -5456,28 +5452,28 @@
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_siteverification) | - | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_slides) | TypeScript typings for Google Slides API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_smartdevicemanagement) | TypeScript typings for Smart Device Management API | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_sourcerepo) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_sourcerepo) | TypeScript typings for Cloud Source Repositories A | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_spanner) | TypeScript typings for Cloud Spanner API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_speech) | TypeScript typings for Cloud Speech-to-Text API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_sqladmin) | TypeScript typings for Cloud SQL Admin API v1beta4 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_storage) | TypeScript typings for Cloud Storage JSON API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_storagetransfer) | TypeScript typings for Storage Transfer API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_streetviewpublish) | TypeScript typings for Street View Publish API v1 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_sts) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_sts) | TypeScript typings for Security Token Service API  | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_tagmanager) | TypeScript typings for Tag Manager API v2 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_testing) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_testing) | TypeScript typings for Cloud Testing API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_texttospeech) | TypeScript typings for Cloud Text-to-Speech API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_toolresults) | TypeScript typings for Cloud Tool Results API v1be | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_tpu) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_trafficdirector) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_transcoder) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_tpu) | TypeScript typings for Cloud TPU API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_trafficdirector) | TypeScript typings for Traffic Director API v2 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_transcoder) | TypeScript typings for Transcoder API v1beta1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_translate) | TypeScript typings for Cloud Translation API v3 | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_vault) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_vault) | TypeScript typings for G Suite Vault API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_vectortile) | TypeScript typings for Semantic Tile API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_verifiedaccess) | - | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_videointelligence) | TypeScript typings for Cloud Video Intelligence AP | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_vision) | - | - |
-| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_webfonts) | - | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_vision) | TypeScript typings for Cloud Vision API v1 | - |
+| [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_webfonts) | TypeScript typings for Web Fonts Developer API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_webmasters) | - | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_websecurityscanner) | TypeScript typings for Web Security Scanner API v1 | - |
 | [maxim_mazurok__gapi_dot_c](./m/maxim_mazurok__gapi_dot_client_dot_workflows) | TypeScript typings for Workflows API v1beta | - |
@@ -5682,7 +5678,6 @@
 | [mock-require](./m/mock-require) | Simple, intuitive mocking of Node.js modules. | require, dependency, injection, di, inject, swap, test, mock, stub |
 | [mockdate](./m/mockdate) | A JavaScript mock Date object that can be used to  | date, mock, test |
 | [mockery](./m/mockery) | Simplifying the use of mocks with Node.js | mock, stub, require, module, cache, unit, test, unittest, testing, tdd |
-| [mockingoose](./m/mockingoose) | A Jest package for mocking mongoose models | jest, mock, mongoose |
 | [mockjs](./m/mockjs) | 生成随机数据 & 拦截 Ajax 请求 | mock, mockJSON, mockAjax |
 | [modernizr](./m/modernizr) | Modernizr is a JavaScript library that detects HTM | modernizr, html5, css3, javascript, browser, feature detection |
 | [modesl](./m/modesl) | FreeSWITCH ESL Node.js Implementation | freeswitch, api, wrapper, esl, event, socket, library |
@@ -5694,7 +5689,7 @@
 | [moment](./m/moment) | Parse, validate, manipulate, and display dates | moment, date, time, parse, format, validate, i18n, l10n, ender |
 | [moment-business](./m/moment-business) | Methods to work with week days and weekends in mom | moment, momentjs, moment.js, business, workday, workweek, saturday, sunday, weekend, weekends |
 | [moment-business-time](./m/moment-business-time) | Query and manipulate moment objects within the con | moment, working time, workings days, working hours, business time, business hours |
-| [moment-duration-format](./m/moment-duration-format) | - | - |
+| [moment-duration-format](./m/moment-duration-format) | A moment.js plugin for formatting durations. | moment, duration, format |
 | [moment-hijri](./m/moment-hijri) | A Hijri calendar (Based on Umm al-Qura calculation | hijri, hijriah, arabic, lunar, Umm al-Qura, date, calendar, conversion, convert |
 | [moment-holiday](./m/moment-holiday) | A Moment.js plugin for handling holidays. | moment, momentjs, holiday, holidays, calculation, united states, us, canada, croatia, denmark, hrvatska, india, easter, finland, germany |
 | [moment-jalaali](./m/moment-jalaali) | Jalaali (Jalali, Persian, Khorshidi, Shamsi) calen | jalaali, jalali, persian, khorshidi, shamsi, date, calendar, conversion, convert |
@@ -5715,22 +5710,7 @@
 | [mongodb-memory-server-cor](./m/mongodb-memory-server-core) | MongoDB Server for testing (core package, without  | mongodb, mongoose, mock, stub, mockgoose, mongodb-prebuilt, mongomem |
 | [mongodb-queue](./m/mongodb-queue) | Message queues which uses MongoDB. | mongodb, queue |
 | [mongodb-uri](./m/mongodb-uri) | A parser and formatter for MongoDB URIs. | mongodb, uri, url, parser, formatter, mongoose |
-| [mongoose](./m/mongoose) | Mongoose MongoDB ODM | mongodb, document, model, schema, database, odm, data, datastore, query, nosql, orm, db |
-| [mongoose-auto-increment](./m/mongoose-auto-increment) | This plugin allows you to auto-increment any field | mongoose, plugin, auto-increment, auto, increment, automatic, autoincrement, auto_increment, autoinc, auto-inc, auto_inc, pureautoinc, mongoose-pureautoinc |
-| [mongoose-autopopulate](./m/mongoose-autopopulate) | Always populate() certain fields in your mongoose  | mongoose, populate, autopopulate, mongodb |
-| [mongoose-deep-populate](./m/mongoose-deep-populate) | Mongoose plugin to enable deep population of neste | mongo, mongodb, mongoose, populate, population, deep populate, deep population, models, nested models, populate models, model population, documents, nested documents, populate documents, documents population |
-| [mongoose-delete](./m/mongoose-delete) | Mongoose soft delete plugin | mongoose, soft, delete, delete, remove, plugin |
-| [mongoose-geojson-schema](./m/mongoose-geojson-schema) | Schema definitions for GeoJSON types for use with  | mongo, mongoose, mongoosejs, schema, geojson, point, geometry, feature, polygon, linestring |
-| [mongoose-id-validator](./m/mongoose-id-validator) | Mongoose plugin to validate that ObjectID referenc | mongoose, objectid, id, validate, validator, exists, mongodb |
-| [mongoose-lean-virtuals](./m/mongoose-lean-virtuals) | Attach virtuals to the results of mongoose queries | mongoose, lean, virtuals, mongodb |
-| [mongoose-mock](./m/mongoose-mock) | A replacement for mongoose in tests returning mode | mongoose, test, sinon |
-| [mongoose-paginate](./m/mongoose-paginate) | Pagination plugin for Mongoose | mongoose, paginate, pagination, paging, page |
-| [mongoose-paginate-v2](./m/mongoose-paginate-v2) | A cursor based custom pagination library for Mongo | mongoose, pagination, plugin, mongodb, paginate, paging, next, prev, nextpage, prevpage, total, paginator, plugin |
-| [mongoose-promise](./m/mongoose-promise) | - | - |
 | [mongoose-seeder](./m/mongoose-seeder) | Seed your MongoDB database easily | MongoDB, Mongoose, seeder |
-| [mongoose-sequence](./m/mongoose-sequence) | Very generic autoincrement plugin for mongoose | mongoose, autoincrement, sequence, seq |
-| [mongoose-simple-random](./m/mongoose-simple-random) | Simple and easy-to-use NodeJS Mongoose Schema plug | mongoose, random |
-| [mongoose-unique-validator](./m/mongoose-unique-validator) | mongoose-unique-validator is a plugin which adds p | mongoose, unique, validator |
 | [mongorito](./m/mongorito) | ES6 generator-based MongoDB ODM. | mongo, mongodb, odm |
 | [mongration](./m/mongration) | Node.js mongodb migration framework | mongration, mongodb, migration, database, node mongodb migration framework |
 | [monk](./m/monk) | The wise MongoDB API | monk, mongodb, mongo, driver |
@@ -5776,7 +5756,6 @@
 | [muibox](./m/muibox) | Promise-based dialog boxes (alert, confirm, prompt | react, material, material-design, material-ui, mui, dialog, modal |
 | [muicss](./m/muicss) | Lightweight CSS framework based on Google's Materi | MUI, CSS, CSS Framework, Material Design, React |
 | [multer](./m/multer) | Middleware for handling multipart/form-data. | form, post, multipart, form-data, formdata, express, middleware |
-| [multer-gridfs-storage](./m/multer-gridfs-storage) | Multer storage engine for GridFS | multer, mongodb, storage, gridfs |
 | [multer-s3](./m/multer-s3) | Streaming multer storage engine for AWS S3 | multer, s3, amazon, aws |
 | [multi-progress](./m/multi-progress) | Multiple progress bars based on the "progress" pac | multi, multiple, progress, bar |
 | [multi-typeof](./m/multi-typeof) | Check something against an array of types. | check, multi, multiple, test, type, typeof |
@@ -6453,7 +6432,6 @@
 | [passport-kakao](./p/passport-kakao) | kakao oauth2 login module | passport, kakao, kakaotalk, oauth2 |
 | [passport-linkedin-oauth2](./p/passport-linkedin-oauth2) | Passport for LinkedIn OAuth2 API v2 | passport, linkedin, auth0 |
 | [passport-local](./p/passport-local) | Local username and password authentication strateg | passport, local, auth, authn, authentication, username, password |
-| [passport-local-mongoose](./p/passport-local-mongoose) | Mongoose plugin that simplifies building username  | mongoose, passport, authentication, login |
 | [passport-microsoft](./p/passport-microsoft) | Microsoft  | passport, microsoft, graph, graph.microsoft.io, oauth, oauth 2.0, auth, api, authentication, sean fisher, seafish.io |
 | [passport-naver](./p/passport-naver) | Naver authentication strategy for Passport | passport, naver, auth, oauth, authentication, oauth2 |
 | [passport-oauth2](./p/passport-oauth2) | OAuth 2.0 authentication strategy for Passport. | passport, auth, authn, authentication, authz, authorization, oauth, oauth2 |
@@ -6590,6 +6568,7 @@
 | [pinyin](./p/pinyin) | 汉语拼音转换工具。 | 拼音, 汉语, 汉字, 中文, Pinyin |
 | [pinyin-engine](./p/pinyin-engine) | 小巧高效的拼音匹配引擎 | pinyin |
 | [pirates](./p/pirates) | Properly hijack require | - |
+| [piscina](./p/piscina) | A fast, efficient Node.js Worker Thread Pool imple | fast, worker threads, thread pool, wade wilson |
 | [piwik-tracker](./p/piwik-tracker) | A wrapper for the Piwik tracking HTTP API | piwik, analytics, tracking |
 | [pixelmatch](./p/pixelmatch) | The smallest and fastest pixel-level image compari | image, comparison, diff |
 | [pixi-spine](./p/pixi-spine) | Spine implementation for pixi v^5 | - |
@@ -6755,7 +6734,7 @@
 | [pretty-quick](./p/pretty-quick) | Get Pretty Quick | git, mercurial, hg, prettier, pretty-quick, formatting, code, vcs, precommit |
 | [pretty-time](./p/pretty-time) | Easily format the time from node.js process.hrtime | convert, date, format, formatting, hour, hrtime, micro, milli, minute, nano, nanosecond, pretty, second, time, week |
 | [prettyjson](./p/prettyjson) | Package for formatting JSON data in a coloured YAM | json, cli, formatting, colors |
-| [preval_dot_macro](./p/preval_dot_macro) | - | - |
+| [preval_dot_macro](./p/preval_dot_macro) | Pre-evaluate code at build-time with babel-macros | babel-macros, babel-plugin-macros |
 | [preview-email](./p/preview-email) | Automatically opens your browser to preview Node.j | auto, automatic, automatically, browser, chrome, demo, email, emails, engine, express, koa, lad, lass, letter, litmus, mail, mailer, nodemailer, open, open, opener, opn, preview, pug, render, show, smtp, template, templates, test |
 | [prex](./p/prex) | Async coordination primitives and extensions on to | async, promise, promises, future, deferred, promise-a, promise-a-plus, then, await, coordination, semaphore, cancellation, cancellationtoken |
 | [primereact](./p/primereact) | - | - |
@@ -7064,6 +7043,7 @@
 | [rdfjs__serializer-rdfjs](./r/rdfjs__serializer-rdfjs) | RDFJS JavaScript code serializer that implements t | rdf, rdfjs, serializer |
 | [rdfjs__sink-map](./r/rdfjs__sink-map) | Map for RDFJS Sinks including shortcut methods | map, rdf, rdfjs, sink |
 | [rdfjs__term-map](./r/rdfjs__term-map) | Map for RDF/JS Terms keys | map, rdf, rdfjs, term |
+| [rdfjs__term-set](./r/rdfjs__term-set) | Set for RDFJS Terms | rdf, rdfjs, set, term |
 | [rdfjs__to-ntriples](./r/rdfjs__to-ntriples) | Converts RDFJS Terms and Quads to N-Triple strings | rdf, rdfjs, ntriples, string |
 | [re-base](./r/re-base) | A Relay inspired library for building React.js + F | - |
 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization | react, redux, reselect, memoize, cache |
@@ -7412,7 +7392,7 @@
 | [react-native-app-intro-sl](./r/react-native-app-intro-slider) | Simple and configurable app introduction slider fo | swiper, App, Intro, ios, android, react-component, react-native, slider |
 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native. | React, Native, js |
 | [react-native-appsflyer](./r/react-native-appsflyer) | React Native Appsflyer plugin | react-native, react, native, appsflyer |
-| [react-native-audio](./r/react-native-audio) | - | - |
+| [react-native-audio](./r/react-native-audio) | React Native extension for recording audio | react-native, audio, record |
 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API | react-native |
 | [react-native-autocomplete](./r/react-native-autocomplete-input) | Pure javascript autocomplete input for react-nativ | react-native, iOS, input, Android, autocomplete |
 | [react-native-awesome-card](./r/react-native-awesome-card-io) | A complete and cross-platform React Native compone | react-native, react-component, card.io, credit card, scan, android, ios |
@@ -7450,7 +7430,7 @@
 | [react-native-drawer](./r/react-native-drawer) | React Native Drawer | react, react-native, react-component, drawer, side-menu, menu, ios, android, material design |
 | [react-native-drawer-layou](./r/react-native-drawer-layout) | A platform-agnostic drawer layout. Pure JavaScript | react, react-native, ios, android, drawer, layout, menu |
 | [react-native-easy-upgrade](./r/react-native-easy-upgrade) | Easy to upgrade your react-native app | - |
-| [react-native-elements](./r/react-native-elements) | - | - |
+| [react-native-elements](./r/react-native-elements) | React Native Elements & UI Toolkit | react-native, reactjs, reactnative, bootstrap |
 | [react-native-elevated-vie](./r/react-native-elevated-view) | Cross platform solution to elevation for React Nat | react-native, react-native-elevated-view, react, native, elevated, view, elevation, ios, android, react native |
 | [react-native-event-source](./r/react-native-event-source) | A react-native component for EventSource: Server-S | react-native, react-component, event-source, sse |
 | [react-native-fabric](./r/react-native-fabric) | A React Native library for Fabric, Crashlytics and | android, answers, crashlytics, fabric, ios, mobile, react, react-component, react-native, react-native-component |
@@ -7628,7 +7608,7 @@
 | [react-redux-toastr](./r/react-redux-toastr) | react-redux-toastr is a React toastr message imple | React.js, React, Redux, react, redux toastr, react-redux-toastr, react-component, toastr, alert, toast, message, popup, react toastr, react redux toastr, react toastr redux, react confirm, react alert, avatar, toastr profile |
 | [react-relative-portal](./r/react-relative-portal) | React component for place dropdowns outside overfl | react, react-component, portal, react-portal |
 | [react-relay](./r/react-relay) | A framework for building GraphQL-driven React appl | graphql, relay, react |
-| [react-request](./r/react-request) | - | - |
+| [react-request](./r/react-request) | Declarative HTTP requests with React. | react, http, https, request, requests, response, xhr, xmlhttprequest, fetch, cors, json, api, data, rest, restful, crud |
 | [react-resizable](./r/react-resizable) | A component that is resizable with handles. | react, resize, resizable |
 | [react-resize-detector](./r/react-resize-detector) | React resize detector | react, resize, detector |
 | [react-resolver](./r/react-resolver) | Async-rendering & data-fetching for universal Reac | async, decorator, lazy, load, react, resolve |
@@ -7846,7 +7826,7 @@
 | [redux-devtools-extension](./r/redux-devtools-extension) | Wrappers for Redux DevTools Extension. | - |
 | [redux-devtools-log-monito](./r/redux-devtools-log-monitor) | The default tree view monitor for Redux DevTools | redux, devtools, flux, react, hot reloading, time travel, live edit |
 | [redux-devtools-themes](./r/redux-devtools-themes) | Color themes for Redux DevTools monitors | base16, color schemes |
-| [redux-doghouse](./r/redux-doghouse) | - | - |
+| [redux-doghouse](./r/redux-doghouse) | Scoping helpers for building reusable components w | redux, scope, doghouse, react |
 | [redux-duck](./r/redux-duck) | Helper function to create Redux modules using the  | redux, duck, module, helper |
 | [redux-first-router](./r/redux-first-router) | think of your app in states not routes (and, yes,  | - |
 | [redux-first-router-link](./r/redux-first-router-link) | a simple but effective  component for redux-first- | - |
@@ -7980,12 +7960,10 @@
 | [resolve-pkg](./r/resolve-pkg) | Resolve the path of a package regardless of it hav | require, resolve, path, module, from, like, path, cwd, current, working, directory, grunt, main, entry, point |
 | [resolve-protobuf-schema](./r/resolve-protobuf-schema) | Read a protobuf schema from the disk, parse it and | - |
 | [resource-loader](./r/resource-loader) | A generic asset loader, made with web games in min | - |
-| [resourcejs](./r/resourcejs) | A simple Express library to reflect Mongoose model | Express, Mongoose, Node, MEAN |
 | [response-time](./r/response-time) | Response time for Node.js servers | http, res, response time, x-response-time |
 | [responselike](./r/responselike) | A response-like object for mocking a Node.js HTTP  | http, https, response, mock, request, responselike |
 | [resq](./r/resq) | React Element Selector Query (resq) - Query React  | react, selector, resq, rescue, queryselector, query |
 | [rest](./r/rest) | RESTful HTTP client library | rest, http, client, rest-template, spring, cujojs |
-| [rest-io](./r/rest-io) | REST resource generator | rest, express, mongo, mongoose, resource, framework |
 | [restangular](./r/restangular) | Restful Resources service for AngularJS apps | angular, client, browser, restful, resources, rest, api |
 | [restart__hooks](./r/restart__hooks) | - | - |
 | [restful_dot_js](./r/restful_dot_js) | A pure JS client for interacting with server-side  | - |
@@ -8283,7 +8261,7 @@
 | [semantic-ui-dimmer](./s/semantic-ui-dimmer) | Single component release of dimmer | - |
 | [semantic-ui-dropdown](./s/semantic-ui-dropdown) | Single component release of dropdown | - |
 | [semantic-ui-embed](./s/semantic-ui-embed) | Single component release of embed | - |
-| [semantic-ui-form](./s/semantic-ui-form) | - | - |
+| [semantic-ui-form](./s/semantic-ui-form) | Single component release of form | - |
 | [semantic-ui-modal](./s/semantic-ui-modal) | Single component release of modal | - |
 | [semantic-ui-nag](./s/semantic-ui-nag) | Single component release of nag | - |
 | [semantic-ui-popup](./s/semantic-ui-popup) | Single component release of popup | - |
@@ -8381,7 +8359,7 @@
 | [shelljs-exec-proxy](./s/shelljs-exec-proxy) | Unlimited shelljs commands with ES6 proxies | shelljs, exec, proxy, es6, git |
 | [shevyjs](./s/shevyjs) | Shevyjs is a CSS-in-JS solution for perfect vertic | - |
 | [shimmer](./s/shimmer) | Safe(r) monkeypatching for JavaScript. | monkeypatch, swizzle, wrapping, danger, hmm, shim |
-| [shipit-cli](./s/shipit-cli) | - | - |
+| [shipit-cli](./s/shipit-cli) | Universal automation and deployment tool written i | shipit, automation, deployment, deploy, ssh |
 | [shipit-utils](./s/shipit-utils) | - | - |
 | [shopify-buy](./s/shopify-buy) | The JS Buy SDK is a lightweight library that allow | - |
 | [short-css-vars](./s/short-css-vars) | Optimization plugin to shorten the names of CSS va | css, variables, custom, properties, short, hash, name, shorten |
@@ -8398,7 +8376,7 @@
 | [shuffle-seed](./s/shuffle-seed) | Shuffle Array based on a Seed | array, seed, shuffle, shuffle, seed, random |
 | [sic-ecies](./s/sic-ecies) | ECIES implemented for Bitcore. fix to eos and easy | sic, ecc, ecies, crypto, cryptography, encryption |
 | [sic-list](./s/sic-list) | Standard industrial classification list based on t | standard industrial classification, sic |
-| [sideway__address](./s/sideway__address) | - | - |
+| [sideway__address](./s/sideway__address) | Email address and domain validation | email, domain, address, validation |
 | [sideway__formula](./s/sideway__formula) | - | - |
 | [sideway__pinpoint](./s/sideway__pinpoint) | - | - |
 | [siema](./s/siema) | Lightweight and simple carousel with no dependenci | slider, carousel, lightweight |
@@ -8420,7 +8398,7 @@
 | [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v | - |
 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign | - |
 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI | chatwork, api |
-| [simple-diff](./s/simple-diff) | - | - |
+| [simple-diff](./s/simple-diff) | simple diff for object and arrays with options | diff |
 | [simple-element-resize-det](./s/simple-element-resize-detector) | Observes resizing of an element using a hidden ifr | element resize, resize observer, ResizeObserver, element size |
 | [simple-icons](./s/simple-icons) | SVG icons for popular brands https://simpleicons.o | svg, icons |
 | [simple-lru](./s/simple-lru) | minimal Least Recently Used Cache | cache, LRU |
@@ -8695,8 +8673,6 @@
 | [storybook__addon-links](./s/storybook__addon-links) | Story Links addon for storybook | addon, storybook |
 | [storybook__addon-notes](./s/storybook__addon-notes) | Write notes for your Storybook stories. | addon, notes, storybook |
 | [storybook__addon-options](./s/storybook__addon-options) | Options addon for storybook | addon, storybook |
-| [storybook__addon-storysho](./s/storybook__addon-storyshots) | StoryShots is a Jest Snapshot Testing Addon for St | addon, storybook |
-| [storybook__addon-storysho](./s/storybook__addon-storyshots-puppeteer) | Image snapshots addition to StoryShots based on pu | addon, storybook |
 | [storybook__addon-viewport](./s/storybook__addon-viewport) | Storybook addon to change the viewport size to mob | addon, storybook |
 | [storybook__addons](./s/storybook__addons) | Storybook addons store | storybook |
 | [storybook__api](./s/storybook__api) | Core Storybook API & Context | storybook |
@@ -8859,13 +8835,12 @@
 | [svg-path-parser](./s/svg-path-parser) | A parser for SVG's path syntax | svg, path, d, attribute, parser, lines, drawing |
 | [svg-sprite](./s/svg-sprite) | SVG sprites & stacks galore — A low-level Node.js  | icon, icons, svg, png, sprite, spritesheet, stack, generator, css, sass, less, stylus, stylesheet, inline, html, vector, rwd, retina, mustache, gulpfriendly |
 | [svg-sprite-loader](./s/svg-sprite-loader) | Webpack loader for creating SVG sprites | svg, sprite, svg sprite, svg stack, webpack, webpack2, webpack3, webpack loader, webpack plugin |
-| [svg-spritemap-webpack-plu](./s/svg-spritemap-webpack-plugin) | - | - |
+| [svg-spritemap-webpack-plu](./s/svg-spritemap-webpack-plugin) | Generates symbol-based SVG spritemap from all .svg | svg, sprite, sprites, spritemap, symbols, icons, sass, scss, less, css, variables, webpack, plugin |
 | [svg-tag-names](./s/svg-tag-names) | List of known SVG tag names | svg, tag, name, element, tagname, w3c |
 | [svg-tags](./s/svg-tags) | List of standard SVG tags. | svg, tags, w3c |
 | [svg2png](./s/svg2png) | Converts SVGs to PNGs, using PhantomJS | - |
 | [svg2ttf](./s/svg2ttf) | Converts SVG font to TTF font | font, ttf, svg, convertor |
 | [svg4everybody](./s/svg4everybody) | Use external SVG spritemaps in any browser | contents, defs, externals, fallbacks, icons, ie8s, ie9s, oldies, safaris, sprites, spritemaps, svgs, symbols, uses |
-| [svg_dot_js](./s/svg_dot_js) | A lightweight library for manipulating and animati | svg, vector, graphics, animation |
 | [svgjs_dot_draggable](./s/svgjs_dot_draggable) | - | - |
 | [svgjs_dot_resize](./s/svgjs_dot_resize) | - | - |
 | [svgo](./s/svgo) | Nodejs-based tool for optimizing SVG vector graphi | svgo, svg, optimize, minify |
@@ -9156,7 +9131,7 @@
 | [true-case-path](./t/true-case-path) | Given a possibly case-variant version of an existi | - |
 | [truffle-privatekey-provid](./t/truffle-privatekey-provider) | Private Key Web3 provider | ethereum, private key, wallet, provider, truffle provider |
 | [truncate-middle](./t/truncate-middle) | Truncates in the middle. | - |
-| [trunk8](./t/trunk8) | - | - |
+| [trunk8](./t/trunk8) | trunk8 is an intelligent text truncation extension | truncate, trunk8, jquery, text, cut-off, spill-over |
 | [trusted-types](./t/trusted-types) | Polyfill for the Trusted Types | - |
 | [tryer](./t/tryer) | Because everyone loves a tryer | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
 | [tryghost__content-api](./t/tryghost__content-api) | JavaScript Client Library for the Ghost  | - |
@@ -9164,7 +9139,7 @@
 | [ts-dedent](./t/ts-dedent) | TypeScript package which smartly trims and strips  | dedent, deindent, indentation, multi-line string, multiline strings, template literals, template strings, ts, typescript, es6, harmony |
 | [ts-essentials](./t/ts-essentials) | All essential TypeScript types in one place | typescript, types, essentials, utils, toolbox, toolbelt, lodash, underscore |
 | [ts-invariant](./t/ts-invariant) | TypeScript implementation of invariant(condition,  | invariant, assertion, precondition, TypeScript |
-| [ts-loader](./t/ts-loader) | - | - |
+| [ts-loader](./t/ts-loader) | TypeScript loader for webpack | ts-loader, typescript-loader, webpack, loader, typescript, ts |
 | [ts-log](./t/ts-log) | Abstract logger TypeScript interface with a dummy  | typescript, abstract, logger, console, dummy |
 | [ts-map](./t/ts-map) | A typescript Map structure like ES6 Map | typescript, Map, ts, ts-map |
 | [ts-mockito](./t/ts-mockito) | Mocking library for TypeScript | mock, typescript, tests, fake, stub, spy, javascript |
@@ -9179,9 +9154,7 @@
 | [tslib](./t/tslib) | Runtime library for TypeScript helper functions | TypeScript, Microsoft, compiler, language, javascript, tslib, runtime |
 | [tslint](./t/tslint) | An extensible static analysis linter for the TypeS | cli, typescript, linter |
 | [tsmonad](./t/tsmonad) | TsMonad - fun-size monads library for TypeScript | typescript, monad, functional |
-| [tspromise](./t/tspromise) | A ES6-compatible node.js promise library for harmo | promises, harmony, generators |
 | [tsscmp](./t/tsscmp) | Timing safe string compare using double HMAC | timing safe string compare, double hmac string compare, safe string compare, hmac |
-| [tstl](./t/tstl) | TypeScript-STL (Standard Template Library, migrate | tstl, typecript, c++, cpp, stl, standard template library, algorithm, container, exception, functional, iterator, numeric, ranges, thread, utility, base, experimental, internal, Vector, Deque, List, VectorBoolean, ForwardList, Stack, Queue, PriorityQueue, FlatMap, FlatMultiMap, FlatMultiSet, FlatSet, HashMap, HashMultiMap, HashMultiSet, HashSet, TreeMap, TreeMultiMap, TreeMultiSet, TreeSet, ConditionVariable, Semaphore, Latch, Barrier, FlexBarrier, Mutex, TimedMutex, SharedMutex, SharedTimedMutex, SharedLock, UniqueLock |
 | [tsutils](./t/tsutils) | utilities for working with typescript's AST | typescript, ts, ast, typeguard, utils, helper, node |
 | [ttf2woff2](./t/ttf2woff2) | Convert TTF files to WOFF2 ones. | ttf, woff2, fonts |
 | [tti-polyfill](./t/tti-polyfill) | Polyfill for Time to Interactive. See https://goo. | - |
@@ -9189,6 +9162,8 @@
 | [tunnel-ssh](./t/tunnel-ssh) | Easy extendable SSH tunnel | tunnel, ssh, mysql, develop, net |
 | [turbolinks](./t/turbolinks) | Turbolinks makes navigating your web application f | turbolinks, browser, pushstate |
 | [turbostatus](./t/turbostatus) | CLI util to show status of repos in a main folder. | cli, git, status |
+| [turist__fetch](./t/turist__fetch) | Opinionated fetch optimized for use inside microse | - |
+| [turist__time](./t/turist__time) | Making time pass faster on the ship | - |
 | [turndown](./t/turndown) | A library that converts HTML to Markdown | converter, html, markdown |
 | [tus-js-client](./t/tus-js-client) | A pure JavaScript client for the tus resumable upl | tus, resumable, upload, protocol, progress, file, browser |
 | [tuya-panel-kit](./t/tuya-panel-kit) | a functional component library for developing tuya | tuya, react-native, panel |
@@ -9452,10 +9427,13 @@
 | [vectorious](./v/vectorious) | A high performance linear algebra library. | matrix, vector, linear, algebra |
 | [vega](./v/vega) | The Vega visualization grammar. | vega, visualization, interaction, dataflow, library, data, d3 |
 | [vega-canvas](./v/vega-canvas) | Canvas and Image utilities. | vega, canvas, image |
+| [vega-embed](./v/vega-embed) | Publish Vega visualizations as embedded web compon | vega, data, visualization, component, embed |
 | [vega-event-selector](./v/vega-event-selector) | A CSS-inspired language to select, sequence, and c | vega, event, selector |
 | [vega-expression](./v/vega-expression) | Vega expression parser and code generator. | vega, expression, parser, codegen |
+| [vega-lite](./v/vega-lite) | Vega-Lite is a concise high-level language for int | - |
 | [vega-scale](./v/vega-scale) | Scales and color schemes for visual encoding. | vega, scale, color, palette |
 | [vega-schema-url-parser](./v/vega-schema-url-parser) | A parser to get the library and version from Vega  | vega, vega-lite, schema |
+| [vega-themes](./v/vega-themes) | Themes for stylized Vega and Vega-Lite visualizati | vega, vega-lite, themes, style |
 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat | vega-lite, vega, tooltip |
 | [vega-typings](./v/vega-typings) | Typings for Vega. | vega, typescript, typings |
 | [vega-util](./v/vega-util) | JavaScript utilities for Vega. | vega, utilities |
@@ -9838,6 +9816,7 @@
 | [workbox-routing](./w/workbox-routing) | A service worker helper library to route request U | workbox, workboxjs, service worker, sw, router, routing |
 | [workbox-strategies](./w/workbox-strategies) | A service worker helper library implementing commo | workbox, workboxjs, service worker, sw, router, routing |
 | [workbox-streams](./w/workbox-streams) | A library that makes it easier to work with Stream | workbox, workboxjs, service worker, sw, streams, readablestream |
+| [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the  | workbox, workboxjs, service worker, sw |
 | [workbox-webpack-plugin](./w/workbox-webpack-plugin) | A plugin for your Webpack build process, helping y | workbox, workboxjs, webpack, service worker, caching, fetch requests, offline, file manifest |
 | [workbox-window](./w/workbox-window) | Simplifies communications with Workbox packages ru | workbox, workboxjs, service worker, sw, window, message, postMessage |
 | [worker-farm](./w/worker-farm) | Distribute processing tasks to child processes wit | worker, child, processing, farm |
@@ -9899,7 +9878,7 @@
 | [xmlcreate](./x/xmlcreate) | Simple XML builder for Node.js | build, builder, create, creator, xml |
 | [xmldoc](./x/xmldoc) | A lightweight XML Document class for JavaScript. | - |
 | [xmldom](./x/xmldom) | A pure JavaScript W3C standard-based (XML DOM Leve | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer |
-| [xmldsigjs](./x/xmldsigjs) | - | - |
+| [xmldsigjs](./x/xmldsigjs) | XMLDSIGjs provides an implementation of XMLDSIG in | xml, xmldsig, webcrypto, signature, rsa, ec |
 | [xmljs](./x/xmljs) | A small and simple package which can traverse a XM | xml, xmljs, soap |
 | [xmlpoke](./x/xmlpoke) | Module for modifying XML files. | xmlpoke, xml |
 | [xmlrpc](./x/xmlrpc) | A pure JavaScript XML-RPC client and server. | xml-rpc, xmlrpc, xml, rpc |

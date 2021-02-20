@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.AltCallbackFieldsIdKey
 import typings.maximMazurokGapiClientDfareporting.anon.AltCallbackFieldsKeyOauthtoken
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserRolesResource extends js.Object {
+trait UserRolesResource extends StObject {
   
   /** Deletes an existing user role. */
   def delete(): Request[Unit] = js.native

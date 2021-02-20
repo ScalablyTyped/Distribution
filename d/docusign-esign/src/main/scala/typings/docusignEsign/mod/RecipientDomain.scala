@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientDomain extends js.Object {
+trait RecipientDomain extends StObject {
   
   var active: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object RecipientDomain {
   }
   
   @scala.inline
-  implicit class RecipientDomainOps[Self <: RecipientDomain] (val x: Self) extends AnyVal {
+  implicit class RecipientDomainMutableBuilder[Self <: RecipientDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainCode(value: String): Self = StObject.set(x, "domainCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setDomainCodeUndefined: Self = StObject.set(x, "domainCode", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainCode(value: String): Self = this.set("domainCode", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteDomainCode: Self = this.set("domainCode", js.undefined)
+    def setRecipientDomainId(value: String): Self = StObject.set(x, "recipientDomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
-    
-    @scala.inline
-    def setRecipientDomainId(value: String): Self = this.set("recipientDomainId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientDomainId: Self = this.set("recipientDomainId", js.undefined)
+    def setRecipientDomainIdUndefined: Self = StObject.set(x, "recipientDomainId", js.undefined)
   }
 }

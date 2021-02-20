@@ -1,12 +1,13 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialFastCsvFormatterOp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CsvWriteOptions extends js.Object {
+trait CsvWriteOptions extends StObject {
   
   var dateFormat: String = js.native
   
@@ -42,42 +43,30 @@ object CsvWriteOptions {
   }
   
   @scala.inline
-  implicit class CsvWriteOptionsOps[Self <: CsvWriteOptions] (val x: Self) extends AnyVal {
+  implicit class CsvWriteOptionsMutableBuilder[Self <: CsvWriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUTC(value: Boolean): Self = StObject.set(x, "dateUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setFormatterOptions(value: PartialFastCsvFormatterOp): Self = StObject.set(x, "formatterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUTC(value: Boolean): Self = this.set("dateUTC", value.asInstanceOf[js.Any])
+    def setIncludeEmptyRows(value: Boolean): Self = StObject.set(x, "includeEmptyRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setMap(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFormatterOptions(value: PartialFastCsvFormatterOp): Self = this.set("formatterOptions", value.asInstanceOf[js.Any])
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeEmptyRows(value: Boolean): Self = this.set("includeEmptyRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMap(value: (js.Any, Double) => js.Any): Self = this.set("map", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSheetName(value: String): Self = this.set("sheetName", value.asInstanceOf[js.Any])
+    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
   }
 }

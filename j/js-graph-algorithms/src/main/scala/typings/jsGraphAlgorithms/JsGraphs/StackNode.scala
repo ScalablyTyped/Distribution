@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackNode[T] extends js.Object {
+trait StackNode[T] extends StObject {
   
   var next: StackNode[T] | Null = js.native
   
@@ -20,27 +21,15 @@ object StackNode {
   }
   
   @scala.inline
-  implicit class StackNodeOps[Self <: StackNode[_], T] (val x: Self with StackNode[T]) extends AnyVal {
+  implicit class StackNodeMutableBuilder[Self <: StackNode[_], T] (val x: Self with StackNode[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNext(value: StackNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextNull: Self = StObject.set(x, "next", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNext(value: StackNode[T]): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextNull: Self = this.set("next", null)
+    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

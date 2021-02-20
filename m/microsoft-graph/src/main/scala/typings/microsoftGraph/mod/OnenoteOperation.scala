@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object OnenoteOperation {
   }
   
   @scala.inline
-  implicit class OnenoteOperationOps[Self <: OnenoteOperation] (val x: Self) extends AnyVal {
+  implicit class OnenoteOperationMutableBuilder[Self <: OnenoteOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: NullableOption[OnenoteOperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorNull: Self = StObject.set(x, "error", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setError(value: NullableOption[OnenoteOperationError]): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setPercentComplete(value: NullableOption[String]): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setPercentCompleteNull: Self = StObject.set(x, "percentComplete", null)
     
     @scala.inline
-    def setErrorNull: Self = this.set("error", null)
+    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     @scala.inline
-    def setPercentComplete(value: NullableOption[String]): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setResourceId(value: NullableOption[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    def setResourceIdNull: Self = StObject.set(x, "resourceId", null)
     
     @scala.inline
-    def setPercentCompleteNull: Self = this.set("percentComplete", null)
+    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
     @scala.inline
-    def setResourceId(value: NullableOption[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    def setResourceLocation(value: NullableOption[String]): Self = StObject.set(x, "resourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    def setResourceLocationNull: Self = StObject.set(x, "resourceLocation", null)
     
     @scala.inline
-    def setResourceIdNull: Self = this.set("resourceId", null)
-    
-    @scala.inline
-    def setResourceLocation(value: NullableOption[String]): Self = this.set("resourceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLocation: Self = this.set("resourceLocation", js.undefined)
-    
-    @scala.inline
-    def setResourceLocationNull: Self = this.set("resourceLocation", null)
+    def setResourceLocationUndefined: Self = StObject.set(x, "resourceLocation", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_ADDRESS_UPDATED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.CART_CHANGE_REQUESTED
 */
-trait GoogleActionsV2TransactionDecisionValueUserDecision extends js.Object
+trait GoogleActionsV2TransactionDecisionValueUserDecision extends StObject
 object GoogleActionsV2TransactionDecisionValueUserDecision {
   
   @scala.inline

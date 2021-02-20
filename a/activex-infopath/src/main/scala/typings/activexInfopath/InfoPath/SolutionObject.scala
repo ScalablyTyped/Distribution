@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SolutionObject extends js.Object {
+trait SolutionObject extends StObject {
   
   val DOM: IXMLDOMDocument = js.native
   
@@ -35,33 +36,21 @@ object SolutionObject {
   }
   
   @scala.inline
-  implicit class SolutionObjectOps[Self <: SolutionObject] (val x: Self) extends AnyVal {
+  implicit class SolutionObjectMutableBuilder[Self <: SolutionObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotSolutionObject_typekey(value: SolutionObject): Self = StObject.set(x, "InfoPath.SolutionObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageURL(value: String): Self = StObject.set(x, "PackageURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = this.set("DOM", value.asInstanceOf[js.Any])
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotSolutionObject_typekey(value: SolutionObject): Self = this.set("InfoPath.SolutionObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPackageURL(value: String): Self = this.set("PackageURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

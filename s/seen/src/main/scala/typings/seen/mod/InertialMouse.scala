@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "InertialMouse")
 @js.native
-class InertialMouse () extends js.Object {
+class InertialMouse () extends StObject {
   
   def damp(): this.type = js.native
   
@@ -19,13 +20,27 @@ class InertialMouse () extends js.Object {
   var xy: js.Array[Double] = js.native
 }
 /* static members */
-@JSImport("seen", "InertialMouse")
-@js.native
-object InertialMouse extends js.Object {
+object InertialMouse {
   
-  var inertiaExtinction: Double = js.native
+  @JSImport("seen", "InertialMouse")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var inertiaMsecDelay: Double = js.native
+  @JSImport("seen", "InertialMouse.inertiaExtinction")
+  @js.native
+  def inertiaExtinction: Double = js.native
+  @scala.inline
+  def inertiaExtinction_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inertiaExtinction")(x.asInstanceOf[js.Any])
   
-  var smoothingTimeout: Double = js.native
+  @JSImport("seen", "InertialMouse.inertiaMsecDelay")
+  @js.native
+  def inertiaMsecDelay: Double = js.native
+  @scala.inline
+  def inertiaMsecDelay_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inertiaMsecDelay")(x.asInstanceOf[js.Any])
+  
+  @JSImport("seen", "InertialMouse.smoothingTimeout")
+  @js.native
+  def smoothingTimeout: Double = js.native
+  @scala.inline
+  def smoothingTimeout_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smoothingTimeout")(x.asInstanceOf[js.Any])
 }

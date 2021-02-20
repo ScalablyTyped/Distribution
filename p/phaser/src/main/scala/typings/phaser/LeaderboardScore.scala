@@ -1,11 +1,12 @@
 package typings.phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeaderboardScore extends js.Object {
+trait LeaderboardScore extends StObject {
   
   /**
     * The developer-specified payload associated with the score, or null if one was not set.
@@ -65,42 +66,30 @@ object LeaderboardScore {
   }
   
   @scala.inline
-  implicit class LeaderboardScoreOps[Self <: LeaderboardScore] (val x: Self) extends AnyVal {
+  implicit class LeaderboardScoreMutableBuilder[Self <: LeaderboardScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayerID(value: String): Self = StObject.set(x, "playerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayerName(value: String): Self = StObject.set(x, "playerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPlayerPhotoURL(value: String): Self = StObject.set(x, "playerPhotoURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerID(value: String): Self = this.set("playerID", value.asInstanceOf[js.Any])
+    def setRank(value: integer): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerName(value: String): Self = this.set("playerName", value.asInstanceOf[js.Any])
+    def setScore(value: integer): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerPhotoURL(value: String): Self = this.set("playerPhotoURL", value.asInstanceOf[js.Any])
+    def setScoreFormatted(value: String): Self = StObject.set(x, "scoreFormatted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRank(value: integer): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScore(value: integer): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScoreFormatted(value: String): Self = this.set("scoreFormatted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: integer): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: integer): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service may be represented by a {@link com.sun.star.beans.PropertyValue} []. */
 @js.native
-trait EnhancedCustomShapeExtrusion extends js.Object {
+trait EnhancedCustomShapeExtrusion extends StObject {
   
   /** This attribute specifies the brightness of a scene in percent. */
   var Brightness: Double = js.native
@@ -122,87 +123,75 @@ object EnhancedCustomShapeExtrusion {
   }
   
   @scala.inline
-  implicit class EnhancedCustomShapeExtrusionOps[Self <: EnhancedCustomShapeExtrusion] (val x: Self) extends AnyVal {
+  implicit class EnhancedCustomShapeExtrusionMutableBuilder[Self <: EnhancedCustomShapeExtrusion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrightness(value: Double): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepth(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "Depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiffusion(value: Double): Self = StObject.set(x, "Diffusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrightness(value: Double): Self = this.set("Brightness", value.asInstanceOf[js.Any])
+    def setExtrusion(value: Boolean): Self = StObject.set(x, "Extrusion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: EnhancedCustomShapeParameterPair): Self = this.set("Depth", value.asInstanceOf[js.Any])
+    def setExtrusionColor(value: Boolean): Self = StObject.set(x, "ExtrusionColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiffusion(value: Double): Self = this.set("Diffusion", value.asInstanceOf[js.Any])
+    def setFirstLightDirection(value: Direction3D): Self = StObject.set(x, "FirstLightDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrusion(value: Boolean): Self = this.set("Extrusion", value.asInstanceOf[js.Any])
+    def setFirstLightHarsh(value: Boolean): Self = StObject.set(x, "FirstLightHarsh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtrusionColor(value: Boolean): Self = this.set("ExtrusionColor", value.asInstanceOf[js.Any])
+    def setFirstLightLevel(value: Double): Self = StObject.set(x, "FirstLightLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLightDirection(value: Direction3D): Self = this.set("FirstLightDirection", value.asInstanceOf[js.Any])
+    def setLightFace(value: Boolean): Self = StObject.set(x, "LightFace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLightHarsh(value: Boolean): Self = this.set("FirstLightHarsh", value.asInstanceOf[js.Any])
+    def setMetal(value: Boolean): Self = StObject.set(x, "Metal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLightLevel(value: Double): Self = this.set("FirstLightLevel", value.asInstanceOf[js.Any])
+    def setNumberOfLineSegments(value: Double): Self = StObject.set(x, "NumberOfLineSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightFace(value: Boolean): Self = this.set("LightFace", value.asInstanceOf[js.Any])
+    def setOrigin(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetal(value: Boolean): Self = this.set("Metal", value.asInstanceOf[js.Any])
+    def setProjectionMode(value: ProjectionMode): Self = StObject.set(x, "ProjectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfLineSegments(value: Double): Self = this.set("NumberOfLineSegments", value.asInstanceOf[js.Any])
+    def setRotateAngle(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: EnhancedCustomShapeParameterPair): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    def setRotationCenter(value: Direction3D): Self = StObject.set(x, "RotationCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectionMode(value: ProjectionMode): Self = this.set("ProjectionMode", value.asInstanceOf[js.Any])
+    def setSecondLightDirection(value: Direction3D): Self = StObject.set(x, "SecondLightDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateAngle(value: EnhancedCustomShapeParameterPair): Self = this.set("RotateAngle", value.asInstanceOf[js.Any])
+    def setSecondLightHarsh(value: Boolean): Self = StObject.set(x, "SecondLightHarsh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationCenter(value: Direction3D): Self = this.set("RotationCenter", value.asInstanceOf[js.Any])
+    def setSecondLightLevel(value: Double): Self = StObject.set(x, "SecondLightLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondLightDirection(value: Direction3D): Self = this.set("SecondLightDirection", value.asInstanceOf[js.Any])
+    def setShadeMode(value: ShadeMode): Self = StObject.set(x, "ShadeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondLightHarsh(value: Boolean): Self = this.set("SecondLightHarsh", value.asInstanceOf[js.Any])
+    def setShininess(value: Double): Self = StObject.set(x, "Shininess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondLightLevel(value: Double): Self = this.set("SecondLightLevel", value.asInstanceOf[js.Any])
+    def setSkew(value: EnhancedCustomShapeParameterPair): Self = StObject.set(x, "Skew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadeMode(value: ShadeMode): Self = this.set("ShadeMode", value.asInstanceOf[js.Any])
+    def setSpecularity(value: Double): Self = StObject.set(x, "Specularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShininess(value: Double): Self = this.set("Shininess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkew(value: EnhancedCustomShapeParameterPair): Self = this.set("Skew", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpecularity(value: Double): Self = this.set("Specularity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewPoint(value: Position3D): Self = this.set("ViewPoint", value.asInstanceOf[js.Any])
+    def setViewPoint(value: Position3D): Self = StObject.set(x, "ViewPoint", value.asInstanceOf[js.Any])
   }
 }

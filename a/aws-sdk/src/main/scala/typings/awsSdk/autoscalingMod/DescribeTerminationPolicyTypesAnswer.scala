@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTerminationPolicyTypesAnswer extends js.Object {
+trait DescribeTerminationPolicyTypesAnswer extends StObject {
   
   /**
     * The termination policies supported by Amazon EC2 Auto Scaling: OldestInstance, OldestLaunchConfiguration, NewestInstance, ClosestToNextInstanceHour, Default, OldestLaunchTemplate, and AllocationStrategy.
@@ -21,27 +22,15 @@ object DescribeTerminationPolicyTypesAnswer {
   }
   
   @scala.inline
-  implicit class DescribeTerminationPolicyTypesAnswerOps[Self <: DescribeTerminationPolicyTypesAnswer] (val x: Self) extends AnyVal {
+  implicit class DescribeTerminationPolicyTypesAnswerMutableBuilder[Self <: DescribeTerminationPolicyTypesAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTerminationPolicyTypes(value: TerminationPolicies): Self = StObject.set(x, "TerminationPolicyTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTerminationPolicyTypesUndefined: Self = StObject.set(x, "TerminationPolicyTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTerminationPolicyTypesVarargs(value: XmlStringMaxLen1600*): Self = this.set("TerminationPolicyTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTerminationPolicyTypes(value: TerminationPolicies): Self = this.set("TerminationPolicyTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminationPolicyTypes: Self = this.set("TerminationPolicyTypes", js.undefined)
+    def setTerminationPolicyTypesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicyTypes", js.Array(value :_*))
   }
 }

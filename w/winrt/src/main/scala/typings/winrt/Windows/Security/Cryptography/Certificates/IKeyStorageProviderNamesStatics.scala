@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKeyStorageProviderNamesStatics extends js.Object {
+trait IKeyStorageProviderNamesStatics extends StObject {
   
   var platformKeyStorageProvider: String = js.native
   
@@ -26,27 +27,15 @@ object IKeyStorageProviderNamesStatics {
   }
   
   @scala.inline
-  implicit class IKeyStorageProviderNamesStaticsOps[Self <: IKeyStorageProviderNamesStatics] (val x: Self) extends AnyVal {
+  implicit class IKeyStorageProviderNamesStaticsMutableBuilder[Self <: IKeyStorageProviderNamesStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlatformKeyStorageProvider(value: String): Self = StObject.set(x, "platformKeyStorageProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSmartcardKeyStorageProvider(value: String): Self = StObject.set(x, "smartcardKeyStorageProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlatformKeyStorageProvider(value: String): Self = this.set("platformKeyStorageProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmartcardKeyStorageProvider(value: String): Self = this.set("smartcardKeyStorageProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftwareKeyStorageProvider(value: String): Self = this.set("softwareKeyStorageProvider", value.asInstanceOf[js.Any])
+    def setSoftwareKeyStorageProvider(value: String): Self = StObject.set(x, "softwareKeyStorageProvider", value.asInstanceOf[js.Any])
   }
 }

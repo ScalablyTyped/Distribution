@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConnection extends js.Object {
+trait NetworkConnection extends StObject {
   
   // Name of the application managing the network connection (for example, Facebook or SMTP).
   var applicationName: js.UndefOr[NullableOption[String]] = js.native
@@ -89,198 +90,186 @@ object NetworkConnection {
   }
   
   @scala.inline
-  implicit class NetworkConnectionOps[Self <: NetworkConnection] (val x: Self) extends AnyVal {
+  implicit class NetworkConnectionMutableBuilder[Self <: NetworkConnection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: NullableOption[String]): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationNameNull: Self = StObject.set(x, "applicationName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
     @scala.inline
-    def setApplicationName(value: NullableOption[String]): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setDestinationAddress(value: NullableOption[String]): Self = StObject.set(x, "destinationAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    def setDestinationAddressNull: Self = StObject.set(x, "destinationAddress", null)
     
     @scala.inline
-    def setApplicationNameNull: Self = this.set("applicationName", null)
+    def setDestinationAddressUndefined: Self = StObject.set(x, "destinationAddress", js.undefined)
     
     @scala.inline
-    def setDestinationAddress(value: NullableOption[String]): Self = this.set("destinationAddress", value.asInstanceOf[js.Any])
+    def setDestinationDomain(value: NullableOption[String]): Self = StObject.set(x, "destinationDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationAddress: Self = this.set("destinationAddress", js.undefined)
+    def setDestinationDomainNull: Self = StObject.set(x, "destinationDomain", null)
     
     @scala.inline
-    def setDestinationAddressNull: Self = this.set("destinationAddress", null)
+    def setDestinationDomainUndefined: Self = StObject.set(x, "destinationDomain", js.undefined)
     
     @scala.inline
-    def setDestinationDomain(value: NullableOption[String]): Self = this.set("destinationDomain", value.asInstanceOf[js.Any])
+    def setDestinationLocation(value: NullableOption[String]): Self = StObject.set(x, "destinationLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationDomain: Self = this.set("destinationDomain", js.undefined)
+    def setDestinationLocationNull: Self = StObject.set(x, "destinationLocation", null)
     
     @scala.inline
-    def setDestinationDomainNull: Self = this.set("destinationDomain", null)
+    def setDestinationLocationUndefined: Self = StObject.set(x, "destinationLocation", js.undefined)
     
     @scala.inline
-    def setDestinationLocation(value: NullableOption[String]): Self = this.set("destinationLocation", value.asInstanceOf[js.Any])
+    def setDestinationPort(value: NullableOption[String]): Self = StObject.set(x, "destinationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationLocation: Self = this.set("destinationLocation", js.undefined)
+    def setDestinationPortNull: Self = StObject.set(x, "destinationPort", null)
     
     @scala.inline
-    def setDestinationLocationNull: Self = this.set("destinationLocation", null)
+    def setDestinationPortUndefined: Self = StObject.set(x, "destinationPort", js.undefined)
     
     @scala.inline
-    def setDestinationPort(value: NullableOption[String]): Self = this.set("destinationPort", value.asInstanceOf[js.Any])
+    def setDestinationUrl(value: NullableOption[String]): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationPort: Self = this.set("destinationPort", js.undefined)
+    def setDestinationUrlNull: Self = StObject.set(x, "destinationUrl", null)
     
     @scala.inline
-    def setDestinationPortNull: Self = this.set("destinationPort", null)
+    def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
     
     @scala.inline
-    def setDestinationUrl(value: NullableOption[String]): Self = this.set("destinationUrl", value.asInstanceOf[js.Any])
+    def setDirection(value: NullableOption[ConnectionDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestinationUrl: Self = this.set("destinationUrl", js.undefined)
+    def setDirectionNull: Self = StObject.set(x, "direction", null)
     
     @scala.inline
-    def setDestinationUrlNull: Self = this.set("destinationUrl", null)
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setDirection(value: NullableOption[ConnectionDirection]): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDomainRegisteredDateTime(value: NullableOption[String]): Self = StObject.set(x, "domainRegisteredDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setDomainRegisteredDateTimeNull: Self = StObject.set(x, "domainRegisteredDateTime", null)
     
     @scala.inline
-    def setDirectionNull: Self = this.set("direction", null)
+    def setDomainRegisteredDateTimeUndefined: Self = StObject.set(x, "domainRegisteredDateTime", js.undefined)
     
     @scala.inline
-    def setDomainRegisteredDateTime(value: NullableOption[String]): Self = this.set("domainRegisteredDateTime", value.asInstanceOf[js.Any])
+    def setLocalDnsName(value: NullableOption[String]): Self = StObject.set(x, "localDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDomainRegisteredDateTime: Self = this.set("domainRegisteredDateTime", js.undefined)
+    def setLocalDnsNameNull: Self = StObject.set(x, "localDnsName", null)
     
     @scala.inline
-    def setDomainRegisteredDateTimeNull: Self = this.set("domainRegisteredDateTime", null)
+    def setLocalDnsNameUndefined: Self = StObject.set(x, "localDnsName", js.undefined)
     
     @scala.inline
-    def setLocalDnsName(value: NullableOption[String]): Self = this.set("localDnsName", value.asInstanceOf[js.Any])
+    def setNatDestinationAddress(value: NullableOption[String]): Self = StObject.set(x, "natDestinationAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalDnsName: Self = this.set("localDnsName", js.undefined)
+    def setNatDestinationAddressNull: Self = StObject.set(x, "natDestinationAddress", null)
     
     @scala.inline
-    def setLocalDnsNameNull: Self = this.set("localDnsName", null)
+    def setNatDestinationAddressUndefined: Self = StObject.set(x, "natDestinationAddress", js.undefined)
     
     @scala.inline
-    def setNatDestinationAddress(value: NullableOption[String]): Self = this.set("natDestinationAddress", value.asInstanceOf[js.Any])
+    def setNatDestinationPort(value: NullableOption[String]): Self = StObject.set(x, "natDestinationPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNatDestinationAddress: Self = this.set("natDestinationAddress", js.undefined)
+    def setNatDestinationPortNull: Self = StObject.set(x, "natDestinationPort", null)
     
     @scala.inline
-    def setNatDestinationAddressNull: Self = this.set("natDestinationAddress", null)
+    def setNatDestinationPortUndefined: Self = StObject.set(x, "natDestinationPort", js.undefined)
     
     @scala.inline
-    def setNatDestinationPort(value: NullableOption[String]): Self = this.set("natDestinationPort", value.asInstanceOf[js.Any])
+    def setNatSourceAddress(value: NullableOption[String]): Self = StObject.set(x, "natSourceAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNatDestinationPort: Self = this.set("natDestinationPort", js.undefined)
+    def setNatSourceAddressNull: Self = StObject.set(x, "natSourceAddress", null)
     
     @scala.inline
-    def setNatDestinationPortNull: Self = this.set("natDestinationPort", null)
+    def setNatSourceAddressUndefined: Self = StObject.set(x, "natSourceAddress", js.undefined)
     
     @scala.inline
-    def setNatSourceAddress(value: NullableOption[String]): Self = this.set("natSourceAddress", value.asInstanceOf[js.Any])
+    def setNatSourcePort(value: NullableOption[String]): Self = StObject.set(x, "natSourcePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNatSourceAddress: Self = this.set("natSourceAddress", js.undefined)
+    def setNatSourcePortNull: Self = StObject.set(x, "natSourcePort", null)
     
     @scala.inline
-    def setNatSourceAddressNull: Self = this.set("natSourceAddress", null)
+    def setNatSourcePortUndefined: Self = StObject.set(x, "natSourcePort", js.undefined)
     
     @scala.inline
-    def setNatSourcePort(value: NullableOption[String]): Self = this.set("natSourcePort", value.asInstanceOf[js.Any])
+    def setProtocol(value: NullableOption[SecurityNetworkProtocol]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNatSourcePort: Self = this.set("natSourcePort", js.undefined)
+    def setProtocolNull: Self = StObject.set(x, "protocol", null)
     
     @scala.inline
-    def setNatSourcePortNull: Self = this.set("natSourcePort", null)
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def setProtocol(value: NullableOption[SecurityNetworkProtocol]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
     @scala.inline
-    def setProtocolNull: Self = this.set("protocol", null)
+    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
     
     @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = this.set("riskScore", value.asInstanceOf[js.Any])
+    def setSourceAddress(value: NullableOption[String]): Self = StObject.set(x, "sourceAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRiskScore: Self = this.set("riskScore", js.undefined)
+    def setSourceAddressNull: Self = StObject.set(x, "sourceAddress", null)
     
     @scala.inline
-    def setRiskScoreNull: Self = this.set("riskScore", null)
+    def setSourceAddressUndefined: Self = StObject.set(x, "sourceAddress", js.undefined)
     
     @scala.inline
-    def setSourceAddress(value: NullableOption[String]): Self = this.set("sourceAddress", value.asInstanceOf[js.Any])
+    def setSourceLocation(value: NullableOption[String]): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceAddress: Self = this.set("sourceAddress", js.undefined)
+    def setSourceLocationNull: Self = StObject.set(x, "sourceLocation", null)
     
     @scala.inline
-    def setSourceAddressNull: Self = this.set("sourceAddress", null)
+    def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
     
     @scala.inline
-    def setSourceLocation(value: NullableOption[String]): Self = this.set("sourceLocation", value.asInstanceOf[js.Any])
+    def setSourcePort(value: NullableOption[String]): Self = StObject.set(x, "sourcePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourceLocation: Self = this.set("sourceLocation", js.undefined)
+    def setSourcePortNull: Self = StObject.set(x, "sourcePort", null)
     
     @scala.inline
-    def setSourceLocationNull: Self = this.set("sourceLocation", null)
+    def setSourcePortUndefined: Self = StObject.set(x, "sourcePort", js.undefined)
     
     @scala.inline
-    def setSourcePort(value: NullableOption[String]): Self = this.set("sourcePort", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[ConnectionStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSourcePort: Self = this.set("sourcePort", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setSourcePortNull: Self = this.set("sourcePort", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setStatus(value: NullableOption[ConnectionStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUrlParameters(value: NullableOption[String]): Self = StObject.set(x, "urlParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUrlParametersNull: Self = StObject.set(x, "urlParameters", null)
     
     @scala.inline
-    def setStatusNull: Self = this.set("status", null)
-    
-    @scala.inline
-    def setUrlParameters(value: NullableOption[String]): Self = this.set("urlParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlParameters: Self = this.set("urlParameters", js.undefined)
-    
-    @scala.inline
-    def setUrlParametersNull: Self = this.set("urlParameters", null)
+    def setUrlParametersUndefined: Self = StObject.set(x, "urlParameters", js.undefined)
   }
 }

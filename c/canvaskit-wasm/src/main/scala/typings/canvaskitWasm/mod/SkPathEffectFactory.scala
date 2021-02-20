@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkPathEffectFactory extends js.Object {
+trait SkPathEffectFactory extends StObject {
   
   /**
     * Returns a PathEffect that can turn sharp corners into rounded corners.

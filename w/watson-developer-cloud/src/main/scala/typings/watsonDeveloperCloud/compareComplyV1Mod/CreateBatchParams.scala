@@ -5,13 +5,14 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.watsonDeveloperCloud.compareComplyV1Mod.CreateBatchConstants.Function
 import typings.watsonDeveloperCloud.compareComplyV1Mod.CreateBatchConstants.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createBatch` operation. */
 @js.native
-trait CreateBatchParams extends js.Object {
+trait CreateBatchParams extends StObject {
   
   /** The Compare and Comply method to run across the submitted input documents. */
   var _function: Function | String = js.native
@@ -58,57 +59,45 @@ object CreateBatchParams {
   }
   
   @scala.inline
-  implicit class CreateBatchParamsOps[Self <: CreateBatchParams] (val x: Self) extends AnyVal {
+  implicit class CreateBatchParamsMutableBuilder[Self <: CreateBatchParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInput_bucket_location(value: String): Self = StObject.set(x, "input_bucket_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_function(value: Function | String): Self = this.set("_function", value.asInstanceOf[js.Any])
+    def setInput_bucket_name(value: String): Self = StObject.set(x, "input_bucket_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_bucket_location(value: String): Self = this.set("input_bucket_location", value.asInstanceOf[js.Any])
+    def setInput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "input_credentials_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_bucket_name(value: String): Self = this.set("input_bucket_name", value.asInstanceOf[js.Any])
+    def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = this.set("input_credentials_file", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def setOutput_bucket_location(value: String): Self = this.set("output_bucket_location", value.asInstanceOf[js.Any])
+    def setOutput_bucket_location(value: String): Self = StObject.set(x, "output_bucket_location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput_bucket_name(value: String): Self = this.set("output_bucket_name", value.asInstanceOf[js.Any])
+    def setOutput_bucket_name(value: String): Self = StObject.set(x, "output_bucket_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = this.set("output_credentials_file", value.asInstanceOf[js.Any])
+    def setOutput_credentials_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "output_credentials_file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def setModel(value: Model | String): Self = this.set("model", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
-    
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def set_function(value: Function | String): Self = StObject.set(x, "_function", value.asInstanceOf[js.Any])
   }
 }

@@ -30,13 +30,14 @@ import typings.mangopay2NodejsSdk.mod.user.UpdateUserNaturalData
 import typings.mangopay2NodejsSdk.mod.user.UserLegalData
 import typings.mangopay2NodejsSdk.mod.user.UserNaturalData
 import typings.mangopay2NodejsSdk.mod.wallet.WalletData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "Users")
 @js.native
-class Users () extends js.Object {
+class Users () extends StObject {
   
   /**
     * Create a new user

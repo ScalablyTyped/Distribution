@@ -3,20 +3,24 @@ package typings.materialGridList
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialGridList.foundationMod.MDCGridListFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/grid-list/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/grid-list/component", "MDCGridList")
   @js.native
-  class MDCGridList () extends MDCComponent[MDCGridListFoundation]
+  class MDCGridList protected () extends MDCComponent[MDCGridListFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCGridListFoundation, args: js.Any*) = this()
+  }
   /* static members */
-  @js.native
-  object MDCGridList extends js.Object {
+  object MDCGridList {
     
+    @JSImport("@material/grid-list/component", "MDCGridList.attachTo")
+    @js.native
     def attachTo(root: Element): MDCGridList = js.native
   }
 }

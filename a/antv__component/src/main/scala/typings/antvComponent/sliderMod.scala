@@ -1,13 +1,13 @@
 package typings.antvComponent
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/slider", JSImport.Namespace)
-@js.native
-object sliderMod extends js.Object {
+object sliderMod {
   
+  @JSImport("@antv/component/lib/slider", "Slider")
   @js.native
   class Slider ()
     extends typings.antvComponent.sliderSliderMod.Slider

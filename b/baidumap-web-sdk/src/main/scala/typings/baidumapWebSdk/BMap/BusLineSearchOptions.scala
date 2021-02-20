@@ -1,12 +1,13 @@
 package typings.baidumapWebSdk.BMap
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BusLineSearchOptions extends js.Object {
+trait BusLineSearchOptions extends StObject {
   
   var onBusLineHtmlSet: js.UndefOr[js.Function1[/* container */ HTMLElement, Unit]] = js.native
   
@@ -31,60 +32,48 @@ object BusLineSearchOptions {
   }
   
   @scala.inline
-  implicit class BusLineSearchOptionsOps[Self <: BusLineSearchOptions] (val x: Self) extends AnyVal {
+  implicit class BusLineSearchOptionsMutableBuilder[Self <: BusLineSearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnBusLineHtmlSet(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "onBusLineHtmlSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBusLineHtmlSetUndefined: Self = StObject.set(x, "onBusLineHtmlSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBusListHtmlSet(value: /* container */ HTMLElement => Unit): Self = StObject.set(x, "onBusListHtmlSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBusLineHtmlSet(value: /* container */ HTMLElement => Unit): Self = this.set("onBusLineHtmlSet", js.Any.fromFunction1(value))
+    def setOnBusListHtmlSetUndefined: Self = StObject.set(x, "onBusListHtmlSet", js.undefined)
     
     @scala.inline
-    def deleteOnBusLineHtmlSet: Self = this.set("onBusLineHtmlSet", js.undefined)
+    def setOnGetBusLineComplete(value: /* rs */ BusLine => Unit): Self = StObject.set(x, "onGetBusLineComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnBusListHtmlSet(value: /* container */ HTMLElement => Unit): Self = this.set("onBusListHtmlSet", js.Any.fromFunction1(value))
+    def setOnGetBusLineCompleteUndefined: Self = StObject.set(x, "onGetBusLineComplete", js.undefined)
     
     @scala.inline
-    def deleteOnBusListHtmlSet: Self = this.set("onBusListHtmlSet", js.undefined)
+    def setOnGetBusListComplete(value: /* rs */ BusListResult => Unit): Self = StObject.set(x, "onGetBusListComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGetBusLineComplete(value: /* rs */ BusLine => Unit): Self = this.set("onGetBusLineComplete", js.Any.fromFunction1(value))
+    def setOnGetBusListCompleteUndefined: Self = StObject.set(x, "onGetBusListComplete", js.undefined)
     
     @scala.inline
-    def deleteOnGetBusLineComplete: Self = this.set("onGetBusLineComplete", js.undefined)
+    def setOnMarkersSet(value: /* sts */ js.Array[Marker] => Unit): Self = StObject.set(x, "onMarkersSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGetBusListComplete(value: /* rs */ BusListResult => Unit): Self = this.set("onGetBusListComplete", js.Any.fromFunction1(value))
+    def setOnMarkersSetUndefined: Self = StObject.set(x, "onMarkersSet", js.undefined)
     
     @scala.inline
-    def deleteOnGetBusListComplete: Self = this.set("onGetBusListComplete", js.undefined)
+    def setOnPolylinesSet(value: /* ply */ Polyline => Unit): Self = StObject.set(x, "onPolylinesSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnMarkersSet(value: /* sts */ js.Array[Marker] => Unit): Self = this.set("onMarkersSet", js.Any.fromFunction1(value))
+    def setOnPolylinesSetUndefined: Self = StObject.set(x, "onPolylinesSet", js.undefined)
     
     @scala.inline
-    def deleteOnMarkersSet: Self = this.set("onMarkersSet", js.undefined)
+    def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPolylinesSet(value: /* ply */ Polyline => Unit): Self = this.set("onPolylinesSet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnPolylinesSet: Self = this.set("onPolylinesSet", js.undefined)
-    
-    @scala.inline
-    def setRenderOptions(value: RenderOptions): Self = this.set("renderOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderOptions: Self = this.set("renderOptions", js.undefined)
+    def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
   }
 }

@@ -1,16 +1,15 @@
 package typings.qlikVisualizationextensions
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GlobalAPI")
-@js.native
-object GlobalAPI extends js.Object {
+object GlobalAPI {
   
   @js.native
-  trait IGlobal extends js.Object {
+  trait IGlobal extends StObject {
     
     /**
       * Cancels an ongoing reload. The reload of the app is stopped.

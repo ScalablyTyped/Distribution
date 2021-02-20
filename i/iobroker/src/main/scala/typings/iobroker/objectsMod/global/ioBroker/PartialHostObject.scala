@@ -4,6 +4,7 @@ import typings.iobroker.anon.PartialHostCommon
 import typings.iobroker.anon.PartialHostNative
 import typings.iobroker.iobrokerStrings.host
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,72 +40,60 @@ object PartialHostObject {
   }
   
   @scala.inline
-  implicit class PartialHostObjectOps[Self <: PartialHostObject] (val x: Self) extends AnyVal {
+  implicit class PartialHostObjectMutableBuilder[Self <: PartialHostObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcl(value: ObjectACL): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommon(value: PartialHostCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def setCommonUndefined: Self = StObject.set(x, "common", js.undefined)
     
     @scala.inline
-    def delete_id: Self = this.set("_id", js.undefined)
+    def setEnums(value: Record[String, String]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcl(value: ObjectACL): Self = this.set("acl", value.asInstanceOf[js.Any])
+    def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
     @scala.inline
-    def deleteAcl: Self = this.set("acl", js.undefined)
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommon(value: PartialHostCommon): Self = this.set("common", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteCommon: Self = this.set("common", js.undefined)
+    def setNative(value: PartialHostNative): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnums(value: Record[String, String]): Self = this.set("enums", value.asInstanceOf[js.Any])
+    def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)
     
     @scala.inline
-    def deleteEnums: Self = this.set("enums", js.undefined)
+    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setType(value: host): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNative(value: PartialHostNative): Self = this.set("native", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteNative: Self = this.set("native", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTs(value: Double): Self = this.set("ts", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteTs: Self = this.set("ts", js.undefined)
+    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: host): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
   }
 }

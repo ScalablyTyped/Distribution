@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenCardData extends js.Object {
+trait OpenCardData extends StObject {
   
   /**
     * 需要打开的卡券 Id
@@ -26,30 +27,18 @@ object OpenCardData {
   }
   
   @scala.inline
-  implicit class OpenCardDataOps[Self <: OpenCardData] (val x: Self) extends AnyVal {
+  implicit class OpenCardDataMutableBuilder[Self <: OpenCardData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardId(value: String): Self = this.set("cardId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCardId: Self = this.set("cardId", js.undefined)
-    
-    @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

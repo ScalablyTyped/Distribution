@@ -1,11 +1,12 @@
 package typings.breeze.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceName extends js.Object {
+trait ResourceName extends StObject {
   
   var dataService: typings.breeze.breeze.DataService = js.native
   
@@ -20,24 +21,12 @@ object ResourceName {
   }
   
   @scala.inline
-  implicit class ResourceNameOps[Self <: ResourceName] (val x: Self) extends AnyVal {
+  implicit class ResourceNameMutableBuilder[Self <: ResourceName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataService(value: typings.breeze.breeze.DataService): Self = this.set("dataService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

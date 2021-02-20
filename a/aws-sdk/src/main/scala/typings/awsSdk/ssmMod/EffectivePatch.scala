@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EffectivePatch extends js.Object {
+trait EffectivePatch extends StObject {
   
   /**
     * Provides metadata for a patch, including information such as the KB ID, severity, classification and a URL for where more information can be obtained about the patch.
@@ -26,30 +27,18 @@ object EffectivePatch {
   }
   
   @scala.inline
-  implicit class EffectivePatchOps[Self <: EffectivePatch] (val x: Self) extends AnyVal {
+  implicit class EffectivePatchMutableBuilder[Self <: EffectivePatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPatch(value: Patch): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPatchStatus(value: PatchStatus): Self = StObject.set(x, "PatchStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatchStatusUndefined: Self = StObject.set(x, "PatchStatus", js.undefined)
     
     @scala.inline
-    def setPatch(value: Patch): Self = this.set("Patch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatch: Self = this.set("Patch", js.undefined)
-    
-    @scala.inline
-    def setPatchStatus(value: PatchStatus): Self = this.set("PatchStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatchStatus: Self = this.set("PatchStatus", js.undefined)
+    def setPatchUndefined: Self = StObject.set(x, "Patch", js.undefined)
   }
 }

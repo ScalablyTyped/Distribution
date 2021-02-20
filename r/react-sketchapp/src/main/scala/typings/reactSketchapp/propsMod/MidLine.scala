@@ -1,5 +1,6 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactSketchapp.reactSketchappStrings.sharp
   - typings.reactSketchapp.reactSketchappStrings.smooth
 */
-trait MidLine extends js.Object
+trait MidLine extends StObject
 object MidLine {
   
   @scala.inline

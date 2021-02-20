@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
   - typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`2`
 */
-trait TextDocumentSyncKind extends js.Object
-@JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind")
-@js.native
-object TextDocumentSyncKind extends js.Object {
+trait TextDocumentSyncKind extends StObject
+object TextDocumentSyncKind {
   
   /**
     * Documents are synced by always sending the full content
     * of the document.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind.Full")
+  @js.native
   val Full: /* 1 */ Double = js.native
   
   /**
@@ -25,10 +26,14 @@ object TextDocumentSyncKind extends js.Object {
     * After that only incremental updates to the document are
     * send.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind.Incremental")
+  @js.native
   val Incremental: /* 2 */ Double = js.native
   
   /**
     * Documents should not be synced at all.
     */
+  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentSyncKind.None")
+  @js.native
   val None: /* 0 */ Double = js.native
 }

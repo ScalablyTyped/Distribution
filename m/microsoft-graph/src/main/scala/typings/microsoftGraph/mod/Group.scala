@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -299,663 +300,651 @@ object Group {
   }
   
   @scala.inline
-  implicit class GroupOps[Self <: Group] (val x: Self) extends AnyVal {
+  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptedSenders(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "acceptedSenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptedSendersNull: Self = StObject.set(x, "acceptedSenders", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptedSendersUndefined: Self = StObject.set(x, "acceptedSenders", js.undefined)
     
     @scala.inline
-    def setAcceptedSendersVarargs(value: DirectoryObject*): Self = this.set("acceptedSenders", js.Array(value :_*))
+    def setAcceptedSendersVarargs(value: DirectoryObject*): Self = StObject.set(x, "acceptedSenders", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptedSenders(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("acceptedSenders", value.asInstanceOf[js.Any])
+    def setAllowExternalSenders(value: NullableOption[Boolean]): Self = StObject.set(x, "allowExternalSenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceptedSenders: Self = this.set("acceptedSenders", js.undefined)
+    def setAllowExternalSendersNull: Self = StObject.set(x, "allowExternalSenders", null)
     
     @scala.inline
-    def setAcceptedSendersNull: Self = this.set("acceptedSenders", null)
+    def setAllowExternalSendersUndefined: Self = StObject.set(x, "allowExternalSenders", js.undefined)
     
     @scala.inline
-    def setAllowExternalSenders(value: NullableOption[Boolean]): Self = this.set("allowExternalSenders", value.asInstanceOf[js.Any])
+    def setAppRoleAssignments(value: NullableOption[js.Array[AppRoleAssignment]]): Self = StObject.set(x, "appRoleAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowExternalSenders: Self = this.set("allowExternalSenders", js.undefined)
+    def setAppRoleAssignmentsNull: Self = StObject.set(x, "appRoleAssignments", null)
     
     @scala.inline
-    def setAllowExternalSendersNull: Self = this.set("allowExternalSenders", null)
+    def setAppRoleAssignmentsUndefined: Self = StObject.set(x, "appRoleAssignments", js.undefined)
     
     @scala.inline
-    def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = this.set("appRoleAssignments", js.Array(value :_*))
+    def setAppRoleAssignmentsVarargs(value: AppRoleAssignment*): Self = StObject.set(x, "appRoleAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setAppRoleAssignments(value: NullableOption[js.Array[AppRoleAssignment]]): Self = this.set("appRoleAssignments", value.asInstanceOf[js.Any])
+    def setAssignedLabels(value: NullableOption[js.Array[AssignedLabel]]): Self = StObject.set(x, "assignedLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppRoleAssignments: Self = this.set("appRoleAssignments", js.undefined)
+    def setAssignedLabelsNull: Self = StObject.set(x, "assignedLabels", null)
     
     @scala.inline
-    def setAppRoleAssignmentsNull: Self = this.set("appRoleAssignments", null)
+    def setAssignedLabelsUndefined: Self = StObject.set(x, "assignedLabels", js.undefined)
     
     @scala.inline
-    def setAssignedLabelsVarargs(value: AssignedLabel*): Self = this.set("assignedLabels", js.Array(value :_*))
+    def setAssignedLabelsVarargs(value: AssignedLabel*): Self = StObject.set(x, "assignedLabels", js.Array(value :_*))
     
     @scala.inline
-    def setAssignedLabels(value: NullableOption[js.Array[AssignedLabel]]): Self = this.set("assignedLabels", value.asInstanceOf[js.Any])
+    def setAssignedLicenses(value: NullableOption[js.Array[AssignedLicense]]): Self = StObject.set(x, "assignedLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedLabels: Self = this.set("assignedLabels", js.undefined)
+    def setAssignedLicensesNull: Self = StObject.set(x, "assignedLicenses", null)
     
     @scala.inline
-    def setAssignedLabelsNull: Self = this.set("assignedLabels", null)
+    def setAssignedLicensesUndefined: Self = StObject.set(x, "assignedLicenses", js.undefined)
     
     @scala.inline
-    def setAssignedLicensesVarargs(value: AssignedLicense*): Self = this.set("assignedLicenses", js.Array(value :_*))
+    def setAssignedLicensesVarargs(value: AssignedLicense*): Self = StObject.set(x, "assignedLicenses", js.Array(value :_*))
     
     @scala.inline
-    def setAssignedLicenses(value: NullableOption[js.Array[AssignedLicense]]): Self = this.set("assignedLicenses", value.asInstanceOf[js.Any])
+    def setAutoSubscribeNewMembers(value: NullableOption[Boolean]): Self = StObject.set(x, "autoSubscribeNewMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignedLicenses: Self = this.set("assignedLicenses", js.undefined)
+    def setAutoSubscribeNewMembersNull: Self = StObject.set(x, "autoSubscribeNewMembers", null)
     
     @scala.inline
-    def setAssignedLicensesNull: Self = this.set("assignedLicenses", null)
+    def setAutoSubscribeNewMembersUndefined: Self = StObject.set(x, "autoSubscribeNewMembers", js.undefined)
     
     @scala.inline
-    def setAutoSubscribeNewMembers(value: NullableOption[Boolean]): Self = this.set("autoSubscribeNewMembers", value.asInstanceOf[js.Any])
+    def setCalendar(value: NullableOption[Calendar]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoSubscribeNewMembers: Self = this.set("autoSubscribeNewMembers", js.undefined)
+    def setCalendarNull: Self = StObject.set(x, "calendar", null)
     
     @scala.inline
-    def setAutoSubscribeNewMembersNull: Self = this.set("autoSubscribeNewMembers", null)
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def setCalendar(value: NullableOption[Calendar]): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setCalendarView(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "calendarView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setCalendarViewNull: Self = StObject.set(x, "calendarView", null)
     
     @scala.inline
-    def setCalendarNull: Self = this.set("calendar", null)
+    def setCalendarViewUndefined: Self = StObject.set(x, "calendarView", js.undefined)
     
     @scala.inline
-    def setCalendarViewVarargs(value: Event*): Self = this.set("calendarView", js.Array(value :_*))
+    def setCalendarViewVarargs(value: Event*): Self = StObject.set(x, "calendarView", js.Array(value :_*))
     
     @scala.inline
-    def setCalendarView(value: NullableOption[js.Array[Event]]): Self = this.set("calendarView", value.asInstanceOf[js.Any])
+    def setClassification(value: NullableOption[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendarView: Self = this.set("calendarView", js.undefined)
+    def setClassificationNull: Self = StObject.set(x, "classification", null)
     
     @scala.inline
-    def setCalendarViewNull: Self = this.set("calendarView", null)
+    def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
     
     @scala.inline
-    def setClassification(value: NullableOption[String]): Self = this.set("classification", value.asInstanceOf[js.Any])
+    def setConversations(value: NullableOption[js.Array[Conversation]]): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassification: Self = this.set("classification", js.undefined)
+    def setConversationsNull: Self = StObject.set(x, "conversations", null)
     
     @scala.inline
-    def setClassificationNull: Self = this.set("classification", null)
+    def setConversationsUndefined: Self = StObject.set(x, "conversations", js.undefined)
     
     @scala.inline
-    def setConversationsVarargs(value: Conversation*): Self = this.set("conversations", js.Array(value :_*))
+    def setConversationsVarargs(value: Conversation*): Self = StObject.set(x, "conversations", js.Array(value :_*))
     
     @scala.inline
-    def setConversations(value: NullableOption[js.Array[Conversation]]): Self = this.set("conversations", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConversations: Self = this.set("conversations", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def setConversationsNull: Self = this.set("conversations", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setCreatedOnBehalfOf(value: NullableOption[DirectoryObject]): Self = StObject.set(x, "createdOnBehalfOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setCreatedOnBehalfOfNull: Self = StObject.set(x, "createdOnBehalfOf", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setCreatedOnBehalfOfUndefined: Self = StObject.set(x, "createdOnBehalfOf", js.undefined)
     
     @scala.inline
-    def setCreatedOnBehalfOf(value: NullableOption[DirectoryObject]): Self = this.set("createdOnBehalfOf", value.asInstanceOf[js.Any])
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedOnBehalfOf: Self = this.set("createdOnBehalfOf", js.undefined)
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def setCreatedOnBehalfOfNull: Self = this.set("createdOnBehalfOf", null)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDrive(value: NullableOption[Drive]): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDriveNull: Self = StObject.set(x, "drive", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     @scala.inline
-    def setDrive(value: NullableOption[Drive]): Self = this.set("drive", value.asInstanceOf[js.Any])
+    def setDrives(value: NullableOption[js.Array[Drive]]): Self = StObject.set(x, "drives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrive: Self = this.set("drive", js.undefined)
+    def setDrivesNull: Self = StObject.set(x, "drives", null)
     
     @scala.inline
-    def setDriveNull: Self = this.set("drive", null)
+    def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
     
     @scala.inline
-    def setDrivesVarargs(value: Drive*): Self = this.set("drives", js.Array(value :_*))
+    def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value :_*))
     
     @scala.inline
-    def setDrives(value: NullableOption[js.Array[Drive]]): Self = this.set("drives", value.asInstanceOf[js.Any])
+    def setEvents(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDrives: Self = this.set("drives", js.undefined)
+    def setEventsNull: Self = StObject.set(x, "events", null)
     
     @scala.inline
-    def setDrivesNull: Self = this.set("drives", null)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEvents(value: NullableOption[js.Array[Event]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
     @scala.inline
-    def setEventsNull: Self = this.set("events", null)
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     @scala.inline
-    def setExpirationDateTimeNull: Self = this.set("expirationDateTime", null)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setGroupLifecyclePolicies(value: NullableOption[js.Array[GroupLifecyclePolicy]]): Self = StObject.set(x, "groupLifecyclePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setGroupLifecyclePoliciesNull: Self = StObject.set(x, "groupLifecyclePolicies", null)
     
     @scala.inline
-    def setExtensionsNull: Self = this.set("extensions", null)
+    def setGroupLifecyclePoliciesUndefined: Self = StObject.set(x, "groupLifecyclePolicies", js.undefined)
     
     @scala.inline
-    def setGroupLifecyclePoliciesVarargs(value: GroupLifecyclePolicy*): Self = this.set("groupLifecyclePolicies", js.Array(value :_*))
+    def setGroupLifecyclePoliciesVarargs(value: GroupLifecyclePolicy*): Self = StObject.set(x, "groupLifecyclePolicies", js.Array(value :_*))
     
     @scala.inline
-    def setGroupLifecyclePolicies(value: NullableOption[js.Array[GroupLifecyclePolicy]]): Self = this.set("groupLifecyclePolicies", value.asInstanceOf[js.Any])
+    def setGroupTypes(value: js.Array[String]): Self = StObject.set(x, "groupTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupLifecyclePolicies: Self = this.set("groupLifecyclePolicies", js.undefined)
+    def setGroupTypesUndefined: Self = StObject.set(x, "groupTypes", js.undefined)
     
     @scala.inline
-    def setGroupLifecyclePoliciesNull: Self = this.set("groupLifecyclePolicies", null)
+    def setGroupTypesVarargs(value: String*): Self = StObject.set(x, "groupTypes", js.Array(value :_*))
     
     @scala.inline
-    def setGroupTypesVarargs(value: String*): Self = this.set("groupTypes", js.Array(value :_*))
+    def setHasMembersWithLicenseErrors(value: NullableOption[Boolean]): Self = StObject.set(x, "hasMembersWithLicenseErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupTypes(value: js.Array[String]): Self = this.set("groupTypes", value.asInstanceOf[js.Any])
+    def setHasMembersWithLicenseErrorsNull: Self = StObject.set(x, "hasMembersWithLicenseErrors", null)
     
     @scala.inline
-    def deleteGroupTypes: Self = this.set("groupTypes", js.undefined)
+    def setHasMembersWithLicenseErrorsUndefined: Self = StObject.set(x, "hasMembersWithLicenseErrors", js.undefined)
     
     @scala.inline
-    def setHasMembersWithLicenseErrors(value: NullableOption[Boolean]): Self = this.set("hasMembersWithLicenseErrors", value.asInstanceOf[js.Any])
+    def setHideFromAddressLists(value: NullableOption[Boolean]): Self = StObject.set(x, "hideFromAddressLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasMembersWithLicenseErrors: Self = this.set("hasMembersWithLicenseErrors", js.undefined)
+    def setHideFromAddressListsNull: Self = StObject.set(x, "hideFromAddressLists", null)
     
     @scala.inline
-    def setHasMembersWithLicenseErrorsNull: Self = this.set("hasMembersWithLicenseErrors", null)
+    def setHideFromAddressListsUndefined: Self = StObject.set(x, "hideFromAddressLists", js.undefined)
     
     @scala.inline
-    def setHideFromAddressLists(value: NullableOption[Boolean]): Self = this.set("hideFromAddressLists", value.asInstanceOf[js.Any])
+    def setHideFromOutlookClients(value: NullableOption[Boolean]): Self = StObject.set(x, "hideFromOutlookClients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideFromAddressLists: Self = this.set("hideFromAddressLists", js.undefined)
+    def setHideFromOutlookClientsNull: Self = StObject.set(x, "hideFromOutlookClients", null)
     
     @scala.inline
-    def setHideFromAddressListsNull: Self = this.set("hideFromAddressLists", null)
+    def setHideFromOutlookClientsUndefined: Self = StObject.set(x, "hideFromOutlookClients", js.undefined)
     
     @scala.inline
-    def setHideFromOutlookClients(value: NullableOption[Boolean]): Self = this.set("hideFromOutlookClients", value.asInstanceOf[js.Any])
+    def setIsArchived(value: NullableOption[Boolean]): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHideFromOutlookClients: Self = this.set("hideFromOutlookClients", js.undefined)
+    def setIsArchivedNull: Self = StObject.set(x, "isArchived", null)
     
     @scala.inline
-    def setHideFromOutlookClientsNull: Self = this.set("hideFromOutlookClients", null)
+    def setIsArchivedUndefined: Self = StObject.set(x, "isArchived", js.undefined)
     
     @scala.inline
-    def setIsArchived(value: NullableOption[Boolean]): Self = this.set("isArchived", value.asInstanceOf[js.Any])
+    def setIsSubscribedByMail(value: NullableOption[Boolean]): Self = StObject.set(x, "isSubscribedByMail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsArchived: Self = this.set("isArchived", js.undefined)
+    def setIsSubscribedByMailNull: Self = StObject.set(x, "isSubscribedByMail", null)
     
     @scala.inline
-    def setIsArchivedNull: Self = this.set("isArchived", null)
+    def setIsSubscribedByMailUndefined: Self = StObject.set(x, "isSubscribedByMail", js.undefined)
     
     @scala.inline
-    def setIsSubscribedByMail(value: NullableOption[Boolean]): Self = this.set("isSubscribedByMail", value.asInstanceOf[js.Any])
+    def setLicenseProcessingState(value: NullableOption[LicenseProcessingState]): Self = StObject.set(x, "licenseProcessingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsSubscribedByMail: Self = this.set("isSubscribedByMail", js.undefined)
+    def setLicenseProcessingStateNull: Self = StObject.set(x, "licenseProcessingState", null)
     
     @scala.inline
-    def setIsSubscribedByMailNull: Self = this.set("isSubscribedByMail", null)
+    def setLicenseProcessingStateUndefined: Self = StObject.set(x, "licenseProcessingState", js.undefined)
     
     @scala.inline
-    def setLicenseProcessingState(value: NullableOption[LicenseProcessingState]): Self = this.set("licenseProcessingState", value.asInstanceOf[js.Any])
+    def setMail(value: NullableOption[String]): Self = StObject.set(x, "mail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLicenseProcessingState: Self = this.set("licenseProcessingState", js.undefined)
+    def setMailEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "mailEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicenseProcessingStateNull: Self = this.set("licenseProcessingState", null)
+    def setMailEnabledNull: Self = StObject.set(x, "mailEnabled", null)
     
     @scala.inline
-    def setMail(value: NullableOption[String]): Self = this.set("mail", value.asInstanceOf[js.Any])
+    def setMailEnabledUndefined: Self = StObject.set(x, "mailEnabled", js.undefined)
     
     @scala.inline
-    def deleteMail: Self = this.set("mail", js.undefined)
+    def setMailNickname(value: NullableOption[String]): Self = StObject.set(x, "mailNickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailNull: Self = this.set("mail", null)
+    def setMailNicknameNull: Self = StObject.set(x, "mailNickname", null)
     
     @scala.inline
-    def setMailEnabled(value: NullableOption[Boolean]): Self = this.set("mailEnabled", value.asInstanceOf[js.Any])
+    def setMailNicknameUndefined: Self = StObject.set(x, "mailNickname", js.undefined)
     
     @scala.inline
-    def deleteMailEnabled: Self = this.set("mailEnabled", js.undefined)
+    def setMailNull: Self = StObject.set(x, "mail", null)
     
     @scala.inline
-    def setMailEnabledNull: Self = this.set("mailEnabled", null)
+    def setMailUndefined: Self = StObject.set(x, "mail", js.undefined)
     
     @scala.inline
-    def setMailNickname(value: NullableOption[String]): Self = this.set("mailNickname", value.asInstanceOf[js.Any])
+    def setMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "memberOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMailNickname: Self = this.set("mailNickname", js.undefined)
+    def setMemberOfNull: Self = StObject.set(x, "memberOf", null)
     
     @scala.inline
-    def setMailNicknameNull: Self = this.set("mailNickname", null)
+    def setMemberOfUndefined: Self = StObject.set(x, "memberOf", js.undefined)
     
     @scala.inline
-    def setMemberOfVarargs(value: DirectoryObject*): Self = this.set("memberOf", js.Array(value :_*))
+    def setMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "memberOf", js.Array(value :_*))
     
     @scala.inline
-    def setMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("memberOf", value.asInstanceOf[js.Any])
+    def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemberOf: Self = this.set("memberOf", js.undefined)
+    def setMembersNull: Self = StObject.set(x, "members", null)
     
     @scala.inline
-    def setMemberOfNull: Self = this.set("memberOf", null)
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def setMembersVarargs(value: DirectoryObject*): Self = this.set("members", js.Array(value :_*))
+    def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setMembersWithLicenseErrors(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "membersWithLicenseErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setMembersWithLicenseErrorsNull: Self = StObject.set(x, "membersWithLicenseErrors", null)
     
     @scala.inline
-    def setMembersNull: Self = this.set("members", null)
+    def setMembersWithLicenseErrorsUndefined: Self = StObject.set(x, "membersWithLicenseErrors", js.undefined)
     
     @scala.inline
-    def setMembersWithLicenseErrorsVarargs(value: DirectoryObject*): Self = this.set("membersWithLicenseErrors", js.Array(value :_*))
+    def setMembersWithLicenseErrorsVarargs(value: DirectoryObject*): Self = StObject.set(x, "membersWithLicenseErrors", js.Array(value :_*))
     
     @scala.inline
-    def setMembersWithLicenseErrors(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("membersWithLicenseErrors", value.asInstanceOf[js.Any])
+    def setMembershipRule(value: NullableOption[String]): Self = StObject.set(x, "membershipRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMembersWithLicenseErrors: Self = this.set("membersWithLicenseErrors", js.undefined)
+    def setMembershipRuleNull: Self = StObject.set(x, "membershipRule", null)
     
     @scala.inline
-    def setMembersWithLicenseErrorsNull: Self = this.set("membersWithLicenseErrors", null)
+    def setMembershipRuleProcessingState(value: NullableOption[String]): Self = StObject.set(x, "membershipRuleProcessingState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembershipRule(value: NullableOption[String]): Self = this.set("membershipRule", value.asInstanceOf[js.Any])
+    def setMembershipRuleProcessingStateNull: Self = StObject.set(x, "membershipRuleProcessingState", null)
     
     @scala.inline
-    def deleteMembershipRule: Self = this.set("membershipRule", js.undefined)
+    def setMembershipRuleProcessingStateUndefined: Self = StObject.set(x, "membershipRuleProcessingState", js.undefined)
     
     @scala.inline
-    def setMembershipRuleNull: Self = this.set("membershipRule", null)
+    def setMembershipRuleUndefined: Self = StObject.set(x, "membershipRule", js.undefined)
     
     @scala.inline
-    def setMembershipRuleProcessingState(value: NullableOption[String]): Self = this.set("membershipRuleProcessingState", value.asInstanceOf[js.Any])
+    def setOnPremisesDomainName(value: NullableOption[String]): Self = StObject.set(x, "onPremisesDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMembershipRuleProcessingState: Self = this.set("membershipRuleProcessingState", js.undefined)
+    def setOnPremisesDomainNameNull: Self = StObject.set(x, "onPremisesDomainName", null)
     
     @scala.inline
-    def setMembershipRuleProcessingStateNull: Self = this.set("membershipRuleProcessingState", null)
+    def setOnPremisesDomainNameUndefined: Self = StObject.set(x, "onPremisesDomainName", js.undefined)
     
     @scala.inline
-    def setOnPremisesDomainName(value: NullableOption[String]): Self = this.set("onPremisesDomainName", value.asInstanceOf[js.Any])
+    def setOnPremisesLastSyncDateTime(value: NullableOption[String]): Self = StObject.set(x, "onPremisesLastSyncDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesDomainName: Self = this.set("onPremisesDomainName", js.undefined)
+    def setOnPremisesLastSyncDateTimeNull: Self = StObject.set(x, "onPremisesLastSyncDateTime", null)
     
     @scala.inline
-    def setOnPremisesDomainNameNull: Self = this.set("onPremisesDomainName", null)
+    def setOnPremisesLastSyncDateTimeUndefined: Self = StObject.set(x, "onPremisesLastSyncDateTime", js.undefined)
     
     @scala.inline
-    def setOnPremisesLastSyncDateTime(value: NullableOption[String]): Self = this.set("onPremisesLastSyncDateTime", value.asInstanceOf[js.Any])
+    def setOnPremisesNetBiosName(value: NullableOption[String]): Self = StObject.set(x, "onPremisesNetBiosName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesLastSyncDateTime: Self = this.set("onPremisesLastSyncDateTime", js.undefined)
+    def setOnPremisesNetBiosNameNull: Self = StObject.set(x, "onPremisesNetBiosName", null)
     
     @scala.inline
-    def setOnPremisesLastSyncDateTimeNull: Self = this.set("onPremisesLastSyncDateTime", null)
+    def setOnPremisesNetBiosNameUndefined: Self = StObject.set(x, "onPremisesNetBiosName", js.undefined)
     
     @scala.inline
-    def setOnPremisesNetBiosName(value: NullableOption[String]): Self = this.set("onPremisesNetBiosName", value.asInstanceOf[js.Any])
+    def setOnPremisesProvisioningErrors(value: NullableOption[js.Array[OnPremisesProvisioningError]]): Self = StObject.set(x, "onPremisesProvisioningErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesNetBiosName: Self = this.set("onPremisesNetBiosName", js.undefined)
+    def setOnPremisesProvisioningErrorsNull: Self = StObject.set(x, "onPremisesProvisioningErrors", null)
     
     @scala.inline
-    def setOnPremisesNetBiosNameNull: Self = this.set("onPremisesNetBiosName", null)
+    def setOnPremisesProvisioningErrorsUndefined: Self = StObject.set(x, "onPremisesProvisioningErrors", js.undefined)
     
     @scala.inline
-    def setOnPremisesProvisioningErrorsVarargs(value: OnPremisesProvisioningError*): Self = this.set("onPremisesProvisioningErrors", js.Array(value :_*))
+    def setOnPremisesProvisioningErrorsVarargs(value: OnPremisesProvisioningError*): Self = StObject.set(x, "onPremisesProvisioningErrors", js.Array(value :_*))
     
     @scala.inline
-    def setOnPremisesProvisioningErrors(value: NullableOption[js.Array[OnPremisesProvisioningError]]): Self = this.set("onPremisesProvisioningErrors", value.asInstanceOf[js.Any])
+    def setOnPremisesSamAccountName(value: NullableOption[String]): Self = StObject.set(x, "onPremisesSamAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesProvisioningErrors: Self = this.set("onPremisesProvisioningErrors", js.undefined)
+    def setOnPremisesSamAccountNameNull: Self = StObject.set(x, "onPremisesSamAccountName", null)
     
     @scala.inline
-    def setOnPremisesProvisioningErrorsNull: Self = this.set("onPremisesProvisioningErrors", null)
+    def setOnPremisesSamAccountNameUndefined: Self = StObject.set(x, "onPremisesSamAccountName", js.undefined)
     
     @scala.inline
-    def setOnPremisesSamAccountName(value: NullableOption[String]): Self = this.set("onPremisesSamAccountName", value.asInstanceOf[js.Any])
+    def setOnPremisesSecurityIdentifier(value: NullableOption[String]): Self = StObject.set(x, "onPremisesSecurityIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesSamAccountName: Self = this.set("onPremisesSamAccountName", js.undefined)
+    def setOnPremisesSecurityIdentifierNull: Self = StObject.set(x, "onPremisesSecurityIdentifier", null)
     
     @scala.inline
-    def setOnPremisesSamAccountNameNull: Self = this.set("onPremisesSamAccountName", null)
+    def setOnPremisesSecurityIdentifierUndefined: Self = StObject.set(x, "onPremisesSecurityIdentifier", js.undefined)
     
     @scala.inline
-    def setOnPremisesSecurityIdentifier(value: NullableOption[String]): Self = this.set("onPremisesSecurityIdentifier", value.asInstanceOf[js.Any])
+    def setOnPremisesSyncEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "onPremisesSyncEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesSecurityIdentifier: Self = this.set("onPremisesSecurityIdentifier", js.undefined)
+    def setOnPremisesSyncEnabledNull: Self = StObject.set(x, "onPremisesSyncEnabled", null)
     
     @scala.inline
-    def setOnPremisesSecurityIdentifierNull: Self = this.set("onPremisesSecurityIdentifier", null)
+    def setOnPremisesSyncEnabledUndefined: Self = StObject.set(x, "onPremisesSyncEnabled", js.undefined)
     
     @scala.inline
-    def setOnPremisesSyncEnabled(value: NullableOption[Boolean]): Self = this.set("onPremisesSyncEnabled", value.asInstanceOf[js.Any])
+    def setOnenote(value: NullableOption[Onenote]): Self = StObject.set(x, "onenote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnPremisesSyncEnabled: Self = this.set("onPremisesSyncEnabled", js.undefined)
+    def setOnenoteNull: Self = StObject.set(x, "onenote", null)
     
     @scala.inline
-    def setOnPremisesSyncEnabledNull: Self = this.set("onPremisesSyncEnabled", null)
+    def setOnenoteUndefined: Self = StObject.set(x, "onenote", js.undefined)
     
     @scala.inline
-    def setOnenote(value: NullableOption[Onenote]): Self = this.set("onenote", value.asInstanceOf[js.Any])
+    def setOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnenote: Self = this.set("onenote", js.undefined)
+    def setOwnersNull: Self = StObject.set(x, "owners", null)
     
     @scala.inline
-    def setOnenoteNull: Self = this.set("onenote", null)
+    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
     @scala.inline
-    def setOwnersVarargs(value: DirectoryObject*): Self = this.set("owners", js.Array(value :_*))
+    def setOwnersVarargs(value: DirectoryObject*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwners(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    def setPermissionGrants(value: NullableOption[js.Array[ResourceSpecificPermissionGrant]]): Self = StObject.set(x, "permissionGrants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwners: Self = this.set("owners", js.undefined)
+    def setPermissionGrantsNull: Self = StObject.set(x, "permissionGrants", null)
     
     @scala.inline
-    def setOwnersNull: Self = this.set("owners", null)
+    def setPermissionGrantsUndefined: Self = StObject.set(x, "permissionGrants", js.undefined)
     
     @scala.inline
-    def setPermissionGrantsVarargs(value: ResourceSpecificPermissionGrant*): Self = this.set("permissionGrants", js.Array(value :_*))
+    def setPermissionGrantsVarargs(value: ResourceSpecificPermissionGrant*): Self = StObject.set(x, "permissionGrants", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionGrants(value: NullableOption[js.Array[ResourceSpecificPermissionGrant]]): Self = this.set("permissionGrants", value.asInstanceOf[js.Any])
+    def setPhoto(value: NullableOption[ProfilePhoto]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissionGrants: Self = this.set("permissionGrants", js.undefined)
+    def setPhotoNull: Self = StObject.set(x, "photo", null)
     
     @scala.inline
-    def setPermissionGrantsNull: Self = this.set("permissionGrants", null)
+    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def setPhoto(value: NullableOption[ProfilePhoto]): Self = this.set("photo", value.asInstanceOf[js.Any])
+    def setPhotos(value: NullableOption[js.Array[ProfilePhoto]]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhoto: Self = this.set("photo", js.undefined)
+    def setPhotosNull: Self = StObject.set(x, "photos", null)
     
     @scala.inline
-    def setPhotoNull: Self = this.set("photo", null)
+    def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
     @scala.inline
-    def setPhotosVarargs(value: ProfilePhoto*): Self = this.set("photos", js.Array(value :_*))
+    def setPhotosVarargs(value: ProfilePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
     
     @scala.inline
-    def setPhotos(value: NullableOption[js.Array[ProfilePhoto]]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    def setPlanner(value: NullableOption[PlannerGroup]): Self = StObject.set(x, "planner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhotos: Self = this.set("photos", js.undefined)
+    def setPlannerNull: Self = StObject.set(x, "planner", null)
     
     @scala.inline
-    def setPhotosNull: Self = this.set("photos", null)
+    def setPlannerUndefined: Self = StObject.set(x, "planner", js.undefined)
     
     @scala.inline
-    def setPlanner(value: NullableOption[PlannerGroup]): Self = this.set("planner", value.asInstanceOf[js.Any])
+    def setPreferredDataLocation(value: NullableOption[String]): Self = StObject.set(x, "preferredDataLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlanner: Self = this.set("planner", js.undefined)
+    def setPreferredDataLocationNull: Self = StObject.set(x, "preferredDataLocation", null)
     
     @scala.inline
-    def setPlannerNull: Self = this.set("planner", null)
+    def setPreferredDataLocationUndefined: Self = StObject.set(x, "preferredDataLocation", js.undefined)
     
     @scala.inline
-    def setPreferredDataLocation(value: NullableOption[String]): Self = this.set("preferredDataLocation", value.asInstanceOf[js.Any])
+    def setPreferredLanguage(value: NullableOption[String]): Self = StObject.set(x, "preferredLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredDataLocation: Self = this.set("preferredDataLocation", js.undefined)
+    def setPreferredLanguageNull: Self = StObject.set(x, "preferredLanguage", null)
     
     @scala.inline
-    def setPreferredDataLocationNull: Self = this.set("preferredDataLocation", null)
+    def setPreferredLanguageUndefined: Self = StObject.set(x, "preferredLanguage", js.undefined)
     
     @scala.inline
-    def setPreferredLanguage(value: NullableOption[String]): Self = this.set("preferredLanguage", value.asInstanceOf[js.Any])
+    def setProxyAddresses(value: js.Array[String]): Self = StObject.set(x, "proxyAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreferredLanguage: Self = this.set("preferredLanguage", js.undefined)
+    def setProxyAddressesUndefined: Self = StObject.set(x, "proxyAddresses", js.undefined)
     
     @scala.inline
-    def setPreferredLanguageNull: Self = this.set("preferredLanguage", null)
+    def setProxyAddressesVarargs(value: String*): Self = StObject.set(x, "proxyAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setProxyAddressesVarargs(value: String*): Self = this.set("proxyAddresses", js.Array(value :_*))
+    def setRejectedSenders(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "rejectedSenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyAddresses(value: js.Array[String]): Self = this.set("proxyAddresses", value.asInstanceOf[js.Any])
+    def setRejectedSendersNull: Self = StObject.set(x, "rejectedSenders", null)
     
     @scala.inline
-    def deleteProxyAddresses: Self = this.set("proxyAddresses", js.undefined)
+    def setRejectedSendersUndefined: Self = StObject.set(x, "rejectedSenders", js.undefined)
     
     @scala.inline
-    def setRejectedSendersVarargs(value: DirectoryObject*): Self = this.set("rejectedSenders", js.Array(value :_*))
+    def setRejectedSendersVarargs(value: DirectoryObject*): Self = StObject.set(x, "rejectedSenders", js.Array(value :_*))
     
     @scala.inline
-    def setRejectedSenders(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("rejectedSenders", value.asInstanceOf[js.Any])
+    def setRenewedDateTime(value: NullableOption[String]): Self = StObject.set(x, "renewedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRejectedSenders: Self = this.set("rejectedSenders", js.undefined)
+    def setRenewedDateTimeNull: Self = StObject.set(x, "renewedDateTime", null)
     
     @scala.inline
-    def setRejectedSendersNull: Self = this.set("rejectedSenders", null)
+    def setRenewedDateTimeUndefined: Self = StObject.set(x, "renewedDateTime", js.undefined)
     
     @scala.inline
-    def setRenewedDateTime(value: NullableOption[String]): Self = this.set("renewedDateTime", value.asInstanceOf[js.Any])
+    def setSecurityEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "securityEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenewedDateTime: Self = this.set("renewedDateTime", js.undefined)
+    def setSecurityEnabledNull: Self = StObject.set(x, "securityEnabled", null)
     
     @scala.inline
-    def setRenewedDateTimeNull: Self = this.set("renewedDateTime", null)
+    def setSecurityEnabledUndefined: Self = StObject.set(x, "securityEnabled", js.undefined)
     
     @scala.inline
-    def setSecurityEnabled(value: NullableOption[Boolean]): Self = this.set("securityEnabled", value.asInstanceOf[js.Any])
+    def setSecurityIdentifier(value: NullableOption[String]): Self = StObject.set(x, "securityIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityEnabled: Self = this.set("securityEnabled", js.undefined)
+    def setSecurityIdentifierNull: Self = StObject.set(x, "securityIdentifier", null)
     
     @scala.inline
-    def setSecurityEnabledNull: Self = this.set("securityEnabled", null)
+    def setSecurityIdentifierUndefined: Self = StObject.set(x, "securityIdentifier", js.undefined)
     
     @scala.inline
-    def setSecurityIdentifier(value: NullableOption[String]): Self = this.set("securityIdentifier", value.asInstanceOf[js.Any])
+    def setSettings(value: NullableOption[js.Array[GroupSetting]]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityIdentifier: Self = this.set("securityIdentifier", js.undefined)
+    def setSettingsNull: Self = StObject.set(x, "settings", null)
     
     @scala.inline
-    def setSecurityIdentifierNull: Self = this.set("securityIdentifier", null)
+    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
     @scala.inline
-    def setSettingsVarargs(value: GroupSetting*): Self = this.set("settings", js.Array(value :_*))
+    def setSettingsVarargs(value: GroupSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
     
     @scala.inline
-    def setSettings(value: NullableOption[js.Array[GroupSetting]]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    def setSites(value: NullableOption[js.Array[Site]]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSettings: Self = this.set("settings", js.undefined)
+    def setSitesNull: Self = StObject.set(x, "sites", null)
     
     @scala.inline
-    def setSettingsNull: Self = this.set("settings", null)
+    def setSitesUndefined: Self = StObject.set(x, "sites", js.undefined)
     
     @scala.inline
-    def setSitesVarargs(value: Site*): Self = this.set("sites", js.Array(value :_*))
+    def setSitesVarargs(value: Site*): Self = StObject.set(x, "sites", js.Array(value :_*))
     
     @scala.inline
-    def setSites(value: NullableOption[js.Array[Site]]): Self = this.set("sites", value.asInstanceOf[js.Any])
+    def setTeam(value: NullableOption[Team]): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSites: Self = this.set("sites", js.undefined)
+    def setTeamNull: Self = StObject.set(x, "team", null)
     
     @scala.inline
-    def setSitesNull: Self = this.set("sites", null)
+    def setTeamUndefined: Self = StObject.set(x, "team", js.undefined)
     
     @scala.inline
-    def setTeam(value: NullableOption[Team]): Self = this.set("team", value.asInstanceOf[js.Any])
+    def setTheme(value: NullableOption[String]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTeam: Self = this.set("team", js.undefined)
+    def setThemeNull: Self = StObject.set(x, "theme", null)
     
     @scala.inline
-    def setTeamNull: Self = this.set("team", null)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def setTheme(value: NullableOption[String]): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setThreads(value: NullableOption[js.Array[ConversationThread]]): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThreadsNull: Self = StObject.set(x, "threads", null)
     
     @scala.inline
-    def setThemeNull: Self = this.set("theme", null)
+    def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
     @scala.inline
-    def setThreadsVarargs(value: ConversationThread*): Self = this.set("threads", js.Array(value :_*))
+    def setThreadsVarargs(value: ConversationThread*): Self = StObject.set(x, "threads", js.Array(value :_*))
     
     @scala.inline
-    def setThreads(value: NullableOption[js.Array[ConversationThread]]): Self = this.set("threads", value.asInstanceOf[js.Any])
+    def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMemberOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreads: Self = this.set("threads", js.undefined)
+    def setTransitiveMemberOfNull: Self = StObject.set(x, "transitiveMemberOf", null)
     
     @scala.inline
-    def setThreadsNull: Self = this.set("threads", null)
+    def setTransitiveMemberOfUndefined: Self = StObject.set(x, "transitiveMemberOf", js.undefined)
     
     @scala.inline
-    def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = this.set("transitiveMemberOf", js.Array(value :_*))
+    def setTransitiveMemberOfVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMemberOf", js.Array(value :_*))
     
     @scala.inline
-    def setTransitiveMemberOf(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("transitiveMemberOf", value.asInstanceOf[js.Any])
+    def setTransitiveMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "transitiveMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitiveMemberOf: Self = this.set("transitiveMemberOf", js.undefined)
+    def setTransitiveMembersNull: Self = StObject.set(x, "transitiveMembers", null)
     
     @scala.inline
-    def setTransitiveMemberOfNull: Self = this.set("transitiveMemberOf", null)
+    def setTransitiveMembersUndefined: Self = StObject.set(x, "transitiveMembers", js.undefined)
     
     @scala.inline
-    def setTransitiveMembersVarargs(value: DirectoryObject*): Self = this.set("transitiveMembers", js.Array(value :_*))
+    def setTransitiveMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "transitiveMembers", js.Array(value :_*))
     
     @scala.inline
-    def setTransitiveMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("transitiveMembers", value.asInstanceOf[js.Any])
+    def setUnseenCount(value: NullableOption[Double]): Self = StObject.set(x, "unseenCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitiveMembers: Self = this.set("transitiveMembers", js.undefined)
+    def setUnseenCountNull: Self = StObject.set(x, "unseenCount", null)
     
     @scala.inline
-    def setTransitiveMembersNull: Self = this.set("transitiveMembers", null)
+    def setUnseenCountUndefined: Self = StObject.set(x, "unseenCount", js.undefined)
     
     @scala.inline
-    def setUnseenCount(value: NullableOption[Double]): Self = this.set("unseenCount", value.asInstanceOf[js.Any])
+    def setVisibility(value: NullableOption[String]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnseenCount: Self = this.set("unseenCount", js.undefined)
+    def setVisibilityNull: Self = StObject.set(x, "visibility", null)
     
     @scala.inline
-    def setUnseenCountNull: Self = this.set("unseenCount", null)
-    
-    @scala.inline
-    def setVisibility(value: NullableOption[String]): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
-    
-    @scala.inline
-    def setVisibilityNull: Self = this.set("visibility", null)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

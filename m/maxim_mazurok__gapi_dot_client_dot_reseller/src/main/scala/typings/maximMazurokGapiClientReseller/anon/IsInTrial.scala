@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientReseller.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsInTrial extends js.Object {
+trait IsInTrial extends StObject {
   
   /**
     * Determines if a subscription's plan is in a 30-day free trial or not:
@@ -26,30 +27,18 @@ object IsInTrial {
   }
   
   @scala.inline
-  implicit class IsInTrialOps[Self <: IsInTrial] (val x: Self) extends AnyVal {
+  implicit class IsInTrialMutableBuilder[Self <: IsInTrial] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsInTrial(value: Boolean): Self = StObject.set(x, "isInTrial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInTrialUndefined: Self = StObject.set(x, "isInTrial", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrialEndTime(value: String): Self = StObject.set(x, "trialEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInTrial(value: Boolean): Self = this.set("isInTrial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInTrial: Self = this.set("isInTrial", js.undefined)
-    
-    @scala.inline
-    def setTrialEndTime(value: String): Self = this.set("trialEndTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrialEndTime: Self = this.set("trialEndTime", js.undefined)
+    def setTrialEndTimeUndefined: Self = StObject.set(x, "trialEndTime", js.undefined)
   }
 }

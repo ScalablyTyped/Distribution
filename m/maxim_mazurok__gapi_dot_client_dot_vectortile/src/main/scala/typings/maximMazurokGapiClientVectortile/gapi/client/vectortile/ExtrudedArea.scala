@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtrudedArea extends js.Object {
+trait ExtrudedArea extends StObject {
   
   /** The area representing the footprint of the extruded area. */
   var area: js.UndefOr[Area] = js.native
@@ -28,36 +29,24 @@ object ExtrudedArea {
   }
   
   @scala.inline
-  implicit class ExtrudedAreaOps[Self <: ExtrudedArea] (val x: Self) extends AnyVal {
+  implicit class ExtrudedAreaMutableBuilder[Self <: ExtrudedArea] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxZ(value: Double): Self = StObject.set(x, "maxZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: Area): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setMaxZUndefined: Self = StObject.set(x, "maxZ", js.undefined)
     
     @scala.inline
-    def deleteArea: Self = this.set("area", js.undefined)
+    def setMinZ(value: Double): Self = StObject.set(x, "minZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZ(value: Double): Self = this.set("maxZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxZ: Self = this.set("maxZ", js.undefined)
-    
-    @scala.inline
-    def setMinZ(value: Double): Self = this.set("minZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinZ: Self = this.set("minZ", js.undefined)
+    def setMinZUndefined: Self = StObject.set(x, "minZ", js.undefined)
   }
 }

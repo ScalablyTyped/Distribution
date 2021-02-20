@@ -2,6 +2,7 @@ package typings.reactNative.mod
 
 import typings.react.mod.Component
 import typings.reactNative.anon.ContentLength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,9 +43,15 @@ class ListView ()
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
 }
 /* static members */
-@JSImport("react-native", "ListView")
-@js.native
-object ListView extends js.Object {
+object ListView {
   
-  var DataSource: ListViewDataSource = js.native
+  @JSImport("react-native", "ListView")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native", "ListView.DataSource")
+  @js.native
+  def DataSource: ListViewDataSource = js.native
+  @scala.inline
+  def DataSource_=(x: ListViewDataSource): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
 }

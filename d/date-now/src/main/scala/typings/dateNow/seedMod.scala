@@ -1,12 +1,13 @@
 package typings.dateNow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-now/seed", JSImport.Namespace)
-@js.native
-object seedMod extends js.Object {
+object seedMod {
   
+  @JSImport("date-now/seed", JSImport.Namespace)
+  @js.native
   def apply(seed: Double): Double = js.native
 }

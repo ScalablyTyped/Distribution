@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +16,19 @@ class GenericController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "GenericController")
-@js.native
-object GenericController extends js.Object {
+object GenericController {
   
   /**
     * Base Url for the controller model.
     */
+  @JSImport("babylonjs/Legacy/legacy", "GenericController.MODEL_BASE_URL")
+  @js.native
   val MODEL_BASE_URL: String = js.native
   
   /**
     * File name for the controller model.
     */
+  @JSImport("babylonjs/Legacy/legacy", "GenericController.MODEL_FILENAME")
+  @js.native
   val MODEL_FILENAME: String = js.native
 }

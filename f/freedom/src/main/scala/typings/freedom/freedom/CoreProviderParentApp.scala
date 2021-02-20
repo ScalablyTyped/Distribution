@@ -2,6 +2,7 @@ package typings.freedom.freedom
 
 import typings.freedom.anon.RemoveEventListener
 import typings.freedom.anon.Views
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // object that describes the parent module the core provider instance has been
 // created for.
 @js.native
-trait CoreProviderParentApp extends js.Object {
+trait CoreProviderParentApp extends StObject {
   
   var config: Views = js.native
   
@@ -27,27 +28,15 @@ object CoreProviderParentApp {
   }
   
   @scala.inline
-  implicit class CoreProviderParentAppOps[Self <: CoreProviderParentApp] (val x: Self) extends AnyVal {
+  implicit class CoreProviderParentAppMutableBuilder[Self <: CoreProviderParentApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: Views): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobal(value: RemoveEventListener): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfig(value: Views): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlobal(value: RemoveEventListener): Self = this.set("global", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManifestId(value: String): Self = this.set("manifestId", value.asInstanceOf[js.Any])
+    def setManifestId(value: String): Self = StObject.set(x, "manifestId", value.asInstanceOf[js.Any])
   }
 }

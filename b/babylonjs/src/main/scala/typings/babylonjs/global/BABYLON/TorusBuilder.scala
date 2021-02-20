@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.anon.DiameterFrontUVs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TorusBuilder ()
   extends typings.babylonjs.BABYLON.TorusBuilder
 /* static members */
-@JSGlobal("BABYLON.TorusBuilder")
-@js.native
-object TorusBuilder extends js.Object {
+object TorusBuilder {
   
   /**
     * Creates a torus mesh
@@ -28,5 +27,7 @@ object TorusBuilder extends js.Object {
     * @returns the torus mesh
     * @see https://doc.babylonjs.com/how_to/set_shapes#torus
     */
+  @JSGlobal("BABYLON.TorusBuilder.CreateTorus")
+  @js.native
   def CreateTorus(name: String, options: DiameterFrontUVs, scene: js.Any): typings.babylonjs.BABYLON.Mesh = js.native
 }

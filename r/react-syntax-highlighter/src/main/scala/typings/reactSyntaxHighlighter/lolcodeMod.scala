@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/lolcode", JSImport.Namespace)
-@js.native
-object lolcodeMod extends js.Object {
+object lolcodeMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/lolcode", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

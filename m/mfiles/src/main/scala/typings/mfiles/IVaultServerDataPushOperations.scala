@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultServerDataPushOperations extends js.Object {
+trait IVaultServerDataPushOperations extends StObject {
   
   def CloneVaultForServerDataPush(ServerDataPushSink: IServerDataPushSink): IVault = js.native
   
@@ -35,36 +36,24 @@ object IVaultServerDataPushOperations {
   }
   
   @scala.inline
-  implicit class IVaultServerDataPushOperationsOps[Self <: IVaultServerDataPushOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultServerDataPushOperationsMutableBuilder[Self <: IVaultServerDataPushOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneVaultForServerDataPush(value: IServerDataPushSink => IVault): Self = StObject.set(x, "CloneVaultForServerDataPush", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSendCancel(value: Double => Unit): Self = StObject.set(x, "SendCancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSendError(value: (Double, String) => Unit): Self = StObject.set(x, "SendError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCloneVaultForServerDataPush(value: IServerDataPushSink => IVault): Self = this.set("CloneVaultForServerDataPush", js.Any.fromFunction1(value))
+    def setSendHeartbeat(value: Double => Unit): Self = StObject.set(x, "SendHeartbeat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSendCancel(value: Double => Unit): Self = this.set("SendCancel", js.Any.fromFunction1(value))
+    def setSendResponse(value: (Double, String) => Unit): Self = StObject.set(x, "SendResponse", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSendError(value: (Double, String) => Unit): Self = this.set("SendError", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSendHeartbeat(value: Double => Unit): Self = this.set("SendHeartbeat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendResponse(value: (Double, String) => Unit): Self = this.set("SendResponse", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetServerDataPushSink(value: IServerDataPushSink => Unit): Self = this.set("SetServerDataPushSink", js.Any.fromFunction1(value))
+    def setSetServerDataPushSink(value: IServerDataPushSink => Unit): Self = StObject.set(x, "SetServerDataPushSink", js.Any.fromFunction1(value))
   }
 }

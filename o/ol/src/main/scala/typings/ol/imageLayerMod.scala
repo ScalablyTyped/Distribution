@@ -3,13 +3,18 @@ package typings.ol
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/canvas/ImageLayer", JSImport.Namespace)
-@js.native
-object imageLayerMod extends js.Object {
+object imageLayerMod {
+  
+  @JSImport("ol/renderer/canvas/ImageLayer", JSImport.Default)
+  @js.native
+  class default protected () extends CanvasImageLayerRenderer {
+    def this(imageLayer: typings.ol.imageMod.default) = this()
+  }
   
   @js.native
   trait CanvasImageLayerRenderer
@@ -18,10 +23,5 @@ object imageLayerMod extends js.Object {
     def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
     
     var image_ : typings.ol.imageBaseMod.default = js.native
-  }
-  
-  @js.native
-  class default protected () extends CanvasImageLayerRenderer {
-    def this(imageLayer: typings.ol.imageMod.default) = this()
   }
 }

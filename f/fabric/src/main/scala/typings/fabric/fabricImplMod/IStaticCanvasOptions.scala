@@ -2,12 +2,13 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Tl
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStaticCanvasOptions extends js.Object {
+trait IStaticCanvasOptions extends StObject {
   
   /**
     * Indicates whether the browser can be scrolled when using a touchscreen and dragging on the canvas
@@ -174,135 +175,123 @@ object IStaticCanvasOptions {
   }
   
   @scala.inline
-  implicit class IStaticCanvasOptionsOps[Self <: IStaticCanvasOptions] (val x: Self) extends AnyVal {
+  implicit class IStaticCanvasOptionsMutableBuilder[Self <: IStaticCanvasOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowTouchScrolling(value: Boolean): Self = StObject.set(x, "allowTouchScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowTouchScrollingUndefined: Self = StObject.set(x, "allowTouchScrolling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: String | Pattern): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTouchScrolling(value: Boolean): Self = this.set("allowTouchScrolling", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAllowTouchScrolling: Self = this.set("allowTouchScrolling", js.undefined)
+    def setBackgroundImage(value: Image | String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String | Pattern): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBackgroundVpt(value: Boolean): Self = StObject.set(x, "backgroundVpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundImage(value: Image | String): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    def setBackgroundVptUndefined: Self = StObject.set(x, "backgroundVpt", js.undefined)
     
     @scala.inline
-    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    def setClipPath(value: Object): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundVpt(value: Boolean): Self = this.set("backgroundVpt", value.asInstanceOf[js.Any])
+    def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
     @scala.inline
-    def deleteBackgroundVpt: Self = this.set("backgroundVpt", js.undefined)
+    def setClipTo(value: /* context */ CanvasRenderingContext2D => Unit): Self = StObject.set(x, "clipTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClipPath(value: Object): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    def setClipToUndefined: Self = StObject.set(x, "clipTo", js.undefined)
     
     @scala.inline
-    def deleteClipPath: Self = this.set("clipPath", js.undefined)
+    def setControlsAboveOverlay(value: Boolean): Self = StObject.set(x, "controlsAboveOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClipTo(value: /* context */ CanvasRenderingContext2D => Unit): Self = this.set("clipTo", js.Any.fromFunction1(value))
+    def setControlsAboveOverlayUndefined: Self = StObject.set(x, "controlsAboveOverlay", js.undefined)
     
     @scala.inline
-    def deleteClipTo: Self = this.set("clipTo", js.undefined)
+    def setEnableRetinaScaling(value: Boolean): Self = StObject.set(x, "enableRetinaScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlsAboveOverlay(value: Boolean): Self = this.set("controlsAboveOverlay", value.asInstanceOf[js.Any])
+    def setEnableRetinaScalingUndefined: Self = StObject.set(x, "enableRetinaScaling", js.undefined)
     
     @scala.inline
-    def deleteControlsAboveOverlay: Self = this.set("controlsAboveOverlay", js.undefined)
+    def setImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRetinaScaling(value: Boolean): Self = this.set("enableRetinaScaling", value.asInstanceOf[js.Any])
+    def setImageSmoothingEnabledUndefined: Self = StObject.set(x, "imageSmoothingEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnableRetinaScaling: Self = this.set("enableRetinaScaling", js.undefined)
+    def setIncludeDefaultValues(value: Boolean): Self = StObject.set(x, "includeDefaultValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSmoothingEnabled(value: Boolean): Self = this.set("imageSmoothingEnabled", value.asInstanceOf[js.Any])
+    def setIncludeDefaultValuesUndefined: Self = StObject.set(x, "includeDefaultValues", js.undefined)
     
     @scala.inline
-    def deleteImageSmoothingEnabled: Self = this.set("imageSmoothingEnabled", js.undefined)
+    def setOverlayColor(value: String | Pattern): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDefaultValues(value: Boolean): Self = this.set("includeDefaultValues", value.asInstanceOf[js.Any])
+    def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
     
     @scala.inline
-    def deleteIncludeDefaultValues: Self = this.set("includeDefaultValues", js.undefined)
+    def setOverlayImage(value: Image): Self = StObject.set(x, "overlayImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayColor(value: String | Pattern): Self = this.set("overlayColor", value.asInstanceOf[js.Any])
+    def setOverlayImageUndefined: Self = StObject.set(x, "overlayImage", js.undefined)
     
     @scala.inline
-    def deleteOverlayColor: Self = this.set("overlayColor", js.undefined)
+    def setOverlayVpt(value: Boolean): Self = StObject.set(x, "overlayVpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayImage(value: Image): Self = this.set("overlayImage", value.asInstanceOf[js.Any])
+    def setOverlayVptUndefined: Self = StObject.set(x, "overlayVpt", js.undefined)
     
     @scala.inline
-    def deleteOverlayImage: Self = this.set("overlayImage", js.undefined)
+    def setRenderOnAddRemove(value: Boolean): Self = StObject.set(x, "renderOnAddRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayVpt(value: Boolean): Self = this.set("overlayVpt", value.asInstanceOf[js.Any])
+    def setRenderOnAddRemoveUndefined: Self = StObject.set(x, "renderOnAddRemove", js.undefined)
     
     @scala.inline
-    def deleteOverlayVpt: Self = this.set("overlayVpt", js.undefined)
+    def setSkipOffscreen(value: Boolean): Self = StObject.set(x, "skipOffscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderOnAddRemove(value: Boolean): Self = this.set("renderOnAddRemove", value.asInstanceOf[js.Any])
+    def setSkipOffscreenUndefined: Self = StObject.set(x, "skipOffscreen", js.undefined)
     
     @scala.inline
-    def deleteRenderOnAddRemove: Self = this.set("renderOnAddRemove", js.undefined)
+    def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipOffscreen(value: Boolean): Self = this.set("skipOffscreen", value.asInstanceOf[js.Any])
+    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
     
     @scala.inline
-    def deleteSkipOffscreen: Self = this.set("skipOffscreen", js.undefined)
+    def setSvgViewportTransformation(value: Boolean): Self = StObject.set(x, "svgViewportTransformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateful(value: Boolean): Self = this.set("stateful", value.asInstanceOf[js.Any])
+    def setSvgViewportTransformationUndefined: Self = StObject.set(x, "svgViewportTransformation", js.undefined)
     
     @scala.inline
-    def deleteStateful: Self = this.set("stateful", js.undefined)
+    def setViewportTransform(value: js.Array[Double]): Self = StObject.set(x, "viewportTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvgViewportTransformation(value: Boolean): Self = this.set("svgViewportTransformation", value.asInstanceOf[js.Any])
+    def setViewportTransformUndefined: Self = StObject.set(x, "viewportTransform", js.undefined)
     
     @scala.inline
-    def deleteSvgViewportTransformation: Self = this.set("svgViewportTransformation", js.undefined)
+    def setViewportTransformVarargs(value: Double*): Self = StObject.set(x, "viewportTransform", js.Array(value :_*))
     
     @scala.inline
-    def setViewportTransformVarargs(value: Double*): Self = this.set("viewportTransform", js.Array(value :_*))
+    def setVptCoords(value: Tl): Self = StObject.set(x, "vptCoords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportTransform(value: js.Array[Double]): Self = this.set("viewportTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewportTransform: Self = this.set("viewportTransform", js.undefined)
-    
-    @scala.inline
-    def setVptCoords(value: Tl): Self = this.set("vptCoords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVptCoords: Self = this.set("vptCoords", js.undefined)
+    def setVptCoordsUndefined: Self = StObject.set(x, "vptCoords", js.undefined)
   }
 }

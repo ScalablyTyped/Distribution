@@ -1,11 +1,12 @@
 package typings.iobroker.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Execute extends js.Object {
+trait Execute extends StObject {
   
   var execute: Boolean = js.native
   
@@ -22,27 +23,15 @@ object Execute {
   }
   
   @scala.inline
-  implicit class ExecuteOps[Self <: Execute] (val x: Self) extends AnyVal {
+  implicit class ExecuteMutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttp(value: Boolean): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExecute(value: Boolean): Self = this.set("execute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHttp(value: Boolean): Self = this.set("http", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSendto(value: Boolean): Self = this.set("sendto", value.asInstanceOf[js.Any])
+    def setSendto(value: Boolean): Self = StObject.set(x, "sendto", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MonitoringJobDefinition extends js.Object {
+trait MonitoringJobDefinition extends StObject {
   
   /**
     * Baseline configuration used to validate that the data conforms to the specified constraints and statistics
@@ -67,60 +68,48 @@ object MonitoringJobDefinition {
   }
   
   @scala.inline
-  implicit class MonitoringJobDefinitionOps[Self <: MonitoringJobDefinition] (val x: Self) extends AnyVal {
+  implicit class MonitoringJobDefinitionMutableBuilder[Self <: MonitoringJobDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaselineConfig(value: MonitoringBaselineConfig): Self = StObject.set(x, "BaselineConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaselineConfigUndefined: Self = StObject.set(x, "BaselineConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnvironment(value: MonitoringEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringAppSpecification(value: MonitoringAppSpecification): Self = this.set("MonitoringAppSpecification", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
     @scala.inline
-    def setMonitoringInputsVarargs(value: MonitoringInput*): Self = this.set("MonitoringInputs", js.Array(value :_*))
+    def setMonitoringAppSpecification(value: MonitoringAppSpecification): Self = StObject.set(x, "MonitoringAppSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringInputs(value: MonitoringInputs): Self = this.set("MonitoringInputs", value.asInstanceOf[js.Any])
+    def setMonitoringInputs(value: MonitoringInputs): Self = StObject.set(x, "MonitoringInputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringOutputConfig(value: MonitoringOutputConfig): Self = this.set("MonitoringOutputConfig", value.asInstanceOf[js.Any])
+    def setMonitoringInputsVarargs(value: MonitoringInput*): Self = StObject.set(x, "MonitoringInputs", js.Array(value :_*))
     
     @scala.inline
-    def setMonitoringResources(value: MonitoringResources): Self = this.set("MonitoringResources", value.asInstanceOf[js.Any])
+    def setMonitoringOutputConfig(value: MonitoringOutputConfig): Self = StObject.set(x, "MonitoringOutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setMonitoringResources(value: MonitoringResources): Self = StObject.set(x, "MonitoringResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineConfig(value: MonitoringBaselineConfig): Self = this.set("BaselineConfig", value.asInstanceOf[js.Any])
+    def setNetworkConfig(value: NetworkConfig): Self = StObject.set(x, "NetworkConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaselineConfig: Self = this.set("BaselineConfig", js.undefined)
+    def setNetworkConfigUndefined: Self = StObject.set(x, "NetworkConfig", js.undefined)
     
     @scala.inline
-    def setEnvironment(value: MonitoringEnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    def setStoppingCondition(value: MonitoringStoppingCondition): Self = StObject.set(x, "StoppingCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkConfig(value: NetworkConfig): Self = this.set("NetworkConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkConfig: Self = this.set("NetworkConfig", js.undefined)
-    
-    @scala.inline
-    def setStoppingCondition(value: MonitoringStoppingCondition): Self = this.set("StoppingCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoppingCondition: Self = this.set("StoppingCondition", js.undefined)
+    def setStoppingConditionUndefined: Self = StObject.set(x, "StoppingCondition", js.undefined)
   }
 }

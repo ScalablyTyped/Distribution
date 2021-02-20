@@ -1,11 +1,12 @@
 package typings.satnav
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INavigationOptions extends js.Object {
+trait INavigationOptions extends StObject {
   
   var directions: js.UndefOr[js.Function1[/* params */ js.Any, _]] = js.native
   
@@ -22,39 +23,27 @@ object INavigationOptions {
   }
   
   @scala.inline
-  implicit class INavigationOptionsOps[Self <: INavigationOptions] (val x: Self) extends AnyVal {
+  implicit class INavigationOptionsMutableBuilder[Self <: INavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirections(value: /* params */ js.Any => _): Self = StObject.set(x, "directions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: /* params */ js.Any => _): Self = this.set("directions", js.Any.fromFunction1(value))
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteDirections: Self = this.set("directions", js.undefined)
+    def setTitle(value: String | Callback): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setTitleFunction0(value: () => Unit): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setTitleFunction0(value: () => Unit): Self = this.set("title", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String | Callback): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

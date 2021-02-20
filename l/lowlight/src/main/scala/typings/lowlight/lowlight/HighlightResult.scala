@@ -1,11 +1,12 @@
 package typings.lowlight.lowlight
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightResult extends js.Object {
+trait HighlightResult extends StObject {
   
   var language: String = js.native
   
@@ -22,30 +23,18 @@ object HighlightResult {
   }
   
   @scala.inline
-  implicit class HighlightResultOps[Self <: HighlightResult] (val x: Self) extends AnyVal {
+  implicit class HighlightResultMutableBuilder[Self <: HighlightResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: js.Array[HastNode]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelevance(value: Double): Self = this.set("relevance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueVarargs(value: HastNode*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: js.Array[HastNode]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueVarargs(value: HastNode*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

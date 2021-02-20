@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Folder extends js.Object {
+trait Folder extends StObject {
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
@@ -100,116 +101,104 @@ object Folder {
   }
   
   @scala.inline
-  implicit class FolderOps[Self <: Folder] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class FolderMutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-    ): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def setFilter(value: /* Use this object to create a filtered view of the items in a folder. */ Filter): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilter(value: /* Use this object to create a filtered view of the items in a folder. */ Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFolderId(value: String): Self = this.set("folderId", value.asInstanceOf[js.Any])
+    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFolderId: Self = this.set("folderId", js.undefined)
+    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
     @scala.inline
-    def setFolderItemsVarargs(value: (/* Information about folder item results. */ FolderItemV2)*): Self = this.set("folderItems", js.Array(value :_*))
+    def setFolderItems(value: js.Array[/* Information about folder item results. */ FolderItemV2]): Self = StObject.set(x, "folderItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderItems(value: js.Array[/* Information about folder item results. */ FolderItemV2]): Self = this.set("folderItems", value.asInstanceOf[js.Any])
+    def setFolderItemsUndefined: Self = StObject.set(x, "folderItems", js.undefined)
     
     @scala.inline
-    def deleteFolderItems: Self = this.set("folderItems", js.undefined)
+    def setFolderItemsVarargs(value: (/* Information about folder item results. */ FolderItemV2)*): Self = StObject.set(x, "folderItems", js.Array(value :_*))
     
     @scala.inline
-    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = this.set("folders", js.Array(value :_*))
+    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = this.set("folders", value.asInstanceOf[js.Any])
+    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
     @scala.inline
-    def deleteFolders: Self = this.set("folders", js.undefined)
+    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
     @scala.inline
-    def setHasAccess(value: String): Self = this.set("hasAccess", value.asInstanceOf[js.Any])
+    def setHasAccess(value: String): Self = StObject.set(x, "hasAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasAccess: Self = this.set("hasAccess", js.undefined)
+    def setHasAccessUndefined: Self = StObject.set(x, "hasAccess", js.undefined)
     
     @scala.inline
-    def setHasSubFolders(value: String): Self = this.set("hasSubFolders", value.asInstanceOf[js.Any])
+    def setHasSubFolders(value: String): Self = StObject.set(x, "hasSubFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasSubFolders: Self = this.set("hasSubFolders", js.undefined)
+    def setHasSubFoldersUndefined: Self = StObject.set(x, "hasSubFolders", js.undefined)
     
     @scala.inline
-    def setItemCount(value: String): Self = this.set("itemCount", value.asInstanceOf[js.Any])
+    def setItemCount(value: String): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemCount: Self = this.set("itemCount", js.undefined)
+    def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOwner(value: UserInfo): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setOwner(value: UserInfo): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setParentFolderId(value: String): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def setParentFolderUri(value: String): Self = this.set("parentFolderUri", value.asInstanceOf[js.Any])
+    def setParentFolderUri(value: String): Self = StObject.set(x, "parentFolderUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentFolderUri: Self = this.set("parentFolderUri", js.undefined)
+    def setParentFolderUriUndefined: Self = StObject.set(x, "parentFolderUri", js.undefined)
     
     @scala.inline
-    def setSubFolderCount(value: String): Self = this.set("subFolderCount", value.asInstanceOf[js.Any])
+    def setSubFolderCount(value: String): Self = StObject.set(x, "subFolderCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubFolderCount: Self = this.set("subFolderCount", js.undefined)
+    def setSubFolderCountUndefined: Self = StObject.set(x, "subFolderCount", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

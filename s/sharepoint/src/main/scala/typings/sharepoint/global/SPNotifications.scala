@@ -1,15 +1,15 @@
 package typings.sharepoint.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SPNotifications")
-@js.native
-object SPNotifications extends js.Object {
+object SPNotifications {
   
+  @JSGlobal("SPNotifications.ContainerID")
   @js.native
-  object ContainerID extends js.Object {
+  object ContainerID extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SPNotifications.ContainerID with Double] = js.native
@@ -19,8 +19,9 @@ object SPNotifications extends js.Object {
     /* 1 */ val Status: typings.sharepoint.SPNotifications.ContainerID.Status with Double = js.native
   }
   
+  @JSGlobal("SPNotifications.EventID")
   @js.native
-  object EventID extends js.Object {
+  object EventID extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.sharepoint.SPNotifications.EventID with Double] = js.native

@@ -1,12 +1,13 @@
 package typings.nodePgMigrate.anon
 
 import typings.nodePgMigrate.domainsTypesMod.RenameDomainFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseRenameDomainFn extends js.Object {
+trait ReverseRenameDomainFn extends StObject {
   
   def reverse(
     oldDomainName: typings.nodePgMigrate.generalTypesMod.Name,

@@ -1,11 +1,12 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFunctionResponse extends js.Object {
+trait GetFunctionResponse extends StObject {
   
   /**
     * The deployment package of the function or version.
@@ -36,42 +37,30 @@ object GetFunctionResponse {
   }
   
   @scala.inline
-  implicit class GetFunctionResponseOps[Self <: GetFunctionResponse] (val x: Self) extends AnyVal {
+  implicit class GetFunctionResponseMutableBuilder[Self <: GetFunctionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: FunctionCodeLocation): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConcurrency(value: Concurrency): Self = StObject.set(x, "Concurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: FunctionCodeLocation): Self = this.set("Code", value.asInstanceOf[js.Any])
+    def setConcurrencyUndefined: Self = StObject.set(x, "Concurrency", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("Code", js.undefined)
+    def setConfiguration(value: FunctionConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrency(value: Concurrency): Self = this.set("Concurrency", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
     @scala.inline
-    def deleteConcurrency: Self = this.set("Concurrency", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: FunctionConfiguration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfiguration: Self = this.set("Configuration", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

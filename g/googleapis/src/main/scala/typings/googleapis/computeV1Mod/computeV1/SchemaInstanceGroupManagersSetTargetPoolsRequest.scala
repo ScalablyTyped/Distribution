@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupManagersSetTargetPoolsRequest extends js.Object {
+trait SchemaInstanceGroupManagersSetTargetPoolsRequest extends StObject {
   
   /**
     * The fingerprint of the target pools information. Use this optional
@@ -34,33 +35,21 @@ object SchemaInstanceGroupManagersSetTargetPoolsRequest {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagersSetTargetPoolsRequestOps[Self <: SchemaInstanceGroupManagersSetTargetPoolsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagersSetTargetPoolsRequestMutableBuilder[Self <: SchemaInstanceGroupManagersSetTargetPoolsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
-    
-    @scala.inline
-    def setTargetPoolsVarargs(value: String*): Self = this.set("targetPools", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetPools(value: js.Array[String]): Self = this.set("targetPools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetPools: Self = this.set("targetPools", js.undefined)
+    def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
   }
 }

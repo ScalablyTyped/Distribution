@@ -1,12 +1,13 @@
 package typings.navermaps.naver.maps
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlIcon extends js.Object {
+trait HtmlIcon extends StObject {
   
   var anchor: js.UndefOr[Point | PointLiteral | Position] = js.native
   
@@ -23,33 +24,21 @@ object HtmlIcon {
   }
   
   @scala.inline
-  implicit class HtmlIconOps[Self <: HtmlIcon] (val x: Self) extends AnyVal {
+  implicit class HtmlIconMutableBuilder[Self <: HtmlIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Point | PointLiteral | Position): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String | HTMLElement): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setSize(value: Size | SizeLiteral): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Point | PointLiteral | Position): Self = this.set("anchor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Size | SizeLiteral): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

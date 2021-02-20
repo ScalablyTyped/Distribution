@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalQueryResultProperties extends js.Object {
+trait PortalQueryResultProperties extends StObject {
   
   /**
     * The query parameters for the next set of results.
@@ -44,45 +45,33 @@ object PortalQueryResultProperties {
   }
   
   @scala.inline
-  implicit class PortalQueryResultPropertiesOps[Self <: PortalQueryResultProperties] (val x: Self) extends AnyVal {
+  implicit class PortalQueryResultPropertiesMutableBuilder[Self <: PortalQueryResultProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "nextQueryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextQueryParamsUndefined: Self = StObject.set(x, "nextQueryParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueryParams(value: PortalQueryParamsProperties): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextQueryParams(value: PortalQueryParamsProperties): Self = this.set("nextQueryParams", value.asInstanceOf[js.Any])
+    def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     
     @scala.inline
-    def deleteNextQueryParams: Self = this.set("nextQueryParams", js.undefined)
+    def setResults(value: js.Array[_]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParams(value: PortalQueryParamsProperties): Self = this.set("queryParams", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteQueryParams: Self = this.set("queryParams", js.undefined)
+    def setResultsVarargs(value: js.Any*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: js.Any*): Self = this.set("results", js.Array(value :_*))
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[_]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

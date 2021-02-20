@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeGroupConfiguration extends js.Object {
+trait NodeGroupConfiguration extends StObject {
   
   /**
     * Either the ElastiCache for Redis supplied 4-digit id or a user supplied id for the node group these configuration values apply to.
@@ -51,66 +52,54 @@ object NodeGroupConfiguration {
   }
   
   @scala.inline
-  implicit class NodeGroupConfigurationOps[Self <: NodeGroupConfiguration] (val x: Self) extends AnyVal {
+  implicit class NodeGroupConfigurationMutableBuilder[Self <: NodeGroupConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeGroupIdUndefined: Self = StObject.set(x, "NodeGroupId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimaryAvailabilityZone(value: String): Self = StObject.set(x, "PrimaryAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeGroupId(value: AllowedNodeGroupId): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
+    def setPrimaryAvailabilityZoneUndefined: Self = StObject.set(x, "PrimaryAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
+    def setPrimaryOutpostArn(value: String): Self = StObject.set(x, "PrimaryOutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryAvailabilityZone(value: String): Self = this.set("PrimaryAvailabilityZone", value.asInstanceOf[js.Any])
+    def setPrimaryOutpostArnUndefined: Self = StObject.set(x, "PrimaryOutpostArn", js.undefined)
     
     @scala.inline
-    def deletePrimaryAvailabilityZone: Self = this.set("PrimaryAvailabilityZone", js.undefined)
+    def setReplicaAvailabilityZones(value: AvailabilityZonesList): Self = StObject.set(x, "ReplicaAvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryOutpostArn(value: String): Self = this.set("PrimaryOutpostArn", value.asInstanceOf[js.Any])
+    def setReplicaAvailabilityZonesUndefined: Self = StObject.set(x, "ReplicaAvailabilityZones", js.undefined)
     
     @scala.inline
-    def deletePrimaryOutpostArn: Self = this.set("PrimaryOutpostArn", js.undefined)
+    def setReplicaAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "ReplicaAvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def setReplicaAvailabilityZonesVarargs(value: String*): Self = this.set("ReplicaAvailabilityZones", js.Array(value :_*))
+    def setReplicaCount(value: IntegerOptional): Self = StObject.set(x, "ReplicaCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaAvailabilityZones(value: AvailabilityZonesList): Self = this.set("ReplicaAvailabilityZones", value.asInstanceOf[js.Any])
+    def setReplicaCountUndefined: Self = StObject.set(x, "ReplicaCount", js.undefined)
     
     @scala.inline
-    def deleteReplicaAvailabilityZones: Self = this.set("ReplicaAvailabilityZones", js.undefined)
+    def setReplicaOutpostArns(value: OutpostArnsList): Self = StObject.set(x, "ReplicaOutpostArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaCount(value: IntegerOptional): Self = this.set("ReplicaCount", value.asInstanceOf[js.Any])
+    def setReplicaOutpostArnsUndefined: Self = StObject.set(x, "ReplicaOutpostArns", js.undefined)
     
     @scala.inline
-    def deleteReplicaCount: Self = this.set("ReplicaCount", js.undefined)
+    def setReplicaOutpostArnsVarargs(value: String*): Self = StObject.set(x, "ReplicaOutpostArns", js.Array(value :_*))
     
     @scala.inline
-    def setReplicaOutpostArnsVarargs(value: String*): Self = this.set("ReplicaOutpostArns", js.Array(value :_*))
+    def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicaOutpostArns(value: OutpostArnsList): Self = this.set("ReplicaOutpostArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicaOutpostArns: Self = this.set("ReplicaOutpostArns", js.undefined)
-    
-    @scala.inline
-    def setSlots(value: String): Self = this.set("Slots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlots: Self = this.set("Slots", js.undefined)
+    def setSlotsUndefined: Self = StObject.set(x, "Slots", js.undefined)
   }
 }

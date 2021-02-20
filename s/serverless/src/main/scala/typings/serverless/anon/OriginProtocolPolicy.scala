@@ -1,11 +1,12 @@
 package typings.serverless.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginProtocolPolicy extends js.Object {
+trait OriginProtocolPolicy extends StObject {
   
   var OriginProtocolPolicy: String = js.native
 }
@@ -18,21 +19,9 @@ object OriginProtocolPolicy {
   }
   
   @scala.inline
-  implicit class OriginProtocolPolicyOps[Self <: OriginProtocolPolicy] (val x: Self) extends AnyVal {
+  implicit class OriginProtocolPolicyMutableBuilder[Self <: OriginProtocolPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOriginProtocolPolicy(value: String): Self = this.set("OriginProtocolPolicy", value.asInstanceOf[js.Any])
+    def setOriginProtocolPolicy(value: String): Self = StObject.set(x, "OriginProtocolPolicy", value.asInstanceOf[js.Any])
   }
 }

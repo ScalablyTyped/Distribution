@@ -1,12 +1,13 @@
 package typings.autobahn.mod
 
 import typings.when.When.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConnectionOptions extends js.Object {
+trait IConnectionOptions extends StObject {
   
   var authid: js.UndefOr[String] = js.native
   
@@ -48,116 +49,104 @@ object IConnectionOptions {
   }
   
   @scala.inline
-  implicit class IConnectionOptionsOps[Self <: IConnectionOptions] (val x: Self) extends AnyVal {
+  implicit class IConnectionOptionsMutableBuilder[Self <: IConnectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthid(value: String): Self = StObject.set(x, "authid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthidUndefined: Self = StObject.set(x, "authid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthmethods(value: js.Array[String]): Self = StObject.set(x, "authmethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealm(value: String): Self = this.set("realm", value.asInstanceOf[js.Any])
+    def setAuthmethodsUndefined: Self = StObject.set(x, "authmethods", js.undefined)
     
     @scala.inline
-    def setAuthid(value: String): Self = this.set("authid", value.asInstanceOf[js.Any])
+    def setAuthmethodsVarargs(value: String*): Self = StObject.set(x, "authmethods", js.Array(value :_*))
     
     @scala.inline
-    def deleteAuthid: Self = this.set("authid", js.undefined)
+    def setInitial_retry_delay(value: Double): Self = StObject.set(x, "initial_retry_delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthmethodsVarargs(value: String*): Self = this.set("authmethods", js.Array(value :_*))
+    def setInitial_retry_delayUndefined: Self = StObject.set(x, "initial_retry_delay", js.undefined)
     
     @scala.inline
-    def setAuthmethods(value: js.Array[String]): Self = this.set("authmethods", value.asInstanceOf[js.Any])
+    def setMax_retries(value: Double): Self = StObject.set(x, "max_retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthmethods: Self = this.set("authmethods", js.undefined)
+    def setMax_retriesUndefined: Self = StObject.set(x, "max_retries", js.undefined)
     
     @scala.inline
-    def setInitial_retry_delay(value: Double): Self = this.set("initial_retry_delay", value.asInstanceOf[js.Any])
+    def setMax_retry_delay(value: Double): Self = StObject.set(x, "max_retry_delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitial_retry_delay: Self = this.set("initial_retry_delay", js.undefined)
-    
-    @scala.inline
-    def setMax_retries(value: Double): Self = this.set("max_retries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax_retries: Self = this.set("max_retries", js.undefined)
-    
-    @scala.inline
-    def setMax_retry_delay(value: Double): Self = this.set("max_retry_delay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax_retry_delay: Self = this.set("max_retry_delay", js.undefined)
+    def setMax_retry_delayUndefined: Self = StObject.set(x, "max_retry_delay", js.undefined)
     
     @scala.inline
     def setOnchallenge(
       value: (/* session */ Session, /* method */ String, /* extra */ js.Any) => String | Promise[String]
-    ): Self = this.set("onchallenge", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onchallenge", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnchallenge: Self = this.set("onchallenge", js.undefined)
+    def setOnchallengeUndefined: Self = StObject.set(x, "onchallenge", js.undefined)
     
     @scala.inline
-    def setProtocolsVarargs(value: String*): Self = this.set("protocols", js.Array(value :_*))
+    def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: js.Array[String]): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
     
     @scala.inline
-    def setRetry_delay_growth(value: Double): Self = this.set("retry_delay_growth", value.asInstanceOf[js.Any])
+    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetry_delay_growth: Self = this.set("retry_delay_growth", js.undefined)
+    def setRetry_delay_growth(value: Double): Self = StObject.set(x, "retry_delay_growth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry_delay_jitter(value: Double): Self = this.set("retry_delay_jitter", value.asInstanceOf[js.Any])
+    def setRetry_delay_growthUndefined: Self = StObject.set(x, "retry_delay_growth", js.undefined)
     
     @scala.inline
-    def deleteRetry_delay_jitter: Self = this.set("retry_delay_jitter", js.undefined)
+    def setRetry_delay_jitter(value: Double): Self = StObject.set(x, "retry_delay_jitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetry_if_unreachable(value: Boolean): Self = this.set("retry_if_unreachable", value.asInstanceOf[js.Any])
+    def setRetry_delay_jitterUndefined: Self = StObject.set(x, "retry_delay_jitter", js.undefined)
     
     @scala.inline
-    def deleteRetry_if_unreachable: Self = this.set("retry_if_unreachable", js.undefined)
+    def setRetry_if_unreachable(value: Boolean): Self = StObject.set(x, "retry_if_unreachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransportsVarargs(value: ITransportDefinition*): Self = this.set("transports", js.Array(value :_*))
+    def setRetry_if_unreachableUndefined: Self = StObject.set(x, "retry_if_unreachable", js.undefined)
     
     @scala.inline
-    def setTransports(value: js.Array[ITransportDefinition]): Self = this.set("transports", value.asInstanceOf[js.Any])
+    def setTransports(value: js.Array[ITransportDefinition]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransports: Self = this.set("transports", js.undefined)
+    def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTransportsVarargs(value: ITransportDefinition*): Self = StObject.set(x, "transports", js.Array(value :_*))
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse_deferred(value: () => Promise[js.Any]): Self = this.set("use_deferred", js.Any.fromFunction0(value))
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteUse_deferred: Self = this.set("use_deferred", js.undefined)
+    def setUse_deferred(value: () => Promise[js.Any]): Self = StObject.set(x, "use_deferred", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUse_es6_promises(value: Boolean): Self = this.set("use_es6_promises", value.asInstanceOf[js.Any])
+    def setUse_deferredUndefined: Self = StObject.set(x, "use_deferred", js.undefined)
     
     @scala.inline
-    def deleteUse_es6_promises: Self = this.set("use_es6_promises", js.undefined)
+    def setUse_es6_promises(value: Boolean): Self = StObject.set(x, "use_es6_promises", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUse_es6_promisesUndefined: Self = StObject.set(x, "use_es6_promises", js.undefined)
   }
 }

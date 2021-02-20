@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines the type of negotiation on encryption algorithms permitted by the server. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation")
 @js.native
-object EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation extends js.Object {
+object EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

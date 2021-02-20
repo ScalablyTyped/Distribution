@@ -1,12 +1,13 @@
 package typings.rcTree.anon
 
 import typings.rcTree.interfaceMod.DataNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessProps extends js.Object {
+trait ProcessProps extends StObject {
   
   def processProps(prop: DataNode): js.Any = js.native
 }
@@ -19,21 +20,9 @@ object ProcessProps {
   }
   
   @scala.inline
-  implicit class ProcessPropsOps[Self <: ProcessProps] (val x: Self) extends AnyVal {
+  implicit class ProcessPropsMutableBuilder[Self <: ProcessProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProcessProps(value: DataNode => js.Any): Self = this.set("processProps", js.Any.fromFunction1(value))
+    def setProcessProps(value: DataNode => js.Any): Self = StObject.set(x, "processProps", js.Any.fromFunction1(value))
   }
 }

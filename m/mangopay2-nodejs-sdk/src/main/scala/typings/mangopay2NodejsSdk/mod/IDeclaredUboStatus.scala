@@ -3,12 +3,13 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CREATED
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REFUSED
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDeclaredUboStatus extends js.Object {
+trait IDeclaredUboStatus extends StObject {
   
   var Created: CREATED = js.native
   
@@ -25,27 +26,15 @@ object IDeclaredUboStatus {
   }
   
   @scala.inline
-  implicit class IDeclaredUboStatusOps[Self <: IDeclaredUboStatus] (val x: Self) extends AnyVal {
+  implicit class IDeclaredUboStatusMutableBuilder[Self <: IDeclaredUboStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRefused(value: REFUSED): Self = StObject.set(x, "Refused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreated(value: CREATED): Self = this.set("Created", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefused(value: REFUSED): Self = this.set("Refused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidated(value: VALIDATED): Self = this.set("Validated", value.asInstanceOf[js.Any])
+    def setValidated(value: VALIDATED): Self = StObject.set(x, "Validated", value.asInstanceOf[js.Any])
   }
 }

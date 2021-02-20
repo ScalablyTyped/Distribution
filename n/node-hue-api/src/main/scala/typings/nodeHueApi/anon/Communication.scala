@@ -1,11 +1,12 @@
 package typings.nodeHueApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Communication extends js.Object {
+trait Communication extends StObject {
   
   var communication: String = js.native
   
@@ -24,30 +25,18 @@ object Communication {
   }
   
   @scala.inline
-  implicit class CommunicationOps[Self <: Communication] (val x: Self) extends AnyVal {
+  implicit class CommunicationMutableBuilder[Self <: Communication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommunication(value: String): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncoming(value: Boolean): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutgoing(value: Boolean): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommunication(value: String): Self = this.set("communication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncoming(value: Boolean): Self = this.set("incoming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoing(value: Boolean): Self = this.set("outgoing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignedon(value: Boolean): Self = this.set("signedon", value.asInstanceOf[js.Any])
+    def setSignedon(value: Boolean): Self = StObject.set(x, "signedon", value.asInstanceOf[js.Any])
   }
 }

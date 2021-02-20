@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ForceApprovalPrompt extends js.Object {
+trait ForceApprovalPrompt extends StObject {
   
   var forceApprovalPrompt: js.UndefOr[js.Object] = js.native
   
@@ -24,42 +25,30 @@ object ForceApprovalPrompt {
   }
   
   @scala.inline
-  implicit class ForceApprovalPromptOps[Self <: ForceApprovalPrompt] (val x: Self) extends AnyVal {
+  implicit class ForceApprovalPromptMutableBuilder[Self <: ForceApprovalPrompt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceApprovalPrompt(value: js.Object): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceApprovalPromptUndefined: Self = StObject.set(x, "forceApprovalPrompt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPasswordSignupFields(value: String): Self = StObject.set(x, "passwordSignupFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceApprovalPrompt(value: js.Object): Self = this.set("forceApprovalPrompt", value.asInstanceOf[js.Any])
+    def setPasswordSignupFieldsUndefined: Self = StObject.set(x, "passwordSignupFields", js.undefined)
     
     @scala.inline
-    def deleteForceApprovalPrompt: Self = this.set("forceApprovalPrompt", js.undefined)
+    def setRequestOfflineToken(value: js.Object): Self = StObject.set(x, "requestOfflineToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordSignupFields(value: String): Self = this.set("passwordSignupFields", value.asInstanceOf[js.Any])
+    def setRequestOfflineTokenUndefined: Self = StObject.set(x, "requestOfflineToken", js.undefined)
     
     @scala.inline
-    def deletePasswordSignupFields: Self = this.set("passwordSignupFields", js.undefined)
+    def setRequestPermissions(value: js.Object): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestOfflineToken(value: js.Object): Self = this.set("requestOfflineToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestOfflineToken: Self = this.set("requestOfflineToken", js.undefined)
-    
-    @scala.inline
-    def setRequestPermissions(value: js.Object): Self = this.set("requestPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestPermissions: Self = this.set("requestPermissions", js.undefined)
+    def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
   }
 }

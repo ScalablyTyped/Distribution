@@ -1,15 +1,14 @@
 package typings.macosVersion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Call extends js.Object {
+  trait Call extends StObject {
     
     /**
     	@returns The macOS version or `undefined` if the platform is not macOS.

@@ -1,22 +1,25 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/observable/ScalarObservable", JSImport.Namespace)
-@js.native
-object scalarObservableMod extends js.Object {
+object scalarObservableMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs/observable/ScalarObservable", "ScalarObservable")
+  @js.native
   class ScalarObservable[T] ()
     extends typings.rxjsCompat.scalarObservableMod.ScalarObservable[T]
   /* static members */
-  @js.native
-  object ScalarObservable extends js.Object {
+  object ScalarObservable {
     
+    @JSImport("rxjs/observable/ScalarObservable", "ScalarObservable.create")
+    @js.native
     def create[T](value: T): js.Any = js.native
+    @JSImport("rxjs/observable/ScalarObservable", "ScalarObservable.create")
+    @js.native
     def create[T](
       value: T,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any

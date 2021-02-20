@@ -1,11 +1,12 @@
 package typings.joi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpOptions extends js.Object {
+trait IpOptions extends StObject {
   
   /**
     * Used to determine if a CIDR is allowed or not. Valid values: optional, required, forbidden
@@ -26,33 +27,21 @@ object IpOptions {
   }
   
   @scala.inline
-  implicit class IpOptionsOps[Self <: IpOptions] (val x: Self) extends AnyVal {
+  implicit class IpOptionsMutableBuilder[Self <: IpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidr(value: PresenceMode): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidr(value: PresenceMode): Self = this.set("cidr", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteCidr: Self = this.set("cidr", js.undefined)
-    
-    @scala.inline
-    def setVersionVarargs(value: String*): Self = this.set("version", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersion(value: String | js.Array[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

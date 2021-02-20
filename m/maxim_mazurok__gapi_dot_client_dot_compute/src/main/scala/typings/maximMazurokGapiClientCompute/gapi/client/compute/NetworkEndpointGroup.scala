@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkEndpointGroup extends js.Object {
+trait NetworkEndpointGroup extends StObject {
   
   /** Metadata defined as annotations on the network endpoint group. */
   var annotations: js.UndefOr[
@@ -76,124 +77,112 @@ object NetworkEndpointGroup {
   }
   
   @scala.inline
-  implicit class NetworkEndpointGroupOps[Self <: NetworkEndpointGroup] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NetworkEndpointGroupMutableBuilder[Self <: NetworkEndpointGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.NetworkEndpointGroup with TopLevel[js.Any]
-    ): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
     @scala.inline
-    def setAppEngine(value: NetworkEndpointGroupAppEngine): Self = this.set("appEngine", value.asInstanceOf[js.Any])
+    def setAppEngine(value: NetworkEndpointGroupAppEngine): Self = StObject.set(x, "appEngine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppEngine: Self = this.set("appEngine", js.undefined)
+    def setAppEngineUndefined: Self = StObject.set(x, "appEngine", js.undefined)
     
     @scala.inline
-    def setCloudFunction(value: NetworkEndpointGroupCloudFunction): Self = this.set("cloudFunction", value.asInstanceOf[js.Any])
+    def setCloudFunction(value: NetworkEndpointGroupCloudFunction): Self = StObject.set(x, "cloudFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudFunction: Self = this.set("cloudFunction", js.undefined)
+    def setCloudFunctionUndefined: Self = StObject.set(x, "cloudFunction", js.undefined)
     
     @scala.inline
-    def setCloudRun(value: NetworkEndpointGroupCloudRun): Self = this.set("cloudRun", value.asInstanceOf[js.Any])
+    def setCloudRun(value: NetworkEndpointGroupCloudRun): Self = StObject.set(x, "cloudRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudRun: Self = this.set("cloudRun", js.undefined)
+    def setCloudRunUndefined: Self = StObject.set(x, "cloudRun", js.undefined)
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def setDefaultPort(value: Double): Self = this.set("defaultPort", value.asInstanceOf[js.Any])
+    def setDefaultPort(value: Double): Self = StObject.set(x, "defaultPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultPort: Self = this.set("defaultPort", js.undefined)
+    def setDefaultPortUndefined: Self = StObject.set(x, "defaultPort", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkEndpointType(value: String): Self = StObject.set(x, "networkEndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkEndpointType(value: String): Self = this.set("networkEndpointType", value.asInstanceOf[js.Any])
+    def setNetworkEndpointTypeUndefined: Self = StObject.set(x, "networkEndpointType", js.undefined)
     
     @scala.inline
-    def deleteNetworkEndpointType: Self = this.set("networkEndpointType", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
     @scala.inline
-    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteZone: Self = this.set("zone", js.undefined)
+    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

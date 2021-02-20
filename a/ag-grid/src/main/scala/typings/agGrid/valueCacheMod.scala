@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/valueService/valueCache", JSImport.Namespace)
-@js.native
-object valueCacheMod extends js.Object {
+object valueCacheMod {
   
+  @JSImport("ag-grid/dist/lib/valueService/valueCache", "ValueCache")
   @js.native
-  class ValueCache () extends js.Object {
+  class ValueCache () extends StObject {
     
     var active: js.Any = js.native
     

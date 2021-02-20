@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputSpecification extends js.Object {
+trait InputSpecification extends StObject {
   
   /**
     * Input codec
@@ -31,36 +32,24 @@ object InputSpecification {
   }
   
   @scala.inline
-  implicit class InputSpecificationOps[Self <: InputSpecification] (val x: Self) extends AnyVal {
+  implicit class InputSpecificationMutableBuilder[Self <: InputSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: InputCodec): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumBitrate(value: InputMaximumBitrate): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: InputCodec): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    def setMaximumBitrateUndefined: Self = StObject.set(x, "MaximumBitrate", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("Codec", js.undefined)
+    def setResolution(value: InputResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumBitrate(value: InputMaximumBitrate): Self = this.set("MaximumBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumBitrate: Self = this.set("MaximumBitrate", js.undefined)
-    
-    @scala.inline
-    def setResolution(value: InputResolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("Resolution", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
   }
 }

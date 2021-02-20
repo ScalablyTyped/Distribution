@@ -1,6 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Prevents a DOM sub-tree from receiving tab navigations and focus.
   **/
 @js.native
-trait TabContainer extends js.Object {
+trait TabContainer extends StObject {
   
   //#endregion Methods
   //#region Properties
@@ -39,27 +40,15 @@ object TabContainer {
   }
   
   @scala.inline
-  implicit class TabContainerOps[Self <: TabContainer] (val x: Self) extends AnyVal {
+  implicit class TabContainerMutableBuilder[Self <: TabContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildFocus(value: HTMLElement): Self = StObject.set(x, "childFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChildFocus(value: HTMLElement): Self = this.set("childFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

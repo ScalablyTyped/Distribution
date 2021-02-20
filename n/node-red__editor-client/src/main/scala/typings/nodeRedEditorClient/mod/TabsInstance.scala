@@ -3,12 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Closeable
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabsInstance extends js.Object {
+trait TabsInstance extends StObject {
   
   def activateTab(link: String): Unit = js.native
   def activateTab(link: JQuery[HTMLElement]): Unit = js.native

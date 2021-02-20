@@ -1,6 +1,7 @@
 package typings.aureliaBinding.mod
 
 import typings.aureliaBinding.anon.ArraystringrawArraystring
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

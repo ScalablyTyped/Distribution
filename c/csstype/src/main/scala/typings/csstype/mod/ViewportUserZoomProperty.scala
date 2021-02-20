@@ -1,5 +1,6 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.fixed
   - typings.csstype.csstypeStrings.zoom
 */
-trait ViewportUserZoomProperty extends js.Object
+trait ViewportUserZoomProperty extends StObject
 object ViewportUserZoomProperty {
   
   @scala.inline

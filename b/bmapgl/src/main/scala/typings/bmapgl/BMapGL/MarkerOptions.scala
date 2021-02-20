@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerOptions extends js.Object {
+trait MarkerOptions extends StObject {
   
   var draggingCursor: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object MarkerOptions {
   }
   
   @scala.inline
-  implicit class MarkerOptionsOps[Self <: MarkerOptions] (val x: Self) extends AnyVal {
+  implicit class MarkerOptionsMutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraggingCursor(value: String): Self = StObject.set(x, "draggingCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraggingCursorUndefined: Self = StObject.set(x, "draggingCursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableClicking(value: Boolean): Self = StObject.set(x, "enableClicking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggingCursor(value: String): Self = this.set("draggingCursor", value.asInstanceOf[js.Any])
+    def setEnableClickingUndefined: Self = StObject.set(x, "enableClicking", js.undefined)
     
     @scala.inline
-    def deleteDraggingCursor: Self = this.set("draggingCursor", js.undefined)
+    def setEnableDragging(value: Boolean): Self = StObject.set(x, "enableDragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableClicking(value: Boolean): Self = this.set("enableClicking", value.asInstanceOf[js.Any])
+    def setEnableDraggingUndefined: Self = StObject.set(x, "enableDragging", js.undefined)
     
     @scala.inline
-    def deleteEnableClicking: Self = this.set("enableClicking", js.undefined)
+    def setEnableMassClear(value: Boolean): Self = StObject.set(x, "enableMassClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDragging(value: Boolean): Self = this.set("enableDragging", value.asInstanceOf[js.Any])
+    def setEnableMassClearUndefined: Self = StObject.set(x, "enableMassClear", js.undefined)
     
     @scala.inline
-    def deleteEnableDragging: Self = this.set("enableDragging", js.undefined)
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableMassClear(value: Boolean): Self = this.set("enableMassClear", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteEnableMassClear: Self = this.set("enableMassClear", js.undefined)
+    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setRaiseOnDrag(value: Boolean): Self = StObject.set(x, "raiseOnDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Size): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setRaiseOnDragUndefined: Self = StObject.set(x, "raiseOnDrag", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaiseOnDrag(value: Boolean): Self = this.set("raiseOnDrag", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRaiseOnDrag: Self = this.set("raiseOnDrag", js.undefined)
+    def setShadow(value: Icon): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Icon): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

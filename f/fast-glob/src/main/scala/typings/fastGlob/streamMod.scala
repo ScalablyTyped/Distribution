@@ -3,13 +3,16 @@ package typings.fastGlob
 import typings.fastGlob.tasksMod.Task
 import typings.fastGlob.typesMod.ReaderOptions
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-glob/out/providers/stream", JSImport.Namespace)
-@js.native
-object streamMod extends js.Object {
+object streamMod {
+  
+  @JSImport("fast-glob/out/providers/stream", JSImport.Default)
+  @js.native
+  class default () extends ProviderStream
   
   @js.native
   trait ProviderStream
@@ -19,7 +22,4 @@ object streamMod extends js.Object {
     
     def api(root: String, task: Task, options: ReaderOptions): Readable = js.native
   }
-  
-  @js.native
-  class default () extends ProviderStream
 }

@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemoryAccessDetails extends js.Object {
+trait MemoryAccessDetails extends StObject {
   
   /**
     * Address being accessed.
@@ -61,39 +62,27 @@ object MemoryAccessDetails {
   }
   
   @scala.inline
-  implicit class MemoryAccessDetailsOps[Self <: MemoryAccessDetails] (val x: Self) extends AnyVal {
+  implicit class MemoryAccessDetailsMutableBuilder[Self <: MemoryAccessDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrom(value: NativePointer): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: MemoryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: NativePointer): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: NativePointer): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setPagesCompleted(value: Double): Self = StObject.set(x, "pagesCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: MemoryOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setPagesTotal(value: Double): Self = StObject.set(x, "pagesTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageIndex(value: Double): Self = this.set("pageIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagesCompleted(value: Double): Self = this.set("pagesCompleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagesTotal(value: Double): Self = this.set("pagesTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRangeIndex(value: Double): Self = this.set("rangeIndex", value.asInstanceOf[js.Any])
+    def setRangeIndex(value: Double): Self = StObject.set(x, "rangeIndex", value.asInstanceOf[js.Any])
   }
 }

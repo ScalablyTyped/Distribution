@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Import
 
 import typings.winrtUwp.Windows.Foundation.IAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an in-progress photo import operation. */
 @js.native
-trait PhotoImportOperation extends js.Object {
+trait PhotoImportOperation extends StObject {
   
   /** Causes in-progress delete from source operations to continue. */
   var continueDeletingImportedItemsFromSourceAsync: IAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double] = js.native
@@ -39,33 +40,21 @@ object PhotoImportOperation {
   }
   
   @scala.inline
-  implicit class PhotoImportOperationOps[Self <: PhotoImportOperation] (val x: Self) extends AnyVal {
+  implicit class PhotoImportOperationMutableBuilder[Self <: PhotoImportOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinueDeletingImportedItemsFromSourceAsync(value: IAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double]): Self = StObject.set(x, "continueDeletingImportedItemsFromSourceAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinueFindingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportFindItemsResult, Double]): Self = StObject.set(x, "continueFindingItemsAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinueImportingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportImportItemsResult, PhotoImportProgress]): Self = StObject.set(x, "continueImportingItemsAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueDeletingImportedItemsFromSourceAsync(value: IAsyncOperationWithProgress[PhotoImportDeleteImportedItemsFromSourceResult, Double]): Self = this.set("continueDeletingImportedItemsFromSourceAsync", value.asInstanceOf[js.Any])
+    def setSession(value: PhotoImportSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinueFindingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportFindItemsResult, Double]): Self = this.set("continueFindingItemsAsync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContinueImportingItemsAsync(value: IAsyncOperationWithProgress[PhotoImportImportItemsResult, PhotoImportProgress]): Self = this.set("continueImportingItemsAsync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: PhotoImportSession): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStage(value: PhotoImportStage): Self = this.set("stage", value.asInstanceOf[js.Any])
+    def setStage(value: PhotoImportStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
   }
 }

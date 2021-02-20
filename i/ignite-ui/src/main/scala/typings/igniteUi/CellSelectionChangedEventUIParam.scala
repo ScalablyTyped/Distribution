@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CellSelectionChangedEventUIParam extends js.Object {
+trait CellSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets reference to the cell object.
@@ -31,39 +32,27 @@ object CellSelectionChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class CellSelectionChangedEventUIParamOps[Self <: CellSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class CellSelectionChangedEventUIParamMutableBuilder[Self <: CellSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCell(value: js.Any): Self = this.set("cell", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteCell: Self = this.set("cell", js.undefined)
+    def setSelectedCells(value: js.Array[_]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
-    
-    @scala.inline
-    def setSelectedCellsVarargs(value: js.Any*): Self = this.set("selectedCells", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedCells(value: js.Array[_]): Self = this.set("selectedCells", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedCells: Self = this.set("selectedCells", js.undefined)
+    def setSelectedCellsVarargs(value: js.Any*): Self = StObject.set(x, "selectedCells", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioChannelMapping extends js.Object {
+trait AudioChannelMapping extends StObject {
   
   /**
     * Indices and gain values for each input channel that should be remixed into this output channel.
@@ -26,27 +27,15 @@ object AudioChannelMapping {
   }
   
   @scala.inline
-  implicit class AudioChannelMappingOps[Self <: AudioChannelMapping] (val x: Self) extends AnyVal {
+  implicit class AudioChannelMappingMutableBuilder[Self <: AudioChannelMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputChannelLevels(value: listOfInputChannelLevel): Self = StObject.set(x, "InputChannelLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputChannelLevelsVarargs(value: InputChannelLevel*): Self = StObject.set(x, "InputChannelLevels", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputChannelLevelsVarargs(value: InputChannelLevel*): Self = this.set("InputChannelLevels", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputChannelLevels(value: listOfInputChannelLevel): Self = this.set("InputChannelLevels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputChannel(value: integerMin0Max7): Self = this.set("OutputChannel", value.asInstanceOf[js.Any])
+    def setOutputChannel(value: integerMin0Max7): Self = StObject.set(x, "OutputChannel", value.asInstanceOf[js.Any])
   }
 }

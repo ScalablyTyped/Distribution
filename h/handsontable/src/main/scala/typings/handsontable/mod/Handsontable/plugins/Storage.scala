@@ -1,12 +1,13 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Storage extends js.Object {
+trait Storage extends StObject {
   
   def clearSavedKeys(): Unit = js.native
   
@@ -45,48 +46,36 @@ object Storage {
   }
   
   @scala.inline
-  implicit class StorageOps[Self <: Storage] (val x: Self) extends AnyVal {
+  implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearSavedKeys(value: () => Unit): Self = StObject.set(x, "clearSavedKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadSavedKeys(value: () => Unit): Self = StObject.set(x, "loadSavedKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadValue(value: (String, js.Object) => js.Any): Self = StObject.set(x, "loadValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClearSavedKeys(value: () => Unit): Self = this.set("clearSavedKeys", js.Any.fromFunction0(value))
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadSavedKeys(value: () => Unit): Self = this.set("loadSavedKeys", js.Any.fromFunction0(value))
+    def setResetAll(value: () => Unit): Self = StObject.set(x, "resetAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoadValue(value: (String, js.Object) => js.Any): Self = this.set("loadValue", js.Any.fromFunction2(value))
+    def setRootWindow(value: Window): Self = StObject.set(x, "rootWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setSaveSavedKeys(value: () => Unit): Self = StObject.set(x, "saveSavedKeys", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setResetAll(value: () => Unit): Self = this.set("resetAll", js.Any.fromFunction0(value))
+    def setSaveValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "saveValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRootWindow(value: Window): Self = this.set("rootWindow", value.asInstanceOf[js.Any])
+    def setSavedKeys(value: js.Array[String]): Self = StObject.set(x, "savedKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveSavedKeys(value: () => Unit): Self = this.set("saveSavedKeys", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSaveValue(value: (String, js.Any) => Unit): Self = this.set("saveValue", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSavedKeysVarargs(value: String*): Self = this.set("savedKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setSavedKeys(value: js.Array[String]): Self = this.set("savedKeys", value.asInstanceOf[js.Any])
+    def setSavedKeysVarargs(value: String*): Self = StObject.set(x, "savedKeys", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsTransactionsV3MerchantPaymentMethod extends js.Object {
+trait GoogleActionsTransactionsV3MerchantPaymentMethod extends StObject {
   
   /**
     * Required. Display info of this payment method.
@@ -39,42 +40,30 @@ object GoogleActionsTransactionsV3MerchantPaymentMethod {
   }
   
   @scala.inline
-  implicit class GoogleActionsTransactionsV3MerchantPaymentMethodOps[Self <: GoogleActionsTransactionsV3MerchantPaymentMethod] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsTransactionsV3MerchantPaymentMethodMutableBuilder[Self <: GoogleActionsTransactionsV3MerchantPaymentMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaymentMethodDisplayInfo(value: GoogleActionsTransactionsV3PaymentMethodDisplayInfo): Self = StObject.set(x, "paymentMethodDisplayInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaymentMethodDisplayInfoUndefined: Self = StObject.set(x, "paymentMethodDisplayInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentMethodGroup(value: String): Self = StObject.set(x, "paymentMethodGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodDisplayInfo(value: GoogleActionsTransactionsV3PaymentMethodDisplayInfo): Self = this.set("paymentMethodDisplayInfo", value.asInstanceOf[js.Any])
+    def setPaymentMethodGroupUndefined: Self = StObject.set(x, "paymentMethodGroup", js.undefined)
     
     @scala.inline
-    def deletePaymentMethodDisplayInfo: Self = this.set("paymentMethodDisplayInfo", js.undefined)
+    def setPaymentMethodId(value: String): Self = StObject.set(x, "paymentMethodId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodGroup(value: String): Self = this.set("paymentMethodGroup", value.asInstanceOf[js.Any])
+    def setPaymentMethodIdUndefined: Self = StObject.set(x, "paymentMethodId", js.undefined)
     
     @scala.inline
-    def deletePaymentMethodGroup: Self = this.set("paymentMethodGroup", js.undefined)
+    def setPaymentMethodStatus(value: GoogleActionsTransactionsV3PaymentMethodStatus): Self = StObject.set(x, "paymentMethodStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethodId(value: String): Self = this.set("paymentMethodId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentMethodId: Self = this.set("paymentMethodId", js.undefined)
-    
-    @scala.inline
-    def setPaymentMethodStatus(value: GoogleActionsTransactionsV3PaymentMethodStatus): Self = this.set("paymentMethodStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentMethodStatus: Self = this.set("paymentMethodStatus", js.undefined)
+    def setPaymentMethodStatusUndefined: Self = StObject.set(x, "paymentMethodStatus", js.undefined)
   }
 }

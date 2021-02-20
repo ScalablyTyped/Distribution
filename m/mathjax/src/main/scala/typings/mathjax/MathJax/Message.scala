@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   /*This causes the message with id n to be removed after the given delay, in milliseconds. The default delay is
     * 600 milliseconds.*/
@@ -56,36 +57,24 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: (Double, Double) => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFile(value: String => Double): Self = StObject.set(x, "File", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterText(value: (String, Double) => String): Self = StObject.set(x, "filterText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: (Double, Double) => Unit): Self = this.set("Clear", js.Any.fromFunction2(value))
+    def setLog(value: () => String): Self = StObject.set(x, "Log", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFile(value: String => Double): Self = this.set("File", js.Any.fromFunction1(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLog(value: () => String): Self = this.set("Log", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("Remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: (String, Double, Double) => Double): Self = this.set("Set", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setFilterText(value: (String, Double) => String): Self = this.set("filterText", js.Any.fromFunction2(value))
+    def setSet(value: (String, Double, Double) => Double): Self = StObject.set(x, "Set", js.Any.fromFunction3(value))
   }
 }

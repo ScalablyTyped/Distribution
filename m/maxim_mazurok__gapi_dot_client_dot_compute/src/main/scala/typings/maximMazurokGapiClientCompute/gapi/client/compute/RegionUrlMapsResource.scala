@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.PrettyPrintProjectQuotaUserReg
 import typings.maximMazurokGapiClientCompute.anon.RegionUrlMap
 import typings.maximMazurokGapiClientCompute.anon.ResourceUrlMap
 import typings.maximMazurokGapiClientCompute.anon.UrlMapUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionUrlMapsResource extends js.Object {
+trait RegionUrlMapsResource extends StObject {
   
   /** Deletes the specified UrlMap resource. */
   def delete(): Request[Operation] = js.native

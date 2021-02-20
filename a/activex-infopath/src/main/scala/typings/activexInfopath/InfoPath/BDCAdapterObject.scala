@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BDCAdapterObject extends js.Object {
+trait BDCAdapterObject extends StObject {
   
   val EntityName: String = js.native
   
@@ -52,51 +53,39 @@ object BDCAdapterObject {
   }
   
   @scala.inline
-  implicit class BDCAdapterObjectOps[Self <: BDCAdapterObject] (val x: Self) extends AnyVal {
+  implicit class BDCAdapterObjectMutableBuilder[Self <: BDCAdapterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityNamespace(value: String): Self = StObject.set(x, "EntityNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoPathDotBDCAdapterObject_typekey(value: BDCAdapterObject): Self = StObject.set(x, "InfoPath.BDCAdapterObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityName(value: String): Self = this.set("EntityName", value.asInstanceOf[js.Any])
+    def setLOBSystemInstance(value: String): Self = StObject.set(x, "LOBSystemInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityNamespace(value: String): Self = this.set("EntityNamespace", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotBDCAdapterObject_typekey(value: BDCAdapterObject): Self = this.set("InfoPath.BDCAdapterObject_typekey", value.asInstanceOf[js.Any])
+    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLOBSystemInstance(value: String): Self = this.set("LOBSystemInstance", value.asInstanceOf[js.Any])
+    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSpecificFinder(value: String): Self = StObject.set(x, "SpecificFinder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("Query", js.Any.fromFunction0(value))
+    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQueryAllowed(value: Boolean): Self = this.set("QueryAllowed", value.asInstanceOf[js.Any])
+    def setSubmitAdapterName(value: String): Self = StObject.set(x, "SubmitAdapterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecificFinder(value: String): Self = this.set("SpecificFinder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = this.set("Submit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSubmitAdapterName(value: String): Self = this.set("SubmitAdapterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = this.set("SubmitAllowed", value.asInstanceOf[js.Any])
+    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
   }
 }

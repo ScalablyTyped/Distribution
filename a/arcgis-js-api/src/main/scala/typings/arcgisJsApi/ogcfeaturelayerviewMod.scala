@@ -1,12 +1,11 @@
 package typings.arcgisJsApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("esri/views/layers/OGCFeatureLayerView", JSImport.Namespace)
-@js.native
-object ogcfeaturelayerviewMod extends js.Object {
+object ogcfeaturelayerviewMod {
   
   type OGCFeatureLayerView = typings.arcgisJsApi.esri.OGCFeatureLayerView
 }

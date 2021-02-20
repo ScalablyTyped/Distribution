@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutSlotTypeResponse extends js.Object {
+trait PutSlotTypeResponse extends StObject {
   
   /**
     * Checksum of the $LATEST version of the slot type.
@@ -71,90 +72,78 @@ object PutSlotTypeResponse {
   }
   
   @scala.inline
-  implicit class PutSlotTypeResponseOps[Self <: PutSlotTypeResponse] (val x: Self) extends AnyVal {
+  implicit class PutSlotTypeResponseMutableBuilder[Self <: PutSlotTypeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateVersion(value: Boolean): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
     
     @scala.inline
-    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateVersion(value: Boolean): Self = this.set("createVersion", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteCreateVersion: Self = this.set("createVersion", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    def setEnumerationValues(value: EnumerationValues): Self = StObject.set(x, "enumerationValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnumerationValuesUndefined: Self = StObject.set(x, "enumerationValues", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnumerationValuesVarargs(value: EnumerationValue*): Self = StObject.set(x, "enumerationValues", js.Array(value :_*))
     
     @scala.inline
-    def setEnumerationValuesVarargs(value: EnumerationValue*): Self = this.set("enumerationValues", js.Array(value :_*))
+    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumerationValues(value: EnumerationValues): Self = this.set("enumerationValues", value.asInstanceOf[js.Any])
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteEnumerationValues: Self = this.set("enumerationValues", js.undefined)
+    def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
+    def setParentSlotTypeSignature(value: CustomOrBuiltinSlotTypeName): Self = StObject.set(x, "parentSlotTypeSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SlotTypeName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentSlotTypeSignatureUndefined: Self = StObject.set(x, "parentSlotTypeSignature", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSlotTypeConfigurations(value: SlotTypeConfigurations): Self = StObject.set(x, "slotTypeConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentSlotTypeSignature(value: CustomOrBuiltinSlotTypeName): Self = this.set("parentSlotTypeSignature", value.asInstanceOf[js.Any])
+    def setSlotTypeConfigurationsUndefined: Self = StObject.set(x, "slotTypeConfigurations", js.undefined)
     
     @scala.inline
-    def deleteParentSlotTypeSignature: Self = this.set("parentSlotTypeSignature", js.undefined)
+    def setSlotTypeConfigurationsVarargs(value: SlotTypeConfiguration*): Self = StObject.set(x, "slotTypeConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setSlotTypeConfigurationsVarargs(value: SlotTypeConfiguration*): Self = this.set("slotTypeConfigurations", js.Array(value :_*))
+    def setValueSelectionStrategy(value: SlotValueSelectionStrategy): Self = StObject.set(x, "valueSelectionStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotTypeConfigurations(value: SlotTypeConfigurations): Self = this.set("slotTypeConfigurations", value.asInstanceOf[js.Any])
+    def setValueSelectionStrategyUndefined: Self = StObject.set(x, "valueSelectionStrategy", js.undefined)
     
     @scala.inline
-    def deleteSlotTypeConfigurations: Self = this.set("slotTypeConfigurations", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueSelectionStrategy(value: SlotValueSelectionStrategy): Self = this.set("valueSelectionStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueSelectionStrategy: Self = this.set("valueSelectionStrategy", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

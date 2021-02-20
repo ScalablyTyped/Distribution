@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,54 +81,42 @@ object WorkItemType {
   }
   
   @scala.inline
-  implicit class WorkItemTypeOps[Self <: WorkItemType] (val x: Self) extends AnyVal {
+  implicit class WorkItemTypeMutableBuilder[Self <: WorkItemType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldInstances(value: js.Array[WorkItemTypeFieldInstance]): Self = StObject.set(x, "fieldInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFieldInstancesVarargs(value: WorkItemTypeFieldInstance*): Self = StObject.set(x, "fieldInstances", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[WorkItemTypeFieldInstance]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldInstancesVarargs(value: WorkItemTypeFieldInstance*): Self = this.set("fieldInstances", js.Array(value :_*))
+    def setFieldsVarargs(value: WorkItemTypeFieldInstance*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldInstances(value: js.Array[WorkItemTypeFieldInstance]): Self = this.set("fieldInstances", value.asInstanceOf[js.Any])
+    def setIcon(value: WorkItemIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: WorkItemTypeFieldInstance*): Self = this.set("fields", js.Array(value :_*))
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[WorkItemTypeFieldInstance]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: WorkItemIcon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    def setTransitions(value: StringDictionary[js.Array[WorkItemStateTransition]]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceName(value: String): Self = this.set("referenceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitions(value: StringDictionary[js.Array[WorkItemStateTransition]]): Self = this.set("transitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXmlForm(value: String): Self = this.set("xmlForm", value.asInstanceOf[js.Any])
+    def setXmlForm(value: String): Self = StObject.set(x, "xmlForm", value.asInstanceOf[js.Any])
   }
 }

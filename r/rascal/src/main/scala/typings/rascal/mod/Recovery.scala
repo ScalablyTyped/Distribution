@@ -4,12 +4,13 @@ import typings.rascal.rascalStrings.ack
 import typings.rascal.rascalStrings.forward
 import typings.rascal.rascalStrings.nack
 import typings.rascal.rascalStrings.republish
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Recovery extends js.Object {
+trait Recovery extends StObject {
   
   var attempts: js.UndefOr[Double] = js.native
   
@@ -36,63 +37,51 @@ object Recovery {
   }
   
   @scala.inline
-  implicit class RecoveryOps[Self <: Recovery] (val x: Self) extends AnyVal {
+  implicit class RecoveryMutableBuilder[Self <: Recovery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategy(value: ack | nack | republish | forward): Self = this.set("strategy", value.asInstanceOf[js.Any])
+    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
     @scala.inline
-    def setAttempts(value: Double): Self = this.set("attempts", value.asInstanceOf[js.Any])
+    def setImmediateNack(value: Boolean): Self = StObject.set(x, "immediateNack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttempts: Self = this.set("attempts", js.undefined)
+    def setImmediateNackUndefined: Self = StObject.set(x, "immediateNack", js.undefined)
     
     @scala.inline
-    def setDefer(value: Double): Self = this.set("defer", value.asInstanceOf[js.Any])
+    def setOptions(value: PublicationConfig): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefer: Self = this.set("defer", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setImmediateNack(value: Boolean): Self = this.set("immediateNack", value.asInstanceOf[js.Any])
+    def setPublication(value: String): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImmediateNack: Self = this.set("immediateNack", js.undefined)
+    def setPublicationUndefined: Self = StObject.set(x, "publication", js.undefined)
     
     @scala.inline
-    def setOptions(value: PublicationConfig): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setRequeue(value: Boolean): Self = StObject.set(x, "requeue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setRequeueUndefined: Self = StObject.set(x, "requeue", js.undefined)
     
     @scala.inline
-    def setPublication(value: String): Self = this.set("publication", value.asInstanceOf[js.Any])
+    def setStrategy(value: ack | nack | republish | forward): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublication: Self = this.set("publication", js.undefined)
+    def setXDeathFix(value: Boolean): Self = StObject.set(x, "xDeathFix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequeue(value: Boolean): Self = this.set("requeue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequeue: Self = this.set("requeue", js.undefined)
-    
-    @scala.inline
-    def setXDeathFix(value: Boolean): Self = this.set("xDeathFix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXDeathFix: Self = this.set("xDeathFix", js.undefined)
+    def setXDeathFixUndefined: Self = StObject.set(x, "xDeathFix", js.undefined)
   }
 }

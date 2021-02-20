@@ -1,5 +1,6 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * database.
   */
 @js.native
-trait SchemaThreatEntrySet extends js.Object {
+trait SchemaThreatEntrySet extends StObject {
   
   /**
     * The compression type for the entries in this set.
@@ -50,48 +51,36 @@ object SchemaThreatEntrySet {
   }
   
   @scala.inline
-  implicit class SchemaThreatEntrySetOps[Self <: SchemaThreatEntrySet] (val x: Self) extends AnyVal {
+  implicit class SchemaThreatEntrySetMutableBuilder[Self <: SchemaThreatEntrySet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionTypeUndefined: Self = StObject.set(x, "compressionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawHashes(value: SchemaRawHashes): Self = StObject.set(x, "rawHashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionType(value: String): Self = this.set("compressionType", value.asInstanceOf[js.Any])
+    def setRawHashesUndefined: Self = StObject.set(x, "rawHashes", js.undefined)
     
     @scala.inline
-    def deleteCompressionType: Self = this.set("compressionType", js.undefined)
+    def setRawIndices(value: SchemaRawIndices): Self = StObject.set(x, "rawIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawHashes(value: SchemaRawHashes): Self = this.set("rawHashes", value.asInstanceOf[js.Any])
+    def setRawIndicesUndefined: Self = StObject.set(x, "rawIndices", js.undefined)
     
     @scala.inline
-    def deleteRawHashes: Self = this.set("rawHashes", js.undefined)
+    def setRiceHashes(value: SchemaRiceDeltaEncoding): Self = StObject.set(x, "riceHashes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawIndices(value: SchemaRawIndices): Self = this.set("rawIndices", value.asInstanceOf[js.Any])
+    def setRiceHashesUndefined: Self = StObject.set(x, "riceHashes", js.undefined)
     
     @scala.inline
-    def deleteRawIndices: Self = this.set("rawIndices", js.undefined)
+    def setRiceIndices(value: SchemaRiceDeltaEncoding): Self = StObject.set(x, "riceIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRiceHashes(value: SchemaRiceDeltaEncoding): Self = this.set("riceHashes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiceHashes: Self = this.set("riceHashes", js.undefined)
-    
-    @scala.inline
-    def setRiceIndices(value: SchemaRiceDeltaEncoding): Self = this.set("riceIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiceIndices: Self = this.set("riceIndices", js.undefined)
+    def setRiceIndicesUndefined: Self = StObject.set(x, "riceIndices", js.undefined)
   }
 }

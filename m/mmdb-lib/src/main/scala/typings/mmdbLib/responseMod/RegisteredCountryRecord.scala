@@ -1,11 +1,12 @@
 package typings.mmdbLib.responseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisteredCountryRecord extends js.Object {
+trait RegisteredCountryRecord extends StObject {
   
   val geoname_id: Double = js.native
   
@@ -24,33 +25,21 @@ object RegisteredCountryRecord {
   }
   
   @scala.inline
-  implicit class RegisteredCountryRecordOps[Self <: RegisteredCountryRecord] (val x: Self) extends AnyVal {
+  implicit class RegisteredCountryRecordMutableBuilder[Self <: RegisteredCountryRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeoname_id(value: Double): Self = StObject.set(x, "geoname_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIs_in_european_union(value: Boolean): Self = StObject.set(x, "is_in_european_union", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIs_in_european_unionUndefined: Self = StObject.set(x, "is_in_european_union", js.undefined)
     
     @scala.inline
-    def setGeoname_id(value: Double): Self = this.set("geoname_id", value.asInstanceOf[js.Any])
+    def setIso_code(value: String): Self = StObject.set(x, "iso_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIso_code(value: String): Self = this.set("iso_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNames(value: Names): Self = this.set("names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIs_in_european_union(value: Boolean): Self = this.set("is_in_european_union", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIs_in_european_union: Self = this.set("is_in_european_union", js.undefined)
+    def setNames(value: Names): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
   }
 }

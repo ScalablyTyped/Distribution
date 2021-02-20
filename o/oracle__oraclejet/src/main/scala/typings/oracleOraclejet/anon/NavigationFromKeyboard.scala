@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationFromKeyboard extends js.Object {
+trait NavigationFromKeyboard extends StObject {
   
   var navigationFromKeyboard: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object NavigationFromKeyboard {
   }
   
   @scala.inline
-  implicit class NavigationFromKeyboardOps[Self <: NavigationFromKeyboard] (val x: Self) extends AnyVal {
+  implicit class NavigationFromKeyboardMutableBuilder[Self <: NavigationFromKeyboard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNavigationFromKeyboard(value: String): Self = StObject.set(x, "navigationFromKeyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNavigationFromKeyboardUndefined: Self = StObject.set(x, "navigationFromKeyboard", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNavigationToKeyboard(value: String): Self = StObject.set(x, "navigationToKeyboard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationFromKeyboard(value: String): Self = this.set("navigationFromKeyboard", value.asInstanceOf[js.Any])
+    def setNavigationToKeyboardUndefined: Self = StObject.set(x, "navigationToKeyboard", js.undefined)
     
     @scala.inline
-    def deleteNavigationFromKeyboard: Self = this.set("navigationFromKeyboard", js.undefined)
+    def setNavigationToTouch(value: String): Self = StObject.set(x, "navigationToTouch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationToKeyboard(value: String): Self = this.set("navigationToKeyboard", value.asInstanceOf[js.Any])
+    def setNavigationToTouchUndefined: Self = StObject.set(x, "navigationToTouch", js.undefined)
     
     @scala.inline
-    def deleteNavigationToKeyboard: Self = this.set("navigationToKeyboard", js.undefined)
+    def setNewMessage(value: String): Self = StObject.set(x, "newMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationToTouch(value: String): Self = this.set("navigationToTouch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNavigationToTouch: Self = this.set("navigationToTouch", js.undefined)
-    
-    @scala.inline
-    def setNewMessage(value: String): Self = this.set("newMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewMessage: Self = this.set("newMessage", js.undefined)
+    def setNewMessageUndefined: Self = StObject.set(x, "newMessage", js.undefined)
   }
 }

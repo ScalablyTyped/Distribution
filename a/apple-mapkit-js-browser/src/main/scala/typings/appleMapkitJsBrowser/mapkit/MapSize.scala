@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * projected coordinate span.
   */
 @js.native
-trait MapSize extends js.Object {
+trait MapSize extends StObject {
   
   /**
     * Returns a copy of a map size.
@@ -36,36 +37,25 @@ trait MapSize extends js.Object {
 object MapSize {
   
   @scala.inline
-  def apply(copy: () => MapSize, equals: MapSize => Boolean, height: Double, width: Double): MapSize = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  def apply(copy: () => MapSize, equals_ : MapSize => Boolean, height: Double, width: Double): MapSize = {
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[MapSize]
   }
   
   @scala.inline
-  implicit class MapSizeOps[Self <: MapSize] (val x: Self) extends AnyVal {
+  implicit class MapSizeMutableBuilder[Self <: MapSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => MapSize): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_(value: MapSize => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => MapSize): Self = this.set("copy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEquals(value: MapSize => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

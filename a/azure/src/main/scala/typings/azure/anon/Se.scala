@@ -1,11 +1,12 @@
 package typings.azure.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Se extends js.Object {
+trait Se extends StObject {
   
   var se: String = js.native
   
@@ -26,33 +27,21 @@ object Se {
   }
   
   @scala.inline
-  implicit class SeOps[Self <: Se] (val x: Self) extends AnyVal {
+  implicit class SeMutableBuilder[Self <: Se] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSig(value: String): Self = StObject.set(x, "sig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSp(value: String): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSe(value: String): Self = this.set("se", value.asInstanceOf[js.Any])
+    def setSr(value: String): Self = StObject.set(x, "sr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSig(value: String): Self = this.set("sig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSp(value: String): Self = this.set("sp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSr(value: String): Self = this.set("sr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSv(value: String): Self = this.set("sv", value.asInstanceOf[js.Any])
+    def setSv(value: String): Self = StObject.set(x, "sv", value.asInstanceOf[js.Any])
   }
 }

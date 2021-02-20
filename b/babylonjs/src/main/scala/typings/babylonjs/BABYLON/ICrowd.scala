@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICrowd extends js.Object {
+trait ICrowd extends StObject {
   
   /**
     * Add a new agent to the crowd with the specified parameter a corresponding transformNode.
@@ -166,75 +167,63 @@ object ICrowd {
   }
   
   @scala.inline
-  implicit class ICrowdOps[Self <: ICrowd] (val x: Self) extends AnyVal {
+  implicit class ICrowdMutableBuilder[Self <: ICrowd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAgent(value: (Vector3, IAgentParameters, TransformNode) => Double): Self = StObject.set(x, "addAgent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentGoto(value: (Double, Vector3) => Unit): Self = StObject.set(x, "agentGoto", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentTeleport(value: (Double, Vector3) => Unit): Self = StObject.set(x, "agentTeleport", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddAgent(value: (Vector3, IAgentParameters, TransformNode) => Double): Self = this.set("addAgent", js.Any.fromFunction3(value))
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAgentGoto(value: (Double, Vector3) => Unit): Self = this.set("agentGoto", js.Any.fromFunction2(value))
+    def setGetAgentNextTargetPath(value: Double => Vector3): Self = StObject.set(x, "getAgentNextTargetPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAgentTeleport(value: (Double, Vector3) => Unit): Self = this.set("agentTeleport", js.Any.fromFunction2(value))
+    def setGetAgentNextTargetPathToRef(value: (Double, Vector3) => Unit): Self = StObject.set(x, "getAgentNextTargetPathToRef", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setGetAgentPosition(value: Double => Vector3): Self = StObject.set(x, "getAgentPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAgentNextTargetPath(value: Double => Vector3): Self = this.set("getAgentNextTargetPath", js.Any.fromFunction1(value))
+    def setGetAgentPositionToRef(value: (Double, Vector3) => Unit): Self = StObject.set(x, "getAgentPositionToRef", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAgentNextTargetPathToRef(value: (Double, Vector3) => Unit): Self = this.set("getAgentNextTargetPathToRef", js.Any.fromFunction2(value))
+    def setGetAgentState(value: Double => Double): Self = StObject.set(x, "getAgentState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAgentPosition(value: Double => Vector3): Self = this.set("getAgentPosition", js.Any.fromFunction1(value))
+    def setGetAgentVelocity(value: Double => Vector3): Self = StObject.set(x, "getAgentVelocity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAgentPositionToRef(value: (Double, Vector3) => Unit): Self = this.set("getAgentPositionToRef", js.Any.fromFunction2(value))
+    def setGetAgentVelocityToRef(value: (Double, Vector3) => Unit): Self = StObject.set(x, "getAgentVelocityToRef", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAgentState(value: Double => Double): Self = this.set("getAgentState", js.Any.fromFunction1(value))
+    def setGetAgents(value: () => js.Array[Double]): Self = StObject.set(x, "getAgents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAgentVelocity(value: Double => Vector3): Self = this.set("getAgentVelocity", js.Any.fromFunction1(value))
+    def setGetDefaultQueryExtent(value: () => Vector3): Self = StObject.set(x, "getDefaultQueryExtent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAgentVelocityToRef(value: (Double, Vector3) => Unit): Self = this.set("getAgentVelocityToRef", js.Any.fromFunction2(value))
+    def setGetDefaultQueryExtentToRef(value: Vector3 => Unit): Self = StObject.set(x, "getDefaultQueryExtentToRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAgents(value: () => js.Array[Double]): Self = this.set("getAgents", js.Any.fromFunction0(value))
+    def setOverOffmeshConnection(value: Double => Boolean): Self = StObject.set(x, "overOffmeshConnection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultQueryExtent(value: () => Vector3): Self = this.set("getDefaultQueryExtent", js.Any.fromFunction0(value))
+    def setRemoveAgent(value: Double => Unit): Self = StObject.set(x, "removeAgent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDefaultQueryExtentToRef(value: Vector3 => Unit): Self = this.set("getDefaultQueryExtentToRef", js.Any.fromFunction1(value))
+    def setSetDefaultQueryExtent(value: Vector3 => Unit): Self = StObject.set(x, "setDefaultQueryExtent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOverOffmeshConnection(value: Double => Boolean): Self = this.set("overOffmeshConnection", js.Any.fromFunction1(value))
+    def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAgent(value: Double => Unit): Self = this.set("removeAgent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaultQueryExtent(value: Vector3 => Unit): Self = this.set("setDefaultQueryExtent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: Double => Unit): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateAgentParameters(value: (Double, IAgentParameters) => Unit): Self = this.set("updateAgentParameters", js.Any.fromFunction2(value))
+    def setUpdateAgentParameters(value: (Double, IAgentParameters) => Unit): Self = StObject.set(x, "updateAgentParameters", js.Any.fromFunction2(value))
   }
 }

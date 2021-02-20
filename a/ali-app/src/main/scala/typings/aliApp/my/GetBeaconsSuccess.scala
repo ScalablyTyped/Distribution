@@ -1,11 +1,12 @@
 package typings.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBeaconsSuccess extends js.Object {
+trait GetBeaconsSuccess extends StObject {
   
   var beacons: js.Array[Beacon] = js.native
   
@@ -28,30 +29,18 @@ object GetBeaconsSuccess {
   }
   
   @scala.inline
-  implicit class GetBeaconsSuccessOps[Self <: GetBeaconsSuccess] (val x: Self) extends AnyVal {
+  implicit class GetBeaconsSuccessMutableBuilder[Self <: GetBeaconsSuccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrCode(value: String): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeaconsVarargs(value: Beacon*): Self = this.set("beacons", js.Array(value :_*))
-    
-    @scala.inline
-    def setBeacons(value: js.Array[Beacon]): Self = this.set("beacons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrCode(value: String): Self = this.set("errCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

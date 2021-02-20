@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDataflow.anon.Fields
 import typings.maximMazurokGapiClientDataflow.anon.Key
 import typings.maximMazurokGapiClientDataflow.anon.Name
 import typings.maximMazurokGapiClientDataflow.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CatalogTemplatesResource extends js.Object {
+trait CatalogTemplatesResource extends StObject {
   
   /** Creates a new TemplateVersion (Important: not new Template) entry in the spanner table. Requires project_id and display_name (template). */
   def commit(request: Fields): Request[TemplateVersion] = js.native

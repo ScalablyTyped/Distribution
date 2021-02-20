@@ -2,14 +2,14 @@ package typings.imageQ
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.commonMod.IImageDitherer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/image/nearestColor", JSImport.Namespace)
-@js.native
-object nearestColorMod extends js.Object {
+object nearestColorMod {
   
+  @JSImport("image-q/dist/image/nearestColor", "NearestColor")
   @js.native
   class NearestColor protected () extends IImageDitherer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()

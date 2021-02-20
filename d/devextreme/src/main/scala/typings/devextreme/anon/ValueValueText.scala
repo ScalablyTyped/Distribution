@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueValueText extends js.Object {
+trait ValueValueText extends StObject {
   
   var value: js.UndefOr[typings.std.Date | Double | String] = js.native
   
@@ -20,30 +21,18 @@ object ValueValueText {
   }
   
   @scala.inline
-  implicit class ValueValueTextOps[Self <: ValueValueText] (val x: Self) extends AnyVal {
+  implicit class ValueValueTextMutableBuilder[Self <: ValueValueText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValue(value: typings.std.Date | Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
     @scala.inline
-    def setValue(value: typings.std.Date | Double | String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueText(value: String): Self = this.set("valueText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueText: Self = this.set("valueText", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

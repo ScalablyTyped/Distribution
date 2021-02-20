@@ -1,5 +1,6 @@
 package typings.titanium
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dictionary of options for the <Titanium.UI.Window.open> method.
   */
 @js.native
-trait openWindowParams extends js.Object {
+trait openWindowParams extends StObject {
   
   /**
     * Animation resource to run on the activity being opened.
@@ -99,114 +100,102 @@ object openWindowParams {
   }
   
   @scala.inline
-  implicit class openWindowParamsOps[Self <: openWindowParams] (val x: Self) extends AnyVal {
+  implicit class openWindowParamsMutableBuilder[Self <: openWindowParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityEnterAnimation(value: Double): Self = StObject.set(x, "activityEnterAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityEnterAnimationUndefined: Self = StObject.set(x, "activityEnterAnimation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityExitAnimation(value: Double): Self = StObject.set(x, "activityExitAnimation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityEnterAnimation(value: Double): Self = this.set("activityEnterAnimation", value.asInstanceOf[js.Any])
+    def setActivityExitAnimationUndefined: Self = StObject.set(x, "activityExitAnimation", js.undefined)
     
     @scala.inline
-    def deleteActivityEnterAnimation: Self = this.set("activityEnterAnimation", js.undefined)
+    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityExitAnimation(value: Double): Self = this.set("activityExitAnimation", value.asInstanceOf[js.Any])
+    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
     @scala.inline
-    def deleteActivityExitAnimation: Self = this.set("activityExitAnimation", js.undefined)
+    def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteAnimated: Self = this.set("animated", js.undefined)
+    def setForceModal(value: Boolean): Self = StObject.set(x, "forceModal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setForceModalUndefined: Self = StObject.set(x, "forceModal", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceModal(value: Boolean): Self = this.set("forceModal", value.asInstanceOf[js.Any])
+    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
     @scala.inline
-    def deleteForceModal: Self = this.set("forceModal", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setModalStyle(value: Double): Self = StObject.set(x, "modalStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setModalStyleUndefined: Self = StObject.set(x, "modalStyle", js.undefined)
     
     @scala.inline
-    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    def setModalTransitionStyle(value: Double): Self = StObject.set(x, "modalTransitionStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModal: Self = this.set("modal", js.undefined)
+    def setModalTransitionStyleUndefined: Self = StObject.set(x, "modalTransitionStyle", js.undefined)
     
     @scala.inline
-    def setModalStyle(value: Double): Self = this.set("modalStyle", value.asInstanceOf[js.Any])
+    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
     @scala.inline
-    def deleteModalStyle: Self = this.set("modalStyle", js.undefined)
+    def setNavBarHidden(value: Boolean): Self = StObject.set(x, "navBarHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalTransitionStyle(value: Double): Self = this.set("modalTransitionStyle", value.asInstanceOf[js.Any])
+    def setNavBarHiddenUndefined: Self = StObject.set(x, "navBarHidden", js.undefined)
     
     @scala.inline
-    def deleteModalTransitionStyle: Self = this.set("modalTransitionStyle", js.undefined)
+    def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavBarHidden(value: Boolean): Self = this.set("navBarHidden", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteNavBarHidden: Self = this.set("navBarHidden", js.undefined)
+    def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setTransition(value: Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: Double): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

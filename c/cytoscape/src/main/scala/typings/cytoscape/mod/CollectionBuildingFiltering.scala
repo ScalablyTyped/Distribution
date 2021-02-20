@@ -2,6 +2,7 @@ package typings.cytoscape.mod
 
 import typings.cytoscape.anon.Both
 import typings.cytoscape.anon.Ele
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/building--filtering
   */
 @js.native
-trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
+trait CollectionBuildingFiltering[TIn, TOut] extends StObject {
+  
+  def apply(eles: CollectionArgument): CollectionReturnValue = js.native
+  def apply(eles: Selector): CollectionReturnValue = js.native
   
   /**
     * Get an element in the collection from its ID in a very performant way.
@@ -18,9 +22,6 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
     */
   @JSName("$id")
   def $id(id: String): TOut = js.native
-  
-  def apply(eles: CollectionArgument): CollectionReturnValue = js.native
-  def apply(eles: Selector): CollectionReturnValue = js.native
   
   @JSName("&")
   def Ampersand(eles: CollectionArgument): CollectionReturnValue = js.native

@@ -3,6 +3,7 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormStrings.array
 import typings.react.mod.ReactElement
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,101 +48,89 @@ object ArrayRule {
   }
   
   @scala.inline
-  implicit class ArrayRuleOps[Self <: ArrayRule] (val x: Self) extends AnyVal {
+  implicit class ArrayRuleMutableBuilder[Self <: ArrayRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultField(value: RuleObject): Self = StObject.set(x, "defaultField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultFieldUndefined: Self = StObject.set(x, "defaultField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnum(value: js.Array[StoreValue]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: array): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
     @scala.inline
-    def setDefaultField(value: RuleObject): Self = this.set("defaultField", value.asInstanceOf[js.Any])
+    def setEnumVarargs(value: StoreValue*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultField: Self = this.set("defaultField", js.undefined)
+    def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumVarargs(value: StoreValue*): Self = this.set("enum", js.Array(value :_*))
+    def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
     
     @scala.inline
-    def setEnum(value: js.Array[StoreValue]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnum: Self = this.set("enum", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setLen(value: Double): Self = this.set("len", value.asInstanceOf[js.Any])
+    def setMessage(value: String | ReactElement): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLen: Self = this.set("len", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def setMessage(value: String | ReactElement): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setPattern(value: RegExp): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setTransform(value: /* value */ StoreValue => StoreValue): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setValidateTrigger(value: String | js.Array[String]): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: /* value */ StoreValue => StoreValue): Self = this.set("transform", js.Any.fromFunction1(value))
+    def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
-    
-    @scala.inline
-    def setValidateTriggerVarargs(value: String*): Self = this.set("validateTrigger", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidateTrigger(value: String | js.Array[String]): Self = this.set("validateTrigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateTrigger: Self = this.set("validateTrigger", js.undefined)
+    def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
     
     @scala.inline
     def setValidator(
       value: (/* rule */ RuleObject, /* value */ StoreValue, /* callback */ js.Function1[/* error */ js.UndefOr[String], Unit]) => (js.Promise[Unit | js.Any]) | Unit
-    ): Self = this.set("validator", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteValidator: Self = this.set("validator", js.undefined)
+    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     
     @scala.inline
-    def setWhitespace(value: Boolean): Self = this.set("whitespace", value.asInstanceOf[js.Any])
+    def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhitespace: Self = this.set("whitespace", js.undefined)
+    def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }
 }

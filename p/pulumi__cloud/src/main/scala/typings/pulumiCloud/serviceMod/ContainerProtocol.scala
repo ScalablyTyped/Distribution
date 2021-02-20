@@ -1,5 +1,6 @@
 package typings.pulumiCloud.serviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pulumiCloud.pulumiCloudStrings.http
   - typings.pulumiCloud.pulumiCloudStrings.https
 */
-trait ContainerProtocol extends js.Object
+trait ContainerProtocol extends StObject
 object ContainerProtocol {
   
   @scala.inline

@@ -1,22 +1,27 @@
 package typings.jestWhen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-when", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("jest-when", "resetAllWhenMocks")
+  @js.native
   def resetAllWhenMocks(): Unit = js.native
   
+  @JSImport("jest-when", "verifyAllWhenMocksCalled")
+  @js.native
   def verifyAllWhenMocksCalled(): Unit = js.native
   
+  @JSImport("jest-when", "when")
+  @js.native
   val when: When_ = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.MockInstance<T, Y> * / any */ @js.native
-  trait WhenMock[T, Y /* <: js.Array[_] */] extends js.Object {
+  trait WhenMock[T, Y /* <: js.Array[_] */] extends StObject {
     
     def calledWith(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param matchers because its type Y is not an array type */ matchers: Y

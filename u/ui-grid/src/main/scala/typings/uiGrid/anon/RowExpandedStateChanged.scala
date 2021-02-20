@@ -2,12 +2,13 @@ package typings.uiGrid.anon
 
 import typings.angular.mod.IScope
 import typings.uiGrid.mod.expandable.rowExpandedStateChangedHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowExpandedStateChanged[TEntity] extends js.Object {
+trait RowExpandedStateChanged[TEntity] extends StObject {
   
   /**
     * raised when cell editing is complete
@@ -25,21 +26,9 @@ object RowExpandedStateChanged {
   }
   
   @scala.inline
-  implicit class RowExpandedStateChangedOps[Self <: RowExpandedStateChanged[_], TEntity] (val x: Self with RowExpandedStateChanged[TEntity]) extends AnyVal {
+  implicit class RowExpandedStateChangedMutableBuilder[Self <: RowExpandedStateChanged[_], TEntity] (val x: Self with RowExpandedStateChanged[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRowExpandedStateChanged(value: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): Self = this.set("rowExpandedStateChanged", js.Any.fromFunction2(value))
+    def setRowExpandedStateChanged(value: (IScope, rowExpandedStateChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowExpandedStateChanged", js.Any.fromFunction2(value))
   }
 }

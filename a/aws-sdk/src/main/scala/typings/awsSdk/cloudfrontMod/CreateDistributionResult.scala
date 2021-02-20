@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDistributionResult extends js.Object {
+trait CreateDistributionResult extends StObject {
   
   /**
     * The distribution's information.
@@ -31,36 +32,24 @@ object CreateDistributionResult {
   }
   
   @scala.inline
-  implicit class CreateDistributionResultOps[Self <: CreateDistributionResult] (val x: Self) extends AnyVal {
+  implicit class CreateDistributionResultMutableBuilder[Self <: CreateDistributionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistribution(value: Distribution): Self = StObject.set(x, "Distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionUndefined: Self = StObject.set(x, "Distribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: Distribution): Self = this.set("Distribution", value.asInstanceOf[js.Any])
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def deleteDistribution: Self = this.set("Distribution", js.undefined)
+    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("Location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

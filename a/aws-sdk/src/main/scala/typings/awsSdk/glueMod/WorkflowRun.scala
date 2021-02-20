@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowRun extends js.Object {
+trait WorkflowRun extends StObject {
   
   /**
     * The date and time when the workflow run completed.
@@ -66,78 +67,66 @@ object WorkflowRun {
   }
   
   @scala.inline
-  implicit class WorkflowRunOps[Self <: WorkflowRun] (val x: Self) extends AnyVal {
+  implicit class WorkflowRunMutableBuilder[Self <: WorkflowRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedOn(value: TimestampValue): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: ErrorString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedOn(value: TimestampValue): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    def setGraph(value: WorkflowGraph): Self = StObject.set(x, "Graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setGraphUndefined: Self = StObject.set(x, "Graph", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraph(value: WorkflowGraph): Self = this.set("Graph", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteGraph: Self = this.set("Graph", js.undefined)
+    def setPreviousRunId(value: IdString): Self = StObject.set(x, "PreviousRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPreviousRunIdUndefined: Self = StObject.set(x, "PreviousRunId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setStartedOn(value: TimestampValue): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousRunId(value: IdString): Self = this.set("PreviousRunId", value.asInstanceOf[js.Any])
+    def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
     @scala.inline
-    def deletePreviousRunId: Self = this.set("PreviousRunId", js.undefined)
+    def setStatistics(value: WorkflowRunStatistics): Self = StObject.set(x, "Statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedOn(value: TimestampValue): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
+    def setStatisticsUndefined: Self = StObject.set(x, "Statistics", js.undefined)
     
     @scala.inline
-    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
+    def setStatus(value: WorkflowRunStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatistics(value: WorkflowRunStatistics): Self = this.set("Statistics", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatistics: Self = this.set("Statistics", js.undefined)
+    def setWorkflowRunId(value: IdString): Self = StObject.set(x, "WorkflowRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: WorkflowRunStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setWorkflowRunIdUndefined: Self = StObject.set(x, "WorkflowRunId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setWorkflowRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "WorkflowRunProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkflowRunId(value: IdString): Self = this.set("WorkflowRunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowRunId: Self = this.set("WorkflowRunId", js.undefined)
-    
-    @scala.inline
-    def setWorkflowRunProperties(value: WorkflowRunProperties): Self = this.set("WorkflowRunProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowRunProperties: Self = this.set("WorkflowRunProperties", js.undefined)
+    def setWorkflowRunPropertiesUndefined: Self = StObject.set(x, "WorkflowRunProperties", js.undefined)
   }
 }

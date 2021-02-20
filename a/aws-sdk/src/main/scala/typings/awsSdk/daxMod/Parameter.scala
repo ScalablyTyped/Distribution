@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parameter extends js.Object {
+trait Parameter extends StObject {
   
   /**
     * A range of values within which the parameter can be set.
@@ -66,81 +67,69 @@ object Parameter {
   }
   
   @scala.inline
-  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedValues(value: String): Self = StObject.set(x, "AllowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeType(value: ChangeType): Self = StObject.set(x, "ChangeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedValues(value: String): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    def setChangeTypeUndefined: Self = StObject.set(x, "ChangeType", js.undefined)
     
     @scala.inline
-    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    def setDataType(value: String): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: ChangeType): Self = this.set("ChangeType", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
     @scala.inline
-    def deleteChangeType: Self = this.set("ChangeType", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("DataType", js.undefined)
+    def setIsModifiable(value: IsModifiable): Self = StObject.set(x, "IsModifiable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIsModifiableUndefined: Self = StObject.set(x, "IsModifiable", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setNodeTypeSpecificValues(value: NodeTypeSpecificValueList): Self = StObject.set(x, "NodeTypeSpecificValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsModifiable(value: IsModifiable): Self = this.set("IsModifiable", value.asInstanceOf[js.Any])
+    def setNodeTypeSpecificValuesUndefined: Self = StObject.set(x, "NodeTypeSpecificValues", js.undefined)
     
     @scala.inline
-    def deleteIsModifiable: Self = this.set("IsModifiable", js.undefined)
+    def setNodeTypeSpecificValuesVarargs(value: NodeTypeSpecificValue*): Self = StObject.set(x, "NodeTypeSpecificValues", js.Array(value :_*))
     
     @scala.inline
-    def setNodeTypeSpecificValuesVarargs(value: NodeTypeSpecificValue*): Self = this.set("NodeTypeSpecificValues", js.Array(value :_*))
+    def setParameterName(value: String): Self = StObject.set(x, "ParameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeTypeSpecificValues(value: NodeTypeSpecificValueList): Self = this.set("NodeTypeSpecificValues", value.asInstanceOf[js.Any])
+    def setParameterNameUndefined: Self = StObject.set(x, "ParameterName", js.undefined)
     
     @scala.inline
-    def deleteNodeTypeSpecificValues: Self = this.set("NodeTypeSpecificValues", js.undefined)
+    def setParameterType(value: ParameterType): Self = StObject.set(x, "ParameterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterName(value: String): Self = this.set("ParameterName", value.asInstanceOf[js.Any])
+    def setParameterTypeUndefined: Self = StObject.set(x, "ParameterType", js.undefined)
     
     @scala.inline
-    def deleteParameterName: Self = this.set("ParameterName", js.undefined)
+    def setParameterValue(value: String): Self = StObject.set(x, "ParameterValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterType(value: ParameterType): Self = this.set("ParameterType", value.asInstanceOf[js.Any])
+    def setParameterValueUndefined: Self = StObject.set(x, "ParameterValue", js.undefined)
     
     @scala.inline
-    def deleteParameterType: Self = this.set("ParameterType", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValue(value: String): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterValue: Self = this.set("ParameterValue", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePackageVersionsStatusResult extends js.Object {
+trait UpdatePackageVersionsStatusResult extends StObject {
   
   /**
     *  A list of SuccessfulPackageVersionInfo objects, one for each package version with a status that successfully updated. 
@@ -26,30 +27,18 @@ object UpdatePackageVersionsStatusResult {
   }
   
   @scala.inline
-  implicit class UpdatePackageVersionsStatusResultOps[Self <: UpdatePackageVersionsStatusResult] (val x: Self) extends AnyVal {
+  implicit class UpdatePackageVersionsStatusResultMutableBuilder[Self <: UpdatePackageVersionsStatusResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedVersions(value: PackageVersionErrorMap): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedVersionsUndefined: Self = StObject.set(x, "failedVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessfulVersions(value: SuccessfulPackageVersionInfoMap): Self = StObject.set(x, "successfulVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedVersions(value: PackageVersionErrorMap): Self = this.set("failedVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedVersions: Self = this.set("failedVersions", js.undefined)
-    
-    @scala.inline
-    def setSuccessfulVersions(value: SuccessfulPackageVersionInfoMap): Self = this.set("successfulVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessfulVersions: Self = this.set("successfulVersions", js.undefined)
+    def setSuccessfulVersionsUndefined: Self = StObject.set(x, "successfulVersions", js.undefined)
   }
 }

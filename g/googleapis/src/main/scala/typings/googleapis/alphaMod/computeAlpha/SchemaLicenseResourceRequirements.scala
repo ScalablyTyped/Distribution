@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLicenseResourceRequirements extends js.Object {
+trait SchemaLicenseResourceRequirements extends StObject {
   
   /**
     * Minimum number of guest cpus required to use the Instance. Enforced at
@@ -28,30 +29,18 @@ object SchemaLicenseResourceRequirements {
   }
   
   @scala.inline
-  implicit class SchemaLicenseResourceRequirementsOps[Self <: SchemaLicenseResourceRequirements] (val x: Self) extends AnyVal {
+  implicit class SchemaLicenseResourceRequirementsMutableBuilder[Self <: SchemaLicenseResourceRequirements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinGuestCpuCount(value: Double): Self = StObject.set(x, "minGuestCpuCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinGuestCpuCountUndefined: Self = StObject.set(x, "minGuestCpuCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinMemoryMb(value: Double): Self = StObject.set(x, "minMemoryMb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinGuestCpuCount(value: Double): Self = this.set("minGuestCpuCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinGuestCpuCount: Self = this.set("minGuestCpuCount", js.undefined)
-    
-    @scala.inline
-    def setMinMemoryMb(value: Double): Self = this.set("minMemoryMb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinMemoryMb: Self = this.set("minMemoryMb", js.undefined)
+    def setMinMemoryMbUndefined: Self = StObject.set(x, "minMemoryMb", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Size extends js.Object {
+trait Size extends StObject {
   
   def add(size: Size): Size = js.native
   def add(size: SizeLiteral): Size = js.native

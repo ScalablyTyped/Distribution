@@ -2,16 +2,16 @@ package typings.prex
 
 import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prex/out/lib/countdown", JSImport.Namespace)
-@js.native
-object countdownMod extends js.Object {
+object countdownMod {
   
+  @JSImport("prex/out/lib/countdown", "CountdownEvent")
   @js.native
-  class CountdownEvent protected () extends js.Object {
+  class CountdownEvent protected () extends StObject {
     /**
       * Initializes a new instance of the CountdownEvent class.
       *

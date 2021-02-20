@@ -2,13 +2,14 @@ package typings.johnnyFive.mod
 
 import typings.johnnyFive.johnnyFiveStrings.connect
 import typings.johnnyFive.johnnyFiveStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Board")
 @js.native
-class Board () extends js.Object {
+class Board () extends StObject {
   def this(option: BoardOption) = this()
   
   def analogRead(pin: String, cb: js.Function1[/* item */ Double, Unit]): Unit = js.native

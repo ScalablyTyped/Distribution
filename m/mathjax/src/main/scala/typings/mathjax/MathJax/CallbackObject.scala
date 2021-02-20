@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallbackObject extends js.Object {
+trait CallbackObject extends StObject {
   
   /*Set this to true if you want to be able to call the callback more than once. (This is the case for signal
     * listeners, for example).*/
@@ -45,39 +46,27 @@ object CallbackObject {
   }
   
   @scala.inline
-  implicit class CallbackObjectOps[Self <: CallbackObject] (val x: Self) extends AnyVal {
+  implicit class CallbackObjectMutableBuilder[Self <: CallbackObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoReset(value: Boolean): Self = StObject.set(x, "autoReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoReset(value: Boolean): Self = this.set("autoReset", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setCalled(value: Boolean): Self = this.set("called", value.asInstanceOf[js.Any])
+    def setHook(value: Double): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHook(value: Double): Self = this.set("hook", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: js.Any): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

@@ -1,14 +1,14 @@
 package typings.tsMockito
 
 import typings.tsMockito.matcherMod.Matcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-mockito/lib/matcher/type/NotNullMatcher", JSImport.Namespace)
-@js.native
-object notNullMatcherMod extends js.Object {
+object notNullMatcherMod {
   
+  @JSImport("ts-mockito/lib/matcher/type/NotNullMatcher", "NotNullMatcher")
   @js.native
   class NotNullMatcher () extends Matcher
 }

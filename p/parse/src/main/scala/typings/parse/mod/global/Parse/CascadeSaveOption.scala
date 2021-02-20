@@ -1,11 +1,12 @@
 package typings.parse.mod.global.Parse
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CascadeSaveOption extends js.Object {
+trait CascadeSaveOption extends StObject {
   
   /** If `false`, nested objects will not be saved (default is `true`). */
   var cascadeSave: js.UndefOr[Boolean] = js.native
@@ -19,24 +20,12 @@ object CascadeSaveOption {
   }
   
   @scala.inline
-  implicit class CascadeSaveOptionOps[Self <: CascadeSaveOption] (val x: Self) extends AnyVal {
+  implicit class CascadeSaveOptionMutableBuilder[Self <: CascadeSaveOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCascadeSave(value: Boolean): Self = StObject.set(x, "cascadeSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCascadeSave(value: Boolean): Self = this.set("cascadeSave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCascadeSave: Self = this.set("cascadeSave", js.undefined)
+    def setCascadeSaveUndefined: Self = StObject.set(x, "cascadeSave", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISPClientAutoFillData extends js.Object {
+trait ISPClientAutoFillData extends StObject {
   
   var AutoFillDisplayText: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object ISPClientAutoFillData {
   }
   
   @scala.inline
-  implicit class ISPClientAutoFillDataOps[Self <: ISPClientAutoFillData] (val x: Self) extends AnyVal {
+  implicit class ISPClientAutoFillDataMutableBuilder[Self <: ISPClientAutoFillData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFillDisplayText(value: String): Self = StObject.set(x, "AutoFillDisplayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFillDisplayTextUndefined: Self = StObject.set(x, "AutoFillDisplayText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoFillKey(value: js.Any): Self = StObject.set(x, "AutoFillKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFillDisplayText(value: String): Self = this.set("AutoFillDisplayText", value.asInstanceOf[js.Any])
+    def setAutoFillKeyUndefined: Self = StObject.set(x, "AutoFillKey", js.undefined)
     
     @scala.inline
-    def deleteAutoFillDisplayText: Self = this.set("AutoFillDisplayText", js.undefined)
+    def setAutoFillMenuOptionType(value: Double): Self = StObject.set(x, "AutoFillMenuOptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFillKey(value: js.Any): Self = this.set("AutoFillKey", value.asInstanceOf[js.Any])
+    def setAutoFillMenuOptionTypeUndefined: Self = StObject.set(x, "AutoFillMenuOptionType", js.undefined)
     
     @scala.inline
-    def deleteAutoFillKey: Self = this.set("AutoFillKey", js.undefined)
+    def setAutoFillSubDisplayText(value: String): Self = StObject.set(x, "AutoFillSubDisplayText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFillMenuOptionType(value: Double): Self = this.set("AutoFillMenuOptionType", value.asInstanceOf[js.Any])
+    def setAutoFillSubDisplayTextUndefined: Self = StObject.set(x, "AutoFillSubDisplayText", js.undefined)
     
     @scala.inline
-    def deleteAutoFillMenuOptionType: Self = this.set("AutoFillMenuOptionType", js.undefined)
+    def setAutoFillTitleText(value: String): Self = StObject.set(x, "AutoFillTitleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFillSubDisplayText(value: String): Self = this.set("AutoFillSubDisplayText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoFillSubDisplayText: Self = this.set("AutoFillSubDisplayText", js.undefined)
-    
-    @scala.inline
-    def setAutoFillTitleText(value: String): Self = this.set("AutoFillTitleText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoFillTitleText: Self = this.set("AutoFillTitleText", js.undefined)
+    def setAutoFillTitleTextUndefined: Self = StObject.set(x, "AutoFillTitleText", js.undefined)
   }
 }

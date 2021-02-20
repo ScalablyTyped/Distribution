@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.plotlyJsStrings.y10
   - typings.plotlyJs.plotlyJsStrings.y11
 */
-trait YAxisName extends js.Object
+trait YAxisName extends StObject
 object YAxisName {
   
   @scala.inline

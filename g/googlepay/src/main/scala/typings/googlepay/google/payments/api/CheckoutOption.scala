@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.DEFAULT
   - typings.googlepay.googlepayStrings.COMPLETE_IMMEDIATE_PURCHASE
 */
-trait CheckoutOption extends js.Object
+trait CheckoutOption extends StObject
 object CheckoutOption {
   
   @scala.inline

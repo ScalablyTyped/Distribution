@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request passed to UpdateTransferJob.
   */
 @js.native
-trait SchemaUpdateTransferJobRequest extends js.Object {
+trait SchemaUpdateTransferJobRequest extends StObject {
   
   /**
     * The ID of the Google Cloud Platform Console project that owns the job.
@@ -43,36 +44,24 @@ object SchemaUpdateTransferJobRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateTransferJobRequestOps[Self <: SchemaUpdateTransferJobRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateTransferJobRequestMutableBuilder[Self <: SchemaUpdateTransferJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransferJob(value: SchemaTransferJob): Self = StObject.set(x, "transferJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setTransferJobUndefined: Self = StObject.set(x, "transferJob", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setUpdateTransferJobFieldMask(value: String): Self = StObject.set(x, "updateTransferJobFieldMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferJob(value: SchemaTransferJob): Self = this.set("transferJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferJob: Self = this.set("transferJob", js.undefined)
-    
-    @scala.inline
-    def setUpdateTransferJobFieldMask(value: String): Self = this.set("updateTransferJobFieldMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTransferJobFieldMask: Self = this.set("updateTransferJobFieldMask", js.undefined)
+    def setUpdateTransferJobFieldMaskUndefined: Self = StObject.set(x, "updateTransferJobFieldMask", js.undefined)
   }
 }

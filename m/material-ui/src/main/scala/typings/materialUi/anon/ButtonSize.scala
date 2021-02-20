@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonSize extends js.Object {
+trait ButtonSize extends StObject {
   
   var buttonSize: js.UndefOr[Double] = js.native
   
@@ -32,66 +33,54 @@ object ButtonSize {
   }
   
   @scala.inline
-  implicit class ButtonSizeOps[Self <: ButtonSize] (val x: Self) extends AnyVal {
+  implicit class ButtonSizeMutableBuilder[Self <: ButtonSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonSize(value: Double): Self = StObject.set(x, "buttonSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonSizeUndefined: Self = StObject.set(x, "buttonSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonSize(value: Double): Self = this.set("buttonSize", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteButtonSize: Self = this.set("buttonSize", js.undefined)
+    def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDisabledColorUndefined: Self = StObject.set(x, "disabledColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDisabledTextColor(value: String): Self = StObject.set(x, "disabledTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledColor(value: String): Self = this.set("disabledColor", value.asInstanceOf[js.Any])
+    def setDisabledTextColorUndefined: Self = StObject.set(x, "disabledTextColor", js.undefined)
     
     @scala.inline
-    def deleteDisabledColor: Self = this.set("disabledColor", js.undefined)
+    def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledTextColor(value: String): Self = this.set("disabledTextColor", value.asInstanceOf[js.Any])
+    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     @scala.inline
-    def deleteDisabledTextColor: Self = this.set("disabledTextColor", js.undefined)
+    def setMiniSize(value: Double): Self = StObject.set(x, "miniSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setMiniSizeUndefined: Self = StObject.set(x, "miniSize", js.undefined)
     
     @scala.inline
-    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiniSize(value: Double): Self = this.set("miniSize", value.asInstanceOf[js.Any])
+    def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
     
     @scala.inline
-    def deleteMiniSize: Self = this.set("miniSize", js.undefined)
+    def setSecondaryIconColor(value: String): Self = StObject.set(x, "secondaryIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryColor(value: String): Self = this.set("secondaryColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryColor: Self = this.set("secondaryColor", js.undefined)
-    
-    @scala.inline
-    def setSecondaryIconColor(value: String): Self = this.set("secondaryIconColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryIconColor: Self = this.set("secondaryIconColor", js.undefined)
+    def setSecondaryIconColorUndefined: Self = StObject.set(x, "secondaryIconColor", js.undefined)
   }
 }

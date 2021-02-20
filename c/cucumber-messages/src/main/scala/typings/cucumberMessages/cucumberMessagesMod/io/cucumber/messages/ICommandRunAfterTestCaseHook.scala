@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandRunAfterTestCaseHook. */
 @js.native
-trait ICommandRunAfterTestCaseHook extends js.Object {
+trait ICommandRunAfterTestCaseHook extends StObject {
   
   /** CommandRunAfterTestCaseHook actionId */
   var actionId: js.UndefOr[String | Null] = js.native
@@ -26,45 +27,33 @@ object ICommandRunAfterTestCaseHook {
   }
   
   @scala.inline
-  implicit class ICommandRunAfterTestCaseHookOps[Self <: ICommandRunAfterTestCaseHook] (val x: Self) extends AnyVal {
+  implicit class ICommandRunAfterTestCaseHookMutableBuilder[Self <: ICommandRunAfterTestCaseHook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
     @scala.inline
-    def setActionId(value: String): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    def setHookId(value: String): Self = StObject.set(x, "hookId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActionId: Self = this.set("actionId", js.undefined)
+    def setHookIdNull: Self = StObject.set(x, "hookId", null)
     
     @scala.inline
-    def setActionIdNull: Self = this.set("actionId", null)
+    def setHookIdUndefined: Self = StObject.set(x, "hookId", js.undefined)
     
     @scala.inline
-    def setHookId(value: String): Self = this.set("hookId", value.asInstanceOf[js.Any])
+    def setTestCaseId(value: String): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHookId: Self = this.set("hookId", js.undefined)
+    def setTestCaseIdNull: Self = StObject.set(x, "testCaseId", null)
     
     @scala.inline
-    def setHookIdNull: Self = this.set("hookId", null)
-    
-    @scala.inline
-    def setTestCaseId(value: String): Self = this.set("testCaseId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestCaseId: Self = this.set("testCaseId", js.undefined)
-    
-    @scala.inline
-    def setTestCaseIdNull: Self = this.set("testCaseId", null)
+    def setTestCaseIdUndefined: Self = StObject.set(x, "testCaseId", js.undefined)
   }
 }

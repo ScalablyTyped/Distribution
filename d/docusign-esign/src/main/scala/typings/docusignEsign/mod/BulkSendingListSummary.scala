@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkSendingListSummary extends js.Object {
+trait BulkSendingListSummary extends StObject {
   
   /**
     * The GUID of the bulk send list. This property is created after you post a new bulk send list.
@@ -36,42 +37,30 @@ object BulkSendingListSummary {
   }
   
   @scala.inline
-  implicit class BulkSendingListSummaryOps[Self <: BulkSendingListSummary] (val x: Self) extends AnyVal {
+  implicit class BulkSendingListSummaryMutableBuilder[Self <: BulkSendingListSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulkSendListId(value: String): Self = StObject.set(x, "bulkSendListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulkSendListIdUndefined: Self = StObject.set(x, "bulkSendListId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedByUser(value: String): Self = StObject.set(x, "createdByUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulkSendListId(value: String): Self = this.set("bulkSendListId", value.asInstanceOf[js.Any])
+    def setCreatedByUserUndefined: Self = StObject.set(x, "createdByUser", js.undefined)
     
     @scala.inline
-    def deleteBulkSendListId: Self = this.set("bulkSendListId", js.undefined)
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedByUser(value: String): Self = this.set("createdByUser", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
     @scala.inline
-    def deleteCreatedByUser: Self = this.set("createdByUser", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

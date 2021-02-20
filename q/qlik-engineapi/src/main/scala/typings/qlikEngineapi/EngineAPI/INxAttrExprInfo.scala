@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxAttrExprInfo...
   */
 @js.native
-trait INxAttrExprInfo extends js.Object {
+trait INxAttrExprInfo extends StObject {
   
   /**
     * Is continuous axis used.
@@ -44,33 +45,21 @@ object INxAttrExprInfo {
   }
   
   @scala.inline
-  implicit class INxAttrExprInfoOps[Self <: INxAttrExprInfo] (val x: Self) extends AnyVal {
+  implicit class INxAttrExprInfoMutableBuilder[Self <: INxAttrExprInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQIsCyclic(value: Boolean): Self = StObject.set(x, "qIsCyclic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQContinuousAxes(value: Boolean): Self = this.set("qContinuousAxes", value.asInstanceOf[js.Any])
+    def setQMax(value: Double): Self = StObject.set(x, "qMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFallbackTitle(value: String): Self = this.set("qFallbackTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQIsCyclic(value: Boolean): Self = this.set("qIsCyclic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMax(value: Double): Self = this.set("qMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQMin(value: Double): Self = this.set("qMin", value.asInstanceOf[js.Any])
+    def setQMin(value: Double): Self = StObject.set(x, "qMin", value.asInstanceOf[js.Any])
   }
 }

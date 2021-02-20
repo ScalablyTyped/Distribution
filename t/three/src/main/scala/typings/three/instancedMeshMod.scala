@@ -8,14 +8,14 @@ import typings.three.materialMod.Material
 import typings.three.matrix4Mod.Matrix4
 import typings.three.meshMod.Mesh
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/objects/InstancedMesh", JSImport.Namespace)
-@js.native
-object instancedMeshMod extends js.Object {
+object instancedMeshMod {
   
+  @JSImport("three/src/objects/InstancedMesh", "InstancedMesh")
   @js.native
   class InstancedMesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] protected () extends Mesh[TGeometry, TMaterial] {
     def this(geometry: TGeometry, material: TMaterial, count: Double) = this()

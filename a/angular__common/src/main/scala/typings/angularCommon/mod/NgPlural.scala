@@ -1,12 +1,13 @@
 package typings.angularCommon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgPlural")
 @js.native
-class NgPlural protected () extends js.Object {
+class NgPlural protected () extends StObject {
   def this(_localization: NgLocalization) = this()
   
   var _activateView: js.Any = js.native

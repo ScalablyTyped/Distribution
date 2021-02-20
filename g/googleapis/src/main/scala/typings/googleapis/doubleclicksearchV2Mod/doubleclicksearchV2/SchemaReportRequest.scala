@@ -4,6 +4,7 @@ import typings.googleapis.anon.AdGroupId
 import typings.googleapis.anon.ChangedAttributesSinceTimestamp
 import typings.googleapis.anon.Column
 import typings.googleapis.anon.SortOrder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request object used to create a DoubleClick Search report.
   */
 @js.native
-trait SchemaReportRequest extends js.Object {
+trait SchemaReportRequest extends StObject {
   
   /**
     * The columns to include in the report. This includes both DoubleClick
@@ -120,111 +121,99 @@ object SchemaReportRequest {
   }
   
   @scala.inline
-  implicit class SchemaReportRequestOps[Self <: SchemaReportRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaReportRequestMutableBuilder[Self <: SchemaReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[SchemaReportApiColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: SchemaReportApiColumnSpec*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: SchemaReportApiColumnSpec*): Self = this.set("columns", js.Array(value :_*))
+    def setDownloadFormat(value: String): Self = StObject.set(x, "downloadFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[SchemaReportApiColumnSpec]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDownloadFormatUndefined: Self = StObject.set(x, "downloadFormat", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setFilters(value: js.Array[Column]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadFormat(value: String): Self = this.set("downloadFormat", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def deleteDownloadFormat: Self = this.set("downloadFormat", js.undefined)
+    def setFiltersVarargs(value: Column*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Column*): Self = this.set("filters", js.Array(value :_*))
+    def setIncludeDeletedEntities(value: Boolean): Self = StObject.set(x, "includeDeletedEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: js.Array[Column]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setIncludeDeletedEntitiesUndefined: Self = StObject.set(x, "includeDeletedEntities", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setIncludeRemovedEntities(value: Boolean): Self = StObject.set(x, "includeRemovedEntities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDeletedEntities(value: Boolean): Self = this.set("includeDeletedEntities", value.asInstanceOf[js.Any])
+    def setIncludeRemovedEntitiesUndefined: Self = StObject.set(x, "includeRemovedEntities", js.undefined)
     
     @scala.inline
-    def deleteIncludeDeletedEntities: Self = this.set("includeDeletedEntities", js.undefined)
+    def setMaxRowsPerFile(value: Double): Self = StObject.set(x, "maxRowsPerFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeRemovedEntities(value: Boolean): Self = this.set("includeRemovedEntities", value.asInstanceOf[js.Any])
+    def setMaxRowsPerFileUndefined: Self = StObject.set(x, "maxRowsPerFile", js.undefined)
     
     @scala.inline
-    def deleteIncludeRemovedEntities: Self = this.set("includeRemovedEntities", js.undefined)
+    def setOrderBy(value: js.Array[SortOrder]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRowsPerFile(value: Double): Self = this.set("maxRowsPerFile", value.asInstanceOf[js.Any])
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def deleteMaxRowsPerFile: Self = this.set("maxRowsPerFile", js.undefined)
+    def setOrderByVarargs(value: SortOrder*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
     
     @scala.inline
-    def setOrderByVarargs(value: SortOrder*): Self = this.set("orderBy", js.Array(value :_*))
+    def setReportScope(value: AdGroupId): Self = StObject.set(x, "reportScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBy(value: js.Array[SortOrder]): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setReportScopeUndefined: Self = StObject.set(x, "reportScope", js.undefined)
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportScope(value: AdGroupId): Self = this.set("reportScope", value.asInstanceOf[js.Any])
+    def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
     
     @scala.inline
-    def deleteReportScope: Self = this.set("reportScope", js.undefined)
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportType(value: String): Self = this.set("reportType", value.asInstanceOf[js.Any])
+    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
     @scala.inline
-    def deleteReportType: Self = this.set("reportType", js.undefined)
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
     
     @scala.inline
-    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    def setStatisticsCurrency(value: String): Self = StObject.set(x, "statisticsCurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
+    def setStatisticsCurrencyUndefined: Self = StObject.set(x, "statisticsCurrency", js.undefined)
     
     @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
+    def setTimeRange(value: ChangedAttributesSinceTimestamp): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatisticsCurrency(value: String): Self = this.set("statisticsCurrency", value.asInstanceOf[js.Any])
+    def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
     @scala.inline
-    def deleteStatisticsCurrency: Self = this.set("statisticsCurrency", js.undefined)
+    def setVerifySingleTimeZone(value: Boolean): Self = StObject.set(x, "verifySingleTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeRange(value: ChangedAttributesSinceTimestamp): Self = this.set("timeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRange: Self = this.set("timeRange", js.undefined)
-    
-    @scala.inline
-    def setVerifySingleTimeZone(value: Boolean): Self = this.set("verifySingleTimeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifySingleTimeZone: Self = this.set("verifySingleTimeZone", js.undefined)
+    def setVerifySingleTimeZoneUndefined: Self = StObject.set(x, "verifySingleTimeZone", js.undefined)
   }
 }

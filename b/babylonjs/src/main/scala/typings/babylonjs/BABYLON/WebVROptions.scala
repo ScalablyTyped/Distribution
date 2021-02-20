@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.HTMLButtonElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebVROptions extends js.Object {
+trait WebVROptions extends StObject {
   
   /**
     * Should the native controller meshes be initialized. (default: true)
@@ -67,78 +68,66 @@ object WebVROptions {
   }
   
   @scala.inline
-  implicit class WebVROptionsOps[Self <: WebVROptions] (val x: Self) extends AnyVal {
+  implicit class WebVROptionsMutableBuilder[Self <: WebVROptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControllerMeshes(value: Boolean): Self = StObject.set(x, "controllerMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControllerMeshesUndefined: Self = StObject.set(x, "controllerMeshes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomVRButton(value: HTMLButtonElement): Self = StObject.set(x, "customVRButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerMeshes(value: Boolean): Self = this.set("controllerMeshes", value.asInstanceOf[js.Any])
+    def setCustomVRButtonUndefined: Self = StObject.set(x, "customVRButton", js.undefined)
     
     @scala.inline
-    def deleteControllerMeshes: Self = this.set("controllerMeshes", js.undefined)
+    def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomVRButton(value: HTMLButtonElement): Self = this.set("customVRButton", value.asInstanceOf[js.Any])
+    def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
     
     @scala.inline
-    def deleteCustomVRButton: Self = this.set("customVRButton", js.undefined)
+    def setDefaultLightingOnControllers(value: Boolean): Self = StObject.set(x, "defaultLightingOnControllers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultHeight(value: Double): Self = this.set("defaultHeight", value.asInstanceOf[js.Any])
+    def setDefaultLightingOnControllersUndefined: Self = StObject.set(x, "defaultLightingOnControllers", js.undefined)
     
     @scala.inline
-    def deleteDefaultHeight: Self = this.set("defaultHeight", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLightingOnControllers(value: Boolean): Self = this.set("defaultLightingOnControllers", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDefaultLightingOnControllers: Self = this.set("defaultLightingOnControllers", js.undefined)
+    def setPositionScale(value: Double): Self = StObject.set(x, "positionScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setPositionScaleUndefined: Self = StObject.set(x, "positionScale", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setRayLength(value: Double): Self = StObject.set(x, "rayLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionScale(value: Double): Self = this.set("positionScale", value.asInstanceOf[js.Any])
+    def setRayLengthUndefined: Self = StObject.set(x, "rayLength", js.undefined)
     
     @scala.inline
-    def deletePositionScale: Self = this.set("positionScale", js.undefined)
+    def setTrackPosition(value: Boolean): Self = StObject.set(x, "trackPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRayLength(value: Double): Self = this.set("rayLength", value.asInstanceOf[js.Any])
+    def setTrackPositionUndefined: Self = StObject.set(x, "trackPosition", js.undefined)
     
     @scala.inline
-    def deleteRayLength: Self = this.set("rayLength", js.undefined)
+    def setUseCustomVRButton(value: Boolean): Self = StObject.set(x, "useCustomVRButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackPosition(value: Boolean): Self = this.set("trackPosition", value.asInstanceOf[js.Any])
+    def setUseCustomVRButtonUndefined: Self = StObject.set(x, "useCustomVRButton", js.undefined)
     
     @scala.inline
-    def deleteTrackPosition: Self = this.set("trackPosition", js.undefined)
+    def setUseMultiview(value: Boolean): Self = StObject.set(x, "useMultiview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCustomVRButton(value: Boolean): Self = this.set("useCustomVRButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCustomVRButton: Self = this.set("useCustomVRButton", js.undefined)
-    
-    @scala.inline
-    def setUseMultiview(value: Boolean): Self = this.set("useMultiview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMultiview: Self = this.set("useMultiview", js.undefined)
+    def setUseMultiviewUndefined: Self = StObject.set(x, "useMultiview", js.undefined)
   }
 }

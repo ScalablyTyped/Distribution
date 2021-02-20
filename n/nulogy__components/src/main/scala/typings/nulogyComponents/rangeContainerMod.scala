@@ -1,12 +1,13 @@
 package typings.nulogyComponents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nulogy/components/src/RangeContainer", JSImport.Namespace)
-@js.native
-object rangeContainerMod extends js.Object {
+object rangeContainerMod {
   
+  @JSImport("@nulogy/components/src/RangeContainer", "RangeContainer")
+  @js.native
   val RangeContainer: js.Any = js.native
 }

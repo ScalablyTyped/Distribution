@@ -1,11 +1,12 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerConfig extends js.Object {
+trait ServerConfig extends StObject {
   
   var host: String = js.native
   
@@ -28,54 +29,42 @@ object ServerConfig {
   }
   
   @scala.inline
-  implicit class ServerConfigOps[Self <: ServerConfig] (val x: Self) extends AnyVal {
+  implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setServers(value: js.Array[ServerConfig]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setServersVarargs(value: ServerConfig*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
     @scala.inline
-    def setServersVarargs(value: ServerConfig*): Self = this.set("servers", js.Array(value :_*))
+    def setUseToken(value: Boolean): Self = StObject.set(x, "useToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServers(value: js.Array[ServerConfig]): Self = this.set("servers", value.asInstanceOf[js.Any])
+    def setUseTokenUndefined: Self = StObject.set(x, "useToken", js.undefined)
     
     @scala.inline
-    def deleteServers: Self = this.set("servers", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseToken(value: Boolean): Self = this.set("useToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseToken: Self = this.set("useToken", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

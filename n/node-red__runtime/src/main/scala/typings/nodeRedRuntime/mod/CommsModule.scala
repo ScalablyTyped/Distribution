@@ -2,12 +2,13 @@ package typings.nodeRedRuntime.mod
 
 import typings.nodeRedRuntime.anon.Client
 import typings.nodeRedRuntime.anon.Topic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommsModule extends js.Object {
+trait CommsModule extends StObject {
   
   /**
     * Registers a new comms connection
@@ -55,30 +56,18 @@ object CommsModule {
   }
   
   @scala.inline
-  implicit class CommsModuleOps[Self <: CommsModule] (val x: Self) extends AnyVal {
+  implicit class CommsModuleMutableBuilder[Self <: CommsModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "addConnection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveConnection(value: Client => js.Promise[Unit]): Self = StObject.set(x, "removeConnection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscribe(value: Topic => js.Promise[Unit]): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddConnection(value: Client => js.Promise[Unit]): Self = this.set("addConnection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveConnection(value: Client => js.Promise[Unit]): Self = this.set("removeConnection", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubscribe(value: Topic => js.Promise[Unit]): Self = this.set("subscribe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnsubscribe(value: Topic => js.Promise[Unit]): Self = this.set("unsubscribe", js.Any.fromFunction1(value))
+    def setUnsubscribe(value: Topic => js.Promise[Unit]): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
   }
 }

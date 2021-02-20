@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1Scheduling extends js.Object {
+trait GoogleCloudMlV1Scheduling extends StObject {
   
   /**
     * Optional. The maximum job running time, expressed in seconds. The field can contain up to nine fractional digits, terminated by `s`. If not specified, this field defaults to
@@ -38,30 +39,18 @@ object GoogleCloudMlV1Scheduling {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1SchedulingOps[Self <: GoogleCloudMlV1Scheduling] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1SchedulingMutableBuilder[Self <: GoogleCloudMlV1Scheduling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRunningTime(value: String): Self = StObject.set(x, "maxRunningTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxRunningTimeUndefined: Self = StObject.set(x, "maxRunningTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxWaitTime(value: String): Self = StObject.set(x, "maxWaitTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRunningTime(value: String): Self = this.set("maxRunningTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRunningTime: Self = this.set("maxRunningTime", js.undefined)
-    
-    @scala.inline
-    def setMaxWaitTime(value: String): Self = this.set("maxWaitTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWaitTime: Self = this.set("maxWaitTime", js.undefined)
+    def setMaxWaitTimeUndefined: Self = StObject.set(x, "maxWaitTime", js.undefined)
   }
 }

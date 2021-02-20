@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.deployment
 
 import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,24 +46,12 @@ object PackageRegistryBackend {
   }
   
   @scala.inline
-  implicit class PackageRegistryBackendOps[Self <: PackageRegistryBackend] (val x: Self) extends AnyVal {
+  implicit class PackageRegistryBackendMutableBuilder[Self <: PackageRegistryBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatePersistent(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "createPersistent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreatePersistent(value: (String, String, Boolean) => Unit): Self = this.set("createPersistent", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setCreateTransient(value: String => Unit): Self = this.set("createTransient", js.Any.fromFunction1(value))
+    def setCreateTransient(value: String => Unit): Self = StObject.set(x, "createTransient", js.Any.fromFunction1(value))
   }
 }

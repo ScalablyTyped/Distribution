@@ -1,21 +1,25 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
+import typings.instagramPrivateApi.entityMod.Entity
 import typings.instagramPrivateApi.mediaEntityOembedResponseMod.MediaEntityOembedResponse
-import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/entities/media.entity", JSImport.Namespace)
-@js.native
-object mediaEntityMod extends js.Object {
+object mediaEntityMod {
   
+  @JSImport("instagram-private-api/dist/entities/media.entity", "MediaEntity")
   @js.native
-  class MediaEntity () extends Repository
+  class MediaEntity protected () extends Entity {
+    def this(client: IgApiClient) = this()
+  }
   /* static members */
-  @js.native
-  object MediaEntity extends js.Object {
+  object MediaEntity {
     
+    @JSImport("instagram-private-api/dist/entities/media.entity", "MediaEntity.oembed")
+    @js.native
     def oembed(url: String): js.Promise[MediaEntityOembedResponse] = js.native
   }
 }

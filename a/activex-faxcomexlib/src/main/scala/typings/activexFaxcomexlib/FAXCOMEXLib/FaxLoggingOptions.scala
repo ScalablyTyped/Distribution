@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxLoggingOptions Class */
 @js.native
-trait FaxLoggingOptions extends js.Object {
+trait FaxLoggingOptions extends StObject {
   
   /** Activity logging configuration object */
   val ActivityLogging: FaxActivityLogging = js.native
@@ -31,27 +32,15 @@ object FaxLoggingOptions {
   }
   
   @scala.inline
-  implicit class FaxLoggingOptionsOps[Self <: FaxLoggingOptions] (val x: Self) extends AnyVal {
+  implicit class FaxLoggingOptionsMutableBuilder[Self <: FaxLoggingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityLogging(value: FaxActivityLogging): Self = StObject.set(x, "ActivityLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventLogging(value: FaxEventLogging): Self = StObject.set(x, "EventLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivityLogging(value: FaxActivityLogging): Self = this.set("ActivityLogging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventLogging(value: FaxEventLogging): Self = this.set("EventLogging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFAXCOMEXLibDotFaxLoggingOptions_typekey(value: FaxLoggingOptions): Self = this.set("FAXCOMEXLib.FaxLoggingOptions_typekey", value.asInstanceOf[js.Any])
+    def setFAXCOMEXLibDotFaxLoggingOptions_typekey(value: FaxLoggingOptions): Self = StObject.set(x, "FAXCOMEXLib.FaxLoggingOptions_typekey", value.asInstanceOf[js.Any])
   }
 }

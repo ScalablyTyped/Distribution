@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the dimension metadata.
   */
 @js.native
-trait ASPxClientDashboardItemDataDimension extends js.Object {
+trait ASPxClientDashboardItemDataDimension extends StObject {
   
   /**
     * Gets the data member identifier for the current dimension.
@@ -57,36 +58,24 @@ object ASPxClientDashboardItemDataDimension {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemDataDimensionOps[Self <: ASPxClientDashboardItemDataDimension] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemDataDimensionMutableBuilder[Self <: ASPxClientDashboardItemDataDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTimeGroupInterval(value: String): Self = StObject.set(x, "DateTimeGroupInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataMember(value: String): Self = this.set("DataMember", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeGroupInterval(value: String): Self = this.set("DateTimeGroupInterval", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: js.Any => String): Self = this.set("Format", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextGroupInterval(value: String): Self = this.set("TextGroupInterval", value.asInstanceOf[js.Any])
+    def setTextGroupInterval(value: String): Self = StObject.set(x, "TextGroupInterval", value.asInstanceOf[js.Any])
   }
 }

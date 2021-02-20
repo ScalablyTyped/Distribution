@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.linguistic2
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,51 +85,39 @@ object XHyphenatedWord {
   }
   
   @scala.inline
-  implicit class XHyphenatedWordOps[Self <: XHyphenatedWord] (val x: Self) extends AnyVal {
+  implicit class XHyphenatedWordMutableBuilder[Self <: XHyphenatedWord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetHyphenPos(value: () => Double): Self = StObject.set(x, "getHyphenPos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHyphenatedWord(value: () => String): Self = StObject.set(x, "getHyphenatedWord", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHyphenationPos(value: () => Double): Self = StObject.set(x, "getHyphenationPos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHyphenPos(value: Double): Self = this.set("HyphenPos", value.asInstanceOf[js.Any])
+    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHyphenatedWord(value: String): Self = this.set("HyphenatedWord", value.asInstanceOf[js.Any])
+    def setGetWord(value: () => String): Self = StObject.set(x, "getWord", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHyphenationPos(value: Double): Self = this.set("HyphenationPos", value.asInstanceOf[js.Any])
+    def setHyphenPos(value: Double): Self = StObject.set(x, "HyphenPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setHyphenatedWord(value: String): Self = StObject.set(x, "HyphenatedWord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWord(value: String): Self = this.set("Word", value.asInstanceOf[js.Any])
+    def setHyphenationPos(value: Double): Self = StObject.set(x, "HyphenationPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHyphenPos(value: () => Double): Self = this.set("getHyphenPos", js.Any.fromFunction0(value))
+    def setIsAlternativeSpelling(value: () => Boolean): Self = StObject.set(x, "isAlternativeSpelling", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHyphenatedWord(value: () => String): Self = this.set("getHyphenatedWord", js.Any.fromFunction0(value))
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHyphenationPos(value: () => Double): Self = this.set("getHyphenationPos", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = this.set("getLocale", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWord(value: () => String): Self = this.set("getWord", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsAlternativeSpelling(value: () => Boolean): Self = this.set("isAlternativeSpelling", js.Any.fromFunction0(value))
+    def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
   }
 }

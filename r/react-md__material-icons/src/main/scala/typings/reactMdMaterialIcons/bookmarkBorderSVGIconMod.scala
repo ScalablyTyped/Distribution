@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/BookmarkBorderSVGIcon", JSImport.Namespace)
-@js.native
-object bookmarkBorderSVGIconMod extends js.Object {
+object bookmarkBorderSVGIconMod {
   
+  @JSImport("@react-md/material-icons/types/BookmarkBorderSVGIcon", "BookmarkBorderSVGIcon")
+  @js.native
   val BookmarkBorderSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDashboardRequest extends js.Object {
+trait UpdateDashboardRequest extends StObject {
   
   /**
     * The ID of the AWS account that contains the dashboard that you're updating.
@@ -61,54 +62,42 @@ object UpdateDashboardRequest {
   }
   
   @scala.inline
-  implicit class UpdateDashboardRequestOps[Self <: UpdateDashboardRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDashboardRequestMutableBuilder[Self <: UpdateDashboardRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashboardPublishOptions(value: DashboardPublishOptions): Self = StObject.set(x, "DashboardPublishOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setDashboardPublishOptionsUndefined: Self = StObject.set(x, "DashboardPublishOptions", js.undefined)
     
     @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = this.set("DashboardId", value.asInstanceOf[js.Any])
+    def setName(value: DashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: DashboardName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceEntity(value: DashboardSourceEntity): Self = this.set("SourceEntity", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setDashboardPublishOptions(value: DashboardPublishOptions): Self = this.set("DashboardPublishOptions", value.asInstanceOf[js.Any])
+    def setSourceEntity(value: DashboardSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDashboardPublishOptions: Self = this.set("DashboardPublishOptions", js.undefined)
+    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThemeArn(value: Arn): Self = this.set("ThemeArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeArn: Self = this.set("ThemeArn", js.undefined)
-    
-    @scala.inline
-    def setVersionDescription(value: VersionDescription): Self = this.set("VersionDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionDescription: Self = this.set("VersionDescription", js.undefined)
+    def setVersionDescriptionUndefined: Self = StObject.set(x, "VersionDescription", js.undefined)
   }
 }

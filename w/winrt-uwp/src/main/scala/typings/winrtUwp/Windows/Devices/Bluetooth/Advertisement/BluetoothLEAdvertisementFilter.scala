@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Groups parameters used to configure payload-based filtering of received Bluetooth LE advertisements. */
 @js.native
-trait BluetoothLEAdvertisementFilter extends js.Object {
+trait BluetoothLEAdvertisementFilter extends StObject {
   
   /** A BluetoothLEAdvertisement object that can be applied as filters to received Bluetooth LE advertisements. */
   var advertisement: BluetoothLEAdvertisement = js.native
@@ -27,24 +28,12 @@ object BluetoothLEAdvertisementFilter {
   }
   
   @scala.inline
-  implicit class BluetoothLEAdvertisementFilterOps[Self <: BluetoothLEAdvertisementFilter] (val x: Self) extends AnyVal {
+  implicit class BluetoothLEAdvertisementFilterMutableBuilder[Self <: BluetoothLEAdvertisementFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAdvertisement(value: BluetoothLEAdvertisement): Self = this.set("advertisement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBytePatterns(value: IVector[BluetoothLEAdvertisementBytePattern]): Self = this.set("bytePatterns", value.asInstanceOf[js.Any])
+    def setBytePatterns(value: IVector[BluetoothLEAdvertisementBytePattern]): Self = StObject.set(x, "bytePatterns", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalloutActionMenu extends js.Object {
+trait CalloutActionMenu extends StObject {
   
   def addAction(action: CalloutAction): Unit = js.native
   
@@ -32,33 +33,21 @@ object CalloutActionMenu {
   }
   
   @scala.inline
-  implicit class CalloutActionMenuOps[Self <: CalloutActionMenu] (val x: Self) extends AnyVal {
+  implicit class CalloutActionMenuMutableBuilder[Self <: CalloutActionMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAction(value: CalloutAction => Unit): Self = StObject.set(x, "addAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateActionWidth(value: () => Unit): Self = StObject.set(x, "calculateActionWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActions(value: () => js.Array[CalloutAction]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddAction(value: CalloutAction => Unit): Self = this.set("addAction", js.Any.fromFunction1(value))
+    def setRefreshActions(value: () => Unit): Self = StObject.set(x, "refreshActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCalculateActionWidth(value: () => Unit): Self = this.set("calculateActionWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetActions(value: () => js.Array[CalloutAction]): Self = this.set("getActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRefreshActions(value: () => Unit): Self = this.set("refreshActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRender(value: () => Unit): Self = this.set("render", js.Any.fromFunction0(value))
+    def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

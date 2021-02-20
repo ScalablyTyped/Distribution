@@ -1,14 +1,21 @@
 package typings.wixUiIconsCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.SFC
 import typings.wixUiIconsCommon.heartSmallMod.HeartSmallProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wix-ui-icons-common/HeartSmall", JSImport.Namespace)
-@js.native
-object wixUiIconsCommonHeartSmallMod extends js.Object {
+object wixUiIconsCommonHeartSmallMod extends Shortcut {
   
+  @JSImport("wix-ui-icons-common/HeartSmall", JSImport.Default)
+  @js.native
   val default: SFC[HeartSmallProps] = js.native
+  
+  type _To = SFC[HeartSmallProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonHeartSmallMod.foo` */
+  override def _to: SFC[HeartSmallProps] = default
 }

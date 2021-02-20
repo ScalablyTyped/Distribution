@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents physical identification data for a specific NetworkAdapter object. */
 @js.native
-trait LanIdentifier extends js.Object {
+trait LanIdentifier extends StObject {
   
   /** Gets a LanIdentifierData object containing locality identification information for the network adapter's connection. */
   var infrastructureId: LanIdentifierData = js.native
@@ -26,27 +27,15 @@ object LanIdentifier {
   }
   
   @scala.inline
-  implicit class LanIdentifierOps[Self <: LanIdentifier] (val x: Self) extends AnyVal {
+  implicit class LanIdentifierMutableBuilder[Self <: LanIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfrastructureId(value: LanIdentifierData): Self = StObject.set(x, "infrastructureId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkAdapterId(value: String): Self = StObject.set(x, "networkAdapterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInfrastructureId(value: LanIdentifierData): Self = this.set("infrastructureId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkAdapterId(value: String): Self = this.set("networkAdapterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortId(value: LanIdentifierData): Self = this.set("portId", value.asInstanceOf[js.Any])
+    def setPortId(value: LanIdentifierData): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultUserOperationsAsync extends js.Object {
+trait IVaultUserOperationsAsync extends StObject {
   
   def AddOrUndeleteUserAccount(User: IUserAccount): Unit = js.native
   def AddOrUndeleteUserAccount(

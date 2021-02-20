@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SubscriptionEvent")
 @js.native
-class SubscriptionEvent () extends js.Object {
+class SubscriptionEvent () extends StObject {
   
   /**
     * The date, in YYYY-MM-DD format (for example, 2013-01-15), when the subscription event went into effect.

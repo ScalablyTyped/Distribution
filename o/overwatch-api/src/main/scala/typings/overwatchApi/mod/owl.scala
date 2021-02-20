@@ -1,12 +1,13 @@
 package typings.overwatchApi.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait owl extends js.Object {
+trait owl extends StObject {
   
   def getLiveMatch(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   
@@ -27,27 +28,15 @@ object owl {
   }
   
   @scala.inline
-  implicit class owlOps[Self <: owl] (val x: Self) extends AnyVal {
+  implicit class owlMutableBuilder[Self <: owl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLiveMatch(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getLiveMatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSchedule(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getSchedule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetLiveMatch(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = this.set("getLiveMatch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSchedule(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = this.set("getSchedule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetStandings(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = this.set("getStandings", js.Any.fromFunction1(value))
+    def setGetStandings(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getStandings", js.Any.fromFunction1(value))
   }
 }

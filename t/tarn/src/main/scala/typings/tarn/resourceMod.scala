@@ -1,16 +1,16 @@
 package typings.tarn
 
 import typings.tarn.utilsMod.Deferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tarn/dist/Resource", JSImport.Namespace)
-@js.native
-object resourceMod extends js.Object {
+object resourceMod {
   
+  @JSImport("tarn/dist/Resource", "Resource")
   @js.native
-  class Resource[T] protected () extends js.Object {
+  class Resource[T] protected () extends StObject {
     def this(resource: T) = this()
     
     var deferred: Deferred[Unit] = js.native

@@ -1,12 +1,11 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/PutBucketLifecycleConfigurationExceptionsUnion", JSImport.Namespace)
-@js.native
-object putBucketLifecycleConfigurationExceptionsUnionMod extends js.Object {
+object putBucketLifecycleConfigurationExceptionsUnionMod {
   
   type PutBucketLifecycleConfigurationExceptionsUnion = scala.Nothing
 }

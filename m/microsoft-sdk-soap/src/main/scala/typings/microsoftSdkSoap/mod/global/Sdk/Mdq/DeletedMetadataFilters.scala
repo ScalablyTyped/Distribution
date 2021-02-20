@@ -1,61 +1,50 @@
 package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeletedMetadataFilters extends js.Object
+sealed trait DeletedMetadataFilters extends StObject
 @JSGlobal("Sdk.Mdq.DeletedMetadataFilters")
 @js.native
-object DeletedMetadataFilters extends js.Object {
+object DeletedMetadataFilters extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DeletedMetadataFilters with Double] = js.native
   
-   // All deleted metadata
   @js.native
   sealed trait All extends DeletedMetadataFilters
-  /* 0 */ @js.native
-  object All extends TopLevel[All with Double]
+  /* 0 */ val All: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.All with Double = js.native
   
-   // Deleted Attribute metadata
+  // All deleted metadata
   @js.native
   sealed trait Attribute extends DeletedMetadataFilters
-  /* 1 */ @js.native
-  object Attribute extends TopLevel[Attribute with Double]
+  /* 1 */ val Attribute: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.Attribute with Double = js.native
   
-   // The value used if not set. Equals Entity
+  // Deleted Attribute metadata
   @js.native
   sealed trait Default extends DeletedMetadataFilters
-  /* 2 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  /* 2 */ val Default: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.Default with Double = js.native
   
-   //Deleted Entity metadata
+  // The value used if not set. Equals Entity
   @js.native
   sealed trait Entity extends DeletedMetadataFilters
-  /* 3 */ @js.native
-  object Entity extends TopLevel[Entity with Double]
+  /* 3 */ val Entity: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.Entity with Double = js.native
   
-   //Deleted Label metadata
+  //Deleted Entity metadata
   @js.native
   sealed trait Label extends DeletedMetadataFilters
-  /* 4 */ @js.native
-  object Label
-    extends TopLevel[
-          typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.Label with Double
-        ]
+  /* 4 */ val Label: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.Label with Double = js.native
   
-   // Deleted OptionSet metadata
+  //Deleted Label metadata
   @js.native
   sealed trait OptionSet extends DeletedMetadataFilters
-  /* 5 */ @js.native
-  object OptionSet extends TopLevel[OptionSet with Double]
+  /* 5 */ val OptionSet: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.OptionSet with Double = js.native
   
-   //Deleted Relationship metadata
+  // Deleted OptionSet metadata
   @js.native
   sealed trait Relationship extends DeletedMetadataFilters
-  /* 6 */ @js.native
-  object Relationship extends TopLevel[Relationship with Double]
+  /* 6 */ val Relationship: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.DeletedMetadataFilters.Relationship with Double = js.native
 }

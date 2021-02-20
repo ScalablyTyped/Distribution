@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignInStatus extends js.Object {
+trait SignInStatus extends StObject {
   
   // Provides additional details on the sign-in activity
   var additionalDetails: js.UndefOr[NullableOption[String]] = js.native
@@ -31,45 +32,33 @@ object SignInStatus {
   }
   
   @scala.inline
-  implicit class SignInStatusOps[Self <: SignInStatus] (val x: Self) extends AnyVal {
+  implicit class SignInStatusMutableBuilder[Self <: SignInStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalDetails(value: NullableOption[String]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalDetailsNull: Self = StObject.set(x, "additionalDetails", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
     
     @scala.inline
-    def setAdditionalDetails(value: NullableOption[String]): Self = this.set("additionalDetails", value.asInstanceOf[js.Any])
+    def setErrorCode(value: NullableOption[Double]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalDetails: Self = this.set("additionalDetails", js.undefined)
+    def setErrorCodeNull: Self = StObject.set(x, "errorCode", null)
     
     @scala.inline
-    def setAdditionalDetailsNull: Self = this.set("additionalDetails", null)
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def setErrorCode(value: NullableOption[Double]): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setFailureReason(value: NullableOption[String]): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setFailureReasonNull: Self = StObject.set(x, "failureReason", null)
     
     @scala.inline
-    def setErrorCodeNull: Self = this.set("errorCode", null)
-    
-    @scala.inline
-    def setFailureReason(value: NullableOption[String]): Self = this.set("failureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
-    
-    @scala.inline
-    def setFailureReasonNull: Self = this.set("failureReason", null)
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
   }
 }

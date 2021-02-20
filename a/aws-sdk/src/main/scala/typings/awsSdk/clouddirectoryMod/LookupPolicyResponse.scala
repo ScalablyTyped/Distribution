@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LookupPolicyResponse extends js.Object {
+trait LookupPolicyResponse extends StObject {
   
   /**
     * The pagination token.
@@ -26,33 +27,21 @@ object LookupPolicyResponse {
   }
   
   @scala.inline
-  implicit class LookupPolicyResponseOps[Self <: LookupPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class LookupPolicyResponseMutableBuilder[Self <: LookupPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyToPathList(value: PolicyToPathList): Self = StObject.set(x, "PolicyToPathList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPolicyToPathListUndefined: Self = StObject.set(x, "PolicyToPathList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPolicyToPathListVarargs(value: PolicyToPath*): Self = this.set("PolicyToPathList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicyToPathList(value: PolicyToPathList): Self = this.set("PolicyToPathList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyToPathList: Self = this.set("PolicyToPathList", js.undefined)
+    def setPolicyToPathListVarargs(value: PolicyToPath*): Self = StObject.set(x, "PolicyToPathList", js.Array(value :_*))
   }
 }

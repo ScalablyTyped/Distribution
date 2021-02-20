@@ -2,16 +2,14 @@ package typings.rxAngular
 
 import typings.angular.mod.IRootScopeService
 import typings.rx.Rx.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("rx")
-@js.native
-object rx extends js.Object {
+object rx {
   
-  @js.native
-  object angular extends js.Object {
+  object angular {
     
     @js.native
     trait IRxScope extends IRootScopeService {

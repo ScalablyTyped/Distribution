@@ -1,12 +1,13 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fbsdk", "AccessToken")
 @js.native
-class AccessToken protected () extends js.Object {
+class AccessToken protected () extends StObject {
   def this(tokenMap: AccessTokenMap) = this()
   
   /**
@@ -93,23 +94,27 @@ class AccessToken protected () extends js.Object {
   var userID: String = js.native
 }
 /* static members */
-@JSImport("react-native-fbsdk", "AccessToken")
-@js.native
-object AccessToken extends js.Object {
+object AccessToken {
   
   /**
     * Getter for the access token that is current for the application.
     */
+  @JSImport("react-native-fbsdk", "AccessToken.getCurrentAccessToken")
+  @js.native
   def getCurrentAccessToken(): js.Promise[AccessToken | Null] = js.native
   
   /**
     * Updates the current access token with up to date permissions,
     * and extends the expiration date, if extension is possible.
     */
+  @JSImport("react-native-fbsdk", "AccessToken.refreshCurrentAccessTokenAsync")
+  @js.native
   def refreshCurrentAccessTokenAsync(): js.Promise[_] = js.native
   
   /**
     * Setter for the access token that is current for the application.
     */
+  @JSImport("react-native-fbsdk", "AccessToken.setCurrentAccessToken")
+  @js.native
   def setCurrentAccessToken(accessToken: AccessTokenMap): Unit = js.native
 }

@@ -1,5 +1,6 @@
 package typings.tizenCommonWeb.systeminfoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object SystemInfoVideoSource {
   }
   
   @scala.inline
-  implicit class SystemInfoVideoSourceOps[Self <: SystemInfoVideoSource] (val x: Self) extends AnyVal {
+  implicit class SystemInfoVideoSourceMutableBuilder[Self <: SystemInfoVideoSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = StObject.set(x, "connected", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisconnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = this.set("connected", js.Array(value :_*))
-    
-    @scala.inline
-    def setConnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = this.set("connected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisconnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = this.set("disconnected", js.Array(value :_*))
-    
-    @scala.inline
-    def setDisconnected(value: js.Array[SystemInfoVideoSourceInfo]): Self = this.set("disconnected", value.asInstanceOf[js.Any])
+    def setDisconnectedVarargs(value: SystemInfoVideoSourceInfo*): Self = StObject.set(x, "disconnected", js.Array(value :_*))
   }
 }

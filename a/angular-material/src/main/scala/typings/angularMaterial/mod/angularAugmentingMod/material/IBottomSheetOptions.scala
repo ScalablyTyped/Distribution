@@ -7,26 +7,27 @@ import typings.angular.mod.IControllerConstructor
 import typings.angular.mod.IScope
 import typings.angular.mod.Injectable
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBottomSheetOptions extends js.Object {
+trait IBottomSheetOptions extends StObject {
   
   var bindToController: js.UndefOr[Boolean] = js.native
   
   var clickOutsideToClose: js.UndefOr[Boolean] = js.native
   
-   // default: false
+  // default: false
   var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.native
   
   var controllerAs: js.UndefOr[String] = js.native
   
-   // default: false
+  // default: false
   var disableBackdrop: js.UndefOr[Boolean] = js.native
   
-   // default: root node
+  // default: root node
   var disableParentScroll: js.UndefOr[Boolean] = js.native
   
   var escapeToClose: js.UndefOr[Boolean] = js.native
@@ -37,7 +38,7 @@ trait IBottomSheetOptions extends js.Object {
     (js.Function2[/* scope */ IScope, /* element */ JQuery, Element | JQuery]) | String | Element | JQuery
   ] = js.native
   
-   // default: new child scope
+  // default: new child scope
   var preserveScope: js.UndefOr[Boolean] = js.native
   
   var resolve: js.UndefOr[ResolveObject] = js.native
@@ -57,113 +58,101 @@ object IBottomSheetOptions {
   }
   
   @scala.inline
-  implicit class IBottomSheetOptionsOps[Self <: IBottomSheetOptions] (val x: Self) extends AnyVal {
+  implicit class IBottomSheetOptionsMutableBuilder[Self <: IBottomSheetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickOutsideToClose(value: Boolean): Self = StObject.set(x, "clickOutsideToClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindToController(value: Boolean): Self = this.set("bindToController", value.asInstanceOf[js.Any])
+    def setClickOutsideToCloseUndefined: Self = StObject.set(x, "clickOutsideToClose", js.undefined)
     
     @scala.inline
-    def deleteBindToController: Self = this.set("bindToController", js.undefined)
+    def setController(value: String | Injectable[IControllerConstructor]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickOutsideToClose(value: Boolean): Self = this.set("clickOutsideToClose", value.asInstanceOf[js.Any])
+    def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickOutsideToClose: Self = this.set("clickOutsideToClose", js.undefined)
+    def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
     @scala.inline
-    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = this.set("controller", js.Array(value :_*))
+    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = this.set("controller", js.Any.fromFunction1(value))
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setController(value: String | Injectable[IControllerConstructor]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setDisableBackdrop(value: Boolean): Self = StObject.set(x, "disableBackdrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    def setDisableBackdropUndefined: Self = StObject.set(x, "disableBackdrop", js.undefined)
     
     @scala.inline
-    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    def setDisableParentScroll(value: Boolean): Self = StObject.set(x, "disableParentScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableBackdrop(value: Boolean): Self = this.set("disableBackdrop", value.asInstanceOf[js.Any])
+    def setDisableParentScrollUndefined: Self = StObject.set(x, "disableParentScroll", js.undefined)
     
     @scala.inline
-    def deleteDisableBackdrop: Self = this.set("disableBackdrop", js.undefined)
+    def setEscapeToClose(value: Boolean): Self = StObject.set(x, "escapeToClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableParentScroll(value: Boolean): Self = this.set("disableParentScroll", value.asInstanceOf[js.Any])
+    def setEscapeToCloseUndefined: Self = StObject.set(x, "escapeToClose", js.undefined)
     
     @scala.inline
-    def deleteDisableParentScroll: Self = this.set("disableParentScroll", js.undefined)
+    def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeToClose(value: Boolean): Self = this.set("escapeToClose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEscapeToClose: Self = this.set("escapeToClose", js.undefined)
-    
-    @scala.inline
-    def setLocals(value: StringDictionary[js.Any]): Self = this.set("locals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocals: Self = this.set("locals", js.undefined)
-    
-    @scala.inline
-    def setParentFunction2(value: (/* scope */ IScope, /* element */ JQuery) => Element | JQuery): Self = this.set("parent", js.Any.fromFunction2(value))
+    def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
     @scala.inline
     def setParent(
       value: (js.Function2[/* scope */ IScope, /* element */ JQuery, Element | JQuery]) | String | Element | JQuery
-    ): Self = this.set("parent", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentFunction2(value: (/* scope */ IScope, /* element */ JQuery) => Element | JQuery): Self = StObject.set(x, "parent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreserveScope(value: Boolean): Self = this.set("preserveScope", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deletePreserveScope: Self = this.set("preserveScope", js.undefined)
+    def setPreserveScope(value: Boolean): Self = StObject.set(x, "preserveScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolve(value: ResolveObject): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    def setPreserveScopeUndefined: Self = StObject.set(x, "preserveScope", js.undefined)
     
     @scala.inline
-    def deleteResolve: Self = this.set("resolve", js.undefined)
+    def setResolve(value: ResolveObject): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: IScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUtterancesViewRequest extends js.Object {
+trait GetUtterancesViewRequest extends StObject {
   
   /**
     * The name of the bot for which utterance information should be returned.
@@ -31,30 +32,18 @@ object GetUtterancesViewRequest {
   }
   
   @scala.inline
-  implicit class GetUtterancesViewRequestOps[Self <: GetUtterancesViewRequest] (val x: Self) extends AnyVal {
+  implicit class GetUtterancesViewRequestMutableBuilder[Self <: GetUtterancesViewRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBotVersions(value: BotVersions): Self = StObject.set(x, "botVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBotVersionsVarargs(value: Version*): Self = StObject.set(x, "botVersions", js.Array(value :_*))
     
     @scala.inline
-    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBotVersionsVarargs(value: Version*): Self = this.set("botVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setBotVersions(value: BotVersions): Self = this.set("botVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusType(value: StatusType): Self = this.set("statusType", value.asInstanceOf[js.Any])
+    def setStatusType(value: StatusType): Self = StObject.set(x, "statusType", value.asInstanceOf[js.Any])
   }
 }

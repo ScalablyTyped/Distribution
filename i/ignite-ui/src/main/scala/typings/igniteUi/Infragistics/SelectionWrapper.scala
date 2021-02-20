@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectionWrapper extends js.Object {
+trait SelectionWrapper extends StObject {
   
   def execCommand(name: js.Object, args: js.Object): Unit = js.native
   
@@ -41,42 +42,30 @@ object SelectionWrapper {
   }
   
   @scala.inline
-  implicit class SelectionWrapperOps[Self <: SelectionWrapper] (val x: Self) extends AnyVal {
+  implicit class SelectionWrapperMutableBuilder[Self <: SelectionWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecCommand(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "execCommand", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedItem(value: () => Unit): Self = StObject.set(x, "getSelectedItem", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExecCommand(value: (js.Object, js.Object) => Unit): Self = this.set("execCommand", js.Any.fromFunction2(value))
+    def setGetSelectionAsText(value: () => Unit): Self = StObject.set(x, "getSelectionAsText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFocus(value: () => Unit): Self = this.set("focus", js.Any.fromFunction0(value))
+    def setInsertElement(value: js.Object => Unit): Self = StObject.set(x, "insertElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedItem(value: () => Unit): Self = this.set("getSelectedItem", js.Any.fromFunction0(value))
+    def setInsertTable(value: js.Object => Unit): Self = StObject.set(x, "insertTable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectionAsText(value: () => Unit): Self = this.set("getSelectionAsText", js.Any.fromFunction0(value))
+    def setReplaceNode(value: js.Object => Unit): Self = StObject.set(x, "replaceNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertElement(value: js.Object => Unit): Self = this.set("insertElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertTable(value: js.Object => Unit): Self = this.set("insertTable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceNode(value: js.Object => Unit): Self = this.set("replaceNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelect(value: js.Object => Unit): Self = this.set("select", js.Any.fromFunction1(value))
+    def setSelect(value: js.Object => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
   }
 }

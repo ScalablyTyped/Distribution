@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterValueSetRequest extends js.Object {
+trait ParameterValueSetRequest extends StObject {
   
   /**
     * Get the filter expression for this request.Expressions are represented by separate objects. If none
@@ -76,39 +77,27 @@ object ParameterValueSetRequest {
   }
   
   @scala.inline
-  implicit class ParameterValueSetRequestOps[Self <: ParameterValueSetRequest] (val x: Self) extends AnyVal {
+  implicit class ParameterValueSetRequestMutableBuilder[Self <: ParameterValueSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFilterExpression(value: () => FilterExpression): Self = this.set("getFilterExpression", js.Any.fromFunction0(value))
+    def setGetURIToParameterValueSetEntries(value: String => String): Self = StObject.set(x, "getURIToParameterValueSetEntries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSortExpression(value: () => SortExpression): Self = this.set("getSortExpression", js.Any.fromFunction0(value))
+    def setIncludeParameterText(value: js.Any => Unit): Self = StObject.set(x, "includeParameterText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURIQueryOptionValue(value: String => String): Self = this.set("getURIQueryOptionValue", js.Any.fromFunction1(value))
+    def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURIToParameterValueSetEntries(value: String => String): Self = this.set("getURIToParameterValueSetEntries", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIncludeParameterText(value: js.Any => Unit): Self = this.set("includeParameterText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetFilterExpression(value: FilterExpression => Unit): Self = this.set("setFilterExpression", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSortExpression(value: SortExpression => Unit): Self = this.set("setSortExpression", js.Any.fromFunction1(value))
+    def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
   }
 }

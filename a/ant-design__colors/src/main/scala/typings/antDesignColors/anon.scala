@@ -4,13 +4,12 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.FlatArray
 import typings.std.IterableIterator
 import typings.std.anon.CopyWithin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   /* Inlined std.Array<string> & {  primary :string | undefined} */
   @js.native

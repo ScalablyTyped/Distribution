@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueuingStrategy[T] extends js.Object {
+trait QueuingStrategy[T] extends StObject {
   
   var highWaterMark: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object QueuingStrategy {
   }
   
   @scala.inline
-  implicit class QueuingStrategyOps[Self <: QueuingStrategy[_], T] (val x: Self with QueuingStrategy[T]) extends AnyVal {
+  implicit class QueuingStrategyMutableBuilder[Self <: QueuingStrategy[_], T] (val x: Self with QueuingStrategy[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSize(value: T => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHighWaterMark(value: Double): Self = this.set("highWaterMark", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighWaterMark: Self = this.set("highWaterMark", js.undefined)
-    
-    @scala.inline
-    def setSize(value: T => Double): Self = this.set("size", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

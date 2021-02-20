@@ -3,6 +3,24 @@
 
 Typings are for version 4.4
 
+## Library description:
+The lodash method `_.toArray` exported as a module.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | lodash.toarray |
+| Keywords           | lodash-modularized, toarray |
+| # releases         | 0 |
+| # dependents       | 77 |
+| # downloads        | 69348125 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://lodash.com/)
+- [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
+- [Npm](https://www.npmjs.com/package/lodash.toarray)
+    
 
 
 ## Note

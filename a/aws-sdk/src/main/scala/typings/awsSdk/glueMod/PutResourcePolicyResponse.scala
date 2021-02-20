@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutResourcePolicyResponse extends js.Object {
+trait PutResourcePolicyResponse extends StObject {
   
   /**
     * A hash of the policy that has just been set. This must be included in a subsequent call that overwrites or updates this policy.
@@ -21,24 +22,12 @@ object PutResourcePolicyResponse {
   }
   
   @scala.inline
-  implicit class PutResourcePolicyResponseOps[Self <: PutResourcePolicyResponse] (val x: Self) extends AnyVal {
+  implicit class PutResourcePolicyResponseMutableBuilder[Self <: PutResourcePolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicyHash(value: HashString): Self = StObject.set(x, "PolicyHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicyHash(value: HashString): Self = this.set("PolicyHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyHash: Self = this.set("PolicyHash", js.undefined)
+    def setPolicyHashUndefined: Self = StObject.set(x, "PolicyHash", js.undefined)
   }
 }

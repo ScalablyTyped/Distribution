@@ -1,5 +1,6 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Next id: 10
   */
 @js.native
-trait SchemaAggregateRequest extends js.Object {
+trait SchemaAggregateRequest extends StObject {
   
   /**
     * The specification of data to be aggregated. At least one aggregateBy spec
@@ -77,72 +78,60 @@ object SchemaAggregateRequest {
   }
   
   @scala.inline
-  implicit class SchemaAggregateRequestOps[Self <: SchemaAggregateRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaAggregateRequestMutableBuilder[Self <: SchemaAggregateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateBy(value: js.Array[SchemaAggregateBy]): Self = StObject.set(x, "aggregateBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateByUndefined: Self = StObject.set(x, "aggregateBy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregateByVarargs(value: SchemaAggregateBy*): Self = StObject.set(x, "aggregateBy", js.Array(value :_*))
     
     @scala.inline
-    def setAggregateByVarargs(value: SchemaAggregateBy*): Self = this.set("aggregateBy", js.Array(value :_*))
+    def setBucketByActivitySegment(value: SchemaBucketByActivity): Self = StObject.set(x, "bucketByActivitySegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateBy(value: js.Array[SchemaAggregateBy]): Self = this.set("aggregateBy", value.asInstanceOf[js.Any])
+    def setBucketByActivitySegmentUndefined: Self = StObject.set(x, "bucketByActivitySegment", js.undefined)
     
     @scala.inline
-    def deleteAggregateBy: Self = this.set("aggregateBy", js.undefined)
+    def setBucketByActivityType(value: SchemaBucketByActivity): Self = StObject.set(x, "bucketByActivityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketByActivitySegment(value: SchemaBucketByActivity): Self = this.set("bucketByActivitySegment", value.asInstanceOf[js.Any])
+    def setBucketByActivityTypeUndefined: Self = StObject.set(x, "bucketByActivityType", js.undefined)
     
     @scala.inline
-    def deleteBucketByActivitySegment: Self = this.set("bucketByActivitySegment", js.undefined)
+    def setBucketBySession(value: SchemaBucketBySession): Self = StObject.set(x, "bucketBySession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketByActivityType(value: SchemaBucketByActivity): Self = this.set("bucketByActivityType", value.asInstanceOf[js.Any])
+    def setBucketBySessionUndefined: Self = StObject.set(x, "bucketBySession", js.undefined)
     
     @scala.inline
-    def deleteBucketByActivityType: Self = this.set("bucketByActivityType", js.undefined)
+    def setBucketByTime(value: SchemaBucketByTime): Self = StObject.set(x, "bucketByTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketBySession(value: SchemaBucketBySession): Self = this.set("bucketBySession", value.asInstanceOf[js.Any])
+    def setBucketByTimeUndefined: Self = StObject.set(x, "bucketByTime", js.undefined)
     
     @scala.inline
-    def deleteBucketBySession: Self = this.set("bucketBySession", js.undefined)
+    def setEndTimeMillis(value: String): Self = StObject.set(x, "endTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketByTime(value: SchemaBucketByTime): Self = this.set("bucketByTime", value.asInstanceOf[js.Any])
+    def setEndTimeMillisUndefined: Self = StObject.set(x, "endTimeMillis", js.undefined)
     
     @scala.inline
-    def deleteBucketByTime: Self = this.set("bucketByTime", js.undefined)
+    def setFilteredDataQualityStandard(value: js.Array[String]): Self = StObject.set(x, "filteredDataQualityStandard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimeMillis(value: String): Self = this.set("endTimeMillis", value.asInstanceOf[js.Any])
+    def setFilteredDataQualityStandardUndefined: Self = StObject.set(x, "filteredDataQualityStandard", js.undefined)
     
     @scala.inline
-    def deleteEndTimeMillis: Self = this.set("endTimeMillis", js.undefined)
+    def setFilteredDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "filteredDataQualityStandard", js.Array(value :_*))
     
     @scala.inline
-    def setFilteredDataQualityStandardVarargs(value: String*): Self = this.set("filteredDataQualityStandard", js.Array(value :_*))
+    def setStartTimeMillis(value: String): Self = StObject.set(x, "startTimeMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteredDataQualityStandard(value: js.Array[String]): Self = this.set("filteredDataQualityStandard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilteredDataQualityStandard: Self = this.set("filteredDataQualityStandard", js.undefined)
-    
-    @scala.inline
-    def setStartTimeMillis(value: String): Self = this.set("startTimeMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTimeMillis: Self = this.set("startTimeMillis", js.undefined)
+    def setStartTimeMillisUndefined: Self = StObject.set(x, "startTimeMillis", js.undefined)
   }
 }

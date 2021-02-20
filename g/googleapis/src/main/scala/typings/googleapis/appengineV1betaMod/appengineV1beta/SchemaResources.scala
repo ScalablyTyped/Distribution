@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Machine resources for a version.
   */
 @js.native
-trait SchemaResources extends js.Object {
+trait SchemaResources extends StObject {
   
   /**
     * Number of CPU cores needed.
@@ -39,45 +40,33 @@ object SchemaResources {
   }
   
   @scala.inline
-  implicit class SchemaResourcesOps[Self <: SchemaResources] (val x: Self) extends AnyVal {
+  implicit class SchemaResourcesMutableBuilder[Self <: SchemaResources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskGb(value: Double): Self = StObject.set(x, "diskGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: Double): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setDiskGbUndefined: Self = StObject.set(x, "diskGb", js.undefined)
     
     @scala.inline
-    def deleteCpu: Self = this.set("cpu", js.undefined)
+    def setMemoryGb(value: Double): Self = StObject.set(x, "memoryGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskGb(value: Double): Self = this.set("diskGb", value.asInstanceOf[js.Any])
+    def setMemoryGbUndefined: Self = StObject.set(x, "memoryGb", js.undefined)
     
     @scala.inline
-    def deleteDiskGb: Self = this.set("diskGb", js.undefined)
+    def setVolumes(value: js.Array[SchemaVolume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryGb(value: Double): Self = this.set("memoryGb", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deleteMemoryGb: Self = this.set("memoryGb", js.undefined)
-    
-    @scala.inline
-    def setVolumesVarargs(value: SchemaVolume*): Self = this.set("volumes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumes(value: js.Array[SchemaVolume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    def setVolumesVarargs(value: SchemaVolume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

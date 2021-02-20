@@ -14,16 +14,16 @@ import typings.babylonjs.nodeMaterialMod.NodeMaterialDefines
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/nodeMaterialBlock", JSImport.Namespace)
-@js.native
-object nodeMaterialBlockMod extends js.Object {
+object nodeMaterialBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/nodeMaterialBlock", "NodeMaterialBlock")
   @js.native
-  class NodeMaterialBlock protected () extends js.Object {
+  class NodeMaterialBlock protected () extends StObject {
     /**
       * Creates a new NodeMaterialBlock
       * @param name defines the block name

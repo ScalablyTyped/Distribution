@@ -1,5 +1,6 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexShdocvw.activexShdocvwStrings._self
   - typings.activexShdocvw.activexShdocvwStrings._top
 */
-trait TargetFrameValues extends js.Object
+trait TargetFrameValues extends StObject
 object TargetFrameValues {
   
   @scala.inline

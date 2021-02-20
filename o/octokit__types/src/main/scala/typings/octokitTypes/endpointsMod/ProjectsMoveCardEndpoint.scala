@@ -1,13 +1,14 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  card_id :number,   position :string,   column_id :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
 @js.native
-trait ProjectsMoveCardEndpoint extends js.Object {
+trait ProjectsMoveCardEndpoint extends StObject {
   
   var card_id: Double = js.native
   
@@ -32,33 +33,21 @@ object ProjectsMoveCardEndpoint {
   }
   
   @scala.inline
-  implicit class ProjectsMoveCardEndpointOps[Self <: ProjectsMoveCardEndpoint] (val x: Self) extends AnyVal {
+  implicit class ProjectsMoveCardEndpointMutableBuilder[Self <: ProjectsMoveCardEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCard_id(value: Double): Self = StObject.set(x, "card_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn_idUndefined: Self = StObject.set(x, "column_id", js.undefined)
     
     @scala.inline
-    def setCard_id(value: Double): Self = this.set("card_id", value.asInstanceOf[js.Any])
+    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: `7`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumn_id(value: Double): Self = this.set("column_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumn_id: Self = this.set("column_id", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

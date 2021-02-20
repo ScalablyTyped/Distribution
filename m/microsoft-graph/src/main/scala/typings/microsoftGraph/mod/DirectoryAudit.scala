@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,111 +67,99 @@ object DirectoryAudit {
   }
   
   @scala.inline
-  implicit class DirectoryAuditOps[Self <: DirectoryAudit] (val x: Self) extends AnyVal {
+  implicit class DirectoryAuditMutableBuilder[Self <: DirectoryAudit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityDateTime(value: String): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityDateTimeUndefined: Self = StObject.set(x, "activityDateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityDisplayName(value: String): Self = StObject.set(x, "activityDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityDateTime(value: String): Self = this.set("activityDateTime", value.asInstanceOf[js.Any])
+    def setActivityDisplayNameUndefined: Self = StObject.set(x, "activityDisplayName", js.undefined)
     
     @scala.inline
-    def deleteActivityDateTime: Self = this.set("activityDateTime", js.undefined)
+    def setAdditionalDetails(value: NullableOption[js.Array[KeyValue]]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityDisplayName(value: String): Self = this.set("activityDisplayName", value.asInstanceOf[js.Any])
+    def setAdditionalDetailsNull: Self = StObject.set(x, "additionalDetails", null)
     
     @scala.inline
-    def deleteActivityDisplayName: Self = this.set("activityDisplayName", js.undefined)
+    def setAdditionalDetailsUndefined: Self = StObject.set(x, "additionalDetails", js.undefined)
     
     @scala.inline
-    def setAdditionalDetailsVarargs(value: KeyValue*): Self = this.set("additionalDetails", js.Array(value :_*))
+    def setAdditionalDetailsVarargs(value: KeyValue*): Self = StObject.set(x, "additionalDetails", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalDetails(value: NullableOption[js.Array[KeyValue]]): Self = this.set("additionalDetails", value.asInstanceOf[js.Any])
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalDetails: Self = this.set("additionalDetails", js.undefined)
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def setAdditionalDetailsNull: Self = this.set("additionalDetails", null)
+    def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
     @scala.inline
-    def setCorrelationId(value: NullableOption[String]): Self = this.set("correlationId", value.asInstanceOf[js.Any])
+    def setInitiatedBy(value: AuditActivityInitiator): Self = StObject.set(x, "initiatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCorrelationId: Self = this.set("correlationId", js.undefined)
+    def setInitiatedByUndefined: Self = StObject.set(x, "initiatedBy", js.undefined)
     
     @scala.inline
-    def setCorrelationIdNull: Self = this.set("correlationId", null)
+    def setLoggedByService(value: NullableOption[String]): Self = StObject.set(x, "loggedByService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiatedBy(value: AuditActivityInitiator): Self = this.set("initiatedBy", value.asInstanceOf[js.Any])
+    def setLoggedByServiceNull: Self = StObject.set(x, "loggedByService", null)
     
     @scala.inline
-    def deleteInitiatedBy: Self = this.set("initiatedBy", js.undefined)
+    def setLoggedByServiceUndefined: Self = StObject.set(x, "loggedByService", js.undefined)
     
     @scala.inline
-    def setLoggedByService(value: NullableOption[String]): Self = this.set("loggedByService", value.asInstanceOf[js.Any])
+    def setOperationType(value: NullableOption[String]): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoggedByService: Self = this.set("loggedByService", js.undefined)
+    def setOperationTypeNull: Self = StObject.set(x, "operationType", null)
     
     @scala.inline
-    def setLoggedByServiceNull: Self = this.set("loggedByService", null)
+    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
     @scala.inline
-    def setOperationType(value: NullableOption[String]): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    def setResult(value: NullableOption[OperationResult]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    def setResultNull: Self = StObject.set(x, "result", null)
     
     @scala.inline
-    def setOperationTypeNull: Self = this.set("operationType", null)
+    def setResultReason(value: NullableOption[String]): Self = StObject.set(x, "resultReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: NullableOption[OperationResult]): Self = this.set("result", value.asInstanceOf[js.Any])
+    def setResultReasonNull: Self = StObject.set(x, "resultReason", null)
     
     @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
+    def setResultReasonUndefined: Self = StObject.set(x, "resultReason", js.undefined)
     
     @scala.inline
-    def setResultNull: Self = this.set("result", null)
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def setResultReason(value: NullableOption[String]): Self = this.set("resultReason", value.asInstanceOf[js.Any])
+    def setTargetResources(value: NullableOption[js.Array[TargetResource]]): Self = StObject.set(x, "targetResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResultReason: Self = this.set("resultReason", js.undefined)
+    def setTargetResourcesNull: Self = StObject.set(x, "targetResources", null)
     
     @scala.inline
-    def setResultReasonNull: Self = this.set("resultReason", null)
+    def setTargetResourcesUndefined: Self = StObject.set(x, "targetResources", js.undefined)
     
     @scala.inline
-    def setTargetResourcesVarargs(value: TargetResource*): Self = this.set("targetResources", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetResources(value: NullableOption[js.Array[TargetResource]]): Self = this.set("targetResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResources: Self = this.set("targetResources", js.undefined)
-    
-    @scala.inline
-    def setTargetResourcesNull: Self = this.set("targetResources", null)
+    def setTargetResourcesVarargs(value: TargetResource*): Self = StObject.set(x, "targetResources", js.Array(value :_*))
   }
 }

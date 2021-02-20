@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewTransitVirtualInterfaceAllocation extends js.Object {
+trait NewTransitVirtualInterfaceAllocation extends StObject {
   
   /**
     * The address family for the BGP peer.
@@ -61,75 +62,63 @@ object NewTransitVirtualInterfaceAllocation {
   }
   
   @scala.inline
-  implicit class NewTransitVirtualInterfaceAllocationOps[Self <: NewTransitVirtualInterfaceAllocation] (val x: Self) extends AnyVal {
+  implicit class NewTransitVirtualInterfaceAllocationMutableBuilder[Self <: NewTransitVirtualInterfaceAllocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAmazonAddress(value: AmazonAddress): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressFamily(value: AddressFamily): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
     
     @scala.inline
-    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazonAddress(value: AmazonAddress): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
     @scala.inline
-    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    def setAuthKey(value: BGPAuthKey): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
     
     @scala.inline
-    def deleteAsn: Self = this.set("asn", js.undefined)
+    def setCustomerAddress(value: CustomerAddress): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthKey(value: BGPAuthKey): Self = this.set("authKey", value.asInstanceOf[js.Any])
+    def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
     
     @scala.inline
-    def deleteAuthKey: Self = this.set("authKey", js.undefined)
+    def setMtu(value: MTU): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
+    def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
     
     @scala.inline
-    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtu(value: MTU): Self = this.set("mtu", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteMtu: Self = this.set("mtu", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setVirtualInterfaceName(value: VirtualInterfaceName): Self = StObject.set(x, "virtualInterfaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setVirtualInterfaceNameUndefined: Self = StObject.set(x, "virtualInterfaceName", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVlan(value: VLAN): Self = StObject.set(x, "vlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualInterfaceName(value: VirtualInterfaceName): Self = this.set("virtualInterfaceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualInterfaceName: Self = this.set("virtualInterfaceName", js.undefined)
-    
-    @scala.inline
-    def setVlan(value: VLAN): Self = this.set("vlan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVlan: Self = this.set("vlan", js.undefined)
+    def setVlanUndefined: Self = StObject.set(x, "vlan", js.undefined)
   }
 }

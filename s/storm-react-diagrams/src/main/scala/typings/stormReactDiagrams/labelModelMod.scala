@@ -4,14 +4,14 @@ import typings.stormReactDiagrams.baseModelMod.BaseModel
 import typings.stormReactDiagrams.baseModelMod.BaseModelListener
 import typings.stormReactDiagrams.linkModelMod.LinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModelListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams/dist/src/models/LabelModel", JSImport.Namespace)
-@js.native
-object labelModelMod extends js.Object {
+object labelModelMod {
   
+  @JSImport("storm-react-diagrams/dist/src/models/LabelModel", "LabelModel")
   @js.native
   class LabelModel () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
     def this(`type`: String) = this()

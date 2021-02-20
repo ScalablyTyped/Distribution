@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SalesforceConnectorProfileCredentials extends js.Object {
+trait SalesforceConnectorProfileCredentials extends StObject {
   
   /**
     *  The credentials used to access protected Salesforce resources. 
@@ -36,42 +37,30 @@ object SalesforceConnectorProfileCredentials {
   }
   
   @scala.inline
-  implicit class SalesforceConnectorProfileCredentialsOps[Self <: SalesforceConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  implicit class SalesforceConnectorProfileCredentialsMutableBuilder[Self <: SalesforceConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientCredentialsArn(value: ClientCredentialsArn): Self = StObject.set(x, "clientCredentialsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: AccessToken): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    def setClientCredentialsArnUndefined: Self = StObject.set(x, "clientCredentialsArn", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    def setOAuthRequest(value: ConnectorOAuthRequest): Self = StObject.set(x, "oAuthRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCredentialsArn(value: ClientCredentialsArn): Self = this.set("clientCredentialsArn", value.asInstanceOf[js.Any])
+    def setOAuthRequestUndefined: Self = StObject.set(x, "oAuthRequest", js.undefined)
     
     @scala.inline
-    def deleteClientCredentialsArn: Self = this.set("clientCredentialsArn", js.undefined)
+    def setRefreshToken(value: RefreshToken): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOAuthRequest(value: ConnectorOAuthRequest): Self = this.set("oAuthRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOAuthRequest: Self = this.set("oAuthRequest", js.undefined)
-    
-    @scala.inline
-    def setRefreshToken(value: RefreshToken): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+    def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
   }
 }

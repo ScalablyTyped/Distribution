@@ -1,5 +1,6 @@
 package typings.pulumiPulumi.automationStackMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pulumiPulumi.pulumiPulumiStrings.succeeded
   - typings.pulumiPulumi.pulumiPulumiStrings.failed
 */
-trait UpdateResult extends js.Object
+trait UpdateResult extends StObject
 object UpdateResult {
   
   @scala.inline

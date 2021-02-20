@@ -1,11 +1,12 @@
 package typings.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutocompleteOptions extends js.Object {
+trait AutocompleteOptions extends StObject {
   
   /**
     * Data object defining autocomplete options with optional icon strings.
@@ -49,33 +50,21 @@ object AutocompleteOptions {
   }
   
   @scala.inline
-  implicit class AutocompleteOptionsOps[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
+  implicit class AutocompleteOptionsMutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: AutocompleteData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setOnAutocomplete(value: String => Unit): Self = StObject.set(x, "onAutocomplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnAutocomplete(value: String => Unit): Self = this.set("onAutocomplete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSortFunction(value: (String, String, String) => Double): Self = this.set("sortFunction", js.Any.fromFunction3(value))
+    def setSortFunction(value: (String, String, String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimecodeConfig extends js.Object {
+trait TimecodeConfig extends StObject {
   
   /**
     * Identifies the source for the timecode that will be associated with the events outputs.
@@ -29,27 +30,15 @@ object TimecodeConfig {
   }
   
   @scala.inline
-  implicit class TimecodeConfigOps[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
+  implicit class TimecodeConfigMutableBuilder[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSource(value: TimecodeConfigSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSyncThreshold(value: integerMin1Max1000000): Self = StObject.set(x, "SyncThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSource(value: TimecodeConfigSource): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSyncThreshold(value: integerMin1Max1000000): Self = this.set("SyncThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncThreshold: Self = this.set("SyncThreshold", js.undefined)
+    def setSyncThresholdUndefined: Self = StObject.set(x, "SyncThreshold", js.undefined)
   }
 }

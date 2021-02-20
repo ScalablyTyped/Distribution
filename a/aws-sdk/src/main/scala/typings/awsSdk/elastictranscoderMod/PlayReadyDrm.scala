@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayReadyDrm extends js.Object {
+trait PlayReadyDrm extends StObject {
   
   /**
     * The type of DRM, if any, that you want Elastic Transcoder to apply to the output files associated with this playlist.
@@ -46,54 +47,42 @@ object PlayReadyDrm {
   }
   
   @scala.inline
-  implicit class PlayReadyDrmOps[Self <: PlayReadyDrm] (val x: Self) extends AnyVal {
+  implicit class PlayReadyDrmMutableBuilder[Self <: PlayReadyDrm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: PlayReadyDrmFormatString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PlayReadyDrmFormatString): Self = this.set("Format", value.asInstanceOf[js.Any])
+    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
+    def setKey(value: NonEmptyBase64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationVector(value: ZeroTo255String): Self = this.set("InitializationVector", value.asInstanceOf[js.Any])
+    def setKeyId(value: KeyIdGuid): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitializationVector: Self = this.set("InitializationVector", js.undefined)
+    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
     @scala.inline
-    def setKey(value: NonEmptyBase64EncodedString): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setKeyMd5(value: NonEmptyBase64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
     
     @scala.inline
-    def setKeyId(value: KeyIdGuid): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    def setLicenseAcquisitionUrl(value: OneTo512String): Self = StObject.set(x, "LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyMd5(value: NonEmptyBase64EncodedString): Self = this.set("KeyMd5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyMd5: Self = this.set("KeyMd5", js.undefined)
-    
-    @scala.inline
-    def setLicenseAcquisitionUrl(value: OneTo512String): Self = this.set("LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLicenseAcquisitionUrl: Self = this.set("LicenseAcquisitionUrl", js.undefined)
+    def setLicenseAcquisitionUrlUndefined: Self = StObject.set(x, "LicenseAcquisitionUrl", js.undefined)
   }
 }

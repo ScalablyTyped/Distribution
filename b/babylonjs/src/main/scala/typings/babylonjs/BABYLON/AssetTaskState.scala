@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AssetTaskState extends js.Object
+sealed trait AssetTaskState extends StObject
 @JSGlobal("BABYLON.AssetTaskState")
 @js.native
-object AssetTaskState extends js.Object {
+object AssetTaskState extends StObject {
   
   /**
     * Done

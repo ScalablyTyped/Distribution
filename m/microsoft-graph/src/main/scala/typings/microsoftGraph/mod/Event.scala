@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -180,408 +181,396 @@ object Event {
   }
   
   @scala.inline
-  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNewTimeProposals(value: NullableOption[Boolean]): Self = StObject.set(x, "allowNewTimeProposals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNewTimeProposalsNull: Self = StObject.set(x, "allowNewTimeProposals", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowNewTimeProposalsUndefined: Self = StObject.set(x, "allowNewTimeProposals", js.undefined)
     
     @scala.inline
-    def setAllowNewTimeProposals(value: NullableOption[Boolean]): Self = this.set("allowNewTimeProposals", value.asInstanceOf[js.Any])
+    def setAttachments(value: NullableOption[js.Array[Attachment]]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowNewTimeProposals: Self = this.set("allowNewTimeProposals", js.undefined)
+    def setAttachmentsNull: Self = StObject.set(x, "attachments", null)
     
     @scala.inline
-    def setAllowNewTimeProposalsNull: Self = this.set("allowNewTimeProposals", null)
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachments(value: NullableOption[js.Array[Attachment]]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setAttendees(value: NullableOption[js.Array[Attendee]]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setAttendeesNull: Self = StObject.set(x, "attendees", null)
     
     @scala.inline
-    def setAttachmentsNull: Self = this.set("attachments", null)
+    def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
     @scala.inline
-    def setAttendeesVarargs(value: Attendee*): Self = this.set("attendees", js.Array(value :_*))
+    def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "attendees", js.Array(value :_*))
     
     @scala.inline
-    def setAttendees(value: NullableOption[js.Array[Attendee]]): Self = this.set("attendees", value.asInstanceOf[js.Any])
+    def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttendees: Self = this.set("attendees", js.undefined)
+    def setBodyNull: Self = StObject.set(x, "body", null)
     
     @scala.inline
-    def setAttendeesNull: Self = this.set("attendees", null)
+    def setBodyPreview(value: NullableOption[String]): Self = StObject.set(x, "bodyPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: NullableOption[ItemBody]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setBodyPreviewNull: Self = StObject.set(x, "bodyPreview", null)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setBodyPreviewUndefined: Self = StObject.set(x, "bodyPreview", js.undefined)
     
     @scala.inline
-    def setBodyNull: Self = this.set("body", null)
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setBodyPreview(value: NullableOption[String]): Self = this.set("bodyPreview", value.asInstanceOf[js.Any])
+    def setCalendar(value: NullableOption[Calendar]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBodyPreview: Self = this.set("bodyPreview", js.undefined)
+    def setCalendarNull: Self = StObject.set(x, "calendar", null)
     
     @scala.inline
-    def setBodyPreviewNull: Self = this.set("bodyPreview", null)
+    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def setCalendar(value: NullableOption[Calendar]): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setEnd(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendar: Self = this.set("calendar", js.undefined)
+    def setEndNull: Self = StObject.set(x, "end", null)
     
     @scala.inline
-    def setCalendarNull: Self = this.set("calendar", null)
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def setEnd(value: NullableOption[DateTimeTimeZone]): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setExtensionsNull: Self = StObject.set(x, "extensions", null)
     
     @scala.inline
-    def setEndNull: Self = this.set("end", null)
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: NullableOption[js.Array[Extension]]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setHasAttachments(value: NullableOption[Boolean]): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setHasAttachmentsNull: Self = StObject.set(x, "hasAttachments", null)
     
     @scala.inline
-    def setExtensionsNull: Self = this.set("extensions", null)
+    def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
     
     @scala.inline
-    def setHasAttachments(value: NullableOption[Boolean]): Self = this.set("hasAttachments", value.asInstanceOf[js.Any])
+    def setICalUId(value: NullableOption[String]): Self = StObject.set(x, "iCalUId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasAttachments: Self = this.set("hasAttachments", js.undefined)
+    def setICalUIdNull: Self = StObject.set(x, "iCalUId", null)
     
     @scala.inline
-    def setHasAttachmentsNull: Self = this.set("hasAttachments", null)
+    def setICalUIdUndefined: Self = StObject.set(x, "iCalUId", js.undefined)
     
     @scala.inline
-    def setICalUId(value: NullableOption[String]): Self = this.set("iCalUId", value.asInstanceOf[js.Any])
+    def setImportance(value: NullableOption[Importance]): Self = StObject.set(x, "importance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteICalUId: Self = this.set("iCalUId", js.undefined)
+    def setImportanceNull: Self = StObject.set(x, "importance", null)
     
     @scala.inline
-    def setICalUIdNull: Self = this.set("iCalUId", null)
+    def setImportanceUndefined: Self = StObject.set(x, "importance", js.undefined)
     
     @scala.inline
-    def setImportance(value: NullableOption[Importance]): Self = this.set("importance", value.asInstanceOf[js.Any])
+    def setInstances(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportance: Self = this.set("importance", js.undefined)
+    def setInstancesNull: Self = StObject.set(x, "instances", null)
     
     @scala.inline
-    def setImportanceNull: Self = this.set("importance", null)
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def setInstancesVarargs(value: Event*): Self = this.set("instances", js.Array(value :_*))
+    def setInstancesVarargs(value: Event*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstances(value: NullableOption[js.Array[Event]]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setIsAllDay(value: NullableOption[Boolean]): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setIsAllDayNull: Self = StObject.set(x, "isAllDay", null)
     
     @scala.inline
-    def setInstancesNull: Self = this.set("instances", null)
+    def setIsAllDayUndefined: Self = StObject.set(x, "isAllDay", js.undefined)
     
     @scala.inline
-    def setIsAllDay(value: NullableOption[Boolean]): Self = this.set("isAllDay", value.asInstanceOf[js.Any])
+    def setIsCancelled(value: NullableOption[Boolean]): Self = StObject.set(x, "isCancelled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAllDay: Self = this.set("isAllDay", js.undefined)
+    def setIsCancelledNull: Self = StObject.set(x, "isCancelled", null)
     
     @scala.inline
-    def setIsAllDayNull: Self = this.set("isAllDay", null)
+    def setIsCancelledUndefined: Self = StObject.set(x, "isCancelled", js.undefined)
     
     @scala.inline
-    def setIsCancelled(value: NullableOption[Boolean]): Self = this.set("isCancelled", value.asInstanceOf[js.Any])
+    def setIsDraft(value: NullableOption[Boolean]): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsCancelled: Self = this.set("isCancelled", js.undefined)
+    def setIsDraftNull: Self = StObject.set(x, "isDraft", null)
     
     @scala.inline
-    def setIsCancelledNull: Self = this.set("isCancelled", null)
+    def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
     
     @scala.inline
-    def setIsDraft(value: NullableOption[Boolean]): Self = this.set("isDraft", value.asInstanceOf[js.Any])
+    def setIsOnlineMeeting(value: NullableOption[Boolean]): Self = StObject.set(x, "isOnlineMeeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDraft: Self = this.set("isDraft", js.undefined)
+    def setIsOnlineMeetingNull: Self = StObject.set(x, "isOnlineMeeting", null)
     
     @scala.inline
-    def setIsDraftNull: Self = this.set("isDraft", null)
+    def setIsOnlineMeetingUndefined: Self = StObject.set(x, "isOnlineMeeting", js.undefined)
     
     @scala.inline
-    def setIsOnlineMeeting(value: NullableOption[Boolean]): Self = this.set("isOnlineMeeting", value.asInstanceOf[js.Any])
+    def setIsOrganizer(value: NullableOption[Boolean]): Self = StObject.set(x, "isOrganizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsOnlineMeeting: Self = this.set("isOnlineMeeting", js.undefined)
+    def setIsOrganizerNull: Self = StObject.set(x, "isOrganizer", null)
     
     @scala.inline
-    def setIsOnlineMeetingNull: Self = this.set("isOnlineMeeting", null)
+    def setIsOrganizerUndefined: Self = StObject.set(x, "isOrganizer", js.undefined)
     
     @scala.inline
-    def setIsOrganizer(value: NullableOption[Boolean]): Self = this.set("isOrganizer", value.asInstanceOf[js.Any])
+    def setIsReminderOn(value: NullableOption[Boolean]): Self = StObject.set(x, "isReminderOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsOrganizer: Self = this.set("isOrganizer", js.undefined)
+    def setIsReminderOnNull: Self = StObject.set(x, "isReminderOn", null)
     
     @scala.inline
-    def setIsOrganizerNull: Self = this.set("isOrganizer", null)
+    def setIsReminderOnUndefined: Self = StObject.set(x, "isReminderOn", js.undefined)
     
     @scala.inline
-    def setIsReminderOn(value: NullableOption[Boolean]): Self = this.set("isReminderOn", value.asInstanceOf[js.Any])
+    def setLocation(value: NullableOption[Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsReminderOn: Self = this.set("isReminderOn", js.undefined)
+    def setLocationNull: Self = StObject.set(x, "location", null)
     
     @scala.inline
-    def setIsReminderOnNull: Self = this.set("isReminderOn", null)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLocation(value: NullableOption[Location]): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocations(value: NullableOption[js.Array[Location]]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationsNull: Self = StObject.set(x, "locations", null)
     
     @scala.inline
-    def setLocationNull: Self = this.set("location", null)
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def setLocationsVarargs(value: Location*): Self = this.set("locations", js.Array(value :_*))
+    def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocations(value: NullableOption[js.Array[Location]]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
     
     @scala.inline
-    def setLocationsNull: Self = this.set("locations", null)
+    def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = this.set("multiValueExtendedProperties", js.Array(value :_*))
+    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = this.set("multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setOnlineMeeting(value: NullableOption[OnlineMeetingInfo]): Self = StObject.set(x, "onlineMeeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueExtendedProperties: Self = this.set("multiValueExtendedProperties", js.undefined)
+    def setOnlineMeetingNull: Self = StObject.set(x, "onlineMeeting", null)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesNull: Self = this.set("multiValueExtendedProperties", null)
+    def setOnlineMeetingProvider(value: NullableOption[OnlineMeetingProviderType]): Self = StObject.set(x, "onlineMeetingProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlineMeeting(value: NullableOption[OnlineMeetingInfo]): Self = this.set("onlineMeeting", value.asInstanceOf[js.Any])
+    def setOnlineMeetingProviderNull: Self = StObject.set(x, "onlineMeetingProvider", null)
     
     @scala.inline
-    def deleteOnlineMeeting: Self = this.set("onlineMeeting", js.undefined)
+    def setOnlineMeetingProviderUndefined: Self = StObject.set(x, "onlineMeetingProvider", js.undefined)
     
     @scala.inline
-    def setOnlineMeetingNull: Self = this.set("onlineMeeting", null)
+    def setOnlineMeetingUndefined: Self = StObject.set(x, "onlineMeeting", js.undefined)
     
     @scala.inline
-    def setOnlineMeetingProvider(value: NullableOption[OnlineMeetingProviderType]): Self = this.set("onlineMeetingProvider", value.asInstanceOf[js.Any])
+    def setOnlineMeetingUrl(value: NullableOption[String]): Self = StObject.set(x, "onlineMeetingUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnlineMeetingProvider: Self = this.set("onlineMeetingProvider", js.undefined)
+    def setOnlineMeetingUrlNull: Self = StObject.set(x, "onlineMeetingUrl", null)
     
     @scala.inline
-    def setOnlineMeetingProviderNull: Self = this.set("onlineMeetingProvider", null)
+    def setOnlineMeetingUrlUndefined: Self = StObject.set(x, "onlineMeetingUrl", js.undefined)
     
     @scala.inline
-    def setOnlineMeetingUrl(value: NullableOption[String]): Self = this.set("onlineMeetingUrl", value.asInstanceOf[js.Any])
+    def setOrganizer(value: NullableOption[Recipient]): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnlineMeetingUrl: Self = this.set("onlineMeetingUrl", js.undefined)
+    def setOrganizerNull: Self = StObject.set(x, "organizer", null)
     
     @scala.inline
-    def setOnlineMeetingUrlNull: Self = this.set("onlineMeetingUrl", null)
+    def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
     
     @scala.inline
-    def setOrganizer(value: NullableOption[Recipient]): Self = this.set("organizer", value.asInstanceOf[js.Any])
+    def setOriginalEndTimeZone(value: NullableOption[String]): Self = StObject.set(x, "originalEndTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrganizer: Self = this.set("organizer", js.undefined)
+    def setOriginalEndTimeZoneNull: Self = StObject.set(x, "originalEndTimeZone", null)
     
     @scala.inline
-    def setOrganizerNull: Self = this.set("organizer", null)
+    def setOriginalEndTimeZoneUndefined: Self = StObject.set(x, "originalEndTimeZone", js.undefined)
     
     @scala.inline
-    def setOriginalEndTimeZone(value: NullableOption[String]): Self = this.set("originalEndTimeZone", value.asInstanceOf[js.Any])
+    def setOriginalStart(value: NullableOption[String]): Self = StObject.set(x, "originalStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOriginalEndTimeZone: Self = this.set("originalEndTimeZone", js.undefined)
+    def setOriginalStartNull: Self = StObject.set(x, "originalStart", null)
     
     @scala.inline
-    def setOriginalEndTimeZoneNull: Self = this.set("originalEndTimeZone", null)
+    def setOriginalStartTimeZone(value: NullableOption[String]): Self = StObject.set(x, "originalStartTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalStart(value: NullableOption[String]): Self = this.set("originalStart", value.asInstanceOf[js.Any])
+    def setOriginalStartTimeZoneNull: Self = StObject.set(x, "originalStartTimeZone", null)
     
     @scala.inline
-    def deleteOriginalStart: Self = this.set("originalStart", js.undefined)
+    def setOriginalStartTimeZoneUndefined: Self = StObject.set(x, "originalStartTimeZone", js.undefined)
     
     @scala.inline
-    def setOriginalStartNull: Self = this.set("originalStart", null)
+    def setOriginalStartUndefined: Self = StObject.set(x, "originalStart", js.undefined)
     
     @scala.inline
-    def setOriginalStartTimeZone(value: NullableOption[String]): Self = this.set("originalStartTimeZone", value.asInstanceOf[js.Any])
+    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOriginalStartTimeZone: Self = this.set("originalStartTimeZone", js.undefined)
+    def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
     
     @scala.inline
-    def setOriginalStartTimeZoneNull: Self = this.set("originalStartTimeZone", null)
+    def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
     @scala.inline
-    def setRecurrence(value: NullableOption[PatternedRecurrence]): Self = this.set("recurrence", value.asInstanceOf[js.Any])
+    def setReminderMinutesBeforeStart(value: NullableOption[Double]): Self = StObject.set(x, "reminderMinutesBeforeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecurrence: Self = this.set("recurrence", js.undefined)
+    def setReminderMinutesBeforeStartNull: Self = StObject.set(x, "reminderMinutesBeforeStart", null)
     
     @scala.inline
-    def setRecurrenceNull: Self = this.set("recurrence", null)
+    def setReminderMinutesBeforeStartUndefined: Self = StObject.set(x, "reminderMinutesBeforeStart", js.undefined)
     
     @scala.inline
-    def setReminderMinutesBeforeStart(value: NullableOption[Double]): Self = this.set("reminderMinutesBeforeStart", value.asInstanceOf[js.Any])
+    def setResponseRequested(value: NullableOption[Boolean]): Self = StObject.set(x, "responseRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReminderMinutesBeforeStart: Self = this.set("reminderMinutesBeforeStart", js.undefined)
+    def setResponseRequestedNull: Self = StObject.set(x, "responseRequested", null)
     
     @scala.inline
-    def setReminderMinutesBeforeStartNull: Self = this.set("reminderMinutesBeforeStart", null)
+    def setResponseRequestedUndefined: Self = StObject.set(x, "responseRequested", js.undefined)
     
     @scala.inline
-    def setResponseRequested(value: NullableOption[Boolean]): Self = this.set("responseRequested", value.asInstanceOf[js.Any])
+    def setResponseStatus(value: NullableOption[ResponseStatus]): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseRequested: Self = this.set("responseRequested", js.undefined)
+    def setResponseStatusNull: Self = StObject.set(x, "responseStatus", null)
     
     @scala.inline
-    def setResponseRequestedNull: Self = this.set("responseRequested", null)
+    def setResponseStatusUndefined: Self = StObject.set(x, "responseStatus", js.undefined)
     
     @scala.inline
-    def setResponseStatus(value: NullableOption[ResponseStatus]): Self = this.set("responseStatus", value.asInstanceOf[js.Any])
+    def setSensitivity(value: NullableOption[Sensitivity]): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseStatus: Self = this.set("responseStatus", js.undefined)
+    def setSensitivityNull: Self = StObject.set(x, "sensitivity", null)
     
     @scala.inline
-    def setResponseStatusNull: Self = this.set("responseStatus", null)
+    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
     
     @scala.inline
-    def setSensitivity(value: NullableOption[Sensitivity]): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
+    def setSeriesMasterId(value: NullableOption[String]): Self = StObject.set(x, "seriesMasterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
+    def setSeriesMasterIdNull: Self = StObject.set(x, "seriesMasterId", null)
     
     @scala.inline
-    def setSensitivityNull: Self = this.set("sensitivity", null)
+    def setSeriesMasterIdUndefined: Self = StObject.set(x, "seriesMasterId", js.undefined)
     
     @scala.inline
-    def setSeriesMasterId(value: NullableOption[String]): Self = this.set("seriesMasterId", value.asInstanceOf[js.Any])
+    def setShowAs(value: NullableOption[FreeBusyStatus]): Self = StObject.set(x, "showAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeriesMasterId: Self = this.set("seriesMasterId", js.undefined)
+    def setShowAsNull: Self = StObject.set(x, "showAs", null)
     
     @scala.inline
-    def setSeriesMasterIdNull: Self = this.set("seriesMasterId", null)
+    def setShowAsUndefined: Self = StObject.set(x, "showAs", js.undefined)
     
     @scala.inline
-    def setShowAs(value: NullableOption[FreeBusyStatus]): Self = this.set("showAs", value.asInstanceOf[js.Any])
+    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowAs: Self = this.set("showAs", js.undefined)
+    def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
     
     @scala.inline
-    def setShowAsNull: Self = this.set("showAs", null)
+    def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = this.set("singleValueExtendedProperties", js.Array(value :_*))
+    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = this.set("singleValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setStart(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSingleValueExtendedProperties: Self = this.set("singleValueExtendedProperties", js.undefined)
+    def setStartNull: Self = StObject.set(x, "start", null)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesNull: Self = this.set("singleValueExtendedProperties", null)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setStart(value: NullableOption[DateTimeTimeZone]): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setSubjectNull: Self = StObject.set(x, "subject", null)
     
     @scala.inline
-    def setStartNull: Self = this.set("start", null)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def setSubject(value: NullableOption[String]): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTransactionId(value: NullableOption[String]): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setTransactionIdNull: Self = StObject.set(x, "transactionId", null)
     
     @scala.inline
-    def setSubjectNull: Self = this.set("subject", null)
+    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
     
     @scala.inline
-    def setTransactionId(value: NullableOption[String]): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    def setType(value: NullableOption[EventType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    def setTypeNull: Self = StObject.set(x, "type", null)
     
     @scala.inline
-    def setTransactionIdNull: Self = this.set("transactionId", null)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setType(value: NullableOption[EventType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setWebLink(value: NullableOption[String]): Self = StObject.set(x, "webLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWebLinkNull: Self = StObject.set(x, "webLink", null)
     
     @scala.inline
-    def setTypeNull: Self = this.set("type", null)
-    
-    @scala.inline
-    def setWebLink(value: NullableOption[String]): Self = this.set("webLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebLink: Self = this.set("webLink", js.undefined)
-    
-    @scala.inline
-    def setWebLinkNull: Self = this.set("webLink", null)
+    def setWebLinkUndefined: Self = StObject.set(x, "webLink", js.undefined)
   }
 }

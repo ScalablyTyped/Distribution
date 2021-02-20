@@ -6,6 +6,7 @@ import typings.activexExcel.activexExcelNumbers.`1`
 import typings.activexExcel.activexExcelNumbers.`2`
 import typings.activexExcel.activexExcelNumbers.`3`
 import typings.activexExcel.activexExcelNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`0`
   - typings.activexExcel.activexExcelNumbers.`-1`
 */
-trait XlPivotTableVersionList extends js.Object
+trait XlPivotTableVersionList extends StObject
 object XlPivotTableVersionList {
   
   @scala.inline

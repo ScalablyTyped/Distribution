@@ -2,12 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 
 import typings.activexLibreoffice.com_.sun.star.chart.TimeIncrement
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XLabeledDataSequence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleData extends js.Object {
+trait ScaleData extends StObject {
   
   /** if true an {@link AxisType} CATEGORY is interpreted as DATE if the underlying data given in Categories are dates */
   var AutoDateAxis: Boolean = js.native
@@ -88,51 +89,39 @@ object ScaleData {
   }
   
   @scala.inline
-  implicit class ScaleDataOps[Self <: ScaleData] (val x: Self) extends AnyVal {
+  implicit class ScaleDataMutableBuilder[Self <: ScaleData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoDateAxis(value: Boolean): Self = StObject.set(x, "AutoDateAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisType(value: Double): Self = StObject.set(x, "AxisType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategories(value: XLabeledDataSequence): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDateAxis(value: Boolean): Self = this.set("AutoDateAxis", value.asInstanceOf[js.Any])
+    def setIncrementData(value: IncrementData): Self = StObject.set(x, "IncrementData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisType(value: Double): Self = this.set("AxisType", value.asInstanceOf[js.Any])
+    def setMaximum(value: js.Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: XLabeledDataSequence): Self = this.set("Categories", value.asInstanceOf[js.Any])
+    def setMinimum(value: js.Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementData(value: IncrementData): Self = this.set("IncrementData", value.asInstanceOf[js.Any])
+    def setOrientation(value: AxisOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: js.Any): Self = this.set("Maximum", value.asInstanceOf[js.Any])
+    def setOrigin(value: js.Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: js.Any): Self = this.set("Minimum", value.asInstanceOf[js.Any])
+    def setScaling(value: XScaling): Self = StObject.set(x, "Scaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: AxisOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setShiftedCategoryPosition(value: Boolean): Self = StObject.set(x, "ShiftedCategoryPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: js.Any): Self = this.set("Origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScaling(value: XScaling): Self = this.set("Scaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShiftedCategoryPosition(value: Boolean): Self = this.set("ShiftedCategoryPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeIncrement(value: TimeIncrement): Self = this.set("TimeIncrement", value.asInstanceOf[js.Any])
+    def setTimeIncrement(value: TimeIncrement): Self = StObject.set(x, "TimeIncrement", value.asInstanceOf[js.Any])
   }
 }

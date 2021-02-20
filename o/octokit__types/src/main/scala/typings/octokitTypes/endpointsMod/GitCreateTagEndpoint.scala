@@ -3,12 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.octokitTypesStrings.blob
 import typings.octokitTypes.octokitTypesStrings.commit
 import typings.octokitTypes.octokitTypesStrings.tree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitCreateTagEndpoint extends js.Object {
+trait GitCreateTagEndpoint extends StObject {
   
   /**
     * The tag message.
@@ -57,42 +58,30 @@ object GitCreateTagEndpoint {
   }
   
   @scala.inline
-  implicit class GitCreateTagEndpointOps[Self <: GitCreateTagEndpoint] (val x: Self) extends AnyVal {
+  implicit class GitCreateTagEndpointMutableBuilder[Self <: GitCreateTagEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setTagger(value: GitCreateTagParamsTagger): Self = StObject.set(x, "tagger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setTaggerUndefined: Self = StObject.set(x, "tagger", js.undefined)
     
     @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: commit | tree | blob): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagger(value: GitCreateTagParamsTagger): Self = this.set("tagger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTagger: Self = this.set("tagger", js.undefined)
+    def setType(value: commit | tree | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

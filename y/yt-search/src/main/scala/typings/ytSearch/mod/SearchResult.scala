@@ -1,11 +1,12 @@
 package typings.ytSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResult extends js.Object {
+trait SearchResult extends StObject {
   
   var accounts: js.Array[ChannelSearchResult] = js.native
   
@@ -42,64 +43,52 @@ object SearchResult {
   }
   
   @scala.inline
-  implicit class SearchResultOps[Self <: SearchResult] (val x: Self) extends AnyVal {
+  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: js.Array[ChannelSearchResult]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountsVarargs(value: ChannelSearchResult*): Self = this.set("accounts", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccounts(value: js.Array[ChannelSearchResult]): Self = this.set("accounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllVarargs(value: (VideoSearchResult | LiveSearchResult | PlaylistSearchResult | ChannelSearchResult)*): Self = this.set("all", js.Array(value :_*))
+    def setAccountsVarargs(value: ChannelSearchResult*): Self = StObject.set(x, "accounts", js.Array(value :_*))
     
     @scala.inline
     def setAll(
       value: js.Array[
           VideoSearchResult | LiveSearchResult | PlaylistSearchResult | ChannelSearchResult
         ]
-    ): Self = this.set("all", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelsVarargs(value: ChannelSearchResult*): Self = this.set("channels", js.Array(value :_*))
+    def setAllVarargs(value: (VideoSearchResult | LiveSearchResult | PlaylistSearchResult | ChannelSearchResult)*): Self = StObject.set(x, "all", js.Array(value :_*))
     
     @scala.inline
-    def setChannels(value: js.Array[ChannelSearchResult]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    def setChannels(value: js.Array[ChannelSearchResult]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListsVarargs(value: PlaylistSearchResult*): Self = this.set("lists", js.Array(value :_*))
+    def setChannelsVarargs(value: ChannelSearchResult*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setLists(value: js.Array[PlaylistSearchResult]): Self = this.set("lists", value.asInstanceOf[js.Any])
+    def setLists(value: js.Array[PlaylistSearchResult]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveVarargs(value: LiveSearchResult*): Self = this.set("live", js.Array(value :_*))
+    def setListsVarargs(value: PlaylistSearchResult*): Self = StObject.set(x, "lists", js.Array(value :_*))
     
     @scala.inline
-    def setLive(value: js.Array[LiveSearchResult]): Self = this.set("live", value.asInstanceOf[js.Any])
+    def setLive(value: js.Array[LiveSearchResult]): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaylistsVarargs(value: PlaylistSearchResult*): Self = this.set("playlists", js.Array(value :_*))
+    def setLiveVarargs(value: LiveSearchResult*): Self = StObject.set(x, "live", js.Array(value :_*))
     
     @scala.inline
-    def setPlaylists(value: js.Array[PlaylistSearchResult]): Self = this.set("playlists", value.asInstanceOf[js.Any])
+    def setPlaylists(value: js.Array[PlaylistSearchResult]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideosVarargs(value: VideoSearchResult*): Self = this.set("videos", js.Array(value :_*))
+    def setPlaylistsVarargs(value: PlaylistSearchResult*): Self = StObject.set(x, "playlists", js.Array(value :_*))
     
     @scala.inline
-    def setVideos(value: js.Array[VideoSearchResult]): Self = this.set("videos", value.asInstanceOf[js.Any])
+    def setVideos(value: js.Array[VideoSearchResult]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVideosVarargs(value: VideoSearchResult*): Self = StObject.set(x, "videos", js.Array(value :_*))
   }
 }

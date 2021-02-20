@@ -2,18 +2,19 @@ package typings.orientjs.mod
 
 import typings.orientjs.anon.Fields
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyUpdateConfig extends js.Object {
+trait PropertyUpdateConfig extends StObject {
+  
+  var default: js.UndefOr[js.Any] = js.native
   
   var collate: js.UndefOr[String] = js.native
   
   var custom: js.UndefOr[Fields] = js.native
-  
-  var default: js.UndefOr[js.Any] = js.native
   
   var linkedClass: js.UndefOr[String] = js.native
   
@@ -45,90 +46,78 @@ object PropertyUpdateConfig {
   }
   
   @scala.inline
-  implicit class PropertyUpdateConfigOps[Self <: PropertyUpdateConfig] (val x: Self) extends AnyVal {
+  implicit class PropertyUpdateConfigMutableBuilder[Self <: PropertyUpdateConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollate(value: String): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollateUndefined: Self = StObject.set(x, "collate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom(value: Fields): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def setType(value: PropertyType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollate(value: String): Self = this.set("collate", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def deleteCollate: Self = this.set("collate", js.undefined)
+    def setLinkedClass(value: String): Self = StObject.set(x, "linkedClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: Fields): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setLinkedClassUndefined: Self = StObject.set(x, "linkedClass", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setLinkedType(value: String): Self = StObject.set(x, "linkedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setLinkedTypeUndefined: Self = StObject.set(x, "linkedType", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedClass(value: String): Self = this.set("linkedClass", value.asInstanceOf[js.Any])
+    def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
     
     @scala.inline
-    def deleteLinkedClass: Self = this.set("linkedClass", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedType(value: String): Self = this.set("linkedType", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLinkedType: Self = this.set("linkedType", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatory(value: Boolean): Self = this.set("mandatory", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMandatory: Self = this.set("mandatory", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setNotNull(value: Boolean): Self = StObject.set(x, "notNull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setNotNullUndefined: Self = StObject.set(x, "notNull", js.undefined)
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def setNotNull(value: Boolean): Self = this.set("notNull", value.asInstanceOf[js.Any])
+    def setRegexp(value: RegExp | String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotNull: Self = this.set("notNull", js.undefined)
+    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadonly: Self = this.set("readonly", js.undefined)
-    
-    @scala.inline
-    def setRegexp(value: RegExp | String): Self = this.set("regexp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegexp: Self = this.set("regexp", js.undefined)
+    def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

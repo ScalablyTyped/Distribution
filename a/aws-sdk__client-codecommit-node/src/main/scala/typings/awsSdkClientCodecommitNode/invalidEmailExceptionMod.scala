@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/InvalidEmailException", JSImport.Namespace)
-@js.native
-object invalidEmailExceptionMod extends js.Object {
+object invalidEmailExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/InvalidEmailException", "InvalidEmailException")
+  @js.native
   val InvalidEmailException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

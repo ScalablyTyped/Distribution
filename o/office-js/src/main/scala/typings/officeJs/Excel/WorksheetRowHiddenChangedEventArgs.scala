@@ -5,6 +5,7 @@ import typings.officeJs.officeJsStrings.Local
 import typings.officeJs.officeJsStrings.Remote
 import typings.officeJs.officeJsStrings.Unhidden
 import typings.officeJs.officeJsStrings.WorksheetRowHiddenChanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.11]
   */
 @js.native
-trait WorksheetRowHiddenChangedEventArgs extends js.Object {
+trait WorksheetRowHiddenChangedEventArgs extends StObject {
   
   /**
     *
@@ -74,33 +75,21 @@ object WorksheetRowHiddenChangedEventArgs {
   }
   
   @scala.inline
-  implicit class WorksheetRowHiddenChangedEventArgsOps[Self <: WorksheetRowHiddenChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WorksheetRowHiddenChangedEventArgsMutableBuilder[Self <: WorksheetRowHiddenChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeType(value: RowHiddenChangeType | Unhidden | Hidden): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setType(value: WorksheetRowHiddenChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: RowHiddenChangeType | Unhidden | Hidden): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WorksheetRowHiddenChanged): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorksheetId(value: String): Self = this.set("worksheetId", value.asInstanceOf[js.Any])
+    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

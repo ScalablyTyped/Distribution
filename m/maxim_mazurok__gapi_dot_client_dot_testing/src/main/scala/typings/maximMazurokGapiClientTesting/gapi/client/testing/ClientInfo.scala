@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientInfo extends js.Object {
+trait ClientInfo extends StObject {
   
   /** The list of detailed information about client. */
   var clientInfoDetails: js.UndefOr[js.Array[ClientInfoDetail]] = js.native
@@ -22,33 +23,21 @@ object ClientInfo {
   }
   
   @scala.inline
-  implicit class ClientInfoOps[Self <: ClientInfo] (val x: Self) extends AnyVal {
+  implicit class ClientInfoMutableBuilder[Self <: ClientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientInfoDetails(value: js.Array[ClientInfoDetail]): Self = StObject.set(x, "clientInfoDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientInfoDetailsUndefined: Self = StObject.set(x, "clientInfoDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientInfoDetailsVarargs(value: ClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value :_*))
     
     @scala.inline
-    def setClientInfoDetailsVarargs(value: ClientInfoDetail*): Self = this.set("clientInfoDetails", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientInfoDetails(value: js.Array[ClientInfoDetail]): Self = this.set("clientInfoDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientInfoDetails: Self = this.set("clientInfoDetails", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

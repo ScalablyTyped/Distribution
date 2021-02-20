@@ -9,6 +9,7 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,16 +33,20 @@ class OpenUserTaskClientAction protected () extends ClientAction {
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction")
-@js.native
-object OpenUserTaskClientAction extends js.Object {
+object OpenUserTaskClientAction {
+  
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new OpenUserTaskClientAction instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.create")
+  @js.native
   def create(model: IModel): OpenUserTaskClientAction = js.native
   
   /**
@@ -52,6 +57,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInActionButtonUnderAction")
+  @js.native
   def createInActionButtonUnderAction(container: ActionButton): OpenUserTaskClientAction = js.native
   
   /**
@@ -62,6 +70,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInActionItemUnderAction")
+  @js.native
   def createInActionItemUnderAction(container: ActionItem): OpenUserTaskClientAction = js.native
   
   /**
@@ -72,6 +83,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInAssociationWidgetUnderOnChangeAction")
+  @js.native
   def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): OpenUserTaskClientAction = js.native
   
   /**
@@ -82,6 +96,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInAttributeWidgetUnderOnChangeAction")
+  @js.native
   def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): OpenUserTaskClientAction = js.native
   
   /**
@@ -92,6 +109,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInAttributeWidgetUnderOnEnterAction")
+  @js.native
   def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): OpenUserTaskClientAction = js.native
   
   /**
@@ -102,6 +122,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInAttributeWidgetUnderOnLeaveAction")
+  @js.native
   def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): OpenUserTaskClientAction = js.native
   
   /**
@@ -112,6 +135,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInDivContainerUnderOnClickAction")
+  @js.native
   def createInDivContainerUnderOnClickAction(container: DivContainer): OpenUserTaskClientAction = js.native
   
   /**
@@ -122,6 +148,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInDynamicImageViewerUnderClickAction")
+  @js.native
   def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): OpenUserTaskClientAction = js.native
   
   /**
@@ -132,6 +161,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInGridActionButtonUnderAction")
+  @js.native
   def createInGridActionButtonUnderAction(container: GridActionButton): OpenUserTaskClientAction = js.native
   
   /**
@@ -142,6 +174,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInListViewUnderClickAction")
+  @js.native
   def createInListViewUnderClickAction(container: ListView): OpenUserTaskClientAction = js.native
   
   /**
@@ -152,6 +187,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInListViewUnderPullDownAction")
+  @js.native
   def createInListViewUnderPullDownAction(container: ListView): OpenUserTaskClientAction = js.native
   
   /**
@@ -162,6 +200,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInMenuItemUnderAction")
+  @js.native
   def createInMenuItemUnderAction(container: MenuItem): OpenUserTaskClientAction = js.native
   
   /**
@@ -172,6 +213,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInReferenceSetSelectorUnderOnChangeAction")
+  @js.native
   def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): OpenUserTaskClientAction = js.native
   
   /**
@@ -182,6 +226,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInStaticImageViewerUnderClickAction")
+  @js.native
   def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): OpenUserTaskClientAction = js.native
   
   /**
@@ -192,6 +239,9 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInTextBoxUnderOnEnterKeyPressAction")
+  @js.native
   def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): OpenUserTaskClientAction = js.native
   
   /**
@@ -202,9 +252,22 @@ object OpenUserTaskClientAction extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  8.15.0 and higher
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.createInWidgetValueUnderAction")
+  @js.native
   def createInWidgetValueUnderAction(container: WidgetValue): OpenUserTaskClientAction = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.OpenUserTaskClientAction.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -1,12 +1,13 @@
 package typings.phaser.global.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.BlendMode")
 @js.native
-object BlendMode extends js.Object {
+object BlendMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.phaser.spine.BlendMode with Double] = js.native

@@ -6,12 +6,13 @@ import typings.reactBigCalendar.anon.CSSPropertiesxOffsetnumbe
 import typings.reactBigCalendar.anon.DayProp
 import typings.reactBigCalendar.anon.Start
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventWrapperProps[TEvent /* <: js.Object */] extends js.Object {
+trait EventWrapperProps[TEvent /* <: js.Object */] extends StObject {
   
   var accessors: Start[TEvent] = js.native
   
@@ -59,57 +60,45 @@ object EventWrapperProps {
   }
   
   @scala.inline
-  implicit class EventWrapperPropsOps[Self <: EventWrapperProps[_], TEvent /* <: js.Object */] (val x: Self with EventWrapperProps[TEvent]) extends AnyVal {
+  implicit class EventWrapperPropsMutableBuilder[Self <: EventWrapperProps[_], TEvent /* <: js.Object */] (val x: Self with EventWrapperProps[TEvent]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessors(value: Start[TEvent]): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuesEarlier(value: Boolean): Self = StObject.set(x, "continuesEarlier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessors(value: Start[TEvent]): Self = this.set("accessors", value.asInstanceOf[js.Any])
+    def setContinuesLater(value: Boolean): Self = StObject.set(x, "continuesLater", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuesEarlier(value: Boolean): Self = this.set("continuesEarlier", value.asInstanceOf[js.Any])
+    def setGetters(value: DayProp[TEvent]): Self = StObject.set(x, "getters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuesLater(value: Boolean): Self = this.set("continuesLater", value.asInstanceOf[js.Any])
+    def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: TEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetters(value: DayProp[TEvent]): Self = this.set("getters", value.asInstanceOf[js.Any])
+    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsRtl(value: Boolean): Self = this.set("isRtl", value.asInstanceOf[js.Any])
+    def setOnDoubleClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setStyle(value: CSSPropertiesxOffsetnumbe): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDoubleClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: CSSPropertiesxOffsetnumbe): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

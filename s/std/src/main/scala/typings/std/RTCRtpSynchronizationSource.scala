@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object RTCRtpSynchronizationSource {
   }
   
   @scala.inline
-  implicit class RTCRtpSynchronizationSourceOps[Self <: RTCRtpSynchronizationSource] (val x: Self) extends AnyVal {
+  implicit class RTCRtpSynchronizationSourceMutableBuilder[Self <: RTCRtpSynchronizationSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVoiceActivityFlag(value: scala.Boolean): Self = StObject.set(x, "voiceActivityFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVoiceActivityFlag(value: scala.Boolean): Self = this.set("voiceActivityFlag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVoiceActivityFlag: Self = this.set("voiceActivityFlag", js.undefined)
+    def setVoiceActivityFlagUndefined: Self = StObject.set(x, "voiceActivityFlag", js.undefined)
   }
 }

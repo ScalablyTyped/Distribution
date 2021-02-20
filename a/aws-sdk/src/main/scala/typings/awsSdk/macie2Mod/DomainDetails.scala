@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainDetails extends js.Object {
+trait DomainDetails extends StObject {
   
   /**
     * The name of the domain.
@@ -21,24 +22,12 @@ object DomainDetails {
   }
   
   @scala.inline
-  implicit class DomainDetailsOps[Self <: DomainDetails] (val x: Self) extends AnyVal {
+  implicit class DomainDetailsMutableBuilder[Self <: DomainDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: string): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainName(value: string): Self = this.set("domainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
   }
 }

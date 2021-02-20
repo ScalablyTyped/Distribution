@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslSettings extends js.Object {
+trait SslSettings extends StObject {
   
   /**
     * ID of the AuthorizedCertificate resource configuring SSL for the application. Clearing this field will remove SSL support.By default, a managed certificate is automatically created
@@ -36,36 +37,24 @@ object SslSettings {
   }
   
   @scala.inline
-  implicit class SslSettingsOps[Self <: SslSettings] (val x: Self) extends AnyVal {
+  implicit class SslSettingsMutableBuilder[Self <: SslSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPendingManagedCertificateId(value: String): Self = StObject.set(x, "pendingManagedCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: String): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    def setPendingManagedCertificateIdUndefined: Self = StObject.set(x, "pendingManagedCertificateId", js.undefined)
     
     @scala.inline
-    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    def setSslManagementType(value: String): Self = StObject.set(x, "sslManagementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingManagedCertificateId(value: String): Self = this.set("pendingManagedCertificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingManagedCertificateId: Self = this.set("pendingManagedCertificateId", js.undefined)
-    
-    @scala.inline
-    def setSslManagementType(value: String): Self = this.set("sslManagementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslManagementType: Self = this.set("sslManagementType", js.undefined)
+    def setSslManagementTypeUndefined: Self = StObject.set(x, "sslManagementType", js.undefined)
   }
 }

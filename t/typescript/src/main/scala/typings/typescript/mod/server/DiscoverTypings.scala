@@ -6,6 +6,7 @@ import typings.typescript.mod.SortedReadonlyArray
 import typings.typescript.mod.TypeAcquisition
 import typings.typescript.mod.WatchOptions
 import typings.typescript.typescriptStrings.discover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,51 +47,39 @@ object DiscoverTypings {
   }
   
   @scala.inline
-  implicit class DiscoverTypingsOps[Self <: DiscoverTypings] (val x: Self) extends AnyVal {
+  implicit class DiscoverTypingsMutableBuilder[Self <: DiscoverTypings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachePathUndefined: Self = StObject.set(x, "cachePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompilerOptions(value: CompilerOptions): Self = this.set("compilerOptions", value.asInstanceOf[js.Any])
+    def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileNamesVarargs(value: String*): Self = this.set("fileNames", js.Array(value :_*))
+    def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
     
     @scala.inline
-    def setFileNames(value: js.Array[String]): Self = this.set("fileNames", value.asInstanceOf[js.Any])
+    def setKind(value: discover): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: discover): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setProjectRootPath(value: Path): Self = StObject.set(x, "projectRootPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectRootPath(value: Path): Self = this.set("projectRootPath", value.asInstanceOf[js.Any])
+    def setTypeAcquisition(value: TypeAcquisition): Self = StObject.set(x, "typeAcquisition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeAcquisition(value: TypeAcquisition): Self = this.set("typeAcquisition", value.asInstanceOf[js.Any])
+    def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = StObject.set(x, "unresolvedImports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnresolvedImports(value: SortedReadonlyArray[String]): Self = this.set("unresolvedImports", value.asInstanceOf[js.Any])
+    def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachePath(value: String): Self = this.set("cachePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCachePath: Self = this.set("cachePath", js.undefined)
-    
-    @scala.inline
-    def setWatchOptions(value: WatchOptions): Self = this.set("watchOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWatchOptions: Self = this.set("watchOptions", js.undefined)
+    def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
   }
 }

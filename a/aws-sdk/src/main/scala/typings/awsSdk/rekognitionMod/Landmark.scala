@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Landmark extends js.Object {
+trait Landmark extends StObject {
   
   /**
     * Type of landmark.
@@ -31,36 +32,24 @@ object Landmark {
   }
   
   @scala.inline
-  implicit class LandmarkOps[Self <: Landmark] (val x: Self) extends AnyVal {
+  implicit class LandmarkMutableBuilder[Self <: Landmark] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setType(value: LandmarkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX(value: Float): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: LandmarkType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "X", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setY(value: Float): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Float): Self = this.set("X", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("X", js.undefined)
-    
-    @scala.inline
-    def setY(value: Float): Self = this.set("Y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("Y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
   }
 }

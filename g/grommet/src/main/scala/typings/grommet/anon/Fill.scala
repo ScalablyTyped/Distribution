@@ -2,12 +2,13 @@ package typings.grommet.anon
 
 import typings.grommet.utilsMod.BackgroundType
 import typings.grommet.utilsMod.PadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fill extends js.Object {
+trait Fill extends StObject {
   
   var background: js.UndefOr[BackgroundType] = js.native
   
@@ -26,42 +27,30 @@ object Fill {
   }
   
   @scala.inline
-  implicit class FillOps[Self <: Fill] (val x: Self) extends AnyVal {
+  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: SideSize): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: BackgroundType): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: SideSize): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setPad(value: PadType): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-    
-    @scala.inline
-    def setPad(value: PadType): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePad: Self = this.set("pad", js.undefined)
+    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
   }
 }

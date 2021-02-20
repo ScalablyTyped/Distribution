@@ -1,11 +1,12 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StyleStroke extends js.Object {
+trait StyleStroke extends StObject {
   
   var style: Stroke = js.native
 }
@@ -18,21 +19,9 @@ object StyleStroke {
   }
   
   @scala.inline
-  implicit class StyleStrokeOps[Self <: StyleStroke] (val x: Self) extends AnyVal {
+  implicit class StyleStrokeMutableBuilder[Self <: StyleStroke] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStyle(value: Stroke): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: Stroke): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

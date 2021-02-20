@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeOption extends js.Object {
+trait TreeOption extends StObject {
   
   var click: js.UndefOr[js.Function1[/* node */ TreeNode, Unit]] = js.native
   
@@ -28,57 +29,45 @@ object TreeOption {
   }
   
   @scala.inline
-  implicit class TreeOptionOps[Self <: TreeOption] (val x: Self) extends AnyVal {
+  implicit class TreeOptionMutableBuilder[Self <: TreeOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: /* node */ TreeNode => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElem(value: String): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: /* node */ TreeNode => Unit): Self = this.set("click", js.Any.fromFunction1(value))
+    def setElemUndefined: Self = StObject.set(x, "elem", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElem(value: String): Self = this.set("elem", value.asInstanceOf[js.Any])
+    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
     @scala.inline
-    def deleteElem: Self = this.set("elem", js.undefined)
+    def setNodes(value: TreeNode | js.Array[TreeNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
     @scala.inline
-    def deleteHref: Self = this.set("href", js.undefined)
+    def setNodesVarargs(value: TreeNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
     @scala.inline
-    def setNodesVarargs(value: TreeNode*): Self = this.set("nodes", js.Array(value :_*))
+    def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodes(value: TreeNode | js.Array[TreeNode]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     
     @scala.inline
-    def deleteNodes: Self = this.set("nodes", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkin(value: String): Self = this.set("skin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkin: Self = this.set("skin", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

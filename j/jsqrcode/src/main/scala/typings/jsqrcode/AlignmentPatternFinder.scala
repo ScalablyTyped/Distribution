@@ -1,12 +1,13 @@
 package typings.jsqrcode
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlignmentPatternFinder extends js.Object {
+trait AlignmentPatternFinder extends StObject {
   
   /* private */ def centerFromEnd(stateCount: Double, end: Double): Double = js.native
   
@@ -57,60 +58,48 @@ object AlignmentPatternFinder {
   }
   
   @scala.inline
-  implicit class AlignmentPatternFinderOps[Self <: AlignmentPatternFinder] (val x: Self) extends AnyVal {
+  implicit class AlignmentPatternFinderMutableBuilder[Self <: AlignmentPatternFinder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterFromEnd(value: (Double, Double) => Double): Self = StObject.set(x, "centerFromEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossCheckStateCount(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "crossCheckStateCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFind(value: () => AlignmentPattern): Self = StObject.set(x, "find", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenterFromEnd(value: (Double, Double) => Double): Self = this.set("centerFromEnd", js.Any.fromFunction2(value))
+    def setFoundPatternCross(value: Double => Boolean): Self = StObject.set(x, "foundPatternCross", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCrossCheckStateCount(value: js.Tuple3[Double, Double, Double]): Self = this.set("crossCheckStateCount", value.asInstanceOf[js.Any])
+    def setHandlePossibleCenter(value: (Double, Double, Double) => AlignmentPattern): Self = StObject.set(x, "handlePossibleCenter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFind(value: () => AlignmentPattern): Self = this.set("find", js.Any.fromFunction0(value))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFoundPatternCross(value: Double => Boolean): Self = this.set("foundPatternCross", js.Any.fromFunction1(value))
+    def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandlePossibleCenter(value: (Double, Double, Double) => AlignmentPattern): Self = this.set("handlePossibleCenter", js.Any.fromFunction3(value))
+    def setModuleSize(value: Double): Self = StObject.set(x, "moduleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPossibleCenters(value: js.Array[AlignmentPattern]): Self = StObject.set(x, "possibleCenters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Uint8Array): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPossibleCentersVarargs(value: AlignmentPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value :_*))
     
     @scala.inline
-    def setModuleSize(value: Double): Self = this.set("moduleSize", value.asInstanceOf[js.Any])
+    def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPossibleCentersVarargs(value: AlignmentPattern*): Self = this.set("possibleCenters", js.Array(value :_*))
+    def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPossibleCenters(value: js.Array[AlignmentPattern]): Self = this.set("possibleCenters", value.asInstanceOf[js.Any])
+    def setStartY(value: Double): Self = StObject.set(x, "startY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultPointCallback(value: ResultPointCallback): Self = this.set("resultPointCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartX(value: Double): Self = this.set("startX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartY(value: Double): Self = this.set("startY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

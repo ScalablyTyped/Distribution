@@ -1,6 +1,7 @@
 package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
 import typings.instagramPrivateApi.anon.Count
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,45 +48,33 @@ object StoryQuiz {
   }
   
   @scala.inline
-  implicit class StoryQuizOps[Self <: StoryQuiz] (val x: Self) extends AnyVal {
+  implicit class StoryQuizMutableBuilder[Self <: StoryQuiz] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrect_answer(value: String): Self = StObject.set(x, "correct_answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: js.Array[Count]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrect_answer(value: String): Self = this.set("correct_answer", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: Count*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setEnd_background_color(value: String): Self = this.set("end_background_color", value.asInstanceOf[js.Any])
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: Count*): Self = this.set("options", js.Array(value :_*))
+    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[Count]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    def setViewer_answer(value: Double): Self = StObject.set(x, "viewer_answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_background_color(value: String): Self = this.set("start_background_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText_color(value: String): Self = this.set("text_color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_answer(value: Double): Self = this.set("viewer_answer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_can_answer(value: Boolean): Self = this.set("viewer_can_answer", value.asInstanceOf[js.Any])
+    def setViewer_can_answer(value: Boolean): Self = StObject.set(x, "viewer_can_answer", value.asInstanceOf[js.Any])
   }
 }

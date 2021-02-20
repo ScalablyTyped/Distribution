@@ -1,16 +1,16 @@
 package typings.tryghostContentApi.mod
 
 import typings.tryghostContentApi.anon.Label
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Settings
-  extends Metadata
+  extends SocialMedia
+     with Metadata
      with CodeInjection
-     with Facebook
-     with Twitter
      with GhostData {
   
   var cover_image: js.UndefOr[String] = js.native
@@ -48,105 +48,93 @@ object Settings {
   }
   
   @scala.inline
-  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCover_image(value: String): Self = StObject.set(x, "cover_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCover_imageUndefined: Self = StObject.set(x, "cover_image", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover_image(value: String): Self = this.set("cover_image", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCover_image: Self = this.set("cover_image", js.undefined)
+    def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFacebookUndefined: Self = StObject.set(x, "facebook", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGhost_foot(value: Nullable[String]): Self = StObject.set(x, "ghost_foot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacebook(value: String): Self = this.set("facebook", value.asInstanceOf[js.Any])
+    def setGhost_footNull: Self = StObject.set(x, "ghost_foot", null)
     
     @scala.inline
-    def deleteFacebook: Self = this.set("facebook", js.undefined)
+    def setGhost_footUndefined: Self = StObject.set(x, "ghost_foot", js.undefined)
     
     @scala.inline
-    def setGhost_foot(value: Nullable[String]): Self = this.set("ghost_foot", value.asInstanceOf[js.Any])
+    def setGhost_head(value: Nullable[String]): Self = StObject.set(x, "ghost_head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGhost_foot: Self = this.set("ghost_foot", js.undefined)
+    def setGhost_headNull: Self = StObject.set(x, "ghost_head", null)
     
     @scala.inline
-    def setGhost_footNull: Self = this.set("ghost_foot", null)
+    def setGhost_headUndefined: Self = StObject.set(x, "ghost_head", js.undefined)
     
     @scala.inline
-    def setGhost_head(value: Nullable[String]): Self = this.set("ghost_head", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGhost_head: Self = this.set("ghost_head", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setGhost_headNull: Self = this.set("ghost_head", null)
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setNavigation(value: js.Array[Label]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setNavigationVarargs(value: Label*): Self = StObject.set(x, "navigation", js.Array(value :_*))
     
     @scala.inline
-    def setNavigationVarargs(value: Label*): Self = this.set("navigation", js.Array(value :_*))
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigation(value: js.Array[Label]): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteNavigation: Self = this.set("navigation", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTwitterUndefined: Self = StObject.set(x, "twitter", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwitter(value: String): Self = this.set("twitter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwitter: Self = this.set("twitter", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

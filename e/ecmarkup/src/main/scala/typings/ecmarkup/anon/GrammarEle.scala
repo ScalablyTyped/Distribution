@@ -1,11 +1,12 @@
 package typings.ecmarkup.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrammarEle extends js.Object {
+trait GrammarEle extends StObject {
   
   var grammar: typings.grammarkdown.mod.Grammar = js.native
   
@@ -20,24 +21,12 @@ object GrammarEle {
   }
   
   @scala.inline
-  implicit class GrammarEleOps[Self <: GrammarEle] (val x: Self) extends AnyVal {
+  implicit class GrammarEleMutableBuilder[Self <: GrammarEle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrammar(value: typings.grammarkdown.mod.Grammar): Self = StObject.set(x, "grammar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGrammar(value: typings.grammarkdown.mod.Grammar): Self = this.set("grammar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGrammarEle(value: typings.std.Element): Self = this.set("grammarEle", value.asInstanceOf[js.Any])
+    def setGrammarEle(value: typings.std.Element): Self = StObject.set(x, "grammarEle", value.asInstanceOf[js.Any])
   }
 }

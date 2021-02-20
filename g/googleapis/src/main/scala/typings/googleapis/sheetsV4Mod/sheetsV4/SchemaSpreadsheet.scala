@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Resource that represents a spreadsheet.
   */
 @js.native
-trait SchemaSpreadsheet extends js.Object {
+trait SchemaSpreadsheet extends StObject {
   
   /**
     * The developer metadata associated with a spreadsheet.
@@ -49,63 +50,51 @@ object SchemaSpreadsheet {
   }
   
   @scala.inline
-  implicit class SchemaSpreadsheetOps[Self <: SchemaSpreadsheet] (val x: Self) extends AnyVal {
+  implicit class SchemaSpreadsheetMutableBuilder[Self <: SchemaSpreadsheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = this.set("developerMetadata", js.Array(value :_*))
+    def setNamedRanges(value: js.Array[SchemaNamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = this.set("developerMetadata", value.asInstanceOf[js.Any])
+    def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
     @scala.inline
-    def deleteDeveloperMetadata: Self = this.set("developerMetadata", js.undefined)
+    def setNamedRangesVarargs(value: SchemaNamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
     
     @scala.inline
-    def setNamedRangesVarargs(value: SchemaNamedRange*): Self = this.set("namedRanges", js.Array(value :_*))
+    def setProperties(value: SchemaSpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRanges(value: js.Array[SchemaNamedRange]): Self = this.set("namedRanges", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteNamedRanges: Self = this.set("namedRanges", js.undefined)
+    def setSheets(value: js.Array[SchemaSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SchemaSpreadsheetProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setSheetsVarargs(value: SchemaSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
     @scala.inline
-    def setSheetsVarargs(value: SchemaSheet*): Self = this.set("sheets", js.Array(value :_*))
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheets(value: js.Array[SchemaSheet]): Self = this.set("sheets", value.asInstanceOf[js.Any])
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def deleteSheets: Self = this.set("sheets", js.undefined)
+    def setSpreadsheetUrl(value: String): Self = StObject.set(x, "spreadsheetUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
-    
-    @scala.inline
-    def setSpreadsheetUrl(value: String): Self = this.set("spreadsheetUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetUrl: Self = this.set("spreadsheetUrl", js.undefined)
+    def setSpreadsheetUrlUndefined: Self = StObject.set(x, "spreadsheetUrl", js.undefined)
   }
 }

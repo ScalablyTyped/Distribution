@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchReadRequest extends js.Object {
+trait BatchReadRequest extends StObject {
   
   /**
     * Represents the manner and timing in which the successful write or update of an object is reflected in a subsequent read operation of that same object.
@@ -31,33 +32,21 @@ object BatchReadRequest {
   }
   
   @scala.inline
-  implicit class BatchReadRequestOps[Self <: BatchReadRequest] (val x: Self) extends AnyVal {
+  implicit class BatchReadRequestMutableBuilder[Self <: BatchReadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsistencyLevelUndefined: Self = StObject.set(x, "ConsistencyLevel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    def setOperations(value: BatchReadOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationsVarargs(value: BatchReadOperation*): Self = this.set("Operations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperations(value: BatchReadOperationList): Self = this.set("Operations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConsistencyLevel(value: ConsistencyLevel): Self = this.set("ConsistencyLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsistencyLevel: Self = this.set("ConsistencyLevel", js.undefined)
+    def setOperationsVarargs(value: BatchReadOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
   }
 }

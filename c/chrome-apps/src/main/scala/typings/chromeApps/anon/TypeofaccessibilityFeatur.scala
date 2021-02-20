@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.accessibilityFeatures.AccessibilityFeaturesSetting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofaccessibilityFeatur extends js.Object {
+trait TypeofaccessibilityFeatur extends StObject {
   
   /**
     * get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
@@ -102,57 +103,45 @@ object TypeofaccessibilityFeatur {
   }
   
   @scala.inline
-  implicit class TypeofaccessibilityFeaturOps[Self <: TypeofaccessibilityFeatur] (val x: Self) extends AnyVal {
+  implicit class TypeofaccessibilityFeaturMutableBuilder[Self <: TypeofaccessibilityFeatur] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationPolicy(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "animationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoclick(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "autoclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaretHighlight(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "caretHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationPolicy(value: AccessibilityFeaturesSetting): Self = this.set("animationPolicy", value.asInstanceOf[js.Any])
+    def setCursorHighlight(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "cursorHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoclick(value: AccessibilityFeaturesSetting): Self = this.set("autoclick", value.asInstanceOf[js.Any])
+    def setFocusHighlight(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "focusHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaretHighlight(value: AccessibilityFeaturesSetting): Self = this.set("caretHighlight", value.asInstanceOf[js.Any])
+    def setHighContrast(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "highContrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorHighlight(value: AccessibilityFeaturesSetting): Self = this.set("cursorHighlight", value.asInstanceOf[js.Any])
+    def setLargeCursor(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "largeCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusHighlight(value: AccessibilityFeaturesSetting): Self = this.set("focusHighlight", value.asInstanceOf[js.Any])
+    def setScreenMagnifier(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "screenMagnifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighContrast(value: AccessibilityFeaturesSetting): Self = this.set("highContrast", value.asInstanceOf[js.Any])
+    def setSelectToSpeak(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "selectToSpeak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeCursor(value: AccessibilityFeaturesSetting): Self = this.set("largeCursor", value.asInstanceOf[js.Any])
+    def setSpokenFeedback(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "spokenFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenMagnifier(value: AccessibilityFeaturesSetting): Self = this.set("screenMagnifier", value.asInstanceOf[js.Any])
+    def setStickyKeys(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "stickyKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectToSpeak(value: AccessibilityFeaturesSetting): Self = this.set("selectToSpeak", value.asInstanceOf[js.Any])
+    def setSwitchAccess(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "switchAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpokenFeedback(value: AccessibilityFeaturesSetting): Self = this.set("spokenFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStickyKeys(value: AccessibilityFeaturesSetting): Self = this.set("stickyKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwitchAccess(value: AccessibilityFeaturesSetting): Self = this.set("switchAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualKeyboard(value: AccessibilityFeaturesSetting): Self = this.set("virtualKeyboard", value.asInstanceOf[js.Any])
+    def setVirtualKeyboard(value: AccessibilityFeaturesSetting): Self = StObject.set(x, "virtualKeyboard", value.asInstanceOf[js.Any])
   }
 }

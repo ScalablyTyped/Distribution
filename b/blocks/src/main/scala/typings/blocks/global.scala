@@ -1,12 +1,15 @@
 package typings.blocks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var blocks: BlocksStatic = js.native
+  @JSGlobal("blocks")
+  @js.native
+  def blocks: BlocksStatic = js.native
+  @scala.inline
+  def blocks_=(x: BlocksStatic): Unit = js.Dynamic.global.updateDynamic("blocks")(x.asInstanceOf[js.Any])
 }

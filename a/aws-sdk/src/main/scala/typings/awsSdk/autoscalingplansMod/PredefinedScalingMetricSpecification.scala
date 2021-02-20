@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredefinedScalingMetricSpecification extends js.Object {
+trait PredefinedScalingMetricSpecification extends StObject {
   
   /**
     * The metric type. The ALBRequestCountPerTarget metric type applies only to Auto Scaling groups, Spot Fleet requests, and ECS services.
@@ -26,27 +27,15 @@ object PredefinedScalingMetricSpecification {
   }
   
   @scala.inline
-  implicit class PredefinedScalingMetricSpecificationOps[Self <: PredefinedScalingMetricSpecification] (val x: Self) extends AnyVal {
+  implicit class PredefinedScalingMetricSpecificationMutableBuilder[Self <: PredefinedScalingMetricSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPredefinedScalingMetricType(value: ScalingMetricType): Self = StObject.set(x, "PredefinedScalingMetricType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceLabel(value: ResourceLabel): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPredefinedScalingMetricType(value: ScalingMetricType): Self = this.set("PredefinedScalingMetricType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceLabel(value: ResourceLabel): Self = this.set("ResourceLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLabel: Self = this.set("ResourceLabel", js.undefined)
+    def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
   }
 }

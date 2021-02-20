@@ -2,12 +2,13 @@ package typings.rethinkdb.mod
 
 import typings.rethinkdb.rethinkdbStrings.hard
 import typings.rethinkdb.rethinkdbStrings.soft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateOptions extends js.Object {
+trait UpdateOptions extends StObject {
   
   var durability: js.UndefOr[hard | soft] = js.native
   
@@ -24,36 +25,24 @@ object UpdateOptions {
   }
   
   @scala.inline
-  implicit class UpdateOptionsOps[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+  implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurabilityUndefined: Self = StObject.set(x, "durability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNonAtomic(value: Boolean): Self = StObject.set(x, "nonAtomic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurability(value: hard | soft): Self = this.set("durability", value.asInstanceOf[js.Any])
+    def setNonAtomicUndefined: Self = StObject.set(x, "nonAtomic", js.undefined)
     
     @scala.inline
-    def deleteDurability: Self = this.set("durability", js.undefined)
+    def setReturnChanges(value: Boolean): Self = StObject.set(x, "returnChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonAtomic(value: Boolean): Self = this.set("nonAtomic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNonAtomic: Self = this.set("nonAtomic", js.undefined)
-    
-    @scala.inline
-    def setReturnChanges(value: Boolean): Self = this.set("returnChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnChanges: Self = this.set("returnChanges", js.undefined)
+    def setReturnChangesUndefined: Self = StObject.set(x, "returnChanges", js.undefined)
   }
 }

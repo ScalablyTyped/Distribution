@@ -6,13 +6,12 @@ import typings.fridaGum.MemoryScanMatch
 import typings.fridaGum.NativePointerValue
 import typings.fridaGum.PageProtection
 import typings.fridaGum.UInt64
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Memory")
-@js.native
-object Memory extends js.Object {
+object Memory {
   
   /**
     * Allocates `size` bytes of memory on Frida's private heap, or, if `size` is a multiple of Process#pageSize,
@@ -22,7 +21,11 @@ object Memory extends js.Object {
     *
     * @param size Number of bytes to allocate.
     */
+  @JSGlobal("Memory.alloc")
+  @js.native
   def alloc(size: Double): typings.fridaGum.NativePointer = js.native
+  @JSGlobal("Memory.alloc")
+  @js.native
   def alloc(size: UInt64): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -31,6 +34,8 @@ object Memory extends js.Object {
     *
     * @param str String to allocate.
     */
+  @JSGlobal("Memory.allocAnsiString")
+  @js.native
   def allocAnsiString(str: String): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -39,6 +44,8 @@ object Memory extends js.Object {
     *
     * @param str String to allocate.
     */
+  @JSGlobal("Memory.allocUtf16String")
+  @js.native
   def allocUtf16String(str: String): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -47,6 +54,8 @@ object Memory extends js.Object {
     *
     * @param str String to allocate.
     */
+  @JSGlobal("Memory.allocUtf8String")
+  @js.native
   def allocUtf8String(str: String): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -56,7 +65,11 @@ object Memory extends js.Object {
     * @param src Sources address.
     * @param n Number of bytes to copy.
     */
+  @JSGlobal("Memory.copy")
+  @js.native
   def copy(dst: NativePointerValue, src: NativePointerValue, n: Double): Unit = js.native
+  @JSGlobal("Memory.copy")
+  @js.native
   def copy(dst: NativePointerValue, src: NativePointerValue, n: UInt64): Unit = js.native
   
   /**
@@ -65,7 +78,11 @@ object Memory extends js.Object {
     * @param address Address to copy from.
     * @param size Number of bytes to copy.
     */
+  @JSGlobal("Memory.dup")
+  @js.native
   def dup(address: NativePointerValue, size: Double): typings.fridaGum.NativePointer = js.native
+  @JSGlobal("Memory.dup")
+  @js.native
   def dup(address: NativePointerValue, size: UInt64): typings.fridaGum.NativePointer = js.native
   
   /**
@@ -79,7 +96,11 @@ object Memory extends js.Object {
     * @param size Number of bytes to modify.
     * @param apply Function that applies the desired changes.
     */
+  @JSGlobal("Memory.patchCode")
+  @js.native
   def patchCode(address: NativePointerValue, size: Double, apply: MemoryPatchApplyCallback): Unit = js.native
+  @JSGlobal("Memory.patchCode")
+  @js.native
   def patchCode(address: NativePointerValue, size: UInt64, apply: MemoryPatchApplyCallback): Unit = js.native
   
   /**
@@ -89,7 +110,11 @@ object Memory extends js.Object {
     * @param size Number of bytes. Must be a multiple of Process#pageSize.
     * @param protection Desired page protection.
     */
+  @JSGlobal("Memory.protect")
+  @js.native
   def protect(address: NativePointerValue, size: Double, protection: PageProtection): Boolean = js.native
+  @JSGlobal("Memory.protect")
+  @js.native
   def protect(address: NativePointerValue, size: UInt64, protection: PageProtection): Boolean = js.native
   
   /**
@@ -106,7 +131,11 @@ object Memory extends js.Object {
     *                which gets translated into masks behind the scenes.
     * @param callbacks Object with callbacks.
     */
+  @JSGlobal("Memory.scan")
+  @js.native
   def scan(address: NativePointerValue, size: Double, pattern: String, callbacks: MemoryScanCallbacks): Unit = js.native
+  @JSGlobal("Memory.scan")
+  @js.native
   def scan(address: NativePointerValue, size: UInt64, pattern: String, callbacks: MemoryScanCallbacks): Unit = js.native
   
   /**
@@ -116,6 +145,10 @@ object Memory extends js.Object {
     * @param size Number of bytes to scan.
     * @param pattern Match pattern, see `Memory.scan()` for details.
     */
+  @JSGlobal("Memory.scanSync")
+  @js.native
   def scanSync(address: NativePointerValue, size: Double, pattern: String): js.Array[MemoryScanMatch] = js.native
+  @JSGlobal("Memory.scanSync")
+  @js.native
   def scanSync(address: NativePointerValue, size: UInt64, pattern: String): js.Array[MemoryScanMatch] = js.native
 }

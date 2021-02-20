@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object Plane {
   }
   
   @scala.inline
-  implicit class PlaneOps[Self <: Plane] (val x: Self) extends AnyVal {
+  implicit class PlaneMutableBuilder[Self <: Plane] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculateWorldAABB(value: (Vec3, Quaternion, Double, Double) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeWorldNormal(value: Quaternion => Unit): Self = StObject.set(x, "computeWorldNormal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorldNormal(value: Vec3): Self = StObject.set(x, "worldNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateWorldAABB(value: (Vec3, Quaternion, Double, Double) => Unit): Self = this.set("calculateWorldAABB", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setComputeWorldNormal(value: Quaternion => Unit): Self = this.set("computeWorldNormal", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWorldNormal(value: Vec3): Self = this.set("worldNormal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorldNormalNeedsUpdate(value: Boolean): Self = this.set("worldNormalNeedsUpdate", value.asInstanceOf[js.Any])
+    def setWorldNormalNeedsUpdate(value: Boolean): Self = StObject.set(x, "worldNormalNeedsUpdate", value.asInstanceOf[js.Any])
   }
 }

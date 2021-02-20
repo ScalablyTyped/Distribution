@@ -13,12 +13,13 @@ import typings.devextreme.devextremeStrings.slideIn
 import typings.devextreme.devextremeStrings.slideOut
 import typings.devextreme.devextremeStrings.top
 import typings.devextreme.mod.DevExpress.core.dxElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait animationConfig extends js.Object {
+trait animationConfig extends StObject {
   
   /**
     * [descr:animationConfig.complete]
@@ -79,78 +80,66 @@ object animationConfig {
   }
   
   @scala.inline
-  implicit class animationConfigOps[Self <: animationConfig] (val x: Self) extends AnyVal {
+  implicit class animationConfigMutableBuilder[Self <: animationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: (/* $element */ dxElement, /* config */ js.Any) => _): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: (/* $element */ dxElement, /* config */ js.Any) => _): Self = this.set("complete", js.Any.fromFunction2(value))
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setDirection(value: bottom | left | right | top): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: bottom | left | right | top): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFrom(value: Double | String | js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setStaggerDelay(value: Double): Self = StObject.set(x, "staggerDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Double | String | js.Any): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setStaggerDelayUndefined: Self = StObject.set(x, "staggerDelay", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setStart(value: (/* $element */ dxElement, /* config */ js.Any) => _): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setStaggerDelay(value: Double): Self = this.set("staggerDelay", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteStaggerDelay: Self = this.set("staggerDelay", js.undefined)
+    def setTo(value: Double | String | js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: (/* $element */ dxElement, /* config */ js.Any) => _): Self = this.set("start", js.Any.fromFunction2(value))
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setType(value: css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTo(value: Double | String | js.Any): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
-    
-    @scala.inline
-    def setType(value: css | fade | fadeIn | fadeOut | pop | slide | slideIn | slideOut): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

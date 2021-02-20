@@ -1,6 +1,7 @@
 package typings.ajv.mod
 
 import typings.ajv.ajvStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,42 +26,30 @@ object StringFormatDefinition {
   }
   
   @scala.inline
-  implicit class StringFormatDefinitionOps[Self <: StringFormatDefinition] (val x: Self) extends AnyVal {
+  implicit class StringFormatDefinitionMutableBuilder[Self <: StringFormatDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompare(value: (/* data1 */ String, /* data2 */ String) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setValidateFunction1(value: /* data */ String => Boolean | js.Thenable[js.Any]): Self = this.set("validate", js.Any.fromFunction1(value))
+    def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
     
     @scala.inline
-    def setValidate(value: FormatValidator): Self = this.set("validate", value.asInstanceOf[js.Any])
+    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setValidate(value: FormatValidator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompare(value: (/* data1 */ String, /* data2 */ String) => Double): Self = this.set("compare", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteCompare: Self = this.set("compare", js.undefined)
-    
-    @scala.inline
-    def setType(value: string): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValidateFunction1(value: /* data */ String => Boolean | js.Thenable[js.Any]): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

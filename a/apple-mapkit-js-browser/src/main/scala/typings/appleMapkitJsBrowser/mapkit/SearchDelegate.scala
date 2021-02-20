@@ -1,6 +1,7 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * request.
   */
 @js.native
-trait SearchDelegate extends js.Object {
+trait SearchDelegate extends StObject {
   
   /**
     * When an autocomplete request successfully completes, this method returns
@@ -44,42 +45,30 @@ object SearchDelegate {
   }
   
   @scala.inline
-  implicit class SearchDelegateOps[Self <: SearchDelegate] (val x: Self) extends AnyVal {
+  implicit class SearchDelegateMutableBuilder[Self <: SearchDelegate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutocompleteDidComplete(value: /* data */ SearchAutocompleteResponse => Unit): Self = StObject.set(x, "autocompleteDidComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocompleteDidCompleteUndefined: Self = StObject.set(x, "autocompleteDidComplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutocompleteDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "autocompleteDidError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutocompleteDidComplete(value: /* data */ SearchAutocompleteResponse => Unit): Self = this.set("autocompleteDidComplete", js.Any.fromFunction1(value))
+    def setAutocompleteDidErrorUndefined: Self = StObject.set(x, "autocompleteDidError", js.undefined)
     
     @scala.inline
-    def deleteAutocompleteDidComplete: Self = this.set("autocompleteDidComplete", js.undefined)
+    def setSearchDidComplete(value: /* data */ SearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutocompleteDidError(value: /* error */ Error => Unit): Self = this.set("autocompleteDidError", js.Any.fromFunction1(value))
+    def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
     
     @scala.inline
-    def deleteAutocompleteDidError: Self = this.set("autocompleteDidError", js.undefined)
+    def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSearchDidComplete(value: /* data */ SearchResponse => Unit): Self = this.set("searchDidComplete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSearchDidComplete: Self = this.set("searchDidComplete", js.undefined)
-    
-    @scala.inline
-    def setSearchDidError(value: /* error */ Error => Unit): Self = this.set("searchDidError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSearchDidError: Self = this.set("searchDidError", js.undefined)
+    def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
   }
 }

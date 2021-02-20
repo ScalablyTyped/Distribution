@@ -1,11 +1,12 @@
 package typings.jqueryFullscreen
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * The method returns the current fullscreen element (or true if browser doesn't support this) when fullscreen mode is active,

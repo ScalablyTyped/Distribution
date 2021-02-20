@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportOptionArguments extends js.Object {
+trait ReportOptionArguments extends StObject {
   
   var apiVersion: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object ReportOptionArguments {
   }
   
   @scala.inline
-  implicit class ReportOptionArgumentsOps[Self <: ReportOptionArguments] (val x: Self) extends AnyVal {
+  implicit class ReportOptionArgumentsMutableBuilder[Self <: ReportOptionArguments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeZeroImpressions(value: Boolean): Self = StObject.set(x, "includeZeroImpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    def setIncludeZeroImpressionsUndefined: Self = StObject.set(x, "includeZeroImpressions", js.undefined)
     
     @scala.inline
-    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    def setResolveGeoNames(value: Boolean): Self = StObject.set(x, "resolveGeoNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeZeroImpressions(value: Boolean): Self = this.set("includeZeroImpressions", value.asInstanceOf[js.Any])
+    def setResolveGeoNamesUndefined: Self = StObject.set(x, "resolveGeoNames", js.undefined)
     
     @scala.inline
-    def deleteIncludeZeroImpressions: Self = this.set("includeZeroImpressions", js.undefined)
+    def setReturnMoneyInMicros(value: Boolean): Self = StObject.set(x, "returnMoneyInMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolveGeoNames(value: Boolean): Self = this.set("resolveGeoNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolveGeoNames: Self = this.set("resolveGeoNames", js.undefined)
-    
-    @scala.inline
-    def setReturnMoneyInMicros(value: Boolean): Self = this.set("returnMoneyInMicros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnMoneyInMicros: Self = this.set("returnMoneyInMicros", js.undefined)
+    def setReturnMoneyInMicrosUndefined: Self = StObject.set(x, "returnMoneyInMicros", js.undefined)
   }
 }

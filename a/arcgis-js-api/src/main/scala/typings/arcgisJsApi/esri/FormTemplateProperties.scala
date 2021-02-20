@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormTemplateProperties extends js.Object {
+trait FormTemplateProperties extends StObject {
   
   /**
     * The description of the form.
@@ -44,48 +45,36 @@ object FormTemplateProperties {
   }
   
   @scala.inline
-  implicit class FormTemplatePropertiesOps[Self <: FormTemplateProperties] (val x: Self) extends AnyVal {
+  implicit class FormTemplatePropertiesMutableBuilder[Self <: FormTemplateProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElements(value: js.Array[ElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setElementsVarargs(value: ElementProperties*): Self = StObject.set(x, "elements", js.Array(value :_*))
     
     @scala.inline
-    def setElementsVarargs(value: ElementProperties*): Self = this.set("elements", js.Array(value :_*))
+    def setExpressionInfos(value: js.Array[ExpressionInfoProperties]): Self = StObject.set(x, "expressionInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: js.Array[ElementProperties]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setExpressionInfosUndefined: Self = StObject.set(x, "expressionInfos", js.undefined)
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = StObject.set(x, "expressionInfos", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionInfosVarargs(value: ExpressionInfoProperties*): Self = this.set("expressionInfos", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionInfos(value: js.Array[ExpressionInfoProperties]): Self = this.set("expressionInfos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpressionInfos: Self = this.set("expressionInfos", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

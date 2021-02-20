@@ -3,14 +3,14 @@ package typings.three
 import typings.three.curveMod.Curve
 import typings.three.geometryMod.Geometry
 import typings.three.vector2Mod.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/extras/core/CurvePath", JSImport.Namespace)
-@js.native
-object curvePathMod extends js.Object {
+object curvePathMod {
   
+  @JSImport("three/src/extras/core/CurvePath", "CurvePath")
   @js.native
   class CurvePath[T /* <: Vector */] () extends Curve[T] {
     

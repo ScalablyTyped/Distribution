@@ -11,12 +11,13 @@ import typings.chromeApps.chromeAppsStrings.arm_
 import typings.chromeApps.chromeAppsStrings.mips64_
 import typings.chromeApps.chromeAppsStrings.mips_
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Naclarch extends js.Object {
+trait Naclarch extends StObject {
   
   var nacl_arch: ToStringLiteral[
     ARM, 
@@ -48,19 +49,7 @@ object Naclarch {
   }
   
   @scala.inline
-  implicit class NaclarchOps[Self <: Naclarch] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class NaclarchMutableBuilder[Self <: Naclarch] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setNacl_arch(
@@ -72,9 +61,9 @@ object Naclarch {
             mips64_ | arm_ | `x86-64` | `x86-32` | mips_
           ]
         ]
-    ): Self = this.set("nacl_arch", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub_package_path(value: String): Self = this.set("sub_package_path", value.asInstanceOf[js.Any])
+    def setSub_package_path(value: String): Self = StObject.set(x, "sub_package_path", value.asInstanceOf[js.Any])
   }
 }

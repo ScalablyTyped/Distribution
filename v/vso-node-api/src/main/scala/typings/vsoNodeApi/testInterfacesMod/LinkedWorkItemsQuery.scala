@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinkedWorkItemsQuery extends js.Object {
+trait LinkedWorkItemsQuery extends StObject {
   
   var automatedTestNames: js.Array[String] = js.native
   
@@ -35,48 +36,36 @@ object LinkedWorkItemsQuery {
   }
   
   @scala.inline
-  implicit class LinkedWorkItemsQueryOps[Self <: LinkedWorkItemsQuery] (val x: Self) extends AnyVal {
+  implicit class LinkedWorkItemsQueryMutableBuilder[Self <: LinkedWorkItemsQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatedTestNames(value: js.Array[String]): Self = StObject.set(x, "automatedTestNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomatedTestNamesVarargs(value: String*): Self = StObject.set(x, "automatedTestNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlanId(value: Double): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestNamesVarargs(value: String*): Self = this.set("automatedTestNames", js.Array(value :_*))
+    def setPointIds(value: js.Array[Double]): Self = StObject.set(x, "pointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestNames(value: js.Array[String]): Self = this.set("automatedTestNames", value.asInstanceOf[js.Any])
+    def setPointIdsVarargs(value: Double*): Self = StObject.set(x, "pointIds", js.Array(value :_*))
     
     @scala.inline
-    def setPlanId(value: Double): Self = this.set("planId", value.asInstanceOf[js.Any])
+    def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointIdsVarargs(value: Double*): Self = this.set("pointIds", js.Array(value :_*))
+    def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
     
     @scala.inline
-    def setPointIds(value: js.Array[Double]): Self = this.set("pointIds", value.asInstanceOf[js.Any])
+    def setTestCaseIds(value: js.Array[Double]): Self = StObject.set(x, "testCaseIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuiteIdsVarargs(value: Double*): Self = this.set("suiteIds", js.Array(value :_*))
+    def setTestCaseIdsVarargs(value: Double*): Self = StObject.set(x, "testCaseIds", js.Array(value :_*))
     
     @scala.inline
-    def setSuiteIds(value: js.Array[Double]): Self = this.set("suiteIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestCaseIdsVarargs(value: Double*): Self = this.set("testCaseIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestCaseIds(value: js.Array[Double]): Self = this.set("testCaseIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemCategory(value: String): Self = this.set("workItemCategory", value.asInstanceOf[js.Any])
+    def setWorkItemCategory(value: String): Self = StObject.set(x, "workItemCategory", value.asInstanceOf[js.Any])
   }
 }

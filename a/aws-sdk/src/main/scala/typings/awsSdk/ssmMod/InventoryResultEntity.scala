@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryResultEntity extends js.Object {
+trait InventoryResultEntity extends StObject {
   
   /**
     * The data section in the inventory result entity JSON.
@@ -26,30 +27,18 @@ object InventoryResultEntity {
   }
   
   @scala.inline
-  implicit class InventoryResultEntityOps[Self <: InventoryResultEntity] (val x: Self) extends AnyVal {
+  implicit class InventoryResultEntityMutableBuilder[Self <: InventoryResultEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: InventoryResultItemMap): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: InventoryResultEntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: InventoryResultItemMap): Self = this.set("Data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("Data", js.undefined)
-    
-    @scala.inline
-    def setId(value: InventoryResultEntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

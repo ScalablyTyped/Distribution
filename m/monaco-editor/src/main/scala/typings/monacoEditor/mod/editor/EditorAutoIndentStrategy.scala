@@ -1,41 +1,36 @@
 package typings.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditorAutoIndentStrategy extends js.Object
+sealed trait EditorAutoIndentStrategy extends StObject
 @JSImport("monaco-editor", "editor.EditorAutoIndentStrategy")
 @js.native
-object EditorAutoIndentStrategy extends js.Object {
+object EditorAutoIndentStrategy extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EditorAutoIndentStrategy with Double] = js.native
   
   @js.native
   sealed trait Advanced extends EditorAutoIndentStrategy
-  /* 3 */ @js.native
-  object Advanced extends TopLevel[Advanced with Double]
+  /* 3 */ val Advanced: typings.monacoEditor.mod.editor.EditorAutoIndentStrategy.Advanced with Double = js.native
   
   @js.native
   sealed trait Brackets extends EditorAutoIndentStrategy
-  /* 2 */ @js.native
-  object Brackets extends TopLevel[Brackets with Double]
+  /* 2 */ val Brackets: typings.monacoEditor.mod.editor.EditorAutoIndentStrategy.Brackets with Double = js.native
   
   @js.native
   sealed trait Full extends EditorAutoIndentStrategy
-  /* 4 */ @js.native
-  object Full extends TopLevel[Full with Double]
+  /* 4 */ val Full: typings.monacoEditor.mod.editor.EditorAutoIndentStrategy.Full with Double = js.native
   
   @js.native
   sealed trait Keep extends EditorAutoIndentStrategy
-  /* 1 */ @js.native
-  object Keep extends TopLevel[Keep with Double]
+  /* 1 */ val Keep: typings.monacoEditor.mod.editor.EditorAutoIndentStrategy.Keep with Double = js.native
   
   @js.native
   sealed trait None extends EditorAutoIndentStrategy
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /* 0 */ val None: typings.monacoEditor.mod.editor.EditorAutoIndentStrategy.None with Double = js.native
 }

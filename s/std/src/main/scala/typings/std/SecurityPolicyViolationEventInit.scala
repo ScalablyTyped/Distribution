@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,78 +37,66 @@ object SecurityPolicyViolationEventInit {
   }
   
   @scala.inline
-  implicit class SecurityPolicyViolationEventInitOps[Self <: SecurityPolicyViolationEventInit] (val x: Self) extends AnyVal {
+  implicit class SecurityPolicyViolationEventInitMutableBuilder[Self <: SecurityPolicyViolationEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockedURI(value: java.lang.String): Self = StObject.set(x, "blockedURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedURIUndefined: Self = StObject.set(x, "blockedURI", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedURI(value: java.lang.String): Self = this.set("blockedURI", value.asInstanceOf[js.Any])
+    def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
     @scala.inline
-    def deleteBlockedURI: Self = this.set("blockedURI", js.undefined)
+    def setDocumentURI(value: java.lang.String): Self = StObject.set(x, "documentURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnNumber(value: Double): Self = this.set("columnNumber", value.asInstanceOf[js.Any])
+    def setDocumentURIUndefined: Self = StObject.set(x, "documentURI", js.undefined)
     
     @scala.inline
-    def deleteColumnNumber: Self = this.set("columnNumber", js.undefined)
+    def setEffectiveDirective(value: java.lang.String): Self = StObject.set(x, "effectiveDirective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentURI(value: java.lang.String): Self = this.set("documentURI", value.asInstanceOf[js.Any])
+    def setEffectiveDirectiveUndefined: Self = StObject.set(x, "effectiveDirective", js.undefined)
     
     @scala.inline
-    def deleteDocumentURI: Self = this.set("documentURI", js.undefined)
+    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectiveDirective(value: java.lang.String): Self = this.set("effectiveDirective", value.asInstanceOf[js.Any])
+    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
     @scala.inline
-    def deleteEffectiveDirective: Self = this.set("effectiveDirective", js.undefined)
+    def setOriginalPolicy(value: java.lang.String): Self = StObject.set(x, "originalPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    def setOriginalPolicyUndefined: Self = StObject.set(x, "originalPolicy", js.undefined)
     
     @scala.inline
-    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+    def setReferrer(value: java.lang.String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPolicy(value: java.lang.String): Self = this.set("originalPolicy", value.asInstanceOf[js.Any])
+    def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
     @scala.inline
-    def deleteOriginalPolicy: Self = this.set("originalPolicy", js.undefined)
+    def setSourceFile(value: java.lang.String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferrer(value: java.lang.String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
     
     @scala.inline
-    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFile(value: java.lang.String): Self = this.set("sourceFile", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
     @scala.inline
-    def deleteSourceFile: Self = this.set("sourceFile", js.undefined)
+    def setViolatedDirective(value: java.lang.String): Self = StObject.set(x, "violatedDirective", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
-    
-    @scala.inline
-    def setViolatedDirective(value: java.lang.String): Self = this.set("violatedDirective", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolatedDirective: Self = this.set("violatedDirective", js.undefined)
+    def setViolatedDirectiveUndefined: Self = StObject.set(x, "violatedDirective", js.undefined)
   }
 }

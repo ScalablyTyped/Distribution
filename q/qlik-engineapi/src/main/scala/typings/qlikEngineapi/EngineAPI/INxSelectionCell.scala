@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxSelectionCell...
   */
 @js.native
-trait INxSelectionCell extends js.Object {
+trait INxSelectionCell extends StObject {
   
   /**
     * Column index to select
@@ -48,27 +49,15 @@ object INxSelectionCell {
   }
   
   @scala.inline
-  implicit class INxSelectionCellOps[Self <: INxSelectionCell] (val x: Self) extends AnyVal {
+  implicit class INxSelectionCellMutableBuilder[Self <: INxSelectionCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQCol(value: Double): Self = StObject.set(x, "qCol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQCol(value: Double): Self = this.set("qCol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQRow(value: Double): Self = this.set("qRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQType(value: NxSelectionCellType): Self = this.set("qType", value.asInstanceOf[js.Any])
+    def setQType(value: NxSelectionCellType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doubleclickbidmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathQueryOptions extends js.Object {
+trait PathQueryOptions extends StObject {
   
   /** Custom Channel Groupings. */
   var channelGrouping: js.UndefOr[ChannelGrouping] = js.native
@@ -22,33 +23,21 @@ object PathQueryOptions {
   }
   
   @scala.inline
-  implicit class PathQueryOptionsOps[Self <: PathQueryOptions] (val x: Self) extends AnyVal {
+  implicit class PathQueryOptionsMutableBuilder[Self <: PathQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelGrouping(value: ChannelGrouping): Self = StObject.set(x, "channelGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelGroupingUndefined: Self = StObject.set(x, "channelGrouping", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathFilters(value: js.Array[PathFilter]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelGrouping(value: ChannelGrouping): Self = this.set("channelGrouping", value.asInstanceOf[js.Any])
+    def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
     @scala.inline
-    def deleteChannelGrouping: Self = this.set("channelGrouping", js.undefined)
-    
-    @scala.inline
-    def setPathFiltersVarargs(value: PathFilter*): Self = this.set("pathFilters", js.Array(value :_*))
-    
-    @scala.inline
-    def setPathFilters(value: js.Array[PathFilter]): Self = this.set("pathFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePathFilters: Self = this.set("pathFilters", js.undefined)
+    def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
   }
 }

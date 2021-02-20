@@ -2,6 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,24 +44,12 @@ object Vibrato {
   }
   
   @scala.inline
-  implicit class VibratoOps[Self <: Vibrato] (val x: Self) extends AnyVal {
+  implicit class VibratoMutableBuilder[Self <: Vibrato] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetHarsh(value: Boolean => Vibrato): Self = StObject.set(x, "setHarsh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetHarsh(value: Boolean => Vibrato): Self = this.set("setHarsh", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVibratoWidth(value: Double => Vibrato): Self = this.set("setVibratoWidth", js.Any.fromFunction1(value))
+    def setSetVibratoWidth(value: Double => Vibrato): Self = StObject.set(x, "setVibratoWidth", js.Any.fromFunction1(value))
   }
 }

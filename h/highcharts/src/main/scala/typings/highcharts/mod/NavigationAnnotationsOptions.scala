@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationAnnotationsOptions extends js.Object {
+trait NavigationAnnotationsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the initial
@@ -95,90 +96,78 @@ object NavigationAnnotationsOptions {
   }
   
   @scala.inline
-  implicit class NavigationAnnotationsOptionsOps[Self <: NavigationAnnotationsOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationAnnotationsOptionsMutableBuilder[Self <: NavigationAnnotationsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | NavigationAnnotationsAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlPointOptions(value: AnnotationControlPointOptionsObject): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | NavigationAnnotationsAnimationOptions | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setDraggable(value: AnnotationDraggableValue): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlPointOptions(value: AnnotationControlPointOptionsObject): Self = this.set("controlPointOptions", value.asInstanceOf[js.Any])
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def deleteControlPointOptions: Self = this.set("controlPointOptions", js.undefined)
+    def setEvents(value: NavigationAnnotationsEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraggable(value: AnnotationDraggableValue): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: NavigationAnnotationsEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setLabelOptions(value: NavigationAnnotationsLabelOptions): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double | String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelOptionsUndefined: Self = StObject.set(x, "labelOptions", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabels(value: js.Array[NavigationAnnotationsLabelsOptions]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOptions(value: NavigationAnnotationsLabelOptions): Self = this.set("labelOptions", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteLabelOptions: Self = this.set("labelOptions", js.undefined)
+    def setLabelsVarargs(value: NavigationAnnotationsLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: NavigationAnnotationsLabelsOptions*): Self = this.set("labels", js.Array(value :_*))
+    def setShapeOptions(value: NavigationAnnotationsShapeOptions): Self = StObject.set(x, "shapeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[NavigationAnnotationsLabelsOptions]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setShapeOptionsUndefined: Self = StObject.set(x, "shapeOptions", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setShapes(value: js.Array[NavigationAnnotationsShapesOptions]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeOptions(value: NavigationAnnotationsShapeOptions): Self = this.set("shapeOptions", value.asInstanceOf[js.Any])
+    def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
     @scala.inline
-    def deleteShapeOptions: Self = this.set("shapeOptions", js.undefined)
+    def setShapesVarargs(value: NavigationAnnotationsShapesOptions*): Self = StObject.set(x, "shapes", js.Array(value :_*))
     
     @scala.inline
-    def setShapesVarargs(value: NavigationAnnotationsShapesOptions*): Self = this.set("shapes", js.Array(value :_*))
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapes(value: js.Array[NavigationAnnotationsShapesOptions]): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteShapes: Self = this.set("shapes", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

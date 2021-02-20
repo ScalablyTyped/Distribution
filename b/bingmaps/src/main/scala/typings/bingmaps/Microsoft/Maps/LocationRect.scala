@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationRect extends js.Object {
+trait LocationRect extends StObject {
   
   /**
     * Scales the size of a LocationRect by multiplying the width and height properties by a percentage.
@@ -107,60 +108,48 @@ object LocationRect {
   }
   
   @scala.inline
-  implicit class LocationRectOps[Self <: LocationRect] (val x: Self) extends AnyVal {
+  implicit class LocationRectMutableBuilder[Self <: LocationRect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Double => Unit): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContains(value: Location => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuffer(value: Double => Unit): Self = this.set("buffer", js.Any.fromFunction1(value))
+    def setCrossesInternationalDateLine(value: () => Boolean): Self = StObject.set(x, "crossesInternationalDateLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenter(value: Location): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setGetEast(value: () => Double): Self = StObject.set(x, "getEast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContains(value: Location => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setGetNorth(value: () => Double): Self = StObject.set(x, "getNorth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCrossesInternationalDateLine(value: () => Boolean): Self = this.set("crossesInternationalDateLine", js.Any.fromFunction0(value))
+    def setGetNorthwest(value: () => Location): Self = StObject.set(x, "getNorthwest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEast(value: () => Double): Self = this.set("getEast", js.Any.fromFunction0(value))
+    def setGetSouth(value: () => Double): Self = StObject.set(x, "getSouth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNorth(value: () => Double): Self = this.set("getNorth", js.Any.fromFunction0(value))
+    def setGetSoutheast(value: () => Location): Self = StObject.set(x, "getSoutheast", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNorthwest(value: () => Location): Self = this.set("getNorthwest", js.Any.fromFunction0(value))
+    def setGetWest(value: () => Double): Self = StObject.set(x, "getWest", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSouth(value: () => Double): Self = this.set("getSouth", js.Any.fromFunction0(value))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSoutheast(value: () => Location): Self = this.set("getSoutheast", js.Any.fromFunction0(value))
+    def setIntersects(value: LocationRect => Boolean): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetWest(value: () => Double): Self = this.set("getWest", js.Any.fromFunction0(value))
+    def setSplitByInternationalDateLine(value: () => js.Array[LocationRect]): Self = StObject.set(x, "splitByInternationalDateLine", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntersects(value: LocationRect => Boolean): Self = this.set("intersects", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSplitByInternationalDateLine(value: () => js.Array[LocationRect]): Self = this.set("splitByInternationalDateLine", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

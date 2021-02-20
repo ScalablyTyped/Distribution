@@ -1,6 +1,7 @@
 package typings.blessed.mod.Widgets
 
 import typings.blessed.blessedStrings.scroll
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.ScrollableBoxElement")
 @js.native
-class ScrollableBoxElement () extends BlessedElement {
+class ScrollableBoxElement protected () extends BlessedElement {
+  def this(opts: ElementOptions) = this()
   
   /**
     * The offset of the top of the scroll content.

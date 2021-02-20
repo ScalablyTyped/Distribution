@@ -5,16 +5,16 @@ import typings.guacamoleClient.guacamoleClientNumbers.`6048`
 import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/ArrayBufferWriter", JSImport.Namespace)
-@js.native
-object arrayBufferWriterMod extends js.Object {
+object arrayBufferWriterMod {
   
+  @JSImport("guacamole-client/lib/ArrayBufferWriter", "ArrayBufferWriter")
   @js.native
-  class ArrayBufferWriter protected () extends js.Object {
+  class ArrayBufferWriter protected () extends StObject {
     /**
       * @param stream The stream that data will be written
       */
@@ -52,13 +52,14 @@ object arrayBufferWriterMod extends js.Object {
     def sendEnd(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object ArrayBufferWriter extends js.Object {
+  object ArrayBufferWriter {
     
     /**
       * The default maximum blob length for new Guacamole.ArrayBufferWriter
       * instances.
       */
+    @JSImport("guacamole-client/lib/ArrayBufferWriter", "ArrayBufferWriter.DEFAULT_BLOB_LENGTH")
+    @js.native
     val DEFAULT_BLOB_LENGTH: `6048` = js.native
   }
 }

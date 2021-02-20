@@ -1,14 +1,17 @@
 package typings.expoConfigureSplashScreen
 
 import typings.expoConfigureSplashScreen.anon.ImageResizeModeStatusBar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@expo/configure-splash-screen/build/android/MainActivity", JSImport.Namespace)
-@js.native
-object mainActivityMod extends js.Object {
+object mainActivityMod {
   
+  @JSImport("@expo/configure-splash-screen/build/android/MainActivity", JSImport.Default)
+  @js.native
   def default(projectRootPath: String): js.Promise[Unit] = js.native
+  @JSImport("@expo/configure-splash-screen/build/android/MainActivity", JSImport.Default)
+  @js.native
   def default(projectRootPath: String, config: ImageResizeModeStatusBar): js.Promise[Unit] = js.native
 }

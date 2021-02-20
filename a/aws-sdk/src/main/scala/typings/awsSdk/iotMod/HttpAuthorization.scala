@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpAuthorization extends js.Object {
+trait HttpAuthorization extends StObject {
   
   /**
     * Use Sig V4 authorization. For more information, see Signature Version 4 Signing Process.
@@ -21,24 +22,12 @@ object HttpAuthorization {
   }
   
   @scala.inline
-  implicit class HttpAuthorizationOps[Self <: HttpAuthorization] (val x: Self) extends AnyVal {
+  implicit class HttpAuthorizationMutableBuilder[Self <: HttpAuthorization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSigv4(value: SigV4Authorization): Self = StObject.set(x, "sigv4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSigv4(value: SigV4Authorization): Self = this.set("sigv4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigv4: Self = this.set("sigv4", js.undefined)
+    def setSigv4Undefined: Self = StObject.set(x, "sigv4", js.undefined)
   }
 }

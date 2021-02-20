@@ -1,14 +1,15 @@
 package typings.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TriggerModule extends js.Object
+sealed trait TriggerModule extends StObject
 @JSGlobal("CbServer.TriggerModule")
 @js.native
-object TriggerModule extends js.Object {
+object TriggerModule extends StObject {
   
   @js.native
   sealed trait DEVICE extends TriggerModule

@@ -1,11 +1,12 @@
 package typings.rnFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RNFetchBlobConfig extends js.Object {
+trait RNFetchBlobConfig extends StObject {
   
   /**
     * Fix IOS request timeout issue #368 by change default request setting to defaultSessionConfiguration, and make backgroundSessionConfigurationWithIdentifier optional
@@ -63,78 +64,66 @@ object RNFetchBlobConfig {
   }
   
   @scala.inline
-  implicit class RNFetchBlobConfigOps[Self <: RNFetchBlobConfig] (val x: Self) extends AnyVal {
+  implicit class RNFetchBlobConfigMutableBuilder[Self <: RNFetchBlobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAndroidDownloads(value: AddAndroidDownloads): Self = StObject.set(x, "addAndroidDownloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAndroidDownloadsUndefined: Self = StObject.set(x, "addAndroidDownloads", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendExt(value: String): Self = StObject.set(x, "appendExt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIOSBackgroundTask(value: Boolean): Self = this.set("IOSBackgroundTask", value.asInstanceOf[js.Any])
+    def setAppendExtUndefined: Self = StObject.set(x, "appendExt", js.undefined)
     
     @scala.inline
-    def deleteIOSBackgroundTask: Self = this.set("IOSBackgroundTask", js.undefined)
+    def setFileCache(value: Boolean): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAndroidDownloads(value: AddAndroidDownloads): Self = this.set("addAndroidDownloads", value.asInstanceOf[js.Any])
+    def setFileCacheUndefined: Self = StObject.set(x, "fileCache", js.undefined)
     
     @scala.inline
-    def deleteAddAndroidDownloads: Self = this.set("addAndroidDownloads", js.undefined)
+    def setIOSBackgroundTask(value: Boolean): Self = StObject.set(x, "IOSBackgroundTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendExt(value: String): Self = this.set("appendExt", value.asInstanceOf[js.Any])
+    def setIOSBackgroundTaskUndefined: Self = StObject.set(x, "IOSBackgroundTask", js.undefined)
     
     @scala.inline
-    def deleteAppendExt: Self = this.set("appendExt", js.undefined)
+    def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileCache(value: Boolean): Self = this.set("fileCache", value.asInstanceOf[js.Any])
+    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
     @scala.inline
-    def deleteFileCache: Self = this.set("fileCache", js.undefined)
+    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicator(value: Boolean): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
     @scala.inline
-    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    def setSession(value: String): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: String): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setTrusty(value: Boolean): Self = StObject.set(x, "trusty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    
-    @scala.inline
-    def setTrusty(value: Boolean): Self = this.set("trusty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrusty: Self = this.set("trusty", js.undefined)
+    def setTrustyUndefined: Self = StObject.set(x, "trusty", js.undefined)
   }
 }

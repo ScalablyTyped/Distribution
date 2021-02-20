@@ -5,6 +5,7 @@ import typings.facebookJsSdk.facebookJsSdkStrings.iframe
 import typings.facebookJsSdk.facebookJsSdkStrings.live_broadcast
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import typings.facebookJsSdk.facebookJsSdkStrings.publish
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,33 +31,21 @@ object LiveDialogParams {
   }
   
   @scala.inline
-  implicit class LiveDialogParamsOps[Self <: LiveDialogParams] (val x: Self) extends AnyVal {
+  implicit class LiveDialogParamsMutableBuilder[Self <: LiveDialogParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcast_data(value: LiveDialogResponse): Self = StObject.set(x, "broadcast_data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcast_dataUndefined: Self = StObject.set(x, "broadcast_data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay(value: popup | iframe): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: popup | iframe): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setMethod(value: live_broadcast): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: live_broadcast): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPhase(value: create | publish): Self = this.set("phase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBroadcast_data(value: LiveDialogResponse): Self = this.set("broadcast_data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBroadcast_data: Self = this.set("broadcast_data", js.undefined)
+    def setPhase(value: create | publish): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
   }
 }

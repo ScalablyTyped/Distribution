@@ -1,11 +1,12 @@
 package typings.aframe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait System[T /* <: js.Object */] extends js.Object {
+trait System[T /* <: js.Object */] extends StObject {
   
   var data: T = js.native
   
@@ -37,42 +38,30 @@ object System {
   }
   
   @scala.inline
-  implicit class SystemOps[Self <: System[_], T /* <: js.Object */] (val x: Self with System[T]) extends AnyVal {
+  implicit class SystemMutableBuilder[Self <: System[_], T /* <: js.Object */] (val x: Self with System[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setSchema(value: Schema_[T]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setTick(value: (/* t */ Double, /* dt */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSchema(value: Schema_[T]): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTick(value: (/* t */ Double, /* dt */ Double) => Unit): Self = this.set("tick", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTick: Self = this.set("tick", js.undefined)
+    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
   }
 }

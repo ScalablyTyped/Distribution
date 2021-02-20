@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DockerContainerMountData extends js.Object {
+trait DockerContainerMountData extends StObject {
   
   var Destination: String = js.native
   
@@ -28,36 +29,24 @@ object DockerContainerMountData {
   }
   
   @scala.inline
-  implicit class DockerContainerMountDataOps[Self <: DockerContainerMountData] (val x: Self) extends AnyVal {
+  implicit class DockerContainerMountDataMutableBuilder[Self <: DockerContainerMountData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMode(value: String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPropagation(value: String): Self = StObject.set(x, "Propagation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setRW(value: Boolean): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagation(value: String): Self = this.set("Propagation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRW(value: Boolean): Self = this.set("RW", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

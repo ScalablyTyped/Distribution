@@ -1,11 +1,12 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointVirtualIP extends js.Object {
+trait EndpointVirtualIP extends StObject {
   
   var Addr: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object EndpointVirtualIP {
   }
   
   @scala.inline
-  implicit class EndpointVirtualIPOps[Self <: EndpointVirtualIP] (val x: Self) extends AnyVal {
+  implicit class EndpointVirtualIPMutableBuilder[Self <: EndpointVirtualIP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddr(value: String): Self = StObject.set(x, "Addr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddrUndefined: Self = StObject.set(x, "Addr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkID(value: String): Self = StObject.set(x, "NetworkID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddr(value: String): Self = this.set("Addr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddr: Self = this.set("Addr", js.undefined)
-    
-    @scala.inline
-    def setNetworkID(value: String): Self = this.set("NetworkID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkID: Self = this.set("NetworkID", js.undefined)
+    def setNetworkIDUndefined: Self = StObject.set(x, "NetworkID", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This message is a wrapper around a collection of intents.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2IntentBatch extends js.Object {
+trait SchemaGoogleCloudDialogflowV2IntentBatch extends StObject {
   
   /**
     * A collection of intents.
@@ -24,27 +25,15 @@ object SchemaGoogleCloudDialogflowV2IntentBatch {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentBatchOps[Self <: SchemaGoogleCloudDialogflowV2IntentBatch] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2IntentBatchMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentBatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntents(value: js.Array[SchemaGoogleCloudDialogflowV2Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2Intent*): Self = this.set("intents", js.Array(value :_*))
-    
-    @scala.inline
-    def setIntents(value: js.Array[SchemaGoogleCloudDialogflowV2Intent]): Self = this.set("intents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntents: Self = this.set("intents", js.undefined)
+    def setIntentsVarargs(value: SchemaGoogleCloudDialogflowV2Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
   }
 }

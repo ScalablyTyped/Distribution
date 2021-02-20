@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnableNetworkEmulationOptions extends js.Object {
+trait EnableNetworkEmulationOptions extends StObject {
   
   /**
     * Download rate in Bps. Defaults to 0 which will disable download throttling.
@@ -36,42 +37,30 @@ object EnableNetworkEmulationOptions {
   }
   
   @scala.inline
-  implicit class EnableNetworkEmulationOptionsOps[Self <: EnableNetworkEmulationOptions] (val x: Self) extends AnyVal {
+  implicit class EnableNetworkEmulationOptionsMutableBuilder[Self <: EnableNetworkEmulationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadThroughput(value: Double): Self = StObject.set(x, "downloadThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadThroughputUndefined: Self = StObject.set(x, "downloadThroughput", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadThroughput(value: Double): Self = this.set("downloadThroughput", value.asInstanceOf[js.Any])
+    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
     @scala.inline
-    def deleteDownloadThroughput: Self = this.set("downloadThroughput", js.undefined)
+    def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Double): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
     
     @scala.inline
-    def deleteLatency: Self = this.set("latency", js.undefined)
+    def setUploadThroughput(value: Double): Self = StObject.set(x, "uploadThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffline(value: Boolean): Self = this.set("offline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffline: Self = this.set("offline", js.undefined)
-    
-    @scala.inline
-    def setUploadThroughput(value: Double): Self = this.set("uploadThroughput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadThroughput: Self = this.set("uploadThroughput", js.undefined)
+    def setUploadThroughputUndefined: Self = StObject.set(x, "uploadThroughput", js.undefined)
   }
 }

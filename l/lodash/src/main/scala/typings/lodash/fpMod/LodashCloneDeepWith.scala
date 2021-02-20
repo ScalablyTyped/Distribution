@@ -2,12 +2,13 @@ package typings.lodash.fpMod
 
 import typings.lodash.mod.CloneDeepWithCustomizer
 import typings.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashCloneDeepWith extends js.Object {
+trait LodashCloneDeepWith extends StObject {
   
   def apply[T](customizer: CloneDeepWithCustomizer[T]): LodashCloneDeepWith1x1[T] = js.native
   def apply[T](customizer: CloneDeepWithCustomizer[T], value: T): js.Any = js.native

@@ -4,12 +4,13 @@ import typings.fabric.fabricStrings._empty
 import typings.fabric.fabricStrings.`use-credentials`
 import typings.fabric.fabricStrings.anonymous
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPatternOptions extends js.Object {
+trait IPatternOptions extends StObject {
   
   /**
     * crossOrigin value (one of "", "anonymous", "use-credentials")
@@ -52,54 +53,42 @@ object IPatternOptions {
   }
   
   @scala.inline
-  implicit class IPatternOptionsOps[Self <: IPatternOptions] (val x: Self) extends AnyVal {
+  implicit class IPatternOptionsMutableBuilder[Self <: IPatternOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String | HTMLImageElement): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setPatternTransform(value: js.Array[Double]): Self = StObject.set(x, "patternTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setPatternTransformVarargs(value: Double*): Self = StObject.set(x, "patternTransform", js.Array(value :_*))
     
     @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternTransformVarargs(value: Double*): Self = this.set("patternTransform", js.Array(value :_*))
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def setPatternTransform(value: js.Array[Double]): Self = this.set("patternTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatternTransform: Self = this.set("patternTransform", js.undefined)
-    
-    @scala.inline
-    def setRepeat(value: String): Self = this.set("repeat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    def setSource(value: String | HTMLImageElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

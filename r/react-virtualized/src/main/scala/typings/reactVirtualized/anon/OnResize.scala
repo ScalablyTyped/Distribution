@@ -2,12 +2,13 @@ package typings.reactVirtualized.anon
 
 import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnResize extends js.Object {
+trait OnResize extends StObject {
   
   def onResize(): Unit = js.native
   
@@ -36,39 +37,27 @@ object OnResize {
   }
   
   @scala.inline
-  implicit class OnResizeOps[Self <: OnResize] (val x: Self) extends AnyVal {
+  implicit class OnResizeMutableBuilder[Self <: OnResize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScrollElement(value: Window): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnResize(value: () => Unit): Self = this.set("onResize", js.Any.fromFunction0(value))
+    def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
     
     @scala.inline
-    def setOnScroll(value: () => Unit): Self = this.set("onScroll", js.Any.fromFunction0(value))
+    def setScrollingResetTimeInterval(value: /* 150 */ Double): Self = StObject.set(x, "scrollingResetTimeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollingResetTimeInterval(value: /* 150 */ Double): Self = this.set("scrollingResetTimeInterval", value.asInstanceOf[js.Any])
+    def setServerHeight(value: `0`): Self = StObject.set(x, "serverHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerHeight(value: `0`): Self = this.set("serverHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerWidth(value: `0`): Self = this.set("serverWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollElement(value: Window): Self = this.set("scrollElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollElement: Self = this.set("scrollElement", js.undefined)
+    def setServerWidth(value: `0`): Self = StObject.set(x, "serverWidth", value.asInstanceOf[js.Any])
   }
 }

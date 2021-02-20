@@ -1,20 +1,31 @@
 package typings.openui5.global.sap.ui.model.odata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.BatchMode")
-@js.native
-object BatchMode extends js.Object {
+object BatchMode {
+  
+  @JSGlobal("sap.ui.model.odata.BatchMode")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Batch grouping enabled
     */
-  var Group: js.Any = js.native
+  @JSGlobal("sap.ui.model.odata.BatchMode.Group")
+  @js.native
+  def Group: js.Any = js.native
+  @scala.inline
+  def Group_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
   
   /**
     * No batch requests
     */
-  var None: js.Any = js.native
+  @JSGlobal("sap.ui.model.odata.BatchMode.None")
+  @js.native
+  def None: js.Any = js.native
+  @scala.inline
+  def None_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
 }

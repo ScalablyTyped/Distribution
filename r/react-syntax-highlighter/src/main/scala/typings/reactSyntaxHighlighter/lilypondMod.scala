@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/lilypond", JSImport.Namespace)
-@js.native
-object lilypondMod extends js.Object {
+object lilypondMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/lilypond", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

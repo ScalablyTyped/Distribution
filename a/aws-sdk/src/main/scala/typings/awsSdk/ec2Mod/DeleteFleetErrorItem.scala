@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFleetErrorItem extends js.Object {
+trait DeleteFleetErrorItem extends StObject {
   
   /**
     * The error.
@@ -26,30 +27,18 @@ object DeleteFleetErrorItem {
   }
   
   @scala.inline
-  implicit class DeleteFleetErrorItemOps[Self <: DeleteFleetErrorItem] (val x: Self) extends AnyVal {
+  implicit class DeleteFleetErrorItemMutableBuilder[Self <: DeleteFleetErrorItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: DeleteFleetError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: DeleteFleetError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
   }
 }

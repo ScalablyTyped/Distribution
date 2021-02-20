@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitTreeDiffResponse extends js.Object {
+trait GitTreeDiffResponse extends StObject {
   
   /**
     * The HTTP client methods find the continuation token header in the response and populate this field.
@@ -23,27 +24,15 @@ object GitTreeDiffResponse {
   }
   
   @scala.inline
-  implicit class GitTreeDiffResponseOps[Self <: GitTreeDiffResponse] (val x: Self) extends AnyVal {
+  implicit class GitTreeDiffResponseMutableBuilder[Self <: GitTreeDiffResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationToken(value: js.Array[String]): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationTokenVarargs(value: String*): Self = StObject.set(x, "continuationToken", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContinuationTokenVarargs(value: String*): Self = this.set("continuationToken", js.Array(value :_*))
-    
-    @scala.inline
-    def setContinuationToken(value: js.Array[String]): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreeDiff(value: GitTreeDiff): Self = this.set("treeDiff", value.asInstanceOf[js.Any])
+    def setTreeDiff(value: GitTreeDiff): Self = StObject.set(x, "treeDiff", value.asInstanceOf[js.Any])
   }
 }

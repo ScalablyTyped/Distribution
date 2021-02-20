@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorDefinition extends js.Object {
+trait ColorDefinition extends StObject {
   
   /** The background color associated with this color definition. */
   var background: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ColorDefinition {
   }
   
   @scala.inline
-  implicit class ColorDefinitionOps[Self <: ColorDefinition] (val x: Self) extends AnyVal {
+  implicit class ColorDefinitionMutableBuilder[Self <: ColorDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
-    
-    @scala.inline
-    def setForeground(value: String): Self = this.set("foreground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForeground: Self = this.set("foreground", js.undefined)
+    def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
   }
 }

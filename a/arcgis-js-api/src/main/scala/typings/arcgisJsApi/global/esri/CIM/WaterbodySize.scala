@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.global.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.CIM.WaterbodySize")
 @js.native
-object WaterbodySize extends js.Object {
+object WaterbodySize extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.arcgisJsApi.esri.CIM.WaterbodySize with String] = js.native

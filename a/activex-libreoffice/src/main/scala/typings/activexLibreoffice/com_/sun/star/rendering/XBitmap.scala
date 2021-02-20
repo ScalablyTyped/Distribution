@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.geometry.IntegerSize2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,30 +71,18 @@ object XBitmap {
   }
   
   @scala.inline
-  implicit class XBitmapOps[Self <: XBitmap] (val x: Self) extends AnyVal {
+  implicit class XBitmapMutableBuilder[Self <: XBitmap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetScaledBitmap(value: (RealSize2D, Boolean) => XBitmap): Self = StObject.set(x, "getScaledBitmap", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSize(value: () => IntegerSize2D): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasAlpha(value: () => Boolean): Self = StObject.set(x, "hasAlpha", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSize(value: IntegerSize2D): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetScaledBitmap(value: (RealSize2D, Boolean) => XBitmap): Self = this.set("getScaledBitmap", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetSize(value: () => IntegerSize2D): Self = this.set("getSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHasAlpha(value: () => Boolean): Self = this.set("hasAlpha", js.Any.fromFunction0(value))
+    def setSize(value: IntegerSize2D): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,20 @@
 package typings.antvComponent
 
-import typings.antvComponent.groupComponentMod.GroupComponent
 import typings.antvComponent.typesMod.DataMarkerAnnotationCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/annotation/data-marker", JSImport.Namespace)
-@js.native
-object dataMarkerMod extends js.Object {
+object dataMarkerMod {
+  
+  @JSImport("@antv/component/lib/annotation/data-marker", JSImport.Default)
+  @js.native
+  class default () extends DataMarkerAnnotation
   
   @js.native
-  trait DataMarkerAnnotation extends GroupComponent[DataMarkerAnnotationCfg] {
+  trait DataMarkerAnnotation
+    extends typings.antvComponent.groupComponentMod.default[DataMarkerAnnotationCfg] {
     
     var autoAdjust: js.Any = js.native
     
@@ -23,7 +26,4 @@ object dataMarkerMod extends js.Object {
     
     var renderText: js.Any = js.native
   }
-  
-  @js.native
-  class default () extends DataMarkerAnnotation
 }

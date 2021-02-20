@@ -2,17 +2,16 @@ package typings.lovefield.mod
 
 import typings.std.ArrayBuffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // module query
-@JSImport("lovefield", "raw")
-@js.native
-object raw extends js.Object {
+object raw {
   
   @js.native
-  trait BackStore extends js.Object {
+  trait BackStore extends StObject {
     
     def addTableColumn(tableName: String, columnName: String, defaultValue: String): js.Promise[Unit] = js.native
     def addTableColumn(tableName: String, columnName: String, defaultValue: Boolean): js.Promise[Unit] = js.native

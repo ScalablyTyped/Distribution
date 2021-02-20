@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientToolresults.anon.Accesstoken
 import typings.maximMazurokGapiClientToolresults.anon.Alt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClustersResource extends js.Object {
+trait ClustersResource extends StObject {
   
   /** Retrieves a single screenshot cluster by its ID */
   def get(): Request[ScreenshotCluster] = js.native

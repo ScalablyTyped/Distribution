@@ -1,16 +1,16 @@
 package typings.sipJs
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/grammar/parameters", JSImport.Namespace)
-@js.native
-object parametersMod extends js.Object {
+object parametersMod {
   
+  @JSImport("sip.js/lib/grammar/parameters", "Parameters")
   @js.native
-  class Parameters protected () extends js.Object {
+  class Parameters protected () extends StObject {
     def this(parameters: StringDictionary[String]) = this()
     
     def clearParams(): Unit = js.native

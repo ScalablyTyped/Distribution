@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommendationengine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudRecommendationengineV1beta1ImportErrorsConfig extends js.Object {
+trait GoogleCloudRecommendationengineV1beta1ImportErrorsConfig extends StObject {
   
   /**
     * Google Cloud Storage path for import errors. This must be an empty, existing Cloud Storage bucket. Import errors will be written to a file in this bucket, one per line, as a
@@ -22,24 +23,12 @@ object GoogleCloudRecommendationengineV1beta1ImportErrorsConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImportErrorsConfigOps[Self <: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudRecommendationengineV1beta1ImportErrorsConfigMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsPrefix(value: String): Self = StObject.set(x, "gcsPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcsPrefix(value: String): Self = this.set("gcsPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsPrefix: Self = this.set("gcsPrefix", js.undefined)
+    def setGcsPrefixUndefined: Self = StObject.set(x, "gcsPrefix", js.undefined)
   }
 }

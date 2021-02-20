@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,69 +81,57 @@ object IgSplitButton {
   }
   
   @scala.inline
-  implicit class IgSplitButtonOps[Self <: IgSplitButton] (val x: Self) extends AnyVal {
+  implicit class IgSplitButtonMutableBuilder[Self <: IgSplitButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: (/* event */ Event, /* ui */ ClickEventUIParam) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollapsed(value: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit): Self = StObject.set(x, "collapsed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClick(value: (/* event */ Event, /* ui */ ClickEventUIParam) => Unit): Self = this.set("click", js.Any.fromFunction2(value))
+    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setCollapsing(value: (/* event */ Event, /* ui */ CollapsingEventUIParam) => Unit): Self = StObject.set(x, "collapsing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCollapsed(value: (/* event */ Event, /* ui */ CollapsedEventUIParam) => Unit): Self = this.set("collapsed", js.Any.fromFunction2(value))
+    def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
     
     @scala.inline
-    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    def setDefaultItemName(value: String): Self = StObject.set(x, "defaultItemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsing(value: (/* event */ Event, /* ui */ CollapsingEventUIParam) => Unit): Self = this.set("collapsing", js.Any.fromFunction2(value))
+    def setDefaultItemNameUndefined: Self = StObject.set(x, "defaultItemName", js.undefined)
     
     @scala.inline
-    def deleteCollapsing: Self = this.set("collapsing", js.undefined)
+    def setExpanded(value: (/* event */ Event, /* ui */ ExpandedEventUIParam) => Unit): Self = StObject.set(x, "expanded", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDefaultItemName(value: String): Self = this.set("defaultItemName", value.asInstanceOf[js.Any])
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def deleteDefaultItemName: Self = this.set("defaultItemName", js.undefined)
+    def setExpanding(value: (/* event */ Event, /* ui */ ExpandingEventUIParam) => Unit): Self = StObject.set(x, "expanding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExpanded(value: (/* event */ Event, /* ui */ ExpandedEventUIParam) => Unit): Self = this.set("expanded", js.Any.fromFunction2(value))
+    def setExpandingUndefined: Self = StObject.set(x, "expanding", js.undefined)
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setItems(value: js.Array[IgSplitButtonItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpanding(value: (/* event */ Event, /* ui */ ExpandingEventUIParam) => Unit): Self = this.set("expanding", js.Any.fromFunction2(value))
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteExpanding: Self = this.set("expanding", js.undefined)
+    def setItemsVarargs(value: IgSplitButtonItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: IgSplitButtonItem*): Self = this.set("items", js.Array(value :_*))
+    def setSwapDefaultEnabled(value: Boolean): Self = StObject.set(x, "swapDefaultEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[IgSplitButtonItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
-    
-    @scala.inline
-    def setSwapDefaultEnabled(value: Boolean): Self = this.set("swapDefaultEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwapDefaultEnabled: Self = this.set("swapDefaultEnabled", js.undefined)
+    def setSwapDefaultEnabledUndefined: Self = StObject.set(x, "swapDefaultEnabled", js.undefined)
   }
 }

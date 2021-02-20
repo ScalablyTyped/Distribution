@@ -1,16 +1,16 @@
 package typings.ionicReact
 
 import typings.ionicReact.routeInfoMod.RouteInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/react/dist/types/routing/LocationHistory", JSImport.Namespace)
-@js.native
-object locationHistoryMod extends js.Object {
+object locationHistoryMod {
   
+  @JSImport("@ionic/react/dist/types/routing/LocationHistory", "LocationHistory")
   @js.native
-  class LocationHistory () extends js.Object {
+  class LocationHistory () extends StObject {
     
     var _add: js.Any = js.native
     

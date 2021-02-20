@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientMemcache.anon.Filter
 import typings.maximMazurokGapiClientMemcache.anon.Key
 import typings.maximMazurokGapiClientMemcache.anon.Name
 import typings.maximMazurokGapiClientMemcache.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   /** ApplyParameters will restart the set of specified nodes in order to update them to the current set of parameters for the Memcached Instance. */
   def applyParameters(request: Accesstoken): Request[Operation] = js.native

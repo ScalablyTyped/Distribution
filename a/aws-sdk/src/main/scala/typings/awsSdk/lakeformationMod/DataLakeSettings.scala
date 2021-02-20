@@ -1,11 +1,12 @@
 package typings.awsSdk.lakeformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataLakeSettings extends js.Object {
+trait DataLakeSettings extends StObject {
   
   /**
     * A structure representing a list of up to three principal permissions entries for default create database permissions.
@@ -36,54 +37,42 @@ object DataLakeSettings {
   }
   
   @scala.inline
-  implicit class DataLakeSettingsOps[Self <: DataLakeSettings] (val x: Self) extends AnyVal {
+  implicit class DataLakeSettingsMutableBuilder[Self <: DataLakeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDatabaseDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateDatabaseDefaultPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDatabaseDefaultPermissionsUndefined: Self = StObject.set(x, "CreateDatabaseDefaultPermissions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateDatabaseDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateDatabaseDefaultPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setCreateDatabaseDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = this.set("CreateDatabaseDefaultPermissions", js.Array(value :_*))
+    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDatabaseDefaultPermissions(value: PrincipalPermissionsList): Self = this.set("CreateDatabaseDefaultPermissions", value.asInstanceOf[js.Any])
+    def setCreateTableDefaultPermissionsUndefined: Self = StObject.set(x, "CreateTableDefaultPermissions", js.undefined)
     
     @scala.inline
-    def deleteCreateDatabaseDefaultPermissions: Self = this.set("CreateDatabaseDefaultPermissions", js.undefined)
+    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateTableDefaultPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = this.set("CreateTableDefaultPermissions", js.Array(value :_*))
+    def setDataLakeAdmins(value: DataLakePrincipalList): Self = StObject.set(x, "DataLakeAdmins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = this.set("CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
+    def setDataLakeAdminsUndefined: Self = StObject.set(x, "DataLakeAdmins", js.undefined)
     
     @scala.inline
-    def deleteCreateTableDefaultPermissions: Self = this.set("CreateTableDefaultPermissions", js.undefined)
+    def setDataLakeAdminsVarargs(value: DataLakePrincipal*): Self = StObject.set(x, "DataLakeAdmins", js.Array(value :_*))
     
     @scala.inline
-    def setDataLakeAdminsVarargs(value: DataLakePrincipal*): Self = this.set("DataLakeAdmins", js.Array(value :_*))
+    def setTrustedResourceOwners(value: TrustedResourceOwners): Self = StObject.set(x, "TrustedResourceOwners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLakeAdmins(value: DataLakePrincipalList): Self = this.set("DataLakeAdmins", value.asInstanceOf[js.Any])
+    def setTrustedResourceOwnersUndefined: Self = StObject.set(x, "TrustedResourceOwners", js.undefined)
     
     @scala.inline
-    def deleteDataLakeAdmins: Self = this.set("DataLakeAdmins", js.undefined)
-    
-    @scala.inline
-    def setTrustedResourceOwnersVarargs(value: CatalogIdString*): Self = this.set("TrustedResourceOwners", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrustedResourceOwners(value: TrustedResourceOwners): Self = this.set("TrustedResourceOwners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrustedResourceOwners: Self = this.set("TrustedResourceOwners", js.undefined)
+    def setTrustedResourceOwnersVarargs(value: CatalogIdString*): Self = StObject.set(x, "TrustedResourceOwners", js.Array(value :_*))
   }
 }

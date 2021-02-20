@@ -1,6 +1,7 @@
 package typings.xterm.mod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A link within the terminal.
   */
 @js.native
-trait ILink extends js.Object {
+trait ILink extends StObject {
   
   /**
     * Calls when the link is activated.
@@ -65,51 +66,39 @@ object ILink {
   }
   
   @scala.inline
-  implicit class ILinkOps[Self <: ILink] (val x: Self) extends AnyVal {
+  implicit class ILinkMutableBuilder[Self <: ILink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: (MouseEvent, String) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecorations(value: ILinkDecorations): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
     
     @scala.inline
-    def setActivate(value: (MouseEvent, String) => Unit): Self = this.set("activate", js.Any.fromFunction2(value))
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRange(value: IBufferRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setHover(value: (/* event */ MouseEvent, /* text */ String) => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDecorations(value: ILinkDecorations): Self = this.set("decorations", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteDecorations: Self = this.set("decorations", js.undefined)
+    def setLeave(value: (/* event */ MouseEvent, /* text */ String) => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
+    def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     
     @scala.inline
-    def deleteDispose: Self = this.set("dispose", js.undefined)
+    def setRange(value: IBufferRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: (/* event */ MouseEvent, /* text */ String) => Unit): Self = this.set("hover", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
-    
-    @scala.inline
-    def setLeave(value: (/* event */ MouseEvent, /* text */ String) => Unit): Self = this.set("leave", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteLeave: Self = this.set("leave", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

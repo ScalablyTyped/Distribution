@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Output only.  The List companies response object.
   */
 @js.native
-trait SchemaListCompaniesResponse extends js.Object {
+trait SchemaListCompaniesResponse extends StObject {
   
   /**
     * Companies for the current client.
@@ -35,39 +36,27 @@ object SchemaListCompaniesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListCompaniesResponseOps[Self <: SchemaListCompaniesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListCompaniesResponseMutableBuilder[Self <: SchemaListCompaniesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanies(value: js.Array[SchemaCompany]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompaniesUndefined: Self = StObject.set(x, "companies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompaniesVarargs(value: SchemaCompany*): Self = StObject.set(x, "companies", js.Array(value :_*))
     
     @scala.inline
-    def setCompaniesVarargs(value: SchemaCompany*): Self = this.set("companies", js.Array(value :_*))
+    def setMetadata(value: SchemaResponseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanies(value: js.Array[SchemaCompany]): Self = this.set("companies", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteCompanies: Self = this.set("companies", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: SchemaResponseMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

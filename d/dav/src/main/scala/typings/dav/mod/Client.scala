@@ -1,13 +1,14 @@
 package typings.dav.mod
 
 import typings.dav.mod.transport.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dav", "Client")
 @js.native
-class Client protected () extends js.Object {
+class Client protected () extends StObject {
   /**
     * Create a new Client object. The client interface allows consumers to set
     * their credentials and transport once and then make authorized requests

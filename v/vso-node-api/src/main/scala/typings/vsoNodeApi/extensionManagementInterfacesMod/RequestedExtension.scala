@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestedExtension extends js.Object {
+trait RequestedExtension extends StObject {
   
   /**
     * The unique name of the extension
@@ -47,36 +48,24 @@ object RequestedExtension {
   }
   
   @scala.inline
-  implicit class RequestedExtensionOps[Self <: RequestedExtension] (val x: Self) extends AnyVal {
+  implicit class RequestedExtensionMutableBuilder[Self <: RequestedExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionRequests(value: js.Array[ExtensionRequest]): Self = StObject.set(x, "extensionRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionRequestsVarargs(value: ExtensionRequest*): Self = StObject.set(x, "extensionRequests", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionName(value: String): Self = this.set("extensionName", value.asInstanceOf[js.Any])
+    def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionRequestsVarargs(value: ExtensionRequest*): Self = this.set("extensionRequests", js.Array(value :_*))
+    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionRequests(value: js.Array[ExtensionRequest]): Self = this.set("extensionRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherDisplayName(value: String): Self = this.set("publisherDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublisherName(value: String): Self = this.set("publisherName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestCount(value: Double): Self = this.set("requestCount", value.asInstanceOf[js.Any])
+    def setRequestCount(value: Double): Self = StObject.set(x, "requestCount", value.asInstanceOf[js.Any])
   }
 }

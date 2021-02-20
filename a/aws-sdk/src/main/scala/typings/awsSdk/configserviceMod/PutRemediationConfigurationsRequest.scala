@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRemediationConfigurationsRequest extends js.Object {
+trait PutRemediationConfigurationsRequest extends StObject {
   
   /**
     * A list of remediation configuration objects.
@@ -21,24 +22,12 @@ object PutRemediationConfigurationsRequest {
   }
   
   @scala.inline
-  implicit class PutRemediationConfigurationsRequestOps[Self <: PutRemediationConfigurationsRequest] (val x: Self) extends AnyVal {
+  implicit class PutRemediationConfigurationsRequestMutableBuilder[Self <: PutRemediationConfigurationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemediationConfigurations(value: RemediationConfigurations): Self = StObject.set(x, "RemediationConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = this.set("RemediationConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemediationConfigurations(value: RemediationConfigurations): Self = this.set("RemediationConfigurations", value.asInstanceOf[js.Any])
+    def setRemediationConfigurationsVarargs(value: RemediationConfiguration*): Self = StObject.set(x, "RemediationConfigurations", js.Array(value :_*))
   }
 }

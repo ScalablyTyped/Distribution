@@ -1,13 +1,14 @@
 package typings.storybookReactNative.anon
 
 import typings.storybookReactNative.previewMod.AsyncStorage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@storybook/react-native.@storybook/react-native/dist/preview.Params> */
 @js.native
-trait PartialParams extends js.Object {
+trait PartialParams extends StObject {
   
   var asyncStorage: js.UndefOr[AsyncStorage | Null] = js.native
   
@@ -48,111 +49,99 @@ object PartialParams {
   }
   
   @scala.inline
-  implicit class PartialParamsOps[Self <: PartialParams] (val x: Self) extends AnyVal {
+  implicit class PartialParamsMutableBuilder[Self <: PartialParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncStorage(value: AsyncStorage): Self = StObject.set(x, "asyncStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncStorageNull: Self = StObject.set(x, "asyncStorage", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncStorageUndefined: Self = StObject.set(x, "asyncStorage", js.undefined)
     
     @scala.inline
-    def setAsyncStorage(value: AsyncStorage): Self = this.set("asyncStorage", value.asInstanceOf[js.Any])
+    def setDisableWebsockets(value: Boolean): Self = StObject.set(x, "disableWebsockets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAsyncStorage: Self = this.set("asyncStorage", js.undefined)
+    def setDisableWebsocketsUndefined: Self = StObject.set(x, "disableWebsockets", js.undefined)
     
     @scala.inline
-    def setAsyncStorageNull: Self = this.set("asyncStorage", null)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableWebsockets(value: Boolean): Self = this.set("disableWebsockets", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteDisableWebsockets: Self = this.set("disableWebsockets", js.undefined)
+    def setInitialSelection(value: js.Any): Self = StObject.set(x, "initialSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setInitialSelectionUndefined: Self = StObject.set(x, "initialSelection", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setIsUIHidden(value: Boolean): Self = StObject.set(x, "isUIHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialSelection(value: js.Any): Self = this.set("initialSelection", value.asInstanceOf[js.Any])
+    def setIsUIHiddenUndefined: Self = StObject.set(x, "isUIHidden", js.undefined)
     
     @scala.inline
-    def deleteInitialSelection: Self = this.set("initialSelection", js.undefined)
+    def setKeyboardAvoidingViewVerticalOffset(value: Double): Self = StObject.set(x, "keyboardAvoidingViewVerticalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUIHidden(value: Boolean): Self = this.set("isUIHidden", value.asInstanceOf[js.Any])
+    def setKeyboardAvoidingViewVerticalOffsetUndefined: Self = StObject.set(x, "keyboardAvoidingViewVerticalOffset", js.undefined)
     
     @scala.inline
-    def deleteIsUIHidden: Self = this.set("isUIHidden", js.undefined)
+    def setOnDeviceUI(value: Boolean): Self = StObject.set(x, "onDeviceUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardAvoidingViewVerticalOffset(value: Double): Self = this.set("keyboardAvoidingViewVerticalOffset", value.asInstanceOf[js.Any])
+    def setOnDeviceUIUndefined: Self = StObject.set(x, "onDeviceUI", js.undefined)
     
     @scala.inline
-    def deleteKeyboardAvoidingViewVerticalOffset: Self = this.set("keyboardAvoidingViewVerticalOffset", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDeviceUI(value: Boolean): Self = this.set("onDeviceUI", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteOnDeviceUI: Self = this.set("onDeviceUI", js.undefined)
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setResetStorybook(value: Boolean): Self = StObject.set(x, "resetStorybook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setResetStorybookUndefined: Self = StObject.set(x, "resetStorybook", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSecured(value: Boolean): Self = StObject.set(x, "secured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetStorybook(value: Boolean): Self = this.set("resetStorybook", value.asInstanceOf[js.Any])
+    def setSecuredUndefined: Self = StObject.set(x, "secured", js.undefined)
     
     @scala.inline
-    def deleteResetStorybook: Self = this.set("resetStorybook", js.undefined)
+    def setShouldDisableKeyboardAvoidingView(value: Boolean): Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecured(value: Boolean): Self = this.set("secured", value.asInstanceOf[js.Any])
+    def setShouldDisableKeyboardAvoidingViewUndefined: Self = StObject.set(x, "shouldDisableKeyboardAvoidingView", js.undefined)
     
     @scala.inline
-    def deleteSecured: Self = this.set("secured", js.undefined)
+    def setShouldPersistSelection(value: Boolean): Self = StObject.set(x, "shouldPersistSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldDisableKeyboardAvoidingView(value: Boolean): Self = this.set("shouldDisableKeyboardAvoidingView", value.asInstanceOf[js.Any])
+    def setShouldPersistSelectionUndefined: Self = StObject.set(x, "shouldPersistSelection", js.undefined)
     
     @scala.inline
-    def deleteShouldDisableKeyboardAvoidingView: Self = this.set("shouldDisableKeyboardAvoidingView", js.undefined)
+    def setTabOpen(value: Double): Self = StObject.set(x, "tabOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldPersistSelection(value: Boolean): Self = this.set("shouldPersistSelection", value.asInstanceOf[js.Any])
+    def setTabOpenUndefined: Self = StObject.set(x, "tabOpen", js.undefined)
     
     @scala.inline
-    def deleteShouldPersistSelection: Self = this.set("shouldPersistSelection", js.undefined)
+    def setTheme(value: BackgroundColor): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabOpen(value: Double): Self = this.set("tabOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabOpen: Self = this.set("tabOpen", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: BackgroundColor): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,9 +77,7 @@ class TrailMesh protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.TrailMesh")
-@js.native
-object TrailMesh extends js.Object {
+object TrailMesh {
   
   /**
     * Parses a serialized trail mesh
@@ -86,5 +85,7 @@ object TrailMesh extends js.Object {
     * @param scene the scene to create the trail mesh in
     * @returns the created trail mesh
     */
+  @JSGlobal("BABYLON.TrailMesh.Parse")
+  @js.native
   def Parse(parsedMesh: js.Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.TrailMesh = js.native
 }

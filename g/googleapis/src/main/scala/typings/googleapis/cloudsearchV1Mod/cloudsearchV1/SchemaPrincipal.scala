@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Reference to a user, group, or domain.
   */
 @js.native
-trait SchemaPrincipal extends js.Object {
+trait SchemaPrincipal extends StObject {
   
   /**
     * This principal is a group identified using an external identity. The name
@@ -38,36 +39,24 @@ object SchemaPrincipal {
   }
   
   @scala.inline
-  implicit class SchemaPrincipalOps[Self <: SchemaPrincipal] (val x: Self) extends AnyVal {
+  implicit class SchemaPrincipalMutableBuilder[Self <: SchemaPrincipal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupResourceName(value: String): Self = StObject.set(x, "groupResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupResourceNameUndefined: Self = StObject.set(x, "groupResourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGsuitePrincipal(value: SchemaGSuitePrincipal): Self = StObject.set(x, "gsuitePrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupResourceName(value: String): Self = this.set("groupResourceName", value.asInstanceOf[js.Any])
+    def setGsuitePrincipalUndefined: Self = StObject.set(x, "gsuitePrincipal", js.undefined)
     
     @scala.inline
-    def deleteGroupResourceName: Self = this.set("groupResourceName", js.undefined)
+    def setUserResourceName(value: String): Self = StObject.set(x, "userResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGsuitePrincipal(value: SchemaGSuitePrincipal): Self = this.set("gsuitePrincipal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGsuitePrincipal: Self = this.set("gsuitePrincipal", js.undefined)
-    
-    @scala.inline
-    def setUserResourceName(value: String): Self = this.set("userResourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserResourceName: Self = this.set("userResourceName", js.undefined)
+    def setUserResourceNameUndefined: Self = StObject.set(x, "userResourceName", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,57 +25,45 @@ object CalendarSharingMessage {
   }
   
   @scala.inline
-  implicit class CalendarSharingMessageOps[Self <: CalendarSharingMessage] (val x: Self) extends AnyVal {
+  implicit class CalendarSharingMessageMutableBuilder[Self <: CalendarSharingMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAccept(value: NullableOption[Boolean]): Self = StObject.set(x, "canAccept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanAcceptNull: Self = StObject.set(x, "canAccept", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanAcceptUndefined: Self = StObject.set(x, "canAccept", js.undefined)
     
     @scala.inline
-    def setCanAccept(value: NullableOption[Boolean]): Self = this.set("canAccept", value.asInstanceOf[js.Any])
+    def setSharingMessageAction(value: NullableOption[CalendarSharingMessageAction]): Self = StObject.set(x, "sharingMessageAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanAccept: Self = this.set("canAccept", js.undefined)
+    def setSharingMessageActionNull: Self = StObject.set(x, "sharingMessageAction", null)
     
     @scala.inline
-    def setCanAcceptNull: Self = this.set("canAccept", null)
+    def setSharingMessageActionUndefined: Self = StObject.set(x, "sharingMessageAction", js.undefined)
     
     @scala.inline
-    def setSharingMessageAction(value: NullableOption[CalendarSharingMessageAction]): Self = this.set("sharingMessageAction", value.asInstanceOf[js.Any])
+    def setSharingMessageActions(value: NullableOption[js.Array[CalendarSharingMessageAction]]): Self = StObject.set(x, "sharingMessageActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharingMessageAction: Self = this.set("sharingMessageAction", js.undefined)
+    def setSharingMessageActionsNull: Self = StObject.set(x, "sharingMessageActions", null)
     
     @scala.inline
-    def setSharingMessageActionNull: Self = this.set("sharingMessageAction", null)
+    def setSharingMessageActionsUndefined: Self = StObject.set(x, "sharingMessageActions", js.undefined)
     
     @scala.inline
-    def setSharingMessageActionsVarargs(value: CalendarSharingMessageAction*): Self = this.set("sharingMessageActions", js.Array(value :_*))
+    def setSharingMessageActionsVarargs(value: CalendarSharingMessageAction*): Self = StObject.set(x, "sharingMessageActions", js.Array(value :_*))
     
     @scala.inline
-    def setSharingMessageActions(value: NullableOption[js.Array[CalendarSharingMessageAction]]): Self = this.set("sharingMessageActions", value.asInstanceOf[js.Any])
+    def setSuggestedCalendarName(value: NullableOption[String]): Self = StObject.set(x, "suggestedCalendarName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharingMessageActions: Self = this.set("sharingMessageActions", js.undefined)
+    def setSuggestedCalendarNameNull: Self = StObject.set(x, "suggestedCalendarName", null)
     
     @scala.inline
-    def setSharingMessageActionsNull: Self = this.set("sharingMessageActions", null)
-    
-    @scala.inline
-    def setSuggestedCalendarName(value: NullableOption[String]): Self = this.set("suggestedCalendarName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedCalendarName: Self = this.set("suggestedCalendarName", js.undefined)
-    
-    @scala.inline
-    def setSuggestedCalendarNameNull: Self = this.set("suggestedCalendarName", null)
+    def setSuggestedCalendarNameUndefined: Self = StObject.set(x, "suggestedCalendarName", js.undefined)
   }
 }

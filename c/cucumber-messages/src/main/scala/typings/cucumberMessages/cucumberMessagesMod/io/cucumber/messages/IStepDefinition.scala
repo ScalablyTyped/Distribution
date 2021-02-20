@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StepDefinition. */
 @js.native
-trait IStepDefinition extends js.Object {
+trait IStepDefinition extends StObject {
   
   /** StepDefinition id */
   var id: js.UndefOr[String | Null] = js.native
@@ -26,45 +27,33 @@ object IStepDefinition {
   }
   
   @scala.inline
-  implicit class IStepDefinitionOps[Self <: IStepDefinition] (val x: Self) extends AnyVal {
+  implicit class IStepDefinitionMutableBuilder[Self <: IStepDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPattern(value: IStepDefinitionPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPatternNull: Self = StObject.set(x, "pattern", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setPattern(value: IStepDefinitionPattern): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setSourceReference(value: ISourceReference): Self = StObject.set(x, "sourceReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setSourceReferenceNull: Self = StObject.set(x, "sourceReference", null)
     
     @scala.inline
-    def setPatternNull: Self = this.set("pattern", null)
-    
-    @scala.inline
-    def setSourceReference(value: ISourceReference): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceReference: Self = this.set("sourceReference", js.undefined)
-    
-    @scala.inline
-    def setSourceReferenceNull: Self = this.set("sourceReference", null)
+    def setSourceReferenceUndefined: Self = StObject.set(x, "sourceReference", js.undefined)
   }
 }

@@ -4,13 +4,14 @@ import typings.evernote.anon.IdentityID
 import typings.evernote.mod.Errors.EDAMNotFoundException
 import typings.evernote.mod.Errors.EDAMUserException
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.ManageNoteSharesError")
 @js.native
-class ManageNoteSharesError () extends js.Object {
+class ManageNoteSharesError () extends StObject {
   def this(args: IdentityID) = this()
   
   var identityID: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.native

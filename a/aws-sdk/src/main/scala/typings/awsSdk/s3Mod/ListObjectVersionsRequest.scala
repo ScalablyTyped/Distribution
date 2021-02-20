@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListObjectVersionsRequest extends js.Object {
+trait ListObjectVersionsRequest extends StObject {
   
   /**
     * The bucket name that contains the objects. 
@@ -53,63 +54,51 @@ object ListObjectVersionsRequest {
   }
   
   @scala.inline
-  implicit class ListObjectVersionsRequestOps[Self <: ListObjectVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class ListObjectVersionsRequestMutableBuilder[Self <: ListObjectVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
     @scala.inline
-    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    def setKeyMarker(value: KeyMarker): Self = StObject.set(x, "KeyMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = this.set("ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    def setKeyMarkerUndefined: Self = StObject.set(x, "KeyMarker", js.undefined)
     
     @scala.inline
-    def deleteExpectedBucketOwner: Self = this.set("ExpectedBucketOwner", js.undefined)
+    def setMaxKeys(value: MaxKeys): Self = StObject.set(x, "MaxKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyMarker(value: KeyMarker): Self = this.set("KeyMarker", value.asInstanceOf[js.Any])
+    def setMaxKeysUndefined: Self = StObject.set(x, "MaxKeys", js.undefined)
     
     @scala.inline
-    def deleteKeyMarker: Self = this.set("KeyMarker", js.undefined)
+    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxKeys(value: MaxKeys): Self = this.set("MaxKeys", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
     @scala.inline
-    def deleteMaxKeys: Self = this.set("MaxKeys", js.undefined)
+    def setVersionIdMarker(value: VersionIdMarker): Self = StObject.set(x, "VersionIdMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("Prefix", js.undefined)
-    
-    @scala.inline
-    def setVersionIdMarker(value: VersionIdMarker): Self = this.set("VersionIdMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionIdMarker: Self = this.set("VersionIdMarker", js.undefined)
+    def setVersionIdMarkerUndefined: Self = StObject.set(x, "VersionIdMarker", js.undefined)
   }
 }

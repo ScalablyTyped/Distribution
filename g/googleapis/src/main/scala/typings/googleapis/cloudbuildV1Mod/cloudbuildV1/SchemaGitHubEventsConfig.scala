@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * build whenever a GitHub event is received.  This message is experimental.
   */
 @js.native
-trait SchemaGitHubEventsConfig extends js.Object {
+trait SchemaGitHubEventsConfig extends StObject {
   
   /**
     * Output only. Indicates that a build was generated from a check suite
@@ -51,54 +52,42 @@ object SchemaGitHubEventsConfig {
   }
   
   @scala.inline
-  implicit class SchemaGitHubEventsConfigOps[Self <: SchemaGitHubEventsConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaGitHubEventsConfigMutableBuilder[Self <: SchemaGitHubEventsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckSuite(value: SchemaCheckSuiteFilter): Self = StObject.set(x, "checkSuite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckSuiteUndefined: Self = StObject.set(x, "checkSuite", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckSuite(value: SchemaCheckSuiteFilter): Self = this.set("checkSuite", value.asInstanceOf[js.Any])
+    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
     @scala.inline
-    def deleteCheckSuite: Self = this.set("checkSuite", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationId(value: String): Self = this.set("installationId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstallationId: Self = this.set("installationId", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPullRequest(value: SchemaPullRequestFilter): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setPush(value: SchemaPushFilter): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequest(value: SchemaPullRequestFilter): Self = this.set("pullRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePullRequest: Self = this.set("pullRequest", js.undefined)
-    
-    @scala.inline
-    def setPush(value: SchemaPushFilter): Self = this.set("push", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
   }
 }

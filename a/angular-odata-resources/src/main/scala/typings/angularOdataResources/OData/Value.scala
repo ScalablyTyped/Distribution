@@ -1,11 +1,12 @@
 package typings.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Value extends js.Object {
+trait Value extends StObject {
   
   /* private */ def escapeIllegalChars(haystack: js.Any): js.Any = js.native
   
@@ -42,42 +43,30 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueOps[Self <: Value] (val x: Self) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEscapeIllegalChars(value: js.Any => js.Any): Self = StObject.set(x, "escapeIllegalChars", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecute(value: () => String): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecuteWithType(value: () => js.Any): Self = StObject.set(x, "executeWithType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEscapeIllegalChars(value: js.Any => js.Any): Self = this.set("escapeIllegalChars", js.Any.fromFunction1(value))
+    def setExecuteWithUndefinedType(value: () => js.Any): Self = StObject.set(x, "executeWithUndefinedType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExecute(value: () => String): Self = this.set("execute", js.Any.fromFunction0(value))
+    def setGenerateDate(value: js.Any => js.Any): Self = StObject.set(x, "generateDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExecuteWithType(value: () => js.Any): Self = this.set("executeWithType", js.Any.fromFunction0(value))
+    def setIllegalChars(value: js.Any): Self = StObject.set(x, "illegalChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteWithUndefinedType(value: () => js.Any): Self = this.set("executeWithUndefinedType", js.Any.fromFunction0(value))
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateDate(value: js.Any => js.Any): Self = this.set("generateDate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIllegalChars(value: js.Any): Self = this.set("illegalChars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

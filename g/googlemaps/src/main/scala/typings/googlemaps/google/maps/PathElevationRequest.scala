@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathElevationRequest extends js.Object {
+trait PathElevationRequest extends StObject {
   
   var path: js.UndefOr[js.Array[LatLngLiteral | LatLng]] = js.native
   
@@ -20,33 +21,21 @@ object PathElevationRequest {
   }
   
   @scala.inline
-  implicit class PathElevationRequestOps[Self <: PathElevationRequest] (val x: Self) extends AnyVal {
+  implicit class PathElevationRequestMutableBuilder[Self <: PathElevationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: js.Array[LatLngLiteral | LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathVarargs(value: (LatLngLiteral | LatLng)*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setPathVarargs(value: (LatLngLiteral | LatLng)*): Self = this.set("path", js.Array(value :_*))
+    def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: js.Array[LatLngLiteral | LatLng]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamples: Self = this.set("samples", js.undefined)
+    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
   }
 }

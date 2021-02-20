@@ -1,11 +1,12 @@
 package typings.typedoc.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasErrors extends js.Object {
+trait HasErrors extends StObject {
   
   var hasErrors: Boolean = js.native
   
@@ -20,27 +21,15 @@ object HasErrors {
   }
   
   @scala.inline
-  implicit class HasErrorsOps[Self <: HasErrors] (val x: Self) extends AnyVal {
+  implicit class HasErrorsMutableBuilder[Self <: HasErrors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasErrors(value: Boolean): Self = StObject.set(x, "hasErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputFiles(value: js.Array[String]): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasErrors(value: Boolean): Self = this.set("hasErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputFilesVarargs(value: String*): Self = this.set("inputFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setInputFiles(value: js.Array[String]): Self = this.set("inputFiles", value.asInstanceOf[js.Any])
+    def setInputFilesVarargs(value: String*): Self = StObject.set(x, "inputFiles", js.Array(value :_*))
   }
 }

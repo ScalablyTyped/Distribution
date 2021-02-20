@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3ReferenceDataSourceUpdate extends js.Object {
+trait S3ReferenceDataSourceUpdate extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the S3 bucket.
@@ -31,36 +32,24 @@ object S3ReferenceDataSourceUpdate {
   }
   
   @scala.inline
-  implicit class S3ReferenceDataSourceUpdateOps[Self <: S3ReferenceDataSourceUpdate] (val x: Self) extends AnyVal {
+  implicit class S3ReferenceDataSourceUpdateMutableBuilder[Self <: S3ReferenceDataSourceUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketARNUpdate(value: BucketARN): Self = StObject.set(x, "BucketARNUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketARNUpdateUndefined: Self = StObject.set(x, "BucketARNUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileKeyUpdate(value: FileKey): Self = StObject.set(x, "FileKeyUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketARNUpdate(value: BucketARN): Self = this.set("BucketARNUpdate", value.asInstanceOf[js.Any])
+    def setFileKeyUpdateUndefined: Self = StObject.set(x, "FileKeyUpdate", js.undefined)
     
     @scala.inline
-    def deleteBucketARNUpdate: Self = this.set("BucketARNUpdate", js.undefined)
+    def setReferenceRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARNUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileKeyUpdate(value: FileKey): Self = this.set("FileKeyUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileKeyUpdate: Self = this.set("FileKeyUpdate", js.undefined)
-    
-    @scala.inline
-    def setReferenceRoleARNUpdate(value: RoleARN): Self = this.set("ReferenceRoleARNUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReferenceRoleARNUpdate: Self = this.set("ReferenceRoleARNUpdate", js.undefined)
+    def setReferenceRoleARNUpdateUndefined: Self = StObject.set(x, "ReferenceRoleARNUpdate", js.undefined)
   }
 }

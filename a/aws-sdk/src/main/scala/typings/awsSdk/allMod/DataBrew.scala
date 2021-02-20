@@ -2,6 +2,7 @@ package typings.awsSdk.allMod
 
 import typings.awsSdk.databrewMod.ClientConfiguration
 import typings.awsSdk.databrewMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -3,12 +3,13 @@ package typings.wegameApi.anon
 import typings.wegameApi.wegameApiStrings.CNY
 import typings.wegameApi.wegameApiStrings.android
 import typings.wegameApi.wegameApiStrings.game
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BuyQuantity extends js.Object {
+trait BuyQuantity extends StObject {
   
   /**
     * 购买数量。mode=game 时必填。购买数量。详见 buyQuantity 限制说明。
@@ -112,69 +113,57 @@ object BuyQuantity {
   }
   
   @scala.inline
-  implicit class BuyQuantityOps[Self <: BuyQuantity] (val x: Self) extends AnyVal {
+  implicit class BuyQuantityMutableBuilder[Self <: BuyQuantity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuyQuantity(value: Double): Self = StObject.set(x, "buyQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuyQuantityUndefined: Self = StObject.set(x, "buyQuantity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrencyType(value: CNY): Self = this.set("currencyType", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def setMode(value: game): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setCurrencyType(value: CNY): Self = StObject.set(x, "currencyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferId(value: String): Self = this.set("offerId", value.asInstanceOf[js.Any])
+    def setEnv(value: typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuyQuantity(value: Double): Self = this.set("buyQuantity", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteBuyQuantity: Self = this.set("buyQuantity", js.undefined)
+    def setFail(value: /* res */ ErrCode => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setMode(value: game): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: typings.wegameApi.wegameApiNumbers.`0` | typings.wegameApi.wegameApiNumbers.`1`): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setOfferId(value: String): Self = StObject.set(x, "offerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setPlatform(value: android): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: /* res */ ErrCode => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlatform(value: android): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setZoneId(value: String): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setZoneId(value: String): Self = this.set("zoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneId: Self = this.set("zoneId", js.undefined)
+    def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SourcesFilterConfig. */
 @js.native
-trait ISourcesFilterConfig extends js.Object {
+trait ISourcesFilterConfig extends StObject {
   
   /** SourcesFilterConfig nameRegularExpressions */
   var nameRegularExpressions: js.UndefOr[js.Array[String] | Null] = js.native
@@ -26,51 +27,39 @@ object ISourcesFilterConfig {
   }
   
   @scala.inline
-  implicit class ISourcesFilterConfigOps[Self <: ISourcesFilterConfig] (val x: Self) extends AnyVal {
+  implicit class ISourcesFilterConfigMutableBuilder[Self <: ISourcesFilterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNameRegularExpressions(value: js.Array[String]): Self = StObject.set(x, "nameRegularExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameRegularExpressionsNull: Self = StObject.set(x, "nameRegularExpressions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNameRegularExpressionsUndefined: Self = StObject.set(x, "nameRegularExpressions", js.undefined)
     
     @scala.inline
-    def setNameRegularExpressionsVarargs(value: String*): Self = this.set("nameRegularExpressions", js.Array(value :_*))
+    def setNameRegularExpressionsVarargs(value: String*): Self = StObject.set(x, "nameRegularExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setNameRegularExpressions(value: js.Array[String]): Self = this.set("nameRegularExpressions", value.asInstanceOf[js.Any])
+    def setTagExpression(value: String): Self = StObject.set(x, "tagExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNameRegularExpressions: Self = this.set("nameRegularExpressions", js.undefined)
+    def setTagExpressionNull: Self = StObject.set(x, "tagExpression", null)
     
     @scala.inline
-    def setNameRegularExpressionsNull: Self = this.set("nameRegularExpressions", null)
+    def setTagExpressionUndefined: Self = StObject.set(x, "tagExpression", js.undefined)
     
     @scala.inline
-    def setTagExpression(value: String): Self = this.set("tagExpression", value.asInstanceOf[js.Any])
+    def setUriToLinesMapping(value: js.Array[IUriToLinesMapping]): Self = StObject.set(x, "uriToLinesMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTagExpression: Self = this.set("tagExpression", js.undefined)
+    def setUriToLinesMappingNull: Self = StObject.set(x, "uriToLinesMapping", null)
     
     @scala.inline
-    def setTagExpressionNull: Self = this.set("tagExpression", null)
+    def setUriToLinesMappingUndefined: Self = StObject.set(x, "uriToLinesMapping", js.undefined)
     
     @scala.inline
-    def setUriToLinesMappingVarargs(value: IUriToLinesMapping*): Self = this.set("uriToLinesMapping", js.Array(value :_*))
-    
-    @scala.inline
-    def setUriToLinesMapping(value: js.Array[IUriToLinesMapping]): Self = this.set("uriToLinesMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUriToLinesMapping: Self = this.set("uriToLinesMapping", js.undefined)
-    
-    @scala.inline
-    def setUriToLinesMappingNull: Self = this.set("uriToLinesMapping", null)
+    def setUriToLinesMappingVarargs(value: IUriToLinesMapping*): Self = StObject.set(x, "uriToLinesMapping", js.Array(value :_*))
   }
 }

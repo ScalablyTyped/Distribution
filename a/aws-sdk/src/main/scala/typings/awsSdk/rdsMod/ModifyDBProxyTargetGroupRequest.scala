@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDBProxyTargetGroupRequest extends js.Object {
+trait ModifyDBProxyTargetGroupRequest extends StObject {
   
   /**
     * The settings that determine the size and behavior of the connection pool for the target group.
@@ -36,36 +37,24 @@ object ModifyDBProxyTargetGroupRequest {
   }
   
   @scala.inline
-  implicit class ModifyDBProxyTargetGroupRequestOps[Self <: ModifyDBProxyTargetGroupRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyDBProxyTargetGroupRequestMutableBuilder[Self <: ModifyDBProxyTargetGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionPoolConfig(value: ConnectionPoolConfiguration): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    def setNewName(value: String): Self = StObject.set(x, "NewName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupName(value: String): Self = this.set("TargetGroupName", value.asInstanceOf[js.Any])
+    def setNewNameUndefined: Self = StObject.set(x, "NewName", js.undefined)
     
     @scala.inline
-    def setConnectionPoolConfig(value: ConnectionPoolConfiguration): Self = this.set("ConnectionPoolConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionPoolConfig: Self = this.set("ConnectionPoolConfig", js.undefined)
-    
-    @scala.inline
-    def setNewName(value: String): Self = this.set("NewName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewName: Self = this.set("NewName", js.undefined)
+    def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
   }
 }

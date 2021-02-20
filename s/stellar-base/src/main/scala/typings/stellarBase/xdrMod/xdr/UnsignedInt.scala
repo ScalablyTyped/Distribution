@@ -6,12 +6,13 @@ import typings.stellarBase.stellarBaseNumbers.`0`
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnsignedInt extends js.Object {
+trait UnsignedInt extends StObject {
   
   val MAX_VALUE: _4294967295 = js.native
   

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,54 +52,42 @@ object IgVideoPlayerCommercials {
   }
   
   @scala.inline
-  implicit class IgVideoPlayerCommercialsOps[Self <: IgVideoPlayerCommercials] (val x: Self) extends AnyVal {
+  implicit class IgVideoPlayerCommercialsMutableBuilder[Self <: IgVideoPlayerCommercials] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdMessage(value: IgVideoPlayerCommercialsAdMessage): Self = StObject.set(x, "adMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdMessageUndefined: Self = StObject.set(x, "adMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlwaysPlayCommercials(value: Boolean): Self = StObject.set(x, "alwaysPlayCommercials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdMessage(value: IgVideoPlayerCommercialsAdMessage): Self = this.set("adMessage", value.asInstanceOf[js.Any])
+    def setAlwaysPlayCommercialsUndefined: Self = StObject.set(x, "alwaysPlayCommercials", js.undefined)
     
     @scala.inline
-    def deleteAdMessage: Self = this.set("adMessage", js.undefined)
+    def setEmbeddedCommercials(value: js.Array[IgVideoPlayerCommercialsEmbeddedCommercial]): Self = StObject.set(x, "embeddedCommercials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysPlayCommercials(value: Boolean): Self = this.set("alwaysPlayCommercials", value.asInstanceOf[js.Any])
+    def setEmbeddedCommercialsUndefined: Self = StObject.set(x, "embeddedCommercials", js.undefined)
     
     @scala.inline
-    def deleteAlwaysPlayCommercials: Self = this.set("alwaysPlayCommercials", js.undefined)
+    def setEmbeddedCommercialsVarargs(value: IgVideoPlayerCommercialsEmbeddedCommercial*): Self = StObject.set(x, "embeddedCommercials", js.Array(value :_*))
     
     @scala.inline
-    def setEmbeddedCommercialsVarargs(value: IgVideoPlayerCommercialsEmbeddedCommercial*): Self = this.set("embeddedCommercials", js.Array(value :_*))
+    def setLinkedCommercials(value: js.Array[IgVideoPlayerCommercialsLinkedCommercial]): Self = StObject.set(x, "linkedCommercials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedCommercials(value: js.Array[IgVideoPlayerCommercialsEmbeddedCommercial]): Self = this.set("embeddedCommercials", value.asInstanceOf[js.Any])
+    def setLinkedCommercialsUndefined: Self = StObject.set(x, "linkedCommercials", js.undefined)
     
     @scala.inline
-    def deleteEmbeddedCommercials: Self = this.set("embeddedCommercials", js.undefined)
+    def setLinkedCommercialsVarargs(value: IgVideoPlayerCommercialsLinkedCommercial*): Self = StObject.set(x, "linkedCommercials", js.Array(value :_*))
     
     @scala.inline
-    def setLinkedCommercialsVarargs(value: IgVideoPlayerCommercialsLinkedCommercial*): Self = this.set("linkedCommercials", js.Array(value :_*))
+    def setShowBookmarks(value: Boolean): Self = StObject.set(x, "showBookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedCommercials(value: js.Array[IgVideoPlayerCommercialsLinkedCommercial]): Self = this.set("linkedCommercials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkedCommercials: Self = this.set("linkedCommercials", js.undefined)
-    
-    @scala.inline
-    def setShowBookmarks(value: Boolean): Self = this.set("showBookmarks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowBookmarks: Self = this.set("showBookmarks", js.undefined)
+    def setShowBookmarksUndefined: Self = StObject.set(x, "showBookmarks", js.undefined)
   }
 }

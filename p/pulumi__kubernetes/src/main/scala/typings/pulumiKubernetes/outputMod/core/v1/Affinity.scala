@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Affinity is a group of affinity scheduling rules.
   */
 @js.native
-trait Affinity extends js.Object {
+trait Affinity extends StObject {
   
   /**
     * Describes node affinity scheduling rules for the pod.
@@ -34,27 +35,15 @@ object Affinity {
   }
   
   @scala.inline
-  implicit class AffinityOps[Self <: Affinity] (val x: Self) extends AnyVal {
+  implicit class AffinityMutableBuilder[Self <: Affinity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeAffinity(value: NodeAffinity): Self = StObject.set(x, "nodeAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPodAffinity(value: PodAffinity): Self = StObject.set(x, "podAffinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNodeAffinity(value: NodeAffinity): Self = this.set("nodeAffinity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPodAffinity(value: PodAffinity): Self = this.set("podAffinity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPodAntiAffinity(value: PodAntiAffinity): Self = this.set("podAntiAffinity", value.asInstanceOf[js.Any])
+    def setPodAntiAffinity(value: PodAntiAffinity): Self = StObject.set(x, "podAntiAffinity", value.asInstanceOf[js.Any])
   }
 }

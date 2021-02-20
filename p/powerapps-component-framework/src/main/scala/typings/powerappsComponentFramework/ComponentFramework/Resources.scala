@@ -1,5 +1,6 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The resource interface of context.resources
   */
 @js.native
-trait Resources extends js.Object {
+trait Resources extends StObject {
   
   /**
     * Gets a resource referenced by the control manifest.
@@ -36,24 +37,12 @@ object Resources {
   }
   
   @scala.inline
-  implicit class ResourcesOps[Self <: Resources] (val x: Self) extends AnyVal {
+  implicit class ResourcesMutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetResource(value: (String, js.Function1[/* data */ String, Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "getResource", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetResource(value: (String, js.Function1[/* data */ String, Unit], js.Function0[Unit]) => Unit): Self = this.set("getResource", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetString(value: String => String): Self = this.set("getString", js.Any.fromFunction1(value))
+    def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
   }
 }

@@ -1,6 +1,7 @@
 package typings.scriptableIos
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/request/#-new-request
   */
 @js.native
-trait Request extends js.Object {
+trait Request extends StObject {
   
   /**
     * _Adds a file to a multipart request._

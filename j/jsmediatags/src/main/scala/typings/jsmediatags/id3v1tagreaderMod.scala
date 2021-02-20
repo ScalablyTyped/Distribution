@@ -1,26 +1,29 @@
 package typings.jsmediatags
 
 import typings.jsmediatags.typesMod.ByteRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsmediatags/build2/ID3v1TagReader", JSImport.Namespace)
-@js.native
-object id3v1tagreaderMod extends js.Object {
+object id3v1tagreaderMod {
+  
+  @JSImport("jsmediatags/build2/ID3v1TagReader", JSImport.Default)
+  @js.native
+  class default () extends ID3v1TagReader
+  /* static members */
+  object default {
+    
+    @JSImport("jsmediatags/build2/ID3v1TagReader", "default.canReadTagFormat")
+    @js.native
+    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
+    
+    @JSImport("jsmediatags/build2/ID3v1TagReader", "default.getTagIdentifierByteRange")
+    @js.native
+    def getTagIdentifierByteRange(): ByteRange = js.native
+  }
   
   @js.native
   trait ID3v1TagReader
     extends typings.jsmediatags.mediaTagReaderMod.default
-  
-  @js.native
-  class default () extends ID3v1TagReader
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def canReadTagFormat(tagIdentifier: js.Array[Double]): Boolean = js.native
-    
-    def getTagIdentifierByteRange(): ByteRange = js.native
-  }
 }

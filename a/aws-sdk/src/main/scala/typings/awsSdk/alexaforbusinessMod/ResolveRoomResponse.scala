@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResolveRoomResponse extends js.Object {
+trait ResolveRoomResponse extends StObject {
   
   /**
     * The ARN of the room from which the skill request was invoked.
@@ -31,39 +32,27 @@ object ResolveRoomResponse {
   }
   
   @scala.inline
-  implicit class ResolveRoomResponseOps[Self <: ResolveRoomResponse] (val x: Self) extends AnyVal {
+  implicit class ResolveRoomResponseMutableBuilder[Self <: ResolveRoomResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoomName(value: RoomName): Self = StObject.set(x, "RoomName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomArn(value: Arn): Self = this.set("RoomArn", value.asInstanceOf[js.Any])
+    def setRoomNameUndefined: Self = StObject.set(x, "RoomName", js.undefined)
     
     @scala.inline
-    def deleteRoomArn: Self = this.set("RoomArn", js.undefined)
+    def setRoomSkillParameters(value: RoomSkillParameters): Self = StObject.set(x, "RoomSkillParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoomName(value: RoomName): Self = this.set("RoomName", value.asInstanceOf[js.Any])
+    def setRoomSkillParametersUndefined: Self = StObject.set(x, "RoomSkillParameters", js.undefined)
     
     @scala.inline
-    def deleteRoomName: Self = this.set("RoomName", js.undefined)
-    
-    @scala.inline
-    def setRoomSkillParametersVarargs(value: RoomSkillParameter*): Self = this.set("RoomSkillParameters", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoomSkillParameters(value: RoomSkillParameters): Self = this.set("RoomSkillParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomSkillParameters: Self = this.set("RoomSkillParameters", js.undefined)
+    def setRoomSkillParametersVarargs(value: RoomSkillParameter*): Self = StObject.set(x, "RoomSkillParameters", js.Array(value :_*))
   }
 }

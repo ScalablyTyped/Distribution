@@ -5,14 +5,14 @@ import typings.typeorm.connectionConnectionMod.Connection
 import typings.typeorm.queryBuilderQueryBuilderMod.QueryBuilder
 import typings.typeorm.queryBuilderWhereExpressionMod.WhereExpression
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/DeleteQueryBuilder", JSImport.Namespace)
-@js.native
-object queryBuilderDeleteQueryBuilderMod extends js.Object {
+object queryBuilderDeleteQueryBuilderMod {
   
+  @JSImport("typeorm/query-builder/DeleteQueryBuilder", "DeleteQueryBuilder")
   @js.native
   class DeleteQueryBuilder[Entity] protected ()
     extends QueryBuilder[Entity]

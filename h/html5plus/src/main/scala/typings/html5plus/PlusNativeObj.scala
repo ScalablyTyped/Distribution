@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObj extends js.Object {
+trait PlusNativeObj extends StObject {
   
   /**
     * 原生动画参数
@@ -172,132 +173,120 @@ object PlusNativeObj {
   }
   
   @scala.inline
-  implicit class PlusNativeObjOps[Self <: PlusNativeObj] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjMutableBuilder[Self <: PlusNativeObj] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationOptions(value: PlusNativeObjAnimationOptions): Self = StObject.set(x, "AnimationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationOptionsUndefined: Self = StObject.set(x, "AnimationOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationViewStyles(value: PlusNativeObjAnimationViewStyles): Self = StObject.set(x, "AnimationViewStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOptions(value: PlusNativeObjAnimationOptions): Self = this.set("AnimationOptions", value.asInstanceOf[js.Any])
+    def setAnimationViewStylesUndefined: Self = StObject.set(x, "AnimationViewStyles", js.undefined)
     
     @scala.inline
-    def deleteAnimationOptions: Self = this.set("AnimationOptions", js.undefined)
+    def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "Bitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationViewStyles(value: PlusNativeObjAnimationViewStyles): Self = this.set("AnimationViewStyles", value.asInstanceOf[js.Any])
+    def setBitmapSaveOptions(value: PlusNativeObjBitmapSaveOptions): Self = StObject.set(x, "BitmapSaveOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationViewStyles: Self = this.set("AnimationViewStyles", js.undefined)
+    def setBitmapSaveOptionsUndefined: Self = StObject.set(x, "BitmapSaveOptions", js.undefined)
     
     @scala.inline
-    def setBitmap(value: PlusNativeObjBitmap): Self = this.set("Bitmap", value.asInstanceOf[js.Any])
+    def setBitmapUndefined: Self = StObject.set(x, "Bitmap", js.undefined)
     
     @scala.inline
-    def deleteBitmap: Self = this.set("Bitmap", js.undefined)
+    def setImageSlider(value: PlusNativeObjImageSlider): Self = StObject.set(x, "ImageSlider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapSaveOptions(value: PlusNativeObjBitmapSaveOptions): Self = this.set("BitmapSaveOptions", value.asInstanceOf[js.Any])
+    def setImageSliderImageStyles(value: PlusNativeObjImageSliderImageStyles): Self = StObject.set(x, "ImageSliderImageStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBitmapSaveOptions: Self = this.set("BitmapSaveOptions", js.undefined)
+    def setImageSliderImageStylesUndefined: Self = StObject.set(x, "ImageSliderImageStyles", js.undefined)
     
     @scala.inline
-    def setImageSlider(value: PlusNativeObjImageSlider): Self = this.set("ImageSlider", value.asInstanceOf[js.Any])
+    def setImageSliderStyles(value: PlusNativeObjImageSliderStyles): Self = StObject.set(x, "ImageSliderStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageSlider: Self = this.set("ImageSlider", js.undefined)
+    def setImageSliderStylesUndefined: Self = StObject.set(x, "ImageSliderStyles", js.undefined)
     
     @scala.inline
-    def setImageSliderImageStyles(value: PlusNativeObjImageSliderImageStyles): Self = this.set("ImageSliderImageStyles", value.asInstanceOf[js.Any])
+    def setImageSliderUndefined: Self = StObject.set(x, "ImageSlider", js.undefined)
     
     @scala.inline
-    def deleteImageSliderImageStyles: Self = this.set("ImageSliderImageStyles", js.undefined)
+    def setInputStyles(value: PlusNativeObjInputStyles): Self = StObject.set(x, "InputStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSliderStyles(value: PlusNativeObjImageSliderStyles): Self = this.set("ImageSliderStyles", value.asInstanceOf[js.Any])
+    def setInputStylesUndefined: Self = StObject.set(x, "InputStyles", js.undefined)
     
     @scala.inline
-    def deleteImageSliderStyles: Self = this.set("ImageSliderStyles", js.undefined)
+    def setPosition(value: PlusNativeObjPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputStyles(value: PlusNativeObjInputStyles): Self = this.set("InputStyles", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
     
     @scala.inline
-    def deleteInputStyles: Self = this.set("InputStyles", js.undefined)
+    def setRect(value: PlusNativeObjRect): Self = StObject.set(x, "Rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PlusNativeObjPosition): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setRectStyles(value: PlusNativeObjRectStyles): Self = StObject.set(x, "RectStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("Position", js.undefined)
+    def setRectStylesUndefined: Self = StObject.set(x, "RectStyles", js.undefined)
     
     @scala.inline
-    def setRect(value: PlusNativeObjRect): Self = this.set("Rect", value.asInstanceOf[js.Any])
+    def setRectUndefined: Self = StObject.set(x, "Rect", js.undefined)
     
     @scala.inline
-    def deleteRect: Self = this.set("Rect", js.undefined)
+    def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = StObject.set(x, "RichTextStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRectStyles(value: PlusNativeObjRectStyles): Self = this.set("RectStyles", value.asInstanceOf[js.Any])
+    def setRichTextStylesUndefined: Self = StObject.set(x, "RichTextStyles", js.undefined)
     
     @scala.inline
-    def deleteRectStyles: Self = this.set("RectStyles", js.undefined)
+    def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "TextStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRichTextStyles(value: PlusNativeObjRichTextStyles): Self = this.set("RichTextStyles", value.asInstanceOf[js.Any])
+    def setTextStylesUndefined: Self = StObject.set(x, "TextStyles", js.undefined)
     
     @scala.inline
-    def deleteRichTextStyles: Self = this.set("RichTextStyles", js.undefined)
+    def setView(value: PlusNativeObjView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextStyles(value: PlusNativeObjTextStyles): Self = this.set("TextStyles", value.asInstanceOf[js.Any])
+    def setViewAnimationOptions(value: PlusNativeObjViewAnimationOptions): Self = StObject.set(x, "ViewAnimationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextStyles: Self = this.set("TextStyles", js.undefined)
+    def setViewAnimationOptionsUndefined: Self = StObject.set(x, "ViewAnimationOptions", js.undefined)
     
     @scala.inline
-    def setView(value: PlusNativeObjView): Self = this.set("View", value.asInstanceOf[js.Any])
+    def setViewDrawTagStyles(value: PlusNativeObjViewDrawTagStyles): Self = StObject.set(x, "ViewDrawTagStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteView: Self = this.set("View", js.undefined)
+    def setViewDrawTagStylesUndefined: Self = StObject.set(x, "ViewDrawTagStyles", js.undefined)
     
     @scala.inline
-    def setViewAnimationOptions(value: PlusNativeObjViewAnimationOptions): Self = this.set("ViewAnimationOptions", value.asInstanceOf[js.Any])
+    def setViewEvents(value: PlusNativeObjViewEvents): Self = StObject.set(x, "ViewEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewAnimationOptions: Self = this.set("ViewAnimationOptions", js.undefined)
+    def setViewEventsUndefined: Self = StObject.set(x, "ViewEvents", js.undefined)
     
     @scala.inline
-    def setViewDrawTagStyles(value: PlusNativeObjViewDrawTagStyles): Self = this.set("ViewDrawTagStyles", value.asInstanceOf[js.Any])
+    def setViewStatusbarStyles(value: PlusNativeObjViewStatusbarStyles): Self = StObject.set(x, "ViewStatusbarStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewDrawTagStyles: Self = this.set("ViewDrawTagStyles", js.undefined)
+    def setViewStatusbarStylesUndefined: Self = StObject.set(x, "ViewStatusbarStyles", js.undefined)
     
     @scala.inline
-    def setViewEvents(value: PlusNativeObjViewEvents): Self = this.set("ViewEvents", value.asInstanceOf[js.Any])
+    def setViewStyles(value: PlusNativeObjViewStyles): Self = StObject.set(x, "ViewStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewEvents: Self = this.set("ViewEvents", js.undefined)
+    def setViewStylesUndefined: Self = StObject.set(x, "ViewStyles", js.undefined)
     
     @scala.inline
-    def setViewStatusbarStyles(value: PlusNativeObjViewStatusbarStyles): Self = this.set("ViewStatusbarStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewStatusbarStyles: Self = this.set("ViewStatusbarStyles", js.undefined)
-    
-    @scala.inline
-    def setViewStyles(value: PlusNativeObjViewStyles): Self = this.set("ViewStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewStyles: Self = this.set("ViewStyles", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
   }
 }

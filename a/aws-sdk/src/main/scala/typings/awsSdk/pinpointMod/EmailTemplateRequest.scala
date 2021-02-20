@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailTemplateRequest extends js.Object {
+trait EmailTemplateRequest extends StObject {
   
   /**
     * A JSON object that specifies the default values to use for message variables in the message template. This object is a set of key-value pairs. Each key defines a message variable in the template. The corresponding value defines the default value for that variable. When you create a message that's based on the template, you can override these defaults with message-specific and address-specific variables and values.
@@ -51,60 +52,48 @@ object EmailTemplateRequest {
   }
   
   @scala.inline
-  implicit class EmailTemplateRequestOps[Self <: EmailTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class EmailTemplateRequestMutableBuilder[Self <: EmailTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtmlPart(value: string): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSubstitutions(value: string): Self = this.set("DefaultSubstitutions", value.asInstanceOf[js.Any])
+    def setHtmlPartUndefined: Self = StObject.set(x, "HtmlPart", js.undefined)
     
     @scala.inline
-    def deleteDefaultSubstitutions: Self = this.set("DefaultSubstitutions", js.undefined)
+    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtmlPart(value: string): Self = this.set("HtmlPart", value.asInstanceOf[js.Any])
+    def setRecommenderIdUndefined: Self = StObject.set(x, "RecommenderId", js.undefined)
     
     @scala.inline
-    def deleteHtmlPart: Self = this.set("HtmlPart", js.undefined)
+    def setSubject(value: string): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommenderId(value: string): Self = this.set("RecommenderId", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
     @scala.inline
-    def deleteRecommenderId: Self = this.set("RecommenderId", js.undefined)
+    def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: string): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("Subject", js.undefined)
+    def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateDescription(value: string): Self = this.set("TemplateDescription", value.asInstanceOf[js.Any])
+    def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
     
     @scala.inline
-    def deleteTemplateDescription: Self = this.set("TemplateDescription", js.undefined)
+    def setTextPart(value: string): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextPart(value: string): Self = this.set("TextPart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextPart: Self = this.set("TextPart", js.undefined)
-    
-    @scala.inline
-    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
   }
 }

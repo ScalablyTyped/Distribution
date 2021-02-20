@@ -1,12 +1,13 @@
 package typings.wordpressUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/url/build-types/is-email", JSImport.Namespace)
-@js.native
-object isEmailMod extends js.Object {
+object isEmailMod {
   
+  @JSImport("@wordpress/url/build-types/is-email", "isEmail")
+  @js.native
   def isEmail(email: String): Boolean = js.native
 }

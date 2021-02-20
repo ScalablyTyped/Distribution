@@ -4,13 +4,14 @@ import typings.std.AddEventListenerOptions
 import typings.std.Event
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.EventTarget & {  width :number,   height :number,   offsetLeft :number,   offsetTop :number,   scale :number} */
 @js.native
-trait VisualViewport extends js.Object {
+trait VisualViewport extends StObject {
   
   /**
     * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.

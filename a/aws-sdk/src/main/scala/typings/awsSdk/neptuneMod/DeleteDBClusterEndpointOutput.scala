@@ -1,11 +1,12 @@
 package typings.awsSdk.neptuneMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteDBClusterEndpointOutput extends js.Object {
+trait DeleteDBClusterEndpointOutput extends StObject {
   
   /**
     * The type associated with a custom endpoint. One of: READER, WRITER, ANY.
@@ -66,84 +67,72 @@ object DeleteDBClusterEndpointOutput {
   }
   
   @scala.inline
-  implicit class DeleteDBClusterEndpointOutputOps[Self <: DeleteDBClusterEndpointOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteDBClusterEndpointOutputMutableBuilder[Self <: DeleteDBClusterEndpointOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomEndpointType(value: String): Self = StObject.set(x, "CustomEndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomEndpointTypeUndefined: Self = StObject.set(x, "CustomEndpointType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterEndpointArn(value: String): Self = StObject.set(x, "DBClusterEndpointArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomEndpointType(value: String): Self = this.set("CustomEndpointType", value.asInstanceOf[js.Any])
+    def setDBClusterEndpointArnUndefined: Self = StObject.set(x, "DBClusterEndpointArn", js.undefined)
     
     @scala.inline
-    def deleteCustomEndpointType: Self = this.set("CustomEndpointType", js.undefined)
+    def setDBClusterEndpointIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterEndpointArn(value: String): Self = this.set("DBClusterEndpointArn", value.asInstanceOf[js.Any])
+    def setDBClusterEndpointIdentifierUndefined: Self = StObject.set(x, "DBClusterEndpointIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDBClusterEndpointArn: Self = this.set("DBClusterEndpointArn", js.undefined)
+    def setDBClusterEndpointResourceIdentifier(value: String): Self = StObject.set(x, "DBClusterEndpointResourceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterEndpointIdentifier(value: String): Self = this.set("DBClusterEndpointIdentifier", value.asInstanceOf[js.Any])
+    def setDBClusterEndpointResourceIdentifierUndefined: Self = StObject.set(x, "DBClusterEndpointResourceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDBClusterEndpointIdentifier: Self = this.set("DBClusterEndpointIdentifier", js.undefined)
+    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterEndpointResourceIdentifier(value: String): Self = this.set("DBClusterEndpointResourceIdentifier", value.asInstanceOf[js.Any])
+    def setDBClusterIdentifierUndefined: Self = StObject.set(x, "DBClusterIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDBClusterEndpointResourceIdentifier: Self = this.set("DBClusterEndpointResourceIdentifier", js.undefined)
+    def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    def setEndpointType(value: String): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
     @scala.inline
-    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    def setExcludedMembers(value: StringList): Self = StObject.set(x, "ExcludedMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointType(value: String): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    def setExcludedMembersUndefined: Self = StObject.set(x, "ExcludedMembers", js.undefined)
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    def setExcludedMembersVarargs(value: String*): Self = StObject.set(x, "ExcludedMembers", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedMembersVarargs(value: String*): Self = this.set("ExcludedMembers", js.Array(value :_*))
+    def setStaticMembers(value: StringList): Self = StObject.set(x, "StaticMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedMembers(value: StringList): Self = this.set("ExcludedMembers", value.asInstanceOf[js.Any])
+    def setStaticMembersUndefined: Self = StObject.set(x, "StaticMembers", js.undefined)
     
     @scala.inline
-    def deleteExcludedMembers: Self = this.set("ExcludedMembers", js.undefined)
+    def setStaticMembersVarargs(value: String*): Self = StObject.set(x, "StaticMembers", js.Array(value :_*))
     
     @scala.inline
-    def setStaticMembersVarargs(value: String*): Self = this.set("StaticMembers", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaticMembers(value: StringList): Self = this.set("StaticMembers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaticMembers: Self = this.set("StaticMembers", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

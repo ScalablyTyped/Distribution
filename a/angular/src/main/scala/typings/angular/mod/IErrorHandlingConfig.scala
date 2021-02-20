@@ -1,11 +1,12 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IErrorHandlingConfig extends js.Object {
+trait IErrorHandlingConfig extends StObject {
   
   /**
     * The max depth for stringifying objects.
@@ -30,30 +31,18 @@ object IErrorHandlingConfig {
   }
   
   @scala.inline
-  implicit class IErrorHandlingConfigOps[Self <: IErrorHandlingConfig] (val x: Self) extends AnyVal {
+  implicit class IErrorHandlingConfigMutableBuilder[Self <: IErrorHandlingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectMaxDepth(value: Double): Self = StObject.set(x, "objectMaxDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectMaxDepthUndefined: Self = StObject.set(x, "objectMaxDepth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUrlErrorParamsEnabled(value: Boolean): Self = StObject.set(x, "urlErrorParamsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectMaxDepth(value: Double): Self = this.set("objectMaxDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectMaxDepth: Self = this.set("objectMaxDepth", js.undefined)
-    
-    @scala.inline
-    def setUrlErrorParamsEnabled(value: Boolean): Self = this.set("urlErrorParamsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlErrorParamsEnabled: Self = this.set("urlErrorParamsEnabled", js.undefined)
+    def setUrlErrorParamsEnabledUndefined: Self = StObject.set(x, "urlErrorParamsEnabled", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParquetSerDe extends js.Object {
+trait ParquetSerDe extends StObject {
   
   /**
     * The Hadoop Distributed File System (HDFS) block size. This is useful if you intend to copy the data from Amazon S3 to HDFS before querying. The default is 256 MiB and the minimum is 64 MiB. Kinesis Data Firehose uses this value for padding calculations.
@@ -46,54 +47,42 @@ object ParquetSerDe {
   }
   
   @scala.inline
-  implicit class ParquetSerDeOps[Self <: ParquetSerDe] (val x: Self) extends AnyVal {
+  implicit class ParquetSerDeMutableBuilder[Self <: ParquetSerDe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockSizeBytes(value: BlockSizeBytes): Self = StObject.set(x, "BlockSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockSizeBytesUndefined: Self = StObject.set(x, "BlockSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompression(value: ParquetCompression): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockSizeBytes(value: BlockSizeBytes): Self = this.set("BlockSizeBytes", value.asInstanceOf[js.Any])
+    def setCompressionUndefined: Self = StObject.set(x, "Compression", js.undefined)
     
     @scala.inline
-    def deleteBlockSizeBytes: Self = this.set("BlockSizeBytes", js.undefined)
+    def setEnableDictionaryCompression(value: BooleanObject): Self = StObject.set(x, "EnableDictionaryCompression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompression(value: ParquetCompression): Self = this.set("Compression", value.asInstanceOf[js.Any])
+    def setEnableDictionaryCompressionUndefined: Self = StObject.set(x, "EnableDictionaryCompression", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("Compression", js.undefined)
+    def setMaxPaddingBytes(value: NonNegativeIntegerObject): Self = StObject.set(x, "MaxPaddingBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableDictionaryCompression(value: BooleanObject): Self = this.set("EnableDictionaryCompression", value.asInstanceOf[js.Any])
+    def setMaxPaddingBytesUndefined: Self = StObject.set(x, "MaxPaddingBytes", js.undefined)
     
     @scala.inline
-    def deleteEnableDictionaryCompression: Self = this.set("EnableDictionaryCompression", js.undefined)
+    def setPageSizeBytes(value: ParquetPageSizeBytes): Self = StObject.set(x, "PageSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxPaddingBytes(value: NonNegativeIntegerObject): Self = this.set("MaxPaddingBytes", value.asInstanceOf[js.Any])
+    def setPageSizeBytesUndefined: Self = StObject.set(x, "PageSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteMaxPaddingBytes: Self = this.set("MaxPaddingBytes", js.undefined)
+    def setWriterVersion(value: ParquetWriterVersion): Self = StObject.set(x, "WriterVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizeBytes(value: ParquetPageSizeBytes): Self = this.set("PageSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSizeBytes: Self = this.set("PageSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setWriterVersion(value: ParquetWriterVersion): Self = this.set("WriterVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriterVersion: Self = this.set("WriterVersion", js.undefined)
+    def setWriterVersionUndefined: Self = StObject.set(x, "WriterVersion", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPostalAddress extends js.Object {
+trait SchemaPostalAddress extends StObject {
   
   var addressLines: js.UndefOr[js.Array[String]] = js.native
   
@@ -56,141 +57,129 @@ object SchemaPostalAddress {
   }
   
   @scala.inline
-  implicit class SchemaPostalAddressOps[Self <: SchemaPostalAddress] (val x: Self) extends AnyVal {
+  implicit class SchemaPostalAddressMutableBuilder[Self <: SchemaPostalAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressLinesUndefined: Self = StObject.set(x, "addressLines", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressLinesVarargs(value: String*): Self = StObject.set(x, "addressLines", js.Array(value :_*))
     
     @scala.inline
-    def setAddressLinesVarargs(value: String*): Self = this.set("addressLines", js.Array(value :_*))
+    def setAdministrativeAreaName(value: String): Self = StObject.set(x, "administrativeAreaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressLines(value: js.Array[String]): Self = this.set("addressLines", value.asInstanceOf[js.Any])
+    def setAdministrativeAreaNameUndefined: Self = StObject.set(x, "administrativeAreaName", js.undefined)
     
     @scala.inline
-    def deleteAddressLines: Self = this.set("addressLines", js.undefined)
+    def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeAreaName(value: String): Self = this.set("administrativeAreaName", value.asInstanceOf[js.Any])
+    def setCountryNameCode(value: String): Self = StObject.set(x, "countryNameCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdministrativeAreaName: Self = this.set("administrativeAreaName", js.undefined)
+    def setCountryNameCodeUndefined: Self = StObject.set(x, "countryNameCode", js.undefined)
     
     @scala.inline
-    def setCountryName(value: String): Self = this.set("countryName", value.asInstanceOf[js.Any])
+    def setCountryNameUndefined: Self = StObject.set(x, "countryName", js.undefined)
     
     @scala.inline
-    def deleteCountryName: Self = this.set("countryName", js.undefined)
+    def setDependentLocalityName(value: String): Self = StObject.set(x, "dependentLocalityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryNameCode(value: String): Self = this.set("countryNameCode", value.asInstanceOf[js.Any])
+    def setDependentLocalityNameUndefined: Self = StObject.set(x, "dependentLocalityName", js.undefined)
     
     @scala.inline
-    def deleteCountryNameCode: Self = this.set("countryNameCode", js.undefined)
+    def setDependentThoroughfareName(value: String): Self = StObject.set(x, "dependentThoroughfareName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependentLocalityName(value: String): Self = this.set("dependentLocalityName", value.asInstanceOf[js.Any])
+    def setDependentThoroughfareNameUndefined: Self = StObject.set(x, "dependentThoroughfareName", js.undefined)
     
     @scala.inline
-    def deleteDependentLocalityName: Self = this.set("dependentLocalityName", js.undefined)
+    def setFirmName(value: String): Self = StObject.set(x, "firmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependentThoroughfareName(value: String): Self = this.set("dependentThoroughfareName", value.asInstanceOf[js.Any])
+    def setFirmNameUndefined: Self = StObject.set(x, "firmName", js.undefined)
     
     @scala.inline
-    def deleteDependentThoroughfareName: Self = this.set("dependentThoroughfareName", js.undefined)
+    def setIsDisputed(value: Boolean): Self = StObject.set(x, "isDisputed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmName(value: String): Self = this.set("firmName", value.asInstanceOf[js.Any])
+    def setIsDisputedUndefined: Self = StObject.set(x, "isDisputed", js.undefined)
     
     @scala.inline
-    def deleteFirmName: Self = this.set("firmName", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisputed(value: Boolean): Self = this.set("isDisputed", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteIsDisputed: Self = this.set("isDisputed", js.undefined)
+    def setLocalityName(value: String): Self = StObject.set(x, "localityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setLocalityNameUndefined: Self = StObject.set(x, "localityName", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setPostBoxNumber(value: String): Self = StObject.set(x, "postBoxNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalityName(value: String): Self = this.set("localityName", value.asInstanceOf[js.Any])
+    def setPostBoxNumberUndefined: Self = StObject.set(x, "postBoxNumber", js.undefined)
     
     @scala.inline
-    def deleteLocalityName: Self = this.set("localityName", js.undefined)
+    def setPostalCodeNumber(value: String): Self = StObject.set(x, "postalCodeNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostBoxNumber(value: String): Self = this.set("postBoxNumber", value.asInstanceOf[js.Any])
+    def setPostalCodeNumberExtension(value: String): Self = StObject.set(x, "postalCodeNumberExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePostBoxNumber: Self = this.set("postBoxNumber", js.undefined)
+    def setPostalCodeNumberExtensionUndefined: Self = StObject.set(x, "postalCodeNumberExtension", js.undefined)
     
     @scala.inline
-    def setPostalCodeNumber(value: String): Self = this.set("postalCodeNumber", value.asInstanceOf[js.Any])
+    def setPostalCodeNumberUndefined: Self = StObject.set(x, "postalCodeNumber", js.undefined)
     
     @scala.inline
-    def deletePostalCodeNumber: Self = this.set("postalCodeNumber", js.undefined)
+    def setPremiseName(value: String): Self = StObject.set(x, "premiseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostalCodeNumberExtension(value: String): Self = this.set("postalCodeNumberExtension", value.asInstanceOf[js.Any])
+    def setPremiseNameUndefined: Self = StObject.set(x, "premiseName", js.undefined)
     
     @scala.inline
-    def deletePostalCodeNumberExtension: Self = this.set("postalCodeNumberExtension", js.undefined)
+    def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPremiseName(value: String): Self = this.set("premiseName", value.asInstanceOf[js.Any])
+    def setRecipientNameUndefined: Self = StObject.set(x, "recipientName", js.undefined)
     
     @scala.inline
-    def deletePremiseName: Self = this.set("premiseName", js.undefined)
+    def setSortingCode(value: String): Self = StObject.set(x, "sortingCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientName(value: String): Self = this.set("recipientName", value.asInstanceOf[js.Any])
+    def setSortingCodeUndefined: Self = StObject.set(x, "sortingCode", js.undefined)
     
     @scala.inline
-    def deleteRecipientName: Self = this.set("recipientName", js.undefined)
+    def setSubAdministrativeAreaName(value: String): Self = StObject.set(x, "subAdministrativeAreaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortingCode(value: String): Self = this.set("sortingCode", value.asInstanceOf[js.Any])
+    def setSubAdministrativeAreaNameUndefined: Self = StObject.set(x, "subAdministrativeAreaName", js.undefined)
     
     @scala.inline
-    def deleteSortingCode: Self = this.set("sortingCode", js.undefined)
+    def setSubPremiseName(value: String): Self = StObject.set(x, "subPremiseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubAdministrativeAreaName(value: String): Self = this.set("subAdministrativeAreaName", value.asInstanceOf[js.Any])
+    def setSubPremiseNameUndefined: Self = StObject.set(x, "subPremiseName", js.undefined)
     
     @scala.inline
-    def deleteSubAdministrativeAreaName: Self = this.set("subAdministrativeAreaName", js.undefined)
+    def setThoroughfareName(value: String): Self = StObject.set(x, "thoroughfareName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubPremiseName(value: String): Self = this.set("subPremiseName", value.asInstanceOf[js.Any])
+    def setThoroughfareNameUndefined: Self = StObject.set(x, "thoroughfareName", js.undefined)
     
     @scala.inline
-    def deleteSubPremiseName: Self = this.set("subPremiseName", js.undefined)
+    def setThoroughfareNumber(value: String): Self = StObject.set(x, "thoroughfareNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThoroughfareName(value: String): Self = this.set("thoroughfareName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThoroughfareName: Self = this.set("thoroughfareName", js.undefined)
-    
-    @scala.inline
-    def setThoroughfareNumber(value: String): Self = this.set("thoroughfareNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThoroughfareNumber: Self = this.set("thoroughfareNumber", js.undefined)
+    def setThoroughfareNumberUndefined: Self = StObject.set(x, "thoroughfareNumber", js.undefined)
   }
 }

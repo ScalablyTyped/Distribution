@@ -19,13 +19,13 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSetMetaData
 import typings.activexLibreoffice.com_.sun.star.sdbc.XRowSet
 import typings.activexLibreoffice.com_.sun.star.sdbc.XRowSetListener
-import typings.activexLibreoffice.com_.sun.star.sdbcx.XColumnsSupplier
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Date
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,8 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.sdbc.ResultSet because Already inherited
 - typings.activexLibreoffice.com_.sun.star.sdbc.RowSet because var conflicts: CursorName, FetchDirection, FetchSize, ResultSetConcurrency, ResultSetType. Inlined Command, DataSourceName, EscapeProcessing, MaxFieldSize, MaxRows, Password, QueryTimeOut, TransactionIsolation, TypeMap, URL, User */ @js.native
 trait RowSet
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.ResultSet
-     with XColumnsSupplier
+  extends ResultSet
      with XCompletedExecution
      with XRowSetApproveBroadcaster
      with XResultSetAccess
@@ -362,102 +361,90 @@ object RowSet {
   }
   
   @scala.inline
-  implicit class RowSetOps[Self <: RowSet] (val x: Self) extends AnyVal {
+  implicit class RowSetMutableBuilder[Self <: RowSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveCommand(value: String): Self = StObject.set(x, "ActiveCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplyFilter(value: Boolean): Self = StObject.set(x, "ApplyFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveCommand(value: String): Self = this.set("ActiveCommand", value.asInstanceOf[js.Any])
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    def setCommandType(value: Double): Self = StObject.set(x, "CommandType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplyFilter(value: Boolean): Self = this.set("ApplyFilter", value.asInstanceOf[js.Any])
+    def setDataSourceName(value: String): Self = StObject.set(x, "DataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandType(value: Double): Self = this.set("CommandType", value.asInstanceOf[js.Any])
+    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    def setGroupBy(value: String): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    def setHavingClause(value: String): Self = StObject.set(x, "HavingClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    def setIgnoreResult(value: Boolean): Self = StObject.set(x, "IgnoreResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupBy(value: String): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    def setIsModified(value: Boolean): Self = StObject.set(x, "IsModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHavingClause(value: String): Self = this.set("HavingClause", value.asInstanceOf[js.Any])
+    def setIsNew(value: Boolean): Self = StObject.set(x, "IsNew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreResult(value: Boolean): Self = this.set("IgnoreResult", value.asInstanceOf[js.Any])
+    def setIsRowCountFinal(value: Boolean): Self = StObject.set(x, "IsRowCountFinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsModified(value: Boolean): Self = this.set("IsModified", value.asInstanceOf[js.Any])
+    def setMaxFieldSize(value: Double): Self = StObject.set(x, "MaxFieldSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNew(value: Boolean): Self = this.set("IsNew", value.asInstanceOf[js.Any])
+    def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRowCountFinal(value: Boolean): Self = this.set("IsRowCountFinal", value.asInstanceOf[js.Any])
+    def setOrder(value: String): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFieldSize(value: Double): Self = this.set("MaxFieldSize", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("MaxRows", value.asInstanceOf[js.Any])
+    def setPrivileges(value: Double): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
+    def setQueryTimeOut(value: Double): Self = StObject.set(x, "QueryTimeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivileges(value: Double): Self = this.set("Privileges", value.asInstanceOf[js.Any])
+    def setTransactionIsolation(value: Double): Self = StObject.set(x, "TransactionIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryTimeOut(value: Double): Self = this.set("QueryTimeOut", value.asInstanceOf[js.Any])
+    def setTypeMap(value: XNameAccess): Self = StObject.set(x, "TypeMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("RowCount", value.asInstanceOf[js.Any])
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionIsolation(value: Double): Self = this.set("TransactionIsolation", value.asInstanceOf[js.Any])
+    def setUpdateCatalogName(value: String): Self = StObject.set(x, "UpdateCatalogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeMap(value: XNameAccess): Self = this.set("TypeMap", value.asInstanceOf[js.Any])
+    def setUpdateSchemaName(value: String): Self = StObject.set(x, "UpdateSchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    def setUpdateTableName(value: String): Self = StObject.set(x, "UpdateTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCatalogName(value: String): Self = this.set("UpdateCatalogName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateSchemaName(value: String): Self = this.set("UpdateSchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateTableName(value: String): Self = this.set("UpdateTableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

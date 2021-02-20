@@ -7,6 +7,7 @@ import typings.victory.victoryStrings.disable
 import typings.victory.victoryStrings.none
 import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,84 +116,72 @@ object VictoryBrushContainerProps {
   }
   
   @scala.inline
-  implicit class VictoryBrushContainerPropsOps[Self <: VictoryBrushContainerProps] (val x: Self) extends AnyVal {
+  implicit class VictoryBrushContainerPropsMutableBuilder[Self <: VictoryBrushContainerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowResize(value: Boolean): Self = StObject.set(x, "allowResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDrag(value: Boolean): Self = this.set("allowDrag", value.asInstanceOf[js.Any])
+    def setAllowResizeUndefined: Self = StObject.set(x, "allowResize", js.undefined)
     
     @scala.inline
-    def deleteAllowDrag: Self = this.set("allowDrag", js.undefined)
+    def setBrushComponent(value: ReactElement): Self = StObject.set(x, "brushComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowResize(value: Boolean): Self = this.set("allowResize", value.asInstanceOf[js.Any])
+    def setBrushComponentUndefined: Self = StObject.set(x, "brushComponent", js.undefined)
     
     @scala.inline
-    def deleteAllowResize: Self = this.set("allowResize", js.undefined)
+    def setBrushDimension(value: typings.victory.victoryStrings.x | y): Self = StObject.set(x, "brushDimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushComponent(value: ReactElement): Self = this.set("brushComponent", value.asInstanceOf[js.Any])
+    def setBrushDimensionUndefined: Self = StObject.set(x, "brushDimension", js.undefined)
     
     @scala.inline
-    def deleteBrushComponent: Self = this.set("brushComponent", js.undefined)
+    def setBrushDomain(value: DomainPropType): Self = StObject.set(x, "brushDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushDimension(value: typings.victory.victoryStrings.x | y): Self = this.set("brushDimension", value.asInstanceOf[js.Any])
+    def setBrushDomainUndefined: Self = StObject.set(x, "brushDomain", js.undefined)
     
     @scala.inline
-    def deleteBrushDimension: Self = this.set("brushDimension", js.undefined)
+    def setBrushStyle(value: CSSProperties): Self = StObject.set(x, "brushStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushDomain(value: DomainPropType): Self = this.set("brushDomain", value.asInstanceOf[js.Any])
+    def setBrushStyleUndefined: Self = StObject.set(x, "brushStyle", js.undefined)
     
     @scala.inline
-    def deleteBrushDomain: Self = this.set("brushDomain", js.undefined)
+    def setDefaultBrushArea(value: all | none | disable): Self = StObject.set(x, "defaultBrushArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrushStyle(value: CSSProperties): Self = this.set("brushStyle", value.asInstanceOf[js.Any])
+    def setDefaultBrushAreaUndefined: Self = StObject.set(x, "defaultBrushArea", js.undefined)
     
     @scala.inline
-    def deleteBrushStyle: Self = this.set("brushStyle", js.undefined)
+    def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultBrushArea(value: all | none | disable): Self = this.set("defaultBrushArea", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteDefaultBrushArea: Self = this.set("defaultBrushArea", js.undefined)
+    def setHandleComponent(value: ReactElement): Self = StObject.set(x, "handleComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: Boolean): Self = this.set("disable", value.asInstanceOf[js.Any])
+    def setHandleComponentUndefined: Self = StObject.set(x, "handleComponent", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setHandleStyle(value: CSSProperties): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleComponent(value: ReactElement): Self = this.set("handleComponent", value.asInstanceOf[js.Any])
+    def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
     
     @scala.inline
-    def deleteHandleComponent: Self = this.set("handleComponent", js.undefined)
+    def setOnBrushDomainChange(value: (/* domain */ DomainPropType, VictoryBrushContainerProps) => Unit): Self = StObject.set(x, "onBrushDomainChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHandleStyle(value: CSSProperties): Self = this.set("handleStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleStyle: Self = this.set("handleStyle", js.undefined)
-    
-    @scala.inline
-    def setOnBrushDomainChange(value: (/* domain */ DomainPropType, VictoryBrushContainerProps) => Unit): Self = this.set("onBrushDomainChange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnBrushDomainChange: Self = this.set("onBrushDomainChange", js.undefined)
+    def setOnBrushDomainChangeUndefined: Self = StObject.set(x, "onBrushDomainChange", js.undefined)
   }
 }

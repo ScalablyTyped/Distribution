@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Multi extends js.Object {
+trait Multi extends StObject {
   
   var multi: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object Multi {
   }
   
   @scala.inline
-  implicit class MultiOps[Self <: Multi] (val x: Self) extends AnyVal {
+  implicit class MultiMutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMulti: Self = this.set("multi", js.undefined)
+    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
   }
 }

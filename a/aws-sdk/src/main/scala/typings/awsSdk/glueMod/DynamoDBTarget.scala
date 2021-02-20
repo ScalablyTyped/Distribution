@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamoDBTarget extends js.Object {
+trait DynamoDBTarget extends StObject {
   
   /**
     * The name of the DynamoDB table to crawl.
@@ -31,36 +32,24 @@ object DynamoDBTarget {
   }
   
   @scala.inline
-  implicit class DynamoDBTargetOps[Self <: DynamoDBTarget] (val x: Self) extends AnyVal {
+  implicit class DynamoDBTargetMutableBuilder[Self <: DynamoDBTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScanAll(value: NullableBoolean): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: Path): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setScanRate(value: NullableDouble): Self = StObject.set(x, "scanRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanAll(value: NullableBoolean): Self = this.set("scanAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanAll: Self = this.set("scanAll", js.undefined)
-    
-    @scala.inline
-    def setScanRate(value: NullableDouble): Self = this.set("scanRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanRate: Self = this.set("scanRate", js.undefined)
+    def setScanRateUndefined: Self = StObject.set(x, "scanRate", js.undefined)
   }
 }

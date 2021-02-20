@@ -1,13 +1,13 @@
 package typings.pulumiCloud.serviceMod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.pulumiPulumi.outputMod.Output_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Service extends js.Object {
+trait Service extends StObject {
   
   /**
     * The primary endpoint exposed by the service.  All endpoints (including this one)
@@ -37,6 +37,3 @@ trait Service extends js.Object {
   
   var name: String = js.native
 }
-@JSImport("@pulumi/cloud/service", "Service")
-@js.native
-object Service extends TopLevel[ServiceConstructor]

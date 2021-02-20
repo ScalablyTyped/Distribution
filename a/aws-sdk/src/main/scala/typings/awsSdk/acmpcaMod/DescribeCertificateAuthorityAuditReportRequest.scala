@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCertificateAuthorityAuditReportRequest extends js.Object {
+trait DescribeCertificateAuthorityAuditReportRequest extends StObject {
   
   /**
     * The report ID returned by calling the CreateCertificateAuthorityAuditReport action.
@@ -26,24 +27,12 @@ object DescribeCertificateAuthorityAuditReportRequest {
   }
   
   @scala.inline
-  implicit class DescribeCertificateAuthorityAuditReportRequestOps[Self <: DescribeCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCertificateAuthorityAuditReportRequestMutableBuilder[Self <: DescribeCertificateAuthorityAuditReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditReportId(value: AuditReportId): Self = StObject.set(x, "AuditReportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuditReportId(value: AuditReportId): Self = this.set("AuditReportId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
   }
 }

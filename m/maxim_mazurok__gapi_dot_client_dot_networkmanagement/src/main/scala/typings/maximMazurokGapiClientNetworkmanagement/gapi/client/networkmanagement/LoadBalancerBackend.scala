@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerBackend extends js.Object {
+trait LoadBalancerBackend extends StObject {
   
   /** Name of a Compute Engine instance or network endpoint. */
   var displayName: js.UndefOr[String] = js.native
@@ -31,54 +32,42 @@ object LoadBalancerBackend {
   }
   
   @scala.inline
-  implicit class LoadBalancerBackendOps[Self <: LoadBalancerBackend] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerBackendMutableBuilder[Self <: LoadBalancerBackend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthCheckAllowingFirewallRules(value: js.Array[String]): Self = StObject.set(x, "healthCheckAllowingFirewallRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setHealthCheckAllowingFirewallRulesUndefined: Self = StObject.set(x, "healthCheckAllowingFirewallRules", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setHealthCheckAllowingFirewallRulesVarargs(value: String*): Self = StObject.set(x, "healthCheckAllowingFirewallRules", js.Array(value :_*))
     
     @scala.inline
-    def setHealthCheckAllowingFirewallRulesVarargs(value: String*): Self = this.set("healthCheckAllowingFirewallRules", js.Array(value :_*))
+    def setHealthCheckBlockingFirewallRules(value: js.Array[String]): Self = StObject.set(x, "healthCheckBlockingFirewallRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckAllowingFirewallRules(value: js.Array[String]): Self = this.set("healthCheckAllowingFirewallRules", value.asInstanceOf[js.Any])
+    def setHealthCheckBlockingFirewallRulesUndefined: Self = StObject.set(x, "healthCheckBlockingFirewallRules", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckAllowingFirewallRules: Self = this.set("healthCheckAllowingFirewallRules", js.undefined)
+    def setHealthCheckBlockingFirewallRulesVarargs(value: String*): Self = StObject.set(x, "healthCheckBlockingFirewallRules", js.Array(value :_*))
     
     @scala.inline
-    def setHealthCheckBlockingFirewallRulesVarargs(value: String*): Self = this.set("healthCheckBlockingFirewallRules", js.Array(value :_*))
+    def setHealthCheckFirewallState(value: String): Self = StObject.set(x, "healthCheckFirewallState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckBlockingFirewallRules(value: js.Array[String]): Self = this.set("healthCheckBlockingFirewallRules", value.asInstanceOf[js.Any])
+    def setHealthCheckFirewallStateUndefined: Self = StObject.set(x, "healthCheckFirewallState", js.undefined)
     
     @scala.inline
-    def deleteHealthCheckBlockingFirewallRules: Self = this.set("healthCheckBlockingFirewallRules", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheckFirewallState(value: String): Self = this.set("healthCheckFirewallState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheckFirewallState: Self = this.set("healthCheckFirewallState", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

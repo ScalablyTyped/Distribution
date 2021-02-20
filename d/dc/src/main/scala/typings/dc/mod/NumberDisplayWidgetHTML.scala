@@ -1,11 +1,12 @@
 package typings.dc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberDisplayWidgetHTML extends js.Object {
+trait NumberDisplayWidgetHTML extends StObject {
   
   var none: String = js.native
   
@@ -22,27 +23,15 @@ object NumberDisplayWidgetHTML {
   }
   
   @scala.inline
-  implicit class NumberDisplayWidgetHTMLOps[Self <: NumberDisplayWidgetHTML] (val x: Self) extends AnyVal {
+  implicit class NumberDisplayWidgetHTMLMutableBuilder[Self <: NumberDisplayWidgetHTML] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNone(value: String): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOne(value: String): Self = this.set("one", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSome(value: String): Self = this.set("some", value.asInstanceOf[js.Any])
+    def setSome(value: String): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
   }
 }

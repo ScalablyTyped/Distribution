@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import typings.activexLibreoffice.com_.sun.star.text.DependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.TextContentAnchorType
-import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
-import typings.activexLibreoffice.com_.sun.star.text.XDependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextField
   */
 @js.native
-trait SetExpression
-  extends TextField_
-     with XDependentTextField {
+trait SetExpression extends DependentTextField {
   
   /** contains the textual content of the field. */
   var Content: String = js.native
@@ -124,57 +122,45 @@ object SetExpression {
   }
   
   @scala.inline
-  implicit class SetExpressionOps[Self <: SetExpression] (val x: Self) extends AnyVal {
+  implicit class SetExpressionMutableBuilder[Self <: SetExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPresentation(value: String): Self = this.set("CurrentPresentation", value.asInstanceOf[js.Any])
+    def setIsInput(value: Boolean): Self = StObject.set(x, "IsInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHint(value: String): Self = this.set("Hint", value.asInstanceOf[js.Any])
+    def setIsShowFormula(value: Boolean): Self = StObject.set(x, "IsShowFormula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFixedLanguage(value: Boolean): Self = this.set("IsFixedLanguage", value.asInstanceOf[js.Any])
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInput(value: Boolean): Self = this.set("IsInput", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsShowFormula(value: Boolean): Self = this.set("IsShowFormula", value.asInstanceOf[js.Any])
+    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    def setSequenceValue(value: Double): Self = StObject.set(x, "SequenceValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: Double): Self = this.set("NumberFormat", value.asInstanceOf[js.Any])
+    def setSubType(value: Double): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberingType(value: Double): Self = this.set("NumberingType", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceValue(value: Double): Self = this.set("SequenceValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubType(value: Double): Self = this.set("SubType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariableName(value: String): Self = this.set("VariableName", value.asInstanceOf[js.Any])
+    def setVariableName(value: String): Self = StObject.set(x, "VariableName", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.wordpressBlocks.anon
 
 import typings.std.Record
 import typings.wordpressBlocks.mod.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait From[T /* <: Record[String, _] */] extends js.Object {
+trait From[T /* <: Record[String, _] */] extends StObject {
   
   /**
     * Transforms from another block type to this block type.
@@ -28,36 +29,24 @@ object From {
   }
   
   @scala.inline
-  implicit class FromOps[Self <: From[_], T /* <: Record[String, _] */] (val x: Self with From[T]) extends AnyVal {
+  implicit class FromMutableBuilder[Self <: From[_], T /* <: Record[String, _] */] (val x: Self with From[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: js.Array[Transform[T]]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromVarargs(value: Transform[T]*): Self = StObject.set(x, "from", js.Array(value :_*))
     
     @scala.inline
-    def setFromVarargs(value: Transform[T]*): Self = this.set("from", js.Array(value :_*))
+    def setTo(value: js.Array[Transform[Record[String, _]]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: js.Array[Transform[T]]): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
-    
-    @scala.inline
-    def setToVarargs(value: (Transform[Record[String, js.Any]])*): Self = this.set("to", js.Array(value :_*))
-    
-    @scala.inline
-    def setTo(value: js.Array[Transform[Record[String, _]]]): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToVarargs(value: (Transform[Record[String, js.Any]])*): Self = StObject.set(x, "to", js.Array(value :_*))
   }
 }

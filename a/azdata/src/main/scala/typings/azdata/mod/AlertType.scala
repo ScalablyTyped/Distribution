@@ -1,36 +1,32 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AlertType extends js.Object
+sealed trait AlertType extends StObject
 @JSImport("azdata", "AlertType")
 @js.native
-object AlertType extends js.Object {
+object AlertType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[AlertType with Double] = js.native
   
   @js.native
   sealed trait nonSqlServerEvent extends AlertType
-  /* 3 */ @js.native
-  object nonSqlServerEvent extends TopLevel[nonSqlServerEvent with Double]
+  /* 3 */ val nonSqlServerEvent: typings.azdata.mod.AlertType.nonSqlServerEvent with Double = js.native
   
   @js.native
   sealed trait sqlServerEvent extends AlertType
-  /* 1 */ @js.native
-  object sqlServerEvent extends TopLevel[sqlServerEvent with Double]
+  /* 1 */ val sqlServerEvent: typings.azdata.mod.AlertType.sqlServerEvent with Double = js.native
   
   @js.native
   sealed trait sqlServerPerformanceCondition extends AlertType
-  /* 2 */ @js.native
-  object sqlServerPerformanceCondition extends TopLevel[sqlServerPerformanceCondition with Double]
+  /* 2 */ val sqlServerPerformanceCondition: typings.azdata.mod.AlertType.sqlServerPerformanceCondition with Double = js.native
   
   @js.native
   sealed trait wmiEvent extends AlertType
-  /* 4 */ @js.native
-  object wmiEvent extends TopLevel[wmiEvent with Double]
+  /* 4 */ val wmiEvent: typings.azdata.mod.AlertType.wmiEvent with Double = js.native
 }

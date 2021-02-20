@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectedItemsChangingEventUIParam extends js.Object {
+trait SelectedItemsChangingEventUIParam extends StObject {
   
   /**
     * Used to stop the selected items from changing.
@@ -31,36 +32,24 @@ object SelectedItemsChangingEventUIParam {
   }
   
   @scala.inline
-  implicit class SelectedItemsChangingEventUIParamOps[Self <: SelectedItemsChangingEventUIParam] (val x: Self) extends AnyVal {
+  implicit class SelectedItemsChangingEventUIParamMutableBuilder[Self <: SelectedItemsChangingEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: js.Any): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewItems(value: js.Any): Self = StObject.set(x, "newItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: js.Any): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setNewItemsUndefined: Self = StObject.set(x, "newItems", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setOldItems(value: js.Any): Self = StObject.set(x, "oldItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewItems(value: js.Any): Self = this.set("newItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewItems: Self = this.set("newItems", js.undefined)
-    
-    @scala.inline
-    def setOldItems(value: js.Any): Self = this.set("oldItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldItems: Self = this.set("oldItems", js.undefined)
+    def setOldItemsUndefined: Self = StObject.set(x, "oldItems", js.undefined)
   }
 }

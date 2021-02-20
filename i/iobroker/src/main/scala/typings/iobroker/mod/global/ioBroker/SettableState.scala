@@ -1,13 +1,14 @@
 package typings.iobroker.mod.global.ioBroker
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<iobroker.iobroker.<global>.ioBroker.State, 'val'>> & std.Pick<iobroker.iobroker.<global>.ioBroker.State, 'val'> */
 @js.native
-trait SettableState extends js.Object {
+trait SettableState extends StObject {
   
   var ack: js.UndefOr[Boolean] = js.native
   
@@ -36,75 +37,63 @@ object SettableState {
   }
   
   @scala.inline
-  implicit class SettableStateOps[Self <: SettableState] (val x: Self) extends AnyVal {
+  implicit class SettableStateMutableBuilder[Self <: SettableState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAckUndefined: Self = StObject.set(x, "ack", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAck(value: Boolean): Self = this.set("ack", value.asInstanceOf[js.Any])
+    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
     @scala.inline
-    def deleteAck: Self = this.set("ack", js.undefined)
+    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: String): Self = this.set("c", value.asInstanceOf[js.Any])
+    def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
     
     @scala.inline
-    def deleteC: Self = this.set("c", js.undefined)
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpire(value: Double): Self = this.set("expire", value.asInstanceOf[js.Any])
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def deleteExpire: Self = this.set("expire", js.undefined)
+    def setLc(value: Double): Self = StObject.set(x, "lc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setLcUndefined: Self = StObject.set(x, "lc", js.undefined)
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setQ(value: StateQuality): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLc(value: Double): Self = this.set("lc", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteLc: Self = this.set("lc", js.undefined)
+    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: StateQuality): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTs(value: Double): Self = this.set("ts", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deleteTs: Self = this.set("ts", js.undefined)
+    def setVal(value: String | Double | Boolean | js.Array[_] | (Record[String, _])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setValNull: Self = StObject.set(x, "val", null)
     
     @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setValVarargs(value: js.Any*): Self = this.set("val", js.Array(value :_*))
-    
-    @scala.inline
-    def setVal(value: String | Double | Boolean | js.Array[_] | (Record[String, _])): Self = this.set("val", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValNull: Self = this.set("val", null)
+    def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
   }
 }

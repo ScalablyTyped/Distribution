@@ -2,13 +2,14 @@ package typings.reactOverlays.anon
 
 import typings.popperjsCore.anon.PartialState
 import typings.popperjsCore.typesMod.PositioningStrategy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<react-overlays.react-overlays/esm/usePopper.UsePopperOptions, 'placement'> */
 @js.native
-trait OmitUsePopperOptionsplace extends js.Object {
+trait OmitUsePopperOptionsplace extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.native
   
@@ -27,45 +28,33 @@ object OmitUsePopperOptionsplace {
   }
   
   @scala.inline
-  implicit class OmitUsePopperOptionsplaceOps[Self <: OmitUsePopperOptionsplace] (val x: Self) extends AnyVal {
+  implicit class OmitUsePopperOptionsplaceMutableBuilder[Self <: OmitUsePopperOptionsplace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
     @scala.inline
-    def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = this.set("modifiers", js.Array(value :_*))
+    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModifiers(value: js.Array[typings.popperjsCore.anon.PartialModifieranyany]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setOnFirstUpdateUndefined: Self = StObject.set(x, "onFirstUpdate", js.undefined)
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setStrategy(value: PositioningStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = this.set("onFirstUpdate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFirstUpdate: Self = this.set("onFirstUpdate", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: PositioningStrategy): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

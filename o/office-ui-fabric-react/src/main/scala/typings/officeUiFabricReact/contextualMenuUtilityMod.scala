@@ -1,19 +1,26 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", JSImport.Namespace)
-@js.native
-object contextualMenuUtilityMod extends js.Object {
+object contextualMenuUtilityMod {
   
+  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "getIsChecked")
+  @js.native
   def getIsChecked(item: IContextualMenuItem): Boolean | Null = js.native
   
+  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "getMenuItemAriaRole")
+  @js.native
   def getMenuItemAriaRole(item: IContextualMenuItem): String = js.native
   
+  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "hasSubmenu")
+  @js.native
   def hasSubmenu(item: IContextualMenuItem): Boolean = js.native
   
+  @JSImport("office-ui-fabric-react/lib/utilities/contextualMenu/contextualMenuUtility", "isItemDisabled")
+  @js.native
   def isItemDisabled(item: IContextualMenuItem): Boolean = js.native
 }

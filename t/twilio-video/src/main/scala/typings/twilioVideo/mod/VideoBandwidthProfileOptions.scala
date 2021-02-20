@@ -1,12 +1,13 @@
 package typings.twilioVideo.mod
 
 import typings.twilioVideo.mod.Track.Priority
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoBandwidthProfileOptions extends js.Object {
+trait VideoBandwidthProfileOptions extends StObject {
   
   var dominantSpeakerPriority: js.UndefOr[Priority] = js.native
   
@@ -29,54 +30,42 @@ object VideoBandwidthProfileOptions {
   }
   
   @scala.inline
-  implicit class VideoBandwidthProfileOptionsOps[Self <: VideoBandwidthProfileOptions] (val x: Self) extends AnyVal {
+  implicit class VideoBandwidthProfileOptionsMutableBuilder[Self <: VideoBandwidthProfileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDominantSpeakerPriority(value: Priority): Self = StObject.set(x, "dominantSpeakerPriority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDominantSpeakerPriorityUndefined: Self = StObject.set(x, "dominantSpeakerPriority", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxSubscriptionBitrate(value: Double): Self = StObject.set(x, "maxSubscriptionBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDominantSpeakerPriority(value: Priority): Self = this.set("dominantSpeakerPriority", value.asInstanceOf[js.Any])
+    def setMaxSubscriptionBitrateUndefined: Self = StObject.set(x, "maxSubscriptionBitrate", js.undefined)
     
     @scala.inline
-    def deleteDominantSpeakerPriority: Self = this.set("dominantSpeakerPriority", js.undefined)
+    def setMaxTracks(value: Double): Self = StObject.set(x, "maxTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSubscriptionBitrate(value: Double): Self = this.set("maxSubscriptionBitrate", value.asInstanceOf[js.Any])
+    def setMaxTracksUndefined: Self = StObject.set(x, "maxTracks", js.undefined)
     
     @scala.inline
-    def deleteMaxSubscriptionBitrate: Self = this.set("maxSubscriptionBitrate", js.undefined)
+    def setMode(value: BandwidthProfileMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTracks(value: Double): Self = this.set("maxTracks", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteMaxTracks: Self = this.set("maxTracks", js.undefined)
+    def setRenderDimensions(value: VideoRenderDimensions): Self = StObject.set(x, "renderDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: BandwidthProfileMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRenderDimensionsUndefined: Self = StObject.set(x, "renderDimensions", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setTrackSwitchOffMode(value: TrackSwitchOffMode): Self = StObject.set(x, "trackSwitchOffMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderDimensions(value: VideoRenderDimensions): Self = this.set("renderDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderDimensions: Self = this.set("renderDimensions", js.undefined)
-    
-    @scala.inline
-    def setTrackSwitchOffMode(value: TrackSwitchOffMode): Self = this.set("trackSwitchOffMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackSwitchOffMode: Self = this.set("trackSwitchOffMode", js.undefined)
+    def setTrackSwitchOffModeUndefined: Self = StObject.set(x, "trackSwitchOffMode", js.undefined)
   }
 }

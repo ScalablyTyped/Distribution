@@ -8,13 +8,14 @@ import typings.nodal.anon.Createdat
 import typings.nodal.anon.Params
 import typings.nodal.anon.TypeofModelInstantiable
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Model")
 @js.native
-class Model protected () extends js.Object {
+class Model protected () extends StObject {
   def this(modelData: js.Object) = this()
   def this(modelData: js.Object, fromStorage: Boolean) = this()
   def this(modelData: js.Object, fromStorage: js.UndefOr[scala.Nothing], fromSeed: Boolean) = this()
@@ -357,11 +358,17 @@ class Model protected () extends js.Object {
   def update(fields: IAnyObject, callback: js.Function): Unit = js.native
 }
 /* static members */
-@JSImport("nodal", "Model")
-@js.native
-object Model extends js.Object {
+object Model {
   
-  var _relationshipCache: js.Any = js.native
+  @JSImport("nodal", "Model")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("nodal", "Model._relationshipCache")
+  @js.native
+  def _relationshipCache: js.Any = js.native
+  @scala.inline
+  def _relationshipCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_relationshipCache")(x.asInstanceOf[js.Any])
   
   /**
     * Create a calculated field (in JavaScript). Must be synchronous.
@@ -369,30 +376,40 @@ object Model extends js.Object {
     * @param {function} fnCalculate The synchronous method to perform a calculation for.
     *   Pass the names of the (non-computed) fields you'd like to use as parameters.
     */
+  @JSImport("nodal", "Model.calculates")
+  @js.native
   def calculates(calcField: String, fnCompute: js.Function): Unit = js.native
   
   /**
     * Return the column schema data for a given name
     * @param {string} columnName
     */
+  @JSImport("nodal", "Model.column")
+  @js.native
   def column(columnName: String): js.Any = js.native
   
   /**
     * Get the model's column lookup data
     * @return {Object}
     */
+  @JSImport("nodal", "Model.columnLookup")
+  @js.native
   def columnLookup(): IAnyObject = js.native
   
   /**
     * Get the model's column names (fields)
     * @return {Array}
     */
+  @JSImport("nodal", "Model.columnNames")
+  @js.native
   def columnNames(): js.Array[String] = js.native
   
   /**
     * Get the model's column data
     * @return {Array}
     */
+  @JSImport("nodal", "Model.columns")
+  @js.native
   def columns(): js.Array[IColumn] = js.native
   
   /**
@@ -400,6 +417,8 @@ object Model extends js.Object {
     * @param {object} data The data to load into the object.
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
+  @JSImport("nodal", "Model.create")
+  @js.native
   def create(
     data: IAnyObject,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
@@ -410,16 +429,22 @@ object Model extends js.Object {
     * @param {number} id The id of the model you're looking for
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
+  @JSImport("nodal", "Model.destroy")
+  @js.native
   def destroy(
     id: Double,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
   ): Unit = js.native
   
+  @JSImport("nodal", "Model.find")
+  @js.native
   def find(
     id: Double,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
   ): Unit = js.native
   
+  @JSImport("nodal", "Model.findBy")
+  @js.native
   def findBy(
     field: String,
     value: js.Any,
@@ -432,6 +457,8 @@ object Model extends js.Object {
     * @param {object} data Key-value pairs of Model creation data. Will use appropriate value to query for based on "field" parametere.
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
+  @JSImport("nodal", "Model.findOrCreateBy")
+  @js.native
   def findOrCreateBy(
     field: String,
     data: IAnyObject,
@@ -442,18 +469,24 @@ object Model extends js.Object {
     * Check if the model has a column name in its schema
     * @param {string} columnName
     */
+  @JSImport("nodal", "Model.hasColumn")
+  @js.native
   def hasColumn(columnName: String): Boolean = js.native
   
   /**
     * Hides fields from being output in .toObject() (i.e. API responses), even if asked for
     * @param {String} field
     */
+  @JSImport("nodal", "Model.hides")
+  @js.native
   def hides(field: String): Boolean = js.native
   
   /**
     * Tells us if a field is hidden (i.e. from API queries)
     * @param {String} field
     */
+  @JSImport("nodal", "Model.isHidden")
+  @js.native
   def isHidden(field: String): js.Any = js.native
   
   /**
@@ -465,6 +498,8 @@ object Model extends js.Object {
     *   "as": What to display the name of the child as when joined to the parent (default to camelCase of child name)
     *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
     */
+  @JSImport("nodal", "Model.joinsTo")
+  @js.native
   def joinsTo(modelClass: TypeofModelInstantiable, options: As): RelationshipEdge | Null = js.native
   
   /**
@@ -472,35 +507,49 @@ object Model extends js.Object {
     * @param {optional Nodal.Database} db Deprecated - provide a database to query from. Set the model's db in its constructor file, instead.
     * @return {Nodal.Composer}
     */
+  @JSImport("nodal", "Model.query")
+  @js.native
   def query[T /* <: Model */](): Composer[T] = js.native
+  @JSImport("nodal", "Model.query")
+  @js.native
   def query[T /* <: Model */](db: Database): Composer[T] = js.native
   
   /**`
     * FIXME
     */
+  @JSImport("nodal", "Model.relationship")
+  @js.native
   def relationship(name: String): RelationshipPath = js.native
   
   /**
     * FIXME
     */
+  @JSImport("nodal", "Model.relationships")
+  @js.native
   def relationships(): RelationshipNode = js.native
   
   /**
     * Set the database to be used for this model
     * @param {Nodal.Database} db
     */
+  @JSImport("nodal", "Model.setDatabase")
+  @js.native
   def setDatabase(db: Database): Unit = js.native
   
   /**
     * Set the schema to be used for this model
     * @param {Object} schema
     */
+  @JSImport("nodal", "Model.setSchema")
+  @js.native
   def setSchema(schema: Columns): Unit = js.native
   
   /**
     * Get the model's table name
     * @return {string}
     */
+  @JSImport("nodal", "Model.table")
+  @js.native
   def table(): String = js.native
   
   /**
@@ -509,6 +558,8 @@ object Model extends js.Object {
     * @param {object} data The data to load into the object.
     * @param {function({Error} err, {Nodal.Model} model)} callback The callback to execute upon completion
     */
+  @JSImport("nodal", "Model.update")
+  @js.native
   def update(
     id: Double,
     data: IAnyObject,
@@ -521,6 +572,8 @@ object Model extends js.Object {
     * @param {string} message The error message shown if a validation fails.
     * @param {function({any} value)} fnAction the validation to run - first parameter is the value you're testing.
     */
+  @JSImport("nodal", "Model.validates")
+  @js.native
   def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
   
   /**
@@ -529,5 +582,7 @@ object Model extends js.Object {
     * @param {function} fnAction The asynchronous verification method. The last argument passed is always a callback,
     * and field names are determined by the  argument names.
     */
+  @JSImport("nodal", "Model.verifies")
+  @js.native
   def verifies(message: String, fnAction: js.Function): Unit = js.native
 }

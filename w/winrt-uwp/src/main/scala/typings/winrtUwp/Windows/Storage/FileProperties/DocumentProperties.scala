@@ -6,13 +6,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the document-related properties of an item (like a file or folder). */
 @js.native
-trait DocumentProperties extends js.Object {
+trait DocumentProperties extends StObject {
   
   /** Gets the collection of the document's authors. */
   var author: IVector[String] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentConfig extends js.Object {
+trait DeploymentConfig extends StObject {
   
   /**
     * The percentage of robots receiving the deployment at the same time.
@@ -36,42 +37,30 @@ object DeploymentConfig {
   }
   
   @scala.inline
-  implicit class DeploymentConfigOps[Self <: DeploymentConfig] (val x: Self) extends AnyVal {
+  implicit class DeploymentConfigMutableBuilder[Self <: DeploymentConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcurrentDeploymentPercentage(value: Percentage): Self = StObject.set(x, "concurrentDeploymentPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrentDeploymentPercentageUndefined: Self = StObject.set(x, "concurrentDeploymentPercentage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDownloadConditionFile(value: S3Object): Self = StObject.set(x, "downloadConditionFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrentDeploymentPercentage(value: Percentage): Self = this.set("concurrentDeploymentPercentage", value.asInstanceOf[js.Any])
+    def setDownloadConditionFileUndefined: Self = StObject.set(x, "downloadConditionFile", js.undefined)
     
     @scala.inline
-    def deleteConcurrentDeploymentPercentage: Self = this.set("concurrentDeploymentPercentage", js.undefined)
+    def setFailureThresholdPercentage(value: Percentage): Self = StObject.set(x, "failureThresholdPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadConditionFile(value: S3Object): Self = this.set("downloadConditionFile", value.asInstanceOf[js.Any])
+    def setFailureThresholdPercentageUndefined: Self = StObject.set(x, "failureThresholdPercentage", js.undefined)
     
     @scala.inline
-    def deleteDownloadConditionFile: Self = this.set("downloadConditionFile", js.undefined)
+    def setRobotDeploymentTimeoutInSeconds(value: DeploymentTimeout): Self = StObject.set(x, "robotDeploymentTimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureThresholdPercentage(value: Percentage): Self = this.set("failureThresholdPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureThresholdPercentage: Self = this.set("failureThresholdPercentage", js.undefined)
-    
-    @scala.inline
-    def setRobotDeploymentTimeoutInSeconds(value: DeploymentTimeout): Self = this.set("robotDeploymentTimeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRobotDeploymentTimeoutInSeconds: Self = this.set("robotDeploymentTimeoutInSeconds", js.undefined)
+    def setRobotDeploymentTimeoutInSecondsUndefined: Self = StObject.set(x, "robotDeploymentTimeoutInSeconds", js.undefined)
   }
 }

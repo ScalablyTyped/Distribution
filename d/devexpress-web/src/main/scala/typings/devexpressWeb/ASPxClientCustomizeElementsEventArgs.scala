@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,27 +31,15 @@ object ASPxClientCustomizeElementsEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientCustomizeElementsEventArgsOps[Self <: ASPxClientCustomizeElementsEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientCustomizeElementsEventArgsMutableBuilder[Self <: ASPxClientCustomizeElementsEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElements(value: js.Array[ASPxReportUIElement]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElementsVarargs(value: ASPxReportUIElement*): Self = StObject.set(x, "Elements", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setElementsVarargs(value: ASPxReportUIElement*): Self = this.set("Elements", js.Array(value :_*))
-    
-    @scala.inline
-    def setElements(value: js.Array[ASPxReportUIElement]): Self = this.set("Elements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetById(value: String => js.Array[ASPxReportUIElement]): Self = this.set("GetById", js.Any.fromFunction1(value))
+    def setGetById(value: String => js.Array[ASPxReportUIElement]): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
   }
 }

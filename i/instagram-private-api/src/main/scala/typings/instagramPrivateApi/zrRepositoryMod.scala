@@ -1,17 +1,19 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/zr.repository", JSImport.Namespace)
-@js.native
-object zrRepositoryMod extends js.Object {
+object zrRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/zr.repository", "ZrRepository")
   @js.native
-  class ZrRepository () extends Repository {
+  class ZrRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def tokenResult(): js.Promise[IgResponse[_]] = js.native
   }

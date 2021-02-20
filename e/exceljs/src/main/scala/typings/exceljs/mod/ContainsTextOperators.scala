@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.containsErrors
   - typings.exceljs.exceljsStrings.notContainsErrors
 */
-trait ContainsTextOperators extends js.Object
+trait ContainsTextOperators extends StObject
 object ContainsTextOperators {
   
   @scala.inline

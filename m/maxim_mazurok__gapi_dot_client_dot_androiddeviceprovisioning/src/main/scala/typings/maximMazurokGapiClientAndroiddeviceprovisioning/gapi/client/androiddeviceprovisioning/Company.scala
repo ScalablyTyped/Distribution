@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Company extends js.Object {
+trait Company extends StObject {
   
   /** Optional. Email address of customer's users in the admin role. Each email address must be associated with a Google Account. */
   var adminEmails: js.UndefOr[js.Array[String]] = js.native
@@ -40,60 +41,48 @@ object Company {
   }
   
   @scala.inline
-  implicit class CompanyOps[Self <: Company] (val x: Self) extends AnyVal {
+  implicit class CompanyMutableBuilder[Self <: Company] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "adminEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdminEmailsUndefined: Self = StObject.set(x, "adminEmails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "adminEmails", js.Array(value :_*))
     
     @scala.inline
-    def setAdminEmailsVarargs(value: String*): Self = this.set("adminEmails", js.Array(value :_*))
+    def setCompanyId(value: String): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminEmails(value: js.Array[String]): Self = this.set("adminEmails", value.asInstanceOf[js.Any])
+    def setCompanyIdUndefined: Self = StObject.set(x, "companyId", js.undefined)
     
     @scala.inline
-    def deleteAdminEmails: Self = this.set("adminEmails", js.undefined)
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyId(value: String): Self = this.set("companyId", value.asInstanceOf[js.Any])
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def deleteCompanyId: Self = this.set("companyId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setOwnerEmails(value: js.Array[String]): Self = StObject.set(x, "ownerEmails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerEmailsUndefined: Self = StObject.set(x, "ownerEmails", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOwnerEmailsVarargs(value: String*): Self = StObject.set(x, "ownerEmails", js.Array(value :_*))
     
     @scala.inline
-    def setOwnerEmailsVarargs(value: String*): Self = this.set("ownerEmails", js.Array(value :_*))
+    def setTermsStatus(value: String): Self = StObject.set(x, "termsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerEmails(value: js.Array[String]): Self = this.set("ownerEmails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerEmails: Self = this.set("ownerEmails", js.undefined)
-    
-    @scala.inline
-    def setTermsStatus(value: String): Self = this.set("termsStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTermsStatus: Self = this.set("termsStatus", js.undefined)
+    def setTermsStatusUndefined: Self = StObject.set(x, "termsStatus", js.undefined)
   }
 }

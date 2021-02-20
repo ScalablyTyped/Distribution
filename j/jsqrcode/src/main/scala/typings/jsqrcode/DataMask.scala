@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataMask extends js.Object {
+trait DataMask extends StObject {
   
   def isMasked(i: Double, j: Double): Boolean = js.native
   
@@ -20,24 +21,12 @@ object DataMask {
   }
   
   @scala.inline
-  implicit class DataMaskOps[Self <: DataMask] (val x: Self) extends AnyVal {
+  implicit class DataMaskMutableBuilder[Self <: DataMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsMasked(value: (Double, Double) => Boolean): Self = StObject.set(x, "isMasked", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsMasked(value: (Double, Double) => Boolean): Self = this.set("isMasked", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnmaskBitMatrix(value: (js.Array[Double], Double) => Unit): Self = this.set("unmaskBitMatrix", js.Any.fromFunction2(value))
+    def setUnmaskBitMatrix(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "unmaskBitMatrix", js.Any.fromFunction2(value))
   }
 }

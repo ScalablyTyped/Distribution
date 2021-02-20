@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocumentSyncOptions extends js.Object {
+trait TextDocumentSyncOptions extends StObject {
   
   /**
     * Change notifications are sent to the server. See TextDocumentSyncKind.None, TextDocumentSyncKind.Full
@@ -46,48 +47,36 @@ object TextDocumentSyncOptions {
   }
   
   @scala.inline
-  implicit class TextDocumentSyncOptionsOps[Self <: TextDocumentSyncOptions] (val x: Self) extends AnyVal {
+  implicit class TextDocumentSyncOptionsMutableBuilder[Self <: TextDocumentSyncOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: TextDocumentSyncKind): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenClose(value: Boolean): Self = StObject.set(x, "openClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: TextDocumentSyncKind): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setOpenCloseUndefined: Self = StObject.set(x, "openClose", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setSave(value: SaveOptions): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenClose(value: Boolean): Self = this.set("openClose", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteOpenClose: Self = this.set("openClose", js.undefined)
+    def setWillSave(value: Boolean): Self = StObject.set(x, "willSave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: SaveOptions): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setWillSaveUndefined: Self = StObject.set(x, "willSave", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setWillSaveWaitUntil(value: Boolean): Self = StObject.set(x, "willSaveWaitUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWillSave(value: Boolean): Self = this.set("willSave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWillSave: Self = this.set("willSave", js.undefined)
-    
-    @scala.inline
-    def setWillSaveWaitUntil(value: Boolean): Self = this.set("willSaveWaitUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWillSaveWaitUntil: Self = this.set("willSaveWaitUntil", js.undefined)
+    def setWillSaveWaitUntilUndefined: Self = StObject.set(x, "willSaveWaitUntil", js.undefined)
   }
 }

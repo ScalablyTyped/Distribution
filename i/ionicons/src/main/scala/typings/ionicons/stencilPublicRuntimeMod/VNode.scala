@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VNode extends js.Object {
+trait VNode extends StObject {
   
   @JSName("$attrs$")
   var DollarattrsDollar: js.UndefOr[js.Any] = js.native
@@ -51,54 +52,42 @@ object VNode {
   }
   
   @scala.inline
-  implicit class VNodeOps[Self <: VNode] (val x: Self) extends AnyVal {
+  implicit class VNodeMutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDollarattrsDollar(value: js.Any): Self = StObject.set(x, "$attrs$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDollarattrsDollarUndefined: Self = StObject.set(x, "$attrs$", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDollarchildrenDollar(value: js.Array[VNode]): Self = StObject.set(x, "$children$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollarchildrenDollarVarargs(value: VNode*): Self = this.set("$children$", js.Array(value :_*))
+    def setDollarchildrenDollarVarargs(value: VNode*): Self = StObject.set(x, "$children$", js.Array(value :_*))
     
     @scala.inline
-    def setDollarchildrenDollar(value: js.Array[VNode]): Self = this.set("$children$", value.asInstanceOf[js.Any])
+    def setDollarelmDollar(value: js.Any): Self = StObject.set(x, "$elm$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollarelmDollar(value: js.Any): Self = this.set("$elm$", value.asInstanceOf[js.Any])
+    def setDollarflagsDollar(value: Double): Self = StObject.set(x, "$flags$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollarflagsDollar(value: Double): Self = this.set("$flags$", value.asInstanceOf[js.Any])
+    def setDollarkeyDollar(value: String | Double): Self = StObject.set(x, "$key$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollartagDollar(value: String | Double | js.Function): Self = this.set("$tag$", value.asInstanceOf[js.Any])
+    def setDollarkeyDollarUndefined: Self = StObject.set(x, "$key$", js.undefined)
     
     @scala.inline
-    def setDollartextDollar(value: String): Self = this.set("$text$", value.asInstanceOf[js.Any])
+    def setDollarnameDollar(value: String): Self = StObject.set(x, "$name$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollarattrsDollar(value: js.Any): Self = this.set("$attrs$", value.asInstanceOf[js.Any])
+    def setDollarnameDollarUndefined: Self = StObject.set(x, "$name$", js.undefined)
     
     @scala.inline
-    def deleteDollarattrsDollar: Self = this.set("$attrs$", js.undefined)
+    def setDollartagDollar(value: String | Double | js.Function): Self = StObject.set(x, "$tag$", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDollarkeyDollar(value: String | Double): Self = this.set("$key$", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDollarkeyDollar: Self = this.set("$key$", js.undefined)
-    
-    @scala.inline
-    def setDollarnameDollar(value: String): Self = this.set("$name$", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDollarnameDollar: Self = this.set("$name$", js.undefined)
+    def setDollartextDollar(value: String): Self = StObject.set(x, "$text$", value.asInstanceOf[js.Any])
   }
 }

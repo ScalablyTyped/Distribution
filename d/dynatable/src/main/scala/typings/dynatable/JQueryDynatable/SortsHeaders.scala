@@ -3,12 +3,13 @@ package typings.dynatable.JQueryDynatable
 import typings.dynatable.JQuery
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortsHeaders extends js.Object {
+trait SortsHeaders extends StObject {
   
   /**
     * Inject the arrow down inside the $link
@@ -123,60 +124,48 @@ object SortsHeaders {
   }
   
   @scala.inline
-  implicit class SortsHeadersOps[Self <: SortsHeaders] (val x: Self) extends AnyVal {
+  implicit class SortsHeadersMutableBuilder[Self <: SortsHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendArrowDown(value: JQuery => Unit): Self = StObject.set(x, "appendArrowDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendArrowUp(value: JQuery => Unit): Self = StObject.set(x, "appendArrowUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppendArrowDown(value: JQuery => Unit): Self = this.set("appendArrowDown", js.Any.fromFunction1(value))
+    def setAttachOne(value: Element => Unit): Self = StObject.set(x, "attachOne", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendArrowUp(value: JQuery => Unit): Self = this.set("appendArrowUp", js.Any.fromFunction1(value))
+    def setCreate(value: Element => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAttach(value: () => Unit): Self = this.set("attach", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttachOne(value: Element => Unit): Self = this.set("attachOne", js.Any.fromFunction1(value))
+    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreate(value: Element => JQuery): Self = this.set("create", js.Any.fromFunction1(value))
+    def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setRemoveAllArrows(value: () => Unit): Self = StObject.set(x, "removeAllArrows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = this.set("initOnLoad", js.Any.fromFunction0(value))
+    def setRemoveArrow(value: JQuery => Unit): Self = StObject.set(x, "removeArrow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAll(value: () => Unit): Self = this.set("removeAll", js.Any.fromFunction0(value))
+    def setRemoveOne(value: Element => Unit): Self = StObject.set(x, "removeOne", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAllArrows(value: () => Unit): Self = this.set("removeAllArrows", js.Any.fromFunction0(value))
+    def setSortedByColumn(value: (JQuery, Column) => Boolean): Self = StObject.set(x, "sortedByColumn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveArrow(value: JQuery => Unit): Self = this.set("removeArrow", js.Any.fromFunction1(value))
+    def setSortedByColumnValue(value: Column => Double): Self = StObject.set(x, "sortedByColumnValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveOne(value: Element => Unit): Self = this.set("removeOne", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSortedByColumn(value: (JQuery, Column) => Boolean): Self = this.set("sortedByColumn", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSortedByColumnValue(value: Column => Double): Self = this.set("sortedByColumnValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleSort(value: (Event, JQuery, Column) => Unit): Self = this.set("toggleSort", js.Any.fromFunction3(value))
+    def setToggleSort(value: (Event, JQuery, Column) => Unit): Self = StObject.set(x, "toggleSort", js.Any.fromFunction3(value))
   }
 }

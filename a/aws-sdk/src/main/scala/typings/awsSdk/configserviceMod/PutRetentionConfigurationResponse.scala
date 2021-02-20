@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRetentionConfigurationResponse extends js.Object {
+trait PutRetentionConfigurationResponse extends StObject {
   
   /**
     * Returns a retention configuration object.
@@ -21,24 +22,12 @@ object PutRetentionConfigurationResponse {
   }
   
   @scala.inline
-  implicit class PutRetentionConfigurationResponseOps[Self <: PutRetentionConfigurationResponse] (val x: Self) extends AnyVal {
+  implicit class PutRetentionConfigurationResponseMutableBuilder[Self <: PutRetentionConfigurationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetentionConfiguration(value: RetentionConfiguration): Self = StObject.set(x, "RetentionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRetentionConfiguration(value: RetentionConfiguration): Self = this.set("RetentionConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionConfiguration: Self = this.set("RetentionConfiguration", js.undefined)
+    def setRetentionConfigurationUndefined: Self = StObject.set(x, "RetentionConfiguration", js.undefined)
   }
 }

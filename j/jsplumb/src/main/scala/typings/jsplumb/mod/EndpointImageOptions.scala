@@ -1,11 +1,12 @@
 package typings.jsplumb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointImageOptions extends js.Object {
+trait EndpointImageOptions extends StObject {
   
   var cssClass: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object EndpointImageOptions {
   }
   
   @scala.inline
-  implicit class EndpointImageOptionsOps[Self <: EndpointImageOptions] (val x: Self) extends AnyVal {
+  implicit class EndpointImageOptionsMutableBuilder[Self <: EndpointImageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoverClass(value: String): Self = StObject.set(x, "hoverClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setHoverClassUndefined: Self = StObject.set(x, "hoverClass", js.undefined)
     
     @scala.inline
-    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCssClass: Self = this.set("cssClass", js.undefined)
-    
-    @scala.inline
-    def setHoverClass(value: String): Self = this.set("hoverClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoverClass: Self = this.set("hoverClass", js.undefined)
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

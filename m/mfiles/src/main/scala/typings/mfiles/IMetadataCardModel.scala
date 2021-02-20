@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMetadataCardModel extends js.Object {
+trait IMetadataCardModel extends StObject {
   
   def AddProperty(propertyDefId: Double): Unit = js.native
   def AddProperty(propertyDefId: MFBuiltInPropertyDef): Unit = js.native

@@ -1,5 +1,7 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.bluebird.mod.Resolvable
 import typings.lodash.mod.Collection
 import typings.lodash.mod.Function
 import typings.lodash.mod.List
@@ -7,16 +9,28 @@ import typings.lodash.mod.Object
 import typings.lodash.mod.Primitive
 import typings.lodash.mod.String
 import typings.sequelize.anon.FnCall
-import typings.sequelize.anon.Instantiable
+import typings.sequelize.anon.TypeofPromise
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Utils extends js.Object {
+trait Utils extends StObject {
   
-  var Promise: Instantiable = js.native
+  var Promise: TypeofPromise with (Instantiable1[
+    /* callback */ js.Function3[
+      /* resolve */ js.Function1[
+        /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
+        Unit
+      ], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 
+      /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[Unit], Unit]], 
+      Unit
+    ], 
+    typings.bluebird.mod.^[js.Object]
+  ]) = js.native
   
   @JSName("_")
   def _underscore(): String = js.native

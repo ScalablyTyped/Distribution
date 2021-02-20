@@ -4,6 +4,7 @@ import typings.std.SVGElement
 import typings.std.SVGRect
 import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

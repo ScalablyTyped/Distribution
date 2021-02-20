@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBucketIntelligentTieringConfigurationOutput extends js.Object {
+trait GetBucketIntelligentTieringConfigurationOutput extends StObject {
   
   /**
     * Container for S3 Intelligent-Tiering configuration.
@@ -21,24 +22,12 @@ object GetBucketIntelligentTieringConfigurationOutput {
   }
   
   @scala.inline
-  implicit class GetBucketIntelligentTieringConfigurationOutputOps[Self <: GetBucketIntelligentTieringConfigurationOutput] (val x: Self) extends AnyVal {
+  implicit class GetBucketIntelligentTieringConfigurationOutputMutableBuilder[Self <: GetBucketIntelligentTieringConfigurationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntelligentTieringConfiguration(value: IntelligentTieringConfiguration): Self = StObject.set(x, "IntelligentTieringConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIntelligentTieringConfiguration(value: IntelligentTieringConfiguration): Self = this.set("IntelligentTieringConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntelligentTieringConfiguration: Self = this.set("IntelligentTieringConfiguration", js.undefined)
+    def setIntelligentTieringConfigurationUndefined: Self = StObject.set(x, "IntelligentTieringConfiguration", js.undefined)
   }
 }

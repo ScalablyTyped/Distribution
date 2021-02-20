@@ -3,16 +3,16 @@ package typings.agGrid
 import org.scalablytyped.runtime.StringDictionary
 import typings.agGrid.colDefMod.CellClassParams
 import typings.agGrid.colDefMod.ColDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/styling/stylingService", JSImport.Namespace)
-@js.native
-object stylingServiceMod extends js.Object {
+object stylingServiceMod {
   
+  @JSImport("ag-grid/dist/lib/styling/stylingService", "StylingService")
   @js.native
-  class StylingService () extends js.Object {
+  class StylingService () extends StObject {
     
     var expressionService: js.Any = js.native
     

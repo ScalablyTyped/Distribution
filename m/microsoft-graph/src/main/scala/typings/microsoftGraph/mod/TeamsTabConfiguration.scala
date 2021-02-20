@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamsTabConfiguration extends js.Object {
+trait TeamsTabConfiguration extends StObject {
   
   // Url used for rendering tab contents in Teams. Required.
   var contentUrl: js.UndefOr[NullableOption[String]] = js.native
@@ -28,54 +29,42 @@ object TeamsTabConfiguration {
   }
   
   @scala.inline
-  implicit class TeamsTabConfigurationOps[Self <: TeamsTabConfiguration] (val x: Self) extends AnyVal {
+  implicit class TeamsTabConfigurationMutableBuilder[Self <: TeamsTabConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def setContentUrl(value: NullableOption[String]): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setEntityId(value: NullableOption[String]): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setEntityIdNull: Self = StObject.set(x, "entityId", null)
     
     @scala.inline
-    def setContentUrlNull: Self = this.set("contentUrl", null)
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def setEntityId(value: NullableOption[String]): Self = this.set("entityId", value.asInstanceOf[js.Any])
+    def setRemoveUrl(value: NullableOption[String]): Self = StObject.set(x, "removeUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    def setRemoveUrlNull: Self = StObject.set(x, "removeUrl", null)
     
     @scala.inline
-    def setEntityIdNull: Self = this.set("entityId", null)
+    def setRemoveUrlUndefined: Self = StObject.set(x, "removeUrl", js.undefined)
     
     @scala.inline
-    def setRemoveUrl(value: NullableOption[String]): Self = this.set("removeUrl", value.asInstanceOf[js.Any])
+    def setWebsiteUrl(value: NullableOption[String]): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRemoveUrl: Self = this.set("removeUrl", js.undefined)
+    def setWebsiteUrlNull: Self = StObject.set(x, "websiteUrl", null)
     
     @scala.inline
-    def setRemoveUrlNull: Self = this.set("removeUrl", null)
-    
-    @scala.inline
-    def setWebsiteUrl(value: NullableOption[String]): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
-    
-    @scala.inline
-    def setWebsiteUrlNull: Self = this.set("websiteUrl", null)
+    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

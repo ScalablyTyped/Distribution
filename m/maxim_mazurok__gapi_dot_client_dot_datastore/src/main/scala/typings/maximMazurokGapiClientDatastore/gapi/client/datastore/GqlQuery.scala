@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GqlQuery extends js.Object {
+trait GqlQuery extends StObject {
   
   /**
     * When false, the query string must not contain any literals and instead must bind all values. For example, `SELECT * FROM Kind WHERE a = 'string literal'` is not allowed, while
@@ -42,49 +43,37 @@ object GqlQuery {
   }
   
   @scala.inline
-  implicit class GqlQueryOps[Self <: GqlQuery] (val x: Self) extends AnyVal {
+  implicit class GqlQueryMutableBuilder[Self <: GqlQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowLiterals(value: Boolean): Self = StObject.set(x, "allowLiterals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowLiterals(value: Boolean): Self = this.set("allowLiterals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowLiterals: Self = this.set("allowLiterals", js.undefined)
+    def setAllowLiteralsUndefined: Self = StObject.set(x, "allowLiterals", js.undefined)
     
     @scala.inline
     def setNamedBindings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
       */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery with TopLevel[js.Any]
-    ): Self = this.set("namedBindings", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "namedBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamedBindings: Self = this.set("namedBindings", js.undefined)
+    def setNamedBindingsUndefined: Self = StObject.set(x, "namedBindings", js.undefined)
     
     @scala.inline
-    def setPositionalBindingsVarargs(value: GqlQueryParameter*): Self = this.set("positionalBindings", js.Array(value :_*))
+    def setPositionalBindings(value: js.Array[GqlQueryParameter]): Self = StObject.set(x, "positionalBindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionalBindings(value: js.Array[GqlQueryParameter]): Self = this.set("positionalBindings", value.asInstanceOf[js.Any])
+    def setPositionalBindingsUndefined: Self = StObject.set(x, "positionalBindings", js.undefined)
     
     @scala.inline
-    def deletePositionalBindings: Self = this.set("positionalBindings", js.undefined)
+    def setPositionalBindingsVarargs(value: GqlQueryParameter*): Self = StObject.set(x, "positionalBindings", js.Array(value :_*))
     
     @scala.inline
-    def setQueryString(value: String): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryString: Self = this.set("queryString", js.undefined)
+    def setQueryStringUndefined: Self = StObject.set(x, "queryString", js.undefined)
   }
 }

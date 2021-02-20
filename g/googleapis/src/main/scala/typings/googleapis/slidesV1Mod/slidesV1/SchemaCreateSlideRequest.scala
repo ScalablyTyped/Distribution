@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new slide.
   */
 @js.native
-trait SchemaCreateSlideRequest extends js.Object {
+trait SchemaCreateSlideRequest extends StObject {
   
   /**
     * The optional zero-based index indicating where to insert the slides.  If
@@ -55,45 +56,33 @@ object SchemaCreateSlideRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateSlideRequestOps[Self <: SchemaCreateSlideRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateSlideRequestMutableBuilder[Self <: SchemaCreateSlideRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertionIndex(value: Double): Self = this.set("insertionIndex", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteInsertionIndex: Self = this.set("insertionIndex", js.undefined)
+    def setPlaceholderIdMappings(value: js.Array[SchemaLayoutPlaceholderIdMapping]): Self = StObject.set(x, "placeholderIdMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    def setPlaceholderIdMappingsUndefined: Self = StObject.set(x, "placeholderIdMappings", js.undefined)
     
     @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    def setPlaceholderIdMappingsVarargs(value: SchemaLayoutPlaceholderIdMapping*): Self = StObject.set(x, "placeholderIdMappings", js.Array(value :_*))
     
     @scala.inline
-    def setPlaceholderIdMappingsVarargs(value: SchemaLayoutPlaceholderIdMapping*): Self = this.set("placeholderIdMappings", js.Array(value :_*))
+    def setSlideLayoutReference(value: SchemaLayoutReference): Self = StObject.set(x, "slideLayoutReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderIdMappings(value: js.Array[SchemaLayoutPlaceholderIdMapping]): Self = this.set("placeholderIdMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholderIdMappings: Self = this.set("placeholderIdMappings", js.undefined)
-    
-    @scala.inline
-    def setSlideLayoutReference(value: SchemaLayoutReference): Self = this.set("slideLayoutReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideLayoutReference: Self = this.set("slideLayoutReference", js.undefined)
+    def setSlideLayoutReferenceUndefined: Self = StObject.set(x, "slideLayoutReference", js.undefined)
   }
 }

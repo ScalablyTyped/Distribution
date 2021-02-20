@@ -4,6 +4,7 @@ import typings.titanium.Titanium.Proxy
 import typings.titanium.Titanium.UI.View
 import typings.titanium.titaniumStrings.peek
 import typings.titanium.titaniumStrings.pop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

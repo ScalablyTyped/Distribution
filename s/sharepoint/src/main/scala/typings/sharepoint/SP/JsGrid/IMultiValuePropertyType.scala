@@ -2,6 +2,7 @@ package typings.sharepoint.SP.JsGrid
 
 import typings.sharepoint.anon.BDelayInit
 import typings.sharepoint.anon.DataValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,39 +43,27 @@ object IMultiValuePropertyType {
   }
   
   @scala.inline
-  implicit class IMultiValuePropertyTypeOps[Self <: IMultiValuePropertyType] (val x: Self) extends AnyVal {
+  implicit class IMultiValuePropertyTypeMutableBuilder[Self <: IMultiValuePropertyType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBMultiValue(value: Boolean): Self = StObject.set(x, "bMultiValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSerializableMultiValuePropType(value: () => BDelayInit): Self = StObject.set(x, "GetSerializableMultiValuePropType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitSingleValuePropType(value: () => Unit): Self = StObject.set(x, "InitSingleValuePropType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSerializableMultiValuePropType(value: () => BDelayInit): Self = this.set("GetSerializableMultiValuePropType", js.Any.fromFunction0(value))
+    def setLocStrArrayToLocStr(value: js.Array[String] => String): Self = StObject.set(x, "LocStrArrayToLocStr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitSingleValuePropType(value: () => Unit): Self = this.set("InitSingleValuePropType", js.Any.fromFunction0(value))
+    def setLocStrToLocStrArray(value: String => js.Array[String]): Self = StObject.set(x, "LocStrToLocStrArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLocStrArrayToLocStr(value: js.Array[String] => String): Self = this.set("LocStrArrayToLocStr", js.Any.fromFunction1(value))
+    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocStrToLocStrArray(value: String => js.Array[String]): Self = this.set("LocStrToLocStrArray", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setBMultiValue(value: Boolean): Self = this.set("bMultiValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleValuePropType(value: String): Self = this.set("singleValuePropType", value.asInstanceOf[js.Any])
+    def setSingleValuePropType(value: String): Self = StObject.set(x, "singleValuePropType", value.asInstanceOf[js.Any])
   }
 }

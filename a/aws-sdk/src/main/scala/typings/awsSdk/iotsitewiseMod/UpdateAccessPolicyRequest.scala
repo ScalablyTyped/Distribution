@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAccessPolicyRequest extends js.Object {
+trait UpdateAccessPolicyRequest extends StObject {
   
   /**
     * The ID of the access policy.
@@ -46,36 +47,24 @@ object UpdateAccessPolicyRequest {
   }
   
   @scala.inline
-  implicit class UpdateAccessPolicyRequestOps[Self <: UpdateAccessPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAccessPolicyRequestMutableBuilder[Self <: UpdateAccessPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyId(value: ID): Self = this.set("accessPolicyId", value.asInstanceOf[js.Any])
+    def setAccessPolicyResource(value: Resource): Self = StObject.set(x, "accessPolicyResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyIdentity(value: Identity): Self = this.set("accessPolicyIdentity", value.asInstanceOf[js.Any])
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessPolicyPermission(value: Permission): Self = this.set("accessPolicyPermission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessPolicyResource(value: Resource): Self = this.set("accessPolicyResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

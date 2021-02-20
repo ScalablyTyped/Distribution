@@ -4,6 +4,7 @@ import typings.cesium.anon.AccessToken
 import typings.cesium.anon.Endpoint
 import typings.cesium.anon.Headers
 import typings.cesium.anon.PreserveQueryParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,11 +35,13 @@ class IonResource protected () extends Resource {
   
   def setTemplateValues(params: js.Any): Unit = js.native
 }
-/* static members */
-@JSImport("cesium", "IonResource")
-@js.native
-object IonResource extends js.Object {
+object IonResource {
   
+  /* static member */
+  @JSImport("cesium", "IonResource.fromAssetId")
+  @js.native
   def fromAssetId(assetId: String): js.Promise[IonResource] = js.native
+  @JSImport("cesium", "IonResource.fromAssetId")
+  @js.native
   def fromAssetId(assetId: String, options: AccessToken): js.Promise[IonResource] = js.native
 }

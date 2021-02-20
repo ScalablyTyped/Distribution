@@ -1,12 +1,13 @@
 package typings.awsSdkClientLambdaNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/model/CreateFunction", JSImport.Namespace)
-@js.native
-object createFunctionMod extends js.Object {
+object createFunctionMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/model/CreateFunction", "CreateFunction")
+  @js.native
   val CreateFunction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

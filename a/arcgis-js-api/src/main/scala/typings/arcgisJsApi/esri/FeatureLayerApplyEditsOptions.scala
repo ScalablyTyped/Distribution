@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object FeatureLayerApplyEditsOptions {
   }
   
   @scala.inline
-  implicit class FeatureLayerApplyEditsOptionsOps[Self <: FeatureLayerApplyEditsOptions] (val x: Self) extends AnyVal {
+  implicit class FeatureLayerApplyEditsOptionsMutableBuilder[Self <: FeatureLayerApplyEditsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalIdUsed(value: Boolean): Self = StObject.set(x, "globalIdUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGdbVersion(value: String): Self = this.set("gdbVersion", value.asInstanceOf[js.Any])
+    def setGlobalIdUsedUndefined: Self = StObject.set(x, "globalIdUsed", js.undefined)
     
     @scala.inline
-    def deleteGdbVersion: Self = this.set("gdbVersion", js.undefined)
+    def setRollbackOnFailureEnabled(value: Boolean): Self = StObject.set(x, "rollbackOnFailureEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalIdUsed(value: Boolean): Self = this.set("globalIdUsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalIdUsed: Self = this.set("globalIdUsed", js.undefined)
-    
-    @scala.inline
-    def setRollbackOnFailureEnabled(value: Boolean): Self = this.set("rollbackOnFailureEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollbackOnFailureEnabled: Self = this.set("rollbackOnFailureEnabled", js.undefined)
+    def setRollbackOnFailureEnabledUndefined: Self = StObject.set(x, "rollbackOnFailureEnabled", js.undefined)
   }
 }

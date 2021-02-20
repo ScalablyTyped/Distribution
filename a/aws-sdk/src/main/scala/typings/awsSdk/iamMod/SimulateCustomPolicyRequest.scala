@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimulateCustomPolicyRequest extends js.Object {
+trait SimulateCustomPolicyRequest extends StObject {
   
   /**
     * A list of names of API operations to evaluate in the simulation. Each operation is evaluated against each resource. Each operation must include the service identifier, such as iam:CreateUser. This operation does not support using wildcards (*) in an action name.
@@ -71,93 +72,81 @@ object SimulateCustomPolicyRequest {
   }
   
   @scala.inline
-  implicit class SimulateCustomPolicyRequestOps[Self <: SimulateCustomPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class SimulateCustomPolicyRequestMutableBuilder[Self <: SimulateCustomPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionNames(value: ActionNameListType): Self = StObject.set(x, "ActionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionNamesVarargs(value: ActionNameType*): Self = StObject.set(x, "ActionNames", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallerArn(value: ResourceNameType): Self = StObject.set(x, "CallerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionNamesVarargs(value: ActionNameType*): Self = this.set("ActionNames", js.Array(value :_*))
+    def setCallerArnUndefined: Self = StObject.set(x, "CallerArn", js.undefined)
     
     @scala.inline
-    def setActionNames(value: ActionNameListType): Self = this.set("ActionNames", value.asInstanceOf[js.Any])
+    def setContextEntries(value: ContextEntryListType): Self = StObject.set(x, "ContextEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyInputListVarargs(value: policyDocumentType*): Self = this.set("PolicyInputList", js.Array(value :_*))
+    def setContextEntriesUndefined: Self = StObject.set(x, "ContextEntries", js.undefined)
     
     @scala.inline
-    def setPolicyInputList(value: SimulationPolicyListType): Self = this.set("PolicyInputList", value.asInstanceOf[js.Any])
+    def setContextEntriesVarargs(value: ContextEntry*): Self = StObject.set(x, "ContextEntries", js.Array(value :_*))
     
     @scala.inline
-    def setCallerArn(value: ResourceNameType): Self = this.set("CallerArn", value.asInstanceOf[js.Any])
+    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallerArn: Self = this.set("CallerArn", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setContextEntriesVarargs(value: ContextEntry*): Self = this.set("ContextEntries", js.Array(value :_*))
+    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextEntries(value: ContextEntryListType): Self = this.set("ContextEntries", value.asInstanceOf[js.Any])
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def deleteContextEntries: Self = this.set("ContextEntries", js.undefined)
+    def setPermissionsBoundaryPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PermissionsBoundaryPolicyInputList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setPermissionsBoundaryPolicyInputListUndefined: Self = StObject.set(x, "PermissionsBoundaryPolicyInputList", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setPermissionsBoundaryPolicyInputListVarargs(value: policyDocumentType*): Self = StObject.set(x, "PermissionsBoundaryPolicyInputList", js.Array(value :_*))
     
     @scala.inline
-    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PolicyInputList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setPolicyInputListVarargs(value: policyDocumentType*): Self = StObject.set(x, "PolicyInputList", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionsBoundaryPolicyInputListVarargs(value: policyDocumentType*): Self = this.set("PermissionsBoundaryPolicyInputList", js.Array(value :_*))
+    def setResourceArns(value: ResourceNameListType): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionsBoundaryPolicyInputList(value: SimulationPolicyListType): Self = this.set("PermissionsBoundaryPolicyInputList", value.asInstanceOf[js.Any])
+    def setResourceArnsUndefined: Self = StObject.set(x, "ResourceArns", js.undefined)
     
     @scala.inline
-    def deletePermissionsBoundaryPolicyInputList: Self = this.set("PermissionsBoundaryPolicyInputList", js.undefined)
+    def setResourceArnsVarargs(value: ResourceNameType*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
     
     @scala.inline
-    def setResourceArnsVarargs(value: ResourceNameType*): Self = this.set("ResourceArns", js.Array(value :_*))
+    def setResourceHandlingOption(value: ResourceHandlingOptionType): Self = StObject.set(x, "ResourceHandlingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceArns(value: ResourceNameListType): Self = this.set("ResourceArns", value.asInstanceOf[js.Any])
+    def setResourceHandlingOptionUndefined: Self = StObject.set(x, "ResourceHandlingOption", js.undefined)
     
     @scala.inline
-    def deleteResourceArns: Self = this.set("ResourceArns", js.undefined)
+    def setResourceOwner(value: ResourceNameType): Self = StObject.set(x, "ResourceOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceHandlingOption(value: ResourceHandlingOptionType): Self = this.set("ResourceHandlingOption", value.asInstanceOf[js.Any])
+    def setResourceOwnerUndefined: Self = StObject.set(x, "ResourceOwner", js.undefined)
     
     @scala.inline
-    def deleteResourceHandlingOption: Self = this.set("ResourceHandlingOption", js.undefined)
+    def setResourcePolicy(value: policyDocumentType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceOwner(value: ResourceNameType): Self = this.set("ResourceOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceOwner: Self = this.set("ResourceOwner", js.undefined)
-    
-    @scala.inline
-    def setResourcePolicy(value: policyDocumentType): Self = this.set("ResourcePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcePolicy: Self = this.set("ResourcePolicy", js.undefined)
+    def setResourcePolicyUndefined: Self = StObject.set(x, "ResourcePolicy", js.undefined)
   }
 }

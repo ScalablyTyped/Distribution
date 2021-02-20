@@ -4,14 +4,14 @@ import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.pbrBaseSimpleMaterialMod.PBRBaseSimpleMaterial
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/PBR/pbrMetallicRoughnessMaterial", JSImport.Namespace)
-@js.native
-object pbrMetallicRoughnessMaterialMod extends js.Object {
+object pbrMetallicRoughnessMaterialMod {
   
+  @JSImport("babylonjs/Materials/PBR/pbrMetallicRoughnessMaterial", "PBRMetallicRoughnessMaterial")
   @js.native
   class PBRMetallicRoughnessMaterial protected () extends PBRBaseSimpleMaterial {
     /**
@@ -55,12 +55,13 @@ object pbrMetallicRoughnessMaterialMod extends js.Object {
     var roughness: Double = js.native
   }
   /* static members */
-  @js.native
-  object PBRMetallicRoughnessMaterial extends js.Object {
+  object PBRMetallicRoughnessMaterial {
     
     /**
       * Parses a JSON object correponding to the serialize function.
       */
+    @JSImport("babylonjs/Materials/PBR/pbrMetallicRoughnessMaterial", "PBRMetallicRoughnessMaterial.Parse")
+    @js.native
     def Parse(source: js.Any, scene: Scene, rootUrl: String): PBRMetallicRoughnessMaterial = js.native
   }
 }

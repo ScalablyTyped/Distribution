@@ -1,17 +1,11 @@
 package typings.reactNativeFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-firebase/database", JSImport.Namespace)
-@js.native
-object databaseMod extends js.Object {
-  
-  @js.native
-  trait ThenableReference[T]
-    extends js.Promise[T]
-       with typings.reactNativeFirebase.mod.RNFirebase.database.Reference
+object databaseMod {
   
   type DataSnapshot = typings.reactNativeFirebase.mod.RNFirebase.database.DataSnapshot
   
@@ -30,4 +24,9 @@ object databaseMod extends js.Object {
   type Reference = typings.reactNativeFirebase.mod.RNFirebase.database.Reference
   
   type RnReference = typings.reactNativeFirebase.mod.RNFirebase.database.RnReference
+  
+  @js.native
+  trait ThenableReference[T]
+    extends js.Promise[T]
+       with typings.reactNativeFirebase.mod.RNFirebase.database.Reference
 }

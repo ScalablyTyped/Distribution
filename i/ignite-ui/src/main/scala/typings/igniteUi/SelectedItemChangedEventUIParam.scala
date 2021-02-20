@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectedItemChangedEventUIParam extends js.Object {
+trait SelectedItemChangedEventUIParam extends StObject {
   
   /**
     * Used to get a reference to the current selected data item.
@@ -26,30 +27,18 @@ object SelectedItemChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class SelectedItemChangedEventUIParamOps[Self <: SelectedItemChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class SelectedItemChangedEventUIParamMutableBuilder[Self <: SelectedItemChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewItem(value: js.Any): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewItemUndefined: Self = StObject.set(x, "newItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldItem(value: js.Any): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewItem(value: js.Any): Self = this.set("newItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewItem: Self = this.set("newItem", js.undefined)
-    
-    @scala.inline
-    def setOldItem(value: js.Any): Self = this.set("oldItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldItem: Self = this.set("oldItem", js.undefined)
+    def setOldItemUndefined: Self = StObject.set(x, "oldItem", js.undefined)
   }
 }

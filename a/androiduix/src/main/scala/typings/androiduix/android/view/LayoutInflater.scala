@@ -2,12 +2,13 @@ package typings.androiduix.android.view
 
 import typings.androiduix.android.content.Context
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutInflater extends js.Object {
+trait LayoutInflater extends StObject {
   
   def getContext(): Context = js.native
   

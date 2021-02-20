@@ -1,12 +1,13 @@
 package typings.arangodb.Foxx
 
 import typings.arangodb.arangodbBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentationRouterOptions extends js.Object {
+trait DocumentationRouterOptions extends StObject {
   
   def before(req: Request, res: Response): Unit | `false` = js.native
   
@@ -30,30 +31,18 @@ object DocumentationRouterOptions {
   }
   
   @scala.inline
-  implicit class DocumentationRouterOptionsOps[Self <: DocumentationRouterOptions] (val x: Self) extends AnyVal {
+  implicit class DocumentationRouterOptionsMutableBuilder[Self <: DocumentationRouterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBefore(value: (Request, Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexFile(value: String): Self = StObject.set(x, "indexFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: (Request, Response) => Unit | `false`): Self = this.set("before", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIndexFile(value: String): Self = this.set("indexFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMount(value: String): Self = this.set("mount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwaggerRoot(value: String): Self = this.set("swaggerRoot", value.asInstanceOf[js.Any])
+    def setSwaggerRoot(value: String): Self = StObject.set(x, "swaggerRoot", value.asInstanceOf[js.Any])
   }
 }

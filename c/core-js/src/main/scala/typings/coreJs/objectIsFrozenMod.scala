@@ -1,11 +1,14 @@
 package typings.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/object/is-frozen", JSImport.Namespace)
-@js.native
-object objectIsFrozenMod
-  extends TopLevel[js.Function1[/* target */ js.Any, Boolean]]
+object objectIsFrozenMod {
+  
+  /* was `typeof core.Object.isFrozen` */
+  @JSImport("core-js/library/fn/object/is-frozen", JSImport.Namespace)
+  @js.native
+  def apply(o: js.Any): Boolean = js.native
+}

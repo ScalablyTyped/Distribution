@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesDistribution extends js.Object {
+trait InstancesDistribution extends StObject {
   
   /**
     * Indicates how to allocate instance types to fulfill On-Demand capacity. The only valid value is prioritized, which is also the default value. This strategy uses the order of instance types in the overrides to define the launch priority of each instance type. The first instance type in the array is prioritized higher than the last. If all your On-Demand capacity cannot be fulfilled using your highest priority instance, then the Auto Scaling groups launches the remaining capacity using the second priority instance type, and so on.
@@ -46,54 +47,42 @@ object InstancesDistribution {
   }
   
   @scala.inline
-  implicit class InstancesDistributionOps[Self <: InstancesDistribution] (val x: Self) extends AnyVal {
+  implicit class InstancesDistributionMutableBuilder[Self <: InstancesDistribution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnDemandAllocationStrategy(value: XmlString): Self = StObject.set(x, "OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnDemandAllocationStrategyUndefined: Self = StObject.set(x, "OnDemandAllocationStrategy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnDemandBaseCapacity(value: OnDemandBaseCapacity): Self = StObject.set(x, "OnDemandBaseCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandAllocationStrategy(value: XmlString): Self = this.set("OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
+    def setOnDemandBaseCapacityUndefined: Self = StObject.set(x, "OnDemandBaseCapacity", js.undefined)
     
     @scala.inline
-    def deleteOnDemandAllocationStrategy: Self = this.set("OnDemandAllocationStrategy", js.undefined)
+    def setOnDemandPercentageAboveBaseCapacity(value: OnDemandPercentageAboveBaseCapacity): Self = StObject.set(x, "OnDemandPercentageAboveBaseCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandBaseCapacity(value: OnDemandBaseCapacity): Self = this.set("OnDemandBaseCapacity", value.asInstanceOf[js.Any])
+    def setOnDemandPercentageAboveBaseCapacityUndefined: Self = StObject.set(x, "OnDemandPercentageAboveBaseCapacity", js.undefined)
     
     @scala.inline
-    def deleteOnDemandBaseCapacity: Self = this.set("OnDemandBaseCapacity", js.undefined)
+    def setSpotAllocationStrategy(value: XmlString): Self = StObject.set(x, "SpotAllocationStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDemandPercentageAboveBaseCapacity(value: OnDemandPercentageAboveBaseCapacity): Self = this.set("OnDemandPercentageAboveBaseCapacity", value.asInstanceOf[js.Any])
+    def setSpotAllocationStrategyUndefined: Self = StObject.set(x, "SpotAllocationStrategy", js.undefined)
     
     @scala.inline
-    def deleteOnDemandPercentageAboveBaseCapacity: Self = this.set("OnDemandPercentageAboveBaseCapacity", js.undefined)
+    def setSpotInstancePools(value: SpotInstancePools): Self = StObject.set(x, "SpotInstancePools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotAllocationStrategy(value: XmlString): Self = this.set("SpotAllocationStrategy", value.asInstanceOf[js.Any])
+    def setSpotInstancePoolsUndefined: Self = StObject.set(x, "SpotInstancePools", js.undefined)
     
     @scala.inline
-    def deleteSpotAllocationStrategy: Self = this.set("SpotAllocationStrategy", js.undefined)
+    def setSpotMaxPrice(value: MixedInstanceSpotPrice): Self = StObject.set(x, "SpotMaxPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpotInstancePools(value: SpotInstancePools): Self = this.set("SpotInstancePools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotInstancePools: Self = this.set("SpotInstancePools", js.undefined)
-    
-    @scala.inline
-    def setSpotMaxPrice(value: MixedInstanceSpotPrice): Self = this.set("SpotMaxPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpotMaxPrice: Self = this.set("SpotMaxPrice", js.undefined)
+    def setSpotMaxPriceUndefined: Self = StObject.set(x, "SpotMaxPrice", js.undefined)
   }
 }

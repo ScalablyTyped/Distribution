@@ -1,12 +1,13 @@
 package typings.ssh2.mod
 
 import typings.ssh2Streams.mod.Header
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientInfo extends js.Object {
+trait ClientInfo extends StObject {
   
   /** Information about the client. */
   var header: Header = js.native
@@ -23,24 +24,12 @@ object ClientInfo {
   }
   
   @scala.inline
-  implicit class ClientInfoOps[Self <: ClientInfo] (val x: Self) extends AnyVal {
+  implicit class ClientInfoMutableBuilder[Self <: ClientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHeader(value: Header): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }
 }

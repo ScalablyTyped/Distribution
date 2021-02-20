@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListBreakTypesRequest")
 @js.native
-class ListBreakTypesRequest () extends js.Object {
+class ListBreakTypesRequest () extends StObject {
   
   /**
     * Pointer to the next page of Break Type results to fetch.

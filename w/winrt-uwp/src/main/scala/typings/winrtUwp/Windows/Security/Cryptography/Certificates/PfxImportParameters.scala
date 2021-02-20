@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents PFX import parameters. */
 @js.native
-trait PfxImportParameters extends js.Object {
+trait PfxImportParameters extends StObject {
   
   /** Gets or sets the container name prefix. */
   var containerNamePrefix: String = js.native
@@ -46,39 +47,27 @@ object PfxImportParameters {
   }
   
   @scala.inline
-  implicit class PfxImportParametersOps[Self <: PfxImportParameters] (val x: Self) extends AnyVal {
+  implicit class PfxImportParametersMutableBuilder[Self <: PfxImportParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerNamePrefix(value: String): Self = StObject.set(x, "containerNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportable(value: ExportOption): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerNamePrefix(value: String): Self = this.set("containerNamePrefix", value.asInstanceOf[js.Any])
+    def setInstallOptions(value: InstallOptions): Self = StObject.set(x, "installOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportable(value: ExportOption): Self = this.set("exportable", value.asInstanceOf[js.Any])
+    def setKeyProtectionLevel(value: KeyProtectionLevel): Self = StObject.set(x, "keyProtectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setKeyStorageProviderName(value: String): Self = StObject.set(x, "keyStorageProviderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallOptions(value: InstallOptions): Self = this.set("installOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyProtectionLevel(value: KeyProtectionLevel): Self = this.set("keyProtectionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyStorageProviderName(value: String): Self = this.set("keyStorageProviderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReaderName(value: String): Self = this.set("readerName", value.asInstanceOf[js.Any])
+    def setReaderName(value: String): Self = StObject.set(x, "readerName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.phaser.spine
 
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,60 +62,48 @@ object SharedAssetManager {
   }
   
   @scala.inline
-  implicit class SharedAssetManagerOps[Self <: SharedAssetManager] (val x: Self) extends AnyVal {
+  implicit class SharedAssetManagerMutableBuilder[Self <: SharedAssetManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientAssets(value: js.Any): Self = StObject.set(x, "clientAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet(value: (String, String) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClientAssets(value: js.Any): Self = this.set("clientAssets", value.asInstanceOf[js.Any])
+    def setGetErrors(value: () => Map[String]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setErrors(value: js.Any): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setHasErrors(value: () => Boolean): Self = StObject.set(x, "hasErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet(value: (String, String) => js.Any): Self = this.set("get", js.Any.fromFunction2(value))
+    def setIsLoadingComplete(value: String => Boolean): Self = StObject.set(x, "isLoadingComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetErrors(value: () => Map[String]): Self = this.set("getErrors", js.Any.fromFunction0(value))
+    def setLoadJson(value: (String, String) => Unit): Self = StObject.set(x, "loadJson", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasErrors(value: () => Boolean): Self = this.set("hasErrors", js.Any.fromFunction0(value))
+    def setLoadText(value: (String, String) => Unit): Self = StObject.set(x, "loadText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsLoadingComplete(value: String => Boolean): Self = this.set("isLoadingComplete", js.Any.fromFunction1(value))
+    def setLoadTexture(value: (String, js.Function1[/* image */ HTMLImageElement, _], String) => Unit): Self = StObject.set(x, "loadTexture", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLoadJson(value: (String, String) => Unit): Self = this.set("loadJson", js.Any.fromFunction2(value))
+    def setPathPrefix(value: js.Any): Self = StObject.set(x, "pathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadText(value: (String, String) => Unit): Self = this.set("loadText", js.Any.fromFunction2(value))
+    def setQueueAsset(value: js.Any): Self = StObject.set(x, "queueAsset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadTexture(value: (String, js.Function1[/* image */ HTMLImageElement, _], String) => Unit): Self = this.set("loadTexture", js.Any.fromFunction3(value))
+    def setQueuedAssets(value: js.Any): Self = StObject.set(x, "queuedAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathPrefix(value: js.Any): Self = this.set("pathPrefix", value.asInstanceOf[js.Any])
+    def setRawAssets(value: js.Any): Self = StObject.set(x, "rawAssets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueAsset(value: js.Any): Self = this.set("queueAsset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueuedAssets(value: js.Any): Self = this.set("queuedAssets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawAssets(value: js.Any): Self = this.set("rawAssets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateClientAssets(value: js.Any): Self = this.set("updateClientAssets", value.asInstanceOf[js.Any])
+    def setUpdateClientAssets(value: js.Any): Self = StObject.set(x, "updateClientAssets", value.asInstanceOf[js.Any])
   }
 }

@@ -2,16 +2,18 @@ package typings.wordpressCustomizeBrowser
 
 import typings.jquery.JQuery.Event
 import typings.wordpressCustomizeBrowser.controlMod.Control
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/customize-browser/MediaControl", JSImport.Namespace)
-@js.native
-object mediaControlMod extends js.Object {
+object mediaControlMod {
   
+  @JSImport("@wordpress/customize-browser/MediaControl", "MediaControl")
   @js.native
-  class MediaControl () extends Control {
+  class MediaControl protected () extends Control {
+    def this(applicator: js.Object, argsArray: js.Object) = this()
+    def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
     def cleanupPlayer(): Unit = js.native
     

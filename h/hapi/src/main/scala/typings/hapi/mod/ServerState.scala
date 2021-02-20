@@ -2,12 +2,13 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapi.mod.Util.Dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerState extends js.Object {
+trait ServerState extends StObject {
   
   /**
     * Same as calling [server.state()](https://github.com/hapijs/hapi/blob/master/API.md#server.state()).

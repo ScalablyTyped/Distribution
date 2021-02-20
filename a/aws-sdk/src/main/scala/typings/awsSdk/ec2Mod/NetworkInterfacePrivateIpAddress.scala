@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInterfacePrivateIpAddress extends js.Object {
+trait NetworkInterfacePrivateIpAddress extends StObject {
   
   /**
     * The association information for an Elastic IP address (IPv4) associated with the network interface.
@@ -36,42 +37,30 @@ object NetworkInterfacePrivateIpAddress {
   }
   
   @scala.inline
-  implicit class NetworkInterfacePrivateIpAddressOps[Self <: NetworkInterfacePrivateIpAddress] (val x: Self) extends AnyVal {
+  implicit class NetworkInterfacePrivateIpAddressMutableBuilder[Self <: NetworkInterfacePrivateIpAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociation(value: NetworkInterfaceAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationUndefined: Self = StObject.set(x, "Association", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrimary(value: Boolean): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociation(value: NetworkInterfaceAssociation): Self = this.set("Association", value.asInstanceOf[js.Any])
+    def setPrimaryUndefined: Self = StObject.set(x, "Primary", js.undefined)
     
     @scala.inline
-    def deleteAssociation: Self = this.set("Association", js.undefined)
+    def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("Primary", value.asInstanceOf[js.Any])
+    def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
     @scala.inline
-    def deletePrimary: Self = this.set("Primary", js.undefined)
+    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
-    
-    @scala.inline
-    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
   }
 }

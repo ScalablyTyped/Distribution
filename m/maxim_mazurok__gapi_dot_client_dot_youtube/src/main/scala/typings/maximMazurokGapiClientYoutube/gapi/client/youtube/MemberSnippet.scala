@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemberSnippet extends js.Object {
+trait MemberSnippet extends StObject {
   
   /** The id of the channel that's offering memberships. */
   var creatorChannelId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object MemberSnippet {
   }
   
   @scala.inline
-  implicit class MemberSnippetOps[Self <: MemberSnippet] (val x: Self) extends AnyVal {
+  implicit class MemberSnippetMutableBuilder[Self <: MemberSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatorChannelId(value: String): Self = StObject.set(x, "creatorChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatorChannelIdUndefined: Self = StObject.set(x, "creatorChannelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemberDetails(value: ChannelProfileDetails): Self = StObject.set(x, "memberDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatorChannelId(value: String): Self = this.set("creatorChannelId", value.asInstanceOf[js.Any])
+    def setMemberDetailsUndefined: Self = StObject.set(x, "memberDetails", js.undefined)
     
     @scala.inline
-    def deleteCreatorChannelId: Self = this.set("creatorChannelId", js.undefined)
+    def setMembershipsDetails(value: MembershipsDetails): Self = StObject.set(x, "membershipsDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberDetails(value: ChannelProfileDetails): Self = this.set("memberDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberDetails: Self = this.set("memberDetails", js.undefined)
-    
-    @scala.inline
-    def setMembershipsDetails(value: MembershipsDetails): Self = this.set("membershipsDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembershipsDetails: Self = this.set("membershipsDetails", js.undefined)
+    def setMembershipsDetailsUndefined: Self = StObject.set(x, "membershipsDetails", js.undefined)
   }
 }

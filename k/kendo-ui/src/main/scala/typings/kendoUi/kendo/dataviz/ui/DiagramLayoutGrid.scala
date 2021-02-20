@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DiagramLayoutGrid extends js.Object {
+trait DiagramLayoutGrid extends StObject {
   
   var componentSpacingX: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object DiagramLayoutGrid {
   }
   
   @scala.inline
-  implicit class DiagramLayoutGridOps[Self <: DiagramLayoutGrid] (val x: Self) extends AnyVal {
+  implicit class DiagramLayoutGridMutableBuilder[Self <: DiagramLayoutGrid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentSpacingX(value: Double): Self = StObject.set(x, "componentSpacingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentSpacingXUndefined: Self = StObject.set(x, "componentSpacingX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComponentSpacingY(value: Double): Self = StObject.set(x, "componentSpacingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentSpacingX(value: Double): Self = this.set("componentSpacingX", value.asInstanceOf[js.Any])
+    def setComponentSpacingYUndefined: Self = StObject.set(x, "componentSpacingY", js.undefined)
     
     @scala.inline
-    def deleteComponentSpacingX: Self = this.set("componentSpacingX", js.undefined)
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentSpacingY(value: Double): Self = this.set("componentSpacingY", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteComponentSpacingY: Self = this.set("componentSpacingY", js.undefined)
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

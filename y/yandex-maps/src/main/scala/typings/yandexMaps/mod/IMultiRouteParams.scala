@@ -3,12 +3,13 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.yandexMapsStrings.auto
 import typings.yandexMaps.yandexMapsStrings.masstransit
 import typings.yandexMaps.yandexMapsStrings.pedestrian
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMultiRouteParams extends js.Object {
+trait IMultiRouteParams extends StObject {
   
   var avoidTrafficJams: js.UndefOr[Boolean] = js.native
   
@@ -37,81 +38,69 @@ object IMultiRouteParams {
   }
   
   @scala.inline
-  implicit class IMultiRouteParamsOps[Self <: IMultiRouteParams] (val x: Self) extends AnyVal {
+  implicit class IMultiRouteParamsMutableBuilder[Self <: IMultiRouteParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvoidTrafficJams(value: Boolean): Self = StObject.set(x, "avoidTrafficJams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvoidTrafficJamsUndefined: Self = StObject.set(x, "avoidTrafficJams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBoundedBy(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "boundedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvoidTrafficJams(value: Boolean): Self = this.set("avoidTrafficJams", value.asInstanceOf[js.Any])
+    def setBoundedByNull: Self = StObject.set(x, "boundedBy", null)
     
     @scala.inline
-    def deleteAvoidTrafficJams: Self = this.set("avoidTrafficJams", js.undefined)
+    def setBoundedByUndefined: Self = StObject.set(x, "boundedBy", js.undefined)
     
     @scala.inline
-    def setBoundedByVarargs(value: js.Array[Double]*): Self = this.set("boundedBy", js.Array(value :_*))
+    def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value :_*))
     
     @scala.inline
-    def setBoundedBy(value: js.Array[js.Array[Double]]): Self = this.set("boundedBy", value.asInstanceOf[js.Any])
+    def setRequestSendInterval(value: String | Double): Self = StObject.set(x, "requestSendInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoundedBy: Self = this.set("boundedBy", js.undefined)
+    def setRequestSendIntervalUndefined: Self = StObject.set(x, "requestSendInterval", js.undefined)
     
     @scala.inline
-    def setBoundedByNull: Self = this.set("boundedBy", null)
+    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestSendInterval(value: String | Double): Self = this.set("requestSendInterval", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteRequestSendInterval: Self = this.set("requestSendInterval", js.undefined)
+    def setReverseGeocoding(value: Boolean): Self = StObject.set(x, "reverseGeocoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setReverseGeocodingUndefined: Self = StObject.set(x, "reverseGeocoding", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setRoutingMode(value: auto | masstransit | pedestrian): Self = StObject.set(x, "routingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseGeocoding(value: Boolean): Self = this.set("reverseGeocoding", value.asInstanceOf[js.Any])
+    def setRoutingModeUndefined: Self = StObject.set(x, "routingMode", js.undefined)
     
     @scala.inline
-    def deleteReverseGeocoding: Self = this.set("reverseGeocoding", js.undefined)
+    def setSearchCoordOrder(value: String): Self = StObject.set(x, "searchCoordOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutingMode(value: auto | masstransit | pedestrian): Self = this.set("routingMode", value.asInstanceOf[js.Any])
+    def setSearchCoordOrderUndefined: Self = StObject.set(x, "searchCoordOrder", js.undefined)
     
     @scala.inline
-    def deleteRoutingMode: Self = this.set("routingMode", js.undefined)
+    def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchCoordOrder(value: String): Self = this.set("searchCoordOrder", value.asInstanceOf[js.Any])
+    def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
     
     @scala.inline
-    def deleteSearchCoordOrder: Self = this.set("searchCoordOrder", js.undefined)
+    def setViaIndexes(value: js.Array[Double]): Self = StObject.set(x, "viaIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictBounds(value: Boolean): Self = this.set("strictBounds", value.asInstanceOf[js.Any])
+    def setViaIndexesUndefined: Self = StObject.set(x, "viaIndexes", js.undefined)
     
     @scala.inline
-    def deleteStrictBounds: Self = this.set("strictBounds", js.undefined)
-    
-    @scala.inline
-    def setViaIndexesVarargs(value: Double*): Self = this.set("viaIndexes", js.Array(value :_*))
-    
-    @scala.inline
-    def setViaIndexes(value: js.Array[Double]): Self = this.set("viaIndexes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViaIndexes: Self = this.set("viaIndexes", js.undefined)
+    def setViaIndexesVarargs(value: Double*): Self = StObject.set(x, "viaIndexes", js.Array(value :_*))
   }
 }

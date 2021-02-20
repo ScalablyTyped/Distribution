@@ -1,11 +1,12 @@
 package typings.yogaLayout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait YogaConfig extends js.Object {
+trait YogaConfig extends StObject {
   
   def isExperimentalFeatureEnabled(feature: YogaExperimentalFeature): Boolean = js.native
   
@@ -26,27 +27,15 @@ object YogaConfig {
   }
   
   @scala.inline
-  implicit class YogaConfigOps[Self <: YogaConfig] (val x: Self) extends AnyVal {
+  implicit class YogaConfigMutableBuilder[Self <: YogaConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsExperimentalFeatureEnabled(value: YogaExperimentalFeature => Boolean): Self = StObject.set(x, "isExperimentalFeatureEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetExperimentalFeatureEnabled(value: (YogaExperimentalFeature, Boolean) => Unit): Self = StObject.set(x, "setExperimentalFeatureEnabled", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsExperimentalFeatureEnabled(value: YogaExperimentalFeature => Boolean): Self = this.set("isExperimentalFeatureEnabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetExperimentalFeatureEnabled(value: (YogaExperimentalFeature, Boolean) => Unit): Self = this.set("setExperimentalFeatureEnabled", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetPointScaleFactor(value: Double => Unit): Self = this.set("setPointScaleFactor", js.Any.fromFunction1(value))
+    def setSetPointScaleFactor(value: Double => Unit): Self = StObject.set(x, "setPointScaleFactor", js.Any.fromFunction1(value))
   }
 }

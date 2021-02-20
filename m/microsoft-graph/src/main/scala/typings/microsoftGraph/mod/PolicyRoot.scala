@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,111 +33,99 @@ object PolicyRoot {
   }
   
   @scala.inline
-  implicit class PolicyRootOps[Self <: PolicyRoot] (val x: Self) extends AnyVal {
+  implicit class PolicyRootMutableBuilder[Self <: PolicyRoot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityBasedTimeoutPolicies(value: NullableOption[js.Array[ActivityBasedTimeoutPolicy]]): Self = StObject.set(x, "activityBasedTimeoutPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityBasedTimeoutPoliciesNull: Self = StObject.set(x, "activityBasedTimeoutPolicies", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityBasedTimeoutPoliciesUndefined: Self = StObject.set(x, "activityBasedTimeoutPolicies", js.undefined)
     
     @scala.inline
-    def setActivityBasedTimeoutPoliciesVarargs(value: ActivityBasedTimeoutPolicy*): Self = this.set("activityBasedTimeoutPolicies", js.Array(value :_*))
+    def setActivityBasedTimeoutPoliciesVarargs(value: ActivityBasedTimeoutPolicy*): Self = StObject.set(x, "activityBasedTimeoutPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setActivityBasedTimeoutPolicies(value: NullableOption[js.Array[ActivityBasedTimeoutPolicy]]): Self = this.set("activityBasedTimeoutPolicies", value.asInstanceOf[js.Any])
+    def setClaimsMappingPolicies(value: NullableOption[js.Array[ClaimsMappingPolicy]]): Self = StObject.set(x, "claimsMappingPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivityBasedTimeoutPolicies: Self = this.set("activityBasedTimeoutPolicies", js.undefined)
+    def setClaimsMappingPoliciesNull: Self = StObject.set(x, "claimsMappingPolicies", null)
     
     @scala.inline
-    def setActivityBasedTimeoutPoliciesNull: Self = this.set("activityBasedTimeoutPolicies", null)
+    def setClaimsMappingPoliciesUndefined: Self = StObject.set(x, "claimsMappingPolicies", js.undefined)
     
     @scala.inline
-    def setClaimsMappingPoliciesVarargs(value: ClaimsMappingPolicy*): Self = this.set("claimsMappingPolicies", js.Array(value :_*))
+    def setClaimsMappingPoliciesVarargs(value: ClaimsMappingPolicy*): Self = StObject.set(x, "claimsMappingPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setClaimsMappingPolicies(value: NullableOption[js.Array[ClaimsMappingPolicy]]): Self = this.set("claimsMappingPolicies", value.asInstanceOf[js.Any])
+    def setConditionalAccessPolicies(value: NullableOption[js.Array[ConditionalAccessPolicy]]): Self = StObject.set(x, "conditionalAccessPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClaimsMappingPolicies: Self = this.set("claimsMappingPolicies", js.undefined)
+    def setConditionalAccessPoliciesNull: Self = StObject.set(x, "conditionalAccessPolicies", null)
     
     @scala.inline
-    def setClaimsMappingPoliciesNull: Self = this.set("claimsMappingPolicies", null)
+    def setConditionalAccessPoliciesUndefined: Self = StObject.set(x, "conditionalAccessPolicies", js.undefined)
     
     @scala.inline
-    def setConditionalAccessPoliciesVarargs(value: ConditionalAccessPolicy*): Self = this.set("conditionalAccessPolicies", js.Array(value :_*))
+    def setConditionalAccessPoliciesVarargs(value: ConditionalAccessPolicy*): Self = StObject.set(x, "conditionalAccessPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setConditionalAccessPolicies(value: NullableOption[js.Array[ConditionalAccessPolicy]]): Self = this.set("conditionalAccessPolicies", value.asInstanceOf[js.Any])
+    def setHomeRealmDiscoveryPolicies(value: NullableOption[js.Array[HomeRealmDiscoveryPolicy]]): Self = StObject.set(x, "homeRealmDiscoveryPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConditionalAccessPolicies: Self = this.set("conditionalAccessPolicies", js.undefined)
+    def setHomeRealmDiscoveryPoliciesNull: Self = StObject.set(x, "homeRealmDiscoveryPolicies", null)
     
     @scala.inline
-    def setConditionalAccessPoliciesNull: Self = this.set("conditionalAccessPolicies", null)
+    def setHomeRealmDiscoveryPoliciesUndefined: Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.undefined)
     
     @scala.inline
-    def setHomeRealmDiscoveryPoliciesVarargs(value: HomeRealmDiscoveryPolicy*): Self = this.set("homeRealmDiscoveryPolicies", js.Array(value :_*))
+    def setHomeRealmDiscoveryPoliciesVarargs(value: HomeRealmDiscoveryPolicy*): Self = StObject.set(x, "homeRealmDiscoveryPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setHomeRealmDiscoveryPolicies(value: NullableOption[js.Array[HomeRealmDiscoveryPolicy]]): Self = this.set("homeRealmDiscoveryPolicies", value.asInstanceOf[js.Any])
+    def setIdentitySecurityDefaultsEnforcementPolicy(value: NullableOption[IdentitySecurityDefaultsEnforcementPolicy]): Self = StObject.set(x, "identitySecurityDefaultsEnforcementPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHomeRealmDiscoveryPolicies: Self = this.set("homeRealmDiscoveryPolicies", js.undefined)
+    def setIdentitySecurityDefaultsEnforcementPolicyNull: Self = StObject.set(x, "identitySecurityDefaultsEnforcementPolicy", null)
     
     @scala.inline
-    def setHomeRealmDiscoveryPoliciesNull: Self = this.set("homeRealmDiscoveryPolicies", null)
+    def setIdentitySecurityDefaultsEnforcementPolicyUndefined: Self = StObject.set(x, "identitySecurityDefaultsEnforcementPolicy", js.undefined)
     
     @scala.inline
-    def setIdentitySecurityDefaultsEnforcementPolicy(value: NullableOption[IdentitySecurityDefaultsEnforcementPolicy]): Self = this.set("identitySecurityDefaultsEnforcementPolicy", value.asInstanceOf[js.Any])
+    def setPermissionGrantPolicies(value: NullableOption[js.Array[PermissionGrantPolicy]]): Self = StObject.set(x, "permissionGrantPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentitySecurityDefaultsEnforcementPolicy: Self = this.set("identitySecurityDefaultsEnforcementPolicy", js.undefined)
+    def setPermissionGrantPoliciesNull: Self = StObject.set(x, "permissionGrantPolicies", null)
     
     @scala.inline
-    def setIdentitySecurityDefaultsEnforcementPolicyNull: Self = this.set("identitySecurityDefaultsEnforcementPolicy", null)
+    def setPermissionGrantPoliciesUndefined: Self = StObject.set(x, "permissionGrantPolicies", js.undefined)
     
     @scala.inline
-    def setPermissionGrantPoliciesVarargs(value: PermissionGrantPolicy*): Self = this.set("permissionGrantPolicies", js.Array(value :_*))
+    def setPermissionGrantPoliciesVarargs(value: PermissionGrantPolicy*): Self = StObject.set(x, "permissionGrantPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionGrantPolicies(value: NullableOption[js.Array[PermissionGrantPolicy]]): Self = this.set("permissionGrantPolicies", value.asInstanceOf[js.Any])
+    def setTokenIssuancePolicies(value: NullableOption[js.Array[TokenIssuancePolicy]]): Self = StObject.set(x, "tokenIssuancePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermissionGrantPolicies: Self = this.set("permissionGrantPolicies", js.undefined)
+    def setTokenIssuancePoliciesNull: Self = StObject.set(x, "tokenIssuancePolicies", null)
     
     @scala.inline
-    def setPermissionGrantPoliciesNull: Self = this.set("permissionGrantPolicies", null)
+    def setTokenIssuancePoliciesUndefined: Self = StObject.set(x, "tokenIssuancePolicies", js.undefined)
     
     @scala.inline
-    def setTokenIssuancePoliciesVarargs(value: TokenIssuancePolicy*): Self = this.set("tokenIssuancePolicies", js.Array(value :_*))
+    def setTokenIssuancePoliciesVarargs(value: TokenIssuancePolicy*): Self = StObject.set(x, "tokenIssuancePolicies", js.Array(value :_*))
     
     @scala.inline
-    def setTokenIssuancePolicies(value: NullableOption[js.Array[TokenIssuancePolicy]]): Self = this.set("tokenIssuancePolicies", value.asInstanceOf[js.Any])
+    def setTokenLifetimePolicies(value: NullableOption[js.Array[TokenLifetimePolicy]]): Self = StObject.set(x, "tokenLifetimePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTokenIssuancePolicies: Self = this.set("tokenIssuancePolicies", js.undefined)
+    def setTokenLifetimePoliciesNull: Self = StObject.set(x, "tokenLifetimePolicies", null)
     
     @scala.inline
-    def setTokenIssuancePoliciesNull: Self = this.set("tokenIssuancePolicies", null)
+    def setTokenLifetimePoliciesUndefined: Self = StObject.set(x, "tokenLifetimePolicies", js.undefined)
     
     @scala.inline
-    def setTokenLifetimePoliciesVarargs(value: TokenLifetimePolicy*): Self = this.set("tokenLifetimePolicies", js.Array(value :_*))
-    
-    @scala.inline
-    def setTokenLifetimePolicies(value: NullableOption[js.Array[TokenLifetimePolicy]]): Self = this.set("tokenLifetimePolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenLifetimePolicies: Self = this.set("tokenLifetimePolicies", js.undefined)
-    
-    @scala.inline
-    def setTokenLifetimePoliciesNull: Self = this.set("tokenLifetimePolicies", null)
+    def setTokenLifetimePoliciesVarargs(value: TokenLifetimePolicy*): Self = StObject.set(x, "tokenLifetimePolicies", js.Array(value :_*))
   }
 }

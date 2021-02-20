@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEditChange extends js.Object {
+trait TextEditChange extends StObject {
   
   /**
     * Adds a text edit.
@@ -64,36 +65,24 @@ object TextEditChange {
   }
   
   @scala.inline
-  implicit class TextEditChangeOps[Self <: TextEditChange] (val x: Self) extends AnyVal {
+  implicit class TextEditChangeMutableBuilder[Self <: TextEditChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: TextEdit => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAll(value: () => js.Array[TextEdit]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: TextEdit => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAll(value: () => js.Array[TextEdit]): Self = this.set("all", js.Any.fromFunction0(value))
+    def setInsert(value: (Position, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDelete(value: Range => Unit): Self = this.set("delete", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsert(value: (Position, String) => Unit): Self = this.set("insert", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReplace(value: (Range, String) => Unit): Self = this.set("replace", js.Any.fromFunction2(value))
+    def setReplace(value: (Range, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
   }
 }

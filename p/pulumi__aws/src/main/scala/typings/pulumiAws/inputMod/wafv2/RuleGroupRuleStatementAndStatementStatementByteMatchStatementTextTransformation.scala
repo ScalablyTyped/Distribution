@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation extends js.Object {
+trait RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation extends StObject {
   
   /**
     * The relative processing order for multiple transformations that are defined for a rule statement. AWS WAF processes all transformations, from lowest priority to highest, before inspecting the transformed content.
@@ -28,24 +29,12 @@ object RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransfor
   }
   
   @scala.inline
-  implicit class RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOps[Self <: RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationMutableBuilder[Self <: RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

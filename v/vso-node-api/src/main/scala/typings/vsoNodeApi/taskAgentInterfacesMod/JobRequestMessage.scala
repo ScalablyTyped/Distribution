@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobRequestMessage extends js.Object {
+trait JobRequestMessage extends StObject {
   
   var environment: JobEnvironment = js.native
   
@@ -35,36 +36,24 @@ object JobRequestMessage {
   }
   
   @scala.inline
-  implicit class JobRequestMessageOps[Self <: JobRequestMessage] (val x: Self) extends AnyVal {
+  implicit class JobRequestMessageMutableBuilder[Self <: JobRequestMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironment(value: JobEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironment(value: JobEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setPlan(value: TaskOrchestrationPlanReference): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageType(value: String): Self = this.set("messageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlan(value: TaskOrchestrationPlanReference): Self = this.set("plan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeline(value: TimelineReference): Self = this.set("timeline", value.asInstanceOf[js.Any])
+    def setTimeline(value: TimelineReference): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

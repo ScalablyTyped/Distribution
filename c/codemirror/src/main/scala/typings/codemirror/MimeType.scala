@@ -1,12 +1,13 @@
 package typings.codemirror
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MimeType extends js.Object {
+trait MimeType extends StObject {
   
   var alias: js.UndefOr[js.Array[String]] = js.native
   
@@ -31,60 +32,48 @@ object MimeType {
   }
   
   @scala.inline
-  implicit class MimeTypeOps[Self <: MimeType] (val x: Self) extends AnyVal {
+  implicit class MimeTypeMutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setExt(value: js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
     @scala.inline
-    def setAliasVarargs(value: String*): Self = this.set("alias", js.Array(value :_*))
+    def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
     
     @scala.inline
-    def setAlias(value: js.Array[String]): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setFile(value: RegExp): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setExtVarargs(value: String*): Self = this.set("ext", js.Array(value :_*))
+    def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: js.Array[String]): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteExt: Self = this.set("ext", js.undefined)
+    def setMimes(value: String): Self = StObject.set(x, "mimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: RegExp): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setMimesUndefined: Self = StObject.set(x, "mimes", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
-    
-    @scala.inline
-    def setMimes(value: String): Self = this.set("mimes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimes: Self = this.set("mimes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

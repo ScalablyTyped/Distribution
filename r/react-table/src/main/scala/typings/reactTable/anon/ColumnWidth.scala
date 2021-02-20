@@ -1,12 +1,13 @@
 package typings.reactTable.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnWidth extends js.Object {
+trait ColumnWidth extends StObject {
   
   var columnWidth: Double = js.native
   
@@ -27,39 +28,27 @@ object ColumnWidth {
   }
   
   @scala.inline
-  implicit class ColumnWidthOps[Self <: ColumnWidth] (val x: Self) extends AnyVal {
+  implicit class ColumnWidthMutableBuilder[Self <: ColumnWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnWidths(value: js.Any): Self = StObject.set(x, "columnWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderIdWidths(value: Record[String, Double]): Self = StObject.set(x, "headerIdWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidth(value: Double): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setIsResizingColumn(value: String): Self = StObject.set(x, "isResizingColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnWidths(value: js.Any): Self = this.set("columnWidths", value.asInstanceOf[js.Any])
+    def setIsResizingColumnUndefined: Self = StObject.set(x, "isResizingColumn", js.undefined)
     
     @scala.inline
-    def setHeaderIdWidths(value: Record[String, Double]): Self = this.set("headerIdWidths", value.asInstanceOf[js.Any])
+    def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResizingColumn(value: String): Self = this.set("isResizingColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsResizingColumn: Self = this.set("isResizingColumn", js.undefined)
-    
-    @scala.inline
-    def setStartX(value: Double): Self = this.set("startX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartX: Self = this.set("startX", js.undefined)
+    def setStartXUndefined: Self = StObject.set(x, "startX", js.undefined)
   }
 }

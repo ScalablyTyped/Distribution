@@ -10,12 +10,13 @@ import typings.ariClient.anon.Media
 import typings.ariClient.anon.MohClass
 import typings.ariClient.anon.Name
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bridges extends js.Object {
+trait Bridges extends StObject {
   
   /**
     * Add a channel to a bridge.

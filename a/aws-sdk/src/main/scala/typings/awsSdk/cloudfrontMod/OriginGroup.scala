@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginGroup extends js.Object {
+trait OriginGroup extends StObject {
   
   /**
     * A complex type that contains information about the failover criteria for an origin group.
@@ -31,27 +32,15 @@ object OriginGroup {
   }
   
   @scala.inline
-  implicit class OriginGroupOps[Self <: OriginGroup] (val x: Self) extends AnyVal {
+  implicit class OriginGroupMutableBuilder[Self <: OriginGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailoverCriteria(value: OriginGroupFailoverCriteria): Self = StObject.set(x, "FailoverCriteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailoverCriteria(value: OriginGroupFailoverCriteria): Self = this.set("FailoverCriteria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMembers(value: OriginGroupMembers): Self = this.set("Members", value.asInstanceOf[js.Any])
+    def setMembers(value: OriginGroupMembers): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
   }
 }

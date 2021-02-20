@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscribedWorkteam extends js.Object {
+trait SubscribedWorkteam extends StObject {
   
   /**
     * Marketplace product listing ID.
@@ -41,45 +42,33 @@ object SubscribedWorkteam {
   }
   
   @scala.inline
-  implicit class SubscribedWorkteamOps[Self <: SubscribedWorkteam] (val x: Self) extends AnyVal {
+  implicit class SubscribedWorkteamMutableBuilder[Self <: SubscribedWorkteam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListingId(value: String): Self = StObject.set(x, "ListingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListingIdUndefined: Self = StObject.set(x, "ListingId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarketplaceDescription(value: String200): Self = StObject.set(x, "MarketplaceDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    def setMarketplaceDescriptionUndefined: Self = StObject.set(x, "MarketplaceDescription", js.undefined)
     
     @scala.inline
-    def setListingId(value: String): Self = this.set("ListingId", value.asInstanceOf[js.Any])
+    def setMarketplaceTitle(value: String200): Self = StObject.set(x, "MarketplaceTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListingId: Self = this.set("ListingId", js.undefined)
+    def setMarketplaceTitleUndefined: Self = StObject.set(x, "MarketplaceTitle", js.undefined)
     
     @scala.inline
-    def setMarketplaceDescription(value: String200): Self = this.set("MarketplaceDescription", value.asInstanceOf[js.Any])
+    def setSellerName(value: String): Self = StObject.set(x, "SellerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarketplaceDescription: Self = this.set("MarketplaceDescription", js.undefined)
+    def setSellerNameUndefined: Self = StObject.set(x, "SellerName", js.undefined)
     
     @scala.inline
-    def setMarketplaceTitle(value: String200): Self = this.set("MarketplaceTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarketplaceTitle: Self = this.set("MarketplaceTitle", js.undefined)
-    
-    @scala.inline
-    def setSellerName(value: String): Self = this.set("SellerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSellerName: Self = this.set("SellerName", js.undefined)
+    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
   }
 }

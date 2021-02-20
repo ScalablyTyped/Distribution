@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * message is therefore composed of these six matrix elements.
   */
 @js.native
-trait SchemaAffineTransform extends js.Object {
+trait SchemaAffineTransform extends StObject {
   
   /**
     * The X coordinate scaling element.
@@ -59,60 +60,48 @@ object SchemaAffineTransform {
   }
   
   @scala.inline
-  implicit class SchemaAffineTransformOps[Self <: SchemaAffineTransform] (val x: Self) extends AnyVal {
+  implicit class SchemaAffineTransformMutableBuilder[Self <: SchemaAffineTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     @scala.inline
-    def deleteScaleX: Self = this.set("scaleX", js.undefined)
+    def setShearX(value: Double): Self = StObject.set(x, "shearX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setShearXUndefined: Self = StObject.set(x, "shearX", js.undefined)
     
     @scala.inline
-    def deleteScaleY: Self = this.set("scaleY", js.undefined)
+    def setShearY(value: Double): Self = StObject.set(x, "shearY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShearX(value: Double): Self = this.set("shearX", value.asInstanceOf[js.Any])
+    def setShearYUndefined: Self = StObject.set(x, "shearY", js.undefined)
     
     @scala.inline
-    def deleteShearX: Self = this.set("shearX", js.undefined)
+    def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShearY(value: Double): Self = this.set("shearY", value.asInstanceOf[js.Any])
+    def setTranslateXUndefined: Self = StObject.set(x, "translateX", js.undefined)
     
     @scala.inline
-    def deleteShearY: Self = this.set("shearY", js.undefined)
+    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateX(value: Double): Self = this.set("translateX", value.asInstanceOf[js.Any])
+    def setTranslateYUndefined: Self = StObject.set(x, "translateY", js.undefined)
     
     @scala.inline
-    def deleteTranslateX: Self = this.set("translateX", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslateY(value: Double): Self = this.set("translateY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslateY: Self = this.set("translateY", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

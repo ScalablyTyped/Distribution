@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAuthorizerRequest extends js.Object {
+trait UpdateAuthorizerRequest extends StObject {
   
   /**
     * The API identifier.
@@ -77,87 +78,75 @@ object UpdateAuthorizerRequest {
   }
   
   @scala.inline
-  implicit class UpdateAuthorizerRequestOps[Self <: UpdateAuthorizerRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAuthorizerRequestMutableBuilder[Self <: UpdateAuthorizerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerCredentialsArn(value: Arn): Self = StObject.set(x, "AuthorizerCredentialsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizerCredentialsArnUndefined: Self = StObject.set(x, "AuthorizerCredentialsArn", js.undefined)
     
     @scala.inline
-    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setAuthorizerId(value: string): Self = StObject.set(x, "AuthorizerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerId(value: string): Self = this.set("AuthorizerId", value.asInstanceOf[js.Any])
+    def setAuthorizerPayloadFormatVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "AuthorizerPayloadFormatVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerCredentialsArn(value: Arn): Self = this.set("AuthorizerCredentialsArn", value.asInstanceOf[js.Any])
+    def setAuthorizerPayloadFormatVersionUndefined: Self = StObject.set(x, "AuthorizerPayloadFormatVersion", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerCredentialsArn: Self = this.set("AuthorizerCredentialsArn", js.undefined)
+    def setAuthorizerResultTtlInSeconds(value: IntegerWithLengthBetween0And3600): Self = StObject.set(x, "AuthorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerPayloadFormatVersion(value: StringWithLengthBetween1And64): Self = this.set("AuthorizerPayloadFormatVersion", value.asInstanceOf[js.Any])
+    def setAuthorizerResultTtlInSecondsUndefined: Self = StObject.set(x, "AuthorizerResultTtlInSeconds", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerPayloadFormatVersion: Self = this.set("AuthorizerPayloadFormatVersion", js.undefined)
+    def setAuthorizerType(value: AuthorizerType): Self = StObject.set(x, "AuthorizerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerResultTtlInSeconds(value: IntegerWithLengthBetween0And3600): Self = this.set("AuthorizerResultTtlInSeconds", value.asInstanceOf[js.Any])
+    def setAuthorizerTypeUndefined: Self = StObject.set(x, "AuthorizerType", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerResultTtlInSeconds: Self = this.set("AuthorizerResultTtlInSeconds", js.undefined)
+    def setAuthorizerUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "AuthorizerUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerType(value: AuthorizerType): Self = this.set("AuthorizerType", value.asInstanceOf[js.Any])
+    def setAuthorizerUriUndefined: Self = StObject.set(x, "AuthorizerUri", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerType: Self = this.set("AuthorizerType", js.undefined)
+    def setEnableSimpleResponses(value: boolean): Self = StObject.set(x, "EnableSimpleResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerUri(value: UriWithLengthBetween1And2048): Self = this.set("AuthorizerUri", value.asInstanceOf[js.Any])
+    def setEnableSimpleResponsesUndefined: Self = StObject.set(x, "EnableSimpleResponses", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerUri: Self = this.set("AuthorizerUri", js.undefined)
+    def setIdentitySource(value: IdentitySourceList): Self = StObject.set(x, "IdentitySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSimpleResponses(value: boolean): Self = this.set("EnableSimpleResponses", value.asInstanceOf[js.Any])
+    def setIdentitySourceUndefined: Self = StObject.set(x, "IdentitySource", js.undefined)
     
     @scala.inline
-    def deleteEnableSimpleResponses: Self = this.set("EnableSimpleResponses", js.undefined)
+    def setIdentitySourceVarargs(value: string*): Self = StObject.set(x, "IdentitySource", js.Array(value :_*))
     
     @scala.inline
-    def setIdentitySourceVarargs(value: string*): Self = this.set("IdentitySource", js.Array(value :_*))
+    def setIdentityValidationExpression(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "IdentityValidationExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentitySource(value: IdentitySourceList): Self = this.set("IdentitySource", value.asInstanceOf[js.Any])
+    def setIdentityValidationExpressionUndefined: Self = StObject.set(x, "IdentityValidationExpression", js.undefined)
     
     @scala.inline
-    def deleteIdentitySource: Self = this.set("IdentitySource", js.undefined)
+    def setJwtConfiguration(value: JWTConfiguration): Self = StObject.set(x, "JwtConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityValidationExpression(value: StringWithLengthBetween0And1024): Self = this.set("IdentityValidationExpression", value.asInstanceOf[js.Any])
+    def setJwtConfigurationUndefined: Self = StObject.set(x, "JwtConfiguration", js.undefined)
     
     @scala.inline
-    def deleteIdentityValidationExpression: Self = this.set("IdentityValidationExpression", js.undefined)
+    def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwtConfiguration(value: JWTConfiguration): Self = this.set("JwtConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwtConfiguration: Self = this.set("JwtConfiguration", js.undefined)
-    
-    @scala.inline
-    def setName(value: StringWithLengthBetween1And128): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

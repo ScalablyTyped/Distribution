@@ -1,11 +1,12 @@
 package typings.twilio.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageIntermediary extends js.Object {
+trait UsageIntermediary extends StObject {
   
   var records: UsageRecordResource = js.native
   
@@ -20,24 +21,12 @@ object UsageIntermediary {
   }
   
   @scala.inline
-  implicit class UsageIntermediaryOps[Self <: UsageIntermediary] (val x: Self) extends AnyVal {
+  implicit class UsageIntermediaryMutableBuilder[Self <: UsageIntermediary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecords(value: UsageRecordResource): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecords(value: UsageRecordResource): Self = this.set("records", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggers(value: UsageTriggerResource): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    def setTriggers(value: UsageTriggerResource): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
   }
 }

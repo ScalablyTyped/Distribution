@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Gauge extends js.Object {
+trait Gauge extends StObject {
   
   def clearChart(): Unit = js.native
   

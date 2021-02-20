@@ -1,5 +1,6 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,63 +63,51 @@ object TransformConstraintData {
   }
   
   @scala.inline
-  implicit class TransformConstraintDataOps[Self <: TransformConstraintData] (val x: Self) extends AnyVal {
+  implicit class TransformConstraintDataMutableBuilder[Self <: TransformConstraintData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBonesVarargs(value: BoneData*): Self = StObject.set(x, "bones", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBonesVarargs(value: BoneData*): Self = this.set("bones", js.Array(value :_*))
+    def setOffsetRotation(value: Double): Self = StObject.set(x, "offsetRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBones(value: js.Array[BoneData]): Self = this.set("bones", value.asInstanceOf[js.Any])
+    def setOffsetScaleX(value: Double): Self = StObject.set(x, "offsetScaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    def setOffsetScaleY(value: Double): Self = StObject.set(x, "offsetScaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRotation(value: Double): Self = this.set("offsetRotation", value.asInstanceOf[js.Any])
+    def setOffsetShearY(value: Double): Self = StObject.set(x, "offsetShearY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetScaleX(value: Double): Self = this.set("offsetScaleX", value.asInstanceOf[js.Any])
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetScaleY(value: Double): Self = this.set("offsetScaleY", value.asInstanceOf[js.Any])
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetShearY(value: Double): Self = this.set("offsetShearY", value.asInstanceOf[js.Any])
+    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setRotateMix(value: Double): Self = StObject.set(x, "rotateMix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setScaleMix(value: Double): Self = StObject.set(x, "scaleMix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelative(value: Boolean): Self = this.set("relative", value.asInstanceOf[js.Any])
+    def setShearMix(value: Double): Self = StObject.set(x, "shearMix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotateMix(value: Double): Self = this.set("rotateMix", value.asInstanceOf[js.Any])
+    def setTarget(value: BoneData): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleMix(value: Double): Self = this.set("scaleMix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShearMix(value: Double): Self = this.set("shearMix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: BoneData): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslateMix(value: Double): Self = this.set("translateMix", value.asInstanceOf[js.Any])
+    def setTranslateMix(value: Double): Self = StObject.set(x, "translateMix", value.asInstanceOf[js.Any])
   }
 }

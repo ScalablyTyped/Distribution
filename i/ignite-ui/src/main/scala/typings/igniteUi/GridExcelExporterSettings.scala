@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,72 +80,60 @@ object GridExcelExporterSettings {
   }
   
   @scala.inline
-  implicit class GridExcelExporterSettingsOps[Self <: GridExcelExporterSettings] (val x: Self) extends AnyVal {
+  implicit class GridExcelExporterSettingsMutableBuilder[Self <: GridExcelExporterSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnsToSkip(value: js.Array[_]): Self = StObject.set(x, "columnsToSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsToSkipUndefined: Self = StObject.set(x, "columnsToSkip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsToSkipVarargs(value: js.Any*): Self = StObject.set(x, "columnsToSkip", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsToSkipVarargs(value: js.Any*): Self = this.set("columnsToSkip", js.Array(value :_*))
+    def setDataExportMode(value: String): Self = StObject.set(x, "dataExportMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsToSkip(value: js.Array[_]): Self = this.set("columnsToSkip", value.asInstanceOf[js.Any])
+    def setDataExportModeUndefined: Self = StObject.set(x, "dataExportMode", js.undefined)
     
     @scala.inline
-    def deleteColumnsToSkip: Self = this.set("columnsToSkip", js.undefined)
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataExportMode(value: String): Self = this.set("dataExportMode", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteDataExportMode: Self = this.set("dataExportMode", js.undefined)
+    def setGridFeatureOptions(value: GridExcelExporterSettingsGridFeatureOptions): Self = StObject.set(x, "gridFeatureOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setGridFeatureOptionsUndefined: Self = StObject.set(x, "gridFeatureOptions", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setGridStyling(value: String): Self = StObject.set(x, "gridStyling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridFeatureOptions(value: GridExcelExporterSettingsGridFeatureOptions): Self = this.set("gridFeatureOptions", value.asInstanceOf[js.Any])
+    def setGridStylingUndefined: Self = StObject.set(x, "gridStyling", js.undefined)
     
     @scala.inline
-    def deleteGridFeatureOptions: Self = this.set("gridFeatureOptions", js.undefined)
+    def setSkipFilteringOn(value: js.Array[_]): Self = StObject.set(x, "skipFilteringOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridStyling(value: String): Self = this.set("gridStyling", value.asInstanceOf[js.Any])
+    def setSkipFilteringOnUndefined: Self = StObject.set(x, "skipFilteringOn", js.undefined)
     
     @scala.inline
-    def deleteGridStyling: Self = this.set("gridStyling", js.undefined)
+    def setSkipFilteringOnVarargs(value: js.Any*): Self = StObject.set(x, "skipFilteringOn", js.Array(value :_*))
     
     @scala.inline
-    def setSkipFilteringOnVarargs(value: js.Any*): Self = this.set("skipFilteringOn", js.Array(value :_*))
+    def setTableStyle(value: String): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipFilteringOn(value: js.Array[_]): Self = this.set("skipFilteringOn", value.asInstanceOf[js.Any])
+    def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
     
     @scala.inline
-    def deleteSkipFilteringOn: Self = this.set("skipFilteringOn", js.undefined)
+    def setWorksheetName(value: String): Self = StObject.set(x, "worksheetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableStyle(value: String): Self = this.set("tableStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStyle: Self = this.set("tableStyle", js.undefined)
-    
-    @scala.inline
-    def setWorksheetName(value: String): Self = this.set("worksheetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorksheetName: Self = this.set("worksheetName", js.undefined)
+    def setWorksheetNameUndefined: Self = StObject.set(x, "worksheetName", js.undefined)
   }
 }

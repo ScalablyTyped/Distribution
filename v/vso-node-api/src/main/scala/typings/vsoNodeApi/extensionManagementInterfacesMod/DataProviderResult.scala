@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProviderResult extends js.Object {
+trait DataProviderResult extends StObject {
   
   /**
     * This is the set of data providers that were requested, but either they were defined as client providers, or as remote providers that failed and may be retried by the client.
@@ -60,42 +61,30 @@ object DataProviderResult {
   }
   
   @scala.inline
-  implicit class DataProviderResultOps[Self <: DataProviderResult] (val x: Self) extends AnyVal {
+  implicit class DataProviderResultMutableBuilder[Self <: DataProviderResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientProviders(value: StringDictionary[ClientDataProviderQuery]): Self = StObject.set(x, "clientProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExceptions(value: StringDictionary[DataProviderExceptionDetails]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientProviders(value: StringDictionary[ClientDataProviderQuery]): Self = this.set("clientProviders", value.asInstanceOf[js.Any])
+    def setResolvedProviders(value: js.Array[ResolvedDataProvider]): Self = StObject.set(x, "resolvedProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setResolvedProvidersVarargs(value: ResolvedDataProvider*): Self = StObject.set(x, "resolvedProviders", js.Array(value :_*))
     
     @scala.inline
-    def setExceptions(value: StringDictionary[DataProviderExceptionDetails]): Self = this.set("exceptions", value.asInstanceOf[js.Any])
+    def setScopeName(value: String): Self = StObject.set(x, "scopeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedProvidersVarargs(value: ResolvedDataProvider*): Self = this.set("resolvedProviders", js.Array(value :_*))
+    def setScopeValue(value: String): Self = StObject.set(x, "scopeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedProviders(value: js.Array[ResolvedDataProvider]): Self = this.set("resolvedProviders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeName(value: String): Self = this.set("scopeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeValue(value: String): Self = this.set("scopeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSharedData(value: StringDictionary[js.Any]): Self = this.set("sharedData", value.asInstanceOf[js.Any])
+    def setSharedData(value: StringDictionary[js.Any]): Self = StObject.set(x, "sharedData", value.asInstanceOf[js.Any])
   }
 }

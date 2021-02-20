@@ -1,6 +1,7 @@
 package typings.tslint.mod
 
 import typings.typescript.mod.SourceFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +29,9 @@ class RuleFailure protected ()
   ) = this()
 }
 /* static members */
-@JSImport("tslint", "RuleFailure")
-@js.native
-object RuleFailure extends js.Object {
+object RuleFailure {
   
+  @JSImport("tslint", "RuleFailure.compare")
+  @js.native
   def compare(a: typings.tslint.ruleMod.RuleFailure, b: typings.tslint.ruleMod.RuleFailure): Double = js.native
 }

@@ -1,16 +1,16 @@
 package typings.opentelemetryResources
 
 import typings.opentelemetryResources.typesMod.ResourceAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/resources/build/src/Resource", JSImport.Namespace)
-@js.native
-object resourceMod extends js.Object {
+object resourceMod {
   
+  @JSImport("@opentelemetry/resources/build/src/Resource", "Resource")
   @js.native
-  class Resource protected () extends js.Object {
+  class Resource protected () extends StObject {
     def this(/**
       * A dictionary of attributes with string keys and values that provide
       * information about the entity as numbers, strings or booleans
@@ -37,19 +37,24 @@ object resourceMod extends js.Object {
     def merge(other: Resource): Resource = js.native
   }
   /* static members */
-  @js.native
-  object Resource extends js.Object {
+  object Resource {
     
+    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.EMPTY")
+    @js.native
     val EMPTY: Resource = js.native
     
     /**
       * Returns a Resource that indentifies the SDK in use.
       */
+    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.createTelemetrySDKResource")
+    @js.native
     def createTelemetrySDKResource(): Resource = js.native
     
     /**
       * Returns an empty Resource
       */
+    @JSImport("@opentelemetry/resources/build/src/Resource", "Resource.empty")
+    @js.native
     def empty(): Resource = js.native
   }
 }

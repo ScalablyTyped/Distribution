@@ -1,5 +1,6 @@
 package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for an leaderboard configuration resource.
   */
 @js.native
-trait SchemaLeaderboardConfiguration extends js.Object {
+trait SchemaLeaderboardConfiguration extends StObject {
   
   /**
     * The draft data of the leaderboard.
@@ -62,66 +63,54 @@ object SchemaLeaderboardConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaLeaderboardConfigurationOps[Self <: SchemaLeaderboardConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaLeaderboardConfigurationMutableBuilder[Self <: SchemaLeaderboardConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDraft(value: SchemaLeaderboardConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraft(value: SchemaLeaderboardConfigurationDetail): Self = this.set("draft", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDraft: Self = this.set("draft", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPublished(value: SchemaLeaderboardConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setScoreMax(value: String): Self = StObject.set(x, "scoreMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished(value: SchemaLeaderboardConfigurationDetail): Self = this.set("published", value.asInstanceOf[js.Any])
+    def setScoreMaxUndefined: Self = StObject.set(x, "scoreMax", js.undefined)
     
     @scala.inline
-    def deletePublished: Self = this.set("published", js.undefined)
+    def setScoreMin(value: String): Self = StObject.set(x, "scoreMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreMax(value: String): Self = this.set("scoreMax", value.asInstanceOf[js.Any])
+    def setScoreMinUndefined: Self = StObject.set(x, "scoreMin", js.undefined)
     
     @scala.inline
-    def deleteScoreMax: Self = this.set("scoreMax", js.undefined)
+    def setScoreOrder(value: String): Self = StObject.set(x, "scoreOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreMin(value: String): Self = this.set("scoreMin", value.asInstanceOf[js.Any])
+    def setScoreOrderUndefined: Self = StObject.set(x, "scoreOrder", js.undefined)
     
     @scala.inline
-    def deleteScoreMin: Self = this.set("scoreMin", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreOrder(value: String): Self = this.set("scoreOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoreOrder: Self = this.set("scoreOrder", js.undefined)
-    
-    @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

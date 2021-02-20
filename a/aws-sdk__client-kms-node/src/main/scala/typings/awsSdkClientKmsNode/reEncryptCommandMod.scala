@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesReEncryptInputMod.ReEncryptInput
 import typings.awsSdkClientKmsNode.typesReEncryptOutputMod.ReEncryptOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/ReEncryptCommand", JSImport.Namespace)
-@js.native
-object reEncryptCommandMod extends js.Object {
+object reEncryptCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/ReEncryptCommand", "ReEncryptCommand")
   @js.native
   class ReEncryptCommand protected () extends Command[
           InputTypesUnion, 

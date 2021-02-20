@@ -1,6 +1,7 @@
 package typings.apolloProtobufjs.lightMod
 
 import typings.apolloProtobufjs.mod.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

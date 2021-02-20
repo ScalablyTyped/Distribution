@@ -1,12 +1,13 @@
 package typings.cytoscape.mod
 
 import typings.cytoscape.mod.Css.TransitionTimingFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationOptions extends js.Object {
+trait AnimationOptions extends StObject {
   
   /** An object containing centring options from which the graph will be animated. */
   var center: js.UndefOr[CenterOptions] = js.native
@@ -38,60 +39,48 @@ object AnimationOptions {
   }
   
   @scala.inline
-  implicit class AnimationOptionsOps[Self <: AnimationOptions] (val x: Self) extends AnyVal {
+  implicit class AnimationOptionsMutableBuilder[Self <: AnimationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: CenterOptions): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: CenterOptions): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setEasing(value: TransitionTimingFunction): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setFit(value: AnimationFitOptions): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEasing(value: TransitionTimingFunction): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setPan(value: Position): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFit(value: AnimationFitOptions): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setPanBy(value: Position): Self = StObject.set(x, "panBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
+    def setPanByUndefined: Self = StObject.set(x, "panBy", js.undefined)
     
     @scala.inline
-    def setPan(value: Position): Self = this.set("pan", value.asInstanceOf[js.Any])
+    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
     @scala.inline
-    def deletePan: Self = this.set("pan", js.undefined)
+    def setZoom(value: ZoomOptions): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanBy(value: Position): Self = this.set("panBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePanBy: Self = this.set("panBy", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: ZoomOptions): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

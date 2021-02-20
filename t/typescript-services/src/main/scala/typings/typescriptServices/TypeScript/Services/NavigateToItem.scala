@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigateToItem extends js.Object {
+trait NavigateToItem extends StObject {
   
   var additionalSpans: js.Array[SpanInfo] = js.native
   
@@ -47,51 +48,39 @@ object NavigateToItem {
   }
   
   @scala.inline
-  implicit class NavigateToItemOps[Self <: NavigateToItem] (val x: Self) extends AnyVal {
+  implicit class NavigateToItemMutableBuilder[Self <: NavigateToItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalSpans(value: js.Array[SpanInfo]): Self = StObject.set(x, "additionalSpans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalSpansVarargs(value: SpanInfo*): Self = StObject.set(x, "additionalSpans", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerKind(value: String): Self = StObject.set(x, "containerKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalSpansVarargs(value: SpanInfo*): Self = this.set("additionalSpans", js.Array(value :_*))
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalSpans(value: js.Array[SpanInfo]): Self = this.set("additionalSpans", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerKind(value: String): Self = this.set("containerKind", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setKindModifiers(value: String): Self = StObject.set(x, "kindModifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setLimChar(value: Double): Self = StObject.set(x, "limChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMatchKind(value: String): Self = StObject.set(x, "matchKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKindModifiers(value: String): Self = this.set("kindModifiers", value.asInstanceOf[js.Any])
+    def setMinChar(value: Double): Self = StObject.set(x, "minChar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimChar(value: Double): Self = this.set("limChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchKind(value: String): Self = this.set("matchKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinChar(value: Double): Self = this.set("minChar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

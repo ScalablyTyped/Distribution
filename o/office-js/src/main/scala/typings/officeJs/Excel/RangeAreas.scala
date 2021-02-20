@@ -34,6 +34,7 @@ import typings.officeJs.officeJsStrings.SameDataValidation
 import typings.officeJs.officeJsStrings.Text
 import typings.officeJs.officeJsStrings.Values
 import typings.officeJs.officeJsStrings.Visible
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,7 @@
 package typings.emberData.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object RelationshipMetaOptions {
   }
   
   @scala.inline
-  implicit class RelationshipMetaOptionsOps[Self <: RelationshipMetaOptions] (val x: Self) extends AnyVal {
+  implicit class RelationshipMetaOptionsMutableBuilder[Self <: RelationshipMetaOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInverse(value: String): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    def setInverseUndefined: Self = StObject.set(x, "inverse", js.undefined)
     
     @scala.inline
-    def deleteAsync: Self = this.set("async", js.undefined)
+    def setPolymorphic(value: Boolean): Self = StObject.set(x, "polymorphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverse(value: String): Self = this.set("inverse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInverse: Self = this.set("inverse", js.undefined)
-    
-    @scala.inline
-    def setPolymorphic(value: Boolean): Self = this.set("polymorphic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolymorphic: Self = this.set("polymorphic", js.undefined)
+    def setPolymorphicUndefined: Self = StObject.set(x, "polymorphic", js.undefined)
   }
 }

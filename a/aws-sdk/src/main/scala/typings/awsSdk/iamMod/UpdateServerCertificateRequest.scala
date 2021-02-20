@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateServerCertificateRequest extends js.Object {
+trait UpdateServerCertificateRequest extends StObject {
   
   /**
     * The new path for the server certificate. Include this only if you are updating the server certificate's path. This parameter allows (through its regex pattern) a string of characters consisting of either a forward slash (/) by itself or a string that must begin and end with forward slashes. In addition, it can contain any ASCII character from the ! (\\u0021) through the DEL character (\\u007F), including most punctuation characters, digits, and upper and lowercased letters.
@@ -31,33 +32,21 @@ object UpdateServerCertificateRequest {
   }
   
   @scala.inline
-  implicit class UpdateServerCertificateRequestOps[Self <: UpdateServerCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateServerCertificateRequestMutableBuilder[Self <: UpdateServerCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPath(value: pathType): Self = StObject.set(x, "NewPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewPathUndefined: Self = StObject.set(x, "NewPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "NewServerCertificateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertificateName(value: serverCertificateNameType): Self = this.set("ServerCertificateName", value.asInstanceOf[js.Any])
+    def setNewServerCertificateNameUndefined: Self = StObject.set(x, "NewServerCertificateName", js.undefined)
     
     @scala.inline
-    def setNewPath(value: pathType): Self = this.set("NewPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPath: Self = this.set("NewPath", js.undefined)
-    
-    @scala.inline
-    def setNewServerCertificateName(value: serverCertificateNameType): Self = this.set("NewServerCertificateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewServerCertificateName: Self = this.set("NewServerCertificateName", js.undefined)
+    def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
   }
 }

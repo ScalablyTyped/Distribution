@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionDataCollectionQuery extends js.Object {
+trait ExtensionDataCollectionQuery extends StObject {
   
   /**
     * A list of collections to query
@@ -21,24 +22,12 @@ object ExtensionDataCollectionQuery {
   }
   
   @scala.inline
-  implicit class ExtensionDataCollectionQueryOps[Self <: ExtensionDataCollectionQuery] (val x: Self) extends AnyVal {
+  implicit class ExtensionDataCollectionQueryMutableBuilder[Self <: ExtensionDataCollectionQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollections(value: js.Array[ExtensionDataCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollectionsVarargs(value: ExtensionDataCollection*): Self = this.set("collections", js.Array(value :_*))
-    
-    @scala.inline
-    def setCollections(value: js.Array[ExtensionDataCollection]): Self = this.set("collections", value.asInstanceOf[js.Any])
+    def setCollectionsVarargs(value: ExtensionDataCollection*): Self = StObject.set(x, "collections", js.Array(value :_*))
   }
 }

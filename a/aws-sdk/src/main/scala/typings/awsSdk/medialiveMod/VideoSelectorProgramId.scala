@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoSelectorProgramId extends js.Object {
+trait VideoSelectorProgramId extends StObject {
   
   /**
     * Selects a specific program from within a multi-program transport stream. If the program doesn't exist, the first program within the transport stream will be selected by default.
@@ -21,24 +22,12 @@ object VideoSelectorProgramId {
   }
   
   @scala.inline
-  implicit class VideoSelectorProgramIdOps[Self <: VideoSelectorProgramId] (val x: Self) extends AnyVal {
+  implicit class VideoSelectorProgramIdMutableBuilder[Self <: VideoSelectorProgramId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProgramId(value: integerMin0Max65536): Self = StObject.set(x, "ProgramId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProgramId(value: integerMin0Max65536): Self = this.set("ProgramId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgramId: Self = this.set("ProgramId", js.undefined)
+    def setProgramIdUndefined: Self = StObject.set(x, "ProgramId", js.undefined)
   }
 }

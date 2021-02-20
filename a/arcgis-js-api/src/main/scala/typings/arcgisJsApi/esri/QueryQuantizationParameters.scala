@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.edit
 import typings.arcgisJsApi.arcgisJsApiStrings.view
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,42 +55,30 @@ object QueryQuantizationParameters {
   }
   
   @scala.inline
-  implicit class QueryQuantizationParametersOps[Self <: QueryQuantizationParameters] (val x: Self) extends AnyVal {
+  implicit class QueryQuantizationParametersMutableBuilder[Self <: QueryQuantizationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: view | edit): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: Extent): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setOriginPosition(value: `upper-left` | `lower-left`): Self = StObject.set(x, "originPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: view | edit): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOriginPositionUndefined: Self = StObject.set(x, "originPosition", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginPosition(value: `upper-left` | `lower-left`): Self = this.set("originPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginPosition: Self = this.set("originPosition", js.undefined)
-    
-    @scala.inline
-    def setTolerance(value: Double): Self = this.set("tolerance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
   }
 }

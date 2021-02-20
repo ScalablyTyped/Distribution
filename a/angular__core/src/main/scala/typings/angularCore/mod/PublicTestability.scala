@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait PublicTestability extends js.Object {
+trait PublicTestability extends StObject {
   
   def findProviders(using: js.Any, provider: String, exactMatch: Boolean): js.Array[_] = js.native
   

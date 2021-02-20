@@ -1,12 +1,13 @@
 package typings.gapiCalendar.gapi.client.calendar
 
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersigncalendarList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarList_ extends js.Object {
+trait CalendarList_ extends StObject {
   
   var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
   
@@ -35,42 +36,30 @@ object CalendarList_ {
   }
   
   @scala.inline
-  implicit class CalendarList_Ops[Self <: CalendarList_] (val x: Self) extends AnyVal {
+  implicit class CalendarList_MutableBuilder[Self <: CalendarList_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[CalendarListEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setEtag(value: etag): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKind(value: calendarNumbersigncalendarList): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: CalendarListEntry*): Self = this.set("items", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[CalendarListEntry]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def setKind(value: calendarNumbersigncalendarList): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextSyncToken(value: String): Self = StObject.set(x, "nextSyncToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setNextSyncToken(value: String): Self = this.set("nextSyncToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextSyncToken: Self = this.set("nextSyncToken", js.undefined)
+    def setNextSyncTokenUndefined: Self = StObject.set(x, "nextSyncToken", js.undefined)
   }
 }

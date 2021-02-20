@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificate extends js.Object {
+trait Certificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the certificate.
@@ -121,153 +122,141 @@ object Certificate {
   }
   
   @scala.inline
-  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setDomainValidationRecords(value: DomainValidationRecordList): Self = StObject.set(x, "domainValidationRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setDomainValidationRecordsUndefined: Self = StObject.set(x, "domainValidationRecords", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setDomainValidationRecordsVarargs(value: DomainValidationRecord*): Self = StObject.set(x, "domainValidationRecords", js.Array(value :_*))
     
     @scala.inline
-    def setDomainValidationRecordsVarargs(value: DomainValidationRecord*): Self = this.set("domainValidationRecords", js.Array(value :_*))
+    def setEligibleToRenew(value: EligibleToRenew): Self = StObject.set(x, "eligibleToRenew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainValidationRecords(value: DomainValidationRecordList): Self = this.set("domainValidationRecords", value.asInstanceOf[js.Any])
+    def setEligibleToRenewUndefined: Self = StObject.set(x, "eligibleToRenew", js.undefined)
     
     @scala.inline
-    def deleteDomainValidationRecords: Self = this.set("domainValidationRecords", js.undefined)
+    def setInUseResourceCount(value: InUseResourceCount): Self = StObject.set(x, "inUseResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligibleToRenew(value: EligibleToRenew): Self = this.set("eligibleToRenew", value.asInstanceOf[js.Any])
+    def setInUseResourceCountUndefined: Self = StObject.set(x, "inUseResourceCount", js.undefined)
     
     @scala.inline
-    def deleteEligibleToRenew: Self = this.set("eligibleToRenew", js.undefined)
+    def setIssuedAt(value: IsoDate): Self = StObject.set(x, "issuedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInUseResourceCount(value: InUseResourceCount): Self = this.set("inUseResourceCount", value.asInstanceOf[js.Any])
+    def setIssuedAtUndefined: Self = StObject.set(x, "issuedAt", js.undefined)
     
     @scala.inline
-    def deleteInUseResourceCount: Self = this.set("inUseResourceCount", js.undefined)
+    def setIssuerCA(value: IssuerCA): Self = StObject.set(x, "issuerCA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuedAt(value: IsoDate): Self = this.set("issuedAt", value.asInstanceOf[js.Any])
+    def setIssuerCAUndefined: Self = StObject.set(x, "issuerCA", js.undefined)
     
     @scala.inline
-    def deleteIssuedAt: Self = this.set("issuedAt", js.undefined)
+    def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerCA(value: IssuerCA): Self = this.set("issuerCA", value.asInstanceOf[js.Any])
+    def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteIssuerCA: Self = this.set("issuerCA", js.undefined)
+    def setName(value: CertificateName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAlgorithm(value: KeyAlgorithm): Self = this.set("keyAlgorithm", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKeyAlgorithm: Self = this.set("keyAlgorithm", js.undefined)
+    def setNotAfter(value: IsoDate): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: CertificateName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNotBefore(value: IsoDate): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotAfter(value: IsoDate): Self = this.set("notAfter", value.asInstanceOf[js.Any])
+    def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
     
     @scala.inline
-    def deleteNotAfter: Self = this.set("notAfter", js.undefined)
+    def setRenewalSummary(value: RenewalSummary): Self = StObject.set(x, "renewalSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotBefore(value: IsoDate): Self = this.set("notBefore", value.asInstanceOf[js.Any])
+    def setRenewalSummaryUndefined: Self = StObject.set(x, "renewalSummary", js.undefined)
     
     @scala.inline
-    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    def setRequestFailureReason(value: RequestFailureReason): Self = StObject.set(x, "requestFailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenewalSummary(value: RenewalSummary): Self = this.set("renewalSummary", value.asInstanceOf[js.Any])
+    def setRequestFailureReasonUndefined: Self = StObject.set(x, "requestFailureReason", js.undefined)
     
     @scala.inline
-    def deleteRenewalSummary: Self = this.set("renewalSummary", js.undefined)
+    def setRevocationReason(value: RevocationReason): Self = StObject.set(x, "revocationReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestFailureReason(value: RequestFailureReason): Self = this.set("requestFailureReason", value.asInstanceOf[js.Any])
+    def setRevocationReasonUndefined: Self = StObject.set(x, "revocationReason", js.undefined)
     
     @scala.inline
-    def deleteRequestFailureReason: Self = this.set("requestFailureReason", js.undefined)
+    def setRevokedAt(value: IsoDate): Self = StObject.set(x, "revokedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocationReason(value: RevocationReason): Self = this.set("revocationReason", value.asInstanceOf[js.Any])
+    def setRevokedAtUndefined: Self = StObject.set(x, "revokedAt", js.undefined)
     
     @scala.inline
-    def deleteRevocationReason: Self = this.set("revocationReason", js.undefined)
+    def setSerialNumber(value: SerialNumber): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevokedAt(value: IsoDate): Self = this.set("revokedAt", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
     @scala.inline
-    def deleteRevokedAt: Self = this.set("revokedAt", js.undefined)
+    def setStatus(value: CertificateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: SerialNumber): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    def setSubjectAlternativeNames(value: SubjectAlternativeNameList): Self = StObject.set(x, "subjectAlternativeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: CertificateStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setSubjectAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
     
     @scala.inline
-    def setSubjectAlternativeNamesVarargs(value: DomainName*): Self = this.set("subjectAlternativeNames", js.Array(value :_*))
+    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectAlternativeNames(value: SubjectAlternativeNameList): Self = this.set("subjectAlternativeNames", value.asInstanceOf[js.Any])
+    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
     @scala.inline
-    def deleteSubjectAlternativeNames: Self = this.set("subjectAlternativeNames", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportCode(value: String): Self = this.set("supportCode", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSupportCode: Self = this.set("supportCode", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

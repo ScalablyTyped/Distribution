@@ -1,12 +1,13 @@
 package typings.emberData.mod.DS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ember-data", "DS.SnapshotRecordArray")
 @js.native
-class SnapshotRecordArray[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */] () extends js.Object {
+class SnapshotRecordArray[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */] () extends StObject {
   
   /**
     * The relationships to include for this request.

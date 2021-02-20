@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,27 +46,15 @@ object XTempFile {
   }
   
   @scala.inline
-  implicit class XTempFileOps[Self <: XTempFile] (val x: Self) extends AnyVal {
+  implicit class XTempFileMutableBuilder[Self <: XTempFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoveFile(value: Boolean): Self = StObject.set(x, "RemoveFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemoveFile(value: Boolean): Self = this.set("RemoveFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("Uri", value.asInstanceOf[js.Any])
+    def setUri(value: String): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
   }
 }

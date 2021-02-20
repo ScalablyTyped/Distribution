@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceGroupManagersApplyUpdatesRequest extends js.Object {
+trait InstanceGroupManagersApplyUpdatesRequest extends StObject {
   
   /** Flag to update all instances instead of specified list of ?instances?. If the flag is set to true then the instances may not be specified in the request. */
   var allInstances: js.UndefOr[Boolean] = js.native
@@ -42,45 +43,33 @@ object InstanceGroupManagersApplyUpdatesRequest {
   }
   
   @scala.inline
-  implicit class InstanceGroupManagersApplyUpdatesRequestOps[Self <: InstanceGroupManagersApplyUpdatesRequest] (val x: Self) extends AnyVal {
+  implicit class InstanceGroupManagersApplyUpdatesRequestMutableBuilder[Self <: InstanceGroupManagersApplyUpdatesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllInstances(value: Boolean): Self = StObject.set(x, "allInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllInstancesUndefined: Self = StObject.set(x, "allInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllInstances(value: Boolean): Self = this.set("allInstances", value.asInstanceOf[js.Any])
+    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
     @scala.inline
-    def deleteAllInstances: Self = this.set("allInstances", js.undefined)
+    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstancesVarargs(value: String*): Self = this.set("instances", js.Array(value :_*))
+    def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: js.Array[String]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("instances", js.undefined)
+    def setMostDisruptiveAllowedAction(value: String): Self = StObject.set(x, "mostDisruptiveAllowedAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimalAction(value: String): Self = this.set("minimalAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimalAction: Self = this.set("minimalAction", js.undefined)
-    
-    @scala.inline
-    def setMostDisruptiveAllowedAction(value: String): Self = this.set("mostDisruptiveAllowedAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMostDisruptiveAllowedAction: Self = this.set("mostDisruptiveAllowedAction", js.undefined)
+    def setMostDisruptiveAllowedActionUndefined: Self = StObject.set(x, "mostDisruptiveAllowedAction", js.undefined)
   }
 }

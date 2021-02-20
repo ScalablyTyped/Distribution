@@ -7,12 +7,13 @@ import typings.reactAsync.mod.AsyncInitial
 import typings.reactAsync.mod.AsyncPending
 import typings.reactAsync.mod.AsyncRejected
 import typings.reactAsync.mod.SettledChildren
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersistState[T /* <: js.Object */] extends js.Object {
+trait PersistState[T /* <: js.Object */] extends StObject {
   
   var children: js.UndefOr[SettledChildren[T]] = js.native
   
@@ -31,40 +32,28 @@ object PersistState {
   }
   
   @scala.inline
-  implicit class PersistStateOps[Self <: PersistState[_], T /* <: js.Object */] (val x: Self with PersistState[T]) extends AnyVal {
+  implicit class PersistStateMutableBuilder[Self <: PersistState[_], T /* <: js.Object */] (val x: Self with PersistState[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setState(
-      value: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
-    ): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setChildren(value: SettledChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildrenFunction1(
       value: /* state */ (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]]) => ReactNode
-    ): Self = this.set("children", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildren(value: SettledChildren[T]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
+    def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     
     @scala.inline
-    def deletePersist: Self = this.set("persist", js.undefined)
+    def setState(
+      value: (AsyncInitial[T, AbstractState[T]]) | (AsyncPending[T, AbstractState[T]]) | (AsyncFulfilled[T, AbstractState[T]]) | (AsyncRejected[T, AbstractState[T]])
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

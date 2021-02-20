@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDataErrorObject extends js.Object {
+trait GetDataErrorObject extends StObject {
   
   var dataHeight: Double = js.native
   
@@ -22,27 +23,15 @@ object GetDataErrorObject {
   }
   
   @scala.inline
-  implicit class GetDataErrorObjectOps[Self <: GetDataErrorObject] (val x: Self) extends AnyVal {
+  implicit class GetDataErrorObjectMutableBuilder[Self <: GetDataErrorObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataHeight(value: Double): Self = StObject.set(x, "dataHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataWidth(value: Double): Self = StObject.set(x, "dataWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataHeight(value: Double): Self = this.set("dataHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataWidth(value: Double): Self = this.set("dataWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

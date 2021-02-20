@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectWrapper extends js.Object {
+trait SelectWrapper extends StObject {
   
   var control: String = js.native
   
@@ -35,36 +36,24 @@ object SelectWrapper {
   }
   
   @scala.inline
-  implicit class SelectWrapperOps[Self <: SelectWrapper] (val x: Self) extends AnyVal {
+  implicit class SelectWrapperMutableBuilder[Self <: SelectWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnError(value: String): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControl(value: String): Self = this.set("control", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnError(value: String): Self = this.set("onError", value.asInstanceOf[js.Any])
+    def setSelectWrapper(value: String): Self = StObject.set(x, "selectWrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: String): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectWrapper(value: String): Self = this.set("selectWrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmall(value: String): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,80 @@ class VertexFormat () extends Packable {
   
   var tangent: Boolean = js.native
 }
-/* static members */
-@JSImport("cesium", "VertexFormat")
-@js.native
-object VertexFormat extends js.Object {
+object VertexFormat {
   
-  var ALL: VertexFormat = js.native
+  @JSImport("cesium", "VertexFormat")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var DEFAULT: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.ALL")
+  @js.native
+  def ALL: VertexFormat = js.native
+  @scala.inline
+  def ALL_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALL")(x.asInstanceOf[js.Any])
   
-  var POSITION_AND_COLOR: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.DEFAULT")
+  @js.native
+  def DEFAULT: VertexFormat = js.native
+  @scala.inline
+  def DEFAULT_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
   
-  var POSITION_AND_NORMAL: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.POSITION_AND_COLOR")
+  @js.native
+  def POSITION_AND_COLOR: VertexFormat = js.native
+  @scala.inline
+  def POSITION_AND_COLOR_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION_AND_COLOR")(x.asInstanceOf[js.Any])
   
-  var POSITION_AND_ST: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.POSITION_AND_NORMAL")
+  @js.native
+  def POSITION_AND_NORMAL: VertexFormat = js.native
+  @scala.inline
+  def POSITION_AND_NORMAL_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION_AND_NORMAL")(x.asInstanceOf[js.Any])
   
-  var POSITION_NORMAL_AND_ST: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.POSITION_AND_ST")
+  @js.native
+  def POSITION_AND_ST: VertexFormat = js.native
+  @scala.inline
+  def POSITION_AND_ST_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION_AND_ST")(x.asInstanceOf[js.Any])
   
-  var POSITION_ONLY: VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.POSITION_NORMAL_AND_ST")
+  @js.native
+  def POSITION_NORMAL_AND_ST: VertexFormat = js.native
+  @scala.inline
+  def POSITION_NORMAL_AND_ST_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION_NORMAL_AND_ST")(x.asInstanceOf[js.Any])
   
-  def clone(cartesian: VertexFormat): VertexFormat = js.native
-  def clone(cartesian: VertexFormat, result: VertexFormat): VertexFormat = js.native
+  /* static member */
+  @JSImport("cesium", "VertexFormat.POSITION_ONLY")
+  @js.native
+  def POSITION_ONLY: VertexFormat = js.native
+  @scala.inline
+  def POSITION_ONLY_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION_ONLY")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("cesium", "VertexFormat.clone")
+  @js.native
+  def clone_(cartesian: VertexFormat): VertexFormat = js.native
+  @JSImport("cesium", "VertexFormat.clone")
+  @js.native
+  def clone_(cartesian: VertexFormat, result: VertexFormat): VertexFormat = js.native
+  
+  /* static member */
+  @JSImport("cesium", "VertexFormat.unpack")
+  @js.native
   def unpack(array: js.Array[Double]): VertexFormat = js.native
+  @JSImport("cesium", "VertexFormat.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: VertexFormat): VertexFormat = js.native
+  @JSImport("cesium", "VertexFormat.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double): VertexFormat = js.native
+  @JSImport("cesium", "VertexFormat.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: VertexFormat): VertexFormat = js.native
 }

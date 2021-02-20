@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,54 +29,42 @@ object PlannerBucket {
   }
   
   @scala.inline
-  implicit class PlannerBucketOps[Self <: PlannerBucket] (val x: Self) extends AnyVal {
+  implicit class PlannerBucketMutableBuilder[Self <: PlannerBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
     @scala.inline
-    def setOrderHint(value: NullableOption[String]): Self = this.set("orderHint", value.asInstanceOf[js.Any])
+    def setPlanId(value: NullableOption[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderHint: Self = this.set("orderHint", js.undefined)
+    def setPlanIdNull: Self = StObject.set(x, "planId", null)
     
     @scala.inline
-    def setOrderHintNull: Self = this.set("orderHint", null)
+    def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
     
     @scala.inline
-    def setPlanId(value: NullableOption[String]): Self = this.set("planId", value.asInstanceOf[js.Any])
+    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlanId: Self = this.set("planId", js.undefined)
+    def setTasksNull: Self = StObject.set(x, "tasks", null)
     
     @scala.inline
-    def setPlanIdNull: Self = this.set("planId", null)
+    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
     @scala.inline
-    def setTasksVarargs(value: PlannerTask*): Self = this.set("tasks", js.Array(value :_*))
-    
-    @scala.inline
-    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = this.set("tasks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTasks: Self = this.set("tasks", js.undefined)
-    
-    @scala.inline
-    def setTasksNull: Self = this.set("tasks", null)
+    def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

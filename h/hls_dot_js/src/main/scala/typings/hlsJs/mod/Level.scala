@@ -1,5 +1,6 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a Level object represents a given quality level and contains quality level related info
   */
 @js.native
-trait Level extends js.Object {
+trait Level extends StObject {
   
   /**
     * attribute list
@@ -101,78 +102,66 @@ object Level {
   }
   
   @scala.inline
-  implicit class LevelOps[Self <: Level] (val x: Self) extends AnyVal {
+  implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: js.Array[LevelAttr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrsVarargs(value: LevelAttr*): Self = StObject.set(x, "attrs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrsVarargs(value: LevelAttr*): Self = this.set("attrs", js.Array(value :_*))
+    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrs(value: js.Array[LevelAttr]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setDetails(value: LevelDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioCodec(value: String): Self = this.set("audioCodec", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setBitrate(value: Double): Self = this.set("bitrate", value.asInstanceOf[js.Any])
+    def setFragmentError(value: Boolean): Self = StObject.set(x, "fragmentError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setFragmentErrorUndefined: Self = StObject.set(x, "fragmentError", js.undefined)
     
     @scala.inline
-    def setLoadError(value: Double): Self = this.set("loadError", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnkownCodecsVarargs(value: String*): Self = this.set("unkownCodecs", js.Array(value :_*))
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def setUnkownCodecs(value: js.Array[String]): Self = this.set("unkownCodecs", value.asInstanceOf[js.Any])
+    def setLoadError(value: Double): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlVarargs(value: String*): Self = this.set("url", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: js.Array[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUnkownCodecs(value: js.Array[String]): Self = StObject.set(x, "unkownCodecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlId(value: Double): Self = this.set("urlId", value.asInstanceOf[js.Any])
+    def setUnkownCodecsVarargs(value: String*): Self = StObject.set(x, "unkownCodecs", js.Array(value :_*))
     
     @scala.inline
-    def setVideoCodec(value: String): Self = this.set("videoCodec", value.asInstanceOf[js.Any])
+    def setUrl(value: js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setUrlId(value: Double): Self = StObject.set(x, "urlId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: LevelDetails): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentError(value: Boolean): Self = this.set("fragmentError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFragmentError: Self = this.set("fragmentError", js.undefined)
-    
-    @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

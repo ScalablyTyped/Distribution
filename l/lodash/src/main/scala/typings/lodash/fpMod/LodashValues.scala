@@ -3,12 +3,13 @@ package typings.lodash.fpMod
 import typings.lodash.mod.Dictionary
 import typings.lodash.mod.List
 import typings.lodash.mod.NumericDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashValues extends js.Object {
+trait LodashValues extends StObject {
   
   def apply(`object`: js.Any): js.Array[_] = js.native
   def apply[T /* <: js.Object */](): js.Array[

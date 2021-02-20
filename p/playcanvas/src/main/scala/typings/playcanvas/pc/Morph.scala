@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * from the {@link pc.Application}.
   */
 @js.native
-trait Morph extends js.Object {
+trait Morph extends StObject {
   
   /**
     * Frees video memory allocated by this object.
@@ -34,24 +35,12 @@ object Morph {
   }
   
   @scala.inline
-  implicit class MorphOps[Self <: Morph] (val x: Self) extends AnyVal {
+  implicit class MorphMutableBuilder[Self <: Morph] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTarget(value: Double => MorphTarget): Self = this.set("getTarget", js.Any.fromFunction1(value))
+    def setGetTarget(value: Double => MorphTarget): Self = StObject.set(x, "getTarget", js.Any.fromFunction1(value))
   }
 }

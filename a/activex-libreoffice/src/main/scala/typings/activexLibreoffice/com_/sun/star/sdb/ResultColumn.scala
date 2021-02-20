@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,54 +108,42 @@ object ResultColumn {
   }
   
   @scala.inline
-  implicit class ResultColumnOps[Self <: ResultColumn] (val x: Self) extends AnyVal {
+  implicit class ResultColumnMutableBuilder[Self <: ResultColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplaySize(value: Double): Self = StObject.set(x, "DisplaySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalogName(value: String): Self = this.set("CatalogName", value.asInstanceOf[js.Any])
+    def setIsDefinitelyWritable(value: Boolean): Self = StObject.set(x, "IsDefinitelyWritable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplaySize(value: Double): Self = this.set("DisplaySize", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = this.set("IsCaseSensitive", value.asInstanceOf[js.Any])
+    def setIsSearchable(value: Boolean): Self = StObject.set(x, "IsSearchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefinitelyWritable(value: Boolean): Self = this.set("IsDefinitelyWritable", value.asInstanceOf[js.Any])
+    def setIsSigned(value: Boolean): Self = StObject.set(x, "IsSigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
+    def setIsWritable(value: Boolean): Self = StObject.set(x, "IsWritable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSearchable(value: Boolean): Self = this.set("IsSearchable", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSigned(value: Boolean): Self = this.set("IsSigned", value.asInstanceOf[js.Any])
+    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWritable(value: Boolean): Self = this.set("IsWritable", value.asInstanceOf[js.Any])
+    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableName(value: String): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

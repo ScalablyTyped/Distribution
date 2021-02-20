@@ -7,16 +7,16 @@ import typings.typeorm.entitySubscriberInterfaceMod.EntitySubscriberInterface
 import typings.typeorm.objectLiteralMod.ObjectLiteral
 import typings.typeorm.queryRunnerMod.QueryRunner
 import typings.typeorm.relationMetadataMod.RelationMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/subscriber/Broadcaster", JSImport.Namespace)
-@js.native
-object broadcasterMod extends js.Object {
+object broadcasterMod {
   
+  @JSImport("typeorm/browser/subscriber/Broadcaster", "Broadcaster")
   @js.native
-  class Broadcaster protected () extends js.Object {
+  class Broadcaster protected () extends StObject {
     def this(queryRunner: QueryRunner) = this()
     
     /**

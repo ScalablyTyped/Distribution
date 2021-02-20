@@ -1,11 +1,12 @@
 package typings.awsSdk.servicequotasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAWSDefaultServiceQuotasResponse extends js.Object {
+trait ListAWSDefaultServiceQuotasResponse extends StObject {
   
   /**
     * (Optional) Use this parameter in a request if you receive a NextToken response in a previous request that indicates that there's more output available. In a subsequent call, set it to the value of the previous call's NextToken response to indicate where the output should continue from.
@@ -26,33 +27,21 @@ object ListAWSDefaultServiceQuotasResponse {
   }
   
   @scala.inline
-  implicit class ListAWSDefaultServiceQuotasResponseOps[Self <: ListAWSDefaultServiceQuotasResponse] (val x: Self) extends AnyVal {
+  implicit class ListAWSDefaultServiceQuotasResponseMutableBuilder[Self <: ListAWSDefaultServiceQuotasResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuotas(value: ServiceQuotaListDefinition): Self = StObject.set(x, "Quotas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setQuotasUndefined: Self = StObject.set(x, "Quotas", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setQuotasVarargs(value: ServiceQuota*): Self = this.set("Quotas", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuotas(value: ServiceQuotaListDefinition): Self = this.set("Quotas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotas: Self = this.set("Quotas", js.undefined)
+    def setQuotasVarargs(value: ServiceQuota*): Self = StObject.set(x, "Quotas", js.Array(value :_*))
   }
 }

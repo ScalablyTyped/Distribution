@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AvailabilityZone extends js.Object {
+trait AvailabilityZone extends StObject {
   
   /**
     * The ID of the subnet. You can specify one subnet per Availability Zone.
@@ -26,30 +27,18 @@ object AvailabilityZone {
   }
   
   @scala.inline
-  implicit class AvailabilityZoneOps[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
+  implicit class AvailabilityZoneMutableBuilder[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubnetId(value: NonEmptyString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setZoneName(value: NonEmptyString): Self = StObject.set(x, "ZoneName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: NonEmptyString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
-    
-    @scala.inline
-    def setZoneName(value: NonEmptyString): Self = this.set("ZoneName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoneName: Self = this.set("ZoneName", js.undefined)
+    def setZoneNameUndefined: Self = StObject.set(x, "ZoneName", js.undefined)
   }
 }

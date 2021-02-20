@@ -4,14 +4,13 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.ListItem
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**Located in sp.search.apps.js*/
-@JSGlobal("Microsoft.SharePoint.Client.Search.Analytics")
-@js.native
-object Analytics extends js.Object {
+object Analytics {
   
   @js.native
   trait AnalyticsItemData extends ClientObject {

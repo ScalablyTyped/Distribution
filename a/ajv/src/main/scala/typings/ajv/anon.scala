@@ -1,20 +1,16 @@
 package typings.ajv
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.ajvBooleans.`true`
-import typings.ajv.mod.AjvErrors.MissingRefError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Copy extends js.Object {
+  trait Copy extends StObject {
     
     def copy(obj: js.Any): js.Any = js.native
     def copy(obj: js.Any, target: js.Any): js.Any = js.native
@@ -43,10 +39,12 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait TypeofMissingRefError
-    extends Instantiable2[/* baseId */ String, /* ref */ String, MissingRefError]
-       with Instantiable3[/* baseId */ String, /* ref */ String, /* message */ String, MissingRefError] {
+  trait TypeofMissingRefError extends StObject {
     
+    /* static member */
     def message(baseId: String, ref: String): String = js.native
+    /* static member */
+    @JSName("message")
+    var message_Original: js.Function2[/* baseId */ String, /* ref */ String, String] = js.native
   }
 }

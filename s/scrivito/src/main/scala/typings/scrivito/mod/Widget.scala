@@ -1,12 +1,13 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrivito", "Widget")
 @js.native
-class Widget protected () extends js.Object {
+class Widget protected () extends StObject {
   def this(arg: js.Object) = this()
   
   val _id: String = js.native

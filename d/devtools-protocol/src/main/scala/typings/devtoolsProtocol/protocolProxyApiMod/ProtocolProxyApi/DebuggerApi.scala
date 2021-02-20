@@ -51,12 +51,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.SetSkipAllPausesRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SetVariableValueRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.StepIntoRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.StepOverRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebuggerApi extends js.Object {
+trait DebuggerApi extends StObject {
   
   /**
     * Continues execution until specific location is reached.

@@ -9,16 +9,19 @@ import typings.vue.optionsMod.DirectiveOptions
 import typings.vue.optionsMod.PropsDefinition
 import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-clickaway", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("vue-clickaway", "directive")
+  @js.native
   val directive: DirectiveOptions = js.native
   
+  @JSImport("vue-clickaway", "mixin")
+  @js.native
   val mixin: (ComponentOptions[
     Vue, 
     DefaultData[Vue], 

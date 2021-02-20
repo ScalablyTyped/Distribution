@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2ContentLocation extends js.Object {
+trait GooglePrivacyDlpV2ContentLocation extends StObject {
   
   /**
     * Name of the container where the finding is located. The top level name is the source file name or table name. Names of some common storage containers are formatted as follows: *
@@ -44,60 +45,48 @@ object GooglePrivacyDlpV2ContentLocation {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ContentLocationOps[Self <: GooglePrivacyDlpV2ContentLocation] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ContentLocationMutableBuilder[Self <: GooglePrivacyDlpV2ContentLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerTimestamp(value: String): Self = StObject.set(x, "containerTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setContainerTimestampUndefined: Self = StObject.set(x, "containerTimestamp", js.undefined)
     
     @scala.inline
-    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    def setContainerVersion(value: String): Self = StObject.set(x, "containerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerTimestamp(value: String): Self = this.set("containerTimestamp", value.asInstanceOf[js.Any])
+    def setContainerVersionUndefined: Self = StObject.set(x, "containerVersion", js.undefined)
     
     @scala.inline
-    def deleteContainerTimestamp: Self = this.set("containerTimestamp", js.undefined)
+    def setDocumentLocation(value: GooglePrivacyDlpV2DocumentLocation): Self = StObject.set(x, "documentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerVersion(value: String): Self = this.set("containerVersion", value.asInstanceOf[js.Any])
+    def setDocumentLocationUndefined: Self = StObject.set(x, "documentLocation", js.undefined)
     
     @scala.inline
-    def deleteContainerVersion: Self = this.set("containerVersion", js.undefined)
+    def setImageLocation(value: GooglePrivacyDlpV2ImageLocation): Self = StObject.set(x, "imageLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentLocation(value: GooglePrivacyDlpV2DocumentLocation): Self = this.set("documentLocation", value.asInstanceOf[js.Any])
+    def setImageLocationUndefined: Self = StObject.set(x, "imageLocation", js.undefined)
     
     @scala.inline
-    def deleteDocumentLocation: Self = this.set("documentLocation", js.undefined)
+    def setMetadataLocation(value: GooglePrivacyDlpV2MetadataLocation): Self = StObject.set(x, "metadataLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLocation(value: GooglePrivacyDlpV2ImageLocation): Self = this.set("imageLocation", value.asInstanceOf[js.Any])
+    def setMetadataLocationUndefined: Self = StObject.set(x, "metadataLocation", js.undefined)
     
     @scala.inline
-    def deleteImageLocation: Self = this.set("imageLocation", js.undefined)
+    def setRecordLocation(value: GooglePrivacyDlpV2RecordLocation): Self = StObject.set(x, "recordLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataLocation(value: GooglePrivacyDlpV2MetadataLocation): Self = this.set("metadataLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadataLocation: Self = this.set("metadataLocation", js.undefined)
-    
-    @scala.inline
-    def setRecordLocation(value: GooglePrivacyDlpV2RecordLocation): Self = this.set("recordLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordLocation: Self = this.set("recordLocation", js.undefined)
+    def setRecordLocationUndefined: Self = StObject.set(x, "recordLocation", js.undefined)
   }
 }

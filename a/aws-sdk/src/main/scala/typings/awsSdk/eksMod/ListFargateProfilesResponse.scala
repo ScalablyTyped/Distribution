@@ -1,11 +1,12 @@
 package typings.awsSdk.eksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListFargateProfilesResponse extends js.Object {
+trait ListFargateProfilesResponse extends StObject {
   
   /**
     * A list of all of the Fargate profiles associated with the specified cluster.
@@ -26,33 +27,21 @@ object ListFargateProfilesResponse {
   }
   
   @scala.inline
-  implicit class ListFargateProfilesResponseOps[Self <: ListFargateProfilesResponse] (val x: Self) extends AnyVal {
+  implicit class ListFargateProfilesResponseMutableBuilder[Self <: ListFargateProfilesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFargateProfileNames(value: StringList): Self = StObject.set(x, "fargateProfileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFargateProfileNamesUndefined: Self = StObject.set(x, "fargateProfileNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFargateProfileNamesVarargs(value: String*): Self = StObject.set(x, "fargateProfileNames", js.Array(value :_*))
     
     @scala.inline
-    def setFargateProfileNamesVarargs(value: String*): Self = this.set("fargateProfileNames", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFargateProfileNames(value: StringList): Self = this.set("fargateProfileNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFargateProfileNames: Self = this.set("fargateProfileNames", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

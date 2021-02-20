@@ -1,15 +1,22 @@
 package typings.dhtmlxgantt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @JSName("Gantt")
-  var Gantt_ : GanttEnterprise = js.native
+  @JSGlobal("Gantt")
+  @js.native
+  def Gantt_ : GanttEnterprise = js.native
   
-  var gantt: GanttStatic = js.native
+  @scala.inline
+  def Gantt__=(x: GanttEnterprise): Unit = js.Dynamic.global.updateDynamic("Gantt")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("gantt")
+  @js.native
+  def gantt: GanttStatic = js.native
+  @scala.inline
+  def gantt_=(x: GanttStatic): Unit = js.Dynamic.global.updateDynamic("gantt")(x.asInstanceOf[js.Any])
 }

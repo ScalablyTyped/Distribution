@@ -1,12 +1,13 @@
 package typings.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __React.ComponentClass<any> * / any */ @js.native
-trait Plugin extends js.Object {
+trait Plugin extends StObject {
   
   var Action: js.UndefOr[js.Any] = js.native
   
@@ -24,33 +25,21 @@ object Plugin {
   }
   
   @scala.inline
-  implicit class PluginOps[Self <: Plugin] (val x: Self) extends AnyVal {
+  implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setStore(value: js.Any): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: js.Any): Self = this.set("Action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
-    
-    @scala.inline
-    def setStore(value: js.Any): Self = this.set("Store", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStore: Self = this.set("Store", js.undefined)
+    def setStoreUndefined: Self = StObject.set(x, "Store", js.undefined)
   }
 }

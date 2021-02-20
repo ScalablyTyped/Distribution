@@ -9,6 +9,7 @@ import typings.stripe.mod.IListOptions
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
 import typings.stripe.mod.IStripeSource
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.bankAccounts.IBankAccount
 import typings.stripe.mod.bankAccounts.IBankAccountUpdateOptions
@@ -35,13 +36,15 @@ import typings.stripe.mod.subscriptions.ISubscription
 import typings.stripe.mod.subscriptions.ISubscriptionCancellationOptions
 import typings.stripe.mod.subscriptions.ISubscriptionCustCreationOptions
 import typings.stripe.mod.subscriptions.ISubscriptionUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Customers")
 @js.native
-class Customers () extends StripeResource {
+class Customers protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def cancelSubscription(customerId: String, subscriptionId: String): js.Promise[ISubscription] = js.native
   def cancelSubscription(customerId: String, subscriptionId: String, data: ISubscriptionCancellationOptions): js.Promise[ISubscription] = js.native

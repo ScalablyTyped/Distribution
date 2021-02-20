@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IdentifiableLanguage. */
 @js.native
-trait IdentifiableLanguage extends js.Object {
+trait IdentifiableLanguage extends StObject {
   
   /** The language code for an identifiable language. */
   var language: String = js.native
@@ -23,24 +24,12 @@ object IdentifiableLanguage {
   }
   
   @scala.inline
-  implicit class IdentifiableLanguageOps[Self <: IdentifiableLanguage] (val x: Self) extends AnyVal {
+  implicit class IdentifiableLanguageMutableBuilder[Self <: IdentifiableLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

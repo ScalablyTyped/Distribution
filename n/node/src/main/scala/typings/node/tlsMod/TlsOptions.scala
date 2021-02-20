@@ -2,6 +2,7 @@ package typings.node.tlsMod
 
 import typings.node.NodeJS.TypedArray
 import typings.std.DataView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,36 +60,24 @@ object TlsOptions {
   }
   
   @scala.inline
-  implicit class TlsOptionsOps[Self <: TlsOptions] (val x: Self) extends AnyVal {
+  implicit class TlsOptionsMutableBuilder[Self <: TlsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandshakeTimeout(value: Double): Self = StObject.set(x, "handshakeTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandshakeTimeoutUndefined: Self = StObject.set(x, "handshakeTimeout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPskCallback(value: (/* socket */ TLSSocket, /* identity */ String) => DataView | TypedArray | Null): Self = StObject.set(x, "pskCallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHandshakeTimeout(value: Double): Self = this.set("handshakeTimeout", value.asInstanceOf[js.Any])
+    def setPskCallbackUndefined: Self = StObject.set(x, "pskCallback", js.undefined)
     
     @scala.inline
-    def deleteHandshakeTimeout: Self = this.set("handshakeTimeout", js.undefined)
+    def setPskIdentityHint(value: String): Self = StObject.set(x, "pskIdentityHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPskCallback(value: (/* socket */ TLSSocket, /* identity */ String) => DataView | TypedArray | Null): Self = this.set("pskCallback", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deletePskCallback: Self = this.set("pskCallback", js.undefined)
-    
-    @scala.inline
-    def setPskIdentityHint(value: String): Self = this.set("pskIdentityHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePskIdentityHint: Self = this.set("pskIdentityHint", js.undefined)
+    def setPskIdentityHintUndefined: Self = StObject.set(x, "pskIdentityHint", js.undefined)
   }
 }

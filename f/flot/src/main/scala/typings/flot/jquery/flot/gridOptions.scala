@@ -1,11 +1,12 @@
 package typings.flot.jquery.flot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait gridOptions extends js.Object {
+trait gridOptions extends StObject {
   
   var aboveData: js.UndefOr[Boolean] = js.native
   
@@ -13,26 +14,26 @@ trait gridOptions extends js.Object {
   
   var axisMargin: js.UndefOr[Double] = js.native
   
-                  // color
+  // color
   var backgroundColor: js.UndefOr[js.Any] = js.native
   
-            // number or width object
+  // number or width object
   var borderColor: js.UndefOr[js.Any] = js.native
   
-               //array of markings or (fn: axes -> array of markings)
+  //array of markings or (fn: axes -> array of markings)
   var borderWidth: js.UndefOr[js.Any] = js.native
   
-         // or null
+  // or null
   var clickable: js.UndefOr[Boolean] = js.native
   
   var color: js.UndefOr[js.Any] = js.native
   
   var hoverable: js.UndefOr[Boolean] = js.native
   
-                  // number or margin object
+  // number or margin object
   var labelMargin: js.UndefOr[Double] = js.native
   
-        //color/gradient or null
+  //color/gradient or null
   var margin: js.UndefOr[js.Any] = js.native
   
   var markings: js.UndefOr[js.Any] = js.native
@@ -41,7 +42,7 @@ trait gridOptions extends js.Object {
   
   var markingsLineWidth: js.UndefOr[Double] = js.native
   
-            // color or null
+  // color or null
   var minBorderMargin: js.UndefOr[Double] = js.native
   
   var mouseActiveRadius: js.UndefOr[Double] = js.native
@@ -59,126 +60,114 @@ object gridOptions {
   }
   
   @scala.inline
-  implicit class gridOptionsOps[Self <: gridOptions] (val x: Self) extends AnyVal {
+  implicit class gridOptionsMutableBuilder[Self <: gridOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAboveData(value: Boolean): Self = StObject.set(x, "aboveData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAboveDataUndefined: Self = StObject.set(x, "aboveData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoHighlight(value: Boolean): Self = StObject.set(x, "autoHighlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAboveData(value: Boolean): Self = this.set("aboveData", value.asInstanceOf[js.Any])
+    def setAutoHighlightUndefined: Self = StObject.set(x, "autoHighlight", js.undefined)
     
     @scala.inline
-    def deleteAboveData: Self = this.set("aboveData", js.undefined)
+    def setAxisMargin(value: Double): Self = StObject.set(x, "axisMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHighlight(value: Boolean): Self = this.set("autoHighlight", value.asInstanceOf[js.Any])
+    def setAxisMarginUndefined: Self = StObject.set(x, "axisMargin", js.undefined)
     
     @scala.inline
-    def deleteAutoHighlight: Self = this.set("autoHighlight", js.undefined)
+    def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisMargin(value: Double): Self = this.set("axisMargin", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAxisMargin: Self = this.set("axisMargin", js.undefined)
+    def setBorderColor(value: js.Any): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: js.Any): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderWidth(value: js.Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: js.Any): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: js.Any): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClickable: Self = this.set("clickable", js.undefined)
+    def setHoverable(value: Boolean): Self = StObject.set(x, "hoverable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setHoverableUndefined: Self = StObject.set(x, "hoverable", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabelMargin(value: Double): Self = StObject.set(x, "labelMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    def setLabelMarginUndefined: Self = StObject.set(x, "labelMargin", js.undefined)
     
     @scala.inline
-    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    def setMargin(value: js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelMargin(value: Double): Self = this.set("labelMargin", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLabelMargin: Self = this.set("labelMargin", js.undefined)
+    def setMarkings(value: js.Any): Self = StObject.set(x, "markings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: js.Any): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMarkingsColor(value: js.Any): Self = StObject.set(x, "markingsColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setMarkingsColorUndefined: Self = StObject.set(x, "markingsColor", js.undefined)
     
     @scala.inline
-    def setMarkings(value: js.Any): Self = this.set("markings", value.asInstanceOf[js.Any])
+    def setMarkingsLineWidth(value: Double): Self = StObject.set(x, "markingsLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkings: Self = this.set("markings", js.undefined)
+    def setMarkingsLineWidthUndefined: Self = StObject.set(x, "markingsLineWidth", js.undefined)
     
     @scala.inline
-    def setMarkingsColor(value: js.Any): Self = this.set("markingsColor", value.asInstanceOf[js.Any])
+    def setMarkingsUndefined: Self = StObject.set(x, "markings", js.undefined)
     
     @scala.inline
-    def deleteMarkingsColor: Self = this.set("markingsColor", js.undefined)
+    def setMinBorderMargin(value: Double): Self = StObject.set(x, "minBorderMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkingsLineWidth(value: Double): Self = this.set("markingsLineWidth", value.asInstanceOf[js.Any])
+    def setMinBorderMarginUndefined: Self = StObject.set(x, "minBorderMargin", js.undefined)
     
     @scala.inline
-    def deleteMarkingsLineWidth: Self = this.set("markingsLineWidth", js.undefined)
+    def setMouseActiveRadius(value: Double): Self = StObject.set(x, "mouseActiveRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBorderMargin(value: Double): Self = this.set("minBorderMargin", value.asInstanceOf[js.Any])
+    def setMouseActiveRadiusUndefined: Self = StObject.set(x, "mouseActiveRadius", js.undefined)
     
     @scala.inline
-    def deleteMinBorderMargin: Self = this.set("minBorderMargin", js.undefined)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseActiveRadius(value: Double): Self = this.set("mouseActiveRadius", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteMouseActiveRadius: Self = this.set("mouseActiveRadius", js.undefined)
+    def setTickColor(value: js.Any): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
-    
-    @scala.inline
-    def setTickColor(value: js.Any): Self = this.set("tickColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTickColor: Self = this.set("tickColor", js.undefined)
+    def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.kdTreeJavascript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kd-tree-javascript", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("kd-tree-javascript", "kdTree")
   @js.native
-  class kdTree[T] protected () extends js.Object {
+  class kdTree[T] protected () extends StObject {
     // Create a new tree from a list of points, a distance function, and a
     // list of dimensions.
     def this(

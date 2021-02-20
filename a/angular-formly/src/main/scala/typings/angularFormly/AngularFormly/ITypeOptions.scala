@@ -7,6 +7,7 @@ import typings.angular.mod.IController
 import typings.angular.mod.IDirectiveLinkFn
 import typings.angular.mod.IScope
 import typings.angular.mod.ITranscludeFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
   */
 @js.native
-trait ITypeOptions extends js.Object {
+trait ITypeOptions extends StObject {
   
   var apiCheck: js.UndefOr[StringDictionary[js.Function]] = js.native
   
   var apiCheckFunction: js.UndefOr[String] = js.native
   
-   //'throw' or 'warn
+  //'throw' or 'warn
   var apiCheckInstance: js.UndefOr[js.Any] = js.native
   
   var apiCheckOptions: js.UndefOr[js.Object] = js.native
@@ -59,113 +60,101 @@ object ITypeOptions {
   }
   
   @scala.inline
-  implicit class ITypeOptionsOps[Self <: ITypeOptions] (val x: Self) extends AnyVal {
+  implicit class ITypeOptionsMutableBuilder[Self <: ITypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiCheck(value: StringDictionary[js.Function]): Self = StObject.set(x, "apiCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiCheckFunction(value: String): Self = StObject.set(x, "apiCheckFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiCheckFunctionUndefined: Self = StObject.set(x, "apiCheckFunction", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setApiCheckInstance(value: js.Any): Self = StObject.set(x, "apiCheckInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiCheck(value: StringDictionary[js.Function]): Self = this.set("apiCheck", value.asInstanceOf[js.Any])
+    def setApiCheckInstanceUndefined: Self = StObject.set(x, "apiCheckInstance", js.undefined)
     
     @scala.inline
-    def deleteApiCheck: Self = this.set("apiCheck", js.undefined)
+    def setApiCheckOptions(value: js.Object): Self = StObject.set(x, "apiCheckOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiCheckFunction(value: String): Self = this.set("apiCheckFunction", value.asInstanceOf[js.Any])
+    def setApiCheckOptionsUndefined: Self = StObject.set(x, "apiCheckOptions", js.undefined)
     
     @scala.inline
-    def deleteApiCheckFunction: Self = this.set("apiCheckFunction", js.undefined)
+    def setApiCheckUndefined: Self = StObject.set(x, "apiCheck", js.undefined)
     
     @scala.inline
-    def setApiCheckInstance(value: js.Any): Self = this.set("apiCheckInstance", value.asInstanceOf[js.Any])
+    def setController(value: js.Function | String | js.Array[_]): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApiCheckInstance: Self = this.set("apiCheckInstance", js.undefined)
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setApiCheckOptions(value: js.Object): Self = this.set("apiCheckOptions", value.asInstanceOf[js.Any])
+    def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
     
     @scala.inline
-    def deleteApiCheckOptions: Self = this.set("apiCheckOptions", js.undefined)
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControllerVarargs(value: js.Any*): Self = this.set("controller", js.Array(value :_*))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setController(value: js.Function | String | js.Array[_]): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setDefaultOptions(value: IFieldConfigurationObject | js.Function): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setDefaultOptions(value: IFieldConfigurationObject | js.Function): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultOptions: Self = this.set("defaultOptions", js.undefined)
-    
-    @scala.inline
-    def setExtends(value: String): Self = this.set("extends", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtends: Self = this.set("extends", js.undefined)
+    def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
     
     @scala.inline
     def setLink(
       value: (IScope, JQLite, IAttributes, /* controller */ js.UndefOr[IController], /* transclude */ js.UndefOr[ITranscludeFunction]) => Unit
-    ): Self = this.set("link", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "link", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setOverwriteOk(value: Boolean): Self = this.set("overwriteOk", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverwriteOk: Self = this.set("overwriteOk", js.undefined)
+    def setOverwriteOk(value: Boolean): Self = StObject.set(x, "overwriteOk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: js.Function | String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setOverwriteOkUndefined: Self = StObject.set(x, "overwriteOk", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplate(value: js.Function | String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateUrl(value: js.Function | String): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+    def setTemplateUrl(value: js.Function | String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateOptions(value: js.Function): Self = this.set("validateOptions", value.asInstanceOf[js.Any])
+    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
     @scala.inline
-    def deleteValidateOptions: Self = this.set("validateOptions", js.undefined)
+    def setValidateOptions(value: js.Function): Self = StObject.set(x, "validateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapperVarargs(value: String*): Self = this.set("wrapper", js.Array(value :_*))
+    def setValidateOptionsUndefined: Self = StObject.set(x, "validateOptions", js.undefined)
     
     @scala.inline
-    def setWrapper(value: String | js.Array[String]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
+    def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+    
+    @scala.inline
+    def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

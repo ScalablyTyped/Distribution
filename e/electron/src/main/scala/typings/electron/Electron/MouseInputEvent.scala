@@ -10,6 +10,7 @@ import typings.electron.electronStrings.mouseMove
 import typings.electron.electronStrings.mouseUp
 import typings.electron.electronStrings.mouseWheel
 import typings.electron.electronStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,63 +58,51 @@ object MouseInputEvent {
   }
   
   @scala.inline
-  implicit class MouseInputEventOps[Self <: MouseInputEvent] (val x: Self) extends AnyVal {
+  implicit class MouseInputEventMutableBuilder[Self <: MouseInputEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: left | middle | right): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClickCount(value: Double): Self = StObject.set(x, "clickCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setClickCountUndefined: Self = StObject.set(x, "clickCount", js.undefined)
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setGlobalX(value: Double): Self = StObject.set(x, "globalX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setGlobalXUndefined: Self = StObject.set(x, "globalX", js.undefined)
     
     @scala.inline
-    def setButton(value: left | middle | right): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setGlobalY(value: Double): Self = StObject.set(x, "globalY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setGlobalYUndefined: Self = StObject.set(x, "globalY", js.undefined)
     
     @scala.inline
-    def setClickCount(value: Double): Self = this.set("clickCount", value.asInstanceOf[js.Any])
+    def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClickCount: Self = this.set("clickCount", js.undefined)
+    def setMovementXUndefined: Self = StObject.set(x, "movementX", js.undefined)
     
     @scala.inline
-    def setGlobalX(value: Double): Self = this.set("globalX", value.asInstanceOf[js.Any])
+    def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalX: Self = this.set("globalX", js.undefined)
+    def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
     
     @scala.inline
-    def setGlobalY(value: Double): Self = this.set("globalY", value.asInstanceOf[js.Any])
+    def setType(value: mouseDown | mouseUp | mouseEnter | mouseLeave | contextMenu | mouseWheel | mouseMove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGlobalY: Self = this.set("globalY", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovementX(value: Double): Self = this.set("movementX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMovementX: Self = this.set("movementX", js.undefined)
-    
-    @scala.inline
-    def setMovementY(value: Double): Self = this.set("movementY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMovementY: Self = this.set("movementY", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

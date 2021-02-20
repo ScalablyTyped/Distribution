@@ -1,5 +1,6 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,25 +68,60 @@ class Ellipsoid () extends Packable {
   def transformPositionToScaledSpace(position: Cartesian3): Cartesian3 = js.native
   def transformPositionToScaledSpace(position: Cartesian3, result: Cartesian3): Cartesian3 = js.native
 }
-/* static members */
-@JSImport("cesium", "Ellipsoid")
-@js.native
-object Ellipsoid extends js.Object {
+object Ellipsoid {
   
-  var MOON: Ellipsoid = js.native
+  @JSImport("cesium", "Ellipsoid")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var UNIT_SPHERE: Ellipsoid = js.native
+  /* static member */
+  @JSImport("cesium", "Ellipsoid.MOON")
+  @js.native
+  def MOON: Ellipsoid = js.native
+  @scala.inline
+  def MOON_=(x: Ellipsoid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOON")(x.asInstanceOf[js.Any])
   
-  var WGS84: Ellipsoid = js.native
+  /* static member */
+  @JSImport("cesium", "Ellipsoid.UNIT_SPHERE")
+  @js.native
+  def UNIT_SPHERE: Ellipsoid = js.native
+  @scala.inline
+  def UNIT_SPHERE_=(x: Ellipsoid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNIT_SPHERE")(x.asInstanceOf[js.Any])
   
-  def clone(ellipsoid: Ellipsoid): Ellipsoid = js.native
-  def clone(ellipsoid: Ellipsoid, result: Ellipsoid): Ellipsoid = js.native
+  /* static member */
+  @JSImport("cesium", "Ellipsoid.WGS84")
+  @js.native
+  def WGS84: Ellipsoid = js.native
+  @scala.inline
+  def WGS84_=(x: Ellipsoid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WGS84")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("cesium", "Ellipsoid.clone")
+  @js.native
+  def clone_(ellipsoid: Ellipsoid): Ellipsoid = js.native
+  @JSImport("cesium", "Ellipsoid.clone")
+  @js.native
+  def clone_(ellipsoid: Ellipsoid, result: Ellipsoid): Ellipsoid = js.native
+  
+  /* static member */
+  @JSImport("cesium", "Ellipsoid.fromCartesian3")
+  @js.native
   def fromCartesian3(): Ellipsoid = js.native
+  @JSImport("cesium", "Ellipsoid.fromCartesian3")
+  @js.native
   def fromCartesian3(radii: Cartesian3): Ellipsoid = js.native
   
+  /* static member */
+  @JSImport("cesium", "Ellipsoid.unpack")
+  @js.native
   def unpack(array: js.Array[Double]): Ellipsoid = js.native
+  @JSImport("cesium", "Ellipsoid.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Ellipsoid): Ellipsoid = js.native
+  @JSImport("cesium", "Ellipsoid.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Ellipsoid = js.native
+  @JSImport("cesium", "Ellipsoid.unpack")
+  @js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Ellipsoid): Ellipsoid = js.native
 }

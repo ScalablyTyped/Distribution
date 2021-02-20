@@ -3,6 +3,7 @@ package typings.aliApp.my
 import typings.aliApp.aliAppStrings.Android
 import typings.aliApp.aliAppStrings.alipay
 import typings.aliApp.aliAppStrings.iOS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region 系统信息 https://docs.alipay.com/mini/api/system-info
 @js.native
-trait SystemInfo extends js.Object {
+trait SystemInfo extends StObject {
   
   /**
     * 当前运行的客户端，当前是支付宝则有效值是"alipay"
@@ -112,63 +113,51 @@ object SystemInfo {
   }
   
   @scala.inline
-  implicit class SystemInfoOps[Self <: SystemInfo] (val x: Self) extends AnyVal {
+  implicit class SystemInfoMutableBuilder[Self <: SystemInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: alipay | String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentBattery(value: String): Self = StObject.set(x, "currentBattery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: alipay | String): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setFontSizeSetting(value: Double): Self = StObject.set(x, "fontSizeSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentBattery(value: String): Self = this.set("currentBattery", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSizeSetting(value: Double): Self = this.set("fontSizeSetting", value.asInstanceOf[js.Any])
+    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setPlatform(value: Android | iOS | String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setScreenHeight(value: Double): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setScreenWidth(value: Double): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: Android | iOS | String): Self = this.set("platform", value.asInstanceOf[js.Any])
+    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenHeight(value: Double): Self = this.set("screenHeight", value.asInstanceOf[js.Any])
+    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenWidth(value: Double): Self = this.set("screenWidth", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: String): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: String): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowHeight(value: Double): Self = this.set("windowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowWidth(value: Double): Self = this.set("windowWidth", value.asInstanceOf[js.Any])
+    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
   }
 }

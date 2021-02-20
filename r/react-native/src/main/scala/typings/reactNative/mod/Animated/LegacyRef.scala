@@ -1,11 +1,12 @@
 package typings.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegacyRef[C] extends js.Object {
+trait LegacyRef[C] extends StObject {
   
   def getNode(): C = js.native
 }
@@ -18,21 +19,9 @@ object LegacyRef {
   }
   
   @scala.inline
-  implicit class LegacyRefOps[Self <: LegacyRef[_], C] (val x: Self with LegacyRef[C]) extends AnyVal {
+  implicit class LegacyRefMutableBuilder[Self <: LegacyRef[_], C] (val x: Self with LegacyRef[C]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetNode(value: () => C): Self = this.set("getNode", js.Any.fromFunction0(value))
+    def setGetNode(value: () => C): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
   }
 }

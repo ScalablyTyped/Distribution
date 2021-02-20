@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MacroError extends js.Object {
+trait MacroError extends StObject {
   
   @JSName("Access.MacroError_typekey")
   var AccessDotMacroError_typekey: MacroError = js.native
@@ -43,42 +44,30 @@ object MacroError {
   }
   
   @scala.inline
-  implicit class MacroErrorOps[Self <: MacroError] (val x: Self) extends AnyVal {
+  implicit class MacroErrorMutableBuilder[Self <: MacroError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDotMacroError_typekey(value: MacroError): Self = StObject.set(x, "Access.MacroError_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionName(value: String): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArguments(value: String): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDotMacroError_typekey(value: MacroError): Self = this.set("Access.MacroError_typekey", value.asInstanceOf[js.Any])
+    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionName(value: String): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: String): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    def setMacroName(value: String): Self = StObject.set(x, "MacroName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = this.set("IsMemberSafe", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMacroName(value: String): Self = this.set("MacroName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumber(value: Double): Self = this.set("Number", value.asInstanceOf[js.Any])
+    def setNumber(value: Double): Self = StObject.set(x, "Number", value.asInstanceOf[js.Any])
   }
 }

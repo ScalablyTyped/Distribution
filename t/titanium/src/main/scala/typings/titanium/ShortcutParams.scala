@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Contacts.Person
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Object of options for <Titanium.UI.iOS.ApplicationShortcuts.addDynamicShortcut>.
   */
 @js.native
-trait ShortcutParams extends js.Object {
+trait ShortcutParams extends StObject {
   
   /**
     * The icon to be displayed on the application shortcut. You can either use one of the constants like
@@ -47,42 +48,30 @@ object ShortcutParams {
   }
   
   @scala.inline
-  implicit class ShortcutParamsOps[Self <: ShortcutParams] (val x: Self) extends AnyVal {
+  implicit class ShortcutParamsMutableBuilder[Self <: ShortcutParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcon(value: Double | String | Person): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def setIcon(value: Double | String | Person): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setUserInfo(value: js.Any): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
-    
-    @scala.inline
-    def setUserInfo(value: js.Any): Self = this.set("userInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

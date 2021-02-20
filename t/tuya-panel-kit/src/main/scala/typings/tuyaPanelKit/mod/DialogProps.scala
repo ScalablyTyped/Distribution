@@ -8,12 +8,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.PushDown
 import typings.tuyaPanelKit.tuyaPanelKitStrings.ScaleFadeIn
 import typings.tuyaPanelKit.tuyaPanelKitStrings.ScalePullDown
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DialogProps extends js.Object {
+trait DialogProps extends StObject {
   
   var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   
@@ -44,83 +45,71 @@ object DialogProps {
   }
   
   @scala.inline
-  implicit class DialogPropsOps[Self <: DialogProps] (val x: Self) extends AnyVal {
+  implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentStyle(value: StyleProp[ViewStyle]): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
-    
-    @scala.inline
-    def setContentStyleNull: Self = this.set("contentStyle", null)
+    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
     @scala.inline
     def setMotionConfig(
       value: MotionFadeProps | MotionPullUpProps | MotionScaleFadeInProps | MotionScalePullDownProps | MotionPushDownProps
-    ): Self = this.set("motionConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionConfig: Self = this.set("motionConfig", js.undefined)
+    def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     
     @scala.inline
-    def setMotionType(value: none_ | ScaleFadeIn | Fade | PullUp | ScalePullDown | PushDown): Self = this.set("motionType", value.asInstanceOf[js.Any])
+    def setMotionType(value: none_ | ScaleFadeIn | Fade | PullUp | ScalePullDown | PushDown): Self = StObject.set(x, "motionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMotionType: Self = this.set("motionType", js.undefined)
+    def setMotionTypeUndefined: Self = StObject.set(x, "motionType", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setSubTitle(value: String): Self = this.set("subTitle", value.asInstanceOf[js.Any])
+    def setSubTitle(value: String): Self = StObject.set(x, "subTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubTitle: Self = this.set("subTitle", js.undefined)
+    def setSubTitleStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "subTitleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTitleStyle(value: StyleProp[ViewStyle]): Self = this.set("subTitleStyle", value.asInstanceOf[js.Any])
+    def setSubTitleStyleNull: Self = StObject.set(x, "subTitleStyle", null)
     
     @scala.inline
-    def deleteSubTitleStyle: Self = this.set("subTitleStyle", js.undefined)
+    def setSubTitleStyleUndefined: Self = StObject.set(x, "subTitleStyle", js.undefined)
     
     @scala.inline
-    def setSubTitleStyleNull: Self = this.set("subTitleStyle", null)
+    def setSubTitleUndefined: Self = StObject.set(x, "subTitle", js.undefined)
     
     @scala.inline
-    def setTitleNumberOfLines(value: Double): Self = this.set("titleNumberOfLines", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitleNumberOfLines: Self = this.set("titleNumberOfLines", js.undefined)
+    def setTitleNumberOfLines(value: Double): Self = StObject.set(x, "titleNumberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleStyle(value: StyleProp[ViewStyle]): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setTitleNumberOfLinesUndefined: Self = StObject.set(x, "titleNumberOfLines", js.undefined)
     
     @scala.inline
-    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    def setTitleStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleStyleNull: Self = this.set("titleStyle", null)
+    def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
+    
+    @scala.inline
+    def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
   }
 }

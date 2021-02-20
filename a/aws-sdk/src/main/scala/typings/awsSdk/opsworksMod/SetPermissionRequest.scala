@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetPermissionRequest extends js.Object {
+trait SetPermissionRequest extends StObject {
   
   /**
     * The user is allowed to use SSH to communicate with the instance.
@@ -41,42 +42,30 @@ object SetPermissionRequest {
   }
   
   @scala.inline
-  implicit class SetPermissionRequestOps[Self <: SetPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class SetPermissionRequestMutableBuilder[Self <: SetPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSsh(value: Boolean): Self = StObject.set(x, "AllowSsh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSshUndefined: Self = StObject.set(x, "AllowSsh", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowSudo(value: Boolean): Self = StObject.set(x, "AllowSudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamUserArn(value: String): Self = this.set("IamUserArn", value.asInstanceOf[js.Any])
+    def setAllowSudoUndefined: Self = StObject.set(x, "AllowSudo", js.undefined)
     
     @scala.inline
-    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSsh(value: Boolean): Self = this.set("AllowSsh", value.asInstanceOf[js.Any])
+    def setLevel(value: String): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowSsh: Self = this.set("AllowSsh", js.undefined)
+    def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
     
     @scala.inline
-    def setAllowSudo(value: Boolean): Self = this.set("AllowSudo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowSudo: Self = this.set("AllowSudo", js.undefined)
-    
-    @scala.inline
-    def setLevel(value: String): Self = this.set("Level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLevel: Self = this.set("Level", js.undefined)
+    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

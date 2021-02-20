@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentInfo extends js.Object {
+trait AgentInfo extends StObject {
   
   /**
     * The agent or connector ID.
@@ -66,81 +67,69 @@ object AgentInfo {
   }
   
   @scala.inline
-  implicit class AgentInfoOps[Self <: AgentInfo] (val x: Self) extends AnyVal {
+  implicit class AgentInfoMutableBuilder[Self <: AgentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentId(value: AgentId): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentIdUndefined: Self = StObject.set(x, "agentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentNetworkInfoList(value: AgentNetworkInfoList): Self = StObject.set(x, "agentNetworkInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentId(value: AgentId): Self = this.set("agentId", value.asInstanceOf[js.Any])
+    def setAgentNetworkInfoListUndefined: Self = StObject.set(x, "agentNetworkInfoList", js.undefined)
     
     @scala.inline
-    def deleteAgentId: Self = this.set("agentId", js.undefined)
+    def setAgentNetworkInfoListVarargs(value: AgentNetworkInfo*): Self = StObject.set(x, "agentNetworkInfoList", js.Array(value :_*))
     
     @scala.inline
-    def setAgentNetworkInfoListVarargs(value: AgentNetworkInfo*): Self = this.set("agentNetworkInfoList", js.Array(value :_*))
+    def setAgentType(value: String): Self = StObject.set(x, "agentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentNetworkInfoList(value: AgentNetworkInfoList): Self = this.set("agentNetworkInfoList", value.asInstanceOf[js.Any])
+    def setAgentTypeUndefined: Self = StObject.set(x, "agentType", js.undefined)
     
     @scala.inline
-    def deleteAgentNetworkInfoList: Self = this.set("agentNetworkInfoList", js.undefined)
+    def setCollectionStatus(value: String): Self = StObject.set(x, "collectionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentType(value: String): Self = this.set("agentType", value.asInstanceOf[js.Any])
+    def setCollectionStatusUndefined: Self = StObject.set(x, "collectionStatus", js.undefined)
     
     @scala.inline
-    def deleteAgentType: Self = this.set("agentType", js.undefined)
+    def setConnectorId(value: String): Self = StObject.set(x, "connectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionStatus(value: String): Self = this.set("collectionStatus", value.asInstanceOf[js.Any])
+    def setConnectorIdUndefined: Self = StObject.set(x, "connectorId", js.undefined)
     
     @scala.inline
-    def deleteCollectionStatus: Self = this.set("collectionStatus", js.undefined)
+    def setHealth(value: AgentStatus): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorId(value: String): Self = this.set("connectorId", value.asInstanceOf[js.Any])
+    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
     @scala.inline
-    def deleteConnectorId: Self = this.set("connectorId", js.undefined)
+    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealth(value: AgentStatus): Self = this.set("health", value.asInstanceOf[js.Any])
+    def setHostNameUndefined: Self = StObject.set(x, "hostName", js.undefined)
     
     @scala.inline
-    def deleteHealth: Self = this.set("health", js.undefined)
+    def setLastHealthPingTime(value: String): Self = StObject.set(x, "lastHealthPingTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostName(value: String): Self = this.set("hostName", value.asInstanceOf[js.Any])
+    def setLastHealthPingTimeUndefined: Self = StObject.set(x, "lastHealthPingTime", js.undefined)
     
     @scala.inline
-    def deleteHostName: Self = this.set("hostName", js.undefined)
+    def setRegisteredTime(value: String): Self = StObject.set(x, "registeredTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastHealthPingTime(value: String): Self = this.set("lastHealthPingTime", value.asInstanceOf[js.Any])
+    def setRegisteredTimeUndefined: Self = StObject.set(x, "registeredTime", js.undefined)
     
     @scala.inline
-    def deleteLastHealthPingTime: Self = this.set("lastHealthPingTime", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisteredTime(value: String): Self = this.set("registeredTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisteredTime: Self = this.set("registeredTime", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

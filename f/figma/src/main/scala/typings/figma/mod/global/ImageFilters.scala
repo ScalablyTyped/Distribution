@@ -1,11 +1,12 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageFilters extends js.Object {
+trait ImageFilters extends StObject {
   
   val contrast: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object ImageFilters {
   }
   
   @scala.inline
-  implicit class ImageFiltersOps[Self <: ImageFilters] (val x: Self) extends AnyVal {
+  implicit class ImageFiltersMutableBuilder[Self <: ImageFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExposure(value: Double): Self = StObject.set(x, "exposure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContrast(value: Double): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    def setExposureUndefined: Self = StObject.set(x, "exposure", js.undefined)
     
     @scala.inline
-    def deleteContrast: Self = this.set("contrast", js.undefined)
+    def setHighlights(value: Double): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposure(value: Double): Self = this.set("exposure", value.asInstanceOf[js.Any])
+    def setHighlightsUndefined: Self = StObject.set(x, "highlights", js.undefined)
     
     @scala.inline
-    def deleteExposure: Self = this.set("exposure", js.undefined)
+    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlights(value: Double): Self = this.set("highlights", value.asInstanceOf[js.Any])
+    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     
     @scala.inline
-    def deleteHighlights: Self = this.set("highlights", js.undefined)
+    def setShadows(value: Double): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: Double): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
     @scala.inline
-    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadows(value: Double): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    def setTemperatureUndefined: Self = StObject.set(x, "temperature", js.undefined)
     
     @scala.inline
-    def deleteShadows: Self = this.set("shadows", js.undefined)
+    def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemperature(value: Double): Self = this.set("temperature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemperature: Self = this.set("temperature", js.undefined)
-    
-    @scala.inline
-    def setTint(value: Double): Self = this.set("tint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTint: Self = this.set("tint", js.undefined)
+    def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
   }
 }

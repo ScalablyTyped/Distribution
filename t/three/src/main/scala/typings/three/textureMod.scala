@@ -14,14 +14,14 @@ import typings.three.eventDispatcherMod.EventDispatcher
 import typings.three.matrix3Mod.Matrix3
 import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/textures/Texture", JSImport.Namespace)
-@js.native
-object textureMod extends js.Object {
+object textureMod {
   
+  @JSImport("three/src/textures/Texture", "Texture")
   @js.native
   class Texture protected () extends EventDispatcher {
     /**
@@ -99,7 +99,7 @@ object textureMod extends js.Object {
     	 */
     var magFilter: TextureFilter = js.native
     
-     // ImageData[] for 2D textures and CubeTexture[] for cube textures;
+    // ImageData[] for 2D textures and CubeTexture[] for cube textures;
     /**
     	 * @default THREE.Texture.DEFAULT_MAPPING
     	 */
@@ -120,7 +120,7 @@ object textureMod extends js.Object {
     	 */
     var minFilter: TextureFilter = js.native
     
-     // HTMLImageElement or ImageData or { width: number, height: number } in some children;
+    // HTMLImageElement or ImageData or { width: number, height: number } in some children;
     /**
     	 * @default []
     	 */
@@ -191,11 +191,22 @@ object textureMod extends js.Object {
     var wrapT: Wrapping = js.native
   }
   /* static members */
-  @js.native
-  object Texture extends js.Object {
+  object Texture {
     
-    var DEFAULT_IMAGE: js.Any = js.native
+    @JSImport("three/src/textures/Texture", "Texture")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DEFAULT_MAPPING: js.Any = js.native
+    @JSImport("three/src/textures/Texture", "Texture.DEFAULT_IMAGE")
+    @js.native
+    def DEFAULT_IMAGE: js.Any = js.native
+    @scala.inline
+    def DEFAULT_IMAGE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_IMAGE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("three/src/textures/Texture", "Texture.DEFAULT_MAPPING")
+    @js.native
+    def DEFAULT_MAPPING: js.Any = js.native
+    @scala.inline
+    def DEFAULT_MAPPING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAPPING")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,180 +73,168 @@ object ClientMetadata {
   }
   
   @scala.inline
-  implicit class ClientMetadataOps[Self <: ClientMetadata] (val x: Self) extends AnyVal {
+  implicit class ClientMetadataMutableBuilder[Self <: ClientMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorization_encrypted_response_alg(value: String): Self = StObject.set(x, "authorization_encrypted_response_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorization_encrypted_response_algUndefined: Self = StObject.set(x, "authorization_encrypted_response_alg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorization_encrypted_response_enc(value: String): Self = StObject.set(x, "authorization_encrypted_response_enc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    def setAuthorization_encrypted_response_encUndefined: Self = StObject.set(x, "authorization_encrypted_response_enc", js.undefined)
     
     @scala.inline
-    def setAuthorization_encrypted_response_alg(value: String): Self = this.set("authorization_encrypted_response_alg", value.asInstanceOf[js.Any])
+    def setAuthorization_signed_response_alg(value: String): Self = StObject.set(x, "authorization_signed_response_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorization_encrypted_response_alg: Self = this.set("authorization_encrypted_response_alg", js.undefined)
+    def setAuthorization_signed_response_algUndefined: Self = StObject.set(x, "authorization_signed_response_alg", js.undefined)
     
     @scala.inline
-    def setAuthorization_encrypted_response_enc(value: String): Self = this.set("authorization_encrypted_response_enc", value.asInstanceOf[js.Any])
+    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthorization_encrypted_response_enc: Self = this.set("authorization_encrypted_response_enc", js.undefined)
+    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorization_signed_response_alg(value: String): Self = this.set("authorization_signed_response_alg", value.asInstanceOf[js.Any])
+    def setClient_secretUndefined: Self = StObject.set(x, "client_secret", js.undefined)
     
     @scala.inline
-    def deleteAuthorization_signed_response_alg: Self = this.set("authorization_signed_response_alg", js.undefined)
+    def setDefault_max_age(value: Double): Self = StObject.set(x, "default_max_age", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    def setDefault_max_ageUndefined: Self = StObject.set(x, "default_max_age", js.undefined)
     
     @scala.inline
-    def deleteClient_secret: Self = this.set("client_secret", js.undefined)
+    def setId_token_encrypted_response_alg(value: String): Self = StObject.set(x, "id_token_encrypted_response_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_max_age(value: Double): Self = this.set("default_max_age", value.asInstanceOf[js.Any])
+    def setId_token_encrypted_response_algUndefined: Self = StObject.set(x, "id_token_encrypted_response_alg", js.undefined)
     
     @scala.inline
-    def deleteDefault_max_age: Self = this.set("default_max_age", js.undefined)
+    def setId_token_encrypted_response_enc(value: String): Self = StObject.set(x, "id_token_encrypted_response_enc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token_encrypted_response_alg(value: String): Self = this.set("id_token_encrypted_response_alg", value.asInstanceOf[js.Any])
+    def setId_token_encrypted_response_encUndefined: Self = StObject.set(x, "id_token_encrypted_response_enc", js.undefined)
     
     @scala.inline
-    def deleteId_token_encrypted_response_alg: Self = this.set("id_token_encrypted_response_alg", js.undefined)
+    def setId_token_signed_response_alg(value: String): Self = StObject.set(x, "id_token_signed_response_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token_encrypted_response_enc(value: String): Self = this.set("id_token_encrypted_response_enc", value.asInstanceOf[js.Any])
+    def setId_token_signed_response_algUndefined: Self = StObject.set(x, "id_token_signed_response_alg", js.undefined)
     
     @scala.inline
-    def deleteId_token_encrypted_response_enc: Self = this.set("id_token_encrypted_response_enc", js.undefined)
+    def setIntrospection_endpoint_auth_method(value: ClientAuthMethod): Self = StObject.set(x, "introspection_endpoint_auth_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId_token_signed_response_alg(value: String): Self = this.set("id_token_signed_response_alg", value.asInstanceOf[js.Any])
+    def setIntrospection_endpoint_auth_methodUndefined: Self = StObject.set(x, "introspection_endpoint_auth_method", js.undefined)
     
     @scala.inline
-    def deleteId_token_signed_response_alg: Self = this.set("id_token_signed_response_alg", js.undefined)
+    def setIntrospection_endpoint_auth_signing_alg(value: String): Self = StObject.set(x, "introspection_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntrospection_endpoint_auth_method(value: ClientAuthMethod): Self = this.set("introspection_endpoint_auth_method", value.asInstanceOf[js.Any])
+    def setIntrospection_endpoint_auth_signing_algUndefined: Self = StObject.set(x, "introspection_endpoint_auth_signing_alg", js.undefined)
     
     @scala.inline
-    def deleteIntrospection_endpoint_auth_method: Self = this.set("introspection_endpoint_auth_method", js.undefined)
+    def setPost_logout_redirect_uris(value: js.Array[String]): Self = StObject.set(x, "post_logout_redirect_uris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntrospection_endpoint_auth_signing_alg(value: String): Self = this.set("introspection_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
+    def setPost_logout_redirect_urisUndefined: Self = StObject.set(x, "post_logout_redirect_uris", js.undefined)
     
     @scala.inline
-    def deleteIntrospection_endpoint_auth_signing_alg: Self = this.set("introspection_endpoint_auth_signing_alg", js.undefined)
+    def setPost_logout_redirect_urisVarargs(value: String*): Self = StObject.set(x, "post_logout_redirect_uris", js.Array(value :_*))
     
     @scala.inline
-    def setPost_logout_redirect_urisVarargs(value: String*): Self = this.set("post_logout_redirect_uris", js.Array(value :_*))
+    def setRedirect_uris(value: js.Array[String]): Self = StObject.set(x, "redirect_uris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPost_logout_redirect_uris(value: js.Array[String]): Self = this.set("post_logout_redirect_uris", value.asInstanceOf[js.Any])
+    def setRedirect_urisUndefined: Self = StObject.set(x, "redirect_uris", js.undefined)
     
     @scala.inline
-    def deletePost_logout_redirect_uris: Self = this.set("post_logout_redirect_uris", js.undefined)
+    def setRedirect_urisVarargs(value: String*): Self = StObject.set(x, "redirect_uris", js.Array(value :_*))
     
     @scala.inline
-    def setRedirect_urisVarargs(value: String*): Self = this.set("redirect_uris", js.Array(value :_*))
+    def setRequest_object_encryption_alg(value: String): Self = StObject.set(x, "request_object_encryption_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect_uris(value: js.Array[String]): Self = this.set("redirect_uris", value.asInstanceOf[js.Any])
+    def setRequest_object_encryption_algUndefined: Self = StObject.set(x, "request_object_encryption_alg", js.undefined)
     
     @scala.inline
-    def deleteRedirect_uris: Self = this.set("redirect_uris", js.undefined)
+    def setRequest_object_encryption_enc(value: String): Self = StObject.set(x, "request_object_encryption_enc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_object_encryption_alg(value: String): Self = this.set("request_object_encryption_alg", value.asInstanceOf[js.Any])
+    def setRequest_object_encryption_encUndefined: Self = StObject.set(x, "request_object_encryption_enc", js.undefined)
     
     @scala.inline
-    def deleteRequest_object_encryption_alg: Self = this.set("request_object_encryption_alg", js.undefined)
+    def setRequest_object_signing_alg(value: String): Self = StObject.set(x, "request_object_signing_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_object_encryption_enc(value: String): Self = this.set("request_object_encryption_enc", value.asInstanceOf[js.Any])
+    def setRequest_object_signing_algUndefined: Self = StObject.set(x, "request_object_signing_alg", js.undefined)
     
     @scala.inline
-    def deleteRequest_object_encryption_enc: Self = this.set("request_object_encryption_enc", js.undefined)
+    def setRequire_auth_time(value: Boolean): Self = StObject.set(x, "require_auth_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_object_signing_alg(value: String): Self = this.set("request_object_signing_alg", value.asInstanceOf[js.Any])
+    def setRequire_auth_timeUndefined: Self = StObject.set(x, "require_auth_time", js.undefined)
     
     @scala.inline
-    def deleteRequest_object_signing_alg: Self = this.set("request_object_signing_alg", js.undefined)
+    def setResponse_types(value: js.Array[ResponseType]): Self = StObject.set(x, "response_types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequire_auth_time(value: Boolean): Self = this.set("require_auth_time", value.asInstanceOf[js.Any])
+    def setResponse_typesUndefined: Self = StObject.set(x, "response_types", js.undefined)
     
     @scala.inline
-    def deleteRequire_auth_time: Self = this.set("require_auth_time", js.undefined)
+    def setResponse_typesVarargs(value: ResponseType*): Self = StObject.set(x, "response_types", js.Array(value :_*))
     
     @scala.inline
-    def setResponse_typesVarargs(value: ResponseType*): Self = this.set("response_types", js.Array(value :_*))
+    def setRevocation_endpoint_auth_method(value: ClientAuthMethod): Self = StObject.set(x, "revocation_endpoint_auth_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_types(value: js.Array[ResponseType]): Self = this.set("response_types", value.asInstanceOf[js.Any])
+    def setRevocation_endpoint_auth_methodUndefined: Self = StObject.set(x, "revocation_endpoint_auth_method", js.undefined)
     
     @scala.inline
-    def deleteResponse_types: Self = this.set("response_types", js.undefined)
+    def setRevocation_endpoint_auth_signing_alg(value: String): Self = StObject.set(x, "revocation_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocation_endpoint_auth_method(value: ClientAuthMethod): Self = this.set("revocation_endpoint_auth_method", value.asInstanceOf[js.Any])
+    def setRevocation_endpoint_auth_signing_algUndefined: Self = StObject.set(x, "revocation_endpoint_auth_signing_alg", js.undefined)
     
     @scala.inline
-    def deleteRevocation_endpoint_auth_method: Self = this.set("revocation_endpoint_auth_method", js.undefined)
+    def setTls_client_certificate_bound_access_tokens(value: Boolean): Self = StObject.set(x, "tls_client_certificate_bound_access_tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocation_endpoint_auth_signing_alg(value: String): Self = this.set("revocation_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
+    def setTls_client_certificate_bound_access_tokensUndefined: Self = StObject.set(x, "tls_client_certificate_bound_access_tokens", js.undefined)
     
     @scala.inline
-    def deleteRevocation_endpoint_auth_signing_alg: Self = this.set("revocation_endpoint_auth_signing_alg", js.undefined)
+    def setToken_endpoint_auth_method(value: ClientAuthMethod): Self = StObject.set(x, "token_endpoint_auth_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTls_client_certificate_bound_access_tokens(value: Boolean): Self = this.set("tls_client_certificate_bound_access_tokens", value.asInstanceOf[js.Any])
+    def setToken_endpoint_auth_methodUndefined: Self = StObject.set(x, "token_endpoint_auth_method", js.undefined)
     
     @scala.inline
-    def deleteTls_client_certificate_bound_access_tokens: Self = this.set("tls_client_certificate_bound_access_tokens", js.undefined)
+    def setToken_endpoint_auth_signing_alg(value: String): Self = StObject.set(x, "token_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_endpoint_auth_method(value: ClientAuthMethod): Self = this.set("token_endpoint_auth_method", value.asInstanceOf[js.Any])
+    def setToken_endpoint_auth_signing_algUndefined: Self = StObject.set(x, "token_endpoint_auth_signing_alg", js.undefined)
     
     @scala.inline
-    def deleteToken_endpoint_auth_method: Self = this.set("token_endpoint_auth_method", js.undefined)
+    def setUserinfo_encrypted_response_alg(value: String): Self = StObject.set(x, "userinfo_encrypted_response_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken_endpoint_auth_signing_alg(value: String): Self = this.set("token_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
+    def setUserinfo_encrypted_response_algUndefined: Self = StObject.set(x, "userinfo_encrypted_response_alg", js.undefined)
     
     @scala.inline
-    def deleteToken_endpoint_auth_signing_alg: Self = this.set("token_endpoint_auth_signing_alg", js.undefined)
+    def setUserinfo_encrypted_response_enc(value: String): Self = StObject.set(x, "userinfo_encrypted_response_enc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserinfo_encrypted_response_alg(value: String): Self = this.set("userinfo_encrypted_response_alg", value.asInstanceOf[js.Any])
+    def setUserinfo_encrypted_response_encUndefined: Self = StObject.set(x, "userinfo_encrypted_response_enc", js.undefined)
     
     @scala.inline
-    def deleteUserinfo_encrypted_response_alg: Self = this.set("userinfo_encrypted_response_alg", js.undefined)
+    def setUserinfo_signed_response_alg(value: String): Self = StObject.set(x, "userinfo_signed_response_alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserinfo_encrypted_response_enc(value: String): Self = this.set("userinfo_encrypted_response_enc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserinfo_encrypted_response_enc: Self = this.set("userinfo_encrypted_response_enc", js.undefined)
-    
-    @scala.inline
-    def setUserinfo_signed_response_alg(value: String): Self = this.set("userinfo_signed_response_alg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserinfo_signed_response_alg: Self = this.set("userinfo_signed_response_alg", js.undefined)
+    def setUserinfo_signed_response_algUndefined: Self = StObject.set(x, "userinfo_signed_response_alg", js.undefined)
   }
 }

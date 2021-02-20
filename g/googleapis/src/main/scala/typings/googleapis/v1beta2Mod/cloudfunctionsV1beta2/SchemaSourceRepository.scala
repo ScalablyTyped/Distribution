@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the location of the function source in a remote repository.
   */
 @js.native
-trait SchemaSourceRepository extends js.Object {
+trait SchemaSourceRepository extends StObject {
   
   /**
     * The name of the branch from which the function should be fetched.
@@ -60,54 +61,42 @@ object SchemaSourceRepository {
   }
   
   @scala.inline
-  implicit class SchemaSourceRepositoryOps[Self <: SchemaSourceRepository] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceRepositoryMutableBuilder[Self <: SchemaSourceRepository] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeployedRevision(value: String): Self = StObject.set(x, "deployedRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    def setDeployedRevisionUndefined: Self = StObject.set(x, "deployedRevision", js.undefined)
     
     @scala.inline
-    def deleteBranch: Self = this.set("branch", js.undefined)
+    def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployedRevision(value: String): Self = this.set("deployedRevision", value.asInstanceOf[js.Any])
+    def setRepositoryUrlUndefined: Self = StObject.set(x, "repositoryUrl", js.undefined)
     
     @scala.inline
-    def deleteDeployedRevision: Self = this.set("deployedRevision", js.undefined)
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryUrl(value: String): Self = this.set("repositoryUrl", value.asInstanceOf[js.Any])
+    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
     
     @scala.inline
-    def deleteRepositoryUrl: Self = this.set("repositoryUrl", js.undefined)
+    def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
     
     @scala.inline
-    def deleteRevision: Self = this.set("revision", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcePath(value: String): Self = this.set("sourcePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePath: Self = this.set("sourcePath", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

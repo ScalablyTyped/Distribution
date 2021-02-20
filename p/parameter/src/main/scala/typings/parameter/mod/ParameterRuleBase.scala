@@ -1,23 +1,24 @@
 package typings.parameter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterRuleBase extends js.Object {
-  
-  /**
-    * Make parameter convert the input param to the specific type, support int, number, string and boolean,
-    * also support a function to customize your own convert method.
-    */
-  var convertType: js.UndefOr[ParameterConvertType] = js.native
+trait ParameterRuleBase extends StObject {
   
   /**
     * The default value of property, once the property is allowed non-required and missed, parameter will
     * use this as the default value. **This may change the original input params.**
     */
   var default: js.UndefOr[js.Any] = js.native
+  
+  /**
+    * Make parameter convert the input param to the specific type, support int, number, string and boolean,
+    * also support a function to customize your own convert method.
+    */
+  var convertType: js.UndefOr[ParameterConvertType] = js.native
   
   /**
     * If required is set to false, this property can be null or undefined.
@@ -47,48 +48,36 @@ object ParameterRuleBase {
   }
   
   @scala.inline
-  implicit class ParameterRuleBaseOps[Self <: ParameterRuleBase] (val x: Self) extends AnyVal {
+  implicit class ParameterRuleBaseMutableBuilder[Self <: ParameterRuleBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvertType(value: ParameterConvertType): Self = StObject.set(x, "convertType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "convertType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConvertTypeUndefined: Self = StObject.set(x, "convertType", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertTypeFunction1(value: /* value */ js.Any => js.Any): Self = this.set("convertType", js.Any.fromFunction1(value))
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setConvertType(value: ParameterConvertType): Self = this.set("convertType", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConvertType: Self = this.set("convertType", js.undefined)
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setWidelyUndefined(value: Boolean): Self = StObject.set(x, "widelyUndefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setWidelyUndefined(value: Boolean): Self = this.set("widelyUndefined", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidelyUndefined: Self = this.set("widelyUndefined", js.undefined)
+    def setWidelyUndefinedUndefined: Self = StObject.set(x, "widelyUndefined", js.undefined)
   }
 }

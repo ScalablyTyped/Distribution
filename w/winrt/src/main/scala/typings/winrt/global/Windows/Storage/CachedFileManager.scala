@@ -3,6 +3,7 @@ package typings.winrt.global.Windows.Storage
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Provider.FileUpdateStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CachedFileManager ()
   extends typings.winrt.Windows.Storage.CachedFileManager
 /* static members */
-@JSGlobal("Windows.Storage.CachedFileManager")
-@js.native
-object CachedFileManager extends js.Object {
+object CachedFileManager {
   
+  @JSGlobal("Windows.Storage.CachedFileManager.completeUpdatesAsync")
+  @js.native
   def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus] = js.native
   
+  @JSGlobal("Windows.Storage.CachedFileManager.deferUpdates")
+  @js.native
   def deferUpdates(file: IStorageFile): Unit = js.native
 }

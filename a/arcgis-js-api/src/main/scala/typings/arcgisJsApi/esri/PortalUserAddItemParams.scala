@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,33 +45,21 @@ object PortalUserAddItemParams {
   }
   
   @scala.inline
-  implicit class PortalUserAddItemParamsOps[Self <: PortalUserAddItemParams] (val x: Self) extends AnyVal {
+  implicit class PortalUserAddItemParamsMutableBuilder[Self <: PortalUserAddItemParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFolder(value: String | PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: PortalItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setFolder(value: String | PortalFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFolder: Self = this.set("folder", js.undefined)
+    def setItem(value: PortalItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

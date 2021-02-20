@@ -1,5 +1,6 @@
 package typings.overwatchApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.overwatchApi.overwatchApiStrings.cn
   - typings.overwatchApi.overwatchApiStrings.global
 */
-trait REGION extends js.Object
+trait REGION extends StObject
 object REGION {
   
   @scala.inline

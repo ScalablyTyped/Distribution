@@ -1,16 +1,16 @@
 package typings.sipJs
 
 import typings.sipJs.loggerFactoryMod.LoggerFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/log/logger", JSImport.Namespace)
-@js.native
-object loggerMod extends js.Object {
+object loggerMod {
   
+  @JSImport("sip.js/lib/core/log/logger", "Logger")
   @js.native
-  class Logger protected () extends js.Object {
+  class Logger protected () extends StObject {
     def this(logger: LoggerFactory, category: String) = this()
     def this(logger: LoggerFactory, category: String, label: String) = this()
     

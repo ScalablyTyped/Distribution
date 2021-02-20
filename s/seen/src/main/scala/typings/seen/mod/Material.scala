@@ -1,12 +1,13 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Material")
 @js.native
-class Material () extends js.Object {
+class Material () extends StObject {
   def this(color: Color) = this()
   def this(color: js.UndefOr[scala.Nothing], options: MaterialOptions) = this()
   def this(color: Color, options: MaterialOptions) = this()
@@ -33,12 +34,18 @@ class Material () extends js.Object {
   var specularExponent: Double = js.native
 }
 /* static members */
-@JSImport("seen", "Material")
-@js.native
-object Material extends js.Object {
+object Material {
   
+  @JSImport("seen", "Material.create")
+  @js.native
   def create(): Material = js.native
+  @JSImport("seen", "Material.create")
+  @js.native
   def create(value: String): Material = js.native
+  @JSImport("seen", "Material.create")
+  @js.native
   def create(value: Color): Material = js.native
+  @JSImport("seen", "Material.create")
+  @js.native
   def create(value: Material): Material = js.native
 }

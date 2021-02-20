@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.IOStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object WriteStreamCallbackArgs {
   }
   
   @scala.inline
-  implicit class WriteStreamCallbackArgsOps[Self <: WriteStreamCallbackArgs] (val x: Self) extends AnyVal {
+  implicit class WriteStreamCallbackArgsMutableBuilder[Self <: WriteStreamCallbackArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesProcessed(value: Double): Self = StObject.set(x, "bytesProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesProcessedUndefined: Self = StObject.set(x, "bytesProcessed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromStream(value: IOStream): Self = StObject.set(x, "fromStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesProcessed(value: Double): Self = this.set("bytesProcessed", value.asInstanceOf[js.Any])
+    def setFromStreamUndefined: Self = StObject.set(x, "fromStream", js.undefined)
     
     @scala.inline
-    def deleteBytesProcessed: Self = this.set("bytesProcessed", js.undefined)
+    def setToStream(value: IOStream): Self = StObject.set(x, "toStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromStream(value: IOStream): Self = this.set("fromStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromStream: Self = this.set("fromStream", js.undefined)
-    
-    @scala.inline
-    def setToStream(value: IOStream): Self = this.set("toStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToStream: Self = this.set("toStream", js.undefined)
+    def setToStreamUndefined: Self = StObject.set(x, "toStream", js.undefined)
   }
 }

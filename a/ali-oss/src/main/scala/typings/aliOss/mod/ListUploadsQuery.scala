@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUploadsQuery extends js.Object {
+trait ListUploadsQuery extends StObject {
   
   var `key-marker`: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object ListUploadsQuery {
   }
   
   @scala.inline
-  implicit class ListUploadsQueryOps[Self <: ListUploadsQuery] (val x: Self) extends AnyVal {
+  implicit class ListUploadsQueryMutableBuilder[Self <: ListUploadsQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setKey-marker`(value: String): Self = StObject.set(x, "key-marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setKey-markerUndefined`: Self = StObject.set(x, "key-marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setMax-uploads`(value: Double): Self = StObject.set(x, "max-uploads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setKey-marker`(value: String): Self = this.set("key-marker", value.asInstanceOf[js.Any])
+    def `setMax-uploadsUndefined`: Self = StObject.set(x, "max-uploads", js.undefined)
     
     @scala.inline
-    def `deleteKey-marker`: Self = this.set("key-marker", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMax-uploads`(value: Double): Self = this.set("max-uploads", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def `deleteMax-uploads`: Self = this.set("max-uploads", js.undefined)
+    def `setUpload-id-marker`(value: String): Self = StObject.set(x, "upload-id-marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
-    
-    @scala.inline
-    def `setUpload-id-marker`(value: String): Self = this.set("upload-id-marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUpload-id-marker`: Self = this.set("upload-id-marker", js.undefined)
+    def `setUpload-id-markerUndefined`: Self = StObject.set(x, "upload-id-marker", js.undefined)
   }
 }

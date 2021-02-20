@@ -2,13 +2,14 @@ package typings.antDesignReactNative.anon
 
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/accordion/style.AccordionStyle> */
 @js.native
-trait PartialAccordionStyle extends js.Object {
+trait PartialAccordionStyle extends StObject {
   
   var arrow: js.UndefOr[TextStyle] = js.native
   
@@ -33,60 +34,48 @@ object PartialAccordionStyle {
   }
   
   @scala.inline
-  implicit class PartialAccordionStyleOps[Self <: PartialAccordionStyle] (val x: Self) extends AnyVal {
+  implicit class PartialAccordionStyleMutableBuilder[Self <: PartialAccordionStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrow(value: TextStyle): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrow(value: TextStyle): Self = this.set("arrow", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteArrow: Self = this.set("arrow", js.undefined)
+    def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContentText(value: TextStyle): Self = StObject.set(x, "contentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContentTextUndefined: Self = StObject.set(x, "contentText", js.undefined)
     
     @scala.inline
-    def setContent(value: ViewStyle): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setHeader(value: ViewStyle): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentText(value: TextStyle): Self = this.set("contentText", value.asInstanceOf[js.Any])
+    def setHeaderText(value: TextStyle): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentText: Self = this.set("contentText", js.undefined)
+    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
     @scala.inline
-    def setHeader(value: ViewStyle): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderWrap(value: ViewStyle): Self = StObject.set(x, "headerWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderText(value: TextStyle): Self = this.set("headerText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderText: Self = this.set("headerText", js.undefined)
-    
-    @scala.inline
-    def setHeaderWrap(value: ViewStyle): Self = this.set("headerWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderWrap: Self = this.set("headerWrap", js.undefined)
+    def setHeaderWrapUndefined: Self = StObject.set(x, "headerWrap", js.undefined)
   }
 }

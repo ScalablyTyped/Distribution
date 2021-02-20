@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Playlist extends js.Object {
+trait Playlist extends StObject {
   
   /** The contentDetails object contains information like video count. */
   var contentDetails: js.UndefOr[PlaylistContentDetails] = js.native
@@ -45,70 +46,58 @@ object Playlist {
   }
   
   @scala.inline
-  implicit class PlaylistOps[Self <: Playlist] (val x: Self) extends AnyVal {
+  implicit class PlaylistMutableBuilder[Self <: Playlist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentDetails(value: PlaylistContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentDetailsUndefined: Self = StObject.set(x, "contentDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: PlaylistContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
     def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
       */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist with TopLevel[js.Any]
-    ): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)
     
     @scala.inline
-    def setPlayer(value: PlaylistPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    def setPlayer(value: PlaylistPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayer: Self = this.set("player", js.undefined)
+    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
     @scala.inline
-    def setSnippet(value: PlaylistSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSnippet(value: PlaylistSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def setStatus(value: PlaylistStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: PlaylistStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

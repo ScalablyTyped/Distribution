@@ -1,11 +1,12 @@
 package typings.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectPatternOptions extends js.Object {
+trait ObjectPatternOptions extends StObject {
   
   var fallthrough: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object ObjectPatternOptions {
   }
   
   @scala.inline
-  implicit class ObjectPatternOptionsOps[Self <: ObjectPatternOptions] (val x: Self) extends AnyVal {
+  implicit class ObjectPatternOptionsMutableBuilder[Self <: ObjectPatternOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallthroughUndefined: Self = StObject.set(x, "fallthrough", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatches(value: SchemaLike | Reference): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallthrough(value: Boolean): Self = this.set("fallthrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFallthrough: Self = this.set("fallthrough", js.undefined)
-    
-    @scala.inline
-    def setMatches(value: SchemaLike | Reference): Self = this.set("matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMatchesNull: Self = this.set("matches", null)
+    def setMatchesNull: Self = StObject.set(x, "matches", null)
   }
 }

@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
 @js.native
-trait PlusIoRelativeURL extends js.Object {
+trait PlusIoRelativeURL extends StObject {
   
   /**
     * 应用私有文档目录
@@ -55,42 +56,30 @@ object PlusIoRelativeURL {
   }
   
   @scala.inline
-  implicit class PlusIoRelativeURLOps[Self <: PlusIoRelativeURL] (val x: Self) extends AnyVal {
+  implicit class PlusIoRelativeURLMutableBuilder[Self <: PlusIoRelativeURL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_doc(value: String): Self = StObject.set(x, "_doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_docUndefined: Self = StObject.set(x, "_doc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_documents(value: String): Self = StObject.set(x, "_documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_doc(value: String): Self = this.set("_doc", value.asInstanceOf[js.Any])
+    def set_documentsUndefined: Self = StObject.set(x, "_documents", js.undefined)
     
     @scala.inline
-    def delete_doc: Self = this.set("_doc", js.undefined)
+    def set_downloads(value: String): Self = StObject.set(x, "_downloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_documents(value: String): Self = this.set("_documents", value.asInstanceOf[js.Any])
+    def set_downloadsUndefined: Self = StObject.set(x, "_downloads", js.undefined)
     
     @scala.inline
-    def delete_documents: Self = this.set("_documents", js.undefined)
+    def set_www(value: String): Self = StObject.set(x, "_www", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_downloads(value: String): Self = this.set("_downloads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_downloads: Self = this.set("_downloads", js.undefined)
-    
-    @scala.inline
-    def set_www(value: String): Self = this.set("_www", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_www: Self = this.set("_www", js.undefined)
+    def set_wwwUndefined: Self = StObject.set(x, "_www", js.undefined)
   }
 }

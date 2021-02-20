@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnPremisesConfiguration extends js.Object {
+trait OnPremisesConfiguration extends StObject {
   
   /** PEM representation of the trusted CA's x509 certificate. */
   var caCertificate: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object OnPremisesConfiguration {
   }
   
   @scala.inline
-  implicit class OnPremisesConfigurationOps[Self <: OnPremisesConfiguration] (val x: Self) extends AnyVal {
+  implicit class OnPremisesConfigurationMutableBuilder[Self <: OnPremisesConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaCertificate(value: String): Self = this.set("caCertificate", value.asInstanceOf[js.Any])
+    def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
     
     @scala.inline
-    def deleteCaCertificate: Self = this.set("caCertificate", js.undefined)
+    def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCertificate(value: String): Self = this.set("clientCertificate", value.asInstanceOf[js.Any])
+    def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
     
     @scala.inline
-    def deleteClientCertificate: Self = this.set("clientCertificate", js.undefined)
+    def setDumpFilePath(value: String): Self = StObject.set(x, "dumpFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientKey(value: String): Self = this.set("clientKey", value.asInstanceOf[js.Any])
+    def setDumpFilePathUndefined: Self = StObject.set(x, "dumpFilePath", js.undefined)
     
     @scala.inline
-    def deleteClientKey: Self = this.set("clientKey", js.undefined)
+    def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDumpFilePath(value: String): Self = this.set("dumpFilePath", value.asInstanceOf[js.Any])
+    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
     @scala.inline
-    def deleteDumpFilePath: Self = this.set("dumpFilePath", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPort(value: String): Self = this.set("hostPort", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteHostPort: Self = this.set("hostPort", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

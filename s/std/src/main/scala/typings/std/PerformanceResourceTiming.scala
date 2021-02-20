@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,69 +75,57 @@ object PerformanceResourceTiming {
   }
   
   @scala.inline
-  implicit class PerformanceResourceTimingOps[Self <: PerformanceResourceTiming] (val x: Self) extends AnyVal {
+  implicit class PerformanceResourceTimingMutableBuilder[Self <: PerformanceResourceTiming] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectEnd(value: Double): Self = StObject.set(x, "connectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectStart(value: Double): Self = StObject.set(x, "connectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecodedBodySize(value: Double): Self = StObject.set(x, "decodedBodySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectEnd(value: Double): Self = this.set("connectEnd", value.asInstanceOf[js.Any])
+    def setDomainLookupEnd(value: Double): Self = StObject.set(x, "domainLookupEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectStart(value: Double): Self = this.set("connectStart", value.asInstanceOf[js.Any])
+    def setDomainLookupStart(value: Double): Self = StObject.set(x, "domainLookupStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecodedBodySize(value: Double): Self = this.set("decodedBodySize", value.asInstanceOf[js.Any])
+    def setEncodedBodySize(value: Double): Self = StObject.set(x, "encodedBodySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainLookupEnd(value: Double): Self = this.set("domainLookupEnd", value.asInstanceOf[js.Any])
+    def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainLookupStart(value: Double): Self = this.set("domainLookupStart", value.asInstanceOf[js.Any])
+    def setInitiatorType(value: java.lang.String): Self = StObject.set(x, "initiatorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodedBodySize(value: Double): Self = this.set("encodedBodySize", value.asInstanceOf[js.Any])
+    def setNextHopProtocol(value: java.lang.String): Self = StObject.set(x, "nextHopProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchStart(value: Double): Self = this.set("fetchStart", value.asInstanceOf[js.Any])
+    def setRedirectEnd(value: Double): Self = StObject.set(x, "redirectEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiatorType(value: java.lang.String): Self = this.set("initiatorType", value.asInstanceOf[js.Any])
+    def setRedirectStart(value: Double): Self = StObject.set(x, "redirectStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextHopProtocol(value: java.lang.String): Self = this.set("nextHopProtocol", value.asInstanceOf[js.Any])
+    def setRequestStart(value: Double): Self = StObject.set(x, "requestStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectEnd(value: Double): Self = this.set("redirectEnd", value.asInstanceOf[js.Any])
+    def setResponseEnd(value: Double): Self = StObject.set(x, "responseEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectStart(value: Double): Self = this.set("redirectStart", value.asInstanceOf[js.Any])
+    def setResponseStart(value: Double): Self = StObject.set(x, "responseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestStart(value: Double): Self = this.set("requestStart", value.asInstanceOf[js.Any])
+    def setSecureConnectionStart(value: Double): Self = StObject.set(x, "secureConnectionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseEnd(value: Double): Self = this.set("responseEnd", value.asInstanceOf[js.Any])
+    def setTransferSize(value: Double): Self = StObject.set(x, "transferSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseStart(value: Double): Self = this.set("responseStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecureConnectionStart(value: Double): Self = this.set("secureConnectionStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransferSize(value: Double): Self = this.set("transferSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerStart(value: Double): Self = this.set("workerStart", value.asInstanceOf[js.Any])
+    def setWorkerStart(value: Double): Self = StObject.set(x, "workerStart", value.asInstanceOf[js.Any])
   }
 }

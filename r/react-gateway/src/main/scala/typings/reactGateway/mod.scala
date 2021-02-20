@@ -1,29 +1,29 @@
 package typings.reactGateway
 
-import typings.react.mod.Component
-import typings.reactGateway.gatewayDestMod.GatewayDestProps
-import typings.reactGateway.gatewayMod.GatewayProps
+import typings.reactGateway.gatewayMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-gateway", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-gateway", "Gateway")
   @js.native
-  class Gateway ()
-    extends Component[GatewayProps, js.Object, js.Any]
+  class Gateway () extends ^
   
+  @JSImport("react-gateway", "GatewayDest")
   @js.native
   class GatewayDest ()
-    extends Component[GatewayDestProps, js.Object, js.Any]
+    extends typings.reactGateway.gatewayDestMod.^
   
+  @JSImport("react-gateway", "GatewayProvider")
   @js.native
   class GatewayProvider ()
-    extends Component[js.Object, js.Object, js.Any]
+    extends typings.reactGateway.gatewayProviderMod.^
   
+  @JSImport("react-gateway", "GatewayRegistry")
   @js.native
   class GatewayRegistry ()
-    extends typings.reactGateway.gatewayRegistryMod.GatewayRegistry
+    extends typings.reactGateway.gatewayRegistryMod.^
 }

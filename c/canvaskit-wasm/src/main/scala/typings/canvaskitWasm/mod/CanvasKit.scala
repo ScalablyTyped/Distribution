@@ -6,14 +6,15 @@ import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.Record
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasKit extends js.Object {
+trait CanvasKit extends StObject {
   
-   // if GPU code was compiled in
+  // if GPU code was compiled in
   // Paragraph Enums
   val Affinity: AffinityEnumValues = js.native
   

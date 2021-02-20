@@ -1,5 +1,6 @@
 package typings.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,48 +51,36 @@ object Transport {
   }
   
   @scala.inline
-  implicit class TransportOps[Self <: Transport] (val x: Self) extends AnyVal {
+  implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+    def setGetSupportedCompression(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedCompression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setGetSupportedEncryption(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedEncryption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEncryption(value: String): Self = this.set("encryption", value.asInstanceOf[js.Any])
+    def setOnEnvelope(value: Envelope => js.Any): Self = StObject.set(x, "onEnvelope", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSupportedCompression(value: () => js.Array[String]): Self = this.set("getSupportedCompression", js.Any.fromFunction0(value))
+    def setOpen(value: String => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSupportedEncryption(value: () => js.Array[String]): Self = this.set("getSupportedEncryption", js.Any.fromFunction0(value))
+    def setSend(value: Envelope => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnEnvelope(value: Envelope => js.Any): Self = this.set("onEnvelope", js.Any.fromFunction1(value))
+    def setSetCompression(value: String => Unit): Self = StObject.set(x, "setCompression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOpen(value: String => Unit): Self = this.set("open", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSend(value: Envelope => Unit): Self = this.set("send", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetCompression(value: String => Unit): Self = this.set("setCompression", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEncryption(value: String => Unit): Self = this.set("setEncryption", js.Any.fromFunction1(value))
+    def setSetEncryption(value: String => Unit): Self = StObject.set(x, "setEncryption", js.Any.fromFunction1(value))
   }
 }

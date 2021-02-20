@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PubsubSnapshotMetadata extends js.Object {
+trait PubsubSnapshotMetadata extends StObject {
   
   /** The expire time of the Pubsub snapshot. */
   var expireTime: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object PubsubSnapshotMetadata {
   }
   
   @scala.inline
-  implicit class PubsubSnapshotMetadataOps[Self <: PubsubSnapshotMetadata] (val x: Self) extends AnyVal {
+  implicit class PubsubSnapshotMetadataMutableBuilder[Self <: PubsubSnapshotMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnapshotName(value: String): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
     
     @scala.inline
-    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotName(value: String): Self = this.set("snapshotName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotName: Self = this.set("snapshotName", js.undefined)
-    
-    @scala.inline
-    def setTopicName(value: String): Self = this.set("topicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicName: Self = this.set("topicName", js.undefined)
+    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

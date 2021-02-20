@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoDescription extends js.Object {
+trait VideoDescription extends StObject {
   
   /**
     * Video codec settings.
@@ -54,57 +55,45 @@ object VideoDescription {
   }
   
   @scala.inline
-  implicit class VideoDescriptionOps[Self <: VideoDescription] (val x: Self) extends AnyVal {
+  implicit class VideoDescriptionMutableBuilder[Self <: VideoDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodecSettings(value: VideoCodecSettings): Self = StObject.set(x, "CodecSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecSettingsUndefined: Self = StObject.set(x, "CodecSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: integer): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def setCodecSettings(value: VideoCodecSettings): Self = this.set("CodecSettings", value.asInstanceOf[js.Any])
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodecSettings: Self = this.set("CodecSettings", js.undefined)
+    def setRespondToAfd(value: VideoDescriptionRespondToAfd): Self = StObject.set(x, "RespondToAfd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integer): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setRespondToAfdUndefined: Self = StObject.set(x, "RespondToAfd", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
+    def setScalingBehavior(value: VideoDescriptionScalingBehavior): Self = StObject.set(x, "ScalingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRespondToAfd(value: VideoDescriptionRespondToAfd): Self = this.set("RespondToAfd", value.asInstanceOf[js.Any])
+    def setScalingBehaviorUndefined: Self = StObject.set(x, "ScalingBehavior", js.undefined)
     
     @scala.inline
-    def deleteRespondToAfd: Self = this.set("RespondToAfd", js.undefined)
+    def setSharpness(value: integerMin0Max100): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingBehavior(value: VideoDescriptionScalingBehavior): Self = this.set("ScalingBehavior", value.asInstanceOf[js.Any])
+    def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
     
     @scala.inline
-    def deleteScalingBehavior: Self = this.set("ScalingBehavior", js.undefined)
+    def setWidth(value: integer): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharpness(value: integerMin0Max100): Self = this.set("Sharpness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharpness: Self = this.set("Sharpness", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: integer): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

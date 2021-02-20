@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUserIDsResponse extends js.Object {
+trait ListUserIDsResponse extends StObject {
   
   /**
     * List of users id.
@@ -21,24 +22,12 @@ object ListUserIDsResponse {
   }
   
   @scala.inline
-  implicit class ListUserIDsResponseOps[Self <: ListUserIDsResponse] (val x: Self) extends AnyVal {
+  implicit class ListUserIDsResponseMutableBuilder[Self <: ListUserIDsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUserIDs(value: js.Array[UserIDResponse]): Self = StObject.set(x, "userIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUserIDsVarargs(value: UserIDResponse*): Self = this.set("userIDs", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserIDs(value: js.Array[UserIDResponse]): Self = this.set("userIDs", value.asInstanceOf[js.Any])
+    def setUserIDsVarargs(value: UserIDResponse*): Self = StObject.set(x, "userIDs", js.Array(value :_*))
   }
 }

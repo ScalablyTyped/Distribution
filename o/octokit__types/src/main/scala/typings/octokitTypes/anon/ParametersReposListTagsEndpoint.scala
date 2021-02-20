@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposListTagsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListTagsRequestOptions
 import typings.octokitTypes.endpointsMod.ReposListTagsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposListTagsEndpoint extends js.Object {
+trait ParametersReposListTagsEndpoint extends StObject {
   
   var parameters: ReposListTagsEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposListTagsEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposListTagsEndpointOps[Self <: ParametersReposListTagsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposListTagsEndpointMutableBuilder[Self <: ParametersReposListTagsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposListTagsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposListTagsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposListTagsEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposListTagsRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListTagsResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposListTagsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

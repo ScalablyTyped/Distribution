@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Dynamic Targeting Key List Response
   */
 @js.native
-trait SchemaDynamicTargetingKeysListResponse extends js.Object {
+trait SchemaDynamicTargetingKeysListResponse extends StObject {
   
   /**
     * Dynamic targeting key collection.
@@ -30,33 +31,21 @@ object SchemaDynamicTargetingKeysListResponse {
   }
   
   @scala.inline
-  implicit class SchemaDynamicTargetingKeysListResponseOps[Self <: SchemaDynamicTargetingKeysListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaDynamicTargetingKeysListResponseMutableBuilder[Self <: SchemaDynamicTargetingKeysListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicTargetingKeys(value: js.Array[SchemaDynamicTargetingKey]): Self = StObject.set(x, "dynamicTargetingKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicTargetingKeysUndefined: Self = StObject.set(x, "dynamicTargetingKeys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicTargetingKeysVarargs(value: SchemaDynamicTargetingKey*): Self = StObject.set(x, "dynamicTargetingKeys", js.Array(value :_*))
     
     @scala.inline
-    def setDynamicTargetingKeysVarargs(value: SchemaDynamicTargetingKey*): Self = this.set("dynamicTargetingKeys", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicTargetingKeys(value: js.Array[SchemaDynamicTargetingKey]): Self = this.set("dynamicTargetingKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicTargetingKeys: Self = this.set("dynamicTargetingKeys", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

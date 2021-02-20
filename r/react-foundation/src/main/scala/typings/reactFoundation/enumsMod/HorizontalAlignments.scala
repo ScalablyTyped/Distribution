@@ -1,5 +1,6 @@
 package typings.reactFoundation.enumsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +11,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactFoundation.reactFoundationStrings.justify
   - typings.reactFoundation.reactFoundationStrings.spaced
 */
-trait HorizontalAlignments extends js.Object
-@JSImport("react-foundation/enums", "HorizontalAlignments")
-@js.native
-object HorizontalAlignments extends js.Object {
+trait HorizontalAlignments extends StObject
+object HorizontalAlignments {
   
-  var CENTER: HorizontalAlignments = js.native
+  @JSImport("react-foundation/enums", "HorizontalAlignments")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var JUSTIFY: HorizontalAlignments = js.native
+  @JSImport("react-foundation/enums", "HorizontalAlignments.CENTER")
+  @js.native
+  def CENTER: HorizontalAlignments = js.native
+  @scala.inline
+  def CENTER_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
   
-  var RIGHT: HorizontalAlignments = js.native
+  @JSImport("react-foundation/enums", "HorizontalAlignments.JUSTIFY")
+  @js.native
+  def JUSTIFY: HorizontalAlignments = js.native
+  @scala.inline
+  def JUSTIFY_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JUSTIFY")(x.asInstanceOf[js.Any])
   
-  var SPACED: HorizontalAlignments = js.native
+  @JSImport("react-foundation/enums", "HorizontalAlignments.RIGHT")
+  @js.native
+  def RIGHT: HorizontalAlignments = js.native
+  @scala.inline
+  def RIGHT_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-foundation/enums", "HorizontalAlignments.SPACED")
+  @js.native
+  def SPACED: HorizontalAlignments = js.native
+  @scala.inline
+  def SPACED_=(x: HorizontalAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACED")(x.asInstanceOf[js.Any])
 }

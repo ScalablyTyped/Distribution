@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("monaco-editor", "Position")
 @js.native
-class Position protected () extends js.Object {
+class Position protected () extends StObject {
   def this(lineNumber: Double, column: Double) = this()
   
   /**
@@ -59,42 +60,58 @@ class Position protected () extends js.Object {
   def `with`(newLineNumber: Double, newColumn: Double): Position = js.native
 }
 /* static members */
-@JSImport("monaco-editor", "Position")
-@js.native
-object Position extends js.Object {
+object Position {
   
   /**
     * A function that compares positions, useful for sorting
     */
+  @JSImport("monaco-editor", "Position.compare")
+  @js.native
   def compare(a: IPosition, b: IPosition): Double = js.native
   
   /**
     * Test if position `a` equals position `b`
     */
+  @JSImport("monaco-editor", "Position.equals")
+  @js.native
   def equals(): Boolean = js.native
+  @JSImport("monaco-editor", "Position.equals")
+  @js.native
   def equals(a: Null, b: IPosition): Boolean = js.native
+  @JSImport("monaco-editor", "Position.equals")
+  @js.native
   def equals(a: IPosition): Boolean = js.native
+  @JSImport("monaco-editor", "Position.equals")
+  @js.native
   def equals(a: IPosition, b: IPosition): Boolean = js.native
   
   /**
     * Test if position `a` is before position `b`.
     * If the two positions are equal, the result will be false.
     */
+  @JSImport("monaco-editor", "Position.isBefore")
+  @js.native
   def isBefore(a: IPosition, b: IPosition): Boolean = js.native
   
   /**
     * Test if position `a` is before position `b`.
     * If the two positions are equal, the result will be true.
     */
+  @JSImport("monaco-editor", "Position.isBeforeOrEqual")
+  @js.native
   def isBeforeOrEqual(a: IPosition, b: IPosition): Boolean = js.native
   
   /**
     * Test if `obj` is an `IPosition`.
     */
+  @JSImport("monaco-editor", "Position.isIPosition")
+  @js.native
   def isIPosition(obj: js.Any): /* is monaco-editor.monaco-editor.IPosition */ Boolean = js.native
   
   /**
     * Create a `Position` from an `IPosition`.
     */
+  @JSImport("monaco-editor", "Position.lift")
+  @js.native
   def lift(pos: IPosition): Position = js.native
 }

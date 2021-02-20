@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsNode
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node/dist/kernels/Add", JSImport.Namespace)
-@js.native
-object addMod extends js.Object {
+object addMod {
   
+  @JSImport("@tensorflow/tfjs-node/dist/kernels/Add", "addConfig")
+  @js.native
   val addConfig: KernelConfig = js.native
 }

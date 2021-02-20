@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionCreateOptions extends js.Object {
+trait CollectionCreateOptions extends StObject {
   
   /**
     * Create an index on the _id field of the document, True by default on MongoDB 2.2 or higher off for version < 2.2.
@@ -76,90 +77,78 @@ object CollectionCreateOptions {
   }
   
   @scala.inline
-  implicit class CollectionCreateOptionsOps[Self <: CollectionCreateOptions] (val x: Self) extends AnyVal {
+  implicit class CollectionCreateOptionsMutableBuilder[Self <: CollectionCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoIndexId(value: Boolean): Self = StObject.set(x, "autoIndexId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoIndexIdUndefined: Self = StObject.set(x, "autoIndexId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapped(value: Boolean): Self = StObject.set(x, "capped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoIndexId(value: Boolean): Self = this.set("autoIndexId", value.asInstanceOf[js.Any])
+    def setCappedUndefined: Self = StObject.set(x, "capped", js.undefined)
     
     @scala.inline
-    def deleteAutoIndexId: Self = this.set("autoIndexId", js.undefined)
+    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapped(value: Boolean): Self = this.set("capped", value.asInstanceOf[js.Any])
+    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
     @scala.inline
-    def deleteCapped: Self = this.set("capped", js.undefined)
+    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJ(value: Boolean): Self = this.set("j", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteJ: Self = this.set("j", js.undefined)
+    def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: scala.Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPkFactory(value: js.Object): Self = this.set("pkFactory", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deletePkFactory: Self = this.set("pkFactory", js.undefined)
+    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
+    def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
     
     @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setSize(value: scala.Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerializeFunctions(value: Boolean): Self = this.set("serializeFunctions", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSerializeFunctions: Self = this.set("serializeFunctions", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: scala.Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: scala.Double | String): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
-    
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = this.set("wtimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWtimeout: Self = this.set("wtimeout", js.undefined)
+    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

@@ -3,14 +3,12 @@ package typings.oracleOraclejet.ojganttMod
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
-import typings.std.DocumentAndElementEventHandlersEventMap
 import typings.std.DragEvent
-import typings.std.ElementEventMap
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
-import typings.std.GlobalEventHandlersEventMap
+import typings.std.HTMLElementEventMap
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -20,15 +18,13 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojGanttRowEventMap
-  extends ElementEventMap
-     with GlobalEventHandlersEventMap
-     with DocumentAndElementEventHandlersEventMap {
+trait ojGanttRowEventMap extends HTMLElementEventMap {
   
   var labelChanged: JetElementCustomEvent[String] = js.native
   
@@ -142,28 +138,16 @@ object ojGanttRowEventMap {
   }
   
   @scala.inline
-  implicit class ojGanttRowEventMapOps[Self <: ojGanttRowEventMap] (val x: Self) extends AnyVal {
+  implicit class ojGanttRowEventMapMutableBuilder[Self <: ojGanttRowEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelChanged(value: JetElementCustomEvent[String]): Self = this.set("labelChanged", value.asInstanceOf[js.Any])
+    def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLabelStyleChanged(
       value: JetElementCustomEvent[
           /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttRow['labelStyle'] */ js.Any
         ]
-    ): Self = this.set("labelStyleChanged", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelStyleChanged", value.asInstanceOf[js.Any])
   }
 }

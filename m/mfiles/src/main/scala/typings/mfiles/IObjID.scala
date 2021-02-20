@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjID extends js.Object {
+trait IObjID extends StObject {
   
   def Clone(): IObjID = js.native
   
@@ -41,42 +42,30 @@ object IObjID {
   }
   
   @scala.inline
-  implicit class IObjIDOps[Self <: IObjID] (val x: Self) extends AnyVal {
+  implicit class IObjIDMutableBuilder[Self <: IObjID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IObjID): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloneFrom(value: IObjID => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IObjID): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setSerialize(value: () => js.Array[Double]): Self = StObject.set(x, "Serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCloneFrom(value: IObjID => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setSetIDs(value: (Double, Double) => Unit): Self = StObject.set(x, "SetIDs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSerialize(value: () => js.Array[Double]): Self = this.set("Serialize", js.Any.fromFunction0(value))
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetIDs(value: (Double, Double) => Unit): Self = this.set("SetIDs", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setToJSON(value: () => String): Self = this.set("ToJSON", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnserialize(value: js.Array[Double] => Unit): Self = this.set("Unserialize", js.Any.fromFunction1(value))
+    def setUnserialize(value: js.Array[Double] => Unit): Self = StObject.set(x, "Unserialize", js.Any.fromFunction1(value))
   }
 }

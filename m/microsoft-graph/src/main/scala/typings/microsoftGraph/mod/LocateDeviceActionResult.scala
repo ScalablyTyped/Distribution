@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object LocateDeviceActionResult {
   }
   
   @scala.inline
-  implicit class LocateDeviceActionResultOps[Self <: LocateDeviceActionResult] (val x: Self) extends AnyVal {
+  implicit class LocateDeviceActionResultMutableBuilder[Self <: LocateDeviceActionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceLocation(value: NullableOption[DeviceGeoLocation]): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceLocationNull: Self = StObject.set(x, "deviceLocation", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceLocation(value: NullableOption[DeviceGeoLocation]): Self = this.set("deviceLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceLocation: Self = this.set("deviceLocation", js.undefined)
-    
-    @scala.inline
-    def setDeviceLocationNull: Self = this.set("deviceLocation", null)
+    def setDeviceLocationUndefined: Self = StObject.set(x, "deviceLocation", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISyntaxToken
 import typings.typescriptServices.TypeScript.ITypeSyntax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,10 @@ class ConstraintSyntax protected ()
   extends typings.typescriptServices.TypeScript.ConstraintSyntax {
   def this(extendsKeyword: ISyntaxToken, `type`: ITypeSyntax, parsedInStrictMode: Boolean) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ConstraintSyntax")
-@js.native
-object ConstraintSyntax extends js.Object {
+object ConstraintSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.ConstraintSyntax.create1")
+  @js.native
   def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.ConstraintSyntax = js.native
 }

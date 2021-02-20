@@ -1,11 +1,12 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BulkModifyDocsWrapper extends js.Object {
+trait BulkModifyDocsWrapper extends StObject {
   
   var docs: js.Array[_] = js.native
 }
@@ -18,24 +19,12 @@ object BulkModifyDocsWrapper {
   }
   
   @scala.inline
-  implicit class BulkModifyDocsWrapperOps[Self <: BulkModifyDocsWrapper] (val x: Self) extends AnyVal {
+  implicit class BulkModifyDocsWrapperMutableBuilder[Self <: BulkModifyDocsWrapper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocs(value: js.Array[_]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocsVarargs(value: js.Any*): Self = this.set("docs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDocs(value: js.Array[_]): Self = this.set("docs", value.asInstanceOf[js.Any])
+    def setDocsVarargs(value: js.Any*): Self = StObject.set(x, "docs", js.Array(value :_*))
   }
 }

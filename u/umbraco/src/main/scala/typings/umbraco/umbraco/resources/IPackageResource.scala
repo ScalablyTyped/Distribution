@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description handles data for package installations
   **/
 @js.native
-trait IPackageResource extends js.Object {
+trait IPackageResource extends StObject {
   
   def cleanUp(_package: String): Unit = js.native
   
@@ -81,33 +82,21 @@ object IPackageResource {
   }
   
   @scala.inline
-  implicit class IPackageResourceOps[Self <: IPackageResource] (val x: Self) extends AnyVal {
+  implicit class IPackageResourceMutableBuilder[Self <: IPackageResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCleanUp(value: String => Unit): Self = StObject.set(x, "cleanUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetch(value: String => String): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImport(value: String => Double): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCleanUp(value: String => Unit): Self = this.set("cleanUp", js.Any.fromFunction1(value))
+    def setInstallData(value: String => Unit): Self = StObject.set(x, "installData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFetch(value: String => String): Self = this.set("fetch", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setImport(value: String => Double): Self = this.set("import", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInstallData(value: String => Unit): Self = this.set("installData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInstallFiles(value: String => Unit): Self = this.set("installFiles", js.Any.fromFunction1(value))
+    def setInstallFiles(value: String => Unit): Self = StObject.set(x, "installFiles", js.Any.fromFunction1(value))
   }
 }

@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,16 +34,18 @@ class ClientSortControls () extends IClientSortControls {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ClientSortControls")
-@js.native
-object ClientSortControls extends js.Object {
+object ClientSortControls {
   
   /**
     * Creates a new ClientSortControls instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientSortControls instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.create")
+  @js.native
   def create(): ClientSortControls = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.create")
+  @js.native
   def create(properties: IClientSortControls): ClientSortControls = js.native
   
   /**
@@ -53,9 +56,17 @@ object ClientSortControls extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.decode")
+  @js.native
   def decode(reader: Reader): ClientSortControls = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ClientSortControls = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.decode")
+  @js.native
   def decode(reader: Uint8Array): ClientSortControls = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ClientSortControls = js.native
   
   /**
@@ -65,7 +76,11 @@ object ClientSortControls extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ClientSortControls = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ClientSortControls = js.native
   
   /**
@@ -74,7 +89,11 @@ object ClientSortControls extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.encode")
+  @js.native
   def encode(message: IClientSortControls): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.encode")
+  @js.native
   def encode(message: IClientSortControls, writer: Writer): Writer = js.native
   
   /**
@@ -83,7 +102,11 @@ object ClientSortControls extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientSortControls): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientSortControls, writer: Writer): Writer = js.native
   
   /**
@@ -91,6 +114,8 @@ object ClientSortControls extends js.Object {
     * @param object Plain object
     * @returns ClientSortControls
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ClientSortControls = js.native
   
   /**
@@ -99,7 +124,11 @@ object ClientSortControls extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.toObject")
+  @js.native
   def toObject(message: ClientSortControls): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.toObject")
+  @js.native
   def toObject(message: ClientSortControls, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -107,5 +136,7 @@ object ClientSortControls extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientSortControls.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

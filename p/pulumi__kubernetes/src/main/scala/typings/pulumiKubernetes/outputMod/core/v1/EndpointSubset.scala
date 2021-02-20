@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     b: [ 10.10.1.1:309, 10.10.2.2:309 ]
   */
 @js.native
-trait EndpointSubset extends js.Object {
+trait EndpointSubset extends StObject {
   
   /**
     * IP addresses which offer the related ports that are marked as ready. These endpoints should be considered safe for load balancers and clients to utilize.
@@ -45,36 +46,24 @@ object EndpointSubset {
   }
   
   @scala.inline
-  implicit class EndpointSubsetOps[Self <: EndpointSubset] (val x: Self) extends AnyVal {
+  implicit class EndpointSubsetMutableBuilder[Self <: EndpointSubset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[EndpointAddress]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesVarargs(value: EndpointAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotReadyAddresses(value: js.Array[EndpointAddress]): Self = StObject.set(x, "notReadyAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressesVarargs(value: EndpointAddress*): Self = this.set("addresses", js.Array(value :_*))
+    def setNotReadyAddressesVarargs(value: EndpointAddress*): Self = StObject.set(x, "notReadyAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setAddresses(value: js.Array[EndpointAddress]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setPorts(value: js.Array[EndpointPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotReadyAddressesVarargs(value: EndpointAddress*): Self = this.set("notReadyAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotReadyAddresses(value: js.Array[EndpointAddress]): Self = this.set("notReadyAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortsVarargs(value: EndpointPort*): Self = this.set("ports", js.Array(value :_*))
-    
-    @scala.inline
-    def setPorts(value: js.Array[EndpointPort]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    def setPortsVarargs(value: EndpointPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

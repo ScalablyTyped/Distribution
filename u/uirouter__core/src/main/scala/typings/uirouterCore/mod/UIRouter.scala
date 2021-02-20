@@ -2,6 +2,7 @@ package typings.uirouterCore.mod
 
 import typings.uirouterCore.coreservicesMod.LocationConfig
 import typings.uirouterCore.coreservicesMod.LocationServices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

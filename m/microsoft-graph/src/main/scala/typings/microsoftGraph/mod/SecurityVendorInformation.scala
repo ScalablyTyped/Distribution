@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityVendorInformation extends js.Object {
+trait SecurityVendorInformation extends StObject {
   
   // Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   var provider: js.UndefOr[NullableOption[String]] = js.native
@@ -28,54 +29,42 @@ object SecurityVendorInformation {
   }
   
   @scala.inline
-  implicit class SecurityVendorInformationOps[Self <: SecurityVendorInformation] (val x: Self) extends AnyVal {
+  implicit class SecurityVendorInformationMutableBuilder[Self <: SecurityVendorInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvider(value: NullableOption[String]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProviderNull: Self = StObject.set(x, "provider", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def setProvider(value: NullableOption[String]): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setProviderVersion(value: NullableOption[String]): Self = StObject.set(x, "providerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setProviderVersionNull: Self = StObject.set(x, "providerVersion", null)
     
     @scala.inline
-    def setProviderNull: Self = this.set("provider", null)
+    def setProviderVersionUndefined: Self = StObject.set(x, "providerVersion", js.undefined)
     
     @scala.inline
-    def setProviderVersion(value: NullableOption[String]): Self = this.set("providerVersion", value.asInstanceOf[js.Any])
+    def setSubProvider(value: NullableOption[String]): Self = StObject.set(x, "subProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviderVersion: Self = this.set("providerVersion", js.undefined)
+    def setSubProviderNull: Self = StObject.set(x, "subProvider", null)
     
     @scala.inline
-    def setProviderVersionNull: Self = this.set("providerVersion", null)
+    def setSubProviderUndefined: Self = StObject.set(x, "subProvider", js.undefined)
     
     @scala.inline
-    def setSubProvider(value: NullableOption[String]): Self = this.set("subProvider", value.asInstanceOf[js.Any])
+    def setVendor(value: NullableOption[String]): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubProvider: Self = this.set("subProvider", js.undefined)
+    def setVendorNull: Self = StObject.set(x, "vendor", null)
     
     @scala.inline
-    def setSubProviderNull: Self = this.set("subProvider", null)
-    
-    @scala.inline
-    def setVendor(value: NullableOption[String]): Self = this.set("vendor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendor: Self = this.set("vendor", js.undefined)
-    
-    @scala.inline
-    def setVendorNull: Self = this.set("vendor", null)
+    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

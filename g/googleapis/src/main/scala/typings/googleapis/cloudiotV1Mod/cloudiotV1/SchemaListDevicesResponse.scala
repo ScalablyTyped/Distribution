@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for `ListDevices`.
   */
 @js.native
-trait SchemaListDevicesResponse extends js.Object {
+trait SchemaListDevicesResponse extends StObject {
   
   /**
     * The devices that match the request.
@@ -30,33 +31,21 @@ object SchemaListDevicesResponse {
   }
   
   @scala.inline
-  implicit class SchemaListDevicesResponseOps[Self <: SchemaListDevicesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListDevicesResponseMutableBuilder[Self <: SchemaListDevicesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevices(value: js.Array[SchemaDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevicesVarargs(value: SchemaDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
     @scala.inline
-    def setDevicesVarargs(value: SchemaDevice*): Self = this.set("devices", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevices(value: js.Array[SchemaDevice]): Self = this.set("devices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDevices: Self = this.set("devices", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

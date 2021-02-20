@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPermissionSetsProvisionedToAccountRequest extends js.Object {
+trait ListPermissionSetsProvisionedToAccountRequest extends StObject {
   
   /**
     * The identifier of the AWS account from which to list the assignments.
@@ -41,42 +42,30 @@ object ListPermissionSetsProvisionedToAccountRequest {
   }
   
   @scala.inline
-  implicit class ListPermissionSetsProvisionedToAccountRequestOps[Self <: ListPermissionSetsProvisionedToAccountRequest] (val x: Self) extends AnyVal {
+  implicit class ListPermissionSetsProvisionedToAccountRequestMutableBuilder[Self <: ListPermissionSetsProvisionedToAccountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = this.set("InstanceArn", value.asInstanceOf[js.Any])
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setProvisioningStatus(value: ProvisioningStatus): Self = StObject.set(x, "ProvisioningStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setProvisioningStatus(value: ProvisioningStatus): Self = this.set("ProvisioningStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningStatus: Self = this.set("ProvisioningStatus", js.undefined)
+    def setProvisioningStatusUndefined: Self = StObject.set(x, "ProvisioningStatus", js.undefined)
   }
 }

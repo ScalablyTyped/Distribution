@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.pickListMod.PickListProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/picklist", JSImport.Namespace)
-@js.native
-object primereactPicklistMod extends js.Object {
+object primereactPicklistMod {
   
+  @JSImport("primereact/picklist", "PickList")
   @js.native
-  class PickList ()
-    extends Component[PickListProps, js.Any, js.Any]
+  class PickList protected ()
+    extends typings.primereact.pickListMod.PickList {
+    def this(props: PickListProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: PickListProps, context: js.Any) = this()
+  }
 }

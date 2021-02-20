@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddCardRes extends js.Object {
+trait AddCardRes extends StObject {
   
   /**
     * 卡券 id
@@ -21,27 +22,15 @@ object AddCardRes {
   }
   
   @scala.inline
-  implicit class AddCardResOps[Self <: AddCardRes] (val x: Self) extends AnyVal {
+  implicit class AddCardResMutableBuilder[Self <: AddCardRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardList(value: js.Array[CardData]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardListUndefined: Self = StObject.set(x, "cardList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCardListVarargs(value: CardData*): Self = this.set("cardList", js.Array(value :_*))
-    
-    @scala.inline
-    def setCardList(value: js.Array[CardData]): Self = this.set("cardList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCardList: Self = this.set("cardList", js.undefined)
+    def setCardListVarargs(value: CardData*): Self = StObject.set(x, "cardList", js.Array(value :_*))
   }
 }

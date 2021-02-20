@@ -3,6 +3,7 @@ package typings.oracleOraclejet.ojgaugeMod
 import typings.oracleOraclejet.anon.LabelAndValue
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
 import typings.oracleOraclejet.oracleOraclejetStrings.translations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

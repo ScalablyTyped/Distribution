@@ -2,6 +2,7 @@ package typings.extjs.Ext
 
 import typings.extjs.Ext.data.IAbstractStore
 import typings.extjs.Ext.data.IStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,162 +139,150 @@ object ILoadMask {
   }
   
   @scala.inline
-  implicit class ILoadMaskOps[Self <: ILoadMask] (val x: Self) extends AnyVal {
+  implicit class ILoadMaskMutableBuilder[Self <: ILoadMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterShow(value: () => Unit): Self = StObject.set(x, "afterShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterShowUndefined: Self = StObject.set(x, "afterShow", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindStore(value: js.UndefOr[js.Any | IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfterShow(value: () => Unit): Self = this.set("afterShow", js.Any.fromFunction0(value))
+    def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "bindStoreListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAfterShow: Self = this.set("afterShow", js.undefined)
+    def setBindStoreListenersUndefined: Self = StObject.set(x, "bindStoreListeners", js.undefined)
     
     @scala.inline
-    def setBindStore(value: js.UndefOr[js.Any | IStore] => Unit): Self = this.set("bindStore", js.Any.fromFunction1(value))
+    def setBindStoreUndefined: Self = StObject.set(x, "bindStore", js.undefined)
     
     @scala.inline
-    def deleteBindStore: Self = this.set("bindStore", js.undefined)
+    def setCenter(value: () => IComponent): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = this.set("bindStoreListeners", js.Any.fromFunction1(value))
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def deleteBindStoreListeners: Self = this.set("bindStoreListeners", js.undefined)
+    def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "doConstrain", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCenter(value: () => IComponent): Self = this.set("center", js.Any.fromFunction0(value))
+    def setDoConstrainUndefined: Self = StObject.set(x, "doConstrain", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setGetStore(value: () => IAbstractStore): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoConstrain(value: /* constrainTo */ js.UndefOr[js.Any] => Unit): Self = this.set("doConstrain", js.Any.fromFunction1(value))
+    def setGetStoreListeners(value: js.UndefOr[js.Any | IStore] => _): Self = StObject.set(x, "getStoreListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDoConstrain: Self = this.set("doConstrain", js.undefined)
+    def setGetStoreListenersUndefined: Self = StObject.set(x, "getStoreListeners", js.undefined)
     
     @scala.inline
-    def setGetStore(value: () => IAbstractStore): Self = this.set("getStore", js.Any.fromFunction0(value))
+    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
     @scala.inline
-    def deleteGetStore: Self = this.set("getStore", js.undefined)
+    def setHide(value: () => IComponent): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStoreListeners(value: js.UndefOr[js.Any | IStore] => _): Self = this.set("getStoreListeners", js.Any.fromFunction1(value))
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteGetStoreListeners: Self = this.set("getStoreListeners", js.undefined)
+    def setMaskCls(value: java.lang.String): Self = StObject.set(x, "maskCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: () => IComponent): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setMaskClsUndefined: Self = StObject.set(x, "maskCls", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setMsg(value: java.lang.String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskCls(value: java.lang.String): Self = this.set("maskCls", value.asInstanceOf[js.Any])
+    def setMsgCls(value: java.lang.String): Self = StObject.set(x, "msgCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaskCls: Self = this.set("maskCls", js.undefined)
+    def setMsgClsUndefined: Self = StObject.set(x, "msgCls", js.undefined)
     
     @scala.inline
-    def setMsg(value: java.lang.String): Self = this.set("msg", value.asInstanceOf[js.Any])
+    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
     @scala.inline
-    def deleteMsg: Self = this.set("msg", js.undefined)
+    def setOnBindStore(value: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onBindStore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMsgCls(value: java.lang.String): Self = this.set("msgCls", value.asInstanceOf[js.Any])
+    def setOnBindStoreUndefined: Self = StObject.set(x, "onBindStore", js.undefined)
     
     @scala.inline
-    def deleteMsgCls: Self = this.set("msgCls", js.undefined)
+    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBindStore(value: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit): Self = this.set("onBindStore", js.Any.fromFunction2(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnBindStore: Self = this.set("onBindStore", js.undefined)
+    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnHide(value: () => Unit): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnUnbindStore(value: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onUnbindStore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnShow(value: () => Unit): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setOnUnbindStoreUndefined: Self = StObject.set(x, "onUnbindStore", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setSetActive(value: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnUnbindStore(value: (js.UndefOr[IAbstractStore], js.UndefOr[Boolean]) => Unit): Self = this.set("onUnbindStore", js.Any.fromFunction2(value))
+    def setSetActiveUndefined: Self = StObject.set(x, "setActive", js.undefined)
     
     @scala.inline
-    def deleteOnUnbindStore: Self = this.set("onUnbindStore", js.undefined)
+    def setShow(value: () => IComponent): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetActive(value: (/* active */ js.UndefOr[Boolean], /* newActive */ js.UndefOr[IComponent]) => Unit): Self = this.set("setActive", js.Any.fromFunction2(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteSetActive: Self = this.set("setActive", js.undefined)
+    def setStore(value: IStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: () => IComponent): Self = this.set("show", js.Any.fromFunction0(value))
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTarget(value: IComponent): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStore(value: IStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setToBack(value: () => IComponent): Self = StObject.set(x, "toBack", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTarget(value: IComponent): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setToBackUndefined: Self = StObject.set(x, "toBack", js.undefined)
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setToFront(value: /* preventFocus */ js.UndefOr[Boolean] => IComponent): Self = StObject.set(x, "toFront", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToBack(value: () => IComponent): Self = this.set("toBack", js.Any.fromFunction0(value))
+    def setToFrontUndefined: Self = StObject.set(x, "toFront", js.undefined)
     
     @scala.inline
-    def deleteToBack: Self = this.set("toBack", js.undefined)
+    def setUnbindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = StObject.set(x, "unbindStoreListeners", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToFront(value: /* preventFocus */ js.UndefOr[Boolean] => IComponent): Self = this.set("toFront", js.Any.fromFunction1(value))
+    def setUnbindStoreListenersUndefined: Self = StObject.set(x, "unbindStoreListeners", js.undefined)
     
     @scala.inline
-    def deleteToFront: Self = this.set("toFront", js.undefined)
+    def setUseMsg(value: Boolean): Self = StObject.set(x, "useMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnbindStoreListeners(value: js.UndefOr[IAbstractStore] => Unit): Self = this.set("unbindStoreListeners", js.Any.fromFunction1(value))
+    def setUseMsgUndefined: Self = StObject.set(x, "useMsg", js.undefined)
     
     @scala.inline
-    def deleteUnbindStoreListeners: Self = this.set("unbindStoreListeners", js.undefined)
+    def setUseTargetEl(value: Boolean): Self = StObject.set(x, "useTargetEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMsg(value: Boolean): Self = this.set("useMsg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMsg: Self = this.set("useMsg", js.undefined)
-    
-    @scala.inline
-    def setUseTargetEl(value: Boolean): Self = this.set("useTargetEl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTargetEl: Self = this.set("useTargetEl", js.undefined)
+    def setUseTargetElUndefined: Self = StObject.set(x, "useTargetEl", js.undefined)
   }
 }

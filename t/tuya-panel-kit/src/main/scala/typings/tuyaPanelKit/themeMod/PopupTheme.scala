@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.themeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopupTheme extends js.Object {
+trait PopupTheme extends StObject {
   
   var backIconColor: String = js.native
   
@@ -83,84 +84,72 @@ object PopupTheme {
   }
   
   @scala.inline
-  implicit class PopupThemeOps[Self <: PopupTheme] (val x: Self) extends AnyVal {
+  implicit class PopupThemeMutableBuilder[Self <: PopupTheme] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackIconColor(value: String): Self = StObject.set(x, "backIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomBg(value: String): Self = StObject.set(x, "bottomBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelFontColor(value: String): Self = StObject.set(x, "cancelFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackIconColor(value: String): Self = this.set("backIconColor", value.asInstanceOf[js.Any])
+    def setCancelFontSize(value: Double): Self = StObject.set(x, "cancelFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomBg(value: String): Self = this.set("bottomBg", value.asInstanceOf[js.Any])
+    def setCellBg(value: String): Self = StObject.set(x, "cellBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelFontColor(value: String): Self = this.set("cancelFontColor", value.asInstanceOf[js.Any])
+    def setCellFontColor(value: String): Self = StObject.set(x, "cellFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelFontSize(value: Double): Self = this.set("cancelFontSize", value.asInstanceOf[js.Any])
+    def setCellFontSize(value: Double): Self = StObject.set(x, "cellFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellBg(value: String): Self = this.set("cellBg", value.asInstanceOf[js.Any])
+    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFontColor(value: String): Self = this.set("cellFontColor", value.asInstanceOf[js.Any])
+    def setCheckboxColor(value: String): Self = StObject.set(x, "checkboxColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellFontSize(value: Double): Self = this.set("cellFontSize", value.asInstanceOf[js.Any])
+    def setConfirmFontColor(value: String): Self = StObject.set(x, "confirmFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellHeight(value: Double): Self = this.set("cellHeight", value.asInstanceOf[js.Any])
+    def setConfirmFontSize(value: Double): Self = StObject.set(x, "confirmFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxColor(value: String): Self = this.set("checkboxColor", value.asInstanceOf[js.Any])
+    def setFooterRadius(value: Double): Self = StObject.set(x, "footerRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmFontColor(value: String): Self = this.set("confirmFontColor", value.asInstanceOf[js.Any])
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmFontSize(value: Double): Self = this.set("confirmFontSize", value.asInstanceOf[js.Any])
+    def setList(value: PopupListTheme): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterRadius(value: Double): Self = this.set("footerRadius", value.asInstanceOf[js.Any])
+    def setNumberSelector(value: PopupNumberSelectorTheme): Self = StObject.set(x, "numberSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setSubTitleFontColor(value: String): Self = StObject.set(x, "subTitleFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setList(value: PopupListTheme): Self = this.set("list", value.asInstanceOf[js.Any])
+    def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberSelector(value: PopupNumberSelectorTheme): Self = this.set("numberSelector", value.asInstanceOf[js.Any])
+    def setTitleBg(value: String): Self = StObject.set(x, "titleBg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTitleFontColor(value: String): Self = this.set("subTitleFontColor", value.asInstanceOf[js.Any])
+    def setTitleFontColor(value: String): Self = StObject.set(x, "titleFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: String): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    def setTitleFontSize(value: Double): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleBg(value: String): Self = this.set("titleBg", value.asInstanceOf[js.Any])
+    def setTitleHeight(value: Double): Self = StObject.set(x, "titleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleFontColor(value: String): Self = this.set("titleFontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleFontSize(value: Double): Self = this.set("titleFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleHeight(value: Double): Self = this.set("titleHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleRadius(value: Double): Self = this.set("titleRadius", value.asInstanceOf[js.Any])
+    def setTitleRadius(value: Double): Self = StObject.set(x, "titleRadius", value.asInstanceOf[js.Any])
   }
 }

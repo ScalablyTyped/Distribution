@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,15 +19,21 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
   def this(props: TProps, context: js.Any) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "BaseComponent")
-@js.native
-object BaseComponent extends js.Object {
+object BaseComponent {
   
   /**
     * @deprecated Use React's error boundaries instead.
     */
+  @JSImport("office-ui-fabric-react", "BaseComponent.onError")
+  @js.native
   def onError(): Unit = js.native
+  @JSImport("office-ui-fabric-react", "BaseComponent.onError")
+  @js.native
   def onError(errorMessage: js.UndefOr[scala.Nothing], ex: js.Any): Unit = js.native
+  @JSImport("office-ui-fabric-react", "BaseComponent.onError")
+  @js.native
   def onError(errorMessage: String): Unit = js.native
+  @JSImport("office-ui-fabric-react", "BaseComponent.onError")
+  @js.native
   def onError(errorMessage: String, ex: js.Any): Unit = js.native
 }

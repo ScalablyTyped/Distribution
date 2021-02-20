@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUpdatePartitionFailureEntry extends js.Object {
+trait BatchUpdatePartitionFailureEntry extends StObject {
   
   /**
     * The details about the batch update partition error.
@@ -26,33 +27,21 @@ object BatchUpdatePartitionFailureEntry {
   }
   
   @scala.inline
-  implicit class BatchUpdatePartitionFailureEntryOps[Self <: BatchUpdatePartitionFailureEntry] (val x: Self) extends AnyVal {
+  implicit class BatchUpdatePartitionFailureEntryMutableBuilder[Self <: BatchUpdatePartitionFailureEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartitionValueList(value: BoundedPartitionValueList): Self = StObject.set(x, "PartitionValueList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetail(value: ErrorDetail): Self = this.set("ErrorDetail", value.asInstanceOf[js.Any])
+    def setPartitionValueListUndefined: Self = StObject.set(x, "PartitionValueList", js.undefined)
     
     @scala.inline
-    def deleteErrorDetail: Self = this.set("ErrorDetail", js.undefined)
-    
-    @scala.inline
-    def setPartitionValueListVarargs(value: ValueString*): Self = this.set("PartitionValueList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartitionValueList(value: BoundedPartitionValueList): Self = this.set("PartitionValueList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionValueList: Self = this.set("PartitionValueList", js.undefined)
+    def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value :_*))
   }
 }

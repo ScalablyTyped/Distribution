@@ -2,6 +2,7 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,54 +97,42 @@ object XamlBuildDefinition {
   }
   
   @scala.inline
-  implicit class XamlBuildDefinitionOps[Self <: XamlBuildDefinition] (val x: Self) extends AnyVal {
+  implicit class XamlBuildDefinitionMutableBuilder[Self <: XamlBuildDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildArgs(value: String): Self = StObject.set(x, "buildArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuousIntegrationQuietPeriod(value: Double): Self = StObject.set(x, "continuousIntegrationQuietPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_links(value: js.Any): Self = this.set("_links", value.asInstanceOf[js.Any])
+    def setController(value: BuildController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildArgs(value: String): Self = this.set("buildArgs", value.asInstanceOf[js.Any])
+    def setDefaultDropLocation(value: String): Self = StObject.set(x, "defaultDropLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousIntegrationQuietPeriod(value: Double): Self = this.set("continuousIntegrationQuietPeriod", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: BuildController): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setLastBuild(value: XamlBuildReference): Self = StObject.set(x, "lastBuild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setRepository(value: BuildRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultDropLocation(value: String): Self = this.set("defaultDropLocation", value.asInstanceOf[js.Any])
+    def setSupportedReasons(value: BuildReason): Self = StObject.set(x, "supportedReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastBuild(value: XamlBuildReference): Self = this.set("lastBuild", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository(value: BuildRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedReasons(value: BuildReason): Self = this.set("supportedReasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriggerType(value: DefinitionTriggerType): Self = this.set("triggerType", value.asInstanceOf[js.Any])
+    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

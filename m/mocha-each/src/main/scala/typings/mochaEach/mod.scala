@@ -6,22 +6,29 @@ import typings.mocha.mod.Context
 import typings.mocha.mod.Suite_
 import typings.mocha.mod.Test_
 import typings.mochaEach.anon.Describe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mocha-each", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * This function takes an array collections of parameters to be used in
     * a series of mocha tests, defined using the `it` or `describe` notation common to
     * Mocha.
     */
+  @JSImport("mocha-each", JSImport.Namespace)
+  @js.native
   def apply(parameters: js.Array[_]): Describe = js.native
+  @JSImport("mocha-each", JSImport.Namespace)
+  @js.native
   def apply(parameters: js.Array[_], dIt: js.UndefOr[scala.Nothing], dDescribe: SuiteFunction): Describe = js.native
+  @JSImport("mocha-each", JSImport.Namespace)
+  @js.native
   def apply(parameters: js.Array[_], dIt: TestFunction): Describe = js.native
+  @JSImport("mocha-each", JSImport.Namespace)
+  @js.native
   def apply(parameters: js.Array[_], dIt: TestFunction, dDescribe: SuiteFunction): Describe = js.native
   
   /**
@@ -29,7 +36,7 @@ object mod extends js.Object {
     * The result is almost identical to Mocha's `SuiteFunction` interface.
     */
   @js.native
-  trait ForEachDescribeDefinition extends js.Object {
+  trait ForEachDescribeDefinition extends StObject {
     
     def apply(expectation: String): Suite_ = js.native
     def apply(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Suite_ = js.native
@@ -46,7 +53,7 @@ object mod extends js.Object {
     * The result is very similar to Mocha's `TestFunction` interface.
     */
   @js.native
-  trait ForEachTestFunction extends js.Object {
+  trait ForEachTestFunction extends StObject {
     
     def apply(expectation: String): Test_ = js.native
     def apply(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Test_ = js.native

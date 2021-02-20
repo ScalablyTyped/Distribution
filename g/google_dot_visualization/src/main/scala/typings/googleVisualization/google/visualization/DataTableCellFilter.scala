@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTableCellFilter extends js.Object {
+trait DataTableCellFilter extends StObject {
   
   var column: Double = js.native
   
@@ -34,47 +35,35 @@ object DataTableCellFilter {
   }
   
   @scala.inline
-  implicit class DataTableCellFilterOps[Self <: DataTableCellFilter] (val x: Self) extends AnyVal {
+  implicit class DataTableCellFilterMutableBuilder[Self <: DataTableCellFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: js.Any): Self = this.set("maxValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
-    
-    @scala.inline
-    def setMinValue(value: js.Any): Self = this.set("minValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
     def setTest(
       value: (/* value */ js.Any, /* row */ js.UndefOr[Double], /* column */ js.UndefOr[Double], /* data */ js.UndefOr[DataTable | DataView]) => Boolean
-    ): Self = this.set("test", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "test", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

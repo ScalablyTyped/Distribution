@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.TSConditionalType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object TSConditionalType_ {
   }
   
   @scala.inline
-  implicit class TSConditionalType_Ops[Self <: TSConditionalType_] (val x: Self) extends AnyVal {
+  implicit class TSConditionalType_MutableBuilder[Self <: TSConditionalType_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckType(value: TSType): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendsType(value: TSType): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFalseType(value: TSType): Self = StObject.set(x, "falseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckType(value: TSType): Self = this.set("checkType", value.asInstanceOf[js.Any])
+    def setTrueType(value: TSType): Self = StObject.set(x, "trueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendsType(value: TSType): Self = this.set("extendsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFalseType(value: TSType): Self = this.set("falseType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrueType(value: TSType): Self = this.set("trueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: TSConditionalType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: TSConditionalType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

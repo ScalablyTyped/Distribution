@@ -1,5 +1,6 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * One half edge represents one side of the edge; the other half edge represents the other side.
   */
 @js.native
-trait FlashHalfEdge extends js.Object {
+trait FlashHalfEdge extends StObject {
   
   def getEdge(): FlashEdge = js.native
   
@@ -45,39 +46,27 @@ object FlashHalfEdge {
   }
   
   @scala.inline
-  implicit class FlashHalfEdgeOps[Self <: FlashHalfEdge] (val x: Self) extends AnyVal {
+  implicit class FlashHalfEdgeMutableBuilder[Self <: FlashHalfEdge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEdge(value: () => FlashEdge): Self = StObject.set(x, "getEdge", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNext(value: () => FlashHalfEdge): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOppositeHalfEdge(value: () => FlashHalfEdge): Self = StObject.set(x, "getOppositeHalfEdge", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEdge(value: () => FlashEdge): Self = this.set("getEdge", js.Any.fromFunction0(value))
+    def setGetPrev(value: () => FlashHalfEdge): Self = StObject.set(x, "getPrev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNext(value: () => FlashHalfEdge): Self = this.set("getNext", js.Any.fromFunction0(value))
+    def setGetVertex(value: () => FlashVertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOppositeHalfEdge(value: () => FlashHalfEdge): Self = this.set("getOppositeHalfEdge", js.Any.fromFunction0(value))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPrev(value: () => FlashHalfEdge): Self = this.set("getPrev", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVertex(value: () => FlashVertex): Self = this.set("getVertex", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

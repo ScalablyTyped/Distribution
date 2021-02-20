@@ -2,6 +2,7 @@ package typings.qlikVisualizationextensions
 
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.changed
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.closed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This section is added because the Qlik Sense Client after > 3.2 contains a engineapi
   * an this makes the handling more fluent for users of that files.
   */
-@JSGlobal("enigmaJS")
-@js.native
-object enigmaJS extends js.Object {
+object enigmaJS {
   
   @js.native
-  trait IGeneratedAPI extends js.Object {
+  trait IGeneratedAPI extends StObject {
     
     /**
       * manual emit an events

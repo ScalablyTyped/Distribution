@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Classifier extends js.Object {
+trait Classifier extends StObject {
   
   /* private */ def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any = js.native
   
@@ -44,45 +45,33 @@ object Classifier {
   }
   
   @scala.inline
-  implicit class ClassifierOps[Self <: Classifier] (val x: Self) extends AnyVal {
+  implicit class ClassifierMutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResult(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addResult", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacterWindow(value: js.Any): Self = StObject.set(x, "characterWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassFromKind(value: js.Any => js.Any): Self = StObject.set(x, "classFromKind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddResult(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("addResult", js.Any.fromFunction5(value))
+    def setDiagnostics(value: js.Any): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterWindow(value: js.Any): Self = this.set("characterWindow", value.asInstanceOf[js.Any])
+    def setGetClassificationsForLine(value: (String, EndOfLineState) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClassFromKind(value: js.Any => js.Any): Self = this.set("classFromKind", js.Any.fromFunction1(value))
+    def setHost(value: IClassifierHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnostics(value: js.Any): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
+    def setProcessToken(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "processToken", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetClassificationsForLine(value: (String, EndOfLineState) => ClassificationResult): Self = this.set("getClassificationsForLine", js.Any.fromFunction2(value))
+    def setProcessTriviaList(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "processTriviaList", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setHost(value: IClassifierHost): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcessToken(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("processToken", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setProcessTriviaList(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("processTriviaList", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setScanner(value: js.Any): Self = this.set("scanner", value.asInstanceOf[js.Any])
+    def setScanner(value: js.Any): Self = StObject.set(x, "scanner", value.asInstanceOf[js.Any])
   }
 }

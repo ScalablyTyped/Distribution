@@ -1,11 +1,12 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseListener extends js.Object {
+trait BaseListener extends StObject {
   
   /**
     * Waits for the next client to connect.
@@ -27,24 +28,12 @@ object BaseListener {
   }
   
   @scala.inline
-  implicit class BaseListenerOps[Self <: BaseListener] (val x: Self) extends AnyVal {
+  implicit class BaseListenerMutableBuilder[Self <: BaseListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: () => js.Promise[SocketConnection]): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccept(value: () => js.Promise[SocketConnection]): Self = this.set("accept", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = this.set("close", js.Any.fromFunction0(value))
+    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

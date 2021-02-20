@@ -6,13 +6,14 @@ import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.RecursivePartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.TooltipProps>> */
 @js.native
-trait RecursivePartialPartialTo extends js.Object {
+trait RecursivePartialPartialTo extends StObject {
   
   var ModalComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
   
@@ -57,120 +58,108 @@ object RecursivePartialPartialTo {
   }
   
   @scala.inline
-  implicit class RecursivePartialPartialToOps[Self <: RecursivePartialPartialTo] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialPartialToMutableBuilder[Self <: RecursivePartialPartialTo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloseOnlyOnBackdropPress(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "closeOnlyOnBackdropPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModalComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = this.set("ModalComponent", value.asInstanceOf[js.Any])
+    def setCloseOnlyOnBackdropPressUndefined: Self = StObject.set(x, "closeOnlyOnBackdropPress", js.undefined)
     
     @scala.inline
-    def deleteModalComponent: Self = this.set("ModalComponent", js.undefined)
+    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setHeight(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnlyOnBackdropPress(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("closeOnlyOnBackdropPress", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteCloseOnlyOnBackdropPress: Self = this.set("closeOnlyOnBackdropPress", js.undefined)
+    def setHighlightColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setModalComponent(value: RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]): Self = StObject.set(x, "ModalComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setModalComponentUndefined: Self = StObject.set(x, "ModalComponent", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOnClose(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("highlightColor", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteHighlightColor: Self = this.set("highlightColor", js.undefined)
+    def setOnOpen(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onClose", value.asInstanceOf[js.Any])
+    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOverlayColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOpen(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onOpen", value.asInstanceOf[js.Any])
+    def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
     
     @scala.inline
-    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    def setPointerColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "pointerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("overlayColor", value.asInstanceOf[js.Any])
+    def setPointerColorUndefined: Self = StObject.set(x, "pointerColor", js.undefined)
     
     @scala.inline
-    def deleteOverlayColor: Self = this.set("overlayColor", js.undefined)
+    def setPopover(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointerColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("pointerColor", value.asInstanceOf[js.Any])
+    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
     @scala.inline
-    def deletePointerColor: Self = this.set("pointerColor", js.undefined)
+    def setSkipAndroidStatusBar(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "skipAndroidStatusBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopover(value: RecursivePartial[js.UndefOr[ReactElement]]): Self = this.set("popover", value.asInstanceOf[js.Any])
+    def setSkipAndroidStatusBarUndefined: Self = StObject.set(x, "skipAndroidStatusBar", js.undefined)
     
     @scala.inline
-    def deletePopover: Self = this.set("popover", js.undefined)
+    def setToggleAction(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "toggleAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipAndroidStatusBar(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("skipAndroidStatusBar", value.asInstanceOf[js.Any])
+    def setToggleActionUndefined: Self = StObject.set(x, "toggleAction", js.undefined)
     
     @scala.inline
-    def deleteSkipAndroidStatusBar: Self = this.set("skipAndroidStatusBar", js.undefined)
+    def setToggleOnPress(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "toggleOnPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleAction(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("toggleAction", value.asInstanceOf[js.Any])
+    def setToggleOnPressUndefined: Self = StObject.set(x, "toggleOnPress", js.undefined)
     
     @scala.inline
-    def deleteToggleAction: Self = this.set("toggleAction", js.undefined)
+    def setWidth(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleOnPress(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("toggleOnPress", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteToggleOnPress: Self = this.set("toggleOnPress", js.undefined)
+    def setWithOverlay(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "withOverlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWithOverlayUndefined: Self = StObject.set(x, "withOverlay", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWithPointer(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "withPointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWithOverlay(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("withOverlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithOverlay: Self = this.set("withOverlay", js.undefined)
-    
-    @scala.inline
-    def setWithPointer(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("withPointer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithPointer: Self = this.set("withPointer", js.undefined)
+    def setWithPointerUndefined: Self = StObject.set(x, "withPointer", js.undefined)
   }
 }

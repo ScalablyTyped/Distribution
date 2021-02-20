@@ -5,6 +5,7 @@ import typings.pulumiAws.transitGatewayPeeringAttachmentAccepterMod.TransitGatew
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class TransitGatewayPeeringAttachmentAccepter protected ()
   def this(name: String, args: TransitGatewayPeeringAttachmentAccepterArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter")
-@js.native
-object TransitGatewayPeeringAttachmentAccepter extends js.Object {
+object TransitGatewayPeeringAttachmentAccepter {
   
   /**
     * Get an existing TransitGatewayPeeringAttachmentAccepter resource's state with the given name, ID, and optional extra
@@ -37,9 +36,17 @@ object TransitGatewayPeeringAttachmentAccepter extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.transitGatewayPeeringAttachmentAccepterMod.TransitGatewayPeeringAttachmentAccepter = js.native
+  @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transitGatewayPeeringAttachmentAccepterMod.TransitGatewayPeeringAttachmentAccepter = js.native
+  @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter.get")
+  @js.native
   def get(name: String, id: Input[ID], state: TransitGatewayPeeringAttachmentAccepterState): typings.pulumiAws.transitGatewayPeeringAttachmentAccepterMod.TransitGatewayPeeringAttachmentAccepter = js.native
+  @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter.get")
+  @js.native
   def get(
     name: String,
     id: Input[ID],
@@ -51,5 +58,7 @@ object TransitGatewayPeeringAttachmentAccepter extends js.Object {
     * Returns true if the given object is an instance of TransitGatewayPeeringAttachmentAccepter.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/ec2", "TransitGatewayPeeringAttachmentAccepter.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/transitGatewayPeeringAttachmentAccepter.TransitGatewayPeeringAttachmentAccepter */ Boolean = js.native
 }

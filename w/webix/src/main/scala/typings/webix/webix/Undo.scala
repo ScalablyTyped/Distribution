@@ -1,11 +1,12 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Undo extends js.Object {
+trait Undo extends StObject {
   
   def ignoreUndo(functor: WebixCallback): Unit = js.native
   
@@ -22,27 +23,15 @@ object Undo {
   }
   
   @scala.inline
-  implicit class UndoOps[Self <: Undo] (val x: Self) extends AnyVal {
+  implicit class UndoMutableBuilder[Self <: Undo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreUndo(value: WebixCallback => Unit): Self = StObject.set(x, "ignoreUndo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveUndo(value: String => Unit): Self = StObject.set(x, "removeUndo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIgnoreUndo(value: WebixCallback => Unit): Self = this.set("ignoreUndo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveUndo(value: String => Unit): Self = this.set("removeUndo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUndo(value: String => Unit): Self = this.set("undo", js.Any.fromFunction1(value))
+    def setUndo(value: String => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetNamedQueryOutput extends js.Object {
+trait BatchGetNamedQueryOutput extends StObject {
   
   /**
     * Information about the named query IDs submitted.
@@ -26,36 +27,24 @@ object BatchGetNamedQueryOutput {
   }
   
   @scala.inline
-  implicit class BatchGetNamedQueryOutputOps[Self <: BatchGetNamedQueryOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetNamedQueryOutputMutableBuilder[Self <: BatchGetNamedQueryOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedQueries(value: NamedQueryList): Self = StObject.set(x, "NamedQueries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedQueriesUndefined: Self = StObject.set(x, "NamedQueries", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamedQueriesVarargs(value: NamedQuery*): Self = StObject.set(x, "NamedQueries", js.Array(value :_*))
     
     @scala.inline
-    def setNamedQueriesVarargs(value: NamedQuery*): Self = this.set("NamedQueries", js.Array(value :_*))
+    def setUnprocessedNamedQueryIds(value: UnprocessedNamedQueryIdList): Self = StObject.set(x, "UnprocessedNamedQueryIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedQueries(value: NamedQueryList): Self = this.set("NamedQueries", value.asInstanceOf[js.Any])
+    def setUnprocessedNamedQueryIdsUndefined: Self = StObject.set(x, "UnprocessedNamedQueryIds", js.undefined)
     
     @scala.inline
-    def deleteNamedQueries: Self = this.set("NamedQueries", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = this.set("UnprocessedNamedQueryIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedNamedQueryIds(value: UnprocessedNamedQueryIdList): Self = this.set("UnprocessedNamedQueryIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedNamedQueryIds: Self = this.set("UnprocessedNamedQueryIds", js.undefined)
+    def setUnprocessedNamedQueryIdsVarargs(value: UnprocessedNamedQueryId*): Self = StObject.set(x, "UnprocessedNamedQueryIds", js.Array(value :_*))
   }
 }

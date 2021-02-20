@@ -4,29 +4,33 @@ import typings.maximMazurokGapiClientLocalservices.gapi.client.localservices.Acc
 import typings.maximMazurokGapiClientLocalservices.gapi.client.localservices.DetailedLeadReportsResource
 import typings.maximMazurokGapiClientLocalservices.maximMazurokGapiClientLocalservicesStrings.localservices
 import typings.maximMazurokGapiClientLocalservices.maximMazurokGapiClientLocalservicesStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load Local Services API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: localservices, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: localservices, version: v1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object localservices extends js.Object {
+      object localservices {
         
+        @JSGlobal("gapi.client.localservices.accountReports")
+        @js.native
         val accountReports: AccountReportsResource = js.native
         
+        @JSGlobal("gapi.client.localservices.detailedLeadReports")
+        @js.native
         val detailedLeadReports: DetailedLeadReportsResource = js.native
       }
     }

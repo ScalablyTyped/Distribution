@@ -1,12 +1,13 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Animation")
 @js.native
-class Animation protected () extends js.Object {
+class Animation protected () extends StObject {
   def this(option: js.Array[Servo]) = this()
   def this(option: Servo) = this()
   

@@ -3,14 +3,14 @@ package typings.ow
 import typings.ow.predicateMod.Predicate
 import typings.ow.predicateMod.PredicateOptions
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ow/dist/source/predicates/weak-map", JSImport.Namespace)
-@js.native
-object weakMapMod extends js.Object {
+object weakMapMod {
   
+  @JSImport("ow/dist/source/predicates/weak-map", "WeakMapPredicate")
   @js.native
   /**
     @hidden

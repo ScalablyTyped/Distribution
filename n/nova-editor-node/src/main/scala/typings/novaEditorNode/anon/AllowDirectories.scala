@@ -1,11 +1,12 @@
 package typings.novaEditorNode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowDirectories extends js.Object {
+trait AllowDirectories extends StObject {
   
   var allowDirectories: js.UndefOr[Boolean] = js.native
   
@@ -28,57 +29,45 @@ object AllowDirectories {
   }
   
   @scala.inline
-  implicit class AllowDirectoriesOps[Self <: AllowDirectories] (val x: Self) extends AnyVal {
+  implicit class AllowDirectoriesMutableBuilder[Self <: AllowDirectories] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDirectories(value: Boolean): Self = StObject.set(x, "allowDirectories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDirectoriesUndefined: Self = StObject.set(x, "allowDirectories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowFiles(value: Boolean): Self = StObject.set(x, "allowFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDirectories(value: Boolean): Self = this.set("allowDirectories", value.asInstanceOf[js.Any])
+    def setAllowFilesUndefined: Self = StObject.set(x, "allowFiles", js.undefined)
     
     @scala.inline
-    def deleteAllowDirectories: Self = this.set("allowDirectories", js.undefined)
+    def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowFiles(value: Boolean): Self = this.set("allowFiles", value.asInstanceOf[js.Any])
+    def setAllowMultipleUndefined: Self = StObject.set(x, "allowMultiple", js.undefined)
     
     @scala.inline
-    def deleteAllowFiles: Self = this.set("allowFiles", js.undefined)
+    def setFiletype(value: js.Array[String]): Self = StObject.set(x, "filetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowMultiple(value: Boolean): Self = this.set("allowMultiple", value.asInstanceOf[js.Any])
+    def setFiletypeUndefined: Self = StObject.set(x, "filetype", js.undefined)
     
     @scala.inline
-    def deleteAllowMultiple: Self = this.set("allowMultiple", js.undefined)
+    def setFiletypeVarargs(value: String*): Self = StObject.set(x, "filetype", js.Array(value :_*))
     
     @scala.inline
-    def setFiletypeVarargs(value: String*): Self = this.set("filetype", js.Array(value :_*))
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiletype(value: js.Array[String]): Self = this.set("filetype", value.asInstanceOf[js.Any])
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def deleteFiletype: Self = this.set("filetype", js.undefined)
+    def setRelative(value: Boolean): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
-    
-    @scala.inline
-    def setRelative(value: Boolean): Self = this.set("relative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelative: Self = this.set("relative", js.undefined)
+    def setRelativeUndefined: Self = StObject.set(x, "relative", js.undefined)
   }
 }

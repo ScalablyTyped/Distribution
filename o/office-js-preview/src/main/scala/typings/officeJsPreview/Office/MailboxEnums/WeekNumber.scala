@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WeekNumber extends js.Object
+sealed trait WeekNumber extends StObject
 /**
   * Specifies the week of the month.
   *
@@ -17,7 +18,7 @@ sealed trait WeekNumber extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.WeekNumber")
 @js.native
-object WeekNumber extends js.Object {
+object WeekNumber extends StObject {
   
   /**
     * First week of the month.

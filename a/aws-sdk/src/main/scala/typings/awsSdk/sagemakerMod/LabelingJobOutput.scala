@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelingJobOutput extends js.Object {
+trait LabelingJobOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the most recent Amazon SageMaker model trained as part of automated data labeling. 
@@ -26,27 +27,15 @@ object LabelingJobOutput {
   }
   
   @scala.inline
-  implicit class LabelingJobOutputOps[Self <: LabelingJobOutput] (val x: Self) extends AnyVal {
+  implicit class LabelingJobOutputMutableBuilder[Self <: LabelingJobOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFinalActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "FinalActiveLearningModelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFinalActiveLearningModelArnUndefined: Self = StObject.set(x, "FinalActiveLearningModelArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputDatasetS3Uri(value: S3Uri): Self = this.set("OutputDatasetS3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFinalActiveLearningModelArn(value: ModelArn): Self = this.set("FinalActiveLearningModelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFinalActiveLearningModelArn: Self = this.set("FinalActiveLearningModelArn", js.undefined)
+    def setOutputDatasetS3Uri(value: S3Uri): Self = StObject.set(x, "OutputDatasetS3Uri", value.asInstanceOf[js.Any])
   }
 }

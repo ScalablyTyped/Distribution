@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePlatformVersionResult extends js.Object {
+trait DescribePlatformVersionResult extends StObject {
   
   /**
     * Detailed information about the platform version.
@@ -21,24 +22,12 @@ object DescribePlatformVersionResult {
   }
   
   @scala.inline
-  implicit class DescribePlatformVersionResultOps[Self <: DescribePlatformVersionResult] (val x: Self) extends AnyVal {
+  implicit class DescribePlatformVersionResultMutableBuilder[Self <: DescribePlatformVersionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlatformDescription(value: PlatformDescription): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlatformDescription(value: PlatformDescription): Self = this.set("PlatformDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformDescription: Self = this.set("PlatformDescription", js.undefined)
+    def setPlatformDescriptionUndefined: Self = StObject.set(x, "PlatformDescription", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TopologySpreadConstraint specifies how to spread matching pods among the given topology.
   */
 @js.native
-trait TopologySpreadConstraint extends js.Object {
+trait TopologySpreadConstraint extends StObject {
   
   /**
     * LabelSelector is used to find matching pods. Pods that match this label selector are counted to determine the number of pods in their corresponding topology domain.
@@ -43,30 +44,18 @@ object TopologySpreadConstraint {
   }
   
   @scala.inline
-  implicit class TopologySpreadConstraintOps[Self <: TopologySpreadConstraint] (val x: Self) extends AnyVal {
+  implicit class TopologySpreadConstraintMutableBuilder[Self <: TopologySpreadConstraint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabelSelector(value: LabelSelector): Self = StObject.set(x, "labelSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSkew(value: Double): Self = StObject.set(x, "maxSkew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopologyKey(value: String): Self = StObject.set(x, "topologyKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSelector(value: LabelSelector): Self = this.set("labelSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxSkew(value: Double): Self = this.set("maxSkew", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopologyKey(value: String): Self = this.set("topologyKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhenUnsatisfiable(value: String): Self = this.set("whenUnsatisfiable", value.asInstanceOf[js.Any])
+    def setWhenUnsatisfiable(value: String): Self = StObject.set(x, "whenUnsatisfiable", value.asInstanceOf[js.Any])
   }
 }

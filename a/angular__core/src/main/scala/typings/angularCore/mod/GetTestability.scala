@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetTestability extends js.Object {
+trait GetTestability extends StObject {
   
   def addToWindow(registry: TestabilityRegistry): Unit = js.native
   
@@ -23,24 +24,12 @@ object GetTestability {
   }
   
   @scala.inline
-  implicit class GetTestabilityOps[Self <: GetTestability] (val x: Self) extends AnyVal {
+  implicit class GetTestabilityMutableBuilder[Self <: GetTestability] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddToWindow(value: TestabilityRegistry => Unit): Self = StObject.set(x, "addToWindow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddToWindow(value: TestabilityRegistry => Unit): Self = this.set("addToWindow", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFindTestabilityInTree(value: (TestabilityRegistry, js.Any, Boolean) => Testability | Null): Self = this.set("findTestabilityInTree", js.Any.fromFunction3(value))
+    def setFindTestabilityInTree(value: (TestabilityRegistry, js.Any, Boolean) => Testability | Null): Self = StObject.set(x, "findTestabilityInTree", js.Any.fromFunction3(value))
   }
 }

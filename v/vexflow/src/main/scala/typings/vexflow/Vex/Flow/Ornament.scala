@@ -2,6 +2,7 @@ package typings.vexflow.Vex.Flow
 
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object Ornament {
   }
   
   @scala.inline
-  implicit class OrnamentOps[Self <: Ornament] (val x: Self) extends AnyVal {
+  implicit class OrnamentMutableBuilder[Self <: Ornament] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSetDelayed(value: Boolean => Ornament): Self = StObject.set(x, "setDelayed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetLowerAccidental(value: String => Ornament): Self = StObject.set(x, "setLowerAccidental", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetDelayed(value: Boolean => Ornament): Self = this.set("setDelayed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLowerAccidental(value: String => Ornament): Self = this.set("setLowerAccidental", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUpperAccidental(value: String => Ornament): Self = this.set("setUpperAccidental", js.Any.fromFunction1(value))
+    def setSetUpperAccidental(value: String => Ornament): Self = StObject.set(x, "setUpperAccidental", js.Any.fromFunction1(value))
   }
 }

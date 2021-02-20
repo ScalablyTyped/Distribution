@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogEntryOperation extends js.Object {
+trait LogEntryOperation extends StObject {
   
   /** Optional. Set this to True if this is the first log entry in the operation. */
   var first: js.UndefOr[Boolean] = js.native
@@ -31,42 +32,30 @@ object LogEntryOperation {
   }
   
   @scala.inline
-  implicit class LogEntryOperationOps[Self <: LogEntryOperation] (val x: Self) extends AnyVal {
+  implicit class LogEntryOperationMutableBuilder[Self <: LogEntryOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst(value: Boolean): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setLast(value: Boolean): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProducer(value: String): Self = StObject.set(x, "producer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast(value: Boolean): Self = this.set("last", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
-    
-    @scala.inline
-    def setProducer(value: String): Self = this.set("producer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProducer: Self = this.set("producer", js.undefined)
+    def setProducerUndefined: Self = StObject.set(x, "producer", js.undefined)
   }
 }

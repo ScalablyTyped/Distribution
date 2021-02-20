@@ -9,6 +9,7 @@ import typings.officeJs.officeJsStrings.LessThan
 import typings.officeJs.officeJsStrings.LessThanOrEqual
 import typings.officeJs.officeJsStrings.NotBetween
 import typings.officeJs.officeJsStrings.NotEqualTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalCellValueRule extends js.Object {
+trait ConditionalCellValueRule extends StObject {
   
   /**
     *
@@ -58,32 +59,20 @@ object ConditionalCellValueRule {
   }
   
   @scala.inline
-  implicit class ConditionalCellValueRuleOps[Self <: ConditionalCellValueRule] (val x: Self) extends AnyVal {
+  implicit class ConditionalCellValueRuleMutableBuilder[Self <: ConditionalCellValueRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormula1(value: String): Self = StObject.set(x, "formula1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormula2(value: String): Self = StObject.set(x, "formula2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormula1(value: String): Self = this.set("formula1", value.asInstanceOf[js.Any])
+    def setFormula2Undefined: Self = StObject.set(x, "formula2", js.undefined)
     
     @scala.inline
     def setOperator(
       value: ConditionalCellValueOperator | Invalid | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual
-    ): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormula2(value: String): Self = this.set("formula2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormula2: Self = this.set("formula2", js.undefined)
+    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }
 }

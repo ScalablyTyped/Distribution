@@ -21,16 +21,16 @@ import typings.tarn.tarnStrings.release
 import typings.tarn.tarnStrings.startReaping
 import typings.tarn.tarnStrings.stopReaping
 import typings.tarn.tarnStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tarn/dist/Pool", JSImport.Namespace)
-@js.native
-object poolMod extends js.Object {
+object poolMod {
   
+  @JSImport("tarn/dist/Pool", "Pool")
   @js.native
-  class Pool[T] protected () extends js.Object {
+  class Pool[T] protected () extends StObject {
     def this(opt: PoolOptions[T]) = this()
     
     def _canAcquire(): Boolean = js.native
@@ -183,8 +183,12 @@ object poolMod extends js.Object {
     /* protected */ def validate(resource: T): Boolean = js.native
   }
   
+  type Callback[T] = js.Function2[/* err */ Error | Null, /* resource */ T, js.Any]
+  
+  type CallbackOrPromise[T] = js.Function1[/* cb */ Callback[T], js.Any | js.Function0[js.Promise[T]]]
+  
   @js.native
-  trait PoolOptions[T] extends js.Object {
+  trait PoolOptions[T] extends StObject {
     
     var acquireTimeoutMillis: js.UndefOr[Double] = js.native
     
@@ -215,8 +219,4 @@ object poolMod extends js.Object {
     
     var validate: js.UndefOr[js.Function1[/* resource */ T, Boolean]] = js.native
   }
-  
-  type Callback[T] = js.Function2[/* err */ Error | Null, /* resource */ T, js.Any]
-  
-  type CallbackOrPromise[T] = js.Function1[/* cb */ Callback[T], js.Any | js.Function0[js.Promise[T]]]
 }

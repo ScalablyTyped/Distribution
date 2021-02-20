@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,11 +153,11 @@ class FilterPostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.FilterPostProcess")
-@js.native
-object FilterPostProcess extends js.Object {
+object FilterPostProcess {
   
   /** @hidden */
+  @JSGlobal("BABYLON.FilterPostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,

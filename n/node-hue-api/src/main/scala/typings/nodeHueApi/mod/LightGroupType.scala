@@ -1,5 +1,6 @@
 package typings.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeHueApi.nodeHueApiStrings.Luminaire
   - typings.nodeHueApi.nodeHueApiStrings.LightSource
 */
-trait LightGroupType extends js.Object
+trait LightGroupType extends StObject
 object LightGroupType {
   
   @scala.inline

@@ -1,13 +1,14 @@
 package typings.openlayers.mod
 
 import typings.openlayers.mod.geom.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Sphere")
 @js.native
-class Sphere protected () extends js.Object {
+class Sphere protected () extends StObject {
   /**
     * @classdesc
     * Class to create objects that can be used with {@link
@@ -52,9 +53,7 @@ class Sphere protected () extends js.Object {
   def haversineDistance(c1: Coordinate_, c2: Coordinate_): Double = js.native
 }
 /* static members */
-@JSImport("openlayers", "Sphere")
-@js.native
-object Sphere extends js.Object {
+object Sphere {
   
   /**
     * Get the spherical area of a geometry.  This is the area (in meters) assuming
@@ -66,7 +65,11 @@ object Sphere extends js.Object {
     * @return The spherical area (in square meters).
     * @api
     */
+  @JSImport("openlayers", "Sphere.getArea")
+  @js.native
   def getArea(geometry: Geometry): Double = js.native
+  @JSImport("openlayers", "Sphere.getArea")
+  @js.native
   def getArea(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
   
   /**
@@ -81,6 +84,10 @@ object Sphere extends js.Object {
     * @return The spherical length (in meters).
     * @api
     */
+  @JSImport("openlayers", "Sphere.getLength")
+  @js.native
   def getLength(geometry: Geometry): Double = js.native
+  @JSImport("openlayers", "Sphere.getLength")
+  @js.native
   def getLength(geometry: Geometry, opt_options: SphereMetricOptions): Double = js.native
 }

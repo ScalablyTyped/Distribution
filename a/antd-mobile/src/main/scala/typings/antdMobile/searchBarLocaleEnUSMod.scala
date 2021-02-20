@@ -1,16 +1,22 @@
 package typings.antdMobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile/lib/search-bar/locale/en_US", JSImport.Namespace)
-@js.native
-object searchBarLocaleEnUSMod extends js.Object {
+object searchBarLocaleEnUSMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var cancelText: String = js.native
+    @JSImport("antd-mobile/lib/search-bar/locale/en_US", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd-mobile/lib/search-bar/locale/en_US", "default.cancelText")
+    @js.native
+    def cancelText: String = js.native
+    @scala.inline
+    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
   }
 }

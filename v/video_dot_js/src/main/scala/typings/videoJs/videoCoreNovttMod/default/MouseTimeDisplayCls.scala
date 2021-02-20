@@ -1,14 +1,16 @@
 package typings.videoJs.videoCoreNovttMod.default
 
 import typings.videoJs.mod.videojs.ComponentOptions
+import typings.videoJs.mod.videojs.MouseTimeDisplay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core.novtt", "MouseTimeDisplay")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core.novtt", "default.MouseTimeDisplay")
 @js.native
-class MouseTimeDisplayCls protected ()
-  extends typings.videoJs.mod.videojs.MouseTimeDisplay {
+class MouseTimeDisplayCls protected () extends MouseTimeDisplay {
   /**
     * Creates an instance of this class.
     *

@@ -6,12 +6,13 @@ import typings.activexOffice.Office.MsoScreenSize
 import typings.activexOffice.Office.MsoTargetBrowser
 import typings.activexOffice.Office.WebPageFont
 import typings.activexOffice.Office.WebPageFonts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultWebOptions extends js.Object {
+trait DefaultWebOptions extends StObject {
   
   var AllowPNG: Boolean = js.native
   

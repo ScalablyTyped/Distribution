@@ -1,28 +1,48 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import typings.googleCloudPubsub.protosMod.google.protobuf.IFieldMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UpdateSubscriptionRequest. */
-trait IUpdateSubscriptionRequest extends js.Object {
+@js.native
+trait IUpdateSubscriptionRequest extends StObject {
+  
   /** UpdateSubscriptionRequest subscription */
-  var subscription: js.UndefOr[ISubscription | Null] = js.undefined
+  var subscription: js.UndefOr[ISubscription | Null] = js.native
+  
   /** UpdateSubscriptionRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
 }
-
 object IUpdateSubscriptionRequest {
+  
   @scala.inline
-  def apply(
-    subscription: js.UndefOr[Null | ISubscription] = js.undefined,
-    updateMask: js.UndefOr[Null | IFieldMask] = js.undefined
-  ): IUpdateSubscriptionRequest = {
+  def apply(): IUpdateSubscriptionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(subscription)) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateMask)) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateSubscriptionRequest]
   }
+  
+  @scala.inline
+  implicit class IUpdateSubscriptionRequestMutableBuilder[Self <: IUpdateSubscriptionRequest] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setSubscription(value: ISubscription): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    
+    @scala.inline
+    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    
+    @scala.inline
+    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    
+    @scala.inline
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+  }
 }
-

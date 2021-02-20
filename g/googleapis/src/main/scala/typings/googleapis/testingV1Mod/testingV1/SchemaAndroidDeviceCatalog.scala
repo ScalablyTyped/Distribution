@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The currently supported Android devices.
   */
 @js.native
-trait SchemaAndroidDeviceCatalog extends js.Object {
+trait SchemaAndroidDeviceCatalog extends StObject {
   
   /**
     * The set of supported Android device models.
@@ -34,42 +35,30 @@ object SchemaAndroidDeviceCatalog {
   }
   
   @scala.inline
-  implicit class SchemaAndroidDeviceCatalogOps[Self <: SchemaAndroidDeviceCatalog] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidDeviceCatalogMutableBuilder[Self <: SchemaAndroidDeviceCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModels(value: js.Array[SchemaAndroidModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelsVarargs(value: SchemaAndroidModel*): Self = StObject.set(x, "models", js.Array(value :_*))
     
     @scala.inline
-    def setModelsVarargs(value: SchemaAndroidModel*): Self = this.set("models", js.Array(value :_*))
+    def setRuntimeConfiguration(value: SchemaAndroidRuntimeConfiguration): Self = StObject.set(x, "runtimeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModels(value: js.Array[SchemaAndroidModel]): Self = this.set("models", value.asInstanceOf[js.Any])
+    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "runtimeConfiguration", js.undefined)
     
     @scala.inline
-    def deleteModels: Self = this.set("models", js.undefined)
+    def setVersions(value: js.Array[SchemaAndroidVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeConfiguration(value: SchemaAndroidRuntimeConfiguration): Self = this.set("runtimeConfiguration", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def deleteRuntimeConfiguration: Self = this.set("runtimeConfiguration", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: SchemaAndroidVersion*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[SchemaAndroidVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setVersionsVarargs(value: SchemaAndroidVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

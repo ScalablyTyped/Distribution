@@ -1,6 +1,7 @@
 package typings.googleapis.datastoreV1beta1Mod.datastoreV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.datastore.admin.v1beta1.DatastoreAdmin.ImportEntities.
   */
 @js.native
-trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest extends js.Object {
+trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest extends StObject {
   
   /**
     * Optionally specify which kinds/namespaces are to be imported. If
@@ -49,36 +50,24 @@ object SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequestOps[Self <: SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequestMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1beta1EntityFilter): Self = StObject.set(x, "entityFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1beta1EntityFilter): Self = this.set("entityFilter", value.asInstanceOf[js.Any])
+    def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
     
     @scala.inline
-    def deleteEntityFilter: Self = this.set("entityFilter", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputUrl(value: String): Self = this.set("inputUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputUrl: Self = this.set("inputUrl", js.undefined)
-    
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

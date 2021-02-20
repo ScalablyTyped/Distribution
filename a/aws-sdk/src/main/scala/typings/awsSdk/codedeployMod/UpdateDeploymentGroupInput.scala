@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDeploymentGroupInput extends js.Object {
+trait UpdateDeploymentGroupInput extends StObject {
   
   /**
     * Information to add or change about Amazon CloudWatch alarms when the deployment group is updated.
@@ -101,129 +102,117 @@ object UpdateDeploymentGroupInput {
   }
   
   @scala.inline
-  implicit class UpdateDeploymentGroupInputOps[Self <: UpdateDeploymentGroupInput] (val x: Self) extends AnyVal {
+  implicit class UpdateDeploymentGroupInputMutableBuilder[Self <: UpdateDeploymentGroupInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarmConfiguration(value: AlarmConfiguration): Self = StObject.set(x, "alarmConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlarmConfigurationUndefined: Self = StObject.set(x, "alarmConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    def setAutoRollbackConfiguration(value: AutoRollbackConfiguration): Self = StObject.set(x, "autoRollbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDeploymentGroupName(value: DeploymentGroupName): Self = this.set("currentDeploymentGroupName", value.asInstanceOf[js.Any])
+    def setAutoRollbackConfigurationUndefined: Self = StObject.set(x, "autoRollbackConfiguration", js.undefined)
     
     @scala.inline
-    def setAlarmConfiguration(value: AlarmConfiguration): Self = this.set("alarmConfiguration", value.asInstanceOf[js.Any])
+    def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlarmConfiguration: Self = this.set("alarmConfiguration", js.undefined)
+    def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
     @scala.inline
-    def setAutoRollbackConfiguration(value: AutoRollbackConfiguration): Self = this.set("autoRollbackConfiguration", value.asInstanceOf[js.Any])
+    def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoRollbackConfiguration: Self = this.set("autoRollbackConfiguration", js.undefined)
+    def setBlueGreenDeploymentConfiguration(value: BlueGreenDeploymentConfiguration): Self = StObject.set(x, "blueGreenDeploymentConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoScalingGroupsVarargs(value: AutoScalingGroupName*): Self = this.set("autoScalingGroups", js.Array(value :_*))
+    def setBlueGreenDeploymentConfigurationUndefined: Self = StObject.set(x, "blueGreenDeploymentConfiguration", js.undefined)
     
     @scala.inline
-    def setAutoScalingGroups(value: AutoScalingGroupNameList): Self = this.set("autoScalingGroups", value.asInstanceOf[js.Any])
+    def setCurrentDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "currentDeploymentGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoScalingGroups: Self = this.set("autoScalingGroups", js.undefined)
+    def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueGreenDeploymentConfiguration(value: BlueGreenDeploymentConfiguration): Self = this.set("blueGreenDeploymentConfiguration", value.asInstanceOf[js.Any])
+    def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
     
     @scala.inline
-    def deleteBlueGreenDeploymentConfiguration: Self = this.set("blueGreenDeploymentConfiguration", js.undefined)
+    def setDeploymentStyle(value: DeploymentStyle): Self = StObject.set(x, "deploymentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentConfigName(value: DeploymentConfigName): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    def setDeploymentStyleUndefined: Self = StObject.set(x, "deploymentStyle", js.undefined)
     
     @scala.inline
-    def deleteDeploymentConfigName: Self = this.set("deploymentConfigName", js.undefined)
+    def setEc2TagFilters(value: EC2TagFilterList): Self = StObject.set(x, "ec2TagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentStyle(value: DeploymentStyle): Self = this.set("deploymentStyle", value.asInstanceOf[js.Any])
+    def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
     
     @scala.inline
-    def deleteDeploymentStyle: Self = this.set("deploymentStyle", js.undefined)
+    def setEc2TagFiltersVarargs(value: EC2TagFilter*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
     
     @scala.inline
-    def setEc2TagFiltersVarargs(value: EC2TagFilter*): Self = this.set("ec2TagFilters", js.Array(value :_*))
+    def setEc2TagSet(value: EC2TagSet): Self = StObject.set(x, "ec2TagSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2TagFilters(value: EC2TagFilterList): Self = this.set("ec2TagFilters", value.asInstanceOf[js.Any])
+    def setEc2TagSetUndefined: Self = StObject.set(x, "ec2TagSet", js.undefined)
     
     @scala.inline
-    def deleteEc2TagFilters: Self = this.set("ec2TagFilters", js.undefined)
+    def setEcsServices(value: ECSServiceList): Self = StObject.set(x, "ecsServices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEc2TagSet(value: EC2TagSet): Self = this.set("ec2TagSet", value.asInstanceOf[js.Any])
+    def setEcsServicesUndefined: Self = StObject.set(x, "ecsServices", js.undefined)
     
     @scala.inline
-    def deleteEc2TagSet: Self = this.set("ec2TagSet", js.undefined)
+    def setEcsServicesVarargs(value: ECSService*): Self = StObject.set(x, "ecsServices", js.Array(value :_*))
     
     @scala.inline
-    def setEcsServicesVarargs(value: ECSService*): Self = this.set("ecsServices", js.Array(value :_*))
+    def setLoadBalancerInfo(value: LoadBalancerInfo): Self = StObject.set(x, "loadBalancerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEcsServices(value: ECSServiceList): Self = this.set("ecsServices", value.asInstanceOf[js.Any])
+    def setLoadBalancerInfoUndefined: Self = StObject.set(x, "loadBalancerInfo", js.undefined)
     
     @scala.inline
-    def deleteEcsServices: Self = this.set("ecsServices", js.undefined)
+    def setNewDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "newDeploymentGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerInfo(value: LoadBalancerInfo): Self = this.set("loadBalancerInfo", value.asInstanceOf[js.Any])
+    def setNewDeploymentGroupNameUndefined: Self = StObject.set(x, "newDeploymentGroupName", js.undefined)
     
     @scala.inline
-    def deleteLoadBalancerInfo: Self = this.set("loadBalancerInfo", js.undefined)
+    def setOnPremisesInstanceTagFilters(value: TagFilterList): Self = StObject.set(x, "onPremisesInstanceTagFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewDeploymentGroupName(value: DeploymentGroupName): Self = this.set("newDeploymentGroupName", value.asInstanceOf[js.Any])
+    def setOnPremisesInstanceTagFiltersUndefined: Self = StObject.set(x, "onPremisesInstanceTagFilters", js.undefined)
     
     @scala.inline
-    def deleteNewDeploymentGroupName: Self = this.set("newDeploymentGroupName", js.undefined)
+    def setOnPremisesInstanceTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "onPremisesInstanceTagFilters", js.Array(value :_*))
     
     @scala.inline
-    def setOnPremisesInstanceTagFiltersVarargs(value: TagFilter*): Self = this.set("onPremisesInstanceTagFilters", js.Array(value :_*))
+    def setOnPremisesTagSet(value: OnPremisesTagSet): Self = StObject.set(x, "onPremisesTagSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPremisesInstanceTagFilters(value: TagFilterList): Self = this.set("onPremisesInstanceTagFilters", value.asInstanceOf[js.Any])
+    def setOnPremisesTagSetUndefined: Self = StObject.set(x, "onPremisesTagSet", js.undefined)
     
     @scala.inline
-    def deleteOnPremisesInstanceTagFilters: Self = this.set("onPremisesInstanceTagFilters", js.undefined)
+    def setServiceRoleArn(value: Role): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPremisesTagSet(value: OnPremisesTagSet): Self = this.set("onPremisesTagSet", value.asInstanceOf[js.Any])
+    def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
     
     @scala.inline
-    def deleteOnPremisesTagSet: Self = this.set("onPremisesTagSet", js.undefined)
+    def setTriggerConfigurations(value: TriggerConfigList): Self = StObject.set(x, "triggerConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceRoleArn(value: Role): Self = this.set("serviceRoleArn", value.asInstanceOf[js.Any])
+    def setTriggerConfigurationsUndefined: Self = StObject.set(x, "triggerConfigurations", js.undefined)
     
     @scala.inline
-    def deleteServiceRoleArn: Self = this.set("serviceRoleArn", js.undefined)
-    
-    @scala.inline
-    def setTriggerConfigurationsVarargs(value: TriggerConfig*): Self = this.set("triggerConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTriggerConfigurations(value: TriggerConfigList): Self = this.set("triggerConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerConfigurations: Self = this.set("triggerConfigurations", js.undefined)
+    def setTriggerConfigurationsVarargs(value: TriggerConfig*): Self = StObject.set(x, "triggerConfigurations", js.Array(value :_*))
   }
 }

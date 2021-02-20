@@ -1,12 +1,13 @@
 package typings.p5.mod
 
 import typings.std.AudioNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Panner3D extends js.Object {
+trait Panner3D extends StObject {
   
   /**
     *   Maxium distance between the source and the

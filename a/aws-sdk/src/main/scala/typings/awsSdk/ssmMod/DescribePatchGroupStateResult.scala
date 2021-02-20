@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePatchGroupStateResult extends js.Object {
+trait DescribePatchGroupStateResult extends StObject {
   
   /**
     * The number of instances in the patch group.
@@ -61,72 +62,60 @@ object DescribePatchGroupStateResult {
   }
   
   @scala.inline
-  implicit class DescribePatchGroupStateResultOps[Self <: DescribePatchGroupStateResult] (val x: Self) extends AnyVal {
+  implicit class DescribePatchGroupStateResultMutableBuilder[Self <: DescribePatchGroupStateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstances(value: Integer): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstancesWithFailedPatches(value: Integer): Self = StObject.set(x, "InstancesWithFailedPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstances(value: Integer): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    def setInstancesWithFailedPatchesUndefined: Self = StObject.set(x, "InstancesWithFailedPatches", js.undefined)
     
     @scala.inline
-    def deleteInstances: Self = this.set("Instances", js.undefined)
+    def setInstancesWithInstalledOtherPatches(value: Integer): Self = StObject.set(x, "InstancesWithInstalledOtherPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithFailedPatches(value: Integer): Self = this.set("InstancesWithFailedPatches", value.asInstanceOf[js.Any])
+    def setInstancesWithInstalledOtherPatchesUndefined: Self = StObject.set(x, "InstancesWithInstalledOtherPatches", js.undefined)
     
     @scala.inline
-    def deleteInstancesWithFailedPatches: Self = this.set("InstancesWithFailedPatches", js.undefined)
+    def setInstancesWithInstalledPatches(value: Integer): Self = StObject.set(x, "InstancesWithInstalledPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithInstalledOtherPatches(value: Integer): Self = this.set("InstancesWithInstalledOtherPatches", value.asInstanceOf[js.Any])
+    def setInstancesWithInstalledPatchesUndefined: Self = StObject.set(x, "InstancesWithInstalledPatches", js.undefined)
     
     @scala.inline
-    def deleteInstancesWithInstalledOtherPatches: Self = this.set("InstancesWithInstalledOtherPatches", js.undefined)
+    def setInstancesWithInstalledPendingRebootPatches(value: InstancesCount): Self = StObject.set(x, "InstancesWithInstalledPendingRebootPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithInstalledPatches(value: Integer): Self = this.set("InstancesWithInstalledPatches", value.asInstanceOf[js.Any])
+    def setInstancesWithInstalledPendingRebootPatchesUndefined: Self = StObject.set(x, "InstancesWithInstalledPendingRebootPatches", js.undefined)
     
     @scala.inline
-    def deleteInstancesWithInstalledPatches: Self = this.set("InstancesWithInstalledPatches", js.undefined)
+    def setInstancesWithInstalledRejectedPatches(value: InstancesCount): Self = StObject.set(x, "InstancesWithInstalledRejectedPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithInstalledPendingRebootPatches(value: InstancesCount): Self = this.set("InstancesWithInstalledPendingRebootPatches", value.asInstanceOf[js.Any])
+    def setInstancesWithInstalledRejectedPatchesUndefined: Self = StObject.set(x, "InstancesWithInstalledRejectedPatches", js.undefined)
     
     @scala.inline
-    def deleteInstancesWithInstalledPendingRebootPatches: Self = this.set("InstancesWithInstalledPendingRebootPatches", js.undefined)
+    def setInstancesWithMissingPatches(value: Integer): Self = StObject.set(x, "InstancesWithMissingPatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithInstalledRejectedPatches(value: InstancesCount): Self = this.set("InstancesWithInstalledRejectedPatches", value.asInstanceOf[js.Any])
+    def setInstancesWithMissingPatchesUndefined: Self = StObject.set(x, "InstancesWithMissingPatches", js.undefined)
     
     @scala.inline
-    def deleteInstancesWithInstalledRejectedPatches: Self = this.set("InstancesWithInstalledRejectedPatches", js.undefined)
+    def setInstancesWithNotApplicablePatches(value: Integer): Self = StObject.set(x, "InstancesWithNotApplicablePatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithMissingPatches(value: Integer): Self = this.set("InstancesWithMissingPatches", value.asInstanceOf[js.Any])
+    def setInstancesWithNotApplicablePatchesUndefined: Self = StObject.set(x, "InstancesWithNotApplicablePatches", js.undefined)
     
     @scala.inline
-    def deleteInstancesWithMissingPatches: Self = this.set("InstancesWithMissingPatches", js.undefined)
+    def setInstancesWithUnreportedNotApplicablePatches(value: Integer): Self = StObject.set(x, "InstancesWithUnreportedNotApplicablePatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesWithNotApplicablePatches(value: Integer): Self = this.set("InstancesWithNotApplicablePatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancesWithNotApplicablePatches: Self = this.set("InstancesWithNotApplicablePatches", js.undefined)
-    
-    @scala.inline
-    def setInstancesWithUnreportedNotApplicablePatches(value: Integer): Self = this.set("InstancesWithUnreportedNotApplicablePatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancesWithUnreportedNotApplicablePatches: Self = this.set("InstancesWithUnreportedNotApplicablePatches", js.undefined)
+    def setInstancesWithUnreportedNotApplicablePatchesUndefined: Self = StObject.set(x, "InstancesWithUnreportedNotApplicablePatches", js.undefined)
   }
 }

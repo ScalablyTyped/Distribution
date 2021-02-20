@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestBody
 */
-trait OnBeforeRequestOptions extends js.Object
+trait OnBeforeRequestOptions extends StObject
 object OnBeforeRequestOptions {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetResourceConfigRequest extends js.Object {
+trait BatchGetResourceConfigRequest extends StObject {
   
   /**
     * A list of resource keys to be processed with the current request. Each element in the list consists of the resource type and resource ID.
@@ -21,24 +22,12 @@ object BatchGetResourceConfigRequest {
   }
   
   @scala.inline
-  implicit class BatchGetResourceConfigRequestOps[Self <: BatchGetResourceConfigRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetResourceConfigRequestMutableBuilder[Self <: BatchGetResourceConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "resourceKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourceKeysVarargs(value: ResourceKey*): Self = this.set("resourceKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceKeys(value: ResourceKeys): Self = this.set("resourceKeys", value.asInstanceOf[js.Any])
+    def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "resourceKeys", js.Array(value :_*))
   }
 }

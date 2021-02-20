@@ -1,15 +1,15 @@
 package typings.lazyVal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lazy-val", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("lazy-val", "Lazy")
   @js.native
-  class Lazy[T] protected () extends js.Object {
+  class Lazy[T] protected () extends StObject {
     def this(creator: js.Function0[js.Promise[T]]) = this()
     
     var _value: js.Any = js.native

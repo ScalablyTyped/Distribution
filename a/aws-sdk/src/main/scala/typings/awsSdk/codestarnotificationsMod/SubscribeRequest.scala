@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarnotificationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubscribeRequest extends js.Object {
+trait SubscribeRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule for which you want to create the association.
@@ -28,30 +29,18 @@ object SubscribeRequest {
   }
   
   @scala.inline
-  implicit class SubscribeRequestOps[Self <: SubscribeRequest] (val x: Self) extends AnyVal {
+  implicit class SubscribeRequestMutableBuilder[Self <: SubscribeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def setArn(value: NotificationRuleArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Target): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setTarget(value: Target): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

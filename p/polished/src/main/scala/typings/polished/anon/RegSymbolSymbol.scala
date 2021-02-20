@@ -2,12 +2,13 @@ package typings.polished.anon
 
 import typings.polished.polishedStrings.sqrt
 import typings.polished.polishedStrings.sqrtBackslashb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegSymbolSymbol extends js.Object {
+trait RegSymbolSymbol extends StObject {
   
   var func: PrecedenceRightToLeftSymbol = js.native
   
@@ -24,27 +25,15 @@ object RegSymbolSymbol {
   }
   
   @scala.inline
-  implicit class RegSymbolSymbolOps[Self <: RegSymbolSymbol] (val x: Self) extends AnyVal {
+  implicit class RegSymbolSymbolMutableBuilder[Self <: RegSymbolSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunc(value: PrecedenceRightToLeftSymbol): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegSymbol(value: sqrtBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFunc(value: PrecedenceRightToLeftSymbol): Self = this.set("func", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegSymbol(value: sqrtBackslashb): Self = this.set("regSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: sqrt): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: sqrt): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

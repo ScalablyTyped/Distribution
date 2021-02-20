@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/layout
   */
 @js.native
-trait LayoutPositionOptions extends js.Object {
+trait LayoutPositionOptions extends StObject {
   
   // whether to animate changes to the layout
   var animate: js.UndefOr[Boolean] = js.native
@@ -52,69 +53,57 @@ object LayoutPositionOptions {
   }
   
   @scala.inline
-  implicit class LayoutPositionOptionsOps[Self <: LayoutPositionOptions] (val x: Self) extends AnyVal {
+  implicit class LayoutPositionOptionsMutableBuilder[Self <: LayoutPositionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEles(value: CollectionArgument): Self = this.set("eles", value.asInstanceOf[js.Any])
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    def setAnimationEasing(value: Double): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimate: Self = this.set("animate", js.undefined)
+    def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setEles(value: CollectionArgument): Self = StObject.set(x, "eles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationEasing(value: Double): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFit(value: Boolean): Self = this.set("fit", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
+    def setPan(value: Position): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setSpacingFactor(value: Double): Self = StObject.set(x, "spacingFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPan(value: Position): Self = this.set("pan", value.asInstanceOf[js.Any])
+    def setSpacingFactorUndefined: Self = StObject.set(x, "spacingFactor", js.undefined)
     
     @scala.inline
-    def deletePan: Self = this.set("pan", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpacingFactor(value: Double): Self = this.set("spacingFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacingFactor: Self = this.set("spacingFactor", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

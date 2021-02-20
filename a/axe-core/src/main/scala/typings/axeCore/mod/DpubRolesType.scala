@@ -1,5 +1,6 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.axeCore.axeCoreStrings.none
   - typings.axeCore.axeCoreStrings.sectionhead
 */
-trait DpubRolesType extends js.Object
+trait DpubRolesType extends StObject
 object DpubRolesType {
   
   @scala.inline

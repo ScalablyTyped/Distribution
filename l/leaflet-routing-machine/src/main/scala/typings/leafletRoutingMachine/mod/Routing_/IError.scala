@@ -1,12 +1,13 @@
 package typings.leafletRoutingMachine.mod.Routing_
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
-trait IError extends js.Object {
+trait IError extends StObject {
   
   var message: String = js.native
   
@@ -21,24 +22,12 @@ object IError {
   }
   
   @scala.inline
-  implicit class IErrorOps[Self <: IError] (val x: Self) extends AnyVal {
+  implicit class IErrorMutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String | Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: String | Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

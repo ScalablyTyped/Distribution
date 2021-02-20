@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgtvBrowseFeedResponseChannelsItem extends js.Object {
+trait IgtvBrowseFeedResponseChannelsItem extends StObject {
   
   var approx_total_videos: Null = js.native
   
@@ -51,54 +52,42 @@ object IgtvBrowseFeedResponseChannelsItem {
   }
   
   @scala.inline
-  implicit class IgtvBrowseFeedResponseChannelsItemOps[Self <: IgtvBrowseFeedResponseChannelsItem] (val x: Self) extends AnyVal {
+  implicit class IgtvBrowseFeedResponseChannelsItemMutableBuilder[Self <: IgtvBrowseFeedResponseChannelsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprox_total_videos(value: Null): Self = StObject.set(x, "approx_total_videos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCover_photo_url(value: Null): Self = StObject.set(x, "cover_photo_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprox_total_videos(value: Null): Self = this.set("approx_total_videos", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCover_photo_url(value: Null): Self = this.set("cover_photo_url", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Null): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setSeen_state(value: IgtvBrowseFeedResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax_id(value: Null): Self = this.set("max_id", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeen_state(value: IgtvBrowseFeedResponseSeenState): Self = this.set("seen_state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser_dict(value: Null): Self = this.set("user_dict", value.asInstanceOf[js.Any])
+    def setUser_dict(value: Null): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
   }
 }

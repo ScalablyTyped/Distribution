@@ -3,12 +3,13 @@ package typings.tensorflowTfjsBackendWebgl.anon
 import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
 import typings.tensorflowTfjsCore.kernelNamesMod.MirrorPadAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.MirrorPadInputs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AttrsMirrorPadAttrs extends js.Object {
+trait AttrsMirrorPadAttrs extends StObject {
   
   var attrs: MirrorPadAttrs = js.native
   
@@ -25,27 +26,15 @@ object AttrsMirrorPadAttrs {
   }
   
   @scala.inline
-  implicit class AttrsMirrorPadAttrsOps[Self <: AttrsMirrorPadAttrs] (val x: Self) extends AnyVal {
+  implicit class AttrsMirrorPadAttrsMutableBuilder[Self <: AttrsMirrorPadAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: MirrorPadAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackend(value: MathBackendWebGL): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttrs(value: MirrorPadAttrs): Self = this.set("attrs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBackend(value: MathBackendWebGL): Self = this.set("backend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputs(value: MirrorPadInputs): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setInputs(value: MirrorPadInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

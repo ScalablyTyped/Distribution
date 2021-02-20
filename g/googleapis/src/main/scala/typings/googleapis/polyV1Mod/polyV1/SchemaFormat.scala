@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and describe this representation.
   */
 @js.native
-trait SchemaFormat extends js.Object {
+trait SchemaFormat extends StObject {
   
   /**
     * Complexity stats about this representation of the asset.
@@ -49,45 +50,33 @@ object SchemaFormat {
   }
   
   @scala.inline
-  implicit class SchemaFormatOps[Self <: SchemaFormat] (val x: Self) extends AnyVal {
+  implicit class SchemaFormatMutableBuilder[Self <: SchemaFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormatComplexity(value: SchemaFormatComplexity): Self = StObject.set(x, "formatComplexity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatComplexityUndefined: Self = StObject.set(x, "formatComplexity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatComplexity(value: SchemaFormatComplexity): Self = this.set("formatComplexity", value.asInstanceOf[js.Any])
+    def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
     @scala.inline
-    def deleteFormatComplexity: Self = this.set("formatComplexity", js.undefined)
+    def setResources(value: js.Array[SchemaFile]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatType(value: String): Self = this.set("formatType", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def deleteFormatType: Self = this.set("formatType", js.undefined)
+    def setResourcesVarargs(value: SchemaFile*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: SchemaFile*): Self = this.set("resources", js.Array(value :_*))
+    def setRoot(value: SchemaFile): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[SchemaFile]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: SchemaFile): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

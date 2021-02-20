@@ -4,6 +4,7 @@ import typings.babelTypes.babelTypesStrings.TSParameterProperty
 import typings.babelTypes.babelTypesStrings.`private`
 import typings.babelTypes.babelTypesStrings.`protected`
 import typings.babelTypes.babelTypesStrings.public
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,36 +34,24 @@ object TSParameterProperty_ {
   }
   
   @scala.inline
-  implicit class TSParameterProperty_Ops[Self <: TSParameterProperty_] (val x: Self) extends AnyVal {
+  implicit class TSParameterProperty_MutableBuilder[Self <: TSParameterProperty_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameter(value: Identifier_ | AssignmentPattern_): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: Identifier_ | AssignmentPattern_): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TSParameterProperty): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
     @scala.inline
-    def setAccessibility(value: public | `private` | `protected`): Self = this.set("accessibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAccessibilityNull: Self = this.set("accessibility", null)
-    
-    @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadonlyNull: Self = this.set("readonly", null)
+    def setType(value: TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

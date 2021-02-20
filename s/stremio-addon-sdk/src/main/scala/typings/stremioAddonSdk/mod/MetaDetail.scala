@@ -1,6 +1,7 @@
 package typings.stremioAddonSdk.mod
 
 import typings.stremioAddonSdk.anon.DefaultVideo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,117 +110,105 @@ object MetaDetail {
   }
   
   @scala.inline
-  implicit class MetaDetailOps[Self <: MetaDetail] (val x: Self) extends AnyVal {
+  implicit class MetaDetailMutableBuilder[Self <: MetaDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwards(value: String): Self = StObject.set(x, "awards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAwardsUndefined: Self = StObject.set(x, "awards", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBehaviourHints(value: DefaultVideo): Self = StObject.set(x, "behaviourHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwards(value: String): Self = this.set("awards", value.asInstanceOf[js.Any])
+    def setBehaviourHintsUndefined: Self = StObject.set(x, "behaviourHints", js.undefined)
     
     @scala.inline
-    def deleteAwards: Self = this.set("awards", js.undefined)
+    def setCast(value: js.Array[String]): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehaviourHints(value: DefaultVideo): Self = this.set("behaviourHints", value.asInstanceOf[js.Any])
+    def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
     
     @scala.inline
-    def deleteBehaviourHints: Self = this.set("behaviourHints", js.undefined)
+    def setCastVarargs(value: String*): Self = StObject.set(x, "cast", js.Array(value :_*))
     
     @scala.inline
-    def setCastVarargs(value: String*): Self = this.set("cast", js.Array(value :_*))
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCast(value: js.Array[String]): Self = this.set("cast", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteCast: Self = this.set("cast", js.undefined)
+    def setDirector(value: js.Array[String]): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setDirectorVarargs(value: String*): Self = StObject.set(x, "director", js.Array(value :_*))
     
     @scala.inline
-    def setDirectorVarargs(value: String*): Self = this.set("director", js.Array(value :_*))
+    def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirector(value: js.Array[String]): Self = this.set("director", value.asInstanceOf[js.Any])
+    def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
     @scala.inline
-    def deleteDirector: Self = this.set("director", js.undefined)
+    def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
     
     @scala.inline
-    def setGenresVarargs(value: String*): Self = this.set("genres", js.Array(value :_*))
+    def setImdbRating(value: String): Self = StObject.set(x, "imdbRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenres(value: js.Array[String]): Self = this.set("genres", value.asInstanceOf[js.Any])
+    def setImdbRatingUndefined: Self = StObject.set(x, "imdbRating", js.undefined)
     
     @scala.inline
-    def deleteGenres: Self = this.set("genres", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImdbRating(value: String): Self = this.set("imdbRating", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteImdbRating: Self = this.set("imdbRating", js.undefined)
+    def setLinks(value: js.Array[MetaLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLinksVarargs(value: MetaLink*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setLinksVarargs(value: MetaLink*): Self = this.set("links", js.Array(value :_*))
+    def setReleaseInfo(value: String): Self = StObject.set(x, "releaseInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: js.Array[MetaLink]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setReleaseInfoUndefined: Self = StObject.set(x, "releaseInfo", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setReleased(value: String): Self = StObject.set(x, "released", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseInfo(value: String): Self = this.set("releaseInfo", value.asInstanceOf[js.Any])
+    def setReleasedUndefined: Self = StObject.set(x, "released", js.undefined)
     
     @scala.inline
-    def deleteReleaseInfo: Self = this.set("releaseInfo", js.undefined)
+    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleased(value: String): Self = this.set("released", value.asInstanceOf[js.Any])
+    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     @scala.inline
-    def deleteReleased: Self = this.set("released", js.undefined)
+    def setVideos(value: js.Array[MetaVideo]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntime(value: String): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    def setVideosUndefined: Self = StObject.set(x, "videos", js.undefined)
     
     @scala.inline
-    def deleteRuntime: Self = this.set("runtime", js.undefined)
+    def setVideosVarargs(value: MetaVideo*): Self = StObject.set(x, "videos", js.Array(value :_*))
     
     @scala.inline
-    def setVideosVarargs(value: MetaVideo*): Self = this.set("videos", js.Array(value :_*))
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideos(value: js.Array[MetaVideo]): Self = this.set("videos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideos: Self = this.set("videos", js.undefined)
-    
-    @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsite: Self = this.set("website", js.undefined)
+    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

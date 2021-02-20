@@ -2,6 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     }
   */
 @js.native
-trait Position extends js.Object {
+trait Position extends StObject {
   
   def getElement(): Element = js.native
   
@@ -60,39 +61,27 @@ object Position {
   }
   
   @scala.inline
-  implicit class PositionOps[Self <: Position] (val x: Self) extends AnyVal {
+  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetOffset(value: () => Integer): Self = StObject.set(x, "getOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSurroundingText(value: () => Text): Self = StObject.set(x, "getSurroundingText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetElement(value: () => Element): Self = this.set("getElement", js.Any.fromFunction0(value))
+    def setGetSurroundingTextOffset(value: () => Integer): Self = StObject.set(x, "getSurroundingTextOffset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetOffset(value: () => Integer): Self = this.set("getOffset", js.Any.fromFunction0(value))
+    def setInsertBookmark(value: () => Bookmark): Self = StObject.set(x, "insertBookmark", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSurroundingText(value: () => Text): Self = this.set("getSurroundingText", js.Any.fromFunction0(value))
+    def setInsertInlineImage(value: BlobSource => InlineImage): Self = StObject.set(x, "insertInlineImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSurroundingTextOffset(value: () => Integer): Self = this.set("getSurroundingTextOffset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInsertBookmark(value: () => Bookmark): Self = this.set("insertBookmark", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInsertInlineImage(value: BlobSource => InlineImage): Self = this.set("insertInlineImage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertText(value: String => Text): Self = this.set("insertText", js.Any.fromFunction1(value))
+    def setInsertText(value: String => Text): Self = StObject.set(x, "insertText", js.Any.fromFunction1(value))
   }
 }

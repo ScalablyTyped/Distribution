@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Denied extends js.Object {
+trait Denied extends StObject {
   
   /**
     * Information that explicitly denies the authorization. 
@@ -26,30 +27,18 @@ object Denied {
   }
   
   @scala.inline
-  implicit class DeniedOps[Self <: Denied] (val x: Self) extends AnyVal {
+  implicit class DeniedMutableBuilder[Self <: Denied] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplicitDeny(value: ExplicitDeny): Self = StObject.set(x, "explicitDeny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExplicitDenyUndefined: Self = StObject.set(x, "explicitDeny", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplicitDeny(value: ImplicitDeny): Self = StObject.set(x, "implicitDeny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitDeny(value: ExplicitDeny): Self = this.set("explicitDeny", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExplicitDeny: Self = this.set("explicitDeny", js.undefined)
-    
-    @scala.inline
-    def setImplicitDeny(value: ImplicitDeny): Self = this.set("implicitDeny", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImplicitDeny: Self = this.set("implicitDeny", js.undefined)
+    def setImplicitDenyUndefined: Self = StObject.set(x, "implicitDeny", js.undefined)
   }
 }

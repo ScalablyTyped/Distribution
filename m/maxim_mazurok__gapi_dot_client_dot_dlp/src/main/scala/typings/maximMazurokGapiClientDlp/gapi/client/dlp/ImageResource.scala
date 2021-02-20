@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDlp.anon.Fields
 import typings.maximMazurokGapiClientDlp.anon.FieldsKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageResource extends js.Object {
+trait ImageResource extends StObject {
   
   /**
     * Redacts potentially sensitive info from an image. This method has limits on input size, processing time, and output size. See

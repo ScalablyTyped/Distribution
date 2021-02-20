@@ -1,18 +1,18 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/deferred", JSImport.Namespace)
-@js.native
-object deferredMod extends js.Object {
+object deferredMod {
   
+  @JSImport("babylonjs/Misc/deferred", "Deferred")
   @js.native
   /**
     * Constructor for this deferred object.
     */
-  class Deferred[T] () extends js.Object {
+  class Deferred[T] () extends StObject {
     
     var _reject: js.Any = js.native
     

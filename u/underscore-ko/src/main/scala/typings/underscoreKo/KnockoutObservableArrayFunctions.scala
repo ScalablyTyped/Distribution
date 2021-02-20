@@ -5,12 +5,13 @@ import typings.underscore.mod.List
 import typings.underscore.mod.ListIterator
 import typings.underscore.mod.MemoIterator
 import typings.underscore.mod.ObjectIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutObservableArrayFunctions[T] extends js.Object {
+trait KnockoutObservableArrayFunctions[T] extends StObject {
   
   def all(iterator: ListIterator[T, Boolean, List[T]]): Boolean = js.native
   def all(iterator: ListIterator[T, Boolean, List[T]], context: js.Any): Boolean = js.native

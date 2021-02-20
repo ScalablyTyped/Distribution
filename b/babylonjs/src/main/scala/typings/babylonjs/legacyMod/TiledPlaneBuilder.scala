@@ -2,6 +2,7 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.anon.TileHeight
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TiledPlaneBuilder ()
   extends typings.babylonjs.indexMod.TiledPlaneBuilder
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "TiledPlaneBuilder")
-@js.native
-object TiledPlaneBuilder extends js.Object {
+object TiledPlaneBuilder {
   
   /**
     * Creates a tiled plane mesh
@@ -36,6 +35,10 @@ object TiledPlaneBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
+  @JSImport("babylonjs/Legacy/legacy", "TiledPlaneBuilder.CreateTiledPlane")
+  @js.native
   def CreateTiledPlane(name: String, options: TileHeight): typings.babylonjs.meshMod.Mesh = js.native
+  @JSImport("babylonjs/Legacy/legacy", "TiledPlaneBuilder.CreateTiledPlane")
+  @js.native
   def CreateTiledPlane(name: String, options: TileHeight, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = js.native
 }

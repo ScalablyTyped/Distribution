@@ -2,6 +2,7 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkTypes.loggerMod.Logger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,24 +26,12 @@ object HandlerExecutionContext {
   }
   
   @scala.inline
-  implicit class HandlerExecutionContextOps[Self <: HandlerExecutionContext] (val x: Self) extends AnyVal {
+  implicit class HandlerExecutionContextMutableBuilder[Self <: HandlerExecutionContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogger(value: Logger): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogger: Self = this.set("logger", js.undefined)
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

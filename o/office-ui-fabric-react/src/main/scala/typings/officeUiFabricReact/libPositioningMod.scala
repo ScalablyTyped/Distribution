@@ -11,159 +11,16 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.uifabricUtilities.irectangleMod.IRectangle
 import typings.uifabricUtilities.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Positioning", JSImport.Namespace)
-@js.native
-object libPositioningMod extends js.Object {
+object libPositioningMod {
   
-  def getBoundsFromTargetWindow(target: Null, targetWindow: IWindowWithSegments): IRectangle = js.native
-  def getBoundsFromTargetWindow(target: Element, targetWindow: IWindowWithSegments): IRectangle = js.native
-  def getBoundsFromTargetWindow(target: MouseEvent, targetWindow: IWindowWithSegments): IRectangle = js.native
-  def getBoundsFromTargetWindow(target: Point, targetWindow: IWindowWithSegments): IRectangle = js.native
-  
-  def getMaxHeight(target: Element, targetEdge: DirectionalHint): Double = js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle
-  ): Double = js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
-  def getMaxHeight(
-    target: Element,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint): Double = js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle
-  ): Double = js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
-  def getMaxHeight(
-    target: MouseEvent,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: Point, targetEdge: DirectionalHint): Double = js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle
-  ): Double = js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: js.UndefOr[scala.Nothing],
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: js.UndefOr[scala.Nothing],
-    coverTarget: Boolean
-  ): Double = js.native
-  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
-  def getMaxHeight(
-    target: Point,
-    targetEdge: DirectionalHint,
-    gapSpace: Double,
-    bounds: IRectangle,
-    coverTarget: Boolean
-  ): Double = js.native
-  
-  def getOppositeEdge(edge: RectangleEdge): RectangleEdge = js.native
-  
-  def positionCallout(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
-  def positionCallout(
-    props: IPositionProps,
-    hostElement: HTMLElement,
-    elementToPosition: HTMLElement,
-    previousPositions: ICalloutPositionedInfo
-  ): ICalloutPositionedInfo = js.native
-  
-  def positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
-  def positionCard(
-    props: IPositionProps,
-    hostElement: HTMLElement,
-    elementToPosition: HTMLElement,
-    previousPositions: ICalloutPositionedInfo
-  ): ICalloutPositionedInfo = js.native
-  
-  def positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): IPositionedData = js.native
-  def positionElement(
-    props: IPositionProps,
-    hostElement: HTMLElement,
-    elementToPosition: HTMLElement,
-    previousPositions: IPositionedData
-  ): IPositionedData = js.native
-  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "Position")
   @js.native
-  object Position extends js.Object {
+  object Position extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.Position with Double] = js.native
@@ -177,8 +34,9 @@ object libPositioningMod extends js.Object {
     /* 0 */ val top: typings.officeUiFabricReact.positioningTypesMod.Position.top with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Positioning", "RectangleEdge")
   @js.native
-  object RectangleEdge extends js.Object {
+  object RectangleEdge extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.positioningTypesMod.RectangleEdge with Double] = js.native
@@ -191,4 +49,217 @@ object libPositioningMod extends js.Object {
     
     /* 1 */ val top: typings.officeUiFabricReact.positioningTypesMod.RectangleEdge.top with Double = js.native
   }
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
+  @js.native
+  def getBoundsFromTargetWindow(target: Null, targetWindow: IWindowWithSegments): IRectangle = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
+  @js.native
+  def getBoundsFromTargetWindow(target: Element, targetWindow: IWindowWithSegments): IRectangle = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
+  @js.native
+  def getBoundsFromTargetWindow(target: MouseEvent, targetWindow: IWindowWithSegments): IRectangle = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getBoundsFromTargetWindow")
+  @js.native
+  def getBoundsFromTargetWindow(target: Point, targetWindow: IWindowWithSegments): IRectangle = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Element,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Element,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: IRectangle
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Element,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Element,
+    targetEdge: DirectionalHint,
+    gapSpace: Double,
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: Element, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Element,
+    targetEdge: DirectionalHint,
+    gapSpace: Double,
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: MouseEvent,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: MouseEvent,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: IRectangle
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: MouseEvent,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: MouseEvent,
+    targetEdge: DirectionalHint,
+    gapSpace: Double,
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: MouseEvent, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: MouseEvent,
+    targetEdge: DirectionalHint,
+    gapSpace: Double,
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Point,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Point,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: IRectangle
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Point,
+    targetEdge: DirectionalHint,
+    gapSpace: js.UndefOr[scala.Nothing],
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Point,
+    targetEdge: DirectionalHint,
+    gapSpace: Double,
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: Boolean
+  ): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(target: Point, targetEdge: DirectionalHint, gapSpace: Double, bounds: IRectangle): Double = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getMaxHeight")
+  @js.native
+  def getMaxHeight(
+    target: Point,
+    targetEdge: DirectionalHint,
+    gapSpace: Double,
+    bounds: IRectangle,
+    coverTarget: Boolean
+  ): Double = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "getOppositeEdge")
+  @js.native
+  def getOppositeEdge(edge: RectangleEdge): RectangleEdge = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCallout")
+  @js.native
+  def positionCallout(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCallout")
+  @js.native
+  def positionCallout(
+    props: IPositionProps,
+    hostElement: HTMLElement,
+    elementToPosition: HTMLElement,
+    previousPositions: ICalloutPositionedInfo
+  ): ICalloutPositionedInfo = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCard")
+  @js.native
+  def positionCard(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): ICalloutPositionedInfo = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "positionCard")
+  @js.native
+  def positionCard(
+    props: IPositionProps,
+    hostElement: HTMLElement,
+    elementToPosition: HTMLElement,
+    previousPositions: ICalloutPositionedInfo
+  ): ICalloutPositionedInfo = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Positioning", "positionElement")
+  @js.native
+  def positionElement(props: IPositionProps, hostElement: HTMLElement, elementToPosition: HTMLElement): IPositionedData = js.native
+  @JSImport("office-ui-fabric-react/lib/Positioning", "positionElement")
+  @js.native
+  def positionElement(
+    props: IPositionProps,
+    hostElement: HTMLElement,
+    elementToPosition: HTMLElement,
+    previousPositions: IPositionedData
+  ): IPositionedData = js.native
 }

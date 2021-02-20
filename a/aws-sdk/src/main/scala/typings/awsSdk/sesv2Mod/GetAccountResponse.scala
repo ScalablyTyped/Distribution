@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccountResponse extends js.Object {
+trait GetAccountResponse extends StObject {
   
   /**
     * Indicates whether or not the automatic warm-up feature is enabled for dedicated IP addresses that are associated with your account.
@@ -51,60 +52,48 @@ object GetAccountResponse {
   }
   
   @scala.inline
-  implicit class GetAccountResponseOps[Self <: GetAccountResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccountResponseMutableBuilder[Self <: GetAccountResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDedicatedIpAutoWarmupEnabled(value: Enabled): Self = StObject.set(x, "DedicatedIpAutoWarmupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDedicatedIpAutoWarmupEnabledUndefined: Self = StObject.set(x, "DedicatedIpAutoWarmupEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetails(value: AccountDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDedicatedIpAutoWarmupEnabled(value: Enabled): Self = this.set("DedicatedIpAutoWarmupEnabled", value.asInstanceOf[js.Any])
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def deleteDedicatedIpAutoWarmupEnabled: Self = this.set("DedicatedIpAutoWarmupEnabled", js.undefined)
+    def setEnforcementStatus(value: GeneralEnforcementStatus): Self = StObject.set(x, "EnforcementStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: AccountDetails): Self = this.set("Details", value.asInstanceOf[js.Any])
+    def setEnforcementStatusUndefined: Self = StObject.set(x, "EnforcementStatus", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
+    def setProductionAccessEnabled(value: Enabled): Self = StObject.set(x, "ProductionAccessEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnforcementStatus(value: GeneralEnforcementStatus): Self = this.set("EnforcementStatus", value.asInstanceOf[js.Any])
+    def setProductionAccessEnabledUndefined: Self = StObject.set(x, "ProductionAccessEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnforcementStatus: Self = this.set("EnforcementStatus", js.undefined)
+    def setSendQuota(value: SendQuota): Self = StObject.set(x, "SendQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductionAccessEnabled(value: Enabled): Self = this.set("ProductionAccessEnabled", value.asInstanceOf[js.Any])
+    def setSendQuotaUndefined: Self = StObject.set(x, "SendQuota", js.undefined)
     
     @scala.inline
-    def deleteProductionAccessEnabled: Self = this.set("ProductionAccessEnabled", js.undefined)
+    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendQuota(value: SendQuota): Self = this.set("SendQuota", value.asInstanceOf[js.Any])
+    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
     
     @scala.inline
-    def deleteSendQuota: Self = this.set("SendQuota", js.undefined)
+    def setSuppressionAttributes(value: SuppressionAttributes): Self = StObject.set(x, "SuppressionAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSendingEnabled(value: Enabled): Self = this.set("SendingEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSendingEnabled: Self = this.set("SendingEnabled", js.undefined)
-    
-    @scala.inline
-    def setSuppressionAttributes(value: SuppressionAttributes): Self = this.set("SuppressionAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressionAttributes: Self = this.set("SuppressionAttributes", js.undefined)
+    def setSuppressionAttributesUndefined: Self = StObject.set(x, "SuppressionAttributes", js.undefined)
   }
 }

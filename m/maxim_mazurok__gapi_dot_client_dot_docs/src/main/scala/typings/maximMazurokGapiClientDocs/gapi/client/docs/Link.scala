@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Link extends js.Object {
+trait Link extends StObject {
   
   /** The ID of a bookmark in this document. */
   var bookmarkId: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object Link {
   }
   
   @scala.inline
-  implicit class LinkOps[Self <: Link] (val x: Self) extends AnyVal {
+  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBookmarkIdUndefined: Self = StObject.set(x, "bookmarkId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadingId(value: String): Self = StObject.set(x, "headingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBookmarkId(value: String): Self = this.set("bookmarkId", value.asInstanceOf[js.Any])
+    def setHeadingIdUndefined: Self = StObject.set(x, "headingId", js.undefined)
     
     @scala.inline
-    def deleteBookmarkId: Self = this.set("bookmarkId", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadingId(value: String): Self = this.set("headingId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadingId: Self = this.set("headingId", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

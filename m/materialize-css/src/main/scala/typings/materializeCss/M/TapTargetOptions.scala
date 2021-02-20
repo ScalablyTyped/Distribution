@@ -1,12 +1,13 @@
 package typings.materializeCss.M
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TapTargetOptions extends js.Object {
+trait TapTargetOptions extends StObject {
   
   /**
     * Callback function called when Tap Target is closed
@@ -29,24 +30,12 @@ object TapTargetOptions {
   }
   
   @scala.inline
-  implicit class TapTargetOptionsOps[Self <: TapTargetOptions] (val x: Self) extends AnyVal {
+  implicit class TapTargetOptionsMutableBuilder[Self <: TapTargetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnClose(value: Element => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnClose(value: Element => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnOpen(value: Element => Unit): Self = this.set("onOpen", js.Any.fromFunction1(value))
+    def setOnOpen(value: Element => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
   }
 }

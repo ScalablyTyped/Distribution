@@ -1,14 +1,14 @@
 package typings.typedRestClient
 
 import typings.typedRestClient.interfacesMod.IRequestHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-rest-client/handlers/basiccreds", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("typed-rest-client/handlers/basiccreds", "BasicCredentialHandler")
   @js.native
   class BasicCredentialHandler protected () extends IRequestHandler {
     def this(username: String, password: String) = this()

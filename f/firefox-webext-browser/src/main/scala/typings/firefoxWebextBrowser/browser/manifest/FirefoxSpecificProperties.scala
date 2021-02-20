@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirefoxSpecificProperties extends js.Object {
+trait FirefoxSpecificProperties extends StObject {
   
   var id: js.UndefOr[ExtensionID] = js.native
   
@@ -24,42 +25,30 @@ object FirefoxSpecificProperties {
   }
   
   @scala.inline
-  implicit class FirefoxSpecificPropertiesOps[Self <: FirefoxSpecificProperties] (val x: Self) extends AnyVal {
+  implicit class FirefoxSpecificPropertiesMutableBuilder[Self <: FirefoxSpecificProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrict_max_version(value: String): Self = StObject.set(x, "strict_max_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ExtensionID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setStrict_max_versionUndefined: Self = StObject.set(x, "strict_max_version", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setStrict_min_version(value: String): Self = StObject.set(x, "strict_min_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict_max_version(value: String): Self = this.set("strict_max_version", value.asInstanceOf[js.Any])
+    def setStrict_min_versionUndefined: Self = StObject.set(x, "strict_min_version", js.undefined)
     
     @scala.inline
-    def deleteStrict_max_version: Self = this.set("strict_max_version", js.undefined)
+    def setUpdate_url(value: String): Self = StObject.set(x, "update_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict_min_version(value: String): Self = this.set("strict_min_version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict_min_version: Self = this.set("strict_min_version", js.undefined)
-    
-    @scala.inline
-    def setUpdate_url(value: String): Self = this.set("update_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate_url: Self = this.set("update_url", js.undefined)
+    def setUpdate_urlUndefined: Self = StObject.set(x, "update_url", js.undefined)
   }
 }

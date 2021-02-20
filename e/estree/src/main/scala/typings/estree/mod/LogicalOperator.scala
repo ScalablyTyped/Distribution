@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.estreeStrings.AmpersandAmpersand
   - typings.estree.estreeStrings.QuestionmarkQuestionmark
 */
-trait LogicalOperator extends js.Object
+trait LogicalOperator extends StObject
 object LogicalOperator {
   
   @scala.inline

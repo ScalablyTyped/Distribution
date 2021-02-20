@@ -1,5 +1,6 @@
 package typings.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactDates.reactDatesStrings.startDate
   - typings.reactDates.reactDatesStrings.endDate
 */
-trait FocusedInputShape extends js.Object
+trait FocusedInputShape extends StObject
 object FocusedInputShape {
   
   @scala.inline

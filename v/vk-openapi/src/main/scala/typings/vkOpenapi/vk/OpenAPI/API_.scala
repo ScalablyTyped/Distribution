@@ -3,12 +3,13 @@ package typings.vkOpenapi.vk.OpenAPI
 import typings.vkOpenapi.vk.OpenAPI.Api.API
 import typings.vkOpenapi.vk.OpenAPI.Goal.GoalEvent
 import typings.vkOpenapi.vk.OpenAPI.Goal.GoalParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait API_ extends js.Object {
+trait API_ extends StObject {
   
   var Api: API = js.native
   

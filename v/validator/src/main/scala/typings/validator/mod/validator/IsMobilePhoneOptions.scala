@@ -1,11 +1,12 @@
 package typings.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsMobilePhoneOptions extends js.Object {
+trait IsMobilePhoneOptions extends StObject {
   
   /**
     * If this is set to `true`, the mobile phone number must be supplied with the country code and therefore must start with `+`.
@@ -23,24 +24,12 @@ object IsMobilePhoneOptions {
   }
   
   @scala.inline
-  implicit class IsMobilePhoneOptionsOps[Self <: IsMobilePhoneOptions] (val x: Self) extends AnyVal {
+  implicit class IsMobilePhoneOptionsMutableBuilder[Self <: IsMobilePhoneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStrictMode(value: Boolean): Self = this.set("strictMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictMode: Self = this.set("strictMode", js.undefined)
+    def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
   }
 }

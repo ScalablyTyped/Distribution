@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig extends StObject {
   
   /** Required. An email address to send alerts to. */
   var email: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfigOps[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinAcceptableMeanAveragePrecision(value: Double): Self = StObject.set(x, "minAcceptableMeanAveragePrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
-    
-    @scala.inline
-    def setMinAcceptableMeanAveragePrecision(value: Double): Self = this.set("minAcceptableMeanAveragePrecision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinAcceptableMeanAveragePrecision: Self = this.set("minAcceptableMeanAveragePrecision", js.undefined)
+    def setMinAcceptableMeanAveragePrecisionUndefined: Self = StObject.set(x, "minAcceptableMeanAveragePrecision", js.undefined)
   }
 }

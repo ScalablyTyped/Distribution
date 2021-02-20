@@ -1,14 +1,18 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextScript extends js.Object
+sealed trait TextScript extends StObject
 @JSGlobal("Windows.UI.Text.TextScript")
 @js.native
-object TextScript extends js.Object {
+object TextScript extends StObject {
+  
+  @js.native
+  sealed trait default extends TextScript
   
   @js.native
   sealed trait aboriginal extends TextScript
@@ -39,9 +43,6 @@ object TextScript extends js.Object {
   
   @js.native
   sealed trait cyrillic extends TextScript
-  
-  @js.native
-  sealed trait default extends TextScript
   
   @js.native
   sealed trait deseret extends TextScript

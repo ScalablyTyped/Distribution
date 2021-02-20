@@ -1,13 +1,14 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Reason
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "CodeAction")
 @js.native
-class CodeAction protected () extends js.Object {
+class CodeAction protected () extends StObject {
   /**
     * Creates a new code action.
     *

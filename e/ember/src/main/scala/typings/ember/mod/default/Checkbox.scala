@@ -1,10 +1,11 @@
 package typings.ember.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ember", "Checkbox")
+@JSImport("ember", "default.Checkbox")
 @js.native
 class Checkbox ()
-  extends typings.emberComponent.mod.default
+  extends typings.ember.mod.Ember.Checkbox

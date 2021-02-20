@@ -2,6 +2,7 @@ package typings.sharepoint.CUI
 
 import typings.sharepoint.IEnumerable
 import typings.sharepoint.IEnumerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object List {
   }
   
   @scala.inline
-  implicit class ListOps[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
+  implicit class ListMutableBuilder[Self <: List[_], T] (val x: Self with List[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: T => scala.Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => scala.Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEnumeratorAtPos(value: () => ListEnumerator[T]): Self = StObject.set(x, "getEnumeratorAtPos", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: T => scala.Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => scala.Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGet_item(value: Double => T): Self = StObject.set(x, "get_item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetEnumeratorAtPos(value: () => ListEnumerator[T]): Self = this.set("getEnumeratorAtPos", js.Any.fromFunction0(value))
+    def setIndexOf(value: T => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_count(value: () => Double): Self = this.set("get_count", js.Any.fromFunction0(value))
+    def setInsert(value: (Double, T) => scala.Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGet_item(value: Double => T): Self = this.set("get_item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIndexOf(value: T => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsert(value: (Double, T) => scala.Unit): Self = this.set("insert", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemove(value: T => scala.Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setRemove(value: T => scala.Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

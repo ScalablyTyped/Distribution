@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnenotePagePreview extends js.Object {
+trait OnenotePagePreview extends StObject {
   
   var links: js.UndefOr[NullableOption[OnenotePagePreviewLinks]] = js.native
   
@@ -20,36 +21,24 @@ object OnenotePagePreview {
   }
   
   @scala.inline
-  implicit class OnenotePagePreviewOps[Self <: OnenotePagePreview] (val x: Self) extends AnyVal {
+  implicit class OnenotePagePreviewMutableBuilder[Self <: OnenotePagePreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinks(value: NullableOption[OnenotePagePreviewLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinksNull: Self = StObject.set(x, "links", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setLinks(value: NullableOption[OnenotePagePreviewLinks]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setPreviewText(value: NullableOption[String]): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setPreviewTextNull: Self = StObject.set(x, "previewText", null)
     
     @scala.inline
-    def setLinksNull: Self = this.set("links", null)
-    
-    @scala.inline
-    def setPreviewText(value: NullableOption[String]): Self = this.set("previewText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviewText: Self = this.set("previewText", js.undefined)
-    
-    @scala.inline
-    def setPreviewTextNull: Self = this.set("previewText", null)
+    def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
   }
 }

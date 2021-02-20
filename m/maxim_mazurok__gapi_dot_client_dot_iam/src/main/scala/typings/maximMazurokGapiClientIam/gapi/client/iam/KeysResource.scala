@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientIam.anon.KeyTypes
 import typings.maximMazurokGapiClientIam.anon.Name
 import typings.maximMazurokGapiClientIam.anon.PublicKeyType
 import typings.maximMazurokGapiClientIam.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeysResource extends js.Object {
+trait KeysResource extends StObject {
   
   def create(request: Name, body: CreateServiceAccountKeyRequest): Request[ServiceAccountKey] = js.native
   /** Creates a ServiceAccountKey. */

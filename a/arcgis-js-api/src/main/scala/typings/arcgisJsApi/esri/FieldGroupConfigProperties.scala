@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
 import typings.arcgisJsApi.arcgisJsApiStrings.expanded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldGroupConfigProperties extends js.Object {
+trait FieldGroupConfigProperties extends StObject {
   
   /**
     * The field's description.
@@ -48,51 +49,39 @@ object FieldGroupConfigProperties {
   }
   
   @scala.inline
-  implicit class FieldGroupConfigPropertiesOps[Self <: FieldGroupConfigProperties] (val x: Self) extends AnyVal {
+  implicit class FieldGroupConfigPropertiesMutableBuilder[Self <: FieldGroupConfigProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldConfig(value: js.Array[FieldConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFieldConfigVarargs(value: FieldConfigProperties*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
     @scala.inline
-    def setFieldConfigVarargs(value: FieldConfigProperties*): Self = this.set("fieldConfig", js.Array(value :_*))
+    def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfigProperties]): Self = this.set("fieldConfig", value.asInstanceOf[js.Any])
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteFieldConfig: Self = this.set("fieldConfig", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: expanded | collapsed): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setVisibilityExpression(value: String): Self = this.set("visibilityExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibilityExpression: Self = this.set("visibilityExpression", js.undefined)
+    def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
   }
 }

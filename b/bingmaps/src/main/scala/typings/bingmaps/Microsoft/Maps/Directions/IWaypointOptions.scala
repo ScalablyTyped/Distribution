@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import typings.bingmaps.Microsoft.Maps.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWaypointOptions extends js.Object {
+trait IWaypointOptions extends StObject {
   
   /** 
     * The address string of the waypoint. For example, the following strings are valid for this parameter: "Seattle", "1 Microsoft Way, Redmond, WA". Either the address or location property must be specified.
@@ -31,36 +32,24 @@ object IWaypointOptions {
   }
   
   @scala.inline
-  implicit class IWaypointOptionsOps[Self <: IWaypointOptions] (val x: Self) extends AnyVal {
+  implicit class IWaypointOptionsMutableBuilder[Self <: IWaypointOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsViaPoint(value: Boolean): Self = StObject.set(x, "isViaPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setIsViaPointUndefined: Self = StObject.set(x, "isViaPoint", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsViaPoint(value: Boolean): Self = this.set("isViaPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsViaPoint: Self = this.set("isViaPoint", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

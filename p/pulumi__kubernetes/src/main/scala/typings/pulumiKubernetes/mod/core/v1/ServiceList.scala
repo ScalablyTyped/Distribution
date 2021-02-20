@@ -4,6 +4,7 @@ import typings.pulumiKubernetes.serviceListMod.ServiceListArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +26,7 @@ class ServiceList protected ()
   def this(name: String, args: ServiceListArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/kubernetes", "core.v1.ServiceList")
-@js.native
-object ServiceList extends js.Object {
+object ServiceList {
   
   /**
     * Get an existing ServiceList resource's state with the given name, ID, and optional extra
@@ -37,12 +36,18 @@ object ServiceList extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/kubernetes", "core.v1.ServiceList.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiKubernetes.serviceListMod.ServiceList = js.native
+  @JSImport("@pulumi/kubernetes", "core.v1.ServiceList.get")
+  @js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.serviceListMod.ServiceList = js.native
   
   /**
     * Returns true if the given object is an instance of ServiceList.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/kubernetes", "core.v1.ServiceList.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/serviceList.ServiceList */ Boolean = js.native
 }

@@ -55,6 +55,7 @@ import typings.webcl.webclNumbers.`0x1038`
 import typings.webcl.webclNumbers.`0x1039`
 import typings.webcl.webclNumbers.`0x103A`
 import typings.webcl.webclNumbers.`0x103D`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,7 +118,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x103A`
   - typings.webcl.webclNumbers.`0x103D`
 */
-trait DeviceInfo extends js.Object
+trait DeviceInfo extends StObject
 object DeviceInfo {
   
   @scala.inline

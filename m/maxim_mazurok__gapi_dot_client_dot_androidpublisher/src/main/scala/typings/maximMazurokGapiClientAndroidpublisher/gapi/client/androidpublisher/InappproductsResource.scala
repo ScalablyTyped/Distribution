@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientAndroidpublisher.anon.Resource
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Sku
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Uploadprotocol
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InappproductsResource extends js.Object {
+trait InappproductsResource extends StObject {
   
   /** Deletes an in-app product (i.e. a managed product or a subscriptions). */
   def delete(): Request[Unit] = js.native

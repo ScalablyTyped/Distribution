@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {function(*,*=) | null=} conv A function converting the data property value to the value to set the target property.
   *   If the function is null or not supplied, no conversion takes place.
   */
-class Binding () extends js.Object {
+class Binding () extends StObject {
   def this(targetprop: String) = this()
   def this(targetprop: js.UndefOr[scala.Nothing], sourceprop: String) = this()
   def this(targetprop: String, sourceprop: String) = this()
@@ -141,16 +142,27 @@ class Binding () extends js.Object {
     */
   var targetProperty: String = js.native
 }
-/* static members */
-@JSImport("go", "Binding")
-@js.native
-object Binding extends js.Object {
+object Binding {
+  
+  @JSImport("go", "Binding")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**This value for Binding.mode uses data source values and sets GraphObject properties.*/
-  var OneWay: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Binding.OneWay")
+  @js.native
+  def OneWay: EnumValue = js.native
+  @scala.inline
+  def OneWay_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OneWay")(x.asInstanceOf[js.Any])
   
   /**This value for Binding.mode uses data source values and GraphObject properties and keeps them in sync.*/
-  var TwoWay: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "Binding.TwoWay")
+  @js.native
+  def TwoWay: EnumValue = js.native
+  @scala.inline
+  def TwoWay_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TwoWay")(x.asInstanceOf[js.Any])
   
   /**
     * This static function can be used to create a function that parses
@@ -165,6 +177,9 @@ object Binding extends js.Object {
     * @param {function()} ctor the class constructor that defines the enumerated values that are being parsed.
     * @param {EnumValue} defval the default enumerated value to return if it fails to parse the given string.
     */
+  /* static member */
+  @JSImport("go", "Binding.parseEnum")
+  @js.native
   def parseEnum(ctor: Constructor, defval: EnumValue): js.Function1[/* a */ String, EnumValue] = js.native
   
   /**
@@ -173,5 +188,8 @@ object Binding extends js.Object {
     * If none are found, this just calls toString() on it.
     * @param {*} val
     */
-  def toString(`val`: js.Any): String = js.native
+  /* static member */
+  @JSImport("go", "Binding.toString")
+  @js.native
+  def toString_(`val`: js.Any): String = js.native
 }

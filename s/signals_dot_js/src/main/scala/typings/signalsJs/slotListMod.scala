@@ -1,16 +1,16 @@
 package typings.signalsJs
 
 import typings.signalsJs.islotMod.ISlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signals.js/lib/org/osflash/signals/SlotList", JSImport.Namespace)
-@js.native
-object slotListMod extends js.Object {
+object slotListMod {
   
+  @JSImport("signals.js/lib/org/osflash/signals/SlotList", "SlotList")
   @js.native
-  class SlotList protected () extends js.Object {
+  class SlotList protected () extends StObject {
     /**
       * Creates and returns a new SlotList object.
       *
@@ -89,12 +89,19 @@ object slotListMod extends js.Object {
     var tail: SlotList = js.native
   }
   /* static members */
-  @js.native
-  object SlotList extends js.Object {
+  object SlotList {
+    
+    @JSImport("signals.js/lib/org/osflash/signals/SlotList", "SlotList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Represents an empty list. Used as the list terminator.
       */
-    var NIL: SlotList = js.native
+    @JSImport("signals.js/lib/org/osflash/signals/SlotList", "SlotList.NIL")
+    @js.native
+    def NIL: SlotList = js.native
+    @scala.inline
+    def NIL_=(x: SlotList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
   }
 }

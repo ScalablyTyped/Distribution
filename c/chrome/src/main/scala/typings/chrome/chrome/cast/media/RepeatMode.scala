@@ -1,14 +1,15 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RepeatMode extends js.Object
+sealed trait RepeatMode extends StObject
 @JSGlobal("chrome.cast.media.RepeatMode")
 @js.native
-object RepeatMode extends js.Object {
+object RepeatMode extends StObject {
   
   @js.native
   sealed trait ALL extends RepeatMode

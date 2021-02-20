@@ -1,12 +1,13 @@
 package typings.terminalKit.anon
 
 import typings.terminalKit.terminalMod.CTerminal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delay extends js.Object {
+trait Delay extends StObject {
   
   var delay: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object Delay {
   }
   
   @scala.inline
-  implicit class DelayOps[Self <: Delay] (val x: Self) extends AnyVal {
+  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlashDelay(value: Double): Self = StObject.set(x, "flashDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setFlashDelayUndefined: Self = StObject.set(x, "flashDelay", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setFlashStyle(value: CTerminal): Self = StObject.set(x, "flashStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashDelay(value: Double): Self = this.set("flashDelay", value.asInstanceOf[js.Any])
+    def setFlashStyleUndefined: Self = StObject.set(x, "flashStyle", js.undefined)
     
     @scala.inline
-    def deleteFlashDelay: Self = this.set("flashDelay", js.undefined)
+    def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlashStyle(value: CTerminal): Self = this.set("flashStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlashStyle: Self = this.set("flashStyle", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CTerminal): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

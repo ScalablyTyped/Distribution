@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,30 +55,18 @@ object FeatureLayerCapabilitiesData {
   }
   
   @scala.inline
-  implicit class FeatureLayerCapabilitiesDataOps[Self <: FeatureLayerCapabilitiesData] (val x: Self) extends AnyVal {
+  implicit class FeatureLayerCapabilitiesDataMutableBuilder[Self <: FeatureLayerCapabilitiesData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsVersioned(value: Boolean): Self = StObject.set(x, "isVersioned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVersioned(value: Boolean): Self = this.set("isVersioned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsAttachment(value: Boolean): Self = this.set("supportsAttachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsM(value: Boolean): Self = this.set("supportsM", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsZ(value: Boolean): Self = this.set("supportsZ", value.asInstanceOf[js.Any])
+    def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.ionicCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait R extends js.Object {
+trait R extends StObject {
   
   var r: Double = js.native
   
@@ -20,24 +21,12 @@ object R {
   }
   
   @scala.inline
-  implicit class ROps[Self <: R] (val x: Self) extends AnyVal {
+  implicit class RMutableBuilder[Self <: R] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: Animationdelay): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: Animationdelay): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

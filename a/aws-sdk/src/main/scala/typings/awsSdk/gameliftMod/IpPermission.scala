@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IpPermission extends js.Object {
+trait IpPermission extends StObject {
   
   /**
     * A starting value for a range of allowed port numbers.
@@ -36,30 +37,18 @@ object IpPermission {
   }
   
   @scala.inline
-  implicit class IpPermissionOps[Self <: IpPermission] (val x: Self) extends AnyVal {
+  implicit class IpPermissionMutableBuilder[Self <: IpPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPort(value: PortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpRange(value: NonBlankString): Self = StObject.set(x, "IpRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtocol(value: IpProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: PortNumber): Self = this.set("FromPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIpRange(value: NonBlankString): Self = this.set("IpRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: IpProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToPort(value: PortNumber): Self = this.set("ToPort", value.asInstanceOf[js.Any])
+    def setToPort(value: PortNumber): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
   }
 }

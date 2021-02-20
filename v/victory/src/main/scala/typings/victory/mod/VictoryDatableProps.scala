@@ -1,6 +1,7 @@
 package typings.victory.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Common properties for all data components
   */
 @js.native
-trait VictoryDatableProps extends js.Object {
+trait VictoryDatableProps extends StObject {
   
   /**
     * The categories prop specifies how categorical data for a chart should be ordered.
@@ -95,84 +96,72 @@ object VictoryDatableProps {
   }
   
   @scala.inline
-  implicit class VictoryDatablePropsOps[Self <: VictoryDatableProps] (val x: Self) extends AnyVal {
+  implicit class VictoryDatablePropsMutableBuilder[Self <: VictoryDatableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: CategoryPropType): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: CategoryPropType): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setDataComponent(value: ReactElement): Self = StObject.set(x, "dataComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setDataComponentUndefined: Self = StObject.set(x, "dataComponent", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDomain(value: DomainPropType): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataComponent(value: ReactElement): Self = this.set("dataComponent", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     @scala.inline
-    def deleteDataComponent: Self = this.set("dataComponent", js.undefined)
+    def setX(value: DataGetterPropType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainPropType): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "x", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def setXVarargs(value: String*): Self = this.set("x", js.Array(value :_*))
+    def setXVarargs(value: String*): Self = StObject.set(x, "x", js.Array(value :_*))
     
     @scala.inline
-    def setXFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("x", js.Any.fromFunction1(value))
+    def setY(value: DataGetterPropType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: DataGetterPropType): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setY0(value: DataGetterPropType): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setY0Function1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y0", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setYVarargs(value: String*): Self = this.set("y", js.Array(value :_*))
+    def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
     
     @scala.inline
-    def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("y", js.Any.fromFunction1(value))
+    def setY0Varargs(value: String*): Self = StObject.set(x, "y0", js.Array(value :_*))
     
     @scala.inline
-    def setY(value: DataGetterPropType): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setYFunction1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def setY0Varargs(value: String*): Self = this.set("y0", js.Array(value :_*))
-    
-    @scala.inline
-    def setY0Function1(value: /* data */ js.Any => Double | String | js.Array[String]): Self = this.set("y0", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setY0(value: DataGetterPropType): Self = this.set("y0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY0: Self = this.set("y0", js.undefined)
+    def setYVarargs(value: String*): Self = StObject.set(x, "y", js.Array(value :_*))
   }
 }

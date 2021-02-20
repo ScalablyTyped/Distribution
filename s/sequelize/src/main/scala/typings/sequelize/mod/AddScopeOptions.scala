@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AddScope Options for Model.addScope
   */
 @js.native
-trait AddScopeOptions extends js.Object {
+trait AddScopeOptions extends StObject {
   
   /**
     * If a scope of the same name already exists, should it be overwritten?
@@ -25,21 +26,9 @@ object AddScopeOptions {
   }
   
   @scala.inline
-  implicit class AddScopeOptionsOps[Self <: AddScopeOptions] (val x: Self) extends AnyVal {
+  implicit class AddScopeOptionsMutableBuilder[Self <: AddScopeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOverride(value: Boolean): Self = this.set("override", value.asInstanceOf[js.Any])
+    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
   }
 }

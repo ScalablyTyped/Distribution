@@ -2,17 +2,18 @@ package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientNumbers.`1`
 import typings.vscodeLanguageclient.vscodeLanguageclientNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "InsertTextFormat")
-@js.native
-object InsertTextFormat extends js.Object {
+object InsertTextFormat {
   
   /**
     * The primary text to be inserted is treated as a plain string.
     */
+  @JSImport("vscode-languageclient", "InsertTextFormat.PlainText")
+  @js.native
   val PlainText: `1` = js.native
   
   /**
@@ -25,5 +26,7 @@ object InsertTextFormat extends js.Object {
     *
     * See also: https://github.com/Microsoft/vscode/blob/master/src/vs/editor/contrib/snippet/common/snippet.md
     */
+  @JSImport("vscode-languageclient", "InsertTextFormat.Snippet")
+  @js.native
   val Snippet: `2` = js.native
 }

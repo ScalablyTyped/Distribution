@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudTalentV4JobDerivedInfo extends js.Object {
+trait GoogleCloudTalentV4JobDerivedInfo extends StObject {
   
   /** Job categories derived from Job.title and Job.description. */
   var jobCategories: js.UndefOr[js.Array[String]] = js.native
@@ -22,36 +23,24 @@ object GoogleCloudTalentV4JobDerivedInfo {
   }
   
   @scala.inline
-  implicit class GoogleCloudTalentV4JobDerivedInfoOps[Self <: GoogleCloudTalentV4JobDerivedInfo] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudTalentV4JobDerivedInfoMutableBuilder[Self <: GoogleCloudTalentV4JobDerivedInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobCategories(value: js.Array[String]): Self = StObject.set(x, "jobCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
     
     @scala.inline
-    def setJobCategoriesVarargs(value: String*): Self = this.set("jobCategories", js.Array(value :_*))
+    def setLocations(value: js.Array[GoogleCloudTalentV4Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobCategories(value: js.Array[String]): Self = this.set("jobCategories", value.asInstanceOf[js.Any])
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def deleteJobCategories: Self = this.set("jobCategories", js.undefined)
-    
-    @scala.inline
-    def setLocationsVarargs(value: GoogleCloudTalentV4Location*): Self = this.set("locations", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocations(value: js.Array[GoogleCloudTalentV4Location]): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setLocationsVarargs(value: GoogleCloudTalentV4Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

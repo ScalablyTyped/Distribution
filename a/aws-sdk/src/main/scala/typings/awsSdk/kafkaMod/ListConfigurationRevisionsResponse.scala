@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListConfigurationRevisionsResponse extends js.Object {
+trait ListConfigurationRevisionsResponse extends StObject {
   
   /**
     * 
@@ -30,33 +31,21 @@ object ListConfigurationRevisionsResponse {
   }
   
   @scala.inline
-  implicit class ListConfigurationRevisionsResponseOps[Self <: ListConfigurationRevisionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListConfigurationRevisionsResponseMutableBuilder[Self <: ListConfigurationRevisionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevisions(value: listOfConfigurationRevision): Self = StObject.set(x, "Revisions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRevisionsUndefined: Self = StObject.set(x, "Revisions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRevisionsVarargs(value: ConfigurationRevision*): Self = this.set("Revisions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRevisions(value: listOfConfigurationRevision): Self = this.set("Revisions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisions: Self = this.set("Revisions", js.undefined)
+    def setRevisionsVarargs(value: ConfigurationRevision*): Self = StObject.set(x, "Revisions", js.Array(value :_*))
   }
 }

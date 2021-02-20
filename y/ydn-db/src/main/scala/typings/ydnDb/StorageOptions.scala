@@ -1,11 +1,12 @@
 package typings.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StorageOptions extends js.Object {
+trait StorageOptions extends StObject {
   
   var autoSchema: js.UndefOr[Boolean] = js.native
   
@@ -26,51 +27,39 @@ object StorageOptions {
   }
   
   @scala.inline
-  implicit class StorageOptionsOps[Self <: StorageOptions] (val x: Self) extends AnyVal {
+  implicit class StorageOptionsMutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoSchema(value: Boolean): Self = StObject.set(x, "autoSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoSchemaUndefined: Self = StObject.set(x, "autoSchema", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSerial(value: Boolean): Self = StObject.set(x, "isSerial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSchema(value: Boolean): Self = this.set("autoSchema", value.asInstanceOf[js.Any])
+    def setIsSerialUndefined: Self = StObject.set(x, "isSerial", js.undefined)
     
     @scala.inline
-    def deleteAutoSchema: Self = this.set("autoSchema", js.undefined)
+    def setMechanisms(value: js.Array[String]): Self = StObject.set(x, "mechanisms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSerial(value: Boolean): Self = this.set("isSerial", value.asInstanceOf[js.Any])
+    def setMechanismsUndefined: Self = StObject.set(x, "mechanisms", js.undefined)
     
     @scala.inline
-    def deleteIsSerial: Self = this.set("isSerial", js.undefined)
+    def setMechanismsVarargs(value: String*): Self = StObject.set(x, "mechanisms", js.Array(value :_*))
     
     @scala.inline
-    def setMechanismsVarargs(value: String*): Self = this.set("mechanisms", js.Array(value :_*))
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMechanisms(value: js.Array[String]): Self = this.set("mechanisms", value.asInstanceOf[js.Any])
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
     @scala.inline
-    def deleteMechanisms: Self = this.set("mechanisms", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

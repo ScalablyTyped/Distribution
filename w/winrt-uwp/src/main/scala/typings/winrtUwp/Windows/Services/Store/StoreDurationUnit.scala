@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StoreDurationUnit extends js.Object
+sealed trait StoreDurationUnit extends StObject
 /** Defines values that represent the units of a trial period or billing period for a subscription. */
 @JSGlobal("Windows.Services.Store.StoreDurationUnit")
 @js.native
-object StoreDurationUnit extends js.Object {
+object StoreDurationUnit extends StObject {
   
   /** The period is defined in days. */
   @js.native

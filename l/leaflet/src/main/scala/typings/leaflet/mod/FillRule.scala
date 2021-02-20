@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.leaflet.leafletStrings.evenodd
   - typings.leaflet.leafletStrings.inherit
 */
-trait FillRule extends js.Object
+trait FillRule extends StObject
 object FillRule {
   
   @scala.inline

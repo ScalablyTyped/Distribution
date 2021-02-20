@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperatingSystemVersionsListResponse extends js.Object {
+trait OperatingSystemVersionsListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#operatingSystemVersionsListResponse". */
   var kind: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object OperatingSystemVersionsListResponse {
   }
   
   @scala.inline
-  implicit class OperatingSystemVersionsListResponseOps[Self <: OperatingSystemVersionsListResponse] (val x: Self) extends AnyVal {
+  implicit class OperatingSystemVersionsListResponseMutableBuilder[Self <: OperatingSystemVersionsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperatingSystemVersions(value: js.Array[OperatingSystemVersion]): Self = StObject.set(x, "operatingSystemVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOperatingSystemVersionsUndefined: Self = StObject.set(x, "operatingSystemVersions", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = this.set("operatingSystemVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setOperatingSystemVersions(value: js.Array[OperatingSystemVersion]): Self = this.set("operatingSystemVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatingSystemVersions: Self = this.set("operatingSystemVersions", js.undefined)
+    def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value :_*))
   }
 }

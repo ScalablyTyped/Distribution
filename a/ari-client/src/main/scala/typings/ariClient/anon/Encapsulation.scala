@@ -1,12 +1,13 @@
 package typings.ariClient.anon
 
 import typings.ariClient.mod.Containers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Encapsulation extends js.Object {
+trait Encapsulation extends StObject {
   
   var app: String = js.native
   
@@ -33,57 +34,45 @@ object Encapsulation {
   }
   
   @scala.inline
-  implicit class EncapsulationOps[Self <: Encapsulation] (val x: Self) extends AnyVal {
+  implicit class EncapsulationMutableBuilder[Self <: Encapsulation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnection_type(value: String): Self = StObject.set(x, "connection_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnection_typeUndefined: Self = StObject.set(x, "connection_type", js.undefined)
     
     @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_host(value: String): Self = this.set("external_host", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setEncapsulation(value: String): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection_type(value: String): Self = this.set("connection_type", value.asInstanceOf[js.Any])
+    def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
     
     @scala.inline
-    def deleteConnection_type: Self = this.set("connection_type", js.undefined)
+    def setExternal_host(value: String): Self = StObject.set(x, "external_host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncapsulation(value: String): Self = this.set("encapsulation", value.asInstanceOf[js.Any])
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     
     @scala.inline
-    def deleteEncapsulation: Self = this.set("encapsulation", js.undefined)
+    def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport(value: String): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
-    
-    @scala.inline
-    def setVariables(value: Containers): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariables: Self = this.set("variables", js.undefined)
+    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

@@ -1,14 +1,14 @@
 package typings.opentelemetryCore
 
 import typings.opentelemetryCore.idGeneratorMod.IdGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/core/build/src/platform/node/RandomIdGenerator", JSImport.Namespace)
-@js.native
-object nodeRandomIdGeneratorMod extends js.Object {
+object nodeRandomIdGeneratorMod {
   
+  @JSImport("@opentelemetry/core/build/src/platform/node/RandomIdGenerator", "RandomIdGenerator")
   @js.native
   class RandomIdGenerator () extends IdGenerator
 }

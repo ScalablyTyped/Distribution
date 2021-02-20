@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,30 +20,18 @@ object MobileAppContent {
   }
   
   @scala.inline
-  implicit class MobileAppContentOps[Self <: MobileAppContent] (val x: Self) extends AnyVal {
+  implicit class MobileAppContentMutableBuilder[Self <: MobileAppContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFiles(value: NullableOption[js.Array[MobileAppContentFile]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilesNull: Self = StObject.set(x, "files", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def setFilesVarargs(value: MobileAppContentFile*): Self = this.set("files", js.Array(value :_*))
-    
-    @scala.inline
-    def setFiles(value: NullableOption[js.Array[MobileAppContentFile]]): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
-    
-    @scala.inline
-    def setFilesNull: Self = this.set("files", null)
+    def setFilesVarargs(value: MobileAppContentFile*): Self = StObject.set(x, "files", js.Array(value :_*))
   }
 }

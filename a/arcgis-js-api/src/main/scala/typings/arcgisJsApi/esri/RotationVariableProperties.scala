@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.geographic
 import typings.arcgisJsApi.arcgisJsApiStrings.heading
 import typings.arcgisJsApi.arcgisJsApiStrings.roll
 import typings.arcgisJsApi.arcgisJsApiStrings.tilt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object RotationVariableProperties {
   }
   
   @scala.inline
-  implicit class RotationVariablePropertiesOps[Self <: RotationVariableProperties] (val x: Self) extends AnyVal {
+  implicit class RotationVariablePropertiesMutableBuilder[Self <: RotationVariableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: heading | tilt | roll): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotationType(value: geographic | arithmetic): Self = StObject.set(x, "rotationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: heading | tilt | roll): Self = this.set("axis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
-    
-    @scala.inline
-    def setRotationType(value: geographic | arithmetic): Self = this.set("rotationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationType: Self = this.set("rotationType", js.undefined)
+    def setRotationTypeUndefined: Self = StObject.set(x, "rotationType", js.undefined)
   }
 }

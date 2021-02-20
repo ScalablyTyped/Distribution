@@ -1,11 +1,12 @@
 package typings.surveyKnockout.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Disabled extends js.Object {
+trait Disabled extends StObject {
   
   var disabled: String = js.native
   
@@ -38,39 +39,27 @@ object Disabled {
   }
   
   @scala.inline
-  implicit class DisabledOps[Self <: Disabled] (val x: Self) extends AnyVal {
+  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemText(value: String): Self = StObject.set(x, "itemText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setMaxText(value: String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: String): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setMinText(value: String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemText(value: String): Self = this.set("itemText", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxText(value: String): Self = this.set("maxText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinText(value: String): Self = this.set("minText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

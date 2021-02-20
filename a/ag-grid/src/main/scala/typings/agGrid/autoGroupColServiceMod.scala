@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.columnMod.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/columnController/autoGroupColService", JSImport.Namespace)
-@js.native
-object autoGroupColServiceMod extends js.Object {
+object autoGroupColServiceMod {
   
+  @JSImport("ag-grid/dist/lib/columnController/autoGroupColService", "AutoGroupColService")
   @js.native
-  class AutoGroupColService () extends js.Object {
+  class AutoGroupColService () extends StObject {
     
     var balancedColumnTreeBuilder: js.Any = js.native
     
@@ -27,11 +27,22 @@ object autoGroupColServiceMod extends js.Object {
     var gridOptionsWrapper: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object AutoGroupColService extends js.Object {
+  object AutoGroupColService {
     
-    var GROUP_AUTO_COLUMN_BUNDLE_ID: String = js.native
+    @JSImport("ag-grid/dist/lib/columnController/autoGroupColService", "AutoGroupColService")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var GROUP_AUTO_COLUMN_ID: String = js.native
+    @JSImport("ag-grid/dist/lib/columnController/autoGroupColService", "AutoGroupColService.GROUP_AUTO_COLUMN_BUNDLE_ID")
+    @js.native
+    def GROUP_AUTO_COLUMN_BUNDLE_ID: String = js.native
+    @scala.inline
+    def GROUP_AUTO_COLUMN_BUNDLE_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_AUTO_COLUMN_BUNDLE_ID")(x.asInstanceOf[js.Any])
+    
+    @JSImport("ag-grid/dist/lib/columnController/autoGroupColService", "AutoGroupColService.GROUP_AUTO_COLUMN_ID")
+    @js.native
+    def GROUP_AUTO_COLUMN_ID: String = js.native
+    @scala.inline
+    def GROUP_AUTO_COLUMN_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_AUTO_COLUMN_ID")(x.asInstanceOf[js.Any])
   }
 }

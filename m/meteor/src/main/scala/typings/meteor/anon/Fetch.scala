@@ -2,12 +2,13 @@ package typings.meteor.anon
 
 import typings.meteor.mongoMod.Mongo.DispatchTransform
 import typings.meteor.mongoMod.Mongo.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fetch[Fn /* <: Transform[T] */, T, U] extends js.Object {
+trait Fetch[Fn /* <: Transform[T] */, T, U] extends StObject {
   
   var fetch: js.UndefOr[js.Array[String]] = js.native
   
@@ -40,53 +41,41 @@ object Fetch {
   }
   
   @scala.inline
-  implicit class FetchOps[Self <: Fetch[_, _, _], Fn /* <: Transform[T] */, T, U] (val x: Self with (Fetch[Fn, T, U])) extends AnyVal {
+  implicit class FetchMutableBuilder[Self <: Fetch[_, _, _], Fn /* <: Transform[T] */, T, U] (val x: Self with (Fetch[Fn, T, U])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
     
     @scala.inline
-    def setFetchVarargs(value: String*): Self = this.set("fetch", js.Array(value :_*))
+    def setInsert(value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U]) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFetch(value: js.Array[String]): Self = this.set("fetch", value.asInstanceOf[js.Any])
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def deleteFetch: Self = this.set("fetch", js.undefined)
+    def setRemove(value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U]) => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsert(value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U]) => Boolean): Self = this.set("insert", js.Any.fromFunction2(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
+    def setTransform(value: Fn): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U]) => Boolean): Self = this.set("remove", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
-    
-    @scala.inline
-    def setTransform(value: Fn): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
     def setUpdate(
       value: (/* userId */ String, /* doc */ DispatchTransform[Fn, T, U], /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
-    ): Self = this.set("update", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

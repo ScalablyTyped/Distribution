@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VisibilityMode extends js.Object
+sealed trait VisibilityMode extends StObject
 /**
   * Visibility mode of the add-in.
   */
 @JSGlobal("Office.VisibilityMode")
 @js.native
-object VisibilityMode extends js.Object {
+object VisibilityMode extends StObject {
   
   /**
     * UI is Hidden

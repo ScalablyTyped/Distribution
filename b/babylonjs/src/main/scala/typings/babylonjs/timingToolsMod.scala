@@ -1,23 +1,24 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/timingTools", JSImport.Namespace)
-@js.native
-object timingToolsMod extends js.Object {
+object timingToolsMod {
   
+  @JSImport("babylonjs/Misc/timingTools", "TimingTools")
   @js.native
-  class TimingTools () extends js.Object
+  class TimingTools () extends StObject
   /* static members */
-  @js.native
-  object TimingTools extends js.Object {
+  object TimingTools {
     
     /**
       * Polyfill for setImmediate
       * @param action defines the action to execute after the current execution block
       */
+    @JSImport("babylonjs/Misc/timingTools", "TimingTools.SetImmediate")
+    @js.native
     def SetImmediate(action: js.Function0[Unit]): Unit = js.native
   }
 }

@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,21 +22,9 @@ object IGenericBookmarkListLayout {
   }
   
   @scala.inline
-  implicit class IGenericBookmarkListLayoutOps[Self <: IGenericBookmarkListLayout] (val x: Self) extends AnyVal {
+  implicit class IGenericBookmarkListLayoutMutableBuilder[Self <: IGenericBookmarkListLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQBookmarkList(value: IBookmarkList): Self = this.set("qBookmarkList", value.asInstanceOf[js.Any])
+    def setQBookmarkList(value: IBookmarkList): Self = StObject.set(x, "qBookmarkList", value.asInstanceOf[js.Any])
   }
 }

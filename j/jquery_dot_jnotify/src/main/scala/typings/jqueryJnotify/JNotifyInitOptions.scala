@@ -1,11 +1,12 @@
 package typings.jqueryJnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JNotifyInitOptions extends js.Object {
+trait JNotifyInitOptions extends StObject {
   
   var appendType: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object JNotifyInitOptions {
   }
   
   @scala.inline
-  implicit class JNotifyInitOptionsOps[Self <: JNotifyInitOptions] (val x: Self) extends AnyVal {
+  implicit class JNotifyInitOptionsMutableBuilder[Self <: JNotifyInitOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendType(value: String): Self = StObject.set(x, "appendType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendTypeUndefined: Self = StObject.set(x, "appendType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneAtTime(value: Boolean): Self = StObject.set(x, "oneAtTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendType(value: String): Self = this.set("appendType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppendType: Self = this.set("appendType", js.undefined)
-    
-    @scala.inline
-    def setOneAtTime(value: Boolean): Self = this.set("oneAtTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOneAtTime: Self = this.set("oneAtTime", js.undefined)
+    def setOneAtTimeUndefined: Self = StObject.set(x, "oneAtTime", js.undefined)
   }
 }

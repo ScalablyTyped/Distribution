@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InlineTemplate extends js.Object {
+trait InlineTemplate extends StObject {
   
   /**
     * An optional array of strings that enables the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise
@@ -46,54 +47,42 @@ object InlineTemplate {
   }
   
   @scala.inline
-  implicit class InlineTemplateOps[Self <: InlineTemplate] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class InlineTemplateMutableBuilder[Self <: InlineTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCustomFields(
       value: /* An `accountCustomField` is an envelope custom field that you set at the account level. Applying custom fields enables account administators to
       group and manage envelopes.  */ AccountCustomFields
-    ): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomFields: Self = this.set("customFields", js.undefined)
+    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
     @scala.inline
-    def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = this.set("documents", js.Array(value :_*))
+    def setDocuments(value: js.Array[/* A document object. */ Document]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: js.Array[/* A document object. */ Document]): Self = this.set("documents", value.asInstanceOf[js.Any])
+    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
     @scala.inline
-    def deleteDocuments: Self = this.set("documents", js.undefined)
+    def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value :_*))
     
     @scala.inline
-    def setEnvelope(value: Envelope): Self = this.set("envelope", value.asInstanceOf[js.Any])
+    def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvelope: Self = this.set("envelope", js.undefined)
+    def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
     
     @scala.inline
-    def setRecipients(value: /* Envelope recipients */ EnvelopeRecipients): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setRecipients(value: /* Envelope recipients */ EnvelopeRecipients): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def setSequence(value: String): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSequence: Self = this.set("sequence", js.undefined)
+    def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
   }
 }

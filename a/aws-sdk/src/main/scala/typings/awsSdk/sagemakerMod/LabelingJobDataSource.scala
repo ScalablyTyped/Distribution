@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelingJobDataSource extends js.Object {
+trait LabelingJobDataSource extends StObject {
   
   /**
     * The Amazon S3 location of the input data objects.
@@ -26,30 +27,18 @@ object LabelingJobDataSource {
   }
   
   @scala.inline
-  implicit class LabelingJobDataSourceOps[Self <: LabelingJobDataSource] (val x: Self) extends AnyVal {
+  implicit class LabelingJobDataSourceMutableBuilder[Self <: LabelingJobDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3DataSource(value: LabelingJobS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3DataSourceUndefined: Self = StObject.set(x, "S3DataSource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSnsDataSource(value: LabelingJobSnsDataSource): Self = StObject.set(x, "SnsDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DataSource(value: LabelingJobS3DataSource): Self = this.set("S3DataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DataSource: Self = this.set("S3DataSource", js.undefined)
-    
-    @scala.inline
-    def setSnsDataSource(value: LabelingJobSnsDataSource): Self = this.set("SnsDataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsDataSource: Self = this.set("SnsDataSource", js.undefined)
+    def setSnsDataSourceUndefined: Self = StObject.set(x, "SnsDataSource", js.undefined)
   }
 }

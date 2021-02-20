@@ -1,18 +1,18 @@
 package typings.materialUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Toggle", JSImport.Namespace)
-@js.native
-object toggleMod extends js.Object {
+object toggleMod {
   
+  @JSImport("material-ui/Toggle", JSImport.Default)
+  @js.native
+  class default () extends Toggle
+  
+  @JSImport("material-ui/Toggle", "Toggle")
   @js.native
   class Toggle ()
-    extends typings.materialUi.MaterialUI.Switches.Toggle
-  
-  @js.native
-  class default ()
     extends typings.materialUi.MaterialUI.Switches.Toggle
 }

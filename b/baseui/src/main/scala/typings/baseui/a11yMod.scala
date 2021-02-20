@@ -1,14 +1,14 @@
 package typings.baseui
 
 import typings.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baseui/a11y", JSImport.Namespace)
-@js.native
-object a11yMod extends js.Object {
+object a11yMod {
   
-  @JSName("Unstable_A11y")
+  @JSImport("baseui/a11y", "Unstable_A11y")
+  @js.native
   val UnstableA11y: FC[js.Object] = js.native
 }

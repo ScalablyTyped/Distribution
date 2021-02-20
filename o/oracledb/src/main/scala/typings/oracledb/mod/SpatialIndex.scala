@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/adsdi/soda-index-specifications-reference.html#GUID-00C06941-6FFD-4CEB-81B6-9A7FBD577A2C
   */
 @js.native
-trait SpatialIndex extends js.Object {
+trait SpatialIndex extends StObject {
   
   /** Specifies that the targeted field need not be present or have a GeoJSON geometry object as its value. */
   var lax: js.UndefOr[Boolean] = js.native
@@ -33,36 +34,24 @@ object SpatialIndex {
   }
   
   @scala.inline
-  implicit class SpatialIndexOps[Self <: SpatialIndex] (val x: Self) extends AnyVal {
+  implicit class SpatialIndexMutableBuilder[Self <: SpatialIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLax(value: Boolean): Self = StObject.set(x, "lax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaxUndefined: Self = StObject.set(x, "lax", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScalarRequired(value: Boolean): Self = StObject.set(x, "scalarRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatial(value: String): Self = this.set("spatial", value.asInstanceOf[js.Any])
+    def setScalarRequiredUndefined: Self = StObject.set(x, "scalarRequired", js.undefined)
     
     @scala.inline
-    def setLax(value: Boolean): Self = this.set("lax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLax: Self = this.set("lax", js.undefined)
-    
-    @scala.inline
-    def setScalarRequired(value: Boolean): Self = this.set("scalarRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalarRequired: Self = this.set("scalarRequired", js.undefined)
+    def setSpatial(value: String): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
   }
 }

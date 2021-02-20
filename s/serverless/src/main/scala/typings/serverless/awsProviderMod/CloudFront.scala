@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudFront extends js.Object {
+trait CloudFront extends StObject {
   
   var eventType: String = js.native
   
@@ -24,30 +25,18 @@ object CloudFront {
   }
   
   @scala.inline
-  implicit class CloudFrontOps[Self <: CloudFront] (val x: Self) extends AnyVal {
+  implicit class CloudFrontMutableBuilder[Self <: CloudFront] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigin(value: Origin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeBody(value: Boolean): Self = this.set("includeBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: Origin): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathPattern(value: String): Self = this.set("pathPattern", value.asInstanceOf[js.Any])
+    def setPathPattern(value: String): Self = StObject.set(x, "pathPattern", value.asInstanceOf[js.Any])
   }
 }

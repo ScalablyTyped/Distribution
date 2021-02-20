@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreprocessingConfig extends js.Object {
+trait PreprocessingConfig extends StObject {
   
   /** Audio preprocessing configuration. */
   var audio: js.UndefOr[Audio] = js.native
@@ -31,48 +32,36 @@ object PreprocessingConfig {
   }
   
   @scala.inline
-  implicit class PreprocessingConfigOps[Self <: PreprocessingConfig] (val x: Self) extends AnyVal {
+  implicit class PreprocessingConfigMutableBuilder[Self <: PreprocessingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Audio): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDeblock(value: Deblock): Self = StObject.set(x, "deblock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop(value: Crop): Self = this.set("crop", value.asInstanceOf[js.Any])
+    def setDeblockUndefined: Self = StObject.set(x, "deblock", js.undefined)
     
     @scala.inline
-    def deleteCrop: Self = this.set("crop", js.undefined)
+    def setDenoise(value: Denoise): Self = StObject.set(x, "denoise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeblock(value: Deblock): Self = this.set("deblock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeblock: Self = this.set("deblock", js.undefined)
-    
-    @scala.inline
-    def setDenoise(value: Denoise): Self = this.set("denoise", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDenoise: Self = this.set("denoise", js.undefined)
+    def setDenoiseUndefined: Self = StObject.set(x, "denoise", js.undefined)
   }
 }

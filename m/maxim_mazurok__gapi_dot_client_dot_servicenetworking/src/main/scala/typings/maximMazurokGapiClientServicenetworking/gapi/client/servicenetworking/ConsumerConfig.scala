@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsumerConfig extends js.Object {
+trait ConsumerConfig extends StObject {
   
   /** Export custom routes flag value for peering from consumer to producer. */
   var consumerExportCustomRoutes: js.UndefOr[Boolean] = js.native
@@ -49,81 +50,69 @@ object ConsumerConfig {
   }
   
   @scala.inline
-  implicit class ConsumerConfigOps[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
+  implicit class ConsumerConfigMutableBuilder[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerExportCustomRoutes(value: Boolean): Self = StObject.set(x, "consumerExportCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsumerExportCustomRoutesUndefined: Self = StObject.set(x, "consumerExportCustomRoutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsumerExportSubnetRoutesWithPublicIp(value: Boolean): Self = StObject.set(x, "consumerExportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerExportCustomRoutes(value: Boolean): Self = this.set("consumerExportCustomRoutes", value.asInstanceOf[js.Any])
+    def setConsumerExportSubnetRoutesWithPublicIpUndefined: Self = StObject.set(x, "consumerExportSubnetRoutesWithPublicIp", js.undefined)
     
     @scala.inline
-    def deleteConsumerExportCustomRoutes: Self = this.set("consumerExportCustomRoutes", js.undefined)
+    def setConsumerImportCustomRoutes(value: Boolean): Self = StObject.set(x, "consumerImportCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerExportSubnetRoutesWithPublicIp(value: Boolean): Self = this.set("consumerExportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
+    def setConsumerImportCustomRoutesUndefined: Self = StObject.set(x, "consumerImportCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteConsumerExportSubnetRoutesWithPublicIp: Self = this.set("consumerExportSubnetRoutesWithPublicIp", js.undefined)
+    def setConsumerImportSubnetRoutesWithPublicIp(value: Boolean): Self = StObject.set(x, "consumerImportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerImportCustomRoutes(value: Boolean): Self = this.set("consumerImportCustomRoutes", value.asInstanceOf[js.Any])
+    def setConsumerImportSubnetRoutesWithPublicIpUndefined: Self = StObject.set(x, "consumerImportSubnetRoutesWithPublicIp", js.undefined)
     
     @scala.inline
-    def deleteConsumerImportCustomRoutes: Self = this.set("consumerImportCustomRoutes", js.undefined)
+    def setProducerExportCustomRoutes(value: Boolean): Self = StObject.set(x, "producerExportCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsumerImportSubnetRoutesWithPublicIp(value: Boolean): Self = this.set("consumerImportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
+    def setProducerExportCustomRoutesUndefined: Self = StObject.set(x, "producerExportCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteConsumerImportSubnetRoutesWithPublicIp: Self = this.set("consumerImportSubnetRoutesWithPublicIp", js.undefined)
+    def setProducerExportSubnetRoutesWithPublicIp(value: Boolean): Self = StObject.set(x, "producerExportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerExportCustomRoutes(value: Boolean): Self = this.set("producerExportCustomRoutes", value.asInstanceOf[js.Any])
+    def setProducerExportSubnetRoutesWithPublicIpUndefined: Self = StObject.set(x, "producerExportSubnetRoutesWithPublicIp", js.undefined)
     
     @scala.inline
-    def deleteProducerExportCustomRoutes: Self = this.set("producerExportCustomRoutes", js.undefined)
+    def setProducerImportCustomRoutes(value: Boolean): Self = StObject.set(x, "producerImportCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerExportSubnetRoutesWithPublicIp(value: Boolean): Self = this.set("producerExportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
+    def setProducerImportCustomRoutesUndefined: Self = StObject.set(x, "producerImportCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteProducerExportSubnetRoutesWithPublicIp: Self = this.set("producerExportSubnetRoutesWithPublicIp", js.undefined)
+    def setProducerImportSubnetRoutesWithPublicIp(value: Boolean): Self = StObject.set(x, "producerImportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerImportCustomRoutes(value: Boolean): Self = this.set("producerImportCustomRoutes", value.asInstanceOf[js.Any])
+    def setProducerImportSubnetRoutesWithPublicIpUndefined: Self = StObject.set(x, "producerImportSubnetRoutesWithPublicIp", js.undefined)
     
     @scala.inline
-    def deleteProducerImportCustomRoutes: Self = this.set("producerImportCustomRoutes", js.undefined)
+    def setProducerNetwork(value: String): Self = StObject.set(x, "producerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerImportSubnetRoutesWithPublicIp(value: Boolean): Self = this.set("producerImportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
+    def setProducerNetworkUndefined: Self = StObject.set(x, "producerNetwork", js.undefined)
     
     @scala.inline
-    def deleteProducerImportSubnetRoutesWithPublicIp: Self = this.set("producerImportSubnetRoutesWithPublicIp", js.undefined)
+    def setReservedRanges(value: js.Array[GoogleCloudServicenetworkingV1ConsumerConfigReservedRange]): Self = StObject.set(x, "reservedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerNetwork(value: String): Self = this.set("producerNetwork", value.asInstanceOf[js.Any])
+    def setReservedRangesUndefined: Self = StObject.set(x, "reservedRanges", js.undefined)
     
     @scala.inline
-    def deleteProducerNetwork: Self = this.set("producerNetwork", js.undefined)
-    
-    @scala.inline
-    def setReservedRangesVarargs(value: GoogleCloudServicenetworkingV1ConsumerConfigReservedRange*): Self = this.set("reservedRanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setReservedRanges(value: js.Array[GoogleCloudServicenetworkingV1ConsumerConfigReservedRange]): Self = this.set("reservedRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedRanges: Self = this.set("reservedRanges", js.undefined)
+    def setReservedRangesVarargs(value: GoogleCloudServicenetworkingV1ConsumerConfigReservedRange*): Self = StObject.set(x, "reservedRanges", js.Array(value :_*))
   }
 }

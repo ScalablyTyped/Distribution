@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InstalledExtensionStateIssueType extends js.Object
+sealed trait InstalledExtensionStateIssueType extends StObject
 @JSImport("vso-node-api/interfaces/ExtensionManagementInterfaces", "InstalledExtensionStateIssueType")
 @js.native
-object InstalledExtensionStateIssueType extends js.Object {
+object InstalledExtensionStateIssueType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InstalledExtensionStateIssueType with Double] = js.native
@@ -19,14 +19,12 @@ object InstalledExtensionStateIssueType extends js.Object {
     */
   @js.native
   sealed trait Error extends InstalledExtensionStateIssueType
-  /* 1 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 1 */ val Error: typings.vsoNodeApi.extensionManagementInterfacesMod.InstalledExtensionStateIssueType.Error with Double = js.native
   
   /**
     * Represents an installation warning, for example an implicit demand not supported
     */
   @js.native
   sealed trait Warning extends InstalledExtensionStateIssueType
-  /* 0 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
+  /* 0 */ val Warning: typings.vsoNodeApi.extensionManagementInterfacesMod.InstalledExtensionStateIssueType.Warning with Double = js.native
 }

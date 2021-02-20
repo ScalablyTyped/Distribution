@@ -4,6 +4,7 @@ import typings.chromeApps.chrome.events.FilteredEvent
 import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.mdns.Service
 import typings.chromeApps.chrome.mdns.ServiceTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires Permissions: 'mdns'
   * @since Chrome 31
   */
-@JSGlobal("chrome.mdns")
-@js.native
-object mdns extends js.Object {
+object mdns {
   
   /**
     * The maximum number of service instances that will be
@@ -32,6 +31,8 @@ object mdns extends js.Object {
     * @default 2048
     * @since Chrome 44.
     */
+  @JSGlobal("chrome.mdns.MAX_SERVICE_INSTANCES_PER_EVENT")
+  @js.native
   val MAX_SERVICE_INSTANCES_PER_EVENT: integer = js.native
   
   /**
@@ -42,6 +43,8 @@ object mdns extends js.Object {
     * @since Chrome 45.
     * @param callback Callback invoked after ForceDiscovery() has started.
     */
+  @JSGlobal("chrome.mdns.forceDiscovery")
+  @js.native
   def forceDiscovery(callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -57,5 +60,7 @@ object mdns extends js.Object {
     * chrome.mdns.onServiceList.addListener(() => { },
     *  { 'serviceType': 'definitelyTyped._tcp.local' });
     */
+  @JSGlobal("chrome.mdns.onServiceList")
+  @js.native
   val onServiceList: FilteredEvent[js.Function1[/* services */ js.Array[Service], Unit], ServiceTypes] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.es6Shim
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectConstructor extends js.Object {
+trait ObjectConstructor extends StObject {
   
   /**
     * Copy the values of all of the enumerable own properties from one or more source objects to a
@@ -43,27 +44,15 @@ object ObjectConstructor {
   }
   
   @scala.inline
-  implicit class ObjectConstructorOps[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
+  implicit class ObjectConstructorMutableBuilder[Self <: ObjectConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "assign", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIs(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssign(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = this.set("assign", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIs(value: (js.Any, js.Any) => Boolean): Self = this.set("is", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetPrototypeOf(value: (js.Any, js.Any) => js.Any): Self = this.set("setPrototypeOf", js.Any.fromFunction2(value))
+    def setSetPrototypeOf(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
   }
 }

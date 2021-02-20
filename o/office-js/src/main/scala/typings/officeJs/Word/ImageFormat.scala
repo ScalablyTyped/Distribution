@@ -1,17 +1,18 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImageFormat extends js.Object
+sealed trait ImageFormat extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.ImageFormat")
 @js.native
-object ImageFormat extends js.Object {
+object ImageFormat extends StObject {
   
   @js.native
   sealed trait bmp extends ImageFormat

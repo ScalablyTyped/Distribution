@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OAuthInfoProperties extends js.Object {
+trait OAuthInfoProperties extends StObject {
   
   /**
     * The registered application id.
@@ -86,78 +87,66 @@ object OAuthInfoProperties {
   }
   
   @scala.inline
-  implicit class OAuthInfoPropertiesOps[Self <: OAuthInfoProperties] (val x: Self) extends AnyVal {
+  implicit class OAuthInfoPropertiesMutableBuilder[Self <: OAuthInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthNamespace(value: String): Self = StObject.set(x, "authNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setAuthNamespaceUndefined: Self = StObject.set(x, "authNamespace", js.undefined)
     
     @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthNamespace(value: String): Self = this.set("authNamespace", value.asInstanceOf[js.Any])
+    def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
     
     @scala.inline
-    def deleteAuthNamespace: Self = this.set("authNamespace", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: Double): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    def setMinTimeUntilExpiration(value: Double): Self = StObject.set(x, "minTimeUntilExpiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMinTimeUntilExpirationUndefined: Self = StObject.set(x, "minTimeUntilExpiration", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinTimeUntilExpiration(value: Double): Self = this.set("minTimeUntilExpiration", value.asInstanceOf[js.Any])
+    def setPopupCallbackUrl(value: String): Self = StObject.set(x, "popupCallbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinTimeUntilExpiration: Self = this.set("minTimeUntilExpiration", js.undefined)
+    def setPopupCallbackUrlUndefined: Self = StObject.set(x, "popupCallbackUrl", js.undefined)
     
     @scala.inline
-    def setPopup(value: Boolean): Self = this.set("popup", value.asInstanceOf[js.Any])
+    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
     @scala.inline
-    def deletePopup: Self = this.set("popup", js.undefined)
+    def setPopupWindowFeatures(value: String): Self = StObject.set(x, "popupWindowFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupCallbackUrl(value: String): Self = this.set("popupCallbackUrl", value.asInstanceOf[js.Any])
+    def setPopupWindowFeaturesUndefined: Self = StObject.set(x, "popupWindowFeatures", js.undefined)
     
     @scala.inline
-    def deletePopupCallbackUrl: Self = this.set("popupCallbackUrl", js.undefined)
+    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupWindowFeatures(value: String): Self = this.set("popupWindowFeatures", value.asInstanceOf[js.Any])
+    def setPortalUrlUndefined: Self = StObject.set(x, "portalUrl", js.undefined)
     
     @scala.inline
-    def deletePopupWindowFeatures: Self = this.set("popupWindowFeatures", js.undefined)
+    def setPreserveUrlHash(value: Boolean): Self = StObject.set(x, "preserveUrlHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalUrl(value: String): Self = this.set("portalUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortalUrl: Self = this.set("portalUrl", js.undefined)
-    
-    @scala.inline
-    def setPreserveUrlHash(value: Boolean): Self = this.set("preserveUrlHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveUrlHash: Self = this.set("preserveUrlHash", js.undefined)
+    def setPreserveUrlHashUndefined: Self = StObject.set(x, "preserveUrlHash", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetPartialAXTreeReque
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.GetPartialAXTreeResponse
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeRequest
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityApi extends js.Object {
+trait AccessibilityApi extends StObject {
   
   /**
     * Disables the accessibility domain.
@@ -57,33 +58,21 @@ object AccessibilityApi {
   }
   
   @scala.inline
-  implicit class AccessibilityApiOps[Self <: AccessibilityApi] (val x: Self) extends AnyVal {
+  implicit class AccessibilityApiMutableBuilder[Self <: AccessibilityApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFullAXTree(value: () => js.Promise[GetFullAXTreeResponse]): Self = StObject.set(x, "getFullAXTree", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setGetPartialAXTree(value: GetPartialAXTreeRequest => js.Promise[GetPartialAXTreeResponse]): Self = StObject.set(x, "getPartialAXTree", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFullAXTree(value: () => js.Promise[GetFullAXTreeResponse]): Self = this.set("getFullAXTree", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPartialAXTree(value: GetPartialAXTreeRequest => js.Promise[GetPartialAXTreeResponse]): Self = this.set("getPartialAXTree", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueryAXTree(value: QueryAXTreeRequest => js.Promise[QueryAXTreeResponse]): Self = this.set("queryAXTree", js.Any.fromFunction1(value))
+    def setQueryAXTree(value: QueryAXTreeRequest => js.Promise[QueryAXTreeResponse]): Self = StObject.set(x, "queryAXTree", js.Any.fromFunction1(value))
   }
 }

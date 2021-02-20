@@ -6,12 +6,13 @@ import typings.jpm.jpmStrings.start
 import typings.jpm.panelMod.PanelPosition
 import typings.std.Error
 import typings.std.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentScriptFile extends js.Object {
+trait ContentScriptFile extends StObject {
   
   var allow: js.UndefOr[`0`] = js.native
   
@@ -56,132 +57,120 @@ object ContentScriptFile {
   }
   
   @scala.inline
-  implicit class ContentScriptFileOps[Self <: ContentScriptFile] (val x: Self) extends AnyVal {
+  implicit class ContentScriptFileMutableBuilder[Self <: ContentScriptFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: `0`): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentScript(value: String | js.Array[String]): Self = StObject.set(x, "contentScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: `0`): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def setContentScriptFile(value: String | js.Array[String]): Self = StObject.set(x, "contentScriptFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
+    def setContentScriptFileUndefined: Self = StObject.set(x, "contentScriptFile", js.undefined)
     
     @scala.inline
-    def setContentScriptVarargs(value: String*): Self = this.set("contentScript", js.Array(value :_*))
+    def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
     
     @scala.inline
-    def setContentScript(value: String | js.Array[String]): Self = this.set("contentScript", value.asInstanceOf[js.Any])
+    def setContentScriptOptions(value: js.Any): Self = StObject.set(x, "contentScriptOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentScript: Self = this.set("contentScript", js.undefined)
+    def setContentScriptOptionsUndefined: Self = StObject.set(x, "contentScriptOptions", js.undefined)
     
     @scala.inline
-    def setContentScriptFileVarargs(value: String*): Self = this.set("contentScriptFile", js.Array(value :_*))
+    def setContentScriptUndefined: Self = StObject.set(x, "contentScript", js.undefined)
     
     @scala.inline
-    def setContentScriptFile(value: String | js.Array[String]): Self = this.set("contentScriptFile", value.asInstanceOf[js.Any])
+    def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
     
     @scala.inline
-    def deleteContentScriptFile: Self = this.set("contentScriptFile", js.undefined)
+    def setContentScriptWhen(value: start | ready | end): Self = StObject.set(x, "contentScriptWhen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentScriptOptions(value: js.Any): Self = this.set("contentScriptOptions", value.asInstanceOf[js.Any])
+    def setContentScriptWhenUndefined: Self = StObject.set(x, "contentScriptWhen", js.undefined)
     
     @scala.inline
-    def deleteContentScriptOptions: Self = this.set("contentScriptOptions", js.undefined)
+    def setContentStyle(value: String | js.Array[String]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentScriptWhen(value: start | ready | end): Self = this.set("contentScriptWhen", value.asInstanceOf[js.Any])
+    def setContentStyleFile(value: String | js.Array[String]): Self = StObject.set(x, "contentStyleFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentScriptWhen: Self = this.set("contentScriptWhen", js.undefined)
+    def setContentStyleFileUndefined: Self = StObject.set(x, "contentStyleFile", js.undefined)
     
     @scala.inline
-    def setContentStyleVarargs(value: String*): Self = this.set("contentStyle", js.Array(value :_*))
+    def setContentStyleFileVarargs(value: String*): Self = StObject.set(x, "contentStyleFile", js.Array(value :_*))
     
     @scala.inline
-    def setContentStyle(value: String | js.Array[String]): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
     @scala.inline
-    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    def setContentStyleVarargs(value: String*): Self = StObject.set(x, "contentStyle", js.Array(value :_*))
     
     @scala.inline
-    def setContentStyleFileVarargs(value: String*): Self = this.set("contentStyleFile", js.Array(value :_*))
+    def setContentURL(value: String | URL): Self = StObject.set(x, "contentURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentStyleFile(value: String | js.Array[String]): Self = this.set("contentStyleFile", value.asInstanceOf[js.Any])
+    def setContentURLUndefined: Self = StObject.set(x, "contentURL", js.undefined)
     
     @scala.inline
-    def deleteContentStyleFile: Self = this.set("contentStyleFile", js.undefined)
+    def setContextMenu(value: Boolean): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentURL(value: String | URL): Self = this.set("contentURL", value.asInstanceOf[js.Any])
+    def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
     @scala.inline
-    def deleteContentURL: Self = this.set("contentURL", js.undefined)
+    def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextMenu(value: Boolean): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
-    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setOnError(value: /* error */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setOnHide(value: () => _): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* error */ Error => _): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnMessage(value: /* message */ String => _): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnHide(value: () => _): Self = this.set("onHide", js.Any.fromFunction0(value))
+    def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     
     @scala.inline
-    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    def setOnShow(value: () => _): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMessage(value: /* message */ String => _): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
     @scala.inline
-    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    def setPosition(value: PanelPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShow(value: () => _): Self = this.set("onShow", js.Any.fromFunction0(value))
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: PanelPosition): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

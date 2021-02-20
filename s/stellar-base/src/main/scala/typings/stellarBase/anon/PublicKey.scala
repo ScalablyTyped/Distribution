@@ -1,12 +1,13 @@
 package typings.stellarBase.anon
 
 import typings.stellarBase.mod.KeypairType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublicKey extends js.Object {
+trait PublicKey extends StObject {
   
   var publicKey: js.UndefOr[String] = js.native
   
@@ -24,30 +25,18 @@ object PublicKey {
   }
   
   @scala.inline
-  implicit class PublicKeyOps[Self <: PublicKey] (val x: Self) extends AnyVal {
+  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretKey(value: String): Self = this.set("secretKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: KeypairType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKey(value: String): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+    def setType(value: KeypairType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

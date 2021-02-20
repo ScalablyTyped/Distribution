@@ -9,13 +9,12 @@ import typings.tensorflowTfjsCore.distTensorMod.Variable
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.engineMod.CustomGradientFunc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core/dist/gradients", JSImport.Namespace)
-@js.native
-object gradientsMod extends js.Object {
+object gradientsMod {
   
   /**
     * Overrides the gradient computation of a function `f`.
@@ -57,6 +56,8 @@ object gradientsMod extends js.Object {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "customGrad")
+  @js.native
   def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank], T] = js.native
   
   /**
@@ -93,6 +94,8 @@ object gradientsMod extends js.Object {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "grad")
+  @js.native
   def grad(f: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* x */ TensorLike | Tensor[Rank], 
     /* dy */ js.UndefOr[TensorLike | Tensor[Rank]], 
@@ -128,6 +131,8 @@ object gradientsMod extends js.Object {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "grads")
+  @js.native
   def grads(f: js.Function1[/* repeated */ Tensor[Rank], Tensor[Rank]]): js.Function2[
     /* args */ js.Array[Tensor[Rank] | TensorLike], 
     /* dy */ js.UndefOr[Tensor[Rank] | TensorLike], 
@@ -159,6 +164,8 @@ object gradientsMod extends js.Object {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "valueAndGrad")
+  @js.native
   def valueAndGrad[I /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](f: js.Function1[/* x */ I, O]): js.Function2[/* x */ I, /* dy */ js.UndefOr[O], Grad[O, I]] = js.native
   
   /**
@@ -192,6 +199,8 @@ object gradientsMod extends js.Object {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "valueAndGrads")
+  @js.native
   def valueAndGrads[O /* <: Tensor[Rank] */](f: js.Function1[/* repeated */ Tensor[Rank], O]): js.Function2[/* args */ js.Array[Tensor[Rank]], /* dy */ js.UndefOr[O], Grads[O]] = js.native
   
   /**
@@ -224,6 +233,10 @@ object gradientsMod extends js.Object {
     *
     * @doc {heading: 'Training', subheading: 'Gradients'}
     */
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "variableGrads")
+  @js.native
   def variableGrads(f: js.Function0[Scalar]): Value = js.native
+  @JSImport("@tensorflow/tfjs-core/dist/gradients", "variableGrads")
+  @js.native
   def variableGrads(f: js.Function0[Scalar], varList: js.Array[Variable[Rank]]): Value = js.native
 }

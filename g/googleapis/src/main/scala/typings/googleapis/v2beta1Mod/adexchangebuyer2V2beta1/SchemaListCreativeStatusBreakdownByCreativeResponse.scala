@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * bid reason.
   */
 @js.native
-trait SchemaListCreativeStatusBreakdownByCreativeResponse extends js.Object {
+trait SchemaListCreativeStatusBreakdownByCreativeResponse extends StObject {
   
   /**
     * List of rows, with counts of bids with a given creative status aggregated
@@ -34,33 +35,21 @@ object SchemaListCreativeStatusBreakdownByCreativeResponse {
   }
   
   @scala.inline
-  implicit class SchemaListCreativeStatusBreakdownByCreativeResponseOps[Self <: SchemaListCreativeStatusBreakdownByCreativeResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListCreativeStatusBreakdownByCreativeResponseMutableBuilder[Self <: SchemaListCreativeStatusBreakdownByCreativeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilteredBidCreativeRows(value: js.Array[SchemaFilteredBidCreativeRow]): Self = StObject.set(x, "filteredBidCreativeRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilteredBidCreativeRowsUndefined: Self = StObject.set(x, "filteredBidCreativeRows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilteredBidCreativeRowsVarargs(value: SchemaFilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value :_*))
     
     @scala.inline
-    def setFilteredBidCreativeRowsVarargs(value: SchemaFilteredBidCreativeRow*): Self = this.set("filteredBidCreativeRows", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilteredBidCreativeRows(value: js.Array[SchemaFilteredBidCreativeRow]): Self = this.set("filteredBidCreativeRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilteredBidCreativeRows: Self = this.set("filteredBidCreativeRows", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.reactNativeFbsdk.mod
 
 import typings.reactNativeFbsdk.reactNativeFbsdkStrings.`open-graph`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,39 +43,27 @@ object ShareOpenGraphContent {
   }
   
   @scala.inline
-  implicit class ShareOpenGraphContentOps[Self <: ShareOpenGraphContent] (val x: Self) extends AnyVal {
+  implicit class ShareOpenGraphContentMutableBuilder[Self <: ShareOpenGraphContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ShareOpenGraphAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
     @scala.inline
-    def setAction(value: ShareOpenGraphAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setContentType(value: `open-graph`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: `open-graph`): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewPropertyName(value: String): Self = this.set("previewPropertyName", value.asInstanceOf[js.Any])
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = this.set("commonParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommonParameters: Self = this.set("commonParameters", js.undefined)
-    
-    @scala.inline
-    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setPreviewPropertyName(value: String): Self = StObject.set(x, "previewPropertyName", value.asInstanceOf[js.Any])
   }
 }

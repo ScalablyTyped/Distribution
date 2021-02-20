@@ -3,12 +3,13 @@ package typings.mysql.mod
 import typings.mysql.mysqlBooleans.`false`
 import typings.mysql.mysqlStrings.offline
 import typings.mysql.mysqlStrings.remove
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoolCluster extends js.Object {
+trait PoolCluster extends StObject {
   
   def add(config: PoolConfig): Unit = js.native
   def add(id: String, config: PoolConfig): Unit = js.native

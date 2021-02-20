@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavingsPlansUtilizationDetail extends js.Object {
+trait SavingsPlansUtilizationDetail extends StObject {
   
   /**
     * The total amortized commitment for a Savings Plans. Includes the sum of the upfront and recurring Savings Plans fees.
@@ -41,48 +42,36 @@ object SavingsPlansUtilizationDetail {
   }
   
   @scala.inline
-  implicit class SavingsPlansUtilizationDetailOps[Self <: SavingsPlansUtilizationDetail] (val x: Self) extends AnyVal {
+  implicit class SavingsPlansUtilizationDetailMutableBuilder[Self <: SavingsPlansUtilizationDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = StObject.set(x, "AmortizedCommitment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmortizedCommitmentUndefined: Self = StObject.set(x, "AmortizedCommitment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmortizedCommitment(value: SavingsPlansAmortizedCommitment): Self = this.set("AmortizedCommitment", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def deleteAmortizedCommitment: Self = this.set("AmortizedCommitment", js.undefined)
+    def setSavings(value: SavingsPlansSavings): Self = StObject.set(x, "Savings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setSavingsPlanArn(value: SavingsPlanArn): Self = StObject.set(x, "SavingsPlanArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setSavingsPlanArnUndefined: Self = StObject.set(x, "SavingsPlanArn", js.undefined)
     
     @scala.inline
-    def setSavings(value: SavingsPlansSavings): Self = this.set("Savings", value.asInstanceOf[js.Any])
+    def setSavingsUndefined: Self = StObject.set(x, "Savings", js.undefined)
     
     @scala.inline
-    def deleteSavings: Self = this.set("Savings", js.undefined)
+    def setUtilization(value: SavingsPlansUtilization): Self = StObject.set(x, "Utilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSavingsPlanArn(value: SavingsPlanArn): Self = this.set("SavingsPlanArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSavingsPlanArn: Self = this.set("SavingsPlanArn", js.undefined)
-    
-    @scala.inline
-    def setUtilization(value: SavingsPlansUtilization): Self = this.set("Utilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtilization: Self = this.set("Utilization", js.undefined)
+    def setUtilizationUndefined: Self = StObject.set(x, "Utilization", js.undefined)
   }
 }

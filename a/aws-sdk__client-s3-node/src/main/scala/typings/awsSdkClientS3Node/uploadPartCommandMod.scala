@@ -8,14 +8,14 @@ import typings.awsSdkClientS3Node.typesUploadPartOutputMod.UploadPartOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/commands/UploadPartCommand", JSImport.Namespace)
-@js.native
-object uploadPartCommandMod extends js.Object {
+object uploadPartCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-node/commands/UploadPartCommand", "UploadPartCommand")
   @js.native
   class UploadPartCommand protected () extends Command[
           InputTypesUnion, 

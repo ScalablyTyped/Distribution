@@ -1,11 +1,12 @@
 package typings.azureArmResource.resourceModelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourcesMoveInfo extends js.Object {
+trait ResourcesMoveInfo extends StObject {
   
   /**
     * The IDs of the resources.
@@ -26,33 +27,21 @@ object ResourcesMoveInfo {
   }
   
   @scala.inline
-  implicit class ResourcesMoveInfoOps[Self <: ResourcesMoveInfo] (val x: Self) extends AnyVal {
+  implicit class ResourcesMoveInfoMutableBuilder[Self <: ResourcesMoveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
+    def setTargetResourceGroup(value: String): Self = StObject.set(x, "targetResourceGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: js.Array[String]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
-    
-    @scala.inline
-    def setTargetResourceGroup(value: String): Self = this.set("targetResourceGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetResourceGroup: Self = this.set("targetResourceGroup", js.undefined)
+    def setTargetResourceGroupUndefined: Self = StObject.set(x, "targetResourceGroup", js.undefined)
   }
 }

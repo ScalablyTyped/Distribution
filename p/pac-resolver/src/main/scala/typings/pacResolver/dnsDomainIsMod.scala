@@ -1,12 +1,13 @@
 package typings.pacResolver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pac-resolver/dist/dnsDomainIs", JSImport.Namespace)
-@js.native
-object dnsDomainIsMod extends js.Object {
+object dnsDomainIsMod {
   
+  @JSImport("pac-resolver/dist/dnsDomainIs", JSImport.Default)
+  @js.native
   def default(host: String, domain: String): Boolean = js.native
 }

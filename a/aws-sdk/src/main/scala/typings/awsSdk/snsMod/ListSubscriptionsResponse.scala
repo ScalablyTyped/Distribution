@@ -1,11 +1,12 @@
 package typings.awsSdk.snsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListSubscriptionsResponse extends js.Object {
+trait ListSubscriptionsResponse extends StObject {
   
   /**
     * Token to pass along to the next ListSubscriptions request. This element is returned if there are more subscriptions to retrieve.
@@ -26,33 +27,21 @@ object ListSubscriptionsResponse {
   }
   
   @scala.inline
-  implicit class ListSubscriptionsResponseOps[Self <: ListSubscriptionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListSubscriptionsResponseMutableBuilder[Self <: ListSubscriptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: nextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscriptions(value: SubscriptionsList): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: nextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = this.set("Subscriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptions(value: SubscriptionsList): Self = this.set("Subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptions: Self = this.set("Subscriptions", js.undefined)
+    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsDecimalOptions extends js.Object {
+trait IsDecimalOptions extends StObject {
   
   var decimal_digits: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object IsDecimalOptions {
   }
   
   @scala.inline
-  implicit class IsDecimalOptionsOps[Self <: IsDecimalOptions] (val x: Self) extends AnyVal {
+  implicit class IsDecimalOptionsMutableBuilder[Self <: IsDecimalOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimal_digits(value: String): Self = StObject.set(x, "decimal_digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimal_digitsUndefined: Self = StObject.set(x, "decimal_digits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce_decimal(value: Boolean): Self = StObject.set(x, "force_decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal_digits(value: String): Self = this.set("decimal_digits", value.asInstanceOf[js.Any])
+    def setForce_decimalUndefined: Self = StObject.set(x, "force_decimal", js.undefined)
     
     @scala.inline
-    def deleteDecimal_digits: Self = this.set("decimal_digits", js.undefined)
+    def setLocale(value: AlphanumericLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForce_decimal(value: Boolean): Self = this.set("force_decimal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForce_decimal: Self = this.set("force_decimal", js.undefined)
-    
-    @scala.inline
-    def setLocale(value: AlphanumericLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

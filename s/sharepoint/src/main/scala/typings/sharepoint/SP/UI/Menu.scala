@@ -1,12 +1,13 @@
 package typings.sharepoint.SP.UI
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Menu extends js.Object {
+trait Menu extends StObject {
   
   def addMenuItem(
     text: String,
@@ -61,39 +62,27 @@ object Menu {
   }
   
   @scala.inline
-  implicit class MenuOps[Self <: Menu] (val x: Self) extends AnyVal {
+  implicit class MenuMutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMenuItem(value: (String, String, String, String, Double, String, String) => HTMLElement): Self = StObject.set(x, "addMenuItem", js.Any.fromFunction7(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSeparator(value: () => Unit): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddSubMenu(value: (String, String, String, Double, String, String) => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setAddMenuItem(value: (String, String, String, String, Double, String, String) => HTMLElement): Self = this.set("addMenuItem", js.Any.fromFunction7(value))
+    def setHideIcons(value: () => Unit): Self = StObject.set(x, "hideIcons", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddSeparator(value: () => Unit): Self = this.set("addSeparator", js.Any.fromFunction0(value))
+    def setShow(value: (HTMLElement, Boolean, Boolean, Double) => Unit): Self = StObject.set(x, "show", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAddSubMenu(value: (String, String, String, Double, String, String) => Menu): Self = this.set("addSubMenu", js.Any.fromFunction6(value))
+    def setShowFilterMenu(value: (HTMLElement, Boolean, Boolean, Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "showFilterMenu", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setHideIcons(value: () => Unit): Self = this.set("hideIcons", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShow(value: (HTMLElement, Boolean, Boolean, Double) => Unit): Self = this.set("show", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setShowFilterMenu(value: (HTMLElement, Boolean, Boolean, Double, Boolean, Boolean) => Unit): Self = this.set("showFilterMenu", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setShowIcons(value: () => Unit): Self = this.set("showIcons", js.Any.fromFunction0(value))
+    def setShowIcons(value: () => Unit): Self = StObject.set(x, "showIcons", js.Any.fromFunction0(value))
   }
 }

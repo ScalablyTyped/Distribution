@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trajectory extends js.Object {
+trait Trajectory extends StObject {
   
   var _points: js.Any = js.native
   
@@ -66,39 +67,27 @@ object Trajectory {
   }
   
   @scala.inline
-  implicit class TrajectoryOps[Self <: Trajectory] (val x: Self) extends AnyVal {
+  implicit class TrajectoryMutableBuilder[Self <: Trajectory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: DeepImmutable[Vector3] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResampleAtTargetResolution(value: Double => Trajectory): Self = StObject.set(x, "resampleAtTargetResolution", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_points(value: js.Any): Self = this.set("_points", value.asInstanceOf[js.Any])
+    def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_segmentLength(value: js.Any): Self = this.set("_segmentLength", value.asInstanceOf[js.Any])
+    def setTokenize(value: DeepImmutable[js.Array[Vector3]] => js.Array[Double]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: DeepImmutable[Vector3] => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def set_points(value: js.Any): Self = StObject.set(x, "_points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResampleAtTargetResolution(value: Double => Trajectory): Self = this.set("resampleAtTargetResolution", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSerialize(value: () => String): Self = this.set("serialize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTokenize(value: DeepImmutable[js.Array[Vector3]] => js.Array[Double]): Self = this.set("tokenize", js.Any.fromFunction1(value))
+    def set_segmentLength(value: js.Any): Self = StObject.set(x, "_segmentLength", value.asInstanceOf[js.Any])
   }
 }

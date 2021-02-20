@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILanguage extends js.Object {
+trait ILanguage extends StObject {
   
   var displayName: String = js.native
   
@@ -24,30 +25,18 @@ object ILanguage {
   }
   
   @scala.inline
-  implicit class ILanguageOps[Self <: ILanguage] (val x: Self) extends AnyVal {
+  implicit class ILanguageMutableBuilder[Self <: ILanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguageTag(value: String): Self = this.set("languageTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNativeName(value: String): Self = this.set("nativeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }
 }

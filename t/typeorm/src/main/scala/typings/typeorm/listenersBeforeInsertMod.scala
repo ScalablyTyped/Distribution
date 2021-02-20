@@ -1,13 +1,14 @@
 package typings.typeorm
 
 import typings.std.PropertyDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/decorator/listeners/BeforeInsert", JSImport.Namespace)
-@js.native
-object listenersBeforeInsertMod extends js.Object {
+object listenersBeforeInsertMod {
   
+  @JSImport("typeorm/decorator/listeners/BeforeInsert", "BeforeInsert")
+  @js.native
   def BeforeInsert(): PropertyDecorator = js.native
 }

@@ -1,11 +1,12 @@
 package typings.reactVirtualized.esTableMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiSortOptions extends js.Object {
+trait MultiSortOptions extends StObject {
   
   var defaultSortBy: js.UndefOr[js.Array[String]] = js.native
   
@@ -20,33 +21,21 @@ object MultiSortOptions {
   }
   
   @scala.inline
-  implicit class MultiSortOptionsOps[Self <: MultiSortOptions] (val x: Self) extends AnyVal {
+  implicit class MultiSortOptionsMutableBuilder[Self <: MultiSortOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSortBy(value: js.Array[String]): Self = StObject.set(x, "defaultSortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSortByUndefined: Self = StObject.set(x, "defaultSortBy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultSortByVarargs(value: String*): Self = StObject.set(x, "defaultSortBy", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultSortByVarargs(value: String*): Self = this.set("defaultSortBy", js.Array(value :_*))
+    def setDefaultSortDirection(value: SortDirectionMap): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSortBy(value: js.Array[String]): Self = this.set("defaultSortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultSortBy: Self = this.set("defaultSortBy", js.undefined)
-    
-    @scala.inline
-    def setDefaultSortDirection(value: SortDirectionMap): Self = this.set("defaultSortDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultSortDirection: Self = this.set("defaultSortDirection", js.undefined)
+    def setDefaultSortDirectionUndefined: Self = StObject.set(x, "defaultSortDirection", js.undefined)
   }
 }

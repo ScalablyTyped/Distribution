@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object ComposeTransactionParams {
   }
   
   @scala.inline
-  implicit class ComposeTransactionParamsOps[Self <: ComposeTransactionParams] (val x: Self) extends AnyVal {
+  implicit class ComposeTransactionParamsMutableBuilder[Self <: ComposeTransactionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOutputs(value: js.Array[Output]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setCoin(value: String): Self = this.set("coin", value.asInstanceOf[js.Any])
+    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputsVarargs(value: Output*): Self = this.set("outputs", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutputs(value: js.Array[Output]): Self = this.set("outputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPush(value: Boolean): Self = this.set("push", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
   }
 }

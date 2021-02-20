@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoTriggerIssue extends js.Object {
+trait AutoTriggerIssue extends StObject {
   
   var issue: Issue = js.native
   
@@ -32,33 +33,21 @@ object AutoTriggerIssue {
   }
   
   @scala.inline
-  implicit class AutoTriggerIssueOps[Self <: AutoTriggerIssue] (val x: Self) extends AnyVal {
+  implicit class AutoTriggerIssueMutableBuilder[Self <: AutoTriggerIssue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIssueSource(value: IssueSource): Self = StObject.set(x, "issueSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssue(value: Issue): Self = this.set("issue", value.asInstanceOf[js.Any])
+    def setReleaseDefinitionReference(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinitionReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssueSource(value: IssueSource): Self = this.set("issueSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject(value: ProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseDefinitionReference(value: ReleaseDefinitionShallowReference): Self = this.set("releaseDefinitionReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseTriggerType(value: ReleaseTriggerType): Self = this.set("releaseTriggerType", value.asInstanceOf[js.Any])
+    def setReleaseTriggerType(value: ReleaseTriggerType): Self = StObject.set(x, "releaseTriggerType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownshiftState[Item] extends js.Object {
+trait DownshiftState[Item] extends StObject {
   
   var highlightedIndex: Double | Null = js.native
   
@@ -24,39 +25,27 @@ object DownshiftState {
   }
   
   @scala.inline
-  implicit class DownshiftStateOps[Self <: DownshiftState[_], Item] (val x: Self with DownshiftState[Item]) extends AnyVal {
+  implicit class DownshiftStateMutableBuilder[Self <: DownshiftState[_], Item] (val x: Self with DownshiftState[Item]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightedIndexNull: Self = StObject.set(x, "highlightedIndex", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def setInputValueNull: Self = StObject.set(x, "inputValue", null)
     
     @scala.inline
-    def setHighlightedIndex(value: Double): Self = this.set("highlightedIndex", value.asInstanceOf[js.Any])
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightedIndexNull: Self = this.set("highlightedIndex", null)
+    def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputValue(value: String): Self = this.set("inputValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputValueNull: Self = this.set("inputValue", null)
-    
-    @scala.inline
-    def setSelectedItem(value: Item): Self = this.set("selectedItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedItemNull: Self = this.set("selectedItem", null)
+    def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
   }
 }

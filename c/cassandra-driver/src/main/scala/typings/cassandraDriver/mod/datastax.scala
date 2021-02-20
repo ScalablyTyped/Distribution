@@ -4,61 +4,81 @@ import typings.cassandraDriver.graphMod.graph.EnumValue
 import typings.cassandraDriver.typesMod.types.ResultSet
 import typings.node.Buffer
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "datastax")
-@js.native
-object datastax extends js.Object {
+object datastax {
   
-  @js.native
-  object graph extends js.Object {
+  object graph {
     
-    def asDouble(value: Double): js.Object = js.native
-    
-    def asFloat(value: Double): js.Object = js.native
-    
-    def asInt(value: Double): js.Object = js.native
-    
-    def asTimestamp(value: Date): js.Object = js.native
-    
-    def asUdt(value: js.Object): js.Object = js.native
-    
+    @JSImport("cassandra-driver", "datastax.graph.GraphResultSet")
     @js.native
     class GraphResultSet protected ()
       extends typings.cassandraDriver.datastaxMod.datastax.graph.GraphResultSet {
       def this(rs: ResultSet) = this()
     }
     
+    @JSImport("cassandra-driver", "datastax.graph.asDouble")
     @js.native
-    object direction extends js.Object {
+    def asDouble(value: Double): js.Object = js.native
+    
+    @JSImport("cassandra-driver", "datastax.graph.asFloat")
+    @js.native
+    def asFloat(value: Double): js.Object = js.native
+    
+    @JSImport("cassandra-driver", "datastax.graph.asInt")
+    @js.native
+    def asInt(value: Double): js.Object = js.native
+    
+    @JSImport("cassandra-driver", "datastax.graph.asTimestamp")
+    @js.native
+    def asTimestamp(value: Date): js.Object = js.native
+    
+    @JSImport("cassandra-driver", "datastax.graph.asUdt")
+    @js.native
+    def asUdt(value: js.Object): js.Object = js.native
+    
+    object direction {
       
+      @JSImport("cassandra-driver", "datastax.graph.direction.both")
+      @js.native
       val both: EnumValue = js.native
       
       // `in` is a reserved word
-      @JSName("in_")
+      @JSImport("cassandra-driver", "datastax.graph.direction.in_")
+      @js.native
       val in: EnumValue = js.native
       
+      @JSImport("cassandra-driver", "datastax.graph.direction.out")
+      @js.native
       val out: EnumValue = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("cassandra-driver", "datastax.graph.t.id")
+      @js.native
       val id: EnumValue = js.native
       
+      @JSImport("cassandra-driver", "datastax.graph.t.key")
+      @js.native
       val key: EnumValue = js.native
       
+      @JSImport("cassandra-driver", "datastax.graph.t.label")
+      @js.native
       val label: EnumValue = js.native
       
+      @JSImport("cassandra-driver", "datastax.graph.t.value")
+      @js.native
       val value: EnumValue = js.native
     }
   }
   
-  @js.native
-  object search extends js.Object {
+  object search {
     
+    @JSImport("cassandra-driver", "datastax.search.DateRange")
     @js.native
     class DateRange protected ()
       extends typings.cassandraDriver.datastaxMod.datastax.search.DateRange {
@@ -67,31 +87,44 @@ object datastax extends js.Object {
         upperBound: typings.cassandraDriver.searchMod.search.DateRangeBound
       ) = this()
     }
-    /* static members */
-    @js.native
-    object DateRange extends js.Object {
+    object DateRange {
       
+      /* static member */
+      @JSImport("cassandra-driver", "datastax.search.DateRange.fromBuffer")
+      @js.native
       def fromBuffer(value: Buffer): typings.cassandraDriver.searchMod.search.DateRange = js.native
       
+      /* static member */
+      @JSImport("cassandra-driver", "datastax.search.DateRange.fromString")
+      @js.native
       def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRange = js.native
     }
     
+    @JSImport("cassandra-driver", "datastax.search.DateRangeBound")
     @js.native
     class DateRangeBound ()
       extends typings.cassandraDriver.datastaxMod.datastax.search.DateRangeBound
-    /* static members */
-    @js.native
-    object DateRangeBound extends js.Object {
+    object DateRangeBound {
       
+      /* static member */
+      @JSImport("cassandra-driver", "datastax.search.DateRangeBound.fromString")
+      @js.native
       def fromString(value: String): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
       
+      /* static member */
+      @JSImport("cassandra-driver", "datastax.search.DateRangeBound.toLowerBound")
+      @js.native
       def toLowerBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
       
+      /* static member */
+      @JSImport("cassandra-driver", "datastax.search.DateRangeBound.toUpperBound")
+      @js.native
       def toUpperBound(bound: typings.cassandraDriver.searchMod.search.DateRangeBound): typings.cassandraDriver.searchMod.search.DateRangeBound = js.native
     }
     
+    @JSImport("cassandra-driver", "datastax.search.dateRangePrecision")
     @js.native
-    object dateRangePrecision extends js.Object {
+    object dateRangePrecision extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[

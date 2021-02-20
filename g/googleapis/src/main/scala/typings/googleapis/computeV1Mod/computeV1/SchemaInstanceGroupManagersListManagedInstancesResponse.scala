@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupManagersListManagedInstancesResponse extends js.Object {
+trait SchemaInstanceGroupManagersListManagedInstancesResponse extends StObject {
   
   /**
     * [Output Only] The list of instances in the managed instance group.
@@ -21,27 +22,15 @@ object SchemaInstanceGroupManagersListManagedInstancesResponse {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagersListManagedInstancesResponseOps[Self <: SchemaInstanceGroupManagersListManagedInstancesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagersListManagedInstancesResponseMutableBuilder[Self <: SchemaInstanceGroupManagersListManagedInstancesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagedInstances(value: js.Array[SchemaManagedInstance]): Self = StObject.set(x, "managedInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedInstancesUndefined: Self = StObject.set(x, "managedInstances", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setManagedInstancesVarargs(value: SchemaManagedInstance*): Self = this.set("managedInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setManagedInstances(value: js.Array[SchemaManagedInstance]): Self = this.set("managedInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedInstances: Self = this.set("managedInstances", js.undefined)
+    def setManagedInstancesVarargs(value: SchemaManagedInstance*): Self = StObject.set(x, "managedInstances", js.Array(value :_*))
   }
 }

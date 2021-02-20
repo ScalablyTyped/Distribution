@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RealmSelector extends js.Object {
+trait RealmSelector extends StObject {
   
   /** List of realms to match. */
   var realms: js.UndefOr[js.Array[String]] = js.native
@@ -19,27 +20,15 @@ object RealmSelector {
   }
   
   @scala.inline
-  implicit class RealmSelectorOps[Self <: RealmSelector] (val x: Self) extends AnyVal {
+  implicit class RealmSelectorMutableBuilder[Self <: RealmSelector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRealms(value: js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRealmsUndefined: Self = StObject.set(x, "realms", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRealmsVarargs(value: String*): Self = this.set("realms", js.Array(value :_*))
-    
-    @scala.inline
-    def setRealms(value: js.Array[String]): Self = this.set("realms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRealms: Self = this.set("realms", js.undefined)
+    def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
   }
 }

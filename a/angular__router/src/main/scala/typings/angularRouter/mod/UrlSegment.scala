@@ -1,13 +1,14 @@
 package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "UrlSegment")
 @js.native
-class UrlSegment protected () extends js.Object {
+class UrlSegment protected () extends StObject {
   def this(
     /** The path part of a URL segment */
   path: String,

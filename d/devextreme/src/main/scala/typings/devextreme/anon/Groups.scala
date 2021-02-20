@@ -50,12 +50,13 @@ import typings.devextreme.devextremeStrings.units
 import typings.devextreme.devextremeStrings.unlock
 import typings.devextreme.devextremeStrings.zoomLevel
 import typings.devextreme.mod.DevExpress.ui.dxDiagramCustomCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Groups extends js.Object {
+trait Groups extends StObject {
   
   var commands: js.UndefOr[
     js.Array[
@@ -76,48 +77,36 @@ object Groups {
   }
   
   @scala.inline
-  implicit class GroupsOps[Self <: Groups] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommandsVarargs(
-      value: (separator | exportSvg | exportPng | exportJpg | undo | redo | cut | copy | paste | selectAll | delete | fontName | fontSize | bold | italic | underline | fontColor | lineColor | fillColor | textAlignLeft | textAlignCenter | textAlignRight | lock | unlock | sendToBack | bringToFront | insertShapeImage | editShapeImage | deleteShapeImage | connectorLineType | connectorLineStart | connectorLineEnd | layoutTreeTopToBottom | layoutTreeBottomToTop | layoutTreeLeftToRight | layoutTreeRightToLeft | layoutLayeredTopToBottom | layoutLayeredBottomToTop | layoutLayeredLeftToRight | layoutLayeredRightToLeft | fullScreen | zoomLevel | showGrid | snapToGrid | gridSize | units | pageSize | pageOrientation | pageColor | dxDiagramCustomCommand)*
-    ): Self = this.set("commands", js.Array(value :_*))
+  implicit class GroupsMutableBuilder[Self <: Groups] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCommands(
       value: js.Array[
           separator | exportSvg | exportPng | exportJpg | undo | redo | cut | copy | paste | selectAll | delete | fontName | fontSize | bold | italic | underline | fontColor | lineColor | fillColor | textAlignLeft | textAlignCenter | textAlignRight | lock | unlock | sendToBack | bringToFront | insertShapeImage | editShapeImage | deleteShapeImage | connectorLineType | connectorLineStart | connectorLineEnd | layoutTreeTopToBottom | layoutTreeBottomToTop | layoutTreeLeftToRight | layoutTreeRightToLeft | layoutLayeredTopToBottom | layoutLayeredBottomToTop | layoutLayeredLeftToRight | layoutLayeredRightToLeft | fullScreen | zoomLevel | showGrid | snapToGrid | gridSize | units | pageSize | pageOrientation | pageColor | dxDiagramCustomCommand
         ]
-    ): Self = this.set("commands", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommands: Self = this.set("commands", js.undefined)
+    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
     @scala.inline
-    def setGroupsVarargs(value: Title*): Self = this.set("groups", js.Array(value :_*))
+    def setCommandsVarargs(
+      value: (separator | exportSvg | exportPng | exportJpg | undo | redo | cut | copy | paste | selectAll | delete | fontName | fontSize | bold | italic | underline | fontColor | lineColor | fillColor | textAlignLeft | textAlignCenter | textAlignRight | lock | unlock | sendToBack | bringToFront | insertShapeImage | editShapeImage | deleteShapeImage | connectorLineType | connectorLineStart | connectorLineEnd | layoutTreeTopToBottom | layoutTreeBottomToTop | layoutTreeLeftToRight | layoutTreeRightToLeft | layoutLayeredTopToBottom | layoutLayeredBottomToTop | layoutLayeredLeftToRight | layoutLayeredRightToLeft | fullScreen | zoomLevel | showGrid | snapToGrid | gridSize | units | pageSize | pageOrientation | pageColor | dxDiagramCustomCommand)*
+    ): Self = StObject.set(x, "commands", js.Array(value :_*))
     
     @scala.inline
-    def setGroups(value: js.Array[Title]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Array[Title]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setGroupsVarargs(value: Title*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

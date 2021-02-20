@@ -7,14 +7,14 @@ import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Bones/index", JSImport.Namespace)
-@js.native
-object bonesIndexMod extends js.Object {
+object bonesIndexMod {
   
+  @JSImport("babylonjs/Bones/index", "Bone")
   @js.native
   class Bone protected ()
     extends typings.babylonjs.boneMod.Bone {
@@ -84,16 +84,32 @@ object bonesIndexMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object Bone extends js.Object {
+  object Bone {
     
-    var _tmpMats: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "Bone")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "Bone._tmpMats")
+    @js.native
+    def _tmpMats: js.Any = js.native
+    @scala.inline
+    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
-    var _tmpVecs: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "Bone._tmpQuat")
+    @js.native
+    def _tmpQuat: js.Any = js.native
+    @scala.inline
+    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Bones/index", "Bone._tmpVecs")
+    @js.native
+    def _tmpVecs: js.Any = js.native
+    @scala.inline
+    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Bones/index", "BoneIKController")
   @js.native
   class BoneIKController protected ()
     extends typings.babylonjs.boneIKControllerMod.BoneIKController {
@@ -107,16 +123,32 @@ object bonesIndexMod extends js.Object {
     def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone, options: BendAxis) = this()
   }
   /* static members */
-  @js.native
-  object BoneIKController extends js.Object {
+  object BoneIKController {
     
-    var _tmpMats: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "BoneIKController")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "BoneIKController._tmpMats")
+    @js.native
+    def _tmpMats: js.Any = js.native
+    @scala.inline
+    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
-    var _tmpVecs: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "BoneIKController._tmpQuat")
+    @js.native
+    def _tmpQuat: js.Any = js.native
+    @scala.inline
+    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Bones/index", "BoneIKController._tmpVecs")
+    @js.native
+    def _tmpVecs: js.Any = js.native
+    @scala.inline
+    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Bones/index", "BoneLookController")
   @js.native
   class BoneLookController protected ()
     extends typings.babylonjs.boneLookControllerMod.BoneLookController {
@@ -143,16 +175,32 @@ object bonesIndexMod extends js.Object {
     def this(mesh: AbstractMesh, bone: typings.babylonjs.boneMod.Bone, target: Vector3, options: AdjustPitch) = this()
   }
   /* static members */
-  @js.native
-  object BoneLookController extends js.Object {
+  object BoneLookController {
     
-    var _tmpMats: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "BoneLookController")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "BoneLookController._tmpMats")
+    @js.native
+    def _tmpMats: js.Any = js.native
+    @scala.inline
+    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
-    var _tmpVecs: js.Any = js.native
+    @JSImport("babylonjs/Bones/index", "BoneLookController._tmpQuat")
+    @js.native
+    def _tmpQuat: js.Any = js.native
+    @scala.inline
+    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Bones/index", "BoneLookController._tmpVecs")
+    @js.native
+    def _tmpVecs: js.Any = js.native
+    @scala.inline
+    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Bones/index", "Skeleton")
   @js.native
   class Skeleton protected ()
     extends typings.babylonjs.skeletonMod.Skeleton {
@@ -171,9 +219,10 @@ object bonesIndexMod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object Skeleton extends js.Object {
+  object Skeleton {
     
+    @JSImport("babylonjs/Bones/index", "Skeleton.MakeAnimationAdditive")
+    @js.native
     def MakeAnimationAdditive(
       skeleton: typings.babylonjs.skeletonMod.Skeleton,
       referenceFrame: js.UndefOr[scala.Nothing],
@@ -186,6 +235,8 @@ object bonesIndexMod extends js.Object {
       * @param range defines the name of the AnimationRange belonging to the Skeleton to convert
       * @returns the original skeleton
       */
+    @JSImport("babylonjs/Bones/index", "Skeleton.MakeAnimationAdditive")
+    @js.native
     def MakeAnimationAdditive(skeleton: typings.babylonjs.skeletonMod.Skeleton, referenceFrame: Double, range: String): Nullable[typings.babylonjs.skeletonMod.Skeleton] = js.native
     
     /**
@@ -194,6 +245,8 @@ object bonesIndexMod extends js.Object {
       * @param scene defines the hosting scene
       * @returns a new skeleton
       */
+    @JSImport("babylonjs/Bones/index", "Skeleton.Parse")
+    @js.native
     def Parse(parsedSkeleton: js.Any, scene: Scene): typings.babylonjs.skeletonMod.Skeleton = js.native
   }
 }

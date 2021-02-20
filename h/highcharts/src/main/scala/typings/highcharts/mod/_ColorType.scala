@@ -1,21 +1,22 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ColorType extends js.Object
+trait _ColorType extends StObject
 object _ColorType {
   
   @scala.inline
-  def GradientColorObject(stops: js.Array[GradientColorStopObject]): _ColorType = {
+  def GradientColorObject(stops: js.Array[GradientColorStopObject]): typings.highcharts.mod.GradientColorObject = {
     val __obj = js.Dynamic.literal(stops = stops.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ColorType]
+    __obj.asInstanceOf[typings.highcharts.mod.GradientColorObject]
   }
   
   @scala.inline
-  def PatternObject(pattern: PatternOptionsObject): _ColorType = {
+  def PatternObject(pattern: PatternOptionsObject): typings.highcharts.mod.PatternObject = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ColorType]
+    __obj.asInstanceOf[typings.highcharts.mod.PatternObject]
   }
 }

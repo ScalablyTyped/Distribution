@@ -14,13 +14,14 @@ import typings.winrtUwp.winrtUwpStrings.manipulationstarted
 import typings.winrtUwp.winrtUwpStrings.manipulationupdated
 import typings.winrtUwp.winrtUwpStrings.righttapped
 import typings.winrtUwp.winrtUwpStrings.tapped
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides gesture and manipulation recognition, event listeners, and settings. */
 @js.native
-trait GestureRecognizer extends js.Object {
+trait GestureRecognizer extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

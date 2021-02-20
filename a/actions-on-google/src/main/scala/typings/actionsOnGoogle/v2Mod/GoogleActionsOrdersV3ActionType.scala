@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.FIX_ISSUE
   - typings.actionsOnGoogle.actionsOnGoogleStrings.DIRECTION
 */
-trait GoogleActionsOrdersV3ActionType extends js.Object
+trait GoogleActionsOrdersV3ActionType extends StObject
 object GoogleActionsOrdersV3ActionType {
   
   @scala.inline

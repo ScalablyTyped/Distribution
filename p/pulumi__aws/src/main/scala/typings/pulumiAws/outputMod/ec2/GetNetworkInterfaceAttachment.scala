@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNetworkInterfaceAttachment extends js.Object {
+trait GetNetworkInterfaceAttachment extends StObject {
   
   var attachmentId: String = js.native
   
@@ -24,30 +25,18 @@ object GetNetworkInterfaceAttachment {
   }
   
   @scala.inline
-  implicit class GetNetworkInterfaceAttachmentOps[Self <: GetNetworkInterfaceAttachment] (val x: Self) extends AnyVal {
+  implicit class GetNetworkInterfaceAttachmentMutableBuilder[Self <: GetNetworkInterfaceAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceIndex(value: Double): Self = StObject.set(x, "deviceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentId(value: String): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceIndex(value: Double): Self = this.set("deviceIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceOwnerId(value: String): Self = this.set("instanceOwnerId", value.asInstanceOf[js.Any])
+    def setInstanceOwnerId(value: String): Self = StObject.set(x, "instanceOwnerId", value.asInstanceOf[js.Any])
   }
 }

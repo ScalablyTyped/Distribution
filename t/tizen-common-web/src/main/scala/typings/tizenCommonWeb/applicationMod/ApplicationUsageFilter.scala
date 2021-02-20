@@ -1,12 +1,13 @@
 package typings.tizenCommonWeb.applicationMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationUsageFilter extends js.Object {
+trait ApplicationUsageFilter extends StObject {
   
   /**
     * The attribute to store the date, which is used as an upper bound for selecting data.
@@ -41,36 +42,24 @@ object ApplicationUsageFilter {
   }
   
   @scala.inline
-  implicit class ApplicationUsageFilterOps[Self <: ApplicationUsageFilter] (val x: Self) extends AnyVal {
+  implicit class ApplicationUsageFilterMutableBuilder[Self <: ApplicationUsageFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setTimeSpan(value: Double): Self = StObject.set(x, "timeSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setTimeSpan(value: Double): Self = this.set("timeSpan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeSpan: Self = this.set("timeSpan", js.undefined)
+    def setTimeSpanUndefined: Self = StObject.set(x, "timeSpan", js.undefined)
   }
 }

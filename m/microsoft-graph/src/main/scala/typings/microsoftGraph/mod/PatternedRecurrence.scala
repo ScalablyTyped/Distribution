@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatternedRecurrence extends js.Object {
+trait PatternedRecurrence extends StObject {
   
   // The frequency of an event.
   var pattern: js.UndefOr[NullableOption[RecurrencePattern]] = js.native
@@ -22,36 +23,24 @@ object PatternedRecurrence {
   }
   
   @scala.inline
-  implicit class PatternedRecurrenceOps[Self <: PatternedRecurrence] (val x: Self) extends AnyVal {
+  implicit class PatternedRecurrenceMutableBuilder[Self <: PatternedRecurrence] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPattern(value: NullableOption[RecurrencePattern]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPatternNull: Self = StObject.set(x, "pattern", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setPattern(value: NullableOption[RecurrencePattern]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setRange(value: NullableOption[RecurrenceRange]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setRangeNull: Self = StObject.set(x, "range", null)
     
     @scala.inline
-    def setPatternNull: Self = this.set("pattern", null)
-    
-    @scala.inline
-    def setRange(value: NullableOption[RecurrenceRange]): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
-    
-    @scala.inline
-    def setRangeNull: Self = this.set("range", null)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

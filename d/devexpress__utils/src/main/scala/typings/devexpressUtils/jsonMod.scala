@@ -1,19 +1,20 @@
 package typings.devexpressUtils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/utils/json", JSImport.Namespace)
-@js.native
-object jsonMod extends js.Object {
+object jsonMod {
   
+  @JSImport("@devexpress/utils/lib/utils/json", "JsonUtils")
   @js.native
-  class JsonUtils () extends js.Object
+  class JsonUtils () extends StObject
   /* static members */
-  @js.native
-  object JsonUtils extends js.Object {
+  object JsonUtils {
     
+    @JSImport("@devexpress/utils/lib/utils/json", "JsonUtils.isValid")
+    @js.native
     def isValid(json: String): Boolean = js.native
   }
 }

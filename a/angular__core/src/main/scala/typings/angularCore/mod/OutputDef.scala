@@ -4,12 +4,13 @@ import typings.angularCore.angularCoreStrings.body
 import typings.angularCore.angularCoreStrings.component
 import typings.angularCore.angularCoreStrings.document
 import typings.angularCore.angularCoreStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputDef extends js.Object {
+trait OutputDef extends StObject {
   
   var eventName: String = js.native
   
@@ -29,36 +30,24 @@ object OutputDef {
   }
   
   @scala.inline
-  implicit class OutputDefOps[Self <: OutputDef] (val x: Self) extends AnyVal {
+  implicit class OutputDefMutableBuilder[Self <: OutputDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPropName(value: String): Self = StObject.set(x, "propName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPropNameNull: Self = StObject.set(x, "propName", null)
     
     @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    def setTarget(value: window | document | body | component): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: OutputType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTargetNull: Self = StObject.set(x, "target", null)
     
     @scala.inline
-    def setPropName(value: String): Self = this.set("propName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropNameNull: Self = this.set("propName", null)
-    
-    @scala.inline
-    def setTarget(value: window | document | body | component): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetNull: Self = this.set("target", null)
+    def setType(value: OutputType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

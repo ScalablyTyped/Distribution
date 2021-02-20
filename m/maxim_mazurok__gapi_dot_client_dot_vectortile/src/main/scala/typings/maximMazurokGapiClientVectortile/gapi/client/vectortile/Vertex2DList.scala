@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vertex2DList extends js.Object {
+trait Vertex2DList extends StObject {
   
   /** List of x-offsets in local tile coordinates. */
   var xOffsets: js.UndefOr[js.Array[Double]] = js.native
@@ -22,36 +23,24 @@ object Vertex2DList {
   }
   
   @scala.inline
-  implicit class Vertex2DListOps[Self <: Vertex2DList] (val x: Self) extends AnyVal {
+  implicit class Vertex2DListMutableBuilder[Self <: Vertex2DList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setXOffsets(value: js.Array[Double]): Self = StObject.set(x, "xOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setXOffsetsUndefined: Self = StObject.set(x, "xOffsets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setXOffsetsVarargs(value: Double*): Self = StObject.set(x, "xOffsets", js.Array(value :_*))
     
     @scala.inline
-    def setXOffsetsVarargs(value: Double*): Self = this.set("xOffsets", js.Array(value :_*))
+    def setYOffsets(value: js.Array[Double]): Self = StObject.set(x, "yOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXOffsets(value: js.Array[Double]): Self = this.set("xOffsets", value.asInstanceOf[js.Any])
+    def setYOffsetsUndefined: Self = StObject.set(x, "yOffsets", js.undefined)
     
     @scala.inline
-    def deleteXOffsets: Self = this.set("xOffsets", js.undefined)
-    
-    @scala.inline
-    def setYOffsetsVarargs(value: Double*): Self = this.set("yOffsets", js.Array(value :_*))
-    
-    @scala.inline
-    def setYOffsets(value: js.Array[Double]): Self = this.set("yOffsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYOffsets: Self = this.set("yOffsets", js.undefined)
+    def setYOffsetsVarargs(value: Double*): Self = StObject.set(x, "yOffsets", js.Array(value :_*))
   }
 }

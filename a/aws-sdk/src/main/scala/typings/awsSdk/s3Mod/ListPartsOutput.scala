@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPartsOutput extends js.Object {
+trait ListPartsOutput extends StObject {
   
   /**
     * If the bucket has a lifecycle rule configured with an action to abort incomplete multipart uploads and the prefix in the lifecycle rule matches the object name in the request, then the response includes this header indicating when the initiated multipart upload will become eligible for abort operation. For more information, see Aborting Incomplete Multipart Uploads Using a Bucket Lifecycle Policy. The response will also include the x-amz-abort-rule-id header that will provide the ID of the lifecycle configuration rule that defines this action.
@@ -83,105 +84,93 @@ object ListPartsOutput {
   }
   
   @scala.inline
-  implicit class ListPartsOutputOps[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
+  implicit class ListPartsOutputMutableBuilder[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortDate(value: AbortDate): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbortRuleId(value: AbortRuleId): Self = StObject.set(x, "AbortRuleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortDate(value: AbortDate): Self = this.set("AbortDate", value.asInstanceOf[js.Any])
+    def setAbortRuleIdUndefined: Self = StObject.set(x, "AbortRuleId", js.undefined)
     
     @scala.inline
-    def deleteAbortDate: Self = this.set("AbortDate", js.undefined)
+    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbortRuleId(value: AbortRuleId): Self = this.set("AbortRuleId", value.asInstanceOf[js.Any])
+    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
     @scala.inline
-    def deleteAbortRuleId: Self = this.set("AbortRuleId", js.undefined)
+    def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    def setInitiatorUndefined: Self = StObject.set(x, "Initiator", js.undefined)
     
     @scala.inline
-    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiator(value: Initiator): Self = this.set("Initiator", value.asInstanceOf[js.Any])
+    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
     @scala.inline
-    def deleteInitiator: Self = this.set("Initiator", js.undefined)
+    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     @scala.inline
-    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    def setMaxParts(value: MaxParts): Self = StObject.set(x, "MaxParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    def setMaxPartsUndefined: Self = StObject.set(x, "MaxParts", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("Key", js.undefined)
+    def setNextPartNumberMarker(value: NextPartNumberMarker): Self = StObject.set(x, "NextPartNumberMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParts(value: MaxParts): Self = this.set("MaxParts", value.asInstanceOf[js.Any])
+    def setNextPartNumberMarkerUndefined: Self = StObject.set(x, "NextPartNumberMarker", js.undefined)
     
     @scala.inline
-    def deleteMaxParts: Self = this.set("MaxParts", js.undefined)
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPartNumberMarker(value: NextPartNumberMarker): Self = this.set("NextPartNumberMarker", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
     @scala.inline
-    def deleteNextPartNumberMarker: Self = this.set("NextPartNumberMarker", js.undefined)
+    def setPartNumberMarker(value: PartNumberMarker): Self = StObject.set(x, "PartNumberMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setPartNumberMarkerUndefined: Self = StObject.set(x, "PartNumberMarker", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setParts(value: Parts): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartNumberMarker(value: PartNumberMarker): Self = this.set("PartNumberMarker", value.asInstanceOf[js.Any])
+    def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
     @scala.inline
-    def deletePartNumberMarker: Self = this.set("PartNumberMarker", js.undefined)
+    def setPartsVarargs(value: Part*): Self = StObject.set(x, "Parts", js.Array(value :_*))
     
     @scala.inline
-    def setPartsVarargs(value: Part*): Self = this.set("Parts", js.Array(value :_*))
+    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParts(value: Parts): Self = this.set("Parts", value.asInstanceOf[js.Any])
+    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     
     @scala.inline
-    def deleteParts: Self = this.set("Parts", js.undefined)
+    def setStorageClass(value: StorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     
     @scala.inline
-    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    def setUploadId(value: MultipartUploadId): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
-    
-    @scala.inline
-    def setUploadId(value: MultipartUploadId): Self = this.set("UploadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadId: Self = this.set("UploadId", js.undefined)
+    def setUploadIdUndefined: Self = StObject.set(x, "UploadId", js.undefined)
   }
 }

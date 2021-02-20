@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateVpnGatewayResult extends js.Object {
+trait CreateVpnGatewayResult extends StObject {
   
   /**
     * Information about the virtual private gateway.
@@ -21,24 +22,12 @@ object CreateVpnGatewayResult {
   }
   
   @scala.inline
-  implicit class CreateVpnGatewayResultOps[Self <: CreateVpnGatewayResult] (val x: Self) extends AnyVal {
+  implicit class CreateVpnGatewayResultMutableBuilder[Self <: CreateVpnGatewayResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVpnGateway(value: VpnGateway): Self = StObject.set(x, "VpnGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVpnGateway(value: VpnGateway): Self = this.set("VpnGateway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnGateway: Self = this.set("VpnGateway", js.undefined)
+    def setVpnGatewayUndefined: Self = StObject.set(x, "VpnGateway", js.undefined)
   }
 }

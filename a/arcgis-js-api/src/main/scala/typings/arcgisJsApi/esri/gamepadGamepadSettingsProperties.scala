@@ -4,12 +4,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`forward-down`
 import typings.arcgisJsApi.arcgisJsApiStrings.`forward-up`
 import typings.arcgisJsApi.arcgisJsApiStrings.pan
 import typings.arcgisJsApi.arcgisJsApiStrings.zoom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait gamepadGamepadSettingsProperties extends js.Object {
+trait gamepadGamepadSettingsProperties extends StObject {
   
   /**
     * Use this property to explicitly select the gamepad device for map and scene navigation.
@@ -48,42 +49,30 @@ object gamepadGamepadSettingsProperties {
   }
   
   @scala.inline
-  implicit class gamepadGamepadSettingsPropertiesOps[Self <: gamepadGamepadSettingsProperties] (val x: Self) extends AnyVal {
+  implicit class gamepadGamepadSettingsPropertiesMutableBuilder[Self <: gamepadGamepadSettingsProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: GamepadInputDeviceProperties): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: GamepadInputDeviceProperties): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setMode(value: pan | zoom): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setTiltDirection(value: `forward-down` | `forward-up`): Self = StObject.set(x, "tiltDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: pan | zoom): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setTiltDirection(value: `forward-down` | `forward-up`): Self = this.set("tiltDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiltDirection: Self = this.set("tiltDirection", js.undefined)
+    def setTiltDirectionUndefined: Self = StObject.set(x, "tiltDirection", js.undefined)
   }
 }

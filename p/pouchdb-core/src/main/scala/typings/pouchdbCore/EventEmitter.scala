@@ -1,11 +1,12 @@
 package typings.pouchdbCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventEmitter extends js.Object {
+trait EventEmitter extends StObject {
   
   def addListener(event: String, listener: js.Function): this.type = js.native
   def addListener(event: js.Symbol, listener: js.Function): this.type = js.native

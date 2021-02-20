@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesUpdateBaiduChannelInputMod.Updat
 import typings.awsSdkClientPinpointBrowser.typesUpdateBaiduChannelOutputMod.UpdateBaiduChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateBaiduChannelCommand", JSImport.Namespace)
-@js.native
-object updateBaiduChannelCommandMod extends js.Object {
+object updateBaiduChannelCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/UpdateBaiduChannelCommand", "UpdateBaiduChannelCommand")
   @js.native
   class UpdateBaiduChannelCommand protected () extends Command[
           InputTypesUnion, 

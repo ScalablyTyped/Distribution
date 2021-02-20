@@ -1,11 +1,12 @@
 package typings.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentChange[T] extends js.Object {
+trait DocumentChange[T] extends StObject {
   
   val doc: QueryDocumentSnapshot[T] = js.native
   
@@ -25,30 +26,18 @@ object DocumentChange {
   }
   
   @scala.inline
-  implicit class DocumentChangeOps[Self <: DocumentChange[_], T] (val x: Self with DocumentChange[T]) extends AnyVal {
+  implicit class DocumentChangeMutableBuilder[Self <: DocumentChange[_], T] (val x: Self with DocumentChange[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoc(value: QueryDocumentSnapshot[T]): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc(value: QueryDocumentSnapshot[T]): Self = this.set("doc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewIndex(value: Double): Self = this.set("newIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldIndex(value: Double): Self = this.set("oldIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: DocumentChangeType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: DocumentChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebviewOptions extends js.Object {
+trait WebviewOptions extends StObject {
   
   /**
     * Controls whether command uris are enabled in webview content or not.
@@ -54,48 +55,36 @@ object WebviewOptions {
   }
   
   @scala.inline
-  implicit class WebviewOptionsOps[Self <: WebviewOptions] (val x: Self) extends AnyVal {
+  implicit class WebviewOptionsMutableBuilder[Self <: WebviewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableCommandUris(value: Boolean): Self = StObject.set(x, "enableCommandUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableCommandUrisUndefined: Self = StObject.set(x, "enableCommandUris", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableScripts(value: Boolean): Self = StObject.set(x, "enableScripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCommandUris(value: Boolean): Self = this.set("enableCommandUris", value.asInstanceOf[js.Any])
+    def setEnableScriptsUndefined: Self = StObject.set(x, "enableScripts", js.undefined)
     
     @scala.inline
-    def deleteEnableCommandUris: Self = this.set("enableCommandUris", js.undefined)
+    def setLocalResourceRoots(value: js.Array[Uri]): Self = StObject.set(x, "localResourceRoots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableScripts(value: Boolean): Self = this.set("enableScripts", value.asInstanceOf[js.Any])
+    def setLocalResourceRootsUndefined: Self = StObject.set(x, "localResourceRoots", js.undefined)
     
     @scala.inline
-    def deleteEnableScripts: Self = this.set("enableScripts", js.undefined)
+    def setLocalResourceRootsVarargs(value: Uri*): Self = StObject.set(x, "localResourceRoots", js.Array(value :_*))
     
     @scala.inline
-    def setLocalResourceRootsVarargs(value: Uri*): Self = this.set("localResourceRoots", js.Array(value :_*))
+    def setPortMapping(value: js.Array[WebviewPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalResourceRoots(value: js.Array[Uri]): Self = this.set("localResourceRoots", value.asInstanceOf[js.Any])
+    def setPortMappingUndefined: Self = StObject.set(x, "portMapping", js.undefined)
     
     @scala.inline
-    def deleteLocalResourceRoots: Self = this.set("localResourceRoots", js.undefined)
-    
-    @scala.inline
-    def setPortMappingVarargs(value: WebviewPortMapping*): Self = this.set("portMapping", js.Array(value :_*))
-    
-    @scala.inline
-    def setPortMapping(value: js.Array[WebviewPortMapping]): Self = this.set("portMapping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortMapping: Self = this.set("portMapping", js.undefined)
+    def setPortMappingVarargs(value: WebviewPortMapping*): Self = StObject.set(x, "portMapping", js.Array(value :_*))
   }
 }

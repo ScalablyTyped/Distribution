@@ -2,12 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaxPoolWithArgmaxAttrs extends js.Object {
+trait MaxPoolWithArgmaxAttrs extends StObject {
   
   var filterSize: (js.Tuple2[Double, Double]) | Double = js.native
   
@@ -31,30 +32,18 @@ object MaxPoolWithArgmaxAttrs {
   }
   
   @scala.inline
-  implicit class MaxPoolWithArgmaxAttrsOps[Self <: MaxPoolWithArgmaxAttrs] (val x: Self) extends AnyVal {
+  implicit class MaxPoolWithArgmaxAttrsMutableBuilder[Self <: MaxPoolWithArgmaxAttrs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeBatchInIndex(value: Boolean): Self = StObject.set(x, "includeBatchInIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = this.set("filterSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeBatchInIndex(value: Boolean): Self = this.set("includeBatchInIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = this.set("pad", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = this.set("strides", value.asInstanceOf[js.Any])
+    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

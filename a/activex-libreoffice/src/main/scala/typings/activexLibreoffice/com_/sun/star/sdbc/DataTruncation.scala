@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,33 +53,21 @@ object DataTruncation {
   }
   
   @scala.inline
-  implicit class DataTruncationOps[Self <: DataTruncation] (val x: Self) extends AnyVal {
+  implicit class DataTruncationMutableBuilder[Self <: DataTruncation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuringRead(value: Boolean): Self = StObject.set(x, "DuringRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSize(value: Double): Self = this.set("DataSize", value.asInstanceOf[js.Any])
+    def setIsParameter(value: Boolean): Self = StObject.set(x, "IsParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuringRead(value: Boolean): Self = this.set("DuringRead", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsParameter(value: Boolean): Self = this.set("IsParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransferSize(value: Double): Self = this.set("TransferSize", value.asInstanceOf[js.Any])
+    def setTransferSize(value: Double): Self = StObject.set(x, "TransferSize", value.asInstanceOf[js.Any])
   }
 }

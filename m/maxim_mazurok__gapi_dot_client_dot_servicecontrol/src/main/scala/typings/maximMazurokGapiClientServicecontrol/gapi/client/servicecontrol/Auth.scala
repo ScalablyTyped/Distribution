@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth extends js.Object {
+trait Auth extends StObject {
   
   /**
     * A list of access level resource names that allow resources to be accessed by authenticated requester. It is part of Secure GCP processing for the incoming request. An access level
@@ -56,58 +57,46 @@ object Auth {
   }
   
   @scala.inline
-  implicit class AuthOps[Self <: Auth] (val x: Self) extends AnyVal {
+  implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
     @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = this.set("accessLevels", js.Array(value :_*))
+    def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = this.set("accessLevels", value.asInstanceOf[js.Any])
+    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
     @scala.inline
-    def deleteAccessLevels: Self = this.set("accessLevels", js.undefined)
-    
-    @scala.inline
-    def setAudiencesVarargs(value: String*): Self = this.set("audiences", js.Array(value :_*))
-    
-    @scala.inline
-    def setAudiences(value: js.Array[String]): Self = this.set("audiences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
     
     @scala.inline
     def setClaims(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth with TopLevel[js.Any]
-    ): Self = this.set("claims", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClaims: Self = this.set("claims", js.undefined)
+    def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
     @scala.inline
-    def setPresenter(value: String): Self = this.set("presenter", value.asInstanceOf[js.Any])
+    def setPresenter(value: String): Self = StObject.set(x, "presenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePresenter: Self = this.set("presenter", js.undefined)
+    def setPresenterUndefined: Self = StObject.set(x, "presenter", js.undefined)
     
     @scala.inline
-    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
+    def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrincipal: Self = this.set("principal", js.undefined)
+    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
   }
 }

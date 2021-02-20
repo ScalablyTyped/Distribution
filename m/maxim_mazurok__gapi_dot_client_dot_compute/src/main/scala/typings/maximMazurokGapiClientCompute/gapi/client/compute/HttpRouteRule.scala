@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpRouteRule extends js.Object {
+trait HttpRouteRule extends StObject {
   
   /**
     * The short description conveying the intent of this routeRule.
@@ -70,63 +71,51 @@ object HttpRouteRule {
   }
   
   @scala.inline
-  implicit class HttpRouteRuleOps[Self <: HttpRouteRule] (val x: Self) extends AnyVal {
+  implicit class HttpRouteRuleMutableBuilder[Self <: HttpRouteRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaderAction(value: HttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setMatchRules(value: js.Array[HttpRouteRuleMatch]): Self = StObject.set(x, "matchRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderAction(value: HttpHeaderAction): Self = this.set("headerAction", value.asInstanceOf[js.Any])
+    def setMatchRulesUndefined: Self = StObject.set(x, "matchRules", js.undefined)
     
     @scala.inline
-    def deleteHeaderAction: Self = this.set("headerAction", js.undefined)
+    def setMatchRulesVarargs(value: HttpRouteRuleMatch*): Self = StObject.set(x, "matchRules", js.Array(value :_*))
     
     @scala.inline
-    def setMatchRulesVarargs(value: HttpRouteRuleMatch*): Self = this.set("matchRules", js.Array(value :_*))
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchRules(value: js.Array[HttpRouteRuleMatch]): Self = this.set("matchRules", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deleteMatchRules: Self = this.set("matchRules", js.undefined)
+    def setRouteAction(value: HttpRouteAction): Self = StObject.set(x, "routeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setRouteActionUndefined: Self = StObject.set(x, "routeAction", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteAction(value: HttpRouteAction): Self = this.set("routeAction", value.asInstanceOf[js.Any])
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
     @scala.inline
-    def deleteRouteAction: Self = this.set("routeAction", js.undefined)
+    def setUrlRedirect(value: HttpRedirectAction): Self = StObject.set(x, "urlRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
-    
-    @scala.inline
-    def setUrlRedirect(value: HttpRedirectAction): Self = this.set("urlRedirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRedirect: Self = this.set("urlRedirect", js.undefined)
+    def setUrlRedirectUndefined: Self = StObject.set(x, "urlRedirect", js.undefined)
   }
 }

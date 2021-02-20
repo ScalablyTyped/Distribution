@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateResourceDataSyncRequest extends js.Object {
+trait CreateResourceDataSyncRequest extends StObject {
   
   /**
     * Amazon S3 configuration details for the sync. This parameter is required if the SyncType value is SyncToDestination.
@@ -36,39 +37,27 @@ object CreateResourceDataSyncRequest {
   }
   
   @scala.inline
-  implicit class CreateResourceDataSyncRequestOps[Self <: CreateResourceDataSyncRequest] (val x: Self) extends AnyVal {
+  implicit class CreateResourceDataSyncRequestMutableBuilder[Self <: CreateResourceDataSyncRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setS3Destination(value: ResourceDataSyncS3Destination): Self = StObject.set(x, "S3Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3DestinationUndefined: Self = StObject.set(x, "S3Destination", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncName(value: ResourceDataSyncName): Self = this.set("SyncName", value.asInstanceOf[js.Any])
+    def setSyncSource(value: ResourceDataSyncSource): Self = StObject.set(x, "SyncSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Destination(value: ResourceDataSyncS3Destination): Self = this.set("S3Destination", value.asInstanceOf[js.Any])
+    def setSyncSourceUndefined: Self = StObject.set(x, "SyncSource", js.undefined)
     
     @scala.inline
-    def deleteS3Destination: Self = this.set("S3Destination", js.undefined)
+    def setSyncType(value: ResourceDataSyncType): Self = StObject.set(x, "SyncType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncSource(value: ResourceDataSyncSource): Self = this.set("SyncSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncSource: Self = this.set("SyncSource", js.undefined)
-    
-    @scala.inline
-    def setSyncType(value: ResourceDataSyncType): Self = this.set("SyncType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncType: Self = this.set("SyncType", js.undefined)
+    def setSyncTypeUndefined: Self = StObject.set(x, "SyncType", js.undefined)
   }
 }

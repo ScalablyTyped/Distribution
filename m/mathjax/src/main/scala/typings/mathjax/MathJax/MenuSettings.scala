@@ -6,12 +6,13 @@ import typings.mathjax.mathjaxStrings.PlainSource
 import typings.mathjax.mathjaxStrings.PreviewHTML
 import typings.mathjax.mathjaxStrings.SVG
 import typings.mathjax.mathjaxStrings.`HTML-CSS`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuSettings extends js.Object {
+trait MenuSettings extends StObject {
   
   var ALT: js.UndefOr[Boolean] = js.native
   
@@ -65,84 +66,72 @@ object MenuSettings {
   }
   
   @scala.inline
-  implicit class MenuSettingsOps[Self <: MenuSettings] (val x: Self) extends AnyVal {
+  implicit class MenuSettingsMutableBuilder[Self <: MenuSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALT(value: Boolean): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setALTUndefined: Self = StObject.set(x, "ALT", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCMD(value: Boolean): Self = StObject.set(x, "CMD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALT(value: Boolean): Self = this.set("ALT", value.asInstanceOf[js.Any])
+    def setCMDUndefined: Self = StObject.set(x, "CMD", js.undefined)
     
     @scala.inline
-    def deleteALT: Self = this.set("ALT", js.undefined)
+    def setCTRL(value: Boolean): Self = StObject.set(x, "CTRL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCMD(value: Boolean): Self = this.set("CMD", value.asInstanceOf[js.Any])
+    def setCTRLUndefined: Self = StObject.set(x, "CTRL", js.undefined)
     
     @scala.inline
-    def deleteCMD: Self = this.set("CMD", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCTRL(value: Boolean): Self = this.set("CTRL", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCTRL: Self = this.set("CTRL", js.undefined)
+    def setMpContext(value: Boolean): Self = StObject.set(x, "mpContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShift(value: Boolean): Self = this.set("Shift", value.asInstanceOf[js.Any])
+    def setMpContextUndefined: Self = StObject.set(x, "mpContext", js.undefined)
     
     @scala.inline
-    def deleteShift: Self = this.set("Shift", js.undefined)
+    def setMpMouse(value: Boolean): Self = StObject.set(x, "mpMouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setMpMouseUndefined: Self = StObject.set(x, "mpMouse", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setRenderer(value: `HTML-CSS` | CommonHTML | PreviewHTML | NativeMML | SVG | PlainSource): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpContext(value: Boolean): Self = this.set("mpContext", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deleteMpContext: Self = this.set("mpContext", js.undefined)
+    def setShift(value: Boolean): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpMouse(value: Boolean): Self = this.set("mpMouse", value.asInstanceOf[js.Any])
+    def setShiftUndefined: Self = StObject.set(x, "Shift", js.undefined)
     
     @scala.inline
-    def deleteMpMouse: Self = this.set("mpMouse", js.undefined)
+    def setTexHints(value: Boolean): Self = StObject.set(x, "texHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: `HTML-CSS` | CommonHTML | PreviewHTML | NativeMML | SVG | PlainSource): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setTexHintsUndefined: Self = StObject.set(x, "texHints", js.undefined)
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexHints(value: Boolean): Self = this.set("texHints", value.asInstanceOf[js.Any])
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     
     @scala.inline
-    def deleteTexHints: Self = this.set("texHints", js.undefined)
+    def setZscale(value: String): Self = StObject.set(x, "zscale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoom(value: String): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
-    
-    @scala.inline
-    def setZscale(value: String): Self = this.set("zscale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZscale: Self = this.set("zscale", js.undefined)
+    def setZscaleUndefined: Self = StObject.set(x, "zscale", js.undefined)
   }
 }

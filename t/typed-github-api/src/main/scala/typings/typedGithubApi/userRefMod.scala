@@ -12,16 +12,16 @@ import typings.typedGithubApi.typedGithubApiStrings.member
 import typings.typedGithubApi.typedGithubApiStrings.owner
 import typings.typedGithubApi.typedGithubApiStrings.pushed
 import typings.typedGithubApi.typedGithubApiStrings.updated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/user-ref", JSImport.Namespace)
-@js.native
-object userRefMod extends js.Object {
+object userRefMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserRef * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserRef * / any */ @JSImport("typed-github-api/dist/user-ref", "UserRefClass")
+  @js.native
   class UserRefClass protected () extends GitHubRef {
     def this(login: String, options: OptionsOrRef) = this()
     

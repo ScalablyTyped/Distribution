@@ -3,12 +3,13 @@ package typings.typescriptTuple.anon
 import typings.typescriptTuple.typescriptTupleStrings.equal
 import typings.typescriptTuple.typescriptTupleStrings.shorterLeft
 import typings.typescriptTuple.typescriptTupleStrings.shorterRight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FitBoth[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] extends js.Object {
+trait FitBoth[Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] extends StObject {
   
   var fitBoth: equal = js.native
   
@@ -27,30 +28,18 @@ object FitBoth {
   }
   
   @scala.inline
-  implicit class FitBothOps[Self <: FitBoth[_, _], Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] (val x: Self with (FitBoth[Left, Right])) extends AnyVal {
+  implicit class FitBothMutableBuilder[Self <: FitBoth[_, _], Left /* <: js.Array[_] */, Right /* <: js.Array[_] */] (val x: Self with (FitBoth[Left, Right])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFitBoth(value: equal): Self = StObject.set(x, "fitBoth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFitLeft(value: shorterLeft): Self = StObject.set(x, "fitLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFitRight(value: shorterRight): Self = StObject.set(x, "fitRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitBoth(value: equal): Self = this.set("fitBoth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFitLeft(value: shorterLeft): Self = this.set("fitLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFitRight(value: shorterRight): Self = this.set("fitRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnfit(value: js.Any): Self = this.set("unfit", value.asInstanceOf[js.Any])
+    def setUnfit(value: js.Any): Self = StObject.set(x, "unfit", value.asInstanceOf[js.Any])
   }
 }

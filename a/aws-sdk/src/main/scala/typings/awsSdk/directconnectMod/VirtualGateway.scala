@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGateway extends js.Object {
+trait VirtualGateway extends StObject {
   
   /**
     * The ID of the virtual private gateway.
@@ -26,30 +27,18 @@ object VirtualGateway {
   }
   
   @scala.inline
-  implicit class VirtualGatewayOps[Self <: VirtualGateway] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewayMutableBuilder[Self <: VirtualGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVirtualGatewayIdUndefined: Self = StObject.set(x, "virtualGatewayId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVirtualGatewayState(value: VirtualGatewayState): Self = StObject.set(x, "virtualGatewayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualGatewayId(value: VirtualGatewayId): Self = this.set("virtualGatewayId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualGatewayId: Self = this.set("virtualGatewayId", js.undefined)
-    
-    @scala.inline
-    def setVirtualGatewayState(value: VirtualGatewayState): Self = this.set("virtualGatewayState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualGatewayState: Self = this.set("virtualGatewayState", js.undefined)
+    def setVirtualGatewayStateUndefined: Self = StObject.set(x, "virtualGatewayState", js.undefined)
   }
 }

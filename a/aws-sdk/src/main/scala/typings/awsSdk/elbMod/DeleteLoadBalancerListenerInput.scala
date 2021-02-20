@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteLoadBalancerListenerInput extends js.Object {
+trait DeleteLoadBalancerListenerInput extends StObject {
   
   /**
     * The name of the load balancer.
@@ -26,27 +27,15 @@ object DeleteLoadBalancerListenerInput {
   }
   
   @scala.inline
-  implicit class DeleteLoadBalancerListenerInputOps[Self <: DeleteLoadBalancerListenerInput] (val x: Self) extends AnyVal {
+  implicit class DeleteLoadBalancerListenerInputMutableBuilder[Self <: DeleteLoadBalancerListenerInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadBalancerPorts(value: Ports): Self = StObject.set(x, "LoadBalancerPorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = this.set("LoadBalancerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoadBalancerPortsVarargs(value: AccessPointPort*): Self = this.set("LoadBalancerPorts", js.Array(value :_*))
-    
-    @scala.inline
-    def setLoadBalancerPorts(value: Ports): Self = this.set("LoadBalancerPorts", value.asInstanceOf[js.Any])
+    def setLoadBalancerPortsVarargs(value: AccessPointPort*): Self = StObject.set(x, "LoadBalancerPorts", js.Array(value :_*))
   }
 }

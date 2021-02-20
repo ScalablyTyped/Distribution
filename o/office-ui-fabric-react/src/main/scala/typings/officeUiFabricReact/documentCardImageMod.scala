@@ -2,13 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.documentCardImageTypesMod.IDocumentCardImageProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardImage", JSImport.Namespace)
-@js.native
-object documentCardImageMod extends js.Object {
+object documentCardImageMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardImage", "DocumentCardImage")
+  @js.native
   val DocumentCardImage: FunctionComponent[IDocumentCardImageProps] = js.native
 }

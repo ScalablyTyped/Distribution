@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdCheckInformationInput extends js.Object {
+trait IdCheckInformationInput extends StObject {
   
   /**
     * An object that specifies recipient address information and how it is displayed.
@@ -36,42 +37,30 @@ object IdCheckInformationInput {
   }
   
   @scala.inline
-  implicit class IdCheckInformationInputOps[Self <: IdCheckInformationInput] (val x: Self) extends AnyVal {
+  implicit class IdCheckInformationInputMutableBuilder[Self <: IdCheckInformationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressInformationInput(value: AddressInformationInput): Self = StObject.set(x, "addressInformationInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressInformationInputUndefined: Self = StObject.set(x, "addressInformationInput", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDobInformationInput(value: DobInformationInput): Self = StObject.set(x, "dobInformationInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressInformationInput(value: AddressInformationInput): Self = this.set("addressInformationInput", value.asInstanceOf[js.Any])
+    def setDobInformationInputUndefined: Self = StObject.set(x, "dobInformationInput", js.undefined)
     
     @scala.inline
-    def deleteAddressInformationInput: Self = this.set("addressInformationInput", js.undefined)
+    def setSsn4InformationInput(value: Ssn4InformationInput): Self = StObject.set(x, "ssn4InformationInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDobInformationInput(value: DobInformationInput): Self = this.set("dobInformationInput", value.asInstanceOf[js.Any])
+    def setSsn4InformationInputUndefined: Self = StObject.set(x, "ssn4InformationInput", js.undefined)
     
     @scala.inline
-    def deleteDobInformationInput: Self = this.set("dobInformationInput", js.undefined)
+    def setSsn9InformationInput(value: Ssn9InformationInput): Self = StObject.set(x, "ssn9InformationInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsn4InformationInput(value: Ssn4InformationInput): Self = this.set("ssn4InformationInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsn4InformationInput: Self = this.set("ssn4InformationInput", js.undefined)
-    
-    @scala.inline
-    def setSsn9InformationInput(value: Ssn9InformationInput): Self = this.set("ssn9InformationInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsn9InformationInput: Self = this.set("ssn9InformationInput", js.undefined)
+    def setSsn9InformationInputUndefined: Self = StObject.set(x, "ssn9InformationInput", js.undefined)
   }
 }

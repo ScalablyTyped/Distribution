@@ -1,15 +1,19 @@
 package typings.typedoc
 
 import typings.typedoc.componentsMod.TypeTypeConverter
+import typings.typedoc.converterConverterMod.Converter
 import typings.typescript.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/types/enum", JSImport.Namespace)
-@js.native
-object typesEnumMod extends js.Object {
+object typesEnumMod {
   
+  @JSImport("typedoc/dist/lib/converter/types/enum", "EnumConverter")
   @js.native
-  class EnumConverter () extends TypeTypeConverter[Type]
+  class EnumConverter protected () extends TypeTypeConverter[Type] {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
+  }
 }

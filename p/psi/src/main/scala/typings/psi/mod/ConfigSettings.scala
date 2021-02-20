@@ -1,11 +1,12 @@
 package typings.psi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigSettings extends js.Object {
+trait ConfigSettings extends StObject {
   
   var emulatedFormFactor: String = js.native
   
@@ -22,27 +23,15 @@ object ConfigSettings {
   }
   
   @scala.inline
-  implicit class ConfigSettingsOps[Self <: ConfigSettings] (val x: Self) extends AnyVal {
+  implicit class ConfigSettingsMutableBuilder[Self <: ConfigSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmulatedFormFactor(value: String): Self = StObject.set(x, "emulatedFormFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmulatedFormFactor(value: String): Self = this.set("emulatedFormFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnlyCategories(value: js.Object): Self = this.set("onlyCategories", value.asInstanceOf[js.Any])
+    def setOnlyCategories(value: js.Object): Self = StObject.set(x, "onlyCategories", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.stripe.mod.IObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Previousattributes extends js.Object {
+trait Previousattributes extends StObject {
   
   /**
     * describes the object the event is about. For example, an
@@ -28,27 +29,15 @@ object Previousattributes {
   }
   
   @scala.inline
-  implicit class PreviousattributesOps[Self <: Previousattributes] (val x: Self) extends AnyVal {
+  implicit class PreviousattributesMutableBuilder[Self <: Previousattributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObject(value: IObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrevious_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "previous_attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObject(value: IObject): Self = this.set("object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrevious_attributes(value: StringDictionary[js.Any]): Self = this.set("previous_attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevious_attributes: Self = this.set("previous_attributes", js.undefined)
+    def setPrevious_attributesUndefined: Self = StObject.set(x, "previous_attributes", js.undefined)
   }
 }

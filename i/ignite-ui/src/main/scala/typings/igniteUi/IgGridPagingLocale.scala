@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -124,120 +125,108 @@ object IgGridPagingLocale {
   }
   
   @scala.inline
-  implicit class IgGridPagingLocaleOps[Self <: IgGridPagingLocale] (val x: Self) extends AnyVal {
+  implicit class IgGridPagingLocaleMutableBuilder[Self <: IgGridPagingLocale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPageDropDownLeadingLabel(value: String): Self = StObject.set(x, "currentPageDropDownLeadingLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPageDropDownLeadingLabelUndefined: Self = StObject.set(x, "currentPageDropDownLeadingLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentPageDropDownTooltip(value: String): Self = StObject.set(x, "currentPageDropDownTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPageDropDownLeadingLabel(value: String): Self = this.set("currentPageDropDownLeadingLabel", value.asInstanceOf[js.Any])
+    def setCurrentPageDropDownTooltipUndefined: Self = StObject.set(x, "currentPageDropDownTooltip", js.undefined)
     
     @scala.inline
-    def deleteCurrentPageDropDownLeadingLabel: Self = this.set("currentPageDropDownLeadingLabel", js.undefined)
+    def setCurrentPageDropDownTrailingLabel(value: String): Self = StObject.set(x, "currentPageDropDownTrailingLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPageDropDownTooltip(value: String): Self = this.set("currentPageDropDownTooltip", value.asInstanceOf[js.Any])
+    def setCurrentPageDropDownTrailingLabelUndefined: Self = StObject.set(x, "currentPageDropDownTrailingLabel", js.undefined)
     
     @scala.inline
-    def deleteCurrentPageDropDownTooltip: Self = this.set("currentPageDropDownTooltip", js.undefined)
+    def setFirstPageLabelText(value: String): Self = StObject.set(x, "firstPageLabelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPageDropDownTrailingLabel(value: String): Self = this.set("currentPageDropDownTrailingLabel", value.asInstanceOf[js.Any])
+    def setFirstPageLabelTextUndefined: Self = StObject.set(x, "firstPageLabelText", js.undefined)
     
     @scala.inline
-    def deleteCurrentPageDropDownTrailingLabel: Self = this.set("currentPageDropDownTrailingLabel", js.undefined)
+    def setFirstPageTooltip(value: String): Self = StObject.set(x, "firstPageTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageLabelText(value: String): Self = this.set("firstPageLabelText", value.asInstanceOf[js.Any])
+    def setFirstPageTooltipUndefined: Self = StObject.set(x, "firstPageTooltip", js.undefined)
     
     @scala.inline
-    def deleteFirstPageLabelText: Self = this.set("firstPageLabelText", js.undefined)
+    def setLastPageLabelText(value: String): Self = StObject.set(x, "lastPageLabelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstPageTooltip(value: String): Self = this.set("firstPageTooltip", value.asInstanceOf[js.Any])
+    def setLastPageLabelTextUndefined: Self = StObject.set(x, "lastPageLabelText", js.undefined)
     
     @scala.inline
-    def deleteFirstPageTooltip: Self = this.set("firstPageTooltip", js.undefined)
+    def setLastPageTooltip(value: String): Self = StObject.set(x, "lastPageTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPageLabelText(value: String): Self = this.set("lastPageLabelText", value.asInstanceOf[js.Any])
+    def setLastPageTooltipUndefined: Self = StObject.set(x, "lastPageTooltip", js.undefined)
     
     @scala.inline
-    def deleteLastPageLabelText: Self = this.set("lastPageLabelText", js.undefined)
+    def setNextPageLabelText(value: String): Self = StObject.set(x, "nextPageLabelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPageTooltip(value: String): Self = this.set("lastPageTooltip", value.asInstanceOf[js.Any])
+    def setNextPageLabelTextUndefined: Self = StObject.set(x, "nextPageLabelText", js.undefined)
     
     @scala.inline
-    def deleteLastPageTooltip: Self = this.set("lastPageTooltip", js.undefined)
+    def setNextPageTooltip(value: String): Self = StObject.set(x, "nextPageTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageLabelText(value: String): Self = this.set("nextPageLabelText", value.asInstanceOf[js.Any])
+    def setNextPageTooltipUndefined: Self = StObject.set(x, "nextPageTooltip", js.undefined)
     
     @scala.inline
-    def deleteNextPageLabelText: Self = this.set("nextPageLabelText", js.undefined)
+    def setPageSizeDropDownLabel(value: String): Self = StObject.set(x, "pageSizeDropDownLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageTooltip(value: String): Self = this.set("nextPageTooltip", value.asInstanceOf[js.Any])
+    def setPageSizeDropDownLabelUndefined: Self = StObject.set(x, "pageSizeDropDownLabel", js.undefined)
     
     @scala.inline
-    def deleteNextPageTooltip: Self = this.set("nextPageTooltip", js.undefined)
+    def setPageSizeDropDownTooltip(value: String): Self = StObject.set(x, "pageSizeDropDownTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizeDropDownLabel(value: String): Self = this.set("pageSizeDropDownLabel", value.asInstanceOf[js.Any])
+    def setPageSizeDropDownTooltipUndefined: Self = StObject.set(x, "pageSizeDropDownTooltip", js.undefined)
     
     @scala.inline
-    def deletePageSizeDropDownLabel: Self = this.set("pageSizeDropDownLabel", js.undefined)
+    def setPageSizeDropDownTrailingLabel(value: String): Self = StObject.set(x, "pageSizeDropDownTrailingLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizeDropDownTooltip(value: String): Self = this.set("pageSizeDropDownTooltip", value.asInstanceOf[js.Any])
+    def setPageSizeDropDownTrailingLabelUndefined: Self = StObject.set(x, "pageSizeDropDownTrailingLabel", js.undefined)
     
     @scala.inline
-    def deletePageSizeDropDownTooltip: Self = this.set("pageSizeDropDownTooltip", js.undefined)
+    def setPageTooltipFormat(value: String): Self = StObject.set(x, "pageTooltipFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizeDropDownTrailingLabel(value: String): Self = this.set("pageSizeDropDownTrailingLabel", value.asInstanceOf[js.Any])
+    def setPageTooltipFormatUndefined: Self = StObject.set(x, "pageTooltipFormat", js.undefined)
     
     @scala.inline
-    def deletePageSizeDropDownTrailingLabel: Self = this.set("pageSizeDropDownTrailingLabel", js.undefined)
+    def setPagerRecordsLabelTemplate(value: String): Self = StObject.set(x, "pagerRecordsLabelTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageTooltipFormat(value: String): Self = this.set("pageTooltipFormat", value.asInstanceOf[js.Any])
+    def setPagerRecordsLabelTemplateUndefined: Self = StObject.set(x, "pagerRecordsLabelTemplate", js.undefined)
     
     @scala.inline
-    def deletePageTooltipFormat: Self = this.set("pageTooltipFormat", js.undefined)
+    def setPagerRecordsLabelTooltip(value: String): Self = StObject.set(x, "pagerRecordsLabelTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagerRecordsLabelTemplate(value: String): Self = this.set("pagerRecordsLabelTemplate", value.asInstanceOf[js.Any])
+    def setPagerRecordsLabelTooltipUndefined: Self = StObject.set(x, "pagerRecordsLabelTooltip", js.undefined)
     
     @scala.inline
-    def deletePagerRecordsLabelTemplate: Self = this.set("pagerRecordsLabelTemplate", js.undefined)
+    def setPrevPageLabelText(value: String): Self = StObject.set(x, "prevPageLabelText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagerRecordsLabelTooltip(value: String): Self = this.set("pagerRecordsLabelTooltip", value.asInstanceOf[js.Any])
+    def setPrevPageLabelTextUndefined: Self = StObject.set(x, "prevPageLabelText", js.undefined)
     
     @scala.inline
-    def deletePagerRecordsLabelTooltip: Self = this.set("pagerRecordsLabelTooltip", js.undefined)
+    def setPrevPageTooltip(value: String): Self = StObject.set(x, "prevPageTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevPageLabelText(value: String): Self = this.set("prevPageLabelText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevPageLabelText: Self = this.set("prevPageLabelText", js.undefined)
-    
-    @scala.inline
-    def setPrevPageTooltip(value: String): Self = this.set("prevPageTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevPageTooltip: Self = this.set("prevPageTooltip", js.undefined)
+    def setPrevPageTooltipUndefined: Self = StObject.set(x, "prevPageTooltip", js.undefined)
   }
 }

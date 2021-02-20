@@ -1,12 +1,13 @@
 package typings.cytoscape.mod
 
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreExport extends js.Object {
+trait CoreExport extends StObject {
   
   def jpeg(): Blob = js.native
   def jpeg(options: ExportJpgBlobOptions): Blob = js.native

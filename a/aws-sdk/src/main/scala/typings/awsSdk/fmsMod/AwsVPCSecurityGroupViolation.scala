@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsVPCSecurityGroupViolation extends js.Object {
+trait AwsVPCSecurityGroupViolation extends StObject {
   
   /**
     * List of rules specified in the security group of the AWS Firewall Manager policy that partially match the ViolationTarget rule.
@@ -36,48 +37,36 @@ object AwsVPCSecurityGroupViolation {
   }
   
   @scala.inline
-  implicit class AwsVPCSecurityGroupViolationOps[Self <: AwsVPCSecurityGroupViolation] (val x: Self) extends AnyVal {
+  implicit class AwsVPCSecurityGroupViolationMutableBuilder[Self <: AwsVPCSecurityGroupViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartialMatches(value: PartialMatches): Self = StObject.set(x, "PartialMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartialMatchesUndefined: Self = StObject.set(x, "PartialMatches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartialMatchesVarargs(value: PartialMatch*): Self = StObject.set(x, "PartialMatches", js.Array(value :_*))
     
     @scala.inline
-    def setPartialMatchesVarargs(value: PartialMatch*): Self = this.set("PartialMatches", js.Array(value :_*))
+    def setPossibleSecurityGroupRemediationActions(value: SecurityGroupRemediationActions): Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialMatches(value: PartialMatches): Self = this.set("PartialMatches", value.asInstanceOf[js.Any])
+    def setPossibleSecurityGroupRemediationActionsUndefined: Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", js.undefined)
     
     @scala.inline
-    def deletePartialMatches: Self = this.set("PartialMatches", js.undefined)
+    def setPossibleSecurityGroupRemediationActionsVarargs(value: SecurityGroupRemediationAction*): Self = StObject.set(x, "PossibleSecurityGroupRemediationActions", js.Array(value :_*))
     
     @scala.inline
-    def setPossibleSecurityGroupRemediationActionsVarargs(value: SecurityGroupRemediationAction*): Self = this.set("PossibleSecurityGroupRemediationActions", js.Array(value :_*))
+    def setViolationTarget(value: ViolationTarget): Self = StObject.set(x, "ViolationTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPossibleSecurityGroupRemediationActions(value: SecurityGroupRemediationActions): Self = this.set("PossibleSecurityGroupRemediationActions", value.asInstanceOf[js.Any])
+    def setViolationTargetDescription(value: LengthBoundedString): Self = StObject.set(x, "ViolationTargetDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePossibleSecurityGroupRemediationActions: Self = this.set("PossibleSecurityGroupRemediationActions", js.undefined)
+    def setViolationTargetDescriptionUndefined: Self = StObject.set(x, "ViolationTargetDescription", js.undefined)
     
     @scala.inline
-    def setViolationTarget(value: ViolationTarget): Self = this.set("ViolationTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationTarget: Self = this.set("ViolationTarget", js.undefined)
-    
-    @scala.inline
-    def setViolationTargetDescription(value: LengthBoundedString): Self = this.set("ViolationTargetDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViolationTargetDescription: Self = this.set("ViolationTargetDescription", js.undefined)
+    def setViolationTargetUndefined: Self = StObject.set(x, "ViolationTarget", js.undefined)
   }
 }

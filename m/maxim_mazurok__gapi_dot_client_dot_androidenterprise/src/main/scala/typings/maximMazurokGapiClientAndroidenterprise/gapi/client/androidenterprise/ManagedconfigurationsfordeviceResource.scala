@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidenterprise.anon.Accesstoken
 import typings.maximMazurokGapiClientAndroidenterprise.anon.ManagedConfigurationForDeviceId
 import typings.maximMazurokGapiClientAndroidenterprise.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedconfigurationsfordeviceResource extends js.Object {
+trait ManagedconfigurationsfordeviceResource extends StObject {
   
   /** Removes a per-device managed configuration for an app for the specified device. */
   def delete(): Request[Unit] = js.native

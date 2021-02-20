@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,30 +42,18 @@ object XEndnotesSupplier {
   }
   
   @scala.inline
-  implicit class XEndnotesSupplierOps[Self <: XEndnotesSupplier] (val x: Self) extends AnyVal {
+  implicit class XEndnotesSupplierMutableBuilder[Self <: XEndnotesSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndnoteSettings(value: XPropertySet): Self = StObject.set(x, "EndnoteSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndnotes(value: XIndexAccess): Self = StObject.set(x, "Endnotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetEndnoteSettings(value: () => XPropertySet): Self = StObject.set(x, "getEndnoteSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndnoteSettings(value: XPropertySet): Self = this.set("EndnoteSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndnotes(value: XIndexAccess): Self = this.set("Endnotes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetEndnoteSettings(value: () => XPropertySet): Self = this.set("getEndnoteSettings", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetEndnotes(value: () => XIndexAccess): Self = this.set("getEndnotes", js.Any.fromFunction0(value))
+    def setGetEndnotes(value: () => XIndexAccess): Self = StObject.set(x, "getEndnotes", js.Any.fromFunction0(value))
   }
 }

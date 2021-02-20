@@ -1,5 +1,6 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This object contains all the properties of the Fill color setting of the Tools panel or of a selected shape. To retrieve a Fill object, use document.getCustomFill().
   */
 @js.native
-trait FlashFill extends js.Object {
+trait FlashFill extends StObject {
   
   var bitmapIsClipped: Boolean = js.native
   
@@ -56,54 +57,42 @@ object FlashFill {
   }
   
   @scala.inline
-  implicit class FlashFillOps[Self <: FlashFill] (val x: Self) extends AnyVal {
+  implicit class FlashFillMutableBuilder[Self <: FlashFill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmapIsClipped(value: Boolean): Self = StObject.set(x, "bitmapIsClipped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitmapPath(value: String): Self = StObject.set(x, "bitmapPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapIsClipped(value: Boolean): Self = this.set("bitmapIsClipped", value.asInstanceOf[js.Any])
+    def setColorArray(value: js.Array[_]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapPath(value: String): Self = this.set("bitmapPath", value.asInstanceOf[js.Any])
+    def setColorArrayVarargs(value: js.Any*): Self = StObject.set(x, "colorArray", js.Array(value :_*))
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFocalPoint(value: Double): Self = StObject.set(x, "focalPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorArrayVarargs(value: js.Any*): Self = this.set("colorArray", js.Array(value :_*))
+    def setLinearRGB(value: Boolean): Self = StObject.set(x, "linearRGB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorArray(value: js.Array[_]): Self = this.set("colorArray", value.asInstanceOf[js.Any])
+    def setMatrix(value: FlashMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocalPoint(value: Double): Self = this.set("focalPoint", value.asInstanceOf[js.Any])
+    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearRGB(value: Boolean): Self = this.set("linearRGB", value.asInstanceOf[js.Any])
+    def setPosArray(value: js.Array[Double]): Self = StObject.set(x, "posArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatrix(value: FlashMatrix): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    def setPosArrayVarargs(value: Double*): Self = StObject.set(x, "posArray", js.Array(value :_*))
     
     @scala.inline
-    def setOverflow(value: String): Self = this.set("overflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosArrayVarargs(value: Double*): Self = this.set("posArray", js.Array(value :_*))
-    
-    @scala.inline
-    def setPosArray(value: js.Array[Double]): Self = this.set("posArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

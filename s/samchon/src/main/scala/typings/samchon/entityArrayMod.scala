@@ -2,19 +2,17 @@ package typings.samchon
 
 import typings.samchon.ientityMod.IEntity
 import typings.sxml.mod.XML
-import typings.tstl.mod.Deque
-import typings.tstl.mod.List
-import typings.tstl.mod.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/protocol/entity/EntityArray", JSImport.Namespace)
-@js.native
-object entityArrayMod extends js.Object {
+object entityArrayMod {
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Vector<T> * / any */ @JSImport("samchon/protocol/entity/EntityArray", "EntityArray")
   @js.native
-  abstract class EntityArray[T /* <: IEntity */] () extends Vector[T] {
+  abstract class EntityArray[T /* <: IEntity */] () extends StObject {
     
     /**
       * @inheritdoc
@@ -62,8 +60,10 @@ object entityArrayMod extends js.Object {
     def toXML(): XML = js.native
   }
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Deque<T> * / any */ @JSImport("samchon/protocol/entity/EntityArray", "EntityDeque")
   @js.native
-  abstract class EntityDeque[T /* <: IEntity */] () extends Deque[T] {
+  abstract class EntityDeque[T /* <: IEntity */] () extends StObject {
     
     /**
       * @inheritdoc
@@ -111,8 +111,10 @@ object entityArrayMod extends js.Object {
     def toXML(): XML = js.native
   }
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.List<T> * / any */ @JSImport("samchon/protocol/entity/EntityArray", "EntityList")
   @js.native
-  abstract class EntityList[T /* <: IEntity */] () extends List[T] {
+  abstract class EntityList[T /* <: IEntity */] () extends StObject {
     
     /**
       * @inheritdoc

@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RangeSelectorButtonsEventsOptions extends js.Object {
+trait RangeSelectorButtonsEventsOptions extends StObject {
   
   /**
     * (Highstock, Gantt) Fires when clicking on the rangeSelector button. One
@@ -26,24 +27,12 @@ object RangeSelectorButtonsEventsOptions {
   }
   
   @scala.inline
-  implicit class RangeSelectorButtonsEventsOptionsOps[Self <: RangeSelectorButtonsEventsOptions] (val x: Self) extends AnyVal {
+  implicit class RangeSelectorButtonsEventsOptionsMutableBuilder[Self <: RangeSelectorButtonsEventsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: (/* e */ Event, /* Return */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClick(value: (/* e */ Event, /* Return */ js.UndefOr[Boolean]) => Unit): Self = this.set("click", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
   }
 }

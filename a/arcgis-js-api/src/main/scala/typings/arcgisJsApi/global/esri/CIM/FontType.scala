@@ -1,12 +1,13 @@
 package typings.arcgisJsApi.global.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("__esri.CIM.FontType")
 @js.native
-object FontType extends js.Object {
+object FontType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.arcgisJsApi.esri.CIM.FontType with String] = js.native

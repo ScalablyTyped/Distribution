@@ -1,15 +1,18 @@
 package typings.useMemoOne
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-memo-one", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("use-memo-one", "useCallbackOne")
+  @js.native
   def useCallbackOne[T /* <: js.Function1[/* repeated */ js.Any, _] */](// getResult changes on every call,
   callback: T): T = js.native
+  @JSImport("use-memo-one", "useCallbackOne")
+  @js.native
   def useCallbackOne[T /* <: js.Function1[/* repeated */ js.Any, _] */](
     // getResult changes on every call,
   callback: T,
@@ -17,8 +20,12 @@ object mod extends js.Object {
   inputs: DependencyList
   ): T = js.native
   
+  @JSImport("use-memo-one", "useMemoOne")
+  @js.native
   def useMemoOne[T](// getResult changes on every call,
   getResult: js.Function0[T]): T = js.native
+  @JSImport("use-memo-one", "useMemoOne")
+  @js.native
   def useMemoOne[T](
     // getResult changes on every call,
   getResult: js.Function0[T],

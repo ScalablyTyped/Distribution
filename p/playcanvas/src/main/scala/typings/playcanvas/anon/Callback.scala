@@ -2,12 +2,13 @@ package typings.playcanvas.anon
 
 import typings.playcanvas.pc.callbacks.XrError
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callback extends js.Object {
+trait Callback extends StObject {
   
   var callback: js.UndefOr[XrError] = js.native
   
@@ -22,33 +23,21 @@ object Callback {
   }
   
   @scala.inline
-  implicit class CallbackOps[Self <: Callback] (val x: Self) extends AnyVal {
+  implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* err */ Error | Null => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionalFeatures(value: js.Array[String]): Self = StObject.set(x, "optionalFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* err */ Error | Null => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setOptionalFeaturesUndefined: Self = StObject.set(x, "optionalFeatures", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
-    
-    @scala.inline
-    def setOptionalFeaturesVarargs(value: String*): Self = this.set("optionalFeatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setOptionalFeatures(value: js.Array[String]): Self = this.set("optionalFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptionalFeatures: Self = this.set("optionalFeatures", js.undefined)
+    def setOptionalFeaturesVarargs(value: String*): Self = StObject.set(x, "optionalFeatures", js.Array(value :_*))
   }
 }

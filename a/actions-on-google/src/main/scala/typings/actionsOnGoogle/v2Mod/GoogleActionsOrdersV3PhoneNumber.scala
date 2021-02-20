@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3PhoneNumber extends js.Object {
+trait GoogleActionsOrdersV3PhoneNumber extends StObject {
   
   /**
     * Phone number in E.164 format, as defined in International
@@ -48,36 +49,24 @@ object GoogleActionsOrdersV3PhoneNumber {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3PhoneNumberOps[Self <: GoogleActionsOrdersV3PhoneNumber] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3PhoneNumberMutableBuilder[Self <: GoogleActionsOrdersV3PhoneNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setE164PhoneNumber(value: String): Self = StObject.set(x, "e164PhoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setE164PhoneNumberUndefined: Self = StObject.set(x, "e164PhoneNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE164PhoneNumber(value: String): Self = this.set("e164PhoneNumber", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteE164PhoneNumber: Self = this.set("e164PhoneNumber", js.undefined)
+    def setPreferredDomesticCarrierCode(value: String): Self = StObject.set(x, "preferredDomesticCarrierCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
-    
-    @scala.inline
-    def setPreferredDomesticCarrierCode(value: String): Self = this.set("preferredDomesticCarrierCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreferredDomesticCarrierCode: Self = this.set("preferredDomesticCarrierCode", js.undefined)
+    def setPreferredDomesticCarrierCodeUndefined: Self = StObject.set(x, "preferredDomesticCarrierCode", js.undefined)
   }
 }

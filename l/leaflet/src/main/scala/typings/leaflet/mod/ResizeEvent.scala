@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ResizeEvent {
   }
   
   @scala.inline
-  implicit class ResizeEventOps[Self <: ResizeEvent] (val x: Self) extends AnyVal {
+  implicit class ResizeEventMutableBuilder[Self <: ResizeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewSize(value: Point_): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewSize(value: Point_): Self = this.set("newSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldSize(value: Point_): Self = this.set("oldSize", value.asInstanceOf[js.Any])
+    def setOldSize(value: Point_): Self = StObject.set(x, "oldSize", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata extends StObject {
   
   /**
     * By default node is eligible if instance is eligible. But individual node might be excluded from SLO by adding entry here. For semantic see SloMetadata.exclusions. If both instance
@@ -28,39 +29,27 @@ object GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadataOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadataMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1NodeSloMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
     @scala.inline
-    def setExclusionsVarargs(value: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion*): Self = this.set("exclusions", js.Array(value :_*))
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusions(value: js.Array[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]): Self = this.set("exclusions", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteExclusions: Self = this.set("exclusions", js.undefined)
+    def setNodeId(value: String): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setNodeId(value: String): Self = this.set("nodeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeId: Self = this.set("nodeId", js.undefined)
+    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrandResourcesList extends js.Object {
+trait BrandResourcesList extends StObject {
   
   /**
     * A list of resources that the brand uses.
@@ -21,27 +22,15 @@ object BrandResourcesList {
   }
   
   @scala.inline
-  implicit class BrandResourcesListOps[Self <: BrandResourcesList] (val x: Self) extends AnyVal {
+  implicit class BrandResourcesListMutableBuilder[Self <: BrandResourcesList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourcesContentTypes(value: js.Array[BrandResources]): Self = StObject.set(x, "resourcesContentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourcesContentTypesUndefined: Self = StObject.set(x, "resourcesContentTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResourcesContentTypesVarargs(value: BrandResources*): Self = this.set("resourcesContentTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourcesContentTypes(value: js.Array[BrandResources]): Self = this.set("resourcesContentTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcesContentTypes: Self = this.set("resourcesContentTypes", js.undefined)
+    def setResourcesContentTypesVarargs(value: BrandResources*): Self = StObject.set(x, "resourcesContentTypes", js.Array(value :_*))
   }
 }

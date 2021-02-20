@@ -1,5 +1,6 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A batch entry encoding a single non-batch datafeeds request.
   */
 @js.native
-trait SchemaDatafeedsCustomBatchRequestEntry extends js.Object {
+trait SchemaDatafeedsCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
@@ -41,48 +42,36 @@ object SchemaDatafeedsCustomBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class SchemaDatafeedsCustomBatchRequestEntryOps[Self <: SchemaDatafeedsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaDatafeedsCustomBatchRequestEntryMutableBuilder[Self <: SchemaDatafeedsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatafeed(value: SchemaDatafeed): Self = StObject.set(x, "datafeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
     
     @scala.inline
-    def setDatafeed(value: SchemaDatafeed): Self = this.set("datafeed", value.asInstanceOf[js.Any])
+    def setDatafeedUndefined: Self = StObject.set(x, "datafeed", js.undefined)
     
     @scala.inline
-    def deleteDatafeed: Self = this.set("datafeed", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatafeedId(value: String): Self = this.set("datafeedId", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteDatafeedId: Self = this.set("datafeedId", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
-    
-    @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
   }
 }

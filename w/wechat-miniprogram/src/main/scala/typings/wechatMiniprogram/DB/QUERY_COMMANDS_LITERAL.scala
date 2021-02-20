@@ -1,14 +1,15 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait QUERY_COMMANDS_LITERAL extends js.Object
+sealed trait QUERY_COMMANDS_LITERAL extends StObject
 @JSGlobal("DB.QUERY_COMMANDS_LITERAL")
 @js.native
-object QUERY_COMMANDS_LITERAL extends js.Object {
+object QUERY_COMMANDS_LITERAL extends StObject {
   
   // array
   @js.native

@@ -1,13 +1,14 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** characteristics列表 */
 @js.native
-trait Characteristic extends js.Object {
+trait Characteristic extends StObject {
   
   /** 描述符数据 */
   var descriptors: js.UndefOr[js.Array[CharacteristicDescriptor]] = js.native
@@ -33,48 +34,36 @@ object Characteristic {
   }
   
   @scala.inline
-  implicit class CharacteristicOps[Self <: Characteristic] (val x: Self) extends AnyVal {
+  implicit class CharacteristicMutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptors(value: js.Array[CharacteristicDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptorsUndefined: Self = StObject.set(x, "descriptors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptorsVarargs(value: CharacteristicDescriptor*): Self = StObject.set(x, "descriptors", js.Array(value :_*))
     
     @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    def setPermission(value: CharacteristicPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptorsVarargs(value: CharacteristicDescriptor*): Self = this.set("descriptors", js.Array(value :_*))
+    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
     @scala.inline
-    def setDescriptors(value: js.Array[CharacteristicDescriptor]): Self = this.set("descriptors", value.asInstanceOf[js.Any])
+    def setProperties(value: CharacteristicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescriptors: Self = this.set("descriptors", js.undefined)
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setPermission(value: CharacteristicPermission): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePermission: Self = this.set("permission", js.undefined)
+    def setValue(value: ArrayBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: CharacteristicProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setValue(value: ArrayBuffer): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

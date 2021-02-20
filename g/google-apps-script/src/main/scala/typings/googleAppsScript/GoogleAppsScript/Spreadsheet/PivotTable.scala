@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Access and modify pivot tables.
   */
 @js.native
-trait PivotTable extends js.Object {
+trait PivotTable extends StObject {
   
   def addCalculatedPivotValue(name: String, formula: String): PivotValue = js.native
   
@@ -60,57 +61,45 @@ object PivotTable {
   }
   
   @scala.inline
-  implicit class PivotTableOps[Self <: PivotTable] (val x: Self) extends AnyVal {
+  implicit class PivotTableMutableBuilder[Self <: PivotTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCalculatedPivotValue(value: (String, String) => PivotValue): Self = StObject.set(x, "addCalculatedPivotValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddColumnGroup(value: Integer => PivotGroup): Self = StObject.set(x, "addColumnGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddFilter(value: (Integer, FilterCriteria) => PivotFilter): Self = StObject.set(x, "addFilter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddCalculatedPivotValue(value: (String, String) => PivotValue): Self = this.set("addCalculatedPivotValue", js.Any.fromFunction2(value))
+    def setAddPivotValue(value: (Integer, PivotTableSummarizeFunction) => PivotValue): Self = StObject.set(x, "addPivotValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddColumnGroup(value: Integer => PivotGroup): Self = this.set("addColumnGroup", js.Any.fromFunction1(value))
+    def setAddRowGroup(value: Integer => PivotGroup): Self = StObject.set(x, "addRowGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFilter(value: (Integer, FilterCriteria) => PivotFilter): Self = this.set("addFilter", js.Any.fromFunction2(value))
+    def setGetAnchorCell(value: () => Range): Self = StObject.set(x, "getAnchorCell", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPivotValue(value: (Integer, PivotTableSummarizeFunction) => PivotValue): Self = this.set("addPivotValue", js.Any.fromFunction2(value))
+    def setGetColumnGroups(value: () => js.Array[PivotGroup]): Self = StObject.set(x, "getColumnGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddRowGroup(value: Integer => PivotGroup): Self = this.set("addRowGroup", js.Any.fromFunction1(value))
+    def setGetFilters(value: () => js.Array[PivotFilter]): Self = StObject.set(x, "getFilters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnchorCell(value: () => Range): Self = this.set("getAnchorCell", js.Any.fromFunction0(value))
+    def setGetPivotValues(value: () => js.Array[PivotValue]): Self = StObject.set(x, "getPivotValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumnGroups(value: () => js.Array[PivotGroup]): Self = this.set("getColumnGroups", js.Any.fromFunction0(value))
+    def setGetRowGroups(value: () => js.Array[PivotGroup]): Self = StObject.set(x, "getRowGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilters(value: () => js.Array[PivotFilter]): Self = this.set("getFilters", js.Any.fromFunction0(value))
+    def setGetValuesDisplayOrientation(value: () => Dimension): Self = StObject.set(x, "getValuesDisplayOrientation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPivotValues(value: () => js.Array[PivotValue]): Self = this.set("getPivotValues", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRowGroups(value: () => js.Array[PivotGroup]): Self = this.set("getRowGroups", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValuesDisplayOrientation(value: () => Dimension): Self = this.set("getValuesDisplayOrientation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetValuesDisplayOrientation(value: Dimension => PivotTable): Self = this.set("setValuesDisplayOrientation", js.Any.fromFunction1(value))
+    def setSetValuesDisplayOrientation(value: Dimension => PivotTable): Self = StObject.set(x, "setValuesDisplayOrientation", js.Any.fromFunction1(value))
   }
 }

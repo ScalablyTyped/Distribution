@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IamPolicyAnalysisQuery extends js.Object {
+trait IamPolicyAnalysisQuery extends StObject {
   
   /** Optional. Specifies roles or permissions for analysis. This is optional. */
   var accessSelector: js.UndefOr[AccessSelector] = js.native
@@ -36,48 +37,36 @@ object IamPolicyAnalysisQuery {
   }
   
   @scala.inline
-  implicit class IamPolicyAnalysisQueryOps[Self <: IamPolicyAnalysisQuery] (val x: Self) extends AnyVal {
+  implicit class IamPolicyAnalysisQueryMutableBuilder[Self <: IamPolicyAnalysisQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessSelector(value: AccessSelector): Self = StObject.set(x, "accessSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessSelectorUndefined: Self = StObject.set(x, "accessSelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentitySelector(value: IdentitySelector): Self = StObject.set(x, "identitySelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessSelector(value: AccessSelector): Self = this.set("accessSelector", value.asInstanceOf[js.Any])
+    def setIdentitySelectorUndefined: Self = StObject.set(x, "identitySelector", js.undefined)
     
     @scala.inline
-    def deleteAccessSelector: Self = this.set("accessSelector", js.undefined)
+    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentitySelector(value: IdentitySelector): Self = this.set("identitySelector", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteIdentitySelector: Self = this.set("identitySelector", js.undefined)
+    def setResourceSelector(value: ResourceSelector): Self = StObject.set(x, "resourceSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Options): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setResourceSelectorUndefined: Self = StObject.set(x, "resourceSelector", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceSelector(value: ResourceSelector): Self = this.set("resourceSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceSelector: Self = this.set("resourceSelector", js.undefined)
-    
-    @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

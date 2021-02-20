@@ -3,12 +3,13 @@ package typings.webix.webix
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipControl extends js.Object {
+trait TooltipControl extends StObject {
   
   @JSName("$tooltipIn")
   def $tooltipIn(target: HTMLElement, event: Event): Unit = js.native

@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,36 +47,24 @@ object SketchCreateCreateOptions {
   }
   
   @scala.inline
-  implicit class SketchCreateCreateOptionsOps[Self <: SketchCreateCreateOptions] (val x: Self) extends AnyVal {
+  implicit class SketchCreateCreateOptionsMutableBuilder[Self <: SketchCreateCreateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultZ(value: Double): Self = StObject.set(x, "defaultZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultZUndefined: Self = StObject.set(x, "defaultZ", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultZ(value: Double): Self = this.set("defaultZ", value.asInstanceOf[js.Any])
+    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
     @scala.inline
-    def deleteDefaultZ: Self = this.set("defaultZ", js.undefined)
+    def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasZ(value: Boolean): Self = this.set("hasZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasZ: Self = this.set("hasZ", js.undefined)
-    
-    @scala.inline
-    def setMode(value: hybrid | freehand | click): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

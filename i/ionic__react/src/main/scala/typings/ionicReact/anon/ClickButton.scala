@@ -11,12 +11,13 @@ import typings.react.mod.ReactInstance
 import typings.std.Element
 import typings.std.Error
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClickButton extends js.Object {
+trait ClickButton extends StObject {
   
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   

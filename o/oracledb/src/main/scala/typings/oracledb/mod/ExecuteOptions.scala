@@ -2,6 +2,7 @@ package typings.oracledb.mod
 
 import typings.oracledb.anon.Type
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used to control statement execution.
   */
 @js.native
-trait ExecuteOptions extends js.Object {
+trait ExecuteOptions extends StObject {
   
   /**
     * If true, the transaction in the current connection is automatically committed at the end of statement execution.
@@ -127,66 +128,54 @@ object ExecuteOptions {
   }
   
   @scala.inline
-  implicit class ExecuteOptionsOps[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
+  implicit class ExecuteOptionsMutableBuilder[Self <: ExecuteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendedMetaData(value: Boolean): Self = StObject.set(x, "extendedMetaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCommit(value: Boolean): Self = this.set("autoCommit", value.asInstanceOf[js.Any])
+    def setExtendedMetaDataUndefined: Self = StObject.set(x, "extendedMetaData", js.undefined)
     
     @scala.inline
-    def deleteAutoCommit: Self = this.set("autoCommit", js.undefined)
+    def setFetchArraySize(value: Double): Self = StObject.set(x, "fetchArraySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedMetaData(value: Boolean): Self = this.set("extendedMetaData", value.asInstanceOf[js.Any])
+    def setFetchArraySizeUndefined: Self = StObject.set(x, "fetchArraySize", js.undefined)
     
     @scala.inline
-    def deleteExtendedMetaData: Self = this.set("extendedMetaData", js.undefined)
+    def setFetchInfo(value: Record[String, Type]): Self = StObject.set(x, "fetchInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchArraySize(value: Double): Self = this.set("fetchArraySize", value.asInstanceOf[js.Any])
+    def setFetchInfoUndefined: Self = StObject.set(x, "fetchInfo", js.undefined)
     
     @scala.inline
-    def deleteFetchArraySize: Self = this.set("fetchArraySize", js.undefined)
+    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchInfo(value: Record[String, Type]): Self = this.set("fetchInfo", value.asInstanceOf[js.Any])
+    def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
     
     @scala.inline
-    def deleteFetchInfo: Self = this.set("fetchInfo", js.undefined)
+    def setOutFormat(value: Double): Self = StObject.set(x, "outFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("maxRows", value.asInstanceOf[js.Any])
+    def setOutFormatUndefined: Self = StObject.set(x, "outFormat", js.undefined)
     
     @scala.inline
-    def deleteMaxRows: Self = this.set("maxRows", js.undefined)
+    def setPrefetchRows(value: Double): Self = StObject.set(x, "prefetchRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFormat(value: Double): Self = this.set("outFormat", value.asInstanceOf[js.Any])
+    def setPrefetchRowsUndefined: Self = StObject.set(x, "prefetchRows", js.undefined)
     
     @scala.inline
-    def deleteOutFormat: Self = this.set("outFormat", js.undefined)
+    def setResultSet(value: Boolean): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefetchRows(value: Double): Self = this.set("prefetchRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefetchRows: Self = this.set("prefetchRows", js.undefined)
-    
-    @scala.inline
-    def setResultSet(value: Boolean): Self = this.set("resultSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultSet: Self = this.set("resultSet", js.undefined)
+    def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
   }
 }

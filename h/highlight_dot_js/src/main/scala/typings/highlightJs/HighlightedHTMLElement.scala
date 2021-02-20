@@ -435,13 +435,14 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.HTMLElement & {  result :object | undefined,   second_best :object | undefined,   parentNode :std.HTMLElement} */
 @js.native
-trait HighlightedHTMLElement extends js.Object {
+trait HighlightedHTMLElement extends StObject {
   
   val ATTRIBUTE_NODE: Double = js.native
   

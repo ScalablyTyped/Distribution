@@ -2,12 +2,13 @@ package typings.cookieclicker.Game
 
 import typings.cookieclicker.cookieclickerStrings._empty
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Note extends js.Object {
+trait Note extends StObject {
   
   var date: Double = js.native
   
@@ -46,45 +47,33 @@ object Note {
   }
   
   @scala.inline
-  implicit class NoteOps[Self <: Note] (val x: Self) extends AnyVal {
+  implicit class NoteMutableBuilder[Self <: Note] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Double): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setL(value: HTMLDivElement | PseudoNull): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPic(value: Icon | _empty): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: HTMLDivElement | PseudoNull): Self = this.set("l", value.asInstanceOf[js.Any])
+    def setQuick(value: Double): Self = StObject.set(x, "quick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLife(value: Double): Self = this.set("life", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPic(value: Icon | _empty): Self = this.set("pic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuick(value: Double): Self = this.set("quick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

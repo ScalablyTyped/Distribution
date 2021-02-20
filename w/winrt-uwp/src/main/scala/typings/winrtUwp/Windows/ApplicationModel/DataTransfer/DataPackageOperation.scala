@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataPackageOperation extends js.Object
+sealed trait DataPackageOperation extends StObject
 /** Specifies the operation to perform on the DataPackage in clipboard and drag and drop scenarios. */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackageOperation")
 @js.native
-object DataPackageOperation extends js.Object {
+object DataPackageOperation extends StObject {
   
   /** Copies the content to the target destination. */
   @js.native

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestChildNodesRequest extends js.Object {
+trait RequestChildNodesRequest extends StObject {
   
   /**
     * The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the
@@ -34,33 +35,21 @@ object RequestChildNodesRequest {
   }
   
   @scala.inline
-  implicit class RequestChildNodesRequestOps[Self <: RequestChildNodesRequest] (val x: Self) extends AnyVal {
+  implicit class RequestChildNodesRequestMutableBuilder[Self <: RequestChildNodesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    def setPierce(value: Boolean): Self = StObject.set(x, "pierce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: integer): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
-    
-    @scala.inline
-    def setPierce(value: Boolean): Self = this.set("pierce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePierce: Self = this.set("pierce", js.undefined)
+    def setPierceUndefined: Self = StObject.set(x, "pierce", js.undefined)
   }
 }

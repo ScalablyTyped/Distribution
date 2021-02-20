@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options which may be used when getting SODA collection names.
   */
 @js.native
-trait SodaCollectionNamesOptions extends js.Object {
+trait SodaCollectionNamesOptions extends StObject {
   
   /** Limits the number of names returned. If limit is 0 or undefined, then all collection names are returned. */
   var limit: js.UndefOr[Double] = js.native
@@ -29,30 +30,18 @@ object SodaCollectionNamesOptions {
   }
   
   @scala.inline
-  implicit class SodaCollectionNamesOptionsOps[Self <: SodaCollectionNamesOptions] (val x: Self) extends AnyVal {
+  implicit class SodaCollectionNamesOptionsMutableBuilder[Self <: SodaCollectionNamesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
-    
-    @scala.inline
-    def setStartsWith(value: String): Self = this.set("startsWith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartsWith: Self = this.set("startsWith", js.undefined)
+    def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
   }
 }

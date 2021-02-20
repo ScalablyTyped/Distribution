@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  withTheme :boolean}> */
 @js.native
-trait PartialwithThemeboolean extends js.Object {
+trait PartialwithThemeboolean extends StObject {
   
   var withTheme: js.UndefOr[Boolean] = js.native
 }
@@ -19,24 +20,12 @@ object PartialwithThemeboolean {
   }
   
   @scala.inline
-  implicit class PartialwithThemebooleanOps[Self <: PartialwithThemeboolean] (val x: Self) extends AnyVal {
+  implicit class PartialwithThemebooleanMutableBuilder[Self <: PartialwithThemeboolean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithTheme(value: Boolean): Self = this.set("withTheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithTheme: Self = this.set("withTheme", js.undefined)
+    def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
   }
 }

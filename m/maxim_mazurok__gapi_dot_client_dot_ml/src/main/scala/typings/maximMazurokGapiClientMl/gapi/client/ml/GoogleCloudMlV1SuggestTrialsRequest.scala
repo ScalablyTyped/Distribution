@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1SuggestTrialsRequest extends js.Object {
+trait GoogleCloudMlV1SuggestTrialsRequest extends StObject {
   
   /**
     * Required. The identifier of the client that is requesting the suggestion. If multiple SuggestTrialsRequests have the same `client_id`, the service will return the identical
@@ -25,30 +26,18 @@ object GoogleCloudMlV1SuggestTrialsRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1SuggestTrialsRequestOps[Self <: GoogleCloudMlV1SuggestTrialsRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1SuggestTrialsRequestMutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuggestionCount(value: Double): Self = StObject.set(x, "suggestionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
-    
-    @scala.inline
-    def setSuggestionCount(value: Double): Self = this.set("suggestionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestionCount: Self = this.set("suggestionCount", js.undefined)
+    def setSuggestionCountUndefined: Self = StObject.set(x, "suggestionCount", js.undefined)
   }
 }

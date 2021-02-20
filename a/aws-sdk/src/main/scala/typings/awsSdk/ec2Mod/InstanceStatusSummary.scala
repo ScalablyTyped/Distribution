@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceStatusSummary extends js.Object {
+trait InstanceStatusSummary extends StObject {
   
   /**
     * The system instance health or application instance health.
@@ -26,33 +27,21 @@ object InstanceStatusSummary {
   }
   
   @scala.inline
-  implicit class InstanceStatusSummaryOps[Self <: InstanceStatusSummary] (val x: Self) extends AnyVal {
+  implicit class InstanceStatusSummaryMutableBuilder[Self <: InstanceStatusSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: InstanceStatusDetailsList): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsVarargs(value: InstanceStatusDetails*): Self = StObject.set(x, "Details", js.Array(value :_*))
     
     @scala.inline
-    def setDetailsVarargs(value: InstanceStatusDetails*): Self = this.set("Details", js.Array(value :_*))
+    def setStatus(value: SummaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: InstanceStatusDetailsList): Self = this.set("Details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: SummaryStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

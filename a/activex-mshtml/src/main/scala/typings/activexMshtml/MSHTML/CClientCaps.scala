@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CClientCaps extends js.Object {
+trait CClientCaps extends StObject {
   
   @JSName("MSHTML.CClientCaps_typekey")
   var MSHTMLDotCClientCaps_typekey: CClientCaps = js.native

@@ -1,12 +1,15 @@
 package typings.jsUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var url: UrlStatic = js.native
+  @JSGlobal("url")
+  @js.native
+  def url: UrlStatic = js.native
+  @scala.inline
+  def url_=(x: UrlStatic): Unit = js.Dynamic.global.updateDynamic("url")(x.asInstanceOf[js.Any])
 }

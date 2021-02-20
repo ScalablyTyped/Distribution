@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.iot
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleErrorActionCloudwatchAlarm extends js.Object {
+trait TopicRuleErrorActionCloudwatchAlarm extends StObject {
   
   /**
     * The CloudWatch alarm name.
@@ -42,30 +43,18 @@ object TopicRuleErrorActionCloudwatchAlarm {
   }
   
   @scala.inline
-  implicit class TopicRuleErrorActionCloudwatchAlarmOps[Self <: TopicRuleErrorActionCloudwatchAlarm] (val x: Self) extends AnyVal {
+  implicit class TopicRuleErrorActionCloudwatchAlarmMutableBuilder[Self <: TopicRuleErrorActionCloudwatchAlarm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlarmName(value: Input[String]): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStateReason(value: Input[String]): Self = StObject.set(x, "stateReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlarmName(value: Input[String]): Self = this.set("alarmName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateReason(value: Input[String]): Self = this.set("stateReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStateValue(value: Input[String]): Self = this.set("stateValue", value.asInstanceOf[js.Any])
+    def setStateValue(value: Input[String]): Self = StObject.set(x, "stateValue", value.asInstanceOf[js.Any])
   }
 }

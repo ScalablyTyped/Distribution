@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApigatewayAuditConfig extends js.Object {
+trait ApigatewayAuditConfig extends StObject {
   
   /** The configuration for logging of each type of permission. */
   var auditLogConfigs: js.UndefOr[js.Array[ApigatewayAuditLogConfig]] = js.native
@@ -25,33 +26,21 @@ object ApigatewayAuditConfig {
   }
   
   @scala.inline
-  implicit class ApigatewayAuditConfigOps[Self <: ApigatewayAuditConfig] (val x: Self) extends AnyVal {
+  implicit class ApigatewayAuditConfigMutableBuilder[Self <: ApigatewayAuditConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditLogConfigs(value: js.Array[ApigatewayAuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditLogConfigsUndefined: Self = StObject.set(x, "auditLogConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuditLogConfigsVarargs(value: ApigatewayAuditLogConfig*): Self = StObject.set(x, "auditLogConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setAuditLogConfigsVarargs(value: ApigatewayAuditLogConfig*): Self = this.set("auditLogConfigs", js.Array(value :_*))
+    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditLogConfigs(value: js.Array[ApigatewayAuditLogConfig]): Self = this.set("auditLogConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuditLogConfigs: Self = this.set("auditLogConfigs", js.undefined)
-    
-    @scala.inline
-    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

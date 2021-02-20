@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OracleSettings extends js.Object {
+trait OracleSettings extends StObject {
   
   /**
     * Set this attribute to false in order to use the Binary Reader to capture change data for an Amazon RDS for Oracle as the source. This tells the DMS instance to not access redo logs through any specified path prefix replacement using direct file access.
@@ -166,198 +167,186 @@ object OracleSettings {
   }
   
   @scala.inline
-  implicit class OracleSettingsOps[Self <: OracleSettings] (val x: Self) extends AnyVal {
+  implicit class OracleSettingsMutableBuilder[Self <: OracleSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessAlternateDirectly(value: BooleanOptional): Self = StObject.set(x, "AccessAlternateDirectly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessAlternateDirectlyUndefined: Self = StObject.set(x, "AccessAlternateDirectly", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddSupplementalLogging(value: BooleanOptional): Self = StObject.set(x, "AddSupplementalLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessAlternateDirectly(value: BooleanOptional): Self = this.set("AccessAlternateDirectly", value.asInstanceOf[js.Any])
+    def setAddSupplementalLoggingUndefined: Self = StObject.set(x, "AddSupplementalLogging", js.undefined)
     
     @scala.inline
-    def deleteAccessAlternateDirectly: Self = this.set("AccessAlternateDirectly", js.undefined)
+    def setAdditionalArchivedLogDestId(value: IntegerOptional): Self = StObject.set(x, "AdditionalArchivedLogDestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSupplementalLogging(value: BooleanOptional): Self = this.set("AddSupplementalLogging", value.asInstanceOf[js.Any])
+    def setAdditionalArchivedLogDestIdUndefined: Self = StObject.set(x, "AdditionalArchivedLogDestId", js.undefined)
     
     @scala.inline
-    def deleteAddSupplementalLogging: Self = this.set("AddSupplementalLogging", js.undefined)
+    def setAllowSelectNestedTables(value: BooleanOptional): Self = StObject.set(x, "AllowSelectNestedTables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalArchivedLogDestId(value: IntegerOptional): Self = this.set("AdditionalArchivedLogDestId", value.asInstanceOf[js.Any])
+    def setAllowSelectNestedTablesUndefined: Self = StObject.set(x, "AllowSelectNestedTables", js.undefined)
     
     @scala.inline
-    def deleteAdditionalArchivedLogDestId: Self = this.set("AdditionalArchivedLogDestId", js.undefined)
+    def setArchivedLogDestId(value: IntegerOptional): Self = StObject.set(x, "ArchivedLogDestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSelectNestedTables(value: BooleanOptional): Self = this.set("AllowSelectNestedTables", value.asInstanceOf[js.Any])
+    def setArchivedLogDestIdUndefined: Self = StObject.set(x, "ArchivedLogDestId", js.undefined)
     
     @scala.inline
-    def deleteAllowSelectNestedTables: Self = this.set("AllowSelectNestedTables", js.undefined)
+    def setArchivedLogsOnly(value: BooleanOptional): Self = StObject.set(x, "ArchivedLogsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchivedLogDestId(value: IntegerOptional): Self = this.set("ArchivedLogDestId", value.asInstanceOf[js.Any])
+    def setArchivedLogsOnlyUndefined: Self = StObject.set(x, "ArchivedLogsOnly", js.undefined)
     
     @scala.inline
-    def deleteArchivedLogDestId: Self = this.set("ArchivedLogDestId", js.undefined)
+    def setAsmPassword(value: SecretString): Self = StObject.set(x, "AsmPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchivedLogsOnly(value: BooleanOptional): Self = this.set("ArchivedLogsOnly", value.asInstanceOf[js.Any])
+    def setAsmPasswordUndefined: Self = StObject.set(x, "AsmPassword", js.undefined)
     
     @scala.inline
-    def deleteArchivedLogsOnly: Self = this.set("ArchivedLogsOnly", js.undefined)
+    def setAsmServer(value: String): Self = StObject.set(x, "AsmServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsmPassword(value: SecretString): Self = this.set("AsmPassword", value.asInstanceOf[js.Any])
+    def setAsmServerUndefined: Self = StObject.set(x, "AsmServer", js.undefined)
     
     @scala.inline
-    def deleteAsmPassword: Self = this.set("AsmPassword", js.undefined)
+    def setAsmUser(value: String): Self = StObject.set(x, "AsmUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsmServer(value: String): Self = this.set("AsmServer", value.asInstanceOf[js.Any])
+    def setAsmUserUndefined: Self = StObject.set(x, "AsmUser", js.undefined)
     
     @scala.inline
-    def deleteAsmServer: Self = this.set("AsmServer", js.undefined)
+    def setCharLengthSemantics(value: CharLengthSemantics): Self = StObject.set(x, "CharLengthSemantics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsmUser(value: String): Self = this.set("AsmUser", value.asInstanceOf[js.Any])
+    def setCharLengthSemanticsUndefined: Self = StObject.set(x, "CharLengthSemantics", js.undefined)
     
     @scala.inline
-    def deleteAsmUser: Self = this.set("AsmUser", js.undefined)
+    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLengthSemantics(value: CharLengthSemantics): Self = this.set("CharLengthSemantics", value.asInstanceOf[js.Any])
+    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
     @scala.inline
-    def deleteCharLengthSemantics: Self = this.set("CharLengthSemantics", js.undefined)
+    def setDirectPathNoLog(value: BooleanOptional): Self = StObject.set(x, "DirectPathNoLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setDirectPathNoLogUndefined: Self = StObject.set(x, "DirectPathNoLog", js.undefined)
     
     @scala.inline
-    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    def setDirectPathParallelLoad(value: BooleanOptional): Self = StObject.set(x, "DirectPathParallelLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectPathNoLog(value: BooleanOptional): Self = this.set("DirectPathNoLog", value.asInstanceOf[js.Any])
+    def setDirectPathParallelLoadUndefined: Self = StObject.set(x, "DirectPathParallelLoad", js.undefined)
     
     @scala.inline
-    def deleteDirectPathNoLog: Self = this.set("DirectPathNoLog", js.undefined)
+    def setEnableHomogenousTablespace(value: BooleanOptional): Self = StObject.set(x, "EnableHomogenousTablespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectPathParallelLoad(value: BooleanOptional): Self = this.set("DirectPathParallelLoad", value.asInstanceOf[js.Any])
+    def setEnableHomogenousTablespaceUndefined: Self = StObject.set(x, "EnableHomogenousTablespace", js.undefined)
     
     @scala.inline
-    def deleteDirectPathParallelLoad: Self = this.set("DirectPathParallelLoad", js.undefined)
+    def setFailTasksOnLobTruncation(value: BooleanOptional): Self = StObject.set(x, "FailTasksOnLobTruncation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHomogenousTablespace(value: BooleanOptional): Self = this.set("EnableHomogenousTablespace", value.asInstanceOf[js.Any])
+    def setFailTasksOnLobTruncationUndefined: Self = StObject.set(x, "FailTasksOnLobTruncation", js.undefined)
     
     @scala.inline
-    def deleteEnableHomogenousTablespace: Self = this.set("EnableHomogenousTablespace", js.undefined)
+    def setNumberDatatypeScale(value: IntegerOptional): Self = StObject.set(x, "NumberDatatypeScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailTasksOnLobTruncation(value: BooleanOptional): Self = this.set("FailTasksOnLobTruncation", value.asInstanceOf[js.Any])
+    def setNumberDatatypeScaleUndefined: Self = StObject.set(x, "NumberDatatypeScale", js.undefined)
     
     @scala.inline
-    def deleteFailTasksOnLobTruncation: Self = this.set("FailTasksOnLobTruncation", js.undefined)
+    def setOraclePathPrefix(value: String): Self = StObject.set(x, "OraclePathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberDatatypeScale(value: IntegerOptional): Self = this.set("NumberDatatypeScale", value.asInstanceOf[js.Any])
+    def setOraclePathPrefixUndefined: Self = StObject.set(x, "OraclePathPrefix", js.undefined)
     
     @scala.inline
-    def deleteNumberDatatypeScale: Self = this.set("NumberDatatypeScale", js.undefined)
+    def setParallelAsmReadThreads(value: IntegerOptional): Self = StObject.set(x, "ParallelAsmReadThreads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOraclePathPrefix(value: String): Self = this.set("OraclePathPrefix", value.asInstanceOf[js.Any])
+    def setParallelAsmReadThreadsUndefined: Self = StObject.set(x, "ParallelAsmReadThreads", js.undefined)
     
     @scala.inline
-    def deleteOraclePathPrefix: Self = this.set("OraclePathPrefix", js.undefined)
+    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelAsmReadThreads(value: IntegerOptional): Self = this.set("ParallelAsmReadThreads", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteParallelAsmReadThreads: Self = this.set("ParallelAsmReadThreads", js.undefined)
+    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: SecretString): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setReadAheadBlocks(value: IntegerOptional): Self = StObject.set(x, "ReadAheadBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setReadAheadBlocksUndefined: Self = StObject.set(x, "ReadAheadBlocks", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setReadTableSpaceName(value: BooleanOptional): Self = StObject.set(x, "ReadTableSpaceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadAheadBlocks(value: IntegerOptional): Self = this.set("ReadAheadBlocks", value.asInstanceOf[js.Any])
+    def setReadTableSpaceNameUndefined: Self = StObject.set(x, "ReadTableSpaceName", js.undefined)
     
     @scala.inline
-    def deleteReadAheadBlocks: Self = this.set("ReadAheadBlocks", js.undefined)
+    def setReplacePathPrefix(value: BooleanOptional): Self = StObject.set(x, "ReplacePathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTableSpaceName(value: BooleanOptional): Self = this.set("ReadTableSpaceName", value.asInstanceOf[js.Any])
+    def setReplacePathPrefixUndefined: Self = StObject.set(x, "ReplacePathPrefix", js.undefined)
     
     @scala.inline
-    def deleteReadTableSpaceName: Self = this.set("ReadTableSpaceName", js.undefined)
+    def setRetryInterval(value: IntegerOptional): Self = StObject.set(x, "RetryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacePathPrefix(value: BooleanOptional): Self = this.set("ReplacePathPrefix", value.asInstanceOf[js.Any])
+    def setRetryIntervalUndefined: Self = StObject.set(x, "RetryInterval", js.undefined)
     
     @scala.inline
-    def deleteReplacePathPrefix: Self = this.set("ReplacePathPrefix", js.undefined)
+    def setSecurityDbEncryption(value: SecretString): Self = StObject.set(x, "SecurityDbEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryInterval(value: IntegerOptional): Self = this.set("RetryInterval", value.asInstanceOf[js.Any])
+    def setSecurityDbEncryptionName(value: String): Self = StObject.set(x, "SecurityDbEncryptionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRetryInterval: Self = this.set("RetryInterval", js.undefined)
+    def setSecurityDbEncryptionNameUndefined: Self = StObject.set(x, "SecurityDbEncryptionName", js.undefined)
     
     @scala.inline
-    def setSecurityDbEncryption(value: SecretString): Self = this.set("SecurityDbEncryption", value.asInstanceOf[js.Any])
+    def setSecurityDbEncryptionUndefined: Self = StObject.set(x, "SecurityDbEncryption", js.undefined)
     
     @scala.inline
-    def deleteSecurityDbEncryption: Self = this.set("SecurityDbEncryption", js.undefined)
+    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityDbEncryptionName(value: String): Self = this.set("SecurityDbEncryptionName", value.asInstanceOf[js.Any])
+    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
     @scala.inline
-    def deleteSecurityDbEncryptionName: Self = this.set("SecurityDbEncryptionName", js.undefined)
+    def setUseAlternateFolderForOnline(value: BooleanOptional): Self = StObject.set(x, "UseAlternateFolderForOnline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setUseAlternateFolderForOnlineUndefined: Self = StObject.set(x, "UseAlternateFolderForOnline", js.undefined)
     
     @scala.inline
-    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    def setUsePathPrefix(value: String): Self = StObject.set(x, "UsePathPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseAlternateFolderForOnline(value: BooleanOptional): Self = this.set("UseAlternateFolderForOnline", value.asInstanceOf[js.Any])
+    def setUsePathPrefixUndefined: Self = StObject.set(x, "UsePathPrefix", js.undefined)
     
     @scala.inline
-    def deleteUseAlternateFolderForOnline: Self = this.set("UseAlternateFolderForOnline", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsePathPrefix(value: String): Self = this.set("UsePathPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePathPrefix: Self = this.set("UsePathPrefix", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

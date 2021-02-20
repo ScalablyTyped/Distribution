@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Authentication information for the operation.
   */
 @js.native
-trait SchemaAuthenticationInfo extends js.Object {
+trait SchemaAuthenticationInfo extends StObject {
   
   /**
     * The authority selector specified by the requestor, if any. It is not
@@ -58,51 +59,39 @@ object SchemaAuthenticationInfo {
   }
   
   @scala.inline
-  implicit class SchemaAuthenticationInfoOps[Self <: SchemaAuthenticationInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthenticationInfoMutableBuilder[Self <: SchemaAuthenticationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthoritySelector(value: String): Self = StObject.set(x, "authoritySelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthoritySelectorUndefined: Self = StObject.set(x, "authoritySelector", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthoritySelector(value: String): Self = this.set("authoritySelector", value.asInstanceOf[js.Any])
+    def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
     
     @scala.inline
-    def deleteAuthoritySelector: Self = this.set("authoritySelector", js.undefined)
+    def setServiceAccountDelegationInfo(value: js.Array[SchemaServiceAccountDelegationInfo]): Self = StObject.set(x, "serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalEmail(value: String): Self = this.set("principalEmail", value.asInstanceOf[js.Any])
+    def setServiceAccountDelegationInfoUndefined: Self = StObject.set(x, "serviceAccountDelegationInfo", js.undefined)
     
     @scala.inline
-    def deletePrincipalEmail: Self = this.set("principalEmail", js.undefined)
+    def setServiceAccountDelegationInfoVarargs(value: SchemaServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value :_*))
     
     @scala.inline
-    def setServiceAccountDelegationInfoVarargs(value: SchemaServiceAccountDelegationInfo*): Self = this.set("serviceAccountDelegationInfo", js.Array(value :_*))
+    def setServiceAccountKeyName(value: String): Self = StObject.set(x, "serviceAccountKeyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountDelegationInfo(value: js.Array[SchemaServiceAccountDelegationInfo]): Self = this.set("serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
+    def setServiceAccountKeyNameUndefined: Self = StObject.set(x, "serviceAccountKeyName", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountDelegationInfo: Self = this.set("serviceAccountDelegationInfo", js.undefined)
+    def setThirdPartyPrincipal(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountKeyName(value: String): Self = this.set("serviceAccountKeyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccountKeyName: Self = this.set("serviceAccountKeyName", js.undefined)
-    
-    @scala.inline
-    def setThirdPartyPrincipal(value: StringDictionary[js.Any]): Self = this.set("thirdPartyPrincipal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThirdPartyPrincipal: Self = this.set("thirdPartyPrincipal", js.undefined)
+    def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
   }
 }

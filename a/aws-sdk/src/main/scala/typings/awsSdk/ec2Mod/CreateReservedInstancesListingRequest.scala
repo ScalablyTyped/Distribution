@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateReservedInstancesListingRequest extends js.Object {
+trait CreateReservedInstancesListingRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier you provide to ensure idempotency of your listings. This helps avoid duplicate listings. For more information, see Ensuring Idempotency.
@@ -41,33 +42,21 @@ object CreateReservedInstancesListingRequest {
   }
   
   @scala.inline
-  implicit class CreateReservedInstancesListingRequestOps[Self <: CreateReservedInstancesListingRequest] (val x: Self) extends AnyVal {
+  implicit class CreateReservedInstancesListingRequestMutableBuilder[Self <: CreateReservedInstancesListingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPriceSchedules(value: PriceScheduleSpecificationList): Self = StObject.set(x, "PriceSchedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setPriceSchedulesVarargs(value: PriceScheduleSpecification*): Self = StObject.set(x, "PriceSchedules", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPriceSchedulesVarargs(value: PriceScheduleSpecification*): Self = this.set("PriceSchedules", js.Array(value :_*))
-    
-    @scala.inline
-    def setPriceSchedules(value: PriceScheduleSpecificationList): Self = this.set("PriceSchedules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReservedInstancesId(value: ReservationId): Self = this.set("ReservedInstancesId", value.asInstanceOf[js.Any])
+    def setReservedInstancesId(value: ReservationId): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
   }
 }

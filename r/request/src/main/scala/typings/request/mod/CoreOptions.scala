@@ -7,12 +7,13 @@ import typings.node.httpMod.AgentOptions
 import typings.node.httpMod.IncomingMessage
 import typings.request.requestNumbers.`4`
 import typings.request.requestNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoreOptions extends js.Object {
+trait CoreOptions extends StObject {
   
   var agent: js.UndefOr[Agent | typings.node.httpsMod.Agent] = js.native
   
@@ -123,330 +124,318 @@ object CoreOptions {
   }
   
   @scala.inline
-  implicit class CoreOptionsOps[Self <: CoreOptions] (val x: Self) extends AnyVal {
+  implicit class CoreOptionsMutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentClass(value: js.Any): Self = StObject.set(x, "agentClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentClassUndefined: Self = StObject.set(x, "agentClass", js.undefined)
     
     @scala.inline
-    def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = this.set("agent", value.asInstanceOf[js.Any])
+    def setAgentOptions(value: AgentOptions | typings.node.httpsMod.AgentOptions): Self = StObject.set(x, "agentOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAgent: Self = this.set("agent", js.undefined)
+    def setAgentOptionsUndefined: Self = StObject.set(x, "agentOptions", js.undefined)
     
     @scala.inline
-    def setAgentClass(value: js.Any): Self = this.set("agentClass", value.asInstanceOf[js.Any])
+    def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
     
     @scala.inline
-    def deleteAgentClass: Self = this.set("agentClass", js.undefined)
+    def setAuth(value: AuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentOptions(value: AgentOptions | typings.node.httpsMod.AgentOptions): Self = this.set("agentOptions", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAgentOptions: Self = this.set("agentOptions", js.undefined)
+    def setAws(value: AWSOptions): Self = StObject.set(x, "aws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: AuthOptions): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setAwsUndefined: Self = StObject.set(x, "aws", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAws(value: AWSOptions): Self = this.set("aws", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
     @scala.inline
-    def deleteAws: Self = this.set("aws", js.undefined)
+    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: String): Self = this.set("baseUrl", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("baseUrl", js.undefined)
+    def setCa(value: String | Buffer | (js.Array[Buffer | String])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: js.Any): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setCaVarargs(value: (Buffer | String)*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
     @scala.inline
-    def setCaVarargs(value: (Buffer | String)*): Self = this.set("ca", js.Array(value :_*))
+    def setCallback(value: (/* error */ js.Any, /* response */ Response, /* body */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCa(value: String | Buffer | (js.Array[Buffer | String])): Self = this.set("ca", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteCa: Self = this.set("ca", js.undefined)
+    def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: (/* error */ js.Any, /* response */ Response, /* body */ js.Any) => Unit): Self = this.set("callback", js.Any.fromFunction3(value))
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: Buffer): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setFamily(value: `4` | `6`): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def setEncodingNull: Self = this.set("encoding", null)
+    def setFollowAllRedirects(value: Boolean): Self = StObject.set(x, "followAllRedirects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: `4` | `6`): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setFollowAllRedirectsUndefined: Self = StObject.set(x, "followAllRedirects", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setFollowOriginalHttpMethod(value: Boolean): Self = StObject.set(x, "followOriginalHttpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowAllRedirects(value: Boolean): Self = this.set("followAllRedirects", value.asInstanceOf[js.Any])
+    def setFollowOriginalHttpMethodUndefined: Self = StObject.set(x, "followOriginalHttpMethod", js.undefined)
     
     @scala.inline
-    def deleteFollowAllRedirects: Self = this.set("followAllRedirects", js.undefined)
+    def setFollowRedirect(value: Boolean | (js.Function1[/* response */ IncomingMessage, Boolean])): Self = StObject.set(x, "followRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowOriginalHttpMethod(value: Boolean): Self = this.set("followOriginalHttpMethod", value.asInstanceOf[js.Any])
+    def setFollowRedirectFunction1(value: /* response */ IncomingMessage => Boolean): Self = StObject.set(x, "followRedirect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFollowOriginalHttpMethod: Self = this.set("followOriginalHttpMethod", js.undefined)
+    def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
     
     @scala.inline
-    def setFollowRedirectFunction1(value: /* response */ IncomingMessage => Boolean): Self = this.set("followRedirect", js.Any.fromFunction1(value))
+    def setForever(value: js.Any): Self = StObject.set(x, "forever", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowRedirect(value: Boolean | (js.Function1[/* response */ IncomingMessage, Boolean])): Self = this.set("followRedirect", value.asInstanceOf[js.Any])
+    def setForeverUndefined: Self = StObject.set(x, "forever", js.undefined)
     
     @scala.inline
-    def deleteFollowRedirect: Self = this.set("followRedirect", js.undefined)
+    def setForm(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForever(value: js.Any): Self = this.set("forever", value.asInstanceOf[js.Any])
+    def setFormData(value: StringDictionary[js.Any]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForever: Self = this.set("forever", js.undefined)
+    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
     @scala.inline
-    def setForm(value: StringDictionary[js.Any] | String): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormData(value: StringDictionary[js.Any]): Self = this.set("formData", value.asInstanceOf[js.Any])
+    def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
     
     @scala.inline
-    def deleteFormData: Self = this.set("formData", js.undefined)
+    def setHar(value: HttpArchiveRequest): Self = StObject.set(x, "har", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGzip(value: Boolean): Self = this.set("gzip", value.asInstanceOf[js.Any])
+    def setHarUndefined: Self = StObject.set(x, "har", js.undefined)
     
     @scala.inline
-    def deleteGzip: Self = this.set("gzip", js.undefined)
+    def setHawk(value: HawkOptions): Self = StObject.set(x, "hawk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHar(value: HttpArchiveRequest): Self = this.set("har", value.asInstanceOf[js.Any])
+    def setHawkUndefined: Self = StObject.set(x, "hawk", js.undefined)
     
     @scala.inline
-    def deleteHar: Self = this.set("har", js.undefined)
+    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHawk(value: HawkOptions): Self = this.set("hawk", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteHawk: Self = this.set("hawk", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setJar(value: CookieJar | Boolean): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJar(value: CookieJar | Boolean): Self = this.set("jar", value.asInstanceOf[js.Any])
+    def setJsonReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "jsonReplacer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteJar: Self = this.set("jar", js.undefined)
+    def setJsonReplacerUndefined: Self = StObject.set(x, "jsonReplacer", js.undefined)
     
     @scala.inline
-    def setJson(value: js.Any): Self = this.set("json", value.asInstanceOf[js.Any])
+    def setJsonReviver(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "jsonReviver", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setJsonReviverUndefined: Self = StObject.set(x, "jsonReviver", js.undefined)
     
     @scala.inline
-    def setJsonReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = this.set("jsonReplacer", js.Any.fromFunction2(value))
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
     @scala.inline
-    def deleteJsonReplacer: Self = this.set("jsonReplacer", js.undefined)
+    def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonReviver(value: (/* key */ String, /* value */ js.Any) => _): Self = this.set("jsonReviver", js.Any.fromFunction2(value))
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteJsonReviver: Self = this.set("jsonReviver", js.undefined)
+    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Buffer): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
     
     @scala.inline
-    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRedirects(value: Double): Self = this.set("maxRedirects", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMaxRedirects: Self = this.set("maxRedirects", js.undefined)
+    def setMultipart(value: js.Array[RequestPart] | Multipart): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setMultipartVarargs(value: RequestPart*): Self = StObject.set(x, "multipart", js.Array(value :_*))
     
     @scala.inline
-    def setMultipartVarargs(value: RequestPart*): Self = this.set("multipart", js.Array(value :_*))
+    def setOauth(value: OAuthOptions): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipart(value: js.Array[RequestPart] | Multipart): Self = this.set("multipart", value.asInstanceOf[js.Any])
+    def setOauthUndefined: Self = StObject.set(x, "oauth", js.undefined)
     
     @scala.inline
-    def deleteMultipart: Self = this.set("multipart", js.undefined)
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth(value: OAuthOptions): Self = this.set("oauth", value.asInstanceOf[js.Any])
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
     @scala.inline
-    def deleteOauth: Self = this.set("oauth", js.undefined)
+    def setPool(value: PoolOptions): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     
     @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPool(value: PoolOptions): Self = this.set("pool", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePool: Self = this.set("pool", js.undefined)
+    def setPostambleCRLF(value: Boolean): Self = StObject.set(x, "postambleCRLF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPostambleCRLFUndefined: Self = StObject.set(x, "postambleCRLF", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPreambleCRLF(value: Boolean): Self = StObject.set(x, "preambleCRLF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostambleCRLF(value: Boolean): Self = this.set("postambleCRLF", value.asInstanceOf[js.Any])
+    def setPreambleCRLFUndefined: Self = StObject.set(x, "preambleCRLF", js.undefined)
     
     @scala.inline
-    def deletePostambleCRLF: Self = this.set("postambleCRLF", js.undefined)
+    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreambleCRLF(value: Boolean): Self = this.set("preambleCRLF", value.asInstanceOf[js.Any])
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def deletePreambleCRLF: Self = this.set("preambleCRLF", js.undefined)
+    def setQs(value: js.Any): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxy(value: js.Any): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    def setQsParseOptions(value: js.Any): Self = StObject.set(x, "qsParseOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setQsParseOptionsUndefined: Self = StObject.set(x, "qsParseOptions", js.undefined)
     
     @scala.inline
-    def setQs(value: js.Any): Self = this.set("qs", value.asInstanceOf[js.Any])
+    def setQsStringifyOptions(value: js.Any): Self = StObject.set(x, "qsStringifyOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQs: Self = this.set("qs", js.undefined)
+    def setQsStringifyOptionsUndefined: Self = StObject.set(x, "qsStringifyOptions", js.undefined)
     
     @scala.inline
-    def setQsParseOptions(value: js.Any): Self = this.set("qsParseOptions", value.asInstanceOf[js.Any])
+    def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
     
     @scala.inline
-    def deleteQsParseOptions: Self = this.set("qsParseOptions", js.undefined)
+    def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQsStringifyOptions(value: js.Any): Self = this.set("qsStringifyOptions", value.asInstanceOf[js.Any])
+    def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     
     @scala.inline
-    def deleteQsStringifyOptions: Self = this.set("qsStringifyOptions", js.undefined)
+    def setRemoveRefererHeader(value: Boolean): Self = StObject.set(x, "removeRefererHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    def setRemoveRefererHeaderUndefined: Self = StObject.set(x, "removeRefererHeader", js.undefined)
     
     @scala.inline
-    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveRefererHeader(value: Boolean): Self = this.set("removeRefererHeader", value.asInstanceOf[js.Any])
+    def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
     
     @scala.inline
-    def deleteRemoveRefererHeader: Self = this.set("removeRefererHeader", js.undefined)
+    def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictSSL(value: Boolean): Self = this.set("strictSSL", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def deleteStrictSSL: Self = this.set("strictSSL", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: Boolean): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def setTunnel(value: Boolean): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUseQuerystring(value: Boolean): Self = StObject.set(x, "useQuerystring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTunnel(value: Boolean): Self = this.set("tunnel", value.asInstanceOf[js.Any])
+    def setUseQuerystringUndefined: Self = StObject.set(x, "useQuerystring", js.undefined)
     
     @scala.inline
-    def deleteTunnel: Self = this.set("tunnel", js.undefined)
+    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseQuerystring(value: Boolean): Self = this.set("useQuerystring", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseQuerystring: Self = this.set("useQuerystring", js.undefined)
-    
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

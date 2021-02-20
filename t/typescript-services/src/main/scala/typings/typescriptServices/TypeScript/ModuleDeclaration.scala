@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,39 +55,27 @@ object ModuleDeclaration {
   }
   
   @scala.inline
-  implicit class ModuleDeclarationOps[Self <: ModuleDeclaration] (val x: Self) extends AnyVal {
+  implicit class ModuleDeclarationMutableBuilder[Self <: ModuleDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndingToken(value: ASTSpan): Self = StObject.set(x, "endingToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
     @scala.inline
-    def setEndingToken(value: ASTSpan): Self = this.set("endingToken", value.asInstanceOf[js.Any])
+    def setModuleElements(value: ISyntaxList2): Self = StObject.set(x, "moduleElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = this.set("modifiers", js.Array(value :_*))
+    def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    def setStringLiteral(value: StringLiteral): Self = StObject.set(x, "stringLiteral", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleElements(value: ISyntaxList2): Self = this.set("moduleElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: AST): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStringLiteral(value: StringLiteral): Self = this.set("stringLiteral", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (ModuleDeclaration, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
+    def setStructuralEquals(value: (ModuleDeclaration, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

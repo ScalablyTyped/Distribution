@@ -1,25 +1,22 @@
 package typings.playerframework.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Microsoft")
-@js.native
-object Microsoft extends js.Object {
+object Microsoft {
   
-  @js.native
-  object PlayerFramework extends js.Object {
+  object PlayerFramework {
     
-    @js.native
-    object Js extends js.Object {
+    object Js {
       
-      @js.native
-      object Advertising extends js.Object {
+      object Advertising {
         
         /**
           * Provides an ad source that requires a Url to be downloaded and turned into a stream before passing to the ad handler.
           **/
+        @JSGlobal("Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource")
         @js.native
         class RemoteAdSource ()
           extends typings.playerframework.Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource
@@ -27,27 +24,42 @@ object Microsoft extends js.Object {
     }
   }
   
-  @js.native
-  object VideoAdvertising extends js.Object {
+  object VideoAdvertising {
     
+    @JSGlobal("Microsoft.VideoAdvertising.Extensions")
     @js.native
     class Extensions ()
       extends typings.playerframework.Microsoft.VideoAdvertising.Extensions
-    /* static members */
-    @js.native
-    object Extensions extends js.Object {
+    object Extensions {
       
-      var defaultUserAgent: String = js.native
+      @JSGlobal("Microsoft.VideoAdvertising.Extensions")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @JSGlobal("Microsoft.VideoAdvertising.Extensions.defaultUserAgent")
+      @js.native
+      def defaultUserAgent: String = js.native
+      @scala.inline
+      def defaultUserAgent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultUserAgent")(x.asInstanceOf[js.Any])
     }
     
+    @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler")
     @js.native
     class VastAdPayloadHandler ()
       extends typings.playerframework.Microsoft.VideoAdvertising.VastAdPayloadHandler
-    /* static members */
-    @js.native
-    object VastAdPayloadHandler extends js.Object {
+    object VastAdPayloadHandler {
       
-      var adType: String = js.native
+      @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler.adType")
+      @js.native
+      def adType: String = js.native
+      @scala.inline
+      def adType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adType")(x.asInstanceOf[js.Any])
     }
   }
 }

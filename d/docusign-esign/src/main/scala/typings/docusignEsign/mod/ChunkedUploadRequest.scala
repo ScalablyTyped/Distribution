@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChunkedUploadRequest extends js.Object {
+trait ChunkedUploadRequest extends StObject {
   
   /**
     * The id of the chunked upload.
@@ -31,30 +32,18 @@ object ChunkedUploadRequest {
   }
   
   @scala.inline
-  implicit class ChunkedUploadRequestOps[Self <: ChunkedUploadRequest] (val x: Self) extends AnyVal {
+  implicit class ChunkedUploadRequestMutableBuilder[Self <: ChunkedUploadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChunkedUploadId(value: String): Self = StObject.set(x, "chunkedUploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkedUploadIdUndefined: Self = StObject.set(x, "chunkedUploadId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChunkedUploadId(value: String): Self = this.set("chunkedUploadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChunkedUploadId: Self = this.set("chunkedUploadId", js.undefined)
-    
-    @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

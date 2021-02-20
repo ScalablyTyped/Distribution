@@ -6,12 +6,13 @@ import typings.reactBigCalendar.reactBigCalendarStrings.RIGHT
 import typings.reactBigCalendar.reactBigCalendarStrings.UP
 import typings.reactBigCalendar.reactBigCalendarStrings.move
 import typings.reactBigCalendar.reactBigCalendarStrings.resize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Direction[TEvent /* <: js.Object */] extends js.Object {
+trait Direction[TEvent /* <: js.Object */] extends StObject {
   
   var action: resize | move = js.native
   
@@ -28,27 +29,15 @@ object Direction {
   }
   
   @scala.inline
-  implicit class DirectionOps[Self <: Direction[_], TEvent /* <: js.Object */] (val x: Self with Direction[TEvent]) extends AnyVal {
+  implicit class DirectionMutableBuilder[Self <: Direction[_], TEvent /* <: js.Object */] (val x: Self with Direction[TEvent]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: resize | move): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirection(value: UP | DOWN | LEFT | RIGHT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: resize | move): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirection(value: UP | DOWN | LEFT | RIGHT): Self = this.set("direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: TEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setEvent(value: TEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

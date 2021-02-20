@@ -1,19 +1,18 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-@JSImport("sjcl", "TypeHelpers")
-@js.native
-object TypeHelpers extends js.Object {
+object TypeHelpers {
   
   @js.native
   trait BigNumberBinaryOperator extends One[BigNumber | Double | String]
   
   @js.native
-  trait BigNumberTrinaryOperator extends Two[BigNumber | Double | String, BigNumber | Double | String]
+  trait BigNumberTrinaryOperator extends Bind1[BigNumber | Double | String]
   
   @js.native
   trait Bind1[T] extends Two[BigNumber | Double | String, T]

@@ -3,16 +3,25 @@ package typings.whatwgUrl
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.IterableIterator
 import typings.whatwgUrl.anon.DoNotStripQMark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("whatwg-url/lib/URLSearchParams-impl", JSImport.Namespace)
-@js.native
-object urlsearchparamsImplMod extends js.Object {
+object urlsearchparamsImplMod {
+  
+  @JSImport("whatwg-url/lib/URLSearchParams-impl", "implementation")
+  @js.native
+  class implementation protected () extends URLSearchParamsImpl {
+    def this(
+      globalObject: js.Object,
+      hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],
+      privateData: DoNotStripQMark
+    ) = this()
+  }
   
   @js.native
-  trait URLSearchParamsImpl extends js.Object {
+  trait URLSearchParamsImpl extends StObject {
     
     def append(name: String, value: String): Unit = js.native
     
@@ -30,14 +39,5 @@ object urlsearchparamsImplMod extends js.Object {
     def set(name: String, value: String): Unit = js.native
     
     def sort(): Unit = js.native
-  }
-  
-  @js.native
-  class implementation protected () extends URLSearchParamsImpl {
-    def this(
-      globalObject: js.Object,
-      hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],
-      privateData: DoNotStripQMark
-    ) = this()
   }
 }

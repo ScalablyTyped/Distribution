@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProjectResponse extends js.Object {
+trait DescribeProjectResponse extends StObject {
   
   /**
     * The ID of the portal that the project is in.
@@ -58,42 +59,30 @@ object DescribeProjectResponse {
   }
   
   @scala.inline
-  implicit class DescribeProjectResponseOps[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeProjectResponseMutableBuilder[Self <: DescribeProjectResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectArn(value: ARN): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectCreationDate(value: Timestamp): Self = StObject.set(x, "projectCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalId(value: ID): Self = this.set("portalId", value.asInstanceOf[js.Any])
+    def setProjectDescription(value: Description): Self = StObject.set(x, "projectDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectArn(value: ARN): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    def setProjectDescriptionUndefined: Self = StObject.set(x, "projectDescription", js.undefined)
     
     @scala.inline
-    def setProjectCreationDate(value: Timestamp): Self = this.set("projectCreationDate", value.asInstanceOf[js.Any])
+    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: ID): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setProjectLastUpdateDate(value: Timestamp): Self = StObject.set(x, "projectLastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectLastUpdateDate(value: Timestamp): Self = this.set("projectLastUpdateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectName(value: Name): Self = this.set("projectName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectDescription(value: Description): Self = this.set("projectDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectDescription: Self = this.set("projectDescription", js.undefined)
+    def setProjectName(value: Name): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

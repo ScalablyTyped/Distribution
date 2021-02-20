@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogsLocation extends js.Object {
+trait LogsLocation extends StObject {
   
   /**
     *  Information about Amazon CloudWatch Logs for a build project. 
@@ -56,66 +57,54 @@ object LogsLocation {
   }
   
   @scala.inline
-  implicit class LogsLocationOps[Self <: LogsLocation] (val x: Self) extends AnyVal {
+  implicit class LogsLocationMutableBuilder[Self <: LogsLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = StObject.set(x, "cloudWatchLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLogsArn(value: String): Self = StObject.set(x, "cloudWatchLogsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWatchLogsArnUndefined: Self = StObject.set(x, "cloudWatchLogsArn", js.undefined)
     
     @scala.inline
-    def setCloudWatchLogs(value: CloudWatchLogsConfig): Self = this.set("cloudWatchLogs", value.asInstanceOf[js.Any])
+    def setCloudWatchLogsUndefined: Self = StObject.set(x, "cloudWatchLogs", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogs: Self = this.set("cloudWatchLogs", js.undefined)
+    def setDeepLink(value: String): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLogsArn(value: String): Self = this.set("cloudWatchLogsArn", value.asInstanceOf[js.Any])
+    def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLogsArn: Self = this.set("cloudWatchLogsArn", js.undefined)
+    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepLink(value: String): Self = this.set("deepLink", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
     @scala.inline
-    def deleteDeepLink: Self = this.set("deepLink", js.undefined)
+    def setS3DeepLink(value: String): Self = StObject.set(x, "s3DeepLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    def setS3DeepLinkUndefined: Self = StObject.set(x, "s3DeepLink", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    def setS3Logs(value: S3LogsConfig): Self = StObject.set(x, "s3Logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DeepLink(value: String): Self = this.set("s3DeepLink", value.asInstanceOf[js.Any])
+    def setS3LogsArn(value: String): Self = StObject.set(x, "s3LogsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteS3DeepLink: Self = this.set("s3DeepLink", js.undefined)
+    def setS3LogsArnUndefined: Self = StObject.set(x, "s3LogsArn", js.undefined)
     
     @scala.inline
-    def setS3Logs(value: S3LogsConfig): Self = this.set("s3Logs", value.asInstanceOf[js.Any])
+    def setS3LogsUndefined: Self = StObject.set(x, "s3Logs", js.undefined)
     
     @scala.inline
-    def deleteS3Logs: Self = this.set("s3Logs", js.undefined)
+    def setStreamName(value: String): Self = StObject.set(x, "streamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3LogsArn(value: String): Self = this.set("s3LogsArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3LogsArn: Self = this.set("s3LogsArn", js.undefined)
-    
-    @scala.inline
-    def setStreamName(value: String): Self = this.set("streamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamName: Self = this.set("streamName", js.undefined)
+    def setStreamNameUndefined: Self = StObject.set(x, "streamName", js.undefined)
   }
 }

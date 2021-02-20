@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,24 +32,12 @@ object XPersist {
   }
   
   @scala.inline
-  implicit class XPersistOps[Self <: XPersist] (val x: Self) extends AnyVal {
+  implicit class XPersistMutableBuilder[Self <: XPersist] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRead(value: String => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRead(value: String => Unit): Self = this.set("read", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWrite(value: String => Unit): Self = this.set("write", js.Any.fromFunction1(value))
+    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

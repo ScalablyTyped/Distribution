@@ -1,11 +1,12 @@
 package typings.grpcGrpcJs.loadBalancingConfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LrsLbConfig extends js.Object {
+trait LrsLbConfig extends StObject {
   
   var child_policy: js.Array[LoadBalancingConfig] = js.native
   
@@ -32,38 +33,26 @@ object LrsLbConfig {
   }
   
   @scala.inline
-  implicit class LrsLbConfigOps[Self <: LrsLbConfig] (val x: Self) extends AnyVal {
+  implicit class LrsLbConfigMutableBuilder[Self <: LrsLbConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChild_policy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "child_policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChild_policyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "child_policy", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCluster_name(value: String): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChild_policyVarargs(value: LoadBalancingConfig*): Self = this.set("child_policy", js.Array(value :_*))
-    
-    @scala.inline
-    def setChild_policy(value: js.Array[LoadBalancingConfig]): Self = this.set("child_policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCluster_name(value: String): Self = this.set("cluster_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEds_service_name(value: String): Self = this.set("eds_service_name", value.asInstanceOf[js.Any])
+    def setEds_service_name(value: String): Self = StObject.set(x, "eds_service_name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLocality(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Locality__Output */ js.Any
-    ): Self = this.set("locality", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLrs_load_reporting_server_name(value: String): Self = this.set("lrs_load_reporting_server_name", value.asInstanceOf[js.Any])
+    def setLrs_load_reporting_server_name(value: String): Self = StObject.set(x, "lrs_load_reporting_server_name", value.asInstanceOf[js.Any])
   }
 }

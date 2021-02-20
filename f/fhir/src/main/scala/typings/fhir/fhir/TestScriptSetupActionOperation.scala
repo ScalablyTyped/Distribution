@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -169,201 +170,189 @@ object TestScriptSetupActionOperation {
   }
   
   @scala.inline
-  implicit class TestScriptSetupActionOperationOps[Self <: TestScriptSetupActionOperation] (val x: Self) extends AnyVal {
+  implicit class TestScriptSetupActionOperationMutableBuilder[Self <: TestScriptSetupActionOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: code): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: code): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_accept(value: Element): Self = this.set("_accept", value.asInstanceOf[js.Any])
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def delete_accept: Self = this.set("_accept", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_contentType(value: Element): Self = this.set("_contentType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def delete_contentType: Self = this.set("_contentType", js.undefined)
+    def setDestination(value: integer): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def delete_description: Self = this.set("_description", js.undefined)
+    def setEncodeRequestUrl(value: Boolean): Self = StObject.set(x, "encodeRequestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_destination(value: Element): Self = this.set("_destination", value.asInstanceOf[js.Any])
+    def setEncodeRequestUrlUndefined: Self = StObject.set(x, "encodeRequestUrl", js.undefined)
     
     @scala.inline
-    def delete_destination: Self = this.set("_destination", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_encodeRequestUrl(value: Element): Self = this.set("_encodeRequestUrl", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def delete_encodeRequestUrl: Self = this.set("_encodeRequestUrl", js.undefined)
+    def setOrigin(value: integer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_label(value: Element): Self = this.set("_label", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def delete_label: Self = this.set("_label", js.undefined)
+    def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_origin(value: Element): Self = this.set("_origin", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def delete_origin: Self = this.set("_origin", js.undefined)
+    def setRequestHeader(value: js.Array[TestScriptSetupActionOperationRequestHeader]): Self = StObject.set(x, "requestHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_params(value: Element): Self = this.set("_params", value.asInstanceOf[js.Any])
+    def setRequestHeaderUndefined: Self = StObject.set(x, "requestHeader", js.undefined)
     
     @scala.inline
-    def delete_params: Self = this.set("_params", js.undefined)
+    def setRequestHeaderVarargs(value: TestScriptSetupActionOperationRequestHeader*): Self = StObject.set(x, "requestHeader", js.Array(value :_*))
     
     @scala.inline
-    def set_requestId(value: Element): Self = this.set("_requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: id): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_requestId: Self = this.set("_requestId", js.undefined)
+    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     @scala.inline
-    def set_resource(value: Element): Self = this.set("_resource", value.asInstanceOf[js.Any])
+    def setResource(value: code): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_resource: Self = this.set("_resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def set_responseId(value: Element): Self = this.set("_responseId", value.asInstanceOf[js.Any])
+    def setResponseId(value: id): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_responseId: Self = this.set("_responseId", js.undefined)
+    def setResponseIdUndefined: Self = StObject.set(x, "responseId", js.undefined)
     
     @scala.inline
-    def set_sourceId(value: Element): Self = this.set("_sourceId", value.asInstanceOf[js.Any])
+    def setSourceId(value: id): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sourceId: Self = this.set("_sourceId", js.undefined)
+    def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
     
     @scala.inline
-    def set_targetId(value: Element): Self = this.set("_targetId", value.asInstanceOf[js.Any])
+    def setTargetId(value: id): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_targetId: Self = this.set("_targetId", js.undefined)
+    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
     
     @scala.inline
-    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    def setType(value: Coding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_url: Self = this.set("_url", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setAccept(value: code): Self = this.set("accept", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccept: Self = this.set("accept", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setContentType(value: code): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def set_accept(value: Element): Self = StObject.set(x, "_accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def set_acceptUndefined: Self = StObject.set(x, "_accept", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
     
     @scala.inline
-    def setDestination(value: integer): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     @scala.inline
-    def setEncodeRequestUrl(value: Boolean): Self = this.set("encodeRequestUrl", value.asInstanceOf[js.Any])
+    def set_destination(value: Element): Self = StObject.set(x, "_destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncodeRequestUrl: Self = this.set("encodeRequestUrl", js.undefined)
+    def set_destinationUndefined: Self = StObject.set(x, "_destination", js.undefined)
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def set_encodeRequestUrl(value: Element): Self = StObject.set(x, "_encodeRequestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def set_encodeRequestUrlUndefined: Self = StObject.set(x, "_encodeRequestUrl", js.undefined)
     
     @scala.inline
-    def setOrigin(value: integer): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def set_label(value: Element): Self = StObject.set(x, "_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def set_labelUndefined: Self = StObject.set(x, "_label", js.undefined)
     
     @scala.inline
-    def setParams(value: String): Self = this.set("params", value.asInstanceOf[js.Any])
+    def set_origin(value: Element): Self = StObject.set(x, "_origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def set_originUndefined: Self = StObject.set(x, "_origin", js.undefined)
     
     @scala.inline
-    def setRequestHeaderVarargs(value: TestScriptSetupActionOperationRequestHeader*): Self = this.set("requestHeader", js.Array(value :_*))
+    def set_params(value: Element): Self = StObject.set(x, "_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestHeader(value: js.Array[TestScriptSetupActionOperationRequestHeader]): Self = this.set("requestHeader", value.asInstanceOf[js.Any])
+    def set_paramsUndefined: Self = StObject.set(x, "_params", js.undefined)
     
     @scala.inline
-    def deleteRequestHeader: Self = this.set("requestHeader", js.undefined)
+    def set_requestId(value: Element): Self = StObject.set(x, "_requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: id): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def set_requestIdUndefined: Self = StObject.set(x, "_requestId", js.undefined)
     
     @scala.inline
-    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    def set_resource(value: Element): Self = StObject.set(x, "_resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: code): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def set_resourceUndefined: Self = StObject.set(x, "_resource", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def set_responseId(value: Element): Self = StObject.set(x, "_responseId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseId(value: id): Self = this.set("responseId", value.asInstanceOf[js.Any])
+    def set_responseIdUndefined: Self = StObject.set(x, "_responseId", js.undefined)
     
     @scala.inline
-    def deleteResponseId: Self = this.set("responseId", js.undefined)
+    def set_sourceId(value: Element): Self = StObject.set(x, "_sourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceId(value: id): Self = this.set("sourceId", value.asInstanceOf[js.Any])
+    def set_sourceIdUndefined: Self = StObject.set(x, "_sourceId", js.undefined)
     
     @scala.inline
-    def deleteSourceId: Self = this.set("sourceId", js.undefined)
+    def set_targetId(value: Element): Self = StObject.set(x, "_targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetId(value: id): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def set_targetIdUndefined: Self = StObject.set(x, "_targetId", js.undefined)
     
     @scala.inline
-    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Coding): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

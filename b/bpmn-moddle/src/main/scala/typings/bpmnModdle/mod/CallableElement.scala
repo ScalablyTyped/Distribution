@@ -1,5 +1,6 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object CallableElement {
   }
   
   @scala.inline
-  implicit class CallableElementOps[Self <: CallableElement] (val x: Self) extends AnyVal {
+  implicit class CallableElementMutableBuilder[Self <: CallableElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIoBinding(value: InputOutputBinding): Self = StObject.set(x, "ioBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIoSpecification(value: InputOutputSpecification): Self = StObject.set(x, "ioSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIoBinding(value: InputOutputBinding): Self = this.set("ioBinding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIoSpecification(value: InputOutputSpecification): Self = this.set("ioSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedInterfaceRef(value: Interface): Self = this.set("supportedInterfaceRef", value.asInstanceOf[js.Any])
+    def setSupportedInterfaceRef(value: Interface): Self = StObject.set(x, "supportedInterfaceRef", value.asInstanceOf[js.Any])
   }
 }

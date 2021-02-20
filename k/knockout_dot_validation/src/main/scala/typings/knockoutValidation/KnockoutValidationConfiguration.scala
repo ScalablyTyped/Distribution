@@ -1,11 +1,12 @@
 package typings.knockoutValidation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutValidationConfiguration extends js.Object {
+trait KnockoutValidationConfiguration extends StObject {
   
   /**
     * Allows HTML in validation messages
@@ -105,123 +106,111 @@ object KnockoutValidationConfiguration {
   }
   
   @scala.inline
-  implicit class KnockoutValidationConfigurationOps[Self <: KnockoutValidationConfiguration] (val x: Self) extends AnyVal {
+  implicit class KnockoutValidationConfigurationMutableBuilder[Self <: KnockoutValidationConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHtmlMessages(value: Boolean): Self = StObject.set(x, "allowHtmlMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowHtmlMessagesUndefined: Self = StObject.set(x, "allowHtmlMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecorateElementOnModified(value: Boolean): Self = StObject.set(x, "decorateElementOnModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHtmlMessages(value: Boolean): Self = this.set("allowHtmlMessages", value.asInstanceOf[js.Any])
+    def setDecorateElementOnModifiedUndefined: Self = StObject.set(x, "decorateElementOnModified", js.undefined)
     
     @scala.inline
-    def deleteAllowHtmlMessages: Self = this.set("allowHtmlMessages", js.undefined)
+    def setDecorateInputElement(value: Boolean): Self = StObject.set(x, "decorateInputElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorateElementOnModified(value: Boolean): Self = this.set("decorateElementOnModified", value.asInstanceOf[js.Any])
+    def setDecorateInputElementUndefined: Self = StObject.set(x, "decorateInputElement", js.undefined)
     
     @scala.inline
-    def deleteDecorateElementOnModified: Self = this.set("decorateElementOnModified", js.undefined)
+    def setErrorClass(value: String): Self = StObject.set(x, "errorClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorateInputElement(value: Boolean): Self = this.set("decorateInputElement", value.asInstanceOf[js.Any])
+    def setErrorClassUndefined: Self = StObject.set(x, "errorClass", js.undefined)
     
     @scala.inline
-    def deleteDecorateInputElement: Self = this.set("decorateInputElement", js.undefined)
+    def setErrorElementClass(value: String): Self = StObject.set(x, "errorElementClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorClass(value: String): Self = this.set("errorClass", value.asInstanceOf[js.Any])
+    def setErrorElementClassUndefined: Self = StObject.set(x, "errorElementClass", js.undefined)
     
     @scala.inline
-    def deleteErrorClass: Self = this.set("errorClass", js.undefined)
+    def setErrorMessageClass(value: String): Self = StObject.set(x, "errorMessageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorElementClass(value: String): Self = this.set("errorElementClass", value.asInstanceOf[js.Any])
+    def setErrorMessageClassUndefined: Self = StObject.set(x, "errorMessageClass", js.undefined)
     
     @scala.inline
-    def deleteErrorElementClass: Self = this.set("errorElementClass", js.undefined)
+    def setErrorsAsTitle(value: Boolean): Self = StObject.set(x, "errorsAsTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessageClass(value: String): Self = this.set("errorMessageClass", value.asInstanceOf[js.Any])
+    def setErrorsAsTitleOnModified(value: Boolean): Self = StObject.set(x, "errorsAsTitleOnModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorMessageClass: Self = this.set("errorMessageClass", js.undefined)
+    def setErrorsAsTitleOnModifiedUndefined: Self = StObject.set(x, "errorsAsTitleOnModified", js.undefined)
     
     @scala.inline
-    def setErrorsAsTitle(value: Boolean): Self = this.set("errorsAsTitle", value.asInstanceOf[js.Any])
+    def setErrorsAsTitleUndefined: Self = StObject.set(x, "errorsAsTitle", js.undefined)
     
     @scala.inline
-    def deleteErrorsAsTitle: Self = this.set("errorsAsTitle", js.undefined)
+    def setGrouping(value: KnockoutValidationGroupingOptions): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsAsTitleOnModified(value: Boolean): Self = this.set("errorsAsTitleOnModified", value.asInstanceOf[js.Any])
+    def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     
     @scala.inline
-    def deleteErrorsAsTitleOnModified: Self = this.set("errorsAsTitleOnModified", js.undefined)
+    def setHtml5InputTypes(value: js.Array[String]): Self = StObject.set(x, "html5InputTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrouping(value: KnockoutValidationGroupingOptions): Self = this.set("grouping", value.asInstanceOf[js.Any])
+    def setHtml5InputTypesUndefined: Self = StObject.set(x, "html5InputTypes", js.undefined)
     
     @scala.inline
-    def deleteGrouping: Self = this.set("grouping", js.undefined)
+    def setHtml5InputTypesVarargs(value: String*): Self = StObject.set(x, "html5InputTypes", js.Array(value :_*))
     
     @scala.inline
-    def setHtml5InputTypesVarargs(value: String*): Self = this.set("html5InputTypes", js.Array(value :_*))
+    def setInsertMessages(value: Boolean): Self = StObject.set(x, "insertMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml5InputTypes(value: js.Array[String]): Self = this.set("html5InputTypes", value.asInstanceOf[js.Any])
+    def setInsertMessagesUndefined: Self = StObject.set(x, "insertMessages", js.undefined)
     
     @scala.inline
-    def deleteHtml5InputTypes: Self = this.set("html5InputTypes", js.undefined)
+    def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertMessages(value: Boolean): Self = this.set("insertMessages", value.asInstanceOf[js.Any])
+    def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
     
     @scala.inline
-    def deleteInsertMessages: Self = this.set("insertMessages", js.undefined)
+    def setMessagesOnModified(value: Boolean): Self = StObject.set(x, "messagesOnModified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageTemplate(value: String): Self = this.set("messageTemplate", value.asInstanceOf[js.Any])
+    def setMessagesOnModifiedUndefined: Self = StObject.set(x, "messagesOnModified", js.undefined)
     
     @scala.inline
-    def deleteMessageTemplate: Self = this.set("messageTemplate", js.undefined)
+    def setParseInputAttributes(value: Boolean): Self = StObject.set(x, "parseInputAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessagesOnModified(value: Boolean): Self = this.set("messagesOnModified", value.asInstanceOf[js.Any])
+    def setParseInputAttributesUndefined: Self = StObject.set(x, "parseInputAttributes", js.undefined)
     
     @scala.inline
-    def deleteMessagesOnModified: Self = this.set("messagesOnModified", js.undefined)
+    def setRegisterExtenders(value: Boolean): Self = StObject.set(x, "registerExtenders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseInputAttributes(value: Boolean): Self = this.set("parseInputAttributes", value.asInstanceOf[js.Any])
+    def setRegisterExtendersUndefined: Self = StObject.set(x, "registerExtenders", js.undefined)
     
     @scala.inline
-    def deleteParseInputAttributes: Self = this.set("parseInputAttributes", js.undefined)
+    def setValidate(value: KnockoutValidationValidateOptions): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegisterExtenders(value: Boolean): Self = this.set("registerExtenders", value.asInstanceOf[js.Any])
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
     @scala.inline
-    def deleteRegisterExtenders: Self = this.set("registerExtenders", js.undefined)
+    def setWriteInputAttributes(value: Boolean): Self = StObject.set(x, "writeInputAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate(value: KnockoutValidationValidateOptions): Self = this.set("validate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
-    
-    @scala.inline
-    def setWriteInputAttributes(value: Boolean): Self = this.set("writeInputAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteInputAttributes: Self = this.set("writeInputAttributes", js.undefined)
+    def setWriteInputAttributesUndefined: Self = StObject.set(x, "writeInputAttributes", js.undefined)
   }
 }

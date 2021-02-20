@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisTimeUnit extends js.Object
+sealed trait ChartAxisTimeUnit extends StObject
 /**
   *
   * Specifies the unit of time for chart axes and data series.
@@ -14,7 +15,7 @@ sealed trait ChartAxisTimeUnit extends js.Object
   */
 @JSGlobal("Excel.ChartAxisTimeUnit")
 @js.native
-object ChartAxisTimeUnit extends js.Object {
+object ChartAxisTimeUnit extends StObject {
   
   @js.native
   sealed trait days extends ChartAxisTimeUnit

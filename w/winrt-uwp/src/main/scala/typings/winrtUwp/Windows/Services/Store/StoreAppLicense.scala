@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Services.Store
 
 import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides license info for the current app, including licenses for products that are offered by the app. */
 @js.native
-trait StoreAppLicense extends js.Object {
+trait StoreAppLicense extends StObject {
   
   /** Gets the collection of licenses for add-ons that can be used offline (typically durable add-ons), for which the user has entitlements to use. This property does not include licenses for consumable add-ons. */
   var addOnLicenses: IMapView[String, StoreLicense] = js.native
@@ -56,45 +57,33 @@ object StoreAppLicense {
   }
   
   @scala.inline
-  implicit class StoreAppLicenseOps[Self <: StoreAppLicense] (val x: Self) extends AnyVal {
+  implicit class StoreAppLicenseMutableBuilder[Self <: StoreAppLicense] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddOnLicenses(value: IMapView[String, StoreLicense]): Self = StObject.set(x, "addOnLicenses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddOnLicenses(value: IMapView[String, StoreLicense]): Self = this.set("addOnLicenses", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: Date): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    def setIsTrial(value: Boolean): Self = StObject.set(x, "isTrial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedJsonData(value: String): Self = this.set("extendedJsonData", value.asInstanceOf[js.Any])
+    def setIsTrialOwnedByThisUser(value: Boolean): Self = StObject.set(x, "isTrialOwnedByThisUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setSkuStoreId(value: String): Self = StObject.set(x, "skuStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTrial(value: Boolean): Self = this.set("isTrial", value.asInstanceOf[js.Any])
+    def setTrialTimeRemaining(value: Double): Self = StObject.set(x, "trialTimeRemaining", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTrialOwnedByThisUser(value: Boolean): Self = this.set("isTrialOwnedByThisUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkuStoreId(value: String): Self = this.set("skuStoreId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrialTimeRemaining(value: Double): Self = this.set("trialTimeRemaining", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrialUniqueId(value: String): Self = this.set("trialUniqueId", value.asInstanceOf[js.Any])
+    def setTrialUniqueId(value: String): Self = StObject.set(x, "trialUniqueId", value.asInstanceOf[js.Any])
   }
 }

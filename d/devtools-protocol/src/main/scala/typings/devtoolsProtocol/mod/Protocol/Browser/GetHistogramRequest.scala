@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHistogramRequest extends js.Object {
+trait GetHistogramRequest extends StObject {
   
   /**
     * If true, retrieve delta since last call.
@@ -26,27 +27,15 @@ object GetHistogramRequest {
   }
   
   @scala.inline
-  implicit class GetHistogramRequestOps[Self <: GetHistogramRequest] (val x: Self) extends AnyVal {
+  implicit class GetHistogramRequestMutableBuilder[Self <: GetHistogramRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelta(value: Boolean): Self = this.set("delta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

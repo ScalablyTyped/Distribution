@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectReference extends js.Object {
+trait ProjectReference extends StObject {
   
   /** True if it is intended that this reference form a circularity */
   var circular: js.UndefOr[Boolean] = js.native
@@ -28,39 +29,27 @@ object ProjectReference {
   }
   
   @scala.inline
-  implicit class ProjectReferenceOps[Self <: ProjectReference] (val x: Self) extends AnyVal {
+  implicit class ProjectReferenceMutableBuilder[Self <: ProjectReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalPath(value: java.lang.String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: java.lang.String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setOriginalPathUndefined: Self = StObject.set(x, "originalPath", js.undefined)
     
     @scala.inline
-    def setCircular(value: Boolean): Self = this.set("circular", value.asInstanceOf[js.Any])
+    def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCircular: Self = this.set("circular", js.undefined)
+    def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPath(value: java.lang.String): Self = this.set("originalPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalPath: Self = this.set("originalPath", js.undefined)
-    
-    @scala.inline
-    def setPrepend(value: Boolean): Self = this.set("prepend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrepend: Self = this.set("prepend", js.undefined)
+    def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
   }
 }

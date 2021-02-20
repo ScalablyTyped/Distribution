@@ -1,11 +1,12 @@
 package typings.awsSdkBuildTypes.customizationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationPropertyDefinitionSharedAttributes extends js.Object {
+trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
   
   /**
     * The documentation string that should be injected over this configuration
@@ -63,45 +64,33 @@ object ConfigurationPropertyDefinitionSharedAttributes {
   }
   
   @scala.inline
-  implicit class ConfigurationPropertyDefinitionSharedAttributesOps[Self <: ConfigurationPropertyDefinitionSharedAttributes] (val x: Self) extends AnyVal {
+  implicit class ConfigurationPropertyDefinitionSharedAttributesMutableBuilder[Self <: ConfigurationPropertyDefinitionSharedAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
-    def setInputType(value: String): Self = this.set("inputType", value.asInstanceOf[js.Any])
+    def setInputType(value: String): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsVarargs(value: Import*): Self = this.set("imports", js.Array(value :_*))
+    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Array[Import]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
     @scala.inline
-    def deleteImports: Self = this.set("imports", js.undefined)
+    def setResolvedType(value: String): Self = StObject.set(x, "resolvedType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal(value: Boolean): Self = this.set("internal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInternal: Self = this.set("internal", js.undefined)
-    
-    @scala.inline
-    def setResolvedType(value: String): Self = this.set("resolvedType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvedType: Self = this.set("resolvedType", js.undefined)
+    def setResolvedTypeUndefined: Self = StObject.set(x, "resolvedType", js.undefined)
   }
 }

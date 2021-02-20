@@ -8,6 +8,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.icons
 import typings.oracleOraclejet.oracleOraclejetStrings.none
 import typings.oracleOraclejet.oracleOraclejetStrings.oneTabstop
 import typings.oracleOraclejet.oracleOraclejetStrings.outlined
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,33 +41,21 @@ object ojButtonsetOneSettableProperties {
   }
   
   @scala.inline
-  implicit class ojButtonsetOneSettablePropertiesOps[Self <: ojButtonsetOneSettableProperties] (val x: Self) extends AnyVal {
+  implicit class ojButtonsetOneSettablePropertiesMutableBuilder[Self <: ojButtonsetOneSettableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChroming(value: full | half | outlined): Self = StObject.set(x, "chroming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplay(value: all | icons): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChroming(value: full | half | outlined): Self = this.set("chroming", value.asInstanceOf[js.Any])
+    def setFocusManagement(value: oneTabstop | none): Self = StObject.set(x, "focusManagement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDisplay(value: all | icons): Self = this.set("display", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFocusManagement(value: oneTabstop | none): Self = this.set("focusManagement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

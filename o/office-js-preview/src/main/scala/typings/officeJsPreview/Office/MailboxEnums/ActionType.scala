@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office.MailboxEnums
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ActionType extends js.Object
+sealed trait ActionType extends StObject
 /**
   * Specifies the type of action in a notification message.
   *
@@ -15,7 +16,7 @@ sealed trait ActionType extends js.Object
   */
 @JSGlobal("Office.MailboxEnums.ActionType")
 @js.native
-object ActionType extends js.Object {
+object ActionType extends StObject {
   
   /**
     * The `showTaskPane` action.

@@ -5,6 +5,7 @@ import typings.pulumiAws.documentationVersionMod.DocumentationVersionState
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,9 +25,7 @@ class DocumentationVersion protected ()
   def this(name: String, args: DocumentationVersionArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/aws/apigateway", "DocumentationVersion")
-@js.native
-object DocumentationVersion extends js.Object {
+object DocumentationVersion {
   
   /**
     * Get an existing DocumentationVersion resource's state with the given name, ID, and optional extra
@@ -37,14 +36,24 @@ object DocumentationVersion extends js.Object {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/aws/apigateway", "DocumentationVersion.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiAws.documentationVersionMod.DocumentationVersion = js.native
+  @JSImport("@pulumi/aws/apigateway", "DocumentationVersion.get")
+  @js.native
   def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.documentationVersionMod.DocumentationVersion = js.native
+  @JSImport("@pulumi/aws/apigateway", "DocumentationVersion.get")
+  @js.native
   def get(name: String, id: Input[ID], state: DocumentationVersionState): typings.pulumiAws.documentationVersionMod.DocumentationVersion = js.native
+  @JSImport("@pulumi/aws/apigateway", "DocumentationVersion.get")
+  @js.native
   def get(name: String, id: Input[ID], state: DocumentationVersionState, opts: CustomResourceOptions): typings.pulumiAws.documentationVersionMod.DocumentationVersion = js.native
   
   /**
     * Returns true if the given object is an instance of DocumentationVersion.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/aws/apigateway", "DocumentationVersion.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ Boolean = js.native
 }

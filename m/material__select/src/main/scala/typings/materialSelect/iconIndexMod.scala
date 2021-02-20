@@ -1,42 +1,38 @@
 package typings.materialSelect
 
-import typings.materialSelect.anon.ICONEVENT
 import typings.materialSelect.anon.PartialMDCSelectIconAdapt
-import typings.materialSelect.iconAdapterMod.MDCSelectIconAdapter
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/select/icon/index", JSImport.Namespace)
-@js.native
-object iconIndexMod extends js.Object {
+object iconIndexMod {
   
+  @JSImport("@material/select/icon/index", "MDCSelectIcon")
   @js.native
-  class MDCSelectIcon ()
-    extends typings.materialSelect.iconComponentMod.MDCSelectIcon
+  class MDCSelectIcon protected ()
+    extends typings.materialSelect.iconComponentMod.MDCSelectIcon {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCSelectIcon extends js.Object {
+  object MDCSelectIcon {
     
+    @JSImport("@material/select/icon/index", "MDCSelectIcon.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialSelect.iconComponentMod.MDCSelectIcon = js.native
   }
   
+  @JSImport("@material/select/icon/index", "MDCSelectIconFoundation")
   @js.native
   class MDCSelectIconFoundation ()
     extends typings.materialSelect.iconFoundationMod.MDCSelectIconFoundation {
     def this(adapter: PartialMDCSelectIconAdapt) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCSelectIconFoundation extends js.Object {
-    
-    /**
-      * See {@link MDCSelectIconAdapter} for typing information on parameters and return types.
-      */
-    def defaultAdapter: MDCSelectIconAdapter = js.native
-    
-    def strings: ICONEVENT = js.native
   }
   
   /**
@@ -61,11 +57,22 @@ object iconIndexMod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object iconStrings extends js.Object {
+  object iconStrings {
     
-    var ICON_EVENT: String = js.native
+    @JSImport("@material/select/icon/index", "iconStrings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var ICON_ROLE: String = js.native
+    @JSImport("@material/select/icon/index", "iconStrings.ICON_EVENT")
+    @js.native
+    def ICON_EVENT: String = js.native
+    @scala.inline
+    def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/select/icon/index", "iconStrings.ICON_ROLE")
+    @js.native
+    def ICON_ROLE: String = js.native
+    @scala.inline
+    def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
   }
 }

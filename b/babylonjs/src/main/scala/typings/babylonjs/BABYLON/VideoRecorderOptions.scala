@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.MediaStreamTrack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoRecorderOptions extends js.Object {
+trait VideoRecorderOptions extends StObject {
   
   /** The audio tracks to attach to the recording. */
   var audioTracks: js.UndefOr[js.Array[MediaStreamTrack]] = js.native
@@ -29,36 +30,24 @@ object VideoRecorderOptions {
   }
   
   @scala.inline
-  implicit class VideoRecorderOptionsOps[Self <: VideoRecorderOptions] (val x: Self) extends AnyVal {
+  implicit class VideoRecorderOptionsMutableBuilder[Self <: VideoRecorderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioTracks(value: js.Array[MediaStreamTrack]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioTracksUndefined: Self = StObject.set(x, "audioTracks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioTracksVarargs(value: MediaStreamTrack*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
     
     @scala.inline
-    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
+    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordChunckSize(value: Double): Self = this.set("recordChunckSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAudioTracksVarargs(value: MediaStreamTrack*): Self = this.set("audioTracks", js.Array(value :_*))
-    
-    @scala.inline
-    def setAudioTracks(value: js.Array[MediaStreamTrack]): Self = this.set("audioTracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudioTracks: Self = this.set("audioTracks", js.undefined)
+    def setRecordChunckSize(value: Double): Self = StObject.set(x, "recordChunckSize", value.asInstanceOf[js.Any])
   }
 }

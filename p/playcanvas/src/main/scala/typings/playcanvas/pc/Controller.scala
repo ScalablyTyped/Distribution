@@ -2,6 +2,7 @@ package typings.playcanvas.pc
 
 import typings.playcanvas.anon.Pad
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.gamepads] - A Gamepads object to use.
   */
 @js.native
-trait Controller extends js.Object {
+trait Controller extends StObject {
   
   /**
     * Attach Controller to a Element, this is required before you can monitor for key/mouse inputs.

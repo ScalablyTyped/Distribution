@@ -1,15 +1,15 @@
 package typings.protractor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protractor/built/taskLogger", JSImport.Namespace)
-@js.native
-object taskLoggerMod extends js.Object {
+object taskLoggerMod {
   
+  @JSImport("protractor/built/taskLogger", "TaskLogger")
   @js.native
-  class TaskLogger protected () extends js.Object {
+  class TaskLogger protected () extends StObject {
     /**
       * Log output such that metadata are appended.
       * Calling log(data) will not flush to console until you call flush()

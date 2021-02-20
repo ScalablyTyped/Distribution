@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewsRepositoryInboxResponseCounts extends js.Object {
+trait NewsRepositoryInboxResponseCounts extends StObject {
   
   var campaign_notification: js.UndefOr[Double] = js.native
   
@@ -32,66 +33,54 @@ object NewsRepositoryInboxResponseCounts {
   }
   
   @scala.inline
-  implicit class NewsRepositoryInboxResponseCountsOps[Self <: NewsRepositoryInboxResponseCounts] (val x: Self) extends AnyVal {
+  implicit class NewsRepositoryInboxResponseCountsMutableBuilder[Self <: NewsRepositoryInboxResponseCounts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCampaign_notification(value: Double): Self = StObject.set(x, "campaign_notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCampaign_notificationUndefined: Self = StObject.set(x, "campaign_notification", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComment_likes(value: Double): Self = StObject.set(x, "comment_likes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaign_notification(value: Double): Self = this.set("campaign_notification", value.asInstanceOf[js.Any])
+    def setComment_likesUndefined: Self = StObject.set(x, "comment_likes", js.undefined)
     
     @scala.inline
-    def deleteCampaign_notification: Self = this.set("campaign_notification", js.undefined)
+    def setComments(value: Double): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment_likes(value: Double): Self = this.set("comment_likes", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def deleteComment_likes: Self = this.set("comment_likes", js.undefined)
+    def setLikes(value: Double): Self = StObject.set(x, "likes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: Double): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setLikesUndefined: Self = StObject.set(x, "likes", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setPhotos_of_you(value: Double): Self = StObject.set(x, "photos_of_you", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikes(value: Double): Self = this.set("likes", value.asInstanceOf[js.Any])
+    def setPhotos_of_youUndefined: Self = StObject.set(x, "photos_of_you", js.undefined)
     
     @scala.inline
-    def deleteLikes: Self = this.set("likes", js.undefined)
+    def setRelationships(value: Double): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotos_of_you(value: Double): Self = this.set("photos_of_you", value.asInstanceOf[js.Any])
+    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
     @scala.inline
-    def deletePhotos_of_you: Self = this.set("photos_of_you", js.undefined)
+    def setRequests(value: Double): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationships(value: Double): Self = this.set("relationships", value.asInstanceOf[js.Any])
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def deleteRelationships: Self = this.set("relationships", js.undefined)
+    def setUsertags(value: Double): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequests(value: Double): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
-    
-    @scala.inline
-    def setUsertags(value: Double): Self = this.set("usertags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsertags: Self = this.set("usertags", js.undefined)
+    def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoundingBoxOptions extends js.Object {
+trait BoundingBoxOptions extends StObject {
   
   /** A boolean indicating whether to include edges in the bounding box (default true). */
   var includeEdges: js.UndefOr[Boolean] = js.native
@@ -37,60 +38,48 @@ object BoundingBoxOptions {
   }
   
   @scala.inline
-  implicit class BoundingBoxOptionsOps[Self <: BoundingBoxOptions] (val x: Self) extends AnyVal {
+  implicit class BoundingBoxOptionsMutableBuilder[Self <: BoundingBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeEdges(value: Boolean): Self = StObject.set(x, "includeEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeEdgesUndefined: Self = StObject.set(x, "includeEdges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeLabels(value: Boolean): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeEdges(value: Boolean): Self = this.set("includeEdges", value.asInstanceOf[js.Any])
+    def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
     @scala.inline
-    def deleteIncludeEdges: Self = this.set("includeEdges", js.undefined)
+    def setIncludeMainLabels(value: Boolean): Self = StObject.set(x, "includeMainLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLabels(value: Boolean): Self = this.set("includeLabels", value.asInstanceOf[js.Any])
+    def setIncludeMainLabelsUndefined: Self = StObject.set(x, "includeMainLabels", js.undefined)
     
     @scala.inline
-    def deleteIncludeLabels: Self = this.set("includeLabels", js.undefined)
+    def setIncludeNodes(value: Boolean): Self = StObject.set(x, "includeNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeMainLabels(value: Boolean): Self = this.set("includeMainLabels", value.asInstanceOf[js.Any])
+    def setIncludeNodesUndefined: Self = StObject.set(x, "includeNodes", js.undefined)
     
     @scala.inline
-    def deleteIncludeMainLabels: Self = this.set("includeMainLabels", js.undefined)
+    def setIncludeOverlays(value: Boolean): Self = StObject.set(x, "includeOverlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNodes(value: Boolean): Self = this.set("includeNodes", value.asInstanceOf[js.Any])
+    def setIncludeOverlaysUndefined: Self = StObject.set(x, "includeOverlays", js.undefined)
     
     @scala.inline
-    def deleteIncludeNodes: Self = this.set("includeNodes", js.undefined)
+    def setIncludeSourceLabels(value: Boolean): Self = StObject.set(x, "includeSourceLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOverlays(value: Boolean): Self = this.set("includeOverlays", value.asInstanceOf[js.Any])
+    def setIncludeSourceLabelsUndefined: Self = StObject.set(x, "includeSourceLabels", js.undefined)
     
     @scala.inline
-    def deleteIncludeOverlays: Self = this.set("includeOverlays", js.undefined)
+    def setIncludeTargetLabels(value: Boolean): Self = StObject.set(x, "includeTargetLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeSourceLabels(value: Boolean): Self = this.set("includeSourceLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeSourceLabels: Self = this.set("includeSourceLabels", js.undefined)
-    
-    @scala.inline
-    def setIncludeTargetLabels(value: Boolean): Self = this.set("includeTargetLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeTargetLabels: Self = this.set("includeTargetLabels", js.undefined)
+    def setIncludeTargetLabelsUndefined: Self = StObject.set(x, "includeTargetLabels", js.undefined)
   }
 }

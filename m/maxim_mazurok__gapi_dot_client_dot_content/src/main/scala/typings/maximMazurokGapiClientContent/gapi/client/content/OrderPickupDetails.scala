@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrderPickupDetails extends js.Object {
+trait OrderPickupDetails extends StObject {
   
   /** Address of the pickup location where the shipment should be sent. Note that `recipientName` in the address is the name of the business at the pickup location. */
   var address: js.UndefOr[OrderAddress] = js.native
@@ -28,45 +29,33 @@ object OrderPickupDetails {
   }
   
   @scala.inline
-  implicit class OrderPickupDetailsOps[Self <: OrderPickupDetails] (val x: Self) extends AnyVal {
+  implicit class OrderPickupDetailsMutableBuilder[Self <: OrderPickupDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: OrderAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectors(value: js.Array[OrderPickupDetailsCollector]): Self = StObject.set(x, "collectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: OrderAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setCollectorsUndefined: Self = StObject.set(x, "collectors", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setCollectorsVarargs(value: OrderPickupDetailsCollector*): Self = StObject.set(x, "collectors", js.Array(value :_*))
     
     @scala.inline
-    def setCollectorsVarargs(value: OrderPickupDetailsCollector*): Self = this.set("collectors", js.Array(value :_*))
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectors(value: js.Array[OrderPickupDetailsCollector]): Self = this.set("collectors", value.asInstanceOf[js.Any])
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def deleteCollectors: Self = this.set("collectors", js.undefined)
+    def setPickupType(value: String): Self = StObject.set(x, "pickupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
-    
-    @scala.inline
-    def setPickupType(value: String): Self = this.set("pickupType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePickupType: Self = this.set("pickupType", js.undefined)
+    def setPickupTypeUndefined: Self = StObject.set(x, "pickupType", js.undefined)
   }
 }

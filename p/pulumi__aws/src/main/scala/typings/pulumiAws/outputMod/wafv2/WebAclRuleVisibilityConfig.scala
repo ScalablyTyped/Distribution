@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.wafv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleVisibilityConfig extends js.Object {
+trait WebAclRuleVisibilityConfig extends StObject {
   
   /**
     * A boolean indicating whether the associated resource sends metrics to CloudWatch. For the list of available metrics, see [AWS WAF Metrics](https://docs.aws.amazon.com/waf/latest/developerguide/monitoring-cloudwatch.html#waf-metrics).
@@ -31,27 +32,15 @@ object WebAclRuleVisibilityConfig {
   }
   
   @scala.inline
-  implicit class WebAclRuleVisibilityConfigOps[Self <: WebAclRuleVisibilityConfig] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleVisibilityConfigMutableBuilder[Self <: WebAclRuleVisibilityConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCloudwatchMetricsEnabled(value: Boolean): Self = this.set("cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetricName(value: String): Self = this.set("metricName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSampledRequestsEnabled(value: Boolean): Self = this.set("sampledRequestsEnabled", value.asInstanceOf[js.Any])
+    def setSampledRequestsEnabled(value: Boolean): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
   }
 }

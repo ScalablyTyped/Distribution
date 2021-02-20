@@ -1,6 +1,7 @@
 package typings.scriptableIos
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/xmlparser/#-new-xmlparser
   */
 @js.native
-trait XMLParser extends js.Object {
+trait XMLParser extends StObject {
   
   /**
     * _Function called when the parser ends parsing a document._
@@ -96,42 +97,30 @@ object XMLParser {
   }
   
   @scala.inline
-  implicit class XMLParserOps[Self <: XMLParser] (val x: Self) extends AnyVal {
+  implicit class XMLParserMutableBuilder[Self <: XMLParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDidEndDocument(value: () => Unit): Self = StObject.set(x, "didEndDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDidEndElement(value: String => Unit): Self = StObject.set(x, "didEndElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDidStartDocument(value: () => Unit): Self = StObject.set(x, "didStartDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDidEndDocument(value: () => Unit): Self = this.set("didEndDocument", js.Any.fromFunction0(value))
+    def setDidStartElement(value: (String, StringDictionary[String]) => Unit): Self = StObject.set(x, "didStartElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDidEndElement(value: String => Unit): Self = this.set("didEndElement", js.Any.fromFunction1(value))
+    def setFoundCharacters(value: String => Unit): Self = StObject.set(x, "foundCharacters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDidStartDocument(value: () => Unit): Self = this.set("didStartDocument", js.Any.fromFunction0(value))
+    def setParse(value: () => Boolean): Self = StObject.set(x, "parse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDidStartElement(value: (String, StringDictionary[String]) => Unit): Self = this.set("didStartElement", js.Any.fromFunction2(value))
+    def setParseErrorOccurred(value: String => Unit): Self = StObject.set(x, "parseErrorOccurred", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFoundCharacters(value: String => Unit): Self = this.set("foundCharacters", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParse(value: () => Boolean): Self = this.set("parse", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setParseErrorOccurred(value: String => Unit): Self = this.set("parseErrorOccurred", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setString(value: String): Self = this.set("string", value.asInstanceOf[js.Any])
+    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

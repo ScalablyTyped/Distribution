@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceAccessStatus extends js.Object
+sealed trait DeviceAccessStatus extends StObject
 /** Indicates the status of the access to a device. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceAccessStatus")
 @js.native
-object DeviceAccessStatus extends js.Object {
+object DeviceAccessStatus extends StObject {
   
   /** Access to the device is allowed. */
   @js.native

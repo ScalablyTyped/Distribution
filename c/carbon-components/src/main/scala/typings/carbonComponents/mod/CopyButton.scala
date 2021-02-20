@@ -1,7 +1,7 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.anon.ClassAnimating
 import typings.std.WeakMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,16 @@ class CopyButton protected ()
   extends typings.carbonComponents.componentsMod.CopyButton {
   def this(element: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("carbon-components", "CopyButton")
-@js.native
-object CopyButton extends js.Object {
+object CopyButton {
   
-  var components: WeakMap[js.Object, _] = js.native
+  @JSImport("carbon-components", "CopyButton")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def options: ClassAnimating = js.native
+  /* static member */
+  @JSImport("carbon-components", "CopyButton.components")
+  @js.native
+  def components: WeakMap[js.Object, js.Any] = js.native
+  @scala.inline
+  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

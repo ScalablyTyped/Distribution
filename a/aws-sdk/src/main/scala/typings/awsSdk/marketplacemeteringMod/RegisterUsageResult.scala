@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacemeteringMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterUsageResult extends js.Object {
+trait RegisterUsageResult extends StObject {
   
   /**
     * (Optional) Only included when public key version has expired
@@ -26,30 +27,18 @@ object RegisterUsageResult {
   }
   
   @scala.inline
-  implicit class RegisterUsageResultOps[Self <: RegisterUsageResult] (val x: Self) extends AnyVal {
+  implicit class RegisterUsageResultMutableBuilder[Self <: RegisterUsageResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPublicKeyRotationTimestamp(value: Timestamp): Self = StObject.set(x, "PublicKeyRotationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicKeyRotationTimestampUndefined: Self = StObject.set(x, "PublicKeyRotationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignature(value: NonEmptyString): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicKeyRotationTimestamp(value: Timestamp): Self = this.set("PublicKeyRotationTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyRotationTimestamp: Self = this.set("PublicKeyRotationTimestamp", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: NonEmptyString): Self = this.set("Signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("Signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "Signature", js.undefined)
   }
 }

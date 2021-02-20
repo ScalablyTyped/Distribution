@@ -1,5 +1,6 @@
 package typings.fridaGum.ObjC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.ObjC.SimpleBlockSignature
   - typings.fridaGum.ObjC.DetailedBlockSignature
 */
-trait BlockSignature extends js.Object
+trait BlockSignature extends StObject
 object BlockSignature {
   
   @scala.inline
-  def SimpleBlockSignature(argTypes: js.Array[String], retType: String): BlockSignature = {
-    val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockSignature]
+  def DetailedBlockSignature(types: String): typings.fridaGum.ObjC.DetailedBlockSignature = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fridaGum.ObjC.DetailedBlockSignature]
   }
   
   @scala.inline
-  def DetailedBlockSignature(types: String): BlockSignature = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockSignature]
+  def SimpleBlockSignature(argTypes: js.Array[String], retType: String): typings.fridaGum.ObjC.SimpleBlockSignature = {
+    val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.fridaGum.ObjC.SimpleBlockSignature]
   }
 }

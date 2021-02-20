@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UssdResultCode extends js.Object
+sealed trait UssdResultCode extends StObject
 /** Describes the USSD response codes for messages sent to the network. */
 @JSGlobal("Windows.Networking.NetworkOperators.UssdResultCode")
 @js.native
-object UssdResultCode extends js.Object {
+object UssdResultCode extends StObject {
   
   /** The USSD message that was received is either a USSD request from the network or a response to a message sent to the network. Additional information is needed. The USSD session is open. */
   @js.native

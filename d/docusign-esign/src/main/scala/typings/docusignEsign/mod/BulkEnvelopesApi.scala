@@ -1,13 +1,14 @@
 package typings.docusignEsign.mod
 
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "BulkEnvelopesApi")
 @js.native
-class BulkEnvelopesApi protected () extends js.Object {
+class BulkEnvelopesApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def createBulkSendList(accountId: String): js.Promise[BulkSendingList] = js.native

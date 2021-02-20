@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Linethickness extends js.Object {
+trait Linethickness extends StObject {
   
   var line: Double = js.native
   
@@ -53,54 +54,42 @@ object Linethickness {
   }
   
   @scala.inline
-  implicit class LinethicknessOps[Self <: Linethickness] (val x: Self) extends AnyVal {
+  implicit class LinethicknessMutableBuilder[Self <: Linethickness] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLine_thickness(value: js.Any): Self = StObject.set(x, "line_thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumber_glyph_point(value: js.Any): Self = StObject.set(x, "number_glyph_point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setNumber_line(value: Double): Self = StObject.set(x, "number_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine_thickness(value: js.Any): Self = this.set("line_thickness", value.asInstanceOf[js.Any])
+    def setPadding_left(value: js.Any): Self = StObject.set(x, "padding_left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber_glyph_point(value: js.Any): Self = this.set("number_glyph_point", value.asInstanceOf[js.Any])
+    def setPadding_right(value: js.Any): Self = StObject.set(x, "padding_right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber_line(value: Double): Self = this.set("number_line", value.asInstanceOf[js.Any])
+    def setSemibrave_rest_glyph_scale(value: Double): Self = StObject.set(x, "semibrave_rest_glyph_scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding_left(value: js.Any): Self = this.set("padding_left", value.asInstanceOf[js.Any])
+    def setSerif_thickness(value: Double): Self = StObject.set(x, "serif_thickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding_right(value: js.Any): Self = this.set("padding_right", value.asInstanceOf[js.Any])
+    def setShow_number(value: Boolean): Self = StObject.set(x, "show_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemibrave_rest_glyph_scale(value: Double): Self = this.set("semibrave_rest_glyph_scale", value.asInstanceOf[js.Any])
+    def setSpacing_between_lines_px(value: Double): Self = StObject.set(x, "spacing_between_lines_px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerif_thickness(value: Double): Self = this.set("serif_thickness", value.asInstanceOf[js.Any])
+    def setSymbol_spacing(value: js.Any): Self = StObject.set(x, "symbol_spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_number(value: Boolean): Self = this.set("show_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpacing_between_lines_px(value: Double): Self = this.set("spacing_between_lines_px", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol_spacing(value: js.Any): Self = this.set("symbol_spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUse_symbols(value: Boolean): Self = this.set("use_symbols", value.asInstanceOf[js.Any])
+    def setUse_symbols(value: Boolean): Self = StObject.set(x, "use_symbols", value.asInstanceOf[js.Any])
   }
 }

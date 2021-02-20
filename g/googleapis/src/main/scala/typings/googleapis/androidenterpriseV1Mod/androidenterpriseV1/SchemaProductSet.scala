@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of products.
   */
 @js.native
-trait SchemaProductSet extends js.Object {
+trait SchemaProductSet extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -58,48 +59,36 @@ object SchemaProductSet {
   }
   
   @scala.inline
-  implicit class SchemaProductSetOps[Self <: SchemaProductSet] (val x: Self) extends AnyVal {
+  implicit class SchemaProductSetMutableBuilder[Self <: SchemaProductSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductId(value: js.Array[String]): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setProductIdVarargs(value: String*): Self = StObject.set(x, "productId", js.Array(value :_*))
     
     @scala.inline
-    def setProductIdVarargs(value: String*): Self = this.set("productId", js.Array(value :_*))
+    def setProductSetBehavior(value: String): Self = StObject.set(x, "productSetBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: js.Array[String]): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setProductSetBehaviorUndefined: Self = StObject.set(x, "productSetBehavior", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setProductVisibility(value: js.Array[SchemaProductVisibility]): Self = StObject.set(x, "productVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductSetBehavior(value: String): Self = this.set("productSetBehavior", value.asInstanceOf[js.Any])
+    def setProductVisibilityUndefined: Self = StObject.set(x, "productVisibility", js.undefined)
     
     @scala.inline
-    def deleteProductSetBehavior: Self = this.set("productSetBehavior", js.undefined)
-    
-    @scala.inline
-    def setProductVisibilityVarargs(value: SchemaProductVisibility*): Self = this.set("productVisibility", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductVisibility(value: js.Array[SchemaProductVisibility]): Self = this.set("productVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductVisibility: Self = this.set("productVisibility", js.undefined)
+    def setProductVisibilityVarargs(value: SchemaProductVisibility*): Self = StObject.set(x, "productVisibility", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeReservedElasticsearchInstancesResponse extends js.Object {
+trait DescribeReservedElasticsearchInstancesResponse extends StObject {
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
@@ -26,33 +27,21 @@ object DescribeReservedElasticsearchInstancesResponse {
   }
   
   @scala.inline
-  implicit class DescribeReservedElasticsearchInstancesResponseOps[Self <: DescribeReservedElasticsearchInstancesResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeReservedElasticsearchInstancesResponseMutableBuilder[Self <: DescribeReservedElasticsearchInstancesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedElasticsearchInstances(value: ReservedElasticsearchInstanceList): Self = StObject.set(x, "ReservedElasticsearchInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setReservedElasticsearchInstancesUndefined: Self = StObject.set(x, "ReservedElasticsearchInstances", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setReservedElasticsearchInstancesVarargs(value: ReservedElasticsearchInstance*): Self = this.set("ReservedElasticsearchInstances", js.Array(value :_*))
-    
-    @scala.inline
-    def setReservedElasticsearchInstances(value: ReservedElasticsearchInstanceList): Self = this.set("ReservedElasticsearchInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedElasticsearchInstances: Self = this.set("ReservedElasticsearchInstances", js.undefined)
+    def setReservedElasticsearchInstancesVarargs(value: ReservedElasticsearchInstance*): Self = StObject.set(x, "ReservedElasticsearchInstances", js.Array(value :_*))
   }
 }

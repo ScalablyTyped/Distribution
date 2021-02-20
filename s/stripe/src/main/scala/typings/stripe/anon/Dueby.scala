@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dueby extends js.Object {
+trait Dueby extends StObject {
   
   /**
     * Date by which evidence must be submitted in order to successfully challenge dispute. Will be null
@@ -38,30 +39,18 @@ object Dueby {
   }
   
   @scala.inline
-  implicit class DuebyOps[Self <: Dueby] (val x: Self) extends AnyVal {
+  implicit class DuebyMutableBuilder[Self <: Dueby] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDue_by(value: Double): Self = StObject.set(x, "due_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHas_evidence(value: Boolean): Self = StObject.set(x, "has_evidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPast_due(value: Boolean): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDue_by(value: Double): Self = this.set("due_by", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHas_evidence(value: Boolean): Self = this.set("has_evidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPast_due(value: Boolean): Self = this.set("past_due", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmission_count(value: Double): Self = this.set("submission_count", value.asInstanceOf[js.Any])
+    def setSubmission_count(value: Double): Self = StObject.set(x, "submission_count", value.asInstanceOf[js.Any])
   }
 }

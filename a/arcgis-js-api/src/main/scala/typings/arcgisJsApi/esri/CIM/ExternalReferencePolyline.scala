@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,54 +27,42 @@ object ExternalReferencePolyline {
   }
   
   @scala.inline
-  implicit class ExternalReferencePolylineOps[Self <: ExternalReferencePolyline] (val x: Self) extends AnyVal {
+  implicit class ExternalReferencePolylineMutableBuilder[Self <: ExternalReferencePolyline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurvePath(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "curvePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurvePathUndefined: Self = StObject.set(x, "curvePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurvePathVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "curvePath", js.Array(value :_*))
     
     @scala.inline
-    def setCurvePathVarargs(value: js.Array[js.Array[Double]]*): Self = this.set("curvePath", js.Array(value :_*))
+    def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurvePath(value: js.Array[js.Array[js.Array[Double]]]): Self = this.set("curvePath", value.asInstanceOf[js.Any])
+    def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
     
     @scala.inline
-    def deleteCurvePath: Self = this.set("curvePath", js.undefined)
+    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasM(value: Boolean): Self = this.set("hasM", value.asInstanceOf[js.Any])
+    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
     @scala.inline
-    def deleteHasM: Self = this.set("hasM", js.undefined)
+    def setPaths(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasZ(value: Boolean): Self = this.set("hasZ", value.asInstanceOf[js.Any])
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def deleteHasZ: Self = this.set("hasZ", js.undefined)
+    def setPathsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
     @scala.inline
-    def setPathsVarargs(value: js.Array[js.Array[Double]]*): Self = this.set("paths", js.Array(value :_*))
+    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaths(value: js.Array[js.Array[js.Array[Double]]]): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
-    
-    @scala.inline
-    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

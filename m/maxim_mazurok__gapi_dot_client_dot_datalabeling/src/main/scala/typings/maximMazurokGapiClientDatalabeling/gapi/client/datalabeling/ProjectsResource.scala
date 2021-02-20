@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var annotationSpecSets: AnnotationSpecSetsResource = js.native
   
@@ -35,36 +36,24 @@ object ProjectsResource {
   }
   
   @scala.inline
-  implicit class ProjectsResourceOps[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationSpecSets(value: AnnotationSpecSetsResource): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatasets(value: DatasetsResource): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvaluationJobs(value: EvaluationJobsResource): Self = StObject.set(x, "evaluationJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationSpecSets(value: AnnotationSpecSetsResource): Self = this.set("annotationSpecSets", value.asInstanceOf[js.Any])
+    def setEvaluations(value: EvaluationsResource): Self = StObject.set(x, "evaluations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasets(value: DatasetsResource): Self = this.set("datasets", value.asInstanceOf[js.Any])
+    def setInstructions(value: InstructionsResource): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationJobs(value: EvaluationJobsResource): Self = this.set("evaluationJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvaluations(value: EvaluationsResource): Self = this.set("evaluations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstructions(value: InstructionsResource): Self = this.set("instructions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperations(value: OperationsResource): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }
 }

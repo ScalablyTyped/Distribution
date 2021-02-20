@@ -1,12 +1,13 @@
 package typings.fancybox
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxFullScreen extends js.Object {
+trait FancyBoxFullScreen extends StObject {
   
   def enabled(): Boolean = js.native
   
@@ -33,33 +34,21 @@ object FancyBoxFullScreen {
   }
   
   @scala.inline
-  implicit class FancyBoxFullScreenOps[Self <: FancyBoxFullScreen] (val x: Self) extends AnyVal {
+  implicit class FancyBoxFullScreenMutableBuilder[Self <: FancyBoxFullScreen] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: () => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFullscreen(value: () => Boolean): Self = StObject.set(x, "isFullscreen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnabled(value: () => Boolean): Self = this.set("enabled", js.Any.fromFunction0(value))
+    def setRequest(value: HTMLElement => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExit(value: () => Unit): Self = this.set("exit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsFullscreen(value: () => Boolean): Self = this.set("isFullscreen", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequest(value: HTMLElement => Unit): Self = this.set("request", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggle(value: HTMLElement => Unit): Self = this.set("toggle", js.Any.fromFunction1(value))
+    def setToggle(value: HTMLElement => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrt.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class VideoEffects ()
   extends typings.winrt.Windows.Media.VideoEffects
 /* static members */
-@JSGlobal("Windows.Media.VideoEffects")
-@js.native
-object VideoEffects extends js.Object {
+object VideoEffects {
   
-  var videoStabilization: String = js.native
+  @JSGlobal("Windows.Media.VideoEffects")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("Windows.Media.VideoEffects.videoStabilization")
+  @js.native
+  def videoStabilization: String = js.native
+  @scala.inline
+  def videoStabilization_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoStabilization")(x.asInstanceOf[js.Any])
 }

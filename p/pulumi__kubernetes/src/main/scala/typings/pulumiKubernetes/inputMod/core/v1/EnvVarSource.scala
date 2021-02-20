@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EnvVarSource represents a source for the value of an EnvVar.
   */
 @js.native
-trait EnvVarSource extends js.Object {
+trait EnvVarSource extends StObject {
   
   /**
     * Selects a key of a ConfigMap.
@@ -40,42 +41,30 @@ object EnvVarSource {
   }
   
   @scala.inline
-  implicit class EnvVarSourceOps[Self <: EnvVarSource] (val x: Self) extends AnyVal {
+  implicit class EnvVarSourceMutableBuilder[Self <: EnvVarSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigMapKeyRef(value: Input[ConfigMapKeySelector]): Self = StObject.set(x, "configMapKeyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigMapKeyRefUndefined: Self = StObject.set(x, "configMapKeyRef", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldRef(value: Input[ObjectFieldSelector]): Self = StObject.set(x, "fieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigMapKeyRef(value: Input[ConfigMapKeySelector]): Self = this.set("configMapKeyRef", value.asInstanceOf[js.Any])
+    def setFieldRefUndefined: Self = StObject.set(x, "fieldRef", js.undefined)
     
     @scala.inline
-    def deleteConfigMapKeyRef: Self = this.set("configMapKeyRef", js.undefined)
+    def setResourceFieldRef(value: Input[ResourceFieldSelector]): Self = StObject.set(x, "resourceFieldRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldRef(value: Input[ObjectFieldSelector]): Self = this.set("fieldRef", value.asInstanceOf[js.Any])
+    def setResourceFieldRefUndefined: Self = StObject.set(x, "resourceFieldRef", js.undefined)
     
     @scala.inline
-    def deleteFieldRef: Self = this.set("fieldRef", js.undefined)
+    def setSecretKeyRef(value: Input[SecretKeySelector]): Self = StObject.set(x, "secretKeyRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceFieldRef(value: Input[ResourceFieldSelector]): Self = this.set("resourceFieldRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceFieldRef: Self = this.set("resourceFieldRef", js.undefined)
-    
-    @scala.inline
-    def setSecretKeyRef(value: Input[SecretKeySelector]): Self = this.set("secretKeyRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretKeyRef: Self = this.set("secretKeyRef", js.undefined)
+    def setSecretKeyRefUndefined: Self = StObject.set(x, "secretKeyRef", js.undefined)
   }
 }

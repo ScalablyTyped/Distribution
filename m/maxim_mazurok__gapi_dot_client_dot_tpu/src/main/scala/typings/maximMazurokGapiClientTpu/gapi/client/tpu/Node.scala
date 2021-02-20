@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientTpu.gapi.client.tpu
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Node extends js.Object {
+trait Node extends StObject {
   
   /** Required. The type of hardware accelerators associated with this node. */
   var acceleratorType: js.UndefOr[String] = js.native
@@ -91,136 +92,124 @@ object Node {
   }
   
   @scala.inline
-  implicit class NodeOps[Self <: Node] (val x: Self) extends AnyVal {
+  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorType(value: String): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
+    def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
     
     @scala.inline
-    def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrBlock(value: String): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCidrBlock: Self = this.set("cidrBlock", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setHealth(value: String): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setHealthDescription(value: String): Self = StObject.set(x, "healthDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHealthDescriptionUndefined: Self = StObject.set(x, "healthDescription", js.undefined)
     
     @scala.inline
-    def setHealth(value: String): Self = this.set("health", value.asInstanceOf[js.Any])
+    def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
     @scala.inline
-    def deleteHealth: Self = this.set("health", js.undefined)
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthDescription(value: String): Self = this.set("healthDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthDescription: Self = this.set("healthDescription", js.undefined)
-    
-    @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientTpu.maximMazurokGapiClientTpuStrings.Node with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = StObject.set(x, "networkEndpoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = this.set("networkEndpoints", js.Array(value :_*))
+    def setNetworkEndpointsUndefined: Self = StObject.set(x, "networkEndpoints", js.undefined)
     
     @scala.inline
-    def setNetworkEndpoints(value: js.Array[NetworkEndpoint]): Self = this.set("networkEndpoints", value.asInstanceOf[js.Any])
+    def setNetworkEndpointsVarargs(value: NetworkEndpoint*): Self = StObject.set(x, "networkEndpoints", js.Array(value :_*))
     
     @scala.inline
-    def deleteNetworkEndpoints: Self = this.set("networkEndpoints", js.undefined)
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setSchedulingConfig(value: SchedulingConfig): Self = this.set("schedulingConfig", value.asInstanceOf[js.Any])
+    def setSchedulingConfig(value: SchedulingConfig): Self = StObject.set(x, "schedulingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedulingConfig: Self = this.set("schedulingConfig", js.undefined)
+    def setSchedulingConfigUndefined: Self = StObject.set(x, "schedulingConfig", js.undefined)
     
     @scala.inline
-    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setSymptomsVarargs(value: Symptom*): Self = this.set("symptoms", js.Array(value :_*))
+    def setSymptoms(value: js.Array[Symptom]): Self = StObject.set(x, "symptoms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymptoms(value: js.Array[Symptom]): Self = this.set("symptoms", value.asInstanceOf[js.Any])
+    def setSymptomsUndefined: Self = StObject.set(x, "symptoms", js.undefined)
     
     @scala.inline
-    def deleteSymptoms: Self = this.set("symptoms", js.undefined)
+    def setSymptomsVarargs(value: Symptom*): Self = StObject.set(x, "symptoms", js.Array(value :_*))
     
     @scala.inline
-    def setTensorflowVersion(value: String): Self = this.set("tensorflowVersion", value.asInstanceOf[js.Any])
+    def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTensorflowVersion: Self = this.set("tensorflowVersion", js.undefined)
+    def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
     
     @scala.inline
-    def setUseServiceNetworking(value: Boolean): Self = this.set("useServiceNetworking", value.asInstanceOf[js.Any])
+    def setUseServiceNetworking(value: Boolean): Self = StObject.set(x, "useServiceNetworking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseServiceNetworking: Self = this.set("useServiceNetworking", js.undefined)
+    def setUseServiceNetworkingUndefined: Self = StObject.set(x, "useServiceNetworking", js.undefined)
   }
 }

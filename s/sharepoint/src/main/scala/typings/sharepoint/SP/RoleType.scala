@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RoleType extends js.Object
+sealed trait RoleType extends StObject
 @JSGlobal("SP.RoleType")
 @js.native
-object RoleType extends js.Object {
+object RoleType extends StObject {
   
   @js.native
   sealed trait administrator extends RoleType

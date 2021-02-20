@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaLiveChatPollOpenedDetails extends js.Object {
+trait SchemaLiveChatPollOpenedDetails extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object SchemaLiveChatPollOpenedDetails {
   }
   
   @scala.inline
-  implicit class SchemaLiveChatPollOpenedDetailsOps[Self <: SchemaLiveChatPollOpenedDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaLiveChatPollOpenedDetailsMutableBuilder[Self <: SchemaLiveChatPollOpenedDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItems(value: js.Array[SchemaLiveChatPollItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setItemsVarargs(value: SchemaLiveChatPollItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: SchemaLiveChatPollItem*): Self = this.set("items", js.Array(value :_*))
+    def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[SchemaLiveChatPollItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
-    
-    @scala.inline
-    def setPrompt(value: String): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
   }
 }

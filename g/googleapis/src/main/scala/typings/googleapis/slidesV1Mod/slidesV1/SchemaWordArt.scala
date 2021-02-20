@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A PageElement kind representing word art.
   */
 @js.native
-trait SchemaWordArt extends js.Object {
+trait SchemaWordArt extends StObject {
   
   /**
     * The text rendered as word art.
@@ -24,24 +25,12 @@ object SchemaWordArt {
   }
   
   @scala.inline
-  implicit class SchemaWordArtOps[Self <: SchemaWordArt] (val x: Self) extends AnyVal {
+  implicit class SchemaWordArtMutableBuilder[Self <: SchemaWordArt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRenderedText(value: String): Self = this.set("renderedText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderedText: Self = this.set("renderedText", js.undefined)
+    def setRenderedTextUndefined: Self = StObject.set(x, "renderedText", js.undefined)
   }
 }

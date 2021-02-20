@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQu
 import typings.maximMazurokGapiClientCompute.anon.RegionTargetHttpsProxy
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetHttpsProxy
 import typings.maximMazurokGapiClientCompute.anon.TargetHttpsProxyUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionTargetHttpsProxiesResource extends js.Object {
+trait RegionTargetHttpsProxiesResource extends StObject {
   
   /** Deletes the specified TargetHttpsProxy resource. */
   def delete(): Request[Operation] = js.native

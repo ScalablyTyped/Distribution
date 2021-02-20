@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,42 +26,30 @@ object CommsOperation {
   }
   
   @scala.inline
-  implicit class CommsOperationOps[Self <: CommsOperation] (val x: Self) extends AnyVal {
+  implicit class CommsOperationMutableBuilder[Self <: CommsOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientContext(value: NullableOption[String]): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientContextNull: Self = StObject.set(x, "clientContext", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientContextUndefined: Self = StObject.set(x, "clientContext", js.undefined)
     
     @scala.inline
-    def setClientContext(value: NullableOption[String]): Self = this.set("clientContext", value.asInstanceOf[js.Any])
+    def setResultInfo(value: NullableOption[ResultInfo]): Self = StObject.set(x, "resultInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientContext: Self = this.set("clientContext", js.undefined)
+    def setResultInfoNull: Self = StObject.set(x, "resultInfo", null)
     
     @scala.inline
-    def setClientContextNull: Self = this.set("clientContext", null)
+    def setResultInfoUndefined: Self = StObject.set(x, "resultInfo", js.undefined)
     
     @scala.inline
-    def setResultInfo(value: NullableOption[ResultInfo]): Self = this.set("resultInfo", value.asInstanceOf[js.Any])
+    def setStatus(value: OperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResultInfo: Self = this.set("resultInfo", js.undefined)
-    
-    @scala.inline
-    def setResultInfoNull: Self = this.set("resultInfo", null)
-    
-    @scala.inline
-    def setStatus(value: OperationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

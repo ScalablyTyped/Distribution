@@ -1,20 +1,34 @@
 package typings.blueprintjsCore.mod
 
 import typings.blueprintjsCore.toastMod.IToastProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Toast")
 @js.native
-class Toast ()
-  extends typings.blueprintjsCore.componentsMod.Toast
+class Toast protected ()
+  extends typings.blueprintjsCore.componentsMod.Toast {
+  def this(props: IToastProps) = this()
+  def this(props: IToastProps, context: js.Any) = this()
+}
 /* static members */
-@JSImport("@blueprintjs/core", "Toast")
-@js.native
-object Toast extends js.Object {
+object Toast {
   
-  var defaultProps: IToastProps = js.native
+  @JSImport("@blueprintjs/core", "Toast")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var displayName: String = js.native
+  @JSImport("@blueprintjs/core", "Toast.defaultProps")
+  @js.native
+  def defaultProps: IToastProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IToastProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Toast.displayName")
+  @js.native
+  def displayName: String = js.native
+  @scala.inline
+  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

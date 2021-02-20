@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendBubbleLegendOptions extends js.Object {
+trait LegendBubbleLegendOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps) The color of the ranges borders, can be
@@ -130,129 +131,117 @@ object LegendBubbleLegendOptions {
   }
   
   @scala.inline
-  implicit class LegendBubbleLegendOptionsOps[Self <: LegendBubbleLegendOptions] (val x: Self) extends AnyVal {
+  implicit class LegendBubbleLegendOptionsMutableBuilder[Self <: LegendBubbleLegendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setConnectorClassName(value: String): Self = StObject.set(x, "connectorClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setConnectorClassNameUndefined: Self = StObject.set(x, "connectorClassName", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setConnectorColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "connectorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorClassName(value: String): Self = this.set("connectorClassName", value.asInstanceOf[js.Any])
+    def setConnectorColorUndefined: Self = StObject.set(x, "connectorColor", js.undefined)
     
     @scala.inline
-    def deleteConnectorClassName: Self = this.set("connectorClassName", js.undefined)
+    def setConnectorDistance(value: Double): Self = StObject.set(x, "connectorDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("connectorColor", value.asInstanceOf[js.Any])
+    def setConnectorDistanceUndefined: Self = StObject.set(x, "connectorDistance", js.undefined)
     
     @scala.inline
-    def deleteConnectorColor: Self = this.set("connectorColor", js.undefined)
+    def setConnectorWidth(value: Double): Self = StObject.set(x, "connectorWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorDistance(value: Double): Self = this.set("connectorDistance", value.asInstanceOf[js.Any])
+    def setConnectorWidthUndefined: Self = StObject.set(x, "connectorWidth", js.undefined)
     
     @scala.inline
-    def deleteConnectorDistance: Self = this.set("connectorDistance", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorWidth(value: Double): Self = this.set("connectorWidth", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteConnectorWidth: Self = this.set("connectorWidth", js.undefined)
+    def setLabels(value: LegendBubbleLegendLabelsOptions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setLegendIndex(value: Double): Self = StObject.set(x, "legendIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: LegendBubbleLegendLabelsOptions): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendIndex(value: Double): Self = this.set("legendIndex", value.asInstanceOf[js.Any])
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def deleteLegendIndex: Self = this.set("legendIndex", js.undefined)
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
     @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    def setRanges(value: js.Array[LegendBubbleLegendRangesOptions]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setRangesVarargs(value: LegendBubbleLegendRangesOptions*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
     @scala.inline
-    def setRangesVarargs(value: LegendBubbleLegendRangesOptions*): Self = this.set("ranges", js.Array(value :_*))
+    def setSizeBy(value: BubbleSizeByValue): Self = StObject.set(x, "sizeBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanges(value: js.Array[LegendBubbleLegendRangesOptions]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setSizeByAbsoluteValue(value: Boolean): Self = StObject.set(x, "sizeByAbsoluteValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
+    def setSizeByAbsoluteValueUndefined: Self = StObject.set(x, "sizeByAbsoluteValue", js.undefined)
     
     @scala.inline
-    def setSizeBy(value: BubbleSizeByValue): Self = this.set("sizeBy", value.asInstanceOf[js.Any])
+    def setSizeByUndefined: Self = StObject.set(x, "sizeBy", js.undefined)
     
     @scala.inline
-    def deleteSizeBy: Self = this.set("sizeBy", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeByAbsoluteValue(value: Boolean): Self = this.set("sizeByAbsoluteValue", value.asInstanceOf[js.Any])
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     @scala.inline
-    def deleteSizeByAbsoluteValue: Self = this.set("sizeByAbsoluteValue", js.undefined)
+    def setZThreshold(value: Double): Self = StObject.set(x, "zThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
-    
-    @scala.inline
-    def setZThreshold(value: Double): Self = this.set("zThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZThreshold: Self = this.set("zThreshold", js.undefined)
+    def setZThresholdUndefined: Self = StObject.set(x, "zThreshold", js.undefined)
   }
 }

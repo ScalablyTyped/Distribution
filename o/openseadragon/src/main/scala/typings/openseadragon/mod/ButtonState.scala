@@ -1,36 +1,32 @@
 package typings.openseadragon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ButtonState extends js.Object
+sealed trait ButtonState extends StObject
 @JSImport("openseadragon", "ButtonState")
 @js.native
-object ButtonState extends js.Object {
+object ButtonState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ButtonState with Double] = js.native
   
   @js.native
   sealed trait DOWN extends ButtonState
-  /* 3 */ @js.native
-  object DOWN extends TopLevel[DOWN with Double]
+  /* 3 */ val DOWN: typings.openseadragon.mod.ButtonState.DOWN with Double = js.native
   
   @js.native
   sealed trait GROUP extends ButtonState
-  /* 1 */ @js.native
-  object GROUP extends TopLevel[GROUP with Double]
+  /* 1 */ val GROUP: typings.openseadragon.mod.ButtonState.GROUP with Double = js.native
   
   @js.native
   sealed trait HOVER extends ButtonState
-  /* 2 */ @js.native
-  object HOVER extends TopLevel[HOVER with Double]
+  /* 2 */ val HOVER: typings.openseadragon.mod.ButtonState.HOVER with Double = js.native
   
   @js.native
   sealed trait REST extends ButtonState
-  /* 0 */ @js.native
-  object REST extends TopLevel[REST with Double]
+  /* 0 */ val REST: typings.openseadragon.mod.ButtonState.REST with Double = js.native
 }

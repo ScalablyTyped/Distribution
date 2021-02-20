@@ -3,6 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.center
 import typings.html5plus.html5plusStrings.left
 import typings.html5plus.html5plusStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjRichTextStyles extends js.Object {
+trait PlusNativeObjRichTextStyles extends StObject {
   
   /**
     * 富文本内容的水平对齐方式
@@ -66,42 +67,30 @@ object PlusNativeObjRichTextStyles {
   }
   
   @scala.inline
-  implicit class PlusNativeObjRichTextStylesOps[Self <: PlusNativeObjRichTextStyles] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjRichTextStylesMutableBuilder[Self <: PlusNativeObjRichTextStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setFontSrc(value: String): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
     
     @scala.inline
-    def deleteFamily: Self = this.set("family", js.undefined)
+    def setOnClick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontSrc(value: String): Self = this.set("fontSrc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFontSrc: Self = this.set("fontSrc", js.undefined)
-    
-    @scala.inline
-    def setOnClick(value: /* result */ js.Any => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

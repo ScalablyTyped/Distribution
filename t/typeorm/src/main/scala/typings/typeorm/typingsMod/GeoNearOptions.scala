@@ -1,11 +1,12 @@
 package typings.typeorm.typingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoNearOptions extends js.Object {
+trait GeoNearOptions extends StObject {
   
   /**
     * Include a value to multiply the distances with allowing for range conversions.
@@ -62,72 +63,60 @@ object GeoNearOptions {
   }
   
   @scala.inline
-  implicit class GeoNearOptionsOps[Self <: GeoNearOptions] (val x: Self) extends AnyVal {
+  implicit class GeoNearOptionsMutableBuilder[Self <: GeoNearOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceMultiplier(value: scala.Double): Self = StObject.set(x, "distanceMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceMultiplierUndefined: Self = StObject.set(x, "distanceMultiplier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeLocs(value: Boolean): Self = StObject.set(x, "includeLocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceMultiplier(value: scala.Double): Self = this.set("distanceMultiplier", value.asInstanceOf[js.Any])
+    def setIncludeLocsUndefined: Self = StObject.set(x, "includeLocs", js.undefined)
     
     @scala.inline
-    def deleteDistanceMultiplier: Self = this.set("distanceMultiplier", js.undefined)
+    def setMaxDistance(value: scala.Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLocs(value: Boolean): Self = this.set("includeLocs", value.asInstanceOf[js.Any])
+    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
     @scala.inline
-    def deleteIncludeLocs: Self = this.set("includeLocs", js.undefined)
+    def setMinDistance(value: scala.Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistance(value: scala.Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
     
     @scala.inline
-    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    def setNum(value: scala.Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDistance(value: scala.Double): Self = this.set("minDistance", value.asInstanceOf[js.Any])
+    def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
     
     @scala.inline
-    def deleteMinDistance: Self = this.set("minDistance", js.undefined)
+    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum(value: scala.Double): Self = this.set("num", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteNum: Self = this.set("num", js.undefined)
+    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: js.Object): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setSpherical(value: Boolean): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    def setSphericalUndefined: Self = StObject.set(x, "spherical", js.undefined)
     
     @scala.inline
-    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    def setUniqueDocs(value: Boolean): Self = StObject.set(x, "uniqueDocs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpherical(value: Boolean): Self = this.set("spherical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpherical: Self = this.set("spherical", js.undefined)
-    
-    @scala.inline
-    def setUniqueDocs(value: Boolean): Self = this.set("uniqueDocs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueDocs: Self = this.set("uniqueDocs", js.undefined)
+    def setUniqueDocsUndefined: Self = StObject.set(x, "uniqueDocs", js.undefined)
   }
 }

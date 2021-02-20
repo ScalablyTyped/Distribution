@@ -2,14 +2,14 @@ package typings.plottable
 
 import typings.plottable.scaleMod.Scale
 import typings.plottable.scalesMod.ITransformableScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/scales/categoryScale", JSImport.Namespace)
-@js.native
-object categoryScaleMod extends js.Object {
+object categoryScaleMod {
   
+  @JSImport("plottable/build/src/scales/categoryScale", "Category")
   @js.native
   /**
     * A Category Scale maps strings to numbers.
@@ -123,11 +123,14 @@ object categoryScaleMod extends js.Object {
     def stepWidth(): Double = js.native
   }
   /* static members */
-  @js.native
-  object Category extends js.Object {
+  object Category {
     
-    /* private */ def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/scales/categoryScale", "Category._convertToPlottableInnerPadding")
+    @js.native
+    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
     
-    /* private */ def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/scales/categoryScale", "Category._convertToPlottableOuterPadding")
+    @js.native
+    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
   }
 }

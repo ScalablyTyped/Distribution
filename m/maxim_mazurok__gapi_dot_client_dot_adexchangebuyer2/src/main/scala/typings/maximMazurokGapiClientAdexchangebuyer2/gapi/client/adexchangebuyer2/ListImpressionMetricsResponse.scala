@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListImpressionMetricsResponse extends js.Object {
+trait ListImpressionMetricsResponse extends StObject {
   
   /** List of rows, each containing a set of impression metrics. */
   var impressionMetricsRows: js.UndefOr[js.Array[ImpressionMetricsRow]] = js.native
@@ -25,33 +26,21 @@ object ListImpressionMetricsResponse {
   }
   
   @scala.inline
-  implicit class ListImpressionMetricsResponseOps[Self <: ListImpressionMetricsResponse] (val x: Self) extends AnyVal {
+  implicit class ListImpressionMetricsResponseMutableBuilder[Self <: ListImpressionMetricsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImpressionMetricsRows(value: js.Array[ImpressionMetricsRow]): Self = StObject.set(x, "impressionMetricsRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImpressionMetricsRowsUndefined: Self = StObject.set(x, "impressionMetricsRows", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImpressionMetricsRowsVarargs(value: ImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value :_*))
     
     @scala.inline
-    def setImpressionMetricsRowsVarargs(value: ImpressionMetricsRow*): Self = this.set("impressionMetricsRows", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionMetricsRows(value: js.Array[ImpressionMetricsRow]): Self = this.set("impressionMetricsRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImpressionMetricsRows: Self = this.set("impressionMetricsRows", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartContinuousExportResponse extends js.Object {
+trait StartContinuousExportResponse extends StObject {
   
   /**
     * The type of data collector used to gather this data (currently only offered for AGENT).
@@ -41,48 +42,36 @@ object StartContinuousExportResponse {
   }
   
   @scala.inline
-  implicit class StartContinuousExportResponseOps[Self <: StartContinuousExportResponse] (val x: Self) extends AnyVal {
+  implicit class StartContinuousExportResponseMutableBuilder[Self <: StartContinuousExportResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportId(value: ConfigurationsExportId): Self = StObject.set(x, "exportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setExportIdUndefined: Self = StObject.set(x, "exportId", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportId(value: ConfigurationsExportId): Self = this.set("exportId", value.asInstanceOf[js.Any])
+    def setS3BucketUndefined: Self = StObject.set(x, "s3Bucket", js.undefined)
     
     @scala.inline
-    def deleteExportId: Self = this.set("exportId", js.undefined)
+    def setSchemaStorageConfig(value: SchemaStorageConfig): Self = StObject.set(x, "schemaStorageConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    def setSchemaStorageConfigUndefined: Self = StObject.set(x, "schemaStorageConfig", js.undefined)
     
     @scala.inline
-    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaStorageConfig(value: SchemaStorageConfig): Self = this.set("schemaStorageConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaStorageConfig: Self = this.set("schemaStorageConfig", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: TimeStamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

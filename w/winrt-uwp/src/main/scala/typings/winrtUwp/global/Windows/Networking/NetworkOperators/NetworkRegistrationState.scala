@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Describes the network registration state of a mobile broadband device. */
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkRegistrationState")
 @js.native
-object NetworkRegistrationState extends js.Object {
+object NetworkRegistrationState extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

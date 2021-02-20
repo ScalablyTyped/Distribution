@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservedCacheNode extends js.Object {
+trait ReservedCacheNode extends StObject {
   
   /**
     * The number of cache nodes that have been reserved.
@@ -81,99 +82,87 @@ object ReservedCacheNode {
   }
   
   @scala.inline
-  implicit class ReservedCacheNodeOps[Self <: ReservedCacheNode] (val x: Self) extends AnyVal {
+  implicit class ReservedCacheNodeMutableBuilder[Self <: ReservedCacheNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheNodeCount(value: Integer): Self = StObject.set(x, "CacheNodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheNodeCountUndefined: Self = StObject.set(x, "CacheNodeCount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeCount(value: Integer): Self = this.set("CacheNodeCount", value.asInstanceOf[js.Any])
+    def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeCount: Self = this.set("CacheNodeCount", js.undefined)
+    def setDuration(value: Integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    def setFixedPrice(value: Double): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("Duration", js.undefined)
+    def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedPrice(value: Double): Self = this.set("FixedPrice", value.asInstanceOf[js.Any])
+    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
     @scala.inline
-    def deleteFixedPrice: Self = this.set("FixedPrice", js.undefined)
+    def setProductDescription(value: String): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferingType(value: String): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    def setProductDescriptionUndefined: Self = StObject.set(x, "ProductDescription", js.undefined)
     
     @scala.inline
-    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    def setRecurringCharges(value: RecurringChargeList): Self = StObject.set(x, "RecurringCharges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductDescription(value: String): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
     @scala.inline
-    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
     
     @scala.inline
-    def setRecurringChargesVarargs(value: RecurringCharge*): Self = this.set("RecurringCharges", js.Array(value :_*))
+    def setReservationARN(value: String): Self = StObject.set(x, "ReservationARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecurringCharges(value: RecurringChargeList): Self = this.set("RecurringCharges", value.asInstanceOf[js.Any])
+    def setReservationARNUndefined: Self = StObject.set(x, "ReservationARN", js.undefined)
     
     @scala.inline
-    def deleteRecurringCharges: Self = this.set("RecurringCharges", js.undefined)
+    def setReservedCacheNodeId(value: String): Self = StObject.set(x, "ReservedCacheNodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationARN(value: String): Self = this.set("ReservationARN", value.asInstanceOf[js.Any])
+    def setReservedCacheNodeIdUndefined: Self = StObject.set(x, "ReservedCacheNodeId", js.undefined)
     
     @scala.inline
-    def deleteReservationARN: Self = this.set("ReservationARN", js.undefined)
+    def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedCacheNodeId(value: String): Self = this.set("ReservedCacheNodeId", value.asInstanceOf[js.Any])
+    def setReservedCacheNodesOfferingIdUndefined: Self = StObject.set(x, "ReservedCacheNodesOfferingId", js.undefined)
     
     @scala.inline
-    def deleteReservedCacheNodeId: Self = this.set("ReservedCacheNodeId", js.undefined)
+    def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservedCacheNodesOfferingId(value: String): Self = this.set("ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteReservedCacheNodesOfferingId: Self = this.set("ReservedCacheNodesOfferingId", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: TStamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setUsagePrice(value: Double): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setUsagePrice(value: Double): Self = this.set("UsagePrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsagePrice: Self = this.set("UsagePrice", js.undefined)
+    def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
   }
 }

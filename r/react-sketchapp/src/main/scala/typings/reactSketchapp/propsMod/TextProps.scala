@@ -1,5 +1,6 @@
 package typings.reactSketchapp.propsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,36 +21,24 @@ object TextProps {
   }
   
   @scala.inline
-  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDx(value: NumberArrayProp): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
     
     @scala.inline
-    def setDxVarargs(value: NumberProp*): Self = this.set("dx", js.Array(value :_*))
+    def setDy(value: NumberArrayProp): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: NumberArrayProp): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
     @scala.inline
-    def deleteDx: Self = this.set("dx", js.undefined)
-    
-    @scala.inline
-    def setDyVarargs(value: NumberProp*): Self = this.set("dy", js.Array(value :_*))
-    
-    @scala.inline
-    def setDy(value: NumberArrayProp): Self = this.set("dy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDy: Self = this.set("dy", js.undefined)
+    def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macieMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemberAccount extends js.Object {
+trait MemberAccount extends StObject {
   
   /**
     * The AWS account ID of the Amazon Macie Classic member account.
@@ -21,24 +22,12 @@ object MemberAccount {
   }
   
   @scala.inline
-  implicit class MemberAccountOps[Self <: MemberAccount] (val x: Self) extends AnyVal {
+  implicit class MemberAccountMutableBuilder[Self <: MemberAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AWSAccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountId(value: AWSAccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }
 }

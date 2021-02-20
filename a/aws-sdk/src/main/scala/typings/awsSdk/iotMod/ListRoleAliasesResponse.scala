@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRoleAliasesResponse extends js.Object {
+trait ListRoleAliasesResponse extends StObject {
   
   /**
     * A marker used to get the next set of results.
@@ -26,33 +27,21 @@ object ListRoleAliasesResponse {
   }
   
   @scala.inline
-  implicit class ListRoleAliasesResponseOps[Self <: ListRoleAliasesResponse] (val x: Self) extends AnyVal {
+  implicit class ListRoleAliasesResponseMutableBuilder[Self <: ListRoleAliasesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoleAliases(value: RoleAliases): Self = StObject.set(x, "roleAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
+    def setRoleAliasesUndefined: Self = StObject.set(x, "roleAliases", js.undefined)
     
     @scala.inline
-    def deleteNextMarker: Self = this.set("nextMarker", js.undefined)
-    
-    @scala.inline
-    def setRoleAliasesVarargs(value: RoleAlias*): Self = this.set("roleAliases", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoleAliases(value: RoleAliases): Self = this.set("roleAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleAliases: Self = this.set("roleAliases", js.undefined)
+    def setRoleAliasesVarargs(value: RoleAlias*): Self = StObject.set(x, "roleAliases", js.Array(value :_*))
   }
 }

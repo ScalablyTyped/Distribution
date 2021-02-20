@@ -3,12 +3,13 @@ package typings.browserSync.mod
 import typings.node.NodeJS.ErrnoException
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxyOptions extends js.Object {
+trait ProxyOptions extends StObject {
   
   var error: js.UndefOr[
     js.Function3[/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
@@ -37,78 +38,66 @@ object ProxyOptions {
   }
   
   @scala.inline
-  implicit class ProxyOptionsOps[Self <: ProxyOptions] (val x: Self) extends AnyVal {
+  implicit class ProxyOptionsMutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: (/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: (/* err */ ErrnoException, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = this.set("error", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
     def setMiddleware(
       value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any
-    ): Self = this.set("middleware", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "middleware", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteMiddleware: Self = this.set("middleware", js.undefined)
-    
-    @scala.inline
-    def setProxyReqVarargs(value: (js.Function1[/* res */ IncomingMessage, Unit])*): Self = this.set("proxyReq", js.Array(value :_*))
-    
-    @scala.inline
-    def setProxyReqFunction1(value: /* res */ IncomingMessage => Unit): Self = this.set("proxyReq", js.Any.fromFunction1(value))
+    def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
     
     @scala.inline
     def setProxyReq(
       value: (js.Array[js.Function1[/* res */ IncomingMessage, Unit]]) | (js.Function1[/* res */ IncomingMessage, Unit])
-    ): Self = this.set("proxyReq", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "proxyReq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProxyReq: Self = this.set("proxyReq", js.undefined)
+    def setProxyReqFunction1(value: /* res */ IncomingMessage => Unit): Self = StObject.set(x, "proxyReq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setProxyResVarargs(value: ProxyResponseMiddleware*): Self = this.set("proxyRes", js.Array(value :_*))
+    def setProxyReqUndefined: Self = StObject.set(x, "proxyReq", js.undefined)
+    
+    @scala.inline
+    def setProxyReqVarargs(value: (js.Function1[/* res */ IncomingMessage, Unit])*): Self = StObject.set(x, "proxyReq", js.Array(value :_*))
+    
+    @scala.inline
+    def setProxyRes(value: ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware]): Self = StObject.set(x, "proxyRes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProxyResFunction3(
       value: (/* proxyRes */ ServerResponse | IncomingMessage, /* res */ ServerResponse, /* req */ IncomingMessage) => Unit
-    ): Self = this.set("proxyRes", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "proxyRes", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setProxyRes(value: ProxyResponseMiddleware | js.Array[ProxyResponseMiddleware]): Self = this.set("proxyRes", value.asInstanceOf[js.Any])
+    def setProxyResUndefined: Self = StObject.set(x, "proxyRes", js.undefined)
     
     @scala.inline
-    def deleteProxyRes: Self = this.set("proxyRes", js.undefined)
+    def setProxyResVarargs(value: ProxyResponseMiddleware*): Self = StObject.set(x, "proxyRes", js.Array(value :_*))
     
     @scala.inline
-    def setReqHeaders(value: /* config */ js.Object => Hash[js.Object]): Self = this.set("reqHeaders", js.Any.fromFunction1(value))
+    def setReqHeaders(value: /* config */ js.Object => Hash[js.Object]): Self = StObject.set(x, "reqHeaders", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteReqHeaders: Self = this.set("reqHeaders", js.undefined)
+    def setReqHeadersUndefined: Self = StObject.set(x, "reqHeaders", js.undefined)
     
     @scala.inline
-    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def setWs(value: Boolean): Self = this.set("ws", value.asInstanceOf[js.Any])
+    def setWs(value: Boolean): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWs: Self = this.set("ws", js.undefined)
+    def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
   }
 }

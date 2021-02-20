@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineStringPoints extends js.Object {
+trait LineStringPoints extends StObject {
   
   def add(point: js.Array[Point]): Unit = js.native
   def add(point: Point): Unit = js.native

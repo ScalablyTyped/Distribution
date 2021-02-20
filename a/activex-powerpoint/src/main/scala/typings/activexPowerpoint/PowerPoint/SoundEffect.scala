@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoundEffect extends js.Object {
+trait SoundEffect extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -40,39 +41,27 @@ object SoundEffect {
   }
   
   @scala.inline
-  implicit class SoundEffectOps[Self <: SoundEffect] (val x: Self) extends AnyVal {
+  implicit class SoundEffectMutableBuilder[Self <: SoundEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportFromFile(value: String => Unit): Self = StObject.set(x, "ImportFromFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportFromFile(value: String => Unit): Self = this.set("ImportFromFile", js.Any.fromFunction1(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPowerPointDotSoundEffect_typekey(value: SoundEffect): Self = StObject.set(x, "PowerPoint.SoundEffect_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("Play", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPowerPointDotSoundEffect_typekey(value: SoundEffect): Self = this.set("PowerPoint.SoundEffect_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PpSoundEffectType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: PpSoundEffectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

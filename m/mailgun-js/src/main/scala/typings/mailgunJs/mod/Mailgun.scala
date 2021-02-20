@@ -8,12 +8,13 @@ import typings.mailgunJs.mod.validation.ValidateResponse
 import typings.mailgunJs.mod.validation.ValidationCallback
 import typings.mailgunJs.mod.validation.ValidationOptionsPrivate
 import typings.mailgunJs.mod.validation.ValidationOptionsPublic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Mailgun extends js.Object {
+trait Mailgun extends StObject {
   
   var Attachment: Instantiable1[/* params */ AttachmentParams, typings.mailgunJs.mod.Attachment] = js.native
   

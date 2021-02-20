@@ -1,12 +1,13 @@
 package typings.kuromoji.mod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ByteBuffer extends js.Object {
+trait ByteBuffer extends StObject {
   
   var buffer: Uint8Array = js.native
   
@@ -60,60 +61,48 @@ object ByteBuffer {
   }
   
   @scala.inline
-  implicit class ByteBufferOps[Self <: ByteBuffer] (val x: Self) extends AnyVal {
+  implicit class ByteBufferMutableBuilder[Self <: ByteBuffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: Double => Double): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInt(value: Double => Double): Self = StObject.set(x, "getInt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBuffer(value: Uint8Array): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setGetShort(value: Double => Double): Self = StObject.set(x, "getShort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: Double => Double): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGetString(value: Double => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInt(value: Double => Double): Self = this.set("getInt", js.Any.fromFunction1(value))
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetShort(value: Double => Double): Self = this.set("getShort", js.Any.fromFunction1(value))
+    def setPut(value: Double => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetString(value: Double => String): Self = this.set("getString", js.Any.fromFunction1(value))
+    def setPutInt(value: Double => Unit): Self = StObject.set(x, "putInt", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPutShort(value: Double => Unit): Self = StObject.set(x, "putShort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPut(value: Double => Unit): Self = this.set("put", js.Any.fromFunction1(value))
+    def setPutString(value: String => Unit): Self = StObject.set(x, "putString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPutInt(value: Double => Unit): Self = this.set("putInt", js.Any.fromFunction1(value))
+    def setReadInt(value: () => Double): Self = StObject.set(x, "readInt", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPutShort(value: Double => Unit): Self = this.set("putShort", js.Any.fromFunction1(value))
+    def setReallocate(value: () => Unit): Self = StObject.set(x, "reallocate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPutString(value: String => Unit): Self = this.set("putString", js.Any.fromFunction1(value))
+    def setShrink(value: () => Uint8Array): Self = StObject.set(x, "shrink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReadInt(value: () => Double): Self = this.set("readInt", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReallocate(value: () => Unit): Self = this.set("reallocate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShrink(value: () => Uint8Array): Self = this.set("shrink", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
+    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
   }
 }

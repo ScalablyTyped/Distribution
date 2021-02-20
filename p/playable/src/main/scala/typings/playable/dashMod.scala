@@ -5,13 +5,25 @@ import typings.playable.anon.Bitrates
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority
 import typings.playable.playbackEngineTypesMod.IParsedPlayableSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/adapters/dash", JSImport.Namespace)
-@js.native
-object dashMod extends js.Object {
+object dashMod {
+  
+  @JSImport("playable/dist/src/adapters/dash", JSImport.Default)
+  @js.native
+  class default protected () extends DashAdapter {
+    def this(eventEmitter: IEventEmitter) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("playable/dist/src/adapters/dash", "default.isSupported")
+    @js.native
+    def isSupported(): Boolean = js.native
+  }
   
   @js.native
   trait DashAdapter extends IPlaybackAdapter {
@@ -63,16 +75,5 @@ object dashMod extends js.Object {
     def syncWithLiveTime_MDashAdapter: js.Any = js.native
     
     var videoElement: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends DashAdapter {
-    def this(eventEmitter: IEventEmitter) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def isSupported(): Boolean = js.native
   }
 }

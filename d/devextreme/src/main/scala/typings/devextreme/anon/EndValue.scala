@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndValue extends js.Object {
+trait EndValue extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object EndValue {
   }
   
   @scala.inline
-  implicit class EndValueOps[Self <: EndValue] (val x: Self) extends AnyVal {
+  implicit class EndValueMutableBuilder[Self <: EndValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndValue(value: Double): Self = this.set("endValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndValue: Self = this.set("endValue", js.undefined)
-    
-    @scala.inline
-    def setStartValue(value: Double): Self = this.set("startValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartValue: Self = this.set("startValue", js.undefined)
+    def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sweetalert
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sweetalert/typings/modules/markup/buttons", JSImport.Namespace)
-@js.native
-object markupButtonsMod extends js.Object {
+object markupButtonsMod {
   
+  @JSImport("sweetalert/typings/modules/markup/buttons", "buttonMarkup")
+  @js.native
   val buttonMarkup: String = js.native
 }

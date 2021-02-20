@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.Channel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +21,16 @@ class GoogleEarthEnterpriseMapsProvider protected () extends ImageryProvider {
   
   val version: Double = js.native
 }
-/* static members */
-@JSImport("cesium", "GoogleEarthEnterpriseMapsProvider")
-@js.native
-object GoogleEarthEnterpriseMapsProvider extends js.Object {
+object GoogleEarthEnterpriseMapsProvider {
   
-  var logoUrl: String = js.native
+  @JSImport("cesium", "GoogleEarthEnterpriseMapsProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "GoogleEarthEnterpriseMapsProvider.logoUrl")
+  @js.native
+  def logoUrl: String = js.native
+  @scala.inline
+  def logoUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logoUrl")(x.asInstanceOf[js.Any])
 }

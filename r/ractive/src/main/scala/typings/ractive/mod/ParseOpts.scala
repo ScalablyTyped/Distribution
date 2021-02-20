@@ -1,5 +1,6 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object ParseOpts {
   }
   
   @scala.inline
-  implicit class ParseOptsOps[Self <: ParseOpts] (val x: Self) extends AnyVal {
+  implicit class ParseOptsMutableBuilder[Self <: ParseOpts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Boolean): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextOnlyMode(value: Boolean): Self = StObject.set(x, "textOnlyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Boolean): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
-    
-    @scala.inline
-    def setTextOnlyMode(value: Boolean): Self = this.set("textOnlyMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextOnlyMode: Self = this.set("textOnlyMode", js.undefined)
+    def setTextOnlyModeUndefined: Self = StObject.set(x, "textOnlyMode", js.undefined)
   }
 }

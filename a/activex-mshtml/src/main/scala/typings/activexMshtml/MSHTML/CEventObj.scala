@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CEventObj extends js.Object {
+trait CEventObj extends StObject {
   
   @JSName("MSHTML.CEventObj_typekey")
   var MSHTMLDotCEventObj_typekey: CEventObj = js.native

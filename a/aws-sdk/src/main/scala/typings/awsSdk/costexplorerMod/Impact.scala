@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Impact extends js.Object {
+trait Impact extends StObject {
   
   /**
     *  The maximum dollar value observed for an anomaly. 
@@ -26,27 +27,15 @@ object Impact {
   }
   
   @scala.inline
-  implicit class ImpactOps[Self <: Impact] (val x: Self) extends AnyVal {
+  implicit class ImpactMutableBuilder[Self <: Impact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxImpact(value: GenericDouble): Self = StObject.set(x, "MaxImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotalImpact(value: GenericDouble): Self = StObject.set(x, "TotalImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxImpact(value: GenericDouble): Self = this.set("MaxImpact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalImpact(value: GenericDouble): Self = this.set("TotalImpact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalImpact: Self = this.set("TotalImpact", js.undefined)
+    def setTotalImpactUndefined: Self = StObject.set(x, "TotalImpact", js.undefined)
   }
 }

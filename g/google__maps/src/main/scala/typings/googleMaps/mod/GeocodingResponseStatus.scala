@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.INVALID_REQUEST
   - typings.googleMaps.googleMapsStrings.UNKNOWN_ERROR
 */
-trait GeocodingResponseStatus extends js.Object
+trait GeocodingResponseStatus extends StObject
 object GeocodingResponseStatus {
   
   @scala.inline

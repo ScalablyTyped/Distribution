@@ -1,6 +1,7 @@
 package typings.reactNativeElements.mod
 
 import typings.reactNative.mod.ActivityIndicatorProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,60 +57,48 @@ object SearchBarBase {
   }
   
   @scala.inline
-  implicit class SearchBarBaseOps[Self <: SearchBarBase] (val x: Self) extends AnyVal {
+  implicit class SearchBarBaseMutableBuilder[Self <: SearchBarBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearIcon(value: IconNode): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadingProps(value: ActivityIndicatorProperties): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearIcon(value: IconNode): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    def setLoadingPropsUndefined: Self = StObject.set(x, "loadingProps", js.undefined)
     
     @scala.inline
-    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoadingProps(value: ActivityIndicatorProperties): Self = this.set("loadingProps", value.asInstanceOf[js.Any])
+    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def deleteLoadingProps: Self = this.set("loadingProps", js.undefined)
+    def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
     
     @scala.inline
-    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnClear(value: () => Unit): Self = this.set("onClear", js.Any.fromFunction0(value))
+    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
     @scala.inline
-    def deleteOnClear: Self = this.set("onClear", js.undefined)
+    def setSearchIcon(value: IconNode): Self = StObject.set(x, "searchIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
+    def setSearchIconUndefined: Self = StObject.set(x, "searchIcon", js.undefined)
     
     @scala.inline
-    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    def setShowLoading(value: Boolean): Self = StObject.set(x, "showLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchIcon(value: IconNode): Self = this.set("searchIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchIcon: Self = this.set("searchIcon", js.undefined)
-    
-    @scala.inline
-    def setShowLoading(value: Boolean): Self = this.set("showLoading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowLoading: Self = this.set("showLoading", js.undefined)
+    def setShowLoadingUndefined: Self = StObject.set(x, "showLoading", js.undefined)
   }
 }

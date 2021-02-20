@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Net extends js.Object {
+trait Net extends StObject {
   
   def request(options: String): ClientRequest = js.native
   // Docs: https://electronjs.org/docs/api/net

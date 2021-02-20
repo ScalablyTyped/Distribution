@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteQueueItemsRequest extends js.Object {
+trait DeleteQueueItemsRequest extends StObject {
   
   /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
   var connectorName: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object DeleteQueueItemsRequest {
   }
   
   @scala.inline
-  implicit class DeleteQueueItemsRequestOps[Self <: DeleteQueueItemsRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteQueueItemsRequestMutableBuilder[Self <: DeleteQueueItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorName(value: String): Self = this.set("connectorName", value.asInstanceOf[js.Any])
+    def setDebugOptionsUndefined: Self = StObject.set(x, "debugOptions", js.undefined)
     
     @scala.inline
-    def deleteConnectorName: Self = this.set("connectorName", js.undefined)
+    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugOptions(value: DebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
-    
-    @scala.inline
-    def setQueue(value: String): Self = this.set("queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueue: Self = this.set("queue", js.undefined)
+    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
   }
 }

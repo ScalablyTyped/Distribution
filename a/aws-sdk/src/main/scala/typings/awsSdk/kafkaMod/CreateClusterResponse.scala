@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateClusterResponse extends js.Object {
+trait CreateClusterResponse extends StObject {
   
   /**
     * 
@@ -37,36 +38,24 @@ object CreateClusterResponse {
   }
   
   @scala.inline
-  implicit class CreateClusterResponseOps[Self <: CreateClusterResponse] (val x: Self) extends AnyVal {
+  implicit class CreateClusterResponseMutableBuilder[Self <: CreateClusterResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterName(value: string): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    def setClusterNameUndefined: Self = StObject.set(x, "ClusterName", js.undefined)
     
     @scala.inline
-    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: string): Self = this.set("ClusterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterName: Self = this.set("ClusterName", js.undefined)
-    
-    @scala.inline
-    def setState(value: ClusterState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

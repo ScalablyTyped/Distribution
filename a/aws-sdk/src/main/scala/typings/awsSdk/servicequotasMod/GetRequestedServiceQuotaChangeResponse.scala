@@ -1,11 +1,12 @@
 package typings.awsSdk.servicequotasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRequestedServiceQuotaChangeResponse extends js.Object {
+trait GetRequestedServiceQuotaChangeResponse extends StObject {
   
   /**
     * Returns the RequestedServiceQuotaChange object for the specific increase request.
@@ -21,24 +22,12 @@ object GetRequestedServiceQuotaChangeResponse {
   }
   
   @scala.inline
-  implicit class GetRequestedServiceQuotaChangeResponseOps[Self <: GetRequestedServiceQuotaChangeResponse] (val x: Self) extends AnyVal {
+  implicit class GetRequestedServiceQuotaChangeResponseMutableBuilder[Self <: GetRequestedServiceQuotaChangeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequestedQuota(value: RequestedServiceQuotaChange): Self = StObject.set(x, "RequestedQuota", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequestedQuota(value: RequestedServiceQuotaChange): Self = this.set("RequestedQuota", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedQuota: Self = this.set("RequestedQuota", js.undefined)
+    def setRequestedQuotaUndefined: Self = StObject.set(x, "RequestedQuota", js.undefined)
   }
 }

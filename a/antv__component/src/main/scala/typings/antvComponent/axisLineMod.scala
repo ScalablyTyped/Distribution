@@ -1,18 +1,21 @@
 package typings.antvComponent
 
-import typings.antvComponent.baseMod.AxisBase
 import typings.antvComponent.typesMod.LineAxisCfg
 import typings.glMatrix.mod.vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/axis/line", JSImport.Namespace)
-@js.native
-object axisLineMod extends js.Object {
+object axisLineMod {
+  
+  @JSImport("@antv/component/lib/axis/line", JSImport.Default)
+  @js.native
+  class default () extends Line
   
   @js.native
-  trait Line extends AxisBase[LineAxisCfg] {
+  trait Line
+    extends typings.antvComponent.baseMod.default[LineAxisCfg] {
     
     var autoProcessOverlap: js.Any = js.native
     
@@ -30,7 +33,4 @@ object axisLineMod extends js.Object {
     
     /* protected */ def isVertical(): Boolean = js.native
   }
-  
-  @js.native
-  class default () extends Line
 }

@@ -7,12 +7,13 @@ import typings.naverWhale.naverWhaleStrings.loading
 import typings.naverWhale.naverWhaleStrings.normal
 import typings.naverWhale.naverWhaleStrings.panel
 import typings.naverWhale.naverWhaleStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryInfo extends js.Object {
+trait QueryInfo extends StObject {
   
   /** Optional. Whether the tabs are active in their windows. */
   var active: js.UndefOr[Boolean] = js.native
@@ -97,111 +98,99 @@ object QueryInfo {
   }
   
   @scala.inline
-  implicit class QueryInfoOps[Self <: QueryInfo] (val x: Self) extends AnyVal {
+  implicit class QueryInfoMutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudible(value: Boolean): Self = StObject.set(x, "audible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAudibleUndefined: Self = StObject.set(x, "audible", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setAutoDiscardable(value: Boolean): Self = StObject.set(x, "autoDiscardable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudible(value: Boolean): Self = this.set("audible", value.asInstanceOf[js.Any])
+    def setAutoDiscardableUndefined: Self = StObject.set(x, "autoDiscardable", js.undefined)
     
     @scala.inline
-    def deleteAudible: Self = this.set("audible", js.undefined)
+    def setCurrentWindow(value: Boolean): Self = StObject.set(x, "currentWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDiscardable(value: Boolean): Self = this.set("autoDiscardable", value.asInstanceOf[js.Any])
+    def setCurrentWindowUndefined: Self = StObject.set(x, "currentWindow", js.undefined)
     
     @scala.inline
-    def deleteAutoDiscardable: Self = this.set("autoDiscardable", js.undefined)
+    def setDiscarded(value: Boolean): Self = StObject.set(x, "discarded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentWindow(value: Boolean): Self = this.set("currentWindow", value.asInstanceOf[js.Any])
+    def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
     
     @scala.inline
-    def deleteCurrentWindow: Self = this.set("currentWindow", js.undefined)
+    def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscarded(value: Boolean): Self = this.set("discarded", value.asInstanceOf[js.Any])
+    def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
     
     @scala.inline
-    def deleteDiscarded: Self = this.set("discarded", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlighted(value: Boolean): Self = this.set("highlighted", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteHighlighted: Self = this.set("highlighted", js.undefined)
+    def setLastFocusedWindow(value: Boolean): Self = StObject.set(x, "lastFocusedWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setLastFocusedWindowUndefined: Self = StObject.set(x, "lastFocusedWindow", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastFocusedWindow(value: Boolean): Self = this.set("lastFocusedWindow", value.asInstanceOf[js.Any])
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
     @scala.inline
-    def deleteLastFocusedWindow: Self = this.set("lastFocusedWindow", js.undefined)
+    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
     @scala.inline
-    def deleteMuted: Self = this.set("muted", js.undefined)
+    def setStatus(value: loading | complete): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deletePinned: Self = this.set("pinned", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: loading | complete): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
     
     @scala.inline
-    def setUrlVarargs(value: String*): Self = this.set("url", js.Array(value :_*))
+    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String | js.Array[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setWindowType(value: normal | popup | panel | app | devtools): Self = StObject.set(x, "windowType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindowId(value: Double): Self = this.set("windowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowId: Self = this.set("windowId", js.undefined)
-    
-    @scala.inline
-    def setWindowType(value: normal | popup | panel | app | devtools): Self = this.set("windowType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowType: Self = this.set("windowType", js.undefined)
+    def setWindowTypeUndefined: Self = StObject.set(x, "windowType", js.undefined)
   }
 }

@@ -1,20 +1,21 @@
 package typings.nodegit
 
 import typings.nodegit.pushOptionsMod.PushOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/push", JSImport.Namespace)
-@js.native
-object pushMod extends js.Object {
+object pushMod {
   
+  @JSImport("nodegit/push", "Push")
   @js.native
-  class Push () extends js.Object
+  class Push () extends StObject
   /* static members */
-  @js.native
-  object Push extends js.Object {
+  object Push {
     
+    @JSImport("nodegit/push", "Push.initOptions")
+    @js.native
     def initOptions(opts: PushOptions, version: Double): Double = js.native
   }
 }

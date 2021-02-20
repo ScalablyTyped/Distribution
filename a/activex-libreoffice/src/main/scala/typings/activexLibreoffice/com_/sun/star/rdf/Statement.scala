@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.rdf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.2
   */
 @js.native
-trait Statement extends js.Object {
+trait Statement extends StObject {
   
   var Graph: XURI = js.native
   
@@ -29,30 +30,18 @@ object Statement {
   }
   
   @scala.inline
-  implicit class StatementOps[Self <: Statement] (val x: Self) extends AnyVal {
+  implicit class StatementMutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraph(value: XURI): Self = StObject.set(x, "Graph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObject(value: XNode): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredicate(value: XURI): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraph(value: XURI): Self = this.set("Graph", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObject(value: XNode): Self = this.set("Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPredicate(value: XURI): Self = this.set("Predicate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: XResource): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setSubject(value: XResource): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
   }
 }

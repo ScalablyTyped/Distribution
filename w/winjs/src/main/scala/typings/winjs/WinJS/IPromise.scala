@@ -1,11 +1,12 @@
 package typings.winjs.WinJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPromise[T] extends js.Object {
+trait IPromise[T] extends StObject {
   
   def cancel(): Unit = js.native
   

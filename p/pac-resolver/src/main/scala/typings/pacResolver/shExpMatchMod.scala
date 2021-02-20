@@ -1,12 +1,13 @@
 package typings.pacResolver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pac-resolver/dist/shExpMatch", JSImport.Namespace)
-@js.native
-object shExpMatchMod extends js.Object {
+object shExpMatchMod {
   
+  @JSImport("pac-resolver/dist/shExpMatch", JSImport.Default)
+  @js.native
   def default(str: String, shexp: String): Boolean = js.native
 }

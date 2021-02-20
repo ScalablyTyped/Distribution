@@ -1,11 +1,12 @@
 package typings.select2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Select2Require extends js.Object {
+trait Select2Require extends StObject {
   
   def apply(module: String): js.Any = js.native
   def apply(modules: js.Array[String]): Unit = js.native

@@ -2,12 +2,13 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.vsoNodeApi.coreInterfacesMod.TeamProjectReference
 import typings.vsoNodeApi.coreInterfacesMod.WebApiConnectedServiceRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinuousDeploymentDefinition extends js.Object {
+trait ContinuousDeploymentDefinition extends StObject {
   
   /**
     * The connected service associated with the continuous deployment
@@ -55,48 +56,36 @@ object ContinuousDeploymentDefinition {
   }
   
   @scala.inline
-  implicit class ContinuousDeploymentDefinitionOps[Self <: ContinuousDeploymentDefinition] (val x: Self) extends AnyVal {
+  implicit class ContinuousDeploymentDefinitionMutableBuilder[Self <: ContinuousDeploymentDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectedService(value: WebApiConnectedServiceRef): Self = StObject.set(x, "connectedService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinition(value: XamlDefinitionReference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGitBranch(value: String): Self = StObject.set(x, "gitBranch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectedService(value: WebApiConnectedServiceRef): Self = this.set("connectedService", value.asInstanceOf[js.Any])
+    def setHostedServiceName(value: String): Self = StObject.set(x, "hostedServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: XamlDefinitionReference): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGitBranch(value: String): Self = this.set("gitBranch", value.asInstanceOf[js.Any])
+    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedServiceName(value: String): Self = this.set("hostedServiceName", value.asInstanceOf[js.Any])
+    def setStorageAccountName(value: String): Self = StObject.set(x, "storageAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: TeamProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setSubscriptionId(value: String): Self = StObject.set(x, "subscriptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryId(value: String): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageAccountName(value: String): Self = this.set("storageAccountName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionId(value: String): Self = this.set("subscriptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebspace(value: String): Self = this.set("webspace", value.asInstanceOf[js.Any])
+    def setWebspace(value: String): Self = StObject.set(x, "webspace", value.asInstanceOf[js.Any])
   }
 }

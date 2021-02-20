@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,138 +102,126 @@ object IHasManyAssociation {
   }
   
   @scala.inline
-  implicit class IHasManyAssociationOps[Self <: IHasManyAssociation] (val x: Self) extends AnyVal {
+  implicit class IHasManyAssociationMutableBuilder[Self <: IHasManyAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoSync(value: Boolean): Self = StObject.set(x, "autoSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLoad(value: Boolean): Self = this.set("autoLoad", value.asInstanceOf[js.Any])
+    def setAutoSyncUndefined: Self = StObject.set(x, "autoSync", js.undefined)
     
     @scala.inline
-    def deleteAutoLoad: Self = this.set("autoLoad", js.undefined)
+    def setFilterProperty(value: String): Self = StObject.set(x, "filterProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSync(value: Boolean): Self = this.set("autoSync", value.asInstanceOf[js.Any])
+    def setFilterPropertyUndefined: Self = StObject.set(x, "filterProperty", js.undefined)
     
     @scala.inline
-    def deleteAutoSync: Self = this.set("autoSync", js.undefined)
+    def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterProperty(value: String): Self = this.set("filterProperty", value.asInstanceOf[js.Any])
+    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
     @scala.inline
-    def deleteFilterProperty: Self = this.set("filterProperty", js.undefined)
+    def setGetAutoLoad(value: () => Boolean): Self = StObject.set(x, "getAutoLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setForeignKey(value: String): Self = this.set("foreignKey", value.asInstanceOf[js.Any])
+    def setGetAutoLoadUndefined: Self = StObject.set(x, "getAutoLoad", js.undefined)
     
     @scala.inline
-    def deleteForeignKey: Self = this.set("foreignKey", js.undefined)
+    def setGetAutoSync(value: () => Boolean): Self = StObject.set(x, "getAutoSync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoLoad(value: () => Boolean): Self = this.set("getAutoLoad", js.Any.fromFunction0(value))
+    def setGetAutoSyncUndefined: Self = StObject.set(x, "getAutoSync", js.undefined)
     
     @scala.inline
-    def deleteGetAutoLoad: Self = this.set("getAutoLoad", js.undefined)
+    def setGetFilterProperty(value: () => String): Self = StObject.set(x, "getFilterProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAutoSync(value: () => Boolean): Self = this.set("getAutoSync", js.Any.fromFunction0(value))
+    def setGetFilterPropertyUndefined: Self = StObject.set(x, "getFilterProperty", js.undefined)
     
     @scala.inline
-    def deleteGetAutoSync: Self = this.set("getAutoSync", js.undefined)
+    def setGetForeignKey(value: () => String): Self = StObject.set(x, "getForeignKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilterProperty(value: () => String): Self = this.set("getFilterProperty", js.Any.fromFunction0(value))
+    def setGetForeignKeyUndefined: Self = StObject.set(x, "getForeignKey", js.undefined)
     
     @scala.inline
-    def deleteGetFilterProperty: Self = this.set("getFilterProperty", js.undefined)
+    def setGetStore(value: () => _): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetForeignKey(value: () => String): Self = this.set("getForeignKey", js.Any.fromFunction0(value))
+    def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetForeignKey: Self = this.set("getForeignKey", js.undefined)
+    def setGetStoreNameUndefined: Self = StObject.set(x, "getStoreName", js.undefined)
     
     @scala.inline
-    def setGetStore(value: () => _): Self = this.set("getStore", js.Any.fromFunction0(value))
+    def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
     
     @scala.inline
-    def deleteGetStore: Self = this.set("getStore", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStoreName(value: () => String): Self = this.set("getStoreName", js.Any.fromFunction0(value))
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteGetStoreName: Self = this.set("getStoreName", js.undefined)
+    def setSetAutoLoad(value: /* autoLoad */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSetAutoLoadUndefined: Self = StObject.set(x, "setAutoLoad", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSetAutoSync(value: /* autoSync */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoSync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoLoad(value: /* autoLoad */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoLoad", js.Any.fromFunction1(value))
+    def setSetAutoSyncUndefined: Self = StObject.set(x, "setAutoSync", js.undefined)
     
     @scala.inline
-    def deleteSetAutoLoad: Self = this.set("setAutoLoad", js.undefined)
+    def setSetFilterProperty(value: /* filterProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFilterProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAutoSync(value: /* autoSync */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoSync", js.Any.fromFunction1(value))
+    def setSetFilterPropertyUndefined: Self = StObject.set(x, "setFilterProperty", js.undefined)
     
     @scala.inline
-    def deleteSetAutoSync: Self = this.set("setAutoSync", js.undefined)
+    def setSetForeignKey(value: /* foreignKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setForeignKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFilterProperty(value: /* filterProperty */ js.UndefOr[String] => Unit): Self = this.set("setFilterProperty", js.Any.fromFunction1(value))
+    def setSetForeignKeyUndefined: Self = StObject.set(x, "setForeignKey", js.undefined)
     
     @scala.inline
-    def deleteSetFilterProperty: Self = this.set("setFilterProperty", js.undefined)
+    def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetForeignKey(value: /* foreignKey */ js.UndefOr[String] => Unit): Self = this.set("setForeignKey", js.Any.fromFunction1(value))
+    def setSetStoreName(value: /* storeName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setStoreName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetForeignKey: Self = this.set("setForeignKey", js.undefined)
+    def setSetStoreNameUndefined: Self = StObject.set(x, "setStoreName", js.undefined)
     
     @scala.inline
-    def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = this.set("setStore", js.Any.fromFunction1(value))
+    def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
     
     @scala.inline
-    def deleteSetStore: Self = this.set("setStore", js.undefined)
+    def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStoreName(value: /* storeName */ js.UndefOr[String] => Unit): Self = this.set("setStoreName", js.Any.fromFunction1(value))
+    def setStoreConfig(value: js.Any): Self = StObject.set(x, "storeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSetStoreName: Self = this.set("setStoreName", js.undefined)
+    def setStoreConfigUndefined: Self = StObject.set(x, "storeConfig", js.undefined)
     
     @scala.inline
-    def setStore(value: js.Any): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
     
     @scala.inline
-    def setStoreConfig(value: js.Any): Self = this.set("storeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreConfig: Self = this.set("storeConfig", js.undefined)
-    
-    @scala.inline
-    def setStoreName(value: String): Self = this.set("storeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreName: Self = this.set("storeName", js.undefined)
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
   }
 }

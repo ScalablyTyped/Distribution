@@ -1,14 +1,15 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
+trait InsertModalColumnDescription[TRow /* <: js.Object */] extends StObject {
   
-   // children.props.keyValidator
+  // children.props.keyValidator
   /**
     * Flag to indicate that the field should be auto-generated rather than edited. It is only present if there is more
     * than one column in the table.
@@ -28,7 +29,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any
   ): ReactElement | Boolean = js.native
   
-   // children.props.dataField,
+  // children.props.dataField,
   /**
     * Flag to indicate whether this column is editable.
     * Comes from TableHeader.editable.
@@ -74,7 +75,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
     */
   var isKey: js.UndefOr[Boolean] = js.native
   
-   // children.props.hiddenOnInsert,
+  // children.props.hiddenOnInsert,
   /**
     * Flag to indicate whether the table should check that a key does not already exist.
     * Comes from TableHeader.keyValidator.
@@ -109,29 +110,18 @@ object InsertModalColumnDescription {
   }
   
   @scala.inline
-  implicit class InsertModalColumnDescriptionOps[Self <: InsertModalColumnDescription[_], TRow /* <: js.Object */] (val x: Self with InsertModalColumnDescription[TRow]) extends AnyVal {
+  implicit class InsertModalColumnDescriptionMutableBuilder[Self <: InsertModalColumnDescription[_], TRow /* <: js.Object */] (val x: Self with InsertModalColumnDescription[TRow]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoValue(value: Boolean): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoValueUndefined: Self = StObject.set(x, "autoValue", js.undefined)
     
     @scala.inline
     def setCustomInsertEditor(
       value: (InsertModalColumnDescription[TRow], EditableAttrs, String, Boolean, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ js.Any) => ReactElement | Boolean
-    ): Self = this.set("customInsertEditor", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setEditableFunction4(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
-    ): Self = this.set("editable", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "customInsertEditor", js.Any.fromFunction5(value))
     
     @scala.inline
     def setEditable(
@@ -142,30 +132,15 @@ object InsertModalColumnDescription {
           /* columnIndex */ Double, 
           Boolean | String | EditValidatorObject
         ])
-    ): Self = this.set("editable", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: /* keyof TRow */ String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setEditableFunction4(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
+    ): Self = StObject.set(x, "editable", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setHiddenOnInsert(value: Boolean): Self = this.set("hiddenOnInsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyValidator(value: Boolean): Self = this.set("keyValidator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String | ReactElement): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutoValue(value: Boolean): Self = this.set("autoValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoValue: Self = this.set("autoValue", js.undefined)
-    
-    @scala.inline
-    def setFormatFunction1(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any => String
-    ): Self = this.set("format", js.Any.fromFunction1(value))
+    def setField(value: /* keyof TRow */ String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormat(
@@ -173,15 +148,29 @@ object InsertModalColumnDescription {
           /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
           String
         ])
-    ): Self = this.set("format", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatFunction1(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any => String
+    ): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsKey(value: Boolean): Self = this.set("isKey", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteIsKey: Self = this.set("isKey", js.undefined)
+    def setHiddenOnInsert(value: Boolean): Self = StObject.set(x, "hiddenOnInsert", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsKey(value: Boolean): Self = StObject.set(x, "isKey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsKeyUndefined: Self = StObject.set(x, "isKey", js.undefined)
+    
+    @scala.inline
+    def setKeyValidator(value: Boolean): Self = StObject.set(x, "keyValidator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String | ReactElement): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

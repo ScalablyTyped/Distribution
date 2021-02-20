@@ -1,5 +1,6 @@
 package typings.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that contains the user's payment credentials.
   */
 @js.native
-trait ApplePayPaymentToken extends js.Object {
+trait ApplePayPaymentToken extends StObject {
   
   /**
     * An object containing the encrypted payment data.
@@ -34,27 +35,15 @@ object ApplePayPaymentToken {
   }
   
   @scala.inline
-  implicit class ApplePayPaymentTokenOps[Self <: ApplePayPaymentToken] (val x: Self) extends AnyVal {
+  implicit class ApplePayPaymentTokenMutableBuilder[Self <: ApplePayPaymentToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPaymentData(value: js.Any): Self = StObject.set(x, "paymentData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaymentMethod(value: ApplePayPaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPaymentData(value: js.Any): Self = this.set("paymentData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaymentMethod(value: ApplePayPaymentMethod): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactionIdentifier(value: String): Self = this.set("transactionIdentifier", value.asInstanceOf[js.Any])
+    def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
   }
 }

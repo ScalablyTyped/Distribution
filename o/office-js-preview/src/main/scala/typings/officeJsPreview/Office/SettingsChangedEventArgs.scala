@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
   */
 @js.native
-trait SettingsChangedEventArgs extends js.Object {
+trait SettingsChangedEventArgs extends StObject {
   
   /**
     * Gets an {@link Office.Settings} object that represents the settings that raised the settingsChanged event.
@@ -45,24 +46,12 @@ object SettingsChangedEventArgs {
   }
   
   @scala.inline
-  implicit class SettingsChangedEventArgsOps[Self <: SettingsChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class SettingsChangedEventArgsMutableBuilder[Self <: SettingsChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSettings(value: Settings): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: EventType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeJobResponse extends js.Object {
+trait DescribeJobResponse extends StObject {
   
   /**
     * An S3 link to the job document.
@@ -26,30 +27,18 @@ object DescribeJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeJobResponseOps[Self <: DescribeJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeJobResponseMutableBuilder[Self <: DescribeJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentSource(value: JobDocumentSource): Self = StObject.set(x, "documentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentSourceUndefined: Self = StObject.set(x, "documentSource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJob(value: Job): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentSource(value: JobDocumentSource): Self = this.set("documentSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentSource: Self = this.set("documentSource", js.undefined)
-    
-    @scala.inline
-    def setJob(value: Job): Self = this.set("job", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJob: Self = this.set("job", js.undefined)
+    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
   }
 }

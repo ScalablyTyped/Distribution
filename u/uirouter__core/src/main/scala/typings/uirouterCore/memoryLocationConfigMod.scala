@@ -1,14 +1,14 @@
 package typings.uirouterCore
 
 import typings.uirouterCore.coreservicesMod.LocationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/vanilla/memoryLocationConfig", JSImport.Namespace)
-@js.native
-object memoryLocationConfigMod extends js.Object {
+object memoryLocationConfigMod {
   
+  @JSImport("@uirouter/core/lib/vanilla/memoryLocationConfig", "MemoryLocationConfig")
   @js.native
   class MemoryLocationConfig () extends LocationConfig {
     

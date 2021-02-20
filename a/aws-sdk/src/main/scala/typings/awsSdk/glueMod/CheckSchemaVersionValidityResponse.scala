@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckSchemaVersionValidityResponse extends js.Object {
+trait CheckSchemaVersionValidityResponse extends StObject {
   
   /**
     * A validation failure error message.
@@ -26,30 +27,18 @@ object CheckSchemaVersionValidityResponse {
   }
   
   @scala.inline
-  implicit class CheckSchemaVersionValidityResponseOps[Self <: CheckSchemaVersionValidityResponse] (val x: Self) extends AnyVal {
+  implicit class CheckSchemaVersionValidityResponseMutableBuilder[Self <: CheckSchemaVersionValidityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: SchemaValidationError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValid(value: IsVersionValid): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: SchemaValidationError): Self = this.set("Error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("Error", js.undefined)
-    
-    @scala.inline
-    def setValid(value: IsVersionValid): Self = this.set("Valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValid: Self = this.set("Valid", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "Valid", js.undefined)
   }
 }

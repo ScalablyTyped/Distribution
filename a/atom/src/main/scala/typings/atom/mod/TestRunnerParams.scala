@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestRunnerParams extends js.Object {
+trait TestRunnerParams extends StObject {
   
   /**
     *  A function that can be called to construct an instance of the atom global.
@@ -47,36 +48,24 @@ object TestRunnerParams {
   }
   
   @scala.inline
-  implicit class TestRunnerParamsOps[Self <: TestRunnerParams] (val x: Self) extends AnyVal {
+  implicit class TestRunnerParamsMutableBuilder[Self <: TestRunnerParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildAtomEnvironment(value: BuildEnvironmentOptions => AtomEnvironment): Self = StObject.set(x, "buildAtomEnvironment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildDefaultApplicationDelegate(value: () => js.Object): Self = StObject.set(x, "buildDefaultApplicationDelegate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildAtomEnvironment(value: BuildEnvironmentOptions => AtomEnvironment): Self = this.set("buildAtomEnvironment", js.Any.fromFunction1(value))
+    def setLogFile(value: String): Self = StObject.set(x, "logFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildDefaultApplicationDelegate(value: () => js.Object): Self = this.set("buildDefaultApplicationDelegate", js.Any.fromFunction0(value))
+    def setTestPaths(value: js.Array[String]): Self = StObject.set(x, "testPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadless(value: Boolean): Self = this.set("headless", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogFile(value: String): Self = this.set("logFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestPathsVarargs(value: String*): Self = this.set("testPaths", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestPaths(value: js.Array[String]): Self = this.set("testPaths", value.asInstanceOf[js.Any])
+    def setTestPathsVarargs(value: String*): Self = StObject.set(x, "testPaths", js.Array(value :_*))
   }
 }

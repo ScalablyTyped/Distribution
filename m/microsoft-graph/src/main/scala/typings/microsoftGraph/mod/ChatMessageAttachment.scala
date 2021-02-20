@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatMessageAttachment extends js.Object {
+trait ChatMessageAttachment extends StObject {
   
   /**
     * The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This
@@ -60,72 +61,60 @@ object ChatMessageAttachment {
   }
   
   @scala.inline
-  implicit class ChatMessageAttachmentOps[Self <: ChatMessageAttachment] (val x: Self) extends AnyVal {
+  implicit class ChatMessageAttachmentMutableBuilder[Self <: ChatMessageAttachment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentType(value: NullableOption[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: NullableOption[String]): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContentType(value: NullableOption[String]): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
     
     @scala.inline
-    def setContentTypeNull: Self = this.set("contentType", null)
+    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
     @scala.inline
-    def setContentUrl(value: NullableOption[String]): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setContentUrlNull: Self = this.set("contentUrl", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: NullableOption[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setThumbnailUrl(value: NullableOption[String]): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setThumbnailUrlNull: Self = StObject.set(x, "thumbnailUrl", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
-    
-    @scala.inline
-    def setThumbnailUrl(value: NullableOption[String]): Self = this.set("thumbnailUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbnailUrl: Self = this.set("thumbnailUrl", js.undefined)
-    
-    @scala.inline
-    def setThumbnailUrlNull: Self = this.set("thumbnailUrl", null)
+    def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
   }
 }

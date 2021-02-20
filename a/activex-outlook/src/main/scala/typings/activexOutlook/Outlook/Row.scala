@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Row extends js.Object {
+trait Row extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -50,48 +51,36 @@ object Row {
   }
   
   @scala.inline
-  implicit class RowOps[Self <: Row] (val x: Self) extends AnyVal {
+  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryToString(value: js.Any => String): Self = StObject.set(x, "BinaryToString", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setGetValues(value: () => js.Any): Self = StObject.set(x, "GetValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBinaryToString(value: js.Any => String): Self = this.set("BinaryToString", js.Any.fromFunction1(value))
+    def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setLocalTimeToUTC(value: js.Any => VarDate): Self = StObject.set(x, "LocalTimeToUTC", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValues(value: () => js.Any): Self = this.set("GetValues", js.Any.fromFunction0(value))
+    def setOutlookDotRow_typekey(value: Row): Self = StObject.set(x, "Outlook.Row_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => js.Any): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTimeToUTC(value: js.Any => VarDate): Self = this.set("LocalTimeToUTC", js.Any.fromFunction1(value))
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotRow_typekey(value: Row): Self = this.set("Outlook.Row_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUTCToLocalTime(value: js.Any => VarDate): Self = this.set("UTCToLocalTime", js.Any.fromFunction1(value))
+    def setUTCToLocalTime(value: js.Any => VarDate): Self = StObject.set(x, "UTCToLocalTime", js.Any.fromFunction1(value))
   }
 }

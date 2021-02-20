@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,48 +97,36 @@ object ASPxClientFilterControl {
   }
   
   @scala.inline
-  implicit class ASPxClientFilterControlOps[Self <: ASPxClientFilterControl] (val x: Self) extends AnyVal {
+  implicit class ASPxClientFilterControlMutableBuilder[Self <: ASPxClientFilterControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplied(value: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "Applied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplied(value: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]): Self = this.set("Applied", value.asInstanceOf[js.Any])
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApply(value: () => Unit): Self = this.set("Apply", js.Any.fromFunction0(value))
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setGetAppliedFilterExpression(value: () => String): Self = StObject.set(x, "GetAppliedFilterExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setGetEditor(value: Double => ASPxClientEditBase): Self = StObject.set(x, "GetEditor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setGetFilterExpression(value: () => String): Self = StObject.set(x, "GetFilterExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAppliedFilterExpression(value: () => String): Self = this.set("GetAppliedFilterExpression", js.Any.fromFunction0(value))
+    def setIsFilterExpressionValid(value: () => Boolean): Self = StObject.set(x, "IsFilterExpressionValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEditor(value: Double => ASPxClientEditBase): Self = this.set("GetEditor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetFilterExpression(value: () => String): Self = this.set("GetFilterExpression", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsFilterExpressionValid(value: () => Boolean): Self = this.set("IsFilterExpressionValid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
   }
 }

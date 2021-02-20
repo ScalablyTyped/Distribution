@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object DataSchemaSchema {
   }
   
   @scala.inline
-  implicit class DataSchemaSchemaOps[Self <: DataSchemaSchema] (val x: Self) extends AnyVal {
+  implicit class DataSchemaSchemaMutableBuilder[Self <: DataSchemaSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildDataPropertyUndefined: Self = StObject.set(x, "childDataProperty", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: DataSchemaSchemaFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDataProperty(value: String): Self = this.set("childDataProperty", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteChildDataProperty: Self = this.set("childDataProperty", js.undefined)
+    def setOutputResultsName(value: String): Self = StObject.set(x, "outputResultsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: DataSchemaSchemaFields): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setOutputResultsNameUndefined: Self = StObject.set(x, "outputResultsName", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setSearchField(value: String): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputResultsName(value: String): Self = this.set("outputResultsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputResultsName: Self = this.set("outputResultsName", js.undefined)
-    
-    @scala.inline
-    def setSearchField(value: String): Self = this.set("searchField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchField: Self = this.set("searchField", js.undefined)
+    def setSearchFieldUndefined: Self = StObject.set(x, "searchField", js.undefined)
   }
 }

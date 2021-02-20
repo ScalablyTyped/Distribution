@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectConfigResults extends js.Object {
+trait ConnectConfigResults extends StObject {
   
   /**
     * An array of DocuSign Connect configurations.
@@ -26,33 +27,21 @@ object ConnectConfigResults {
   }
   
   @scala.inline
-  implicit class ConnectConfigResultsOps[Self <: ConnectConfigResults] (val x: Self) extends AnyVal {
+  implicit class ConnectConfigResultsMutableBuilder[Self <: ConnectConfigResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurations(value: js.Array[ConnectCustomConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationsVarargs(value: ConnectCustomConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationsVarargs(value: ConnectCustomConfiguration*): Self = this.set("configurations", js.Array(value :_*))
+    def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurations(value: js.Array[ConnectCustomConfiguration]): Self = this.set("configurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurations: Self = this.set("configurations", js.undefined)
-    
-    @scala.inline
-    def setTotalRecords(value: String): Self = this.set("totalRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRecords: Self = this.set("totalRecords", js.undefined)
+    def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
   }
 }

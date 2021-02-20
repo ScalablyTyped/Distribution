@@ -1,12 +1,13 @@
 package typings.weixinApp.wx
 
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemManager extends js.Object {
+trait FileSystemManager extends StObject {
   
   def access(options: AccessOptions): Unit = js.native
   

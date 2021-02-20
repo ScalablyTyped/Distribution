@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An ASP.NET MVC equivalent of the client ASPxClientGlobalEvents component.
   */
 @js.native
-trait MVCxClientGlobalEvents extends js.Object {
+trait MVCxClientGlobalEvents extends StObject {
   
   /**
     * Occurs on the client when a callback for server-side processing is initiated.
@@ -44,30 +45,18 @@ object MVCxClientGlobalEvents {
   }
   
   @scala.inline
-  implicit class MVCxClientGlobalEventsOps[Self <: MVCxClientGlobalEvents] (val x: Self) extends AnyVal {
+  implicit class MVCxClientGlobalEventsMutableBuilder[Self <: MVCxClientGlobalEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[MVCxClientGlobalBeginCallbackEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "ControlsInitialized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[MVCxClientGlobalBeginCallbackEventHandler[MVCxClientGlobalEvents]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[MVCxClientGlobalEvents]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setControlsInitialized(value: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]]): Self = this.set("ControlsInitialized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setEndCallback(value: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
   }
 }

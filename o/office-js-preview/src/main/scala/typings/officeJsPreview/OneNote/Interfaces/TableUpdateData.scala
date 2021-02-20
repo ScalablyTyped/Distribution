@@ -1,12 +1,13 @@
 package typings.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
 @js.native
-trait TableUpdateData extends js.Object {
+trait TableUpdateData extends StObject {
   
   /**
     *
@@ -25,24 +26,12 @@ object TableUpdateData {
   }
   
   @scala.inline
-  implicit class TableUpdateDataOps[Self <: TableUpdateData] (val x: Self) extends AnyVal {
+  implicit class TableUpdateDataMutableBuilder[Self <: TableUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorderVisible(value: Boolean): Self = this.set("borderVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderVisible: Self = this.set("borderVisible", js.undefined)
+    def setBorderVisibleUndefined: Self = StObject.set(x, "borderVisible", js.undefined)
   }
 }

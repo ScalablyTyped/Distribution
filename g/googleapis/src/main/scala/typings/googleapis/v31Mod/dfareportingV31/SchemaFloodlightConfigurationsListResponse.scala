@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Floodlight Configuration List Response
   */
 @js.native
-trait SchemaFloodlightConfigurationsListResponse extends js.Object {
+trait SchemaFloodlightConfigurationsListResponse extends StObject {
   
   /**
     * Floodlight configuration collection.
@@ -30,33 +31,21 @@ object SchemaFloodlightConfigurationsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaFloodlightConfigurationsListResponseOps[Self <: SchemaFloodlightConfigurationsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaFloodlightConfigurationsListResponseMutableBuilder[Self <: SchemaFloodlightConfigurationsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloodlightConfigurations(value: js.Array[SchemaFloodlightConfiguration]): Self = StObject.set(x, "floodlightConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloodlightConfigurationsUndefined: Self = StObject.set(x, "floodlightConfigurations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloodlightConfigurationsVarargs(value: SchemaFloodlightConfiguration*): Self = StObject.set(x, "floodlightConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setFloodlightConfigurationsVarargs(value: SchemaFloodlightConfiguration*): Self = this.set("floodlightConfigurations", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightConfigurations(value: js.Array[SchemaFloodlightConfiguration]): Self = this.set("floodlightConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloodlightConfigurations: Self = this.set("floodlightConfigurations", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

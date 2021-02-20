@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitHubEventsConfig extends js.Object {
+trait GitHubEventsConfig extends StObject {
   
   /** The installationID that emits the GitHub event. */
   var installationId: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object GitHubEventsConfig {
   }
   
   @scala.inline
-  implicit class GitHubEventsConfigOps[Self <: GitHubEventsConfig] (val x: Self) extends AnyVal {
+  implicit class GitHubEventsConfigMutableBuilder[Self <: GitHubEventsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallationId(value: String): Self = this.set("installationId", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInstallationId: Self = this.set("installationId", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPullRequest(value: PullRequestFilter): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setPush(value: PushFilter): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequest(value: PullRequestFilter): Self = this.set("pullRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePullRequest: Self = this.set("pullRequest", js.undefined)
-    
-    @scala.inline
-    def setPush(value: PushFilter): Self = this.set("push", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
   }
 }

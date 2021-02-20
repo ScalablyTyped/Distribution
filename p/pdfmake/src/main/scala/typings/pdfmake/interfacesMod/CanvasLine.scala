@@ -3,6 +3,7 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.pdfmakeStrings.line
 import typings.pdfmake.pdfmakeStrings.round
 import typings.pdfmake.pdfmakeStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,39 +35,27 @@ object CanvasLine {
   }
   
   @scala.inline
-  implicit class CanvasLineOps[Self <: CanvasLine] (val x: Self) extends AnyVal {
+  implicit class CanvasLineMutableBuilder[Self <: CanvasLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineCap(value: round | square): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: line): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: Double): Self = this.set("x1", value.asInstanceOf[js.Any])
+    def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: Double): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY1(value: Double): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY2(value: Double): Self = this.set("y2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineCap(value: round | square): Self = this.set("lineCap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineCap: Self = this.set("lineCap", js.undefined)
+    def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.griddleReact.mod.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableProps extends js.Object {
+trait TableProps extends StObject {
   
   var NoResults: js.UndefOr[js.Any] = js.native
   
@@ -24,42 +25,30 @@ object TableProps {
   }
   
   @scala.inline
-  implicit class TablePropsOps[Self <: TableProps] (val x: Self) extends AnyVal {
+  implicit class TablePropsMutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoResults(value: js.Any): Self = StObject.set(x, "NoResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoResultsUndefined: Self = StObject.set(x, "NoResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableBody(value: js.Any): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoResults(value: js.Any): Self = this.set("NoResults", value.asInstanceOf[js.Any])
+    def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
     
     @scala.inline
-    def deleteNoResults: Self = this.set("NoResults", js.undefined)
+    def setTableHeading(value: js.Any): Self = StObject.set(x, "TableHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBody(value: js.Any): Self = this.set("TableBody", value.asInstanceOf[js.Any])
+    def setTableHeadingUndefined: Self = StObject.set(x, "TableHeading", js.undefined)
     
     @scala.inline
-    def deleteTableBody: Self = this.set("TableBody", js.undefined)
+    def setVisibleRows(value: Double): Self = StObject.set(x, "visibleRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableHeading(value: js.Any): Self = this.set("TableHeading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableHeading: Self = this.set("TableHeading", js.undefined)
-    
-    @scala.inline
-    def setVisibleRows(value: Double): Self = this.set("visibleRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleRows: Self = this.set("visibleRows", js.undefined)
+    def setVisibleRowsUndefined: Self = StObject.set(x, "visibleRows", js.undefined)
   }
 }

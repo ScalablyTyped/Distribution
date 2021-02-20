@@ -2,12 +2,13 @@ package typings.activexExcel.Excel
 
 import typings.std.SafeArray
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODBCConnection extends js.Object {
+trait ODBCConnection extends StObject {
   
   var AlwaysUseConnectionFile: Boolean = js.native
   

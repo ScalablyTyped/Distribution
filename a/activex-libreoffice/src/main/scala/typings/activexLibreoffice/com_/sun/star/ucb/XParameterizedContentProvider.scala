@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,24 +47,12 @@ object XParameterizedContentProvider {
   }
   
   @scala.inline
-  implicit class XParameterizedContentProviderOps[Self <: XParameterizedContentProvider] (val x: Self) extends AnyVal {
+  implicit class XParameterizedContentProviderMutableBuilder[Self <: XParameterizedContentProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeregisterInstance(value: (String, String) => XContentProvider): Self = StObject.set(x, "deregisterInstance", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeregisterInstance(value: (String, String) => XContentProvider): Self = this.set("deregisterInstance", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRegisterInstance(value: (String, String, Boolean) => XContentProvider): Self = this.set("registerInstance", js.Any.fromFunction3(value))
+    def setRegisterInstance(value: (String, String, Boolean) => XContentProvider): Self = StObject.set(x, "registerInstance", js.Any.fromFunction3(value))
   }
 }

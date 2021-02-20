@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkerDetails extends js.Object {
+trait WorkerDetails extends StObject {
   
   /** Work items processed by this worker, sorted by time. */
   var workItems: js.UndefOr[js.Array[WorkItemDetails]] = js.native
@@ -22,33 +23,21 @@ object WorkerDetails {
   }
   
   @scala.inline
-  implicit class WorkerDetailsOps[Self <: WorkerDetails] (val x: Self) extends AnyVal {
+  implicit class WorkerDetailsMutableBuilder[Self <: WorkerDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkItems(value: js.Array[WorkItemDetails]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkItemsVarargs(value: WorkItemDetails*): Self = StObject.set(x, "workItems", js.Array(value :_*))
     
     @scala.inline
-    def setWorkItemsVarargs(value: WorkItemDetails*): Self = this.set("workItems", js.Array(value :_*))
+    def setWorkerName(value: String): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItems(value: js.Array[WorkItemDetails]): Self = this.set("workItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkItems: Self = this.set("workItems", js.undefined)
-    
-    @scala.inline
-    def setWorkerName(value: String): Self = this.set("workerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerName: Self = this.set("workerName", js.undefined)
+    def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
   }
 }

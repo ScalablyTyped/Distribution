@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentMetadata extends js.Object {
+trait DocumentMetadata extends StObject {
   
   var _id: String = js.native
   
@@ -22,27 +23,15 @@ object DocumentMetadata {
   }
   
   @scala.inline
-  implicit class DocumentMetadataOps[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
+  implicit class DocumentMetadataMutableBuilder[Self <: DocumentMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_key(value: String): Self = this.set("_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_rev(value: String): Self = this.set("_rev", value.asInstanceOf[js.Any])
+    def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
   }
 }

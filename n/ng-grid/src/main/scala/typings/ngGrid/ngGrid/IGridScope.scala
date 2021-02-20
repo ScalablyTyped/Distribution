@@ -1,12 +1,13 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope * / any */ @js.native
-trait IGridScope extends js.Object {
+trait IGridScope extends StObject {
   
   def adjustScrollLeft(scrollLeft: Double): Unit = js.native
   
@@ -129,144 +130,132 @@ object IGridScope {
   }
   
   @scala.inline
-  implicit class IGridScopeOps[Self <: IGridScope] (val x: Self) extends AnyVal {
+  implicit class IGridScopeMutableBuilder[Self <: IGridScope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustScrollLeft(value: Double => Unit): Self = StObject.set(x, "adjustScrollLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdjustScrollTop(value: (Double, Boolean) => Unit): Self = StObject.set(x, "adjustScrollTop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjustScrollLeft(value: Double => Unit): Self = this.set("adjustScrollLeft", js.Any.fromFunction1(value))
+    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setAdjustScrollTop(value: (Double, Boolean) => Unit): Self = this.set("adjustScrollTop", js.Any.fromFunction2(value))
+    def setConfigGroups(value: js.Array[_]): Self = StObject.set(x, "configGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = this.set("columns", js.Array(value :_*))
+    def setConfigGroupsVarargs(value: js.Any*): Self = StObject.set(x, "configGroups", js.Array(value :_*))
     
     @scala.inline
-    def setColumns(value: js.Array[_]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setElementsNeedMeasuring(value: Boolean): Self = StObject.set(x, "elementsNeedMeasuring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigGroupsVarargs(value: js.Any*): Self = this.set("configGroups", js.Array(value :_*))
+    def setEnableCellEditOnFocus(value: Boolean): Self = StObject.set(x, "enableCellEditOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigGroups(value: js.Array[_]): Self = this.set("configGroups", value.asInstanceOf[js.Any])
+    def setEnableCellSelection(value: Boolean): Self = StObject.set(x, "enableCellSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementsNeedMeasuring(value: Boolean): Self = this.set("elementsNeedMeasuring", value.asInstanceOf[js.Any])
+    def setEnablePaging(value: Boolean): Self = StObject.set(x, "enablePaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCellEditOnFocus(value: Boolean): Self = this.set("enableCellEditOnFocus", value.asInstanceOf[js.Any])
+    def setFooter(value: IFooter): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCellSelection(value: Boolean): Self = this.set("enableCellSelection", value.asInstanceOf[js.Any])
+    def setFooterRowHeight(value: Double): Self = StObject.set(x, "footerRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnablePaging(value: Boolean): Self = this.set("enablePaging", value.asInstanceOf[js.Any])
+    def setForceSyncScrolling(value: Boolean): Self = StObject.set(x, "forceSyncScrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: IFooter): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setGridId(value: String): Self = StObject.set(x, "gridId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooterRowHeight(value: Double): Self = this.set("footerRowHeight", value.asInstanceOf[js.Any])
+    def setGroupBy(value: IColumn => Unit): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForceSyncScrolling(value: Boolean): Self = this.set("forceSyncScrolling", value.asInstanceOf[js.Any])
+    def setHeaderRow(value: js.Any): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridId(value: String): Self = this.set("gridId", value.asInstanceOf[js.Any])
+    def setHeaderScrollerDim(value: () => js.Any): Self = StObject.set(x, "headerScrollerDim", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGroupBy(value: IColumn => Unit): Self = this.set("groupBy", js.Any.fromFunction1(value))
+    def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRow(value: js.Any): Self = this.set("headerRow", value.asInstanceOf[js.Any])
+    def setJqueryUITheme(value: js.Any): Self = StObject.set(x, "jqueryUITheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderScrollerDim(value: () => js.Any): Self = this.set("headerScrollerDim", js.Any.fromFunction0(value))
+    def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI18n(value: js.Any): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    def setPagingOptions(value: IPagingOptions): Self = StObject.set(x, "pagingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJqueryUITheme(value: js.Any): Self = this.set("jqueryUITheme", value.asInstanceOf[js.Any])
+    def setRemoveGroup(value: Double => Unit): Self = StObject.set(x, "removeGroup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMultiSelect(value: Boolean): Self = this.set("multiSelect", value.asInstanceOf[js.Any])
+    def setRenderedColumns(value: js.Array[_]): Self = StObject.set(x, "renderedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagingOptions(value: IPagingOptions): Self = this.set("pagingOptions", value.asInstanceOf[js.Any])
+    def setRenderedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "renderedColumns", js.Array(value :_*))
     
     @scala.inline
-    def setRemoveGroup(value: Double => Unit): Self = this.set("removeGroup", js.Any.fromFunction1(value))
+    def setRenderedRows(value: js.Array[_]): Self = StObject.set(x, "renderedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderedColumnsVarargs(value: js.Any*): Self = this.set("renderedColumns", js.Array(value :_*))
+    def setRenderedRowsVarargs(value: js.Any*): Self = StObject.set(x, "renderedRows", js.Array(value :_*))
     
     @scala.inline
-    def setRenderedColumns(value: js.Array[_]): Self = this.set("renderedColumns", value.asInstanceOf[js.Any])
+    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderedRowsVarargs(value: js.Any*): Self = this.set("renderedRows", js.Array(value :_*))
+    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderedRows(value: js.Array[_]): Self = this.set("renderedRows", value.asInstanceOf[js.Any])
+    def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
     @scala.inline
-    def setRowHeight(value: Double): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setSelectionProvider(value: ISelectionProvider): Self = StObject.set(x, "selectionProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItemsVarargs(value: js.Any*): Self = this.set("selectedItems", js.Array(value :_*))
+    def setShowColumnMenu(value: Boolean): Self = StObject.set(x, "showColumnMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    def setShowFooter(value: Boolean): Self = StObject.set(x, "showFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionProvider(value: ISelectionProvider): Self = this.set("selectionProvider", value.asInstanceOf[js.Any])
+    def setShowGroupPanel(value: () => js.Any): Self = StObject.set(x, "showGroupPanel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowColumnMenu(value: Boolean): Self = this.set("showColumnMenu", value.asInstanceOf[js.Any])
+    def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFooter(value: Boolean): Self = this.set("showFooter", value.asInstanceOf[js.Any])
+    def setShowSelectionCheckbox(value: Boolean): Self = StObject.set(x, "showSelectionCheckbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowGroupPanel(value: () => js.Any): Self = this.set("showGroupPanel", js.Any.fromFunction0(value))
+    def setTogglePin(value: IColumn => Unit): Self = StObject.set(x, "togglePin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShowMenu(value: Boolean): Self = this.set("showMenu", value.asInstanceOf[js.Any])
+    def setToggleSelectAll(value: () => Unit): Self = StObject.set(x, "toggleSelectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowSelectionCheckbox(value: Boolean): Self = this.set("showSelectionCheckbox", value.asInstanceOf[js.Any])
+    def setToggleShowMenu(value: () => Unit): Self = StObject.set(x, "toggleShowMenu", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTogglePin(value: IColumn => Unit): Self = this.set("togglePin", js.Any.fromFunction1(value))
+    def setTopPanelHeight(value: () => Double): Self = StObject.set(x, "topPanelHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToggleSelectAll(value: () => Unit): Self = this.set("toggleSelectAll", js.Any.fromFunction0(value))
+    def setTotalFilteredItemsLength(value: () => Double): Self = StObject.set(x, "totalFilteredItemsLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToggleShowMenu(value: () => Unit): Self = this.set("toggleShowMenu", js.Any.fromFunction0(value))
+    def setTotalRowWidth(value: () => Double): Self = StObject.set(x, "totalRowWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTopPanelHeight(value: () => Double): Self = this.set("topPanelHeight", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTotalFilteredItemsLength(value: () => Double): Self = this.set("totalFilteredItemsLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTotalRowWidth(value: () => Double): Self = this.set("totalRowWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setViewportDimHeight(value: () => Double): Self = this.set("viewportDimHeight", js.Any.fromFunction0(value))
+    def setViewportDimHeight(value: () => Double): Self = StObject.set(x, "viewportDimHeight", js.Any.fromFunction0(value))
   }
 }

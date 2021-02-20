@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckpointConfig extends js.Object {
+trait CheckpointConfig extends StObject {
   
   /**
     * (Optional) The local directory where checkpoints are written. The default directory is /opt/ml/checkpoints/. 
@@ -26,27 +27,15 @@ object CheckpointConfig {
   }
   
   @scala.inline
-  implicit class CheckpointConfigOps[Self <: CheckpointConfig] (val x: Self) extends AnyVal {
+  implicit class CheckpointConfigMutableBuilder[Self <: CheckpointConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalPath(value: DirectoryPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalPathUndefined: Self = StObject.set(x, "LocalPath", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = this.set("S3Uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalPath(value: DirectoryPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalPath: Self = this.set("LocalPath", js.undefined)
+    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

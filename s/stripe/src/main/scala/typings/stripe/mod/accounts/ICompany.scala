@@ -1,5 +1,6 @@
 package typings.stripe.mod.accounts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,30 +27,18 @@ object ICompany {
   }
   
   @scala.inline
-  implicit class ICompanyOps[Self <: ICompany] (val x: Self) extends AnyVal {
+  implicit class ICompanyMutableBuilder[Self <: ICompany] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTax_id_provided(value: Boolean): Self = StObject.set(x, "tax_id_provided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTax_id_providedUndefined: Self = StObject.set(x, "tax_id_provided", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVat_id_provided(value: Boolean): Self = StObject.set(x, "vat_id_provided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTax_id_provided(value: Boolean): Self = this.set("tax_id_provided", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTax_id_provided: Self = this.set("tax_id_provided", js.undefined)
-    
-    @scala.inline
-    def setVat_id_provided(value: Boolean): Self = this.set("vat_id_provided", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVat_id_provided: Self = this.set("vat_id_provided", js.undefined)
+    def setVat_id_providedUndefined: Self = StObject.set(x, "vat_id_provided", js.undefined)
   }
 }

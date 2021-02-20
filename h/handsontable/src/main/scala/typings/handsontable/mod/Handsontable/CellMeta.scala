@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable
 
 import typings.handsontable.mod.Handsontable.comments.CommentObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,48 +31,36 @@ object CellMeta {
   }
   
   @scala.inline
-  implicit class CellMetaOps[Self <: CellMeta] (val x: Self) extends AnyVal {
+  implicit class CellMetaMutableBuilder[Self <: CellMeta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: CommentObject): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: CommentObject): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteComment: Self = this.set("comment", js.undefined)
+    def setIsSearchResult(value: Boolean): Self = StObject.set(x, "isSearchResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIsSearchResultUndefined: Self = StObject.set(x, "isSearchResult", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setSkipRowOnPaste(value: Boolean): Self = StObject.set(x, "skipRowOnPaste", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSearchResult(value: Boolean): Self = this.set("isSearchResult", value.asInstanceOf[js.Any])
+    def setSkipRowOnPasteUndefined: Self = StObject.set(x, "skipRowOnPaste", js.undefined)
     
     @scala.inline
-    def deleteIsSearchResult: Self = this.set("isSearchResult", js.undefined)
+    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipRowOnPaste(value: Boolean): Self = this.set("skipRowOnPaste", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipRowOnPaste: Self = this.set("skipRowOnPaste", js.undefined)
-    
-    @scala.inline
-    def setValid(value: Boolean): Self = this.set("valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValid: Self = this.set("valid", js.undefined)
+    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

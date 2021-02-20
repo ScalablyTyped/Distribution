@@ -2,14 +2,14 @@ package typings.typeorm
 
 import typings.std.Error
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/error/MissingDeleteDateColumnError", JSImport.Namespace)
-@js.native
-object errorMissingDeleteDateColumnErrorMod extends js.Object {
+object errorMissingDeleteDateColumnErrorMod {
   
+  @JSImport("typeorm/error/MissingDeleteDateColumnError", "MissingDeleteDateColumnError")
   @js.native
   class MissingDeleteDateColumnError protected () extends Error {
     def this(entityMetadata: EntityMetadata) = this()

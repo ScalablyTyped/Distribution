@@ -1,14 +1,14 @@
 package typings.tensorflowTfjsData
 
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/iterators/string_iterator", JSImport.Namespace)
-@js.native
-object stringIteratorMod extends js.Object {
+object stringIteratorMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/string_iterator", "StringIterator")
   @js.native
   abstract class StringIterator () extends LazyIterator[String] {
     

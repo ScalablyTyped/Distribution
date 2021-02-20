@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOCounters extends js.Object {
+trait IOCounters extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/io-counters
   /**
@@ -54,36 +55,24 @@ object IOCounters {
   }
   
   @scala.inline
-  implicit class IOCountersOps[Self <: IOCounters] (val x: Self) extends AnyVal {
+  implicit class IOCountersMutableBuilder[Self <: IOCounters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOtherOperationCount(value: Double): Self = StObject.set(x, "otherOperationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOtherTransferCount(value: Double): Self = StObject.set(x, "otherTransferCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOperationCount(value: Double): Self = StObject.set(x, "readOperationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherOperationCount(value: Double): Self = this.set("otherOperationCount", value.asInstanceOf[js.Any])
+    def setReadTransferCount(value: Double): Self = StObject.set(x, "readTransferCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtherTransferCount(value: Double): Self = this.set("otherTransferCount", value.asInstanceOf[js.Any])
+    def setWriteOperationCount(value: Double): Self = StObject.set(x, "writeOperationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOperationCount(value: Double): Self = this.set("readOperationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadTransferCount(value: Double): Self = this.set("readTransferCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteOperationCount(value: Double): Self = this.set("writeOperationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWriteTransferCount(value: Double): Self = this.set("writeTransferCount", value.asInstanceOf[js.Any])
+    def setWriteTransferCount(value: Double): Self = StObject.set(x, "writeTransferCount", value.asInstanceOf[js.Any])
   }
 }

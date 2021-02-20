@@ -1,12 +1,13 @@
 package typings.googleCloudKms.mod.v1
 
 import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CryptoKeyVersion extends js.Object {
+trait CryptoKeyVersion extends StObject {
   
   var algorithm: CryptoKeyVersionAlgorithm = js.native
   
@@ -42,54 +43,42 @@ object CryptoKeyVersion {
   }
   
   @scala.inline
-  implicit class CryptoKeyVersionOps[Self <: CryptoKeyVersion] (val x: Self) extends AnyVal {
+  implicit class CryptoKeyVersionMutableBuilder[Self <: CryptoKeyVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: CryptoKeyVersionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestation(value: KeyOperationAttestation): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
     @scala.inline
-    def setAlgorithm(value: CryptoKeyVersionAlgorithm): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setCreateTime(value: AsObject): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: AsObject): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDestroyEventTime(value: AsObject): Self = StObject.set(x, "destroyEventTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateTime(value: AsObject): Self = this.set("generateTime", value.asInstanceOf[js.Any])
+    def setDestroyEventTimeUndefined: Self = StObject.set(x, "destroyEventTime", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDestroyTime(value: AsObject): Self = StObject.set(x, "destroyTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionLevel(value: ProtectionLevel): Self = this.set("protectionLevel", value.asInstanceOf[js.Any])
+    def setDestroyTimeUndefined: Self = StObject.set(x, "destroyTime", js.undefined)
     
     @scala.inline
-    def setState(value: CryptoKeyVersionState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setGenerateTime(value: AsObject): Self = StObject.set(x, "generateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestation(value: KeyOperationAttestation): Self = this.set("attestation", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    def setProtectionLevel(value: ProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroyEventTime(value: AsObject): Self = this.set("destroyEventTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestroyEventTime: Self = this.set("destroyEventTime", js.undefined)
-    
-    @scala.inline
-    def setDestroyTime(value: AsObject): Self = this.set("destroyTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestroyTime: Self = this.set("destroyTime", js.undefined)
+    def setState(value: CryptoKeyVersionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "LocalTime")
 @js.native
-class LocalTime protected () extends TemporalAccessor {
+class LocalTime protected () extends Temporal {
   
   def adjustInto(temporal: TemporalAdjuster): Temporal = js.native
   
@@ -84,96 +85,243 @@ class LocalTime protected () extends TemporalAccessor {
   
   def withTemporalAdjuster(adjuster: TemporalAdjuster): LocalTime = js.native
 }
-/* static members */
-@JSImport("js-joda", "LocalTime")
-@js.native
-object LocalTime extends js.Object {
+object LocalTime {
   
-  var HOURS_PER_DAY: Double = js.native
+  @JSImport("js-joda", "LocalTime")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MAX: LocalTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.HOURS_PER_DAY")
+  @js.native
+  def HOURS_PER_DAY: Double = js.native
+  @scala.inline
+  def HOURS_PER_DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOURS_PER_DAY")(x.asInstanceOf[js.Any])
   
-  var MICROS_PER_DAY: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MAX")
+  @js.native
+  def MAX: LocalTime = js.native
+  @scala.inline
+  def MAX_=(x: LocalTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
   
-  var MIDNIGHT: LocalTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MICROS_PER_DAY")
+  @js.native
+  def MICROS_PER_DAY: Double = js.native
+  @scala.inline
+  def MICROS_PER_DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MICROS_PER_DAY")(x.asInstanceOf[js.Any])
   
-  var MILLIS_PER_DAY: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MIDNIGHT")
+  @js.native
+  def MIDNIGHT: LocalTime = js.native
+  @scala.inline
+  def MIDNIGHT_=(x: LocalTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIDNIGHT")(x.asInstanceOf[js.Any])
   
-  var MIN: LocalTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MILLIS_PER_DAY")
+  @js.native
+  def MILLIS_PER_DAY: Double = js.native
+  @scala.inline
+  def MILLIS_PER_DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MILLIS_PER_DAY")(x.asInstanceOf[js.Any])
   
-  var MINUTES_PER_DAY: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MIN")
+  @js.native
+  def MIN: LocalTime = js.native
   
-  var MINUTES_PER_HOUR: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MINUTES_PER_DAY")
+  @js.native
+  def MINUTES_PER_DAY: Double = js.native
+  @scala.inline
+  def MINUTES_PER_DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUTES_PER_DAY")(x.asInstanceOf[js.Any])
   
-  var NANOS_PER_DAY: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.MINUTES_PER_HOUR")
+  @js.native
+  def MINUTES_PER_HOUR: Double = js.native
+  @scala.inline
+  def MINUTES_PER_HOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUTES_PER_HOUR")(x.asInstanceOf[js.Any])
   
-  var NANOS_PER_HOUR: Double = js.native
+  @scala.inline
+  def MIN_=(x: LocalTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN")(x.asInstanceOf[js.Any])
   
-  var NANOS_PER_MINUTE: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.NANOS_PER_DAY")
+  @js.native
+  def NANOS_PER_DAY: Double = js.native
+  @scala.inline
+  def NANOS_PER_DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NANOS_PER_DAY")(x.asInstanceOf[js.Any])
   
-  var NANOS_PER_SECOND: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.NANOS_PER_HOUR")
+  @js.native
+  def NANOS_PER_HOUR: Double = js.native
+  @scala.inline
+  def NANOS_PER_HOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NANOS_PER_HOUR")(x.asInstanceOf[js.Any])
   
-  var NOON: LocalTime = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.NANOS_PER_MINUTE")
+  @js.native
+  def NANOS_PER_MINUTE: Double = js.native
+  @scala.inline
+  def NANOS_PER_MINUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NANOS_PER_MINUTE")(x.asInstanceOf[js.Any])
   
-  var SECONDS_PER_DAY: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.NANOS_PER_SECOND")
+  @js.native
+  def NANOS_PER_SECOND: Double = js.native
+  @scala.inline
+  def NANOS_PER_SECOND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NANOS_PER_SECOND")(x.asInstanceOf[js.Any])
   
-  var SECONDS_PER_HOUR: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.NOON")
+  @js.native
+  def NOON: LocalTime = js.native
+  @scala.inline
+  def NOON_=(x: LocalTime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOON")(x.asInstanceOf[js.Any])
   
-  var SECONDS_PER_MINUTE: Double = js.native
+  /* static member */
+  @JSImport("js-joda", "LocalTime.SECONDS_PER_DAY")
+  @js.native
+  def SECONDS_PER_DAY: Double = js.native
+  @scala.inline
+  def SECONDS_PER_DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDS_PER_DAY")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.SECONDS_PER_HOUR")
+  @js.native
+  def SECONDS_PER_HOUR: Double = js.native
+  @scala.inline
+  def SECONDS_PER_HOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDS_PER_HOUR")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "LocalTime.SECONDS_PER_MINUTE")
+  @js.native
+  def SECONDS_PER_MINUTE: Double = js.native
+  @scala.inline
+  def SECONDS_PER_MINUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDS_PER_MINUTE")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "LocalTime.from")
+  @js.native
   def from(temporal: TemporalAccessor): LocalTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.now")
+  @js.native
   def now(): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.now")
+  @js.native
   def now(clockOrZone: Clock): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.now")
+  @js.native
   def now(clockOrZone: ZoneId): LocalTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(
     hour: js.UndefOr[scala.Nothing],
     minute: js.UndefOr[scala.Nothing],
     second: js.UndefOr[scala.Nothing],
     nanoOfSecond: Double
   ): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: js.UndefOr[scala.Nothing], minute: js.UndefOr[scala.Nothing], second: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(
     hour: js.UndefOr[scala.Nothing],
     minute: js.UndefOr[scala.Nothing],
     second: Double,
     nanoOfSecond: Double
   ): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: js.UndefOr[scala.Nothing], minute: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(
     hour: js.UndefOr[scala.Nothing],
     minute: Double,
     second: js.UndefOr[scala.Nothing],
     nanoOfSecond: Double
   ): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: js.UndefOr[scala.Nothing], minute: Double, second: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: js.UndefOr[scala.Nothing], minute: Double, second: Double, nanoOfSecond: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(
     hour: Double,
     minute: js.UndefOr[scala.Nothing],
     second: js.UndefOr[scala.Nothing],
     nanoOfSecond: Double
   ): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double, minute: js.UndefOr[scala.Nothing], second: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double, minute: js.UndefOr[scala.Nothing], second: Double, nanoOfSecond: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double, minute: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double, minute: Double, second: js.UndefOr[scala.Nothing], nanoOfSecond: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double, minute: Double, second: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.of")
+  @js.native
   def of(hour: Double, minute: Double, second: Double, nanoOfSecond: Double): LocalTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.ofInstant")
+  @js.native
   def ofInstant(instant: Instant): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.ofInstant")
+  @js.native
   def ofInstant(instant: Instant, zone: ZoneId): LocalTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.ofNanoOfDay")
+  @js.native
   def ofNanoOfDay(nanoOfDay: Double): LocalTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.ofSecondOfDay")
+  @js.native
   def ofSecondOfDay(): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.ofSecondOfDay")
+  @js.native
   def ofSecondOfDay(secondOfDay: js.UndefOr[scala.Nothing], nanoOfSecond: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.ofSecondOfDay")
+  @js.native
   def ofSecondOfDay(secondOfDay: Double): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.ofSecondOfDay")
+  @js.native
   def ofSecondOfDay(secondOfDay: Double, nanoOfSecond: Double): LocalTime = js.native
   
+  /* static member */
+  @JSImport("js-joda", "LocalTime.parse")
+  @js.native
   def parse(text: String): LocalTime = js.native
+  @JSImport("js-joda", "LocalTime.parse")
+  @js.native
   def parse(text: String, formatter: DateTimeFormatter): LocalTime = js.native
 }

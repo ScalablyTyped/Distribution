@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnActivatedActiveInfo extends js.Object {
+trait OnActivatedActiveInfo extends StObject {
   
   /** The ID of the tab that was previously active, if that tab is still open. */
   var previousTabId: js.UndefOr[Double] = js.native
@@ -25,30 +26,18 @@ object OnActivatedActiveInfo {
   }
   
   @scala.inline
-  implicit class OnActivatedActiveInfoOps[Self <: OnActivatedActiveInfo] (val x: Self) extends AnyVal {
+  implicit class OnActivatedActiveInfoMutableBuilder[Self <: OnActivatedActiveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviousTabId(value: Double): Self = StObject.set(x, "previousTabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreviousTabIdUndefined: Self = StObject.set(x, "previousTabId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWindowId(value: Double): Self = this.set("windowId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousTabId(value: Double): Self = this.set("previousTabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousTabId: Self = this.set("previousTabId", js.undefined)
+    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

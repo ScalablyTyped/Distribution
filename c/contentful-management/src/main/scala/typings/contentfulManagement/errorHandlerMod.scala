@@ -1,13 +1,14 @@
 package typings.contentfulManagement
 
 import typings.axios.mod.AxiosError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("contentful-management/dist/typings/error-handler", JSImport.Namespace)
-@js.native
-object errorHandlerMod extends js.Object {
+object errorHandlerMod {
   
+  @JSImport("contentful-management/dist/typings/error-handler", JSImport.Default)
+  @js.native
   def default(errorResponse: AxiosError[_]): scala.Nothing = js.native
 }

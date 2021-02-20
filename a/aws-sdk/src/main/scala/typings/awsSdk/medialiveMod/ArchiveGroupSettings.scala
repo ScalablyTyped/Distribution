@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArchiveGroupSettings extends js.Object {
+trait ArchiveGroupSettings extends StObject {
   
   /**
     * A directory and base filename where archive files should be written.
@@ -26,27 +27,15 @@ object ArchiveGroupSettings {
   }
   
   @scala.inline
-  implicit class ArchiveGroupSettingsOps[Self <: ArchiveGroupSettings] (val x: Self) extends AnyVal {
+  implicit class ArchiveGroupSettingsMutableBuilder[Self <: ArchiveGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRolloverInterval(value: integerMin1): Self = StObject.set(x, "RolloverInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestination(value: OutputLocationRef): Self = this.set("Destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRolloverInterval(value: integerMin1): Self = this.set("RolloverInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolloverInterval: Self = this.set("RolloverInterval", js.undefined)
+    def setRolloverIntervalUndefined: Self = StObject.set(x, "RolloverInterval", js.undefined)
   }
 }

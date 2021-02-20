@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SensitiveCategoryTargetingOptionDetails extends js.Object {
+trait SensitiveCategoryTargetingOptionDetails extends StObject {
   
   /** Output only. An enum for the DV360 Sensitive category content classifier. */
   var sensitiveCategory: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object SensitiveCategoryTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class SensitiveCategoryTargetingOptionDetailsOps[Self <: SensitiveCategoryTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class SensitiveCategoryTargetingOptionDetailsMutableBuilder[Self <: SensitiveCategoryTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSensitiveCategory(value: String): Self = StObject.set(x, "sensitiveCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSensitiveCategory(value: String): Self = this.set("sensitiveCategory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitiveCategory: Self = this.set("sensitiveCategory", js.undefined)
+    def setSensitiveCategoryUndefined: Self = StObject.set(x, "sensitiveCategory", js.undefined)
   }
 }

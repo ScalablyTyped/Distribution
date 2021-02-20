@@ -2,6 +2,7 @@ package typings.breeze.breeze
 
 import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,33 +39,21 @@ object EntityState {
   }
   
   @scala.inline
-  implicit class EntityStateOps[Self <: EntityState] (val x: Self) extends AnyVal {
+  implicit class EntityStateMutableBuilder[Self <: EntityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdded(value: EntityStateSymbol): Self = StObject.set(x, "Added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleted(value: EntityStateSymbol): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetached(value: EntityStateSymbol): Self = StObject.set(x, "Detached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdded(value: EntityStateSymbol): Self = this.set("Added", value.asInstanceOf[js.Any])
+    def setModified(value: EntityStateSymbol): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: EntityStateSymbol): Self = this.set("Deleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetached(value: EntityStateSymbol): Self = this.set("Detached", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModified(value: EntityStateSymbol): Self = this.set("Modified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnchanged(value: EntityStateSymbol): Self = this.set("Unchanged", value.asInstanceOf[js.Any])
+    def setUnchanged(value: EntityStateSymbol): Self = StObject.set(x, "Unchanged", value.asInstanceOf[js.Any])
   }
 }

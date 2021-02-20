@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientRealtimebidding.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientRealtimebidding.anon.NameOauthtoken
 import typings.maximMazurokGapiClientRealtimebidding.anon.PageSize
 import typings.maximMazurokGapiClientRealtimebidding.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserListsResource extends js.Object {
+trait UserListsResource extends StObject {
   
   /** Change the status of a user list to CLOSED. This prevents new users from being added to the user list. */
   def close(request: FieldsKey): Request[UserList] = js.native

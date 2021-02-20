@@ -1,11 +1,12 @@
 package typings.bmapgl.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fromitem extends js.Object {
+trait Fromitem extends StObject {
   
   var fromitem: js.Any = js.native
   
@@ -25,30 +26,18 @@ object Fromitem {
   }
   
   @scala.inline
-  implicit class FromitemOps[Self <: Fromitem] (val x: Self) extends AnyVal {
+  implicit class FromitemMutableBuilder[Self <: Fromitem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromitem(value: js.Any): Self = StObject.set(x, "fromitem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToitem(value: js.Any): Self = StObject.set(x, "toitem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromitem(value: js.Any): Self = this.set("fromitem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToitem(value: js.Any): Self = this.set("toitem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

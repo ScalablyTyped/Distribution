@@ -1,7 +1,8 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _QueryParser extends js.Object
+trait _QueryParser extends StObject

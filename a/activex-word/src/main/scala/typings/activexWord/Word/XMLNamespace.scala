@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLNamespace extends js.Object {
+trait XMLNamespace extends StObject {
   
   /** @param boolean [AllUsers=false] */
   def Alias(): String = js.native

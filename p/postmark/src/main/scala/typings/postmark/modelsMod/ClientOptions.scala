@@ -1,21 +1,22 @@
 package typings.postmark.modelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/models", "ClientOptions")
-@js.native
-object ClientOptions extends js.Object {
+object ClientOptions {
   
+  @JSImport("postmark/dist/client/models", "ClientOptions.Configuration")
   @js.native
   class Configuration protected ()
     extends typings.postmark.clientOptionsMod.ClientOptions.Configuration {
     def this(useHttps: Boolean, requestHost: String, timeout: Double) = this()
   }
   
+  @JSImport("postmark/dist/client/models", "ClientOptions.DefaultHeaderNames")
   @js.native
-  object DefaultHeaderNames extends js.Object {
+  object DefaultHeaderNames extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames with String] = js.native
@@ -25,8 +26,9 @@ object ClientOptions extends js.Object {
     /* "X-Postmark-Server-Token" */ val SERVER_TOKEN: typings.postmark.clientOptionsMod.ClientOptions.DefaultHeaderNames.SERVER_TOKEN with String = js.native
   }
   
+  @JSImport("postmark/dist/client/models", "ClientOptions.HttpMethod")
   @js.native
-  object HttpMethod extends js.Object {
+  object HttpMethod extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.postmark.clientOptionsMod.ClientOptions.HttpMethod with String] = js.native

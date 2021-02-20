@@ -23,6 +23,7 @@ import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.static
 import typings.html5plus.html5plusStrings.top
 import typings.html5plus.html5plusStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewStyles extends js.Object {
+trait PlusWebviewWebviewStyles extends StObject {
   
   /**
     * 窗口加载页面时额外添加的HTTP请求头数据
@@ -549,285 +550,273 @@ object PlusWebviewWebviewStyles {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewStylesOps[Self <: PlusWebviewWebviewStyles] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewStylesMutableBuilder[Self <: PlusWebviewWebviewStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalHttpHeaders(value: js.Any): Self = StObject.set(x, "additionalHttpHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalHttpHeadersUndefined: Self = StObject.set(x, "additionalHttpHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationOptimization(value: String): Self = StObject.set(x, "animationOptimization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalHttpHeaders(value: js.Any): Self = this.set("additionalHttpHeaders", value.asInstanceOf[js.Any])
+    def setAnimationOptimizationUndefined: Self = StObject.set(x, "animationOptimization", js.undefined)
     
     @scala.inline
-    def deleteAdditionalHttpHeaders: Self = this.set("additionalHttpHeaders", js.undefined)
+    def setBackButtonAutoControl(value: hide | close | none): Self = StObject.set(x, "backButtonAutoControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationOptimization(value: String): Self = this.set("animationOptimization", value.asInstanceOf[js.Any])
+    def setBackButtonAutoControlUndefined: Self = StObject.set(x, "backButtonAutoControl", js.undefined)
     
     @scala.inline
-    def deleteAnimationOptimization: Self = this.set("animationOptimization", js.undefined)
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackButtonAutoControl(value: hide | close | none): Self = this.set("backButtonAutoControl", value.asInstanceOf[js.Any])
+    def setBackgroundColorBottom(value: String): Self = StObject.set(x, "backgroundColorBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackButtonAutoControl: Self = this.set("backButtonAutoControl", js.undefined)
+    def setBackgroundColorBottomUndefined: Self = StObject.set(x, "backgroundColorBottom", js.undefined)
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setBackgroundColorTop(value: String): Self = StObject.set(x, "backgroundColorTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setBackgroundColorTopUndefined: Self = StObject.set(x, "backgroundColorTop", js.undefined)
     
     @scala.inline
-    def setBackgroundColorBottom(value: String): Self = this.set("backgroundColorBottom", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorBottom: Self = this.set("backgroundColorBottom", js.undefined)
+    def setBlockNetworkImage(value: Boolean): Self = StObject.set(x, "blockNetworkImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorTop(value: String): Self = this.set("backgroundColorTop", value.asInstanceOf[js.Any])
+    def setBlockNetworkImageUndefined: Self = StObject.set(x, "blockNetworkImage", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorTop: Self = this.set("backgroundColorTop", js.undefined)
+    def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockNetworkImage(value: Boolean): Self = this.set("blockNetworkImage", value.asInstanceOf[js.Any])
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def deleteBlockNetworkImage: Self = this.set("blockNetworkImage", js.undefined)
+    def setBounce(value: none | vertical | horizontal | all): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setBounceBackground(value: String): Self = StObject.set(x, "bounceBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setBounceBackgroundUndefined: Self = StObject.set(x, "bounceBackground", js.undefined)
     
     @scala.inline
-    def setBounce(value: none | vertical | horizontal | all): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
     
     @scala.inline
-    def deleteBounce: Self = this.set("bounce", js.undefined)
+    def setCachemode(value: default | cacheElseNetwork | noCache | cacheOnly): Self = StObject.set(x, "cachemode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceBackground(value: String): Self = this.set("bounceBackground", value.asInstanceOf[js.Any])
+    def setCachemodeUndefined: Self = StObject.set(x, "cachemode", js.undefined)
     
     @scala.inline
-    def deleteBounceBackground: Self = this.set("bounceBackground", js.undefined)
+    def setDecelerationRate(value: Double): Self = StObject.set(x, "decelerationRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachemode(value: default | cacheElseNetwork | noCache | cacheOnly): Self = this.set("cachemode", value.asInstanceOf[js.Any])
+    def setDecelerationRateUndefined: Self = StObject.set(x, "decelerationRate", js.undefined)
     
     @scala.inline
-    def deleteCachemode: Self = this.set("cachemode", js.undefined)
+    def setDock(value: top | bottom | right | left): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecelerationRate(value: Double): Self = this.set("decelerationRate", value.asInstanceOf[js.Any])
+    def setDockUndefined: Self = StObject.set(x, "dock", js.undefined)
     
     @scala.inline
-    def deleteDecelerationRate: Self = this.set("decelerationRate", js.undefined)
+    def setErrorPage(value: none): Self = StObject.set(x, "errorPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDock(value: top | bottom | right | left): Self = this.set("dock", value.asInstanceOf[js.Any])
+    def setErrorPageUndefined: Self = StObject.set(x, "errorPage", js.undefined)
     
     @scala.inline
-    def deleteDock: Self = this.set("dock", js.undefined)
+    def setHardwareAccelerated(value: Boolean): Self = StObject.set(x, "hardwareAccelerated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorPage(value: none): Self = this.set("errorPage", value.asInstanceOf[js.Any])
+    def setHardwareAcceleratedUndefined: Self = StObject.set(x, "hardwareAccelerated", js.undefined)
     
     @scala.inline
-    def deleteErrorPage: Self = this.set("errorPage", js.undefined)
+    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardwareAccelerated(value: Boolean): Self = this.set("hardwareAccelerated", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHardwareAccelerated: Self = this.set("hardwareAccelerated", js.undefined)
+    def setKernel(value: WKWebview | UIWebview): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setKernelUndefined: Self = StObject.set(x, "kernel", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernel(value: WKWebview | UIWebview): Self = this.set("kernel", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteKernel: Self = this.set("kernel", js.undefined)
+    def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: String): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: String): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setPlusrequire(value: String): Self = StObject.set(x, "plusrequire", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPlusrequireUndefined: Self = StObject.set(x, "plusrequire", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setPopGesture(value: none | close | hide): Self = StObject.set(x, "popGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlusrequire(value: String): Self = this.set("plusrequire", value.asInstanceOf[js.Any])
+    def setPopGestureUndefined: Self = StObject.set(x, "popGesture", js.undefined)
     
     @scala.inline
-    def deletePlusrequire: Self = this.set("plusrequire", js.undefined)
+    def setPosition(value: static | absolute | dock): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopGesture(value: none | close | hide): Self = this.set("popGesture", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePopGesture: Self = this.set("popGesture", js.undefined)
+    def setProgress(value: PlusWebviewWebviewProgressStyles): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: static | absolute | dock): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPullToRefresh(value: PlusWebviewWebviewPullToRefreshStyles): Self = StObject.set(x, "pullToRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: PlusWebviewWebviewProgressStyles): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setPullToRefreshUndefined: Self = StObject.set(x, "pullToRefresh", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setRender(value: onscreen | always): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullToRefresh(value: PlusWebviewWebviewPullToRefreshStyles): Self = this.set("pullToRefresh", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deletePullToRefresh: Self = this.set("pullToRefresh", js.undefined)
+    def setReplacewebapi(value: PlusWebviewWebviewReplaceWebApiOptions): Self = StObject.set(x, "replacewebapi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRender(value: onscreen | always): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setReplacewebapiUndefined: Self = StObject.set(x, "replacewebapi", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplacewebapi(value: PlusWebviewWebviewReplaceWebApiOptions): Self = this.set("replacewebapi", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteReplacewebapi: Self = this.set("replacewebapi", js.undefined)
+    def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: String): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setScrollIndicator(value: all | vertical | horizontal | none): Self = StObject.set(x, "scrollIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalable(value: Boolean): Self = this.set("scalable", value.asInstanceOf[js.Any])
+    def setScrollIndicatorUndefined: Self = StObject.set(x, "scrollIndicator", js.undefined)
     
     @scala.inline
-    def deleteScalable: Self = this.set("scalable", js.undefined)
+    def setScrollsToTop(value: Boolean): Self = StObject.set(x, "scrollsToTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollIndicator(value: all | vertical | horizontal | none): Self = this.set("scrollIndicator", value.asInstanceOf[js.Any])
+    def setScrollsToTopUndefined: Self = StObject.set(x, "scrollsToTop", js.undefined)
     
     @scala.inline
-    def deleteScrollIndicator: Self = this.set("scrollIndicator", js.undefined)
+    def setShareable(value: Boolean): Self = StObject.set(x, "shareable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollsToTop(value: Boolean): Self = this.set("scrollsToTop", value.asInstanceOf[js.Any])
+    def setShareableUndefined: Self = StObject.set(x, "shareable", js.undefined)
     
     @scala.inline
-    def deleteScrollsToTop: Self = this.set("scrollsToTop", js.undefined)
+    def setSoftinputMode(value: adjustPan | adjustResize): Self = StObject.set(x, "softinputMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareable(value: Boolean): Self = this.set("shareable", value.asInstanceOf[js.Any])
+    def setSoftinputModeUndefined: Self = StObject.set(x, "softinputMode", js.undefined)
     
     @scala.inline
-    def deleteShareable: Self = this.set("shareable", js.undefined)
+    def setStatusbar(value: PlusWebviewWebviewStatusbarStyles): Self = StObject.set(x, "statusbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftinputMode(value: adjustPan | adjustResize): Self = this.set("softinputMode", value.asInstanceOf[js.Any])
+    def setStatusbarUndefined: Self = StObject.set(x, "statusbar", js.undefined)
     
     @scala.inline
-    def deleteSoftinputMode: Self = this.set("softinputMode", js.undefined)
+    def setSubNViews(value: js.Array[PlusWebview]): Self = StObject.set(x, "subNViews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusbar(value: PlusWebviewWebviewStatusbarStyles): Self = this.set("statusbar", value.asInstanceOf[js.Any])
+    def setSubNViewsUndefined: Self = StObject.set(x, "subNViews", js.undefined)
     
     @scala.inline
-    def deleteStatusbar: Self = this.set("statusbar", js.undefined)
+    def setSubNViewsVarargs(value: PlusWebview*): Self = StObject.set(x, "subNViews", js.Array(value :_*))
     
     @scala.inline
-    def setSubNViewsVarargs(value: PlusWebview*): Self = this.set("subNViews", js.Array(value :_*))
+    def setTitleNView(value: PlusWebviewWebviewTitleNViewStyles): Self = StObject.set(x, "titleNView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubNViews(value: js.Array[PlusWebview]): Self = this.set("subNViews", value.asInstanceOf[js.Any])
+    def setTitleNViewUndefined: Self = StObject.set(x, "titleNView", js.undefined)
     
     @scala.inline
-    def deleteSubNViews: Self = this.set("subNViews", js.undefined)
+    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleNView(value: PlusWebviewWebviewTitleNViewStyles): Self = this.set("titleNView", value.asInstanceOf[js.Any])
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     @scala.inline
-    def deleteTitleNView: Self = this.set("titleNView", js.undefined)
+    def setTransform(value: PlusWebviewWebviewTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: String): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTransition(value: PlusWebviewWebviewTransition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform(value: PlusWebviewWebviewTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteTransform: Self = this.set("transform", js.undefined)
+    def setUserSelect(value: Boolean): Self = StObject.set(x, "userSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: PlusWebviewWebviewTransition): Self = this.set("transition", value.asInstanceOf[js.Any])
+    def setUserSelectUndefined: Self = StObject.set(x, "userSelect", js.undefined)
     
     @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setVideoFullscreen(value: String): Self = StObject.set(x, "videoFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserSelect(value: Boolean): Self = this.set("userSelect", value.asInstanceOf[js.Any])
+    def setVideoFullscreenUndefined: Self = StObject.set(x, "videoFullscreen", js.undefined)
     
     @scala.inline
-    def deleteUserSelect: Self = this.set("userSelect", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoFullscreen(value: String): Self = this.set("videoFullscreen", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteVideoFullscreen: Self = this.set("videoFullscreen", js.undefined)
+    def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZindex(value: Double): Self = this.set("zindex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZindex: Self = this.set("zindex", js.undefined)
+    def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
   }
 }

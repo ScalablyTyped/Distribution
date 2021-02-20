@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAssignmentsForHITRequest extends js.Object {
+trait ListAssignmentsForHITRequest extends StObject {
   
   /**
     * The status of the assignments to return: Submitted | Approved | Rejected
@@ -33,42 +34,30 @@ object ListAssignmentsForHITRequest {
   }
   
   @scala.inline
-  implicit class ListAssignmentsForHITRequestOps[Self <: ListAssignmentsForHITRequest] (val x: Self) extends AnyVal {
+  implicit class ListAssignmentsForHITRequestMutableBuilder[Self <: ListAssignmentsForHITRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentStatuses(value: AssignmentStatusList): Self = StObject.set(x, "AssignmentStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentStatusesUndefined: Self = StObject.set(x, "AssignmentStatuses", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentStatusesVarargs(value: AssignmentStatus*): Self = StObject.set(x, "AssignmentStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setHITId(value: EntityId): Self = this.set("HITId", value.asInstanceOf[js.Any])
+    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentStatusesVarargs(value: AssignmentStatus*): Self = this.set("AssignmentStatuses", js.Array(value :_*))
+    def setMaxResults(value: ResultSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentStatuses(value: AssignmentStatusList): Self = this.set("AssignmentStatuses", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteAssignmentStatuses: Self = this.set("AssignmentStatuses", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: ResultSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirector
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueMatcher extends js.Object {
+trait ValueMatcher extends StObject {
   
   /** If specified, a match occurs if and only if the target value is a bool value and is equal to this field. */
   var boolMatch: js.UndefOr[Boolean] = js.native
@@ -37,54 +38,42 @@ object ValueMatcher {
   }
   
   @scala.inline
-  implicit class ValueMatcherOps[Self <: ValueMatcher] (val x: Self) extends AnyVal {
+  implicit class ValueMatcherMutableBuilder[Self <: ValueMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolMatch(value: Boolean): Self = StObject.set(x, "boolMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolMatchUndefined: Self = StObject.set(x, "boolMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoubleMatch(value: DoubleMatcher): Self = StObject.set(x, "doubleMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolMatch(value: Boolean): Self = this.set("boolMatch", value.asInstanceOf[js.Any])
+    def setDoubleMatchUndefined: Self = StObject.set(x, "doubleMatch", js.undefined)
     
     @scala.inline
-    def deleteBoolMatch: Self = this.set("boolMatch", js.undefined)
+    def setListMatch(value: ListMatcher): Self = StObject.set(x, "listMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleMatch(value: DoubleMatcher): Self = this.set("doubleMatch", value.asInstanceOf[js.Any])
+    def setListMatchUndefined: Self = StObject.set(x, "listMatch", js.undefined)
     
     @scala.inline
-    def deleteDoubleMatch: Self = this.set("doubleMatch", js.undefined)
+    def setNullMatch(value: js.Any): Self = StObject.set(x, "nullMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListMatch(value: ListMatcher): Self = this.set("listMatch", value.asInstanceOf[js.Any])
+    def setNullMatchUndefined: Self = StObject.set(x, "nullMatch", js.undefined)
     
     @scala.inline
-    def deleteListMatch: Self = this.set("listMatch", js.undefined)
+    def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullMatch(value: js.Any): Self = this.set("nullMatch", value.asInstanceOf[js.Any])
+    def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
     
     @scala.inline
-    def deleteNullMatch: Self = this.set("nullMatch", js.undefined)
+    def setStringMatch(value: StringMatcher): Self = StObject.set(x, "stringMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresentMatch(value: Boolean): Self = this.set("presentMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresentMatch: Self = this.set("presentMatch", js.undefined)
-    
-    @scala.inline
-    def setStringMatch(value: StringMatcher): Self = this.set("stringMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringMatch: Self = this.set("stringMatch", js.undefined)
+    def setStringMatchUndefined: Self = StObject.set(x, "stringMatch", js.undefined)
   }
 }

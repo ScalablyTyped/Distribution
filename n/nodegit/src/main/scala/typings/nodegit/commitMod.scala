@@ -10,16 +10,16 @@ import typings.nodegit.signatureMod.Signature
 import typings.nodegit.treeEntryMod.TreeEntry
 import typings.nodegit.treeMod.Tree
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/commit", JSImport.Namespace)
-@js.native
-object commitMod extends js.Object {
+object commitMod {
   
+  @JSImport("nodegit/commit", "Commit")
   @js.native
-  class Commit () extends js.Object {
+  class Commit () extends StObject {
     
     def amend(
       updateRef: String,
@@ -161,9 +161,10 @@ object commitMod extends js.Object {
     def treeId(): Oid = js.native
   }
   /* static members */
-  @js.native
-  object Commit extends js.Object {
+  object Commit {
     
+    @JSImport("nodegit/commit", "Commit.create")
+    @js.native
     def create(
       repo: Repository,
       updateRef: String,
@@ -176,6 +177,8 @@ object commitMod extends js.Object {
       parents: js.Array[_]
     ): Oid = js.native
     
+    @JSImport("nodegit/commit", "Commit.createV")
+    @js.native
     def createV(
       id: Oid,
       repo: Repository,
@@ -188,6 +191,8 @@ object commitMod extends js.Object {
       parentCount: Double
     ): Double = js.native
     
+    @JSImport("nodegit/commit", "Commit.createWithSignature")
+    @js.native
     def createWithSignature(repo: Repository, commitContent: String, signature: String, signatureField: String): js.Promise[Oid] = js.native
     
     /**
@@ -195,10 +200,18 @@ object commitMod extends js.Object {
       *
       *
       */
+    @JSImport("nodegit/commit", "Commit.lookup")
+    @js.native
     def lookup(repo: Repository, id: String): js.Promise[Commit] = js.native
+    @JSImport("nodegit/commit", "Commit.lookup")
+    @js.native
     def lookup(repo: Repository, id: Commit): js.Promise[Commit] = js.native
+    @JSImport("nodegit/commit", "Commit.lookup")
+    @js.native
     def lookup(repo: Repository, id: Oid): js.Promise[Commit] = js.native
     
+    @JSImport("nodegit/commit", "Commit.lookupPrefix")
+    @js.native
     def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Commit] = js.native
   }
   

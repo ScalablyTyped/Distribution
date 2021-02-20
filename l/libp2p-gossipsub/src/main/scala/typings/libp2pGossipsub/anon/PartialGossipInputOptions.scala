@@ -5,13 +5,14 @@ import typings.libp2pGossipsub.interfacesMod.MessageIdFunction
 import typings.libp2pGossipsub.messageCacheMod.MessageCache
 import typings.libp2pInterfaces.pubsubMod.InMessage
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub.GossipInputOptions> */
 @js.native
-trait PartialGossipInputOptions extends js.Object {
+trait PartialGossipInputOptions extends StObject {
   
   var D: js.UndefOr[Double] = js.native
   
@@ -56,123 +57,111 @@ object PartialGossipInputOptions {
   }
   
   @scala.inline
-  implicit class PartialGossipInputOptionsOps[Self <: PartialGossipInputOptions] (val x: Self) extends AnyVal {
+  implicit class PartialGossipInputOptionsMutableBuilder[Self <: PartialGossipInputOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDUndefined: Self = StObject.set(x, "D", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDhi(value: Double): Self = StObject.set(x, "Dhi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: Double): Self = this.set("D", value.asInstanceOf[js.Any])
+    def setDhiUndefined: Self = StObject.set(x, "Dhi", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("D", js.undefined)
+    def setDirectPeers(value: js.Array[AddrInfo]): Self = StObject.set(x, "directPeers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDhi(value: Double): Self = this.set("Dhi", value.asInstanceOf[js.Any])
+    def setDirectPeersUndefined: Self = StObject.set(x, "directPeers", js.undefined)
     
     @scala.inline
-    def deleteDhi: Self = this.set("Dhi", js.undefined)
+    def setDirectPeersVarargs(value: AddrInfo*): Self = StObject.set(x, "directPeers", js.Array(value :_*))
     
     @scala.inline
-    def setDlazy(value: Double): Self = this.set("Dlazy", value.asInstanceOf[js.Any])
+    def setDlazy(value: Double): Self = StObject.set(x, "Dlazy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDlazy: Self = this.set("Dlazy", js.undefined)
+    def setDlazyUndefined: Self = StObject.set(x, "Dlazy", js.undefined)
     
     @scala.inline
-    def setDlo(value: Double): Self = this.set("Dlo", value.asInstanceOf[js.Any])
+    def setDlo(value: Double): Self = StObject.set(x, "Dlo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDlo: Self = this.set("Dlo", js.undefined)
+    def setDloUndefined: Self = StObject.set(x, "Dlo", js.undefined)
     
     @scala.inline
-    def setDout(value: Double): Self = this.set("Dout", value.asInstanceOf[js.Any])
+    def setDoPX(value: Boolean): Self = StObject.set(x, "doPX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDout: Self = this.set("Dout", js.undefined)
+    def setDoPXUndefined: Self = StObject.set(x, "doPX", js.undefined)
     
     @scala.inline
-    def setDscore(value: Double): Self = this.set("Dscore", value.asInstanceOf[js.Any])
+    def setDout(value: Double): Self = StObject.set(x, "Dout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDscore: Self = this.set("Dscore", js.undefined)
+    def setDoutUndefined: Self = StObject.set(x, "Dout", js.undefined)
     
     @scala.inline
-    def setDirectPeersVarargs(value: AddrInfo*): Self = this.set("directPeers", js.Array(value :_*))
+    def setDscore(value: Double): Self = StObject.set(x, "Dscore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectPeers(value: js.Array[AddrInfo]): Self = this.set("directPeers", value.asInstanceOf[js.Any])
+    def setDscoreUndefined: Self = StObject.set(x, "Dscore", js.undefined)
     
     @scala.inline
-    def deleteDirectPeers: Self = this.set("directPeers", js.undefined)
+    def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoPX(value: Boolean): Self = this.set("doPX", value.asInstanceOf[js.Any])
+    def setEmitSelfUndefined: Self = StObject.set(x, "emitSelf", js.undefined)
     
     @scala.inline
-    def deleteDoPX: Self = this.set("doPX", js.undefined)
+    def setFallbackToFloodsub(value: Boolean): Self = StObject.set(x, "fallbackToFloodsub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmitSelf(value: Boolean): Self = this.set("emitSelf", value.asInstanceOf[js.Any])
+    def setFallbackToFloodsubUndefined: Self = StObject.set(x, "fallbackToFloodsub", js.undefined)
     
     @scala.inline
-    def deleteEmitSelf: Self = this.set("emitSelf", js.undefined)
+    def setFloodPublish(value: Boolean): Self = StObject.set(x, "floodPublish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackToFloodsub(value: Boolean): Self = this.set("fallbackToFloodsub", value.asInstanceOf[js.Any])
+    def setFloodPublishUndefined: Self = StObject.set(x, "floodPublish", js.undefined)
     
     @scala.inline
-    def deleteFallbackToFloodsub: Self = this.set("fallbackToFloodsub", js.undefined)
+    def setGlobalSignaturePolicy(value: String): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodPublish(value: Boolean): Self = this.set("floodPublish", value.asInstanceOf[js.Any])
+    def setGlobalSignaturePolicyUndefined: Self = StObject.set(x, "globalSignaturePolicy", js.undefined)
     
     @scala.inline
-    def deleteFloodPublish: Self = this.set("floodPublish", js.undefined)
+    def setGossipIncoming(value: Boolean): Self = StObject.set(x, "gossipIncoming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSignaturePolicy(value: String): Self = this.set("globalSignaturePolicy", value.asInstanceOf[js.Any])
+    def setGossipIncomingUndefined: Self = StObject.set(x, "gossipIncoming", js.undefined)
     
     @scala.inline
-    def deleteGlobalSignaturePolicy: Self = this.set("globalSignaturePolicy", js.undefined)
+    def setMessageCache(value: MessageCache): Self = StObject.set(x, "messageCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGossipIncoming(value: Boolean): Self = this.set("gossipIncoming", value.asInstanceOf[js.Any])
+    def setMessageCacheUndefined: Self = StObject.set(x, "messageCache", js.undefined)
     
     @scala.inline
-    def deleteGossipIncoming: Self = this.set("gossipIncoming", js.undefined)
+    def setMsgIdFn(value: /* msg */ InMessage => Uint8Array): Self = StObject.set(x, "msgIdFn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMessageCache(value: MessageCache): Self = this.set("messageCache", value.asInstanceOf[js.Any])
+    def setMsgIdFnUndefined: Self = StObject.set(x, "msgIdFn", js.undefined)
     
     @scala.inline
-    def deleteMessageCache: Self = this.set("messageCache", js.undefined)
+    def setScoreParams(value: PartialPeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsgIdFn(value: /* msg */ InMessage => Uint8Array): Self = this.set("msgIdFn", js.Any.fromFunction1(value))
+    def setScoreParamsUndefined: Self = StObject.set(x, "scoreParams", js.undefined)
     
     @scala.inline
-    def deleteMsgIdFn: Self = this.set("msgIdFn", js.undefined)
+    def setScoreThresholds(value: PartialPeerScoreThreshold): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreParams(value: PartialPeerScoreParams): Self = this.set("scoreParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoreParams: Self = this.set("scoreParams", js.undefined)
-    
-    @scala.inline
-    def setScoreThresholds(value: PartialPeerScoreThreshold): Self = this.set("scoreThresholds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoreThresholds: Self = this.set("scoreThresholds", js.undefined)
+    def setScoreThresholdsUndefined: Self = StObject.set(x, "scoreThresholds", js.undefined)
   }
 }

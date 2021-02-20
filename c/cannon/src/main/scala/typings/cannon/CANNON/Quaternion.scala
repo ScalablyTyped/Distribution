@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Quaternion extends js.Object {
+trait Quaternion extends StObject {
   
   def conjugate(): Quaternion = js.native
   def conjugate(target: Quaternion): Quaternion = js.native

@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * affected.
   */
 @js.native
-trait SchemaDocumentRemove extends js.Object {
+trait SchemaDocumentRemove extends StObject {
   
   /**
     * The resource name of the Document that has gone out of view.
@@ -40,39 +41,27 @@ object SchemaDocumentRemove {
   }
   
   @scala.inline
-  implicit class SchemaDocumentRemoveOps[Self <: SchemaDocumentRemove] (val x: Self) extends AnyVal {
+  implicit class SchemaDocumentRemoveMutableBuilder[Self <: SchemaDocumentRemove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: String): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
+    def setRemovedTargetIds(value: js.Array[Double]): Self = StObject.set(x, "removedTargetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    def setRemovedTargetIdsUndefined: Self = StObject.set(x, "removedTargetIds", js.undefined)
     
     @scala.inline
-    def deleteReadTime: Self = this.set("readTime", js.undefined)
-    
-    @scala.inline
-    def setRemovedTargetIdsVarargs(value: Double*): Self = this.set("removedTargetIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovedTargetIds(value: js.Array[Double]): Self = this.set("removedTargetIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemovedTargetIds: Self = this.set("removedTargetIds", js.undefined)
+    def setRemovedTargetIdsVarargs(value: Double*): Self = StObject.set(x, "removedTargetIds", js.Array(value :_*))
   }
 }

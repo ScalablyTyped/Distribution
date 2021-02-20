@@ -1,16 +1,16 @@
 package typings.gridstack
 
 import typings.gridstack.typesMod.GridStackNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gridstack/dist/gridstack-engine", JSImport.Namespace)
-@js.native
-object gridstackEngineMod extends js.Object {
+object gridstackEngineMod {
   
+  @JSImport("gridstack/dist/gridstack-engine", "GridStackEngine")
   @js.native
-  class GridStackEngine () extends js.Object {
+  class GridStackEngine () extends StObject {
     def this(column: Double) = this()
     def this(column: js.UndefOr[scala.Nothing], onchange: onChangeCB) = this()
     def this(column: Double, onchange: onChangeCB) = this()

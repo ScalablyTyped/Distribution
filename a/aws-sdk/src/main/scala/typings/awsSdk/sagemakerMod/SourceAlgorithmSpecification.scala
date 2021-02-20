@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceAlgorithmSpecification extends js.Object {
+trait SourceAlgorithmSpecification extends StObject {
   
   /**
     * A list of the algorithms that were used to create a model package.
@@ -21,24 +22,12 @@ object SourceAlgorithmSpecification {
   }
   
   @scala.inline
-  implicit class SourceAlgorithmSpecificationOps[Self <: SourceAlgorithmSpecification] (val x: Self) extends AnyVal {
+  implicit class SourceAlgorithmSpecificationMutableBuilder[Self <: SourceAlgorithmSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceAlgorithms(value: SourceAlgorithmList): Self = StObject.set(x, "SourceAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceAlgorithmsVarargs(value: SourceAlgorithm*): Self = this.set("SourceAlgorithms", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceAlgorithms(value: SourceAlgorithmList): Self = this.set("SourceAlgorithms", value.asInstanceOf[js.Any])
+    def setSourceAlgorithmsVarargs(value: SourceAlgorithm*): Self = StObject.set(x, "SourceAlgorithms", js.Array(value :_*))
   }
 }

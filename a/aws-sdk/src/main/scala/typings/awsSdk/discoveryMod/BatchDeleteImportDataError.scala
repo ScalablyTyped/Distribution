@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteImportDataError extends js.Object {
+trait BatchDeleteImportDataError extends StObject {
   
   /**
     * The type of error that occurred for a specific import task.
@@ -31,36 +32,24 @@ object BatchDeleteImportDataError {
   }
   
   @scala.inline
-  implicit class BatchDeleteImportDataErrorOps[Self <: BatchDeleteImportDataError] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteImportDataErrorMutableBuilder[Self <: BatchDeleteImportDataError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: BatchDeleteImportDataErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorDescription(value: BatchDeleteImportDataErrorDescription): Self = StObject.set(x, "errorDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: BatchDeleteImportDataErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorDescriptionUndefined: Self = StObject.set(x, "errorDescription", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setImportTaskId(value: ImportTaskIdentifier): Self = StObject.set(x, "importTaskId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDescription(value: BatchDeleteImportDataErrorDescription): Self = this.set("errorDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorDescription: Self = this.set("errorDescription", js.undefined)
-    
-    @scala.inline
-    def setImportTaskId(value: ImportTaskIdentifier): Self = this.set("importTaskId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportTaskId: Self = this.set("importTaskId", js.undefined)
+    def setImportTaskIdUndefined: Self = StObject.set(x, "importTaskId", js.undefined)
   }
 }

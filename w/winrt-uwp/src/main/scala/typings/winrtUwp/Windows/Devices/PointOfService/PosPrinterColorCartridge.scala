@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterColorCartridge extends js.Object
+sealed trait PosPrinterColorCartridge extends StObject
 /** Describes the color cartridges that the point-of-service printer can use for printing. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterColorCartridge")
 @js.native
-object PosPrinterColorCartridge extends js.Object {
+object PosPrinterColorCartridge extends StObject {
   
   /** The first custom color cartridge, which provides a secondary color, usually red. */
   @js.native

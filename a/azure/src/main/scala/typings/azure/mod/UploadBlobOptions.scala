@@ -1,5 +1,6 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,48 +27,36 @@ object UploadBlobOptions {
   }
   
   @scala.inline
-  implicit class UploadBlobOptionsOps[Self <: UploadBlobOptions] (val x: Self) extends AnyVal {
+  implicit class UploadBlobOptionsMutableBuilder[Self <: UploadBlobOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: StorageMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParallelOperationThreadCount(value: Double): Self = StObject.set(x, "parallelOperationThreadCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: StorageMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setParallelOperationThreadCountUndefined: Self = StObject.set(x, "parallelOperationThreadCount", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setSpeedSummary(value: SpeedSummary): Self = StObject.set(x, "speedSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParallelOperationThreadCount(value: Double): Self = this.set("parallelOperationThreadCount", value.asInstanceOf[js.Any])
+    def setSpeedSummaryUndefined: Self = StObject.set(x, "speedSummary", js.undefined)
     
     @scala.inline
-    def deleteParallelOperationThreadCount: Self = this.set("parallelOperationThreadCount", js.undefined)
+    def setStoreBlobContentMD5(value: Boolean): Self = StObject.set(x, "storeBlobContentMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeedSummary(value: SpeedSummary): Self = this.set("speedSummary", value.asInstanceOf[js.Any])
+    def setStoreBlobContentMD5Undefined: Self = StObject.set(x, "storeBlobContentMD5", js.undefined)
     
     @scala.inline
-    def deleteSpeedSummary: Self = this.set("speedSummary", js.undefined)
+    def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreBlobContentMD5(value: Boolean): Self = this.set("storeBlobContentMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreBlobContentMD5: Self = this.set("storeBlobContentMD5", js.undefined)
-    
-    @scala.inline
-    def setUseTransactionalMD5(value: Boolean): Self = this.set("useTransactionalMD5", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseTransactionalMD5: Self = this.set("useTransactionalMD5", js.undefined)
+    def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
   }
 }

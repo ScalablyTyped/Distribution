@@ -1,11 +1,12 @@
 package typings.zdog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnchorOptions extends js.Object {
+trait AnchorOptions extends StObject {
   
   /**
     * Adds item to parent item.
@@ -43,42 +44,30 @@ object AnchorOptions {
   }
   
   @scala.inline
-  implicit class AnchorOptionsOps[Self <: AnchorOptions] (val x: Self) extends AnyVal {
+  implicit class AnchorOptionsMutableBuilder[Self <: AnchorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTo(value: Anchor): Self = StObject.set(x, "addTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToUndefined: Self = StObject.set(x, "addTo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRotate(value: VectorOptions): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddTo(value: Anchor): Self = this.set("addTo", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteAddTo: Self = this.set("addTo", js.undefined)
+    def setScale(value: VectorOptions | Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotate(value: VectorOptions): Self = this.set("rotate", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setTranslate(value: VectorOptions): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: VectorOptions | Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setTranslate(value: VectorOptions): Self = this.set("translate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

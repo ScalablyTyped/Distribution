@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,24 +39,12 @@ object PixelData {
   }
   
   @scala.inline
-  implicit class PixelDataOps[Self <: PixelData] (val x: Self) extends AnyVal {
+  implicit class PixelDataMutableBuilder[Self <: PixelData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExtent(value: Extent): Self = this.set("extent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPixelBlock(value: PixelBlock): Self = this.set("pixelBlock", value.asInstanceOf[js.Any])
+    def setPixelBlock(value: PixelBlock): Self = StObject.set(x, "pixelBlock", value.asInstanceOf[js.Any])
   }
 }

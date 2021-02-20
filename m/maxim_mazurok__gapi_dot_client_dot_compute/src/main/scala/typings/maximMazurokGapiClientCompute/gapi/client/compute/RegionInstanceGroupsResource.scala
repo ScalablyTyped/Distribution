@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.InstanceGroupKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.OauthtokenOrderBy
 import typings.maximMazurokGapiClientCompute.anon.OrderByPageToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionInstanceGroupsResource extends js.Object {
+trait RegionInstanceGroupsResource extends StObject {
   
   /** Returns the specified instance group resource. */
   def get(): Request[InstanceGroup] = js.native

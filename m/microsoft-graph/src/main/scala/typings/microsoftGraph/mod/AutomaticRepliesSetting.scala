@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutomaticRepliesSetting extends js.Object {
+trait AutomaticRepliesSetting extends StObject {
   
   /**
     * The set of audience external to the signed-in user's organization who will receive the ExternalReplyMessage, if Status
@@ -40,72 +41,60 @@ object AutomaticRepliesSetting {
   }
   
   @scala.inline
-  implicit class AutomaticRepliesSettingOps[Self <: AutomaticRepliesSetting] (val x: Self) extends AnyVal {
+  implicit class AutomaticRepliesSettingMutableBuilder[Self <: AutomaticRepliesSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExternalAudience(value: NullableOption[ExternalAudienceScope]): Self = StObject.set(x, "externalAudience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalAudienceNull: Self = StObject.set(x, "externalAudience", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalAudienceUndefined: Self = StObject.set(x, "externalAudience", js.undefined)
     
     @scala.inline
-    def setExternalAudience(value: NullableOption[ExternalAudienceScope]): Self = this.set("externalAudience", value.asInstanceOf[js.Any])
+    def setExternalReplyMessage(value: NullableOption[String]): Self = StObject.set(x, "externalReplyMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalAudience: Self = this.set("externalAudience", js.undefined)
+    def setExternalReplyMessageNull: Self = StObject.set(x, "externalReplyMessage", null)
     
     @scala.inline
-    def setExternalAudienceNull: Self = this.set("externalAudience", null)
+    def setExternalReplyMessageUndefined: Self = StObject.set(x, "externalReplyMessage", js.undefined)
     
     @scala.inline
-    def setExternalReplyMessage(value: NullableOption[String]): Self = this.set("externalReplyMessage", value.asInstanceOf[js.Any])
+    def setInternalReplyMessage(value: NullableOption[String]): Self = StObject.set(x, "internalReplyMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternalReplyMessage: Self = this.set("externalReplyMessage", js.undefined)
+    def setInternalReplyMessageNull: Self = StObject.set(x, "internalReplyMessage", null)
     
     @scala.inline
-    def setExternalReplyMessageNull: Self = this.set("externalReplyMessage", null)
+    def setInternalReplyMessageUndefined: Self = StObject.set(x, "internalReplyMessage", js.undefined)
     
     @scala.inline
-    def setInternalReplyMessage(value: NullableOption[String]): Self = this.set("internalReplyMessage", value.asInstanceOf[js.Any])
+    def setScheduledEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledEndDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInternalReplyMessage: Self = this.set("internalReplyMessage", js.undefined)
+    def setScheduledEndDateTimeNull: Self = StObject.set(x, "scheduledEndDateTime", null)
     
     @scala.inline
-    def setInternalReplyMessageNull: Self = this.set("internalReplyMessage", null)
+    def setScheduledEndDateTimeUndefined: Self = StObject.set(x, "scheduledEndDateTime", js.undefined)
     
     @scala.inline
-    def setScheduledEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("scheduledEndDateTime", value.asInstanceOf[js.Any])
+    def setScheduledStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledStartDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScheduledEndDateTime: Self = this.set("scheduledEndDateTime", js.undefined)
+    def setScheduledStartDateTimeNull: Self = StObject.set(x, "scheduledStartDateTime", null)
     
     @scala.inline
-    def setScheduledEndDateTimeNull: Self = this.set("scheduledEndDateTime", null)
+    def setScheduledStartDateTimeUndefined: Self = StObject.set(x, "scheduledStartDateTime", js.undefined)
     
     @scala.inline
-    def setScheduledStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("scheduledStartDateTime", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[AutomaticRepliesStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScheduledStartDateTime: Self = this.set("scheduledStartDateTime", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setScheduledStartDateTimeNull: Self = this.set("scheduledStartDateTime", null)
-    
-    @scala.inline
-    def setStatus(value: NullableOption[AutomaticRepliesStatus]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -7,17 +7,16 @@ import typings.std.Error
 import typings.std.PromiseLike
 import typings.std.PropertyDescriptor
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Chai")
-@js.native
-object Chai extends js.Object {
+object Chai {
   
   // For Assert API
   @js.native
-  trait Assert extends js.Object {
+  trait Assert extends StObject {
     
     def becomes(promise: js.Thenable[_], expected: js.Any): js.Thenable[Unit] = js.native
     def becomes(promise: js.Thenable[_], expected: js.Any, message: String): js.Thenable[Unit] = js.native
@@ -470,7 +469,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait PromisedAssert extends js.Object {
+  trait PromisedAssert extends StObject {
     
     def Throw(fn: js.Function): js.Thenable[Unit] = js.native
     def Throw(fn: js.Function, errType: js.Function): js.Thenable[Unit] = js.native
@@ -941,8 +940,15 @@ object Chai extends js.Object {
     extends Eventually
        with PromiseLike[js.Any]
   
+  type PromisedCloseTo = js.Function3[
+    /* expected */ Double, 
+    /* delta */ Double, 
+    /* message */ js.UndefOr[String], 
+    PromisedAssertion
+  ]
+  
   @js.native
-  trait PromisedDeep extends js.Object {
+  trait PromisedDeep extends StObject {
     
     def eq(value: js.Any): PromisedAssertion = js.native
     def eq(value: js.Any, message: String): PromisedAssertion = js.native
@@ -983,8 +989,10 @@ object Chai extends js.Object {
     var property_Original: PromisedProperty = js.native
   }
   
+  type PromisedEqual = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[String], PromisedAssertion]
+  
   @js.native
-  trait PromisedInclude extends js.Object {
+  trait PromisedInclude extends StObject {
     
     def apply(value: String): PromisedAssertion = js.native
     def apply(value: String, message: String): PromisedAssertion = js.native
@@ -1013,8 +1021,10 @@ object Chai extends js.Object {
     var ordered: PromisedOrdered = js.native
   }
   
+  type PromisedInstanceOf = js.Function2[/* constructor */ js.Object, /* message */ js.UndefOr[String], PromisedAssertion]
+  
   @js.native
-  trait PromisedKeyFilter extends js.Object {
+  trait PromisedKeyFilter extends StObject {
     
     def keys(keys: String*): PromisedAssertion = js.native
     def keys(keys: js.Array[_]): PromisedAssertion = js.native
@@ -1024,7 +1034,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait PromisedKeys extends js.Object {
+  trait PromisedKeys extends StObject {
     
     def apply(keys: String*): PromisedAssertion = js.native
     def apply(keys: js.Array[_]): PromisedAssertion = js.native
@@ -1032,7 +1042,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait PromisedLanguageChains extends js.Object {
+  trait PromisedLanguageChains extends StObject {
     
     def and(`type`: String): PromisedAssertion = js.native
     def and(`type`: String, message: String): PromisedAssertion = js.native
@@ -1126,8 +1136,12 @@ object Chai extends js.Object {
     def apply(length: Double, message: String): PromisedAssertion = js.native
   }
   
+  type PromisedMatch = js.Function2[/* regexp */ RegExp | String, /* message */ js.UndefOr[String], PromisedAssertion]
+  
+  type PromisedMembers = js.Function2[/* set */ js.Array[js.Any], /* message */ js.UndefOr[String], PromisedAssertion]
+  
   @js.native
-  trait PromisedNested extends js.Object {
+  trait PromisedNested extends StObject {
     
     def include(value: String): PromisedAssertion = js.native
     def include(value: String, message: String): PromisedAssertion = js.native
@@ -1151,8 +1165,10 @@ object Chai extends js.Object {
     var property_Original: PromisedProperty = js.native
   }
   
+  type PromisedNumberComparer = js.Function2[/* value */ Double, /* message */ js.UndefOr[String], PromisedAssertion]
+  
   @js.native
-  trait PromisedNumericComparison extends js.Object {
+  trait PromisedNumericComparison extends StObject {
     
     def above(value: Double): PromisedAssertion = js.native
     def above(value: Double, message: String): PromisedAssertion = js.native
@@ -1209,7 +1225,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait PromisedOrdered extends js.Object {
+  trait PromisedOrdered extends StObject {
     
     def members(set: js.Array[_]): PromisedAssertion = js.native
     def members(set: js.Array[_], message: String): PromisedAssertion = js.native
@@ -1217,8 +1233,10 @@ object Chai extends js.Object {
     var members_Original: PromisedMembers = js.native
   }
   
+  type PromisedOwnProperty = js.Function2[/* name */ String, /* message */ js.UndefOr[String], PromisedAssertion]
+  
   @js.native
-  trait PromisedOwnPropertyDescriptor extends js.Object {
+  trait PromisedOwnPropertyDescriptor extends StObject {
     
     def apply(name: String): PromisedAssertion = js.native
     def apply(name: String, descriptor: PropertyDescriptor): PromisedAssertion = js.native
@@ -1226,8 +1244,26 @@ object Chai extends js.Object {
     def apply(name: String, message: String): PromisedAssertion = js.native
   }
   
+  type PromisedProperty = js.Function3[
+    /* name */ String, 
+    /* value */ js.UndefOr[js.Any], 
+    /* message */ js.UndefOr[String], 
+    PromisedAssertion
+  ]
+  
+  type PromisedPropertyChange = js.Function3[
+    /* object */ js.Object, 
+    /* property */ String, 
+    /* message */ js.UndefOr[String], 
+    PromisedAssertion
+  ]
+  
+  type PromisedRespondTo = js.Function2[/* method */ String, /* message */ js.UndefOr[String], PromisedAssertion]
+  
+  type PromisedSatisfy = js.Function2[/* matcher */ js.Function, /* message */ js.UndefOr[String], PromisedAssertion]
+  
   @js.native
-  trait PromisedThrow extends js.Object {
+  trait PromisedThrow extends StObject {
     
     def apply(): PromisedAssertion = js.native
     def apply(constructor: js.Function): PromisedAssertion = js.native
@@ -1249,7 +1285,7 @@ object Chai extends js.Object {
   }
   
   @js.native
-  trait PromisedTypeComparison extends js.Object {
+  trait PromisedTypeComparison extends StObject {
     
     def apply(`type`: String): PromisedAssertion = js.native
     def apply(`type`: String, message: String): PromisedAssertion = js.native
@@ -1264,41 +1300,4 @@ object Chai extends js.Object {
     @JSName("instanceof")
     var instanceof_Original: PromisedInstanceOf = js.native
   }
-  
-  type PromisedCloseTo = js.Function3[
-    /* expected */ Double, 
-    /* delta */ Double, 
-    /* message */ js.UndefOr[String], 
-    PromisedAssertion
-  ]
-  
-  type PromisedEqual = js.Function2[/* value */ js.Any, /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedInstanceOf = js.Function2[/* constructor */ js.Object, /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedMatch = js.Function2[/* regexp */ RegExp | String, /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedMembers = js.Function2[/* set */ js.Array[js.Any], /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedNumberComparer = js.Function2[/* value */ Double, /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedOwnProperty = js.Function2[/* name */ String, /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedProperty = js.Function3[
-    /* name */ String, 
-    /* value */ js.UndefOr[js.Any], 
-    /* message */ js.UndefOr[String], 
-    PromisedAssertion
-  ]
-  
-  type PromisedPropertyChange = js.Function3[
-    /* object */ js.Object, 
-    /* property */ String, 
-    /* message */ js.UndefOr[String], 
-    PromisedAssertion
-  ]
-  
-  type PromisedRespondTo = js.Function2[/* method */ String, /* message */ js.UndefOr[String], PromisedAssertion]
-  
-  type PromisedSatisfy = js.Function2[/* matcher */ js.Function, /* message */ js.UndefOr[String], PromisedAssertion]
 }

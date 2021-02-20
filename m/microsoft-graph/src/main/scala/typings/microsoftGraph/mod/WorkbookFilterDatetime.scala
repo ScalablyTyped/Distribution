@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkbookFilterDatetime extends js.Object {
+trait WorkbookFilterDatetime extends StObject {
   
   var date: js.UndefOr[NullableOption[String]] = js.native
   
@@ -20,33 +21,21 @@ object WorkbookFilterDatetime {
   }
   
   @scala.inline
-  implicit class WorkbookFilterDatetimeOps[Self <: WorkbookFilterDatetime] (val x: Self) extends AnyVal {
+  implicit class WorkbookFilterDatetimeMutableBuilder[Self <: WorkbookFilterDatetime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: NullableOption[String]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateNull: Self = StObject.set(x, "date", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setDate(value: NullableOption[String]): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setSpecificity(value: String): Self = StObject.set(x, "specificity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
-    
-    @scala.inline
-    def setDateNull: Self = this.set("date", null)
-    
-    @scala.inline
-    def setSpecificity(value: String): Self = this.set("specificity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecificity: Self = this.set("specificity", js.undefined)
+    def setSpecificityUndefined: Self = StObject.set(x, "specificity", js.undefined)
   }
 }

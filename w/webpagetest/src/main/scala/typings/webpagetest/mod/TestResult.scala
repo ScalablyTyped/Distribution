@@ -1,12 +1,13 @@
 package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResult extends js.Object {
+trait TestResult extends StObject {
   
   var average: TestRun = js.native
   
@@ -81,81 +82,69 @@ object TestResult {
   }
   
   @scala.inline
-  implicit class TestResultOps[Self <: TestResult] (val x: Self) extends AnyVal {
+  implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: TestRun): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBwDown(value: Double): Self = StObject.set(x, "bwDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBwUp(value: Double): Self = StObject.set(x, "bwUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: TestRun): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBwDown(value: Double): Self = this.set("bwDown", value.asInstanceOf[js.Any])
+    def setConnectivity(value: String): Self = StObject.set(x, "connectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBwUp(value: Double): Self = this.set("bwUp", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: Double): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setFvonly(value: Boolean): Self = StObject.set(x, "fvonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectivity(value: String): Self = this.set("connectivity", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFvonly(value: Boolean): Self = this.set("fvonly", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMedian(value: TestRun): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: Double): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setMobile(value: Double): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPlr(value: String): Self = StObject.set(x, "plr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedian(value: TestRun): Self = this.set("median", value.asInstanceOf[js.Any])
+    def setRuns(value: StringDictionary[TestRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: Double): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    def setStandardDeviation(value: TestRun): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlr(value: String): Self = this.set("plr", value.asInstanceOf[js.Any])
+    def setSuccessfulFVRuns(value: Double): Self = StObject.set(x, "successfulFVRuns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuns(value: StringDictionary[TestRun]): Self = this.set("runs", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardDeviation(value: TestRun): Self = this.set("standardDeviation", value.asInstanceOf[js.Any])
+    def setTestUrl(value: String): Self = StObject.set(x, "testUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfulFVRuns(value: Double): Self = this.set("successfulFVRuns", value.asInstanceOf[js.Any])
+    def setTester(value: String): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setTesterDNS(value: String): Self = StObject.set(x, "testerDNS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestUrl(value: String): Self = this.set("testUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTester(value: String): Self = this.set("tester", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTesterDNS(value: String): Self = this.set("testerDNS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

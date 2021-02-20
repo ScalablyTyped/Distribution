@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bad extends js.Object {
+trait Bad extends StObject {
   
   var bad: scala.Double = js.native
   
@@ -41,42 +42,30 @@ object Bad {
   }
   
   @scala.inline
-  implicit class BadOps[Self <: Bad] (val x: Self) extends AnyVal {
+  implicit class BadMutableBuilder[Self <: Bad] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBad(value: scala.Double): Self = StObject.set(x, "bad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlob(value: scala.Double): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit(value: scala.Double): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBad(value: scala.Double): Self = this.set("bad", value.asInstanceOf[js.Any])
+    def setExt2(value: scala.Double): Self = StObject.set(x, "ext2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: scala.Double): Self = this.set("blob", value.asInstanceOf[js.Any])
+    def setOfsDelta(value: scala.Double): Self = StObject.set(x, "ofsDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: scala.Double): Self = this.set("commit", value.asInstanceOf[js.Any])
+    def setRefDelta(value: scala.Double): Self = StObject.set(x, "refDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt2(value: scala.Double): Self = this.set("ext2", value.asInstanceOf[js.Any])
+    def setTag(value: scala.Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfsDelta(value: scala.Double): Self = this.set("ofsDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefDelta(value: scala.Double): Self = this.set("refDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: scala.Double): Self = this.set("tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTree(value: scala.Double): Self = this.set("tree", value.asInstanceOf[js.Any])
+    def setTree(value: scala.Double): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
   }
 }

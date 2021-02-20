@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object Dashboard {
   }
   
   @scala.inline
-  implicit class DashboardOps[Self <: Dashboard] (val x: Self) extends AnyVal {
+  implicit class DashboardMutableBuilder[Self <: Dashboard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetObjects(value: () => js.Array[DashboardObject]): Self = StObject.set(x, "getObjects", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetParentStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getParentStoryPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetObjects(value: () => js.Array[DashboardObject]): Self = this.set("getObjects", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParentStoryPoint(value: () => StoryPoint): Self = this.set("getParentStoryPoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWorksheets(value: () => js.Array[Worksheet]): Self = this.set("getWorksheets", js.Any.fromFunction0(value))
+    def setGetWorksheets(value: () => js.Array[Worksheet]): Self = StObject.set(x, "getWorksheets", js.Any.fromFunction0(value))
   }
 }

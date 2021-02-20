@@ -5,12 +5,13 @@ import typings.hapi.mod.Lifecycle.ReturnValue
 import typings.joi.mod.ValidationOptions
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsValidate extends js.Object {
+trait RouteOptionsValidate extends StObject {
   
   /**
     * Default value: none.
@@ -99,96 +100,84 @@ object RouteOptionsValidate {
   }
   
   @scala.inline
-  implicit class RouteOptionsValidateOps[Self <: RouteOptionsValidate] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsValidateMutableBuilder[Self <: RouteOptionsValidate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorFields(value: js.Object): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorFieldsUndefined: Self = StObject.set(x, "errorFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setErrorFields(value: js.Object): Self = this.set("errorFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorFields: Self = this.set("errorFields", js.undefined)
+    def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFailActionFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
-    ): Self = this.set("failAction", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFailAction(value: FailAction): Self = this.set("failAction", value.asInstanceOf[js.Any])
+    def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
     @scala.inline
-    def deleteFailAction: Self = this.set("failAction", js.undefined)
+    def setHeaders(value: RouteOptionsResponseSchema): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHeadersFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
-    ): Self = this.set("headers", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "headers", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHeaders(value: RouteOptionsResponseSchema): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setOptions(value: ValidationOptions | js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ValidationOptions | js.Object): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setParams(value: RouteOptionsResponseSchema): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParamsFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
-    ): Self = this.set("params", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "params", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setParams(value: RouteOptionsResponseSchema): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setPayload(value: RouteOptionsResponseSchema): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPayloadFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
-    ): Self = this.set("payload", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPayload(value: RouteOptionsResponseSchema): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setQuery(value: RouteOptionsResponseSchema): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQueryFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
-    ): Self = this.set("query", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQuery(value: RouteOptionsResponseSchema): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setState(value: RouteOptionsResponseSchema): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStateFunction2(
       value: (/* value */ js.Object | Buffer | String, /* options */ ValidationOptions) => js.Promise[js.Any]
-    ): Self = this.set("state", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "state", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setState(value: RouteOptionsResponseSchema): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

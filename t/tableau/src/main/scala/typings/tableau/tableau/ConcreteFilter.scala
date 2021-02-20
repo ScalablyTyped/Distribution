@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tableau.tableau.QuantitativeFilter
   - typings.tableau.tableau.RelativeDateFilter
 */
-trait ConcreteFilter extends js.Object
+trait ConcreteFilter extends StObject
 object ConcreteFilter {
   
   @scala.inline
@@ -20,9 +21,9 @@ object ConcreteFilter {
     getFilterType: () => FilterType,
     getIsExcludeMode: () => Boolean,
     getWorksheet: () => Worksheet
-  ): ConcreteFilter = {
+  ): typings.tableau.tableau.CategoricalFilter = {
     val __obj = js.Dynamic.literal(getAppliedValues = js.Any.fromFunction0(getAppliedValues), getFieldAsync = js.Any.fromFunction0(getFieldAsync), getFieldName = js.Any.fromFunction0(getFieldName), getFilterType = js.Any.fromFunction0(getFilterType), getIsExcludeMode = js.Any.fromFunction0(getIsExcludeMode), getWorksheet = js.Any.fromFunction0(getWorksheet))
-    __obj.asInstanceOf[ConcreteFilter]
+    __obj.asInstanceOf[typings.tableau.tableau.CategoricalFilter]
   }
   
   @scala.inline
@@ -36,9 +37,9 @@ object ConcreteFilter {
     getMax: () => DataValue,
     getMin: () => DataValue,
     getWorksheet: () => Worksheet
-  ): ConcreteFilter = {
+  ): typings.tableau.tableau.QuantitativeFilter = {
     val __obj = js.Dynamic.literal(getDomainMax = js.Any.fromFunction0(getDomainMax), getDomainMin = js.Any.fromFunction0(getDomainMin), getFieldAsync = js.Any.fromFunction0(getFieldAsync), getFieldName = js.Any.fromFunction0(getFieldName), getFilterType = js.Any.fromFunction0(getFilterType), getIncludeNullValues = js.Any.fromFunction0(getIncludeNullValues), getMax = js.Any.fromFunction0(getMax), getMin = js.Any.fromFunction0(getMin), getWorksheet = js.Any.fromFunction0(getWorksheet))
-    __obj.asInstanceOf[ConcreteFilter]
+    __obj.asInstanceOf[typings.tableau.tableau.QuantitativeFilter]
   }
   
   @scala.inline
@@ -50,8 +51,8 @@ object ConcreteFilter {
     getRange: () => DateRangeType,
     getRangeN: () => Double,
     getWorksheet: () => Worksheet
-  ): ConcreteFilter = {
+  ): typings.tableau.tableau.RelativeDateFilter = {
     val __obj = js.Dynamic.literal(getFieldAsync = js.Any.fromFunction0(getFieldAsync), getFieldName = js.Any.fromFunction0(getFieldName), getFilterType = js.Any.fromFunction0(getFilterType), getPeriod = js.Any.fromFunction0(getPeriod), getRange = js.Any.fromFunction0(getRange), getRangeN = js.Any.fromFunction0(getRangeN), getWorksheet = js.Any.fromFunction0(getWorksheet))
-    __obj.asInstanceOf[ConcreteFilter]
+    __obj.asInstanceOf[typings.tableau.tableau.RelativeDateFilter]
   }
 }

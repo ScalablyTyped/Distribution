@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreativeRestrictions extends js.Object {
+trait CreativeRestrictions extends StObject {
   
   /** The format of the environment that the creatives will be displayed in. */
   var creativeFormat: js.UndefOr[String] = js.native
@@ -24,39 +25,27 @@ object CreativeRestrictions {
   }
   
   @scala.inline
-  implicit class CreativeRestrictionsOps[Self <: CreativeRestrictions] (val x: Self) extends AnyVal {
+  implicit class CreativeRestrictionsMutableBuilder[Self <: CreativeRestrictions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreativeFormat(value: String): Self = StObject.set(x, "creativeFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreativeFormatUndefined: Self = StObject.set(x, "creativeFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreativeSpecifications(value: js.Array[CreativeSpecification]): Self = StObject.set(x, "creativeSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeFormat(value: String): Self = this.set("creativeFormat", value.asInstanceOf[js.Any])
+    def setCreativeSpecificationsUndefined: Self = StObject.set(x, "creativeSpecifications", js.undefined)
     
     @scala.inline
-    def deleteCreativeFormat: Self = this.set("creativeFormat", js.undefined)
+    def setCreativeSpecificationsVarargs(value: CreativeSpecification*): Self = StObject.set(x, "creativeSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setCreativeSpecificationsVarargs(value: CreativeSpecification*): Self = this.set("creativeSpecifications", js.Array(value :_*))
+    def setSkippableAdType(value: String): Self = StObject.set(x, "skippableAdType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeSpecifications(value: js.Array[CreativeSpecification]): Self = this.set("creativeSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreativeSpecifications: Self = this.set("creativeSpecifications", js.undefined)
-    
-    @scala.inline
-    def setSkippableAdType(value: String): Self = this.set("skippableAdType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkippableAdType: Self = this.set("skippableAdType", js.undefined)
+    def setSkippableAdTypeUndefined: Self = StObject.set(x, "skippableAdType", js.undefined)
   }
 }

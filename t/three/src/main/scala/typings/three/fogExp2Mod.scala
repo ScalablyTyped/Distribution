@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.fogMod.IFog
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/scenes/FogExp2", JSImport.Namespace)
-@js.native
-object fogExp2Mod extends js.Object {
+object fogExp2Mod {
   
+  @JSImport("three/src/scenes/FogExp2", "FogExp2")
   @js.native
   class FogExp2 protected () extends IFog {
     def this(hex: String) = this()

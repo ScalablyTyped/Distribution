@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -164,72 +165,60 @@ object SyntaxInformationMap {
   }
   
   @scala.inline
-  implicit class SyntaxInformationMapOps[Self <: SyntaxInformationMap] (val x: Self) extends AnyVal {
+  implicit class SyntaxInformationMapMutableBuilder[Self <: SyntaxInformationMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementToPosition(value: js.Any): Self = StObject.set(x, "elementToPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd(value: ISyntaxElement => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstTokenInLineContainingToken(value: ISyntaxToken => ISyntaxToken): Self = StObject.set(x, "firstTokenInLineContainingToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_currentPosition(value: js.Any): Self = this.set("_currentPosition", value.asInstanceOf[js.Any])
+    def setFullStart(value: ISyntaxElement => Double): Self = StObject.set(x, "fullStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_elementToParent(value: js.Any): Self = this.set("_elementToParent", value.asInstanceOf[js.Any])
+    def setIsFirstTokenInLine(value: ISyntaxToken => Boolean): Self = StObject.set(x, "isFirstTokenInLine", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_parentStack(value: js.Any): Self = this.set("_parentStack", value.asInstanceOf[js.Any])
+    def setIsFirstTokenInLineWorker(value: js.Any => js.Any): Self = StObject.set(x, "isFirstTokenInLineWorker", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_previousToken(value: js.Any): Self = this.set("_previousToken", value.asInstanceOf[js.Any])
+    def setParent(value: ISyntaxElement => SyntaxNode): Self = StObject.set(x, "parent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_previousTokenInformation(value: js.Any): Self = this.set("_previousTokenInformation", value.asInstanceOf[js.Any])
+    def setPreviousToken(value: ISyntaxToken => ISyntaxToken): Self = StObject.set(x, "previousToken", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setElementToPosition(value: js.Any): Self = this.set("elementToPosition", value.asInstanceOf[js.Any])
+    def setStart(value: ISyntaxElement => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnd(value: ISyntaxElement => Double): Self = this.set("end", js.Any.fromFunction1(value))
+    def setTokenInformation(value: ISyntaxToken => ITokenInformation): Self = StObject.set(x, "tokenInformation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirstTokenInLineContainingToken(value: ISyntaxToken => ISyntaxToken): Self = this.set("firstTokenInLineContainingToken", js.Any.fromFunction1(value))
+    def setTokenToInformation(value: js.Any): Self = StObject.set(x, "tokenToInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullStart(value: ISyntaxElement => Double): Self = this.set("fullStart", js.Any.fromFunction1(value))
+    def setTrackParents(value: js.Any): Self = StObject.set(x, "trackParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstTokenInLine(value: ISyntaxToken => Boolean): Self = this.set("isFirstTokenInLine", js.Any.fromFunction1(value))
+    def setTrackPreviousToken(value: js.Any): Self = StObject.set(x, "trackPreviousToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFirstTokenInLineWorker(value: js.Any => js.Any): Self = this.set("isFirstTokenInLineWorker", js.Any.fromFunction1(value))
+    def set_currentPosition(value: js.Any): Self = StObject.set(x, "_currentPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: ISyntaxElement => SyntaxNode): Self = this.set("parent", js.Any.fromFunction1(value))
+    def set_elementToParent(value: js.Any): Self = StObject.set(x, "_elementToParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousToken(value: ISyntaxToken => ISyntaxToken): Self = this.set("previousToken", js.Any.fromFunction1(value))
+    def set_parentStack(value: js.Any): Self = StObject.set(x, "_parentStack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: ISyntaxElement => Double): Self = this.set("start", js.Any.fromFunction1(value))
+    def set_previousToken(value: js.Any): Self = StObject.set(x, "_previousToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenInformation(value: ISyntaxToken => ITokenInformation): Self = this.set("tokenInformation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTokenToInformation(value: js.Any): Self = this.set("tokenToInformation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackParents(value: js.Any): Self = this.set("trackParents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackPreviousToken(value: js.Any): Self = this.set("trackPreviousToken", value.asInstanceOf[js.Any])
+    def set_previousTokenInformation(value: js.Any): Self = StObject.set(x, "_previousTokenInformation", value.asInstanceOf[js.Any])
   }
 }

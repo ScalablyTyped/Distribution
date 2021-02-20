@@ -1,13 +1,13 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdSpace extends js.Object {
+trait IdSpace extends StObject {
   
   @JSName("$$")
   var DollarDollar: js.Any = js.native
@@ -17,6 +17,3 @@ trait IdSpace extends js.Object {
   
   def ui(view: js.Any): baseview = js.native
 }
-@JSImport("webix", "IdSpace")
-@js.native
-object IdSpace extends TopLevel[IdSpace]

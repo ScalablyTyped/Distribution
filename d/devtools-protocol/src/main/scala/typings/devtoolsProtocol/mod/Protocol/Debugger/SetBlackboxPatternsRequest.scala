@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetBlackboxPatternsRequest extends js.Object {
+trait SetBlackboxPatternsRequest extends StObject {
   
   /**
     * Array of regexps that will be used to check script url for blackbox state.
@@ -21,24 +22,12 @@ object SetBlackboxPatternsRequest {
   }
   
   @scala.inline
-  implicit class SetBlackboxPatternsRequestOps[Self <: SetBlackboxPatternsRequest] (val x: Self) extends AnyVal {
+  implicit class SetBlackboxPatternsRequestMutableBuilder[Self <: SetBlackboxPatternsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPatternsVarargs(value: String*): Self = this.set("patterns", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatterns(value: js.Array[String]): Self = this.set("patterns", value.asInstanceOf[js.Any])
+    def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateUsageRequest extends js.Object {
+trait UpdateUsageRequest extends StObject {
   
   /**
     * [Required] The identifier of the API key associated with the usage plan in which a temporary extension is granted to the remaining quota.
@@ -31,33 +32,21 @@ object UpdateUsageRequest {
   }
   
   @scala.inline
-  implicit class UpdateUsageRequestOps[Self <: UpdateUsageRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateUsageRequestMutableBuilder[Self <: UpdateUsageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
     @scala.inline
-    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
     @scala.inline
-    def setUsagePlanId(value: String): Self = this.set("usagePlanId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = this.set("patchOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = this.set("patchOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatchOperations: Self = this.set("patchOperations", js.undefined)
+    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FeedbackType extends js.Object
+sealed trait FeedbackType extends StObject
 /**
   * An enum representing the supported types of feedback. Feedback types can be accessed from FormApp.FeedbackType.
   *
@@ -23,7 +24,7 @@ sealed trait FeedbackType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.FeedbackType")
 @js.native
-object FeedbackType extends js.Object {
+object FeedbackType extends StObject {
   
   @js.native
   sealed trait CORRECT extends FeedbackType

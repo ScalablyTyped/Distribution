@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserRewardedContentAssignedTargetingOptionDetails extends js.Object {
+trait UserRewardedContentAssignedTargetingOptionDetails extends StObject {
   
   /** Required. The targeting_option_id field when targeting_type is `TARGETING_TYPE_USER_REWARDED_CONTENT`. */
   var targetingOptionId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object UserRewardedContentAssignedTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class UserRewardedContentAssignedTargetingOptionDetailsOps[Self <: UserRewardedContentAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class UserRewardedContentAssignedTargetingOptionDetailsMutableBuilder[Self <: UserRewardedContentAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserRewardedContent(value: String): Self = StObject.set(x, "userRewardedContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetingOptionId(value: String): Self = this.set("targetingOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetingOptionId: Self = this.set("targetingOptionId", js.undefined)
-    
-    @scala.inline
-    def setUserRewardedContent(value: String): Self = this.set("userRewardedContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRewardedContent: Self = this.set("userRewardedContent", js.undefined)
+    def setUserRewardedContentUndefined: Self = StObject.set(x, "userRewardedContent", js.undefined)
   }
 }

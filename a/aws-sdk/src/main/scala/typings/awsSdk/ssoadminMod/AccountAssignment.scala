@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountAssignment extends js.Object {
+trait AccountAssignment extends StObject {
   
   /**
     * The identifier of the AWS account.
@@ -36,42 +37,30 @@ object AccountAssignment {
   }
   
   @scala.inline
-  implicit class AccountAssignmentOps[Self <: AccountAssignment] (val x: Self) extends AnyVal {
+  implicit class AccountAssignmentMutableBuilder[Self <: AccountAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setPermissionSetArnUndefined: Self = StObject.set(x, "PermissionSetArn", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = this.set("PermissionSetArn", value.asInstanceOf[js.Any])
+    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
     @scala.inline
-    def deletePermissionSetArn: Self = this.set("PermissionSetArn", js.undefined)
+    def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalId(value: PrincipalId): Self = this.set("PrincipalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalId: Self = this.set("PrincipalId", js.undefined)
-    
-    @scala.inline
-    def setPrincipalType(value: PrincipalType): Self = this.set("PrincipalType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalType: Self = this.set("PrincipalType", js.undefined)
+    def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpgradePublishedSchemaRequest extends js.Object {
+trait UpgradePublishedSchemaRequest extends StObject {
   
   /**
     * The ARN of the development schema with the changes used for the upgrade.
@@ -36,33 +37,21 @@ object UpgradePublishedSchemaRequest {
   }
   
   @scala.inline
-  implicit class UpgradePublishedSchemaRequestOps[Self <: UpgradePublishedSchemaRequest] (val x: Self) extends AnyVal {
+  implicit class UpgradePublishedSchemaRequestMutableBuilder[Self <: UpgradePublishedSchemaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevelopmentSchemaArn(value: Arn): Self = StObject.set(x, "DevelopmentSchemaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRun(value: Bool): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setDevelopmentSchemaArn(value: Arn): Self = this.set("DevelopmentSchemaArn", value.asInstanceOf[js.Any])
+    def setMinorVersion(value: Version): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorVersion(value: Version): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublishedSchemaArn(value: Arn): Self = this.set("PublishedSchemaArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Bool): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setPublishedSchemaArn(value: Arn): Self = StObject.set(x, "PublishedSchemaArn", value.asInstanceOf[js.Any])
   }
 }

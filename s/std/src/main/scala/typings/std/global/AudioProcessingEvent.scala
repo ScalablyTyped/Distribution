@@ -1,22 +1,15 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.AudioProcessingEventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AudioProcessingEvent")
 @js.native
 class AudioProcessingEvent protected ()
   extends typings.std.AudioProcessingEvent {
   def this(`type`: java.lang.String, eventInitDict: AudioProcessingEventInit) = this()
 }
-@JSGlobal("AudioProcessingEvent")
-@js.native
-object AudioProcessingEvent
-  extends Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ AudioProcessingEventInit, 
-      typings.std.AudioProcessingEvent
-    ]

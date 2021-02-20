@@ -1,11 +1,12 @@
 package typings.hashtable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHashtable[TKey, TValue] extends js.Object {
+trait IHashtable[TKey, TValue] extends StObject {
   
   def clear(): Unit = js.native
   

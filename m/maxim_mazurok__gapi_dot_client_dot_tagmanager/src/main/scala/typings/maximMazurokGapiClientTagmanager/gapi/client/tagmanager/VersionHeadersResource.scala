@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
 import typings.maximMazurokGapiClientTagmanager.anon.IncludeDeleted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VersionHeadersResource extends js.Object {
+trait VersionHeadersResource extends StObject {
   
   /** Gets the latest container version header */
   def latest(): Request[ContainerVersionHeader] = js.native

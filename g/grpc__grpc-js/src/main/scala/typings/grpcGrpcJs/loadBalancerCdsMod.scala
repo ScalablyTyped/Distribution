@@ -2,16 +2,14 @@ package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/load-balancer-cds", JSImport.Namespace)
-@js.native
-object loadBalancerCdsMod extends js.Object {
+object loadBalancerCdsMod {
   
-  def setup(): Unit = js.native
-  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-cds", "CdsLoadBalancer")
   @js.native
   class CdsLoadBalancer protected () extends LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
@@ -32,4 +30,8 @@ object loadBalancerCdsMod extends js.Object {
     
     var xdsClient: js.Any = js.native
   }
+  
+  @JSImport("@grpc/grpc-js/build/src/load-balancer-cds", "setup")
+  @js.native
+  def setup(): Unit = js.native
 }

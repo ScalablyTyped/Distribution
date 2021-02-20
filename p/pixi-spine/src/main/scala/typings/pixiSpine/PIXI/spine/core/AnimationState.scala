@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationState extends js.Object {
+trait AnimationState extends StObject {
   
   def _animationsChanged(): Unit = js.native
   
@@ -171,165 +172,153 @@ object AnimationState {
   }
   
   @scala.inline
-  implicit class AnimationStateOps[Self <: AnimationState] (val x: Self) extends AnyVal {
+  implicit class AnimationStateMutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAnimation(value: (Double, String, Boolean, Double) => TrackEntry): Self = StObject.set(x, "addAnimation", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAnimationByName(value: (Double, String, Boolean, Double) => Unit): Self = StObject.set(x, "addAnimationByName", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddAnimationWith(value: (Double, Animation, Boolean, Double) => TrackEntry): Self = StObject.set(x, "addAnimationWith", js.Any.fromFunction4(value))
     
     @scala.inline
-    def set_animationsChanged(value: () => Unit): Self = this.set("_animationsChanged", js.Any.fromFunction0(value))
+    def setAddEmptyAnimation(value: (Double, Double, Double) => TrackEntry): Self = StObject.set(x, "addEmptyAnimation", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddAnimation(value: (Double, String, Boolean, Double) => TrackEntry): Self = this.set("addAnimation", js.Any.fromFunction4(value))
+    def setAddListener(value: AnimationStateListener => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddAnimationByName(value: (Double, String, Boolean, Double) => Unit): Self = this.set("addAnimationByName", js.Any.fromFunction4(value))
+    def setAnimationsChanged(value: Boolean): Self = StObject.set(x, "animationsChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAnimationWith(value: (Double, Animation, Boolean, Double) => TrackEntry): Self = this.set("addAnimationWith", js.Any.fromFunction4(value))
+    def setApply(value: Skeleton => Boolean): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddEmptyAnimation(value: (Double, Double, Double) => TrackEntry): Self = this.set("addEmptyAnimation", js.Any.fromFunction3(value))
+    def setApplyAttachmentTimeline(value: (AttachmentTimeline, Skeleton, Double, MixBlend, Boolean) => Unit): Self = StObject.set(x, "applyAttachmentTimeline", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setAddListener(value: AnimationStateListener => Unit): Self = this.set("addListener", js.Any.fromFunction1(value))
+    def setApplyMixingFrom(value: (TrackEntry, Skeleton, MixBlend) => Double): Self = StObject.set(x, "applyMixingFrom", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAnimationsChanged(value: Boolean): Self = this.set("animationsChanged", value.asInstanceOf[js.Any])
+    def setApplyRotateTimeline(value: (Timeline, Skeleton, Double, Double, MixBlend, js.Array[Double], Double, Boolean) => Unit): Self = StObject.set(x, "applyRotateTimeline", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setApply(value: Skeleton => Boolean): Self = this.set("apply", js.Any.fromFunction1(value))
+    def setClearListenerNotifications(value: () => Unit): Self = StObject.set(x, "clearListenerNotifications", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyAttachmentTimeline(value: (AttachmentTimeline, Skeleton, Double, MixBlend, Boolean) => Unit): Self = this.set("applyAttachmentTimeline", js.Any.fromFunction5(value))
+    def setClearListeners(value: () => Unit): Self = StObject.set(x, "clearListeners", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyMixingFrom(value: (TrackEntry, Skeleton, MixBlend) => Double): Self = this.set("applyMixingFrom", js.Any.fromFunction3(value))
+    def setClearTrack(value: Double => Unit): Self = StObject.set(x, "clearTrack", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplyRotateTimeline(value: (Timeline, Skeleton, Double, Double, MixBlend, js.Array[Double], Double, Boolean) => Unit): Self = this.set("applyRotateTimeline", js.Any.fromFunction8(value))
+    def setClearTracks(value: () => Unit): Self = StObject.set(x, "clearTracks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearListenerNotifications(value: () => Unit): Self = this.set("clearListenerNotifications", js.Any.fromFunction0(value))
+    def setComputeHold(value: TrackEntry => Unit): Self = StObject.set(x, "computeHold", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearListeners(value: () => Unit): Self = this.set("clearListeners", js.Any.fromFunction0(value))
+    def setData(value: AnimationStateData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearTrack(value: Double => Unit): Self = this.set("clearTrack", js.Any.fromFunction1(value))
+    def setDisposeNext(value: TrackEntry => Unit): Self = StObject.set(x, "disposeNext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearTracks(value: () => Unit): Self = this.set("clearTracks", js.Any.fromFunction0(value))
+    def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeHold(value: TrackEntry => Unit): Self = this.set("computeHold", js.Any.fromFunction1(value))
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: AnimationStateData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setExpandToIndex(value: Double => TrackEntry): Self = StObject.set(x, "expandToIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisposeNext(value: TrackEntry => Unit): Self = this.set("disposeNext", js.Any.fromFunction1(value))
+    def setGetCurrent(value: Double => TrackEntry): Self = StObject.set(x, "getCurrent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
+    def setHasAnimation(value: String => Boolean): Self = StObject.set(x, "hasAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEvents(value: js.Array[Event]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setHasAnimationByName(value: String => Boolean): Self = StObject.set(x, "hasAnimationByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpandToIndex(value: Double => TrackEntry): Self = this.set("expandToIndex", js.Any.fromFunction1(value))
+    def setListeners(value: js.Array[AnimationStateListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrent(value: Double => TrackEntry): Self = this.set("getCurrent", js.Any.fromFunction1(value))
+    def setListenersVarargs(value: AnimationStateListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
     
     @scala.inline
-    def setHasAnimation(value: String => Boolean): Self = this.set("hasAnimation", js.Any.fromFunction1(value))
+    def setOnComplete(value: (Double, Double) => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHasAnimationByName(value: String => Boolean): Self = this.set("hasAnimationByName", js.Any.fromFunction1(value))
+    def setOnEnd(value: Double => js.Any): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListenersVarargs(value: AnimationStateListener*): Self = this.set("listeners", js.Array(value :_*))
+    def setOnEvent(value: (Double, Event) => js.Any): Self = StObject.set(x, "onEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setListeners(value: js.Array[AnimationStateListener]): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    def setOnStart(value: Double => js.Any): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnComplete(value: (Double, Double) => js.Any): Self = this.set("onComplete", js.Any.fromFunction2(value))
+    def setPropertyIDs(value: IntSet): Self = StObject.set(x, "propertyIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnd(value: Double => js.Any): Self = this.set("onEnd", js.Any.fromFunction1(value))
+    def setQueue(value: EventQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEvent(value: (Double, Event) => js.Any): Self = this.set("onEvent", js.Any.fromFunction2(value))
+    def setQueueEvents(value: (TrackEntry, Double) => Unit): Self = StObject.set(x, "queueEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnStart(value: Double => js.Any): Self = this.set("onStart", js.Any.fromFunction1(value))
+    def setRemoveListener(value: AnimationStateListener => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPropertyIDs(value: IntSet): Self = this.set("propertyIDs", value.asInstanceOf[js.Any])
+    def setSetAnimation(value: (Double, String, Boolean) => TrackEntry): Self = StObject.set(x, "setAnimation", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setQueue(value: EventQueue): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setSetAnimationByName(value: (Double, String, Boolean) => Unit): Self = StObject.set(x, "setAnimationByName", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setQueueEvents(value: (TrackEntry, Double) => Unit): Self = this.set("queueEvents", js.Any.fromFunction2(value))
+    def setSetAnimationWith(value: (Double, Animation, Boolean) => TrackEntry): Self = StObject.set(x, "setAnimationWith", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemoveListener(value: AnimationStateListener => Unit): Self = this.set("removeListener", js.Any.fromFunction1(value))
+    def setSetAttachment(value: (Skeleton, Slot, String, Boolean) => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSetAnimation(value: (Double, String, Boolean) => TrackEntry): Self = this.set("setAnimation", js.Any.fromFunction3(value))
+    def setSetCurrent(value: (Double, TrackEntry, Boolean) => Unit): Self = StObject.set(x, "setCurrent", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetAnimationByName(value: (Double, String, Boolean) => Unit): Self = this.set("setAnimationByName", js.Any.fromFunction3(value))
+    def setSetEmptyAnimation(value: (Double, Double) => TrackEntry): Self = StObject.set(x, "setEmptyAnimation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetAnimationWith(value: (Double, Animation, Boolean) => TrackEntry): Self = this.set("setAnimationWith", js.Any.fromFunction3(value))
+    def setSetEmptyAnimations(value: Double => Unit): Self = StObject.set(x, "setEmptyAnimations", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAttachment(value: (Skeleton, Slot, String, Boolean) => Unit): Self = this.set("setAttachment", js.Any.fromFunction4(value))
+    def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetCurrent(value: (Double, TrackEntry, Boolean) => Unit): Self = this.set("setCurrent", js.Any.fromFunction3(value))
+    def setTrackEntry(value: (Double, Animation, Boolean, TrackEntry) => TrackEntry): Self = StObject.set(x, "trackEntry", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSetEmptyAnimation(value: (Double, Double) => TrackEntry): Self = this.set("setEmptyAnimation", js.Any.fromFunction2(value))
+    def setTrackEntryPool(value: Pool[TrackEntry]): Self = StObject.set(x, "trackEntryPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetEmptyAnimations(value: Double => Unit): Self = this.set("setEmptyAnimations", js.Any.fromFunction1(value))
+    def setTracks(value: js.Array[TrackEntry]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeScale(value: Double): Self = this.set("timeScale", value.asInstanceOf[js.Any])
+    def setTracksVarargs(value: TrackEntry*): Self = StObject.set(x, "tracks", js.Array(value :_*))
     
     @scala.inline
-    def setTrackEntry(value: (Double, Animation, Boolean, TrackEntry) => TrackEntry): Self = this.set("trackEntry", js.Any.fromFunction4(value))
+    def setUnkeyedState(value: Double): Self = StObject.set(x, "unkeyedState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackEntryPool(value: Pool[TrackEntry]): Self = this.set("trackEntryPool", value.asInstanceOf[js.Any])
+    def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTracksVarargs(value: TrackEntry*): Self = this.set("tracks", js.Array(value :_*))
+    def setUpdateMixingFrom(value: (TrackEntry, Double) => Boolean): Self = StObject.set(x, "updateMixingFrom", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTracks(value: js.Array[TrackEntry]): Self = this.set("tracks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnkeyedState(value: Double): Self = this.set("unkeyedState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: Double => Unit): Self = this.set("update", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateMixingFrom(value: (TrackEntry, Double) => Boolean): Self = this.set("updateMixingFrom", js.Any.fromFunction2(value))
+    def set_animationsChanged(value: () => Unit): Self = StObject.set(x, "_animationsChanged", js.Any.fromFunction0(value))
   }
 }

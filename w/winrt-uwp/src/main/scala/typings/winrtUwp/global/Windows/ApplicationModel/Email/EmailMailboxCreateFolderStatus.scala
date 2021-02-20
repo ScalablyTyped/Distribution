@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the result of a call to TryCreateFolderAsync . */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxCreateFolderStatus")
 @js.native
-object EmailMailboxCreateFolderStatus extends js.Object {
+object EmailMailboxCreateFolderStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

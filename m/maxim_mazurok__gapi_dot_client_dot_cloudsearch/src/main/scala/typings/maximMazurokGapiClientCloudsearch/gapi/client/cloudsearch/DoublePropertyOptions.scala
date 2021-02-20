@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoublePropertyOptions extends js.Object {
+trait DoublePropertyOptions extends StObject {
   
   /** If set, describes how the double should be used as a search operator. */
   var operatorOptions: js.UndefOr[DoubleOperatorOptions] = js.native
@@ -19,24 +20,12 @@ object DoublePropertyOptions {
   }
   
   @scala.inline
-  implicit class DoublePropertyOptionsOps[Self <: DoublePropertyOptions] (val x: Self) extends AnyVal {
+  implicit class DoublePropertyOptionsMutableBuilder[Self <: DoublePropertyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperatorOptions(value: DoubleOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOperatorOptions(value: DoubleOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
+    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
   }
 }

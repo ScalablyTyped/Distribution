@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestResult extends js.Object {
+trait SuggestResult extends StObject {
   
   /** This is present when the suggestion indicates a person. It contains more information about the person - like their email ID, name etc. */
   var peopleSuggestion: js.UndefOr[PeopleSuggestion] = js.native
@@ -28,42 +29,30 @@ object SuggestResult {
   }
   
   @scala.inline
-  implicit class SuggestResultOps[Self <: SuggestResult] (val x: Self) extends AnyVal {
+  implicit class SuggestResultMutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeopleSuggestion(value: PeopleSuggestion): Self = StObject.set(x, "peopleSuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeopleSuggestionUndefined: Self = StObject.set(x, "peopleSuggestion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuerySuggestion(value: js.Any): Self = StObject.set(x, "querySuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeopleSuggestion(value: PeopleSuggestion): Self = this.set("peopleSuggestion", value.asInstanceOf[js.Any])
+    def setQuerySuggestionUndefined: Self = StObject.set(x, "querySuggestion", js.undefined)
     
     @scala.inline
-    def deletePeopleSuggestion: Self = this.set("peopleSuggestion", js.undefined)
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuerySuggestion(value: js.Any): Self = this.set("querySuggestion", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteQuerySuggestion: Self = this.set("querySuggestion", js.undefined)
+    def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setSuggestedQuery(value: String): Self = this.set("suggestedQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestedQuery: Self = this.set("suggestedQuery", js.undefined)
+    def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
   }
 }

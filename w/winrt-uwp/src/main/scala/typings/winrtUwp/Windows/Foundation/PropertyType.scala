@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PropertyType extends js.Object
+sealed trait PropertyType extends StObject
 /** Specifies property value types. */
 @JSGlobal("Windows.Foundation.PropertyType")
 @js.native
-object PropertyType extends js.Object {
+object PropertyType extends StObject {
   
   /** A value that can be only true or false. */
   @js.native

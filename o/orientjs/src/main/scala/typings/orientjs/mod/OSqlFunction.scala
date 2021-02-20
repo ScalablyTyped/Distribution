@@ -1,5 +1,6 @@
 package typings.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object OSqlFunction {
   }
   
   @scala.inline
-  implicit class OSqlFunctionOps[Self <: OSqlFunction] (val x: Self) extends AnyVal {
+  implicit class OSqlFunctionMutableBuilder[Self <: OSqlFunction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbs(value: AbsSqlFunction): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvg(value: AbsSqlFunction): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDb(value: ODB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbs(value: AbsSqlFunction): Self = this.set("abs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAvg(value: AbsSqlFunction): Self = this.set("avg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDb(value: ODB): Self = this.set("db", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequence(value: SequenceSqlFunction): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setSequence(value: SequenceSqlFunction): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
   }
 }

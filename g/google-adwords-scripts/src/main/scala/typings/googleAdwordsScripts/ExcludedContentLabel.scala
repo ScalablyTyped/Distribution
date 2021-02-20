@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,12 @@ trait ExcludedContentLabel
   
   def getContentLabelType(): String = js.native
   
-   // TODO: ContentLabelType
+  // TODO: ContentLabelType
   def getId(): Double = js.native
   
   def getVideoCampaign(): Campaign = js.native
   
-   // TODO: VideoCampaign
+  // TODO: VideoCampaign
   def remove(): Unit = js.native
 }
 object ExcludedContentLabel {
@@ -37,33 +38,21 @@ object ExcludedContentLabel {
   }
   
   @scala.inline
-  implicit class ExcludedContentLabelOps[Self <: ExcludedContentLabel] (val x: Self) extends AnyVal {
+  implicit class ExcludedContentLabelMutableBuilder[Self <: ExcludedContentLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContentLabelType(value: () => String): Self = StObject.set(x, "getContentLabelType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCampaignType(value: () => CampaignType): Self = this.set("getCampaignType", js.Any.fromFunction0(value))
+    def setGetVideoCampaign(value: () => Campaign): Self = StObject.set(x, "getVideoCampaign", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContentLabelType(value: () => String): Self = this.set("getContentLabelType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetVideoCampaign(value: () => Campaign): Self = this.set("getVideoCampaign", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

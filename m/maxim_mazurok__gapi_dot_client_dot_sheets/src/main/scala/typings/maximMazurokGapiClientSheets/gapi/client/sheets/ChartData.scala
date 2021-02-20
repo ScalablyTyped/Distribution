@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartData extends js.Object {
+trait ChartData extends StObject {
   
   /** The aggregation type for the series of a data source chart. Not supported for regular charts. */
   var aggregateType: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ChartData {
   }
   
   @scala.inline
-  implicit class ChartDataOps[Self <: ChartData] (val x: Self) extends AnyVal {
+  implicit class ChartDataMutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateType(value: String): Self = StObject.set(x, "aggregateType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateTypeUndefined: Self = StObject.set(x, "aggregateType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "columnReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregateType(value: String): Self = this.set("aggregateType", value.asInstanceOf[js.Any])
+    def setColumnReferenceUndefined: Self = StObject.set(x, "columnReference", js.undefined)
     
     @scala.inline
-    def deleteAggregateType: Self = this.set("aggregateType", js.undefined)
+    def setGroupRule(value: ChartGroupRule): Self = StObject.set(x, "groupRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnReference(value: DataSourceColumnReference): Self = this.set("columnReference", value.asInstanceOf[js.Any])
+    def setGroupRuleUndefined: Self = StObject.set(x, "groupRule", js.undefined)
     
     @scala.inline
-    def deleteColumnReference: Self = this.set("columnReference", js.undefined)
+    def setSourceRange(value: ChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupRule(value: ChartGroupRule): Self = this.set("groupRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupRule: Self = this.set("groupRule", js.undefined)
-    
-    @scala.inline
-    def setSourceRange(value: ChartSourceRange): Self = this.set("sourceRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceRange: Self = this.set("sourceRange", js.undefined)
+    def setSourceRangeUndefined: Self = StObject.set(x, "sourceRange", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCommentInput extends js.Object {
+trait UpdateCommentInput extends StObject {
   
   /**
     * The system-generated ID of the comment you want to update. To get this ID, use GetCommentsForComparedCommit or GetCommentsForPullRequest.
@@ -26,24 +27,12 @@ object UpdateCommentInput {
   }
   
   @scala.inline
-  implicit class UpdateCommentInputOps[Self <: UpdateCommentInput] (val x: Self) extends AnyVal {
+  implicit class UpdateCommentInputMutableBuilder[Self <: UpdateCommentInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommentId(value: CommentId): Self = this.set("commentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent(value: Content): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

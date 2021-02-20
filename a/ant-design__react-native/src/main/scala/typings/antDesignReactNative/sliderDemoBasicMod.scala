@@ -1,13 +1,18 @@
 package typings.antDesignReactNative
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/slider/demo/basic", JSImport.Namespace)
-@js.native
-object sliderDemoBasicMod extends js.Object {
+object sliderDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/slider/demo/basic", JSImport.Default)
+  @js.native
+  class default protected () extends BasicSliderExample {
+    def this(props: js.Any) = this()
+  }
   
   @js.native
   trait BasicSliderExample
@@ -18,10 +23,5 @@ object sliderDemoBasicMod extends js.Object {
     def minMaxChange(value: js.Any): Unit = js.native
     
     def onAfterChange(value: js.Any): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends BasicSliderExample {
-    def this(props: js.Any) = this()
   }
 }

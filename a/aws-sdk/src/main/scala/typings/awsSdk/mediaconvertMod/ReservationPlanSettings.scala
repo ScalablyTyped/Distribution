@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservationPlanSettings extends js.Object {
+trait ReservationPlanSettings extends StObject {
   
   /**
     * The length of the term of your reserved queue pricing plan commitment.
@@ -31,27 +32,15 @@ object ReservationPlanSettings {
   }
   
   @scala.inline
-  implicit class ReservationPlanSettingsOps[Self <: ReservationPlanSettings] (val x: Self) extends AnyVal {
+  implicit class ReservationPlanSettingsMutableBuilder[Self <: ReservationPlanSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitment(value: Commitment): Self = StObject.set(x, "Commitment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenewalType(value: RenewalType): Self = StObject.set(x, "RenewalType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommitment(value: Commitment): Self = this.set("Commitment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenewalType(value: RenewalType): Self = this.set("RenewalType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReservedSlots(value: integer): Self = this.set("ReservedSlots", value.asInstanceOf[js.Any])
+    def setReservedSlots(value: integer): Self = StObject.set(x, "ReservedSlots", value.asInstanceOf[js.Any])
   }
 }

@@ -3,16 +3,16 @@ package typings.three
 import typings.std.ArrayLike
 import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/SphericalHarmonics3", JSImport.Namespace)
-@js.native
-object sphericalHarmonics3Mod extends js.Object {
+object sphericalHarmonics3Mod {
   
+  @JSImport("three/src/math/SphericalHarmonics3", "SphericalHarmonics3")
   @js.native
-  class SphericalHarmonics3 () extends js.Object {
+  class SphericalHarmonics3 () extends StObject {
     
     def add(sh: SphericalHarmonics3): SphericalHarmonics3 = js.native
     
@@ -76,9 +76,10 @@ object sphericalHarmonics3Mod extends js.Object {
     def zero(): SphericalHarmonics3 = js.native
   }
   /* static members */
-  @js.native
-  object SphericalHarmonics3 extends js.Object {
+  object SphericalHarmonics3 {
     
+    @JSImport("three/src/math/SphericalHarmonics3", "SphericalHarmonics3.getBasisAt")
+    @js.native
     def getBasisAt(normal: Vector3, shBasis: js.Array[Double]): Unit = js.native
   }
 }

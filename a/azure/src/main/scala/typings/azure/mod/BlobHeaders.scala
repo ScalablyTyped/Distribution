@@ -1,11 +1,12 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlobHeaders extends js.Object {
+trait BlobHeaders extends StObject {
   
   var cacheControl: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object BlobHeaders {
   }
   
   @scala.inline
-  implicit class BlobHeadersOps[Self <: BlobHeaders] (val x: Self) extends AnyVal {
+  implicit class BlobHeadersMutableBuilder[Self <: BlobHeaders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentDisposition(value: String): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheControl(value: String): Self = this.set("cacheControl", value.asInstanceOf[js.Any])
+    def setContentDispositionUndefined: Self = StObject.set(x, "contentDisposition", js.undefined)
     
     @scala.inline
-    def deleteCacheControl: Self = this.set("cacheControl", js.undefined)
+    def setContentEncoding(value: String): Self = StObject.set(x, "contentEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDisposition(value: String): Self = this.set("contentDisposition", value.asInstanceOf[js.Any])
+    def setContentEncodingUndefined: Self = StObject.set(x, "contentEncoding", js.undefined)
     
     @scala.inline
-    def deleteContentDisposition: Self = this.set("contentDisposition", js.undefined)
+    def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentEncoding(value: String): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
     @scala.inline
-    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
-    
-    @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
   }
 }

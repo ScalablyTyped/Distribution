@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,30 +37,18 @@ object Timeline {
   }
   
   @scala.inline
-  implicit class TimelineOps[Self <: Timeline] (val x: Self) extends AnyVal {
+  implicit class TimelineMutableBuilder[Self <: Timeline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastChangedBy(value: String): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastChangedOn(value: Date): Self = StObject.set(x, "lastChangedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecords(value: js.Array[TimelineRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChangedBy(value: String): Self = this.set("lastChangedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastChangedOn(value: Date): Self = this.set("lastChangedOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordsVarargs(value: TimelineRecord*): Self = this.set("records", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecords(value: js.Array[TimelineRecord]): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setRecordsVarargs(value: TimelineRecord*): Self = StObject.set(x, "records", js.Array(value :_*))
   }
 }

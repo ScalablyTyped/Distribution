@@ -221,12 +221,13 @@ import typings.activexOutlook.anon.ItemMoveTo
 import typings.activexOutlook.anon.StoreStore
 import typings.activexOutlook.anon.ViewView
 import typings.activexOutlook.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
   
   def on(
     obj: AccountSelector,

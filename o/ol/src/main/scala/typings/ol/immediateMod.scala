@@ -4,13 +4,50 @@ import typings.ol.extentMod.Extent
 import typings.ol.olMod.Transform
 import typings.ol.projMod.TransformFunction
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/render/canvas/Immediate", JSImport.Namespace)
-@js.native
-object immediateMod extends js.Object {
+object immediateMod {
+  
+  @JSImport("ol/render/canvas/Immediate", JSImport.Default)
+  @js.native
+  class default protected () extends CanvasImmediateRenderer {
+    def this(
+      context: CanvasRenderingContext2D,
+      pixelRatio: Double,
+      extent: Extent,
+      transform: Transform,
+      viewRotation: Double
+    ) = this()
+    def this(
+      context: CanvasRenderingContext2D,
+      pixelRatio: Double,
+      extent: Extent,
+      transform: Transform,
+      viewRotation: Double,
+      opt_squaredTolerance: Double
+    ) = this()
+    def this(
+      context: CanvasRenderingContext2D,
+      pixelRatio: Double,
+      extent: Extent,
+      transform: Transform,
+      viewRotation: Double,
+      opt_squaredTolerance: js.UndefOr[scala.Nothing],
+      opt_userTransform: TransformFunction
+    ) = this()
+    def this(
+      context: CanvasRenderingContext2D,
+      pixelRatio: Double,
+      extent: Extent,
+      transform: Transform,
+      viewRotation: Double,
+      opt_squaredTolerance: Double,
+      opt_userTransform: TransformFunction
+    ) = this()
+  }
   
   @js.native
   trait CanvasImmediateRenderer
@@ -72,42 +109,5 @@ object immediateMod extends js.Object {
     def drawPolygon(geometry: typings.ol.renderFeatureMod.default): Unit = js.native
     
     def setTransform(transform: Transform): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends CanvasImmediateRenderer {
-    def this(
-      context: CanvasRenderingContext2D,
-      pixelRatio: Double,
-      extent: Extent,
-      transform: Transform,
-      viewRotation: Double
-    ) = this()
-    def this(
-      context: CanvasRenderingContext2D,
-      pixelRatio: Double,
-      extent: Extent,
-      transform: Transform,
-      viewRotation: Double,
-      opt_squaredTolerance: Double
-    ) = this()
-    def this(
-      context: CanvasRenderingContext2D,
-      pixelRatio: Double,
-      extent: Extent,
-      transform: Transform,
-      viewRotation: Double,
-      opt_squaredTolerance: js.UndefOr[scala.Nothing],
-      opt_userTransform: TransformFunction
-    ) = this()
-    def this(
-      context: CanvasRenderingContext2D,
-      pixelRatio: Double,
-      extent: Extent,
-      transform: Transform,
-      viewRotation: Double,
-      opt_squaredTolerance: Double,
-      opt_userTransform: TransformFunction
-    ) = this()
   }
 }

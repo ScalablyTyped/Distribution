@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Aggregation result data for the requested metric. */
 @js.native
-trait MetricTokenAggregationResult extends js.Object {
+trait MetricTokenAggregationResult extends StObject {
   
   /** The number of queries with associated events divided by the total number of queries currently stored (queries and events are stored in the log for 30 days). */
   var event_rate: js.UndefOr[Double] = js.native
@@ -26,36 +27,24 @@ object MetricTokenAggregationResult {
   }
   
   @scala.inline
-  implicit class MetricTokenAggregationResultOps[Self <: MetricTokenAggregationResult] (val x: Self) extends AnyVal {
+  implicit class MetricTokenAggregationResultMutableBuilder[Self <: MetricTokenAggregationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent_rate(value: Double): Self = StObject.set(x, "event_rate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent_rateUndefined: Self = StObject.set(x, "event_rate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_rate(value: Double): Self = this.set("event_rate", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteEvent_rate: Self = this.set("event_rate", js.undefined)
+    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setMatching_results(value: Double): Self = this.set("matching_results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatching_results: Self = this.set("matching_results", js.undefined)
+    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/BackupNotFoundException", JSImport.Namespace)
-@js.native
-object backupNotFoundExceptionMod extends js.Object {
+object backupNotFoundExceptionMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/BackupNotFoundException", "BackupNotFoundException")
+  @js.native
   val BackupNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateJobRequest extends js.Object {
+trait CreateJobRequest extends StObject {
   
   /**
     * This parameter is deprecated. Use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) to allocate to this Job. You can allocate from 2 to 100 DPUs; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
@@ -111,123 +112,111 @@ object CreateJobRequest {
   }
   
   @scala.inline
-  implicit class CreateJobRequestOps[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
+  implicit class CreateJobRequestMutableBuilder[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocatedCapacity(value: IntegerValue): Self = StObject.set(x, "AllocatedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocatedCapacityUndefined: Self = StObject.set(x, "AllocatedCapacity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: JobCommand): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: JobCommand): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setConnections(value: ConnectionsList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
     @scala.inline
-    def setRole(value: RoleString): Self = this.set("Role", value.asInstanceOf[js.Any])
+    def setDefaultArguments(value: GenericMap): Self = StObject.set(x, "DefaultArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocatedCapacity(value: IntegerValue): Self = this.set("AllocatedCapacity", value.asInstanceOf[js.Any])
+    def setDefaultArgumentsUndefined: Self = StObject.set(x, "DefaultArguments", js.undefined)
     
     @scala.inline
-    def deleteAllocatedCapacity: Self = this.set("AllocatedCapacity", js.undefined)
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnections(value: ConnectionsList): Self = this.set("Connections", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteConnections: Self = this.set("Connections", js.undefined)
+    def setExecutionProperty(value: ExecutionProperty): Self = StObject.set(x, "ExecutionProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultArguments(value: GenericMap): Self = this.set("DefaultArguments", value.asInstanceOf[js.Any])
+    def setExecutionPropertyUndefined: Self = StObject.set(x, "ExecutionProperty", js.undefined)
     
     @scala.inline
-    def deleteDefaultArguments: Self = this.set("DefaultArguments", js.undefined)
+    def setGlueVersion(value: GlueVersionString): Self = StObject.set(x, "GlueVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLogUri(value: UriString): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionProperty(value: ExecutionProperty): Self = this.set("ExecutionProperty", value.asInstanceOf[js.Any])
+    def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
     
     @scala.inline
-    def deleteExecutionProperty: Self = this.set("ExecutionProperty", js.undefined)
+    def setMaxCapacity(value: NullableDouble): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
     @scala.inline
-    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    def setMaxRetries(value: MaxRetries): Self = StObject.set(x, "MaxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogUri(value: UriString): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    def setMaxRetriesUndefined: Self = StObject.set(x, "MaxRetries", js.undefined)
     
     @scala.inline
-    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    def setNonOverridableArguments(value: GenericMap): Self = StObject.set(x, "NonOverridableArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    def setNonOverridableArgumentsUndefined: Self = StObject.set(x, "NonOverridableArguments", js.undefined)
     
     @scala.inline
-    def setMaxRetries(value: MaxRetries): Self = this.set("MaxRetries", value.asInstanceOf[js.Any])
+    def setNotificationProperty(value: NotificationProperty): Self = StObject.set(x, "NotificationProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRetries: Self = this.set("MaxRetries", js.undefined)
+    def setNotificationPropertyUndefined: Self = StObject.set(x, "NotificationProperty", js.undefined)
     
     @scala.inline
-    def setNonOverridableArguments(value: GenericMap): Self = this.set("NonOverridableArguments", value.asInstanceOf[js.Any])
+    def setNumberOfWorkers(value: NullableInteger): Self = StObject.set(x, "NumberOfWorkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNonOverridableArguments: Self = this.set("NonOverridableArguments", js.undefined)
+    def setNumberOfWorkersUndefined: Self = StObject.set(x, "NumberOfWorkers", js.undefined)
     
     @scala.inline
-    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    def setRole(value: RoleString): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    def setSecurityConfiguration(value: NameString): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
     
     @scala.inline
-    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    def setTimeout(value: Timeout): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagsMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setWorkerType(value: WorkerType): Self = StObject.set(x, "WorkerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("Timeout", js.undefined)
-    
-    @scala.inline
-    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+    def setWorkerTypeUndefined: Self = StObject.set(x, "WorkerType", js.undefined)
   }
 }

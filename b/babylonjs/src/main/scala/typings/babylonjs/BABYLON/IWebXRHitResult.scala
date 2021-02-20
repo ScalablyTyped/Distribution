@@ -2,6 +2,7 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRHitTestResult
 import typings.babylonjs.XRInputSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,39 +50,27 @@ object IWebXRHitResult {
   }
   
   @scala.inline
-  implicit class IWebXRHitResultOps[Self <: IWebXRHitResult] (val x: Self) extends AnyVal {
+  implicit class IWebXRHitResultMutableBuilder[Self <: IWebXRHitResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputSource(value: XRInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsTransient(value: Boolean): Self = StObject.set(x, "isTransient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vector3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setIsTransientUndefined: Self = StObject.set(x, "isTransient", js.undefined)
     
     @scala.inline
-    def setRotationQuaternion(value: Quaternion): Self = this.set("rotationQuaternion", value.asInstanceOf[js.Any])
+    def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXrHitResult(value: XRHitTestResult): Self = this.set("xrHitResult", value.asInstanceOf[js.Any])
+    def setRotationQuaternion(value: Quaternion): Self = StObject.set(x, "rotationQuaternion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSource(value: XRInputSource): Self = this.set("inputSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputSource: Self = this.set("inputSource", js.undefined)
-    
-    @scala.inline
-    def setIsTransient(value: Boolean): Self = this.set("isTransient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsTransient: Self = this.set("isTransient", js.undefined)
+    def setXrHitResult(value: XRHitTestResult): Self = StObject.set(x, "xrHitResult", value.asInstanceOf[js.Any])
   }
 }

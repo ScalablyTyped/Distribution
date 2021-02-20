@@ -1,12 +1,13 @@
 package typings.grpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "ListenerBuilder")
 @js.native
-class ListenerBuilder () extends js.Object {
+class ListenerBuilder () extends StObject {
   
   /**
     * Builds the call listener

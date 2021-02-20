@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobsByStatusResponse extends js.Object {
+trait ListJobsByStatusResponse extends StObject {
   
   /**
     * An array of Job objects that have the specified status.
@@ -26,33 +27,21 @@ object ListJobsByStatusResponse {
   }
   
   @scala.inline
-  implicit class ListJobsByStatusResponseOps[Self <: ListJobsByStatusResponse] (val x: Self) extends AnyVal {
+  implicit class ListJobsByStatusResponseMutableBuilder[Self <: ListJobsByStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobs(value: Jobs): Self = StObject.set(x, "Jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobsUndefined: Self = StObject.set(x, "Jobs", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobsVarargs(value: Job*): Self = StObject.set(x, "Jobs", js.Array(value :_*))
     
     @scala.inline
-    def setJobsVarargs(value: Job*): Self = this.set("Jobs", js.Array(value :_*))
+    def setNextPageToken(value: Id): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobs(value: Jobs): Self = this.set("Jobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobs: Self = this.set("Jobs", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: Id): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

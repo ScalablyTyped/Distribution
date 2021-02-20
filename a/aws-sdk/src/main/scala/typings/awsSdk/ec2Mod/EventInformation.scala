@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventInformation extends js.Object {
+trait EventInformation extends StObject {
   
   /**
     * The description of the event.
@@ -31,36 +32,24 @@ object EventInformation {
   }
   
   @scala.inline
-  implicit class EventInformationOps[Self <: EventInformation] (val x: Self) extends AnyVal {
+  implicit class EventInformationMutableBuilder[Self <: EventInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventDescription(value: String): Self = StObject.set(x, "EventDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDescriptionUndefined: Self = StObject.set(x, "EventDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventSubType(value: String): Self = StObject.set(x, "EventSubType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventDescription(value: String): Self = this.set("EventDescription", value.asInstanceOf[js.Any])
+    def setEventSubTypeUndefined: Self = StObject.set(x, "EventSubType", js.undefined)
     
     @scala.inline
-    def deleteEventDescription: Self = this.set("EventDescription", js.undefined)
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSubType(value: String): Self = this.set("EventSubType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventSubType: Self = this.set("EventSubType", js.undefined)
-    
-    @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

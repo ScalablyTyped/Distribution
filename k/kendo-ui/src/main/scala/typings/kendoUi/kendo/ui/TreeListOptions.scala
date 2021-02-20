@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.TreeListDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeListOptions extends js.Object {
+trait TreeListOptions extends StObject {
   
   var autoBind: js.UndefOr[Boolean] = js.native
   
@@ -111,306 +112,294 @@ object TreeListOptions {
   }
   
   @scala.inline
-  implicit class TreeListOptionsOps[Self <: TreeListOptions] (val x: Self) extends AnyVal {
+  implicit class TreeListOptionsMutableBuilder[Self <: TreeListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeEdit(value: /* e */ TreeListBeforeEditEvent => Unit): Self = StObject.set(x, "beforeEdit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setBeforeEditUndefined: Self = StObject.set(x, "beforeEdit", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setCancel(value: /* e */ TreeListCancelEvent => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeEdit(value: /* e */ TreeListBeforeEditEvent => Unit): Self = this.set("beforeEdit", js.Any.fromFunction1(value))
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteBeforeEdit: Self = this.set("beforeEdit", js.undefined)
+    def setCellClose(value: /* e */ TreeListCellCloseEvent => Unit): Self = StObject.set(x, "cellClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancel(value: /* e */ TreeListCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    def setCellCloseUndefined: Self = StObject.set(x, "cellClose", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setChange(value: /* e */ TreeListChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCellClose(value: /* e */ TreeListCellCloseEvent => Unit): Self = this.set("cellClose", js.Any.fromFunction1(value))
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteCellClose: Self = this.set("cellClose", js.undefined)
+    def setCollapse(value: /* e */ TreeListCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChange(value: /* e */ TreeListChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setColumnHide(value: /* e */ TreeListColumnHideEvent => Unit): Self = StObject.set(x, "columnHide", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapse(value: /* e */ TreeListCollapseEvent => Unit): Self = this.set("collapse", js.Any.fromFunction1(value))
+    def setColumnHideUndefined: Self = StObject.set(x, "columnHide", js.undefined)
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setColumnLock(value: /* e */ TreeListColumnLockEvent => Unit): Self = StObject.set(x, "columnLock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnHide(value: /* e */ TreeListColumnHideEvent => Unit): Self = this.set("columnHide", js.Any.fromFunction1(value))
+    def setColumnLockUndefined: Self = StObject.set(x, "columnLock", js.undefined)
     
     @scala.inline
-    def deleteColumnHide: Self = this.set("columnHide", js.undefined)
+    def setColumnMenu(value: Boolean | TreeListColumnMenu): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnLock(value: /* e */ TreeListColumnLockEvent => Unit): Self = this.set("columnLock", js.Any.fromFunction1(value))
+    def setColumnMenuInit(value: /* e */ TreeListColumnMenuInitEvent => Unit): Self = StObject.set(x, "columnMenuInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnLock: Self = this.set("columnLock", js.undefined)
+    def setColumnMenuInitUndefined: Self = StObject.set(x, "columnMenuInit", js.undefined)
     
     @scala.inline
-    def setColumnMenu(value: Boolean | TreeListColumnMenu): Self = this.set("columnMenu", value.asInstanceOf[js.Any])
+    def setColumnMenuOpen(value: /* e */ TreeListColumnMenuOpenEvent => Unit): Self = StObject.set(x, "columnMenuOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColumnMenu: Self = this.set("columnMenu", js.undefined)
+    def setColumnMenuOpenUndefined: Self = StObject.set(x, "columnMenuOpen", js.undefined)
     
     @scala.inline
-    def setColumnMenuInit(value: /* e */ TreeListColumnMenuInitEvent => Unit): Self = this.set("columnMenuInit", js.Any.fromFunction1(value))
+    def setColumnMenuUndefined: Self = StObject.set(x, "columnMenu", js.undefined)
     
     @scala.inline
-    def deleteColumnMenuInit: Self = this.set("columnMenuInit", js.undefined)
+    def setColumnReorder(value: /* e */ TreeListColumnReorderEvent => Unit): Self = StObject.set(x, "columnReorder", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnMenuOpen(value: /* e */ TreeListColumnMenuOpenEvent => Unit): Self = this.set("columnMenuOpen", js.Any.fromFunction1(value))
+    def setColumnReorderUndefined: Self = StObject.set(x, "columnReorder", js.undefined)
     
     @scala.inline
-    def deleteColumnMenuOpen: Self = this.set("columnMenuOpen", js.undefined)
+    def setColumnResize(value: /* e */ TreeListColumnResizeEvent => Unit): Self = StObject.set(x, "columnResize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnReorder(value: /* e */ TreeListColumnReorderEvent => Unit): Self = this.set("columnReorder", js.Any.fromFunction1(value))
+    def setColumnResizeUndefined: Self = StObject.set(x, "columnResize", js.undefined)
     
     @scala.inline
-    def deleteColumnReorder: Self = this.set("columnReorder", js.undefined)
+    def setColumnShow(value: /* e */ TreeListColumnShowEvent => Unit): Self = StObject.set(x, "columnShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnResize(value: /* e */ TreeListColumnResizeEvent => Unit): Self = this.set("columnResize", js.Any.fromFunction1(value))
+    def setColumnShowUndefined: Self = StObject.set(x, "columnShow", js.undefined)
     
     @scala.inline
-    def deleteColumnResize: Self = this.set("columnResize", js.undefined)
+    def setColumnUnlock(value: /* e */ TreeListColumnUnlockEvent => Unit): Self = StObject.set(x, "columnUnlock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnShow(value: /* e */ TreeListColumnShowEvent => Unit): Self = this.set("columnShow", js.Any.fromFunction1(value))
+    def setColumnUnlockUndefined: Self = StObject.set(x, "columnUnlock", js.undefined)
     
     @scala.inline
-    def deleteColumnShow: Self = this.set("columnShow", js.undefined)
+    def setColumns(value: js.Array[TreeListColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnUnlock(value: /* e */ TreeListColumnUnlockEvent => Unit): Self = this.set("columnUnlock", js.Any.fromFunction1(value))
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteColumnUnlock: Self = this.set("columnUnlock", js.undefined)
+    def setColumnsVarargs(value: TreeListColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: TreeListColumn*): Self = this.set("columns", js.Array(value :_*))
+    def setDataBinding(value: /* e */ TreeListDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumns(value: js.Array[TreeListColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setDataBound(value: /* e */ TreeListDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataBinding(value: /* e */ TreeListDataBindingEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any | TreeListDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ TreeListDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDrag(value: /* e */ TreeListDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataSource(value: js.Any | TreeListDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDragend(value: /* e */ TreeListDragendEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrag(value: /* e */ TreeListDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragstart(value: /* e */ TreeListDragstartEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragend(value: /* e */ TreeListDragendEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
     
     @scala.inline
-    def deleteDragend: Self = this.set("dragend", js.undefined)
+    def setDrop(value: /* e */ TreeListDropEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragstart(value: /* e */ TreeListDragstartEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    def setEdit(value: /* e */ TreeListEditEvent => Unit): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrop(value: /* e */ TreeListDropEvent => Unit): Self = this.set("drop", js.Any.fromFunction1(value))
+    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
     @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setEditable(value: Boolean | TreeListEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: /* e */ TreeListEditEvent => Unit): Self = this.set("edit", js.Any.fromFunction1(value))
+    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def deleteEdit: Self = this.set("edit", js.undefined)
+    def setExcel(value: TreeListExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditable(value: Boolean | TreeListEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    def setExcelExport(value: /* e */ TreeListExcelExportEvent => Unit): Self = StObject.set(x, "excelExport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteEditable: Self = this.set("editable", js.undefined)
+    def setExcelExportUndefined: Self = StObject.set(x, "excelExport", js.undefined)
     
     @scala.inline
-    def setExcel(value: TreeListExcel): Self = this.set("excel", value.asInstanceOf[js.Any])
+    def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
     
     @scala.inline
-    def deleteExcel: Self = this.set("excel", js.undefined)
+    def setExpand(value: /* e */ TreeListExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExcelExport(value: /* e */ TreeListExcelExportEvent => Unit): Self = this.set("excelExport", js.Any.fromFunction1(value))
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteExcelExport: Self = this.set("excelExport", js.undefined)
+    def setFilterMenuInit(value: /* e */ TreeListFilterMenuInitEvent => Unit): Self = StObject.set(x, "filterMenuInit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpand(value: /* e */ TreeListExpandEvent => Unit): Self = this.set("expand", js.Any.fromFunction1(value))
+    def setFilterMenuInitUndefined: Self = StObject.set(x, "filterMenuInit", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setFilterMenuOpen(value: /* e */ TreeListFilterMenuOpenEvent => Unit): Self = StObject.set(x, "filterMenuOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilterMenuInit(value: /* e */ TreeListFilterMenuInitEvent => Unit): Self = this.set("filterMenuInit", js.Any.fromFunction1(value))
+    def setFilterMenuOpenUndefined: Self = StObject.set(x, "filterMenuOpen", js.undefined)
     
     @scala.inline
-    def deleteFilterMenuInit: Self = this.set("filterMenuInit", js.undefined)
+    def setFilterable(value: Boolean | TreeListFilterable): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterMenuOpen(value: /* e */ TreeListFilterMenuOpenEvent => Unit): Self = this.set("filterMenuOpen", js.Any.fromFunction1(value))
+    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
     @scala.inline
-    def deleteFilterMenuOpen: Self = this.set("filterMenuOpen", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterable(value: Boolean | TreeListFilterable): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    def setMessages(value: TreeListMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: TreeListMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPageable(value: Boolean | TreeListPageable): Self = StObject.set(x, "pageable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    def setPageableUndefined: Self = StObject.set(x, "pageable", js.undefined)
     
     @scala.inline
-    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    def setPdf(value: TreeListPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageable(value: Boolean | TreeListPageable): Self = this.set("pageable", value.asInstanceOf[js.Any])
+    def setPdfExport(value: /* e */ TreeListPdfExportEvent => Unit): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deletePageable: Self = this.set("pageable", js.undefined)
+    def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
     
     @scala.inline
-    def setPdf(value: TreeListPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
     
     @scala.inline
-    def deletePdf: Self = this.set("pdf", js.undefined)
+    def setRemove(value: /* e */ TreeListRemoveEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPdfExport(value: /* e */ TreeListPdfExportEvent => Unit): Self = this.set("pdfExport", js.Any.fromFunction1(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deletePdfExport: Self = this.set("pdfExport", js.undefined)
+    def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: /* e */ TreeListRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReorderable(value: Boolean): Self = this.set("reorderable", value.asInstanceOf[js.Any])
+    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
     @scala.inline
-    def deleteReorderable: Self = this.set("reorderable", js.undefined)
+    def setSave(value: /* e */ TreeListSaveEvent => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    def setSaveChanges(value: /* e */ TreeListSaveChangesEvent => Unit): Self = StObject.set(x, "saveChanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteResizable: Self = this.set("resizable", js.undefined)
+    def setSaveChangesUndefined: Self = StObject.set(x, "saveChanges", js.undefined)
     
     @scala.inline
-    def setSave(value: /* e */ TreeListSaveEvent => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
+    def setScrollable(value: Boolean | js.Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaveChanges(value: /* e */ TreeListSaveChangesEvent => Unit): Self = this.set("saveChanges", js.Any.fromFunction1(value))
+    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
     @scala.inline
-    def deleteSaveChanges: Self = this.set("saveChanges", js.undefined)
+    def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollable(value: Boolean | js.Any): Self = this.set("scrollable", value.asInstanceOf[js.Any])
+    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def deleteScrollable: Self = this.set("scrollable", js.undefined)
+    def setSortable(value: Boolean | TreeListSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectable(value: Boolean | String): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
     @scala.inline
-    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    def setToolbar(value: js.Array[TreeListToolbarItem] | js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortable(value: Boolean | TreeListSortable): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
     @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
-    
-    @scala.inline
-    def setToolbarVarargs(value: TreeListToolbarItem*): Self = this.set("toolbar", js.Array(value :_*))
-    
-    @scala.inline
-    def setToolbar(value: js.Array[TreeListToolbarItem] | js.Any): Self = this.set("toolbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    def setToolbarVarargs(value: TreeListToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
   }
 }

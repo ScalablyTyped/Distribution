@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelReplicationTaskAssessmentRunResponse extends js.Object {
+trait CancelReplicationTaskAssessmentRunResponse extends StObject {
   
   /**
     * The ReplicationTaskAssessmentRun object for the canceled assessment run.
@@ -21,24 +22,12 @@ object CancelReplicationTaskAssessmentRunResponse {
   }
   
   @scala.inline
-  implicit class CancelReplicationTaskAssessmentRunResponseOps[Self <: CancelReplicationTaskAssessmentRunResponse] (val x: Self) extends AnyVal {
+  implicit class CancelReplicationTaskAssessmentRunResponseMutableBuilder[Self <: CancelReplicationTaskAssessmentRunResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicationTaskAssessmentRun(value: ReplicationTaskAssessmentRun): Self = StObject.set(x, "ReplicationTaskAssessmentRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationTaskAssessmentRun(value: ReplicationTaskAssessmentRun): Self = this.set("ReplicationTaskAssessmentRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationTaskAssessmentRun: Self = this.set("ReplicationTaskAssessmentRun", js.undefined)
+    def setReplicationTaskAssessmentRunUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRun", js.undefined)
   }
 }

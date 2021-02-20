@@ -1,16 +1,16 @@
 package typings.ionicAngular
 
 import typings.ionicCore.componentsMod.global.HTMLIonMenuElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/providers/menu-controller", JSImport.Namespace)
-@js.native
-object menuControllerMod extends js.Object {
+object menuControllerMod {
   
+  @JSImport("@ionic/angular/providers/menu-controller", "MenuController")
   @js.native
-  class MenuController () extends js.Object {
+  class MenuController () extends StObject {
     
     /**
       * Programmatically close the Menu. If no `menuId` is given as the first

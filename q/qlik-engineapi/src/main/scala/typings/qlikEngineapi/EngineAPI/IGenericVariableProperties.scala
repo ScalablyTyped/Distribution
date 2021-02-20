@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,39 +53,27 @@ object IGenericVariableProperties {
   }
   
   @scala.inline
-  implicit class IGenericVariablePropertiesOps[Self <: IGenericVariableProperties] (val x: Self) extends AnyVal {
+  implicit class IGenericVariablePropertiesMutableBuilder[Self <: IGenericVariableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQComment(value: String): Self = StObject.set(x, "qComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQCommentUndefined: Self = StObject.set(x, "qComment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDefinition(value: String): Self = StObject.set(x, "qDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDefinition(value: String): Self = this.set("qDefinition", value.asInstanceOf[js.Any])
+    def setQIncludeInBookmark(value: Boolean): Self = StObject.set(x, "qIncludeInBookmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIncludeInBookmark(value: Boolean): Self = this.set("qIncludeInBookmark", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQNumberPresentation(value: IFieldAttributes): Self = StObject.set(x, "qNumberPresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQComment(value: String): Self = this.set("qComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQComment: Self = this.set("qComment", js.undefined)
-    
-    @scala.inline
-    def setQNumberPresentation(value: IFieldAttributes): Self = this.set("qNumberPresentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQNumberPresentation: Self = this.set("qNumberPresentation", js.undefined)
+    def setQNumberPresentationUndefined: Self = StObject.set(x, "qNumberPresentation", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaVersionNumber extends js.Object {
+trait SchemaVersionNumber extends StObject {
   
   var LatestVersion: js.UndefOr[LatestSchemaVersionBoolean] = js.native
   
@@ -20,30 +21,18 @@ object SchemaVersionNumber {
   }
   
   @scala.inline
-  implicit class SchemaVersionNumberOps[Self <: SchemaVersionNumber] (val x: Self) extends AnyVal {
+  implicit class SchemaVersionNumberMutableBuilder[Self <: SchemaVersionNumber] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatestVersion(value: LatestSchemaVersionBoolean): Self = StObject.set(x, "LatestVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLatestVersionUndefined: Self = StObject.set(x, "LatestVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersionNumber(value: VersionLongNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestVersion(value: LatestSchemaVersionBoolean): Self = this.set("LatestVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLatestVersion: Self = this.set("LatestVersion", js.undefined)
-    
-    @scala.inline
-    def setVersionNumber(value: VersionLongNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

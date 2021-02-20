@@ -1,17 +1,26 @@
 package typings.typedoc.serializationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/serialization", "DecoratorContainerSerializer")
 @js.native
-class DecoratorContainerSerializer ()
-  extends typings.typedoc.serializersMod.DecoratorContainerSerializer
+class DecoratorContainerSerializer protected ()
+  extends typings.typedoc.serializersMod.DecoratorContainerSerializer {
+  def this(owner: typings.typedoc.serializerMod.Serializer) = this()
+}
 /* static members */
-@JSImport("typedoc/dist/lib/serialization", "DecoratorContainerSerializer")
-@js.native
-object DecoratorContainerSerializer extends js.Object {
+object DecoratorContainerSerializer {
   
-  var PRIORITY: Double = js.native
+  @JSImport("typedoc/dist/lib/serialization", "DecoratorContainerSerializer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("typedoc/dist/lib/serialization", "DecoratorContainerSerializer.PRIORITY")
+  @js.native
+  def PRIORITY: Double = js.native
+  @scala.inline
+  def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Configurations extends js.Object {
+trait Configurations extends StObject {
   
   /**
     * The current configuration of the broker.
@@ -31,39 +32,27 @@ object Configurations {
   }
   
   @scala.inline
-  implicit class ConfigurationsOps[Self <: Configurations] (val x: Self) extends AnyVal {
+  implicit class ConfigurationsMutableBuilder[Self <: Configurations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrent(value: ConfigurationId): Self = StObject.set(x, "Current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentUndefined: Self = StObject.set(x, "Current", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: listOfConfigurationId): Self = StObject.set(x, "History", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrent(value: ConfigurationId): Self = this.set("Current", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "History", js.undefined)
     
     @scala.inline
-    def deleteCurrent: Self = this.set("Current", js.undefined)
+    def setHistoryVarargs(value: ConfigurationId*): Self = StObject.set(x, "History", js.Array(value :_*))
     
     @scala.inline
-    def setHistoryVarargs(value: ConfigurationId*): Self = this.set("History", js.Array(value :_*))
+    def setPending(value: ConfigurationId): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: listOfConfigurationId): Self = this.set("History", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistory: Self = this.set("History", js.undefined)
-    
-    @scala.inline
-    def setPending(value: ConfigurationId): Self = this.set("Pending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePending: Self = this.set("Pending", js.undefined)
+    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
   }
 }

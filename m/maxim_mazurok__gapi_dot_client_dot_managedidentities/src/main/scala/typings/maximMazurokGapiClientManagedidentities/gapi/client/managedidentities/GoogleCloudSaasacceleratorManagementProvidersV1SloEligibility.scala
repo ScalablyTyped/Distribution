@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedidentities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility extends js.Object {
+trait GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility extends StObject {
   
   /** Whether an instance is eligible or ineligible. */
   var eligible: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility {
   }
   
   @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloEligibilityOps[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloEligibilityMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEligible(value: Boolean): Self = StObject.set(x, "eligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEligibleUndefined: Self = StObject.set(x, "eligible", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEligible(value: Boolean): Self = this.set("eligible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEligible: Self = this.set("eligible", js.undefined)
-    
-    @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

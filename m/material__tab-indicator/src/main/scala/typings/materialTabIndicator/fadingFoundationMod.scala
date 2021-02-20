@@ -1,17 +1,23 @@
 package typings.materialTabIndicator
 
+import typings.materialTabIndicator.anon.PartialMDCTabIndicatorAda
 import typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-indicator/fading-foundation", JSImport.Namespace)
-@js.native
-object fadingFoundationMod extends js.Object {
+object fadingFoundationMod {
   
+  @JSImport("@material/tab-indicator/fading-foundation", JSImport.Default)
   @js.native
-  class MDCFadingTabIndicatorFoundation () extends MDCTabIndicatorFoundation
+  class default () extends MDCFadingTabIndicatorFoundation {
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
+  }
   
+  @JSImport("@material/tab-indicator/fading-foundation", "MDCFadingTabIndicatorFoundation")
   @js.native
-  class default () extends MDCFadingTabIndicatorFoundation
+  class MDCFadingTabIndicatorFoundation () extends MDCTabIndicatorFoundation {
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
+  }
 }

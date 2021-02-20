@@ -1,5 +1,6 @@
 package typings.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The answer field is true if the current context size is between the minSize and maxSize values that are specified in the object, and false otherwise.
   */
 @js.native
-trait ContextSizeResponse extends js.Object {
+trait ContextSizeResponse extends StObject {
   
   var answer: Boolean = js.native
   
@@ -25,33 +26,21 @@ object ContextSizeResponse {
   }
   
   @scala.inline
-  implicit class ContextSizeResponseOps[Self <: ContextSizeResponse] (val x: Self) extends AnyVal {
+  implicit class ContextSizeResponseMutableBuilder[Self <: ContextSizeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswer(value: Boolean): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
     @scala.inline
-    def setAnswer(value: Boolean): Self = this.set("answer", value.asInstanceOf[js.Any])
+    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
-    
-    @scala.inline
-    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

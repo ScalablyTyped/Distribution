@@ -1,12 +1,13 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Carousel, 'set'> */
 @js.native
-trait PickCarouselset extends js.Object {
+trait PickCarouselset extends StObject {
   
   var set: js.UndefOr[js.Any] = js.native
 }
@@ -19,24 +20,12 @@ object PickCarouselset {
   }
   
   @scala.inline
-  implicit class PickCarouselsetOps[Self <: PickCarouselset] (val x: Self) extends AnyVal {
+  implicit class PickCarouselsetMutableBuilder[Self <: PickCarouselset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSet(value: js.Any): Self = this.set("set", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
   }
 }

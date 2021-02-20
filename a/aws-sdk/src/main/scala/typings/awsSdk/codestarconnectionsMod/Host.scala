@@ -1,11 +1,12 @@
 package typings.awsSdk.codestarconnectionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Host extends js.Object {
+trait Host extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the host.
@@ -51,60 +52,48 @@ object Host {
   }
   
   @scala.inline
-  implicit class HostOps[Self <: Host] (val x: Self) extends AnyVal {
+  implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostArnUndefined: Self = StObject.set(x, "HostArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostArn(value: HostArn): Self = this.set("HostArn", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteHostArn: Self = this.set("HostArn", js.undefined)
+    def setProviderEndpoint(value: Url): Self = StObject.set(x, "ProviderEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: HostName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setProviderEndpointUndefined: Self = StObject.set(x, "ProviderEndpoint", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderEndpoint(value: Url): Self = this.set("ProviderEndpoint", value.asInstanceOf[js.Any])
+    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
     
     @scala.inline
-    def deleteProviderEndpoint: Self = this.set("ProviderEndpoint", js.undefined)
+    def setStatus(value: HostStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviderType(value: ProviderType): Self = this.set("ProviderType", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: HostStatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProviderType: Self = this.set("ProviderType", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def setStatus(value: HostStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: HostStatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setVpcConfiguration(value: VpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.johnnyFive.mod
 
 import typings.johnnyFive.johnnyFiveStrings.moveColoncomplete
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Servo")
 @js.native
-class Servo protected () extends js.Object {
+class Servo protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: ServoGeneralOption) = this()

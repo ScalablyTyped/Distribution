@@ -3,13 +3,14 @@ package typings.officeJs.Excel.Interfaces
 import typings.officeJs.Excel.DataValidationErrorAlert
 import typings.officeJs.Excel.DataValidationPrompt
 import typings.officeJs.Excel.DataValidationRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
 @js.native
-trait DataValidationUpdateData extends js.Object {
+trait DataValidationUpdateData extends StObject {
   
   /**
     *
@@ -52,42 +53,30 @@ object DataValidationUpdateData {
   }
   
   @scala.inline
-  implicit class DataValidationUpdateDataOps[Self <: DataValidationUpdateData] (val x: Self) extends AnyVal {
+  implicit class DataValidationUpdateDataMutableBuilder[Self <: DataValidationUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorAlert(value: DataValidationErrorAlert): Self = StObject.set(x, "errorAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorAlertUndefined: Self = StObject.set(x, "errorAlert", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreBlanks(value: Boolean): Self = StObject.set(x, "ignoreBlanks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorAlert(value: DataValidationErrorAlert): Self = this.set("errorAlert", value.asInstanceOf[js.Any])
+    def setIgnoreBlanksUndefined: Self = StObject.set(x, "ignoreBlanks", js.undefined)
     
     @scala.inline
-    def deleteErrorAlert: Self = this.set("errorAlert", js.undefined)
+    def setPrompt(value: DataValidationPrompt): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreBlanks(value: Boolean): Self = this.set("ignoreBlanks", value.asInstanceOf[js.Any])
+    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
     @scala.inline
-    def deleteIgnoreBlanks: Self = this.set("ignoreBlanks", js.undefined)
+    def setRule(value: DataValidationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrompt(value: DataValidationPrompt): Self = this.set("prompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrompt: Self = this.set("prompt", js.undefined)
-    
-    @scala.inline
-    def setRule(value: DataValidationRule): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

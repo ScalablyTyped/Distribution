@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetBlockPublicAccessConfigurationOutput extends js.Object {
+trait GetBlockPublicAccessConfigurationOutput extends StObject {
   
   /**
     * A configuration for Amazon EMR block public access. The configuration applies to all clusters created in your account for the current Region. The configuration specifies whether block public access is enabled. If block public access is enabled, security groups associated with the cluster cannot have rules that allow inbound traffic from 0.0.0.0/0 or ::/0 on a port, unless the port is specified as an exception using PermittedPublicSecurityGroupRuleRanges in the BlockPublicAccessConfiguration. By default, Port 22 (SSH) is an exception, and public access is allowed on this port. You can change this by updating the block public access configuration to remove the exception.  For accounts that created clusters in a Region before November 25, 2019, block public access is disabled by default in that Region. To use this feature, you must manually enable and configure it. For accounts that did not create an EMR cluster in a Region before this date, block public access is enabled by default in that Region. 
@@ -29,24 +30,12 @@ object GetBlockPublicAccessConfigurationOutput {
   }
   
   @scala.inline
-  implicit class GetBlockPublicAccessConfigurationOutputOps[Self <: GetBlockPublicAccessConfigurationOutput] (val x: Self) extends AnyVal {
+  implicit class GetBlockPublicAccessConfigurationOutputMutableBuilder[Self <: GetBlockPublicAccessConfigurationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = StObject.set(x, "BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = this.set("BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlockPublicAccessConfigurationMetadata(value: BlockPublicAccessConfigurationMetadata): Self = this.set("BlockPublicAccessConfigurationMetadata", value.asInstanceOf[js.Any])
+    def setBlockPublicAccessConfigurationMetadata(value: BlockPublicAccessConfigurationMetadata): Self = StObject.set(x, "BlockPublicAccessConfigurationMetadata", value.asInstanceOf[js.Any])
   }
 }

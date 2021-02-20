@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotVbpParamsOptions extends js.Object {
+trait PlotVbpParamsOptions extends StObject {
   
   /**
     * (Highstock) The number of price zones.
@@ -28,30 +29,18 @@ object PlotVbpParamsOptions {
   }
   
   @scala.inline
-  implicit class PlotVbpParamsOptionsOps[Self <: PlotVbpParamsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotVbpParamsOptionsMutableBuilder[Self <: PlotVbpParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRanges(value: Double): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVolumeSeriesID(value: String): Self = StObject.set(x, "volumeSeriesID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRanges(value: Double): Self = this.set("ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRanges: Self = this.set("ranges", js.undefined)
-    
-    @scala.inline
-    def setVolumeSeriesID(value: String): Self = this.set("volumeSeriesID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSeriesID: Self = this.set("volumeSeriesID", js.undefined)
+    def setVolumeSeriesIDUndefined: Self = StObject.set(x, "volumeSeriesID", js.undefined)
   }
 }

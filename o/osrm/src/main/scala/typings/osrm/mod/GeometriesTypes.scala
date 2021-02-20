@@ -1,5 +1,6 @@
 package typings.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.osrm.osrmStrings.geojson
   - typings.osrm.osrmStrings.polyline6
 */
-trait GeometriesTypes extends js.Object
+trait GeometriesTypes extends StObject
 object GeometriesTypes {
   
   @scala.inline

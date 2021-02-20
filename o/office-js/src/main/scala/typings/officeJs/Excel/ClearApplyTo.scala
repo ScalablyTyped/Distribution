@@ -1,17 +1,18 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClearApplyTo extends js.Object
+sealed trait ClearApplyTo extends StObject
 /**
   * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
   */
 @JSGlobal("Excel.ClearApplyTo")
 @js.native
-object ClearApplyTo extends js.Object {
+object ClearApplyTo extends StObject {
   
   @js.native
   sealed trait all extends ClearApplyTo

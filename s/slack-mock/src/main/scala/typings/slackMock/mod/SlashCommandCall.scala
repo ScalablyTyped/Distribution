@@ -1,11 +1,12 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlashCommandCall[T] extends js.Object {
+trait SlashCommandCall[T] extends StObject {
   
   var headers: SlashCommandHttpHeaders = js.native
   
@@ -33,33 +34,21 @@ object SlashCommandCall {
   }
   
   @scala.inline
-  implicit class SlashCommandCallOps[Self <: SlashCommandCall[_], T] (val x: Self with SlashCommandCall[T]) extends AnyVal {
+  implicit class SlashCommandCallMutableBuilder[Self <: SlashCommandCall[_], T] (val x: Self with SlashCommandCall[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: SlashCommandHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: SlashCommandHttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setType(value: SlashCommandCallType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: T): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatusCode(value: Double): Self = this.set("statusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: SlashCommandCallType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: SlashCommandUrl): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: SlashCommandUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

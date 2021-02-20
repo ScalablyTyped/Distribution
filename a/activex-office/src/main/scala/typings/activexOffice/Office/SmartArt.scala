@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartArt extends js.Object {
+trait SmartArt extends StObject {
   
   def AllNodes(Index: String): SmartArtNode = js.native
   def AllNodes(Index: Double): SmartArtNode = js.native

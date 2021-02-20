@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneOffsetTransition")
 @js.native
-class ZoneOffsetTransition protected () extends js.Object {
+class ZoneOffsetTransition protected () extends StObject {
   
   def compareTo(transition: ZoneOffsetTransition): Double = js.native
   
@@ -36,10 +37,10 @@ class ZoneOffsetTransition protected () extends js.Object {
   
   def validOffsets(): js.Array[ZoneOffset] = js.native
 }
-/* static members */
-@JSImport("js-joda", "ZoneOffsetTransition")
-@js.native
-object ZoneOffsetTransition extends js.Object {
+object ZoneOffsetTransition {
   
+  /* static member */
+  @JSImport("js-joda", "ZoneOffsetTransition.of")
+  @js.native
   def of(transition: LocalDateTime, offsetBefore: ZoneOffset, offsetAfter: ZoneOffset): ZoneOffsetTransition = js.native
 }

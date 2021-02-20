@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResampleMediaTask extends js.Object {
+trait ResampleMediaTask extends StObject {
   
   val AudioCompressionType: String = js.native
   
@@ -55,54 +56,42 @@ object ResampleMediaTask {
   }
   
   @scala.inline
-  implicit class ResampleMediaTaskOps[Self <: ResampleMediaTask] (val x: Self) extends AnyVal {
+  implicit class ResampleMediaTaskMutableBuilder[Self <: ResampleMediaTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioCompressionType(value: String): Self = StObject.set(x, "AudioCompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioSamplingRate(value: Double): Self = StObject.set(x, "AudioSamplingRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerType(value: String): Self = StObject.set(x, "ContainerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioCompressionType(value: String): Self = this.set("AudioCompressionType", value.asInstanceOf[js.Any])
+    def setIsEmbedded(value: Boolean): Self = StObject.set(x, "IsEmbedded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioSamplingRate(value: Double): Self = this.set("AudioSamplingRate", value.asInstanceOf[js.Any])
+    def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerType(value: String): Self = this.set("ContainerType", value.asInstanceOf[js.Any])
+    def setPowerPointDotResampleMediaTask_typekey(value: ResampleMediaTask): Self = StObject.set(x, "PowerPoint.ResampleMediaTask_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEmbedded(value: Boolean): Self = this.set("IsEmbedded", value.asInstanceOf[js.Any])
+    def setProfile(value: PpResampleMediaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLinked(value: Boolean): Self = this.set("IsLinked", value.asInstanceOf[js.Any])
+    def setSampleHeight(value: Double): Self = StObject.set(x, "SampleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotResampleMediaTask_typekey(value: ResampleMediaTask): Self = this.set("PowerPoint.ResampleMediaTask_typekey", value.asInstanceOf[js.Any])
+    def setSampleWidth(value: Double): Self = StObject.set(x, "SampleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleHeight(value: Double): Self = this.set("SampleHeight", value.asInstanceOf[js.Any])
+    def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleWidth(value: Double): Self = this.set("SampleWidth", value.asInstanceOf[js.Any])
+    def setVideoCompressionType(value: String): Self = StObject.set(x, "VideoCompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShape(value: Shape): Self = this.set("Shape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoCompressionType(value: String): Self = this.set("VideoCompressionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoFrameRate(value: Double): Self = this.set("VideoFrameRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfile(value: PpResampleMediaProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    def setVideoFrameRate(value: Double): Self = StObject.set(x, "VideoFrameRate", value.asInstanceOf[js.Any])
   }
 }

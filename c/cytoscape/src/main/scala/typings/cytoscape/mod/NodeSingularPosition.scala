@@ -1,6 +1,7 @@
 package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/position--dimensions
   */
 @js.native
-trait NodeSingularPosition extends js.Object {
+trait NodeSingularPosition extends StObject {
   
   /**
     * Get whether the user can grab a node.

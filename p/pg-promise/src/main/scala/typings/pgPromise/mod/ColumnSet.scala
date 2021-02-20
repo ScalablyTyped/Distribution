@@ -2,6 +2,7 @@ package typings.pgPromise.mod
 
 import typings.pgPromise.anon.From
 import typings.pgPromise.anon.Prefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/helpers.ColumnSet.html
 @JSImport("pg-promise", "ColumnSet")
 @js.native
-class ColumnSet[S] protected () extends js.Object {
+class ColumnSet[S] protected () extends StObject {
   def this(columns: js.Array[String | IColumnConfig[S] | Column[S]]) = this()
   def this(columns: js.Object) = this()
   def this(columns: Column[S]) = this()

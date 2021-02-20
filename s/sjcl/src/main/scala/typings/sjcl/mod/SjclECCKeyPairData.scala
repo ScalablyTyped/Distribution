@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclECCKeyPairData extends js.Object {
+trait SjclECCKeyPairData extends StObject {
   
   var curve: String = js.native
   
@@ -25,30 +26,18 @@ object SjclECCKeyPairData {
   }
   
   @scala.inline
-  implicit class SjclECCKeyPairDataOps[Self <: SjclECCKeyPairData] (val x: Self) extends AnyVal {
+  implicit class SjclECCKeyPairDataMutableBuilder[Self <: SjclECCKeyPairData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPoint(value: String): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecretKey(value: Boolean): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurve(value: String): Self = this.set("curve", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPoint(value: String): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretKey(value: Boolean): Self = this.set("secretKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

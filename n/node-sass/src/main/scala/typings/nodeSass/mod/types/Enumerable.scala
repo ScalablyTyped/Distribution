@@ -1,11 +1,12 @@
 package typings.nodeSass.mod.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Enumerable extends js.Object {
+trait Enumerable extends StObject {
   
   def getLength(): Double = js.native
   
@@ -22,27 +23,15 @@ object Enumerable {
   }
   
   @scala.inline
-  implicit class EnumerableOps[Self <: Enumerable] (val x: Self) extends AnyVal {
+  implicit class EnumerableMutableBuilder[Self <: Enumerable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetValue(value: Double => Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetLength(value: () => Double): Self = this.set("getLength", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValue(value: Double => Value): Self = this.set("getValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: (Double, Value) => Unit): Self = this.set("setValue", js.Any.fromFunction2(value))
+    def setSetValue(value: (Double, Value) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
   }
 }

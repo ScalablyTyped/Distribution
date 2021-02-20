@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.sceneMod.IDisposable
 import typings.std.Worker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/workerPool", JSImport.Namespace)
-@js.native
-object workerPoolMod extends js.Object {
+object workerPoolMod {
   
+  @JSImport("babylonjs/Misc/workerPool", "WorkerPool")
   @js.native
   class WorkerPool protected () extends IDisposable {
     /**

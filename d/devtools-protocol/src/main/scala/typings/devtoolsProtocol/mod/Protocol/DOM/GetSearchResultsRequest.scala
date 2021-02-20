@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSearchResultsRequest extends js.Object {
+trait GetSearchResultsRequest extends StObject {
   
   /**
     * Start index of the search result to be returned.
@@ -32,27 +33,15 @@ object GetSearchResultsRequest {
   }
   
   @scala.inline
-  implicit class GetSearchResultsRequestOps[Self <: GetSearchResultsRequest] (val x: Self) extends AnyVal {
+  implicit class GetSearchResultsRequestMutableBuilder[Self <: GetSearchResultsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromIndex(value: integer): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFromIndex(value: integer): Self = this.set("fromIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchId(value: String): Self = this.set("searchId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToIndex(value: integer): Self = this.set("toIndex", value.asInstanceOf[js.Any])
+    def setToIndex(value: integer): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__pubsub
 
-Typings are for version 1.7.3
+Typings are for version 2.6.0
 
 ## Library description:
 Cloud Pub/Sub Client Library for Node.js
@@ -10,9 +10,9 @@ Cloud Pub/Sub Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/pubsub |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
-| # releases         | 44 |
-| # dependents       | 162 |
-| # downloads        | 7960761 |
+| # releases         | 45 |
+| # dependents       | 236 |
+| # downloads        | 26113554 |
 | # stars            | 2 |
 
 ## Links

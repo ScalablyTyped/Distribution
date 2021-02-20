@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.treeMod.TreeProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/tree", JSImport.Namespace)
-@js.native
-object primereactTreeMod extends js.Object {
+object primereactTreeMod {
   
+  @JSImport("primereact/tree", "Tree")
   @js.native
-  class Tree ()
-    extends Component[TreeProps, js.Any, js.Any]
+  class Tree protected ()
+    extends typings.primereact.treeMod.Tree {
+    def this(props: TreeProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TreeProps, context: js.Any) = this()
+  }
 }

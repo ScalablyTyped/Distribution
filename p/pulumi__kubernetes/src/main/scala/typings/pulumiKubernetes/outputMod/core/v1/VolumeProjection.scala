@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Projection that may be projected along with other supported volume types
   */
 @js.native
-trait VolumeProjection extends js.Object {
+trait VolumeProjection extends StObject {
   
   /**
     * information about the configMap data to project
@@ -44,30 +45,18 @@ object VolumeProjection {
   }
   
   @scala.inline
-  implicit class VolumeProjectionOps[Self <: VolumeProjection] (val x: Self) extends AnyVal {
+  implicit class VolumeProjectionMutableBuilder[Self <: VolumeProjection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigMap(value: ConfigMapProjection): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownwardAPI(value: DownwardAPIProjection): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecret(value: SecretProjection): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigMap(value: ConfigMapProjection): Self = this.set("configMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDownwardAPI(value: DownwardAPIProjection): Self = this.set("downwardAPI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecret(value: SecretProjection): Self = this.set("secret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceAccountToken(value: ServiceAccountTokenProjection): Self = this.set("serviceAccountToken", value.asInstanceOf[js.Any])
+    def setServiceAccountToken(value: ServiceAccountTokenProjection): Self = StObject.set(x, "serviceAccountToken", value.asInstanceOf[js.Any])
   }
 }

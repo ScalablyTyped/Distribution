@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDlp.anon.Fields
 import typings.maximMazurokGapiClientDlp.anon.Resource
 import typings.maximMazurokGapiClientDlp.anon.UploadType
 import typings.maximMazurokGapiClientDlp.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentResource extends js.Object {
+trait ContentResource extends StObject {
   
   def deidentify(request: Fields, body: GooglePrivacyDlpV2DeidentifyContentRequest): Request[GooglePrivacyDlpV2DeidentifyContentResponse] = js.native
   /**

@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugSessionOptions extends js.Object {
+trait DebugSessionOptions extends StObject {
   
   /**
     * Controls if the debug session's parent session is shown in the CALL STACK view even if it has only a single child.
@@ -42,42 +43,30 @@ object DebugSessionOptions {
   }
   
   @scala.inline
-  implicit class DebugSessionOptionsOps[Self <: DebugSessionOptions] (val x: Self) extends AnyVal {
+  implicit class DebugSessionOptionsMutableBuilder[Self <: DebugSessionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsoleMode(value: DebugConsoleMode): Self = StObject.set(x, "consoleMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    def setConsoleModeUndefined: Self = StObject.set(x, "consoleMode", js.undefined)
     
     @scala.inline
-    def deleteCompact: Self = this.set("compact", js.undefined)
+    def setNoDebug(value: Boolean): Self = StObject.set(x, "noDebug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsoleMode(value: DebugConsoleMode): Self = this.set("consoleMode", value.asInstanceOf[js.Any])
+    def setNoDebugUndefined: Self = StObject.set(x, "noDebug", js.undefined)
     
     @scala.inline
-    def deleteConsoleMode: Self = this.set("consoleMode", js.undefined)
+    def setParentSession(value: DebugSession): Self = StObject.set(x, "parentSession", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDebug(value: Boolean): Self = this.set("noDebug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDebug: Self = this.set("noDebug", js.undefined)
-    
-    @scala.inline
-    def setParentSession(value: DebugSession): Self = this.set("parentSession", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentSession: Self = this.set("parentSession", js.undefined)
+    def setParentSessionUndefined: Self = StObject.set(x, "parentSession", js.undefined)
   }
 }

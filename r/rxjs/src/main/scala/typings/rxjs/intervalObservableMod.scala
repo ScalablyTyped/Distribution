@@ -1,27 +1,34 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/observable/IntervalObservable", JSImport.Namespace)
-@js.native
-object intervalObservableMod extends js.Object {
+object intervalObservableMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @js.native
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs/observable/IntervalObservable", "IntervalObservable")
+  @js.native
   class IntervalObservable[T] ()
     extends typings.rxjsCompat.intervalObservableMod.IntervalObservable[T]
   /* static members */
-  @js.native
-  object IntervalObservable extends js.Object {
+  object IntervalObservable {
     
+    @JSImport("rxjs/observable/IntervalObservable", "IntervalObservable.create")
+    @js.native
     def create(): js.Any = js.native
+    @JSImport("rxjs/observable/IntervalObservable", "IntervalObservable.create")
+    @js.native
     def create(
       period: js.UndefOr[scala.Nothing],
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
     ): js.Any = js.native
+    @JSImport("rxjs/observable/IntervalObservable", "IntervalObservable.create")
+    @js.native
     def create(period: Double): js.Any = js.native
+    @JSImport("rxjs/observable/IntervalObservable", "IntervalObservable.create")
+    @js.native
     def create(
       period: Double,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any

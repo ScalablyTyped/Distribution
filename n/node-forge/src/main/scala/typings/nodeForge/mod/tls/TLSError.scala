@@ -3,6 +3,7 @@ package typings.nodeForge.mod.tls
 import typings.nodeForge.nodeForgeStrings.client
 import typings.nodeForge.nodeForgeStrings.server
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,27 +26,15 @@ object TLSError {
   }
   
   @scala.inline
-  implicit class TLSErrorOps[Self <: TLSError] (val x: Self) extends AnyVal {
+  implicit class TLSErrorMutableBuilder[Self <: TLSError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlert(value: Alert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrigin(value: server | client): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlert(value: Alert): Self = this.set("alert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrigin(value: server | client): Self = this.set("origin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSend(value: Boolean): Self = this.set("send", value.asInstanceOf[js.Any])
+    def setSend(value: Boolean): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
   }
 }

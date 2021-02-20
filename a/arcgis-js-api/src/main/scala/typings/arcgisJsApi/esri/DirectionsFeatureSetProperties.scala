@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,75 +82,63 @@ object DirectionsFeatureSetProperties {
   }
   
   @scala.inline
-  implicit class DirectionsFeatureSetPropertiesOps[Self <: DirectionsFeatureSetProperties] (val x: Self) extends AnyVal {
+  implicit class DirectionsFeatureSetPropertiesMutableBuilder[Self <: DirectionsFeatureSetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometryType(value: polyline): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtent(value: ExtentProperties): Self = this.set("extent", value.asInstanceOf[js.Any])
+    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
     @scala.inline
-    def deleteExtent: Self = this.set("extent", js.undefined)
+    def setMergedGeometry(value: PolylineProperties): Self = StObject.set(x, "mergedGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryType(value: polyline): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    def setMergedGeometryUndefined: Self = StObject.set(x, "mergedGeometry", js.undefined)
     
     @scala.inline
-    def deleteGeometryType: Self = this.set("geometryType", js.undefined)
+    def setRouteId(value: String): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMergedGeometry(value: PolylineProperties): Self = this.set("mergedGeometry", value.asInstanceOf[js.Any])
+    def setRouteIdUndefined: Self = StObject.set(x, "routeId", js.undefined)
     
     @scala.inline
-    def deleteMergedGeometry: Self = this.set("mergedGeometry", js.undefined)
+    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteId(value: String): Self = this.set("routeId", value.asInstanceOf[js.Any])
+    def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
     
     @scala.inline
-    def deleteRouteId: Self = this.set("routeId", js.undefined)
+    def setStrings(value: js.Array[_]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteName(value: String): Self = this.set("routeName", value.asInstanceOf[js.Any])
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
     @scala.inline
-    def deleteRouteName: Self = this.set("routeName", js.undefined)
+    def setStringsVarargs(value: js.Any*): Self = StObject.set(x, "strings", js.Array(value :_*))
     
     @scala.inline
-    def setStringsVarargs(value: js.Any*): Self = this.set("strings", js.Array(value :_*))
+    def setTotalDriveTime(value: Double): Self = StObject.set(x, "totalDriveTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrings(value: js.Array[_]): Self = this.set("strings", value.asInstanceOf[js.Any])
+    def setTotalDriveTimeUndefined: Self = StObject.set(x, "totalDriveTime", js.undefined)
     
     @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
+    def setTotalLength(value: Double): Self = StObject.set(x, "totalLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalDriveTime(value: Double): Self = this.set("totalDriveTime", value.asInstanceOf[js.Any])
+    def setTotalLengthUndefined: Self = StObject.set(x, "totalLength", js.undefined)
     
     @scala.inline
-    def deleteTotalDriveTime: Self = this.set("totalDriveTime", js.undefined)
+    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalLength(value: Double): Self = this.set("totalLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalLength: Self = this.set("totalLength", js.undefined)
-    
-    @scala.inline
-    def setTotalTime(value: Double): Self = this.set("totalTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalTime: Self = this.set("totalTime", js.undefined)
+    def setTotalTimeUndefined: Self = StObject.set(x, "totalTime", js.undefined)
   }
 }

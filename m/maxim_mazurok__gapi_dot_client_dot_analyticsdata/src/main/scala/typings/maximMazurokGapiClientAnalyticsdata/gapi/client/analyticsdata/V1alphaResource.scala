@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientAnalyticsdata.anon.Key
 import typings.maximMazurokGapiClientAnalyticsdata.anon.Oauthtoken
 import typings.maximMazurokGapiClientAnalyticsdata.anon.PrettyPrint
 import typings.maximMazurokGapiClientAnalyticsdata.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait V1alphaResource extends js.Object {
+trait V1alphaResource extends StObject {
   
   /** Returns multiple pivot reports in a batch. All reports must be for the same Entity. */
   def batchRunPivotReports(request: Fields): Request[BatchRunPivotReportsResponse] = js.native

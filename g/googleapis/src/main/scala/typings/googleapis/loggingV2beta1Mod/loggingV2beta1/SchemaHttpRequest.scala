@@ -1,5 +1,6 @@
 package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * defined in a separate message.
   */
 @js.native
-trait SchemaHttpRequest extends js.Object {
+trait SchemaHttpRequest extends StObject {
   
   /**
     * The number of HTTP response bytes inserted into cache. Set only when a
@@ -111,108 +112,96 @@ object SchemaHttpRequest {
   }
   
   @scala.inline
-  implicit class SchemaHttpRequestOps[Self <: SchemaHttpRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpRequestMutableBuilder[Self <: SchemaHttpRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheFillBytes(value: String): Self = StObject.set(x, "cacheFillBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheFillBytesUndefined: Self = StObject.set(x, "cacheFillBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheHit(value: Boolean): Self = StObject.set(x, "cacheHit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheFillBytes(value: String): Self = this.set("cacheFillBytes", value.asInstanceOf[js.Any])
+    def setCacheHitUndefined: Self = StObject.set(x, "cacheHit", js.undefined)
     
     @scala.inline
-    def deleteCacheFillBytes: Self = this.set("cacheFillBytes", js.undefined)
+    def setCacheLookup(value: Boolean): Self = StObject.set(x, "cacheLookup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheHit(value: Boolean): Self = this.set("cacheHit", value.asInstanceOf[js.Any])
+    def setCacheLookupUndefined: Self = StObject.set(x, "cacheLookup", js.undefined)
     
     @scala.inline
-    def deleteCacheHit: Self = this.set("cacheHit", js.undefined)
+    def setCacheValidatedWithOriginServer(value: Boolean): Self = StObject.set(x, "cacheValidatedWithOriginServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheLookup(value: Boolean): Self = this.set("cacheLookup", value.asInstanceOf[js.Any])
+    def setCacheValidatedWithOriginServerUndefined: Self = StObject.set(x, "cacheValidatedWithOriginServer", js.undefined)
     
     @scala.inline
-    def deleteCacheLookup: Self = this.set("cacheLookup", js.undefined)
+    def setLatency(value: String): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheValidatedWithOriginServer(value: Boolean): Self = this.set("cacheValidatedWithOriginServer", value.asInstanceOf[js.Any])
+    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
     @scala.inline
-    def deleteCacheValidatedWithOriginServer: Self = this.set("cacheValidatedWithOriginServer", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatency(value: String): Self = this.set("latency", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteLatency: Self = this.set("latency", js.undefined)
+    def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setRefererUndefined: Self = StObject.set(x, "referer", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setRemoteIp(value: String): Self = StObject.set(x, "remoteIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferer(value: String): Self = this.set("referer", value.asInstanceOf[js.Any])
+    def setRemoteIpUndefined: Self = StObject.set(x, "remoteIp", js.undefined)
     
     @scala.inline
-    def deleteReferer: Self = this.set("referer", js.undefined)
+    def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteIp(value: String): Self = this.set("remoteIp", value.asInstanceOf[js.Any])
+    def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
     
     @scala.inline
-    def deleteRemoteIp: Self = this.set("remoteIp", js.undefined)
+    def setRequestSize(value: String): Self = StObject.set(x, "requestSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestMethod(value: String): Self = this.set("requestMethod", value.asInstanceOf[js.Any])
+    def setRequestSizeUndefined: Self = StObject.set(x, "requestSize", js.undefined)
     
     @scala.inline
-    def deleteRequestMethod: Self = this.set("requestMethod", js.undefined)
+    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestSize(value: String): Self = this.set("requestSize", value.asInstanceOf[js.Any])
+    def setRequestUrlUndefined: Self = StObject.set(x, "requestUrl", js.undefined)
     
     @scala.inline
-    def deleteRequestSize: Self = this.set("requestSize", js.undefined)
+    def setResponseSize(value: String): Self = StObject.set(x, "responseSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestUrl(value: String): Self = this.set("requestUrl", value.asInstanceOf[js.Any])
+    def setResponseSizeUndefined: Self = StObject.set(x, "responseSize", js.undefined)
     
     @scala.inline
-    def deleteRequestUrl: Self = this.set("requestUrl", js.undefined)
+    def setServerIp(value: String): Self = StObject.set(x, "serverIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseSize(value: String): Self = this.set("responseSize", value.asInstanceOf[js.Any])
+    def setServerIpUndefined: Self = StObject.set(x, "serverIp", js.undefined)
     
     @scala.inline
-    def deleteResponseSize: Self = this.set("responseSize", js.undefined)
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerIp(value: String): Self = this.set("serverIp", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteServerIp: Self = this.set("serverIp", js.undefined)
+    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

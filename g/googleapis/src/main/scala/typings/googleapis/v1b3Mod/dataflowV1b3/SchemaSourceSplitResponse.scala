@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response to a SourceSplitRequest.
   */
 @js.native
-trait SchemaSourceSplitResponse extends js.Object {
+trait SchemaSourceSplitResponse extends StObject {
   
   /**
     * If outcome is SPLITTING_HAPPENED, then this is a list of bundles into
@@ -40,42 +41,30 @@ object SchemaSourceSplitResponse {
   }
   
   @scala.inline
-  implicit class SchemaSourceSplitResponseOps[Self <: SchemaSourceSplitResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceSplitResponseMutableBuilder[Self <: SchemaSourceSplitResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundles(value: js.Array[SchemaDerivedSource]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundlesVarargs(value: SchemaDerivedSource*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
     @scala.inline
-    def setBundlesVarargs(value: SchemaDerivedSource*): Self = this.set("bundles", js.Array(value :_*))
+    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundles(value: js.Array[SchemaDerivedSource]): Self = this.set("bundles", value.asInstanceOf[js.Any])
+    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
     @scala.inline
-    def deleteBundles: Self = this.set("bundles", js.undefined)
+    def setShards(value: js.Array[SchemaSourceSplitShard]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutcome(value: String): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
     
     @scala.inline
-    def deleteOutcome: Self = this.set("outcome", js.undefined)
-    
-    @scala.inline
-    def setShardsVarargs(value: SchemaSourceSplitShard*): Self = this.set("shards", js.Array(value :_*))
-    
-    @scala.inline
-    def setShards(value: js.Array[SchemaSourceSplitShard]): Self = this.set("shards", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShards: Self = this.set("shards", js.undefined)
+    def setShardsVarargs(value: SchemaSourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value :_*))
   }
 }

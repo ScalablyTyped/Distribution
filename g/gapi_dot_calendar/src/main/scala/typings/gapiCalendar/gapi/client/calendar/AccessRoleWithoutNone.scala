@@ -1,5 +1,6 @@
 package typings.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gapiCalendar.gapiCalendarStrings.writer
   - typings.gapiCalendar.gapiCalendarStrings.owner
 */
-trait AccessRoleWithoutNone extends js.Object
+trait AccessRoleWithoutNone extends StObject
 object AccessRoleWithoutNone {
   
   @scala.inline

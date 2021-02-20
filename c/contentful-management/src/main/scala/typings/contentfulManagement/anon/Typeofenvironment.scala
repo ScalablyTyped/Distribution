@@ -5,12 +5,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.environmentMod.Environment
 import typings.contentfulManagement.environmentMod.EnvironmentProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofenvironment extends js.Object {
+trait Typeofenvironment extends StObject {
   
   def wrapEnvironment(http: AxiosInstance, data: EnvironmentProps): Environment = js.native
   
@@ -28,26 +29,14 @@ object Typeofenvironment {
   }
   
   @scala.inline
-  implicit class TypeofenvironmentOps[Self <: Typeofenvironment] (val x: Self) extends AnyVal {
+  implicit class TypeofenvironmentMutableBuilder[Self <: Typeofenvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrapEnvironment(value: (AxiosInstance, EnvironmentProps) => Environment): Self = this.set("wrapEnvironment", js.Any.fromFunction2(value))
+    def setWrapEnvironment(value: (AxiosInstance, EnvironmentProps) => Environment): Self = StObject.set(x, "wrapEnvironment", js.Any.fromFunction2(value))
     
     @scala.inline
     def setWrapEnvironmentCollection(
       value: (AxiosInstance, CollectionProp[EnvironmentProps]) => Collection[Environment, EnvironmentProps]
-    ): Self = this.set("wrapEnvironmentCollection", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "wrapEnvironmentCollection", js.Any.fromFunction2(value))
   }
 }

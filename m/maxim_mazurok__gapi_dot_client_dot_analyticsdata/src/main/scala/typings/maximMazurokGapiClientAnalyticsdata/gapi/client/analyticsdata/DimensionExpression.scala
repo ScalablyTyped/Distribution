@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionExpression extends js.Object {
+trait DimensionExpression extends StObject {
   
   /** Used to combine dimension values to a single dimension. For example, dimension "country, city": concatenate(country, ", ", city). */
   var concatenate: js.UndefOr[ConcatenateExpression] = js.native
@@ -25,36 +26,24 @@ object DimensionExpression {
   }
   
   @scala.inline
-  implicit class DimensionExpressionOps[Self <: DimensionExpression] (val x: Self) extends AnyVal {
+  implicit class DimensionExpressionMutableBuilder[Self <: DimensionExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcatenate(value: ConcatenateExpression): Self = StObject.set(x, "concatenate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcatenateUndefined: Self = StObject.set(x, "concatenate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowerCase(value: CaseExpression): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcatenate(value: ConcatenateExpression): Self = this.set("concatenate", value.asInstanceOf[js.Any])
+    def setLowerCaseUndefined: Self = StObject.set(x, "lowerCase", js.undefined)
     
     @scala.inline
-    def deleteConcatenate: Self = this.set("concatenate", js.undefined)
+    def setUpperCase(value: CaseExpression): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerCase(value: CaseExpression): Self = this.set("lowerCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowerCase: Self = this.set("lowerCase", js.undefined)
-    
-    @scala.inline
-    def setUpperCase(value: CaseExpression): Self = this.set("upperCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpperCase: Self = this.set("upperCase", js.undefined)
+    def setUpperCaseUndefined: Self = StObject.set(x, "upperCase", js.undefined)
   }
 }

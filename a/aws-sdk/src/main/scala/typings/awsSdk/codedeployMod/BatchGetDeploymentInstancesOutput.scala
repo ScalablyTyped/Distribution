@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetDeploymentInstancesOutput extends js.Object {
+trait BatchGetDeploymentInstancesOutput extends StObject {
   
   /**
     * Information about errors that might have occurred during the API call.
@@ -26,33 +27,21 @@ object BatchGetDeploymentInstancesOutput {
   }
   
   @scala.inline
-  implicit class BatchGetDeploymentInstancesOutputOps[Self <: BatchGetDeploymentInstancesOutput] (val x: Self) extends AnyVal {
+  implicit class BatchGetDeploymentInstancesOutputMutableBuilder[Self <: BatchGetDeploymentInstancesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstancesSummary(value: InstanceSummaryList): Self = StObject.set(x, "instancesSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setInstancesSummaryUndefined: Self = StObject.set(x, "instancesSummary", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
-    
-    @scala.inline
-    def setInstancesSummaryVarargs(value: InstanceSummary*): Self = this.set("instancesSummary", js.Array(value :_*))
-    
-    @scala.inline
-    def setInstancesSummary(value: InstanceSummaryList): Self = this.set("instancesSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstancesSummary: Self = this.set("instancesSummary", js.undefined)
+    def setInstancesSummaryVarargs(value: InstanceSummary*): Self = StObject.set(x, "instancesSummary", js.Array(value :_*))
   }
 }

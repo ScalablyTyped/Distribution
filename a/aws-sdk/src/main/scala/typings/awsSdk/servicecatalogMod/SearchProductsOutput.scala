@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchProductsOutput extends js.Object {
+trait SearchProductsOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
@@ -31,39 +32,27 @@ object SearchProductsOutput {
   }
   
   @scala.inline
-  implicit class SearchProductsOutputOps[Self <: SearchProductsOutput] (val x: Self) extends AnyVal {
+  implicit class SearchProductsOutputMutableBuilder[Self <: SearchProductsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductViewAggregations(value: ProductViewAggregations): Self = StObject.set(x, "ProductViewAggregations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    def setProductViewAggregationsUndefined: Self = StObject.set(x, "ProductViewAggregations", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    def setProductViewSummaries(value: ProductViewSummaries): Self = StObject.set(x, "ProductViewSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductViewAggregations(value: ProductViewAggregations): Self = this.set("ProductViewAggregations", value.asInstanceOf[js.Any])
+    def setProductViewSummariesUndefined: Self = StObject.set(x, "ProductViewSummaries", js.undefined)
     
     @scala.inline
-    def deleteProductViewAggregations: Self = this.set("ProductViewAggregations", js.undefined)
-    
-    @scala.inline
-    def setProductViewSummariesVarargs(value: ProductViewSummary*): Self = this.set("ProductViewSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductViewSummaries(value: ProductViewSummaries): Self = this.set("ProductViewSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductViewSummaries: Self = this.set("ProductViewSummaries", js.undefined)
+    def setProductViewSummariesVarargs(value: ProductViewSummary*): Self = StObject.set(x, "ProductViewSummaries", js.Array(value :_*))
   }
 }

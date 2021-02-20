@@ -1,5 +1,6 @@
 package typings.jsoneditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsoneditor.jsoneditorStrings.text
   - typings.jsoneditor.jsoneditorStrings.preview
 */
-trait JSONEditorMode extends js.Object
+trait JSONEditorMode extends StObject
 object JSONEditorMode {
   
   @scala.inline

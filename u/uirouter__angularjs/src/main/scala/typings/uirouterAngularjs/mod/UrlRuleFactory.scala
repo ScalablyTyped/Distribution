@@ -1,5 +1,6 @@
 package typings.uirouterAngularjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,9 @@ class UrlRuleFactory protected ()
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
 /* static members */
-@JSImport("@uirouter/angularjs", "UrlRuleFactory")
-@js.native
-object UrlRuleFactory extends js.Object {
+object UrlRuleFactory {
   
+  @JSImport("@uirouter/angularjs", "UrlRuleFactory.isUrlRule")
+  @js.native
   def isUrlRule(obj: js.Any): Boolean = js.native
 }

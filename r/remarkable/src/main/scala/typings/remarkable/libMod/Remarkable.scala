@@ -3,12 +3,13 @@ package typings.remarkable.libMod
 import typings.remarkable.anon.Ruler
 import typings.remarkable.anon.`0`
 import typings.remarkable.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Remarkable extends js.Object {
+trait Remarkable extends StObject {
   
   var block: `0` = js.native
   

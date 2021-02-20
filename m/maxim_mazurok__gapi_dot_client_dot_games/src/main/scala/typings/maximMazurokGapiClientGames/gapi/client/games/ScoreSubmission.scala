@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScoreSubmission extends js.Object {
+trait ScoreSubmission extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#scoreSubmission`. */
   var kind: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object ScoreSubmission {
   }
   
   @scala.inline
-  implicit class ScoreSubmissionOps[Self <: ScoreSubmission] (val x: Self) extends AnyVal {
+  implicit class ScoreSubmissionMutableBuilder[Self <: ScoreSubmission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeaderboardId(value: String): Self = this.set("leaderboardId", value.asInstanceOf[js.Any])
+    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLeaderboardId: Self = this.set("leaderboardId", js.undefined)
+    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
     @scala.inline
-    def setScore(value: String): Self = this.set("score", value.asInstanceOf[js.Any])
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
     @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScoreTag(value: String): Self = this.set("scoreTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScoreTag: Self = this.set("scoreTag", js.undefined)
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

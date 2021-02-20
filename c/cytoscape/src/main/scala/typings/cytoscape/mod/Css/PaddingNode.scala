@@ -1,6 +1,7 @@
 package typings.cytoscape.mod.Css
 
 import typings.cytoscape.mod.NodeSingular
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * or it can be used to add spacing between a compound node parent and its children.
   */
 @js.native
-trait PaddingNode extends js.Object {
+trait PaddingNode extends StObject {
   
   var `padding-bottom`: js.UndefOr[PropertyValueNode[String]] = js.native
   
@@ -31,54 +32,42 @@ object PaddingNode {
   }
   
   @scala.inline
-  implicit class PaddingNodeOps[Self <: PaddingNode] (val x: Self) extends AnyVal {
+  implicit class PaddingNodeMutableBuilder[Self <: PaddingNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setPadding-bottom`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setPadding-bottomFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-bottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setPadding-bottomUndefined`: Self = StObject.set(x, "padding-bottom", js.undefined)
     
     @scala.inline
-    def `setPadding-bottomFunction1`(value: NodeSingular => String): Self = this.set("padding-bottom", js.Any.fromFunction1(value))
+    def `setPadding-left`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-bottom`(value: PropertyValueNode[String]): Self = this.set("padding-bottom", value.asInstanceOf[js.Any])
+    def `setPadding-leftFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-left", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-bottom`: Self = this.set("padding-bottom", js.undefined)
+    def `setPadding-leftUndefined`: Self = StObject.set(x, "padding-left", js.undefined)
     
     @scala.inline
-    def `setPadding-leftFunction1`(value: NodeSingular => String): Self = this.set("padding-left", js.Any.fromFunction1(value))
+    def `setPadding-right`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-left`(value: PropertyValueNode[String]): Self = this.set("padding-left", value.asInstanceOf[js.Any])
+    def `setPadding-rightFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-right", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-left`: Self = this.set("padding-left", js.undefined)
+    def `setPadding-rightUndefined`: Self = StObject.set(x, "padding-right", js.undefined)
     
     @scala.inline
-    def `setPadding-rightFunction1`(value: NodeSingular => String): Self = this.set("padding-right", js.Any.fromFunction1(value))
+    def `setPadding-top`(value: PropertyValueNode[String]): Self = StObject.set(x, "padding-top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPadding-right`(value: PropertyValueNode[String]): Self = this.set("padding-right", value.asInstanceOf[js.Any])
+    def `setPadding-topFunction1`(value: NodeSingular => String): Self = StObject.set(x, "padding-top", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `deletePadding-right`: Self = this.set("padding-right", js.undefined)
-    
-    @scala.inline
-    def `setPadding-topFunction1`(value: NodeSingular => String): Self = this.set("padding-top", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def `setPadding-top`(value: PropertyValueNode[String]): Self = this.set("padding-top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deletePadding-top`: Self = this.set("padding-top", js.undefined)
+    def `setPadding-topUndefined`: Self = StObject.set(x, "padding-top", js.undefined)
   }
 }

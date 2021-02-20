@@ -9,16 +9,16 @@ import typings.std.FormData
 import typings.std.Response
 import typings.std.URL
 import typings.std.URLSearchParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("odata/dist/types/OHandler", JSImport.Namespace)
-@js.native
-object ohandlerMod extends js.Object {
+object ohandlerMod {
   
+  @JSImport("odata/dist/types/OHandler", "OHandler")
   @js.native
-  class OHandler protected () extends js.Object {
+  class OHandler protected () extends StObject {
     def this(config: OdataConfig) = this()
     
     /**

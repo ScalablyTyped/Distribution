@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageStatisticsSortBy extends js.Object {
+trait UsageStatisticsSortBy extends StObject {
   
   /**
     * The field to sort the results by.
@@ -26,30 +27,18 @@ object UsageStatisticsSortBy {
   }
   
   @scala.inline
-  implicit class UsageStatisticsSortByOps[Self <: UsageStatisticsSortBy] (val x: Self) extends AnyVal {
+  implicit class UsageStatisticsSortByMutableBuilder[Self <: UsageStatisticsSortBy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: UsageStatisticsSortKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: UsageStatisticsSortKey): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = this.set("orderBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
   }
 }

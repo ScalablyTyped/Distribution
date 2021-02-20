@@ -1,11 +1,12 @@
 package typings.dplayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DPlayerContextMenuItem extends js.Object {
+trait DPlayerContextMenuItem extends StObject {
   
   var click: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -22,33 +23,21 @@ object DPlayerContextMenuItem {
   }
   
   @scala.inline
-  implicit class DPlayerContextMenuItemOps[Self <: DPlayerContextMenuItem] (val x: Self) extends AnyVal {
+  implicit class DPlayerContextMenuItemMutableBuilder[Self <: DPlayerContextMenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setClick(value: () => Unit): Self = this.set("click", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
-    
-    @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends js.Object {
+trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObject {
   
   /** The accelerator card attached to each VM. */
   var accelerator: js.UndefOr[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig] = js.native
@@ -66,88 +67,76 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfigOps[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfigMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerator(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorUndefined: Self = StObject.set(x, "accelerator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerator(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig): Self = this.set("accelerator", value.asInstanceOf[js.Any])
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteAccelerator: Self = this.set("accelerator", js.undefined)
+    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
-    
-    @scala.inline
-    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def setMaxConcurrentActions(value: String): Self = this.set("maxConcurrentActions", value.asInstanceOf[js.Any])
+    def setMaxConcurrentActions(value: String): Self = StObject.set(x, "maxConcurrentActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxConcurrentActions: Self = this.set("maxConcurrentActions", js.undefined)
+    def setMaxConcurrentActionsUndefined: Self = StObject.set(x, "maxConcurrentActions", js.undefined)
     
     @scala.inline
-    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
     @scala.inline
-    def setNetworkAccess(value: String): Self = this.set("networkAccess", value.asInstanceOf[js.Any])
+    def setNetworkAccess(value: String): Self = StObject.set(x, "networkAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetworkAccess: Self = this.set("networkAccess", js.undefined)
+    def setNetworkAccessUndefined: Self = StObject.set(x, "networkAccess", js.undefined)
     
     @scala.inline
-    def setReserved(value: Boolean): Self = this.set("reserved", value.asInstanceOf[js.Any])
+    def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReserved: Self = this.set("reserved", js.undefined)
+    def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
     
     @scala.inline
-    def setSoleTenancy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig): Self = this.set("soleTenancy", value.asInstanceOf[js.Any])
+    def setSoleTenancy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig): Self = StObject.set(x, "soleTenancy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSoleTenancy: Self = this.set("soleTenancy", js.undefined)
+    def setSoleTenancyUndefined: Self = StObject.set(x, "soleTenancy", js.undefined)
     
     @scala.inline
-    def setVmImage(value: String): Self = this.set("vmImage", value.asInstanceOf[js.Any])
+    def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVmImage: Self = this.set("vmImage", js.undefined)
+    def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
   }
 }

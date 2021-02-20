@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceLocation extends js.Object {
+trait ResourceLocation extends StObject {
   
   /**
     * The locations of a resource after the execution of the operation. Requests to create or delete a location based resource must populate the 'current_locations' field and not the
@@ -28,36 +29,24 @@ object ResourceLocation {
   }
   
   @scala.inline
-  implicit class ResourceLocationOps[Self <: ResourceLocation] (val x: Self) extends AnyVal {
+  implicit class ResourceLocationMutableBuilder[Self <: ResourceLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentLocations(value: js.Array[String]): Self = StObject.set(x, "currentLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentLocationsUndefined: Self = StObject.set(x, "currentLocations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentLocationsVarargs(value: String*): Self = StObject.set(x, "currentLocations", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentLocationsVarargs(value: String*): Self = this.set("currentLocations", js.Array(value :_*))
+    def setOriginalLocations(value: js.Array[String]): Self = StObject.set(x, "originalLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLocations(value: js.Array[String]): Self = this.set("currentLocations", value.asInstanceOf[js.Any])
+    def setOriginalLocationsUndefined: Self = StObject.set(x, "originalLocations", js.undefined)
     
     @scala.inline
-    def deleteCurrentLocations: Self = this.set("currentLocations", js.undefined)
-    
-    @scala.inline
-    def setOriginalLocationsVarargs(value: String*): Self = this.set("originalLocations", js.Array(value :_*))
-    
-    @scala.inline
-    def setOriginalLocations(value: js.Array[String]): Self = this.set("originalLocations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalLocations: Self = this.set("originalLocations", js.undefined)
+    def setOriginalLocationsVarargs(value: String*): Self = StObject.set(x, "originalLocations", js.Array(value :_*))
   }
 }

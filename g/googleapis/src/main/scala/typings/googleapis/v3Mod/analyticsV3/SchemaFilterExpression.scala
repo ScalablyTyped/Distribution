@@ -1,5 +1,6 @@
 package typings.googleapis.v3Mod.analyticsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for an Analytics filter expression.
   */
 @js.native
-trait SchemaFilterExpression extends js.Object {
+trait SchemaFilterExpression extends StObject {
   
   /**
     * Determines if the filter is case sensitive.
@@ -83,54 +84,42 @@ object SchemaFilterExpression {
   }
   
   @scala.inline
-  implicit class SchemaFilterExpressionOps[Self <: SchemaFilterExpression] (val x: Self) extends AnyVal {
+  implicit class SchemaFilterExpressionMutableBuilder[Self <: SchemaFilterExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpressionValue(value: String): Self = StObject.set(x, "expressionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setExpressionValueUndefined: Self = StObject.set(x, "expressionValue", js.undefined)
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionValue(value: String): Self = this.set("expressionValue", value.asInstanceOf[js.Any])
+    def setFieldIndex(value: Double): Self = StObject.set(x, "fieldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpressionValue: Self = this.set("expressionValue", js.undefined)
+    def setFieldIndexUndefined: Self = StObject.set(x, "fieldIndex", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldIndex(value: Double): Self = this.set("fieldIndex", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFieldIndex: Self = this.set("fieldIndex", js.undefined)
+    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchType: Self = this.set("matchType", js.undefined)
+    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
   }
 }

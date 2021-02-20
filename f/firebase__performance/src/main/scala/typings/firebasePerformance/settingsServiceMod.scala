@@ -2,16 +2,16 @@ package typings.firebasePerformance
 
 import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseInstallationsTypes.mod.FirebaseInstallations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/performance/dist/src/services/settings_service", JSImport.Namespace)
-@js.native
-object settingsServiceMod extends js.Object {
+object settingsServiceMod {
   
+  @JSImport("@firebase/performance/dist/src/services/settings_service", "SettingsService")
   @js.native
-  class SettingsService () extends js.Object {
+  class SettingsService () extends StObject {
     
     var configTimeToLive: Double = js.native
     
@@ -50,9 +50,10 @@ object settingsServiceMod extends js.Object {
     var transportKey: String = js.native
   }
   /* static members */
-  @js.native
-  object SettingsService extends js.Object {
+  object SettingsService {
     
+    @JSImport("@firebase/performance/dist/src/services/settings_service", "SettingsService.getInstance")
+    @js.native
     def getInstance(): SettingsService = js.native
   }
 }

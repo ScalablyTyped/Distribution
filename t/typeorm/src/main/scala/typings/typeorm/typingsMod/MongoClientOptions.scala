@@ -1,12 +1,13 @@
 package typings.typeorm.typingsMod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MongoClientOptions extends js.Object {
+trait MongoClientOptions extends StObject {
   
   /**
     * A hash of options to set on the db object, see Db constructor.
@@ -62,72 +63,60 @@ object MongoClientOptions {
   }
   
   @scala.inline
-  implicit class MongoClientOptionsOps[Self <: MongoClientOptions] (val x: Self) extends AnyVal {
+  implicit class MongoClientOptionsMutableBuilder[Self <: MongoClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDb(value: DbCreateOptions): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMongos(value: MongosOptions): Self = StObject.set(x, "mongos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDb(value: DbCreateOptions): Self = this.set("db", value.asInstanceOf[js.Any])
+    def setMongosUndefined: Self = StObject.set(x, "mongos", js.undefined)
     
     @scala.inline
-    def deleteDb: Self = this.set("db", js.undefined)
+    def setPoolSize(value: scala.Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMongos(value: MongosOptions): Self = this.set("mongos", value.asInstanceOf[js.Any])
+    def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
     
     @scala.inline
-    def deleteMongos: Self = this.set("mongos", js.undefined)
+    def setPromiseLibrary(value: js.Object): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolSize(value: scala.Double): Self = this.set("poolSize", value.asInstanceOf[js.Any])
+    def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
     
     @scala.inline
-    def deletePoolSize: Self = this.set("poolSize", js.undefined)
+    def setReplSet(value: ReplSetOptions): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromiseLibrary(value: js.Object): Self = this.set("promiseLibrary", value.asInstanceOf[js.Any])
+    def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
     
     @scala.inline
-    def deletePromiseLibrary: Self = this.set("promiseLibrary", js.undefined)
+    def setServer(value: ServerOptions): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplSet(value: ReplSetOptions): Self = this.set("replSet", value.asInstanceOf[js.Any])
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def deleteReplSet: Self = this.set("replSet", js.undefined)
+    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: ServerOptions): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setSslCA(value: Buffer): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
+    def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
     
     @scala.inline
-    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setUri_decode_auth(value: Boolean): Self = StObject.set(x, "uri_decode_auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslCA(value: Buffer): Self = this.set("sslCA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslCA: Self = this.set("sslCA", js.undefined)
-    
-    @scala.inline
-    def setUri_decode_auth(value: Boolean): Self = this.set("uri_decode_auth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri_decode_auth: Self = this.set("uri_decode_auth", js.undefined)
+    def setUri_decode_authUndefined: Self = StObject.set(x, "uri_decode_auth", js.undefined)
   }
 }

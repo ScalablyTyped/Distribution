@@ -1,5 +1,6 @@
 package typings.bcp47Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("bcp-47-match", JSImport.Namespace)
 @js.native
-object bcp47MatchRequire extends js.Object
+object bcp47MatchRequire extends StObject

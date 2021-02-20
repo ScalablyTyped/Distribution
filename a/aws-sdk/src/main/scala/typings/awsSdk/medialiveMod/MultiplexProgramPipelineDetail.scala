@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexProgramPipelineDetail extends js.Object {
+trait MultiplexProgramPipelineDetail extends StObject {
   
   /**
     * Identifies the channel pipeline that is currently active for the pipeline (identified by PipelineId) in the multiplex.
@@ -26,30 +27,18 @@ object MultiplexProgramPipelineDetail {
   }
   
   @scala.inline
-  implicit class MultiplexProgramPipelineDetailOps[Self <: MultiplexProgramPipelineDetail] (val x: Self) extends AnyVal {
+  implicit class MultiplexProgramPipelineDetailMutableBuilder[Self <: MultiplexProgramPipelineDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveChannelPipeline(value: string): Self = StObject.set(x, "ActiveChannelPipeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveChannelPipelineUndefined: Self = StObject.set(x, "ActiveChannelPipeline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPipelineId(value: string): Self = StObject.set(x, "PipelineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveChannelPipeline(value: string): Self = this.set("ActiveChannelPipeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveChannelPipeline: Self = this.set("ActiveChannelPipeline", js.undefined)
-    
-    @scala.inline
-    def setPipelineId(value: string): Self = this.set("PipelineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePipelineId: Self = this.set("PipelineId", js.undefined)
+    def setPipelineIdUndefined: Self = StObject.set(x, "PipelineId", js.undefined)
   }
 }

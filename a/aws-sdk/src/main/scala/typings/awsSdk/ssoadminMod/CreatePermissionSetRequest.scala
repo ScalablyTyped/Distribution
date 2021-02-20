@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePermissionSetRequest extends js.Object {
+trait CreatePermissionSetRequest extends StObject {
   
   /**
     * The description of the PermissionSet.
@@ -46,51 +47,39 @@ object CreatePermissionSetRequest {
   }
   
   @scala.inline
-  implicit class CreatePermissionSetRequestOps[Self <: CreatePermissionSetRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePermissionSetRequestMutableBuilder[Self <: CreatePermissionSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: PermissionSetDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceArn(value: InstanceArn): Self = this.set("InstanceArn", value.asInstanceOf[js.Any])
+    def setName(value: PermissionSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: PermissionSetName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRelayState(value: RelayState): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: PermissionSetDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setSessionDuration(value: Duration): Self = StObject.set(x, "SessionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelayState(value: RelayState): Self = this.set("RelayState", value.asInstanceOf[js.Any])
+    def setSessionDurationUndefined: Self = StObject.set(x, "SessionDuration", js.undefined)
     
     @scala.inline
-    def deleteRelayState: Self = this.set("RelayState", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionDuration(value: Duration): Self = this.set("SessionDuration", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSessionDuration: Self = this.set("SessionDuration", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

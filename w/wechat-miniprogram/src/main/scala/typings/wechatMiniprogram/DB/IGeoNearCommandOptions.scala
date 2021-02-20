@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.DB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoNearCommandOptions extends js.Object {
+trait IGeoNearCommandOptions extends StObject {
   
   var geometry: GeoPoint = js.native
   
@@ -22,33 +23,21 @@ object IGeoNearCommandOptions {
   }
   
   @scala.inline
-  implicit class IGeoNearCommandOptionsOps[Self <: IGeoNearCommandOptions] (val x: Self) extends AnyVal {
+  implicit class IGeoNearCommandOptionsMutableBuilder[Self <: IGeoNearCommandOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometry(value: GeoPoint): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
     @scala.inline
-    def setGeometry(value: GeoPoint): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setMinDistance(value: Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
-    
-    @scala.inline
-    def setMinDistance(value: Double): Self = this.set("minDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinDistance: Self = this.set("minDistance", js.undefined)
+    def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
   }
 }

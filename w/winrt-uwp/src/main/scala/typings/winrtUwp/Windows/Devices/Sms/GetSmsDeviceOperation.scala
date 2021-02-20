@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrtUwp.Windows.Foundation.AsyncStatus
 import typings.winrtUwp.Windows.Foundation.IAsyncOperation
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves an SmsDevice object asynchronously. */
 @js.native
-trait GetSmsDeviceOperation extends js.Object {
+trait GetSmsDeviceOperation extends StObject {
   
   /** Cancels the asynchronous SmsDevice object retrieval. */
   def cancel(): Unit = js.native

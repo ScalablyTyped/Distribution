@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceTableFeatureDetails extends js.Object {
+trait SourceTableFeatureDetails extends StObject {
   
   /**
     * Represents the GSI properties for the table when the backup was created. It includes the IndexName, KeySchema, Projection, and ProvisionedThroughput for the GSIs on the table at the time of backup. 
@@ -41,54 +42,42 @@ object SourceTableFeatureDetails {
   }
   
   @scala.inline
-  implicit class SourceTableFeatureDetailsOps[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
+  implicit class SourceTableFeatureDetailsMutableBuilder[Self <: SourceTableFeatureDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexInfo*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    def setLocalSecondaryIndexes(value: LocalSecondaryIndexes): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexes): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexInfo*): Self = this.set("LocalSecondaryIndexes", js.Array(value :_*))
+    def setSSEDescription(value: SSEDescription): Self = StObject.set(x, "SSEDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSecondaryIndexes(value: LocalSecondaryIndexes): Self = this.set("LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setSSEDescriptionUndefined: Self = StObject.set(x, "SSEDescription", js.undefined)
     
     @scala.inline
-    def deleteLocalSecondaryIndexes: Self = this.set("LocalSecondaryIndexes", js.undefined)
+    def setStreamDescription(value: StreamSpecification): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSEDescription(value: SSEDescription): Self = this.set("SSEDescription", value.asInstanceOf[js.Any])
+    def setStreamDescriptionUndefined: Self = StObject.set(x, "StreamDescription", js.undefined)
     
     @scala.inline
-    def deleteSSEDescription: Self = this.set("SSEDescription", js.undefined)
+    def setTimeToLiveDescription(value: TimeToLiveDescription): Self = StObject.set(x, "TimeToLiveDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamDescription(value: StreamSpecification): Self = this.set("StreamDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamDescription: Self = this.set("StreamDescription", js.undefined)
-    
-    @scala.inline
-    def setTimeToLiveDescription(value: TimeToLiveDescription): Self = this.set("TimeToLiveDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToLiveDescription: Self = this.set("TimeToLiveDescription", js.undefined)
+    def setTimeToLiveDescriptionUndefined: Self = StObject.set(x, "TimeToLiveDescription", js.undefined)
   }
 }

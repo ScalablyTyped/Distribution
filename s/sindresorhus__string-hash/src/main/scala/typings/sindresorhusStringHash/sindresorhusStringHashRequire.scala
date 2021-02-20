@@ -1,5 +1,6 @@
 package typings.sindresorhusStringHash
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@sindresorhus/string-hash", JSImport.Namespace)
 @js.native
-object sindresorhusStringHashRequire extends js.Object
+object sindresorhusStringHashRequire extends StObject

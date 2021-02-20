@@ -6,14 +6,14 @@ import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/checkbox/checkbox", JSImport.Namespace)
-@js.native
-object checkboxMod extends js.Object {
+object checkboxMod {
   
+  @JSImport("@ionic/core/dist/types/components/checkbox/checkbox", "Checkbox")
   @js.native
   class Checkbox () extends ComponentInterface {
     

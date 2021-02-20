@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISVGElementInstance extends js.Object {
+trait ISVGElementInstance extends StObject {
   
   @JSName("MSHTML.ISVGElementInstance_typekey")
   var MSHTMLDotISVGElementInstance_typekey: ISVGElementInstance = js.native
@@ -46,45 +47,33 @@ object ISVGElementInstance {
   }
   
   @scala.inline
-  implicit class ISVGElementInstanceOps[Self <: ISVGElementInstance] (val x: Self) extends AnyVal {
+  implicit class ISVGElementInstanceMutableBuilder[Self <: ISVGElementInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildNodes(value: ISVGElementInstanceList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrespondingElement(value: ISVGElement): Self = StObject.set(x, "correspondingElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorrespondingUseElement(value: ISVGUseElement): Self = StObject.set(x, "correspondingUseElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotISVGElementInstance_typekey(value: ISVGElementInstance): Self = this.set("MSHTML.ISVGElementInstance_typekey", value.asInstanceOf[js.Any])
+    def setFirstChild(value: ISVGElementInstance): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildNodes(value: ISVGElementInstanceList): Self = this.set("childNodes", value.asInstanceOf[js.Any])
+    def setLastChild(value: ISVGElementInstance): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrespondingElement(value: ISVGElement): Self = this.set("correspondingElement", value.asInstanceOf[js.Any])
+    def setMSHTMLDotISVGElementInstance_typekey(value: ISVGElementInstance): Self = StObject.set(x, "MSHTML.ISVGElementInstance_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrespondingUseElement(value: ISVGUseElement): Self = this.set("correspondingUseElement", value.asInstanceOf[js.Any])
+    def setNextSibling(value: ISVGElementInstance): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstChild(value: ISVGElementInstance): Self = this.set("firstChild", value.asInstanceOf[js.Any])
+    def setParentNode(value: ISVGElementInstance): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastChild(value: ISVGElementInstance): Self = this.set("lastChild", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextSibling(value: ISVGElementInstance): Self = this.set("nextSibling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentNode(value: ISVGElementInstance): Self = this.set("parentNode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousSibling(value: ISVGElementInstance): Self = this.set("previousSibling", value.asInstanceOf[js.Any])
+    def setPreviousSibling(value: ISVGElementInstance): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
   }
 }

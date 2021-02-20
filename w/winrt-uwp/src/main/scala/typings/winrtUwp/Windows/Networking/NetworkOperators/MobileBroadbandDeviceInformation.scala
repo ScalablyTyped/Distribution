@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Devices.Sms.CellularClass
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the current state of the mobile broadband network device for the account. */
 @js.native
-trait MobileBroadbandDeviceInformation extends js.Object {
+trait MobileBroadbandDeviceInformation extends StObject {
   
   /** Gets the cellular technology used by the mobile broadband network device. */
   var cellularClass: CellularClass = js.native
@@ -88,69 +89,57 @@ object MobileBroadbandDeviceInformation {
   }
   
   @scala.inline
-  implicit class MobileBroadbandDeviceInformationOps[Self <: MobileBroadbandDeviceInformation] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandDeviceInformationMutableBuilder[Self <: MobileBroadbandDeviceInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRadioState(value: MobileBroadbandRadioState): Self = StObject.set(x, "currentRadioState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomDataClass(value: String): Self = StObject.set(x, "customDataClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    def setDataClasses(value: DataClasses): Self = StObject.set(x, "dataClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRadioState(value: MobileBroadbandRadioState): Self = this.set("currentRadioState", value.asInstanceOf[js.Any])
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomDataClass(value: String): Self = this.set("customDataClass", value.asInstanceOf[js.Any])
+    def setDeviceType(value: MobileBroadbandDeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataClasses(value: DataClasses): Self = this.set("dataClasses", value.asInstanceOf[js.Any])
+    def setFirmwareInformation(value: String): Self = StObject.set(x, "firmwareInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceType(value: MobileBroadbandDeviceType): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    def setMobileEquipmentId(value: String): Self = StObject.set(x, "mobileEquipmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirmwareInformation(value: String): Self = this.set("firmwareInformation", value.asInstanceOf[js.Any])
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setNetworkDeviceStatus(value: NetworkDeviceStatus): Self = StObject.set(x, "networkDeviceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileEquipmentId(value: String): Self = this.set("mobileEquipmentId", value.asInstanceOf[js.Any])
+    def setPinManager(value: MobileBroadbandPinManager): Self = StObject.set(x, "pinManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkDeviceStatus(value: NetworkDeviceStatus): Self = this.set("networkDeviceStatus", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinManager(value: MobileBroadbandPinManager): Self = this.set("pinManager", value.asInstanceOf[js.Any])
+    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setSubscriberId(value: String): Self = StObject.set(x, "subscriberId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSimIccId(value: String): Self = this.set("simIccId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriberId(value: String): Self = this.set("subscriberId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTelephoneNumbers(value: IVectorView[String]): Self = this.set("telephoneNumbers", value.asInstanceOf[js.Any])
+    def setTelephoneNumbers(value: IVectorView[String]): Self = StObject.set(x, "telephoneNumbers", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDiffNavigatorOptions extends js.Object {
+trait IDiffNavigatorOptions extends StObject {
   
   val alwaysRevealFirst: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IDiffNavigatorOptions {
   }
   
   @scala.inline
-  implicit class IDiffNavigatorOptionsOps[Self <: IDiffNavigatorOptions] (val x: Self) extends AnyVal {
+  implicit class IDiffNavigatorOptionsMutableBuilder[Self <: IDiffNavigatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysRevealFirst(value: Boolean): Self = StObject.set(x, "alwaysRevealFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysRevealFirstUndefined: Self = StObject.set(x, "alwaysRevealFirst", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowsCaret(value: Boolean): Self = StObject.set(x, "followsCaret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysRevealFirst(value: Boolean): Self = this.set("alwaysRevealFirst", value.asInstanceOf[js.Any])
+    def setFollowsCaretUndefined: Self = StObject.set(x, "followsCaret", js.undefined)
     
     @scala.inline
-    def deleteAlwaysRevealFirst: Self = this.set("alwaysRevealFirst", js.undefined)
+    def setIgnoreCharChanges(value: Boolean): Self = StObject.set(x, "ignoreCharChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowsCaret(value: Boolean): Self = this.set("followsCaret", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFollowsCaret: Self = this.set("followsCaret", js.undefined)
-    
-    @scala.inline
-    def setIgnoreCharChanges(value: Boolean): Self = this.set("ignoreCharChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreCharChanges: Self = this.set("ignoreCharChanges", js.undefined)
+    def setIgnoreCharChangesUndefined: Self = StObject.set(x, "ignoreCharChanges", js.undefined)
   }
 }

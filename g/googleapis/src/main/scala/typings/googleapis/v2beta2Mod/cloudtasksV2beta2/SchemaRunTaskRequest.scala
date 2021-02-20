@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for forcing a task to run now using RunTask.
   */
 @js.native
-trait SchemaRunTaskRequest extends js.Object {
+trait SchemaRunTaskRequest extends StObject {
   
   /**
     * The response_view specifies which subset of the Task will be returned. By
@@ -30,24 +31,12 @@ object SchemaRunTaskRequest {
   }
   
   @scala.inline
-  implicit class SchemaRunTaskRequestOps[Self <: SchemaRunTaskRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRunTaskRequestMutableBuilder[Self <: SchemaRunTaskRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponseView(value: String): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseView: Self = this.set("responseView", js.undefined)
+    def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
   }
 }

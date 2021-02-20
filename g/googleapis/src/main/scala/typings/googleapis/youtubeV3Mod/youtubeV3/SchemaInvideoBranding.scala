@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInvideoBranding extends js.Object {
+trait SchemaInvideoBranding extends StObject {
   
   var imageBytes: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object SchemaInvideoBranding {
   }
   
   @scala.inline
-  implicit class SchemaInvideoBrandingOps[Self <: SchemaInvideoBranding] (val x: Self) extends AnyVal {
+  implicit class SchemaInvideoBrandingMutableBuilder[Self <: SchemaInvideoBranding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImageBytes(value: String): Self = StObject.set(x, "imageBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImageBytesUndefined: Self = StObject.set(x, "imageBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageBytes(value: String): Self = this.set("imageBytes", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageBytes: Self = this.set("imageBytes", js.undefined)
+    def setPosition(value: SchemaInvideoPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setTargetChannelId(value: String): Self = StObject.set(x, "targetChannelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: SchemaInvideoPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setTargetChannelIdUndefined: Self = StObject.set(x, "targetChannelId", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTiming(value: SchemaInvideoTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetChannelId(value: String): Self = this.set("targetChannelId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetChannelId: Self = this.set("targetChannelId", js.undefined)
-    
-    @scala.inline
-    def setTiming(value: SchemaInvideoTiming): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTiming: Self = this.set("timing", js.undefined)
+    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectColumnData extends js.Object {
+trait ObjectColumnData extends StObject {
   
   @JSName("_")
   var _underscore: String | Double | FunctionColumnData = js.native
@@ -28,45 +29,33 @@ object ObjectColumnData {
   }
   
   @scala.inline
-  implicit class ObjectColumnDataOps[Self <: ObjectColumnData] (val x: Self) extends AnyVal {
+  implicit class ObjectColumnDataMutableBuilder[Self <: ObjectColumnData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay(value: String | Double | FunctionColumnData): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilter(value: String | Double | FunctionColumnData): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_underscore(value: String | Double | FunctionColumnData): Self = this.set("_", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setDisplay(value: String | Double | FunctionColumnData): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setSort(value: String | Double | FunctionColumnData): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setFilter(value: String | Double | FunctionColumnData): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setType(value: String | Double | FunctionColumnData): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setSort(value: String | Double | FunctionColumnData): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setType(value: String | Double | FunctionColumnData): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def set_underscore(value: String | Double | FunctionColumnData): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }
 }

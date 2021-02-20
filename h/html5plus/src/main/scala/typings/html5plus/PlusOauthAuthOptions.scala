@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
 @js.native
-trait PlusOauthAuthOptions extends js.Object {
+trait PlusOauthAuthOptions extends StObject {
   
   /**
     * 登录授权认证服务平台申请的appid
@@ -76,54 +77,42 @@ object PlusOauthAuthOptions {
   }
   
   @scala.inline
-  implicit class PlusOauthAuthOptionsOps[Self <: PlusOauthAuthOptions] (val x: Self) extends AnyVal {
+  implicit class PlusOauthAuthOptionsMutableBuilder[Self <: PlusOauthAuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppkey(value: String): Self = StObject.set(x, "appkey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppid(value: String): Self = this.set("appid", value.asInstanceOf[js.Any])
+    def setAppkeyUndefined: Self = StObject.set(x, "appkey", js.undefined)
     
     @scala.inline
-    def deleteAppid: Self = this.set("appid", js.undefined)
+    def setAppsecret(value: String): Self = StObject.set(x, "appsecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppkey(value: String): Self = this.set("appkey", value.asInstanceOf[js.Any])
+    def setAppsecretUndefined: Self = StObject.set(x, "appsecret", js.undefined)
     
     @scala.inline
-    def deleteAppkey: Self = this.set("appkey", js.undefined)
+    def setRedirect_url(value: String): Self = StObject.set(x, "redirect_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppsecret(value: String): Self = this.set("appsecret", value.asInstanceOf[js.Any])
+    def setRedirect_urlUndefined: Self = StObject.set(x, "redirect_url", js.undefined)
     
     @scala.inline
-    def deleteAppsecret: Self = this.set("appsecret", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirect_url(value: String): Self = this.set("redirect_url", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteRedirect_url: Self = this.set("redirect_url", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

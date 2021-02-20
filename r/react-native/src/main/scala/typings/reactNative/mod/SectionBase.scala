@@ -2,12 +2,13 @@ package typings.reactNative.mod
 
 import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SectionBase[ItemT, SectionT] extends js.Object {
+trait SectionBase[ItemT, SectionT] extends StObject {
   
   var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.native
   
@@ -28,51 +29,39 @@ object SectionBase {
   }
   
   @scala.inline
-  implicit class SectionBaseOps[Self <: SectionBase[_, _], ItemT, SectionT] (val x: Self with (SectionBase[ItemT, SectionT])) extends AnyVal {
+  implicit class SectionBaseMutableBuilder[Self <: SectionBase[_, _], ItemT, SectionT] (val x: Self with (SectionBase[ItemT, SectionT])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: ItemT*): Self = this.set("data", js.Array(value :_*))
+    def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
     @scala.inline
-    def setData(value: js.Array[ItemT]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
     
     @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[_]): Self = this.set("ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemSeparatorComponent: Self = this.set("ItemSeparatorComponent", js.undefined)
+    def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemSeparatorComponentNull: Self = this.set("ItemSeparatorComponent", null)
+    def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = this.set("keyExtractor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteKeyExtractor: Self = this.set("keyExtractor", js.undefined)
-    
-    @scala.inline
-    def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = this.set("renderItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRenderItem: Self = this.set("renderItem", js.undefined)
+    def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
   }
 }

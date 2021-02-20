@@ -1,12 +1,13 @@
 package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationBehaviorOptions extends js.Object {
+trait NavigationBehaviorOptions extends StObject {
   
   /**
     * When true, navigates while replacing the current state in history.
@@ -54,36 +55,24 @@ object NavigationBehaviorOptions {
   }
   
   @scala.inline
-  implicit class NavigationBehaviorOptionsOps[Self <: NavigationBehaviorOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationBehaviorOptionsMutableBuilder[Self <: NavigationBehaviorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplaceUrl(value: Boolean): Self = StObject.set(x, "replaceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplaceUrlUndefined: Self = StObject.set(x, "replaceUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkipLocationChange(value: Boolean): Self = StObject.set(x, "skipLocationChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceUrl(value: Boolean): Self = this.set("replaceUrl", value.asInstanceOf[js.Any])
+    def setSkipLocationChangeUndefined: Self = StObject.set(x, "skipLocationChange", js.undefined)
     
     @scala.inline
-    def deleteReplaceUrl: Self = this.set("replaceUrl", js.undefined)
+    def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipLocationChange(value: Boolean): Self = this.set("skipLocationChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipLocationChange: Self = this.set("skipLocationChange", js.undefined)
-    
-    @scala.inline
-    def setState(value: StringDictionary[js.Any]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

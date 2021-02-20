@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DockerVolumeConfiguration extends js.Object {
+trait DockerVolumeConfiguration extends StObject {
   
   /**
     * If this value is true, the Docker volume is created if it does not already exist.  This field is only used if the scope is shared. 
@@ -41,48 +42,36 @@ object DockerVolumeConfiguration {
   }
   
   @scala.inline
-  implicit class DockerVolumeConfigurationOps[Self <: DockerVolumeConfiguration] (val x: Self) extends AnyVal {
+  implicit class DockerVolumeConfigurationMutableBuilder[Self <: DockerVolumeConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoprovision(value: BoxedBoolean): Self = StObject.set(x, "autoprovision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoprovisionUndefined: Self = StObject.set(x, "autoprovision", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoprovision(value: BoxedBoolean): Self = this.set("autoprovision", value.asInstanceOf[js.Any])
+    def setDriverOpts(value: StringMap): Self = StObject.set(x, "driverOpts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoprovision: Self = this.set("autoprovision", js.undefined)
+    def setDriverOptsUndefined: Self = StObject.set(x, "driverOpts", js.undefined)
     
     @scala.inline
-    def setDriver(value: String): Self = this.set("driver", value.asInstanceOf[js.Any])
+    def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
     
     @scala.inline
-    def deleteDriver: Self = this.set("driver", js.undefined)
+    def setLabels(value: StringMap): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriverOpts(value: StringMap): Self = this.set("driverOpts", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteDriverOpts: Self = this.set("driverOpts", js.undefined)
+    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringMap): Self = this.set("labels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
-    
-    @scala.inline
-    def setScope(value: Scope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

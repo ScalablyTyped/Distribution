@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Word. */
 @js.native
-trait Word extends js.Object {
+trait Word extends StObject {
   
   /** A sum of the number of times the word is found across all corpora. For example, if the word occurs five times in one corpus and seven times in another, its count is `12`. If you add a custom word to a model before it is added by any corpora, the count begins at `1`; if the word is added from a corpus first and later modified, the count reflects only the number of times it is found in corpora. */
   var count: Double = js.native
@@ -41,48 +42,36 @@ object Word {
   }
   
   @scala.inline
-  implicit class WordOps[Self <: Word] (val x: Self) extends AnyVal {
+  implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: js.Array[WordError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setDisplay_as(value: String): Self = this.set("display_as", value.asInstanceOf[js.Any])
+    def setErrorVarargs(value: WordError*): Self = StObject.set(x, "error", js.Array(value :_*))
     
     @scala.inline
-    def setSounds_likeVarargs(value: String*): Self = this.set("sounds_like", js.Array(value :_*))
+    def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSounds_like(value: js.Array[String]): Self = this.set("sounds_like", value.asInstanceOf[js.Any])
+    def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
     
     @scala.inline
-    def setSourceVarargs(value: String*): Self = this.set("source", js.Array(value :_*))
+    def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: js.Array[String]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
     
     @scala.inline
-    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorVarargs(value: WordError*): Self = this.set("error", js.Array(value :_*))
-    
-    @scala.inline
-    def setError(value: js.Array[WordError]): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

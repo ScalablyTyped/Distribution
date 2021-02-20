@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateTime extends js.Object {
+trait DateTime extends StObject {
   
   /** Required. Day of month. Must be from 1 to 31 and valid for the year and month. */
   var day: js.UndefOr[Double] = js.native
@@ -43,72 +44,60 @@ object DateTime {
   }
   
   @scala.inline
-  implicit class DateTimeOps[Self <: DateTime] (val x: Self) extends AnyVal {
+  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: Double): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: Double): Self = this.set("hours", value.asInstanceOf[js.Any])
+    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
     @scala.inline
-    def deleteHours: Self = this.set("hours", js.undefined)
+    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinutes(value: Double): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: Double): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
     @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
+    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
+    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     
     @scala.inline
-    def deleteNanos: Self = this.set("nanos", js.undefined)
+    def setTimeZone(value: TimeZone): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    def setUtcOffset(value: String): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZone(value: TimeZone): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
     
     @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUtcOffset(value: String): Self = this.set("utcOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUtcOffset: Self = this.set("utcOffset", js.undefined)
-    
-    @scala.inline
-    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

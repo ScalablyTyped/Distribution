@@ -15,12 +15,13 @@ import typings.intlTelInput.mod.intlTelInputUtils.numberFormat
 import typings.intlTelInput.mod.intlTelInputUtils.numberType
 import typings.intlTelInput.mod.intlTelInputUtils.placeholderNumberType
 import typings.intlTelInput.mod.intlTelInputUtils.validationError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryPlugin extends js.Object {
+trait JQueryPlugin extends StObject {
   
   /**
     * initialise the plugin with optional options.

@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object GEGlobe {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getFeatures: () => GEFeatureContainer,
     getGroundAltitude: (Double, Double) => Double,
     getId: () => String,
@@ -39,29 +40,18 @@ object GEGlobe {
     mouseup: KmlMouseEvent => Unit,
     release: () => Unit
   ): GEGlobe = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getFeatures = js.Any.fromFunction0(getFeatures), getGroundAltitude = js.Any.fromFunction2(getGroundAltitude), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getFeatures = js.Any.fromFunction0(getFeatures), getGroundAltitude = js.Any.fromFunction2(getGroundAltitude), getId = js.Any.fromFunction0(getId), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[GEGlobe]
   }
   
   @scala.inline
-  implicit class GEGlobeOps[Self <: GEGlobe] (val x: Self) extends AnyVal {
+  implicit class GEGlobeMutableBuilder[Self <: GEGlobe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFeatures(value: () => GEFeatureContainer): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetFeatures(value: () => GEFeatureContainer): Self = this.set("getFeatures", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetGroundAltitude(value: (Double, Double) => Double): Self = this.set("getGroundAltitude", js.Any.fromFunction2(value))
+    def setGetGroundAltitude(value: (Double, Double) => Double): Self = StObject.set(x, "getGroundAltitude", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chunk extends js.Object {
+trait Chunk extends StObject {
   
   def chunk(arr: js.Array[js.Any], chunkSize: Double, cache: js.Array[js.Any]): js.Array[js.Any] = js.native
   

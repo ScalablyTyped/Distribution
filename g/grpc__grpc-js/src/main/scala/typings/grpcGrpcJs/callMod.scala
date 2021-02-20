@@ -32,19 +32,262 @@ import typings.node.streamMod.Writable
 import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@grpc/grpc-js/build/src/call", JSImport.Namespace)
-@js.native
-object callMod extends js.Object {
+object callMod {
   
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.grpcGrpcJs.callMod.ClientDuplexStream because var conflicts: _writev, destroyed, readable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status, deserialize */ @JSImport("@grpc/grpc-js/build/src/call", "ClientDuplexStreamImpl")
+  @js.native
+  class ClientDuplexStreamImpl[RequestType, ResponseType] protected () extends Duplex {
+    def this(
+      serialize: js.Function1[/* value */ RequestType, Buffer],
+      deserialize: js.Function1[/* chunk */ Buffer, ResponseType]
+    ) = this()
+    
+    def _final(cb: js.Function): Unit = js.native
+    
+    def _write(chunk: RequestType, encoding: String, cb: WriteCallback): Unit = js.native
+    
+    @JSName("addListener")
+    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
+    
+    def cancel(): Unit = js.native
+    
+    def deserialize(chunk: Buffer): ResponseType = js.native
+    
+    @JSName("emit")
+    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
+    @JSName("emit")
+    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
+    
+    def getPeer(): String = js.native
+    
+    @JSName("on")
+    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("on")
+    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("once")
+    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("once")
+    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("prependListener")
+    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("prependOnceListener")
+    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("removeListener")
+    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    def serialize(value: RequestType): Buffer = js.native
+  }
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.grpcGrpcJs.callMod.ClientReadableStream because var conflicts: destroyed, readable. Inlined deserialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @JSImport("@grpc/grpc-js/build/src/call", "ClientReadableStreamImpl")
+  @js.native
+  class ClientReadableStreamImpl[ResponseType] protected () extends Readable {
+    def this(deserialize: js.Function1[/* chunk */ Buffer, ResponseType]) = this()
+    
+    @JSName("addListener")
+    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
+    
+    def cancel(): Unit = js.native
+    
+    def deserialize(chunk: Buffer): ResponseType = js.native
+    
+    @JSName("emit")
+    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
+    @JSName("emit")
+    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
+    
+    def getPeer(): String = js.native
+    
+    @JSName("on")
+    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("on")
+    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("once")
+    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("once")
+    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("prependListener")
+    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("prependOnceListener")
+    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("removeListener")
+    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+  }
+  
+  @JSImport("@grpc/grpc-js/build/src/call", "ClientUnaryCallImpl")
+  @js.native
+  class ClientUnaryCallImpl ()
+    extends EventEmitter
+       with ClientUnaryCall {
+    
+    /* InferMemberOverrides */
+    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def emit(event: String, args: js.Any*): Boolean = js.native
+    /* InferMemberOverrides */
+    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+    
+    /* InferMemberOverrides */
+    override def eventNames(): js.Array[String | js.Symbol] = js.native
+    
+    /* InferMemberOverrides */
+    override def getMaxListeners(): Double = js.native
+    
+    /* InferMemberOverrides */
+    override def listenerCount(event: String): Double = js.native
+    /* InferMemberOverrides */
+    override def listenerCount(event: js.Symbol): Double = js.native
+    
+    /* InferMemberOverrides */
+    override def listeners(event: String): js.Array[js.Function] = js.native
+    /* InferMemberOverrides */
+    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+    
+    /* InferMemberOverrides */
+    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    // Added in Node 6...
+    /* InferMemberOverrides */
+    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def rawListeners(event: String): js.Array[js.Function] = js.native
+    /* InferMemberOverrides */
+    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
+    
+    /* InferMemberOverrides */
+    override def removeAllListeners(): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeAllListeners(event: String): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeAllListeners(event: js.Symbol): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* InferMemberOverrides */
+    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    
+    /* InferMemberOverrides */
+    override def setMaxListeners(n: Double): this.type = js.native
+  }
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.grpcGrpcJs.callMod.ClientWritableStream because var conflicts: _writev, destroyed, writable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @JSImport("@grpc/grpc-js/build/src/call", "ClientWritableStreamImpl")
+  @js.native
+  class ClientWritableStreamImpl[RequestType] protected () extends Writable {
+    def this(serialize: js.Function1[/* value */ RequestType, Buffer]) = this()
+    
+    def _final(cb: js.Function): Unit = js.native
+    
+    def _write(chunk: RequestType, encoding: String, cb: WriteCallback): Unit = js.native
+    
+    @JSName("addListener")
+    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("addListener")
+    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
+    
+    def cancel(): Unit = js.native
+    
+    @JSName("emit")
+    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
+    @JSName("emit")
+    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
+    
+    def getPeer(): String = js.native
+    
+    @JSName("on")
+    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("on")
+    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("once")
+    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("once")
+    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("prependListener")
+    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("prependListener")
+    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("prependOnceListener")
+    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("prependOnceListener")
+    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    @JSName("removeListener")
+    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
+    @JSName("removeListener")
+    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    
+    def serialize(value: RequestType): Buffer = js.native
+  }
+  
+  @JSImport("@grpc/grpc-js/build/src/call", "callErrorFromStatus")
+  @js.native
   def callErrorFromStatus(status: StatusObject): ServiceError = js.native
   
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/call.ClientWritableStream<RequestType> & @grpc/grpc-js.@grpc/grpc-js/build/src/call.ClientReadableStream<ResponseType> */
   @js.native
-  trait ClientDuplexStream[RequestType, ResponseType] extends js.Object {
+  trait ClientDuplexStream[RequestType, ResponseType] extends StObject {
     
     def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
@@ -453,67 +696,9 @@ object callMod extends js.Object {
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.grpcGrpcJs.callMod.ClientDuplexStream because var conflicts: _writev, destroyed, readable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status, deserialize */ @js.native
-  class ClientDuplexStreamImpl[RequestType, ResponseType] protected () extends Duplex {
-    def this(
-      serialize: js.Function1[/* value */ RequestType, Buffer],
-      deserialize: js.Function1[/* chunk */ Buffer, ResponseType]
-    ) = this()
-    
-    def _final(cb: js.Function): Unit = js.native
-    
-    def _write(chunk: RequestType, encoding: String, cb: WriteCallback): Unit = js.native
-    
-    @JSName("addListener")
-    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    var call: js.UndefOr[InterceptingCallInterface] = js.native
-    
-    def cancel(): Unit = js.native
-    
-    def deserialize(chunk: Buffer): ResponseType = js.native
-    
-    @JSName("emit")
-    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
-    @JSName("emit")
-    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
-    
-    def getPeer(): String = js.native
-    
-    @JSName("on")
-    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("on")
-    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("once")
-    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("once")
-    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("prependListener")
-    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("prependOnceListener")
-    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("removeListener")
-    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def serialize(value: RequestType): Buffer = js.native
-  }
-  
   /* Inlined {deserialize (chunk : node.Buffer): ResponseType} & @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectReadable<ResponseType> */
   @js.native
-  trait ClientReadableStream[ResponseType] extends js.Object {
+  trait ClientReadableStream[ResponseType] extends StObject {
     
     def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
@@ -772,58 +957,9 @@ object callMod extends js.Object {
     def wrap(oldStream: ReadableStream): this.type = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.grpcGrpcJs.callMod.ClientReadableStream because var conflicts: destroyed, readable. Inlined deserialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @js.native
-  class ClientReadableStreamImpl[ResponseType] protected () extends Readable {
-    def this(deserialize: js.Function1[/* chunk */ Buffer, ResponseType]) = this()
-    
-    @JSName("addListener")
-    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    var call: js.UndefOr[InterceptingCallInterface] = js.native
-    
-    def cancel(): Unit = js.native
-    
-    def deserialize(chunk: Buffer): ResponseType = js.native
-    
-    @JSName("emit")
-    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
-    @JSName("emit")
-    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
-    
-    def getPeer(): String = js.native
-    
-    @JSName("on")
-    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("on")
-    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("once")
-    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("once")
-    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("prependListener")
-    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("prependOnceListener")
-    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("removeListener")
-    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-  }
-  
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall */
   @js.native
-  trait ClientUnaryCall extends js.Object {
+  trait ClientUnaryCall extends StObject {
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -904,87 +1040,9 @@ object callMod extends js.Object {
     def setMaxListeners(n: Double): this.type = js.native
   }
   
-  @js.native
-  class ClientUnaryCallImpl ()
-    extends EventEmitter
-       with ClientUnaryCall {
-    
-    /* InferMemberOverrides */
-    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def emit(event: String, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    
-    /* InferMemberOverrides */
-    override def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    /* InferMemberOverrides */
-    override def getMaxListeners(): Double = js.native
-    
-    /* InferMemberOverrides */
-    override def listenerCount(event: String): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(event: js.Symbol): Double = js.native
-    
-    /* InferMemberOverrides */
-    override def listeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    /* InferMemberOverrides */
-    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    // Added in Node 6...
-    /* InferMemberOverrides */
-    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def rawListeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    /* InferMemberOverrides */
-    override def removeAllListeners(): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: String): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def setMaxListeners(n: Double): this.type = js.native
-  }
-  
   /* Inlined {serialize (value : RequestType): node.Buffer} & @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<RequestType> */
   @js.native
-  trait ClientWritableStream[RequestType] extends js.Object {
+  trait ClientWritableStream[RequestType] extends StObject {
     
     def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
@@ -1265,62 +1323,11 @@ object callMod extends js.Object {
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.grpcGrpcJs.callMod.ClientWritableStream because var conflicts: _writev, destroyed, writable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @js.native
-  class ClientWritableStreamImpl[RequestType] protected () extends Writable {
-    def this(serialize: js.Function1[/* value */ RequestType, Buffer]) = this()
-    
-    def _final(cb: js.Function): Unit = js.native
-    
-    def _write(chunk: RequestType, encoding: String, cb: WriteCallback): Unit = js.native
-    
-    @JSName("addListener")
-    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    var call: js.UndefOr[InterceptingCallInterface] = js.native
-    
-    def cancel(): Unit = js.native
-    
-    @JSName("emit")
-    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
-    @JSName("emit")
-    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
-    
-    def getPeer(): String = js.native
-    
-    @JSName("on")
-    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("on")
-    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("once")
-    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("once")
-    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("prependListener")
-    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("prependOnceListener")
-    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    @JSName("removeListener")
-    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def serialize(value: RequestType): Buffer = js.native
-  }
+  type ServiceError = StatusObject with Error
   
   /* Inlined {  call :@grpc/grpc-js.@grpc/grpc-js/build/src/client-interceptors.InterceptingCallInterface | undefined, cancel (): void, getPeer (): string} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'metadata', @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata> & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'status', @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject> & node.events.EventEmitter */
   @js.native
-  trait SurfaceCall extends js.Object {
+  trait SurfaceCall extends StObject {
     
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
@@ -1400,6 +1407,4 @@ object callMod extends js.Object {
     
     def setMaxListeners(n: Double): this.type = js.native
   }
-  
-  type ServiceError = StatusObject with Error
 }

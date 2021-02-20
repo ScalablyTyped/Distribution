@@ -15,6 +15,7 @@ import typings.phaser.Phaser.Types.Tilemaps.TilemapConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
 import typings.phaser.SpineGameObject
 import typings.phaser.SpineGameObjectConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * methods into the class.
   */
 @js.native
-trait GameObjectCreator extends js.Object {
+trait GameObjectCreator extends StObject {
   
   /**
     * Creates a new Bitmap Text Game Object and returns it.

@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.typesMod.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,9 +27,9 @@ class BoundingInfo protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "BoundingInfo")
-@js.native
-object BoundingInfo extends js.Object {
+object BoundingInfo {
   
+  @JSImport("babylonjs/index", "BoundingInfo.TmpVector3")
+  @js.native
   val TmpVector3: js.Any = js.native
 }

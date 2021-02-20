@@ -2,6 +2,7 @@ package typings.titanium.Titanium
 
 import typings.titanium.Titanium.UI.TabGroup
 import typings.titanium.Titanium.UI.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The base for all Titanium objects.
   */
 @js.native
-trait Proxy extends js.Object {
+trait Proxy extends StObject {
   
   /**
     * Adds the specified callback as an event listener for the named event.

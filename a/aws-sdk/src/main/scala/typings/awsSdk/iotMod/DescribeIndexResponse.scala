@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIndexResponse extends js.Object {
+trait DescribeIndexResponse extends StObject {
   
   /**
     * The index name.
@@ -31,36 +32,24 @@ object DescribeIndexResponse {
   }
   
   @scala.inline
-  implicit class DescribeIndexResponseOps[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeIndexResponseMutableBuilder[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "indexStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    def setIndexStatusUndefined: Self = StObject.set(x, "indexStatus", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    def setSchema(value: IndexSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexStatus(value: IndexStatus): Self = this.set("indexStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexStatus: Self = this.set("indexStatus", js.undefined)
-    
-    @scala.inline
-    def setSchema(value: IndexSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

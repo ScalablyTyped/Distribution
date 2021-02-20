@@ -1,30 +1,27 @@
 package typings.ethersprojectSha2
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/sha2/lib/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
   @js.native
-  sealed trait SupportedAlgorithm extends js.Object
+  sealed trait SupportedAlgorithm extends StObject
+  @JSImport("@ethersproject/sha2/lib/types", "SupportedAlgorithm")
   @js.native
-  object SupportedAlgorithm extends js.Object {
+  object SupportedAlgorithm extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[SupportedAlgorithm with String] = js.native
     
     @js.native
     sealed trait sha256 extends SupportedAlgorithm
-    /* "sha256" */ @js.native
-    object sha256 extends TopLevel[sha256 with String]
+    /* "sha256" */ val sha256: typings.ethersprojectSha2.typesMod.SupportedAlgorithm.sha256 with String = js.native
     
     @js.native
     sealed trait sha512 extends SupportedAlgorithm
-    /* "sha512" */ @js.native
-    object sha512 extends TopLevel[sha512 with String]
+    /* "sha512" */ val sha512: typings.ethersprojectSha2.typesMod.SupportedAlgorithm.sha512 with String = js.native
   }
 }

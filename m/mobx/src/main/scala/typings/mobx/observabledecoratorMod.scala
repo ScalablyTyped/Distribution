@@ -2,18 +2,19 @@ package typings.mobx
 
 import typings.mobx.modifiersMod.IEnhancer
 import typings.std.PropertyDescriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx/lib/api/observabledecorator", JSImport.Namespace)
-@js.native
-object observabledecoratorMod extends js.Object {
+object observabledecoratorMod {
   
+  @JSImport("mobx/lib/api/observabledecorator", "createDecoratorForEnhancer")
+  @js.native
   def createDecoratorForEnhancer(enhancer: IEnhancer[_]): IObservableDecorator = js.native
   
   @js.native
-  trait IObservableDecorator extends js.Object {
+  trait IObservableDecorator extends StObject {
     
     def apply(target: js.Object, property: String): Unit = js.native
     def apply(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = js.native

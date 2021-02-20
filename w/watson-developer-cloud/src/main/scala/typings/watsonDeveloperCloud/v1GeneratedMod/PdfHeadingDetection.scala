@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** PdfHeadingDetection. */
 @js.native
-trait PdfHeadingDetection extends js.Object {
+trait PdfHeadingDetection extends StObject {
   
   var fonts: js.UndefOr[js.Array[FontSetting]] = js.native
 }
@@ -19,27 +20,15 @@ object PdfHeadingDetection {
   }
   
   @scala.inline
-  implicit class PdfHeadingDetectionOps[Self <: PdfHeadingDetection] (val x: Self) extends AnyVal {
+  implicit class PdfHeadingDetectionMutableBuilder[Self <: PdfHeadingDetection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFontsVarargs(value: FontSetting*): Self = this.set("fonts", js.Array(value :_*))
-    
-    @scala.inline
-    def setFonts(value: js.Array[FontSetting]): Self = this.set("fonts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFonts: Self = this.set("fonts", js.undefined)
+    def setFontsVarargs(value: FontSetting*): Self = StObject.set(x, "fonts", js.Array(value :_*))
   }
 }

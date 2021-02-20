@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a protocol handler definition. */
 @js.native
-trait ProtocolHandler extends js.Object {
+trait ProtocolHandler extends StObject {
   
   /**
     * A user-readable title string for the protocol handler. This will be displayed to the user in interface objects as needed.
@@ -32,27 +33,15 @@ object ProtocolHandler {
   }
   
   @scala.inline
-  implicit class ProtocolHandlerOps[Self <: ProtocolHandler] (val x: Self) extends AnyVal {
+  implicit class ProtocolHandlerMutableBuilder[Self <: ProtocolHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocol(value: String | ProtocolHandlerProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: String | ProtocolHandlerProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUriTemplate(value: ExtensionURL | HttpURL): Self = this.set("uriTemplate", value.asInstanceOf[js.Any])
+    def setUriTemplate(value: ExtensionURL | HttpURL): Self = StObject.set(x, "uriTemplate", value.asInstanceOf[js.Any])
   }
 }

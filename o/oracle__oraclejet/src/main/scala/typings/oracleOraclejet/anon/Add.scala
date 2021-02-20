@@ -1,6 +1,7 @@
 package typings.oracleOraclejet.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,72 +41,60 @@ object Add {
   }
   
   @scala.inline
-  implicit class AddOps[Self <: Add] (val x: Self) extends AnyVal {
+  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: (Add, /* xhr */ js.Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAdd(value: Boolean): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setFetchSize(value: Double): Self = StObject.set(x, "fetchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: (Add, /* xhr */ js.Any, /* options */ js.Object) => Unit): Self = this.set("error", js.Any.fromFunction3(value))
+    def setFetchSizeUndefined: Self = StObject.set(x, "fetchSize", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchSize(value: Double): Self = this.set("fetchSize", value.asInstanceOf[js.Any])
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteFetchSize: Self = this.set("fetchSize", js.undefined)
+    def setSince(value: js.Any): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: Boolean): Self = this.set("set", value.asInstanceOf[js.Any])
+    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setStartID(value: js.Any): Self = StObject.set(x, "startID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSince(value: js.Any): Self = this.set("since", value.asInstanceOf[js.Any])
+    def setStartIDUndefined: Self = StObject.set(x, "startID", js.undefined)
     
     @scala.inline
-    def deleteSince: Self = this.set("since", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartID(value: js.Any): Self = this.set("startID", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteStartID: Self = this.set("startID", js.undefined)
+    def setSuccess(value: (Add, /* response */ js.Any, /* options */ js.Object) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setUntil(value: js.Any): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: (Add, /* response */ js.Any, /* options */ js.Object) => Unit): Self = this.set("success", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setUntil(value: js.Any): Self = this.set("until", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUntil: Self = this.set("until", js.undefined)
+    def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
   }
 }

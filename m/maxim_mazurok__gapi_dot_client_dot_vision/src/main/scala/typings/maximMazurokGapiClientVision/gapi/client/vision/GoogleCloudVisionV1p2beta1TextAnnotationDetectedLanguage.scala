@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage extends js.Object {
+trait GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage extends StObject {
   
   /** Confidence of detected language. Range [0, 1]. */
   var confidence: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguageOps[Self <: GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguageMutableBuilder[Self <: GoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfidence: Self = this.set("confidence", js.undefined)
-    
-    @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

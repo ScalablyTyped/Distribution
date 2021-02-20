@@ -1,11 +1,12 @@
 package typings.awsSdk.macieMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisassociateS3ResourcesRequest extends js.Object {
+trait DisassociateS3ResourcesRequest extends StObject {
   
   /**
     * The S3 resources (buckets or prefixes) that you want to remove from being monitored and classified by Amazon Macie Classic. 
@@ -26,30 +27,18 @@ object DisassociateS3ResourcesRequest {
   }
   
   @scala.inline
-  implicit class DisassociateS3ResourcesRequestOps[Self <: DisassociateS3ResourcesRequest] (val x: Self) extends AnyVal {
+  implicit class DisassociateS3ResourcesRequestMutableBuilder[Self <: DisassociateS3ResourcesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedS3Resources(value: S3Resources): Self = StObject.set(x, "associatedS3Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "associatedS3Resources", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedS3ResourcesVarargs(value: S3Resource*): Self = this.set("associatedS3Resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssociatedS3Resources(value: S3Resources): Self = this.set("associatedS3Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemberAccountId(value: AWSAccountId): Self = this.set("memberAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberAccountId: Self = this.set("memberAccountId", js.undefined)
+    def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
   }
 }

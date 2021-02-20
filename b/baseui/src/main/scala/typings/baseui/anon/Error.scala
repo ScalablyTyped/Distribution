@@ -6,12 +6,13 @@ import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Error extends js.Object {
+trait Error extends StObject {
   
   @JSName("$error")
   var $error: Boolean = js.native
@@ -55,42 +56,30 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorOps[Self <: Error] (val x: Self) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$error(value: Boolean): Self = StObject.set(x, "$error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$isLoading(value: Boolean): Self = StObject.set(x, "$isLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$multi(value: Boolean): Self = StObject.set(x, "$multi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$error(value: Boolean): Self = this.set("$error", value.asInstanceOf[js.Any])
+    def set$required(value: Boolean): Self = StObject.set(x, "$required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isLoading(value: Boolean): Self = this.set("$isLoading", value.asInstanceOf[js.Any])
+    def set$searchable(value: Boolean): Self = StObject.set(x, "$searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$multi(value: Boolean): Self = this.set("$multi", value.asInstanceOf[js.Any])
+    def set$size(value: mini | default_ | compact | large_): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$required(value: Boolean): Self = this.set("$required", value.asInstanceOf[js.Any])
+    def set$type(value: select | search): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$searchable(value: Boolean): Self = this.set("$searchable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$size(value: mini | default_ | compact | large_): Self = this.set("$size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$type(value: select | search): Self = this.set("$type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set$width(value: Double): Self = this.set("$width", value.asInstanceOf[js.Any])
+    def set$width(value: Double): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
   }
 }

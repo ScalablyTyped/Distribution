@@ -7,14 +7,14 @@ import typings.awsSdkClientPinpointBrowser.typesGetEventStreamInputMod.GetEventS
 import typings.awsSdkClientPinpointBrowser.typesGetEventStreamOutputMod.GetEventStreamOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/commands/GetEventStreamCommand", JSImport.Namespace)
-@js.native
-object getEventStreamCommandMod extends js.Object {
+object getEventStreamCommandMod {
   
+  @JSImport("@aws-sdk/client-pinpoint-browser/commands/GetEventStreamCommand", "GetEventStreamCommand")
   @js.native
   class GetEventStreamCommand protected () extends Command[
           InputTypesUnion, 

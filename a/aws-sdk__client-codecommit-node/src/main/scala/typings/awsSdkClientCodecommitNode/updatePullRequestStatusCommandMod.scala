@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesUpdatePullRequestStatusInputMod.U
 import typings.awsSdkClientCodecommitNode.typesUpdatePullRequestStatusOutputMod.UpdatePullRequestStatusOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/UpdatePullRequestStatusCommand", JSImport.Namespace)
-@js.native
-object updatePullRequestStatusCommandMod extends js.Object {
+object updatePullRequestStatusCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/UpdatePullRequestStatusCommand", "UpdatePullRequestStatusCommand")
   @js.native
   class UpdatePullRequestStatusCommand protected () extends Command[
           InputTypesUnion, 

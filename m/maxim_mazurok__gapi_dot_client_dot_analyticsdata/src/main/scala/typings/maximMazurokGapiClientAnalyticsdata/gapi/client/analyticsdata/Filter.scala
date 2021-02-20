@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /** A filter for two values. */
   var betweenFilter: js.UndefOr[BetweenFilter] = js.native
@@ -37,54 +38,42 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBetweenFilter(value: BetweenFilter): Self = StObject.set(x, "betweenFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBetweenFilterUndefined: Self = StObject.set(x, "betweenFilter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBetweenFilter(value: BetweenFilter): Self = this.set("betweenFilter", value.asInstanceOf[js.Any])
+    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
     @scala.inline
-    def deleteBetweenFilter: Self = this.set("betweenFilter", js.undefined)
+    def setInListFilter(value: InListFilter): Self = StObject.set(x, "inListFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setInListFilterUndefined: Self = StObject.set(x, "inListFilter", js.undefined)
     
     @scala.inline
-    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    def setNullFilter(value: Boolean): Self = StObject.set(x, "nullFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInListFilter(value: InListFilter): Self = this.set("inListFilter", value.asInstanceOf[js.Any])
+    def setNullFilterUndefined: Self = StObject.set(x, "nullFilter", js.undefined)
     
     @scala.inline
-    def deleteInListFilter: Self = this.set("inListFilter", js.undefined)
+    def setNumericFilter(value: NumericFilter): Self = StObject.set(x, "numericFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullFilter(value: Boolean): Self = this.set("nullFilter", value.asInstanceOf[js.Any])
+    def setNumericFilterUndefined: Self = StObject.set(x, "numericFilter", js.undefined)
     
     @scala.inline
-    def deleteNullFilter: Self = this.set("nullFilter", js.undefined)
+    def setStringFilter(value: StringFilter): Self = StObject.set(x, "stringFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericFilter(value: NumericFilter): Self = this.set("numericFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericFilter: Self = this.set("numericFilter", js.undefined)
-    
-    @scala.inline
-    def setStringFilter(value: StringFilter): Self = this.set("stringFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringFilter: Self = this.set("stringFilter", js.undefined)
+    def setStringFilterUndefined: Self = StObject.set(x, "stringFilter", js.undefined)
   }
 }

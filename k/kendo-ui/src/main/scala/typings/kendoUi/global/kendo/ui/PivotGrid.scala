@@ -2,6 +2,7 @@ package typings.kendoUi.global.kendo.ui
 
 import typings.kendoUi.kendo.ui.PivotGridOptions
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +14,21 @@ class PivotGrid protected ()
   def this(element: Element) = this()
   def this(element: Element, options: PivotGridOptions) = this()
 }
-/* static members */
-@JSGlobal("kendo.ui.PivotGrid")
-@js.native
-object PivotGrid extends js.Object {
+object PivotGrid {
   
+  @JSGlobal("kendo.ui.PivotGrid")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("kendo.ui.PivotGrid.extend")
+  @js.native
   def extend(proto: js.Object): typings.kendoUi.kendo.ui.PivotGrid = js.native
   
-  var fn: typings.kendoUi.kendo.ui.PivotGrid = js.native
+  /* static member */
+  @JSGlobal("kendo.ui.PivotGrid.fn")
+  @js.native
+  def fn: typings.kendoUi.kendo.ui.PivotGrid = js.native
+  @scala.inline
+  def fn_=(x: typings.kendoUi.kendo.ui.PivotGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

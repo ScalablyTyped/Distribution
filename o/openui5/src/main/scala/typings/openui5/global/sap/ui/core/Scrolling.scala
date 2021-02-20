@@ -1,5 +1,6 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("sap.ui.core.Scrolling")
 @js.native
-object Scrolling extends js.Object {
+object Scrolling extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.Scrolling with Double] = js.native

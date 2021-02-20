@@ -7,12 +7,13 @@ import typings.googleAppsScript.googleAppsScriptStrings.EXCLUDE
 import typings.googleAppsScript.googleAppsScriptStrings.INCLUDE
 import typings.googleAppsScript.googleAppsScriptStrings.IN_LIST
 import typings.googleAppsScript.googleAppsScriptStrings.IS_NULL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionsFilters extends js.Object {
+trait DimensionsFilters extends StObject {
   
   /** The name of the field to be filtered */
   var fieldName: String = js.native
@@ -41,33 +42,21 @@ object DimensionsFilters {
   }
   
   @scala.inline
-  implicit class DimensionsFiltersOps[Self <: DimensionsFilters] (val x: Self) extends AnyVal {
+  implicit class DimensionsFiltersMutableBuilder[Self <: DimensionsFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperator(value: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: INCLUDE | EXCLUDE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: INCLUDE | EXCLUDE): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

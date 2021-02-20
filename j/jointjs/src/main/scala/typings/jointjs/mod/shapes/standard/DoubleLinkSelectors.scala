@@ -2,12 +2,13 @@ package typings.jointjs.mod.shapes.standard
 
 import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGPathAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DoubleLinkSelectors extends js.Object {
+trait DoubleLinkSelectors extends StObject {
   
   var line: js.UndefOr[SVGPathAttributes] = js.native
   
@@ -24,36 +25,24 @@ object DoubleLinkSelectors {
   }
   
   @scala.inline
-  implicit class DoubleLinkSelectorsOps[Self <: DoubleLinkSelectors] (val x: Self) extends AnyVal {
+  implicit class DoubleLinkSelectorsMutableBuilder[Self <: DoubleLinkSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLine(value: SVGPathAttributes): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutline(value: SVGPathAttributes): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: SVGPathAttributes): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: SVGPathAttributes): Self = this.set("outline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: SVGAttributes): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

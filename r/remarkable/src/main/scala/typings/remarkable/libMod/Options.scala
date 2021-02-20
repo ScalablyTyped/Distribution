@@ -1,11 +1,12 @@
 package typings.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Convert "\n" in paragraphs into <br>.
@@ -63,72 +64,60 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBreaks(value: Boolean): Self = this.set("breaks", value.asInstanceOf[js.Any])
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def deleteBreaks: Self = this.set("breaks", js.undefined)
+    def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlight(value: (/* str */ String, /* lang */ String) => String): Self = this.set("highlight", js.Any.fromFunction2(value))
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setLangPrefixUndefined: Self = StObject.set(x, "langPrefix", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setLinkTarget(value: String): Self = StObject.set(x, "linkTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLangPrefix(value: String): Self = this.set("langPrefix", value.asInstanceOf[js.Any])
+    def setLinkTargetUndefined: Self = StObject.set(x, "linkTarget", js.undefined)
     
     @scala.inline
-    def deleteLangPrefix: Self = this.set("langPrefix", js.undefined)
+    def setLinkify(value: Boolean): Self = StObject.set(x, "linkify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkTarget(value: String): Self = this.set("linkTarget", value.asInstanceOf[js.Any])
+    def setLinkifyUndefined: Self = StObject.set(x, "linkify", js.undefined)
     
     @scala.inline
-    def deleteLinkTarget: Self = this.set("linkTarget", js.undefined)
+    def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkify(value: Boolean): Self = this.set("linkify", value.asInstanceOf[js.Any])
+    def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
     
     @scala.inline
-    def deleteLinkify: Self = this.set("linkify", js.undefined)
+    def setTypographer(value: Boolean): Self = StObject.set(x, "typographer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotes(value: String): Self = this.set("quotes", value.asInstanceOf[js.Any])
+    def setTypographerUndefined: Self = StObject.set(x, "typographer", js.undefined)
     
     @scala.inline
-    def deleteQuotes: Self = this.set("quotes", js.undefined)
+    def setXhtmlOut(value: Boolean): Self = StObject.set(x, "xhtmlOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypographer(value: Boolean): Self = this.set("typographer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypographer: Self = this.set("typographer", js.undefined)
-    
-    @scala.inline
-    def setXhtmlOut(value: Boolean): Self = this.set("xhtmlOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhtmlOut: Self = this.set("xhtmlOut", js.undefined)
+    def setXhtmlOutUndefined: Self = StObject.set(x, "xhtmlOut", js.undefined)
   }
 }

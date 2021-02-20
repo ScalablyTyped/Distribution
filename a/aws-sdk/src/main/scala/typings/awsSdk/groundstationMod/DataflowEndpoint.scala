@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataflowEndpoint extends js.Object {
+trait DataflowEndpoint extends StObject {
   
   /**
     * Socket address of a dataflow endpoint.
@@ -36,42 +37,30 @@ object DataflowEndpoint {
   }
   
   @scala.inline
-  implicit class DataflowEndpointOps[Self <: DataflowEndpoint] (val x: Self) extends AnyVal {
+  implicit class DataflowEndpointMutableBuilder[Self <: DataflowEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: SocketAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMtu(value: DataflowEndpointmtuInteger): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: SocketAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setName(value: SafeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtu(value: DataflowEndpointmtuInteger): Self = this.set("mtu", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMtu: Self = this.set("mtu", js.undefined)
+    def setStatus(value: EndpointStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SafeName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: EndpointStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

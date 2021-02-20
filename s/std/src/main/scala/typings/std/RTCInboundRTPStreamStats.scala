@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,48 +28,36 @@ object RTCInboundRTPStreamStats {
   }
   
   @scala.inline
-  implicit class RTCInboundRTPStreamStatsOps[Self <: RTCInboundRTPStreamStats] (val x: Self) extends AnyVal {
+  implicit class RTCInboundRTPStreamStatsMutableBuilder[Self <: RTCInboundRTPStreamStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFractionLost(value: Double): Self = StObject.set(x, "fractionLost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesReceived(value: Double): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
+    def setFractionLostUndefined: Self = StObject.set(x, "fractionLost", js.undefined)
     
     @scala.inline
-    def deleteBytesReceived: Self = this.set("bytesReceived", js.undefined)
+    def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractionLost(value: Double): Self = this.set("fractionLost", value.asInstanceOf[js.Any])
+    def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
     
     @scala.inline
-    def deleteFractionLost: Self = this.set("fractionLost", js.undefined)
+    def setPacketsLost(value: Double): Self = StObject.set(x, "packetsLost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJitter(value: Double): Self = this.set("jitter", value.asInstanceOf[js.Any])
+    def setPacketsLostUndefined: Self = StObject.set(x, "packetsLost", js.undefined)
     
     @scala.inline
-    def deleteJitter: Self = this.set("jitter", js.undefined)
+    def setPacketsReceived(value: Double): Self = StObject.set(x, "packetsReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketsLost(value: Double): Self = this.set("packetsLost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacketsLost: Self = this.set("packetsLost", js.undefined)
-    
-    @scala.inline
-    def setPacketsReceived(value: Double): Self = this.set("packetsReceived", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacketsReceived: Self = this.set("packetsReceived", js.undefined)
+    def setPacketsReceivedUndefined: Self = StObject.set(x, "packetsReceived", js.undefined)
   }
 }

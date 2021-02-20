@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,4 @@ class ^ protected () extends DiscoveryV1 {
 }
 @JSImport("watson-developer-cloud/discovery/v1-generated", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var URL: String = js.native
-}
+object ^ extends StObject

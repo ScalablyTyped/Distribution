@@ -1,11 +1,12 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoftphoneError extends js.Object {
+trait SoftphoneError extends StObject {
   
   val endPointUrl: String = js.native
   
@@ -35,36 +36,24 @@ object SoftphoneError {
   }
   
   @scala.inline
-  implicit class SoftphoneErrorOps[Self <: SoftphoneError] (val x: Self) extends AnyVal {
+  implicit class SoftphoneErrorMutableBuilder[Self <: SoftphoneError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPointUrl(value: String): Self = StObject.set(x, "endPointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPointUrl(value: String): Self = this.set("endPointUrl", value.asInstanceOf[js.Any])
+    def setGetEndPointUrl(value: () => String): Self = StObject.set(x, "getEndPointUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setGetErrorMessage(value: () => String): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setErrorType(value: String): Self = this.set("errorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetEndPointUrl(value: () => String): Self = this.set("getEndPointUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetErrorMessage(value: () => String): Self = this.set("getErrorMessage", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetErrorType(value: () => String): Self = this.set("getErrorType", js.Any.fromFunction0(value))
+    def setGetErrorType(value: () => String): Self = StObject.set(x, "getErrorType", js.Any.fromFunction0(value))
   }
 }

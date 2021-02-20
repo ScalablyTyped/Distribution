@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Brand extends js.Object {
+trait Brand extends StObject {
   
   /** Application name displayed on OAuth consent screen. */
   var applicationTitle: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object Brand {
   }
   
   @scala.inline
-  implicit class BrandOps[Self <: Brand] (val x: Self) extends AnyVal {
+  implicit class BrandMutableBuilder[Self <: Brand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationTitle(value: String): Self = StObject.set(x, "applicationTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationTitleUndefined: Self = StObject.set(x, "applicationTitle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationTitle(value: String): Self = this.set("applicationTitle", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteApplicationTitle: Self = this.set("applicationTitle", js.undefined)
+    def setOrgInternalOnly(value: Boolean): Self = StObject.set(x, "orgInternalOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrgInternalOnlyUndefined: Self = StObject.set(x, "orgInternalOnly", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSupportEmail(value: String): Self = StObject.set(x, "supportEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgInternalOnly(value: Boolean): Self = this.set("orgInternalOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrgInternalOnly: Self = this.set("orgInternalOnly", js.undefined)
-    
-    @scala.inline
-    def setSupportEmail(value: String): Self = this.set("supportEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportEmail: Self = this.set("supportEmail", js.undefined)
+    def setSupportEmailUndefined: Self = StObject.set(x, "supportEmail", js.undefined)
   }
 }

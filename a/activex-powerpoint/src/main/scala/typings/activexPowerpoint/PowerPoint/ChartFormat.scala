@@ -2,12 +2,13 @@ package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.GlowFormat
 import typings.activexOffice.Office.SoftEdgeFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartFormat extends js.Object {
+trait ChartFormat extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -57,54 +58,42 @@ object ChartFormat {
   }
   
   @scala.inline
-  implicit class ChartFormatOps[Self <: ChartFormat] (val x: Self) extends AnyVal {
+  implicit class ChartFormatMutableBuilder[Self <: ChartFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: FillFormat): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlow(value: GlowFormat): Self = this.set("Glow", value.asInstanceOf[js.Any])
+    def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: LineFormat): Self = this.set("Line", value.asInstanceOf[js.Any])
+    def setPowerPointDotChartFormat_typekey(value: ChartFormat): Self = StObject.set(x, "PowerPoint.ChartFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureFormat(value: PictureFormat): Self = this.set("PictureFormat", value.asInstanceOf[js.Any])
+    def setSoftEdge(value: SoftEdgeFormat): Self = StObject.set(x, "SoftEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotChartFormat_typekey(value: ChartFormat): Self = this.set("PowerPoint.ChartFormat_typekey", value.asInstanceOf[js.Any])
+    def setTextFrame2(value: TextFrame2): Self = StObject.set(x, "TextFrame2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: ShadowFormat): Self = this.set("Shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftEdge(value: SoftEdgeFormat): Self = this.set("SoftEdge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextFrame2(value: TextFrame2): Self = this.set("TextFrame2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreeD(value: ThreeDFormat): Self = this.set("ThreeD", value.asInstanceOf[js.Any])
+    def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
   }
 }

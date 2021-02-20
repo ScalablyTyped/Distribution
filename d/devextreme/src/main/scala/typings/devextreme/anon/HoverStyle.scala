@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HoverStyle extends js.Object {
+trait HoverStyle extends StObject {
   
   var border: js.UndefOr[ColorVisible] = js.native
   
@@ -22,36 +23,24 @@ object HoverStyle {
   }
   
   @scala.inline
-  implicit class HoverStyleOps[Self <: HoverStyle] (val x: Self) extends AnyVal {
+  implicit class HoverStyleMutableBuilder[Self <: HoverStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoverStyle(value: Border): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: ColorVisible): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setSelectionStyle(value: Border): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoverStyle(value: Border): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
-    
-    @scala.inline
-    def setSelectionStyle(value: Border): Self = this.set("selectionStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionStyle: Self = this.set("selectionStyle", js.undefined)
+    def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
   }
 }

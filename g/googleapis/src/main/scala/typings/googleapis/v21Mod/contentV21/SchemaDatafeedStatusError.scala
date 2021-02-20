@@ -1,5 +1,6 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An error occurring in the feed, like &quot;invalid price&quot;.
   */
 @js.native
-trait SchemaDatafeedStatusError extends js.Object {
+trait SchemaDatafeedStatusError extends StObject {
   
   /**
     * The code of the error, e.g., &quot;validation/invalid_value&quot;.
@@ -39,45 +40,33 @@ object SchemaDatafeedStatusError {
   }
   
   @scala.inline
-  implicit class SchemaDatafeedStatusErrorOps[Self <: SchemaDatafeedStatusError] (val x: Self) extends AnyVal {
+  implicit class SchemaDatafeedStatusErrorMutableBuilder[Self <: SchemaDatafeedStatusError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setExamples(value: js.Array[SchemaDatafeedStatusExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setExamplesVarargs(value: SchemaDatafeedStatusExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
     
     @scala.inline
-    def setExamplesVarargs(value: SchemaDatafeedStatusExample*): Self = this.set("examples", js.Array(value :_*))
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExamples(value: js.Array[SchemaDatafeedStatusExample]): Self = this.set("examples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExamples: Self = this.set("examples", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

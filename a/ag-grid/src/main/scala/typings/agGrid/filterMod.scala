@@ -1,13 +1,12 @@
 package typings.agGrid
 
 import typings.agGrid.iFilterMod.IFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/filter/filter", JSImport.Namespace)
-@js.native
-object filterMod extends js.Object {
+object filterMod {
   
   type Filter = IFilter
 }

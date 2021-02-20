@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListWebhookItem extends js.Object {
+trait ListWebhookItem extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the webhook.
@@ -51,57 +52,45 @@ object ListWebhookItem {
   }
   
   @scala.inline
-  implicit class ListWebhookItemOps[Self <: ListWebhookItem] (val x: Self) extends AnyVal {
+  implicit class ListWebhookItemMutableBuilder[Self <: ListWebhookItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: WebhookArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinition(value: WebhookDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: WebhookDefinition): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setErrorCode(value: WebhookErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: WebhookUrl): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def setArn(value: WebhookArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setErrorMessage(value: WebhookErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def setErrorCode(value: WebhookErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setLastTriggered(value: WebhookLastTriggered): Self = StObject.set(x, "lastTriggered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setLastTriggeredUndefined: Self = StObject.set(x, "lastTriggered", js.undefined)
     
     @scala.inline
-    def setErrorMessage(value: WebhookErrorMessage): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setLastTriggered(value: WebhookLastTriggered): Self = this.set("lastTriggered", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def deleteLastTriggered: Self = this.set("lastTriggered", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUrl(value: WebhookUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

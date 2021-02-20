@@ -1,12 +1,13 @@
 package typings.tampermonkey.Tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Download Request
 @js.native
-trait DownloadRequest extends js.Object {
+trait DownloadRequest extends StObject {
   
   var headers: js.UndefOr[RequestHeaders] = js.native
   
@@ -45,66 +46,54 @@ object DownloadRequest {
   }
   
   @scala.inline
-  implicit class DownloadRequestOps[Self <: DownloadRequest] (val x: Self) extends AnyVal {
+  implicit class DownloadRequestMutableBuilder[Self <: DownloadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnerror(value: RequestEventListener[DownloadErrorResponse]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def setHeaders(value: RequestHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setOnload(value: () => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
     @scala.inline
-    def setOnerror(value: RequestEventListener[DownloadErrorResponse]): Self = this.set("onerror", value.asInstanceOf[js.Any])
+    def setOnprogress(value: RequestEventListener[DownloadProgressResponse]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnerror: Self = this.set("onerror", js.undefined)
+    def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     
     @scala.inline
-    def setOnload(value: () => Unit): Self = this.set("onload", js.Any.fromFunction0(value))
+    def setOntimeout(value: () => Unit): Self = StObject.set(x, "ontimeout", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOnload: Self = this.set("onload", js.undefined)
+    def setOntimeoutUndefined: Self = StObject.set(x, "ontimeout", js.undefined)
     
     @scala.inline
-    def setOnprogress(value: RequestEventListener[DownloadProgressResponse]): Self = this.set("onprogress", value.asInstanceOf[js.Any])
+    def setSaveAs(value: Boolean): Self = StObject.set(x, "saveAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnprogress: Self = this.set("onprogress", js.undefined)
+    def setSaveAsUndefined: Self = StObject.set(x, "saveAs", js.undefined)
     
     @scala.inline
-    def setOntimeout(value: () => Unit): Self = this.set("ontimeout", js.Any.fromFunction0(value))
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOntimeout: Self = this.set("ontimeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setSaveAs(value: Boolean): Self = this.set("saveAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSaveAs: Self = this.set("saveAs", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

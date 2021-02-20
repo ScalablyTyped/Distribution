@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputDecryptionSettings extends js.Object {
+trait InputDecryptionSettings extends StObject {
   
   /**
     * Specify the encryption mode that you used to encrypt your input files.
@@ -36,42 +37,30 @@ object InputDecryptionSettings {
   }
   
   @scala.inline
-  implicit class InputDecryptionSettingsOps[Self <: InputDecryptionSettings] (val x: Self) extends AnyVal {
+  implicit class InputDecryptionSettingsMutableBuilder[Self <: InputDecryptionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecryptionMode(value: DecryptionMode): Self = StObject.set(x, "DecryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecryptionModeUndefined: Self = StObject.set(x, "DecryptionMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptedDecryptionKey(value: stringMin24Max512PatternAZaZ0902): Self = StObject.set(x, "EncryptedDecryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecryptionMode(value: DecryptionMode): Self = this.set("DecryptionMode", value.asInstanceOf[js.Any])
+    def setEncryptedDecryptionKeyUndefined: Self = StObject.set(x, "EncryptedDecryptionKey", js.undefined)
     
     @scala.inline
-    def deleteDecryptionMode: Self = this.set("DecryptionMode", js.undefined)
+    def setInitializationVector(value: stringMin16Max24PatternAZaZ0922AZaZ0916): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptedDecryptionKey(value: stringMin24Max512PatternAZaZ0902): Self = this.set("EncryptedDecryptionKey", value.asInstanceOf[js.Any])
+    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
     @scala.inline
-    def deleteEncryptedDecryptionKey: Self = this.set("EncryptedDecryptionKey", js.undefined)
+    def setKmsKeyRegion(value: stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912): Self = StObject.set(x, "KmsKeyRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationVector(value: stringMin16Max24PatternAZaZ0922AZaZ0916): Self = this.set("InitializationVector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitializationVector: Self = this.set("InitializationVector", js.undefined)
-    
-    @scala.inline
-    def setKmsKeyRegion(value: stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912): Self = this.set("KmsKeyRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsKeyRegion: Self = this.set("KmsKeyRegion", js.undefined)
+    def setKmsKeyRegionUndefined: Self = StObject.set(x, "KmsKeyRegion", js.undefined)
   }
 }

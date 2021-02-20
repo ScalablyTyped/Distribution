@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyValuesWithIconClues extends js.Object {
+trait IPropertyValuesWithIconClues extends StObject {
   
   def Clone(): IPropertyValuesWithIconClues = js.native
   
@@ -29,30 +30,18 @@ object IPropertyValuesWithIconClues {
   }
   
   @scala.inline
-  implicit class IPropertyValuesWithIconCluesOps[Self <: IPropertyValuesWithIconClues] (val x: Self) extends AnyVal {
+  implicit class IPropertyValuesWithIconCluesMutableBuilder[Self <: IPropertyValuesWithIconClues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IPropertyValuesWithIconClues): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconClues(value: IPropertyValueIconClues): Self = StObject.set(x, "IconClues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IPropertyValuesWithIconClues): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIconClues(value: IPropertyValueIconClues): Self = this.set("IconClues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertyValues(value: IPropertyValues): Self = this.set("PropertyValues", value.asInstanceOf[js.Any])
+    def setPropertyValues(value: IPropertyValues): Self = StObject.set(x, "PropertyValues", value.asInstanceOf[js.Any])
   }
 }

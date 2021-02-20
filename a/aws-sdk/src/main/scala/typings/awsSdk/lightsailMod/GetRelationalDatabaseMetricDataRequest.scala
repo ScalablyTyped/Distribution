@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRelationalDatabaseMetricDataRequest extends js.Object {
+trait GetRelationalDatabaseMetricDataRequest extends StObject {
   
   /**
     * The end of the time interval from which to get metric data. Constraints:   Specified in Coordinated Universal Time (UTC).   Specified in the Unix time format. For example, if you wish to use an end time of October 1, 2018, at 8 PM UTC, then you input 1538424000 as the end time.  
@@ -59,42 +60,30 @@ object GetRelationalDatabaseMetricDataRequest {
   }
   
   @scala.inline
-  implicit class GetRelationalDatabaseMetricDataRequestOps[Self <: GetRelationalDatabaseMetricDataRequest] (val x: Self) extends AnyVal {
+  implicit class GetRelationalDatabaseMetricDataRequestMutableBuilder[Self <: GetRelationalDatabaseMetricDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: IsoDate): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetricName(value: RelationalDatabaseMetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: IsoDate): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: RelationalDatabaseMetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setStartTime(value: IsoDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriod(value: MetricPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    def setStatistics(value: MetricStatisticList): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    def setStatisticsVarargs(value: MetricStatistic*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
     @scala.inline
-    def setStartTime(value: IsoDate): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatisticsVarargs(value: MetricStatistic*): Self = this.set("statistics", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatistics(value: MetricStatisticList): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnit(value: MetricUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

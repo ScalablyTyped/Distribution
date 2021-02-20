@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceFileEdit extends js.Object {
+trait WorkspaceFileEdit extends StObject {
   
   var metadata: js.UndefOr[WorkspaceEditMetadata] = js.native
   
@@ -25,42 +26,30 @@ object WorkspaceFileEdit {
   }
   
   @scala.inline
-  implicit class WorkspaceFileEditOps[Self <: WorkspaceFileEdit] (val x: Self) extends AnyVal {
+  implicit class WorkspaceFileEditMutableBuilder[Self <: WorkspaceFileEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: WorkspaceEditMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewUri(value: Uri): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: WorkspaceEditMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setNewUriUndefined: Self = StObject.set(x, "newUri", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setOldUri(value: Uri): Self = StObject.set(x, "oldUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewUri(value: Uri): Self = this.set("newUri", value.asInstanceOf[js.Any])
+    def setOldUriUndefined: Self = StObject.set(x, "oldUri", js.undefined)
     
     @scala.inline
-    def deleteNewUri: Self = this.set("newUri", js.undefined)
+    def setOptions(value: WorkspaceFileEditOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldUri(value: Uri): Self = this.set("oldUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldUri: Self = this.set("oldUri", js.undefined)
-    
-    @scala.inline
-    def setOptions(value: WorkspaceFileEditOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

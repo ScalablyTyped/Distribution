@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,39 +82,27 @@ object XInterfaceMethodTypeDescription {
   }
   
   @scala.inline
-  implicit class XInterfaceMethodTypeDescriptionOps[Self <: XInterfaceMethodTypeDescription] (val x: Self) extends AnyVal {
+  implicit class XInterfaceMethodTypeDescriptionMutableBuilder[Self <: XInterfaceMethodTypeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExceptions(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetExceptions(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getExceptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetParameters(value: () => SafeArray[XMethodParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExceptions(value: SafeArray[XTypeDescription]): Self = this.set("Exceptions", value.asInstanceOf[js.Any])
+    def setGetReturnType(value: () => XTypeDescription): Self = StObject.set(x, "getReturnType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParameters(value: SafeArray[XMethodParameter]): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setIsOneway(value: () => Boolean): Self = StObject.set(x, "isOneway", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReturnType(value: XTypeDescription): Self = this.set("ReturnType", value.asInstanceOf[js.Any])
+    def setParameters(value: SafeArray[XMethodParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExceptions(value: () => SafeArray[XTypeDescription]): Self = this.set("getExceptions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParameters(value: () => SafeArray[XMethodParameter]): Self = this.set("getParameters", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetReturnType(value: () => XTypeDescription): Self = this.set("getReturnType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOneway(value: () => Boolean): Self = this.set("isOneway", js.Any.fromFunction0(value))
+    def setReturnType(value: XTypeDescription): Self = StObject.set(x, "ReturnType", value.asInstanceOf[js.Any])
   }
 }

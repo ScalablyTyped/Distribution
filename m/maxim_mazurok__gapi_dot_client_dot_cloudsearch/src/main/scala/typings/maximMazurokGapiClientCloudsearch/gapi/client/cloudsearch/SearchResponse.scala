@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchResponse extends js.Object {
+trait SearchResponse extends StObject {
   
   /** Debugging information about the response. */
   var debugInfo: js.UndefOr[ResponseDebugInfo] = js.native
@@ -49,96 +50,84 @@ object SearchResponse {
   }
   
   @scala.inline
-  implicit class SearchResponseOps[Self <: SearchResponse] (val x: Self) extends AnyVal {
+  implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDebugInfo(value: ResponseDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugInfo(value: ResponseDebugInfo): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
     
     @scala.inline
-    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    def setFacetResults(value: js.Array[FacetResult]): Self = StObject.set(x, "facetResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorInfo(value: ErrorInfo): Self = this.set("errorInfo", value.asInstanceOf[js.Any])
+    def setFacetResultsUndefined: Self = StObject.set(x, "facetResults", js.undefined)
     
     @scala.inline
-    def deleteErrorInfo: Self = this.set("errorInfo", js.undefined)
+    def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "facetResults", js.Array(value :_*))
     
     @scala.inline
-    def setFacetResultsVarargs(value: FacetResult*): Self = this.set("facetResults", js.Array(value :_*))
+    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFacetResults(value: js.Array[FacetResult]): Self = this.set("facetResults", value.asInstanceOf[js.Any])
+    def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
     @scala.inline
-    def deleteFacetResults: Self = this.set("facetResults", js.undefined)
+    def setQueryInterpretation(value: QueryInterpretation): Self = StObject.set(x, "queryInterpretation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasMoreResults(value: Boolean): Self = this.set("hasMoreResults", value.asInstanceOf[js.Any])
+    def setQueryInterpretationUndefined: Self = StObject.set(x, "queryInterpretation", js.undefined)
     
     @scala.inline
-    def deleteHasMoreResults: Self = this.set("hasMoreResults", js.undefined)
+    def setResultCountEstimate(value: String): Self = StObject.set(x, "resultCountEstimate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryInterpretation(value: QueryInterpretation): Self = this.set("queryInterpretation", value.asInstanceOf[js.Any])
+    def setResultCountEstimateUndefined: Self = StObject.set(x, "resultCountEstimate", js.undefined)
     
     @scala.inline
-    def deleteQueryInterpretation: Self = this.set("queryInterpretation", js.undefined)
+    def setResultCountExact(value: String): Self = StObject.set(x, "resultCountExact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCountEstimate(value: String): Self = this.set("resultCountEstimate", value.asInstanceOf[js.Any])
+    def setResultCountExactUndefined: Self = StObject.set(x, "resultCountExact", js.undefined)
     
     @scala.inline
-    def deleteResultCountEstimate: Self = this.set("resultCountEstimate", js.undefined)
+    def setResultCounts(value: ResultCounts): Self = StObject.set(x, "resultCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCountExact(value: String): Self = this.set("resultCountExact", value.asInstanceOf[js.Any])
+    def setResultCountsUndefined: Self = StObject.set(x, "resultCounts", js.undefined)
     
     @scala.inline
-    def deleteResultCountExact: Self = this.set("resultCountExact", js.undefined)
+    def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCounts(value: ResultCounts): Self = this.set("resultCounts", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteResultCounts: Self = this.set("resultCounts", js.undefined)
+    def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: SearchResult*): Self = this.set("results", js.Array(value :_*))
+    def setSpellResults(value: js.Array[SpellResult]): Self = StObject.set(x, "spellResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[SearchResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setSpellResultsUndefined: Self = StObject.set(x, "spellResults", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setSpellResultsVarargs(value: SpellResult*): Self = StObject.set(x, "spellResults", js.Array(value :_*))
     
     @scala.inline
-    def setSpellResultsVarargs(value: SpellResult*): Self = this.set("spellResults", js.Array(value :_*))
+    def setStructuredResults(value: js.Array[StructuredResult]): Self = StObject.set(x, "structuredResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpellResults(value: js.Array[SpellResult]): Self = this.set("spellResults", value.asInstanceOf[js.Any])
+    def setStructuredResultsUndefined: Self = StObject.set(x, "structuredResults", js.undefined)
     
     @scala.inline
-    def deleteSpellResults: Self = this.set("spellResults", js.undefined)
-    
-    @scala.inline
-    def setStructuredResultsVarargs(value: StructuredResult*): Self = this.set("structuredResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setStructuredResults(value: js.Array[StructuredResult]): Self = this.set("structuredResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredResults: Self = this.set("structuredResults", js.undefined)
+    def setStructuredResultsVarargs(value: StructuredResult*): Self = StObject.set(x, "structuredResults", js.Array(value :_*))
   }
 }

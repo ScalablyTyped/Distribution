@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebGeoposition extends js.Object {
+trait WebGeoposition extends StObject {
   
   @JSName("MSHTML.WebGeoposition_typekey")
   var MSHTMLDotWebGeoposition_typekey: WebGeoposition = js.native
@@ -24,27 +25,15 @@ object WebGeoposition {
   }
   
   @scala.inline
-  implicit class WebGeopositionOps[Self <: WebGeoposition] (val x: Self) extends AnyVal {
+  implicit class WebGeopositionMutableBuilder[Self <: WebGeoposition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoords(value: IWebGeocoordinates): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSHTMLDotWebGeoposition_typekey(value: WebGeoposition): Self = StObject.set(x, "MSHTML.WebGeoposition_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotWebGeoposition_typekey(value: WebGeoposition): Self = this.set("MSHTML.WebGeoposition_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCoords(value: IWebGeocoordinates): Self = this.set("coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

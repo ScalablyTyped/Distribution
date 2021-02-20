@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteBandingRequest extends js.Object {
+trait DeleteBandingRequest extends StObject {
   
   /** The ID of the banded range to delete. */
   var bandedRangeId: js.UndefOr[Double] = js.native
@@ -19,24 +20,12 @@ object DeleteBandingRequest {
   }
   
   @scala.inline
-  implicit class DeleteBandingRequestOps[Self <: DeleteBandingRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteBandingRequestMutableBuilder[Self <: DeleteBandingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBandedRangeId(value: Double): Self = this.set("bandedRangeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBandedRangeId: Self = this.set("bandedRangeId", js.undefined)
+    def setBandedRangeIdUndefined: Self = StObject.set(x, "bandedRangeId", js.undefined)
   }
 }

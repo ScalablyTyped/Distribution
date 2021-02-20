@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListTransactionsRequest")
 @js.native
-class ListTransactionsRequest () extends js.Object {
+class ListTransactionsRequest () extends StObject {
   
   /**
     * The beginning of the requested reporting period, in RFC 3339 format. See [Date ranges](#dateranges) for details

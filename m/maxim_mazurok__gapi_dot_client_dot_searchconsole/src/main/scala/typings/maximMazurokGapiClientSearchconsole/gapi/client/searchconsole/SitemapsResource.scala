@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSearchconsole.anon.Callback
 import typings.maximMazurokGapiClientSearchconsole.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SitemapsResource extends js.Object {
+trait SitemapsResource extends StObject {
   
   /** Deletes a sitemap from this site. */
   def delete(): Request[Unit] = js.native

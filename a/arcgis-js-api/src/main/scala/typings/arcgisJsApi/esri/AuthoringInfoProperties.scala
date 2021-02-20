@@ -21,12 +21,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typings.arcgisJsApi.arcgisJsApiStrings.quantile
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthoringInfoProperties extends js.Object {
+trait AuthoringInfoProperties extends StObject {
   
   /**
     * Indicates which classification method was used if a classed color or classed size renderer was generated using one of the Smart Mapping functions.
@@ -132,106 +133,94 @@ object AuthoringInfoProperties {
   }
   
   @scala.inline
-  implicit class AuthoringInfoPropertiesOps[Self <: AuthoringInfoProperties] (val x: Self) extends AnyVal {
+  implicit class AuthoringInfoPropertiesMutableBuilder[Self <: AuthoringInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassificationMethod(value: `equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassificationMethodUndefined: Self = StObject.set(x, "classificationMethod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassificationMethod(value: `equal-interval` | manual | `natural-breaks` | quantile | `standard-deviation`): Self = this.set("classificationMethod", value.asInstanceOf[js.Any])
+    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
     @scala.inline
-    def deleteClassificationMethod: Self = this.set("classificationMethod", js.undefined)
+    def setField1(value: AuthoringInfoField1): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRamp(value: ColorRampProperties): Self = this.set("colorRamp", value.asInstanceOf[js.Any])
+    def setField1Undefined: Self = StObject.set(x, "field1", js.undefined)
     
     @scala.inline
-    def deleteColorRamp: Self = this.set("colorRamp", js.undefined)
+    def setField2(value: AuthoringInfoField2): Self = StObject.set(x, "field2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField1(value: AuthoringInfoField1): Self = this.set("field1", value.asInstanceOf[js.Any])
+    def setField2Undefined: Self = StObject.set(x, "field2", js.undefined)
     
     @scala.inline
-    def deleteField1: Self = this.set("field1", js.undefined)
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField2(value: AuthoringInfoField2): Self = this.set("field2", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteField2: Self = this.set("field2", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
-    
-    @scala.inline
-    def setFocus(value: String): Self = this.set("focus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFocus: Self = this.set("focus", js.undefined)
+    def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
     
     @scala.inline
     def setLengthUnit(
       value: inches | feet_ | yards | miles_ | `nautical-miles` | millimeters | centimeters | decimeters | meters_ | kilometers_ | `decimal-degrees`
-    ): Self = this.set("lengthUnit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLengthUnit: Self = this.set("lengthUnit", js.undefined)
+    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
     @scala.inline
-    def setMaxSliderValue(value: Double): Self = this.set("maxSliderValue", value.asInstanceOf[js.Any])
+    def setMaxSliderValue(value: Double): Self = StObject.set(x, "maxSliderValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxSliderValue: Self = this.set("maxSliderValue", js.undefined)
+    def setMaxSliderValueUndefined: Self = StObject.set(x, "maxSliderValue", js.undefined)
     
     @scala.inline
-    def setMinSliderValue(value: Double): Self = this.set("minSliderValue", value.asInstanceOf[js.Any])
+    def setMinSliderValue(value: Double): Self = StObject.set(x, "minSliderValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinSliderValue: Self = this.set("minSliderValue", js.undefined)
+    def setMinSliderValueUndefined: Self = StObject.set(x, "minSliderValue", js.undefined)
     
     @scala.inline
-    def setNumClasses(value: Double): Self = this.set("numClasses", value.asInstanceOf[js.Any])
+    def setNumClasses(value: Double): Self = StObject.set(x, "numClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumClasses: Self = this.set("numClasses", js.undefined)
+    def setNumClassesUndefined: Self = StObject.set(x, "numClasses", js.undefined)
     
     @scala.inline
-    def setStandardDeviationInterval(value: Double): Self = this.set("standardDeviationInterval", value.asInstanceOf[js.Any])
+    def setStandardDeviationInterval(value: Double): Self = StObject.set(x, "standardDeviationInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStandardDeviationInterval: Self = this.set("standardDeviationInterval", js.undefined)
+    def setStandardDeviationIntervalUndefined: Self = StObject.set(x, "standardDeviationInterval", js.undefined)
     
     @scala.inline
     def setType(
       value: `class-breaks-size` | `class-breaks-color` | `classed-color` | `classed-size` | typings.arcgisJsApi.arcgisJsApiStrings.predominance | typings.arcgisJsApi.arcgisJsApiStrings.relationship | `univariate-color-size`
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setVisualVariablesVarargs(value: AuthoringInfoVisualVariableProperties*): Self = this.set("visualVariables", js.Array(value :_*))
+    def setVisualVariables(value: js.Array[AuthoringInfoVisualVariableProperties]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisualVariables(value: js.Array[AuthoringInfoVisualVariableProperties]): Self = this.set("visualVariables", value.asInstanceOf[js.Any])
+    def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
     @scala.inline
-    def deleteVisualVariables: Self = this.set("visualVariables", js.undefined)
+    def setVisualVariablesVarargs(value: AuthoringInfoVisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
   }
 }

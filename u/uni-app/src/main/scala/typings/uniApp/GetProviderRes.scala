@@ -4,12 +4,13 @@ import typings.uniApp.uniAppStrings.oauth
 import typings.uniApp.uniAppStrings.payment
 import typings.uniApp.uniAppStrings.push
 import typings.uniApp.uniAppStrings.share
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetProviderRes extends js.Object {
+trait GetProviderRes extends StObject {
   
   /**
     * 得到的服务供应商
@@ -34,33 +35,21 @@ object GetProviderRes {
   }
   
   @scala.inline
-  implicit class GetProviderResOps[Self <: GetProviderRes] (val x: Self) extends AnyVal {
+  implicit class GetProviderResMutableBuilder[Self <: GetProviderRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvider(value: js.Array[_]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviderVarargs(value: js.Any*): Self = StObject.set(x, "provider", js.Array(value :_*))
     
     @scala.inline
-    def setProviderVarargs(value: js.Any*): Self = this.set("provider", js.Array(value :_*))
+    def setService(value: oauth | share | payment | push): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: js.Array[_]): Self = this.set("provider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
-    
-    @scala.inline
-    def setService(value: oauth | share | payment | push): Self = this.set("service", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteService: Self = this.set("service", js.undefined)
+    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerModuleNameCache extends js.Object {
+trait PerModuleNameCache extends StObject {
   
   def get(directory: java.lang.String): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
   
@@ -23,24 +24,12 @@ object PerModuleNameCache {
   }
   
   @scala.inline
-  implicit class PerModuleNameCacheOps[Self <: PerModuleNameCache] (val x: Self) extends AnyVal {
+  implicit class PerModuleNameCacheMutableBuilder[Self <: PerModuleNameCache] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: java.lang.String => js.UndefOr[ResolvedModuleWithFailedLookupLocations]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet(value: java.lang.String => js.UndefOr[ResolvedModuleWithFailedLookupLocations]): Self = this.set("get", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet(value: (java.lang.String, ResolvedModuleWithFailedLookupLocations) => Unit): Self = this.set("set", js.Any.fromFunction2(value))
+    def setSet(value: (java.lang.String, ResolvedModuleWithFailedLookupLocations) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

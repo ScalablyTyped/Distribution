@@ -4,12 +4,13 @@ import typings.amqplib.amqplibStrings.expired
 import typings.amqplib.amqplibStrings.maxlen
 import typings.amqplib.amqplibStrings.rejected
 import typings.amqplib.anon._empty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XDeath extends js.Object {
+trait XDeath extends StObject {
   
   var count: Double = js.native
   
@@ -42,45 +43,33 @@ object XDeath {
   }
   
   @scala.inline
-  implicit class XDeathOps[Self <: XDeath] (val x: Self) extends AnyVal {
+  implicit class XDeathMutableBuilder[Self <: XDeath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setOriginal-expiration`(value: js.Any): Self = StObject.set(x, "original-expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def `setOriginal-expirationUndefined`: Self = StObject.set(x, "original-expiration", js.undefined)
     
     @scala.inline
-    def setExchange(value: String): Self = this.set("exchange", value.asInstanceOf[js.Any])
+    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: String): Self = this.set("queue", value.asInstanceOf[js.Any])
+    def setReason(value: rejected | expired | maxlen): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: rejected | expired | maxlen): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def `setRouting-keys`(value: js.Array[String]): Self = StObject.set(x, "routing-keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setRouting-keysVarargs`(value: String*): Self = this.set("routing-keys", js.Array(value :_*))
+    def `setRouting-keysVarargs`(value: String*): Self = StObject.set(x, "routing-keys", js.Array(value :_*))
     
     @scala.inline
-    def `setRouting-keys`(value: js.Array[String]): Self = this.set("routing-keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTime(value: _empty): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setOriginal-expiration`(value: js.Any): Self = this.set("original-expiration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteOriginal-expiration`: Self = this.set("original-expiration", js.undefined)
+    def setTime(value: _empty): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

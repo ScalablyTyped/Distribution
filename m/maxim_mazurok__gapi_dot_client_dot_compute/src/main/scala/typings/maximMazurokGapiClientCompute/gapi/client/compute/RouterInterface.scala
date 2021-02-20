@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouterInterface extends js.Object {
+trait RouterInterface extends StObject {
   
   /**
     * IP address and range of the interface. The IP range must be in the RFC3927 link-local IP address space. The value must be a CIDR-formatted string, for example: 169.254.0.1/30. NOTE:
@@ -49,48 +50,36 @@ object RouterInterface {
   }
   
   @scala.inline
-  implicit class RouterInterfaceOps[Self <: RouterInterface] (val x: Self) extends AnyVal {
+  implicit class RouterInterfaceMutableBuilder[Self <: RouterInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpRange(value: String): Self = StObject.set(x, "ipRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpRangeUndefined: Self = StObject.set(x, "ipRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkedInterconnectAttachment(value: String): Self = StObject.set(x, "linkedInterconnectAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpRange(value: String): Self = this.set("ipRange", value.asInstanceOf[js.Any])
+    def setLinkedInterconnectAttachmentUndefined: Self = StObject.set(x, "linkedInterconnectAttachment", js.undefined)
     
     @scala.inline
-    def deleteIpRange: Self = this.set("ipRange", js.undefined)
+    def setLinkedVpnTunnel(value: String): Self = StObject.set(x, "linkedVpnTunnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedInterconnectAttachment(value: String): Self = this.set("linkedInterconnectAttachment", value.asInstanceOf[js.Any])
+    def setLinkedVpnTunnelUndefined: Self = StObject.set(x, "linkedVpnTunnel", js.undefined)
     
     @scala.inline
-    def deleteLinkedInterconnectAttachment: Self = this.set("linkedInterconnectAttachment", js.undefined)
+    def setManagementType(value: String): Self = StObject.set(x, "managementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedVpnTunnel(value: String): Self = this.set("linkedVpnTunnel", value.asInstanceOf[js.Any])
+    def setManagementTypeUndefined: Self = StObject.set(x, "managementType", js.undefined)
     
     @scala.inline
-    def deleteLinkedVpnTunnel: Self = this.set("linkedVpnTunnel", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagementType(value: String): Self = this.set("managementType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagementType: Self = this.set("managementType", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

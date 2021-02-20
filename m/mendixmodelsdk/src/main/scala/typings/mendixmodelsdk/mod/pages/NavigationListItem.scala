@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,16 +25,20 @@ class NavigationListItem protected ()
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-/* static members */
-@JSImport("mendixmodelsdk", "pages.NavigationListItem")
-@js.native
-object NavigationListItem extends js.Object {
+object NavigationListItem {
+  
+  @JSImport("mendixmodelsdk", "pages.NavigationListItem")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new NavigationListItem instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.NavigationListItem.create")
+  @js.native
   def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.NavigationListItem = js.native
   
   /**
@@ -41,9 +46,22 @@ object NavigationListItem extends js.Object {
     * The new NavigationListItem will be automatically stored in the 'items' property
     * of the parent NavigationList element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.NavigationListItem.createIn")
+  @js.native
   def createIn(container: typings.mendixmodelsdk.pagesMod.pages.NavigationList): typings.mendixmodelsdk.pagesMod.pages.NavigationListItem = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.NavigationListItem.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.NavigationListItem.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

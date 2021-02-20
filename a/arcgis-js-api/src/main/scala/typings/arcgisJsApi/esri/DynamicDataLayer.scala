@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`data-layer`
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,30 +49,18 @@ object DynamicDataLayer {
   }
   
   @scala.inline
-  implicit class DynamicDataLayerOps[Self <: DynamicDataLayer] (val x: Self) extends AnyVal {
+  implicit class DynamicDataLayerMutableBuilder[Self <: DynamicDataLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: js.Array[DynamicDataLayerFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: DynamicDataLayerFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setDataSource(value: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldsVarargs(value: DynamicDataLayerFields*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[DynamicDataLayerFields]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `data-layer`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `data-layer`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

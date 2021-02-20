@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pivot extends js.Object {
+trait Pivot extends StObject {
   
   /**
     * Dimension names for visible columns in the report response. Including "dateRange" produces a date range column; for each row in the response, dimension values in the date range
@@ -37,57 +38,45 @@ object Pivot {
   }
   
   @scala.inline
-  implicit class PivotOps[Self <: Pivot] (val x: Self) extends AnyVal {
+  implicit class PivotMutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldNamesVarargs(value: String*): Self = StObject.set(x, "fieldNames", js.Array(value :_*))
     
     @scala.inline
-    def setFieldNamesVarargs(value: String*): Self = this.set("fieldNames", js.Array(value :_*))
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldNames(value: js.Array[String]): Self = this.set("fieldNames", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteFieldNames: Self = this.set("fieldNames", js.undefined)
+    def setMetricAggregations(value: js.Array[String]): Self = StObject.set(x, "metricAggregations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMetricAggregationsUndefined: Self = StObject.set(x, "metricAggregations", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value :_*))
     
     @scala.inline
-    def setMetricAggregationsVarargs(value: String*): Self = this.set("metricAggregations", js.Array(value :_*))
+    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricAggregations(value: js.Array[String]): Self = this.set("metricAggregations", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMetricAggregations: Self = this.set("metricAggregations", js.undefined)
+    def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
-    
-    @scala.inline
-    def setOrderBysVarargs(value: OrderBy*): Self = this.set("orderBys", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrderBys(value: js.Array[OrderBy]): Self = this.set("orderBys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderBys: Self = this.set("orderBys", js.undefined)
+    def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
   }
 }

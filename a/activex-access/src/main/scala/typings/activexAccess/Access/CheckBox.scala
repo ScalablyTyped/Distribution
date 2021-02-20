@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckBox extends js.Object {
+trait CheckBox extends StObject {
   
   @JSName("Access.CheckBox_typekey")
   var AccessDotCheckBox_typekey: CheckBox = js.native

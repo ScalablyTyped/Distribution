@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of 2D texture materials used in the 3D model. */
 @js.native
-trait Printing3DTexture2CoordMaterialGroup extends js.Object {
+trait Printing3DTexture2CoordMaterialGroup extends StObject {
   
   /** Gets the identifier (ID) of the 2D texture material group. */
   var materialGroupId: Double = js.native
@@ -31,27 +32,15 @@ object Printing3DTexture2CoordMaterialGroup {
   }
   
   @scala.inline
-  implicit class Printing3DTexture2CoordMaterialGroupOps[Self <: Printing3DTexture2CoordMaterialGroup] (val x: Self) extends AnyVal {
+  implicit class Printing3DTexture2CoordMaterialGroupMutableBuilder[Self <: Printing3DTexture2CoordMaterialGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTexture(value: Printing3DModelTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaterialGroupId(value: Double): Self = this.set("materialGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTexture(value: Printing3DModelTexture): Self = this.set("texture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTexture2Coords(value: IVector[Printing3DTexture2CoordMaterial]): Self = this.set("texture2Coords", value.asInstanceOf[js.Any])
+    def setTexture2Coords(value: IVector[Printing3DTexture2CoordMaterial]): Self = StObject.set(x, "texture2Coords", value.asInstanceOf[js.Any])
   }
 }

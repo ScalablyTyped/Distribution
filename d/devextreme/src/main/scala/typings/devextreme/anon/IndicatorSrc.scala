@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndicatorSrc extends js.Object {
+trait IndicatorSrc extends StObject {
   
   var enabled: js.UndefOr[Boolean | auto] = js.native
   
@@ -35,72 +36,60 @@ object IndicatorSrc {
   }
   
   @scala.inline
-  implicit class IndicatorSrcOps[Self <: IndicatorSrc] (val x: Self) extends AnyVal {
+  implicit class IndicatorSrcMutableBuilder[Self <: IndicatorSrc] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean | auto): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean | auto): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setIndicatorSrc(value: String): Self = StObject.set(x, "indicatorSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setIndicatorSrcUndefined: Self = StObject.set(x, "indicatorSrc", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicatorSrc(value: String): Self = this.set("indicatorSrc", value.asInstanceOf[js.Any])
+    def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndicatorSrc: Self = this.set("indicatorSrc", js.undefined)
+    def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
     
     @scala.inline
-    def setShading(value: Boolean): Self = this.set("shading", value.asInstanceOf[js.Any])
+    def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
     
     @scala.inline
-    def deleteShading: Self = this.set("shading", js.undefined)
+    def setShowIndicator(value: Boolean): Self = StObject.set(x, "showIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadingColor(value: String): Self = this.set("shadingColor", value.asInstanceOf[js.Any])
+    def setShowIndicatorUndefined: Self = StObject.set(x, "showIndicator", js.undefined)
     
     @scala.inline
-    def deleteShadingColor: Self = this.set("shadingColor", js.undefined)
+    def setShowPane(value: Boolean): Self = StObject.set(x, "showPane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowIndicator(value: Boolean): Self = this.set("showIndicator", value.asInstanceOf[js.Any])
+    def setShowPaneUndefined: Self = StObject.set(x, "showPane", js.undefined)
     
     @scala.inline
-    def deleteShowIndicator: Self = this.set("showIndicator", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPane(value: Boolean): Self = this.set("showPane", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteShowPane: Self = this.set("showPane", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -2,15 +2,22 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Button/DefaultButton/DefaultButton", JSImport.Namespace)
-@js.native
-object defaultButtonMod extends js.Object {
+object defaultButtonMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Button/DefaultButton/DefaultButton", "DefaultButton")
   @js.native
-  class DefaultButton ()
-    extends Component[IButtonProps, js.Object, js.Any]
+  class DefaultButton protected ()
+    extends Component[IButtonProps, js.Object, js.Any] {
+    def this(props: IButtonProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IButtonProps, context: js.Any) = this()
+  }
 }

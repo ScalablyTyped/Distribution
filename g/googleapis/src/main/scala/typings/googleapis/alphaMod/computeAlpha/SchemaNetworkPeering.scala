@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Compute Engine should automatically create routes for the peering.
   */
 @js.native
-trait SchemaNetworkPeering extends js.Object {
+trait SchemaNetworkPeering extends StObject {
   
   /**
     * Whether Cloud Routers in this network can automatically advertise subnets
@@ -100,84 +101,72 @@ object SchemaNetworkPeering {
   }
   
   @scala.inline
-  implicit class SchemaNetworkPeeringOps[Self <: SchemaNetworkPeering] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkPeeringMutableBuilder[Self <: SchemaNetworkPeering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisePeerSubnetsViaRouters(value: Boolean): Self = StObject.set(x, "advertisePeerSubnetsViaRouters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertisePeerSubnetsViaRoutersUndefined: Self = StObject.set(x, "advertisePeerSubnetsViaRouters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCreateRoutes(value: Boolean): Self = StObject.set(x, "autoCreateRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisePeerSubnetsViaRouters(value: Boolean): Self = this.set("advertisePeerSubnetsViaRouters", value.asInstanceOf[js.Any])
+    def setAutoCreateRoutesUndefined: Self = StObject.set(x, "autoCreateRoutes", js.undefined)
     
     @scala.inline
-    def deleteAdvertisePeerSubnetsViaRouters: Self = this.set("advertisePeerSubnetsViaRouters", js.undefined)
+    def setExchangeSubnetRoutes(value: Boolean): Self = StObject.set(x, "exchangeSubnetRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCreateRoutes(value: Boolean): Self = this.set("autoCreateRoutes", value.asInstanceOf[js.Any])
+    def setExchangeSubnetRoutesUndefined: Self = StObject.set(x, "exchangeSubnetRoutes", js.undefined)
     
     @scala.inline
-    def deleteAutoCreateRoutes: Self = this.set("autoCreateRoutes", js.undefined)
+    def setExportCustomRoutes(value: Boolean): Self = StObject.set(x, "exportCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchangeSubnetRoutes(value: Boolean): Self = this.set("exchangeSubnetRoutes", value.asInstanceOf[js.Any])
+    def setExportCustomRoutesUndefined: Self = StObject.set(x, "exportCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteExchangeSubnetRoutes: Self = this.set("exchangeSubnetRoutes", js.undefined)
+    def setExportSubnetRoutesWithPublicIp(value: Boolean): Self = StObject.set(x, "exportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportCustomRoutes(value: Boolean): Self = this.set("exportCustomRoutes", value.asInstanceOf[js.Any])
+    def setExportSubnetRoutesWithPublicIpUndefined: Self = StObject.set(x, "exportSubnetRoutesWithPublicIp", js.undefined)
     
     @scala.inline
-    def deleteExportCustomRoutes: Self = this.set("exportCustomRoutes", js.undefined)
+    def setImportCustomRoutes(value: Boolean): Self = StObject.set(x, "importCustomRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportSubnetRoutesWithPublicIp(value: Boolean): Self = this.set("exportSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
+    def setImportCustomRoutesUndefined: Self = StObject.set(x, "importCustomRoutes", js.undefined)
     
     @scala.inline
-    def deleteExportSubnetRoutesWithPublicIp: Self = this.set("exportSubnetRoutesWithPublicIp", js.undefined)
+    def setImportSubnetRoutesWithPublicIp(value: Boolean): Self = StObject.set(x, "importSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportCustomRoutes(value: Boolean): Self = this.set("importCustomRoutes", value.asInstanceOf[js.Any])
+    def setImportSubnetRoutesWithPublicIpUndefined: Self = StObject.set(x, "importSubnetRoutesWithPublicIp", js.undefined)
     
     @scala.inline
-    def deleteImportCustomRoutes: Self = this.set("importCustomRoutes", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportSubnetRoutesWithPublicIp(value: Boolean): Self = this.set("importSubnetRoutesWithPublicIp", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImportSubnetRoutesWithPublicIp: Self = this.set("importSubnetRoutesWithPublicIp", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setStateDetails(value: String): Self = StObject.set(x, "stateDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setStateDetailsUndefined: Self = StObject.set(x, "stateDetails", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setStateDetails(value: String): Self = this.set("stateDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateDetails: Self = this.set("stateDetails", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

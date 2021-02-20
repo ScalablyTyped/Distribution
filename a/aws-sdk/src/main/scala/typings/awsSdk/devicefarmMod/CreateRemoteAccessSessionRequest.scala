@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRemoteAccessSessionRequest extends js.Object {
+trait CreateRemoteAccessSessionRequest extends StObject {
   
   /**
     * Unique identifier for the client. If you want access to multiple devices on the same client, you should pass the same clientId value in each call to CreateRemoteAccessSession. This identifier is required only if remoteDebugEnabled is set to true. Remote debugging is no longer supported.
@@ -76,84 +77,72 @@ object CreateRemoteAccessSessionRequest {
   }
   
   @scala.inline
-  implicit class CreateRemoteAccessSessionRequestOps[Self <: CreateRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRemoteAccessSessionRequestMutableBuilder[Self <: CreateRemoteAccessSessionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: ClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfiguration(value: CreateRemoteAccessSessionConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceArn(value: AmazonResourceName): Self = this.set("deviceArn", value.asInstanceOf[js.Any])
+    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
     @scala.inline
-    def setProjectArn(value: AmazonResourceName): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    def setDeviceArn(value: AmazonResourceName): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientId): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setInstanceArn(value: AmazonResourceName): Self = StObject.set(x, "instanceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setInstanceArnUndefined: Self = StObject.set(x, "instanceArn", js.undefined)
     
     @scala.inline
-    def setConfiguration(value: CreateRemoteAccessSessionConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setInteractionMode(value: InteractionMode): Self = StObject.set(x, "interactionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    def setInteractionModeUndefined: Self = StObject.set(x, "interactionMode", js.undefined)
     
     @scala.inline
-    def setInstanceArn(value: AmazonResourceName): Self = this.set("instanceArn", value.asInstanceOf[js.Any])
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstanceArn: Self = this.set("instanceArn", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setInteractionMode(value: InteractionMode): Self = this.set("interactionMode", value.asInstanceOf[js.Any])
+    def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInteractionMode: Self = this.set("interactionMode", js.undefined)
+    def setRemoteDebugEnabled(value: Boolean): Self = StObject.set(x, "remoteDebugEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRemoteDebugEnabledUndefined: Self = StObject.set(x, "remoteDebugEnabled", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRemoteRecordAppArn(value: AmazonResourceName): Self = StObject.set(x, "remoteRecordAppArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteDebugEnabled(value: Boolean): Self = this.set("remoteDebugEnabled", value.asInstanceOf[js.Any])
+    def setRemoteRecordAppArnUndefined: Self = StObject.set(x, "remoteRecordAppArn", js.undefined)
     
     @scala.inline
-    def deleteRemoteDebugEnabled: Self = this.set("remoteDebugEnabled", js.undefined)
+    def setRemoteRecordEnabled(value: Boolean): Self = StObject.set(x, "remoteRecordEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteRecordAppArn(value: AmazonResourceName): Self = this.set("remoteRecordAppArn", value.asInstanceOf[js.Any])
+    def setRemoteRecordEnabledUndefined: Self = StObject.set(x, "remoteRecordEnabled", js.undefined)
     
     @scala.inline
-    def deleteRemoteRecordAppArn: Self = this.set("remoteRecordAppArn", js.undefined)
+    def setSkipAppResign(value: Boolean): Self = StObject.set(x, "skipAppResign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteRecordEnabled(value: Boolean): Self = this.set("remoteRecordEnabled", value.asInstanceOf[js.Any])
+    def setSkipAppResignUndefined: Self = StObject.set(x, "skipAppResign", js.undefined)
     
     @scala.inline
-    def deleteRemoteRecordEnabled: Self = this.set("remoteRecordEnabled", js.undefined)
+    def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipAppResign(value: Boolean): Self = this.set("skipAppResign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipAppResign: Self = this.set("skipAppResign", js.undefined)
-    
-    @scala.inline
-    def setSshPublicKey(value: SshPublicKey): Self = this.set("sshPublicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSshPublicKey: Self = this.set("sshPublicKey", js.undefined)
+    def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
   }
 }

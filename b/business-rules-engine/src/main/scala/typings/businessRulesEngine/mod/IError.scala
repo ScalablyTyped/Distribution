@@ -1,11 +1,12 @@
 package typings.businessRulesEngine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IError extends js.Object {
+trait IError extends StObject {
   
   var ErrorMessage: String = js.native
   
@@ -22,30 +23,18 @@ object IError {
   }
   
   @scala.inline
-  implicit class IErrorOps[Self <: IError] (val x: Self) extends AnyVal {
+  implicit class IErrorMutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasError(value: Boolean): Self = StObject.set(x, "HasError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTranslateArgs(value: IErrorTranslateArgs): Self = StObject.set(x, "TranslateArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasError(value: Boolean): Self = this.set("HasError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTranslateArgs(value: IErrorTranslateArgs): Self = this.set("TranslateArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslateArgs: Self = this.set("TranslateArgs", js.undefined)
+    def setTranslateArgsUndefined: Self = StObject.set(x, "TranslateArgs", js.undefined)
   }
 }

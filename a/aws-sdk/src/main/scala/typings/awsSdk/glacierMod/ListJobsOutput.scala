@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobsOutput extends js.Object {
+trait ListJobsOutput extends StObject {
   
   /**
     * A list of job objects. Each job object contains metadata describing the job.
@@ -26,33 +27,21 @@ object ListJobsOutput {
   }
   
   @scala.inline
-  implicit class ListJobsOutputOps[Self <: ListJobsOutput] (val x: Self) extends AnyVal {
+  implicit class ListJobsOutputMutableBuilder[Self <: ListJobsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobList(value: JobList): Self = StObject.set(x, "JobList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobListUndefined: Self = StObject.set(x, "JobList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobListVarargs(value: GlacierJobDescription*): Self = StObject.set(x, "JobList", js.Array(value :_*))
     
     @scala.inline
-    def setJobListVarargs(value: GlacierJobDescription*): Self = this.set("JobList", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobList(value: JobList): Self = this.set("JobList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobList: Self = this.set("JobList", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

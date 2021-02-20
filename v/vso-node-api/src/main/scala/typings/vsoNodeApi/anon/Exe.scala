@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exe extends js.Object {
+trait Exe extends StObject {
   
   var exe: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object Exe {
   }
   
   @scala.inline
-  implicit class ExeOps[Self <: Exe] (val x: Self) extends AnyVal {
+  implicit class ExeMutableBuilder[Self <: Exe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExe(value: scala.Double): Self = StObject.set(x, "exe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMsi(value: scala.Double): Self = StObject.set(x, "msi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferralLink(value: scala.Double): Self = StObject.set(x, "referralLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExe(value: scala.Double): Self = this.set("exe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMsi(value: scala.Double): Self = this.set("msi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferralLink(value: scala.Double): Self = this.set("referralLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVsix(value: scala.Double): Self = this.set("vsix", value.asInstanceOf[js.Any])
+    def setVsix(value: scala.Double): Self = StObject.set(x, "vsix", value.asInstanceOf[js.Any])
   }
 }

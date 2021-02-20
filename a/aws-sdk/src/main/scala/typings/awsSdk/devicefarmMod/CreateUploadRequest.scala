@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateUploadRequest extends js.Object {
+trait CreateUploadRequest extends StObject {
   
   /**
     * The upload's content type (for example, application/octet-stream).
@@ -37,33 +38,21 @@ object CreateUploadRequest {
   }
   
   @scala.inline
-  implicit class CreateUploadRequestOps[Self <: CreateUploadRequest] (val x: Self) extends AnyVal {
+  implicit class CreateUploadRequestMutableBuilder[Self <: CreateUploadRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProjectArn(value: AmazonResourceName): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectArn(value: AmazonResourceName): Self = this.set("projectArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: UploadType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setType(value: UploadType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

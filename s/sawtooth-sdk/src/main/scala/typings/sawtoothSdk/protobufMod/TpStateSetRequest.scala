@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,16 +34,18 @@ class TpStateSetRequest () extends ITpStateSetRequest {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest")
-@js.native
-object TpStateSetRequest extends js.Object {
+object TpStateSetRequest {
   
   /**
     * Creates a new TpStateSetRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns TpStateSetRequest instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.create")
+  @js.native
   def create(): TpStateSetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.create")
+  @js.native
   def create(properties: ITpStateSetRequest): TpStateSetRequest = js.native
   
   /**
@@ -53,9 +56,17 @@ object TpStateSetRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.decode")
+  @js.native
   def decode(reader: Reader): TpStateSetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): TpStateSetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): TpStateSetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): TpStateSetRequest = js.native
   
   /**
@@ -65,7 +76,11 @@ object TpStateSetRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): TpStateSetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): TpStateSetRequest = js.native
   
   /**
@@ -74,7 +89,11 @@ object TpStateSetRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.encode")
+  @js.native
   def encode(message: ITpStateSetRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.encode")
+  @js.native
   def encode(message: ITpStateSetRequest, writer: Writer): Writer = js.native
   
   /**
@@ -83,7 +102,11 @@ object TpStateSetRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITpStateSetRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: ITpStateSetRequest, writer: Writer): Writer = js.native
   
   /**
@@ -91,6 +114,8 @@ object TpStateSetRequest extends js.Object {
     * @param object Plain object
     * @returns TpStateSetRequest
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): TpStateSetRequest = js.native
   
   /**
@@ -99,7 +124,11 @@ object TpStateSetRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.toObject")
+  @js.native
   def toObject(message: TpStateSetRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.toObject")
+  @js.native
   def toObject(message: TpStateSetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -107,5 +136,7 @@ object TpStateSetRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "TpStateSetRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

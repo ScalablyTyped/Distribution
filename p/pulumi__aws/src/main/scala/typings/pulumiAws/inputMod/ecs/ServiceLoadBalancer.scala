@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.ecs
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceLoadBalancer extends js.Object {
+trait ServiceLoadBalancer extends StObject {
   
   /**
     * The name of the container to associate with the load balancer (as it appears in a container definition).
@@ -37,36 +38,24 @@ object ServiceLoadBalancer {
   }
   
   @scala.inline
-  implicit class ServiceLoadBalancerOps[Self <: ServiceLoadBalancer] (val x: Self) extends AnyVal {
+  implicit class ServiceLoadBalancerMutableBuilder[Self <: ServiceLoadBalancer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerPort(value: Input[Double]): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElbName(value: Input[String]): Self = StObject.set(x, "elbName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerName(value: Input[String]): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    def setElbNameUndefined: Self = StObject.set(x, "elbName", js.undefined)
     
     @scala.inline
-    def setContainerPort(value: Input[Double]): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    def setTargetGroupArn(value: Input[String]): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElbName(value: Input[String]): Self = this.set("elbName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElbName: Self = this.set("elbName", js.undefined)
-    
-    @scala.inline
-    def setTargetGroupArn(value: Input[String]): Self = this.set("targetGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupArn: Self = this.set("targetGroupArn", js.undefined)
+    def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
   }
 }

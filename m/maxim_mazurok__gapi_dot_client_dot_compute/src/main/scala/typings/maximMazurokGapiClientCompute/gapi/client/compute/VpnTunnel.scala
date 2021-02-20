@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnTunnel extends js.Object {
+trait VpnTunnel extends StObject {
   
   /** [Output Only] Creation timestamp in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[String] = js.native
@@ -120,156 +121,144 @@ object VpnTunnel {
   }
   
   @scala.inline
-  implicit class VpnTunnelOps[Self <: VpnTunnel] (val x: Self) extends AnyVal {
+  implicit class VpnTunnelMutableBuilder[Self <: VpnTunnel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    def setDetailedStatus(value: String): Self = StObject.set(x, "detailedStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDetailedStatusUndefined: Self = StObject.set(x, "detailedStatus", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailedStatus(value: String): Self = this.set("detailedStatus", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDetailedStatus: Self = this.set("detailedStatus", js.undefined)
+    def setIkeVersion(value: Double): Self = StObject.set(x, "ikeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIkeVersionUndefined: Self = StObject.set(x, "ikeVersion", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIkeVersion(value: Double): Self = this.set("ikeVersion", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIkeVersion: Self = this.set("ikeVersion", js.undefined)
+    def setLocalTrafficSelector(value: js.Array[String]): Self = StObject.set(x, "localTrafficSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocalTrafficSelectorUndefined: Self = StObject.set(x, "localTrafficSelector", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLocalTrafficSelectorVarargs(value: String*): Self = StObject.set(x, "localTrafficSelector", js.Array(value :_*))
     
     @scala.inline
-    def setLocalTrafficSelectorVarargs(value: String*): Self = this.set("localTrafficSelector", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTrafficSelector(value: js.Array[String]): Self = this.set("localTrafficSelector", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocalTrafficSelector: Self = this.set("localTrafficSelector", js.undefined)
+    def setPeerExternalGateway(value: String): Self = StObject.set(x, "peerExternalGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPeerExternalGatewayInterface(value: Double): Self = StObject.set(x, "peerExternalGatewayInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPeerExternalGatewayInterfaceUndefined: Self = StObject.set(x, "peerExternalGatewayInterface", js.undefined)
     
     @scala.inline
-    def setPeerExternalGateway(value: String): Self = this.set("peerExternalGateway", value.asInstanceOf[js.Any])
+    def setPeerExternalGatewayUndefined: Self = StObject.set(x, "peerExternalGateway", js.undefined)
     
     @scala.inline
-    def deletePeerExternalGateway: Self = this.set("peerExternalGateway", js.undefined)
+    def setPeerGcpGateway(value: String): Self = StObject.set(x, "peerGcpGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerExternalGatewayInterface(value: Double): Self = this.set("peerExternalGatewayInterface", value.asInstanceOf[js.Any])
+    def setPeerGcpGatewayUndefined: Self = StObject.set(x, "peerGcpGateway", js.undefined)
     
     @scala.inline
-    def deletePeerExternalGatewayInterface: Self = this.set("peerExternalGatewayInterface", js.undefined)
+    def setPeerIp(value: String): Self = StObject.set(x, "peerIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerGcpGateway(value: String): Self = this.set("peerGcpGateway", value.asInstanceOf[js.Any])
+    def setPeerIpUndefined: Self = StObject.set(x, "peerIp", js.undefined)
     
     @scala.inline
-    def deletePeerGcpGateway: Self = this.set("peerGcpGateway", js.undefined)
+    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerIp(value: String): Self = this.set("peerIp", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
     @scala.inline
-    def deletePeerIp: Self = this.set("peerIp", js.undefined)
+    def setRemoteTrafficSelector(value: js.Array[String]): Self = StObject.set(x, "remoteTrafficSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    def setRemoteTrafficSelectorUndefined: Self = StObject.set(x, "remoteTrafficSelector", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("region", js.undefined)
+    def setRemoteTrafficSelectorVarargs(value: String*): Self = StObject.set(x, "remoteTrafficSelector", js.Array(value :_*))
     
     @scala.inline
-    def setRemoteTrafficSelectorVarargs(value: String*): Self = this.set("remoteTrafficSelector", js.Array(value :_*))
+    def setRouter(value: String): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteTrafficSelector(value: js.Array[String]): Self = this.set("remoteTrafficSelector", value.asInstanceOf[js.Any])
+    def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
     @scala.inline
-    def deleteRemoteTrafficSelector: Self = this.set("remoteTrafficSelector", js.undefined)
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouter(value: String): Self = this.set("router", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRouter: Self = this.set("router", js.undefined)
+    def setSharedSecret(value: String): Self = StObject.set(x, "sharedSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSharedSecretHash(value: String): Self = StObject.set(x, "sharedSecretHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSharedSecretHashUndefined: Self = StObject.set(x, "sharedSecretHash", js.undefined)
     
     @scala.inline
-    def setSharedSecret(value: String): Self = this.set("sharedSecret", value.asInstanceOf[js.Any])
+    def setSharedSecretUndefined: Self = StObject.set(x, "sharedSecret", js.undefined)
     
     @scala.inline
-    def deleteSharedSecret: Self = this.set("sharedSecret", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharedSecretHash(value: String): Self = this.set("sharedSecretHash", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSharedSecretHash: Self = this.set("sharedSecretHash", js.undefined)
+    def setTargetVpnGateway(value: String): Self = StObject.set(x, "targetVpnGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTargetVpnGatewayUndefined: Self = StObject.set(x, "targetVpnGateway", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVpnGateway(value: String): Self = StObject.set(x, "vpnGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetVpnGateway(value: String): Self = this.set("targetVpnGateway", value.asInstanceOf[js.Any])
+    def setVpnGatewayInterface(value: Double): Self = StObject.set(x, "vpnGatewayInterface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTargetVpnGateway: Self = this.set("targetVpnGateway", js.undefined)
+    def setVpnGatewayInterfaceUndefined: Self = StObject.set(x, "vpnGatewayInterface", js.undefined)
     
     @scala.inline
-    def setVpnGateway(value: String): Self = this.set("vpnGateway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnGateway: Self = this.set("vpnGateway", js.undefined)
-    
-    @scala.inline
-    def setVpnGatewayInterface(value: Double): Self = this.set("vpnGatewayInterface", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnGatewayInterface: Self = this.set("vpnGatewayInterface", js.undefined)
+    def setVpnGatewayUndefined: Self = StObject.set(x, "vpnGateway", js.undefined)
   }
 }

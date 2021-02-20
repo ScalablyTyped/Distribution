@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitRefUpdate extends js.Object {
+trait GitRefUpdate extends StObject {
   
   var isLocked: Boolean = js.native
   
@@ -26,33 +27,21 @@ object GitRefUpdate {
   }
   
   @scala.inline
-  implicit class GitRefUpdateOps[Self <: GitRefUpdate] (val x: Self) extends AnyVal {
+  implicit class GitRefUpdateMutableBuilder[Self <: GitRefUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewObjectId(value: String): Self = StObject.set(x, "newObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocked(value: Boolean): Self = this.set("isLocked", value.asInstanceOf[js.Any])
+    def setOldObjectId(value: String): Self = StObject.set(x, "oldObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewObjectId(value: String): Self = this.set("newObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldObjectId(value: String): Self = this.set("oldObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryId(value: String): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
+    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
   }
 }

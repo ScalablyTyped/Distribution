@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Web.Http
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HttpStatusCode extends js.Object
+sealed trait HttpStatusCode extends StObject
 /** Contains the values of status codes defined for HTTP in the response to an HTTP request. */
 @JSGlobal("Windows.Web.Http.HttpStatusCode")
 @js.native
-object HttpStatusCode extends js.Object {
+object HttpStatusCode extends StObject {
   
   /** The request has been accepted for further processing. */
   @js.native

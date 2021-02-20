@@ -6,6 +6,7 @@ import typings.androiduix.android.view.View
 import typings.androiduix.android.view.ViewGroup
 import typings.androiduix.java_.util.Comparator
 import typings.androiduix.java_.util.List
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,75 +97,63 @@ object ArrayAdapter {
   }
   
   @scala.inline
-  implicit class ArrayAdapterOps[Self <: ArrayAdapter[_], T] (val x: Self with ArrayAdapter[T]) extends AnyVal {
+  implicit class ArrayAdapterMutableBuilder[Self <: ArrayAdapter[_], T] (val x: Self with ArrayAdapter[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: T => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAll(value: List[T] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: T => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    def setCreateViewFromResource(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "createViewFromResource", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAddAll(value: List[T] => Unit): Self = this.set("addAll", js.Any.fromFunction1(value))
+    def setGetContext(value: () => Context): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetPosition(value: T => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateViewFromResource(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("createViewFromResource", js.Any.fromFunction4(value))
+    def setInit(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetContext(value: () => Context): Self = this.set("getContext", js.Any.fromFunction0(value))
+    def setInsert(value: (T, Double) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPosition(value: T => Double): Self = this.set("getPosition", js.Any.fromFunction1(value))
+    def setMContext(value: js.Any): Self = StObject.set(x, "mContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("init", js.Any.fromFunction4(value))
+    def setMDropDownResource(value: js.Any): Self = StObject.set(x, "mDropDownResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: (T, Double) => Unit): Self = this.set("insert", js.Any.fromFunction2(value))
+    def setMFieldId(value: js.Any): Self = StObject.set(x, "mFieldId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMContext(value: js.Any): Self = this.set("mContext", value.asInstanceOf[js.Any])
+    def setMInflater(value: js.Any): Self = StObject.set(x, "mInflater", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMDropDownResource(value: js.Any): Self = this.set("mDropDownResource", value.asInstanceOf[js.Any])
+    def setMNotifyOnChange(value: js.Any): Self = StObject.set(x, "mNotifyOnChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMFieldId(value: js.Any): Self = this.set("mFieldId", value.asInstanceOf[js.Any])
+    def setMObjects(value: js.Any): Self = StObject.set(x, "mObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMInflater(value: js.Any): Self = this.set("mInflater", value.asInstanceOf[js.Any])
+    def setMResource(value: js.Any): Self = StObject.set(x, "mResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMNotifyOnChange(value: js.Any): Self = this.set("mNotifyOnChange", value.asInstanceOf[js.Any])
+    def setRemove(value: T => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMObjects(value: js.Any): Self = this.set("mObjects", value.asInstanceOf[js.Any])
+    def setSetDropDownViewResource(value: String => Unit): Self = StObject.set(x, "setDropDownViewResource", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMResource(value: js.Any): Self = this.set("mResource", value.asInstanceOf[js.Any])
+    def setSetNotifyOnChange(value: Boolean => Unit): Self = StObject.set(x, "setNotifyOnChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: T => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDropDownViewResource(value: String => Unit): Self = this.set("setDropDownViewResource", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNotifyOnChange(value: Boolean => Unit): Self = this.set("setNotifyOnChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSort(value: Comparator[T] => Unit): Self = this.set("sort", js.Any.fromFunction1(value))
+    def setSort(value: Comparator[T] => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
   }
 }

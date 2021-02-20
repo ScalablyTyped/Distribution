@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.vssinterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiResourceLocation extends js.Object {
+trait ApiResourceLocation extends StObject {
   
   /**
     * Area name for this resource
@@ -65,42 +66,30 @@ object ApiResourceLocation {
   }
   
   @scala.inline
-  implicit class ApiResourceLocationOps[Self <: ApiResourceLocation] (val x: Self) extends AnyVal {
+  implicit class ApiResourceLocationMutableBuilder[Self <: ApiResourceLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: String): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setReleasedVersion(value: String): Self = StObject.set(x, "releasedVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxVersion(value: String): Self = this.set("maxVersion", value.asInstanceOf[js.Any])
+    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinVersion(value: String): Self = this.set("minVersion", value.asInstanceOf[js.Any])
+    def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleasedVersion(value: String): Self = this.set("releasedVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceVersion(value: Double): Self = this.set("resourceVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouteTemplate(value: String): Self = this.set("routeTemplate", value.asInstanceOf[js.Any])
+    def setRouteTemplate(value: String): Self = StObject.set(x, "routeTemplate", value.asInstanceOf[js.Any])
   }
 }

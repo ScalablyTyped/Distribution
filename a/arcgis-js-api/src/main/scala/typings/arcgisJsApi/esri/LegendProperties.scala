@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,72 +73,60 @@ object LegendProperties {
   }
   
   @scala.inline
-  implicit class LegendPropertiesOps[Self <: LegendProperties] (val x: Self) extends AnyVal {
+  implicit class LegendPropertiesMutableBuilder[Self <: LegendProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "activeLayerInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveLayerInfosUndefined: Self = StObject.set(x, "activeLayerInfos", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "activeLayerInfos", js.Array(value :_*))
     
     @scala.inline
-    def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = this.set("activeLayerInfos", js.Array(value :_*))
+    def setBasemapLegendVisible(value: Boolean): Self = StObject.set(x, "basemapLegendVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = this.set("activeLayerInfos", value.asInstanceOf[js.Any])
+    def setBasemapLegendVisibleUndefined: Self = StObject.set(x, "basemapLegendVisible", js.undefined)
     
     @scala.inline
-    def deleteActiveLayerInfos: Self = this.set("activeLayerInfos", js.undefined)
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapLegendVisible(value: Boolean): Self = this.set("basemapLegendVisible", value.asInstanceOf[js.Any])
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def deleteBasemapLegendVisible: Self = this.set("basemapLegendVisible", js.undefined)
+    def setLayerInfos(value: js.Array[LegendLayerInfos]): Self = StObject.set(x, "layerInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setLayerInfosUndefined: Self = StObject.set(x, "layerInfos", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setLayerInfosVarargs(value: LegendLayerInfos*): Self = StObject.set(x, "layerInfos", js.Array(value :_*))
     
     @scala.inline
-    def setLayerInfosVarargs(value: LegendLayerInfos*): Self = this.set("layerInfos", js.Array(value :_*))
+    def setRespectLayerVisibility(value: Boolean): Self = StObject.set(x, "respectLayerVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerInfos(value: js.Array[LegendLayerInfos]): Self = this.set("layerInfos", value.asInstanceOf[js.Any])
+    def setRespectLayerVisibilityUndefined: Self = StObject.set(x, "respectLayerVisibility", js.undefined)
     
     @scala.inline
-    def deleteLayerInfos: Self = this.set("layerInfos", js.undefined)
+    def setStyle(value: String | LegendStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRespectLayerVisibility(value: Boolean): Self = this.set("respectLayerVisibility", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRespectLayerVisibility: Self = this.set("respectLayerVisibility", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String | LegendStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setViewModel(value: LegendViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: LegendViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

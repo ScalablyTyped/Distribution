@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3VerticalsReservationReservationItemExtension extends js.Object {
+trait GoogleActionsOrdersV3VerticalsReservationReservationItemExtension extends StObject {
   
   /**
     * Confirmation code for this reservation.
@@ -71,81 +72,69 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionOps[Self <: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfirmationCode(value: String): Self = StObject.set(x, "confirmationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfirmationCodeUndefined: Self = StObject.set(x, "confirmationCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmationCode(value: String): Self = this.set("confirmationCode", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteConfirmationCode: Self = this.set("confirmationCode", js.undefined)
+    def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setPartySize(value: Double): Self = StObject.set(x, "partySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: GoogleActionsV2Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setPartySizeUndefined: Self = StObject.set(x, "partySize", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setReservationTime(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "reservationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartySize(value: Double): Self = this.set("partySize", value.asInstanceOf[js.Any])
+    def setReservationTimeUndefined: Self = StObject.set(x, "reservationTime", js.undefined)
     
     @scala.inline
-    def deletePartySize: Self = this.set("partySize", js.undefined)
+    def setStaffFacilitators(value: js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]): Self = StObject.set(x, "staffFacilitators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationTime(value: GoogleActionsOrdersV3Time): Self = this.set("reservationTime", value.asInstanceOf[js.Any])
+    def setStaffFacilitatorsUndefined: Self = StObject.set(x, "staffFacilitators", js.undefined)
     
     @scala.inline
-    def deleteReservationTime: Self = this.set("reservationTime", js.undefined)
+    def setStaffFacilitatorsVarargs(value: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator*): Self = StObject.set(x, "staffFacilitators", js.Array(value :_*))
     
     @scala.inline
-    def setStaffFacilitatorsVarargs(value: GoogleActionsOrdersV3VerticalsReservationStaffFacilitator*): Self = this.set("staffFacilitators", js.Array(value :_*))
+    def setStatus(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStaffFacilitators(value: js.Array[GoogleActionsOrdersV3VerticalsReservationStaffFacilitator]): Self = this.set("staffFacilitators", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStaffFacilitators: Self = this.set("staffFacilitators", js.undefined)
+    def setType(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUserAcceptableTimeRange(value: GoogleActionsOrdersV3Time): Self = StObject.set(x, "userAcceptableTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtensionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUserAcceptableTimeRangeUndefined: Self = StObject.set(x, "userAcceptableTimeRange", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUserVisibleStatusLabel(value: String): Self = StObject.set(x, "userVisibleStatusLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserAcceptableTimeRange(value: GoogleActionsOrdersV3Time): Self = this.set("userAcceptableTimeRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAcceptableTimeRange: Self = this.set("userAcceptableTimeRange", js.undefined)
-    
-    @scala.inline
-    def setUserVisibleStatusLabel(value: String): Self = this.set("userVisibleStatusLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVisibleStatusLabel: Self = this.set("userVisibleStatusLabel", js.undefined)
+    def setUserVisibleStatusLabelUndefined: Self = StObject.set(x, "userVisibleStatusLabel", js.undefined)
   }
 }

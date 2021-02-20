@@ -1,5 +1,6 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactTable.reactTableStrings.uniqueCount
   - typings.reactTable.reactTableStrings.count
 */
-trait DefaultAggregators extends js.Object
+trait DefaultAggregators extends StObject
 object DefaultAggregators {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,72 +37,60 @@ object EventMessageRequest {
   }
   
   @scala.inline
-  implicit class EventMessageRequestOps[Self <: EventMessageRequest] (val x: Self) extends AnyVal {
+  implicit class EventMessageRequestMutableBuilder[Self <: EventMessageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowNewTimeProposals(value: NullableOption[Boolean]): Self = StObject.set(x, "allowNewTimeProposals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowNewTimeProposalsNull: Self = StObject.set(x, "allowNewTimeProposals", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowNewTimeProposalsUndefined: Self = StObject.set(x, "allowNewTimeProposals", js.undefined)
     
     @scala.inline
-    def setAllowNewTimeProposals(value: NullableOption[Boolean]): Self = this.set("allowNewTimeProposals", value.asInstanceOf[js.Any])
+    def setMeetingRequestType(value: NullableOption[MeetingRequestType]): Self = StObject.set(x, "meetingRequestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowNewTimeProposals: Self = this.set("allowNewTimeProposals", js.undefined)
+    def setMeetingRequestTypeNull: Self = StObject.set(x, "meetingRequestType", null)
     
     @scala.inline
-    def setAllowNewTimeProposalsNull: Self = this.set("allowNewTimeProposals", null)
+    def setMeetingRequestTypeUndefined: Self = StObject.set(x, "meetingRequestType", js.undefined)
     
     @scala.inline
-    def setMeetingRequestType(value: NullableOption[MeetingRequestType]): Self = this.set("meetingRequestType", value.asInstanceOf[js.Any])
+    def setPreviousEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "previousEndDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMeetingRequestType: Self = this.set("meetingRequestType", js.undefined)
+    def setPreviousEndDateTimeNull: Self = StObject.set(x, "previousEndDateTime", null)
     
     @scala.inline
-    def setMeetingRequestTypeNull: Self = this.set("meetingRequestType", null)
+    def setPreviousEndDateTimeUndefined: Self = StObject.set(x, "previousEndDateTime", js.undefined)
     
     @scala.inline
-    def setPreviousEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("previousEndDateTime", value.asInstanceOf[js.Any])
+    def setPreviousLocation(value: NullableOption[Location]): Self = StObject.set(x, "previousLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousEndDateTime: Self = this.set("previousEndDateTime", js.undefined)
+    def setPreviousLocationNull: Self = StObject.set(x, "previousLocation", null)
     
     @scala.inline
-    def setPreviousEndDateTimeNull: Self = this.set("previousEndDateTime", null)
+    def setPreviousLocationUndefined: Self = StObject.set(x, "previousLocation", js.undefined)
     
     @scala.inline
-    def setPreviousLocation(value: NullableOption[Location]): Self = this.set("previousLocation", value.asInstanceOf[js.Any])
+    def setPreviousStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "previousStartDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousLocation: Self = this.set("previousLocation", js.undefined)
+    def setPreviousStartDateTimeNull: Self = StObject.set(x, "previousStartDateTime", null)
     
     @scala.inline
-    def setPreviousLocationNull: Self = this.set("previousLocation", null)
+    def setPreviousStartDateTimeUndefined: Self = StObject.set(x, "previousStartDateTime", js.undefined)
     
     @scala.inline
-    def setPreviousStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = this.set("previousStartDateTime", value.asInstanceOf[js.Any])
+    def setResponseRequested(value: NullableOption[Boolean]): Self = StObject.set(x, "responseRequested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousStartDateTime: Self = this.set("previousStartDateTime", js.undefined)
+    def setResponseRequestedNull: Self = StObject.set(x, "responseRequested", null)
     
     @scala.inline
-    def setPreviousStartDateTimeNull: Self = this.set("previousStartDateTime", null)
-    
-    @scala.inline
-    def setResponseRequested(value: NullableOption[Boolean]): Self = this.set("responseRequested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseRequested: Self = this.set("responseRequested", js.undefined)
-    
-    @scala.inline
-    def setResponseRequestedNull: Self = this.set("responseRequested", null)
+    def setResponseRequestedUndefined: Self = StObject.set(x, "responseRequested", js.undefined)
   }
 }

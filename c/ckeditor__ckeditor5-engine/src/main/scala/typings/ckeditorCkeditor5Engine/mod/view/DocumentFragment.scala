@@ -2,6 +2,7 @@ package typings.ckeditorCkeditor5Engine.mod.view
 
 import typings.std.Iterable
 import typings.std.Iterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // engine/view/documentfragment
 @JSImport("@ckeditor/ckeditor5-engine", "view.DocumentFragment")
 @js.native
-class DocumentFragment protected () extends js.Object {
+class DocumentFragment protected () extends StObject {
   protected def this(children: Node) = this()
   protected def this(children: Iterable[Node]) = this()
   

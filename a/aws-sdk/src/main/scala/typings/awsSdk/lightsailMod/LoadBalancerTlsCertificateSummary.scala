@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadBalancerTlsCertificateSummary extends js.Object {
+trait LoadBalancerTlsCertificateSummary extends StObject {
   
   /**
     * When true, the SSL/TLS certificate is attached to the Lightsail load balancer.
@@ -26,30 +27,18 @@ object LoadBalancerTlsCertificateSummary {
   }
   
   @scala.inline
-  implicit class LoadBalancerTlsCertificateSummaryOps[Self <: LoadBalancerTlsCertificateSummary] (val x: Self) extends AnyVal {
+  implicit class LoadBalancerTlsCertificateSummaryMutableBuilder[Self <: LoadBalancerTlsCertificateSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAttachedUndefined: Self = StObject.set(x, "isAttached", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAttached(value: Boolean): Self = this.set("isAttached", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsAttached: Self = this.set("isAttached", js.undefined)
-    
-    @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

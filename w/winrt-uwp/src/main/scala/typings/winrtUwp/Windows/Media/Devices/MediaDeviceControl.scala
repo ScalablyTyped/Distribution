@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.anon.ReturnValueValue
 import typings.winrtUwp.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets or sets a device setting on a camera. */
 @js.native
-trait MediaDeviceControl extends js.Object {
+trait MediaDeviceControl extends StObject {
   
   /** Gets the capabilities of the camera for this camera setting. */
   var capabilities: MediaDeviceControlCapabilities = js.native
@@ -52,33 +53,21 @@ object MediaDeviceControl {
   }
   
   @scala.inline
-  implicit class MediaDeviceControlOps[Self <: MediaDeviceControl] (val x: Self) extends AnyVal {
+  implicit class MediaDeviceControlMutableBuilder[Self <: MediaDeviceControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: MediaDeviceControlCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTryGetAuto(value: () => Value): Self = StObject.set(x, "tryGetAuto", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTryGetValue(value: () => ReturnValueValue): Self = StObject.set(x, "tryGetValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCapabilities(value: MediaDeviceControlCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setTrySetAuto(value: Boolean => Boolean): Self = StObject.set(x, "trySetAuto", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTryGetAuto(value: () => Value): Self = this.set("tryGetAuto", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTryGetValue(value: () => ReturnValueValue): Self = this.set("tryGetValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTrySetAuto(value: Boolean => Boolean): Self = this.set("trySetAuto", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTrySetValue(value: Double => Boolean): Self = this.set("trySetValue", js.Any.fromFunction1(value))
+    def setTrySetValue(value: Double => Boolean): Self = StObject.set(x, "trySetValue", js.Any.fromFunction1(value))
   }
 }

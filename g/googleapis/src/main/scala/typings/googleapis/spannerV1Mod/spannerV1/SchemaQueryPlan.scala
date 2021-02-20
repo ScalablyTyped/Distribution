@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains an ordered list of nodes appearing in the query plan.
   */
 @js.native
-trait SchemaQueryPlan extends js.Object {
+trait SchemaQueryPlan extends StObject {
   
   /**
     * The nodes in the query plan. Plan nodes are returned in pre-order
@@ -26,27 +27,15 @@ object SchemaQueryPlan {
   }
   
   @scala.inline
-  implicit class SchemaQueryPlanOps[Self <: SchemaQueryPlan] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryPlanMutableBuilder[Self <: SchemaQueryPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlanNodes(value: js.Array[SchemaPlanNode]): Self = StObject.set(x, "planNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlanNodesUndefined: Self = StObject.set(x, "planNodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlanNodesVarargs(value: SchemaPlanNode*): Self = this.set("planNodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlanNodes(value: js.Array[SchemaPlanNode]): Self = this.set("planNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlanNodes: Self = this.set("planNodes", js.undefined)
+    def setPlanNodesVarargs(value: SchemaPlanNode*): Self = StObject.set(x, "planNodes", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterDbRevision extends js.Object {
+trait ClusterDbRevision extends StObject {
   
   /**
     * The unique identifier of the cluster.
@@ -36,45 +37,33 @@ object ClusterDbRevision {
   }
   
   @scala.inline
-  implicit class ClusterDbRevisionOps[Self <: ClusterDbRevision] (val x: Self) extends AnyVal {
+  implicit class ClusterDbRevisionMutableBuilder[Self <: ClusterDbRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentDatabaseRevision(value: String): Self = StObject.set(x, "CurrentDatabaseRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    def setCurrentDatabaseRevisionUndefined: Self = StObject.set(x, "CurrentDatabaseRevision", js.undefined)
     
     @scala.inline
-    def deleteClusterIdentifier: Self = this.set("ClusterIdentifier", js.undefined)
+    def setDatabaseRevisionReleaseDate(value: TStamp): Self = StObject.set(x, "DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDatabaseRevision(value: String): Self = this.set("CurrentDatabaseRevision", value.asInstanceOf[js.Any])
+    def setDatabaseRevisionReleaseDateUndefined: Self = StObject.set(x, "DatabaseRevisionReleaseDate", js.undefined)
     
     @scala.inline
-    def deleteCurrentDatabaseRevision: Self = this.set("CurrentDatabaseRevision", js.undefined)
+    def setRevisionTargets(value: RevisionTargetsList): Self = StObject.set(x, "RevisionTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseRevisionReleaseDate(value: TStamp): Self = this.set("DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
+    def setRevisionTargetsUndefined: Self = StObject.set(x, "RevisionTargets", js.undefined)
     
     @scala.inline
-    def deleteDatabaseRevisionReleaseDate: Self = this.set("DatabaseRevisionReleaseDate", js.undefined)
-    
-    @scala.inline
-    def setRevisionTargetsVarargs(value: RevisionTarget*): Self = this.set("RevisionTargets", js.Array(value :_*))
-    
-    @scala.inline
-    def setRevisionTargets(value: RevisionTargetsList): Self = this.set("RevisionTargets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionTargets: Self = this.set("RevisionTargets", js.undefined)
+    def setRevisionTargetsVarargs(value: RevisionTarget*): Self = StObject.set(x, "RevisionTargets", js.Array(value :_*))
   }
 }

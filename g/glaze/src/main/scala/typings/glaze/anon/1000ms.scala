@@ -8,12 +8,13 @@ import typings.glaze.glazeStrings.Dot5s
 import typings.glaze.glazeStrings.Dot7s
 import typings.glaze.glazeStrings.`1s`
 import typings.glaze.glazeStrings.`75ms`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `1000ms` extends js.Object {
+trait `1000ms` extends StObject {
   
   val `1000ms`: `1s` = js.native
   
@@ -57,42 +58,30 @@ object `1000ms` {
   }
   
   @scala.inline
-  implicit class `1000msOps`[Self <: `1000ms`] (val x: Self) extends AnyVal {
+  implicit class `1000msMutableBuilder`[Self <: `1000ms`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1000ms(value: `1s`): Self = StObject.set(x, "1000ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set100ms(value: Dot1s): Self = StObject.set(x, "100ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set150ms(value: Dot15s): Self = StObject.set(x, "150ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1000ms(value: `1s`): Self = this.set("1000ms", value.asInstanceOf[js.Any])
+    def set200ms(value: Dot2s): Self = StObject.set(x, "200ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set100ms(value: Dot1s): Self = this.set("100ms", value.asInstanceOf[js.Any])
+    def set300ms(value: Dot3s): Self = StObject.set(x, "300ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set150ms(value: Dot15s): Self = this.set("150ms", value.asInstanceOf[js.Any])
+    def set500ms(value: Dot5s): Self = StObject.set(x, "500ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set200ms(value: Dot2s): Self = this.set("200ms", value.asInstanceOf[js.Any])
+    def set700ms(value: Dot7s): Self = StObject.set(x, "700ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set300ms(value: Dot3s): Self = this.set("300ms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set500ms(value: Dot5s): Self = this.set("500ms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set700ms(value: Dot7s): Self = this.set("700ms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set75ms(value: `75ms`): Self = this.set("75ms", value.asInstanceOf[js.Any])
+    def set75ms(value: `75ms`): Self = StObject.set(x, "75ms", value.asInstanceOf[js.Any])
   }
 }

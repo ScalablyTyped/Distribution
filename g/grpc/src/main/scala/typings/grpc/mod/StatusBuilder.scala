@@ -1,12 +1,13 @@
 package typings.grpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "StatusBuilder")
 @js.native
-class StatusBuilder () extends js.Object {
+class StatusBuilder () extends StObject {
   
   /**
     * Builds the status object

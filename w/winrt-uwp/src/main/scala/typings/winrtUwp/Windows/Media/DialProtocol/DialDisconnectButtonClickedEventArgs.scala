@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Media.DialProtocol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the event arguments for the DisconnectButtonClicked event on the DialDevicePicker object. */
 @js.native
-trait DialDisconnectButtonClickedEventArgs extends js.Object {
+trait DialDisconnectButtonClickedEventArgs extends StObject {
   
   /** Gets the DialDevice object that represents the remote device that the user wants to disconnect. */
   var device: DialDevice = js.native
@@ -20,21 +21,9 @@ object DialDisconnectButtonClickedEventArgs {
   }
   
   @scala.inline
-  implicit class DialDisconnectButtonClickedEventArgsOps[Self <: DialDisconnectButtonClickedEventArgs] (val x: Self) extends AnyVal {
+  implicit class DialDisconnectButtonClickedEventArgsMutableBuilder[Self <: DialDisconnectButtonClickedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDevice(value: DialDevice): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setDevice(value: DialDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
   }
 }

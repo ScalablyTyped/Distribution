@@ -1,16 +1,19 @@
 package typings.rcPicker
 
 import typings.rcPicker.generateMod.GenerateConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-picker/es/utils/timeUtil", JSImport.Namespace)
-@js.native
-object timeUtilMod extends js.Object {
+object timeUtilMod {
   
+  @JSImport("rc-picker/es/utils/timeUtil", "getLastDay")
+  @js.native
   def getLastDay[DateType](generateConfig: GenerateConfig[DateType], date: DateType): String = js.native
   
+  @JSImport("rc-picker/es/utils/timeUtil", "getLowerBoundTime")
+  @js.native
   def getLowerBoundTime(
     hour: Double,
     minute: Double,
@@ -20,6 +23,8 @@ object timeUtilMod extends js.Object {
     secondStep: Double
   ): js.Tuple3[Double, Double, Double] = js.native
   
+  @JSImport("rc-picker/es/utils/timeUtil", "setTime")
+  @js.native
   def setTime[DateType](
     generateConfig: GenerateConfig[DateType],
     date: DateType,

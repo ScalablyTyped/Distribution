@@ -1,11 +1,12 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddSider extends js.Object {
+trait AddSider extends StObject {
   
   def addSider(id: String): Unit = js.native
   
@@ -20,24 +21,12 @@ object AddSider {
   }
   
   @scala.inline
-  implicit class AddSiderOps[Self <: AddSider] (val x: Self) extends AnyVal {
+  implicit class AddSiderMutableBuilder[Self <: AddSider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSider(value: String => Unit): Self = StObject.set(x, "addSider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddSider(value: String => Unit): Self = this.set("addSider", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSider(value: String => Unit): Self = this.set("removeSider", js.Any.fromFunction1(value))
+    def setRemoveSider(value: String => Unit): Self = StObject.set(x, "removeSider", js.Any.fromFunction1(value))
   }
 }

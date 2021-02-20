@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,60 +32,48 @@ object DetectedApp {
   }
   
   @scala.inline
-  implicit class DetectedAppOps[Self <: DetectedApp] (val x: Self) extends AnyVal {
+  implicit class DetectedAppMutableBuilder[Self <: DetectedApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCount(value: Double): Self = this.set("deviceCount", value.asInstanceOf[js.Any])
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def deleteDeviceCount: Self = this.set("deviceCount", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setManagedDevices(value: NullableOption[js.Array[ManagedDevice]]): Self = StObject.set(x, "managedDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setManagedDevicesNull: Self = StObject.set(x, "managedDevices", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setManagedDevicesUndefined: Self = StObject.set(x, "managedDevices", js.undefined)
     
     @scala.inline
-    def setManagedDevicesVarargs(value: ManagedDevice*): Self = this.set("managedDevices", js.Array(value :_*))
+    def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value :_*))
     
     @scala.inline
-    def setManagedDevices(value: NullableOption[js.Array[ManagedDevice]]): Self = this.set("managedDevices", value.asInstanceOf[js.Any])
+    def setSizeInByte(value: Double): Self = StObject.set(x, "sizeInByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManagedDevices: Self = this.set("managedDevices", js.undefined)
+    def setSizeInByteUndefined: Self = StObject.set(x, "sizeInByte", js.undefined)
     
     @scala.inline
-    def setManagedDevicesNull: Self = this.set("managedDevices", null)
+    def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeInByte(value: Double): Self = this.set("sizeInByte", value.asInstanceOf[js.Any])
+    def setVersionNull: Self = StObject.set(x, "version", null)
     
     @scala.inline
-    def deleteSizeInByte: Self = this.set("sizeInByte", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: NullableOption[String]): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionNull: Self = this.set("version", null)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

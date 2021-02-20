@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueueApi extends js.Object {
+trait QueueApi extends StObject {
   
   var clear: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -26,39 +27,27 @@ object QueueApi {
   }
   
   @scala.inline
-  implicit class QueueApiOps[Self <: QueueApi] (val x: Self) extends AnyVal {
+  implicit class QueueApiMutableBuilder[Self <: QueueApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlush(value: /* cb */ js.UndefOr[js.Function0[Unit]] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRead(value: RafCallback => Unit): Self = this.set("read", js.Any.fromFunction1(value))
+    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
     @scala.inline
-    def setTick(value: RafCallback => Unit): Self = this.set("tick", js.Any.fromFunction1(value))
+    def setRead(value: RafCallback => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWrite(value: RafCallback => Unit): Self = this.set("write", js.Any.fromFunction1(value))
+    def setTick(value: RafCallback => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
-    
-    @scala.inline
-    def setFlush(value: /* cb */ js.UndefOr[js.Function0[Unit]] => Unit): Self = this.set("flush", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFlush: Self = this.set("flush", js.undefined)
+    def setWrite(value: RafCallback => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

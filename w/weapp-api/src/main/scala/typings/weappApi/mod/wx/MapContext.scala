@@ -1,11 +1,12 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapContext extends js.Object {
+trait MapContext extends StObject {
   
   //  获取当前地图中心的经纬度。返回的是 gcj02 坐标系，可以用于 wx.openLocation()
   def getCenterLocation(options: GetCenterLocationSuccCbOptions): Unit = js.native
@@ -41,36 +42,24 @@ object MapContext {
   }
   
   @scala.inline
-  implicit class MapContextOps[Self <: MapContext] (val x: Self) extends AnyVal {
+  implicit class MapContextMutableBuilder[Self <: MapContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCenterLocation(value: GetCenterLocationSuccCbOptions => Unit): Self = StObject.set(x, "getCenterLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRegion(value: GetReginOptions => Unit): Self = StObject.set(x, "getRegion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetScale(value: GetScaleOptions => Unit): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCenterLocation(value: GetCenterLocationSuccCbOptions => Unit): Self = this.set("getCenterLocation", js.Any.fromFunction1(value))
+    def setIncludePoints(value: zoomPointsOptions => Unit): Self = StObject.set(x, "includePoints", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRegion(value: GetReginOptions => Unit): Self = this.set("getRegion", js.Any.fromFunction1(value))
+    def setMoveToLocation(value: () => Unit): Self = StObject.set(x, "moveToLocation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScale(value: GetScaleOptions => Unit): Self = this.set("getScale", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIncludePoints(value: zoomPointsOptions => Unit): Self = this.set("includePoints", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMoveToLocation(value: () => Unit): Self = this.set("moveToLocation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTranslateMarker(value: translateMarkerOptions => Unit): Self = this.set("translateMarker", js.Any.fromFunction1(value))
+    def setTranslateMarker(value: translateMarkerOptions => Unit): Self = StObject.set(x, "translateMarker", js.Any.fromFunction1(value))
   }
 }

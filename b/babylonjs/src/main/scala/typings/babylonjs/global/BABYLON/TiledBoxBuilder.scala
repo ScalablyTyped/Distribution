@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.anon.AlignVerticalDepth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TiledBoxBuilder ()
   extends typings.babylonjs.BABYLON.TiledBoxBuilder
 /* static members */
-@JSGlobal("BABYLON.TiledBoxBuilder")
-@js.native
-object TiledBoxBuilder extends js.Object {
+object TiledBoxBuilder {
   
   /**
     * Creates a box mesh
@@ -27,6 +26,10 @@ object TiledBoxBuilder extends js.Object {
     * @param scene defines the hosting scene
     * @returns the box mesh
     */
+  @JSGlobal("BABYLON.TiledBoxBuilder.CreateTiledBox")
+  @js.native
   def CreateTiledBox(name: String, options: AlignVerticalDepth): typings.babylonjs.BABYLON.Mesh = js.native
+  @JSGlobal("BABYLON.TiledBoxBuilder.CreateTiledBox")
+  @js.native
   def CreateTiledBox(name: String, options: AlignVerticalDepth, scene: Nullable[typings.babylonjs.BABYLON.Scene]): typings.babylonjs.BABYLON.Mesh = js.native
 }

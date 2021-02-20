@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITimestamp extends js.Object {
+trait ITimestamp extends StObject {
   
   def Clone(): ITimestamp = js.native
   
@@ -53,54 +54,42 @@ object ITimestamp {
   }
   
   @scala.inline
-  implicit class ITimestampOps[Self <: ITimestamp] (val x: Self) extends AnyVal {
+  implicit class ITimestampMutableBuilder[Self <: ITimestamp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => ITimestamp): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDay(value: Double): Self = StObject.set(x, "Day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFraction(value: Double): Self = StObject.set(x, "Fraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => ITimestamp): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDay(value: Double): Self = this.set("Day", value.asInstanceOf[js.Any])
+    def setHour(value: Double): Self = StObject.set(x, "Hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFraction(value: Double): Self = this.set("Fraction", value.asInstanceOf[js.Any])
+    def setLocalTimeToUtc(value: () => ITimestamp): Self = StObject.set(x, "LocalTimeToUtc", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetValue(value: () => js.Any): Self = this.set("GetValue", js.Any.fromFunction0(value))
+    def setMinute(value: Double): Self = StObject.set(x, "Minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: Double): Self = this.set("Hour", value.asInstanceOf[js.Any])
+    def setMonth(value: Double): Self = StObject.set(x, "Month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTimeToUtc(value: () => ITimestamp): Self = this.set("LocalTimeToUtc", js.Any.fromFunction0(value))
+    def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: Double): Self = this.set("Minute", value.asInstanceOf[js.Any])
+    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMonth(value: Double): Self = this.set("Month", value.asInstanceOf[js.Any])
+    def setUtcToLocalTime(value: () => ITimestamp): Self = StObject.set(x, "UtcToLocalTime", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSecond(value: Double): Self = this.set("Second", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = this.set("SetValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUtcToLocalTime(value: () => ITimestamp): Self = this.set("UtcToLocalTime", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setYear(value: Double): Self = this.set("Year", value.asInstanceOf[js.Any])
+    def setYear(value: Double): Self = StObject.set(x, "Year", value.asInstanceOf[js.Any])
   }
 }

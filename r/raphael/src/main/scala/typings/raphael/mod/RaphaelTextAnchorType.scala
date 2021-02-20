@@ -1,5 +1,6 @@
 package typings.raphael.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.raphael.raphaelStrings.middle
   - typings.raphael.raphaelStrings.end
 */
-trait RaphaelTextAnchorType extends js.Object
+trait RaphaelTextAnchorType extends StObject
 object RaphaelTextAnchorType {
   
   @scala.inline

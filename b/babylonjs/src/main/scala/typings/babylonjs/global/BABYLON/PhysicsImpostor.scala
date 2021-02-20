@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IPhysicsEnabledObject
 import typings.babylonjs.BABYLON.PhysicsImpostorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,91 +65,165 @@ class PhysicsImpostor protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.PhysicsImpostor")
-@js.native
-object PhysicsImpostor extends js.Object {
+object PhysicsImpostor {
+  
+  @JSGlobal("BABYLON.PhysicsImpostor")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Box-Imposter type
     */
-  var BoxImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.BoxImpostor")
+  @js.native
+  def BoxImpostor: Double = js.native
+  @scala.inline
+  def BoxImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BoxImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Capsule-Impostor type (Ammo.js plugin only)
     */
-  var CapsuleImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.CapsuleImpostor")
+  @js.native
+  def CapsuleImpostor: Double = js.native
+  @scala.inline
+  def CapsuleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CapsuleImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Cloth-Imposter type
     */
-  var ClothImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.ClothImpostor")
+  @js.native
+  def ClothImpostor: Double = js.native
+  @scala.inline
+  def ClothImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClothImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * ConvexHull-Impostor type (Ammo.js plugin only)
     */
-  var ConvexHullImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.ConvexHullImpostor")
+  @js.native
+  def ConvexHullImpostor: Double = js.native
+  @scala.inline
+  def ConvexHullImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvexHullImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Custom-Imposter type (Ammo.js plugin only)
     */
-  var CustomImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.CustomImpostor")
+  @js.native
+  def CustomImpostor: Double = js.native
+  @scala.inline
+  def CustomImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Cylinder-Imposter type
     */
-  var CylinderImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.CylinderImpostor")
+  @js.native
+  def CylinderImpostor: Double = js.native
+  @scala.inline
+  def CylinderImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CylinderImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * The default object size of the imposter
     */
-  var DEFAULT_OBJECT_SIZE: typings.babylonjs.BABYLON.Vector3 = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.DEFAULT_OBJECT_SIZE")
+  @js.native
+  def DEFAULT_OBJECT_SIZE: typings.babylonjs.BABYLON.Vector3 = js.native
+  @scala.inline
+  def DEFAULT_OBJECT_SIZE_=(x: typings.babylonjs.BABYLON.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_OBJECT_SIZE")(x.asInstanceOf[js.Any])
   
   /**
     * Heightmap-Imposter type
     */
-  var HeightmapImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.HeightmapImpostor")
+  @js.native
+  def HeightmapImpostor: Double = js.native
+  @scala.inline
+  def HeightmapImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HeightmapImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * The identity quaternion of the imposter
     */
-  var IDENTITY_QUATERNION: typings.babylonjs.BABYLON.Quaternion = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.IDENTITY_QUATERNION")
+  @js.native
+  def IDENTITY_QUATERNION: typings.babylonjs.BABYLON.Quaternion = js.native
+  @scala.inline
+  def IDENTITY_QUATERNION_=(x: typings.babylonjs.BABYLON.Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
   
   /**
     * Mesh-imposter type
     */
-  var MeshImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.MeshImpostor")
+  @js.native
+  def MeshImpostor: Double = js.native
+  @scala.inline
+  def MeshImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MeshImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * No-Imposter type
     */
-  var NoImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.NoImpostor")
+  @js.native
+  def NoImpostor: Double = js.native
+  @scala.inline
+  def NoImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NoImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Particle-Imposter type
     */
-  var ParticleImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.ParticleImpostor")
+  @js.native
+  def ParticleImpostor: Double = js.native
+  @scala.inline
+  def ParticleImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ParticleImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Plane-Imposter type
     */
-  var PlaneImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.PlaneImpostor")
+  @js.native
+  def PlaneImpostor: Double = js.native
+  @scala.inline
+  def PlaneImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PlaneImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Rope-Imposter type
     */
-  var RopeImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.RopeImpostor")
+  @js.native
+  def RopeImpostor: Double = js.native
+  @scala.inline
+  def RopeImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RopeImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Softbody-Imposter type
     */
-  var SoftbodyImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.SoftbodyImpostor")
+  @js.native
+  def SoftbodyImpostor: Double = js.native
+  @scala.inline
+  def SoftbodyImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SoftbodyImpostor")(x.asInstanceOf[js.Any])
   
   /**
     * Sphere-Imposter type
     */
-  var SphereImpostor: Double = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor.SphereImpostor")
+  @js.native
+  def SphereImpostor: Double = js.native
+  @scala.inline
+  def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
   
-  var _tmpQuat: js.Any = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor._tmpQuat")
+  @js.native
+  def _tmpQuat: js.Any = js.native
+  @scala.inline
+  def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
   
-  var _tmpVecs: js.Any = js.native
+  @JSGlobal("BABYLON.PhysicsImpostor._tmpVecs")
+  @js.native
+  def _tmpVecs: js.Any = js.native
+  @scala.inline
+  def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
 }

@@ -1,15 +1,19 @@
 package typings.opentracing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("opentracing/lib/span_context", JSImport.Namespace)
-@js.native
-object spanContextMod extends js.Object {
+object spanContextMod {
   
+  @JSImport("opentracing/lib/span_context", JSImport.Default)
   @js.native
-  class SpanContext () extends js.Object {
+  class default () extends SpanContext
+  
+  @JSImport("opentracing/lib/span_context", "SpanContext")
+  @js.native
+  class SpanContext () extends StObject {
     
     /**
       * Returns a string representation of the implementation internal span ID.
@@ -25,7 +29,4 @@ object spanContextMod extends js.Object {
       */
     def toTraceId(): String = js.native
   }
-  
-  @js.native
-  class default () extends SpanContext
 }

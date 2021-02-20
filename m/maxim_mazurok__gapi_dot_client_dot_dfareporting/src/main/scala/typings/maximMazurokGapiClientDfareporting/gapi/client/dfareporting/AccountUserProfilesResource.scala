@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.Ids
 import typings.maximMazurokGapiClientDfareporting.anon.Oauthtoken
 import typings.maximMazurokGapiClientDfareporting.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountUserProfilesResource extends js.Object {
+trait AccountUserProfilesResource extends StObject {
   
   /** Gets one account user profile by ID. */
   def get(): Request[AccountUserProfile] = js.native

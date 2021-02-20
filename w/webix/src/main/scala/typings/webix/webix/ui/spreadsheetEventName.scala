@@ -1,5 +1,6 @@
 package typings.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onViewInit
   - typings.webix.webixStrings.onViewShow
 */
-trait spreadsheetEventName extends js.Object
+trait spreadsheetEventName extends StObject
 object spreadsheetEventName {
   
   @scala.inline

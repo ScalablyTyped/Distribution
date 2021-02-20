@@ -1,12 +1,13 @@
 package typings.stylus.anon
 
 import typings.stylus.mod.Stylus.Nodes.Selector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Selectors extends js.Object {
+trait Selectors extends StObject {
   
   var __type: String = js.native
   
@@ -27,36 +28,24 @@ object Selectors {
   }
   
   @scala.inline
-  implicit class SelectorsOps[Self <: Selectors] (val x: Self) extends AnyVal {
+  implicit class SelectorsMutableBuilder[Self <: Selectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__type(value: String): Self = this.set("__type", value.asInstanceOf[js.Any])
+    def setSelectors(value: js.Array[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineno(value: Double): Self = this.set("lineno", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectorsVarargs(value: Selector*): Self = this.set("selectors", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectors(value: js.Array[Selector]): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

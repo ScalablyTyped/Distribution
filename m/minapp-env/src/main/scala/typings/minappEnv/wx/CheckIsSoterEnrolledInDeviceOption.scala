@@ -4,12 +4,13 @@ import typings.minappEnv.Array
 import typings.minappEnv.minappEnvStrings.facial
 import typings.minappEnv.minappEnvStrings.fingerPrint
 import typings.minappEnv.minappEnvStrings.speech
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckIsSoterEnrolledInDeviceOption extends js.Object {
+trait CheckIsSoterEnrolledInDeviceOption extends StObject {
   
   /** 认证方式
     *
@@ -37,39 +38,27 @@ object CheckIsSoterEnrolledInDeviceOption {
   }
   
   @scala.inline
-  implicit class CheckIsSoterEnrolledInDeviceOptionOps[Self <: CheckIsSoterEnrolledInDeviceOption] (val x: Self) extends AnyVal {
+  implicit class CheckIsSoterEnrolledInDeviceOptionMutableBuilder[Self <: CheckIsSoterEnrolledInDeviceOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckAuthMode(value: Array[fingerPrint | facial | speech]): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def setCheckAuthMode(value: Array[fingerPrint | facial | speech]): Self = this.set("checkAuthMode", value.asInstanceOf[js.Any])
+    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setSuccess(value: /* result */ CheckIsSoterEnrolledInDeviceSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ CheckIsSoterEnrolledInDeviceSuccessCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

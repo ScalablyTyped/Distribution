@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateStateMachineOutput extends js.Object {
+trait UpdateStateMachineOutput extends StObject {
   
   /**
     * The date and time the state machine was updated.
@@ -21,21 +22,9 @@ object UpdateStateMachineOutput {
   }
   
   @scala.inline
-  implicit class UpdateStateMachineOutputOps[Self <: UpdateStateMachineOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateStateMachineOutputMutableBuilder[Self <: UpdateStateMachineOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdateDate(value: Timestamp): Self = this.set("updateDate", value.asInstanceOf[js.Any])
+    def setUpdateDate(value: Timestamp): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDataSourceRequest extends js.Object {
+trait UpdateDataSourceRequest extends StObject {
   
   /**
     * The AWS account ID.
@@ -51,51 +52,39 @@ object UpdateDataSourceRequest {
   }
   
   @scala.inline
-  implicit class UpdateDataSourceRequestOps[Self <: UpdateDataSourceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDataSourceRequestMutableBuilder[Self <: UpdateDataSourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentials(value: DataSourceCredentials): Self = StObject.set(x, "Credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredentialsUndefined: Self = StObject.set(x, "Credentials", js.undefined)
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setDataSourceId(value: ResourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceId(value: ResourceId): Self = this.set("DataSourceId", value.asInstanceOf[js.Any])
+    def setDataSourceParameters(value: DataSourceParameters): Self = StObject.set(x, "DataSourceParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setDataSourceParametersUndefined: Self = StObject.set(x, "DataSourceParameters", js.undefined)
     
     @scala.inline
-    def setCredentials(value: DataSourceCredentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    def setSslProperties(value: SslProperties): Self = StObject.set(x, "SslProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceParameters(value: DataSourceParameters): Self = this.set("DataSourceParameters", value.asInstanceOf[js.Any])
+    def setSslPropertiesUndefined: Self = StObject.set(x, "SslProperties", js.undefined)
     
     @scala.inline
-    def deleteDataSourceParameters: Self = this.set("DataSourceParameters", js.undefined)
+    def setVpcConnectionProperties(value: VpcConnectionProperties): Self = StObject.set(x, "VpcConnectionProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSslProperties(value: SslProperties): Self = this.set("SslProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSslProperties: Self = this.set("SslProperties", js.undefined)
-    
-    @scala.inline
-    def setVpcConnectionProperties(value: VpcConnectionProperties): Self = this.set("VpcConnectionProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConnectionProperties: Self = this.set("VpcConnectionProperties", js.undefined)
+    def setVpcConnectionPropertiesUndefined: Self = StObject.set(x, "VpcConnectionProperties", js.undefined)
   }
 }

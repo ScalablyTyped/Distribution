@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceByConfigRule extends js.Object {
+trait ComplianceByConfigRule extends StObject {
   
   /**
     * Indicates whether the AWS Config rule is compliant.
@@ -26,30 +27,18 @@ object ComplianceByConfigRule {
   }
   
   @scala.inline
-  implicit class ComplianceByConfigRuleOps[Self <: ComplianceByConfigRule] (val x: Self) extends AnyVal {
+  implicit class ComplianceByConfigRuleMutableBuilder[Self <: ComplianceByConfigRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliance(value: Compliance): Self = this.set("Compliance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompliance: Self = this.set("Compliance", js.undefined)
-    
-    @scala.inline
-    def setConfigRuleName(value: StringWithCharLimit64): Self = this.set("ConfigRuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRuleName: Self = this.set("ConfigRuleName", js.undefined)
+    def setConfigRuleNameUndefined: Self = StObject.set(x, "ConfigRuleName", js.undefined)
   }
 }

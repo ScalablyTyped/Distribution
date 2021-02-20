@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientPrivateca.anon.Accesstoken
 import typings.maximMazurokGapiClientPrivateca.anon.Alt
 import typings.maximMazurokGapiClientPrivateca.anon.Callback
 import typings.maximMazurokGapiClientPrivateca.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReusableConfigsResource extends js.Object {
+trait ReusableConfigsResource extends StObject {
   
   /** Returns a ReusableConfig. */
   def get(): Request[ReusableConfig] = js.native

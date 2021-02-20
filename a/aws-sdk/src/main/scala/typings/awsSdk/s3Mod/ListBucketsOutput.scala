@@ -1,11 +1,12 @@
 package typings.awsSdk.s3Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBucketsOutput extends js.Object {
+trait ListBucketsOutput extends StObject {
   
   /**
     * The list of buckets owned by the requestor.
@@ -26,33 +27,21 @@ object ListBucketsOutput {
   }
   
   @scala.inline
-  implicit class ListBucketsOutputOps[Self <: ListBucketsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBucketsOutputMutableBuilder[Self <: ListBucketsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: Buckets): Self = StObject.set(x, "Buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsUndefined: Self = StObject.set(x, "Buckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "Buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBucketsVarargs(value: Bucket*): Self = this.set("Buckets", js.Array(value :_*))
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuckets(value: Buckets): Self = this.set("Buckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBuckets: Self = this.set("Buckets", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
   }
 }

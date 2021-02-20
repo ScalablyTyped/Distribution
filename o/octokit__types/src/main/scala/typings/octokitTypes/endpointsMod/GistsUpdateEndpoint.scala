@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GistsUpdateEndpoint extends js.Object {
+trait GistsUpdateEndpoint extends StObject {
   
   /**
     * A descriptive name for this gist.
@@ -28,33 +29,21 @@ object GistsUpdateEndpoint {
   }
   
   @scala.inline
-  implicit class GistsUpdateEndpointOps[Self <: GistsUpdateEndpoint] (val x: Self) extends AnyVal {
+  implicit class GistsUpdateEndpointMutableBuilder[Self <: GistsUpdateEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFiles(value: GistsUpdateParamsFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGist_id(value: String): Self = this.set("gist_id", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setFiles(value: GistsUpdateParamsFiles): Self = this.set("files", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

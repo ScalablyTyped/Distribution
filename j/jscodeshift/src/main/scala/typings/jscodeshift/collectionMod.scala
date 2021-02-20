@@ -7,27 +7,40 @@ import typings.jscodeshift.nodeMod.TraversalMethods
 import typings.jscodeshift.variableDeclaratorMod.GlobalMethods
 import typings.jscodeshift.variableDeclaratorMod.TransformMethods
 import typings.recast.optionsMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jscodeshift/src/Collection", JSImport.Namespace)
-@js.native
-object collectionMod extends js.Object {
+object collectionMod {
   
+  @JSImport("jscodeshift/src/Collection", "fromNodes")
+  @js.native
   def fromNodes(args: js.Any*): js.Any = js.native
   
+  @JSImport("jscodeshift/src/Collection", "fromPaths")
+  @js.native
   def fromPaths(args: js.Any*): js.Any = js.native
   
+  @JSImport("jscodeshift/src/Collection", "hasConflictingRegistration")
+  @js.native
   def hasConflictingRegistration(args: js.Any*): js.Any = js.native
   
+  @JSImport("jscodeshift/src/Collection", "registerMethods")
+  @js.native
   def registerMethods(methods: js.Object): Unit = js.native
+  @JSImport("jscodeshift/src/Collection", "registerMethods")
+  @js.native
   def registerMethods(
     methods: js.Object,
     `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
   ): Unit = js.native
   
+  @JSImport("jscodeshift/src/Collection", "setDefaultCollectionType")
+  @js.native
   def setDefaultCollectionType(args: js.Any*): js.Any = js.native
+  
+  type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
   @js.native
   trait Collection[N]
@@ -166,6 +179,4 @@ object collectionMod extends js.Object {
     def toSource(): String = js.native
     def toSource(options: Options): String = js.native
   }
-  
-  type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
 }

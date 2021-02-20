@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UrlMapValidationResult extends js.Object {
+trait UrlMapValidationResult extends StObject {
   
   var loadErrors: js.UndefOr[js.Array[String]] = js.native
   
@@ -26,48 +27,36 @@ object UrlMapValidationResult {
   }
   
   @scala.inline
-  implicit class UrlMapValidationResultOps[Self <: UrlMapValidationResult] (val x: Self) extends AnyVal {
+  implicit class UrlMapValidationResultMutableBuilder[Self <: UrlMapValidationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadErrors(value: js.Array[String]): Self = StObject.set(x, "loadErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadErrorsUndefined: Self = StObject.set(x, "loadErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadErrorsVarargs(value: String*): Self = StObject.set(x, "loadErrors", js.Array(value :_*))
     
     @scala.inline
-    def setLoadErrorsVarargs(value: String*): Self = this.set("loadErrors", js.Array(value :_*))
+    def setLoadSucceeded(value: Boolean): Self = StObject.set(x, "loadSucceeded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadErrors(value: js.Array[String]): Self = this.set("loadErrors", value.asInstanceOf[js.Any])
+    def setLoadSucceededUndefined: Self = StObject.set(x, "loadSucceeded", js.undefined)
     
     @scala.inline
-    def deleteLoadErrors: Self = this.set("loadErrors", js.undefined)
+    def setTestFailures(value: js.Array[TestFailure]): Self = StObject.set(x, "testFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadSucceeded(value: Boolean): Self = this.set("loadSucceeded", value.asInstanceOf[js.Any])
+    def setTestFailuresUndefined: Self = StObject.set(x, "testFailures", js.undefined)
     
     @scala.inline
-    def deleteLoadSucceeded: Self = this.set("loadSucceeded", js.undefined)
+    def setTestFailuresVarargs(value: TestFailure*): Self = StObject.set(x, "testFailures", js.Array(value :_*))
     
     @scala.inline
-    def setTestFailuresVarargs(value: TestFailure*): Self = this.set("testFailures", js.Array(value :_*))
+    def setTestPassed(value: Boolean): Self = StObject.set(x, "testPassed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestFailures(value: js.Array[TestFailure]): Self = this.set("testFailures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestFailures: Self = this.set("testFailures", js.undefined)
-    
-    @scala.inline
-    def setTestPassed(value: Boolean): Self = this.set("testPassed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestPassed: Self = this.set("testPassed", js.undefined)
+    def setTestPassedUndefined: Self = StObject.set(x, "testPassed", js.undefined)
   }
 }

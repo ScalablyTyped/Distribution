@@ -3,14 +3,14 @@ package typings.babylonjs
 import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", JSImport.Namespace)
-@js.native
-object sixDofDragBehaviorMod extends js.Object {
+object sixDofDragBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior")
   @js.native
   /**
     * Instantiates a behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
@@ -94,9 +94,16 @@ object sixDofDragBehaviorMod extends js.Object {
     var zDragFactor: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object SixDofDragBehavior extends js.Object {
+  object SixDofDragBehavior {
     
-    var _virtualScene: js.Any = js.native
+    @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Behaviors/Meshes/sixDofDragBehavior", "SixDofDragBehavior._virtualScene")
+    @js.native
+    def _virtualScene: js.Any = js.native
+    @scala.inline
+    def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
   }
 }

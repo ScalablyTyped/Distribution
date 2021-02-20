@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointEventsOptionsObject extends js.Object {
+trait PointEventsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Fires when a point is clicked. One
@@ -105,84 +106,72 @@ object PointEventsOptionsObject {
   }
   
   @scala.inline
-  implicit class PointEventsOptionsObjectOps[Self <: PointEventsOptionsObject] (val x: Self) extends AnyVal {
+  implicit class PointEventsOptionsObjectMutableBuilder[Self <: PointEventsOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: PointClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrag(value: PointDragCallbackFunction): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: PointClickCallbackFunction): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDragStart(value: PointDragStartCallbackFunction): Self = StObject.set(x, "dragStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDrag(value: PointDragCallbackFunction): Self = this.set("drag", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDrop(value: PointDropCallbackFunction): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStart(value: PointDragStartCallbackFunction): Self = this.set("dragStart", value.asInstanceOf[js.Any])
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    def setLegendItemClick(value: PointLegendItemClickCallbackFunction): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrop(value: PointDropCallbackFunction): Self = this.set("drop", value.asInstanceOf[js.Any])
+    def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
     
     @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setMouseOut(value: PointMouseOutCallbackFunction): Self = StObject.set(x, "mouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendItemClick(value: PointLegendItemClickCallbackFunction): Self = this.set("legendItemClick", value.asInstanceOf[js.Any])
+    def setMouseOutUndefined: Self = StObject.set(x, "mouseOut", js.undefined)
     
     @scala.inline
-    def deleteLegendItemClick: Self = this.set("legendItemClick", js.undefined)
+    def setMouseOver(value: PointMouseOverCallbackFunction): Self = StObject.set(x, "mouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseOut(value: PointMouseOutCallbackFunction): Self = this.set("mouseOut", value.asInstanceOf[js.Any])
+    def setMouseOverUndefined: Self = StObject.set(x, "mouseOver", js.undefined)
     
     @scala.inline
-    def deleteMouseOut: Self = this.set("mouseOut", js.undefined)
+    def setRemove(value: PointRemoveCallbackFunction): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseOver(value: PointMouseOverCallbackFunction): Self = this.set("mouseOver", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteMouseOver: Self = this.set("mouseOver", js.undefined)
+    def setSelect(value: PointSelectCallbackFunction): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: PointRemoveCallbackFunction): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setUnselect(value: PointUnselectCallbackFunction): Self = StObject.set(x, "unselect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: PointSelectCallbackFunction): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setUnselectUndefined: Self = StObject.set(x, "unselect", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setUpdate(value: PointUpdateCallbackFunction): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnselect(value: PointUnselectCallbackFunction): Self = this.set("unselect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnselect: Self = this.set("unselect", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: PointUpdateCallbackFunction): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

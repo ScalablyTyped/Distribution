@@ -1,12 +1,13 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISidenavObject extends js.Object {
+trait ISidenavObject extends StObject {
   
   def close(): IPromise[Unit] = js.native
   
@@ -36,36 +37,24 @@ object ISidenavObject {
   }
   
   @scala.inline
-  implicit class ISidenavObjectOps[Self <: ISidenavObject] (val x: Self) extends AnyVal {
+  implicit class ISidenavObjectMutableBuilder[Self <: ISidenavObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: () => IPromise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLockedOpen(value: () => Boolean): Self = StObject.set(x, "isLockedOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClose(value: () => IPromise[Unit]): Self = this.set("close", js.Any.fromFunction0(value))
+    def setOnClose(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsLockedOpen(value: () => Boolean): Self = this.set("isLockedOpen", js.Any.fromFunction0(value))
+    def setOpen(value: () => IPromise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsOpen(value: () => Boolean): Self = this.set("isOpen", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnClose(value: js.Function0[Unit] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOpen(value: () => IPromise[Unit]): Self = this.set("open", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToggle(value: () => IPromise[Unit]): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setToggle(value: () => IPromise[Unit]): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

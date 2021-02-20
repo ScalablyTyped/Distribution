@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateRealtimeLogConfigRequest extends js.Object {
+trait UpdateRealtimeLogConfigRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for this real-time log configuration.
@@ -41,54 +42,42 @@ object UpdateRealtimeLogConfigRequest {
   }
   
   @scala.inline
-  implicit class UpdateRealtimeLogConfigRequestOps[Self <: UpdateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateRealtimeLogConfigRequestMutableBuilder[Self <: UpdateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setEndPointsUndefined: Self = StObject.set(x, "EndPoints", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setEndPointsVarargs(value: EndPoint*): Self = StObject.set(x, "EndPoints", js.Array(value :_*))
     
     @scala.inline
-    def setEndPointsVarargs(value: EndPoint*): Self = this.set("EndPoints", js.Array(value :_*))
+    def setFields(value: FieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPoints(value: EndPointList): Self = this.set("EndPoints", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
     @scala.inline
-    def deleteEndPoints: Self = this.set("EndPoints", js.undefined)
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("Fields", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: FieldList): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("Fields", js.undefined)
+    def setSamplingRate(value: long): Self = StObject.set(x, "SamplingRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setSamplingRate(value: long): Self = this.set("SamplingRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamplingRate: Self = this.set("SamplingRate", js.undefined)
+    def setSamplingRateUndefined: Self = StObject.set(x, "SamplingRate", js.undefined)
   }
 }

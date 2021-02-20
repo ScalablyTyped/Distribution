@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Image extends js.Object {
+trait Image extends StObject {
   
   /**
     * The applications associated with the image.
@@ -96,114 +97,102 @@ object Image {
   }
   
   @scala.inline
-  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplications(value: Applications): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationsVarargs(value: Application*): Self = StObject.set(x, "Applications", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationsVarargs(value: Application*): Self = this.set("Applications", js.Array(value :_*))
+    def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
     
     @scala.inline
-    def setApplications(value: Applications): Self = this.set("Applications", value.asInstanceOf[js.Any])
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplications: Self = this.set("Applications", js.undefined)
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = this.set("AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    def setBaseImageArn(value: Arn): Self = StObject.set(x, "BaseImageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppstreamAgentVersion: Self = this.set("AppstreamAgentVersion", js.undefined)
+    def setBaseImageArnUndefined: Self = StObject.set(x, "BaseImageArn", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def setBaseImageArn(value: Arn): Self = this.set("BaseImageArn", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseImageArn: Self = this.set("BaseImageArn", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setImageBuilderName(value: String): Self = StObject.set(x, "ImageBuilderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setImageBuilderNameUndefined: Self = StObject.set(x, "ImageBuilderName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setImageBuilderSupported(value: Boolean): Self = StObject.set(x, "ImageBuilderSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setImageBuilderSupportedUndefined: Self = StObject.set(x, "ImageBuilderSupported", js.undefined)
     
     @scala.inline
-    def setImageBuilderName(value: String): Self = this.set("ImageBuilderName", value.asInstanceOf[js.Any])
+    def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageBuilderName: Self = this.set("ImageBuilderName", js.undefined)
+    def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
     
     @scala.inline
-    def setImageBuilderSupported(value: Boolean): Self = this.set("ImageBuilderSupported", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageBuilderSupported: Self = this.set("ImageBuilderSupported", js.undefined)
+    def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePermissions(value: ImagePermissions): Self = this.set("ImagePermissions", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
     @scala.inline
-    def deleteImagePermissions: Self = this.set("ImagePermissions", js.undefined)
+    def setPublicBaseImageReleasedDate(value: Timestamp): Self = StObject.set(x, "PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: PlatformType): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    def setPublicBaseImageReleasedDateUndefined: Self = StObject.set(x, "PublicBaseImageReleasedDate", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("Platform", js.undefined)
+    def setState(value: ImageState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicBaseImageReleasedDate(value: Timestamp): Self = this.set("PublicBaseImageReleasedDate", value.asInstanceOf[js.Any])
+    def setStateChangeReason(value: ImageStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublicBaseImageReleasedDate: Self = this.set("PublicBaseImageReleasedDate", js.undefined)
+    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
     @scala.inline
-    def setState(value: ImageState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setVisibility(value: VisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChangeReason(value: ImageStateChangeReason): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: VisibilityType): Self = this.set("Visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("Visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

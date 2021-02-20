@@ -3,12 +3,13 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.ExecutionContextId
 import typings.node.inspectorMod.Runtime.ScriptId
 import typings.node.inspectorMod.Runtime.StackTrace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptFailedToParseEventDataType extends js.Object {
+trait ScriptFailedToParseEventDataType extends StObject {
   
   /**
     * Length of the last line of the script.
@@ -99,78 +100,66 @@ object ScriptFailedToParseEventDataType {
   }
   
   @scala.inline
-  implicit class ScriptFailedToParseEventDataTypeOps[Self <: ScriptFailedToParseEventDataType] (val x: Self) extends AnyVal {
+  implicit class ScriptFailedToParseEventDataTypeMutableBuilder[Self <: ScriptFailedToParseEventDataType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndLine(value: Double): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionContextAuxData(value: js.Object): Self = StObject.set(x, "executionContextAuxData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setExecutionContextAuxDataUndefined: Self = StObject.set(x, "executionContextAuxData", js.undefined)
     
     @scala.inline
-    def setEndLine(value: Double): Self = this.set("endLine", value.asInstanceOf[js.Any])
+    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = this.set("executionContextId", value.asInstanceOf[js.Any])
+    def setHasSourceURL(value: Boolean): Self = StObject.set(x, "hasSourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    def setHasSourceURLUndefined: Self = StObject.set(x, "hasSourceURL", js.undefined)
     
     @scala.inline
-    def setScriptId(value: ScriptId): Self = this.set("scriptId", value.asInstanceOf[js.Any])
+    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setIsModule(value: Boolean): Self = StObject.set(x, "isModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLine(value: Double): Self = this.set("startLine", value.asInstanceOf[js.Any])
+    def setIsModuleUndefined: Self = StObject.set(x, "isModule", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionContextAuxData(value: js.Object): Self = this.set("executionContextAuxData", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteExecutionContextAuxData: Self = this.set("executionContextAuxData", js.undefined)
+    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSourceURL(value: Boolean): Self = this.set("hasSourceURL", value.asInstanceOf[js.Any])
+    def setSourceMapURL(value: String): Self = StObject.set(x, "sourceMapURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasSourceURL: Self = this.set("hasSourceURL", js.undefined)
+    def setSourceMapURLUndefined: Self = StObject.set(x, "sourceMapURL", js.undefined)
     
     @scala.inline
-    def setIsModule(value: Boolean): Self = this.set("isModule", value.asInstanceOf[js.Any])
+    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsModule: Self = this.set("isModule", js.undefined)
+    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceMapURL(value: String): Self = this.set("sourceMapURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceMapURL: Self = this.set("sourceMapURL", js.undefined)
-    
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackTrace: Self = this.set("stackTrace", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

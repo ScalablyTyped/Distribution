@@ -5,13 +5,14 @@ import typings.atom.atomStrings.fatal
 import typings.atom.atomStrings.info
 import typings.atom.atomStrings.success
 import typings.atom.atomStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Notification")
 @js.native
-class Notification protected () extends js.Object {
+class Notification protected () extends StObject {
   def this(`type`: error, message: String) = this()
   def this(`type`: fatal, message: String) = this()
   def this(`type`: info, message: String) = this()

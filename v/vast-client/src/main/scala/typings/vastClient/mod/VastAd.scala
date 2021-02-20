@@ -1,11 +1,12 @@
 package typings.vastClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VastAd extends js.Object {
+trait VastAd extends StObject {
   
   var advertiser: String | Null = js.native
   
@@ -45,90 +46,78 @@ object VastAd {
   }
   
   @scala.inline
-  implicit class VastAdOps[Self <: VastAd] (val x: Self) extends AnyVal {
+  implicit class VastAdMutableBuilder[Self <: VastAd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiser(value: String): Self = StObject.set(x, "advertiser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserNull: Self = StObject.set(x, "advertiser", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatives(value: js.Array[VastCreative]): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativesVarargs(value: VastCreative*): Self = this.set("creatives", js.Array(value :_*))
+    def setCreativesVarargs(value: VastCreative*): Self = StObject.set(x, "creatives", js.Array(value :_*))
     
     @scala.inline
-    def setCreatives(value: js.Array[VastCreative]): Self = this.set("creatives", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorURLTemplatesVarargs(value: String*): Self = this.set("errorURLTemplates", js.Array(value :_*))
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def setErrorURLTemplates(value: js.Array[String]): Self = this.set("errorURLTemplates", value.asInstanceOf[js.Any])
+    def setErrorURLTemplates(value: js.Array[String]): Self = StObject.set(x, "errorURLTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: VastAdExtension*): Self = this.set("extensions", js.Array(value :_*))
+    def setErrorURLTemplatesVarargs(value: String*): Self = StObject.set(x, "errorURLTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: js.Array[VastAdExtension]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[VastAdExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressionURLTemplatesVarargs(value: String*): Self = this.set("impressionURLTemplates", js.Array(value :_*))
+    def setExtensionsVarargs(value: VastAdExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setImpressionURLTemplates(value: js.Array[String]): Self = this.set("impressionURLTemplates", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiser(value: String): Self = this.set("advertiser", value.asInstanceOf[js.Any])
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setAdvertiserNull: Self = this.set("advertiser", null)
+    def setImpressionURLTemplates(value: js.Array[String]): Self = StObject.set(x, "impressionURLTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setImpressionURLTemplatesVarargs(value: String*): Self = StObject.set(x, "impressionURLTemplates", js.Array(value :_*))
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setPricing(value: String): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setPricingNull: Self = StObject.set(x, "pricing", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setSequence(value: String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricing(value: String): Self = this.set("pricing", value.asInstanceOf[js.Any])
+    def setSequenceNull: Self = StObject.set(x, "sequence", null)
     
     @scala.inline
-    def setPricingNull: Self = this.set("pricing", null)
+    def setSurvey(value: String): Self = StObject.set(x, "survey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: String): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setSurveyNull: Self = StObject.set(x, "survey", null)
     
     @scala.inline
-    def setSequenceNull: Self = this.set("sequence", null)
+    def setSystem(value: VastSystem | String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurvey(value: String): Self = this.set("survey", value.asInstanceOf[js.Any])
+    def setSystemNull: Self = StObject.set(x, "system", null)
     
     @scala.inline
-    def setSurveyNull: Self = this.set("survey", null)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystem(value: VastSystem | String): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemNull: Self = this.set("system", null)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleNull: Self = this.set("title", null)
+    def setTitleNull: Self = StObject.set(x, "title", null)
   }
 }

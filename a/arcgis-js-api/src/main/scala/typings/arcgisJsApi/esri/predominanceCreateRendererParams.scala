@@ -9,6 +9,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.std.AbortSignal
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -151,114 +152,102 @@ object predominanceCreateRendererParams {
   }
   
   @scala.inline
-  implicit class predominanceCreateRendererParamsOps[Self <: predominanceCreateRendererParams] (val x: Self) extends AnyVal {
+  implicit class predominanceCreateRendererParamsMutableBuilder[Self <: predominanceCreateRendererParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: predominanceCreateRendererParamsFields*): Self = this.set("fields", js.Array(value :_*))
+    def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[predominanceCreateRendererParamsFields]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
     @scala.inline
-    def setView(value: View): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setEdgesType(value: String): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: String | Basemap): Self = this.set("basemap", value.asInstanceOf[js.Any])
+    def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
     
     @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
+    def setFields(value: js.Array[predominanceCreateRendererParamsFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMixMode(value: String): Self = this.set("colorMixMode", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: predominanceCreateRendererParamsFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteColorMixMode: Self = this.set("colorMixMode", js.undefined)
+    def setIncludeOpacityVariable(value: Boolean): Self = StObject.set(x, "includeOpacityVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSymbolEnabled(value: Boolean): Self = this.set("defaultSymbolEnabled", value.asInstanceOf[js.Any])
+    def setIncludeOpacityVariableUndefined: Self = StObject.set(x, "includeOpacityVariable", js.undefined)
     
     @scala.inline
-    def deleteDefaultSymbolEnabled: Self = this.set("defaultSymbolEnabled", js.undefined)
+    def setIncludeSizeVariable(value: Boolean): Self = StObject.set(x, "includeSizeVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgesType(value: String): Self = this.set("edgesType", value.asInstanceOf[js.Any])
+    def setIncludeSizeVariableUndefined: Self = StObject.set(x, "includeSizeVariable", js.undefined)
     
     @scala.inline
-    def deleteEdgesType: Self = this.set("edgesType", js.undefined)
+    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOpacityVariable(value: Boolean): Self = this.set("includeOpacityVariable", value.asInstanceOf[js.Any])
+    def setLegendOptions(value: predominanceCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeOpacityVariable: Self = this.set("includeOpacityVariable", js.undefined)
+    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
     @scala.inline
-    def setIncludeSizeVariable(value: Boolean): Self = this.set("includeSizeVariable", value.asInstanceOf[js.Any])
+    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeSizeVariable: Self = this.set("includeSizeVariable", js.undefined)
+    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def setLegendOptions(value: predominanceCreateRendererParamsLegendOptions): Self = this.set("legendOptions", value.asInstanceOf[js.Any])
+    def setPredominanceScheme(value: PredominanceScheme): Self = StObject.set(x, "predominanceScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegendOptions: Self = this.set("legendOptions", js.undefined)
+    def setPredominanceSchemeUndefined: Self = StObject.set(x, "predominanceScheme", js.undefined)
     
     @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = this.set("outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutlineOptimizationEnabled: Self = this.set("outlineOptimizationEnabled", js.undefined)
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def setPredominanceScheme(value: PredominanceScheme): Self = this.set("predominanceScheme", value.asInstanceOf[js.Any])
+    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredominanceScheme: Self = this.set("predominanceScheme", js.undefined)
+    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
     @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
+    def setSortBy(value: count | value): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = this.set("sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSizeOptimizationEnabled: Self = this.set("sizeOptimizationEnabled", js.undefined)
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def setSortBy(value: count | value): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
     @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
-    
-    @scala.inline
-    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = this.set("symbolType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbolType: Self = this.set("symbolType", js.undefined)
+    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

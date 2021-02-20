@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Blocks/replaceColorBlock", JSImport.Namespace)
-@js.native
-object replaceColorBlockMod extends js.Object {
+object replaceColorBlockMod {
   
+  @JSImport("babylonjs/Materials/Node/Blocks/replaceColorBlock", "ReplaceColorBlock")
   @js.native
   class ReplaceColorBlock protected () extends NodeMaterialBlock {
     /**

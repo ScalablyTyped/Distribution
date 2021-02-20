@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 @js.native
-trait TaskSuggestion extends js.Object {
+trait TaskSuggestion extends StObject {
   
   /**
     * Gets the users that should be assigned a suggested task.
@@ -38,27 +39,15 @@ object TaskSuggestion {
   }
   
   @scala.inline
-  implicit class TaskSuggestionOps[Self <: TaskSuggestion] (val x: Self) extends AnyVal {
+  implicit class TaskSuggestionMutableBuilder[Self <: TaskSuggestion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignees(value: js.Array[EmailUser]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssigneesVarargs(value: EmailUser*): Self = StObject.set(x, "assignees", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssigneesVarargs(value: EmailUser*): Self = this.set("assignees", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssignees(value: js.Array[EmailUser]): Self = this.set("assignees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskString(value: String): Self = this.set("taskString", value.asInstanceOf[js.Any])
+    def setTaskString(value: String): Self = StObject.set(x, "taskString", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.typedoc.schemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,47 +34,35 @@ object ReferenceType {
   }
   
   @scala.inline
-  implicit class ReferenceTypeOps[Self <: ReferenceType] (val x: Self) extends AnyVal {
+  implicit class ReferenceTypeMutableBuilder[Self <: ReferenceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = this.set("name", js.Array(value :_*))
+    def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: ModelToObject[String] | String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = this.set("type", js.Array(value :_*))
-    
-    @scala.inline
-    def setType(value: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setTypeArgumentsVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = this.set("typeArguments", js.Array(value :_*))
+    def setType(value: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTypeArguments(
       value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.typesAbstractMod.Type]]] | js.Array[typings.typedoc.typesAbstractMod.Type]
-    ): Self = this.set("typeArguments", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeArguments: Self = this.set("typeArguments", js.undefined)
+    def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
+    
+    @scala.inline
+    def setTypeArgumentsVarargs(value: (typings.typedoc.typesAbstractMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "typeArguments", js.Array(value :_*))
+    
+    @scala.inline
+    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

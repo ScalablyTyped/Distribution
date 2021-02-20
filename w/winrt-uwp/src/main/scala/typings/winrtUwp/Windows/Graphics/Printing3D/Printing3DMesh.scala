@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mesh in the 3D model. */
 @js.native
-trait Printing3DMesh extends js.Object {
+trait Printing3DMesh extends StObject {
   
   /** Gets a set of mesh buffer descriptions. */
   var bufferDescriptionSet: IPropertySet = js.native
@@ -117,71 +118,59 @@ object Printing3DMesh {
   }
   
   @scala.inline
-  implicit class Printing3DMeshOps[Self <: Printing3DMesh] (val x: Self) extends AnyVal {
+  implicit class Printing3DMeshMutableBuilder[Self <: Printing3DMesh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferDescriptionSet(value: IPropertySet): Self = StObject.set(x, "bufferDescriptionSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferSet(value: IPropertySet): Self = StObject.set(x, "bufferSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTriangleIndices(value: Double => Unit): Self = StObject.set(x, "createTriangleIndices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBufferDescriptionSet(value: IPropertySet): Self = this.set("bufferDescriptionSet", value.asInstanceOf[js.Any])
+    def setCreateTriangleMaterialIndices(value: Double => Unit): Self = StObject.set(x, "createTriangleMaterialIndices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBufferSet(value: IPropertySet): Self = this.set("bufferSet", value.asInstanceOf[js.Any])
+    def setCreateVertexNormals(value: Double => Unit): Self = StObject.set(x, "createVertexNormals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateTriangleIndices(value: Double => Unit): Self = this.set("createTriangleIndices", js.Any.fromFunction1(value))
+    def setCreateVertexPositions(value: Double => Unit): Self = StObject.set(x, "createVertexPositions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateTriangleMaterialIndices(value: Double => Unit): Self = this.set("createTriangleMaterialIndices", js.Any.fromFunction1(value))
+    def setGetTriangleIndices(value: () => IBuffer): Self = StObject.set(x, "getTriangleIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateVertexNormals(value: Double => Unit): Self = this.set("createVertexNormals", js.Any.fromFunction1(value))
+    def setGetTriangleMaterialIndices(value: () => IBuffer): Self = StObject.set(x, "getTriangleMaterialIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateVertexPositions(value: Double => Unit): Self = this.set("createVertexPositions", js.Any.fromFunction1(value))
+    def setGetVertexNormals(value: () => IBuffer): Self = StObject.set(x, "getVertexNormals", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTriangleIndices(value: () => IBuffer): Self = this.set("getTriangleIndices", js.Any.fromFunction0(value))
+    def setGetVertexPositions(value: () => IBuffer): Self = StObject.set(x, "getVertexPositions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTriangleMaterialIndices(value: () => IBuffer): Self = this.set("getTriangleMaterialIndices", js.Any.fromFunction0(value))
+    def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVertexNormals(value: () => IBuffer): Self = this.set("getVertexNormals", js.Any.fromFunction0(value))
+    def setTriangleIndicesDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "triangleIndicesDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVertexPositions(value: () => IBuffer): Self = this.set("getVertexPositions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIndexCount(value: Double): Self = this.set("indexCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriangleIndicesDescription(value: Printing3DBufferDescription): Self = this.set("triangleIndicesDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTriangleMaterialIndicesDescription(value: Printing3DBufferDescription): Self = this.set("triangleMaterialIndicesDescription", value.asInstanceOf[js.Any])
+    def setTriangleMaterialIndicesDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "triangleMaterialIndicesDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerifyAsync(
       value: Printing3DMeshVerificationMode => IPromiseWithIAsyncOperation[Printing3DMeshVerificationResult]
-    ): Self = this.set("verifyAsync", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "verifyAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setVertexCount(value: Double): Self = this.set("vertexCount", value.asInstanceOf[js.Any])
+    def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexNormalsDescription(value: Printing3DBufferDescription): Self = this.set("vertexNormalsDescription", value.asInstanceOf[js.Any])
+    def setVertexNormalsDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "vertexNormalsDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertexPositionsDescription(value: Printing3DBufferDescription): Self = this.set("vertexPositionsDescription", value.asInstanceOf[js.Any])
+    def setVertexPositionsDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "vertexPositionsDescription", value.asInstanceOf[js.Any])
   }
 }

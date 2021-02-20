@@ -1,12 +1,13 @@
 package typings.chromeApps.anon
 
 import typings.chromeApps.chromeAppsStrings.webgl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Features extends js.Object {
+trait Features extends StObject {
   
   /** List of the 3D-related features your app requires. */
   var features: js.Array[webgl] = js.native
@@ -20,24 +21,12 @@ object Features {
   }
   
   @scala.inline
-  implicit class FeaturesOps[Self <: Features] (val x: Self) extends AnyVal {
+  implicit class FeaturesMutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: js.Array[webgl]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFeaturesVarargs(value: webgl*): Self = this.set("features", js.Array(value :_*))
-    
-    @scala.inline
-    def setFeatures(value: js.Array[webgl]): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setFeaturesVarargs(value: webgl*): Self = StObject.set(x, "features", js.Array(value :_*))
   }
 }

@@ -7,13 +7,14 @@ import typings.babylonjs.mathVectorMod.Vector4
 import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.Nullable
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined babylonjs.babylonjs/types.DeepImmutableObject<babylonjs.babylonjs/Maths/math.vector.Matrix> */
 @js.native
-trait DeepImmutableObjectMatrix extends js.Object {
+trait DeepImmutableObjectMatrix extends StObject {
   
   val Compose: DeepImmutable[js.UndefOr[_]] = js.native
   
@@ -278,7 +279,7 @@ object DeepImmutableObjectMatrix {
     addToSelf: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]],
     addTranslationFromFloats: DeepImmutable[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, Matrix]],
     asArray: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]],
-    clone: DeepImmutable[js.Function0[Matrix]],
+    clone_ : DeepImmutable[js.Function0[Matrix]],
     constructor: DeepImmutable[js.Function0[js.Any]],
     copyFrom: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]],
     copyToArray: DeepImmutable[
@@ -293,7 +294,7 @@ object DeepImmutableObjectMatrix {
       ]
     ],
     determinant: DeepImmutable[js.Function0[Double]],
-    equals: DeepImmutable[js.Function1[/* value */ DeepImmutable[Matrix], Boolean]],
+    equals_ : DeepImmutable[js.Function1[/* value */ DeepImmutable[Matrix], Boolean]],
     getClassName: DeepImmutable[js.Function0[String]],
     getHashCode: DeepImmutable[js.Function0[Double]],
     getRotationMatrix: DeepImmutable[js.Function0[Matrix]],
@@ -336,117 +337,90 @@ object DeepImmutableObjectMatrix {
     transposeToRef: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]],
     updateFlag: DeepImmutable[Double]
   ): DeepImmutableObjectMatrix = {
-    val __obj = js.Dynamic.literal(_isIdentity = _isIdentity.asInstanceOf[js.Any], _isIdentity3x2 = _isIdentity3x2.asInstanceOf[js.Any], _isIdentity3x2Dirty = _isIdentity3x2Dirty.asInstanceOf[js.Any], _isIdentityDirty = _isIdentityDirty.asInstanceOf[js.Any], _m = _m.asInstanceOf[js.Any], _markAsUpdated = _markAsUpdated.asInstanceOf[js.Any], _updateIdentityStatus = _updateIdentityStatus.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], addAtIndex = addAtIndex.asInstanceOf[js.Any], addToRef = addToRef.asInstanceOf[js.Any], addToSelf = addToSelf.asInstanceOf[js.Any], addTranslationFromFloats = addTranslationFromFloats.asInstanceOf[js.Any], asArray = asArray.asInstanceOf[js.Any], clone = clone.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], copyFrom = copyFrom.asInstanceOf[js.Any], copyToArray = copyToArray.asInstanceOf[js.Any], decompose = decompose.asInstanceOf[js.Any], determinant = determinant.asInstanceOf[js.Any], equals = equals.asInstanceOf[js.Any], getClassName = getClassName.asInstanceOf[js.Any], getHashCode = getHashCode.asInstanceOf[js.Any], getRotationMatrix = getRotationMatrix.asInstanceOf[js.Any], getRotationMatrixToRef = getRotationMatrixToRef.asInstanceOf[js.Any], getRow = getRow.asInstanceOf[js.Any], getTranslation = getTranslation.asInstanceOf[js.Any], getTranslationToRef = getTranslationToRef.asInstanceOf[js.Any], invert = invert.asInstanceOf[js.Any], invertToRef = invertToRef.asInstanceOf[js.Any], isIdentity = isIdentity.asInstanceOf[js.Any], isIdentityAs3x2 = isIdentityAs3x2.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], multiply = multiply.asInstanceOf[js.Any], multiplyAtIndex = multiplyAtIndex.asInstanceOf[js.Any], multiplyToArray = multiplyToArray.asInstanceOf[js.Any], multiplyToRef = multiplyToRef.asInstanceOf[js.Any], removeRotationAndScaling = removeRotationAndScaling.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleAndAddToRef = scaleAndAddToRef.asInstanceOf[js.Any], scaleToRef = scaleToRef.asInstanceOf[js.Any], setRow = setRow.asInstanceOf[js.Any], setRowFromFloats = setRowFromFloats.asInstanceOf[js.Any], setTranslation = setTranslation.asInstanceOf[js.Any], setTranslationFromFloats = setTranslationFromFloats.asInstanceOf[js.Any], toArray = toArray.asInstanceOf[js.Any], toNormalMatrix = toNormalMatrix.asInstanceOf[js.Any], toggleModelMatrixHandInPlace = toggleModelMatrixHandInPlace.asInstanceOf[js.Any], toggleProjectionMatrixHandInPlace = toggleProjectionMatrixHandInPlace.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], transposeToRef = transposeToRef.asInstanceOf[js.Any], updateFlag = updateFlag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_isIdentity = _isIdentity.asInstanceOf[js.Any], _isIdentity3x2 = _isIdentity3x2.asInstanceOf[js.Any], _isIdentity3x2Dirty = _isIdentity3x2Dirty.asInstanceOf[js.Any], _isIdentityDirty = _isIdentityDirty.asInstanceOf[js.Any], _m = _m.asInstanceOf[js.Any], _markAsUpdated = _markAsUpdated.asInstanceOf[js.Any], _updateIdentityStatus = _updateIdentityStatus.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], addAtIndex = addAtIndex.asInstanceOf[js.Any], addToRef = addToRef.asInstanceOf[js.Any], addToSelf = addToSelf.asInstanceOf[js.Any], addTranslationFromFloats = addTranslationFromFloats.asInstanceOf[js.Any], asArray = asArray.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], copyFrom = copyFrom.asInstanceOf[js.Any], copyToArray = copyToArray.asInstanceOf[js.Any], decompose = decompose.asInstanceOf[js.Any], determinant = determinant.asInstanceOf[js.Any], getClassName = getClassName.asInstanceOf[js.Any], getHashCode = getHashCode.asInstanceOf[js.Any], getRotationMatrix = getRotationMatrix.asInstanceOf[js.Any], getRotationMatrixToRef = getRotationMatrixToRef.asInstanceOf[js.Any], getRow = getRow.asInstanceOf[js.Any], getTranslation = getTranslation.asInstanceOf[js.Any], getTranslationToRef = getTranslationToRef.asInstanceOf[js.Any], invert = invert.asInstanceOf[js.Any], invertToRef = invertToRef.asInstanceOf[js.Any], isIdentity = isIdentity.asInstanceOf[js.Any], isIdentityAs3x2 = isIdentityAs3x2.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], multiply = multiply.asInstanceOf[js.Any], multiplyAtIndex = multiplyAtIndex.asInstanceOf[js.Any], multiplyToArray = multiplyToArray.asInstanceOf[js.Any], multiplyToRef = multiplyToRef.asInstanceOf[js.Any], removeRotationAndScaling = removeRotationAndScaling.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleAndAddToRef = scaleAndAddToRef.asInstanceOf[js.Any], scaleToRef = scaleToRef.asInstanceOf[js.Any], setRow = setRow.asInstanceOf[js.Any], setRowFromFloats = setRowFromFloats.asInstanceOf[js.Any], setTranslation = setTranslation.asInstanceOf[js.Any], setTranslationFromFloats = setTranslationFromFloats.asInstanceOf[js.Any], toArray = toArray.asInstanceOf[js.Any], toNormalMatrix = toNormalMatrix.asInstanceOf[js.Any], toggleModelMatrixHandInPlace = toggleModelMatrixHandInPlace.asInstanceOf[js.Any], toggleProjectionMatrixHandInPlace = toggleProjectionMatrixHandInPlace.asInstanceOf[js.Any], transpose = transpose.asInstanceOf[js.Any], transposeToRef = transposeToRef.asInstanceOf[js.Any], updateFlag = updateFlag.asInstanceOf[js.Any])
+    __obj.updateDynamic("clone")(clone_.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeepImmutableObjectMatrix]
   }
   
   @scala.inline
-  implicit class DeepImmutableObjectMatrixOps[Self <: DeepImmutableObjectMatrix] (val x: Self) extends AnyVal {
+  implicit class DeepImmutableObjectMatrixMutableBuilder[Self <: DeepImmutableObjectMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddAtIndex(value: DeepImmutable[js.Function2[/* index */ Double, /* value */ Double, Matrix]]): Self = StObject.set(x, "addAtIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddAtIndexFunction2(value: (/* index */ Double, /* value */ Double) => Matrix): Self = StObject.set(x, "addAtIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_isIdentity(value: DeepImmutable[_]): Self = this.set("_isIdentity", value.asInstanceOf[js.Any])
+    def setAddFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_isIdentity3x2(value: DeepImmutable[_]): Self = this.set("_isIdentity3x2", value.asInstanceOf[js.Any])
+    def setAddToRef(value: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]]): Self = StObject.set(x, "addToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_isIdentity3x2Dirty(value: DeepImmutable[_]): Self = this.set("_isIdentity3x2Dirty", value.asInstanceOf[js.Any])
+    def setAddToRefFunction2(value: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix): Self = StObject.set(x, "addToRef", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set_isIdentityDirty(value: DeepImmutable[_]): Self = this.set("_isIdentityDirty", value.asInstanceOf[js.Any])
+    def setAddToSelf(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = StObject.set(x, "addToSelf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_m(value: DeepImmutable[_]): Self = this.set("_m", value.asInstanceOf[js.Any])
+    def setAddToSelfFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = StObject.set(x, "addToSelf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_markAsUpdatedFunction0(value: () => Unit): Self = this.set("_markAsUpdated", js.Any.fromFunction0(value))
+    def setAddTranslationFromFloats(value: DeepImmutable[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, Matrix]]): Self = StObject.set(x, "addTranslationFromFloats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_markAsUpdated(value: DeepImmutable[js.Function0[Unit]]): Self = this.set("_markAsUpdated", value.asInstanceOf[js.Any])
+    def setAddTranslationFromFloatsFunction3(value: (/* x */ Double, /* y */ Double, /* z */ Double) => Matrix): Self = StObject.set(x, "addTranslationFromFloats", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set_updateIdentityStatus(value: DeepImmutable[_]): Self = this.set("_updateIdentityStatus", value.asInstanceOf[js.Any])
+    def setAsArray(value: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]]): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = this.set("add", js.Any.fromFunction1(value))
+    def setAsArrayFunction0(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setClone_(value: DeepImmutable[js.Function0[Matrix]]): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddAtIndexFunction2(value: (/* index */ Double, /* value */ Double) => Matrix): Self = this.set("addAtIndex", js.Any.fromFunction2(value))
+    def setClone_Function0(value: () => Matrix): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddAtIndex(value: DeepImmutable[js.Function2[/* index */ Double, /* value */ Double, Matrix]]): Self = this.set("addAtIndex", value.asInstanceOf[js.Any])
+    def setCompose(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Compose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToRefFunction2(value: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix): Self = this.set("addToRef", js.Any.fromFunction2(value))
+    def setComposeToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "ComposeToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToRef(value: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]]): Self = this.set("addToRef", value.asInstanceOf[js.Any])
+    def setComposeToRefUndefined: Self = StObject.set(x, "ComposeToRef", js.undefined)
     
     @scala.inline
-    def setAddToSelfFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = this.set("addToSelf", js.Any.fromFunction1(value))
+    def setComposeUndefined: Self = StObject.set(x, "Compose", js.undefined)
     
     @scala.inline
-    def setAddToSelf(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = this.set("addToSelf", value.asInstanceOf[js.Any])
+    def setConstructor(value: DeepImmutable[js.Function0[js.Any]]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddTranslationFromFloatsFunction3(value: (/* x */ Double, /* y */ Double, /* z */ Double) => Matrix): Self = this.set("addTranslationFromFloats", js.Any.fromFunction3(value))
+    def setConstructorFunction0(value: () => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddTranslationFromFloats(value: DeepImmutable[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, Matrix]]): Self = this.set("addTranslationFromFloats", value.asInstanceOf[js.Any])
+    def setCopyFrom(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = StObject.set(x, "copyFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsArrayFunction0(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = this.set("asArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setAsArray(value: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]]): Self = this.set("asArray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCloneFunction0(value: () => Matrix): Self = this.set("clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setClone(value: DeepImmutable[js.Function0[Matrix]]): Self = this.set("clone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConstructorFunction0(value: () => js.Any): Self = this.set("constructor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setConstructor(value: DeepImmutable[js.Function0[js.Any]]): Self = this.set("constructor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCopyFromFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = this.set("copyFrom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCopyFrom(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = this.set("copyFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCopyToArrayFunction2(value: (/* array */ Float32Array | js.Array[Double], /* offset */ js.UndefOr[Double]) => Matrix): Self = this.set("copyToArray", js.Any.fromFunction2(value))
+    def setCopyFromFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCopyToArray(
       value: DeepImmutable[
           js.Function2[/* array */ Float32Array | js.Array[Double], /* offset */ js.UndefOr[Double], Matrix]
         ]
-    ): Self = this.set("copyToArray", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "copyToArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecomposeFunction3(
-      value: (/* scale */ js.UndefOr[Vector3], /* rotation */ js.UndefOr[Quaternion], /* translation */ js.UndefOr[Vector3]) => Boolean
-    ): Self = this.set("decompose", js.Any.fromFunction3(value))
+    def setCopyToArrayFunction2(value: (/* array */ Float32Array | js.Array[Double], /* offset */ js.UndefOr[Double]) => Matrix): Self = StObject.set(x, "copyToArray", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDecompose(
@@ -458,108 +432,237 @@ object DeepImmutableObjectMatrix {
             Boolean
           ]
         ]
-    ): Self = this.set("decompose", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "decompose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeterminantFunction0(value: () => Double): Self = this.set("determinant", js.Any.fromFunction0(value))
+    def setDecomposeFunction3(
+      value: (/* scale */ js.UndefOr[Vector3], /* rotation */ js.UndefOr[Quaternion], /* translation */ js.UndefOr[Vector3]) => Boolean
+    ): Self = StObject.set(x, "decompose", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDeterminant(value: DeepImmutable[js.Function0[Double]]): Self = this.set("determinant", value.asInstanceOf[js.Any])
+    def setDecomposeLerp(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "DecomposeLerp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEqualsFunction1(value: /* value */ DeepImmutable[Matrix] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setDecomposeLerpToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "DecomposeLerpToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: DeepImmutable[js.Function1[/* value */ DeepImmutable[Matrix], Boolean]]): Self = this.set("equals", value.asInstanceOf[js.Any])
+    def setDecomposeLerpToRefUndefined: Self = StObject.set(x, "DecomposeLerpToRef", js.undefined)
     
     @scala.inline
-    def setGetClassNameFunction0(value: () => String): Self = this.set("getClassName", js.Any.fromFunction0(value))
+    def setDecomposeLerpUndefined: Self = StObject.set(x, "DecomposeLerp", js.undefined)
     
     @scala.inline
-    def setGetClassName(value: DeepImmutable[js.Function0[String]]): Self = this.set("getClassName", value.asInstanceOf[js.Any])
+    def setDeterminant(value: DeepImmutable[js.Function0[Double]]): Self = StObject.set(x, "determinant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHashCodeFunction0(value: () => Double): Self = this.set("getHashCode", js.Any.fromFunction0(value))
+    def setDeterminantFunction0(value: () => Double): Self = StObject.set(x, "determinant", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHashCode(value: DeepImmutable[js.Function0[Double]]): Self = this.set("getHashCode", value.asInstanceOf[js.Any])
+    def setEquals_(value: DeepImmutable[js.Function1[/* value */ DeepImmutable[Matrix], Boolean]]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRotationMatrixFunction0(value: () => Matrix): Self = this.set("getRotationMatrix", js.Any.fromFunction0(value))
+    def setEquals_Function1(value: /* value */ DeepImmutable[Matrix] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRotationMatrix(value: DeepImmutable[js.Function0[Matrix]]): Self = this.set("getRotationMatrix", value.asInstanceOf[js.Any])
+    def setFromArray(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRotationMatrixToRefFunction1(value: /* result */ Matrix => Matrix): Self = this.set("getRotationMatrixToRef", js.Any.fromFunction1(value))
+    def setFromArrayToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromArrayToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRotationMatrixToRef(value: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]]): Self = this.set("getRotationMatrixToRef", value.asInstanceOf[js.Any])
+    def setFromArrayToRefUndefined: Self = StObject.set(x, "FromArrayToRef", js.undefined)
     
     @scala.inline
-    def setGetRowFunction1(value: /* index */ Double => Nullable[Vector4]): Self = this.set("getRow", js.Any.fromFunction1(value))
+    def setFromArrayUndefined: Self = StObject.set(x, "FromArray", js.undefined)
     
     @scala.inline
-    def setGetRow(value: DeepImmutable[js.Function1[/* index */ Double, Nullable[Vector4]]]): Self = this.set("getRow", value.asInstanceOf[js.Any])
+    def setFromFloat32ArrayToRefScaled(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromFloat32ArrayToRefScaled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTranslationFunction0(value: () => Vector3): Self = this.set("getTranslation", js.Any.fromFunction0(value))
+    def setFromFloat32ArrayToRefScaledUndefined: Self = StObject.set(x, "FromFloat32ArrayToRefScaled", js.undefined)
     
     @scala.inline
-    def setGetTranslation(value: DeepImmutable[js.Function0[Vector3]]): Self = this.set("getTranslation", value.asInstanceOf[js.Any])
+    def setFromQuaternionToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromQuaternionToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTranslationToRefFunction1(value: /* result */ Vector3 => Matrix): Self = this.set("getTranslationToRef", js.Any.fromFunction1(value))
+    def setFromQuaternionToRefUndefined: Self = StObject.set(x, "FromQuaternionToRef", js.undefined)
     
     @scala.inline
-    def setGetTranslationToRef(value: DeepImmutable[js.Function1[/* result */ Vector3, Matrix]]): Self = this.set("getTranslationToRef", value.asInstanceOf[js.Any])
+    def setFromValues(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvertFunction0(value: () => Matrix): Self = this.set("invert", js.Any.fromFunction0(value))
+    def setFromValuesToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromValuesToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvert(value: DeepImmutable[js.Function0[Matrix]]): Self = this.set("invert", value.asInstanceOf[js.Any])
+    def setFromValuesToRefUndefined: Self = StObject.set(x, "FromValuesToRef", js.undefined)
     
     @scala.inline
-    def setInvertToRefFunction1(value: /* other */ Matrix => Matrix): Self = this.set("invertToRef", js.Any.fromFunction1(value))
+    def setFromValuesUndefined: Self = StObject.set(x, "FromValues", js.undefined)
     
     @scala.inline
-    def setInvertToRef(value: DeepImmutable[js.Function1[/* other */ Matrix, Matrix]]): Self = this.set("invertToRef", value.asInstanceOf[js.Any])
+    def setFromXYZAxesToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "FromXYZAxesToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIdentityFunction0(value: () => Boolean): Self = this.set("isIdentity", js.Any.fromFunction0(value))
+    def setFromXYZAxesToRefUndefined: Self = StObject.set(x, "FromXYZAxesToRef", js.undefined)
     
     @scala.inline
-    def setIsIdentity(value: DeepImmutable[js.Function0[Boolean]]): Self = this.set("isIdentity", value.asInstanceOf[js.Any])
+    def setGetAsMatrix2x2(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "GetAsMatrix2x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsIdentityAs3x2Function0(value: () => Boolean): Self = this.set("isIdentityAs3x2", js.Any.fromFunction0(value))
+    def setGetAsMatrix2x2Undefined: Self = StObject.set(x, "GetAsMatrix2x2", js.undefined)
     
     @scala.inline
-    def setIsIdentityAs3x2(value: DeepImmutable[js.Function0[Boolean]]): Self = this.set("isIdentityAs3x2", value.asInstanceOf[js.Any])
+    def setGetAsMatrix3x3(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "GetAsMatrix3x3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMFunction0(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = this.set("m", js.Any.fromFunction0(value))
+    def setGetAsMatrix3x3Undefined: Self = StObject.set(x, "GetAsMatrix3x3", js.undefined)
     
     @scala.inline
-    def setM(value: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]]): Self = this.set("m", value.asInstanceOf[js.Any])
+    def setGetClassName(value: DeepImmutable[js.Function0[String]]): Self = StObject.set(x, "getClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplyFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = this.set("multiply", js.Any.fromFunction1(value))
+    def setGetClassNameFunction0(value: () => String): Self = StObject.set(x, "getClassName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMultiply(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = this.set("multiply", value.asInstanceOf[js.Any])
+    def setGetFinalMatrix(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "GetFinalMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplyAtIndexFunction2(value: (/* index */ Double, /* value */ Double) => Matrix): Self = this.set("multiplyAtIndex", js.Any.fromFunction2(value))
+    def setGetFinalMatrixUndefined: Self = StObject.set(x, "GetFinalMatrix", js.undefined)
     
     @scala.inline
-    def setMultiplyAtIndex(value: DeepImmutable[js.Function2[/* index */ Double, /* value */ Double, Matrix]]): Self = this.set("multiplyAtIndex", value.asInstanceOf[js.Any])
+    def setGetHashCode(value: DeepImmutable[js.Function0[Double]]): Self = StObject.set(x, "getHashCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplyToArrayFunction3(
-      value: (/* other */ DeepImmutable[Matrix], /* result */ Float32Array | js.Array[Double], /* offset */ Double) => Matrix
-    ): Self = this.set("multiplyToArray", js.Any.fromFunction3(value))
+    def setGetHashCodeFunction0(value: () => Double): Self = StObject.set(x, "getHashCode", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetRotationMatrix(value: DeepImmutable[js.Function0[Matrix]]): Self = StObject.set(x, "getRotationMatrix", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetRotationMatrixFunction0(value: () => Matrix): Self = StObject.set(x, "getRotationMatrix", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetRotationMatrixToRef(value: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]]): Self = StObject.set(x, "getRotationMatrixToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetRotationMatrixToRefFunction1(value: /* result */ Matrix => Matrix): Self = StObject.set(x, "getRotationMatrixToRef", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGetRow(value: DeepImmutable[js.Function1[/* index */ Double, Nullable[Vector4]]]): Self = StObject.set(x, "getRow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetRowFunction1(value: /* index */ Double => Nullable[Vector4]): Self = StObject.set(x, "getRow", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setGetTranslation(value: DeepImmutable[js.Function0[Vector3]]): Self = StObject.set(x, "getTranslation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetTranslationFunction0(value: () => Vector3): Self = StObject.set(x, "getTranslation", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetTranslationToRef(value: DeepImmutable[js.Function1[/* result */ Vector3, Matrix]]): Self = StObject.set(x, "getTranslationToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetTranslationToRefFunction1(value: /* result */ Vector3 => Matrix): Self = StObject.set(x, "getTranslationToRef", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setIdentity(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityReadOnly(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "IdentityReadOnly", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityReadOnlyUndefined: Self = StObject.set(x, "IdentityReadOnly", js.undefined)
+    
+    @scala.inline
+    def setIdentityToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "IdentityToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityToRefUndefined: Self = StObject.set(x, "IdentityToRef", js.undefined)
+    
+    @scala.inline
+    def setIdentityUndefined: Self = StObject.set(x, "Identity", js.undefined)
+    
+    @scala.inline
+    def setInvert(value: DeepImmutable[js.Function0[Matrix]]): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInvertFunction0(value: () => Matrix): Self = StObject.set(x, "invert", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setInvertToRef(value: DeepImmutable[js.Function1[/* other */ Matrix, Matrix]]): Self = StObject.set(x, "invertToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInvertToRefFunction1(value: /* other */ Matrix => Matrix): Self = StObject.set(x, "invertToRef", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setInvertUndefined: Self = StObject.set(x, "Invert", js.undefined)
+    
+    @scala.inline
+    def setIsIdentity(value: DeepImmutable[js.Function0[Boolean]]): Self = StObject.set(x, "isIdentity", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsIdentityAs3x2(value: DeepImmutable[js.Function0[Boolean]]): Self = StObject.set(x, "isIdentityAs3x2", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsIdentityAs3x2Function0(value: () => Boolean): Self = StObject.set(x, "isIdentityAs3x2", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setIsIdentityFunction0(value: () => Boolean): Self = StObject.set(x, "isIdentity", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setLerp(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Lerp", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLerpToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "LerpToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLerpToRefUndefined: Self = StObject.set(x, "LerpToRef", js.undefined)
+    
+    @scala.inline
+    def setLerpUndefined: Self = StObject.set(x, "Lerp", js.undefined)
+    
+    @scala.inline
+    def setLookAtLH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "LookAtLH", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLookAtLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "LookAtLHToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLookAtLHToRefUndefined: Self = StObject.set(x, "LookAtLHToRef", js.undefined)
+    
+    @scala.inline
+    def setLookAtLHUndefined: Self = StObject.set(x, "LookAtLH", js.undefined)
+    
+    @scala.inline
+    def setLookAtRH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "LookAtRH", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLookAtRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "LookAtRHToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLookAtRHToRefUndefined: Self = StObject.set(x, "LookAtRHToRef", js.undefined)
+    
+    @scala.inline
+    def setLookAtRHUndefined: Self = StObject.set(x, "LookAtRH", js.undefined)
+    
+    @scala.inline
+    def setM(value: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMFunction0(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = StObject.set(x, "m", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setMultiply(value: DeepImmutable[js.Function1[/* other */ DeepImmutable[Matrix], Matrix]]): Self = StObject.set(x, "multiply", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMultiplyAtIndex(value: DeepImmutable[js.Function2[/* index */ Double, /* value */ Double, Matrix]]): Self = StObject.set(x, "multiplyAtIndex", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMultiplyAtIndexFunction2(value: (/* index */ Double, /* value */ Double) => Matrix): Self = StObject.set(x, "multiplyAtIndex", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setMultiplyFunction1(value: /* other */ DeepImmutable[Matrix] => Matrix): Self = StObject.set(x, "multiply", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMultiplyToArray(
@@ -571,468 +674,356 @@ object DeepImmutableObjectMatrix {
             Matrix
           ]
         ]
-    ): Self = this.set("multiplyToArray", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "multiplyToArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplyToRefFunction2(value: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix): Self = this.set("multiplyToRef", js.Any.fromFunction2(value))
+    def setMultiplyToArrayFunction3(
+      value: (/* other */ DeepImmutable[Matrix], /* result */ Float32Array | js.Array[Double], /* offset */ Double) => Matrix
+    ): Self = StObject.set(x, "multiplyToArray", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMultiplyToRef(value: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]]): Self = this.set("multiplyToRef", value.asInstanceOf[js.Any])
+    def setMultiplyToRef(value: DeepImmutable[js.Function2[/* other */ DeepImmutable[Matrix], /* result */ Matrix, Matrix]]): Self = StObject.set(x, "multiplyToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveRotationAndScalingFunction0(value: () => Matrix): Self = this.set("removeRotationAndScaling", js.Any.fromFunction0(value))
+    def setMultiplyToRefFunction2(value: (/* other */ DeepImmutable[Matrix], /* result */ Matrix) => Matrix): Self = StObject.set(x, "multiplyToRef", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveRotationAndScaling(value: DeepImmutable[js.Function0[Matrix]]): Self = this.set("removeRotationAndScaling", value.asInstanceOf[js.Any])
+    def setOrthoLH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "OrthoLH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetFunction0(value: () => Matrix): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setOrthoLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "OrthoLHToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: DeepImmutable[js.Function0[Matrix]]): Self = this.set("reset", value.asInstanceOf[js.Any])
+    def setOrthoLHToRefUndefined: Self = StObject.set(x, "OrthoLHToRef", js.undefined)
     
     @scala.inline
-    def setScaleFunction1(value: /* scale */ Double => Matrix): Self = this.set("scale", js.Any.fromFunction1(value))
+    def setOrthoLHUndefined: Self = StObject.set(x, "OrthoLH", js.undefined)
     
     @scala.inline
-    def setScale(value: DeepImmutable[js.Function1[/* scale */ Double, Matrix]]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setOrthoOffCenterLH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "OrthoOffCenterLH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleAndAddToRefFunction2(value: (/* scale */ Double, /* result */ Matrix) => Matrix): Self = this.set("scaleAndAddToRef", js.Any.fromFunction2(value))
+    def setOrthoOffCenterLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "OrthoOffCenterLHToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleAndAddToRef(value: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]]): Self = this.set("scaleAndAddToRef", value.asInstanceOf[js.Any])
+    def setOrthoOffCenterLHToRefUndefined: Self = StObject.set(x, "OrthoOffCenterLHToRef", js.undefined)
     
     @scala.inline
-    def setScaleToRefFunction2(value: (/* scale */ Double, /* result */ Matrix) => Matrix): Self = this.set("scaleToRef", js.Any.fromFunction2(value))
+    def setOrthoOffCenterLHUndefined: Self = StObject.set(x, "OrthoOffCenterLH", js.undefined)
     
     @scala.inline
-    def setScaleToRef(value: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]]): Self = this.set("scaleToRef", value.asInstanceOf[js.Any])
+    def setOrthoOffCenterRH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "OrthoOffCenterRH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRowFunction2(value: (/* index */ Double, /* row */ Vector4) => Matrix): Self = this.set("setRow", js.Any.fromFunction2(value))
+    def setOrthoOffCenterRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "OrthoOffCenterRHToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetRow(value: DeepImmutable[js.Function2[/* index */ Double, /* row */ Vector4, Matrix]]): Self = this.set("setRow", value.asInstanceOf[js.Any])
+    def setOrthoOffCenterRHToRefUndefined: Self = StObject.set(x, "OrthoOffCenterRHToRef", js.undefined)
     
     @scala.inline
-    def setSetRowFromFloatsFunction5(
-      value: (/* index */ Double, /* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double) => Matrix
-    ): Self = this.set("setRowFromFloats", js.Any.fromFunction5(value))
+    def setOrthoOffCenterRHUndefined: Self = StObject.set(x, "OrthoOffCenterRH", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovLH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovLH", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovLHToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovLHToRefUndefined: Self = StObject.set(x, "PerspectiveFovLHToRef", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovLHUndefined: Self = StObject.set(x, "PerspectiveFovLH", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovRH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovRH", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovRHToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovRHToRefUndefined: Self = StObject.set(x, "PerspectiveFovRHToRef", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovRHUndefined: Self = StObject.set(x, "PerspectiveFovRH", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovReverseLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovReverseLHToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovReverseLHToRefUndefined: Self = StObject.set(x, "PerspectiveFovReverseLHToRef", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovReverseRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovReverseRHToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovReverseRHToRefUndefined: Self = StObject.set(x, "PerspectiveFovReverseRHToRef", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveFovWebVRToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveFovWebVRToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveFovWebVRToRefUndefined: Self = StObject.set(x, "PerspectiveFovWebVRToRef", js.undefined)
+    
+    @scala.inline
+    def setPerspectiveLH(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "PerspectiveLH", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerspectiveLHUndefined: Self = StObject.set(x, "PerspectiveLH", js.undefined)
+    
+    @scala.inline
+    def setReflection(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setReflectionToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "ReflectionToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setReflectionToRefUndefined: Self = StObject.set(x, "ReflectionToRef", js.undefined)
+    
+    @scala.inline
+    def setReflectionUndefined: Self = StObject.set(x, "Reflection", js.undefined)
+    
+    @scala.inline
+    def setRemoveRotationAndScaling(value: DeepImmutable[js.Function0[Matrix]]): Self = StObject.set(x, "removeRotationAndScaling", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRemoveRotationAndScalingFunction0(value: () => Matrix): Self = StObject.set(x, "removeRotationAndScaling", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setReset(value: DeepImmutable[js.Function0[Matrix]]): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResetFunction0(value: () => Matrix): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setRotationAlignToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationAlignToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationAlignToRefUndefined: Self = StObject.set(x, "RotationAlignToRef", js.undefined)
+    
+    @scala.inline
+    def setRotationAxis(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationAxis", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationAxisToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationAxisToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationAxisToRefUndefined: Self = StObject.set(x, "RotationAxisToRef", js.undefined)
+    
+    @scala.inline
+    def setRotationAxisUndefined: Self = StObject.set(x, "RotationAxis", js.undefined)
+    
+    @scala.inline
+    def setRotationX(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationX", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationXToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationXToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationXToRefUndefined: Self = StObject.set(x, "RotationXToRef", js.undefined)
+    
+    @scala.inline
+    def setRotationXUndefined: Self = StObject.set(x, "RotationX", js.undefined)
+    
+    @scala.inline
+    def setRotationY(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationYToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationYToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationYToRefUndefined: Self = StObject.set(x, "RotationYToRef", js.undefined)
+    
+    @scala.inline
+    def setRotationYUndefined: Self = StObject.set(x, "RotationY", js.undefined)
+    
+    @scala.inline
+    def setRotationYawPitchRoll(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationYawPitchRoll", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationYawPitchRollToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationYawPitchRollToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationYawPitchRollToRefUndefined: Self = StObject.set(x, "RotationYawPitchRollToRef", js.undefined)
+    
+    @scala.inline
+    def setRotationYawPitchRollUndefined: Self = StObject.set(x, "RotationYawPitchRoll", js.undefined)
+    
+    @scala.inline
+    def setRotationZ(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationZ", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationZToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "RotationZToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationZToRefUndefined: Self = StObject.set(x, "RotationZToRef", js.undefined)
+    
+    @scala.inline
+    def setRotationZUndefined: Self = StObject.set(x, "RotationZ", js.undefined)
+    
+    @scala.inline
+    def setScale(value: DeepImmutable[js.Function1[/* scale */ Double, Matrix]]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScaleAndAddToRef(value: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]]): Self = StObject.set(x, "scaleAndAddToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScaleAndAddToRefFunction2(value: (/* scale */ Double, /* result */ Matrix) => Matrix): Self = StObject.set(x, "scaleAndAddToRef", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setScaleFunction1(value: /* scale */ Double => Matrix): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setScaleToRef(value: DeepImmutable[js.Function2[/* scale */ Double, /* result */ Matrix, Matrix]]): Self = StObject.set(x, "scaleToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScaleToRefFunction2(value: (/* scale */ Double, /* result */ Matrix) => Matrix): Self = StObject.set(x, "scaleToRef", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setScaling(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Scaling", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScalingToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "ScalingToRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScalingToRefUndefined: Self = StObject.set(x, "ScalingToRef", js.undefined)
+    
+    @scala.inline
+    def setScalingUndefined: Self = StObject.set(x, "Scaling", js.undefined)
+    
+    @scala.inline
+    def setSetRow(value: DeepImmutable[js.Function2[/* index */ Double, /* row */ Vector4, Matrix]]): Self = StObject.set(x, "setRow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSetRowFromFloats(
       value: DeepImmutable[
           js.Function5[/* index */ Double, /* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double, Matrix]
         ]
-    ): Self = this.set("setRowFromFloats", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "setRowFromFloats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTranslationFunction1(value: /* vector3 */ DeepImmutable[Vector3] => Matrix): Self = this.set("setTranslation", js.Any.fromFunction1(value))
+    def setSetRowFromFloatsFunction5(
+      value: (/* index */ Double, /* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double) => Matrix
+    ): Self = StObject.set(x, "setRowFromFloats", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setSetTranslation(value: DeepImmutable[js.Function1[/* vector3 */ DeepImmutable[Vector3], Matrix]]): Self = this.set("setTranslation", value.asInstanceOf[js.Any])
+    def setSetRowFunction2(value: (/* index */ Double, /* row */ Vector4) => Matrix): Self = StObject.set(x, "setRow", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetTranslationFromFloatsFunction3(value: (/* x */ Double, /* y */ Double, /* z */ Double) => Matrix): Self = this.set("setTranslationFromFloats", js.Any.fromFunction3(value))
+    def setSetTranslation(value: DeepImmutable[js.Function1[/* vector3 */ DeepImmutable[Vector3], Matrix]]): Self = StObject.set(x, "setTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTranslationFromFloats(value: DeepImmutable[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, Matrix]]): Self = this.set("setTranslationFromFloats", value.asInstanceOf[js.Any])
+    def setSetTranslationFromFloats(value: DeepImmutable[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, Matrix]]): Self = StObject.set(x, "setTranslationFromFloats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToArrayFunction0(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = this.set("toArray", js.Any.fromFunction0(value))
+    def setSetTranslationFromFloatsFunction3(value: (/* x */ Double, /* y */ Double, /* z */ Double) => Matrix): Self = StObject.set(x, "setTranslationFromFloats", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setToArray(value: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]]): Self = this.set("toArray", value.asInstanceOf[js.Any])
+    def setSetTranslationFunction1(value: /* vector3 */ DeepImmutable[Vector3] => Matrix): Self = StObject.set(x, "setTranslation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToNormalMatrixFunction1(value: /* ref */ Matrix => Unit): Self = this.set("toNormalMatrix", js.Any.fromFunction1(value))
+    def setToArray(value: DeepImmutable[js.Function0[DeepImmutable[Float32Array | js.Array[Double]]]]): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToNormalMatrix(value: DeepImmutable[js.Function1[/* ref */ Matrix, Unit]]): Self = this.set("toNormalMatrix", value.asInstanceOf[js.Any])
+    def setToArrayFunction0(value: () => DeepImmutable[Float32Array | js.Array[Double]]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToggleModelMatrixHandInPlaceFunction0(value: () => Unit): Self = this.set("toggleModelMatrixHandInPlace", js.Any.fromFunction0(value))
+    def setToNormalMatrix(value: DeepImmutable[js.Function1[/* ref */ Matrix, Unit]]): Self = StObject.set(x, "toNormalMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleModelMatrixHandInPlace(value: DeepImmutable[js.Function0[Unit]]): Self = this.set("toggleModelMatrixHandInPlace", value.asInstanceOf[js.Any])
+    def setToNormalMatrixFunction1(value: /* ref */ Matrix => Unit): Self = StObject.set(x, "toNormalMatrix", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setToggleProjectionMatrixHandInPlaceFunction0(value: () => Unit): Self = this.set("toggleProjectionMatrixHandInPlace", js.Any.fromFunction0(value))
+    def setToggleModelMatrixHandInPlace(value: DeepImmutable[js.Function0[Unit]]): Self = StObject.set(x, "toggleModelMatrixHandInPlace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggleProjectionMatrixHandInPlace(value: DeepImmutable[js.Function0[Unit]]): Self = this.set("toggleProjectionMatrixHandInPlace", value.asInstanceOf[js.Any])
+    def setToggleModelMatrixHandInPlaceFunction0(value: () => Unit): Self = StObject.set(x, "toggleModelMatrixHandInPlace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTransposeFunction0(value: () => Matrix): Self = this.set("transpose", js.Any.fromFunction0(value))
+    def setToggleProjectionMatrixHandInPlace(value: DeepImmutable[js.Function0[Unit]]): Self = StObject.set(x, "toggleProjectionMatrixHandInPlace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranspose(value: DeepImmutable[js.Function0[Matrix]]): Self = this.set("transpose", value.asInstanceOf[js.Any])
+    def setToggleProjectionMatrixHandInPlaceFunction0(value: () => Unit): Self = StObject.set(x, "toggleProjectionMatrixHandInPlace", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTransposeToRefFunction1(value: /* result */ Matrix => Matrix): Self = this.set("transposeToRef", js.Any.fromFunction1(value))
+    def setTranslation(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Translation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransposeToRef(value: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]]): Self = this.set("transposeToRef", value.asInstanceOf[js.Any])
+    def setTranslationToRef(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "TranslationToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateFlag(value: DeepImmutable[Double]): Self = this.set("updateFlag", value.asInstanceOf[js.Any])
+    def setTranslationToRefUndefined: Self = StObject.set(x, "TranslationToRef", js.undefined)
     
     @scala.inline
-    def setCompose(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Compose", value.asInstanceOf[js.Any])
+    def setTranslationUndefined: Self = StObject.set(x, "Translation", js.undefined)
     
     @scala.inline
-    def deleteCompose: Self = this.set("Compose", js.undefined)
+    def setTranspose(value: DeepImmutable[js.Function0[Matrix]]): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComposeToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("ComposeToRef", value.asInstanceOf[js.Any])
+    def setTransposeFunction0(value: () => Matrix): Self = StObject.set(x, "transpose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteComposeToRef: Self = this.set("ComposeToRef", js.undefined)
+    def setTransposeToRef(value: DeepImmutable[js.Function1[/* result */ Matrix, Matrix]]): Self = StObject.set(x, "transposeToRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecomposeLerp(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("DecomposeLerp", value.asInstanceOf[js.Any])
+    def setTransposeToRefFunction1(value: /* result */ Matrix => Matrix): Self = StObject.set(x, "transposeToRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteDecomposeLerp: Self = this.set("DecomposeLerp", js.undefined)
+    def setTransposeToRefUndefined: Self = StObject.set(x, "TransposeToRef", js.undefined)
     
     @scala.inline
-    def setDecomposeLerpToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("DecomposeLerpToRef", value.asInstanceOf[js.Any])
+    def setTransposeUndefined: Self = StObject.set(x, "Transpose", js.undefined)
     
     @scala.inline
-    def deleteDecomposeLerpToRef: Self = this.set("DecomposeLerpToRef", js.undefined)
+    def setUpdateFlag(value: DeepImmutable[Double]): Self = StObject.set(x, "updateFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromArray(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromArray", value.asInstanceOf[js.Any])
+    def setUse64Bits(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Use64Bits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromArray: Self = this.set("FromArray", js.undefined)
+    def setUse64BitsUndefined: Self = StObject.set(x, "Use64Bits", js.undefined)
     
     @scala.inline
-    def setFromArrayToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromArrayToRef", value.asInstanceOf[js.Any])
+    def setZero(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "Zero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromArrayToRef: Self = this.set("FromArrayToRef", js.undefined)
+    def setZeroUndefined: Self = StObject.set(x, "Zero", js.undefined)
     
     @scala.inline
-    def setFromFloat32ArrayToRefScaled(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromFloat32ArrayToRefScaled", value.asInstanceOf[js.Any])
+    def set_identityReadOnly(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "_identityReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromFloat32ArrayToRefScaled: Self = this.set("FromFloat32ArrayToRefScaled", js.undefined)
+    def set_identityReadOnlyUndefined: Self = StObject.set(x, "_identityReadOnly", js.undefined)
     
     @scala.inline
-    def setFromQuaternionToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromQuaternionToRef", value.asInstanceOf[js.Any])
+    def set_isIdentity(value: DeepImmutable[_]): Self = StObject.set(x, "_isIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromQuaternionToRef: Self = this.set("FromQuaternionToRef", js.undefined)
+    def set_isIdentity3x2(value: DeepImmutable[_]): Self = StObject.set(x, "_isIdentity3x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromValues(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromValues", value.asInstanceOf[js.Any])
+    def set_isIdentity3x2Dirty(value: DeepImmutable[_]): Self = StObject.set(x, "_isIdentity3x2Dirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromValues: Self = this.set("FromValues", js.undefined)
+    def set_isIdentityDirty(value: DeepImmutable[_]): Self = StObject.set(x, "_isIdentityDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromValuesToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromValuesToRef", value.asInstanceOf[js.Any])
+    def set_m(value: DeepImmutable[_]): Self = StObject.set(x, "_m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFromValuesToRef: Self = this.set("FromValuesToRef", js.undefined)
+    def set_markAsUpdated(value: DeepImmutable[js.Function0[Unit]]): Self = StObject.set(x, "_markAsUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromXYZAxesToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("FromXYZAxesToRef", value.asInstanceOf[js.Any])
+    def set_markAsUpdatedFunction0(value: () => Unit): Self = StObject.set(x, "_markAsUpdated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFromXYZAxesToRef: Self = this.set("FromXYZAxesToRef", js.undefined)
+    def set_updateFlagSeed(value: DeepImmutable[js.UndefOr[_]]): Self = StObject.set(x, "_updateFlagSeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAsMatrix2x2(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("GetAsMatrix2x2", value.asInstanceOf[js.Any])
+    def set_updateFlagSeedUndefined: Self = StObject.set(x, "_updateFlagSeed", js.undefined)
     
     @scala.inline
-    def deleteGetAsMatrix2x2: Self = this.set("GetAsMatrix2x2", js.undefined)
-    
-    @scala.inline
-    def setGetAsMatrix3x3(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("GetAsMatrix3x3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGetAsMatrix3x3: Self = this.set("GetAsMatrix3x3", js.undefined)
-    
-    @scala.inline
-    def setGetFinalMatrix(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("GetFinalMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGetFinalMatrix: Self = this.set("GetFinalMatrix", js.undefined)
-    
-    @scala.inline
-    def setIdentity(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Identity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentity: Self = this.set("Identity", js.undefined)
-    
-    @scala.inline
-    def setIdentityReadOnly(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("IdentityReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityReadOnly: Self = this.set("IdentityReadOnly", js.undefined)
-    
-    @scala.inline
-    def setIdentityToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("IdentityToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentityToRef: Self = this.set("IdentityToRef", js.undefined)
-    
-    @scala.inline
-    def deleteInvert: Self = this.set("Invert", js.undefined)
-    
-    @scala.inline
-    def setLerp(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Lerp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLerp: Self = this.set("Lerp", js.undefined)
-    
-    @scala.inline
-    def setLerpToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("LerpToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLerpToRef: Self = this.set("LerpToRef", js.undefined)
-    
-    @scala.inline
-    def setLookAtLH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("LookAtLH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLookAtLH: Self = this.set("LookAtLH", js.undefined)
-    
-    @scala.inline
-    def setLookAtLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("LookAtLHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLookAtLHToRef: Self = this.set("LookAtLHToRef", js.undefined)
-    
-    @scala.inline
-    def setLookAtRH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("LookAtRH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLookAtRH: Self = this.set("LookAtRH", js.undefined)
-    
-    @scala.inline
-    def setLookAtRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("LookAtRHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLookAtRHToRef: Self = this.set("LookAtRHToRef", js.undefined)
-    
-    @scala.inline
-    def setOrthoLH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("OrthoLH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrthoLH: Self = this.set("OrthoLH", js.undefined)
-    
-    @scala.inline
-    def setOrthoLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("OrthoLHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrthoLHToRef: Self = this.set("OrthoLHToRef", js.undefined)
-    
-    @scala.inline
-    def setOrthoOffCenterLH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("OrthoOffCenterLH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrthoOffCenterLH: Self = this.set("OrthoOffCenterLH", js.undefined)
-    
-    @scala.inline
-    def setOrthoOffCenterLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("OrthoOffCenterLHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrthoOffCenterLHToRef: Self = this.set("OrthoOffCenterLHToRef", js.undefined)
-    
-    @scala.inline
-    def setOrthoOffCenterRH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("OrthoOffCenterRH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrthoOffCenterRH: Self = this.set("OrthoOffCenterRH", js.undefined)
-    
-    @scala.inline
-    def setOrthoOffCenterRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("OrthoOffCenterRHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrthoOffCenterRHToRef: Self = this.set("OrthoOffCenterRHToRef", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovLH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovLH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovLH: Self = this.set("PerspectiveFovLH", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovLHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovLHToRef: Self = this.set("PerspectiveFovLHToRef", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovRH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovRH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovRH: Self = this.set("PerspectiveFovRH", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovRHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovRHToRef: Self = this.set("PerspectiveFovRHToRef", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovReverseLHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovReverseLHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovReverseLHToRef: Self = this.set("PerspectiveFovReverseLHToRef", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovReverseRHToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovReverseRHToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovReverseRHToRef: Self = this.set("PerspectiveFovReverseRHToRef", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveFovWebVRToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveFovWebVRToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveFovWebVRToRef: Self = this.set("PerspectiveFovWebVRToRef", js.undefined)
-    
-    @scala.inline
-    def setPerspectiveLH(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("PerspectiveLH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerspectiveLH: Self = this.set("PerspectiveLH", js.undefined)
-    
-    @scala.inline
-    def setReflection(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Reflection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReflection: Self = this.set("Reflection", js.undefined)
-    
-    @scala.inline
-    def setReflectionToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("ReflectionToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReflectionToRef: Self = this.set("ReflectionToRef", js.undefined)
-    
-    @scala.inline
-    def setRotationAlignToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationAlignToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationAlignToRef: Self = this.set("RotationAlignToRef", js.undefined)
-    
-    @scala.inline
-    def setRotationAxis(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationAxis: Self = this.set("RotationAxis", js.undefined)
-    
-    @scala.inline
-    def setRotationAxisToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationAxisToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationAxisToRef: Self = this.set("RotationAxisToRef", js.undefined)
-    
-    @scala.inline
-    def setRotationX(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationX: Self = this.set("RotationX", js.undefined)
-    
-    @scala.inline
-    def setRotationXToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationXToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationXToRef: Self = this.set("RotationXToRef", js.undefined)
-    
-    @scala.inline
-    def setRotationY(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationY: Self = this.set("RotationY", js.undefined)
-    
-    @scala.inline
-    def setRotationYToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationYToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationYToRef: Self = this.set("RotationYToRef", js.undefined)
-    
-    @scala.inline
-    def setRotationYawPitchRoll(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationYawPitchRoll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationYawPitchRoll: Self = this.set("RotationYawPitchRoll", js.undefined)
-    
-    @scala.inline
-    def setRotationYawPitchRollToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationYawPitchRollToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationYawPitchRollToRef: Self = this.set("RotationYawPitchRollToRef", js.undefined)
-    
-    @scala.inline
-    def setRotationZ(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationZ: Self = this.set("RotationZ", js.undefined)
-    
-    @scala.inline
-    def setRotationZToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("RotationZToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationZToRef: Self = this.set("RotationZToRef", js.undefined)
-    
-    @scala.inline
-    def setScaling(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Scaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaling: Self = this.set("Scaling", js.undefined)
-    
-    @scala.inline
-    def setScalingToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("ScalingToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingToRef: Self = this.set("ScalingToRef", js.undefined)
-    
-    @scala.inline
-    def setTranslation(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Translation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslation: Self = this.set("Translation", js.undefined)
-    
-    @scala.inline
-    def setTranslationToRef(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("TranslationToRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTranslationToRef: Self = this.set("TranslationToRef", js.undefined)
-    
-    @scala.inline
-    def deleteTranspose: Self = this.set("Transpose", js.undefined)
-    
-    @scala.inline
-    def deleteTransposeToRef: Self = this.set("TransposeToRef", js.undefined)
-    
-    @scala.inline
-    def setUse64Bits(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Use64Bits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUse64Bits: Self = this.set("Use64Bits", js.undefined)
-    
-    @scala.inline
-    def setZero(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("Zero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZero: Self = this.set("Zero", js.undefined)
-    
-    @scala.inline
-    def set_identityReadOnly(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("_identityReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_identityReadOnly: Self = this.set("_identityReadOnly", js.undefined)
-    
-    @scala.inline
-    def set_updateFlagSeed(value: DeepImmutable[js.UndefOr[_]]): Self = this.set("_updateFlagSeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_updateFlagSeed: Self = this.set("_updateFlagSeed", js.undefined)
+    def set_updateIdentityStatus(value: DeepImmutable[_]): Self = StObject.set(x, "_updateIdentityStatus", value.asInstanceOf[js.Any])
   }
 }

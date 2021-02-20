@@ -3,12 +3,13 @@ package typings.dc.mod
 import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.Selection_
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Utils extends js.Object {
+trait Utils extends StObject {
   
   def add(l: Double, r: String): Date | Double = js.native
   def add(l: Double, r: String, t: String): Date | Double = js.native

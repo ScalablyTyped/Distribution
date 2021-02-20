@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Useful when you're building a language-binding where you need to free
   * native resources when a JS value is no longer needed.
   */
-@JSGlobal("WeakRef")
-@js.native
-object WeakRef extends js.Object
+object WeakRef

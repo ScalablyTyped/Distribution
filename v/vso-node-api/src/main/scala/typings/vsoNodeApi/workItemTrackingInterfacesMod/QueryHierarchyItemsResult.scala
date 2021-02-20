@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryHierarchyItemsResult extends js.Object {
+trait QueryHierarchyItemsResult extends StObject {
   
   /**
     * The count of items.
@@ -31,30 +32,18 @@ object QueryHierarchyItemsResult {
   }
   
   @scala.inline
-  implicit class QueryHierarchyItemsResultOps[Self <: QueryHierarchyItemsResult] (val x: Self) extends AnyVal {
+  implicit class QueryHierarchyItemsResultMutableBuilder[Self <: QueryHierarchyItemsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: js.Array[QueryHierarchyItem]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasMore(value: Boolean): Self = this.set("hasMore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueVarargs(value: QueryHierarchyItem*): Self = this.set("value", js.Array(value :_*))
-    
-    @scala.inline
-    def setValue(value: js.Array[QueryHierarchyItem]): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValueVarargs(value: QueryHierarchyItem*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

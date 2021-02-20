@@ -5,33 +5,39 @@ import typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andro
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning.PartnersResource
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.androiddeviceprovisioning
 import typings.maximMazurokGapiClientAndroiddeviceprovisioning.maximMazurokGapiClientAndroiddeviceprovisioningStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Android Device Provisioning Partner API v1 */
-      def load(name: androiddeviceprovisioning, version: v1): js.Thenable[Unit] = js.native
-      def load(name: androiddeviceprovisioning, version: v1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object androiddeviceprovisioning extends js.Object {
+      object androiddeviceprovisioning {
         
+        @JSGlobal("gapi.client.androiddeviceprovisioning.customers")
+        @js.native
         val customers: CustomersResource = js.native
         
+        @JSGlobal("gapi.client.androiddeviceprovisioning.operations")
+        @js.native
         val operations: OperationsResource = js.native
         
+        @JSGlobal("gapi.client.androiddeviceprovisioning.partners")
+        @js.native
         val partners: PartnersResource = js.native
       }
+      
+      /** Load Android Device Provisioning Partner API v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: androiddeviceprovisioning, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: androiddeviceprovisioning, version: v1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

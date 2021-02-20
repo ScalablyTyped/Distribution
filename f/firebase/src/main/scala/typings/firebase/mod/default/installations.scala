@@ -1,5 +1,6 @@
 package typings.firebase.mod.default
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,12 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @webonly
   */
-@JSImport("firebase", "installations")
-@js.native
-object installations extends js.Object {
+object installations {
   
   @js.native
-  trait Installations extends js.Object {
+  trait Installations extends StObject {
     
     /**
       * Deletes the Firebase Installation and all associated data.

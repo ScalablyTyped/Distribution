@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.Alt
 import typings.maximMazurokGapiClientWebsecurityscanner.anon.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindingsResource extends js.Object {
+trait FindingsResource extends StObject {
   
   /** Gets a Finding. */
   def get(): Request[Finding] = js.native

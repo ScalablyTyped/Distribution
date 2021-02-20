@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientCloudfunctions.anon.Parent
 import typings.maximMazurokGapiClientCloudfunctions.anon.PrettyPrint
 import typings.maximMazurokGapiClientCloudfunctions.anon.QuotaUser
 import typings.maximMazurokGapiClientCloudfunctions.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FunctionsResource extends js.Object {
+trait FunctionsResource extends StObject {
   
   def call(request: Accesstoken, body: CallFunctionRequest): Request[CallFunctionResponse] = js.native
   /**

@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersTime extends js.Object {
+trait GoogleActionsV2OrdersTime extends StObject {
   
   /**
     * ISO 8601 representation of time indicator: could be a duration, date or
@@ -27,30 +28,18 @@ object GoogleActionsV2OrdersTime {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersTimeOps[Self <: GoogleActionsV2OrdersTime] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersTimeMutableBuilder[Self <: GoogleActionsV2OrdersTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimeIso8601(value: String): Self = StObject.set(x, "timeIso8601", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimeIso8601Undefined: Self = StObject.set(x, "timeIso8601", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: GoogleActionsV2OrdersTimeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeIso8601(value: String): Self = this.set("timeIso8601", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeIso8601: Self = this.set("timeIso8601", js.undefined)
-    
-    @scala.inline
-    def setType(value: GoogleActionsV2OrdersTimeType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

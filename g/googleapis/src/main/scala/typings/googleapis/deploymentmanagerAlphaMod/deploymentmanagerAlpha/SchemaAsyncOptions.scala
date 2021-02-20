@@ -1,5 +1,6 @@
 package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Async options that determine when a resource should finish.
   */
 @js.native
-trait SchemaAsyncOptions extends js.Object {
+trait SchemaAsyncOptions extends StObject {
   
   /**
     * Method regex where this policy will apply.
@@ -31,30 +32,18 @@ object SchemaAsyncOptions {
   }
   
   @scala.inline
-  implicit class SchemaAsyncOptionsOps[Self <: SchemaAsyncOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaAsyncOptionsMutableBuilder[Self <: SchemaAsyncOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethodMatch(value: String): Self = StObject.set(x, "methodMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodMatchUndefined: Self = StObject.set(x, "methodMatch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPollingOptions(value: SchemaPollingOptions): Self = StObject.set(x, "pollingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodMatch(value: String): Self = this.set("methodMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethodMatch: Self = this.set("methodMatch", js.undefined)
-    
-    @scala.inline
-    def setPollingOptions(value: SchemaPollingOptions): Self = this.set("pollingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePollingOptions: Self = this.set("pollingOptions", js.undefined)
+    def setPollingOptionsUndefined: Self = StObject.set(x, "pollingOptions", js.undefined)
   }
 }

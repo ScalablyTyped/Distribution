@@ -2,12 +2,13 @@ package typings.reactJsonschemaForm.mod
 
 import typings.jsonSchema.mod.JSONSchema6
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldTemplateProps extends js.Object {
+trait FieldTemplateProps extends StObject {
   
   var children: ReactElement = js.native
   
@@ -76,81 +77,69 @@ object FieldTemplateProps {
   }
   
   @scala.inline
-  implicit class FieldTemplatePropsOps[Self <: FieldTemplateProps] (val x: Self) extends AnyVal {
+  implicit class FieldTemplatePropsMutableBuilder[Self <: FieldTemplateProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNames(value: String): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: ReactElement): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactElement): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassNames(value: String): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    def setDisplayLabel(value: Boolean): Self = StObject.set(x, "displayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ReactElement): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setErrors(value: ReactElement): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLabel(value: Boolean): Self = this.set("displayLabel", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setErrors(value: ReactElement): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: Field*): Self = this.set("fields", js.Array(value :_*))
+    def setHelp(value: ReactElement): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[Field]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormContext(value: js.Any): Self = this.set("formContext", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: ReactElement): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setRawDescription(value: String): Self = StObject.set(x, "rawDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRawErrors(value: js.Array[String]): Self = StObject.set(x, "rawErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setRawErrorsVarargs(value: String*): Self = StObject.set(x, "rawErrors", js.Array(value :_*))
     
     @scala.inline
-    def setRawDescription(value: String): Self = this.set("rawDescription", value.asInstanceOf[js.Any])
+    def setRawHelp(value: String): Self = StObject.set(x, "rawHelp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawErrorsVarargs(value: String*): Self = this.set("rawErrors", js.Array(value :_*))
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawErrors(value: js.Array[String]): Self = this.set("rawErrors", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawHelp(value: String): Self = this.set("rawHelp", value.asInstanceOf[js.Any])
+    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: JSONSchema6): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUiSchema(value: UiSchema): Self = this.set("uiSchema", value.asInstanceOf[js.Any])
+    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneCategory. */
 @js.native
-trait ToneCategory extends js.Object {
+trait ToneCategory extends StObject {
   
   /** The unique, non-localized identifier of the category for the results. The service can return results for the following category IDs: `emotion_tone`, `language_tone`, and `social_tone`. */
   var category_id: String = js.native
@@ -26,30 +27,18 @@ object ToneCategory {
   }
   
   @scala.inline
-  implicit class ToneCategoryOps[Self <: ToneCategory] (val x: Self) extends AnyVal {
+  implicit class ToneCategoryMutableBuilder[Self <: ToneCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory_id(value: String): Self = StObject.set(x, "category_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategory_name(value: String): Self = StObject.set(x, "category_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory_id(value: String): Self = this.set("category_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCategory_name(value: String): Self = this.set("category_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTonesVarargs(value: ToneScore*): Self = this.set("tones", js.Array(value :_*))
-    
-    @scala.inline
-    def setTones(value: js.Array[ToneScore]): Self = this.set("tones", value.asInstanceOf[js.Any])
+    def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
   }
 }

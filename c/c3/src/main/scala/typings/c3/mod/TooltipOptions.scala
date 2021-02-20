@@ -6,12 +6,13 @@ import typings.c3.anon.PositionShow
 import typings.c3.c3Strings.asc
 import typings.c3.c3Strings.desc
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TooltipOptions extends js.Object {
+trait TooltipOptions extends StObject {
   
   /**
     * Set custom HTML for the tooltip.
@@ -77,19 +78,7 @@ object TooltipOptions {
   }
   
   @scala.inline
-  implicit class TooltipOptionsOps[Self <: TooltipOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TooltipOptionsMutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setContents(
@@ -101,49 +90,49 @@ object TooltipOptions {
           /* color */ js.Function1[/* repeated */ js.Any, _], 
           String
         ]
-    ): Self = this.set("contents", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContents: Self = this.set("contents", js.undefined)
+    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
     @scala.inline
-    def setFormat(value: Name): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: Name): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setGrouped(value: Boolean): Self = this.set("grouped", value.asInstanceOf[js.Any])
+    def setGrouped(value: Boolean): Self = StObject.set(x, "grouped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrouped: Self = this.set("grouped", js.undefined)
+    def setGroupedUndefined: Self = StObject.set(x, "grouped", js.undefined)
     
     @scala.inline
-    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def setInit(value: PositionShow): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setInit(value: PositionShow): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def setOrderFunction2(value: (/* data1 */ js.Any, /* data2 */ js.Any) => Double): Self = this.set("order", js.Any.fromFunction2(value))
+    def setOrder(value: desc | asc | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double])): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderVarargs(value: js.Any*): Self = this.set("order", js.Array(value :_*))
+    def setOrderFunction2(value: (/* data1 */ js.Any, /* data2 */ js.Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOrder(value: desc | asc | js.Array[_] | (js.Function2[/* data1 */ js.Any, /* data2 */ js.Any, Double])): Self = this.set("order", value.asInstanceOf[js.Any])
+    def setOrderNull: Self = StObject.set(x, "order", null)
     
     @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setOrderNull: Self = this.set("order", null)
+    def setOrderVarargs(value: js.Any*): Self = StObject.set(x, "order", js.Array(value :_*))
     
     @scala.inline
     def setPosition(
@@ -155,15 +144,15 @@ object TooltipOptions {
           /* element */ SVGElement, 
           Left
         ]
-    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

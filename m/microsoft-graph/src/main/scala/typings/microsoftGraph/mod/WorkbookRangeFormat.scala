@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,102 +53,90 @@ object WorkbookRangeFormat {
   }
   
   @scala.inline
-  implicit class WorkbookRangeFormatOps[Self <: WorkbookRangeFormat] (val x: Self) extends AnyVal {
+  implicit class WorkbookRangeFormatMutableBuilder[Self <: WorkbookRangeFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorders(value: NullableOption[js.Array[WorkbookRangeBorder]]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBordersNull: Self = StObject.set(x, "borders", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def setBordersVarargs(value: WorkbookRangeBorder*): Self = this.set("borders", js.Array(value :_*))
+    def setBordersVarargs(value: WorkbookRangeBorder*): Self = StObject.set(x, "borders", js.Array(value :_*))
     
     @scala.inline
-    def setBorders(value: NullableOption[js.Array[WorkbookRangeBorder]]): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setColumnWidth(value: NullableOption[Double]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setColumnWidthNull: Self = StObject.set(x, "columnWidth", null)
     
     @scala.inline
-    def setBordersNull: Self = this.set("borders", null)
+    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def setColumnWidth(value: NullableOption[Double]): Self = this.set("columnWidth", value.asInstanceOf[js.Any])
+    def setFill(value: NullableOption[WorkbookRangeFill]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumnWidth: Self = this.set("columnWidth", js.undefined)
+    def setFillNull: Self = StObject.set(x, "fill", null)
     
     @scala.inline
-    def setColumnWidthNull: Self = this.set("columnWidth", null)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setFill(value: NullableOption[WorkbookRangeFill]): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFont(value: NullableOption[WorkbookRangeFont]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFontNull: Self = StObject.set(x, "font", null)
     
     @scala.inline
-    def setFillNull: Self = this.set("fill", null)
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def setFont(value: NullableOption[WorkbookRangeFont]): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHorizontalAlignment(value: NullableOption[String]): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setHorizontalAlignmentNull: Self = StObject.set(x, "horizontalAlignment", null)
     
     @scala.inline
-    def setFontNull: Self = this.set("font", null)
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def setHorizontalAlignment(value: NullableOption[String]): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setProtection(value: NullableOption[WorkbookFormatProtection]): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setProtectionNull: Self = StObject.set(x, "protection", null)
     
     @scala.inline
-    def setHorizontalAlignmentNull: Self = this.set("horizontalAlignment", null)
+    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
     
     @scala.inline
-    def setProtection(value: NullableOption[WorkbookFormatProtection]): Self = this.set("protection", value.asInstanceOf[js.Any])
+    def setRowHeight(value: NullableOption[Double]): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProtection: Self = this.set("protection", js.undefined)
+    def setRowHeightNull: Self = StObject.set(x, "rowHeight", null)
     
     @scala.inline
-    def setProtectionNull: Self = this.set("protection", null)
+    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     @scala.inline
-    def setRowHeight(value: NullableOption[Double]): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setVerticalAlignment(value: NullableOption[String]): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    def setVerticalAlignmentNull: Self = StObject.set(x, "verticalAlignment", null)
     
     @scala.inline
-    def setRowHeightNull: Self = this.set("rowHeight", null)
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def setVerticalAlignment(value: NullableOption[String]): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    def setWrapText(value: NullableOption[Boolean]): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    def setWrapTextNull: Self = StObject.set(x, "wrapText", null)
     
     @scala.inline
-    def setVerticalAlignmentNull: Self = this.set("verticalAlignment", null)
-    
-    @scala.inline
-    def setWrapText(value: NullableOption[Boolean]): Self = this.set("wrapText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapText: Self = this.set("wrapText", js.undefined)
-    
-    @scala.inline
-    def setWrapTextNull: Self = this.set("wrapText", null)
+    def setWrapTextUndefined: Self = StObject.set(x, "wrapText", js.undefined)
   }
 }

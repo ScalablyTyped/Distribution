@@ -1,5 +1,6 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.directThreadBroadcastOptionsMod.DirectThreadBroadcastOptions
 import typings.instagramPrivateApi.directThreadRepositoryAddUserResponseMod.DirectThreadRepositoryAddUserResponseRootObject
 import typings.instagramPrivateApi.directThreadRepositoryApproveParticipantRequestResponseMod.DirectThreadRepositoryApproveParticipantRequestResponseRootObject
@@ -8,16 +9,17 @@ import typings.instagramPrivateApi.directThreadRepositoryGetByParticipantsRespon
 import typings.instagramPrivateApi.directThreadRepositoryUpdateTitleResponseMod.DirectThreadRepositoryUpdateTitleResponseRootObject
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/repositories/direct-thread.repository", JSImport.Namespace)
-@js.native
-object directThreadRepositoryMod extends js.Object {
+object directThreadRepositoryMod {
   
+  @JSImport("instagram-private-api/dist/repositories/direct-thread.repository", "DirectThreadRepository")
   @js.native
-  class DirectThreadRepository () extends Repository {
+  class DirectThreadRepository protected () extends Repository {
+    def this(client: IgApiClient) = this()
     
     def addUser(threadId: String, userIds: js.Array[Double | String]): js.Promise[DirectThreadRepositoryAddUserResponseRootObject] = js.native
     def addUser(threadId: Double, userIds: js.Array[Double | String]): js.Promise[DirectThreadRepositoryAddUserResponseRootObject] = js.native

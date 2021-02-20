@@ -1,11 +1,12 @@
 package typings.amapJsSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Coords extends js.Object {
+trait Coords extends StObject {
   
   /**
     *
@@ -34,33 +35,21 @@ object Coords {
   }
   
   @scala.inline
-  implicit class CoordsOps[Self <: Coords] (val x: Self) extends AnyVal {
+  implicit class CoordsMutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
     
     @scala.inline
-    def setCoordsVarargs(value: Double*): Self = this.set("coords", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoords(value: js.Array[Double]): Self = this.set("coords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoords: Self = this.set("coords", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

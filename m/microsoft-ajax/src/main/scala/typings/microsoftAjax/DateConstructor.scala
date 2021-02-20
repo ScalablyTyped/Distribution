@@ -1,11 +1,12 @@
 package typings.microsoftAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DateConstructor extends js.Object {
+trait DateConstructor extends StObject {
   
   /**
     * Creates a date from a string by using the invariant culture. This function is static and can be invoked without creating an instance of the object.

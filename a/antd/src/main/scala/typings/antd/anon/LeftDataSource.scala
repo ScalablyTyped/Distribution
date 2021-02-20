@@ -1,12 +1,13 @@
 package typings.antd.anon
 
 import typings.antd.transferMod.TransferItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeftDataSource[RecordType /* <: TransferItem */] extends js.Object {
+trait LeftDataSource[RecordType /* <: TransferItem */] extends StObject {
   
   var leftDataSource: js.Array[RecordType] = js.native
   
@@ -21,30 +22,18 @@ object LeftDataSource {
   }
   
   @scala.inline
-  implicit class LeftDataSourceOps[Self <: LeftDataSource[_], RecordType /* <: TransferItem */] (val x: Self with LeftDataSource[RecordType]) extends AnyVal {
+  implicit class LeftDataSourceMutableBuilder[Self <: LeftDataSource[_], RecordType /* <: TransferItem */] (val x: Self with LeftDataSource[RecordType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "leftDataSource", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightDataSource(value: js.Array[RecordType]): Self = StObject.set(x, "rightDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftDataSourceVarargs(value: RecordType*): Self = this.set("leftDataSource", js.Array(value :_*))
-    
-    @scala.inline
-    def setLeftDataSource(value: js.Array[RecordType]): Self = this.set("leftDataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightDataSourceVarargs(value: RecordType*): Self = this.set("rightDataSource", js.Array(value :_*))
-    
-    @scala.inline
-    def setRightDataSource(value: js.Array[RecordType]): Self = this.set("rightDataSource", value.asInstanceOf[js.Any])
+    def setRightDataSourceVarargs(value: RecordType*): Self = StObject.set(x, "rightDataSource", js.Array(value :_*))
   }
 }

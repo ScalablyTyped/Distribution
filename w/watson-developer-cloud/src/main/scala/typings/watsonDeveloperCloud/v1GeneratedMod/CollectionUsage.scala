@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Summary of the collection usage in the environment. */
 @js.native
-trait CollectionUsage extends js.Object {
+trait CollectionUsage extends StObject {
   
   /** Number of active collections in the environment. */
   var available: js.UndefOr[Double] = js.native
@@ -23,30 +24,18 @@ object CollectionUsage {
   }
   
   @scala.inline
-  implicit class CollectionUsageOps[Self <: CollectionUsage] (val x: Self) extends AnyVal {
+  implicit class CollectionUsageMutableBuilder[Self <: CollectionUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximum_allowed(value: Double): Self = StObject.set(x, "maximum_allowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: Double): Self = this.set("available", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAvailable: Self = this.set("available", js.undefined)
-    
-    @scala.inline
-    def setMaximum_allowed(value: Double): Self = this.set("maximum_allowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximum_allowed: Self = this.set("maximum_allowed", js.undefined)
+    def setMaximum_allowedUndefined: Self = StObject.set(x, "maximum_allowed", js.undefined)
   }
 }

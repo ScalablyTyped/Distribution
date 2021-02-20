@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBooks.anon
 
 import typings.maximMazurokGapiClientBooks.gapi.client.books.Volumeseriesinfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowAnonLogging extends js.Object {
+trait AllowAnonLogging extends StObject {
   
   /** Whether anonymous logging should be allowed. */
   var allowAnonLogging: js.UndefOr[Boolean] = js.native
@@ -99,195 +100,183 @@ object AllowAnonLogging {
   }
   
   @scala.inline
-  implicit class AllowAnonLoggingOps[Self <: AllowAnonLogging] (val x: Self) extends AnyVal {
+  implicit class AllowAnonLoggingMutableBuilder[Self <: AllowAnonLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAnonLogging(value: Boolean): Self = StObject.set(x, "allowAnonLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowAnonLoggingUndefined: Self = StObject.set(x, "allowAnonLogging", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAnonLogging(value: Boolean): Self = this.set("allowAnonLogging", value.asInstanceOf[js.Any])
+    def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
     @scala.inline
-    def deleteAllowAnonLogging: Self = this.set("allowAnonLogging", js.undefined)
+    def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorsVarargs(value: String*): Self = this.set("authors", js.Array(value :_*))
+    def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: js.Array[String]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setAverageRatingUndefined: Self = StObject.set(x, "averageRating", js.undefined)
     
     @scala.inline
-    def deleteAuthors: Self = this.set("authors", js.undefined)
+    def setCanonicalVolumeLink(value: String): Self = StObject.set(x, "canonicalVolumeLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverageRating(value: Double): Self = this.set("averageRating", value.asInstanceOf[js.Any])
+    def setCanonicalVolumeLinkUndefined: Self = StObject.set(x, "canonicalVolumeLink", js.undefined)
     
     @scala.inline
-    def deleteAverageRating: Self = this.set("averageRating", js.undefined)
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalVolumeLink(value: String): Self = this.set("canonicalVolumeLink", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def deleteCanonicalVolumeLink: Self = this.set("canonicalVolumeLink", js.undefined)
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setComicsContent(value: Boolean): Self = StObject.set(x, "comicsContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setComicsContentUndefined: Self = StObject.set(x, "comicsContent", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComicsContent(value: Boolean): Self = this.set("comicsContent", value.asInstanceOf[js.Any])
+    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
     @scala.inline
-    def deleteComicsContent: Self = this.set("comicsContent", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteContentVersion: Self = this.set("contentVersion", js.undefined)
+    def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setImageLinks(value: ExtraLarge): Self = StObject.set(x, "imageLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensions(value: Height): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    def setImageLinksUndefined: Self = StObject.set(x, "imageLinks", js.undefined)
     
     @scala.inline
-    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    def setIndustryIdentifiers(value: js.Array[Identifier]): Self = StObject.set(x, "industryIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageLinks(value: ExtraLarge): Self = this.set("imageLinks", value.asInstanceOf[js.Any])
+    def setIndustryIdentifiersUndefined: Self = StObject.set(x, "industryIdentifiers", js.undefined)
     
     @scala.inline
-    def deleteImageLinks: Self = this.set("imageLinks", js.undefined)
+    def setIndustryIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "industryIdentifiers", js.Array(value :_*))
     
     @scala.inline
-    def setIndustryIdentifiersVarargs(value: Identifier*): Self = this.set("industryIdentifiers", js.Array(value :_*))
+    def setInfoLink(value: String): Self = StObject.set(x, "infoLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndustryIdentifiers(value: js.Array[Identifier]): Self = this.set("industryIdentifiers", value.asInstanceOf[js.Any])
+    def setInfoLinkUndefined: Self = StObject.set(x, "infoLink", js.undefined)
     
     @scala.inline
-    def deleteIndustryIdentifiers: Self = this.set("industryIdentifiers", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoLink(value: String): Self = this.set("infoLink", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteInfoLink: Self = this.set("infoLink", js.undefined)
+    def setMainCategory(value: String): Self = StObject.set(x, "mainCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setMainCategoryUndefined: Self = StObject.set(x, "mainCategory", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMaturityRating(value: String): Self = StObject.set(x, "maturityRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainCategory(value: String): Self = this.set("mainCategory", value.asInstanceOf[js.Any])
+    def setMaturityRatingUndefined: Self = StObject.set(x, "maturityRating", js.undefined)
     
     @scala.inline
-    def deleteMainCategory: Self = this.set("mainCategory", js.undefined)
+    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaturityRating(value: String): Self = this.set("maturityRating", value.asInstanceOf[js.Any])
+    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
     @scala.inline
-    def deleteMaturityRating: Self = this.set("maturityRating", js.undefined)
+    def setPanelizationSummary(value: ContainsEpubBubbles): Self = StObject.set(x, "panelizationSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageCount(value: Double): Self = this.set("pageCount", value.asInstanceOf[js.Any])
+    def setPanelizationSummaryUndefined: Self = StObject.set(x, "panelizationSummary", js.undefined)
     
     @scala.inline
-    def deletePageCount: Self = this.set("pageCount", js.undefined)
+    def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelizationSummary(value: ContainsEpubBubbles): Self = this.set("panelizationSummary", value.asInstanceOf[js.Any])
+    def setPreviewLinkUndefined: Self = StObject.set(x, "previewLink", js.undefined)
     
     @scala.inline
-    def deletePanelizationSummary: Self = this.set("panelizationSummary", js.undefined)
+    def setPrintType(value: String): Self = StObject.set(x, "printType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewLink(value: String): Self = this.set("previewLink", value.asInstanceOf[js.Any])
+    def setPrintTypeUndefined: Self = StObject.set(x, "printType", js.undefined)
     
     @scala.inline
-    def deletePreviewLink: Self = this.set("previewLink", js.undefined)
+    def setPrintedPageCount(value: Double): Self = StObject.set(x, "printedPageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintType(value: String): Self = this.set("printType", value.asInstanceOf[js.Any])
+    def setPrintedPageCountUndefined: Self = StObject.set(x, "printedPageCount", js.undefined)
     
     @scala.inline
-    def deletePrintType: Self = this.set("printType", js.undefined)
+    def setPublishedDate(value: String): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintedPageCount(value: Double): Self = this.set("printedPageCount", value.asInstanceOf[js.Any])
+    def setPublishedDateUndefined: Self = StObject.set(x, "publishedDate", js.undefined)
     
     @scala.inline
-    def deletePrintedPageCount: Self = this.set("printedPageCount", js.undefined)
+    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedDate(value: String): Self = this.set("publishedDate", value.asInstanceOf[js.Any])
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def deletePublishedDate: Self = this.set("publishedDate", js.undefined)
+    def setRatingsCount(value: Double): Self = StObject.set(x, "ratingsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setRatingsCountUndefined: Self = StObject.set(x, "ratingsCount", js.undefined)
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def setReadingModes(value: Image): Self = StObject.set(x, "readingModes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingsCount(value: Double): Self = this.set("ratingsCount", value.asInstanceOf[js.Any])
+    def setReadingModesUndefined: Self = StObject.set(x, "readingModes", js.undefined)
     
     @scala.inline
-    def deleteRatingsCount: Self = this.set("ratingsCount", js.undefined)
+    def setSamplePageCount(value: Double): Self = StObject.set(x, "samplePageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingModes(value: Image): Self = this.set("readingModes", value.asInstanceOf[js.Any])
+    def setSamplePageCountUndefined: Self = StObject.set(x, "samplePageCount", js.undefined)
     
     @scala.inline
-    def deleteReadingModes: Self = this.set("readingModes", js.undefined)
+    def setSeriesInfo(value: Volumeseriesinfo): Self = StObject.set(x, "seriesInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplePageCount(value: Double): Self = this.set("samplePageCount", value.asInstanceOf[js.Any])
+    def setSeriesInfoUndefined: Self = StObject.set(x, "seriesInfo", js.undefined)
     
     @scala.inline
-    def deleteSamplePageCount: Self = this.set("samplePageCount", js.undefined)
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesInfo(value: Volumeseriesinfo): Self = this.set("seriesInfo", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteSeriesInfo: Self = this.set("seriesInfo", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

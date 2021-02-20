@@ -4,16 +4,35 @@ import typings.asn1js.mod.BitString
 import typings.asn1js.mod.Sequence
 import typings.std.ArrayBuffer
 import typings.std.CryptoKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkijs/src/CertificationRequest", JSImport.Namespace)
-@js.native
-object certificationRequestMod extends js.Object {
+object certificationRequestMod {
+  
+  @JSImport("pkijs/src/CertificationRequest", JSImport.Default)
+  @js.native
+  class default () extends CertificationRequest {
+    def this(params: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/CertificationRequest", "default.defaultValues")
+    @js.native
+    def defaultValues(memberName: String): js.Any = js.native
+    
+    @JSImport("pkijs/src/CertificationRequest", "default.schema")
+    @js.native
+    def schema(): js.Any = js.native
+    @JSImport("pkijs/src/CertificationRequest", "default.schema")
+    @js.native
+    def schema(parameters: js.Any): js.Any = js.native
+  }
   
   @js.native
-  trait CertificationRequest extends js.Object {
+  trait CertificationRequest extends StObject {
     
     var attributes: js.UndefOr[js.Array[typings.pkijs.attributeMod.default]] = js.native
     
@@ -69,19 +88,5 @@ object certificationRequestMod extends js.Object {
     def verify(): js.Thenable[Boolean] = js.native
     
     var version: Double = js.native
-  }
-  
-  @js.native
-  class default () extends CertificationRequest {
-    def this(params: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    def schema(): js.Any = js.native
-    def schema(parameters: js.Any): js.Any = js.native
   }
 }

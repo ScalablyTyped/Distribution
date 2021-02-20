@@ -2,13 +2,16 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.Part1Value
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/radio/demo/basic", JSImport.Namespace)
-@js.native
-object radioDemoBasicMod extends js.Object {
+object radioDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/radio/demo/basic", JSImport.Default)
+  @js.native
+  class default () extends BasicRadioExample
   
   @js.native
   trait BasicRadioExample
@@ -17,7 +20,4 @@ object radioDemoBasicMod extends js.Object {
     @JSName("state")
     var state_BasicRadioExample: Part1Value = js.native
   }
-  
-  @js.native
-  class default () extends BasicRadioExample
 }

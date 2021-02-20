@@ -6,12 +6,13 @@ import typings.aureliaBinding.aureliaBindingStrings.delete
 import typings.aureliaBinding.aureliaBindingStrings.update
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICollectionObserverSplice[T, K] extends js.Object {
+trait ICollectionObserverSplice[T, K] extends StObject {
   
   /* ArrayObserverSplice */
   /**
@@ -79,45 +80,33 @@ object ICollectionObserverSplice {
   }
   
   @scala.inline
-  implicit class ICollectionObserverSpliceOps[Self <: ICollectionObserverSplice[_, _], T, K] (val x: Self with (ICollectionObserverSplice[T, K])) extends AnyVal {
+  implicit class ICollectionObserverSpliceMutableBuilder[Self <: ICollectionObserverSplice[_, _], T, K] (val x: Self with (ICollectionObserverSplice[T, K])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedCount(value: Double): Self = StObject.set(x, "addedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedCount(value: Double): Self = this.set("addedCount", value.asInstanceOf[js.Any])
+    def setObject(value: Set[T] | (Map[K, T])): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setOldValue(value: T): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: K): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: Set[T] | (Map[K, T])): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
     @scala.inline
-    def setOldValue(value: T): Self = this.set("oldValue", value.asInstanceOf[js.Any])
+    def setType(value: add | delete | update | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovedVarargs(value: T*): Self = this.set("removed", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoved(value: js.Array[T]): Self = this.set("removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: add | delete | update | clear): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: T): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.hapiHapi.hapiHapiStrings.user
   - typings.hapiHapi.hapiHapiStrings.app
 */
-trait AccessEntity extends js.Object
+trait AccessEntity extends StObject
 object AccessEntity {
   
   @scala.inline

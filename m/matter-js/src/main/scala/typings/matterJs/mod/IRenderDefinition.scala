@@ -3,12 +3,13 @@ package typings.matterJs.mod
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRenderDefinition extends js.Object {
+trait IRenderDefinition extends StObject {
   
   /**
     * A `Bounds` object that specifies the drawing view region.
@@ -89,63 +90,51 @@ object IRenderDefinition {
   }
   
   @scala.inline
-  implicit class IRenderDefinitionOps[Self <: IRenderDefinition] (val x: Self) extends AnyVal {
+  implicit class IRenderDefinitionMutableBuilder[Self <: IRenderDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: Engine): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
     @scala.inline
-    def setBounds(value: Bounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounds: Self = this.set("bounds", js.undefined)
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setCanvas(value: HTMLCanvasElement): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanvas: Self = this.set("canvas", js.undefined)
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setContext(value: CanvasRenderingContext2D): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def setController(value: js.Any): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setEngine(value: Engine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setOptions(value: IRendererOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setTextures(value: js.Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IRendererOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setTextures(value: js.Any): Self = this.set("textures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextures: Self = this.set("textures", js.undefined)
+    def setTexturesUndefined: Self = StObject.set(x, "textures", js.undefined)
   }
 }

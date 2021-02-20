@@ -1,147 +1,120 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolKind extends js.Object
+sealed trait SymbolKind extends StObject
 @JSImport("vscode", "SymbolKind")
 @js.native
-object SymbolKind extends js.Object {
+object SymbolKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[SymbolKind with Double] = js.native
   
   @js.native
   sealed trait Array extends SymbolKind
-  /* 17 */ @js.native
-  object Array extends TopLevel[Array with Double]
+  /* 17 */ val Array: typings.vscode.mod.SymbolKind.Array with Double = js.native
   
   @js.native
   sealed trait Boolean extends SymbolKind
-  /* 16 */ @js.native
-  object Boolean extends TopLevel[Boolean with Double]
+  /* 16 */ val Boolean: typings.vscode.mod.SymbolKind.Boolean with Double = js.native
   
   @js.native
   sealed trait Class extends SymbolKind
-  /* 4 */ @js.native
-  object Class extends TopLevel[Class with Double]
+  /* 4 */ val Class: typings.vscode.mod.SymbolKind.Class with Double = js.native
   
   @js.native
   sealed trait Constant extends SymbolKind
-  /* 13 */ @js.native
-  object Constant extends TopLevel[Constant with Double]
+  /* 13 */ val Constant: typings.vscode.mod.SymbolKind.Constant with Double = js.native
   
   @js.native
   sealed trait Constructor extends SymbolKind
-  /* 8 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
+  /* 8 */ val Constructor: typings.vscode.mod.SymbolKind.Constructor with Double = js.native
   
   @js.native
   sealed trait Enum extends SymbolKind
-  /* 9 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  /* 9 */ val Enum: typings.vscode.mod.SymbolKind.Enum with Double = js.native
   
   @js.native
   sealed trait EnumMember extends SymbolKind
-  /* 21 */ @js.native
-  object EnumMember extends TopLevel[EnumMember with Double]
+  /* 21 */ val EnumMember: typings.vscode.mod.SymbolKind.EnumMember with Double = js.native
   
   @js.native
   sealed trait Event extends SymbolKind
-  /* 23 */ @js.native
-  object Event
-    extends TopLevel[typings.vscode.mod.SymbolKind.Event with Double]
+  /* 23 */ val Event: typings.vscode.mod.SymbolKind.Event with Double = js.native
   
   @js.native
   sealed trait Field extends SymbolKind
-  /* 7 */ @js.native
-  object Field extends TopLevel[Field with Double]
+  /* 7 */ val Field: typings.vscode.mod.SymbolKind.Field with Double = js.native
   
   @js.native
   sealed trait File extends SymbolKind
-  /* 0 */ @js.native
-  object File extends TopLevel[File with Double]
+  /* 0 */ val File: typings.vscode.mod.SymbolKind.File with Double = js.native
   
   @js.native
   sealed trait Function extends SymbolKind
-  /* 11 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  /* 11 */ val Function: typings.vscode.mod.SymbolKind.Function with Double = js.native
   
   @js.native
   sealed trait Interface extends SymbolKind
-  /* 10 */ @js.native
-  object Interface extends TopLevel[Interface with Double]
+  /* 10 */ val Interface: typings.vscode.mod.SymbolKind.Interface with Double = js.native
   
   @js.native
   sealed trait Key extends SymbolKind
-  /* 19 */ @js.native
-  object Key extends TopLevel[Key with Double]
+  /* 19 */ val Key: typings.vscode.mod.SymbolKind.Key with Double = js.native
   
   @js.native
   sealed trait Method extends SymbolKind
-  /* 5 */ @js.native
-  object Method extends TopLevel[Method with Double]
+  /* 5 */ val Method: typings.vscode.mod.SymbolKind.Method with Double = js.native
   
   @js.native
   sealed trait Module extends SymbolKind
-  /* 1 */ @js.native
-  object Module extends TopLevel[Module with Double]
+  /* 1 */ val Module: typings.vscode.mod.SymbolKind.Module with Double = js.native
   
   @js.native
   sealed trait Namespace extends SymbolKind
-  /* 2 */ @js.native
-  object Namespace extends TopLevel[Namespace with Double]
+  /* 2 */ val Namespace: typings.vscode.mod.SymbolKind.Namespace with Double = js.native
   
   @js.native
   sealed trait Null extends SymbolKind
-  /* 20 */ @js.native
-  object Null extends TopLevel[Null with Double]
+  /* 20 */ val Null: typings.vscode.mod.SymbolKind.Null with Double = js.native
   
   @js.native
   sealed trait Number extends SymbolKind
-  /* 15 */ @js.native
-  object Number extends TopLevel[Number with Double]
+  /* 15 */ val Number: typings.vscode.mod.SymbolKind.Number with Double = js.native
   
   @js.native
   sealed trait Object extends SymbolKind
-  /* 18 */ @js.native
-  object Object extends TopLevel[Object with Double]
+  /* 18 */ val Object: typings.vscode.mod.SymbolKind.Object with Double = js.native
   
   @js.native
   sealed trait Operator extends SymbolKind
-  /* 24 */ @js.native
-  object Operator extends TopLevel[Operator with Double]
+  /* 24 */ val Operator: typings.vscode.mod.SymbolKind.Operator with Double = js.native
   
   @js.native
   sealed trait Package extends SymbolKind
-  /* 3 */ @js.native
-  object Package extends TopLevel[Package with Double]
+  /* 3 */ val Package: typings.vscode.mod.SymbolKind.Package with Double = js.native
   
   @js.native
   sealed trait Property extends SymbolKind
-  /* 6 */ @js.native
-  object Property extends TopLevel[Property with Double]
+  /* 6 */ val Property: typings.vscode.mod.SymbolKind.Property with Double = js.native
   
   @js.native
   sealed trait String extends SymbolKind
-  /* 14 */ @js.native
-  object String extends TopLevel[String with Double]
+  /* 14 */ val String: typings.vscode.mod.SymbolKind.String with Double = js.native
   
   @js.native
   sealed trait Struct extends SymbolKind
-  /* 22 */ @js.native
-  object Struct extends TopLevel[Struct with Double]
+  /* 22 */ val Struct: typings.vscode.mod.SymbolKind.Struct with Double = js.native
   
   @js.native
   sealed trait TypeParameter extends SymbolKind
-  /* 25 */ @js.native
-  object TypeParameter extends TopLevel[TypeParameter with Double]
+  /* 25 */ val TypeParameter: typings.vscode.mod.SymbolKind.TypeParameter with Double = js.native
   
   @js.native
   sealed trait Variable extends SymbolKind
-  /* 12 */ @js.native
-  object Variable extends TopLevel[Variable with Double]
+  /* 12 */ val Variable: typings.vscode.mod.SymbolKind.Variable with Double = js.native
 }

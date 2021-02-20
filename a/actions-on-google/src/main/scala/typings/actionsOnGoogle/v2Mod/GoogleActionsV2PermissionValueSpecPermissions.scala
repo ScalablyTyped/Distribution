@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.DEVICE_COARSE_LOCATION
   - typings.actionsOnGoogle.actionsOnGoogleStrings.UPDATE
 */
-trait GoogleActionsV2PermissionValueSpecPermissions extends js.Object
+trait GoogleActionsV2PermissionValueSpecPermissions extends StObject
 object GoogleActionsV2PermissionValueSpecPermissions {
   
   @scala.inline

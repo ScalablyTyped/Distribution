@@ -1,11 +1,12 @@
 package typings.awsLambda.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsSdkVersion extends js.Object {
+trait AwsSdkVersion extends StObject {
   
   var awsSdkVersion: String = js.native
   
@@ -20,24 +21,12 @@ object AwsSdkVersion {
   }
   
   @scala.inline
-  implicit class AwsSdkVersionOps[Self <: AwsSdkVersion] (val x: Self) extends AnyVal {
+  implicit class AwsSdkVersionMutableBuilder[Self <: AwsSdkVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsSdkVersion(value: String): Self = StObject.set(x, "awsSdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAwsSdkVersion(value: String): Self = this.set("awsSdkVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
   }
 }

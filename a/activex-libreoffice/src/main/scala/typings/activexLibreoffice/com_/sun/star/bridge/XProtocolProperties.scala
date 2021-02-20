@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,30 +72,18 @@ object XProtocolProperties {
   }
   
   @scala.inline
-  implicit class XProtocolPropertiesOps[Self <: XProtocolProperties] (val x: Self) extends AnyVal {
+  implicit class XProtocolPropertiesMutableBuilder[Self <: XProtocolProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommitChange(value: SeqEquiv[ProtocolProperty] => Unit): Self = StObject.set(x, "commitChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetProperties(value: () => SafeArray[ProtocolProperty]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: SafeArray[ProtocolProperty]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: SafeArray[ProtocolProperty]): Self = this.set("Properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitChange(value: SeqEquiv[ProtocolProperty] => Unit): Self = this.set("commitChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetProperties(value: () => SafeArray[ProtocolProperty]): Self = this.set("getProperties", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestChange(value: Double => Double): Self = this.set("requestChange", js.Any.fromFunction1(value))
+    def setRequestChange(value: Double => Double): Self = StObject.set(x, "requestChange", js.Any.fromFunction1(value))
   }
 }

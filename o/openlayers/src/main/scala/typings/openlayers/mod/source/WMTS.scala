@@ -2,6 +2,7 @@ package typings.openlayers.mod.source
 
 import typings.openlayers.mod.GlobalObject
 import typings.openlayers.mod.olx.source.WMTSOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,10 +84,7 @@ class WMTS protected () extends TileImage {
     */
   def updateDimensions(dimensions: GlobalObject): Unit = js.native
 }
-/* static members */
-@JSImport("openlayers", "source.WMTS")
-@js.native
-object WMTS extends js.Object {
+object WMTS {
   
   /**
     * Generate source options from a capabilities object.
@@ -111,5 +109,8 @@ object WMTS extends js.Object {
     * @return WMTS source options object.
     * @api
     */
+  /* static member */
+  @JSImport("openlayers", "source.WMTS.optionsFromCapabilities")
+  @js.native
   def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = js.native
 }

@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserBlocks extends js.Object {
+trait UserBlocks extends StObject {
   
   var blocked_for: js.Array[BlockedForEntry] = js.native
 }
@@ -18,24 +19,12 @@ object UserBlocks {
   }
   
   @scala.inline
-  implicit class UserBlocksOps[Self <: UserBlocks] (val x: Self) extends AnyVal {
+  implicit class UserBlocksMutableBuilder[Self <: UserBlocks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlocked_for(value: js.Array[BlockedForEntry]): Self = StObject.set(x, "blocked_for", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlocked_forVarargs(value: BlockedForEntry*): Self = this.set("blocked_for", js.Array(value :_*))
-    
-    @scala.inline
-    def setBlocked_for(value: js.Array[BlockedForEntry]): Self = this.set("blocked_for", value.asInstanceOf[js.Any])
+    def setBlocked_forVarargs(value: BlockedForEntry*): Self = StObject.set(x, "blocked_for", js.Array(value :_*))
   }
 }

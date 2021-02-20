@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAssessmentTargetRequest extends js.Object {
+trait CreateAssessmentTargetRequest extends StObject {
   
   /**
     * The user-defined name that identifies the assessment target that you want to create. The name must be unique within the AWS account.
@@ -26,27 +27,15 @@ object CreateAssessmentTargetRequest {
   }
   
   @scala.inline
-  implicit class CreateAssessmentTargetRequestOps[Self <: CreateAssessmentTargetRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAssessmentTargetRequestMutableBuilder[Self <: CreateAssessmentTargetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentTargetName(value: AssessmentTargetName): Self = StObject.set(x, "assessmentTargetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceGroupArn(value: Arn): Self = StObject.set(x, "resourceGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssessmentTargetName(value: AssessmentTargetName): Self = this.set("assessmentTargetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceGroupArn(value: Arn): Self = this.set("resourceGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceGroupArn: Self = this.set("resourceGroupArn", js.undefined)
+    def setResourceGroupArnUndefined: Self = StObject.set(x, "resourceGroupArn", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "AssociativeArray")
 @js.native
-class AssociativeArray () extends js.Object {
+class AssociativeArray () extends StObject {
   
   def contains(key: String): Boolean = js.native
   def contains(key: Double): Boolean = js.native

@@ -30,6 +30,7 @@ import typings.lokijs.lokijsStrings.throttledCallbacks
 import typings.lokijs.lokijsStrings.throttledSavePending
 import typings.lokijs.lokijsStrings.ttl
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

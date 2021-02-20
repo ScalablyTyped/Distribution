@@ -1,11 +1,12 @@
 package typings.ssUtils.ssutils
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSubscriberOptions extends js.Object {
+trait UpdateSubscriberOptions extends StObject {
   
   var SubscribeChannels: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object UpdateSubscriberOptions {
   }
   
   @scala.inline
-  implicit class UpdateSubscriberOptionsOps[Self <: UpdateSubscriberOptions] (val x: Self) extends AnyVal {
+  implicit class UpdateSubscriberOptionsMutableBuilder[Self <: UpdateSubscriberOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubscribeChannels(value: String): Self = StObject.set(x, "SubscribeChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubscribeChannelsUndefined: Self = StObject.set(x, "SubscribeChannels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnsubscribeChannels(value: String): Self = StObject.set(x, "UnsubscribeChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscribeChannels(value: String): Self = this.set("SubscribeChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscribeChannels: Self = this.set("SubscribeChannels", js.undefined)
-    
-    @scala.inline
-    def setUnsubscribeChannels(value: String): Self = this.set("UnsubscribeChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsubscribeChannels: Self = this.set("UnsubscribeChannels", js.undefined)
+    def setUnsubscribeChannelsUndefined: Self = StObject.set(x, "UnsubscribeChannels", js.undefined)
   }
 }

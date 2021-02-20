@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudMlV1SuggestTrialsMetadata extends js.Object {
+trait GoogleCloudMlV1SuggestTrialsMetadata extends StObject {
   
   /** The identifier of the client that is requesting the suggestion. */
   var clientId: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object GoogleCloudMlV1SuggestTrialsMetadata {
   }
   
   @scala.inline
-  implicit class GoogleCloudMlV1SuggestTrialsMetadataOps[Self <: GoogleCloudMlV1SuggestTrialsMetadata] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudMlV1SuggestTrialsMetadataMutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setStudy(value: String): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setStudyUndefined: Self = StObject.set(x, "study", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setSuggestionCount(value: Double): Self = StObject.set(x, "suggestionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStudy(value: String): Self = this.set("study", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStudy: Self = this.set("study", js.undefined)
-    
-    @scala.inline
-    def setSuggestionCount(value: Double): Self = this.set("suggestionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestionCount: Self = this.set("suggestionCount", js.undefined)
+    def setSuggestionCountUndefined: Self = StObject.set(x, "suggestionCount", js.undefined)
   }
 }

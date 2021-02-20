@@ -1,13 +1,20 @@
 package typings.antDesignIconsSvg
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIconsSvg.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-svg/lib/asn/GithubFilled", JSImport.Namespace)
-@js.native
-object githubFilledMod extends js.Object {
+object githubFilledMod extends Shortcut {
   
+  @JSImport("@ant-design/icons-svg/lib/asn/GithubFilled", JSImport.Default)
+  @js.native
   val default: IconDefinition = js.native
+  
+  type _To = IconDefinition
+  
+  /* This means you don't have to write `default`, but can instead just say `githubFilledMod.foo` */
+  override def _to: IconDefinition = default
 }

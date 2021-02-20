@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The MediaDevicesInfo interface contains information that describes a single media input or output device. */
 @js.native
-trait MediaDeviceInfo extends js.Object {
+trait MediaDeviceInfo extends StObject {
   
   val deviceId: java.lang.String = js.native
   
@@ -33,33 +34,21 @@ object MediaDeviceInfo {
   }
   
   @scala.inline
-  implicit class MediaDeviceInfoOps[Self <: MediaDeviceInfo] (val x: Self) extends AnyVal {
+  implicit class MediaDeviceInfoMutableBuilder[Self <: MediaDeviceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupId(value: java.lang.String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: MediaDeviceKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: java.lang.String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: java.lang.String): Self = this.set("groupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: MediaDeviceKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: java.lang.String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,39 +54,27 @@ object XCustomShapeEngine {
   }
   
   @scala.inline
-  implicit class XCustomShapeEngineOps[Self <: XCustomShapeEngine] (val x: Self) extends AnyVal {
+  implicit class XCustomShapeEngineMutableBuilder[Self <: XCustomShapeEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInteraction(value: () => SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "getInteraction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLineGeometry(value: () => PolyPolygonBezierCoords): Self = StObject.set(x, "getLineGeometry", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetTextBounds(value: () => Rectangle): Self = StObject.set(x, "getTextBounds", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInteraction(value: SafeArray[XCustomShapeHandle]): Self = this.set("Interaction", value.asInstanceOf[js.Any])
+    def setInteraction(value: SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "Interaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineGeometry(value: PolyPolygonBezierCoords): Self = this.set("LineGeometry", value.asInstanceOf[js.Any])
+    def setLineGeometry(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBounds(value: Rectangle): Self = this.set("TextBounds", value.asInstanceOf[js.Any])
+    def setRender(value: () => XShape): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInteraction(value: () => SafeArray[XCustomShapeHandle]): Self = this.set("getInteraction", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetLineGeometry(value: () => PolyPolygonBezierCoords): Self = this.set("getLineGeometry", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTextBounds(value: () => Rectangle): Self = this.set("getTextBounds", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRender(value: () => XShape): Self = this.set("render", js.Any.fromFunction0(value))
+    def setTextBounds(value: Rectangle): Self = StObject.set(x, "TextBounds", value.asInstanceOf[js.Any])
   }
 }

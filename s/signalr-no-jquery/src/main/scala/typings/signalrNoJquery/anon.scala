@@ -1,16 +1,15 @@
 package typings.signalrNoJquery
 
 import typings.signalrNoJquery.mod.SupportsKeepAliveHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Name extends js.Object {
+  trait Name extends StObject {
     
     var name: String = js.native
     

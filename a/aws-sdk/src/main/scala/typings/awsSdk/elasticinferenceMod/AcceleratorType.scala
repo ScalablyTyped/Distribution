@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticinferenceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AcceleratorType extends js.Object {
+trait AcceleratorType extends StObject {
   
   /**
     *  The name of the Elastic Inference Accelerator type. 
@@ -31,39 +32,27 @@ object AcceleratorType {
   }
   
   @scala.inline
-  implicit class AcceleratorTypeOps[Self <: AcceleratorType] (val x: Self) extends AnyVal {
+  implicit class AcceleratorTypeMutableBuilder[Self <: AcceleratorType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorTypeName(value: AcceleratorTypeName): Self = StObject.set(x, "acceleratorTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorTypeNameUndefined: Self = StObject.set(x, "acceleratorTypeName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorTypeName(value: AcceleratorTypeName): Self = this.set("acceleratorTypeName", value.asInstanceOf[js.Any])
+    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
     
     @scala.inline
-    def deleteAcceleratorTypeName: Self = this.set("acceleratorTypeName", js.undefined)
+    def setThroughputInfo(value: ThroughputInfoList): Self = StObject.set(x, "throughputInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryInfo(value: MemoryInfo): Self = this.set("memoryInfo", value.asInstanceOf[js.Any])
+    def setThroughputInfoUndefined: Self = StObject.set(x, "throughputInfo", js.undefined)
     
     @scala.inline
-    def deleteMemoryInfo: Self = this.set("memoryInfo", js.undefined)
-    
-    @scala.inline
-    def setThroughputInfoVarargs(value: KeyValuePair*): Self = this.set("throughputInfo", js.Array(value :_*))
-    
-    @scala.inline
-    def setThroughputInfo(value: ThroughputInfoList): Self = this.set("throughputInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThroughputInfo: Self = this.set("throughputInfo", js.undefined)
+    def setThroughputInfoVarargs(value: KeyValuePair*): Self = StObject.set(x, "throughputInfo", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HyperParameterTuningJobWarmStartConfig extends js.Object {
+trait HyperParameterTuningJobWarmStartConfig extends StObject {
   
   /**
     * An array of hyperparameter tuning jobs that are used as the starting point for the new hyperparameter tuning job. For more information about warm starting a hyperparameter tuning job, see Using a Previous Hyperparameter Tuning Job as a Starting Point. Hyperparameter tuning jobs created before October 1, 2018 cannot be used as parent jobs for warm start tuning jobs.
@@ -29,27 +30,15 @@ object HyperParameterTuningJobWarmStartConfig {
   }
   
   @scala.inline
-  implicit class HyperParameterTuningJobWarmStartConfigOps[Self <: HyperParameterTuningJobWarmStartConfig] (val x: Self) extends AnyVal {
+  implicit class HyperParameterTuningJobWarmStartConfigMutableBuilder[Self <: HyperParameterTuningJobWarmStartConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentHyperParameterTuningJobs(value: ParentHyperParameterTuningJobs): Self = StObject.set(x, "ParentHyperParameterTuningJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParentHyperParameterTuningJobsVarargs(value: ParentHyperParameterTuningJob*): Self = StObject.set(x, "ParentHyperParameterTuningJobs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParentHyperParameterTuningJobsVarargs(value: ParentHyperParameterTuningJob*): Self = this.set("ParentHyperParameterTuningJobs", js.Array(value :_*))
-    
-    @scala.inline
-    def setParentHyperParameterTuningJobs(value: ParentHyperParameterTuningJobs): Self = this.set("ParentHyperParameterTuningJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarmStartType(value: HyperParameterTuningJobWarmStartType): Self = this.set("WarmStartType", value.asInstanceOf[js.Any])
+    def setWarmStartType(value: HyperParameterTuningJobWarmStartType): Self = StObject.set(x, "WarmStartType", value.asInstanceOf[js.Any])
   }
 }

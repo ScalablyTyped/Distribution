@@ -5,12 +5,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.Request
 import typings.devtoolsProtocol.mod.Protocol.Network.ResourceType
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestPausedEvent extends js.Object {
+trait RequestPausedEvent extends StObject {
   
   /**
     * The id of the frame that initiated the request.
@@ -62,57 +63,45 @@ object RequestPausedEvent {
   }
   
   @scala.inline
-  implicit class RequestPausedEventOps[Self <: RequestPausedEvent] (val x: Self) extends AnyVal {
+  implicit class RequestPausedEventMutableBuilder[Self <: RequestPausedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkId(value: RequestId): Self = StObject.set(x, "networkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkIdUndefined: Self = StObject.set(x, "networkId", js.undefined)
     
     @scala.inline
-    def setFrameId(value: FrameId): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Request): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: RequestId): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setResponseErrorReason(value: ErrorReason): Self = StObject.set(x, "responseErrorReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkId(value: RequestId): Self = this.set("networkId", value.asInstanceOf[js.Any])
+    def setResponseErrorReasonUndefined: Self = StObject.set(x, "responseErrorReason", js.undefined)
     
     @scala.inline
-    def deleteNetworkId: Self = this.set("networkId", js.undefined)
+    def setResponseHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseErrorReason(value: ErrorReason): Self = this.set("responseErrorReason", value.asInstanceOf[js.Any])
+    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
     @scala.inline
-    def deleteResponseErrorReason: Self = this.set("responseErrorReason", js.undefined)
+    def setResponseHeadersVarargs(value: HeaderEntry*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setResponseHeadersVarargs(value: HeaderEntry*): Self = this.set("responseHeaders", js.Array(value :_*))
+    def setResponseStatusCode(value: integer): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseHeaders(value: js.Array[HeaderEntry]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
-    
-    @scala.inline
-    def setResponseStatusCode(value: integer): Self = this.set("responseStatusCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseStatusCode: Self = this.set("responseStatusCode", js.undefined)
+    def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
   }
 }

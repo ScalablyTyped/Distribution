@@ -3,12 +3,13 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.anon.CellColor
 import typings.googleVisualization.anon.Colors
 import typings.googleVisualization.anon.IsHtml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CalendarOptions extends js.Object {
+trait CalendarOptions extends StObject {
   
   var calendar: CellColor = js.native
   
@@ -33,54 +34,42 @@ object CalendarOptions {
   }
   
   @scala.inline
-  implicit class CalendarOptionsOps[Self <: CalendarOptions] (val x: Self) extends AnyVal {
+  implicit class CalendarOptionsMutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalendar(value: CellColor): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorAxis(value: Colors): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
     
     @scala.inline
-    def setCalendar(value: CellColor): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltip(value: IsHtml): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    def setForceIFrameUndefined: Self = StObject.set(x, "forceIFrame", js.undefined)
     
     @scala.inline
-    def setColorAxis(value: Colors): Self = this.set("colorAxis", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorAxis: Self = this.set("colorAxis", js.undefined)
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setForceIFrame(value: Boolean): Self = this.set("forceIFrame", value.asInstanceOf[js.Any])
+    def setNoDataPattern(value: js.Object): Self = StObject.set(x, "noDataPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForceIFrame: Self = this.set("forceIFrame", js.undefined)
+    def setNoDataPatternUndefined: Self = StObject.set(x, "noDataPattern", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setTooltip(value: IsHtml): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDataPattern(value: js.Object): Self = this.set("noDataPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDataPattern: Self = this.set("noDataPattern", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

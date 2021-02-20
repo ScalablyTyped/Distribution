@@ -2,12 +2,13 @@ package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Collision.Shapes.b2Shape
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2ContactPoint extends js.Object {
+trait b2ContactPoint extends StObject {
   
   /**
     * The combined friction coefficient.
@@ -73,45 +74,33 @@ object b2ContactPoint {
   }
   
   @scala.inline
-  implicit class b2ContactPointOps[Self <: b2ContactPoint] (val x: Self) extends AnyVal {
+  implicit class b2ContactPointMutableBuilder[Self <: b2ContactPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: b2ContactID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormal(value: b2Vec2): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setPosition(value: b2Vec2): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: b2ContactID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: b2Vec2): Self = this.set("normal", value.asInstanceOf[js.Any])
+    def setSeparation(value: Double): Self = StObject.set(x, "separation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: b2Vec2): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShape1(value: b2Shape): Self = StObject.set(x, "shape1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestitution(value: Double): Self = this.set("restitution", value.asInstanceOf[js.Any])
+    def setShape2(value: b2Shape): Self = StObject.set(x, "shape2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparation(value: Double): Self = this.set("separation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape1(value: b2Shape): Self = this.set("shape1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShape2(value: b2Shape): Self = this.set("shape2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocity(value: b2Vec2): Self = this.set("velocity", value.asInstanceOf[js.Any])
+    def setVelocity(value: b2Vec2): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 @js.native
-trait Entities extends js.Object {
+trait Entities extends StObject {
   
   /**
     * Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
@@ -88,60 +89,48 @@ object Entities {
   }
   
   @scala.inline
-  implicit class EntitiesOps[Self <: Entities] (val x: Self) extends AnyVal {
+  implicit class EntitiesMutableBuilder[Self <: Entities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressesVarargs(value: String*): Self = this.set("addresses", js.Array(value :_*))
+    def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
     
     @scala.inline
-    def setAddresses(value: js.Array[String]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactsVarargs(value: Contact*): Self = this.set("contacts", js.Array(value :_*))
+    def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
     
     @scala.inline
-    def setContacts(value: js.Array[Contact]): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    def setMeetingSuggestions(value: js.Array[MeetingSuggestion]): Self = StObject.set(x, "meetingSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddressesVarargs(value: String*): Self = this.set("emailAddresses", js.Array(value :_*))
+    def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = StObject.set(x, "meetingSuggestions", js.Array(value :_*))
     
     @scala.inline
-    def setEmailAddresses(value: js.Array[String]): Self = this.set("emailAddresses", value.asInstanceOf[js.Any])
+    def setPhoneNumbers(value: js.Array[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = this.set("meetingSuggestions", js.Array(value :_*))
+    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
     
     @scala.inline
-    def setMeetingSuggestions(value: js.Array[MeetingSuggestion]): Self = this.set("meetingSuggestions", value.asInstanceOf[js.Any])
+    def setTaskSuggestions(value: js.Array[String]): Self = StObject.set(x, "taskSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = this.set("phoneNumbers", js.Array(value :_*))
+    def setTaskSuggestionsVarargs(value: String*): Self = StObject.set(x, "taskSuggestions", js.Array(value :_*))
     
     @scala.inline
-    def setPhoneNumbers(value: js.Array[PhoneNumber]): Self = this.set("phoneNumbers", value.asInstanceOf[js.Any])
+    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskSuggestionsVarargs(value: String*): Self = this.set("taskSuggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setTaskSuggestions(value: js.Array[String]): Self = this.set("taskSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

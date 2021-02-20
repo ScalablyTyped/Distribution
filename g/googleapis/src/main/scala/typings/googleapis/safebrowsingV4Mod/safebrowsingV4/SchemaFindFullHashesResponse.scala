@@ -1,11 +1,12 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaFindFullHashesResponse extends js.Object {
+trait SchemaFindFullHashesResponse extends StObject {
   
   /**
     * The full hashes that matched the requested prefixes.
@@ -34,39 +35,27 @@ object SchemaFindFullHashesResponse {
   }
   
   @scala.inline
-  implicit class SchemaFindFullHashesResponseOps[Self <: SchemaFindFullHashesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaFindFullHashesResponseMutableBuilder[Self <: SchemaFindFullHashesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatches(value: js.Array[SchemaThreatMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchesVarargs(value: SchemaThreatMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
     @scala.inline
-    def setMatchesVarargs(value: SchemaThreatMatch*): Self = this.set("matches", js.Array(value :_*))
+    def setMinimumWaitDuration(value: String): Self = StObject.set(x, "minimumWaitDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatches(value: js.Array[SchemaThreatMatch]): Self = this.set("matches", value.asInstanceOf[js.Any])
+    def setMinimumWaitDurationUndefined: Self = StObject.set(x, "minimumWaitDuration", js.undefined)
     
     @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setNegativeCacheDuration(value: String): Self = StObject.set(x, "negativeCacheDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumWaitDuration(value: String): Self = this.set("minimumWaitDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumWaitDuration: Self = this.set("minimumWaitDuration", js.undefined)
-    
-    @scala.inline
-    def setNegativeCacheDuration(value: String): Self = this.set("negativeCacheDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegativeCacheDuration: Self = this.set("negativeCacheDuration", js.undefined)
+    def setNegativeCacheDurationUndefined: Self = StObject.set(x, "negativeCacheDuration", js.undefined)
   }
 }

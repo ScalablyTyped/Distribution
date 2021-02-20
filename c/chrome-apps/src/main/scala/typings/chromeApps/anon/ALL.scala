@@ -12,12 +12,13 @@ import typings.chromeApps.chromeAppsStrings.page_
 import typings.chromeApps.chromeAppsStrings.page_action_
 import typings.chromeApps.chromeAppsStrings.selection_
 import typings.chromeApps.chromeAppsStrings.video_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ALL extends js.Object {
+trait ALL extends StObject {
   
   var ALL: all__ = js.native
   
@@ -65,54 +66,42 @@ object ALL {
   }
   
   @scala.inline
-  implicit class ALLOps[Self <: ALL] (val x: Self) extends AnyVal {
+  implicit class ALLMutableBuilder[Self <: ALL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALL(value: all__): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAUDIO(value: audio_): Self = StObject.set(x, "AUDIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBROWSER_ACTION(value: browser_action_): Self = StObject.set(x, "BROWSER_ACTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALL(value: all__): Self = this.set("ALL", value.asInstanceOf[js.Any])
+    def setEDITABLE(value: editable_): Self = StObject.set(x, "EDITABLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAUDIO(value: audio_): Self = this.set("AUDIO", value.asInstanceOf[js.Any])
+    def setFRAME(value: frame_): Self = StObject.set(x, "FRAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBROWSER_ACTION(value: browser_action_): Self = this.set("BROWSER_ACTION", value.asInstanceOf[js.Any])
+    def setIMAGE(value: image_): Self = StObject.set(x, "IMAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDITABLE(value: editable_): Self = this.set("EDITABLE", value.asInstanceOf[js.Any])
+    def setLAUNCHER(value: launcher_): Self = StObject.set(x, "LAUNCHER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFRAME(value: frame_): Self = this.set("FRAME", value.asInstanceOf[js.Any])
+    def setLINK(value: link_): Self = StObject.set(x, "LINK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMAGE(value: image_): Self = this.set("IMAGE", value.asInstanceOf[js.Any])
+    def setPAGE(value: page_): Self = StObject.set(x, "PAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLAUNCHER(value: launcher_): Self = this.set("LAUNCHER", value.asInstanceOf[js.Any])
+    def setPAGE_ACTION(value: page_action_): Self = StObject.set(x, "PAGE_ACTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLINK(value: link_): Self = this.set("LINK", value.asInstanceOf[js.Any])
+    def setSELECTION(value: selection_): Self = StObject.set(x, "SELECTION", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPAGE(value: page_): Self = this.set("PAGE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPAGE_ACTION(value: page_action_): Self = this.set("PAGE_ACTION", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSELECTION(value: selection_): Self = this.set("SELECTION", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVIDEO(value: video_): Self = this.set("VIDEO", value.asInstanceOf[js.Any])
+    def setVIDEO(value: video_): Self = StObject.set(x, "VIDEO", value.asInstanceOf[js.Any])
   }
 }

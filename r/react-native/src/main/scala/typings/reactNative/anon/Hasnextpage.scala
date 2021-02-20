@@ -1,11 +1,12 @@
 package typings.reactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hasnextpage extends js.Object {
+trait Hasnextpage extends StObject {
   
   var end_cursor: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object Hasnextpage {
   }
   
   @scala.inline
-  implicit class HasnextpageOps[Self <: Hasnextpage] (val x: Self) extends AnyVal {
+  implicit class HasnextpageMutableBuilder[Self <: Hasnextpage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnd_cursorUndefined: Self = StObject.set(x, "end_cursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHas_next_page(value: Boolean): Self = this.set("has_next_page", value.asInstanceOf[js.Any])
+    def setStart_cursor(value: String): Self = StObject.set(x, "start_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_cursor(value: String): Self = this.set("end_cursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnd_cursor: Self = this.set("end_cursor", js.undefined)
-    
-    @scala.inline
-    def setStart_cursor(value: String): Self = this.set("start_cursor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_cursor: Self = this.set("start_cursor", js.undefined)
+    def setStart_cursorUndefined: Self = StObject.set(x, "start_cursor", js.undefined)
   }
 }

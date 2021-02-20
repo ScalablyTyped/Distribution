@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDetectorVersionResult extends js.Object {
+trait CreateDetectorVersionResult extends StObject {
   
   /**
     * The ID for the created version's parent detector.
@@ -31,36 +32,24 @@ object CreateDetectorVersionResult {
   }
   
   @scala.inline
-  implicit class CreateDetectorVersionResultOps[Self <: CreateDetectorVersionResult] (val x: Self) extends AnyVal {
+  implicit class CreateDetectorVersionResultMutableBuilder[Self <: CreateDetectorVersionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorId(value: identifier): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetectorVersionId(value: nonEmptyString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorId(value: identifier): Self = this.set("detectorId", value.asInstanceOf[js.Any])
+    def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
     
     @scala.inline
-    def deleteDetectorId: Self = this.set("detectorId", js.undefined)
+    def setStatus(value: DetectorVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorVersionId(value: nonEmptyString): Self = this.set("detectorVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetectorVersionId: Self = this.set("detectorVersionId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: DetectorVersionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

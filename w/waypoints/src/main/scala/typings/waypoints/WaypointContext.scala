@@ -3,16 +3,17 @@ package typings.waypoints
 import typings.std.HTMLElement
 import typings.std.Window
 import typings.waypoints.anon.Horizontal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaypointContext extends js.Object {
+trait WaypointContext extends StObject {
   
   var adapter: WaypointAdapter = js.native
   
-   // http://imakewebthings.com/waypoints/api/context/#waypoints-property
+  // http://imakewebthings.com/waypoints/api/context/#waypoints-property
   def destroy(): Waypoint = js.native
   
   var element: HTMLElement | Window = js.native
@@ -36,33 +37,21 @@ object WaypointContext {
   }
   
   @scala.inline
-  implicit class WaypointContextOps[Self <: WaypointContext] (val x: Self) extends AnyVal {
+  implicit class WaypointContextMutableBuilder[Self <: WaypointContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapter(value: WaypointAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Waypoint): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: HTMLElement | Window): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdapter(value: WaypointAdapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    def setRefresh(value: () => Waypoint): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Waypoint): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setElement(value: HTMLElement | Window): Self = this.set("element", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRefresh(value: () => Waypoint): Self = this.set("refresh", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWaypoints(value: Horizontal): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+    def setWaypoints(value: Horizontal): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
   }
 }

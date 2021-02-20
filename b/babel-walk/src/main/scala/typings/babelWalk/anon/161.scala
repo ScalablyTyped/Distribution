@@ -3,12 +3,13 @@ package typings.babelWalk.anon
 import typings.babelWalk.babelWalkStrings.V8IntrinsicIdentifier
 import typings.babelWalk.mod.NodeType
 import typings.babelWalk.mod.SimpleFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `161`[TState] extends js.Object {
+trait `161`[TState] extends StObject {
   
   var enter: js.UndefOr[SimpleFunction[V8IntrinsicIdentifier, TState]] = js.native
   
@@ -23,30 +24,18 @@ object `161` {
   }
   
   @scala.inline
-  implicit class `161Ops`[Self <: `161`[_], TState] (val x: Self with `161`[TState]) extends AnyVal {
+  implicit class `161MutableBuilder`[Self <: `161`[_], TState] (val x: Self with `161`[TState]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnter(value: (/* node */ NodeType[V8IntrinsicIdentifier], TState) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExit(value: (/* node */ NodeType[V8IntrinsicIdentifier], TState) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnter(value: (/* node */ NodeType[V8IntrinsicIdentifier], TState) => Unit): Self = this.set("enter", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteEnter: Self = this.set("enter", js.undefined)
-    
-    @scala.inline
-    def setExit(value: (/* node */ NodeType[V8IntrinsicIdentifier], TState) => Unit): Self = this.set("exit", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
   }
 }

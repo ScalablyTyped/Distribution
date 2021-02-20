@@ -1,11 +1,12 @@
 package typings.antvComponent.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Appear extends js.Object {
+trait Appear extends StObject {
   
   var appear: js.Any = js.native
   
@@ -24,30 +25,18 @@ object Appear {
   }
   
   @scala.inline
-  implicit class AppearOps[Self <: Appear] (val x: Self) extends AnyVal {
+  implicit class AppearMutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppear(value: js.Any): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnter(value: Duration): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeave(value: Duration): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppear(value: js.Any): Self = this.set("appear", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnter(value: Duration): Self = this.set("enter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeave(value: Duration): Self = this.set("leave", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: Duration): Self = this.set("update", value.asInstanceOf[js.Any])
+    def setUpdate(value: Duration): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

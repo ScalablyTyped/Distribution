@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelStatus extends js.Object {
+trait ChannelStatus extends StObject {
   
   /** If true, then the user is linked to either a YouTube username or G+ account. Otherwise, the user doesn't have a public YouTube identity. */
   var isLinked: js.UndefOr[Boolean] = js.native
@@ -29,48 +30,36 @@ object ChannelStatus {
   }
   
   @scala.inline
-  implicit class ChannelStatusOps[Self <: ChannelStatus] (val x: Self) extends AnyVal {
+  implicit class ChannelStatusMutableBuilder[Self <: ChannelStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLinkedUndefined: Self = StObject.set(x, "isLinked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongUploadsStatus(value: String): Self = StObject.set(x, "longUploadsStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLinked(value: Boolean): Self = this.set("isLinked", value.asInstanceOf[js.Any])
+    def setLongUploadsStatusUndefined: Self = StObject.set(x, "longUploadsStatus", js.undefined)
     
     @scala.inline
-    def deleteIsLinked: Self = this.set("isLinked", js.undefined)
+    def setMadeForKids(value: Boolean): Self = StObject.set(x, "madeForKids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongUploadsStatus(value: String): Self = this.set("longUploadsStatus", value.asInstanceOf[js.Any])
+    def setMadeForKidsUndefined: Self = StObject.set(x, "madeForKids", js.undefined)
     
     @scala.inline
-    def deleteLongUploadsStatus: Self = this.set("longUploadsStatus", js.undefined)
+    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMadeForKids(value: Boolean): Self = this.set("madeForKids", value.asInstanceOf[js.Any])
+    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
     
     @scala.inline
-    def deleteMadeForKids: Self = this.set("madeForKids", js.undefined)
+    def setSelfDeclaredMadeForKids(value: Boolean): Self = StObject.set(x, "selfDeclaredMadeForKids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyStatus(value: String): Self = this.set("privacyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyStatus: Self = this.set("privacyStatus", js.undefined)
-    
-    @scala.inline
-    def setSelfDeclaredMadeForKids(value: Boolean): Self = this.set("selfDeclaredMadeForKids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfDeclaredMadeForKids: Self = this.set("selfDeclaredMadeForKids", js.undefined)
+    def setSelfDeclaredMadeForKidsUndefined: Self = StObject.set(x, "selfDeclaredMadeForKids", js.undefined)
   }
 }

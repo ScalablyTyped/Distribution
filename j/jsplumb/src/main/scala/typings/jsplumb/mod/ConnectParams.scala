@@ -1,12 +1,13 @@
 package typings.jsplumb.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectParams extends js.Object {
+trait ConnectParams extends StObject {
   
   var anchor: js.UndefOr[AnchorSpec] = js.native
   
@@ -43,102 +44,90 @@ object ConnectParams {
   }
   
   @scala.inline
-  implicit class ConnectParamsOps[Self <: ConnectParams] (val x: Self) extends AnyVal {
+  implicit class ConnectParamsMutableBuilder[Self <: ConnectParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: AnchorSpec): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value :_*))
     
     @scala.inline
-    def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = this.set("anchor", js.Array(value :_*))
+    def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: AnchorSpec): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAnchorsUndefined: Self = StObject.set(x, "anchors", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setConnector(value: ConnectorSpec): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = this.set("anchors", value.asInstanceOf[js.Any])
+    def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
     
     @scala.inline
-    def deleteAnchors: Self = this.set("anchors", js.undefined)
+    def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnector(value: ConnectorSpec): Self = this.set("connector", value.asInstanceOf[js.Any])
+    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
     @scala.inline
-    def deleteConnector: Self = this.set("connector", js.undefined)
+    def setDeleteEndpointsOnDetach(value: Boolean): Self = StObject.set(x, "deleteEndpointsOnDetach", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    def setDeleteEndpointsOnDetachUndefined: Self = StObject.set(x, "deleteEndpointsOnDetach", js.undefined)
     
     @scala.inline
-    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    def setDetachable(value: Boolean): Self = StObject.set(x, "detachable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteEndpointsOnDetach(value: Boolean): Self = this.set("deleteEndpointsOnDetach", value.asInstanceOf[js.Any])
+    def setDetachableUndefined: Self = StObject.set(x, "detachable", js.undefined)
     
     @scala.inline
-    def deleteDeleteEndpointsOnDetach: Self = this.set("deleteEndpointsOnDetach", js.undefined)
+    def setEndpoint(value: EndpointSpec): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachable(value: Boolean): Self = this.set("detachable", value.asInstanceOf[js.Any])
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def deleteDetachable: Self = this.set("detachable", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: EndpointSpec): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def setOverlays(value: js.Array[OverlaySpec]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
     @scala.inline
-    def setOverlaysVarargs(value: OverlaySpec*): Self = this.set("overlays", js.Array(value :_*))
+    def setParameters(value: Record[String, _]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlays(value: js.Array[OverlaySpec]): Self = this.set("overlays", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteOverlays: Self = this.set("overlays", js.undefined)
+    def setSource(value: ElementRef | Endpoint): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Record[String, _]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setTarget(value: ElementRef | Endpoint): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: ElementRef | Endpoint): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setUuids(value: js.Tuple2[UUID, UUID]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: ElementRef | Endpoint): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("target", js.undefined)
-    
-    @scala.inline
-    def setUuids(value: js.Tuple2[UUID, UUID]): Self = this.set("uuids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuids: Self = this.set("uuids", js.undefined)
+    def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
   }
 }

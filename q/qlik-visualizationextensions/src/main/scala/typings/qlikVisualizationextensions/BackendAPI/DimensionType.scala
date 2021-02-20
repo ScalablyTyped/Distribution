@@ -1,5 +1,6 @@
 package typings.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.N
   - typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T
 */
-trait DimensionType extends js.Object
+trait DimensionType extends StObject
 object DimensionType {
   
   @scala.inline

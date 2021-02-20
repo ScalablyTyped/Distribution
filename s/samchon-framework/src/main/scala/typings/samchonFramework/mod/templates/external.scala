@@ -2,14 +2,14 @@ package typings.samchonFramework.mod.templates
 
 import typings.samchon.iclientdriverMod.IClientDriver
 import typings.samchon.iexternalserverMod.IExternalServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon-framework", "templates.external")
-@js.native
-object external extends js.Object {
+object external {
   
+  @JSImport("samchon-framework", "templates.external.ExternalClientArray")
   @js.native
   /**
     * Default Constructor.
@@ -17,6 +17,7 @@ object external extends js.Object {
   abstract class ExternalClientArray[T /* <: typings.samchon.externalSystemMod.ExternalSystem */] ()
     extends typings.samchon.mod.templates.external.ExternalClientArray[T]
   
+  @JSImport("samchon-framework", "templates.external.ExternalServer")
   @js.native
   abstract class ExternalServer protected ()
     extends typings.samchon.mod.templates.external.ExternalServer {
@@ -28,6 +29,7 @@ object external extends js.Object {
     def this(systemArray: typings.samchon.externalSystemArrayMod.ExternalSystemArray[IExternalServer]) = this()
   }
   
+  @JSImport("samchon-framework", "templates.external.ExternalServerArray")
   @js.native
   /**
     * Default Constructor.
@@ -35,6 +37,7 @@ object external extends js.Object {
   abstract class ExternalServerArray[T /* <: IExternalServer */] ()
     extends typings.samchon.mod.templates.external.ExternalServerArray[T]
   
+  @JSImport("samchon-framework", "templates.external.ExternalServerClientArray")
   @js.native
   /**
     * Default Constructor.
@@ -42,6 +45,7 @@ object external extends js.Object {
   abstract class ExternalServerClientArray[T /* <: typings.samchon.externalSystemMod.ExternalSystem */] ()
     extends typings.samchon.mod.templates.external.ExternalServerClientArray[T]
   
+  @JSImport("samchon-framework", "templates.external.ExternalSystem")
   @js.native
   abstract class ExternalSystem protected ()
     extends typings.samchon.mod.templates.external.ExternalSystem {
@@ -63,6 +67,7 @@ object external extends js.Object {
     ) = this()
   }
   
+  @JSImport("samchon-framework", "templates.external.ExternalSystemArray")
   @js.native
   /**
     * Default Constructor.
@@ -70,6 +75,7 @@ object external extends js.Object {
   abstract class ExternalSystemArray[System /* <: typings.samchon.externalSystemMod.ExternalSystem */] ()
     extends typings.samchon.mod.templates.external.ExternalSystemArray[System]
   
+  @JSImport("samchon-framework", "templates.external.ExternalSystemRole")
   @js.native
   abstract class ExternalSystemRole protected ()
     extends typings.samchon.mod.templates.external.ExternalSystemRole {

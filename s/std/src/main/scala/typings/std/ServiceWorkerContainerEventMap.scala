@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceWorkerContainerEventMap extends js.Object {
+trait ServiceWorkerContainerEventMap extends StObject {
   
   var controllerchange: Event = js.native
   
@@ -22,27 +23,15 @@ object ServiceWorkerContainerEventMap {
   }
   
   @scala.inline
-  implicit class ServiceWorkerContainerEventMapOps[Self <: ServiceWorkerContainerEventMap] (val x: Self) extends AnyVal {
+  implicit class ServiceWorkerContainerEventMapMutableBuilder[Self <: ServiceWorkerContainerEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControllerchange(value: Event): Self = StObject.set(x, "controllerchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: MessageEvent[_]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setControllerchange(value: Event): Self = this.set("controllerchange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: MessageEvent[_]): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessageerror(value: MessageEvent[_]): Self = this.set("messageerror", value.asInstanceOf[js.Any])
+    def setMessageerror(value: MessageEvent[_]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
   }
 }

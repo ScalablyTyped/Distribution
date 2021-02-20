@@ -1,12 +1,13 @@
 package typings.rollup.anon
 
 import typings.rollup.mod.RollupWatcherEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Change extends js.Object {
+trait Change extends StObject {
   
   def change(id: String, change: Event): Unit = js.native
   
@@ -30,30 +31,18 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeOps[Self <: Change] (val x: Self) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: (String, Event) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: RollupWatcherEvent => Unit): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChange(value: (String, Event) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEvent(value: RollupWatcherEvent => Unit): Self = this.set("event", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRestart(value: () => Unit): Self = this.set("restart", js.Any.fromFunction0(value))
+    def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
   }
 }

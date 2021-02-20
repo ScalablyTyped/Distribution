@@ -1,13 +1,14 @@
 package typings.konva
 
 import typings.konva.nodeMod.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("konva/types/filters/Pixelate", JSImport.Namespace)
-@js.native
-object pixelateMod extends js.Object {
+object pixelateMod {
   
+  @JSImport("konva/types/filters/Pixelate", "Pixelate")
+  @js.native
   val Pixelate: Filter = js.native
 }

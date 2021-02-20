@@ -10,14 +10,14 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.EventTarget
 import typings.std.HTMLFormElement
 import typings.std.URL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("naja/src/core/UIHandler", JSImport.Namespace)
-@js.native
-object uihandlerMod extends js.Object {
+object uihandlerMod {
   
+  @JSImport("naja/src/core/UIHandler", "UIHandler")
   @js.native
   class UIHandler () extends EventTarget {
     

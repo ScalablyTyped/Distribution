@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2Entitlement extends js.Object {
+trait GoogleActionsV2Entitlement extends StObject {
   
   /**
     * Only present for in-app purchase and in-app subs.
@@ -30,36 +31,24 @@ object GoogleActionsV2Entitlement {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2EntitlementOps[Self <: GoogleActionsV2Entitlement] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2EntitlementMutableBuilder[Self <: GoogleActionsV2Entitlement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInAppDetails(value: GoogleActionsV2SignedData): Self = StObject.set(x, "inAppDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInAppDetailsUndefined: Self = StObject.set(x, "inAppDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAppDetails(value: GoogleActionsV2SignedData): Self = this.set("inAppDetails", value.asInstanceOf[js.Any])
+    def setSkuType(value: GoogleActionsV2EntitlementSkuType): Self = StObject.set(x, "skuType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInAppDetails: Self = this.set("inAppDetails", js.undefined)
+    def setSkuTypeUndefined: Self = StObject.set(x, "skuType", js.undefined)
     
     @scala.inline
-    def setSku(value: String): Self = this.set("sku", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSku: Self = this.set("sku", js.undefined)
-    
-    @scala.inline
-    def setSkuType(value: GoogleActionsV2EntitlementSkuType): Self = this.set("skuType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkuType: Self = this.set("skuType", js.undefined)
+    def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
   }
 }

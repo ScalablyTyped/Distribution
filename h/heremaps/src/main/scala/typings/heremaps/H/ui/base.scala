@@ -3,6 +3,7 @@ package typings.heremaps.H.ui
 import typings.heremaps.H.util.EventTarget
 import typings.std.Document
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This namespace contains basic UI elements from which the UI controls are built.
   */
-@JSGlobal("H.ui.base")
-@js.native
-object base extends js.Object {
+object base {
   
   @js.native
   trait Container extends EventTarget {

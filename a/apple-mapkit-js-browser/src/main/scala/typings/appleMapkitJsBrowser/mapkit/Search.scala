@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object that retrieves map-based search results for a user-entered query.
   */
 @js.native
-trait Search extends js.Object {
+trait Search extends StObject {
   
   def autocomplete(query: String, callback: AutocompleteSearchCallback): Unit = js.native
   def autocomplete(query: String, callback: AutocompleteSearchCallback, options: SearchOptions): Unit = js.native

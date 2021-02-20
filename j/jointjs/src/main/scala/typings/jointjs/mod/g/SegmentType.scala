@@ -1,6 +1,7 @@
 package typings.jointjs.mod.g
 
 import typings.jointjs.jointjsStrings.z_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jointjs.jointjsStrings.Z
   - typings.jointjs.jointjsStrings.z_
 */
-trait SegmentType extends js.Object
+trait SegmentType extends StObject
 object SegmentType {
   
   @scala.inline

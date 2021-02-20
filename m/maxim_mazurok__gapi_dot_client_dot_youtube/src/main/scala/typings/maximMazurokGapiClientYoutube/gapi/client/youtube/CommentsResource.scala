@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientYoutube.anon.BanAuthor
 import typings.maximMazurokGapiClientYoutube.anon.MaxResults
 import typings.maximMazurokGapiClientYoutube.anon.Uploadprotocol
 import typings.maximMazurokGapiClientYoutube.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommentsResource extends js.Object {
+trait CommentsResource extends StObject {
   
   /** Deletes a resource. */
   def delete(): Request[Unit] = js.native

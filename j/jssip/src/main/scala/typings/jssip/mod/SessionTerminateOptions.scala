@@ -1,11 +1,12 @@
 package typings.jssip.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionTerminateOptions extends js.Object {
+trait SessionTerminateOptions extends StObject {
   
   var body: js.UndefOr[String] = js.native
   
@@ -24,45 +25,33 @@ object SessionTerminateOptions {
   }
   
   @scala.inline
-  implicit class SessionTerminateOptionsOps[Self <: SessionTerminateOptions] (val x: Self) extends AnyVal {
+  implicit class SessionTerminateOptionsMutableBuilder[Self <: SessionTerminateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setExtraHeadersVarargs(value: String*): Self = this.set("extraHeaders", js.Array(value :_*))
+    def setReason_phrase(value: String): Self = StObject.set(x, "reason_phrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraHeaders(value: js.Array[String]): Self = this.set("extraHeaders", value.asInstanceOf[js.Any])
+    def setReason_phraseUndefined: Self = StObject.set(x, "reason_phrase", js.undefined)
     
     @scala.inline
-    def deleteExtraHeaders: Self = this.set("extraHeaders", js.undefined)
+    def setStatus_code(value: Double): Self = StObject.set(x, "status_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason_phrase(value: String): Self = this.set("reason_phrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReason_phrase: Self = this.set("reason_phrase", js.undefined)
-    
-    @scala.inline
-    def setStatus_code(value: Double): Self = this.set("status_code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus_code: Self = this.set("status_code", js.undefined)
+    def setStatus_codeUndefined: Self = StObject.set(x, "status_code", js.undefined)
   }
 }

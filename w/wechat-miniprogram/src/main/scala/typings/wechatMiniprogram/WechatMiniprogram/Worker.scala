@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Worker extends js.Object {
+trait Worker extends StObject {
   
   /** [Worker.onMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/worker/Worker.onMessage.html)
     *
@@ -51,27 +52,15 @@ object Worker {
   }
   
   @scala.inline
-  implicit class WorkerOps[Self <: Worker] (val x: Self) extends AnyVal {
+  implicit class WorkerMutableBuilder[Self <: Worker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnMessage(value: WorkerOnMessageCallback => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostMessage(value: IAnyObject => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnMessage(value: WorkerOnMessageCallback => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPostMessage(value: IAnyObject => Unit): Self = this.set("postMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTerminate(value: () => Unit): Self = this.set("terminate", js.Any.fromFunction0(value))
+    def setTerminate(value: () => Unit): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

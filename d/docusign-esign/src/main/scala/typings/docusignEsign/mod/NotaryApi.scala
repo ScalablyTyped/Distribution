@@ -1,12 +1,13 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("docusign-esign", "NotaryApi")
 @js.native
-class NotaryApi protected () extends js.Object {
+class NotaryApi protected () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def createNotary(): js.Promise[Notary] = js.native

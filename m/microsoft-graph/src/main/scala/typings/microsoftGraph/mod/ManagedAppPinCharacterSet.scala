@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.numeric
   - typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol
 */
-trait ManagedAppPinCharacterSet extends js.Object
+trait ManagedAppPinCharacterSet extends StObject
 object ManagedAppPinCharacterSet {
   
   @scala.inline

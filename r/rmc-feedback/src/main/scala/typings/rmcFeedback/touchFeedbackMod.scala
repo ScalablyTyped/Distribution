@@ -5,13 +5,29 @@ import typings.rmcFeedback.anon.Active
 import typings.rmcFeedback.anon.Disabled
 import typings.rmcFeedback.propTypesMod.ITouchProps
 import typings.rmcFeedback.propTypesMod.ITouchState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-feedback/lib/TouchFeedback", JSImport.Namespace)
-@js.native
-object touchFeedbackMod extends js.Object {
+object touchFeedbackMod {
+  
+  @JSImport("rmc-feedback/lib/TouchFeedback", JSImport.Default)
+  @js.native
+  class default () extends TouchFeedback
+  /* static members */
+  object default {
+    
+    @JSImport("rmc-feedback/lib/TouchFeedback", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-feedback/lib/TouchFeedback", "default.defaultProps")
+    @js.native
+    def defaultProps: Disabled = js.native
+    @scala.inline
+    def defaultProps_=(x: Disabled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait TouchFeedback
@@ -38,14 +54,5 @@ object touchFeedbackMod extends js.Object {
     var state_TouchFeedback: Active = js.native
     
     def triggerEvent(`type`: js.Any, isActive: js.Any, ev: js.Any): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends TouchFeedback
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: Disabled = js.native
   }
 }

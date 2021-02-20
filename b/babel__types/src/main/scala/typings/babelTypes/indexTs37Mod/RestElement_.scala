@@ -1,6 +1,7 @@
 package typings.babelTypes.indexTs37Mod
 
 import typings.babelTypes.babelTypesStrings.RestElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,39 +32,27 @@ object RestElement_ {
   }
   
   @scala.inline
-  implicit class RestElement_Ops[Self <: RestElement_] (val x: Self) extends AnyVal {
+  implicit class RestElement_MutableBuilder[Self <: RestElement_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
     @scala.inline
-    def setArgument(value: LVal): Self = this.set("argument", value.asInstanceOf[js.Any])
+    def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: RestElement): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: RestElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecoratorsVarargs(value: Decorator_ *): Self = this.set("decorators", js.Array(value :_*))
+    def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: js.Array[Decorator_]): Self = this.set("decorators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDecoratorsNull: Self = this.set("decorators", null)
-    
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
   }
 }

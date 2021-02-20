@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageItem extends js.Object {
+trait MessageItem extends StObject {
   
   /**
     * A hint for modal dialogs that the item should be triggered
@@ -30,27 +31,15 @@ object MessageItem {
   }
   
   @scala.inline
-  implicit class MessageItemOps[Self <: MessageItem] (val x: Self) extends AnyVal {
+  implicit class MessageItemMutableBuilder[Self <: MessageItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCloseAffordance(value: Boolean): Self = StObject.set(x, "isCloseAffordance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCloseAffordanceUndefined: Self = StObject.set(x, "isCloseAffordance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsCloseAffordance(value: Boolean): Self = this.set("isCloseAffordance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsCloseAffordance: Self = this.set("isCloseAffordance", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

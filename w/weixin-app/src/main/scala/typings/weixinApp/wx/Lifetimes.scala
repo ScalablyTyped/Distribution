@@ -1,5 +1,6 @@
 package typings.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 原有声明方式仍旧有效，如同时存在两种声明方式，则lifetimes字段内声明方式优先级最高
   */
 @js.native
-trait Lifetimes extends js.Object {
+trait Lifetimes extends StObject {
   
   /**
     * 组件生命周期函数，在组件实例进入页面节点树时执行
@@ -53,33 +54,21 @@ object Lifetimes {
   }
   
   @scala.inline
-  implicit class LifetimesOps[Self <: Lifetimes] (val x: Self) extends AnyVal {
+  implicit class LifetimesMutableBuilder[Self <: Lifetimes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAttached(value: () => Unit): Self = this.set("attached", js.Any.fromFunction0(value))
+    def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreated(value: () => Unit): Self = this.set("created", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDetached(value: () => Unit): Self = this.set("detached", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMoved(value: () => Unit): Self = this.set("moved", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
   }
 }

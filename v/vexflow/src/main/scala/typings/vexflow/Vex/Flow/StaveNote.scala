@@ -4,6 +4,7 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.Highestline
 import typings.vexflow.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ trait StaveNote extends StemmableNote {
   
   def autoStem(): Unit = js.native
   
-   //inconsistent type: void -> StaveNote
+  //inconsistent type: void -> StaveNote
   def buildNoteHeads(): Unit = js.native
   
   //TODO remove the following lines once TypeScript allows subclass overrides with type changes and/or inconsistencies mentioned below are fixed
@@ -87,7 +88,7 @@ trait StaveNote extends StemmableNote {
   @JSName("setStave")
   def setStave_Note(stave: Stave): Note = js.native
   
-   // inconsistent type: void -> StaveNote
+  // inconsistent type: void -> StaveNote
   def setStemStyle(style: FillStyle_): Unit = js.native
   
   def setStyle(style: FillStyle_): Unit = js.native

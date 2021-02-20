@@ -1,17 +1,17 @@
 package typings.winrtUwp.global.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for managing media rendering. */
-@JSGlobal("Windows.Media.Render")
-@js.native
-object Render extends js.Object {
+object Render {
   
   /** Describes the purpose of the audio information in an audio stream. */
+  @JSGlobal("Windows.Media.Render.AudioRenderCategory")
   @js.native
-  object AudioRenderCategory extends js.Object {
+  object AudioRenderCategory extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.Render.AudioRenderCategory with Double] = js.native

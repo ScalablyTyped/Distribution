@@ -1,14 +1,15 @@
 package typings.reactMdUtils
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/utils/types/bem", JSImport.Namespace)
-@js.native
-object bemMod extends js.Object {
+object bemMod {
   
+  @JSImport("@react-md/utils/types/bem", "bem")
+  @js.native
   def bem(base: Block): BEMResult = js.native
   
   type BEMResult = js.Function2[

@@ -1,6 +1,7 @@
 package typings.log4js.mod
 
 import typings.log4js.log4jsStrings.dateFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,78 +62,66 @@ object DateFileAppender {
   }
   
   @scala.inline
-  implicit class DateFileAppenderOps[Self <: DateFileAppender] (val x: Self) extends AnyVal {
+  implicit class DateFileAppenderMutableBuilder[Self <: DateFileAppender] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysIncludePattern(value: Boolean): Self = StObject.set(x, "alwaysIncludePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysIncludePatternUndefined: Self = StObject.set(x, "alwaysIncludePattern", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
     @scala.inline
-    def setType(value: dateFile): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysIncludePattern(value: Boolean): Self = this.set("alwaysIncludePattern", value.asInstanceOf[js.Any])
+    def setDaysToKeepUndefined: Self = StObject.set(x, "daysToKeep", js.undefined)
     
     @scala.inline
-    def deleteAlwaysIncludePattern: Self = this.set("alwaysIncludePattern", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteCompress: Self = this.set("compress", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaysToKeep(value: Double): Self = this.set("daysToKeep", value.asInstanceOf[js.Any])
+    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDaysToKeep: Self = this.set("daysToKeep", js.undefined)
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setKeepFileExt(value: Boolean): Self = StObject.set(x, "keepFileExt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setKeepFileExtUndefined: Self = StObject.set(x, "keepFileExt", js.undefined)
     
     @scala.inline
-    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setKeepFileExt(value: Boolean): Self = this.set("keepFileExt", value.asInstanceOf[js.Any])
+    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepFileExt: Self = this.set("keepFileExt", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setType(value: dateFile): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

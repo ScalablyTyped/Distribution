@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConfigurationRecordersRequest extends js.Object {
+trait DescribeConfigurationRecordersRequest extends StObject {
   
   /**
     * A list of configuration recorder names.
@@ -21,27 +22,15 @@ object DescribeConfigurationRecordersRequest {
   }
   
   @scala.inline
-  implicit class DescribeConfigurationRecordersRequestOps[Self <: DescribeConfigurationRecordersRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeConfigurationRecordersRequestMutableBuilder[Self <: DescribeConfigurationRecordersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationRecorderNames(value: ConfigurationRecorderNameList): Self = StObject.set(x, "ConfigurationRecorderNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationRecorderNamesUndefined: Self = StObject.set(x, "ConfigurationRecorderNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfigurationRecorderNamesVarargs(value: RecorderName*): Self = this.set("ConfigurationRecorderNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigurationRecorderNames(value: ConfigurationRecorderNameList): Self = this.set("ConfigurationRecorderNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationRecorderNames: Self = this.set("ConfigurationRecorderNames", js.undefined)
+    def setConfigurationRecorderNamesVarargs(value: RecorderName*): Self = StObject.set(x, "ConfigurationRecorderNames", js.Array(value :_*))
   }
 }

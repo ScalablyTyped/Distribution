@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccessKeyLastUsedResponse extends js.Object {
+trait GetAccessKeyLastUsedResponse extends StObject {
   
   /**
     * Contains information about the last time the access key was used.
@@ -26,30 +27,18 @@ object GetAccessKeyLastUsedResponse {
   }
   
   @scala.inline
-  implicit class GetAccessKeyLastUsedResponseOps[Self <: GetAccessKeyLastUsedResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccessKeyLastUsedResponseMutableBuilder[Self <: GetAccessKeyLastUsedResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyLastUsed(value: AccessKeyLastUsed): Self = StObject.set(x, "AccessKeyLastUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyLastUsedUndefined: Self = StObject.set(x, "AccessKeyLastUsed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyLastUsed(value: AccessKeyLastUsed): Self = this.set("AccessKeyLastUsed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessKeyLastUsed: Self = this.set("AccessKeyLastUsed", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

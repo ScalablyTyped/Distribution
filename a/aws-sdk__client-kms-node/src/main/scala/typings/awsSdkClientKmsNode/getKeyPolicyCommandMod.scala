@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsNode.typesGetKeyPolicyInputMod.GetKeyPolicyInput
 import typings.awsSdkClientKmsNode.typesGetKeyPolicyOutputMod.GetKeyPolicyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/commands/GetKeyPolicyCommand", JSImport.Namespace)
-@js.native
-object getKeyPolicyCommandMod extends js.Object {
+object getKeyPolicyCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-node/commands/GetKeyPolicyCommand", "GetKeyPolicyCommand")
   @js.native
   class GetKeyPolicyCommand protected () extends Command[
           InputTypesUnion, 

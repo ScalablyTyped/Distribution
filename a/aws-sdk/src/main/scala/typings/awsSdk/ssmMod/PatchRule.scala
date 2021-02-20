@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchRule extends js.Object {
+trait PatchRule extends StObject {
   
   /**
     * The number of days after the release date of each patch matched by the rule that the patch is marked as approved in the patch baseline. For example, a value of 7 means that patches are approved seven days after they are released. Not supported on Ubuntu Server.
@@ -41,45 +42,33 @@ object PatchRule {
   }
   
   @scala.inline
-  implicit class PatchRuleOps[Self <: PatchRule] (val x: Self) extends AnyVal {
+  implicit class PatchRuleMutableBuilder[Self <: PatchRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproveAfterDays(value: ApproveAfterDays): Self = StObject.set(x, "ApproveAfterDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproveAfterDaysUndefined: Self = StObject.set(x, "ApproveAfterDays", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApproveUntilDate(value: PatchStringDateTime): Self = StObject.set(x, "ApproveUntilDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatchFilterGroup(value: PatchFilterGroup): Self = this.set("PatchFilterGroup", value.asInstanceOf[js.Any])
+    def setApproveUntilDateUndefined: Self = StObject.set(x, "ApproveUntilDate", js.undefined)
     
     @scala.inline
-    def setApproveAfterDays(value: ApproveAfterDays): Self = this.set("ApproveAfterDays", value.asInstanceOf[js.Any])
+    def setComplianceLevel(value: PatchComplianceLevel): Self = StObject.set(x, "ComplianceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApproveAfterDays: Self = this.set("ApproveAfterDays", js.undefined)
+    def setComplianceLevelUndefined: Self = StObject.set(x, "ComplianceLevel", js.undefined)
     
     @scala.inline
-    def setApproveUntilDate(value: PatchStringDateTime): Self = this.set("ApproveUntilDate", value.asInstanceOf[js.Any])
+    def setEnableNonSecurity(value: Boolean): Self = StObject.set(x, "EnableNonSecurity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApproveUntilDate: Self = this.set("ApproveUntilDate", js.undefined)
+    def setEnableNonSecurityUndefined: Self = StObject.set(x, "EnableNonSecurity", js.undefined)
     
     @scala.inline
-    def setComplianceLevel(value: PatchComplianceLevel): Self = this.set("ComplianceLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceLevel: Self = this.set("ComplianceLevel", js.undefined)
-    
-    @scala.inline
-    def setEnableNonSecurity(value: Boolean): Self = this.set("EnableNonSecurity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableNonSecurity: Self = this.set("EnableNonSecurity", js.undefined)
+    def setPatchFilterGroup(value: PatchFilterGroup): Self = StObject.set(x, "PatchFilterGroup", value.asInstanceOf[js.Any])
   }
 }

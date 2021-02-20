@@ -1,12 +1,13 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemListDto extends js.Object {
+trait ItemListDto extends StObject {
   
   var basic: BasicDataDto = js.native
   
@@ -37,45 +38,33 @@ object ItemListDto {
   }
   
   @scala.inline
-  implicit class ItemListDtoOps[Self <: ItemListDto] (val x: Self) extends AnyVal {
+  implicit class ItemListDtoMutableBuilder[Self <: ItemListDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasic(value: BasicDataDto): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: js.Array[StringDictionary[ItemDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: StringDictionary[ItemDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setBasic(value: BasicDataDto): Self = this.set("basic", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Array[GroupDto]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: StringDictionary[ItemDto]*): Self = this.set("data", js.Array(value :_*))
+    def setGroupsVarargs(value: GroupDto*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Array[StringDictionary[ItemDto]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setTree(value: js.Array[ItemTreeDto]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupsVarargs(value: GroupDto*): Self = this.set("groups", js.Array(value :_*))
+    def setTreeVarargs(value: ItemTreeDto*): Self = StObject.set(x, "tree", js.Array(value :_*))
     
     @scala.inline
-    def setGroups(value: js.Array[GroupDto]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreeVarargs(value: ItemTreeDto*): Self = this.set("tree", js.Array(value :_*))
-    
-    @scala.inline
-    def setTree(value: js.Array[ItemTreeDto]): Self = this.set("tree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

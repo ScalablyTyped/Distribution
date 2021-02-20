@@ -6,13 +6,19 @@ import typings.vsoNodeApi.securityRolesInterfacesMod.SecurityRole
 import typings.vsoNodeApi.securityRolesInterfacesMod.UserRoleAssignmentRef
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/SecurityRolesApi", JSImport.Namespace)
-@js.native
-object securityRolesApiMod extends js.Object {
+object securityRolesApiMod {
+  
+  @JSImport("vso-node-api/SecurityRolesApi", "SecurityRolesApi")
+  @js.native
+  class SecurityRolesApi protected () extends ISecurityRolesApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait ISecurityRolesApi extends ClientApiBase {
@@ -28,11 +34,5 @@ object securityRolesApiMod extends js.Object {
     def setRoleAssignment(roleAssignment: UserRoleAssignmentRef, scopeId: String, resourceId: String, identityId: String): js.Promise[RoleAssignment] = js.native
     
     def setRoleAssignments(roleAssignments: js.Array[UserRoleAssignmentRef], scopeId: String, resourceId: String): js.Promise[js.Array[RoleAssignment]] = js.native
-  }
-  
-  @js.native
-  class SecurityRolesApi protected () extends ISecurityRolesApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

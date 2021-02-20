@@ -6,14 +6,14 @@ import typings.expressValidator.contextMod.ReadonlyContext
 import typings.expressValidator.contextRunnerMod.ContextRunner
 import typings.expressValidator.selectFieldsMod.SelectFields_
 import typings.expressValidator.validationResultMod.Result
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-validator/src/chain/context-runner-impl", JSImport.Namespace)
-@js.native
-object contextRunnerImplMod extends js.Object {
+object contextRunnerImplMod {
   
+  @JSImport("express-validator/src/chain/context-runner-impl", "ContextRunnerImpl")
   @js.native
   class ContextRunnerImpl protected () extends ContextRunner {
     def this(builderOrContext: ContextBuilder) = this()

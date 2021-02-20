@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled
 */
-trait ZoomSettingsMode extends js.Object
+trait ZoomSettingsMode extends StObject
 object ZoomSettingsMode {
   
   @scala.inline

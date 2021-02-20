@@ -2,13 +2,14 @@ package typings.squareConnect.mod
 
 import typings.squareConnect.squareConnectStrings.LOW_QUANTITY
 import typings.squareConnect.squareConnectStrings.NONE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItemVariation")
 @js.native
-class CatalogItemVariation () extends js.Object {
+class CatalogItemVariation () extends StObject {
   
   /**
     * If the inventory quantity for the variation is less than or equal to this value and `inventory_alert_type` is

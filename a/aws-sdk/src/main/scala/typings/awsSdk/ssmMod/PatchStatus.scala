@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PatchStatus extends js.Object {
+trait PatchStatus extends StObject {
   
   /**
     * The date the patch was approved (or will be approved if the status is PENDING_APPROVAL).
@@ -31,36 +32,24 @@ object PatchStatus {
   }
   
   @scala.inline
-  implicit class PatchStatusOps[Self <: PatchStatus] (val x: Self) extends AnyVal {
+  implicit class PatchStatusMutableBuilder[Self <: PatchStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalDate(value: DateTime): Self = StObject.set(x, "ApprovalDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalDateUndefined: Self = StObject.set(x, "ApprovalDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComplianceLevel(value: PatchComplianceLevel): Self = StObject.set(x, "ComplianceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalDate(value: DateTime): Self = this.set("ApprovalDate", value.asInstanceOf[js.Any])
+    def setComplianceLevelUndefined: Self = StObject.set(x, "ComplianceLevel", js.undefined)
     
     @scala.inline
-    def deleteApprovalDate: Self = this.set("ApprovalDate", js.undefined)
+    def setDeploymentStatus(value: PatchDeploymentStatus): Self = StObject.set(x, "DeploymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceLevel(value: PatchComplianceLevel): Self = this.set("ComplianceLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComplianceLevel: Self = this.set("ComplianceLevel", js.undefined)
-    
-    @scala.inline
-    def setDeploymentStatus(value: PatchDeploymentStatus): Self = this.set("DeploymentStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentStatus: Self = this.set("DeploymentStatus", js.undefined)
+    def setDeploymentStatusUndefined: Self = StObject.set(x, "DeploymentStatus", js.undefined)
   }
 }

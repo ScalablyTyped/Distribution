@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenIterator extends js.Object {
+trait TokenIterator extends StObject {
   
   /**
     * Returns the current tokenized string.
@@ -47,33 +48,21 @@ object TokenIterator {
   }
   
   @scala.inline
-  implicit class TokenIteratorOps[Self <: TokenIterator] (val x: Self) extends AnyVal {
+  implicit class TokenIteratorMutableBuilder[Self <: TokenIterator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCurrentToken(value: () => TokenInfo): Self = StObject.set(x, "getCurrentToken", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentTokenColumn(value: () => Double): Self = StObject.set(x, "getCurrentTokenColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentTokenRow(value: () => Double): Self = StObject.set(x, "getCurrentTokenRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentToken(value: () => TokenInfo): Self = this.set("getCurrentToken", js.Any.fromFunction0(value))
+    def setStepBackward(value: () => js.Array[String]): Self = StObject.set(x, "stepBackward", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTokenColumn(value: () => Double): Self = this.set("getCurrentTokenColumn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCurrentTokenRow(value: () => Double): Self = this.set("getCurrentTokenRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepBackward(value: () => js.Array[String]): Self = this.set("stepBackward", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStepForward(value: () => String): Self = this.set("stepForward", js.Any.fromFunction0(value))
+    def setStepForward(value: () => String): Self = StObject.set(x, "stepForward", js.Any.fromFunction0(value))
   }
 }

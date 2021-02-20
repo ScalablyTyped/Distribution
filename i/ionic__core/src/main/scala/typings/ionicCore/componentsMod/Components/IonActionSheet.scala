@@ -5,12 +5,13 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonActionSheet extends js.Object {
+trait IonActionSheet extends StObject {
   
   /**
     * If `true`, the action sheet will animate.

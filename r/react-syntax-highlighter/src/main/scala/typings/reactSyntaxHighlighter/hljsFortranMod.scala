@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/hljs/fortran", JSImport.Namespace)
-@js.native
-object hljsFortranMod extends js.Object {
+object hljsFortranMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/hljs/fortran", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,27 +41,15 @@ object FieldSchemaInFormMultiChoice {
   }
   
   @scala.inline
-  implicit class FieldSchemaInFormMultiChoiceOps[Self <: FieldSchemaInFormMultiChoice] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInFormMultiChoiceMutableBuilder[Self <: FieldSchemaInFormMultiChoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillInChoice(value: Boolean): Self = StObject.set(x, "FillInChoice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiChoices(value: js.Array[String]): Self = StObject.set(x, "MultiChoices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFillInChoice(value: Boolean): Self = this.set("FillInChoice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMultiChoicesVarargs(value: String*): Self = this.set("MultiChoices", js.Array(value :_*))
-    
-    @scala.inline
-    def setMultiChoices(value: js.Array[String]): Self = this.set("MultiChoices", value.asInstanceOf[js.Any])
+    def setMultiChoicesVarargs(value: String*): Self = StObject.set(x, "MultiChoices", js.Array(value :_*))
   }
 }

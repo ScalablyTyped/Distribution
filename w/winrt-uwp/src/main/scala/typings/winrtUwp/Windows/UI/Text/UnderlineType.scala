@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnderlineType extends js.Object
+sealed trait UnderlineType extends StObject
 /** Specifies the type of character underlining. */
 @JSGlobal("Windows.UI.Text.UnderlineType")
 @js.native
-object UnderlineType extends js.Object {
+object UnderlineType extends StObject {
   
   /** A dashed line. */
   @js.native

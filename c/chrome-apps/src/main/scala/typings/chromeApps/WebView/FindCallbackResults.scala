@@ -1,13 +1,14 @@
 package typings.chromeApps.WebView
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains all of the results of the find request. */
 @js.native
-trait FindCallbackResults extends js.Object {
+trait FindCallbackResults extends StObject {
   
   /** The ordinal number of the current match. */
   var activeMatchOrdinal: integer = js.native
@@ -35,30 +36,18 @@ object FindCallbackResults {
   }
   
   @scala.inline
-  implicit class FindCallbackResultsOps[Self <: FindCallbackResults] (val x: Self) extends AnyVal {
+  implicit class FindCallbackResultsMutableBuilder[Self <: FindCallbackResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveMatchOrdinal(value: integer): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfMatches(value: integer): Self = StObject.set(x, "numberOfMatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveMatchOrdinal(value: integer): Self = this.set("activeMatchOrdinal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCanceled(value: Boolean): Self = this.set("canceled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfMatches(value: integer): Self = this.set("numberOfMatches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionRect(value: SelectionRect): Self = this.set("selectionRect", value.asInstanceOf[js.Any])
+    def setSelectionRect(value: SelectionRect): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
   }
 }

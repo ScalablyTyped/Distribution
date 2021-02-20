@@ -1,5 +1,6 @@
 package typings.stripe.mod.paymentIntents
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.stripeStrings.ideal
   - typings.stripe.stripeStrings.sepa_debit
 */
-trait PaymentIntentPaymentMethodType extends js.Object
+trait PaymentIntentPaymentMethodType extends StObject
 object PaymentIntentPaymentMethodType {
   
   @scala.inline

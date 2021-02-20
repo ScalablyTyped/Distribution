@@ -27,13 +27,14 @@ import typings.semanticUiApi.semanticUiApiStrings.put
 import typings.semanticUiApi.semanticUiApiStrings.script
 import typings.semanticUiApi.semanticUiApiStrings.text
 import typings.semanticUiApi.semanticUiApiStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, keyof semantic-ui-api.SemanticUI.ApiSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImpl extends js.Object {
+trait PartialPickImplkeyofImpl extends StObject {
   
   var action: js.UndefOr[String | `false`] = js.native
   
@@ -152,138 +153,118 @@ object PartialPickImplkeyofImpl {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplOps[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplMutableBuilder[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String | `false`): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setBeforeSend(value: /* settings */ ApiSettings => _): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApi(value: StringDictionary[String]): Self = this.set("api", value.asInstanceOf[js.Any])
+    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
     @scala.inline
-    def deleteApi: Self = this.set("api", js.undefined)
+    def setBeforeXHR(value: /* xhrObject */ jqXHR[_] => _): Self = StObject.set(x, "beforeXHR", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeforeSend(value: /* settings */ ApiSettings => _): Self = this.set("beforeSend", js.Any.fromFunction1(value))
+    def setBeforeXHRUndefined: Self = StObject.set(x, "beforeXHR", js.undefined)
     
     @scala.inline
-    def deleteBeforeSend: Self = this.set("beforeSend", js.undefined)
+    def setCache(value: local | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeXHR(value: /* xhrObject */ jqXHR[_] => _): Self = this.set("beforeXHR", js.Any.fromFunction1(value))
+    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     @scala.inline
-    def deleteBeforeXHR: Self = this.set("beforeXHR", js.undefined)
+    def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache(value: local | Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: ClassNameSettings): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDataType(value: xml | json | jsonp | script | html | text): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: xml | json | jsonp | script | html | text): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setDefaultData(value: Boolean): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setDefaultDataUndefined: Self = StObject.set(x, "defaultData", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setEncodeParameters(value: Boolean): Self = StObject.set(x, "encodeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultData(value: Boolean): Self = this.set("defaultData", value.asInstanceOf[js.Any])
+    def setEncodeParametersUndefined: Self = StObject.set(x, "encodeParameters", js.undefined)
     
     @scala.inline
-    def deleteDefaultData: Self = this.set("defaultData", js.undefined)
+    def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncodeParameters(value: Boolean): Self = this.set("encodeParameters", value.asInstanceOf[js.Any])
+    def setErrorDuration(value: `true` | Double): Self = StObject.set(x, "errorDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncodeParameters: Self = this.set("encodeParameters", js.undefined)
+    def setErrorDurationUndefined: Self = StObject.set(x, "errorDuration", js.undefined)
     
     @scala.inline
-    def setError(value: ErrorSettings): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setHideError(value: auto | Boolean): Self = StObject.set(x, "hideError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDuration(value: `true` | Double): Self = this.set("errorDuration", value.asInstanceOf[js.Any])
+    def setHideErrorUndefined: Self = StObject.set(x, "hideError", js.undefined)
     
     @scala.inline
-    def deleteErrorDuration: Self = this.set("errorDuration", js.undefined)
+    def setInterruptRequests(value: Boolean): Self = StObject.set(x, "interruptRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideError(value: auto | Boolean): Self = this.set("hideError", value.asInstanceOf[js.Any])
+    def setInterruptRequestsUndefined: Self = StObject.set(x, "interruptRequests", js.undefined)
     
     @scala.inline
-    def deleteHideError: Self = this.set("hideError", js.undefined)
+    def setLoadingDuration(value: Double): Self = StObject.set(x, "loadingDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterruptRequests(value: Boolean): Self = this.set("interruptRequests", value.asInstanceOf[js.Any])
+    def setLoadingDurationUndefined: Self = StObject.set(x, "loadingDuration", js.undefined)
     
     @scala.inline
-    def deleteInterruptRequests: Self = this.set("interruptRequests", js.undefined)
+    def setMetadata(value: MetadataSettings): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingDuration(value: Double): Self = this.set("loadingDuration", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteLoadingDuration: Self = this.set("loadingDuration", js.undefined)
+    def setMethod(value: post | get | put | delete | head | options | patch): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: MetadataSettings): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setMethod(value: post | get | put | delete | head | options | patch): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setMockResponse(value: js.Any | `false`): Self = this.set("mockResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMockResponse: Self = this.set("mockResponse", js.undefined)
-    
-    @scala.inline
-    def setMockResponseAsyncFunction2(
-      value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
-    ): Self = this.set("mockResponseAsync", js.Any.fromFunction2(value))
+    def setMockResponse(value: js.Any | `false`): Self = StObject.set(x, "mockResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMockResponseAsync(
@@ -292,93 +273,93 @@ object PartialPickImplkeyofImpl {
           /* callback */ js.Function1[/* response */ js.Any, Unit], 
           Unit
         ]) | `false`
-    ): Self = this.set("mockResponseAsync", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mockResponseAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMockResponseAsync: Self = this.set("mockResponseAsync", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
-    
-    @scala.inline
-    def setOn(value: String): Self = this.set("on", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOn: Self = this.set("on", js.undefined)
-    
-    @scala.inline
-    def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = this.set("onAbort", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
-    
-    @scala.inline
-    def setOnComplete(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = this.set("onComplete", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
-    
-    @scala.inline
-    def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = this.set("onError", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
-    
-    @scala.inline
-    def setOnFailure(value: (/* response */ js.Any, /* element */ JQuery) => Unit): Self = this.set("onFailure", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
-    
-    @scala.inline
-    def setOnRequest(value: (/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_]) => Unit): Self = this.set("onRequest", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnRequest: Self = this.set("onRequest", js.undefined)
-    
-    @scala.inline
-    def setOnResponse(value: /* response */ js.Any => Unit): Self = this.set("onResponse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnResponse: Self = this.set("onResponse", js.undefined)
-    
-    @scala.inline
-    def setOnSuccess(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = this.set("onSuccess", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
-    
-    @scala.inline
-    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
-    
-    @scala.inline
-    def setRegExp(value: RegExpSettings): Self = this.set("regExp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegExp: Self = this.set("regExp", js.undefined)
-    
-    @scala.inline
-    def setResponse(value: js.Any | `false`): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
-    
-    @scala.inline
-    def setResponseAsyncFunction2(
+    def setMockResponseAsyncFunction2(
       value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
-    ): Self = this.set("responseAsync", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "mockResponseAsync", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setMockResponseAsyncUndefined: Self = StObject.set(x, "mockResponseAsync", js.undefined)
+    
+    @scala.inline
+    def setMockResponseUndefined: Self = StObject.set(x, "mockResponse", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    @scala.inline
+    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    
+    @scala.inline
+    def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnAbort(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+    
+    @scala.inline
+    def setOnComplete(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    
+    @scala.inline
+    def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    @scala.inline
+    def setOnFailure(value: (/* response */ js.Any, /* element */ JQuery) => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    
+    @scala.inline
+    def setOnRequest(value: (/* promise */ Deferred[_, _, _], /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setOnRequestUndefined: Self = StObject.set(x, "onRequest", js.undefined)
+    
+    @scala.inline
+    def setOnResponse(value: /* response */ js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
+    
+    @scala.inline
+    def setOnSuccess(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[_]) => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    
+    @scala.inline
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    @scala.inline
+    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
+    
+    @scala.inline
+    def setRegExp(value: RegExpSettings): Self = StObject.set(x, "regExp", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRegExpUndefined: Self = StObject.set(x, "regExp", js.undefined)
+    
+    @scala.inline
+    def setResponse(value: js.Any | `false`): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResponseAsync(
@@ -387,69 +368,77 @@ object PartialPickImplkeyofImpl {
           /* callback */ js.Function1[/* response */ js.Any, Unit], 
           Unit
         ]) | `false`
-    ): Self = this.set("responseAsync", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "responseAsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseAsync: Self = this.set("responseAsync", js.undefined)
+    def setResponseAsyncFunction2(
+      value: (/* settings */ ApiSettings, /* callback */ js.Function1[/* response */ js.Any, Unit]) => Unit
+    ): Self = StObject.set(x, "responseAsync", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelector(value: SelectorSettings): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setResponseAsyncUndefined: Self = StObject.set(x, "responseAsync", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def setSerializeForm(value: Boolean): Self = this.set("serializeForm", value.asInstanceOf[js.Any])
+    def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSerializeForm: Self = this.set("serializeForm", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    def setSerializeForm(value: Boolean): Self = StObject.set(x, "serializeForm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSilent: Self = this.set("silent", js.undefined)
+    def setSerializeFormUndefined: Self = StObject.set(x, "serializeForm", js.undefined)
     
     @scala.inline
-    def setStateContext(value: String | JQuery): Self = this.set("stateContext", value.asInstanceOf[js.Any])
+    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStateContext: Self = this.set("stateContext", js.undefined)
+    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
     @scala.inline
-    def setSuccessTest(value: /* response */ js.Any => Boolean): Self = this.set("successTest", js.Any.fromFunction1(value))
+    def setStateContext(value: String | JQuery): Self = StObject.set(x, "stateContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSuccessTest: Self = this.set("successTest", js.undefined)
+    def setStateContextUndefined: Self = StObject.set(x, "stateContext", js.undefined)
     
     @scala.inline
-    def setThrottle(value: Double): Self = this.set("throttle", value.asInstanceOf[js.Any])
+    def setSuccessTest(value: /* response */ js.Any => Boolean): Self = StObject.set(x, "successTest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
+    def setSuccessTestUndefined: Self = StObject.set(x, "successTest", js.undefined)
     
     @scala.inline
-    def setThrottleFirstRequest(value: Boolean): Self = this.set("throttleFirstRequest", value.asInstanceOf[js.Any])
+    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThrottleFirstRequest: Self = this.set("throttleFirstRequest", js.undefined)
+    def setThrottleFirstRequest(value: Boolean): Self = StObject.set(x, "throttleFirstRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String | `false`): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setThrottleFirstRequestUndefined: Self = StObject.set(x, "throttleFirstRequest", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
     @scala.inline
-    def setUrlData(value: js.Any | `false`): Self = this.set("urlData", value.asInstanceOf[js.Any])
+    def setUrl(value: String | `false`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUrlData: Self = this.set("urlData", js.undefined)
+    def setUrlData(value: js.Any | `false`): Self = StObject.set(x, "urlData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    def setUrlDataUndefined: Self = StObject.set(x, "urlData", js.undefined)
     
     @scala.inline
-    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    @scala.inline
+    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

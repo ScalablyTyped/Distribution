@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesStatesOptionsObject extends js.Object {
+trait SeriesStatesOptionsObject extends StObject {
   
   /**
     * (Highstock) Options for the hovered series. These settings override the
@@ -40,42 +41,30 @@ object SeriesStatesOptionsObject {
   }
   
   @scala.inline
-  implicit class SeriesStatesOptionsObjectOps[Self <: SeriesStatesOptionsObject] (val x: Self) extends AnyVal {
+  implicit class SeriesStatesOptionsObjectMutableBuilder[Self <: SeriesStatesOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHover(value: SeriesStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInactive(value: SeriesStatesInactiveOptionsObject): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: SeriesStatesHoverOptionsObject): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setNormal(value: SeriesStatesNormalOptionsObject): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInactive(value: SeriesStatesInactiveOptionsObject): Self = this.set("inactive", value.asInstanceOf[js.Any])
+    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
     @scala.inline
-    def deleteInactive: Self = this.set("inactive", js.undefined)
+    def setSelect(value: SeriesStatesSelectOptionsObject): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: SeriesStatesNormalOptionsObject): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormal: Self = this.set("normal", js.undefined)
-    
-    @scala.inline
-    def setSelect(value: SeriesStatesSelectOptionsObject): Self = this.set("select", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

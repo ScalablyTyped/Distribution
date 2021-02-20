@@ -3,12 +3,13 @@ package typings.tuyaPanelKit.anon
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityLabel extends js.Object {
+trait AccessibilityLabel extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.native
   
@@ -39,84 +40,72 @@ object AccessibilityLabel {
   }
   
   @scala.inline
-  implicit class AccessibilityLabelOps[Self <: AccessibilityLabel] (val x: Self) extends AnyVal {
+  implicit class AccessibilityLabelMutableBuilder[Self <: AccessibilityLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setActiveStyleNull: Self = StObject.set(x, "activeStyle", null)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setActiveTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "activeTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setActiveTextStyleNull: Self = StObject.set(x, "activeTextStyle", null)
     
     @scala.inline
-    def setActiveStyle(value: StyleProp[ViewStyle]): Self = this.set("activeStyle", value.asInstanceOf[js.Any])
+    def setActiveTextStyleUndefined: Self = StObject.set(x, "activeTextStyle", js.undefined)
     
     @scala.inline
-    def deleteActiveStyle: Self = this.set("activeStyle", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveStyleNull: Self = this.set("activeStyle", null)
+    def setOnItemPress(value: () => Unit): Self = StObject.set(x, "onItemPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActiveTextStyle(value: StyleProp[TextStyle]): Self = this.set("activeTextStyle", value.asInstanceOf[js.Any])
+    def setOnItemPressUndefined: Self = StObject.set(x, "onItemPress", js.undefined)
     
     @scala.inline
-    def deleteActiveTextStyle: Self = this.set("activeTextStyle", js.undefined)
+    def setOnPress(value: /* index */ String => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveTextStyleNull: Self = this.set("activeTextStyle", null)
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def setOnItemPress(value: () => Unit): Self = this.set("onItemPress", js.Any.fromFunction0(value))
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnItemPress: Self = this.set("onItemPress", js.undefined)
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def setOnPress(value: /* index */ String => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setTextAccessibilityLabel(value: String): Self = StObject.set(x, "textAccessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTextAccessibilityLabelUndefined: Self = StObject.set(x, "textAccessibilityLabel", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
     @scala.inline
-    def setTextAccessibilityLabel(value: String): Self = this.set("textAccessibilityLabel", value.asInstanceOf[js.Any])
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
     @scala.inline
-    def deleteTextAccessibilityLabel: Self = this.set("textAccessibilityLabel", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: StyleProp[TextStyle]): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
-    
-    @scala.inline
-    def setTextStyleNull: Self = this.set("textStyle", null)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

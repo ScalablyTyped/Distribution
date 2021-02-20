@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientServicenetworking.anon.Alt
 import typings.maximMazurokGapiClientServicenetworking.anon.Key
 import typings.maximMazurokGapiClientServicenetworking.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PeeredDnsDomainsResource extends js.Object {
+trait PeeredDnsDomainsResource extends StObject {
   
   def create(request: Key, body: PeeredDnsDomain): Request[Operation] = js.native
   /** Creates a peered DNS domain which sends requests for records in given namespace originating in the service producer VPC network to the consumer VPC network to be resolved. */

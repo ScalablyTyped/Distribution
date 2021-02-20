@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsDynamoDbTableDetails extends js.Object {
+trait AwsDynamoDbTableDetails extends StObject {
   
   /**
     * A list of attribute definitions for the table.
@@ -111,147 +112,135 @@ object AwsDynamoDbTableDetails {
   }
   
   @scala.inline
-  implicit class AwsDynamoDbTableDetailsOps[Self <: AwsDynamoDbTableDetails] (val x: Self) extends AnyVal {
+  implicit class AwsDynamoDbTableDetailsMutableBuilder[Self <: AwsDynamoDbTableDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeDefinitions(value: AwsDynamoDbTableAttributeDefinitionList): Self = StObject.set(x, "AttributeDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeDefinitionsUndefined: Self = StObject.set(x, "AttributeDefinitions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeDefinitionsVarargs(value: AwsDynamoDbTableAttributeDefinition*): Self = StObject.set(x, "AttributeDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeDefinitionsVarargs(value: AwsDynamoDbTableAttributeDefinition*): Self = this.set("AttributeDefinitions", js.Array(value :_*))
+    def setBillingModeSummary(value: AwsDynamoDbTableBillingModeSummary): Self = StObject.set(x, "BillingModeSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeDefinitions(value: AwsDynamoDbTableAttributeDefinitionList): Self = this.set("AttributeDefinitions", value.asInstanceOf[js.Any])
+    def setBillingModeSummaryUndefined: Self = StObject.set(x, "BillingModeSummary", js.undefined)
     
     @scala.inline
-    def deleteAttributeDefinitions: Self = this.set("AttributeDefinitions", js.undefined)
+    def setCreationDateTime(value: NonEmptyString): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingModeSummary(value: AwsDynamoDbTableBillingModeSummary): Self = this.set("BillingModeSummary", value.asInstanceOf[js.Any])
+    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
     @scala.inline
-    def deleteBillingModeSummary: Self = this.set("BillingModeSummary", js.undefined)
+    def setGlobalSecondaryIndexes(value: AwsDynamoDbTableGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDateTime(value: NonEmptyString): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "GlobalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def deleteCreationDateTime: Self = this.set("CreationDateTime", js.undefined)
+    def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableGlobalSecondaryIndex*): Self = StObject.set(x, "GlobalSecondaryIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setGlobalSecondaryIndexesVarargs(value: AwsDynamoDbTableGlobalSecondaryIndex*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    def setGlobalTableVersion(value: NonEmptyString): Self = StObject.set(x, "GlobalTableVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalSecondaryIndexes(value: AwsDynamoDbTableGlobalSecondaryIndexList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setGlobalTableVersionUndefined: Self = StObject.set(x, "GlobalTableVersion", js.undefined)
     
     @scala.inline
-    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    def setItemCount(value: Integer): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalTableVersion(value: NonEmptyString): Self = this.set("GlobalTableVersion", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def deleteGlobalTableVersion: Self = this.set("GlobalTableVersion", js.undefined)
+    def setKeySchema(value: AwsDynamoDbTableKeySchemaList): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: Integer): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setKeySchemaVarargs(value: AwsDynamoDbTableKeySchema*): Self = this.set("KeySchema", js.Array(value :_*))
+    def setLatestStreamArn(value: NonEmptyString): Self = StObject.set(x, "LatestStreamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySchema(value: AwsDynamoDbTableKeySchemaList): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    def setLatestStreamArnUndefined: Self = StObject.set(x, "LatestStreamArn", js.undefined)
     
     @scala.inline
-    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    def setLatestStreamLabel(value: NonEmptyString): Self = StObject.set(x, "LatestStreamLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestStreamArn(value: NonEmptyString): Self = this.set("LatestStreamArn", value.asInstanceOf[js.Any])
+    def setLatestStreamLabelUndefined: Self = StObject.set(x, "LatestStreamLabel", js.undefined)
     
     @scala.inline
-    def deleteLatestStreamArn: Self = this.set("LatestStreamArn", js.undefined)
+    def setLocalSecondaryIndexes(value: AwsDynamoDbTableLocalSecondaryIndexList): Self = StObject.set(x, "LocalSecondaryIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestStreamLabel(value: NonEmptyString): Self = this.set("LatestStreamLabel", value.asInstanceOf[js.Any])
+    def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "LocalSecondaryIndexes", js.undefined)
     
     @scala.inline
-    def deleteLatestStreamLabel: Self = this.set("LatestStreamLabel", js.undefined)
+    def setLocalSecondaryIndexesVarargs(value: AwsDynamoDbTableLocalSecondaryIndex*): Self = StObject.set(x, "LocalSecondaryIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setLocalSecondaryIndexesVarargs(value: AwsDynamoDbTableLocalSecondaryIndex*): Self = this.set("LocalSecondaryIndexes", js.Array(value :_*))
+    def setProvisionedThroughput(value: AwsDynamoDbTableProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSecondaryIndexes(value: AwsDynamoDbTableLocalSecondaryIndexList): Self = this.set("LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+    def setProvisionedThroughputUndefined: Self = StObject.set(x, "ProvisionedThroughput", js.undefined)
     
     @scala.inline
-    def deleteLocalSecondaryIndexes: Self = this.set("LocalSecondaryIndexes", js.undefined)
+    def setReplicas(value: AwsDynamoDbTableReplicaList): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedThroughput(value: AwsDynamoDbTableProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    def setReplicasUndefined: Self = StObject.set(x, "Replicas", js.undefined)
     
     @scala.inline
-    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+    def setReplicasVarargs(value: AwsDynamoDbTableReplica*): Self = StObject.set(x, "Replicas", js.Array(value :_*))
     
     @scala.inline
-    def setReplicasVarargs(value: AwsDynamoDbTableReplica*): Self = this.set("Replicas", js.Array(value :_*))
+    def setRestoreSummary(value: AwsDynamoDbTableRestoreSummary): Self = StObject.set(x, "RestoreSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: AwsDynamoDbTableReplicaList): Self = this.set("Replicas", value.asInstanceOf[js.Any])
+    def setRestoreSummaryUndefined: Self = StObject.set(x, "RestoreSummary", js.undefined)
     
     @scala.inline
-    def deleteReplicas: Self = this.set("Replicas", js.undefined)
+    def setSseDescription(value: AwsDynamoDbTableSseDescription): Self = StObject.set(x, "SseDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestoreSummary(value: AwsDynamoDbTableRestoreSummary): Self = this.set("RestoreSummary", value.asInstanceOf[js.Any])
+    def setSseDescriptionUndefined: Self = StObject.set(x, "SseDescription", js.undefined)
     
     @scala.inline
-    def deleteRestoreSummary: Self = this.set("RestoreSummary", js.undefined)
+    def setStreamSpecification(value: AwsDynamoDbTableStreamSpecification): Self = StObject.set(x, "StreamSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSseDescription(value: AwsDynamoDbTableSseDescription): Self = this.set("SseDescription", value.asInstanceOf[js.Any])
+    def setStreamSpecificationUndefined: Self = StObject.set(x, "StreamSpecification", js.undefined)
     
     @scala.inline
-    def deleteSseDescription: Self = this.set("SseDescription", js.undefined)
+    def setTableId(value: NonEmptyString): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamSpecification(value: AwsDynamoDbTableStreamSpecification): Self = this.set("StreamSpecification", value.asInstanceOf[js.Any])
+    def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
     
     @scala.inline
-    def deleteStreamSpecification: Self = this.set("StreamSpecification", js.undefined)
+    def setTableName(value: NonEmptyString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableId(value: NonEmptyString): Self = this.set("TableId", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteTableId: Self = this.set("TableId", js.undefined)
+    def setTableSizeBytes(value: SizeBytes): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: NonEmptyString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setTableStatus(value: NonEmptyString): Self = StObject.set(x, "TableStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableSizeBytes(value: SizeBytes): Self = this.set("TableSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableSizeBytes: Self = this.set("TableSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setTableStatus(value: NonEmptyString): Self = this.set("TableStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableStatus: Self = this.set("TableStatus", js.undefined)
+    def setTableStatusUndefined: Self = StObject.set(x, "TableStatus", js.undefined)
   }
 }

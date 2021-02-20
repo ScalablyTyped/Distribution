@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionProto extends js.Object {
+trait RegionProto extends StObject {
   
   /** The height, in pixels. Always set. */
   var heightPx: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object RegionProto {
   }
   
   @scala.inline
-  implicit class RegionProtoOps[Self <: RegionProto] (val x: Self) extends AnyVal {
+  implicit class RegionProtoMutableBuilder[Self <: RegionProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeightPx(value: Double): Self = StObject.set(x, "heightPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightPxUndefined: Self = StObject.set(x, "heightPx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftPx(value: Double): Self = StObject.set(x, "leftPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeightPx(value: Double): Self = this.set("heightPx", value.asInstanceOf[js.Any])
+    def setLeftPxUndefined: Self = StObject.set(x, "leftPx", js.undefined)
     
     @scala.inline
-    def deleteHeightPx: Self = this.set("heightPx", js.undefined)
+    def setTopPx(value: Double): Self = StObject.set(x, "topPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftPx(value: Double): Self = this.set("leftPx", value.asInstanceOf[js.Any])
+    def setTopPxUndefined: Self = StObject.set(x, "topPx", js.undefined)
     
     @scala.inline
-    def deleteLeftPx: Self = this.set("leftPx", js.undefined)
+    def setWidthPx(value: Double): Self = StObject.set(x, "widthPx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopPx(value: Double): Self = this.set("topPx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopPx: Self = this.set("topPx", js.undefined)
-    
-    @scala.inline
-    def setWidthPx(value: Double): Self = this.set("widthPx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidthPx: Self = this.set("widthPx", js.undefined)
+    def setWidthPxUndefined: Self = StObject.set(x, "widthPx", js.undefined)
   }
 }

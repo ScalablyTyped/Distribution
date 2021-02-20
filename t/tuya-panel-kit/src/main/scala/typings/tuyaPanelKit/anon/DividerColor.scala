@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DividerColor extends js.Object {
+trait DividerColor extends StObject {
   
   var dividerColor: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object DividerColor {
   }
   
   @scala.inline
-  implicit class DividerColorOps[Self <: DividerColor] (val x: Self) extends AnyVal {
+  implicit class DividerColorMutableBuilder[Self <: DividerColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDividerColorUndefined: Self = StObject.set(x, "dividerColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDividerColor(value: String): Self = this.set("dividerColor", value.asInstanceOf[js.Any])
+    def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
     
     @scala.inline
-    def deleteDividerColor: Self = this.set("dividerColor", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontColor(value: String): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    def setUnitFontColor(value: String): Self = StObject.set(x, "unitFontColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setUnitFontColorUndefined: Self = StObject.set(x, "unitFontColor", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setUnitFontSize(value: Double): Self = StObject.set(x, "unitFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitFontColor(value: String): Self = this.set("unitFontColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitFontColor: Self = this.set("unitFontColor", js.undefined)
-    
-    @scala.inline
-    def setUnitFontSize(value: Double): Self = this.set("unitFontSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitFontSize: Self = this.set("unitFontSize", js.undefined)
+    def setUnitFontSizeUndefined: Self = StObject.set(x, "unitFontSize", js.undefined)
   }
 }

@@ -5,16 +5,14 @@ import typings.useResizeObserver.mod.DefaultsWithResizeHandler
 import typings.useResizeObserver.mod.DefaultsWithoutResizeHandler
 import typings.useResizeObserver.mod.ObserverResultForResizeHandler
 import typings.useResizeObserver.mod.ObserverResultWithSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-resize-observer/polyfilled", JSImport.Namespace)
-@js.native
-object polyfilledMod extends js.Object {
+object polyfilledMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /***
       * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
@@ -23,6 +21,8 @@ object polyfilledMod extends js.Object {
       *         and ref.current's width (undefined before the first measurement),
       *         and ref.current's height (undefined before the first measurement).
       */
+    @JSImport("use-resize-observer/polyfilled", JSImport.Default)
+    @js.native
     def apply(): ObserverResultWithSize[HTMLElement] = js.native
     /***
       * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
@@ -32,6 +32,8 @@ object polyfilledMod extends js.Object {
       * @return a ref (optionally pass in your own)
       *         The callback function will be called with new ref.current's width and height as a parameter.
       */
+    @JSImport("use-resize-observer/polyfilled", JSImport.Default)
+    @js.native
     def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithResizeHandler[TElement]): ObserverResultForResizeHandler[TElement] = js.native
     /***
       * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
@@ -40,6 +42,8 @@ object polyfilledMod extends js.Object {
       *         and ref.current's width (undefined before the first measurement),
       *         and ref.current's height (undefined before the first measurement).
       */
+    @JSImport("use-resize-observer/polyfilled", JSImport.Default)
+    @js.native
     def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithoutResizeHandler[TElement]): ObserverResultWithSize[TElement] = js.native
   }
 }

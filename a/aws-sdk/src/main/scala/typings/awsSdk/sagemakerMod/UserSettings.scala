@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserSettings extends js.Object {
+trait UserSettings extends StObject {
   
   /**
     * The execution role for the user.
@@ -46,57 +47,45 @@ object UserSettings {
   }
   
   @scala.inline
-  implicit class UserSettingsOps[Self <: UserSettings] (val x: Self) extends AnyVal {
+  implicit class UserSettingsMutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionRole(value: RoleArn): Self = StObject.set(x, "ExecutionRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionRoleUndefined: Self = StObject.set(x, "ExecutionRole", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJupyterServerAppSettings(value: JupyterServerAppSettings): Self = StObject.set(x, "JupyterServerAppSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRole(value: RoleArn): Self = this.set("ExecutionRole", value.asInstanceOf[js.Any])
+    def setJupyterServerAppSettingsUndefined: Self = StObject.set(x, "JupyterServerAppSettings", js.undefined)
     
     @scala.inline
-    def deleteExecutionRole: Self = this.set("ExecutionRole", js.undefined)
+    def setKernelGatewayAppSettings(value: KernelGatewayAppSettings): Self = StObject.set(x, "KernelGatewayAppSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJupyterServerAppSettings(value: JupyterServerAppSettings): Self = this.set("JupyterServerAppSettings", value.asInstanceOf[js.Any])
+    def setKernelGatewayAppSettingsUndefined: Self = StObject.set(x, "KernelGatewayAppSettings", js.undefined)
     
     @scala.inline
-    def deleteJupyterServerAppSettings: Self = this.set("JupyterServerAppSettings", js.undefined)
+    def setSecurityGroups(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKernelGatewayAppSettings(value: KernelGatewayAppSettings): Self = this.set("KernelGatewayAppSettings", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteKernelGatewayAppSettings: Self = this.set("KernelGatewayAppSettings", js.undefined)
+    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    def setSharingSettings(value: SharingSettings): Self = StObject.set(x, "SharingSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroups(value: SecurityGroupIds): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    def setSharingSettingsUndefined: Self = StObject.set(x, "SharingSettings", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setTensorBoardAppSettings(value: TensorBoardAppSettings): Self = StObject.set(x, "TensorBoardAppSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingSettings(value: SharingSettings): Self = this.set("SharingSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharingSettings: Self = this.set("SharingSettings", js.undefined)
-    
-    @scala.inline
-    def setTensorBoardAppSettings(value: TensorBoardAppSettings): Self = this.set("TensorBoardAppSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTensorBoardAppSettings: Self = this.set("TensorBoardAppSettings", js.undefined)
+    def setTensorBoardAppSettingsUndefined: Self = StObject.set(x, "TensorBoardAppSettings", js.undefined)
   }
 }

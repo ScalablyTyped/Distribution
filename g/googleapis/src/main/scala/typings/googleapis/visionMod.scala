@@ -1,8 +1,9 @@
 package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
+import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1p1beta1
 import typings.googleapis.googleapisStrings.v1p2beta1
@@ -11,74 +12,89 @@ import typings.googleapis.visionV1Mod.visionV1.Vision
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis/build/src/apis/vision", JSImport.Namespace)
-@js.native
-object visionMod extends js.Object {
+object visionMod {
   
-  def vision(options: Options): Vision = js.native
-  def vision(options: typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Options): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = js.native
-  def vision(options: typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Options): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = js.native
-  @JSName("vision")
-  def vision_v1(version: v1): Vision = js.native
-  @JSName("vision")
-  def vision_v1p1beta1(version: v1p1beta1): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = js.native
-  @JSName("vision")
-  def vision_v1p2beta1(version: v1p2beta1): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = js.native
-  
-  @js.native
-  object VERSIONS extends js.Object {
+  object VERSIONS {
     
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1")
     @js.native
     class v1 protected () extends Vision {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1")
     @js.native
-    object v1
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vision]
-            ]
+    def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vision] = js.native
+    @scala.inline
+    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vision]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1p1beta1")
     @js.native
     class v1p1beta1 protected ()
       extends typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1p1beta1")
     @js.native
-    object v1p1beta1
-      extends TopLevel[
-              Instantiable2[
-                /* options */ GlobalOptions, 
-                /* google */ js.UndefOr[GoogleConfigurable], 
-                typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision
-              ]
-            ]
+    def v1p1beta1: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision
+      ] = js.native
+    @scala.inline
+    def v1p1beta1_=(
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1p1beta1")(x.asInstanceOf[js.Any])
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1p2beta1")
     @js.native
     class v1p2beta1 protected ()
       extends typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/vision", "VERSIONS.v1p2beta1")
     @js.native
-    object v1p2beta1
-      extends TopLevel[
-              Instantiable2[
-                /* options */ GlobalOptions, 
-                /* google */ js.UndefOr[GoogleConfigurable], 
-                typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision
-              ]
-            ]
+    def v1p2beta1: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision
+      ] = js.native
+    @scala.inline
+    def v1p2beta1_=(
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1p2beta1")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object auth extends TopLevel[AuthPlus] {
+  object auth extends Shortcut {
     
+    @JSImport("googleapis/build/src/apis/vision", "auth")
+    @js.native
+    val ^ : AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "auth.Compute")
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -89,6 +105,24 @@ object visionMod extends js.Object {
     class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
+    /**
+      * Export DefaultTransporter as a static property of the class.
+      */
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "auth.DefaultTransporter")
+    @js.native
+    class DefaultTransporter ()
+      extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+    /* static members */
+    object DefaultTransporter {
+      
+      @JSImport("googleapis/build/src/apis/vision", "auth.DefaultTransporter.constructor")
+      @js.native
+      def constructor(): js.Any = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "auth.JWT")
     @js.native
     class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
@@ -106,5 +140,44 @@ object visionMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/vision", "auth.OAuth2")
+    @js.native
+    /**
+      * Handles OAuth2 flow for Google APIs.
+      *
+      * @param clientId The authentication client ID.
+      * @param clientSecret The authentication client secret.
+      * @param redirectUri The URI to redirect to after completing the auth
+      * request.
+      * @param opts optional options for overriding the given parameters.
+      * @constructor
+      */
+    class OAuth2 () extends OAuth2Client
+    
+    type _To = AuthPlus
+    
+    /* This means you don't have to write `^`, but can instead just say `auth.foo` */
+    override def _to: AuthPlus = ^
   }
+  
+  @JSImport("googleapis/build/src/apis/vision", "vision")
+  @js.native
+  def vision(options: Options): Vision = js.native
+  @JSImport("googleapis/build/src/apis/vision", "vision")
+  @js.native
+  def vision(options: typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Options): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = js.native
+  @JSImport("googleapis/build/src/apis/vision", "vision")
+  @js.native
+  def vision(options: typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Options): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = js.native
+  @JSImport("googleapis/build/src/apis/vision", "vision")
+  @js.native
+  def vision_v1(version: v1): Vision = js.native
+  @JSImport("googleapis/build/src/apis/vision", "vision")
+  @js.native
+  def vision_v1p1beta1(version: v1p1beta1): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = js.native
+  @JSImport("googleapis/build/src/apis/vision", "vision")
+  @js.native
+  def vision_v1p2beta1(version: v1p2beta1): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = js.native
 }

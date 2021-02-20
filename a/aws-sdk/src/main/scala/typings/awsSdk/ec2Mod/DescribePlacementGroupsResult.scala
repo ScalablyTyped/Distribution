@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribePlacementGroupsResult extends js.Object {
+trait DescribePlacementGroupsResult extends StObject {
   
   /**
     * Information about the placement groups.
@@ -21,27 +22,15 @@ object DescribePlacementGroupsResult {
   }
   
   @scala.inline
-  implicit class DescribePlacementGroupsResultOps[Self <: DescribePlacementGroupsResult] (val x: Self) extends AnyVal {
+  implicit class DescribePlacementGroupsResultMutableBuilder[Self <: DescribePlacementGroupsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlacementGroups(value: PlacementGroupList): Self = StObject.set(x, "PlacementGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlacementGroupsUndefined: Self = StObject.set(x, "PlacementGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlacementGroupsVarargs(value: PlacementGroup*): Self = this.set("PlacementGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlacementGroups(value: PlacementGroupList): Self = this.set("PlacementGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacementGroups: Self = this.set("PlacementGroups", js.undefined)
+    def setPlacementGroupsVarargs(value: PlacementGroup*): Self = StObject.set(x, "PlacementGroups", js.Array(value :_*))
   }
 }

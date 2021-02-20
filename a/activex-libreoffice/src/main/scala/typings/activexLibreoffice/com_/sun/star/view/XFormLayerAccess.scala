@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.awt.XControl
 import typings.activexLibreoffice.com_.sun.star.awt.XControlModel
 import typings.activexLibreoffice.com_.sun.star.form.XForm
 import typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,27 +62,15 @@ object XFormLayerAccess {
   }
   
   @scala.inline
-  implicit class XFormLayerAccessOps[Self <: XFormLayerAccess] (val x: Self) extends AnyVal {
+  implicit class XFormLayerAccessMutableBuilder[Self <: XFormLayerAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFormController(value: XForm => XFormController): Self = StObject.set(x, "getFormController", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFormDesignMode(value: () => Boolean): Self = StObject.set(x, "isFormDesignMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetFormController(value: XForm => XFormController): Self = this.set("getFormController", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsFormDesignMode(value: () => Boolean): Self = this.set("isFormDesignMode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFormDesignMode(value: Boolean => Unit): Self = this.set("setFormDesignMode", js.Any.fromFunction1(value))
+    def setSetFormDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setFormDesignMode", js.Any.fromFunction1(value))
   }
 }

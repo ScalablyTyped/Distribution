@@ -1,6 +1,7 @@
 package typings.dashjs.mod
 
 import typings.dashjs.dashjsStrings.playbackStarted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object PlaybackStartedEvent {
   }
   
   @scala.inline
-  implicit class PlaybackStartedEventOps[Self <: PlaybackStartedEvent] (val x: Self) extends AnyVal {
+  implicit class PlaybackStartedEventMutableBuilder[Self <: PlaybackStartedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: playbackStarted): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Double): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTimeNull: Self = this.set("startTime", null)
+    def setType(value: playbackStarted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

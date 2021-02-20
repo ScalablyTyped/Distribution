@@ -2,12 +2,13 @@ package typings.vscodeLanguageclient.clientMod
 
 import typings.std.Error
 import typings.vscodeJsonrpc.messagesMod.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorHandler extends js.Object {
+trait ErrorHandler extends StObject {
   
   /**
     * The connection to the server got closed.
@@ -33,24 +34,12 @@ object ErrorHandler {
   }
   
   @scala.inline
-  implicit class ErrorHandlerOps[Self <: ErrorHandler] (val x: Self) extends AnyVal {
+  implicit class ErrorHandlerMutableBuilder[Self <: ErrorHandler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosed(value: () => CloseAction): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClosed(value: () => CloseAction): Self = this.set("closed", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setError(value: (Error, Message, Double) => ErrorAction): Self = this.set("error", js.Any.fromFunction3(value))
+    def setError(value: (Error, Message, Double) => ErrorAction): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
   }
 }

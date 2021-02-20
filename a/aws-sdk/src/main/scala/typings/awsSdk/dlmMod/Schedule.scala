@@ -1,11 +1,12 @@
 package typings.awsSdk.dlmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schedule extends js.Object {
+trait Schedule extends StObject {
   
   /**
     * Copy all user-defined tags on a source volume to snapshots of the volume created by this policy.
@@ -56,75 +57,63 @@ object Schedule {
   }
   
   @scala.inline
-  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyTags(value: CopyTags): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyTagsUndefined: Self = StObject.set(x, "CopyTags", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateRule(value: CreateRule): Self = StObject.set(x, "CreateRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTags(value: CopyTags): Self = this.set("CopyTags", value.asInstanceOf[js.Any])
+    def setCreateRuleUndefined: Self = StObject.set(x, "CreateRule", js.undefined)
     
     @scala.inline
-    def deleteCopyTags: Self = this.set("CopyTags", js.undefined)
+    def setCrossRegionCopyRules(value: CrossRegionCopyRules): Self = StObject.set(x, "CrossRegionCopyRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateRule(value: CreateRule): Self = this.set("CreateRule", value.asInstanceOf[js.Any])
+    def setCrossRegionCopyRulesUndefined: Self = StObject.set(x, "CrossRegionCopyRules", js.undefined)
     
     @scala.inline
-    def deleteCreateRule: Self = this.set("CreateRule", js.undefined)
+    def setCrossRegionCopyRulesVarargs(value: CrossRegionCopyRule*): Self = StObject.set(x, "CrossRegionCopyRules", js.Array(value :_*))
     
     @scala.inline
-    def setCrossRegionCopyRulesVarargs(value: CrossRegionCopyRule*): Self = this.set("CrossRegionCopyRules", js.Array(value :_*))
+    def setFastRestoreRule(value: FastRestoreRule): Self = StObject.set(x, "FastRestoreRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossRegionCopyRules(value: CrossRegionCopyRules): Self = this.set("CrossRegionCopyRules", value.asInstanceOf[js.Any])
+    def setFastRestoreRuleUndefined: Self = StObject.set(x, "FastRestoreRule", js.undefined)
     
     @scala.inline
-    def deleteCrossRegionCopyRules: Self = this.set("CrossRegionCopyRules", js.undefined)
+    def setName(value: ScheduleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFastRestoreRule(value: FastRestoreRule): Self = this.set("FastRestoreRule", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteFastRestoreRule: Self = this.set("FastRestoreRule", js.undefined)
+    def setRetainRule(value: RetainRule): Self = StObject.set(x, "RetainRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ScheduleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRetainRuleUndefined: Self = StObject.set(x, "RetainRule", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setTagsToAdd(value: TagsToAddList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetainRule(value: RetainRule): Self = this.set("RetainRule", value.asInstanceOf[js.Any])
+    def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
     @scala.inline
-    def deleteRetainRule: Self = this.set("RetainRule", js.undefined)
+    def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setTagsToAddVarargs(value: Tag*): Self = this.set("TagsToAdd", js.Array(value :_*))
+    def setVariableTags(value: VariableTagsList): Self = StObject.set(x, "VariableTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsToAdd(value: TagsToAddList): Self = this.set("TagsToAdd", value.asInstanceOf[js.Any])
+    def setVariableTagsUndefined: Self = StObject.set(x, "VariableTags", js.undefined)
     
     @scala.inline
-    def deleteTagsToAdd: Self = this.set("TagsToAdd", js.undefined)
-    
-    @scala.inline
-    def setVariableTagsVarargs(value: Tag*): Self = this.set("VariableTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariableTags(value: VariableTagsList): Self = this.set("VariableTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableTags: Self = this.set("VariableTags", js.undefined)
+    def setVariableTagsVarargs(value: Tag*): Self = StObject.set(x, "VariableTags", js.Array(value :_*))
   }
 }

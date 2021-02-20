@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking
 */
-trait OnBeforeSendHeadersOptions extends js.Object
+trait OnBeforeSendHeadersOptions extends StObject
 object OnBeforeSendHeadersOptions {
   
   @scala.inline

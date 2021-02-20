@@ -2,6 +2,7 @@ package typings.titanium.Titanium
 
 import typings.titanium.ReadCallbackArgs
 import typings.titanium.WriteCallbackArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

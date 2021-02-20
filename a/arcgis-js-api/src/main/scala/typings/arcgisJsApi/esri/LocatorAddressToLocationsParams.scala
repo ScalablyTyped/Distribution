@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,81 +94,69 @@ object LocatorAddressToLocationsParams {
   }
   
   @scala.inline
-  implicit class LocatorAddressToLocationsParamsOps[Self <: LocatorAddressToLocationsParams] (val x: Self) extends AnyVal {
+  implicit class LocatorAddressToLocationsParamsMutableBuilder[Self <: LocatorAddressToLocationsParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: js.Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def setAddress(value: js.Any): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    def setForStorageUndefined: Self = StObject.set(x, "forStorage", js.undefined)
     
     @scala.inline
-    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForStorage(value: Boolean): Self = this.set("forStorage", value.asInstanceOf[js.Any])
+    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForStorage: Self = this.set("forStorage", js.undefined)
+    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
     @scala.inline
-    def setLocation(value: Point): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMagicKey(value: String): Self = StObject.set(x, "magicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    def setMagicKeyUndefined: Self = StObject.set(x, "magicKey", js.undefined)
     
     @scala.inline
-    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    def setMaxLocations(value: Double): Self = StObject.set(x, "maxLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagicKey(value: String): Self = this.set("magicKey", value.asInstanceOf[js.Any])
+    def setMaxLocationsUndefined: Self = StObject.set(x, "maxLocations", js.undefined)
     
     @scala.inline
-    def deleteMagicKey: Self = this.set("magicKey", js.undefined)
+    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLocations(value: Double): Self = this.set("maxLocations", value.asInstanceOf[js.Any])
+    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
     @scala.inline
-    def deleteMaxLocations: Self = this.set("maxLocations", js.undefined)
+    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
     @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = this.set("outFields", js.Array(value :_*))
+    def setSearchExtent(value: Extent): Self = StObject.set(x, "searchExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFields(value: js.Array[String]): Self = this.set("outFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutFields: Self = this.set("outFields", js.undefined)
-    
-    @scala.inline
-    def setSearchExtent(value: Extent): Self = this.set("searchExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchExtent: Self = this.set("searchExtent", js.undefined)
+    def setSearchExtentUndefined: Self = StObject.set(x, "searchExtent", js.undefined)
   }
 }

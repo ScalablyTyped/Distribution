@@ -8,13 +8,14 @@ import typings.reactNativeElements.reactNativeElementsStrings.custom
 import typings.reactNativeElements.reactNativeElementsStrings.heart
 import typings.reactNativeElements.reactNativeElementsStrings.rocket
 import typings.reactNativeElements.reactNativeElementsStrings.star
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-ratings.react-native-ratings.RatingProps>> */
 @js.native
-trait RecursivePartialPartialRa extends js.Object {
+trait RecursivePartialPartialRa extends StObject {
   
   var fractions: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
   
@@ -57,114 +58,102 @@ object RecursivePartialPartialRa {
   }
   
   @scala.inline
-  implicit class RecursivePartialPartialRaOps[Self <: RecursivePartialPartialRa] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialPartialRaMutableBuilder[Self <: RecursivePartialPartialRa] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFractions(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "fractions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFractionsUndefined: Self = StObject.set(x, "fractions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageSize(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFractions(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("fractions", value.asInstanceOf[js.Any])
+    def setImageSizeUndefined: Self = StObject.set(x, "imageSize", js.undefined)
     
     @scala.inline
-    def deleteFractions: Self = this.set("fractions", js.undefined)
+    def setMinValue(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSize(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("imageSize", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     @scala.inline
-    def deleteImageSize: Self = this.set("imageSize", js.undefined)
+    def setOnFinishRating(value: RecursivePartial[js.UndefOr[js.Function1[/* rating */ Double, Unit]]]): Self = StObject.set(x, "onFinishRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    def setOnFinishRatingUndefined: Self = StObject.set(x, "onFinishRating", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    def setOnStartRating(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = StObject.set(x, "onStartRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnFinishRating(value: RecursivePartial[js.UndefOr[js.Function1[/* rating */ Double, Unit]]]): Self = this.set("onFinishRating", value.asInstanceOf[js.Any])
+    def setOnStartRatingUndefined: Self = StObject.set(x, "onStartRating", js.undefined)
     
     @scala.inline
-    def deleteOnFinishRating: Self = this.set("onFinishRating", js.undefined)
+    def setRatingBackgroundColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "ratingBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnStartRating(value: RecursivePartial[js.UndefOr[js.Function0[Unit]]]): Self = this.set("onStartRating", value.asInstanceOf[js.Any])
+    def setRatingBackgroundColorUndefined: Self = StObject.set(x, "ratingBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteOnStartRating: Self = this.set("onStartRating", js.undefined)
+    def setRatingColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "ratingColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingBackgroundColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("ratingBackgroundColor", value.asInstanceOf[js.Any])
+    def setRatingColorUndefined: Self = StObject.set(x, "ratingColor", js.undefined)
     
     @scala.inline
-    def deleteRatingBackgroundColor: Self = this.set("ratingBackgroundColor", js.undefined)
+    def setRatingCount(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "ratingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("ratingColor", value.asInstanceOf[js.Any])
+    def setRatingCountUndefined: Self = StObject.set(x, "ratingCount", js.undefined)
     
     @scala.inline
-    def deleteRatingColor: Self = this.set("ratingColor", js.undefined)
+    def setRatingImage(value: RecursivePartial[js.UndefOr[ImageURISource]]): Self = StObject.set(x, "ratingImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingCount(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("ratingCount", value.asInstanceOf[js.Any])
+    def setRatingImageUndefined: Self = StObject.set(x, "ratingImage", js.undefined)
     
     @scala.inline
-    def deleteRatingCount: Self = this.set("ratingCount", js.undefined)
+    def setRatingTextColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "ratingTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingImage(value: RecursivePartial[js.UndefOr[ImageURISource]]): Self = this.set("ratingImage", value.asInstanceOf[js.Any])
+    def setRatingTextColorUndefined: Self = StObject.set(x, "ratingTextColor", js.undefined)
     
     @scala.inline
-    def deleteRatingImage: Self = this.set("ratingImage", js.undefined)
+    def setReadonly(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingTextColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("ratingTextColor", value.asInstanceOf[js.Any])
+    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def deleteRatingTextColor: Self = this.set("ratingTextColor", js.undefined)
+    def setShowRating(value: RecursivePartial[js.UndefOr[Boolean]]): Self = StObject.set(x, "showRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setShowRatingUndefined: Self = StObject.set(x, "showRating", js.undefined)
     
     @scala.inline
-    def deleteReadonly: Self = this.set("readonly", js.undefined)
+    def setStartingValue(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "startingValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRating(value: RecursivePartial[js.UndefOr[Boolean]]): Self = this.set("showRating", value.asInstanceOf[js.Any])
+    def setStartingValueUndefined: Self = StObject.set(x, "startingValue", js.undefined)
     
     @scala.inline
-    def deleteShowRating: Self = this.set("showRating", js.undefined)
+    def setStyle(value: RecursivePartial[js.UndefOr[Requireable[js.Object]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartingValue(value: RecursivePartial[js.UndefOr[Double]]): Self = this.set("startingValue", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStartingValue: Self = this.set("startingValue", js.undefined)
+    def setTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: RecursivePartial[js.UndefOr[Requireable[js.Object]]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setType(value: RecursivePartial[js.UndefOr[star | rocket | bell | heart | custom]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: RecursivePartial[js.UndefOr[String]]): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
-    
-    @scala.inline
-    def setType(value: RecursivePartial[js.UndefOr[star | rocket | bell | heart | custom]]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

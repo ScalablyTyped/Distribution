@@ -3,6 +3,7 @@ package typings.awsSdk.browserDefaultMod
 import typings.awsSdk.rdsMod.ClientConfiguration
 import typings.awsSdk.rdsMod.^
 import typings.awsSdk.rdsSignerMod.Signer.SignerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RDS () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-@JSImport("aws-sdk/clients/browser_default", "RDS")
-@js.native
-object RDS extends js.Object {
+object RDS {
   
+  @JSImport("aws-sdk/clients/browser_default", "RDS.Signer")
   @js.native
   /**
     * A signer object can be used to generate an auth token to a database.

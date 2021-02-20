@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WwanNetworkRegistrationState extends js.Object
+sealed trait WwanNetworkRegistrationState extends StObject
 /** Defines the network registration states for a WWAN connection. */
 @JSGlobal("Windows.Networking.Connectivity.WwanNetworkRegistrationState")
 @js.native
-object WwanNetworkRegistrationState extends js.Object {
+object WwanNetworkRegistrationState extends StObject {
   
   /** Registration of the connection with all available networks is denied. However, emergency voice calls may still be made. This value applies only to voice connections, and not to data connections. */
   @js.native

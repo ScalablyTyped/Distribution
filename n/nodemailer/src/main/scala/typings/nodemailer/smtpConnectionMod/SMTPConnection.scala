@@ -12,6 +12,7 @@ import typings.nodemailer.nodemailerStrings.error
 import typings.nodemailer.nodemailerStrings.init
 import typings.nodemailer.sharedMod.Logger
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
 import typings.bingmaps.Microsoft.Maps.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDirectionsStep extends js.Object {
+trait IDirectionsStep extends StObject {
   
   /** The child direction items for this directions step. */
   var childItineraryItems: js.Array[IDirectionsStep] = js.native
@@ -78,75 +79,63 @@ object IDirectionsStep {
   }
   
   @scala.inline
-  implicit class IDirectionsStepOps[Self <: IDirectionsStep] (val x: Self) extends AnyVal {
+  implicit class IDirectionsStepMutableBuilder[Self <: IDirectionsStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildItineraryItems(value: js.Array[IDirectionsStep]): Self = StObject.set(x, "childItineraryItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildItineraryItemsVarargs(value: IDirectionsStep*): Self = StObject.set(x, "childItineraryItems", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoordinate(value: Location): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildItineraryItemsVarargs(value: IDirectionsStep*): Self = this.set("childItineraryItems", js.Array(value :_*))
+    def setDistance(value: String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildItineraryItems(value: js.Array[IDirectionsStep]): Self = this.set("childItineraryItems", value.asInstanceOf[js.Any])
+    def setDurationInSeconds(value: Double): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinate(value: Location): Self = this.set("coordinate", value.asInstanceOf[js.Any])
+    def setFormattedText(value: String): Self = StObject.set(x, "formattedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: String): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setIsImageRoadShield(value: Boolean): Self = StObject.set(x, "isImageRoadShield", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInSeconds(value: Double): Self = this.set("durationInSeconds", value.asInstanceOf[js.Any])
+    def setManeuver(value: String): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormattedText(value: String): Self = this.set("formattedText", value.asInstanceOf[js.Any])
+    def setPostIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "postIntersectionHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsImageRoadShield(value: Boolean): Self = this.set("isImageRoadShield", value.asInstanceOf[js.Any])
+    def setPostIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "postIntersectionHints", js.Array(value :_*))
     
     @scala.inline
-    def setManeuver(value: String): Self = this.set("maneuver", value.asInstanceOf[js.Any])
+    def setPreIntersectionHints(value: js.Array[String]): Self = StObject.set(x, "preIntersectionHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostIntersectionHintsVarargs(value: String*): Self = this.set("postIntersectionHints", js.Array(value :_*))
+    def setPreIntersectionHintsVarargs(value: String*): Self = StObject.set(x, "preIntersectionHints", js.Array(value :_*))
     
     @scala.inline
-    def setPostIntersectionHints(value: js.Array[String]): Self = this.set("postIntersectionHints", value.asInstanceOf[js.Any])
+    def setStartStopName(value: String): Self = StObject.set(x, "startStopName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreIntersectionHintsVarargs(value: String*): Self = this.set("preIntersectionHints", js.Array(value :_*))
+    def setTransitLine(value: ITransitLine): Self = StObject.set(x, "transitLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreIntersectionHints(value: js.Array[String]): Self = this.set("preIntersectionHints", value.asInstanceOf[js.Any])
+    def setTransitStepIcon(value: String): Self = StObject.set(x, "transitStepIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartStopName(value: String): Self = this.set("startStopName", value.asInstanceOf[js.Any])
+    def setTransitStopId(value: String): Self = StObject.set(x, "transitStopId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitLine(value: ITransitLine): Self = this.set("transitLine", value.asInstanceOf[js.Any])
+    def setTransitTerminus(value: String): Self = StObject.set(x, "transitTerminus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitStepIcon(value: String): Self = this.set("transitStepIcon", value.asInstanceOf[js.Any])
+    def setWarnings(value: js.Array[IDirectionsStepWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitStopId(value: String): Self = this.set("transitStopId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitTerminus(value: String): Self = this.set("transitTerminus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningsVarargs(value: IDirectionsStepWarning*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[IDirectionsStepWarning]): Self = this.set("warnings", value.asInstanceOf[js.Any])
+    def setWarningsVarargs(value: IDirectionsStepWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

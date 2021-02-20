@@ -1,6 +1,7 @@
 package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * prediction requests. The model itself is just a container.
   */
 @js.native
-trait SchemaGoogleCloudMlV1Model extends js.Object {
+trait SchemaGoogleCloudMlV1Model extends StObject {
   
   /**
     * Output only. The default version of the model. This version will be used
@@ -95,69 +96,57 @@ object SchemaGoogleCloudMlV1Model {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudMlV1ModelOps[Self <: SchemaGoogleCloudMlV1Model] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudMlV1ModelMutableBuilder[Self <: SchemaGoogleCloudMlV1Model] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultVersion(value: SchemaGoogleCloudMlV1Version): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultVersion(value: SchemaGoogleCloudMlV1Version): Self = this.set("defaultVersion", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDefaultVersion: Self = this.set("defaultVersion", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setOnlinePredictionConsoleLogging(value: Boolean): Self = StObject.set(x, "onlinePredictionConsoleLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOnlinePredictionConsoleLoggingUndefined: Self = StObject.set(x, "onlinePredictionConsoleLogging", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnlinePredictionLogging(value: Boolean): Self = StObject.set(x, "onlinePredictionLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlinePredictionConsoleLogging(value: Boolean): Self = this.set("onlinePredictionConsoleLogging", value.asInstanceOf[js.Any])
+    def setOnlinePredictionLoggingUndefined: Self = StObject.set(x, "onlinePredictionLogging", js.undefined)
     
     @scala.inline
-    def deleteOnlinePredictionConsoleLogging: Self = this.set("onlinePredictionConsoleLogging", js.undefined)
+    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnlinePredictionLogging(value: Boolean): Self = this.set("onlinePredictionLogging", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deleteOnlinePredictionLogging: Self = this.set("onlinePredictionLogging", js.undefined)
-    
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

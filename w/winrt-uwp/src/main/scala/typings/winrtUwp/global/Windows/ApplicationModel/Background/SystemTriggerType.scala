@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the system events that can be used to trigger a background task. */
 @JSGlobal("Windows.ApplicationModel.Background.SystemTriggerType")
 @js.native
-object SystemTriggerType extends js.Object {
+object SystemTriggerType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IScreenshotSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ScreenshotTools ()
   extends typings.babylonjs.BABYLON.ScreenshotTools
 /* static members */
-@JSGlobal("BABYLON.ScreenshotTools")
-@js.native
-object ScreenshotTools extends js.Object {
+object ScreenshotTools {
   
+  @JSGlobal("BABYLON.ScreenshotTools")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(engine: typings.babylonjs.BABYLON.Engine, camera: typings.babylonjs.BABYLON.Camera, size: Double): Unit = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -22,12 +29,16 @@ object ScreenshotTools extends js.Object {
     successCallback: js.UndefOr[scala.Nothing],
     mimeType: String
   ): Unit = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
     size: Double,
     successCallback: js.Function1[/* data */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -51,11 +62,15 @@ object ScreenshotTools extends js.Object {
     * @param mimeType defines the MIME type of the screenshot image (default: image/png).
     * Check your browser for supported MIME types
     */
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
     size: IScreenshotSize
   ): Unit = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -63,12 +78,16 @@ object ScreenshotTools extends js.Object {
     successCallback: js.UndefOr[scala.Nothing],
     mimeType: String
   ): Unit = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
     size: IScreenshotSize,
     successCallback: js.Function1[/* data */ String, Unit]
   ): Unit = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshot")
+  @js.native
   def CreateScreenshot(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -92,7 +111,11 @@ object ScreenshotTools extends js.Object {
     * @returns screenshot as a string of base64-encoded characters. This string can be assigned
     * to the src parameter of an <img> to display it
     */
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotAsync")
+  @js.native
   def CreateScreenshotAsync(engine: typings.babylonjs.BABYLON.Engine, camera: typings.babylonjs.BABYLON.Camera, size: js.Any): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotAsync")
+  @js.native
   def CreateScreenshotAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -121,6 +144,8 @@ object ScreenshotTools extends js.Object {
     * @param renderSprites Whether the sprites should be rendered or not (default: false)
     * @param enableStencilBuffer Whether the stencil buffer should be enabled or not (default: false)
     */
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTarget")
+  @js.native
   def CreateScreenshotUsingRenderTarget(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -153,7 +178,11 @@ object ScreenshotTools extends js.Object {
     * @returns screenshot as a string of base64-encoded characters. This string can be assigned
     * to the src parameter of an <img> to display it
     */
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(engine: typings.babylonjs.BABYLON.Engine, camera: typings.babylonjs.BABYLON.Camera, size: js.Any): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -164,6 +193,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -173,6 +204,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -183,6 +216,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -191,6 +226,8 @@ object ScreenshotTools extends js.Object {
     samples: js.UndefOr[scala.Nothing],
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -201,6 +238,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -210,6 +249,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -220,6 +261,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -227,6 +270,8 @@ object ScreenshotTools extends js.Object {
     mimeType: js.UndefOr[scala.Nothing],
     samples: Double
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -237,6 +282,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -246,6 +293,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -256,6 +305,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -264,6 +315,8 @@ object ScreenshotTools extends js.Object {
     samples: Double,
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -274,6 +327,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -283,6 +338,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -293,12 +350,16 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
     size: js.Any,
     mimeType: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -309,6 +370,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -318,6 +381,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -328,6 +393,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -336,6 +403,8 @@ object ScreenshotTools extends js.Object {
     samples: js.UndefOr[scala.Nothing],
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -346,6 +415,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -355,6 +426,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -365,6 +438,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -372,6 +447,8 @@ object ScreenshotTools extends js.Object {
     mimeType: String,
     samples: Double
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -382,6 +459,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -391,6 +470,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: js.UndefOr[scala.Nothing],
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -401,6 +482,8 @@ object ScreenshotTools extends js.Object {
     fileName: String,
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -409,6 +492,8 @@ object ScreenshotTools extends js.Object {
     samples: Double,
     antialiasing: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -419,6 +504,8 @@ object ScreenshotTools extends js.Object {
     fileName: js.UndefOr[scala.Nothing],
     renderSprites: Boolean
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -428,6 +515,8 @@ object ScreenshotTools extends js.Object {
     antialiasing: Boolean,
     fileName: String
   ): js.Promise[String] = js.native
+  @JSGlobal("BABYLON.ScreenshotTools.CreateScreenshotUsingRenderTargetAsync")
+  @js.native
   def CreateScreenshotUsingRenderTargetAsync(
     engine: typings.babylonjs.BABYLON.Engine,
     camera: typings.babylonjs.BABYLON.Camera,
@@ -443,5 +532,9 @@ object ScreenshotTools extends js.Object {
     * Gets height and width for screenshot size
     * @private
     */
-  var _getScreenshotSize: js.Any = js.native
+  @JSGlobal("BABYLON.ScreenshotTools._getScreenshotSize")
+  @js.native
+  def _getScreenshotSize: js.Any = js.native
+  @scala.inline
+  def _getScreenshotSize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getScreenshotSize")(x.asInstanceOf[js.Any])
 }

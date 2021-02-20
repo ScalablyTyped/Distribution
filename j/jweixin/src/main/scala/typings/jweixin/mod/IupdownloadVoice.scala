@@ -1,5 +1,6 @@
 package typings.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IupdownloadVoice extends BaseParams {
   
-   // 需要上传的音频的本地ID，由stopRecord接口获得
+  // 需要上传的音频的本地ID，由stopRecord接口获得
   var isShowProgressTips: Double = js.native
   
   var localId: String = js.native
   
-   // 默认为1，显示进度提示
+  // 默认为1，显示进度提示
   @JSName("success")
   def success_MIupdownloadVoice(res: Resouce): Unit = js.native
 }
@@ -25,27 +26,15 @@ object IupdownloadVoice {
   }
   
   @scala.inline
-  implicit class IupdownloadVoiceOps[Self <: IupdownloadVoice] (val x: Self) extends AnyVal {
+  implicit class IupdownloadVoiceMutableBuilder[Self <: IupdownloadVoice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsShowProgressTips(value: Double): Self = this.set("isShowProgressTips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Resouce => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

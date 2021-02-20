@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait BatchGeometry extends js.Object {
+trait BatchGeometry extends StObject {
   
   /**
     * Buffer used for position, color, texture IDs
@@ -38,24 +39,12 @@ object BatchGeometry {
   }
   
   @scala.inline
-  implicit class BatchGeometryOps[Self <: BatchGeometry] (val x: Self) extends AnyVal {
+  implicit class BatchGeometryMutableBuilder[Self <: BatchGeometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_buffer(value: Buffer): Self = StObject.set(x, "_buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_buffer(value: Buffer): Self = this.set("_buffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_indexBuffer(value: Buffer): Self = this.set("_indexBuffer", value.asInstanceOf[js.Any])
+    def set_indexBuffer(value: Buffer): Self = StObject.set(x, "_indexBuffer", value.asInstanceOf[js.Any])
   }
 }

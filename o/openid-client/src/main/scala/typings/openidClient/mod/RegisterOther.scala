@@ -1,12 +1,13 @@
 package typings.openidClient.mod
 
 import typings.jose.mod.JSONWebKeySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterOther extends js.Object {
+trait RegisterOther extends StObject {
   
   /**
     * Initial Access Token to use as a Bearer token during the registration call.
@@ -28,30 +29,18 @@ object RegisterOther {
   }
   
   @scala.inline
-  implicit class RegisterOtherOps[Self <: RegisterOther] (val x: Self) extends AnyVal {
+  implicit class RegisterOtherMutableBuilder[Self <: RegisterOther] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialAccessToken(value: String): Self = StObject.set(x, "initialAccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialAccessTokenUndefined: Self = StObject.set(x, "initialAccessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJwks(value: JSONWebKeySet): Self = StObject.set(x, "jwks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialAccessToken(value: String): Self = this.set("initialAccessToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialAccessToken: Self = this.set("initialAccessToken", js.undefined)
-    
-    @scala.inline
-    def setJwks(value: JSONWebKeySet): Self = this.set("jwks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwks: Self = this.set("jwks", js.undefined)
+    def setJwksUndefined: Self = StObject.set(x, "jwks", js.undefined)
   }
 }

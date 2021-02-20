@@ -6,12 +6,13 @@ import typings.std.Int16Array
 import typings.std.Int8Array
 import typings.std.Uint16Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buffer extends js.Object {
+trait Buffer extends StObject {
   
   var buffer: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
   
@@ -50,81 +51,69 @@ object Buffer {
   }
   
   @scala.inline
-  implicit class BufferOps[Self <: Buffer] (val x: Self) extends AnyVal {
+  implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuffer(value: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildTileMask(value: Double): Self = StObject.set(x, "childTileMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildTileMaskUndefined: Self = StObject.set(x, "childTileMask", js.undefined)
     
     @scala.inline
-    def setBuffer(value: Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setCreatedByUpsampling(value: Boolean): Self = StObject.set(x, "createdByUpsampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildTileMask(value: Double): Self = this.set("childTileMask", value.asInstanceOf[js.Any])
+    def setStructure(value: js.Any): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChildTileMask: Self = this.set("childTileMask", js.undefined)
+    def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
     @scala.inline
-    def setCreatedByUpsampling(value: Boolean): Self = this.set("createdByUpsampling", value.asInstanceOf[js.Any])
+    def setStructureelementMultiplier(value: Double): Self = StObject.set(x, "structureelementMultiplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedByUpsampling: Self = this.set("createdByUpsampling", js.undefined)
+    def setStructureelementMultiplierUndefined: Self = StObject.set(x, "structureelementMultiplier", js.undefined)
     
     @scala.inline
-    def setStructure(value: js.Any): Self = this.set("structure", value.asInstanceOf[js.Any])
+    def setStructureelementsPerHeight(value: Double): Self = StObject.set(x, "structureelementsPerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructure: Self = this.set("structure", js.undefined)
+    def setStructureelementsPerHeightUndefined: Self = StObject.set(x, "structureelementsPerHeight", js.undefined)
     
     @scala.inline
-    def setStructureelementMultiplier(value: Double): Self = this.set("structureelementMultiplier", value.asInstanceOf[js.Any])
+    def setStructureheightOffset(value: Double): Self = StObject.set(x, "structureheightOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructureelementMultiplier: Self = this.set("structureelementMultiplier", js.undefined)
+    def setStructureheightOffsetUndefined: Self = StObject.set(x, "structureheightOffset", js.undefined)
     
     @scala.inline
-    def setStructureelementsPerHeight(value: Double): Self = this.set("structureelementsPerHeight", value.asInstanceOf[js.Any])
+    def setStructureheightScale(value: Double): Self = StObject.set(x, "structureheightScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructureelementsPerHeight: Self = this.set("structureelementsPerHeight", js.undefined)
+    def setStructureheightScaleUndefined: Self = StObject.set(x, "structureheightScale", js.undefined)
     
     @scala.inline
-    def setStructureheightOffset(value: Double): Self = this.set("structureheightOffset", value.asInstanceOf[js.Any])
+    def setStructureisBigEndian(value: Boolean): Self = StObject.set(x, "structureisBigEndian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructureheightOffset: Self = this.set("structureheightOffset", js.undefined)
+    def setStructureisBigEndianUndefined: Self = StObject.set(x, "structureisBigEndian", js.undefined)
     
     @scala.inline
-    def setStructureheightScale(value: Double): Self = this.set("structureheightScale", value.asInstanceOf[js.Any])
+    def setStructurestride(value: Double): Self = StObject.set(x, "structurestride", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructureheightScale: Self = this.set("structureheightScale", js.undefined)
+    def setStructurestrideUndefined: Self = StObject.set(x, "structurestride", js.undefined)
     
     @scala.inline
-    def setStructureisBigEndian(value: Boolean): Self = this.set("structureisBigEndian", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructureisBigEndian: Self = this.set("structureisBigEndian", js.undefined)
-    
-    @scala.inline
-    def setStructurestride(value: Double): Self = this.set("structurestride", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructurestride: Self = this.set("structurestride", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

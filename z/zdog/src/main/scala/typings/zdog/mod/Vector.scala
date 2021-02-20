@@ -1,12 +1,13 @@
 package typings.zdog.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("zdog", "Vector")
 @js.native
-class Vector () extends js.Object {
+class Vector () extends StObject {
   def this(position: VectorOptions) = this()
   
   /**

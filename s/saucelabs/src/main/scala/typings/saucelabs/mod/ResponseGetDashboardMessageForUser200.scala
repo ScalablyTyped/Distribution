@@ -2,6 +2,7 @@ package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.anon.Cta
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object ResponseGetDashboardMessageForUser200 {
   }
   
   @scala.inline
-  implicit class ResponseGetDashboardMessageForUser200Ops[Self <: ResponseGetDashboardMessageForUser200] (val x: Self) extends AnyVal {
+  implicit class ResponseGetDashboardMessageForUser200MutableBuilder[Self <: ResponseGetDashboardMessageForUser200] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponse(value: Cta): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Cta): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.lex
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntentSlot extends js.Object {
+trait IntentSlot extends StObject {
   
   /**
     * A description of the bot. Must be less than or equal to 200 characters in length.
@@ -71,66 +72,54 @@ object IntentSlot {
   }
   
   @scala.inline
-  implicit class IntentSlotOps[Self <: IntentSlot] (val x: Self) extends AnyVal {
+  implicit class IntentSlotMutableBuilder[Self <: IntentSlot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotConstraint(value: Input[String]): Self = this.set("slotConstraint", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setSlotType(value: Input[String]): Self = this.set("slotType", value.asInstanceOf[js.Any])
+    def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSampleUtterances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setSampleUtterancesVarargs(value: Input[String]*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
     
     @scala.inline
-    def setResponseCard(value: Input[String]): Self = this.set("responseCard", value.asInstanceOf[js.Any])
+    def setSlotConstraint(value: Input[String]): Self = StObject.set(x, "slotConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponseCard: Self = this.set("responseCard", js.undefined)
+    def setSlotType(value: Input[String]): Self = StObject.set(x, "slotType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleUtterancesVarargs(value: Input[String]*): Self = this.set("sampleUtterances", js.Array(value :_*))
+    def setSlotTypeVersion(value: Input[String]): Self = StObject.set(x, "slotTypeVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleUtterances(value: Input[js.Array[Input[String]]]): Self = this.set("sampleUtterances", value.asInstanceOf[js.Any])
+    def setSlotTypeVersionUndefined: Self = StObject.set(x, "slotTypeVersion", js.undefined)
     
     @scala.inline
-    def deleteSampleUtterances: Self = this.set("sampleUtterances", js.undefined)
+    def setValueElicitationPrompt(value: Input[IntentSlotValueElicitationPrompt]): Self = StObject.set(x, "valueElicitationPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlotTypeVersion(value: Input[String]): Self = this.set("slotTypeVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlotTypeVersion: Self = this.set("slotTypeVersion", js.undefined)
-    
-    @scala.inline
-    def setValueElicitationPrompt(value: Input[IntentSlotValueElicitationPrompt]): Self = this.set("valueElicitationPrompt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueElicitationPrompt: Self = this.set("valueElicitationPrompt", js.undefined)
+    def setValueElicitationPromptUndefined: Self = StObject.set(x, "valueElicitationPrompt", js.undefined)
   }
 }

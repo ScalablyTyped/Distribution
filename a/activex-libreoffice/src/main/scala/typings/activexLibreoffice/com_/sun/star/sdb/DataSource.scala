@@ -15,6 +15,7 @@ import typings.activexLibreoffice.com_.sun.star.util.XFlushListener
 import typings.activexLibreoffice.com_.sun.star.util.XFlushable
 import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -167,54 +168,42 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfo(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPasswordRequired(value: Boolean): Self = StObject.set(x, "IsPasswordRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: SafeArray[PropertyValue]): Self = this.set("Info", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPasswordRequired(value: Boolean): Self = this.set("IsPasswordRequired", value.asInstanceOf[js.Any])
+    def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = StObject.set(x, "NumberFormatsSupplier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSettings(value: XPropertySet): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormatsSupplier(value: XNumberFormatsSupplier): Self = this.set("NumberFormatsSupplier", value.asInstanceOf[js.Any])
+    def setSuppressVersionColumns(value: Boolean): Self = StObject.set(x, "SuppressVersionColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setTableFilter(value: SafeArray[String]): Self = StObject.set(x, "TableFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettings(value: XPropertySet): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    def setTableTypeFilter(value: SafeArray[String]): Self = StObject.set(x, "TableTypeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressVersionColumns(value: Boolean): Self = this.set("SuppressVersionColumns", value.asInstanceOf[js.Any])
+    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableFilter(value: SafeArray[String]): Self = this.set("TableFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableTypeFilter(value: SafeArray[String]): Self = this.set("TableTypeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthOptions extends js.Object {
+trait AuthOptions extends StObject {
   
   var authUrl: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object AuthOptions {
   }
   
   @scala.inline
-  implicit class AuthOptionsOps[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUrlUndefined: Self = StObject.set(x, "authUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnAuth(value: /* user */ AuthUserData => Unit): Self = StObject.set(x, "onAuth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAuthUrl(value: String): Self = this.set("authUrl", value.asInstanceOf[js.Any])
+    def setOnAuthUndefined: Self = StObject.set(x, "onAuth", js.undefined)
     
     @scala.inline
-    def deleteAuthUrl: Self = this.set("authUrl", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAuth(value: /* user */ AuthUserData => Unit): Self = this.set("onAuth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnAuth: Self = this.set("onAuth", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

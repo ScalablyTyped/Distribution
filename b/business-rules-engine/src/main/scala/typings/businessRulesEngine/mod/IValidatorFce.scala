@@ -1,12 +1,13 @@
 package typings.businessRulesEngine.mod
 
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IValidatorFce extends js.Object {
+trait IValidatorFce extends StObject {
   
   var AsyncValidationFce: js.UndefOr[IAsyncValidate] = js.native
   
@@ -23,33 +24,21 @@ object IValidatorFce {
   }
   
   @scala.inline
-  implicit class IValidatorFceOps[Self <: IValidatorFce] (val x: Self) extends AnyVal {
+  implicit class IValidatorFceMutableBuilder[Self <: IValidatorFce] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncValidationFce(value: /* args */ IError => Promise[js.Any]): Self = StObject.set(x, "AsyncValidationFce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncValidationFceUndefined: Self = StObject.set(x, "AsyncValidationFce", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setValidationFce(value: /* args */ IError => Unit): Self = StObject.set(x, "ValidationFce", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAsyncValidationFce(value: /* args */ IError => Promise[js.Any]): Self = this.set("AsyncValidationFce", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteAsyncValidationFce: Self = this.set("AsyncValidationFce", js.undefined)
-    
-    @scala.inline
-    def setValidationFce(value: /* args */ IError => Unit): Self = this.set("ValidationFce", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteValidationFce: Self = this.set("ValidationFce", js.undefined)
+    def setValidationFceUndefined: Self = StObject.set(x, "ValidationFce", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CachingConfig extends js.Object {
+trait CachingConfig extends StObject {
   
   /**
     * The caching keys for a resolver that has caching enabled. Valid values are entries from the $context.arguments, $context.source, and $context.identity maps.
@@ -26,33 +27,21 @@ object CachingConfig {
   }
   
   @scala.inline
-  implicit class CachingConfigOps[Self <: CachingConfig] (val x: Self) extends AnyVal {
+  implicit class CachingConfigMutableBuilder[Self <: CachingConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachingKeys(value: CachingKeys): Self = StObject.set(x, "cachingKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachingKeysUndefined: Self = StObject.set(x, "cachingKeys", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCachingKeysVarargs(value: String*): Self = StObject.set(x, "cachingKeys", js.Array(value :_*))
     
     @scala.inline
-    def setCachingKeysVarargs(value: String*): Self = this.set("cachingKeys", js.Array(value :_*))
+    def setTtl(value: Long): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachingKeys(value: CachingKeys): Self = this.set("cachingKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCachingKeys: Self = this.set("cachingKeys", js.undefined)
-    
-    @scala.inline
-    def setTtl(value: Long): Self = this.set("ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

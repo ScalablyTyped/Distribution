@@ -5,12 +5,13 @@ import typings.chromeApps.chromeAppsStrings.`x86-64`
 import typings.chromeApps.chromeAppsStrings.arm_
 import typings.chromeApps.chromeAppsStrings.mips64_
 import typings.chromeApps.chromeAppsStrings.mips_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ARM extends js.Object {
+trait ARM extends StObject {
   
   var ARM: arm_ = js.native
   
@@ -31,33 +32,21 @@ object ARM {
   }
   
   @scala.inline
-  implicit class ARMOps[Self <: ARM] (val x: Self) extends AnyVal {
+  implicit class ARMMutableBuilder[Self <: ARM] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARM(value: arm_): Self = StObject.set(x, "ARM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMIPS(value: mips_): Self = StObject.set(x, "MIPS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMIPS64(value: mips64_): Self = StObject.set(x, "MIPS64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARM(value: arm_): Self = this.set("ARM", value.asInstanceOf[js.Any])
+    def setX86_32(value: `x86-32`): Self = StObject.set(x, "X86_32", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMIPS(value: mips_): Self = this.set("MIPS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMIPS64(value: mips64_): Self = this.set("MIPS64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX86_32(value: `x86-32`): Self = this.set("X86_32", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX86_64(value: `x86-64`): Self = this.set("X86_64", value.asInstanceOf[js.Any])
+    def setX86_64(value: `x86-64`): Self = StObject.set(x, "X86_64", value.asInstanceOf[js.Any])
   }
 }

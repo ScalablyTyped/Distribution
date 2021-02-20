@@ -1,5 +1,6 @@
 package typings.chromeApps.global.chrome
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,6 +31,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object that has details about the elapsed alarm.
   * @since Chrome 25.
   */
-@JSGlobal("chrome.events")
-@js.native
-object events extends js.Object
+object events

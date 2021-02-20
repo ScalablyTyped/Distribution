@@ -5,6 +5,7 @@ import typings.mendixmodelsdk.projectsMod.projects.Document
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,18 +48,32 @@ class ImportedWebService protected () extends Document {
   def wsdlUrl: String = js.native
   def wsdlUrl_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService")
-@js.native
-object ImportedWebService extends js.Object {
+object ImportedWebService {
+  
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new ImportedWebService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService.createIn")
+  @js.native
   def createIn(container: IFolderBase): ImportedWebService = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.ImportedWebService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

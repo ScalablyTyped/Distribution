@@ -1,12 +1,13 @@
 package typings.awsSdkClientGlacierNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/model/SetVaultNotificationsOutput", JSImport.Namespace)
-@js.native
-object setVaultNotificationsOutputMod extends js.Object {
+object setVaultNotificationsOutputMod {
   
+  @JSImport("@aws-sdk/client-glacier-node/model/SetVaultNotificationsOutput", "SetVaultNotificationsOutput")
+  @js.native
   val SetVaultNotificationsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Invitation extends js.Object {
+trait Invitation extends StObject {
   
   /**
     * The AWS account ID for the account that sent the invitation.
@@ -36,42 +37,30 @@ object Invitation {
   }
   
   @scala.inline
-  implicit class InvitationOps[Self <: Invitation] (val x: Self) extends AnyVal {
+  implicit class InvitationMutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvitationId(value: string): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setInvitedAt(value: timestampIso8601): Self = StObject.set(x, "invitedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitationId(value: string): Self = this.set("invitationId", value.asInstanceOf[js.Any])
+    def setInvitedAtUndefined: Self = StObject.set(x, "invitedAt", js.undefined)
     
     @scala.inline
-    def deleteInvitationId: Self = this.set("invitationId", js.undefined)
+    def setRelationshipStatus(value: RelationshipStatus): Self = StObject.set(x, "relationshipStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitedAt(value: timestampIso8601): Self = this.set("invitedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvitedAt: Self = this.set("invitedAt", js.undefined)
-    
-    @scala.inline
-    def setRelationshipStatus(value: RelationshipStatus): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+    def setRelationshipStatusUndefined: Self = StObject.set(x, "relationshipStatus", js.undefined)
   }
 }

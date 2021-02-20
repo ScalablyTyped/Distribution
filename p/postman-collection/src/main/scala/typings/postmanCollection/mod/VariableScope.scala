@@ -2,6 +2,7 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.postmanCollection.anon.Created
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,9 +50,9 @@ class VariableScope protected () extends Property[VariableScopeDefinition] {
   def variables(): StringDictionary[VariableDefinition] = js.native
 }
 /* static members */
-@JSImport("postman-collection", "VariableScope")
-@js.native
-object VariableScope extends js.Object {
+object VariableScope {
   
+  @JSImport("postman-collection", "VariableScope.isVariableScope")
+  @js.native
   def isVariableScope(obj: js.Any): Boolean = js.native
 }

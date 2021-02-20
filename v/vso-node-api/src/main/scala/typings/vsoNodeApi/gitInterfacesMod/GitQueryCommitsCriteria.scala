@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitQueryCommitsCriteria extends js.Object {
+trait GitQueryCommitsCriteria extends StObject {
   
   /**
     * Number of entries to skip
@@ -115,69 +116,57 @@ object GitQueryCommitsCriteria {
   }
   
   @scala.inline
-  implicit class GitQueryCommitsCriteriaOps[Self <: GitQueryCommitsCriteria] (val x: Self) extends AnyVal {
+  implicit class GitQueryCommitsCriteriaMutableBuilder[Self <: GitQueryCommitsCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$skip(value: Double): Self = StObject.set(x, "$skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$top(value: Double): Self = StObject.set(x, "$top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$skip(value: Double): Self = this.set("$skip", value.asInstanceOf[js.Any])
+    def setCompareVersion(value: GitVersionDescriptor): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$top(value: Double): Self = this.set("$top", value.asInstanceOf[js.Any])
+    def setExcludeDeletes(value: Boolean): Self = StObject.set(x, "excludeDeletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    def setFromCommitId(value: String): Self = StObject.set(x, "fromCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompareVersion(value: GitVersionDescriptor): Self = this.set("compareVersion", value.asInstanceOf[js.Any])
+    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeDeletes(value: Boolean): Self = this.set("excludeDeletes", value.asInstanceOf[js.Any])
+    def setHistoryMode(value: GitHistoryMode): Self = StObject.set(x, "historyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromCommitId(value: String): Self = this.set("fromCommitId", value.asInstanceOf[js.Any])
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: String): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setHistoryMode(value: GitHistoryMode): Self = this.set("historyMode", value.asInstanceOf[js.Any])
+    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setIncludeWorkItems(value: Boolean): Self = StObject.set(x, "includeWorkItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeLinks(value: Boolean): Self = this.set("includeLinks", value.asInstanceOf[js.Any])
+    def setItemVersion(value: GitVersionDescriptor): Self = StObject.set(x, "itemVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeWorkItems(value: Boolean): Self = this.set("includeWorkItems", value.asInstanceOf[js.Any])
+    def setToCommitId(value: String): Self = StObject.set(x, "toCommitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemPath(value: String): Self = this.set("itemPath", value.asInstanceOf[js.Any])
+    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemVersion(value: GitVersionDescriptor): Self = this.set("itemVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToCommitId(value: String): Self = this.set("toCommitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToDate(value: String): Self = this.set("toDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

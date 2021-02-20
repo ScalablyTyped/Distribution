@@ -1,5 +1,6 @@
 package typings.leafletEditable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("leaflet-editable", JSImport.Namespace)
 @js.native
-object leafletEditableRequire extends js.Object
+object leafletEditableRequire extends StObject

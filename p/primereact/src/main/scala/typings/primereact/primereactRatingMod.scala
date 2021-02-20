@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.ratingMod.RatingProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/rating", JSImport.Namespace)
-@js.native
-object primereactRatingMod extends js.Object {
+object primereactRatingMod {
   
+  @JSImport("primereact/rating", "Rating")
   @js.native
-  class Rating ()
-    extends Component[RatingProps, js.Any, js.Any]
+  class Rating protected ()
+    extends typings.primereact.ratingMod.Rating {
+    def this(props: RatingProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: RatingProps, context: js.Any) = this()
+  }
 }

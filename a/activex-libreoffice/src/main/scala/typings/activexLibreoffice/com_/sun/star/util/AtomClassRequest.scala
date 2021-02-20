@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.util.XAtomServer
   */
 @js.native
-trait AtomClassRequest extends js.Object {
+trait AtomClassRequest extends StObject {
   
   /** the class of the atoms described in member {@link AtomClassRequest.atoms()} . */
   var atomClass: Double = js.native
@@ -27,24 +28,12 @@ object AtomClassRequest {
   }
   
   @scala.inline
-  implicit class AtomClassRequestOps[Self <: AtomClassRequest] (val x: Self) extends AnyVal {
+  implicit class AtomClassRequestMutableBuilder[Self <: AtomClassRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtomClass(value: Double): Self = StObject.set(x, "atomClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAtomClass(value: Double): Self = this.set("atomClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAtoms(value: SafeArray[Double]): Self = this.set("atoms", value.asInstanceOf[js.Any])
+    def setAtoms(value: SafeArray[Double]): Self = StObject.set(x, "atoms", value.asInstanceOf[js.Any])
   }
 }

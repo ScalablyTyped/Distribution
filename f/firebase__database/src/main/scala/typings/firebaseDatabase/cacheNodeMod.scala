@@ -2,16 +2,16 @@ package typings.firebaseDatabase
 
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/view/CacheNode", JSImport.Namespace)
-@js.native
-object cacheNodeMod extends js.Object {
+object cacheNodeMod {
   
+  @JSImport("@firebase/database/dist/src/core/view/CacheNode", "CacheNode")
   @js.native
-  class CacheNode protected () extends js.Object {
+  class CacheNode protected () extends StObject {
     /**
       * @param {!Node} node_
       * @param {boolean} fullyInitialized_

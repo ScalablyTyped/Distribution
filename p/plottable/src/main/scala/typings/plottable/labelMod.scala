@@ -5,14 +5,14 @@ import typings.plottable.interfacesMod.SimpleSelection
 import typings.typesettable.mod.CacheMeasurer
 import typings.typesettable.mod.Wrapper
 import typings.typesettable.mod.Writer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/label", JSImport.Namespace)
-@js.native
-object labelMod extends js.Object {
+object labelMod {
   
+  @JSImport("plottable/build/src/components/label", "AxisLabel")
   @js.native
   /**
     * @constructor
@@ -25,12 +25,20 @@ object labelMod extends js.Object {
     def this(text: String, angle: Double) = this()
   }
   /* static members */
-  @js.native
-  object AxisLabel extends js.Object {
+  object AxisLabel {
     
-    var AXIS_LABEL_CLASS: String = js.native
+    @JSImport("plottable/build/src/components/label", "AxisLabel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/components/label", "AxisLabel.AXIS_LABEL_CLASS")
+    @js.native
+    def AXIS_LABEL_CLASS: String = js.native
+    @scala.inline
+    def AXIS_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AXIS_LABEL_CLASS")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("plottable/build/src/components/label", "Label")
   @js.native
   /**
     * A Label is a Component that displays a single line of text.
@@ -95,6 +103,7 @@ object labelMod extends js.Object {
     def text(displayText: String): this.type = js.native
   }
   
+  @JSImport("plottable/build/src/components/label", "TitleLabel")
   @js.native
   /**
     * @constructor
@@ -107,9 +116,16 @@ object labelMod extends js.Object {
     def this(text: String, angle: Double) = this()
   }
   /* static members */
-  @js.native
-  object TitleLabel extends js.Object {
+  object TitleLabel {
     
-    var TITLE_LABEL_CLASS: String = js.native
+    @JSImport("plottable/build/src/components/label", "TitleLabel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/components/label", "TitleLabel.TITLE_LABEL_CLASS")
+    @js.native
+    def TITLE_LABEL_CLASS: String = js.native
+    @scala.inline
+    def TITLE_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TITLE_LABEL_CLASS")(x.asInstanceOf[js.Any])
   }
 }

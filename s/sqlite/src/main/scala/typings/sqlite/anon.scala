@@ -1,16 +1,15 @@
 package typings.sqlite
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Database extends js.Object {
+  trait Database extends StObject {
     
     def Database(filename: String): typings.sqlite.sqlite3Mod.Database = js.native
     def Database(

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The chart print options storage.
   */
 @js.native
-trait ASPxClientChartPrintOptions extends js.Object {
+trait ASPxClientChartPrintOptions extends StObject {
   
   /**
     * Gets the custom paper height which will be used to print a chart.
@@ -163,84 +164,72 @@ object ASPxClientChartPrintOptions {
   }
   
   @scala.inline
-  implicit class ASPxClientChartPrintOptionsOps[Self <: ASPxClientChartPrintOptions] (val x: Self) extends AnyVal {
+  implicit class ASPxClientChartPrintOptionsMutableBuilder[Self <: ASPxClientChartPrintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCustomPaperHeight(value: () => Double): Self = StObject.set(x, "GetCustomPaperHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCustomPaperName(value: () => String): Self = StObject.set(x, "GetCustomPaperName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCustomPaperWidth(value: () => Double): Self = StObject.set(x, "GetCustomPaperWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCustomPaperHeight(value: () => Double): Self = this.set("GetCustomPaperHeight", js.Any.fromFunction0(value))
+    def setGetLandscape(value: () => Boolean): Self = StObject.set(x, "GetLandscape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCustomPaperName(value: () => String): Self = this.set("GetCustomPaperName", js.Any.fromFunction0(value))
+    def setGetMarginBottom(value: () => Double): Self = StObject.set(x, "GetMarginBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCustomPaperWidth(value: () => Double): Self = this.set("GetCustomPaperWidth", js.Any.fromFunction0(value))
+    def setGetMarginLeft(value: () => Double): Self = StObject.set(x, "GetMarginLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLandscape(value: () => Boolean): Self = this.set("GetLandscape", js.Any.fromFunction0(value))
+    def setGetMarginRight(value: () => Double): Self = StObject.set(x, "GetMarginRight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarginBottom(value: () => Double): Self = this.set("GetMarginBottom", js.Any.fromFunction0(value))
+    def setGetMarginTop(value: () => Double): Self = StObject.set(x, "GetMarginTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarginLeft(value: () => Double): Self = this.set("GetMarginLeft", js.Any.fromFunction0(value))
+    def setGetPaperKind(value: () => String): Self = StObject.set(x, "GetPaperKind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarginRight(value: () => Double): Self = this.set("GetMarginRight", js.Any.fromFunction0(value))
+    def setGetPrintCrosshair(value: () => Boolean): Self = StObject.set(x, "GetPrintCrosshair", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMarginTop(value: () => Double): Self = this.set("GetMarginTop", js.Any.fromFunction0(value))
+    def setGetSizeMode(value: () => String): Self = StObject.set(x, "GetSizeMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPaperKind(value: () => String): Self = this.set("GetPaperKind", js.Any.fromFunction0(value))
+    def setSetCustomPaperHeight(value: Double => Unit): Self = StObject.set(x, "SetCustomPaperHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPrintCrosshair(value: () => Boolean): Self = this.set("GetPrintCrosshair", js.Any.fromFunction0(value))
+    def setSetCustomPaperName(value: String => Unit): Self = StObject.set(x, "SetCustomPaperName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSizeMode(value: () => String): Self = this.set("GetSizeMode", js.Any.fromFunction0(value))
+    def setSetCustomPaperWidth(value: Double => Unit): Self = StObject.set(x, "SetCustomPaperWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCustomPaperHeight(value: Double => Unit): Self = this.set("SetCustomPaperHeight", js.Any.fromFunction1(value))
+    def setSetLandscape(value: Boolean => Unit): Self = StObject.set(x, "SetLandscape", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCustomPaperName(value: String => Unit): Self = this.set("SetCustomPaperName", js.Any.fromFunction1(value))
+    def setSetMarginBottom(value: Double => Unit): Self = StObject.set(x, "SetMarginBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCustomPaperWidth(value: Double => Unit): Self = this.set("SetCustomPaperWidth", js.Any.fromFunction1(value))
+    def setSetMarginLeft(value: Double => Unit): Self = StObject.set(x, "SetMarginLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLandscape(value: Boolean => Unit): Self = this.set("SetLandscape", js.Any.fromFunction1(value))
+    def setSetMarginRight(value: Double => Unit): Self = StObject.set(x, "SetMarginRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMarginBottom(value: Double => Unit): Self = this.set("SetMarginBottom", js.Any.fromFunction1(value))
+    def setSetMarginTop(value: Double => Unit): Self = StObject.set(x, "SetMarginTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMarginLeft(value: Double => Unit): Self = this.set("SetMarginLeft", js.Any.fromFunction1(value))
+    def setSetPaperKind(value: String => Unit): Self = StObject.set(x, "SetPaperKind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMarginRight(value: Double => Unit): Self = this.set("SetMarginRight", js.Any.fromFunction1(value))
+    def setSetPrintCrosshair(value: Boolean => Unit): Self = StObject.set(x, "SetPrintCrosshair", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMarginTop(value: Double => Unit): Self = this.set("SetMarginTop", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPaperKind(value: String => Unit): Self = this.set("SetPaperKind", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPrintCrosshair(value: Boolean => Unit): Self = this.set("SetPrintCrosshair", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSizeMode(value: String => Unit): Self = this.set("SetSizeMode", js.Any.fromFunction1(value))
+    def setSetSizeMode(value: String => Unit): Self = StObject.set(x, "SetSizeMode", js.Any.fromFunction1(value))
   }
 }

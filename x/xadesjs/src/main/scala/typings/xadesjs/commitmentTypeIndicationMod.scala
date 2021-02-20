@@ -2,18 +2,19 @@ package typings.xadesjs
 
 import typings.xadesjs.anyMod.Any
 import typings.xadesjs.objectIdentifierMod.ObjectIdentifier
-import typings.xmlCore.mod.XmlCollection
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.xmlBaseMod.XadesCollection
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/commitment_type_indication", JSImport.Namespace)
-@js.native
-object commitmentTypeIndicationMod extends js.Object {
+object commitmentTypeIndicationMod {
   
+  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "CommitmentTypeIndication")
   @js.native
-  class CommitmentTypeIndication () extends XmlObject {
+  class CommitmentTypeIndication () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var AllSignedDataObjects: Boolean = js.native
     
@@ -24,18 +25,29 @@ object commitmentTypeIndicationMod extends js.Object {
     var ObjectReference: ObjectReferenceCollection = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "CommitmentTypeQualifier")
   @js.native
-  class CommitmentTypeQualifier () extends Any
+  class CommitmentTypeQualifier () extends Any {
+    def this(properties: js.Object) = this()
+  }
   
+  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "CommitmentTypeQualifiers")
   @js.native
-  class CommitmentTypeQualifiers () extends XmlCollection[CommitmentTypeQualifier]
+  class CommitmentTypeQualifiers () extends XadesCollection[CommitmentTypeQualifier] {
+    def this(properties: js.Object) = this()
+  }
   
+  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "ObjectReference")
   @js.native
-  class ObjectReference () extends XmlObject {
+  class ObjectReference () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var Value: String = js.native
   }
   
+  @JSImport("xadesjs/build/types/xml/commitment_type_indication", "ObjectReferenceCollection")
   @js.native
-  class ObjectReferenceCollection () extends XmlCollection[ObjectReference]
+  class ObjectReferenceCollection () extends XadesCollection[ObjectReference] {
+    def this(properties: js.Object) = this()
+  }
 }

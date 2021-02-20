@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information reported about an installed app.
   */
 @js.native
-trait SchemaApplicationReport extends js.Object {
+trait SchemaApplicationReport extends StObject {
   
   /**
     * The source of the package.
@@ -75,84 +76,72 @@ object SchemaApplicationReport {
   }
   
   @scala.inline
-  implicit class SchemaApplicationReportOps[Self <: SchemaApplicationReport] (val x: Self) extends AnyVal {
+  implicit class SchemaApplicationReportMutableBuilder[Self <: SchemaApplicationReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationSource(value: String): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationSourceUndefined: Self = StObject.set(x, "applicationSource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationSource(value: String): Self = this.set("applicationSource", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteApplicationSource: Self = this.set("applicationSource", js.undefined)
+    def setEvents(value: js.Array[SchemaApplicationEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEventsVarargs(value: SchemaApplicationEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: SchemaApplicationEvent*): Self = this.set("events", js.Array(value :_*))
+    def setInstallerPackageName(value: String): Self = StObject.set(x, "installerPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[SchemaApplicationEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setInstallerPackageNameUndefined: Self = StObject.set(x, "installerPackageName", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallerPackageName(value: String): Self = this.set("installerPackageName", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteInstallerPackageName: Self = this.set("installerPackageName", js.undefined)
+    def setPackageSha256Hash(value: String): Self = StObject.set(x, "packageSha256Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setPackageSha256HashUndefined: Self = StObject.set(x, "packageSha256Hash", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setSigningKeyCertFingerprints(value: js.Array[String]): Self = StObject.set(x, "signingKeyCertFingerprints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageSha256Hash(value: String): Self = this.set("packageSha256Hash", value.asInstanceOf[js.Any])
+    def setSigningKeyCertFingerprintsUndefined: Self = StObject.set(x, "signingKeyCertFingerprints", js.undefined)
     
     @scala.inline
-    def deletePackageSha256Hash: Self = this.set("packageSha256Hash", js.undefined)
+    def setSigningKeyCertFingerprintsVarargs(value: String*): Self = StObject.set(x, "signingKeyCertFingerprints", js.Array(value :_*))
     
     @scala.inline
-    def setSigningKeyCertFingerprintsVarargs(value: String*): Self = this.set("signingKeyCertFingerprints", js.Array(value :_*))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningKeyCertFingerprints(value: js.Array[String]): Self = this.set("signingKeyCertFingerprints", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSigningKeyCertFingerprints: Self = this.set("signingKeyCertFingerprints", js.undefined)
+    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
-    
-    @scala.inline
-    def setVersionName(value: String): Self = this.set("versionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionName: Self = this.set("versionName", js.undefined)
+    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

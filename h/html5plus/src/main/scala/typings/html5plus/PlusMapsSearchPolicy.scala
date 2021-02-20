@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
 @js.native
-trait PlusMapsSearchPolicy extends js.Object {
+trait PlusMapsSearchPolicy extends StObject {
   
   /**
     * 最短距离优先
@@ -78,60 +79,48 @@ object PlusMapsSearchPolicy {
   }
   
   @scala.inline
-  implicit class PlusMapsSearchPolicyOps[Self <: PlusMapsSearchPolicy] (val x: Self) extends AnyVal {
+  implicit class PlusMapsSearchPolicyMutableBuilder[Self <: PlusMapsSearchPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDRIVING_DIS_FIRST(value: Double): Self = StObject.set(x, "DRIVING_DIS_FIRST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDRIVING_DIS_FIRSTUndefined: Self = StObject.set(x, "DRIVING_DIS_FIRST", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDRIVING_FEE_FIRST(value: Double): Self = StObject.set(x, "DRIVING_FEE_FIRST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDRIVING_DIS_FIRST(value: Double): Self = this.set("DRIVING_DIS_FIRST", value.asInstanceOf[js.Any])
+    def setDRIVING_FEE_FIRSTUndefined: Self = StObject.set(x, "DRIVING_FEE_FIRST", js.undefined)
     
     @scala.inline
-    def deleteDRIVING_DIS_FIRST: Self = this.set("DRIVING_DIS_FIRST", js.undefined)
+    def setDRIVING_NO_EXPRESSWAY(value: Double): Self = StObject.set(x, "DRIVING_NO_EXPRESSWAY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDRIVING_FEE_FIRST(value: Double): Self = this.set("DRIVING_FEE_FIRST", value.asInstanceOf[js.Any])
+    def setDRIVING_NO_EXPRESSWAYUndefined: Self = StObject.set(x, "DRIVING_NO_EXPRESSWAY", js.undefined)
     
     @scala.inline
-    def deleteDRIVING_FEE_FIRST: Self = this.set("DRIVING_FEE_FIRST", js.undefined)
+    def setTRANSIT_FEE_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_FEE_FIRST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDRIVING_NO_EXPRESSWAY(value: Double): Self = this.set("DRIVING_NO_EXPRESSWAY", value.asInstanceOf[js.Any])
+    def setTRANSIT_FEE_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_FEE_FIRST", js.undefined)
     
     @scala.inline
-    def deleteDRIVING_NO_EXPRESSWAY: Self = this.set("DRIVING_NO_EXPRESSWAY", js.undefined)
+    def setTRANSIT_TIME_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_TIME_FIRST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTRANSIT_FEE_FIRST(value: Double): Self = this.set("TRANSIT_FEE_FIRST", value.asInstanceOf[js.Any])
+    def setTRANSIT_TIME_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_TIME_FIRST", js.undefined)
     
     @scala.inline
-    def deleteTRANSIT_FEE_FIRST: Self = this.set("TRANSIT_FEE_FIRST", js.undefined)
+    def setTRANSIT_TRANSFER_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_TRANSFER_FIRST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTRANSIT_TIME_FIRST(value: Double): Self = this.set("TRANSIT_TIME_FIRST", value.asInstanceOf[js.Any])
+    def setTRANSIT_TRANSFER_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_TRANSFER_FIRST", js.undefined)
     
     @scala.inline
-    def deleteTRANSIT_TIME_FIRST: Self = this.set("TRANSIT_TIME_FIRST", js.undefined)
+    def setTRANSIT_WALK_FIRST(value: Double): Self = StObject.set(x, "TRANSIT_WALK_FIRST", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTRANSIT_TRANSFER_FIRST(value: Double): Self = this.set("TRANSIT_TRANSFER_FIRST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTRANSIT_TRANSFER_FIRST: Self = this.set("TRANSIT_TRANSFER_FIRST", js.undefined)
-    
-    @scala.inline
-    def setTRANSIT_WALK_FIRST(value: Double): Self = this.set("TRANSIT_WALK_FIRST", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTRANSIT_WALK_FIRST: Self = this.set("TRANSIT_WALK_FIRST", js.undefined)
+    def setTRANSIT_WALK_FIRSTUndefined: Self = StObject.set(x, "TRANSIT_WALK_FIRST", js.undefined)
   }
 }

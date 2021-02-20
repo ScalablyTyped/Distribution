@@ -1,5 +1,6 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * buffer as needed.
   */
 @js.native
-trait ArrayBuffer extends js.Object {
+trait ArrayBuffer extends StObject {
   
   /**
     * Read-only. The length of the ArrayBuffer (in bytes).

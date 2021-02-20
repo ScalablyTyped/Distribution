@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cloudfront
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionCustomErrorResponse extends js.Object {
+trait DistributionCustomErrorResponse extends StObject {
   
   /**
     * The minimum amount of time you want
@@ -41,39 +42,27 @@ object DistributionCustomErrorResponse {
   }
   
   @scala.inline
-  implicit class DistributionCustomErrorResponseOps[Self <: DistributionCustomErrorResponse] (val x: Self) extends AnyVal {
+  implicit class DistributionCustomErrorResponseMutableBuilder[Self <: DistributionCustomErrorResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCachingMinTtl(value: Double): Self = StObject.set(x, "errorCachingMinTtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCachingMinTtlUndefined: Self = StObject.set(x, "errorCachingMinTtl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: Double): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCachingMinTtl(value: Double): Self = this.set("errorCachingMinTtl", value.asInstanceOf[js.Any])
+    def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
     
     @scala.inline
-    def deleteErrorCachingMinTtl: Self = this.set("errorCachingMinTtl", js.undefined)
+    def setResponsePagePath(value: String): Self = StObject.set(x, "responsePagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCode(value: Double): Self = this.set("responseCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseCode: Self = this.set("responseCode", js.undefined)
-    
-    @scala.inline
-    def setResponsePagePath(value: String): Self = this.set("responsePagePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsePagePath: Self = this.set("responsePagePath", js.undefined)
+    def setResponsePagePathUndefined: Self = StObject.set(x, "responsePagePath", js.undefined)
   }
 }

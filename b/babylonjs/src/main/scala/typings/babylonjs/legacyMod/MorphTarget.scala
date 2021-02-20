@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +34,7 @@ class MorphTarget protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "MorphTarget")
-@js.native
-object MorphTarget extends js.Object {
+object MorphTarget {
   
   /**
     * Creates a MorphTarget from mesh data
@@ -44,13 +43,21 @@ object MorphTarget extends js.Object {
     * @param influence defines the influence to attach to the target
     * @returns a new MorphTarget
     */
+  @JSImport("babylonjs/Legacy/legacy", "MorphTarget.FromMesh")
+  @js.native
   def FromMesh(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh): typings.babylonjs.morphTargetMod.MorphTarget = js.native
+  @JSImport("babylonjs/Legacy/legacy", "MorphTarget.FromMesh")
+  @js.native
   def FromMesh(
     mesh: typings.babylonjs.abstractMeshMod.AbstractMesh,
     name: js.UndefOr[scala.Nothing],
     influence: Double
   ): typings.babylonjs.morphTargetMod.MorphTarget = js.native
+  @JSImport("babylonjs/Legacy/legacy", "MorphTarget.FromMesh")
+  @js.native
   def FromMesh(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh, name: String): typings.babylonjs.morphTargetMod.MorphTarget = js.native
+  @JSImport("babylonjs/Legacy/legacy", "MorphTarget.FromMesh")
+  @js.native
   def FromMesh(mesh: typings.babylonjs.abstractMeshMod.AbstractMesh, name: String, influence: Double): typings.babylonjs.morphTargetMod.MorphTarget = js.native
   
   /**
@@ -58,5 +65,7 @@ object MorphTarget extends js.Object {
     * @param serializationObject defines the serialized data to use
     * @returns a new MorphTarget
     */
+  @JSImport("babylonjs/Legacy/legacy", "MorphTarget.Parse")
+  @js.native
   def Parse(serializationObject: js.Any): typings.babylonjs.morphTargetMod.MorphTarget = js.native
 }

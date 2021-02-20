@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddApplicationInputRequest extends js.Object {
+trait AddApplicationInputRequest extends StObject {
   
   /**
     * Name of your existing Amazon Kinesis Analytics application to which you want to add the streaming source.
@@ -31,27 +32,15 @@ object AddApplicationInputRequest {
   }
   
   @scala.inline
-  implicit class AddApplicationInputRequestOps[Self <: AddApplicationInputRequest] (val x: Self) extends AnyVal {
+  implicit class AddApplicationInputRequestMutableBuilder[Self <: AddApplicationInputRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = this.set("CurrentApplicationVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput(value: Input): Self = this.set("Input", value.asInstanceOf[js.Any])
+    def setInput(value: Input): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
   }
 }

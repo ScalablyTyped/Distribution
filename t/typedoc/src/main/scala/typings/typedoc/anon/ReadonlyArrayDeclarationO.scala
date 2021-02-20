@@ -2,13 +2,14 @@ package typings.typedoc.anon
 
 import typings.typedoc.optionsDeclarationMod.ParameterScope
 import typings.typedoc.optionsDeclarationMod.ParameterType.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.ArrayDeclarationOption> */
 @js.native
-trait ReadonlyArrayDeclarationO extends js.Object {
+trait ReadonlyArrayDeclarationO extends StObject {
   
   val defaultValue: js.UndefOr[js.Array[String]] = js.native
   
@@ -32,48 +33,36 @@ object ReadonlyArrayDeclarationO {
   }
   
   @scala.inline
-  implicit class ReadonlyArrayDeclarationOOps[Self <: ReadonlyArrayDeclarationO] (val x: Self) extends AnyVal {
+  implicit class ReadonlyArrayDeclarationOMutableBuilder[Self <: ReadonlyArrayDeclarationO] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
     
     @scala.inline
-    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Array): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueVarargs(value: String*): Self = this.set("defaultValue", js.Array(value :_*))
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def setDefaultValue(value: js.Array[String]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
     @scala.inline
-    def setScope(value: ParameterScope): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShort: Self = this.set("short", js.undefined)
+    def setType(value: Array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

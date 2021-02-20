@@ -8,13 +8,14 @@ import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.messagechanged
 import typings.winrtUwp.winrtUwpStrings.storechanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the methods and properties to read, manage and send messages. An application gets access to the message store using the static ChatMessageManager class . */
 @js.native
-trait ChatMessageStore extends js.Object {
+trait ChatMessageStore extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

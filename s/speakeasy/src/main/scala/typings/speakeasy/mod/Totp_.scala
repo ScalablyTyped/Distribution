@@ -1,11 +1,12 @@
 package typings.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Totp_ extends js.Object {
+trait Totp_ extends StObject {
   
   /**
     * Generate a time-based one-time token. Specify the key, and receive the

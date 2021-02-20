@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about device memory and storage.
   */
 @js.native
-trait SchemaMemoryInfo extends js.Object {
+trait SchemaMemoryInfo extends StObject {
   
   /**
     * Total internal storage on device in bytes.
@@ -29,30 +30,18 @@ object SchemaMemoryInfo {
   }
   
   @scala.inline
-  implicit class SchemaMemoryInfoOps[Self <: SchemaMemoryInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaMemoryInfoMutableBuilder[Self <: SchemaMemoryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTotalInternalStorage(value: String): Self = StObject.set(x, "totalInternalStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotalInternalStorageUndefined: Self = StObject.set(x, "totalInternalStorage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalRam(value: String): Self = StObject.set(x, "totalRam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalInternalStorage(value: String): Self = this.set("totalInternalStorage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalInternalStorage: Self = this.set("totalInternalStorage", js.undefined)
-    
-    @scala.inline
-    def setTotalRam(value: String): Self = this.set("totalRam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalRam: Self = this.set("totalRam", js.undefined)
+    def setTotalRamUndefined: Self = StObject.set(x, "totalRam", js.undefined)
   }
 }

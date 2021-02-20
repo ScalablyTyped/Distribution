@@ -5,6 +5,7 @@ import typings.sharepoint.SP.JsGrid.IEventArgs
 import typings.sharepoint.SP.JsGrid.IPropertyType
 import typings.sharepoint.SP.JsGrid.Internal.PropertyUpdate
 import typings.sharepoint.SP.JsGrid.ValidationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,39 +44,27 @@ object PropertyChanged {
   }
   
   @scala.inline
-  implicit class PropertyChangedOps[Self <: PropertyChanged] (val x: Self) extends AnyVal {
+  implicit class PropertyChangedMutableBuilder[Self <: PropertyChanged] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewProp(value: PropertyUpdate): Self = StObject.set(x, "newProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeKey(value: IChangeKey): Self = this.set("changeKey", value.asInstanceOf[js.Any])
+    def setOldProp(value: PropertyUpdate): Self = StObject.set(x, "oldProp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldKey(value: String): Self = this.set("fieldKey", value.asInstanceOf[js.Any])
+    def setPropType(value: IPropertyType): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewProp(value: PropertyUpdate): Self = this.set("newProp", value.asInstanceOf[js.Any])
+    def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldProp(value: PropertyUpdate): Self = this.set("oldProp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropType(value: IPropertyType): Self = this.set("propType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordKey(value: Double): Self = this.set("recordKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidationState(value: ValidationState): Self = this.set("validationState", value.asInstanceOf[js.Any])
+    def setValidationState(value: ValidationState): Self = StObject.set(x, "validationState", value.asInstanceOf[js.Any])
   }
 }

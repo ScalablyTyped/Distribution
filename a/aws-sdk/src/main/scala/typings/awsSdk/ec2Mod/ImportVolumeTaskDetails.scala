@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportVolumeTaskDetails extends js.Object {
+trait ImportVolumeTaskDetails extends StObject {
   
   /**
     * The Availability Zone where the resulting volume will reside.
@@ -41,48 +42,36 @@ object ImportVolumeTaskDetails {
   }
   
   @scala.inline
-  implicit class ImportVolumeTaskDetailsOps[Self <: ImportVolumeTaskDetails] (val x: Self) extends AnyVal {
+  implicit class ImportVolumeTaskDetailsMutableBuilder[Self <: ImportVolumeTaskDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesConverted(value: Long): Self = StObject.set(x, "BytesConverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setBytesConvertedUndefined: Self = StObject.set(x, "BytesConverted", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesConverted(value: Long): Self = this.set("BytesConverted", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteBytesConverted: Self = this.set("BytesConverted", js.undefined)
+    def setImage(value: DiskImageDescription): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setVolume(value: DiskImageVolumeDescription): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: DiskImageDescription): Self = this.set("Image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("Image", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: DiskImageVolumeDescription): Self = this.set("Volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("Volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "Volume", js.undefined)
   }
 }

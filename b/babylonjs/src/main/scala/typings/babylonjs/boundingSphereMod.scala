@@ -4,16 +4,16 @@ import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.DeepImmutable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Culling/boundingSphere", JSImport.Namespace)
-@js.native
-object boundingSphereMod extends js.Object {
+object boundingSphereMod {
   
+  @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere")
   @js.native
-  class BoundingSphere protected () extends js.Object {
+  class BoundingSphere protected () extends StObject {
     /**
       * Creates a new bounding sphere
       * @param min defines the minimum vector (in local space)
@@ -103,8 +103,7 @@ object boundingSphereMod extends js.Object {
     def scale(factor: Double): BoundingSphere = js.native
   }
   /* static members */
-  @js.native
-  object BoundingSphere extends js.Object {
+  object BoundingSphere {
     
     /**
       * Checks if two sphere intersct
@@ -112,8 +111,12 @@ object boundingSphereMod extends js.Object {
       * @param sphere1 sphere 1
       * @returns true if the speres intersect
       */
+    @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere.Intersects")
+    @js.native
     def Intersects(sphere0: DeepImmutable[BoundingSphere], sphere1: DeepImmutable[BoundingSphere]): Boolean = js.native
     
+    @JSImport("babylonjs/Culling/boundingSphere", "BoundingSphere.TmpVector3")
+    @js.native
     val TmpVector3: js.Any = js.native
   }
 }

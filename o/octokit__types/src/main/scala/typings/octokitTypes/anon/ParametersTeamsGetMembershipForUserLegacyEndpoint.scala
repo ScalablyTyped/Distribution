@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.TeamsGetMembershipForUserLegacyEndpoint
 import typings.octokitTypes.endpointsMod.TeamsGetMembershipForUserLegacyRequestOptions
 import typings.octokitTypes.endpointsMod.TeamsGetMembershipForUserLegacyResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersTeamsGetMembershipForUserLegacyEndpoint extends js.Object {
+trait ParametersTeamsGetMembershipForUserLegacyEndpoint extends StObject {
   
   var parameters: TeamsGetMembershipForUserLegacyEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersTeamsGetMembershipForUserLegacyEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersTeamsGetMembershipForUserLegacyEndpointOps[Self <: ParametersTeamsGetMembershipForUserLegacyEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersTeamsGetMembershipForUserLegacyEndpointMutableBuilder[Self <: ParametersTeamsGetMembershipForUserLegacyEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: TeamsGetMembershipForUserLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: TeamsGetMembershipForUserLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: TeamsGetMembershipForUserLegacyEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: TeamsGetMembershipForUserLegacyRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[TeamsGetMembershipForUserLegacyResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[TeamsGetMembershipForUserLegacyResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

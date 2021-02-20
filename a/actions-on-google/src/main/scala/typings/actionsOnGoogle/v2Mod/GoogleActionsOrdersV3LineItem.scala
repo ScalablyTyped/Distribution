@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsOrdersV3LineItem extends js.Object {
+trait GoogleActionsOrdersV3LineItem extends StObject {
   
   /**
     * Line item description.
@@ -96,108 +97,96 @@ object GoogleActionsOrdersV3LineItem {
   }
   
   @scala.inline
-  implicit class GoogleActionsOrdersV3LineItemOps[Self <: GoogleActionsOrdersV3LineItem] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsOrdersV3LineItemMutableBuilder[Self <: GoogleActionsOrdersV3LineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowUpActions(value: js.Array[GoogleActionsOrdersV3Action]): Self = StObject.set(x, "followUpActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFollowUpActionsUndefined: Self = StObject.set(x, "followUpActions", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFollowUpActionsVarargs(value: GoogleActionsOrdersV3Action*): Self = StObject.set(x, "followUpActions", js.Array(value :_*))
     
     @scala.inline
-    def setFollowUpActionsVarargs(value: GoogleActionsOrdersV3Action*): Self = this.set("followUpActions", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowUpActions(value: js.Array[GoogleActionsOrdersV3Action]): Self = this.set("followUpActions", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFollowUpActions: Self = this.set("followUpActions", js.undefined)
+    def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: GoogleActionsV2UiElementsImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setNotes(value: js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
     @scala.inline
-    def setNotesVarargs(value: String*): Self = this.set("notes", js.Array(value :_*))
+    def setPriceAttributes(value: js.Array[GoogleActionsOrdersV3PriceAttribute]): Self = StObject.set(x, "priceAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: js.Array[String]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setPriceAttributesUndefined: Self = StObject.set(x, "priceAttributes", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setPriceAttributesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = StObject.set(x, "priceAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setPriceAttributesVarargs(value: GoogleActionsOrdersV3PriceAttribute*): Self = this.set("priceAttributes", js.Array(value :_*))
+    def setProvider(value: GoogleActionsOrdersV3Merchant): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriceAttributes(value: js.Array[GoogleActionsOrdersV3PriceAttribute]): Self = this.set("priceAttributes", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deletePriceAttributes: Self = this.set("priceAttributes", js.undefined)
+    def setPurchase(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension): Self = StObject.set(x, "purchase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: GoogleActionsOrdersV3Merchant): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setPurchaseUndefined: Self = StObject.set(x, "purchase", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def setRecipients(value: js.Array[GoogleActionsOrdersV3UserInfo]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurchase(value: GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtension): Self = this.set("purchase", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deletePurchase: Self = this.set("purchase", js.undefined)
+    def setRecipientsVarargs(value: GoogleActionsOrdersV3UserInfo*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: GoogleActionsOrdersV3UserInfo*): Self = this.set("recipients", js.Array(value :_*))
+    def setReservation(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension): Self = StObject.set(x, "reservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: js.Array[GoogleActionsOrdersV3UserInfo]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setReservationUndefined: Self = StObject.set(x, "reservation", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setUserVisibleStateLabel(value: String): Self = StObject.set(x, "userVisibleStateLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservation(value: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension): Self = this.set("reservation", value.asInstanceOf[js.Any])
+    def setUserVisibleStateLabelUndefined: Self = StObject.set(x, "userVisibleStateLabel", js.undefined)
     
     @scala.inline
-    def deleteReservation: Self = this.set("reservation", js.undefined)
+    def setVertical(value: ApiClientObjectMap[_]): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserVisibleStateLabel(value: String): Self = this.set("userVisibleStateLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVisibleStateLabel: Self = this.set("userVisibleStateLabel", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: ApiClientObjectMap[_]): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexMsxml2.MSXML2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XML HTTP Request class 6.0 */
 @js.native
-trait XMLHTTP60 extends js.Object {
+trait XMLHTTP60 extends StObject {
   
   @JSName("MSXML2.XMLHTTP60_typekey")
   var MSXML2DotXMLHTTP60_typekey: XMLHTTP60 = js.native

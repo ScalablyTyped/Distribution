@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EndpointAddress is a tuple that describes single IP address.
   */
 @js.native
-trait EndpointAddress extends js.Object {
+trait EndpointAddress extends StObject {
   
   /**
     * The Hostname of this endpoint
@@ -39,30 +40,18 @@ object EndpointAddress {
   }
   
   @scala.inline
-  implicit class EndpointAddressOps[Self <: EndpointAddress] (val x: Self) extends AnyVal {
+  implicit class EndpointAddressMutableBuilder[Self <: EndpointAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeName(value: String): Self = this.set("nodeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetRef(value: ObjectReference): Self = this.set("targetRef", value.asInstanceOf[js.Any])
+    def setTargetRef(value: ObjectReference): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

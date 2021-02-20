@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object IButtonGroup {
   }
   
   @scala.inline
-  implicit class IButtonGroupOps[Self <: IButtonGroup] (val x: Self) extends AnyVal {
+  implicit class IButtonGroupMutableBuilder[Self <: IButtonGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultButtonUI(value: java.lang.String): Self = this.set("defaultButtonUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultButtonUI: Self = this.set("defaultButtonUI", js.undefined)
-    
-    @scala.inline
-    def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = this.set("onBeforeAdd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnBeforeAdd: Self = this.set("onBeforeAdd", js.undefined)
+    def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
   }
 }

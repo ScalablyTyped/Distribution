@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotAroonAroonDownStylesOptions extends js.Object {
+trait PlotAroonAroonDownStylesOptions extends StObject {
   
   /**
     * (Highstock) Color of the line. If not set, it's inherited from
@@ -27,30 +28,18 @@ object PlotAroonAroonDownStylesOptions {
   }
   
   @scala.inline
-  implicit class PlotAroonAroonDownStylesOptionsOps[Self <: PlotAroonAroonDownStylesOptions] (val x: Self) extends AnyVal {
+  implicit class PlotAroonAroonDownStylesOptionsMutableBuilder[Self <: PlotAroonAroonDownStylesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColor(value: ColorString): Self = this.set("lineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
-    
-    @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

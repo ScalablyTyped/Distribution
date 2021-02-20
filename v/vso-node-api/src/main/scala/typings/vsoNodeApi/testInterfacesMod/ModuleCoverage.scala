@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.testInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModuleCoverage extends js.Object {
+trait ModuleCoverage extends StObject {
   
   var blockCount: Double = js.native
   
@@ -38,45 +39,33 @@ object ModuleCoverage {
   }
   
   @scala.inline
-  implicit class ModuleCoverageOps[Self <: ModuleCoverage] (val x: Self) extends AnyVal {
+  implicit class ModuleCoverageMutableBuilder[Self <: ModuleCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockCount(value: Double): Self = StObject.set(x, "blockCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockData(value: js.Array[Double]): Self = StObject.set(x, "blockData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlockDataVarargs(value: Double*): Self = StObject.set(x, "blockData", js.Array(value :_*))
     
     @scala.inline
-    def setBlockCount(value: Double): Self = this.set("blockCount", value.asInstanceOf[js.Any])
+    def setFunctions(value: js.Array[FunctionCoverage]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockDataVarargs(value: Double*): Self = this.set("blockData", js.Array(value :_*))
+    def setFunctionsVarargs(value: FunctionCoverage*): Self = StObject.set(x, "functions", js.Array(value :_*))
     
     @scala.inline
-    def setBlockData(value: js.Array[Double]): Self = this.set("blockData", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionsVarargs(value: FunctionCoverage*): Self = this.set("functions", js.Array(value :_*))
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctions(value: js.Array[FunctionCoverage]): Self = this.set("functions", value.asInstanceOf[js.Any])
+    def setSignatureAge(value: Double): Self = StObject.set(x, "signatureAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureAge(value: Double): Self = this.set("signatureAge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatistics(value: CoverageStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setStatistics(value: CoverageStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
   }
 }

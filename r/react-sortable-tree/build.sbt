@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "react-sortable-tree"
-version := "0.3-dt-20200717Z-014170"
+version := "0.3-dt-20200717Z-6f5414"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-fa358f",
-  "org.scalablytyped" %%% "dnd-core" % "11.1.3-53a178",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-42d53d",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-0012d8",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-cfb347",
-  "org.scalablytyped" %%% "react-dnd" % "11.1.3-9ff119",
-  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20201002Z-479512",
-  "org.scalablytyped" %%% "redux" % "4.0.5-1401a8",
-  "org.scalablytyped" %%% "std" % "4.1-c651d0")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
+  "org.scalablytyped" %%% "dnd-core" % "11.1.3-9cffed",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-d582cd",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
+  "org.scalablytyped" %%% "react-dnd" % "11.1.3-27a619",
+  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20201002Z-4337d2",
+  "org.scalablytyped" %%% "redux" % "4.0.5-09f522",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

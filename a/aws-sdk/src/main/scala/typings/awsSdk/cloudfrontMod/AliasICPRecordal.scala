@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AliasICPRecordal extends js.Object {
+trait AliasICPRecordal extends StObject {
   
   /**
     * A domain name associated with a distribution. 
@@ -26,30 +27,18 @@ object AliasICPRecordal {
   }
   
   @scala.inline
-  implicit class AliasICPRecordalOps[Self <: AliasICPRecordal] (val x: Self) extends AnyVal {
+  implicit class AliasICPRecordalMutableBuilder[Self <: AliasICPRecordal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCNAME(value: String): Self = StObject.set(x, "CNAME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCNAMEUndefined: Self = StObject.set(x, "CNAME", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setICPRecordalStatus(value: ICPRecordalStatus): Self = StObject.set(x, "ICPRecordalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCNAME(value: String): Self = this.set("CNAME", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCNAME: Self = this.set("CNAME", js.undefined)
-    
-    @scala.inline
-    def setICPRecordalStatus(value: ICPRecordalStatus): Self = this.set("ICPRecordalStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteICPRecordalStatus: Self = this.set("ICPRecordalStatus", js.undefined)
+    def setICPRecordalStatusUndefined: Self = StObject.set(x, "ICPRecordalStatus", js.undefined)
   }
 }

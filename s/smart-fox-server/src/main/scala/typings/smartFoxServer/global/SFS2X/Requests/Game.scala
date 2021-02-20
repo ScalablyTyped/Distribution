@@ -4,6 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.Match.MatchExpression
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import typings.smartFoxServer.SFS2X.IINVITATION
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region Game
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Requests.Game.html
-@JSGlobal("SFS2X.Requests.Game")
-@js.native
-object Game extends js.Object {
+object Game {
   
+  @JSGlobal("SFS2X.Requests.Game.CreateSFSGameRequest")
   @js.native
   class CreateSFSGameRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.Game.CreateSFSGameRequest {
@@ -25,6 +25,7 @@ object Game extends js.Object {
     def this(settings: typings.smartFoxServer.SFS2X.Requests.Game.SFSGameSettings) = this()
   }
   
+  @JSGlobal("SFS2X.Requests.Game.InvitationReplyRequest")
   @js.native
   class InvitationReplyRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.Game.InvitationReplyRequest {
@@ -38,6 +39,7 @@ object Game extends js.Object {
     def this(invitation: IINVITATION, invitationReply: Double, params: js.Object) = this()
   }
   
+  @JSGlobal("SFS2X.Requests.Game.InviteUsersRequest")
   @js.native
   class InviteUsersRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.Game.InviteUsersRequest {
@@ -51,6 +53,7 @@ object Game extends js.Object {
     def this(invitedUsers: js.Array[SFSUser], secondsForAnswer: Double, params: js.Object) = this()
   }
   
+  @JSGlobal("SFS2X.Requests.Game.QuickJoinGameRequest")
   @js.native
   class QuickJoinGameRequest protected ()
     extends typings.smartFoxServer.SFS2X.Requests.Game.QuickJoinGameRequest {
@@ -71,6 +74,7 @@ object Game extends js.Object {
     def this(matchExpression: MatchExpression, whereToSearch: js.Array[SFSRoom], roomToLeave: SFSRoom) = this()
   }
   
+  @JSGlobal("SFS2X.Requests.Game.SFSGameSettings")
   @js.native
   class SFSGameSettings protected ()
     extends typings.smartFoxServer.SFS2X.Requests.Game.SFSGameSettings {

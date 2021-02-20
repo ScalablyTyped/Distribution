@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PurchaseReservedElasticsearchInstanceOfferingResponse extends js.Object {
+trait PurchaseReservedElasticsearchInstanceOfferingResponse extends StObject {
   
   /**
     * The customer-specified identifier used to track this reservation.
@@ -26,30 +27,18 @@ object PurchaseReservedElasticsearchInstanceOfferingResponse {
   }
   
   @scala.inline
-  implicit class PurchaseReservedElasticsearchInstanceOfferingResponseOps[Self <: PurchaseReservedElasticsearchInstanceOfferingResponse] (val x: Self) extends AnyVal {
+  implicit class PurchaseReservedElasticsearchInstanceOfferingResponseMutableBuilder[Self <: PurchaseReservedElasticsearchInstanceOfferingResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReservationName(value: ReservationToken): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReservationNameUndefined: Self = StObject.set(x, "ReservationName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedElasticsearchInstanceId(value: GUID): Self = StObject.set(x, "ReservedElasticsearchInstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationName(value: ReservationToken): Self = this.set("ReservationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservationName: Self = this.set("ReservationName", js.undefined)
-    
-    @scala.inline
-    def setReservedElasticsearchInstanceId(value: GUID): Self = this.set("ReservedElasticsearchInstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedElasticsearchInstanceId: Self = this.set("ReservedElasticsearchInstanceId", js.undefined)
+    def setReservedElasticsearchInstanceIdUndefined: Self = StObject.set(x, "ReservedElasticsearchInstanceId", js.undefined)
   }
 }

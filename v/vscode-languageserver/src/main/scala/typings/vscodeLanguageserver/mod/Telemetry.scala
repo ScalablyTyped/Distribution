@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Telemetry extends js.Object {
+trait Telemetry extends StObject {
   
   /**
     * The connection this remote is attached to.
@@ -28,24 +29,12 @@ object Telemetry {
   }
   
   @scala.inline
-  implicit class TelemetryOps[Self <: Telemetry] (val x: Self) extends AnyVal {
+  implicit class TelemetryMutableBuilder[Self <: Telemetry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnection(value: IConnection): Self = this.set("connection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogEvent(value: js.Any => Unit): Self = this.set("logEvent", js.Any.fromFunction1(value))
+    def setLogEvent(value: js.Any => Unit): Self = StObject.set(x, "logEvent", js.Any.fromFunction1(value))
   }
 }

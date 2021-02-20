@@ -1,11 +1,12 @@
 package typings.reactSelect.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Exited extends js.Object {
+trait Exited extends StObject {
   
   var exited: js.Any = js.native
   
@@ -20,24 +21,12 @@ object Exited {
   }
   
   @scala.inline
-  implicit class ExitedOps[Self <: Exited] (val x: Self) extends AnyVal {
+  implicit class ExitedMutableBuilder[Self <: Exited] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExited(value: js.Any): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExited(value: js.Any): Self = this.set("exited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExiting(value: js.Any): Self = this.set("exiting", value.asInstanceOf[js.Any])
+    def setExiting(value: js.Any): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
   }
 }

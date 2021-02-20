@@ -1,6 +1,7 @@
 package typings.reactMapGl.mod
 
 import typings.mapboxGl.mod.Anchor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,90 +44,78 @@ object PopupProps {
   }
   
   @scala.inline
-  implicit class PopupPropsOps[Self <: PopupProps] (val x: Self) extends AnyVal {
+  implicit class PopupPropsMutableBuilder[Self <: PopupProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Anchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDynamicPosition(value: Boolean): Self = StObject.set(x, "dynamicPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    def setDynamicPositionUndefined: Self = StObject.set(x, "dynamicPosition", js.undefined)
     
     @scala.inline
-    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    def setOffsetLeft(value: Double): Self = StObject.set(x, "offsetLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicPosition(value: Boolean): Self = this.set("dynamicPosition", value.asInstanceOf[js.Any])
+    def setOffsetLeftUndefined: Self = StObject.set(x, "offsetLeft", js.undefined)
     
     @scala.inline
-    def deleteDynamicPosition: Self = this.set("dynamicPosition", js.undefined)
+    def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetLeft(value: Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
+    def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
     
     @scala.inline
-    def deleteOffsetLeft: Self = this.set("offsetLeft", js.undefined)
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOffsetTop(value: Double): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+    def setSortByDepth(value: Boolean): Self = StObject.set(x, "sortByDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setSortByDepthUndefined: Self = StObject.set(x, "sortByDepth", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setTipSize(value: Double): Self = StObject.set(x, "tipSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortByDepth(value: Boolean): Self = this.set("sortByDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortByDepth: Self = this.set("sortByDepth", js.undefined)
-    
-    @scala.inline
-    def setTipSize(value: Double): Self = this.set("tipSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTipSize: Self = this.set("tipSize", js.undefined)
+    def setTipSizeUndefined: Self = StObject.set(x, "tipSize", js.undefined)
   }
 }

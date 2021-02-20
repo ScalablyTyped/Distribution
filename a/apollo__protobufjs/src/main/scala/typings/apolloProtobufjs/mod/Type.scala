@@ -3,6 +3,7 @@ package typings.apolloProtobufjs.mod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -142,16 +143,18 @@ class Type protected () extends NamespaceBase {
   def verify(message: StringDictionary[js.UndefOr[js.Any]]): Null | String = js.native
 }
 /* static members */
-@JSImport("@apollo/protobufjs", "Type")
-@js.native
-object Type extends js.Object {
+object Type {
   
   /**
     * Type decorator (TypeScript).
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Decorator function
     */
+  @JSImport("@apollo/protobufjs", "Type.d")
+  @js.native
   def d[T /* <: Message[T] */](): TypeDecorator[T] = js.native
+  @JSImport("@apollo/protobufjs", "Type.d")
+  @js.native
   def d[T /* <: Message[T] */](typeName: String): TypeDecorator[T] = js.native
   
   /**
@@ -160,6 +163,8 @@ object Type extends js.Object {
     * @param json Message type descriptor
     * @returns Created message type
     */
+  @JSImport("@apollo/protobufjs", "Type.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IType): Type = js.native
   
   /**
@@ -167,5 +172,7 @@ object Type extends js.Object {
     * @param mtype Message type
     * @returns Codegen instance
     */
+  @JSImport("@apollo/protobufjs", "Type.generateConstructor")
+  @js.native
   def generateConstructor(mtype: Type): Codegen = js.native
 }

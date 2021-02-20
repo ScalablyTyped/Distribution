@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSequence
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.activexLibreoffice.com_.sun.star.sheet.XRangeSelection
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,54 +89,42 @@ object XInternalDataProvider {
   }
   
   @scala.inline
-  implicit class XInternalDataProviderOps[Self <: XInternalDataProvider] (val x: Self) extends AnyVal {
+  implicit class XInternalDataProviderMutableBuilder[Self <: XInternalDataProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendSequence(value: () => Unit): Self = StObject.set(x, "appendSequence", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteComplexCategoryLevel(value: Double => Unit): Self = StObject.set(x, "deleteComplexCategoryLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteDataPointForAllSequences(value: Double => Unit): Self = StObject.set(x, "deleteDataPointForAllSequences", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendSequence(value: () => Unit): Self = this.set("appendSequence", js.Any.fromFunction0(value))
+    def setDeleteSequence(value: Double => Unit): Self = StObject.set(x, "deleteSequence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteComplexCategoryLevel(value: Double => Unit): Self = this.set("deleteComplexCategoryLevel", js.Any.fromFunction1(value))
+    def setGetDataByRangeRepresentation(value: String => SafeArray[_]): Self = StObject.set(x, "getDataByRangeRepresentation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteDataPointForAllSequences(value: Double => Unit): Self = this.set("deleteDataPointForAllSequences", js.Any.fromFunction1(value))
+    def setHasDataByRangeRepresentation(value: String => Boolean): Self = StObject.set(x, "hasDataByRangeRepresentation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteSequence(value: Double => Unit): Self = this.set("deleteSequence", js.Any.fromFunction1(value))
+    def setInsertComplexCategoryLevel(value: Double => Unit): Self = StObject.set(x, "insertComplexCategoryLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDataByRangeRepresentation(value: String => SafeArray[_]): Self = this.set("getDataByRangeRepresentation", js.Any.fromFunction1(value))
+    def setInsertDataPointForAllSequences(value: Double => Unit): Self = StObject.set(x, "insertDataPointForAllSequences", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasDataByRangeRepresentation(value: String => Boolean): Self = this.set("hasDataByRangeRepresentation", js.Any.fromFunction1(value))
+    def setInsertSequence(value: Double => Unit): Self = StObject.set(x, "insertSequence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertComplexCategoryLevel(value: Double => Unit): Self = this.set("insertComplexCategoryLevel", js.Any.fromFunction1(value))
+    def setRegisterDataSequenceForChanges(value: XDataSequence => Unit): Self = StObject.set(x, "registerDataSequenceForChanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertDataPointForAllSequences(value: Double => Unit): Self = this.set("insertDataPointForAllSequences", js.Any.fromFunction1(value))
+    def setSetDataByRangeRepresentation(value: (String, SeqEquiv[_]) => Unit): Self = StObject.set(x, "setDataByRangeRepresentation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInsertSequence(value: Double => Unit): Self = this.set("insertSequence", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterDataSequenceForChanges(value: XDataSequence => Unit): Self = this.set("registerDataSequenceForChanges", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDataByRangeRepresentation(value: (String, SeqEquiv[_]) => Unit): Self = this.set("setDataByRangeRepresentation", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSwapDataPointWithNextOneForAllSequences(value: Double => Unit): Self = this.set("swapDataPointWithNextOneForAllSequences", js.Any.fromFunction1(value))
+    def setSwapDataPointWithNextOneForAllSequences(value: Double => Unit): Self = StObject.set(x, "swapDataPointWithNextOneForAllSequences", js.Any.fromFunction1(value))
   }
 }

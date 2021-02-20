@@ -10,6 +10,7 @@ import typings.googleAppsScript.googleAppsScriptStrings.left
 import typings.googleAppsScript.googleAppsScriptStrings.middle
 import typings.googleAppsScript.googleAppsScriptStrings.normal
 import typings.googleAppsScript.googleAppsScriptStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * adjacent cells in a sheet.
   */
 @js.native
-trait Range extends js.Object {
+trait Range extends StObject {
   
   def activate(): Range = js.native
   

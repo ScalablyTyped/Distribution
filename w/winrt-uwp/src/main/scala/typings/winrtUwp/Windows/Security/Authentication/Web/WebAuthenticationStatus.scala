@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebAuthenticationStatus extends js.Object
+sealed trait WebAuthenticationStatus extends StObject
 /** Contains the status of the authentication operation. */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationStatus")
 @js.native
-object WebAuthenticationStatus extends js.Object {
+object WebAuthenticationStatus extends StObject {
   
   /** The operation failed because a specific HTTP error was returned, for example 404. */
   @js.native

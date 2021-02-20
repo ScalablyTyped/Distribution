@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2LDiversityEquivalenceClass extends js.Object {
+trait GooglePrivacyDlpV2LDiversityEquivalenceClass extends StObject {
   
   /** Size of the k-anonymity equivalence class. */
   var equivalenceClassSize: js.UndefOr[String] = js.native
@@ -28,48 +29,36 @@ object GooglePrivacyDlpV2LDiversityEquivalenceClass {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2LDiversityEquivalenceClassOps[Self <: GooglePrivacyDlpV2LDiversityEquivalenceClass] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2LDiversityEquivalenceClassMutableBuilder[Self <: GooglePrivacyDlpV2LDiversityEquivalenceClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquivalenceClassSize(value: String): Self = StObject.set(x, "equivalenceClassSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquivalenceClassSizeUndefined: Self = StObject.set(x, "equivalenceClassSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumDistinctSensitiveValues(value: String): Self = StObject.set(x, "numDistinctSensitiveValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquivalenceClassSize(value: String): Self = this.set("equivalenceClassSize", value.asInstanceOf[js.Any])
+    def setNumDistinctSensitiveValuesUndefined: Self = StObject.set(x, "numDistinctSensitiveValues", js.undefined)
     
     @scala.inline
-    def deleteEquivalenceClassSize: Self = this.set("equivalenceClassSize", js.undefined)
+    def setQuasiIdsValues(value: js.Array[GooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumDistinctSensitiveValues(value: String): Self = this.set("numDistinctSensitiveValues", value.asInstanceOf[js.Any])
+    def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
     
     @scala.inline
-    def deleteNumDistinctSensitiveValues: Self = this.set("numDistinctSensitiveValues", js.undefined)
+    def setQuasiIdsValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
     
     @scala.inline
-    def setQuasiIdsValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = this.set("quasiIdsValues", js.Array(value :_*))
+    def setTopSensitiveValues(value: js.Array[GooglePrivacyDlpV2ValueFrequency]): Self = StObject.set(x, "topSensitiveValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuasiIdsValues(value: js.Array[GooglePrivacyDlpV2Value]): Self = this.set("quasiIdsValues", value.asInstanceOf[js.Any])
+    def setTopSensitiveValuesUndefined: Self = StObject.set(x, "topSensitiveValues", js.undefined)
     
     @scala.inline
-    def deleteQuasiIdsValues: Self = this.set("quasiIdsValues", js.undefined)
-    
-    @scala.inline
-    def setTopSensitiveValuesVarargs(value: GooglePrivacyDlpV2ValueFrequency*): Self = this.set("topSensitiveValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setTopSensitiveValues(value: js.Array[GooglePrivacyDlpV2ValueFrequency]): Self = this.set("topSensitiveValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopSensitiveValues: Self = this.set("topSensitiveValues", js.undefined)
+    def setTopSensitiveValuesVarargs(value: GooglePrivacyDlpV2ValueFrequency*): Self = StObject.set(x, "topSensitiveValues", js.Array(value :_*))
   }
 }

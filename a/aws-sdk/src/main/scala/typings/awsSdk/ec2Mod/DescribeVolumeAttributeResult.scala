@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVolumeAttributeResult extends js.Object {
+trait DescribeVolumeAttributeResult extends StObject {
   
   /**
     * The state of autoEnableIO attribute.
@@ -31,39 +32,27 @@ object DescribeVolumeAttributeResult {
   }
   
   @scala.inline
-  implicit class DescribeVolumeAttributeResultOps[Self <: DescribeVolumeAttributeResult] (val x: Self) extends AnyVal {
+  implicit class DescribeVolumeAttributeResultMutableBuilder[Self <: DescribeVolumeAttributeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoEnableIO(value: AttributeBooleanValue): Self = StObject.set(x, "AutoEnableIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoEnableIOUndefined: Self = StObject.set(x, "AutoEnableIO", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoEnableIO(value: AttributeBooleanValue): Self = this.set("AutoEnableIO", value.asInstanceOf[js.Any])
+    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
     @scala.inline
-    def deleteAutoEnableIO: Self = this.set("AutoEnableIO", js.undefined)
+    def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
     @scala.inline
-    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
-    
-    @scala.inline
-    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
   }
 }

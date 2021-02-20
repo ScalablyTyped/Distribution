@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Limits extends js.Object {
+trait Limits extends StObject {
   
   var MaximumPartitionCount: typings.awsSdk.cloudsearchMod.MaximumPartitionCount = js.native
   
@@ -20,24 +21,12 @@ object Limits {
   }
   
   @scala.inline
-  implicit class LimitsOps[Self <: Limits] (val x: Self) extends AnyVal {
+  implicit class LimitsMutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumPartitionCount(value: MaximumPartitionCount): Self = StObject.set(x, "MaximumPartitionCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaximumPartitionCount(value: MaximumPartitionCount): Self = this.set("MaximumPartitionCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaximumReplicationCount(value: MaximumReplicationCount): Self = this.set("MaximumReplicationCount", value.asInstanceOf[js.Any])
+    def setMaximumReplicationCount(value: MaximumReplicationCount): Self = StObject.set(x, "MaximumReplicationCount", value.asInstanceOf[js.Any])
   }
 }

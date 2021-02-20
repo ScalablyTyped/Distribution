@@ -2,6 +2,7 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

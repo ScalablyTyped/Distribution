@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCommandsResult extends js.Object {
+trait DescribeCommandsResult extends StObject {
   
   /**
     * An array of Command objects that describe each of the specified commands.
@@ -21,27 +22,15 @@ object DescribeCommandsResult {
   }
   
   @scala.inline
-  implicit class DescribeCommandsResultOps[Self <: DescribeCommandsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeCommandsResultMutableBuilder[Self <: DescribeCommandsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommands(value: Commands): Self = StObject.set(x, "Commands", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandsUndefined: Self = StObject.set(x, "Commands", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommandsVarargs(value: Command*): Self = this.set("Commands", js.Array(value :_*))
-    
-    @scala.inline
-    def setCommands(value: Commands): Self = this.set("Commands", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommands: Self = this.set("Commands", js.undefined)
+    def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value :_*))
   }
 }

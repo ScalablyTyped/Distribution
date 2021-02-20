@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceInfo extends js.Object {
+trait InstanceInfo extends StObject {
   
   /** Name of a Compute Engine instance. */
   var displayName: js.UndefOr[String] = js.native
@@ -40,69 +41,57 @@ object InstanceInfo {
   }
   
   @scala.inline
-  implicit class InstanceInfoOps[Self <: InstanceInfo] (val x: Self) extends AnyVal {
+  implicit class InstanceInfoMutableBuilder[Self <: InstanceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalIp(value: String): Self = StObject.set(x, "externalIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setExternalIpUndefined: Self = StObject.set(x, "externalIp", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalIp(value: String): Self = this.set("externalIp", value.asInstanceOf[js.Any])
+    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
     @scala.inline
-    def deleteExternalIp: Self = this.set("externalIp", js.undefined)
+    def setInternalIp(value: String): Self = StObject.set(x, "internalIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterface(value: String): Self = this.set("interface", value.asInstanceOf[js.Any])
+    def setInternalIpUndefined: Self = StObject.set(x, "internalIp", js.undefined)
     
     @scala.inline
-    def deleteInterface: Self = this.set("interface", js.undefined)
+    def setNetworkTags(value: js.Array[String]): Self = StObject.set(x, "networkTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalIp(value: String): Self = this.set("internalIp", value.asInstanceOf[js.Any])
+    def setNetworkTagsUndefined: Self = StObject.set(x, "networkTags", js.undefined)
     
     @scala.inline
-    def deleteInternalIp: Self = this.set("internalIp", js.undefined)
+    def setNetworkTagsVarargs(value: String*): Self = StObject.set(x, "networkTags", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkTagsVarargs(value: String*): Self = this.set("networkTags", js.Array(value :_*))
+    def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkTags(value: js.Array[String]): Self = this.set("networkTags", value.asInstanceOf[js.Any])
+    def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
     
     @scala.inline
-    def deleteNetworkTags: Self = this.set("networkTags", js.undefined)
+    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkUri(value: String): Self = this.set("networkUri", value.asInstanceOf[js.Any])
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def deleteNetworkUri: Self = this.set("networkUri", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccount(value: String): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

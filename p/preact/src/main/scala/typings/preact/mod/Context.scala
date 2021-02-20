@@ -2,12 +2,13 @@ package typings.preact.mod
 
 import typings.preact.anon.Value
 import typings.preact.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context[T] extends js.Object {
+trait Context[T] extends StObject {
   
   def Consumer(props: RenderableProps[`0`[T], _]): VNode[_] | Null = js.native
   def Consumer(props: RenderableProps[`0`[T], _], context: js.Any): VNode[_] | Null = js.native

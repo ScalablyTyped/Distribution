@@ -16,6 +16,7 @@ import typings.is.isStrings.timeString
 import typings.is.isStrings.url
 import typings.is.isStrings.usZipCode
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

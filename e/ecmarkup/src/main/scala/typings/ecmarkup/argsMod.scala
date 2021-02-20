@@ -1,13 +1,14 @@
 package typings.ecmarkup
 
 import typings.nomnom.NomnomInternal.Parser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecmarkup/lib/args", JSImport.Namespace)
-@js.native
-object argsMod extends js.Object {
+object argsMod {
   
+  @JSImport("ecmarkup/lib/args", "argParser")
+  @js.native
   val argParser: Parser = js.native
 }

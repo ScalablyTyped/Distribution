@@ -1,12 +1,13 @@
 package typings.rcTable.anon
 
 import typings.rcTable.interfaceMod.FixedType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fixed extends js.Object {
+trait Fixed extends StObject {
   
   var fixed: js.UndefOr[FixedType] = js.native
 }
@@ -19,24 +20,12 @@ object Fixed {
   }
   
   @scala.inline
-  implicit class FixedOps[Self <: Fixed] (val x: Self) extends AnyVal {
+  implicit class FixedMutableBuilder[Self <: Fixed] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFixed(value: FixedType): Self = this.set("fixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
   }
 }

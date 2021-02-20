@@ -1,12 +1,13 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openid-client", "DeviceFlowHandle")
 @js.native
-class DeviceFlowHandle[TClient /* <: Client */] () extends js.Object {
+class DeviceFlowHandle[TClient /* <: Client */] () extends StObject {
   
   var client: TClient = js.native
   

@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UploadLayerPartRequest extends js.Object {
+trait UploadLayerPartRequest extends StObject {
   
   /**
     * The base64-encoded layer part payload.
@@ -52,39 +53,27 @@ object UploadLayerPartRequest {
   }
   
   @scala.inline
-  implicit class UploadLayerPartRequestOps[Self <: UploadLayerPartRequest] (val x: Self) extends AnyVal {
+  implicit class UploadLayerPartRequestMutableBuilder[Self <: UploadLayerPartRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerPartBlob(value: LayerPartBlob): Self = StObject.set(x, "layerPartBlob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartFirstByte(value: PartSize): Self = StObject.set(x, "partFirstByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPartLastByte(value: PartSize): Self = StObject.set(x, "partLastByte", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerPartBlob(value: LayerPartBlob): Self = this.set("layerPartBlob", value.asInstanceOf[js.Any])
+    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartFirstByte(value: PartSize): Self = this.set("partFirstByte", value.asInstanceOf[js.Any])
+    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
     @scala.inline
-    def setPartLastByte(value: PartSize): Self = this.set("partLastByte", value.asInstanceOf[js.Any])
+    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUploadId(value: UploadId): Self = this.set("uploadId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/downloader", JSImport.Namespace)
-@js.native
-object downloaderMod extends js.Object {
+object downloaderMod {
   
+  @JSImport("ag-grid/dist/lib/downloader", "Downloader")
   @js.native
-  class Downloader () extends js.Object {
+  class Downloader () extends StObject {
     
     def download(fileName: String, content: String, mimeType: String): Unit = js.native
   }

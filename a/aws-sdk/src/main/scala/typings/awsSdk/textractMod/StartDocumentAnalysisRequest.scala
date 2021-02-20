@@ -1,11 +1,12 @@
 package typings.awsSdk.textractMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartDocumentAnalysisRequest extends js.Object {
+trait StartDocumentAnalysisRequest extends StObject {
   
   /**
     * The idempotent token that you use to identify the start request. If you use the same token with multiple StartDocumentAnalysis requests, the same JobId is returned. Use ClientRequestToken to prevent the same job from being accidentally started more than once. For more information, see Calling Amazon Textract Asynchronous Operations.
@@ -51,57 +52,45 @@ object StartDocumentAnalysisRequest {
   }
   
   @scala.inline
-  implicit class StartDocumentAnalysisRequestOps[Self <: StartDocumentAnalysisRequest] (val x: Self) extends AnyVal {
+  implicit class StartDocumentAnalysisRequestMutableBuilder[Self <: StartDocumentAnalysisRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentLocation(value: DocumentLocation): Self = StObject.set(x, "DocumentLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentLocation(value: DocumentLocation): Self = this.set("DocumentLocation", value.asInstanceOf[js.Any])
+    def setFeatureTypes(value: FeatureTypes): Self = StObject.set(x, "FeatureTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureTypesVarargs(value: FeatureType*): Self = this.set("FeatureTypes", js.Array(value :_*))
+    def setFeatureTypesVarargs(value: FeatureType*): Self = StObject.set(x, "FeatureTypes", js.Array(value :_*))
     
     @scala.inline
-    def setFeatureTypes(value: FeatureTypes): Self = this.set("FeatureTypes", value.asInstanceOf[js.Any])
+    def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setKMSKeyId(value: KMSKeyId): Self = StObject.set(x, "KMSKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTag(value: JobTag): Self = this.set("JobTag", value.asInstanceOf[js.Any])
+    def setKMSKeyIdUndefined: Self = StObject.set(x, "KMSKeyId", js.undefined)
     
     @scala.inline
-    def deleteJobTag: Self = this.set("JobTag", js.undefined)
+    def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKMSKeyId(value: KMSKeyId): Self = this.set("KMSKeyId", value.asInstanceOf[js.Any])
+    def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
     
     @scala.inline
-    def deleteKMSKeyId: Self = this.set("KMSKeyId", js.undefined)
+    def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationChannel(value: NotificationChannel): Self = this.set("NotificationChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationChannel: Self = this.set("NotificationChannel", js.undefined)
-    
-    @scala.inline
-    def setOutputConfig(value: OutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputConfig: Self = this.set("OutputConfig", js.undefined)
+    def setOutputConfigUndefined: Self = StObject.set(x, "OutputConfig", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.style.GraphicLocation
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,36 +91,24 @@ object ObjectIndex {
   }
   
   @scala.inline
-  implicit class ObjectIndexOps[Self <: ObjectIndex] (val x: Self) extends AnyVal {
+  implicit class ObjectIndexMutableBuilder[Self <: ObjectIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFromOtherEmbeddedObjects(value: Boolean): Self = StObject.set(x, "CreateFromOtherEmbeddedObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFromStarCalc(value: Boolean): Self = StObject.set(x, "CreateFromStarCalc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateFromStarChart(value: Boolean): Self = StObject.set(x, "CreateFromStarChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromOtherEmbeddedObjects(value: Boolean): Self = this.set("CreateFromOtherEmbeddedObjects", value.asInstanceOf[js.Any])
+    def setCreateFromStarDraw(value: Boolean): Self = StObject.set(x, "CreateFromStarDraw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromStarCalc(value: Boolean): Self = this.set("CreateFromStarCalc", value.asInstanceOf[js.Any])
+    def setCreateFromStarImage(value: Boolean): Self = StObject.set(x, "CreateFromStarImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFromStarChart(value: Boolean): Self = this.set("CreateFromStarChart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateFromStarDraw(value: Boolean): Self = this.set("CreateFromStarDraw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateFromStarImage(value: Boolean): Self = this.set("CreateFromStarImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateFromStarMath(value: Boolean): Self = this.set("CreateFromStarMath", value.asInstanceOf[js.Any])
+    def setCreateFromStarMath(value: Boolean): Self = StObject.set(x, "CreateFromStarMath", value.asInstanceOf[js.Any])
   }
 }

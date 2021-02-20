@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSecretRequest extends js.Object {
+trait DeleteSecretRequest extends StObject {
   
   /**
     * (Optional) Specifies that the secret is to be deleted without any recovery window. You can't use both this parameter and the RecoveryWindowInDays parameter in the same API call. An asynchronous background process performs the actual deletion, so there can be a short delay before the operation completes. If you write code to delete and then immediately recreate a secret with the same name, ensure that your code includes appropriate back off and retry logic.  Use this parameter with caution. This parameter causes the operation to skip the normal waiting period before the permanent deletion that AWS would normally impose with the RecoveryWindowInDays parameter. If you delete a secret with the ForceDeleteWithouRecovery parameter, then you have no opportunity to recover the secret. It is permanently lost. 
@@ -31,33 +32,21 @@ object DeleteSecretRequest {
   }
   
   @scala.inline
-  implicit class DeleteSecretRequestOps[Self <: DeleteSecretRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteSecretRequestMutableBuilder[Self <: DeleteSecretRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceDeleteWithoutRecovery(value: BooleanType): Self = StObject.set(x, "ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceDeleteWithoutRecoveryUndefined: Self = StObject.set(x, "ForceDeleteWithoutRecovery", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecoveryWindowInDays(value: RecoveryWindowInDaysType): Self = StObject.set(x, "RecoveryWindowInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretId(value: SecretIdType): Self = this.set("SecretId", value.asInstanceOf[js.Any])
+    def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "RecoveryWindowInDays", js.undefined)
     
     @scala.inline
-    def setForceDeleteWithoutRecovery(value: BooleanType): Self = this.set("ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceDeleteWithoutRecovery: Self = this.set("ForceDeleteWithoutRecovery", js.undefined)
-    
-    @scala.inline
-    def setRecoveryWindowInDays(value: RecoveryWindowInDaysType): Self = this.set("RecoveryWindowInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecoveryWindowInDays: Self = this.set("RecoveryWindowInDays", js.undefined)
+    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

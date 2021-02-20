@@ -1,6 +1,7 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
 import typings.microsoftLiveConnect.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains work information for one employer.
   */
 @js.native
-trait IWorkInfo extends js.Object {
+trait IWorkInfo extends StObject {
   
   /**
     * Info about the user's employer.
@@ -30,24 +31,12 @@ object IWorkInfo {
   }
   
   @scala.inline
-  implicit class IWorkInfoOps[Self <: IWorkInfo] (val x: Self) extends AnyVal {
+  implicit class IWorkInfoMutableBuilder[Self <: IWorkInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmployer(value: Name): Self = this.set("employer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Name): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Name): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

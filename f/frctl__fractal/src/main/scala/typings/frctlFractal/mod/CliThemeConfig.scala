@@ -2,12 +2,13 @@ package typings.frctlFractal.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.frctlFractal.anon.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CliThemeConfig extends js.Object {
+trait CliThemeConfig extends StObject {
   
   var delimiter: js.UndefOr[Format] = js.native
   
@@ -28,42 +29,30 @@ object CliThemeConfig {
   }
   
   @scala.inline
-  implicit class CliThemeConfigOps[Self <: CliThemeConfig] (val x: Self) extends AnyVal {
+  implicit class CliThemeConfigMutableBuilder[Self <: CliThemeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelimiter(value: Format): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimiterDotformat(value: /* str */ String => String): Self = StObject.set(x, "delimiter.format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelimiterDotformatUndefined: Self = StObject.set(x, "delimiter.format", js.undefined)
     
     @scala.inline
-    def setDelimiter(value: Format): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setDelimiterDottext(value: String): Self = StObject.set(x, "delimiter.text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setDelimiterDottextUndefined: Self = StObject.set(x, "delimiter.text", js.undefined)
     
     @scala.inline
-    def setDelimiterDotformat(value: /* str */ String => String): Self = this.set("delimiter.format", js.Any.fromFunction1(value))
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteDelimiterDotformat: Self = this.set("delimiter.format", js.undefined)
+    def setStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiterDottext(value: String): Self = this.set("delimiter.text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelimiterDottext: Self = this.set("delimiter.text", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: StringDictionary[js.Any]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

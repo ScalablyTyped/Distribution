@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OcrRequest extends js.Object {
+trait OcrRequest extends StObject {
   
   var ocrLanguage: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object OcrRequest {
   }
   
   @scala.inline
-  implicit class OcrRequestOps[Self <: OcrRequest] (val x: Self) extends AnyVal {
+  implicit class OcrRequestMutableBuilder[Self <: OcrRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOcrLanguageUndefined: Self = StObject.set(x, "ocrLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSelection(value: String): Self = StObject.set(x, "pageSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcrLanguage(value: String): Self = this.set("ocrLanguage", value.asInstanceOf[js.Any])
+    def setPageSelectionUndefined: Self = StObject.set(x, "pageSelection", js.undefined)
     
     @scala.inline
-    def deleteOcrLanguage: Self = this.set("ocrLanguage", js.undefined)
+    def setSetPageOrientation(value: String): Self = StObject.set(x, "setPageOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSelection(value: String): Self = this.set("pageSelection", value.asInstanceOf[js.Any])
+    def setSetPageOrientationUndefined: Self = StObject.set(x, "setPageOrientation", js.undefined)
     
     @scala.inline
-    def deletePageSelection: Self = this.set("pageSelection", js.undefined)
+    def setShowFrames(value: String): Self = StObject.set(x, "showFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPageOrientation(value: String): Self = this.set("setPageOrientation", value.asInstanceOf[js.Any])
+    def setShowFramesUndefined: Self = StObject.set(x, "showFrames", js.undefined)
     
     @scala.inline
-    def deleteSetPageOrientation: Self = this.set("setPageOrientation", js.undefined)
+    def setShowText(value: String): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFrames(value: String): Self = this.set("showFrames", value.asInstanceOf[js.Any])
+    def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
     
     @scala.inline
-    def deleteShowFrames: Self = this.set("showFrames", js.undefined)
+    def setSkipPagesHavingExistingExtractableText(value: String): Self = StObject.set(x, "skipPagesHavingExistingExtractableText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowText(value: String): Self = this.set("showText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowText: Self = this.set("showText", js.undefined)
-    
-    @scala.inline
-    def setSkipPagesHavingExistingExtractableText(value: String): Self = this.set("skipPagesHavingExistingExtractableText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipPagesHavingExistingExtractableText: Self = this.set("skipPagesHavingExistingExtractableText", js.undefined)
+    def setSkipPagesHavingExistingExtractableTextUndefined: Self = StObject.set(x, "skipPagesHavingExistingExtractableText", js.undefined)
   }
 }

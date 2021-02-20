@@ -67,6 +67,7 @@ import typings.std.ImageData
 import typings.std.MouseEvent
 import typings.std.TouchEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

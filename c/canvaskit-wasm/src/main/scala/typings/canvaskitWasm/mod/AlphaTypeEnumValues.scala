@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object AlphaTypeEnumValues {
   }
   
   @scala.inline
-  implicit class AlphaTypeEnumValuesOps[Self <: AlphaTypeEnumValues] (val x: Self) extends AnyVal {
+  implicit class AlphaTypeEnumValuesMutableBuilder[Self <: AlphaTypeEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpaque(value: AlphaType): Self = StObject.set(x, "Opaque", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPremul(value: AlphaType): Self = StObject.set(x, "Premul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpaque(value: AlphaType): Self = this.set("Opaque", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPremul(value: AlphaType): Self = this.set("Premul", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnpremul(value: AlphaType): Self = this.set("Unpremul", value.asInstanceOf[js.Any])
+    def setUnpremul(value: AlphaType): Self = StObject.set(x, "Unpremul", value.asInstanceOf[js.Any])
   }
 }

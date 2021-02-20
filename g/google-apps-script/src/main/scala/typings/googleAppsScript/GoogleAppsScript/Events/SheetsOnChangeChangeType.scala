@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Events
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleAppsScript.googleAppsScriptStrings.FORMAT
   - typings.googleAppsScript.googleAppsScriptStrings.OTHER
 */
-trait SheetsOnChangeChangeType extends js.Object
+trait SheetsOnChangeChangeType extends StObject
 object SheetsOnChangeChangeType {
   
   @scala.inline

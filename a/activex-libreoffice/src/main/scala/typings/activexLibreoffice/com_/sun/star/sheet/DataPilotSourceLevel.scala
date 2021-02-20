@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,27 +73,15 @@ object DataPilotSourceLevel {
   }
   
   @scala.inline
-  implicit class DataPilotSourceLevelOps[Self <: DataPilotSourceLevel] (val x: Self) extends AnyVal {
+  implicit class DataPilotSourceLevelMutableBuilder[Self <: DataPilotSourceLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowEmpty(value: Boolean): Self = StObject.set(x, "ShowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubTotals(value: SafeArray[GeneralFunction]): Self = StObject.set(x, "SubTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShowEmpty(value: Boolean): Self = this.set("ShowEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubTotals(value: SafeArray[GeneralFunction]): Self = this.set("SubTotals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubTotals2(value: SafeArray[Double]): Self = this.set("SubTotals2", value.asInstanceOf[js.Any])
+    def setSubTotals2(value: SafeArray[Double]): Self = StObject.set(x, "SubTotals2", value.asInstanceOf[js.Any])
   }
 }

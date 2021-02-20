@@ -1,12 +1,13 @@
 package typings.sinon.mod
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSpyCallApi[TArgs /* <: js.Array[_] */, TReturnValue] extends js.Object {
+trait SinonSpyCallApi[TArgs /* <: js.Array[_] */, TReturnValue] extends StObject {
   
   // Properties
   /**

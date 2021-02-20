@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrantConstraints extends js.Object {
+trait GrantConstraints extends StObject {
   
   /**
     * A list of key-value pairs that must match the encryption context in the cryptographic operation request. The grant allows the operation only when the encryption context in the request is the same as the encryption context specified in this constraint.
@@ -26,30 +27,18 @@ object GrantConstraints {
   }
   
   @scala.inline
-  implicit class GrantConstraintsOps[Self <: GrantConstraints] (val x: Self) extends AnyVal {
+  implicit class GrantConstraintsMutableBuilder[Self <: GrantConstraints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionContextEquals(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionContextSubset(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionContextEquals(value: EncryptionContextType): Self = this.set("EncryptionContextEquals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionContextEquals: Self = this.set("EncryptionContextEquals", js.undefined)
-    
-    @scala.inline
-    def setEncryptionContextSubset(value: EncryptionContextType): Self = this.set("EncryptionContextSubset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionContextSubset: Self = this.set("EncryptionContextSubset", js.undefined)
+    def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
   }
 }

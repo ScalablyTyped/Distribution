@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,30 +31,18 @@ object IPathDirectional {
   }
   
   @scala.inline
-  implicit class IPathDirectionalOps[Self <: IPathDirectional] (val x: Self) extends AnyVal {
+  implicit class IPathDirectionalMutableBuilder[Self <: IPathDirectional] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndPoints(value: js.Array[IPoint]): Self = StObject.set(x, "endPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndPointsVarargs(value: IPoint*): Self = StObject.set(x, "endPoints", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPointsVarargs(value: IPoint*): Self = this.set("endPoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setEndPoints(value: js.Array[IPoint]): Self = this.set("endPoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReversed: Self = this.set("reversed", js.undefined)
+    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

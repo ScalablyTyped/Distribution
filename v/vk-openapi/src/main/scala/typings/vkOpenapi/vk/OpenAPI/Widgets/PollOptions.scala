@@ -1,11 +1,12 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PollOptions extends js.Object {
+trait PollOptions extends StObject {
   
   var pageUrl: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object PollOptions {
   }
   
   @scala.inline
-  implicit class PollOptionsOps[Self <: PollOptions] (val x: Self) extends AnyVal {
+  implicit class PollOptionsMutableBuilder[Self <: PollOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

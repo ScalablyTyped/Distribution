@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for the automatic reply functionality of an email account. */
 @js.native
-trait EmailMailboxAutoReplySettings extends js.Object {
+trait EmailMailboxAutoReplySettings extends StObject {
   
   /** Represents the end time for the automated reply period. */
   var endTime: Date = js.native
@@ -47,39 +48,27 @@ object EmailMailboxAutoReplySettings {
   }
   
   @scala.inline
-  implicit class EmailMailboxAutoReplySettingsOps[Self <: EmailMailboxAutoReplySettings] (val x: Self) extends AnyVal {
+  implicit class EmailMailboxAutoReplySettingsMutableBuilder[Self <: EmailMailboxAutoReplySettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "internalReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: Date): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setKnownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "knownExternalReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalReply(value: EmailMailboxAutoReply): Self = this.set("internalReply", value.asInstanceOf[js.Any])
+    def setResponseKind(value: EmailMailboxAutoReplyMessageResponseKind): Self = StObject.set(x, "responseKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKnownExternalReply(value: EmailMailboxAutoReply): Self = this.set("knownExternalReply", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseKind(value: EmailMailboxAutoReplyMessageResponseKind): Self = this.set("responseKind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknownExternalReply(value: EmailMailboxAutoReply): Self = this.set("unknownExternalReply", value.asInstanceOf[js.Any])
+    def setUnknownExternalReply(value: EmailMailboxAutoReply): Self = StObject.set(x, "unknownExternalReply", value.asInstanceOf[js.Any])
   }
 }

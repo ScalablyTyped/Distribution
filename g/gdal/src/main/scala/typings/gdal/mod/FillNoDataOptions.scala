@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FillNoDataOptions extends js.Object {
+trait FillNoDataOptions extends StObject {
   
   var mask: js.UndefOr[RasterBand] = js.native
   
@@ -24,36 +25,24 @@ object FillNoDataOptions {
   }
   
   @scala.inline
-  implicit class FillNoDataOptionsOps[Self <: FillNoDataOptions] (val x: Self) extends AnyVal {
+  implicit class FillNoDataOptionsMutableBuilder[Self <: FillNoDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMask(value: RasterBand): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSearchDist(value: Double): Self = StObject.set(x, "searchDist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchDist(value: Double): Self = this.set("searchDist", value.asInstanceOf[js.Any])
+    def setSmoothingIterations(value: Double): Self = StObject.set(x, "smoothingIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrc(value: RasterBand): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSmoothingIterationsUndefined: Self = StObject.set(x, "smoothingIterations", js.undefined)
     
     @scala.inline
-    def setMask(value: RasterBand): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
-    
-    @scala.inline
-    def setSmoothingIterations(value: Double): Self = this.set("smoothingIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothingIterations: Self = this.set("smoothingIterations", js.undefined)
+    def setSrc(value: RasterBand): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

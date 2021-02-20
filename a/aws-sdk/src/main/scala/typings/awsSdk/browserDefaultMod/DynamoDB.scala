@@ -7,6 +7,7 @@ import typings.awsSdk.dynamodbMod.AttributeMap
 import typings.awsSdk.dynamodbMod.AttributeValue
 import typings.awsSdk.dynamodbMod.ClientConfiguration
 import typings.awsSdk.dynamodbMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,30 +20,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class DynamoDB () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
-@JSImport("aws-sdk/clients/browser_default", "DynamoDB")
-@js.native
-object DynamoDB extends js.Object {
+object DynamoDB {
   
+  @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter")
   @js.native
   class Converter ()
     extends typings.awsSdk.dynamodbMod.Converter
   /* static members */
-  @js.native
-  object Converter extends js.Object {
+  object Converter {
     
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.input")
+    @js.native
     def input(data: js.Any): AttributeValue = js.native
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.input")
+    @js.native
     def input(data: js.Any, options: ConverterOptions): AttributeValue = js.native
     
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.marshall")
+    @js.native
     def marshall(data: StringDictionary[js.Any]): AttributeMap = js.native
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.marshall")
+    @js.native
     def marshall(data: StringDictionary[js.Any], options: ConverterOptions): AttributeMap = js.native
     
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.output")
+    @js.native
     def output(data: AttributeValue): js.Any = js.native
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.output")
+    @js.native
     def output(data: AttributeValue, options: ConverterOptions): js.Any = js.native
     
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.unmarshall")
+    @js.native
     def unmarshall(data: AttributeMap): StringDictionary[js.Any] = js.native
+    @JSImport("aws-sdk/clients/browser_default", "DynamoDB.Converter.unmarshall")
+    @js.native
     def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[js.Any] = js.native
   }
   
+  @JSImport("aws-sdk/clients/browser_default", "DynamoDB.DocumentClient")
   @js.native
   /**
     * Creates a DynamoDB document client with a set of configuration options.

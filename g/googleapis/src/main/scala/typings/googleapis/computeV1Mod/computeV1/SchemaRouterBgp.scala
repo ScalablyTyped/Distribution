@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaRouterBgp extends js.Object {
+trait SchemaRouterBgp extends StObject {
   
   /**
     * User-specified flag to indicate which mode to use for advertisement.
@@ -47,48 +48,36 @@ object SchemaRouterBgp {
   }
   
   @scala.inline
-  implicit class SchemaRouterBgpOps[Self <: SchemaRouterBgp] (val x: Self) extends AnyVal {
+  implicit class SchemaRouterBgpMutableBuilder[Self <: SchemaRouterBgp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiseMode(value: String): Self = StObject.set(x, "advertiseMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiseModeUndefined: Self = StObject.set(x, "advertiseMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertisedGroups(value: js.Array[String]): Self = StObject.set(x, "advertisedGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiseMode(value: String): Self = this.set("advertiseMode", value.asInstanceOf[js.Any])
+    def setAdvertisedGroupsUndefined: Self = StObject.set(x, "advertisedGroups", js.undefined)
     
     @scala.inline
-    def deleteAdvertiseMode: Self = this.set("advertiseMode", js.undefined)
+    def setAdvertisedGroupsVarargs(value: String*): Self = StObject.set(x, "advertisedGroups", js.Array(value :_*))
     
     @scala.inline
-    def setAdvertisedGroupsVarargs(value: String*): Self = this.set("advertisedGroups", js.Array(value :_*))
+    def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = StObject.set(x, "advertisedIpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisedGroups(value: js.Array[String]): Self = this.set("advertisedGroups", value.asInstanceOf[js.Any])
+    def setAdvertisedIpRangesUndefined: Self = StObject.set(x, "advertisedIpRanges", js.undefined)
     
     @scala.inline
-    def deleteAdvertisedGroups: Self = this.set("advertisedGroups", js.undefined)
+    def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = StObject.set(x, "advertisedIpRanges", js.Array(value :_*))
     
     @scala.inline
-    def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = this.set("advertisedIpRanges", js.Array(value :_*))
+    def setAsn(value: Double): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = this.set("advertisedIpRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAdvertisedIpRanges: Self = this.set("advertisedIpRanges", js.undefined)
-    
-    @scala.inline
-    def setAsn(value: Double): Self = this.set("asn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsn: Self = this.set("asn", js.undefined)
+    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
   }
 }

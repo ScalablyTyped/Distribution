@@ -1,12 +1,13 @@
 package typings.lodash.fpMod
 
 import typings.lodash.mod.List
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashShuffle extends js.Object {
+trait LodashShuffle extends StObject {
   
   def apply[T /* <: js.Object */](): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

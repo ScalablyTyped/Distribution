@@ -1,11 +1,12 @@
 package typings.awsSdk.dataexchangeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseDetails extends js.Object {
+trait ResponseDetails extends StObject {
   
   /**
     * Details for the export to signed URL response.
@@ -36,42 +37,30 @@ object ResponseDetails {
   }
   
   @scala.inline
-  implicit class ResponseDetailsOps[Self <: ResponseDetails] (val x: Self) extends AnyVal {
+  implicit class ResponseDetailsMutableBuilder[Self <: ResponseDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportAssetToSignedUrl(value: ExportAssetToSignedUrlResponseDetails): Self = StObject.set(x, "ExportAssetToSignedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportAssetToSignedUrlUndefined: Self = StObject.set(x, "ExportAssetToSignedUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportAssetsToS3(value: ExportAssetsToS3ResponseDetails): Self = StObject.set(x, "ExportAssetsToS3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAssetToSignedUrl(value: ExportAssetToSignedUrlResponseDetails): Self = this.set("ExportAssetToSignedUrl", value.asInstanceOf[js.Any])
+    def setExportAssetsToS3Undefined: Self = StObject.set(x, "ExportAssetsToS3", js.undefined)
     
     @scala.inline
-    def deleteExportAssetToSignedUrl: Self = this.set("ExportAssetToSignedUrl", js.undefined)
+    def setImportAssetFromSignedUrl(value: ImportAssetFromSignedUrlResponseDetails): Self = StObject.set(x, "ImportAssetFromSignedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAssetsToS3(value: ExportAssetsToS3ResponseDetails): Self = this.set("ExportAssetsToS3", value.asInstanceOf[js.Any])
+    def setImportAssetFromSignedUrlUndefined: Self = StObject.set(x, "ImportAssetFromSignedUrl", js.undefined)
     
     @scala.inline
-    def deleteExportAssetsToS3: Self = this.set("ExportAssetsToS3", js.undefined)
+    def setImportAssetsFromS3(value: ImportAssetsFromS3ResponseDetails): Self = StObject.set(x, "ImportAssetsFromS3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportAssetFromSignedUrl(value: ImportAssetFromSignedUrlResponseDetails): Self = this.set("ImportAssetFromSignedUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportAssetFromSignedUrl: Self = this.set("ImportAssetFromSignedUrl", js.undefined)
-    
-    @scala.inline
-    def setImportAssetsFromS3(value: ImportAssetsFromS3ResponseDetails): Self = this.set("ImportAssetsFromS3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImportAssetsFromS3: Self = this.set("ImportAssetsFromS3", js.undefined)
+    def setImportAssetsFromS3Undefined: Self = StObject.set(x, "ImportAssetsFromS3", js.undefined)
   }
 }

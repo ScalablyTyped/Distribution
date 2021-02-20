@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitBranchStats extends js.Object {
+trait GitBranchStats extends StObject {
   
   /**
     * Number of commits ahead.
@@ -47,33 +48,21 @@ object GitBranchStats {
   }
   
   @scala.inline
-  implicit class GitBranchStatsOps[Self <: GitBranchStats] (val x: Self) extends AnyVal {
+  implicit class GitBranchStatsMutableBuilder[Self <: GitBranchStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAheadCount(value: Double): Self = StObject.set(x, "aheadCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBehindCount(value: Double): Self = StObject.set(x, "behindCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit(value: GitCommitRef): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAheadCount(value: Double): Self = this.set("aheadCount", value.asInstanceOf[js.Any])
+    def setIsBaseVersion(value: Boolean): Self = StObject.set(x, "isBaseVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBehindCount(value: Double): Self = this.set("behindCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommit(value: GitCommitRef): Self = this.set("commit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsBaseVersion(value: Boolean): Self = this.set("isBaseVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

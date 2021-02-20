@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerService extends js.Object {
+trait ContainerService extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the container service.
@@ -101,123 +102,111 @@ object ContainerService {
   }
   
   @scala.inline
-  implicit class ContainerServiceOps[Self <: ContainerService] (val x: Self) extends AnyVal {
+  implicit class ContainerServiceMutableBuilder[Self <: ContainerService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerServiceName(value: ContainerServiceName): Self = StObject.set(x, "containerServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setContainerServiceNameUndefined: Self = StObject.set(x, "containerServiceName", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerServiceName(value: ContainerServiceName): Self = this.set("containerServiceName", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def deleteContainerServiceName: Self = this.set("containerServiceName", js.undefined)
+    def setCurrentDeployment(value: ContainerServiceDeployment): Self = StObject.set(x, "currentDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: IsoDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setCurrentDeploymentUndefined: Self = StObject.set(x, "currentDeployment", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDeployment(value: ContainerServiceDeployment): Self = this.set("currentDeployment", value.asInstanceOf[js.Any])
+    def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     
     @scala.inline
-    def deleteCurrentDeployment: Self = this.set("currentDeployment", js.undefined)
+    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteIsDisabled: Self = this.set("isDisabled", js.undefined)
+    def setNextDeployment(value: ContainerServiceDeployment): Self = StObject.set(x, "nextDeployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: ResourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNextDeploymentUndefined: Self = StObject.set(x, "nextDeployment", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setPower(value: ContainerServicePowerName): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextDeployment(value: ContainerServiceDeployment): Self = this.set("nextDeployment", value.asInstanceOf[js.Any])
+    def setPowerId(value: String): Self = StObject.set(x, "powerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNextDeployment: Self = this.set("nextDeployment", js.undefined)
+    def setPowerIdUndefined: Self = StObject.set(x, "powerId", js.undefined)
     
     @scala.inline
-    def setPower(value: ContainerServicePowerName): Self = this.set("power", value.asInstanceOf[js.Any])
+    def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
     
     @scala.inline
-    def deletePower: Self = this.set("power", js.undefined)
+    def setPrincipalArn(value: String): Self = StObject.set(x, "principalArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerId(value: String): Self = this.set("powerId", value.asInstanceOf[js.Any])
+    def setPrincipalArnUndefined: Self = StObject.set(x, "principalArn", js.undefined)
     
     @scala.inline
-    def deletePowerId: Self = this.set("powerId", js.undefined)
+    def setPrivateDomainName(value: String): Self = StObject.set(x, "privateDomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalArn(value: String): Self = this.set("principalArn", value.asInstanceOf[js.Any])
+    def setPrivateDomainNameUndefined: Self = StObject.set(x, "privateDomainName", js.undefined)
     
     @scala.inline
-    def deletePrincipalArn: Self = this.set("principalArn", js.undefined)
+    def setPublicDomainNames(value: ContainerServicePublicDomains): Self = StObject.set(x, "publicDomainNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateDomainName(value: String): Self = this.set("privateDomainName", value.asInstanceOf[js.Any])
+    def setPublicDomainNamesUndefined: Self = StObject.set(x, "publicDomainNames", js.undefined)
     
     @scala.inline
-    def deletePrivateDomainName: Self = this.set("privateDomainName", js.undefined)
+    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicDomainNames(value: ContainerServicePublicDomains): Self = this.set("publicDomainNames", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def deletePublicDomainNames: Self = this.set("publicDomainNames", js.undefined)
+    def setScale(value: ContainerServiceScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setState(value: ContainerServiceState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: ContainerServiceScale): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ContainerServiceState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.googleapis.googleapisStrings.v1beta1a
 import typings.googleapis.googleapisStrings.v1beta2
 import typings.googleapis.pubsubV1Mod.pubsubV1.Options
 import typings.googleapis.pubsubV1Mod.pubsubV1.Pubsub
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn106 extends js.Object {
+trait Fn106 extends StObject {
   
   def apply(options: Options): Pubsub = js.native
   def apply(options: typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Options): typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2.Pubsub = js.native

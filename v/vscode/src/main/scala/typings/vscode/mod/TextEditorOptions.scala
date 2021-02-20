@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEditorOptions extends js.Object {
+trait TextEditorOptions extends StObject {
   
   /**
     * The rendering style of the cursor in this editor.
@@ -47,42 +48,30 @@ object TextEditorOptions {
   }
   
   @scala.inline
-  implicit class TextEditorOptionsOps[Self <: TextEditorOptions] (val x: Self) extends AnyVal {
+  implicit class TextEditorOptionsMutableBuilder[Self <: TextEditorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursorStyle(value: TextEditorCursorStyle): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertSpaces(value: Boolean | String): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorStyle(value: TextEditorCursorStyle): Self = this.set("cursorStyle", value.asInstanceOf[js.Any])
+    def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
     
     @scala.inline
-    def deleteCursorStyle: Self = this.set("cursorStyle", js.undefined)
+    def setLineNumbers(value: TextEditorLineNumbersStyle): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaces(value: Boolean | String): Self = this.set("insertSpaces", value.asInstanceOf[js.Any])
+    def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaces: Self = this.set("insertSpaces", js.undefined)
+    def setTabSize(value: Double | String): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineNumbers(value: TextEditorLineNumbersStyle): Self = this.set("lineNumbers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineNumbers: Self = this.set("lineNumbers", js.undefined)
-    
-    @scala.inline
-    def setTabSize(value: Double | String): Self = this.set("tabSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
   }
 }

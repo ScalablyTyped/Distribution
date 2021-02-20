@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceReport extends js.Object {
+trait DeviceReport extends StObject {
   
   /** List of app states set by managed apps on the device. App states are defined by the app's developers. This field will always be present. */
   var appState: js.UndefOr[js.Array[AppState]] = js.native
@@ -22,33 +23,21 @@ object DeviceReport {
   }
   
   @scala.inline
-  implicit class DeviceReportOps[Self <: DeviceReport] (val x: Self) extends AnyVal {
+  implicit class DeviceReportMutableBuilder[Self <: DeviceReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppState(value: js.Array[AppState]): Self = StObject.set(x, "appState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppStateVarargs(value: AppState*): Self = StObject.set(x, "appState", js.Array(value :_*))
     
     @scala.inline
-    def setAppStateVarargs(value: AppState*): Self = this.set("appState", js.Array(value :_*))
+    def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppState(value: js.Array[AppState]): Self = this.set("appState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppState: Self = this.set("appState", js.undefined)
-    
-    @scala.inline
-    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    def setLastUpdatedTimestampMillisUndefined: Self = StObject.set(x, "lastUpdatedTimestampMillis", js.undefined)
   }
 }

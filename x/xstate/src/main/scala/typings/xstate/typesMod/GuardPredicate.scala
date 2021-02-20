@@ -1,11 +1,12 @@
 package typings.xstate.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GuardPredicate[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait GuardPredicate[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var name: js.UndefOr[String] = js.native
   

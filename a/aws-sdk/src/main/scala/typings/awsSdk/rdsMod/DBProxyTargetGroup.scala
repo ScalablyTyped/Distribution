@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBProxyTargetGroup extends js.Object {
+trait DBProxyTargetGroup extends StObject {
   
   /**
     * The settings that determine the size and behavior of the connection pool for the target group.
@@ -56,66 +57,54 @@ object DBProxyTargetGroup {
   }
   
   @scala.inline
-  implicit class DBProxyTargetGroupOps[Self <: DBProxyTargetGroup] (val x: Self) extends AnyVal {
+  implicit class DBProxyTargetGroupMutableBuilder[Self <: DBProxyTargetGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionPoolConfig(value: ConnectionPoolConfigurationInfo): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionPoolConfig(value: ConnectionPoolConfigurationInfo): Self = this.set("ConnectionPoolConfig", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteConnectionPoolConfig: Self = this.set("ConnectionPoolConfig", js.undefined)
+    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: TStamp): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
     @scala.inline
-    def deleteDBProxyName: Self = this.set("DBProxyName", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    def setTargetGroupArn(value: String): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupArn(value: String): Self = this.set("TargetGroupArn", value.asInstanceOf[js.Any])
+    def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
     
     @scala.inline
-    def deleteTargetGroupArn: Self = this.set("TargetGroupArn", js.undefined)
+    def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetGroupName(value: String): Self = this.set("TargetGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetGroupName: Self = this.set("TargetGroupName", js.undefined)
-    
-    @scala.inline
-    def setUpdatedDate(value: TStamp): Self = this.set("UpdatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedDate: Self = this.set("UpdatedDate", js.undefined)
+    def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigDetails extends js.Object {
+trait ConfigDetails extends StObject {
   
   /**
     * Details for antenna demod decode Config in a contact.
@@ -23,30 +24,18 @@ object ConfigDetails {
   }
   
   @scala.inline
-  implicit class ConfigDetailsOps[Self <: ConfigDetails] (val x: Self) extends AnyVal {
+  implicit class ConfigDetailsMutableBuilder[Self <: ConfigDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntennaDemodDecodeDetails(value: AntennaDemodDecodeDetails): Self = StObject.set(x, "antennaDemodDecodeDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAntennaDemodDecodeDetailsUndefined: Self = StObject.set(x, "antennaDemodDecodeDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointDetails(value: EndpointDetails): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntennaDemodDecodeDetails(value: AntennaDemodDecodeDetails): Self = this.set("antennaDemodDecodeDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAntennaDemodDecodeDetails: Self = this.set("antennaDemodDecodeDetails", js.undefined)
-    
-    @scala.inline
-    def setEndpointDetails(value: EndpointDetails): Self = this.set("endpointDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpointDetails: Self = this.set("endpointDetails", js.undefined)
+    def setEndpointDetailsUndefined: Self = StObject.set(x, "endpointDetails", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.anydbSql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,36 +43,24 @@ object IndexCreationQuery {
   }
   
   @scala.inline
-  implicit class IndexCreationQueryOps[Self <: IndexCreationQuery] (val x: Self) extends AnyVal {
+  implicit class IndexCreationQueryMutableBuilder[Self <: IndexCreationQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFulltext(value: () => IndexCreationQuery): Self = StObject.set(x, "fulltext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOn(value: /* repeated */ Column[_] | OrderByValueNode => IndexCreationQuery): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSpatial(value: () => IndexCreationQuery): Self = StObject.set(x, "spatial", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFulltext(value: () => IndexCreationQuery): Self = this.set("fulltext", js.Any.fromFunction0(value))
+    def setUnique(value: () => IndexCreationQuery): Self = StObject.set(x, "unique", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOn(value: /* repeated */ Column[_] | OrderByValueNode => IndexCreationQuery): Self = this.set("on", js.Any.fromFunction1(value))
+    def setUsing(value: String => IndexCreationQuery): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpatial(value: () => IndexCreationQuery): Self = this.set("spatial", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUnique(value: () => IndexCreationQuery): Self = this.set("unique", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUsing(value: String => IndexCreationQuery): Self = this.set("using", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithParser(value: String => IndexCreationQuery): Self = this.set("withParser", js.Any.fromFunction1(value))
+    def setWithParser(value: String => IndexCreationQuery): Self = StObject.set(x, "withParser", js.Any.fromFunction1(value))
   }
 }

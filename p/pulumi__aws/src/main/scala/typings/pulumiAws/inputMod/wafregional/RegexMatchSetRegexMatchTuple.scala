@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafregional
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexMatchSetRegexMatchTuple extends js.Object {
+trait RegexMatchSetRegexMatchTuple extends StObject {
   
   /**
     * The part of a web request that you want to search, such as a specified header or a query string.
@@ -39,27 +40,15 @@ object RegexMatchSetRegexMatchTuple {
   }
   
   @scala.inline
-  implicit class RegexMatchSetRegexMatchTupleOps[Self <: RegexMatchSetRegexMatchTuple] (val x: Self) extends AnyVal {
+  implicit class RegexMatchSetRegexMatchTupleMutableBuilder[Self <: RegexMatchSetRegexMatchTuple] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldToMatch(value: Input[RegexMatchSetRegexMatchTupleFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegexPatternSetId(value: Input[String]): Self = StObject.set(x, "regexPatternSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldToMatch(value: Input[RegexMatchSetRegexMatchTupleFieldToMatch]): Self = this.set("fieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegexPatternSetId(value: Input[String]): Self = this.set("regexPatternSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformation(value: Input[String]): Self = this.set("textTransformation", value.asInstanceOf[js.Any])
+    def setTextTransformation(value: Input[String]): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

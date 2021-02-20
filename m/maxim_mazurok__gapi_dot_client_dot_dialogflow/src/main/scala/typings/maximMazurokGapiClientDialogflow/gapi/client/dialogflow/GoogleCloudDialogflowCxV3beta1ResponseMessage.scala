@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowCxV3beta1ResponseMessage extends js.Object {
+trait GoogleCloudDialogflowCxV3beta1ResponseMessage extends StObject {
   
   /** Indicates that the conversation succeeded. */
   var conversationSuccess: js.UndefOr[GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess] = js.native
@@ -54,70 +55,58 @@ object GoogleCloudDialogflowCxV3beta1ResponseMessage {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowCxV3beta1ResponseMessageOps[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessage] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowCxV3beta1ResponseMessageMutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConversationSuccess(value: GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess): Self = StObject.set(x, "conversationSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConversationSuccessUndefined: Self = StObject.set(x, "conversationSuccess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndInteraction(value: js.Any): Self = StObject.set(x, "endInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversationSuccess(value: GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess): Self = this.set("conversationSuccess", value.asInstanceOf[js.Any])
+    def setEndInteractionUndefined: Self = StObject.set(x, "endInteraction", js.undefined)
     
     @scala.inline
-    def deleteConversationSuccess: Self = this.set("conversationSuccess", js.undefined)
+    def setLiveAgentHandoff(value: GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff): Self = StObject.set(x, "liveAgentHandoff", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndInteraction(value: js.Any): Self = this.set("endInteraction", value.asInstanceOf[js.Any])
+    def setLiveAgentHandoffUndefined: Self = StObject.set(x, "liveAgentHandoff", js.undefined)
     
     @scala.inline
-    def deleteEndInteraction: Self = this.set("endInteraction", js.undefined)
+    def setMixedAudio(value: GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudio): Self = StObject.set(x, "mixedAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveAgentHandoff(value: GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff): Self = this.set("liveAgentHandoff", value.asInstanceOf[js.Any])
+    def setMixedAudioUndefined: Self = StObject.set(x, "mixedAudio", js.undefined)
     
     @scala.inline
-    def deleteLiveAgentHandoff: Self = this.set("liveAgentHandoff", js.undefined)
+    def setOutputAudioText(value: GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText): Self = StObject.set(x, "outputAudioText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixedAudio(value: GoogleCloudDialogflowCxV3beta1ResponseMessageMixedAudio): Self = this.set("mixedAudio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMixedAudio: Self = this.set("mixedAudio", js.undefined)
-    
-    @scala.inline
-    def setOutputAudioText(value: GoogleCloudDialogflowCxV3beta1ResponseMessageOutputAudioText): Self = this.set("outputAudioText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputAudioText: Self = this.set("outputAudioText", js.undefined)
+    def setOutputAudioTextUndefined: Self = StObject.set(x, "outputAudioText", js.undefined)
     
     @scala.inline
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ResponseMessage with TopLevel[js.Any]
-    ): Self = this.set("payload", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def setPlayAudio(value: GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio): Self = this.set("playAudio", value.asInstanceOf[js.Any])
+    def setPlayAudio(value: GoogleCloudDialogflowCxV3beta1ResponseMessagePlayAudio): Self = StObject.set(x, "playAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayAudio: Self = this.set("playAudio", js.undefined)
+    def setPlayAudioUndefined: Self = StObject.set(x, "playAudio", js.undefined)
     
     @scala.inline
-    def setText(value: GoogleCloudDialogflowCxV3beta1ResponseMessageText): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: GoogleCloudDialogflowCxV3beta1ResponseMessageText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

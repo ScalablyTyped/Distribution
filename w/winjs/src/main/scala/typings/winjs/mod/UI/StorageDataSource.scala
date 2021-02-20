@@ -1,5 +1,6 @@
 package typings.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,14 +22,20 @@ class StorageDataSource[T] protected ()
   def this(query: js.Any) = this()
   def this(query: js.Any, options: js.Any) = this()
 }
-/* static members */
-@JSImport("winjs", "UI.StorageDataSource")
-@js.native
-object StorageDataSource extends js.Object {
+object StorageDataSource {
+  
+  @JSImport("winjs", "UI.StorageDataSource")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#endregion Methods
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.StorageDataSource.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

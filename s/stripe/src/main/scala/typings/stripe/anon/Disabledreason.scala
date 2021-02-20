@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Disabledreason extends js.Object {
+trait Disabledreason extends StObject {
   
   /**
     * A string describing the reason for this account being unable to charge
@@ -47,39 +48,27 @@ object Disabledreason {
   }
   
   @scala.inline
-  implicit class DisabledreasonOps[Self <: Disabledreason] (val x: Self) extends AnyVal {
+  implicit class DisabledreasonMutableBuilder[Self <: Disabledreason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled_reason(value: String): Self = StObject.set(x, "disabled_reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDue_by(value: Double): Self = StObject.set(x, "due_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields_needed(value: js.Array[String]): Self = StObject.set(x, "fields_needed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled_reason(value: String): Self = this.set("disabled_reason", value.asInstanceOf[js.Any])
+    def setFields_neededVarargs(value: String*): Self = StObject.set(x, "fields_needed", js.Array(value :_*))
     
     @scala.inline
-    def setDue_by(value: Double): Self = this.set("due_by", value.asInstanceOf[js.Any])
+    def setRequested_capabilities(value: js.Array[String]): Self = StObject.set(x, "requested_capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields_neededVarargs(value: String*): Self = this.set("fields_needed", js.Array(value :_*))
+    def setRequested_capabilitiesUndefined: Self = StObject.set(x, "requested_capabilities", js.undefined)
     
     @scala.inline
-    def setFields_needed(value: js.Array[String]): Self = this.set("fields_needed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequested_capabilitiesVarargs(value: String*): Self = this.set("requested_capabilities", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequested_capabilities(value: js.Array[String]): Self = this.set("requested_capabilities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequested_capabilities: Self = this.set("requested_capabilities", js.undefined)
+    def setRequested_capabilitiesVarargs(value: String*): Self = StObject.set(x, "requested_capabilities", js.Array(value :_*))
   }
 }

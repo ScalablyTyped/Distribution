@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrpcRouteMatch extends js.Object {
+trait GrpcRouteMatch extends StObject {
   
   /**
     * An object that represents the data to match from the request.
@@ -31,39 +32,27 @@ object GrpcRouteMatch {
   }
   
   @scala.inline
-  implicit class GrpcRouteMatchOps[Self <: GrpcRouteMatch] (val x: Self) extends AnyVal {
+  implicit class GrpcRouteMatchMutableBuilder[Self <: GrpcRouteMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: GrpcRouteMetadataList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataVarargs(value: GrpcRouteMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
     
     @scala.inline
-    def setMetadataVarargs(value: GrpcRouteMetadata*): Self = this.set("metadata", js.Array(value :_*))
+    def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: GrpcRouteMetadataList): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodName(value: MethodName): Self = this.set("methodName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethodName: Self = this.set("methodName", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMSymbolLayerBase extends js.Object {
+trait CIMSymbolLayerBase extends StObject {
   
   /**
     * A value indicating whether the color set at the basic properties level is applied to the symbol layer. If the symbol layer is color locked then changes made to the color in the basic properties will not be applied to the symbol layer.
@@ -49,60 +50,48 @@ object CIMSymbolLayerBase {
   }
   
   @scala.inline
-  implicit class CIMSymbolLayerBaseOps[Self <: CIMSymbolLayerBase] (val x: Self) extends AnyVal {
+  implicit class CIMSymbolLayerBaseMutableBuilder[Self <: CIMSymbolLayerBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorLocked(value: Boolean): Self = StObject.set(x, "colorLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorLockedUndefined: Self = StObject.set(x, "colorLocked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEffects(value: js.Array[CIMGeometricEffectType]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
     
     @scala.inline
-    def setColorLocked(value: Boolean): Self = this.set("colorLocked", value.asInstanceOf[js.Any])
+    def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
     @scala.inline
-    def deleteColorLocked: Self = this.set("colorLocked", js.undefined)
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffectsVarargs(value: CIMGeometricEffectType*): Self = this.set("effects", js.Array(value :_*))
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def setEffects(value: js.Array[CIMGeometricEffectType]): Self = this.set("effects", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEffects: Self = this.set("effects", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setOverprint(value: Boolean): Self = StObject.set(x, "overprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setOverprintUndefined: Self = StObject.set(x, "overprint", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPrimitiveName(value: String): Self = StObject.set(x, "primitiveName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPrimitiveNameUndefined: Self = StObject.set(x, "primitiveName", js.undefined)
     
     @scala.inline
-    def setOverprint(value: Boolean): Self = this.set("overprint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverprint: Self = this.set("overprint", js.undefined)
-    
-    @scala.inline
-    def setPrimitiveName(value: String): Self = this.set("primitiveName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimitiveName: Self = this.set("primitiveName", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

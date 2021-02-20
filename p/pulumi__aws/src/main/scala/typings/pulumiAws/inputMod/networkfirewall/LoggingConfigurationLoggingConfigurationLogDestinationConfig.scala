@@ -2,12 +2,13 @@ package typings.pulumiAws.inputMod.networkfirewall
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoggingConfigurationLoggingConfigurationLogDestinationConfig extends js.Object {
+trait LoggingConfigurationLoggingConfigurationLogDestinationConfig extends StObject {
   
   /**
     * A map describing the logging destination for the chosen `logDestinationType`.
@@ -40,27 +41,15 @@ object LoggingConfigurationLoggingConfigurationLogDestinationConfig {
   }
   
   @scala.inline
-  implicit class LoggingConfigurationLoggingConfigurationLogDestinationConfigOps[Self <: LoggingConfigurationLoggingConfigurationLogDestinationConfig] (val x: Self) extends AnyVal {
+  implicit class LoggingConfigurationLoggingConfigurationLogDestinationConfigMutableBuilder[Self <: LoggingConfigurationLoggingConfigurationLogDestinationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogDestination(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogDestination(value: Input[StringDictionary[Input[String]]]): Self = this.set("logDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogDestinationType(value: Input[String]): Self = this.set("logDestinationType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogType(value: Input[String]): Self = this.set("logType", value.asInstanceOf[js.Any])
+    def setLogType(value: Input[String]): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
   }
 }

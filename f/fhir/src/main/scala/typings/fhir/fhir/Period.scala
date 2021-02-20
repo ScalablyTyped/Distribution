@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object Period {
   }
   
   @scala.inline
-  implicit class PeriodOps[Self <: Period] (val x: Self) extends AnyVal {
+  implicit class PeriodMutableBuilder[Self <: Period] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: dateTime): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: dateTime): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_end(value: Element): Self = this.set("_end", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def delete_end: Self = this.set("_end", js.undefined)
+    def set_end(value: Element): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_start(value: Element): Self = this.set("_start", value.asInstanceOf[js.Any])
+    def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
     @scala.inline
-    def delete_start: Self = this.set("_start", js.undefined)
+    def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: dateTime): Self = this.set("end", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
-    
-    @scala.inline
-    def setStart(value: dateTime): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
   }
 }

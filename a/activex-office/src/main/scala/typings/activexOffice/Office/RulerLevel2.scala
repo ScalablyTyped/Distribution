@@ -1,11 +1,12 @@
 package typings.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulerLevel2 extends js.Object {
+trait RulerLevel2 extends StObject {
   
   val Application: js.Any = js.native
   
@@ -37,36 +38,24 @@ object RulerLevel2 {
   }
   
   @scala.inline
-  implicit class RulerLevel2Ops[Self <: RulerLevel2] (val x: Self) extends AnyVal {
+  implicit class RulerLevel2MutableBuilder[Self <: RulerLevel2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstMargin(value: Double): Self = StObject.set(x, "FirstMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setOfficeDotRulerLevel2_typekey(value: RulerLevel2): Self = StObject.set(x, "Office.RulerLevel2_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMargin(value: Double): Self = this.set("FirstMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("LeftMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOfficeDotRulerLevel2_typekey(value: RulerLevel2): Self = this.set("Office.RulerLevel2_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

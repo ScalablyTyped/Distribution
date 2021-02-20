@@ -3,12 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.CancellationToken
 import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletionItemProvider extends js.Object {
+trait CompletionItemProvider extends StObject {
   
   /**
     * Provide completion items for the given position and document.
@@ -42,40 +43,28 @@ object CompletionItemProvider {
   }
   
   @scala.inline
-  implicit class CompletionItemProviderOps[Self <: CompletionItemProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class CompletionItemProviderMutableBuilder[Self <: CompletionItemProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setProvideCompletionItems(
       value: (ITextModel, Position, CompletionContext, CancellationToken) => ProviderResult[CompletionList]
-    ): Self = this.set("provideCompletionItems", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "provideCompletionItems", js.Any.fromFunction4(value))
     
     @scala.inline
     def setResolveCompletionItem(
       value: (/* item */ CompletionItem, /* token */ CancellationToken) => ProviderResult[CompletionItem]
-    ): Self = this.set("resolveCompletionItem", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "resolveCompletionItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteResolveCompletionItem: Self = this.set("resolveCompletionItem", js.undefined)
+    def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
     
     @scala.inline
-    def setTriggerCharactersVarargs(value: String*): Self = this.set("triggerCharacters", js.Array(value :_*))
+    def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerCharacters(value: js.Array[String]): Self = this.set("triggerCharacters", value.asInstanceOf[js.Any])
+    def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
     @scala.inline
-    def deleteTriggerCharacters: Self = this.set("triggerCharacters", js.undefined)
+    def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
   }
 }

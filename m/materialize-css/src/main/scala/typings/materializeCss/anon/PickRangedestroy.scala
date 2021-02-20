@@ -1,12 +1,13 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Range, 'destroy'> */
 @js.native
-trait PickRangedestroy extends js.Object {
+trait PickRangedestroy extends StObject {
   
   var destroy: js.UndefOr[js.Any] = js.native
 }
@@ -19,24 +20,12 @@ object PickRangedestroy {
   }
   
   @scala.inline
-  implicit class PickRangedestroyOps[Self <: PickRangedestroy] (val x: Self) extends AnyVal {
+  implicit class PickRangedestroyMutableBuilder[Self <: PickRangedestroy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestroy(value: js.Any): Self = this.set("destroy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
   }
 }

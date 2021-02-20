@@ -7,12 +7,13 @@ import typings.reactNative.reactNativeStrings.loadend
 import typings.reactNative.reactNativeStrings.loadstart
 import typings.reactNative.reactNativeStrings.progress
 import typings.reactNative.reactNativeStrings.timeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLHttpRequestEventTarget extends js.Object {
+trait XMLHttpRequestEventTarget extends StObject {
   
   @JSName("addEventListener")
   def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]): Unit = js.native

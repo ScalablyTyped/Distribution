@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AcceleratorConfig represents a Hardware Accelerator request.
   */
 @js.native
-trait SchemaAcceleratorConfig extends js.Object {
+trait SchemaAcceleratorConfig extends StObject {
   
   /**
     * The number of the accelerator cards exposed to an instance.
@@ -30,30 +31,18 @@ object SchemaAcceleratorConfig {
   }
   
   @scala.inline
-  implicit class SchemaAcceleratorConfigOps[Self <: SchemaAcceleratorConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaAcceleratorConfigMutableBuilder[Self <: SchemaAcceleratorConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorCount(value: String): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorCountUndefined: Self = StObject.set(x, "acceleratorCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorCount(value: String): Self = this.set("acceleratorCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorCount: Self = this.set("acceleratorCount", js.undefined)
-    
-    @scala.inline
-    def setAcceleratorType(value: String): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
   }
 }

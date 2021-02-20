@@ -1,12 +1,13 @@
 package typings.activexMsforms.MSForms
 
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollBar extends js.Object {
+trait ScrollBar extends StObject {
   
   var BackColor: Double = js.native
   
@@ -62,60 +63,48 @@ object ScrollBar {
   }
   
   @scala.inline
-  implicit class ScrollBarOps[Self <: ScrollBar] (val x: Self) extends AnyVal {
+  implicit class ScrollBarMutableBuilder[Self <: ScrollBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Double): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("Delay", value.asInstanceOf[js.Any])
+    def setLargeChange(value: Double): Self = StObject.set(x, "LargeChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setMSFormsDotScrollBar_typekey(value: ScrollBar): Self = StObject.set(x, "MSForms.ScrollBar_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: Double): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeChange(value: Double): Self = this.set("LargeChange", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSFormsDotScrollBar_typekey(value: ScrollBar): Self = this.set("MSForms.ScrollBar_typekey", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("Max", value.asInstanceOf[js.Any])
+    def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("Min", value.asInstanceOf[js.Any])
+    def setOrientation(value: fmOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setProportionalThumb(value: Boolean): Self = StObject.set(x, "ProportionalThumb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: fmMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    def setSmallChange(value: Double): Self = StObject.set(x, "SmallChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: fmOrientation): Self = this.set("Orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProportionalThumb(value: Boolean): Self = this.set("ProportionalThumb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmallChange(value: Double): Self = this.set("SmallChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import typings.maximMazurokGapiClientBooks.anon.Bannerwithcontentcontainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Discoveryclusters extends js.Object {
+trait Discoveryclusters extends StObject {
   
   var clusters: js.UndefOr[js.Array[Bannerwithcontentcontainer]] = js.native
   
@@ -24,39 +25,27 @@ object Discoveryclusters {
   }
   
   @scala.inline
-  implicit class DiscoveryclustersOps[Self <: Discoveryclusters] (val x: Self) extends AnyVal {
+  implicit class DiscoveryclustersMutableBuilder[Self <: Discoveryclusters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusters(value: js.Array[Bannerwithcontentcontainer]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClustersVarargs(value: Bannerwithcontentcontainer*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
     @scala.inline
-    def setClustersVarargs(value: Bannerwithcontentcontainer*): Self = this.set("clusters", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusters(value: js.Array[Bannerwithcontentcontainer]): Self = this.set("clusters", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteClusters: Self = this.set("clusters", js.undefined)
+    def setTotalClusters(value: Double): Self = StObject.set(x, "totalClusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setTotalClusters(value: Double): Self = this.set("totalClusters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalClusters: Self = this.set("totalClusters", js.undefined)
+    def setTotalClustersUndefined: Self = StObject.set(x, "totalClusters", js.undefined)
   }
 }

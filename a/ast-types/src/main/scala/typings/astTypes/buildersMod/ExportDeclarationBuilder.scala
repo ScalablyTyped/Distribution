@@ -7,12 +7,13 @@ import typings.astTypes.kindsMod.ExportSpecifierKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.namedTypesMod.namedTypes.ExportDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportDeclarationBuilder extends js.Object {
+trait ExportDeclarationBuilder extends StObject {
   
   def apply(defaultParam: Boolean): ExportDeclaration = js.native
   def apply(

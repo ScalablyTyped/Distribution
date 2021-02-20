@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputLocation extends js.Object {
+trait InputLocation extends StObject {
   
   /**
     * key used to extract the password from EC2 Parameter store
@@ -31,33 +32,21 @@ object InputLocation {
   }
   
   @scala.inline
-  implicit class InputLocationOps[Self <: InputLocation] (val x: Self) extends AnyVal {
+  implicit class InputLocationMutableBuilder[Self <: InputLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUri(value: string): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: string): Self = this.set("Uri", value.asInstanceOf[js.Any])
+    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasswordParam(value: string): Self = this.set("PasswordParam", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasswordParam: Self = this.set("PasswordParam", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: string): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

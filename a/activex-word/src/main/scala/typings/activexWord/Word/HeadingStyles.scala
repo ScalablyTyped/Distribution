@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeadingStyles extends js.Object {
+trait HeadingStyles extends StObject {
   
   def Add(Style: js.Any, Level: Double): HeadingStyle = js.native
   
@@ -40,39 +41,27 @@ object HeadingStyles {
   }
   
   @scala.inline
-  implicit class HeadingStylesOps[Self <: HeadingStyles] (val x: Self) extends AnyVal {
+  implicit class HeadingStylesMutableBuilder[Self <: HeadingStyles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (js.Any, Double) => HeadingStyle): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (js.Any, Double) => HeadingStyle): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setItem(value: Double => HeadingStyle): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Double => HeadingStyle): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotHeadingStyles_typekey(value: HeadingStyles): Self = this.set("Word.HeadingStyles_typekey", value.asInstanceOf[js.Any])
+    def setWordDotHeadingStyles_typekey(value: HeadingStyles): Self = StObject.set(x, "Word.HeadingStyles_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,27 +30,15 @@ object ImageFormatEnumValues {
   }
   
   @scala.inline
-  implicit class ImageFormatEnumValuesOps[Self <: ImageFormatEnumValues] (val x: Self) extends AnyVal {
+  implicit class ImageFormatEnumValuesMutableBuilder[Self <: ImageFormatEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJPEG(value: EncodedImageFormat): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPNG(value: EncodedImageFormat): Self = StObject.set(x, "PNG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJPEG(value: EncodedImageFormat): Self = this.set("JPEG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPNG(value: EncodedImageFormat): Self = this.set("PNG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWEBP(value: EncodedImageFormat): Self = this.set("WEBP", value.asInstanceOf[js.Any])
+    def setWEBP(value: EncodedImageFormat): Self = StObject.set(x, "WEBP", value.asInstanceOf[js.Any])
   }
 }

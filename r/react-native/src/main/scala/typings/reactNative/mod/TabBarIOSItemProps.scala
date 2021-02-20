@@ -12,6 +12,7 @@ import typings.reactNative.reactNativeStrings.history
 import typings.reactNative.reactNativeStrings.more
 import typings.reactNative.reactNativeStrings.recents
 import typings.reactNative.reactNativeStrings.search
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,74 +82,62 @@ object TabBarIOSItemProps {
   }
   
   @scala.inline
-  implicit class TabBarIOSItemPropsOps[Self <: TabBarIOSItemProps] (val x: Self) extends AnyVal {
+  implicit class TabBarIOSItemPropsMutableBuilder[Self <: TabBarIOSItemProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgeColor(value: ColorValue): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
     
     @scala.inline
-    def setBadge(value: String | Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setIcon(value: ImageURISource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeColor(value: ColorValue): Self = this.set("badgeColor", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteBadgeColor: Self = this.set("badgeColor", js.undefined)
+    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIcon(value: ImageURISource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setRenderAsOriginal(value: Boolean): Self = StObject.set(x, "renderAsOriginal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPress(value: () => Unit): Self = this.set("onPress", js.Any.fromFunction0(value))
+    def setRenderAsOriginalUndefined: Self = StObject.set(x, "renderAsOriginal", js.undefined)
     
     @scala.inline
-    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderAsOriginal(value: Boolean): Self = this.set("renderAsOriginal", value.asInstanceOf[js.Any])
+    def setSelectedIcon(value: ImageURISource): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderAsOriginal: Self = this.set("renderAsOriginal", js.undefined)
+    def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
-    
-    @scala.inline
-    def setSelectedIcon(value: ImageURISource): Self = this.set("selectedIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedIcon: Self = this.set("selectedIcon", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
     def setSystemIcon(
       value: bookmarks | contacts | downloads | favorites | featured | history | more | `most-recent` | `most-viewed` | recents | search | `top-rated`
-    ): Self = this.set("systemIcon", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "systemIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSystemIcon: Self = this.set("systemIcon", js.undefined)
+    def setSystemIconUndefined: Self = StObject.set(x, "systemIcon", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

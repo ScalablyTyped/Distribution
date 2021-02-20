@@ -2,6 +2,7 @@ package typings.rascal.mod
 
 import typings.amqplib.mod.Connection
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,11 +40,13 @@ class BrokerAsPromised protected () extends EventEmitter {
   
   def unsubscribeAll(): js.Promise[Unit] = js.native
 }
-/* static members */
-@JSImport("rascal", "BrokerAsPromised")
-@js.native
-object BrokerAsPromised extends js.Object {
+object BrokerAsPromised {
   
+  /* static member */
+  @JSImport("rascal", "BrokerAsPromised.create")
+  @js.native
   def create(config: BrokerConfig): js.Promise[BrokerAsPromised] = js.native
+  @JSImport("rascal", "BrokerAsPromised.create")
+  @js.native
   def create(config: BrokerConfig, components: js.Any): js.Promise[BrokerAsPromised] = js.native
 }

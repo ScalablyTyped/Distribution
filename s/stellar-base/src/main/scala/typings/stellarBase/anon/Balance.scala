@@ -5,12 +5,13 @@ import typings.stellarBase.xdrMod.xdr.AccountEntryExt
 import typings.stellarBase.xdrMod.xdr.Int64
 import typings.stellarBase.xdrMod.xdr.SequenceNumber
 import typings.stellarBase.xdrMod.xdr.Signer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Balance extends js.Object {
+trait Balance extends StObject {
   
   var accountId: typings.stellarBase.xdrMod.xdr.AccountId = js.native
   
@@ -51,54 +52,42 @@ object Balance {
   }
   
   @scala.inline
-  implicit class BalanceOps[Self <: Balance] (val x: Self) extends AnyVal {
+  implicit class BalanceMutableBuilder[Self <: Balance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBalance(value: Int64): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExt(value: AccountEntryExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalance(value: Int64): Self = this.set("balance", value.asInstanceOf[js.Any])
+    def setHomeDomain(value: String | Buffer): Self = StObject.set(x, "homeDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: AccountEntryExt): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setInflationDest(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "inflationDest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setInflationDestNull: Self = StObject.set(x, "inflationDest", null)
     
     @scala.inline
-    def setHomeDomain(value: String | Buffer): Self = this.set("homeDomain", value.asInstanceOf[js.Any])
+    def setNumSubEntries(value: Double): Self = StObject.set(x, "numSubEntries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumSubEntries(value: Double): Self = this.set("numSubEntries", value.asInstanceOf[js.Any])
+    def setSeqNum(value: SequenceNumber): Self = StObject.set(x, "seqNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeqNum(value: SequenceNumber): Self = this.set("seqNum", value.asInstanceOf[js.Any])
+    def setSigners(value: js.Array[Signer]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignersVarargs(value: Signer*): Self = this.set("signers", js.Array(value :_*))
+    def setSignersVarargs(value: Signer*): Self = StObject.set(x, "signers", js.Array(value :_*))
     
     @scala.inline
-    def setSigners(value: js.Array[Signer]): Self = this.set("signers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThresholds(value: Buffer): Self = this.set("thresholds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInflationDest(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("inflationDest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInflationDestNull: Self = this.set("inflationDest", null)
+    def setThresholds(value: Buffer): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
   }
 }

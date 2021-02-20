@@ -2,14 +2,15 @@ package typings.useCombinedReducers
 
 import typings.react.mod.Dispatch
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-combined-reducers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("use-combined-reducers", JSImport.Default)
+  @js.native
   def default[T, A](
     combinedReducers: Record[
       /* keyof T */ String, 

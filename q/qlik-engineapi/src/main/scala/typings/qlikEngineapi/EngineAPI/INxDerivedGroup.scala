@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxDerivedGroup...
   */
 @js.native
-trait INxDerivedGroup extends js.Object {
+trait INxDerivedGroup extends StObject {
   
   /**
     * List of the derived fields in the group.
@@ -41,33 +42,21 @@ object INxDerivedGroup {
   }
   
   @scala.inline
-  implicit class INxDerivedGroupOps[Self <: INxDerivedGroup] (val x: Self) extends AnyVal {
+  implicit class INxDerivedGroupMutableBuilder[Self <: INxDerivedGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefsVarargs(value: String*): Self = this.set("qFieldDefs", js.Array(value :_*))
+    def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefs(value: js.Array[String]): Self = this.set("qFieldDefs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQGrouping(value: NxGrpType): Self = this.set("qGrouping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQId(value: String): Self = this.set("qId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

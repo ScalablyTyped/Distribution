@@ -2,18 +2,20 @@ package typings.devexpressUtils
 
 import typings.devexpressUtils.anon.Set
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/class/initializer", JSImport.Namespace)
-@js.native
-object initializerMod extends js.Object {
+object initializerMod {
   
+  @JSImport("@devexpress/utils/lib/class/initializer", "Initialize")
+  @js.native
   def Initialize[TOptions](options: TOptions): Set[TOptions] = js.native
   
+  @JSImport("@devexpress/utils/lib/class/initializer", "Initializer")
   @js.native
-  class Initializer () extends js.Object {
+  class Initializer () extends StObject {
     
     def set[TProp /* <: Exclude[/* keyof this */ String, typings.devexpressUtils.devexpressUtilsStrings.set] */](
       property: TProp,

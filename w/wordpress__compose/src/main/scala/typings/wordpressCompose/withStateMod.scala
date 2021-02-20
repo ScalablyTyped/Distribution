@@ -5,15 +5,16 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentType
 import typings.std.Omit
 import typings.wordpressCompose.wordpressComposeStrings.setState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/compose/higher-order/with-state", JSImport.Namespace)
-@js.native
-object withStateMod extends js.Object {
+object withStateMod {
   
   // prettier-ignore
+  @JSImport("@wordpress/compose/higher-order/with-state", JSImport.Default)
+  @js.native
   def default[SP /* <: js.Object */](
     initialState: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof SP ]: SP[k]}

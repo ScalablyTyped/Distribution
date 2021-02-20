@@ -1,11 +1,12 @@
 package typings.dockerode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rxbytes extends js.Object {
+trait Rxbytes extends StObject {
   
   var rx_bytes: Double = js.native
   
@@ -41,42 +42,30 @@ object Rxbytes {
   }
   
   @scala.inline
-  implicit class RxbytesOps[Self <: Rxbytes] (val x: Self) extends AnyVal {
+  implicit class RxbytesMutableBuilder[Self <: Rxbytes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRx_bytes(value: Double): Self = StObject.set(x, "rx_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRx_dropped(value: Double): Self = StObject.set(x, "rx_dropped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRx_errors(value: Double): Self = StObject.set(x, "rx_errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx_bytes(value: Double): Self = this.set("rx_bytes", value.asInstanceOf[js.Any])
+    def setRx_packets(value: Double): Self = StObject.set(x, "rx_packets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx_dropped(value: Double): Self = this.set("rx_dropped", value.asInstanceOf[js.Any])
+    def setTx_bytes(value: Double): Self = StObject.set(x, "tx_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx_errors(value: Double): Self = this.set("rx_errors", value.asInstanceOf[js.Any])
+    def setTx_dropped(value: Double): Self = StObject.set(x, "tx_dropped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx_packets(value: Double): Self = this.set("rx_packets", value.asInstanceOf[js.Any])
+    def setTx_errors(value: Double): Self = StObject.set(x, "tx_errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTx_bytes(value: Double): Self = this.set("tx_bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx_dropped(value: Double): Self = this.set("tx_dropped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx_errors(value: Double): Self = this.set("tx_errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx_packets(value: Double): Self = this.set("tx_packets", value.asInstanceOf[js.Any])
+    def setTx_packets(value: Double): Self = StObject.set(x, "tx_packets", value.asInstanceOf[js.Any])
   }
 }

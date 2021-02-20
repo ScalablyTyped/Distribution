@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import typings.maximMazurokGapiClientDfareporting.anon.FieldsKeyOauthtoken
 import typings.maximMazurokGapiClientDfareporting.anon.Name
 import typings.maximMazurokGapiClientDfareporting.anon.Names
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicTargetingKeysResource extends js.Object {
+trait DynamicTargetingKeysResource extends StObject {
   
   /** Deletes an existing dynamic targeting key. */
   def delete(): Request[Unit] = js.native

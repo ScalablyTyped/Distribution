@@ -1,11 +1,12 @@
 package typings.baiduApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Northeast extends js.Object {
+trait Northeast extends StObject {
   
   var northeast: Longitude = js.native
   
@@ -20,24 +21,12 @@ object Northeast {
   }
   
   @scala.inline
-  implicit class NortheastOps[Self <: Northeast] (val x: Self) extends AnyVal {
+  implicit class NortheastMutableBuilder[Self <: Northeast] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNortheast(value: Longitude): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNortheast(value: Longitude): Self = this.set("northeast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSouthwest(value: Longitude): Self = this.set("southwest", value.asInstanceOf[js.Any])
+    def setSouthwest(value: Longitude): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
   }
 }

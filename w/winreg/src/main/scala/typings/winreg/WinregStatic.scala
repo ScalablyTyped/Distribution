@@ -3,6 +3,7 @@ package typings.winreg
 import org.scalablytyped.runtime.Instantiable1
 import typings.winreg.Winreg.Options
 import typings.winreg.Winreg.Registry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

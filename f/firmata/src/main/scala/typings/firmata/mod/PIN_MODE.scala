@@ -14,6 +14,7 @@ import typings.firmata.firmataNumbers.`0x0B`
 import typings.firmata.firmataNumbers.`0x10`
 import typings.firmata.firmataNumbers.`0x75`
 import typings.firmata.firmataNumbers.`0x7F`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firmata.firmataNumbers.`0x75`
   - typings.firmata.firmataNumbers.`0x10`
 */
-trait PIN_MODE extends js.Object
+trait PIN_MODE extends StObject
 object PIN_MODE {
   
   @scala.inline

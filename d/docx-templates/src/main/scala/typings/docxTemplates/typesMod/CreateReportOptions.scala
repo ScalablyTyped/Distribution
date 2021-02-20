@@ -3,12 +3,13 @@ package typings.docxTemplates.typesMod
 import typings.docxTemplates.anon.Ctx
 import typings.docxTemplates.anon.ModifiedSandbox
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateReportOptions extends js.Object {
+trait CreateReportOptions extends StObject {
   
   var additionalJsContext: js.Object = js.native
   
@@ -48,54 +49,42 @@ object CreateReportOptions {
   }
   
   @scala.inline
-  implicit class CreateReportOptionsOps[Self <: CreateReportOptions] (val x: Self) extends AnyVal {
+  implicit class CreateReportOptionsMutableBuilder[Self <: CreateReportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmdDelimiter(value: js.Tuple2[String, String]): Self = StObject.set(x, "cmdDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAdditionalJsContext(value: js.Object): Self = this.set("additionalJsContext", value.asInstanceOf[js.Any])
+    def setErrorHandlerNull: Self = StObject.set(x, "errorHandler", null)
     
     @scala.inline
-    def setCmdDelimiter(value: js.Tuple2[String, String]): Self = this.set("cmdDelimiter", value.asInstanceOf[js.Any])
+    def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailFast(value: Boolean): Self = this.set("failFast", value.asInstanceOf[js.Any])
+    def setFixSmartQuotes(value: Boolean): Self = StObject.set(x, "fixSmartQuotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixSmartQuotes(value: Boolean): Self = this.set("fixSmartQuotes", value.asInstanceOf[js.Any])
+    def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiteralXmlDelimiter(value: String): Self = this.set("literalXmlDelimiter", value.asInstanceOf[js.Any])
+    def setNoSandbox(value: Boolean): Self = StObject.set(x, "noSandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSandbox(value: Boolean): Self = this.set("noSandbox", value.asInstanceOf[js.Any])
+    def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessLineBreaks(value: Boolean): Self = this.set("processLineBreaks", value.asInstanceOf[js.Any])
+    def setRejectNullish(value: Boolean): Self = StObject.set(x, "rejectNullish", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectNullish(value: Boolean): Self = this.set("rejectNullish", value.asInstanceOf[js.Any])
+    def setRunJs(value: /* o */ Ctx => ModifiedSandbox): Self = StObject.set(x, "runJs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = this.set("errorHandler", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setErrorHandlerNull: Self = this.set("errorHandler", null)
-    
-    @scala.inline
-    def setRunJs(value: /* o */ Ctx => ModifiedSandbox): Self = this.set("runJs", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRunJs: Self = this.set("runJs", js.undefined)
+    def setRunJsUndefined: Self = StObject.set(x, "runJs", js.undefined)
   }
 }

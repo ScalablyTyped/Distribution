@@ -1,5 +1,6 @@
 package typings.suitescript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since 2007.0
   */
 @js.native
-trait nlobjSearchColumn extends js.Object {
+trait nlobjSearchColumn extends StObject {
   
   /**
     * return formula for this search column.
@@ -109,39 +110,27 @@ object nlobjSearchColumn {
   }
   
   @scala.inline
-  implicit class nlobjSearchColumnOps[Self <: nlobjSearchColumn] (val x: Self) extends AnyVal {
+  implicit class nlobjSearchColumnMutableBuilder[Self <: nlobjSearchColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetJoin(value: () => String): Self = StObject.set(x, "getJoin", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFormula(value: () => String): Self = this.set("getFormula", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetJoin(value: () => String): Self = this.set("getJoin", js.Any.fromFunction0(value))
+    def setGetSummary(value: () => String): Self = StObject.set(x, "getSummary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabel(value: () => String): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    def setSetLabel(value: String => nlobjSearchColumn): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSummary(value: () => String): Self = this.set("getSummary", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLabel(value: String => nlobjSearchColumn): Self = this.set("setLabel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSort(value: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = this.set("setSort", js.Any.fromFunction1(value))
+    def setSetSort(value: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
   }
 }

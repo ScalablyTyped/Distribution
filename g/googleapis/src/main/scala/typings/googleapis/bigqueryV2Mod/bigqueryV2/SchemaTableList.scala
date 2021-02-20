@@ -1,12 +1,13 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import typings.googleapis.anon.Clustering
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTableList extends js.Object {
+trait SchemaTableList extends StObject {
   
   /**
     * A hash of this page of results.
@@ -42,51 +43,39 @@ object SchemaTableList {
   }
   
   @scala.inline
-  implicit class SchemaTableListOps[Self <: SchemaTableList] (val x: Self) extends AnyVal {
+  implicit class SchemaTableListMutableBuilder[Self <: SchemaTableList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setTables(value: js.Array[Clustering]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setTablesVarargs(value: Clustering*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
     @scala.inline
-    def setTablesVarargs(value: Clustering*): Self = this.set("tables", js.Array(value :_*))
+    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTables(value: js.Array[Clustering]): Self = this.set("tables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTables: Self = this.set("tables", js.undefined)
-    
-    @scala.inline
-    def setTotalItems(value: Double): Self = this.set("totalItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
+    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

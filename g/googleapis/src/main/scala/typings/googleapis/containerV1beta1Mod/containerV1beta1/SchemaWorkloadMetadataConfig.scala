@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * workloads on the node pool.
   */
 @js.native
-trait SchemaWorkloadMetadataConfig extends js.Object {
+trait SchemaWorkloadMetadataConfig extends StObject {
   
   /**
     * NodeMetadata is the configuration for how to expose the node metadata to
@@ -26,24 +27,12 @@ object SchemaWorkloadMetadataConfig {
   }
   
   @scala.inline
-  implicit class SchemaWorkloadMetadataConfigOps[Self <: SchemaWorkloadMetadataConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaWorkloadMetadataConfigMutableBuilder[Self <: SchemaWorkloadMetadataConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeMetadata(value: String): Self = StObject.set(x, "nodeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNodeMetadata(value: String): Self = this.set("nodeMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeMetadata: Self = this.set("nodeMetadata", js.undefined)
+    def setNodeMetadataUndefined: Self = StObject.set(x, "nodeMetadata", js.undefined)
   }
 }

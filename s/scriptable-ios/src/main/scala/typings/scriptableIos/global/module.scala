@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _The current module._
   * @see https://docs.scriptable.app/module
   */
-@JSGlobal("module")
-@js.native
-object module extends js.Object {
+object module {
+  
+  @JSGlobal("module")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Exported functions and modules._
@@ -36,7 +39,11 @@ object module extends js.Object {
     *     module.exports = "My string"
     * @see https://docs.scriptable.app/module/#exports
     */
-  var exports: js.Any = js.native
+  @JSGlobal("module.exports")
+  @js.native
+  def exports: js.Any = js.native
+  @scala.inline
+  def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   /**
     * _Path to file containing the module._
@@ -44,5 +51,9 @@ object module extends js.Object {
     * This is the absolute path to the file containing the module.
     * @see https://docs.scriptable.app/module/#filename
     */
-  var filename: String = js.native
+  @JSGlobal("module.filename")
+  @js.native
+  def filename: String = js.native
+  @scala.inline
+  def filename_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filename")(x.asInstanceOf[js.Any])
 }

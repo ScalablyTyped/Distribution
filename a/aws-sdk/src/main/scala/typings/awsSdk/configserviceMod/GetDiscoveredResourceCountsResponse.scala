@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDiscoveredResourceCountsResponse extends js.Object {
+trait GetDiscoveredResourceCountsResponse extends StObject {
   
   /**
     * The string that you use in a subsequent request to get the next page of results in a paginated response.
@@ -31,39 +32,27 @@ object GetDiscoveredResourceCountsResponse {
   }
   
   @scala.inline
-  implicit class GetDiscoveredResourceCountsResponseOps[Self <: GetDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
+  implicit class GetDiscoveredResourceCountsResponseMutableBuilder[Self <: GetDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceCounts(value: ResourceCounts): Self = StObject.set(x, "resourceCounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setResourceCountsUndefined: Self = StObject.set(x, "resourceCounts", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setResourceCountsVarargs(value: ResourceCount*): Self = StObject.set(x, "resourceCounts", js.Array(value :_*))
     
     @scala.inline
-    def setResourceCountsVarargs(value: ResourceCount*): Self = this.set("resourceCounts", js.Array(value :_*))
+    def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "totalDiscoveredResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceCounts(value: ResourceCounts): Self = this.set("resourceCounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceCounts: Self = this.set("resourceCounts", js.undefined)
-    
-    @scala.inline
-    def setTotalDiscoveredResources(value: Long): Self = this.set("totalDiscoveredResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalDiscoveredResources: Self = this.set("totalDiscoveredResources", js.undefined)
+    def setTotalDiscoveredResourcesUndefined: Self = StObject.set(x, "totalDiscoveredResources", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeContentDescription extends js.Object {
+trait CodeContentDescription extends StObject {
   
   /**
     * The checksum that can be used to validate zip-format code.
@@ -36,42 +37,30 @@ object CodeContentDescription {
   }
   
   @scala.inline
-  implicit class CodeContentDescriptionOps[Self <: CodeContentDescription] (val x: Self) extends AnyVal {
+  implicit class CodeContentDescriptionMutableBuilder[Self <: CodeContentDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeMD5(value: CodeMD5): Self = StObject.set(x, "CodeMD5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeMD5Undefined: Self = StObject.set(x, "CodeMD5", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeSize(value: CodeSize): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeMD5(value: CodeMD5): Self = this.set("CodeMD5", value.asInstanceOf[js.Any])
+    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
     
     @scala.inline
-    def deleteCodeMD5: Self = this.set("CodeMD5", js.undefined)
+    def setS3ApplicationCodeLocationDescription(value: S3ApplicationCodeLocationDescription): Self = StObject.set(x, "S3ApplicationCodeLocationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeSize(value: CodeSize): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
+    def setS3ApplicationCodeLocationDescriptionUndefined: Self = StObject.set(x, "S3ApplicationCodeLocationDescription", js.undefined)
     
     @scala.inline
-    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
+    def setTextContent(value: TextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3ApplicationCodeLocationDescription(value: S3ApplicationCodeLocationDescription): Self = this.set("S3ApplicationCodeLocationDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3ApplicationCodeLocationDescription: Self = this.set("S3ApplicationCodeLocationDescription", js.undefined)
-    
-    @scala.inline
-    def setTextContent(value: TextContent): Self = this.set("TextContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextContent: Self = this.set("TextContent", js.undefined)
+    def setTextContentUndefined: Self = StObject.set(x, "TextContent", js.undefined)
   }
 }

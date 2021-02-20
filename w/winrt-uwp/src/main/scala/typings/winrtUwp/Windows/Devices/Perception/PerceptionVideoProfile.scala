@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.Perception
 
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapPixelFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Windows.Devices.Perception video profile. */
 @js.native
-trait PerceptionVideoProfile extends js.Object {
+trait PerceptionVideoProfile extends StObject {
   
   /** Gets the bitmap alpha mode. */
   var bitmapAlphaMode: BitmapAlphaMode = js.native
@@ -48,36 +49,24 @@ object PerceptionVideoProfile {
   }
   
   @scala.inline
-  implicit class PerceptionVideoProfileOps[Self <: PerceptionVideoProfile] (val x: Self) extends AnyVal {
+  implicit class PerceptionVideoProfileMutableBuilder[Self <: PerceptionVideoProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitmapPixelFormat(value: BitmapPixelFormat): Self = StObject.set(x, "bitmapPixelFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapAlphaMode(value: BitmapAlphaMode): Self = this.set("bitmapAlphaMode", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapPixelFormat(value: BitmapPixelFormat): Self = this.set("bitmapPixelFormat", value.asInstanceOf[js.Any])
+    def setIsEqual(value: PerceptionVideoProfile => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFrameDuration(value: Double): Self = this.set("frameDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEqual(value: PerceptionVideoProfile => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

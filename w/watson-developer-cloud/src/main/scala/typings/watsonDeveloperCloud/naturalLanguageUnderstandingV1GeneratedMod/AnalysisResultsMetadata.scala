@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Webpage metadata, such as the author and the title of the page. */
 @js.native
-trait AnalysisResultsMetadata extends js.Object {
+trait AnalysisResultsMetadata extends StObject {
   
   /** The authors of the document. */
   var authors: js.UndefOr[js.Array[Author]] = js.native
@@ -32,54 +33,42 @@ object AnalysisResultsMetadata {
   }
   
   @scala.inline
-  implicit class AnalysisResultsMetadataOps[Self <: AnalysisResultsMetadata] (val x: Self) extends AnyVal {
+  implicit class AnalysisResultsMetadataMutableBuilder[Self <: AnalysisResultsMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthors(value: js.Array[Author]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorsVarargs(value: Author*): Self = StObject.set(x, "authors", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorsVarargs(value: Author*): Self = this.set("authors", js.Array(value :_*))
+    def setFeeds(value: js.Array[Feed]): Self = StObject.set(x, "feeds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthors(value: js.Array[Author]): Self = this.set("authors", value.asInstanceOf[js.Any])
+    def setFeedsUndefined: Self = StObject.set(x, "feeds", js.undefined)
     
     @scala.inline
-    def deleteAuthors: Self = this.set("authors", js.undefined)
+    def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value :_*))
     
     @scala.inline
-    def setFeedsVarargs(value: Feed*): Self = this.set("feeds", js.Array(value :_*))
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeeds(value: js.Array[Feed]): Self = this.set("feeds", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteFeeds: Self = this.set("feeds", js.undefined)
+    def setPublication_date(value: String): Self = StObject.set(x, "publication_date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPublication_dateUndefined: Self = StObject.set(x, "publication_date", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublication_date(value: String): Self = this.set("publication_date", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublication_date: Self = this.set("publication_date", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

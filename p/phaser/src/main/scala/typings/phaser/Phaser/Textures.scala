@@ -21,13 +21,34 @@ import typings.std.ImageData
 import typings.std.Uint32Array
 import typings.std.Uint8ClampedArray
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Phaser.Textures")
-@js.native
-object Textures extends js.Object {
+object Textures {
+  
+  @js.native
+  sealed trait FilterMode extends StObject
+  /**
+    * Filter Types.
+    */
+  @JSGlobal("Phaser.Textures.FilterMode")
+  @js.native
+  object FilterMode extends StObject {
+    
+    /**
+      * Linear filter type.
+      */
+    @js.native
+    sealed trait LINEAR extends FilterMode
+    
+    /**
+      * Nearest neighbor filter type.
+      */
+    @js.native
+    sealed trait NEAREST extends FilterMode
+  }
   
   /**
     * A Canvas Texture is a special kind of Texture that is backed by an HTML Canvas Element as its source.
@@ -393,32 +414,11 @@ object Textures extends js.Object {
     val width: integer = js.native
   }
   
-  @js.native
-  sealed trait FilterMode extends js.Object
-  /**
-    * Filter Types.
-    */
-  @js.native
-  object FilterMode extends js.Object {
-    
-    /**
-      * Linear filter type.
-      */
-    @js.native
-    sealed trait LINEAR extends FilterMode
-    
-    /**
-      * Nearest neighbor filter type.
-      */
-    @js.native
-    sealed trait NEAREST extends FilterMode
-  }
-  
   /**
     * A Frame is a section of a Texture.
     */
   @js.native
-  trait Frame extends js.Object {
+  trait Frame extends StObject {
     
     /**
       * Over-rides the Renderer setting.
@@ -689,7 +689,7 @@ object Textures extends js.Object {
     * Sprites and other Game Objects get the texture data they need from the TextureManager.
     */
   @js.native
-  trait Texture extends js.Object {
+  trait Texture extends StObject {
     
     def add(name: String, sourceIndex: integer, x: Double, y: Double, width: Double, height: Double): Frame = js.native
     /**
@@ -1309,7 +1309,7 @@ object Textures extends js.Object {
     * A Texture can contain multiple Texture Sources, which only happens when a multi-atlas is loaded.
     */
   @js.native
-  trait TextureSource extends js.Object {
+  trait TextureSource extends StObject {
     
     /**
       * Currently un-used.

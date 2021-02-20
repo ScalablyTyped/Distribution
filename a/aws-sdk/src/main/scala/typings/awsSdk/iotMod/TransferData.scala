@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferData extends js.Object {
+trait TransferData extends StObject {
   
   /**
     * The date the transfer was accepted.
@@ -41,48 +42,36 @@ object TransferData {
   }
   
   @scala.inline
-  implicit class TransferDataOps[Self <: TransferData] (val x: Self) extends AnyVal {
+  implicit class TransferDataMutableBuilder[Self <: TransferData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptDate(value: DateType): Self = StObject.set(x, "acceptDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptDateUndefined: Self = StObject.set(x, "acceptDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRejectDate(value: DateType): Self = StObject.set(x, "rejectDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptDate(value: DateType): Self = this.set("acceptDate", value.asInstanceOf[js.Any])
+    def setRejectDateUndefined: Self = StObject.set(x, "rejectDate", js.undefined)
     
     @scala.inline
-    def deleteAcceptDate: Self = this.set("acceptDate", js.undefined)
+    def setRejectReason(value: Message): Self = StObject.set(x, "rejectReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectDate(value: DateType): Self = this.set("rejectDate", value.asInstanceOf[js.Any])
+    def setRejectReasonUndefined: Self = StObject.set(x, "rejectReason", js.undefined)
     
     @scala.inline
-    def deleteRejectDate: Self = this.set("rejectDate", js.undefined)
+    def setTransferDate(value: DateType): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectReason(value: Message): Self = this.set("rejectReason", value.asInstanceOf[js.Any])
+    def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     
     @scala.inline
-    def deleteRejectReason: Self = this.set("rejectReason", js.undefined)
+    def setTransferMessage(value: Message): Self = StObject.set(x, "transferMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferDate(value: DateType): Self = this.set("transferDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferDate: Self = this.set("transferDate", js.undefined)
-    
-    @scala.inline
-    def setTransferMessage(value: Message): Self = this.set("transferMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferMessage: Self = this.set("transferMessage", js.undefined)
+    def setTransferMessageUndefined: Self = StObject.set(x, "transferMessage", js.undefined)
   }
 }

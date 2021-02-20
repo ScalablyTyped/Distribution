@@ -1,5 +1,6 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,57 +27,45 @@ object TextProps {
   }
   
   @scala.inline
-  implicit class TextPropsOps[Self <: TextProps] (val x: Self) extends AnyVal {
+  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDx(value: NumberArray): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
     
     @scala.inline
-    def setDxVarargs(value: NumberProp*): Self = this.set("dx", js.Array(value :_*))
+    def setDy(value: NumberArray): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: NumberArray): Self = this.set("dx", value.asInstanceOf[js.Any])
+    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
     @scala.inline
-    def deleteDx: Self = this.set("dx", js.undefined)
+    def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
     
     @scala.inline
-    def setDyVarargs(value: NumberProp*): Self = this.set("dy", js.Array(value :_*))
+    def setInlineSize(value: NumberProp): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDy(value: NumberArray): Self = this.set("dy", value.asInstanceOf[js.Any])
+    def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
     
     @scala.inline
-    def deleteDy: Self = this.set("dy", js.undefined)
+    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInlineSize(value: NumberProp): Self = this.set("inlineSize", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteInlineSize: Self = this.set("inlineSize", js.undefined)
+    def setRotate(value: NumberArray): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: NumberProp): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setRotateVarargs(value: NumberProp*): Self = this.set("rotate", js.Array(value :_*))
-    
-    @scala.inline
-    def setRotate(value: NumberArray): Self = this.set("rotate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotate: Self = this.set("rotate", js.undefined)
+    def setRotateVarargs(value: NumberProp*): Self = StObject.set(x, "rotate", js.Array(value :_*))
   }
 }

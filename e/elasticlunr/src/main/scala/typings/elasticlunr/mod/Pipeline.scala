@@ -1,13 +1,13 @@
 package typings.elasticlunr.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "Pipeline")
 @js.native
-class Pipeline () extends js.Object {
+class Pipeline () extends StObject {
   
   def add(functions: PipelineFunction*): Unit = js.native
   
@@ -25,47 +25,61 @@ class Pipeline () extends js.Object {
   
   def toJSON(): SerialisedPipeline = js.native
 }
-/* static members */
-@JSImport("elasticlunr", "Pipeline")
-@js.native
-object Pipeline extends js.Object {
+object Pipeline {
   
+  /* static member */
+  @JSImport("elasticlunr", "Pipeline.getRegisteredFunction")
+  @js.native
   def getRegisteredFunction(label: String): PipelineFunction = js.native
   
+  /* static member */
+  @JSImport("elasticlunr", "Pipeline.load")
+  @js.native
   def load(serialised: SerialisedPipeline): Pipeline = js.native
   
+  /* static member */
+  @JSImport("elasticlunr", "Pipeline.registerFunction")
+  @js.native
   def registerFunction(fn: PipelineFunction, label: String): Unit = js.native
   
-  def warnIfFunctionNotRegistered(fn: PipelineFunction): Unit = js.native
-  
-  @js.native
-  object registeredFunctions extends js.Object {
+  object registeredFunctions {
     
-    @js.native
-    object stemmer extends js.Object {
+    object stemmer {
       
+      @JSImport("elasticlunr", "Pipeline.registeredFunctions.stemmer")
+      @js.native
       def apply(w: String): String = js.native
       
-      val label: String = js.native
-    }
-    
-    @js.native
-    object stopWordFilter extends js.Object {
-      
-      def apply(token: String): String = js.native
-      
-      val label: String = js.native
-      
+      @JSImport("elasticlunr", "Pipeline.registeredFunctions.stemmer.label")
       @js.native
-      object stopWords extends /* key */ StringDictionary[Boolean]
+      val label: String = js.native
     }
     
-    @js.native
-    object trimmer extends js.Object {
+    object stopWordFilter {
       
+      @JSImport("elasticlunr", "Pipeline.registeredFunctions.stopWordFilter")
+      @js.native
       def apply(token: String): String = js.native
       
+      @JSImport("elasticlunr", "Pipeline.registeredFunctions.stopWordFilter.label")
+      @js.native
+      val label: String = js.native
+    }
+    
+    object trimmer {
+      
+      @JSImport("elasticlunr", "Pipeline.registeredFunctions.trimmer")
+      @js.native
+      def apply(token: String): String = js.native
+      
+      @JSImport("elasticlunr", "Pipeline.registeredFunctions.trimmer.label")
+      @js.native
       val label: String = js.native
     }
   }
+  
+  /* static member */
+  @JSImport("elasticlunr", "Pipeline.warnIfFunctionNotRegistered")
+  @js.native
+  def warnIfFunctionNotRegistered(fn: PipelineFunction): Unit = js.native
 }

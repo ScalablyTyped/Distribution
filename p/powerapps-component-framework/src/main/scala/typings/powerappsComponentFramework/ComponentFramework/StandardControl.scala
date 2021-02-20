@@ -1,6 +1,7 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interface for the PowerApps Controls (Standard)
   */
 @js.native
-trait StandardControl[TInputs, TOutputs] extends js.Object {
+trait StandardControl[TInputs, TOutputs] extends StObject {
   
   /**
     * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.

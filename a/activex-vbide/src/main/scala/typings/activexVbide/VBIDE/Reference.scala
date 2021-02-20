@@ -1,11 +1,12 @@
 package typings.activexVbide.VBIDE
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reference extends js.Object {
+trait Reference extends StObject {
   
   val BuiltIn: Boolean = js.native
   

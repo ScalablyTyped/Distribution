@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SoundLevel extends js.Object
+sealed trait SoundLevel extends StObject
 @JSGlobal("Windows.Media.SoundLevel")
 @js.native
-object SoundLevel extends js.Object {
+object SoundLevel extends StObject {
   
   @js.native
   sealed trait full extends SoundLevel

@@ -1,11 +1,12 @@
 package typings.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AzureEnvironmentParameters extends js.Object {
+trait AzureEnvironmentParameters extends StObject {
   
   /**
     * The Active Directory login endpoint.
@@ -125,72 +126,60 @@ object AzureEnvironmentParameters {
   }
   
   @scala.inline
-  implicit class AzureEnvironmentParametersOps[Self <: AzureEnvironmentParameters] (val x: Self) extends AnyVal {
+  implicit class AzureEnvironmentParametersMutableBuilder[Self <: AzureEnvironmentParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDirectoryEndpointUrl(value: String): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDirectoryGraphApiVersion(value: String): Self = StObject.set(x, "activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveDirectoryGraphResourceId(value: String): Self = StObject.set(x, "activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectoryEndpointUrl(value: String): Self = this.set("activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
+    def setActiveDirectoryResourceId(value: String): Self = StObject.set(x, "activeDirectoryResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectoryGraphApiVersion(value: String): Self = this.set("activeDirectoryGraphApiVersion", value.asInstanceOf[js.Any])
+    def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: String): Self = StObject.set(x, "azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectoryGraphResourceId(value: String): Self = this.set("activeDirectoryGraphResourceId", value.asInstanceOf[js.Any])
+    def setAzureDataLakeStoreFileSystemEndpointSuffix(value: String): Self = StObject.set(x, "azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectoryResourceId(value: String): Self = this.set("activeDirectoryResourceId", value.asInstanceOf[js.Any])
+    def setBatchResourceId(value: String): Self = StObject.set(x, "batchResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureDataLakeAnalyticsCatalogAndJobEndpointSuffix(value: String): Self = this.set("azureDataLakeAnalyticsCatalogAndJobEndpointSuffix", value.asInstanceOf[js.Any])
+    def setGalleryEndpointUrl(value: String): Self = StObject.set(x, "galleryEndpointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzureDataLakeStoreFileSystemEndpointSuffix(value: String): Self = this.set("azureDataLakeStoreFileSystemEndpointSuffix", value.asInstanceOf[js.Any])
+    def setKeyVaultDnsSuffix(value: String): Self = StObject.set(x, "keyVaultDnsSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchResourceId(value: String): Self = this.set("batchResourceId", value.asInstanceOf[js.Any])
+    def setManagementEndpointUrl(value: String): Self = StObject.set(x, "managementEndpointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGalleryEndpointUrl(value: String): Self = this.set("galleryEndpointUrl", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyVaultDnsSuffix(value: String): Self = this.set("keyVaultDnsSuffix", value.asInstanceOf[js.Any])
+    def setPortalUrl(value: String): Self = StObject.set(x, "portalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagementEndpointUrl(value: String): Self = this.set("managementEndpointUrl", value.asInstanceOf[js.Any])
+    def setPublishingProfileUrl(value: String): Self = StObject.set(x, "publishingProfileUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResourceManagerEndpointUrl(value: String): Self = StObject.set(x, "resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalUrl(value: String): Self = this.set("portalUrl", value.asInstanceOf[js.Any])
+    def setSqlManagementEndpointUrl(value: String): Self = StObject.set(x, "sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishingProfileUrl(value: String): Self = this.set("publishingProfileUrl", value.asInstanceOf[js.Any])
+    def setSqlServerHostnameSuffix(value: String): Self = StObject.set(x, "sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceManagerEndpointUrl(value: String): Self = this.set("resourceManagerEndpointUrl", value.asInstanceOf[js.Any])
+    def setStorageEndpointSuffix(value: String): Self = StObject.set(x, "storageEndpointSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlManagementEndpointUrl(value: String): Self = this.set("sqlManagementEndpointUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSqlServerHostnameSuffix(value: String): Self = this.set("sqlServerHostnameSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStorageEndpointSuffix(value: String): Self = this.set("storageEndpointSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateAuthority(value: Boolean): Self = this.set("validateAuthority", value.asInstanceOf[js.Any])
+    def setValidateAuthority(value: Boolean): Self = StObject.set(x, "validateAuthority", value.asInstanceOf[js.Any])
   }
 }

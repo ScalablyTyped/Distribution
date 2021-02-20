@@ -1,12 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/ReceiveMessage", JSImport.Namespace)
-@js.native
-object receiveMessageMod extends js.Object {
+object receiveMessageMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/model/ReceiveMessage", "ReceiveMessage")
+  @js.native
   val ReceiveMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

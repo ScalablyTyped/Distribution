@@ -1,5 +1,6 @@
 package typings.googleapis.appengineV1Mod.appengineV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * file that is deployed must be specified separately.
   */
 @js.native
-trait SchemaFileInfo extends js.Object {
+trait SchemaFileInfo extends StObject {
   
   /**
     * The MIME type of the file.Defaults to the value from Google Cloud
@@ -38,36 +39,24 @@ object SchemaFileInfo {
   }
   
   @scala.inline
-  implicit class SchemaFileInfoOps[Self <: SchemaFileInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaFileInfoMutableBuilder[Self <: SchemaFileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSha1Sum(value: String): Self = StObject.set(x, "sha1Sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setSha1SumUndefined: Self = StObject.set(x, "sha1Sum", js.undefined)
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha1Sum(value: String): Self = this.set("sha1Sum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSha1Sum: Self = this.set("sha1Sum", js.undefined)
-    
-    @scala.inline
-    def setSourceUrl(value: String): Self = this.set("sourceUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceUrl: Self = this.set("sourceUrl", js.undefined)
+    def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
   }
 }

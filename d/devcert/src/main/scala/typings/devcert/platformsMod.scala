@@ -1,18 +1,20 @@
 package typings.devcert
 
+import org.scalablytyped.runtime.Shortcut
 import typings.devcert.mod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devcert/dist/platforms", JSImport.Namespace)
-@js.native
-object platformsMod extends js.Object {
+object platformsMod extends Shortcut {
   
+  @JSImport("devcert/dist/platforms", JSImport.Default)
+  @js.native
   val default: Platform = js.native
   
   @js.native
-  trait Platform extends js.Object {
+  trait Platform extends StObject {
     
     def addDomainToHostFileIfMissing(domain: String): js.Promise[Unit] = js.native
     
@@ -27,4 +29,9 @@ object platformsMod extends js.Object {
     
     def writeProtectedFile(filepath: String, contents: String): js.Promise[Unit] = js.native
   }
+  
+  type _To = Platform
+  
+  /* This means you don't have to write `default`, but can instead just say `platformsMod.foo` */
+  override def _to: Platform = default
 }

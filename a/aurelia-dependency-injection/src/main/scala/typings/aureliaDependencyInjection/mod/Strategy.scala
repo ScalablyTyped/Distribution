@@ -1,48 +1,40 @@
 package typings.aureliaDependencyInjection.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Strategy extends js.Object
+sealed trait Strategy extends StObject
 @JSImport("aurelia-dependency-injection", "Strategy")
 @js.native
-object Strategy extends js.Object {
+object Strategy extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[Strategy with Double] = js.native
   
   @js.native
   sealed trait alias extends Strategy
-  /* 5 */ @js.native
-  object alias extends TopLevel[alias with Double]
+  /* 5 */ val alias: typings.aureliaDependencyInjection.mod.Strategy.alias with Double = js.native
   
   @js.native
   sealed trait array extends Strategy
-  /* 4 */ @js.native
-  object array extends TopLevel[array with Double]
+  /* 4 */ val array: typings.aureliaDependencyInjection.mod.Strategy.array with Double = js.native
   
   @js.native
   sealed trait function extends Strategy
-  /* 3 */ @js.native
-  object function extends TopLevel[function with Double]
+  /* 3 */ val function: typings.aureliaDependencyInjection.mod.Strategy.function with Double = js.native
   
   @js.native
   sealed trait instance extends Strategy
-  /* 0 */ @js.native
-  object instance extends TopLevel[instance with Double]
+  /* 0 */ val instance: typings.aureliaDependencyInjection.mod.Strategy.instance with Double = js.native
   
   @js.native
   sealed trait singleton extends Strategy
-  /* 1 */ @js.native
-  object singleton
-    extends TopLevel[typings.aureliaDependencyInjection.mod.Strategy.singleton with Double]
+  /* 1 */ val singleton: typings.aureliaDependencyInjection.mod.Strategy.singleton with Double = js.native
   
   @js.native
   sealed trait transient extends Strategy
-  /* 2 */ @js.native
-  object transient
-    extends TopLevel[typings.aureliaDependencyInjection.mod.Strategy.transient with Double]
+  /* 2 */ val transient: typings.aureliaDependencyInjection.mod.Strategy.transient with Double = js.native
 }

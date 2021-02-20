@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait fragParsingInitSegmentData extends js.Object {
+trait fragParsingInitSegmentData extends StObject {
   
   var codecs: js.Any = js.native
   
@@ -24,30 +25,18 @@ object fragParsingInitSegmentData {
   }
   
   @scala.inline
-  implicit class fragParsingInitSegmentDataOps[Self <: fragParsingInitSegmentData] (val x: Self) extends AnyVal {
+  implicit class fragParsingInitSegmentDataMutableBuilder[Self <: fragParsingInitSegmentData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodecs(value: js.Any): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecs(value: js.Any): Self = this.set("codecs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrag(value: Fragment): Self = this.set("frag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMoov(value: js.Any): Self = this.set("moov", value.asInstanceOf[js.Any])
+    def setMoov(value: js.Any): Self = StObject.set(x, "moov", value.asInstanceOf[js.Any])
   }
 }

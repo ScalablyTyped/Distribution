@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientScript.anon.Fields
 import typings.maximMazurokGapiClientScript.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScriptsResource extends js.Object {
+trait ScriptsResource extends StObject {
   
   def run(request: Fields, body: ExecutionRequest): Request[Operation] = js.native
   /**

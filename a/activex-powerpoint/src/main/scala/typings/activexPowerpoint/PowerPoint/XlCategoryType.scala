@@ -3,6 +3,7 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexPowerpoint.activexPowerpointNumbers.`-4105`
 import typings.activexPowerpoint.activexPowerpointNumbers.`2`
 import typings.activexPowerpoint.activexPowerpointNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexPowerpoint.activexPowerpointNumbers.`2`
   - typings.activexPowerpoint.activexPowerpointNumbers.`3`
 */
-trait XlCategoryType extends js.Object
+trait XlCategoryType extends StObject
 object XlCategoryType {
   
   @scala.inline

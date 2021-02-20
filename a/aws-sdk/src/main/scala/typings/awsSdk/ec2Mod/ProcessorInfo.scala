@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessorInfo extends js.Object {
+trait ProcessorInfo extends StObject {
   
   /**
     * The architectures supported by the instance type.
@@ -26,33 +27,21 @@ object ProcessorInfo {
   }
   
   @scala.inline
-  implicit class ProcessorInfoOps[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
+  implicit class ProcessorInfoMutableBuilder[Self <: ProcessorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportedArchitectures(value: ArchitectureTypeList): Self = StObject.set(x, "SupportedArchitectures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportedArchitecturesUndefined: Self = StObject.set(x, "SupportedArchitectures", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportedArchitecturesVarargs(value: ArchitectureType*): Self = StObject.set(x, "SupportedArchitectures", js.Array(value :_*))
     
     @scala.inline
-    def setSupportedArchitecturesVarargs(value: ArchitectureType*): Self = this.set("SupportedArchitectures", js.Array(value :_*))
+    def setSustainedClockSpeedInGhz(value: ProcessorSustainedClockSpeed): Self = StObject.set(x, "SustainedClockSpeedInGhz", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedArchitectures(value: ArchitectureTypeList): Self = this.set("SupportedArchitectures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportedArchitectures: Self = this.set("SupportedArchitectures", js.undefined)
-    
-    @scala.inline
-    def setSustainedClockSpeedInGhz(value: ProcessorSustainedClockSpeed): Self = this.set("SustainedClockSpeedInGhz", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSustainedClockSpeedInGhz: Self = this.set("SustainedClockSpeedInGhz", js.undefined)
+    def setSustainedClockSpeedInGhzUndefined: Self = StObject.set(x, "SustainedClockSpeedInGhz", js.undefined)
   }
 }

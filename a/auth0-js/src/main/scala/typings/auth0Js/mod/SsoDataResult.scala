@@ -3,6 +3,7 @@ package typings.auth0Js.mod
 import typings.auth0Js.anon.Name
 import typings.auth0Js.auth0JsBooleans.`false`
 import typings.auth0Js.auth0JsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0Js.mod.SsoSessionFoundResult
   - typings.auth0Js.mod.SsoSessionNotFoundResult
 */
-trait SsoDataResult extends js.Object
+trait SsoDataResult extends StObject
 object SsoDataResult {
   
   @scala.inline
@@ -22,14 +23,14 @@ object SsoDataResult {
     lastUsedUsername: String,
     sessionClients: js.Array[String],
     sso: `true`
-  ): SsoDataResult = {
+  ): typings.auth0Js.mod.SsoSessionFoundResult = {
     val __obj = js.Dynamic.literal(lastUsedClientID = lastUsedClientID.asInstanceOf[js.Any], lastUsedConnection = lastUsedConnection.asInstanceOf[js.Any], lastUsedUserID = lastUsedUserID.asInstanceOf[js.Any], lastUsedUsername = lastUsedUsername.asInstanceOf[js.Any], sessionClients = sessionClients.asInstanceOf[js.Any], sso = sso.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SsoDataResult]
+    __obj.asInstanceOf[typings.auth0Js.mod.SsoSessionFoundResult]
   }
   
   @scala.inline
-  def SsoSessionNotFoundResult(sso: `false`): SsoDataResult = {
+  def SsoSessionNotFoundResult(sso: `false`): typings.auth0Js.mod.SsoSessionNotFoundResult = {
     val __obj = js.Dynamic.literal(sso = sso.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SsoDataResult]
+    __obj.asInstanceOf[typings.auth0Js.mod.SsoSessionNotFoundResult]
   }
 }

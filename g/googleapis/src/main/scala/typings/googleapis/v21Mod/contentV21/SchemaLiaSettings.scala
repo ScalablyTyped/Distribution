@@ -1,5 +1,6 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * require the admin role.
   */
 @js.native
-trait SchemaLiaSettings extends js.Object {
+trait SchemaLiaSettings extends StObject {
   
   /**
     * The ID of the account to which these LIA settings belong. Ignored upon
@@ -37,39 +38,27 @@ object SchemaLiaSettings {
   }
   
   @scala.inline
-  implicit class SchemaLiaSettingsOps[Self <: SchemaLiaSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaLiaSettingsMutableBuilder[Self <: SchemaLiaSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountrySettings(value: js.Array[SchemaLiaCountrySettings]): Self = StObject.set(x, "countrySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setCountrySettingsUndefined: Self = StObject.set(x, "countrySettings", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setCountrySettingsVarargs(value: SchemaLiaCountrySettings*): Self = StObject.set(x, "countrySettings", js.Array(value :_*))
     
     @scala.inline
-    def setCountrySettingsVarargs(value: SchemaLiaCountrySettings*): Self = this.set("countrySettings", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountrySettings(value: js.Array[SchemaLiaCountrySettings]): Self = this.set("countrySettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountrySettings: Self = this.set("countrySettings", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

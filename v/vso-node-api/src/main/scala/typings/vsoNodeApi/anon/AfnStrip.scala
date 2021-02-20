@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AfnStrip extends js.Object {
+trait AfnStrip extends StObject {
   
   var afnStrip: scala.Double = js.native
   
@@ -53,54 +54,42 @@ object AfnStrip {
   }
   
   @scala.inline
-  implicit class AfnStripOps[Self <: AfnStrip] (val x: Self) extends AnyVal {
+  implicit class AfnStripMutableBuilder[Self <: AfnStrip] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfnStrip(value: scala.Double): Self = StObject.set(x, "afnStrip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBugFilingData(value: scala.Double): Self = StObject.set(x, "bugFilingData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeCoverage(value: scala.Double): Self = StObject.set(x, "codeCoverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfnStrip(value: scala.Double): Self = this.set("afnStrip", value.asInstanceOf[js.Any])
+    def setConsoleLog(value: scala.Double): Self = StObject.set(x, "consoleLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBugFilingData(value: scala.Double): Self = this.set("bugFilingData", value.asInstanceOf[js.Any])
+    def setGeneralAttachment(value: scala.Double): Self = StObject.set(x, "generalAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeCoverage(value: scala.Double): Self = this.set("codeCoverage", value.asInstanceOf[js.Any])
+    def setIntermediateCollectorData(value: scala.Double): Self = StObject.set(x, "intermediateCollectorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsoleLog(value: scala.Double): Self = this.set("consoleLog", value.asInstanceOf[js.Any])
+    def setRunConfig(value: scala.Double): Self = StObject.set(x, "runConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneralAttachment(value: scala.Double): Self = this.set("generalAttachment", value.asInstanceOf[js.Any])
+    def setTestImpactDetails(value: scala.Double): Self = StObject.set(x, "testImpactDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntermediateCollectorData(value: scala.Double): Self = this.set("intermediateCollectorData", value.asInstanceOf[js.Any])
+    def setTmiTestResultDetail(value: scala.Double): Self = StObject.set(x, "tmiTestResultDetail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunConfig(value: scala.Double): Self = this.set("runConfig", value.asInstanceOf[js.Any])
+    def setTmiTestRunDeploymentFiles(value: scala.Double): Self = StObject.set(x, "tmiTestRunDeploymentFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestImpactDetails(value: scala.Double): Self = this.set("testImpactDetails", value.asInstanceOf[js.Any])
+    def setTmiTestRunReverseDeploymentFiles(value: scala.Double): Self = StObject.set(x, "tmiTestRunReverseDeploymentFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTmiTestResultDetail(value: scala.Double): Self = this.set("tmiTestResultDetail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTmiTestRunDeploymentFiles(value: scala.Double): Self = this.set("tmiTestRunDeploymentFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTmiTestRunReverseDeploymentFiles(value: scala.Double): Self = this.set("tmiTestRunReverseDeploymentFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTmiTestRunSummary(value: scala.Double): Self = this.set("tmiTestRunSummary", value.asInstanceOf[js.Any])
+    def setTmiTestRunSummary(value: scala.Double): Self = StObject.set(x, "tmiTestRunSummary", value.asInstanceOf[js.Any])
   }
 }

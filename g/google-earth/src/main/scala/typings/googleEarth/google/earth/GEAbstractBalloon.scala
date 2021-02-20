@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GEAbstractBalloon extends js.Object {
+trait GEAbstractBalloon extends StObject {
   
   /**
     * When true, the balloon frame is displayed with a button that the user
@@ -109,60 +110,48 @@ object GEAbstractBalloon {
   }
   
   @scala.inline
-  implicit class GEAbstractBalloonOps[Self <: GEAbstractBalloon] (val x: Self) extends AnyVal {
+  implicit class GEAbstractBalloonMutableBuilder[Self <: GEAbstractBalloon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCloseButtonEnabled(value: () => Boolean): Self = StObject.set(x, "getCloseButtonEnabled", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFeature(value: () => KmlFeature): Self = StObject.set(x, "getFeature", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCloseButtonEnabled(value: () => Boolean): Self = this.set("getCloseButtonEnabled", js.Any.fromFunction0(value))
+    def setGetMaxHeight(value: () => Double): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFeature(value: () => KmlFeature): Self = this.set("getFeature", js.Any.fromFunction0(value))
+    def setGetMaxWidth(value: () => Double): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetMinHeight(value: () => Double): Self = StObject.set(x, "getMinHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxHeight(value: () => Double): Self = this.set("getMaxHeight", js.Any.fromFunction0(value))
+    def setGetMinWidth(value: () => Double): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxWidth(value: () => Double): Self = this.set("getMaxWidth", js.Any.fromFunction0(value))
+    def setSetCloseButtonEnabled(value: Boolean => Unit): Self = StObject.set(x, "setCloseButtonEnabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMinHeight(value: () => Double): Self = this.set("getMinHeight", js.Any.fromFunction0(value))
+    def setSetFeature(value: KmlFeature => Unit): Self = StObject.set(x, "setFeature", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMinWidth(value: () => Double): Self = this.set("getMinWidth", js.Any.fromFunction0(value))
+    def setSetId(value: String => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCloseButtonEnabled(value: Boolean => Unit): Self = this.set("setCloseButtonEnabled", js.Any.fromFunction1(value))
+    def setSetMaxHeight(value: Double => Unit): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFeature(value: KmlFeature => Unit): Self = this.set("setFeature", js.Any.fromFunction1(value))
+    def setSetMaxWidth(value: Double => Unit): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetId(value: String => Unit): Self = this.set("setId", js.Any.fromFunction1(value))
+    def setSetMinHeight(value: Double => Unit): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxHeight(value: Double => Unit): Self = this.set("setMaxHeight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMaxWidth(value: Double => Unit): Self = this.set("setMaxWidth", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinHeight(value: Double => Unit): Self = this.set("setMinHeight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinWidth(value: Double => Unit): Self = this.set("setMinWidth", js.Any.fromFunction1(value))
+    def setSetMinWidth(value: Double => Unit): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
   }
 }

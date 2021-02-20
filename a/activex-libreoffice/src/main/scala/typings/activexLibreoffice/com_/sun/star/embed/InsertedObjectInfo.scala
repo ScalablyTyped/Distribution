@@ -2,13 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.embed
 
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is intended to provide result of creation of an embedded object by dialog. */
 @js.native
-trait InsertedObjectInfo extends js.Object {
+trait InsertedObjectInfo extends StObject {
   
   /** The new created embedded object. */
   var Object: XEmbeddedObject = js.native
@@ -30,24 +31,12 @@ object InsertedObjectInfo {
   }
   
   @scala.inline
-  implicit class InsertedObjectInfoOps[Self <: InsertedObjectInfo] (val x: Self) extends AnyVal {
+  implicit class InsertedObjectInfoMutableBuilder[Self <: InsertedObjectInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObject(value: XEmbeddedObject): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObject(value: XEmbeddedObject): Self = this.set("Object", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: SafeArray[NamedValue]): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setOptions(value: SafeArray[NamedValue]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
   }
 }

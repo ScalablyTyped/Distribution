@@ -4,6 +4,7 @@ import typings.documentdbServer.documentdbServerStrings.Create
 import typings.documentdbServer.documentdbServerStrings.Delete
 import typings.documentdbServer.documentdbServerStrings.Replace
 import typings.documentdbServer.documentdbServerStrings.Upsert
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For stored procedures, the request contains information about the request sent to execute the stored procedure.
   */
 @js.native
-trait IRequest extends js.Object {
+trait IRequest extends StObject {
   
   /**
     * Gets the request body.

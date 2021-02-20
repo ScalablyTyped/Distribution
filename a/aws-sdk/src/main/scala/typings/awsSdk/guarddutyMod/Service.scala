@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Service extends js.Object {
+trait Service extends StObject {
   
   /**
     * Information about the activity that is described in a finding.
@@ -66,78 +67,66 @@ object Service {
   }
   
   @scala.inline
-  implicit class ServiceOps[Self <: Service] (val x: Self) extends AnyVal {
+  implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArchived(value: Boolean): Self = StObject.set(x, "Archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setArchivedUndefined: Self = StObject.set(x, "Archived", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setCount(value: Integer): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchived(value: Boolean): Self = this.set("Archived", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def deleteArchived: Self = this.set("Archived", js.undefined)
+    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setDetectorIdUndefined: Self = StObject.set(x, "DetectorId", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setEventFirstSeen(value: String): Self = StObject.set(x, "EventFirstSeen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    def setEventFirstSeenUndefined: Self = StObject.set(x, "EventFirstSeen", js.undefined)
     
     @scala.inline
-    def deleteDetectorId: Self = this.set("DetectorId", js.undefined)
+    def setEventLastSeen(value: String): Self = StObject.set(x, "EventLastSeen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventFirstSeen(value: String): Self = this.set("EventFirstSeen", value.asInstanceOf[js.Any])
+    def setEventLastSeenUndefined: Self = StObject.set(x, "EventLastSeen", js.undefined)
     
     @scala.inline
-    def deleteEventFirstSeen: Self = this.set("EventFirstSeen", js.undefined)
+    def setEvidence(value: Evidence): Self = StObject.set(x, "Evidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventLastSeen(value: String): Self = this.set("EventLastSeen", value.asInstanceOf[js.Any])
+    def setEvidenceUndefined: Self = StObject.set(x, "Evidence", js.undefined)
     
     @scala.inline
-    def deleteEventLastSeen: Self = this.set("EventLastSeen", js.undefined)
+    def setResourceRole(value: String): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvidence(value: Evidence): Self = this.set("Evidence", value.asInstanceOf[js.Any])
+    def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
     
     @scala.inline
-    def deleteEvidence: Self = this.set("Evidence", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRole(value: String): Self = this.set("ResourceRole", value.asInstanceOf[js.Any])
+    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
     @scala.inline
-    def deleteResourceRole: Self = this.set("ResourceRole", js.undefined)
+    def setUserFeedback(value: String): Self = StObject.set(x, "UserFeedback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
-    
-    @scala.inline
-    def setUserFeedback(value: String): Self = this.set("UserFeedback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserFeedback: Self = this.set("UserFeedback", js.undefined)
+    def setUserFeedbackUndefined: Self = StObject.set(x, "UserFeedback", js.undefined)
   }
 }

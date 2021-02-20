@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactCardTabKind extends js.Object
+sealed trait ContactCardTabKind extends StObject
 /** Specifies which tab to display on a mini contact card. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactCardTabKind")
 @js.native
-object ContactCardTabKind extends js.Object {
+object ContactCardTabKind extends StObject {
   
   /** The default tab. */
   @js.native

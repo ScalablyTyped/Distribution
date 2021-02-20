@@ -1,6 +1,7 @@
 package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object RequestHeadersacceptstrin {
   }
   
   @scala.inline
-  implicit class RequestHeadersacceptstrinOps[Self <: RequestHeadersacceptstrin] (val x: Self) extends AnyVal {
+  implicit class RequestHeadersacceptstrinMutableBuilder[Self <: RequestHeadersacceptstrin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccept(value: js.UndefOr[String] with String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     
     @scala.inline
-    def setAccept(value: js.UndefOr[String] with String): Self = this.set("accept", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setUser-agent`(value: js.UndefOr[String] with String): Self = this.set("user-agent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthorization(value: String): Self = this.set("authorization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+    def `setUser-agent`(value: js.UndefOr[String] with String): Self = StObject.set(x, "user-agent", value.asInstanceOf[js.Any])
   }
 }

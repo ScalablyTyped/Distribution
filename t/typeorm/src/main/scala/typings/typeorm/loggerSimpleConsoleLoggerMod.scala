@@ -9,14 +9,14 @@ import typings.typeorm.typeormStrings.migration
 import typings.typeorm.typeormStrings.query
 import typings.typeorm.typeormStrings.schema
 import typings.typeorm.typeormStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/logger/SimpleConsoleLogger", JSImport.Namespace)
-@js.native
-object loggerSimpleConsoleLoggerMod extends js.Object {
+object loggerSimpleConsoleLoggerMod {
   
+  @JSImport("typeorm/logger/SimpleConsoleLogger", "SimpleConsoleLogger")
   @js.native
   class SimpleConsoleLogger () extends Logger {
     def this(options: js.Array[log | info | warn | query | schema | error | migration]) = this()

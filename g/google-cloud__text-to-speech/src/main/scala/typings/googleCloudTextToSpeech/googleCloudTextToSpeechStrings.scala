@@ -1,51 +1,49 @@
 package typings.googleCloudTextToSpeech
 
-import typings.googleCloudTextToSpeech.mod.AudioEncoding
-import typings.googleCloudTextToSpeech.mod.SsmlVoiceGender
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleCloudTextToSpeechStrings {
-  @js.native
-  sealed trait AUDIO_ENCODING_UNSPECIFIED extends AudioEncoding
   
   @js.native
-  sealed trait FEMALE extends SsmlVoiceGender
+  sealed trait custom extends StObject
+  @scala.inline
+  def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait LINEAR16 extends AudioEncoding
+  sealed trait delete extends StObject
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait MALE extends SsmlVoiceGender
+  sealed trait get extends StObject
+  @scala.inline
+  def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait MP3 extends AudioEncoding
+  sealed trait patch extends StObject
+  @scala.inline
+  def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
-  sealed trait NEUTRAL extends SsmlVoiceGender
+  sealed trait post extends StObject
+  @scala.inline
+  def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait OGG_OPUS extends AudioEncoding
+  sealed trait put extends StObject
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
   
   @js.native
-  sealed trait SSML_VOICE_GENDER_UNSPECIFIED extends SsmlVoiceGender
+  sealed trait ssml extends StObject
+  @scala.inline
+  def ssml: ssml = "ssml".asInstanceOf[ssml]
   
+  @js.native
+  sealed trait text extends StObject
   @scala.inline
-  def AUDIO_ENCODING_UNSPECIFIED: AUDIO_ENCODING_UNSPECIFIED = "AUDIO_ENCODING_UNSPECIFIED".asInstanceOf[AUDIO_ENCODING_UNSPECIFIED]
-  @scala.inline
-  def FEMALE: FEMALE = "FEMALE".asInstanceOf[FEMALE]
-  @scala.inline
-  def LINEAR16: LINEAR16 = "LINEAR16".asInstanceOf[LINEAR16]
-  @scala.inline
-  def MALE: MALE = "MALE".asInstanceOf[MALE]
-  @scala.inline
-  def MP3: MP3 = "MP3".asInstanceOf[MP3]
-  @scala.inline
-  def NEUTRAL: NEUTRAL = "NEUTRAL".asInstanceOf[NEUTRAL]
-  @scala.inline
-  def OGG_OPUS: OGG_OPUS = "OGG_OPUS".asInstanceOf[OGG_OPUS]
-  @scala.inline
-  def SSML_VOICE_GENDER_UNSPECIFIED: SSML_VOICE_GENDER_UNSPECIFIED = "SSML_VOICE_GENDER_UNSPECIFIED".asInstanceOf[SSML_VOICE_GENDER_UNSPECIFIED]
+  def text: text = "text".asInstanceOf[text]
 }
-

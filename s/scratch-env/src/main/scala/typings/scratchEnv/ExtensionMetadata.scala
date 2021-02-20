@@ -1,13 +1,14 @@
 package typings.scratchEnv
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** All the metadata needed to register an extension. */
 @js.native
-trait ExtensionMetadata extends js.Object {
+trait ExtensionMetadata extends StObject {
   
   /** URI for an image to be placed on each block in this extension. Data URI ok. */
   var blockIconURI: js.UndefOr[String] = js.native
@@ -39,57 +40,45 @@ object ExtensionMetadata {
   }
   
   @scala.inline
-  implicit class ExtensionMetadataOps[Self <: ExtensionMetadata] (val x: Self) extends AnyVal {
+  implicit class ExtensionMetadataMutableBuilder[Self <: ExtensionMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockIconURI(value: String): Self = StObject.set(x, "blockIconURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIconURIUndefined: Self = StObject.set(x, "blockIconURI", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlocks(value: js.Array[ExtensionBlockMetadata | String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocksVarargs(value: (ExtensionBlockMetadata | String)*): Self = this.set("blocks", js.Array(value :_*))
+    def setBlocksVarargs(value: (ExtensionBlockMetadata | String)*): Self = StObject.set(x, "blocks", js.Array(value :_*))
     
     @scala.inline
-    def setBlocks(value: js.Array[ExtensionBlockMetadata | String]): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setDocsURI(value: String): Self = StObject.set(x, "docsURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDocsURIUndefined: Self = StObject.set(x, "docsURI", js.undefined)
     
     @scala.inline
-    def setBlockIconURI(value: String): Self = this.set("blockIconURI", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockIconURI: Self = this.set("blockIconURI", js.undefined)
+    def setMenuIconURI(value: String): Self = StObject.set(x, "menuIconURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocsURI(value: String): Self = this.set("docsURI", value.asInstanceOf[js.Any])
+    def setMenuIconURIUndefined: Self = StObject.set(x, "menuIconURI", js.undefined)
     
     @scala.inline
-    def deleteDocsURI: Self = this.set("docsURI", js.undefined)
+    def setMenus(value: Record[String, ExtensionMenuMetadata]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuIconURI(value: String): Self = this.set("menuIconURI", value.asInstanceOf[js.Any])
+    def setMenusUndefined: Self = StObject.set(x, "menus", js.undefined)
     
     @scala.inline
-    def deleteMenuIconURI: Self = this.set("menuIconURI", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenus(value: Record[String, ExtensionMenuMetadata]): Self = this.set("menus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenus: Self = this.set("menus", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

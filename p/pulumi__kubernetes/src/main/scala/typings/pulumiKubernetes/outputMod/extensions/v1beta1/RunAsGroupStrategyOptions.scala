@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RunAsGroupStrategyOptions defines the strategy type and any options used to create the strategy. Deprecated: use RunAsGroupStrategyOptions from policy API Group instead.
   */
 @js.native
-trait RunAsGroupStrategyOptions extends js.Object {
+trait RunAsGroupStrategyOptions extends StObject {
   
   /**
     * ranges are the allowed ranges of gids that may be used. If you would like to force a single gid then supply a single range with the same start and end. Required for MustRunAs.
@@ -29,27 +30,15 @@ object RunAsGroupStrategyOptions {
   }
   
   @scala.inline
-  implicit class RunAsGroupStrategyOptionsOps[Self <: RunAsGroupStrategyOptions] (val x: Self) extends AnyVal {
+  implicit class RunAsGroupStrategyOptionsMutableBuilder[Self <: RunAsGroupStrategyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRanges(value: js.Array[IDRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRangesVarargs(value: IDRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRangesVarargs(value: IDRange*): Self = this.set("ranges", js.Array(value :_*))
-    
-    @scala.inline
-    def setRanges(value: js.Array[IDRange]): Self = this.set("ranges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRule(value: String): Self = this.set("rule", value.asInstanceOf[js.Any])
+    def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

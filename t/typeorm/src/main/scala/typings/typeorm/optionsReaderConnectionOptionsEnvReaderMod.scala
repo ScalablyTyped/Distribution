@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.connectionConnectionOptionsMod.ConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/connection/options-reader/ConnectionOptionsEnvReader", JSImport.Namespace)
-@js.native
-object optionsReaderConnectionOptionsEnvReaderMod extends js.Object {
+object optionsReaderConnectionOptionsEnvReaderMod {
   
+  @JSImport("typeorm/connection/options-reader/ConnectionOptionsEnvReader", "ConnectionOptionsEnvReader")
   @js.native
-  class ConnectionOptionsEnvReader () extends js.Object {
+  class ConnectionOptionsEnvReader () extends StObject {
     
     /**
       * Reads connection options from environment variables.

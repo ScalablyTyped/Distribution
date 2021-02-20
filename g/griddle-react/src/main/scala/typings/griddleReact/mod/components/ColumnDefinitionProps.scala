@@ -2,6 +2,7 @@ package typings.griddleReact.mod.components
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.griddleReact.mod.GriddleComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,125 +81,113 @@ object ColumnDefinitionProps {
   }
   
   @scala.inline
-  implicit class ColumnDefinitionPropsOps[Self <: ColumnDefinitionProps] (val x: Self) extends AnyVal {
+  implicit class ColumnDefinitionPropsMutableBuilder[Self <: ColumnDefinitionProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssClassName(value: String | (js.Function1[/* props */ js.Any, String])): Self = StObject.set(x, "cssClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setCssClassNameFunction1(value: /* props */ js.Any => String): Self = StObject.set(x, "cssClassName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    def setCssClassNameUndefined: Self = StObject.set(x, "cssClassName", js.undefined)
     
     @scala.inline
-    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    def setCustomComponent(value: GriddleComponent[CellProps with js.Any]): Self = StObject.set(x, "customComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssClassNameFunction1(value: /* props */ js.Any => String): Self = this.set("cssClassName", js.Any.fromFunction1(value))
+    def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)
     
     @scala.inline
-    def setCssClassName(value: String | (js.Function1[/* props */ js.Any, String])): Self = this.set("cssClassName", value.asInstanceOf[js.Any])
+    def setCustomHeadingComponent(value: GriddleComponent[TableHeadingCellProps with js.Any]): Self = StObject.set(x, "customHeadingComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCssClassName: Self = this.set("cssClassName", js.undefined)
+    def setCustomHeadingComponentUndefined: Self = StObject.set(x, "customHeadingComponent", js.undefined)
     
     @scala.inline
-    def setCustomComponent(value: GriddleComponent[CellProps with js.Any]): Self = this.set("customComponent", value.asInstanceOf[js.Any])
+    def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomComponent: Self = this.set("customComponent", js.undefined)
+    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
     @scala.inline
-    def setCustomHeadingComponent(value: GriddleComponent[TableHeadingCellProps with js.Any]): Self = this.set("customHeadingComponent", value.asInstanceOf[js.Any])
+    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomHeadingComponent: Self = this.set("customHeadingComponent", js.undefined)
+    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
     @scala.inline
-    def setExtraData(value: js.Any): Self = this.set("extraData", value.asInstanceOf[js.Any])
+    def setHeaderCssClassName(value: String | (js.Function1[/* props */ js.Any, String])): Self = StObject.set(x, "headerCssClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExtraData: Self = this.set("extraData", js.undefined)
+    def setHeaderCssClassNameFunction1(value: /* props */ js.Any => String): Self = StObject.set(x, "headerCssClassName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setHeaderCssClassNameUndefined: Self = StObject.set(x, "headerCssClassName", js.undefined)
     
     @scala.inline
-    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCssClassNameFunction1(value: /* props */ js.Any => String): Self = this.set("headerCssClassName", js.Any.fromFunction1(value))
+    def setIsMetadata(value: Boolean): Self = StObject.set(x, "isMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCssClassName(value: String | (js.Function1[/* props */ js.Any, String])): Self = this.set("headerCssClassName", value.asInstanceOf[js.Any])
+    def setIsMetadataUndefined: Self = StObject.set(x, "isMetadata", js.undefined)
     
     @scala.inline
-    def deleteHeaderCssClassName: Self = this.set("headerCssClassName", js.undefined)
+    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMetadata(value: Boolean): Self = this.set("isMetadata", value.asInstanceOf[js.Any])
+    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
     @scala.inline
-    def deleteIsMetadata: Self = this.set("isMetadata", js.undefined)
+    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocked: Self = this.set("locked", js.undefined)
-    
-    @scala.inline
-    def setOrder(value: Double): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrder: Self = this.set("order", js.undefined)
+    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
     def setSortMethod(
       value: (/* data */ js.Array[_], /* column */ String, /* sortAscending */ js.UndefOr[Boolean]) => Double
-    ): Self = this.set("sortMethod", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "sortMethod", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSortMethod: Self = this.set("sortMethod", js.undefined)
+    def setSortMethodUndefined: Self = StObject.set(x, "sortMethod", js.undefined)
     
     @scala.inline
-    def setSortType(value: String): Self = this.set("sortType", value.asInstanceOf[js.Any])
+    def setSortType(value: String): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortType: Self = this.set("sortType", js.undefined)
+    def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
     
     @scala.inline
-    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSortable: Self = this.set("sortable", js.undefined)
+    def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

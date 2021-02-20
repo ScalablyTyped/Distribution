@@ -2,12 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeMethods extends js.Object {
+trait NativeMethods extends StObject {
   
   /**
     * Removes focus from an input or view. This is the opposite of `focus()`.

@@ -3,16 +3,16 @@ package typings.jupyterlabCelltags
 import typings.jupyterlabApplication.frontendMod.JupyterFrontEnd.IShell
 import typings.jupyterlabApplication.mod.JupyterFrontEnd
 import typings.jupyterlabCells.mod.Cell
-import typings.jupyterlabNotebook.notebooktoolsMod.NotebookTools.Tool
+import typings.jupyterlabNotebook.mod.NotebookTools.Tool
 import typings.jupyterlabNotebook.tokensMod.INotebookTracker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/celltags/lib/tool", JSImport.Namespace)
-@js.native
-object toolMod extends js.Object {
+object toolMod {
   
+  @JSImport("@jupyterlab/celltags/lib/tool", "TagTool")
   @js.native
   class TagTool protected () extends Tool {
     /**

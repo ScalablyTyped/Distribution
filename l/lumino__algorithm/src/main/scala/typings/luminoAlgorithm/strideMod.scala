@@ -2,16 +2,14 @@ package typings.luminoAlgorithm
 
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoAlgorithm.iterMod.IterableOrArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/algorithm/types/stride", JSImport.Namespace)
-@js.native
-object strideMod extends js.Object {
+object strideMod {
   
-  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = js.native
-  
+  @JSImport("@lumino/algorithm/types/stride", "StrideIterator")
   @js.native
   class StrideIterator[T] protected () extends IIterator[T] {
     /**
@@ -28,4 +26,8 @@ object strideMod extends js.Object {
     
     var _step: js.Any = js.native
   }
+  
+  @JSImport("@lumino/algorithm/types/stride", "stride")
+  @js.native
+  def stride[T](`object`: IterableOrArrayLike[T], step: Double): IIterator[T] = js.native
 }

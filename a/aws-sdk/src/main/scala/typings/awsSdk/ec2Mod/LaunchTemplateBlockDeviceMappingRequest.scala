@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplateBlockDeviceMappingRequest extends js.Object {
+trait LaunchTemplateBlockDeviceMappingRequest extends StObject {
   
   /**
     * The device name (for example, /dev/sdh or xvdh).
@@ -36,42 +37,30 @@ object LaunchTemplateBlockDeviceMappingRequest {
   }
   
   @scala.inline
-  implicit class LaunchTemplateBlockDeviceMappingRequestOps[Self <: LaunchTemplateBlockDeviceMappingRequest] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateBlockDeviceMappingRequestMutableBuilder[Self <: LaunchTemplateBlockDeviceMappingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEbs(value: LaunchTemplateEbsBlockDeviceRequest): Self = StObject.set(x, "Ebs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    def setEbsUndefined: Self = StObject.set(x, "Ebs", js.undefined)
     
     @scala.inline
-    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    def setNoDevice(value: String): Self = StObject.set(x, "NoDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEbs(value: LaunchTemplateEbsBlockDeviceRequest): Self = this.set("Ebs", value.asInstanceOf[js.Any])
+    def setNoDeviceUndefined: Self = StObject.set(x, "NoDevice", js.undefined)
     
     @scala.inline
-    def deleteEbs: Self = this.set("Ebs", js.undefined)
+    def setVirtualName(value: String): Self = StObject.set(x, "VirtualName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoDevice(value: String): Self = this.set("NoDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoDevice: Self = this.set("NoDevice", js.undefined)
-    
-    @scala.inline
-    def setVirtualName(value: String): Self = this.set("VirtualName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualName: Self = this.set("VirtualName", js.undefined)
+    def setVirtualNameUndefined: Self = StObject.set(x, "VirtualName", js.undefined)
   }
 }

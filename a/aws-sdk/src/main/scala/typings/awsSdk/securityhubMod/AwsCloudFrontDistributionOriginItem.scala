@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsCloudFrontDistributionOriginItem extends js.Object {
+trait AwsCloudFrontDistributionOriginItem extends StObject {
   
   /**
     * Amazon S3 origins: The DNS name of the Amazon S3 bucket from which you want CloudFront to get objects for this origin.
@@ -36,42 +37,30 @@ object AwsCloudFrontDistributionOriginItem {
   }
   
   @scala.inline
-  implicit class AwsCloudFrontDistributionOriginItemOps[Self <: AwsCloudFrontDistributionOriginItem] (val x: Self) extends AnyVal {
+  implicit class AwsCloudFrontDistributionOriginItemMutableBuilder[Self <: AwsCloudFrontDistributionOriginItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomainName(value: NonEmptyString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: NonEmptyString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setOriginPath(value: NonEmptyString): Self = StObject.set(x, "OriginPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setOriginPathUndefined: Self = StObject.set(x, "OriginPath", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setS3OriginConfig(value: AwsCloudFrontDistributionOriginS3OriginConfig): Self = StObject.set(x, "S3OriginConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginPath(value: NonEmptyString): Self = this.set("OriginPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginPath: Self = this.set("OriginPath", js.undefined)
-    
-    @scala.inline
-    def setS3OriginConfig(value: AwsCloudFrontDistributionOriginS3OriginConfig): Self = this.set("S3OriginConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3OriginConfig: Self = this.set("S3OriginConfig", js.undefined)
+    def setS3OriginConfigUndefined: Self = StObject.set(x, "S3OriginConfig", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.axeCore.axeCoreStrings.tag
   - typings.axeCore.axeCoreStrings.tags
 */
-trait RunOnlyType extends js.Object
+trait RunOnlyType extends StObject
 object RunOnlyType {
   
   @scala.inline

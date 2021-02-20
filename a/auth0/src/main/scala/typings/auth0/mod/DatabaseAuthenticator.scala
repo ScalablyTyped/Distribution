@@ -1,13 +1,14 @@
 package typings.auth0.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0", "DatabaseAuthenticator")
 @js.native
-class DatabaseAuthenticator[A, U] protected () extends js.Object {
+class DatabaseAuthenticator[A, U] protected () extends StObject {
   def this(options: DatabaseClientOptions, oauth: OAuthAuthenticator) = this()
   
   def changePassword(data: ResetPasswordOptions): js.Promise[_] = js.native

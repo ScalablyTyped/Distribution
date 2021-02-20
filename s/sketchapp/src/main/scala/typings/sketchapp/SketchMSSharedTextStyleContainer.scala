@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.sharedTextStyleContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSSharedTextStyleContainer extends js.Object {
+trait SketchMSSharedTextStyleContainer extends StObject {
   
   var _class: sharedTextStyleContainer = js.native
   
@@ -21,27 +22,15 @@ object SketchMSSharedTextStyleContainer {
   }
   
   @scala.inline
-  implicit class SketchMSSharedTextStyleContainerOps[Self <: SketchMSSharedTextStyleContainer] (val x: Self) extends AnyVal {
+  implicit class SketchMSSharedTextStyleContainerMutableBuilder[Self <: SketchMSSharedTextStyleContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjects(value: js.Array[_]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_class(value: sharedTextStyleContainer): Self = this.set("_class", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectsVarargs(value: js.Any*): Self = this.set("objects", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjects(value: js.Array[_]): Self = this.set("objects", value.asInstanceOf[js.Any])
+    def set_class(value: sharedTextStyleContainer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

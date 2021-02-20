@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientDataproc.anon.Region
 import typings.maximMazurokGapiClientDataproc.anon.UpdateMask
 import typings.maximMazurokGapiClientDataproc.anon.UploadType
 import typings.maximMazurokGapiClientDataproc.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClustersResource extends js.Object {
+trait ClustersResource extends StObject {
   
   /**
     * Creates a cluster in a project. The returned Operation.metadata will be ClusterOperationMetadata

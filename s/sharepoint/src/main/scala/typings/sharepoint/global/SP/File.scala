@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class File ()
   extends typings.sharepoint.SP.File
-/* static members */
-@JSGlobal("SP.File")
-@js.native
-object File extends js.Object {
+object File {
   
+  /* static member */
+  @JSGlobal("SP.File.getContentVerFromTag")
+  @js.native
   def getContentVerFromTag(context: typings.sharepoint.SP.ClientRuntimeContext, contentTag: String): typings.sharepoint.SP.IntResult = js.native
 }

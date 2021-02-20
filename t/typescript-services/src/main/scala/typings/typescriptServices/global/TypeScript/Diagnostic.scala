@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,12 +43,12 @@ class Diagnostic protected ()
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.Diagnostic")
-@js.native
-object Diagnostic extends js.Object {
+object Diagnostic {
   
-  def equals(
+  /* static member */
+  @JSGlobal("TypeScript.Diagnostic.equals")
+  @js.native
+  def equals_(
     diagnostic1: typings.typescriptServices.TypeScript.Diagnostic,
     diagnostic2: typings.typescriptServices.TypeScript.Diagnostic
   ): Boolean = js.native

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassifierCsvClassifier extends js.Object {
+trait ClassifierCsvClassifier extends StObject {
   
   /**
     * Enables the processing of files that contain only one column.
@@ -46,57 +47,45 @@ object ClassifierCsvClassifier {
   }
   
   @scala.inline
-  implicit class ClassifierCsvClassifierOps[Self <: ClassifierCsvClassifier] (val x: Self) extends AnyVal {
+  implicit class ClassifierCsvClassifierMutableBuilder[Self <: ClassifierCsvClassifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSingleColumn(value: Boolean): Self = StObject.set(x, "allowSingleColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSingleColumnUndefined: Self = StObject.set(x, "allowSingleColumn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsHeader(value: String): Self = StObject.set(x, "containsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSingleColumn(value: Boolean): Self = this.set("allowSingleColumn", value.asInstanceOf[js.Any])
+    def setContainsHeaderUndefined: Self = StObject.set(x, "containsHeader", js.undefined)
     
     @scala.inline
-    def deleteAllowSingleColumn: Self = this.set("allowSingleColumn", js.undefined)
+    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsHeader(value: String): Self = this.set("containsHeader", value.asInstanceOf[js.Any])
+    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
     @scala.inline
-    def deleteContainsHeader: Self = this.set("containsHeader", js.undefined)
+    def setDisableValueTrimming(value: Boolean): Self = StObject.set(x, "disableValueTrimming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    def setDisableValueTrimmingUndefined: Self = StObject.set(x, "disableValueTrimming", js.undefined)
     
     @scala.inline
-    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableValueTrimming(value: Boolean): Self = this.set("disableValueTrimming", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteDisableValueTrimming: Self = this.set("disableValueTrimming", js.undefined)
+    def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    def setQuoteSymbol(value: String): Self = StObject.set(x, "quoteSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setQuoteSymbol(value: String): Self = this.set("quoteSymbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuoteSymbol: Self = this.set("quoteSymbol", js.undefined)
+    def setQuoteSymbolUndefined: Self = StObject.set(x, "quoteSymbol", js.undefined)
   }
 }

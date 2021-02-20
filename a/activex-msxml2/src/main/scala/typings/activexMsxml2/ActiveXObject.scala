@@ -4,12 +4,13 @@ import typings.activexMsxml2.MSXML2.DOMDocument60
 import typings.activexMsxml2.MSXML2.FreeThreadedDOMDocument60
 import typings.activexMsxml2.activexMsxml2Strings.ondataavailable
 import typings.activexMsxml2.activexMsxml2Strings.onreadystatechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
   
   @JSName("on")
   def on_ondataavailable(

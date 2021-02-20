@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object ContractSigner {
   }
   
   @scala.inline
-  implicit class ContractSignerOps[Self <: ContractSigner] (val x: Self) extends AnyVal {
+  implicit class ContractSignerMutableBuilder[Self <: ContractSigner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignature(value: js.Array[Signature]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignatureVarargs(value: Signature*): Self = StObject.set(x, "signature", js.Array(value :_*))
     
     @scala.inline
-    def setParty(value: Reference): Self = this.set("party", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignatureVarargs(value: Signature*): Self = this.set("signature", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignature(value: js.Array[Signature]): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: Coding): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Coding): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDeploymentResult extends js.Object {
+trait CreateDeploymentResult extends StObject {
   
   /**
     *  When the fileMap argument is provided in the request, fileUploadUrls will contain a map of file names to upload URLs. 
@@ -31,30 +32,18 @@ object CreateDeploymentResult {
   }
   
   @scala.inline
-  implicit class CreateDeploymentResultOps[Self <: CreateDeploymentResult] (val x: Self) extends AnyVal {
+  implicit class CreateDeploymentResultMutableBuilder[Self <: CreateDeploymentResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileUploadUrls(value: FileUploadUrls): Self = StObject.set(x, "fileUploadUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def setFileUploadUrls(value: FileUploadUrls): Self = this.set("fileUploadUrls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZipUploadUrl(value: UploadUrl): Self = this.set("zipUploadUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
+    def setZipUploadUrl(value: UploadUrl): Self = StObject.set(x, "zipUploadUrl", value.asInstanceOf[js.Any])
   }
 }

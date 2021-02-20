@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeaseWorkItemRequest extends js.Object {
+trait LeaseWorkItemRequest extends StObject {
   
   /** The current timestamp at the worker. */
   var currentWorkerTime: js.UndefOr[String] = js.native
@@ -42,70 +43,58 @@ object LeaseWorkItemRequest {
   }
   
   @scala.inline
-  implicit class LeaseWorkItemRequestOps[Self <: LeaseWorkItemRequest] (val x: Self) extends AnyVal {
+  implicit class LeaseWorkItemRequestMutableBuilder[Self <: LeaseWorkItemRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentWorkerTime(value: String): Self = StObject.set(x, "currentWorkerTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentWorkerTimeUndefined: Self = StObject.set(x, "currentWorkerTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentWorkerTime(value: String): Self = this.set("currentWorkerTime", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteCurrentWorkerTime: Self = this.set("currentWorkerTime", js.undefined)
+    def setRequestedLeaseDuration(value: String): Self = StObject.set(x, "requestedLeaseDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
-    
-    @scala.inline
-    def setRequestedLeaseDuration(value: String): Self = this.set("requestedLeaseDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedLeaseDuration: Self = this.set("requestedLeaseDuration", js.undefined)
+    def setRequestedLeaseDurationUndefined: Self = StObject.set(x, "requestedLeaseDuration", js.undefined)
     
     @scala.inline
     def setUnifiedWorkerRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemRequest with TopLevel[js.Any]
-    ): Self = this.set("unifiedWorkerRequest", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnifiedWorkerRequest: Self = this.set("unifiedWorkerRequest", js.undefined)
+    def setUnifiedWorkerRequestUndefined: Self = StObject.set(x, "unifiedWorkerRequest", js.undefined)
     
     @scala.inline
-    def setWorkItemTypesVarargs(value: String*): Self = this.set("workItemTypes", js.Array(value :_*))
+    def setWorkItemTypes(value: js.Array[String]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItemTypes(value: js.Array[String]): Self = this.set("workItemTypes", value.asInstanceOf[js.Any])
+    def setWorkItemTypesUndefined: Self = StObject.set(x, "workItemTypes", js.undefined)
     
     @scala.inline
-    def deleteWorkItemTypes: Self = this.set("workItemTypes", js.undefined)
+    def setWorkItemTypesVarargs(value: String*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
     
     @scala.inline
-    def setWorkerCapabilitiesVarargs(value: String*): Self = this.set("workerCapabilities", js.Array(value :_*))
+    def setWorkerCapabilities(value: js.Array[String]): Self = StObject.set(x, "workerCapabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerCapabilities(value: js.Array[String]): Self = this.set("workerCapabilities", value.asInstanceOf[js.Any])
+    def setWorkerCapabilitiesUndefined: Self = StObject.set(x, "workerCapabilities", js.undefined)
     
     @scala.inline
-    def deleteWorkerCapabilities: Self = this.set("workerCapabilities", js.undefined)
+    def setWorkerCapabilitiesVarargs(value: String*): Self = StObject.set(x, "workerCapabilities", js.Array(value :_*))
     
     @scala.inline
-    def setWorkerId(value: String): Self = this.set("workerId", value.asInstanceOf[js.Any])
+    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWorkerId: Self = this.set("workerId", js.undefined)
+    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainsEpubBubbles extends js.Object {
+trait ContainsEpubBubbles extends StObject {
   
   var containsEpubBubbles: js.UndefOr[Boolean] = js.native
   
@@ -24,42 +25,30 @@ object ContainsEpubBubbles {
   }
   
   @scala.inline
-  implicit class ContainsEpubBubblesOps[Self <: ContainsEpubBubbles] (val x: Self) extends AnyVal {
+  implicit class ContainsEpubBubblesMutableBuilder[Self <: ContainsEpubBubbles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsEpubBubbles(value: Boolean): Self = StObject.set(x, "containsEpubBubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsEpubBubblesUndefined: Self = StObject.set(x, "containsEpubBubbles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsImageBubbles(value: Boolean): Self = StObject.set(x, "containsImageBubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsEpubBubbles(value: Boolean): Self = this.set("containsEpubBubbles", value.asInstanceOf[js.Any])
+    def setContainsImageBubblesUndefined: Self = StObject.set(x, "containsImageBubbles", js.undefined)
     
     @scala.inline
-    def deleteContainsEpubBubbles: Self = this.set("containsEpubBubbles", js.undefined)
+    def setEpubBubbleVersion(value: String): Self = StObject.set(x, "epubBubbleVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsImageBubbles(value: Boolean): Self = this.set("containsImageBubbles", value.asInstanceOf[js.Any])
+    def setEpubBubbleVersionUndefined: Self = StObject.set(x, "epubBubbleVersion", js.undefined)
     
     @scala.inline
-    def deleteContainsImageBubbles: Self = this.set("containsImageBubbles", js.undefined)
+    def setImageBubbleVersion(value: String): Self = StObject.set(x, "imageBubbleVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEpubBubbleVersion(value: String): Self = this.set("epubBubbleVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEpubBubbleVersion: Self = this.set("epubBubbleVersion", js.undefined)
-    
-    @scala.inline
-    def setImageBubbleVersion(value: String): Self = this.set("imageBubbleVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageBubbleVersion: Self = this.set("imageBubbleVersion", js.undefined)
+    def setImageBubbleVersionUndefined: Self = StObject.set(x, "imageBubbleVersion", js.undefined)
   }
 }

@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,48 +58,36 @@ object CircleProperties {
   }
   
   @scala.inline
-  implicit class CirclePropertiesOps[Self <: CircleProperties] (val x: Self) extends AnyVal {
+  implicit class CirclePropertiesMutableBuilder[Self <: CircleProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: PointProperties): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: PointProperties): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setNumberOfPoints(value: Double): Self = StObject.set(x, "numberOfPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeodesic(value: Boolean): Self = this.set("geodesic", value.asInstanceOf[js.Any])
+    def setNumberOfPointsUndefined: Self = StObject.set(x, "numberOfPoints", js.undefined)
     
     @scala.inline
-    def deleteGeodesic: Self = this.set("geodesic", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfPoints(value: Double): Self = this.set("numberOfPoints", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deleteNumberOfPoints: Self = this.set("numberOfPoints", js.undefined)
+    def setRadiusUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "radiusUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
-    
-    @scala.inline
-    def setRadiusUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = this.set("radiusUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRadiusUnit: Self = this.set("radiusUnit", js.undefined)
+    def setRadiusUnitUndefined: Self = StObject.set(x, "radiusUnit", js.undefined)
   }
 }

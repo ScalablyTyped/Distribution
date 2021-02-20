@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeolocationPositionError extends js.Object {
+trait GeolocationPositionError extends StObject {
   
   val PERMISSION_DENIED: Double = js.native
   
@@ -32,33 +33,21 @@ object GeolocationPositionError {
   }
   
   @scala.inline
-  implicit class GeolocationPositionErrorOps[Self <: GeolocationPositionError] (val x: Self) extends AnyVal {
+  implicit class GeolocationPositionErrorMutableBuilder[Self <: GeolocationPositionError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPERMISSION_DENIED(value: Double): Self = StObject.set(x, "PERMISSION_DENIED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPERMISSION_DENIED(value: Double): Self = this.set("PERMISSION_DENIED", value.asInstanceOf[js.Any])
+    def setPOSITION_UNAVAILABLE(value: Double): Self = StObject.set(x, "POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPOSITION_UNAVAILABLE(value: Double): Self = this.set("POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTIMEOUT(value: Double): Self = this.set("TIMEOUT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: java.lang.String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setTIMEOUT(value: Double): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputLossFailoverSettings extends js.Object {
+trait InputLossFailoverSettings extends StObject {
   
   /**
     * The amount of time (in milliseconds) that no input is detected. After that time, an input failover will occur.
@@ -21,24 +22,12 @@ object InputLossFailoverSettings {
   }
   
   @scala.inline
-  implicit class InputLossFailoverSettingsOps[Self <: InputLossFailoverSettings] (val x: Self) extends AnyVal {
+  implicit class InputLossFailoverSettingsMutableBuilder[Self <: InputLossFailoverSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputLossThresholdMsec(value: integerMin100): Self = StObject.set(x, "InputLossThresholdMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputLossThresholdMsec(value: integerMin100): Self = this.set("InputLossThresholdMsec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputLossThresholdMsec: Self = this.set("InputLossThresholdMsec", js.undefined)
+    def setInputLossThresholdMsecUndefined: Self = StObject.set(x, "InputLossThresholdMsec", js.undefined)
   }
 }

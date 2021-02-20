@@ -2,12 +2,13 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Container extends js.Object {
+trait Container extends StObject {
   
   /**
     * Either a path to a folder in which a Docker build should be run to construct the image for this
@@ -106,93 +107,81 @@ object Container {
   }
   
   @scala.inline
-  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: String | ContainerBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommand(value: Input[js.Array[String]]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: String | ContainerBuild): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
     
     @scala.inline
-    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    def setCpu(value: Input[Double]): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: Input[js.Array[String]]): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setCpuUndefined: Self = StObject.set(x, "cpu", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setDockerLabels(value: Input[StringDictionary[String]]): Self = StObject.set(x, "dockerLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: Input[Double]): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setDockerLabelsUndefined: Self = StObject.set(x, "dockerLabels", js.undefined)
     
     @scala.inline
-    def deleteCpu: Self = this.set("cpu", js.undefined)
+    def setEnvironment(value: StringDictionary[Input[String]]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDockerLabels(value: Input[StringDictionary[String]]): Self = this.set("dockerLabels", value.asInstanceOf[js.Any])
+    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     @scala.inline
-    def deleteDockerLabels: Self = this.set("dockerLabels", js.undefined)
+    def setFunction(value: () => Unit): Self = StObject.set(x, "function", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnvironment(value: StringDictionary[Input[String]]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
     @scala.inline
-    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunction(value: () => Unit): Self = this.set("function", js.Any.fromFunction0(value))
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteFunction: Self = this.set("function", js.undefined)
+    def setMemory(value: Input[Double]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Input[String]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setMemoryReservation(value: Input[Double]): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setMemoryReservationUndefined: Self = StObject.set(x, "memoryReservation", js.undefined)
     
     @scala.inline
-    def setMemory(value: Input[Double]): Self = this.set("memory", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
     
     @scala.inline
-    def deleteMemory: Self = this.set("memory", js.undefined)
+    def setPorts(value: js.Array[ContainerPort]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemoryReservation(value: Input[Double]): Self = this.set("memoryReservation", value.asInstanceOf[js.Any])
+    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
     @scala.inline
-    def deleteMemoryReservation: Self = this.set("memoryReservation", js.undefined)
+    def setPortsVarargs(value: ContainerPort*): Self = StObject.set(x, "ports", js.Array(value :_*))
     
     @scala.inline
-    def setPortsVarargs(value: ContainerPort*): Self = this.set("ports", js.Array(value :_*))
+    def setVolumes(value: js.Array[ContainerVolumeMount]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPorts(value: js.Array[ContainerPort]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deletePorts: Self = this.set("ports", js.undefined)
-    
-    @scala.inline
-    def setVolumesVarargs(value: ContainerVolumeMount*): Self = this.set("volumes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumes(value: js.Array[ContainerVolumeMount]): Self = this.set("volumes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    def setVolumesVarargs(value: ContainerVolumeMount*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

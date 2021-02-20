@@ -1,17 +1,18 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Git")
 @js.native
-class Git protected () extends js.Object {
+class Git protected () extends StObject {
   def this(gitDirectory: js.Any) = this()
   
-   // last element is callback
+  // last element is callback
   def add(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def add(options: js.Any, args: js.Any*): Unit = js.native
   
   def blame(callback: js.Function): Unit = js.native
@@ -20,7 +21,7 @@ class Git protected () extends js.Object {
   def blame_tree(commit: js.Any, callback: js.Function): Unit = js.native
   def blame_tree(commit: js.Any, path: js.Any, callback: js.Function): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def call_git(
     prefix: String,
     command: js.Any,
@@ -36,15 +37,15 @@ class Git protected () extends js.Object {
   def clone(options: js.Any, originalPath: js.Any, targetPath: js.Any, callback: js.Function): Unit = js.native
   
   def commit(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def commit(options: js.Any, args: js.Any*): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def commit_from_sha(id: String): js.Any = js.native
   
-   // last element is callback
+  // last element is callback
   def config(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def config(options: js.Any, args: js.Any*): Unit = js.native
   
   def diff(
@@ -59,21 +60,21 @@ class Git protected () extends js.Object {
     callback: js.Function2[/* error */ js.Any, /* patch */ String, Unit]
   ): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def diff_files(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def diff_files(options: js.Any, args: js.Any*): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def diff_index(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def diff_index(options: js.Any, args: js.Any*): Unit = js.native
   
   def file_size(ref: js.Any, callback: js.Function): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def file_type(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def file_type(options: js.Any, args: js.Any*): Unit = js.native
   
   def format_patch(options: js.Any, reference: js.Any, callback: js.Function): Unit = js.native
@@ -99,25 +100,25 @@ class Git protected () extends js.Object {
   def looking_for(commit: js.Any, callback: js.Function): Unit = js.native
   def looking_for(commit: js.Any, path: js.Any, callback: js.Function): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def ls_files(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def ls_files(options: js.Any, args: js.Any*): Unit = js.native
   
   def ls_tree(treeish: js.Any, callback: js.Function): Unit = js.native
   def ls_tree(treeish: js.Any, paths: js.Array[_], callback: js.Function): Unit = js.native
   def ls_tree(treeish: js.Any, paths: js.Array[_], options: js.Any, callback: js.Function): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def put_raw_object(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def put_raw_object(options: js.Any, args: js.Any*): Unit = js.native
   
   def refs(options: js.Any, prefix: String, callback: js.Function2[/* err */ js.Any, /* data */ String, Unit]): Unit = js.native
   
-   // last element is callback
+  // last element is callback
   def remove(args: js.Any*): Unit = js.native
-   // last element is callback
+  // last element is callback
   def remove(options: js.Any, args: js.Any*): Unit = js.native
   
   def rev_list(callback: js.Function): Unit = js.native

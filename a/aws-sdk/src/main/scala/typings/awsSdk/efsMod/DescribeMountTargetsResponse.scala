@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMountTargetsResponse extends js.Object {
+trait DescribeMountTargetsResponse extends StObject {
   
   /**
     * If the request included the Marker, the response returns that value in this field.
@@ -31,39 +32,27 @@ object DescribeMountTargetsResponse {
   }
   
   @scala.inline
-  implicit class DescribeMountTargetsResponseOps[Self <: DescribeMountTargetsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeMountTargetsResponseMutableBuilder[Self <: DescribeMountTargetsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMountTargets(value: MountTargetDescriptions): Self = StObject.set(x, "MountTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMountTargetsUndefined: Self = StObject.set(x, "MountTargets", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMountTargetsVarargs(value: MountTargetDescription*): Self = StObject.set(x, "MountTargets", js.Array(value :_*))
     
     @scala.inline
-    def setMountTargetsVarargs(value: MountTargetDescription*): Self = this.set("MountTargets", js.Array(value :_*))
+    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountTargets(value: MountTargetDescriptions): Self = this.set("MountTargets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountTargets: Self = this.set("MountTargets", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

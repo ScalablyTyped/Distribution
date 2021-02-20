@@ -1,5 +1,6 @@
 package typings.domSerial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.domSerial.domSerialStrings.none
   - typings.domSerial.domSerialStrings.hardware
 */
-trait FlowControlType extends js.Object
+trait FlowControlType extends StObject
 object FlowControlType {
   
   @scala.inline

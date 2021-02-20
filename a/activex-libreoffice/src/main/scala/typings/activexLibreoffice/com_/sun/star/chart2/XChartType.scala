@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart2
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,51 +101,39 @@ object XChartType {
   }
   
   @scala.inline
-  implicit class XChartTypeOps[Self <: XChartType] (val x: Self) extends AnyVal {
+  implicit class XChartTypeMutableBuilder[Self <: XChartType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartType(value: String): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateCoordinateSystem(value: Double => XCoordinateSystem): Self = StObject.set(x, "createCoordinateSystem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChartType(value: () => String): Self = StObject.set(x, "getChartType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChartType(value: String): Self = this.set("ChartType", value.asInstanceOf[js.Any])
+    def setGetRoleOfSequenceForSeriesLabel(value: () => String): Self = StObject.set(x, "getRoleOfSequenceForSeriesLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRoleOfSequenceForSeriesLabel(value: String): Self = this.set("RoleOfSequenceForSeriesLabel", value.asInstanceOf[js.Any])
+    def setGetSupportedMandatoryRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMandatoryRoles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedMandatoryRoles(value: SafeArray[String]): Self = this.set("SupportedMandatoryRoles", value.asInstanceOf[js.Any])
+    def setGetSupportedOptionalRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedOptionalRoles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedOptionalRoles(value: SafeArray[String]): Self = this.set("SupportedOptionalRoles", value.asInstanceOf[js.Any])
+    def setGetSupportedPropertyRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedPropertyRoles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedPropertyRoles(value: SafeArray[String]): Self = this.set("SupportedPropertyRoles", value.asInstanceOf[js.Any])
+    def setRoleOfSequenceForSeriesLabel(value: String): Self = StObject.set(x, "RoleOfSequenceForSeriesLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateCoordinateSystem(value: Double => XCoordinateSystem): Self = this.set("createCoordinateSystem", js.Any.fromFunction1(value))
+    def setSupportedMandatoryRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedMandatoryRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetChartType(value: () => String): Self = this.set("getChartType", js.Any.fromFunction0(value))
+    def setSupportedOptionalRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedOptionalRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRoleOfSequenceForSeriesLabel(value: () => String): Self = this.set("getRoleOfSequenceForSeriesLabel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSupportedMandatoryRoles(value: () => SafeArray[String]): Self = this.set("getSupportedMandatoryRoles", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSupportedOptionalRoles(value: () => SafeArray[String]): Self = this.set("getSupportedOptionalRoles", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSupportedPropertyRoles(value: () => SafeArray[String]): Self = this.set("getSupportedPropertyRoles", js.Any.fromFunction0(value))
+    def setSupportedPropertyRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedPropertyRoles", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.indexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,7 @@ class MultiMaterial protected ()
   def this(name: String, scene: typings.babylonjs.sceneMod.Scene) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "MultiMaterial")
-@js.native
-object MultiMaterial extends js.Object {
+object MultiMaterial {
   
   /**
     * Creates a MultiMaterial from parsed MultiMaterial data.
@@ -29,5 +28,7 @@ object MultiMaterial extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new MultiMaterial
     */
+  @JSImport("babylonjs/index", "MultiMaterial.ParseMultiMaterial")
+  @js.native
   def ParseMultiMaterial(parsedMultiMaterial: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.multiMaterialMod.MultiMaterial = js.native
 }

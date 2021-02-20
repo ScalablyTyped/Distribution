@@ -7,6 +7,7 @@ import typings.exceljs.exceljsStrings.leftToRight
 import typings.exceljs.exceljsStrings.middle
 import typings.exceljs.exceljsStrings.none_
 import typings.exceljs.exceljsStrings.rightToLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,84 +49,72 @@ object DataBarRuleType {
   }
   
   @scala.inline
-  implicit class DataBarRuleTypeOps[Self <: DataBarRuleType] (val x: Self) extends AnyVal {
+  implicit class DataBarRuleTypeMutableBuilder[Self <: DataBarRuleType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisPosition(value: auto | middle | none_): Self = StObject.set(x, "axisPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisPositionUndefined: Self = StObject.set(x, "axisPosition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: dataBar): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def setAxisPosition(value: auto | middle | none_): Self = this.set("axisPosition", value.asInstanceOf[js.Any])
+    def setCfvo(value: js.Array[Cvfo]): Self = StObject.set(x, "cfvo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAxisPosition: Self = this.set("axisPosition", js.undefined)
+    def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
     
     @scala.inline
-    def setBorder(value: Boolean): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setDirection(value: context | leftToRight | rightToLeft): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCfvoVarargs(value: Cvfo*): Self = this.set("cfvo", js.Array(value :_*))
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def setCfvo(value: js.Array[Cvfo]): Self = this.set("cfvo", value.asInstanceOf[js.Any])
+    def setGradient(value: Boolean): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCfvo: Self = this.set("cfvo", js.undefined)
+    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
     @scala.inline
-    def setDirection(value: context | leftToRight | rightToLeft): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def setGradient(value: Boolean): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGradient: Self = this.set("gradient", js.undefined)
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setNegativeBarBorderColorSameAsPositive(value: Boolean): Self = StObject.set(x, "negativeBarBorderColorSameAsPositive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setNegativeBarBorderColorSameAsPositiveUndefined: Self = StObject.set(x, "negativeBarBorderColorSameAsPositive", js.undefined)
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setNegativeBarColorSameAsPositive(value: Boolean): Self = StObject.set(x, "negativeBarColorSameAsPositive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setNegativeBarColorSameAsPositiveUndefined: Self = StObject.set(x, "negativeBarColorSameAsPositive", js.undefined)
     
     @scala.inline
-    def setNegativeBarBorderColorSameAsPositive(value: Boolean): Self = this.set("negativeBarBorderColorSameAsPositive", value.asInstanceOf[js.Any])
+    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNegativeBarBorderColorSameAsPositive: Self = this.set("negativeBarBorderColorSameAsPositive", js.undefined)
+    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
     @scala.inline
-    def setNegativeBarColorSameAsPositive(value: Boolean): Self = this.set("negativeBarColorSameAsPositive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNegativeBarColorSameAsPositive: Self = this.set("negativeBarColorSameAsPositive", js.undefined)
-    
-    @scala.inline
-    def setShowValue(value: Boolean): Self = this.set("showValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowValue: Self = this.set("showValue", js.undefined)
+    def setType(value: dataBar): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

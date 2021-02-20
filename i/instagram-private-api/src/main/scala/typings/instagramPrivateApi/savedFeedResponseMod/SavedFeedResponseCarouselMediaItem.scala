@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.savedFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedFeedResponseCarouselMediaItem extends js.Object {
+trait SavedFeedResponseCarouselMediaItem extends StObject {
   
   var carousel_parent_id: String = js.native
   
@@ -53,81 +54,69 @@ object SavedFeedResponseCarouselMediaItem {
   }
   
   @scala.inline
-  implicit class SavedFeedResponseCarouselMediaItemOps[Self <: SavedFeedResponseCarouselMediaItem] (val x: Self) extends AnyVal {
+  implicit class SavedFeedResponseCarouselMediaItemMutableBuilder[Self <: SavedFeedResponseCarouselMediaItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarousel_parent_id(value: String): Self = StObject.set(x, "carousel_parent_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage_versions2(value: SavedFeedResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarousel_parent_id(value: String): Self = this.set("carousel_parent_id", value.asInstanceOf[js.Any])
+    def setIs_dash_eligible(value: Double): Self = StObject.set(x, "is_dash_eligible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIs_dash_eligibleUndefined: Self = StObject.set(x, "is_dash_eligible", js.undefined)
     
     @scala.inline
-    def setImage_versions2(value: SavedFeedResponseImageVersions2): Self = this.set("image_versions2", value.asInstanceOf[js.Any])
+    def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_type(value: Double): Self = this.set("media_type", value.asInstanceOf[js.Any])
+    def setNumber_of_qualities(value: Double): Self = StObject.set(x, "number_of_qualities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginal_height(value: Double): Self = this.set("original_height", value.asInstanceOf[js.Any])
+    def setNumber_of_qualitiesUndefined: Self = StObject.set(x, "number_of_qualities", js.undefined)
     
     @scala.inline
-    def setOriginal_width(value: Double): Self = this.set("original_width", value.asInstanceOf[js.Any])
+    def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPk(value: String): Self = this.set("pk", value.asInstanceOf[js.Any])
+    def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsertags(value: SavedFeedResponseUsertags): Self = this.set("usertags", value.asInstanceOf[js.Any])
+    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_dash_eligible(value: Double): Self = this.set("is_dash_eligible", value.asInstanceOf[js.Any])
+    def setUsertags(value: SavedFeedResponseUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_dash_eligible: Self = this.set("is_dash_eligible", js.undefined)
+    def setVideo_codec(value: String): Self = StObject.set(x, "video_codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber_of_qualities(value: Double): Self = this.set("number_of_qualities", value.asInstanceOf[js.Any])
+    def setVideo_codecUndefined: Self = StObject.set(x, "video_codec", js.undefined)
     
     @scala.inline
-    def deleteNumber_of_qualities: Self = this.set("number_of_qualities", js.undefined)
+    def setVideo_dash_manifest(value: String): Self = StObject.set(x, "video_dash_manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_codec(value: String): Self = this.set("video_codec", value.asInstanceOf[js.Any])
+    def setVideo_dash_manifestUndefined: Self = StObject.set(x, "video_dash_manifest", js.undefined)
     
     @scala.inline
-    def deleteVideo_codec: Self = this.set("video_codec", js.undefined)
+    def setVideo_duration(value: Double): Self = StObject.set(x, "video_duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_dash_manifest(value: String): Self = this.set("video_dash_manifest", value.asInstanceOf[js.Any])
+    def setVideo_durationUndefined: Self = StObject.set(x, "video_duration", js.undefined)
     
     @scala.inline
-    def deleteVideo_dash_manifest: Self = this.set("video_dash_manifest", js.undefined)
+    def setVideo_versions(value: js.Array[SavedFeedResponseVideoVersionsItem]): Self = StObject.set(x, "video_versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo_duration(value: Double): Self = this.set("video_duration", value.asInstanceOf[js.Any])
+    def setVideo_versionsUndefined: Self = StObject.set(x, "video_versions", js.undefined)
     
     @scala.inline
-    def deleteVideo_duration: Self = this.set("video_duration", js.undefined)
-    
-    @scala.inline
-    def setVideo_versionsVarargs(value: SavedFeedResponseVideoVersionsItem*): Self = this.set("video_versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideo_versions(value: js.Array[SavedFeedResponseVideoVersionsItem]): Self = this.set("video_versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo_versions: Self = this.set("video_versions", js.undefined)
+    def setVideo_versionsVarargs(value: SavedFeedResponseVideoVersionsItem*): Self = StObject.set(x, "video_versions", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about device software.
   */
 @js.native
-trait SchemaSoftwareInfo extends js.Object {
+trait SchemaSoftwareInfo extends StObject {
   
   /**
     * Android build ID string meant for displaying to the user. For example,
@@ -73,78 +74,66 @@ object SchemaSoftwareInfo {
   }
   
   @scala.inline
-  implicit class SchemaSoftwareInfoOps[Self <: SchemaSoftwareInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaSoftwareInfoMutableBuilder[Self <: SchemaSoftwareInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidBuildNumber(value: String): Self = StObject.set(x, "androidBuildNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidBuildNumberUndefined: Self = StObject.set(x, "androidBuildNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidBuildTime(value: String): Self = StObject.set(x, "androidBuildTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidBuildNumber(value: String): Self = this.set("androidBuildNumber", value.asInstanceOf[js.Any])
+    def setAndroidBuildTimeUndefined: Self = StObject.set(x, "androidBuildTime", js.undefined)
     
     @scala.inline
-    def deleteAndroidBuildNumber: Self = this.set("androidBuildNumber", js.undefined)
+    def setAndroidDevicePolicyVersionCode(value: Double): Self = StObject.set(x, "androidDevicePolicyVersionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidBuildTime(value: String): Self = this.set("androidBuildTime", value.asInstanceOf[js.Any])
+    def setAndroidDevicePolicyVersionCodeUndefined: Self = StObject.set(x, "androidDevicePolicyVersionCode", js.undefined)
     
     @scala.inline
-    def deleteAndroidBuildTime: Self = this.set("androidBuildTime", js.undefined)
+    def setAndroidDevicePolicyVersionName(value: String): Self = StObject.set(x, "androidDevicePolicyVersionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDevicePolicyVersionCode(value: Double): Self = this.set("androidDevicePolicyVersionCode", value.asInstanceOf[js.Any])
+    def setAndroidDevicePolicyVersionNameUndefined: Self = StObject.set(x, "androidDevicePolicyVersionName", js.undefined)
     
     @scala.inline
-    def deleteAndroidDevicePolicyVersionCode: Self = this.set("androidDevicePolicyVersionCode", js.undefined)
+    def setAndroidVersion(value: String): Self = StObject.set(x, "androidVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDevicePolicyVersionName(value: String): Self = this.set("androidDevicePolicyVersionName", value.asInstanceOf[js.Any])
+    def setAndroidVersionUndefined: Self = StObject.set(x, "androidVersion", js.undefined)
     
     @scala.inline
-    def deleteAndroidDevicePolicyVersionName: Self = this.set("androidDevicePolicyVersionName", js.undefined)
+    def setBootloaderVersion(value: String): Self = StObject.set(x, "bootloaderVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidVersion(value: String): Self = this.set("androidVersion", value.asInstanceOf[js.Any])
+    def setBootloaderVersionUndefined: Self = StObject.set(x, "bootloaderVersion", js.undefined)
     
     @scala.inline
-    def deleteAndroidVersion: Self = this.set("androidVersion", js.undefined)
+    def setDeviceBuildSignature(value: String): Self = StObject.set(x, "deviceBuildSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootloaderVersion(value: String): Self = this.set("bootloaderVersion", value.asInstanceOf[js.Any])
+    def setDeviceBuildSignatureUndefined: Self = StObject.set(x, "deviceBuildSignature", js.undefined)
     
     @scala.inline
-    def deleteBootloaderVersion: Self = this.set("bootloaderVersion", js.undefined)
+    def setDeviceKernelVersion(value: String): Self = StObject.set(x, "deviceKernelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceBuildSignature(value: String): Self = this.set("deviceBuildSignature", value.asInstanceOf[js.Any])
+    def setDeviceKernelVersionUndefined: Self = StObject.set(x, "deviceKernelVersion", js.undefined)
     
     @scala.inline
-    def deleteDeviceBuildSignature: Self = this.set("deviceBuildSignature", js.undefined)
+    def setPrimaryLanguageCode(value: String): Self = StObject.set(x, "primaryLanguageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceKernelVersion(value: String): Self = this.set("deviceKernelVersion", value.asInstanceOf[js.Any])
+    def setPrimaryLanguageCodeUndefined: Self = StObject.set(x, "primaryLanguageCode", js.undefined)
     
     @scala.inline
-    def deleteDeviceKernelVersion: Self = this.set("deviceKernelVersion", js.undefined)
+    def setSecurityPatchLevel(value: String): Self = StObject.set(x, "securityPatchLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryLanguageCode(value: String): Self = this.set("primaryLanguageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryLanguageCode: Self = this.set("primaryLanguageCode", js.undefined)
-    
-    @scala.inline
-    def setSecurityPatchLevel(value: String): Self = this.set("securityPatchLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityPatchLevel: Self = this.set("securityPatchLevel", js.undefined)
+    def setSecurityPatchLevelUndefined: Self = StObject.set(x, "securityPatchLevel", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.vkOpenapi.vkOpenapiNumbers.`20`
 import typings.vkOpenapi.vkOpenapiNumbers.`22`
 import typings.vkOpenapi.vkOpenapiNumbers.`24`
 import typings.vkOpenapi.vkOpenapiNumbers.`30`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContactUsOptions extends js.Object {
+trait ContactUsOptions extends StObject {
   
   var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.native
   
@@ -25,30 +26,18 @@ object ContactUsOptions {
   }
   
   @scala.inline
-  implicit class ContactUsOptionsOps[Self <: ContactUsOptions] (val x: Self) extends AnyVal {
+  implicit class ContactUsOptionsMutableBuilder[Self <: ContactUsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

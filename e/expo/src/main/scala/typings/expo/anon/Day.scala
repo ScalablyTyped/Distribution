@@ -1,11 +1,12 @@
 package typings.expo.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Day extends js.Object {
+trait Day extends StObject {
   
   var day: js.UndefOr[Double] = js.native
   
@@ -32,66 +33,54 @@ object Day {
   }
   
   @scala.inline
-  implicit class DayOps[Self <: Day] (val x: Self) extends AnyVal {
+  implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDay(value: Double): Self = this.set("day", value.asInstanceOf[js.Any])
+    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
     @scala.inline
-    def deleteDay: Self = this.set("day", js.undefined)
+    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHour(value: Double): Self = this.set("hour", value.asInstanceOf[js.Any])
+    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
     @scala.inline
-    def deleteHour: Self = this.set("hour", js.undefined)
+    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinute(value: Double): Self = this.set("minute", value.asInstanceOf[js.Any])
+    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
     @scala.inline
-    def deleteMinute: Self = this.set("minute", js.undefined)
+    def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonth(value: Double): Self = this.set("month", value.asInstanceOf[js.Any])
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def deleteMonth: Self = this.set("month", js.undefined)
+    def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: Boolean): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
     
     @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    def setWeekDay(value: Double): Self = StObject.set(x, "weekDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecond(value: Double): Self = this.set("second", value.asInstanceOf[js.Any])
+    def setWeekDayUndefined: Self = StObject.set(x, "weekDay", js.undefined)
     
     @scala.inline
-    def deleteSecond: Self = this.set("second", js.undefined)
+    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekDay(value: Double): Self = this.set("weekDay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekDay: Self = this.set("weekDay", js.undefined)
-    
-    @scala.inline
-    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYear: Self = this.set("year", js.undefined)
+    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

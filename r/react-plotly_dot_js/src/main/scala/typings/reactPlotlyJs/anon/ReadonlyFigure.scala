@@ -2,13 +2,14 @@ package typings.reactPlotlyJs.anon
 
 import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Frame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-plotly.js.react-plotly.js.Figure> */
 @js.native
-trait ReadonlyFigure extends js.Object {
+trait ReadonlyFigure extends StObject {
   
   val data: js.Array[Data] = js.native
   
@@ -25,39 +26,27 @@ object ReadonlyFigure {
   }
   
   @scala.inline
-  implicit class ReadonlyFigureOps[Self <: ReadonlyFigure] (val x: Self) extends AnyVal {
+  implicit class ReadonlyFigureMutableBuilder[Self <: ReadonlyFigure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: Data*): Self = this.set("data", js.Array(value :_*))
+    def setFramesNull: Self = StObject.set(x, "frames", null)
     
     @scala.inline
-    def setData(value: js.Array[Data]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def setLayout(value: PartialLayout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setFramesVarargs(value: Frame*): Self = this.set("frames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
-    
-    @scala.inline
-    def setFramesNull: Self = this.set("frames", null)
+    def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

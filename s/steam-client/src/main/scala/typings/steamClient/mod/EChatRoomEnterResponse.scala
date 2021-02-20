@@ -1,90 +1,75 @@
 package typings.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EChatRoomEnterResponse extends js.Object
+sealed trait EChatRoomEnterResponse extends StObject
 @JSImport("steam-client", "EChatRoomEnterResponse")
 @js.native
-object EChatRoomEnterResponse extends js.Object {
+object EChatRoomEnterResponse extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EChatRoomEnterResponse with Double] = js.native
   
   @js.native
   sealed trait Banned extends EChatRoomEnterResponse
-  /* 6 */ @js.native
-  object Banned extends TopLevel[Banned with Double]
+  /* 6 */ val Banned: typings.steamClient.mod.EChatRoomEnterResponse.Banned with Double = js.native
   
   @js.native
   sealed trait ClanDisabled extends EChatRoomEnterResponse
-  /* 8 */ @js.native
-  object ClanDisabled extends TopLevel[ClanDisabled with Double]
+  /* 8 */ val ClanDisabled: typings.steamClient.mod.EChatRoomEnterResponse.ClanDisabled with Double = js.native
   
   @js.native
   sealed trait CommunityBan extends EChatRoomEnterResponse
-  /* 9 */ @js.native
-  object CommunityBan extends TopLevel[CommunityBan with Double]
+  /* 9 */ val CommunityBan: typings.steamClient.mod.EChatRoomEnterResponse.CommunityBan with Double = js.native
   
   @js.native
   sealed trait DoesntExist extends EChatRoomEnterResponse
-  /* 2 */ @js.native
-  object DoesntExist extends TopLevel[DoesntExist with Double]
+  /* 2 */ val DoesntExist: typings.steamClient.mod.EChatRoomEnterResponse.DoesntExist with Double = js.native
   
   @js.native
   sealed trait Error extends EChatRoomEnterResponse
-  /* 5 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 5 */ val Error: typings.steamClient.mod.EChatRoomEnterResponse.Error with Double = js.native
   
   @js.native
   sealed trait Full extends EChatRoomEnterResponse
-  /* 4 */ @js.native
-  object Full extends TopLevel[Full with Double]
+  /* 4 */ val Full: typings.steamClient.mod.EChatRoomEnterResponse.Full with Double = js.native
   
   @js.native
   sealed trait Limited extends EChatRoomEnterResponse
-  /* 7 */ @js.native
-  object Limited extends TopLevel[Limited with Double]
+  /* 7 */ val Limited: typings.steamClient.mod.EChatRoomEnterResponse.Limited with Double = js.native
   
   @js.native
   sealed trait MemberBlockedYou extends EChatRoomEnterResponse
-  /* 10 */ @js.native
-  object MemberBlockedYou extends TopLevel[MemberBlockedYou with Double]
+  /* 10 */ val MemberBlockedYou: typings.steamClient.mod.EChatRoomEnterResponse.MemberBlockedYou with Double = js.native
   
   // these appear to have been removed
-   // removed
   @js.native
   sealed trait NoRankingDataLobby extends EChatRoomEnterResponse
-  /* 12 */ @js.native
-  object NoRankingDataLobby extends TopLevel[NoRankingDataLobby with Double]
+  /* 12 */ val NoRankingDataLobby: typings.steamClient.mod.EChatRoomEnterResponse.NoRankingDataLobby with Double = js.native
   
-   // removed
+  // removed
   @js.native
   sealed trait NoRankingDataUser extends EChatRoomEnterResponse
-  /* 13 */ @js.native
-  object NoRankingDataUser extends TopLevel[NoRankingDataUser with Double]
+  /* 13 */ val NoRankingDataUser: typings.steamClient.mod.EChatRoomEnterResponse.NoRankingDataUser with Double = js.native
   
   @js.native
   sealed trait NotAllowed extends EChatRoomEnterResponse
-  /* 3 */ @js.native
-  object NotAllowed extends TopLevel[NotAllowed with Double]
+  /* 3 */ val NotAllowed: typings.steamClient.mod.EChatRoomEnterResponse.NotAllowed with Double = js.native
   
-   // removed
+  // removed
   @js.native
   sealed trait RankOutOfRange extends EChatRoomEnterResponse
-  /* 14 */ @js.native
-  object RankOutOfRange extends TopLevel[RankOutOfRange with Double]
+  /* 14 */ val RankOutOfRange: typings.steamClient.mod.EChatRoomEnterResponse.RankOutOfRange with Double = js.native
   
   @js.native
   sealed trait Success extends EChatRoomEnterResponse
-  /* 1 */ @js.native
-  object Success extends TopLevel[Success with Double]
+  /* 1 */ val Success: typings.steamClient.mod.EChatRoomEnterResponse.Success with Double = js.native
   
   @js.native
   sealed trait YouBlockedMember extends EChatRoomEnterResponse
-  /* 11 */ @js.native
-  object YouBlockedMember extends TopLevel[YouBlockedMember with Double]
+  /* 11 */ val YouBlockedMember: typings.steamClient.mod.EChatRoomEnterResponse.YouBlockedMember with Double = js.native
 }

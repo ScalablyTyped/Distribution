@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object ITabBar {
   }
   
   @scala.inline
-  implicit class ITabBarOps[Self <: ITabBar] (val x: Self) extends AnyVal {
+  implicit class ITabBarMutableBuilder[Self <: ITabBar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTab(value: js.Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveTab(value: () => _): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActiveTab(value: js.Any): Self = this.set("activeTab", value.asInstanceOf[js.Any])
+    def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
     
     @scala.inline
-    def deleteActiveTab: Self = this.set("activeTab", js.undefined)
+    def setSetActiveTab(value: /* activeTab */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActiveTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetActiveTab(value: () => _): Self = this.set("getActiveTab", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetActiveTab: Self = this.set("getActiveTab", js.undefined)
-    
-    @scala.inline
-    def setSetActiveTab(value: /* activeTab */ js.UndefOr[js.Any] => Unit): Self = this.set("setActiveTab", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetActiveTab: Self = this.set("setActiveTab", js.undefined)
+    def setSetActiveTabUndefined: Self = StObject.set(x, "setActiveTab", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request with deployment information to update an existing deployment.
   */
 @js.native
-trait SchemaUpdateDeploymentRequest extends js.Object {
+trait SchemaUpdateDeploymentRequest extends StObject {
   
   /**
     * The deployment configuration.
@@ -24,24 +25,12 @@ object SchemaUpdateDeploymentRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateDeploymentRequestOps[Self <: SchemaUpdateDeploymentRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateDeploymentRequestMutableBuilder[Self <: SchemaUpdateDeploymentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentConfig(value: SchemaDeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeploymentConfig(value: SchemaDeploymentConfig): Self = this.set("deploymentConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentConfig: Self = this.set("deploymentConfig", js.undefined)
+    def setDeploymentConfigUndefined: Self = StObject.set(x, "deploymentConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullRequest extends js.Object {
+trait PullRequest extends StObject {
   
   /**
     * The approval rules applied to the pull request.
@@ -71,90 +72,78 @@ object PullRequest {
   }
   
   @scala.inline
-  implicit class PullRequestOps[Self <: PullRequest] (val x: Self) extends AnyVal {
+  implicit class PullRequestMutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApprovalRules(value: ApprovalRulesList): Self = StObject.set(x, "approvalRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalRulesUndefined: Self = StObject.set(x, "approvalRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApprovalRulesVarargs(value: ApprovalRule*): Self = StObject.set(x, "approvalRules", js.Array(value :_*))
     
     @scala.inline
-    def setApprovalRulesVarargs(value: ApprovalRule*): Self = this.set("approvalRules", js.Array(value :_*))
+    def setAuthorArn(value: Arn): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalRules(value: ApprovalRulesList): Self = this.set("approvalRules", value.asInstanceOf[js.Any])
+    def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
     
     @scala.inline
-    def deleteApprovalRules: Self = this.set("approvalRules", js.undefined)
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorArn(value: Arn): Self = this.set("authorArn", value.asInstanceOf[js.Any])
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     @scala.inline
-    def deleteAuthorArn: Self = this.set("authorArn", js.undefined)
+    def setCreationDate(value: CreationDate): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: CreationDate): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setLastActivityDate(value: LastModifiedDate): Self = StObject.set(x, "lastActivityDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLastActivityDateUndefined: Self = StObject.set(x, "lastActivityDate", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastActivityDate(value: LastModifiedDate): Self = this.set("lastActivityDate", value.asInstanceOf[js.Any])
+    def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
     
     @scala.inline
-    def deleteLastActivityDate: Self = this.set("lastActivityDate", js.undefined)
+    def setPullRequestStatus(value: PullRequestStatusEnum): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
     
     @scala.inline
-    def deletePullRequestId: Self = this.set("pullRequestId", js.undefined)
+    def setPullRequestTargets(value: PullRequestTargetList): Self = StObject.set(x, "pullRequestTargets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestStatus(value: PullRequestStatusEnum): Self = this.set("pullRequestStatus", value.asInstanceOf[js.Any])
+    def setPullRequestTargetsUndefined: Self = StObject.set(x, "pullRequestTargets", js.undefined)
     
     @scala.inline
-    def deletePullRequestStatus: Self = this.set("pullRequestStatus", js.undefined)
+    def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = StObject.set(x, "pullRequestTargets", js.Array(value :_*))
     
     @scala.inline
-    def setPullRequestTargetsVarargs(value: PullRequestTarget*): Self = this.set("pullRequestTargets", js.Array(value :_*))
+    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullRequestTargets(value: PullRequestTargetList): Self = this.set("pullRequestTargets", value.asInstanceOf[js.Any])
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
     @scala.inline
-    def deletePullRequestTargets: Self = this.set("pullRequestTargets", js.undefined)
+    def setTitle(value: Title): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevisionId(value: RevisionId): Self = this.set("revisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: Title): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

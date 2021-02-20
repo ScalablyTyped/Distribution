@@ -3,13 +3,14 @@ package typings.msRest.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest", "WebResource")
 @js.native
-class WebResource () extends js.Object {
+class WebResource () extends StObject {
   
   /**
     * @property {any} [body] The request body

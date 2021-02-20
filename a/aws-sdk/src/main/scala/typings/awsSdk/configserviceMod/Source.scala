@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   /**
     * Indicates whether AWS or the customer owns and manages the AWS Config rule.
@@ -31,33 +32,21 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: Owner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceDetails(value: SourceDetails): Self = StObject.set(x, "SourceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceDetailsUndefined: Self = StObject.set(x, "SourceDetails", js.undefined)
     
     @scala.inline
-    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    def setSourceDetailsVarargs(value: SourceDetail*): Self = StObject.set(x, "SourceDetails", js.Array(value :_*))
     
     @scala.inline
-    def setSourceIdentifier(value: StringWithCharLimit256): Self = this.set("SourceIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceDetailsVarargs(value: SourceDetail*): Self = this.set("SourceDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceDetails(value: SourceDetails): Self = this.set("SourceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceDetails: Self = this.set("SourceDetails", js.undefined)
+    def setSourceIdentifier(value: StringWithCharLimit256): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
   }
 }

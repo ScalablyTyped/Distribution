@@ -1,11 +1,12 @@
 package typings.awsSdk.schemasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchSchemaSummary extends js.Object {
+trait SearchSchemaSummary extends StObject {
   
   /**
     * The name of the registry.
@@ -36,45 +37,33 @@ object SearchSchemaSummary {
   }
   
   @scala.inline
-  implicit class SearchSchemaSummaryOps[Self <: SearchSchemaSummary] (val x: Self) extends AnyVal {
+  implicit class SearchSchemaSummaryMutableBuilder[Self <: SearchSchemaSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
     @scala.inline
-    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
+    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaArn(value: string): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
+    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
     @scala.inline
-    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+    def setSchemaVersions(value: listOfSearchSchemaVersionSummary): Self = StObject.set(x, "SchemaVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    def setSchemaVersionsUndefined: Self = StObject.set(x, "SchemaVersions", js.undefined)
     
     @scala.inline
-    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
-    
-    @scala.inline
-    def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = this.set("SchemaVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSchemaVersions(value: listOfSearchSchemaVersionSummary): Self = this.set("SchemaVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersions: Self = this.set("SchemaVersions", js.undefined)
+    def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = StObject.set(x, "SchemaVersions", js.Array(value :_*))
   }
 }

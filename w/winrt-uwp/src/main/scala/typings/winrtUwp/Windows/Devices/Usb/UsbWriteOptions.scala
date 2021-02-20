@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UsbWriteOptions extends js.Object
+sealed trait UsbWriteOptions extends StObject
 /** Defines constants for configuration flags that can be set for a USB pipe that the host opens for a USB OUT endpoint. */
 @JSGlobal("Windows.Devices.Usb.UsbWriteOptions")
 @js.native
-object UsbWriteOptions extends js.Object {
+object UsbWriteOptions extends StObject {
   
   /** Automatically clears a stalled pipe without stopping the data flow. */
   @js.native

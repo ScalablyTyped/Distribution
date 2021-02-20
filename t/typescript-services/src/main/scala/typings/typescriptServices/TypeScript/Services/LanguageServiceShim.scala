@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,33 +63,21 @@ object LanguageServiceShim {
   }
   
   @scala.inline
-  implicit class LanguageServiceShimOps[Self <: LanguageServiceShim] (val x: Self) extends AnyVal {
+  implicit class LanguageServiceShimMutableBuilder[Self <: LanguageServiceShim] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForwardJSONCall(value: (String, js.Function0[_]) => String): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_navigateToItemsToString(value: js.Any => js.Any): Self = this.set("_navigateToItemsToString", js.Any.fromFunction1(value))
+    def setRealizeDiagnosticWithFileName(value: js.Any => js.Any): Self = StObject.set(x, "realizeDiagnosticWithFileName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForwardJSONCall(value: (String, js.Function0[_]) => String): Self = this.set("forwardJSONCall", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setHost(value: js.Any): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogger(value: js.Any): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRealizeDiagnosticWithFileName(value: js.Any => js.Any): Self = this.set("realizeDiagnosticWithFileName", js.Any.fromFunction1(value))
+    def set_navigateToItemsToString(value: js.Any => js.Any): Self = StObject.set(x, "_navigateToItemsToString", js.Any.fromFunction1(value))
   }
 }

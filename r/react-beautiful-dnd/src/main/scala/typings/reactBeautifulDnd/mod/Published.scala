@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Published extends js.Object {
+trait Published extends StObject {
   
   var additions: js.Array[DraggableDimension] = js.native
   
@@ -26,36 +27,24 @@ object Published {
   }
   
   @scala.inline
-  implicit class PublishedOps[Self <: Published] (val x: Self) extends AnyVal {
+  implicit class PublishedMutableBuilder[Self <: Published] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditions(value: js.Array[DraggableDimension]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionsVarargs(value: DraggableDimension*): Self = StObject.set(x, "additions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModified(value: js.Array[DroppablePublish]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionsVarargs(value: DraggableDimension*): Self = this.set("additions", js.Array(value :_*))
+    def setModifiedVarargs(value: DroppablePublish*): Self = StObject.set(x, "modified", js.Array(value :_*))
     
     @scala.inline
-    def setAdditions(value: js.Array[DraggableDimension]): Self = this.set("additions", value.asInstanceOf[js.Any])
+    def setRemovals(value: js.Array[DraggableId]): Self = StObject.set(x, "removals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedVarargs(value: DroppablePublish*): Self = this.set("modified", js.Array(value :_*))
-    
-    @scala.inline
-    def setModified(value: js.Array[DroppablePublish]): Self = this.set("modified", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovalsVarargs(value: DraggableId*): Self = this.set("removals", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovals(value: js.Array[DraggableId]): Self = this.set("removals", value.asInstanceOf[js.Any])
+    def setRemovalsVarargs(value: DraggableId*): Self = StObject.set(x, "removals", js.Array(value :_*))
   }
 }

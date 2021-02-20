@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ASPxClientXYDiagramBase {
   }
   
   @scala.inline
-  implicit class ASPxClientXYDiagramBaseOps[Self <: ASPxClientXYDiagramBase] (val x: Self) extends AnyVal {
+  implicit class ASPxClientXYDiagramBaseMutableBuilder[Self <: ASPxClientXYDiagramBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAxisX(value: ASPxClientAxisBase): Self = this.set("axisX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAxisY(value: ASPxClientAxisBase): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
   }
 }

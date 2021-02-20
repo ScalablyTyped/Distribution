@@ -14,6 +14,7 @@ import typings.mendixmodelsdk.mappingsMod.mappings.ObjectHandlingBackupEnum
 import typings.mendixmodelsdk.microflowsMod.microflows.IMicroflow
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,16 +98,20 @@ class VersionedService protected () extends Element[IModel] {
   def versionNumber: Double = js.native
   def versionNumber_=(newValue: Double): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService")
-@js.native
-object VersionedService extends js.Object {
+object VersionedService {
+  
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates and returns a new VersionedService instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService.create")
+  @js.native
   def create(model: IModel): VersionedService = js.native
   
   /**
@@ -114,9 +119,22 @@ object VersionedService extends js.Object {
     * The new VersionedService will be automatically stored in the 'versionedServices' property
     * of the parent PublishedServiceBase element passed as argument.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService.createIn")
+  @js.native
   def createIn(container: PublishedServiceBase): VersionedService = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.VersionedService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

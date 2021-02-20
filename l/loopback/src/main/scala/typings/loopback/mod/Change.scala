@@ -2,6 +2,7 @@ package typings.loopback.mod
 
 import typings.loopback.anon.HashAlgorithm
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Change")
 @js.native
-class Change () extends PersistedModel {
+class Change protected () extends PersistedModel {
+  def this(data: js.Any) = this()
   
   var checkpoint: Double = js.native
   
@@ -103,16 +105,16 @@ class Change () extends PersistedModel {
     */
   def `type`(): Unit = js.native
 }
-/* static members */
-@JSImport("loopback", "Change")
-@js.native
-object Change extends js.Object {
+object Change {
   
   /**
     * Are both changes deletes?
     * @param  {Change} a
     * @param  {Change} b
     */
+  /* static member */
+  @JSImport("loopback", "Change.bothDeleted")
+  @js.native
   def bothDeleted(a: Change, b: Change): Unit = js.native
   
   /**
@@ -154,15 +156,21 @@ object Change extends js.Object {
     * @param {Change} change
     * @end
     */
+  /* static member */
+  @JSImport("loopback", "Change.findOrCreateChange")
+  @js.native
   def findOrCreateChange(
     modelName: String,
     modelId: String,
-    callback: js.Function2[/* err */ Error, /* change */ this.type, Unit]
+    callback: js.Function2[/* err */ Error, /* change */ Change, Unit]
   ): Unit = js.native
   
   /**
     * Get the checkpoint model.
     */
+  /* static member */
+  @JSImport("loopback", "Change.getCheckpointModel")
+  @js.native
   def getCheckpointModel(): Unit = js.native
   
   /**
@@ -170,6 +178,9 @@ object Change extends js.Object {
     * **Default: `sha1`*
     * @param  {string} str The string to be hashed
     */
+  /* static member */
+  @JSImport("loopback", "Change.hash")
+  @js.native
   def hash(str: String): Unit = js.native
   
   /**
@@ -177,12 +188,18 @@ object Change extends js.Object {
     * @param  {string} modelName
     * @param  {string} modelId
     */
+  /* static member */
+  @JSImport("loopback", "Change.idForModel")
+  @js.native
   def idForModel(modelName: String, modelId: String): Unit = js.native
   
   /**
     * Correct all change list entries.
     * @param {() => void} c
     */
+  /* static member */
+  @JSImport("loopback", "Change.rectifyAll")
+  @js.native
   def rectifyAll(cb: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -193,6 +210,9 @@ object Change extends js.Object {
     * @param {Error} err
     * @param {Array} changes Changes that were tracke
     */
+  /* static member */
+  @JSImport("loopback", "Change.rectifyModelChanges")
+  @js.native
   def rectifyModelChanges(
     modelName: String,
     modelIds: js.Array[_],
@@ -203,5 +223,8 @@ object Change extends js.Object {
     * Get the revision string for the given object
     * @param  {any} inst The data to get the revision string for
     */
+  /* static member */
+  @JSImport("loopback", "Change.revisionForInst")
+  @js.native
   def revisionForInst(inst: js.Any): Unit = js.native
 }

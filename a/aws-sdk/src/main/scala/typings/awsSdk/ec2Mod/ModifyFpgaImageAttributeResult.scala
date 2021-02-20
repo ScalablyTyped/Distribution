@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyFpgaImageAttributeResult extends js.Object {
+trait ModifyFpgaImageAttributeResult extends StObject {
   
   /**
     * Information about the attribute.
@@ -21,24 +22,12 @@ object ModifyFpgaImageAttributeResult {
   }
   
   @scala.inline
-  implicit class ModifyFpgaImageAttributeResultOps[Self <: ModifyFpgaImageAttributeResult] (val x: Self) extends AnyVal {
+  implicit class ModifyFpgaImageAttributeResultMutableBuilder[Self <: ModifyFpgaImageAttributeResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFpgaImageAttribute(value: FpgaImageAttribute): Self = StObject.set(x, "FpgaImageAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFpgaImageAttribute(value: FpgaImageAttribute): Self = this.set("FpgaImageAttribute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFpgaImageAttribute: Self = this.set("FpgaImageAttribute", js.undefined)
+    def setFpgaImageAttributeUndefined: Self = StObject.set(x, "FpgaImageAttribute", js.undefined)
   }
 }

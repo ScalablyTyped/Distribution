@@ -3,6 +3,7 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.stdStrings.addsourcebuffer
 import typings.std.stdStrings.removesourcebuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

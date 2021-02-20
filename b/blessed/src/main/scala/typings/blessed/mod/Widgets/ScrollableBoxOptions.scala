@@ -1,6 +1,7 @@
 package typings.blessed.mod.Widgets
 
 import typings.blessed.anon.Ch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,36 +35,24 @@ object ScrollableBoxOptions {
   }
   
   @scala.inline
-  implicit class ScrollableBoxOptionsOps[Self <: ScrollableBoxOptions] (val x: Self) extends AnyVal {
+  implicit class ScrollableBoxOptionsMutableBuilder[Self <: ScrollableBoxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlwaysScroll(value: Boolean): Self = StObject.set(x, "alwaysScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlwaysScrollUndefined: Self = StObject.set(x, "alwaysScroll", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseLimit(value: Double): Self = StObject.set(x, "baseLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlwaysScroll(value: Boolean): Self = this.set("alwaysScroll", value.asInstanceOf[js.Any])
+    def setBaseLimitUndefined: Self = StObject.set(x, "baseLimit", js.undefined)
     
     @scala.inline
-    def deleteAlwaysScroll: Self = this.set("alwaysScroll", js.undefined)
+    def setScrollbar(value: Ch): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLimit(value: Double): Self = this.set("baseLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseLimit: Self = this.set("baseLimit", js.undefined)
-    
-    @scala.inline
-    def setScrollbar(value: Ch): Self = this.set("scrollbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollbar: Self = this.set("scrollbar", js.undefined)
+    def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
   }
 }

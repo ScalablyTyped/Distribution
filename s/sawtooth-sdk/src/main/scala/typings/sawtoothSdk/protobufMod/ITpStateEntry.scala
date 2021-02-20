@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITpStateEntry extends js.Object {
+trait ITpStateEntry extends StObject {
   
   /** TpStateEntry address */
   var address: js.UndefOr[String | Null] = js.native
@@ -23,36 +24,24 @@ object ITpStateEntry {
   }
   
   @scala.inline
-  implicit class ITpStateEntryOps[Self <: ITpStateEntry] (val x: Self) extends AnyVal {
+  implicit class ITpStateEntryMutableBuilder[Self <: ITpStateEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressNull: Self = StObject.set(x, "address", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setDataNull: Self = StObject.set(x, "data", null)
     
     @scala.inline
-    def setAddressNull: Self = this.set("address", null)
-    
-    @scala.inline
-    def setData(value: Uint8Array): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setDataNull: Self = this.set("data", null)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

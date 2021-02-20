@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsyncLoop extends js.Object {
+trait AsyncLoop extends StObject {
   
   var _done: js.Any = js.native
   
@@ -50,39 +51,27 @@ object AsyncLoop {
   }
   
   @scala.inline
-  implicit class AsyncLoopOps[Self <: AsyncLoop] (val x: Self) extends AnyVal {
+  implicit class AsyncLoopMutableBuilder[Self <: AsyncLoop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakLoop(value: () => Unit): Self = StObject.set(x, "breakLoop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecuteNext(value: () => Unit): Self = StObject.set(x, "executeNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_done(value: js.Any): Self = this.set("_done", value.asInstanceOf[js.Any])
+    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_fn(value: js.Any): Self = this.set("_fn", value.asInstanceOf[js.Any])
+    def set_done(value: js.Any): Self = StObject.set(x, "_done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_successCallback(value: js.Any): Self = this.set("_successCallback", value.asInstanceOf[js.Any])
+    def set_fn(value: js.Any): Self = StObject.set(x, "_fn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakLoop(value: () => Unit): Self = this.set("breakLoop", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setExecuteNext(value: () => Unit): Self = this.set("executeNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIterations(value: Double): Self = this.set("iterations", value.asInstanceOf[js.Any])
+    def set_successCallback(value: js.Any): Self = StObject.set(x, "_successCallback", value.asInstanceOf[js.Any])
   }
 }

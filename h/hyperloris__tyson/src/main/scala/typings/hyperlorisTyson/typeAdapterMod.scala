@@ -1,15 +1,15 @@
 package typings.hyperlorisTyson
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@hyperloris/tyson/dist/types/typeAdapter", JSImport.Namespace)
-@js.native
-object typeAdapterMod extends js.Object {
+object typeAdapterMod {
   
+  @JSImport("@hyperloris/tyson/dist/types/typeAdapter", "TypeAdapter")
   @js.native
-  abstract class TypeAdapter[T] () extends js.Object {
+  abstract class TypeAdapter[T] () extends StObject {
     
     /* protected */ def _fromJson(json: js.Any): T | js.Array[T] = js.native
     

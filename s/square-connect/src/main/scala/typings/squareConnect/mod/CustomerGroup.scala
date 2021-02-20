@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CustomerGroup")
 @js.native
-class CustomerGroup () extends js.Object {
+class CustomerGroup () extends StObject {
   
   /**
     * The timestamp when the customer group was created, in RFC 3339 format.

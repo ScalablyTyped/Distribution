@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftDestinationUpdate extends js.Object {
+trait RedshiftDestinationUpdate extends StObject {
   
   /**
     * The Amazon CloudWatch logging options for your delivery stream.
@@ -71,84 +72,72 @@ object RedshiftDestinationUpdate {
   }
   
   @scala.inline
-  implicit class RedshiftDestinationUpdateOps[Self <: RedshiftDestinationUpdate] (val x: Self) extends AnyVal {
+  implicit class RedshiftDestinationUpdateMutableBuilder[Self <: RedshiftDestinationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterJDBCURL(value: ClusterJDBCURL): Self = StObject.set(x, "ClusterJDBCURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    def setClusterJDBCURLUndefined: Self = StObject.set(x, "ClusterJDBCURL", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    def setCopyCommand(value: CopyCommand): Self = StObject.set(x, "CopyCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterJDBCURL(value: ClusterJDBCURL): Self = this.set("ClusterJDBCURL", value.asInstanceOf[js.Any])
+    def setCopyCommandUndefined: Self = StObject.set(x, "CopyCommand", js.undefined)
     
     @scala.inline
-    def deleteClusterJDBCURL: Self = this.set("ClusterJDBCURL", js.undefined)
+    def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyCommand(value: CopyCommand): Self = this.set("CopyCommand", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
     @scala.inline
-    def deleteCopyCommand: Self = this.set("CopyCommand", js.undefined)
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: Password): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
     
     @scala.inline
-    def deletePassword: Self = this.set("Password", js.undefined)
+    def setRetryOptions(value: RedshiftRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
     
     @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryOptions(value: RedshiftRetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def deleteRetryOptions: Self = this.set("RetryOptions", js.undefined)
+    def setS3BackupMode(value: RedshiftS3BackupMode): Self = StObject.set(x, "S3BackupMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setS3BackupModeUndefined: Self = StObject.set(x, "S3BackupMode", js.undefined)
     
     @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setS3BackupUpdate(value: S3DestinationUpdate): Self = StObject.set(x, "S3BackupUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BackupMode(value: RedshiftS3BackupMode): Self = this.set("S3BackupMode", value.asInstanceOf[js.Any])
+    def setS3BackupUpdateUndefined: Self = StObject.set(x, "S3BackupUpdate", js.undefined)
     
     @scala.inline
-    def deleteS3BackupMode: Self = this.set("S3BackupMode", js.undefined)
+    def setS3Update(value: S3DestinationUpdate): Self = StObject.set(x, "S3Update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BackupUpdate(value: S3DestinationUpdate): Self = this.set("S3BackupUpdate", value.asInstanceOf[js.Any])
+    def setS3UpdateUndefined: Self = StObject.set(x, "S3Update", js.undefined)
     
     @scala.inline
-    def deleteS3BackupUpdate: Self = this.set("S3BackupUpdate", js.undefined)
+    def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Update(value: S3DestinationUpdate): Self = this.set("S3Update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Update: Self = this.set("S3Update", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: Username): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

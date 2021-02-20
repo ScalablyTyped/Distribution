@@ -1,5 +1,6 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/max-zoom#MaxZoomService Maps JavaScript API}
   */
 @js.native
-trait MaxZoomService extends js.Object {
+trait MaxZoomService extends StObject {
   
   def getMaxZoomAtLatLng(latlng: LatLngLiteral, callback: js.Function1[/* result */ MaxZoomResult, Unit]): Unit = js.native
   /**

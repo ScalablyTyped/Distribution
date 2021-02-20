@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.identitiesInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityScope extends js.Object {
+trait IdentityScope extends StObject {
   
   var administrators: IdentityDescriptor = js.native
   
@@ -47,48 +48,36 @@ object IdentityScope {
   }
   
   @scala.inline
-  implicit class IdentityScopeOps[Self <: IdentityScope] (val x: Self) extends AnyVal {
+  implicit class IdentityScopeMutableBuilder[Self <: IdentityScope] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrators(value: IdentityDescriptor): Self = StObject.set(x, "administrators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrators(value: IdentityDescriptor): Self = this.set("administrators", value.asInstanceOf[js.Any])
+    def setIsGlobal(value: Boolean): Self = StObject.set(x, "isGlobal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLocalScopeId(value: String): Self = StObject.set(x, "localScopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsGlobal(value: Boolean): Self = this.set("isGlobal", value.asInstanceOf[js.Any])
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalScopeId(value: String): Self = this.set("localScopeId", value.asInstanceOf[js.Any])
+    def setScopeType(value: GroupScopeType): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSecuringHostId(value: String): Self = StObject.set(x, "securingHostId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeType(value: GroupScopeType): Self = this.set("scopeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecuringHostId(value: String): Self = this.set("securingHostId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubjectDescriptor(value: String): Self = this.set("subjectDescriptor", value.asInstanceOf[js.Any])
+    def setSubjectDescriptor(value: String): Self = StObject.set(x, "subjectDescriptor", value.asInstanceOf[js.Any])
   }
 }

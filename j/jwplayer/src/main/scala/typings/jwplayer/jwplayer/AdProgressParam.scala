@@ -2,12 +2,13 @@ package typings.jwplayer.jwplayer
 
 import typings.jwplayer.jwplayerStrings.googima
 import typings.jwplayer.jwplayerStrings.vast
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdProgressParam extends js.Object {
+trait AdProgressParam extends StObject {
   
   var client: vast | googima = js.native
   
@@ -24,27 +25,15 @@ object AdProgressParam {
   }
   
   @scala.inline
-  implicit class AdProgressParamOps[Self <: AdProgressParam] (val x: Self) extends AnyVal {
+  implicit class AdProgressParamMutableBuilder[Self <: AdProgressParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: vast | googima): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreativetype(value: String): Self = StObject.set(x, "creativetype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClient(value: vast | googima): Self = this.set("client", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreativetype(value: String): Self = this.set("creativetype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

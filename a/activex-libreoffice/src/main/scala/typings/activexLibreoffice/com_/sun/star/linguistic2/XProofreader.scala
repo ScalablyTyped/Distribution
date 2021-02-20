@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,30 +72,18 @@ object XProofreader {
   }
   
   @scala.inline
-  implicit class XProofreaderOps[Self <: XProofreader] (val x: Self) extends AnyVal {
+  implicit class XProofreaderMutableBuilder[Self <: XProofreader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoProofreading(value: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult): Self = StObject.set(x, "doProofreading", js.Any.fromFunction6(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreRule(value: (String, Locale) => Unit): Self = StObject.set(x, "ignoreRule", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSpellChecker(value: () => Boolean): Self = StObject.set(x, "isSpellChecker", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDoProofreading(value: (String, String, Locale, Double, Double, SeqEquiv[PropertyValue]) => ProofreadingResult): Self = this.set("doProofreading", js.Any.fromFunction6(value))
-    
-    @scala.inline
-    def setIgnoreRule(value: (String, Locale) => Unit): Self = this.set("ignoreRule", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setIsSpellChecker(value: () => Boolean): Self = this.set("isSpellChecker", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResetIgnoreRules(value: () => Unit): Self = this.set("resetIgnoreRules", js.Any.fromFunction0(value))
+    def setResetIgnoreRules(value: () => Unit): Self = StObject.set(x, "resetIgnoreRules", js.Any.fromFunction0(value))
   }
 }

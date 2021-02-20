@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexAdodb.ADODB.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorsCollection extends js.Object {
+trait ErrorsCollection extends StObject {
   
   /**
     * @param string [bstrDetailedErrorMessage='']

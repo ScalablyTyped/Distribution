@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPublicKeyConfigResult extends js.Object {
+trait GetPublicKeyConfigResult extends StObject {
   
   /**
     * The identifier for this version of the public key configuration.
@@ -26,30 +27,18 @@ object GetPublicKeyConfigResult {
   }
   
   @scala.inline
-  implicit class GetPublicKeyConfigResultOps[Self <: GetPublicKeyConfigResult] (val x: Self) extends AnyVal {
+  implicit class GetPublicKeyConfigResultMutableBuilder[Self <: GetPublicKeyConfigResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKeyConfig(value: PublicKeyConfig): Self = StObject.set(x, "PublicKeyConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
-    
-    @scala.inline
-    def setPublicKeyConfig(value: PublicKeyConfig): Self = this.set("PublicKeyConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyConfig: Self = this.set("PublicKeyConfig", js.undefined)
+    def setPublicKeyConfigUndefined: Self = StObject.set(x, "PublicKeyConfig", js.undefined)
   }
 }

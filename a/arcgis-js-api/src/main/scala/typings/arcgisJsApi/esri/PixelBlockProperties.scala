@@ -18,12 +18,13 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PixelBlockProperties extends js.Object {
+trait PixelBlockProperties extends StObject {
   
   /**
     * The height (or number of rows) of the PixelBlock in pixels.
@@ -92,77 +93,65 @@ object PixelBlockProperties {
   }
   
   @scala.inline
-  implicit class PixelBlockPropertiesOps[Self <: PixelBlockProperties] (val x: Self) extends AnyVal {
+  implicit class PixelBlockPropertiesMutableBuilder[Self <: PixelBlockProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMask(value: js.Array[Double] | Uint8Array): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaskIsAlpha(value: Boolean): Self = StObject.set(x, "maskIsAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setMaskIsAlphaUndefined: Self = StObject.set(x, "maskIsAlpha", js.undefined)
     
     @scala.inline
-    def setMaskVarargs(value: Double*): Self = this.set("mask", js.Array(value :_*))
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setMask(value: js.Array[Double] | Uint8Array): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setMaskVarargs(value: Double*): Self = StObject.set(x, "mask", js.Array(value :_*))
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = StObject.set(x, "pixelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskIsAlpha(value: Boolean): Self = this.set("maskIsAlpha", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaskIsAlpha: Self = this.set("maskIsAlpha", js.undefined)
-    
-    @scala.inline
-    def setPixelType(value: unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64): Self = this.set("pixelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelType: Self = this.set("pixelType", js.undefined)
-    
-    @scala.inline
-    def setPixelsVarargs(value: Double*): Self = this.set("pixels", js.Array(value :_*))
+    def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
     
     @scala.inline
     def setPixels(
       value: js.Array[Double] | Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array
-    ): Self = this.set("pixels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePixels: Self = this.set("pixels", js.undefined)
+    def setPixelsUndefined: Self = StObject.set(x, "pixels", js.undefined)
     
     @scala.inline
-    def setStatisticsVarargs(value: PixelBlockStatistics*): Self = this.set("statistics", js.Array(value :_*))
+    def setPixelsVarargs(value: Double*): Self = StObject.set(x, "pixels", js.Array(value :_*))
     
     @scala.inline
-    def setStatistics(value: js.Array[PixelBlockStatistics]): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    def setStatistics(value: js.Array[PixelBlockStatistics]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
     @scala.inline
-    def setValidPixelCount(value: Double): Self = this.set("validPixelCount", value.asInstanceOf[js.Any])
+    def setStatisticsVarargs(value: PixelBlockStatistics*): Self = StObject.set(x, "statistics", js.Array(value :_*))
     
     @scala.inline
-    def deleteValidPixelCount: Self = this.set("validPixelCount", js.undefined)
+    def setValidPixelCount(value: Double): Self = StObject.set(x, "validPixelCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setValidPixelCountUndefined: Self = StObject.set(x, "validPixelCount", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

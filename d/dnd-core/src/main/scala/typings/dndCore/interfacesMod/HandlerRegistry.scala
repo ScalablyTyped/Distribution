@@ -1,11 +1,12 @@
 package typings.dndCore.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandlerRegistry extends js.Object {
+trait HandlerRegistry extends StObject {
   
   def addSource(`type`: SourceType, source: DragSource): Identifier = js.native
   

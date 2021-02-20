@@ -2,16 +2,14 @@ package typings.antvGMath
 
 import typings.antvGMath.typesMod.BBox
 import typings.antvGMath.typesMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-math/lib/line", JSImport.Namespace)
-@js.native
-object lineMod extends js.Object {
+object lineMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
     /**
       * 计算线段的包围盒
@@ -21,6 +19,8 @@ object lineMod extends js.Object {
       * @param {number} y2 结束点 y
       * @return {object} 包围盒对象
       */
+    @JSImport("@antv/g-math/lib/line", "default.box")
+    @js.native
     def box(x1: Double, y1: Double, x2: Double, y2: Double): BBox = js.native
     
     /**
@@ -31,6 +31,8 @@ object lineMod extends js.Object {
       * @param {number} y2 结束点 y
       * @return {number} 距离
       */
+    @JSImport("@antv/g-math/lib/line", "default.length")
+    @js.native
     def length(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
     
     /**
@@ -42,6 +44,8 @@ object lineMod extends js.Object {
       * @param {number} t 指定比例
       * @return {object} 包含 x, y 的点
       */
+    @JSImport("@antv/g-math/lib/line", "default.pointAt")
+    @js.native
     def pointAt(x1: Double, y1: Double, x2: Double, y2: Double, t: Double): Point = js.native
     
     /**
@@ -54,6 +58,8 @@ object lineMod extends js.Object {
       * @param {number} y  测试点 y
       * @return {number} 距离
       */
+    @JSImport("@antv/g-math/lib/line", "default.pointDistance")
+    @js.native
     def pointDistance(x1: Double, y1: Double, x2: Double, y2: Double, x: Double, y: Double): Double = js.native
     
     /**
@@ -66,6 +72,8 @@ object lineMod extends js.Object {
       * @param {number} y  测试点 y
       * @return {number} 距离
       */
+    @JSImport("@antv/g-math/lib/line", "default.pointToLine")
+    @js.native
     def pointToLine(x1: Double, y1: Double, x2: Double, y2: Double, x: Double, y: Double): Double = js.native
     
     /**
@@ -76,6 +84,8 @@ object lineMod extends js.Object {
       * @param {number} y2 结束点 y
       * @return {number} 导数
       */
+    @JSImport("@antv/g-math/lib/line", "default.tangentAngle")
+    @js.native
     def tangentAngle(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
   }
 }

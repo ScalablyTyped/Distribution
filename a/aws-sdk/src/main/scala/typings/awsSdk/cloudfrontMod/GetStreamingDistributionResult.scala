@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetStreamingDistributionResult extends js.Object {
+trait GetStreamingDistributionResult extends StObject {
   
   /**
     * The current version of the streaming distribution's information. For example: E2QWRUHAPOMQZL.
@@ -26,30 +27,18 @@ object GetStreamingDistributionResult {
   }
   
   @scala.inline
-  implicit class GetStreamingDistributionResultOps[Self <: GetStreamingDistributionResult] (val x: Self) extends AnyVal {
+  implicit class GetStreamingDistributionResultMutableBuilder[Self <: GetStreamingDistributionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamingDistribution(value: StreamingDistribution): Self = StObject.set(x, "StreamingDistribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
-    
-    @scala.inline
-    def setStreamingDistribution(value: StreamingDistribution): Self = this.set("StreamingDistribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingDistribution: Self = this.set("StreamingDistribution", js.undefined)
+    def setStreamingDistributionUndefined: Self = StObject.set(x, "StreamingDistribution", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WifiNetworkData extends js.Object {
+trait WifiNetworkData extends StObject {
   
   var bssid: String = js.native
   
@@ -47,57 +48,45 @@ object WifiNetworkData {
   }
   
   @scala.inline
-  implicit class WifiNetworkDataOps[Self <: WifiNetworkData] (val x: Self) extends AnyVal {
+  implicit class WifiNetworkDataMutableBuilder[Self <: WifiNetworkData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBssid(value: String): Self = StObject.set(x, "bssid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBssid(value: String): Self = this.set("bssid", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: Double): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setRsnFlags(value: js.Array[String]): Self = StObject.set(x, "rsnFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setRsnFlagsVarargs(value: String*): Self = StObject.set(x, "rsnFlags", js.Array(value :_*))
     
     @scala.inline
-    def setQuality(value: Double): Self = this.set("quality", value.asInstanceOf[js.Any])
+    def setSecurity(value: js.Array[String]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRsnFlagsVarargs(value: String*): Self = this.set("rsnFlags", js.Array(value :_*))
+    def setSecurityVarargs(value: String*): Self = StObject.set(x, "security", js.Array(value :_*))
     
     @scala.inline
-    def setRsnFlags(value: js.Array[String]): Self = this.set("rsnFlags", value.asInstanceOf[js.Any])
+    def setSignalLevel(value: Double): Self = StObject.set(x, "signalLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityVarargs(value: String*): Self = this.set("security", js.Array(value :_*))
+    def setSsid(value: String): Self = StObject.set(x, "ssid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurity(value: js.Array[String]): Self = this.set("security", value.asInstanceOf[js.Any])
+    def setWpaFlags(value: js.Array[String]): Self = StObject.set(x, "wpaFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalLevel(value: Double): Self = this.set("signalLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsid(value: String): Self = this.set("ssid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWpaFlagsVarargs(value: String*): Self = this.set("wpaFlags", js.Array(value :_*))
-    
-    @scala.inline
-    def setWpaFlags(value: js.Array[String]): Self = this.set("wpaFlags", value.asInstanceOf[js.Any])
+    def setWpaFlagsVarargs(value: String*): Self = StObject.set(x, "wpaFlags", js.Array(value :_*))
   }
 }

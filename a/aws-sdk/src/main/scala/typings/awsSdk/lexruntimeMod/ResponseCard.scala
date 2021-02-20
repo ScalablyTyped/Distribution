@@ -1,11 +1,12 @@
 package typings.awsSdk.lexruntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseCard extends js.Object {
+trait ResponseCard extends StObject {
   
   /**
     * The content type of the response.
@@ -31,39 +32,27 @@ object ResponseCard {
   }
   
   @scala.inline
-  implicit class ResponseCardOps[Self <: ResponseCard] (val x: Self) extends AnyVal {
+  implicit class ResponseCardMutableBuilder[Self <: ResponseCard] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenericAttachments(value: genericAttachmentList): Self = StObject.set(x, "genericAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setGenericAttachmentsUndefined: Self = StObject.set(x, "genericAttachments", js.undefined)
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setGenericAttachmentsVarargs(value: GenericAttachment*): Self = this.set("genericAttachments", js.Array(value :_*))
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenericAttachments(value: genericAttachmentList): Self = this.set("genericAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenericAttachments: Self = this.set("genericAttachments", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

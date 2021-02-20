@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the status of the Deidentify operation.
   */
 @js.native
-trait SchemaDeidentifyErrorDetails extends js.Object {
+trait SchemaDeidentifyErrorDetails extends StObject {
   
   /**
     * Number of resources failed to process.
@@ -39,42 +40,30 @@ object SchemaDeidentifyErrorDetails {
   }
   
   @scala.inline
-  implicit class SchemaDeidentifyErrorDetailsOps[Self <: SchemaDeidentifyErrorDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaDeidentifyErrorDetailsMutableBuilder[Self <: SchemaDeidentifyErrorDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureResourceCount(value: String): Self = StObject.set(x, "failureResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureResourceCountUndefined: Self = StObject.set(x, "failureResourceCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureStoreCount(value: String): Self = StObject.set(x, "failureStoreCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureResourceCount(value: String): Self = this.set("failureResourceCount", value.asInstanceOf[js.Any])
+    def setFailureStoreCountUndefined: Self = StObject.set(x, "failureStoreCount", js.undefined)
     
     @scala.inline
-    def deleteFailureResourceCount: Self = this.set("failureResourceCount", js.undefined)
+    def setSuccessResourceCount(value: String): Self = StObject.set(x, "successResourceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureStoreCount(value: String): Self = this.set("failureStoreCount", value.asInstanceOf[js.Any])
+    def setSuccessResourceCountUndefined: Self = StObject.set(x, "successResourceCount", js.undefined)
     
     @scala.inline
-    def deleteFailureStoreCount: Self = this.set("failureStoreCount", js.undefined)
+    def setSuccessStoreCount(value: String): Self = StObject.set(x, "successStoreCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessResourceCount(value: String): Self = this.set("successResourceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessResourceCount: Self = this.set("successResourceCount", js.undefined)
-    
-    @scala.inline
-    def setSuccessStoreCount(value: String): Self = this.set("successStoreCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccessStoreCount: Self = this.set("successStoreCount", js.undefined)
+    def setSuccessStoreCountUndefined: Self = StObject.set(x, "successStoreCount", js.undefined)
   }
 }

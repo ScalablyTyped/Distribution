@@ -1,12 +1,13 @@
 package typings.phaser.Phaser.Types.Core
 
 import typings.phaser.Phaser.Game
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CallbacksConfig extends js.Object {
+trait CallbacksConfig extends StObject {
   
   /**
     * A function to run at the end of the boot sequence. At this point, all the game systems have started and plugins have been loaded.
@@ -27,30 +28,18 @@ object CallbacksConfig {
   }
   
   @scala.inline
-  implicit class CallbacksConfigOps[Self <: CallbacksConfig] (val x: Self) extends AnyVal {
+  implicit class CallbacksConfigMutableBuilder[Self <: CallbacksConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "postBoot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostBootUndefined: Self = StObject.set(x, "postBoot", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreBoot(value: /* game */ Game => Unit): Self = StObject.set(x, "preBoot", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPostBoot(value: /* game */ Game => Unit): Self = this.set("postBoot", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePostBoot: Self = this.set("postBoot", js.undefined)
-    
-    @scala.inline
-    def setPreBoot(value: /* game */ Game => Unit): Self = this.set("preBoot", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePreBoot: Self = this.set("preBoot", js.undefined)
+    def setPreBootUndefined: Self = StObject.set(x, "preBoot", js.undefined)
   }
 }

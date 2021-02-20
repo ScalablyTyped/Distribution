@@ -8,12 +8,13 @@ import typings.sparkpost.sparkpostStrings.`Spam Complaint`
 import typings.sparkpost.sparkpostStrings.`Unsubscribe Link`
 import typings.sparkpost.sparkpostStrings.non_transactional
 import typings.sparkpost.sparkpostStrings.transactional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SupressionListEntry extends js.Object {
+trait SupressionListEntry extends StObject {
   
   var created: String = js.native
   
@@ -66,59 +67,47 @@ object SupressionListEntry {
   }
   
   @scala.inline
-  implicit class SupressionListEntryOps[Self <: SupressionListEntry] (val x: Self) extends AnyVal {
+  implicit class SupressionListEntryMutableBuilder[Self <: SupressionListEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setNon_transactional(value: Boolean): Self = StObject.set(x, "non_transactional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: String): Self = this.set("recipient", value.asInstanceOf[js.Any])
+    def setNon_transactionalUndefined: Self = StObject.set(x, "non_transactional", js.undefined)
     
     @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setNon_transactional(value: Boolean): Self = this.set("non_transactional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNon_transactional: Self = this.set("non_transactional", js.undefined)
+    def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSource(
       value: (`Spam Complaint`) | (`List Unsubscribe`) | (`Bounce Rule`) | (`Unsubscribe Link`) | (`Manually Added`) | Compliance
-    ): Self = this.set("source", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setTransactional(value: Boolean): Self = this.set("transactional", value.asInstanceOf[js.Any])
+    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransactional: Self = this.set("transactional", js.undefined)
+    def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
     
     @scala.inline
-    def setType(value: transactional | non_transactional): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: transactional | non_transactional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    @scala.inline
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
   }
 }

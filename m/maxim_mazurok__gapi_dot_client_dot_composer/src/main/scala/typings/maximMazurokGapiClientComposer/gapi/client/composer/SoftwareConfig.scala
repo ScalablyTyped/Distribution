@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientComposer.gapi.client.composer
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoftwareConfig extends js.Object {
+trait SoftwareConfig extends StObject {
   
   /**
     * Optional. Apache Airflow configuration properties to override. Property keys contain the section and property names, separated by a hyphen, for example
@@ -69,60 +70,48 @@ object SoftwareConfig {
   }
   
   @scala.inline
-  implicit class SoftwareConfigOps[Self <: SoftwareConfig] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SoftwareConfigMutableBuilder[Self <: SoftwareConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAirflowConfigOverrides(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
-    ): Self = this.set("airflowConfigOverrides", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAirflowConfigOverrides: Self = this.set("airflowConfigOverrides", js.undefined)
+    def setAirflowConfigOverridesUndefined: Self = StObject.set(x, "airflowConfigOverrides", js.undefined)
     
     @scala.inline
     def setEnvVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
-    ): Self = this.set("envVariables", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnvVariables: Self = this.set("envVariables", js.undefined)
+    def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
     
     @scala.inline
-    def setImageVersion(value: String): Self = this.set("imageVersion", value.asInstanceOf[js.Any])
+    def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageVersion: Self = this.set("imageVersion", js.undefined)
+    def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
     
     @scala.inline
     def setPypiPackages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientComposer.maximMazurokGapiClientComposerStrings.SoftwareConfig with TopLevel[js.Any]
-    ): Self = this.set("pypiPackages", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePypiPackages: Self = this.set("pypiPackages", js.undefined)
+    def setPypiPackagesUndefined: Self = StObject.set(x, "pypiPackages", js.undefined)
     
     @scala.inline
-    def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
   }
 }

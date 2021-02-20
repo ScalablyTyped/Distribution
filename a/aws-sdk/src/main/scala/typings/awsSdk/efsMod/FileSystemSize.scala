@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemSize extends js.Object {
+trait FileSystemSize extends StObject {
   
   /**
     * The time at which the size of data, returned in the Value field, was determined. The value is the integer number of seconds since 1970-01-01T00:00:00Z.
@@ -36,39 +37,27 @@ object FileSystemSize {
   }
   
   @scala.inline
-  implicit class FileSystemSizeOps[Self <: FileSystemSize] (val x: Self) extends AnyVal {
+  implicit class FileSystemSizeMutableBuilder[Self <: FileSystemSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: FileSystemSizeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: FileSystemSizeValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValueInIA(value: FileSystemNullableSizeValue): Self = StObject.set(x, "ValueInIA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setValueInIAUndefined: Self = StObject.set(x, "ValueInIA", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setValueInStandard(value: FileSystemNullableSizeValue): Self = StObject.set(x, "ValueInStandard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueInIA(value: FileSystemNullableSizeValue): Self = this.set("ValueInIA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueInIA: Self = this.set("ValueInIA", js.undefined)
-    
-    @scala.inline
-    def setValueInStandard(value: FileSystemNullableSizeValue): Self = this.set("ValueInStandard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueInStandard: Self = this.set("ValueInStandard", js.undefined)
+    def setValueInStandardUndefined: Self = StObject.set(x, "ValueInStandard", js.undefined)
   }
 }

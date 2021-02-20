@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeaturesLegacy extends js.Object {
+trait FeaturesLegacy extends StObject {
   
   var bAutoWidth: Boolean = js.native
   
@@ -50,51 +51,39 @@ object FeaturesLegacy {
   }
   
   @scala.inline
-  implicit class FeaturesLegacyOps[Self <: FeaturesLegacy] (val x: Self) extends AnyVal {
+  implicit class FeaturesLegacyMutableBuilder[Self <: FeaturesLegacy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBAutoWidth(value: Boolean): Self = StObject.set(x, "bAutoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBDeferRender(value: Boolean): Self = StObject.set(x, "bDeferRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBFilter(value: Boolean): Self = StObject.set(x, "bFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBAutoWidth(value: Boolean): Self = this.set("bAutoWidth", value.asInstanceOf[js.Any])
+    def setBInfo(value: Boolean): Self = StObject.set(x, "bInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBDeferRender(value: Boolean): Self = this.set("bDeferRender", value.asInstanceOf[js.Any])
+    def setBLengthChange(value: Boolean): Self = StObject.set(x, "bLengthChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBFilter(value: Boolean): Self = this.set("bFilter", value.asInstanceOf[js.Any])
+    def setBPaginate(value: Boolean): Self = StObject.set(x, "bPaginate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBInfo(value: Boolean): Self = this.set("bInfo", value.asInstanceOf[js.Any])
+    def setBProcessing(value: Boolean): Self = StObject.set(x, "bProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBLengthChange(value: Boolean): Self = this.set("bLengthChange", value.asInstanceOf[js.Any])
+    def setBServerSide(value: Boolean): Self = StObject.set(x, "bServerSide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBPaginate(value: Boolean): Self = this.set("bPaginate", value.asInstanceOf[js.Any])
+    def setBSort(value: Boolean): Self = StObject.set(x, "bSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBProcessing(value: Boolean): Self = this.set("bProcessing", value.asInstanceOf[js.Any])
+    def setBSortClasses(value: Boolean): Self = StObject.set(x, "bSortClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBServerSide(value: Boolean): Self = this.set("bServerSide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBSort(value: Boolean): Self = this.set("bSort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBSortClasses(value: Boolean): Self = this.set("bSortClasses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBStateSave(value: Boolean): Self = this.set("bStateSave", value.asInstanceOf[js.Any])
+    def setBStateSave(value: Boolean): Self = StObject.set(x, "bStateSave", value.asInstanceOf[js.Any])
   }
 }

@@ -7,6 +7,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.json
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

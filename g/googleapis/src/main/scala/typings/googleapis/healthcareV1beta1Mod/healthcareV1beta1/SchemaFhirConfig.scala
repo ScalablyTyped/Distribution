@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies how de-identification of a FHIR store should be handled.
   */
 @js.native
-trait SchemaFhirConfig extends js.Object {
+trait SchemaFhirConfig extends StObject {
   
   /**
     * Specifies FHIR paths to match and how to transform them. Any field that
@@ -26,27 +27,15 @@ object SchemaFhirConfig {
   }
   
   @scala.inline
-  implicit class SchemaFhirConfigOps[Self <: SchemaFhirConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaFhirConfigMutableBuilder[Self <: SchemaFhirConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldMetadataList(value: js.Array[SchemaFieldMetadata]): Self = StObject.set(x, "fieldMetadataList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldMetadataListUndefined: Self = StObject.set(x, "fieldMetadataList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFieldMetadataListVarargs(value: SchemaFieldMetadata*): Self = this.set("fieldMetadataList", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldMetadataList(value: js.Array[SchemaFieldMetadata]): Self = this.set("fieldMetadataList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldMetadataList: Self = this.set("fieldMetadataList", js.undefined)
+    def setFieldMetadataListVarargs(value: SchemaFieldMetadata*): Self = StObject.set(x, "fieldMetadataList", js.Array(value :_*))
   }
 }

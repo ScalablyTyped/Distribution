@@ -5,14 +5,14 @@ import typings.merklePatriciaTree.dbMod.DB
 import typings.merklePatriciaTree.scratchMod.ScratchDB
 import typings.merklePatriciaTree.scratchReadStreamMod.ScratchReadStream
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merkle-patricia-tree/dist/checkpointTrie", JSImport.Namespace)
-@js.native
-object checkpointTrieMod extends js.Object {
+object checkpointTrieMod {
   
+  @JSImport("merkle-patricia-tree/dist/checkpointTrie", "CheckpointTrie")
   @js.native
   class CheckpointTrie protected () extends Trie {
     def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any) = this()

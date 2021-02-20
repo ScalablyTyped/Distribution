@@ -10,12 +10,13 @@ import typings.bootstrapColorpicker.bootstrapColorpickerStrings.reposition
 import typings.bootstrapColorpicker.bootstrapColorpickerStrings.setValue
 import typings.bootstrapColorpicker.bootstrapColorpickerStrings.show
 import typings.bootstrapColorpicker.bootstrapColorpickerStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Initializes an colorpicker.

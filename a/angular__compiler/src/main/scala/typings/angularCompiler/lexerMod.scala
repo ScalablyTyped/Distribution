@@ -1,28 +1,26 @@
 package typings.angularCompiler
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/expression_parser/lexer", JSImport.Namespace)
-@js.native
-object lexerMod extends js.Object {
+object lexerMod {
   
+  @JSImport("@angular/compiler/src/expression_parser/lexer", "EOF")
+  @js.native
   val EOF: Token = js.native
   
-  def isIdentifier(input: String): Boolean = js.native
-  
-  def isQuote(code: Double): Boolean = js.native
-  
+  @JSImport("@angular/compiler/src/expression_parser/lexer", "Lexer")
   @js.native
-  class Lexer () extends js.Object {
+  class Lexer () extends StObject {
     
     def tokenize(text: String): js.Array[Token] = js.native
   }
   
+  @JSImport("@angular/compiler/src/expression_parser/lexer", "Token")
   @js.native
-  class Token protected () extends js.Object {
+  class Token protected () extends StObject {
     def this(index: Double, end: Double, `type`: TokenType, numValue: Double, strValue: String) = this()
     
     var end: Double = js.native
@@ -67,47 +65,48 @@ object lexerMod extends js.Object {
   }
   
   @js.native
-  sealed trait TokenType extends js.Object
+  sealed trait TokenType extends StObject
+  @JSImport("@angular/compiler/src/expression_parser/lexer", "TokenType")
   @js.native
-  object TokenType extends js.Object {
+  object TokenType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TokenType with Double] = js.native
     
     @js.native
     sealed trait Character extends TokenType
-    /* 0 */ @js.native
-    object Character extends TopLevel[Character with Double]
+    /* 0 */ val Character: typings.angularCompiler.lexerMod.TokenType.Character with Double = js.native
     
     @js.native
     sealed trait Error extends TokenType
-    /* 6 */ @js.native
-    object Error extends TopLevel[Error with Double]
+    /* 6 */ val Error: typings.angularCompiler.lexerMod.TokenType.Error with Double = js.native
     
     @js.native
     sealed trait Identifier extends TokenType
-    /* 1 */ @js.native
-    object Identifier extends TopLevel[Identifier with Double]
+    /* 1 */ val Identifier: typings.angularCompiler.lexerMod.TokenType.Identifier with Double = js.native
     
     @js.native
     sealed trait Keyword extends TokenType
-    /* 2 */ @js.native
-    object Keyword extends TopLevel[Keyword with Double]
+    /* 2 */ val Keyword: typings.angularCompiler.lexerMod.TokenType.Keyword with Double = js.native
     
     @js.native
     sealed trait Number extends TokenType
-    /* 5 */ @js.native
-    object Number extends TopLevel[Number with Double]
+    /* 5 */ val Number: typings.angularCompiler.lexerMod.TokenType.Number with Double = js.native
     
     @js.native
     sealed trait Operator extends TokenType
-    /* 4 */ @js.native
-    object Operator extends TopLevel[Operator with Double]
+    /* 4 */ val Operator: typings.angularCompiler.lexerMod.TokenType.Operator with Double = js.native
     
     @js.native
     sealed trait String extends TokenType
-    /* 3 */ @js.native
-    object String
-      extends TopLevel[typings.angularCompiler.lexerMod.TokenType.String with Double]
+    /* 3 */ val String: typings.angularCompiler.lexerMod.TokenType.String with Double = js.native
   }
+  
+  @JSImport("@angular/compiler/src/expression_parser/lexer", "isIdentifier")
+  @js.native
+  def isIdentifier(input: String): Boolean = js.native
+  
+  @JSImport("@angular/compiler/src/expression_parser/lexer", "isQuote")
+  @js.native
+  def isQuote(code: Double): Boolean = js.native
 }

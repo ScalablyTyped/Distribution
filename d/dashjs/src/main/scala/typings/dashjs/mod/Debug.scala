@@ -1,11 +1,12 @@
 package typings.dashjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Debug extends js.Object {
+trait Debug extends StObject {
   
   def getLogLevel(): LogLevel = js.native
   
@@ -38,39 +39,27 @@ object Debug {
   }
   
   @scala.inline
-  implicit class DebugOps[Self <: Debug] (val x: Self) extends AnyVal {
+  implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetLogLevel(value: () => LogLevel): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLogToBrowserConsole(value: () => Boolean): Self = StObject.set(x, "getLogToBrowserConsole", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLogger(value: () => Logger): Self = StObject.set(x, "getLogger", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLogLevel(value: () => LogLevel): Self = this.set("getLogLevel", js.Any.fromFunction0(value))
+    def setSetCalleeNameVisible(value: Boolean => Unit): Self = StObject.set(x, "setCalleeNameVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLogToBrowserConsole(value: () => Boolean): Self = this.set("getLogToBrowserConsole", js.Any.fromFunction0(value))
+    def setSetLogLevel(value: LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLogger(value: () => Logger): Self = this.set("getLogger", js.Any.fromFunction0(value))
+    def setSetLogTimestampVisible(value: Boolean => Unit): Self = StObject.set(x, "setLogTimestampVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCalleeNameVisible(value: Boolean => Unit): Self = this.set("setCalleeNameVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLogLevel(value: LogLevel => Unit): Self = this.set("setLogLevel", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLogTimestampVisible(value: Boolean => Unit): Self = this.set("setLogTimestampVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetLogToBrowserConsole(value: Boolean => Unit): Self = this.set("setLogToBrowserConsole", js.Any.fromFunction1(value))
+    def setSetLogToBrowserConsole(value: Boolean => Unit): Self = StObject.set(x, "setLogToBrowserConsole", js.Any.fromFunction1(value))
   }
 }

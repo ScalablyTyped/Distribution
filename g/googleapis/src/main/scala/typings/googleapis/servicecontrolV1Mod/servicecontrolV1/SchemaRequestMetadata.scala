@@ -1,5 +1,6 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Metadata about the request.
   */
 @js.native
-trait SchemaRequestMetadata extends js.Object {
+trait SchemaRequestMetadata extends StObject {
   
   /**
     * The IP address of the caller. For caller from internet, this will be
@@ -70,48 +71,36 @@ object SchemaRequestMetadata {
   }
   
   @scala.inline
-  implicit class SchemaRequestMetadataOps[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
+  implicit class SchemaRequestMetadataMutableBuilder[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallerIp(value: String): Self = StObject.set(x, "callerIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallerIpUndefined: Self = StObject.set(x, "callerIp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallerNetwork(value: String): Self = StObject.set(x, "callerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerIp(value: String): Self = this.set("callerIp", value.asInstanceOf[js.Any])
+    def setCallerNetworkUndefined: Self = StObject.set(x, "callerNetwork", js.undefined)
     
     @scala.inline
-    def deleteCallerIp: Self = this.set("callerIp", js.undefined)
+    def setCallerSuppliedUserAgent(value: String): Self = StObject.set(x, "callerSuppliedUserAgent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerNetwork(value: String): Self = this.set("callerNetwork", value.asInstanceOf[js.Any])
+    def setCallerSuppliedUserAgentUndefined: Self = StObject.set(x, "callerSuppliedUserAgent", js.undefined)
     
     @scala.inline
-    def deleteCallerNetwork: Self = this.set("callerNetwork", js.undefined)
+    def setDestinationAttributes(value: SchemaPeer): Self = StObject.set(x, "destinationAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerSuppliedUserAgent(value: String): Self = this.set("callerSuppliedUserAgent", value.asInstanceOf[js.Any])
+    def setDestinationAttributesUndefined: Self = StObject.set(x, "destinationAttributes", js.undefined)
     
     @scala.inline
-    def deleteCallerSuppliedUserAgent: Self = this.set("callerSuppliedUserAgent", js.undefined)
+    def setRequestAttributes(value: SchemaRequest): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationAttributes(value: SchemaPeer): Self = this.set("destinationAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationAttributes: Self = this.set("destinationAttributes", js.undefined)
-    
-    @scala.inline
-    def setRequestAttributes(value: SchemaRequest): Self = this.set("requestAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestAttributes: Self = this.set("requestAttributes", js.undefined)
+    def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
   }
 }

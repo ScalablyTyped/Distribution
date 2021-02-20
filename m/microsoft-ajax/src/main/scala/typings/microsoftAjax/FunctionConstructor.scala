@@ -1,5 +1,6 @@
 package typings.microsoftAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * @see {@link http://msdn.microsoft.com/en-us/library/dd409270(v=vs.100).aspx}
 */
 @js.native
-trait FunctionConstructor extends js.Object {
+trait FunctionConstructor extends StObject {
   
   //#region Extensions
   /**

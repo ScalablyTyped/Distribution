@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISelectionProvider extends js.Object {
+trait ISelectionProvider extends StObject {
   
   def ChangeSelection(rowItem: js.Any, event: js.Any): Unit = js.native
   
@@ -50,56 +51,44 @@ object ISelectionProvider {
   }
   
   @scala.inline
-  implicit class ISelectionProviderOps[Self <: ISelectionProvider] (val x: Self) extends AnyVal {
+  implicit class ISelectionProviderMutableBuilder[Self <: ISelectionProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSelection(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "ChangeSelection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelection(value: js.Any => Double): Self = StObject.set(x, "getSelection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectionIndex(value: js.Any => Double): Self = StObject.set(x, "getSelectionIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeSelection(value: (js.Any, js.Any) => Unit): Self = this.set("ChangeSelection", js.Any.fromFunction2(value))
+    def setIgnoreSelectedItemChanges(value: Boolean): Self = StObject.set(x, "ignoreSelectedItemChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelection(value: js.Any => Double): Self = this.set("getSelection", js.Any.fromFunction1(value))
+    def setLastClickedRow(value: js.Any): Self = StObject.set(x, "lastClickedRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSelectionIndex(value: js.Any => Double): Self = this.set("getSelectionIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIgnoreSelectedItemChanges(value: Boolean): Self = this.set("ignoreSelectedItemChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastClickedRow(value: js.Any): Self = this.set("lastClickedRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPKeyParser(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ICompiledExpression */ js.Any
-    ): Self = this.set("pKeyParser", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "pKeyParser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedIndex(value: Double): Self = this.set("selectedIndex", value.asInstanceOf[js.Any])
+    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItemsVarargs(value: js.Any*): Self = this.set("selectedItems", js.Array(value :_*))
+    def setSelectedItems(value: js.Array[_]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItems(value: js.Array[_]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
+    def setSelectedItemsVarargs(value: js.Any*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
     @scala.inline
-    def setSetSelection(value: (IRow, Boolean) => Unit): Self = this.set("setSelection", js.Any.fromFunction2(value))
+    def setSetSelection(value: (IRow, Boolean) => Unit): Self = StObject.set(x, "setSelection", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToggleSelectAll(value: (Boolean, Boolean, Boolean) => Unit): Self = this.set("toggleSelectAll", js.Any.fromFunction3(value))
+    def setToggleSelectAll(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "toggleSelectAll", js.Any.fromFunction3(value))
   }
 }

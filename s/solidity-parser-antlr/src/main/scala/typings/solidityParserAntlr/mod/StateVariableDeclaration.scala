@@ -1,5 +1,6 @@
 package typings.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,33 +30,21 @@ object StateVariableDeclaration {
   }
   
   @scala.inline
-  implicit class StateVariableDeclarationOps[Self <: StateVariableDeclaration] (val x: Self) extends AnyVal {
+  implicit class StateVariableDeclarationMutableBuilder[Self <: StateVariableDeclaration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVariables(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariablesVarargs(value: VariableDeclaration*): Self = this.set("variables", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariables(value: js.Array[VariableDeclaration]): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitialValue(value: Expression): Self = this.set("initialValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialValue: Self = this.set("initialValue", js.undefined)
+    def setVariablesVarargs(value: VariableDeclaration*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

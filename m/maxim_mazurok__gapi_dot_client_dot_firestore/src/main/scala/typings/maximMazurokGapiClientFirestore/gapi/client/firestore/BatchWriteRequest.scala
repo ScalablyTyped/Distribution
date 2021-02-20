@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchWriteRequest extends js.Object {
+trait BatchWriteRequest extends StObject {
   
   /** Labels associated with this batch write. */
   var labels: js.UndefOr[
@@ -30,37 +31,25 @@ object BatchWriteRequest {
   }
   
   @scala.inline
-  implicit class BatchWriteRequestOps[Self <: BatchWriteRequest] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class BatchWriteRequestMutableBuilder[Self <: BatchWriteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.BatchWriteRequest with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setWritesVarargs(value: Write*): Self = this.set("writes", js.Array(value :_*))
+    def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrites(value: js.Array[Write]): Self = this.set("writes", value.asInstanceOf[js.Any])
+    def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
     
     @scala.inline
-    def deleteWrites: Self = this.set("writes", js.undefined)
+    def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value :_*))
   }
 }

@@ -10,82 +10,142 @@ import typings.meteor.anon.LaunchExternal
 import typings.meteor.anon.Name
 import typings.meteor.anon.Unordered
 import typings.std.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("meteor/tools", JSImport.Namespace)
-@js.native
-object toolsMod extends js.Object {
+object toolsMod {
   
-  var console: Console = js.native
-  
-  def execFileAsync(command: String): js.Any = js.native
-  def execFileAsync(command: String, args: js.UndefOr[scala.Nothing], options: Cwd): js.Any = js.native
-  def execFileAsync(command: String, args: js.Array[_]): js.Any = js.native
-  def execFileAsync(command: String, args: js.Array[_], options: Cwd): js.Any = js.native
-  
-  def execFileSync(command: String): String = js.native
-  def execFileSync(command: String, args: js.UndefOr[scala.Nothing], options: Cwd): String = js.native
-  def execFileSync(command: String, args: js.Array[_]): String = js.native
-  def execFileSync(command: String, args: js.Array[_], options: Cwd): String = js.native
-  
+  @JSImport("meteor/tools", JSImport.Namespace)
   @js.native
-  object App extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object App {
     
+    @JSImport("meteor/tools", "App.accessRule")
+    @js.native
     def accessRule(pattern: String): Unit = js.native
+    @JSImport("meteor/tools", "App.accessRule")
+    @js.native
     def accessRule(pattern: String, options: LaunchExternal): Unit = js.native
     
+    @JSImport("meteor/tools", "App.configurePlugin")
+    @js.native
     def configurePlugin(id: String, config: js.Object): Unit = js.native
     
+    @JSImport("meteor/tools", "App.icons")
+    @js.native
     def icons(icons: js.Object): Unit = js.native
     
+    @JSImport("meteor/tools", "App.info")
+    @js.native
     def info(options: Author): Unit = js.native
     
+    @JSImport("meteor/tools", "App.launchScreens")
+    @js.native
     def launchScreens(launchScreens: js.Object): Unit = js.native
     
+    @JSImport("meteor/tools", "App.setPreference")
+    @js.native
     def setPreference(name: String, value: String): Unit = js.native
+    @JSImport("meteor/tools", "App.setPreference")
+    @js.native
     def setPreference(name: String, value: String, platform: String): Unit = js.native
   }
   
-  @js.native
-  object Assets extends js.Object {
+  object Assets {
     
+    @JSImport("meteor/tools", "Assets.absoluteFilePath")
+    @js.native
     def absoluteFilePath(assetPath: String): String = js.native
     
+    @JSImport("meteor/tools", "Assets.getBinary")
+    @js.native
     def getBinary(assetPath: String): js.UndefOr[EJSON] = js.native
+    @JSImport("meteor/tools", "Assets.getBinary")
+    @js.native
     def getBinary(assetPath: String, asyncCallback: js.Function): js.UndefOr[EJSON] = js.native
     
+    @JSImport("meteor/tools", "Assets.getText")
+    @js.native
     def getText(assetPath: String): js.UndefOr[String] = js.native
+    @JSImport("meteor/tools", "Assets.getText")
+    @js.native
     def getText(assetPath: String, asyncCallback: js.Function): js.UndefOr[String] = js.native
   }
   
-  @js.native
-  object Cordova extends js.Object {
+  object Cordova {
     
+    @JSImport("meteor/tools", "Cordova.depends")
+    @js.native
     def depends(dependencies: StringDictionary[String]): Unit = js.native
   }
   
-  @js.native
-  object Npm extends js.Object {
+  object Npm {
     
+    @JSImport("meteor/tools", "Npm.depends")
+    @js.native
     def depends(dependencies: StringDictionary[String]): Unit = js.native
     
+    @JSImport("meteor/tools", "Npm.require")
+    @js.native
     def require(name: String): js.Any = js.native
   }
   
-  @js.native
-  object Package extends js.Object {
+  object Package {
     
+    @JSImport("meteor/tools", "Package.describe")
+    @js.native
     def describe(options: DebugOnly): Unit = js.native
     
+    @JSImport("meteor/tools", "Package.onTest")
+    @js.native
     def onTest(func: js.Function1[/* api */ typings.meteor.toolsMod.PackageAPI, Unit]): Unit = js.native
     
+    @JSImport("meteor/tools", "Package.onUse")
+    @js.native
     def onUse(func: js.Function1[/* api */ typings.meteor.toolsMod.PackageAPI, Unit]): Unit = js.native
     
+    @JSImport("meteor/tools", "Package.registerBuildPlugin")
+    @js.native
     def registerBuildPlugin(): Unit = js.native
+    @JSImport("meteor/tools", "Package.registerBuildPlugin")
+    @js.native
     def registerBuildPlugin(options: Name): Unit = js.native
   }
+  
+  @JSImport("meteor/tools", "console")
+  @js.native
+  def console: Console = js.native
+  @scala.inline
+  def console_=(x: Console): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("console")(x.asInstanceOf[js.Any])
+  
+  @JSImport("meteor/tools", "execFileAsync")
+  @js.native
+  def execFileAsync(command: String): js.Any = js.native
+  @JSImport("meteor/tools", "execFileAsync")
+  @js.native
+  def execFileAsync(command: String, args: js.UndefOr[scala.Nothing], options: Cwd): js.Any = js.native
+  @JSImport("meteor/tools", "execFileAsync")
+  @js.native
+  def execFileAsync(command: String, args: js.Array[_]): js.Any = js.native
+  @JSImport("meteor/tools", "execFileAsync")
+  @js.native
+  def execFileAsync(command: String, args: js.Array[_], options: Cwd): js.Any = js.native
+  
+  @JSImport("meteor/tools", "execFileSync")
+  @js.native
+  def execFileSync(command: String): String = js.native
+  @JSImport("meteor/tools", "execFileSync")
+  @js.native
+  def execFileSync(command: String, args: js.UndefOr[scala.Nothing], options: Cwd): String = js.native
+  @JSImport("meteor/tools", "execFileSync")
+  @js.native
+  def execFileSync(command: String, args: js.Array[_]): String = js.native
+  @JSImport("meteor/tools", "execFileSync")
+  @js.native
+  def execFileSync(command: String, args: js.Array[_], options: Cwd): String = js.native
   
   @js.native
   trait PackageAPI

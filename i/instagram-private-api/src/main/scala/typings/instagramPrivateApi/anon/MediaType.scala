@@ -3,12 +3,13 @@ package typings.instagramPrivateApi.anon
 import typings.instagramPrivateApi.instagramPrivateApiStrings.CAROUSEL
 import typings.instagramPrivateApi.instagramPrivateApiStrings.PHOTO
 import typings.instagramPrivateApi.instagramPrivateApiStrings.VIDEO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaType extends js.Object {
+trait MediaType extends StObject {
   
   var mediaId: String = js.native
   
@@ -23,27 +24,15 @@ object MediaType {
   }
   
   @scala.inline
-  implicit class MediaTypeOps[Self <: MediaType] (val x: Self) extends AnyVal {
+  implicit class MediaTypeMutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaType(value: PHOTO | VIDEO | CAROUSEL): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMediaId(value: String): Self = this.set("mediaId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: PHOTO | VIDEO | CAROUSEL): Self = this.set("mediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

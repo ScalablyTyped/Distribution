@@ -1,11 +1,12 @@
 package typings.instabugReactnative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Report extends js.Object {
+trait Report extends StObject {
   
   def addFileAttachmentWithData(data: String, filename: String): Unit = js.native
   
@@ -47,48 +48,36 @@ object Report {
   }
   
   @scala.inline
-  implicit class ReportOps[Self <: Report] (val x: Self) extends AnyVal {
+  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFileAttachmentWithData(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFileAttachmentWithUrl(value: (String, String) => Unit): Self = StObject.set(x, "addFileAttachmentWithUrl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppendConsoleLog(value: String => Unit): Self = StObject.set(x, "appendConsoleLog", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFileAttachmentWithData(value: (String, String) => Unit): Self = this.set("addFileAttachmentWithData", js.Any.fromFunction2(value))
+    def setAppendTag(value: String => Unit): Self = StObject.set(x, "appendTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFileAttachmentWithUrl(value: (String, String) => Unit): Self = this.set("addFileAttachmentWithUrl", js.Any.fromFunction2(value))
+    def setLogDebug(value: String => Unit): Self = StObject.set(x, "logDebug", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendConsoleLog(value: String => Unit): Self = this.set("appendConsoleLog", js.Any.fromFunction1(value))
+    def setLogError(value: String => Unit): Self = StObject.set(x, "logError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendTag(value: String => Unit): Self = this.set("appendTag", js.Any.fromFunction1(value))
+    def setLogInfo(value: String => Unit): Self = StObject.set(x, "logInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLogDebug(value: String => Unit): Self = this.set("logDebug", js.Any.fromFunction1(value))
+    def setLogVerbose(value: String => Unit): Self = StObject.set(x, "logVerbose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLogError(value: String => Unit): Self = this.set("logError", js.Any.fromFunction1(value))
+    def setLogWarn(value: String => Unit): Self = StObject.set(x, "logWarn", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLogInfo(value: String => Unit): Self = this.set("logInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLogVerbose(value: String => Unit): Self = this.set("logVerbose", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLogWarn(value: String => Unit): Self = this.set("logWarn", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUserAttribute(value: (String, String) => Unit): Self = this.set("setUserAttribute", js.Any.fromFunction2(value))
+    def setSetUserAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setUserAttribute", js.Any.fromFunction2(value))
   }
 }

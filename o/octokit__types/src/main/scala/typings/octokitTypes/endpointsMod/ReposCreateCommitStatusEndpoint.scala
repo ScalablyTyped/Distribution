@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.error
 import typings.octokitTypes.octokitTypesStrings.failure
 import typings.octokitTypes.octokitTypesStrings.pending
 import typings.octokitTypes.octokitTypesStrings.success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCreateCommitStatusEndpoint extends js.Object {
+trait ReposCreateCommitStatusEndpoint extends StObject {
   
   /**
     * A string label to differentiate this status from the status of other systems.
@@ -48,48 +49,36 @@ object ReposCreateCommitStatusEndpoint {
   }
   
   @scala.inline
-  implicit class ReposCreateCommitStatusEndpointOps[Self <: ReposCreateCommitStatusEndpoint] (val x: Self) extends AnyVal {
+  implicit class ReposCreateCommitStatusEndpointMutableBuilder[Self <: ReposCreateCommitStatusEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSha(value: String): Self = this.set("sha", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: error | failure | pending | success): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setState(value: error | failure | pending | success): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setTarget_url(value: String): Self = StObject.set(x, "target_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
-    
-    @scala.inline
-    def setTarget_url(value: String): Self = this.set("target_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget_url: Self = this.set("target_url", js.undefined)
+    def setTarget_urlUndefined: Self = StObject.set(x, "target_url", js.undefined)
   }
 }

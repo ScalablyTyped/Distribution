@@ -1,5 +1,6 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * as a pre-release check.
   */
 @js.native
-trait SchemaTestSuite extends js.Object {
+trait SchemaTestSuite extends StObject {
   
   /**
     * Collection of test cases associated with the `TestSuite`.
@@ -27,27 +28,15 @@ object SchemaTestSuite {
   }
   
   @scala.inline
-  implicit class SchemaTestSuiteOps[Self <: SchemaTestSuite] (val x: Self) extends AnyVal {
+  implicit class SchemaTestSuiteMutableBuilder[Self <: SchemaTestSuite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTestCases(value: js.Array[SchemaTestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTestCasesVarargs(value: SchemaTestCase*): Self = this.set("testCases", js.Array(value :_*))
-    
-    @scala.inline
-    def setTestCases(value: js.Array[SchemaTestCase]): Self = this.set("testCases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestCases: Self = this.set("testCases", js.undefined)
+    def setTestCasesVarargs(value: SchemaTestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
   }
 }

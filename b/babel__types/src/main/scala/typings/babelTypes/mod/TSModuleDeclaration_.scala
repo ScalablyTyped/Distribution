@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.TSModuleDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,39 +38,27 @@ object TSModuleDeclaration_ {
   }
   
   @scala.inline
-  implicit class TSModuleDeclaration_Ops[Self <: TSModuleDeclaration_] (val x: Self) extends AnyVal {
+  implicit class TSModuleDeclaration_MutableBuilder[Self <: TSModuleDeclaration_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: TSModuleBlock_ | TSModuleDeclaration_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeclareNull: Self = StObject.set(x, "declare", null)
     
     @scala.inline
-    def setBody(value: TSModuleBlock_ | TSModuleDeclaration_): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Identifier_ | StringLiteral_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setGlobalNull: Self = StObject.set(x, "global", null)
     
     @scala.inline
-    def setType(value: TSModuleDeclaration): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setId(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeclareNull: Self = this.set("declare", null)
-    
-    @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGlobalNull: Self = this.set("global", null)
+    def setType(value: TSModuleDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

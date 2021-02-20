@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoContentDetailsRegionRestriction extends js.Object {
+trait VideoContentDetailsRegionRestriction extends StObject {
   
   /**
     * A list of region codes that identify countries where the video is viewable. If this property is present and a country is not listed in its value, then the video is blocked from
@@ -28,36 +29,24 @@ object VideoContentDetailsRegionRestriction {
   }
   
   @scala.inline
-  implicit class VideoContentDetailsRegionRestrictionOps[Self <: VideoContentDetailsRegionRestriction] (val x: Self) extends AnyVal {
+  implicit class VideoContentDetailsRegionRestrictionMutableBuilder[Self <: VideoContentDetailsRegionRestriction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedVarargs(value: String*): Self = this.set("allowed", js.Array(value :_*))
+    def setBlocked(value: js.Array[String]): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowed(value: js.Array[String]): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
     @scala.inline
-    def deleteAllowed: Self = this.set("allowed", js.undefined)
-    
-    @scala.inline
-    def setBlockedVarargs(value: String*): Self = this.set("blocked", js.Array(value :_*))
-    
-    @scala.inline
-    def setBlocked(value: js.Array[String]): Self = this.set("blocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlocked: Self = this.set("blocked", js.undefined)
+    def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value :_*))
   }
 }

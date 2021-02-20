@@ -1,19 +1,21 @@
 package typings.instagramPrivateApi
 
+import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
 import typings.instagramPrivateApi.feedMod.Feed
 import typings.instagramPrivateApi.musicTrendingFeedResponseMod.MusicTrendingFeedResponseItemsItem
 import typings.instagramPrivateApi.musicTrendingFeedResponseMod.MusicTrendingFeedResponseRootObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/feeds/music-trending.feed", JSImport.Namespace)
-@js.native
-object musicTrendingFeedMod extends js.Object {
+object musicTrendingFeedMod {
   
+  @JSImport("instagram-private-api/dist/feeds/music-trending.feed", "MusicTrendingFeed")
   @js.native
-  class MusicTrendingFeed () extends Feed[MusicTrendingFeedResponseRootObject, MusicTrendingFeedResponseItemsItem] {
+  class MusicTrendingFeed protected () extends Feed[MusicTrendingFeedResponseRootObject, MusicTrendingFeedResponseItemsItem] {
+    def this(client: IgApiClient) = this()
     
     var nextCursor: js.UndefOr[String] = js.native
     

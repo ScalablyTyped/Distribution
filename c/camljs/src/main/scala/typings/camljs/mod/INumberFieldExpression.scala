@@ -1,11 +1,12 @@
 package typings.camljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INumberFieldExpression extends js.Object {
+trait INumberFieldExpression extends StObject {
   
   /** Checks whether the value of the field is equal to the specified value */
   def EqualTo(value: Double): IExpression = js.native
@@ -53,45 +54,33 @@ object INumberFieldExpression {
   }
   
   @scala.inline
-  implicit class INumberFieldExpressionOps[Self <: INumberFieldExpression] (val x: Self) extends AnyVal {
+  implicit class INumberFieldExpressionMutableBuilder[Self <: INumberFieldExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEqualTo(value: Double => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGreaterThan(value: Double => IExpression): Self = StObject.set(x, "GreaterThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGreaterThanOrEqualTo(value: Double => IExpression): Self = StObject.set(x, "GreaterThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEqualTo(value: Double => IExpression): Self = this.set("EqualTo", js.Any.fromFunction1(value))
+    def setIn(value: js.Array[Double] => IExpression): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGreaterThan(value: Double => IExpression): Self = this.set("GreaterThan", js.Any.fromFunction1(value))
+    def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGreaterThanOrEqualTo(value: Double => IExpression): Self = this.set("GreaterThanOrEqualTo", js.Any.fromFunction1(value))
+    def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIn(value: js.Array[Double] => IExpression): Self = this.set("In", js.Any.fromFunction1(value))
+    def setLessThan(value: Double => IExpression): Self = StObject.set(x, "LessThan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNotNull(value: () => IExpression): Self = this.set("IsNotNull", js.Any.fromFunction0(value))
+    def setLessThanOrEqualTo(value: Double => IExpression): Self = StObject.set(x, "LessThanOrEqualTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNull(value: () => IExpression): Self = this.set("IsNull", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLessThan(value: Double => IExpression): Self = this.set("LessThan", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLessThanOrEqualTo(value: Double => IExpression): Self = this.set("LessThanOrEqualTo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNotEqualTo(value: Double => IExpression): Self = this.set("NotEqualTo", js.Any.fromFunction1(value))
+    def setNotEqualTo(value: Double => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
   }
 }

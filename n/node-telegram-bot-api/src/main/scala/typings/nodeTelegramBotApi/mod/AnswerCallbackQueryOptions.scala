@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnswerCallbackQueryOptions extends js.Object {
+trait AnswerCallbackQueryOptions extends StObject {
   
   var cache_time: js.UndefOr[Double] = js.native
   
@@ -26,45 +27,33 @@ object AnswerCallbackQueryOptions {
   }
   
   @scala.inline
-  implicit class AnswerCallbackQueryOptionsOps[Self <: AnswerCallbackQueryOptions] (val x: Self) extends AnyVal {
+  implicit class AnswerCallbackQueryOptionsMutableBuilder[Self <: AnswerCallbackQueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCache_time(value: Double): Self = StObject.set(x, "cache_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCache_timeUndefined: Self = StObject.set(x, "cache_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback_query_id(value: String): Self = StObject.set(x, "callback_query_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback_query_id(value: String): Self = this.set("callback_query_id", value.asInstanceOf[js.Any])
+    def setShow_alert(value: Boolean): Self = StObject.set(x, "show_alert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCache_time(value: Double): Self = this.set("cache_time", value.asInstanceOf[js.Any])
+    def setShow_alertUndefined: Self = StObject.set(x, "show_alert", js.undefined)
     
     @scala.inline
-    def deleteCache_time: Self = this.set("cache_time", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_alert(value: Boolean): Self = this.set("show_alert", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteShow_alert: Self = this.set("show_alert", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

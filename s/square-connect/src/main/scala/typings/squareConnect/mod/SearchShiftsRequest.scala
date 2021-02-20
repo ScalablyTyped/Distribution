@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchShiftsRequest")
 @js.native
-class SearchShiftsRequest () extends js.Object {
+class SearchShiftsRequest () extends StObject {
   
   /**
     * opaque cursor for fetching the next page.

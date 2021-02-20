@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Usb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UsbControlTransferType extends js.Object
+sealed trait UsbControlTransferType extends StObject
 /** Defines constants that indicate the type of USB control transfer: standard, class, or vendor. */
 @JSGlobal("Windows.Devices.Usb.UsbControlTransferType")
 @js.native
-object UsbControlTransferType extends js.Object {
+object UsbControlTransferType extends StObject {
   
   /** Indicates a class-specific USB control request described by a specific device class specification. */
   @js.native

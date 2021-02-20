@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'x' | 'scale' | 'offset' | 'mean' | 'variance'> */
 @js.native
-trait FusedBatchNormInputs extends js.Object {
+trait FusedBatchNormInputs extends StObject {
   
   var mean: js.UndefOr[js.Any] = js.native
   
@@ -27,48 +28,36 @@ object FusedBatchNormInputs {
   }
   
   @scala.inline
-  implicit class FusedBatchNormInputsOps[Self <: FusedBatchNormInputs] (val x: Self) extends AnyVal {
+  implicit class FusedBatchNormInputsMutableBuilder[Self <: FusedBatchNormInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMean(value: js.Any): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeanUndefined: Self = StObject.set(x, "mean", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMean(value: js.Any): Self = this.set("mean", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMean: Self = this.set("mean", js.undefined)
+    def setScale(value: js.Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Any): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setVariance(value: js.Any): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: js.Any): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariance(value: js.Any): Self = this.set("variance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariance: Self = this.set("variance", js.undefined)
-    
-    @scala.inline
-    def setX(value: js.Any): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,21 +34,9 @@ object XPackageStructureCreator {
   }
   
   @scala.inline
-  implicit class XPackageStructureCreatorOps[Self <: XPackageStructureCreator] (val x: Self) extends AnyVal {
+  implicit class XPackageStructureCreatorMutableBuilder[Self <: XPackageStructureCreator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConvertToPackage(value: (String, XOutputStream) => Unit): Self = this.set("convertToPackage", js.Any.fromFunction2(value))
+    def setConvertToPackage(value: (String, XOutputStream) => Unit): Self = StObject.set(x, "convertToPackage", js.Any.fromFunction2(value))
   }
 }

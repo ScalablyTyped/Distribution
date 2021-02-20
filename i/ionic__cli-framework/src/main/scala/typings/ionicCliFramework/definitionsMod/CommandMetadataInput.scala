@@ -1,11 +1,12 @@
 package typings.ionicCliFramework.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandMetadataInput extends js.Object {
+trait CommandMetadataInput extends StObject {
   
   var name: String = js.native
   
@@ -24,39 +25,27 @@ object CommandMetadataInput {
   }
   
   @scala.inline
-  implicit class CommandMetadataInputOps[Self <: CommandMetadataInput] (val x: Self) extends AnyVal {
+  implicit class CommandMetadataInputMutableBuilder[Self <: CommandMetadataInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def deletePrivate: Self = this.set("private", js.undefined)
-    
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = this.set("validators", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = this.set("validators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

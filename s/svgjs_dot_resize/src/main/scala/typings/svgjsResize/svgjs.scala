@@ -1,15 +1,14 @@
 package typings.svgjsResize
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("svgjs")
-@js.native
-object svgjs extends js.Object {
+object svgjs {
   
   @js.native
-  trait Element extends js.Object {
+  trait Element extends StObject {
     
     def resize(): Element = js.native
     def resize(obj: js.Object): Element = js.native

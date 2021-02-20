@@ -26,12 +26,13 @@ import typings.activexOffice.Office.SignatureSet
 import typings.activexOffice.Office.UserPermission
 import typings.activexOffice.Office.WorkflowTasks
 import typings.activexOffice.Office.WorkflowTemplates
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   def AcceptAllRevisions(): Unit = js.native
   

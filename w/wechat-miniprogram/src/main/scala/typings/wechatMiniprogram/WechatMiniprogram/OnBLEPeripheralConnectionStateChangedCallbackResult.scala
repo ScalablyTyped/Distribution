@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnBLEPeripheralConnectionStateChangedCallbackResult extends js.Object {
+trait OnBLEPeripheralConnectionStateChangedCallbackResult extends StObject {
   
   /** 连接目前状态 */
   var connected: Boolean = js.native
@@ -25,27 +26,15 @@ object OnBLEPeripheralConnectionStateChangedCallbackResult {
   }
   
   @scala.inline
-  implicit class OnBLEPeripheralConnectionStateChangedCallbackResultOps[Self <: OnBLEPeripheralConnectionStateChangedCallbackResult] (val x: Self) extends AnyVal {
+  implicit class OnBLEPeripheralConnectionStateChangedCallbackResultMutableBuilder[Self <: OnBLEPeripheralConnectionStateChangedCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnected(value: Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerId(value: String): Self = this.set("serverId", value.asInstanceOf[js.Any])
+    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
   }
 }

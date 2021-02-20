@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricFilterMatchRecord extends js.Object {
+trait MetricFilterMatchRecord extends StObject {
   
   /**
     * The raw event data.
@@ -31,36 +32,24 @@ object MetricFilterMatchRecord {
   }
   
   @scala.inline
-  implicit class MetricFilterMatchRecordOps[Self <: MetricFilterMatchRecord] (val x: Self) extends AnyVal {
+  implicit class MetricFilterMatchRecordMutableBuilder[Self <: MetricFilterMatchRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventMessage(value: EventMessage): Self = StObject.set(x, "eventMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventMessageUndefined: Self = StObject.set(x, "eventMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventNumber(value: EventNumber): Self = StObject.set(x, "eventNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventMessage(value: EventMessage): Self = this.set("eventMessage", value.asInstanceOf[js.Any])
+    def setEventNumberUndefined: Self = StObject.set(x, "eventNumber", js.undefined)
     
     @scala.inline
-    def deleteEventMessage: Self = this.set("eventMessage", js.undefined)
+    def setExtractedValues(value: ExtractedValues): Self = StObject.set(x, "extractedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventNumber(value: EventNumber): Self = this.set("eventNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventNumber: Self = this.set("eventNumber", js.undefined)
-    
-    @scala.inline
-    def setExtractedValues(value: ExtractedValues): Self = this.set("extractedValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtractedValues: Self = this.set("extractedValues", js.undefined)
+    def setExtractedValuesUndefined: Self = StObject.set(x, "extractedValues", js.undefined)
   }
 }

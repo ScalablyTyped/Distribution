@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ToneChatScore. */
 @js.native
-trait ToneChatScore extends js.Object {
+trait ToneChatScore extends StObject {
   
   /** The score for the tone in the range of 0.5 to 1. A score greater than 0.75 indicates a high likelihood that the tone is perceived in the utterance. */
   var score: Double = js.native
@@ -26,27 +27,15 @@ object ToneChatScore {
   }
   
   @scala.inline
-  implicit class ToneChatScoreOps[Self <: ToneChatScore] (val x: Self) extends AnyVal {
+  implicit class ToneChatScoreMutableBuilder[Self <: ToneChatScore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTone_id(value: String): Self = StObject.set(x, "tone_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTone_id(value: String): Self = this.set("tone_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTone_name(value: String): Self = this.set("tone_name", value.asInstanceOf[js.Any])
+    def setTone_name(value: String): Self = StObject.set(x, "tone_name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.apiextensions.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceValidation is a list of validation methods for CustomResources.
   */
 @js.native
-trait CustomResourceValidation extends js.Object {
+trait CustomResourceValidation extends StObject {
   
   /**
     * openAPIV3Schema is the OpenAPI v3 schema to use for validation and pruning.
@@ -25,24 +26,12 @@ object CustomResourceValidation {
   }
   
   @scala.inline
-  implicit class CustomResourceValidationOps[Self <: CustomResourceValidation] (val x: Self) extends AnyVal {
+  implicit class CustomResourceValidationMutableBuilder[Self <: CustomResourceValidation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenAPIV3Schema(value: Input[JSONSchemaProps]): Self = StObject.set(x, "openAPIV3Schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenAPIV3Schema(value: Input[JSONSchemaProps]): Self = this.set("openAPIV3Schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenAPIV3Schema: Self = this.set("openAPIV3Schema", js.undefined)
+    def setOpenAPIV3SchemaUndefined: Self = StObject.set(x, "openAPIV3Schema", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMenuController extends js.Object {
+trait IMenuController extends StObject {
   
   def close(): Unit = js.native
   def close(skipFocus: js.UndefOr[scala.Nothing], closeOpts: js.Object): Unit = js.native

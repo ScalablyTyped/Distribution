@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3InitiateRestoreObjectOperation extends js.Object {
+trait S3InitiateRestoreObjectOperation extends StObject {
   
   /**
     * 
@@ -26,30 +27,18 @@ object S3InitiateRestoreObjectOperation {
   }
   
   @scala.inline
-  implicit class S3InitiateRestoreObjectOperationOps[Self <: S3InitiateRestoreObjectOperation] (val x: Self) extends AnyVal {
+  implicit class S3InitiateRestoreObjectOperationMutableBuilder[Self <: S3InitiateRestoreObjectOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationInDays(value: S3ExpirationInDays): Self = StObject.set(x, "ExpirationInDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationInDaysUndefined: Self = StObject.set(x, "ExpirationInDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlacierJobTier(value: S3GlacierJobTier): Self = StObject.set(x, "GlacierJobTier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationInDays(value: S3ExpirationInDays): Self = this.set("ExpirationInDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpirationInDays: Self = this.set("ExpirationInDays", js.undefined)
-    
-    @scala.inline
-    def setGlacierJobTier(value: S3GlacierJobTier): Self = this.set("GlacierJobTier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlacierJobTier: Self = this.set("GlacierJobTier", js.undefined)
+    def setGlacierJobTierUndefined: Self = StObject.set(x, "GlacierJobTier", js.undefined)
   }
 }

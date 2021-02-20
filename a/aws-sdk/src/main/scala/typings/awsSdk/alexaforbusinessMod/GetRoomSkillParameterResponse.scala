@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRoomSkillParameterResponse extends js.Object {
+trait GetRoomSkillParameterResponse extends StObject {
   
   /**
     * The details of the room skill parameter requested. Required.
@@ -21,24 +22,12 @@ object GetRoomSkillParameterResponse {
   }
   
   @scala.inline
-  implicit class GetRoomSkillParameterResponseOps[Self <: GetRoomSkillParameterResponse] (val x: Self) extends AnyVal {
+  implicit class GetRoomSkillParameterResponseMutableBuilder[Self <: GetRoomSkillParameterResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoomSkillParameter(value: RoomSkillParameter): Self = StObject.set(x, "RoomSkillParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRoomSkillParameter(value: RoomSkillParameter): Self = this.set("RoomSkillParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoomSkillParameter: Self = this.set("RoomSkillParameter", js.undefined)
+    def setRoomSkillParameterUndefined: Self = StObject.set(x, "RoomSkillParameter", js.undefined)
   }
 }

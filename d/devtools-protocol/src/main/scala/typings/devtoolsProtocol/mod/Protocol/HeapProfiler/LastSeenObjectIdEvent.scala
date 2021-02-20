@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LastSeenObjectIdEvent extends js.Object {
+trait LastSeenObjectIdEvent extends StObject {
   
   var lastSeenObjectId: integer = js.native
   
@@ -21,24 +22,12 @@ object LastSeenObjectIdEvent {
   }
   
   @scala.inline
-  implicit class LastSeenObjectIdEventOps[Self <: LastSeenObjectIdEvent] (val x: Self) extends AnyVal {
+  implicit class LastSeenObjectIdEventMutableBuilder[Self <: LastSeenObjectIdEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastSeenObjectId(value: integer): Self = StObject.set(x, "lastSeenObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLastSeenObjectId(value: integer): Self = this.set("lastSeenObjectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

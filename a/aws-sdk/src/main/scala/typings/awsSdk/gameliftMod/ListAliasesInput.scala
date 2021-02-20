@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAliasesInput extends js.Object {
+trait ListAliasesInput extends StObject {
   
   /**
     * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
@@ -36,42 +37,30 @@ object ListAliasesInput {
   }
   
   @scala.inline
-  implicit class ListAliasesInputOps[Self <: ListAliasesInput] (val x: Self) extends AnyVal {
+  implicit class ListAliasesInputMutableBuilder[Self <: ListAliasesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: PositiveInteger): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRoutingStrategyType(value: RoutingStrategyType): Self = StObject.set(x, "RoutingStrategyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NonEmptyString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRoutingStrategyType(value: RoutingStrategyType): Self = this.set("RoutingStrategyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutingStrategyType: Self = this.set("RoutingStrategyType", js.undefined)
+    def setRoutingStrategyTypeUndefined: Self = StObject.set(x, "RoutingStrategyType", js.undefined)
   }
 }

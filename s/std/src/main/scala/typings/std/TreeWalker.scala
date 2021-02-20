@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The nodes of a document subtree and a position within them. */
 @js.native
-trait TreeWalker extends js.Object {
+trait TreeWalker extends StObject {
   
   var currentNode: Node = js.native
   
@@ -50,54 +51,42 @@ object TreeWalker {
   }
   
   @scala.inline
-  implicit class TreeWalkerOps[Self <: TreeWalker] (val x: Self) extends AnyVal {
+  implicit class TreeWalkerMutableBuilder[Self <: TreeWalker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentNode(value: Node): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilter(value: NodeFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterNull: Self = StObject.set(x, "filter", null)
     
     @scala.inline
-    def setCurrentNode(value: Node): Self = this.set("currentNode", value.asInstanceOf[js.Any])
+    def setFirstChild(value: () => Node | Null): Self = StObject.set(x, "firstChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstChild(value: () => Node | Null): Self = this.set("firstChild", js.Any.fromFunction0(value))
+    def setLastChild(value: () => Node | Null): Self = StObject.set(x, "lastChild", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLastChild(value: () => Node | Null): Self = this.set("lastChild", js.Any.fromFunction0(value))
+    def setNextNode(value: () => Node | Null): Self = StObject.set(x, "nextNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextNode(value: () => Node | Null): Self = this.set("nextNode", js.Any.fromFunction0(value))
+    def setNextSibling(value: () => Node | Null): Self = StObject.set(x, "nextSibling", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextSibling(value: () => Node | Null): Self = this.set("nextSibling", js.Any.fromFunction0(value))
+    def setParentNode(value: () => Node | Null): Self = StObject.set(x, "parentNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParentNode(value: () => Node | Null): Self = this.set("parentNode", js.Any.fromFunction0(value))
+    def setPreviousNode(value: () => Node | Null): Self = StObject.set(x, "previousNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPreviousNode(value: () => Node | Null): Self = this.set("previousNode", js.Any.fromFunction0(value))
+    def setPreviousSibling(value: () => Node | Null): Self = StObject.set(x, "previousSibling", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPreviousSibling(value: () => Node | Null): Self = this.set("previousSibling", js.Any.fromFunction0(value))
+    def setRoot(value: Node): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: Node): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWhatToShow(value: Double): Self = this.set("whatToShow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilter(value: NodeFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilterNull: Self = this.set("filter", null)
+    def setWhatToShow(value: Double): Self = StObject.set(x, "whatToShow", value.asInstanceOf[js.Any])
   }
 }

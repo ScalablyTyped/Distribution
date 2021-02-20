@@ -1,5 +1,6 @@
 package typings.googleapis.speechV1Mod.speechV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `google::longrunning::Operations` service.
   */
 @js.native
-trait SchemaLongRunningRecognizeResponse extends js.Object {
+trait SchemaLongRunningRecognizeResponse extends StObject {
   
   /**
     * Output only. Sequential list of transcription results corresponding to
@@ -29,27 +30,15 @@ object SchemaLongRunningRecognizeResponse {
   }
   
   @scala.inline
-  implicit class SchemaLongRunningRecognizeResponseOps[Self <: SchemaLongRunningRecognizeResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaLongRunningRecognizeResponseMutableBuilder[Self <: SchemaLongRunningRecognizeResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResults(value: js.Array[SchemaSpeechRecognitionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultsVarargs(value: SchemaSpeechRecognitionResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[SchemaSpeechRecognitionResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: SchemaSpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

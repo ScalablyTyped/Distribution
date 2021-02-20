@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LogicalTable extends js.Object {
+trait LogicalTable extends StObject {
   
   /**
     * A display name for the logical table.
@@ -31,33 +32,21 @@ object LogicalTable {
   }
   
   @scala.inline
-  implicit class LogicalTableOps[Self <: LogicalTable] (val x: Self) extends AnyVal {
+  implicit class LogicalTableMutableBuilder[Self <: LogicalTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: LogicalTableAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataTransforms(value: TransformOperationList): Self = StObject.set(x, "DataTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataTransformsUndefined: Self = StObject.set(x, "DataTransforms", js.undefined)
     
     @scala.inline
-    def setAlias(value: LogicalTableAlias): Self = this.set("Alias", value.asInstanceOf[js.Any])
+    def setDataTransformsVarargs(value: TransformOperation*): Self = StObject.set(x, "DataTransforms", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: LogicalTableSource): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataTransformsVarargs(value: TransformOperation*): Self = this.set("DataTransforms", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataTransforms(value: TransformOperationList): Self = this.set("DataTransforms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataTransforms: Self = this.set("DataTransforms", js.undefined)
+    def setSource(value: LogicalTableSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

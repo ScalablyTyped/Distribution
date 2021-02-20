@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactGetItemsInput extends js.Object {
+trait TransactGetItemsInput extends StObject {
   
   /**
     * A value of TOTAL causes consumed capacity information to be returned, and a value of NONE prevents that information from being returned. No other value is valid.
@@ -26,30 +27,18 @@ object TransactGetItemsInput {
   }
   
   @scala.inline
-  implicit class TransactGetItemsInputOps[Self <: TransactGetItemsInput] (val x: Self) extends AnyVal {
+  implicit class TransactGetItemsInputMutableBuilder[Self <: TransactGetItemsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransactItems(value: TransactGetItemList): Self = StObject.set(x, "TransactItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactItemsVarargs(value: TransactGetItem*): Self = this.set("TransactItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransactItems(value: TransactGetItemList): Self = this.set("TransactItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+    def setTransactItemsVarargs(value: TransactGetItem*): Self = StObject.set(x, "TransactItems", js.Array(value :_*))
   }
 }

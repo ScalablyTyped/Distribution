@@ -10,16 +10,16 @@ import typings.babylonjs.smartArrayMod.SmartArrayNoDuplicate
 import typings.babylonjs.spriteManagerMod.ISpriteManager
 import typings.babylonjs.subMeshMod.SubMesh
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Rendering/renderingGroup", JSImport.Namespace)
-@js.native
-object renderingGroupMod extends js.Object {
+object renderingGroupMod {
   
+  @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup")
   @js.native
-  class RenderingGroup protected () extends js.Object {
+  class RenderingGroup protected () extends StObject {
     /**
       * Creates a new rendering group.
       * @param index The rendering group index
@@ -163,10 +163,17 @@ object renderingGroupMod extends js.Object {
     def transparentSortCompareFn_=(value: Nullable[js.Function2[/* a */ SubMesh, /* b */ SubMesh, Double]]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object RenderingGroup extends js.Object {
+  object RenderingGroup {
     
-    var _zeroVector: js.Any = js.native
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup._zeroVector")
+    @js.native
+    def _zeroVector: js.Any = js.native
+    @scala.inline
+    def _zeroVector_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_zeroVector")(x.asInstanceOf[js.Any])
     
     /**
       * Build in function which can be applied to ensure meshes of a special queue (opaque, alpha test, transparent)
@@ -176,6 +183,8 @@ object renderingGroupMod extends js.Object {
       * @param b The second submesh
       * @returns The result of the comparison
       */
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.backToFrontSortCompare")
+    @js.native
     def backToFrontSortCompare(a: SubMesh, b: SubMesh): Double = js.native
     
     /**
@@ -186,6 +195,8 @@ object renderingGroupMod extends js.Object {
       * @param b The second submesh
       * @returns The result of the comparison
       */
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.defaultTransparentSortCompare")
+    @js.native
     def defaultTransparentSortCompare(a: SubMesh, b: SubMesh): Double = js.native
     
     /**
@@ -196,6 +207,8 @@ object renderingGroupMod extends js.Object {
       * @param b The second submesh
       * @returns The result of the comparison
       */
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.frontToBackSortCompare")
+    @js.native
     def frontToBackSortCompare(a: SubMesh, b: SubMesh): Double = js.native
     
     /**
@@ -205,12 +218,20 @@ object renderingGroupMod extends js.Object {
       * @param cameraPosition The camera position use to preprocess the submeshes to help sorting
       * @param transparent Specifies to activate blending if true
       */
-    var renderSorted: js.Any = js.native
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.renderSorted")
+    @js.native
+    def renderSorted: js.Any = js.native
+    @scala.inline
+    def renderSorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSorted")(x.asInstanceOf[js.Any])
     
     /**
       * Renders the submeshes in the order they were dispatched (no sort applied).
       * @param subMeshes The submeshes to render
       */
-    var renderUnsorted: js.Any = js.native
+    @JSImport("babylonjs/Rendering/renderingGroup", "RenderingGroup.renderUnsorted")
+    @js.native
+    def renderUnsorted: js.Any = js.native
+    @scala.inline
+    def renderUnsorted_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderUnsorted")(x.asInstanceOf[js.Any])
   }
 }

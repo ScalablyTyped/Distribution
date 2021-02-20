@@ -1,5 +1,6 @@
 package typings.sinon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,30 +45,18 @@ object SinonArrayMatcher {
   }
   
   @scala.inline
-  implicit class SinonArrayMatcherOps[Self <: SinonArrayMatcher] (val x: Self) extends AnyVal {
+  implicit class SinonArrayMatcherMutableBuilder[Self <: SinonArrayMatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: js.Array[_] => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeepEquals(value: js.Array[_] => SinonMatcher): Self = StObject.set(x, "deepEquals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndsWith(value: js.Array[_] => SinonMatcher): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContains(value: js.Array[_] => SinonMatcher): Self = this.set("contains", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDeepEquals(value: js.Array[_] => SinonMatcher): Self = this.set("deepEquals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEndsWith(value: js.Array[_] => SinonMatcher): Self = this.set("endsWith", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartsWith(value: js.Array[_] => SinonMatcher): Self = this.set("startsWith", js.Any.fromFunction1(value))
+    def setStartsWith(value: js.Array[_] => SinonMatcher): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
   }
 }

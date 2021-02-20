@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.vsoNodeApi.galleryInterfacesMod.ExtensionIdentifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstalledExtensionQuery extends js.Object {
+trait InstalledExtensionQuery extends StObject {
   
   var assetTypes: js.Array[String] = js.native
   
@@ -21,30 +22,18 @@ object InstalledExtensionQuery {
   }
   
   @scala.inline
-  implicit class InstalledExtensionQueryOps[Self <: InstalledExtensionQuery] (val x: Self) extends AnyVal {
+  implicit class InstalledExtensionQueryMutableBuilder[Self <: InstalledExtensionQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetTypes(value: js.Array[String]): Self = StObject.set(x, "assetTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMonikers(value: js.Array[ExtensionIdentifier]): Self = StObject.set(x, "monikers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetTypesVarargs(value: String*): Self = this.set("assetTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssetTypes(value: js.Array[String]): Self = this.set("assetTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMonikersVarargs(value: ExtensionIdentifier*): Self = this.set("monikers", js.Array(value :_*))
-    
-    @scala.inline
-    def setMonikers(value: js.Array[ExtensionIdentifier]): Self = this.set("monikers", value.asInstanceOf[js.Any])
+    def setMonikersVarargs(value: ExtensionIdentifier*): Self = StObject.set(x, "monikers", js.Array(value :_*))
   }
 }

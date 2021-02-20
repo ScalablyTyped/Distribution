@@ -1,11 +1,12 @@
 package typings.iitc.iitctypesMod.IITC
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalDataCore extends js.Object {
+trait PortalDataCore extends StObject {
   
   var latE6: Double = js.native
   
@@ -22,27 +23,15 @@ object PortalDataCore {
   }
   
   @scala.inline
-  implicit class PortalDataCoreOps[Self <: PortalDataCore] (val x: Self) extends AnyVal {
+  implicit class PortalDataCoreMutableBuilder[Self <: PortalDataCore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLatE6(value: Double): Self = StObject.set(x, "latE6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLngE6(value: Double): Self = StObject.set(x, "lngE6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLatE6(value: Double): Self = this.set("latE6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLngE6(value: Double): Self = this.set("lngE6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTeam(value: String): Self = this.set("team", value.asInstanceOf[js.Any])
+    def setTeam(value: String): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
   }
 }

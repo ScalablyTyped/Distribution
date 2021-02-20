@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterInfo extends js.Object {
+trait ClusterInfo extends StObject {
   
   /**
     * 
@@ -132,126 +133,114 @@ object ClusterInfo {
   }
   
   @scala.inline
-  implicit class ClusterInfoOps[Self <: ClusterInfo] (val x: Self) extends AnyVal {
+  implicit class ClusterInfoMutableBuilder[Self <: ClusterInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveOperationArn(value: string): Self = StObject.set(x, "ActiveOperationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveOperationArnUndefined: Self = StObject.set(x, "ActiveOperationArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = StObject.set(x, "BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveOperationArn(value: string): Self = this.set("ActiveOperationArn", value.asInstanceOf[js.Any])
+    def setBrokerNodeGroupInfoUndefined: Self = StObject.set(x, "BrokerNodeGroupInfo", js.undefined)
     
     @scala.inline
-    def deleteActiveOperationArn: Self = this.set("ActiveOperationArn", js.undefined)
+    def setClientAuthentication(value: ClientAuthentication): Self = StObject.set(x, "ClientAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = this.set("BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
+    def setClientAuthenticationUndefined: Self = StObject.set(x, "ClientAuthentication", js.undefined)
     
     @scala.inline
-    def deleteBrokerNodeGroupInfo: Self = this.set("BrokerNodeGroupInfo", js.undefined)
+    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAuthentication(value: ClientAuthentication): Self = this.set("ClientAuthentication", value.asInstanceOf[js.Any])
+    def setClusterArnUndefined: Self = StObject.set(x, "ClusterArn", js.undefined)
     
     @scala.inline
-    def deleteClientAuthentication: Self = this.set("ClientAuthentication", js.undefined)
+    def setClusterName(value: string): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterArn(value: string): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    def setClusterNameUndefined: Self = StObject.set(x, "ClusterName", js.undefined)
     
     @scala.inline
-    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterName(value: string): Self = this.set("ClusterName", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteClusterName: Self = this.set("ClusterName", js.undefined)
+    def setCurrentBrokerSoftwareInfo(value: BrokerSoftwareInfo): Self = StObject.set(x, "CurrentBrokerSoftwareInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: timestampIso8601): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setCurrentBrokerSoftwareInfoUndefined: Self = StObject.set(x, "CurrentBrokerSoftwareInfo", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setCurrentVersion(value: string): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentBrokerSoftwareInfo(value: BrokerSoftwareInfo): Self = this.set("CurrentBrokerSoftwareInfo", value.asInstanceOf[js.Any])
+    def setCurrentVersionUndefined: Self = StObject.set(x, "CurrentVersion", js.undefined)
     
     @scala.inline
-    def deleteCurrentBrokerSoftwareInfo: Self = this.set("CurrentBrokerSoftwareInfo", js.undefined)
+    def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "EncryptionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: string): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    def setEncryptionInfoUndefined: Self = StObject.set(x, "EncryptionInfo", js.undefined)
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("CurrentVersion", js.undefined)
+    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionInfo(value: EncryptionInfo): Self = this.set("EncryptionInfo", value.asInstanceOf[js.Any])
+    def setEnhancedMonitoringUndefined: Self = StObject.set(x, "EnhancedMonitoring", js.undefined)
     
     @scala.inline
-    def deleteEncryptionInfo: Self = this.set("EncryptionInfo", js.undefined)
+    def setLoggingInfo(value: LoggingInfo): Self = StObject.set(x, "LoggingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnhancedMonitoring(value: EnhancedMonitoring): Self = this.set("EnhancedMonitoring", value.asInstanceOf[js.Any])
+    def setLoggingInfoUndefined: Self = StObject.set(x, "LoggingInfo", js.undefined)
     
     @scala.inline
-    def deleteEnhancedMonitoring: Self = this.set("EnhancedMonitoring", js.undefined)
+    def setNumberOfBrokerNodes(value: integer): Self = StObject.set(x, "NumberOfBrokerNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingInfo(value: LoggingInfo): Self = this.set("LoggingInfo", value.asInstanceOf[js.Any])
+    def setNumberOfBrokerNodesUndefined: Self = StObject.set(x, "NumberOfBrokerNodes", js.undefined)
     
     @scala.inline
-    def deleteLoggingInfo: Self = this.set("LoggingInfo", js.undefined)
+    def setOpenMonitoring(value: OpenMonitoring): Self = StObject.set(x, "OpenMonitoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfBrokerNodes(value: integer): Self = this.set("NumberOfBrokerNodes", value.asInstanceOf[js.Any])
+    def setOpenMonitoringUndefined: Self = StObject.set(x, "OpenMonitoring", js.undefined)
     
     @scala.inline
-    def deleteNumberOfBrokerNodes: Self = this.set("NumberOfBrokerNodes", js.undefined)
+    def setState(value: ClusterState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenMonitoring(value: OpenMonitoring): Self = this.set("OpenMonitoring", value.asInstanceOf[js.Any])
+    def setStateInfo(value: StateInfo): Self = StObject.set(x, "StateInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOpenMonitoring: Self = this.set("OpenMonitoring", js.undefined)
+    def setStateInfoUndefined: Self = StObject.set(x, "StateInfo", js.undefined)
     
     @scala.inline
-    def setState(value: ClusterState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateInfo(value: StateInfo): Self = this.set("StateInfo", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStateInfo: Self = this.set("StateInfo", js.undefined)
+    def setZookeeperConnectString(value: string): Self = StObject.set(x, "ZookeeperConnectString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setZookeeperConnectStringTls(value: string): Self = StObject.set(x, "ZookeeperConnectStringTls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setZookeeperConnectStringTlsUndefined: Self = StObject.set(x, "ZookeeperConnectStringTls", js.undefined)
     
     @scala.inline
-    def setZookeeperConnectString(value: string): Self = this.set("ZookeeperConnectString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZookeeperConnectString: Self = this.set("ZookeeperConnectString", js.undefined)
-    
-    @scala.inline
-    def setZookeeperConnectStringTls(value: string): Self = this.set("ZookeeperConnectStringTls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZookeeperConnectStringTls: Self = this.set("ZookeeperConnectStringTls", js.undefined)
+    def setZookeeperConnectStringUndefined: Self = StObject.set(x, "ZookeeperConnectString", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotMappointClusterOptions extends js.Object {
+trait PlotMappointClusterOptions extends StObject {
   
   /**
     * (Highcharts, Highmaps) When set to `false` prevent cluster overlapping -
@@ -75,87 +76,75 @@ object PlotMappointClusterOptions {
   }
   
   @scala.inline
-  implicit class PlotMappointClusterOptionsOps[Self <: PlotMappointClusterOptions] (val x: Self) extends AnyVal {
+  implicit class PlotMappointClusterOptionsMutableBuilder[Self <: PlotMappointClusterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowOverlap(value: Boolean): Self = this.set("allowOverlap", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAllowOverlap: Self = this.set("allowOverlap", js.undefined)
+    def setDataLabels(value: DataLabelsOptions): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setDrillToCluster(value: Boolean): Self = StObject.set(x, "drillToCluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLabels(value: DataLabelsOptions): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    def setDrillToClusterUndefined: Self = StObject.set(x, "drillToCluster", js.undefined)
     
     @scala.inline
-    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillToCluster(value: Boolean): Self = this.set("drillToCluster", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDrillToCluster: Self = this.set("drillToCluster", js.undefined)
+    def setEvents(value: PlotMappointClusterEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setLayoutAlgorithm(value: PlotMappointClusterLayoutAlgorithmOptions): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: PlotMappointClusterEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setLayoutAlgorithmUndefined: Self = StObject.set(x, "layoutAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayoutAlgorithm(value: PlotMappointClusterLayoutAlgorithmOptions): Self = this.set("layoutAlgorithm", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     @scala.inline
-    def deleteLayoutAlgorithm: Self = this.set("layoutAlgorithm", js.undefined)
+    def setMinimumClusterSize(value: Double): Self = StObject.set(x, "minimumClusterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: PointMarkerOptionsObject): Self = this.set("marker", value.asInstanceOf[js.Any])
+    def setMinimumClusterSizeUndefined: Self = StObject.set(x, "minimumClusterSize", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("marker", js.undefined)
+    def setStates(value: PlotMappointClusterStatesOptions): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumClusterSize(value: Double): Self = this.set("minimumClusterSize", value.asInstanceOf[js.Any])
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def deleteMinimumClusterSize: Self = this.set("minimumClusterSize", js.undefined)
+    def setZones(value: js.Array[PlotMappointClusterZonesOptions]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStates(value: PlotMappointClusterStatesOptions): Self = this.set("states", value.asInstanceOf[js.Any])
+    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
     @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
-    
-    @scala.inline
-    def setZonesVarargs(value: PlotMappointClusterZonesOptions*): Self = this.set("zones", js.Array(value :_*))
-    
-    @scala.inline
-    def setZones(value: js.Array[PlotMappointClusterZonesOptions]): Self = this.set("zones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZones: Self = this.set("zones", js.undefined)
+    def setZonesVarargs(value: PlotMappointClusterZonesOptions*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

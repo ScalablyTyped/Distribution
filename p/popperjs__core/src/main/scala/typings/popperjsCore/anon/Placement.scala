@@ -1,12 +1,13 @@
 package typings.popperjsCore.anon
 
 import typings.popperjsCore.typesMod.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Placement extends js.Object {
+trait Placement extends StObject {
   
   var placement: typings.popperjsCore.enumsMod.Placement = js.native
   
@@ -23,27 +24,15 @@ object Placement {
   }
   
   @scala.inline
-  implicit class PlacementOps[Self <: Placement] (val x: Self) extends AnyVal {
+  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPopper(value: Rect): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = this.set("placement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPopper(value: Rect): Self = this.set("popper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReference(value: Rect): Self = this.set("reference", value.asInstanceOf[js.Any])
+    def setReference(value: Rect): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

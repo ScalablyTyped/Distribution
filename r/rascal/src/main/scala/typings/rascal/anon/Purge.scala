@@ -1,11 +1,12 @@
 package typings.rascal.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Purge extends js.Object {
+trait Purge extends StObject {
   
   var assert: Boolean = js.native
   
@@ -22,27 +23,15 @@ object Purge {
   }
   
   @scala.inline
-  implicit class PurgeOps[Self <: Purge] (val x: Self) extends AnyVal {
+  implicit class PurgeMutableBuilder[Self <: Purge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: Durable): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssert(value: Boolean): Self = this.set("assert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: Durable): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPurge(value: Boolean): Self = this.set("purge", value.asInstanceOf[js.Any])
+    def setPurge(value: Boolean): Self = StObject.set(x, "purge", value.asInstanceOf[js.Any])
   }
 }

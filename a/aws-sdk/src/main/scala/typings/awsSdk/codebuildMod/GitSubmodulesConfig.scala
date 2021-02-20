@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitSubmodulesConfig extends js.Object {
+trait GitSubmodulesConfig extends StObject {
   
   /**
     *  Set to true to fetch Git submodules for your AWS CodeBuild build project. 
@@ -21,21 +22,9 @@ object GitSubmodulesConfig {
   }
   
   @scala.inline
-  implicit class GitSubmodulesConfigOps[Self <: GitSubmodulesConfig] (val x: Self) extends AnyVal {
+  implicit class GitSubmodulesConfigMutableBuilder[Self <: GitSubmodulesConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFetchSubmodules(value: WrapperBoolean): Self = this.set("fetchSubmodules", value.asInstanceOf[js.Any])
+    def setFetchSubmodules(value: WrapperBoolean): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
   }
 }

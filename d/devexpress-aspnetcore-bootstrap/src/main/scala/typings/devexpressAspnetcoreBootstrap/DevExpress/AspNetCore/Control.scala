@@ -1,12 +1,13 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.init
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Control extends js.Object {
+trait Control extends StObject {
   
   def adjustControl(): Unit = js.native
   
@@ -27,10 +28,10 @@ trait Control extends js.Object {
   val name: String = js.native
   
   def off(): this.type = js.native
-   // tslint:disable-line:no-unnecessary-generics
+  // tslint:disable-line:no-unnecessary-generics
   @JSName("off")
   def off_init(eventName: init): this.type = js.native
-   // tslint:disable-line:unified-signatures no-unnecessary-generics
+  // tslint:disable-line:unified-signatures no-unnecessary-generics
   @JSName("off")
   def off_init(
     eventName: init,

@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectConnectGatewayAssociationProposal extends js.Object {
+trait DirectConnectGatewayAssociationProposal extends StObject {
   
   /**
     * Information about the associated gateway.
@@ -51,66 +52,54 @@ object DirectConnectGatewayAssociationProposal {
   }
   
   @scala.inline
-  implicit class DirectConnectGatewayAssociationProposalOps[Self <: DirectConnectGatewayAssociationProposal] (val x: Self) extends AnyVal {
+  implicit class DirectConnectGatewayAssociationProposalMutableBuilder[Self <: DirectConnectGatewayAssociationProposal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedGateway(value: AssociatedGateway): Self = StObject.set(x, "associatedGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedGatewayUndefined: Self = StObject.set(x, "associatedGateway", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedGateway(value: AssociatedGateway): Self = this.set("associatedGateway", value.asInstanceOf[js.Any])
+    def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
     @scala.inline
-    def deleteAssociatedGateway: Self = this.set("associatedGateway", js.undefined)
+    def setDirectConnectGatewayOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "directConnectGatewayOwnerAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    def setDirectConnectGatewayOwnerAccountUndefined: Self = StObject.set(x, "directConnectGatewayOwnerAccount", js.undefined)
     
     @scala.inline
-    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    def setExistingAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = StObject.set(x, "existingAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectConnectGatewayOwnerAccount(value: OwnerAccount): Self = this.set("directConnectGatewayOwnerAccount", value.asInstanceOf[js.Any])
+    def setExistingAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "existingAllowedPrefixesToDirectConnectGateway", js.undefined)
     
     @scala.inline
-    def deleteDirectConnectGatewayOwnerAccount: Self = this.set("directConnectGatewayOwnerAccount", js.undefined)
+    def setExistingAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "existingAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
     
     @scala.inline
-    def setExistingAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = this.set("existingAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExistingAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = this.set("existingAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
+    def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     
     @scala.inline
-    def deleteExistingAllowedPrefixesToDirectConnectGateway: Self = this.set("existingAllowedPrefixesToDirectConnectGateway", js.undefined)
+    def setProposalState(value: DirectConnectGatewayAssociationProposalState): Self = StObject.set(x, "proposalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = this.set("proposalId", value.asInstanceOf[js.Any])
+    def setProposalStateUndefined: Self = StObject.set(x, "proposalState", js.undefined)
     
     @scala.inline
-    def deleteProposalId: Self = this.set("proposalId", js.undefined)
+    def setRequestedAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = StObject.set(x, "requestedAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProposalState(value: DirectConnectGatewayAssociationProposalState): Self = this.set("proposalState", value.asInstanceOf[js.Any])
+    def setRequestedAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "requestedAllowedPrefixesToDirectConnectGateway", js.undefined)
     
     @scala.inline
-    def deleteProposalState: Self = this.set("proposalState", js.undefined)
-    
-    @scala.inline
-    def setRequestedAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = this.set("requestedAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
-    
-    @scala.inline
-    def setRequestedAllowedPrefixesToDirectConnectGateway(value: RouteFilterPrefixList): Self = this.set("requestedAllowedPrefixesToDirectConnectGateway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedAllowedPrefixesToDirectConnectGateway: Self = this.set("requestedAllowedPrefixesToDirectConnectGateway", js.undefined)
+    def setRequestedAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "requestedAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
   }
 }

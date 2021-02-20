@@ -1,12 +1,13 @@
 package typings.lokijs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.ThrottledSaveDrainOptions> */
 @js.native
-trait PartialThrottledSaveDrain extends js.Object {
+trait PartialThrottledSaveDrain extends StObject {
   
   var recursiveWait: js.UndefOr[Boolean] = js.native
   
@@ -25,42 +26,30 @@ object PartialThrottledSaveDrain {
   }
   
   @scala.inline
-  implicit class PartialThrottledSaveDrainOps[Self <: PartialThrottledSaveDrain] (val x: Self) extends AnyVal {
+  implicit class PartialThrottledSaveDrainMutableBuilder[Self <: PartialThrottledSaveDrain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursiveWait(value: Boolean): Self = this.set("recursiveWait", value.asInstanceOf[js.Any])
+    def setRecursiveWaitLimitDurationUndefined: Self = StObject.set(x, "recursiveWaitLimitDuration", js.undefined)
     
     @scala.inline
-    def deleteRecursiveWait: Self = this.set("recursiveWait", js.undefined)
+    def setRecursiveWaitLimitUndefined: Self = StObject.set(x, "recursiveWaitLimit", js.undefined)
     
     @scala.inline
-    def setRecursiveWaitLimit(value: Boolean): Self = this.set("recursiveWaitLimit", value.asInstanceOf[js.Any])
+    def setRecursiveWaitUndefined: Self = StObject.set(x, "recursiveWait", js.undefined)
     
     @scala.inline
-    def deleteRecursiveWaitLimit: Self = this.set("recursiveWaitLimit", js.undefined)
+    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursiveWaitLimitDuration(value: Double): Self = this.set("recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecursiveWaitLimitDuration: Self = this.set("recursiveWaitLimitDuration", js.undefined)
-    
-    @scala.inline
-    def setStarted(value: Double): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarted: Self = this.set("started", js.undefined)
+    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
   }
 }

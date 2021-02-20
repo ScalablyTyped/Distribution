@@ -1,5 +1,6 @@
 package typings.jqueryElang
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,39 +54,27 @@ object IELangSearchDefaults {
   }
   
   @scala.inline
-  implicit class IELangSearchDefaultsOps[Self <: IELangSearchDefaults] (val x: Self) extends AnyVal {
+  implicit class IELangSearchDefaultsMutableBuilder[Self <: IELangSearchDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpressionsLabel(value: String): Self = StObject.set(x, "expressionsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionsTooltip(value: String): Self = StObject.set(x, "expressionsTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeaningsLabel(value: String): Self = StObject.set(x, "meaningsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionsLabel(value: String): Self = this.set("expressionsLabel", value.asInstanceOf[js.Any])
+    def setMeaningsTooltip(value: String): Self = StObject.set(x, "meaningsTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionsTooltip(value: String): Self = this.set("expressionsTooltip", value.asInstanceOf[js.Any])
+    def setSearchButtonLabel(value: String): Self = StObject.set(x, "searchButtonLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeaningsLabel(value: String): Self = this.set("meaningsLabel", value.asInstanceOf[js.Any])
+    def setSearchFieldHtml(value: String): Self = StObject.set(x, "searchFieldHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeaningsTooltip(value: String): Self = this.set("meaningsTooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchButtonLabel(value: String): Self = this.set("searchButtonLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchFieldHtml(value: String): Self = this.set("searchFieldHtml", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchFormHtml(value: String): Self = this.set("searchFormHtml", value.asInstanceOf[js.Any])
+    def setSearchFormHtml(value: String): Self = StObject.set(x, "searchFormHtml", value.asInstanceOf[js.Any])
   }
 }

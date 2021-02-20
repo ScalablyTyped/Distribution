@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileEncryptionInfo extends js.Object {
+trait FileEncryptionInfo extends StObject {
   
   // The key used to encrypt the file content.
   var encryptionKey: js.UndefOr[NullableOption[Double]] = js.native
@@ -37,81 +38,69 @@ object FileEncryptionInfo {
   }
   
   @scala.inline
-  implicit class FileEncryptionInfoOps[Self <: FileEncryptionInfo] (val x: Self) extends AnyVal {
+  implicit class FileEncryptionInfoMutableBuilder[Self <: FileEncryptionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionKey(value: NullableOption[Double]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionKeyNull: Self = StObject.set(x, "encryptionKey", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
     @scala.inline
-    def setEncryptionKey(value: NullableOption[Double]): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    def setFileDigest(value: NullableOption[Double]): Self = StObject.set(x, "fileDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    def setFileDigestAlgorithm(value: NullableOption[String]): Self = StObject.set(x, "fileDigestAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionKeyNull: Self = this.set("encryptionKey", null)
+    def setFileDigestAlgorithmNull: Self = StObject.set(x, "fileDigestAlgorithm", null)
     
     @scala.inline
-    def setFileDigest(value: NullableOption[Double]): Self = this.set("fileDigest", value.asInstanceOf[js.Any])
+    def setFileDigestAlgorithmUndefined: Self = StObject.set(x, "fileDigestAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteFileDigest: Self = this.set("fileDigest", js.undefined)
+    def setFileDigestNull: Self = StObject.set(x, "fileDigest", null)
     
     @scala.inline
-    def setFileDigestNull: Self = this.set("fileDigest", null)
+    def setFileDigestUndefined: Self = StObject.set(x, "fileDigest", js.undefined)
     
     @scala.inline
-    def setFileDigestAlgorithm(value: NullableOption[String]): Self = this.set("fileDigestAlgorithm", value.asInstanceOf[js.Any])
+    def setInitializationVector(value: NullableOption[Double]): Self = StObject.set(x, "initializationVector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileDigestAlgorithm: Self = this.set("fileDigestAlgorithm", js.undefined)
+    def setInitializationVectorNull: Self = StObject.set(x, "initializationVector", null)
     
     @scala.inline
-    def setFileDigestAlgorithmNull: Self = this.set("fileDigestAlgorithm", null)
+    def setInitializationVectorUndefined: Self = StObject.set(x, "initializationVector", js.undefined)
     
     @scala.inline
-    def setInitializationVector(value: NullableOption[Double]): Self = this.set("initializationVector", value.asInstanceOf[js.Any])
+    def setMac(value: NullableOption[Double]): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInitializationVector: Self = this.set("initializationVector", js.undefined)
+    def setMacKey(value: NullableOption[Double]): Self = StObject.set(x, "macKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitializationVectorNull: Self = this.set("initializationVector", null)
+    def setMacKeyNull: Self = StObject.set(x, "macKey", null)
     
     @scala.inline
-    def setMac(value: NullableOption[Double]): Self = this.set("mac", value.asInstanceOf[js.Any])
+    def setMacKeyUndefined: Self = StObject.set(x, "macKey", js.undefined)
     
     @scala.inline
-    def deleteMac: Self = this.set("mac", js.undefined)
+    def setMacNull: Self = StObject.set(x, "mac", null)
     
     @scala.inline
-    def setMacNull: Self = this.set("mac", null)
+    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
     @scala.inline
-    def setMacKey(value: NullableOption[Double]): Self = this.set("macKey", value.asInstanceOf[js.Any])
+    def setProfileIdentifier(value: NullableOption[String]): Self = StObject.set(x, "profileIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMacKey: Self = this.set("macKey", js.undefined)
+    def setProfileIdentifierNull: Self = StObject.set(x, "profileIdentifier", null)
     
     @scala.inline
-    def setMacKeyNull: Self = this.set("macKey", null)
-    
-    @scala.inline
-    def setProfileIdentifier(value: NullableOption[String]): Self = this.set("profileIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfileIdentifier: Self = this.set("profileIdentifier", js.undefined)
-    
-    @scala.inline
-    def setProfileIdentifierNull: Self = this.set("profileIdentifier", null)
+    def setProfileIdentifierUndefined: Self = StObject.set(x, "profileIdentifier", js.undefined)
   }
 }

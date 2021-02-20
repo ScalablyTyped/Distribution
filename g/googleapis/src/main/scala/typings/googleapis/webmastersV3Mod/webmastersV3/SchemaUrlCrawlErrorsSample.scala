@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains information about specific crawl errors.
   */
 @js.native
-trait SchemaUrlCrawlErrorsSample extends js.Object {
+trait SchemaUrlCrawlErrorsSample extends StObject {
   
   /**
     * The time the error was first detected, in RFC 3339 format.
@@ -44,48 +45,36 @@ object SchemaUrlCrawlErrorsSample {
   }
   
   @scala.inline
-  implicit class SchemaUrlCrawlErrorsSampleOps[Self <: SchemaUrlCrawlErrorsSample] (val x: Self) extends AnyVal {
+  implicit class SchemaUrlCrawlErrorsSampleMutableBuilder[Self <: SchemaUrlCrawlErrorsSample] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirst_detected(value: String): Self = StObject.set(x, "first_detected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst_detectedUndefined: Self = StObject.set(x, "first_detected", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLast_crawled(value: String): Self = StObject.set(x, "last_crawled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirst_detected(value: String): Self = this.set("first_detected", value.asInstanceOf[js.Any])
+    def setLast_crawledUndefined: Self = StObject.set(x, "last_crawled", js.undefined)
     
     @scala.inline
-    def deleteFirst_detected: Self = this.set("first_detected", js.undefined)
+    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_crawled(value: String): Self = this.set("last_crawled", value.asInstanceOf[js.Any])
+    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
     @scala.inline
-    def deleteLast_crawled: Self = this.set("last_crawled", js.undefined)
+    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
+    def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
     
     @scala.inline
-    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
+    def setUrlDetails(value: SchemaUrlSampleDetails): Self = StObject.set(x, "urlDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCode(value: Double): Self = this.set("responseCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponseCode: Self = this.set("responseCode", js.undefined)
-    
-    @scala.inline
-    def setUrlDetails(value: SchemaUrlSampleDetails): Self = this.set("urlDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlDetails: Self = this.set("urlDetails", js.undefined)
+    def setUrlDetailsUndefined: Self = StObject.set(x, "urlDetails", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.skyway
 
 import typings.std.RTCConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var config: js.UndefOr[RTCConfiguration] = js.native
   
@@ -27,45 +28,33 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: RTCConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredential(value: Credential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
     @scala.inline
-    def setConfig(value: RTCConfiguration): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDebug(value: Double): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def setCredential(value: Credential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCredential: Self = this.set("credential", js.undefined)
+    def setTurn(value: Boolean): Self = StObject.set(x, "turn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Double): Self = this.set("debug", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
-    
-    @scala.inline
-    def setTurn(value: Boolean): Self = this.set("turn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTurn: Self = this.set("turn", js.undefined)
+    def setTurnUndefined: Self = StObject.set(x, "turn", js.undefined)
   }
 }

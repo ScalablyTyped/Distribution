@@ -3,16 +3,16 @@ package typings.guacamoleClient
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.inputStreamMod.InputStream
 import typings.std.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("guacamole-client/lib/BlobReader", JSImport.Namespace)
-@js.native
-object blobReaderMod extends js.Object {
+object blobReaderMod {
   
+  @JSImport("guacamole-client/lib/BlobReader", "BlobReader")
   @js.native
-  class BlobReader protected () extends js.Object {
+  class BlobReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       * @param mimetype The mimetype of the blob being built.

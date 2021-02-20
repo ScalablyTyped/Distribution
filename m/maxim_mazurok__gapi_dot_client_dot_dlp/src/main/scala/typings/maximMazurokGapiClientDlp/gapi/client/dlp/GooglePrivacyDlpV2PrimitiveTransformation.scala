@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2PrimitiveTransformation extends js.Object {
+trait GooglePrivacyDlpV2PrimitiveTransformation extends StObject {
   
   /** Bucketing */
   var bucketingConfig: js.UndefOr[GooglePrivacyDlpV2BucketingConfig] = js.native
@@ -49,84 +50,72 @@ object GooglePrivacyDlpV2PrimitiveTransformation {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2PrimitiveTransformationOps[Self <: GooglePrivacyDlpV2PrimitiveTransformation] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2PrimitiveTransformationMutableBuilder[Self <: GooglePrivacyDlpV2PrimitiveTransformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketingConfig(value: GooglePrivacyDlpV2BucketingConfig): Self = StObject.set(x, "bucketingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketingConfigUndefined: Self = StObject.set(x, "bucketingConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharacterMaskConfig(value: GooglePrivacyDlpV2CharacterMaskConfig): Self = StObject.set(x, "characterMaskConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketingConfig(value: GooglePrivacyDlpV2BucketingConfig): Self = this.set("bucketingConfig", value.asInstanceOf[js.Any])
+    def setCharacterMaskConfigUndefined: Self = StObject.set(x, "characterMaskConfig", js.undefined)
     
     @scala.inline
-    def deleteBucketingConfig: Self = this.set("bucketingConfig", js.undefined)
+    def setCryptoDeterministicConfig(value: GooglePrivacyDlpV2CryptoDeterministicConfig): Self = StObject.set(x, "cryptoDeterministicConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterMaskConfig(value: GooglePrivacyDlpV2CharacterMaskConfig): Self = this.set("characterMaskConfig", value.asInstanceOf[js.Any])
+    def setCryptoDeterministicConfigUndefined: Self = StObject.set(x, "cryptoDeterministicConfig", js.undefined)
     
     @scala.inline
-    def deleteCharacterMaskConfig: Self = this.set("characterMaskConfig", js.undefined)
+    def setCryptoHashConfig(value: GooglePrivacyDlpV2CryptoHashConfig): Self = StObject.set(x, "cryptoHashConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoDeterministicConfig(value: GooglePrivacyDlpV2CryptoDeterministicConfig): Self = this.set("cryptoDeterministicConfig", value.asInstanceOf[js.Any])
+    def setCryptoHashConfigUndefined: Self = StObject.set(x, "cryptoHashConfig", js.undefined)
     
     @scala.inline
-    def deleteCryptoDeterministicConfig: Self = this.set("cryptoDeterministicConfig", js.undefined)
+    def setCryptoReplaceFfxFpeConfig(value: GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig): Self = StObject.set(x, "cryptoReplaceFfxFpeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoHashConfig(value: GooglePrivacyDlpV2CryptoHashConfig): Self = this.set("cryptoHashConfig", value.asInstanceOf[js.Any])
+    def setCryptoReplaceFfxFpeConfigUndefined: Self = StObject.set(x, "cryptoReplaceFfxFpeConfig", js.undefined)
     
     @scala.inline
-    def deleteCryptoHashConfig: Self = this.set("cryptoHashConfig", js.undefined)
+    def setDateShiftConfig(value: GooglePrivacyDlpV2DateShiftConfig): Self = StObject.set(x, "dateShiftConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCryptoReplaceFfxFpeConfig(value: GooglePrivacyDlpV2CryptoReplaceFfxFpeConfig): Self = this.set("cryptoReplaceFfxFpeConfig", value.asInstanceOf[js.Any])
+    def setDateShiftConfigUndefined: Self = StObject.set(x, "dateShiftConfig", js.undefined)
     
     @scala.inline
-    def deleteCryptoReplaceFfxFpeConfig: Self = this.set("cryptoReplaceFfxFpeConfig", js.undefined)
+    def setFixedSizeBucketingConfig(value: GooglePrivacyDlpV2FixedSizeBucketingConfig): Self = StObject.set(x, "fixedSizeBucketingConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateShiftConfig(value: GooglePrivacyDlpV2DateShiftConfig): Self = this.set("dateShiftConfig", value.asInstanceOf[js.Any])
+    def setFixedSizeBucketingConfigUndefined: Self = StObject.set(x, "fixedSizeBucketingConfig", js.undefined)
     
     @scala.inline
-    def deleteDateShiftConfig: Self = this.set("dateShiftConfig", js.undefined)
+    def setRedactConfig(value: js.Any): Self = StObject.set(x, "redactConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedSizeBucketingConfig(value: GooglePrivacyDlpV2FixedSizeBucketingConfig): Self = this.set("fixedSizeBucketingConfig", value.asInstanceOf[js.Any])
+    def setRedactConfigUndefined: Self = StObject.set(x, "redactConfig", js.undefined)
     
     @scala.inline
-    def deleteFixedSizeBucketingConfig: Self = this.set("fixedSizeBucketingConfig", js.undefined)
+    def setReplaceConfig(value: GooglePrivacyDlpV2ReplaceValueConfig): Self = StObject.set(x, "replaceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedactConfig(value: js.Any): Self = this.set("redactConfig", value.asInstanceOf[js.Any])
+    def setReplaceConfigUndefined: Self = StObject.set(x, "replaceConfig", js.undefined)
     
     @scala.inline
-    def deleteRedactConfig: Self = this.set("redactConfig", js.undefined)
+    def setReplaceWithInfoTypeConfig(value: js.Any): Self = StObject.set(x, "replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceConfig(value: GooglePrivacyDlpV2ReplaceValueConfig): Self = this.set("replaceConfig", value.asInstanceOf[js.Any])
+    def setReplaceWithInfoTypeConfigUndefined: Self = StObject.set(x, "replaceWithInfoTypeConfig", js.undefined)
     
     @scala.inline
-    def deleteReplaceConfig: Self = this.set("replaceConfig", js.undefined)
+    def setTimePartConfig(value: GooglePrivacyDlpV2TimePartConfig): Self = StObject.set(x, "timePartConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceWithInfoTypeConfig(value: js.Any): Self = this.set("replaceWithInfoTypeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceWithInfoTypeConfig: Self = this.set("replaceWithInfoTypeConfig", js.undefined)
-    
-    @scala.inline
-    def setTimePartConfig(value: GooglePrivacyDlpV2TimePartConfig): Self = this.set("timePartConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimePartConfig: Self = this.set("timePartConfig", js.undefined)
+    def setTimePartConfigUndefined: Self = StObject.set(x, "timePartConfig", js.undefined)
   }
 }

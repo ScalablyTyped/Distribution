@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadFontFaceOption extends js.Object {
+trait LoadFontFaceOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[LoadFontFaceCompleteCallback] = js.native
@@ -42,63 +43,51 @@ object LoadFontFaceOption {
   }
   
   @scala.inline
-  implicit class LoadFontFaceOptionOps[Self <: LoadFontFaceOption] (val x: Self) extends AnyVal {
+  implicit class LoadFontFaceOptionMutableBuilder[Self <: LoadFontFaceOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDesc(value: DescOption): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setFail(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplete(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = this.set("complete", js.Any.fromFunction1(value))
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: DescOption): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDesc: Self = this.set("desc", js.undefined)
+    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     @scala.inline
-    def setFail(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = this.set("fail", js.Any.fromFunction1(value))
+    def setScopes(value: js.Array[_]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
     @scala.inline
-    def setGlobal(value: Boolean): Self = this.set("global", value.asInstanceOf[js.Any])
+    def setScopesVarargs(value: js.Any*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     
     @scala.inline
-    def deleteGlobal: Self = this.set("global", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScopesVarargs(value: js.Any*): Self = this.set("scopes", js.Array(value :_*))
+    def setSuccess(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScopes(value: js.Array[_]): Self = this.set("scopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopes: Self = this.set("scopes", js.undefined)
-    
-    @scala.inline
-    def setSuccess(value: /* result */ LoadFontFaceCompleteCallbackResult => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

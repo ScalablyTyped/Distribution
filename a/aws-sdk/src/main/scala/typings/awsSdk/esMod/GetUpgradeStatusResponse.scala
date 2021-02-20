@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUpgradeStatusResponse extends js.Object {
+trait GetUpgradeStatusResponse extends StObject {
   
   /**
     *  One of 4 statuses that a step can go through returned as part of the  GetUpgradeStatusResponse  object. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
@@ -31,36 +32,24 @@ object GetUpgradeStatusResponse {
   }
   
   @scala.inline
-  implicit class GetUpgradeStatusResponseOps[Self <: GetUpgradeStatusResponse] (val x: Self) extends AnyVal {
+  implicit class GetUpgradeStatusResponseMutableBuilder[Self <: GetUpgradeStatusResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStepStatus(value: UpgradeStatus): Self = StObject.set(x, "StepStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStepStatusUndefined: Self = StObject.set(x, "StepStatus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpgradeName(value: UpgradeName): Self = StObject.set(x, "UpgradeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepStatus(value: UpgradeStatus): Self = this.set("StepStatus", value.asInstanceOf[js.Any])
+    def setUpgradeNameUndefined: Self = StObject.set(x, "UpgradeName", js.undefined)
     
     @scala.inline
-    def deleteStepStatus: Self = this.set("StepStatus", js.undefined)
+    def setUpgradeStep(value: UpgradeStep): Self = StObject.set(x, "UpgradeStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpgradeName(value: UpgradeName): Self = this.set("UpgradeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeName: Self = this.set("UpgradeName", js.undefined)
-    
-    @scala.inline
-    def setUpgradeStep(value: UpgradeStep): Self = this.set("UpgradeStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeStep: Self = this.set("UpgradeStep", js.undefined)
+    def setUpgradeStepUndefined: Self = StObject.set(x, "UpgradeStep", js.undefined)
   }
 }

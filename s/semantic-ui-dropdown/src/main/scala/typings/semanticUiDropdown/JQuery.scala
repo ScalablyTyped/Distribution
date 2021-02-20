@@ -116,12 +116,13 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.useLabels
 import typings.semanticUiDropdown.semanticUiDropdownStrings.value
 import typings.semanticUiDropdown.semanticUiDropdownStrings.values
 import typings.semanticUiDropdown.semanticUiDropdownStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def dropdown(): JQuery = js.native
   def dropdown(behavior: setting, name: `match`, value: js.UndefOr[scala.Nothing]): both | value | text = js.native

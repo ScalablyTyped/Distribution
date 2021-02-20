@@ -1,13 +1,12 @@
 package typings.itParallelBatch
 
 import typings.std.AsyncIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("it-parallel-batch/dist", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * @template T
@@ -23,8 +22,14 @@ object mod extends js.Object {
     * @param {number|string} [size=1]
     * @returns {AsyncIterable<T>}
     */
+  @JSImport("it-parallel-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]]): AsyncIterable[T] = js.native
+  @JSImport("it-parallel-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]], size: String): AsyncIterable[T] = js.native
+  @JSImport("it-parallel-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: AsyncIterable[js.Function0[js.Promise[T]]], size: Double): AsyncIterable[T] = js.native
   
   type Task[T] = js.Function0[js.Promise[T]]

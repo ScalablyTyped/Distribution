@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecreaseReplicaCountResult extends js.Object {
+trait DecreaseReplicaCountResult extends StObject {
   
   var ReplicationGroup: js.UndefOr[typings.awsSdk.elasticacheMod.ReplicationGroup] = js.native
 }
@@ -18,24 +19,12 @@ object DecreaseReplicaCountResult {
   }
   
   @scala.inline
-  implicit class DecreaseReplicaCountResultOps[Self <: DecreaseReplicaCountResult] (val x: Self) extends AnyVal {
+  implicit class DecreaseReplicaCountResultMutableBuilder[Self <: DecreaseReplicaCountResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationGroup(value: ReplicationGroup): Self = this.set("ReplicationGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationGroup: Self = this.set("ReplicationGroup", js.undefined)
+    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
   }
 }

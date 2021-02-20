@@ -2,18 +2,26 @@ package typings.reactNativeCommunityCliServerApi
 
 import typings.reactNativeCommunityCliServerApi.anon.ReportEvent
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-native-community/cli-server-api/build/websocket/eventsSocketServer", JSImport.Namespace)
-@js.native
-object eventsSocketServerMod extends js.Object {
+object eventsSocketServerMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var attachToServer: js.Function3[/* server */ Server, /* path */ String, /* messageSocket */ MessageSocket, ReportEvent] = js.native
+    @JSImport("@react-native-community/cli-server-api/build/websocket/eventsSocketServer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@react-native-community/cli-server-api/build/websocket/eventsSocketServer", "default.attachToServer")
+    @js.native
+    def attachToServer: js.Function3[/* server */ Server, /* path */ String, /* messageSocket */ MessageSocket, ReportEvent] = js.native
+    @scala.inline
+    def attachToServer_=(
+      x: js.Function3[/* server */ Server, /* path */ String, /* messageSocket */ MessageSocket, ReportEvent]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attachToServer")(x.asInstanceOf[js.Any])
   }
   
   type MessageSocket = ReturnType[

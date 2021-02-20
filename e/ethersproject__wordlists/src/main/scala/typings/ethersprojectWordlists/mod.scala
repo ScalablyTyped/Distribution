@@ -1,33 +1,35 @@
 package typings.ethersprojectWordlists
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ethersprojectLogger.mod.Logger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/wordlists", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val logger: Logger = js.native
-  
+  @JSImport("@ethersproject/wordlists", "Wordlist")
   @js.native
   abstract class Wordlist protected ()
     extends typings.ethersprojectWordlists.wordlistMod.Wordlist {
     def this(locale: String) = this()
   }
   /* static members */
-  @js.native
-  object Wordlist extends js.Object {
+  object Wordlist {
     
+    @JSImport("@ethersproject/wordlists", "Wordlist.check")
+    @js.native
     def check(wordlist: typings.ethersprojectWordlists.wordlistMod.Wordlist): String = js.native
     
+    @JSImport("@ethersproject/wordlists", "Wordlist.register")
+    @js.native
     def register(lang: typings.ethersprojectWordlists.wordlistMod.Wordlist): Unit = js.native
+    @JSImport("@ethersproject/wordlists", "Wordlist.register")
+    @js.native
     def register(lang: typings.ethersprojectWordlists.wordlistMod.Wordlist, name: String): Unit = js.native
   }
   
+  @JSImport("@ethersproject/wordlists", "logger")
   @js.native
-  object wordlists
-    extends /* locale */ StringDictionary[typings.ethersprojectWordlists.wordlistMod.Wordlist]
+  val logger: Logger = js.native
 }

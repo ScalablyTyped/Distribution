@@ -1,17 +1,19 @@
 package typings.promiseTheWorld
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-the-world/mutex", JSImport.Namespace)
-@js.native
-object mutexMod extends js.Object {
+object mutexMod {
   
+  @JSImport("promise-the-world/mutex", JSImport.Namespace)
+  @js.native
   def apply(): Mutex = js.native
   
+  @JSImport("promise-the-world/mutex", "Mutex")
   @js.native
-  class Mutex () extends js.Object {
+  class Mutex () extends StObject {
     
     def lock(): js.Promise[Unit] = js.native
     

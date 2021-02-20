@@ -2,13 +2,14 @@ package typings.openseadragon.mod
 
 import typings.openseadragon.anon.AjaxHeaders
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "TiledImage")
 @js.native
-class TiledImage protected () extends js.Object {
+class TiledImage protected () extends StObject {
   def this(options: AjaxHeaders) = this()
   
   def addHandler(eventName: String, handler: EventHandler[TiledImageEvent]): Unit = js.native

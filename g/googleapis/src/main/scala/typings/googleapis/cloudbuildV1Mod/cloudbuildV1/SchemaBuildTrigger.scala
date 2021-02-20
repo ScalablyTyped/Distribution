@@ -1,6 +1,7 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * changes.
   */
 @js.native
-trait SchemaBuildTrigger extends js.Object {
+trait SchemaBuildTrigger extends StObject {
   
   /**
     * Contents of the build template.
@@ -92,90 +93,78 @@ object SchemaBuildTrigger {
   }
   
   @scala.inline
-  implicit class SchemaBuildTriggerOps[Self <: SchemaBuildTrigger] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildTriggerMutableBuilder[Self <: SchemaBuildTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: SchemaBuild): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: SchemaBuild): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setGithub(value: SchemaGitHubEventsConfig): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGithub(value: SchemaGitHubEventsConfig): Self = this.set("github", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGithub: Self = this.set("github", js.undefined)
+    def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoredFilesVarargs(value: String*): Self = this.set("ignoredFiles", js.Array(value :_*))
+    def setIncludedFiles(value: js.Array[String]): Self = StObject.set(x, "includedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoredFiles(value: js.Array[String]): Self = this.set("ignoredFiles", value.asInstanceOf[js.Any])
+    def setIncludedFilesUndefined: Self = StObject.set(x, "includedFiles", js.undefined)
     
     @scala.inline
-    def deleteIgnoredFiles: Self = this.set("ignoredFiles", js.undefined)
+    def setIncludedFilesVarargs(value: String*): Self = StObject.set(x, "includedFiles", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedFilesVarargs(value: String*): Self = this.set("includedFiles", js.Array(value :_*))
+    def setSubstitutions(value: StringDictionary[String]): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedFiles(value: js.Array[String]): Self = this.set("includedFiles", value.asInstanceOf[js.Any])
+    def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
     
     @scala.inline
-    def deleteIncludedFiles: Self = this.set("includedFiles", js.undefined)
+    def setTriggerTemplate(value: SchemaRepoSource): Self = StObject.set(x, "triggerTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitutions(value: StringDictionary[String]): Self = this.set("substitutions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubstitutions: Self = this.set("substitutions", js.undefined)
-    
-    @scala.inline
-    def setTriggerTemplate(value: SchemaRepoSource): Self = this.set("triggerTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerTemplate: Self = this.set("triggerTemplate", js.undefined)
+    def setTriggerTemplateUndefined: Self = StObject.set(x, "triggerTemplate", js.undefined)
   }
 }

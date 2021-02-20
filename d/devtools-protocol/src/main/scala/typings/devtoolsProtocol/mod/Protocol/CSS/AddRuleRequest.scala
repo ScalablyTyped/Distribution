@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.CSS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddRuleRequest extends js.Object {
+trait AddRuleRequest extends StObject {
   
   /**
     * Text position of a new rule in the target style sheet.
@@ -31,27 +32,15 @@ object AddRuleRequest {
   }
   
   @scala.inline
-  implicit class AddRuleRequestOps[Self <: AddRuleRequest] (val x: Self) extends AnyVal {
+  implicit class AddRuleRequestMutableBuilder[Self <: AddRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: SourceRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleText(value: String): Self = StObject.set(x, "ruleText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocation(value: SourceRange): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleText(value: String): Self = this.set("ruleText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = this.set("styleSheetId", value.asInstanceOf[js.Any])
+    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

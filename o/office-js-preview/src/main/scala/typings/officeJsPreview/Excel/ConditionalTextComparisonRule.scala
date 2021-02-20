@@ -5,6 +5,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.Contains
 import typings.officeJsPreview.officeJsPreviewStrings.EndsWith
 import typings.officeJsPreview.officeJsPreviewStrings.Invalid
 import typings.officeJsPreview.officeJsPreviewStrings.NotContains
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalTextComparisonRule extends js.Object {
+trait ConditionalTextComparisonRule extends StObject {
   
   /**
     *
@@ -46,24 +47,12 @@ object ConditionalTextComparisonRule {
   }
   
   @scala.inline
-  implicit class ConditionalTextComparisonRuleOps[Self <: ConditionalTextComparisonRule] (val x: Self) extends AnyVal {
+  implicit class ConditionalTextComparisonRuleMutableBuilder[Self <: ConditionalTextComparisonRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperator(value: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOperator(value: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

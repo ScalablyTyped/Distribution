@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.screepsNumbers.`0.3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `13` extends js.Object {
+trait `13` extends StObject {
   
   var damage: `0.3` = js.native
 }
@@ -19,21 +20,9 @@ object `13` {
   }
   
   @scala.inline
-  implicit class `13Ops`[Self <: `13`] (val x: Self) extends AnyVal {
+  implicit class `13MutableBuilder`[Self <: `13`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDamage(value: `0.3`): Self = this.set("damage", value.asInstanceOf[js.Any])
+    def setDamage(value: `0.3`): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
   }
 }

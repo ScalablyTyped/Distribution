@@ -23,6 +23,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.typedarray
 import typings.devtoolsProtocol.devtoolsProtocolStrings.v128
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakmap
 import typings.devtoolsProtocol.devtoolsProtocolStrings.weakset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +53,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.v128
   - typings.devtoolsProtocol.devtoolsProtocolStrings.externref
 */
-trait RemoteObjectSubtype extends js.Object
+trait RemoteObjectSubtype extends StObject
 object RemoteObjectSubtype {
   
   @scala.inline

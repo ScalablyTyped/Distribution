@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Commit")
 @js.native
-class Commit protected () extends js.Object {
+class Commit protected () extends StObject {
   def this(
     repo: Repo,
     id: String,
@@ -24,7 +25,7 @@ class Commit protected () extends js.Object {
   
   var author: Actor = js.native
   
-   // synonym to id
+  // synonym to id
   var authored_date: String = js.native
   
   var committed_date: String = js.native
@@ -58,19 +59,33 @@ class Commit protected () extends js.Object {
   var tree: js.Any = js.native
 }
 /* static members */
-@JSImport("git", "Commit")
-@js.native
-object Commit extends js.Object {
+object Commit {
   
+  @JSImport("git", "Commit.count")
+  @js.native
   def count(repo: js.Any, ref: js.Any, callback: js.Function): Unit = js.native
   
+  @JSImport("git", "Commit.diff")
+  @js.native
   def diff(repo: js.Any, a: js.Any, b: js.Any, callback: js.Function): Unit = js.native
+  @JSImport("git", "Commit.diff")
+  @js.native
   def diff(repo: js.Any, a: js.Any, b: js.Any, paths: js.Any, callback: js.Function): Unit = js.native
+  @JSImport("git", "Commit.diff")
+  @js.native
   def diff(repo: js.Any, a: js.Any, callback: js.Function): Unit = js.native
   
+  @JSImport("git", "Commit.find_all")
+  @js.native
   def find_all(repo: js.Any, callback: js.Function): Unit = js.native
+  @JSImport("git", "Commit.find_all")
+  @js.native
   def find_all(repo: js.Any, reference: js.Any, callback: js.Function): Unit = js.native
+  @JSImport("git", "Commit.find_all")
+  @js.native
   def find_all(repo: js.Any, reference: js.Any, options: js.Any, callback: js.Function): Unit = js.native
   
+  @JSImport("git", "Commit.list_from_string")
+  @js.native
   def list_from_string(repo: js.Any, text: js.Any): js.Array[Commit] = js.native
 }

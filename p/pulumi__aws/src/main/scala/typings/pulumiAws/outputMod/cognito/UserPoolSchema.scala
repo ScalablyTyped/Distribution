@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.cognito
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPoolSchema extends js.Object {
+trait UserPoolSchema extends StObject {
   
   /**
     * The attribute data type. Must be one of `Boolean`, `Number`, `String`, `DateTime`.
@@ -51,54 +52,42 @@ object UserPoolSchema {
   }
   
   @scala.inline
-  implicit class UserPoolSchemaOps[Self <: UserPoolSchema] (val x: Self) extends AnyVal {
+  implicit class UserPoolSchemaMutableBuilder[Self <: UserPoolSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeDataType(value: String): Self = StObject.set(x, "attributeDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeveloperOnlyAttribute(value: Boolean): Self = StObject.set(x, "developerOnlyAttribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeveloperOnlyAttributeUndefined: Self = StObject.set(x, "developerOnlyAttribute", js.undefined)
     
     @scala.inline
-    def setAttributeDataType(value: String): Self = this.set("attributeDataType", value.asInstanceOf[js.Any])
+    def setMutable(value: Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setMutableUndefined: Self = StObject.set(x, "mutable", js.undefined)
     
     @scala.inline
-    def setDeveloperOnlyAttribute(value: Boolean): Self = this.set("developerOnlyAttribute", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeveloperOnlyAttribute: Self = this.set("developerOnlyAttribute", js.undefined)
+    def setNumberAttributeConstraints(value: UserPoolSchemaNumberAttributeConstraints): Self = StObject.set(x, "numberAttributeConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutable(value: Boolean): Self = this.set("mutable", value.asInstanceOf[js.Any])
+    def setNumberAttributeConstraintsUndefined: Self = StObject.set(x, "numberAttributeConstraints", js.undefined)
     
     @scala.inline
-    def deleteMutable: Self = this.set("mutable", js.undefined)
+    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberAttributeConstraints(value: UserPoolSchemaNumberAttributeConstraints): Self = this.set("numberAttributeConstraints", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteNumberAttributeConstraints: Self = this.set("numberAttributeConstraints", js.undefined)
+    def setStringAttributeConstraints(value: UserPoolSchemaStringAttributeConstraints): Self = StObject.set(x, "stringAttributeConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
-    
-    @scala.inline
-    def setStringAttributeConstraints(value: UserPoolSchemaStringAttributeConstraints): Self = this.set("stringAttributeConstraints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringAttributeConstraints: Self = this.set("stringAttributeConstraints", js.undefined)
+    def setStringAttributeConstraintsUndefined: Self = StObject.set(x, "stringAttributeConstraints", js.undefined)
   }
 }

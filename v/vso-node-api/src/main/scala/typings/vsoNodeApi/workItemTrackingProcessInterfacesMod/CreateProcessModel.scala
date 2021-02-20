@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateProcessModel extends js.Object {
+trait CreateProcessModel extends StObject {
   
   /**
     * Description of the process
@@ -36,30 +37,18 @@ object CreateProcessModel {
   }
   
   @scala.inline
-  implicit class CreateProcessModelOps[Self <: CreateProcessModel] (val x: Self) extends AnyVal {
+  implicit class CreateProcessModelMutableBuilder[Self <: CreateProcessModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentProcessTypeId(value: String): Self = StObject.set(x, "parentProcessTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentProcessTypeId(value: String): Self = this.set("parentProcessTypeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceName(value: String): Self = this.set("referenceName", value.asInstanceOf[js.Any])
+    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
   }
 }

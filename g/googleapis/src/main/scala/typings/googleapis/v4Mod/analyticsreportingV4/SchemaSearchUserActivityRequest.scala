@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * call.
   */
 @js.native
-trait SchemaSearchUserActivityRequest extends js.Object {
+trait SchemaSearchUserActivityRequest extends StObject {
   
   /**
     * Set of all activity types being requested. Only acvities matching these
@@ -67,57 +68,45 @@ object SchemaSearchUserActivityRequest {
   }
   
   @scala.inline
-  implicit class SchemaSearchUserActivityRequestOps[Self <: SchemaSearchUserActivityRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSearchUserActivityRequestMutableBuilder[Self <: SchemaSearchUserActivityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivityTypes(value: js.Array[String]): Self = StObject.set(x, "activityTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivityTypesUndefined: Self = StObject.set(x, "activityTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivityTypesVarargs(value: String*): Self = StObject.set(x, "activityTypes", js.Array(value :_*))
     
     @scala.inline
-    def setActivityTypesVarargs(value: String*): Self = this.set("activityTypes", js.Array(value :_*))
+    def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivityTypes(value: js.Array[String]): Self = this.set("activityTypes", value.asInstanceOf[js.Any])
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def deleteActivityTypes: Self = this.set("activityTypes", js.undefined)
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: SchemaDateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setViewId(value: String): Self = StObject.set(x, "viewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
-    
-    @scala.inline
-    def setViewId(value: String): Self = this.set("viewId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewId: Self = this.set("viewId", js.undefined)
+    def setViewIdUndefined: Self = StObject.set(x, "viewId", js.undefined)
   }
 }

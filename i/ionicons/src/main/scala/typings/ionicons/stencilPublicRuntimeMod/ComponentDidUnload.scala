@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentDidUnload extends js.Object {
+trait ComponentDidUnload extends StObject {
   
   /**
     * The component did unload and the element
@@ -22,21 +23,9 @@ object ComponentDidUnload {
   }
   
   @scala.inline
-  implicit class ComponentDidUnloadOps[Self <: ComponentDidUnload] (val x: Self) extends AnyVal {
+  implicit class ComponentDidUnloadMutableBuilder[Self <: ComponentDidUnload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentDidUnload(value: () => Unit): Self = this.set("componentDidUnload", js.Any.fromFunction0(value))
+    def setComponentDidUnload(value: () => Unit): Self = StObject.set(x, "componentDidUnload", js.Any.fromFunction0(value))
   }
 }

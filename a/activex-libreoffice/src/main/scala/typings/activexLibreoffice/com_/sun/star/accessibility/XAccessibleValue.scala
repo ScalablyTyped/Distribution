@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,39 +96,27 @@ object XAccessibleValue {
   }
   
   @scala.inline
-  implicit class XAccessibleValueOps[Self <: XAccessibleValue] (val x: Self) extends AnyVal {
+  implicit class XAccessibleValueMutableBuilder[Self <: XAccessibleValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMaximumValue(value: () => js.Any): Self = StObject.set(x, "getMaximumValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentValue(value: js.Any): Self = this.set("CurrentValue", value.asInstanceOf[js.Any])
+    def setGetMinimumValue(value: () => js.Any): Self = StObject.set(x, "getMinimumValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaximumValue(value: js.Any): Self = this.set("MaximumValue", value.asInstanceOf[js.Any])
+    def setMaximumValue(value: js.Any): Self = StObject.set(x, "MaximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumValue(value: js.Any): Self = this.set("MinimumValue", value.asInstanceOf[js.Any])
+    def setMinimumValue(value: js.Any): Self = StObject.set(x, "MinimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCurrentValue(value: () => js.Any): Self = this.set("getCurrentValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMaximumValue(value: () => js.Any): Self = this.set("getMaximumValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinimumValue(value: () => js.Any): Self = this.set("getMinimumValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCurrentValue(value: js.Any => Boolean): Self = this.set("setCurrentValue", js.Any.fromFunction1(value))
+    def setSetCurrentValue(value: js.Any => Boolean): Self = StObject.set(x, "setCurrentValue", js.Any.fromFunction1(value))
   }
 }

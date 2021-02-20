@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamodbDataSourceConfig extends js.Object {
+trait DynamodbDataSourceConfig extends StObject {
   
   /**
     * The AWS Region.
@@ -41,42 +42,30 @@ object DynamodbDataSourceConfig {
   }
   
   @scala.inline
-  implicit class DynamodbDataSourceConfigOps[Self <: DynamodbDataSourceConfig] (val x: Self) extends AnyVal {
+  implicit class DynamodbDataSourceConfigMutableBuilder[Self <: DynamodbDataSourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeltaSyncConfig(value: DeltaSyncConfig): Self = StObject.set(x, "deltaSyncConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaSyncConfigUndefined: Self = StObject.set(x, "deltaSyncConfig", js.undefined)
     
     @scala.inline
-    def setAwsRegion(value: String): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setUseCallerCredentials(value: Boolean): Self = StObject.set(x, "useCallerCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaSyncConfig(value: DeltaSyncConfig): Self = this.set("deltaSyncConfig", value.asInstanceOf[js.Any])
+    def setUseCallerCredentialsUndefined: Self = StObject.set(x, "useCallerCredentials", js.undefined)
     
     @scala.inline
-    def deleteDeltaSyncConfig: Self = this.set("deltaSyncConfig", js.undefined)
+    def setVersioned(value: Boolean): Self = StObject.set(x, "versioned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseCallerCredentials(value: Boolean): Self = this.set("useCallerCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCallerCredentials: Self = this.set("useCallerCredentials", js.undefined)
-    
-    @scala.inline
-    def setVersioned(value: Boolean): Self = this.set("versioned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersioned: Self = this.set("versioned", js.undefined)
+    def setVersionedUndefined: Self = StObject.set(x, "versioned", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cqrsDomain.cqrsDomainStrings.azuretable
   - typings.cqrsDomain.cqrsDomainStrings.inmemory
 */
-trait SupportedDBTypes extends js.Object
+trait SupportedDBTypes extends StObject
 object SupportedDBTypes {
   
   @scala.inline

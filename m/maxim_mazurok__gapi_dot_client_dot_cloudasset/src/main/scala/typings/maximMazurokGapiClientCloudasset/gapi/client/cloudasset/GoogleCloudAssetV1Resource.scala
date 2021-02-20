@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudAssetV1Resource extends js.Object {
+trait GoogleCloudAssetV1Resource extends StObject {
   
   /** The analysis state of this resource. */
   var analysisState: js.UndefOr[IamPolicyAnalysisState] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudAssetV1Resource {
   }
   
   @scala.inline
-  implicit class GoogleCloudAssetV1ResourceOps[Self <: GoogleCloudAssetV1Resource] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudAssetV1ResourceMutableBuilder[Self <: GoogleCloudAssetV1Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalysisState(value: IamPolicyAnalysisState): Self = StObject.set(x, "analysisState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalysisStateUndefined: Self = StObject.set(x, "analysisState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalysisState(value: IamPolicyAnalysisState): Self = this.set("analysisState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnalysisState: Self = this.set("analysisState", js.undefined)
-    
-    @scala.inline
-    def setFullResourceName(value: String): Self = this.set("fullResourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullResourceName: Self = this.set("fullResourceName", js.undefined)
+    def setFullResourceNameUndefined: Self = StObject.set(x, "fullResourceName", js.undefined)
   }
 }

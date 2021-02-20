@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a time value. */
 @js.native
-trait Time extends js.Object {
+trait Time extends StObject {
   
   /** contains the hour (0-23). */
   var Hours: Double = js.native
@@ -35,33 +36,21 @@ object Time {
   }
   
   @scala.inline
-  implicit class TimeOps[Self <: Time] (val x: Self) extends AnyVal {
+  implicit class TimeMutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHours(value: Double): Self = StObject.set(x, "Hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsUTC(value: Boolean): Self = StObject.set(x, "IsUTC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinutes(value: Double): Self = StObject.set(x, "Minutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHours(value: Double): Self = this.set("Hours", value.asInstanceOf[js.Any])
+    def setNanoSeconds(value: Double): Self = StObject.set(x, "NanoSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsUTC(value: Boolean): Self = this.set("IsUTC", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinutes(value: Double): Self = this.set("Minutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNanoSeconds(value: Double): Self = this.set("NanoSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeconds(value: Double): Self = this.set("Seconds", value.asInstanceOf[js.Any])
+    def setSeconds(value: Double): Self = StObject.set(x, "Seconds", value.asInstanceOf[js.Any])
   }
 }

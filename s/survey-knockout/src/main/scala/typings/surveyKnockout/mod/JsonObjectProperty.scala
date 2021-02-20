@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,9 +131,9 @@ class JsonObjectProperty protected () extends IObject {
   var visibleIndex: Double = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "JsonObjectProperty")
-@js.native
-object JsonObjectProperty extends js.Object {
+object JsonObjectProperty {
   
+  @JSImport("survey-knockout", "JsonObjectProperty.getItemValuesDefaultValue")
+  @js.native
   def getItemValuesDefaultValue(`val`: js.Any): js.Any = js.native
 }

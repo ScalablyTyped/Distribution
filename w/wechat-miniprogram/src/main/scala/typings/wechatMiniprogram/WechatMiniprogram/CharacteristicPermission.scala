@@ -1,12 +1,13 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 特征值权限 */
 @js.native
-trait CharacteristicPermission extends js.Object {
+trait CharacteristicPermission extends StObject {
   
   /** 加密读请求 */
   var readEncryptionRequired: js.UndefOr[Boolean] = js.native
@@ -29,42 +30,30 @@ object CharacteristicPermission {
   }
   
   @scala.inline
-  implicit class CharacteristicPermissionOps[Self <: CharacteristicPermission] (val x: Self) extends AnyVal {
+  implicit class CharacteristicPermissionMutableBuilder[Self <: CharacteristicPermission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReadEncryptionRequired(value: Boolean): Self = StObject.set(x, "readEncryptionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadEncryptionRequiredUndefined: Self = StObject.set(x, "readEncryptionRequired", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadEncryptionRequired(value: Boolean): Self = this.set("readEncryptionRequired", value.asInstanceOf[js.Any])
+    def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     
     @scala.inline
-    def deleteReadEncryptionRequired: Self = this.set("readEncryptionRequired", js.undefined)
+    def setWriteEncryptionRequired(value: Boolean): Self = StObject.set(x, "writeEncryptionRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadable(value: Boolean): Self = this.set("readable", value.asInstanceOf[js.Any])
+    def setWriteEncryptionRequiredUndefined: Self = StObject.set(x, "writeEncryptionRequired", js.undefined)
     
     @scala.inline
-    def deleteReadable: Self = this.set("readable", js.undefined)
+    def setWriteable(value: Boolean): Self = StObject.set(x, "writeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWriteEncryptionRequired(value: Boolean): Self = this.set("writeEncryptionRequired", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteEncryptionRequired: Self = this.set("writeEncryptionRequired", js.undefined)
-    
-    @scala.inline
-    def setWriteable(value: Boolean): Self = this.set("writeable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteable: Self = this.set("writeable", js.undefined)
+    def setWriteableUndefined: Self = StObject.set(x, "writeable", js.undefined)
   }
 }

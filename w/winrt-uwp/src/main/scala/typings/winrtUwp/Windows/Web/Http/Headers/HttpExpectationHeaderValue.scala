@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Web.Http.Headers
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a token for a particular server behavior required by the client that is used in the Expect HTTP header on an HTTP request. */
 @js.native
-trait HttpExpectationHeaderValue extends js.Object {
+trait HttpExpectationHeaderValue extends StObject {
   
   /** Gets or sets a token that represents a name for a server behavior used in the Expect HTTP header. */
   var name: String = js.native
@@ -27,27 +28,15 @@ object HttpExpectationHeaderValue {
   }
   
   @scala.inline
-  implicit class HttpExpectationHeaderValueOps[Self <: HttpExpectationHeaderValue] (val x: Self) extends AnyVal {
+  implicit class HttpExpectationHeaderValueMutableBuilder[Self <: HttpExpectationHeaderValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Playback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaPlayerError extends js.Object
+sealed trait MediaPlayerError extends StObject
 /** Indicates possible media player errors. */
 @JSGlobal("Windows.Media.Playback.MediaPlayerError")
 @js.native
-object MediaPlayerError extends js.Object {
+object MediaPlayerError extends StObject {
   
   /** The last operation was aborted. */
   @js.native

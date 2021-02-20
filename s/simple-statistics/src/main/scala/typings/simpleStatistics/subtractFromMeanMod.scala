@@ -1,12 +1,13 @@
 package typings.simpleStatistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("simple-statistics/src/subtract_from_mean", JSImport.Namespace)
-@js.native
-object subtractFromMeanMod extends js.Object {
+object subtractFromMeanMod {
   
+  @JSImport("simple-statistics/src/subtract_from_mean", JSImport.Default)
+  @js.native
   def default(mean: Double, n: Double, value: Double): Double = js.native
 }

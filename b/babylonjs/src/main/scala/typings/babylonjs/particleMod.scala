@@ -9,16 +9,16 @@ import typings.babylonjs.mathVectorMod.Vector4
 import typings.babylonjs.particleSystemMod.ParticleSystem
 import typings.babylonjs.subEmitterMod.SubEmitter
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/particle", JSImport.Namespace)
-@js.native
-object particleMod extends js.Object {
+object particleMod {
   
+  @JSImport("babylonjs/Particles/particle", "Particle")
   @js.native
-  class Particle protected () extends js.Object {
+  class Particle protected () extends StObject {
     /**
       * Creates a new instance Particle
       * @param particleSystem the particle system the particle belongs to
@@ -199,9 +199,16 @@ object particleMod extends js.Object {
     var updateCellInfoFromSystem: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object Particle extends js.Object {
+  object Particle {
     
-    var _Count: js.Any = js.native
+    @JSImport("babylonjs/Particles/particle", "Particle")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Particles/particle", "Particle._Count")
+    @js.native
+    def _Count: js.Any = js.native
+    @scala.inline
+    def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
   }
 }

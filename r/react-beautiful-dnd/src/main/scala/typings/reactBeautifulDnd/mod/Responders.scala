@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Responders extends js.Object {
+trait Responders extends StObject {
   
   var onBeforeCapture: js.UndefOr[OnBeforeCaptureResponder] = js.native
   
@@ -27,45 +28,33 @@ object Responders {
   }
   
   @scala.inline
-  implicit class RespondersOps[Self <: Responders] (val x: Self) extends AnyVal {
+  implicit class RespondersMutableBuilder[Self <: Responders] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnBeforeCapture(value: /* before */ BeforeCapture => Unit): Self = StObject.set(x, "onBeforeCapture", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBeforeCaptureUndefined: Self = StObject.set(x, "onBeforeCapture", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBeforeDragStart(value: /* start */ DragStart => Unit): Self = StObject.set(x, "onBeforeDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDragEnd(value: (/* result */ DropResult, /* provided */ ResponderProvided) => Unit): Self = this.set("onDragEnd", js.Any.fromFunction2(value))
+    def setOnBeforeDragStartUndefined: Self = StObject.set(x, "onBeforeDragStart", js.undefined)
     
     @scala.inline
-    def setOnBeforeCapture(value: /* before */ BeforeCapture => Unit): Self = this.set("onBeforeCapture", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: (/* result */ DropResult, /* provided */ ResponderProvided) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnBeforeCapture: Self = this.set("onBeforeCapture", js.undefined)
+    def setOnDragStart(value: (/* start */ DragStart, /* provided */ ResponderProvided) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnBeforeDragStart(value: /* start */ DragStart => Unit): Self = this.set("onBeforeDragStart", js.Any.fromFunction1(value))
+    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def deleteOnBeforeDragStart: Self = this.set("onBeforeDragStart", js.undefined)
+    def setOnDragUpdate(value: (/* update */ DragUpdate, /* provided */ ResponderProvided) => Unit): Self = StObject.set(x, "onDragUpdate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDragStart(value: (/* start */ DragStart, /* provided */ ResponderProvided) => Unit): Self = this.set("onDragStart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
-    
-    @scala.inline
-    def setOnDragUpdate(value: (/* update */ DragUpdate, /* provided */ ResponderProvided) => Unit): Self = this.set("onDragUpdate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnDragUpdate: Self = this.set("onDragUpdate", js.undefined)
+    def setOnDragUpdateUndefined: Self = StObject.set(x, "onDragUpdate", js.undefined)
   }
 }

@@ -1,14 +1,17 @@
 package typings.jstimezonedetect
 
 import typings.jstimezonedetect.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jstimezonedetect", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("jstimezonedetect", "determine")
+  @js.native
   def determine(): Name = js.native
+  @JSImport("jstimezonedetect", "determine")
+  @js.native
   def determine(usingIntl: Boolean): Name = js.native
 }

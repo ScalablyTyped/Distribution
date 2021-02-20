@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobDetail extends js.Object {
+trait JobDetail extends StObject {
   
   /**
     * The array properties of the job, if it is an array job.
@@ -123,126 +124,114 @@ object JobDetail {
   }
   
   @scala.inline
-  implicit class JobDetailOps[Self <: JobDetail] (val x: Self) extends AnyVal {
+  implicit class JobDetailMutableBuilder[Self <: JobDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayProperties(value: ArrayPropertiesDetail): Self = StObject.set(x, "arrayProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayPropertiesUndefined: Self = StObject.set(x, "arrayProperties", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttempts(value: AttemptDetails): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobDefinition(value: String): Self = this.set("jobDefinition", value.asInstanceOf[js.Any])
+    def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setAttemptsVarargs(value: AttemptDetail*): Self = StObject.set(x, "attempts", js.Array(value :_*))
     
     @scala.inline
-    def setJobName(value: String): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    def setContainer(value: ContainerDetail): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobQueue(value: String): Self = this.set("jobQueue", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setStartedAt(value: Long): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    def setCreatedAt(value: Long): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def setArrayProperties(value: ArrayPropertiesDetail): Self = this.set("arrayProperties", value.asInstanceOf[js.Any])
+    def setDependsOn(value: JobDependencyList): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArrayProperties: Self = this.set("arrayProperties", js.undefined)
+    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
     @scala.inline
-    def setAttemptsVarargs(value: AttemptDetail*): Self = this.set("attempts", js.Array(value :_*))
+    def setDependsOnVarargs(value: JobDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
     @scala.inline
-    def setAttempts(value: AttemptDetails): Self = this.set("attempts", value.asInstanceOf[js.Any])
+    def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttempts: Self = this.set("attempts", js.undefined)
+    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
     @scala.inline
-    def setContainer(value: ContainerDetail): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setJobDefinition(value: String): Self = StObject.set(x, "jobDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Long): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setJobQueue(value: String): Self = StObject.set(x, "jobQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependsOnVarargs(value: JobDependency*): Self = this.set("dependsOn", js.Array(value :_*))
+    def setNodeDetails(value: NodeDetails): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependsOn(value: JobDependencyList): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
     
     @scala.inline
-    def deleteDependsOn: Self = this.set("dependsOn", js.undefined)
+    def setNodeProperties(value: NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobArn(value: String): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
     
     @scala.inline
-    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeDetails(value: NodeDetails): Self = this.set("nodeDetails", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def deleteNodeDetails: Self = this.set("nodeDetails", js.undefined)
+    def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeProperties(value: NodeProperties): Self = this.set("nodeProperties", value.asInstanceOf[js.Any])
+    def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     
     @scala.inline
-    def deleteNodeProperties: Self = this.set("nodeProperties", js.undefined)
+    def setStartedAt(value: Long): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParameters: Self = this.set("parameters", js.undefined)
+    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryStrategy(value: RetryStrategy): Self = this.set("retryStrategy", value.asInstanceOf[js.Any])
+    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
     @scala.inline
-    def deleteRetryStrategy: Self = this.set("retryStrategy", js.undefined)
+    def setStoppedAt(value: Long): Self = StObject.set(x, "stoppedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    def setStoppedAtUndefined: Self = StObject.set(x, "stoppedAt", js.undefined)
     
     @scala.inline
-    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoppedAt(value: Long): Self = this.set("stoppedAt", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteStoppedAt: Self = this.set("stoppedAt", js.undefined)
+    def setTimeout(value: JobTimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagrisTagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: JobTimeout): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

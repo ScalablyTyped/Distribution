@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResumeRequest extends js.Object {
+trait ResumeRequest extends StObject {
   
   /**
     * Set to true to terminate execution upon resuming execution. In contrast
@@ -25,24 +26,12 @@ object ResumeRequest {
   }
   
   @scala.inline
-  implicit class ResumeRequestOps[Self <: ResumeRequest] (val x: Self) extends AnyVal {
+  implicit class ResumeRequestMutableBuilder[Self <: ResumeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTerminateOnResume(value: Boolean): Self = StObject.set(x, "terminateOnResume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTerminateOnResume(value: Boolean): Self = this.set("terminateOnResume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateOnResume: Self = this.set("terminateOnResume", js.undefined)
+    def setTerminateOnResumeUndefined: Self = StObject.set(x, "terminateOnResume", js.undefined)
   }
 }

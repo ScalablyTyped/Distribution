@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxSmimeEncryptionAlgorithm extends js.Object
+sealed trait EmailMailboxSmimeEncryptionAlgorithm extends StObject
 /** Defines the encryption algorithm used for an email. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxSmimeEncryptionAlgorithm")
 @js.native
-object EmailMailboxSmimeEncryptionAlgorithm extends js.Object {
+object EmailMailboxSmimeEncryptionAlgorithm extends StObject {
   
   /** The encryption algorithm requirements are not specified. */
   @js.native

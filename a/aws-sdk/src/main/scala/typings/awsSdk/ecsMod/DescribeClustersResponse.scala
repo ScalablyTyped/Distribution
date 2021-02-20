@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeClustersResponse extends js.Object {
+trait DescribeClustersResponse extends StObject {
   
   /**
     * The list of clusters.
@@ -26,36 +27,24 @@ object DescribeClustersResponse {
   }
   
   @scala.inline
-  implicit class DescribeClustersResponseOps[Self <: DescribeClustersResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeClustersResponseMutableBuilder[Self <: DescribeClustersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusters(value: Clusters): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
     @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = this.set("clusters", js.Array(value :_*))
+    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusters(value: Clusters): Self = this.set("clusters", value.asInstanceOf[js.Any])
+    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
     @scala.inline
-    def deleteClusters: Self = this.set("clusters", js.undefined)
-    
-    @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = this.set("failures", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailures(value: Failures): Self = this.set("failures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailures: Self = this.set("failures", js.undefined)
+    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
   }
 }

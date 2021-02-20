@@ -1,11 +1,12 @@
 package typings.filepond.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilePondDragDropProps extends js.Object {
+trait FilePondDragDropProps extends StObject {
   
   /**
     * Require drop on the FilePond element itself to catch the file.
@@ -42,45 +43,33 @@ object FilePondDragDropProps {
   }
   
   @scala.inline
-  implicit class FilePondDragDropPropsOps[Self <: FilePondDragDropProps] (val x: Self) extends AnyVal {
+  implicit class FilePondDragDropPropsMutableBuilder[Self <: FilePondDragDropProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropOnElement(value: Boolean): Self = StObject.set(x, "dropOnElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropOnElementUndefined: Self = StObject.set(x, "dropOnElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropOnPage(value: Boolean): Self = StObject.set(x, "dropOnPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropOnElement(value: Boolean): Self = this.set("dropOnElement", value.asInstanceOf[js.Any])
+    def setDropOnPageUndefined: Self = StObject.set(x, "dropOnPage", js.undefined)
     
     @scala.inline
-    def deleteDropOnElement: Self = this.set("dropOnElement", js.undefined)
+    def setDropValidation(value: Boolean): Self = StObject.set(x, "dropValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropOnPage(value: Boolean): Self = this.set("dropOnPage", value.asInstanceOf[js.Any])
+    def setDropValidationUndefined: Self = StObject.set(x, "dropValidation", js.undefined)
     
     @scala.inline
-    def deleteDropOnPage: Self = this.set("dropOnPage", js.undefined)
+    def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropValidation(value: Boolean): Self = this.set("dropValidation", value.asInstanceOf[js.Any])
+    def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
     
     @scala.inline
-    def deleteDropValidation: Self = this.set("dropValidation", js.undefined)
-    
-    @scala.inline
-    def setIgnoredFilesVarargs(value: String*): Self = this.set("ignoredFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setIgnoredFiles(value: js.Array[String]): Self = this.set("ignoredFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoredFiles: Self = this.set("ignoredFiles", js.undefined)
+    def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
   }
 }

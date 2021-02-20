@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.all
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait ConditionalAccessDevicePlatform extends js.Object
+trait ConditionalAccessDevicePlatform extends StObject
 object ConditionalAccessDevicePlatform {
   
   @scala.inline

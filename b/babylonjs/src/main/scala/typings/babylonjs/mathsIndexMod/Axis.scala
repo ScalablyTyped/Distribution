@@ -1,5 +1,6 @@
 package typings.babylonjs.mathsIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Axis ()
   extends typings.babylonjs.mathMod.Axis
 /* static members */
-@JSImport("babylonjs/Maths/index", "Axis")
-@js.native
-object Axis extends js.Object {
+object Axis {
+  
+  @JSImport("babylonjs/Maths/index", "Axis")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** X axis */
-  var X: typings.babylonjs.mathVectorMod.Vector3 = js.native
+  @JSImport("babylonjs/Maths/index", "Axis.X")
+  @js.native
+  def X: typings.babylonjs.mathVectorMod.Vector3 = js.native
+  @scala.inline
+  def X_=(x: typings.babylonjs.mathVectorMod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
   
   /** Y axis */
-  var Y: typings.babylonjs.mathVectorMod.Vector3 = js.native
+  @JSImport("babylonjs/Maths/index", "Axis.Y")
+  @js.native
+  def Y: typings.babylonjs.mathVectorMod.Vector3 = js.native
+  @scala.inline
+  def Y_=(x: typings.babylonjs.mathVectorMod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
   
   /** Z axis */
-  var Z: typings.babylonjs.mathVectorMod.Vector3 = js.native
+  @JSImport("babylonjs/Maths/index", "Axis.Z")
+  @js.native
+  def Z: typings.babylonjs.mathVectorMod.Vector3 = js.native
+  @scala.inline
+  def Z_=(x: typings.babylonjs.mathVectorMod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
 }

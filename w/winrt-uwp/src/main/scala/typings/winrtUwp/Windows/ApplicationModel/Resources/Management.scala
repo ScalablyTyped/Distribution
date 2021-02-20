@@ -1,18 +1,18 @@
 package typings.winrtUwp.Windows.ApplicationModel.Resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Resources.Management")
-@js.native
-object Management extends js.Object {
+object Management {
   
   @js.native
-  sealed trait IndexedResourceType extends js.Object
+  sealed trait IndexedResourceType extends StObject
   /** Specifies whether an IndexedResourceCandidate is a file or a string. */
+  @JSGlobal("Windows.ApplicationModel.Resources.Management.IndexedResourceType")
   @js.native
-  object IndexedResourceType extends js.Object {
+  object IndexedResourceType extends StObject {
     
     /** Reserved. */
     @js.native

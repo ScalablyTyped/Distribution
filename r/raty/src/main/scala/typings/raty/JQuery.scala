@@ -8,12 +8,13 @@ import typings.raty.ratyStrings.readonly
 import typings.raty.ratyStrings.reload
 import typings.raty.ratyStrings.score
 import typings.raty.ratyStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def raty(): JQuery = js.native
   def raty(method: String, parameter: js.Any): js.Any = js.native

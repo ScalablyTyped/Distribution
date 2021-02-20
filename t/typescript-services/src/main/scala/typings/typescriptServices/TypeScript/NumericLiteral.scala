@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,33 +54,21 @@ object NumericLiteral {
   }
   
   @scala.inline
-  implicit class NumericLiteralOps[Self <: NumericLiteral] (val x: Self) extends AnyVal {
+  implicit class NumericLiteralMutableBuilder[Self <: NumericLiteral] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStructuralEquals(value: (NumericLiteral, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValue(value: () => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_text(value: js.Any): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_text(value: js.Any): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_value(value: js.Any): Self = this.set("_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_valueText(value: js.Any): Self = this.set("_valueText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (NumericLiteral, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValue(value: () => js.Any): Self = this.set("value", js.Any.fromFunction0(value))
+    def set_valueText(value: js.Any): Self = StObject.set(x, "_valueText", value.asInstanceOf[js.Any])
   }
 }

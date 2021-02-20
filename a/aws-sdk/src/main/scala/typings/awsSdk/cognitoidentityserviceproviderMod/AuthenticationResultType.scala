@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AuthenticationResultType extends js.Object {
+trait AuthenticationResultType extends StObject {
   
   /**
     * The access token.
@@ -46,54 +47,42 @@ object AuthenticationResultType {
   }
   
   @scala.inline
-  implicit class AuthenticationResultTypeOps[Self <: AuthenticationResultType] (val x: Self) extends AnyVal {
+  implicit class AuthenticationResultTypeMutableBuilder[Self <: AuthenticationResultType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiresIn(value: IntegerType): Self = StObject.set(x, "ExpiresIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessToken(value: TokenModelType): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    def setExpiresInUndefined: Self = StObject.set(x, "ExpiresIn", js.undefined)
     
     @scala.inline
-    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
+    def setIdToken(value: TokenModelType): Self = StObject.set(x, "IdToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiresIn(value: IntegerType): Self = this.set("ExpiresIn", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "IdToken", js.undefined)
     
     @scala.inline
-    def deleteExpiresIn: Self = this.set("ExpiresIn", js.undefined)
+    def setNewDeviceMetadata(value: NewDeviceMetadataType): Self = StObject.set(x, "NewDeviceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: TokenModelType): Self = this.set("IdToken", value.asInstanceOf[js.Any])
+    def setNewDeviceMetadataUndefined: Self = StObject.set(x, "NewDeviceMetadata", js.undefined)
     
     @scala.inline
-    def deleteIdToken: Self = this.set("IdToken", js.undefined)
+    def setRefreshToken(value: TokenModelType): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewDeviceMetadata(value: NewDeviceMetadataType): Self = this.set("NewDeviceMetadata", value.asInstanceOf[js.Any])
+    def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
     
     @scala.inline
-    def deleteNewDeviceMetadata: Self = this.set("NewDeviceMetadata", js.undefined)
+    def setTokenType(value: StringType): Self = StObject.set(x, "TokenType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshToken(value: TokenModelType): Self = this.set("RefreshToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefreshToken: Self = this.set("RefreshToken", js.undefined)
-    
-    @scala.inline
-    def setTokenType(value: StringType): Self = this.set("TokenType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenType: Self = this.set("TokenType", js.undefined)
+    def setTokenTypeUndefined: Self = StObject.set(x, "TokenType", js.undefined)
   }
 }

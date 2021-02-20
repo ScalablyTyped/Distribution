@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerSideEncryption extends js.Object {
+trait ServerSideEncryption extends StObject {
   
   /**
     * The server-side encryption algorithm that's used when storing data in the bucket or object. If encryption is disabled for the bucket or object, this value is NONE.
@@ -26,30 +27,18 @@ object ServerSideEncryption {
   }
   
   @scala.inline
-  implicit class ServerSideEncryptionOps[Self <: ServerSideEncryption] (val x: Self) extends AnyVal {
+  implicit class ServerSideEncryptionMutableBuilder[Self <: ServerSideEncryption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionTypeUndefined: Self = StObject.set(x, "encryptionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKmsMasterKeyId(value: string): Self = StObject.set(x, "kmsMasterKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = this.set("encryptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionType: Self = this.set("encryptionType", js.undefined)
-    
-    @scala.inline
-    def setKmsMasterKeyId(value: string): Self = this.set("kmsMasterKeyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKmsMasterKeyId: Self = this.set("kmsMasterKeyId", js.undefined)
+    def setKmsMasterKeyIdUndefined: Self = StObject.set(x, "kmsMasterKeyId", js.undefined)
   }
 }

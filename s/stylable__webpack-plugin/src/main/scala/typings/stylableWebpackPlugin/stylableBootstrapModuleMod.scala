@@ -5,17 +5,17 @@ import typings.stylableWebpackPlugin.anon.AutoInit
 import typings.stylableWebpackPlugin.stylableDependenciesMod.StylableImportDependency
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import typings.webpackSources.mod.RawSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/webpack-plugin/cjs/stylable-bootstrap-module", JSImport.Namespace)
-@js.native
-object stylableBootstrapModuleMod extends js.Object {
+object stylableBootstrapModuleMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  class StylableBootstrapModule protected () extends js.Object {
+  - Dropped any */ @JSImport("@stylable/webpack-plugin/cjs/stylable-bootstrap-module", "StylableBootstrapModule")
+  @js.native
+  class StylableBootstrapModule protected () extends StObject {
     def this(
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,

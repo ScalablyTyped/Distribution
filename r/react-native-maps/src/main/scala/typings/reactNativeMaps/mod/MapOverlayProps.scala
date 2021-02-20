@@ -3,6 +3,7 @@ package typings.reactNativeMaps.mod
 import typings.reactNative.mod.ImageRequireSource
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.ViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object MapOverlayProps {
   }
   
   @scala.inline
-  implicit class MapOverlayPropsOps[Self <: MapOverlayProps] (val x: Self) extends AnyVal {
+  implicit class MapOverlayPropsMutableBuilder[Self <: MapOverlayProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: js.Tuple2[Coordinate, Coordinate]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImage(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBounds(value: js.Tuple2[Coordinate, Coordinate]): Self = this.set("bounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImage(value: ImageURISource | ImageRequireSource): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

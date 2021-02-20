@@ -2,12 +2,13 @@ package typings.victory.anon
 
 import typings.victory.mod.CallbackArgs
 import typings.victory.mod.NumberOrCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bottom extends js.Object {
+trait Bottom extends StObject {
   
   var bottom: js.UndefOr[NumberOrCallback] = js.native
   
@@ -30,72 +31,60 @@ object Bottom {
   }
   
   @scala.inline
-  implicit class BottomOps[Self <: Bottom] (val x: Self) extends AnyVal {
+  implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottom(value: NumberOrCallback): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottomFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "bottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottomLeft(value: NumberOrCallback): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("bottom", js.Any.fromFunction1(value))
+    def setBottomLeftFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "bottomLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBottom(value: NumberOrCallback): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setBottomLeftUndefined: Self = StObject.set(x, "bottomLeft", js.undefined)
     
     @scala.inline
-    def deleteBottom: Self = this.set("bottom", js.undefined)
+    def setBottomRight(value: NumberOrCallback): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomLeftFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("bottomLeft", js.Any.fromFunction1(value))
+    def setBottomRightFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "bottomRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBottomLeft(value: NumberOrCallback): Self = this.set("bottomLeft", value.asInstanceOf[js.Any])
+    def setBottomRightUndefined: Self = StObject.set(x, "bottomRight", js.undefined)
     
     @scala.inline
-    def deleteBottomLeft: Self = this.set("bottomLeft", js.undefined)
+    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
     @scala.inline
-    def setBottomRightFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("bottomRight", js.Any.fromFunction1(value))
+    def setTop(value: NumberOrCallback): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomRight(value: NumberOrCallback): Self = this.set("bottomRight", value.asInstanceOf[js.Any])
+    def setTopFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "top", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteBottomRight: Self = this.set("bottomRight", js.undefined)
+    def setTopLeft(value: NumberOrCallback): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("top", js.Any.fromFunction1(value))
+    def setTopLeftFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "topLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTop(value: NumberOrCallback): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setTopLeftUndefined: Self = StObject.set(x, "topLeft", js.undefined)
     
     @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopRight(value: NumberOrCallback): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopLeftFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("topLeft", js.Any.fromFunction1(value))
+    def setTopRightFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "topRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTopLeft(value: NumberOrCallback): Self = this.set("topLeft", value.asInstanceOf[js.Any])
+    def setTopRightUndefined: Self = StObject.set(x, "topRight", js.undefined)
     
     @scala.inline
-    def deleteTopLeft: Self = this.set("topLeft", js.undefined)
-    
-    @scala.inline
-    def setTopRightFunction1(value: /* args */ CallbackArgs => Double): Self = this.set("topRight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTopRight(value: NumberOrCallback): Self = this.set("topRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopRight: Self = this.set("topRight", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

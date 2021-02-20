@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowedValues extends js.Object {
+trait AllowedValues extends StObject {
   
   var all: scala.Double = js.native
   
@@ -24,30 +25,18 @@ object AllowedValues {
   }
   
   @scala.inline
-  implicit class AllowedValuesOps[Self <: AllowedValues] (val x: Self) extends AnyVal {
+  implicit class AllowedValuesMutableBuilder[Self <: AllowedValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedValues(value: scala.Double): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependentFields(value: scala.Double): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowedValues(value: scala.Double): Self = this.set("allowedValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDependentFields(value: scala.Double): Self = this.set("dependentFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

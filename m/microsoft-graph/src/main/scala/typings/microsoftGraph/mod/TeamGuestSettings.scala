@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamGuestSettings extends js.Object {
+trait TeamGuestSettings extends StObject {
   
   // If set to true, guests can add and update channels.
   var allowCreateUpdateChannels: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -22,36 +23,24 @@ object TeamGuestSettings {
   }
   
   @scala.inline
-  implicit class TeamGuestSettingsOps[Self <: TeamGuestSettings] (val x: Self) extends AnyVal {
+  implicit class TeamGuestSettingsMutableBuilder[Self <: TeamGuestSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowCreateUpdateChannels(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCreateUpdateChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowCreateUpdateChannelsNull: Self = StObject.set(x, "allowCreateUpdateChannels", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowCreateUpdateChannelsUndefined: Self = StObject.set(x, "allowCreateUpdateChannels", js.undefined)
     
     @scala.inline
-    def setAllowCreateUpdateChannels(value: NullableOption[Boolean]): Self = this.set("allowCreateUpdateChannels", value.asInstanceOf[js.Any])
+    def setAllowDeleteChannels(value: NullableOption[Boolean]): Self = StObject.set(x, "allowDeleteChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowCreateUpdateChannels: Self = this.set("allowCreateUpdateChannels", js.undefined)
+    def setAllowDeleteChannelsNull: Self = StObject.set(x, "allowDeleteChannels", null)
     
     @scala.inline
-    def setAllowCreateUpdateChannelsNull: Self = this.set("allowCreateUpdateChannels", null)
-    
-    @scala.inline
-    def setAllowDeleteChannels(value: NullableOption[Boolean]): Self = this.set("allowDeleteChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowDeleteChannels: Self = this.set("allowDeleteChannels", js.undefined)
-    
-    @scala.inline
-    def setAllowDeleteChannelsNull: Self = this.set("allowDeleteChannels", null)
+    def setAllowDeleteChannelsUndefined: Self = StObject.set(x, "allowDeleteChannels", js.undefined)
   }
 }

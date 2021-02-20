@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/school-book", JSImport.Namespace)
-@js.native
-object schoolBookMod extends js.Object {
+object schoolBookMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/styles/hljs/school-book", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * party endpoints.
   */
 @js.native
-trait SchemaOidcToken extends js.Object {
+trait SchemaOidcToken extends StObject {
   
   /**
     * Audience to be used when generating OIDC token. If not specified, the URI
@@ -37,30 +38,18 @@ object SchemaOidcToken {
   }
   
   @scala.inline
-  implicit class SchemaOidcTokenOps[Self <: SchemaOidcToken] (val x: Self) extends AnyVal {
+  implicit class SchemaOidcTokenMutableBuilder[Self <: SchemaOidcToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAudience: Self = this.set("audience", js.undefined)
-    
-    @scala.inline
-    def setServiceAccountEmail(value: String): Self = this.set("serviceAccountEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccountEmail: Self = this.set("serviceAccountEmail", js.undefined)
+    def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
   }
 }

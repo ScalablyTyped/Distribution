@@ -5,12 +5,13 @@ import typings.chrome.chrome.windows.GetInfo
 import typings.chrome.chrome.windows.UpdateInfo
 import typings.chrome.chrome.windows.WindowIdEvent
 import typings.chrome.chrome.windows.WindowReferenceEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofwindows extends js.Object {
+trait Typeofwindows extends StObject {
   
   var WINDOW_ID_CURRENT: Double = js.native
   

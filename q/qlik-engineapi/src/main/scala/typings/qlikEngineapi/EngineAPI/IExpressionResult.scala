@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ExpressionResult...
   */
 @js.native
-trait IExpressionResult extends js.Object {
+trait IExpressionResult extends StObject {
   
   var qBadFieldNames: js.Array[INxRange] = js.native
 }
@@ -21,24 +22,12 @@ object IExpressionResult {
   }
   
   @scala.inline
-  implicit class IExpressionResultOps[Self <: IExpressionResult] (val x: Self) extends AnyVal {
+  implicit class IExpressionResultMutableBuilder[Self <: IExpressionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQBadFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qBadFieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQBadFieldNamesVarargs(value: INxRange*): Self = this.set("qBadFieldNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setQBadFieldNames(value: js.Array[INxRange]): Self = this.set("qBadFieldNames", value.asInstanceOf[js.Any])
+    def setQBadFieldNamesVarargs(value: INxRange*): Self = StObject.set(x, "qBadFieldNames", js.Array(value :_*))
   }
 }

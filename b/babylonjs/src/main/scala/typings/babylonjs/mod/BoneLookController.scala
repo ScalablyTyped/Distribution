@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.anon.AdjustPitch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,13 +42,27 @@ class BoneLookController protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "BoneLookController")
-@js.native
-object BoneLookController extends js.Object {
+object BoneLookController {
   
-  var _tmpMats: js.Any = js.native
+  @JSImport("babylonjs", "BoneLookController")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var _tmpQuat: js.Any = js.native
+  @JSImport("babylonjs", "BoneLookController._tmpMats")
+  @js.native
+  def _tmpMats: js.Any = js.native
+  @scala.inline
+  def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
   
-  var _tmpVecs: js.Any = js.native
+  @JSImport("babylonjs", "BoneLookController._tmpQuat")
+  @js.native
+  def _tmpQuat: js.Any = js.native
+  @scala.inline
+  def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs", "BoneLookController._tmpVecs")
+  @js.native
+  def _tmpVecs: js.Any = js.native
+  @scala.inline
+  def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
 }

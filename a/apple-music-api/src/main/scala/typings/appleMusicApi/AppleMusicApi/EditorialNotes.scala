@@ -1,12 +1,13 @@
 package typings.appleMusicApi.AppleMusicApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/editorialnotes
 @js.native
-trait EditorialNotes extends js.Object {
+trait EditorialNotes extends StObject {
   
   var short: String = js.native
   
@@ -21,24 +22,12 @@ object EditorialNotes {
   }
   
   @scala.inline
-  implicit class EditorialNotesOps[Self <: EditorialNotes] (val x: Self) extends AnyVal {
+  implicit class EditorialNotesMutableBuilder[Self <: EditorialNotes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setShort(value: String): Self = this.set("short", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandard(value: String): Self = this.set("standard", value.asInstanceOf[js.Any])
+    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
   }
 }

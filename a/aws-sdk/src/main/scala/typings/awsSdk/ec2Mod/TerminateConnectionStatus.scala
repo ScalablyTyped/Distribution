@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateConnectionStatus extends js.Object {
+trait TerminateConnectionStatus extends StObject {
   
   /**
     * The ID of the client connection.
@@ -31,36 +32,24 @@ object TerminateConnectionStatus {
   }
   
   @scala.inline
-  implicit class TerminateConnectionStatusOps[Self <: TerminateConnectionStatus] (val x: Self) extends AnyVal {
+  implicit class TerminateConnectionStatusMutableBuilder[Self <: TerminateConnectionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionId(value: String): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "CurrentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: String): Self = this.set("ConnectionId", value.asInstanceOf[js.Any])
+    def setCurrentStatusUndefined: Self = StObject.set(x, "CurrentStatus", js.undefined)
     
     @scala.inline
-    def deleteConnectionId: Self = this.set("ConnectionId", js.undefined)
+    def setPreviousStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "PreviousStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentStatus(value: ClientVpnConnectionStatus): Self = this.set("CurrentStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrentStatus: Self = this.set("CurrentStatus", js.undefined)
-    
-    @scala.inline
-    def setPreviousStatus(value: ClientVpnConnectionStatus): Self = this.set("PreviousStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreviousStatus: Self = this.set("PreviousStatus", js.undefined)
+    def setPreviousStatusUndefined: Self = StObject.set(x, "PreviousStatus", js.undefined)
   }
 }

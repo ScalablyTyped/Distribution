@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,42 +73,30 @@ object XTextCursor {
   }
   
   @scala.inline
-  implicit class XTextCursorOps[Self <: XTextCursor] (val x: Self) extends AnyVal {
+  implicit class XTextCursorMutableBuilder[Self <: XTextCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollapseToStart(value: () => Unit): Self = StObject.set(x, "collapseToStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCollapseToEnd(value: () => Unit): Self = this.set("collapseToEnd", js.Any.fromFunction0(value))
+    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCollapseToStart(value: () => Unit): Self = this.set("collapseToStart", js.Any.fromFunction0(value))
+    def setGotoEnd(value: Boolean => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGoLeft(value: (Double, Boolean) => Boolean): Self = this.set("goLeft", js.Any.fromFunction2(value))
+    def setGotoRange(value: (XTextRange, Boolean) => Unit): Self = StObject.set(x, "gotoRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGoRight(value: (Double, Boolean) => Boolean): Self = this.set("goRight", js.Any.fromFunction2(value))
+    def setGotoStart(value: Boolean => Unit): Self = StObject.set(x, "gotoStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoEnd(value: Boolean => Unit): Self = this.set("gotoEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGotoRange(value: (XTextRange, Boolean) => Unit): Self = this.set("gotoRange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGotoStart(value: Boolean => Unit): Self = this.set("gotoStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsCollapsed(value: () => Boolean): Self = this.set("isCollapsed", js.Any.fromFunction0(value))
+    def setIsCollapsed(value: () => Boolean): Self = StObject.set(x, "isCollapsed", js.Any.fromFunction0(value))
   }
 }

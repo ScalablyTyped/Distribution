@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworkscmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeNodeAssociationStatusRequest extends js.Object {
+trait DescribeNodeAssociationStatusRequest extends StObject {
   
   /**
     * The token returned in either the AssociateNodeResponse or the DisassociateNodeResponse. 
@@ -26,24 +27,12 @@ object DescribeNodeAssociationStatusRequest {
   }
   
   @scala.inline
-  implicit class DescribeNodeAssociationStatusRequestOps[Self <: DescribeNodeAssociationStatusRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeNodeAssociationStatusRequestMutableBuilder[Self <: DescribeNodeAssociationStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = StObject.set(x, "NodeAssociationStatusToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNodeAssociationStatusToken(value: NodeAssociationStatusToken): Self = this.set("NodeAssociationStatusToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

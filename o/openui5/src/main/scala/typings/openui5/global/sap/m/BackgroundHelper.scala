@@ -2,13 +2,12 @@ package typings.openui5.global.sap.m
 
 import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.RenderManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.m.BackgroundHelper")
-@js.native
-object BackgroundHelper extends js.Object {
+object BackgroundHelper {
   
   /**
     * Adds CSS classes and styles to the given RenderManager, depending on the given configuration for
@@ -18,9 +17,17 @@ object BackgroundHelper extends js.Object {
     * @param sBgColor a configured custom background color for the control, if any
     * @param sBgImgUrl the configured custom background image for the control, if any
     */
+  @JSGlobal("sap.m.BackgroundHelper.addBackgroundColorStyles")
+  @js.native
   def addBackgroundColorStyles(rm: RenderManager): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.addBackgroundColorStyles")
+  @js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: js.UndefOr[scala.Nothing], sBgImgUrl: js.Any): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.addBackgroundColorStyles")
+  @js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: String): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.addBackgroundColorStyles")
+  @js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: String, sBgImgUrl: js.Any): Unit = js.native
   
   /**
@@ -36,7 +43,11 @@ object BackgroundHelper extends js.Object {
     * @param bRepeat whether the background image should be repeated/tiled (or stretched)
     * @param fOpacity the background image opacity, if any
     */
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: String): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -45,6 +56,8 @@ object BackgroundHelper extends js.Object {
     bRepeat: js.UndefOr[scala.Nothing],
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -52,6 +65,8 @@ object BackgroundHelper extends js.Object {
     sBgImgUrl: js.UndefOr[scala.Nothing],
     bRepeat: Boolean
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -60,7 +75,11 @@ object BackgroundHelper extends js.Object {
     bRepeat: Boolean,
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: String, sBgImgUrl: js.Any): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -69,7 +88,11 @@ object BackgroundHelper extends js.Object {
     bRepeat: js.UndefOr[scala.Nothing],
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: String, sBgImgUrl: js.Any, bRepeat: Boolean): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -78,7 +101,11 @@ object BackgroundHelper extends js.Object {
     bRepeat: Boolean,
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: js.Array[String]): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -87,6 +114,8 @@ object BackgroundHelper extends js.Object {
     bRepeat: js.UndefOr[scala.Nothing],
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -94,6 +123,8 @@ object BackgroundHelper extends js.Object {
     sBgImgUrl: js.UndefOr[scala.Nothing],
     bRepeat: Boolean
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -102,7 +133,11 @@ object BackgroundHelper extends js.Object {
     bRepeat: Boolean,
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: js.Array[String], sBgImgUrl: js.Any): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,
@@ -111,7 +146,11 @@ object BackgroundHelper extends js.Object {
     bRepeat: js.UndefOr[scala.Nothing],
     fOpacity: Double
   ): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: js.Array[String], sBgImgUrl: js.Any, bRepeat: Boolean): Unit = js.native
+  @JSGlobal("sap.m.BackgroundHelper.renderBackgroundImageTag")
+  @js.native
   def renderBackgroundImageTag(
     rm: js.Any,
     oControl: Control,

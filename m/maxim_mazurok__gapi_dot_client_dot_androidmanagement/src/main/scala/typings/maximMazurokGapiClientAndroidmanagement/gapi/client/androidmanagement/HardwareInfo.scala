@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HardwareInfo extends js.Object {
+trait HardwareInfo extends StObject {
   
   /** Battery shutdown temperature thresholds in Celsius for each battery on the device. */
   var batteryShutdownTemperatures: js.UndefOr[js.Array[Double]] = js.native
@@ -58,126 +59,114 @@ object HardwareInfo {
   }
   
   @scala.inline
-  implicit class HardwareInfoOps[Self <: HardwareInfo] (val x: Self) extends AnyVal {
+  implicit class HardwareInfoMutableBuilder[Self <: HardwareInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatteryShutdownTemperatures(value: js.Array[Double]): Self = StObject.set(x, "batteryShutdownTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatteryShutdownTemperaturesUndefined: Self = StObject.set(x, "batteryShutdownTemperatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatteryShutdownTemperaturesVarargs(value: Double*): Self = StObject.set(x, "batteryShutdownTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setBatteryShutdownTemperaturesVarargs(value: Double*): Self = this.set("batteryShutdownTemperatures", js.Array(value :_*))
+    def setBatteryThrottlingTemperatures(value: js.Array[Double]): Self = StObject.set(x, "batteryThrottlingTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatteryShutdownTemperatures(value: js.Array[Double]): Self = this.set("batteryShutdownTemperatures", value.asInstanceOf[js.Any])
+    def setBatteryThrottlingTemperaturesUndefined: Self = StObject.set(x, "batteryThrottlingTemperatures", js.undefined)
     
     @scala.inline
-    def deleteBatteryShutdownTemperatures: Self = this.set("batteryShutdownTemperatures", js.undefined)
+    def setBatteryThrottlingTemperaturesVarargs(value: Double*): Self = StObject.set(x, "batteryThrottlingTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setBatteryThrottlingTemperaturesVarargs(value: Double*): Self = this.set("batteryThrottlingTemperatures", js.Array(value :_*))
+    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatteryThrottlingTemperatures(value: js.Array[Double]): Self = this.set("batteryThrottlingTemperatures", value.asInstanceOf[js.Any])
+    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
     @scala.inline
-    def deleteBatteryThrottlingTemperatures: Self = this.set("batteryThrottlingTemperatures", js.undefined)
+    def setCpuShutdownTemperatures(value: js.Array[Double]): Self = StObject.set(x, "cpuShutdownTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setCpuShutdownTemperaturesUndefined: Self = StObject.set(x, "cpuShutdownTemperatures", js.undefined)
     
     @scala.inline
-    def deleteBrand: Self = this.set("brand", js.undefined)
+    def setCpuShutdownTemperaturesVarargs(value: Double*): Self = StObject.set(x, "cpuShutdownTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setCpuShutdownTemperaturesVarargs(value: Double*): Self = this.set("cpuShutdownTemperatures", js.Array(value :_*))
+    def setCpuThrottlingTemperatures(value: js.Array[Double]): Self = StObject.set(x, "cpuThrottlingTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuShutdownTemperatures(value: js.Array[Double]): Self = this.set("cpuShutdownTemperatures", value.asInstanceOf[js.Any])
+    def setCpuThrottlingTemperaturesUndefined: Self = StObject.set(x, "cpuThrottlingTemperatures", js.undefined)
     
     @scala.inline
-    def deleteCpuShutdownTemperatures: Self = this.set("cpuShutdownTemperatures", js.undefined)
+    def setCpuThrottlingTemperaturesVarargs(value: Double*): Self = StObject.set(x, "cpuThrottlingTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setCpuThrottlingTemperaturesVarargs(value: Double*): Self = this.set("cpuThrottlingTemperatures", js.Array(value :_*))
+    def setDeviceBasebandVersion(value: String): Self = StObject.set(x, "deviceBasebandVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuThrottlingTemperatures(value: js.Array[Double]): Self = this.set("cpuThrottlingTemperatures", value.asInstanceOf[js.Any])
+    def setDeviceBasebandVersionUndefined: Self = StObject.set(x, "deviceBasebandVersion", js.undefined)
     
     @scala.inline
-    def deleteCpuThrottlingTemperatures: Self = this.set("cpuThrottlingTemperatures", js.undefined)
+    def setGpuShutdownTemperatures(value: js.Array[Double]): Self = StObject.set(x, "gpuShutdownTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceBasebandVersion(value: String): Self = this.set("deviceBasebandVersion", value.asInstanceOf[js.Any])
+    def setGpuShutdownTemperaturesUndefined: Self = StObject.set(x, "gpuShutdownTemperatures", js.undefined)
     
     @scala.inline
-    def deleteDeviceBasebandVersion: Self = this.set("deviceBasebandVersion", js.undefined)
+    def setGpuShutdownTemperaturesVarargs(value: Double*): Self = StObject.set(x, "gpuShutdownTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setGpuShutdownTemperaturesVarargs(value: Double*): Self = this.set("gpuShutdownTemperatures", js.Array(value :_*))
+    def setGpuThrottlingTemperatures(value: js.Array[Double]): Self = StObject.set(x, "gpuThrottlingTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpuShutdownTemperatures(value: js.Array[Double]): Self = this.set("gpuShutdownTemperatures", value.asInstanceOf[js.Any])
+    def setGpuThrottlingTemperaturesUndefined: Self = StObject.set(x, "gpuThrottlingTemperatures", js.undefined)
     
     @scala.inline
-    def deleteGpuShutdownTemperatures: Self = this.set("gpuShutdownTemperatures", js.undefined)
+    def setGpuThrottlingTemperaturesVarargs(value: Double*): Self = StObject.set(x, "gpuThrottlingTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setGpuThrottlingTemperaturesVarargs(value: Double*): Self = this.set("gpuThrottlingTemperatures", js.Array(value :_*))
+    def setHardware(value: String): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpuThrottlingTemperatures(value: js.Array[Double]): Self = this.set("gpuThrottlingTemperatures", value.asInstanceOf[js.Any])
+    def setHardwareUndefined: Self = StObject.set(x, "hardware", js.undefined)
     
     @scala.inline
-    def deleteGpuThrottlingTemperatures: Self = this.set("gpuThrottlingTemperatures", js.undefined)
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHardware(value: String): Self = this.set("hardware", value.asInstanceOf[js.Any])
+    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     @scala.inline
-    def deleteHardware: Self = this.set("hardware", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setSkinShutdownTemperatures(value: js.Array[Double]): Self = StObject.set(x, "skinShutdownTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    def setSkinShutdownTemperaturesUndefined: Self = StObject.set(x, "skinShutdownTemperatures", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+    def setSkinShutdownTemperaturesVarargs(value: Double*): Self = StObject.set(x, "skinShutdownTemperatures", js.Array(value :_*))
     
     @scala.inline
-    def setSkinShutdownTemperaturesVarargs(value: Double*): Self = this.set("skinShutdownTemperatures", js.Array(value :_*))
+    def setSkinThrottlingTemperatures(value: js.Array[Double]): Self = StObject.set(x, "skinThrottlingTemperatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkinShutdownTemperatures(value: js.Array[Double]): Self = this.set("skinShutdownTemperatures", value.asInstanceOf[js.Any])
+    def setSkinThrottlingTemperaturesUndefined: Self = StObject.set(x, "skinThrottlingTemperatures", js.undefined)
     
     @scala.inline
-    def deleteSkinShutdownTemperatures: Self = this.set("skinShutdownTemperatures", js.undefined)
-    
-    @scala.inline
-    def setSkinThrottlingTemperaturesVarargs(value: Double*): Self = this.set("skinThrottlingTemperatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkinThrottlingTemperatures(value: js.Array[Double]): Self = this.set("skinThrottlingTemperatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkinThrottlingTemperatures: Self = this.set("skinThrottlingTemperatures", js.undefined)
+    def setSkinThrottlingTemperaturesVarargs(value: Double*): Self = StObject.set(x, "skinThrottlingTemperatures", js.Array(value :_*))
   }
 }

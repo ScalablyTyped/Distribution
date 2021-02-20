@@ -1,11 +1,11 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("webkitURL")
 @js.native
 class webkitURL protected ()
@@ -14,17 +14,14 @@ class webkitURL protected ()
   def this(url: java.lang.String, base: java.lang.String) = this()
   def this(url: java.lang.String, base: typings.std.URL) = this()
 }
-@JSGlobal("webkitURL")
-@js.native
-object webkitURL
-  extends Instantiable1[/* url */ java.lang.String, typings.std.URL]
-     with Instantiable2[
-      /* url */ java.lang.String, 
-      (/* base */ java.lang.String) | (/* base */ typings.std.URL), 
-      typings.std.URL
-    ] {
+/* was `typeof URL` */
+object webkitURL {
   
+  @JSGlobal("webkitURL.createObjectURL")
+  @js.native
   def createObjectURL(`object`: js.Any): java.lang.String = js.native
   
+  @JSGlobal("webkitURL.revokeObjectURL")
+  @js.native
   def revokeObjectURL(url: java.lang.String): Unit = js.native
 }

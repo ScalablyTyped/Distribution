@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBooks.anon.CallbackFields
 import typings.maximMazurokGapiClientBooks.anon.CategoryId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnboardingResource extends js.Object {
+trait OnboardingResource extends StObject {
   
   /** List categories for onboarding experience. */
   def listCategories(): Request[Category] = js.native

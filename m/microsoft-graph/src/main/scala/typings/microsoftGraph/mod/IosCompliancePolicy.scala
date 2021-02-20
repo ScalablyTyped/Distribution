@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,123 +62,111 @@ object IosCompliancePolicy {
   }
   
   @scala.inline
-  implicit class IosCompliancePolicyOps[Self <: IosCompliancePolicy] (val x: Self) extends AnyVal {
+  implicit class IosCompliancePolicyMutableBuilder[Self <: IosCompliancePolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceThreatProtectionEnabled(value: Boolean): Self = StObject.set(x, "deviceThreatProtectionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceThreatProtectionEnabledUndefined: Self = StObject.set(x, "deviceThreatProtectionEnabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceThreatProtectionRequiredSecurityLevel(value: DeviceThreatProtectionLevel): Self = StObject.set(x, "deviceThreatProtectionRequiredSecurityLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceThreatProtectionEnabled(value: Boolean): Self = this.set("deviceThreatProtectionEnabled", value.asInstanceOf[js.Any])
+    def setDeviceThreatProtectionRequiredSecurityLevelUndefined: Self = StObject.set(x, "deviceThreatProtectionRequiredSecurityLevel", js.undefined)
     
     @scala.inline
-    def deleteDeviceThreatProtectionEnabled: Self = this.set("deviceThreatProtectionEnabled", js.undefined)
+    def setManagedEmailProfileRequired(value: Boolean): Self = StObject.set(x, "managedEmailProfileRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceThreatProtectionRequiredSecurityLevel(value: DeviceThreatProtectionLevel): Self = this.set("deviceThreatProtectionRequiredSecurityLevel", value.asInstanceOf[js.Any])
+    def setManagedEmailProfileRequiredUndefined: Self = StObject.set(x, "managedEmailProfileRequired", js.undefined)
     
     @scala.inline
-    def deleteDeviceThreatProtectionRequiredSecurityLevel: Self = this.set("deviceThreatProtectionRequiredSecurityLevel", js.undefined)
+    def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedEmailProfileRequired(value: Boolean): Self = this.set("managedEmailProfileRequired", value.asInstanceOf[js.Any])
+    def setOsMaximumVersionNull: Self = StObject.set(x, "osMaximumVersion", null)
     
     @scala.inline
-    def deleteManagedEmailProfileRequired: Self = this.set("managedEmailProfileRequired", js.undefined)
+    def setOsMaximumVersionUndefined: Self = StObject.set(x, "osMaximumVersion", js.undefined)
     
     @scala.inline
-    def setOsMaximumVersion(value: NullableOption[String]): Self = this.set("osMaximumVersion", value.asInstanceOf[js.Any])
+    def setOsMinimumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMinimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOsMaximumVersion: Self = this.set("osMaximumVersion", js.undefined)
+    def setOsMinimumVersionNull: Self = StObject.set(x, "osMinimumVersion", null)
     
     @scala.inline
-    def setOsMaximumVersionNull: Self = this.set("osMaximumVersion", null)
+    def setOsMinimumVersionUndefined: Self = StObject.set(x, "osMinimumVersion", js.undefined)
     
     @scala.inline
-    def setOsMinimumVersion(value: NullableOption[String]): Self = this.set("osMinimumVersion", value.asInstanceOf[js.Any])
+    def setPasscodeBlockSimple(value: Boolean): Self = StObject.set(x, "passcodeBlockSimple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOsMinimumVersion: Self = this.set("osMinimumVersion", js.undefined)
+    def setPasscodeBlockSimpleUndefined: Self = StObject.set(x, "passcodeBlockSimple", js.undefined)
     
     @scala.inline
-    def setOsMinimumVersionNull: Self = this.set("osMinimumVersion", null)
+    def setPasscodeExpirationDays(value: NullableOption[Double]): Self = StObject.set(x, "passcodeExpirationDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasscodeBlockSimple(value: Boolean): Self = this.set("passcodeBlockSimple", value.asInstanceOf[js.Any])
+    def setPasscodeExpirationDaysNull: Self = StObject.set(x, "passcodeExpirationDays", null)
     
     @scala.inline
-    def deletePasscodeBlockSimple: Self = this.set("passcodeBlockSimple", js.undefined)
+    def setPasscodeExpirationDaysUndefined: Self = StObject.set(x, "passcodeExpirationDays", js.undefined)
     
     @scala.inline
-    def setPasscodeExpirationDays(value: NullableOption[Double]): Self = this.set("passcodeExpirationDays", value.asInstanceOf[js.Any])
+    def setPasscodeMinimumCharacterSetCount(value: NullableOption[Double]): Self = StObject.set(x, "passcodeMinimumCharacterSetCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasscodeExpirationDays: Self = this.set("passcodeExpirationDays", js.undefined)
+    def setPasscodeMinimumCharacterSetCountNull: Self = StObject.set(x, "passcodeMinimumCharacterSetCount", null)
     
     @scala.inline
-    def setPasscodeExpirationDaysNull: Self = this.set("passcodeExpirationDays", null)
+    def setPasscodeMinimumCharacterSetCountUndefined: Self = StObject.set(x, "passcodeMinimumCharacterSetCount", js.undefined)
     
     @scala.inline
-    def setPasscodeMinimumCharacterSetCount(value: NullableOption[Double]): Self = this.set("passcodeMinimumCharacterSetCount", value.asInstanceOf[js.Any])
+    def setPasscodeMinimumLength(value: NullableOption[Double]): Self = StObject.set(x, "passcodeMinimumLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasscodeMinimumCharacterSetCount: Self = this.set("passcodeMinimumCharacterSetCount", js.undefined)
+    def setPasscodeMinimumLengthNull: Self = StObject.set(x, "passcodeMinimumLength", null)
     
     @scala.inline
-    def setPasscodeMinimumCharacterSetCountNull: Self = this.set("passcodeMinimumCharacterSetCount", null)
+    def setPasscodeMinimumLengthUndefined: Self = StObject.set(x, "passcodeMinimumLength", js.undefined)
     
     @scala.inline
-    def setPasscodeMinimumLength(value: NullableOption[Double]): Self = this.set("passcodeMinimumLength", value.asInstanceOf[js.Any])
+    def setPasscodeMinutesOfInactivityBeforeLock(value: NullableOption[Double]): Self = StObject.set(x, "passcodeMinutesOfInactivityBeforeLock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasscodeMinimumLength: Self = this.set("passcodeMinimumLength", js.undefined)
+    def setPasscodeMinutesOfInactivityBeforeLockNull: Self = StObject.set(x, "passcodeMinutesOfInactivityBeforeLock", null)
     
     @scala.inline
-    def setPasscodeMinimumLengthNull: Self = this.set("passcodeMinimumLength", null)
+    def setPasscodeMinutesOfInactivityBeforeLockUndefined: Self = StObject.set(x, "passcodeMinutesOfInactivityBeforeLock", js.undefined)
     
     @scala.inline
-    def setPasscodeMinutesOfInactivityBeforeLock(value: NullableOption[Double]): Self = this.set("passcodeMinutesOfInactivityBeforeLock", value.asInstanceOf[js.Any])
+    def setPasscodePreviousPasscodeBlockCount(value: NullableOption[Double]): Self = StObject.set(x, "passcodePreviousPasscodeBlockCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasscodeMinutesOfInactivityBeforeLock: Self = this.set("passcodeMinutesOfInactivityBeforeLock", js.undefined)
+    def setPasscodePreviousPasscodeBlockCountNull: Self = StObject.set(x, "passcodePreviousPasscodeBlockCount", null)
     
     @scala.inline
-    def setPasscodeMinutesOfInactivityBeforeLockNull: Self = this.set("passcodeMinutesOfInactivityBeforeLock", null)
+    def setPasscodePreviousPasscodeBlockCountUndefined: Self = StObject.set(x, "passcodePreviousPasscodeBlockCount", js.undefined)
     
     @scala.inline
-    def setPasscodePreviousPasscodeBlockCount(value: NullableOption[Double]): Self = this.set("passcodePreviousPasscodeBlockCount", value.asInstanceOf[js.Any])
+    def setPasscodeRequired(value: Boolean): Self = StObject.set(x, "passcodeRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePasscodePreviousPasscodeBlockCount: Self = this.set("passcodePreviousPasscodeBlockCount", js.undefined)
+    def setPasscodeRequiredType(value: RequiredPasswordType): Self = StObject.set(x, "passcodeRequiredType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasscodePreviousPasscodeBlockCountNull: Self = this.set("passcodePreviousPasscodeBlockCount", null)
+    def setPasscodeRequiredTypeUndefined: Self = StObject.set(x, "passcodeRequiredType", js.undefined)
     
     @scala.inline
-    def setPasscodeRequired(value: Boolean): Self = this.set("passcodeRequired", value.asInstanceOf[js.Any])
+    def setPasscodeRequiredUndefined: Self = StObject.set(x, "passcodeRequired", js.undefined)
     
     @scala.inline
-    def deletePasscodeRequired: Self = this.set("passcodeRequired", js.undefined)
+    def setSecurityBlockJailbrokenDevices(value: Boolean): Self = StObject.set(x, "securityBlockJailbrokenDevices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPasscodeRequiredType(value: RequiredPasswordType): Self = this.set("passcodeRequiredType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePasscodeRequiredType: Self = this.set("passcodeRequiredType", js.undefined)
-    
-    @scala.inline
-    def setSecurityBlockJailbrokenDevices(value: Boolean): Self = this.set("securityBlockJailbrokenDevices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityBlockJailbrokenDevices: Self = this.set("securityBlockJailbrokenDevices", js.undefined)
+    def setSecurityBlockJailbrokenDevicesUndefined: Self = StObject.set(x, "securityBlockJailbrokenDevices", js.undefined)
   }
 }

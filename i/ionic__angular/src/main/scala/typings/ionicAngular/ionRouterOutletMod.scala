@@ -19,14 +19,14 @@ import typings.ionicAngular.stackUtilsMod.RouteView
 import typings.ionicCore.animationInterfaceMod.Animation
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.componentsMod.global.HTMLIonRouterOutletElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/directives/navigation/ion-router-outlet", JSImport.Namespace)
-@js.native
-object ionRouterOutletMod extends js.Object {
+object ionRouterOutletMod {
   
+  @JSImport("@ionic/angular/directives/navigation/ion-router-outlet", "IonRouterOutlet")
   @js.native
   class IonRouterOutlet protected ()
     extends OnDestroy

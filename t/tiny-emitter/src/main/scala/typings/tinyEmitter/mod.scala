@@ -1,15 +1,15 @@
 package typings.tinyEmitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tiny-emitter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("tiny-emitter", "TinyEmitter")
   @js.native
-  class TinyEmitter () extends js.Object {
+  class TinyEmitter () extends StObject {
     
     def emit(event: String, args: js.Any*): this.type = js.native
     

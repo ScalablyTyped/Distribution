@@ -1,5 +1,6 @@
 package typings.chayns.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,33 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * chayns.ui
   */
-@JSGlobal("chayns.ui")
-@js.native
-object ui extends js.Object {
+object ui {
   
   /**
     * Media Functions
     * chayns.ui.gallery
     */
-  @js.native
-  object gallery extends js.Object
+  object gallery
   
   /**
     * UI Functions
     * chayns.ui.modeSwitch
     */
-  @js.native
-  object modeSwitch extends js.Object
+  object modeSwitch
   
   /**
     * chayns.ui.slider
     */
-  @js.native
-  object slider extends js.Object
+  object slider
   
   /**
     * chayns.ui.tooltip
     */
-  @js.native
-  object tooltip extends js.Object
+  object tooltip
 }

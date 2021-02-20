@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Axes extends js.Object {
+trait Axes extends StObject {
   
   /** @param AxisGroup [AxisGroup=1] */
   def apply(Type: XlAxisType): Axis = js.native

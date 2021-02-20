@@ -1,14 +1,14 @@
 package typings.openui5.global.sap.m
 
 import typings.openui5.sap.ui.core.UIComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.m.routing")
-@js.native
-object routing extends js.Object {
+object routing {
   
+  @JSGlobal("sap.m.routing.RouteMatchedHandler")
   @js.native
   class RouteMatchedHandler protected ()
     extends typings.openui5.sap.m.routing.RouteMatchedHandler {
@@ -21,6 +21,7 @@ object routing extends js.Object {
     def this(router: typings.openui5.sap.m.routing.Router, closeDialogs: Boolean) = this()
   }
   
+  @JSGlobal("sap.m.routing.Router")
   @js.native
   class Router protected ()
     extends typings.openui5.sap.m.routing.Router {
@@ -98,6 +99,7 @@ object routing extends js.Object {
     def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: UIComponent, oTargetsConfig: js.Any) = this()
   }
   
+  @JSGlobal("sap.m.routing.TargetHandler")
   @js.native
   class TargetHandler protected ()
     extends typings.openui5.sap.m.routing.TargetHandler {
@@ -113,6 +115,7 @@ object routing extends js.Object {
     def this(closeDialogs: Boolean) = this()
   }
   
+  @JSGlobal("sap.m.routing.Targets")
   @js.native
   class Targets protected ()
     extends typings.openui5.sap.m.routing.Targets {

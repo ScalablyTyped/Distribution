@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecommendedOptionProjectedMetric extends js.Object {
+trait RecommendedOptionProjectedMetric extends StObject {
   
   /**
     * An array of objects that describe a projected utilization metric.
@@ -31,39 +32,27 @@ object RecommendedOptionProjectedMetric {
   }
   
   @scala.inline
-  implicit class RecommendedOptionProjectedMetricOps[Self <: RecommendedOptionProjectedMetric] (val x: Self) extends AnyVal {
+  implicit class RecommendedOptionProjectedMetricMutableBuilder[Self <: RecommendedOptionProjectedMetric] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProjectedMetrics(value: ProjectedMetrics): Self = StObject.set(x, "projectedMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProjectedMetricsUndefined: Self = StObject.set(x, "projectedMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjectedMetricsVarargs(value: ProjectedMetric*): Self = StObject.set(x, "projectedMetrics", js.Array(value :_*))
     
     @scala.inline
-    def setProjectedMetricsVarargs(value: ProjectedMetric*): Self = this.set("projectedMetrics", js.Array(value :_*))
+    def setRank(value: Rank): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectedMetrics(value: ProjectedMetrics): Self = this.set("projectedMetrics", value.asInstanceOf[js.Any])
+    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
     @scala.inline
-    def deleteProjectedMetrics: Self = this.set("projectedMetrics", js.undefined)
+    def setRecommendedInstanceType(value: RecommendedInstanceType): Self = StObject.set(x, "recommendedInstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRank(value: Rank): Self = this.set("rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRank: Self = this.set("rank", js.undefined)
-    
-    @scala.inline
-    def setRecommendedInstanceType(value: RecommendedInstanceType): Self = this.set("recommendedInstanceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendedInstanceType: Self = this.set("recommendedInstanceType", js.undefined)
+    def setRecommendedInstanceTypeUndefined: Self = StObject.set(x, "recommendedInstanceType", js.undefined)
   }
 }

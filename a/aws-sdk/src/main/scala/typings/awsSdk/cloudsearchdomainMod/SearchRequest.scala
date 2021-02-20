@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchdomainMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchRequest extends js.Object {
+trait SearchRequest extends StObject {
   
   /**
     * Retrieves a cursor value you can use to page through large result sets. Use the size parameter to control the number of hits to include in each response. You can specify either the cursor or start parameter in a request; they are mutually exclusive. To get the first cursor, set the cursor value to initial. In subsequent requests, specify the cursor value returned in the hits section of the response.  For more information, see Paginating Results in the Amazon CloudSearch Developer Guide.
@@ -86,99 +87,87 @@ object SearchRequest {
   }
   
   @scala.inline
-  implicit class SearchRequestOps[Self <: SearchRequest] (val x: Self) extends AnyVal {
+  implicit class SearchRequestMutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setExprUndefined: Self = StObject.set(x, "expr", js.undefined)
     
     @scala.inline
-    def setCursor(value: Cursor): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setFacet(value: Facet): Self = StObject.set(x, "facet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setFacetUndefined: Self = StObject.set(x, "facet", js.undefined)
     
     @scala.inline
-    def setExpr(value: Expr): Self = this.set("expr", value.asInstanceOf[js.Any])
+    def setFilterQuery(value: FilterQuery): Self = StObject.set(x, "filterQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpr: Self = this.set("expr", js.undefined)
+    def setFilterQueryUndefined: Self = StObject.set(x, "filterQuery", js.undefined)
     
     @scala.inline
-    def setFacet(value: Facet): Self = this.set("facet", value.asInstanceOf[js.Any])
+    def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacet: Self = this.set("facet", js.undefined)
+    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
     @scala.inline
-    def setFilterQuery(value: FilterQuery): Self = this.set("filterQuery", value.asInstanceOf[js.Any])
+    def setPartial(value: Partial): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilterQuery: Self = this.set("filterQuery", js.undefined)
+    def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
     
     @scala.inline
-    def setHighlight(value: Highlight): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartial(value: Partial): Self = this.set("partial", value.asInstanceOf[js.Any])
+    def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
     
     @scala.inline
-    def deletePartial: Self = this.set("partial", js.undefined)
+    def setQueryParser(value: QueryParser): Self = StObject.set(x, "queryParser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryOptions(value: QueryOptions): Self = this.set("queryOptions", value.asInstanceOf[js.Any])
+    def setQueryParserUndefined: Self = StObject.set(x, "queryParser", js.undefined)
     
     @scala.inline
-    def deleteQueryOptions: Self = this.set("queryOptions", js.undefined)
+    def setReturn(value: Return): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParser(value: QueryParser): Self = this.set("queryParser", value.asInstanceOf[js.Any])
+    def setReturnUndefined: Self = StObject.set(x, "return", js.undefined)
     
     @scala.inline
-    def deleteQueryParser: Self = this.set("queryParser", js.undefined)
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn(value: Return): Self = this.set("return", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteReturn: Self = this.set("return", js.undefined)
+    def setSort(value: Sort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setStart(value: Start): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: Sort): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setStats(value: Stat): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Start): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setStats(value: Stat): Self = this.set("stats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStats: Self = this.set("stats", js.undefined)
+    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
   }
 }

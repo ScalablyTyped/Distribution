@@ -1,18 +1,19 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/ListItem/ListItem.ListItemClassKey>> */
 @js.native
-trait PartialClassNameMapListIt extends js.Object {
+trait PartialClassNameMapListIt extends StObject {
+  
+  var default: js.UndefOr[String] = js.native
   
   var button: js.UndefOr[String] = js.native
   
   var container: js.UndefOr[String] = js.native
-  
-  var default: js.UndefOr[String] = js.native
   
   var dense: js.UndefOr[String] = js.native
   
@@ -39,84 +40,72 @@ object PartialClassNameMapListIt {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapListItOps[Self <: PartialClassNameMapListIt] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapListItMutableBuilder[Self <: PartialClassNameMapListIt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("default", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDense(value: String): Self = this.set("dense", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDense: Self = this.set("dense", js.undefined)
+    def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivider(value: String): Self = this.set("divider", value.asInstanceOf[js.Any])
+    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
     @scala.inline
-    def deleteDivider: Self = this.set("divider", js.undefined)
+    def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusVisible(value: String): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
     @scala.inline
-    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutters(value: String): Self = this.set("gutters", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteGutters: Self = this.set("gutters", js.undefined)
+    def setSecondaryAction(value: String): Self = StObject.set(x, "secondaryAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSecondaryActionUndefined: Self = StObject.set(x, "secondaryAction", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryAction(value: String): Self = this.set("secondaryAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryAction: Self = this.set("secondaryAction", js.undefined)
-    
-    @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

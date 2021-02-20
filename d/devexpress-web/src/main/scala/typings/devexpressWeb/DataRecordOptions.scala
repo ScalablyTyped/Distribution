@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the settings defining a data record.
   */
 @js.native
-trait DataRecordOptions extends js.Object {
+trait DataRecordOptions extends StObject {
   
   /**
     * Gets or sets the index of the active data record.
@@ -29,24 +30,12 @@ object DataRecordOptions {
   }
   
   @scala.inline
-  implicit class DataRecordOptionsOps[Self <: DataRecordOptions] (val x: Self) extends AnyVal {
+  implicit class DataRecordOptionsMutableBuilder[Self <: DataRecordOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveRecordIndex(value: Double): Self = StObject.set(x, "activeRecordIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActiveRecordIndex(value: Double): Self = this.set("activeRecordIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecordCount(value: Double): Self = this.set("recordCount", value.asInstanceOf[js.Any])
+    def setRecordCount(value: Double): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
   }
 }

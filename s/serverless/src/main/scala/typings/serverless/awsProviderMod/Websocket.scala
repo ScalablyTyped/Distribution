@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Websocket extends js.Object {
+trait Websocket extends StObject {
   
   var authorizer: js.UndefOr[WebsocketAuthorizer] = js.native
   
@@ -22,33 +23,21 @@ object Websocket {
   }
   
   @scala.inline
-  implicit class WebsocketOps[Self <: Websocket] (val x: Self) extends AnyVal {
+  implicit class WebsocketMutableBuilder[Self <: Websocket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizer(value: WebsocketAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(value: String): Self = this.set("route", value.asInstanceOf[js.Any])
+    def setRouteResponseSelectionExpression(value: String): Self = StObject.set(x, "routeResponseSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizer(value: WebsocketAuthorizer): Self = this.set("authorizer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorizer: Self = this.set("authorizer", js.undefined)
-    
-    @scala.inline
-    def setRouteResponseSelectionExpression(value: String): Self = this.set("routeResponseSelectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteResponseSelectionExpression: Self = this.set("routeResponseSelectionExpression", js.undefined)
+    def setRouteResponseSelectionExpressionUndefined: Self = StObject.set(x, "routeResponseSelectionExpression", js.undefined)
   }
 }

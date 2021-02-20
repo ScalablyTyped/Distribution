@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentApplicationConfig extends js.Object {
+trait DeploymentApplicationConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the robot application.
@@ -31,27 +32,15 @@ object DeploymentApplicationConfig {
   }
   
   @scala.inline
-  implicit class DeploymentApplicationConfigOps[Self <: DeploymentApplicationConfig] (val x: Self) extends AnyVal {
+  implicit class DeploymentApplicationConfigMutableBuilder[Self <: DeploymentApplicationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationVersion(value: DeploymentVersion): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApplication(value: Arn): Self = this.set("application", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApplicationVersion(value: DeploymentVersion): Self = this.set("applicationVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLaunchConfig(value: DeploymentLaunchConfig): Self = this.set("launchConfig", value.asInstanceOf[js.Any])
+    def setLaunchConfig(value: DeploymentLaunchConfig): Self = StObject.set(x, "launchConfig", value.asInstanceOf[js.Any])
   }
 }

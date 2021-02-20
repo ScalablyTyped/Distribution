@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Handshake extends js.Object {
+trait Handshake extends StObject {
   
   /**
     * The type of handshake, indicating what action occurs when the recipient accepts the handshake. The following handshake types are supported:    INVITE: This type of handshake represents a request to join an organization. It is always sent from the management account to only non-member accounts.    ENABLE_ALL_FEATURES: This type of handshake represents a request to enable all features in an organization. It is always sent from the management account to only invited member accounts. Created accounts do not receive this because those accounts were created by the organization's management account and approval is inferred.    APPROVE_ALL_FEATURES: This type of handshake is sent from the Organizations service when all member accounts have approved the ENABLE_ALL_FEATURES invitation. It is sent only to the management account and signals the master that it can finalize the process to enable all features.  
@@ -56,72 +57,60 @@ object Handshake {
   }
   
   @scala.inline
-  implicit class HandshakeOps[Self <: Handshake] (val x: Self) extends AnyVal {
+  implicit class HandshakeMutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: ActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: HandshakeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: ActionType): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setExpirationTimestamp(value: Timestamp): Self = StObject.set(x, "ExpirationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: HandshakeArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setExpirationTimestampUndefined: Self = StObject.set(x, "ExpirationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setId(value: HandshakeId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTimestamp(value: Timestamp): Self = this.set("ExpirationTimestamp", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteExpirationTimestamp: Self = this.set("ExpirationTimestamp", js.undefined)
+    def setParties(value: HandshakeParties): Self = StObject.set(x, "Parties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: HandshakeId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setPartiesUndefined: Self = StObject.set(x, "Parties", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setPartiesVarargs(value: HandshakeParty*): Self = StObject.set(x, "Parties", js.Array(value :_*))
     
     @scala.inline
-    def setPartiesVarargs(value: HandshakeParty*): Self = this.set("Parties", js.Array(value :_*))
+    def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParties(value: HandshakeParties): Self = this.set("Parties", value.asInstanceOf[js.Any])
+    def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteParties: Self = this.set("Parties", js.undefined)
+    def setResources(value: HandshakeResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedTimestamp(value: Timestamp): Self = this.set("RequestedTimestamp", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deleteRequestedTimestamp: Self = this.set("RequestedTimestamp", js.undefined)
+    def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: HandshakeResource*): Self = this.set("Resources", js.Array(value :_*))
+    def setState(value: HandshakeState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: HandshakeResources): Self = this.set("Resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
-    
-    @scala.inline
-    def setState(value: HandshakeState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.expressValidator.anon
 
 import typings.expressValidator.baseMod.ValidationError
 import typings.expressValidator.expressValidatorStrings._error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object Location {
   }
   
   @scala.inline
-  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMsg(value: js.Any): Self = this.set("msg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNestedErrorsVarargs(
-      value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object)*
-    ): Self = this.set("nestedErrors", js.Array(value :_*))
+    def setMsg(value: js.Any): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNestedErrors(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
         ]
-    ): Self = this.set("nestedErrors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "nestedErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParam(value: _error): Self = this.set("param", value.asInstanceOf[js.Any])
+    def setNestedErrorsVarargs(
+      value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object)*
+    ): Self = StObject.set(x, "nestedErrors", js.Array(value :_*))
+    
+    @scala.inline
+    def setParam(value: _error): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
   }
 }

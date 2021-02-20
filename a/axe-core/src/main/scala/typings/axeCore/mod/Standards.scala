@@ -1,12 +1,13 @@
 package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Standards extends js.Object {
+trait Standards extends StObject {
   
   var ariaAttrs: js.UndefOr[StringDictionary[AriaAttrs]] = js.native
   
@@ -25,42 +26,30 @@ object Standards {
   }
   
   @scala.inline
-  implicit class StandardsOps[Self <: Standards] (val x: Self) extends AnyVal {
+  implicit class StandardsMutableBuilder[Self <: Standards] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAriaAttrs(value: StringDictionary[AriaAttrs]): Self = StObject.set(x, "ariaAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAriaAttrsUndefined: Self = StObject.set(x, "ariaAttrs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAriaRoles(value: StringDictionary[AriaRoles]): Self = StObject.set(x, "ariaRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaAttrs(value: StringDictionary[AriaAttrs]): Self = this.set("ariaAttrs", value.asInstanceOf[js.Any])
+    def setAriaRolesUndefined: Self = StObject.set(x, "ariaRoles", js.undefined)
     
     @scala.inline
-    def deleteAriaAttrs: Self = this.set("ariaAttrs", js.undefined)
+    def setCssColors(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "cssColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAriaRoles(value: StringDictionary[AriaRoles]): Self = this.set("ariaRoles", value.asInstanceOf[js.Any])
+    def setCssColorsUndefined: Self = StObject.set(x, "cssColors", js.undefined)
     
     @scala.inline
-    def deleteAriaRoles: Self = this.set("ariaRoles", js.undefined)
+    def setHtmlElms(value: StringDictionary[HtmlElms]): Self = StObject.set(x, "htmlElms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssColors(value: StringDictionary[js.Array[Double]]): Self = this.set("cssColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCssColors: Self = this.set("cssColors", js.undefined)
-    
-    @scala.inline
-    def setHtmlElms(value: StringDictionary[HtmlElms]): Self = this.set("htmlElms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlElms: Self = this.set("htmlElms", js.undefined)
+    def setHtmlElmsUndefined: Self = StObject.set(x, "htmlElms", js.undefined)
   }
 }

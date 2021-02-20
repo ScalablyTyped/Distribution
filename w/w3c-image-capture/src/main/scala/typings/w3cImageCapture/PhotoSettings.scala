@@ -1,11 +1,12 @@
 package typings.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhotoSettings extends js.Object {
+trait PhotoSettings extends StObject {
   
   var fillLightMode: js.UndefOr[FillLightMode] = js.native
   
@@ -24,42 +25,30 @@ object PhotoSettings {
   }
   
   @scala.inline
-  implicit class PhotoSettingsOps[Self <: PhotoSettings] (val x: Self) extends AnyVal {
+  implicit class PhotoSettingsMutableBuilder[Self <: PhotoSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFillLightMode(value: FillLightMode): Self = StObject.set(x, "fillLightMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillLightModeUndefined: Self = StObject.set(x, "fillLightMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillLightMode(value: FillLightMode): Self = this.set("fillLightMode", value.asInstanceOf[js.Any])
+    def setImageHeightUndefined: Self = StObject.set(x, "imageHeight", js.undefined)
     
     @scala.inline
-    def deleteFillLightMode: Self = this.set("fillLightMode", js.undefined)
+    def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    def setImageWidthUndefined: Self = StObject.set(x, "imageWidth", js.undefined)
     
     @scala.inline
-    def deleteImageHeight: Self = this.set("imageHeight", js.undefined)
+    def setRedEyeReduction(value: Boolean): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageWidth(value: Double): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageWidth: Self = this.set("imageWidth", js.undefined)
-    
-    @scala.inline
-    def setRedEyeReduction(value: Boolean): Self = this.set("redEyeReduction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedEyeReduction: Self = this.set("redEyeReduction", js.undefined)
+    def setRedEyeReductionUndefined: Self = StObject.set(x, "redEyeReduction", js.undefined)
   }
 }

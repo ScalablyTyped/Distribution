@@ -8,12 +8,13 @@ import typings.chromeApps.chromeAppsStrings.linkDown
 import typings.chromeApps.chromeAppsStrings.linkUp
 import typings.chromeApps.chromeAppsStrings.resume_
 import typings.chromeApps.chromeAppsStrings.suspend_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DISCONNECTED extends js.Object {
+trait DISCONNECTED extends StObject {
   
   var CONNECTED: connected__ = js.native
   
@@ -49,42 +50,30 @@ object DISCONNECTED {
   }
   
   @scala.inline
-  implicit class DISCONNECTEDOps[Self <: DISCONNECTED] (val x: Self) extends AnyVal {
+  implicit class DISCONNECTEDMutableBuilder[Self <: DISCONNECTED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONNECTED(value: connected__): Self = StObject.set(x, "CONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDISCONNECTED(value: disconnected__): Self = StObject.set(x, "DISCONNECTED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setERROR(value: error_): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCONNECTED(value: connected__): Self = this.set("CONNECTED", value.asInstanceOf[js.Any])
+    def setLINK_CHANGED(value: linkChanged): Self = StObject.set(x, "LINK_CHANGED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDISCONNECTED(value: disconnected__): Self = this.set("DISCONNECTED", value.asInstanceOf[js.Any])
+    def setLINK_DOWN(value: linkDown): Self = StObject.set(x, "LINK_DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: error_): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setLINK_UP(value: linkUp): Self = StObject.set(x, "LINK_UP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLINK_CHANGED(value: linkChanged): Self = this.set("LINK_CHANGED", value.asInstanceOf[js.Any])
+    def setRESUME(value: resume_): Self = StObject.set(x, "RESUME", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLINK_DOWN(value: linkDown): Self = this.set("LINK_DOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLINK_UP(value: linkUp): Self = this.set("LINK_UP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRESUME(value: resume_): Self = this.set("RESUME", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSUSPEND(value: suspend_): Self = this.set("SUSPEND", value.asInstanceOf[js.Any])
+    def setSUSPEND(value: suspend_): Self = StObject.set(x, "SUSPEND", value.asInstanceOf[js.Any])
   }
 }

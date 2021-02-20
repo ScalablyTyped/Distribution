@@ -34,23 +34,24 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.JsonPatchDocument
 import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/BuildApi", JSImport.Namespace)
-@js.native
-object buildApiMod extends js.Object {
+object buildApiMod {
   
+  @JSImport("vso-node-api/BuildApi", "BuildApi")
   @js.native
   class BuildApi protected () extends IBuildApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
   /* static members */
-  @js.native
-  object BuildApi extends js.Object {
+  object BuildApi {
     
+    @JSImport("vso-node-api/BuildApi", "BuildApi.RESOURCE_AREA_ID")
+    @js.native
     val RESOURCE_AREA_ID: String = js.native
   }
   

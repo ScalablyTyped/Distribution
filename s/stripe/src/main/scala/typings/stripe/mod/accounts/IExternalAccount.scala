@@ -23,6 +23,7 @@ import typings.stripe.stripeStrings.unknown_
 import typings.stripe.stripeStrings.validated
 import typings.stripe.stripeStrings.verification_failed
 import typings.stripe.stripeStrings.verified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.mod.bankAccounts.IBankAccount
   - typings.stripe.mod.cards.ICard
 */
-trait IExternalAccount extends js.Object
+trait IExternalAccount extends StObject
 object IExternalAccount {
   
   @scala.inline
@@ -47,10 +48,10 @@ object IExternalAccount {
     `object`: bank_account,
     routing_number: String,
     status: `new` | validated | verified | verification_failed | errored
-  ): IExternalAccount = {
+  ): typings.stripe.mod.bankAccounts.IBankAccount = {
     val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IExternalAccount]
+    __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
   }
   
   @scala.inline
@@ -65,9 +66,9 @@ object IExternalAccount {
     id: String,
     last4: String,
     `object`: card
-  ): IExternalAccount = {
+  ): typings.stripe.mod.cards.ICard = {
     val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IExternalAccount]
+    __obj.asInstanceOf[typings.stripe.mod.cards.ICard]
   }
 }

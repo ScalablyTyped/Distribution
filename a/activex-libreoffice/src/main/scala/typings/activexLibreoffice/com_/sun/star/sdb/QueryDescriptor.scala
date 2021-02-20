@@ -11,6 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.Descriptor
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XColumnsSupplier
 import typings.activexLibreoffice.com_.sun.star.sdbcx.XDataDescriptorFactory
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,33 +82,21 @@ object QueryDescriptor {
   }
   
   @scala.inline
-  implicit class QueryDescriptorOps[Self <: QueryDescriptor] (val x: Self) extends AnyVal {
+  implicit class QueryDescriptorMutableBuilder[Self <: QueryDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEscapeProcessing(value: Boolean): Self = StObject.set(x, "EscapeProcessing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateCatalogName(value: String): Self = StObject.set(x, "UpdateCatalogName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setUpdateSchemaName(value: String): Self = StObject.set(x, "UpdateSchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateCatalogName(value: String): Self = this.set("UpdateCatalogName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateSchemaName(value: String): Self = this.set("UpdateSchemaName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateTableName(value: String): Self = this.set("UpdateTableName", value.asInstanceOf[js.Any])
+    def setUpdateTableName(value: String): Self = StObject.set(x, "UpdateTableName", value.asInstanceOf[js.Any])
   }
 }

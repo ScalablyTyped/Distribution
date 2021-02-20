@@ -1,13 +1,14 @@
 package typings.electronGet
 
 import typings.electronGet.downloaderMod.Downloader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@electron/get/dist/cjs/downloader-resolver", JSImport.Namespace)
-@js.native
-object downloaderResolverMod extends js.Object {
+object downloaderResolverMod {
   
+  @JSImport("@electron/get/dist/cjs/downloader-resolver", "getDownloaderForSystem")
+  @js.native
   def getDownloaderForSystem(): js.Promise[Downloader[_]] = js.native
 }

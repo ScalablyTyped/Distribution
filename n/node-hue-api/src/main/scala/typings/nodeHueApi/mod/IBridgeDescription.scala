@@ -2,12 +2,13 @@ package typings.nodeHueApi.mod
 
 import typings.nodeHueApi.anon.Description
 import typings.nodeHueApi.anon.Major
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBridgeDescription extends js.Object {
+trait IBridgeDescription extends StObject {
   
   var icons: js.UndefOr[js.Array[IBridgeIcon]] = js.native
   
@@ -30,42 +31,30 @@ object IBridgeDescription {
   }
   
   @scala.inline
-  implicit class IBridgeDescriptionOps[Self <: IBridgeDescription] (val x: Self) extends AnyVal {
+  implicit class IBridgeDescriptionMutableBuilder[Self <: IBridgeDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIcons(value: js.Array[IBridgeIcon]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconsVarargs(value: IBridgeIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
     @scala.inline
-    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: Description): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setModel(value: Description): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Major): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconsVarargs(value: IBridgeIcon*): Self = this.set("icons", js.Array(value :_*))
-    
-    @scala.inline
-    def setIcons(value: js.Array[IBridgeIcon]): Self = this.set("icons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setVersion(value: Major): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

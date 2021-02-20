@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set:  1.1]
   */
 @js.native
-trait DocumentViewLoadOptions extends js.Object {
+trait DocumentViewLoadOptions extends StObject {
   
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.native
@@ -65,54 +66,42 @@ object DocumentViewLoadOptions {
   }
   
   @scala.inline
-  implicit class DocumentViewLoadOptionsOps[Self <: DocumentViewLoadOptions] (val x: Self) extends AnyVal {
+  implicit class DocumentViewLoadOptionsMutableBuilder[Self <: DocumentViewLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableHyperlinks(value: Boolean): Self = StObject.set(x, "disableHyperlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setDisableHyperlinksUndefined: Self = StObject.set(x, "disableHyperlinks", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setDisablePan(value: Boolean): Self = StObject.set(x, "disablePan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHyperlinks(value: Boolean): Self = this.set("disableHyperlinks", value.asInstanceOf[js.Any])
+    def setDisablePanUndefined: Self = StObject.set(x, "disablePan", js.undefined)
     
     @scala.inline
-    def deleteDisableHyperlinks: Self = this.set("disableHyperlinks", js.undefined)
+    def setDisablePanZoomWindow(value: Boolean): Self = StObject.set(x, "disablePanZoomWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePan(value: Boolean): Self = this.set("disablePan", value.asInstanceOf[js.Any])
+    def setDisablePanZoomWindowUndefined: Self = StObject.set(x, "disablePanZoomWindow", js.undefined)
     
     @scala.inline
-    def deleteDisablePan: Self = this.set("disablePan", js.undefined)
+    def setDisableZoom(value: Boolean): Self = StObject.set(x, "disableZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePanZoomWindow(value: Boolean): Self = this.set("disablePanZoomWindow", value.asInstanceOf[js.Any])
+    def setDisableZoomUndefined: Self = StObject.set(x, "disableZoom", js.undefined)
     
     @scala.inline
-    def deleteDisablePanZoomWindow: Self = this.set("disablePanZoomWindow", js.undefined)
+    def setHideDiagramBoundary(value: Boolean): Self = StObject.set(x, "hideDiagramBoundary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableZoom(value: Boolean): Self = this.set("disableZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableZoom: Self = this.set("disableZoom", js.undefined)
-    
-    @scala.inline
-    def setHideDiagramBoundary(value: Boolean): Self = this.set("hideDiagramBoundary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideDiagramBoundary: Self = this.set("hideDiagramBoundary", js.undefined)
+    def setHideDiagramBoundaryUndefined: Self = StObject.set(x, "hideDiagramBoundary", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchOptions extends js.Object {
+trait SearchOptions extends StObject {
   
   /** The locale for case insensitive search. */
   var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
@@ -57,45 +58,33 @@ object SearchOptions {
   }
   
   @scala.inline
-  implicit class SearchOptionsOps[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithmType(value: SearchAlgorithms): Self = StObject.set(x, "algorithmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedChars(value: Double): Self = StObject.set(x, "changedChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletedChars(value: Double): Self = StObject.set(x, "deletedChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: Locale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setInsertedChars(value: Double): Self = StObject.set(x, "insertedChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithmType(value: SearchAlgorithms): Self = this.set("algorithmType", value.asInstanceOf[js.Any])
+    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedChars(value: Double): Self = this.set("changedChars", value.asInstanceOf[js.Any])
+    def setReplaceString(value: String): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletedChars(value: Double): Self = this.set("deletedChars", value.asInstanceOf[js.Any])
+    def setSearchFlag(value: Double): Self = StObject.set(x, "searchFlag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertedChars(value: Double): Self = this.set("insertedChars", value.asInstanceOf[js.Any])
+    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceString(value: String): Self = this.set("replaceString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchFlag(value: Double): Self = this.set("searchFlag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransliterateFlags(value: Double): Self = this.set("transliterateFlags", value.asInstanceOf[js.Any])
+    def setTransliterateFlags(value: Double): Self = StObject.set(x, "transliterateFlags", value.asInstanceOf[js.Any])
   }
 }

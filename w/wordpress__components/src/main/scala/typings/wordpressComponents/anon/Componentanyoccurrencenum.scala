@@ -6,13 +6,14 @@ import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import typings.std.Error
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @wordpress/element.@wordpress/element.Component<{}, {}, any> & {  occurrence :number | undefined} */
 @js.native
-trait Componentanyoccurrencenum extends js.Object {
+trait Componentanyoccurrencenum extends StObject {
   
   /**
     * Called immediately before mounting occurs, and before `Component#render`.

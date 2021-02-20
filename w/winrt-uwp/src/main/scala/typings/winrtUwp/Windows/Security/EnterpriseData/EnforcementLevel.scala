@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnforcementLevel extends js.Object
+sealed trait EnforcementLevel extends StObject
 /** A set of enumerated values together describing the possible enterprise data protection (EDP) enforcement levels. EDP enforcement level is one aspect of mobile device management (MDM) policy configuration. */
 @JSGlobal("Windows.Security.EnterpriseData.EnforcementLevel")
 @js.native
-object EnforcementLevel extends js.Object {
+object EnforcementLevel extends StObject {
   
   /** The policy calls for the user to be blocked. In response to an attempted action such as pasting data into an unauthorized app, your app should block the action, and audit it. */
   @js.native

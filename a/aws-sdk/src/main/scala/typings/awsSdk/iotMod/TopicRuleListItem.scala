@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TopicRuleListItem extends js.Object {
+trait TopicRuleListItem extends StObject {
   
   /**
     * The date and time the rule was created.
@@ -41,48 +42,36 @@ object TopicRuleListItem {
   }
   
   @scala.inline
-  implicit class TopicRuleListItemOps[Self <: TopicRuleListItem] (val x: Self) extends AnyVal {
+  implicit class TopicRuleListItemMutableBuilder[Self <: TopicRuleListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleArn(value: RuleArn): Self = StObject.set(x, "ruleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: CreatedAtDate): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setRuleArnUndefined: Self = StObject.set(x, "ruleArn", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleArn(value: RuleArn): Self = this.set("ruleArn", value.asInstanceOf[js.Any])
+    def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
     
     @scala.inline
-    def deleteRuleArn: Self = this.set("ruleArn", js.undefined)
+    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleDisabled(value: IsDisabled): Self = this.set("ruleDisabled", value.asInstanceOf[js.Any])
+    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
     
     @scala.inline
-    def deleteRuleDisabled: Self = this.set("ruleDisabled", js.undefined)
+    def setTopicPattern(value: TopicPattern): Self = StObject.set(x, "topicPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleName(value: RuleName): Self = this.set("ruleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleName: Self = this.set("ruleName", js.undefined)
-    
-    @scala.inline
-    def setTopicPattern(value: TopicPattern): Self = this.set("topicPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicPattern: Self = this.set("topicPattern", js.undefined)
+    def setTopicPatternUndefined: Self = StObject.set(x, "topicPattern", js.undefined)
   }
 }

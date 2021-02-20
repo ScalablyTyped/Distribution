@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutComponentPolicyRequest extends js.Object {
+trait PutComponentPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the component that this policy should be applied to. 
@@ -26,24 +27,12 @@ object PutComponentPolicyRequest {
   }
   
   @scala.inline
-  implicit class PutComponentPolicyRequestOps[Self <: PutComponentPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class PutComponentPolicyRequestMutableBuilder[Self <: PutComponentPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponentArn(value: ComponentBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentArn(value: ComponentBuildVersionArn): Self = this.set("componentArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicy(value: ResourcePolicyDocument): Self = this.set("policy", value.asInstanceOf[js.Any])
+    def setPolicy(value: ResourcePolicyDocument): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
   }
 }

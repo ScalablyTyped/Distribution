@@ -5,16 +5,16 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/realtime/Transport", JSImport.Namespace)
-@js.native
-object transportMod extends js.Object {
+object transportMod {
   
+  @JSImport("@firebase/database/dist/src/realtime/Transport", "Transport")
   @js.native
-  abstract class Transport protected () extends js.Object {
+  abstract class Transport protected () extends StObject {
     /**
       *
       * @param {string} connId An identifier for this connection, used for logging

@@ -5,15 +5,15 @@ import typings.relayRuntime.mod.Observable
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.relayRuntime.relayStoreTypesMod.Environment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@entria/relay-experimental/lib/fetchQuery", JSImport.Namespace)
-@js.native
-object fetchQueryMod extends js.Object {
+object fetchQueryMod {
   
-  @JSName("fetchQuery")
+  @JSImport("@entria/relay-experimental/lib/fetchQuery", "fetchQuery")
+  @js.native
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,
@@ -21,7 +21,8 @@ object fetchQueryMod extends js.Object {
   ): Observable[
     /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any
   ] = js.native
-  @JSName("fetchQuery")
+  @JSImport("@entria/relay-experimental/lib/fetchQuery", "fetchQuery")
+  @js.native
   def fetchQuery_variables[TQuery /* <: OperationType */](
     environment: Environment,
     query: GraphQLTaggedNode,

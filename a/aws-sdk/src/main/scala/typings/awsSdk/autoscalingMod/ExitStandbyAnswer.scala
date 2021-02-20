@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExitStandbyAnswer extends js.Object {
+trait ExitStandbyAnswer extends StObject {
   
   /**
     * The activities related to moving instances out of Standby mode.
@@ -21,27 +22,15 @@ object ExitStandbyAnswer {
   }
   
   @scala.inline
-  implicit class ExitStandbyAnswerOps[Self <: ExitStandbyAnswer] (val x: Self) extends AnyVal {
+  implicit class ExitStandbyAnswerMutableBuilder[Self <: ExitStandbyAnswer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActivitiesVarargs(value: Activity*): Self = this.set("Activities", js.Array(value :_*))
-    
-    @scala.inline
-    def setActivities(value: Activities): Self = this.set("Activities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivities: Self = this.set("Activities", js.undefined)
+    def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
   }
 }

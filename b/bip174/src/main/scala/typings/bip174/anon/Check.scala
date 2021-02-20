@@ -2,12 +2,13 @@ package typings.bip174.anon
 
 import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.RedeemScript
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Check extends js.Object {
+trait Check extends StObject {
   
   def canAdd(currentData: js.Any, newData: js.Any): Boolean = js.native
   
@@ -34,33 +35,21 @@ object Check {
   }
   
   @scala.inline
-  implicit class CheckOps[Self <: Check] (val x: Self) extends AnyVal {
+  implicit class CheckMutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecode(value: KeyValue => RedeemScript): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = this.set("canAdd", js.Any.fromFunction2(value))
+    def setEncode(value: RedeemScript => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean): Self = this.set("check", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDecode(value: KeyValue => RedeemScript): Self = this.set("decode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEncode(value: RedeemScript => KeyValue): Self = this.set("encode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExpected(value: String): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

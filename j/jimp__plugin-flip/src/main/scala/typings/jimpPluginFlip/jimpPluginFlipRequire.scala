@@ -1,5 +1,6 @@
 package typings.jimpPluginFlip
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@jimp/plugin-flip", JSImport.Namespace)
 @js.native
-object jimpPluginFlipRequire extends js.Object
+object jimpPluginFlipRequire extends StObject

@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxAppProperties
   */
 @js.native
-trait INxAppProperties extends js.Object {
+trait INxAppProperties extends StObject {
   
   /**
     * Last reload time of the app.
@@ -54,33 +55,21 @@ object INxAppProperties {
   }
   
   @scala.inline
-  implicit class INxAppPropertiesOps[Self <: INxAppProperties] (val x: Self) extends AnyVal {
+  implicit class INxAppPropertiesMutableBuilder[Self <: INxAppProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQMigrationHash(value: String): Self = StObject.set(x, "qMigrationHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQSavedInProductVersion(value: String): Self = StObject.set(x, "qSavedInProductVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLastReloadTime(value: String): Self = this.set("qLastReloadTime", value.asInstanceOf[js.Any])
+    def setQThumbnail(value: IStaticContentUrlDef): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQMigrationHash(value: String): Self = this.set("qMigrationHash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSavedInProductVersion(value: String): Self = this.set("qSavedInProductVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQThumbnail(value: IStaticContentUrlDef): Self = this.set("qThumbnail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTitle(value: String): Self = this.set("qTitle", value.asInstanceOf[js.Any])
+    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
   }
 }

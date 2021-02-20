@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PhoneNumberOrder extends js.Object {
+trait PhoneNumberOrder extends StObject {
   
   /**
     * The phone number order creation timestamp, in ISO 8601 format.
@@ -46,57 +47,45 @@ object PhoneNumberOrder {
   }
   
   @scala.inline
-  implicit class PhoneNumberOrderOps[Self <: PhoneNumberOrder] (val x: Self) extends AnyVal {
+  implicit class PhoneNumberOrderMutableBuilder[Self <: PhoneNumberOrder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrderedPhoneNumbers(value: OrderedPhoneNumberList): Self = StObject.set(x, "OrderedPhoneNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setOrderedPhoneNumbersUndefined: Self = StObject.set(x, "OrderedPhoneNumbers", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setOrderedPhoneNumbersVarargs(value: OrderedPhoneNumber*): Self = StObject.set(x, "OrderedPhoneNumbers", js.Array(value :_*))
     
     @scala.inline
-    def setOrderedPhoneNumbersVarargs(value: OrderedPhoneNumber*): Self = this.set("OrderedPhoneNumbers", js.Array(value :_*))
+    def setPhoneNumberOrderId(value: GuidString): Self = StObject.set(x, "PhoneNumberOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedPhoneNumbers(value: OrderedPhoneNumberList): Self = this.set("OrderedPhoneNumbers", value.asInstanceOf[js.Any])
+    def setPhoneNumberOrderIdUndefined: Self = StObject.set(x, "PhoneNumberOrderId", js.undefined)
     
     @scala.inline
-    def deleteOrderedPhoneNumbers: Self = this.set("OrderedPhoneNumbers", js.undefined)
+    def setProductType(value: PhoneNumberProductType): Self = StObject.set(x, "ProductType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumberOrderId(value: GuidString): Self = this.set("PhoneNumberOrderId", value.asInstanceOf[js.Any])
+    def setProductTypeUndefined: Self = StObject.set(x, "ProductType", js.undefined)
     
     @scala.inline
-    def deletePhoneNumberOrderId: Self = this.set("PhoneNumberOrderId", js.undefined)
+    def setStatus(value: PhoneNumberOrderStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductType(value: PhoneNumberProductType): Self = this.set("ProductType", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteProductType: Self = this.set("ProductType", js.undefined)
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: PhoneNumberOrderStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
   }
 }

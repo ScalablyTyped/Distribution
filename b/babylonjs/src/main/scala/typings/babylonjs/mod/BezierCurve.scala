@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BezierCurve ()
   extends typings.babylonjs.legacyMod.BezierCurve
 /* static members */
-@JSImport("babylonjs", "BezierCurve")
-@js.native
-object BezierCurve extends js.Object {
+object BezierCurve {
   
   /**
     * Returns the cubic Bezier interpolated value (float) at "t" (float) from the given x1, y1, x2, y2 floats
@@ -22,5 +21,7 @@ object BezierCurve extends js.Object {
     * @param y2 defines the right coordinate on Y axis
     * @returns the interpolated value
     */
+  @JSImport("babylonjs", "BezierCurve.Interpolate")
+  @js.native
   def Interpolate(t: Double, x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
 }

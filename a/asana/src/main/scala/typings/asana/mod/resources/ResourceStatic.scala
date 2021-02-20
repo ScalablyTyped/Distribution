@@ -2,15 +2,17 @@ package typings.asana.mod.resources
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.asana.mod.Dispatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceStatic extends /**
+trait ResourceStatic
+  extends /**
   * @param dispatcher
   */
-Instantiable1[/* dispatcher */ Dispatcher, Resource] {
+Instantiable1[/* dispatcher */ Dispatcher, typings.asana.mod.resources.Resource] {
   
   /**
     * @type {number} Default number of items to get per page.

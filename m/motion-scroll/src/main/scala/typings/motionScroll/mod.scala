@@ -1,13 +1,14 @@
 package typings.motionScroll
 
 import typings.motionScroll.anon.Axis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("motion-scroll", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("motion-scroll", "scroll")
+  @js.native
   def scroll(config: Axis): Unit = js.native
 }

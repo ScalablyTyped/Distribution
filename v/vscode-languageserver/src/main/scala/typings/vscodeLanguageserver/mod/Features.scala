@@ -2,12 +2,13 @@ package typings.vscodeLanguageserver.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.vscodeLanguageserver.vscodeLanguageserverStrings.features
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] extends js.Object {
+trait Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] extends StObject {
   
   var __brand: features = js.native
   
@@ -34,63 +35,51 @@ object Features {
   }
   
   @scala.inline
-  implicit class FeaturesOps[Self <: Features[_, _, _, _, _, _, _], PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] (val x: Self with (Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages])) extends AnyVal {
+  implicit class FeaturesMutableBuilder[Self <: Features[_, _, _, _, _, _, _], PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] (val x: Self with (Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient(value: /* Base */ Instantiable0[RemoteClient] => Instantiable0[RemoteClient with PClient]): Self = StObject.set(x, "client", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsole(value: /* Base */ Instantiable0[RemoteConsole] => Instantiable0[RemoteConsole with PConsole]): Self = StObject.set(x, "console", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set__brand(value: features): Self = this.set("__brand", value.asInstanceOf[js.Any])
+    def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
     
     @scala.inline
-    def setClient(value: /* Base */ Instantiable0[RemoteClient] => Instantiable0[RemoteClient with PClient]): Self = this.set("client", js.Any.fromFunction1(value))
+    def setLanguages(value: /* Base */ Instantiable0[Languages] => Instantiable0[Languages with PLanguages]): Self = StObject.set(x, "languages", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClient: Self = this.set("client", js.undefined)
+    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
     @scala.inline
-    def setConsole(value: /* Base */ Instantiable0[RemoteConsole] => Instantiable0[RemoteConsole with PConsole]): Self = this.set("console", js.Any.fromFunction1(value))
+    def setTelemetry(value: /* Base */ Instantiable0[Telemetry] => Instantiable0[Telemetry with PTelemetry]): Self = StObject.set(x, "telemetry", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteConsole: Self = this.set("console", js.undefined)
+    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
     @scala.inline
-    def setLanguages(value: /* Base */ Instantiable0[Languages] => Instantiable0[Languages with PLanguages]): Self = this.set("languages", js.Any.fromFunction1(value))
+    def setTracer(value: /* Base */ Instantiable0[Tracer] => Instantiable0[Tracer with PTracer]): Self = StObject.set(x, "tracer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLanguages: Self = this.set("languages", js.undefined)
+    def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
     
     @scala.inline
-    def setTelemetry(value: /* Base */ Instantiable0[Telemetry] => Instantiable0[Telemetry with PTelemetry]): Self = this.set("telemetry", js.Any.fromFunction1(value))
+    def setWindow(value: /* Base */ Instantiable0[RemoteWindow] => Instantiable0[RemoteWindow with PWindow]): Self = StObject.set(x, "window", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTelemetry: Self = this.set("telemetry", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
     @scala.inline
-    def setTracer(value: /* Base */ Instantiable0[Tracer] => Instantiable0[Tracer with PTracer]): Self = this.set("tracer", js.Any.fromFunction1(value))
+    def setWorkspace(value: /* Base */ Instantiable0[RemoteWorkspace] => Instantiable0[RemoteWorkspace with PWorkspace]): Self = StObject.set(x, "workspace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteTracer: Self = this.set("tracer", js.undefined)
+    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     
     @scala.inline
-    def setWindow(value: /* Base */ Instantiable0[RemoteWindow] => Instantiable0[RemoteWindow with PWindow]): Self = this.set("window", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
-    
-    @scala.inline
-    def setWorkspace(value: /* Base */ Instantiable0[RemoteWorkspace] => Instantiable0[RemoteWorkspace with PWorkspace]): Self = this.set("workspace", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWorkspace: Self = this.set("workspace", js.undefined)
+    def set__brand(value: features): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }
 }

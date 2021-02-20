@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,42 +45,30 @@ object ITextboxOptions {
   }
   
   @scala.inline
-  implicit class ITextboxOptionsOps[Self <: ITextboxOptions] (val x: Self) extends AnyVal {
+  implicit class ITextboxOptionsMutableBuilder[Self <: ITextboxOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicMinWidth(value: Double): Self = StObject.set(x, "dynamicMinWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamicMinWidthUndefined: Self = StObject.set(x, "dynamicMinWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsWrapping(value: Boolean): Self = StObject.set(x, "isWrapping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamicMinWidth(value: Double): Self = this.set("dynamicMinWidth", value.asInstanceOf[js.Any])
+    def setIsWrappingUndefined: Self = StObject.set(x, "isWrapping", js.undefined)
     
     @scala.inline
-    def deleteDynamicMinWidth: Self = this.set("dynamicMinWidth", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWrapping(value: Boolean): Self = this.set("isWrapping", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteIsWrapping: Self = this.set("isWrapping", js.undefined)
+    def setSplitByGrapheme(value: Boolean): Self = StObject.set(x, "splitByGrapheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
-    
-    @scala.inline
-    def setSplitByGrapheme(value: Boolean): Self = this.set("splitByGrapheme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplitByGrapheme: Self = this.set("splitByGrapheme", js.undefined)
+    def setSplitByGraphemeUndefined: Self = StObject.set(x, "splitByGrapheme", js.undefined)
   }
 }

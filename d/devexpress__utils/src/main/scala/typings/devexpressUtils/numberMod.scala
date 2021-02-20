@@ -1,16 +1,16 @@
 package typings.devexpressUtils
 
 import typings.devexpressUtils.optionsMod.INumberFormatterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/formatters/number", JSImport.Namespace)
-@js.native
-object numberMod extends js.Object {
+object numberMod {
   
+  @JSImport("@devexpress/utils/lib/formatters/number", "NumberFormatter")
   @js.native
-  class NumberFormatter protected () extends js.Object {
+  class NumberFormatter protected () extends StObject {
     def this(options: INumberFormatterOptions) = this()
     
     var appendDigits: js.Any = js.native
@@ -68,13 +68,28 @@ object numberMod extends js.Object {
     var upper: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object NumberFormatter extends js.Object {
+  object NumberFormatter {
     
-    var createCustomFormatInfo: js.Any = js.native
+    @JSImport("@devexpress/utils/lib/formatters/number", "NumberFormatter")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var getCustomFormatSections: js.Any = js.native
+    @JSImport("@devexpress/utils/lib/formatters/number", "NumberFormatter.createCustomFormatInfo")
+    @js.native
+    def createCustomFormatInfo: js.Any = js.native
+    @scala.inline
+    def createCustomFormatInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createCustomFormatInfo")(x.asInstanceOf[js.Any])
     
-    var parseCustomFormatSection: js.Any = js.native
+    @JSImport("@devexpress/utils/lib/formatters/number", "NumberFormatter.getCustomFormatSections")
+    @js.native
+    def getCustomFormatSections: js.Any = js.native
+    @scala.inline
+    def getCustomFormatSections_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomFormatSections")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@devexpress/utils/lib/formatters/number", "NumberFormatter.parseCustomFormatSection")
+    @js.native
+    def parseCustomFormatSection: js.Any = js.native
+    @scala.inline
+    def parseCustomFormatSection_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseCustomFormatSection")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReelMediaViewerFeedResponseDonations extends js.Object {
+trait ListReelMediaViewerFeedResponseDonations extends StObject {
   
   var donations: js.Array[_] = js.native
   
@@ -22,30 +23,18 @@ object ListReelMediaViewerFeedResponseDonations {
   }
   
   @scala.inline
-  implicit class ListReelMediaViewerFeedResponseDonationsOps[Self <: ListReelMediaViewerFeedResponseDonations] (val x: Self) extends AnyVal {
+  implicit class ListReelMediaViewerFeedResponseDonationsMutableBuilder[Self <: ListReelMediaViewerFeedResponseDonations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDonations(value: js.Array[_]): Self = StObject.set(x, "donations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDonationsVarargs(value: js.Any*): Self = StObject.set(x, "donations", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDonationsVarargs(value: js.Any*): Self = this.set("donations", js.Array(value :_*))
-    
-    @scala.inline
-    def setDonations(value: js.Array[_]): Self = this.set("donations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMax_id(value: Null): Self = this.set("max_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMore_available(value: Boolean): Self = this.set("more_available", value.asInstanceOf[js.Any])
+    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisioningArtifactSummary extends js.Object {
+trait ProvisioningArtifactSummary extends StObject {
   
   /**
     * The UTC time stamp of the creation time.
@@ -41,48 +42,36 @@ object ProvisioningArtifactSummary {
   }
   
   @scala.inline
-  implicit class ProvisioningArtifactSummaryOps[Self <: ProvisioningArtifactSummary] (val x: Self) extends AnyVal {
+  implicit class ProvisioningArtifactSummaryMutableBuilder[Self <: ProvisioningArtifactSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTime(value: ProvisioningArtifactCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: ProvisioningArtifactDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTime(value: ProvisioningArtifactCreatedTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: ProvisioningArtifactDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setName(value: ProvisioningArtifactName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setProvisioningArtifactMetadata(value: ProvisioningArtifactInfo): Self = StObject.set(x, "ProvisioningArtifactMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ProvisioningArtifactName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setProvisioningArtifactMetadata(value: ProvisioningArtifactInfo): Self = this.set("ProvisioningArtifactMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisioningArtifactMetadata: Self = this.set("ProvisioningArtifactMetadata", js.undefined)
+    def setProvisioningArtifactMetadataUndefined: Self = StObject.set(x, "ProvisioningArtifactMetadata", js.undefined)
   }
 }

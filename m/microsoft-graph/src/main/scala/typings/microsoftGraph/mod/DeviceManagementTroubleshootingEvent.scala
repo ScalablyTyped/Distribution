@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object DeviceManagementTroubleshootingEvent {
   }
   
   @scala.inline
-  implicit class DeviceManagementTroubleshootingEventOps[Self <: DeviceManagementTroubleshootingEvent] (val x: Self) extends AnyVal {
+  implicit class DeviceManagementTroubleshootingEventMutableBuilder[Self <: DeviceManagementTroubleshootingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrelationId(value: NullableOption[String]): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
     @scala.inline
-    def setCorrelationId(value: NullableOption[String]): Self = this.set("correlationId", value.asInstanceOf[js.Any])
+    def setEventDateTime(value: String): Self = StObject.set(x, "eventDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCorrelationId: Self = this.set("correlationId", js.undefined)
-    
-    @scala.inline
-    def setCorrelationIdNull: Self = this.set("correlationId", null)
-    
-    @scala.inline
-    def setEventDateTime(value: String): Self = this.set("eventDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventDateTime: Self = this.set("eventDateTime", js.undefined)
+    def setEventDateTimeUndefined: Self = StObject.set(x, "eventDateTime", js.undefined)
   }
 }

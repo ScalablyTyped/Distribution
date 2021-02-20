@@ -1,12 +1,13 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'sparseIndices' | 'sparseValues' | 'defaultValue'> */
 @js.native
-trait SparseToDenseInputs extends js.Object {
+trait SparseToDenseInputs extends StObject {
   
   var defaultValue: js.UndefOr[js.Any] = js.native
   
@@ -23,36 +24,24 @@ object SparseToDenseInputs {
   }
   
   @scala.inline
-  implicit class SparseToDenseInputsOps[Self <: SparseToDenseInputs] (val x: Self) extends AnyVal {
+  implicit class SparseToDenseInputsMutableBuilder[Self <: SparseToDenseInputs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSparseIndices(value: js.Any): Self = StObject.set(x, "sparseIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setSparseIndicesUndefined: Self = StObject.set(x, "sparseIndices", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setSparseValues(value: js.Any): Self = StObject.set(x, "sparseValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSparseIndices(value: js.Any): Self = this.set("sparseIndices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSparseIndices: Self = this.set("sparseIndices", js.undefined)
-    
-    @scala.inline
-    def setSparseValues(value: js.Any): Self = this.set("sparseValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSparseValues: Self = this.set("sparseValues", js.undefined)
+    def setSparseValuesUndefined: Self = StObject.set(x, "sparseValues", js.undefined)
   }
 }

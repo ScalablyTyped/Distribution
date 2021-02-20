@@ -2,12 +2,13 @@ package typings.babylonjs.anon
 
 import typings.babylonjs.mathColorMod.Color4
 import typings.babylonjs.mathVectorMod.Vector4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Custom extends js.Object {
+trait Custom extends StObject {
   
   var custom: js.UndefOr[js.Any] = js.native
   
@@ -38,84 +39,72 @@ object Custom {
   }
   
   @scala.inline
-  implicit class CustomOps[Self <: Custom] (val x: Self) extends AnyVal {
+  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFaceColors(value: js.Array[Color4]): Self = StObject.set(x, "faceColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: js.Any): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value :_*))
     
     @scala.inline
-    def setFaceColorsVarargs(value: Color4*): Self = this.set("faceColors", js.Array(value :_*))
+    def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceColors(value: js.Array[Color4]): Self = this.set("faceColors", value.asInstanceOf[js.Any])
+    def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
     @scala.inline
-    def deleteFaceColors: Self = this.set("faceColors", js.undefined)
+    def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value :_*))
     
     @scala.inline
-    def setFaceUVVarargs(value: Vector4*): Self = this.set("faceUV", js.Array(value :_*))
+    def setSideOrientation(value: Double): Self = StObject.set(x, "sideOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceUV(value: js.Array[Vector4]): Self = this.set("faceUV", value.asInstanceOf[js.Any])
+    def setSideOrientationUndefined: Self = StObject.set(x, "sideOrientation", js.undefined)
     
     @scala.inline
-    def deleteFaceUV: Self = this.set("faceUV", js.undefined)
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSideOrientation(value: Double): Self = this.set("sideOrientation", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSideOrientation: Self = this.set("sideOrientation", js.undefined)
+    def setSizeX(value: Double): Self = StObject.set(x, "sizeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSizeXUndefined: Self = StObject.set(x, "sizeX", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeY(value: Double): Self = StObject.set(x, "sizeY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeX(value: Double): Self = this.set("sizeX", value.asInstanceOf[js.Any])
+    def setSizeYUndefined: Self = StObject.set(x, "sizeY", js.undefined)
     
     @scala.inline
-    def deleteSizeX: Self = this.set("sizeX", js.undefined)
+    def setSizeZ(value: Double): Self = StObject.set(x, "sizeZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeY(value: Double): Self = this.set("sizeY", value.asInstanceOf[js.Any])
+    def setSizeZUndefined: Self = StObject.set(x, "sizeZ", js.undefined)
     
     @scala.inline
-    def deleteSizeY: Self = this.set("sizeY", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeZ(value: Double): Self = this.set("sizeZ", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSizeZ: Self = this.set("sizeZ", js.undefined)
+    def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUpdatable(value: Boolean): Self = this.set("updatable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatable: Self = this.set("updatable", js.undefined)
+    def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTrafficPolicyInstanceRequest extends js.Object {
+trait UpdateTrafficPolicyInstanceRequest extends StObject {
   
   /**
     * The ID of the traffic policy instance that you want to update.
@@ -41,30 +42,18 @@ object UpdateTrafficPolicyInstanceRequest {
   }
   
   @scala.inline
-  implicit class UpdateTrafficPolicyInstanceRequestOps[Self <: UpdateTrafficPolicyInstanceRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTrafficPolicyInstanceRequestMutableBuilder[Self <: UpdateTrafficPolicyInstanceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrafficPolicyId(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: TrafficPolicyInstanceId): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTTL(value: TTL): Self = this.set("TTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicyId(value: TrafficPolicyId): Self = this.set("TrafficPolicyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = this.set("TrafficPolicyVersion", value.asInstanceOf[js.Any])
+    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyVersion", value.asInstanceOf[js.Any])
   }
 }

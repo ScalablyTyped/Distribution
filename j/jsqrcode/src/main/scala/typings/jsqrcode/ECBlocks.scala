@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ECBlocks extends js.Object {
+trait ECBlocks extends StObject {
   
   val ECCodewordsPerBlock: Double = js.native
   
@@ -35,36 +36,24 @@ object ECBlocks {
   }
   
   @scala.inline
-  implicit class ECBlocksOps[Self <: ECBlocks] (val x: Self) extends AnyVal {
+  implicit class ECBlocksMutableBuilder[Self <: ECBlocks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setECCodewordsPerBlock(value: Double): Self = StObject.set(x, "ECCodewordsPerBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEcBlocks(value: js.Array[ECB] | (js.Tuple2[ECB, ECB])): Self = StObject.set(x, "ecBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEcBlocksVarargs(value: ECB*): Self = StObject.set(x, "ecBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setECCodewordsPerBlock(value: Double): Self = this.set("ECCodewordsPerBlock", value.asInstanceOf[js.Any])
+    def setGetECBlocks(value: () => js.Array[ECB] | (js.Tuple2[ECB, ECB])): Self = StObject.set(x, "getECBlocks", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNumBlocks(value: Double): Self = this.set("NumBlocks", value.asInstanceOf[js.Any])
+    def setNumBlocks(value: Double): Self = StObject.set(x, "NumBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalECCodewords(value: Double): Self = this.set("TotalECCodewords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEcBlocksVarargs(value: ECB*): Self = this.set("ecBlocks", js.Array(value :_*))
-    
-    @scala.inline
-    def setEcBlocks(value: js.Array[ECB] | (js.Tuple2[ECB, ECB])): Self = this.set("ecBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetECBlocks(value: () => js.Array[ECB] | (js.Tuple2[ECB, ECB])): Self = this.set("getECBlocks", js.Any.fromFunction0(value))
+    def setTotalECCodewords(value: Double): Self = StObject.set(x, "TotalECCodewords", value.asInstanceOf[js.Any])
   }
 }

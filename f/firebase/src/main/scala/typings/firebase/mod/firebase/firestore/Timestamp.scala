@@ -1,12 +1,13 @@
 package typings.firebase.mod.firebase.firestore
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Timestamp extends js.Object {
+trait Timestamp extends StObject {
   
   /**
     * Returns true if this `Timestamp` is equal to the provided one.
@@ -53,33 +54,21 @@ object Timestamp {
   }
   
   @scala.inline
-  implicit class TimestampOps[Self <: Timestamp] (val x: Self) extends AnyVal {
+  implicit class TimestampMutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsEqual(value: Timestamp => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEqual(value: Timestamp => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    def setToDate(value: () => Date): Self = StObject.set(x, "toDate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNanoseconds(value: Double): Self = this.set("nanoseconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToDate(value: () => Date): Self = this.set("toDate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToMillis(value: () => Double): Self = this.set("toMillis", js.Any.fromFunction0(value))
+    def setToMillis(value: () => Double): Self = StObject.set(x, "toMillis", js.Any.fromFunction0(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Target extends js.Object {
+trait Target extends StObject {
   
   /** Get the browser the target belongs to. */
   def browser(): Browser = js.native
@@ -50,42 +51,30 @@ object Target {
   }
   
   @scala.inline
-  implicit class TargetOps[Self <: Target] (val x: Self) extends AnyVal {
+  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowser(value: () => Browser): Self = StObject.set(x, "browser", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserContext(value: () => BrowserContext): Self = StObject.set(x, "browserContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateCDPSession(value: () => js.Promise[CDPSession]): Self = StObject.set(x, "createCDPSession", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBrowser(value: () => Browser): Self = this.set("browser", js.Any.fromFunction0(value))
+    def setOpener(value: () => Target | Null): Self = StObject.set(x, "opener", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBrowserContext(value: () => BrowserContext): Self = this.set("browserContext", js.Any.fromFunction0(value))
+    def setPage(value: () => js.Promise[Page]): Self = StObject.set(x, "page", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateCDPSession(value: () => js.Promise[CDPSession]): Self = this.set("createCDPSession", js.Any.fromFunction0(value))
+    def setType(value: () => TargetType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOpener(value: () => Target | Null): Self = this.set("opener", js.Any.fromFunction0(value))
+    def setUrl(value: () => String): Self = StObject.set(x, "url", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPage(value: () => js.Promise[Page]): Self = this.set("page", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: () => TargetType): Self = this.set("type", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUrl(value: () => String): Self = this.set("url", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWorker(value: () => js.Promise[Worker | Null]): Self = this.set("worker", js.Any.fromFunction0(value))
+    def setWorker(value: () => js.Promise[Worker | Null]): Self = StObject.set(x, "worker", js.Any.fromFunction0(value))
   }
 }

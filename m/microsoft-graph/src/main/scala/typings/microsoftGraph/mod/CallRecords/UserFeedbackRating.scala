@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod.CallRecords
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.excellent
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
-trait UserFeedbackRating extends js.Object
+trait UserFeedbackRating extends StObject
 object UserFeedbackRating {
   
   @scala.inline

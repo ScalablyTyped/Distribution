@@ -2,20 +2,21 @@ package typings.yandexMaps.mod
 
 import typings.std.HTMLElement
 import typings.yandexMaps.anon.TrafficImageZIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "map")
-@js.native
-object map extends js.Object {
+object map {
   
+  @JSImport("yandex-maps", "map.Balloon")
   @js.native
   class Balloon protected ()
     extends IBalloonManager[typings.yandexMaps.mod.map.Balloon] {
     def this(map: Map_) = this()
   }
   
+  @JSImport("yandex-maps", "map.Container")
   @js.native
   class Container protected () extends IEventEmitter {
     def this(parentElement: String) = this()
@@ -39,8 +40,9 @@ object map extends js.Object {
     def isFullscreen(): Boolean = js.native
   }
   
+  @JSImport("yandex-maps", "map.Converter")
   @js.native
-  class Converter protected () extends js.Object {
+  class Converter protected () extends StObject {
     def this(map: Map_) = this()
     
     def globalToPage(globalPixelPoint: js.Array[Double]): js.Array[Double] = js.native
@@ -48,8 +50,9 @@ object map extends js.Object {
     def pageToGlobal(pagePixelPoint: js.Array[Double]): js.Array[Double] = js.native
   }
   
+  @JSImport("yandex-maps", "map.Copyrights")
   @js.native
-  class Copyrights protected () extends js.Object {
+  class Copyrights protected () extends StObject {
     def this(map: Map_) = this()
     
     def add(customCopyrights: String): ICopyrightsAccessor = js.native
@@ -68,6 +71,7 @@ object map extends js.Object {
     def removeProvider(provider: ICopyrightsProvider): this.type = js.native
   }
   
+  @JSImport("yandex-maps", "map.GeoObjects")
   @js.native
   class GeoObjects protected () extends IGeoObjectCollection {
     def this(map: Map_) = this()
@@ -79,11 +83,13 @@ object map extends js.Object {
     def remove(child: ObjectManager_): this.type = js.native
   }
   
+  @JSImport("yandex-maps", "map.Hint")
   @js.native
   class Hint protected () extends IPopupManager[Hint] {
     def this(map: Map_) = this()
   }
   
+  @JSImport("yandex-maps", "map.ZoomRange")
   @js.native
   class ZoomRange protected () extends IEventEmitter {
     def this(map: Map_, constraints: js.Array[Double]) = this()
@@ -94,9 +100,9 @@ object map extends js.Object {
     def getCurrent(): js.Array[Double] = js.native
   }
   
-  @js.native
-  object action extends js.Object {
+  object action {
     
+    @JSImport("yandex-maps", "map.action.Manager")
     @js.native
     class Manager protected () extends IEventEmitter {
       def this(map: Map_) = this()
@@ -115,9 +121,9 @@ object map extends js.Object {
     }
   }
   
-  @js.native
-  object behavior extends js.Object {
+  object behavior {
     
+    @JSImport("yandex-maps", "map.behavior.Manager")
     @js.native
     class Manager protected ()
       extends ICustomizable
@@ -139,38 +145,48 @@ object map extends js.Object {
     }
   }
   
-  @js.native
-  object layer extends js.Object {
+  object layer {
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
     - typings.yandexMaps.mod.IEventEmitter because Already inherited
-    - typings.yandexMaps.mod.ICollection because var conflicts: events. Inlined add, getIterator, remove */ @js.native
-    class Manager protected ()
-      extends ILayer
-         with IParentOnMap {
+    - typings.yandexMaps.mod.ICustomizable because Already inherited
+    - typings.yandexMaps.mod.IChild because var conflicts: events. Inlined getParent, setParent, setParent
+    - typings.yandexMaps.mod.ILayer because var conflicts: events, options. Inlined getBrightness, getCopyrights, getZoomRange */ @JSImport("yandex-maps", "map.layer.Manager")
+    @js.native
+    class Manager protected () extends IMapObjectCollection {
       def this(map: Map_) = this()
       def this(map: Map_, options: TrafficImageZIndex) = this()
-      
-      def add(`object`: js.Object): this.type = js.native
       
       def each(callback: js.Function1[/* layer */ ILayer, Unit]): Unit = js.native
       def each(callback: js.Function1[/* layer */ ILayer, Unit], context: js.Object): Unit = js.native
       
       def getAll(): js.Array[Collection_[Layer]] = js.native
       
-      def getIterator(): IIterator = js.native
+      var getBrightness: js.UndefOr[js.Function0[Double]] = js.native
       
-      def remove(`object`: js.Object): this.type = js.native
+      var getCopyrights: js.UndefOr[
+            js.Function2[
+              /* coords */ js.Array[Double], 
+              /* zoom */ Double, 
+              js.Promise[js.Array[String | HTMLElement]]
+            ]
+          ] = js.native
       
+      def getParent(): Null | IControlParent = js.native
+      
+      var getZoomRange: js.UndefOr[js.Function1[/* point */ js.Array[Double], js.Promise[js.Array[Double]]]] = js.native
+      
+      def setParent(): this.type = js.native
+      def setParent(parent: js.Object): this.type = js.native
       def setParent(parent: IControlParent): this.type = js.native
     }
   }
   
-  @js.native
-  object margin extends js.Object {
+  object margin {
     
+    @JSImport("yandex-maps", "map.margin.Accessor")
     @js.native
-    class Accessor protected () extends js.Object {
+    class Accessor protected () extends StObject {
       def this(screenArea: js.Object) = this()
       
       def getArea(): js.Object = js.native
@@ -180,8 +196,9 @@ object map extends js.Object {
       def setArea(screenArea: js.Object): this.type = js.native
     }
     
+    @JSImport("yandex-maps", "map.margin.Manager")
     @js.native
-    class Manager protected () extends js.Object {
+    class Manager protected () extends StObject {
       def this(map: Map_) = this()
       
       def addArea(screenArea: js.Object): Accessor = js.native
@@ -197,11 +214,11 @@ object map extends js.Object {
     }
   }
   
-  @js.native
-  object pane extends js.Object {
+  object pane {
     
+    @JSImport("yandex-maps", "map.pane.Manager")
     @js.native
-    class Manager protected () extends js.Object {
+    class Manager protected () extends StObject {
       def this(map: Map_) = this()
       
       def append(key: String, pane: IPane): Unit = js.native

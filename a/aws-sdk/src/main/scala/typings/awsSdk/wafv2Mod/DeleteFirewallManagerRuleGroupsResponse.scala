@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFirewallManagerRuleGroupsResponse extends js.Object {
+trait DeleteFirewallManagerRuleGroupsResponse extends StObject {
   
   /**
     * A token used for optimistic locking. AWS WAF returns a token to your get and list requests, to mark the state of the entity at the time of the request. To make changes to the entity associated with the token, you provide the token to operations like update and delete. AWS WAF uses the token to ensure that no changes have been made to the entity since you last retrieved it. If a change has been made, the update fails with a WAFOptimisticLockException. If this happens, perform another get, and use the new token returned by that operation. 
@@ -21,24 +22,12 @@ object DeleteFirewallManagerRuleGroupsResponse {
   }
   
   @scala.inline
-  implicit class DeleteFirewallManagerRuleGroupsResponseOps[Self <: DeleteFirewallManagerRuleGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteFirewallManagerRuleGroupsResponseMutableBuilder[Self <: DeleteFirewallManagerRuleGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextWebACLLockToken(value: LockToken): Self = StObject.set(x, "NextWebACLLockToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNextWebACLLockToken(value: LockToken): Self = this.set("NextWebACLLockToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextWebACLLockToken: Self = this.set("NextWebACLLockToken", js.undefined)
+    def setNextWebACLLockTokenUndefined: Self = StObject.set(x, "NextWebACLLockToken", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAndroidpublisher.anon.CallbackFields
 import typings.maximMazurokGapiClientAndroidpublisher.anon.FieldsKey
 import typings.maximMazurokGapiClientAndroidpublisher.anon.ReviewId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.StartIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReviewsResource extends js.Object {
+trait ReviewsResource extends StObject {
   
   /** Gets a single review. */
   def get(): Request[Review] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTriggerRequest extends js.Object {
+trait CreateTriggerRequest extends StObject {
   
   /**
     * The actions initiated by this trigger when it fires.
@@ -61,66 +62,54 @@ object CreateTriggerRequest {
   }
   
   @scala.inline
-  implicit class CreateTriggerRequestOps[Self <: CreateTriggerRequest] (val x: Self) extends AnyVal {
+  implicit class CreateTriggerRequestMutableBuilder[Self <: CreateTriggerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: Action*): Self = this.set("Actions", js.Array(value :_*))
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setActions(value: ActionList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TriggerType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setPredicateUndefined: Self = StObject.set(x, "Predicate", js.undefined)
     
     @scala.inline
-    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setSchedule(value: GenericString): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def setPredicate(value: Predicate): Self = this.set("Predicate", value.asInstanceOf[js.Any])
+    def setStartOnCreation(value: BooleanValue): Self = StObject.set(x, "StartOnCreation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePredicate: Self = this.set("Predicate", js.undefined)
+    def setStartOnCreationUndefined: Self = StObject.set(x, "StartOnCreation", js.undefined)
     
     @scala.inline
-    def setSchedule(value: GenericString): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def setStartOnCreation(value: BooleanValue): Self = this.set("StartOnCreation", value.asInstanceOf[js.Any])
+    def setType(value: TriggerType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartOnCreation: Self = this.set("StartOnCreation", js.undefined)
+    def setWorkflowName(value: NameString): Self = StObject.set(x, "WorkflowName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagsMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setWorkflowName(value: NameString): Self = this.set("WorkflowName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkflowName: Self = this.set("WorkflowName", js.undefined)
+    def setWorkflowNameUndefined: Self = StObject.set(x, "WorkflowName", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.grammarkdown.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "NewLineKind")
 @js.native
-object NewLineKind extends js.Object {
+object NewLineKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.grammarkdown.optionsMod.NewLineKind with Double] = js.native

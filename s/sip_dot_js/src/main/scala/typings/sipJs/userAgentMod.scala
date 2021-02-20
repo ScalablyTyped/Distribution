@@ -18,20 +18,20 @@ import typings.sipJs.transportMod.Transport
 import typings.sipJs.userAgentCoreConfigurationMod.Contact
 import typings.sipJs.userAgentDelegateMod.UserAgentDelegate
 import typings.sipJs.userAgentStateMod.UserAgentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/user-agent", JSImport.Namespace)
-@js.native
-object userAgentMod extends js.Object {
+object userAgentMod {
   
+  @JSImport("sip.js/lib/api/user-agent", "UserAgent")
   @js.native
   /**
     * Constructs a new instance of the `UserAgent` class.
     * @param options - Options bucket. See {@link UserAgentOptions} for details.
     */
-  class UserAgent () extends js.Object {
+  class UserAgent () extends StObject {
     def this(options: PartialUserAgentOptions) = this()
     
     var _contact: js.Any = js.native
@@ -216,11 +216,18 @@ object userAgentMod extends js.Object {
     def userAgentCore: UserAgentCore = js.native
   }
   /* static members */
-  @js.native
-  object UserAgent extends js.Object {
+  object UserAgent {
+    
+    @JSImport("sip.js/lib/api/user-agent", "UserAgent")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Default user agent options. */
-    var defaultOptions: js.Any = js.native
+    @JSImport("sip.js/lib/api/user-agent", "UserAgent.defaultOptions")
+    @js.native
+    def defaultOptions: js.Any = js.native
+    @scala.inline
+    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     /**
       * Create a URI instance from a string.
@@ -231,6 +238,8 @@ object userAgentMod extends js.Object {
       * const uri = UserAgent.makeURI("sip:edgar@example.com");
       * ```
       */
+    @JSImport("sip.js/lib/api/user-agent", "UserAgent.makeURI")
+    @js.native
     def makeURI(uri: String): js.UndefOr[URI] = js.native
     
     /**
@@ -239,6 +248,10 @@ object userAgentMod extends js.Object {
       * https://github.com/Microsoft/TypeScript/issues/13195
       * @param options - Options to reduce
       */
-    var stripUndefinedProperties: js.Any = js.native
+    @JSImport("sip.js/lib/api/user-agent", "UserAgent.stripUndefinedProperties")
+    @js.native
+    def stripUndefinedProperties: js.Any = js.native
+    @scala.inline
+    def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
   }
 }

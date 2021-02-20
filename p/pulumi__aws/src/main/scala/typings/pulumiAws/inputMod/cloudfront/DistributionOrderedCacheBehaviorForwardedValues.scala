@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.cloudfront
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistributionOrderedCacheBehaviorForwardedValues extends js.Object {
+trait DistributionOrderedCacheBehaviorForwardedValues extends StObject {
   
   /**
     * The forwarded values cookies
@@ -47,42 +48,30 @@ object DistributionOrderedCacheBehaviorForwardedValues {
   }
   
   @scala.inline
-  implicit class DistributionOrderedCacheBehaviorForwardedValuesOps[Self <: DistributionOrderedCacheBehaviorForwardedValues] (val x: Self) extends AnyVal {
+  implicit class DistributionOrderedCacheBehaviorForwardedValuesMutableBuilder[Self <: DistributionOrderedCacheBehaviorForwardedValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookies(value: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setCookies(value: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies]): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    def setHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def setQueryString(value: Input[Boolean]): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    def setQueryString(value: Input[Boolean]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: Input[String]*): Self = this.set("headers", js.Array(value :_*))
+    def setQueryStringCacheKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "queryStringCacheKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Input[js.Array[Input[String]]]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setQueryStringCacheKeysUndefined: Self = StObject.set(x, "queryStringCacheKeys", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    
-    @scala.inline
-    def setQueryStringCacheKeysVarargs(value: Input[String]*): Self = this.set("queryStringCacheKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueryStringCacheKeys(value: Input[js.Array[Input[String]]]): Self = this.set("queryStringCacheKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueryStringCacheKeys: Self = this.set("queryStringCacheKeys", js.undefined)
+    def setQueryStringCacheKeysVarargs(value: Input[String]*): Self = StObject.set(x, "queryStringCacheKeys", js.Array(value :_*))
   }
 }

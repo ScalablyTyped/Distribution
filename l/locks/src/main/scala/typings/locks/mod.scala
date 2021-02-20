@@ -1,24 +1,16 @@
 package typings.locks
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locks", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def createCondVariable(initialValue: js.Any): CondVariable = js.native
-  
-  def createMutex(): Mutex = js.native
-  
-  def createReadWriteLock(): ReadWriteLock = js.native
-  
-  def createSemaphore(initialValue: Double): Semaphore = js.native
-  
+  @JSImport("locks", "CondVariable")
   @js.native
-  class CondVariable protected () extends js.Object {
+  class CondVariable protected () extends StObject {
     /** Construct a new conditional variable with the specified initial value. */
     def this(initialValue: js.Any) = this()
     
@@ -32,9 +24,10 @@ object mod extends js.Object {
     def wait(value: js.Any, callback: js.Function0[Unit]): Unit = js.native
   }
   
+  @JSImport("locks", "Mutex")
   @js.native
   /** Construct a new mutex lock. */
-  class Mutex () extends js.Object {
+  class Mutex () extends StObject {
     
     /** Flag indicating whether the lock is currently taken. */
     var isLocked: Boolean = js.native
@@ -55,9 +48,10 @@ object mod extends js.Object {
     def unlock(): Unit = js.native
   }
   
+  @JSImport("locks", "ReadWriteLock")
   @js.native
   /** Construct a new reader writer lock */
-  class ReadWriteLock () extends js.Object {
+  class ReadWriteLock () extends StObject {
     
     /** Flag indicating whether the reader writer lock is holding the read lock */
     var isReadLocked: Boolean = js.native
@@ -87,8 +81,9 @@ object mod extends js.Object {
     def writeLock(callback: js.Function0[Unit]): Unit = js.native
   }
   
+  @JSImport("locks", "Semaphore")
   @js.native
-  class Semaphore protected () extends js.Object {
+  class Semaphore protected () extends StObject {
     /** Construct a new semaphore. */
     def this(initialCount: Double) = this()
     
@@ -98,4 +93,20 @@ object mod extends js.Object {
     /** Queue a callback. Callbacks are called in sequence on signals. */
     def wait(callback: js.Function0[Unit]): Unit = js.native
   }
+  
+  @JSImport("locks", "createCondVariable")
+  @js.native
+  def createCondVariable(initialValue: js.Any): CondVariable = js.native
+  
+  @JSImport("locks", "createMutex")
+  @js.native
+  def createMutex(): Mutex = js.native
+  
+  @JSImport("locks", "createReadWriteLock")
+  @js.native
+  def createReadWriteLock(): ReadWriteLock = js.native
+  
+  @JSImport("locks", "createSemaphore")
+  @js.native
+  def createSemaphore(initialValue: Double): Semaphore = js.native
 }

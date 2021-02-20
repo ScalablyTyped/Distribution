@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAvailableManagedRuleGroupsResponse extends js.Object {
+trait ListAvailableManagedRuleGroupsResponse extends StObject {
   
   /**
     * 
@@ -26,33 +27,21 @@ object ListAvailableManagedRuleGroupsResponse {
   }
   
   @scala.inline
-  implicit class ListAvailableManagedRuleGroupsResponseOps[Self <: ListAvailableManagedRuleGroupsResponse] (val x: Self) extends AnyVal {
+  implicit class ListAvailableManagedRuleGroupsResponseMutableBuilder[Self <: ListAvailableManagedRuleGroupsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagedRuleGroups(value: ManagedRuleGroupSummaries): Self = StObject.set(x, "ManagedRuleGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedRuleGroupsUndefined: Self = StObject.set(x, "ManagedRuleGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManagedRuleGroupsVarargs(value: ManagedRuleGroupSummary*): Self = StObject.set(x, "ManagedRuleGroups", js.Array(value :_*))
     
     @scala.inline
-    def setManagedRuleGroupsVarargs(value: ManagedRuleGroupSummary*): Self = this.set("ManagedRuleGroups", js.Array(value :_*))
+    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedRuleGroups(value: ManagedRuleGroupSummaries): Self = this.set("ManagedRuleGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagedRuleGroups: Self = this.set("ManagedRuleGroups", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignedExchangeHeader extends js.Object {
+trait SignedExchangeHeader extends StObject {
   
   /**
     * Signed exchange header integrity hash in the form of "sha256-<base64-hash-value>".
@@ -48,36 +49,24 @@ object SignedExchangeHeader {
   }
   
   @scala.inline
-  implicit class SignedExchangeHeaderOps[Self <: SignedExchangeHeader] (val x: Self) extends AnyVal {
+  implicit class SignedExchangeHeaderMutableBuilder[Self <: SignedExchangeHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderIntegrity(value: String): Self = StObject.set(x, "headerIntegrity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequestUrl(value: String): Self = StObject.set(x, "requestUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseCode(value: integer): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderIntegrity(value: String): Self = this.set("headerIntegrity", value.asInstanceOf[js.Any])
+    def setResponseHeaders(value: Headers): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestUrl(value: String): Self = this.set("requestUrl", value.asInstanceOf[js.Any])
+    def setSignatures(value: js.Array[SignedExchangeSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCode(value: integer): Self = this.set("responseCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseHeaders(value: Headers): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignaturesVarargs(value: SignedExchangeSignature*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[SignedExchangeSignature]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    def setSignaturesVarargs(value: SignedExchangeSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

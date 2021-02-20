@@ -16,12 +16,13 @@ import typings.electron.electronStrings.numLock
 import typings.electron.electronStrings.right
 import typings.electron.electronStrings.rightButtonDown
 import typings.electron.electronStrings.shift
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputEvent extends js.Object {
+trait InputEvent extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/input-event
   /**
@@ -44,33 +45,21 @@ object InputEvent {
   }
   
   @scala.inline
-  implicit class InputEventOps[Self <: InputEvent] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setModifiersVarargs(
-      value: (shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right)*
-    ): Self = this.set("modifiers", js.Array(value :_*))
+  implicit class InputEventMutableBuilder[Self <: InputEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setModifiers(
       value: js.Array[
           shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right
         ]
-    ): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteModifiers: Self = this.set("modifiers", js.undefined)
+    def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    
+    @scala.inline
+    def setModifiersVarargs(
+      value: (shift | control | ctrl | alt | meta | command | cmd | isKeypad | isAutoRepeat | leftButtonDown | middleButtonDown | rightButtonDown | capsLock | numLock | left | right)*
+    ): Self = StObject.set(x, "modifiers", js.Array(value :_*))
   }
 }

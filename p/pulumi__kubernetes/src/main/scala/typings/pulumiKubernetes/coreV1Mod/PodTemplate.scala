@@ -4,6 +4,7 @@ import typings.pulumiKubernetes.podTemplateMod.PodTemplateArgs
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,9 +26,7 @@ class PodTemplate protected ()
   def this(name: String, args: PodTemplateArgs, opts: CustomResourceOptions) = this()
 }
 /* static members */
-@JSImport("@pulumi/kubernetes/core/v1", "PodTemplate")
-@js.native
-object PodTemplate extends js.Object {
+object PodTemplate {
   
   /**
     * Get an existing PodTemplate resource's state with the given name, ID, and optional extra
@@ -37,12 +36,18 @@ object PodTemplate extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
+  @JSImport("@pulumi/kubernetes/core/v1", "PodTemplate.get")
+  @js.native
   def get(name: String, id: Input[ID]): typings.pulumiKubernetes.podTemplateMod.PodTemplate = js.native
+  @JSImport("@pulumi/kubernetes/core/v1", "PodTemplate.get")
+  @js.native
   def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.podTemplateMod.PodTemplate = js.native
   
   /**
     * Returns true if the given object is an instance of PodTemplate.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
+  @JSImport("@pulumi/kubernetes/core/v1", "PodTemplate.isInstance")
+  @js.native
   def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/podTemplate.PodTemplate */ Boolean = js.native
 }

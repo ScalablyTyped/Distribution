@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateNetworkProfileRequest extends js.Object {
+trait UpdateNetworkProfileRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the project for which you want to update network profile settings.
@@ -76,87 +77,75 @@ object UpdateNetworkProfileRequest {
   }
   
   @scala.inline
-  implicit class UpdateNetworkProfileRequestOps[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateNetworkProfileRequestMutableBuilder[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDownlinkBandwidthBits(value: Long): Self = StObject.set(x, "downlinkBandwidthBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDownlinkBandwidthBitsUndefined: Self = StObject.set(x, "downlinkBandwidthBits", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDownlinkDelayMs(value: Long): Self = StObject.set(x, "downlinkDelayMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownlinkBandwidthBits(value: Long): Self = this.set("downlinkBandwidthBits", value.asInstanceOf[js.Any])
+    def setDownlinkDelayMsUndefined: Self = StObject.set(x, "downlinkDelayMs", js.undefined)
     
     @scala.inline
-    def deleteDownlinkBandwidthBits: Self = this.set("downlinkBandwidthBits", js.undefined)
+    def setDownlinkJitterMs(value: Long): Self = StObject.set(x, "downlinkJitterMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownlinkDelayMs(value: Long): Self = this.set("downlinkDelayMs", value.asInstanceOf[js.Any])
+    def setDownlinkJitterMsUndefined: Self = StObject.set(x, "downlinkJitterMs", js.undefined)
     
     @scala.inline
-    def deleteDownlinkDelayMs: Self = this.set("downlinkDelayMs", js.undefined)
+    def setDownlinkLossPercent(value: PercentInteger): Self = StObject.set(x, "downlinkLossPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownlinkJitterMs(value: Long): Self = this.set("downlinkJitterMs", value.asInstanceOf[js.Any])
+    def setDownlinkLossPercentUndefined: Self = StObject.set(x, "downlinkLossPercent", js.undefined)
     
     @scala.inline
-    def deleteDownlinkJitterMs: Self = this.set("downlinkJitterMs", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownlinkLossPercent(value: PercentInteger): Self = this.set("downlinkLossPercent", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDownlinkLossPercent: Self = this.set("downlinkLossPercent", js.undefined)
+    def setType(value: NetworkProfileType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setUplinkBandwidthBits(value: Long): Self = StObject.set(x, "uplinkBandwidthBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: NetworkProfileType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUplinkBandwidthBitsUndefined: Self = StObject.set(x, "uplinkBandwidthBits", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUplinkDelayMs(value: Long): Self = StObject.set(x, "uplinkDelayMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUplinkBandwidthBits(value: Long): Self = this.set("uplinkBandwidthBits", value.asInstanceOf[js.Any])
+    def setUplinkDelayMsUndefined: Self = StObject.set(x, "uplinkDelayMs", js.undefined)
     
     @scala.inline
-    def deleteUplinkBandwidthBits: Self = this.set("uplinkBandwidthBits", js.undefined)
+    def setUplinkJitterMs(value: Long): Self = StObject.set(x, "uplinkJitterMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUplinkDelayMs(value: Long): Self = this.set("uplinkDelayMs", value.asInstanceOf[js.Any])
+    def setUplinkJitterMsUndefined: Self = StObject.set(x, "uplinkJitterMs", js.undefined)
     
     @scala.inline
-    def deleteUplinkDelayMs: Self = this.set("uplinkDelayMs", js.undefined)
+    def setUplinkLossPercent(value: PercentInteger): Self = StObject.set(x, "uplinkLossPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUplinkJitterMs(value: Long): Self = this.set("uplinkJitterMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUplinkJitterMs: Self = this.set("uplinkJitterMs", js.undefined)
-    
-    @scala.inline
-    def setUplinkLossPercent(value: PercentInteger): Self = this.set("uplinkLossPercent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUplinkLossPercent: Self = this.set("uplinkLossPercent", js.undefined)
+    def setUplinkLossPercentUndefined: Self = StObject.set(x, "uplinkLossPercent", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorSerialization extends js.Object {
+trait EditorSerialization extends StObject {
   
   var custom: js.UndefOr[js.Function] = js.native
   
@@ -24,42 +25,30 @@ object EditorSerialization {
   }
   
   @scala.inline
-  implicit class EditorSerializationOps[Self <: EditorSerialization] (val x: Self) extends AnyVal {
+  implicit class EditorSerializationMutableBuilder[Self <: EditorSerialization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom(value: js.Function): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntities(value: Boolean): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: js.Function): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setScripts(value: Boolean): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: Boolean): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
     
     @scala.inline
-    def deleteEntities: Self = this.set("entities", js.undefined)
+    def setSemantic(value: Boolean): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScripts(value: Boolean): Self = this.set("scripts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScripts: Self = this.set("scripts", js.undefined)
-    
-    @scala.inline
-    def setSemantic(value: Boolean): Self = this.set("semantic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemantic: Self = this.set("semantic", js.undefined)
+    def setSemanticUndefined: Self = StObject.set(x, "semantic", js.undefined)
   }
 }

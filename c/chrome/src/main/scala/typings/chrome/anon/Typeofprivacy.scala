@@ -3,12 +3,13 @@ package typings.chrome.anon
 import typings.chrome.chrome.privacy.Network
 import typings.chrome.chrome.privacy.Services
 import typings.chrome.chrome.privacy.Websites
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofprivacy extends js.Object {
+trait Typeofprivacy extends StObject {
   
   var network: Network = js.native
   
@@ -25,27 +26,15 @@ object Typeofprivacy {
   }
   
   @scala.inline
-  implicit class TypeofprivacyOps[Self <: Typeofprivacy] (val x: Self) extends AnyVal {
+  implicit class TypeofprivacyMutableBuilder[Self <: Typeofprivacy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServices(value: Services): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetwork(value: Network): Self = this.set("network", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServices(value: Services): Self = this.set("services", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebsites(value: Websites): Self = this.set("websites", value.asInstanceOf[js.Any])
+    def setWebsites(value: Websites): Self = StObject.set(x, "websites", value.asInstanceOf[js.Any])
   }
 }

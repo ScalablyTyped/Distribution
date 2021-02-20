@@ -4,14 +4,14 @@ import typings.node.streamMod.DuplexOptions
 import typings.std.ArrayLike
 import typings.std.Iterable
 import typings.streamMock.duplexMockMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stream-mock/lib/duplex", JSImport.Namespace)
-@js.native
-object duplexMod extends js.Object {
+object duplexMod {
   
+  @JSImport("stream-mock/lib/duplex", "DuplexMock")
   @js.native
   class DuplexMock () extends default {
     def this(source: ArrayLike[_]) = this()

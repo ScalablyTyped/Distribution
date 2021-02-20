@@ -1,11 +1,12 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait patternSettings extends js.Object {
+trait patternSettings extends StObject {
   
   var D: String = js.native
   
@@ -34,36 +35,24 @@ object patternSettings {
   }
   
   @scala.inline
-  implicit class patternSettingsOps[Self <: patternSettings] (val x: Self) extends AnyVal {
+  implicit class patternSettingsMutableBuilder[Self <: patternSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("D", value.asInstanceOf[js.Any])
+    def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF(value: String): Self = this.set("F", value.asInstanceOf[js.Any])
+    def setT(value: String): Self = StObject.set(x, "T", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: String): Self = this.set("M", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS(value: String): Self = this.set("S", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setT(value: String): Self = this.set("T", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: String): Self = this.set("Y", value.asInstanceOf[js.Any])
+    def setY(value: String): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

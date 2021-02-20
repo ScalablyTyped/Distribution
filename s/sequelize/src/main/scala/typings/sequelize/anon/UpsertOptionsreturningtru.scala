@@ -2,13 +2,14 @@ package typings.sequelize.anon
 
 import typings.sequelize.mod.Transaction
 import typings.sequelize.sequelizeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined sequelize.sequelize.UpsertOptions & {  returning :true} */
 @js.native
-trait UpsertOptionsreturningtru extends js.Object {
+trait UpsertOptionsreturningtru extends StObject {
   
   /**
     * Print query execution time in milliseconds when logging SQL.
@@ -54,60 +55,48 @@ object UpsertOptionsreturningtru {
   }
   
   @scala.inline
-  implicit class UpsertOptionsreturningtruOps[Self <: UpsertOptionsreturningtru] (val x: Self) extends AnyVal {
+  implicit class UpsertOptionsreturningtruMutableBuilder[Self <: UpsertOptionsreturningtru] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBenchmark(value: Boolean): Self = StObject.set(x, "benchmark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBenchmarkUndefined: Self = StObject.set(x, "benchmark", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturning(value: js.UndefOr[Boolean] with `true`): Self = this.set("returning", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setBenchmark(value: Boolean): Self = this.set("benchmark", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteBenchmark: Self = this.set("benchmark", js.undefined)
+    def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setReturning(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "returning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setSearchPath(value: String): Self = StObject.set(x, "searchPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Boolean | js.Function): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setSearchPathUndefined: Self = StObject.set(x, "searchPath", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchPath(value: String): Self = this.set("searchPath", value.asInstanceOf[js.Any])
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     
     @scala.inline
-    def deleteSearchPath: Self = this.set("searchPath", js.undefined)
+    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransaction(value: Transaction): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
-    
-    @scala.inline
-    def setValidate(value: Boolean): Self = this.set("validate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

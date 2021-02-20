@@ -1,12 +1,13 @@
 package typings.activexMsforms.MSForms
 
 import typings.activexStdole.stdole.StdPicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionButton extends js.Object {
+trait OptionButton extends StObject {
   
   var Accelerator: String = js.native
   
@@ -119,117 +120,105 @@ object OptionButton {
   }
   
   @scala.inline
-  implicit class OptionButtonOps[Self <: OptionButton] (val x: Self) extends AnyVal {
+  implicit class OptionButtonMutableBuilder[Self <: OptionButton] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignment(value: fmAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerator(value: String): Self = this.set("Accelerator", value.asInstanceOf[js.Any])
+    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: fmAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setBackStyle(value: fmBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSize(value: Boolean): Self = this.set("AutoSize", value.asInstanceOf[js.Any])
+    def setBordersSuppress(value: Boolean): Self = StObject.set(x, "BordersSuppress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Double): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackStyle(value: fmBackStyle): Self = this.set("BackStyle", value.asInstanceOf[js.Any])
+    def setDisplayStyle(value: fmDisplayStyle): Self = StObject.set(x, "DisplayStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBordersSuppress(value: Boolean): Self = this.set("BordersSuppress", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("Caption", value.asInstanceOf[js.Any])
+    def setFont(value: NewFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayStyle(value: fmDisplayStyle): Self = this.set("DisplayStyle", value.asInstanceOf[js.Any])
+    def setFontBold(value: Boolean): Self = StObject.set(x, "FontBold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setFontItalic(value: Boolean): Self = StObject.set(x, "FontItalic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: NewFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontBold(value: Boolean): Self = this.set("FontBold", value.asInstanceOf[js.Any])
+    def setFontSize(value: Double): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontItalic(value: Boolean): Self = this.set("FontItalic", value.asInstanceOf[js.Any])
+    def setFontStrikethru(value: Boolean): Self = StObject.set(x, "FontStrikethru", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("FontName", value.asInstanceOf[js.Any])
+    def setFontUnderline(value: Boolean): Self = StObject.set(x, "FontUnderline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("FontSize", value.asInstanceOf[js.Any])
+    def setFontWeight(value: Double): Self = StObject.set(x, "FontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStrikethru(value: Boolean): Self = this.set("FontStrikethru", value.asInstanceOf[js.Any])
+    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontUnderline(value: Boolean): Self = this.set("FontUnderline", value.asInstanceOf[js.Any])
+    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("FontWeight", value.asInstanceOf[js.Any])
+    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: Double): Self = this.set("ForeColor", value.asInstanceOf[js.Any])
+    def setMSFormsDotOptionButton_typekey(value: OptionButton): Self = StObject.set(x, "MSForms.OptionButton_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("Locked", value.asInstanceOf[js.Any])
+    def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSFormsDotOptionButton_typekey(value: OptionButton): Self = this.set("MSForms.OptionButton_typekey", value.asInstanceOf[js.Any])
+    def setMultiSelect(value: fmMultiSelect): Self = StObject.set(x, "MultiSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseIcon(value: StdPicture): Self = this.set("MouseIcon", value.asInstanceOf[js.Any])
+    def setPicture(value: StdPicture): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMousePointer(value: fmMousePointer): Self = this.set("MousePointer", value.asInstanceOf[js.Any])
+    def setPicturePosition(value: fmPicturePosition): Self = StObject.set(x, "PicturePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiSelect(value: fmMultiSelect): Self = this.set("MultiSelect", value.asInstanceOf[js.Any])
+    def setSpecialEffect(value: fmButtonEffect): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: StdPicture): Self = this.set("Picture", value.asInstanceOf[js.Any])
+    def setTextAlign(value: fmTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicturePosition(value: fmPicturePosition): Self = this.set("PicturePosition", value.asInstanceOf[js.Any])
+    def setTripleState(value: Boolean): Self = StObject.set(x, "TripleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpecialEffect(value: fmButtonEffect): Self = this.set("SpecialEffect", value.asInstanceOf[js.Any])
+    def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlign(value: fmTextAlign): Self = this.set("TextAlign", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTripleState(value: Boolean): Self = this.set("TripleState", value.asInstanceOf[js.Any])
+    def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValid(value: Boolean): Self = this.set("Valid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("Value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordWrap(value: Boolean): Self = this.set("WordWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_Font_Reserved(value: NewFont): Self = this.set("_Font_Reserved", value.asInstanceOf[js.Any])
+    def set_Font_Reserved(value: NewFont): Self = StObject.set(x, "_Font_Reserved", value.asInstanceOf[js.Any])
   }
 }

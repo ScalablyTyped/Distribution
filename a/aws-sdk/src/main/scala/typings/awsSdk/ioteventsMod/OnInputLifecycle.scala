@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnInputLifecycle extends js.Object {
+trait OnInputLifecycle extends StObject {
   
   /**
     * Specifies the actions performed when the condition evaluates to TRUE.
@@ -26,36 +27,24 @@ object OnInputLifecycle {
   }
   
   @scala.inline
-  implicit class OnInputLifecycleOps[Self <: OnInputLifecycle] (val x: Self) extends AnyVal {
+  implicit class OnInputLifecycleMutableBuilder[Self <: OnInputLifecycle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: Events): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
+    def setTransitionEvents(value: TransitionEvents): Self = StObject.set(x, "transitionEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: Events): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setTransitionEventsUndefined: Self = StObject.set(x, "transitionEvents", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
-    
-    @scala.inline
-    def setTransitionEventsVarargs(value: TransitionEvent*): Self = this.set("transitionEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransitionEvents(value: TransitionEvents): Self = this.set("transitionEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitionEvents: Self = this.set("transitionEvents", js.undefined)
+    def setTransitionEventsVarargs(value: TransitionEvent*): Self = StObject.set(x, "transitionEvents", js.Array(value :_*))
   }
 }

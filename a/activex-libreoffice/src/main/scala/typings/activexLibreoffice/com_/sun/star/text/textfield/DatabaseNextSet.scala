@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import typings.activexLibreoffice.com_.sun.star.text.DependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.TextContentAnchorType
-import typings.activexLibreoffice.com_.sun.star.text.TextField_
 import typings.activexLibreoffice.com_.sun.star.text.WrapTextMode
-import typings.activexLibreoffice.com_.sun.star.text.XDependentTextField
 import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextField Only one of the properties {@link DataBaseName} , {@link DataBaseURL} and {@link DataBaseResource} should be set. If
   */
 @js.native
-trait DatabaseNextSet
-  extends TextField_
-     with XDependentTextField {
+trait DatabaseNextSet extends DependentTextField {
   
   /** determines whether the database selection is set to the next position or not. */
   var Condition: String = js.native
@@ -94,36 +92,24 @@ object DatabaseNextSet {
   }
   
   @scala.inline
-  implicit class DatabaseNextSetOps[Self <: DatabaseNextSet] (val x: Self) extends AnyVal {
+  implicit class DatabaseNextSetMutableBuilder[Self <: DatabaseNextSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataBaseResource(value: String): Self = StObject.set(x, "DataBaseResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    def setDataBaseURL(value: String): Self = StObject.set(x, "DataBaseURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBaseName(value: String): Self = this.set("DataBaseName", value.asInstanceOf[js.Any])
+    def setDataCommandType(value: Double): Self = StObject.set(x, "DataCommandType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBaseResource(value: String): Self = this.set("DataBaseResource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataBaseURL(value: String): Self = this.set("DataBaseURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataCommandType(value: Double): Self = this.set("DataCommandType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataTableName(value: String): Self = this.set("DataTableName", value.asInstanceOf[js.Any])
+    def setDataTableName(value: String): Self = StObject.set(x, "DataTableName", value.asInstanceOf[js.Any])
   }
 }

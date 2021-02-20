@@ -1,17 +1,18 @@
 package typings.d3Dispatch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-dispatch", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-dispatch", "dispatch")
+  @js.native
   def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = js.native
   
   @js.native
-  trait Dispatch_[T /* <: js.Object */] extends js.Object {
+  trait Dispatch_[T /* <: js.Object */] extends StObject {
     
     /**
       * Like `function.apply`, invokes each registered callback for the specified type,

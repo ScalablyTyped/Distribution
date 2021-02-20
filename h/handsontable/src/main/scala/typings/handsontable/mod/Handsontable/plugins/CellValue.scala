@@ -1,5 +1,6 @@
 package typings.handsontable.mod.Handsontable.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,72 +75,60 @@ object CellValue {
   }
   
   @scala.inline
-  implicit class CellValueOps[Self <: CellValue] (val x: Self) extends AnyVal {
+  implicit class CellValueMutableBuilder[Self <: CellValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPrecedent(value: CellReference => Unit): Self = StObject.set(x, "addPrecedent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearPrecedents(value: () => Unit): Self = StObject.set(x, "clearPrecedents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: String | Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddPrecedent(value: CellReference => Unit): Self = this.set("addPrecedent", js.Any.fromFunction1(value))
+    def setGetError(value: () => String | Unit): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearPrecedents(value: () => Unit): Self = this.set("clearPrecedents", js.Any.fromFunction0(value))
+    def setGetPrecedents(value: () => js.Array[_]): Self = StObject.set(x, "getPrecedents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setError(value: String | Unit): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetError(value: () => String | Unit): Self = this.set("getError", js.Any.fromFunction0(value))
+    def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPrecedents(value: () => js.Array[_]): Self = this.set("getPrecedents", js.Any.fromFunction0(value))
+    def setHasPrecedent(value: CellReference => Boolean): Self = StObject.set(x, "hasPrecedent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValue(value: () => js.Any): Self = this.set("getValue", js.Any.fromFunction0(value))
+    def setHasPrecedents(value: () => Boolean): Self = StObject.set(x, "hasPrecedents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasError(value: () => Boolean): Self = this.set("hasError", js.Any.fromFunction0(value))
+    def setIsState(value: Double => Boolean): Self = StObject.set(x, "isState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasPrecedent(value: CellReference => Boolean): Self = this.set("hasPrecedent", js.Any.fromFunction1(value))
+    def setPrecedents(value: js.Array[_]): Self = StObject.set(x, "precedents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPrecedents(value: () => Boolean): Self = this.set("hasPrecedents", js.Any.fromFunction0(value))
+    def setPrecedentsVarargs(value: js.Any*): Self = StObject.set(x, "precedents", js.Array(value :_*))
     
     @scala.inline
-    def setIsState(value: Double => Boolean): Self = this.set("isState", js.Any.fromFunction1(value))
+    def setRemovePrecedent(value: CellReference => Unit): Self = StObject.set(x, "removePrecedent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrecedentsVarargs(value: js.Any*): Self = this.set("precedents", js.Array(value :_*))
+    def setSetError(value: String => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrecedents(value: js.Array[_]): Self = this.set("precedents", value.asInstanceOf[js.Any])
+    def setSetState(value: Double => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemovePrecedent(value: CellReference => Unit): Self = this.set("removePrecedent", js.Any.fromFunction1(value))
+    def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetError(value: String => Unit): Self = this.set("setError", js.Any.fromFunction1(value))
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetState(value: Double => Unit): Self = this.set("setState", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: js.Any => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

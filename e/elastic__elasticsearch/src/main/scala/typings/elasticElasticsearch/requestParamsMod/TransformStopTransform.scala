@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,51 +29,39 @@ object TransformStopTransform {
   }
   
   @scala.inline
-  implicit class TransformStopTransformOps[Self <: TransformStopTransform] (val x: Self) extends AnyVal {
+  implicit class TransformStopTransformMutableBuilder[Self <: TransformStopTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransform_id(value: String): Self = this.set("transform_id", value.asInstanceOf[js.Any])
+    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     @scala.inline
-    def setAllow_no_match(value: Boolean): Self = this.set("allow_no_match", value.asInstanceOf[js.Any])
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllow_no_match: Self = this.set("allow_no_match", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    def setTransform_id(value: String): Self = StObject.set(x, "transform_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
+    def setWait_for_checkpoint(value: Boolean): Self = StObject.set(x, "wait_for_checkpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setWait_for_checkpointUndefined: Self = StObject.set(x, "wait_for_checkpoint", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWait_for_checkpoint(value: Boolean): Self = this.set("wait_for_checkpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_checkpoint: Self = this.set("wait_for_checkpoint", js.undefined)
-    
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = this.set("wait_for_completion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait_for_completion: Self = this.set("wait_for_completion", js.undefined)
+    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

@@ -3,16 +3,16 @@ package typings.typeorm
 import typings.typeorm.anon.EntityMetadataEntityMetadata
 import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.namingStrategyInterfaceMod.NamingStrategyInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata/ExclusionMetadata", JSImport.Namespace)
-@js.native
-object exclusionMetadataMod extends js.Object {
+object exclusionMetadataMod {
   
+  @JSImport("typeorm/browser/metadata/ExclusionMetadata", "ExclusionMetadata")
   @js.native
-  class ExclusionMetadata protected () extends js.Object {
+  class ExclusionMetadata protected () extends StObject {
     def this(options: EntityMetadataEntityMetadata) = this()
     
     /**

@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IConsensusBlock extends js.Object {
+trait IConsensusBlock extends StObject {
   
   /** ConsensusBlock blockId */
   var blockId: js.UndefOr[Uint8Array | Null] = js.native
@@ -37,74 +38,62 @@ object IConsensusBlock {
   }
   
   @scala.inline
-  implicit class IConsensusBlockOps[Self <: IConsensusBlock] (val x: Self) extends AnyVal {
+  implicit class IConsensusBlockMutableBuilder[Self <: IConsensusBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockId(value: Uint8Array): Self = StObject.set(x, "blockId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIdNull: Self = StObject.set(x, "blockId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlockId(value: Uint8Array): Self = this.set("blockId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockId: Self = this.set("blockId", js.undefined)
-    
-    @scala.inline
-    def setBlockIdNull: Self = this.set("blockId", null)
+    def setBlockIdUndefined: Self = StObject.set(x, "blockId", js.undefined)
     
     @scala.inline
     def setBlockNum(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ): Self = this.set("blockNum", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "blockNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockNum: Self = this.set("blockNum", js.undefined)
+    def setBlockNumNull: Self = StObject.set(x, "blockNum", null)
     
     @scala.inline
-    def setBlockNumNull: Self = this.set("blockNum", null)
+    def setBlockNumUndefined: Self = StObject.set(x, "blockNum", js.undefined)
     
     @scala.inline
-    def setPayload(value: Uint8Array): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setPayloadNull: Self = StObject.set(x, "payload", null)
     
     @scala.inline
-    def setPayloadNull: Self = this.set("payload", null)
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def setPreviousId(value: Uint8Array): Self = this.set("previousId", value.asInstanceOf[js.Any])
+    def setPreviousId(value: Uint8Array): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousId: Self = this.set("previousId", js.undefined)
+    def setPreviousIdNull: Self = StObject.set(x, "previousId", null)
     
     @scala.inline
-    def setPreviousIdNull: Self = this.set("previousId", null)
+    def setPreviousIdUndefined: Self = StObject.set(x, "previousId", js.undefined)
     
     @scala.inline
-    def setSignerId(value: Uint8Array): Self = this.set("signerId", value.asInstanceOf[js.Any])
+    def setSignerId(value: Uint8Array): Self = StObject.set(x, "signerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignerId: Self = this.set("signerId", js.undefined)
+    def setSignerIdNull: Self = StObject.set(x, "signerId", null)
     
     @scala.inline
-    def setSignerIdNull: Self = this.set("signerId", null)
+    def setSignerIdUndefined: Self = StObject.set(x, "signerId", js.undefined)
     
     @scala.inline
-    def setSummary(value: Uint8Array): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSummary(value: Uint8Array): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
+    def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     @scala.inline
-    def setSummaryNull: Self = this.set("summary", null)
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

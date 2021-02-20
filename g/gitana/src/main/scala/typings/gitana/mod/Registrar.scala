@@ -1,12 +1,13 @@
 package typings.gitana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "Registrar")
 @js.native
-class Registrar protected () extends js.Object {
+class Registrar protected () extends StObject {
   def this(platform: js.Any, `object`: js.Any) = this()
   
   def base(): Unit = js.native
@@ -53,16 +54,30 @@ class Registrar protected () extends js.Object {
   
   def readTenant(tenantId: js.Any): js.Any = js.native
 }
-/* static members */
-@JSImport("gitana", "Registrar")
-@js.native
-object Registrar extends js.Object {
+object Registrar {
   
+  /* static member */
+  @JSImport("gitana", "Registrar.extend")
+  @js.native
   def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
   
+  /* static member */
+  @JSImport("gitana", "Registrar.forEach")
+  @js.native
   def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
   
+  /* static member */
+  @JSImport("gitana", "Registrar.implement")
+  @js.native
   def implement(args: js.Any*): js.Any = js.native
   
-  def valueOf(`type`: js.Any): js.Any = js.native
+  /* static member */
+  @JSImport("gitana", "Registrar.toString")
+  @js.native
+  def toString_(): js.Any = js.native
+  
+  /* static member */
+  @JSImport("gitana", "Registrar.valueOf")
+  @js.native
+  def valueOf_(`type`: js.Any): js.Any = js.native
 }

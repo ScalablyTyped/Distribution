@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A task which initializes part of a streaming Dataflow job.
   */
 @js.native
-trait SchemaStreamingSetupTask extends js.Object {
+trait SchemaStreamingSetupTask extends StObject {
   
   /**
     * The user has requested drain.
@@ -46,48 +47,36 @@ object SchemaStreamingSetupTask {
   }
   
   @scala.inline
-  implicit class SchemaStreamingSetupTaskOps[Self <: SchemaStreamingSetupTask] (val x: Self) extends AnyVal {
+  implicit class SchemaStreamingSetupTaskMutableBuilder[Self <: SchemaStreamingSetupTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrain(value: Boolean): Self = StObject.set(x, "drain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrainUndefined: Self = StObject.set(x, "drain", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiveWorkPort(value: Double): Self = StObject.set(x, "receiveWorkPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrain(value: Boolean): Self = this.set("drain", value.asInstanceOf[js.Any])
+    def setReceiveWorkPortUndefined: Self = StObject.set(x, "receiveWorkPort", js.undefined)
     
     @scala.inline
-    def deleteDrain: Self = this.set("drain", js.undefined)
+    def setSnapshotConfig(value: SchemaStreamingApplianceSnapshotConfig): Self = StObject.set(x, "snapshotConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveWorkPort(value: Double): Self = this.set("receiveWorkPort", value.asInstanceOf[js.Any])
+    def setSnapshotConfigUndefined: Self = StObject.set(x, "snapshotConfig", js.undefined)
     
     @scala.inline
-    def deleteReceiveWorkPort: Self = this.set("receiveWorkPort", js.undefined)
+    def setStreamingComputationTopology(value: SchemaTopologyConfig): Self = StObject.set(x, "streamingComputationTopology", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotConfig(value: SchemaStreamingApplianceSnapshotConfig): Self = this.set("snapshotConfig", value.asInstanceOf[js.Any])
+    def setStreamingComputationTopologyUndefined: Self = StObject.set(x, "streamingComputationTopology", js.undefined)
     
     @scala.inline
-    def deleteSnapshotConfig: Self = this.set("snapshotConfig", js.undefined)
+    def setWorkerHarnessPort(value: Double): Self = StObject.set(x, "workerHarnessPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamingComputationTopology(value: SchemaTopologyConfig): Self = this.set("streamingComputationTopology", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamingComputationTopology: Self = this.set("streamingComputationTopology", js.undefined)
-    
-    @scala.inline
-    def setWorkerHarnessPort(value: Double): Self = this.set("workerHarnessPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerHarnessPort: Self = this.set("workerHarnessPort", js.undefined)
+    def setWorkerHarnessPortUndefined: Self = StObject.set(x, "workerHarnessPort", js.undefined)
   }
 }

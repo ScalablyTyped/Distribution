@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeReceiptRuleSetResponse extends js.Object {
+trait DescribeReceiptRuleSetResponse extends StObject {
   
   /**
     * The metadata for the receipt rule set, which consists of the rule set name and the timestamp of when the rule set was created.
@@ -26,33 +27,21 @@ object DescribeReceiptRuleSetResponse {
   }
   
   @scala.inline
-  implicit class DescribeReceiptRuleSetResponseOps[Self <: DescribeReceiptRuleSetResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeReceiptRuleSetResponseMutableBuilder[Self <: DescribeReceiptRuleSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetadata(value: ReceiptRuleSetMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRules(value: ReceiptRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ReceiptRuleSetMetadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("Metadata", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: ReceiptRule*): Self = this.set("Rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: ReceiptRulesList): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
+    def setRulesVarargs(value: ReceiptRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

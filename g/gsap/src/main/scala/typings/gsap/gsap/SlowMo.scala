@@ -1,5 +1,6 @@
 package typings.gsap.gsap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,21 +19,9 @@ object SlowMo {
   }
   
   @scala.inline
-  implicit class SlowMoOps[Self <: SlowMo] (val x: Self) extends AnyVal {
+  implicit class SlowMoMutableBuilder[Self <: SlowMo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConfig(value: (Double, Double, Boolean) => SlowMo): Self = this.set("config", js.Any.fromFunction3(value))
+    def setConfig(value: (Double, Double, Boolean) => SlowMo): Self = StObject.set(x, "config", js.Any.fromFunction3(value))
   }
 }

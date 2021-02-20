@@ -1,5 +1,6 @@
 package typings.thrift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.thrift.anon.InstantiableTClient[TClient]
   - typings.thrift.anon.Client[TClient]
 */
-trait TClientConstructor[TClient] extends js.Object
+trait TClientConstructor[TClient] extends StObject

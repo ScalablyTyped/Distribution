@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelRetentionSettings extends js.Object {
+trait ChannelRetentionSettings extends StObject {
   
   /**
     * The time in days to retain a channel.
@@ -21,24 +22,12 @@ object ChannelRetentionSettings {
   }
   
   @scala.inline
-  implicit class ChannelRetentionSettingsOps[Self <: ChannelRetentionSettings] (val x: Self) extends AnyVal {
+  implicit class ChannelRetentionSettingsMutableBuilder[Self <: ChannelRetentionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRetentionDays(value: RetentionDays): Self = StObject.set(x, "RetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRetentionDays(value: RetentionDays): Self = this.set("RetentionDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionDays: Self = this.set("RetentionDays", js.undefined)
+    def setRetentionDaysUndefined: Self = StObject.set(x, "RetentionDays", js.undefined)
   }
 }

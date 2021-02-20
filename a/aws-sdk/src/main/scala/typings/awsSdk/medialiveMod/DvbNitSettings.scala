@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DvbNitSettings extends js.Object {
+trait DvbNitSettings extends StObject {
   
   /**
     * The numeric value placed in the Network Information Table (NIT).
@@ -31,30 +32,18 @@ object DvbNitSettings {
   }
   
   @scala.inline
-  implicit class DvbNitSettingsOps[Self <: DvbNitSettings] (val x: Self) extends AnyVal {
+  implicit class DvbNitSettingsMutableBuilder[Self <: DvbNitSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkId(value: integerMin0Max65536): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkName(value: stringMin1Max256): Self = StObject.set(x, "NetworkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepInterval(value: integerMin25Max10000): Self = StObject.set(x, "RepInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkId(value: integerMin0Max65536): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetworkName(value: stringMin1Max256): Self = this.set("NetworkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepInterval(value: integerMin25Max10000): Self = this.set("RepInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepInterval: Self = this.set("RepInterval", js.undefined)
+    def setRepIntervalUndefined: Self = StObject.set(x, "RepInterval", js.undefined)
   }
 }

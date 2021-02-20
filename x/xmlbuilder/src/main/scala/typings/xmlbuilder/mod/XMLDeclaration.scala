@@ -1,5 +1,6 @@
 package typings.xmlbuilder.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLDeclaration")
 @js.native
-class XMLDeclaration () extends js.Object {
+class XMLDeclaration () extends StObject {
   
   /**
     * Encoding declaration, e.g. `UTF-8`

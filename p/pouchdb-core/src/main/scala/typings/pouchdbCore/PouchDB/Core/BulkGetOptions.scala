@@ -1,6 +1,7 @@
 package typings.pouchdbCore.PouchDB.Core
 
 import typings.pouchdbCore.anon.Rev
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,42 +26,30 @@ object BulkGetOptions {
   }
   
   @scala.inline
-  implicit class BulkGetOptionsOps[Self <: BulkGetOptions] (val x: Self) extends AnyVal {
+  implicit class BulkGetOptionsMutableBuilder[Self <: BulkGetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocsVarargs(value: Rev*): Self = this.set("docs", js.Array(value :_*))
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def setDocs(value: js.Array[Rev]): Self = this.set("docs", value.asInstanceOf[js.Any])
+    def setDocs(value: js.Array[Rev]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Boolean): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setDocsVarargs(value: Rev*): Self = StObject.set(x, "docs", js.Array(value :_*))
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setRevs(value: Boolean): Self = StObject.set(x, "revs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
-    
-    @scala.inline
-    def setRevs(value: Boolean): Self = this.set("revs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevs: Self = this.set("revs", js.undefined)
+    def setRevsUndefined: Self = StObject.set(x, "revs", js.undefined)
   }
 }

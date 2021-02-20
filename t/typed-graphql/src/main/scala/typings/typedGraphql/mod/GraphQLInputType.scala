@@ -1,5 +1,6 @@
 package typings.typedGraphql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typedGraphql.mod.GraphQLList
   - typings.typedGraphql.mod.GraphQLNonNull
 */
-trait GraphQLInputType extends js.Object
+trait GraphQLInputType extends StObject

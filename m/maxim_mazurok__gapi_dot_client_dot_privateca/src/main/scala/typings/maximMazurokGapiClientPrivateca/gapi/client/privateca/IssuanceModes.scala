@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IssuanceModes extends js.Object {
+trait IssuanceModes extends StObject {
   
   /** Required. When true, allows callers to create Certificates by specifying a CertificateConfig. */
   var allowConfigBasedIssuance: js.UndefOr[Boolean] = js.native
@@ -22,30 +23,18 @@ object IssuanceModes {
   }
   
   @scala.inline
-  implicit class IssuanceModesOps[Self <: IssuanceModes] (val x: Self) extends AnyVal {
+  implicit class IssuanceModesMutableBuilder[Self <: IssuanceModes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowConfigBasedIssuance(value: Boolean): Self = StObject.set(x, "allowConfigBasedIssuance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowConfigBasedIssuanceUndefined: Self = StObject.set(x, "allowConfigBasedIssuance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowCsrBasedIssuance(value: Boolean): Self = StObject.set(x, "allowCsrBasedIssuance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowConfigBasedIssuance(value: Boolean): Self = this.set("allowConfigBasedIssuance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowConfigBasedIssuance: Self = this.set("allowConfigBasedIssuance", js.undefined)
-    
-    @scala.inline
-    def setAllowCsrBasedIssuance(value: Boolean): Self = this.set("allowCsrBasedIssuance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowCsrBasedIssuance: Self = this.set("allowCsrBasedIssuance", js.undefined)
+    def setAllowCsrBasedIssuanceUndefined: Self = StObject.set(x, "allowCsrBasedIssuance", js.undefined)
   }
 }

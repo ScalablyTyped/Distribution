@@ -33,6 +33,7 @@ import typings.algoliasearchHelper.mod.SearchParameters.HierarchicalFacet
 import typings.algoliasearchHelper.mod.SearchParameters.Operator
 import typings.algoliasearchHelper.mod.SearchParameters.OperatorList
 import typings.events.mod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

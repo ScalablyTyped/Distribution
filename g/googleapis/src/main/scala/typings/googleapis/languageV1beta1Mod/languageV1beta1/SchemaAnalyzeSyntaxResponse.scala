@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The syntax analysis response message.
   */
 @js.native
-trait SchemaAnalyzeSyntaxResponse extends js.Object {
+trait SchemaAnalyzeSyntaxResponse extends StObject {
   
   /**
     * The language of the text, which will be the same as the language
@@ -36,42 +37,30 @@ object SchemaAnalyzeSyntaxResponse {
   }
   
   @scala.inline
-  implicit class SchemaAnalyzeSyntaxResponseOps[Self <: SchemaAnalyzeSyntaxResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAnalyzeSyntaxResponseMutableBuilder[Self <: SchemaAnalyzeSyntaxResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
     
     @scala.inline
-    def setSentencesVarargs(value: SchemaSentence*): Self = this.set("sentences", js.Array(value :_*))
+    def setTokens(value: js.Array[SchemaToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentences(value: js.Array[SchemaSentence]): Self = this.set("sentences", value.asInstanceOf[js.Any])
+    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
     @scala.inline
-    def deleteSentences: Self = this.set("sentences", js.undefined)
-    
-    @scala.inline
-    def setTokensVarargs(value: SchemaToken*): Self = this.set("tokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setTokens(value: js.Array[SchemaToken]): Self = this.set("tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokens: Self = this.set("tokens", js.undefined)
+    def setTokensVarargs(value: SchemaToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

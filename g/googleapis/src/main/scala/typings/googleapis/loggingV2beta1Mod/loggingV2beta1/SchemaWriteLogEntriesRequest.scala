@@ -1,6 +1,7 @@
 package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The parameters to WriteLogEntries.
   */
 @js.native
-trait SchemaWriteLogEntriesRequest extends js.Object {
+trait SchemaWriteLogEntriesRequest extends StObject {
   
   /**
     * Optional. If true, the request should expect normal response, but the
@@ -90,57 +91,45 @@ object SchemaWriteLogEntriesRequest {
   }
   
   @scala.inline
-  implicit class SchemaWriteLogEntriesRequestOps[Self <: SchemaWriteLogEntriesRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaWriteLogEntriesRequestMutableBuilder[Self <: SchemaWriteLogEntriesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntries(value: js.Array[SchemaLogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    def setEntriesVarargs(value: SchemaLogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
     @scala.inline
-    def setEntriesVarargs(value: SchemaLogEntry*): Self = this.set("entries", js.Array(value :_*))
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: js.Array[SchemaLogEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteEntries: Self = this.set("entries", js.undefined)
+    def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setPartialSuccess(value: Boolean): Self = StObject.set(x, "partialSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
+    def setPartialSuccessUndefined: Self = StObject.set(x, "partialSuccess", js.undefined)
     
     @scala.inline
-    def deleteLogName: Self = this.set("logName", js.undefined)
+    def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartialSuccess(value: Boolean): Self = this.set("partialSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartialSuccess: Self = this.set("partialSuccess", js.undefined)
-    
-    @scala.inline
-    def setResource(value: SchemaMonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

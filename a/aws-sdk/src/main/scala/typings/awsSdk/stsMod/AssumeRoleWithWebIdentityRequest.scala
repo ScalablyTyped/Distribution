@@ -1,6 +1,7 @@
 package typings.awsSdk.stsMod
 
 import typings.awsSdk.cognitoIdentityCredentialsMod.CognitoIdentityCredentials.CognitoIdentityCredentialsInputs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,54 +53,42 @@ object AssumeRoleWithWebIdentityRequest {
   }
   
   @scala.inline
-  implicit class AssumeRoleWithWebIdentityRequestOps[Self <: AssumeRoleWithWebIdentityRequest] (val x: Self) extends AnyVal {
+  implicit class AssumeRoleWithWebIdentityRequestMutableBuilder[Self <: AssumeRoleWithWebIdentityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDurationSeconds(value: roleDurationSecondsType): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicy(value: sessionPolicyDocumentType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: arnType): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setPolicyArns(value: policyDescriptorListType): Self = StObject.set(x, "PolicyArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleSessionName(value: roleSessionNameType): Self = this.set("RoleSessionName", value.asInstanceOf[js.Any])
+    def setPolicyArnsUndefined: Self = StObject.set(x, "PolicyArns", js.undefined)
     
     @scala.inline
-    def setWebIdentityToken(value: clientTokenType): Self = this.set("WebIdentityToken", value.asInstanceOf[js.Any])
+    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = StObject.set(x, "PolicyArns", js.Array(value :_*))
     
     @scala.inline
-    def setDurationSeconds(value: roleDurationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
     @scala.inline
-    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    def setProviderId(value: urlType): Self = StObject.set(x, "ProviderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicy(value: sessionPolicyDocumentType): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    def setProviderIdUndefined: Self = StObject.set(x, "ProviderId", js.undefined)
     
     @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setRoleArn(value: arnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = this.set("PolicyArns", js.Array(value :_*))
+    def setRoleSessionName(value: roleSessionNameType): Self = StObject.set(x, "RoleSessionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicyArns(value: policyDescriptorListType): Self = this.set("PolicyArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyArns: Self = this.set("PolicyArns", js.undefined)
-    
-    @scala.inline
-    def setProviderId(value: urlType): Self = this.set("ProviderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProviderId: Self = this.set("ProviderId", js.undefined)
+    def setWebIdentityToken(value: clientTokenType): Self = StObject.set(x, "WebIdentityToken", value.asInstanceOf[js.Any])
   }
 }

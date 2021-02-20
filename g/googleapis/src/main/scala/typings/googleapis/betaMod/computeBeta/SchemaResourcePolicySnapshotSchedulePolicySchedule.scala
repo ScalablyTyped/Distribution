@@ -1,5 +1,6 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A schedule for disks where the schedueled operations are performed.
   */
 @js.native
-trait SchemaResourcePolicySnapshotSchedulePolicySchedule extends js.Object {
+trait SchemaResourcePolicySnapshotSchedulePolicySchedule extends StObject {
   
   var dailySchedule: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.native
   
@@ -25,36 +26,24 @@ object SchemaResourcePolicySnapshotSchedulePolicySchedule {
   }
   
   @scala.inline
-  implicit class SchemaResourcePolicySnapshotSchedulePolicyScheduleOps[Self <: SchemaResourcePolicySnapshotSchedulePolicySchedule] (val x: Self) extends AnyVal {
+  implicit class SchemaResourcePolicySnapshotSchedulePolicyScheduleMutableBuilder[Self <: SchemaResourcePolicySnapshotSchedulePolicySchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDailySchedule(value: SchemaResourcePolicyDailyCycle): Self = StObject.set(x, "dailySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDailyScheduleUndefined: Self = StObject.set(x, "dailySchedule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHourlySchedule(value: SchemaResourcePolicyHourlyCycle): Self = StObject.set(x, "hourlySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailySchedule(value: SchemaResourcePolicyDailyCycle): Self = this.set("dailySchedule", value.asInstanceOf[js.Any])
+    def setHourlyScheduleUndefined: Self = StObject.set(x, "hourlySchedule", js.undefined)
     
     @scala.inline
-    def deleteDailySchedule: Self = this.set("dailySchedule", js.undefined)
+    def setWeeklySchedule(value: SchemaResourcePolicyWeeklyCycle): Self = StObject.set(x, "weeklySchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlySchedule(value: SchemaResourcePolicyHourlyCycle): Self = this.set("hourlySchedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHourlySchedule: Self = this.set("hourlySchedule", js.undefined)
-    
-    @scala.inline
-    def setWeeklySchedule(value: SchemaResourcePolicyWeeklyCycle): Self = this.set("weeklySchedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklySchedule: Self = this.set("weeklySchedule", js.undefined)
+    def setWeeklyScheduleUndefined: Self = StObject.set(x, "weeklySchedule", js.undefined)
   }
 }

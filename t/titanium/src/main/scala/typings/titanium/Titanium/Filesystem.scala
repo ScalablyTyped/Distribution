@@ -1,6 +1,7 @@
 package typings.titanium.Titanium
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The top level filesystem module, used to access files and directories on the device.
   */
-@JSGlobal("Titanium.Filesystem")
-@js.native
-object Filesystem extends js.Object {
+object Filesystem {
   
   /**
     * Object representing a path to a file or directory in the device's persistent storage.

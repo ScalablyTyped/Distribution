@@ -1,5 +1,6 @@
 package typings.elasticElasticsearch.requestParamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object ClusterPostVotingConfigExclusions {
   }
   
   @scala.inline
-  implicit class ClusterPostVotingConfigExclusionsOps[Self <: ClusterPostVotingConfigExclusions] (val x: Self) extends AnyVal {
+  implicit class ClusterPostVotingConfigExclusionsMutableBuilder[Self <: ClusterPostVotingConfigExclusions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNode_ids(value: String): Self = StObject.set(x, "node_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNode_idsUndefined: Self = StObject.set(x, "node_ids", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode_names(value: String): Self = StObject.set(x, "node_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_ids(value: String): Self = this.set("node_ids", value.asInstanceOf[js.Any])
+    def setNode_namesUndefined: Self = StObject.set(x, "node_names", js.undefined)
     
     @scala.inline
-    def deleteNode_ids: Self = this.set("node_ids", js.undefined)
+    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode_names(value: String): Self = this.set("node_names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNode_names: Self = this.set("node_names", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

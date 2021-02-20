@@ -5,13 +5,14 @@ import typings.squareConnect.squareConnectStrings.GIFT_CARD
 import typings.squareConnect.squareConnectStrings.REGULAR
 import typings.squareConnect.squareConnectStrings.RESTAURANT_ITEM
 import typings.squareConnect.squareConnectStrings.RETAIL_ITEM
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItem")
 @js.native
-class CatalogItem () extends js.Object {
+class CatalogItem () extends StObject {
   
   /**
     * The text of the item's display label in the Square Point of Sale app. Only up to the first five characters of the string are used.

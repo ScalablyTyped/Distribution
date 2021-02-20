@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPackageVersionHistoryResponse extends js.Object {
+trait GetPackageVersionHistoryResponse extends StObject {
   
   var NextToken: js.UndefOr[String] = js.native
   
@@ -25,39 +26,27 @@ object GetPackageVersionHistoryResponse {
   }
   
   @scala.inline
-  implicit class GetPackageVersionHistoryResponseOps[Self <: GetPackageVersionHistoryResponse] (val x: Self) extends AnyVal {
+  implicit class GetPackageVersionHistoryResponseMutableBuilder[Self <: GetPackageVersionHistoryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPackageIDUndefined: Self = StObject.set(x, "PackageID", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setPackageVersionHistoryList(value: PackageVersionHistoryList): Self = StObject.set(x, "PackageVersionHistoryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageID(value: PackageID): Self = this.set("PackageID", value.asInstanceOf[js.Any])
+    def setPackageVersionHistoryListUndefined: Self = StObject.set(x, "PackageVersionHistoryList", js.undefined)
     
     @scala.inline
-    def deletePackageID: Self = this.set("PackageID", js.undefined)
-    
-    @scala.inline
-    def setPackageVersionHistoryListVarargs(value: PackageVersionHistory*): Self = this.set("PackageVersionHistoryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPackageVersionHistoryList(value: PackageVersionHistoryList): Self = this.set("PackageVersionHistoryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageVersionHistoryList: Self = this.set("PackageVersionHistoryList", js.undefined)
+    def setPackageVersionHistoryListVarargs(value: PackageVersionHistory*): Self = StObject.set(x, "PackageVersionHistoryList", js.Array(value :_*))
   }
 }

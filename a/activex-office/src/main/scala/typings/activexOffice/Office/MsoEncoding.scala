@@ -137,6 +137,7 @@ import typings.activexOffice.activexOfficeNumbers.`932`
 import typings.activexOffice.activexOfficeNumbers.`936`
 import typings.activexOffice.activexOfficeNumbers.`949`
 import typings.activexOffice.activexOfficeNumbers.`950`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -280,7 +281,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOffice.activexOfficeNumbers.`1258`
   - typings.activexOffice.activexOfficeNumbers.`1252`
 */
-trait MsoEncoding extends js.Object
+trait MsoEncoding extends StObject
 object MsoEncoding {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.summernote.mod.global.Summernote
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.summernote.summernoteStrings.style
   - typings.summernote.summernoteStrings.height
 */
-trait toolbarParaGroupOptions extends js.Object
+trait toolbarParaGroupOptions extends StObject
 object toolbarParaGroupOptions {
   
   @scala.inline

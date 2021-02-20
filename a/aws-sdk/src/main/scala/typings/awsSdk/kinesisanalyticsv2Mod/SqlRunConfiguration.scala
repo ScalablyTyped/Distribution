@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlRunConfiguration extends js.Object {
+trait SqlRunConfiguration extends StObject {
   
   /**
     * The input source ID. You can get this ID by calling the DescribeApplication operation. 
@@ -26,24 +27,12 @@ object SqlRunConfiguration {
   }
   
   @scala.inline
-  implicit class SqlRunConfigurationOps[Self <: SqlRunConfiguration] (val x: Self) extends AnyVal {
+  implicit class SqlRunConfigurationMutableBuilder[Self <: SqlRunConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInputId(value: Id): Self = this.set("InputId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = this.set("InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
+    def setInputStartingPositionConfiguration(value: InputStartingPositionConfiguration): Self = StObject.set(x, "InputStartingPositionConfiguration", value.asInstanceOf[js.Any])
   }
 }

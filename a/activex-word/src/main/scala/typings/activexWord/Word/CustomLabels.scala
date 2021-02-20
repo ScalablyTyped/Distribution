@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomLabels extends js.Object {
+trait CustomLabels extends StObject {
   
   def Add(Name: String): CustomLabel = js.native
   def Add(Name: String, DotMatrix: js.Any): CustomLabel = js.native

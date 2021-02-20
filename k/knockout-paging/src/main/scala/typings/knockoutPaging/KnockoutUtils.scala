@@ -3,6 +3,7 @@ package typings.knockoutPaging
 import typings.knockoutPaging.anon.AddDisposeCallback
 import typings.knockoutPaging.anon.Clear
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // impression that some functions will be available in production builds.
 //
 @js.native
-trait KnockoutUtils extends js.Object {
+trait KnockoutUtils extends StObject {
   
   def addOrRemoveItem[T](array: js.Array[T], value: T, included: T): Unit = js.native
   def addOrRemoveItem[T](array: KnockoutObservable[T], value: T, included: T): Unit = js.native

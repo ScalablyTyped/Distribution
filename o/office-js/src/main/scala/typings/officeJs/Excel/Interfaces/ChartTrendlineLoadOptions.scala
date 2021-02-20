@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait ChartTrendlineLoadOptions extends js.Object {
+trait ChartTrendlineLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -116,90 +117,78 @@ object ChartTrendlineLoadOptions {
   }
   
   @scala.inline
-  implicit class ChartTrendlineLoadOptionsOps[Self <: ChartTrendlineLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ChartTrendlineLoadOptionsMutableBuilder[Self <: ChartTrendlineLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackwardPeriod(value: Boolean): Self = StObject.set(x, "backwardPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setBackwardPeriodUndefined: Self = StObject.set(x, "backwardPeriod", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setFormat(value: ChartTrendlineFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackwardPeriod(value: Boolean): Self = this.set("backwardPeriod", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteBackwardPeriod: Self = this.set("backwardPeriod", js.undefined)
+    def setForwardPeriod(value: Boolean): Self = StObject.set(x, "forwardPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartTrendlineFormatLoadOptions): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setForwardPeriodUndefined: Self = StObject.set(x, "forwardPeriod", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setIntercept(value: Boolean): Self = StObject.set(x, "intercept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardPeriod(value: Boolean): Self = this.set("forwardPeriod", value.asInstanceOf[js.Any])
+    def setInterceptUndefined: Self = StObject.set(x, "intercept", js.undefined)
     
     @scala.inline
-    def deleteForwardPeriod: Self = this.set("forwardPeriod", js.undefined)
+    def setLabel(value: ChartTrendlineLabelLoadOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntercept(value: Boolean): Self = this.set("intercept", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIntercept: Self = this.set("intercept", js.undefined)
+    def setMovingAveragePeriod(value: Boolean): Self = StObject.set(x, "movingAveragePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: ChartTrendlineLabelLoadOptions): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMovingAveragePeriodUndefined: Self = StObject.set(x, "movingAveragePeriod", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovingAveragePeriod(value: Boolean): Self = this.set("movingAveragePeriod", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMovingAveragePeriod: Self = this.set("movingAveragePeriod", js.undefined)
+    def setPolynomialOrder(value: Boolean): Self = StObject.set(x, "polynomialOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPolynomialOrderUndefined: Self = StObject.set(x, "polynomialOrder", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setShowEquation(value: Boolean): Self = StObject.set(x, "showEquation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolynomialOrder(value: Boolean): Self = this.set("polynomialOrder", value.asInstanceOf[js.Any])
+    def setShowEquationUndefined: Self = StObject.set(x, "showEquation", js.undefined)
     
     @scala.inline
-    def deletePolynomialOrder: Self = this.set("polynomialOrder", js.undefined)
+    def setShowRSquared(value: Boolean): Self = StObject.set(x, "showRSquared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowEquation(value: Boolean): Self = this.set("showEquation", value.asInstanceOf[js.Any])
+    def setShowRSquaredUndefined: Self = StObject.set(x, "showRSquared", js.undefined)
     
     @scala.inline
-    def deleteShowEquation: Self = this.set("showEquation", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowRSquared(value: Boolean): Self = this.set("showRSquared", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowRSquared: Self = this.set("showRSquared", js.undefined)
-    
-    @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the beginning of the text; for matrix bindings and table bindings, selects the first data cell (not first cell in header row for tables).
   */
 @js.native
-trait GoToByIdOptions extends js.Object {
+trait GoToByIdOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
@@ -43,30 +44,18 @@ object GoToByIdOptions {
   }
   
   @scala.inline
-  implicit class GoToByIdOptionsOps[Self <: GoToByIdOptions] (val x: Self) extends AnyVal {
+  implicit class GoToByIdOptionsMutableBuilder[Self <: GoToByIdOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelectionMode(value: SelectionMode | String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncContext(value: js.Any): Self = this.set("asyncContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAsyncContext: Self = this.set("asyncContext", js.undefined)
-    
-    @scala.inline
-    def setSelectionMode(value: SelectionMode | String): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
   }
 }

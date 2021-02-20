@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxDesignerToolboxItem extends js.Object {
+trait ASPxDesignerToolboxItem extends StObject {
   
   var defaultVal: js.Any = js.native
   
@@ -39,45 +40,33 @@ object ASPxDesignerToolboxItem {
   }
   
   @scala.inline
-  implicit class ASPxDesignerToolboxItemOps[Self <: ASPxDesignerToolboxItem] (val x: Self) extends AnyVal {
+  implicit class ASPxDesignerToolboxItemMutableBuilder[Self <: ASPxDesignerToolboxItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultVal(value: js.Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfo(value: js.Array[ASPxDesignerElementSerializationInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoVarargs(value: ASPxDesignerElementSerializationInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultVal(value: js.Any): Self = this.set("defaultVal", value.asInstanceOf[js.Any])
+    def setIsToolboxItem(value: Boolean): Self = StObject.set(x, "isToolboxItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoVarargs(value: ASPxDesignerElementSerializationInfo*): Self = this.set("info", js.Array(value :_*))
+    def setPopularProperties(value: js.Array[String]): Self = StObject.set(x, "popularProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: js.Array[ASPxDesignerElementSerializationInfo]): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setPopularPropertiesVarargs(value: String*): Self = StObject.set(x, "popularProperties", js.Array(value :_*))
     
     @scala.inline
-    def setIsToolboxItem(value: Boolean): Self = this.set("isToolboxItem", value.asInstanceOf[js.Any])
+    def setSurfaceType(value: js.Any): Self = StObject.set(x, "surfaceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopularPropertiesVarargs(value: String*): Self = this.set("popularProperties", js.Array(value :_*))
+    def setToolboxIndex(value: Double): Self = StObject.set(x, "toolboxIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopularProperties(value: js.Array[String]): Self = this.set("popularProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSurfaceType(value: js.Any): Self = this.set("surfaceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToolboxIndex(value: Double): Self = this.set("toolboxIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

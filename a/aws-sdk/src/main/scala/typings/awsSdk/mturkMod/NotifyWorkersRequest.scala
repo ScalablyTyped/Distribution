@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotifyWorkersRequest extends js.Object {
+trait NotifyWorkersRequest extends StObject {
   
   /**
     * The text of the email message to send. Can include up to 4,096 characters
@@ -31,30 +32,18 @@ object NotifyWorkersRequest {
   }
   
   @scala.inline
-  implicit class NotifyWorkersRequestOps[Self <: NotifyWorkersRequest] (val x: Self) extends AnyVal {
+  implicit class NotifyWorkersRequestMutableBuilder[Self <: NotifyWorkersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessageText(value: String): Self = StObject.set(x, "MessageText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkerIds(value: CustomerIdList): Self = StObject.set(x, "WorkerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageText(value: String): Self = this.set("MessageText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerIdsVarargs(value: CustomerId*): Self = this.set("WorkerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkerIds(value: CustomerIdList): Self = this.set("WorkerIds", value.asInstanceOf[js.Any])
+    def setWorkerIdsVarargs(value: CustomerId*): Self = StObject.set(x, "WorkerIds", js.Array(value :_*))
   }
 }

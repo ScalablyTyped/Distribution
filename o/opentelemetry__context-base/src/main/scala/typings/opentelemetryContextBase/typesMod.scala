@@ -2,16 +2,15 @@ package typings.opentelemetryContextBase
 
 import typings.opentelemetryContextBase.contextMod.Context
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/context-base/build/src/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
+object typesMod {
   
   @js.native
-  trait ContextManager extends js.Object {
+  trait ContextManager extends StObject {
     
     /**
       * Get the current active context

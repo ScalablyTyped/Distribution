@@ -1,11 +1,12 @@
 package typings.tuyaPanelKit.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HslToRgb extends js.Object {
+trait HslToRgb extends StObject {
   
   var color: Bright2Opacity = js.native
   
@@ -32,33 +33,21 @@ object HslToRgb {
   }
   
   @scala.inline
-  implicit class HslToRgbOps[Self <: HslToRgb] (val x: Self) extends AnyVal {
+  implicit class HslToRgbMutableBuilder[Self <: HslToRgb] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Bright2Opacity): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHslToRgb(value: (Double, Double, Double) => G): Self = StObject.set(x, "hslToRgb", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHsvToRgb(value: (Double, Double, Double) => G): Self = StObject.set(x, "hsvToRgb", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setColor(value: Bright2Opacity): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setRgbToHsl(value: (Double, Double, Double) => H): Self = StObject.set(x, "rgbToHsl", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setHslToRgb(value: (Double, Double, Double) => G): Self = this.set("hslToRgb", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setHsvToRgb(value: (Double, Double, Double) => G): Self = this.set("hsvToRgb", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRgbToHsl(value: (Double, Double, Double) => H): Self = this.set("rgbToHsl", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRgbToHsv(value: (Double, Double, Double) => H): Self = this.set("rgbToHsv", js.Any.fromFunction3(value))
+    def setRgbToHsv(value: (Double, Double, Double) => H): Self = StObject.set(x, "rgbToHsv", js.Any.fromFunction3(value))
   }
 }

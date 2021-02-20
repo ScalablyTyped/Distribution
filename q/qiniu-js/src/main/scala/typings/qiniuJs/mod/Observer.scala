@@ -1,11 +1,12 @@
 package typings.qiniuJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Observer extends js.Object {
+trait Observer extends StObject {
   
   def complete(res: CompletedResult): Unit = js.native
   

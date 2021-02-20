@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
   */
 @js.native
-trait PlusOauthAuthInfo extends js.Object {
+trait PlusOauthAuthInfo extends StObject {
   
   /**
     * 登录授权的访问令牌
@@ -64,48 +65,36 @@ object PlusOauthAuthInfo {
   }
   
   @scala.inline
-  implicit class PlusOauthAuthInfoOps[Self <: PlusOauthAuthInfo] (val x: Self) extends AnyVal {
+  implicit class PlusOauthAuthInfoMutableBuilder[Self <: PlusOauthAuthInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpires_in(value: String): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
     
     @scala.inline
-    def deleteAccess_token: Self = this.set("access_token", js.undefined)
+    def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpires_in(value: String): Self = this.set("expires_in", value.asInstanceOf[js.Any])
+    def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
     
     @scala.inline
-    def deleteExpires_in: Self = this.set("expires_in", js.undefined)
+    def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenid(value: String): Self = this.set("openid", value.asInstanceOf[js.Any])
+    def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
     
     @scala.inline
-    def deleteOpenid: Self = this.set("openid", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh_token(value: String): Self = this.set("refresh_token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefresh_token: Self = this.set("refresh_token", js.undefined)
-    
-    @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

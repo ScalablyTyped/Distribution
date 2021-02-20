@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecreateSubscriptionResult extends js.Object {
+trait RecreateSubscriptionResult extends StObject {
   
   var eventType: String = js.native
   
@@ -20,24 +21,12 @@ object RecreateSubscriptionResult {
   }
   
   @scala.inline
-  implicit class RecreateSubscriptionResultOps[Self <: RecreateSubscriptionResult] (val x: Self) extends AnyVal {
+  implicit class RecreateSubscriptionResultMutableBuilder[Self <: RecreateSubscriptionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryType(value: String): Self = this.set("repositoryType", value.asInstanceOf[js.Any])
+    def setRepositoryType(value: String): Self = StObject.set(x, "repositoryType", value.asInstanceOf[js.Any])
   }
 }

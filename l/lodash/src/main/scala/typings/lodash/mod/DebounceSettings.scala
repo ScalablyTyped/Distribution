@@ -1,11 +1,12 @@
 package typings.lodash.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebounceSettings extends js.Object {
+trait DebounceSettings extends StObject {
   
   /**
     * @see _.leading
@@ -31,36 +32,24 @@ object DebounceSettings {
   }
   
   @scala.inline
-  implicit class DebounceSettingsOps[Self <: DebounceSettings] (val x: Self) extends AnyVal {
+  implicit class DebounceSettingsMutableBuilder[Self <: DebounceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeading(value: Boolean): Self = this.set("leading", value.asInstanceOf[js.Any])
+    def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
     
     @scala.inline
-    def deleteLeading: Self = this.set("leading", js.undefined)
+    def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWait(value: Double): Self = this.set("maxWait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWait: Self = this.set("maxWait", js.undefined)
-    
-    @scala.inline
-    def setTrailing(value: Boolean): Self = this.set("trailing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailing: Self = this.set("trailing", js.undefined)
+    def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
   }
 }

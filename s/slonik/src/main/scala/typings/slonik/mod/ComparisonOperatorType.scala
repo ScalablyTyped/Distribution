@@ -1,5 +1,6 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.slonik.slonikStrings.LessthansignGreaterthansign
   - typings.slonik.slonikStrings.ExclamationmarkEqualssign
 */
-trait ComparisonOperatorType extends js.Object
+trait ComparisonOperatorType extends StObject
 object ComparisonOperatorType {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.opentracing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("opentracing/lib/test/mocktracer_implemenation", JSImport.Namespace)
-@js.native
-object mocktracerImplemenationMod extends js.Object {
+object mocktracerImplemenationMod {
   
+  @JSImport("opentracing/lib/test/mocktracer_implemenation", JSImport.Default)
+  @js.native
   def default(): Unit = js.native
 }

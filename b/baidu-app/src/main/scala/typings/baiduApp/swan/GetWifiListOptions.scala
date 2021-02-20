@@ -1,11 +1,12 @@
 package typings.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetWifiListOptions extends js.Object {
+trait GetWifiListOptions extends StObject {
   
   /** Wi-Fi 列表数据 */
   var wifiList: js.Array[WiFi] = js.native
@@ -19,24 +20,12 @@ object GetWifiListOptions {
   }
   
   @scala.inline
-  implicit class GetWifiListOptionsOps[Self <: GetWifiListOptions] (val x: Self) extends AnyVal {
+  implicit class GetWifiListOptionsMutableBuilder[Self <: GetWifiListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWifiList(value: js.Array[WiFi]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWifiListVarargs(value: WiFi*): Self = this.set("wifiList", js.Array(value :_*))
-    
-    @scala.inline
-    def setWifiList(value: js.Array[WiFi]): Self = this.set("wifiList", value.asInstanceOf[js.Any])
+    def setWifiListVarargs(value: WiFi*): Self = StObject.set(x, "wifiList", js.Array(value :_*))
   }
 }

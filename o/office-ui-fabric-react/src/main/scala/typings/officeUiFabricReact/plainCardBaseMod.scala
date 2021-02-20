@@ -2,14 +2,14 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/HoverCard/PlainCard/PlainCard.base", JSImport.Namespace)
-@js.native
-object plainCardBaseMod extends js.Object {
+object plainCardBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/HoverCard/PlainCard/PlainCard.base", "PlainCardBase")
   @js.native
   class PlainCardBase protected ()
     extends Component[IPlainCardProps, js.Object, js.Any] {

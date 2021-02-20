@@ -1,11 +1,12 @@
 package typings.awsSdk.sqsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetQueueUrlRequest extends js.Object {
+trait GetQueueUrlRequest extends StObject {
   
   /**
     * The name of the queue whose URL must be fetched. Maximum 80 characters. Valid values: alphanumeric characters, hyphens (-), and underscores (_). Queue URLs and names are case-sensitive.
@@ -26,27 +27,15 @@ object GetQueueUrlRequest {
   }
   
   @scala.inline
-  implicit class GetQueueUrlRequestOps[Self <: GetQueueUrlRequest] (val x: Self) extends AnyVal {
+  implicit class GetQueueUrlRequestMutableBuilder[Self <: GetQueueUrlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueueOwnerAWSAccountId(value: String): Self = StObject.set(x, "QueueOwnerAWSAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQueueName(value: String): Self = this.set("QueueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueOwnerAWSAccountId(value: String): Self = this.set("QueueOwnerAWSAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueueOwnerAWSAccountId: Self = this.set("QueueOwnerAWSAccountId", js.undefined)
+    def setQueueOwnerAWSAccountIdUndefined: Self = StObject.set(x, "QueueOwnerAWSAccountId", js.undefined)
   }
 }

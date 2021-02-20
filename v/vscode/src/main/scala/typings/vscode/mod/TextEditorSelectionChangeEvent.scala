@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextEditorSelectionChangeEvent extends js.Object {
+trait TextEditorSelectionChangeEvent extends StObject {
   
   /**
     * The [change kind](#TextEditorSelectionChangeKind) which has triggered this
@@ -32,33 +33,21 @@ object TextEditorSelectionChangeEvent {
   }
   
   @scala.inline
-  implicit class TextEditorSelectionChangeEventOps[Self <: TextEditorSelectionChangeEvent] (val x: Self) extends AnyVal {
+  implicit class TextEditorSelectionChangeEventMutableBuilder[Self <: TextEditorSelectionChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: TextEditorSelectionChangeKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelections(value: js.Array[Selection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionsVarargs(value: Selection*): Self = this.set("selections", js.Array(value :_*))
+    def setSelectionsVarargs(value: Selection*): Self = StObject.set(x, "selections", js.Array(value :_*))
     
     @scala.inline
-    def setSelections(value: js.Array[Selection]): Self = this.set("selections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextEditor(value: TextEditor): Self = this.set("textEditor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: TextEditorSelectionChangeKind): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
   }
 }

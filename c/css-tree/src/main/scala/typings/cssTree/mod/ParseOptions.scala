@@ -1,11 +1,12 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParseOptions extends js.Object {
+trait ParseOptions extends StObject {
   
   var atrule: js.UndefOr[String] = js.native
   
@@ -40,90 +41,78 @@ object ParseOptions {
   }
   
   @scala.inline
-  implicit class ParseOptionsOps[Self <: ParseOptions] (val x: Self) extends AnyVal {
+  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtrule(value: String): Self = StObject.set(x, "atrule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtruleUndefined: Self = StObject.set(x, "atrule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtrule(value: String): Self = this.set("atrule", value.asInstanceOf[js.Any])
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def deleteAtrule: Self = this.set("atrule", js.undefined)
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setOnParseError(value: (/* error */ SyntaxParseError, /* fallbackNode */ CssNode) => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOnParseErrorUndefined: Self = StObject.set(x, "onParseError", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setParseAtrulePrelude(value: Boolean): Self = StObject.set(x, "parseAtrulePrelude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnParseError(value: (/* error */ SyntaxParseError, /* fallbackNode */ CssNode) => Unit): Self = this.set("onParseError", js.Any.fromFunction2(value))
+    def setParseAtrulePreludeUndefined: Self = StObject.set(x, "parseAtrulePrelude", js.undefined)
     
     @scala.inline
-    def deleteOnParseError: Self = this.set("onParseError", js.undefined)
+    def setParseCustomProperty(value: Boolean): Self = StObject.set(x, "parseCustomProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseAtrulePrelude(value: Boolean): Self = this.set("parseAtrulePrelude", value.asInstanceOf[js.Any])
+    def setParseCustomPropertyUndefined: Self = StObject.set(x, "parseCustomProperty", js.undefined)
     
     @scala.inline
-    def deleteParseAtrulePrelude: Self = this.set("parseAtrulePrelude", js.undefined)
+    def setParseRulePrelude(value: Boolean): Self = StObject.set(x, "parseRulePrelude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseCustomProperty(value: Boolean): Self = this.set("parseCustomProperty", value.asInstanceOf[js.Any])
+    def setParseRulePreludeUndefined: Self = StObject.set(x, "parseRulePrelude", js.undefined)
     
     @scala.inline
-    def deleteParseCustomProperty: Self = this.set("parseCustomProperty", js.undefined)
+    def setParseValue(value: Boolean): Self = StObject.set(x, "parseValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseRulePrelude(value: Boolean): Self = this.set("parseRulePrelude", value.asInstanceOf[js.Any])
+    def setParseValueUndefined: Self = StObject.set(x, "parseValue", js.undefined)
     
     @scala.inline
-    def deleteParseRulePrelude: Self = this.set("parseRulePrelude", js.undefined)
+    def setPositions(value: Boolean): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParseValue(value: Boolean): Self = this.set("parseValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParseValue: Self = this.set("parseValue", js.undefined)
-    
-    @scala.inline
-    def setPositions(value: Boolean): Self = this.set("positions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositions: Self = this.set("positions", js.undefined)
+    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
   }
 }

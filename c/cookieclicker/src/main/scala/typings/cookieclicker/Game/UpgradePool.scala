@@ -1,5 +1,6 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cookieclicker.cookieclickerStrings.prestigeDecor
   - typings.cookieclicker.cookieclickerStrings.unused
 */
-trait UpgradePool extends js.Object
+trait UpgradePool extends StObject
 object UpgradePool {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod.view
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // engine/view/selection
 @JSImport("@ckeditor/ckeditor5-engine", "view.Selection")
 @js.native
-class Selection () extends js.Object
+class Selection () extends StObject

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Span extends js.Object {
+trait Span extends StObject {
   
   /** A set of attributes on the span. You can have up to 32 attributes per span. */
   var attributes: js.UndefOr[Attributes] = js.native
@@ -78,102 +79,90 @@ object Span {
   }
   
   @scala.inline
-  implicit class SpanOps[Self <: Span] (val x: Self) extends AnyVal {
+  implicit class SpanMutableBuilder[Self <: Span] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildSpanCount(value: Double): Self = StObject.set(x, "childSpanCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setChildSpanCountUndefined: Self = StObject.set(x, "childSpanCount", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setDisplayName(value: TruncatableString): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildSpanCount(value: Double): Self = this.set("childSpanCount", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteChildSpanCount: Self = this.set("childSpanCount", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: TruncatableString): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: Links): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSameProcessAsParentSpan(value: Boolean): Self = StObject.set(x, "sameProcessAsParentSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentSpanId(value: String): Self = this.set("parentSpanId", value.asInstanceOf[js.Any])
+    def setSameProcessAsParentSpanUndefined: Self = StObject.set(x, "sameProcessAsParentSpan", js.undefined)
     
     @scala.inline
-    def deleteParentSpanId: Self = this.set("parentSpanId", js.undefined)
+    def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSameProcessAsParentSpan(value: Boolean): Self = this.set("sameProcessAsParentSpan", value.asInstanceOf[js.Any])
+    def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
     
     @scala.inline
-    def deleteSameProcessAsParentSpan: Self = this.set("sameProcessAsParentSpan", js.undefined)
+    def setSpanKind(value: String): Self = StObject.set(x, "spanKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanId(value: String): Self = this.set("spanId", value.asInstanceOf[js.Any])
+    def setSpanKindUndefined: Self = StObject.set(x, "spanKind", js.undefined)
     
     @scala.inline
-    def deleteSpanId: Self = this.set("spanId", js.undefined)
+    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpanKind(value: String): Self = this.set("spanKind", value.asInstanceOf[js.Any])
+    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
     @scala.inline
-    def deleteSpanKind: Self = this.set("spanKind", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackTrace(value: StackTrace): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteStackTrace: Self = this.set("stackTrace", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTimeEvents(value: TimeEvents): Self = StObject.set(x, "timeEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTimeEvents(value: TimeEvents): Self = this.set("timeEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeEvents: Self = this.set("timeEvents", js.undefined)
+    def setTimeEventsUndefined: Self = StObject.set(x, "timeEvents", js.undefined)
   }
 }

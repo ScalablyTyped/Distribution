@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * iOS related attributes to the Dynamic Link..
   */
 @js.native
-trait SchemaIosInfo extends js.Object {
+trait SchemaIosInfo extends StObject {
   
   /**
     * iOS App Store ID.
@@ -56,60 +57,48 @@ object SchemaIosInfo {
   }
   
   @scala.inline
-  implicit class SchemaIosInfoOps[Self <: SchemaIosInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaIosInfoMutableBuilder[Self <: SchemaIosInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIosAppStoreId(value: String): Self = StObject.set(x, "iosAppStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIosAppStoreIdUndefined: Self = StObject.set(x, "iosAppStoreId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIosBundleId(value: String): Self = StObject.set(x, "iosBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosAppStoreId(value: String): Self = this.set("iosAppStoreId", value.asInstanceOf[js.Any])
+    def setIosBundleIdUndefined: Self = StObject.set(x, "iosBundleId", js.undefined)
     
     @scala.inline
-    def deleteIosAppStoreId: Self = this.set("iosAppStoreId", js.undefined)
+    def setIosCustomScheme(value: String): Self = StObject.set(x, "iosCustomScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosBundleId(value: String): Self = this.set("iosBundleId", value.asInstanceOf[js.Any])
+    def setIosCustomSchemeUndefined: Self = StObject.set(x, "iosCustomScheme", js.undefined)
     
     @scala.inline
-    def deleteIosBundleId: Self = this.set("iosBundleId", js.undefined)
+    def setIosFallbackLink(value: String): Self = StObject.set(x, "iosFallbackLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosCustomScheme(value: String): Self = this.set("iosCustomScheme", value.asInstanceOf[js.Any])
+    def setIosFallbackLinkUndefined: Self = StObject.set(x, "iosFallbackLink", js.undefined)
     
     @scala.inline
-    def deleteIosCustomScheme: Self = this.set("iosCustomScheme", js.undefined)
+    def setIosIpadBundleId(value: String): Self = StObject.set(x, "iosIpadBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosFallbackLink(value: String): Self = this.set("iosFallbackLink", value.asInstanceOf[js.Any])
+    def setIosIpadBundleIdUndefined: Self = StObject.set(x, "iosIpadBundleId", js.undefined)
     
     @scala.inline
-    def deleteIosFallbackLink: Self = this.set("iosFallbackLink", js.undefined)
+    def setIosIpadFallbackLink(value: String): Self = StObject.set(x, "iosIpadFallbackLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosIpadBundleId(value: String): Self = this.set("iosIpadBundleId", value.asInstanceOf[js.Any])
+    def setIosIpadFallbackLinkUndefined: Self = StObject.set(x, "iosIpadFallbackLink", js.undefined)
     
     @scala.inline
-    def deleteIosIpadBundleId: Self = this.set("iosIpadBundleId", js.undefined)
+    def setIosMinimumVersion(value: String): Self = StObject.set(x, "iosMinimumVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosIpadFallbackLink(value: String): Self = this.set("iosIpadFallbackLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIosIpadFallbackLink: Self = this.set("iosIpadFallbackLink", js.undefined)
-    
-    @scala.inline
-    def setIosMinimumVersion(value: String): Self = this.set("iosMinimumVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIosMinimumVersion: Self = this.set("iosMinimumVersion", js.undefined)
+    def setIosMinimumVersionUndefined: Self = StObject.set(x, "iosMinimumVersion", js.undefined)
   }
 }

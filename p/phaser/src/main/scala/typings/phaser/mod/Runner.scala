@@ -1,6 +1,7 @@
 package typings.phaser.mod
 
 import typings.phaser.MatterJS.IRunnerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Runner ()
   extends typings.phaser.MatterJS.Runner
-/* static members */
-@JSImport("matter", "Runner")
-@js.native
-object Runner extends js.Object {
+object Runner {
   
   /**
     * Creates a new Runner. The options parameter is an object that specifies any properties you wish to override the defaults.
     * @method create
     * @param {} options
     */
+  /* static member */
+  @JSImport("matter", "Runner.create")
+  @js.native
   def create(options: IRunnerOptions): typings.phaser.MatterJS.Runner = js.native
   
   /**
@@ -38,12 +39,18 @@ object Runner extends js.Object {
     * @method run
     * @param {engine} engine
     */
+  /* static member */
+  @JSImport("matter", "Runner.run")
+  @js.native
   def run(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Runner = js.native
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
+  /* static member */
+  @JSImport("matter", "Runner.run")
+  @js.native
   def run(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Runner = js.native
   
   /**
@@ -52,6 +59,9 @@ object Runner extends js.Object {
     * @param {runner} runner
     * @param {engine} engine
     */
+  /* static member */
+  @JSImport("matter", "Runner.start")
+  @js.native
   def start(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine): Unit = js.native
   
   /**
@@ -60,6 +70,9 @@ object Runner extends js.Object {
     * @method stop
     * @param {runner} runner
     */
+  /* static member */
+  @JSImport("matter", "Runner.stop")
+  @js.native
   def stop(runner: typings.phaser.MatterJS.Runner): Unit = js.native
   
   /**
@@ -72,5 +85,8 @@ object Runner extends js.Object {
     * @param {engine} engine
     * @param {number} time
     */
+  /* static member */
+  @JSImport("matter", "Runner.tick")
+  @js.native
   def tick(runner: typings.phaser.MatterJS.Runner, engine: typings.phaser.MatterJS.Engine, time: Double): Unit = js.native
 }

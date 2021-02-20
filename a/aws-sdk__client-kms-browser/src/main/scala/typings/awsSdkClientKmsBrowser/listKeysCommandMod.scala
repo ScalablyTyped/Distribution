@@ -7,14 +7,14 @@ import typings.awsSdkClientKmsBrowser.typesListKeysInputMod.ListKeysInput
 import typings.awsSdkClientKmsBrowser.typesListKeysOutputMod.ListKeysOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-browser/commands/ListKeysCommand", JSImport.Namespace)
-@js.native
-object listKeysCommandMod extends js.Object {
+object listKeysCommandMod {
   
+  @JSImport("@aws-sdk/client-kms-browser/commands/ListKeysCommand", "ListKeysCommand")
   @js.native
   class ListKeysCommand protected () extends Command[
           InputTypesUnion, 

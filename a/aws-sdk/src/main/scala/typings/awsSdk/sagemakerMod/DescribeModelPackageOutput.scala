@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeModelPackageOutput extends js.Object {
+trait DescribeModelPackageOutput extends StObject {
   
   /**
     * Whether the model package is certified for listing on AWS Marketplace.
@@ -72,63 +73,51 @@ object DescribeModelPackageOutput {
   }
   
   @scala.inline
-  implicit class DescribeModelPackageOutputOps[Self <: DescribeModelPackageOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeModelPackageOutputMutableBuilder[Self <: DescribeModelPackageOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = StObject.set(x, "CertifyForMarketplace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertifyForMarketplaceUndefined: Self = StObject.set(x, "CertifyForMarketplace", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setInferenceSpecification(value: InferenceSpecification): Self = StObject.set(x, "InferenceSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelPackageArn(value: ModelPackageArn): Self = this.set("ModelPackageArn", value.asInstanceOf[js.Any])
+    def setInferenceSpecificationUndefined: Self = StObject.set(x, "InferenceSpecification", js.undefined)
     
     @scala.inline
-    def setModelPackageName(value: EntityName): Self = this.set("ModelPackageName", value.asInstanceOf[js.Any])
+    def setModelPackageArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelPackageStatus(value: ModelPackageStatus): Self = this.set("ModelPackageStatus", value.asInstanceOf[js.Any])
+    def setModelPackageDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelPackageStatusDetails(value: ModelPackageStatusDetails): Self = this.set("ModelPackageStatusDetails", value.asInstanceOf[js.Any])
+    def setModelPackageDescriptionUndefined: Self = StObject.set(x, "ModelPackageDescription", js.undefined)
     
     @scala.inline
-    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = this.set("CertifyForMarketplace", value.asInstanceOf[js.Any])
+    def setModelPackageName(value: EntityName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertifyForMarketplace: Self = this.set("CertifyForMarketplace", js.undefined)
+    def setModelPackageStatus(value: ModelPackageStatus): Self = StObject.set(x, "ModelPackageStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInferenceSpecification(value: InferenceSpecification): Self = this.set("InferenceSpecification", value.asInstanceOf[js.Any])
+    def setModelPackageStatusDetails(value: ModelPackageStatusDetails): Self = StObject.set(x, "ModelPackageStatusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInferenceSpecification: Self = this.set("InferenceSpecification", js.undefined)
+    def setSourceAlgorithmSpecification(value: SourceAlgorithmSpecification): Self = StObject.set(x, "SourceAlgorithmSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelPackageDescription(value: EntityDescription): Self = this.set("ModelPackageDescription", value.asInstanceOf[js.Any])
+    def setSourceAlgorithmSpecificationUndefined: Self = StObject.set(x, "SourceAlgorithmSpecification", js.undefined)
     
     @scala.inline
-    def deleteModelPackageDescription: Self = this.set("ModelPackageDescription", js.undefined)
+    def setValidationSpecification(value: ModelPackageValidationSpecification): Self = StObject.set(x, "ValidationSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAlgorithmSpecification(value: SourceAlgorithmSpecification): Self = this.set("SourceAlgorithmSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceAlgorithmSpecification: Self = this.set("SourceAlgorithmSpecification", js.undefined)
-    
-    @scala.inline
-    def setValidationSpecification(value: ModelPackageValidationSpecification): Self = this.set("ValidationSpecification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationSpecification: Self = this.set("ValidationSpecification", js.undefined)
+    def setValidationSpecificationUndefined: Self = StObject.set(x, "ValidationSpecification", js.undefined)
   }
 }

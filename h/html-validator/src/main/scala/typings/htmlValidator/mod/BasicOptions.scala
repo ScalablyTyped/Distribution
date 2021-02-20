@@ -1,12 +1,13 @@
 package typings.htmlValidator.mod
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasicOptions extends js.Object {
+trait BasicOptions extends StObject {
   
   var headers: js.UndefOr[Record[String, String]] = js.native
   
@@ -27,51 +28,39 @@ object BasicOptions {
   }
   
   @scala.inline
-  implicit class BasicOptionsOps[Self <: BasicOptions] (val x: Self) extends AnyVal {
+  implicit class BasicOptionsMutableBuilder[Self <: BasicOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: Record[String, String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
     @scala.inline
-    def setIgnoreVarargs(value: String*): Self = this.set("ignore", js.Array(value :_*))
+    def setIsFragment(value: Boolean): Self = StObject.set(x, "isFragment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnore(value: String | js.Array[String]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    def setIsFragmentUndefined: Self = StObject.set(x, "isFragment", js.undefined)
     
     @scala.inline
-    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFragment(value: Boolean): Self = this.set("isFragment", value.asInstanceOf[js.Any])
+    def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
     
     @scala.inline
-    def deleteIsFragment: Self = this.set("isFragment", js.undefined)
+    def setValidator(value: js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocal(value: Boolean): Self = this.set("isLocal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsLocal: Self = this.set("isLocal", js.undefined)
-    
-    @scala.inline
-    def setValidator(value: js.Object): Self = this.set("validator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidator: Self = this.set("validator", js.undefined)
+    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

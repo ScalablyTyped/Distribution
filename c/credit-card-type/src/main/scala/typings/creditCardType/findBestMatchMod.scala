@@ -1,13 +1,14 @@
 package typings.creditCardType
 
 import typings.creditCardType.typesMod.CreditCardType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("credit-card-type/dist/lib/find-best-match", JSImport.Namespace)
-@js.native
-object findBestMatchMod extends js.Object {
+object findBestMatchMod {
   
+  @JSImport("credit-card-type/dist/lib/find-best-match", "findBestMatch")
+  @js.native
   def findBestMatch(results: js.Array[CreditCardType]): CreditCardType | Null = js.native
 }

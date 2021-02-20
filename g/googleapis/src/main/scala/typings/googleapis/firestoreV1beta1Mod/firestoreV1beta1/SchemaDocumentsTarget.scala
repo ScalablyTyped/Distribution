@@ -1,5 +1,6 @@
 package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A target specified by a set of documents names.
   */
 @js.native
-trait SchemaDocumentsTarget extends js.Object {
+trait SchemaDocumentsTarget extends StObject {
   
   /**
     * The names of the documents to retrieve. In the format:
@@ -27,27 +28,15 @@ object SchemaDocumentsTarget {
   }
   
   @scala.inline
-  implicit class SchemaDocumentsTargetOps[Self <: SchemaDocumentsTarget] (val x: Self) extends AnyVal {
+  implicit class SchemaDocumentsTargetMutableBuilder[Self <: SchemaDocumentsTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocuments(value: js.Array[String]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentsVarargs(value: String*): Self = this.set("documents", js.Array(value :_*))
-    
-    @scala.inline
-    def setDocuments(value: js.Array[String]): Self = this.set("documents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocuments: Self = this.set("documents", js.undefined)
+    def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
   }
 }

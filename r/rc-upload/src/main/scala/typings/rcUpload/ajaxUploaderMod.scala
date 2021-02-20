@@ -12,13 +12,16 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.FileList
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-upload/es/AjaxUploader", JSImport.Namespace)
-@js.native
-object ajaxUploaderMod extends js.Object {
+object ajaxUploaderMod {
+  
+  @JSImport("rc-upload/es/AjaxUploader", JSImport.Default)
+  @js.native
+  class default () extends AjaxUploader
   
   @js.native
   trait AjaxUploader
@@ -61,7 +64,4 @@ object ajaxUploaderMod extends js.Object {
     
     def uploadFiles(files: FileList): Unit = js.native
   }
-  
-  @js.native
-  class default () extends AjaxUploader
 }

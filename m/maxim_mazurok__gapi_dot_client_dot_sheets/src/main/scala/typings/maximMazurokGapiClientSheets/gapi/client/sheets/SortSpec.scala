@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SortSpec extends js.Object {
+trait SortSpec extends StObject {
   
   /** The background fill color to sort by; cells with this fill color are sorted to the top. Mutually exclusive with foreground_color. */
   var backgroundColor: js.UndefOr[Color] = js.native
@@ -43,60 +44,48 @@ object SortSpec {
   }
   
   @scala.inline
-  implicit class SortSpecOps[Self <: SortSpec] (val x: Self) extends AnyVal {
+  implicit class SortSpecMutableBuilder[Self <: SortSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorStyle(value: ColorStyle): Self = StObject.set(x, "backgroundColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColorStyleUndefined: Self = StObject.set(x, "backgroundColorStyle", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColorStyle(value: ColorStyle): Self = this.set("backgroundColorStyle", value.asInstanceOf[js.Any])
+    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColorStyle: Self = this.set("backgroundColorStyle", js.undefined)
+    def setDimensionIndex(value: Double): Self = StObject.set(x, "dimensionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = this.set("dataSourceColumnReference", value.asInstanceOf[js.Any])
+    def setDimensionIndexUndefined: Self = StObject.set(x, "dimensionIndex", js.undefined)
     
     @scala.inline
-    def deleteDataSourceColumnReference: Self = this.set("dataSourceColumnReference", js.undefined)
+    def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionIndex(value: Double): Self = this.set("dimensionIndex", value.asInstanceOf[js.Any])
+    def setForegroundColorStyle(value: ColorStyle): Self = StObject.set(x, "foregroundColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDimensionIndex: Self = this.set("dimensionIndex", js.undefined)
+    def setForegroundColorStyleUndefined: Self = StObject.set(x, "foregroundColorStyle", js.undefined)
     
     @scala.inline
-    def setForegroundColor(value: Color): Self = this.set("foregroundColor", value.asInstanceOf[js.Any])
+    def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
     
     @scala.inline
-    def deleteForegroundColor: Self = this.set("foregroundColor", js.undefined)
+    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForegroundColorStyle(value: ColorStyle): Self = this.set("foregroundColorStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForegroundColorStyle: Self = this.set("foregroundColorStyle", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.script
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,54 +114,42 @@ object XStarBasicLibraryInfo {
   }
   
   @scala.inline
-  implicit class XStarBasicLibraryInfoOps[Self <: XStarBasicLibraryInfo] (val x: Self) extends AnyVal {
+  implicit class XStarBasicLibraryInfoMutableBuilder[Self <: XStarBasicLibraryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDialogContainer(value: XNameContainer): Self = StObject.set(x, "DialogContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExternalSourceURL(value: String): Self = StObject.set(x, "ExternalSourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDialogContainer(value: () => XNameContainer): Self = StObject.set(x, "getDialogContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDialogContainer(value: XNameContainer): Self = this.set("DialogContainer", value.asInstanceOf[js.Any])
+    def setGetExternalSourceURL(value: () => String): Self = StObject.set(x, "getExternalSourceURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExternalSourceURL(value: String): Self = this.set("ExternalSourceURL", value.asInstanceOf[js.Any])
+    def setGetLinkTargetURL(value: () => String): Self = StObject.set(x, "getLinkTargetURL", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLinkTargetURL(value: String): Self = this.set("LinkTargetURL", value.asInstanceOf[js.Any])
+    def setGetModuleContainer(value: () => XNameContainer): Self = StObject.set(x, "getModuleContainer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setModuleContainer(value: XNameContainer): Self = this.set("ModuleContainer", value.asInstanceOf[js.Any])
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setLinkTargetURL(value: String): Self = StObject.set(x, "LinkTargetURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDialogContainer(value: () => XNameContainer): Self = this.set("getDialogContainer", js.Any.fromFunction0(value))
+    def setModuleContainer(value: XNameContainer): Self = StObject.set(x, "ModuleContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExternalSourceURL(value: () => String): Self = this.set("getExternalSourceURL", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLinkTargetURL(value: () => String): Self = this.set("getLinkTargetURL", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetModuleContainer(value: () => XNameContainer): Self = this.set("getModuleContainer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPassword(value: () => String): Self = this.set("getPassword", js.Any.fromFunction0(value))
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

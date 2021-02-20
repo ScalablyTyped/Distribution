@@ -1,17 +1,31 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
 import typings.googleCloudFirestore.anon.MaxAttempts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Firestore extends js.Object {
+trait Firestore extends StObject {
+  
   /**
     * Creates a write batch, used for performing multiple writes as a single
     * atomic operation.
     */
   def batch(): WriteBatch = js.native
+  
+  /**
+    * Creates a [BulkWriter]{@link BulkWriter}, used for performing
+    * multiple writes in parallel. Gradually ramps up writes as specified
+    * by the 500/50/5 rule.
+    *
+    * @param options An options object used to configure the throttling
+    * behavior for the underlying BulkWriter.
+    */
+  def bulkWriter(): BulkWriter = js.native
+  def bulkWriter(options: BulkWriterOptions): BulkWriter = js.native
+  
   /**
     * Gets a `CollectionReference` instance that refers to the collection at
     * the specified path.
@@ -20,6 +34,7 @@ trait Firestore extends js.Object {
     * @return The `CollectionReference` instance.
     */
   def collection(collectionPath: String): CollectionReference[DocumentData] = js.native
+  
   /**
     * Creates and returns a new Query that includes all documents in the
     * database that are contained in a collection or subcollection with the
@@ -28,9 +43,10 @@ trait Firestore extends js.Object {
     * @param collectionId Identifies the collections to query over. Every
     * collection or subcollection with this ID as the last segment of its path
     * will be included. Cannot contain a slash.
-    * @return The created Query.
+    * @return The created `CollectionGroup`.
     */
-  def collectionGroup(collectionId: String): Query[DocumentData] = js.native
+  def collectionGroup(collectionId: String): CollectionGroup[DocumentData] = js.native
+  
   /**
     * Gets a `DocumentReference` instance that refers to the document at the
     * specified path.
@@ -39,6 +55,7 @@ trait Firestore extends js.Object {
     * @return The `DocumentReference` instance.
     */
   def doc(documentPath: String): DocumentReference[DocumentData] = js.native
+  
   /**
     * Retrieves multiple documents from Firestore.
     *
@@ -53,6 +70,7 @@ trait Firestore extends js.Object {
     * snapshots.
     */
   def getAll(documentRefsOrReadOptions: (DocumentReference[DocumentData] | ReadOptions)*): js.Promise[js.Array[DocumentSnapshot[DocumentData]]] = js.native
+  
   /**
     * Fetches the root collections that are associated with this Firestore
     * database.
@@ -60,6 +78,7 @@ trait Firestore extends js.Object {
     * @returns A Promise that resolves with an array of CollectionReferences.
     */
   def listCollections(): js.Promise[js.Array[CollectionReference[DocumentData]]] = js.native
+  
   /**
     * Executes the given updateFunction and commits the changes applied within
     * the transaction.
@@ -84,6 +103,7 @@ trait Firestore extends js.Object {
     updateFunction: js.Function1[/* transaction */ Transaction, js.Promise[T]],
     transactionOptions: MaxAttempts
   ): js.Promise[T] = js.native
+  
   /**
     * Specifies custom settings to be used to configure the `Firestore`
     * instance. Can only be invoked once and before any other Firestore
@@ -97,6 +117,7 @@ trait Firestore extends js.Object {
     * operations.
     */
   def settings(settings: Settings): Unit = js.native
+  
   /**
     * Terminates the Firestore client and closes all open streams.
     *
@@ -104,4 +125,3 @@ trait Firestore extends js.Object {
     */
   def terminate(): js.Promise[Unit] = js.native
 }
-

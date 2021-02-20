@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAnimationKey extends js.Object {
+trait IAnimationKey extends StObject {
   
   /**
     * Frame of the key frame
@@ -41,42 +42,30 @@ object IAnimationKey {
   }
   
   @scala.inline
-  implicit class IAnimationKeyOps[Self <: IAnimationKey] (val x: Self) extends AnyVal {
+  implicit class IAnimationKeyMutableBuilder[Self <: IAnimationKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInTangent(value: js.Any): Self = StObject.set(x, "inTangent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInTangentUndefined: Self = StObject.set(x, "inTangent", js.undefined)
     
     @scala.inline
-    def setFrame(value: Double): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setInterpolation(value: AnimationKeyInterpolation): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def setInTangent(value: js.Any): Self = this.set("inTangent", value.asInstanceOf[js.Any])
+    def setOutTangent(value: js.Any): Self = StObject.set(x, "outTangent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInTangent: Self = this.set("inTangent", js.undefined)
+    def setOutTangentUndefined: Self = StObject.set(x, "outTangent", js.undefined)
     
     @scala.inline
-    def setInterpolation(value: AnimationKeyInterpolation): Self = this.set("interpolation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
-    
-    @scala.inline
-    def setOutTangent(value: js.Any): Self = this.set("outTangent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutTangent: Self = this.set("outTangent", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

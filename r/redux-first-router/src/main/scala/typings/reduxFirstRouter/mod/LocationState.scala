@@ -1,11 +1,12 @@
 package typings.reduxFirstRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationState[TKeys, TState] extends js.Object {
+trait LocationState[TKeys, TState] extends StObject {
   
   var hasSSR: js.UndefOr[Boolean] = js.native
   
@@ -43,69 +44,57 @@ object LocationState {
   }
   
   @scala.inline
-  implicit class LocationStateOps[Self <: LocationState[_, _], TKeys, TState] (val x: Self with (LocationState[TKeys, TState])) extends AnyVal {
+  implicit class LocationStateMutableBuilder[Self <: LocationState[_, _], TKeys, TState] (val x: Self with (LocationState[TKeys, TState])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasSSR(value: Boolean): Self = StObject.set(x, "hasSSR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasSSRUndefined: Self = StObject.set(x, "hasSSR", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistory(value: Nullable[HistoryData]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathname(value: String): Self = this.set("pathname", value.asInstanceOf[js.Any])
+    def setHistoryNull: Self = StObject.set(x, "history", null)
     
     @scala.inline
-    def setPayload(value: Payload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def setPrev(value: Location): Self = this.set("prev", value.asInstanceOf[js.Any])
+    def setKind(value: Nullable[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutesMap(value: RoutesMap[TKeys, TState]): Self = this.set("routesMap", value.asInstanceOf[js.Any])
+    def setKindNull: Self = StObject.set(x, "kind", null)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setHasSSR(value: Boolean): Self = this.set("hasSSR", value.asInstanceOf[js.Any])
+    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasSSR: Self = this.set("hasSSR", js.undefined)
+    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: Nullable[HistoryData]): Self = this.set("history", value.asInstanceOf[js.Any])
+    def setPrev(value: Location): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryNull: Self = this.set("history", null)
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def setKind(value: Nullable[String]): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRoutesMap(value: RoutesMap[TKeys, TState]): Self = StObject.set(x, "routesMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKindNull: Self = this.set("kind", null)
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

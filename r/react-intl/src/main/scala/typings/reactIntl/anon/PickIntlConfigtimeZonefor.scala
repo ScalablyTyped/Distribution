@@ -10,13 +10,14 @@ import typings.formatjsIntl.srcTypesMod.OnErrorFn
 import typings.intlMessageformat.mod.FormatError
 import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-intl.react-intl/src/types.IntlConfig, 'timeZone' | 'formats' | 'messages' | 'defaultLocale' | 'defaultFormats' | 'onError' | 'textComponent'> */
 @js.native
-trait PickIntlConfigtimeZonefor extends js.Object {
+trait PickIntlConfigtimeZonefor extends StObject {
   
   var defaultFormats: CustomFormats = js.native
   
@@ -49,47 +50,35 @@ object PickIntlConfigtimeZonefor {
   }
   
   @scala.inline
-  implicit class PickIntlConfigtimeZoneforOps[Self <: PickIntlConfigtimeZonefor] (val x: Self) extends AnyVal {
+  implicit class PickIntlConfigtimeZoneforMutableBuilder[Self <: PickIntlConfigtimeZonefor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFormats(value: CustomFormats): Self = this.set("defaultFormats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultLocale(value: String): Self = this.set("defaultLocale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormats(value: CustomFormats): Self = this.set("formats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
-    ): Self = this.set("onError", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = this.set("textComponent", value.asInstanceOf[js.Any])
+    def setTextComponent(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextComponent: Self = this.set("textComponent", js.undefined)
+    def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
     
     @scala.inline
-    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

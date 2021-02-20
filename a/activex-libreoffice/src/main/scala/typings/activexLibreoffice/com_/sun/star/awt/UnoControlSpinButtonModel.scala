@@ -12,6 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -155,66 +156,54 @@ object UnoControlSpinButtonModel {
   }
   
   @scala.inline
-  implicit class UnoControlSpinButtonModelOps[Self <: UnoControlSpinButtonModel] (val x: Self) extends AnyVal {
+  implicit class UnoControlSpinButtonModelMutableBuilder[Self <: UnoControlSpinButtonModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setMouseWheelBehavior(value: Double): Self = StObject.set(x, "MouseWheelBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseWheelBehavior(value: Double): Self = this.set("MouseWheelBehavior", value.asInstanceOf[js.Any])
+    def setRepeat(value: Boolean): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Double): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setRepeatDelay(value: Double): Self = StObject.set(x, "RepeatDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    def setSpinIncrement(value: Double): Self = StObject.set(x, "SpinIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: Boolean): Self = this.set("Repeat", value.asInstanceOf[js.Any])
+    def setSpinValue(value: Double): Self = StObject.set(x, "SpinValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatDelay(value: Double): Self = this.set("RepeatDelay", value.asInstanceOf[js.Any])
+    def setSpinValueMax(value: Double): Self = StObject.set(x, "SpinValueMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinIncrement(value: Double): Self = this.set("SpinIncrement", value.asInstanceOf[js.Any])
+    def setSpinValueMin(value: Double): Self = StObject.set(x, "SpinValueMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinValue(value: Double): Self = this.set("SpinValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpinValueMax(value: Double): Self = this.set("SpinValueMax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpinValueMin(value: Double): Self = this.set("SpinValueMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolColor(value: Color): Self = this.set("SymbolColor", value.asInstanceOf[js.Any])
+    def setSymbolColor(value: Color): Self = StObject.set(x, "SymbolColor", value.asInstanceOf[js.Any])
   }
 }

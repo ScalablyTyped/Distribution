@@ -1,20 +1,27 @@
 package typings.reactVirtualized
 
-import typings.react.mod.Component
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCacheParams
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-virtualized/dist/commonjs/CellMeasurer", JSImport.Namespace)
-@js.native
-object cellMeasurerMod extends js.Object {
+object cellMeasurerMod {
   
+  @JSImport("react-virtualized/dist/commonjs/CellMeasurer", "CellMeasurer")
   @js.native
-  class CellMeasurer ()
-    extends Component[CellMeasurerProps, js.Object, js.Any]
+  class CellMeasurer protected ()
+    extends typings.reactVirtualized.esCellMeasurerMod.CellMeasurer {
+    def this(props: CellMeasurerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CellMeasurerProps, context: js.Any) = this()
+  }
   
+  @JSImport("react-virtualized/dist/commonjs/CellMeasurer", "CellMeasurerCache")
   @js.native
   class CellMeasurerCache ()
     extends typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache {

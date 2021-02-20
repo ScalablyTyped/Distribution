@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Player extends js.Object {
+trait Player extends StObject {
   
   var matchHistoryUri: String = js.native
   
@@ -24,30 +25,18 @@ object Player {
   }
   
   @scala.inline
-  implicit class PlayerOps[Self <: Player] (val x: Self) extends AnyVal {
+  implicit class PlayerMutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchHistoryUri(value: String): Self = StObject.set(x, "matchHistoryUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProfileIcon(value: Double): Self = StObject.set(x, "profileIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchHistoryUri(value: String): Self = this.set("matchHistoryUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProfileIcon(value: Double): Self = this.set("profileIcon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummonerId(value: Double): Self = this.set("summonerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSummonerName(value: String): Self = this.set("summonerName", value.asInstanceOf[js.Any])
+    def setSummonerName(value: String): Self = StObject.set(x, "summonerName", value.asInstanceOf[js.Any])
   }
 }

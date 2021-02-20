@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeMetricFiltersRequest extends js.Object {
+trait DescribeMetricFiltersRequest extends StObject {
   
   /**
     * The prefix to match. CloudWatch Logs uses the value you set here only if you also include the logGroupName parameter in your request.
@@ -46,54 +47,42 @@ object DescribeMetricFiltersRequest {
   }
   
   @scala.inline
-  implicit class DescribeMetricFiltersRequestOps[Self <: DescribeMetricFiltersRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeMetricFiltersRequestMutableBuilder[Self <: DescribeMetricFiltersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterNamePrefix(value: FilterName): Self = StObject.set(x, "filterNamePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterNamePrefixUndefined: Self = StObject.set(x, "filterNamePrefix", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterNamePrefix(value: FilterName): Self = this.set("filterNamePrefix", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteFilterNamePrefix: Self = this.set("filterNamePrefix", js.undefined)
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: DescribeLimit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
     @scala.inline
-    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    def setMetricNamespace(value: MetricNamespace): Self = StObject.set(x, "metricNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricName(value: MetricName): Self = this.set("metricName", value.asInstanceOf[js.Any])
+    def setMetricNamespaceUndefined: Self = StObject.set(x, "metricNamespace", js.undefined)
     
     @scala.inline
-    def deleteMetricName: Self = this.set("metricName", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricNamespace(value: MetricNamespace): Self = this.set("metricNamespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricNamespace: Self = this.set("metricNamespace", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

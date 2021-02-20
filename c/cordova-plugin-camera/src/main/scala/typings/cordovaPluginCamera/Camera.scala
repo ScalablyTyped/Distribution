@@ -1,5 +1,6 @@
 package typings.cordovaPluginCamera
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This plugin provides an API for taking pictures and for choosing images from the system's image library.
   */
 @js.native
-trait Camera extends js.Object {
+trait Camera extends StObject {
   
   /**
     * Removes intermediate photos taken by the camera from temporary storage.

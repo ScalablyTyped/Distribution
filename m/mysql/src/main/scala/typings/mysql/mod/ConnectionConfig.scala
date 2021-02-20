@@ -5,6 +5,7 @@ import typings.mysql.anon.UntypedFieldInfotypestrin
 import typings.mysql.mysqlStrings.DATE
 import typings.mysql.mysqlStrings.DATETIME
 import typings.mysql.mysqlStrings.TIMESTAMP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,138 +140,126 @@ object ConnectionConfig {
   }
   
   @scala.inline
-  implicit class ConnectionConfigOps[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
+  implicit class ConnectionConfigMutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigNumberStrings(value: Boolean): Self = this.set("bigNumberStrings", value.asInstanceOf[js.Any])
+    def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
     
     @scala.inline
-    def deleteBigNumberStrings: Self = this.set("bigNumberStrings", js.undefined)
+    def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
     
     @scala.inline
-    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value :_*))
     
     @scala.inline
-    def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = this.set("dateStrings", js.Array(value :_*))
+    def setDebug(value: Boolean | (js.Array[String | Types])): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = this.set("dateStrings", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteDateStrings: Self = this.set("dateStrings", js.undefined)
+    def setDebugVarargs(value: (String | Types)*): Self = StObject.set(x, "debug", js.Array(value :_*))
     
     @scala.inline
-    def setDebugVarargs(value: (String | Types)*): Self = this.set("debug", js.Array(value :_*))
+    def setFlags(value: String | js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean | (js.Array[String | Types])): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
     @scala.inline
-    def setFlagsVarargs(value: String*): Self = this.set("flags", js.Array(value :_*))
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: String | js.Array[String]): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsecureAuth(value: Boolean): Self = this.set("insecureAuth", value.asInstanceOf[js.Any])
+    def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
     
     @scala.inline
-    def deleteInsecureAuth: Self = this.set("insecureAuth", js.undefined)
+    def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
     
     @scala.inline
-    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleStatements(value: Boolean): Self = this.set("multipleStatements", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deleteMultipleStatements: Self = this.set("multipleStatements", js.undefined)
+    def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => String): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryFormat(value: (/* query */ String, /* values */ js.Any) => String): Self = this.set("queryFormat", js.Any.fromFunction2(value))
+    def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
     
     @scala.inline
-    def deleteQueryFormat: Self = this.set("queryFormat", js.undefined)
+    def setSsl(value: String | SecureContextOptionsrejec): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    def setStringifyObjects(value: Boolean): Self = StObject.set(x, "stringifyObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsl(value: String | SecureContextOptionsrejec): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    def setStringifyObjectsUndefined: Self = StObject.set(x, "stringifyObjects", js.undefined)
     
     @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringifyObjects(value: Boolean): Self = this.set("stringifyObjects", value.asInstanceOf[js.Any])
+    def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
     
     @scala.inline
-    def deleteStringifyObjects: Self = this.set("stringifyObjects", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportBigNumbers(value: Boolean): Self = this.set("supportBigNumbers", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteSupportBigNumbers: Self = this.set("supportBigNumbers", js.undefined)
+    def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrace(value: Boolean): Self = this.set("trace", value.asInstanceOf[js.Any])
+    def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
-    
-    @scala.inline
-    def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = this.set("typeCast", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTypeCast(value: TypeCast): Self = this.set("typeCast", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeCast: Self = this.set("typeCast", js.undefined)
+    def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
   }
 }

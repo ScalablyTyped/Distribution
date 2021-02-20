@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/ManualMergeRequiredException", JSImport.Namespace)
-@js.native
-object manualMergeRequiredExceptionMod extends js.Object {
+object manualMergeRequiredExceptionMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/ManualMergeRequiredException", "ManualMergeRequiredException")
+  @js.native
   val ManualMergeRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

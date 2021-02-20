@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCloudFormationStackRecordsResult extends js.Object {
+trait GetCloudFormationStackRecordsResult extends StObject {
   
   /**
     * A list of objects describing the CloudFormation stack records.
@@ -26,33 +27,21 @@ object GetCloudFormationStackRecordsResult {
   }
   
   @scala.inline
-  implicit class GetCloudFormationStackRecordsResultOps[Self <: GetCloudFormationStackRecordsResult] (val x: Self) extends AnyVal {
+  implicit class GetCloudFormationStackRecordsResultMutableBuilder[Self <: GetCloudFormationStackRecordsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudFormationStackRecords(value: CloudFormationStackRecordList): Self = StObject.set(x, "cloudFormationStackRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudFormationStackRecordsUndefined: Self = StObject.set(x, "cloudFormationStackRecords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudFormationStackRecordsVarargs(value: CloudFormationStackRecord*): Self = StObject.set(x, "cloudFormationStackRecords", js.Array(value :_*))
     
     @scala.inline
-    def setCloudFormationStackRecordsVarargs(value: CloudFormationStackRecord*): Self = this.set("cloudFormationStackRecords", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFormationStackRecords(value: CloudFormationStackRecordList): Self = this.set("cloudFormationStackRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudFormationStackRecords: Self = this.set("cloudFormationStackRecords", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reBase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rebase extends js.Object {
+trait Rebase extends StObject {
   
   def addToCollection(refOrPath: String, data: js.Object): js.Promise[_] = js.native
   def addToCollection(refOrPath: String, data: js.Object, id: String): js.Promise[_] = js.native

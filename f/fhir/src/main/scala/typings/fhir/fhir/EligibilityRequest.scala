@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,141 +121,129 @@ object EligibilityRequest {
   }
   
   @scala.inline
-  implicit class EligibilityRequestOps[Self <: EligibilityRequest] (val x: Self) extends AnyVal {
+  implicit class EligibilityRequestMutableBuilder[Self <: EligibilityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBenefitCategory(value: CodeableConcept): Self = StObject.set(x, "benefitCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBenefitCategoryUndefined: Self = StObject.set(x, "benefitCategory", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBenefitSubCategory(value: CodeableConcept): Self = StObject.set(x, "benefitSubCategory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_businessArrangement(value: Element): Self = this.set("_businessArrangement", value.asInstanceOf[js.Any])
+    def setBenefitSubCategoryUndefined: Self = StObject.set(x, "benefitSubCategory", js.undefined)
     
     @scala.inline
-    def delete_businessArrangement: Self = this.set("_businessArrangement", js.undefined)
+    def setBusinessArrangement(value: String): Self = StObject.set(x, "businessArrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    def setBusinessArrangementUndefined: Self = StObject.set(x, "businessArrangement", js.undefined)
     
     @scala.inline
-    def delete_created: Self = this.set("_created", js.undefined)
+    def setCoverage(value: Reference): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_servicedDate(value: Element): Self = this.set("_servicedDate", value.asInstanceOf[js.Any])
+    def setCoverageUndefined: Self = StObject.set(x, "coverage", js.undefined)
     
     @scala.inline
-    def delete_servicedDate: Self = this.set("_servicedDate", js.undefined)
+    def setCreated(value: dateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def delete_status: Self = this.set("_status", js.undefined)
+    def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBenefitCategory(value: CodeableConcept): Self = this.set("benefitCategory", value.asInstanceOf[js.Any])
+    def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
     
     @scala.inline
-    def deleteBenefitCategory: Self = this.set("benefitCategory", js.undefined)
+    def setFacility(value: Reference): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBenefitSubCategory(value: CodeableConcept): Self = this.set("benefitSubCategory", value.asInstanceOf[js.Any])
+    def setFacilityUndefined: Self = StObject.set(x, "facility", js.undefined)
     
     @scala.inline
-    def deleteBenefitSubCategory: Self = this.set("benefitSubCategory", js.undefined)
+    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessArrangement(value: String): Self = this.set("businessArrangement", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def deleteBusinessArrangement: Self = this.set("businessArrangement", js.undefined)
+    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
     @scala.inline
-    def setCoverage(value: Reference): Self = this.set("coverage", value.asInstanceOf[js.Any])
+    def setInsurer(value: Reference): Self = StObject.set(x, "insurer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCoverage: Self = this.set("coverage", js.undefined)
+    def setInsurerUndefined: Self = StObject.set(x, "insurer", js.undefined)
     
     @scala.inline
-    def setCreated(value: dateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setOrganization(value: Reference): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     @scala.inline
-    def setEnterer(value: Reference): Self = this.set("enterer", value.asInstanceOf[js.Any])
+    def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnterer: Self = this.set("enterer", js.undefined)
+    def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
     @scala.inline
-    def setFacility(value: Reference): Self = this.set("facility", value.asInstanceOf[js.Any])
+    def setPriority(value: CodeableConcept): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFacility: Self = this.set("facility", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setServicedDate(value: date): Self = StObject.set(x, "servicedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsurer(value: Reference): Self = this.set("insurer", value.asInstanceOf[js.Any])
+    def setServicedDateUndefined: Self = StObject.set(x, "servicedDate", js.undefined)
     
     @scala.inline
-    def deleteInsurer: Self = this.set("insurer", js.undefined)
+    def setServicedPeriod(value: Period): Self = StObject.set(x, "servicedPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    def setServicedPeriodUndefined: Self = StObject.set(x, "servicedPeriod", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("organization", js.undefined)
+    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deletePatient: Self = this.set("patient", js.undefined)
+    def set_businessArrangement(value: Element): Self = StObject.set(x, "_businessArrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: CodeableConcept): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def set_businessArrangementUndefined: Self = StObject.set(x, "_businessArrangement", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def set_created(value: Element): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: Reference): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def set_createdUndefined: Self = StObject.set(x, "_created", js.undefined)
     
     @scala.inline
-    def deleteProvider: Self = this.set("provider", js.undefined)
+    def set_servicedDate(value: Element): Self = StObject.set(x, "_servicedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicedDate(value: date): Self = this.set("servicedDate", value.asInstanceOf[js.Any])
+    def set_servicedDateUndefined: Self = StObject.set(x, "_servicedDate", js.undefined)
     
     @scala.inline
-    def deleteServicedDate: Self = this.set("servicedDate", js.undefined)
+    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicedPeriod(value: Period): Self = this.set("servicedPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServicedPeriod: Self = this.set("servicedPeriod", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

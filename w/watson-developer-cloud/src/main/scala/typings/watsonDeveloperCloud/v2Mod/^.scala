@@ -1,5 +1,6 @@
 package typings.watsonDeveloperCloud.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +33,4 @@ class ^ protected () extends AssistantV2 {
 }
 @JSImport("watson-developer-cloud/assistant/v2", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  
-  var URL: String = js.native
-}
+object ^ extends StObject

@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.InventorySourceGroupIdKey
 import typings.maximMazurokGapiClientDisplayvideo.anon.KeyOauthtokenPartnerId
 import typings.maximMazurokGapiClientDisplayvideo.anon.OauthtokenPartnerIdPrettyPrint
 import typings.maximMazurokGapiClientDisplayvideo.anon.PartnerIdPrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventorySourceGroupsResource extends js.Object {
+trait InventorySourceGroupsResource extends StObject {
   
   var assignedInventorySources: AssignedInventorySourcesResource = js.native
   

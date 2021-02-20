@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationSettingsValidationMessages extends js.Object {
+trait ConfigurationSettingsValidationMessages extends StObject {
   
   /**
     *  A list of ValidationMessage. 
@@ -21,27 +22,15 @@ object ConfigurationSettingsValidationMessages {
   }
   
   @scala.inline
-  implicit class ConfigurationSettingsValidationMessagesOps[Self <: ConfigurationSettingsValidationMessages] (val x: Self) extends AnyVal {
+  implicit class ConfigurationSettingsValidationMessagesMutableBuilder[Self <: ConfigurationSettingsValidationMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessages(value: ValidationMessagesList): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMessagesVarargs(value: ValidationMessage*): Self = this.set("Messages", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessages(value: ValidationMessagesList): Self = this.set("Messages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
+    def setMessagesVarargs(value: ValidationMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
   }
 }

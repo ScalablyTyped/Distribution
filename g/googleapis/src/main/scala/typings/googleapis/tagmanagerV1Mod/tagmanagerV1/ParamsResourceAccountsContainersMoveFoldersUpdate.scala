@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,75 +61,63 @@ object ParamsResourceAccountsContainersMoveFoldersUpdate {
   }
   
   @scala.inline
-  implicit class ParamsResourceAccountsContainersMoveFoldersUpdateOps[Self <: ParamsResourceAccountsContainersMoveFoldersUpdate] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceAccountsContainersMoveFoldersUpdateMutableBuilder[Self <: ParamsResourceAccountsContainersMoveFoldersUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
     @scala.inline
-    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    def setRequestBody(value: SchemaFolder): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderId(value: String): Self = this.set("folderId", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteFolderId: Self = this.set("folderId", js.undefined)
+    def setTagId(value: js.Array[String]): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: SchemaFolder): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
     @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    def setTagIdVarargs(value: String*): Self = StObject.set(x, "tagId", js.Array(value :_*))
     
     @scala.inline
-    def setTagIdVarargs(value: String*): Self = this.set("tagId", js.Array(value :_*))
+    def setTriggerId(value: js.Array[String]): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagId(value: js.Array[String]): Self = this.set("tagId", value.asInstanceOf[js.Any])
+    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
     
     @scala.inline
-    def deleteTagId: Self = this.set("tagId", js.undefined)
+    def setTriggerIdVarargs(value: String*): Self = StObject.set(x, "triggerId", js.Array(value :_*))
     
     @scala.inline
-    def setTriggerIdVarargs(value: String*): Self = this.set("triggerId", js.Array(value :_*))
+    def setVariableId(value: js.Array[String]): Self = StObject.set(x, "variableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerId(value: js.Array[String]): Self = this.set("triggerId", value.asInstanceOf[js.Any])
+    def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
     
     @scala.inline
-    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
-    
-    @scala.inline
-    def setVariableIdVarargs(value: String*): Self = this.set("variableId", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariableId(value: js.Array[String]): Self = this.set("variableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableId: Self = this.set("variableId", js.undefined)
+    def setVariableIdVarargs(value: String*): Self = StObject.set(x, "variableId", js.Array(value :_*))
   }
 }

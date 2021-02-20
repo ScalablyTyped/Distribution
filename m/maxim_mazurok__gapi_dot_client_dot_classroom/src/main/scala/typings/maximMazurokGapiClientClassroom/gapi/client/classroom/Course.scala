@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Course extends js.Object {
+trait Course extends StObject {
   
   /** Absolute link to this course in the Classroom web UI. Read-only. */
   var alternateLink: js.UndefOr[String] = js.native
@@ -80,129 +81,117 @@ object Course {
   }
   
   @scala.inline
-  implicit class CourseOps[Self <: Course] (val x: Self) extends AnyVal {
+  implicit class CourseMutableBuilder[Self <: Course] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateLinkUndefined: Self = StObject.set(x, "alternateLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateLink(value: String): Self = this.set("alternateLink", value.asInstanceOf[js.Any])
+    def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
     
     @scala.inline
-    def deleteAlternateLink: Self = this.set("alternateLink", js.undefined)
+    def setCourseGroupEmail(value: String): Self = StObject.set(x, "courseGroupEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalendarId(value: String): Self = this.set("calendarId", value.asInstanceOf[js.Any])
+    def setCourseGroupEmailUndefined: Self = StObject.set(x, "courseGroupEmail", js.undefined)
     
     @scala.inline
-    def deleteCalendarId: Self = this.set("calendarId", js.undefined)
+    def setCourseMaterialSets(value: js.Array[CourseMaterialSet]): Self = StObject.set(x, "courseMaterialSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseGroupEmail(value: String): Self = this.set("courseGroupEmail", value.asInstanceOf[js.Any])
+    def setCourseMaterialSetsUndefined: Self = StObject.set(x, "courseMaterialSets", js.undefined)
     
     @scala.inline
-    def deleteCourseGroupEmail: Self = this.set("courseGroupEmail", js.undefined)
+    def setCourseMaterialSetsVarargs(value: CourseMaterialSet*): Self = StObject.set(x, "courseMaterialSets", js.Array(value :_*))
     
     @scala.inline
-    def setCourseMaterialSetsVarargs(value: CourseMaterialSet*): Self = this.set("courseMaterialSets", js.Array(value :_*))
+    def setCourseState(value: String): Self = StObject.set(x, "courseState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseMaterialSets(value: js.Array[CourseMaterialSet]): Self = this.set("courseMaterialSets", value.asInstanceOf[js.Any])
+    def setCourseStateUndefined: Self = StObject.set(x, "courseState", js.undefined)
     
     @scala.inline
-    def deleteCourseMaterialSets: Self = this.set("courseMaterialSets", js.undefined)
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCourseState(value: String): Self = this.set("courseState", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteCourseState: Self = this.set("courseState", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDescriptionHeading(value: String): Self = StObject.set(x, "descriptionHeading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setDescriptionHeadingUndefined: Self = StObject.set(x, "descriptionHeading", js.undefined)
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnrollmentCode(value: String): Self = StObject.set(x, "enrollmentCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionHeading(value: String): Self = this.set("descriptionHeading", value.asInstanceOf[js.Any])
+    def setEnrollmentCodeUndefined: Self = StObject.set(x, "enrollmentCode", js.undefined)
     
     @scala.inline
-    def deleteDescriptionHeading: Self = this.set("descriptionHeading", js.undefined)
+    def setGuardiansEnabled(value: Boolean): Self = StObject.set(x, "guardiansEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnrollmentCode(value: String): Self = this.set("enrollmentCode", value.asInstanceOf[js.Any])
+    def setGuardiansEnabledUndefined: Self = StObject.set(x, "guardiansEnabled", js.undefined)
     
     @scala.inline
-    def deleteEnrollmentCode: Self = this.set("enrollmentCode", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuardiansEnabled(value: Boolean): Self = this.set("guardiansEnabled", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGuardiansEnabled: Self = this.set("guardiansEnabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    def setRoomUndefined: Self = StObject.set(x, "room", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoom(value: String): Self = this.set("room", value.asInstanceOf[js.Any])
+    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
     @scala.inline
-    def deleteRoom: Self = this.set("room", js.undefined)
+    def setTeacherFolder(value: DriveFolder): Self = StObject.set(x, "teacherFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: String): Self = this.set("section", value.asInstanceOf[js.Any])
+    def setTeacherFolderUndefined: Self = StObject.set(x, "teacherFolder", js.undefined)
     
     @scala.inline
-    def deleteSection: Self = this.set("section", js.undefined)
+    def setTeacherGroupEmail(value: String): Self = StObject.set(x, "teacherGroupEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeacherFolder(value: DriveFolder): Self = this.set("teacherFolder", value.asInstanceOf[js.Any])
+    def setTeacherGroupEmailUndefined: Self = StObject.set(x, "teacherGroupEmail", js.undefined)
     
     @scala.inline
-    def deleteTeacherFolder: Self = this.set("teacherFolder", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTeacherGroupEmail(value: String): Self = this.set("teacherGroupEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTeacherGroupEmail: Self = this.set("teacherGroupEmail", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

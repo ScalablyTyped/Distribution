@@ -1,6 +1,7 @@
 package typings.ibmMobilefirst.WL
 
 import typings.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Artifact to allow chaining of Logger class as: WL.Logger.ctx({pkg: 'something'}).debug('Hello world');
   */
 @js.native
-trait LoggerObject extends js.Object {
+trait LoggerObject extends StObject {
   
   /**
     * Configures the logger globally.

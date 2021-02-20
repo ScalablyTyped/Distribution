@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains methods allowing you to perform or cancel an operation.
   */
 @js.native
-trait ASPxClientAppointmentOperation extends js.Object {
+trait ASPxClientAppointmentOperation extends StObject {
   
   /**
     * Passes parameters to the corresponding callback function to accomplish the operation.
@@ -29,24 +30,12 @@ object ASPxClientAppointmentOperation {
   }
   
   @scala.inline
-  implicit class ASPxClientAppointmentOperationOps[Self <: ASPxClientAppointmentOperation] (val x: Self) extends AnyVal {
+  implicit class ASPxClientAppointmentOperationMutableBuilder[Self <: ASPxClientAppointmentOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApply(value: () => Unit): Self = this.set("Apply", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("Cancel", js.Any.fromFunction0(value))
+    def setCancel(value: () => Unit): Self = StObject.set(x, "Cancel", js.Any.fromFunction0(value))
   }
 }

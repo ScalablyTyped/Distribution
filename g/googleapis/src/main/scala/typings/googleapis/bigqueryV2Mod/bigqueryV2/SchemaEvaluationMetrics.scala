@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * training.
   */
 @js.native
-trait SchemaEvaluationMetrics extends js.Object {
+trait SchemaEvaluationMetrics extends StObject {
   
   /**
     * Populated for binary classification models.
@@ -41,42 +42,30 @@ object SchemaEvaluationMetrics {
   }
   
   @scala.inline
-  implicit class SchemaEvaluationMetricsOps[Self <: SchemaEvaluationMetrics] (val x: Self) extends AnyVal {
+  implicit class SchemaEvaluationMetricsMutableBuilder[Self <: SchemaEvaluationMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryClassificationMetrics(value: SchemaBinaryClassificationMetrics): Self = StObject.set(x, "binaryClassificationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryClassificationMetricsUndefined: Self = StObject.set(x, "binaryClassificationMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusteringMetrics(value: SchemaClusteringMetrics): Self = StObject.set(x, "clusteringMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinaryClassificationMetrics(value: SchemaBinaryClassificationMetrics): Self = this.set("binaryClassificationMetrics", value.asInstanceOf[js.Any])
+    def setClusteringMetricsUndefined: Self = StObject.set(x, "clusteringMetrics", js.undefined)
     
     @scala.inline
-    def deleteBinaryClassificationMetrics: Self = this.set("binaryClassificationMetrics", js.undefined)
+    def setMultiClassClassificationMetrics(value: SchemaMultiClassClassificationMetrics): Self = StObject.set(x, "multiClassClassificationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusteringMetrics(value: SchemaClusteringMetrics): Self = this.set("clusteringMetrics", value.asInstanceOf[js.Any])
+    def setMultiClassClassificationMetricsUndefined: Self = StObject.set(x, "multiClassClassificationMetrics", js.undefined)
     
     @scala.inline
-    def deleteClusteringMetrics: Self = this.set("clusteringMetrics", js.undefined)
+    def setRegressionMetrics(value: SchemaRegressionMetrics): Self = StObject.set(x, "regressionMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiClassClassificationMetrics(value: SchemaMultiClassClassificationMetrics): Self = this.set("multiClassClassificationMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiClassClassificationMetrics: Self = this.set("multiClassClassificationMetrics", js.undefined)
-    
-    @scala.inline
-    def setRegressionMetrics(value: SchemaRegressionMetrics): Self = this.set("regressionMetrics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegressionMetrics: Self = this.set("regressionMetrics", js.undefined)
+    def setRegressionMetricsUndefined: Self = StObject.set(x, "regressionMetrics", js.undefined)
   }
 }

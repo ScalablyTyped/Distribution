@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeLensProvider[T /* <: CodeLens */] extends js.Object {
+trait CodeLensProvider[T /* <: CodeLens */] extends StObject {
   
   /**
     * An optional event to signal that the code lenses from this provider have changed.
@@ -43,35 +44,23 @@ object CodeLensProvider {
   }
   
   @scala.inline
-  implicit class CodeLensProviderOps[Self <: CodeLensProvider[_], T /* <: CodeLens */] (val x: Self with CodeLensProvider[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideCodeLenses(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = this.set("provideCodeLenses", js.Any.fromFunction2(value))
+  implicit class CodeLensProviderMutableBuilder[Self <: CodeLensProvider[_], T /* <: CodeLens */] (val x: Self with CodeLensProvider[T]) extends AnyVal {
     
     @scala.inline
     def setOnDidChangeCodeLenses(
       value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
-    ): Self = this.set("onDidChangeCodeLenses", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onDidChangeCodeLenses", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnDidChangeCodeLenses: Self = this.set("onDidChangeCodeLenses", js.undefined)
+    def setOnDidChangeCodeLensesUndefined: Self = StObject.set(x, "onDidChangeCodeLenses", js.undefined)
     
     @scala.inline
-    def setResolveCodeLens(value: (/* codeLens */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = this.set("resolveCodeLens", js.Any.fromFunction2(value))
+    def setProvideCodeLenses(value: (TextDocument, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideCodeLenses", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteResolveCodeLens: Self = this.set("resolveCodeLens", js.undefined)
+    def setResolveCodeLens(value: (/* codeLens */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "resolveCodeLens", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setResolveCodeLensUndefined: Self = StObject.set(x, "resolveCodeLens", js.undefined)
   }
 }

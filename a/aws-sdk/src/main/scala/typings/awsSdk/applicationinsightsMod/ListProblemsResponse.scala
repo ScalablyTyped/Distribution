@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListProblemsResponse extends js.Object {
+trait ListProblemsResponse extends StObject {
   
   /**
     * The token used to retrieve the next page of results. This value is null when there are no more results to return. 
@@ -26,33 +27,21 @@ object ListProblemsResponse {
   }
   
   @scala.inline
-  implicit class ListProblemsResponseOps[Self <: ListProblemsResponse] (val x: Self) extends AnyVal {
+  implicit class ListProblemsResponseMutableBuilder[Self <: ListProblemsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProblemList(value: ProblemList): Self = StObject.set(x, "ProblemList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setProblemListUndefined: Self = StObject.set(x, "ProblemList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setProblemListVarargs(value: Problem*): Self = this.set("ProblemList", js.Array(value :_*))
-    
-    @scala.inline
-    def setProblemList(value: ProblemList): Self = this.set("ProblemList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProblemList: Self = this.set("ProblemList", js.undefined)
+    def setProblemListVarargs(value: Problem*): Self = StObject.set(x, "ProblemList", js.Array(value :_*))
   }
 }

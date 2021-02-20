@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeferredMaintenanceWindow extends js.Object {
+trait DeferredMaintenanceWindow extends StObject {
   
   /**
     *  A timestamp for the end of the time period when we defer maintenance.
@@ -31,36 +32,24 @@ object DeferredMaintenanceWindow {
   }
   
   @scala.inline
-  implicit class DeferredMaintenanceWindowOps[Self <: DeferredMaintenanceWindow] (val x: Self) extends AnyVal {
+  implicit class DeferredMaintenanceWindowMutableBuilder[Self <: DeferredMaintenanceWindow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeferMaintenanceIdentifier(value: String): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferMaintenanceEndTime(value: TStamp): Self = this.set("DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
     @scala.inline
-    def deleteDeferMaintenanceEndTime: Self = this.set("DeferMaintenanceEndTime", js.undefined)
+    def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferMaintenanceIdentifier(value: String): Self = this.set("DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeferMaintenanceIdentifier: Self = this.set("DeferMaintenanceIdentifier", js.undefined)
-    
-    @scala.inline
-    def setDeferMaintenanceStartTime(value: TStamp): Self = this.set("DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeferMaintenanceStartTime: Self = this.set("DeferMaintenanceStartTime", js.undefined)
+    def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
   }
 }

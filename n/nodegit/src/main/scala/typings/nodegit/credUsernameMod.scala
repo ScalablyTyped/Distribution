@@ -1,16 +1,16 @@
 package typings.nodegit
 
 import typings.nodegit.credMod.Cred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/cred-username", JSImport.Namespace)
-@js.native
-object credUsernameMod extends js.Object {
+object credUsernameMod {
   
+  @JSImport("nodegit/cred-username", "CredUsername")
   @js.native
-  class CredUsername () extends js.Object {
+  class CredUsername () extends StObject {
     
     var parent: Cred = js.native
     

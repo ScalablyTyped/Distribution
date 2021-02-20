@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for roleAssignment resource in Directory API.
   */
 @js.native
-trait SchemaRoleAssignment extends js.Object {
+trait SchemaRoleAssignment extends StObject {
   
   /**
     * The unique ID of the user this role is assigned to.
@@ -57,60 +58,48 @@ object SchemaRoleAssignment {
   }
   
   @scala.inline
-  implicit class SchemaRoleAssignmentOps[Self <: SchemaRoleAssignment] (val x: Self) extends AnyVal {
+  implicit class SchemaRoleAssignmentMutableBuilder[Self <: SchemaRoleAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignedTo(value: String): Self = this.set("assignedTo", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteAssignedTo: Self = this.set("assignedTo", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRoleAssignmentId(value: String): Self = StObject.set(x, "roleAssignmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrgUnitId(value: String): Self = this.set("orgUnitId", value.asInstanceOf[js.Any])
+    def setRoleAssignmentIdUndefined: Self = StObject.set(x, "roleAssignmentId", js.undefined)
     
     @scala.inline
-    def deleteOrgUnitId: Self = this.set("orgUnitId", js.undefined)
+    def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleAssignmentId(value: String): Self = this.set("roleAssignmentId", value.asInstanceOf[js.Any])
+    def setRoleIdUndefined: Self = StObject.set(x, "roleId", js.undefined)
     
     @scala.inline
-    def deleteRoleAssignmentId: Self = this.set("roleAssignmentId", js.undefined)
+    def setScopeType(value: String): Self = StObject.set(x, "scopeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleId(value: String): Self = this.set("roleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleId: Self = this.set("roleId", js.undefined)
-    
-    @scala.inline
-    def setScopeType(value: String): Self = this.set("scopeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopeType: Self = this.set("scopeType", js.undefined)
+    def setScopeTypeUndefined: Self = StObject.set(x, "scopeType", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * reference to that list&#39;s ID.
   */
 @js.native
-trait SchemaList extends js.Object {
+trait SchemaList extends StObject {
   
   /**
     * The ID of the list.
@@ -34,30 +35,18 @@ object SchemaList {
   }
   
   @scala.inline
-  implicit class SchemaListOps[Self <: SchemaList] (val x: Self) extends AnyVal {
+  implicit class SchemaListMutableBuilder[Self <: SchemaList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNestingLevel(value: StringDictionary[SchemaNestingLevel]): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListId(value: String): Self = this.set("listId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListId: Self = this.set("listId", js.undefined)
-    
-    @scala.inline
-    def setNestingLevel(value: StringDictionary[SchemaNestingLevel]): Self = this.set("nestingLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNestingLevel: Self = this.set("nestingLevel", js.undefined)
+    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
   }
 }

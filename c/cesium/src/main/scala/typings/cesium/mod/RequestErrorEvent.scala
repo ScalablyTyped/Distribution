@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "RequestErrorEvent")
 @js.native
-class RequestErrorEvent () extends js.Object {
+class RequestErrorEvent () extends StObject {
   def this(statusCode: Double) = this()
   def this(statusCode: js.UndefOr[scala.Nothing], response: js.Any) = this()
   def this(statusCode: Double, response: js.Any) = this()

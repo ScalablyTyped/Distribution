@@ -1,5 +1,6 @@
 package typings.jsrsasign.mod.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASN1Util ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Util
-/* static members */
-@JSImport("jsrsasign", "KJUR.asn1.ASN1Util")
-@js.native
-object ASN1Util extends js.Object {
+object ASN1Util {
   
   /**
     * get PEM string from hexadecimal data and header string
@@ -29,6 +27,9 @@ object ASN1Util extends js.Object {
     * YWFh
     * -----END PRIVATE KEY-----
     */
+  /* static member */
+  @JSImport("jsrsasign", "KJUR.asn1.ASN1Util.getPEMStringFromHex")
+  @js.native
   def getPEMStringFromHex(dataHex: String, pemHeader: String): String = js.native
   
   /**
@@ -42,5 +43,8 @@ object ASN1Util extends js.Object {
     * @example
     * KJUR.asn1.ASN1Util.oidHexToInt('550406') → "2.5.4.6"
     */
+  /* static member */
+  @JSImport("jsrsasign", "KJUR.asn1.ASN1Util.oidHexToInt")
+  @js.native
   def oidHexToInt(hex: String): String = js.native
 }

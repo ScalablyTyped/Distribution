@@ -1,5 +1,6 @@
 package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about the claim rating.
   */
 @js.native
-trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends js.Object {
+trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends StObject {
   
   /**
     * For numeric ratings, the best value possible in the scale from worst to
@@ -50,48 +51,36 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
   }
   
   @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRatingOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRatingMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBestRating(value: Double): Self = StObject.set(x, "bestRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBestRatingUndefined: Self = StObject.set(x, "bestRating", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBestRating(value: Double): Self = this.set("bestRating", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     @scala.inline
-    def deleteBestRating: Self = this.set("bestRating", js.undefined)
+    def setRatingValue(value: Double): Self = StObject.set(x, "ratingValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    def setRatingValueUndefined: Self = StObject.set(x, "ratingValue", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    def setTextualRating(value: String): Self = StObject.set(x, "textualRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRatingValue(value: Double): Self = this.set("ratingValue", value.asInstanceOf[js.Any])
+    def setTextualRatingUndefined: Self = StObject.set(x, "textualRating", js.undefined)
     
     @scala.inline
-    def deleteRatingValue: Self = this.set("ratingValue", js.undefined)
+    def setWorstRating(value: Double): Self = StObject.set(x, "worstRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextualRating(value: String): Self = this.set("textualRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextualRating: Self = this.set("textualRating", js.undefined)
-    
-    @scala.inline
-    def setWorstRating(value: Double): Self = this.set("worstRating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorstRating: Self = this.set("worstRating", js.undefined)
+    def setWorstRatingUndefined: Self = StObject.set(x, "worstRating", js.undefined)
   }
 }

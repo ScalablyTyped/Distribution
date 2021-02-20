@@ -4,6 +4,7 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.external
 import typings.elasticElasticsearch.elasticElasticsearchStrings.external_gte
 import typings.elasticElasticsearch.elasticElasticsearchStrings.force
 import typings.elasticElasticsearch.elasticElasticsearchStrings.internal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,108 +51,96 @@ object Termvectors {
   }
   
   @scala.inline
-  implicit class TermvectorsOps[Self <: Termvectors[_], T] (val x: Self with Termvectors[T]) extends AnyVal {
+  implicit class TermvectorsMutableBuilder[Self <: Termvectors[_], T] (val x: Self with Termvectors[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField_statistics(value: Boolean): Self = StObject.set(x, "field_statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setField_statisticsUndefined: Self = StObject.set(x, "field_statistics", js.undefined)
     
     @scala.inline
-    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setFields(value: String | js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setField_statistics(value: Boolean): Self = this.set("field_statistics", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def deleteField_statistics: Self = this.set("field_statistics", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setFields(value: String | js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setOffsets(value: Boolean): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPayloads(value: Boolean): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsets(value: Boolean): Self = this.set("offsets", value.asInstanceOf[js.Any])
+    def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
     @scala.inline
-    def deleteOffsets: Self = this.set("offsets", js.undefined)
+    def setPositions(value: Boolean): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloads(value: Boolean): Self = this.set("payloads", value.asInstanceOf[js.Any])
+    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
     @scala.inline
-    def deletePayloads: Self = this.set("payloads", js.undefined)
+    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositions(value: Boolean): Self = this.set("positions", value.asInstanceOf[js.Any])
+    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
     @scala.inline
-    def deletePositions: Self = this.set("positions", js.undefined)
+    def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreference(value: String): Self = this.set("preference", value.asInstanceOf[js.Any])
+    def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
     
     @scala.inline
-    def deletePreference: Self = this.set("preference", js.undefined)
+    def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealtime(value: Boolean): Self = this.set("realtime", value.asInstanceOf[js.Any])
+    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
     
     @scala.inline
-    def deleteRealtime: Self = this.set("realtime", js.undefined)
+    def setTerm_statistics(value: Boolean): Self = StObject.set(x, "term_statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouting(value: String): Self = this.set("routing", value.asInstanceOf[js.Any])
+    def setTerm_statisticsUndefined: Self = StObject.set(x, "term_statistics", js.undefined)
     
     @scala.inline
-    def deleteRouting: Self = this.set("routing", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerm_statistics(value: Boolean): Self = this.set("term_statistics", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTerm_statistics: Self = this.set("term_statistics", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVersion_type(value: internal | external | external_gte | force): Self = StObject.set(x, "version_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersion_type(value: internal | external | external_gte | force): Self = this.set("version_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion_type: Self = this.set("version_type", js.undefined)
+    def setVersion_typeUndefined: Self = StObject.set(x, "version_type", js.undefined)
   }
 }

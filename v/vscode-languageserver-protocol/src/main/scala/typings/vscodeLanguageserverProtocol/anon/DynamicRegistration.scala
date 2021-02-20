@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynamicRegistration extends js.Object {
+trait DynamicRegistration extends StObject {
   
   /**
     * Whether implementation supports dynamic registration. If this is set to `true`
@@ -23,24 +24,12 @@ object DynamicRegistration {
   }
   
   @scala.inline
-  implicit class DynamicRegistrationOps[Self <: DynamicRegistration] (val x: Self) extends AnyVal {
+  implicit class DynamicRegistrationMutableBuilder[Self <: DynamicRegistration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = this.set("dynamicRegistration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicRegistration: Self = this.set("dynamicRegistration", js.undefined)
+    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

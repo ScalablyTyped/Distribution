@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlockedSetCookieWithReason extends js.Object {
+trait BlockedSetCookieWithReason extends StObject {
   
   /**
     * The reason(s) this cookie was blocked.
@@ -34,33 +35,21 @@ object BlockedSetCookieWithReason {
   }
   
   @scala.inline
-  implicit class BlockedSetCookieWithReasonOps[Self <: BlockedSetCookieWithReason] (val x: Self) extends AnyVal {
+  implicit class BlockedSetCookieWithReasonMutableBuilder[Self <: BlockedSetCookieWithReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockedReasons(value: js.Array[SetCookieBlockedReason]): Self = StObject.set(x, "blockedReasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedReasonsVarargs(value: SetCookieBlockedReason*): Self = StObject.set(x, "blockedReasons", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedReasonsVarargs(value: SetCookieBlockedReason*): Self = this.set("blockedReasons", js.Array(value :_*))
+    def setCookieLine(value: String): Self = StObject.set(x, "cookieLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedReasons(value: js.Array[SetCookieBlockedReason]): Self = this.set("blockedReasons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCookieLine(value: String): Self = this.set("cookieLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCookie(value: Cookie): Self = this.set("cookie", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCookie: Self = this.set("cookie", js.undefined)
+    def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
   }
 }

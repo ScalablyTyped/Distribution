@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,60 +138,48 @@ object XAnimate {
   }
   
   @scala.inline
-  implicit class XAnimateOps[Self <: XAnimate] (val x: Self) extends AnyVal {
+  implicit class XAnimateMutableBuilder[Self <: XAnimate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccumulate(value: Boolean): Self = StObject.set(x, "Accumulate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditive(value: Double): Self = StObject.set(x, "Additive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccumulate(value: Boolean): Self = this.set("Accumulate", value.asInstanceOf[js.Any])
+    def setBy(value: js.Any): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditive(value: Double): Self = this.set("Additive", value.asInstanceOf[js.Any])
+    def setCalcMode(value: Double): Self = StObject.set(x, "CalcMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBy(value: js.Any): Self = this.set("By", value.asInstanceOf[js.Any])
+    def setFrom(value: js.Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalcMode(value: Double): Self = this.set("CalcMode", value.asInstanceOf[js.Any])
+    def setKeyTimes(value: SafeArray[Double]): Self = StObject.set(x, "KeyTimes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
+    def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: js.Any): Self = this.set("From", value.asInstanceOf[js.Any])
+    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyTimes(value: SafeArray[Double]): Self = this.set("KeyTimes", value.asInstanceOf[js.Any])
+    def setTimeFilter(value: SafeArray[TimeFilterPair]): Self = StObject.set(x, "TimeFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubItem(value: Double): Self = this.set("SubItem", value.asInstanceOf[js.Any])
+    def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: js.Any): Self = this.set("Target", value.asInstanceOf[js.Any])
+    def setValueType(value: Double): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeFilter(value: SafeArray[TimeFilterPair]): Self = this.set("TimeFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: js.Any): Self = this.set("To", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueType(value: Double): Self = this.set("ValueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: SafeArray[_]): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValues(value: SafeArray[_]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

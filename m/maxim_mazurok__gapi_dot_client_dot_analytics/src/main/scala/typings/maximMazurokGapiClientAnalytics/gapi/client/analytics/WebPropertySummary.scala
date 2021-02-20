@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPropertySummary extends js.Object {
+trait WebPropertySummary extends StObject {
   
   /** Web property ID of the form UA-XXXXX-YY. */
   var id: js.UndefOr[String] = js.native
@@ -40,69 +41,57 @@ object WebPropertySummary {
   }
   
   @scala.inline
-  implicit class WebPropertySummaryOps[Self <: WebPropertySummary] (val x: Self) extends AnyVal {
+  implicit class WebPropertySummaryMutableBuilder[Self <: WebPropertySummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setProfiles(value: js.Array[ProfileSummary]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value :_*))
     
     @scala.inline
-    def setProfilesVarargs(value: ProfileSummary*): Self = this.set("profiles", js.Array(value :_*))
+    def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfiles(value: js.Array[ProfileSummary]): Self = this.set("profiles", value.asInstanceOf[js.Any])
+    def setStarredUndefined: Self = StObject.set(x, "starred", js.undefined)
     
     @scala.inline
-    def deleteProfiles: Self = this.set("profiles", js.undefined)
+    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarred(value: Boolean): Self = this.set("starred", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarred: Self = this.set("starred", js.undefined)
-    
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

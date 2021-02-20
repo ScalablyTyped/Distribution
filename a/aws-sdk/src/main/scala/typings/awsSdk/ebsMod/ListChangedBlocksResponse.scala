@@ -1,11 +1,12 @@
 package typings.awsSdk.ebsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListChangedBlocksResponse extends js.Object {
+trait ListChangedBlocksResponse extends StObject {
   
   /**
     * The size of the block.
@@ -41,51 +42,39 @@ object ListChangedBlocksResponse {
   }
   
   @scala.inline
-  implicit class ListChangedBlocksResponseOps[Self <: ListChangedBlocksResponse] (val x: Self) extends AnyVal {
+  implicit class ListChangedBlocksResponseMutableBuilder[Self <: ListChangedBlocksResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockSize(value: BlockSize): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockSizeUndefined: Self = StObject.set(x, "BlockSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangedBlocks(value: ChangedBlocks): Self = StObject.set(x, "ChangedBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockSize(value: BlockSize): Self = this.set("BlockSize", value.asInstanceOf[js.Any])
+    def setChangedBlocksUndefined: Self = StObject.set(x, "ChangedBlocks", js.undefined)
     
     @scala.inline
-    def deleteBlockSize: Self = this.set("BlockSize", js.undefined)
+    def setChangedBlocksVarargs(value: ChangedBlock*): Self = StObject.set(x, "ChangedBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setChangedBlocksVarargs(value: ChangedBlock*): Self = this.set("ChangedBlocks", js.Array(value :_*))
+    def setExpiryTime(value: TimeStamp): Self = StObject.set(x, "ExpiryTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedBlocks(value: ChangedBlocks): Self = this.set("ChangedBlocks", value.asInstanceOf[js.Any])
+    def setExpiryTimeUndefined: Self = StObject.set(x, "ExpiryTime", js.undefined)
     
     @scala.inline
-    def deleteChangedBlocks: Self = this.set("ChangedBlocks", js.undefined)
+    def setNextToken(value: PageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiryTime(value: TimeStamp): Self = this.set("ExpiryTime", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteExpiryTime: Self = this.set("ExpiryTime", js.undefined)
+    def setVolumeSize(value: VolumeSize): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PageToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVolumeSize(value: VolumeSize): Self = this.set("VolumeSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeSize: Self = this.set("VolumeSize", js.undefined)
+    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
   }
 }

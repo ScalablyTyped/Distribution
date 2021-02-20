@@ -1,13 +1,14 @@
 package typings.reduxPersist
 
 import typings.reduxPersist.typesMod.PersistConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/es/purgeStoredState", JSImport.Namespace)
-@js.native
-object purgeStoredStateMod extends js.Object {
+object purgeStoredStateMod {
   
+  @JSImport("redux-persist/es/purgeStoredState", JSImport.Default)
+  @js.native
   def default[S](config: PersistConfig[S, _, _, _]): js.Any = js.native
 }

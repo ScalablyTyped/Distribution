@@ -7,13 +7,18 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventTypeMod.EventType
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/renderer/Map", JSImport.Namespace)
-@js.native
-object mapMod extends js.Object {
+object mapMod {
+  
+  @JSImport("ol/renderer/Map", JSImport.Default)
+  @js.native
+  abstract class default protected () extends MapRenderer {
+    def this(map: typings.ol.pluggableMapMod.default) = this()
+  }
   
   @js.native
   trait MapRenderer
@@ -79,10 +84,5 @@ object mapMod extends js.Object {
     def renderFrame(frameState: FrameState): Unit = js.native
     
     /* protected */ def scheduleExpireIconCache(frameState: FrameState): Unit = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends MapRenderer {
-    def this(map: typings.ol.pluggableMapMod.default) = this()
   }
 }

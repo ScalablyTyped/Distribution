@@ -4,12 +4,13 @@ import typings.hlsParser.mod.types.DateRange
 import typings.hlsParser.mod.types.Key
 import typings.hlsParser.mod.types.MediaInitializationSection
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Byterange extends js.Object {
+trait Byterange extends StObject {
   
   var byterange: js.UndefOr[typings.hlsParser.mod.Byterange] = js.native
   
@@ -42,72 +43,60 @@ object Byterange {
   }
   
   @scala.inline
-  implicit class ByterangeOps[Self <: Byterange] (val x: Self) extends AnyVal {
+  implicit class ByterangeMutableBuilder[Self <: Byterange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByterange(value: typings.hlsParser.mod.Byterange): Self = StObject.set(x, "byterange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByterangeUndefined: Self = StObject.set(x, "byterange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscontinuitySequence(value: Double): Self = this.set("discontinuitySequence", value.asInstanceOf[js.Any])
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setDiscontinuity(value: Boolean): Self = StObject.set(x, "discontinuity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaSequenceNumber(value: Double): Self = this.set("mediaSequenceNumber", value.asInstanceOf[js.Any])
+    def setDiscontinuitySequence(value: Double): Self = StObject.set(x, "discontinuitySequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setDiscontinuityUndefined: Self = StObject.set(x, "discontinuity", js.undefined)
     
     @scala.inline
-    def setByterange(value: typings.hlsParser.mod.Byterange): Self = this.set("byterange", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteByterange: Self = this.set("byterange", js.undefined)
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: DateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setMap(value: MediaInitializationSection): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscontinuity(value: Boolean): Self = this.set("discontinuity", value.asInstanceOf[js.Any])
+    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
     @scala.inline
-    def deleteDiscontinuity: Self = this.set("discontinuity", js.undefined)
+    def setMediaSequenceNumber(value: Double): Self = StObject.set(x, "mediaSequenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setProgramDateTime(value: Date): Self = StObject.set(x, "programDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setProgramDateTimeUndefined: Self = StObject.set(x, "programDateTime", js.undefined)
     
     @scala.inline
-    def setMap(value: MediaInitializationSection): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMap: Self = this.set("map", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setProgramDateTime(value: Date): Self = this.set("programDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgramDateTime: Self = this.set("programDateTime", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

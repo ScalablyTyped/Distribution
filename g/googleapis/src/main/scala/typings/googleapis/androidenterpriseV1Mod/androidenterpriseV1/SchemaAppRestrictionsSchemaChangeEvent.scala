@@ -1,5 +1,6 @@
 package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for an app, use Products.getAppRestrictionsSchema on the EMM API.
   */
 @js.native
-trait SchemaAppRestrictionsSchemaChangeEvent extends js.Object {
+trait SchemaAppRestrictionsSchemaChangeEvent extends StObject {
   
   /**
     * The id of the product (e.g. &quot;app:com.google.android.gm&quot;) for
@@ -28,24 +29,12 @@ object SchemaAppRestrictionsSchemaChangeEvent {
   }
   
   @scala.inline
-  implicit class SchemaAppRestrictionsSchemaChangeEventOps[Self <: SchemaAppRestrictionsSchemaChangeEvent] (val x: Self) extends AnyVal {
+  implicit class SchemaAppRestrictionsSchemaChangeEventMutableBuilder[Self <: SchemaAppRestrictionsSchemaChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

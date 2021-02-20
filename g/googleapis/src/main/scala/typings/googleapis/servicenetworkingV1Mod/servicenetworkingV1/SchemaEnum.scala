@@ -1,5 +1,6 @@
 package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Enum type definition.
   */
 @js.native
-trait SchemaEnum extends js.Object {
+trait SchemaEnum extends StObject {
   
   /**
     * Enum value definitions.
@@ -44,54 +45,42 @@ object SchemaEnum {
   }
   
   @scala.inline
-  implicit class SchemaEnumOps[Self <: SchemaEnum] (val x: Self) extends AnyVal {
+  implicit class SchemaEnumMutableBuilder[Self <: SchemaEnum] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnumvalue(value: js.Array[SchemaEnumValue]): Self = StObject.set(x, "enumvalue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnumvalueUndefined: Self = StObject.set(x, "enumvalue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnumvalueVarargs(value: SchemaEnumValue*): Self = StObject.set(x, "enumvalue", js.Array(value :_*))
     
     @scala.inline
-    def setEnumvalueVarargs(value: SchemaEnumValue*): Self = this.set("enumvalue", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnumvalue(value: js.Array[SchemaEnumValue]): Self = this.set("enumvalue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteEnumvalue: Self = this.set("enumvalue", js.undefined)
+    def setOptions(value: js.Array[SchemaOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: SchemaOption*): Self = this.set("options", js.Array(value :_*))
+    def setSourceContext(value: SchemaSourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[SchemaOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceContext(value: SchemaSourceContext): Self = this.set("sourceContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceContext: Self = this.set("sourceContext", js.undefined)
-    
-    @scala.inline
-    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyntax: Self = this.set("syntax", js.undefined)
+    def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

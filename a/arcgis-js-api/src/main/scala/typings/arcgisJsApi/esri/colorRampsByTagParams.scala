@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object colorRampsByTagParams {
   }
   
   @scala.inline
-  implicit class colorRampsByTagParamsOps[Self <: colorRampsByTagParams] (val x: Self) extends AnyVal {
+  implicit class colorRampsByTagParamsMutableBuilder[Self <: colorRampsByTagParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedTagsVarargs(value: String*): Self = this.set("excludedTags", js.Array(value :_*))
+    def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedTags(value: js.Array[String]): Self = this.set("excludedTags", value.asInstanceOf[js.Any])
+    def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
     @scala.inline
-    def deleteExcludedTags: Self = this.set("excludedTags", js.undefined)
-    
-    @scala.inline
-    def setIncludedTagsVarargs(value: String*): Self = this.set("includedTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludedTags(value: js.Array[String]): Self = this.set("includedTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludedTags: Self = this.set("includedTags", js.undefined)
+    def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.minecraftScriptingTypesServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the entity's inventory (size, restrictions, etc.). Currently this does not allow changing the entity's inventory contents.
   */
 @js.native
-trait IInventoryComponent extends js.Object {
+trait IInventoryComponent extends StObject {
   
   /**
     * Number of slots that this entity can gain per extra strength
@@ -63,36 +64,24 @@ object IInventoryComponent {
   }
   
   @scala.inline
-  implicit class IInventoryComponentOps[Self <: IInventoryComponent] (val x: Self) extends AnyVal {
+  implicit class IInventoryComponentMutableBuilder[Self <: IInventoryComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditional_slots_per_strength(value: Double): Self = StObject.set(x, "additional_slots_per_strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCan_be_siphoned_from(value: Boolean): Self = StObject.set(x, "can_be_siphoned_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer_type(value: String): Self = StObject.set(x, "container_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditional_slots_per_strength(value: Double): Self = this.set("additional_slots_per_strength", value.asInstanceOf[js.Any])
+    def setInventory_size(value: Double): Self = StObject.set(x, "inventory_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCan_be_siphoned_from(value: Boolean): Self = this.set("can_be_siphoned_from", value.asInstanceOf[js.Any])
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer_type(value: String): Self = this.set("container_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInventory_size(value: Double): Self = this.set("inventory_size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestrict_to_owner(value: Boolean): Self = this.set("restrict_to_owner", value.asInstanceOf[js.Any])
+    def setRestrict_to_owner(value: Boolean): Self = StObject.set(x, "restrict_to_owner", value.asInstanceOf[js.Any])
   }
 }

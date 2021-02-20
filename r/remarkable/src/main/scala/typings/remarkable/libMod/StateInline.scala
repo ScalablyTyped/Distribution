@@ -1,11 +1,12 @@
 package typings.remarkable.libMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateInline extends js.Object {
+trait StateInline extends StObject {
   
   var env: Env = js.native
   
@@ -73,66 +74,54 @@ object StateInline {
   }
   
   @scala.inline
-  implicit class StateInlineOps[Self <: StateInline] (val x: Self) extends AnyVal {
+  implicit class StateInlineMutableBuilder[Self <: StateInline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnv(value: Env): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInLabel(value: Boolean): Self = StObject.set(x, "isInLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelUnmatchedScopes(value: Double): Self = StObject.set(x, "labelUnmatchedScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: Env): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInLabel(value: Boolean): Self = this.set("isInLabel", value.asInstanceOf[js.Any])
+    def setLinkContent(value: String): Self = StObject.set(x, "linkContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelUnmatchedScopes(value: Double): Self = this.set("labelUnmatchedScopes", value.asInstanceOf[js.Any])
+    def setLinkLevel(value: Double): Self = StObject.set(x, "linkLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setParser(value: ParserInline): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkContent(value: String): Self = this.set("linkContent", value.asInstanceOf[js.Any])
+    def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkLevel(value: Double): Self = this.set("linkLevel", value.asInstanceOf[js.Any])
+    def setPendingLevel(value: Double): Self = StObject.set(x, "pendingLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParser(value: ParserInline): Self = this.set("parser", value.asInstanceOf[js.Any])
+    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: String): Self = this.set("pending", value.asInstanceOf[js.Any])
+    def setPosMax(value: Double): Self = StObject.set(x, "posMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingLevel(value: Double): Self = this.set("pendingLevel", value.asInstanceOf[js.Any])
+    def setPush(value: ContentToken => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPos(value: Double): Self = this.set("pos", value.asInstanceOf[js.Any])
+    def setPushPending(value: () => Unit): Self = StObject.set(x, "pushPending", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPosMax(value: Double): Self = this.set("posMax", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPush(value: ContentToken => Unit): Self = this.set("push", js.Any.fromFunction1(value))
+    def setTokens(value: js.Array[ContentToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPushPending(value: () => Unit): Self = this.set("pushPending", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokensVarargs(value: ContentToken*): Self = this.set("tokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setTokens(value: js.Array[ContentToken]): Self = this.set("tokens", value.asInstanceOf[js.Any])
+    def setTokensVarargs(value: ContentToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

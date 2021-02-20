@@ -1,12 +1,13 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'mb' | 'marginBottom'> */
 @js.native
-trait MarginBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait MarginBottomProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   var marginBottom: js.UndefOr[
     ResponsiveValue[
@@ -31,22 +32,7 @@ object MarginBottomProps {
   }
   
   @scala.inline
-  implicit class MarginBottomPropsOps[Self <: MarginBottomProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with MarginBottomProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMarginBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("marginBottom", js.Array(value :_*))
+  implicit class MarginBottomPropsMutableBuilder[Self <: MarginBottomProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with MarginBottomProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setMarginBottom(
@@ -54,16 +40,16 @@ object MarginBottomProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
     
     @scala.inline
-    def setMarginBottomNull: Self = this.set("marginBottom", null)
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def setMbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = this.set("mb", js.Array(value :_*))
+    def setMarginBottomVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
     
     @scala.inline
     def setMb(
@@ -71,12 +57,15 @@ object MarginBottomProps {
           ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
           ThemeType
         ]
-    ): Self = this.set("mb", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMb: Self = this.set("mb", js.undefined)
+    def setMbNull: Self = StObject.set(x, "mb", null)
     
     @scala.inline
-    def setMbNull: Self = this.set("mb", null)
+    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
+    
+    @scala.inline
+    def setMbVarargs(value: ((ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, js.Any]) | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for `SetIamPolicy` method.
   */
 @js.native
-trait SchemaSetIamPolicyRequest extends js.Object {
+trait SchemaSetIamPolicyRequest extends StObject {
   
   /**
     * REQUIRED: The complete policy to be applied to the `resource`. The size
@@ -27,24 +28,12 @@ object SchemaSetIamPolicyRequest {
   }
   
   @scala.inline
-  implicit class SchemaSetIamPolicyRequestOps[Self <: SchemaSetIamPolicyRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSetIamPolicyRequestMutableBuilder[Self <: SchemaSetIamPolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicy(value: SchemaPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicy(value: SchemaPolicy): Self = this.set("policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceHealthSummary extends js.Object {
+trait InstanceHealthSummary extends StObject {
   
   /**
     * Describes the overall instance health. Valid values are below.
@@ -31,36 +32,24 @@ object InstanceHealthSummary {
   }
   
   @scala.inline
-  implicit class InstanceHealthSummaryOps[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
+  implicit class InstanceHealthSummaryMutableBuilder[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceHealth(value: InstanceHealthState): Self = StObject.set(x, "instanceHealth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceHealthReason(value: InstanceHealthReason): Self = StObject.set(x, "instanceHealthReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceHealthReasonUndefined: Self = StObject.set(x, "instanceHealthReason", js.undefined)
     
     @scala.inline
-    def setInstanceHealth(value: InstanceHealthState): Self = this.set("instanceHealth", value.asInstanceOf[js.Any])
+    def setInstanceHealthUndefined: Self = StObject.set(x, "instanceHealth", js.undefined)
     
     @scala.inline
-    def deleteInstanceHealth: Self = this.set("instanceHealth", js.undefined)
+    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceHealthReason(value: InstanceHealthReason): Self = this.set("instanceHealthReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceHealthReason: Self = this.set("instanceHealthReason", js.undefined)
-    
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    def setInstanceNameUndefined: Self = StObject.set(x, "instanceName", js.undefined)
   }
 }

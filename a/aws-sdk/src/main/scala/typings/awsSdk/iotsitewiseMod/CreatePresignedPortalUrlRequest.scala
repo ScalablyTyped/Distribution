@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePresignedPortalUrlRequest extends js.Object {
+trait CreatePresignedPortalUrlRequest extends StObject {
   
   /**
     * The ID of the portal to access.
@@ -26,27 +27,15 @@ object CreatePresignedPortalUrlRequest {
   }
   
   @scala.inline
-  implicit class CreatePresignedPortalUrlRequestOps[Self <: CreatePresignedPortalUrlRequest] (val x: Self) extends AnyVal {
+  implicit class CreatePresignedPortalUrlRequestMutableBuilder[Self <: CreatePresignedPortalUrlRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionDurationSeconds(value: SessionDurationSeconds): Self = StObject.set(x, "sessionDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPortalId(value: ID): Self = this.set("portalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionDurationSeconds(value: SessionDurationSeconds): Self = this.set("sessionDurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessionDurationSeconds: Self = this.set("sessionDurationSeconds", js.undefined)
+    def setSessionDurationSecondsUndefined: Self = StObject.set(x, "sessionDurationSeconds", js.undefined)
   }
 }

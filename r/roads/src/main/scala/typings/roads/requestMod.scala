@@ -1,16 +1,28 @@
 package typings.roads
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("roads/types/client/request", JSImport.Namespace)
-@js.native
-object requestMod extends js.Object {
+object requestMod {
+  
+  @JSImport("roads/types/client/request", JSImport.Default)
+  @js.native
+  class default protected () extends Request {
+    /**
+      * @todo: port should just be part of the host
+      *
+      * @param {boolean} secure - Whether or not this request should use HTTPS
+      * @param {string} host - The hostname of all requests made by this function
+      * @param {number} port - The post of all requests made by this function
+      */
+    def this(secure: Boolean, host: String, port: Double) = this()
+  }
   
   @js.native
-  trait Request extends js.Object {
+  trait Request extends StObject {
     
     var _host: String = js.native
     
@@ -31,17 +43,5 @@ object requestMod extends js.Object {
     def request(method: String, path: String, body: js.UndefOr[scala.Nothing], headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, path: String, body: String): js.Promise[typings.roads.responseMod.default] = js.native
     def request(method: String, path: String, body: String, headers: StringDictionary[js.Any]): js.Promise[typings.roads.responseMod.default] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Request {
-    /**
-      * @todo: port should just be part of the host
-      *
-      * @param {boolean} secure - Whether or not this request should use HTTPS
-      * @param {string} host - The hostname of all requests made by this function
-      * @param {number} port - The post of all requests made by this function
-      */
-    def this(secure: Boolean, host: String, port: Double) = this()
   }
 }

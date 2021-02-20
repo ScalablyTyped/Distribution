@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TabAlign extends js.Object
+sealed trait TabAlign extends StObject
 /**
   * List alignment types for tab stops.
   */
 @JSGlobal("TabAlign")
 @js.native
-object TabAlign extends js.Object {
+object TabAlign extends StObject {
   
   /**
     * Text is centered on the tab stop.

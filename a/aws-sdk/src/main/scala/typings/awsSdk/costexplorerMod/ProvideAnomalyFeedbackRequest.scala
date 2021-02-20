@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvideAnomalyFeedbackRequest extends js.Object {
+trait ProvideAnomalyFeedbackRequest extends StObject {
   
   /**
     *  A cost anomaly ID. 
@@ -26,24 +27,12 @@ object ProvideAnomalyFeedbackRequest {
   }
   
   @scala.inline
-  implicit class ProvideAnomalyFeedbackRequestOps[Self <: ProvideAnomalyFeedbackRequest] (val x: Self) extends AnyVal {
+  implicit class ProvideAnomalyFeedbackRequestMutableBuilder[Self <: ProvideAnomalyFeedbackRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnomalyId(value: GenericString): Self = this.set("AnomalyId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeedback(value: AnomalyFeedbackType): Self = this.set("Feedback", value.asInstanceOf[js.Any])
+    def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
   }
 }

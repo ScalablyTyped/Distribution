@@ -1,13 +1,14 @@
 package typings.nodeMailjet.mod.Email
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // resources
 @js.native
-trait PostResource extends js.Object {
+trait PostResource extends StObject {
   
   def action(action: String): PostResource = js.native
   

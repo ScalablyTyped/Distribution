@@ -9,12 +9,13 @@ import typings.stripe.stripeStrings.issuer_declined
 import typings.stripe.stripeStrings.manual_review
 import typings.stripe.stripeStrings.not_sent_to_network
 import typings.stripe.stripeStrings.reversed_after_approval
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOutcome extends js.Object {
+trait IOutcome extends StObject {
   
   /**
     * The value reversed_after_approval indicates the payment was blocked by Stripe after
@@ -78,63 +79,51 @@ object IOutcome {
   }
   
   @scala.inline
-  implicit class IOutcomeOps[Self <: IOutcome] (val x: Self) extends AnyVal {
+  implicit class IOutcomeMutableBuilder[Self <: IOutcome] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetwork_status(value: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval): Self = StObject.set(x, "network_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReasonNull: Self = StObject.set(x, "reason", null)
     
     @scala.inline
-    def setNetwork_status(value: approved_by_network | declined_by_network | not_sent_to_network | reversed_after_approval): Self = this.set("network_status", value.asInstanceOf[js.Any])
+    def setRisk_level(value: String): Self = StObject.set(x, "risk_level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeller_message(value: String): Self = this.set("seller_message", value.asInstanceOf[js.Any])
+    def setRisk_levelNull: Self = StObject.set(x, "risk_level", null)
     
     @scala.inline
-    def setType(value: authorized | manual_review | issuer_declined | blocked | invalid): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setRisk_levelUndefined: Self = StObject.set(x, "risk_level", js.undefined)
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setRisk_score(value: Double): Self = StObject.set(x, "risk_score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReasonNull: Self = this.set("reason", null)
+    def setRisk_scoreNull: Self = StObject.set(x, "risk_score", null)
     
     @scala.inline
-    def setRisk_level(value: String): Self = this.set("risk_level", value.asInstanceOf[js.Any])
+    def setRisk_scoreUndefined: Self = StObject.set(x, "risk_score", js.undefined)
     
     @scala.inline
-    def deleteRisk_level: Self = this.set("risk_level", js.undefined)
+    def setRule(value: String | js.Array[String]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRisk_levelNull: Self = this.set("risk_level", null)
+    def setRuleNull: Self = StObject.set(x, "rule", null)
     
     @scala.inline
-    def setRisk_score(value: Double): Self = this.set("risk_score", value.asInstanceOf[js.Any])
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
     @scala.inline
-    def deleteRisk_score: Self = this.set("risk_score", js.undefined)
+    def setRuleVarargs(value: String*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
     @scala.inline
-    def setRisk_scoreNull: Self = this.set("risk_score", null)
+    def setSeller_message(value: String): Self = StObject.set(x, "seller_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleVarargs(value: String*): Self = this.set("rule", js.Array(value :_*))
-    
-    @scala.inline
-    def setRule(value: String | js.Array[String]): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
-    
-    @scala.inline
-    def setRuleNull: Self = this.set("rule", null)
+    def setType(value: authorized | manual_review | issuer_declined | blocked | invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

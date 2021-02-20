@@ -1,11 +1,12 @@
 package typings.kurentoClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   var access_token: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuplicates_timeout(value: Double): Self = StObject.set(x, "duplicates_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setDuplicates_timeoutUndefined: Self = StObject.set(x, "duplicates_timeout", js.undefined)
     
     @scala.inline
-    def deleteAccess_token: Self = this.set("access_token", js.undefined)
+    def setEnableTransactions(value: Boolean): Self = StObject.set(x, "enableTransactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicates_timeout(value: Double): Self = this.set("duplicates_timeout", value.asInstanceOf[js.Any])
+    def setEnableTransactionsUndefined: Self = StObject.set(x, "enableTransactions", js.undefined)
     
     @scala.inline
-    def deleteDuplicates_timeout: Self = this.set("duplicates_timeout", js.undefined)
+    def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTransactions(value: Boolean): Self = this.set("enableTransactions", value.asInstanceOf[js.Any])
+    def setFailAfterUndefined: Self = StObject.set(x, "failAfter", js.undefined)
     
     @scala.inline
-    def deleteEnableTransactions: Self = this.set("enableTransactions", js.undefined)
+    def setRequest_timeout(value: Double): Self = StObject.set(x, "request_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailAfter(value: Double): Self = this.set("failAfter", value.asInstanceOf[js.Any])
+    def setRequest_timeoutUndefined: Self = StObject.set(x, "request_timeout", js.undefined)
     
     @scala.inline
-    def deleteFailAfter: Self = this.set("failAfter", js.undefined)
+    def setResponse_timeout(value: Double): Self = StObject.set(x, "response_timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_timeout(value: Double): Self = this.set("request_timeout", value.asInstanceOf[js.Any])
+    def setResponse_timeoutUndefined: Self = StObject.set(x, "response_timeout", js.undefined)
     
     @scala.inline
-    def deleteRequest_timeout: Self = this.set("request_timeout", js.undefined)
+    def setSocket(value: js.Any): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse_timeout(value: Double): Self = this.set("response_timeout", value.asInstanceOf[js.Any])
+    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
     
     @scala.inline
-    def deleteResponse_timeout: Self = this.set("response_timeout", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocket(value: js.Any): Self = this.set("socket", value.asInstanceOf[js.Any])
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deleteSocket: Self = this.set("socket", js.undefined)
+    def setUseImplicitTransactions(value: Boolean): Self = StObject.set(x, "useImplicitTransactions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
-    
-    @scala.inline
-    def setUseImplicitTransactions(value: Boolean): Self = this.set("useImplicitTransactions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseImplicitTransactions: Self = this.set("useImplicitTransactions", js.undefined)
+    def setUseImplicitTransactionsUndefined: Self = StObject.set(x, "useImplicitTransactions", js.undefined)
   }
 }

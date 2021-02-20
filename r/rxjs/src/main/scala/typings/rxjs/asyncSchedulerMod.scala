@@ -4,14 +4,14 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.rxjs.actionMod.Action
 import typings.rxjs.asyncActionMod.AsyncAction
 import typings.rxjs.schedulerMod.Scheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/scheduler/AsyncScheduler", JSImport.Namespace)
-@js.native
-object asyncSchedulerMod extends js.Object {
+object asyncSchedulerMod {
   
+  @JSImport("rxjs/internal/scheduler/AsyncScheduler", "AsyncScheduler")
   @js.native
   class AsyncScheduler protected () extends Scheduler {
     def this(SchedulerAction: Instantiable2[
@@ -58,9 +58,16 @@ object asyncSchedulerMod extends js.Object {
     var scheduled: js.Any = js.native
   }
   /* static members */
-  @js.native
-  object AsyncScheduler extends js.Object {
+  object AsyncScheduler {
     
-    var delegate: js.UndefOr[Scheduler] = js.native
+    @JSImport("rxjs/internal/scheduler/AsyncScheduler", "AsyncScheduler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rxjs/internal/scheduler/AsyncScheduler", "AsyncScheduler.delegate")
+    @js.native
+    def delegate: js.UndefOr[Scheduler] = js.native
+    @scala.inline
+    def delegate_=(x: js.UndefOr[Scheduler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delegate")(x.asInstanceOf[js.Any])
   }
 }

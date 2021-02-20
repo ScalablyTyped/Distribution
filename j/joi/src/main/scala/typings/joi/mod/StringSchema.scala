@@ -7,6 +7,7 @@ import typings.joi.joiStrings.NFKD
 import typings.joi.joiStrings.lower
 import typings.joi.joiStrings.upper
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

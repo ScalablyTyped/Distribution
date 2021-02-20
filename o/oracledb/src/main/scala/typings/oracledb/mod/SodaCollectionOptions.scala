@@ -1,11 +1,12 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SodaCollectionOptions extends js.Object {
+trait SodaCollectionOptions extends StObject {
   
   /**
     * Metadata specifying various details about the collection, such as its database storage, whether it should
@@ -38,30 +39,18 @@ object SodaCollectionOptions {
   }
   
   @scala.inline
-  implicit class SodaCollectionOptionsOps[Self <: SodaCollectionOptions] (val x: Self) extends AnyVal {
+  implicit class SodaCollectionOptionsMutableBuilder[Self <: SodaCollectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetaData(value: SodaMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetaData(value: SodaMetadata): Self = this.set("metaData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetaData: Self = this.set("metaData", js.undefined)
-    
-    @scala.inline
-    def setMode(value: Double): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

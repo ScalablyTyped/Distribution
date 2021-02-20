@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientRedis.gapi.client.redis
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Instance extends js.Object {
+trait Instance extends StObject {
   
   /**
     * Optional. Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two zones. If provided, it must be a different zone from
@@ -120,161 +121,149 @@ object Instance {
   }
   
   @scala.inline
-  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternativeLocationId(value: String): Self = StObject.set(x, "alternativeLocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativeLocationIdUndefined: Self = StObject.set(x, "alternativeLocationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthEnabled(value: Boolean): Self = StObject.set(x, "authEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeLocationId(value: String): Self = this.set("alternativeLocationId", value.asInstanceOf[js.Any])
+    def setAuthEnabledUndefined: Self = StObject.set(x, "authEnabled", js.undefined)
     
     @scala.inline
-    def deleteAlternativeLocationId: Self = this.set("alternativeLocationId", js.undefined)
+    def setAuthorizedNetwork(value: String): Self = StObject.set(x, "authorizedNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthEnabled(value: Boolean): Self = this.set("authEnabled", value.asInstanceOf[js.Any])
+    def setAuthorizedNetworkUndefined: Self = StObject.set(x, "authorizedNetwork", js.undefined)
     
     @scala.inline
-    def deleteAuthEnabled: Self = this.set("authEnabled", js.undefined)
+    def setConnectMode(value: String): Self = StObject.set(x, "connectMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizedNetwork(value: String): Self = this.set("authorizedNetwork", value.asInstanceOf[js.Any])
+    def setConnectModeUndefined: Self = StObject.set(x, "connectMode", js.undefined)
     
     @scala.inline
-    def deleteAuthorizedNetwork: Self = this.set("authorizedNetwork", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectMode(value: String): Self = this.set("connectMode", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteConnectMode: Self = this.set("connectMode", js.undefined)
+    def setCurrentLocationId(value: String): Self = StObject.set(x, "currentLocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setCurrentLocationIdUndefined: Self = StObject.set(x, "currentLocationId", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLocationId(value: String): Self = this.set("currentLocationId", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCurrentLocationId: Self = this.set("currentLocationId", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
-    
-    @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
     @scala.inline
-    def setMemorySizeGb(value: Double): Self = this.set("memorySizeGb", value.asInstanceOf[js.Any])
+    def setMemorySizeGb(value: Double): Self = StObject.set(x, "memorySizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMemorySizeGb: Self = this.set("memorySizeGb", js.undefined)
+    def setMemorySizeGbUndefined: Self = StObject.set(x, "memorySizeGb", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPersistenceIamIdentity(value: String): Self = this.set("persistenceIamIdentity", value.asInstanceOf[js.Any])
+    def setPersistenceIamIdentity(value: String): Self = StObject.set(x, "persistenceIamIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistenceIamIdentity: Self = this.set("persistenceIamIdentity", js.undefined)
+    def setPersistenceIamIdentityUndefined: Self = StObject.set(x, "persistenceIamIdentity", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
     def setRedisConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Instance with TopLevel[js.Any]
-    ): Self = this.set("redisConfigs", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "redisConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedisConfigs: Self = this.set("redisConfigs", js.undefined)
+    def setRedisConfigsUndefined: Self = StObject.set(x, "redisConfigs", js.undefined)
     
     @scala.inline
-    def setRedisVersion(value: String): Self = this.set("redisVersion", value.asInstanceOf[js.Any])
+    def setRedisVersion(value: String): Self = StObject.set(x, "redisVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRedisVersion: Self = this.set("redisVersion", js.undefined)
+    def setRedisVersionUndefined: Self = StObject.set(x, "redisVersion", js.undefined)
     
     @scala.inline
-    def setReservedIpRange(value: String): Self = this.set("reservedIpRange", value.asInstanceOf[js.Any])
+    def setReservedIpRange(value: String): Self = StObject.set(x, "reservedIpRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReservedIpRange: Self = this.set("reservedIpRange", js.undefined)
+    def setReservedIpRangeUndefined: Self = StObject.set(x, "reservedIpRange", js.undefined)
     
     @scala.inline
-    def setServerCaCertsVarargs(value: TlsCertificate*): Self = this.set("serverCaCerts", js.Array(value :_*))
+    def setServerCaCerts(value: js.Array[TlsCertificate]): Self = StObject.set(x, "serverCaCerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCaCerts(value: js.Array[TlsCertificate]): Self = this.set("serverCaCerts", value.asInstanceOf[js.Any])
+    def setServerCaCertsUndefined: Self = StObject.set(x, "serverCaCerts", js.undefined)
     
     @scala.inline
-    def deleteServerCaCerts: Self = this.set("serverCaCerts", js.undefined)
+    def setServerCaCertsVarargs(value: TlsCertificate*): Self = StObject.set(x, "serverCaCerts", js.Array(value :_*))
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     @scala.inline
-    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
+    def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTier: Self = this.set("tier", js.undefined)
+    def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     
     @scala.inline
-    def setTransitEncryptionMode(value: String): Self = this.set("transitEncryptionMode", value.asInstanceOf[js.Any])
+    def setTransitEncryptionMode(value: String): Self = StObject.set(x, "transitEncryptionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTransitEncryptionMode: Self = this.set("transitEncryptionMode", js.undefined)
+    def setTransitEncryptionModeUndefined: Self = StObject.set(x, "transitEncryptionMode", js.undefined)
   }
 }

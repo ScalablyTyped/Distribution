@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +56,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property slopeDepthBias - Same as {@link pc.Material#depthBias}, but also depends on the slope of the triangle relative to the camera.
   */
 @js.native
-trait Material extends js.Object {
+trait Material extends StObject {
   
   /**
     * The alpha test reference value to control which fragments are written to the currently

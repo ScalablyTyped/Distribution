@@ -1,12 +1,13 @@
 package typings.qrcodeGenerator
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QRCodeFactory extends js.Object {
+trait QRCodeFactory extends StObject {
   
   def apply(typeNumber: TypeNumber, errorCorrectionLevel: ErrorCorrectionLevel): QRCode = js.native
   

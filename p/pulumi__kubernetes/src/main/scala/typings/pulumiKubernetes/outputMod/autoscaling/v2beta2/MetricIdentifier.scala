@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.autoscaling.v2beta2
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * MetricIdentifier defines the name and optionally selector for a metric
   */
 @js.native
-trait MetricIdentifier extends js.Object {
+trait MetricIdentifier extends StObject {
   
   /**
     * name is the name of the given metric
@@ -30,24 +31,12 @@ object MetricIdentifier {
   }
   
   @scala.inline
-  implicit class MetricIdentifierOps[Self <: MetricIdentifier] (val x: Self) extends AnyVal {
+  implicit class MetricIdentifierMutableBuilder[Self <: MetricIdentifier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

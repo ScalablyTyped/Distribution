@@ -1,5 +1,6 @@
 package typings.bodyParserXml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("body-parser-xml", JSImport.Namespace)
 @js.native
-object bodyParserXmlRequire extends js.Object
+object bodyParserXmlRequire extends StObject

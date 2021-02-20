@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteEvaluationOutput extends js.Object {
+trait DeleteEvaluationOutput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the Evaluation. This value should be identical to the value of the EvaluationId in the request.
@@ -21,24 +22,12 @@ object DeleteEvaluationOutput {
   }
   
   @scala.inline
-  implicit class DeleteEvaluationOutputOps[Self <: DeleteEvaluationOutput] (val x: Self) extends AnyVal {
+  implicit class DeleteEvaluationOutputMutableBuilder[Self <: DeleteEvaluationOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = this.set("EvaluationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvaluationId: Self = this.set("EvaluationId", js.undefined)
+    def setEvaluationIdUndefined: Self = StObject.set(x, "EvaluationId", js.undefined)
   }
 }

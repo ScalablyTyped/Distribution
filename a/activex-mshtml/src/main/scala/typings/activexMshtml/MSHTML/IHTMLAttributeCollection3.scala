@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLAttributeCollection3 extends js.Object {
+trait IHTMLAttributeCollection3 extends StObject {
   
   @JSName("MSHTML.IHTMLAttributeCollection3_typekey")
   var MSHTMLDotIHTMLAttributeCollection3_typekey: IHTMLAttributeCollection3 = js.native
@@ -37,36 +38,24 @@ object IHTMLAttributeCollection3 {
   }
   
   @scala.inline
-  implicit class IHTMLAttributeCollection3Ops[Self <: IHTMLAttributeCollection3] (val x: Self) extends AnyVal {
+  implicit class IHTMLAttributeCollection3MutableBuilder[Self <: IHTMLAttributeCollection3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: Double => IHTMLDOMAttribute): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLAttributeCollection3_typekey(value: IHTMLAttributeCollection3): Self = this.set("MSHTML.IHTMLAttributeCollection3_typekey", value.asInstanceOf[js.Any])
+    def setMSHTMLDotIHTMLAttributeCollection3_typekey(value: IHTMLAttributeCollection3): Self = StObject.set(x, "MSHTML.IHTMLAttributeCollection3_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetNamedItem(value: String => IHTMLDOMAttribute): Self = this.set("getNamedItem", js.Any.fromFunction1(value))
+    def setRemoveNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "removeNamedItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItem(value: Double => IHTMLDOMAttribute): Self = this.set("item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveNamedItem(value: String => IHTMLDOMAttribute): Self = this.set("removeNamedItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetNamedItem(value: IHTMLDOMAttribute => IHTMLDOMAttribute): Self = this.set("setNamedItem", js.Any.fromFunction1(value))
+    def setSetNamedItem(value: IHTMLDOMAttribute => IHTMLDOMAttribute): Self = StObject.set(x, "setNamedItem", js.Any.fromFunction1(value))
   }
 }

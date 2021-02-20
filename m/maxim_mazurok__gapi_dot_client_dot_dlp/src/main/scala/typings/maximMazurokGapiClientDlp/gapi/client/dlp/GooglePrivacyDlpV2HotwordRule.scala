@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2HotwordRule extends js.Object {
+trait GooglePrivacyDlpV2HotwordRule extends StObject {
   
   /** Regular expression pattern defining what qualifies as a hotword. */
   var hotwordRegex: js.UndefOr[GooglePrivacyDlpV2Regex] = js.native
@@ -29,36 +30,24 @@ object GooglePrivacyDlpV2HotwordRule {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2HotwordRuleOps[Self <: GooglePrivacyDlpV2HotwordRule] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2HotwordRuleMutableBuilder[Self <: GooglePrivacyDlpV2HotwordRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHotwordRegex(value: GooglePrivacyDlpV2Regex): Self = StObject.set(x, "hotwordRegex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHotwordRegexUndefined: Self = StObject.set(x, "hotwordRegex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLikelihoodAdjustment(value: GooglePrivacyDlpV2LikelihoodAdjustment): Self = StObject.set(x, "likelihoodAdjustment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotwordRegex(value: GooglePrivacyDlpV2Regex): Self = this.set("hotwordRegex", value.asInstanceOf[js.Any])
+    def setLikelihoodAdjustmentUndefined: Self = StObject.set(x, "likelihoodAdjustment", js.undefined)
     
     @scala.inline
-    def deleteHotwordRegex: Self = this.set("hotwordRegex", js.undefined)
+    def setProximity(value: GooglePrivacyDlpV2Proximity): Self = StObject.set(x, "proximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLikelihoodAdjustment(value: GooglePrivacyDlpV2LikelihoodAdjustment): Self = this.set("likelihoodAdjustment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLikelihoodAdjustment: Self = this.set("likelihoodAdjustment", js.undefined)
-    
-    @scala.inline
-    def setProximity(value: GooglePrivacyDlpV2Proximity): Self = this.set("proximity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProximity: Self = this.set("proximity", js.undefined)
+    def setProximityUndefined: Self = StObject.set(x, "proximity", js.undefined)
   }
 }

@@ -2,16 +2,16 @@ package typings.agGrid
 
 import typings.agGrid.columnMod.Column
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/clientSide/changedPath", JSImport.Namespace)
-@js.native
-object changedPathMod extends js.Object {
+object changedPathMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/clientSide/changedPath", "ChangedPath")
   @js.native
-  class ChangedPath protected () extends js.Object {
+  class ChangedPath protected () extends StObject {
     def this(keepingColumns: Boolean) = this()
     
     var active: js.Any = js.native

@@ -1,21 +1,24 @@
 package typings.classValidator
 
 import typings.classValidator.validationArgumentsMod.ValidationArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("class-validator/types/validation/ValidationUtils", JSImport.Namespace)
-@js.native
-object validationUtilsMod extends js.Object {
+object validationUtilsMod {
   
+  @JSImport("class-validator/types/validation/ValidationUtils", "ValidationUtils")
   @js.native
-  class ValidationUtils () extends js.Object
+  class ValidationUtils () extends StObject
   /* static members */
-  @js.native
-  object ValidationUtils extends js.Object {
+  object ValidationUtils {
     
+    @JSImport("class-validator/types/validation/ValidationUtils", "ValidationUtils.replaceMessageSpecialTokens")
+    @js.native
     def replaceMessageSpecialTokens(message: String, validationArguments: ValidationArguments): String = js.native
+    @JSImport("class-validator/types/validation/ValidationUtils", "ValidationUtils.replaceMessageSpecialTokens")
+    @js.native
     def replaceMessageSpecialTokens(
       message: js.Function1[/* args */ ValidationArguments, String],
       validationArguments: ValidationArguments

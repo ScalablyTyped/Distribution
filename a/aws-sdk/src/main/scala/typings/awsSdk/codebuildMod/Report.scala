@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Report extends js.Object {
+trait Report extends StObject {
   
   /**
     *  The ARN of the report run. 
@@ -76,90 +77,78 @@ object Report {
   }
   
   @scala.inline
-  implicit class ReportOps[Self <: Report] (val x: Self) extends AnyVal {
+  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeCoverageSummary(value: CodeCoverageReportSummary): Self = StObject.set(x, "codeCoverageSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setCodeCoverageSummaryUndefined: Self = StObject.set(x, "codeCoverageSummary", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeCoverageSummary(value: CodeCoverageReportSummary): Self = this.set("codeCoverageSummary", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteCodeCoverageSummary: Self = this.set("codeCoverageSummary", js.undefined)
+    def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     
     @scala.inline
-    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpired(value: Timestamp): Self = this.set("expired", value.asInstanceOf[js.Any])
+    def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
     
     @scala.inline
-    def deleteExpired: Self = this.set("expired", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportConfig(value: ReportExportConfig): Self = this.set("exportConfig", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteExportConfig: Self = this.set("exportConfig", js.undefined)
+    def setReportGroupArn(value: NonEmptyString): Self = StObject.set(x, "reportGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReportGroupArnUndefined: Self = StObject.set(x, "reportGroupArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setStatus(value: ReportStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportGroupArn(value: NonEmptyString): Self = this.set("reportGroupArn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteReportGroupArn: Self = this.set("reportGroupArn", js.undefined)
+    def setTestSummary(value: TestReportSummary): Self = StObject.set(x, "testSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ReportStatusType): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTestSummaryUndefined: Self = StObject.set(x, "testSummary", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTruncated(value: WrapperBoolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestSummary(value: TestReportSummary): Self = this.set("testSummary", value.asInstanceOf[js.Any])
+    def setTruncatedUndefined: Self = StObject.set(x, "truncated", js.undefined)
     
     @scala.inline
-    def deleteTestSummary: Self = this.set("testSummary", js.undefined)
+    def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTruncated(value: WrapperBoolean): Self = this.set("truncated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruncated: Self = this.set("truncated", js.undefined)
-    
-    @scala.inline
-    def setType(value: ReportType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

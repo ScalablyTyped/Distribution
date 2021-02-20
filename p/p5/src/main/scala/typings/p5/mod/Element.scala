@@ -2,12 +2,13 @@ package typings.p5.mod
 
 import typings.p5.anon.X
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Element extends js.Object {
+trait Element extends StObject {
   
   /**
     *   Adds specified class to the element.

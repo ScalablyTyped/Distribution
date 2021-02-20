@@ -6,12 +6,13 @@ import typings.minappEnv.minappEnvStrings.`4g`
 import typings.minappEnv.minappEnvStrings.none
 import typings.minappEnv.minappEnvStrings.unknown
 import typings.minappEnv.minappEnvStrings.wifi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetNetworkTypeSuccessCallbackResult extends js.Object {
+trait GetNetworkTypeSuccessCallbackResult extends StObject {
   
   /** 网络类型
     *
@@ -33,21 +34,9 @@ object GetNetworkTypeSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class GetNetworkTypeSuccessCallbackResultOps[Self <: GetNetworkTypeSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class GetNetworkTypeSuccessCallbackResultMutableBuilder[Self <: GetNetworkTypeSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = this.set("networkType", value.asInstanceOf[js.Any])
+    def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }
 }

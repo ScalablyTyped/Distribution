@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitConflictUpdateResult extends js.Object {
+trait GitConflictUpdateResult extends StObject {
   
   /**
     * Conflict ID that was provided by input
@@ -41,30 +42,18 @@ object GitConflictUpdateResult {
   }
   
   @scala.inline
-  implicit class GitConflictUpdateResultOps[Self <: GitConflictUpdateResult] (val x: Self) extends AnyVal {
+  implicit class GitConflictUpdateResultMutableBuilder[Self <: GitConflictUpdateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConflictId(value: Double): Self = StObject.set(x, "conflictId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateStatus(value: GitConflictUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictId(value: Double): Self = this.set("conflictId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateStatus(value: GitConflictUpdateStatus): Self = this.set("updateStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedConflict(value: GitConflict): Self = this.set("updatedConflict", value.asInstanceOf[js.Any])
+    def setUpdatedConflict(value: GitConflict): Self = StObject.set(x, "updatedConflict", value.asInstanceOf[js.Any])
   }
 }

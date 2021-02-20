@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeletePendingAggregationRequestRequest extends js.Object {
+trait DeletePendingAggregationRequestRequest extends StObject {
   
   /**
     * The 12-digit account ID of the account requesting to aggregate data.
@@ -26,24 +27,12 @@ object DeletePendingAggregationRequestRequest {
   }
   
   @scala.inline
-  implicit class DeletePendingAggregationRequestRequestOps[Self <: DeletePendingAggregationRequestRequest] (val x: Self) extends AnyVal {
+  implicit class DeletePendingAggregationRequestRequestMutableBuilder[Self <: DeletePendingAggregationRequestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRequesterAccountId(value: AccountId): Self = StObject.set(x, "RequesterAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRequesterAccountId(value: AccountId): Self = this.set("RequesterAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequesterAwsRegion(value: AwsRegion): Self = this.set("RequesterAwsRegion", value.asInstanceOf[js.Any])
+    def setRequesterAwsRegion(value: AwsRegion): Self = StObject.set(x, "RequesterAwsRegion", value.asInstanceOf[js.Any])
   }
 }

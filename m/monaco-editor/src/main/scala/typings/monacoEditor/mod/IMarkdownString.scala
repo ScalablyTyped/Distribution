@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMarkdownString extends js.Object {
+trait IMarkdownString extends StObject {
   
   val isTrusted: js.UndefOr[Boolean] = js.native
   
@@ -25,39 +26,27 @@ object IMarkdownString {
   }
   
   @scala.inline
-  implicit class IMarkdownStringOps[Self <: IMarkdownString] (val x: Self) extends AnyVal {
+  implicit class IMarkdownStringMutableBuilder[Self <: IMarkdownString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportThemeIcons(value: Boolean): Self = StObject.set(x, "supportThemeIcons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setSupportThemeIconsUndefined: Self = StObject.set(x, "supportThemeIcons", js.undefined)
     
     @scala.inline
-    def setIsTrusted(value: Boolean): Self = this.set("isTrusted", value.asInstanceOf[js.Any])
+    def setUris(value: StringDictionary[UriComponents]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTrusted: Self = this.set("isTrusted", js.undefined)
+    def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
     @scala.inline
-    def setSupportThemeIcons(value: Boolean): Self = this.set("supportThemeIcons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportThemeIcons: Self = this.set("supportThemeIcons", js.undefined)
-    
-    @scala.inline
-    def setUris(value: StringDictionary[UriComponents]): Self = this.set("uris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUris: Self = this.set("uris", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

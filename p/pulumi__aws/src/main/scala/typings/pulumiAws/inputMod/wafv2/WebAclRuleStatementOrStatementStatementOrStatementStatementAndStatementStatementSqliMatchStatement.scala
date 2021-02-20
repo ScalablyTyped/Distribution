@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatement extends js.Object {
+trait WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatement extends StObject {
   
   /**
     * The part of a web request that you want AWS WAF to inspect. See Field to Match below for details.
@@ -45,26 +46,17 @@ object WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementSt
   }
   
   @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatementOps[Self <: WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatement] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatementMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFieldToMatch(
+      value: Input[
+          WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch
+        ]
+    ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextTransformationsVarargs(
-      value: (Input[
-          WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatementTextTransformation
-        ])*
-    ): Self = this.set("textTransformations", js.Array(value :_*))
+    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
     @scala.inline
     def setTextTransformations(
@@ -75,16 +67,13 @@ object WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementSt
             ]
           ]
         ]
-    ): Self = this.set("textTransformations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldToMatch(
-      value: Input[
-          WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatch
-        ]
-    ): Self = this.set("fieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldToMatch: Self = this.set("fieldToMatch", js.undefined)
+    def setTextTransformationsVarargs(
+      value: (Input[
+          WebAclRuleStatementOrStatementStatementOrStatementStatementAndStatementStatementSqliMatchStatementTextTransformation
+        ])*
+    ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The width and height of a map region.
   */
 @js.native
-trait CoordinateSpan extends js.Object {
+trait CoordinateSpan extends StObject {
   
   /**
     * Returns a copy of the coordinate span.
@@ -37,39 +38,28 @@ object CoordinateSpan {
   @scala.inline
   def apply(
     copy: () => CoordinateSpan,
-    equals: CoordinateSpan => Boolean,
+    equals_ : CoordinateSpan => Boolean,
     latitudeDelta: Double,
     longitudeDelta: Double
   ): CoordinateSpan = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), equals = js.Any.fromFunction1(equals), latitudeDelta = latitudeDelta.asInstanceOf[js.Any], longitudeDelta = longitudeDelta.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), latitudeDelta = latitudeDelta.asInstanceOf[js.Any], longitudeDelta = longitudeDelta.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[CoordinateSpan]
   }
   
   @scala.inline
-  implicit class CoordinateSpanOps[Self <: CoordinateSpan] (val x: Self) extends AnyVal {
+  implicit class CoordinateSpanMutableBuilder[Self <: CoordinateSpan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => CoordinateSpan): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_(value: CoordinateSpan => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatitudeDelta(value: Double): Self = StObject.set(x, "latitudeDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopy(value: () => CoordinateSpan): Self = this.set("copy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEquals(value: CoordinateSpan => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLatitudeDelta(value: Double): Self = this.set("latitudeDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLongitudeDelta(value: Double): Self = this.set("longitudeDelta", value.asInstanceOf[js.Any])
+    def setLongitudeDelta(value: Double): Self = StObject.set(x, "longitudeDelta", value.asInstanceOf[js.Any])
   }
 }

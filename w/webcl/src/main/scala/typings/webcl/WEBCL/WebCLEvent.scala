@@ -1,12 +1,13 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.10
 @js.native
-trait WebCLEvent extends js.Object {
+trait WebCLEvent extends StObject {
   
   def getInfo(name: EventInfo): js.Any = js.native
   
@@ -30,30 +31,18 @@ object WebCLEvent {
   }
   
   @scala.inline
-  implicit class WebCLEventOps[Self <: WebCLEvent] (val x: Self) extends AnyVal {
+  implicit class WebCLEventMutableBuilder[Self <: WebCLEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetInfo(value: EventInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetProfilingInfo(value: ProfilingInfo => Double): Self = StObject.set(x, "getProfilingInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInfo(value: EventInfo => js.Any): Self = this.set("getInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetProfilingInfo(value: ProfilingInfo => Double): Self = this.set("getProfilingInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRelease(value: () => Unit): Self = this.set("release", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCallback(value: (CommandExecutionStatus, WebCLCallback) => Unit): Self = this.set("setCallback", js.Any.fromFunction2(value))
+    def setSetCallback(value: (CommandExecutionStatus, WebCLCallback) => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction2(value))
   }
 }

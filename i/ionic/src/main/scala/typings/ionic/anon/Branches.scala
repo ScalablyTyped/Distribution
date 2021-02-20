@@ -1,12 +1,13 @@
 package typings.ionic.anon
 
 import typings.ionic.definitionsMod.AssociationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Branches extends js.Object {
+trait Branches extends StObject {
   
   var branches: js.Array[String] = js.native
   
@@ -24,30 +25,18 @@ object Branches {
   }
   
   @scala.inline
-  implicit class BranchesOps[Self <: Branches] (val x: Self) extends AnyVal {
+  implicit class BranchesMutableBuilder[Self <: Branches] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepoId(value: Double): Self = StObject.set(x, "repoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranchesVarargs(value: String*): Self = this.set("branches", js.Array(value :_*))
-    
-    @scala.inline
-    def setBranches(value: js.Array[String]): Self = this.set("branches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepoId(value: Double): Self = this.set("repoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: AssociationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: AssociationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

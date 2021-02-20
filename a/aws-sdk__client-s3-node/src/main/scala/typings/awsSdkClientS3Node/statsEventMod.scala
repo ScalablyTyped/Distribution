@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_StatsEvent", JSImport.Namespace)
-@js.native
-object statsEventMod extends js.Object {
+object statsEventMod {
   
-  @JSName("_StatsEvent")
+  @JSImport("@aws-sdk/client-s3-node/model/_StatsEvent", "_StatsEvent")
+  @js.native
   val StatsEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

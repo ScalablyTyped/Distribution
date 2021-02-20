@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataSetExportingStatus extends js.Object {
+trait IDataSetExportingStatus extends StObject {
   
   val CurrentServerTime: ITimestamp = js.native
   
@@ -22,27 +23,15 @@ object IDataSetExportingStatus {
   }
   
   @scala.inline
-  implicit class IDataSetExportingStatusOps[Self <: IDataSetExportingStatus] (val x: Self) extends AnyVal {
+  implicit class IDataSetExportingStatusMutableBuilder[Self <: IDataSetExportingStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentServerTime(value: ITimestamp): Self = StObject.set(x, "CurrentServerTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsExporting(value: Boolean): Self = StObject.set(x, "IsExporting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCurrentServerTime(value: ITimestamp): Self = this.set("CurrentServerTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsExporting(value: Boolean): Self = this.set("IsExporting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLatestActivity(value: ITimestamp): Self = this.set("LatestActivity", value.asInstanceOf[js.Any])
+    def setLatestActivity(value: ITimestamp): Self = StObject.set(x, "LatestActivity", value.asInstanceOf[js.Any])
   }
 }

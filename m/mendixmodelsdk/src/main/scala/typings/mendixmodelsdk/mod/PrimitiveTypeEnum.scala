@@ -1,12 +1,13 @@
 package typings.mendixmodelsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "PrimitiveTypeEnum")
 @js.native
-object PrimitiveTypeEnum extends js.Object {
+object PrimitiveTypeEnum extends StObject {
   
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[typings.mendixmodelsdk.primitiveTypeEnumMod.PrimitiveTypeEnum with scala.Double] = js.native

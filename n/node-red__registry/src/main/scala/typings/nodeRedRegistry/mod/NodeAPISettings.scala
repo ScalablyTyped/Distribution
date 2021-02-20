@@ -1,11 +1,12 @@
 package typings.nodeRedRegistry.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeAPISettings extends js.Object {
+trait NodeAPISettings extends StObject {
   
   def available(): Boolean = js.native
   
@@ -47,48 +48,36 @@ object NodeAPISettings {
   }
   
   @scala.inline
-  implicit class NodeAPISettingsOps[Self <: NodeAPISettings] (val x: Self) extends AnyVal {
+  implicit class NodeAPISettingsMutableBuilder[Self <: NodeAPISettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: () => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableNodeSettings(value: js.Array[String] => Unit): Self = StObject.set(x, "disableNodeSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvailable(value: () => Boolean): Self = this.set("available", js.Any.fromFunction0(value))
+    def setEnableNodeSettings(value: js.Array[String] => Unit): Self = StObject.set(x, "enableNodeSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = this.set("delete", js.Any.fromFunction1(value))
+    def setExportNodeSettings(value: js.Object => js.Object): Self = StObject.set(x, "exportNodeSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisableNodeSettings(value: js.Array[String] => Unit): Self = this.set("disableNodeSettings", js.Any.fromFunction1(value))
+    def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnableNodeSettings(value: js.Array[String] => Unit): Self = this.set("enableNodeSettings", js.Any.fromFunction1(value))
+    def setGetUserSettings(value: String => Unit): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExportNodeSettings(value: js.Object => js.Object): Self = this.set("exportNodeSettings", js.Any.fromFunction1(value))
+    def setRegisterNodeSettings(value: (String, js.Object) => Unit): Self = StObject.set(x, "registerNodeSettings", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGet(value: String => js.Any): Self = this.set("get", js.Any.fromFunction1(value))
+    def setSet(value: (String, js.Any) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetUserSettings(value: String => Unit): Self = this.set("getUserSettings", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterNodeSettings(value: (String, js.Object) => Unit): Self = this.set("registerNodeSettings", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSet(value: (String, js.Any) => js.Promise[Unit]): Self = this.set("set", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetUserSettings(value: (String, js.Object) => js.Promise[Unit]): Self = this.set("setUserSettings", js.Any.fromFunction2(value))
+    def setSetUserSettings(value: (String, js.Object) => js.Promise[Unit]): Self = StObject.set(x, "setUserSettings", js.Any.fromFunction2(value))
   }
 }

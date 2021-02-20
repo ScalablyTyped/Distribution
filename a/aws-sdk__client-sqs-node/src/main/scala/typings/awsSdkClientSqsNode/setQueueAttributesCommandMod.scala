@@ -7,14 +7,14 @@ import typings.awsSdkClientSqsNode.typesSetQueueAttributesInputMod.SetQueueAttri
 import typings.awsSdkClientSqsNode.typesSetQueueAttributesOutputMod.SetQueueAttributesOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/commands/SetQueueAttributesCommand", JSImport.Namespace)
-@js.native
-object setQueueAttributesCommandMod extends js.Object {
+object setQueueAttributesCommandMod {
   
+  @JSImport("@aws-sdk/client-sqs-node/commands/SetQueueAttributesCommand", "SetQueueAttributesCommand")
   @js.native
   class SetQueueAttributesCommand protected () extends Command[
           InputTypesUnion, 

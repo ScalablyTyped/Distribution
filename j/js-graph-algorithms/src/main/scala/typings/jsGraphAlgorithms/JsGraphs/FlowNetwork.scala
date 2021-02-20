@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlowNetwork extends js.Object {
+trait FlowNetwork extends StObject {
   
   var V: Double = js.native
   
@@ -38,39 +39,27 @@ object FlowNetwork {
   }
   
   @scala.inline
-  implicit class FlowNetworkOps[Self <: FlowNetwork] (val x: Self) extends AnyVal {
+  implicit class FlowNetworkMutableBuilder[Self <: FlowNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEdge(value: FlowEdge => Unit): Self = StObject.set(x, "addEdge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdj(value: Double => js.Array[FlowEdge]): Self = StObject.set(x, "adj", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdjList(value: js.Any): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: Double): Self = this.set("V", value.asInstanceOf[js.Any])
+    def setEdge(value: (Double, Double) => FlowEdge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddEdge(value: FlowEdge => Unit): Self = this.set("addEdge", js.Any.fromFunction1(value))
+    def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdj(value: Double => js.Array[FlowEdge]): Self = this.set("adj", js.Any.fromFunction1(value))
+    def setNodeInfo(value: js.Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdjList(value: js.Any): Self = this.set("adjList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEdge(value: (Double, Double) => FlowEdge | Null): Self = this.set("edge", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNode(value: Double => Node): Self = this.set("node", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNodeInfo(value: js.Any): Self = this.set("nodeInfo", value.asInstanceOf[js.Any])
+    def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }
 }

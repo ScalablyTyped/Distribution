@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInterface extends js.Object {
+trait NetworkInterface extends StObject {
   
   /**
     * The attachment ID for the network interface.
@@ -31,36 +32,24 @@ object NetworkInterface {
   }
   
   @scala.inline
-  implicit class NetworkInterfaceOps[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentId(value: String): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
+    def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
     
     @scala.inline
-    def deleteAttachmentId: Self = this.set("attachmentId", js.undefined)
+    def setPrivateIpv4Address(value: String): Self = StObject.set(x, "privateIpv4Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6Address(value: String): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIpv6Address: Self = this.set("ipv6Address", js.undefined)
-    
-    @scala.inline
-    def setPrivateIpv4Address(value: String): Self = this.set("privateIpv4Address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIpv4Address: Self = this.set("privateIpv4Address", js.undefined)
+    def setPrivateIpv4AddressUndefined: Self = StObject.set(x, "privateIpv4Address", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetPackageVersionAssetRequest extends js.Object {
+trait GetPackageVersionAssetRequest extends StObject {
   
   /**
     *  The name of the package that contains the requested asset. 
@@ -70,54 +71,42 @@ object GetPackageVersionAssetRequest {
   }
   
   @scala.inline
-  implicit class GetPackageVersionAssetRequestOps[Self <: GetPackageVersionAssetRequest] (val x: Self) extends AnyVal {
+  implicit class GetPackageVersionAssetRequestMutableBuilder[Self <: GetPackageVersionAssetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: AssetName): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
     @scala.inline
-    def setAsset(value: AssetName): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setNamespace(value: PackageNamespace): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = this.set("packageVersion", value.asInstanceOf[js.Any])
+    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "packageVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepository(value: RepositoryName): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setPackageVersionRevision(value: PackageVersionRevision): Self = StObject.set(x, "packageVersionRevision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    def setPackageVersionRevisionUndefined: Self = StObject.set(x, "packageVersionRevision", js.undefined)
     
     @scala.inline
-    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    def setRepository(value: RepositoryName): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
-    
-    @scala.inline
-    def setPackageVersionRevision(value: PackageVersionRevision): Self = this.set("packageVersionRevision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageVersionRevision: Self = this.set("packageVersionRevision", js.undefined)
+    def set_package(value: PackageName): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

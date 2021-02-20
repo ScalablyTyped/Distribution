@@ -2,12 +2,13 @@ package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoRGBType
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sequence extends js.Object {
+trait Sequence extends StObject {
   
   /**
     * @param PowerPoint.MsoAnimateByLevel [Level=0]

@@ -1,5 +1,6 @@
 package typings.gsap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Bounce ()
   extends typings.gsap.gsap.Ease
-/* static members */
-@JSImport("gsap", "Bounce")
-@js.native
-object Bounce extends js.Object {
+object Bounce {
   
-  var easeIn: typings.gsap.gsap.Bounce = js.native
+  @JSImport("gsap", "Bounce")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var easeInOut: typings.gsap.gsap.Bounce = js.native
+  /* static member */
+  @JSImport("gsap", "Bounce.easeIn")
+  @js.native
+  def easeIn: typings.gsap.gsap.Bounce = js.native
   
-  var easeOut: typings.gsap.gsap.Bounce = js.native
+  /* static member */
+  @JSImport("gsap", "Bounce.easeInOut")
+  @js.native
+  def easeInOut: typings.gsap.gsap.Bounce = js.native
+  @scala.inline
+  def easeInOut_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def easeIn_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("gsap", "Bounce.easeOut")
+  @js.native
+  def easeOut: typings.gsap.gsap.Bounce = js.native
+  @scala.inline
+  def easeOut_=(x: typings.gsap.gsap.Bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
 }

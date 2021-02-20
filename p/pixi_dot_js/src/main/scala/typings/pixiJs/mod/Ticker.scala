@@ -1,5 +1,6 @@
 package typings.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Ticker ()
   extends typings.pixiJs.PIXI.Ticker
-/* static members */
-@JSImport("pixi.js", "Ticker")
-@js.native
-object Ticker extends js.Object {
+object Ticker {
+  
+  @JSImport("pixi.js", "Ticker")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The shared ticker instance used by {@link PIXI.AnimatedSprite} and by
@@ -65,7 +67,12 @@ object Ticker extends js.Object {
     * @member {PIXI.Ticker}
     * @static
     */
-  var shared: typings.pixiJs.PIXI.Ticker = js.native
+  /* static member */
+  @JSImport("pixi.js", "Ticker.shared")
+  @js.native
+  def shared: typings.pixiJs.PIXI.Ticker = js.native
+  @scala.inline
+  def shared_=(x: typings.pixiJs.PIXI.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
   
   /**
     * The system ticker instance used by {@link PIXI.InteractionManager} and by
@@ -77,5 +84,10 @@ object Ticker extends js.Object {
     * @member {PIXI.Ticker}
     * @static
     */
-  var system: typings.pixiJs.PIXI.Ticker = js.native
+  /* static member */
+  @JSImport("pixi.js", "Ticker.system")
+  @js.native
+  def system: typings.pixiJs.PIXI.Ticker = js.native
+  @scala.inline
+  def system_=(x: typings.pixiJs.PIXI.Ticker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("system")(x.asInstanceOf[js.Any])
 }

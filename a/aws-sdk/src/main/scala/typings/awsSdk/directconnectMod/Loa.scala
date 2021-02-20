@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Loa extends js.Object {
+trait Loa extends StObject {
   
   /**
     * The binary contents of the LOA-CFA document.
@@ -26,30 +27,18 @@ object Loa {
   }
   
   @scala.inline
-  implicit class LoaOps[Self <: Loa] (val x: Self) extends AnyVal {
+  implicit class LoaMutableBuilder[Self <: Loa] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoaContent(value: LoaContent): Self = StObject.set(x, "loaContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoaContentType(value: LoaContentType): Self = StObject.set(x, "loaContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoaContentTypeUndefined: Self = StObject.set(x, "loaContentType", js.undefined)
     
     @scala.inline
-    def setLoaContent(value: LoaContent): Self = this.set("loaContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaContent: Self = this.set("loaContent", js.undefined)
-    
-    @scala.inline
-    def setLoaContentType(value: LoaContentType): Self = this.set("loaContentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoaContentType: Self = this.set("loaContentType", js.undefined)
+    def setLoaContentUndefined: Self = StObject.set(x, "loaContent", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Rects extends js.Object {
+trait Rects extends StObject {
   
   var key: js.UndefOr[String] = js.native
   
@@ -26,54 +27,42 @@ object Rects {
   }
   
   @scala.inline
-  implicit class RectsOps[Self <: Rects] (val x: Self) extends AnyVal {
+  implicit class RectsMutableBuilder[Self <: Rects] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRects(value: js.Array[Left]): Self = StObject.set(x, "rects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setRectsUndefined: Self = StObject.set(x, "rects", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setRectsVarargs(value: Left*): Self = StObject.set(x, "rects", js.Array(value :_*))
     
     @scala.inline
-    def setRectsVarargs(value: Left*): Self = this.set("rects", js.Array(value :_*))
+    def setSecondary_rects(value: js.Array[Left]): Self = StObject.set(x, "secondary_rects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRects(value: js.Array[Left]): Self = this.set("rects", value.asInstanceOf[js.Any])
+    def setSecondary_rectsUndefined: Self = StObject.set(x, "secondary_rects", js.undefined)
     
     @scala.inline
-    def deleteRects: Self = this.set("rects", js.undefined)
+    def setSecondary_rectsVarargs(value: Left*): Self = StObject.set(x, "secondary_rects", js.Array(value :_*))
     
     @scala.inline
-    def setSecondary_rectsVarargs(value: Left*): Self = this.set("secondary_rects", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondary_rects(value: js.Array[Left]): Self = this.set("secondary_rects", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSecondary_rects: Self = this.set("secondary_rects", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

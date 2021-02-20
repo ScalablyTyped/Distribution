@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.core.v1
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PodSpec is a description of a pod.
   */
 @js.native
-trait PodSpec extends js.Object {
+trait PodSpec extends StObject {
   
   /**
     * Optional duration in seconds the pod may be active on the node relative to StartTime before the system will actively try to mark it failed and kill associated containers. Value must be a positive integer.
@@ -196,252 +197,240 @@ object PodSpec {
   }
   
   @scala.inline
-  implicit class PodSpecOps[Self <: PodSpec] (val x: Self) extends AnyVal {
+  implicit class PodSpecMutableBuilder[Self <: PodSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "activeDeadlineSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDeadlineSecondsUndefined: Self = StObject.set(x, "activeDeadlineSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAffinity(value: Input[Affinity]): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainersVarargs(value: Input[Container]*): Self = this.set("containers", js.Array(value :_*))
+    def setAffinityUndefined: Self = StObject.set(x, "affinity", js.undefined)
     
     @scala.inline
-    def setContainers(value: Input[js.Array[Input[Container]]]): Self = this.set("containers", value.asInstanceOf[js.Any])
+    def setAutomountServiceAccountToken(value: Input[Boolean]): Self = StObject.set(x, "automountServiceAccountToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDeadlineSeconds(value: Input[Double]): Self = this.set("activeDeadlineSeconds", value.asInstanceOf[js.Any])
+    def setAutomountServiceAccountTokenUndefined: Self = StObject.set(x, "automountServiceAccountToken", js.undefined)
     
     @scala.inline
-    def deleteActiveDeadlineSeconds: Self = this.set("activeDeadlineSeconds", js.undefined)
+    def setContainers(value: Input[js.Array[Input[Container]]]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffinity(value: Input[Affinity]): Self = this.set("affinity", value.asInstanceOf[js.Any])
+    def setContainersVarargs(value: Input[Container]*): Self = StObject.set(x, "containers", js.Array(value :_*))
     
     @scala.inline
-    def deleteAffinity: Self = this.set("affinity", js.undefined)
+    def setDnsConfig(value: Input[PodDNSConfig]): Self = StObject.set(x, "dnsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomountServiceAccountToken(value: Input[Boolean]): Self = this.set("automountServiceAccountToken", value.asInstanceOf[js.Any])
+    def setDnsConfigUndefined: Self = StObject.set(x, "dnsConfig", js.undefined)
     
     @scala.inline
-    def deleteAutomountServiceAccountToken: Self = this.set("automountServiceAccountToken", js.undefined)
+    def setDnsPolicy(value: Input[String]): Self = StObject.set(x, "dnsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsConfig(value: Input[PodDNSConfig]): Self = this.set("dnsConfig", value.asInstanceOf[js.Any])
+    def setDnsPolicyUndefined: Self = StObject.set(x, "dnsPolicy", js.undefined)
     
     @scala.inline
-    def deleteDnsConfig: Self = this.set("dnsConfig", js.undefined)
+    def setEnableServiceLinks(value: Input[Boolean]): Self = StObject.set(x, "enableServiceLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsPolicy(value: Input[String]): Self = this.set("dnsPolicy", value.asInstanceOf[js.Any])
+    def setEnableServiceLinksUndefined: Self = StObject.set(x, "enableServiceLinks", js.undefined)
     
     @scala.inline
-    def deleteDnsPolicy: Self = this.set("dnsPolicy", js.undefined)
+    def setEphemeralContainers(value: Input[js.Array[Input[EphemeralContainer]]]): Self = StObject.set(x, "ephemeralContainers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableServiceLinks(value: Input[Boolean]): Self = this.set("enableServiceLinks", value.asInstanceOf[js.Any])
+    def setEphemeralContainersUndefined: Self = StObject.set(x, "ephemeralContainers", js.undefined)
     
     @scala.inline
-    def deleteEnableServiceLinks: Self = this.set("enableServiceLinks", js.undefined)
+    def setEphemeralContainersVarargs(value: Input[EphemeralContainer]*): Self = StObject.set(x, "ephemeralContainers", js.Array(value :_*))
     
     @scala.inline
-    def setEphemeralContainersVarargs(value: Input[EphemeralContainer]*): Self = this.set("ephemeralContainers", js.Array(value :_*))
+    def setHostAliases(value: Input[js.Array[Input[HostAlias]]]): Self = StObject.set(x, "hostAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEphemeralContainers(value: Input[js.Array[Input[EphemeralContainer]]]): Self = this.set("ephemeralContainers", value.asInstanceOf[js.Any])
+    def setHostAliasesUndefined: Self = StObject.set(x, "hostAliases", js.undefined)
     
     @scala.inline
-    def deleteEphemeralContainers: Self = this.set("ephemeralContainers", js.undefined)
+    def setHostAliasesVarargs(value: Input[HostAlias]*): Self = StObject.set(x, "hostAliases", js.Array(value :_*))
     
     @scala.inline
-    def setHostAliasesVarargs(value: Input[HostAlias]*): Self = this.set("hostAliases", js.Array(value :_*))
+    def setHostIPC(value: Input[Boolean]): Self = StObject.set(x, "hostIPC", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostAliases(value: Input[js.Array[Input[HostAlias]]]): Self = this.set("hostAliases", value.asInstanceOf[js.Any])
+    def setHostIPCUndefined: Self = StObject.set(x, "hostIPC", js.undefined)
     
     @scala.inline
-    def deleteHostAliases: Self = this.set("hostAliases", js.undefined)
+    def setHostNetwork(value: Input[Boolean]): Self = StObject.set(x, "hostNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostIPC(value: Input[Boolean]): Self = this.set("hostIPC", value.asInstanceOf[js.Any])
+    def setHostNetworkUndefined: Self = StObject.set(x, "hostNetwork", js.undefined)
     
     @scala.inline
-    def deleteHostIPC: Self = this.set("hostIPC", js.undefined)
+    def setHostPID(value: Input[Boolean]): Self = StObject.set(x, "hostPID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostNetwork(value: Input[Boolean]): Self = this.set("hostNetwork", value.asInstanceOf[js.Any])
+    def setHostPIDUndefined: Self = StObject.set(x, "hostPID", js.undefined)
     
     @scala.inline
-    def deleteHostNetwork: Self = this.set("hostNetwork", js.undefined)
+    def setHostname(value: Input[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostPID(value: Input[Boolean]): Self = this.set("hostPID", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def deleteHostPID: Self = this.set("hostPID", js.undefined)
+    def setImagePullSecrets(value: Input[js.Array[Input[LocalObjectReference]]]): Self = StObject.set(x, "imagePullSecrets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: Input[String]): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setImagePullSecretsUndefined: Self = StObject.set(x, "imagePullSecrets", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setImagePullSecretsVarargs(value: Input[LocalObjectReference]*): Self = StObject.set(x, "imagePullSecrets", js.Array(value :_*))
     
     @scala.inline
-    def setImagePullSecretsVarargs(value: Input[LocalObjectReference]*): Self = this.set("imagePullSecrets", js.Array(value :_*))
+    def setInitContainers(value: Input[js.Array[Input[Container]]]): Self = StObject.set(x, "initContainers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePullSecrets(value: Input[js.Array[Input[LocalObjectReference]]]): Self = this.set("imagePullSecrets", value.asInstanceOf[js.Any])
+    def setInitContainersUndefined: Self = StObject.set(x, "initContainers", js.undefined)
     
     @scala.inline
-    def deleteImagePullSecrets: Self = this.set("imagePullSecrets", js.undefined)
+    def setInitContainersVarargs(value: Input[Container]*): Self = StObject.set(x, "initContainers", js.Array(value :_*))
     
     @scala.inline
-    def setInitContainersVarargs(value: Input[Container]*): Self = this.set("initContainers", js.Array(value :_*))
+    def setNodeName(value: Input[String]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitContainers(value: Input[js.Array[Input[Container]]]): Self = this.set("initContainers", value.asInstanceOf[js.Any])
+    def setNodeNameUndefined: Self = StObject.set(x, "nodeName", js.undefined)
     
     @scala.inline
-    def deleteInitContainers: Self = this.set("initContainers", js.undefined)
+    def setNodeSelector(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "nodeSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeName(value: Input[String]): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    def setNodeSelectorUndefined: Self = StObject.set(x, "nodeSelector", js.undefined)
     
     @scala.inline
-    def deleteNodeName: Self = this.set("nodeName", js.undefined)
+    def setOverhead(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "overhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeSelector(value: Input[StringDictionary[Input[String]]]): Self = this.set("nodeSelector", value.asInstanceOf[js.Any])
+    def setOverheadUndefined: Self = StObject.set(x, "overhead", js.undefined)
     
     @scala.inline
-    def deleteNodeSelector: Self = this.set("nodeSelector", js.undefined)
+    def setPreemptionPolicy(value: Input[String]): Self = StObject.set(x, "preemptionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverhead(value: Input[StringDictionary[Input[String]]]): Self = this.set("overhead", value.asInstanceOf[js.Any])
+    def setPreemptionPolicyUndefined: Self = StObject.set(x, "preemptionPolicy", js.undefined)
     
     @scala.inline
-    def deleteOverhead: Self = this.set("overhead", js.undefined)
+    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreemptionPolicy(value: Input[String]): Self = this.set("preemptionPolicy", value.asInstanceOf[js.Any])
+    def setPriorityClassName(value: Input[String]): Self = StObject.set(x, "priorityClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreemptionPolicy: Self = this.set("preemptionPolicy", js.undefined)
+    def setPriorityClassNameUndefined: Self = StObject.set(x, "priorityClassName", js.undefined)
     
     @scala.inline
-    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setReadinessGates(value: Input[js.Array[Input[PodReadinessGate]]]): Self = StObject.set(x, "readinessGates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriorityClassName(value: Input[String]): Self = this.set("priorityClassName", value.asInstanceOf[js.Any])
+    def setReadinessGatesUndefined: Self = StObject.set(x, "readinessGates", js.undefined)
     
     @scala.inline
-    def deletePriorityClassName: Self = this.set("priorityClassName", js.undefined)
+    def setReadinessGatesVarargs(value: Input[PodReadinessGate]*): Self = StObject.set(x, "readinessGates", js.Array(value :_*))
     
     @scala.inline
-    def setReadinessGatesVarargs(value: Input[PodReadinessGate]*): Self = this.set("readinessGates", js.Array(value :_*))
+    def setRestartPolicy(value: Input[String]): Self = StObject.set(x, "restartPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadinessGates(value: Input[js.Array[Input[PodReadinessGate]]]): Self = this.set("readinessGates", value.asInstanceOf[js.Any])
+    def setRestartPolicyUndefined: Self = StObject.set(x, "restartPolicy", js.undefined)
     
     @scala.inline
-    def deleteReadinessGates: Self = this.set("readinessGates", js.undefined)
+    def setRuntimeClassName(value: Input[String]): Self = StObject.set(x, "runtimeClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartPolicy(value: Input[String]): Self = this.set("restartPolicy", value.asInstanceOf[js.Any])
+    def setRuntimeClassNameUndefined: Self = StObject.set(x, "runtimeClassName", js.undefined)
     
     @scala.inline
-    def deleteRestartPolicy: Self = this.set("restartPolicy", js.undefined)
+    def setSchedulerName(value: Input[String]): Self = StObject.set(x, "schedulerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuntimeClassName(value: Input[String]): Self = this.set("runtimeClassName", value.asInstanceOf[js.Any])
+    def setSchedulerNameUndefined: Self = StObject.set(x, "schedulerName", js.undefined)
     
     @scala.inline
-    def deleteRuntimeClassName: Self = this.set("runtimeClassName", js.undefined)
+    def setSecurityContext(value: Input[PodSecurityContext]): Self = StObject.set(x, "securityContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedulerName(value: Input[String]): Self = this.set("schedulerName", value.asInstanceOf[js.Any])
+    def setSecurityContextUndefined: Self = StObject.set(x, "securityContext", js.undefined)
     
     @scala.inline
-    def deleteSchedulerName: Self = this.set("schedulerName", js.undefined)
+    def setServiceAccount(value: Input[String]): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityContext(value: Input[PodSecurityContext]): Self = this.set("securityContext", value.asInstanceOf[js.Any])
+    def setServiceAccountName(value: Input[String]): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecurityContext: Self = this.set("securityContext", js.undefined)
+    def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
     
     @scala.inline
-    def setServiceAccount(value: Input[String]): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
     @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setSetHostnameAsFQDN(value: Input[Boolean]): Self = StObject.set(x, "setHostnameAsFQDN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceAccountName(value: Input[String]): Self = this.set("serviceAccountName", value.asInstanceOf[js.Any])
+    def setSetHostnameAsFQDNUndefined: Self = StObject.set(x, "setHostnameAsFQDN", js.undefined)
     
     @scala.inline
-    def deleteServiceAccountName: Self = this.set("serviceAccountName", js.undefined)
+    def setShareProcessNamespace(value: Input[Boolean]): Self = StObject.set(x, "shareProcessNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetHostnameAsFQDN(value: Input[Boolean]): Self = this.set("setHostnameAsFQDN", value.asInstanceOf[js.Any])
+    def setShareProcessNamespaceUndefined: Self = StObject.set(x, "shareProcessNamespace", js.undefined)
     
     @scala.inline
-    def deleteSetHostnameAsFQDN: Self = this.set("setHostnameAsFQDN", js.undefined)
+    def setSubdomain(value: Input[String]): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShareProcessNamespace(value: Input[Boolean]): Self = this.set("shareProcessNamespace", value.asInstanceOf[js.Any])
+    def setSubdomainUndefined: Self = StObject.set(x, "subdomain", js.undefined)
     
     @scala.inline
-    def deleteShareProcessNamespace: Self = this.set("shareProcessNamespace", js.undefined)
+    def setTerminationGracePeriodSeconds(value: Input[Double]): Self = StObject.set(x, "terminationGracePeriodSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubdomain(value: Input[String]): Self = this.set("subdomain", value.asInstanceOf[js.Any])
+    def setTerminationGracePeriodSecondsUndefined: Self = StObject.set(x, "terminationGracePeriodSeconds", js.undefined)
     
     @scala.inline
-    def deleteSubdomain: Self = this.set("subdomain", js.undefined)
+    def setTolerations(value: Input[js.Array[Input[Toleration]]]): Self = StObject.set(x, "tolerations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminationGracePeriodSeconds(value: Input[Double]): Self = this.set("terminationGracePeriodSeconds", value.asInstanceOf[js.Any])
+    def setTolerationsUndefined: Self = StObject.set(x, "tolerations", js.undefined)
     
     @scala.inline
-    def deleteTerminationGracePeriodSeconds: Self = this.set("terminationGracePeriodSeconds", js.undefined)
+    def setTolerationsVarargs(value: Input[Toleration]*): Self = StObject.set(x, "tolerations", js.Array(value :_*))
     
     @scala.inline
-    def setTolerationsVarargs(value: Input[Toleration]*): Self = this.set("tolerations", js.Array(value :_*))
+    def setTopologySpreadConstraints(value: Input[js.Array[Input[TopologySpreadConstraint]]]): Self = StObject.set(x, "topologySpreadConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTolerations(value: Input[js.Array[Input[Toleration]]]): Self = this.set("tolerations", value.asInstanceOf[js.Any])
+    def setTopologySpreadConstraintsUndefined: Self = StObject.set(x, "topologySpreadConstraints", js.undefined)
     
     @scala.inline
-    def deleteTolerations: Self = this.set("tolerations", js.undefined)
+    def setTopologySpreadConstraintsVarargs(value: Input[TopologySpreadConstraint]*): Self = StObject.set(x, "topologySpreadConstraints", js.Array(value :_*))
     
     @scala.inline
-    def setTopologySpreadConstraintsVarargs(value: Input[TopologySpreadConstraint]*): Self = this.set("topologySpreadConstraints", js.Array(value :_*))
+    def setVolumes(value: Input[js.Array[Input[Volume]]]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopologySpreadConstraints(value: Input[js.Array[Input[TopologySpreadConstraint]]]): Self = this.set("topologySpreadConstraints", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deleteTopologySpreadConstraints: Self = this.set("topologySpreadConstraints", js.undefined)
-    
-    @scala.inline
-    def setVolumesVarargs(value: Input[Volume]*): Self = this.set("volumes", js.Array(value :_*))
-    
-    @scala.inline
-    def setVolumes(value: Input[js.Array[Input[Volume]]]): Self = this.set("volumes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    def setVolumesVarargs(value: Input[Volume]*): Self = StObject.set(x, "volumes", js.Array(value :_*))
   }
 }

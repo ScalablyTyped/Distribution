@@ -1,12 +1,13 @@
 package typings.semanticUiSticky.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sticky.SemanticUI.Sticky.ErrorSettings._Impl, keyof semantic-ui-sticky.SemanticUI.Sticky.ErrorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplContainer extends js.Object {
+trait PartialPickImplkeyofImplContainer extends StObject {
   
   var container: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialPickImplkeyofImplContainer {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplContainerOps[Self <: PartialPickImplkeyofImplContainer] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplContainerMutableBuilder[Self <: PartialPickImplkeyofImplContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementSize(value: String): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setElementSizeUndefined: Self = StObject.set(x, "elementSize", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setInvalidContext(value: String): Self = StObject.set(x, "invalidContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementSize(value: String): Self = this.set("elementSize", value.asInstanceOf[js.Any])
+    def setInvalidContextUndefined: Self = StObject.set(x, "invalidContext", js.undefined)
     
     @scala.inline
-    def deleteElementSize: Self = this.set("elementSize", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidContext(value: String): Self = this.set("invalidContext", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteInvalidContext: Self = this.set("invalidContext", js.undefined)
+    def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: String): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -14,12 +14,13 @@ import typings.got.gotStrings.OPTIONS
 import typings.got.gotStrings.POST
 import typings.got.gotStrings.PUT
 import typings.got.gotStrings.TRACE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
   
   /**
     * Allowed error codes.
@@ -43,60 +44,48 @@ object RetryOptions {
   }
   
   @scala.inline
-  implicit class RetryOptionsOps[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCodes(value: js.Array[String]): Self = StObject.set(x, "errorCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodesUndefined: Self = StObject.set(x, "errorCodes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCodesVarargs(value: String*): Self = StObject.set(x, "errorCodes", js.Array(value :_*))
     
     @scala.inline
-    def setErrorCodesVarargs(value: String*): Self = this.set("errorCodes", js.Array(value :_*))
+    def setMaxRetryAfter(value: Double): Self = StObject.set(x, "maxRetryAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCodes(value: js.Array[String]): Self = this.set("errorCodes", value.asInstanceOf[js.Any])
+    def setMaxRetryAfterUndefined: Self = StObject.set(x, "maxRetryAfter", js.undefined)
     
     @scala.inline
-    def deleteErrorCodes: Self = this.set("errorCodes", js.undefined)
+    def setMethods(value: js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRetryAfter(value: Double): Self = this.set("maxRetryAfter", value.asInstanceOf[js.Any])
+    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
     @scala.inline
-    def deleteMaxRetryAfter: Self = this.set("maxRetryAfter", js.undefined)
+    def setMethodsVarargs(value: (GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE)*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
     @scala.inline
-    def setMethodsVarargs(value: (GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE)*): Self = this.set("methods", js.Array(value :_*))
+    def setRetries(value: Double | RetryFunction): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethods(value: js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    def setRetriesFunction2(value: (/* retry */ Double, /* error */ js.Any) => Double): Self = StObject.set(x, "retries", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteMethods: Self = this.set("methods", js.undefined)
+    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
     @scala.inline
-    def setRetriesFunction2(value: (/* retry */ Double, /* error */ js.Any) => Double): Self = this.set("retries", js.Any.fromFunction2(value))
+    def setStatusCodes(value: js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: Double | RetryFunction): Self = this.set("retries", value.asInstanceOf[js.Any])
+    def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
     
     @scala.inline
-    def deleteRetries: Self = this.set("retries", js.undefined)
-    
-    @scala.inline
-    def setStatusCodesVarargs(value: (`408` | `413` | `429` | `500` | `502` | `503` | `504`)*): Self = this.set("statusCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatusCodes(value: js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`]): Self = this.set("statusCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatusCodes: Self = this.set("statusCodes", js.undefined)
+    def setStatusCodesVarargs(value: (`408` | `413` | `429` | `500` | `502` | `503` | `504`)*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
   }
 }

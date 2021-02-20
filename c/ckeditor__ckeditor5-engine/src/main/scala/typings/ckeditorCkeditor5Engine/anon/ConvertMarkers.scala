@@ -1,11 +1,12 @@
 package typings.ckeditorCkeditor5Engine.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConvertMarkers extends js.Object {
+trait ConvertMarkers extends StObject {
   
   var convertMarkers: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object ConvertMarkers {
   }
   
   @scala.inline
-  implicit class ConvertMarkersOps[Self <: ConvertMarkers] (val x: Self) extends AnyVal {
+  implicit class ConvertMarkersMutableBuilder[Self <: ConvertMarkers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConvertMarkers(value: Boolean): Self = StObject.set(x, "convertMarkers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConvertMarkersUndefined: Self = StObject.set(x, "convertMarkers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRootName(value: String): Self = StObject.set(x, "rootName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertMarkers(value: Boolean): Self = this.set("convertMarkers", value.asInstanceOf[js.Any])
+    def setRootNameUndefined: Self = StObject.set(x, "rootName", js.undefined)
     
     @scala.inline
-    def deleteConvertMarkers: Self = this.set("convertMarkers", js.undefined)
+    def setWithoutSelection(value: Boolean): Self = StObject.set(x, "withoutSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootName(value: String): Self = this.set("rootName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootName: Self = this.set("rootName", js.undefined)
-    
-    @scala.inline
-    def setWithoutSelection(value: Boolean): Self = this.set("withoutSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithoutSelection: Self = this.set("withoutSelection", js.undefined)
+    def setWithoutSelectionUndefined: Self = StObject.set(x, "withoutSelection", js.undefined)
   }
 }

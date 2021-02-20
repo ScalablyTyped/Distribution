@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,39 +64,27 @@ object SkAnimatedImage {
   }
   
   @scala.inline
-  implicit class SkAnimatedImageOps[Self <: SkAnimatedImage] (val x: Self) extends AnyVal {
+  implicit class SkAnimatedImageMutableBuilder[Self <: SkAnimatedImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecodeNextFrame(value: () => Double): Self = StObject.set(x, "decodeNextFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFrameCount(value: () => Double): Self = StObject.set(x, "getFrameCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRepetitionCount(value: () => Double): Self = StObject.set(x, "getRepetitionCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDecodeNextFrame(value: () => Double): Self = this.set("decodeNextFrame", js.Any.fromFunction0(value))
+    def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFrameCount(value: () => Double): Self = this.set("getFrameCount", js.Any.fromFunction0(value))
+    def setMakeImageAtCurrentFrame(value: () => SkImage | Null): Self = StObject.set(x, "makeImageAtCurrentFrame", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRepetitionCount(value: () => Double): Self = this.set("getRepetitionCount", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeight(value: () => Double): Self = this.set("height", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMakeImageAtCurrentFrame(value: () => SkImage | Null): Self = this.set("makeImageAtCurrentFrame", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWidth(value: () => Double): Self = this.set("width", js.Any.fromFunction0(value))
+    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
   }
 }

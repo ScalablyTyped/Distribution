@@ -8,16 +8,16 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TransformationContext
 import typings.typescript.mod.Transformer
 import typings.typescript.mod.TypeChecker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/import_rewrite_visitor", JSImport.Namespace)
-@js.native
-object importRewriteVisitorMod extends js.Object {
+object importRewriteVisitorMod {
   
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/import_rewrite_visitor", "ImportRewriteTransformerFactory")
   @js.native
-  class ImportRewriteTransformerFactory protected () extends js.Object {
+  class ImportRewriteTransformerFactory protected () extends StObject {
     def this(importManager: ImportManager, typeChecker: TypeChecker, compilerHost: AotCompilerHost) = this()
     
     /**
@@ -42,6 +42,7 @@ object importRewriteVisitorMod extends js.Object {
     var typeChecker: js.Any = js.native
   }
   
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/decorator_rewrite/import_rewrite_visitor", "UnresolvedIdentifierError")
   @js.native
   class UnresolvedIdentifierError () extends Error
 }

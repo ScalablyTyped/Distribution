@@ -1,12 +1,13 @@
 package typings.history
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("history/ExecutionEnvironment", JSImport.Namespace)
-@js.native
-object executionEnvironmentMod extends js.Object {
+object executionEnvironmentMod {
   
+  @JSImport("history/ExecutionEnvironment", "canUseDOM")
+  @js.native
   val canUseDOM: Boolean = js.native
 }

@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geocode extends js.Object {
+trait Geocode extends StObject {
   
   var adcode: String = js.native
   
@@ -32,33 +33,21 @@ object Geocode {
   }
   
   @scala.inline
-  implicit class GeocodeOps[Self <: Geocode] (val x: Self) extends AnyVal {
+  implicit class GeocodeMutableBuilder[Self <: Geocode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressComponent(value: AddressComponent): Self = StObject.set(x, "addressComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdcode(value: String): Self = this.set("adcode", value.asInstanceOf[js.Any])
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressComponent(value: AddressComponent): Self = this.set("addressComponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormattedAddress(value: String): Self = this.set("formattedAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: LngLat): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

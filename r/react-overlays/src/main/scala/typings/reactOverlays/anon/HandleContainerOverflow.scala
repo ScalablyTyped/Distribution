@@ -1,11 +1,12 @@
 package typings.reactOverlays.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandleContainerOverflow extends js.Object {
+trait HandleContainerOverflow extends StObject {
   
   var handleContainerOverflow: js.UndefOr[Boolean] = js.native
   
@@ -20,30 +21,18 @@ object HandleContainerOverflow {
   }
   
   @scala.inline
-  implicit class HandleContainerOverflowOps[Self <: HandleContainerOverflow] (val x: Self) extends AnyVal {
+  implicit class HandleContainerOverflowMutableBuilder[Self <: HandleContainerOverflow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandleContainerOverflow(value: Boolean): Self = StObject.set(x, "handleContainerOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandleContainerOverflowUndefined: Self = StObject.set(x, "handleContainerOverflow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideSiblingNodes(value: Boolean): Self = StObject.set(x, "hideSiblingNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleContainerOverflow(value: Boolean): Self = this.set("handleContainerOverflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleContainerOverflow: Self = this.set("handleContainerOverflow", js.undefined)
-    
-    @scala.inline
-    def setHideSiblingNodes(value: Boolean): Self = this.set("hideSiblingNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHideSiblingNodes: Self = this.set("hideSiblingNodes", js.undefined)
+    def setHideSiblingNodesUndefined: Self = StObject.set(x, "hideSiblingNodes", js.undefined)
   }
 }

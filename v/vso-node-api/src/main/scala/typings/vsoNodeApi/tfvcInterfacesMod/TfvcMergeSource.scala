@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TfvcMergeSource extends js.Object {
+trait TfvcMergeSource extends StObject {
   
   /**
     * Indicates if this a rename source. If false, it is a merge source.
@@ -36,30 +37,18 @@ object TfvcMergeSource {
   }
   
   @scala.inline
-  implicit class TfvcMergeSourceOps[Self <: TfvcMergeSource] (val x: Self) extends AnyVal {
+  implicit class TfvcMergeSourceMutableBuilder[Self <: TfvcMergeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsRename(value: Boolean): Self = StObject.set(x, "isRename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerItem(value: String): Self = StObject.set(x, "serverItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersionFrom(value: Double): Self = StObject.set(x, "versionFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsRename(value: Boolean): Self = this.set("isRename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerItem(value: String): Self = this.set("serverItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionFrom(value: Double): Self = this.set("versionFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionTo(value: Double): Self = this.set("versionTo", value.asInstanceOf[js.Any])
+    def setVersionTo(value: Double): Self = StObject.set(x, "versionTo", value.asInstanceOf[js.Any])
   }
 }

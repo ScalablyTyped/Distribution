@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssessmentRunFilter extends js.Object {
+trait AssessmentRunFilter extends StObject {
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must inclusively match any value between the specified minimum and maximum values of the completedAt property of the AssessmentRun data type.
@@ -51,66 +52,54 @@ object AssessmentRunFilter {
   }
   
   @scala.inline
-  implicit class AssessmentRunFilterOps[Self <: AssessmentRunFilter] (val x: Self) extends AnyVal {
+  implicit class AssessmentRunFilterMutableBuilder[Self <: AssessmentRunFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionTimeRange(value: TimestampRange): Self = StObject.set(x, "completionTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionTimeRangeUndefined: Self = StObject.set(x, "completionTimeRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationRange(value: DurationRange): Self = StObject.set(x, "durationRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionTimeRange(value: TimestampRange): Self = this.set("completionTimeRange", value.asInstanceOf[js.Any])
+    def setDurationRangeUndefined: Self = StObject.set(x, "durationRange", js.undefined)
     
     @scala.inline
-    def deleteCompletionTimeRange: Self = this.set("completionTimeRange", js.undefined)
+    def setNamePattern(value: NamePattern): Self = StObject.set(x, "namePattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationRange(value: DurationRange): Self = this.set("durationRange", value.asInstanceOf[js.Any])
+    def setNamePatternUndefined: Self = StObject.set(x, "namePattern", js.undefined)
     
     @scala.inline
-    def deleteDurationRange: Self = this.set("durationRange", js.undefined)
+    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamePattern(value: NamePattern): Self = this.set("namePattern", value.asInstanceOf[js.Any])
+    def setRulesPackageArnsUndefined: Self = StObject.set(x, "rulesPackageArns", js.undefined)
     
     @scala.inline
-    def deleteNamePattern: Self = this.set("namePattern", js.undefined)
+    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
     
     @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    def setStartTimeRange(value: TimestampRange): Self = StObject.set(x, "startTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    def setStartTimeRangeUndefined: Self = StObject.set(x, "startTimeRange", js.undefined)
     
     @scala.inline
-    def deleteRulesPackageArns: Self = this.set("rulesPackageArns", js.undefined)
+    def setStateChangeTimeRange(value: TimestampRange): Self = StObject.set(x, "stateChangeTimeRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimeRange(value: TimestampRange): Self = this.set("startTimeRange", value.asInstanceOf[js.Any])
+    def setStateChangeTimeRangeUndefined: Self = StObject.set(x, "stateChangeTimeRange", js.undefined)
     
     @scala.inline
-    def deleteStartTimeRange: Self = this.set("startTimeRange", js.undefined)
+    def setStates(value: AssessmentRunStateList): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChangeTimeRange(value: TimestampRange): Self = this.set("stateChangeTimeRange", value.asInstanceOf[js.Any])
+    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
     @scala.inline
-    def deleteStateChangeTimeRange: Self = this.set("stateChangeTimeRange", js.undefined)
-    
-    @scala.inline
-    def setStatesVarargs(value: AssessmentRunState*): Self = this.set("states", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: AssessmentRunStateList): Self = this.set("states", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStates: Self = this.set("states", js.undefined)
+    def setStatesVarargs(value: AssessmentRunState*): Self = StObject.set(x, "states", js.Array(value :_*))
   }
 }

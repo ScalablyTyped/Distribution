@@ -1,5 +1,6 @@
 package typings.firebase.mod.firebase.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,33 +27,21 @@ object PhoneMultiFactorSignInInfoOptions {
   }
   
   @scala.inline
-  implicit class PhoneMultiFactorSignInInfoOptionsOps[Self <: PhoneMultiFactorSignInInfoOptions] (val x: Self) extends AnyVal {
+  implicit class PhoneMultiFactorSignInInfoOptionsMutableBuilder[Self <: PhoneMultiFactorSignInInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiFactorHint(value: MultiFactorInfo): Self = StObject.set(x, "multiFactorHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiFactorHintUndefined: Self = StObject.set(x, "multiFactorHint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultiFactorUid(value: String): Self = StObject.set(x, "multiFactorUid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: MultiFactorSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setMultiFactorUidUndefined: Self = StObject.set(x, "multiFactorUid", js.undefined)
     
     @scala.inline
-    def setMultiFactorHint(value: MultiFactorInfo): Self = this.set("multiFactorHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiFactorHint: Self = this.set("multiFactorHint", js.undefined)
-    
-    @scala.inline
-    def setMultiFactorUid(value: String): Self = this.set("multiFactorUid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiFactorUid: Self = this.set("multiFactorUid", js.undefined)
+    def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

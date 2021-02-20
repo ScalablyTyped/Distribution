@@ -8,12 +8,13 @@ import typings.backblazeB2.anon.fileIdstringDownloadFileO
 import typings.backblazeB2.anon.fileIdstringfileNamestrin
 import typings.backblazeB2.anon.fileIdstringpartSha1Array
 import typings.backblazeB2.anon.maxKeyCountnumberstartApp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackBlazeB2 extends js.Object {
+trait BackBlazeB2 extends StObject {
   
   def authorize(): js.Promise[StandardApiResponse] = js.native
   def authorize(opts: CommonArgs): js.Promise[StandardApiResponse] = js.native

@@ -1,11 +1,12 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLabelWriterPrintParamsXmlParams extends js.Object {
+trait CreateLabelWriterPrintParamsXmlParams extends StObject {
   
   /** The number of copies to print. */
   var copies: js.UndefOr[Double] = js.native
@@ -31,48 +32,36 @@ object CreateLabelWriterPrintParamsXmlParams {
   }
   
   @scala.inline
-  implicit class CreateLabelWriterPrintParamsXmlParamsOps[Self <: CreateLabelWriterPrintParamsXmlParams] (val x: Self) extends AnyVal {
+  implicit class CreateLabelWriterPrintParamsXmlParamsMutableBuilder[Self <: CreateLabelWriterPrintParamsXmlParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopiesUndefined: Self = StObject.set(x, "copies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopies(value: Double): Self = this.set("copies", value.asInstanceOf[js.Any])
+    def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
     
     @scala.inline
-    def deleteCopies: Self = this.set("copies", js.undefined)
+    def setJobTitle(value: String): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDirection(value: FlowDirection): Self = this.set("flowDirection", value.asInstanceOf[js.Any])
+    def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
     
     @scala.inline
-    def deleteFlowDirection: Self = this.set("flowDirection", js.undefined)
+    def setPrintQuality(value: LabelWriterPrintQuality): Self = StObject.set(x, "printQuality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTitle(value: String): Self = this.set("jobTitle", value.asInstanceOf[js.Any])
+    def setPrintQualityUndefined: Self = StObject.set(x, "printQuality", js.undefined)
     
     @scala.inline
-    def deleteJobTitle: Self = this.set("jobTitle", js.undefined)
+    def setTwinTurboRoll(value: TwinTurboRoll): Self = StObject.set(x, "twinTurboRoll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintQuality(value: LabelWriterPrintQuality): Self = this.set("printQuality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrintQuality: Self = this.set("printQuality", js.undefined)
-    
-    @scala.inline
-    def setTwinTurboRoll(value: TwinTurboRoll): Self = this.set("twinTurboRoll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwinTurboRoll: Self = this.set("twinTurboRoll", js.undefined)
+    def setTwinTurboRollUndefined: Self = StObject.set(x, "twinTurboRoll", js.undefined)
   }
 }

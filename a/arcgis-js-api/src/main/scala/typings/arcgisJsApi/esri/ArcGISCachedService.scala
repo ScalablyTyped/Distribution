@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArcGISCachedService extends js.Object {
+trait ArcGISCachedService extends StObject {
   
   /**
     * The copyright text as defined by the service.
@@ -37,27 +38,15 @@ object ArcGISCachedService {
   }
   
   @scala.inline
-  implicit class ArcGISCachedServiceOps[Self <: ArcGISCachedService] (val x: Self) extends AnyVal {
+  implicit class ArcGISCachedServiceMutableBuilder[Self <: ArcGISCachedService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpatialReference(value: SpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpatialReference(value: SpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTileInfo(value: TileInfo): Self = this.set("tileInfo", value.asInstanceOf[js.Any])
+    def setTileInfo(value: TileInfo): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
   }
 }

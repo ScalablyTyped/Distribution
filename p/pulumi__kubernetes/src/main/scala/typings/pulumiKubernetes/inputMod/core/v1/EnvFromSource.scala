@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EnvFromSource represents the source of a set of ConfigMaps
   */
 @js.native
-trait EnvFromSource extends js.Object {
+trait EnvFromSource extends StObject {
   
   /**
     * The ConfigMap to select from
@@ -35,36 +36,24 @@ object EnvFromSource {
   }
   
   @scala.inline
-  implicit class EnvFromSourceOps[Self <: EnvFromSource] (val x: Self) extends AnyVal {
+  implicit class EnvFromSourceMutableBuilder[Self <: EnvFromSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigMapRef(value: Input[ConfigMapEnvSource]): Self = StObject.set(x, "configMapRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigMapRefUndefined: Self = StObject.set(x, "configMapRef", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigMapRef(value: Input[ConfigMapEnvSource]): Self = this.set("configMapRef", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deleteConfigMapRef: Self = this.set("configMapRef", js.undefined)
+    def setSecretRef(value: Input[SecretEnvSource]): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: Input[String]): Self = this.set("prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
-    
-    @scala.inline
-    def setSecretRef(value: Input[SecretEnvSource]): Self = this.set("secretRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecretRef: Self = this.set("secretRef", js.undefined)
+    def setSecretRefUndefined: Self = StObject.set(x, "secretRef", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapTypeStyler extends js.Object {
+trait MapTypeStyler extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object MapTypeStyler {
   }
   
   @scala.inline
-  implicit class MapTypeStylerOps[Self <: MapTypeStyler] (val x: Self) extends AnyVal {
+  implicit class MapTypeStylerMutableBuilder[Self <: MapTypeStyler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setHue(value: String): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
+    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
     @scala.inline
-    def deleteGamma: Self = this.set("gamma", js.undefined)
+    def setInvert_lightness(value: Boolean): Self = StObject.set(x, "invert_lightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHue(value: String): Self = this.set("hue", value.asInstanceOf[js.Any])
+    def setInvert_lightnessUndefined: Self = StObject.set(x, "invert_lightness", js.undefined)
     
     @scala.inline
-    def deleteHue: Self = this.set("hue", js.undefined)
+    def setLightness(value: Double): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvert_lightness(value: Boolean): Self = this.set("invert_lightness", value.asInstanceOf[js.Any])
+    def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
     
     @scala.inline
-    def deleteInvert_lightness: Self = this.set("invert_lightness", js.undefined)
+    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLightness(value: Double): Self = this.set("lightness", value.asInstanceOf[js.Any])
+    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
     
     @scala.inline
-    def deleteLightness: Self = this.set("lightness", js.undefined)
+    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSaturation(value: Double): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     @scala.inline
-    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetImportJobResponse extends js.Object {
+trait GetImportJobResponse extends StObject {
   
   /**
     * The time stamp of when the import job was completed.
@@ -61,72 +62,60 @@ object GetImportJobResponse {
   }
   
   @scala.inline
-  implicit class GetImportJobResponseOps[Self <: GetImportJobResponse] (val x: Self) extends AnyVal {
+  implicit class GetImportJobResponseMutableBuilder[Self <: GetImportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedTimestamp(value: Timestamp): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedTimestampUndefined: Self = StObject.set(x, "CompletedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedTimestamp(value: Timestamp): Self = this.set("CompletedTimestamp", value.asInstanceOf[js.Any])
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCompletedTimestamp: Self = this.set("CompletedTimestamp", js.undefined)
+    def setFailedRecordsCount(value: FailedRecordsCount): Self = StObject.set(x, "FailedRecordsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setFailedRecordsCountUndefined: Self = StObject.set(x, "FailedRecordsCount", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setFailureInfo(value: FailureInfo): Self = StObject.set(x, "FailureInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedRecordsCount(value: FailedRecordsCount): Self = this.set("FailedRecordsCount", value.asInstanceOf[js.Any])
+    def setFailureInfoUndefined: Self = StObject.set(x, "FailureInfo", js.undefined)
     
     @scala.inline
-    def deleteFailedRecordsCount: Self = this.set("FailedRecordsCount", js.undefined)
+    def setImportDataSource(value: ImportDataSource): Self = StObject.set(x, "ImportDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureInfo(value: FailureInfo): Self = this.set("FailureInfo", value.asInstanceOf[js.Any])
+    def setImportDataSourceUndefined: Self = StObject.set(x, "ImportDataSource", js.undefined)
     
     @scala.inline
-    def deleteFailureInfo: Self = this.set("FailureInfo", js.undefined)
+    def setImportDestination(value: ImportDestination): Self = StObject.set(x, "ImportDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportDataSource(value: ImportDataSource): Self = this.set("ImportDataSource", value.asInstanceOf[js.Any])
+    def setImportDestinationUndefined: Self = StObject.set(x, "ImportDestination", js.undefined)
     
     @scala.inline
-    def deleteImportDataSource: Self = this.set("ImportDataSource", js.undefined)
+    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportDestination(value: ImportDestination): Self = this.set("ImportDestination", value.asInstanceOf[js.Any])
+    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     @scala.inline
-    def deleteImportDestination: Self = this.set("ImportDestination", js.undefined)
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
     @scala.inline
-    def deleteJobId: Self = this.set("JobId", js.undefined)
+    def setProcessedRecordsCount(value: ProcessedRecordsCount): Self = StObject.set(x, "ProcessedRecordsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
-    
-    @scala.inline
-    def setProcessedRecordsCount(value: ProcessedRecordsCount): Self = this.set("ProcessedRecordsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessedRecordsCount: Self = this.set("ProcessedRecordsCount", js.undefined)
+    def setProcessedRecordsCountUndefined: Self = StObject.set(x, "ProcessedRecordsCount", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.exportOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSLayerExportOptions extends js.Object {
+trait SketchMSLayerExportOptions extends StObject {
   
   var _class: exportOptions = js.native
   
@@ -33,39 +34,27 @@ object SketchMSLayerExportOptions {
   }
   
   @scala.inline
-  implicit class SketchMSLayerExportOptionsOps[Self <: SketchMSLayerExportOptions] (val x: Self) extends AnyVal {
+  implicit class SketchMSLayerExportOptionsMutableBuilder[Self <: SketchMSLayerExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportFormats(value: js.Array[_]): Self = StObject.set(x, "exportFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportFormatsVarargs(value: js.Any*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludedLayerIds(value: js.Array[_]): Self = StObject.set(x, "includedLayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: exportOptions): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setIncludedLayerIdsVarargs(value: js.Any*): Self = StObject.set(x, "includedLayerIds", js.Array(value :_*))
     
     @scala.inline
-    def setExportFormatsVarargs(value: js.Any*): Self = this.set("exportFormats", js.Array(value :_*))
+    def setLayerOptions(value: Double): Self = StObject.set(x, "layerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFormats(value: js.Array[_]): Self = this.set("exportFormats", value.asInstanceOf[js.Any])
+    def setShouldTrim(value: Boolean): Self = StObject.set(x, "shouldTrim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludedLayerIdsVarargs(value: js.Any*): Self = this.set("includedLayerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludedLayerIds(value: js.Array[_]): Self = this.set("includedLayerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLayerOptions(value: Double): Self = this.set("layerOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldTrim(value: Boolean): Self = this.set("shouldTrim", value.asInstanceOf[js.Any])
+    def set_class(value: exportOptions): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

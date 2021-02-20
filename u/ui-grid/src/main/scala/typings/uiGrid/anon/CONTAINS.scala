@@ -1,11 +1,12 @@
 package typings.uiGrid.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CONTAINS extends js.Object {
+trait CONTAINS extends StObject {
   
   var CONTAINS: Double = js.native
   
@@ -50,51 +51,39 @@ object CONTAINS {
   }
   
   @scala.inline
-  implicit class CONTAINSOps[Self <: CONTAINS] (val x: Self) extends AnyVal {
+  implicit class CONTAINSMutableBuilder[Self <: CONTAINS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONTAINS(value: Double): Self = StObject.set(x, "CONTAINS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setENDS_WITH(value: Double): Self = StObject.set(x, "ENDS_WITH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEXACT(value: Double): Self = StObject.set(x, "EXACT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCONTAINS(value: Double): Self = this.set("CONTAINS", value.asInstanceOf[js.Any])
+    def setGREATER_THAN(value: Double): Self = StObject.set(x, "GREATER_THAN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setENDS_WITH(value: Double): Self = this.set("ENDS_WITH", value.asInstanceOf[js.Any])
+    def setGREATER_THAN_OR_EQUAL(value: Double): Self = StObject.set(x, "GREATER_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEXACT(value: Double): Self = this.set("EXACT", value.asInstanceOf[js.Any])
+    def setINPUT(value: String): Self = StObject.set(x, "INPUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGREATER_THAN(value: Double): Self = this.set("GREATER_THAN", value.asInstanceOf[js.Any])
+    def setLESS_THAN(value: Double): Self = StObject.set(x, "LESS_THAN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGREATER_THAN_OR_EQUAL(value: Double): Self = this.set("GREATER_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
+    def setLESS_THAN_OR_EQUAL(value: Double): Self = StObject.set(x, "LESS_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINPUT(value: String): Self = this.set("INPUT", value.asInstanceOf[js.Any])
+    def setNOT_EQUAL(value: Double): Self = StObject.set(x, "NOT_EQUAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLESS_THAN(value: Double): Self = this.set("LESS_THAN", value.asInstanceOf[js.Any])
+    def setSELECT(value: String): Self = StObject.set(x, "SELECT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLESS_THAN_OR_EQUAL(value: Double): Self = this.set("LESS_THAN_OR_EQUAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNOT_EQUAL(value: Double): Self = this.set("NOT_EQUAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSELECT(value: String): Self = this.set("SELECT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTARTS_WITH(value: Double): Self = this.set("STARTS_WITH", value.asInstanceOf[js.Any])
+    def setSTARTS_WITH(value: Double): Self = StObject.set(x, "STARTS_WITH", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The legacy PerformanceNavigation interface represents information about how the navigation to the current document was done. */
 @js.native
-trait PerformanceNavigation extends js.Object {
+trait PerformanceNavigation extends StObject {
   
   val TYPE_BACK_FORWARD: Double = js.native
   
@@ -40,39 +41,27 @@ object PerformanceNavigation {
   }
   
   @scala.inline
-  implicit class PerformanceNavigationOps[Self <: PerformanceNavigation] (val x: Self) extends AnyVal {
+  implicit class PerformanceNavigationMutableBuilder[Self <: PerformanceNavigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTYPE_BACK_FORWARD(value: Double): Self = StObject.set(x, "TYPE_BACK_FORWARD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTYPE_NAVIGATE(value: Double): Self = StObject.set(x, "TYPE_NAVIGATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTYPE_BACK_FORWARD(value: Double): Self = this.set("TYPE_BACK_FORWARD", value.asInstanceOf[js.Any])
+    def setTYPE_RELOAD(value: Double): Self = StObject.set(x, "TYPE_RELOAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTYPE_NAVIGATE(value: Double): Self = this.set("TYPE_NAVIGATE", value.asInstanceOf[js.Any])
+    def setTYPE_RESERVED(value: Double): Self = StObject.set(x, "TYPE_RESERVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTYPE_RELOAD(value: Double): Self = this.set("TYPE_RELOAD", value.asInstanceOf[js.Any])
+    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTYPE_RESERVED(value: Double): Self = this.set("TYPE_RESERVED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRedirectCount(value: Double): Self = this.set("redirectCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

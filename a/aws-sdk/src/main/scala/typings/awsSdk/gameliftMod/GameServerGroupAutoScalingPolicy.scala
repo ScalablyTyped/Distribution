@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameServerGroupAutoScalingPolicy extends js.Object {
+trait GameServerGroupAutoScalingPolicy extends StObject {
   
   /**
     * Length of time, in seconds, it takes for a new instance to start new game server processes and register with GameLift FleetIQ. Specifying a warm-up time can be useful, particularly with game servers that take a long time to start up, because it avoids prematurely starting new instances. 
@@ -26,27 +27,15 @@ object GameServerGroupAutoScalingPolicy {
   }
   
   @scala.inline
-  implicit class GameServerGroupAutoScalingPolicyOps[Self <: GameServerGroupAutoScalingPolicy] (val x: Self) extends AnyVal {
+  implicit class GameServerGroupAutoScalingPolicyMutableBuilder[Self <: GameServerGroupAutoScalingPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedInstanceWarmup(value: PositiveInteger): Self = StObject.set(x, "EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "EstimatedInstanceWarmup", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = this.set("TargetTrackingConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEstimatedInstanceWarmup(value: PositiveInteger): Self = this.set("EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedInstanceWarmup: Self = this.set("EstimatedInstanceWarmup", js.undefined)
+    def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = StObject.set(x, "TargetTrackingConfiguration", value.asInstanceOf[js.Any])
   }
 }

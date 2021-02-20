@@ -1,16 +1,16 @@
 package typings.naja
 
 import typings.naja.najaMod.Naja
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("naja/src/extensions/AbortExtension", JSImport.Namespace)
-@js.native
-object abortExtensionMod extends js.Object {
+object abortExtensionMod {
   
+  @JSImport("naja/src/extensions/AbortExtension", "AbortExtension")
   @js.native
-  class AbortExtension () extends js.Object {
+  class AbortExtension () extends StObject {
     
     def initialize(naja: Naja): js.Any = js.native
   }

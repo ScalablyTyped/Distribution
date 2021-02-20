@@ -9,12 +9,13 @@ import typings.got.gotStrings.uploadProgress
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GotEmitter extends js.Object {
+trait GotEmitter extends StObject {
   
   @JSName("addListener")
   def addListener_downloadProgress(event: downloadProgress, listener: js.Function1[/* progress */ Progress, Unit]): this.type = js.native

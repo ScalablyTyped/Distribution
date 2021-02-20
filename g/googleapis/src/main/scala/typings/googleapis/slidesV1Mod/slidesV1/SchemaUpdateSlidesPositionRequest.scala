@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Updates the position of slides in the presentation.
   */
 @js.native
-trait SchemaUpdateSlidesPositionRequest extends js.Object {
+trait SchemaUpdateSlidesPositionRequest extends StObject {
   
   /**
     * The index where the slides should be inserted, based on the slide
@@ -33,33 +34,21 @@ object SchemaUpdateSlidesPositionRequest {
   }
   
   @scala.inline
-  implicit class SchemaUpdateSlidesPositionRequestOps[Self <: SchemaUpdateSlidesPositionRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaUpdateSlidesPositionRequestMutableBuilder[Self <: SchemaUpdateSlidesPositionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertionIndexUndefined: Self = StObject.set(x, "insertionIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlideObjectIds(value: js.Array[String]): Self = StObject.set(x, "slideObjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertionIndex(value: Double): Self = this.set("insertionIndex", value.asInstanceOf[js.Any])
+    def setSlideObjectIdsUndefined: Self = StObject.set(x, "slideObjectIds", js.undefined)
     
     @scala.inline
-    def deleteInsertionIndex: Self = this.set("insertionIndex", js.undefined)
-    
-    @scala.inline
-    def setSlideObjectIdsVarargs(value: String*): Self = this.set("slideObjectIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSlideObjectIds(value: js.Array[String]): Self = this.set("slideObjectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlideObjectIds: Self = this.set("slideObjectIds", js.undefined)
+    def setSlideObjectIdsVarargs(value: String*): Self = StObject.set(x, "slideObjectIds", js.Array(value :_*))
   }
 }

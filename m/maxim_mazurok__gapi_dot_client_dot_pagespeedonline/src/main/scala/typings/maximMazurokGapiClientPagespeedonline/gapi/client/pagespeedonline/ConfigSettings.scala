@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigSettings extends js.Object {
+trait ConfigSettings extends StObject {
   
   /** How Lighthouse was run, e.g. from the Chrome extension or from the npm module. */
   var channel: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object ConfigSettings {
   }
   
   @scala.inline
-  implicit class ConfigSettingsOps[Self <: ConfigSettings] (val x: Self) extends AnyVal {
+  implicit class ConfigSettingsMutableBuilder[Self <: ConfigSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmulatedFormFactor(value: String): Self = StObject.set(x, "emulatedFormFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setEmulatedFormFactorUndefined: Self = StObject.set(x, "emulatedFormFactor", js.undefined)
     
     @scala.inline
-    def deleteChannel: Self = this.set("channel", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmulatedFormFactor(value: String): Self = this.set("emulatedFormFactor", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteEmulatedFormFactor: Self = this.set("emulatedFormFactor", js.undefined)
+    def setOnlyCategories(value: js.Any): Self = StObject.set(x, "onlyCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
-    
-    @scala.inline
-    def setOnlyCategories(value: js.Any): Self = this.set("onlyCategories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnlyCategories: Self = this.set("onlyCategories", js.undefined)
+    def setOnlyCategoriesUndefined: Self = StObject.set(x, "onlyCategories", js.undefined)
   }
 }

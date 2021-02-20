@@ -11,16 +11,18 @@ import typings.facebookInstantGames.FBInstant.Payments
 import typings.facebookInstantGames.FBInstant.Platform
 import typings.facebookInstantGames.FBInstant.Player
 import typings.facebookInstantGames.FBInstant.SharePayload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object FBInstant extends js.Object {
+  object FBInstant {
+    
+    @JSGlobal("FBInstant")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns whether or not the user is eligible to have shortcut creation requested.
@@ -32,6 +34,8 @@ object global extends js.Object {
       * @throws CLIENT_REQUIRES_UPDATE
       * @throws INVALID_OPERATION
       */
+    @JSGlobal("FBInstant.canCreateShortcutAsync")
+    @js.native
     def canCreateShortcutAsync(): js.Promise[Boolean] = js.native
     
     /**
@@ -40,12 +44,18 @@ object global extends js.Object {
       * @throws NETWORK_FAILURE
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
+    @JSGlobal("FBInstant.checkCanPlayerMatchAsync")
+    @js.native
     def checkCanPlayerMatchAsync(): js.Promise[Boolean] = js.native
     
     /**
       * Contains functions and properties related to the current game context.
       */
-    var context: Context = js.native
+    @JSGlobal("FBInstant.context")
+    @js.native
+    def context: Context = js.native
+    @scala.inline
+    def context_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
     
     /**
       * Prompts the user to create a shortcut to the game if they are eligible to Can only be called once per session. (see canCreateShortcutAsync)
@@ -54,6 +64,8 @@ object global extends js.Object {
       * @throws CLIENT_REQUIRES_UPDATE
       * @throws INVALID_OPERATION
       */
+    @JSGlobal("FBInstant.createShortcutAsync")
+    @js.native
     def createShortcutAsync(): js.Promise[Unit] = js.native
     
     /**
@@ -62,6 +74,8 @@ object global extends js.Object {
       *
       * @returns The name of the entry point from which the user started the game.
       */
+    @JSGlobal("FBInstant.getEntryPointAsync")
+    @js.native
     def getEntryPointAsync(): js.Promise[String] = js.native
     
     /**
@@ -72,6 +86,8 @@ object global extends js.Object {
       *
       * @returns Data associated with the current entry point.
       */
+    @JSGlobal("FBInstant.getEntryPointData")
+    @js.native
     def getEntryPointData(): js.Any = js.native
     
     /**
@@ -81,6 +97,8 @@ object global extends js.Object {
       * @throws ADS_TOO_MANY_INSTANCES
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
+    @JSGlobal("FBInstant.getInterstitialAdAsync")
+    @js.native
     def getInterstitialAdAsync(placementID: String): js.Promise[AdInstance] = js.native
     
     /**
@@ -94,6 +112,8 @@ object global extends js.Object {
       * @throws INVALID_OPERATION
       * @throws INVALID_PARAM
       */
+    @JSGlobal("FBInstant.getLeaderboardAsync")
+    @js.native
     def getLeaderboardAsync(name: String): js.Promise[Leaderboard] = js.native
     
     /**
@@ -102,11 +122,15 @@ object global extends js.Object {
       *
       * @returns The current locale.
       */
+    @JSGlobal("FBInstant.getLocale")
+    @js.native
     def getLocale(): String | Null = js.native
     
     /**
       * The platform on which the game is currently running. The value will always be null until FBInstant.initializeAsync() resolves.
       */
+    @JSGlobal("FBInstant.getPlatform")
+    @js.native
     def getPlatform(): Platform | Null = js.native
     
     /**
@@ -116,6 +140,8 @@ object global extends js.Object {
       * @throws ADS_TOO_MANY_INSTANCES
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
+    @JSGlobal("FBInstant.getRewardedVideoAsync")
+    @js.native
     def getRewardedVideoAsync(placementID: String): js.Promise[AdInstance] = js.native
     
     /**
@@ -123,6 +149,8 @@ object global extends js.Object {
       *
       * @returns The SDK version.
       */
+    @JSGlobal("FBInstant.getSDKVersion")
+    @js.native
     def getSDKVersion(): String = js.native
     
     /**
@@ -130,6 +158,8 @@ object global extends js.Object {
       *
       * @returns List of API functions that the client explicitly supports.
       */
+    @JSGlobal("FBInstant.getSupportedAPIs")
+    @js.native
     def getSupportedAPIs(): js.Array[String] = js.native
     
     /**
@@ -138,6 +168,8 @@ object global extends js.Object {
       * @returns A promise that resolves when the SDK is ready to use.
       * @throws INVALID_OPERATION
       */
+    @JSGlobal("FBInstant.initializeAsync")
+    @js.native
     def initializeAsync(): js.Promise[Unit] = js.native
     
     /**
@@ -149,9 +181,17 @@ object global extends js.Object {
       * and can only contain '_', '-', ' ', and alphanumeric characters. Values must be less than 100 characters in length.
       * @returns The error if the event failed to log; otherwise returns null.
       */
+    @JSGlobal("FBInstant.logEvent")
+    @js.native
     def logEvent(eventName: String): APIError | Null = js.native
+    @JSGlobal("FBInstant.logEvent")
+    @js.native
     def logEvent(eventName: String, valueToSum: js.UndefOr[scala.Nothing], parameters: StringDictionary[String]): APIError | Null = js.native
+    @JSGlobal("FBInstant.logEvent")
+    @js.native
     def logEvent(eventName: String, valueToSum: Double): APIError | Null = js.native
+    @JSGlobal("FBInstant.logEvent")
+    @js.native
     def logEvent(eventName: String, valueToSum: Double, parameters: StringDictionary[String]): APIError | Null = js.native
     
     /**
@@ -174,34 +214,60 @@ object global extends js.Object {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       * @throws INVALID_OPERATION
       */
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(
       matchTag: js.UndefOr[scala.Nothing],
       switchContextWhenMatched: js.UndefOr[scala.Nothing],
       offlineMatch: Boolean
     ): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(matchTag: js.UndefOr[scala.Nothing], switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(matchTag: js.UndefOr[scala.Nothing], switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(matchTag: String): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: js.UndefOr[scala.Nothing], offlineMatch: Boolean): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.matchPlayerAsync")
+    @js.native
     def matchPlayerAsync(matchTag: String, switchContextWhenMatched: Boolean, offlineMatch: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Set a callback to be fired when a pause event is triggered.
       * @param func A function to call when a pause event occurs.
       */
+    @JSGlobal("FBInstant.onPause")
+    @js.native
     def onPause(func: js.Function0[Unit]): Unit = js.native
     
     /**
       * Contains functions and properties related to payments and purchases of game products.
       */
-    var payments: Payments = js.native
+    @JSGlobal("FBInstant.payments")
+    @js.native
+    def payments: Payments = js.native
+    @scala.inline
+    def payments_=(x: Payments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("payments")(x.asInstanceOf[js.Any])
     
     /**
       * Contains functions and properties related to the current player.
       */
-    var player: Player = js.native
+    @JSGlobal("FBInstant.player")
+    @js.native
+    def player: Player = js.native
+    @scala.inline
+    def player_=(x: Player): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("player")(x.asInstanceOf[js.Any])
     
     /**
       * Posts the player's best score for the session to Facebook.
@@ -211,11 +277,15 @@ object global extends js.Object {
       * @param score An integer value representing the player's best score in a session.
       * @returns void
       */
+    @JSGlobal("FBInstant.postSessionScore")
+    @js.native
     def postSessionScore(score: Double): Unit = js.native
     
     /**
       * Quits the game.
       */
+    @JSGlobal("FBInstant.quit")
+    @js.native
     def quit(): Unit = js.native
     
     /**
@@ -223,6 +293,8 @@ object global extends js.Object {
       *
       * @param percentage A number between 0 and 100.
       */
+    @JSGlobal("FBInstant.setLoadingProgress")
+    @js.native
     def setLoadingProgress(percentage: Double): Unit = js.native
     
     /**
@@ -233,6 +305,8 @@ object global extends js.Object {
       *
       * @param sessionData An arbitrary data object, which must be less than or equal to 1000 characters when stringified.
       */
+    @JSGlobal("FBInstant.setSessionData")
+    @js.native
     def setSessionData(sessionData: js.Any): Unit = js.native
     
     /**
@@ -249,6 +323,8 @@ object global extends js.Object {
       * @throws CLIENT_UNSUPPORTED_OPERATION
       * @throws INVALID_OPERATION
       */
+    @JSGlobal("FBInstant.shareAsync")
+    @js.native
     def shareAsync(payload: SharePayload): js.Promise[Unit] = js.native
     
     /**
@@ -259,6 +335,8 @@ object global extends js.Object {
       * @throws INVALID_PARAM
       * @throws CLIENT_UNSUPPORTED_OPERATION
       */
+    @JSGlobal("FBInstant.startGameAsync")
+    @js.native
     def startGameAsync(): js.Promise[Unit] = js.native
     
     /**
@@ -272,7 +350,11 @@ object global extends js.Object {
       * @throws PENDING_REQUEST
       * @throws CLIENT_REQUIRES_UPDATE
       */
+    @JSGlobal("FBInstant.switchGameAsync")
+    @js.native
     def switchGameAsync(appID: String): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.switchGameAsync")
+    @js.native
     def switchGameAsync(appID: String, data: js.Any): js.Promise[Unit] = js.native
     
     /**
@@ -285,7 +367,11 @@ object global extends js.Object {
       * @throws PENDING_REQUEST
       * @throws INVALID_OPERATION
       */
+    @JSGlobal("FBInstant.updateAsync")
+    @js.native
     def updateAsync(payload: CustomUpdatePayload): js.Promise[Unit] = js.native
+    @JSGlobal("FBInstant.updateAsync")
+    @js.native
     def updateAsync(payload: LeaderboardUpdatePayload): js.Promise[Unit] = js.native
   }
 }

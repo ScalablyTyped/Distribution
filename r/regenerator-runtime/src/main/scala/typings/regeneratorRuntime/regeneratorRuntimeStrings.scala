@@ -1,57 +1,50 @@
 package typings.regeneratorRuntime
 
 import typings.regeneratorRuntime.mod.CompletionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regeneratorRuntimeStrings {
   
+  @js.native
+  sealed trait break extends CompletionType
   @scala.inline
   def break: break = "break".asInstanceOf[break]
   
+  @js.native
+  sealed trait continue extends CompletionType
   @scala.inline
   def continue: continue = "continue".asInstanceOf[continue]
   
+  @js.native
+  sealed trait end extends StObject
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
+  @js.native
+  sealed trait next extends StObject
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   
+  @js.native
+  sealed trait normal extends CompletionType
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
+  @js.native
+  sealed trait `return` extends CompletionType
   @scala.inline
   def `return`: `return` = "return".asInstanceOf[`return`]
   
+  @js.native
+  sealed trait root extends StObject
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
-  
-  @js.native
-  sealed trait break extends CompletionType
-  
-  @js.native
-  sealed trait continue extends CompletionType
-  
-  @js.native
-  sealed trait end extends js.Object
-  
-  @js.native
-  sealed trait next extends js.Object
-  
-  @js.native
-  sealed trait normal extends CompletionType
-  
-  @js.native
-  sealed trait `return` extends CompletionType
-  
-  @js.native
-  sealed trait root extends js.Object
-  
   @js.native
   sealed trait `throw` extends CompletionType
+  @scala.inline
+  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
 }

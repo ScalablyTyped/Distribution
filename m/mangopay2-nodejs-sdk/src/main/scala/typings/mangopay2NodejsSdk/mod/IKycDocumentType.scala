@@ -5,12 +5,13 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ARTICLES_OF_ASSOCIAT
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.IDENTITY_PROOF
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGISTRATION_PROOF
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHAREHOLDER_DECLARATION
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IKycDocumentType extends js.Object {
+trait IKycDocumentType extends StObject {
   
   var AddressProof: ADDRESS_PROOF = js.native
   
@@ -37,33 +38,21 @@ object IKycDocumentType {
   }
   
   @scala.inline
-  implicit class IKycDocumentTypeOps[Self <: IKycDocumentType] (val x: Self) extends AnyVal {
+  implicit class IKycDocumentTypeMutableBuilder[Self <: IKycDocumentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressProof(value: ADDRESS_PROOF): Self = StObject.set(x, "AddressProof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArticlesOfAssociation(value: ARTICLES_OF_ASSOCIATION): Self = StObject.set(x, "ArticlesOfAssociation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentityProof(value: IDENTITY_PROOF): Self = StObject.set(x, "IdentityProof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressProof(value: ADDRESS_PROOF): Self = this.set("AddressProof", value.asInstanceOf[js.Any])
+    def setRegistrationProof(value: REGISTRATION_PROOF): Self = StObject.set(x, "RegistrationProof", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArticlesOfAssociation(value: ARTICLES_OF_ASSOCIATION): Self = this.set("ArticlesOfAssociation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdentityProof(value: IDENTITY_PROOF): Self = this.set("IdentityProof", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegistrationProof(value: REGISTRATION_PROOF): Self = this.set("RegistrationProof", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShareholderDeclaration(value: SHAREHOLDER_DECLARATION): Self = this.set("ShareholderDeclaration", value.asInstanceOf[js.Any])
+    def setShareholderDeclaration(value: SHAREHOLDER_DECLARATION): Self = StObject.set(x, "ShareholderDeclaration", value.asInstanceOf[js.Any])
   }
 }

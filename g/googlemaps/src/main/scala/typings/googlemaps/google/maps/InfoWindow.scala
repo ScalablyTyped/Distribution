@@ -7,6 +7,7 @@ import typings.googlemaps.googlemapsStrings.position_changed
 import typings.googlemaps.googlemapsStrings.zindex_changed
 import typings.std.Element
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

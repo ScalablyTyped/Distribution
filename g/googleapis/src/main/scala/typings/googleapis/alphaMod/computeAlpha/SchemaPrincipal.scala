@@ -1,6 +1,7 @@
 package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All fields defined in a principal are ANDed.
   */
 @js.native
-trait SchemaPrincipal extends js.Object {
+trait SchemaPrincipal extends StObject {
   
   /**
     * An expression to specify custom condition.
@@ -75,102 +76,90 @@ object SchemaPrincipal {
   }
   
   @scala.inline
-  implicit class SchemaPrincipalOps[Self <: SchemaPrincipal] (val x: Self) extends AnyVal {
+  implicit class SchemaPrincipalMutableBuilder[Self <: SchemaPrincipal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    def setIps(value: js.Array[String]): Self = StObject.set(x, "ips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("groups", js.undefined)
+    def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
     
     @scala.inline
-    def setIpsVarargs(value: String*): Self = this.set("ips", js.Array(value :_*))
+    def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIps(value: js.Array[String]): Self = this.set("ips", value.asInstanceOf[js.Any])
+    def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
     
     @scala.inline
-    def deleteIps: Self = this.set("ips", js.undefined)
+    def setNamespacesVarargs(value: String*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
     
     @scala.inline
-    def setNamespacesVarargs(value: String*): Self = this.set("namespaces", js.Array(value :_*))
+    def setNotGroups(value: js.Array[String]): Self = StObject.set(x, "notGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaces(value: js.Array[String]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
+    def setNotGroupsUndefined: Self = StObject.set(x, "notGroups", js.undefined)
     
     @scala.inline
-    def deleteNamespaces: Self = this.set("namespaces", js.undefined)
+    def setNotGroupsVarargs(value: String*): Self = StObject.set(x, "notGroups", js.Array(value :_*))
     
     @scala.inline
-    def setNotGroupsVarargs(value: String*): Self = this.set("notGroups", js.Array(value :_*))
+    def setNotIps(value: js.Array[String]): Self = StObject.set(x, "notIps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotGroups(value: js.Array[String]): Self = this.set("notGroups", value.asInstanceOf[js.Any])
+    def setNotIpsUndefined: Self = StObject.set(x, "notIps", js.undefined)
     
     @scala.inline
-    def deleteNotGroups: Self = this.set("notGroups", js.undefined)
+    def setNotIpsVarargs(value: String*): Self = StObject.set(x, "notIps", js.Array(value :_*))
     
     @scala.inline
-    def setNotIpsVarargs(value: String*): Self = this.set("notIps", js.Array(value :_*))
+    def setNotNamespaces(value: js.Array[String]): Self = StObject.set(x, "notNamespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotIps(value: js.Array[String]): Self = this.set("notIps", value.asInstanceOf[js.Any])
+    def setNotNamespacesUndefined: Self = StObject.set(x, "notNamespaces", js.undefined)
     
     @scala.inline
-    def deleteNotIps: Self = this.set("notIps", js.undefined)
+    def setNotNamespacesVarargs(value: String*): Self = StObject.set(x, "notNamespaces", js.Array(value :_*))
     
     @scala.inline
-    def setNotNamespacesVarargs(value: String*): Self = this.set("notNamespaces", js.Array(value :_*))
+    def setNotUsers(value: js.Array[String]): Self = StObject.set(x, "notUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotNamespaces(value: js.Array[String]): Self = this.set("notNamespaces", value.asInstanceOf[js.Any])
+    def setNotUsersUndefined: Self = StObject.set(x, "notUsers", js.undefined)
     
     @scala.inline
-    def deleteNotNamespaces: Self = this.set("notNamespaces", js.undefined)
+    def setNotUsersVarargs(value: String*): Self = StObject.set(x, "notUsers", js.Array(value :_*))
     
     @scala.inline
-    def setNotUsersVarargs(value: String*): Self = this.set("notUsers", js.Array(value :_*))
+    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotUsers(value: js.Array[String]): Self = this.set("notUsers", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteNotUsers: Self = this.set("notUsers", js.undefined)
+    def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setUsersVarargs(value: String*): Self = this.set("users", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsers(value: js.Array[String]): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsers: Self = this.set("users", js.undefined)
+    def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

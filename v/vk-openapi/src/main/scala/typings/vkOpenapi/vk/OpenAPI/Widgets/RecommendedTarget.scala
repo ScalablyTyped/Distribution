@@ -1,5 +1,6 @@
 package typings.vkOpenapi.vk.OpenAPI.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vkOpenapi.vkOpenapiStrings.top
   - typings.vkOpenapi.vkOpenapiStrings.parent
 */
-trait RecommendedTarget extends js.Object
+trait RecommendedTarget extends StObject
 object RecommendedTarget {
   
   @scala.inline

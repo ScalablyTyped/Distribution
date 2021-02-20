@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.Network.Socket.TCP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * callback when a listener accepts a connection.
   */
 @js.native
-trait AcceptedCallbackArgs extends js.Object {
+trait AcceptedCallbackArgs extends StObject {
   
   /**
     * Socket which represents the inbound connection.
@@ -31,30 +32,18 @@ object AcceptedCallbackArgs {
   }
   
   @scala.inline
-  implicit class AcceptedCallbackArgsOps[Self <: AcceptedCallbackArgs] (val x: Self) extends AnyVal {
+  implicit class AcceptedCallbackArgsMutableBuilder[Self <: AcceptedCallbackArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInbound(value: TCP): Self = StObject.set(x, "inbound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInboundUndefined: Self = StObject.set(x, "inbound", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSocket(value: TCP): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInbound(value: TCP): Self = this.set("inbound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInbound: Self = this.set("inbound", js.undefined)
-    
-    @scala.inline
-    def setSocket(value: TCP): Self = this.set("socket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocket: Self = this.set("socket", js.undefined)
+    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
   }
 }

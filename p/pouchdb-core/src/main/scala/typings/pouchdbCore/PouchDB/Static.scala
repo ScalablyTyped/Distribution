@@ -14,6 +14,7 @@ import typings.pouchdbCore.pouchdbCoreStrings.destroyed
 import typings.std.Request
 import typings.std.RequestInit
 import typings.std.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

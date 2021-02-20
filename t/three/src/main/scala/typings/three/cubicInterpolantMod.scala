@@ -1,14 +1,14 @@
 package typings.three
 
 import typings.three.interpolantMod.Interpolant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/interpolants/CubicInterpolant", JSImport.Namespace)
-@js.native
-object cubicInterpolantMod extends js.Object {
+object cubicInterpolantMod {
   
+  @JSImport("three/src/math/interpolants/CubicInterpolant", "CubicInterpolant")
   @js.native
   class CubicInterpolant protected () extends Interpolant {
     def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()

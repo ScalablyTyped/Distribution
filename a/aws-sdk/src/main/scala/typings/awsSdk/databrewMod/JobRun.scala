@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobRun extends js.Object {
+trait JobRun extends StObject {
   
   /**
     * The number of times that DataBrew has attempted to run the job.
@@ -86,105 +87,93 @@ object JobRun {
   }
   
   @scala.inline
-  implicit class JobRunOps[Self <: JobRun] (val x: Self) extends AnyVal {
+  implicit class JobRunMutableBuilder[Self <: JobRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttempt(value: Attempt): Self = StObject.set(x, "Attempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttemptUndefined: Self = StObject.set(x, "Attempt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedOn(value: Date): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttempt(value: Attempt): Self = this.set("Attempt", value.asInstanceOf[js.Any])
+    def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
     @scala.inline
-    def deleteAttempt: Self = this.set("Attempt", js.undefined)
+    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedOn(value: Date): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    def setDatasetNameUndefined: Self = StObject.set(x, "DatasetName", js.undefined)
     
     @scala.inline
-    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    def setErrorMessage(value: JobRunErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetName(value: DatasetName): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteDatasetName: Self = this.set("DatasetName", js.undefined)
+    def setExecutionTime(value: ExecutionTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: JobRunErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTime(value: ExecutionTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
     @scala.inline
-    def deleteExecutionTime: Self = this.set("ExecutionTime", js.undefined)
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
     @scala.inline
-    def deleteJobName: Self = this.set("JobName", js.undefined)
+    def setLogSubscription(value: LogSubscription): Self = StObject.set(x, "LogSubscription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    def setLogSubscriptionUndefined: Self = StObject.set(x, "LogSubscription", js.undefined)
     
     @scala.inline
-    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    def setOutputs(value: OutputList): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogSubscription(value: LogSubscription): Self = this.set("LogSubscription", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
     @scala.inline
-    def deleteLogSubscription: Self = this.set("LogSubscription", js.undefined)
+    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: Output*): Self = this.set("Outputs", js.Array(value :_*))
+    def setRecipeReference(value: RecipeReference): Self = StObject.set(x, "RecipeReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: OutputList): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    def setRecipeReferenceUndefined: Self = StObject.set(x, "RecipeReference", js.undefined)
     
     @scala.inline
-    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipeReference(value: RecipeReference): Self = this.set("RecipeReference", value.asInstanceOf[js.Any])
+    def setRunIdUndefined: Self = StObject.set(x, "RunId", js.undefined)
     
     @scala.inline
-    def deleteRecipeReference: Self = this.set("RecipeReference", js.undefined)
+    def setStartedBy(value: StartedBy): Self = StObject.set(x, "StartedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunId(value: JobRunId): Self = this.set("RunId", value.asInstanceOf[js.Any])
+    def setStartedByUndefined: Self = StObject.set(x, "StartedBy", js.undefined)
     
     @scala.inline
-    def deleteRunId: Self = this.set("RunId", js.undefined)
+    def setStartedOn(value: Date): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedBy(value: StartedBy): Self = this.set("StartedBy", value.asInstanceOf[js.Any])
+    def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
     @scala.inline
-    def deleteStartedBy: Self = this.set("StartedBy", js.undefined)
+    def setState(value: JobRunState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedOn(value: Date): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
-    
-    @scala.inline
-    def setState(value: JobRunState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

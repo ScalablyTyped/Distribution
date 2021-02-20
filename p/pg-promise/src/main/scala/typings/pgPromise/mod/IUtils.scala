@@ -2,6 +2,7 @@ package typings.pgPromise.mod
 
 import typings.pgPromise.anon.IgnoreErrors
 import typings.std.IArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // General-purpose functions
 // API: http://vitaly-t.github.io/pg-promise/utils.html
 @js.native
-trait IUtils extends js.Object {
+trait IUtils extends StObject {
   
   def camelize(text: String): String = js.native
   

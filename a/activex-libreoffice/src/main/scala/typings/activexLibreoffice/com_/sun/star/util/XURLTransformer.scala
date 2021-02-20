@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,30 +71,18 @@ object XURLTransformer {
   }
   
   @scala.inline
-  implicit class XURLTransformerOps[Self <: XURLTransformer] (val x: Self) extends AnyVal {
+  implicit class XURLTransformerMutableBuilder[Self <: XURLTransformer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssemble(value: js.Array[URL] => Boolean): Self = StObject.set(x, "assemble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPresentation(value: (URL, Boolean) => String): Self = StObject.set(x, "getPresentation", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParseSmart(value: (js.Array[URL], String) => Boolean): Self = StObject.set(x, "parseSmart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAssemble(value: js.Array[URL] => Boolean): Self = this.set("assemble", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPresentation(value: (URL, Boolean) => String): Self = this.set("getPresentation", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setParseSmart(value: (js.Array[URL], String) => Boolean): Self = this.set("parseSmart", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setParseStrict(value: js.Array[URL] => Boolean): Self = this.set("parseStrict", js.Any.fromFunction1(value))
+    def setParseStrict(value: js.Array[URL] => Boolean): Self = StObject.set(x, "parseStrict", js.Any.fromFunction1(value))
   }
 }

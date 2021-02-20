@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Register extends js.Object {
+trait Register extends StObject {
   
   /*Registers a callback to be called when a particular file is completely loaded and processed. (The callback is
     * called when the file makes its MathJax.Ajax.loadComplete() call.) The file should be the complete file name,
@@ -44,30 +45,18 @@ object Register {
   }
   
   @scala.inline
-  implicit class RegisterOps[Self <: Register] (val x: Self) extends AnyVal {
+  implicit class RegisterMutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadHook(value: (String, js.Function) => Unit): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "MessageHook", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreProcessor(value: js.Any => Unit): Self = StObject.set(x, "PreProcessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadHook(value: (String, js.Function) => Unit): Self = this.set("LoadHook", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setMessageHook(value: (String, js.Any) => Unit): Self = this.set("MessageHook", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPreProcessor(value: js.Any => Unit): Self = this.set("PreProcessor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartupHook(value: (String, js.Any) => Unit): Self = this.set("StartupHook", js.Any.fromFunction2(value))
+    def setStartupHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "StartupHook", js.Any.fromFunction2(value))
   }
 }

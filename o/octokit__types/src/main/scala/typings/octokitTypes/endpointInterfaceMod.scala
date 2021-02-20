@@ -13,16 +13,15 @@ import typings.octokitTypes.requestOptionsMod.RequestOptions
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.octokitTypes.routeMod.Route
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/types/dist-types/EndpointInterface", JSImport.Namespace)
-@js.native
-object endpointInterfaceMod extends js.Object {
+object endpointInterfaceMod {
   
   @js.native
-  trait EndpointInterface[D /* <: js.Object */] extends js.Object {
+  trait EndpointInterface[D /* <: js.Object */] extends StObject {
     
     /**
       * Transforms a GitHub REST API endpoint into generic request options

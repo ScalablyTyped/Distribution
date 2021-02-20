@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.lambda
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetFunctionDeadLetterConfig extends js.Object {
+trait GetFunctionDeadLetterConfig extends StObject {
   
   var targetArn: String = js.native
 }
@@ -18,21 +19,9 @@ object GetFunctionDeadLetterConfig {
   }
   
   @scala.inline
-  implicit class GetFunctionDeadLetterConfigOps[Self <: GetFunctionDeadLetterConfig] (val x: Self) extends AnyVal {
+  implicit class GetFunctionDeadLetterConfigMutableBuilder[Self <: GetFunctionDeadLetterConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetArn(value: String): Self = this.set("targetArn", value.asInstanceOf[js.Any])
+    def setTargetArn(value: String): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

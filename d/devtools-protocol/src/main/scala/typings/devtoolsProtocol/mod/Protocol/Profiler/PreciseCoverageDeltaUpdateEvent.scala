@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PreciseCoverageDeltaUpdateEvent extends js.Object {
+trait PreciseCoverageDeltaUpdateEvent extends StObject {
   
   /**
     * Identifier for distinguishing coverage events.
@@ -31,30 +32,18 @@ object PreciseCoverageDeltaUpdateEvent {
   }
   
   @scala.inline
-  implicit class PreciseCoverageDeltaUpdateEventOps[Self <: PreciseCoverageDeltaUpdateEvent] (val x: Self) extends AnyVal {
+  implicit class PreciseCoverageDeltaUpdateEventMutableBuilder[Self <: PreciseCoverageDeltaUpdateEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOccassion(value: String): Self = StObject.set(x, "occassion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
     
     @scala.inline
-    def setOccassion(value: String): Self = this.set("occassion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultVarargs(value: ScriptCoverage*): Self = this.set("result", js.Array(value :_*))
-    
-    @scala.inline
-    def setResult(value: js.Array[ScriptCoverage]): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

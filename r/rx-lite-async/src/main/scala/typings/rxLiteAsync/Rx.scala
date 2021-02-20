@@ -3,16 +3,15 @@ package typings.rxLiteAsync
 import typings.rxCore.Rx.IPromise
 import typings.rxCore.Rx.IScheduler
 import typings.rxCore.Rx.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
-  trait ObservableStatic extends js.Object {
+  trait ObservableStatic extends StObject {
     
     def start[T](func: js.Function0[T]): Observable[T] = js.native
     def start[T](func: js.Function0[T], context: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native

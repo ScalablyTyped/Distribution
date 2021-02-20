@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanResponderCallbacks extends js.Object {
+trait PanResponderCallbacks extends StObject {
   
   var onMoveShouldSetPanResponder: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
@@ -68,96 +69,84 @@ object PanResponderCallbacks {
   }
   
   @scala.inline
-  implicit class PanResponderCallbacksOps[Self <: PanResponderCallbacks] (val x: Self) extends AnyVal {
+  implicit class PanResponderCallbacksMutableBuilder[Self <: PanResponderCallbacks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnMoveShouldSetPanResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onMoveShouldSetPanResponder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnMoveShouldSetPanResponderCapture(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onMoveShouldSetPanResponderCapture", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMoveShouldSetPanResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetPanResponderCapture", js.undefined)
     
     @scala.inline
-    def setOnMoveShouldSetPanResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = this.set("onMoveShouldSetPanResponder", js.Any.fromFunction2(value))
+    def setOnMoveShouldSetPanResponderUndefined: Self = StObject.set(x, "onMoveShouldSetPanResponder", js.undefined)
     
     @scala.inline
-    def deleteOnMoveShouldSetPanResponder: Self = this.set("onMoveShouldSetPanResponder", js.undefined)
+    def setOnPanResponderEnd(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderEnd", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnMoveShouldSetPanResponderCapture(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = this.set("onMoveShouldSetPanResponderCapture", js.Any.fromFunction2(value))
+    def setOnPanResponderEndUndefined: Self = StObject.set(x, "onPanResponderEnd", js.undefined)
     
     @scala.inline
-    def deleteOnMoveShouldSetPanResponderCapture: Self = this.set("onMoveShouldSetPanResponderCapture", js.undefined)
+    def setOnPanResponderGrant(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderGrant", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderEnd(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderEnd", js.Any.fromFunction2(value))
+    def setOnPanResponderGrantUndefined: Self = StObject.set(x, "onPanResponderGrant", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderEnd: Self = this.set("onPanResponderEnd", js.undefined)
+    def setOnPanResponderMove(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderMove", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderGrant(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderGrant", js.Any.fromFunction2(value))
+    def setOnPanResponderMoveUndefined: Self = StObject.set(x, "onPanResponderMove", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderGrant: Self = this.set("onPanResponderGrant", js.undefined)
+    def setOnPanResponderReject(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderReject", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderMove(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderMove", js.Any.fromFunction2(value))
+    def setOnPanResponderRejectUndefined: Self = StObject.set(x, "onPanResponderReject", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderMove: Self = this.set("onPanResponderMove", js.undefined)
+    def setOnPanResponderRelease(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderRelease", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderReject(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderReject", js.Any.fromFunction2(value))
+    def setOnPanResponderReleaseUndefined: Self = StObject.set(x, "onPanResponderRelease", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderReject: Self = this.set("onPanResponderReject", js.undefined)
+    def setOnPanResponderStart(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderRelease(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderRelease", js.Any.fromFunction2(value))
+    def setOnPanResponderStartUndefined: Self = StObject.set(x, "onPanResponderStart", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderRelease: Self = this.set("onPanResponderRelease", js.undefined)
+    def setOnPanResponderTerminate(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = StObject.set(x, "onPanResponderTerminate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderStart(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderStart", js.Any.fromFunction2(value))
+    def setOnPanResponderTerminateUndefined: Self = StObject.set(x, "onPanResponderTerminate", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderStart: Self = this.set("onPanResponderStart", js.undefined)
+    def setOnPanResponderTerminationRequest(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onPanResponderTerminationRequest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderTerminate(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Unit): Self = this.set("onPanResponderTerminate", js.Any.fromFunction2(value))
+    def setOnPanResponderTerminationRequestUndefined: Self = StObject.set(x, "onPanResponderTerminationRequest", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderTerminate: Self = this.set("onPanResponderTerminate", js.undefined)
+    def setOnShouldBlockNativeResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onShouldBlockNativeResponder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnPanResponderTerminationRequest(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = this.set("onPanResponderTerminationRequest", js.Any.fromFunction2(value))
+    def setOnShouldBlockNativeResponderUndefined: Self = StObject.set(x, "onShouldBlockNativeResponder", js.undefined)
     
     @scala.inline
-    def deleteOnPanResponderTerminationRequest: Self = this.set("onPanResponderTerminationRequest", js.undefined)
+    def setOnStartShouldSetPanResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onStartShouldSetPanResponder", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnShouldBlockNativeResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = this.set("onShouldBlockNativeResponder", js.Any.fromFunction2(value))
+    def setOnStartShouldSetPanResponderCapture(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = StObject.set(x, "onStartShouldSetPanResponderCapture", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnShouldBlockNativeResponder: Self = this.set("onShouldBlockNativeResponder", js.undefined)
+    def setOnStartShouldSetPanResponderCaptureUndefined: Self = StObject.set(x, "onStartShouldSetPanResponderCapture", js.undefined)
     
     @scala.inline
-    def setOnStartShouldSetPanResponder(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = this.set("onStartShouldSetPanResponder", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnStartShouldSetPanResponder: Self = this.set("onStartShouldSetPanResponder", js.undefined)
-    
-    @scala.inline
-    def setOnStartShouldSetPanResponderCapture(value: (/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState) => Boolean): Self = this.set("onStartShouldSetPanResponderCapture", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnStartShouldSetPanResponderCapture: Self = this.set("onStartShouldSetPanResponderCapture", js.undefined)
+    def setOnStartShouldSetPanResponderUndefined: Self = StObject.set(x, "onStartShouldSetPanResponder", js.undefined)
   }
 }

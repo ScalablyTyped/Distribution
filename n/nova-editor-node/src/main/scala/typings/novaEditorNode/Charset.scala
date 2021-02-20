@@ -1,12 +1,13 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/charset/
 @js.native
-trait Charset extends js.Object {
+trait Charset extends StObject {
   
   def concat(charsets: Charset*): Charset = js.native
   
@@ -21,24 +22,12 @@ object Charset {
   }
   
   @scala.inline
-  implicit class CharsetOps[Self <: Charset] (val x: Self) extends AnyVal {
+  implicit class CharsetMutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConcat(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConcat(value: /* repeated */ Charset => Charset): Self = this.set("concat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIntersect(value: /* repeated */ Charset => Charset): Self = this.set("intersect", js.Any.fromFunction1(value))
+    def setIntersect(value: /* repeated */ Charset => Charset): Self = StObject.set(x, "intersect", js.Any.fromFunction1(value))
   }
 }

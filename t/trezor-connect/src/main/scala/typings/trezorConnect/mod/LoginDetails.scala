@@ -1,11 +1,12 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginDetails extends js.Object {
+trait LoginDetails extends StObject {
   
   var address: String = js.native
   
@@ -22,27 +23,15 @@ object LoginDetails {
   }
   
   @scala.inline
-  implicit class LoginDetailsOps[Self <: LoginDetails] (val x: Self) extends AnyVal {
+  implicit class LoginDetailsMutableBuilder[Self <: LoginDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKey(value: String): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

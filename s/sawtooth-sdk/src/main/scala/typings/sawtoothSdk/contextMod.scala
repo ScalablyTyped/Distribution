@@ -1,16 +1,16 @@
 package typings.sawtoothSdk
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sawtooth-sdk/processor/context", JSImport.Namespace)
-@js.native
-object contextMod extends js.Object {
+object contextMod {
   
+  @JSImport("sawtooth-sdk/processor/context", "Context")
   @js.native
-  class Context protected () extends js.Object {
+  class Context protected () extends StObject {
     def this(stream: js.Any, contextId: String) = this()
     
     /**

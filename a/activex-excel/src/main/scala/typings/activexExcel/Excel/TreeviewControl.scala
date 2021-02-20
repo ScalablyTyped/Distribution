@@ -1,12 +1,13 @@
 package typings.activexExcel.Excel
 
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeviewControl extends js.Object {
+trait TreeviewControl extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -38,36 +39,24 @@ object TreeviewControl {
   }
   
   @scala.inline
-  implicit class TreeviewControlOps[Self <: TreeviewControl] (val x: Self) extends AnyVal {
+  implicit class TreeviewControlMutableBuilder[Self <: TreeviewControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrilled(value: js.Any): Self = StObject.set(x, "Drilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotTreeviewControl_typekey(value: TreeviewControl): Self = StObject.set(x, "Excel.TreeviewControl_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setHidden(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrilled(value: js.Any): Self = this.set("Drilled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcelDotTreeviewControl_typekey(value: TreeviewControl): Self = this.set("Excel.TreeviewControl_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHidden(value: SafeArray[SafeArray[String]]): Self = this.set("Hidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

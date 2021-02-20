@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorPasteCleanup extends js.Object {
+trait EditorPasteCleanup extends StObject {
   
   var all: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object EditorPasteCleanup {
   }
   
   @scala.inline
-  implicit class EditorPasteCleanupOps[Self <: EditorPasteCleanup] (val x: Self) extends AnyVal {
+  implicit class EditorPasteCleanupMutableBuilder[Self <: EditorPasteCleanup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCss(value: Boolean): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setCustom(value: js.Function): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCss(value: Boolean): Self = this.set("css", value.asInstanceOf[js.Any])
+    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
     @scala.inline
-    def deleteCss: Self = this.set("css", js.undefined)
+    def setKeepNewLines(value: Boolean): Self = StObject.set(x, "keepNewLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: js.Function): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setKeepNewLinesUndefined: Self = StObject.set(x, "keepNewLines", js.undefined)
     
     @scala.inline
-    def deleteCustom: Self = this.set("custom", js.undefined)
+    def setMsAllFormatting(value: Boolean): Self = StObject.set(x, "msAllFormatting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepNewLines(value: Boolean): Self = this.set("keepNewLines", value.asInstanceOf[js.Any])
+    def setMsAllFormattingUndefined: Self = StObject.set(x, "msAllFormatting", js.undefined)
     
     @scala.inline
-    def deleteKeepNewLines: Self = this.set("keepNewLines", js.undefined)
+    def setMsConvertLists(value: Boolean): Self = StObject.set(x, "msConvertLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsAllFormatting(value: Boolean): Self = this.set("msAllFormatting", value.asInstanceOf[js.Any])
+    def setMsConvertListsUndefined: Self = StObject.set(x, "msConvertLists", js.undefined)
     
     @scala.inline
-    def deleteMsAllFormatting: Self = this.set("msAllFormatting", js.undefined)
+    def setMsTags(value: Boolean): Self = StObject.set(x, "msTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsConvertLists(value: Boolean): Self = this.set("msConvertLists", value.asInstanceOf[js.Any])
+    def setMsTagsUndefined: Self = StObject.set(x, "msTags", js.undefined)
     
     @scala.inline
-    def deleteMsConvertLists: Self = this.set("msConvertLists", js.undefined)
+    def setNone(value: Boolean): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsTags(value: Boolean): Self = this.set("msTags", value.asInstanceOf[js.Any])
+    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
     
     @scala.inline
-    def deleteMsTags: Self = this.set("msTags", js.undefined)
+    def setSpan(value: Boolean): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNone(value: Boolean): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNone: Self = this.set("none", js.undefined)
-    
-    @scala.inline
-    def setSpan(value: Boolean): Self = this.set("span", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpan: Self = this.set("span", js.undefined)
+    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
   }
 }

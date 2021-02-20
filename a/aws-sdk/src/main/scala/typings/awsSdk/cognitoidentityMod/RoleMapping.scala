@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoleMapping extends js.Object {
+trait RoleMapping extends StObject {
   
   /**
     * If you specify Token or Rules as the Type, AmbiguousRoleResolution is required. Specifies the action to be taken if either no rules match the claim value for the Rules type, or there is no cognito:preferred_role claim and there are multiple cognito:roles matches for the Token type.
@@ -31,33 +32,21 @@ object RoleMapping {
   }
   
   @scala.inline
-  implicit class RoleMappingOps[Self <: RoleMapping] (val x: Self) extends AnyVal {
+  implicit class RoleMappingMutableBuilder[Self <: RoleMapping] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "AmbiguousRoleResolution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRulesConfiguration(value: RulesConfigurationType): Self = StObject.set(x, "RulesConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: RoleMappingType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setRulesConfigurationUndefined: Self = StObject.set(x, "RulesConfiguration", js.undefined)
     
     @scala.inline
-    def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType): Self = this.set("AmbiguousRoleResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmbiguousRoleResolution: Self = this.set("AmbiguousRoleResolution", js.undefined)
-    
-    @scala.inline
-    def setRulesConfiguration(value: RulesConfigurationType): Self = this.set("RulesConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRulesConfiguration: Self = this.set("RulesConfiguration", js.undefined)
+    def setType(value: RoleMappingType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

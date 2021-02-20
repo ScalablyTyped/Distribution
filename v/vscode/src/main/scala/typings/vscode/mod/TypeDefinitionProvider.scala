@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeDefinitionProvider extends js.Object {
+trait TypeDefinitionProvider extends StObject {
   
   /**
     * Provide the type definition of the symbol at the given position and document.
@@ -29,23 +30,11 @@ object TypeDefinitionProvider {
   }
   
   @scala.inline
-  implicit class TypeDefinitionProviderOps[Self <: TypeDefinitionProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TypeDefinitionProviderMutableBuilder[Self <: TypeDefinitionProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setProvideTypeDefinition(
       value: (TextDocument, Position, CancellationToken) => ProviderResult[Definition | js.Array[DefinitionLink]]
-    ): Self = this.set("provideTypeDefinition", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "provideTypeDefinition", js.Any.fromFunction3(value))
   }
 }

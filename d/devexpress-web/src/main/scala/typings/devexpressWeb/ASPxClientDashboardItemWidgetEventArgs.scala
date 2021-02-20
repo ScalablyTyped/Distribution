@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ASPxClientDashboardItemWidgetEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientDashboardItemWidgetEventArgsOps[Self <: ASPxClientDashboardItemWidgetEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDashboardItemWidgetEventArgsMutableBuilder[Self <: ASPxClientDashboardItemWidgetEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetWidget(value: () => js.Any): Self = StObject.set(x, "GetWidget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetWidget(value: () => js.Any): Self = this.set("GetWidget", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setItemName(value: String): Self = this.set("ItemName", value.asInstanceOf[js.Any])
+    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

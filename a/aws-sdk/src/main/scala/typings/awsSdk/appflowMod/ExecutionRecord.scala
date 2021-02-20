@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionRecord extends js.Object {
+trait ExecutionRecord extends StObject {
   
   /**
     *  Specifies the identifier of the given flow run. 
@@ -41,48 +42,36 @@ object ExecutionRecord {
   }
   
   @scala.inline
-  implicit class ExecutionRecordOps[Self <: ExecutionRecord] (val x: Self) extends AnyVal {
+  implicit class ExecutionRecordMutableBuilder[Self <: ExecutionRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutionId(value: ExecutionId): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExecutionResult(value: ExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionId(value: ExecutionId): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    def setExecutionResultUndefined: Self = StObject.set(x, "executionResult", js.undefined)
     
     @scala.inline
-    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    def setExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionResult(value: ExecutionResult): Self = this.set("executionResult", value.asInstanceOf[js.Any])
+    def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
     @scala.inline
-    def deleteExecutionResult: Self = this.set("executionResult", js.undefined)
+    def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionStatus(value: ExecutionStatus): Self = this.set("executionStatus", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteExecutionStatus: Self = this.set("executionStatus", js.undefined)
+    def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: Date): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
-    
-    @scala.inline
-    def setStartedAt(value: Date): Self = this.set("startedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
   }
 }

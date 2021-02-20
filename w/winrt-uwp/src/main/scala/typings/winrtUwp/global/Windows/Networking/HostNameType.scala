@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The type of a HostName object. */
 @JSGlobal("Windows.Networking.HostNameType")
 @js.native
-object HostNameType extends js.Object {
+object HostNameType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Networking.HostNameType with Double] = js.native

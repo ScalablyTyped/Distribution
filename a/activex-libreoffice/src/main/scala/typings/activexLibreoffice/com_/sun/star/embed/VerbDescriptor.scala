@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.embed
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a verb. */
 @js.native
-trait VerbDescriptor extends js.Object {
+trait VerbDescriptor extends StObject {
   
   /**
     * specifies the attributes of the verb.
@@ -37,30 +38,18 @@ object VerbDescriptor {
   }
   
   @scala.inline
-  implicit class VerbDescriptorOps[Self <: VerbDescriptor] (val x: Self) extends AnyVal {
+  implicit class VerbDescriptorMutableBuilder[Self <: VerbDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVerbAttributes(value: Double): Self = StObject.set(x, "VerbAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVerbFlags(value: Double): Self = StObject.set(x, "VerbFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVerbID(value: Double): Self = StObject.set(x, "VerbID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerbAttributes(value: Double): Self = this.set("VerbAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbFlags(value: Double): Self = this.set("VerbFlags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbID(value: Double): Self = this.set("VerbID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerbName(value: String): Self = this.set("VerbName", value.asInstanceOf[js.Any])
+    def setVerbName(value: String): Self = StObject.set(x, "VerbName", value.asInstanceOf[js.Any])
   }
 }

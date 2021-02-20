@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudStorage extends js.Object {
+trait GoogleCloudStorage extends StObject {
   
   /** Required. The path to a directory in GCS that will eventually contain the results for this test. The requesting user must have write access on the bucket in the supplied path. */
   var gcsPath: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudStorage {
   }
   
   @scala.inline
-  implicit class GoogleCloudStorageOps[Self <: GoogleCloudStorage] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudStorageMutableBuilder[Self <: GoogleCloudStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcsPath(value: String): Self = this.set("gcsPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsPath: Self = this.set("gcsPath", js.undefined)
+    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }
 }

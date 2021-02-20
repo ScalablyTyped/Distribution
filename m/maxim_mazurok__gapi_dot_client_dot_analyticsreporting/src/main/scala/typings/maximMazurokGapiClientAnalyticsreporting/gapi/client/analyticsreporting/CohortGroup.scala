@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CohortGroup extends js.Object {
+trait CohortGroup extends StObject {
   
   /** The definition for the cohort. */
   var cohorts: js.UndefOr[js.Array[Cohort]] = js.native
@@ -31,33 +32,21 @@ object CohortGroup {
   }
   
   @scala.inline
-  implicit class CohortGroupOps[Self <: CohortGroup] (val x: Self) extends AnyVal {
+  implicit class CohortGroupMutableBuilder[Self <: CohortGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCohorts(value: js.Array[Cohort]): Self = StObject.set(x, "cohorts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
     
     @scala.inline
-    def setCohortsVarargs(value: Cohort*): Self = this.set("cohorts", js.Array(value :_*))
+    def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCohorts(value: js.Array[Cohort]): Self = this.set("cohorts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCohorts: Self = this.set("cohorts", js.undefined)
-    
-    @scala.inline
-    def setLifetimeValue(value: Boolean): Self = this.set("lifetimeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifetimeValue: Self = this.set("lifetimeValue", js.undefined)
+    def setLifetimeValueUndefined: Self = StObject.set(x, "lifetimeValue", js.undefined)
   }
 }

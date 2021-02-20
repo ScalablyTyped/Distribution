@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScopedCredentialOptions extends js.Object {
+trait ScopedCredentialOptions extends StObject {
   
   var excludeList: js.UndefOr[js.Array[ScopedCredentialDescriptor]] = js.native
   
@@ -24,45 +25,33 @@ object ScopedCredentialOptions {
   }
   
   @scala.inline
-  implicit class ScopedCredentialOptionsOps[Self <: ScopedCredentialOptions] (val x: Self) extends AnyVal {
+  implicit class ScopedCredentialOptionsMutableBuilder[Self <: ScopedCredentialOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludeList(value: js.Array[ScopedCredentialDescriptor]): Self = StObject.set(x, "excludeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludeListUndefined: Self = StObject.set(x, "excludeList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeListVarargs(value: ScopedCredentialDescriptor*): Self = StObject.set(x, "excludeList", js.Array(value :_*))
     
     @scala.inline
-    def setExcludeListVarargs(value: ScopedCredentialDescriptor*): Self = this.set("excludeList", js.Array(value :_*))
+    def setExtensions(value: WebAuthnExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeList(value: js.Array[ScopedCredentialDescriptor]): Self = this.set("excludeList", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteExcludeList: Self = this.set("excludeList", js.undefined)
+    def setRpId(value: java.lang.String): Self = StObject.set(x, "rpId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: WebAuthnExtensions): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setRpIdUndefined: Self = StObject.set(x, "rpId", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRpId(value: java.lang.String): Self = this.set("rpId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRpId: Self = this.set("rpId", js.undefined)
-    
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
+    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

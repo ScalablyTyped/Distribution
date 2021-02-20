@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SplunkDestinationDescription extends js.Object {
+trait SplunkDestinationDescription extends StObject {
   
   /**
     * The Amazon CloudWatch logging options for your delivery stream.
@@ -61,72 +62,60 @@ object SplunkDestinationDescription {
   }
   
   @scala.inline
-  implicit class SplunkDestinationDescriptionOps[Self <: SplunkDestinationDescription] (val x: Self) extends AnyVal {
+  implicit class SplunkDestinationDescriptionMutableBuilder[Self <: SplunkDestinationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHECAcknowledgmentTimeoutInSeconds(value: HECAcknowledgmentTimeoutInSeconds): Self = StObject.set(x, "HECAcknowledgmentTimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    def setHECAcknowledgmentTimeoutInSecondsUndefined: Self = StObject.set(x, "HECAcknowledgmentTimeoutInSeconds", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    def setHECEndpoint(value: HECEndpoint): Self = StObject.set(x, "HECEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHECAcknowledgmentTimeoutInSeconds(value: HECAcknowledgmentTimeoutInSeconds): Self = this.set("HECAcknowledgmentTimeoutInSeconds", value.asInstanceOf[js.Any])
+    def setHECEndpointType(value: HECEndpointType): Self = StObject.set(x, "HECEndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHECAcknowledgmentTimeoutInSeconds: Self = this.set("HECAcknowledgmentTimeoutInSeconds", js.undefined)
+    def setHECEndpointTypeUndefined: Self = StObject.set(x, "HECEndpointType", js.undefined)
     
     @scala.inline
-    def setHECEndpoint(value: HECEndpoint): Self = this.set("HECEndpoint", value.asInstanceOf[js.Any])
+    def setHECEndpointUndefined: Self = StObject.set(x, "HECEndpoint", js.undefined)
     
     @scala.inline
-    def deleteHECEndpoint: Self = this.set("HECEndpoint", js.undefined)
+    def setHECToken(value: HECToken): Self = StObject.set(x, "HECToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHECEndpointType(value: HECEndpointType): Self = this.set("HECEndpointType", value.asInstanceOf[js.Any])
+    def setHECTokenUndefined: Self = StObject.set(x, "HECToken", js.undefined)
     
     @scala.inline
-    def deleteHECEndpointType: Self = this.set("HECEndpointType", js.undefined)
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHECToken(value: HECToken): Self = this.set("HECToken", value.asInstanceOf[js.Any])
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
     
     @scala.inline
-    def deleteHECToken: Self = this.set("HECToken", js.undefined)
+    def setRetryOptions(value: SplunkRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
     
     @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    def setS3BackupMode(value: SplunkS3BackupMode): Self = StObject.set(x, "S3BackupMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryOptions(value: SplunkRetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    def setS3BackupModeUndefined: Self = StObject.set(x, "S3BackupMode", js.undefined)
     
     @scala.inline
-    def deleteRetryOptions: Self = this.set("RetryOptions", js.undefined)
+    def setS3DestinationDescription(value: S3DestinationDescription): Self = StObject.set(x, "S3DestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BackupMode(value: SplunkS3BackupMode): Self = this.set("S3BackupMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BackupMode: Self = this.set("S3BackupMode", js.undefined)
-    
-    @scala.inline
-    def setS3DestinationDescription(value: S3DestinationDescription): Self = this.set("S3DestinationDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DestinationDescription: Self = this.set("S3DestinationDescription", js.undefined)
+    def setS3DestinationDescriptionUndefined: Self = StObject.set(x, "S3DestinationDescription", js.undefined)
   }
 }

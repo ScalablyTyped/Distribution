@@ -1,12 +1,13 @@
 package typings.pkgcloud.mod
 
 import typings.pkgcloud.pkgcloudStrings.rackspace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RackspaceProviderOptions extends js.Object {
+trait RackspaceProviderOptions extends StObject {
   
   var apiKey: String = js.native
   
@@ -27,36 +28,24 @@ object RackspaceProviderOptions {
   }
   
   @scala.inline
-  implicit class RackspaceProviderOptionsOps[Self <: RackspaceProviderOptions] (val x: Self) extends AnyVal {
+  implicit class RackspaceProviderOptionsMutableBuilder[Self <: RackspaceProviderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvider(value: rackspace): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegion(value: RackspaceRegions): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    def setUseInternal(value: Boolean): Self = StObject.set(x, "useInternal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvider(value: rackspace): Self = this.set("provider", value.asInstanceOf[js.Any])
+    def setUseInternalUndefined: Self = StObject.set(x, "useInternal", js.undefined)
     
     @scala.inline
-    def setRegion(value: RackspaceRegions): Self = this.set("region", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseInternal(value: Boolean): Self = this.set("useInternal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseInternal: Self = this.set("useInternal", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

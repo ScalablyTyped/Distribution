@@ -7,14 +7,14 @@ import typings.ionicCore.ionicCoreStrings.start
 import typings.ionicCore.ionicCoreStrings.top
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/fab/fab", JSImport.Namespace)
-@js.native
-object fabMod extends js.Object {
+object fabMod {
   
+  @JSImport("@ionic/core/dist/types/components/fab/fab", "Fab")
   @js.native
   class Fab () extends ComponentInterface {
     

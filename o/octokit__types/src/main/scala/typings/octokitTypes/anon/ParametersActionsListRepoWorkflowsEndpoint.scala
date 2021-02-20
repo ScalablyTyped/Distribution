@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowsEndpoint
 import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowsRequestOptions
 import typings.octokitTypes.endpointsMod.ActionsListRepoWorkflowsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersActionsListRepoWorkflowsEndpoint extends js.Object {
+trait ParametersActionsListRepoWorkflowsEndpoint extends StObject {
   
   var parameters: ActionsListRepoWorkflowsEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersActionsListRepoWorkflowsEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersActionsListRepoWorkflowsEndpointOps[Self <: ParametersActionsListRepoWorkflowsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersActionsListRepoWorkflowsEndpointMutableBuilder[Self <: ParametersActionsListRepoWorkflowsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ActionsListRepoWorkflowsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ActionsListRepoWorkflowsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ActionsListRepoWorkflowsEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ActionsListRepoWorkflowsRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListRepoWorkflowsResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ActionsListRepoWorkflowsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

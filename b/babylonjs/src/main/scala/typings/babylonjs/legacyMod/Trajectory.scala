@@ -1,5 +1,6 @@
 package typings.babylonjs.legacyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,30 +16,62 @@ class Trajectory ()
   def this(segmentLength: Double) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "Trajectory")
-@js.native
-object Trajectory extends js.Object {
+object Trajectory {
+  
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Deserialize from JSON.
     * @param json serialized JSON string
     * @returns deserialized Trajectory
     */
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory.Deserialize")
+  @js.native
   def Deserialize(json: String): typings.babylonjs.trajectoryClassifierMod.Trajectory = js.native
   
-  var _bestMatch: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._bestMatch")
+  @js.native
+  def _bestMatch: js.Any = js.native
+  @scala.inline
+  def _bestMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bestMatch")(x.asInstanceOf[js.Any])
   
-  var _bestScore: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._bestScore")
+  @js.native
+  def _bestScore: js.Any = js.native
+  @scala.inline
+  def _bestScore_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bestScore")(x.asInstanceOf[js.Any])
   
-  var _forwardDir: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._forwardDir")
+  @js.native
+  def _forwardDir: js.Any = js.native
+  @scala.inline
+  def _forwardDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_forwardDir")(x.asInstanceOf[js.Any])
   
-  var _fromToVec: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._fromToVec")
+  @js.native
+  def _fromToVec: js.Any = js.native
+  @scala.inline
+  def _fromToVec_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fromToVec")(x.asInstanceOf[js.Any])
   
-  var _inverseFromVec: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._inverseFromVec")
+  @js.native
+  def _inverseFromVec: js.Any = js.native
+  @scala.inline
+  def _inverseFromVec_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_inverseFromVec")(x.asInstanceOf[js.Any])
   
-  var _lookMatrix: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._lookMatrix")
+  @js.native
+  def _lookMatrix: js.Any = js.native
+  @scala.inline
+  def _lookMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_lookMatrix")(x.asInstanceOf[js.Any])
   
-  var _score: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._score")
+  @js.native
+  def _score: js.Any = js.native
+  @scala.inline
+  def _score_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_score")(x.asInstanceOf[js.Any])
   
   /**
     * Determine which token vector is most similar to the
@@ -47,7 +80,11 @@ object Trajectory extends js.Object {
     * @param tokens token vector list
     * @returns index of the most similar token to the segment
     */
-  var _tokenizeSegment: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._tokenizeSegment")
+  @js.native
+  def _tokenizeSegment: js.Any = js.native
+  @scala.inline
+  def _tokenizeSegment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tokenizeSegment")(x.asInstanceOf[js.Any])
   
   /**
     * Transform the rotation (i.e., direction) of a segment to isolate
@@ -60,7 +97,15 @@ object Trajectory extends js.Object {
     * @param result reference to output variable
     * @returns whether or not transformation was successful
     */
-  var _transformSegmentDirToRef: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._transformSegmentDirToRef")
+  @js.native
+  def _transformSegmentDirToRef: js.Any = js.native
+  @scala.inline
+  def _transformSegmentDirToRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_transformSegmentDirToRef")(x.asInstanceOf[js.Any])
   
-  var _upDir: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "Trajectory._upDir")
+  @js.native
+  def _upDir: js.Any = js.native
+  @scala.inline
+  def _upDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_upDir")(x.asInstanceOf[js.Any])
 }

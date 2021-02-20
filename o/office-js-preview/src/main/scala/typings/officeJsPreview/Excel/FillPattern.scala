@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FillPattern extends js.Object
+sealed trait FillPattern extends StObject
 /**
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.FillPattern")
 @js.native
-object FillPattern extends js.Object {
+object FillPattern extends StObject {
   
   @js.native
   sealed trait checker extends FillPattern

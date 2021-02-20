@@ -1,11 +1,12 @@
 package typings.nodeRedEditorClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Keyboard extends js.Object {
+trait Keyboard extends StObject {
   
   def add(scope: String, key: String, modifiers: js.Object, ondown: String): Unit = js.native
   def add(scope: String, key: String, modifiers: js.Object, ondown: js.Function0[Unit]): Unit = js.native

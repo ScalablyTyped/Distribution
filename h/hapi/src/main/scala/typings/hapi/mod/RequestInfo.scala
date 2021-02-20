@@ -1,12 +1,13 @@
 package typings.hapi.mod
 
 import typings.hapi.anon.IsOriginMatch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestInfo extends js.Object {
+trait RequestInfo extends StObject {
   
   /** the request preferred encoding. */
   var acceptEncoding: String = js.native
@@ -62,51 +63,39 @@ object RequestInfo {
   }
   
   @scala.inline
-  implicit class RequestInfoOps[Self <: RequestInfo] (val x: Self) extends AnyVal {
+  implicit class RequestInfoMutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCors(value: IsOriginMatch): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptEncoding(value: String): Self = this.set("acceptEncoding", value.asInstanceOf[js.Any])
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: Double): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCors(value: IsOriginMatch): Self = this.set("cors", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setReceived(value: Double): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceived(value: Double): Self = this.set("received", value.asInstanceOf[js.Any])
+    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteAddress(value: String): Self = this.set("remoteAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemotePort(value: String): Self = this.set("remotePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponded(value: Double): Self = this.set("responded", value.asInstanceOf[js.Any])
+    def setResponded(value: Double): Self = StObject.set(x, "responded", value.asInstanceOf[js.Any])
   }
 }

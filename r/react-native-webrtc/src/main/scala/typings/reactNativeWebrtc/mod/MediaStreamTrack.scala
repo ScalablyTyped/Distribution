@@ -1,12 +1,13 @@
 package typings.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-webrtc", "MediaStreamTrack")
 @js.native
-class MediaStreamTrack () extends js.Object {
+class MediaStreamTrack () extends StObject {
   
   var _enabled: Boolean = js.native
   

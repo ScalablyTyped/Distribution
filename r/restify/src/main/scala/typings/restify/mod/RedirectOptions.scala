@@ -1,11 +1,12 @@
 package typings.restify.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedirectOptions extends js.Object {
+trait RedirectOptions extends StObject {
   
   /**
     * redirect location's hostname
@@ -54,60 +55,48 @@ object RedirectOptions {
   }
   
   @scala.inline
-  implicit class RedirectOptionsOps[Self <: RedirectOptions] (val x: Self) extends AnyVal {
+  implicit class RedirectOptionsMutableBuilder[Self <: RedirectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrideQuery(value: Boolean): Self = StObject.set(x, "overrideQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    def setOverrideQueryUndefined: Self = StObject.set(x, "overrideQuery", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
+    def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideQuery(value: Boolean): Self = this.set("overrideQuery", value.asInstanceOf[js.Any])
+    def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
     
     @scala.inline
-    def deleteOverrideQuery: Self = this.set("overrideQuery", js.undefined)
+    def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathname(value: String): Self = this.set("pathname", value.asInstanceOf[js.Any])
+    def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
     
     @scala.inline
-    def deletePathname: Self = this.set("pathname", js.undefined)
+    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermanent(value: Boolean): Self = this.set("permanent", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def deletePermanent: Self = this.set("permanent", js.undefined)
+    def setQuery(value: String | js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String | js.Object): Self = this.set("query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
-    
-    @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
   }
 }

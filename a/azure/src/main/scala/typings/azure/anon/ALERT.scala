@@ -1,11 +1,12 @@
 package typings.azure.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ALERT extends js.Object {
+trait ALERT extends StObject {
   
   var ALERT: String = js.native
   
@@ -41,42 +42,30 @@ object ALERT {
   }
   
   @scala.inline
-  implicit class ALERTOps[Self <: ALERT] (val x: Self) extends AnyVal {
+  implicit class ALERTMutableBuilder[Self <: ALERT] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALERT(value: String): Self = StObject.set(x, "ALERT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCRITICAL(value: String): Self = StObject.set(x, "CRITICAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDEBUG(value: String): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALERT(value: String): Self = this.set("ALERT", value.asInstanceOf[js.Any])
+    def setEMERGENCY(value: String): Self = StObject.set(x, "EMERGENCY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCRITICAL(value: String): Self = this.set("CRITICAL", value.asInstanceOf[js.Any])
+    def setERROR(value: String): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDEBUG(value: String): Self = this.set("DEBUG", value.asInstanceOf[js.Any])
+    def setINFO(value: String): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEMERGENCY(value: String): Self = this.set("EMERGENCY", value.asInstanceOf[js.Any])
+    def setNOTICE(value: String): Self = StObject.set(x, "NOTICE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: String): Self = this.set("ERROR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setINFO(value: String): Self = this.set("INFO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNOTICE(value: String): Self = this.set("NOTICE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWARNING(value: String): Self = this.set("WARNING", value.asInstanceOf[js.Any])
+    def setWARNING(value: String): Self = StObject.set(x, "WARNING", value.asInstanceOf[js.Any])
   }
 }

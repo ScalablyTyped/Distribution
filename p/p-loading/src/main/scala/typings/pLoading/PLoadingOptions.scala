@@ -3,12 +3,13 @@ package typings.pLoading
 import typings.pLoading.pLoadingStrings.destroy
 import typings.pLoading.pLoadingStrings.hide
 import typings.pLoading.pLoadingStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PLoadingOptions extends js.Object {
+trait PLoadingOptions extends StObject {
   
   var action: js.UndefOr[show | hide | destroy] = js.native
   
@@ -62,123 +63,111 @@ object PLoadingOptions {
   }
   
   @scala.inline
-  implicit class PLoadingOptionsOps[Self <: PLoadingOptions] (val x: Self) extends AnyVal {
+  implicit class PLoadingOptionsMutableBuilder[Self <: PLoadingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: show | hide | destroy): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerAttrs(value: js.Object): Self = StObject.set(x, "containerAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: show | hide | destroy): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setContainerAttrsUndefined: Self = StObject.set(x, "containerAttrs", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setContainerClass(value: String): Self = StObject.set(x, "containerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerAttrs(value: js.Object): Self = this.set("containerAttrs", value.asInstanceOf[js.Any])
+    def setContainerClassUndefined: Self = StObject.set(x, "containerClass", js.undefined)
     
     @scala.inline
-    def deleteContainerAttrs: Self = this.set("containerAttrs", js.undefined)
+    def setContainerHTML(value: String): Self = StObject.set(x, "containerHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerClass(value: String): Self = this.set("containerClass", value.asInstanceOf[js.Any])
+    def setContainerHTMLUndefined: Self = StObject.set(x, "containerHTML", js.undefined)
     
     @scala.inline
-    def deleteContainerClass: Self = this.set("containerClass", js.undefined)
+    def setDestroyAfterHide(value: Boolean): Self = StObject.set(x, "destroyAfterHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerHTML(value: String): Self = this.set("containerHTML", value.asInstanceOf[js.Any])
+    def setDestroyAfterHideUndefined: Self = StObject.set(x, "destroyAfterHide", js.undefined)
     
     @scala.inline
-    def deleteContainerHTML: Self = this.set("containerHTML", js.undefined)
+    def setHideAnimation(value: /* $container */ JQuery => Unit): Self = StObject.set(x, "hideAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroyAfterHide(value: Boolean): Self = this.set("destroyAfterHide", value.asInstanceOf[js.Any])
+    def setHideAnimationUndefined: Self = StObject.set(x, "hideAnimation", js.undefined)
     
     @scala.inline
-    def deleteDestroyAfterHide: Self = this.set("destroyAfterHide", js.undefined)
+    def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideAnimation(value: /* $container */ JQuery => Unit): Self = this.set("hideAnimation", js.Any.fromFunction1(value))
+    def setIdPrefixUndefined: Self = StObject.set(x, "idPrefix", js.undefined)
     
     @scala.inline
-    def deleteHideAnimation: Self = this.set("hideAnimation", js.undefined)
+    def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    def setMaskColorUndefined: Self = StObject.set(x, "maskColor", js.undefined)
     
     @scala.inline
-    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    def setOnDestroyContainer(value: /* $container */ JQuery => Unit): Self = StObject.set(x, "onDestroyContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMaskColor(value: String): Self = this.set("maskColor", value.asInstanceOf[js.Any])
+    def setOnDestroyContainerUndefined: Self = StObject.set(x, "onDestroyContainer", js.undefined)
     
     @scala.inline
-    def deleteMaskColor: Self = this.set("maskColor", js.undefined)
+    def setOnHideContainer(value: (/* $pluginElement */ JQuery, /* $container */ JQuery) => Unit): Self = StObject.set(x, "onHideContainer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnDestroyContainer(value: /* $container */ JQuery => Unit): Self = this.set("onDestroyContainer", js.Any.fromFunction1(value))
+    def setOnHideContainerUndefined: Self = StObject.set(x, "onHideContainer", js.undefined)
     
     @scala.inline
-    def deleteOnDestroyContainer: Self = this.set("onDestroyContainer", js.undefined)
+    def setOnShowContainer(value: (/* $pluginElement */ JQuery, /* $container */ JQuery) => Unit): Self = StObject.set(x, "onShowContainer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnHideContainer(value: (/* $pluginElement */ JQuery, /* $container */ JQuery) => Unit): Self = this.set("onHideContainer", js.Any.fromFunction2(value))
+    def setOnShowContainerUndefined: Self = StObject.set(x, "onShowContainer", js.undefined)
     
     @scala.inline
-    def deleteOnHideContainer: Self = this.set("onHideContainer", js.undefined)
+    def setPluginNameSpace(value: String): Self = StObject.set(x, "pluginNameSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnShowContainer(value: (/* $pluginElement */ JQuery, /* $container */ JQuery) => Unit): Self = this.set("onShowContainer", js.Any.fromFunction2(value))
+    def setPluginNameSpaceUndefined: Self = StObject.set(x, "pluginNameSpace", js.undefined)
     
     @scala.inline
-    def deleteOnShowContainer: Self = this.set("onShowContainer", js.undefined)
+    def setShowAnimation(value: /* $container */ JQuery => Unit): Self = StObject.set(x, "showAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPluginNameSpace(value: String): Self = this.set("pluginNameSpace", value.asInstanceOf[js.Any])
+    def setShowAnimationUndefined: Self = StObject.set(x, "showAnimation", js.undefined)
     
     @scala.inline
-    def deletePluginNameSpace: Self = this.set("pluginNameSpace", js.undefined)
+    def setSpinnerAttrs(value: js.Object): Self = StObject.set(x, "spinnerAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAnimation(value: /* $container */ JQuery => Unit): Self = this.set("showAnimation", js.Any.fromFunction1(value))
+    def setSpinnerAttrsUndefined: Self = StObject.set(x, "spinnerAttrs", js.undefined)
     
     @scala.inline
-    def deleteShowAnimation: Self = this.set("showAnimation", js.undefined)
+    def setSpinnerClass(value: String): Self = StObject.set(x, "spinnerClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerAttrs(value: js.Object): Self = this.set("spinnerAttrs", value.asInstanceOf[js.Any])
+    def setSpinnerClassUndefined: Self = StObject.set(x, "spinnerClass", js.undefined)
     
     @scala.inline
-    def deleteSpinnerAttrs: Self = this.set("spinnerAttrs", js.undefined)
+    def setSpinnerHTML(value: String): Self = StObject.set(x, "spinnerHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerClass(value: String): Self = this.set("spinnerClass", value.asInstanceOf[js.Any])
+    def setSpinnerHTMLUndefined: Self = StObject.set(x, "spinnerHTML", js.undefined)
     
     @scala.inline
-    def deleteSpinnerClass: Self = this.set("spinnerClass", js.undefined)
+    def setUseAddOns(value: js.Array[String]): Self = StObject.set(x, "useAddOns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpinnerHTML(value: String): Self = this.set("spinnerHTML", value.asInstanceOf[js.Any])
+    def setUseAddOnsUndefined: Self = StObject.set(x, "useAddOns", js.undefined)
     
     @scala.inline
-    def deleteSpinnerHTML: Self = this.set("spinnerHTML", js.undefined)
-    
-    @scala.inline
-    def setUseAddOnsVarargs(value: String*): Self = this.set("useAddOns", js.Array(value :_*))
-    
-    @scala.inline
-    def setUseAddOns(value: js.Array[String]): Self = this.set("useAddOns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAddOns: Self = this.set("useAddOns", js.undefined)
+    def setUseAddOnsVarargs(value: String*): Self = StObject.set(x, "useAddOns", js.Array(value :_*))
   }
 }

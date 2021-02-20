@@ -1,18 +1,16 @@
 package typings.pdfjsDist
 
 import typings.pdfjsDist.mod.PDFJSStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pdfjs-dist/webpack", JSImport.Namespace)
-@js.native
-object webpackMod extends js.Object {
+object webpackMod {
   
-  val PDFJS: PDFJSStatic = js.native
-  
+  @JSImport("pdfjs-dist/webpack", "CMapCompressionType")
   @js.native
-  object CMapCompressionType extends js.Object {
+  object CMapCompressionType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.CMapCompressionType with Double] = js.native
@@ -24,8 +22,13 @@ object webpackMod extends js.Object {
     /* 2 */ val STREAM: typings.pdfjsDist.mod.CMapCompressionType.STREAM with Double = js.native
   }
   
+  @JSImport("pdfjs-dist/webpack", "PDFJS")
   @js.native
-  object VerbosityLevel extends js.Object {
+  val PDFJS: PDFJSStatic = js.native
+  
+  @JSImport("pdfjs-dist/webpack", "VerbosityLevel")
+  @js.native
+  object VerbosityLevel extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.VerbosityLevel with Double] = js.native

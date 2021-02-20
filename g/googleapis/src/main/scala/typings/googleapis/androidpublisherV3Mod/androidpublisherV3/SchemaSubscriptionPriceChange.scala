@@ -1,5 +1,6 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for a successful conversion.
   */
 @js.native
-trait SchemaSubscriptionPriceChange extends js.Object {
+trait SchemaSubscriptionPriceChange extends StObject {
   
   /**
     * The new price the subscription will renew with if the price change is
@@ -39,30 +40,18 @@ object SchemaSubscriptionPriceChange {
   }
   
   @scala.inline
-  implicit class SchemaSubscriptionPriceChangeOps[Self <: SchemaSubscriptionPriceChange] (val x: Self) extends AnyVal {
+  implicit class SchemaSubscriptionPriceChangeMutableBuilder[Self <: SchemaSubscriptionPriceChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewPrice(value: SchemaPrice): Self = StObject.set(x, "newPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewPriceUndefined: Self = StObject.set(x, "newPrice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewPrice(value: SchemaPrice): Self = this.set("newPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewPrice: Self = this.set("newPrice", js.undefined)
-    
-    @scala.inline
-    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobTemplateSettings extends js.Object {
+trait JobTemplateSettings extends StObject {
   
   /**
     * When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time.
@@ -66,84 +67,72 @@ object JobTemplateSettings {
   }
   
   @scala.inline
-  implicit class JobTemplateSettingsOps[Self <: JobTemplateSettings] (val x: Self) extends AnyVal {
+  implicit class JobTemplateSettingsMutableBuilder[Self <: JobTemplateSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = StObject.set(x, "AdAvailOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdAvailOffsetUndefined: Self = StObject.set(x, "AdAvailOffset", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailBlanking(value: AvailBlanking): Self = StObject.set(x, "AvailBlanking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdAvailOffset(value: integerMinNegative1000Max1000): Self = this.set("AdAvailOffset", value.asInstanceOf[js.Any])
+    def setAvailBlankingUndefined: Self = StObject.set(x, "AvailBlanking", js.undefined)
     
     @scala.inline
-    def deleteAdAvailOffset: Self = this.set("AdAvailOffset", js.undefined)
+    def setEsam(value: EsamSettings): Self = StObject.set(x, "Esam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailBlanking(value: AvailBlanking): Self = this.set("AvailBlanking", value.asInstanceOf[js.Any])
+    def setEsamUndefined: Self = StObject.set(x, "Esam", js.undefined)
     
     @scala.inline
-    def deleteAvailBlanking: Self = this.set("AvailBlanking", js.undefined)
+    def setInputs(value: listOfInputTemplate): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEsam(value: EsamSettings): Self = this.set("Esam", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
     @scala.inline
-    def deleteEsam: Self = this.set("Esam", js.undefined)
+    def setInputsVarargs(value: InputTemplate*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: InputTemplate*): Self = this.set("Inputs", js.Array(value :_*))
+    def setMotionImageInserter(value: MotionImageInserter): Self = StObject.set(x, "MotionImageInserter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: listOfInputTemplate): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    def setMotionImageInserterUndefined: Self = StObject.set(x, "MotionImageInserter", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    def setNielsenConfiguration(value: NielsenConfiguration): Self = StObject.set(x, "NielsenConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotionImageInserter(value: MotionImageInserter): Self = this.set("MotionImageInserter", value.asInstanceOf[js.Any])
+    def setNielsenConfigurationUndefined: Self = StObject.set(x, "NielsenConfiguration", js.undefined)
     
     @scala.inline
-    def deleteMotionImageInserter: Self = this.set("MotionImageInserter", js.undefined)
+    def setNielsenNonLinearWatermark(value: NielsenNonLinearWatermarkSettings): Self = StObject.set(x, "NielsenNonLinearWatermark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNielsenConfiguration(value: NielsenConfiguration): Self = this.set("NielsenConfiguration", value.asInstanceOf[js.Any])
+    def setNielsenNonLinearWatermarkUndefined: Self = StObject.set(x, "NielsenNonLinearWatermark", js.undefined)
     
     @scala.inline
-    def deleteNielsenConfiguration: Self = this.set("NielsenConfiguration", js.undefined)
+    def setOutputGroups(value: listOfOutputGroup): Self = StObject.set(x, "OutputGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNielsenNonLinearWatermark(value: NielsenNonLinearWatermarkSettings): Self = this.set("NielsenNonLinearWatermark", value.asInstanceOf[js.Any])
+    def setOutputGroupsUndefined: Self = StObject.set(x, "OutputGroups", js.undefined)
     
     @scala.inline
-    def deleteNielsenNonLinearWatermark: Self = this.set("NielsenNonLinearWatermark", js.undefined)
+    def setOutputGroupsVarargs(value: OutputGroup*): Self = StObject.set(x, "OutputGroups", js.Array(value :_*))
     
     @scala.inline
-    def setOutputGroupsVarargs(value: OutputGroup*): Self = this.set("OutputGroups", js.Array(value :_*))
+    def setTimecodeConfig(value: TimecodeConfig): Self = StObject.set(x, "TimecodeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputGroups(value: listOfOutputGroup): Self = this.set("OutputGroups", value.asInstanceOf[js.Any])
+    def setTimecodeConfigUndefined: Self = StObject.set(x, "TimecodeConfig", js.undefined)
     
     @scala.inline
-    def deleteOutputGroups: Self = this.set("OutputGroups", js.undefined)
+    def setTimedMetadataInsertion(value: TimedMetadataInsertion): Self = StObject.set(x, "TimedMetadataInsertion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimecodeConfig(value: TimecodeConfig): Self = this.set("TimecodeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimecodeConfig: Self = this.set("TimecodeConfig", js.undefined)
-    
-    @scala.inline
-    def setTimedMetadataInsertion(value: TimedMetadataInsertion): Self = this.set("TimedMetadataInsertion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimedMetadataInsertion: Self = this.set("TimedMetadataInsertion", js.undefined)
+    def setTimedMetadataInsertionUndefined: Self = StObject.set(x, "TimedMetadataInsertion", js.undefined)
   }
 }

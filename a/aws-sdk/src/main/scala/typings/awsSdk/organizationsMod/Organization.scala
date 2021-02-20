@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Organization extends js.Object {
+trait Organization extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an organization. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
@@ -51,63 +52,51 @@ object Organization {
   }
   
   @scala.inline
-  implicit class OrganizationOps[Self <: Organization] (val x: Self) extends AnyVal {
+  implicit class OrganizationMutableBuilder[Self <: Organization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: OrganizationArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailablePolicyTypes(value: PolicyTypes): Self = StObject.set(x, "AvailablePolicyTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: OrganizationArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setAvailablePolicyTypesUndefined: Self = StObject.set(x, "AvailablePolicyTypes", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setAvailablePolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "AvailablePolicyTypes", js.Array(value :_*))
     
     @scala.inline
-    def setAvailablePolicyTypesVarargs(value: PolicyTypeSummary*): Self = this.set("AvailablePolicyTypes", js.Array(value :_*))
+    def setFeatureSet(value: OrganizationFeatureSet): Self = StObject.set(x, "FeatureSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailablePolicyTypes(value: PolicyTypes): Self = this.set("AvailablePolicyTypes", value.asInstanceOf[js.Any])
+    def setFeatureSetUndefined: Self = StObject.set(x, "FeatureSet", js.undefined)
     
     @scala.inline
-    def deleteAvailablePolicyTypes: Self = this.set("AvailablePolicyTypes", js.undefined)
+    def setId(value: OrganizationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureSet(value: OrganizationFeatureSet): Self = this.set("FeatureSet", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteFeatureSet: Self = this.set("FeatureSet", js.undefined)
+    def setMasterAccountArn(value: AccountArn): Self = StObject.set(x, "MasterAccountArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: OrganizationId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setMasterAccountArnUndefined: Self = StObject.set(x, "MasterAccountArn", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setMasterAccountEmail(value: Email): Self = StObject.set(x, "MasterAccountEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterAccountArn(value: AccountArn): Self = this.set("MasterAccountArn", value.asInstanceOf[js.Any])
+    def setMasterAccountEmailUndefined: Self = StObject.set(x, "MasterAccountEmail", js.undefined)
     
     @scala.inline
-    def deleteMasterAccountArn: Self = this.set("MasterAccountArn", js.undefined)
+    def setMasterAccountId(value: AccountId): Self = StObject.set(x, "MasterAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterAccountEmail(value: Email): Self = this.set("MasterAccountEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterAccountEmail: Self = this.set("MasterAccountEmail", js.undefined)
-    
-    @scala.inline
-    def setMasterAccountId(value: AccountId): Self = this.set("MasterAccountId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMasterAccountId: Self = this.set("MasterAccountId", js.undefined)
+    def setMasterAccountIdUndefined: Self = StObject.set(x, "MasterAccountId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BUFFER_BITS extends js.Object
+sealed trait BUFFER_BITS extends StObject
 /**
   * Bitwise OR of masks that indicate the buffers to be cleared.
   *
@@ -19,7 +20,7 @@ sealed trait BUFFER_BITS extends js.Object
   */
 @JSGlobal("PIXI.BUFFER_BITS")
 @js.native
-object BUFFER_BITS extends js.Object {
+object BUFFER_BITS extends StObject {
   
   @js.native
   sealed trait COLOR extends BUFFER_BITS

@@ -4,12 +4,13 @@ import typings.atom.atomStrings.created
 import typings.atom.atomStrings.deleted
 import typings.atom.atomStrings.modified
 import typings.atom.atomStrings.renamed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilesystemChangeBasic[Action /* <: created | modified | deleted | renamed */] extends js.Object {
+trait FilesystemChangeBasic[Action /* <: created | modified | deleted | renamed */] extends StObject {
   
   /** A string describing the filesystem action that occurred. */
   var action: Action = js.native
@@ -26,24 +27,12 @@ object FilesystemChangeBasic {
   }
   
   @scala.inline
-  implicit class FilesystemChangeBasicOps[Self <: FilesystemChangeBasic[_], Action /* <: created | modified | deleted | renamed */] (val x: Self with FilesystemChangeBasic[Action]) extends AnyVal {
+  implicit class FilesystemChangeBasicMutableBuilder[Self <: FilesystemChangeBasic[_], Action /* <: created | modified | deleted | renamed */] (val x: Self with FilesystemChangeBasic[Action]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAction(value: Action): Self = this.set("action", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

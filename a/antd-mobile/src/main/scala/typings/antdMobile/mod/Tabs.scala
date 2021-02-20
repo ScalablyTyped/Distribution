@@ -3,6 +3,7 @@ package typings.antdMobile.mod
 import typings.antdMobile.anon.PrefixCls
 import typings.antdMobile.anon.TypeofDefaultTabBar
 import typings.antdMobile.tabsMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Tabs () extends default
 /* static members */
-@JSImport("antd-mobile", "Tabs")
-@js.native
-object Tabs extends js.Object {
+object Tabs {
   
-  var DefaultTabBar: TypeofDefaultTabBar = js.native
+  @JSImport("antd-mobile", "Tabs")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var defaultProps: PrefixCls = js.native
+  @JSImport("antd-mobile", "Tabs.DefaultTabBar")
+  @js.native
+  def DefaultTabBar: TypeofDefaultTabBar = js.native
+  @scala.inline
+  def DefaultTabBar_=(x: TypeofDefaultTabBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTabBar")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile", "Tabs.defaultProps")
+  @js.native
+  def defaultProps: PrefixCls = js.native
+  @scala.inline
+  def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

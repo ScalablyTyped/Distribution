@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundSizeProps[TLength] extends js.Object {
+trait BackgroundSizeProps[TLength] extends StObject {
   
   val backgroundSize: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object BackgroundSizeProps {
   }
   
   @scala.inline
-  implicit class BackgroundSizePropsOps[Self <: BackgroundSizeProps[_], TLength] (val x: Self with BackgroundSizeProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackgroundSizeVarargs(value: js.Any*): Self = this.set("backgroundSize", js.Array(value :_*))
+  implicit class BackgroundSizePropsMutableBuilder[Self <: BackgroundSizeProps[_], TLength] (val x: Self with BackgroundSizeProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBackgroundSize(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundSize<TLength> */ _
         ]
-    ): Self = this.set("backgroundSize", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundSize: Self = this.set("backgroundSize", js.undefined)
+    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
+    
+    @scala.inline
+    def setBackgroundSizeVarargs(value: js.Any*): Self = StObject.set(x, "backgroundSize", js.Array(value :_*))
   }
 }

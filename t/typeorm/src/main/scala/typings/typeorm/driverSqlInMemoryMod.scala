@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.driverQueryMod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/SqlInMemory", JSImport.Namespace)
-@js.native
-object driverSqlInMemoryMod extends js.Object {
+object driverSqlInMemoryMod {
   
+  @JSImport("typeorm/driver/SqlInMemory", "SqlInMemory")
   @js.native
-  class SqlInMemory () extends js.Object {
+  class SqlInMemory () extends StObject {
     
     var downQueries: js.Array[Query] = js.native
     

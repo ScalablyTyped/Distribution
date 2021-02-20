@@ -1,12 +1,13 @@
 package typings.algoliaClientSearch.mod
 
 import typings.algoliaClientSearch.anon.Indexname
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Log extends js.Object {
+trait Log extends StObject {
   
   /**
     * Answer body. It’s truncated after 1000 characters.
@@ -104,78 +105,66 @@ object Log {
   }
   
   @scala.inline
-  implicit class LogOps[Self <: Log] (val x: Self) extends AnyVal {
+  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnswer_code(value: String): Self = StObject.set(x, "answer_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExhaustive(value: Boolean): Self = StObject.set(x, "exhaustive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswer(value: String): Self = this.set("answer", value.asInstanceOf[js.Any])
+    def setExhaustiveUndefined: Self = StObject.set(x, "exhaustive", js.undefined)
     
     @scala.inline
-    def setAnswer_code(value: String): Self = this.set("answer_code", value.asInstanceOf[js.Any])
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInner_queriesVarargs(value: Indexname*): Self = this.set("inner_queries", js.Array(value :_*))
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setInner_queries(value: js.Array[Indexname]): Self = this.set("inner_queries", value.asInstanceOf[js.Any])
+    def setInner_queries(value: js.Array[Indexname]): Self = StObject.set(x, "inner_queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    def setInner_queriesVarargs(value: Indexname*): Self = StObject.set(x, "inner_queries", js.Array(value :_*))
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessing_time_ms(value: String): Self = this.set("processing_time_ms", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery_body(value: String): Self = this.set("query_body", value.asInstanceOf[js.Any])
+    def setNb_api_calls(value: String): Self = StObject.set(x, "nb_api_calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery_headers(value: String): Self = this.set("query_headers", value.asInstanceOf[js.Any])
+    def setNb_api_callsUndefined: Self = StObject.set(x, "nb_api_calls", js.undefined)
     
     @scala.inline
-    def setSha1(value: String): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    def setProcessing_time_ms(value: String): Self = StObject.set(x, "processing_time_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setQuery_body(value: String): Self = StObject.set(x, "query_body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setQuery_headers(value: String): Self = StObject.set(x, "query_headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExhaustive(value: Boolean): Self = this.set("exhaustive", value.asInstanceOf[js.Any])
+    def setQuery_nb_hits(value: String): Self = StObject.set(x, "query_nb_hits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExhaustive: Self = this.set("exhaustive", js.undefined)
+    def setQuery_nb_hitsUndefined: Self = StObject.set(x, "query_nb_hits", js.undefined)
     
     @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNb_api_calls(value: String): Self = this.set("nb_api_calls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNb_api_calls: Self = this.set("nb_api_calls", js.undefined)
-    
-    @scala.inline
-    def setQuery_nb_hits(value: String): Self = this.set("query_nb_hits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery_nb_hits: Self = this.set("query_nb_hits", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

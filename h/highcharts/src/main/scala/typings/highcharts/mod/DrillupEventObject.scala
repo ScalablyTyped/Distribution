@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.drillup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrillupEventObject extends js.Object {
+trait DrillupEventObject extends StObject {
   
   /**
     * Prevents the default behaviour of the event.
@@ -38,33 +39,21 @@ object DrillupEventObject {
   }
   
   @scala.inline
-  implicit class DrillupEventObjectOps[Self <: DrillupEventObject] (val x: Self) extends AnyVal {
+  implicit class DrillupEventObjectMutableBuilder[Self <: DrillupEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSeriesOptions(value: SeriesOptionsType): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
     
     @scala.inline
-    def setPreventDefault(value: js.Function): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Chart_): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: drillup): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeriesOptions(value: SeriesOptionsType): Self = this.set("seriesOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesOptions: Self = this.set("seriesOptions", js.undefined)
+    def setType(value: drillup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

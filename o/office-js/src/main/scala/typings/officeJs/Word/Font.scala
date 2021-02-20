@@ -25,6 +25,7 @@ import typings.officeJs.officeJsStrings.TwoDotDashLineHeavy
 import typings.officeJs.officeJsStrings.Wave
 import typings.officeJs.officeJsStrings.WaveDouble
 import typings.officeJs.officeJsStrings.WaveHeavy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

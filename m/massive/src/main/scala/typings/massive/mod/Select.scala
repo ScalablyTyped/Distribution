@@ -1,5 +1,6 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a SELECT query. */
 @JSImport("massive", "Select")
 @js.native
-class Select protected () extends js.Object {
+class Select protected () extends StObject {
   /** Represents an SELECT query. */
   def this(source: Readable, criteria: AnyObject[_]) = this()
   def this(source: Readable, criteria: UUID) = this()

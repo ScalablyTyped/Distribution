@@ -2,12 +2,13 @@ package typings.chromeApps.anon
 
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.system.powerSource.PowerSourceInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofpowerSource extends js.Object {
+trait TypeofpowerSource extends StObject {
   
   /**
     * Requests information on attached power sources.
@@ -39,27 +40,15 @@ object TypeofpowerSource {
   }
   
   @scala.inline
-  implicit class TypeofpowerSourceOps[Self <: TypeofpowerSource] (val x: Self) extends AnyVal {
+  implicit class TypeofpowerSourceMutableBuilder[Self <: TypeofpowerSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPowerSourceInfo(value: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit] => Unit): Self = StObject.set(x, "getPowerSourceInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnPowerChanged(value: Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]]): Self = StObject.set(x, "onPowerChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetPowerSourceInfo(value: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit] => Unit): Self = this.set("getPowerSourceInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnPowerChanged(value: Event[js.Function1[/* powerSourceInfo */ js.Array[PowerSourceInfo], Unit]]): Self = this.set("onPowerChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestStatusUpdate(value: () => Unit): Self = this.set("requestStatusUpdate", js.Any.fromFunction0(value))
+    def setRequestStatusUpdate(value: () => Unit): Self = StObject.set(x, "requestStatusUpdate", js.Any.fromFunction0(value))
   }
 }

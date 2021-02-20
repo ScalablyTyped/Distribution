@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,33 +42,21 @@ object ObjectExplorerNodeProvider {
   }
   
   @scala.inline
-  implicit class ObjectExplorerNodeProviderOps[Self <: ObjectExplorerNodeProvider] (val x: Self) extends AnyVal {
+  implicit class ObjectExplorerNodeProviderMutableBuilder[Self <: ObjectExplorerNodeProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHandleSessionClose(value: ObjectExplorerCloseSessionInfo => Unit): Self = StObject.set(x, "handleSessionClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleSessionClose(value: ObjectExplorerCloseSessionInfo => Unit): Self = this.set("handleSessionClose", js.Any.fromFunction1(value))
+    def setHandleSessionOpen(value: ObjectExplorerSession => Thenable[Boolean]): Self = StObject.set(x, "handleSessionOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandleSessionOpen(value: ObjectExplorerSession => Thenable[Boolean]): Self = this.set("handleSessionOpen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSupportedProviderId(value: String): Self = this.set("supportedProviderId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setSupportedProviderId(value: String): Self = StObject.set(x, "supportedProviderId", value.asInstanceOf[js.Any])
   }
 }

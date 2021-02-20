@@ -2,12 +2,13 @@ package typings.stripeV3.stripe
 
 import typings.stripeV3.stripe.paymentIntents.PaymentIntent
 import typings.stripeV3.stripe.paymentMethod.PaymentMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Error extends js.Object {
+trait Error extends StObject {
   
   /**
     * For card errors, the ID of the failed charge.
@@ -79,72 +80,60 @@ object Error {
   }
   
   @scala.inline
-  implicit class ErrorOps[Self <: Error] (val x: Self) extends AnyVal {
+  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setCharge(value: String): Self = this.set("charge", value.asInstanceOf[js.Any])
+    def setDecline_code(value: String): Self = StObject.set(x, "decline_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ErrorType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDecline_codeUndefined: Self = StObject.set(x, "decline_code", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDoc_url(value: String): Self = StObject.set(x, "doc_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setDoc_urlUndefined: Self = StObject.set(x, "doc_url", js.undefined)
     
     @scala.inline
-    def setDecline_code(value: String): Self = this.set("decline_code", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecline_code: Self = this.set("decline_code", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setDoc_url(value: String): Self = this.set("doc_url", value.asInstanceOf[js.Any])
+    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDoc_url: Self = this.set("doc_url", js.undefined)
+    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setPayment_intent(value: PaymentIntent): Self = StObject.set(x, "payment_intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setPayment_intentUndefined: Self = StObject.set(x, "payment_intent", js.undefined)
     
     @scala.inline
-    def setParam(value: String): Self = this.set("param", value.asInstanceOf[js.Any])
+    def setPayment_method(value: PaymentMethod): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParam: Self = this.set("param", js.undefined)
+    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
     
     @scala.inline
-    def setPayment_intent(value: PaymentIntent): Self = this.set("payment_intent", value.asInstanceOf[js.Any])
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePayment_intent: Self = this.set("payment_intent", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setPayment_method(value: PaymentMethod): Self = this.set("payment_method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayment_method: Self = this.set("payment_method", js.undefined)
-    
-    @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setType(value: ErrorType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

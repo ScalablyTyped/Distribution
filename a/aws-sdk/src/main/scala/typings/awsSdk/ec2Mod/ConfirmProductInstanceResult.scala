@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfirmProductInstanceResult extends js.Object {
+trait ConfirmProductInstanceResult extends StObject {
   
   /**
     * The AWS account ID of the instance owner. This is only present if the product code is attached to the instance.
@@ -26,30 +27,18 @@ object ConfirmProductInstanceResult {
   }
   
   @scala.inline
-  implicit class ConfirmProductInstanceResultOps[Self <: ConfirmProductInstanceResult] (val x: Self) extends AnyVal {
+  implicit class ConfirmProductInstanceResultMutableBuilder[Self <: ConfirmProductInstanceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
-    
-    @scala.inline
-    def setReturn(value: Boolean): Self = this.set("Return", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturn: Self = this.set("Return", js.undefined)
+    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

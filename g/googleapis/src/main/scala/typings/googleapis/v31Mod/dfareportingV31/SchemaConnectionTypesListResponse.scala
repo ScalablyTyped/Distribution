@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Connection Type List Response
   */
 @js.native
-trait SchemaConnectionTypesListResponse extends js.Object {
+trait SchemaConnectionTypesListResponse extends StObject {
   
   /**
     * Collection of connection types such as broadband and mobile.
@@ -30,33 +31,21 @@ object SchemaConnectionTypesListResponse {
   }
   
   @scala.inline
-  implicit class SchemaConnectionTypesListResponseOps[Self <: SchemaConnectionTypesListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaConnectionTypesListResponseMutableBuilder[Self <: SchemaConnectionTypesListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionTypes(value: js.Array[SchemaConnectionType]): Self = StObject.set(x, "connectionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = this.set("connectionTypes", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTypes(value: js.Array[SchemaConnectionType]): Self = this.set("connectionTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionTypes: Self = this.set("connectionTypes", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

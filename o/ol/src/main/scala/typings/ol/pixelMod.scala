@@ -1,12 +1,11 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/pixel", JSImport.Namespace)
-@js.native
-object pixelMod extends js.Object {
+object pixelMod {
   
   type Pixel = js.Array[Double]
 }

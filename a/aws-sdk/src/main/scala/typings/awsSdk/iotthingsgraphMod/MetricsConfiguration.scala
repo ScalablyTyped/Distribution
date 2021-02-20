@@ -1,11 +1,12 @@
 package typings.awsSdk.iotthingsgraphMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricsConfiguration extends js.Object {
+trait MetricsConfiguration extends StObject {
   
   /**
     * A Boolean that specifies whether cloud metrics are collected.
@@ -26,30 +27,18 @@ object MetricsConfiguration {
   }
   
   @scala.inline
-  implicit class MetricsConfigurationOps[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
+  implicit class MetricsConfigurationMutableBuilder[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudMetricEnabled(value: Enabled): Self = StObject.set(x, "cloudMetricEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudMetricEnabledUndefined: Self = StObject.set(x, "cloudMetricEnabled", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetricRuleRoleArn(value: RoleArn): Self = StObject.set(x, "metricRuleRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudMetricEnabled(value: Enabled): Self = this.set("cloudMetricEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudMetricEnabled: Self = this.set("cloudMetricEnabled", js.undefined)
-    
-    @scala.inline
-    def setMetricRuleRoleArn(value: RoleArn): Self = this.set("metricRuleRoleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetricRuleRoleArn: Self = this.set("metricRuleRoleArn", js.undefined)
+    def setMetricRuleRoleArnUndefined: Self = StObject.set(x, "metricRuleRoleArn", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,63 +131,51 @@ object ASPxClientDiagram {
   }
   
   @scala.inline
-  implicit class ASPxClientDiagramOps[Self <: ASPxClientDiagram] (val x: Self) extends AnyVal {
+  implicit class ASPxClientDiagramMutableBuilder[Self <: ASPxClientDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginSynchronization(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "BeginSynchronization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDiagram]]): Self = this.set("BeginCallback", value.asInstanceOf[js.Any])
+    def setCustomShapeCreateTemplate(value: ASPxClientEvent[ASPxClientDiagramCustomShapeCreateTemplateEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "CustomShapeCreateTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginSynchronization(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]): Self = this.set("BeginSynchronization", value.asInstanceOf[js.Any])
+    def setDiagramChanged(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "DiagramChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientDiagram]]): Self = this.set("CallbackError", value.asInstanceOf[js.Any])
+    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomShapeCreateTemplate(value: ASPxClientEvent[ASPxClientDiagramCustomShapeCreateTemplateEventHandler[ASPxClientDiagram]]): Self = this.set("CustomShapeCreateTemplate", value.asInstanceOf[js.Any])
+    def setEndSynchronization(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "EndSynchronization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagramChanged(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]): Self = this.set("DiagramChanged", value.asInstanceOf[js.Any])
+    def setExport(value: () => String): Self = StObject.set(x, "Export", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientDiagram]]): Self = this.set("EndCallback", value.asInstanceOf[js.Any])
+    def setExportTo(value: (String, js.Function1[/* arg */ String, Unit]) => Unit): Self = StObject.set(x, "ExportTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEndSynchronization(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDiagram]]): Self = this.set("EndSynchronization", value.asInstanceOf[js.Any])
+    def setImport(value: String => Unit): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExport(value: () => String): Self = this.set("Export", js.Any.fromFunction0(value))
+    def setItemClick(value: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "ItemClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportTo(value: (String, js.Function1[/* arg */ String, Unit]) => Unit): Self = this.set("ExportTo", js.Any.fromFunction2(value))
+    def setItemDblClick(value: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "ItemDblClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImport(value: String => Unit): Self = this.set("Import", js.Any.fromFunction1(value))
+    def setSelectionChanged(value: ASPxClientEvent[ASPxClientDiagramSelectionChangedEventHandler[ASPxClientDiagram]]): Self = StObject.set(x, "SelectionChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemClick(value: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]]): Self = this.set("ItemClick", value.asInstanceOf[js.Any])
+    def setSetFullscreenMode(value: Boolean => Unit): Self = StObject.set(x, "SetFullscreenMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemDblClick(value: ASPxClientEvent[ASPxClientDiagramItemClickEventHandler[ASPxClientDiagram]]): Self = this.set("ItemDblClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectionChanged(value: ASPxClientEvent[ASPxClientDiagramSelectionChangedEventHandler[ASPxClientDiagram]]): Self = this.set("SelectionChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetFullscreenMode(value: Boolean => Unit): Self = this.set("SetFullscreenMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetReadOnly(value: Boolean => Unit): Self = this.set("SetReadOnly", js.Any.fromFunction1(value))
+    def setSetReadOnly(value: Boolean => Unit): Self = StObject.set(x, "SetReadOnly", js.Any.fromFunction1(value))
   }
 }

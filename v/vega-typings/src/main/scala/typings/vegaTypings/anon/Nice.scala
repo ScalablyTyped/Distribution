@@ -1,12 +1,13 @@
 package typings.vegaTypings.anon
 
 import typings.vegaTypings.signalMod.SignalRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Nice extends js.Object {
+trait Nice extends StObject {
   
   var count: js.UndefOr[Double | SignalRef] = js.native
   
@@ -21,30 +22,18 @@ object Nice {
   }
   
   @scala.inline
-  implicit class NiceOps[Self <: Nice] (val x: Self) extends AnyVal {
+  implicit class NiceMutableBuilder[Self <: Nice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNice(value: Double | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double | SignalRef): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setNice(value: Double | SignalRef): Self = this.set("nice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNice: Self = this.set("nice", js.undefined)
+    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
   }
 }

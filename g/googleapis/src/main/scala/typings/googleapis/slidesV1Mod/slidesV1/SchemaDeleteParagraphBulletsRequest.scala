@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * preserved by adding indent to the start of the corresponding paragraph.
   */
 @js.native
-trait SchemaDeleteParagraphBulletsRequest extends js.Object {
+trait SchemaDeleteParagraphBulletsRequest extends StObject {
   
   /**
     * The optional table cell location if the text to be modified is in a table
@@ -38,36 +39,24 @@ object SchemaDeleteParagraphBulletsRequest {
   }
   
   @scala.inline
-  implicit class SchemaDeleteParagraphBulletsRequestOps[Self <: SchemaDeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaDeleteParagraphBulletsRequestMutableBuilder[Self <: SchemaDeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellLocation(value: SchemaTableCellLocation): Self = this.set("cellLocation", value.asInstanceOf[js.Any])
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def deleteCellLocation: Self = this.set("cellLocation", js.undefined)
+    def setTextRange(value: SchemaRange): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setTextRange(value: SchemaRange): Self = this.set("textRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextRange: Self = this.set("textRange", js.undefined)
+    def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowLambdaParameters extends js.Object {
+trait MaintenanceWindowLambdaParameters extends StObject {
   
   /**
     * Pass client-specific information to the Lambda function that you are invoking. You can then process the client information in your Lambda function as you choose through the context variable.
@@ -31,36 +32,24 @@ object MaintenanceWindowLambdaParameters {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowLambdaParametersOps[Self <: MaintenanceWindowLambdaParameters] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowLambdaParametersMutableBuilder[Self <: MaintenanceWindowLambdaParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientContext(value: MaintenanceWindowLambdaClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayload(value: MaintenanceWindowLambdaPayload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientContext(value: MaintenanceWindowLambdaClientContext): Self = this.set("ClientContext", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
     @scala.inline
-    def deleteClientContext: Self = this.set("ClientContext", js.undefined)
+    def setQualifier(value: MaintenanceWindowLambdaQualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: MaintenanceWindowLambdaPayload): Self = this.set("Payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("Payload", js.undefined)
-    
-    @scala.inline
-    def setQualifier(value: MaintenanceWindowLambdaQualifier): Self = this.set("Qualifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQualifier: Self = this.set("Qualifier", js.undefined)
+    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

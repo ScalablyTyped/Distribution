@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,60 +32,48 @@ object RTCTransportStats {
   }
   
   @scala.inline
-  implicit class RTCTransportStatsOps[Self <: RTCTransportStats] (val x: Self) extends AnyVal {
+  implicit class RTCTransportStatsMutableBuilder[Self <: RTCTransportStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveConnection(value: scala.Boolean): Self = StObject.set(x, "activeConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveConnectionUndefined: Self = StObject.set(x, "activeConnection", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveConnection(value: scala.Boolean): Self = this.set("activeConnection", value.asInstanceOf[js.Any])
+    def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
     
     @scala.inline
-    def deleteActiveConnection: Self = this.set("activeConnection", js.undefined)
+    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesReceived(value: Double): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
+    def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
     
     @scala.inline
-    def deleteBytesReceived: Self = this.set("bytesReceived", js.undefined)
+    def setLocalCertificateId(value: java.lang.String): Self = StObject.set(x, "localCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesSent(value: Double): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    def setLocalCertificateIdUndefined: Self = StObject.set(x, "localCertificateId", js.undefined)
     
     @scala.inline
-    def deleteBytesSent: Self = this.set("bytesSent", js.undefined)
+    def setRemoteCertificateId(value: java.lang.String): Self = StObject.set(x, "remoteCertificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalCertificateId(value: java.lang.String): Self = this.set("localCertificateId", value.asInstanceOf[js.Any])
+    def setRemoteCertificateIdUndefined: Self = StObject.set(x, "remoteCertificateId", js.undefined)
     
     @scala.inline
-    def deleteLocalCertificateId: Self = this.set("localCertificateId", js.undefined)
+    def setRtcpTransportStatsId(value: java.lang.String): Self = StObject.set(x, "rtcpTransportStatsId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteCertificateId(value: java.lang.String): Self = this.set("remoteCertificateId", value.asInstanceOf[js.Any])
+    def setRtcpTransportStatsIdUndefined: Self = StObject.set(x, "rtcpTransportStatsId", js.undefined)
     
     @scala.inline
-    def deleteRemoteCertificateId: Self = this.set("remoteCertificateId", js.undefined)
+    def setSelectedCandidatePairId(value: java.lang.String): Self = StObject.set(x, "selectedCandidatePairId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtcpTransportStatsId(value: java.lang.String): Self = this.set("rtcpTransportStatsId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtcpTransportStatsId: Self = this.set("rtcpTransportStatsId", js.undefined)
-    
-    @scala.inline
-    def setSelectedCandidatePairId(value: java.lang.String): Self = this.set("selectedCandidatePairId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedCandidatePairId: Self = this.set("selectedCandidatePairId", js.undefined)
+    def setSelectedCandidatePairIdUndefined: Self = StObject.set(x, "selectedCandidatePairId", js.undefined)
   }
 }

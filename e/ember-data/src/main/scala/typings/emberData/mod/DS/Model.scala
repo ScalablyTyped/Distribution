@@ -1,8 +1,10 @@
 package typings.emberData.mod.DS
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.ember.mod.Ember.NativeArray
 import typings.ember.mod.default.ComputedProperty
 import typings.ember.mod.default.Map
+import typings.ember.mod.default.Object
 import typings.emberData.anon.AdapterOptions
 import typings.emberData.anon.IncludeId
 import typings.emberData.anon.TypeofModel
@@ -15,9 +17,9 @@ import typings.emberData.mod.ChangedAttributes
 import typings.emberData.mod.ModelKeys
 import typings.emberData.mod.RelationshipMeta
 import typings.emberData.mod.RelationshipsFor
-import typings.emberObject.mod.default
 import typings.rsvp.mod.default.Promise
 import typings.std.InstanceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.Model")
 @js.native
-class Model () extends default {
+class Model () extends Object {
   
   /**
     * This property holds the `DS.AdapterError` object with which
@@ -266,24 +268,35 @@ class Model () extends default {
     */
   def unloadRecord(): Unit = js.native
 }
-/* static members */
-@JSImport("ember-data", "DS.Model")
-@js.native
-object Model extends js.Object {
+object Model {
+  
+  @JSImport("ember-data", "DS.Model")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A map whose keys are the attributes of the model (properties
     * described by DS.attr) and whose values are the meta object for the
     * property.
     */
-  var attributes: ComputedProperty[Map, Map] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.attributes")
+  @js.native
+  def attributes: ComputedProperty[Map, Map] = js.native
+  @scala.inline
+  def attributes_=(x: ComputedProperty[Map, Map]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
   
   /**
     * Iterates through the attributes of the model, calling the passed function on each
     * attribute.
     */
-  def eachAttribute[Class /* <: TypeofModel */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
-  def eachAttribute[Class /* <: TypeofModel */, M /* <: InstanceType[Class] */](
+  /* static member */
+  @JSImport("ember-data", "DS.Model.eachAttribute")
+  @js.native
+  def eachAttribute[Class /* <: TypeofModel with Instantiable0[Model] */, M /* <: InstanceType[Class] */](callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit]): Unit = js.native
+  @JSImport("ember-data", "DS.Model.eachAttribute")
+  @js.native
+  def eachAttribute[Class /* <: TypeofModel with Instantiable0[Model] */, M /* <: InstanceType[Class] */](
     callback: js.Function2[/* name */ ModelKeys[M], /* meta */ AttributeMeta[M], Unit],
     binding: js.Any
   ): Unit = js.native
@@ -294,7 +307,12 @@ object Model extends js.Object {
     * returned just once, regardless of how many different relationships it has
     * with a model.
     */
+  /* static member */
+  @JSImport("ember-data", "DS.Model.eachRelatedType")
+  @js.native
   def eachRelatedType(callback: js.Function1[/* name */ String, Unit]): Unit = js.native
+  @JSImport("ember-data", "DS.Model.eachRelatedType")
+  @js.native
   def eachRelatedType(callback: js.Function1[/* name */ String, Unit], binding: js.Any): Unit = js.native
   
   /**
@@ -302,7 +320,12 @@ object Model extends js.Object {
     * invoking the callback with the name of each relationship and its relationship
     * descriptor.
     */
+  /* static member */
+  @JSImport("ember-data", "DS.Model.eachRelationship")
+  @js.native
   def eachRelationship[M /* <: Model */](callback: js.Function2[/* name */ String, /* details */ RelationshipMeta[M], Unit]): Unit = js.native
+  @JSImport("ember-data", "DS.Model.eachRelationship")
+  @js.native
   def eachRelationship[M /* <: Model */](
     callback: js.Function2[/* name */ String, /* details */ RelationshipMeta[M], Unit],
     binding: js.Any
@@ -313,14 +336,19 @@ object Model extends js.Object {
     * the passed function on each attribute. Note the callback will not be
     * called for any attributes that do not have an transformation type.
     */
-  def eachTransformedAttribute[Class /* <: TypeofModel */](
+  /* static member */
+  @JSImport("ember-data", "DS.Model.eachTransformedAttribute")
+  @js.native
+  def eachTransformedAttribute[Class /* <: TypeofModel with Instantiable0[Model] */](
     callback: js.Function2[
       /* name */ ModelKeys[InstanceType[Class]], 
       /* keyof ember-data.ember-data/types/registries/transform.TransformRegistry */ /* type */ string | boolean | number | date, 
       Unit
     ]
   ): Unit = js.native
-  def eachTransformedAttribute[Class /* <: TypeofModel */](
+  @JSImport("ember-data", "DS.Model.eachTransformedAttribute")
+  @js.native
+  def eachTransformedAttribute[Class /* <: TypeofModel with Instantiable0[Model] */](
     callback: js.Function2[
       /* name */ ModelKeys[InstanceType[Class]], 
       /* keyof ember-data.ember-data/types/registries/transform.TransformRegistry */ /* type */ string | boolean | number | date, 
@@ -334,32 +362,55 @@ object Model extends js.Object {
     * describing the kind of the field. A model's fields are the union of all of its
     * attributes and relationships.
     */
-  var fields: ComputedProperty[Map, Map] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.fields")
+  @js.native
+  def fields: ComputedProperty[Map, Map] = js.native
+  @scala.inline
+  def fields_=(x: ComputedProperty[Map, Map]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
   
   /**
     * Find the relationship which is the inverse of the one asked for.
     */
+  /* static member */
+  @JSImport("ember-data", "DS.Model.inverseFor")
+  @js.native
   def inverseFor[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](name: K, store: Store): js.Object = js.native
   
   /**
     * Represents the model's class name as a string. This can be used to look up the model's class name through
     * `DS.Store`'s modelFor method.
     */
-  var modelName: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.modelName")
+  @js.native
+  def modelName: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String = js.native
+  @scala.inline
+  def modelName_=(x: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modelName")(x.asInstanceOf[js.Any])
   
   /**
     * An array of types directly related to a model. Each type will be
     * included once, regardless of the number of relationships it has with
     * the model.
     */
-  var relatedTypes: ComputedProperty[NativeArray[String], NativeArray[String]] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.relatedTypes")
+  @js.native
+  def relatedTypes: ComputedProperty[NativeArray[String], NativeArray[String]] = js.native
+  @scala.inline
+  def relatedTypes_=(x: ComputedProperty[NativeArray[String], NativeArray[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relatedTypes")(x.asInstanceOf[js.Any])
   
   /**
     * A hash containing lists of the model's relationships, grouped
     * by the relationship kind. For example, given a model with this
     * definition:
     */
-  var relationshipNames: ComputedProperty[js.Object, js.Object] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.relationshipNames")
+  @js.native
+  def relationshipNames: ComputedProperty[js.Object, js.Object] = js.native
+  @scala.inline
+  def relationshipNames_=(x: ComputedProperty[js.Object, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relationshipNames")(x.asInstanceOf[js.Any])
   
   /**
     * The model's relationships as a map, keyed on the type of the
@@ -367,13 +418,24 @@ object Model extends js.Object {
     * for each relationship with that type, describing the name of the relationship
     * as well as the type.
     */
-  var relationships: ComputedProperty[Map, Map] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.relationships")
+  @js.native
+  def relationships: ComputedProperty[Map, Map] = js.native
   
   /**
     * A map whose keys are the relationships of a model and whose values are
     * relationship descriptors.
     */
-  var relationshipsByName: ComputedProperty[Map, Map] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.relationshipsByName")
+  @js.native
+  def relationshipsByName: ComputedProperty[Map, Map] = js.native
+  @scala.inline
+  def relationshipsByName_=(x: ComputedProperty[Map, Map]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relationshipsByName")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def relationships_=(x: ComputedProperty[Map, Map]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relationships")(x.asInstanceOf[js.Any])
   
   /**
     * A map whose keys are the attributes of the model (properties
@@ -381,10 +443,18 @@ object Model extends js.Object {
     * applied to each attribute. This map does not include any
     * attributes that do not have an transformation type.
     */
-  var transformedAttributes: ComputedProperty[Map, Map] = js.native
+  /* static member */
+  @JSImport("ember-data", "DS.Model.transformedAttributes")
+  @js.native
+  def transformedAttributes: ComputedProperty[Map, Map] = js.native
+  @scala.inline
+  def transformedAttributes_=(x: ComputedProperty[Map, Map]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transformedAttributes")(x.asInstanceOf[js.Any])
   
   /**
     * For a given relationship name, returns the model type of the relationship.
     */
+  /* static member */
+  @JSImport("ember-data", "DS.Model.typeForRelationship")
+  @js.native
   def typeForRelationship[K /* <: /* keyof ember-data.ember-data/types/registries/model.ModelRegistry */ String */](name: K, store: Store): /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any = js.native
 }

@@ -4,16 +4,16 @@ import typings.fastCsvParse.typesMod.Row
 import typings.fastCsvParse.typesMod.RowTransformFunction
 import typings.fastCsvParse.typesMod.RowValidate
 import typings.fastCsvParse.typesMod.RowValidatorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", JSImport.Namespace)
-@js.native
-object rowTransformerValidatorMod extends js.Object {
+object rowTransformerValidatorMod {
   
+  @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator")
   @js.native
-  class RowTransformerValidator[I /* <: Row[_] */, O /* <: Row[_] */] () extends js.Object {
+  class RowTransformerValidator[I /* <: Row[_] */, O /* <: Row[_] */] () extends StObject {
     
     var _rowTransform: js.Any = js.native
     
@@ -30,11 +30,22 @@ object rowTransformerValidatorMod extends js.Object {
     def transformAndValidate(row: I, cb: RowValidatorCallback[O]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object RowTransformerValidator extends js.Object {
+  object RowTransformerValidator {
     
-    var createTransform: js.Any = js.native
+    @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var createValidator: js.Any = js.native
+    @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator.createTransform")
+    @js.native
+    def createTransform: js.Any = js.native
+    @scala.inline
+    def createTransform_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createTransform")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator.createValidator")
+    @js.native
+    def createValidator: js.Any = js.native
+    @scala.inline
+    def createValidator_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createValidator")(x.asInstanceOf[js.Any])
   }
 }

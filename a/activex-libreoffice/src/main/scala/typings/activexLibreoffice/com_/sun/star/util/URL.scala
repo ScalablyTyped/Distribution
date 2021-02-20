@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XURLTransformer
   */
 @js.native
-trait URL extends js.Object {
+trait URL extends StObject {
   
   /** contains the arguments part of the {@link URL} , for example, "a=b" */
   var Arguments: String = js.native
@@ -85,51 +86,39 @@ object URL {
   }
   
   @scala.inline
-  implicit class URLOps[Self <: URL] (val x: Self) extends AnyVal {
+  implicit class URLMutableBuilder[Self <: URL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArguments(value: String): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplete(value: String): Self = StObject.set(x, "Complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMain(value: String): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArguments(value: String): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    def setMark(value: String): Self = StObject.set(x, "Mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplete(value: String): Self = this.set("Complete", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: String): Self = this.set("Main", value.asInstanceOf[js.Any])
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMark(value: String): Self = this.set("Mark", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("Port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: String): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServer(value: String): Self = this.set("Server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

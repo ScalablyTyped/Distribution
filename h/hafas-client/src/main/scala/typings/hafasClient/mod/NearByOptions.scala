@@ -1,11 +1,12 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NearByOptions extends js.Object {
+trait NearByOptions extends StObject {
   
   /**
     * maximum walking distance in meters
@@ -64,66 +65,54 @@ object NearByOptions {
   }
   
   @scala.inline
-  implicit class NearByOptionsOps[Self <: NearByOptions] (val x: Self) extends AnyVal {
+  implicit class NearByOptionsMutableBuilder[Self <: NearByOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntrances(value: Boolean): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrances(value: Boolean): Self = this.set("entrances", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteEntrances: Self = this.set("entrances", js.undefined)
+    def setLinesOfStops(value: Boolean): Self = StObject.set(x, "linesOfStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLinesOfStopsUndefined: Self = StObject.set(x, "linesOfStops", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setPoi(value: Boolean): Self = StObject.set(x, "poi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesOfStops(value: Boolean): Self = this.set("linesOfStops", value.asInstanceOf[js.Any])
+    def setPoiUndefined: Self = StObject.set(x, "poi", js.undefined)
     
     @scala.inline
-    def deleteLinesOfStops: Self = this.set("linesOfStops", js.undefined)
+    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoi(value: Boolean): Self = this.set("poi", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deletePoi: Self = this.set("poi", js.undefined)
+    def setStops(value: Boolean): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setSubStops(value: Boolean): Self = StObject.set(x, "subStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStops(value: Boolean): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
-    
-    @scala.inline
-    def setSubStops(value: Boolean): Self = this.set("subStops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubStops: Self = this.set("subStops", js.undefined)
+    def setSubStopsUndefined: Self = StObject.set(x, "subStops", js.undefined)
   }
 }

@@ -15,41 +15,17 @@ import typings.youtube.YT.PlayerState
 import typings.youtube.YT.PlaysInline
 import typings.youtube.YT.RelatedVideos
 import typings.youtube.YT.ShowInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object youtubeNumbers {
   
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
-  
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
-  
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
-  
-  @scala.inline
-  def `100`: `100` = 100.asInstanceOf[`100`]
-  
-  @scala.inline
-  def `101`: `101` = 101.asInstanceOf[`101`]
-  
-  @scala.inline
-  def `150`: `150` = 150.asInstanceOf[`150`]
-  
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
-  
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
-  
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
-  
   @js.native
   sealed trait `-1` extends PlayerState
+  @scala.inline
+  def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
   sealed trait `0`
@@ -66,6 +42,8 @@ object youtubeNumbers {
        with PlaysInline
        with RelatedVideos
        with ShowInfo
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
@@ -83,15 +61,23 @@ object youtubeNumbers {
        with PlaysInline
        with RelatedVideos
        with ShowInfo
+  @scala.inline
+  def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `100` extends PlayerError
+  @scala.inline
+  def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
   sealed trait `101` extends PlayerError
+  @scala.inline
+  def `101`: `101` = 101.asInstanceOf[`101`]
   
   @js.native
   sealed trait `150` extends PlayerError
+  @scala.inline
+  def `150`: `150` = 150.asInstanceOf[`150`]
   
   @js.native
   sealed trait `2`
@@ -99,14 +85,20 @@ object youtubeNumbers {
        with Controls
        with PlayerError
        with PlayerState
+  @scala.inline
+  def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
     extends IvLoadPolicy
        with PlayerState
+  @scala.inline
+  def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `5`
     extends PlayerError
        with PlayerState
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
 }

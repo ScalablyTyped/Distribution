@@ -1,11 +1,12 @@
 package typings.stellarSdk.horizonApiMod.Horizon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Flags extends js.Object {
+trait Flags extends StObject {
   
   var auth_immutable: Boolean = js.native
   
@@ -22,27 +23,15 @@ object Flags {
   }
   
   @scala.inline
-  implicit class FlagsOps[Self <: Flags] (val x: Self) extends AnyVal {
+  implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth_immutable(value: Boolean): Self = StObject.set(x, "auth_immutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuth_required(value: Boolean): Self = StObject.set(x, "auth_required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAuth_immutable(value: Boolean): Self = this.set("auth_immutable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuth_required(value: Boolean): Self = this.set("auth_required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuth_revocable(value: Boolean): Self = this.set("auth_revocable", value.asInstanceOf[js.Any])
+    def setAuth_revocable(value: Boolean): Self = StObject.set(x, "auth_revocable", value.asInstanceOf[js.Any])
   }
 }

@@ -4,28 +4,29 @@ import typings.qiniuJs.qiniuJsStrings.bmp
 import typings.qiniuJs.qiniuJsStrings.gif
 import typings.qiniuJs.qiniuJsStrings.jpeg
 import typings.qiniuJs.qiniuJsStrings.png
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageInfo_ extends js.Object {
+trait ImageInfo_ extends StObject {
   
-                              // 图片高度，单位：像素(px) 。
+  // 图片高度，单位：像素(px) 。
   var colorModel: String = js.native
   
-                              // 文件大小，单位：Bytes
+  // 文件大小，单位：Bytes
   var format: png | jpeg | gif | bmp = js.native
   
-                          // 彩色空间，如palette16、ycbcr等。
+  // 彩色空间，如palette16、ycbcr等。
   var frameNumber: Double = js.native
   
-                              // 图片宽度，单位：像素(px) 。
+  // 图片宽度，单位：像素(px) 。
   var height: Double = js.native
   
   var size: Double = js.native
   
-      // 图片类型，如png、jpeg、gif、bmp等。
+  // 图片类型，如png、jpeg、gif、bmp等。
   var width: Double = js.native
 }
 object ImageInfo_ {
@@ -44,36 +45,24 @@ object ImageInfo_ {
   }
   
   @scala.inline
-  implicit class ImageInfo_Ops[Self <: ImageInfo_] (val x: Self) extends AnyVal {
+  implicit class ImageInfo_MutableBuilder[Self <: ImageInfo_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorModel(value: String): Self = StObject.set(x, "colorModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormat(value: png | jpeg | gif | bmp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameNumber(value: Double): Self = StObject.set(x, "frameNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorModel(value: String): Self = this.set("colorModel", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: png | jpeg | gif | bmp): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameNumber(value: Double): Self = this.set("frameNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

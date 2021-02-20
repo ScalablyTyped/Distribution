@@ -6,17 +6,17 @@ import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.interfacesUserMod.UserSummary
 import typings.typedGithubApi.repositoryMod.Repository
 import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-github-api/dist/repository", JSImport.Namespace)
-@js.native
-object distRepositoryMod extends js.Object {
+object distRepositoryMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef because Already inherited
-  - typings.typedGithubApi.interfacesRepositoryMod.Repository because var conflicts: owner. Inlined id, fullName, description, isPrivate, isFork, htmlUri, homePage, language, forksCount, starGazersCount, watchersCount, size, defaultBranch, openIssuesCount, topics, hasIssues, hasWiki, hasPages, hasDownloads, pushed, created, updated, permissions, allowRebasemerge, allowSquashMerge, allowMergeCommit, subscribersCount, networkCount */ @js.native
+  - typings.typedGithubApi.interfacesRepositoryMod.Repository because var conflicts: owner. Inlined id, fullName, description, isPrivate, isFork, htmlUri, homePage, language, forksCount, starGazersCount, watchersCount, size, defaultBranch, openIssuesCount, topics, hasIssues, hasWiki, hasPages, hasDownloads, pushed, created, updated, permissions, allowRebasemerge, allowSquashMerge, allowMergeCommit, subscribersCount, networkCount */ @JSImport("typed-github-api/dist/repository", "RepositoryClass")
+  @js.native
   class RepositoryClass protected () extends RepositoryRefClass {
     def this(repository: Repository, options: OptionsOrRef) = this()
     

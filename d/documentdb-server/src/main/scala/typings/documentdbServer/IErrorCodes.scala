@@ -1,12 +1,13 @@
 package typings.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** List of error codes returned by database operations in the RequestCallback and FeedCallback. See the corresponding error message for more details. */
 @js.native
-trait IErrorCodes extends js.Object {
+trait IErrorCodes extends StObject {
   
   // Client error
   /** (400) Request failed due to bad inputs **/
@@ -52,42 +53,30 @@ object IErrorCodes {
   }
   
   @scala.inline
-  implicit class IErrorCodesOps[Self <: IErrorCodes] (val x: Self) extends AnyVal {
+  implicit class IErrorCodesMutableBuilder[Self <: IErrorCodes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadRequest(value: Double): Self = StObject.set(x, "BadRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConflict(value: Double): Self = StObject.set(x, "Conflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForbidden(value: Double): Self = StObject.set(x, "Forbidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadRequest(value: Double): Self = this.set("BadRequest", value.asInstanceOf[js.Any])
+    def setInternalServerError(value: Double): Self = StObject.set(x, "InternalServerError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflict(value: Double): Self = this.set("Conflict", value.asInstanceOf[js.Any])
+    def setNotFound(value: Double): Self = StObject.set(x, "NotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForbidden(value: Double): Self = this.set("Forbidden", value.asInstanceOf[js.Any])
+    def setPreconditionFailed(value: Double): Self = StObject.set(x, "PreconditionFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalServerError(value: Double): Self = this.set("InternalServerError", value.asInstanceOf[js.Any])
+    def setRequestEntityTooLarge(value: Double): Self = StObject.set(x, "RequestEntityTooLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotFound(value: Double): Self = this.set("NotFound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreconditionFailed(value: Double): Self = this.set("PreconditionFailed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestEntityTooLarge(value: Double): Self = this.set("RequestEntityTooLarge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetryWith(value: Double): Self = this.set("RetryWith", value.asInstanceOf[js.Any])
+    def setRetryWith(value: Double): Self = StObject.set(x, "RetryWith", value.asInstanceOf[js.Any])
   }
 }

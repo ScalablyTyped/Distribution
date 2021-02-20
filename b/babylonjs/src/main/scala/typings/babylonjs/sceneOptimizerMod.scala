@@ -3,16 +3,25 @@ package typings.babylonjs
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Misc/sceneOptimizer", JSImport.Namespace)
-@js.native
-object sceneOptimizerMod extends js.Object {
+object sceneOptimizerMod {
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "CustomOptimization")
   @js.native
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
   class CustomOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
     
     /**
       * Callback called to apply the custom optimization.
@@ -25,6 +34,7 @@ object sceneOptimizerMod extends js.Object {
     def onGetDescription(): String = js.native
   }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "HardwareScalingOptimization")
   @js.native
   /**
     * Creates the HardwareScalingOptimization object
@@ -129,11 +139,32 @@ object sceneOptimizerMod extends js.Object {
     var step: Double = js.native
   }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "LensFlaresOptimization")
   @js.native
-  class LensFlaresOptimization () extends SceneOptimization
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
+  class LensFlaresOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
+  }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "MergeMeshesOptimization")
   @js.native
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
   class MergeMeshesOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
     
     var _canBeMerged: js.Any = js.native
     
@@ -141,37 +172,69 @@ object sceneOptimizerMod extends js.Object {
     def apply(scene: Scene, optimizer: SceneOptimizer, updateSelectionTree: Boolean): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object MergeMeshesOptimization extends js.Object {
+  object MergeMeshesOptimization {
     
-    /**
-      * Gets or sets a boolean which defines if optimization octree has to be updated
-      */
-    def UpdateSelectionTree: Boolean = js.native
-    /**
-      * Gets or sets a boolean which defines if optimization octree has to be updated
-      */
-    def UpdateSelectionTree_=(value: Boolean): Unit = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "MergeMeshesOptimization")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _UpdateSelectionTree: js.Any = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "MergeMeshesOptimization._UpdateSelectionTree")
+    @js.native
+    def _UpdateSelectionTree: js.Any = js.native
+    @scala.inline
+    def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  class ParticlesOptimization () extends SceneOptimization
-  
-  @js.native
-  class PostProcessesOptimization () extends SceneOptimization
-  
-  @js.native
-  class RenderTargetsOptimization () extends SceneOptimization
-  
+  @JSImport("babylonjs/Misc/sceneOptimizer", "ParticlesOptimization")
   @js.native
   /**
     * Creates the SceneOptimization object
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
     * @param desc defines the description associated with the optimization
     */
-  class SceneOptimization () extends js.Object {
+  class ParticlesOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
+  }
+  
+  @JSImport("babylonjs/Misc/sceneOptimizer", "PostProcessesOptimization")
+  @js.native
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
+  class PostProcessesOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
+  }
+  
+  @JSImport("babylonjs/Misc/sceneOptimizer", "RenderTargetsOptimization")
+  @js.native
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
+  class RenderTargetsOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
+  }
+  
+  @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimization")
+  @js.native
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
+  class SceneOptimization () extends StObject {
     def this(/**
       * Defines the priority of this optimization (0 by default which means first in the list)
       */
@@ -198,6 +261,7 @@ object sceneOptimizerMod extends js.Object {
     var priority: Double = js.native
   }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer")
   @js.native
   class SceneOptimizer protected () extends IDisposable {
     /**
@@ -326,8 +390,7 @@ object sceneOptimizerMod extends js.Object {
     def trackerDuration_=(value: Double): Unit = js.native
   }
   /* static members */
-  @js.native
-  object SceneOptimizer extends js.Object {
+  object SceneOptimizer {
     
     /**
       * Helper function to create a SceneOptimizer with one single line of code
@@ -337,28 +400,44 @@ object sceneOptimizerMod extends js.Object {
       * @param onFailure defines a callback to call on failure
       * @returns the new SceneOptimizer object
       */
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(scene: Scene): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(
       scene: Scene,
       options: js.UndefOr[scala.Nothing],
       onSuccess: js.UndefOr[scala.Nothing],
       onFailure: js.Function0[Unit]
     ): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(scene: Scene, options: js.UndefOr[scala.Nothing], onSuccess: js.Function0[Unit]): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(
       scene: Scene,
       options: js.UndefOr[scala.Nothing],
       onSuccess: js.Function0[Unit],
       onFailure: js.Function0[Unit]
     ): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(
       scene: Scene,
       options: SceneOptimizerOptions,
       onSuccess: js.UndefOr[scala.Nothing],
       onFailure: js.Function0[Unit]
     ): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(scene: Scene, options: SceneOptimizerOptions, onSuccess: js.Function0[Unit]): SceneOptimizer = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizer.OptimizeAsync")
+    @js.native
     def OptimizeAsync(
       scene: Scene,
       options: SceneOptimizerOptions,
@@ -367,13 +446,14 @@ object sceneOptimizerMod extends js.Object {
     ): SceneOptimizer = js.native
   }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions")
   @js.native
   /**
     * Creates a new list of options used by SceneOptimizer
     * @param targetFrameRate defines the target frame rate to reach (60 by default)
     * @param trackerDuration defines the interval between two checkes (2000ms by default)
     */
-  class SceneOptimizerOptions () extends js.Object {
+  class SceneOptimizerOptions () extends StObject {
     def this(/**
       * Defines the target frame rate to reach (60 by default)
       */
@@ -436,15 +516,18 @@ object sceneOptimizerMod extends js.Object {
     var trackerDuration: Double = js.native
   }
   /* static members */
-  @js.native
-  object SceneOptimizerOptions extends js.Object {
+  object SceneOptimizerOptions {
     
     /**
       * Creates a list of pre-defined optimizations aimed to have a big impact on the scene visual
       * @param targetFrameRate defines the target frame rate (60 by default)
       * @returns a SceneOptimizerOptions object
       */
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.HighDegradationAllowed")
+    @js.native
     def HighDegradationAllowed(): SceneOptimizerOptions = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.HighDegradationAllowed")
+    @js.native
     def HighDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
     
     /**
@@ -452,7 +535,11 @@ object sceneOptimizerMod extends js.Object {
       * @param targetFrameRate defines the target frame rate (60 by default)
       * @returns a SceneOptimizerOptions object
       */
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.LowDegradationAllowed")
+    @js.native
     def LowDegradationAllowed(): SceneOptimizerOptions = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.LowDegradationAllowed")
+    @js.native
     def LowDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
     
     /**
@@ -460,13 +547,29 @@ object sceneOptimizerMod extends js.Object {
       * @param targetFrameRate defines the target frame rate (60 by default)
       * @returns a SceneOptimizerOptions object
       */
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.ModerateDegradationAllowed")
+    @js.native
     def ModerateDegradationAllowed(): SceneOptimizerOptions = js.native
+    @JSImport("babylonjs/Misc/sceneOptimizer", "SceneOptimizerOptions.ModerateDegradationAllowed")
+    @js.native
     def ModerateDegradationAllowed(targetFrameRate: Double): SceneOptimizerOptions = js.native
   }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "ShadowsOptimization")
   @js.native
-  class ShadowsOptimization () extends SceneOptimization
+  /**
+    * Creates the SceneOptimization object
+    * @param priority defines the priority of this optimization (0 by default which means first in the list)
+    * @param desc defines the description associated with the optimization
+    */
+  class ShadowsOptimization () extends SceneOptimization {
+    def this(/**
+      * Defines the priority of this optimization (0 by default which means first in the list)
+      */
+    priority: Double) = this()
+  }
   
+  @JSImport("babylonjs/Misc/sceneOptimizer", "TextureOptimization")
   @js.native
   /**
     * Creates the TextureOptimization object

@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IResolvedFile extends js.Object {
+trait IResolvedFile extends StObject {
   
   var importedFiles: js.Array[String] = js.native
   
@@ -22,33 +23,21 @@ object IResolvedFile {
   }
   
   @scala.inline
-  implicit class IResolvedFileOps[Self <: IResolvedFile] (val x: Self) extends AnyVal {
+  implicit class IResolvedFileMutableBuilder[Self <: IResolvedFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportedFiles(value: js.Array[String]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setImportedFilesVarargs(value: String*): Self = StObject.set(x, "importedFiles", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedFilesVarargs(value: String*): Self = this.set("importedFiles", js.Array(value :_*))
+    def setReferencedFiles(value: js.Array[String]): Self = StObject.set(x, "referencedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportedFiles(value: js.Array[String]): Self = this.set("importedFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferencedFilesVarargs(value: String*): Self = this.set("referencedFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setReferencedFiles(value: js.Array[String]): Self = this.set("referencedFiles", value.asInstanceOf[js.Any])
+    def setReferencedFilesVarargs(value: String*): Self = StObject.set(x, "referencedFiles", js.Array(value :_*))
   }
 }

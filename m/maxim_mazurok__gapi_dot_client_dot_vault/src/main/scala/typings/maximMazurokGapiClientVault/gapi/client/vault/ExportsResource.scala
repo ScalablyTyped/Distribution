@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientVault.anon.Accesstoken
 import typings.maximMazurokGapiClientVault.anon.Alt
 import typings.maximMazurokGapiClientVault.anon.Callback
 import typings.maximMazurokGapiClientVault.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportsResource extends js.Object {
+trait ExportsResource extends StObject {
   
   /** Creates an Export. */
   def create(request: Accesstoken): Request[Export] = js.native

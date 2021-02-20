@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitRefUpdateResult extends js.Object {
+trait GitRefUpdateResult extends StObject {
   
   /**
     * Custom message for the result object For instance, Reason for failing.
@@ -71,45 +72,33 @@ object GitRefUpdateResult {
   }
   
   @scala.inline
-  implicit class GitRefUpdateResultOps[Self <: GitRefUpdateResult] (val x: Self) extends AnyVal {
+  implicit class GitRefUpdateResultMutableBuilder[Self <: GitRefUpdateResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
+    def setNewObjectId(value: String): Self = StObject.set(x, "newObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLocked(value: Boolean): Self = this.set("isLocked", value.asInstanceOf[js.Any])
+    def setOldObjectId(value: String): Self = StObject.set(x, "oldObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRejectedBy(value: String): Self = StObject.set(x, "rejectedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewObjectId(value: String): Self = this.set("newObjectId", value.asInstanceOf[js.Any])
+    def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOldObjectId(value: String): Self = this.set("oldObjectId", value.asInstanceOf[js.Any])
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectedBy(value: String): Self = this.set("rejectedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryId(value: String): Self = this.set("repositoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateStatus(value: GitRefUpdateStatus): Self = this.set("updateStatus", value.asInstanceOf[js.Any])
+    def setUpdateStatus(value: GitRefUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.tableau.global.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("tableau.ParameterAllowableValuesType")
 @js.native
-object ParameterAllowableValuesType extends js.Object {
+object ParameterAllowableValuesType extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.tableau.tableau.ParameterAllowableValuesType with String] = js.native

@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.anon
 
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.ProfileSnapshotRequest
 import typings.devtoolsProtocol.mod.Protocol.LayerTree.ProfileSnapshotResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReturnTypeProfileSnapshotResponse extends js.Object {
+trait ReturnTypeProfileSnapshotResponse extends StObject {
   
   var paramsType: js.Array[ProfileSnapshotRequest] = js.native
   
@@ -22,27 +23,15 @@ object ReturnTypeProfileSnapshotResponse {
   }
   
   @scala.inline
-  implicit class ReturnTypeProfileSnapshotResponseOps[Self <: ReturnTypeProfileSnapshotResponse] (val x: Self) extends AnyVal {
+  implicit class ReturnTypeProfileSnapshotResponseMutableBuilder[Self <: ReturnTypeProfileSnapshotResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamsType(value: js.Array[ProfileSnapshotRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamsTypeVarargs(value: ProfileSnapshotRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParamsTypeVarargs(value: ProfileSnapshotRequest*): Self = this.set("paramsType", js.Array(value :_*))
-    
-    @scala.inline
-    def setParamsType(value: js.Array[ProfileSnapshotRequest]): Self = this.set("paramsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReturnType(value: ProfileSnapshotResponse): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    def setReturnType(value: ProfileSnapshotResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

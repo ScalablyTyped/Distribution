@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderDisabled extends js.Object {
+trait BorderDisabled extends StObject {
   
   var border: js.UndefOr[Radius] = js.native
   
@@ -20,30 +21,18 @@ object BorderDisabled {
   }
   
   @scala.inline
-  implicit class BorderDisabledOps[Self <: BorderDisabled] (val x: Self) extends AnyVal {
+  implicit class BorderDisabledMutableBuilder[Self <: BorderDisabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: Radius): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: OpacityOpacityType): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Radius): Self = this.set("border", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
-    
-    @scala.inline
-    def setDisabled(value: OpacityOpacityType): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }
 }

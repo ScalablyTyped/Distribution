@@ -1,12 +1,13 @@
 package typings.popcorn
 
 import typings.std.TrackEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PopcornPlugin extends js.Object {
+trait PopcornPlugin extends StObject {
   
   def apply(options: js.Any): js.Any = js.native
   

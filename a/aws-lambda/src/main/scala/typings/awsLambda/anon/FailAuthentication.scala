@@ -1,11 +1,12 @@
 package typings.awsLambda.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailAuthentication extends js.Object {
+trait FailAuthentication extends StObject {
   
   var challengeName: String = js.native
   
@@ -22,27 +23,15 @@ object FailAuthentication {
   }
   
   @scala.inline
-  implicit class FailAuthenticationOps[Self <: FailAuthentication] (val x: Self) extends AnyVal {
+  implicit class FailAuthenticationMutableBuilder[Self <: FailAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChallengeName(value: String): Self = StObject.set(x, "challengeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailAuthentication(value: Boolean): Self = StObject.set(x, "failAuthentication", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChallengeName(value: String): Self = this.set("challengeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailAuthentication(value: Boolean): Self = this.set("failAuthentication", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIssueTokens(value: Boolean): Self = this.set("issueTokens", value.asInstanceOf[js.Any])
+    def setIssueTokens(value: Boolean): Self = StObject.set(x, "issueTokens", value.asInstanceOf[js.Any])
   }
 }

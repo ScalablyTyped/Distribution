@@ -1,6 +1,7 @@
 package typings.babylonjs.legacyMod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +30,15 @@ class PlaneRotationGizmo protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "PlaneRotationGizmo")
-@js.native
-object PlaneRotationGizmo extends js.Object {
+object PlaneRotationGizmo {
   
-  var _CircleConstants: js.Any = js.native
+  @JSImport("babylonjs/Legacy/legacy", "PlaneRotationGizmo")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs/Legacy/legacy", "PlaneRotationGizmo._CircleConstants")
+  @js.native
+  def _CircleConstants: js.Any = js.native
+  @scala.inline
+  def _CircleConstants_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CircleConstants")(x.asInstanceOf[js.Any])
 }

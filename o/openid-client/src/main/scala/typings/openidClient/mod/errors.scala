@@ -1,18 +1,18 @@
 package typings.openidClient.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openid-client", "errors")
-@js.native
-object errors extends js.Object {
+object errors {
   
   /**
     * Error class thrown when a regular OAuth 2.0 / OIDC style error is returned by the AS or an
     * unexpected response is sent by the OP.
     */
+  @JSImport("openid-client", "errors.OPError")
   @js.native
   class OPError () extends Error {
     
@@ -58,6 +58,7 @@ object errors extends js.Object {
     * Depending on the context it may or may not have additional context-based properties like
     * checks, jwt, params or body.
     */
+  @JSImport("openid-client", "errors.RPError")
   @js.native
   class RPError () extends Error {
     

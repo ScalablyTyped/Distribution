@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeysAndAttributes extends js.Object {
+trait KeysAndAttributes extends StObject {
   
   /**
     * This is a legacy parameter. Use ProjectionExpression instead. For more information, see Legacy Conditional Parameters in the Amazon DynamoDB Developer Guide.
@@ -41,51 +42,39 @@ object KeysAndAttributes {
   }
   
   @scala.inline
-  implicit class KeysAndAttributesOps[Self <: KeysAndAttributes] (val x: Self) extends AnyVal {
+  implicit class KeysAndAttributesMutableBuilder[Self <: KeysAndAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: Key*): Self = this.set("Keys", js.Array(value :_*))
+    def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: KeyList): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
     
     @scala.inline
-    def setAttributesToGetVarargs(value: AttributeName*): Self = this.set("AttributesToGet", js.Array(value :_*))
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributesToGet(value: AttributeNameList): Self = this.set("AttributesToGet", value.asInstanceOf[js.Any])
+    def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
     
     @scala.inline
-    def deleteAttributesToGet: Self = this.set("AttributesToGet", js.undefined)
+    def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsistentRead(value: ConsistentRead): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
+    def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
     
     @scala.inline
-    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
-    
-    @scala.inline
-    def setProjectionExpression(value: ProjectionExpression): Self = this.set("ProjectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectionExpression: Self = this.set("ProjectionExpression", js.undefined)
+    def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
   }
 }

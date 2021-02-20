@@ -4,6 +4,7 @@ import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,36 +45,24 @@ object TaxonomyFieldValue {
   }
   
   @scala.inline
-  implicit class TaxonomyFieldValueOps[Self <: TaxonomyFieldValue] (val x: Self) extends AnyVal {
+  implicit class TaxonomyFieldValueMutableBuilder[Self <: TaxonomyFieldValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_label(value: () => String): Self = StObject.set(x, "get_label", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_termGuid(value: () => Guid): Self = StObject.set(x, "get_termGuid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_wssId(value: () => Double): Self = StObject.set(x, "get_wssId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_label(value: () => String): Self = this.set("get_label", js.Any.fromFunction0(value))
+    def setSet_label(value: String => Unit): Self = StObject.set(x, "set_label", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_termGuid(value: () => Guid): Self = this.set("get_termGuid", js.Any.fromFunction0(value))
+    def setSet_termGuid(value: Guid => Unit): Self = StObject.set(x, "set_termGuid", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet_wssId(value: () => Double): Self = this.set("get_wssId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_label(value: String => Unit): Self = this.set("set_label", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_termGuid(value: Guid => Unit): Self = this.set("set_termGuid", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSet_wssId(value: Double => Unit): Self = this.set("set_wssId", js.Any.fromFunction1(value))
+    def setSet_wssId(value: Double => Unit): Self = StObject.set(x, "set_wssId", js.Any.fromFunction1(value))
   }
 }

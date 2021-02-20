@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitAsyncRefOperationParameters extends js.Object {
+trait GitAsyncRefOperationParameters extends StObject {
   
   /**
     * Proposed target branch name for the cherry pick or revert operation.
@@ -41,30 +42,18 @@ object GitAsyncRefOperationParameters {
   }
   
   @scala.inline
-  implicit class GitAsyncRefOperationParametersOps[Self <: GitAsyncRefOperationParameters] (val x: Self) extends AnyVal {
+  implicit class GitAsyncRefOperationParametersMutableBuilder[Self <: GitAsyncRefOperationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeneratedRefName(value: String): Self = StObject.set(x, "generatedRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOntoRefName(value: String): Self = StObject.set(x, "ontoRefName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeneratedRefName(value: String): Self = this.set("generatedRefName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOntoRefName(value: String): Self = this.set("ontoRefName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository(value: GitRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: GitAsyncRefOperationSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: GitAsyncRefOperationSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

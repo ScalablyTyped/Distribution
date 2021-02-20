@@ -1,36 +1,72 @@
 package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Topic. */
-trait ITopic extends js.Object {
+@js.native
+trait ITopic extends StObject {
+  
   /** Topic kmsKeyName */
-  var kmsKeyName: js.UndefOr[String | Null] = js.undefined
+  var kmsKeyName: js.UndefOr[String | Null] = js.native
+  
   /** Topic labels */
-  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+  
   /** Topic messageStoragePolicy */
-  var messageStoragePolicy: js.UndefOr[IMessageStoragePolicy | Null] = js.undefined
+  var messageStoragePolicy: js.UndefOr[IMessageStoragePolicy | Null] = js.native
+  
   /** Topic name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
 }
-
 object ITopic {
+  
   @scala.inline
-  def apply(
-    kmsKeyName: js.UndefOr[Null | String] = js.undefined,
-    labels: js.UndefOr[Null | StringDictionary[String]] = js.undefined,
-    messageStoragePolicy: js.UndefOr[Null | IMessageStoragePolicy] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined
-  ): ITopic = {
+  def apply(): ITopic = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(kmsKeyName)) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
-    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageStoragePolicy)) __obj.updateDynamic("messageStoragePolicy")(messageStoragePolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITopic]
   }
+  
+  @scala.inline
+  implicit class ITopicMutableBuilder[Self <: ITopic] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKmsKeyNameNull: Self = StObject.set(x, "kmsKeyName", null)
+    
+    @scala.inline
+    def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+    
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLabelsNull: Self = StObject.set(x, "labels", null)
+    
+    @scala.inline
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    @scala.inline
+    def setMessageStoragePolicy(value: IMessageStoragePolicy): Self = StObject.set(x, "messageStoragePolicy", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMessageStoragePolicyNull: Self = StObject.set(x, "messageStoragePolicy", null)
+    
+    @scala.inline
+    def setMessageStoragePolicyUndefined: Self = StObject.set(x, "messageStoragePolicy", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

@@ -6,13 +6,12 @@ import typings.storybookAddons.typesMod.BaseStory
 import typings.storybookVue.typesMod.StoryFnVueReturnType
 import typings.vue.optionsMod.AsyncComponent
 import typings.vue.optionsMod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/vue/dist/client/preview/types-6-0", JSImport.Namespace)
-@js.native
-object types60Mod extends js.Object {
+object types60Mod {
   
   type Meta[Args] = BaseMeta[VueComponent] with (Annotations[Args, VueReturnType])
   

@@ -1,11 +1,12 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplexAspect extends js.Object {
+trait ComplexAspect extends StObject {
   
   var complexObject: ComplexObject = js.native
   
@@ -35,36 +36,24 @@ object ComplexAspect {
   }
   
   @scala.inline
-  implicit class ComplexAspectOps[Self <: ComplexAspect] (val x: Self) extends AnyVal {
+  implicit class ComplexAspectMutableBuilder[Self <: ComplexAspect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplexObject(value: ComplexObject): Self = StObject.set(x, "complexObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetEntityAspect(value: () => EntityAspect): Self = StObject.set(x, "getEntityAspect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPropertyPath(value: String => String): Self = StObject.set(x, "getPropertyPath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComplexObject(value: ComplexObject): Self = this.set("complexObject", value.asInstanceOf[js.Any])
+    def setOriginalValues(value: js.Object): Self = StObject.set(x, "originalValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetEntityAspect(value: () => EntityAspect): Self = this.set("getEntityAspect", js.Any.fromFunction0(value))
+    def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPropertyPath(value: String => String): Self = this.set("getPropertyPath", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOriginalValues(value: js.Object): Self = this.set("originalValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Object): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentProperty(value: DataProperty): Self = this.set("parentProperty", value.asInstanceOf[js.Any])
+    def setParentProperty(value: DataProperty): Self = StObject.set(x, "parentProperty", value.asInstanceOf[js.Any])
   }
 }

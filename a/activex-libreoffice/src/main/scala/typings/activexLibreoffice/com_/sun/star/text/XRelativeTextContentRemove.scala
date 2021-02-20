@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,24 +43,12 @@ object XRelativeTextContentRemove {
   }
   
   @scala.inline
-  implicit class XRelativeTextContentRemoveOps[Self <: XRelativeTextContentRemove] (val x: Self) extends AnyVal {
+  implicit class XRelativeTextContentRemoveMutableBuilder[Self <: XRelativeTextContentRemove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemoveTextContentAfter(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemoveTextContentAfter(value: XTextContent => Unit): Self = this.set("removeTextContentAfter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveTextContentBefore(value: XTextContent => Unit): Self = this.set("removeTextContentBefore", js.Any.fromFunction1(value))
+    def setRemoveTextContentBefore(value: XTextContent => Unit): Self = StObject.set(x, "removeTextContentBefore", js.Any.fromFunction1(value))
   }
 }

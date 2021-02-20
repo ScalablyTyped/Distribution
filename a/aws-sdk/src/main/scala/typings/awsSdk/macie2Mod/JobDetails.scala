@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobDetails extends js.Object {
+trait JobDetails extends StObject {
   
   /**
     * Specifies whether any one-time or recurring jobs are configured to analyze data in the bucket. Possible values are: TRUE - One or more jobs is configured to analyze data in the bucket, and at least one of those jobs has a status other than CANCELLED. FALSE - No jobs are configured to analyze data in the bucket, or all the jobs that are configured to analyze data in the bucket have a status of CANCELLED. UNKNOWN - An exception occurred when Amazon Macie attempted to retrieve job data for the bucket. 
@@ -36,42 +37,30 @@ object JobDetails {
   }
   
   @scala.inline
-  implicit class JobDetailsOps[Self <: JobDetails] (val x: Self) extends AnyVal {
+  implicit class JobDetailsMutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsDefinedInJob(value: IsDefinedInJob): Self = StObject.set(x, "isDefinedInJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsDefinedInJobUndefined: Self = StObject.set(x, "isDefinedInJob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsMonitoredByJob(value: IsMonitoredByJob): Self = StObject.set(x, "isMonitoredByJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDefinedInJob(value: IsDefinedInJob): Self = this.set("isDefinedInJob", value.asInstanceOf[js.Any])
+    def setIsMonitoredByJobUndefined: Self = StObject.set(x, "isMonitoredByJob", js.undefined)
     
     @scala.inline
-    def deleteIsDefinedInJob: Self = this.set("isDefinedInJob", js.undefined)
+    def setLastJobId(value: string): Self = StObject.set(x, "lastJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMonitoredByJob(value: IsMonitoredByJob): Self = this.set("isMonitoredByJob", value.asInstanceOf[js.Any])
+    def setLastJobIdUndefined: Self = StObject.set(x, "lastJobId", js.undefined)
     
     @scala.inline
-    def deleteIsMonitoredByJob: Self = this.set("isMonitoredByJob", js.undefined)
+    def setLastJobRunTime(value: timestampIso8601): Self = StObject.set(x, "lastJobRunTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastJobId(value: string): Self = this.set("lastJobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastJobId: Self = this.set("lastJobId", js.undefined)
-    
-    @scala.inline
-    def setLastJobRunTime(value: timestampIso8601): Self = this.set("lastJobRunTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastJobRunTime: Self = this.set("lastJobRunTime", js.undefined)
+    def setLastJobRunTimeUndefined: Self = StObject.set(x, "lastJobRunTime", js.undefined)
   }
 }

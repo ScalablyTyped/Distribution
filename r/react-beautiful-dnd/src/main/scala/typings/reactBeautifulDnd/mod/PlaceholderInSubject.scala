@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceholderInSubject extends js.Object {
+trait PlaceholderInSubject extends StObject {
   
   // might not actually be increased by
   // placeholder if there is no required space
@@ -26,33 +27,21 @@ object PlaceholderInSubject {
   }
   
   @scala.inline
-  implicit class PlaceholderInSubjectOps[Self <: PlaceholderInSubject] (val x: Self) extends AnyVal {
+  implicit class PlaceholderInSubjectMutableBuilder[Self <: PlaceholderInSubject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncreasedBy(value: Position): Self = StObject.set(x, "increasedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncreasedByUndefined: Self = StObject.set(x, "increasedBy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOldFrameMaxScroll(value: Position): Self = StObject.set(x, "oldFrameMaxScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholderSize(value: Position): Self = this.set("placeholderSize", value.asInstanceOf[js.Any])
+    def setOldFrameMaxScrollUndefined: Self = StObject.set(x, "oldFrameMaxScroll", js.undefined)
     
     @scala.inline
-    def setIncreasedBy(value: Position): Self = this.set("increasedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncreasedBy: Self = this.set("increasedBy", js.undefined)
-    
-    @scala.inline
-    def setOldFrameMaxScroll(value: Position): Self = this.set("oldFrameMaxScroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOldFrameMaxScroll: Self = this.set("oldFrameMaxScroll", js.undefined)
+    def setPlaceholderSize(value: Position): Self = StObject.set(x, "placeholderSize", value.asInstanceOf[js.Any])
   }
 }

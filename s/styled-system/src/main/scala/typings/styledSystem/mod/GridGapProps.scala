@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait GridGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap
@@ -26,30 +27,18 @@ object GridGapProps {
   }
   
   @scala.inline
-  implicit class GridGapPropsOps[Self <: GridGapProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridGapProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridGapPropsMutableBuilder[Self <: GridGapProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridGapProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridGapNull: Self = StObject.set(x, "gridGap", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
     
     @scala.inline
-    def setGridGapVarargs(value: (TVal | Null)*): Self = this.set("gridGap", js.Array(value :_*))
-    
-    @scala.inline
-    def setGridGap(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("gridGap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGridGap: Self = this.set("gridGap", js.undefined)
-    
-    @scala.inline
-    def setGridGapNull: Self = this.set("gridGap", null)
+    def setGridGapVarargs(value: (TVal | Null)*): Self = StObject.set(x, "gridGap", js.Array(value :_*))
   }
 }

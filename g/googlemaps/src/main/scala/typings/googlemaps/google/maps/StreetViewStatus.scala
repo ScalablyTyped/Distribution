@@ -1,14 +1,15 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StreetViewStatus extends js.Object
+sealed trait StreetViewStatus extends StObject
 @JSGlobal("google.maps.StreetViewStatus")
 @js.native
-object StreetViewStatus extends js.Object {
+object StreetViewStatus extends StObject {
   
   @js.native
   sealed trait OK extends StreetViewStatus

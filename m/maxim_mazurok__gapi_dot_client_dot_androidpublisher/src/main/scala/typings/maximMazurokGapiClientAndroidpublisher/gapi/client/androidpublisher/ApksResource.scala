@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Accesstoken
 import typings.maximMazurokGapiClientAndroidpublisher.anon.Alt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApksResource extends js.Object {
+trait ApksResource extends StObject {
   
   /**
     * Creates a new APK without uploading the APK itself to Google Play, instead hosting the APK at a specified URL. This function is only available to organizations using Managed Play

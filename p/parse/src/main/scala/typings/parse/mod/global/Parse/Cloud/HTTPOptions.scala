@@ -2,16 +2,16 @@ package typings.parse.mod.global.Parse.Cloud
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTTPOptions extends js.Object {
+trait HTTPOptions extends StObject {
   
   /**
     * The body of the request.
@@ -50,11 +50,63 @@ trait HTTPOptions extends js.Object {
     */
   var url: String = js.native
 }
-/**
-  * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
-  *
-  *     import Buffer = require("buffer").Buffer;
-  */
-@JSGlobal("Parse.Cloud.HTTPOptions")
-@js.native
-object HTTPOptions extends TopLevel[Instantiable0[HTTPOptions]]
+object HTTPOptions {
+  
+  /**
+    * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
+    *
+    *     import Buffer = require("buffer").Buffer;
+    */
+  @JSGlobal("Parse.Cloud.HTTPOptions")
+  @js.native
+  val ^ : Instantiable0[HTTPOptions] = js.native
+  
+  @scala.inline
+  implicit class HTTPOptionsMutableBuilder[Self <: HTTPOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBody(value: String | Buffer | Object[Attributes]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    @scala.inline
+    def setError(value: /* response */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    @scala.inline
+    def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+    
+    @scala.inline
+    def setHeaders(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    @scala.inline
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    @scala.inline
+    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    @scala.inline
+    def setSuccess(value: /* response */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    @scala.inline
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
+}

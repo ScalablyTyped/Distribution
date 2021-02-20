@@ -1,6 +1,7 @@
 package typings.guacamoleClient.mod
 
 import typings.guacamoleClient.guacCommonMod.Mimetype
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class AudioRecorder ()
   extends typings.guacamoleClient.audioRecorderMod.AudioRecorder
 /* static members */
-@JSImport("guacamole-client", "AudioRecorder")
-@js.native
-object AudioRecorder extends js.Object {
+object AudioRecorder {
   
   /**
     * Returns an instance of Guacamole.AudioRecorder providing support for the
@@ -25,6 +24,8 @@ object AudioRecorder extends js.Object {
     * @return A Guacamole.AudioRecorder instance supporting the given mimetype and
     * writing to the given stream, or null if support for the given mimetype is absent.
     */
+  @JSImport("guacamole-client", "AudioRecorder.getInstance")
+  @js.native
   def getInstance(stream: typings.guacamoleClient.outputStreamMod.OutputStream, mimetype: Mimetype): typings.guacamoleClient.audioRecorderMod.AudioRecorder | Null = js.native
   
   /**
@@ -39,6 +40,8 @@ object AudioRecorder extends js.Object {
     * A list of all mimetypes supported by any built-in
     * Guacamole.AudioRecorder, excluding any parameters.
     */
+  @JSImport("guacamole-client", "AudioRecorder.getSupportedTypes")
+  @js.native
   def getSupportedTypes(): js.Array[String] = js.native
   
   /**
@@ -50,5 +53,7 @@ object AudioRecorder extends js.Object {
     *
     * @returns true if the given mimetype is supported by any built-in Guacamole.AudioRecorder, false otherwise.
     */
+  @JSImport("guacamole-client", "AudioRecorder.isSupportedType")
+  @js.native
   def isSupportedType(mimetype: Mimetype): Boolean = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRepositoryEndpointResult extends js.Object {
+trait GetRepositoryEndpointResult extends StObject {
   
   /**
     *  A string that specifies the URL of the returned endpoint. 
@@ -21,24 +22,12 @@ object GetRepositoryEndpointResult {
   }
   
   @scala.inline
-  implicit class GetRepositoryEndpointResultOps[Self <: GetRepositoryEndpointResult] (val x: Self) extends AnyVal {
+  implicit class GetRepositoryEndpointResultMutableBuilder[Self <: GetRepositoryEndpointResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRepositoryEndpoint(value: String): Self = StObject.set(x, "repositoryEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRepositoryEndpoint(value: String): Self = this.set("repositoryEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositoryEndpoint: Self = this.set("repositoryEndpoint", js.undefined)
+    def setRepositoryEndpointUndefined: Self = StObject.set(x, "repositoryEndpoint", js.undefined)
   }
 }

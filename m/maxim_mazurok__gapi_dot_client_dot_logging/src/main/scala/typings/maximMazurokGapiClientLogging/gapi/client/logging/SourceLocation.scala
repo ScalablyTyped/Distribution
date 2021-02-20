@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceLocation extends js.Object {
+trait SourceLocation extends StObject {
   
   /** Source file name. Depending on the runtime environment, this might be a simple name or a fully-qualified name. */
   var file: js.UndefOr[String] = js.native
@@ -28,36 +29,24 @@ object SourceLocation {
   }
   
   @scala.inline
-  implicit class SourceLocationOps[Self <: SourceLocation] (val x: Self) extends AnyVal {
+  implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFunctionName: Self = this.set("functionName", js.undefined)
-    
-    @scala.inline
-    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

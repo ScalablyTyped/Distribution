@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Coverage extends js.Object {
+trait Coverage extends StObject {
   
   def startCSSCoverage(): js.Promise[Unit] = js.native
   def startCSSCoverage(options: StartCoverageOptions): js.Promise[Unit] = js.native

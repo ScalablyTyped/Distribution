@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposGetAllTopicsResponseData extends js.Object {
+trait ReposGetAllTopicsResponseData extends StObject {
   
   var names: js.Array[String] = js.native
 }
@@ -18,24 +19,12 @@ object ReposGetAllTopicsResponseData {
   }
   
   @scala.inline
-  implicit class ReposGetAllTopicsResponseDataOps[Self <: ReposGetAllTopicsResponseData] (val x: Self) extends AnyVal {
+  implicit class ReposGetAllTopicsResponseDataMutableBuilder[Self <: ReposGetAllTopicsResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
-    
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

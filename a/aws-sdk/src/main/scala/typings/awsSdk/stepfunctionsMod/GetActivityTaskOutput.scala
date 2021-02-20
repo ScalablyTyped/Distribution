@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetActivityTaskOutput extends js.Object {
+trait GetActivityTaskOutput extends StObject {
   
   /**
     * The string that contains the JSON input data for the task. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
@@ -26,30 +27,18 @@ object GetActivityTaskOutput {
   }
   
   @scala.inline
-  implicit class GetActivityTaskOutputOps[Self <: GetActivityTaskOutput] (val x: Self) extends AnyVal {
+  implicit class GetActivityTaskOutputMutableBuilder[Self <: GetActivityTaskOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: SensitiveDataJobInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: SensitiveDataJobInput): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
-    
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskToken: Self = this.set("taskToken", js.undefined)
+    def setTaskTokenUndefined: Self = StObject.set(x, "taskToken", js.undefined)
   }
 }

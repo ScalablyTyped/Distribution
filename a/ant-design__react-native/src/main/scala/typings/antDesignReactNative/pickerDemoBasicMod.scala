@@ -1,13 +1,18 @@
 package typings.antDesignReactNative
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/picker/demo/basic", JSImport.Namespace)
-@js.native
-object pickerDemoBasicMod extends js.Object {
+object pickerDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/picker/demo/basic", JSImport.Default)
+  @js.native
+  class default protected () extends PopupExample {
+    def this(props: js.Any) = this()
+  }
   
   @js.native
   trait PopupExample
@@ -16,10 +21,5 @@ object pickerDemoBasicMod extends js.Object {
     def onChange(value: js.Any): Unit = js.native
     
     def onPress(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends PopupExample {
-    def this(props: js.Any) = this()
   }
 }

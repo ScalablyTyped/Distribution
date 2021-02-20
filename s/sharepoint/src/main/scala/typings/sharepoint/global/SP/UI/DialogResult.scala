@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Result of a modal dialog execution */
 @JSGlobal("SP.UI.DialogResult")
 @js.native
-object DialogResult extends js.Object {
+object DialogResult extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.sharepoint.SP.UI.DialogResult with Double] = js.native

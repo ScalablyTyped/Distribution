@@ -1,17 +1,18 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartSplitType extends js.Object
+sealed trait ChartSplitType extends StObject
 /**
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartSplitType")
 @js.native
-object ChartSplitType extends js.Object {
+object ChartSplitType extends StObject {
   
   @js.native
   sealed trait splitByCustomSplit extends ChartSplitType

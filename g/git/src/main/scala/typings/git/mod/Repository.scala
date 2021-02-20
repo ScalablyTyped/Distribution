@@ -1,12 +1,13 @@
 package typings.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Repository")
 @js.native
-class Repository protected () extends js.Object {
+class Repository protected () extends StObject {
   def this(gitDirectory: js.Any) = this()
   def this(gitDirectory: js.Any, options: js.Any) = this()
   
@@ -55,9 +56,9 @@ class Repository protected () extends js.Object {
   def rev_list(sha: js.Any, options: js.Any, callback: js.Function): Unit = js.native
 }
 /* static members */
-@JSImport("git", "Repository")
-@js.native
-object Repository extends js.Object {
+object Repository {
   
+  @JSImport("git", "Repository.init")
+  @js.native
   def init(dir: js.Any, bare: js.Any, callback: js.Function): Unit = js.native
 }

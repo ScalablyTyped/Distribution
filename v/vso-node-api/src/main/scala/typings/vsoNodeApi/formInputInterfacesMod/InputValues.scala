@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.formInputInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputValues extends js.Object {
+trait InputValues extends StObject {
   
   /**
     * The default value to use for this input
@@ -59,42 +60,30 @@ object InputValues {
   }
   
   @scala.inline
-  implicit class InputValuesOps[Self <: InputValues] (val x: Self) extends AnyVal {
+  implicit class InputValuesMutableBuilder[Self <: InputValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: InputValuesError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: InputValuesError): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setIsLimitedToPossibleValues(value: Boolean): Self = StObject.set(x, "isLimitedToPossibleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputId(value: String): Self = this.set("inputId", value.asInstanceOf[js.Any])
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDisabled(value: Boolean): Self = this.set("isDisabled", value.asInstanceOf[js.Any])
+    def setPossibleValues(value: js.Array[InputValue]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLimitedToPossibleValues(value: Boolean): Self = this.set("isLimitedToPossibleValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPossibleValuesVarargs(value: InputValue*): Self = this.set("possibleValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setPossibleValues(value: js.Array[InputValue]): Self = this.set("possibleValues", value.asInstanceOf[js.Any])
+    def setPossibleValuesVarargs(value: InputValue*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
   }
 }

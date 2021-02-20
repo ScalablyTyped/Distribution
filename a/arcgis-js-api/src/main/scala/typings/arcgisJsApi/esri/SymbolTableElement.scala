@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,39 +56,27 @@ object SymbolTableElement {
   }
   
   @scala.inline
-  implicit class SymbolTableElementOps[Self <: SymbolTableElement] (val x: Self) extends AnyVal {
+  implicit class SymbolTableElementMutableBuilder[Self <: SymbolTableElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfos(value: js.Array[SymbolTableElementType]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfosVarargs(value: SymbolTableElementType*): Self = StObject.set(x, "infos", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegendType(value: String): Self = StObject.set(x, "legendType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfosVarargs(value: SymbolTableElementType*): Self = this.set("infos", js.Array(value :_*))
+    def setLegendTypeUndefined: Self = StObject.set(x, "legendType", js.undefined)
     
     @scala.inline
-    def setInfos(value: js.Array[SymbolTableElementType]): Self = this.set("infos", value.asInstanceOf[js.Any])
+    def setTitle(value: String | RendererTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setLegendType(value: String): Self = this.set("legendType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegendType: Self = this.set("legendType", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String | RendererTitle): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

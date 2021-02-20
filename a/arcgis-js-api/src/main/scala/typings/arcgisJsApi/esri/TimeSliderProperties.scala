@@ -12,6 +12,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.wide
 import typings.std.Date
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,104 +120,92 @@ object TimeSliderProperties {
   }
   
   @scala.inline
-  implicit class TimeSliderPropertiesOps[Self <: TimeSliderProperties] (val x: Self) extends AnyVal {
+  implicit class TimeSliderPropertiesMutableBuilder[Self <: TimeSliderProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "fullTimeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
-    
-    @scala.inline
-    def setFullTimeExtent(value: TimeExtentProperties): Self = this.set("fullTimeExtent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullTimeExtent: Self = this.set("fullTimeExtent", js.undefined)
+    def setFullTimeExtentUndefined: Self = StObject.set(x, "fullTimeExtent", js.undefined)
     
     @scala.inline
     def setLabelFormatFunction(
       value: (/* value */ Date | js.Array[Date], /* type */ js.UndefOr[min | max | extent], /* element */ js.UndefOr[HTMLElement], /* layout */ js.UndefOr[compact | wide]) => Unit
-    ): Self = this.set("labelFormatFunction", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "labelFormatFunction", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteLabelFormatFunction: Self = this.set("labelFormatFunction", js.undefined)
+    def setLabelFormatFunctionUndefined: Self = StObject.set(x, "labelFormatFunction", js.undefined)
     
     @scala.inline
-    def setLayout(value: auto | compact | wide): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLayout(value: auto | compact | wide): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def setMode(value: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMode(value: instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setPlayRate(value: Double): Self = this.set("playRate", value.asInstanceOf[js.Any])
+    def setPlayRate(value: Double): Self = StObject.set(x, "playRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlayRate: Self = this.set("playRate", js.undefined)
+    def setPlayRateUndefined: Self = StObject.set(x, "playRate", js.undefined)
     
     @scala.inline
-    def setStops(value: StopsByDates | StopsByCount | StopsByInterval): Self = this.set("stops", value.asInstanceOf[js.Any])
+    def setStops(value: StopsByDates | StopsByCount | StopsByInterval): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def setTickConfigsVarargs(value: TickConfig*): Self = this.set("tickConfigs", js.Array(value :_*))
+    def setTickConfigs(value: js.Array[TickConfig]): Self = StObject.set(x, "tickConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickConfigs(value: js.Array[TickConfig]): Self = this.set("tickConfigs", value.asInstanceOf[js.Any])
+    def setTickConfigsUndefined: Self = StObject.set(x, "tickConfigs", js.undefined)
     
     @scala.inline
-    def deleteTickConfigs: Self = this.set("tickConfigs", js.undefined)
+    def setTickConfigsVarargs(value: TickConfig*): Self = StObject.set(x, "tickConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setTimeVisible(value: Boolean): Self = this.set("timeVisible", value.asInstanceOf[js.Any])
+    def setTimeVisible(value: Boolean): Self = StObject.set(x, "timeVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeVisible: Self = this.set("timeVisible", js.undefined)
+    def setTimeVisibleUndefined: Self = StObject.set(x, "timeVisible", js.undefined)
     
     @scala.inline
-    def setValuesVarargs(value: DateProperties*): Self = this.set("values", js.Array(value :_*))
+    def setValues(value: js.Array[DateProperties]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: js.Array[DateProperties]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: DateProperties*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewModel(value: TimeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewModel(value: TimeSliderViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

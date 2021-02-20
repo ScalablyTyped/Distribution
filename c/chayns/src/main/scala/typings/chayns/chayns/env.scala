@@ -1,5 +1,6 @@
 package typings.chayns.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,50 +9,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Environmental Variables
   * chayns.env
   */
-@JSGlobal("chayns.env")
-@js.native
-object env extends js.Object {
+object env {
   
   /**
     * Environmental Variables
     * chayns.env.app
     */
-  @js.native
-  object app extends js.Object
+  object app
   
   /**
     * Environmental Variables
     * chayns.env.browser
     */
-  @js.native
-  object browser extends js.Object
+  object browser
   
   /**
     * Environmental Variables
     * chayns.env.device
     */
-  @js.native
-  object device extends js.Object
+  object device
   
   /**
     * Environmental Variables
     * chayns.env.site
     */
-  @js.native
-  object site extends js.Object {
+  object site {
     
     /**
       * Environmental Variables
       * chayns.env.site.tapp
       */
-    @js.native
-    object tapp extends js.Object
+    object tapp
   }
   
   /**
     * Environmental Variables
     * chayns.env.user
     */
-  @js.native
-  object user extends js.Object
+  object user
 }

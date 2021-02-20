@@ -1,21 +1,18 @@
 package typings.blipSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blip-sdk", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object BlipSdk extends js.Object {
+  object BlipSdk {
     
-    @js.native
-    object Extensions extends js.Object {
+    object Extensions {
       
       @js.native
-      trait ArtificialIntelligence extends js.Object {
+      trait ArtificialIntelligence extends StObject {
         
         def analyse(analysis: js.Object): js.Promise[js.Object] = js.native
         

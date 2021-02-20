@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TableRowAlignment extends js.Object
+sealed trait TableRowAlignment extends StObject
 /**
   * Lists alignments allowed for the table row.
   */
 @JSGlobal("TableRowAlignment")
 @js.native
-object TableRowAlignment extends js.Object {
+object TableRowAlignment extends StObject {
   
   /**
     * Justified.

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object Ratio {
   }
   
   @scala.inline
-  implicit class RatioOps[Self <: Ratio] (val x: Self) extends AnyVal {
+  implicit class RatioMutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDenominator(value: Quantity): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDenominatorUndefined: Self = StObject.set(x, "denominator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumerator(value: Quantity): Self = StObject.set(x, "numerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenominator(value: Quantity): Self = this.set("denominator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDenominator: Self = this.set("denominator", js.undefined)
-    
-    @scala.inline
-    def setNumerator(value: Quantity): Self = this.set("numerator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumerator: Self = this.set("numerator", js.undefined)
+    def setNumeratorUndefined: Self = StObject.set(x, "numerator", js.undefined)
   }
 }

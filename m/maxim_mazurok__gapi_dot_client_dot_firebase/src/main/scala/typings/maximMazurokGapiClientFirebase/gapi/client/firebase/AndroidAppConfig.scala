@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidAppConfig extends js.Object {
+trait AndroidAppConfig extends StObject {
   
   /** The contents of the JSON configuration file. */
   var configFileContents: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object AndroidAppConfig {
   }
   
   @scala.inline
-  implicit class AndroidAppConfigOps[Self <: AndroidAppConfig] (val x: Self) extends AnyVal {
+  implicit class AndroidAppConfigMutableBuilder[Self <: AndroidAppConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigFileContents(value: String): Self = StObject.set(x, "configFileContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigFileContentsUndefined: Self = StObject.set(x, "configFileContents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigFilename(value: String): Self = StObject.set(x, "configFilename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigFileContents(value: String): Self = this.set("configFileContents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigFileContents: Self = this.set("configFileContents", js.undefined)
-    
-    @scala.inline
-    def setConfigFilename(value: String): Self = this.set("configFilename", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigFilename: Self = this.set("configFilename", js.undefined)
+    def setConfigFilenameUndefined: Self = StObject.set(x, "configFilename", js.undefined)
   }
 }

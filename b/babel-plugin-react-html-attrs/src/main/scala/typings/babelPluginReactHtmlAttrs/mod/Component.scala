@@ -3,6 +3,7 @@ package typings.babelPluginReactHtmlAttrs.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.babelPluginReactHtmlAttrs.anon.ReadonlychildrenReactNode
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,10 +68,11 @@ class Component[P, S, SS] protected () extends ComponentLifecycle[P, S, SS] {
   
   var state: S = js.native
 }
-/* static members */
-@JSImport("babel-plugin-react-html-attrs", "Component")
-@js.native
-object Component extends js.Object {
+object Component {
+  
+  @JSImport("babel-plugin-react-html-attrs", "Component")
+  @js.native
+  val ^ : js.Any = js.native
   
   // tslint won't let me format the sample code in a way that vscode likes it :(
   /**
@@ -93,5 +95,10 @@ object Component extends js.Object {
     *
     * @see https://reactjs.org/docs/context.html#classcontexttype
     */
-  var contextType: js.UndefOr[Context[_]] = js.native
+  /* static member */
+  @JSImport("babel-plugin-react-html-attrs", "Component.contextType")
+  @js.native
+  def contextType: js.UndefOr[Context[js.Any]] = js.native
+  @scala.inline
+  def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

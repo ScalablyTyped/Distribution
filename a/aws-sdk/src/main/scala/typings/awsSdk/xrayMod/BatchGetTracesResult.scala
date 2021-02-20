@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetTracesResult extends js.Object {
+trait BatchGetTracesResult extends StObject {
   
   /**
     * Pagination token.
@@ -31,42 +32,30 @@ object BatchGetTracesResult {
   }
   
   @scala.inline
-  implicit class BatchGetTracesResultOps[Self <: BatchGetTracesResult] (val x: Self) extends AnyVal {
+  implicit class BatchGetTracesResultMutableBuilder[Self <: BatchGetTracesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTraces(value: TraceList): Self = StObject.set(x, "Traces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setTracesUndefined: Self = StObject.set(x, "Traces", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setTracesVarargs(value: Trace*): Self = StObject.set(x, "Traces", js.Array(value :_*))
     
     @scala.inline
-    def setTracesVarargs(value: Trace*): Self = this.set("Traces", js.Array(value :_*))
+    def setUnprocessedTraceIds(value: UnprocessedTraceIdList): Self = StObject.set(x, "UnprocessedTraceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTraces(value: TraceList): Self = this.set("Traces", value.asInstanceOf[js.Any])
+    def setUnprocessedTraceIdsUndefined: Self = StObject.set(x, "UnprocessedTraceIds", js.undefined)
     
     @scala.inline
-    def deleteTraces: Self = this.set("Traces", js.undefined)
-    
-    @scala.inline
-    def setUnprocessedTraceIdsVarargs(value: TraceId*): Self = this.set("UnprocessedTraceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnprocessedTraceIds(value: UnprocessedTraceIdList): Self = this.set("UnprocessedTraceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprocessedTraceIds: Self = this.set("UnprocessedTraceIds", js.undefined)
+    def setUnprocessedTraceIdsVarargs(value: TraceId*): Self = StObject.set(x, "UnprocessedTraceIds", js.Array(value :_*))
   }
 }

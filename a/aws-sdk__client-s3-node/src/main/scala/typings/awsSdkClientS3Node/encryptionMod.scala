@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_Encryption", JSImport.Namespace)
-@js.native
-object encryptionMod extends js.Object {
+object encryptionMod {
   
-  @JSName("_Encryption")
+  @JSImport("@aws-sdk/client-s3-node/model/_Encryption", "_Encryption")
+  @js.native
   val Encryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

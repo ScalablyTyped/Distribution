@@ -5,12 +5,13 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxDraggable
 import typings.devextreme.mod.DevExpress.ui.dxSortable
 import typings.devextreme.mod.global.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToComponent extends js.Object {
+trait ToComponent extends StObject {
   
   var dropInsideItem: js.UndefOr[Boolean] = js.native
   
@@ -43,84 +44,72 @@ object ToComponent {
   }
   
   @scala.inline
-  implicit class ToComponentOps[Self <: ToComponent] (val x: Self) extends AnyVal {
+  implicit class ToComponentMutableBuilder[Self <: ToComponent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDropInsideItemUndefined: Self = StObject.set(x, "dropInsideItem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropInsideItem(value: Boolean): Self = this.set("dropInsideItem", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDropInsideItem: Self = this.set("dropInsideItem", js.undefined)
+    def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFromComponentUndefined: Self = StObject.set(x, "fromComponent", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setFromData(value: js.Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromComponent(value: dxSortable | dxDraggable): Self = this.set("fromComponent", value.asInstanceOf[js.Any])
+    def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
     
     @scala.inline
-    def deleteFromComponent: Self = this.set("fromComponent", js.undefined)
+    def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromData(value: js.Any): Self = this.set("fromData", value.asInstanceOf[js.Any])
+    def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
     
     @scala.inline
-    def deleteFromData: Self = this.set("fromData", js.undefined)
+    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromIndex(value: Double): Self = this.set("fromIndex", value.asInstanceOf[js.Any])
+    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
     @scala.inline
-    def deleteFromIndex: Self = this.set("fromIndex", js.undefined)
+    def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemData(value: js.Any): Self = this.set("itemData", value.asInstanceOf[js.Any])
+    def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
     
     @scala.inline
-    def deleteItemData: Self = this.set("itemData", js.undefined)
+    def setPromise(value: typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemElement(value: dxElement): Self = this.set("itemElement", value.asInstanceOf[js.Any])
+    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
     @scala.inline
-    def deleteItemElement: Self = this.set("itemElement", js.undefined)
+    def setToComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setToComponentUndefined: Self = StObject.set(x, "toComponent", js.undefined)
     
     @scala.inline
-    def deletePromise: Self = this.set("promise", js.undefined)
+    def setToData(value: js.Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToComponent(value: dxSortable | dxDraggable): Self = this.set("toComponent", value.asInstanceOf[js.Any])
+    def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
     
     @scala.inline
-    def deleteToComponent: Self = this.set("toComponent", js.undefined)
+    def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToData(value: js.Any): Self = this.set("toData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToData: Self = this.set("toData", js.undefined)
-    
-    @scala.inline
-    def setToIndex(value: Double): Self = this.set("toIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToIndex: Self = this.set("toIndex", js.undefined)
+    def setToIndexUndefined: Self = StObject.set(x, "toIndex", js.undefined)
   }
 }

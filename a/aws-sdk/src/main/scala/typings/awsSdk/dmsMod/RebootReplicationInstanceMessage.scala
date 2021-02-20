@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RebootReplicationInstanceMessage extends js.Object {
+trait RebootReplicationInstanceMessage extends StObject {
   
   /**
     * If this parameter is true, the reboot is conducted through a Multi-AZ failover. (If the instance isn't configured for Multi-AZ, then you can't specify true.)
@@ -26,27 +27,15 @@ object RebootReplicationInstanceMessage {
   }
   
   @scala.inline
-  implicit class RebootReplicationInstanceMessageOps[Self <: RebootReplicationInstanceMessage] (val x: Self) extends AnyVal {
+  implicit class RebootReplicationInstanceMessageMutableBuilder[Self <: RebootReplicationInstanceMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForceFailover(value: BooleanOptional): Self = StObject.set(x, "ForceFailover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceFailoverUndefined: Self = StObject.set(x, "ForceFailover", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceFailover(value: BooleanOptional): Self = this.set("ForceFailover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceFailover: Self = this.set("ForceFailover", js.undefined)
+    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

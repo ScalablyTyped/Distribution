@@ -6,16 +6,16 @@ import typings.ionicAngular.ionRouterOutletMod.IonRouterOutlet
 import typings.ionicAngular.navControllerMod.NavController
 import typings.ionicAngular.proxiesMod.IonTabBar
 import typings.ionicAngular.stackUtilsMod.StackEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/directives/navigation/ion-tabs", JSImport.Namespace)
-@js.native
-object ionTabsMod extends js.Object {
+object ionTabsMod {
   
+  @JSImport("@ionic/angular/directives/navigation/ion-tabs", "IonTabs")
   @js.native
-  class IonTabs protected () extends js.Object {
+  class IonTabs protected () extends StObject {
     def this(navCtrl: NavController) = this()
     
     def getSelected(): js.UndefOr[String] = js.native

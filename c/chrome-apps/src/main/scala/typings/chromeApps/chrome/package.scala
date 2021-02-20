@@ -1,5 +1,6 @@
 package typings.chromeApps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +30,7 @@ package object chrome {
   /** @deprecated Could be used, if e.g. deprecated recently */
   type deprecatedButUsable = js.Any
   
+  // | 'integer';
   ///
   /// BigInt is supported in Chrome now, but not in the api.
   /// TypeScript doesn't support it either, so till then, use helper types.

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,42 +29,30 @@ object Win32LobAppProductCodeRule {
   }
   
   @scala.inline
-  implicit class Win32LobAppProductCodeRuleOps[Self <: Win32LobAppProductCodeRule] (val x: Self) extends AnyVal {
+  implicit class Win32LobAppProductCodeRuleMutableBuilder[Self <: Win32LobAppProductCodeRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProductCodeNull: Self = StObject.set(x, "productCode", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
     @scala.inline
-    def setProductCode(value: NullableOption[String]): Self = this.set("productCode", value.asInstanceOf[js.Any])
+    def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductCode: Self = this.set("productCode", js.undefined)
+    def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
     
     @scala.inline
-    def setProductCodeNull: Self = this.set("productCode", null)
+    def setProductVersionOperator(value: Win32LobAppRuleOperator): Self = StObject.set(x, "productVersionOperator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductVersion(value: NullableOption[String]): Self = this.set("productVersion", value.asInstanceOf[js.Any])
+    def setProductVersionOperatorUndefined: Self = StObject.set(x, "productVersionOperator", js.undefined)
     
     @scala.inline
-    def deleteProductVersion: Self = this.set("productVersion", js.undefined)
-    
-    @scala.inline
-    def setProductVersionNull: Self = this.set("productVersion", null)
-    
-    @scala.inline
-    def setProductVersionOperator(value: Win32LobAppRuleOperator): Self = this.set("productVersionOperator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductVersionOperator: Self = this.set("productVersionOperator", js.undefined)
+    def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
   }
 }

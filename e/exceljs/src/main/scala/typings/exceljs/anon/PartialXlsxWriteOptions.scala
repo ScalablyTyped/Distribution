@@ -1,13 +1,14 @@
 package typings.exceljs.anon
 
 import typings.node.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.XlsxWriteOptions> */
 @js.native
-trait PartialXlsxWriteOptions extends js.Object {
+trait PartialXlsxWriteOptions extends StObject {
   
   var filename: js.UndefOr[String] = js.native
   
@@ -28,48 +29,36 @@ object PartialXlsxWriteOptions {
   }
   
   @scala.inline
-  implicit class PartialXlsxWriteOptionsOps[Self <: PartialXlsxWriteOptions] (val x: Self) extends AnyVal {
+  implicit class PartialXlsxWriteOptionsMutableBuilder[Self <: PartialXlsxWriteOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setUseSharedStrings(value: Boolean): Self = StObject.set(x, "useSharedStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStream(value: Stream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    def setUseSharedStringsUndefined: Self = StObject.set(x, "useSharedStrings", js.undefined)
     
     @scala.inline
-    def deleteStream: Self = this.set("stream", js.undefined)
+    def setUseStyles(value: Boolean): Self = StObject.set(x, "useStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseSharedStrings(value: Boolean): Self = this.set("useSharedStrings", value.asInstanceOf[js.Any])
+    def setUseStylesUndefined: Self = StObject.set(x, "useStyles", js.undefined)
     
     @scala.inline
-    def deleteUseSharedStrings: Self = this.set("useSharedStrings", js.undefined)
+    def setZip(value: PartialJSZipGeneratorOpti): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseStyles(value: Boolean): Self = this.set("useStyles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseStyles: Self = this.set("useStyles", js.undefined)
-    
-    @scala.inline
-    def setZip(value: PartialJSZipGeneratorOpti): Self = this.set("zip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZip: Self = this.set("zip", js.undefined)
+    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

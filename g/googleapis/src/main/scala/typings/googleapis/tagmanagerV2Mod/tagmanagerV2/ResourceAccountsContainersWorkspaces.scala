@@ -4,13 +4,14 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces")
 @js.native
-class ResourceAccountsContainersWorkspaces protected () extends js.Object {
+class ResourceAccountsContainersWorkspaces protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var built_in_variables: ResourceAccountsContainersWorkspacesBuiltInVariables = js.native

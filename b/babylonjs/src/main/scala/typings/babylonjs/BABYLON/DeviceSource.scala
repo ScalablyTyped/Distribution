@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.InputIndex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceSource[T /* <: DeviceType */] extends js.Object {
+trait DeviceSource[T /* <: DeviceType */] extends StObject {
   
   val _deviceInputSystem: js.Any = js.native
   
@@ -43,33 +44,21 @@ object DeviceSource {
   }
   
   @scala.inline
-  implicit class DeviceSourceOps[Self <: DeviceSource[_], T /* <: DeviceType */] (val x: Self with DeviceSource[T]) extends AnyVal {
+  implicit class DeviceSourceMutableBuilder[Self <: DeviceSource[_], T /* <: DeviceType */] (val x: Self with DeviceSource[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceSlot(value: Double): Self = StObject.set(x, "deviceSlot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceType(value: DeviceType): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInput(value: DeviceInput[T] => Double): Self = StObject.set(x, "getInput", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set_deviceInputSystem(value: js.Any): Self = this.set("_deviceInputSystem", value.asInstanceOf[js.Any])
+    def setOnInputChangedObservable(value: Observable[InputIndex[T]]): Self = StObject.set(x, "onInputChangedObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceSlot(value: Double): Self = this.set("deviceSlot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeviceType(value: DeviceType): Self = this.set("deviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetInput(value: DeviceInput[T] => Double): Self = this.set("getInput", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnInputChangedObservable(value: Observable[InputIndex[T]]): Self = this.set("onInputChangedObservable", value.asInstanceOf[js.Any])
+    def set_deviceInputSystem(value: js.Any): Self = StObject.set(x, "_deviceInputSystem", value.asInstanceOf[js.Any])
   }
 }

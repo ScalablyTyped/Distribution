@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "CollapseAllVisibility")
 @js.native
-object CollapseAllVisibility extends js.Object {
+object CollapseAllVisibility extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

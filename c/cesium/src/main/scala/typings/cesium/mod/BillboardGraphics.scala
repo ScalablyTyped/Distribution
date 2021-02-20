@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.AlignedAxis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "BillboardGraphics")
 @js.native
-class BillboardGraphics () extends js.Object {
+class BillboardGraphics () extends StObject {
   def this(options: AlignedAxis) = this()
   
   var alignedAxis: js.UndefOr[Property] = js.native

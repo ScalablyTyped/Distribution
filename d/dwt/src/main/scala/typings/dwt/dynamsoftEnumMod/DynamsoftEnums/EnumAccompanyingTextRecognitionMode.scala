@@ -1,26 +1,24 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumAccompanyingTextRecognitionMode extends js.Object
+sealed trait EnumAccompanyingTextRecognitionMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumAccompanyingTextRecognitionMode")
 @js.native
-object EnumAccompanyingTextRecognitionMode extends js.Object {
+object EnumAccompanyingTextRecognitionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumAccompanyingTextRecognitionMode with Double] = js.native
   
   @js.native
   sealed trait ATRM_GENERAL extends EnumAccompanyingTextRecognitionMode
-  /* 1 */ @js.native
-  object ATRM_GENERAL extends TopLevel[ATRM_GENERAL with Double]
+  /* 1 */ val ATRM_GENERAL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumAccompanyingTextRecognitionMode.ATRM_GENERAL with Double = js.native
   
   @js.native
   sealed trait ATRM_SKIP extends EnumAccompanyingTextRecognitionMode
-  /* 0 */ @js.native
-  object ATRM_SKIP extends TopLevel[ATRM_SKIP with Double]
+  /* 0 */ val ATRM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumAccompanyingTextRecognitionMode.ATRM_SKIP with Double = js.native
 }

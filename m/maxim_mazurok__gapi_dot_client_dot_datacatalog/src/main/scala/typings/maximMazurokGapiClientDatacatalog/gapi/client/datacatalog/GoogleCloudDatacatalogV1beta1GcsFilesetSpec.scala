@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends js.Object {
+trait GoogleCloudDatacatalogV1beta1GcsFilesetSpec extends StObject {
   
   /**
     * Required. Patterns to identify a set of files in Google Cloud Storage. See [Cloud Storage documentation](https://cloud.google.com/storage/docs/gsutil/addlhelp/WildcardNames) for
@@ -30,36 +31,24 @@ object GoogleCloudDatacatalogV1beta1GcsFilesetSpec {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1GcsFilesetSpecOps[Self <: GoogleCloudDatacatalogV1beta1GcsFilesetSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1GcsFilesetSpecMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1GcsFilesetSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilePatterns(value: js.Array[String]): Self = StObject.set(x, "filePatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilePatternsUndefined: Self = StObject.set(x, "filePatterns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value :_*))
     
     @scala.inline
-    def setFilePatternsVarargs(value: String*): Self = this.set("filePatterns", js.Array(value :_*))
+    def setSampleGcsFileSpecs(value: js.Array[GoogleCloudDatacatalogV1beta1GcsFileSpec]): Self = StObject.set(x, "sampleGcsFileSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilePatterns(value: js.Array[String]): Self = this.set("filePatterns", value.asInstanceOf[js.Any])
+    def setSampleGcsFileSpecsUndefined: Self = StObject.set(x, "sampleGcsFileSpecs", js.undefined)
     
     @scala.inline
-    def deleteFilePatterns: Self = this.set("filePatterns", js.undefined)
-    
-    @scala.inline
-    def setSampleGcsFileSpecsVarargs(value: GoogleCloudDatacatalogV1beta1GcsFileSpec*): Self = this.set("sampleGcsFileSpecs", js.Array(value :_*))
-    
-    @scala.inline
-    def setSampleGcsFileSpecs(value: js.Array[GoogleCloudDatacatalogV1beta1GcsFileSpec]): Self = this.set("sampleGcsFileSpecs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleGcsFileSpecs: Self = this.set("sampleGcsFileSpecs", js.undefined)
+    def setSampleGcsFileSpecsVarargs(value: GoogleCloudDatacatalogV1beta1GcsFileSpec*): Self = StObject.set(x, "sampleGcsFileSpecs", js.Array(value :_*))
   }
 }

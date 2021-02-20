@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV1Mod.bigtableadminV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Progress info for copying a table&#39;s data to the new cluster.
   */
 @js.native
-trait SchemaTableProgress extends js.Object {
+trait SchemaTableProgress extends StObject {
   
   /**
     * Estimate of the number of bytes copied so far for this table. This will
@@ -33,36 +34,24 @@ object SchemaTableProgress {
   }
   
   @scala.inline
-  implicit class SchemaTableProgressOps[Self <: SchemaTableProgress] (val x: Self) extends AnyVal {
+  implicit class SchemaTableProgressMutableBuilder[Self <: SchemaTableProgress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedCopiedBytes(value: String): Self = StObject.set(x, "estimatedCopiedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedCopiedBytesUndefined: Self = StObject.set(x, "estimatedCopiedBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedCopiedBytes(value: String): Self = this.set("estimatedCopiedBytes", value.asInstanceOf[js.Any])
+    def setEstimatedSizeBytesUndefined: Self = StObject.set(x, "estimatedSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteEstimatedCopiedBytes: Self = this.set("estimatedCopiedBytes", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedSizeBytes(value: String): Self = this.set("estimatedSizeBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEstimatedSizeBytes: Self = this.set("estimatedSizeBytes", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

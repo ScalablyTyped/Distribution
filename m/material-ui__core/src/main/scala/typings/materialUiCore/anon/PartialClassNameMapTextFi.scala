@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/TextField/TextField.TextFieldClassKey>> */
 @js.native
-trait PartialClassNameMapTextFi extends js.Object {
+trait PartialClassNameMapTextFi extends StObject {
   
   var fullWidth: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object PartialClassNameMapTextFi {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapTextFiOps[Self <: PartialClassNameMapTextFi] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapTextFiMutableBuilder[Self <: PartialClassNameMapTextFi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFullWidth(value: String): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarginDense(value: String): Self = StObject.set(x, "marginDense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: String): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setMarginDenseUndefined: Self = StObject.set(x, "marginDense", js.undefined)
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setMarginNormal(value: String): Self = StObject.set(x, "marginNormal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginDense(value: String): Self = this.set("marginDense", value.asInstanceOf[js.Any])
+    def setMarginNormalUndefined: Self = StObject.set(x, "marginNormal", js.undefined)
     
     @scala.inline
-    def deleteMarginDense: Self = this.set("marginDense", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginNormal(value: String): Self = this.set("marginNormal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarginNormal: Self = this.set("marginNormal", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

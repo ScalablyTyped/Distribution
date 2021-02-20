@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.core.v1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ContainerStatus contains details for the current status of this container.
   */
 @js.native
-trait ContainerStatus extends js.Object {
+trait ContainerStatus extends StObject {
   
   /**
     * Container's ID in the format 'docker://<container_id>'.
@@ -71,57 +72,45 @@ object ContainerStatus {
   }
   
   @scala.inline
-  implicit class ContainerStatusOps[Self <: ContainerStatus] (val x: Self) extends AnyVal {
+  implicit class ContainerStatusMutableBuilder[Self <: ContainerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerID(value: Input[String]): Self = StObject.set(x, "containerID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerIDUndefined: Self = StObject.set(x, "containerID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImage(value: Input[String]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: Input[String]): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setImageID(value: Input[String]): Self = StObject.set(x, "imageID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageID(value: Input[String]): Self = this.set("imageID", value.asInstanceOf[js.Any])
+    def setLastState(value: Input[ContainerState]): Self = StObject.set(x, "lastState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setLastStateUndefined: Self = StObject.set(x, "lastState", js.undefined)
     
     @scala.inline
-    def setReady(value: Input[Boolean]): Self = this.set("ready", value.asInstanceOf[js.Any])
+    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestartCount(value: Input[Double]): Self = this.set("restartCount", value.asInstanceOf[js.Any])
+    def setReady(value: Input[Boolean]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerID(value: Input[String]): Self = this.set("containerID", value.asInstanceOf[js.Any])
+    def setRestartCount(value: Input[Double]): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerID: Self = this.set("containerID", js.undefined)
+    def setStarted(value: Input[Boolean]): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastState(value: Input[ContainerState]): Self = this.set("lastState", value.asInstanceOf[js.Any])
+    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
     @scala.inline
-    def deleteLastState: Self = this.set("lastState", js.undefined)
+    def setState(value: Input[ContainerState]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarted(value: Input[Boolean]): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarted: Self = this.set("started", js.undefined)
-    
-    @scala.inline
-    def setState(value: Input[ContainerState]): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

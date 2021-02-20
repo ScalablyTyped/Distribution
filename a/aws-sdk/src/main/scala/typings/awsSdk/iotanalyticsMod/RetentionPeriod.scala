@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetentionPeriod extends js.Object {
+trait RetentionPeriod extends StObject {
   
   /**
     * The number of days that message data is kept. The unlimited parameter must be false.
@@ -26,30 +27,18 @@ object RetentionPeriod {
   }
   
   @scala.inline
-  implicit class RetentionPeriodOps[Self <: RetentionPeriod] (val x: Self) extends AnyVal {
+  implicit class RetentionPeriodMutableBuilder[Self <: RetentionPeriod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumberOfDays(value: RetentionPeriodInDays): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberOfDaysUndefined: Self = StObject.set(x, "numberOfDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnlimited(value: UnlimitedRetentionPeriod): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfDays(value: RetentionPeriodInDays): Self = this.set("numberOfDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfDays: Self = this.set("numberOfDays", js.undefined)
-    
-    @scala.inline
-    def setUnlimited(value: UnlimitedRetentionPeriod): Self = this.set("unlimited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnlimited: Self = this.set("unlimited", js.undefined)
+    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

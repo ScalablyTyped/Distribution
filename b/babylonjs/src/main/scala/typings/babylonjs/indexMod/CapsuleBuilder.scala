@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.capsuleBuilderMod.ICreateCapsuleOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CapsuleBuilder ()
   extends typings.babylonjs.babylonjsIndexMod.CapsuleBuilder
 /* static members */
-@JSImport("babylonjs/index", "CapsuleBuilder")
-@js.native
-object CapsuleBuilder extends js.Object {
+object CapsuleBuilder {
   
+  @JSImport("babylonjs/index", "CapsuleBuilder.CreateCapsule")
+  @js.native
   def CreateCapsule(name: String, options: js.UndefOr[scala.Nothing], scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
   /**
     * Creates a capsule or a pill mesh
@@ -22,5 +23,7 @@ object CapsuleBuilder extends js.Object {
     * @param scene The scene the mesh is scoped to.
     * @returns Capsule Mesh
     */
+  @JSImport("babylonjs/index", "CapsuleBuilder.CreateCapsule")
+  @js.native
   def CreateCapsule(name: String, options: ICreateCapsuleOptions, scene: js.Any): typings.babylonjs.meshMod.Mesh = js.native
 }

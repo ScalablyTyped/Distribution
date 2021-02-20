@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,45 +79,33 @@ object XPropertyReplace {
   }
   
   @scala.inline
-  implicit class XPropertyReplaceOps[Self <: XPropertyReplace] (val x: Self) extends AnyVal {
+  implicit class XPropertyReplaceMutableBuilder[Self <: XPropertyReplace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetReplaceAttributes(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getReplaceAttributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSearchAttributes(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getSearchAttributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValueSearch(value: () => Boolean): Self = StObject.set(x, "getValueSearch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReplaceAttributes(value: SafeArray[PropertyValue]): Self = this.set("ReplaceAttributes", value.asInstanceOf[js.Any])
+    def setReplaceAttributes(value: SafeArray[PropertyValue]): Self = StObject.set(x, "ReplaceAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchAttributes(value: SafeArray[PropertyValue]): Self = this.set("SearchAttributes", value.asInstanceOf[js.Any])
+    def setSearchAttributes(value: SafeArray[PropertyValue]): Self = StObject.set(x, "SearchAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueSearch(value: Boolean): Self = this.set("ValueSearch", value.asInstanceOf[js.Any])
+    def setSetReplaceAttributes(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setReplaceAttributes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetReplaceAttributes(value: () => SafeArray[PropertyValue]): Self = this.set("getReplaceAttributes", js.Any.fromFunction0(value))
+    def setSetSearchAttributes(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setSearchAttributes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSearchAttributes(value: () => SafeArray[PropertyValue]): Self = this.set("getSearchAttributes", js.Any.fromFunction0(value))
+    def setSetValueSearch(value: Boolean => Unit): Self = StObject.set(x, "setValueSearch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValueSearch(value: () => Boolean): Self = this.set("getValueSearch", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetReplaceAttributes(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setReplaceAttributes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSearchAttributes(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setSearchAttributes", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValueSearch(value: Boolean => Unit): Self = this.set("setValueSearch", js.Any.fromFunction1(value))
+    def setValueSearch(value: Boolean): Self = StObject.set(x, "ValueSearch", value.asInstanceOf[js.Any])
   }
 }

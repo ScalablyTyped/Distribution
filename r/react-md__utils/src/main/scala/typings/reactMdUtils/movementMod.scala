@@ -7,28 +7,16 @@ import typings.reactMdUtils.useFocusMovementMod.KeyboardFocusOptions
 import typings.reactMdUtils.useKeyboardMovementMod.KeyboardMovementOptions
 import typings.reactMdUtils.useKeyboardMovementMod.KeyboardMovementProviders
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/utils/types/wia-aria/movement", JSImport.Namespace)
-@js.native
-object movementMod extends js.Object {
+object movementMod {
   
-  def getItemId(id: String, i: Double): String = js.native
-  
-  def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
-    hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions: ActiveDescendantOptions[D, CE, IE]
-  ): ActiveDescendantMovementProviders[CE, IE] = js.native
-  
-  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = js.native
-  
-  def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
-    hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
-  ): KeyboardMovementProviders[CE, IE] = js.native
-  
+  @JSImport("@react-md/utils/types/wia-aria/movement", "IncrementMovementKey")
   @js.native
-  object IncrementMovementKey extends js.Object {
+  object IncrementMovementKey extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.IncrementMovementKey with String] = js.native
@@ -70,8 +58,9 @@ object movementMod extends js.Object {
     /* "Shift+ArrowUp" */ val ShiftArrowUp: typings.reactMdUtils.movementTypesMod.IncrementMovementKey.ShiftArrowUp with String = js.native
   }
   
+  @JSImport("@react-md/utils/types/wia-aria/movement", "JumpMovementKey")
   @js.native
-  object JumpMovementKey extends js.Object {
+  object JumpMovementKey extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.reactMdUtils.movementTypesMod.JumpMovementKey with String] = js.native
@@ -93,27 +82,66 @@ object movementMod extends js.Object {
     /* "Home" */ val Home: typings.reactMdUtils.movementTypesMod.JumpMovementKey.Home with String = js.native
   }
   
-  @js.native
-  object MovementPresets extends js.Object {
+  object MovementPresets {
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.HORIZONTAL_COMBOBOX")
+    @js.native
     val HORIZONTAL_COMBOBOX: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.HORIZONTAL_LISTBOX")
+    @js.native
     val HORIZONTAL_LISTBOX: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.HORIZONTAL_MENU")
+    @js.native
     val HORIZONTAL_MENU: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.HORIZONTAL_TABS")
+    @js.native
     val HORIZONTAL_TABS: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.HORIZONTAL_TREE")
+    @js.native
     val HORIZONTAL_TREE: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.VERTICAL_COMBOBOX")
+    @js.native
     val VERTICAL_COMBOBOX: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.VERTICAL_LISTBOX")
+    @js.native
     val VERTICAL_LISTBOX: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.VERTICAL_MENU")
+    @js.native
     val VERTICAL_MENU: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.VERTICAL_TABS")
+    @js.native
     val VERTICAL_TABS: MovementConfig = js.native
     
+    @JSImport("@react-md/utils/types/wia-aria/movement", "MovementPresets.VERTICAL_TREE")
+    @js.native
     val VERTICAL_TREE: MovementConfig = js.native
   }
+  
+  @JSImport("@react-md/utils/types/wia-aria/movement", "getItemId")
+  @js.native
+  def getItemId(id: String, i: Double): String = js.native
+  
+  @JSImport("@react-md/utils/types/wia-aria/movement", "useActiveDescendantMovement")
+  @js.native
+  def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions: ActiveDescendantOptions[D, CE, IE]
+  ): ActiveDescendantMovementProviders[CE, IE] = js.native
+  
+  @JSImport("@react-md/utils/types/wia-aria/movement", "useFocusMovement")
+  @js.native
+  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = js.native
+  
+  @JSImport("@react-md/utils/types/wia-aria/movement", "useKeyboardMovement")
+  @js.native
+  def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
+  ): KeyboardMovementProviders[CE, IE] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupReferenceStatement extends js.Object {
+trait RuleGroupReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the entity.
@@ -26,30 +27,18 @@ object RuleGroupReferenceStatement {
   }
   
   @scala.inline
-  implicit class RuleGroupReferenceStatementOps[Self <: RuleGroupReferenceStatement] (val x: Self) extends AnyVal {
+  implicit class RuleGroupReferenceStatementMutableBuilder[Self <: RuleGroupReferenceStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
     @scala.inline
-    def setARN(value: ResourceArn): Self = this.set("ARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExcludedRulesVarargs(value: ExcludedRule*): Self = this.set("ExcludedRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setExcludedRules(value: ExcludedRules): Self = this.set("ExcludedRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcludedRules: Self = this.set("ExcludedRules", js.undefined)
+    def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
   }
 }

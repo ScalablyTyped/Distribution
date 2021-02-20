@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RebuildWorkspacesRequest extends js.Object {
+trait RebuildWorkspacesRequest extends StObject {
   
   /**
     * The WorkSpace to rebuild. You can specify a single WorkSpace.
@@ -21,24 +22,12 @@ object RebuildWorkspacesRequest {
   }
   
   @scala.inline
-  implicit class RebuildWorkspacesRequestOps[Self <: RebuildWorkspacesRequest] (val x: Self) extends AnyVal {
+  implicit class RebuildWorkspacesRequestMutableBuilder[Self <: RebuildWorkspacesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRebuildWorkspaceRequests(value: RebuildWorkspaceRequests): Self = StObject.set(x, "RebuildWorkspaceRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRebuildWorkspaceRequestsVarargs(value: RebuildRequest*): Self = this.set("RebuildWorkspaceRequests", js.Array(value :_*))
-    
-    @scala.inline
-    def setRebuildWorkspaceRequests(value: RebuildWorkspaceRequests): Self = this.set("RebuildWorkspaceRequests", value.asInstanceOf[js.Any])
+    def setRebuildWorkspaceRequestsVarargs(value: RebuildRequest*): Self = StObject.set(x, "RebuildWorkspaceRequests", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebasedynamiclinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocialMetaTagInfo extends js.Object {
+trait SocialMetaTagInfo extends StObject {
   
   /** A short description of the link. Optional. */
   var socialDescription: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object SocialMetaTagInfo {
   }
   
   @scala.inline
-  implicit class SocialMetaTagInfoOps[Self <: SocialMetaTagInfo] (val x: Self) extends AnyVal {
+  implicit class SocialMetaTagInfoMutableBuilder[Self <: SocialMetaTagInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSocialDescription(value: String): Self = StObject.set(x, "socialDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSocialDescriptionUndefined: Self = StObject.set(x, "socialDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSocialImageLink(value: String): Self = StObject.set(x, "socialImageLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocialDescription(value: String): Self = this.set("socialDescription", value.asInstanceOf[js.Any])
+    def setSocialImageLinkUndefined: Self = StObject.set(x, "socialImageLink", js.undefined)
     
     @scala.inline
-    def deleteSocialDescription: Self = this.set("socialDescription", js.undefined)
+    def setSocialTitle(value: String): Self = StObject.set(x, "socialTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocialImageLink(value: String): Self = this.set("socialImageLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocialImageLink: Self = this.set("socialImageLink", js.undefined)
-    
-    @scala.inline
-    def setSocialTitle(value: String): Self = this.set("socialTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocialTitle: Self = this.set("socialTitle", js.undefined)
+    def setSocialTitleUndefined: Self = StObject.set(x, "socialTitle", js.undefined)
   }
 }

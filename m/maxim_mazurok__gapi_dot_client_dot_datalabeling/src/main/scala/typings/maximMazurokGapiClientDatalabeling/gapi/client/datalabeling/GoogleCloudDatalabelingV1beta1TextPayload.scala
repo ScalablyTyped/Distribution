@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1TextPayload extends js.Object {
+trait GoogleCloudDatalabelingV1beta1TextPayload extends StObject {
   
   /** Text content. */
   var textContent: js.UndefOr[String] = js.native
@@ -19,24 +20,12 @@ object GoogleCloudDatalabelingV1beta1TextPayload {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1TextPayloadOps[Self <: GoogleCloudDatalabelingV1beta1TextPayload] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1TextPayloadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TextPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextContent(value: String): Self = this.set("textContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextContent: Self = this.set("textContent", js.undefined)
+    def setTextContentUndefined: Self = StObject.set(x, "textContent", js.undefined)
   }
 }

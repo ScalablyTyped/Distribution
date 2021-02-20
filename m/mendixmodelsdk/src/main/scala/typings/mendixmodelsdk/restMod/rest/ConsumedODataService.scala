@@ -11,6 +11,7 @@ import typings.mendixmodelsdk.microflowsMod.microflows.RequestProxyType
 import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.restMod.StructureVersionInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -144,18 +145,32 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def versionApiMockResults: String = js.native
   def versionApiMockResults_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
-@js.native
-object ConsumedODataService extends js.Object {
+object ConsumedODataService {
+  
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new ConsumedODataService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.createIn")
+  @js.native
   def createIn(container: IFolderBase): ConsumedODataService = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

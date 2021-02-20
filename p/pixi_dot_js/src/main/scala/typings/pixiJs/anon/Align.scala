@@ -2,12 +2,13 @@ package typings.pixiJs.anon
 
 import typings.std.CanvasGradient
 import typings.std.CanvasPattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Align extends js.Object {
+trait Align extends StObject {
   
   var align: js.UndefOr[String] = js.native
   
@@ -76,201 +77,189 @@ object Align {
   }
   
   @scala.inline
-  implicit class AlignOps[Self <: Align] (val x: Self) extends AnyVal {
+  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreakWords(value: Boolean): Self = StObject.set(x, "breakWords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setBreakWordsUndefined: Self = StObject.set(x, "breakWords", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setDropShadow(value: Boolean): Self = StObject.set(x, "dropShadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakWords(value: Boolean): Self = this.set("breakWords", value.asInstanceOf[js.Any])
+    def setDropShadowAlpha(value: Double): Self = StObject.set(x, "dropShadowAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBreakWords: Self = this.set("breakWords", js.undefined)
+    def setDropShadowAlphaUndefined: Self = StObject.set(x, "dropShadowAlpha", js.undefined)
     
     @scala.inline
-    def setDropShadow(value: Boolean): Self = this.set("dropShadow", value.asInstanceOf[js.Any])
+    def setDropShadowAngle(value: Double): Self = StObject.set(x, "dropShadowAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropShadow: Self = this.set("dropShadow", js.undefined)
+    def setDropShadowAngleUndefined: Self = StObject.set(x, "dropShadowAngle", js.undefined)
     
     @scala.inline
-    def setDropShadowAlpha(value: Double): Self = this.set("dropShadowAlpha", value.asInstanceOf[js.Any])
+    def setDropShadowBlur(value: Double): Self = StObject.set(x, "dropShadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropShadowAlpha: Self = this.set("dropShadowAlpha", js.undefined)
+    def setDropShadowBlurUndefined: Self = StObject.set(x, "dropShadowBlur", js.undefined)
     
     @scala.inline
-    def setDropShadowAngle(value: Double): Self = this.set("dropShadowAngle", value.asInstanceOf[js.Any])
+    def setDropShadowColor(value: String | Double): Self = StObject.set(x, "dropShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropShadowAngle: Self = this.set("dropShadowAngle", js.undefined)
+    def setDropShadowColorUndefined: Self = StObject.set(x, "dropShadowColor", js.undefined)
     
     @scala.inline
-    def setDropShadowBlur(value: Double): Self = this.set("dropShadowBlur", value.asInstanceOf[js.Any])
+    def setDropShadowDistance(value: Double): Self = StObject.set(x, "dropShadowDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropShadowBlur: Self = this.set("dropShadowBlur", js.undefined)
+    def setDropShadowDistanceUndefined: Self = StObject.set(x, "dropShadowDistance", js.undefined)
     
     @scala.inline
-    def setDropShadowColor(value: String | Double): Self = this.set("dropShadowColor", value.asInstanceOf[js.Any])
+    def setDropShadowUndefined: Self = StObject.set(x, "dropShadow", js.undefined)
     
     @scala.inline
-    def deleteDropShadowColor: Self = this.set("dropShadowColor", js.undefined)
+    def setFill(value: String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropShadowDistance(value: Double): Self = this.set("dropShadowDistance", value.asInstanceOf[js.Any])
+    def setFillGradientStops(value: js.Array[Double]): Self = StObject.set(x, "fillGradientStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDropShadowDistance: Self = this.set("dropShadowDistance", js.undefined)
+    def setFillGradientStopsUndefined: Self = StObject.set(x, "fillGradientStops", js.undefined)
     
     @scala.inline
-    def setFillVarargs(value: (Double | String)*): Self = this.set("fill", js.Array(value :_*))
+    def setFillGradientStopsVarargs(value: Double*): Self = StObject.set(x, "fillGradientStops", js.Array(value :_*))
     
     @scala.inline
-    def setFill(value: String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFillGradientType(value: Double): Self = StObject.set(x, "fillGradientType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillGradientTypeUndefined: Self = StObject.set(x, "fillGradientType", js.undefined)
     
     @scala.inline
-    def setFillGradientStopsVarargs(value: Double*): Self = this.set("fillGradientStops", js.Array(value :_*))
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setFillGradientStops(value: js.Array[Double]): Self = this.set("fillGradientStops", value.asInstanceOf[js.Any])
+    def setFillVarargs(value: (Double | String)*): Self = StObject.set(x, "fill", js.Array(value :_*))
     
     @scala.inline
-    def deleteFillGradientStops: Self = this.set("fillGradientStops", js.undefined)
+    def setFontFamily(value: String | js.Array[String]): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFillGradientType(value: Double): Self = this.set("fillGradientType", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteFillGradientType: Self = this.set("fillGradientType", js.undefined)
+    def setFontFamilyVarargs(value: String*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
     
     @scala.inline
-    def setFontFamilyVarargs(value: String*): Self = this.set("fontFamily", js.Array(value :_*))
+    def setFontSize(value: Double | String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String | js.Array[String]): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double | String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontVariant(value: String): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontVariant(value: String): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
+    def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: String): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeading(value: Double): Self = this.set("leading", value.asInstanceOf[js.Any])
+    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def deleteLeading: Self = this.set("leading", js.undefined)
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetterSpacing(value: Double): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineJoin(value: String): Self = this.set("lineJoin", value.asInstanceOf[js.Any])
+    def setMiterLimitUndefined: Self = StObject.set(x, "miterLimit", js.undefined)
     
     @scala.inline
-    def deleteLineJoin: Self = this.set("lineJoin", js.undefined)
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteMiterLimit: Self = this.set("miterLimit", js.undefined)
+    def setStroke(value: String | Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setStrokeThicknessUndefined: Self = StObject.set(x, "strokeThickness", js.undefined)
     
     @scala.inline
-    def setStroke(value: String | Double): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrokeThickness(value: Double): Self = this.set("strokeThickness", value.asInstanceOf[js.Any])
+    def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
     
     @scala.inline
-    def deleteStrokeThickness: Self = this.set("strokeThickness", js.undefined)
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBaseline(value: String): Self = this.set("textBaseline", value.asInstanceOf[js.Any])
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
     @scala.inline
-    def deleteTextBaseline: Self = this.set("textBaseline", js.undefined)
+    def setWhiteSpace(value: String): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
+    def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
     
     @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
+    def setWordWrap(value: Boolean): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiteSpace(value: String): Self = this.set("whiteSpace", value.asInstanceOf[js.Any])
+    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     
     @scala.inline
-    def deleteWhiteSpace: Self = this.set("whiteSpace", js.undefined)
+    def setWordWrapWidth(value: Double): Self = StObject.set(x, "wordWrapWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWordWrap(value: Boolean): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
-    
-    @scala.inline
-    def setWordWrapWidth(value: Double): Self = this.set("wordWrapWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordWrapWidth: Self = this.set("wordWrapWidth", js.undefined)
+    def setWordWrapWidthUndefined: Self = StObject.set(x, "wordWrapWidth", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridEditable extends js.Object {
+trait GridEditable extends StObject {
   
   var cancelDelete: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object GridEditable {
   }
   
   @scala.inline
-  implicit class GridEditableOps[Self <: GridEditable] (val x: Self) extends AnyVal {
+  implicit class GridEditableMutableBuilder[Self <: GridEditable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelDelete(value: String): Self = StObject.set(x, "cancelDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelDeleteUndefined: Self = StObject.set(x, "cancelDelete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfirmDelete(value: String): Self = StObject.set(x, "confirmDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelDelete(value: String): Self = this.set("cancelDelete", value.asInstanceOf[js.Any])
+    def setConfirmDeleteUndefined: Self = StObject.set(x, "confirmDelete", js.undefined)
     
     @scala.inline
-    def deleteCancelDelete: Self = this.set("cancelDelete", js.undefined)
+    def setConfirmation(value: Boolean | String | js.Function): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmDelete(value: String): Self = this.set("confirmDelete", value.asInstanceOf[js.Any])
+    def setConfirmationUndefined: Self = StObject.set(x, "confirmation", js.undefined)
     
     @scala.inline
-    def deleteConfirmDelete: Self = this.set("confirmDelete", js.undefined)
+    def setCreateAt(value: String): Self = StObject.set(x, "createAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfirmation(value: Boolean | String | js.Function): Self = this.set("confirmation", value.asInstanceOf[js.Any])
+    def setCreateAtUndefined: Self = StObject.set(x, "createAt", js.undefined)
     
     @scala.inline
-    def deleteConfirmation: Self = this.set("confirmation", js.undefined)
+    def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateAt(value: String): Self = this.set("createAt", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteCreateAt: Self = this.set("createAt", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: Boolean): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
-    
-    @scala.inline
-    def setWindow(value: js.Any): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

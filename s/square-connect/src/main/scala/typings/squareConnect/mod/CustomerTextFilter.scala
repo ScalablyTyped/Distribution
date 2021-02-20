@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CustomerTextFilter")
 @js.native
-class CustomerTextFilter () extends js.Object {
+class CustomerTextFilter () extends StObject {
   
   /**
     * Use the exact filter to select customers whose attributes match exactly the specified query.

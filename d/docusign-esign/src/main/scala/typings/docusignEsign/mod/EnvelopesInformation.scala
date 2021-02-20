@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopesInformation extends js.Object {
+trait EnvelopesInformation extends StObject {
   
   /**
     * A token returned by an earlier API call that you can use with a new call to resume a search query at the point where it left off.  This token system enhances the performance of the API.
@@ -61,81 +62,69 @@ object EnvelopesInformation {
   }
   
   @scala.inline
-  implicit class EnvelopesInformationOps[Self <: EnvelopesInformation] (val x: Self) extends AnyVal {
+  implicit class EnvelopesInformationMutableBuilder[Self <: EnvelopesInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuationToken(value: String): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationTokenUndefined: Self = StObject.set(x, "continuationToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuationToken(value: String): Self = this.set("continuationToken", value.asInstanceOf[js.Any])
+    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     @scala.inline
-    def deleteContinuationToken: Self = this.set("continuationToken", js.undefined)
+    def setEnvelopeTransactionStatuses(value: js.Array[EnvelopeTransactionStatus]): Self = StObject.set(x, "envelopeTransactionStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndPosition(value: String): Self = this.set("endPosition", value.asInstanceOf[js.Any])
+    def setEnvelopeTransactionStatusesUndefined: Self = StObject.set(x, "envelopeTransactionStatuses", js.undefined)
     
     @scala.inline
-    def deleteEndPosition: Self = this.set("endPosition", js.undefined)
+    def setEnvelopeTransactionStatusesVarargs(value: EnvelopeTransactionStatus*): Self = StObject.set(x, "envelopeTransactionStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setEnvelopeTransactionStatusesVarargs(value: EnvelopeTransactionStatus*): Self = this.set("envelopeTransactionStatuses", js.Array(value :_*))
+    def setEnvelopes(value: js.Array[Envelope]): Self = StObject.set(x, "envelopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeTransactionStatuses(value: js.Array[EnvelopeTransactionStatus]): Self = this.set("envelopeTransactionStatuses", value.asInstanceOf[js.Any])
+    def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeTransactionStatuses: Self = this.set("envelopeTransactionStatuses", js.undefined)
+    def setEnvelopesVarargs(value: Envelope*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
     
     @scala.inline
-    def setEnvelopesVarargs(value: Envelope*): Self = this.set("envelopes", js.Array(value :_*))
+    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopes(value: js.Array[Envelope]): Self = this.set("envelopes", value.asInstanceOf[js.Any])
+    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
     @scala.inline
-    def deleteEnvelopes: Self = this.set("envelopes", js.undefined)
+    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
     
     @scala.inline
-    def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = this.set("folders", js.Array(value :_*))
+    def setLastQueriedDateTime(value: String): Self = StObject.set(x, "lastQueriedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: js.Array[/* This object contains details about a folder. */ Folder]): Self = this.set("folders", value.asInstanceOf[js.Any])
+    def setLastQueriedDateTimeUndefined: Self = StObject.set(x, "lastQueriedDateTime", js.undefined)
     
     @scala.inline
-    def deleteFolders: Self = this.set("folders", js.undefined)
+    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastQueriedDateTime(value: String): Self = this.set("lastQueriedDateTime", value.asInstanceOf[js.Any])
+    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
     @scala.inline
-    def deleteLastQueriedDateTime: Self = this.set("lastQueriedDateTime", js.undefined)
+    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultSetSize(value: String): Self = this.set("resultSetSize", value.asInstanceOf[js.Any])
+    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
     @scala.inline
-    def deleteResultSetSize: Self = this.set("resultSetSize", js.undefined)
+    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: String): Self = this.set("startPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartPosition: Self = this.set("startPosition", js.undefined)
-    
-    @scala.inline
-    def setTotalSetSize(value: String): Self = this.set("totalSetSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalSetSize: Self = this.set("totalSetSize", js.undefined)
+    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

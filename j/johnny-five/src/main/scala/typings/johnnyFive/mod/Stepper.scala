@@ -2,13 +2,14 @@ package typings.johnnyFive.mod
 
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Stepper")
 @js.native
-class Stepper protected () extends js.Object {
+class Stepper protected () extends StObject {
   def this(option: String) = this()
   def this(option: Double) = this()
   def this(option: StepperOption) = this()
@@ -43,20 +44,34 @@ class Stepper protected () extends js.Object {
   def within(range: js.Array[Double], cb: js.Function0[Unit]): Unit = js.native
   def within(range: js.Array[Double], unit: String, cb: js.Function0[Unit]): Unit = js.native
 }
-@JSImport("johnny-five", "Stepper")
-@js.native
-object Stepper extends js.Object {
+object Stepper {
   
+  @JSImport("johnny-five", "Stepper.TYPE")
   @js.native
-  class TYPE () extends js.Object
+  class TYPE () extends StObject
   /* static members */
-  @js.native
-  object TYPE extends js.Object {
+  object TYPE {
     
-    var DRIVER: Double = js.native
+    @JSImport("johnny-five", "Stepper.TYPE")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var FOUR_WIRE: Double = js.native
+    @JSImport("johnny-five", "Stepper.TYPE.DRIVER")
+    @js.native
+    def DRIVER: Double = js.native
+    @scala.inline
+    def DRIVER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRIVER")(x.asInstanceOf[js.Any])
     
-    var TWO_WIRE: Double = js.native
+    @JSImport("johnny-five", "Stepper.TYPE.FOUR_WIRE")
+    @js.native
+    def FOUR_WIRE: Double = js.native
+    @scala.inline
+    def FOUR_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR_WIRE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("johnny-five", "Stepper.TYPE.TWO_WIRE")
+    @js.native
+    def TWO_WIRE: Double = js.native
+    @scala.inline
+    def TWO_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO_WIRE")(x.asInstanceOf[js.Any])
   }
 }

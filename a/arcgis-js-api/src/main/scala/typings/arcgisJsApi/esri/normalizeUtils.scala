@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait normalizeUtils extends js.Object {
+trait normalizeUtils extends StObject {
   
   /**
     * Normalizes geometries that intersect the central meridian or fall outside the world extent so they stay within the coordinate system of the view.

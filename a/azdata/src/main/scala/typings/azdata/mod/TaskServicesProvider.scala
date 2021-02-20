@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object TaskServicesProvider {
   }
   
   @scala.inline
-  implicit class TaskServicesProviderOps[Self <: TaskServicesProvider] (val x: Self) extends AnyVal {
+  implicit class TaskServicesProviderMutableBuilder[Self <: TaskServicesProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelTask(value: CancelTaskParams => Thenable[Boolean]): Self = StObject.set(x, "cancelTask", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllTasks(value: ListTasksParams => Thenable[ListTasksResponse]): Self = StObject.set(x, "getAllTasks", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, _] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCancelTask(value: CancelTaskParams => Thenable[Boolean]): Self = this.set("cancelTask", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAllTasks(value: ListTasksParams => Thenable[ListTasksResponse]): Self = this.set("getAllTasks", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, _] => Unit): Self = this.set("registerOnTaskCreated", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, _] => Unit): Self = this.set("registerOnTaskStatusChanged", js.Any.fromFunction1(value))
+    def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, _] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
   }
 }

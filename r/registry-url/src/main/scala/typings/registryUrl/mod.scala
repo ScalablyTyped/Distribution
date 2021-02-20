@@ -1,13 +1,12 @@
 package typings.registryUrl
 
 import typings.registryUrl.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("registry-url", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the set npm registry URL.
@@ -25,8 +24,16 @@ object mod extends js.Object {
   	//=> 'https://custom-registry.com/'
   	```
   	*/
+  @JSImport("registry-url", JSImport.Namespace)
+  @js.native
   def apply(): String = js.native
+  @JSImport("registry-url", JSImport.Namespace)
+  @js.native
   def apply(scope: String): String = js.native
+  
+  @JSImport("registry-url", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Get the set npm registry URL.
@@ -47,11 +54,19 @@ object mod extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function registryUrl(scope?: string): string;
   // export = registryUrl;
+  @JSImport("registry-url", "default")
+  @js.native
   def default(): String = js.native
+  @JSImport("registry-url", "default")
+  @js.native
   def default(scope: String): String = js.native
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function registryUrl(scope?: string): string;
   // export = registryUrl;
-  @JSName("default")
-  var default_Original: Call = js.native
+  @JSImport("registry-url", "default")
+  @js.native
+  def default_Fmod: Call = js.native
+  
+  @scala.inline
+  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

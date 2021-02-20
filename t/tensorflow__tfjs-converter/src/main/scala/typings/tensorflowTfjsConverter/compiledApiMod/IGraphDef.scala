@@ -1,11 +1,12 @@
 package typings.tensorflowTfjsConverter.compiledApiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGraphDef extends js.Object {
+trait IGraphDef extends StObject {
   
   /** GraphDef library */
   var library: js.UndefOr[IFunctionDefLibrary | Null] = js.native
@@ -25,48 +26,36 @@ object IGraphDef {
   }
   
   @scala.inline
-  implicit class IGraphDefOps[Self <: IGraphDef] (val x: Self) extends AnyVal {
+  implicit class IGraphDefMutableBuilder[Self <: IGraphDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLibrary(value: IFunctionDefLibrary): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLibraryNull: Self = StObject.set(x, "library", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
     
     @scala.inline
-    def setLibrary(value: IFunctionDefLibrary): Self = this.set("library", value.asInstanceOf[js.Any])
+    def setNode(value: js.Array[INodeDef]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLibrary: Self = this.set("library", js.undefined)
+    def setNodeNull: Self = StObject.set(x, "node", null)
     
     @scala.inline
-    def setLibraryNull: Self = this.set("library", null)
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def setNodeVarargs(value: INodeDef*): Self = this.set("node", js.Array(value :_*))
+    def setNodeVarargs(value: INodeDef*): Self = StObject.set(x, "node", js.Array(value :_*))
     
     @scala.inline
-    def setNode(value: js.Array[INodeDef]): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setVersions(value: IVersionDef): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setVersionsNull: Self = StObject.set(x, "versions", null)
     
     @scala.inline
-    def setNodeNull: Self = this.set("node", null)
-    
-    @scala.inline
-    def setVersions(value: IVersionDef): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
-    
-    @scala.inline
-    def setVersionsNull: Self = this.set("versions", null)
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
   }
 }

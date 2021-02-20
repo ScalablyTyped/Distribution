@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchTemplateCpuOptions extends js.Object {
+trait LaunchTemplateCpuOptions extends StObject {
   
   /**
     * The number of CPU cores for the instance.
@@ -27,30 +28,18 @@ object LaunchTemplateCpuOptions {
   }
   
   @scala.inline
-  implicit class LaunchTemplateCpuOptionsOps[Self <: LaunchTemplateCpuOptions] (val x: Self) extends AnyVal {
+  implicit class LaunchTemplateCpuOptionsMutableBuilder[Self <: LaunchTemplateCpuOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoreCount(value: Double): Self = StObject.set(x, "coreCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoreCountUndefined: Self = StObject.set(x, "coreCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setThreadsPerCore(value: Double): Self = StObject.set(x, "threadsPerCore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreCount(value: Double): Self = this.set("coreCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoreCount: Self = this.set("coreCount", js.undefined)
-    
-    @scala.inline
-    def setThreadsPerCore(value: Double): Self = this.set("threadsPerCore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreadsPerCore: Self = this.set("threadsPerCore", js.undefined)
+    def setThreadsPerCoreUndefined: Self = StObject.set(x, "threadsPerCore", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.reactNativeCommunityCliTypes.anon
 
 import typings.reactNativeCommunityCliTypes.mod.InquirerPrompt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@react-native-community/cli-types.@react-native-community/cli-types.Dependency, 'name' | 'root'> */
 @js.native
-trait OmitDependencynameroot extends js.Object {
+trait OmitDependencynameroot extends StObject {
   
   var assets: js.Array[String] = js.native
   
@@ -26,36 +27,24 @@ object OmitDependencynameroot {
   }
   
   @scala.inline
-  implicit class OmitDependencynamerootOps[Self <: OmitDependencynameroot] (val x: Self) extends AnyVal {
+  implicit class OmitDependencynamerootMutableBuilder[Self <: OmitDependencynameroot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHooks(value: Postlink): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetsVarargs(value: String*): Self = this.set("assets", js.Array(value :_*))
+    def setParams(value: js.Array[InquirerPrompt]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssets(value: js.Array[String]): Self = this.set("assets", value.asInstanceOf[js.Any])
+    def setParamsVarargs(value: InquirerPrompt*): Self = StObject.set(x, "params", js.Array(value :_*))
     
     @scala.inline
-    def setHooks(value: Postlink): Self = this.set("hooks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParamsVarargs(value: InquirerPrompt*): Self = this.set("params", js.Array(value :_*))
-    
-    @scala.inline
-    def setParams(value: js.Array[InquirerPrompt]): Self = this.set("params", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatforms(value: Dictkey): Self = this.set("platforms", value.asInstanceOf[js.Any])
+    def setPlatforms(value: Dictkey): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
   }
 }

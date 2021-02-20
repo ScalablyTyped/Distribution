@@ -3,6 +3,7 @@ package typings.pulumiKubernetes.inputMod.apps.v1beta2
 import typings.pulumiKubernetes.inputMod.core.v1.PodTemplateSpec
 import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ReplicaSetSpec is the specification of a ReplicaSet.
   */
 @js.native
-trait ReplicaSetSpec extends js.Object {
+trait ReplicaSetSpec extends StObject {
   
   /**
     * Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
@@ -42,39 +43,27 @@ object ReplicaSetSpec {
   }
   
   @scala.inline
-  implicit class ReplicaSetSpecOps[Self <: ReplicaSetSpec] (val x: Self) extends AnyVal {
+  implicit class ReplicaSetSpecMutableBuilder[Self <: ReplicaSetSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinReadySeconds(value: Input[Double]): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinReadySecondsUndefined: Self = StObject.set(x, "minReadySeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
     @scala.inline
-    def setMinReadySeconds(value: Input[Double]): Self = this.set("minReadySeconds", value.asInstanceOf[js.Any])
+    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinReadySeconds: Self = this.set("minReadySeconds", js.undefined)
+    def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicas(value: Input[Double]): Self = this.set("replicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicas: Self = this.set("replicas", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: Input[PodTemplateSpec]): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

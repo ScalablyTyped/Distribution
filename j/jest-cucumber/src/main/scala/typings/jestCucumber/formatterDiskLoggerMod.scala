@@ -1,15 +1,15 @@
 package typings.jestCucumber
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-cucumber/dist/src/reporting/formatters/formatter-loggers/FormatterDiskLogger", JSImport.Namespace)
-@js.native
-object formatterDiskLoggerMod extends js.Object {
+object formatterDiskLoggerMod {
   
+  @JSImport("jest-cucumber/dist/src/reporting/formatters/formatter-loggers/FormatterDiskLogger", "FormatterDiskLogger")
   @js.native
-  class FormatterDiskLogger protected () extends js.Object {
+  class FormatterDiskLogger protected () extends StObject {
     def this(path: String) = this()
     
     def log(logText: String): Unit = js.native

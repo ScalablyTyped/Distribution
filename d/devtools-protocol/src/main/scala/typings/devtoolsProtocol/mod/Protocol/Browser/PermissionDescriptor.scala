@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionDescriptor extends js.Object {
+trait PermissionDescriptor extends StObject {
   
   /**
     * For "clipboard" permission, may specify allowWithoutSanitization.
@@ -43,45 +44,33 @@ object PermissionDescriptor {
   }
   
   @scala.inline
-  implicit class PermissionDescriptorOps[Self <: PermissionDescriptor] (val x: Self) extends AnyVal {
+  implicit class PermissionDescriptorMutableBuilder[Self <: PermissionDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowWithoutSanitization(value: Boolean): Self = StObject.set(x, "allowWithoutSanitization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowWithoutSanitizationUndefined: Self = StObject.set(x, "allowWithoutSanitization", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPanTiltZoom(value: Boolean): Self = StObject.set(x, "panTiltZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowWithoutSanitization(value: Boolean): Self = this.set("allowWithoutSanitization", value.asInstanceOf[js.Any])
+    def setPanTiltZoomUndefined: Self = StObject.set(x, "panTiltZoom", js.undefined)
     
     @scala.inline
-    def deleteAllowWithoutSanitization: Self = this.set("allowWithoutSanitization", js.undefined)
+    def setSysex(value: Boolean): Self = StObject.set(x, "sysex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanTiltZoom(value: Boolean): Self = this.set("panTiltZoom", value.asInstanceOf[js.Any])
+    def setSysexUndefined: Self = StObject.set(x, "sysex", js.undefined)
     
     @scala.inline
-    def deletePanTiltZoom: Self = this.set("panTiltZoom", js.undefined)
+    def setUserVisibleOnly(value: Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSysex(value: Boolean): Self = this.set("sysex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSysex: Self = this.set("sysex", js.undefined)
-    
-    @scala.inline
-    def setUserVisibleOnly(value: Boolean): Self = this.set("userVisibleOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserVisibleOnly: Self = this.set("userVisibleOnly", js.undefined)
+    def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
   }
 }

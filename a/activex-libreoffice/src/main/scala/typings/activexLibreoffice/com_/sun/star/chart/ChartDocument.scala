@@ -16,6 +16,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,27 +105,15 @@ object ChartDocument {
   }
   
   @scala.inline
-  implicit class ChartDocumentOps[Self <: ChartDocument] (val x: Self) extends AnyVal {
+  implicit class ChartDocumentMutableBuilder[Self <: ChartDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasLegend(value: Boolean): Self = StObject.set(x, "HasLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasMainTitle(value: Boolean): Self = StObject.set(x, "HasMainTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasLegend(value: Boolean): Self = this.set("HasLegend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasMainTitle(value: Boolean): Self = this.set("HasMainTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasSubTitle(value: Boolean): Self = this.set("HasSubTitle", value.asInstanceOf[js.Any])
+    def setHasSubTitle(value: Boolean): Self = StObject.set(x, "HasSubTitle", value.asInstanceOf[js.Any])
   }
 }

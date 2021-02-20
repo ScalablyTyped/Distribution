@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,42 +33,30 @@ object ScrollableTextOptions {
   }
   
   @scala.inline
-  implicit class ScrollableTextOptionsOps[Self <: ScrollableTextOptions] (val x: Self) extends AnyVal {
+  implicit class ScrollableTextOptionsMutableBuilder[Self <: ScrollableTextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeys(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    def setMouse(value: Boolean | js.Function0[Unit]): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: String | js.Array[String] | Boolean): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setMouseFunction0(value: () => Unit): Self = StObject.set(x, "mouse", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
+    def setMouseUndefined: Self = StObject.set(x, "mouse", js.undefined)
     
     @scala.inline
-    def setMouseFunction0(value: () => Unit): Self = this.set("mouse", js.Any.fromFunction0(value))
+    def setVi(value: Boolean): Self = StObject.set(x, "vi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouse(value: Boolean | js.Function0[Unit]): Self = this.set("mouse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMouse: Self = this.set("mouse", js.undefined)
-    
-    @scala.inline
-    def setVi(value: Boolean): Self = this.set("vi", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVi: Self = this.set("vi", js.undefined)
+    def setViUndefined: Self = StObject.set(x, "vi", js.undefined)
   }
 }

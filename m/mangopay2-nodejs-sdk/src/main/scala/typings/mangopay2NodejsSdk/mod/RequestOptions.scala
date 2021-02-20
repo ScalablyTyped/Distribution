@@ -3,12 +3,13 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.anon.ApiVersion
 import typings.mangopay2NodejsSdk.anon.PartialHeaders
 import typings.mangopay2NodejsSdk.anon.Timeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestOptions extends js.Object {
+trait RequestOptions extends StObject {
   
   var headers: PartialHeaders = js.native
   
@@ -30,30 +31,18 @@ object RequestOptions {
   }
   
   @scala.inline
-  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: PartialHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPath(value: ApiVersion): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestConfig(value: Timeout): Self = StObject.set(x, "requestConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: PartialHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: ApiVersion): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestConfig(value: Timeout): Self = this.set("requestConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponseConfig(value: Timeout): Self = this.set("responseConfig", value.asInstanceOf[js.Any])
+    def setResponseConfig(value: Timeout): Self = StObject.set(x, "responseConfig", value.asInstanceOf[js.Any])
   }
 }

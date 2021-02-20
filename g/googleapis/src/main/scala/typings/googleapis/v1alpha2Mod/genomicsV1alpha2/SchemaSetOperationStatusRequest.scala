@@ -1,5 +1,6 @@
 package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Pipelines Service and not by end users.
   */
 @js.native
-trait SchemaSetOperationStatusRequest extends js.Object {
+trait SchemaSetOperationStatusRequest extends StObject {
   
   var errorCode: js.UndefOr[String] = js.native
   
@@ -30,51 +31,39 @@ object SchemaSetOperationStatusRequest {
   }
   
   @scala.inline
-  implicit class SchemaSetOperationStatusRequestOps[Self <: SchemaSetOperationStatusRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaSetOperationStatusRequestMutableBuilder[Self <: SchemaSetOperationStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    def setTimestampEvents(value: js.Array[SchemaTimestampEvent]): Self = StObject.set(x, "timestampEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    def setTimestampEventsUndefined: Self = StObject.set(x, "timestampEvents", js.undefined)
     
     @scala.inline
-    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    def setTimestampEventsVarargs(value: SchemaTimestampEvent*): Self = StObject.set(x, "timestampEvents", js.Array(value :_*))
     
     @scala.inline
-    def setTimestampEventsVarargs(value: SchemaTimestampEvent*): Self = this.set("timestampEvents", js.Array(value :_*))
+    def setValidationToken(value: String): Self = StObject.set(x, "validationToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestampEvents(value: js.Array[SchemaTimestampEvent]): Self = this.set("timestampEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampEvents: Self = this.set("timestampEvents", js.undefined)
-    
-    @scala.inline
-    def setValidationToken(value: String): Self = this.set("validationToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationToken: Self = this.set("validationToken", js.undefined)
+    def setValidationTokenUndefined: Self = StObject.set(x, "validationToken", js.undefined)
   }
 }

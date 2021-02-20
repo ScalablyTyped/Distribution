@@ -1,14 +1,15 @@
 package typings.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImagePosition extends js.Object
+sealed trait ImagePosition extends StObject
 @JSGlobal("ej.ImagePosition")
 @js.native
-object ImagePosition extends js.Object {
+object ImagePosition extends StObject {
   
   //support for aligning text in top and image in bottom
   @js.native

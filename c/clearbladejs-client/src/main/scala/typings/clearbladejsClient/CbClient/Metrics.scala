@@ -1,11 +1,12 @@
 package typings.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Metrics extends js.Object {
+trait Metrics extends StObject {
   
   var URI: String = js.native
   
@@ -41,42 +42,30 @@ object Metrics {
   }
   
   @scala.inline
-  implicit class MetricsOps[Self <: Metrics] (val x: Self) extends AnyVal {
+  implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDBConnections(value: CbCallback => Unit): Self = StObject.set(x, "getDBConnections", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLogs(value: CbCallback => Unit): Self = StObject.set(x, "getLogs", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStatistics(value: CbCallback => Unit): Self = StObject.set(x, "getStatistics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setURI(value: String): Self = this.set("URI", value.asInstanceOf[js.Any])
+    def setGetStatisticsHistory(value: CbCallback => Unit): Self = StObject.set(x, "getStatisticsHistory", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDBConnections(value: CbCallback => Unit): Self = this.set("getDBConnections", js.Any.fromFunction1(value))
+    def setSetQuery(value: Query => Unit): Self = StObject.set(x, "setQuery", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetLogs(value: CbCallback => Unit): Self = this.set("getLogs", js.Any.fromFunction1(value))
+    def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStatistics(value: CbCallback => Unit): Self = this.set("getStatistics", js.Any.fromFunction1(value))
+    def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStatisticsHistory(value: CbCallback => Unit): Self = this.set("getStatisticsHistory", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetQuery(value: Query => Unit): Self = this.set("setQuery", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSystemKey(value: String): Self = this.set("systemKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: APIUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MoneyData extends js.Object {
+trait MoneyData extends StObject {
   
   /**
     * An amount of money in the smallest sub-division of the currency, e.g. 12.60 EUR would be represented as 1260 whereas 12 JPY would be represented as just 12)
@@ -27,24 +28,12 @@ object MoneyData {
   }
   
   @scala.inline
-  implicit class MoneyDataOps[Self <: MoneyData] (val x: Self) extends AnyVal {
+  implicit class MoneyDataMutableBuilder[Self <: MoneyData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAmount(value: Double): Self = this.set("Amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrency(value: CurrencyISO): Self = this.set("Currency", value.asInstanceOf[js.Any])
+    def setCurrency(value: CurrencyISO): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
   }
 }

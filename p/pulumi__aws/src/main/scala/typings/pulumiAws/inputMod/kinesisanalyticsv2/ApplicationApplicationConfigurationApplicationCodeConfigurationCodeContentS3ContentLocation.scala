@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesisanalyticsv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation extends js.Object {
+trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation extends StObject {
   
   /**
     * The ARN for the S3 bucket containing the application code.
@@ -32,30 +33,18 @@ object ApplicationApplicationConfigurationApplicationCodeConfigurationCodeConten
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationOps[Self <: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationMutableBuilder[Self <: ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketArn(value: Input[String]): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileKey(value: Input[String]): Self = StObject.set(x, "fileKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectVersion(value: Input[String]): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketArn(value: Input[String]): Self = this.set("bucketArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileKey(value: Input[String]): Self = this.set("fileKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectVersion(value: Input[String]): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
+    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

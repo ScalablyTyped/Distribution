@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * document.
   */
 @js.native
-trait SchemaStructuralElement extends js.Object {
+trait SchemaStructuralElement extends StObject {
   
   /**
     * The zero-based end index of this structural element, exclusive, in UTF-16
@@ -52,54 +53,42 @@ object SchemaStructuralElement {
   }
   
   @scala.inline
-  implicit class SchemaStructuralElementOps[Self <: SchemaStructuralElement] (val x: Self) extends AnyVal {
+  implicit class SchemaStructuralElementMutableBuilder[Self <: SchemaStructuralElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParagraph(value: SchemaParagraph): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
     
     @scala.inline
-    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    def setSectionBreak(value: SchemaSectionBreak): Self = StObject.set(x, "sectionBreak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraph(value: SchemaParagraph): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    def setSectionBreakUndefined: Self = StObject.set(x, "sectionBreak", js.undefined)
     
     @scala.inline
-    def deleteParagraph: Self = this.set("paragraph", js.undefined)
+    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionBreak(value: SchemaSectionBreak): Self = this.set("sectionBreak", value.asInstanceOf[js.Any])
+    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     
     @scala.inline
-    def deleteSectionBreak: Self = this.set("sectionBreak", js.undefined)
+    def setTable(value: SchemaTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    def setTableOfContents(value: SchemaTableOfContents): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    def setTableOfContentsUndefined: Self = StObject.set(x, "tableOfContents", js.undefined)
     
     @scala.inline
-    def setTable(value: SchemaTable): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTable: Self = this.set("table", js.undefined)
-    
-    @scala.inline
-    def setTableOfContents(value: SchemaTableOfContents): Self = this.set("tableOfContents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableOfContents: Self = this.set("tableOfContents", js.undefined)
+    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

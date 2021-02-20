@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateSshScriptRequest extends js.Object {
+trait GenerateSshScriptRequest extends StObject {
   
   /** Required. Bastion VM Instance name to use or to create. */
   var vm: js.UndefOr[String] = js.native
@@ -28,42 +29,30 @@ object GenerateSshScriptRequest {
   }
   
   @scala.inline
-  implicit class GenerateSshScriptRequestOps[Self <: GenerateSshScriptRequest] (val x: Self) extends AnyVal {
+  implicit class GenerateSshScriptRequestMutableBuilder[Self <: GenerateSshScriptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVmCreationConfig(value: VmCreationConfig): Self = StObject.set(x, "vmCreationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVmCreationConfigUndefined: Self = StObject.set(x, "vmCreationConfig", js.undefined)
     
     @scala.inline
-    def setVm(value: String): Self = this.set("vm", value.asInstanceOf[js.Any])
+    def setVmPort(value: Double): Self = StObject.set(x, "vmPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVm: Self = this.set("vm", js.undefined)
+    def setVmPortUndefined: Self = StObject.set(x, "vmPort", js.undefined)
     
     @scala.inline
-    def setVmCreationConfig(value: VmCreationConfig): Self = this.set("vmCreationConfig", value.asInstanceOf[js.Any])
+    def setVmSelectionConfig(value: VmSelectionConfig): Self = StObject.set(x, "vmSelectionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVmCreationConfig: Self = this.set("vmCreationConfig", js.undefined)
+    def setVmSelectionConfigUndefined: Self = StObject.set(x, "vmSelectionConfig", js.undefined)
     
     @scala.inline
-    def setVmPort(value: Double): Self = this.set("vmPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmPort: Self = this.set("vmPort", js.undefined)
-    
-    @scala.inline
-    def setVmSelectionConfig(value: VmSelectionConfig): Self = this.set("vmSelectionConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmSelectionConfig: Self = this.set("vmSelectionConfig", js.undefined)
+    def setVmUndefined: Self = StObject.set(x, "vm", js.undefined)
   }
 }

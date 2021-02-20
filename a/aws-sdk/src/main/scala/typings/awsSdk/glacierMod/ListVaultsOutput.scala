@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListVaultsOutput extends js.Object {
+trait ListVaultsOutput extends StObject {
   
   /**
     * The vault ARN at which to continue pagination of the results. You use the marker in another List Vaults request to obtain more vaults in the list.
@@ -26,33 +27,21 @@ object ListVaultsOutput {
   }
   
   @scala.inline
-  implicit class ListVaultsOutputOps[Self <: ListVaultsOutput] (val x: Self) extends AnyVal {
+  implicit class ListVaultsOutputMutableBuilder[Self <: ListVaultsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVaultList(value: VaultList): Self = StObject.set(x, "VaultList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setVaultListUndefined: Self = StObject.set(x, "VaultList", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setVaultListVarargs(value: DescribeVaultOutput*): Self = this.set("VaultList", js.Array(value :_*))
-    
-    @scala.inline
-    def setVaultList(value: VaultList): Self = this.set("VaultList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVaultList: Self = this.set("VaultList", js.undefined)
+    def setVaultListVarargs(value: DescribeVaultOutput*): Self = StObject.set(x, "VaultList", js.Array(value :_*))
   }
 }

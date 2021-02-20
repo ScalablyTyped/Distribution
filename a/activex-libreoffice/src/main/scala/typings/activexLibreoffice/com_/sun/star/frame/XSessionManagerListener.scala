@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.frame
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,30 +61,18 @@ object XSessionManagerListener {
   }
   
   @scala.inline
-  implicit class XSessionManagerListenerOps[Self <: XSessionManagerListener] (val x: Self) extends AnyVal {
+  implicit class XSessionManagerListenerMutableBuilder[Self <: XSessionManagerListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproveInteraction(value: Boolean => Unit): Self = StObject.set(x, "approveInteraction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoRestore(value: () => Boolean): Self = StObject.set(x, "doRestore", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoSave(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "doSave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApproveInteraction(value: Boolean => Unit): Self = this.set("approveInteraction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDoRestore(value: () => Boolean): Self = this.set("doRestore", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDoSave(value: (Boolean, Boolean) => Unit): Self = this.set("doSave", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShutdownCanceled(value: () => Unit): Self = this.set("shutdownCanceled", js.Any.fromFunction0(value))
+    def setShutdownCanceled(value: () => Unit): Self = StObject.set(x, "shutdownCanceled", js.Any.fromFunction0(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBlockHeader extends js.Object {
+trait IBlockHeader extends StObject {
   
   /** BlockHeader batchIds */
   var batchIds: js.UndefOr[js.Array[String] | Null] = js.native
@@ -37,77 +38,65 @@ object IBlockHeader {
   }
   
   @scala.inline
-  implicit class IBlockHeaderOps[Self <: IBlockHeader] (val x: Self) extends AnyVal {
+  implicit class IBlockHeaderMutableBuilder[Self <: IBlockHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchIds(value: js.Array[String]): Self = StObject.set(x, "batchIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdsNull: Self = StObject.set(x, "batchIds", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchIdsUndefined: Self = StObject.set(x, "batchIds", js.undefined)
     
     @scala.inline
-    def setBatchIdsVarargs(value: String*): Self = this.set("batchIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setBatchIds(value: js.Array[String]): Self = this.set("batchIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchIds: Self = this.set("batchIds", js.undefined)
-    
-    @scala.inline
-    def setBatchIdsNull: Self = this.set("batchIds", null)
+    def setBatchIdsVarargs(value: String*): Self = StObject.set(x, "batchIds", js.Array(value :_*))
     
     @scala.inline
     def setBlockNum(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
-    ): Self = this.set("blockNum", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "blockNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlockNum: Self = this.set("blockNum", js.undefined)
+    def setBlockNumNull: Self = StObject.set(x, "blockNum", null)
     
     @scala.inline
-    def setBlockNumNull: Self = this.set("blockNum", null)
+    def setBlockNumUndefined: Self = StObject.set(x, "blockNum", js.undefined)
     
     @scala.inline
-    def setConsensus(value: Uint8Array): Self = this.set("consensus", value.asInstanceOf[js.Any])
+    def setConsensus(value: Uint8Array): Self = StObject.set(x, "consensus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConsensus: Self = this.set("consensus", js.undefined)
+    def setConsensusNull: Self = StObject.set(x, "consensus", null)
     
     @scala.inline
-    def setConsensusNull: Self = this.set("consensus", null)
+    def setConsensusUndefined: Self = StObject.set(x, "consensus", js.undefined)
     
     @scala.inline
-    def setPreviousBlockId(value: String): Self = this.set("previousBlockId", value.asInstanceOf[js.Any])
+    def setPreviousBlockId(value: String): Self = StObject.set(x, "previousBlockId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreviousBlockId: Self = this.set("previousBlockId", js.undefined)
+    def setPreviousBlockIdNull: Self = StObject.set(x, "previousBlockId", null)
     
     @scala.inline
-    def setPreviousBlockIdNull: Self = this.set("previousBlockId", null)
+    def setPreviousBlockIdUndefined: Self = StObject.set(x, "previousBlockId", js.undefined)
     
     @scala.inline
-    def setSignerPublicKey(value: String): Self = this.set("signerPublicKey", value.asInstanceOf[js.Any])
+    def setSignerPublicKey(value: String): Self = StObject.set(x, "signerPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignerPublicKey: Self = this.set("signerPublicKey", js.undefined)
+    def setSignerPublicKeyNull: Self = StObject.set(x, "signerPublicKey", null)
     
     @scala.inline
-    def setSignerPublicKeyNull: Self = this.set("signerPublicKey", null)
+    def setSignerPublicKeyUndefined: Self = StObject.set(x, "signerPublicKey", js.undefined)
     
     @scala.inline
-    def setStateRootHash(value: String): Self = this.set("stateRootHash", value.asInstanceOf[js.Any])
+    def setStateRootHash(value: String): Self = StObject.set(x, "stateRootHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStateRootHash: Self = this.set("stateRootHash", js.undefined)
+    def setStateRootHashNull: Self = StObject.set(x, "stateRootHash", null)
     
     @scala.inline
-    def setStateRootHashNull: Self = this.set("stateRootHash", null)
+    def setStateRootHashUndefined: Self = StObject.set(x, "stateRootHash", js.undefined)
   }
 }

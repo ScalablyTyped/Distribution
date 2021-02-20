@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyTopicEntry extends js.Object {
+trait PolicyTopicEntry extends StObject {
   
   /** Pieces of evidence associated with this policy topic entry. */
   var evidences: js.UndefOr[js.Array[PolicyTopicEvidence]] = js.native
@@ -28,39 +29,27 @@ object PolicyTopicEntry {
   }
   
   @scala.inline
-  implicit class PolicyTopicEntryOps[Self <: PolicyTopicEntry] (val x: Self) extends AnyVal {
+  implicit class PolicyTopicEntryMutableBuilder[Self <: PolicyTopicEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvidences(value: js.Array[PolicyTopicEvidence]): Self = StObject.set(x, "evidences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvidencesUndefined: Self = StObject.set(x, "evidences", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvidencesVarargs(value: PolicyTopicEvidence*): Self = StObject.set(x, "evidences", js.Array(value :_*))
     
     @scala.inline
-    def setEvidencesVarargs(value: PolicyTopicEvidence*): Self = this.set("evidences", js.Array(value :_*))
+    def setHelpCenterUrl(value: String): Self = StObject.set(x, "helpCenterUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvidences(value: js.Array[PolicyTopicEvidence]): Self = this.set("evidences", value.asInstanceOf[js.Any])
+    def setHelpCenterUrlUndefined: Self = StObject.set(x, "helpCenterUrl", js.undefined)
     
     @scala.inline
-    def deleteEvidences: Self = this.set("evidences", js.undefined)
+    def setPolicyTopic(value: String): Self = StObject.set(x, "policyTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpCenterUrl(value: String): Self = this.set("helpCenterUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHelpCenterUrl: Self = this.set("helpCenterUrl", js.undefined)
-    
-    @scala.inline
-    def setPolicyTopic(value: String): Self = this.set("policyTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyTopic: Self = this.set("policyTopic", js.undefined)
+    def setPolicyTopicUndefined: Self = StObject.set(x, "policyTopic", js.undefined)
   }
 }

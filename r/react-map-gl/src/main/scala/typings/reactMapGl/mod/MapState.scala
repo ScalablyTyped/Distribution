@@ -3,13 +3,14 @@ package typings.reactMapGl.mod
 import typings.reactMapGl.anon.DeltaScaleX
 import typings.reactMapGl.anon.PositionInputscalenumbers
 import typings.reactMapGl.anon.PositionInputstartPosnumb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-map-gl", "MapState")
 @js.native
-class MapState protected () extends js.Object {
+class MapState protected () extends StObject {
   def this(props: MapStateProps) = this()
   
   def getInteractiveState(): InteractiveState = js.native

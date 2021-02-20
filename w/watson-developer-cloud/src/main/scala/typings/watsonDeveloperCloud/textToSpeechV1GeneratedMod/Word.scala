@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Word. */
 @js.native
-trait Word extends js.Object {
+trait Word extends StObject {
   
   /** **Japanese only.** The part of speech for the word. The service uses the value to produce the correct intonation for the word. You can create only a single entry, with or without a single part of speech, for any word; you cannot create multiple entries with different parts of speech for the same word. For more information, see [Working with Japanese entries](https://cloud.ibm.com/docs/services/text-to-speech/custom-rules.html#jaNotes). */
   var part_of_speech: js.UndefOr[String] = js.native
@@ -26,30 +27,18 @@ object Word {
   }
   
   @scala.inline
-  implicit class WordOps[Self <: Word] (val x: Self) extends AnyVal {
+  implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslation(value: String): Self = this.set("translation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPart_of_speech(value: String): Self = this.set("part_of_speech", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePart_of_speech: Self = this.set("part_of_speech", js.undefined)
+    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

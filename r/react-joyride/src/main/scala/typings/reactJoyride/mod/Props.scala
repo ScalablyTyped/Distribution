@@ -1,5 +1,6 @@
 package typings.reactJoyride.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,72 +35,60 @@ object Props {
   }
   
   @scala.inline
-  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+  implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: /* data */ CallBackProps => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepsVarargs(value: Step*): Self = this.set("steps", js.Array(value :_*))
+    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
     @scala.inline
-    def setSteps(value: js.Array[Step]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: /* data */ CallBackProps => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setGetHelpers(value: /* helpers */ StoreHelpers => _): Self = StObject.set(x, "getHelpers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContinuous(value: Boolean): Self = this.set("continuous", value.asInstanceOf[js.Any])
+    def setGetHelpersUndefined: Self = StObject.set(x, "getHelpers", js.undefined)
     
     @scala.inline
-    def deleteContinuous: Self = this.set("continuous", js.undefined)
+    def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetHelpers(value: /* helpers */ StoreHelpers => _): Self = this.set("getHelpers", js.Any.fromFunction1(value))
+    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
     @scala.inline
-    def deleteGetHelpers: Self = this.set("getHelpers", js.undefined)
+    def setScrollToFirstStep(value: Boolean): Self = StObject.set(x, "scrollToFirstStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun(value: Boolean): Self = this.set("run", value.asInstanceOf[js.Any])
+    def setScrollToFirstStepUndefined: Self = StObject.set(x, "scrollToFirstStep", js.undefined)
     
     @scala.inline
-    def deleteRun: Self = this.set("run", js.undefined)
+    def setStepIndex(value: Double): Self = StObject.set(x, "stepIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollOffset(value: Double): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
+    def setStepIndexUndefined: Self = StObject.set(x, "stepIndex", js.undefined)
     
     @scala.inline
-    def deleteScrollOffset: Self = this.set("scrollOffset", js.undefined)
+    def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollToFirstStep(value: Boolean): Self = this.set("scrollToFirstStep", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollToFirstStep: Self = this.set("scrollToFirstStep", js.undefined)
-    
-    @scala.inline
-    def setStepIndex(value: Double): Self = this.set("stepIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepIndex: Self = this.set("stepIndex", js.undefined)
+    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

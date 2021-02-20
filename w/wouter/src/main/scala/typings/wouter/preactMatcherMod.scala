@@ -6,15 +6,18 @@ import typings.wouter.anon.Name
 import typings.wouter.useLocationMod.Path
 import typings.wouter.wouterBooleans.`false`
 import typings.wouter.wouterBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wouter/preact/matcher", JSImport.Namespace)
-@js.native
-object preactMatcherMod extends js.Object {
+object preactMatcherMod {
   
+  @JSImport("wouter/preact/matcher", JSImport.Default)
+  @js.native
   def default(): MatcherFn = js.native
+  @JSImport("wouter/preact/matcher", JSImport.Default)
+  @js.native
   def default(makeRegexpFn: js.Function2[/* pattern */ String, /* keys */ js.UndefOr[js.Array[Name]], RegExp]): MatcherFn = js.native
   
   type DefaultParams = StringDictionary[String]

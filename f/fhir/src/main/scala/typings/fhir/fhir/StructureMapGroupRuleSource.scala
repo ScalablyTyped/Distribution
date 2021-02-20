@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -379,447 +380,435 @@ object StructureMapGroupRuleSource {
   }
   
   @scala.inline
-  implicit class StructureMapGroupRuleSourceOps[Self <: StructureMapGroupRuleSource] (val x: Self) extends AnyVal {
+  implicit class StructureMapGroupRuleSourceMutableBuilder[Self <: StructureMapGroupRuleSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: id): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def set_check(value: Element): Self = this.set("_check", value.asInstanceOf[js.Any])
+    def setContext(value: id): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_check: Self = this.set("_check", js.undefined)
+    def setDefaultValueAddress(value: Address): Self = StObject.set(x, "defaultValueAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_condition(value: Element): Self = this.set("_condition", value.asInstanceOf[js.Any])
+    def setDefaultValueAddressUndefined: Self = StObject.set(x, "defaultValueAddress", js.undefined)
     
     @scala.inline
-    def delete_condition: Self = this.set("_condition", js.undefined)
+    def setDefaultValueAge(value: Age): Self = StObject.set(x, "defaultValueAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_context(value: Element): Self = this.set("_context", value.asInstanceOf[js.Any])
+    def setDefaultValueAgeUndefined: Self = StObject.set(x, "defaultValueAge", js.undefined)
     
     @scala.inline
-    def delete_context: Self = this.set("_context", js.undefined)
+    def setDefaultValueAnnotation(value: Annotation): Self = StObject.set(x, "defaultValueAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueBase64Binary(value: Element): Self = this.set("_defaultValueBase64Binary", value.asInstanceOf[js.Any])
+    def setDefaultValueAnnotationUndefined: Self = StObject.set(x, "defaultValueAnnotation", js.undefined)
     
     @scala.inline
-    def delete_defaultValueBase64Binary: Self = this.set("_defaultValueBase64Binary", js.undefined)
+    def setDefaultValueAttachment(value: Attachment): Self = StObject.set(x, "defaultValueAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueBoolean(value: Element): Self = this.set("_defaultValueBoolean", value.asInstanceOf[js.Any])
+    def setDefaultValueAttachmentUndefined: Self = StObject.set(x, "defaultValueAttachment", js.undefined)
     
     @scala.inline
-    def delete_defaultValueBoolean: Self = this.set("_defaultValueBoolean", js.undefined)
+    def setDefaultValueBase64Binary(value: base64Binary): Self = StObject.set(x, "defaultValueBase64Binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueCode(value: Element): Self = this.set("_defaultValueCode", value.asInstanceOf[js.Any])
+    def setDefaultValueBase64BinaryUndefined: Self = StObject.set(x, "defaultValueBase64Binary", js.undefined)
     
     @scala.inline
-    def delete_defaultValueCode: Self = this.set("_defaultValueCode", js.undefined)
+    def setDefaultValueBoolean(value: Boolean): Self = StObject.set(x, "defaultValueBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueDate(value: Element): Self = this.set("_defaultValueDate", value.asInstanceOf[js.Any])
+    def setDefaultValueBooleanUndefined: Self = StObject.set(x, "defaultValueBoolean", js.undefined)
     
     @scala.inline
-    def delete_defaultValueDate: Self = this.set("_defaultValueDate", js.undefined)
+    def setDefaultValueCode(value: code): Self = StObject.set(x, "defaultValueCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueDateTime(value: Element): Self = this.set("_defaultValueDateTime", value.asInstanceOf[js.Any])
+    def setDefaultValueCodeUndefined: Self = StObject.set(x, "defaultValueCode", js.undefined)
     
     @scala.inline
-    def delete_defaultValueDateTime: Self = this.set("_defaultValueDateTime", js.undefined)
+    def setDefaultValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "defaultValueCodeableConcept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueDecimal(value: Element): Self = this.set("_defaultValueDecimal", value.asInstanceOf[js.Any])
+    def setDefaultValueCodeableConceptUndefined: Self = StObject.set(x, "defaultValueCodeableConcept", js.undefined)
     
     @scala.inline
-    def delete_defaultValueDecimal: Self = this.set("_defaultValueDecimal", js.undefined)
+    def setDefaultValueCoding(value: Coding): Self = StObject.set(x, "defaultValueCoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueId(value: Element): Self = this.set("_defaultValueId", value.asInstanceOf[js.Any])
+    def setDefaultValueCodingUndefined: Self = StObject.set(x, "defaultValueCoding", js.undefined)
     
     @scala.inline
-    def delete_defaultValueId: Self = this.set("_defaultValueId", js.undefined)
+    def setDefaultValueContactPoint(value: ContactPoint): Self = StObject.set(x, "defaultValueContactPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueInstant(value: Element): Self = this.set("_defaultValueInstant", value.asInstanceOf[js.Any])
+    def setDefaultValueContactPointUndefined: Self = StObject.set(x, "defaultValueContactPoint", js.undefined)
     
     @scala.inline
-    def delete_defaultValueInstant: Self = this.set("_defaultValueInstant", js.undefined)
+    def setDefaultValueCount(value: Count): Self = StObject.set(x, "defaultValueCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueInteger(value: Element): Self = this.set("_defaultValueInteger", value.asInstanceOf[js.Any])
+    def setDefaultValueCountUndefined: Self = StObject.set(x, "defaultValueCount", js.undefined)
     
     @scala.inline
-    def delete_defaultValueInteger: Self = this.set("_defaultValueInteger", js.undefined)
+    def setDefaultValueDate(value: date): Self = StObject.set(x, "defaultValueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueMarkdown(value: Element): Self = this.set("_defaultValueMarkdown", value.asInstanceOf[js.Any])
+    def setDefaultValueDateTime(value: dateTime): Self = StObject.set(x, "defaultValueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_defaultValueMarkdown: Self = this.set("_defaultValueMarkdown", js.undefined)
+    def setDefaultValueDateTimeUndefined: Self = StObject.set(x, "defaultValueDateTime", js.undefined)
     
     @scala.inline
-    def set_defaultValueOid(value: Element): Self = this.set("_defaultValueOid", value.asInstanceOf[js.Any])
+    def setDefaultValueDateUndefined: Self = StObject.set(x, "defaultValueDate", js.undefined)
     
     @scala.inline
-    def delete_defaultValueOid: Self = this.set("_defaultValueOid", js.undefined)
+    def setDefaultValueDecimal(value: decimal): Self = StObject.set(x, "defaultValueDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValuePositiveInt(value: Element): Self = this.set("_defaultValuePositiveInt", value.asInstanceOf[js.Any])
+    def setDefaultValueDecimalUndefined: Self = StObject.set(x, "defaultValueDecimal", js.undefined)
     
     @scala.inline
-    def delete_defaultValuePositiveInt: Self = this.set("_defaultValuePositiveInt", js.undefined)
+    def setDefaultValueDistance(value: Distance): Self = StObject.set(x, "defaultValueDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueString(value: Element): Self = this.set("_defaultValueString", value.asInstanceOf[js.Any])
+    def setDefaultValueDistanceUndefined: Self = StObject.set(x, "defaultValueDistance", js.undefined)
     
     @scala.inline
-    def delete_defaultValueString: Self = this.set("_defaultValueString", js.undefined)
+    def setDefaultValueDuration(value: Duration): Self = StObject.set(x, "defaultValueDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueTime(value: Element): Self = this.set("_defaultValueTime", value.asInstanceOf[js.Any])
+    def setDefaultValueDurationUndefined: Self = StObject.set(x, "defaultValueDuration", js.undefined)
     
     @scala.inline
-    def delete_defaultValueTime: Self = this.set("_defaultValueTime", js.undefined)
+    def setDefaultValueHumanName(value: HumanName): Self = StObject.set(x, "defaultValueHumanName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueUnsignedInt(value: Element): Self = this.set("_defaultValueUnsignedInt", value.asInstanceOf[js.Any])
+    def setDefaultValueHumanNameUndefined: Self = StObject.set(x, "defaultValueHumanName", js.undefined)
     
     @scala.inline
-    def delete_defaultValueUnsignedInt: Self = this.set("_defaultValueUnsignedInt", js.undefined)
+    def setDefaultValueId(value: id): Self = StObject.set(x, "defaultValueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_defaultValueUri(value: Element): Self = this.set("_defaultValueUri", value.asInstanceOf[js.Any])
+    def setDefaultValueIdUndefined: Self = StObject.set(x, "defaultValueId", js.undefined)
     
     @scala.inline
-    def delete_defaultValueUri: Self = this.set("_defaultValueUri", js.undefined)
+    def setDefaultValueIdentifier(value: Identifier): Self = StObject.set(x, "defaultValueIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_element(value: Element): Self = this.set("_element", value.asInstanceOf[js.Any])
+    def setDefaultValueIdentifierUndefined: Self = StObject.set(x, "defaultValueIdentifier", js.undefined)
     
     @scala.inline
-    def delete_element: Self = this.set("_element", js.undefined)
+    def setDefaultValueInstant(value: instant): Self = StObject.set(x, "defaultValueInstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_listMode(value: Element): Self = this.set("_listMode", value.asInstanceOf[js.Any])
+    def setDefaultValueInstantUndefined: Self = StObject.set(x, "defaultValueInstant", js.undefined)
     
     @scala.inline
-    def delete_listMode: Self = this.set("_listMode", js.undefined)
+    def setDefaultValueInteger(value: integer): Self = StObject.set(x, "defaultValueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_max(value: Element): Self = this.set("_max", value.asInstanceOf[js.Any])
+    def setDefaultValueIntegerUndefined: Self = StObject.set(x, "defaultValueInteger", js.undefined)
     
     @scala.inline
-    def delete_max: Self = this.set("_max", js.undefined)
+    def setDefaultValueMarkdown(value: markdown): Self = StObject.set(x, "defaultValueMarkdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_min(value: Element): Self = this.set("_min", value.asInstanceOf[js.Any])
+    def setDefaultValueMarkdownUndefined: Self = StObject.set(x, "defaultValueMarkdown", js.undefined)
     
     @scala.inline
-    def delete_min: Self = this.set("_min", js.undefined)
+    def setDefaultValueMeta(value: Meta): Self = StObject.set(x, "defaultValueMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setDefaultValueMetaUndefined: Self = StObject.set(x, "defaultValueMeta", js.undefined)
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setDefaultValueMoney(value: Money): Self = StObject.set(x, "defaultValueMoney", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_variable(value: Element): Self = this.set("_variable", value.asInstanceOf[js.Any])
+    def setDefaultValueMoneyUndefined: Self = StObject.set(x, "defaultValueMoney", js.undefined)
     
     @scala.inline
-    def delete_variable: Self = this.set("_variable", js.undefined)
+    def setDefaultValueOid(value: oid): Self = StObject.set(x, "defaultValueOid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck(value: String): Self = this.set("check", value.asInstanceOf[js.Any])
+    def setDefaultValueOidUndefined: Self = StObject.set(x, "defaultValueOid", js.undefined)
     
     @scala.inline
-    def deleteCheck: Self = this.set("check", js.undefined)
+    def setDefaultValuePeriod(value: Period): Self = StObject.set(x, "defaultValuePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setDefaultValuePeriodUndefined: Self = StObject.set(x, "defaultValuePeriod", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setDefaultValuePositiveInt(value: positiveInt): Self = StObject.set(x, "defaultValuePositiveInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueAddress(value: Address): Self = this.set("defaultValueAddress", value.asInstanceOf[js.Any])
+    def setDefaultValuePositiveIntUndefined: Self = StObject.set(x, "defaultValuePositiveInt", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueAddress: Self = this.set("defaultValueAddress", js.undefined)
+    def setDefaultValueQuantity(value: Quantity): Self = StObject.set(x, "defaultValueQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueAge(value: Age): Self = this.set("defaultValueAge", value.asInstanceOf[js.Any])
+    def setDefaultValueQuantityUndefined: Self = StObject.set(x, "defaultValueQuantity", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueAge: Self = this.set("defaultValueAge", js.undefined)
+    def setDefaultValueRange(value: Range): Self = StObject.set(x, "defaultValueRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueAnnotation(value: Annotation): Self = this.set("defaultValueAnnotation", value.asInstanceOf[js.Any])
+    def setDefaultValueRangeUndefined: Self = StObject.set(x, "defaultValueRange", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueAnnotation: Self = this.set("defaultValueAnnotation", js.undefined)
+    def setDefaultValueRatio(value: Ratio): Self = StObject.set(x, "defaultValueRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueAttachment(value: Attachment): Self = this.set("defaultValueAttachment", value.asInstanceOf[js.Any])
+    def setDefaultValueRatioUndefined: Self = StObject.set(x, "defaultValueRatio", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueAttachment: Self = this.set("defaultValueAttachment", js.undefined)
+    def setDefaultValueReference(value: Reference): Self = StObject.set(x, "defaultValueReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueBase64Binary(value: base64Binary): Self = this.set("defaultValueBase64Binary", value.asInstanceOf[js.Any])
+    def setDefaultValueReferenceUndefined: Self = StObject.set(x, "defaultValueReference", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueBase64Binary: Self = this.set("defaultValueBase64Binary", js.undefined)
+    def setDefaultValueSampledData(value: SampledData): Self = StObject.set(x, "defaultValueSampledData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueBoolean(value: Boolean): Self = this.set("defaultValueBoolean", value.asInstanceOf[js.Any])
+    def setDefaultValueSampledDataUndefined: Self = StObject.set(x, "defaultValueSampledData", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueBoolean: Self = this.set("defaultValueBoolean", js.undefined)
+    def setDefaultValueSignature(value: Signature): Self = StObject.set(x, "defaultValueSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueCode(value: code): Self = this.set("defaultValueCode", value.asInstanceOf[js.Any])
+    def setDefaultValueSignatureUndefined: Self = StObject.set(x, "defaultValueSignature", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueCode: Self = this.set("defaultValueCode", js.undefined)
+    def setDefaultValueString(value: String): Self = StObject.set(x, "defaultValueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueCodeableConcept(value: CodeableConcept): Self = this.set("defaultValueCodeableConcept", value.asInstanceOf[js.Any])
+    def setDefaultValueStringUndefined: Self = StObject.set(x, "defaultValueString", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueCodeableConcept: Self = this.set("defaultValueCodeableConcept", js.undefined)
+    def setDefaultValueTime(value: time): Self = StObject.set(x, "defaultValueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueCoding(value: Coding): Self = this.set("defaultValueCoding", value.asInstanceOf[js.Any])
+    def setDefaultValueTimeUndefined: Self = StObject.set(x, "defaultValueTime", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueCoding: Self = this.set("defaultValueCoding", js.undefined)
+    def setDefaultValueTiming(value: Timing): Self = StObject.set(x, "defaultValueTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueContactPoint(value: ContactPoint): Self = this.set("defaultValueContactPoint", value.asInstanceOf[js.Any])
+    def setDefaultValueTimingUndefined: Self = StObject.set(x, "defaultValueTiming", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueContactPoint: Self = this.set("defaultValueContactPoint", js.undefined)
+    def setDefaultValueUnsignedInt(value: unsignedInt): Self = StObject.set(x, "defaultValueUnsignedInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueCount(value: Count): Self = this.set("defaultValueCount", value.asInstanceOf[js.Any])
+    def setDefaultValueUnsignedIntUndefined: Self = StObject.set(x, "defaultValueUnsignedInt", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueCount: Self = this.set("defaultValueCount", js.undefined)
+    def setDefaultValueUri(value: uri): Self = StObject.set(x, "defaultValueUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueDate(value: date): Self = this.set("defaultValueDate", value.asInstanceOf[js.Any])
+    def setDefaultValueUriUndefined: Self = StObject.set(x, "defaultValueUri", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueDate: Self = this.set("defaultValueDate", js.undefined)
+    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueDateTime(value: dateTime): Self = this.set("defaultValueDateTime", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueDateTime: Self = this.set("defaultValueDateTime", js.undefined)
+    def setListMode(value: code): Self = StObject.set(x, "listMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueDecimal(value: decimal): Self = this.set("defaultValueDecimal", value.asInstanceOf[js.Any])
+    def setListModeUndefined: Self = StObject.set(x, "listMode", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueDecimal: Self = this.set("defaultValueDecimal", js.undefined)
+    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueDistance(value: Distance): Self = this.set("defaultValueDistance", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueDistance: Self = this.set("defaultValueDistance", js.undefined)
+    def setMin(value: integer): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueDuration(value: Duration): Self = this.set("defaultValueDuration", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueDuration: Self = this.set("defaultValueDuration", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueHumanName(value: HumanName): Self = this.set("defaultValueHumanName", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueHumanName: Self = this.set("defaultValueHumanName", js.undefined)
+    def setVariable(value: id): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueId(value: id): Self = this.set("defaultValueId", value.asInstanceOf[js.Any])
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueId: Self = this.set("defaultValueId", js.undefined)
+    def set_check(value: Element): Self = StObject.set(x, "_check", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueIdentifier(value: Identifier): Self = this.set("defaultValueIdentifier", value.asInstanceOf[js.Any])
+    def set_checkUndefined: Self = StObject.set(x, "_check", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueIdentifier: Self = this.set("defaultValueIdentifier", js.undefined)
+    def set_condition(value: Element): Self = StObject.set(x, "_condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueInstant(value: instant): Self = this.set("defaultValueInstant", value.asInstanceOf[js.Any])
+    def set_conditionUndefined: Self = StObject.set(x, "_condition", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueInstant: Self = this.set("defaultValueInstant", js.undefined)
+    def set_context(value: Element): Self = StObject.set(x, "_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueInteger(value: integer): Self = this.set("defaultValueInteger", value.asInstanceOf[js.Any])
+    def set_contextUndefined: Self = StObject.set(x, "_context", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueInteger: Self = this.set("defaultValueInteger", js.undefined)
+    def set_defaultValueBase64Binary(value: Element): Self = StObject.set(x, "_defaultValueBase64Binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueMarkdown(value: markdown): Self = this.set("defaultValueMarkdown", value.asInstanceOf[js.Any])
+    def set_defaultValueBase64BinaryUndefined: Self = StObject.set(x, "_defaultValueBase64Binary", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueMarkdown: Self = this.set("defaultValueMarkdown", js.undefined)
+    def set_defaultValueBoolean(value: Element): Self = StObject.set(x, "_defaultValueBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueMeta(value: Meta): Self = this.set("defaultValueMeta", value.asInstanceOf[js.Any])
+    def set_defaultValueBooleanUndefined: Self = StObject.set(x, "_defaultValueBoolean", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueMeta: Self = this.set("defaultValueMeta", js.undefined)
+    def set_defaultValueCode(value: Element): Self = StObject.set(x, "_defaultValueCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueMoney(value: Money): Self = this.set("defaultValueMoney", value.asInstanceOf[js.Any])
+    def set_defaultValueCodeUndefined: Self = StObject.set(x, "_defaultValueCode", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueMoney: Self = this.set("defaultValueMoney", js.undefined)
+    def set_defaultValueDate(value: Element): Self = StObject.set(x, "_defaultValueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueOid(value: oid): Self = this.set("defaultValueOid", value.asInstanceOf[js.Any])
+    def set_defaultValueDateTime(value: Element): Self = StObject.set(x, "_defaultValueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultValueOid: Self = this.set("defaultValueOid", js.undefined)
+    def set_defaultValueDateTimeUndefined: Self = StObject.set(x, "_defaultValueDateTime", js.undefined)
     
     @scala.inline
-    def setDefaultValuePeriod(value: Period): Self = this.set("defaultValuePeriod", value.asInstanceOf[js.Any])
+    def set_defaultValueDateUndefined: Self = StObject.set(x, "_defaultValueDate", js.undefined)
     
     @scala.inline
-    def deleteDefaultValuePeriod: Self = this.set("defaultValuePeriod", js.undefined)
+    def set_defaultValueDecimal(value: Element): Self = StObject.set(x, "_defaultValueDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValuePositiveInt(value: positiveInt): Self = this.set("defaultValuePositiveInt", value.asInstanceOf[js.Any])
+    def set_defaultValueDecimalUndefined: Self = StObject.set(x, "_defaultValueDecimal", js.undefined)
     
     @scala.inline
-    def deleteDefaultValuePositiveInt: Self = this.set("defaultValuePositiveInt", js.undefined)
+    def set_defaultValueId(value: Element): Self = StObject.set(x, "_defaultValueId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueQuantity(value: Quantity): Self = this.set("defaultValueQuantity", value.asInstanceOf[js.Any])
+    def set_defaultValueIdUndefined: Self = StObject.set(x, "_defaultValueId", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueQuantity: Self = this.set("defaultValueQuantity", js.undefined)
+    def set_defaultValueInstant(value: Element): Self = StObject.set(x, "_defaultValueInstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueRange(value: Range): Self = this.set("defaultValueRange", value.asInstanceOf[js.Any])
+    def set_defaultValueInstantUndefined: Self = StObject.set(x, "_defaultValueInstant", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueRange: Self = this.set("defaultValueRange", js.undefined)
+    def set_defaultValueInteger(value: Element): Self = StObject.set(x, "_defaultValueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueRatio(value: Ratio): Self = this.set("defaultValueRatio", value.asInstanceOf[js.Any])
+    def set_defaultValueIntegerUndefined: Self = StObject.set(x, "_defaultValueInteger", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueRatio: Self = this.set("defaultValueRatio", js.undefined)
+    def set_defaultValueMarkdown(value: Element): Self = StObject.set(x, "_defaultValueMarkdown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueReference(value: Reference): Self = this.set("defaultValueReference", value.asInstanceOf[js.Any])
+    def set_defaultValueMarkdownUndefined: Self = StObject.set(x, "_defaultValueMarkdown", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueReference: Self = this.set("defaultValueReference", js.undefined)
+    def set_defaultValueOid(value: Element): Self = StObject.set(x, "_defaultValueOid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueSampledData(value: SampledData): Self = this.set("defaultValueSampledData", value.asInstanceOf[js.Any])
+    def set_defaultValueOidUndefined: Self = StObject.set(x, "_defaultValueOid", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueSampledData: Self = this.set("defaultValueSampledData", js.undefined)
+    def set_defaultValuePositiveInt(value: Element): Self = StObject.set(x, "_defaultValuePositiveInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueSignature(value: Signature): Self = this.set("defaultValueSignature", value.asInstanceOf[js.Any])
+    def set_defaultValuePositiveIntUndefined: Self = StObject.set(x, "_defaultValuePositiveInt", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueSignature: Self = this.set("defaultValueSignature", js.undefined)
+    def set_defaultValueString(value: Element): Self = StObject.set(x, "_defaultValueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueString(value: String): Self = this.set("defaultValueString", value.asInstanceOf[js.Any])
+    def set_defaultValueStringUndefined: Self = StObject.set(x, "_defaultValueString", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueString: Self = this.set("defaultValueString", js.undefined)
+    def set_defaultValueTime(value: Element): Self = StObject.set(x, "_defaultValueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueTime(value: time): Self = this.set("defaultValueTime", value.asInstanceOf[js.Any])
+    def set_defaultValueTimeUndefined: Self = StObject.set(x, "_defaultValueTime", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueTime: Self = this.set("defaultValueTime", js.undefined)
+    def set_defaultValueUnsignedInt(value: Element): Self = StObject.set(x, "_defaultValueUnsignedInt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueTiming(value: Timing): Self = this.set("defaultValueTiming", value.asInstanceOf[js.Any])
+    def set_defaultValueUnsignedIntUndefined: Self = StObject.set(x, "_defaultValueUnsignedInt", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueTiming: Self = this.set("defaultValueTiming", js.undefined)
+    def set_defaultValueUri(value: Element): Self = StObject.set(x, "_defaultValueUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueUnsignedInt(value: unsignedInt): Self = this.set("defaultValueUnsignedInt", value.asInstanceOf[js.Any])
+    def set_defaultValueUriUndefined: Self = StObject.set(x, "_defaultValueUri", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueUnsignedInt: Self = this.set("defaultValueUnsignedInt", js.undefined)
+    def set_element(value: Element): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValueUri(value: uri): Self = this.set("defaultValueUri", value.asInstanceOf[js.Any])
+    def set_elementUndefined: Self = StObject.set(x, "_element", js.undefined)
     
     @scala.inline
-    def deleteDefaultValueUri: Self = this.set("defaultValueUri", js.undefined)
+    def set_listMode(value: Element): Self = StObject.set(x, "_listMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: String): Self = this.set("element", value.asInstanceOf[js.Any])
+    def set_listModeUndefined: Self = StObject.set(x, "_listMode", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListMode(value: code): Self = this.set("listMode", value.asInstanceOf[js.Any])
+    def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
     
     @scala.inline
-    def deleteListMode: Self = this.set("listMode", js.undefined)
+    def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: String): Self = this.set("max", value.asInstanceOf[js.Any])
+    def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: integer): Self = this.set("min", value.asInstanceOf[js.Any])
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def set_variable(value: Element): Self = StObject.set(x, "_variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVariable(value: id): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def set_variableUndefined: Self = StObject.set(x, "_variable", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.googleapis.storageV1Mod.storageV1
 
 import typings.googleapis.anon.Generation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A Compose request.
   */
 @js.native
-trait SchemaComposeRequest extends js.Object {
+trait SchemaComposeRequest extends StObject {
   
   /**
     * Properties of the resulting object.
@@ -36,39 +37,27 @@ object SchemaComposeRequest {
   }
   
   @scala.inline
-  implicit class SchemaComposeRequestOps[Self <: SchemaComposeRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaComposeRequestMutableBuilder[Self <: SchemaComposeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: SchemaObject): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: SchemaObject): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setSourceObjects(value: js.Array[Generation]): Self = StObject.set(x, "sourceObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setSourceObjectsVarargs(value: Generation*): Self = this.set("sourceObjects", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceObjects(value: js.Array[Generation]): Self = this.set("sourceObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceObjects: Self = this.set("sourceObjects", js.undefined)
+    def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
   }
 }

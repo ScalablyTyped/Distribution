@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAggregateDiscoveredResourcesResponse extends js.Object {
+trait ListAggregateDiscoveredResourcesResponse extends StObject {
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
@@ -26,33 +27,21 @@ object ListAggregateDiscoveredResourcesResponse {
   }
   
   @scala.inline
-  implicit class ListAggregateDiscoveredResourcesResponseOps[Self <: ListAggregateDiscoveredResourcesResponse] (val x: Self) extends AnyVal {
+  implicit class ListAggregateDiscoveredResourcesResponseMutableBuilder[Self <: ListAggregateDiscoveredResourcesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceIdentifiers(value: DiscoveredResourceIdentifierList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = this.set("ResourceIdentifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceIdentifiers(value: DiscoveredResourceIdentifierList): Self = this.set("ResourceIdentifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceIdentifiers: Self = this.set("ResourceIdentifiers", js.undefined)
+    def setResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
   }
 }

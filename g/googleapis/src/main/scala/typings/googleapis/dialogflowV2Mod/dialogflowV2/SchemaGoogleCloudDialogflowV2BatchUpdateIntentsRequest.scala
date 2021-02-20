@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request message for Intents.BatchUpdateIntents.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest extends js.Object {
+trait SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest extends StObject {
   
   /**
     * The collection of intents to update or create.
@@ -51,48 +52,36 @@ object SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequestOps[Self <: SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequestMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2BatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntentBatchInline(value: SchemaGoogleCloudDialogflowV2IntentBatch): Self = StObject.set(x, "intentBatchInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntentBatchInlineUndefined: Self = StObject.set(x, "intentBatchInline", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntentBatchUri(value: String): Self = StObject.set(x, "intentBatchUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentBatchInline(value: SchemaGoogleCloudDialogflowV2IntentBatch): Self = this.set("intentBatchInline", value.asInstanceOf[js.Any])
+    def setIntentBatchUriUndefined: Self = StObject.set(x, "intentBatchUri", js.undefined)
     
     @scala.inline
-    def deleteIntentBatchInline: Self = this.set("intentBatchInline", js.undefined)
+    def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentBatchUri(value: String): Self = this.set("intentBatchUri", value.asInstanceOf[js.Any])
+    def setIntentViewUndefined: Self = StObject.set(x, "intentView", js.undefined)
     
     @scala.inline
-    def deleteIntentBatchUri: Self = this.set("intentBatchUri", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntentView(value: String): Self = this.set("intentView", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteIntentView: Self = this.set("intentView", js.undefined)
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashActionsPanel extends js.Object {
+trait FlashActionsPanel extends StObject {
   
   def getClassForObject(): js.Any = js.native
   
@@ -44,45 +45,33 @@ object FlashActionsPanel {
   }
   
   @scala.inline
-  implicit class FlashActionsPanelOps[Self <: FlashActionsPanel] (val x: Self) extends AnyVal {
+  implicit class FlashActionsPanelMutableBuilder[Self <: FlashActionsPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClassForObject(value: () => js.Any): Self = StObject.set(x, "getClassForObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetScriptAssistMode(value: () => js.Any): Self = StObject.set(x, "getScriptAssistMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSelectedText(value: () => js.Any): Self = StObject.set(x, "getSelectedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClassForObject(value: () => js.Any): Self = this.set("getClassForObject", js.Any.fromFunction0(value))
+    def setGetText(value: () => js.Any): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScriptAssistMode(value: () => js.Any): Self = this.set("getScriptAssistMode", js.Any.fromFunction0(value))
+    def setHasSelection(value: () => js.Any): Self = StObject.set(x, "hasSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSelectedText(value: () => js.Any): Self = this.set("getSelectedText", js.Any.fromFunction0(value))
+    def setReplaceSelectedText(value: () => js.Any): Self = StObject.set(x, "replaceSelectedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetText(value: () => js.Any): Self = this.set("getText", js.Any.fromFunction0(value))
+    def setSetScriptAssistMode(value: () => js.Any): Self = StObject.set(x, "setScriptAssistMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasSelection(value: () => js.Any): Self = this.set("hasSelection", js.Any.fromFunction0(value))
+    def setSetSelection(value: () => js.Any): Self = StObject.set(x, "setSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReplaceSelectedText(value: () => js.Any): Self = this.set("replaceSelectedText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetScriptAssistMode(value: () => js.Any): Self = this.set("setScriptAssistMode", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetSelection(value: () => js.Any): Self = this.set("setSelection", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetText(value: () => js.Any): Self = this.set("setText", js.Any.fromFunction0(value))
+    def setSetText(value: () => js.Any): Self = StObject.set(x, "setText", js.Any.fromFunction0(value))
   }
 }

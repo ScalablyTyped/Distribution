@@ -1,11 +1,12 @@
 package typings.agGrid.iExcelCreatorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcelCell extends js.Object {
+trait ExcelCell extends StObject {
   
   var data: ExcelData = js.native
   
@@ -22,30 +23,18 @@ object ExcelCell {
   }
   
   @scala.inline
-  implicit class ExcelCellOps[Self <: ExcelCell] (val x: Self) extends AnyVal {
+  implicit class ExcelCellMutableBuilder[Self <: ExcelCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: ExcelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMergeAcross(value: Double): Self = StObject.set(x, "mergeAcross", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMergeAcrossUndefined: Self = StObject.set(x, "mergeAcross", js.undefined)
     
     @scala.inline
-    def setData(value: ExcelData): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleId(value: String): Self = this.set("styleId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMergeAcross(value: Double): Self = this.set("mergeAcross", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMergeAcross: Self = this.set("mergeAcross", js.undefined)
+    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

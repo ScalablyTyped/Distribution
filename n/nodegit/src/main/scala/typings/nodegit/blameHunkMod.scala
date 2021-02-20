@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.signatureMod.Signature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/blame-hunk", JSImport.Namespace)
-@js.native
-object blameHunkMod extends js.Object {
+object blameHunkMod {
   
+  @JSImport("nodegit/blame-hunk", "BlameHunk")
   @js.native
-  class BlameHunk () extends js.Object {
+  class BlameHunk () extends StObject {
     
     def finalCommitId(): Oid = js.native
     

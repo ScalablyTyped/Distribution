@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2DevicesAndroidApp extends js.Object {
+trait GoogleActionsV2DevicesAndroidApp extends StObject {
   
   /**
     * Package name
@@ -27,33 +28,21 @@ object GoogleActionsV2DevicesAndroidApp {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2DevicesAndroidAppOps[Self <: GoogleActionsV2DevicesAndroidApp] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2DevicesAndroidAppMutableBuilder[Self <: GoogleActionsV2DevicesAndroidApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersions(value: js.Array[GoogleActionsV2DevicesAndroidAppVersionFilter]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: GoogleActionsV2DevicesAndroidAppVersionFilter*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[GoogleActionsV2DevicesAndroidAppVersionFilter]): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setVersionsVarargs(value: GoogleActionsV2DevicesAndroidAppVersionFilter*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

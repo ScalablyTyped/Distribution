@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 import typings.winrtUwp.Windows.Devices.Sensors.ActivityType
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that is activated when the ActivitySensor receives input. This is used when your application needs to respond to the activity sensor. */
 @js.native
-trait ActivitySensorTrigger extends js.Object {
+trait ActivitySensorTrigger extends StObject {
   
   /** Gets the minimum supported report interval for the sensor trigger. */
   var minimumReportInterval: Double = js.native
@@ -37,30 +38,18 @@ object ActivitySensorTrigger {
   }
   
   @scala.inline
-  implicit class ActivitySensorTriggerOps[Self <: ActivitySensorTrigger] (val x: Self) extends AnyVal {
+  implicit class ActivitySensorTriggerMutableBuilder[Self <: ActivitySensorTrigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportInterval(value: Double): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscribedActivities(value: IVector[ActivityType]): Self = StObject.set(x, "subscribedActivities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumReportInterval(value: Double): Self = this.set("minimumReportInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportInterval(value: Double): Self = this.set("reportInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscribedActivities(value: IVector[ActivityType]): Self = this.set("subscribedActivities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedActivities(value: IVectorView[ActivityType]): Self = this.set("supportedActivities", value.asInstanceOf[js.Any])
+    def setSupportedActivities(value: IVectorView[ActivityType]): Self = StObject.set(x, "supportedActivities", value.asInstanceOf[js.Any])
   }
 }

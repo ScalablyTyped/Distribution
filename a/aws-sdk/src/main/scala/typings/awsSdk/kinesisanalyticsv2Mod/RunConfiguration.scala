@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RunConfiguration extends js.Object {
+trait RunConfiguration extends StObject {
   
   /**
     * Describes the restore behavior of a restarting application.
@@ -31,39 +32,27 @@ object RunConfiguration {
   }
   
   @scala.inline
-  implicit class RunConfigurationOps[Self <: RunConfiguration] (val x: Self) extends AnyVal {
+  implicit class RunConfigurationMutableBuilder[Self <: RunConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = StObject.set(x, "ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationRestoreConfigurationUndefined: Self = StObject.set(x, "ApplicationRestoreConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlinkRunConfiguration(value: FlinkRunConfiguration): Self = StObject.set(x, "FlinkRunConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = this.set("ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
+    def setFlinkRunConfigurationUndefined: Self = StObject.set(x, "FlinkRunConfiguration", js.undefined)
     
     @scala.inline
-    def deleteApplicationRestoreConfiguration: Self = this.set("ApplicationRestoreConfiguration", js.undefined)
+    def setSqlRunConfigurations(value: SqlRunConfigurations): Self = StObject.set(x, "SqlRunConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlinkRunConfiguration(value: FlinkRunConfiguration): Self = this.set("FlinkRunConfiguration", value.asInstanceOf[js.Any])
+    def setSqlRunConfigurationsUndefined: Self = StObject.set(x, "SqlRunConfigurations", js.undefined)
     
     @scala.inline
-    def deleteFlinkRunConfiguration: Self = this.set("FlinkRunConfiguration", js.undefined)
-    
-    @scala.inline
-    def setSqlRunConfigurationsVarargs(value: SqlRunConfiguration*): Self = this.set("SqlRunConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setSqlRunConfigurations(value: SqlRunConfigurations): Self = this.set("SqlRunConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlRunConfigurations: Self = this.set("SqlRunConfigurations", js.undefined)
+    def setSqlRunConfigurationsVarargs(value: SqlRunConfiguration*): Self = StObject.set(x, "SqlRunConfigurations", js.Array(value :_*))
   }
 }

@@ -15,13 +15,14 @@ import typings.std.HTMLElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.types.IColorPickerProps> */
 @js.native
-trait PartialIColorPickerProps extends js.Object {
+trait PartialIColorPickerProps extends StObject {
   
   var alphaLabel: js.UndefOr[String] = js.native
   
@@ -64,114 +65,102 @@ object PartialIColorPickerProps {
   }
   
   @scala.inline
-  implicit class PartialIColorPickerPropsOps[Self <: PartialIColorPickerProps] (val x: Self) extends AnyVal {
+  implicit class PartialIColorPickerPropsMutableBuilder[Self <: PartialIColorPickerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlphaLabel(value: String): Self = StObject.set(x, "alphaLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaLabelUndefined: Self = StObject.set(x, "alphaLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlphaSliderHidden(value: Boolean): Self = StObject.set(x, "alphaSliderHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaLabel(value: String): Self = this.set("alphaLabel", value.asInstanceOf[js.Any])
+    def setAlphaSliderHiddenUndefined: Self = StObject.set(x, "alphaSliderHidden", js.undefined)
     
     @scala.inline
-    def deleteAlphaLabel: Self = this.set("alphaLabel", js.undefined)
+    def setAlphaType(value: alpha | transparency | none): Self = StObject.set(x, "alphaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaSliderHidden(value: Boolean): Self = this.set("alphaSliderHidden", value.asInstanceOf[js.Any])
+    def setAlphaTypeUndefined: Self = StObject.set(x, "alphaType", js.undefined)
     
     @scala.inline
-    def deleteAlphaSliderHidden: Self = this.set("alphaSliderHidden", js.undefined)
+    def setBlueLabel(value: String): Self = StObject.set(x, "blueLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphaType(value: alpha | transparency | none): Self = this.set("alphaType", value.asInstanceOf[js.Any])
+    def setBlueLabelUndefined: Self = StObject.set(x, "blueLabel", js.undefined)
     
     @scala.inline
-    def deleteAlphaType: Self = this.set("alphaType", js.undefined)
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlueLabel(value: String): Self = this.set("blueLabel", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBlueLabel: Self = this.set("blueLabel", js.undefined)
+    def setColor(value: IColor | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setComponentRef(value: IRefObject[IColorPicker]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: IColor | String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setComponentRefFunction1(value: /* ref */ IColorPicker | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
     @scala.inline
-    def setComponentRefFunction1(value: /* ref */ IColorPicker | Null => scala.Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    def setGreenLabel(value: String): Self = StObject.set(x, "greenLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentRef(value: IRefObject[IColorPicker]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    def setGreenLabelUndefined: Self = StObject.set(x, "greenLabel", js.undefined)
     
     @scala.inline
-    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    def setHexLabel(value: String): Self = StObject.set(x, "hexLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreenLabel(value: String): Self = this.set("greenLabel", value.asInstanceOf[js.Any])
+    def setHexLabelUndefined: Self = StObject.set(x, "hexLabel", js.undefined)
     
     @scala.inline
-    def deleteGreenLabel: Self = this.set("greenLabel", js.undefined)
+    def setOnChange(value: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => scala.Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHexLabel(value: String): Self = this.set("hexLabel", value.asInstanceOf[js.Any])
+    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def deleteHexLabel: Self = this.set("hexLabel", js.undefined)
+    def setRedLabel(value: String): Self = StObject.set(x, "redLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnChange(value: (/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor) => scala.Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    def setRedLabelUndefined: Self = StObject.set(x, "redLabel", js.undefined)
     
     @scala.inline
-    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    def setShowPreview(value: Boolean): Self = StObject.set(x, "showPreview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedLabel(value: String): Self = this.set("redLabel", value.asInstanceOf[js.Any])
+    def setShowPreviewUndefined: Self = StObject.set(x, "showPreview", js.undefined)
     
     @scala.inline
-    def deleteRedLabel: Self = this.set("redLabel", js.undefined)
+    def setStrings(value: IColorPickerStrings): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowPreview(value: Boolean): Self = this.set("showPreview", value.asInstanceOf[js.Any])
+    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
     @scala.inline
-    def deleteShowPreview: Self = this.set("showPreview", js.undefined)
+    def setStyles(value: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrings(value: IColorPickerStrings): Self = this.set("strings", value.asInstanceOf[js.Any])
+    def setStylesFunction1(value: IColorPickerStyleProps => DeepPartial[IColorPickerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStrings: Self = this.set("strings", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStylesFunction1(value: IColorPickerStyleProps => DeepPartial[IColorPickerStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
-    
-    @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

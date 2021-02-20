@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TechnologyTargeting extends js.Object {
+trait TechnologyTargeting extends StObject {
   
   /**
     * Browsers that this ad targets. For each browser either set browserVersionId or dartId along with the version numbers. If both are specified, only browserVersionId will be used. The
@@ -49,72 +50,60 @@ object TechnologyTargeting {
   }
   
   @scala.inline
-  implicit class TechnologyTargetingOps[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
+  implicit class TechnologyTargetingMutableBuilder[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrowsers(value: js.Array[Browser]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowsersVarargs(value: Browser*): Self = StObject.set(x, "browsers", js.Array(value :_*))
     
     @scala.inline
-    def setBrowsersVarargs(value: Browser*): Self = this.set("browsers", js.Array(value :_*))
+    def setConnectionTypes(value: js.Array[ConnectionType]): Self = StObject.set(x, "connectionTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowsers(value: js.Array[Browser]): Self = this.set("browsers", value.asInstanceOf[js.Any])
+    def setConnectionTypesUndefined: Self = StObject.set(x, "connectionTypes", js.undefined)
     
     @scala.inline
-    def deleteBrowsers: Self = this.set("browsers", js.undefined)
+    def setConnectionTypesVarargs(value: ConnectionType*): Self = StObject.set(x, "connectionTypes", js.Array(value :_*))
     
     @scala.inline
-    def setConnectionTypesVarargs(value: ConnectionType*): Self = this.set("connectionTypes", js.Array(value :_*))
+    def setMobileCarriers(value: js.Array[MobileCarrier]): Self = StObject.set(x, "mobileCarriers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionTypes(value: js.Array[ConnectionType]): Self = this.set("connectionTypes", value.asInstanceOf[js.Any])
+    def setMobileCarriersUndefined: Self = StObject.set(x, "mobileCarriers", js.undefined)
     
     @scala.inline
-    def deleteConnectionTypes: Self = this.set("connectionTypes", js.undefined)
+    def setMobileCarriersVarargs(value: MobileCarrier*): Self = StObject.set(x, "mobileCarriers", js.Array(value :_*))
     
     @scala.inline
-    def setMobileCarriersVarargs(value: MobileCarrier*): Self = this.set("mobileCarriers", js.Array(value :_*))
+    def setOperatingSystemVersions(value: js.Array[OperatingSystemVersion]): Self = StObject.set(x, "operatingSystemVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileCarriers(value: js.Array[MobileCarrier]): Self = this.set("mobileCarriers", value.asInstanceOf[js.Any])
+    def setOperatingSystemVersionsUndefined: Self = StObject.set(x, "operatingSystemVersions", js.undefined)
     
     @scala.inline
-    def deleteMobileCarriers: Self = this.set("mobileCarriers", js.undefined)
+    def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = StObject.set(x, "operatingSystemVersions", js.Array(value :_*))
     
     @scala.inline
-    def setOperatingSystemVersionsVarargs(value: OperatingSystemVersion*): Self = this.set("operatingSystemVersions", js.Array(value :_*))
+    def setOperatingSystems(value: js.Array[OperatingSystem]): Self = StObject.set(x, "operatingSystems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystemVersions(value: js.Array[OperatingSystemVersion]): Self = this.set("operatingSystemVersions", value.asInstanceOf[js.Any])
+    def setOperatingSystemsUndefined: Self = StObject.set(x, "operatingSystems", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystemVersions: Self = this.set("operatingSystemVersions", js.undefined)
+    def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "operatingSystems", js.Array(value :_*))
     
     @scala.inline
-    def setOperatingSystemsVarargs(value: OperatingSystem*): Self = this.set("operatingSystems", js.Array(value :_*))
+    def setPlatformTypes(value: js.Array[PlatformType]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatingSystems(value: js.Array[OperatingSystem]): Self = this.set("operatingSystems", value.asInstanceOf[js.Any])
+    def setPlatformTypesUndefined: Self = StObject.set(x, "platformTypes", js.undefined)
     
     @scala.inline
-    def deleteOperatingSystems: Self = this.set("operatingSystems", js.undefined)
-    
-    @scala.inline
-    def setPlatformTypesVarargs(value: PlatformType*): Self = this.set("platformTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlatformTypes(value: js.Array[PlatformType]): Self = this.set("platformTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatformTypes: Self = this.set("platformTypes", js.undefined)
+    def setPlatformTypesVarargs(value: PlatformType*): Self = StObject.set(x, "platformTypes", js.Array(value :_*))
   }
 }

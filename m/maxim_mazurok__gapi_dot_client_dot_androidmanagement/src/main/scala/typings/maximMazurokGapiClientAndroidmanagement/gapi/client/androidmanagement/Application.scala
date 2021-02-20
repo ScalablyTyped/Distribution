@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Application extends js.Object {
+trait Application extends StObject {
   
   /** Application tracks visible to the enterprise. */
   var appTracks: js.UndefOr[js.Array[AppTrackInfo]] = js.native
@@ -31,57 +32,45 @@ object Application {
   }
   
   @scala.inline
-  implicit class ApplicationOps[Self <: Application] (val x: Self) extends AnyVal {
+  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppTracks(value: js.Array[AppTrackInfo]): Self = StObject.set(x, "appTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppTracksUndefined: Self = StObject.set(x, "appTracks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppTracksVarargs(value: AppTrackInfo*): Self = StObject.set(x, "appTracks", js.Array(value :_*))
     
     @scala.inline
-    def setAppTracksVarargs(value: AppTrackInfo*): Self = this.set("appTracks", js.Array(value :_*))
+    def setManagedProperties(value: js.Array[ManagedProperty]): Self = StObject.set(x, "managedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppTracks(value: js.Array[AppTrackInfo]): Self = this.set("appTracks", value.asInstanceOf[js.Any])
+    def setManagedPropertiesUndefined: Self = StObject.set(x, "managedProperties", js.undefined)
     
     @scala.inline
-    def deleteAppTracks: Self = this.set("appTracks", js.undefined)
+    def setManagedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setManagedPropertiesVarargs(value: ManagedProperty*): Self = this.set("managedProperties", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedProperties(value: js.Array[ManagedProperty]): Self = this.set("managedProperties", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteManagedProperties: Self = this.set("managedProperties", js.undefined)
+    def setPermissions(value: js.Array[ApplicationPermission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPermissionsVarargs(value: ApplicationPermission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
     @scala.inline
-    def setPermissionsVarargs(value: ApplicationPermission*): Self = this.set("permissions", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermissions(value: js.Array[ApplicationPermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermissions: Self = this.set("permissions", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTemplateMessageBody extends js.Object {
+trait CreateTemplateMessageBody extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the message template that was created.
@@ -31,36 +32,24 @@ object CreateTemplateMessageBody {
   }
   
   @scala.inline
-  implicit class CreateTemplateMessageBodyOps[Self <: CreateTemplateMessageBody] (val x: Self) extends AnyVal {
+  implicit class CreateTemplateMessageBodyMutableBuilder[Self <: CreateTemplateMessageBody] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setRequestID(value: string): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: string): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
-    
-    @scala.inline
-    def setRequestID(value: string): Self = this.set("RequestID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestID: Self = this.set("RequestID", js.undefined)
+    def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
   }
 }

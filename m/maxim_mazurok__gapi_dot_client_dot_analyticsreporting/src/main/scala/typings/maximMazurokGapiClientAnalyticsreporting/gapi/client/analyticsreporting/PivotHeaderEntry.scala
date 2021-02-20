@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsreporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotHeaderEntry extends js.Object {
+trait PivotHeaderEntry extends StObject {
   
   /** The name of the dimensions in the pivot response. */
   var dimensionNames: js.UndefOr[js.Array[String]] = js.native
@@ -25,42 +26,30 @@ object PivotHeaderEntry {
   }
   
   @scala.inline
-  implicit class PivotHeaderEntryOps[Self <: PivotHeaderEntry] (val x: Self) extends AnyVal {
+  implicit class PivotHeaderEntryMutableBuilder[Self <: PivotHeaderEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionNames(value: js.Array[String]): Self = StObject.set(x, "dimensionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionNamesVarargs(value: String*): Self = this.set("dimensionNames", js.Array(value :_*))
+    def setDimensionValues(value: js.Array[String]): Self = StObject.set(x, "dimensionValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionNames(value: js.Array[String]): Self = this.set("dimensionNames", value.asInstanceOf[js.Any])
+    def setDimensionValuesUndefined: Self = StObject.set(x, "dimensionValues", js.undefined)
     
     @scala.inline
-    def deleteDimensionNames: Self = this.set("dimensionNames", js.undefined)
+    def setDimensionValuesVarargs(value: String*): Self = StObject.set(x, "dimensionValues", js.Array(value :_*))
     
     @scala.inline
-    def setDimensionValuesVarargs(value: String*): Self = this.set("dimensionValues", js.Array(value :_*))
+    def setMetric(value: MetricHeaderEntry): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimensionValues(value: js.Array[String]): Self = this.set("dimensionValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionValues: Self = this.set("dimensionValues", js.undefined)
-    
-    @scala.inline
-    def setMetric(value: MetricHeaderEntry): Self = this.set("metric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetric: Self = this.set("metric", js.undefined)
+    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.braintreeWeb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingAddress extends js.Object {
+trait BillingAddress extends StObject {
   
   var billingAddress: js.UndefOr[js.Any] = js.native
   
@@ -22,36 +23,24 @@ object BillingAddress {
   }
   
   @scala.inline
-  implicit class BillingAddressOps[Self <: BillingAddress] (val x: Self) extends AnyVal {
+  implicit class BillingAddressMutableBuilder[Self <: BillingAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddress(value: js.Any): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddress(value: js.Any): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
     
     @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    def setVault(value: Boolean): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardholderName(value: String): Self = this.set("cardholderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCardholderName: Self = this.set("cardholderName", js.undefined)
-    
-    @scala.inline
-    def setVault(value: Boolean): Self = this.set("vault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVault: Self = this.set("vault", js.undefined)
+    def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
   }
 }

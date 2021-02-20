@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CountryTargeting extends js.Object {
+trait CountryTargeting extends StObject {
   
   /** Countries to target, specified as two letter [CLDR codes](https://unicode.org/cldr/charts/latest/supplemental/territory_containment_un_m_49.html). */
   var countries: js.UndefOr[js.Array[String]] = js.native
@@ -22,33 +23,21 @@ object CountryTargeting {
   }
   
   @scala.inline
-  implicit class CountryTargetingOps[Self <: CountryTargeting] (val x: Self) extends AnyVal {
+  implicit class CountryTargetingMutableBuilder[Self <: CountryTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
     @scala.inline
-    def setCountriesVarargs(value: String*): Self = this.set("countries", js.Array(value :_*))
+    def setIncludeRestOfWorld(value: Boolean): Self = StObject.set(x, "includeRestOfWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountries(value: js.Array[String]): Self = this.set("countries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountries: Self = this.set("countries", js.undefined)
-    
-    @scala.inline
-    def setIncludeRestOfWorld(value: Boolean): Self = this.set("includeRestOfWorld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeRestOfWorld: Self = this.set("includeRestOfWorld", js.undefined)
+    def setIncludeRestOfWorldUndefined: Self = StObject.set(x, "includeRestOfWorld", js.undefined)
   }
 }

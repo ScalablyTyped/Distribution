@@ -17,12 +17,13 @@ import typings.maximMazurokGapiClientSqladmin.anon.UploadType
 import typings.maximMazurokGapiClientSqladmin.anon.Uploadprotocol
 import typings.maximMazurokGapiClientSqladmin.anon.VerifyConnectionOnly
 import typings.maximMazurokGapiClientSqladmin.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancesResource extends js.Object {
+trait InstancesResource extends StObject {
   
   /**
     * Add a new trusted Certificate Authority (CA) version for the specified instance. Required to prepare for a certificate rotation. If a CA version was previously added but never used

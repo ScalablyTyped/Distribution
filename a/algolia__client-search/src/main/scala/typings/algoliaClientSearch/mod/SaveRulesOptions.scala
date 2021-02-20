@@ -1,11 +1,12 @@
 package typings.algoliaClientSearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SaveRulesOptions extends js.Object {
+trait SaveRulesOptions extends StObject {
   
   /**
     * If the existing rules should be removed.
@@ -26,30 +27,18 @@ object SaveRulesOptions {
   }
   
   @scala.inline
-  implicit class SaveRulesOptionsOps[Self <: SaveRulesOptions] (val x: Self) extends AnyVal {
+  implicit class SaveRulesOptionsMutableBuilder[Self <: SaveRulesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearExistingRules(value: Boolean): Self = StObject.set(x, "clearExistingRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearExistingRulesUndefined: Self = StObject.set(x, "clearExistingRules", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearExistingRules(value: Boolean): Self = this.set("clearExistingRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClearExistingRules: Self = this.set("clearExistingRules", js.undefined)
-    
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = this.set("forwardToReplicas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardToReplicas: Self = this.set("forwardToReplicas", js.undefined)
+    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
   }
 }

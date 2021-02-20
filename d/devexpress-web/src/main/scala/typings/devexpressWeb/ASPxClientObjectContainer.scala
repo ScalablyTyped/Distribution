@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,78 +171,66 @@ object ASPxClientObjectContainer {
   }
   
   @scala.inline
-  implicit class ASPxClientObjectContainerOps[Self <: ASPxClientObjectContainer] (val x: Self) extends AnyVal {
+  implicit class ASPxClientObjectContainerMutableBuilder[Self <: ASPxClientObjectContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBack(value: () => Unit): Self = StObject.set(x, "Back", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlashScriptCommand(value: ASPxClientEvent[ASPxClientFlashScriptCommandEventHandler[ASPxClientObjectContainer]]): Self = StObject.set(x, "FlashScriptCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForward(value: () => Unit): Self = StObject.set(x, "Forward", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBack(value: () => Unit): Self = this.set("Back", js.Any.fromFunction0(value))
+    def setGetVariable(value: String => String): Self = StObject.set(x, "GetVariable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlashScriptCommand(value: ASPxClientEvent[ASPxClientFlashScriptCommandEventHandler[ASPxClientObjectContainer]]): Self = this.set("FlashScriptCommand", value.asInstanceOf[js.Any])
+    def setGotoFrame(value: Double => Unit): Self = StObject.set(x, "GotoFrame", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForward(value: () => Unit): Self = this.set("Forward", js.Any.fromFunction0(value))
+    def setIsPlaying(value: () => Boolean): Self = StObject.set(x, "IsPlaying", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVariable(value: String => String): Self = this.set("GetVariable", js.Any.fromFunction1(value))
+    def setLoadMovie(value: (Double, String) => Unit): Self = StObject.set(x, "LoadMovie", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGotoFrame(value: Double => Unit): Self = this.set("GotoFrame", js.Any.fromFunction1(value))
+    def setPan(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "Pan", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setIsPlaying(value: () => Boolean): Self = this.set("IsPlaying", js.Any.fromFunction0(value))
+    def setPercentLoaded(value: () => String): Self = StObject.set(x, "PercentLoaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLoadMovie(value: (Double, String) => Unit): Self = this.set("LoadMovie", js.Any.fromFunction2(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPan(value: (Double, Double, Double) => Unit): Self = this.set("Pan", js.Any.fromFunction3(value))
+    def setQTPlay(value: () => Unit): Self = StObject.set(x, "QTPlay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPercentLoaded(value: () => String): Self = this.set("PercentLoaded", js.Any.fromFunction0(value))
+    def setQTRewind(value: () => Unit): Self = StObject.set(x, "QTRewind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("Play", js.Any.fromFunction0(value))
+    def setQTStep(value: Double => Unit): Self = StObject.set(x, "QTStep", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setQTPlay(value: () => Unit): Self = this.set("QTPlay", js.Any.fromFunction0(value))
+    def setQTStopPlay(value: () => Unit): Self = StObject.set(x, "QTStopPlay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQTRewind(value: () => Unit): Self = this.set("QTRewind", js.Any.fromFunction0(value))
+    def setRewind(value: () => Unit): Self = StObject.set(x, "Rewind", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setQTStep(value: Double => Unit): Self = this.set("QTStep", js.Any.fromFunction1(value))
+    def setSetVariable(value: (String, String) => Unit): Self = StObject.set(x, "SetVariable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQTStopPlay(value: () => Unit): Self = this.set("QTStopPlay", js.Any.fromFunction0(value))
+    def setSetZoomRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "SetZoomRect", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setRewind(value: () => Unit): Self = this.set("Rewind", js.Any.fromFunction0(value))
+    def setStopPlay(value: () => Unit): Self = StObject.set(x, "StopPlay", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetVariable(value: (String, String) => Unit): Self = this.set("SetVariable", js.Any.fromFunction2(value))
+    def setTotalFrames(value: () => Double): Self = StObject.set(x, "TotalFrames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetZoomRect(value: (Double, Double, Double, Double) => Unit): Self = this.set("SetZoomRect", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setStopPlay(value: () => Unit): Self = this.set("StopPlay", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTotalFrames(value: () => Double): Self = this.set("TotalFrames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setZoom(value: Double => Unit): Self = this.set("Zoom", js.Any.fromFunction1(value))
+    def setZoom(value: Double => Unit): Self = StObject.set(x, "Zoom", js.Any.fromFunction1(value))
   }
 }

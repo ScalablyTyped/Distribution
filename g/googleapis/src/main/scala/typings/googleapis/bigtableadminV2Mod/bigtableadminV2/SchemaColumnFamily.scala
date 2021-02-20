@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of columns within a table which share a common configuration.
   */
 @js.native
-trait SchemaColumnFamily extends js.Object {
+trait SchemaColumnFamily extends StObject {
   
   /**
     * Garbage collection rule specified as a protobuf. Must serialize to at
@@ -27,24 +28,12 @@ object SchemaColumnFamily {
   }
   
   @scala.inline
-  implicit class SchemaColumnFamilyOps[Self <: SchemaColumnFamily] (val x: Self) extends AnyVal {
+  implicit class SchemaColumnFamilyMutableBuilder[Self <: SchemaColumnFamily] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcRule(value: SchemaGcRule): Self = StObject.set(x, "gcRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcRule(value: SchemaGcRule): Self = this.set("gcRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcRule: Self = this.set("gcRule", js.undefined)
+    def setGcRuleUndefined: Self = StObject.set(x, "gcRule", js.undefined)
   }
 }

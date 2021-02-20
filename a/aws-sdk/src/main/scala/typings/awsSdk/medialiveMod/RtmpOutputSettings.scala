@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RtmpOutputSettings extends js.Object {
+trait RtmpOutputSettings extends StObject {
   
   /**
     * If set to verifyAuthenticity, verify the tls certificate chain to a trusted Certificate Authority (CA).  This will cause rtmps outputs with self-signed certificates to fail.
@@ -36,39 +37,27 @@ object RtmpOutputSettings {
   }
   
   @scala.inline
-  implicit class RtmpOutputSettingsOps[Self <: RtmpOutputSettings] (val x: Self) extends AnyVal {
+  implicit class RtmpOutputSettingsMutableBuilder[Self <: RtmpOutputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateMode(value: RtmpOutputCertificateMode): Self = StObject.set(x, "CertificateMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateModeUndefined: Self = StObject.set(x, "CertificateMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionRetryInterval(value: integerMin1): Self = StObject.set(x, "ConnectionRetryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: OutputLocationRef): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setConnectionRetryIntervalUndefined: Self = StObject.set(x, "ConnectionRetryInterval", js.undefined)
     
     @scala.inline
-    def setCertificateMode(value: RtmpOutputCertificateMode): Self = this.set("CertificateMode", value.asInstanceOf[js.Any])
+    def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificateMode: Self = this.set("CertificateMode", js.undefined)
+    def setNumRetries(value: integerMin0): Self = StObject.set(x, "NumRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionRetryInterval(value: integerMin1): Self = this.set("ConnectionRetryInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionRetryInterval: Self = this.set("ConnectionRetryInterval", js.undefined)
-    
-    @scala.inline
-    def setNumRetries(value: integerMin0): Self = this.set("NumRetries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumRetries: Self = this.set("NumRetries", js.undefined)
+    def setNumRetriesUndefined: Self = StObject.set(x, "NumRetries", js.undefined)
   }
 }

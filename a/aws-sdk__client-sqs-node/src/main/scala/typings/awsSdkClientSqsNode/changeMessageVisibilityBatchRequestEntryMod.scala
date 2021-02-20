@@ -1,13 +1,13 @@
 package typings.awsSdkClientSqsNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-sqs-node/model/_ChangeMessageVisibilityBatchRequestEntry", JSImport.Namespace)
-@js.native
-object changeMessageVisibilityBatchRequestEntryMod extends js.Object {
+object changeMessageVisibilityBatchRequestEntryMod {
   
-  @JSName("_ChangeMessageVisibilityBatchRequestEntry")
+  @JSImport("@aws-sdk/client-sqs-node/model/_ChangeMessageVisibilityBatchRequestEntry", "_ChangeMessageVisibilityBatchRequestEntry")
+  @js.native
   val ChangeMessageVisibilityBatchRequestEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

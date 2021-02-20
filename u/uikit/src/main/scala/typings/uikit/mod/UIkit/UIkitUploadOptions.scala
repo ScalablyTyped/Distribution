@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitUploadOptions extends js.Object {
+trait UIkitUploadOptions extends StObject {
   
   var abort: js.UndefOr[js.Object] = js.native
   
@@ -62,156 +63,144 @@ object UIkitUploadOptions {
   }
   
   @scala.inline
-  implicit class UIkitUploadOptionsOps[Self <: UIkitUploadOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitUploadOptionsMutableBuilder[Self <: UIkitUploadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: js.Object): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow(value: String | Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbort(value: js.Object): Self = this.set("abort", value.asInstanceOf[js.Any])
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def deleteAbort: Self = this.set("abort", js.undefined)
+    def `setBefore-all`(value: js.Object): Self = StObject.set(x, "before-all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: String | Boolean): Self = this.set("allow", value.asInstanceOf[js.Any])
+    def `setBefore-allUndefined`: Self = StObject.set(x, "before-all", js.undefined)
     
     @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
+    def `setBefore-send`(value: js.Object): Self = StObject.set(x, "before-send", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBefore-all`(value: js.Object): Self = this.set("before-all", value.asInstanceOf[js.Any])
+    def `setBefore-sendUndefined`: Self = StObject.set(x, "before-send", js.undefined)
     
     @scala.inline
-    def `deleteBefore-all`: Self = this.set("before-all", js.undefined)
+    def `setCls-dragover`(value: String): Self = StObject.set(x, "cls-dragover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBefore-send`(value: js.Object): Self = this.set("before-send", value.asInstanceOf[js.Any])
+    def `setCls-dragoverUndefined`: Self = StObject.set(x, "cls-dragover", js.undefined)
     
     @scala.inline
-    def `deleteBefore-send`: Self = this.set("before-send", js.undefined)
+    def setComplete(value: js.Object): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-dragover`(value: String): Self = this.set("cls-dragover", value.asInstanceOf[js.Any])
+    def `setComplete-all`(value: js.Object): Self = StObject.set(x, "complete-all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCls-dragover`: Self = this.set("cls-dragover", js.undefined)
+    def `setComplete-allUndefined`: Self = StObject.set(x, "complete-all", js.undefined)
     
     @scala.inline
-    def setComplete(value: js.Object): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
     @scala.inline
-    def deleteComplete: Self = this.set("complete", js.undefined)
+    def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setComplete-all`(value: js.Object): Self = this.set("complete-all", value.asInstanceOf[js.Any])
+    def setConcurrentUndefined: Self = StObject.set(x, "concurrent", js.undefined)
     
     @scala.inline
-    def `deleteComplete-all`: Self = this.set("complete-all", js.undefined)
+    def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrent(value: Double): Self = this.set("concurrent", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteConcurrent: Self = this.set("concurrent", js.undefined)
+    def setFail(value: js.Object): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: js.Object): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLoad(value: js.Object): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFail(value: js.Object): Self = this.set("fail", value.asInstanceOf[js.Any])
+    def `setLoad-end`(value: js.Object): Self = StObject.set(x, "load-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFail: Self = this.set("fail", js.undefined)
+    def `setLoad-endUndefined`: Self = StObject.set(x, "load-end", js.undefined)
     
     @scala.inline
-    def setLoad(value: js.Object): Self = this.set("load", value.asInstanceOf[js.Any])
+    def `setLoad-start`(value: js.Object): Self = StObject.set(x, "load-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoad: Self = this.set("load", js.undefined)
+    def `setLoad-startUndefined`: Self = StObject.set(x, "load-start", js.undefined)
     
     @scala.inline
-    def `setLoad-end`(value: js.Object): Self = this.set("load-end", value.asInstanceOf[js.Any])
+    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
     @scala.inline
-    def `deleteLoad-end`: Self = this.set("load-end", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLoad-start`(value: js.Object): Self = this.set("load-start", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def `deleteLoad-start`: Self = this.set("load-start", js.undefined)
+    def setMime(value: String | Boolean): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setMimeUndefined: Self = StObject.set(x, "mime", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def `setMsg-invalid-mime`(value: String): Self = StObject.set(x, "msg-invalid-mime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMime(value: String | Boolean): Self = this.set("mime", value.asInstanceOf[js.Any])
+    def `setMsg-invalid-mimeUndefined`: Self = StObject.set(x, "msg-invalid-mime", js.undefined)
     
     @scala.inline
-    def deleteMime: Self = this.set("mime", js.undefined)
+    def `setMsg-invalid-name`(value: String): Self = StObject.set(x, "msg-invalid-name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMsg-invalid-mime`(value: String): Self = this.set("msg-invalid-mime", value.asInstanceOf[js.Any])
+    def `setMsg-invalid-nameUndefined`: Self = StObject.set(x, "msg-invalid-name", js.undefined)
     
     @scala.inline
-    def `deleteMsg-invalid-mime`: Self = this.set("msg-invalid-mime", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMsg-invalid-name`(value: String): Self = this.set("msg-invalid-name", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def `deleteMsg-invalid-name`: Self = this.set("msg-invalid-name", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProgress(value: js.Object): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: js.Object): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: js.Object): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

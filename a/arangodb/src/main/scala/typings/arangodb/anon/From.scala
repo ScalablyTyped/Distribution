@@ -1,6 +1,7 @@
 package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object From {
   }
   
   @scala.inline
-  implicit class FromOps[Self <: From] (val x: Self) extends AnyVal {
+  implicit class FromMutableBuilder[Self <: From] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_fromUndefined: Self = StObject.set(x, "_from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_to(value: String): Self = StObject.set(x, "_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_from(value: String): Self = this.set("_from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_from: Self = this.set("_from", js.undefined)
-    
-    @scala.inline
-    def set_to(value: String): Self = this.set("_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_to: Self = this.set("_to", js.undefined)
+    def set_toUndefined: Self = StObject.set(x, "_to", js.undefined)
   }
 }

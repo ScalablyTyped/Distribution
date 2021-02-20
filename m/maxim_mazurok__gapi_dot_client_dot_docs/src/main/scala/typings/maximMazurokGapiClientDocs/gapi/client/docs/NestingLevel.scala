@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NestingLevel extends js.Object {
+trait NestingLevel extends StObject {
   
   /** The alignment of the bullet within the space allotted for rendering the bullet. */
   var bulletAlignment: js.UndefOr[String] = js.native
@@ -59,66 +60,54 @@ object NestingLevel {
   }
   
   @scala.inline
-  implicit class NestingLevelOps[Self <: NestingLevel] (val x: Self) extends AnyVal {
+  implicit class NestingLevelMutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBulletAlignmentUndefined: Self = StObject.set(x, "bulletAlignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlyphFormat(value: String): Self = StObject.set(x, "glyphFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBulletAlignment(value: String): Self = this.set("bulletAlignment", value.asInstanceOf[js.Any])
+    def setGlyphFormatUndefined: Self = StObject.set(x, "glyphFormat", js.undefined)
     
     @scala.inline
-    def deleteBulletAlignment: Self = this.set("bulletAlignment", js.undefined)
+    def setGlyphSymbol(value: String): Self = StObject.set(x, "glyphSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphFormat(value: String): Self = this.set("glyphFormat", value.asInstanceOf[js.Any])
+    def setGlyphSymbolUndefined: Self = StObject.set(x, "glyphSymbol", js.undefined)
     
     @scala.inline
-    def deleteGlyphFormat: Self = this.set("glyphFormat", js.undefined)
+    def setGlyphType(value: String): Self = StObject.set(x, "glyphType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphSymbol(value: String): Self = this.set("glyphSymbol", value.asInstanceOf[js.Any])
+    def setGlyphTypeUndefined: Self = StObject.set(x, "glyphType", js.undefined)
     
     @scala.inline
-    def deleteGlyphSymbol: Self = this.set("glyphSymbol", js.undefined)
+    def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphType(value: String): Self = this.set("glyphType", value.asInstanceOf[js.Any])
+    def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
     
     @scala.inline
-    def deleteGlyphType: Self = this.set("glyphType", js.undefined)
+    def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentFirstLine(value: Dimension): Self = this.set("indentFirstLine", value.asInstanceOf[js.Any])
+    def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
     
     @scala.inline
-    def deleteIndentFirstLine: Self = this.set("indentFirstLine", js.undefined)
+    def setStartNumber(value: Double): Self = StObject.set(x, "startNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentStart(value: Dimension): Self = this.set("indentStart", value.asInstanceOf[js.Any])
+    def setStartNumberUndefined: Self = StObject.set(x, "startNumber", js.undefined)
     
     @scala.inline
-    def deleteIndentStart: Self = this.set("indentStart", js.undefined)
+    def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartNumber(value: Double): Self = this.set("startNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartNumber: Self = this.set("startNumber", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: TextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryFilter extends js.Object {
+trait QueryFilter extends StObject {
   
   /**
     * The filter values define the set of values in this query. They are applied based on the QueryFilterType.
@@ -59,42 +60,30 @@ object QueryFilter {
   }
   
   @scala.inline
-  implicit class QueryFilterOps[Self <: QueryFilter] (val x: Self) extends AnyVal {
+  implicit class QueryFilterMutableBuilder[Self <: QueryFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCriteria(value: js.Array[FilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCriteriaVarargs(value: FilterCriteria*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: PagingDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteriaVarargs(value: FilterCriteria*): Self = this.set("criteria", js.Array(value :_*))
+    def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriteria(value: js.Array[FilterCriteria]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: PagingDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setPagingToken(value: String): Self = StObject.set(x, "pagingToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumber(value: Double): Self = this.set("pageNumber", value.asInstanceOf[js.Any])
+    def setSortBy(value: Double): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagingToken(value: String): Self = this.set("pagingToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortBy(value: Double): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortOrder(value: Double): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setSortOrder(value: Double): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
   }
 }

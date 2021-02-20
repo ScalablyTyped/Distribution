@@ -1,11 +1,17 @@
 package typings.reactMdl.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-mdl", "ListItem")
 @js.native
-class ListItem ()
-  extends Component[ListItemProps, js.Object, js.Any]
+class ListItem protected () extends _MDLComponent[ListItemProps] {
+  def this(props: ListItemProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ListItemProps, context: js.Any) = this()
+}

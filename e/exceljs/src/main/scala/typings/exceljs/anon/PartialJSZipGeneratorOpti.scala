@@ -2,13 +2,14 @@ package typings.exceljs.anon
 
 import typings.exceljs.exceljsStrings.DEFLATE
 import typings.exceljs.exceljsStrings.STORE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.JSZipGeneratorOptions> */
 @js.native
-trait PartialJSZipGeneratorOpti extends js.Object {
+trait PartialJSZipGeneratorOpti extends StObject {
   
   var compression: js.UndefOr[STORE | DEFLATE] = js.native
   
@@ -23,33 +24,21 @@ object PartialJSZipGeneratorOpti {
   }
   
   @scala.inline
-  implicit class PartialJSZipGeneratorOptiOps[Self <: PartialJSZipGeneratorOpti] (val x: Self) extends AnyVal {
+  implicit class PartialJSZipGeneratorOptiMutableBuilder[Self <: PartialJSZipGeneratorOpti] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
     
     @scala.inline
-    def setCompression(value: STORE | DEFLATE): Self = this.set("compression", value.asInstanceOf[js.Any])
+    def setCompressionOptionsUndefined: Self = StObject.set(x, "compressionOptions", js.undefined)
     
     @scala.inline
-    def deleteCompression: Self = this.set("compression", js.undefined)
-    
-    @scala.inline
-    def setCompressionOptions(value: Level): Self = this.set("compressionOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCompressionOptions: Self = this.set("compressionOptions", js.undefined)
-    
-    @scala.inline
-    def setCompressionOptionsNull: Self = this.set("compressionOptions", null)
+    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
   }
 }

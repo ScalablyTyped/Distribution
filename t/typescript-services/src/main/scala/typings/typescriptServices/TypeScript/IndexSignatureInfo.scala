@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexSignatureInfo extends js.Object {
+trait IndexSignatureInfo extends StObject {
   
   var numericSignature: PullSignatureSymbol = js.native
   
@@ -20,24 +21,12 @@ object IndexSignatureInfo {
   }
   
   @scala.inline
-  implicit class IndexSignatureInfoOps[Self <: IndexSignatureInfo] (val x: Self) extends AnyVal {
+  implicit class IndexSignatureInfoMutableBuilder[Self <: IndexSignatureInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumericSignature(value: PullSignatureSymbol): Self = StObject.set(x, "numericSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNumericSignature(value: PullSignatureSymbol): Self = this.set("numericSignature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStringSignature(value: PullSignatureSymbol): Self = this.set("stringSignature", value.asInstanceOf[js.Any])
+    def setStringSignature(value: PullSignatureSymbol): Self = StObject.set(x, "stringSignature", value.asInstanceOf[js.Any])
   }
 }

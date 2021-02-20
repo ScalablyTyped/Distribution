@@ -1,5 +1,6 @@
 package typings.canvasjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.canvasjs.canvasjsStrings.longDashDot
   - typings.canvasjs.canvasjsStrings.longDashDotDot
 */
-trait DashType extends js.Object
+trait DashType extends StObject
 object DashType {
   
   @scala.inline

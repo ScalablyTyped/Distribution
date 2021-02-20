@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeferredPermissionRequest extends js.Object {
+trait DeferredPermissionRequest extends StObject {
   
   def allow(): Unit = js.native
   
@@ -33,33 +34,21 @@ object DeferredPermissionRequest {
   }
   
   @scala.inline
-  implicit class DeferredPermissionRequestOps[Self <: DeferredPermissionRequest] (val x: Self) extends AnyVal {
+  implicit class DeferredPermissionRequestMutableBuilder[Self <: DeferredPermissionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: () => Unit): Self = StObject.set(x, "allow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeny(value: () => Unit): Self = StObject.set(x, "deny", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: () => Unit): Self = this.set("allow", js.Any.fromFunction0(value))
+    def setType(value: MSWebViewPermissionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeny(value: () => Unit): Self = this.set("deny", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MSWebViewPermissionType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUri(value: java.lang.String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setUri(value: java.lang.String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

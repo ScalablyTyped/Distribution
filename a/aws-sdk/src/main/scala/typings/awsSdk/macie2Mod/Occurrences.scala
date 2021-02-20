@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Occurrences extends js.Object {
+trait Occurrences extends StObject {
   
   /**
     * An array of objects, one for each occurrence of sensitive data in a Microsoft Excel workbook, CSV file, or TSV file. Each object specifies the cell or field that contains the data. This value is null for all other types of files.
@@ -41,63 +42,51 @@ object Occurrences {
   }
   
   @scala.inline
-  implicit class OccurrencesOps[Self <: Occurrences] (val x: Self) extends AnyVal {
+  implicit class OccurrencesMutableBuilder[Self <: Occurrences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCells(value: Cells): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
     @scala.inline
-    def setCellsVarargs(value: Cell*): Self = this.set("cells", js.Array(value :_*))
+    def setLineRanges(value: Ranges): Self = StObject.set(x, "lineRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCells(value: Cells): Self = this.set("cells", value.asInstanceOf[js.Any])
+    def setLineRangesUndefined: Self = StObject.set(x, "lineRanges", js.undefined)
     
     @scala.inline
-    def deleteCells: Self = this.set("cells", js.undefined)
+    def setLineRangesVarargs(value: Range*): Self = StObject.set(x, "lineRanges", js.Array(value :_*))
     
     @scala.inline
-    def setLineRangesVarargs(value: Range*): Self = this.set("lineRanges", js.Array(value :_*))
+    def setOffsetRanges(value: Ranges): Self = StObject.set(x, "offsetRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineRanges(value: Ranges): Self = this.set("lineRanges", value.asInstanceOf[js.Any])
+    def setOffsetRangesUndefined: Self = StObject.set(x, "offsetRanges", js.undefined)
     
     @scala.inline
-    def deleteLineRanges: Self = this.set("lineRanges", js.undefined)
+    def setOffsetRangesVarargs(value: Range*): Self = StObject.set(x, "offsetRanges", js.Array(value :_*))
     
     @scala.inline
-    def setOffsetRangesVarargs(value: Range*): Self = this.set("offsetRanges", js.Array(value :_*))
+    def setPages(value: Pages): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetRanges(value: Ranges): Self = this.set("offsetRanges", value.asInstanceOf[js.Any])
+    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
     @scala.inline
-    def deleteOffsetRanges: Self = this.set("offsetRanges", js.undefined)
+    def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def setPagesVarargs(value: Page*): Self = this.set("pages", js.Array(value :_*))
+    def setRecords(value: Records): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPages(value: Pages): Self = this.set("pages", value.asInstanceOf[js.Any])
+    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
     @scala.inline
-    def deletePages: Self = this.set("pages", js.undefined)
-    
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = this.set("records", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecords(value: Records): Self = this.set("records", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecords: Self = this.set("records", js.undefined)
+    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
   }
 }

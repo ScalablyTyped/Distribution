@@ -4,24 +4,31 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
 import typings.std.SVGGElement
 import typings.std.SVGSVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-simple-slider", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-simple-slider", "sliderBottom")
+  @js.native
   def sliderBottom[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
   
+  @JSImport("d3-simple-slider", "sliderLeft")
+  @js.native
   def sliderLeft[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
   
+  @JSImport("d3-simple-slider", "sliderRight")
+  @js.native
   def sliderRight[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
   
+  @JSImport("d3-simple-slider", "sliderTop")
+  @js.native
   def sliderTop[Domain /* <: SliderDomain */](scale: SliderScale[Domain]): Slider[Domain] = js.native
   
   @js.native
-  trait Slider[Domain] extends js.Object {
+  trait Slider[Domain] extends StObject {
     
     /**
       * Render the slider to the given _context_, which may be either a [selection](https://github.com/d3/d3-selection) of SVG containers (either SVG or G elements)
@@ -125,8 +132,12 @@ object mod extends js.Object {
     def ticks(count: Double): this.type = js.native
   }
   
+  type SliderContainerElement = SVGSVGElement | SVGGElement
+  
+  type SliderDomain = Double
+  
   @js.native
-  trait SliderScale[Domain] extends js.Object {
+  trait SliderScale[Domain] extends StObject {
     
     def apply(x: Domain): js.UndefOr[Double] = js.native
     
@@ -146,8 +157,4 @@ object mod extends js.Object {
     
     var ticks: js.UndefOr[js.Function1[/* count */ js.UndefOr[Double], js.Array[Domain]]] = js.native
   }
-  
-  type SliderContainerElement = SVGSVGElement | SVGGElement
-  
-  type SliderDomain = Double
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WEBGLLoseContext extends js.Object {
+trait WEBGLLoseContext extends StObject {
   
   def loseContext(): Unit = js.native
   
@@ -20,24 +21,12 @@ object WEBGLLoseContext {
   }
   
   @scala.inline
-  implicit class WEBGLLoseContextOps[Self <: WEBGLLoseContext] (val x: Self) extends AnyVal {
+  implicit class WEBGLLoseContextMutableBuilder[Self <: WEBGLLoseContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoseContext(value: () => Unit): Self = this.set("loseContext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRestoreContext(value: () => Unit): Self = this.set("restoreContext", js.Any.fromFunction0(value))
+    def setRestoreContext(value: () => Unit): Self = StObject.set(x, "restoreContext", js.Any.fromFunction0(value))
   }
 }

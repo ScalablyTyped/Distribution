@@ -1,5 +1,6 @@
 package typings.css.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object Import {
   }
   
   @scala.inline
-  implicit class ImportOps[Self <: Import] (val x: Self) extends AnyVal {
+  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImport(value: String): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImport(value: String): Self = this.set("import", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImport: Self = this.set("import", js.undefined)
+    def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugConfigurationProvider extends js.Object {
+trait DebugConfigurationProvider extends StObject {
   
   /**
     * Provides [debug configuration](#DebugConfiguration) to the debug service. If more than one debug configuration provider is
@@ -75,42 +76,30 @@ object DebugConfigurationProvider {
   }
   
   @scala.inline
-  implicit class DebugConfigurationProviderOps[Self <: DebugConfigurationProvider] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class DebugConfigurationProviderMutableBuilder[Self <: DebugConfigurationProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setProvideDebugConfigurations(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* token */ js.UndefOr[CancellationToken]) => ProviderResult[js.Array[DebugConfiguration]]
-    ): Self = this.set("provideDebugConfigurations", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "provideDebugConfigurations", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteProvideDebugConfigurations: Self = this.set("provideDebugConfigurations", js.undefined)
+    def setProvideDebugConfigurationsUndefined: Self = StObject.set(x, "provideDebugConfigurations", js.undefined)
     
     @scala.inline
     def setResolveDebugConfiguration(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* debugConfiguration */ DebugConfiguration, /* token */ js.UndefOr[CancellationToken]) => ProviderResult[DebugConfiguration]
-    ): Self = this.set("resolveDebugConfiguration", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "resolveDebugConfiguration", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteResolveDebugConfiguration: Self = this.set("resolveDebugConfiguration", js.undefined)
+    def setResolveDebugConfigurationUndefined: Self = StObject.set(x, "resolveDebugConfiguration", js.undefined)
     
     @scala.inline
     def setResolveDebugConfigurationWithSubstitutedVariables(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* debugConfiguration */ DebugConfiguration, /* token */ js.UndefOr[CancellationToken]) => ProviderResult[DebugConfiguration]
-    ): Self = this.set("resolveDebugConfigurationWithSubstitutedVariables", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "resolveDebugConfigurationWithSubstitutedVariables", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteResolveDebugConfigurationWithSubstitutedVariables: Self = this.set("resolveDebugConfigurationWithSubstitutedVariables", js.undefined)
+    def setResolveDebugConfigurationWithSubstitutedVariablesUndefined: Self = StObject.set(x, "resolveDebugConfigurationWithSubstitutedVariables", js.undefined)
   }
 }

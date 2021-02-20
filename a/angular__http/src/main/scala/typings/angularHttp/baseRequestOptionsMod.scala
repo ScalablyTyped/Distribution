@@ -5,19 +5,20 @@ import typings.angularHttp.enumsMod.ResponseContentType
 import typings.angularHttp.headersMod.Headers
 import typings.angularHttp.interfacesMod.RequestOptionsArgs
 import typings.angularHttp.urlSearchParamsMod.URLSearchParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/base_request_options", JSImport.Namespace)
-@js.native
-object baseRequestOptionsMod extends js.Object {
+object baseRequestOptionsMod {
   
+  @JSImport("@angular/http/src/base_request_options", "BaseRequestOptions")
   @js.native
   class BaseRequestOptions () extends RequestOptions
   
+  @JSImport("@angular/http/src/base_request_options", "RequestOptions")
   @js.native
-  class RequestOptions () extends js.Object {
+  class RequestOptions () extends StObject {
     def this(opts: RequestOptionsArgs) = this()
     
     var _appendParam: js.Any = js.native

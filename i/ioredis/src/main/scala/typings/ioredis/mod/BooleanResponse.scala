@@ -1,5 +1,6 @@
 package typings.ioredis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ioredis.ioredisNumbers.`1`
   - typings.ioredis.ioredisNumbers.`0`
 */
-trait BooleanResponse extends js.Object
+trait BooleanResponse extends StObject
 object BooleanResponse {
   
   @scala.inline

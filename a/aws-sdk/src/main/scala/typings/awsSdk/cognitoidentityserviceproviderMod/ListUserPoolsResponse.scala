@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListUserPoolsResponse extends js.Object {
+trait ListUserPoolsResponse extends StObject {
   
   /**
     * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
@@ -26,33 +27,21 @@ object ListUserPoolsResponse {
   }
   
   @scala.inline
-  implicit class ListUserPoolsResponseOps[Self <: ListUserPoolsResponse] (val x: Self) extends AnyVal {
+  implicit class ListUserPoolsResponseMutableBuilder[Self <: ListUserPoolsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserPools(value: UserPoolListType): Self = StObject.set(x, "UserPools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationKeyType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setUserPoolsUndefined: Self = StObject.set(x, "UserPools", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setUserPoolsVarargs(value: UserPoolDescriptionType*): Self = this.set("UserPools", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserPools(value: UserPoolListType): Self = this.set("UserPools", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserPools: Self = this.set("UserPools", js.undefined)
+    def setUserPoolsVarargs(value: UserPoolDescriptionType*): Self = StObject.set(x, "UserPools", js.Array(value :_*))
   }
 }

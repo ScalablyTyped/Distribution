@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDataSyncAwsOrganizationsSource extends js.Object {
+trait ResourceDataSyncAwsOrganizationsSource extends StObject {
   
   /**
     * If an AWS Organization is present, this is either OrganizationalUnits or EntireOrganization. For OrganizationalUnits, the data is aggregated from a set of organization units. For EntireOrganization, the data is aggregated from the entire AWS Organization. 
@@ -26,30 +27,18 @@ object ResourceDataSyncAwsOrganizationsSource {
   }
   
   @scala.inline
-  implicit class ResourceDataSyncAwsOrganizationsSourceOps[Self <: ResourceDataSyncAwsOrganizationsSource] (val x: Self) extends AnyVal {
+  implicit class ResourceDataSyncAwsOrganizationsSourceMutableBuilder[Self <: ResourceDataSyncAwsOrganizationsSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganizationSourceType(value: ResourceDataSyncOrganizationSourceType): Self = StObject.set(x, "OrganizationSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrganizationalUnits(value: ResourceDataSyncOrganizationalUnitList): Self = StObject.set(x, "OrganizationalUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganizationalUnitsUndefined: Self = StObject.set(x, "OrganizationalUnits", js.undefined)
     
     @scala.inline
-    def setOrganizationSourceType(value: ResourceDataSyncOrganizationSourceType): Self = this.set("OrganizationSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganizationalUnitsVarargs(value: ResourceDataSyncOrganizationalUnit*): Self = this.set("OrganizationalUnits", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrganizationalUnits(value: ResourceDataSyncOrganizationalUnitList): Self = this.set("OrganizationalUnits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationalUnits: Self = this.set("OrganizationalUnits", js.undefined)
+    def setOrganizationalUnitsVarargs(value: ResourceDataSyncOrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListCACertificatesResponse extends js.Object {
+trait ListCACertificatesResponse extends StObject {
   
   /**
     * The CA certificates registered in your AWS account.
@@ -26,33 +27,21 @@ object ListCACertificatesResponse {
   }
   
   @scala.inline
-  implicit class ListCACertificatesResponseOps[Self <: ListCACertificatesResponse] (val x: Self) extends AnyVal {
+  implicit class ListCACertificatesResponseMutableBuilder[Self <: ListCACertificatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificates(value: CACertificates): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificatesVarargs(value: CACertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
     
     @scala.inline
-    def setCertificatesVarargs(value: CACertificate*): Self = this.set("certificates", js.Array(value :_*))
+    def setNextMarker(value: Marker): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificates(value: CACertificates): Self = this.set("certificates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificates: Self = this.set("certificates", js.undefined)
-    
-    @scala.inline
-    def setNextMarker(value: Marker): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextMarker: Self = this.set("nextMarker", js.undefined)
+    def setNextMarkerUndefined: Self = StObject.set(x, "nextMarker", js.undefined)
   }
 }

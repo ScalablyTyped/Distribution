@@ -1,19 +1,36 @@
 package typings.ipfsHttpServer
 
 import typings.ipfsHttpServer.anon.Validate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ipfs-http-server/dist/src/api/routes/resolve", JSImport.Namespace)
-@js.native
-object routesResolveMod extends js.Object {
+object routesResolveMod {
   
+  @JSImport("ipfs-http-server/dist/src/api/routes/resolve", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ipfs-http-server/dist/src/api/routes/resolve", "handler")
+  @js.native
   def handler(request: js.Any, h: js.Any): js.Promise[_] = js.native
   
-  var method: String = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/resolve", "method")
+  @js.native
+  def method: String = js.native
+  @scala.inline
+  def method_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("method")(x.asInstanceOf[js.Any])
   
-  var options: Validate = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/resolve", "options")
+  @js.native
+  def options: Validate = js.native
+  @scala.inline
+  def options_=(x: Validate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   
-  var path: String = js.native
+  @JSImport("ipfs-http-server/dist/src/api/routes/resolve", "path")
+  @js.native
+  def path: String = js.native
+  @scala.inline
+  def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
 }

@@ -19,12 +19,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.relation
 import typings.arcgisJsApi.arcgisJsApiStrings.standard
 import typings.arcgisJsApi.arcgisJsApiStrings.touches
 import typings.arcgisJsApi.arcgisJsApiStrings.within
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryProperties extends js.Object {
+trait QueryProperties extends StObject {
   
   /**
     * Indicates if the service should cache the query results.
@@ -296,263 +297,251 @@ object QueryProperties {
   }
   
   @scala.inline
-  implicit class QueryPropertiesOps[Self <: QueryProperties] (val x: Self) extends AnyVal {
+  implicit class QueryPropertiesMutableBuilder[Self <: QueryProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheHintUndefined: Self = StObject.set(x, "cacheHint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatumTransformation(value: Double): Self = StObject.set(x, "datumTransformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheHint(value: Boolean): Self = this.set("cacheHint", value.asInstanceOf[js.Any])
+    def setDatumTransformationUndefined: Self = StObject.set(x, "datumTransformation", js.undefined)
     
     @scala.inline
-    def deleteCacheHint: Self = this.set("cacheHint", js.undefined)
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatumTransformation(value: Double): Self = this.set("datumTransformation", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def deleteDatumTransformation: Self = this.set("datumTransformation", js.undefined)
+    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGdbVersion(value: String): Self = this.set("gdbVersion", value.asInstanceOf[js.Any])
+    def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGdbVersion: Self = this.set("gdbVersion", js.undefined)
+    def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
     
     @scala.inline
-    def setGeometry(value: GeometryProperties): Self = this.set("geometry", value.asInstanceOf[js.Any])
+    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     @scala.inline
-    def deleteGeometry: Self = this.set("geometry", js.undefined)
+    def setGroupByFieldsForStatistics(value: js.Array[String]): Self = StObject.set(x, "groupByFieldsForStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryPrecision(value: Double): Self = this.set("geometryPrecision", value.asInstanceOf[js.Any])
+    def setGroupByFieldsForStatisticsUndefined: Self = StObject.set(x, "groupByFieldsForStatistics", js.undefined)
     
     @scala.inline
-    def deleteGeometryPrecision: Self = this.set("geometryPrecision", js.undefined)
+    def setGroupByFieldsForStatisticsVarargs(value: String*): Self = StObject.set(x, "groupByFieldsForStatistics", js.Array(value :_*))
     
     @scala.inline
-    def setGroupByFieldsForStatisticsVarargs(value: String*): Self = this.set("groupByFieldsForStatistics", js.Array(value :_*))
+    def setHaving(value: String): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByFieldsForStatistics(value: js.Array[String]): Self = this.set("groupByFieldsForStatistics", value.asInstanceOf[js.Any])
+    def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
     
     @scala.inline
-    def deleteGroupByFieldsForStatistics: Self = this.set("groupByFieldsForStatistics", js.undefined)
+    def setHistoricMoment(value: DateProperties): Self = StObject.set(x, "historicMoment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaving(value: String): Self = this.set("having", value.asInstanceOf[js.Any])
+    def setHistoricMomentUndefined: Self = StObject.set(x, "historicMoment", js.undefined)
     
     @scala.inline
-    def deleteHaving: Self = this.set("having", js.undefined)
+    def setMaxAllowableOffset(value: Double): Self = StObject.set(x, "maxAllowableOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoricMoment(value: DateProperties): Self = this.set("historicMoment", value.asInstanceOf[js.Any])
+    def setMaxAllowableOffsetUndefined: Self = StObject.set(x, "maxAllowableOffset", js.undefined)
     
     @scala.inline
-    def deleteHistoricMoment: Self = this.set("historicMoment", js.undefined)
+    def setMaxRecordCountFactor(value: Double): Self = StObject.set(x, "maxRecordCountFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAllowableOffset(value: Double): Self = this.set("maxAllowableOffset", value.asInstanceOf[js.Any])
+    def setMaxRecordCountFactorUndefined: Self = StObject.set(x, "maxRecordCountFactor", js.undefined)
     
     @scala.inline
-    def deleteMaxAllowableOffset: Self = this.set("maxAllowableOffset", js.undefined)
+    def setMultipatchOption(value: String): Self = StObject.set(x, "multipatchOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRecordCountFactor(value: Double): Self = this.set("maxRecordCountFactor", value.asInstanceOf[js.Any])
+    def setMultipatchOptionUndefined: Self = StObject.set(x, "multipatchOption", js.undefined)
     
     @scala.inline
-    def deleteMaxRecordCountFactor: Self = this.set("maxRecordCountFactor", js.undefined)
+    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipatchOption(value: String): Self = this.set("multipatchOption", value.asInstanceOf[js.Any])
+    def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
     
     @scala.inline
-    def deleteMultipatchOption: Self = this.set("multipatchOption", js.undefined)
+    def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum(value: Double): Self = this.set("num", value.asInstanceOf[js.Any])
+    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
     @scala.inline
-    def deleteNum: Self = this.set("num", js.undefined)
+    def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
     @scala.inline
-    def setObjectIdsVarargs(value: Double*): Self = this.set("objectIds", js.Array(value :_*))
+    def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIds(value: js.Array[Double]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
+    def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
     @scala.inline
-    def deleteObjectIds: Self = this.set("objectIds", js.undefined)
+    def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
     
     @scala.inline
-    def setOrderByFieldsVarargs(value: String*): Self = this.set("orderByFields", js.Array(value :_*))
+    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderByFields(value: js.Array[String]): Self = this.set("orderByFields", value.asInstanceOf[js.Any])
+    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
     @scala.inline
-    def deleteOrderByFields: Self = this.set("orderByFields", js.undefined)
+    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
     @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = this.set("outFields", js.Array(value :_*))
+    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFields(value: js.Array[String]): Self = this.set("outFields", value.asInstanceOf[js.Any])
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteOutFields: Self = this.set("outFields", js.undefined)
+    def setOutStatistics(value: js.Array[StatisticDefinitionProperties]): Self = StObject.set(x, "outStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setOutStatisticsUndefined: Self = StObject.set(x, "outStatistics", js.undefined)
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setOutStatisticsVarargs(value: StatisticDefinitionProperties*): Self = StObject.set(x, "outStatistics", js.Array(value :_*))
     
     @scala.inline
-    def setOutStatisticsVarargs(value: StatisticDefinitionProperties*): Self = this.set("outStatistics", js.Array(value :_*))
+    def setParameterValues(value: js.Array[QueryParameterValues]): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutStatistics(value: js.Array[StatisticDefinitionProperties]): Self = this.set("outStatistics", value.asInstanceOf[js.Any])
+    def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
     @scala.inline
-    def deleteOutStatistics: Self = this.set("outStatistics", js.undefined)
+    def setParameterValuesVarargs(value: QueryParameterValues*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
     
     @scala.inline
-    def setParameterValuesVarargs(value: QueryParameterValues*): Self = this.set("parameterValues", js.Array(value :_*))
+    def setPixelSize(value: SymbolProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterValues(value: js.Array[QueryParameterValues]): Self = this.set("parameterValues", value.asInstanceOf[js.Any])
+    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
     @scala.inline
-    def deleteParameterValues: Self = this.set("parameterValues", js.undefined)
+    def setQuantizationParameters(value: QueryQuantizationParameters): Self = StObject.set(x, "quantizationParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelSize(value: SymbolProperties): Self = this.set("pixelSize", value.asInstanceOf[js.Any])
+    def setQuantizationParametersUndefined: Self = StObject.set(x, "quantizationParameters", js.undefined)
     
     @scala.inline
-    def deletePixelSize: Self = this.set("pixelSize", js.undefined)
+    def setRangeValues(value: js.Array[QueryRangeValues]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantizationParameters(value: QueryQuantizationParameters): Self = this.set("quantizationParameters", value.asInstanceOf[js.Any])
+    def setRangeValuesUndefined: Self = StObject.set(x, "rangeValues", js.undefined)
     
     @scala.inline
-    def deleteQuantizationParameters: Self = this.set("quantizationParameters", js.undefined)
+    def setRangeValuesVarargs(value: QueryRangeValues*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
     
     @scala.inline
-    def setRangeValuesVarargs(value: QueryRangeValues*): Self = this.set("rangeValues", js.Array(value :_*))
+    def setRelationParameter(value: String): Self = StObject.set(x, "relationParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeValues(value: js.Array[QueryRangeValues]): Self = this.set("rangeValues", value.asInstanceOf[js.Any])
+    def setRelationParameterUndefined: Self = StObject.set(x, "relationParameter", js.undefined)
     
     @scala.inline
-    def deleteRangeValues: Self = this.set("rangeValues", js.undefined)
+    def setReturnCentroid(value: Boolean): Self = StObject.set(x, "returnCentroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationParameter(value: String): Self = this.set("relationParameter", value.asInstanceOf[js.Any])
+    def setReturnCentroidUndefined: Self = StObject.set(x, "returnCentroid", js.undefined)
     
     @scala.inline
-    def deleteRelationParameter: Self = this.set("relationParameter", js.undefined)
+    def setReturnDistinctValues(value: Boolean): Self = StObject.set(x, "returnDistinctValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnCentroid(value: Boolean): Self = this.set("returnCentroid", value.asInstanceOf[js.Any])
+    def setReturnDistinctValuesUndefined: Self = StObject.set(x, "returnDistinctValues", js.undefined)
     
     @scala.inline
-    def deleteReturnCentroid: Self = this.set("returnCentroid", js.undefined)
+    def setReturnExceededLimitFeatures(value: Boolean): Self = StObject.set(x, "returnExceededLimitFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnDistinctValues(value: Boolean): Self = this.set("returnDistinctValues", value.asInstanceOf[js.Any])
+    def setReturnExceededLimitFeaturesUndefined: Self = StObject.set(x, "returnExceededLimitFeatures", js.undefined)
     
     @scala.inline
-    def deleteReturnDistinctValues: Self = this.set("returnDistinctValues", js.undefined)
+    def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnExceededLimitFeatures(value: Boolean): Self = this.set("returnExceededLimitFeatures", value.asInstanceOf[js.Any])
+    def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
     
     @scala.inline
-    def deleteReturnExceededLimitFeatures: Self = this.set("returnExceededLimitFeatures", js.undefined)
+    def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnGeometry(value: Boolean): Self = this.set("returnGeometry", value.asInstanceOf[js.Any])
+    def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
     
     @scala.inline
-    def deleteReturnGeometry: Self = this.set("returnGeometry", js.undefined)
+    def setReturnQueryGeometry(value: Boolean): Self = StObject.set(x, "returnQueryGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnM(value: Boolean): Self = this.set("returnM", value.asInstanceOf[js.Any])
+    def setReturnQueryGeometryUndefined: Self = StObject.set(x, "returnQueryGeometry", js.undefined)
     
     @scala.inline
-    def deleteReturnM: Self = this.set("returnM", js.undefined)
+    def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnQueryGeometry(value: Boolean): Self = this.set("returnQueryGeometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnQueryGeometry: Self = this.set("returnQueryGeometry", js.undefined)
-    
-    @scala.inline
-    def setReturnZ(value: Boolean): Self = this.set("returnZ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnZ: Self = this.set("returnZ", js.undefined)
+    def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
     
     @scala.inline
     def setSpatialRelationship(
       value: intersects | contains | crosses | disjoint | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
-    ): Self = this.set("spatialRelationship", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "spatialRelationship", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpatialRelationship: Self = this.set("spatialRelationship", js.undefined)
+    def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
     
     @scala.inline
-    def setSqlFormat(value: none | standard | native): Self = this.set("sqlFormat", value.asInstanceOf[js.Any])
+    def setSqlFormat(value: none | standard | native): Self = StObject.set(x, "sqlFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSqlFormat: Self = this.set("sqlFormat", js.undefined)
+    def setSqlFormatUndefined: Self = StObject.set(x, "sqlFormat", js.undefined)
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = this.set("timeExtent", value.asInstanceOf[js.Any])
+    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeExtent: Self = this.set("timeExtent", js.undefined)
+    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
     @scala.inline
-    def setUnits(value: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setUnits(value: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
     @scala.inline
-    def setWhere(value: String): Self = this.set("where", value.asInstanceOf[js.Any])
+    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteWhere: Self = this.set("where", js.undefined)
+    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

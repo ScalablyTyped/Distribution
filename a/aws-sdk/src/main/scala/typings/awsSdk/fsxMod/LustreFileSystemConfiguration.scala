@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LustreFileSystemConfiguration extends js.Object {
+trait LustreFileSystemConfiguration extends StObject {
   
   var AutomaticBackupRetentionDays: js.UndefOr[typings.awsSdk.fsxMod.AutomaticBackupRetentionDays] = js.native
   
@@ -52,72 +53,60 @@ object LustreFileSystemConfiguration {
   }
   
   @scala.inline
-  implicit class LustreFileSystemConfigurationOps[Self <: LustreFileSystemConfiguration] (val x: Self) extends AnyVal {
+  implicit class LustreFileSystemConfigurationMutableBuilder[Self <: LustreFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "AutomaticBackupRetentionDays", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyTagsToBackups(value: Flag): Self = StObject.set(x, "CopyTagsToBackups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = this.set("AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "CopyTagsToBackups", js.undefined)
     
     @scala.inline
-    def deleteAutomaticBackupRetentionDays: Self = this.set("AutomaticBackupRetentionDays", js.undefined)
+    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = StObject.set(x, "DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyTagsToBackups(value: Flag): Self = this.set("CopyTagsToBackups", value.asInstanceOf[js.Any])
+    def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "DailyAutomaticBackupStartTime", js.undefined)
     
     @scala.inline
-    def deleteCopyTagsToBackups: Self = this.set("CopyTagsToBackups", js.undefined)
+    def setDataRepositoryConfiguration(value: DataRepositoryConfiguration): Self = StObject.set(x, "DataRepositoryConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = this.set("DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    def setDataRepositoryConfigurationUndefined: Self = StObject.set(x, "DataRepositoryConfiguration", js.undefined)
     
     @scala.inline
-    def deleteDailyAutomaticBackupStartTime: Self = this.set("DailyAutomaticBackupStartTime", js.undefined)
+    def setDeploymentType(value: LustreDeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRepositoryConfiguration(value: DataRepositoryConfiguration): Self = this.set("DataRepositoryConfiguration", value.asInstanceOf[js.Any])
+    def setDeploymentTypeUndefined: Self = StObject.set(x, "DeploymentType", js.undefined)
     
     @scala.inline
-    def deleteDataRepositoryConfiguration: Self = this.set("DataRepositoryConfiguration", js.undefined)
+    def setDriveCacheType(value: DriveCacheType): Self = StObject.set(x, "DriveCacheType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentType(value: LustreDeploymentType): Self = this.set("DeploymentType", value.asInstanceOf[js.Any])
+    def setDriveCacheTypeUndefined: Self = StObject.set(x, "DriveCacheType", js.undefined)
     
     @scala.inline
-    def deleteDeploymentType: Self = this.set("DeploymentType", js.undefined)
+    def setMountName(value: LustreFileSystemMountName): Self = StObject.set(x, "MountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriveCacheType(value: DriveCacheType): Self = this.set("DriveCacheType", value.asInstanceOf[js.Any])
+    def setMountNameUndefined: Self = StObject.set(x, "MountName", js.undefined)
     
     @scala.inline
-    def deleteDriveCacheType: Self = this.set("DriveCacheType", js.undefined)
+    def setPerUnitStorageThroughput(value: PerUnitStorageThroughput): Self = StObject.set(x, "PerUnitStorageThroughput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMountName(value: LustreFileSystemMountName): Self = this.set("MountName", value.asInstanceOf[js.Any])
+    def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "PerUnitStorageThroughput", js.undefined)
     
     @scala.inline
-    def deleteMountName: Self = this.set("MountName", js.undefined)
+    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = StObject.set(x, "WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerUnitStorageThroughput(value: PerUnitStorageThroughput): Self = this.set("PerUnitStorageThroughput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerUnitStorageThroughput: Self = this.set("PerUnitStorageThroughput", js.undefined)
-    
-    @scala.inline
-    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = this.set("WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeklyMaintenanceStartTime: Self = this.set("WeeklyMaintenanceStartTime", js.undefined)
+    def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "WeeklyMaintenanceStartTime", js.undefined)
   }
 }

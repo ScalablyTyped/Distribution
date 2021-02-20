@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.CardService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *             .build();
   */
 @js.native
-trait SuggestionsResponse extends js.Object {
+trait SuggestionsResponse extends StObject {
   
   def printJson(): String = js.native
 }
@@ -28,21 +29,9 @@ object SuggestionsResponse {
   }
   
   @scala.inline
-  implicit class SuggestionsResponseOps[Self <: SuggestionsResponse] (val x: Self) extends AnyVal {
+  implicit class SuggestionsResponseMutableBuilder[Self <: SuggestionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPrintJson(value: () => String): Self = this.set("printJson", js.Any.fromFunction0(value))
+    def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }
 }

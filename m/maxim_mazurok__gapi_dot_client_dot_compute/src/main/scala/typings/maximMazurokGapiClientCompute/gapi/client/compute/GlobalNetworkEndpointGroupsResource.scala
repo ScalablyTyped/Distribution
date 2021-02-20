@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.NetworkEndpointGroupOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.OrderBy
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserRequestIdResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlobalNetworkEndpointGroupsResource extends js.Object {
+trait GlobalNetworkEndpointGroupsResource extends StObject {
   
   def attachNetworkEndpoints(request: KeyNetworkEndpointGroup, body: GlobalNetworkEndpointGroupsAttachEndpointsRequest): Request[Operation] = js.native
   /** Attach a network endpoint to the specified network endpoint group. */

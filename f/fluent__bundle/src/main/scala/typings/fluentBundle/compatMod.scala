@@ -1,15 +1,14 @@
 package typings.fluentBundle
 
 import typings.fluentBundle.mod.FluentBundleConstructorOptions
-import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fluent/bundle/compat", JSImport.Namespace)
-@js.native
-object compatMod extends js.Object {
+object compatMod {
   
+  @JSImport("@fluent/bundle/compat", "FluentBundle")
   @js.native
   class FluentBundle protected ()
     extends typings.fluentBundle.mod.FluentBundle {
@@ -19,6 +18,7 @@ object compatMod extends js.Object {
     def this(locales: js.Array[String], options: FluentBundleConstructorOptions) = this()
   }
   
+  @JSImport("@fluent/bundle/compat", "FluentDateTime")
   @js.native
   class FluentDateTime protected ()
     extends typings.fluentBundle.mod.FluentDateTime {
@@ -27,9 +27,12 @@ object compatMod extends js.Object {
     def this(value: js.Any, opts: js.Any) = this()
   }
   
+  @JSImport("@fluent/bundle/compat", "FluentError")
   @js.native
-  class FluentError () extends Error
+  class FluentError ()
+    extends typings.fluentBundle.mod.FluentError
   
+  @JSImport("@fluent/bundle/compat", "FluentNumber")
   @js.native
   class FluentNumber protected ()
     extends typings.fluentBundle.mod.FluentNumber {
@@ -38,12 +41,14 @@ object compatMod extends js.Object {
     def this(value: js.Any, opts: js.Any) = this()
   }
   
+  @JSImport("@fluent/bundle/compat", "FluentResource")
   @js.native
   class FluentResource protected ()
     extends typings.fluentBundle.mod.FluentResource {
     def this(source: String) = this()
   }
   
+  @JSImport("@fluent/bundle/compat", "FluentType")
   @js.native
   class FluentType protected ()
     extends typings.fluentBundle.mod.FluentType {

@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of a message in phishing spike alert.
   */
 @js.native
-trait SchemaGmailMessageInfo extends js.Object {
+trait SchemaGmailMessageInfo extends StObject {
   
   /**
     * The `SHA256` hash of email&#39;s attachment and all MIME parts.
@@ -60,69 +61,57 @@ object SchemaGmailMessageInfo {
   }
   
   @scala.inline
-  implicit class SchemaGmailMessageInfoOps[Self <: SchemaGmailMessageInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaGmailMessageInfoMutableBuilder[Self <: SchemaGmailMessageInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentsSha256Hash(value: js.Array[String]): Self = StObject.set(x, "attachmentsSha256Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsSha256HashUndefined: Self = StObject.set(x, "attachmentsSha256Hash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsSha256HashVarargs(value: String*): Self = StObject.set(x, "attachmentsSha256Hash", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsSha256HashVarargs(value: String*): Self = this.set("attachmentsSha256Hash", js.Array(value :_*))
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentsSha256Hash(value: js.Array[String]): Self = this.set("attachmentsSha256Hash", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteAttachmentsSha256Hash: Self = this.set("attachmentsSha256Hash", js.undefined)
+    def setMd5HashMessageBody(value: String): Self = StObject.set(x, "md5HashMessageBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setMd5HashMessageBodyUndefined: Self = StObject.set(x, "md5HashMessageBody", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setMd5HashSubject(value: String): Self = StObject.set(x, "md5HashSubject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5HashMessageBody(value: String): Self = this.set("md5HashMessageBody", value.asInstanceOf[js.Any])
+    def setMd5HashSubjectUndefined: Self = StObject.set(x, "md5HashSubject", js.undefined)
     
     @scala.inline
-    def deleteMd5HashMessageBody: Self = this.set("md5HashMessageBody", js.undefined)
+    def setMessageBodySnippet(value: String): Self = StObject.set(x, "messageBodySnippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5HashSubject(value: String): Self = this.set("md5HashSubject", value.asInstanceOf[js.Any])
+    def setMessageBodySnippetUndefined: Self = StObject.set(x, "messageBodySnippet", js.undefined)
     
     @scala.inline
-    def deleteMd5HashSubject: Self = this.set("md5HashSubject", js.undefined)
+    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageBodySnippet(value: String): Self = this.set("messageBodySnippet", value.asInstanceOf[js.Any])
+    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
     @scala.inline
-    def deleteMessageBodySnippet: Self = this.set("messageBodySnippet", js.undefined)
+    def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: String): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
     
     @scala.inline
-    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    def setSubjectText(value: String): Self = StObject.set(x, "subjectText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: String): Self = this.set("recipient", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipient: Self = this.set("recipient", js.undefined)
-    
-    @scala.inline
-    def setSubjectText(value: String): Self = this.set("subjectText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubjectText: Self = this.set("subjectText", js.undefined)
+    def setSubjectTextUndefined: Self = StObject.set(x, "subjectText", js.undefined)
   }
 }

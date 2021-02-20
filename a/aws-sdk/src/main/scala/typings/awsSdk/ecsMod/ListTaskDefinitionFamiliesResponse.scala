@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTaskDefinitionFamiliesResponse extends js.Object {
+trait ListTaskDefinitionFamiliesResponse extends StObject {
   
   /**
     * The list of task definition family names that match the ListTaskDefinitionFamilies request.
@@ -26,33 +27,21 @@ object ListTaskDefinitionFamiliesResponse {
   }
   
   @scala.inline
-  implicit class ListTaskDefinitionFamiliesResponseOps[Self <: ListTaskDefinitionFamiliesResponse] (val x: Self) extends AnyVal {
+  implicit class ListTaskDefinitionFamiliesResponseMutableBuilder[Self <: ListTaskDefinitionFamiliesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilies(value: StringList): Self = StObject.set(x, "families", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFamiliesUndefined: Self = StObject.set(x, "families", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFamiliesVarargs(value: String*): Self = StObject.set(x, "families", js.Array(value :_*))
     
     @scala.inline
-    def setFamiliesVarargs(value: String*): Self = this.set("families", js.Array(value :_*))
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilies(value: StringList): Self = this.set("families", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFamilies: Self = this.set("families", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

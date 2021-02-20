@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Committer
 import typings.octokitTypes.anon.Downloadurl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposCreateOrUpdateFileContentsResponse201Data extends js.Object {
+trait ReposCreateOrUpdateFileContentsResponse201Data extends StObject {
   
   var commit: Committer = js.native
   
@@ -22,24 +23,12 @@ object ReposCreateOrUpdateFileContentsResponse201Data {
   }
   
   @scala.inline
-  implicit class ReposCreateOrUpdateFileContentsResponse201DataOps[Self <: ReposCreateOrUpdateFileContentsResponse201Data] (val x: Self) extends AnyVal {
+  implicit class ReposCreateOrUpdateFileContentsResponse201DataMutableBuilder[Self <: ReposCreateOrUpdateFileContentsResponse201Data] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommit(value: Committer): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommit(value: Committer): Self = this.set("commit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContent(value: Downloadurl): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setContent(value: Downloadurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

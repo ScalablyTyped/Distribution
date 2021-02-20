@@ -1,5 +1,6 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details about the content of a YouTube Video.
   */
 @js.native
-trait SchemaVideoContentDetails extends js.Object {
+trait SchemaVideoContentDetails extends StObject {
   
   /**
     * The value of captions indicates whether the video has captions or not.
@@ -84,78 +85,66 @@ object SchemaVideoContentDetails {
   }
   
   @scala.inline
-  implicit class SchemaVideoContentDetailsOps[Self <: SchemaVideoContentDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaVideoContentDetailsMutableBuilder[Self <: SchemaVideoContentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentRating(value: SchemaContentRating): Self = StObject.set(x, "contentRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setContentRatingUndefined: Self = StObject.set(x, "contentRating", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setCountryRestriction(value: SchemaAccessPolicy): Self = StObject.set(x, "countryRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentRating(value: SchemaContentRating): Self = this.set("contentRating", value.asInstanceOf[js.Any])
+    def setCountryRestrictionUndefined: Self = StObject.set(x, "countryRestriction", js.undefined)
     
     @scala.inline
-    def deleteContentRating: Self = this.set("contentRating", js.undefined)
+    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountryRestriction(value: SchemaAccessPolicy): Self = this.set("countryRestriction", value.asInstanceOf[js.Any])
+    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
     @scala.inline
-    def deleteCountryRestriction: Self = this.set("countryRestriction", js.undefined)
+    def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: String): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
     @scala.inline
-    def deleteDefinition: Self = this.set("definition", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDimension(value: String): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDimension: Self = this.set("dimension", js.undefined)
+    def setHasCustomThumbnail(value: Boolean): Self = StObject.set(x, "hasCustomThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setHasCustomThumbnailUndefined: Self = StObject.set(x, "hasCustomThumbnail", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setLicensedContent(value: Boolean): Self = StObject.set(x, "licensedContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasCustomThumbnail(value: Boolean): Self = this.set("hasCustomThumbnail", value.asInstanceOf[js.Any])
+    def setLicensedContentUndefined: Self = StObject.set(x, "licensedContent", js.undefined)
     
     @scala.inline
-    def deleteHasCustomThumbnail: Self = this.set("hasCustomThumbnail", js.undefined)
+    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicensedContent(value: Boolean): Self = this.set("licensedContent", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deleteLicensedContent: Self = this.set("licensedContent", js.undefined)
+    def setRegionRestriction(value: SchemaVideoContentDetailsRegionRestriction): Self = StObject.set(x, "regionRestriction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
-    
-    @scala.inline
-    def setRegionRestriction(value: SchemaVideoContentDetailsRegionRestriction): Self = this.set("regionRestriction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionRestriction: Self = this.set("regionRestriction", js.undefined)
+    def setRegionRestrictionUndefined: Self = StObject.set(x, "regionRestriction", js.undefined)
   }
 }

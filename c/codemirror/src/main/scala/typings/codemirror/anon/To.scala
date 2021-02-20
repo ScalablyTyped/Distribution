@@ -1,11 +1,12 @@
 package typings.codemirror.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait To extends js.Object {
+trait To extends StObject {
   
   var from: Double = js.native
   
@@ -20,24 +21,12 @@ object To {
   }
   
   @scala.inline
-  implicit class ToOps[Self <: To] (val x: Self) extends AnyVal {
+  implicit class ToMutableBuilder[Self <: To] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

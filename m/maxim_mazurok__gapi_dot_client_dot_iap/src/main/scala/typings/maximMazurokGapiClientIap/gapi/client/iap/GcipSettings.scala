@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GcipSettings extends js.Object {
+trait GcipSettings extends StObject {
   
   /** Login page URI associated with the GCIP tenants. Typically, all resources within the same project share the same login page, though it could be overridden at the sub resource level. */
   var loginPageUri: js.UndefOr[String] = js.native
@@ -26,33 +27,21 @@ object GcipSettings {
   }
   
   @scala.inline
-  implicit class GcipSettingsOps[Self <: GcipSettings] (val x: Self) extends AnyVal {
+  implicit class GcipSettingsMutableBuilder[Self <: GcipSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoginPageUri(value: String): Self = StObject.set(x, "loginPageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoginPageUriUndefined: Self = StObject.set(x, "loginPageUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTenantIds(value: js.Array[String]): Self = StObject.set(x, "tenantIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginPageUri(value: String): Self = this.set("loginPageUri", value.asInstanceOf[js.Any])
+    def setTenantIdsUndefined: Self = StObject.set(x, "tenantIds", js.undefined)
     
     @scala.inline
-    def deleteLoginPageUri: Self = this.set("loginPageUri", js.undefined)
-    
-    @scala.inline
-    def setTenantIdsVarargs(value: String*): Self = this.set("tenantIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setTenantIds(value: js.Array[String]): Self = this.set("tenantIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantIds: Self = this.set("tenantIds", js.undefined)
+    def setTenantIdsVarargs(value: String*): Self = StObject.set(x, "tenantIds", js.Array(value :_*))
   }
 }

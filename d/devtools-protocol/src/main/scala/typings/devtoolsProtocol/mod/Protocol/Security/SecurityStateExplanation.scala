@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityStateExplanation extends js.Object {
+trait SecurityStateExplanation extends StObject {
   
   /**
     * Page certificate.
@@ -58,48 +59,36 @@ object SecurityStateExplanation {
   }
   
   @scala.inline
-  implicit class SecurityStateExplanationOps[Self <: SecurityStateExplanation] (val x: Self) extends AnyVal {
+  implicit class SecurityStateExplanationMutableBuilder[Self <: SecurityStateExplanation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateVarargs(value: String*): Self = this.set("certificate", js.Array(value :_*))
+    def setMixedContentType(value: MixedContentType): Self = StObject.set(x, "mixedContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: js.Array[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setRecommendations(value: js.Array[String]): Self = StObject.set(x, "recommendations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setRecommendationsUndefined: Self = StObject.set(x, "recommendations", js.undefined)
     
     @scala.inline
-    def setMixedContentType(value: MixedContentType): Self = this.set("mixedContentType", value.asInstanceOf[js.Any])
+    def setRecommendationsVarargs(value: String*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityState(value: SecurityState): Self = this.set("securityState", value.asInstanceOf[js.Any])
+    def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecommendationsVarargs(value: String*): Self = this.set("recommendations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRecommendations(value: js.Array[String]): Self = this.set("recommendations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecommendations: Self = this.set("recommendations", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

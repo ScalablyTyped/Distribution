@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod.CallRecords
 
 import typings.microsoftGraph.mod.NullableOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserAgent extends js.Object {
+trait UserAgent extends StObject {
   
   // Identifies the version of application software used by this endpoint.
   var applicationVersion: js.UndefOr[NullableOption[String]] = js.native
@@ -23,36 +24,24 @@ object UserAgent {
   }
   
   @scala.inline
-  implicit class UserAgentOps[Self <: UserAgent] (val x: Self) extends AnyVal {
+  implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationVersion(value: NullableOption[String]): Self = StObject.set(x, "applicationVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationVersionNull: Self = StObject.set(x, "applicationVersion", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationVersionUndefined: Self = StObject.set(x, "applicationVersion", js.undefined)
     
     @scala.inline
-    def setApplicationVersion(value: NullableOption[String]): Self = this.set("applicationVersion", value.asInstanceOf[js.Any])
+    def setHeaderValue(value: NullableOption[String]): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteApplicationVersion: Self = this.set("applicationVersion", js.undefined)
+    def setHeaderValueNull: Self = StObject.set(x, "headerValue", null)
     
     @scala.inline
-    def setApplicationVersionNull: Self = this.set("applicationVersion", null)
-    
-    @scala.inline
-    def setHeaderValue(value: NullableOption[String]): Self = this.set("headerValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderValue: Self = this.set("headerValue", js.undefined)
-    
-    @scala.inline
-    def setHeaderValueNull: Self = this.set("headerValue", null)
+    def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
   }
 }

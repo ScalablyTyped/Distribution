@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,27 +39,15 @@ object TextStreamWriter {
   }
   
   @scala.inline
-  implicit class TextStreamWriterOps[Self <: TextStreamWriter] (val x: Self) extends AnyVal {
+  implicit class TextStreamWriterMutableBuilder[Self <: TextStreamWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWrite(value: java.lang.String => Unit): Self = StObject.set(x, "Write", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWriteBlankLines(value: Double => Unit): Self = StObject.set(x, "WriteBlankLines", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWrite(value: java.lang.String => Unit): Self = this.set("Write", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteBlankLines(value: Double => Unit): Self = this.set("WriteBlankLines", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWriteLine(value: java.lang.String => Unit): Self = this.set("WriteLine", js.Any.fromFunction1(value))
+    def setWriteLine(value: java.lang.String => Unit): Self = StObject.set(x, "WriteLine", js.Any.fromFunction1(value))
   }
 }

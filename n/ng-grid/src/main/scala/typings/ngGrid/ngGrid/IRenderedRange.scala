@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRenderedRange extends js.Object {
+trait IRenderedRange extends StObject {
   
   var bottomRow: Double = js.native
   
@@ -20,24 +21,12 @@ object IRenderedRange {
   }
   
   @scala.inline
-  implicit class IRenderedRangeOps[Self <: IRenderedRange] (val x: Self) extends AnyVal {
+  implicit class IRenderedRangeMutableBuilder[Self <: IRenderedRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomRow(value: Double): Self = StObject.set(x, "bottomRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBottomRow(value: Double): Self = this.set("bottomRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopRow(value: Double): Self = this.set("topRow", value.asInstanceOf[js.Any])
+    def setTopRow(value: Double): Self = StObject.set(x, "topRow", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoJSONTranslation extends js.Object {
+trait GeoJSONTranslation extends StObject {
   
   /**
     * The coordinate reference system used to generate this portion of the map.
@@ -75,81 +76,69 @@ object GeoJSONTranslation {
   }
   
   @scala.inline
-  implicit class GeoJSONTranslationOps[Self <: GeoJSONTranslation] (val x: Self) extends AnyVal {
+  implicit class GeoJSONTranslationMutableBuilder[Self <: GeoJSONTranslation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrs(value: String): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHitZone(value: Dictionary[_]): Self = StObject.set(x, "hitZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHitZoneUndefined: Self = StObject.set(x, "hitZone", js.undefined)
     
     @scala.inline
-    def setCrs(value: String): Self = this.set("crs", value.asInstanceOf[js.Any])
+    def setJsonmarginX(value: Double): Self = StObject.set(x, "jsonmarginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHitZone(value: Dictionary[_]): Self = this.set("hitZone", value.asInstanceOf[js.Any])
+    def setJsonmarginXUndefined: Self = StObject.set(x, "jsonmarginX", js.undefined)
     
     @scala.inline
-    def deleteHitZone: Self = this.set("hitZone", js.undefined)
+    def setJsonmarginY(value: Double): Self = StObject.set(x, "jsonmarginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonmarginX(value: Double): Self = this.set("jsonmarginX", value.asInstanceOf[js.Any])
+    def setJsonmarginYUndefined: Self = StObject.set(x, "jsonmarginY", js.undefined)
     
     @scala.inline
-    def deleteJsonmarginX: Self = this.set("jsonmarginX", js.undefined)
+    def setJsonres(value: Double): Self = StObject.set(x, "jsonres", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonmarginY(value: Double): Self = this.set("jsonmarginY", value.asInstanceOf[js.Any])
+    def setJsonresUndefined: Self = StObject.set(x, "jsonres", js.undefined)
     
     @scala.inline
-    def deleteJsonmarginY: Self = this.set("jsonmarginY", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonres(value: Double): Self = this.set("jsonres", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteJsonres: Self = this.set("jsonres", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setXpan(value: Double): Self = StObject.set(x, "xpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXoffset(value: Double): Self = this.set("xoffset", value.asInstanceOf[js.Any])
+    def setXpanUndefined: Self = StObject.set(x, "xpan", js.undefined)
     
     @scala.inline
-    def deleteXoffset: Self = this.set("xoffset", js.undefined)
+    def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXpan(value: Double): Self = this.set("xpan", value.asInstanceOf[js.Any])
+    def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
     
     @scala.inline
-    def deleteXpan: Self = this.set("xpan", js.undefined)
+    def setYpan(value: Double): Self = StObject.set(x, "ypan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYoffset(value: Double): Self = this.set("yoffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYoffset: Self = this.set("yoffset", js.undefined)
-    
-    @scala.inline
-    def setYpan(value: Double): Self = this.set("ypan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYpan: Self = this.set("ypan", js.undefined)
+    def setYpanUndefined: Self = StObject.set(x, "ypan", js.undefined)
   }
 }

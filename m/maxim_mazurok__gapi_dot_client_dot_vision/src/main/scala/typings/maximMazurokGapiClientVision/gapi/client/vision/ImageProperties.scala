@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageProperties extends js.Object {
+trait ImageProperties extends StObject {
   
   /** If present, dominant colors completed successfully. */
   var dominantColors: js.UndefOr[DominantColorsAnnotation] = js.native
@@ -19,24 +20,12 @@ object ImageProperties {
   }
   
   @scala.inline
-  implicit class ImagePropertiesOps[Self <: ImageProperties] (val x: Self) extends AnyVal {
+  implicit class ImagePropertiesMutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDominantColors(value: DominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDominantColors(value: DominantColorsAnnotation): Self = this.set("dominantColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDominantColors: Self = this.set("dominantColors", js.undefined)
+    def setDominantColorsUndefined: Self = StObject.set(x, "dominantColors", js.undefined)
   }
 }

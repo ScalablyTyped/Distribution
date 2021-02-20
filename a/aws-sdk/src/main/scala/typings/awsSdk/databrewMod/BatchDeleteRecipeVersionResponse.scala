@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteRecipeVersionResponse extends js.Object {
+trait BatchDeleteRecipeVersionResponse extends StObject {
   
   /**
     * Errors, if any, that were encountered when deleting the recipe versions.
@@ -26,30 +27,18 @@ object BatchDeleteRecipeVersionResponse {
   }
   
   @scala.inline
-  implicit class BatchDeleteRecipeVersionResponseOps[Self <: BatchDeleteRecipeVersionResponse] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteRecipeVersionResponseMutableBuilder[Self <: BatchDeleteRecipeVersionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrors(value: RecipeErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: RecipeVersionErrorDetail*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: RecipeName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrorsVarargs(value: RecipeVersionErrorDetail*): Self = this.set("Errors", js.Array(value :_*))
-    
-    @scala.inline
-    def setErrors(value: RecipeErrorList): Self = this.set("Errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("Errors", js.undefined)
+    def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

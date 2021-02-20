@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalFormatRuleLoadOptions extends js.Object {
+trait ConditionalFormatRuleLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -52,42 +53,30 @@ object ConditionalFormatRuleLoadOptions {
   }
   
   @scala.inline
-  implicit class ConditionalFormatRuleLoadOptionsOps[Self <: ConditionalFormatRuleLoadOptions] (val x: Self) extends AnyVal {
+  implicit class ConditionalFormatRuleLoadOptionsMutableBuilder[Self <: ConditionalFormatRuleLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormula(value: Boolean): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setFormulaLocal(value: Boolean): Self = StObject.set(x, "formulaLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setFormulaLocalUndefined: Self = StObject.set(x, "formulaLocal", js.undefined)
     
     @scala.inline
-    def setFormula(value: Boolean): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setFormulaR1C1(value: Boolean): Self = StObject.set(x, "formulaR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setFormulaR1C1Undefined: Self = StObject.set(x, "formulaR1C1", js.undefined)
     
     @scala.inline
-    def setFormulaLocal(value: Boolean): Self = this.set("formulaLocal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormulaLocal: Self = this.set("formulaLocal", js.undefined)
-    
-    @scala.inline
-    def setFormulaR1C1(value: Boolean): Self = this.set("formulaR1C1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormulaR1C1: Self = this.set("formulaR1C1", js.undefined)
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
   }
 }

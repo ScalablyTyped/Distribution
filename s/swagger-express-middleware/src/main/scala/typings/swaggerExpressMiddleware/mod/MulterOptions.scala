@@ -5,12 +5,13 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
 import typings.swaggerExpressMiddleware.anon.FieldNameSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MulterOptions extends js.Object {
+trait MulterOptions extends StObject {
   
   /** The destination directory for the uploaded files. */
   var dest: js.UndefOr[String] = js.native
@@ -40,44 +41,32 @@ object MulterOptions {
   }
   
   @scala.inline
-  implicit class MulterOptionsOps[Self <: MulterOptions] (val x: Self) extends AnyVal {
+  implicit class MulterOptionsMutableBuilder[Self <: MulterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDest(value: String): Self = this.set("dest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDest: Self = this.set("dest", js.undefined)
+    def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
     
     @scala.inline
     def setFileFilter(
       value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error, /* acceptFile */ Boolean, Unit]) => Unit
-    ): Self = this.set("fileFilter", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteFileFilter: Self = this.set("fileFilter", js.undefined)
+    def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
     
     @scala.inline
-    def setLimits(value: FieldNameSize): Self = this.set("limits", value.asInstanceOf[js.Any])
+    def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimits: Self = this.set("limits", js.undefined)
+    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
     @scala.inline
-    def setStorage(value: StorageEngine): Self = this.set("storage", value.asInstanceOf[js.Any])
+    def setStorage(value: StorageEngine): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStorage: Self = this.set("storage", js.undefined)
+    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

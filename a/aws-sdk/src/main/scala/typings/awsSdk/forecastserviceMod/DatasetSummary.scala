@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetSummary extends js.Object {
+trait DatasetSummary extends StObject {
   
   /**
     * When the dataset was created.
@@ -46,54 +47,42 @@ object DatasetSummary {
   }
   
   @scala.inline
-  implicit class DatasetSummaryOps[Self <: DatasetSummary] (val x: Self) extends AnyVal {
+  implicit class DatasetSummaryMutableBuilder[Self <: DatasetSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatasetArn(value: Arn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDatasetArnUndefined: Self = StObject.set(x, "DatasetArn", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setDatasetName(value: Name): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetArn(value: Arn): Self = this.set("DatasetArn", value.asInstanceOf[js.Any])
+    def setDatasetNameUndefined: Self = StObject.set(x, "DatasetName", js.undefined)
     
     @scala.inline
-    def deleteDatasetArn: Self = this.set("DatasetArn", js.undefined)
+    def setDatasetType(value: DatasetType): Self = StObject.set(x, "DatasetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetName(value: Name): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    def setDatasetTypeUndefined: Self = StObject.set(x, "DatasetType", js.undefined)
     
     @scala.inline
-    def deleteDatasetName: Self = this.set("DatasetName", js.undefined)
+    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetType(value: DatasetType): Self = this.set("DatasetType", value.asInstanceOf[js.Any])
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def deleteDatasetType: Self = this.set("DatasetType", js.undefined)
+    def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: Domain): Self = this.set("Domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
-    
-    @scala.inline
-    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+    def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
   }
 }

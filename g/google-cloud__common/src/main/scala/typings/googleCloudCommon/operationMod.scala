@@ -3,14 +3,14 @@ package typings.googleCloudCommon
 import typings.googleCloudCommon.serviceObjectMod.MetadataCallback
 import typings.googleCloudCommon.serviceObjectMod.ServiceObject
 import typings.googleCloudCommon.serviceObjectMod.ServiceObjectConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@google-cloud/common/build/src/operation", JSImport.Namespace)
-@js.native
-object operationMod extends js.Object {
+object operationMod {
   
+  @JSImport("@google-cloud/common/build/src/operation", "Operation")
   @js.native
   class Operation[T] protected () extends ServiceObject[T] {
     /**

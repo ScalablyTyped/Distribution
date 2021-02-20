@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LambdaResource extends js.Object {
+trait LambdaResource extends StObject {
   
   /**
     * The array of ARNs for S3Resource objects to trigger the LambdaResource objects associated with this job.
@@ -26,33 +27,21 @@ object LambdaResource {
   }
   
   @scala.inline
-  implicit class LambdaResourceOps[Self <: LambdaResource] (val x: Self) extends AnyVal {
+  implicit class LambdaResourceMutableBuilder[Self <: LambdaResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventTriggers(value: EventTriggerDefinitionList): Self = StObject.set(x, "EventTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventTriggersUndefined: Self = StObject.set(x, "EventTriggers", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventTriggersVarargs(value: EventTriggerDefinition*): Self = StObject.set(x, "EventTriggers", js.Array(value :_*))
     
     @scala.inline
-    def setEventTriggersVarargs(value: EventTriggerDefinition*): Self = this.set("EventTriggers", js.Array(value :_*))
+    def setLambdaArn(value: ResourceARN): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTriggers(value: EventTriggerDefinitionList): Self = this.set("EventTriggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTriggers: Self = this.set("EventTriggers", js.undefined)
-    
-    @scala.inline
-    def setLambdaArn(value: ResourceARN): Self = this.set("LambdaArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambdaArn: Self = this.set("LambdaArn", js.undefined)
+    def setLambdaArnUndefined: Self = StObject.set(x, "LambdaArn", js.undefined)
   }
 }

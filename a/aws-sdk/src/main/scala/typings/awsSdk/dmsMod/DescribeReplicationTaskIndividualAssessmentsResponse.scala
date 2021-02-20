@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeReplicationTaskIndividualAssessmentsResponse extends js.Object {
+trait DescribeReplicationTaskIndividualAssessmentsResponse extends StObject {
   
   /**
     * A pagination token returned for you to pass to a subsequent request. If you pass this token as the Marker value in a subsequent request, the response includes only records beyond the marker, up to the value specified in the request by MaxRecords.
@@ -26,33 +27,21 @@ object DescribeReplicationTaskIndividualAssessmentsResponse {
   }
   
   @scala.inline
-  implicit class DescribeReplicationTaskIndividualAssessmentsResponseOps[Self <: DescribeReplicationTaskIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeReplicationTaskIndividualAssessmentsResponseMutableBuilder[Self <: DescribeReplicationTaskIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplicationTaskIndividualAssessments(value: ReplicationTaskIndividualAssessmentList): Self = StObject.set(x, "ReplicationTaskIndividualAssessments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setReplicationTaskIndividualAssessmentsUndefined: Self = StObject.set(x, "ReplicationTaskIndividualAssessments", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setReplicationTaskIndividualAssessmentsVarargs(value: ReplicationTaskIndividualAssessment*): Self = this.set("ReplicationTaskIndividualAssessments", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationTaskIndividualAssessments(value: ReplicationTaskIndividualAssessmentList): Self = this.set("ReplicationTaskIndividualAssessments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationTaskIndividualAssessments: Self = this.set("ReplicationTaskIndividualAssessments", js.undefined)
+    def setReplicationTaskIndividualAssessmentsVarargs(value: ReplicationTaskIndividualAssessment*): Self = StObject.set(x, "ReplicationTaskIndividualAssessments", js.Array(value :_*))
   }
 }

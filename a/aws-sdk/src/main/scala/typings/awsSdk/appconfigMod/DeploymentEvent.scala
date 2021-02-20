@@ -1,11 +1,12 @@
 package typings.awsSdk.appconfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentEvent extends js.Object {
+trait DeploymentEvent extends StObject {
   
   /**
     * A description of the deployment event. Descriptions include, but are not limited to, the user account or the CloudWatch alarm ARN that initiated a rollback, the percentage of hosts that received the deployment, or in the case of an internal error, a recommendation to attempt a new deployment.
@@ -36,42 +37,30 @@ object DeploymentEvent {
   }
   
   @scala.inline
-  implicit class DeploymentEventOps[Self <: DeploymentEvent] (val x: Self) extends AnyVal {
+  implicit class DeploymentEventMutableBuilder[Self <: DeploymentEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventType(value: DeploymentEventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setOccurredAt(value: Iso8601DateTime): Self = StObject.set(x, "OccurredAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventType(value: DeploymentEventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    def setOccurredAtUndefined: Self = StObject.set(x, "OccurredAt", js.undefined)
     
     @scala.inline
-    def deleteEventType: Self = this.set("EventType", js.undefined)
+    def setTriggeredBy(value: TriggeredBy): Self = StObject.set(x, "TriggeredBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurredAt(value: Iso8601DateTime): Self = this.set("OccurredAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOccurredAt: Self = this.set("OccurredAt", js.undefined)
-    
-    @scala.inline
-    def setTriggeredBy(value: TriggeredBy): Self = this.set("TriggeredBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggeredBy: Self = this.set("TriggeredBy", js.undefined)
+    def setTriggeredByUndefined: Self = StObject.set(x, "TriggeredBy", js.undefined)
   }
 }

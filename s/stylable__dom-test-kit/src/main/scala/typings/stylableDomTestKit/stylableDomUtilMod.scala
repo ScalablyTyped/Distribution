@@ -304,16 +304,48 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.view
 import typings.stylableDomTestKit.stylableDomTestKitStrings.wbr
 import typings.stylableRuntime.typesMod.RuntimeStylesheet
 import typings.stylableRuntime.typesMod.StateValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@stylable/dom-test-kit/cjs/stylable-dom-util", JSImport.Namespace)
-@js.native
-object stylableDomUtilMod extends js.Object {
+object stylableDomUtilMod {
+  
+  @JSImport("@stylable/dom-test-kit/cjs/stylable-dom-util", "StylableDOMUtil")
+  @js.native
+  class StylableDOMUtil protected () extends StObject {
+    def this(stylesheet: RuntimeStylesheet) = this()
+    def this(stylesheet: RuntimeStylesheet, root: Element) = this()
+    
+    def getBaseStateWithParam(stateName: String): String = js.native
+    
+    def getStateValueFromClassName(cls: String, baseState: String): String = js.native
+    
+    def getStyleState(element: PartialElement, stateName: String): String | Boolean | Null = js.native
+    
+    def hasStyleState(element: PartialElement, stateName: String): Boolean = js.native
+    def hasStyleState(element: PartialElement, stateName: String, param: StateValue): Boolean = js.native
+    
+    var root: js.Any = js.native
+    
+    def scopeSelector(): String = js.native
+    def scopeSelector(selector: String): String = js.native
+    
+    def select(): Element | Null = js.native
+    def select(selector: js.UndefOr[scala.Nothing], element: PartialElement): Element | Null = js.native
+    def select(selector: String): Element | Null = js.native
+    def select(selector: String, element: PartialElement): Element | Null = js.native
+    
+    def selectAll(): js.Array[Element] | Null = js.native
+    def selectAll(selector: js.UndefOr[scala.Nothing], element: PartialElement): js.Array[Element] | Null = js.native
+    def selectAll(selector: String): js.Array[Element] | Null = js.native
+    def selectAll(selector: String, element: PartialElement): js.Array[Element] | Null = js.native
+    
+    var stylesheet: js.Any = js.native
+  }
   
   @js.native
-  trait PartialElement extends js.Object {
+  trait PartialElement extends StObject {
     
     var classList: DOMTokenList = js.native
     
@@ -1015,37 +1047,5 @@ object stylableDomUtilMod extends js.Object {
     def querySelector_view(selectors: view): SVGViewElement | Null = js.native
     @JSName("querySelector")
     def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
-  }
-  
-  @js.native
-  class StylableDOMUtil protected () extends js.Object {
-    def this(stylesheet: RuntimeStylesheet) = this()
-    def this(stylesheet: RuntimeStylesheet, root: Element) = this()
-    
-    def getBaseStateWithParam(stateName: String): String = js.native
-    
-    def getStateValueFromClassName(cls: String, baseState: String): String = js.native
-    
-    def getStyleState(element: PartialElement, stateName: String): String | Boolean | Null = js.native
-    
-    def hasStyleState(element: PartialElement, stateName: String): Boolean = js.native
-    def hasStyleState(element: PartialElement, stateName: String, param: StateValue): Boolean = js.native
-    
-    var root: js.Any = js.native
-    
-    def scopeSelector(): String = js.native
-    def scopeSelector(selector: String): String = js.native
-    
-    def select(): Element | Null = js.native
-    def select(selector: js.UndefOr[scala.Nothing], element: PartialElement): Element | Null = js.native
-    def select(selector: String): Element | Null = js.native
-    def select(selector: String, element: PartialElement): Element | Null = js.native
-    
-    def selectAll(): js.Array[Element] | Null = js.native
-    def selectAll(selector: js.UndefOr[scala.Nothing], element: PartialElement): js.Array[Element] | Null = js.native
-    def selectAll(selector: String): js.Array[Element] | Null = js.native
-    def selectAll(selector: String, element: PartialElement): js.Array[Element] | Null = js.native
-    
-    var stylesheet: js.Any = js.native
   }
 }

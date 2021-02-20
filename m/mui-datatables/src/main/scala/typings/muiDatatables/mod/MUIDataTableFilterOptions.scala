@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableFilterOptions extends js.Object {
+trait MUIDataTableFilterOptions extends StObject {
   
   /**
     * Custom rendering inside the filter dialog.
@@ -63,19 +64,7 @@ object MUIDataTableFilterOptions {
   }
   
   @scala.inline
-  implicit class MUIDataTableFilterOptionsOps[Self <: MUIDataTableFilterOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class MUIDataTableFilterOptionsMutableBuilder[Self <: MUIDataTableFilterOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setDisplay(
@@ -85,36 +74,36 @@ object MUIDataTableFilterOptions {
           /* column */ MUIDataTableColumn, 
           Unit
         ], /* index */ Double, /* column */ MUIDataTableColumn, /* filterData */ js.Array[js.Array[String]]) => Unit
-    ): Self = this.set("display", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "display", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
     @scala.inline
-    def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[_]) => Boolean): Self = this.set("logic", js.Any.fromFunction2(value))
+    def setLogic(value: (/* prop */ String, /* filterValue */ js.Array[_]) => Boolean): Self = StObject.set(x, "logic", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLogic: Self = this.set("logic", js.undefined)
+    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
     @scala.inline
-    def deleteNames: Self = this.set("names", js.undefined)
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setRenderValue(value: /* value */ String => String): Self = this.set("renderValue", js.Any.fromFunction1(value))
+    def setRenderValue(value: /* value */ String => String): Self = StObject.set(x, "renderValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRenderValue: Self = this.set("renderValue", js.undefined)
+    def setRenderValueUndefined: Self = StObject.set(x, "renderValue", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWheelInfoOptions extends js.Object {
+trait IWheelInfoOptions extends StObject {
   
   var axis: js.UndefOr[Vec3] = js.native
   
@@ -78,204 +79,192 @@ object IWheelInfoOptions {
   }
   
   @scala.inline
-  implicit class IWheelInfoOptionsOps[Self <: IWheelInfoOptions] (val x: Self) extends AnyVal {
+  implicit class IWheelInfoOptionsMutableBuilder[Self <: IWheelInfoOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxis(value: Vec3): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxleLocal(value: Vec3): Self = StObject.set(x, "axleLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxis(value: Vec3): Self = this.set("axis", value.asInstanceOf[js.Any])
+    def setAxleLocalUndefined: Self = StObject.set(x, "axleLocal", js.undefined)
     
     @scala.inline
-    def deleteAxis: Self = this.set("axis", js.undefined)
+    def setAxleWorld(value: Vec3): Self = StObject.set(x, "axleWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxleLocal(value: Vec3): Self = this.set("axleLocal", value.asInstanceOf[js.Any])
+    def setAxleWorldUndefined: Self = StObject.set(x, "axleWorld", js.undefined)
     
     @scala.inline
-    def deleteAxleLocal: Self = this.set("axleLocal", js.undefined)
+    def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxleWorld(value: Vec3): Self = this.set("axleWorld", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def deleteAxleWorld: Self = this.set("axleWorld", js.undefined)
+    def setChassisConnectionPointLocal(value: Vec3): Self = StObject.set(x, "chassisConnectionPointLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: Body): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setChassisConnectionPointLocalUndefined: Self = StObject.set(x, "chassisConnectionPointLocal", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setChassisConnectionPointWorld(value: Vec3): Self = StObject.set(x, "chassisConnectionPointWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChassisConnectionPointLocal(value: Vec3): Self = this.set("chassisConnectionPointLocal", value.asInstanceOf[js.Any])
+    def setChassisConnectionPointWorldUndefined: Self = StObject.set(x, "chassisConnectionPointWorld", js.undefined)
     
     @scala.inline
-    def deleteChassisConnectionPointLocal: Self = this.set("chassisConnectionPointLocal", js.undefined)
+    def setClippedInvContactDotSuspension(value: Double): Self = StObject.set(x, "clippedInvContactDotSuspension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChassisConnectionPointWorld(value: Vec3): Self = this.set("chassisConnectionPointWorld", value.asInstanceOf[js.Any])
+    def setClippedInvContactDotSuspensionUndefined: Self = StObject.set(x, "clippedInvContactDotSuspension", js.undefined)
     
     @scala.inline
-    def deleteChassisConnectionPointWorld: Self = this.set("chassisConnectionPointWorld", js.undefined)
+    def setCustomSlidingRotationalSpeed(value: Double): Self = StObject.set(x, "customSlidingRotationalSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClippedInvContactDotSuspension(value: Double): Self = this.set("clippedInvContactDotSuspension", value.asInstanceOf[js.Any])
+    def setCustomSlidingRotationalSpeedUndefined: Self = StObject.set(x, "customSlidingRotationalSpeed", js.undefined)
     
     @scala.inline
-    def deleteClippedInvContactDotSuspension: Self = this.set("clippedInvContactDotSuspension", js.undefined)
+    def setDampingCompression(value: Double): Self = StObject.set(x, "dampingCompression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSlidingRotationalSpeed(value: Double): Self = this.set("customSlidingRotationalSpeed", value.asInstanceOf[js.Any])
+    def setDampingCompressionUndefined: Self = StObject.set(x, "dampingCompression", js.undefined)
     
     @scala.inline
-    def deleteCustomSlidingRotationalSpeed: Self = this.set("customSlidingRotationalSpeed", js.undefined)
+    def setDampingRelaxation(value: Double): Self = StObject.set(x, "dampingRelaxation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDampingCompression(value: Double): Self = this.set("dampingCompression", value.asInstanceOf[js.Any])
+    def setDampingRelaxationUndefined: Self = StObject.set(x, "dampingRelaxation", js.undefined)
     
     @scala.inline
-    def deleteDampingCompression: Self = this.set("dampingCompression", js.undefined)
+    def setDeltaRotation(value: Double): Self = StObject.set(x, "deltaRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDampingRelaxation(value: Double): Self = this.set("dampingRelaxation", value.asInstanceOf[js.Any])
+    def setDeltaRotationUndefined: Self = StObject.set(x, "deltaRotation", js.undefined)
     
     @scala.inline
-    def deleteDampingRelaxation: Self = this.set("dampingRelaxation", js.undefined)
+    def setDirection(value: Vec3): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaRotation(value: Double): Self = this.set("deltaRotation", value.asInstanceOf[js.Any])
+    def setDirectionLocal(value: Vec3): Self = StObject.set(x, "directionLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeltaRotation: Self = this.set("deltaRotation", js.undefined)
+    def setDirectionLocalUndefined: Self = StObject.set(x, "directionLocal", js.undefined)
     
     @scala.inline
-    def setDirection(value: Vec3): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setDirectionWorld(value: Vec3): Self = StObject.set(x, "directionWorld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionLocal(value: Vec3): Self = this.set("directionLocal", value.asInstanceOf[js.Any])
+    def setDirectionWorldUndefined: Self = StObject.set(x, "directionWorld", js.undefined)
     
     @scala.inline
-    def deleteDirectionLocal: Self = this.set("directionLocal", js.undefined)
+    def setFrictionSlip(value: Double): Self = StObject.set(x, "frictionSlip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectionWorld(value: Vec3): Self = this.set("directionWorld", value.asInstanceOf[js.Any])
+    def setFrictionSlipUndefined: Self = StObject.set(x, "frictionSlip", js.undefined)
     
     @scala.inline
-    def deleteDirectionWorld: Self = this.set("directionWorld", js.undefined)
+    def setIsFronmtWheel(value: Boolean): Self = StObject.set(x, "isFronmtWheel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrictionSlip(value: Double): Self = this.set("frictionSlip", value.asInstanceOf[js.Any])
+    def setIsFronmtWheelUndefined: Self = StObject.set(x, "isFronmtWheel", js.undefined)
     
     @scala.inline
-    def deleteFrictionSlip: Self = this.set("frictionSlip", js.undefined)
+    def setMaxSuspensionForce(value: Double): Self = StObject.set(x, "maxSuspensionForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFronmtWheel(value: Boolean): Self = this.set("isFronmtWheel", value.asInstanceOf[js.Any])
+    def setMaxSuspensionForceUndefined: Self = StObject.set(x, "maxSuspensionForce", js.undefined)
     
     @scala.inline
-    def deleteIsFronmtWheel: Self = this.set("isFronmtWheel", js.undefined)
+    def setMaxSuspensionTravel(value: Double): Self = StObject.set(x, "maxSuspensionTravel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSuspensionForce(value: Double): Self = this.set("maxSuspensionForce", value.asInstanceOf[js.Any])
+    def setMaxSuspensionTravelUndefined: Self = StObject.set(x, "maxSuspensionTravel", js.undefined)
     
     @scala.inline
-    def deleteMaxSuspensionForce: Self = this.set("maxSuspensionForce", js.undefined)
+    def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSuspensionTravel(value: Double): Self = this.set("maxSuspensionTravel", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteMaxSuspensionTravel: Self = this.set("maxSuspensionTravel", js.undefined)
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Vec3): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setRollInfluence(value: Double): Self = StObject.set(x, "rollInfluence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRollInfluenceUndefined: Self = StObject.set(x, "rollInfluence", js.undefined)
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollInfluence(value: Double): Self = this.set("rollInfluence", value.asInstanceOf[js.Any])
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def deleteRollInfluence: Self = this.set("rollInfluence", js.undefined)
+    def setSkidInfo(value: Double): Self = StObject.set(x, "skidInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSkidInfoUndefined: Self = StObject.set(x, "skidInfo", js.undefined)
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setSteering(value: Double): Self = StObject.set(x, "steering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkidInfo(value: Double): Self = this.set("skidInfo", value.asInstanceOf[js.Any])
+    def setSteeringUndefined: Self = StObject.set(x, "steering", js.undefined)
     
     @scala.inline
-    def deleteSkidInfo: Self = this.set("skidInfo", js.undefined)
+    def setSuspensionForce(value: Double): Self = StObject.set(x, "suspensionForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSteering(value: Double): Self = this.set("steering", value.asInstanceOf[js.Any])
+    def setSuspensionForceUndefined: Self = StObject.set(x, "suspensionForce", js.undefined)
     
     @scala.inline
-    def deleteSteering: Self = this.set("steering", js.undefined)
+    def setSuspensionLength(value: Double): Self = StObject.set(x, "suspensionLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspensionForce(value: Double): Self = this.set("suspensionForce", value.asInstanceOf[js.Any])
+    def setSuspensionLengthUndefined: Self = StObject.set(x, "suspensionLength", js.undefined)
     
     @scala.inline
-    def deleteSuspensionForce: Self = this.set("suspensionForce", js.undefined)
+    def setSuspensionMaxLength(value: Double): Self = StObject.set(x, "suspensionMaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspensionLength(value: Double): Self = this.set("suspensionLength", value.asInstanceOf[js.Any])
+    def setSuspensionMaxLengthUndefined: Self = StObject.set(x, "suspensionMaxLength", js.undefined)
     
     @scala.inline
-    def deleteSuspensionLength: Self = this.set("suspensionLength", js.undefined)
+    def setSuspensionRelativeVelocity(value: Double): Self = StObject.set(x, "suspensionRelativeVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspensionMaxLength(value: Double): Self = this.set("suspensionMaxLength", value.asInstanceOf[js.Any])
+    def setSuspensionRelativeVelocityUndefined: Self = StObject.set(x, "suspensionRelativeVelocity", js.undefined)
     
     @scala.inline
-    def deleteSuspensionMaxLength: Self = this.set("suspensionMaxLength", js.undefined)
+    def setSuspensionRestLength(value: Double): Self = StObject.set(x, "suspensionRestLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspensionRelativeVelocity(value: Double): Self = this.set("suspensionRelativeVelocity", value.asInstanceOf[js.Any])
+    def setSuspensionRestLengthUndefined: Self = StObject.set(x, "suspensionRestLength", js.undefined)
     
     @scala.inline
-    def deleteSuspensionRelativeVelocity: Self = this.set("suspensionRelativeVelocity", js.undefined)
+    def setSuspensionStiffness(value: Double): Self = StObject.set(x, "suspensionStiffness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspensionRestLength(value: Double): Self = this.set("suspensionRestLength", value.asInstanceOf[js.Any])
+    def setSuspensionStiffnessUndefined: Self = StObject.set(x, "suspensionStiffness", js.undefined)
     
     @scala.inline
-    def deleteSuspensionRestLength: Self = this.set("suspensionRestLength", js.undefined)
+    def setUseCustomSlidingRotationalSpeed(value: Boolean): Self = StObject.set(x, "useCustomSlidingRotationalSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspensionStiffness(value: Double): Self = this.set("suspensionStiffness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuspensionStiffness: Self = this.set("suspensionStiffness", js.undefined)
-    
-    @scala.inline
-    def setUseCustomSlidingRotationalSpeed(value: Boolean): Self = this.set("useCustomSlidingRotationalSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseCustomSlidingRotationalSpeed: Self = this.set("useCustomSlidingRotationalSpeed", js.undefined)
+    def setUseCustomSlidingRotationalSpeedUndefined: Self = StObject.set(x, "useCustomSlidingRotationalSpeed", js.undefined)
   }
 }

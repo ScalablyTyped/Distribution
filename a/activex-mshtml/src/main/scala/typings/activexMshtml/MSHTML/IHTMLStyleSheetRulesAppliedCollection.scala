@@ -1,12 +1,13 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:interface-name
 @js.native
-trait IHTMLStyleSheetRulesAppliedCollection extends js.Object {
+trait IHTMLStyleSheetRulesAppliedCollection extends StObject {
   
   def apply(index: Double): IHTMLStyleSheetRule = js.native
   

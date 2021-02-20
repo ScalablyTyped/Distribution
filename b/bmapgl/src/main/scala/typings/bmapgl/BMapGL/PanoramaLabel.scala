@@ -1,12 +1,13 @@
 package typings.bmapgl.BMapGL
 
 import typings.bmapgl.anon.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PanoramaLabel extends js.Object {
+trait PanoramaLabel extends StObject {
   
   def addEventListener(event: String, handler: Callback): Unit = js.native
   
@@ -63,63 +64,51 @@ object PanoramaLabel {
   }
   
   @scala.inline
-  implicit class PanoramaLabelOps[Self <: PanoramaLabel] (val x: Self) extends AnyVal {
+  implicit class PanoramaLabelMutableBuilder[Self <: PanoramaLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEventListener(value: (String, Callback) => Unit): Self = this.set("addEventListener", js.Any.fromFunction2(value))
+    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAltitude(value: () => Double): Self = this.set("getAltitude", js.Any.fromFunction0(value))
+    def setGetPov(value: () => PanoramaPov): Self = StObject.set(x, "getPov", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContent(value: () => String): Self = this.set("getContent", js.Any.fromFunction0(value))
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosition(value: () => Point): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    def setOnclick(value: Target => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPov(value: () => PanoramaPov): Self = this.set("getPov", js.Any.fromFunction0(value))
+    def setOnmouseout(value: Target => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setOnmouseover(value: Target => Unit): Self = StObject.set(x, "onmouseover", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclick(value: Target => Unit): Self = this.set("onclick", js.Any.fromFunction1(value))
+    def setOnremove(value: Target => Unit): Self = StObject.set(x, "onremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnmouseout(value: Target => Unit): Self = this.set("onmouseout", js.Any.fromFunction1(value))
+    def setRemoveEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnmouseover(value: Target => Unit): Self = this.set("onmouseover", js.Any.fromFunction1(value))
+    def setSetAltitude(value: Double => Unit): Self = StObject.set(x, "setAltitude", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnremove(value: Target => Unit): Self = this.set("onremove", js.Any.fromFunction1(value))
+    def setSetContent(value: String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveEventListener(value: (String, Callback) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction2(value))
+    def setSetPosition(value: Point => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAltitude(value: Double => Unit): Self = this.set("setAltitude", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetContent(value: String => Unit): Self = this.set("setContent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPosition(value: Point => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

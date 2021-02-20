@@ -1,6 +1,7 @@
 package typings.grpc.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * server.start();
   * ```
   */
-class Server () extends js.Object {
+class Server () extends StObject {
   def this(options: js.Object) = this()
   
   /**

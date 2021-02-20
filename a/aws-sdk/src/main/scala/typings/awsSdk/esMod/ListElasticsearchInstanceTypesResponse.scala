@@ -1,11 +1,12 @@
 package typings.awsSdk.esMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListElasticsearchInstanceTypesResponse extends js.Object {
+trait ListElasticsearchInstanceTypesResponse extends StObject {
   
   /**
     *  List of instance types supported by Amazon Elasticsearch service for given  ElasticsearchVersion  
@@ -26,33 +27,21 @@ object ListElasticsearchInstanceTypesResponse {
   }
   
   @scala.inline
-  implicit class ListElasticsearchInstanceTypesResponseOps[Self <: ListElasticsearchInstanceTypesResponse] (val x: Self) extends AnyVal {
+  implicit class ListElasticsearchInstanceTypesResponseMutableBuilder[Self <: ListElasticsearchInstanceTypesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElasticsearchInstanceTypes(value: ElasticsearchInstanceTypeList): Self = StObject.set(x, "ElasticsearchInstanceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElasticsearchInstanceTypesUndefined: Self = StObject.set(x, "ElasticsearchInstanceTypes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = StObject.set(x, "ElasticsearchInstanceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = this.set("ElasticsearchInstanceTypes", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchInstanceTypes(value: ElasticsearchInstanceTypeList): Self = this.set("ElasticsearchInstanceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteElasticsearchInstanceTypes: Self = this.set("ElasticsearchInstanceTypes", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

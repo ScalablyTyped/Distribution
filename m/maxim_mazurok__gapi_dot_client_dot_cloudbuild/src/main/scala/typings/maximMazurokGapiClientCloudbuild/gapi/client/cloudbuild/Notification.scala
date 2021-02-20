@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   /** The filter string to use for notification filtering. Currently, this is assumed to be a CEL program. See https://opensource.google/projects/cel for more. */
   var filter: js.UndefOr[String] = js.native
@@ -36,52 +37,40 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpDelivery(value: HTTPDelivery): Self = StObject.set(x, "httpDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setHttpDeliveryUndefined: Self = StObject.set(x, "httpDelivery", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setSlackDelivery(value: SlackDelivery): Self = StObject.set(x, "slackDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpDelivery(value: HTTPDelivery): Self = this.set("httpDelivery", value.asInstanceOf[js.Any])
+    def setSlackDeliveryUndefined: Self = StObject.set(x, "slackDelivery", js.undefined)
     
     @scala.inline
-    def deleteHttpDelivery: Self = this.set("httpDelivery", js.undefined)
+    def setSmtpDelivery(value: SMTPDelivery): Self = StObject.set(x, "smtpDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlackDelivery(value: SlackDelivery): Self = this.set("slackDelivery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlackDelivery: Self = this.set("slackDelivery", js.undefined)
-    
-    @scala.inline
-    def setSmtpDelivery(value: SMTPDelivery): Self = this.set("smtpDelivery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmtpDelivery: Self = this.set("smtpDelivery", js.undefined)
+    def setSmtpDeliveryUndefined: Self = StObject.set(x, "smtpDelivery", js.undefined)
     
     @scala.inline
     def setStructDelivery(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification with TopLevel[js.Any]
-    ): Self = this.set("structDelivery", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "structDelivery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStructDelivery: Self = this.set("structDelivery", js.undefined)
+    def setStructDeliveryUndefined: Self = StObject.set(x, "structDelivery", js.undefined)
   }
 }

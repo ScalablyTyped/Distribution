@@ -4,14 +4,15 @@ import typings.rcVirtualList.interfaceMod.RenderFunc
 import typings.rcVirtualList.interfaceMod.SharedConfig
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-virtual-list/es/hooks/useChildren", JSImport.Namespace)
-@js.native
-object useChildrenMod extends js.Object {
+object useChildrenMod {
   
+  @JSImport("rc-virtual-list/es/hooks/useChildren", JSImport.Default)
+  @js.native
   def default[T](
     list: js.Array[T],
     startIndex: Double,

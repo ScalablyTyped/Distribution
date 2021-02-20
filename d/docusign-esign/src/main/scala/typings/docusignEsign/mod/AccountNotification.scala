@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountNotification extends js.Object {
+trait AccountNotification extends StObject {
   
   /**
     * A complex element that specifies the expiration settings for the envelope.
@@ -35,38 +36,26 @@ object AccountNotification {
   }
   
   @scala.inline
-  implicit class AccountNotificationOps[Self <: AccountNotification] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class AccountNotificationMutableBuilder[Self <: AccountNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setExpirations(
       value: /* A complex element that specifies the expiration settings for the envelope. */ Expirations
-    ): Self = this.set("expirations", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "expirations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirations: Self = this.set("expirations", js.undefined)
+    def setExpirationsUndefined: Self = StObject.set(x, "expirations", js.undefined)
     
     @scala.inline
-    def setReminders(value: /* A complex element that specifies reminder settings for the envelope. */ Reminders): Self = this.set("reminders", value.asInstanceOf[js.Any])
+    def setReminders(value: /* A complex element that specifies reminder settings for the envelope. */ Reminders): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReminders: Self = this.set("reminders", js.undefined)
+    def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
     
     @scala.inline
-    def setUserOverrideEnabled(value: String): Self = this.set("userOverrideEnabled", value.asInstanceOf[js.Any])
+    def setUserOverrideEnabled(value: String): Self = StObject.set(x, "userOverrideEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserOverrideEnabled: Self = this.set("userOverrideEnabled", js.undefined)
+    def setUserOverrideEnabledUndefined: Self = StObject.set(x, "userOverrideEnabled", js.undefined)
   }
 }

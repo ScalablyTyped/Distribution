@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Timer ()
   extends typings.scriptableIos.Timer
-/* static members */
-@JSGlobal("Timer")
-@js.native
-object Timer extends js.Object {
+object Timer {
   
   /**
     * _Schedules a timer._
@@ -34,5 +32,8 @@ object Timer extends js.Object {
     * @param callback - The callback to be called when the timer fires.
     * @see https://docs.scriptable.app/timer/#schedule
     */
+  /* static member */
+  @JSGlobal("Timer.schedule")
+  @js.native
   def schedule(timeInterval: Double, repeats: Boolean, callback: js.Function0[Unit]): typings.scriptableIos.Timer = js.native
 }

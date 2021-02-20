@@ -2,23 +2,34 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.anon.AntLocale
 import typings.antDesignReactNative.anon.MinuteStep
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/date-picker-view", JSImport.Namespace)
-@js.native
-object datePickerViewMod extends js.Object {
+object datePickerViewMod {
   
+  @JSImport("@ant-design/react-native/lib/date-picker-view", JSImport.Default)
   @js.native
   class default ()
     extends typings.antDesignReactNative.datePickerViewDatePickerViewMod.default
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var contextTypes: AntLocale = js.native
+    @JSImport("@ant-design/react-native/lib/date-picker-view", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var defaultProps: MinuteStep = js.native
+    @JSImport("@ant-design/react-native/lib/date-picker-view", "default.contextTypes")
+    @js.native
+    def contextTypes: AntLocale = js.native
+    @scala.inline
+    def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/react-native/lib/date-picker-view", "default.defaultProps")
+    @js.native
+    def defaultProps: MinuteStep = js.native
+    @scala.inline
+    def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

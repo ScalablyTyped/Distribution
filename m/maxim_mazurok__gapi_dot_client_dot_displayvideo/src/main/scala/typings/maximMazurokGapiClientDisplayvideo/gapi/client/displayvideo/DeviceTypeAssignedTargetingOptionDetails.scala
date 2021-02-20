@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceTypeAssignedTargetingOptionDetails extends js.Object {
+trait DeviceTypeAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The display name of the device type. */
   var deviceType: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object DeviceTypeAssignedTargetingOptionDetails {
   }
   
   @scala.inline
-  implicit class DeviceTypeAssignedTargetingOptionDetailsOps[Self <: DeviceTypeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  implicit class DeviceTypeAssignedTargetingOptionDetailsMutableBuilder[Self <: DeviceTypeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceType(value: String): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceTypeUndefined: Self = StObject.set(x, "deviceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
-    
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = this.set("targetingOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetingOptionId: Self = this.set("targetingOptionId", js.undefined)
+    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

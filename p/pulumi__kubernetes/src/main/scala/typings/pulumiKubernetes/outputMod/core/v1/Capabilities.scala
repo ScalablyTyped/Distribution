@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Adds and removes POSIX capabilities from running containers.
   */
 @js.native
-trait Capabilities extends js.Object {
+trait Capabilities extends StObject {
   
   /**
     * Added capabilities
@@ -29,30 +30,18 @@ object Capabilities {
   }
   
   @scala.inline
-  implicit class CapabilitiesOps[Self <: Capabilities] (val x: Self) extends AnyVal {
+  implicit class CapabilitiesMutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrop(value: js.Array[String]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddVarargs(value: String*): Self = this.set("add", js.Array(value :_*))
-    
-    @scala.inline
-    def setAdd(value: js.Array[String]): Self = this.set("add", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDropVarargs(value: String*): Self = this.set("drop", js.Array(value :_*))
-    
-    @scala.inline
-    def setDrop(value: js.Array[String]): Self = this.set("drop", value.asInstanceOf[js.Any])
+    def setDropVarargs(value: String*): Self = StObject.set(x, "drop", js.Array(value :_*))
   }
 }

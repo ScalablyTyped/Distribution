@@ -1,12 +1,11 @@
 package typings.pkgDir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkg-dir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Find the root directory of a Node.js project or npm package.
@@ -31,7 +30,11 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("pkg-dir", JSImport.Namespace)
+  @js.native
   def apply(): js.Promise[js.UndefOr[String]] = js.native
+  @JSImport("pkg-dir", JSImport.Namespace)
+  @js.native
   def apply(cwd: String): js.Promise[js.UndefOr[String]] = js.native
   
   /**
@@ -39,6 +42,10 @@ object mod extends js.Object {
   	@param cwd - Directory to start from. Default: `process.cwd()`.
   	@returns The project root path or `undefined` if it couldn't be found.
   	*/
+  @JSImport("pkg-dir", "sync")
+  @js.native
   def sync(): js.UndefOr[String] = js.native
+  @JSImport("pkg-dir", "sync")
+  @js.native
   def sync(cwd: String): js.UndefOr[String] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.vueRouter.routerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object RouteConfigMultipleViews {
   }
   
   @scala.inline
-  implicit class RouteConfigMultipleViewsOps[Self <: RouteConfigMultipleViews] (val x: Self) extends AnyVal {
+  implicit class RouteConfigMultipleViewsMutableBuilder[Self <: RouteConfigMultipleViews] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponents(value: Dictionary[Component]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProps(value: Dictionary[Boolean | js.Object | RoutePropsFunction]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponents(value: Dictionary[Component]): Self = this.set("components", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComponents: Self = this.set("components", js.undefined)
-    
-    @scala.inline
-    def setProps(value: Dictionary[Boolean | js.Object | RoutePropsFunction]): Self = this.set("props", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProps: Self = this.set("props", js.undefined)
+    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
   }
 }

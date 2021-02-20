@@ -1,12 +1,13 @@
 package typings.openpgp.anon
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Err extends js.Object {
+trait Err extends StObject {
   
   var err: js.Array[Error] | Null = js.native
   
@@ -21,33 +22,21 @@ object Err {
   }
   
   @scala.inline
-  implicit class ErrOps[Self <: Err] (val x: Self) extends AnyVal {
+  implicit class ErrMutableBuilder[Self <: Err] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErr(value: js.Array[Error]): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrNull: Self = StObject.set(x, "err", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrVarargs(value: Error*): Self = StObject.set(x, "err", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: typings.openpgp.mod.key.Key*): Self = this.set("keys", js.Array(value :_*))
+    def setKeys(value: js.Array[typings.openpgp.mod.key.Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: js.Array[typings.openpgp.mod.key.Key]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrVarargs(value: Error*): Self = this.set("err", js.Array(value :_*))
-    
-    @scala.inline
-    def setErr(value: js.Array[Error]): Self = this.set("err", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setErrNull: Self = this.set("err", null)
+    def setKeysVarargs(value: typings.openpgp.mod.key.Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationOptions extends js.Object {
+trait NavigationOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional options to be merged
@@ -91,72 +92,60 @@ object NavigationOptions {
   }
   
   @scala.inline
-  implicit class NavigationOptionsOps[Self <: NavigationOptions] (val x: Self) extends AnyVal {
+  implicit class NavigationOptionsMutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationsOptions(value: AnnotationsOptions | NavigationAnnotationsOptions): Self = StObject.set(x, "annotationsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationsOptionsUndefined: Self = StObject.set(x, "annotationsOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindings(value: NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationsOptions(value: AnnotationsOptions | NavigationAnnotationsOptions): Self = this.set("annotationsOptions", value.asInstanceOf[js.Any])
+    def setBindingsClassName(value: String): Self = StObject.set(x, "bindingsClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnnotationsOptions: Self = this.set("annotationsOptions", js.undefined)
+    def setBindingsClassNameUndefined: Self = StObject.set(x, "bindingsClassName", js.undefined)
     
     @scala.inline
-    def setBindings(value: NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setButtonOptions(value: NavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindingsClassName(value: String): Self = this.set("bindingsClassName", value.asInstanceOf[js.Any])
+    def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
     
     @scala.inline
-    def deleteBindingsClassName: Self = this.set("bindingsClassName", js.undefined)
+    def setEvents(value: NavigationEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonOptions(value: NavigationButtonOptions): Self = this.set("buttonOptions", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteButtonOptions: Self = this.set("buttonOptions", js.undefined)
+    def setIconsURL(value: String): Self = StObject.set(x, "iconsURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: NavigationEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setIconsURLUndefined: Self = StObject.set(x, "iconsURL", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setMenuItemHoverStyle(value: CSSObject): Self = StObject.set(x, "menuItemHoverStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconsURL(value: String): Self = this.set("iconsURL", value.asInstanceOf[js.Any])
+    def setMenuItemHoverStyleUndefined: Self = StObject.set(x, "menuItemHoverStyle", js.undefined)
     
     @scala.inline
-    def deleteIconsURL: Self = this.set("iconsURL", js.undefined)
+    def setMenuItemStyle(value: CSSObject): Self = StObject.set(x, "menuItemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItemHoverStyle(value: CSSObject): Self = this.set("menuItemHoverStyle", value.asInstanceOf[js.Any])
+    def setMenuItemStyleUndefined: Self = StObject.set(x, "menuItemStyle", js.undefined)
     
     @scala.inline
-    def deleteMenuItemHoverStyle: Self = this.set("menuItemHoverStyle", js.undefined)
+    def setMenuStyle(value: CSSObject): Self = StObject.set(x, "menuStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItemStyle(value: CSSObject): Self = this.set("menuItemStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenuItemStyle: Self = this.set("menuItemStyle", js.undefined)
-    
-    @scala.inline
-    def setMenuStyle(value: CSSObject): Self = this.set("menuStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenuStyle: Self = this.set("menuStyle", js.undefined)
+    def setMenuStyleUndefined: Self = StObject.set(x, "menuStyle", js.undefined)
   }
 }

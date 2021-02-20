@@ -1,11 +1,12 @@
 package typings.aliApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Number extends js.Object {
+trait Number extends StObject {
   
   var number: String = js.native
   
@@ -20,24 +21,12 @@ object Number {
   }
   
   @scala.inline
-  implicit class NumberOps[Self <: Number] (val x: Self) extends AnyVal {
+  implicit class NumberMutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNumber(value: String): Self = this.set("number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStreet(value: String): Self = this.set("street", value.asInstanceOf[js.Any])
+    def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
   }
 }

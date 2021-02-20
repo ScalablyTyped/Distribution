@@ -1,12 +1,13 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "PassThroughSlot")
 @js.native
-class PassThroughSlot () extends js.Object {
+class PassThroughSlot () extends StObject {
   def this(anchor: js.Any) = this()
   def this(anchor: js.UndefOr[scala.Nothing], name: js.Any) = this()
   def this(anchor: js.Any, name: js.Any) = this()

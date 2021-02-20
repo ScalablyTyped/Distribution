@@ -2,14 +2,14 @@ package typings.instagramPrivateApi
 
 import typings.instagramPrivateApi.anon.Count
 import typings.instagramPrivateApi.instaStickerMod.InstaSticker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/sticker-builder/stickers/quiz.sticker", JSImport.Namespace)
-@js.native
-object quizStickerMod extends js.Object {
+object quizStickerMod {
   
+  @JSImport("instagram-private-api/dist/sticker-builder/stickers/quiz.sticker", "QuizSticker")
   @js.native
   class QuizSticker () extends InstaSticker {
     

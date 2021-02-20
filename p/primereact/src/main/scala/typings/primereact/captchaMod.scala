@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.captchaCaptchaMod.CaptchaProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/captcha", JSImport.Namespace)
-@js.native
-object captchaMod extends js.Object {
+object captchaMod {
   
+  @JSImport("primereact/captcha", "Captcha")
   @js.native
-  class Captcha ()
-    extends Component[CaptchaProps, js.Any, js.Any]
+  class Captcha protected ()
+    extends typings.primereact.captchaCaptchaMod.Captcha {
+    def this(props: CaptchaProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CaptchaProps, context: js.Any) = this()
+  }
 }

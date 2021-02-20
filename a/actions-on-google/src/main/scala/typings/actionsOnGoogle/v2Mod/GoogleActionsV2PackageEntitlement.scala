@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2PackageEntitlement extends js.Object {
+trait GoogleActionsV2PackageEntitlement extends StObject {
   
   /**
     * List of entitlements for a given app
@@ -26,33 +27,21 @@ object GoogleActionsV2PackageEntitlement {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2PackageEntitlementOps[Self <: GoogleActionsV2PackageEntitlement] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2PackageEntitlementMutableBuilder[Self <: GoogleActionsV2PackageEntitlement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntitlements(value: js.Array[GoogleActionsV2Entitlement]): Self = StObject.set(x, "entitlements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntitlementsUndefined: Self = StObject.set(x, "entitlements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntitlementsVarargs(value: GoogleActionsV2Entitlement*): Self = StObject.set(x, "entitlements", js.Array(value :_*))
     
     @scala.inline
-    def setEntitlementsVarargs(value: GoogleActionsV2Entitlement*): Self = this.set("entitlements", js.Array(value :_*))
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntitlements(value: js.Array[GoogleActionsV2Entitlement]): Self = this.set("entitlements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntitlements: Self = this.set("entitlements", js.undefined)
-    
-    @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows photo file properties. */
 @js.native
-trait SystemPhotoProperties extends js.Object {
+trait SystemPhotoProperties extends StObject {
   
   /** Gets the name of the System.Photo.CameraManufacturer property (one of the Windows photo file properties). */
   var cameraManufacturer: String = js.native
@@ -38,33 +39,21 @@ object SystemPhotoProperties {
   }
   
   @scala.inline
-  implicit class SystemPhotoPropertiesOps[Self <: SystemPhotoProperties] (val x: Self) extends AnyVal {
+  implicit class SystemPhotoPropertiesMutableBuilder[Self <: SystemPhotoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCameraManufacturer(value: String): Self = StObject.set(x, "cameraManufacturer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateTaken(value: String): Self = StObject.set(x, "dateTaken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraManufacturer(value: String): Self = this.set("cameraManufacturer", value.asInstanceOf[js.Any])
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraModel(value: String): Self = this.set("cameraModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDateTaken(value: String): Self = this.set("dateTaken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPeopleNames(value: String): Self = this.set("peopleNames", value.asInstanceOf[js.Any])
+    def setPeopleNames(value: String): Self = StObject.set(x, "peopleNames", value.asInstanceOf[js.Any])
   }
 }

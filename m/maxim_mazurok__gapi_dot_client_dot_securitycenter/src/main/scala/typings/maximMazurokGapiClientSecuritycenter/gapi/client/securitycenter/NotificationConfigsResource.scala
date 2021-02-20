@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientSecuritycenter.anon.PageSize
 import typings.maximMazurokGapiClientSecuritycenter.anon.PrettyPrint
 import typings.maximMazurokGapiClientSecuritycenter.anon.QuotaUser
 import typings.maximMazurokGapiClientSecuritycenter.anon.UpdateMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationConfigsResource extends js.Object {
+trait NotificationConfigsResource extends StObject {
   
   /** Creates a notification config. */
   def create(request: ConfigId): Request[NotificationConfig] = js.native

@@ -1,12 +1,13 @@
 package typings.popmotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("popmotion/lib/utils/pipe", JSImport.Namespace)
-@js.native
-object pipeMod extends js.Object {
+object pipeMod {
   
+  @JSImport("popmotion/lib/utils/pipe", "pipe")
+  @js.native
   def pipe(transformers: js.Function*): js.Function = js.native
 }

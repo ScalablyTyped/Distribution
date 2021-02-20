@@ -1,11 +1,12 @@
 package typings.shopifyBuy.ShopifyBuy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Collection extends js.Object {
+trait Collection extends StObject {
   
   var body_html: String = js.native
   
@@ -53,57 +54,45 @@ object Collection {
   }
   
   @scala.inline
-  implicit class CollectionOps[Self <: Collection] (val x: Self) extends AnyVal {
+  implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody_html(value: String): Self = this.set("body_html", value.asInstanceOf[js.Any])
+    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
+    def setMetafields(value: js.Array[_]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMetafieldsVarargs(value: js.Any*): Self = StObject.set(x, "metafields", js.Array(value :_*))
     
     @scala.inline
-    def setImage(value: Image): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetafieldsVarargs(value: js.Any*): Self = this.set("metafields", js.Array(value :_*))
+    def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetafields(value: js.Array[_]): Self = this.set("metafields", value.asInstanceOf[js.Any])
+    def setPublished_scope(value: String): Self = StObject.set(x, "published_scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished(value: Boolean): Self = this.set("published", value.asInstanceOf[js.Any])
+    def setSort_order(value: String): Self = StObject.set(x, "sort_order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished_at(value: String): Self = this.set("published_at", value.asInstanceOf[js.Any])
+    def setTemplate_suffix(value: String): Self = StObject.set(x, "template_suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished_scope(value: String): Self = this.set("published_scope", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort_order(value: String): Self = this.set("sort_order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate_suffix(value: String): Self = this.set("template_suffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdated_at(value: String): Self = this.set("updated_at", value.asInstanceOf[js.Any])
+    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

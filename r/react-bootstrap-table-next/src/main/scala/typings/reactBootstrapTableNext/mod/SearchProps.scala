@@ -1,12 +1,13 @@
 package typings.reactBootstrapTableNext.mod
 
 import typings.reactBootstrapTableNext.anon.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SearchProps[T] extends js.Object {
+trait SearchProps[T] extends StObject {
   
   var defaultSearch: js.UndefOr[String] = js.native
   
@@ -26,42 +27,30 @@ object SearchProps {
   }
   
   @scala.inline
-  implicit class SearchPropsOps[Self <: SearchProps[_], T] (val x: Self with SearchProps[T]) extends AnyVal {
+  implicit class SearchPropsMutableBuilder[Self <: SearchProps[_], T] (val x: Self with SearchProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSearchUndefined: Self = StObject.set(x, "defaultSearch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnColumnMatch(value: /* searchProps */ Column[T] => Boolean): Self = StObject.set(x, "onColumnMatch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultSearch(value: String): Self = this.set("defaultSearch", value.asInstanceOf[js.Any])
+    def setOnColumnMatchUndefined: Self = StObject.set(x, "onColumnMatch", js.undefined)
     
     @scala.inline
-    def deleteDefaultSearch: Self = this.set("defaultSearch", js.undefined)
+    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnColumnMatch(value: /* searchProps */ Column[T] => Boolean): Self = this.set("onColumnMatch", js.Any.fromFunction1(value))
+    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     @scala.inline
-    def deleteOnColumnMatch: Self = this.set("onColumnMatch", js.undefined)
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
-    
-    @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
   }
 }

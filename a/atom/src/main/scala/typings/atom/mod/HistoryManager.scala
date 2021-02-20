@@ -1,12 +1,13 @@
 package typings.atom.mod
 
 import typings.atom.anon.Reloaded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HistoryManager extends js.Object {
+trait HistoryManager extends StObject {
   
   /**
     *  Clear all projects from the history.
@@ -34,27 +35,15 @@ object HistoryManager {
   }
   
   @scala.inline
-  implicit class HistoryManagerOps[Self <: HistoryManager] (val x: Self) extends AnyVal {
+  implicit class HistoryManagerMutableBuilder[Self <: HistoryManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearProjects(value: () => Unit): Self = StObject.set(x, "clearProjects", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetProjects(value: () => js.Array[ProjectHistory]): Self = StObject.set(x, "getProjects", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClearProjects(value: () => Unit): Self = this.set("clearProjects", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetProjects(value: () => js.Array[ProjectHistory]): Self = this.set("getProjects", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnDidChangeProjects(value: js.Function1[/* args */ Reloaded, Unit] => Disposable): Self = this.set("onDidChangeProjects", js.Any.fromFunction1(value))
+    def setOnDidChangeProjects(value: js.Function1[/* args */ Reloaded, Unit] => Disposable): Self = StObject.set(x, "onDidChangeProjects", js.Any.fromFunction1(value))
   }
 }

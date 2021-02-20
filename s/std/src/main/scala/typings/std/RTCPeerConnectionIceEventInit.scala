@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,36 +21,24 @@ object RTCPeerConnectionIceEventInit {
   }
   
   @scala.inline
-  implicit class RTCPeerConnectionIceEventInitOps[Self <: RTCPeerConnectionIceEventInit] (val x: Self) extends AnyVal {
+  implicit class RTCPeerConnectionIceEventInitMutableBuilder[Self <: RTCPeerConnectionIceEventInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCandidate(value: RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCandidateNull: Self = StObject.set(x, "candidate", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
     
     @scala.inline
-    def setCandidate(value: RTCIceCandidate): Self = this.set("candidate", value.asInstanceOf[js.Any])
+    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCandidate: Self = this.set("candidate", js.undefined)
+    def setUrlNull: Self = StObject.set(x, "url", null)
     
     @scala.inline
-    def setCandidateNull: Self = this.set("candidate", null)
-    
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setUrlNull: Self = this.set("url", null)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

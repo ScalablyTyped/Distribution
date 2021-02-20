@@ -1,15 +1,15 @@
 package typings.three
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLProperties", JSImport.Namespace)
-@js.native
-object webGLPropertiesMod extends js.Object {
+object webGLPropertiesMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLProperties", "WebGLProperties")
   @js.native
-  class WebGLProperties () extends js.Object {
+  class WebGLProperties () extends StObject {
     
     def dispose(): Unit = js.native
     

@@ -1,6 +1,6 @@
 package typings.wordpressComponents
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.Booleanish
@@ -75,21 +75,33 @@ import typings.wordpressComponents.wordpressComponentsStrings.tree
 import typings.wordpressComponents.wordpressComponentsStrings.url
 import typings.wordpressComponents.wordpressComponentsStrings.vertical
 import typings.wordpressComponents.wordpressComponentsStrings.yes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/components/range-control", JSImport.Namespace)
-@js.native
-object rangeControlMod extends js.Object {
+object rangeControlMod {
   
-  @js.native
-  object RangeControl extends js.Object {
+  object default extends Shortcut {
+    
+    @JSImport("@wordpress/components/range-control", JSImport.Default)
+    @js.native
+    val ^ : ComponentType[Props] = js.native
+    
+    type _To = ComponentType[Props]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: ComponentType[Props] = ^
+  }
+  
+  object RangeControl {
     
     /* Inlined parent std.Omit<react.react.HTMLProps<std.HTMLInputElement>, keyof @wordpress/components.@wordpress/components/base-control.default.ControlProps | 'onChange'> */
     /* Inlined parent @wordpress/components.@wordpress/components/base-control.default.ControlProps */
     @js.native
-    trait Props extends js.Object {
+    trait Props extends StObject {
+      
+      var default: js.UndefOr[Boolean] = js.native
       
       var about: js.UndefOr[String] = js.native
       
@@ -289,8 +301,6 @@ object rangeControlMod extends js.Object {
       var datatype: js.UndefOr[String] = js.native
       
       var dateTime: js.UndefOr[String] = js.native
-      
-      var default: js.UndefOr[Boolean] = js.native
       
       var defaultChecked: js.UndefOr[Boolean] = js.native
       
@@ -716,7 +726,4 @@ object rangeControlMod extends js.Object {
       var wrap: js.UndefOr[String] = js.native
     }
   }
-  
-  @js.native
-  object default extends TopLevel[ComponentType[Props]]
 }

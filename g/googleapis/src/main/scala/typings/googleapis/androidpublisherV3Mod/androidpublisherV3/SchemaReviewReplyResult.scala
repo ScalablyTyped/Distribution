@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaReviewReplyResult extends js.Object {
+trait SchemaReviewReplyResult extends StObject {
   
   /**
     * The time at which the reply took effect.
@@ -26,30 +27,18 @@ object SchemaReviewReplyResult {
   }
   
   @scala.inline
-  implicit class SchemaReviewReplyResultOps[Self <: SchemaReviewReplyResult] (val x: Self) extends AnyVal {
+  implicit class SchemaReviewReplyResultMutableBuilder[Self <: SchemaReviewReplyResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastEdited(value: SchemaTimestamp): Self = StObject.set(x, "lastEdited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastEditedUndefined: Self = StObject.set(x, "lastEdited", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEdited(value: SchemaTimestamp): Self = this.set("lastEdited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastEdited: Self = this.set("lastEdited", js.undefined)
-    
-    @scala.inline
-    def setReplyText(value: String): Self = this.set("replyText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyText: Self = this.set("replyText", js.undefined)
+    def setReplyTextUndefined: Self = StObject.set(x, "replyText", js.undefined)
   }
 }

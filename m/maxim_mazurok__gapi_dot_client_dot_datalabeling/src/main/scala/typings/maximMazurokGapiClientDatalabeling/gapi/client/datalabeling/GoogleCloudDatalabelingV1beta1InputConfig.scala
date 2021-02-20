@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1InputConfig extends js.Object {
+trait GoogleCloudDatalabelingV1beta1InputConfig extends StObject {
   
   /** Optional. The type of annotation to be performed on this data. You must specify this field if you are using this InputConfig in an EvaluationJob. */
   var annotationType: js.UndefOr[String] = js.native
@@ -37,54 +38,42 @@ object GoogleCloudDatalabelingV1beta1InputConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1InputConfigOps[Self <: GoogleCloudDatalabelingV1beta1InputConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1InputConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1InputConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBigquerySource(value: GoogleCloudDatalabelingV1beta1BigQuerySource): Self = StObject.set(x, "bigquerySource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationType(value: String): Self = this.set("annotationType", value.asInstanceOf[js.Any])
+    def setBigquerySourceUndefined: Self = StObject.set(x, "bigquerySource", js.undefined)
     
     @scala.inline
-    def deleteAnnotationType: Self = this.set("annotationType", js.undefined)
+    def setClassificationMetadata(value: GoogleCloudDatalabelingV1beta1ClassificationMetadata): Self = StObject.set(x, "classificationMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigquerySource(value: GoogleCloudDatalabelingV1beta1BigQuerySource): Self = this.set("bigquerySource", value.asInstanceOf[js.Any])
+    def setClassificationMetadataUndefined: Self = StObject.set(x, "classificationMetadata", js.undefined)
     
     @scala.inline
-    def deleteBigquerySource: Self = this.set("bigquerySource", js.undefined)
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassificationMetadata(value: GoogleCloudDatalabelingV1beta1ClassificationMetadata): Self = this.set("classificationMetadata", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteClassificationMetadata: Self = this.set("classificationMetadata", js.undefined)
+    def setGcsSource(value: GoogleCloudDatalabelingV1beta1GcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setTextMetadata(value: GoogleCloudDatalabelingV1beta1TextMetadata): Self = StObject.set(x, "textMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsSource(value: GoogleCloudDatalabelingV1beta1GcsSource): Self = this.set("gcsSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcsSource: Self = this.set("gcsSource", js.undefined)
-    
-    @scala.inline
-    def setTextMetadata(value: GoogleCloudDatalabelingV1beta1TextMetadata): Self = this.set("textMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextMetadata: Self = this.set("textMetadata", js.undefined)
+    def setTextMetadataUndefined: Self = StObject.set(x, "textMetadata", js.undefined)
   }
 }

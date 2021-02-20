@@ -1,11 +1,12 @@
 package typings.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientFileReadOptions extends js.Object {
+trait ClientFileReadOptions extends StObject {
   
   var arrayBuffer: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object ClientFileReadOptions {
   }
   
   @scala.inline
-  implicit class ClientFileReadOptionsOps[Self <: ClientFileReadOptions] (val x: Self) extends AnyVal {
+  implicit class ClientFileReadOptionsMutableBuilder[Self <: ClientFileReadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayBuffer(value: Boolean): Self = this.set("arrayBuffer", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteArrayBuffer: Self = this.set("arrayBuffer", js.undefined)
+    def setBlob(value: Boolean): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: Boolean): Self = this.set("blob", value.asInstanceOf[js.Any])
+    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
     @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
+    def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuffer(value: Boolean): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    def setHttpCacheUndefined: Self = StObject.set(x, "httpCache", js.undefined)
     
     @scala.inline
-    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpCache(value: Boolean): Self = this.set("httpCache", value.asInstanceOf[js.Any])
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def deleteHttpCache: Self = this.set("httpCache", js.undefined)
+    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRev(value: String): Self = this.set("rev", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteRev: Self = this.set("rev", js.undefined)
+    def setVersionTag(value: String): Self = StObject.set(x, "versionTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
-    
-    @scala.inline
-    def setVersionTag(value: String): Self = this.set("versionTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionTag: Self = this.set("versionTag", js.undefined)
+    def setVersionTagUndefined: Self = StObject.set(x, "versionTag", js.undefined)
   }
 }

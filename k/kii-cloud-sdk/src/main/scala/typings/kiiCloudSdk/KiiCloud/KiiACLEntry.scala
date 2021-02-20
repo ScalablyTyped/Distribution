@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a KiiACLEntry object
   */
 @js.native
-trait KiiACLEntry extends js.Object {
+trait KiiACLEntry extends StObject {
   
   /**
     * Get the action that is being permitted/restricted in this entry
@@ -80,36 +81,24 @@ object KiiACLEntry {
   }
   
   @scala.inline
-  implicit class KiiACLEntryOps[Self <: KiiACLEntry] (val x: Self) extends AnyVal {
+  implicit class KiiACLEntryMutableBuilder[Self <: KiiACLEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAction(value: () => KiiACLAction): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGrant(value: () => Boolean): Self = StObject.set(x, "getGrant", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSubject(value: () => js.Any): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAction(value: () => KiiACLAction): Self = this.set("getAction", js.Any.fromFunction0(value))
+    def setSetAction(value: KiiACLAction => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGrant(value: () => Boolean): Self = this.set("getGrant", js.Any.fromFunction0(value))
+    def setSetGrant(value: Boolean => Unit): Self = StObject.set(x, "setGrant", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSubject(value: () => js.Any): Self = this.set("getSubject", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetAction(value: KiiACLAction => Unit): Self = this.set("setAction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetGrant(value: Boolean => Unit): Self = this.set("setGrant", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubject(value: KiiACLSubject => Unit): Self = this.set("setSubject", js.Any.fromFunction1(value))
+    def setSetSubject(value: KiiACLSubject => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
   }
 }

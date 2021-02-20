@@ -1,11 +1,12 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableState[D /* <: js.Object */] extends js.Object {
+trait TableState[D /* <: js.Object */] extends StObject {
   
   var hiddenColumns: js.UndefOr[js.Array[IdType[D]]] = js.native
 }
@@ -18,27 +19,15 @@ object TableState {
   }
   
   @scala.inline
-  implicit class TableStateOps[Self <: TableState[_], D /* <: js.Object */] (val x: Self with TableState[D]) extends AnyVal {
+  implicit class TableStateMutableBuilder[Self <: TableState[_], D /* <: js.Object */] (val x: Self with TableState[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHiddenColumns(value: js.Array[IdType[D]]): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHiddenColumnsVarargs(value: IdType[D]*): Self = this.set("hiddenColumns", js.Array(value :_*))
-    
-    @scala.inline
-    def setHiddenColumns(value: js.Array[IdType[D]]): Self = this.set("hiddenColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHiddenColumns: Self = this.set("hiddenColumns", js.undefined)
+    def setHiddenColumnsVarargs(value: IdType[D]*): Self = StObject.set(x, "hiddenColumns", js.Array(value :_*))
   }
 }

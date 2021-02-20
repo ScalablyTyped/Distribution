@@ -1,15 +1,15 @@
 package typings.three.constantsMod
 
+import typings.three.constantsMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlendingDstFactor extends js.Object
-@JSImport("three/src/constants", "BlendingDstFactor")
-@js.native
-object BlendingDstFactor extends js.Object {
+sealed trait BlendingDstFactor extends StObject
+object BlendingDstFactor {
   
-  @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[BlendingDstFactor with scala.Nothing] = js.native
+  @scala.inline
+  def apply(value: scala.Nothing): js.UndefOr[BlendingDstFactor with scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("BlendingDstFactor")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BlendingDstFactor with scala.Nothing]]
 }

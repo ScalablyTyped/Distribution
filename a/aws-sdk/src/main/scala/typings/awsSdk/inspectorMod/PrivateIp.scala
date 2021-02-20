@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrivateIp extends js.Object {
+trait PrivateIp extends StObject {
   
   /**
     * The DNS name of the private IP address.
@@ -26,30 +27,18 @@ object PrivateIp {
   }
   
   @scala.inline
-  implicit class PrivateIpOps[Self <: PrivateIp] (val x: Self) extends AnyVal {
+  implicit class PrivateIpMutableBuilder[Self <: PrivateIp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrivateDnsName(value: Text): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateDnsNameUndefined: Self = StObject.set(x, "privateDnsName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateIpAddress(value: Text): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateDnsName(value: Text): Self = this.set("privateDnsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateDnsName: Self = this.set("privateDnsName", js.undefined)
-    
-    @scala.inline
-    def setPrivateIpAddress(value: Text): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
   }
 }

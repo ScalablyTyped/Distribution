@@ -1,11 +1,12 @@
 package typings.primereact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HtmlValue extends js.Object {
+trait HtmlValue extends StObject {
   
   var delta: js.Any = js.native
   
@@ -24,33 +25,21 @@ object HtmlValue {
   }
   
   @scala.inline
-  implicit class HtmlValueOps[Self <: HtmlValue] (val x: Self) extends AnyVal {
+  implicit class HtmlValueMutableBuilder[Self <: HtmlValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: js.Any): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHtmlValue(value: String): Self = StObject.set(x, "htmlValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtmlValueNull: Self = StObject.set(x, "htmlValue", null)
     
     @scala.inline
-    def setDelta(value: js.Any): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextValue(value: String): Self = this.set("textValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlValue(value: String): Self = this.set("htmlValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlValueNull: Self = this.set("htmlValue", null)
+    def setTextValue(value: String): Self = StObject.set(x, "textValue", value.asInstanceOf[js.Any])
   }
 }

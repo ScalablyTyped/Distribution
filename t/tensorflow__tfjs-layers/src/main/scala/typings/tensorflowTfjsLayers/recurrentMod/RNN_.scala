@@ -7,6 +7,7 @@ import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
 import typings.tensorflowTfjsLayers.topologyMod.InputSpec
 import typings.tensorflowTfjsLayers.topologyMod.Layer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,14 +56,24 @@ class RNN_ protected () extends Layer {
   val unroll: Boolean = js.native
 }
 /* static members */
-@JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN")
-@js.native
-object RNN_ extends js.Object {
+object RNN_ {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @nocollapse */
-  var className: String = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN.className")
+  @js.native
+  def className: String = js.native
+  @scala.inline
+  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   
   /** @nocollapse */
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN.fromConfig")
+  @js.native
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "RNN.fromConfig")
+  @js.native
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
 }

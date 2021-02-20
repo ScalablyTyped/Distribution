@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.iEffectFallbacksMod.IEffectFallbacks
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/effectFallbacks", JSImport.Namespace)
-@js.native
-object effectFallbacksMod extends js.Object {
+object effectFallbacksMod {
   
+  @JSImport("babylonjs/Materials/effectFallbacks", "EffectFallbacks")
   @js.native
   class EffectFallbacks () extends IEffectFallbacks {
     

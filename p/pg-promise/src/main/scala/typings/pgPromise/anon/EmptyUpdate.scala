@@ -1,11 +1,12 @@
 package typings.pgPromise.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmptyUpdate extends js.Object {
+trait EmptyUpdate extends StObject {
   
   var emptyUpdate: js.UndefOr[js.Any] = js.native
   
@@ -22,36 +23,24 @@ object EmptyUpdate {
   }
   
   @scala.inline
-  implicit class EmptyUpdateOps[Self <: EmptyUpdate] (val x: Self) extends AnyVal {
+  implicit class EmptyUpdateMutableBuilder[Self <: EmptyUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmptyUpdate(value: js.Any): Self = StObject.set(x, "emptyUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmptyUpdateUndefined: Self = StObject.set(x, "emptyUpdate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableAlias(value: String): Self = StObject.set(x, "tableAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyUpdate(value: js.Any): Self = this.set("emptyUpdate", value.asInstanceOf[js.Any])
+    def setTableAliasUndefined: Self = StObject.set(x, "tableAlias", js.undefined)
     
     @scala.inline
-    def deleteEmptyUpdate: Self = this.set("emptyUpdate", js.undefined)
+    def setValueAlias(value: String): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableAlias(value: String): Self = this.set("tableAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableAlias: Self = this.set("tableAlias", js.undefined)
-    
-    @scala.inline
-    def setValueAlias(value: String): Self = this.set("valueAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueAlias: Self = this.set("valueAlias", js.undefined)
+    def setValueAliasUndefined: Self = StObject.set(x, "valueAlias", js.undefined)
   }
 }

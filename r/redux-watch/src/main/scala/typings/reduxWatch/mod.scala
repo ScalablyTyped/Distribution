@@ -1,12 +1,11 @@
 package typings.reduxWatch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-watch", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * @param getState Function, that returns the Redux store state.
@@ -18,12 +17,18 @@ object mod extends js.Object {
     * @returns Function, that listens to changes of the given field of the Redux store
     *      state. On change it calls its parameter, which is a change handler function.
     */
+  @JSImport("redux-watch", JSImport.Namespace)
+  @js.native
   def apply(getState: js.Function0[_]): ChangeHandlerWrapper[_] = js.native
+  @JSImport("redux-watch", JSImport.Namespace)
+  @js.native
   def apply(
     getState: js.Function0[_],
     pathToField: js.UndefOr[FieldPath],
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
   ): ChangeHandlerWrapper[_] = js.native
+  @JSImport("redux-watch", JSImport.Namespace)
+  @js.native
   def apply(getState: js.Function0[_], pathToField: FieldPath): ChangeHandlerWrapper[_] = js.native
   
   /** Whenever a given state field changes this handler will be called. */

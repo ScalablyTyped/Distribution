@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `projects.topics.publish` permission.
   */
 @js.native
-trait SchemaCloudPubsubTopic extends js.Object {
+trait SchemaCloudPubsubTopic extends StObject {
   
   /**
     * Optional. The format of the payload that would be sent. If not specified
@@ -34,30 +35,18 @@ object SchemaCloudPubsubTopic {
   }
   
   @scala.inline
-  implicit class SchemaCloudPubsubTopicOps[Self <: SchemaCloudPubsubTopic] (val x: Self) extends AnyVal {
+  implicit class SchemaCloudPubsubTopicMutableBuilder[Self <: SchemaCloudPubsubTopic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayloadFormat(value: String): Self = StObject.set(x, "payloadFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadFormatUndefined: Self = StObject.set(x, "payloadFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadFormat(value: String): Self = this.set("payloadFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloadFormat: Self = this.set("payloadFormat", js.undefined)
-    
-    @scala.inline
-    def setTopicName(value: String): Self = this.set("topicName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicName: Self = this.set("topicName", js.undefined)
+    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

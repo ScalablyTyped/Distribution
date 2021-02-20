@@ -2,14 +2,14 @@ package typings.soap
 
 import typings.soap.typesMod.IHeaders
 import typings.soap.typesMod.ISecurity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("soap/lib/security/BasicAuthSecurity", JSImport.Namespace)
-@js.native
-object basicAuthSecurityMod extends js.Object {
+object basicAuthSecurityMod {
   
+  @JSImport("soap/lib/security/BasicAuthSecurity", "BasicAuthSecurity")
   @js.native
   class BasicAuthSecurity protected () extends ISecurity {
     def this(username: String, password: String) = this()

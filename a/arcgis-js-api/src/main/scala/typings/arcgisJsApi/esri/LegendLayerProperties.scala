@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendLayerProperties extends js.Object {
+trait LegendLayerProperties extends StObject {
   
   /**
     * The id of the operational layer to include in the printout's legend.
@@ -37,39 +38,27 @@ object LegendLayerProperties {
   }
   
   @scala.inline
-  implicit class LegendLayerPropertiesOps[Self <: LegendLayerProperties] (val x: Self) extends AnyVal {
+  implicit class LegendLayerPropertiesMutableBuilder[Self <: LegendLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubLayerIds(value: js.Array[String]): Self = StObject.set(x, "subLayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    def setSubLayerIdsUndefined: Self = StObject.set(x, "subLayerIds", js.undefined)
     
     @scala.inline
-    def deleteLayerId: Self = this.set("layerId", js.undefined)
+    def setSubLayerIdsVarargs(value: String*): Self = StObject.set(x, "subLayerIds", js.Array(value :_*))
     
     @scala.inline
-    def setSubLayerIdsVarargs(value: String*): Self = this.set("subLayerIds", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubLayerIds(value: js.Array[String]): Self = this.set("subLayerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubLayerIds: Self = this.set("subLayerIds", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.jqueryMatchHeight
 
 import typings.jqueryMatchHeight.JQueryMatchHeight.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   /**
     * Set all selected elements to the height of the tallest.

@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyMetadata extends js.Object {
+trait KeyMetadata extends StObject {
   
   /**
     * The twelve-digit account ID of the AWS account that owns the CMK.
@@ -106,129 +107,117 @@ object KeyMetadata {
   }
   
   @scala.inline
-  implicit class KeyMetadataOps[Self <: KeyMetadata] (val x: Self) extends AnyVal {
+  implicit class KeyMetadataMutableBuilder[Self <: KeyMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAWSAccountId(value: AWSAccountIdType): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArn(value: ArnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     @scala.inline
-    def setAWSAccountId(value: AWSAccountIdType): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = StObject.set(x, "CloudHsmClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAWSAccountId: Self = this.set("AWSAccountId", js.undefined)
+    def setCloudHsmClusterIdUndefined: Self = StObject.set(x, "CloudHsmClusterId", js.undefined)
     
     @scala.inline
-    def setArn(value: ArnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArn: Self = this.set("Arn", js.undefined)
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def setCloudHsmClusterId(value: CloudHsmClusterIdType): Self = this.set("CloudHsmClusterId", value.asInstanceOf[js.Any])
+    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = StObject.set(x, "CustomKeyStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCloudHsmClusterId: Self = this.set("CloudHsmClusterId", js.undefined)
+    def setCustomKeyStoreIdUndefined: Self = StObject.set(x, "CustomKeyStoreId", js.undefined)
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = StObject.set(x, "CustomerMasterKeySpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setCustomerMasterKeySpecUndefined: Self = StObject.set(x, "CustomerMasterKeySpec", js.undefined)
     
     @scala.inline
-    def setCustomKeyStoreId(value: CustomKeyStoreIdType): Self = this.set("CustomKeyStoreId", value.asInstanceOf[js.Any])
+    def setDeletionDate(value: DateType): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomKeyStoreId: Self = this.set("CustomKeyStoreId", js.undefined)
+    def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
     @scala.inline
-    def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = this.set("CustomerMasterKeySpec", value.asInstanceOf[js.Any])
+    def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomerMasterKeySpec: Self = this.set("CustomerMasterKeySpec", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setDeletionDate(value: DateType): Self = this.set("DeletionDate", value.asInstanceOf[js.Any])
+    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeletionDate: Self = this.set("DeletionDate", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def setDescription(value: DescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEncryptionAlgorithms(value: EncryptionAlgorithmSpecList): Self = StObject.set(x, "EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEncryptionAlgorithmsUndefined: Self = StObject.set(x, "EncryptionAlgorithms", js.undefined)
     
     @scala.inline
-    def setEnabled(value: BooleanType): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setEncryptionAlgorithmsVarargs(value: EncryptionAlgorithmSpec*): Self = StObject.set(x, "EncryptionAlgorithms", js.Array(value :_*))
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setExpirationModel(value: ExpirationModelType): Self = StObject.set(x, "ExpirationModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionAlgorithmsVarargs(value: EncryptionAlgorithmSpec*): Self = this.set("EncryptionAlgorithms", js.Array(value :_*))
+    def setExpirationModelUndefined: Self = StObject.set(x, "ExpirationModel", js.undefined)
     
     @scala.inline
-    def setEncryptionAlgorithms(value: EncryptionAlgorithmSpecList): Self = this.set("EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionAlgorithms: Self = this.set("EncryptionAlgorithms", js.undefined)
+    def setKeyManager(value: KeyManagerType): Self = StObject.set(x, "KeyManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationModel(value: ExpirationModelType): Self = this.set("ExpirationModel", value.asInstanceOf[js.Any])
+    def setKeyManagerUndefined: Self = StObject.set(x, "KeyManager", js.undefined)
     
     @scala.inline
-    def deleteExpirationModel: Self = this.set("ExpirationModel", js.undefined)
+    def setKeyState(value: KeyState): Self = StObject.set(x, "KeyState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyManager(value: KeyManagerType): Self = this.set("KeyManager", value.asInstanceOf[js.Any])
+    def setKeyStateUndefined: Self = StObject.set(x, "KeyState", js.undefined)
     
     @scala.inline
-    def deleteKeyManager: Self = this.set("KeyManager", js.undefined)
+    def setKeyUsage(value: KeyUsageType): Self = StObject.set(x, "KeyUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyState(value: KeyState): Self = this.set("KeyState", value.asInstanceOf[js.Any])
+    def setKeyUsageUndefined: Self = StObject.set(x, "KeyUsage", js.undefined)
     
     @scala.inline
-    def deleteKeyState: Self = this.set("KeyState", js.undefined)
+    def setOrigin(value: OriginType): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyUsage(value: KeyUsageType): Self = this.set("KeyUsage", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
     
     @scala.inline
-    def deleteKeyUsage: Self = this.set("KeyUsage", js.undefined)
+    def setSigningAlgorithms(value: SigningAlgorithmSpecList): Self = StObject.set(x, "SigningAlgorithms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin(value: OriginType): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    def setSigningAlgorithmsUndefined: Self = StObject.set(x, "SigningAlgorithms", js.undefined)
     
     @scala.inline
-    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    def setSigningAlgorithmsVarargs(value: SigningAlgorithmSpec*): Self = StObject.set(x, "SigningAlgorithms", js.Array(value :_*))
     
     @scala.inline
-    def setSigningAlgorithmsVarargs(value: SigningAlgorithmSpec*): Self = this.set("SigningAlgorithms", js.Array(value :_*))
+    def setValidTo(value: DateType): Self = StObject.set(x, "ValidTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningAlgorithms(value: SigningAlgorithmSpecList): Self = this.set("SigningAlgorithms", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigningAlgorithms: Self = this.set("SigningAlgorithms", js.undefined)
-    
-    @scala.inline
-    def setValidTo(value: DateType): Self = this.set("ValidTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidTo: Self = this.set("ValidTo", js.undefined)
+    def setValidToUndefined: Self = StObject.set(x, "ValidTo", js.undefined)
   }
 }

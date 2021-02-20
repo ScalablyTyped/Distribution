@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutApplicationPolicyResponse extends js.Object {
+trait PutApplicationPolicyResponse extends StObject {
   
   /**
     * An array of policy statements applied to the application.
@@ -21,27 +22,15 @@ object PutApplicationPolicyResponse {
   }
   
   @scala.inline
-  implicit class PutApplicationPolicyResponseOps[Self <: PutApplicationPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class PutApplicationPolicyResponseMutableBuilder[Self <: PutApplicationPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatements(value: listOfApplicationPolicyStatement): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatementsUndefined: Self = StObject.set(x, "Statements", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatementsVarargs(value: ApplicationPolicyStatement*): Self = this.set("Statements", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatements(value: listOfApplicationPolicyStatement): Self = this.set("Statements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatements: Self = this.set("Statements", js.undefined)
+    def setStatementsVarargs(value: ApplicationPolicyStatement*): Self = StObject.set(x, "Statements", js.Array(value :_*))
   }
 }

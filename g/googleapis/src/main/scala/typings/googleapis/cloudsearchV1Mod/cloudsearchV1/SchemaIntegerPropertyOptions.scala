@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options for integer properties.
   */
 @js.native
-trait SchemaIntegerPropertyOptions extends js.Object {
+trait SchemaIntegerPropertyOptions extends StObject {
   
   /**
     * The maximum value of the property. The minimum and maximum values for the
@@ -46,42 +47,30 @@ object SchemaIntegerPropertyOptions {
   }
   
   @scala.inline
-  implicit class SchemaIntegerPropertyOptionsOps[Self <: SchemaIntegerPropertyOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaIntegerPropertyOptionsMutableBuilder[Self <: SchemaIntegerPropertyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumValue(value: String): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimumValue(value: String): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumValue(value: String): Self = this.set("maximumValue", value.asInstanceOf[js.Any])
+    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
     @scala.inline
-    def deleteMaximumValue: Self = this.set("maximumValue", js.undefined)
+    def setOperatorOptions(value: SchemaIntegerOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumValue(value: String): Self = this.set("minimumValue", value.asInstanceOf[js.Any])
+    def setOperatorOptionsUndefined: Self = StObject.set(x, "operatorOptions", js.undefined)
     
     @scala.inline
-    def deleteMinimumValue: Self = this.set("minimumValue", js.undefined)
+    def setOrderedRanking(value: String): Self = StObject.set(x, "orderedRanking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorOptions(value: SchemaIntegerOperatorOptions): Self = this.set("operatorOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorOptions: Self = this.set("operatorOptions", js.undefined)
-    
-    @scala.inline
-    def setOrderedRanking(value: String): Self = this.set("orderedRanking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderedRanking: Self = this.set("orderedRanking", js.undefined)
+    def setOrderedRankingUndefined: Self = StObject.set(x, "orderedRanking", js.undefined)
   }
 }

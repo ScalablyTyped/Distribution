@@ -4,14 +4,14 @@ import typings.std.HTMLVideoElement
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsData.lazyIteratorMod.LazyIterator
 import typings.tensorflowTfjsData.typesMod.WebcamConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", JSImport.Namespace)
-@js.native
-object webcamIteratorMod extends js.Object {
+object webcamIteratorMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator")
   @js.native
   class WebcamIterator protected () extends LazyIterator[Tensor3D] {
     
@@ -42,12 +42,19 @@ object webcamIteratorMod extends js.Object {
     val webcamVideoElement: HTMLVideoElement = js.native
   }
   /* static members */
-  @js.native
-  object WebcamIterator extends js.Object {
+  object WebcamIterator {
     
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
+    @js.native
     def create(): js.Promise[WebcamIterator] = js.native
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
+    @js.native
     def create(webcamVideoElement: js.UndefOr[scala.Nothing], webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
+    @js.native
     def create(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = js.native
+    @JSImport("@tensorflow/tfjs-data/dist/iterators/webcam_iterator", "WebcamIterator.create")
+    @js.native
     def create(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
   }
 }

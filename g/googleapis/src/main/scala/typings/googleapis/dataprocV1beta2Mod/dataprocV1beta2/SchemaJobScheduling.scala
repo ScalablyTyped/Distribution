@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Job scheduling options.
   */
 @js.native
-trait SchemaJobScheduling extends js.Object {
+trait SchemaJobScheduling extends StObject {
   
   /**
     * Optional. Maximum number of times per hour a driver may be restarted as a
@@ -27,24 +28,12 @@ object SchemaJobScheduling {
   }
   
   @scala.inline
-  implicit class SchemaJobSchedulingOps[Self <: SchemaJobScheduling] (val x: Self) extends AnyVal {
+  implicit class SchemaJobSchedulingMutableBuilder[Self <: SchemaJobScheduling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxFailuresPerHour(value: Double): Self = StObject.set(x, "maxFailuresPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMaxFailuresPerHour(value: Double): Self = this.set("maxFailuresPerHour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxFailuresPerHour: Self = this.set("maxFailuresPerHour", js.undefined)
+    def setMaxFailuresPerHourUndefined: Self = StObject.set(x, "maxFailuresPerHour", js.undefined)
   }
 }

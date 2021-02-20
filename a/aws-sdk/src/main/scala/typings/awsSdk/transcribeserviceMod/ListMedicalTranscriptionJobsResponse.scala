@@ -1,11 +1,12 @@
 package typings.awsSdk.transcribeserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMedicalTranscriptionJobsResponse extends js.Object {
+trait ListMedicalTranscriptionJobsResponse extends StObject {
   
   /**
     * A list of objects containing summary information for a transcription job.
@@ -31,39 +32,27 @@ object ListMedicalTranscriptionJobsResponse {
   }
   
   @scala.inline
-  implicit class ListMedicalTranscriptionJobsResponseOps[Self <: ListMedicalTranscriptionJobsResponse] (val x: Self) extends AnyVal {
+  implicit class ListMedicalTranscriptionJobsResponseMutableBuilder[Self <: ListMedicalTranscriptionJobsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedicalTranscriptionJobSummaries(value: MedicalTranscriptionJobSummaries): Self = StObject.set(x, "MedicalTranscriptionJobSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedicalTranscriptionJobSummariesUndefined: Self = StObject.set(x, "MedicalTranscriptionJobSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedicalTranscriptionJobSummariesVarargs(value: MedicalTranscriptionJobSummary*): Self = StObject.set(x, "MedicalTranscriptionJobSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setMedicalTranscriptionJobSummariesVarargs(value: MedicalTranscriptionJobSummary*): Self = this.set("MedicalTranscriptionJobSummaries", js.Array(value :_*))
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedicalTranscriptionJobSummaries(value: MedicalTranscriptionJobSummaries): Self = this.set("MedicalTranscriptionJobSummaries", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMedicalTranscriptionJobSummaries: Self = this.set("MedicalTranscriptionJobSummaries", js.undefined)
+    def setStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: TranscriptionJobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

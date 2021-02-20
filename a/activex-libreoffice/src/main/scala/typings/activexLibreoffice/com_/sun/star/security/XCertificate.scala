@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,72 +111,60 @@ object XCertificate {
   }
   
   @scala.inline
-  implicit class XCertificateOps[Self <: XCertificate] (val x: Self) extends AnyVal {
+  implicit class XCertificateMutableBuilder[Self <: XCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateUsage(value: Double): Self = StObject.set(x, "CertificateUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoded(value: SafeArray[Double]): Self = StObject.set(x, "Encoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensions(value: SafeArray[XCertificateExtension]): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateUsage(value: Double): Self = this.set("CertificateUsage", value.asInstanceOf[js.Any])
+    def setFindCertificateExtension(value: SeqEquiv[Double] => XCertificateExtension): Self = StObject.set(x, "findCertificateExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEncoded(value: SafeArray[Double]): Self = this.set("Encoded", value.asInstanceOf[js.Any])
+    def setGetCertificateUsage(value: () => Double): Self = StObject.set(x, "getCertificateUsage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setExtensions(value: SafeArray[XCertificateExtension]): Self = this.set("Extensions", value.asInstanceOf[js.Any])
+    def setIssuerName(value: String): Self = StObject.set(x, "IssuerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerName(value: String): Self = this.set("IssuerName", value.asInstanceOf[js.Any])
+    def setIssuerUniqueID(value: SafeArray[Double]): Self = StObject.set(x, "IssuerUniqueID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuerUniqueID(value: SafeArray[Double]): Self = this.set("IssuerUniqueID", value.asInstanceOf[js.Any])
+    def setMD5Thumbprint(value: SafeArray[Double]): Self = StObject.set(x, "MD5Thumbprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMD5Thumbprint(value: SafeArray[Double]): Self = this.set("MD5Thumbprint", value.asInstanceOf[js.Any])
+    def setNotValidAfter(value: DateTime): Self = StObject.set(x, "NotValidAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotValidAfter(value: DateTime): Self = this.set("NotValidAfter", value.asInstanceOf[js.Any])
+    def setNotValidBefore(value: DateTime): Self = StObject.set(x, "NotValidBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotValidBefore(value: DateTime): Self = this.set("NotValidBefore", value.asInstanceOf[js.Any])
+    def setSHA1Thumbprint(value: SafeArray[Double]): Self = StObject.set(x, "SHA1Thumbprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHA1Thumbprint(value: SafeArray[Double]): Self = this.set("SHA1Thumbprint", value.asInstanceOf[js.Any])
+    def setSerialNumber(value: SafeArray[Double]): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: SafeArray[Double]): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setSignatureAlgorithm(value: String): Self = StObject.set(x, "SignatureAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureAlgorithm(value: String): Self = this.set("SignatureAlgorithm", value.asInstanceOf[js.Any])
+    def setSubjectName(value: String): Self = StObject.set(x, "SubjectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectName(value: String): Self = this.set("SubjectName", value.asInstanceOf[js.Any])
+    def setSubjectPublicKeyAlgorithm(value: String): Self = StObject.set(x, "SubjectPublicKeyAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectPublicKeyAlgorithm(value: String): Self = this.set("SubjectPublicKeyAlgorithm", value.asInstanceOf[js.Any])
+    def setSubjectPublicKeyValue(value: SafeArray[Double]): Self = StObject.set(x, "SubjectPublicKeyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectPublicKeyValue(value: SafeArray[Double]): Self = this.set("SubjectPublicKeyValue", value.asInstanceOf[js.Any])
+    def setSubjectUniqueID(value: SafeArray[Double]): Self = StObject.set(x, "SubjectUniqueID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectUniqueID(value: SafeArray[Double]): Self = this.set("SubjectUniqueID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFindCertificateExtension(value: SeqEquiv[Double] => XCertificateExtension): Self = this.set("findCertificateExtension", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetCertificateUsage(value: () => Double): Self = this.set("getCertificateUsage", js.Any.fromFunction0(value))
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

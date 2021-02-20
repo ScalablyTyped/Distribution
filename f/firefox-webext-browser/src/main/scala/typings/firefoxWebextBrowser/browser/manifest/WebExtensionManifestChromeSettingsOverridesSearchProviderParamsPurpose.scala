@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.keyword
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.newtab
 */
-trait WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose extends js.Object
+trait WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose extends StObject
 object WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose {
   
   @scala.inline

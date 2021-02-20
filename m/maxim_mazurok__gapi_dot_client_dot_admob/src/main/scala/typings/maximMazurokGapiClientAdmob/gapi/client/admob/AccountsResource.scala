@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdmob.anon.Fields
 import typings.maximMazurokGapiClientAdmob.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountsResource extends js.Object {
+trait AccountsResource extends StObject {
   
   /** Gets information about the specified AdMob publisher account. */
   def get(): Request[PublisherAccount] = js.native

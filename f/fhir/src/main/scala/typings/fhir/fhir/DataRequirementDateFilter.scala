@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,51 +50,39 @@ object DataRequirementDateFilter {
   }
   
   @scala.inline
-  implicit class DataRequirementDateFilterOps[Self <: DataRequirementDateFilter] (val x: Self) extends AnyVal {
+  implicit class DataRequirementDateFilterMutableBuilder[Self <: DataRequirementDateFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueDateTime(value: dateTime): Self = StObject.set(x, "valueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueDateTimeUndefined: Self = StObject.set(x, "valueDateTime", js.undefined)
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setValueDuration(value: Duration): Self = StObject.set(x, "valueDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    def setValueDurationUndefined: Self = StObject.set(x, "valueDuration", js.undefined)
     
     @scala.inline
-    def delete_path: Self = this.set("_path", js.undefined)
+    def setValuePeriod(value: Period): Self = StObject.set(x, "valuePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueDateTime(value: Element): Self = this.set("_valueDateTime", value.asInstanceOf[js.Any])
+    def setValuePeriodUndefined: Self = StObject.set(x, "valuePeriod", js.undefined)
     
     @scala.inline
-    def delete_valueDateTime: Self = this.set("_valueDateTime", js.undefined)
+    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDateTime(value: dateTime): Self = this.set("valueDateTime", value.asInstanceOf[js.Any])
+    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
     
     @scala.inline
-    def deleteValueDateTime: Self = this.set("valueDateTime", js.undefined)
+    def set_valueDateTime(value: Element): Self = StObject.set(x, "_valueDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDuration(value: Duration): Self = this.set("valueDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueDuration: Self = this.set("valueDuration", js.undefined)
-    
-    @scala.inline
-    def setValuePeriod(value: Period): Self = this.set("valuePeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValuePeriod: Self = this.set("valuePeriod", js.undefined)
+    def set_valueDateTimeUndefined: Self = StObject.set(x, "_valueDateTime", js.undefined)
   }
 }

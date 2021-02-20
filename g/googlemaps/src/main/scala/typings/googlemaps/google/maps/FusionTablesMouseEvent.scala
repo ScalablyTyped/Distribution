@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @js.native
-trait FusionTablesMouseEvent extends js.Object {
+trait FusionTablesMouseEvent extends StObject {
   
   var infoWindowHtml: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object FusionTablesMouseEvent {
   }
   
   @scala.inline
-  implicit class FusionTablesMouseEventOps[Self <: FusionTablesMouseEvent] (val x: Self) extends AnyVal {
+  implicit class FusionTablesMouseEventMutableBuilder[Self <: FusionTablesMouseEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInfoWindowHtml(value: String): Self = StObject.set(x, "infoWindowHtml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoWindowHtmlUndefined: Self = StObject.set(x, "infoWindowHtml", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoWindowHtml(value: String): Self = this.set("infoWindowHtml", value.asInstanceOf[js.Any])
+    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
     @scala.inline
-    def deleteInfoWindowHtml: Self = this.set("infoWindowHtml", js.undefined)
+    def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLng(value: LatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
+    def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
     
     @scala.inline
-    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    def setRow(value: js.Object): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelOffset(value: Size): Self = this.set("pixelOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelOffset: Self = this.set("pixelOffset", js.undefined)
-    
-    @scala.inline
-    def setRow(value: js.Object): Self = this.set("row", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

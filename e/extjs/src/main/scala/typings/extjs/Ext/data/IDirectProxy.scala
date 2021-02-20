@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.data.proxy.IServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,50 +48,38 @@ object IDirectProxy {
   }
   
   @scala.inline
-  implicit class IDirectProxyOps[Self <: IDirectProxy] (val x: Self) extends AnyVal {
+  implicit class IDirectProxyMutableBuilder[Self <: IDirectProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuildUrl(value: () => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUrlUndefined: Self = StObject.set(x, "buildUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectFn(value: js.Any): Self = StObject.set(x, "directFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildUrl(value: () => String): Self = this.set("buildUrl", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteBuildUrl: Self = this.set("buildUrl", js.undefined)
-    
-    @scala.inline
-    def setDirectFn(value: js.Any): Self = this.set("directFn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectFn: Self = this.set("directFn", js.undefined)
+    def setDirectFnUndefined: Self = StObject.set(x, "directFn", js.undefined)
     
     @scala.inline
     def setDoRequest(
       value: (/* operation */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("doRequest", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDoRequest: Self = this.set("doRequest", js.undefined)
+    def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
     @scala.inline
-    def setParamOrder(value: js.Any): Self = this.set("paramOrder", value.asInstanceOf[js.Any])
+    def setParamOrder(value: js.Any): Self = StObject.set(x, "paramOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParamOrder: Self = this.set("paramOrder", js.undefined)
+    def setParamOrderUndefined: Self = StObject.set(x, "paramOrder", js.undefined)
     
     @scala.inline
-    def setParamsAsHash(value: Boolean): Self = this.set("paramsAsHash", value.asInstanceOf[js.Any])
+    def setParamsAsHash(value: Boolean): Self = StObject.set(x, "paramsAsHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParamsAsHash: Self = this.set("paramsAsHash", js.undefined)
+    def setParamsAsHashUndefined: Self = StObject.set(x, "paramsAsHash", js.undefined)
   }
 }

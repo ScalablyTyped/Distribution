@@ -1,11 +1,12 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISurveyElement extends js.Object {
+trait ISurveyElement extends StObject {
   
   var containsErrors: Boolean = js.native
   
@@ -56,57 +57,45 @@ object ISurveyElement {
   }
   
   @scala.inline
-  implicit class ISurveyElementOps[Self <: ISurveyElement] (val x: Self) extends AnyVal {
+  implicit class ISurveyElementMutableBuilder[Self <: ISurveyElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsErrors(value: Boolean): Self = StObject.set(x, "containsErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: () => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContainsErrors(value: Boolean): Self = this.set("containsErrors", value.asInstanceOf[js.Any])
+    def setIsPage(value: Boolean): Self = StObject.set(x, "isPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => js.Any): Self = this.set("delete", js.Any.fromFunction0(value))
+    def setIsPanel(value: Boolean): Self = StObject.set(x, "isPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetType(value: () => String): Self = this.set("getType", js.Any.fromFunction0(value))
+    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPage(value: Boolean): Self = this.set("isPage", value.asInstanceOf[js.Any])
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPanel(value: Boolean): Self = this.set("isPanel", value.asInstanceOf[js.Any])
+    def setLocStrsChanged(value: () => js.Any): Self = StObject.set(x, "locStrsChanged", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsReadOnly(value: Boolean): Self = this.set("isReadOnly", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
+    def setOnFirstRendering(value: () => js.Any): Self = StObject.set(x, "onFirstRendering", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLocStrsChanged(value: () => js.Any): Self = this.set("locStrsChanged", js.Any.fromFunction0(value))
+    def setOnSurveyLoad(value: () => js.Any): Self = StObject.set(x, "onSurveyLoad", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSetSurveyImpl(value: ISurveyImpl => js.Any): Self = StObject.set(x, "setSurveyImpl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFirstRendering(value: () => js.Any): Self = this.set("onFirstRendering", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnSurveyLoad(value: () => js.Any): Self = this.set("onSurveyLoad", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetSurveyImpl(value: ISurveyImpl => js.Any): Self = this.set("setSurveyImpl", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisibleIndex(value: Double => Double): Self = this.set("setVisibleIndex", js.Any.fromFunction1(value))
+    def setSetVisibleIndex(value: Double => Double): Self = StObject.set(x, "setVisibleIndex", js.Any.fromFunction1(value))
   }
 }

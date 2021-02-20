@@ -3,6 +3,7 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 import typings.googleAppsScript.GoogleAppsScript.Document.Document
 import typings.googleAppsScript.GoogleAppsScript.Forms.Form
 import typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A generic builder for script triggers.
   */
 @js.native
-trait TriggerBuilder extends js.Object {
+trait TriggerBuilder extends StObject {
   
   def forDocument(document: Document): DocumentTriggerBuilder = js.native
   def forDocument(key: String): DocumentTriggerBuilder = js.native

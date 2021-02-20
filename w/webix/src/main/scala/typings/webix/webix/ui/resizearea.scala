@@ -1,12 +1,13 @@
 package typings.webix.webix.ui
 
 import typings.webix.webix.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait resizearea extends js.Object {
+trait resizearea extends StObject {
   
   def attachEvent(`type`: resizeareaEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: resizeareaEventName, functor: WebixCallback, id: String): String | Double = js.native

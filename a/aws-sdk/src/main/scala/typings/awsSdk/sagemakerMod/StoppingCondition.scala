@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StoppingCondition extends js.Object {
+trait StoppingCondition extends StObject {
   
   /**
     * The maximum length of time, in seconds, that the training or compilation job can run. If job does not complete during this time, Amazon SageMaker ends the job. If value is not specified, default value is 1 day. The maximum value is 28 days.
@@ -26,30 +27,18 @@ object StoppingCondition {
   }
   
   @scala.inline
-  implicit class StoppingConditionOps[Self <: StoppingCondition] (val x: Self) extends AnyVal {
+  implicit class StoppingConditionMutableBuilder[Self <: StoppingCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxRuntimeInSeconds(value: MaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxRuntimeInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxWaitTimeInSeconds(value: MaxWaitTimeInSeconds): Self = StObject.set(x, "MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRuntimeInSeconds(value: MaxRuntimeInSeconds): Self = this.set("MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRuntimeInSeconds: Self = this.set("MaxRuntimeInSeconds", js.undefined)
-    
-    @scala.inline
-    def setMaxWaitTimeInSeconds(value: MaxWaitTimeInSeconds): Self = this.set("MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxWaitTimeInSeconds: Self = this.set("MaxWaitTimeInSeconds", js.undefined)
+    def setMaxWaitTimeInSecondsUndefined: Self = StObject.set(x, "MaxWaitTimeInSeconds", js.undefined)
   }
 }

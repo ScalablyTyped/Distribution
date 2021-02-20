@@ -1,11 +1,12 @@
 package typings.awsSdk.appsyncMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeltaSyncConfig extends js.Object {
+trait DeltaSyncConfig extends StObject {
   
   /**
     * The number of minutes an Item is stored in the datasource.
@@ -31,36 +32,24 @@ object DeltaSyncConfig {
   }
   
   @scala.inline
-  implicit class DeltaSyncConfigOps[Self <: DeltaSyncConfig] (val x: Self) extends AnyVal {
+  implicit class DeltaSyncConfigMutableBuilder[Self <: DeltaSyncConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseTableTTL(value: Long): Self = StObject.set(x, "baseTableTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseTableTTLUndefined: Self = StObject.set(x, "baseTableTTL", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeltaSyncTableName(value: String): Self = StObject.set(x, "deltaSyncTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTableTTL(value: Long): Self = this.set("baseTableTTL", value.asInstanceOf[js.Any])
+    def setDeltaSyncTableNameUndefined: Self = StObject.set(x, "deltaSyncTableName", js.undefined)
     
     @scala.inline
-    def deleteBaseTableTTL: Self = this.set("baseTableTTL", js.undefined)
+    def setDeltaSyncTableTTL(value: Long): Self = StObject.set(x, "deltaSyncTableTTL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaSyncTableName(value: String): Self = this.set("deltaSyncTableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeltaSyncTableName: Self = this.set("deltaSyncTableName", js.undefined)
-    
-    @scala.inline
-    def setDeltaSyncTableTTL(value: Long): Self = this.set("deltaSyncTableTTL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeltaSyncTableTTL: Self = this.set("deltaSyncTableTTL", js.undefined)
+    def setDeltaSyncTableTTLUndefined: Self = StObject.set(x, "deltaSyncTableTTL", js.undefined)
   }
 }

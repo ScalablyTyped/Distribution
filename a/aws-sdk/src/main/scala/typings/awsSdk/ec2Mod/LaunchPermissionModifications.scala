@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LaunchPermissionModifications extends js.Object {
+trait LaunchPermissionModifications extends StObject {
   
   /**
     * The AWS account ID to add to the list of launch permissions for the AMI.
@@ -26,36 +27,24 @@ object LaunchPermissionModifications {
   }
   
   @scala.inline
-  implicit class LaunchPermissionModificationsOps[Self <: LaunchPermissionModifications] (val x: Self) extends AnyVal {
+  implicit class LaunchPermissionModificationsMutableBuilder[Self <: LaunchPermissionModifications] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: LaunchPermissionList): Self = StObject.set(x, "Add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "Add", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddVarargs(value: LaunchPermission*): Self = StObject.set(x, "Add", js.Array(value :_*))
     
     @scala.inline
-    def setAddVarargs(value: LaunchPermission*): Self = this.set("Add", js.Array(value :_*))
+    def setRemove(value: LaunchPermissionList): Self = StObject.set(x, "Remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: LaunchPermissionList): Self = this.set("Add", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "Remove", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("Add", js.undefined)
-    
-    @scala.inline
-    def setRemoveVarargs(value: LaunchPermission*): Self = this.set("Remove", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemove(value: LaunchPermissionList): Self = this.set("Remove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemove: Self = this.set("Remove", js.undefined)
+    def setRemoveVarargs(value: LaunchPermission*): Self = StObject.set(x, "Remove", js.Array(value :_*))
   }
 }

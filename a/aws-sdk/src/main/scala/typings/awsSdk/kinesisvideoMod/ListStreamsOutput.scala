@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListStreamsOutput extends js.Object {
+trait ListStreamsOutput extends StObject {
   
   /**
     * If the response is truncated, the call returns this element with a token. To get the next batch of streams, use this token in your next request. 
@@ -26,33 +27,21 @@ object ListStreamsOutput {
   }
   
   @scala.inline
-  implicit class ListStreamsOutputOps[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
+  implicit class ListStreamsOutputMutableBuilder[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamInfoList(value: StreamInfoList): Self = StObject.set(x, "StreamInfoList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStreamInfoListUndefined: Self = StObject.set(x, "StreamInfoList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStreamInfoListVarargs(value: StreamInfo*): Self = this.set("StreamInfoList", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreamInfoList(value: StreamInfoList): Self = this.set("StreamInfoList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamInfoList: Self = this.set("StreamInfoList", js.undefined)
+    def setStreamInfoListVarargs(value: StreamInfo*): Self = StObject.set(x, "StreamInfoList", js.Array(value :_*))
   }
 }

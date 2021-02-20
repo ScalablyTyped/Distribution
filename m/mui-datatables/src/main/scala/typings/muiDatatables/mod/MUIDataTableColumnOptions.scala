@@ -5,12 +5,13 @@ import typings.muiDatatables.muiDatatablesStrings.asc
 import typings.muiDatatables.muiDatatablesStrings.desc
 import typings.muiDatatables.muiDatatablesStrings.none
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableColumnOptions extends js.Object {
+trait MUIDataTableColumnOptions extends StObject {
   
   /**
     * Function that returns a string or React component.
@@ -207,175 +208,163 @@ object MUIDataTableColumnOptions {
   }
   
   @scala.inline
-  implicit class MUIDataTableColumnOptionsOps[Self <: MUIDataTableColumnOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class MUIDataTableColumnOptionsMutableBuilder[Self <: MUIDataTableColumnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCustomBodyRender(
       value: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode
-    ): Self = this.set("customBodyRender", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "customBodyRender", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCustomBodyRender: Self = this.set("customBodyRender", js.undefined)
+    def setCustomBodyRenderLite(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customBodyRenderLite", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCustomBodyRenderLite(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = this.set("customBodyRenderLite", js.Any.fromFunction2(value))
+    def setCustomBodyRenderLiteUndefined: Self = StObject.set(x, "customBodyRenderLite", js.undefined)
     
     @scala.inline
-    def deleteCustomBodyRenderLite: Self = this.set("customBodyRenderLite", js.undefined)
+    def setCustomBodyRenderUndefined: Self = StObject.set(x, "customBodyRender", js.undefined)
     
     @scala.inline
-    def setCustomFilterListOptions(value: MUIDataTableCustomFilterListOptions): Self = this.set("customFilterListOptions", value.asInstanceOf[js.Any])
+    def setCustomFilterListOptions(value: MUIDataTableCustomFilterListOptions): Self = StObject.set(x, "customFilterListOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomFilterListOptions: Self = this.set("customFilterListOptions", js.undefined)
+    def setCustomFilterListOptionsUndefined: Self = StObject.set(x, "customFilterListOptions", js.undefined)
     
     @scala.inline
-    def setCustomFilterListRender(value: /* value */ js.Any => String): Self = this.set("customFilterListRender", js.Any.fromFunction1(value))
+    def setCustomFilterListRender(value: /* value */ js.Any => String): Self = StObject.set(x, "customFilterListRender", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCustomFilterListRender: Self = this.set("customFilterListRender", js.undefined)
+    def setCustomFilterListRenderUndefined: Self = StObject.set(x, "customFilterListRender", js.undefined)
     
     @scala.inline
-    def setCustomHeadLabelRender(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = this.set("customHeadLabelRender", js.Any.fromFunction2(value))
+    def setCustomHeadLabelRender(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customHeadLabelRender", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteCustomHeadLabelRender: Self = this.set("customHeadLabelRender", js.undefined)
+    def setCustomHeadLabelRenderUndefined: Self = StObject.set(x, "customHeadLabelRender", js.undefined)
     
     @scala.inline
     def setCustomHeadRender(
       value: (/* columnMeta */ MUIDataTableCustomHeadRenderer, /* handleToggleColumn */ js.Function1[/* columnIndex */ Double, Unit], /* sortOrder */ MUISortOptions) => String | ReactNode
-    ): Self = this.set("customHeadRender", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "customHeadRender", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCustomHeadRender: Self = this.set("customHeadRender", js.undefined)
+    def setCustomHeadRenderUndefined: Self = StObject.set(x, "customHeadRender", js.undefined)
     
     @scala.inline
-    def setDisplay(value: Display): Self = this.set("display", value.asInstanceOf[js.Any])
+    def setDisplay(value: Display): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setDownload(value: Boolean): Self = this.set("download", value.asInstanceOf[js.Any])
+    def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDownload: Self = this.set("download", js.undefined)
+    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
     @scala.inline
-    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def setFilter(value: Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterList(value: js.Array[String]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterListVarargs(value: String*): Self = this.set("filterList", js.Array(value :_*))
+    def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
     @scala.inline
-    def setFilterList(value: js.Array[String]): Self = this.set("filterList", value.asInstanceOf[js.Any])
+    def setFilterListVarargs(value: String*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
     @scala.inline
-    def deleteFilterList: Self = this.set("filterList", js.undefined)
+    def setFilterOptions(value: MUIDataTableFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterOptions(value: MUIDataTableFilterOptions): Self = this.set("filterOptions", value.asInstanceOf[js.Any])
+    def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
     
     @scala.inline
-    def deleteFilterOptions: Self = this.set("filterOptions", js.undefined)
+    def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterType(value: FilterType): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
     
     @scala.inline
-    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setHint(value: String): Self = this.set("hint", value.asInstanceOf[js.Any])
+    def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHint: Self = this.set("hint", js.undefined)
+    def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
     
     @scala.inline
-    def setPrint(value: Boolean): Self = this.set("print", value.asInstanceOf[js.Any])
+    def setPrint(value: Boolean): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrint: Self = this.set("print", js.undefined)
+    def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
     
     @scala.inline
-    def setSearchable(value: Boolean): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchable: Self = this.set("searchable", js.undefined)
+    def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
     @scala.inline
-    def setSetCellHeaderProps(value: /* columnMeta */ MUIDataTableCustomHeadRenderer => js.Object): Self = this.set("setCellHeaderProps", js.Any.fromFunction1(value))
+    def setSetCellHeaderProps(value: /* columnMeta */ MUIDataTableCustomHeadRenderer => js.Object): Self = StObject.set(x, "setCellHeaderProps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetCellHeaderProps: Self = this.set("setCellHeaderProps", js.undefined)
+    def setSetCellHeaderPropsUndefined: Self = StObject.set(x, "setCellHeaderProps", js.undefined)
     
     @scala.inline
-    def setSetCellProps(value: (/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double) => js.Object): Self = this.set("setCellProps", js.Any.fromFunction3(value))
+    def setSetCellProps(value: (/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double) => js.Object): Self = StObject.set(x, "setCellProps", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteSetCellProps: Self = this.set("setCellProps", js.undefined)
+    def setSetCellPropsUndefined: Self = StObject.set(x, "setCellProps", js.undefined)
     
     @scala.inline
-    def setSort(value: Boolean): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setSortCompare(value: /* order */ asc | desc => js.Function2[/* obj1 */ DataAny, /* obj2 */ DataAny, Double]): Self = StObject.set(x, "sortCompare", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSortCompare(value: /* order */ asc | desc => js.Function2[/* obj1 */ DataAny, /* obj2 */ DataAny, Double]): Self = this.set("sortCompare", js.Any.fromFunction1(value))
+    def setSortCompareUndefined: Self = StObject.set(x, "sortCompare", js.undefined)
     
     @scala.inline
-    def deleteSortCompare: Self = this.set("sortCompare", js.undefined)
+    def setSortDescFirst(value: Boolean): Self = StObject.set(x, "sortDescFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDescFirst(value: Boolean): Self = this.set("sortDescFirst", value.asInstanceOf[js.Any])
+    def setSortDescFirstUndefined: Self = StObject.set(x, "sortDescFirst", js.undefined)
     
     @scala.inline
-    def deleteSortDescFirst: Self = this.set("sortDescFirst", js.undefined)
+    def setSortDirection(value: asc | desc | none): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDirection(value: asc | desc | none): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
+    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
     @scala.inline
-    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
+    def setSortThirdClickReset(value: Boolean): Self = StObject.set(x, "sortThirdClickReset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortThirdClickReset(value: Boolean): Self = this.set("sortThirdClickReset", value.asInstanceOf[js.Any])
+    def setSortThirdClickResetUndefined: Self = StObject.set(x, "sortThirdClickReset", js.undefined)
     
     @scala.inline
-    def deleteSortThirdClickReset: Self = this.set("sortThirdClickReset", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setViewColumns(value: Boolean): Self = this.set("viewColumns", value.asInstanceOf[js.Any])
+    def setViewColumns(value: Boolean): Self = StObject.set(x, "viewColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewColumns: Self = this.set("viewColumns", js.undefined)
+    def setViewColumnsUndefined: Self = StObject.set(x, "viewColumns", js.undefined)
   }
 }

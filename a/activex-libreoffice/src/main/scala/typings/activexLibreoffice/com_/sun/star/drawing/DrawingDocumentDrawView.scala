@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XMouseClickHandler
 import typings.activexLibreoffice.com_.sun.star.awt.XMouseListener
 import typings.activexLibreoffice.com_.sun.star.awt.XMouseMotionListener
 import typings.activexLibreoffice.com_.sun.star.awt.XPaintListener
-import typings.activexLibreoffice.com_.sun.star.awt.XUserInputInterception
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.awt.XWindowListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
@@ -21,23 +20,20 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.datatransfer.XTransferable
-import typings.activexLibreoffice.com_.sun.star.datatransfer.XTransferableSupplier
 import typings.activexLibreoffice.com_.sun.star.form.XForm
 import typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController
+import typings.activexLibreoffice.com_.sun.star.frame.Controller
 import typings.activexLibreoffice.com_.sun.star.frame.DispatchDescriptor
-import typings.activexLibreoffice.com_.sun.star.frame.XController
 import typings.activexLibreoffice.com_.sun.star.frame.XDispatch
-import typings.activexLibreoffice.com_.sun.star.frame.XDispatchProvider
 import typings.activexLibreoffice.com_.sun.star.frame.XFrame
 import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
-import typings.activexLibreoffice.com_.sun.star.ui.XContextMenuInterception
 import typings.activexLibreoffice.com_.sun.star.ui.XContextMenuInterceptor
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.activexLibreoffice.com_.sun.star.view.XFormLayerAccess
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
-import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,12 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** This component integrates a view to a {@link DrawPages} or {@link MasterPage} from a {@link DrawingDocument} . */
 @js.native
 trait DrawingDocumentDrawView
-  extends XController
-     with XDispatchProvider
-     with XContextMenuInterception
-     with XUserInputInterception
-     with XSelectionSupplier
-     with XTransferableSupplier
+  extends Controller
      with XWindow
      with XFormLayerAccess
      with XDrawView
@@ -165,36 +156,24 @@ object DrawingDocumentDrawView {
   }
   
   @scala.inline
-  implicit class DrawingDocumentDrawViewOps[Self <: DrawingDocumentDrawView] (val x: Self) extends AnyVal {
+  implicit class DrawingDocumentDrawViewMutableBuilder[Self <: DrawingDocumentDrawView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsLayerMode(value: Boolean): Self = StObject.set(x, "IsLayerMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsMasterPageMode(value: Boolean): Self = StObject.set(x, "IsMasterPageMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setViewOffset(value: Point): Self = StObject.set(x, "ViewOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLayerMode(value: Boolean): Self = this.set("IsLayerMode", value.asInstanceOf[js.Any])
+    def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMasterPageMode(value: Boolean): Self = this.set("IsMasterPageMode", value.asInstanceOf[js.Any])
+    def setZoomType(value: Double): Self = StObject.set(x, "ZoomType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewOffset(value: Point): Self = this.set("ViewOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleArea(value: Rectangle): Self = this.set("VisibleArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomType(value: Double): Self = this.set("ZoomType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomValue(value: Double): Self = this.set("ZoomValue", value.asInstanceOf[js.Any])
+    def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
   }
 }

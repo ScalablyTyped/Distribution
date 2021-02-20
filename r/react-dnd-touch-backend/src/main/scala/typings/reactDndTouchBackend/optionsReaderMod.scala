@@ -4,14 +4,14 @@ import typings.reactDndTouchBackend.interfacesMod.TouchBackendContext
 import typings.reactDndTouchBackend.interfacesMod.TouchBackendOptions
 import typings.std.Document
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd-touch-backend/lib/OptionsReader", JSImport.Namespace)
-@js.native
-object optionsReaderMod extends js.Object {
+object optionsReaderMod {
   
+  @JSImport("react-dnd-touch-backend/lib/OptionsReader", "OptionsReader")
   @js.native
   class OptionsReader protected () extends TouchBackendOptions {
     def this(incoming: TouchBackendOptions, context: TouchBackendContext) = this()

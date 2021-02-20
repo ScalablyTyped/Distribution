@@ -1,11 +1,12 @@
 package typings.rcFieldForm.interfaceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateOptions extends js.Object {
+trait ValidateOptions extends StObject {
   
   /**
     * Recursive validate. It will validate all the name path that contains the provided one.
@@ -26,36 +27,24 @@ object ValidateOptions {
   }
   
   @scala.inline
-  implicit class ValidateOptionsOps[Self <: ValidateOptions] (val x: Self) extends AnyVal {
+  implicit class ValidateOptionsMutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
     
     @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setValidateMessages(value: ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerName(value: String): Self = this.set("triggerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriggerName: Self = this.set("triggerName", js.undefined)
-    
-    @scala.inline
-    def setValidateMessages(value: ValidateMessages): Self = this.set("validateMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateMessages: Self = this.set("validateMessages", js.undefined)
+    def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
   }
 }

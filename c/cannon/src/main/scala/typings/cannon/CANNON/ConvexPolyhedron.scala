@@ -1,5 +1,6 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,101 +117,89 @@ object ConvexPolyhedron {
   }
   
   @scala.inline
-  implicit class ConvexPolyhedronOps[Self <: ConvexPolyhedron] (val x: Self) extends AnyVal {
+  implicit class ConvexPolyhedronMutableBuilder[Self <: ConvexPolyhedron] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculateWorldAABB(value: (Vec3, Quaternion, Vec3, Vec3) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClipAgainstHull(value: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "clipAgainstHull", js.Any.fromFunction8(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClipFaceAgainstHull(value: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[_]) => Unit): Self = StObject.set(x, "clipFaceAgainstHull", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setCalculateWorldAABB(value: (Vec3, Quaternion, Vec3, Vec3) => Unit): Self = this.set("calculateWorldAABB", js.Any.fromFunction4(value))
+    def setClipFaceAgainstPlane(value: (js.Array[Vec3], js.Array[Vec3], Vec3, Double) => Vec3): Self = StObject.set(x, "clipFaceAgainstPlane", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setClipAgainstHull(value: (Vec3, Quaternion, Vec3, Quaternion, Vec3, Double, Double, js.Array[_]) => Unit): Self = this.set("clipAgainstHull", js.Any.fromFunction8(value))
+    def setComputeEdges(value: () => Unit): Self = StObject.set(x, "computeEdges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClipFaceAgainstHull(value: (Vec3, Vec3, Quaternion, js.Array[Vec3], Double, Double, js.Array[_]) => Unit): Self = this.set("clipFaceAgainstHull", js.Any.fromFunction7(value))
+    def setComputeLocalAABB(value: (Vec3, Vec3) => Unit): Self = StObject.set(x, "computeLocalAABB", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClipFaceAgainstPlane(value: (js.Array[Vec3], js.Array[Vec3], Vec3, Double) => Vec3): Self = this.set("clipFaceAgainstPlane", js.Any.fromFunction4(value))
+    def setComputeNormals(value: () => Unit): Self = StObject.set(x, "computeNormals", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setComputeEdges(value: () => Unit): Self = this.set("computeEdges", js.Any.fromFunction0(value))
+    def setComputeWorldFaceNormals(value: Quaternion => Unit): Self = StObject.set(x, "computeWorldFaceNormals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setComputeLocalAABB(value: (Vec3, Vec3) => Unit): Self = this.set("computeLocalAABB", js.Any.fromFunction2(value))
+    def setComputeWorldVertices(value: (Vec3, Quaternion) => Unit): Self = StObject.set(x, "computeWorldVertices", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setComputeNormals(value: () => Unit): Self = this.set("computeNormals", js.Any.fromFunction0(value))
+    def setFaceNormals(value: js.Array[Vec3]): Self = StObject.set(x, "faceNormals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeWorldFaceNormals(value: Quaternion => Unit): Self = this.set("computeWorldFaceNormals", js.Any.fromFunction1(value))
+    def setFaceNormalsVarargs(value: Vec3*): Self = StObject.set(x, "faceNormals", js.Array(value :_*))
     
     @scala.inline
-    def setComputeWorldVertices(value: (Vec3, Quaternion) => Unit): Self = this.set("computeWorldVertices", js.Any.fromFunction2(value))
+    def setFaces(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceNormalsVarargs(value: Vec3*): Self = this.set("faceNormals", js.Array(value :_*))
-    
-    @scala.inline
-    def setFaceNormals(value: js.Array[Vec3]): Self = this.set("faceNormals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFacesVarargs(value: js.Array[Double]*): Self = this.set("faces", js.Array(value :_*))
-    
-    @scala.inline
-    def setFaces(value: js.Array[js.Array[Double]]): Self = this.set("faces", value.asInstanceOf[js.Any])
+    def setFacesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "faces", js.Array(value :_*))
     
     @scala.inline
     def setFindSaparatingAxis(
       value: (ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion, Vec3, js.Array[_], js.Array[_]) => Boolean
-    ): Self = this.set("findSaparatingAxis", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "findSaparatingAxis", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setGetAveragePointLocal(value: Vec3 => Vec3): Self = this.set("getAveragePointLocal", js.Any.fromFunction1(value))
+    def setGetAveragePointLocal(value: Vec3 => Vec3): Self = StObject.set(x, "getAveragePointLocal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFaceNormal(value: (Double, Vec3) => Vec3): Self = this.set("getFaceNormal", js.Any.fromFunction2(value))
+    def setGetFaceNormal(value: (Double, Vec3) => Vec3): Self = StObject.set(x, "getFaceNormal", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetPlaneConstantOfFace(value: Double => Double): Self = this.set("getPlaneConstantOfFace", js.Any.fromFunction1(value))
+    def setGetPlaneConstantOfFace(value: Double => Double): Self = StObject.set(x, "getPlaneConstantOfFace", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPointIsInside(value: Vec3 => Boolean): Self = this.set("pointIsInside", js.Any.fromFunction1(value))
+    def setPointIsInside(value: Vec3 => Boolean): Self = StObject.set(x, "pointIsInside", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTestSepAxis(value: (Vec3, ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion) => Double): Self = this.set("testSepAxis", js.Any.fromFunction6(value))
+    def setTestSepAxis(value: (Vec3, ConvexPolyhedron, Vec3, Quaternion, Vec3, Quaternion) => Double): Self = StObject.set(x, "testSepAxis", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setTransformAllPoints(value: (Vec3, Quaternion) => Unit): Self = this.set("transformAllPoints", js.Any.fromFunction2(value))
+    def setTransformAllPoints(value: (Vec3, Quaternion) => Unit): Self = StObject.set(x, "transformAllPoints", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUniqueEdgesVarargs(value: Vec3*): Self = this.set("uniqueEdges", js.Array(value :_*))
+    def setUniqueEdges(value: js.Array[Vec3]): Self = StObject.set(x, "uniqueEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueEdges(value: js.Array[Vec3]): Self = this.set("uniqueEdges", value.asInstanceOf[js.Any])
+    def setUniqueEdgesVarargs(value: Vec3*): Self = StObject.set(x, "uniqueEdges", js.Array(value :_*))
     
     @scala.inline
-    def setVerticesVarargs(value: Vec3*): Self = this.set("vertices", js.Array(value :_*))
+    def setVertices(value: js.Array[Vec3]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVertices(value: js.Array[Vec3]): Self = this.set("vertices", value.asInstanceOf[js.Any])
+    def setVerticesVarargs(value: Vec3*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     
     @scala.inline
-    def setWorldVerticesVarargs(value: Vec3*): Self = this.set("worldVertices", js.Array(value :_*))
+    def setWorldVertices(value: js.Array[Vec3]): Self = StObject.set(x, "worldVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldVertices(value: js.Array[Vec3]): Self = this.set("worldVertices", value.asInstanceOf[js.Any])
+    def setWorldVerticesNeedsUpdate(value: Boolean): Self = StObject.set(x, "worldVerticesNeedsUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldVerticesNeedsUpdate(value: Boolean): Self = this.set("worldVerticesNeedsUpdate", value.asInstanceOf[js.Any])
+    def setWorldVerticesVarargs(value: Vec3*): Self = StObject.set(x, "worldVertices", js.Array(value :_*))
   }
 }

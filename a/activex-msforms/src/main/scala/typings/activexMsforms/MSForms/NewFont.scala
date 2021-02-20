@@ -1,11 +1,12 @@
 package typings.activexMsforms.MSForms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewFont extends js.Object {
+trait NewFont extends StObject {
   
   val Bold: Boolean = js.native
   
@@ -46,45 +47,33 @@ object NewFont {
   }
   
   @scala.inline
-  implicit class NewFontOps[Self <: NewFont] (val x: Self) extends AnyVal {
+  implicit class NewFontMutableBuilder[Self <: NewFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharset(value: Double): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("Bold", value.asInstanceOf[js.Any])
+    def setMSFormsDotNewFont_typekey(value: NewFont): Self = StObject.set(x, "MSForms.NewFont_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharset(value: Double): Self = this.set("Charset", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("Italic", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSFormsDotNewFont_typekey(value: NewFont): Self = this.set("MSForms.NewFont_typekey", value.asInstanceOf[js.Any])
+    def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setUnderline(value: Boolean): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrikethrough(value: Boolean): Self = this.set("Strikethrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: Boolean): Self = this.set("Underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("Weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

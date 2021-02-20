@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.glue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettings extends js.Object {
+trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettings extends StObject {
   
   /**
     * When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption. see Connection Password Encryption.
@@ -29,24 +30,12 @@ object DataCatalogEncryptionSettingsDataCatalogEncryptionSettings {
   }
   
   @scala.inline
-  implicit class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOps[Self <: DataCatalogEncryptionSettingsDataCatalogEncryptionSettings] (val x: Self) extends AnyVal {
+  implicit class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsMutableBuilder[Self <: DataCatalogEncryptionSettingsDataCatalogEncryptionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionPasswordEncryption(value: DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption): Self = StObject.set(x, "connectionPasswordEncryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectionPasswordEncryption(value: DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption): Self = this.set("connectionPasswordEncryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncryptionAtRest(value: DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest): Self = this.set("encryptionAtRest", value.asInstanceOf[js.Any])
+    def setEncryptionAtRest(value: DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest): Self = StObject.set(x, "encryptionAtRest", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentitytoolkitRelyingpartyDeleteAccountRequest extends js.Object {
+trait IdentitytoolkitRelyingpartyDeleteAccountRequest extends StObject {
   
   /** GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration. */
   var delegatedProjectNumber: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object IdentitytoolkitRelyingpartyDeleteAccountRequest {
   }
   
   @scala.inline
-  implicit class IdentitytoolkitRelyingpartyDeleteAccountRequestOps[Self <: IdentitytoolkitRelyingpartyDeleteAccountRequest] (val x: Self) extends AnyVal {
+  implicit class IdentitytoolkitRelyingpartyDeleteAccountRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyDeleteAccountRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    def setIdTokenUndefined: Self = StObject.set(x, "idToken", js.undefined)
     
     @scala.inline
-    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdToken: Self = this.set("idToken", js.undefined)
-    
-    @scala.inline
-    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalId: Self = this.set("localId", js.undefined)
+    def setLocalIdUndefined: Self = StObject.set(x, "localId", js.undefined)
   }
 }

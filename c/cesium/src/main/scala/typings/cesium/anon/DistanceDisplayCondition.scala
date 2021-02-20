@@ -2,12 +2,13 @@ package typings.cesium.anon
 
 import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceDisplayCondition extends js.Object {
+trait DistanceDisplayCondition extends StObject {
   
   var distanceDisplayCondition: js.UndefOr[Property] = js.native
   
@@ -32,60 +33,48 @@ object DistanceDisplayCondition {
   }
   
   @scala.inline
-  implicit class DistanceDisplayConditionOps[Self <: DistanceDisplayCondition] (val x: Self) extends AnyVal {
+  implicit class DistanceDisplayConditionMutableBuilder[Self <: DistanceDisplayCondition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistanceDisplayCondition(value: Property): Self = StObject.set(x, "distanceDisplayCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceDisplayConditionUndefined: Self = StObject.set(x, "distanceDisplayCondition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeadTime(value: Property | Double): Self = StObject.set(x, "leadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceDisplayCondition(value: Property): Self = this.set("distanceDisplayCondition", value.asInstanceOf[js.Any])
+    def setLeadTimeUndefined: Self = StObject.set(x, "leadTime", js.undefined)
     
     @scala.inline
-    def deleteDistanceDisplayCondition: Self = this.set("distanceDisplayCondition", js.undefined)
+    def setMaterial(value: MaterialProperty): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadTime(value: Property | Double): Self = this.set("leadTime", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteLeadTime: Self = this.set("leadTime", js.undefined)
+    def setResolution(value: Property | Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: MaterialProperty): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setShow(value: Property | Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolution(value: Property | Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setTrailTime(value: Property | Double): Self = StObject.set(x, "trailTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Property | Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setTrailTimeUndefined: Self = StObject.set(x, "trailTime", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setWidth(value: Property | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrailTime(value: Property | Double): Self = this.set("trailTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailTime: Self = this.set("trailTime", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Property | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

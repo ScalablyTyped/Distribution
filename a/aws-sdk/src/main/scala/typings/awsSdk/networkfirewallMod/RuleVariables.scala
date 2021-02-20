@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleVariables extends js.Object {
+trait RuleVariables extends StObject {
   
   /**
     * A list of IP addresses and address ranges, in CIDR notation. 
@@ -26,30 +27,18 @@ object RuleVariables {
   }
   
   @scala.inline
-  implicit class RuleVariablesOps[Self <: RuleVariables] (val x: Self) extends AnyVal {
+  implicit class RuleVariablesMutableBuilder[Self <: RuleVariables] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIPSets(value: IPSets): Self = StObject.set(x, "IPSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIPSetsUndefined: Self = StObject.set(x, "IPSets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortSets(value: PortSets): Self = StObject.set(x, "PortSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPSets(value: IPSets): Self = this.set("IPSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIPSets: Self = this.set("IPSets", js.undefined)
-    
-    @scala.inline
-    def setPortSets(value: PortSets): Self = this.set("PortSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePortSets: Self = this.set("PortSets", js.undefined)
+    def setPortSetsUndefined: Self = StObject.set(x, "PortSets", js.undefined)
   }
 }

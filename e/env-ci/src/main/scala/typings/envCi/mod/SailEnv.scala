@@ -3,6 +3,7 @@ package typings.envCi.mod
 import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.`Sail CI`
 import typings.envCi.envCiStrings.sail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,48 +46,36 @@ object SailEnv {
   }
   
   @scala.inline
-  implicit class SailEnvOps[Self <: SailEnv] (val x: Self) extends AnyVal {
+  implicit class SailEnvMutableBuilder[Self <: SailEnv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: String): Self = this.set("commit", value.asInstanceOf[js.Any])
+    def setIsPr(value: Boolean): Self = StObject.set(x, "isPr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPr(value: Boolean): Self = this.set("isPr", value.asInstanceOf[js.Any])
+    def setName(value: `Sail CI`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: `Sail CI`): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPr(value: String): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
     @scala.inline
-    def setService(value: sail): Self = this.set("service", value.asInstanceOf[js.Any])
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlug(value: String): Self = this.set("slug", value.asInstanceOf[js.Any])
+    def setService(value: sail): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBranch: Self = this.set("branch", js.undefined)
-    
-    @scala.inline
-    def setPr(value: String): Self = this.set("pr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePr: Self = this.set("pr", js.undefined)
+    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
   }
 }

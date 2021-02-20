@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration controlling usage of a service.
   */
 @js.native
-trait SchemaUsage extends js.Object {
+trait SchemaUsage extends StObject {
   
   /**
     * The full resource name of a channel used for sending notifications to the
@@ -43,42 +44,30 @@ object SchemaUsage {
   }
   
   @scala.inline
-  implicit class SchemaUsageOps[Self <: SchemaUsage] (val x: Self) extends AnyVal {
+  implicit class SchemaUsageMutableBuilder[Self <: SchemaUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProducerNotificationChannel(value: String): Self = StObject.set(x, "producerNotificationChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProducerNotificationChannelUndefined: Self = StObject.set(x, "producerNotificationChannel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequirements(value: js.Array[String]): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProducerNotificationChannel(value: String): Self = this.set("producerNotificationChannel", value.asInstanceOf[js.Any])
+    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
     @scala.inline
-    def deleteProducerNotificationChannel: Self = this.set("producerNotificationChannel", js.undefined)
+    def setRequirementsVarargs(value: String*): Self = StObject.set(x, "requirements", js.Array(value :_*))
     
     @scala.inline
-    def setRequirementsVarargs(value: String*): Self = this.set("requirements", js.Array(value :_*))
+    def setRules(value: js.Array[SchemaUsageRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirements(value: js.Array[String]): Self = this.set("requirements", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
     @scala.inline
-    def deleteRequirements: Self = this.set("requirements", js.undefined)
-    
-    @scala.inline
-    def setRulesVarargs(value: SchemaUsageRule*): Self = this.set("rules", js.Array(value :_*))
-    
-    @scala.inline
-    def setRules(value: js.Array[SchemaUsageRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("rules", js.undefined)
+    def setRulesVarargs(value: SchemaUsageRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,24 +41,12 @@ object XCellAddressable {
   }
   
   @scala.inline
-  implicit class XCellAddressableOps[Self <: XCellAddressable] (val x: Self) extends AnyVal {
+  implicit class XCellAddressableMutableBuilder[Self <: XCellAddressable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellAddress(value: CellAddress): Self = StObject.set(x, "CellAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCellAddress(value: CellAddress): Self = this.set("CellAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetCellAddress(value: () => CellAddress): Self = this.set("getCellAddress", js.Any.fromFunction0(value))
+    def setGetCellAddress(value: () => CellAddress): Self = StObject.set(x, "getCellAddress", js.Any.fromFunction0(value))
   }
 }

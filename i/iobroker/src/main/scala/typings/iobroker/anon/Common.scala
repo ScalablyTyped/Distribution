@@ -1,12 +1,13 @@
 package typings.iobroker.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Common extends js.Object {
+trait Common extends StObject {
   
   var common: Record[String, _] = js.native
   
@@ -21,24 +22,12 @@ object Common {
   }
   
   @scala.inline
-  implicit class CommonOps[Self <: Common] (val x: Self) extends AnyVal {
+  implicit class CommonMutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommon(value: Record[String, _]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommon(value: Record[String, _]): Self = this.set("common", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNative(value: Record[String, _]): Self = this.set("native", value.asInstanceOf[js.Any])
+    def setNative(value: Record[String, _]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
   }
 }

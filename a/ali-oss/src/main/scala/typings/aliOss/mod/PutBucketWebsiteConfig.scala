@@ -1,13 +1,14 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutBucketWebsiteConfig extends js.Object {
+trait PutBucketWebsiteConfig extends StObject {
   
-   // default page, e.g.: index.html
+  // default page, e.g.: index.html
   var error: js.UndefOr[String] = js.native
   
   var index: String = js.native
@@ -21,27 +22,15 @@ object PutBucketWebsiteConfig {
   }
   
   @scala.inline
-  implicit class PutBucketWebsiteConfigOps[Self <: PutBucketWebsiteConfig] (val x: Self) extends AnyVal {
+  implicit class PutBucketWebsiteConfigMutableBuilder[Self <: PutBucketWebsiteConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

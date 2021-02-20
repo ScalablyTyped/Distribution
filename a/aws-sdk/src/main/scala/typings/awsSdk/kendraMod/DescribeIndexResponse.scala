@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIndexResponse extends js.Object {
+trait DescribeIndexResponse extends StObject {
   
   /**
     * For enterprise edtion indexes, you can choose to use additional capacity to meet the needs of your application. This contains the capacity units used for the index. A 0 for the query capacity or the storage capacity indicates that the index is using the default capacity for the index.
@@ -91,114 +92,102 @@ object DescribeIndexResponse {
   }
   
   @scala.inline
-  implicit class DescribeIndexResponseOps[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeIndexResponseMutableBuilder[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapacityUnits(value: CapacityUnitsConfiguration): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapacityUnitsUndefined: Self = StObject.set(x, "CapacityUnits", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityUnits(value: CapacityUnitsConfiguration): Self = this.set("CapacityUnits", value.asInstanceOf[js.Any])
+    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     @scala.inline
-    def deleteCapacityUnits: Self = this.set("CapacityUnits", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    def setDocumentMetadataConfigurations(value: DocumentMetadataConfigurationList): Self = StObject.set(x, "DocumentMetadataConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDocumentMetadataConfigurationsUndefined: Self = StObject.set(x, "DocumentMetadataConfigurations", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setDocumentMetadataConfigurationsVarargs(value: DocumentMetadataConfiguration*): Self = StObject.set(x, "DocumentMetadataConfigurations", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentMetadataConfigurationsVarargs(value: DocumentMetadataConfiguration*): Self = this.set("DocumentMetadataConfigurations", js.Array(value :_*))
+    def setEdition(value: IndexEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentMetadataConfigurations(value: DocumentMetadataConfigurationList): Self = this.set("DocumentMetadataConfigurations", value.asInstanceOf[js.Any])
+    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
     @scala.inline
-    def deleteDocumentMetadataConfigurations: Self = this.set("DocumentMetadataConfigurations", js.undefined)
+    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdition(value: IndexEdition): Self = this.set("Edition", value.asInstanceOf[js.Any])
+    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
     @scala.inline
-    def deleteEdition: Self = this.set("Edition", js.undefined)
+    def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    def setIndexStatistics(value: IndexStatistics): Self = StObject.set(x, "IndexStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: IndexId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setIndexStatisticsUndefined: Self = StObject.set(x, "IndexStatistics", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setName(value: IndexName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexStatistics(value: IndexStatistics): Self = this.set("IndexStatistics", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteIndexStatistics: Self = this.set("IndexStatistics", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: IndexName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setServerSideEncryptionConfigurationUndefined: Self = StObject.set(x, "ServerSideEncryptionConfiguration", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    def setStatus(value: IndexStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = this.set("ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteServerSideEncryptionConfiguration: Self = this.set("ServerSideEncryptionConfiguration", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: IndexStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setUserContextPolicy(value: UserContextPolicy): Self = StObject.set(x, "UserContextPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    def setUserContextPolicyUndefined: Self = StObject.set(x, "UserContextPolicy", js.undefined)
     
     @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUserTokenConfigurations(value: UserTokenConfigurationList): Self = StObject.set(x, "UserTokenConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserContextPolicy(value: UserContextPolicy): Self = this.set("UserContextPolicy", value.asInstanceOf[js.Any])
+    def setUserTokenConfigurationsUndefined: Self = StObject.set(x, "UserTokenConfigurations", js.undefined)
     
     @scala.inline
-    def deleteUserContextPolicy: Self = this.set("UserContextPolicy", js.undefined)
-    
-    @scala.inline
-    def setUserTokenConfigurationsVarargs(value: UserTokenConfiguration*): Self = this.set("UserTokenConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserTokenConfigurations(value: UserTokenConfigurationList): Self = this.set("UserTokenConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserTokenConfigurations: Self = this.set("UserTokenConfigurations", js.undefined)
+    def setUserTokenConfigurationsVarargs(value: UserTokenConfiguration*): Self = StObject.set(x, "UserTokenConfigurations", js.Array(value :_*))
   }
 }

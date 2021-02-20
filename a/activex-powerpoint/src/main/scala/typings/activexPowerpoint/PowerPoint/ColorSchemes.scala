@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColorSchemes extends js.Object {
+trait ColorSchemes extends StObject {
   
   /** @param PowerPoint.ColorScheme [Scheme=0] */
   def Add(): ColorScheme = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyEnforcementRule extends js.Object {
+trait PolicyEnforcementRule extends StObject {
   
   /**
     * An action to block access to apps and data on a fully managed device or in a work profile. This action also triggers a user-facing notification with information (where possible) on
@@ -28,36 +29,24 @@ object PolicyEnforcementRule {
   }
   
   @scala.inline
-  implicit class PolicyEnforcementRuleOps[Self <: PolicyEnforcementRule] (val x: Self) extends AnyVal {
+  implicit class PolicyEnforcementRuleMutableBuilder[Self <: PolicyEnforcementRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockAction(value: BlockAction): Self = StObject.set(x, "blockAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockActionUndefined: Self = StObject.set(x, "blockAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockAction(value: BlockAction): Self = this.set("blockAction", value.asInstanceOf[js.Any])
+    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
     
     @scala.inline
-    def deleteBlockAction: Self = this.set("blockAction", js.undefined)
+    def setWipeAction(value: WipeAction): Self = StObject.set(x, "wipeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingName(value: String): Self = this.set("settingName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingName: Self = this.set("settingName", js.undefined)
-    
-    @scala.inline
-    def setWipeAction(value: WipeAction): Self = this.set("wipeAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWipeAction: Self = this.set("wipeAction", js.undefined)
+    def setWipeActionUndefined: Self = StObject.set(x, "wipeAction", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.reactAutosuggest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactAutosuggest.reactAutosuggestStrings.`suggestions-revealed`
   - typings.reactAutosuggest.reactAutosuggestStrings.`suggestion-selected`
 */
-trait FetchRequestedReasons extends js.Object
+trait FetchRequestedReasons extends StObject
 object FetchRequestedReasons {
   
   @scala.inline

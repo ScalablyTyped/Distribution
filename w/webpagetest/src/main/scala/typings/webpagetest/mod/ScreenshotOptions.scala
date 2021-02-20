@@ -1,11 +1,12 @@
 package typings.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScreenshotOptions extends js.Object {
+trait ScreenshotOptions extends StObject {
   
   /** returns the page screenshot at the Document Complete point (i.e.: when window.onload was fired) */
   var documentComplete: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object ScreenshotOptions {
   }
   
   @scala.inline
-  implicit class ScreenshotOptionsOps[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
+  implicit class ScreenshotOptionsMutableBuilder[Self <: ScreenshotOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentComplete(value: Boolean): Self = StObject.set(x, "documentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentCompleteUndefined: Self = StObject.set(x, "documentComplete", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullResolution(value: Boolean): Self = StObject.set(x, "fullResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentComplete(value: Boolean): Self = this.set("documentComplete", value.asInstanceOf[js.Any])
+    def setFullResolutionUndefined: Self = StObject.set(x, "fullResolution", js.undefined)
     
     @scala.inline
-    def deleteDocumentComplete: Self = this.set("documentComplete", js.undefined)
+    def setStartRender(value: Boolean): Self = StObject.set(x, "startRender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullResolution(value: Boolean): Self = this.set("fullResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFullResolution: Self = this.set("fullResolution", js.undefined)
-    
-    @scala.inline
-    def setStartRender(value: Boolean): Self = this.set("startRender", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRender: Self = this.set("startRender", js.undefined)
+    def setStartRenderUndefined: Self = StObject.set(x, "startRender", js.undefined)
   }
 }

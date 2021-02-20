@@ -2,12 +2,13 @@ package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nodeHueApi.anon.Dictkey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISensor extends js.Object {
+trait ISensor extends StObject {
   
   var config: StringDictionary[Double | String] = js.native
   
@@ -45,51 +46,39 @@ object ISensor {
   }
   
   @scala.inline
-  implicit class ISensorOps[Self <: ISensor] (val x: Self) extends AnyVal {
+  implicit class ISensorMutableBuilder[Self <: ISensor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: StringDictionary[Double | String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setConfig(value: StringDictionary[Double | String]): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setManufacturername(value: String): Self = StObject.set(x, "manufacturername", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturername(value: String): Self = this.set("manufacturername", value.asInstanceOf[js.Any])
+    def setModelid(value: String): Self = StObject.set(x, "modelid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelid(value: String): Self = this.set("modelid", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setState(value: Dictkey): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: Dictkey): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSwversion(value: String): Self = StObject.set(x, "swversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwversion(value: String): Self = this.set("swversion", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUniqueid(value: String): Self = StObject.set(x, "uniqueid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setUniqueid(value: String): Self = this.set("uniqueid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueid: Self = this.set("uniqueid", js.undefined)
+    def setUniqueidUndefined: Self = StObject.set(x, "uniqueid", js.undefined)
   }
 }

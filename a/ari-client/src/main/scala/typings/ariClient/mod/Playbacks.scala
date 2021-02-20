@@ -3,12 +3,13 @@ package typings.ariClient.mod
 import typings.ariClient.anon.Operation
 import typings.ariClient.anon.PlaybackIdString
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Playbacks extends js.Object {
+trait Playbacks extends StObject {
   
   /**
     * Control a playback.

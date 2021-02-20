@@ -1,5 +1,6 @@
 package typings.momentMini.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,54 +31,42 @@ object DurationInputObject {
   }
   
   @scala.inline
-  implicit class DurationInputObjectOps[Self <: DurationInputObject] (val x: Self) extends AnyVal {
+  implicit class DurationInputObjectMutableBuilder[Self <: DurationInputObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQ(value: Double): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQUndefined: Self = StObject.set(x, "Q", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuarter(value: Double): Self = StObject.set(x, "quarter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: Double): Self = this.set("Q", value.asInstanceOf[js.Any])
+    def setQuarterUndefined: Self = StObject.set(x, "quarter", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("Q", js.undefined)
+    def setQuarters(value: Double): Self = StObject.set(x, "quarters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarter(value: Double): Self = this.set("quarter", value.asInstanceOf[js.Any])
+    def setQuartersUndefined: Self = StObject.set(x, "quarters", js.undefined)
     
     @scala.inline
-    def deleteQuarter: Self = this.set("quarter", js.undefined)
+    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuarters(value: Double): Self = this.set("quarters", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteQuarters: Self = this.set("quarters", js.undefined)
+    def setWeek(value: Double): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
     
     @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
+    def setWeeks(value: Double): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeek(value: Double): Self = this.set("week", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeek: Self = this.set("week", js.undefined)
-    
-    @scala.inline
-    def setWeeks(value: Double): Self = this.set("weeks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeeks: Self = this.set("weeks", js.undefined)
+    def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
   }
 }

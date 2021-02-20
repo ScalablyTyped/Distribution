@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -110,48 +111,36 @@ object XChartTypeTemplate {
   }
   
   @scala.inline
-  implicit class XChartTypeTemplateOps[Self <: XChartTypeTemplate] (val x: Self) extends AnyVal {
+  implicit class XChartTypeTemplateMutableBuilder[Self <: XChartTypeTemplate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyStyle(value: (XDataSeries, Double, Double, Double) => Unit): Self = StObject.set(x, "applyStyle", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeDiagram(value: XDiagram => Unit): Self = StObject.set(x, "changeDiagram", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeDiagramData(value: (XDiagram, XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeDiagramData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDataInterpreter(value: XDataInterpreter): Self = this.set("DataInterpreter", value.asInstanceOf[js.Any])
+    def setCreateDiagramByDataSource(value: (XDataSource, SeqEquiv[PropertyValue]) => XDiagram): Self = StObject.set(x, "createDiagramByDataSource", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApplyStyle(value: (XDataSeries, Double, Double, Double) => Unit): Self = this.set("applyStyle", js.Any.fromFunction4(value))
+    def setDataInterpreter(value: XDataInterpreter): Self = StObject.set(x, "DataInterpreter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeDiagram(value: XDiagram => Unit): Self = this.set("changeDiagram", js.Any.fromFunction1(value))
+    def setGetChartTypeForNewSeries(value: SeqEquiv[XChartType] => XChartType): Self = StObject.set(x, "getChartTypeForNewSeries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeDiagramData(value: (XDiagram, XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = this.set("changeDiagramData", js.Any.fromFunction3(value))
+    def setGetDataInterpreter(value: () => XDataInterpreter): Self = StObject.set(x, "getDataInterpreter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateDiagramByDataSource(value: (XDataSource, SeqEquiv[PropertyValue]) => XDiagram): Self = this.set("createDiagramByDataSource", js.Any.fromFunction2(value))
+    def setMatchesTemplate(value: (XDiagram, Boolean) => Boolean): Self = StObject.set(x, "matchesTemplate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetChartTypeForNewSeries(value: SeqEquiv[XChartType] => XChartType): Self = this.set("getChartTypeForNewSeries", js.Any.fromFunction1(value))
+    def setResetStyles(value: XDiagram => Unit): Self = StObject.set(x, "resetStyles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDataInterpreter(value: () => XDataInterpreter): Self = this.set("getDataInterpreter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMatchesTemplate(value: (XDiagram, Boolean) => Boolean): Self = this.set("matchesTemplate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResetStyles(value: XDiagram => Unit): Self = this.set("resetStyles", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSupportsCategories(value: () => Boolean): Self = this.set("supportsCategories", js.Any.fromFunction0(value))
+    def setSupportsCategories(value: () => Boolean): Self = StObject.set(x, "supportsCategories", js.Any.fromFunction0(value))
   }
 }

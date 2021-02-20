@@ -1,14 +1,14 @@
 package typings.plottable
 
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/scales/modifiedLogScale", JSImport.Namespace)
-@js.native
-object modifiedLogScaleMod extends js.Object {
+object modifiedLogScaleMod {
   
+  @JSImport("plottable/build/src/scales/modifiedLogScale", "ModifiedLog")
   @js.native
   /**
     * A ModifiedLog Scale acts as a regular log scale for large numbers.

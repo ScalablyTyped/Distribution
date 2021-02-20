@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamingComputationRanges extends js.Object {
+trait StreamingComputationRanges extends StObject {
   
   /** The ID of the computation. */
   var computationId: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object StreamingComputationRanges {
   }
   
   @scala.inline
-  implicit class StreamingComputationRangesOps[Self <: StreamingComputationRanges] (val x: Self) extends AnyVal {
+  implicit class StreamingComputationRangesMutableBuilder[Self <: StreamingComputationRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRangeAssignments(value: js.Array[KeyRangeDataDiskAssignment]): Self = StObject.set(x, "rangeAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputationId(value: String): Self = this.set("computationId", value.asInstanceOf[js.Any])
+    def setRangeAssignmentsUndefined: Self = StObject.set(x, "rangeAssignments", js.undefined)
     
     @scala.inline
-    def deleteComputationId: Self = this.set("computationId", js.undefined)
-    
-    @scala.inline
-    def setRangeAssignmentsVarargs(value: KeyRangeDataDiskAssignment*): Self = this.set("rangeAssignments", js.Array(value :_*))
-    
-    @scala.inline
-    def setRangeAssignments(value: js.Array[KeyRangeDataDiskAssignment]): Self = this.set("rangeAssignments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRangeAssignments: Self = this.set("rangeAssignments", js.undefined)
+    def setRangeAssignmentsVarargs(value: KeyRangeDataDiskAssignment*): Self = StObject.set(x, "rangeAssignments", js.Array(value :_*))
   }
 }

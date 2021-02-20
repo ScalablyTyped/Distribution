@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information of navigation behavior.
   */
 @js.native
-trait SchemaNavigationInfo extends js.Object {
+trait SchemaNavigationInfo extends StObject {
   
   /**
     * If this option is on, FDL click will be forced to redirect rather than
@@ -25,24 +26,12 @@ object SchemaNavigationInfo {
   }
   
   @scala.inline
-  implicit class SchemaNavigationInfoOps[Self <: SchemaNavigationInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaNavigationInfoMutableBuilder[Self <: SchemaNavigationInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableForcedRedirect(value: Boolean): Self = StObject.set(x, "enableForcedRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableForcedRedirect(value: Boolean): Self = this.set("enableForcedRedirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableForcedRedirect: Self = this.set("enableForcedRedirect", js.undefined)
+    def setEnableForcedRedirectUndefined: Self = StObject.set(x, "enableForcedRedirect", js.undefined)
   }
 }

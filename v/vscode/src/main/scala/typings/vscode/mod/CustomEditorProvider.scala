@@ -1,6 +1,7 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,35 +121,23 @@ object CustomEditorProvider {
   }
   
   @scala.inline
-  implicit class CustomEditorProviderOps[Self <: CustomEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomEditorProvider[T]) extends AnyVal {
+  implicit class CustomEditorProviderMutableBuilder[Self <: CustomEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomEditorProvider[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = this.set("backupCustomDocument", js.Any.fromFunction3(value))
+    def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = StObject.set(x, "backupCustomDocument", js.Any.fromFunction3(value))
     
     @scala.inline
     def setOnDidChangeCustomDocument(
       value: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
-    ): Self = this.set("onDidChangeCustomDocument", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onDidChangeCustomDocument", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRevertCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = this.set("revertCustomDocument", js.Any.fromFunction2(value))
+    def setRevertCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = StObject.set(x, "revertCustomDocument", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSaveCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = this.set("saveCustomDocument", js.Any.fromFunction2(value))
+    def setSaveCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = StObject.set(x, "saveCustomDocument", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSaveCustomDocumentAs(value: (T, Uri, CancellationToken) => Thenable[Unit]): Self = this.set("saveCustomDocumentAs", js.Any.fromFunction3(value))
+    def setSaveCustomDocumentAs(value: (T, Uri, CancellationToken) => Thenable[Unit]): Self = StObject.set(x, "saveCustomDocumentAs", js.Any.fromFunction3(value))
   }
 }

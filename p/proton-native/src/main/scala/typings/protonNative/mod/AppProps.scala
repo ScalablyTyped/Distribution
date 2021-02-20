@@ -1,11 +1,12 @@
 package typings.protonNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppProps extends js.Object {
+trait AppProps extends StObject {
   
   /**
     * Called when the quit menu item is called, right before the entire app quits.
@@ -21,24 +22,12 @@ object AppProps {
   }
   
   @scala.inline
-  implicit class AppPropsOps[Self <: AppProps] (val x: Self) extends AnyVal {
+  implicit class AppPropsMutableBuilder[Self <: AppProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnShouldQuit(value: () => Unit): Self = StObject.set(x, "onShouldQuit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnShouldQuit(value: () => Unit): Self = this.set("onShouldQuit", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnShouldQuit: Self = this.set("onShouldQuit", js.undefined)
+    def setOnShouldQuitUndefined: Self = StObject.set(x, "onShouldQuit", js.undefined)
   }
 }

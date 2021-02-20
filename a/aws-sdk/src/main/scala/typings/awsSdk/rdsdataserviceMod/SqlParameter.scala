@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsdataserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlParameter extends js.Object {
+trait SqlParameter extends StObject {
   
   /**
     * The name of the parameter.
@@ -31,36 +32,24 @@ object SqlParameter {
   }
   
   @scala.inline
-  implicit class SqlParameterOps[Self <: SqlParameter] (val x: Self) extends AnyVal {
+  implicit class SqlParameterMutableBuilder[Self <: SqlParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTypeHint(value: TypeHint): Self = StObject.set(x, "typeHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ParameterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTypeHintUndefined: Self = StObject.set(x, "typeHint", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setValue(value: Field): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeHint(value: TypeHint): Self = this.set("typeHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeHint: Self = this.set("typeHint", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Field): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

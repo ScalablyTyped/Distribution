@@ -1,16 +1,16 @@
 package typings.imageQ
 
 import typings.imageQ.pointContainerMod.PointContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/quality/ssim", JSImport.Namespace)
-@js.native
-object ssimMod extends js.Object {
+object ssimMod {
   
+  @JSImport("image-q/dist/quality/ssim", "SSIM")
   @js.native
-  class SSIM () extends js.Object {
+  class SSIM () extends StObject {
     
     /* private */ def _calculateAverageLuma(lumaValues: js.Any): js.Any = js.native
     

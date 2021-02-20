@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlacementGridType extends js.Object
+sealed trait PlacementGridType extends StObject
 @JSGlobal("__esri.CIM.PlacementGridType")
 @js.native
-object PlacementGridType extends js.Object {
+object PlacementGridType extends StObject {
   
   /**
     * Markers are placed on a uniform grid.

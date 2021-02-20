@@ -7,14 +7,15 @@ import typings.ol.pixelMod.Pixel
 import typings.ol.sizeMod.Size
 import typings.ol.styleStyleMod.StyleFunction
 import typings.std.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/render/canvas/hitdetet", JSImport.Namespace)
-@js.native
-object hitdetetMod extends js.Object {
+object hitdetetMod {
   
+  @JSImport("ol/render/canvas/hitdetet", "createHitDetectionImageData")
+  @js.native
   def createHitDetectionImageData(
     size: Size,
     transforms: js.Array[Transform],
@@ -24,6 +25,8 @@ object hitdetetMod extends js.Object {
     resolution: Double,
     rotation: Double
   ): ImageData = js.native
+  @JSImport("ol/render/canvas/hitdetet", "createHitDetectionImageData")
+  @js.native
   def createHitDetectionImageData(
     size: Size,
     transforms: js.Array[Transform],
@@ -34,5 +37,7 @@ object hitdetetMod extends js.Object {
     rotation: Double
   ): ImageData = js.native
   
+  @JSImport("ol/render/canvas/hitdetet", "hitDetect")
+  @js.native
   def hitDetect(pixel: Pixel, features: js.Array[FeatureLike], imageData: ImageData): js.Array[FeatureLike] = js.native
 }

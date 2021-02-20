@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the data corresponds to which column in the statistical model.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2QuasiIdField extends js.Object {
+trait SchemaGooglePrivacyDlpV2QuasiIdField extends StObject {
   
   var customTag: js.UndefOr[String] = js.native
   
@@ -24,30 +25,18 @@ object SchemaGooglePrivacyDlpV2QuasiIdField {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2QuasiIdFieldOps[Self <: SchemaGooglePrivacyDlpV2QuasiIdField] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2QuasiIdFieldMutableBuilder[Self <: SchemaGooglePrivacyDlpV2QuasiIdField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomTagUndefined: Self = StObject.set(x, "customTag", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomTag(value: String): Self = this.set("customTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomTag: Self = this.set("customTag", js.undefined)
-    
-    @scala.inline
-    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("field", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

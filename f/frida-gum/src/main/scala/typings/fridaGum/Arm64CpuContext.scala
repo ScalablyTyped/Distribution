@@ -1,5 +1,6 @@
 package typings.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -113,111 +114,99 @@ object Arm64CpuContext {
   }
   
   @scala.inline
-  implicit class Arm64CpuContextOps[Self <: Arm64CpuContext] (val x: Self) extends AnyVal {
+  implicit class Arm64CpuContextMutableBuilder[Self <: Arm64CpuContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFp(value: NativePointer): Self = StObject.set(x, "fp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLr(value: NativePointer): Self = StObject.set(x, "lr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX0(value: NativePointer): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFp(value: NativePointer): Self = this.set("fp", value.asInstanceOf[js.Any])
+    def setX1(value: NativePointer): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLr(value: NativePointer): Self = this.set("lr", value.asInstanceOf[js.Any])
+    def setX10(value: NativePointer): Self = StObject.set(x, "x10", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX0(value: NativePointer): Self = this.set("x0", value.asInstanceOf[js.Any])
+    def setX11(value: NativePointer): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: NativePointer): Self = this.set("x1", value.asInstanceOf[js.Any])
+    def setX12(value: NativePointer): Self = StObject.set(x, "x12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX10(value: NativePointer): Self = this.set("x10", value.asInstanceOf[js.Any])
+    def setX13(value: NativePointer): Self = StObject.set(x, "x13", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX11(value: NativePointer): Self = this.set("x11", value.asInstanceOf[js.Any])
+    def setX14(value: NativePointer): Self = StObject.set(x, "x14", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX12(value: NativePointer): Self = this.set("x12", value.asInstanceOf[js.Any])
+    def setX15(value: NativePointer): Self = StObject.set(x, "x15", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX13(value: NativePointer): Self = this.set("x13", value.asInstanceOf[js.Any])
+    def setX16(value: NativePointer): Self = StObject.set(x, "x16", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX14(value: NativePointer): Self = this.set("x14", value.asInstanceOf[js.Any])
+    def setX17(value: NativePointer): Self = StObject.set(x, "x17", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX15(value: NativePointer): Self = this.set("x15", value.asInstanceOf[js.Any])
+    def setX18(value: NativePointer): Self = StObject.set(x, "x18", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX16(value: NativePointer): Self = this.set("x16", value.asInstanceOf[js.Any])
+    def setX19(value: NativePointer): Self = StObject.set(x, "x19", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX17(value: NativePointer): Self = this.set("x17", value.asInstanceOf[js.Any])
+    def setX2(value: NativePointer): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX18(value: NativePointer): Self = this.set("x18", value.asInstanceOf[js.Any])
+    def setX20(value: NativePointer): Self = StObject.set(x, "x20", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX19(value: NativePointer): Self = this.set("x19", value.asInstanceOf[js.Any])
+    def setX21(value: NativePointer): Self = StObject.set(x, "x21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: NativePointer): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setX22(value: NativePointer): Self = StObject.set(x, "x22", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX20(value: NativePointer): Self = this.set("x20", value.asInstanceOf[js.Any])
+    def setX23(value: NativePointer): Self = StObject.set(x, "x23", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX21(value: NativePointer): Self = this.set("x21", value.asInstanceOf[js.Any])
+    def setX24(value: NativePointer): Self = StObject.set(x, "x24", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX22(value: NativePointer): Self = this.set("x22", value.asInstanceOf[js.Any])
+    def setX25(value: NativePointer): Self = StObject.set(x, "x25", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX23(value: NativePointer): Self = this.set("x23", value.asInstanceOf[js.Any])
+    def setX26(value: NativePointer): Self = StObject.set(x, "x26", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX24(value: NativePointer): Self = this.set("x24", value.asInstanceOf[js.Any])
+    def setX27(value: NativePointer): Self = StObject.set(x, "x27", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX25(value: NativePointer): Self = this.set("x25", value.asInstanceOf[js.Any])
+    def setX28(value: NativePointer): Self = StObject.set(x, "x28", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX26(value: NativePointer): Self = this.set("x26", value.asInstanceOf[js.Any])
+    def setX3(value: NativePointer): Self = StObject.set(x, "x3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX27(value: NativePointer): Self = this.set("x27", value.asInstanceOf[js.Any])
+    def setX4(value: NativePointer): Self = StObject.set(x, "x4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX28(value: NativePointer): Self = this.set("x28", value.asInstanceOf[js.Any])
+    def setX5(value: NativePointer): Self = StObject.set(x, "x5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX3(value: NativePointer): Self = this.set("x3", value.asInstanceOf[js.Any])
+    def setX6(value: NativePointer): Self = StObject.set(x, "x6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX4(value: NativePointer): Self = this.set("x4", value.asInstanceOf[js.Any])
+    def setX7(value: NativePointer): Self = StObject.set(x, "x7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX5(value: NativePointer): Self = this.set("x5", value.asInstanceOf[js.Any])
+    def setX8(value: NativePointer): Self = StObject.set(x, "x8", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX6(value: NativePointer): Self = this.set("x6", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX7(value: NativePointer): Self = this.set("x7", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX8(value: NativePointer): Self = this.set("x8", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX9(value: NativePointer): Self = this.set("x9", value.asInstanceOf[js.Any])
+    def setX9(value: NativePointer): Self = StObject.set(x, "x9", value.asInstanceOf[js.Any])
   }
 }

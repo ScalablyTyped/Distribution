@@ -1,5 +1,6 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.figmaStrings.NONE
   - typings.figma.figmaStrings.CLOSE_ON_CLICK_OUTSIDE
 */
-trait OverlayBackgroundInteraction extends js.Object
+trait OverlayBackgroundInteraction extends StObject
 object OverlayBackgroundInteraction {
   
   @scala.inline

@@ -8,14 +8,14 @@ import typings.three.constantsMod.TextureFilter
 import typings.three.constantsMod.Wrapping
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/textures/CubeTexture", JSImport.Namespace)
-@js.native
-object cubeTextureMod extends js.Object {
+object cubeTextureMod {
   
+  @JSImport("three/src/textures/CubeTexture", "CubeTexture")
   @js.native
   class CubeTexture protected () extends Texture {
     /**
@@ -31,9 +31,9 @@ object cubeTextureMod extends js.Object {
     	 * @param [encoding=THREE.LinearEncoding]
     	 */
     def this(
-       // HTMLImageElement or HTMLCanvasElement
-    images: js.UndefOr[js.Array[_]],
-      mapping: js.UndefOr[Mapping],
+      images: js.UndefOr[js.Array[_]],
+      // HTMLImageElement or HTMLCanvasElement
+    mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
       wrapT: js.UndefOr[Wrapping],
       magFilter: js.UndefOr[TextureFilter],

@@ -1,50 +1,52 @@
 package typings.materialTabIndicator
 
-import typings.materialTabIndicator.adapterMod.MDCTabIndicatorAdapter
-import typings.materialTabIndicator.anon.ACTIVE
-import typings.materialTabIndicator.anon.CONTENTSELECTOR
 import typings.materialTabIndicator.anon.PartialMDCTabIndicatorAda
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-indicator", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@material/tab-indicator", "MDCFadingTabIndicatorFoundation")
   @js.native
   class MDCFadingTabIndicatorFoundation ()
-    extends typings.materialTabIndicator.fadingFoundationMod.MDCFadingTabIndicatorFoundation
+    extends typings.materialTabIndicator.fadingFoundationMod.MDCFadingTabIndicatorFoundation {
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
+  }
   
+  @JSImport("@material/tab-indicator", "MDCSlidingTabIndicatorFoundation")
   @js.native
   class MDCSlidingTabIndicatorFoundation ()
-    extends typings.materialTabIndicator.slidingFoundationMod.MDCSlidingTabIndicatorFoundation
+    extends typings.materialTabIndicator.slidingFoundationMod.MDCSlidingTabIndicatorFoundation {
+    def this(adapter: PartialMDCTabIndicatorAda) = this()
+  }
   
+  @JSImport("@material/tab-indicator", "MDCTabIndicator")
   @js.native
-  class MDCTabIndicator ()
-    extends typings.materialTabIndicator.componentMod.MDCTabIndicator
+  class MDCTabIndicator protected ()
+    extends typings.materialTabIndicator.componentMod.MDCTabIndicator {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(
+      root: Element,
+      foundation: typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation,
+      args: js.Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTabIndicator extends js.Object {
+  object MDCTabIndicator {
     
+    @JSImport("@material/tab-indicator", "MDCTabIndicator.attachTo")
+    @js.native
     def attachTo(root: Element): typings.materialTabIndicator.componentMod.MDCTabIndicator = js.native
   }
   
+  @JSImport("@material/tab-indicator", "MDCTabIndicatorFoundation")
   @js.native
   abstract class MDCTabIndicatorFoundation ()
     extends typings.materialTabIndicator.foundationMod.MDCTabIndicatorFoundation {
     def this(adapter: PartialMDCTabIndicatorAda) = this()
-  }
-  /* static members */
-  @js.native
-  object MDCTabIndicatorFoundation extends js.Object {
-    
-    def cssClasses: ACTIVE = js.native
-    
-    def defaultAdapter: MDCTabIndicatorAdapter = js.native
-    
-    def strings: CONTENTSELECTOR = js.native
   }
   
   /**
@@ -69,19 +71,41 @@ object mod extends js.Object {
     * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     * THE SOFTWARE.
     */
-  @js.native
-  object cssClasses extends js.Object {
+  object cssClasses {
     
-    var ACTIVE: String = js.native
+    @JSImport("@material/tab-indicator", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var FADE: String = js.native
+    @JSImport("@material/tab-indicator", "cssClasses.ACTIVE")
+    @js.native
+    def ACTIVE: String = js.native
+    @scala.inline
+    def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
     
-    var NO_TRANSITION: String = js.native
+    @JSImport("@material/tab-indicator", "cssClasses.FADE")
+    @js.native
+    def FADE: String = js.native
+    @scala.inline
+    def FADE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FADE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/tab-indicator", "cssClasses.NO_TRANSITION")
+    @js.native
+    def NO_TRANSITION: String = js.native
+    @scala.inline
+    def NO_TRANSITION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_TRANSITION")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var CONTENT_SELECTOR: String = js.native
+    @JSImport("@material/tab-indicator", "strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/tab-indicator", "strings.CONTENT_SELECTOR")
+    @js.native
+    def CONTENT_SELECTOR: String = js.native
+    @scala.inline
+    def CONTENT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTENT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

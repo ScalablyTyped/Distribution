@@ -3,12 +3,13 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 import typings.vkOpenapi.vkOpenapiStrings.day
 import typings.vkOpenapi.vkOpenapiStrings.month
 import typings.vkOpenapi.vkOpenapiStrings.week
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecommendedOptions extends js.Object {
+trait RecommendedOptions extends StObject {
   
   var limit: js.UndefOr[Double] = js.native
   
@@ -25,36 +26,24 @@ object RecommendedOptions {
   }
   
   @scala.inline
-  implicit class RecommendedOptionsOps[Self <: RecommendedOptions] (val x: Self) extends AnyVal {
+  implicit class RecommendedOptionsMutableBuilder[Self <: RecommendedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setPeriod(value: day | week | month): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: day | week | month): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

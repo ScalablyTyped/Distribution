@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A set of one or more available refactoring actions, grouped under a parent refactoring.
   */
 @js.native
-trait ApplicableRefactorInfo extends js.Object {
+trait ApplicableRefactorInfo extends StObject {
   
   var actions: js.Array[RefactorActionInfo] = js.native
   
@@ -41,36 +42,24 @@ object ApplicableRefactorInfo {
   }
   
   @scala.inline
-  implicit class ApplicableRefactorInfoOps[Self <: ApplicableRefactorInfo] (val x: Self) extends AnyVal {
+  implicit class ApplicableRefactorInfoMutableBuilder[Self <: ApplicableRefactorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[RefactorActionInfo]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: RefactorActionInfo*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: RefactorActionInfo*): Self = this.set("actions", js.Array(value :_*))
+    def setInlineable(value: Boolean): Self = StObject.set(x, "inlineable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[RefactorActionInfo]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setInlineableUndefined: Self = StObject.set(x, "inlineable", js.undefined)
     
     @scala.inline
-    def setDescription(value: java.lang.String): Self = this.set("description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInlineable(value: Boolean): Self = this.set("inlineable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInlineable: Self = this.set("inlineable", js.undefined)
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

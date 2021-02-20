@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InferenceAcceleratorInfo extends js.Object {
+trait InferenceAcceleratorInfo extends StObject {
   
   /**
     * Describes the Inference accelerators for the instance type.
@@ -21,27 +22,15 @@ object InferenceAcceleratorInfo {
   }
   
   @scala.inline
-  implicit class InferenceAcceleratorInfoOps[Self <: InferenceAcceleratorInfo] (val x: Self) extends AnyVal {
+  implicit class InferenceAcceleratorInfoMutableBuilder[Self <: InferenceAcceleratorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerators(value: InferenceDeviceInfoList): Self = StObject.set(x, "Accelerators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAcceleratorsVarargs(value: InferenceDeviceInfo*): Self = this.set("Accelerators", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccelerators(value: InferenceDeviceInfoList): Self = this.set("Accelerators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccelerators: Self = this.set("Accelerators", js.undefined)
+    def setAcceleratorsVarargs(value: InferenceDeviceInfo*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
   }
 }

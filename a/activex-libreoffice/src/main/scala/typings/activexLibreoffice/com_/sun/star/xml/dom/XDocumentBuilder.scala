@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XEntityResolver
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XErrorHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,45 +63,33 @@ object XDocumentBuilder {
   }
   
   @scala.inline
-  implicit class XDocumentBuilderOps[Self <: XDocumentBuilder] (val x: Self) extends AnyVal {
+  implicit class XDocumentBuilderMutableBuilder[Self <: XDocumentBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDOMImplementation(value: XDOMImplementation): Self = StObject.set(x, "DOMImplementation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDOMImplementation(value: () => XDOMImplementation): Self = StObject.set(x, "getDOMImplementation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsNamespaceAware(value: () => Boolean): Self = StObject.set(x, "isNamespaceAware", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDOMImplementation(value: XDOMImplementation): Self = this.set("DOMImplementation", value.asInstanceOf[js.Any])
+    def setIsValidating(value: () => Boolean): Self = StObject.set(x, "isValidating", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDOMImplementation(value: () => XDOMImplementation): Self = this.set("getDOMImplementation", js.Any.fromFunction0(value))
+    def setNewDocument(value: () => XDocument): Self = StObject.set(x, "newDocument", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsNamespaceAware(value: () => Boolean): Self = this.set("isNamespaceAware", js.Any.fromFunction0(value))
+    def setParse(value: XInputStream => XDocument): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsValidating(value: () => Boolean): Self = this.set("isValidating", js.Any.fromFunction0(value))
+    def setParseURI(value: String => XDocument): Self = StObject.set(x, "parseURI", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNewDocument(value: () => XDocument): Self = this.set("newDocument", js.Any.fromFunction0(value))
+    def setSetEntityResolver(value: XEntityResolver => Unit): Self = StObject.set(x, "setEntityResolver", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParse(value: XInputStream => XDocument): Self = this.set("parse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParseURI(value: String => XDocument): Self = this.set("parseURI", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetEntityResolver(value: XEntityResolver => Unit): Self = this.set("setEntityResolver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetErrorHandler(value: XErrorHandler => Unit): Self = this.set("setErrorHandler", js.Any.fromFunction1(value))
+    def setSetErrorHandler(value: XErrorHandler => Unit): Self = StObject.set(x, "setErrorHandler", js.Any.fromFunction1(value))
   }
 }

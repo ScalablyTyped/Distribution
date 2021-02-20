@@ -1,11 +1,12 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerExtEventsObject extends js.Object {
+trait ServerExtEventsObject extends StObject {
   
   /**
     * (required) a function or an array of functions to be executed at a specified point during request processing. The required extension function signature is:
@@ -36,36 +37,24 @@ object ServerExtEventsObject {
   }
   
   @scala.inline
-  implicit class ServerExtEventsObjectOps[Self <: ServerExtEventsObject] (val x: Self) extends AnyVal {
+  implicit class ServerExtEventsObjectMutableBuilder[Self <: ServerExtEventsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: ServerExtPointFunction | js.Array[ServerExtPointFunction]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMethodFunction1(value: /* server */ Server => Unit): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethodVarargs(value: ServerExtPointFunction*): Self = StObject.set(x, "method", js.Array(value :_*))
     
     @scala.inline
-    def setMethodVarargs(value: ServerExtPointFunction*): Self = this.set("method", js.Array(value :_*))
+    def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodFunction1(value: /* server */ Server => Unit): Self = this.set("method", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setMethod(value: ServerExtPointFunction | js.Array[ServerExtPointFunction]): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: ServerExtType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: ServerExtOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setType(value: ServerExtType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

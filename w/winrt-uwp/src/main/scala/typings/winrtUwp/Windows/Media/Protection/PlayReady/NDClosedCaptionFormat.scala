@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NDClosedCaptionFormat extends js.Object
+sealed trait NDClosedCaptionFormat extends StObject
 /** Indicates the type of format used for closed captions. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDClosedCaptionFormat")
 @js.native
-object NDClosedCaptionFormat extends js.Object {
+object NDClosedCaptionFormat extends StObject {
   
   /** ATSC digital television closed captions. */
   @js.native

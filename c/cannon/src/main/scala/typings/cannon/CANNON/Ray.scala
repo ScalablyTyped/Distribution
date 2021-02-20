@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ray extends js.Object {
+trait Ray extends StObject {
   
   var checkCollisionResponse: Boolean = js.native
   
@@ -32,33 +33,21 @@ object Ray {
   }
   
   @scala.inline
-  implicit class RayOps[Self <: Ray] (val x: Self) extends AnyVal {
+  implicit class RayMutableBuilder[Self <: Ray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckCollisionResponse(value: Boolean): Self = StObject.set(x, "checkCollisionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrom(value: Vec3): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAABB(value: RaycastResult => Unit): Self = StObject.set(x, "getAABB", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckCollisionResponse(value: Boolean): Self = this.set("checkCollisionResponse", value.asInstanceOf[js.Any])
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: Vec3): Self = this.set("from", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetAABB(value: RaycastResult => Unit): Self = this.set("getAABB", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: Vec3): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: Vec3): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgGridFeatureChooserMethods extends js.Object {
+trait IgGridFeatureChooserMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
@@ -74,45 +75,33 @@ object IgGridFeatureChooserMethods {
   }
   
   @scala.inline
-  implicit class IgGridFeatureChooserMethodsOps[Self <: IgGridFeatureChooserMethods] (val x: Self) extends AnyVal {
+  implicit class IgGridFeatureChooserMethodsMutableBuilder[Self <: IgGridFeatureChooserMethods] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = this.set("changeGlobalLanguage", js.Any.fromFunction0(value))
+    def setDestroy(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = this.set("changeGlobalRegional", js.Any.fromFunction0(value))
+    def setGetDropDownByColumnKey(value: String => Unit): Self = StObject.set(x, "getDropDownByColumnKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeLocale(value: () => Unit): Self = this.set("changeLocale", js.Any.fromFunction0(value))
+    def setHideDropDown(value: String => Unit): Self = StObject.set(x, "hideDropDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestroy(value: (js.Object, js.Object) => Unit): Self = this.set("destroy", js.Any.fromFunction2(value))
+    def setShouldShowFeatureIcon(value: js.Object => Unit): Self = StObject.set(x, "shouldShowFeatureIcon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDropDownByColumnKey(value: String => Unit): Self = this.set("getDropDownByColumnKey", js.Any.fromFunction1(value))
+    def setShowDropDown(value: String => Unit): Self = StObject.set(x, "showDropDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHideDropDown(value: String => Unit): Self = this.set("hideDropDown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShouldShowFeatureIcon(value: js.Object => Unit): Self = this.set("shouldShowFeatureIcon", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowDropDown(value: String => Unit): Self = this.set("showDropDown", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleDropDown(value: String => Unit): Self = this.set("toggleDropDown", js.Any.fromFunction1(value))
+    def setToggleDropDown(value: String => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction1(value))
   }
 }

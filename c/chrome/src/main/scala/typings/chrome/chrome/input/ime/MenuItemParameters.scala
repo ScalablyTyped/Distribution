@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuItemParameters extends js.Object {
+trait MenuItemParameters extends StObject {
   
   var engineId: String = js.native
   
@@ -20,27 +21,15 @@ object MenuItemParameters {
   }
   
   @scala.inline
-  implicit class MenuItemParametersOps[Self <: MenuItemParameters] (val x: Self) extends AnyVal {
+  implicit class MenuItemParametersMutableBuilder[Self <: MenuItemParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEngineId(value: String): Self = StObject.set(x, "engineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEngineId(value: String): Self = this.set("engineId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsVarargs(value: js.Object*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[js.Object]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulesSource extends js.Object {
+trait RulesSource extends StObject {
   
   /**
     * Stateful inspection criteria for a domain list rule group. 
@@ -36,45 +37,33 @@ object RulesSource {
   }
   
   @scala.inline
-  implicit class RulesSourceOps[Self <: RulesSource] (val x: Self) extends AnyVal {
+  implicit class RulesSourceMutableBuilder[Self <: RulesSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRulesSourceList(value: RulesSourceList): Self = StObject.set(x, "RulesSourceList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRulesSourceListUndefined: Self = StObject.set(x, "RulesSourceList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRulesString(value: RulesString): Self = StObject.set(x, "RulesString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesSourceList(value: RulesSourceList): Self = this.set("RulesSourceList", value.asInstanceOf[js.Any])
+    def setRulesStringUndefined: Self = StObject.set(x, "RulesString", js.undefined)
     
     @scala.inline
-    def deleteRulesSourceList: Self = this.set("RulesSourceList", js.undefined)
+    def setStatefulRules(value: StatefulRules): Self = StObject.set(x, "StatefulRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesString(value: RulesString): Self = this.set("RulesString", value.asInstanceOf[js.Any])
+    def setStatefulRulesUndefined: Self = StObject.set(x, "StatefulRules", js.undefined)
     
     @scala.inline
-    def deleteRulesString: Self = this.set("RulesString", js.undefined)
+    def setStatefulRulesVarargs(value: StatefulRule*): Self = StObject.set(x, "StatefulRules", js.Array(value :_*))
     
     @scala.inline
-    def setStatefulRulesVarargs(value: StatefulRule*): Self = this.set("StatefulRules", js.Array(value :_*))
+    def setStatelessRulesAndCustomActions(value: StatelessRulesAndCustomActions): Self = StObject.set(x, "StatelessRulesAndCustomActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatefulRules(value: StatefulRules): Self = this.set("StatefulRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatefulRules: Self = this.set("StatefulRules", js.undefined)
-    
-    @scala.inline
-    def setStatelessRulesAndCustomActions(value: StatelessRulesAndCustomActions): Self = this.set("StatelessRulesAndCustomActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatelessRulesAndCustomActions: Self = this.set("StatelessRulesAndCustomActions", js.undefined)
+    def setStatelessRulesAndCustomActionsUndefined: Self = StObject.set(x, "StatelessRulesAndCustomActions", js.undefined)
   }
 }

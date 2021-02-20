@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FieldType extends js.Object
+sealed trait FieldType extends StObject
 @JSGlobal("SP.FieldType")
 @js.native
-object FieldType extends js.Object {
+object FieldType extends StObject {
   
   @js.native
   sealed trait URL extends FieldType

@@ -1,12 +1,13 @@
 package typings.chromeApps.chrome.networking.onc
 
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WiFiPropertiesBase[M /* <: ManagedObject */, S] extends js.Object {
+trait WiFiPropertiesBase[M /* <: ManagedObject */, S] extends StObject {
   
   /** The BSSID of the associated access point.. */
   var BSSID: js.UndefOr[String] = js.native
@@ -45,60 +46,48 @@ object WiFiPropertiesBase {
   }
   
   @scala.inline
-  implicit class WiFiPropertiesBaseOps[Self <: WiFiPropertiesBase[_, _], M /* <: ManagedObject */, S] (val x: Self with (WiFiPropertiesBase[M, S])) extends AnyVal {
+  implicit class WiFiPropertiesBaseMutableBuilder[Self <: WiFiPropertiesBase[_, _], M /* <: ManagedObject */, S] (val x: Self with (WiFiPropertiesBase[M, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequency(value: integer): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBSSID(value: String): Self = this.set("BSSID", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
     @scala.inline
-    def deleteBSSID: Self = this.set("BSSID", js.undefined)
+    def setHexSSID(value: S): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: integer): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    def setSSID(value: S): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHexSSID(value: S): Self = this.set("HexSSID", value.asInstanceOf[js.Any])
+    def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
     
     @scala.inline
-    def deleteHexSSID: Self = this.set("HexSSID", js.undefined)
+    def setSecurity(value: S): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSID(value: S): Self = this.set("SSID", value.asInstanceOf[js.Any])
+    def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
     
     @scala.inline
-    def deleteSSID: Self = this.set("SSID", js.undefined)
+    def setSignalStrength(value: integer): Self = StObject.set(x, "SignalStrength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurity(value: S): Self = this.set("Security", value.asInstanceOf[js.Any])
+    def setSignalStrengthUndefined: Self = StObject.set(x, "SignalStrength", js.undefined)
     
     @scala.inline
-    def deleteSecurity: Self = this.set("Security", js.undefined)
+    def setTetheringState(value: String): Self = StObject.set(x, "TetheringState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignalStrength(value: integer): Self = this.set("SignalStrength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignalStrength: Self = this.set("SignalStrength", js.undefined)
-    
-    @scala.inline
-    def setTetheringState(value: String): Self = this.set("TetheringState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTetheringState: Self = this.set("TetheringState", js.undefined)
+    def setTetheringStateUndefined: Self = StObject.set(x, "TetheringState", js.undefined)
   }
 }

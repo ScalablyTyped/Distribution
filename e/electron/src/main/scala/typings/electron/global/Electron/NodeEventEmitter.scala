@@ -1,19 +1,31 @@
 package typings.electron.global.Electron
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.node.eventsMod.EventEmitter
+import typings.node.eventsMod.EventEmitterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* was `typeof imported_events.EventEmitter` */
 @JSGlobal("Electron.NodeEventEmitter")
 @js.native
-class NodeEventEmitter () extends EventEmitter
-@JSGlobal("Electron.NodeEventEmitter")
-@js.native
-object NodeEventEmitter extends Instantiable0[EventEmitter] {
+class NodeEventEmitter () extends EventEmitter {
+  def this(options: EventEmitterOptions) = this()
+}
+/* was `typeof imported_events.EventEmitter` */
+object NodeEventEmitter {
   
-  var defaultMaxListeners: Double = js.native
+  @JSGlobal("Electron.NodeEventEmitter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("Electron.NodeEventEmitter.defaultMaxListeners")
+  @js.native
+  def defaultMaxListeners: Double = js.native
+  @scala.inline
+  def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
   
   /**
     * This symbol shall be used to install a listener for only monitoring `'error'`
@@ -24,9 +36,17 @@ object NodeEventEmitter extends Instantiable0[EventEmitter] {
     * `'error'` event is emitted, therefore the process will still crash if no
     * regular `'error'` listener is installed.
     */
+  /* static member */
+  @JSGlobal("Electron.NodeEventEmitter.errorMonitor")
+  @js.native
   val errorMonitor: js.Symbol = js.native
   
   /** @deprecated since v4.0.0 */
+  /* static member */
+  @JSGlobal("Electron.NodeEventEmitter.listenerCount")
+  @js.native
   def listenerCount(emitter: EventEmitter, event: String): Double = js.native
+  @JSGlobal("Electron.NodeEventEmitter.listenerCount")
+  @js.native
   def listenerCount(emitter: EventEmitter, event: js.Symbol): Double = js.native
 }

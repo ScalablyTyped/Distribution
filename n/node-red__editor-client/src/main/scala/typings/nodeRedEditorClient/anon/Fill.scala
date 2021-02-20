@@ -2,12 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fill extends js.Object {
+trait Fill extends StObject {
   
   var container: JQuery[HTMLElement] = js.native
   
@@ -24,33 +25,21 @@ object Fill {
   }
   
   @scala.inline
-  implicit class FillOps[Self <: Fill] (val x: Self) extends AnyVal {
+  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setContainer(value: JQuery[HTMLElement]): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setSingleExpanded(value: Boolean): Self = StObject.set(x, "singleExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
-    
-    @scala.inline
-    def setSingleExpanded(value: Boolean): Self = this.set("singleExpanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleExpanded: Self = this.set("singleExpanded", js.undefined)
+    def setSingleExpandedUndefined: Self = StObject.set(x, "singleExpanded", js.undefined)
   }
 }

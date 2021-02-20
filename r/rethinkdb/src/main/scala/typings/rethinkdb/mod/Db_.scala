@@ -1,11 +1,12 @@
 package typings.rethinkdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Db_ extends js.Object {
+trait Db_ extends StObject {
   
   def table(name: String): Table_ = js.native
   def table(name: String, options: GetTableOptions): Table_ = js.native

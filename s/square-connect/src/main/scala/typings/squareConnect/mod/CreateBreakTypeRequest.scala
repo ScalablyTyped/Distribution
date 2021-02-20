@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CreateBreakTypeRequest")
 @js.native
-class CreateBreakTypeRequest () extends js.Object {
+class CreateBreakTypeRequest () extends StObject {
   
   /**
     * The `BreakType` to be created.

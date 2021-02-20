@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SignatureInformation")
 @js.native
-class SignatureInformation protected () extends js.Object {
+class SignatureInformation protected () extends StObject {
   /**
     * Creates a new signature information object.
     *

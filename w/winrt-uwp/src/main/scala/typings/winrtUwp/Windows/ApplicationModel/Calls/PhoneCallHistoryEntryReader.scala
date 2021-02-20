@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Calls
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables the calling app to read through the phone call history entries. */
 @js.native
-trait PhoneCallHistoryEntryReader extends js.Object {
+trait PhoneCallHistoryEntryReader extends StObject {
   
   /**
     * Returns a list of the PhoneCallHistoryEntry objects.
@@ -25,21 +26,9 @@ object PhoneCallHistoryEntryReader {
   }
   
   @scala.inline
-  implicit class PhoneCallHistoryEntryReaderOps[Self <: PhoneCallHistoryEntryReader] (val x: Self) extends AnyVal {
+  implicit class PhoneCallHistoryEntryReaderMutableBuilder[Self <: PhoneCallHistoryEntryReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = this.set("readBatchAsync", js.Any.fromFunction0(value))
+    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[_]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

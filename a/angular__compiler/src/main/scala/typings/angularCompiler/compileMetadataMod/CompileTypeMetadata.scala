@@ -1,6 +1,7 @@
 package typings.angularCompiler.compileMetadataMod
 
 import typings.angularCompiler.lifecycleReflectorMod.LifecycleHooks
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object CompileTypeMetadata {
   }
   
   @scala.inline
-  implicit class CompileTypeMetadataOps[Self <: CompileTypeMetadata] (val x: Self) extends AnyVal {
+  implicit class CompileTypeMetadataMutableBuilder[Self <: CompileTypeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiDeps(value: js.Array[CompileDiDependencyMetadata]): Self = StObject.set(x, "diDeps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiDepsVarargs(value: CompileDiDependencyMetadata*): Self = StObject.set(x, "diDeps", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLifecycleHooks(value: js.Array[LifecycleHooks]): Self = StObject.set(x, "lifecycleHooks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiDepsVarargs(value: CompileDiDependencyMetadata*): Self = this.set("diDeps", js.Array(value :_*))
-    
-    @scala.inline
-    def setDiDeps(value: js.Array[CompileDiDependencyMetadata]): Self = this.set("diDeps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLifecycleHooksVarargs(value: LifecycleHooks*): Self = this.set("lifecycleHooks", js.Array(value :_*))
-    
-    @scala.inline
-    def setLifecycleHooks(value: js.Array[LifecycleHooks]): Self = this.set("lifecycleHooks", value.asInstanceOf[js.Any])
+    def setLifecycleHooksVarargs(value: LifecycleHooks*): Self = StObject.set(x, "lifecycleHooks", js.Array(value :_*))
   }
 }

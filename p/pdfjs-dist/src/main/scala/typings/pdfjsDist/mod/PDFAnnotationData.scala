@@ -1,19 +1,20 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PDFAnnotationData extends js.Object {
+trait PDFAnnotationData extends StObject {
   
-   // [x1, y1, x2, y2]
+  // [x1, y1, x2, y2]
   var annotationFlags: js.Any = js.native
   
-   // [r,g,b]
+  // [r,g,b]
   var borderWidth: Double = js.native
   
-   // todo
+  // todo
   var color: js.Array[Double] = js.native
   
   var hasAppearance: Boolean = js.native
@@ -38,42 +39,30 @@ object PDFAnnotationData {
   }
   
   @scala.inline
-  implicit class PDFAnnotationDataOps[Self <: PDFAnnotationData] (val x: Self) extends AnyVal {
+  implicit class PDFAnnotationDataMutableBuilder[Self <: PDFAnnotationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationFlags(value: js.Any): Self = StObject.set(x, "annotationFlags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationFlags(value: js.Any): Self = this.set("annotationFlags", value.asInstanceOf[js.Any])
+    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setHasAppearance(value: Boolean): Self = StObject.set(x, "hasAppearance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorVarargs(value: Double*): Self = this.set("color", js.Array(value :_*))
+    def setRect(value: js.Array[Double]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Array[Double]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setRectVarargs(value: Double*): Self = StObject.set(x, "rect", js.Array(value :_*))
     
     @scala.inline
-    def setHasAppearance(value: Boolean): Self = this.set("hasAppearance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRectVarargs(value: Double*): Self = this.set("rect", js.Array(value :_*))
-    
-    @scala.inline
-    def setRect(value: js.Array[Double]): Self = this.set("rect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubtype(value: String): Self = this.set("subtype", value.asInstanceOf[js.Any])
+    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
   }
 }

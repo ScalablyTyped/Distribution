@@ -4,13 +4,14 @@ import typings.std.ClientRect
 import typings.std.HTMLElement
 import typings.std.Range
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ckeditor/ckeditor5-utils", "Rect")
 @js.native
-class Rect protected () extends js.Object {
+class Rect protected () extends StObject {
   def this(source: js.Object) = this()
   def this(source: Rect) = this()
   def this(source: ClientRect) = this()
@@ -49,9 +50,9 @@ class Rect protected () extends js.Object {
   val width: Double = js.native
 }
 /* static members */
-@JSImport("@ckeditor/ckeditor5-utils", "Rect")
-@js.native
-object Rect extends js.Object {
+object Rect {
   
+  @JSImport("@ckeditor/ckeditor5-utils", "Rect.getDomRangeRects")
+  @js.native
   def getDomRangeRects(range: Range): js.Array[Rect] = js.native
 }

@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCRtcpParameters extends js.Object {
+trait RTCRtcpParameters extends StObject {
   
   var cname: js.UndefOr[java.lang.String] = js.native
   
@@ -20,30 +21,18 @@ object RTCRtcpParameters {
   }
   
   @scala.inline
-  implicit class RTCRtcpParametersOps[Self <: RTCRtcpParameters] (val x: Self) extends AnyVal {
+  implicit class RTCRtcpParametersMutableBuilder[Self <: RTCRtcpParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCname(value: java.lang.String): Self = StObject.set(x, "cname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCnameUndefined: Self = StObject.set(x, "cname", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReducedSize(value: scala.Boolean): Self = StObject.set(x, "reducedSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCname(value: java.lang.String): Self = this.set("cname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCname: Self = this.set("cname", js.undefined)
-    
-    @scala.inline
-    def setReducedSize(value: scala.Boolean): Self = this.set("reducedSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReducedSize: Self = this.set("reducedSize", js.undefined)
+    def setReducedSizeUndefined: Self = StObject.set(x, "reducedSize", js.undefined)
   }
 }

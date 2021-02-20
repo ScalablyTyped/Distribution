@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * was this attestation intended to sign for).
   */
 @js.native
-trait SchemaAttestation extends js.Object {
+trait SchemaAttestation extends StObject {
   
   var genericSignedAttestation: js.UndefOr[SchemaGenericSignedAttestation] = js.native
   
@@ -33,30 +34,18 @@ object SchemaAttestation {
   }
   
   @scala.inline
-  implicit class SchemaAttestationOps[Self <: SchemaAttestation] (val x: Self) extends AnyVal {
+  implicit class SchemaAttestationMutableBuilder[Self <: SchemaAttestation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenericSignedAttestation(value: SchemaGenericSignedAttestation): Self = StObject.set(x, "genericSignedAttestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGenericSignedAttestationUndefined: Self = StObject.set(x, "genericSignedAttestation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPgpSignedAttestation(value: SchemaPgpSignedAttestation): Self = StObject.set(x, "pgpSignedAttestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenericSignedAttestation(value: SchemaGenericSignedAttestation): Self = this.set("genericSignedAttestation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGenericSignedAttestation: Self = this.set("genericSignedAttestation", js.undefined)
-    
-    @scala.inline
-    def setPgpSignedAttestation(value: SchemaPgpSignedAttestation): Self = this.set("pgpSignedAttestation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePgpSignedAttestation: Self = this.set("pgpSignedAttestation", js.undefined)
+    def setPgpSignedAttestationUndefined: Self = StObject.set(x, "pgpSignedAttestation", js.undefined)
   }
 }

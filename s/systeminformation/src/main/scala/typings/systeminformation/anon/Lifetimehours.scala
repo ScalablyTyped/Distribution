@@ -1,11 +1,12 @@
 package typings.systeminformation.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lifetimehours extends js.Object {
+trait Lifetimehours extends StObject {
   
   var lifetime_hours: Double = js.native
   
@@ -23,27 +24,15 @@ object Lifetimehours {
   }
   
   @scala.inline
-  implicit class LifetimehoursOps[Self <: Lifetimehours] (val x: Self) extends AnyVal {
+  implicit class LifetimehoursMutableBuilder[Self <: Lifetimehours] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLifetime_hours(value: Double): Self = StObject.set(x, "lifetime_hours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: Value): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLifetime_hours(value: Double): Self = this.set("lifetime_hours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Value): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,15 @@
 package typings.jsonSchemaTyped.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JSONSchemaContentEncoding extends js.Object
+sealed trait JSONSchemaContentEncoding extends StObject
 @JSImport("json-schema-typed", "JSONSchemaContentEncoding")
 @js.native
-object JSONSchemaContentEncoding extends js.Object {
+object JSONSchemaContentEncoding extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[JSONSchemaContentEncoding with String] = js.native
@@ -21,8 +21,7 @@ object JSONSchemaContentEncoding extends js.Object {
     */
   @js.native
   sealed trait `7bit` extends JSONSchemaContentEncoding
-  /* "7bit" */ @js.native
-  object `7bit` extends TopLevel[`7bit` with String]
+  /* "7bit" */ val `7bit`: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.`7bit` with String = js.native
   
   /**
     * Allow extended ASCII characters which can use the 8th (highest) bit to
@@ -32,24 +31,21 @@ object JSONSchemaContentEncoding extends js.Object {
     */
   @js.native
   sealed trait `8bit` extends JSONSchemaContentEncoding
-  /* "8bit" */ @js.native
-  object `8bit` extends TopLevel[`8bit` with String]
+  /* "8bit" */ val `8bit`: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.`8bit` with String = js.native
   
   /**
     * Useful for data that is mostly non-text.
     */
   @js.native
   sealed trait Base64 extends JSONSchemaContentEncoding
-  /* "base64" */ @js.native
-  object Base64 extends TopLevel[Base64 with String]
+  /* "base64" */ val Base64: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.Base64 with String = js.native
   
   /**
     * Same character set as 8bit, with no line length restriction.
     */
   @js.native
   sealed trait Binary extends JSONSchemaContentEncoding
-  /* "binary" */ @js.native
-  object Binary extends TopLevel[Binary with String]
+  /* "binary" */ val Binary: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.Binary with String = js.native
   
   /**
     * An extension token defined by a standards-track RFC and registered with
@@ -57,8 +53,7 @@ object JSONSchemaContentEncoding extends js.Object {
     */
   @js.native
   sealed trait IETFToken extends JSONSchemaContentEncoding
-  /* "ietf-token" */ @js.native
-  object IETFToken extends TopLevel[IETFToken with String]
+  /* "ietf-token" */ val IETFToken: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.IETFToken with String = js.native
   
   /**
     * Lines are limited to 76 characters, and line breaks are represented using
@@ -66,8 +61,7 @@ object JSONSchemaContentEncoding extends js.Object {
     */
   @js.native
   sealed trait QuotedPrintable extends JSONSchemaContentEncoding
-  /* "quoted-printable" */ @js.native
-  object QuotedPrintable extends TopLevel[QuotedPrintable with String]
+  /* "quoted-printable" */ val QuotedPrintable: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.QuotedPrintable with String = js.native
   
   /**
     * The two characters "X-" or "x-" followed, with no intervening white space,
@@ -75,6 +69,5 @@ object JSONSchemaContentEncoding extends js.Object {
     */
   @js.native
   sealed trait XToken extends JSONSchemaContentEncoding
-  /* "x-token" */ @js.native
-  object XToken extends TopLevel[XToken with String]
+  /* "x-token" */ val XToken: typings.jsonSchemaTyped.mod.JSONSchemaContentEncoding.XToken with String = js.native
 }

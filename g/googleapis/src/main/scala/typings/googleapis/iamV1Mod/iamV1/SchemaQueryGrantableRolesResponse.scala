@@ -1,5 +1,6 @@
 package typings.googleapis.iamV1Mod.iamV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The grantable role query response.
   */
 @js.native
-trait SchemaQueryGrantableRolesResponse extends js.Object {
+trait SchemaQueryGrantableRolesResponse extends StObject {
   
   /**
     * To retrieve the next page of results, set
@@ -30,33 +31,21 @@ object SchemaQueryGrantableRolesResponse {
   }
   
   @scala.inline
-  implicit class SchemaQueryGrantableRolesResponseOps[Self <: SchemaQueryGrantableRolesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaQueryGrantableRolesResponseMutableBuilder[Self <: SchemaQueryGrantableRolesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoles(value: js.Array[SchemaRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setRolesVarargs(value: SchemaRole*): Self = this.set("roles", js.Array(value :_*))
-    
-    @scala.inline
-    def setRoles(value: js.Array[SchemaRole]): Self = this.set("roles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
+    def setRolesVarargs(value: SchemaRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

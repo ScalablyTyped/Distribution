@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -204,63 +205,51 @@ object XPackageManager {
   }
   
   @scala.inline
-  implicit class XPackageManagerOps[Self <: XPackageManager] (val x: Self) extends AnyVal {
+  implicit class XPackageManagerMutableBuilder[Self <: XPackageManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPackage(value: (String, SeqEquiv[NamedValue], String, XAbortChannel, XCommandEnvironment) => XPackage): Self = StObject.set(x, "addPackage", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckPrerequisites(value: (XPackage, XAbortChannel, XCommandEnvironment) => Double): Self = StObject.set(x, "checkPrerequisites", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: String): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setCreateAbortChannel(value: () => XAbortChannel): Self = StObject.set(x, "createAbortChannel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = this.set("SupportedPackageTypes", value.asInstanceOf[js.Any])
+    def setGetContext(value: () => String): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddPackage(value: (String, SeqEquiv[NamedValue], String, XAbortChannel, XCommandEnvironment) => XPackage): Self = this.set("addPackage", js.Any.fromFunction5(value))
+    def setGetDeployedPackage(value: (String, String, XCommandEnvironment) => XPackage): Self = StObject.set(x, "getDeployedPackage", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCheckPrerequisites(value: (XPackage, XAbortChannel, XCommandEnvironment) => Double): Self = this.set("checkPrerequisites", js.Any.fromFunction3(value))
+    def setGetDeployedPackages(value: (XAbortChannel, XCommandEnvironment) => SafeArray[XPackage]): Self = StObject.set(x, "getDeployedPackages", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateAbortChannel(value: () => XAbortChannel): Self = this.set("createAbortChannel", js.Any.fromFunction0(value))
+    def setGetExtensionsWithUnacceptedLicenses(value: XCommandEnvironment => SafeArray[XPackage]): Self = StObject.set(x, "getExtensionsWithUnacceptedLicenses", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetContext(value: () => String): Self = this.set("getContext", js.Any.fromFunction0(value))
+    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "getSupportedPackageTypes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDeployedPackage(value: (String, String, XCommandEnvironment) => XPackage): Self = this.set("getDeployedPackage", js.Any.fromFunction3(value))
+    def setImportExtension(value: (XPackage, XAbortChannel, XCommandEnvironment) => XPackage): Self = StObject.set(x, "importExtension", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetDeployedPackages(value: (XAbortChannel, XCommandEnvironment) => SafeArray[XPackage]): Self = this.set("getDeployedPackages", js.Any.fromFunction2(value))
+    def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetExtensionsWithUnacceptedLicenses(value: XCommandEnvironment => SafeArray[XPackage]): Self = this.set("getExtensionsWithUnacceptedLicenses", js.Any.fromFunction1(value))
+    def setReinstallDeployedPackages(value: (Boolean, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "reinstallDeployedPackages", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetSupportedPackageTypes(value: () => SafeArray[XPackageTypeInfo]): Self = this.set("getSupportedPackageTypes", js.Any.fromFunction0(value))
+    def setRemovePackage(value: (String, String, XAbortChannel, XCommandEnvironment) => Unit): Self = StObject.set(x, "removePackage", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setImportExtension(value: (XPackage, XAbortChannel, XCommandEnvironment) => XPackage): Self = this.set("importExtension", js.Any.fromFunction3(value))
+    def setSupportedPackageTypes(value: SafeArray[XPackageTypeInfo]): Self = StObject.set(x, "SupportedPackageTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadOnly(value: () => Boolean): Self = this.set("isReadOnly", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setReinstallDeployedPackages(value: (Boolean, XAbortChannel, XCommandEnvironment) => Unit): Self = this.set("reinstallDeployedPackages", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemovePackage(value: (String, String, XAbortChannel, XCommandEnvironment) => Unit): Self = this.set("removePackage", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSynchronize(value: (XAbortChannel, XCommandEnvironment) => Boolean): Self = this.set("synchronize", js.Any.fromFunction2(value))
+    def setSynchronize(value: (XAbortChannel, XCommandEnvironment) => Boolean): Self = StObject.set(x, "synchronize", js.Any.fromFunction2(value))
   }
 }

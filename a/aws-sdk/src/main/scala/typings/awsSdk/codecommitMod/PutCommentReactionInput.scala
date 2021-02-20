@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutCommentReactionInput extends js.Object {
+trait PutCommentReactionInput extends StObject {
   
   /**
     * The ID of the comment to which you want to add or update a reaction.
@@ -26,24 +27,12 @@ object PutCommentReactionInput {
   }
   
   @scala.inline
-  implicit class PutCommentReactionInputOps[Self <: PutCommentReactionInput] (val x: Self) extends AnyVal {
+  implicit class PutCommentReactionInputMutableBuilder[Self <: PutCommentReactionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCommentId(value: CommentId): Self = this.set("commentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReactionValue(value: ReactionValue): Self = this.set("reactionValue", value.asInstanceOf[js.Any])
+    def setReactionValue(value: ReactionValue): Self = StObject.set(x, "reactionValue", value.asInstanceOf[js.Any])
   }
 }

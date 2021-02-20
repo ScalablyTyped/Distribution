@@ -6,16 +6,16 @@ import typings.electron.Electron.ContextMenuParams
 import typings.electron.Electron.Menu
 import typings.electron.Electron.WebviewTag
 import typings.electronSpellchecker.anon.Word
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("electron-spellchecker", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("electron-spellchecker", "ContextMenuBuilder")
   @js.native
-  class ContextMenuBuilder () extends js.Object {
+  class ContextMenuBuilder () extends StObject {
     def this(spellCheckHandler: SpellCheckHandler) = this()
     def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: BrowserWindow) = this()
     def this(spellCheckHandler: js.UndefOr[scala.Nothing], target: WebviewTag) = this()
@@ -135,8 +135,9 @@ object mod extends js.Object {
     def showPopupMenu(info: ContextMenuParams): Unit = js.native
   }
   
+  @JSImport("electron-spellchecker", "ContextMenuListener")
   @js.native
-  class ContextMenuListener protected () extends js.Object {
+  class ContextMenuListener protected () extends StObject {
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit]) = this()
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: BrowserWindow) = this()
     def this(handler: js.Function1[/* info */ ContextMenuParams, Unit], target: WebviewTag) = this()
@@ -144,8 +145,9 @@ object mod extends js.Object {
     def unsubscribe(): Unit = js.native
   }
   
+  @JSImport("electron-spellchecker", "SpellCheckHandler")
   @js.native
-  class SpellCheckHandler () extends js.Object {
+  class SpellCheckHandler () extends StObject {
     
     def addToDictionary(text: String): Unit = js.native
     

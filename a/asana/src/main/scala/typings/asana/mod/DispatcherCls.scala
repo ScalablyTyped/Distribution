@@ -1,9 +1,11 @@
 package typings.asana.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "Dispatcher")
 @js.native
 /**
@@ -23,6 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @option {Number} [requestTimeout] Timeout (in milliseconds) to wait for the
   *     request to finish.
   */
-class DispatcherCls () extends Dispatcher {
+class DispatcherCls ()
+  extends typings.asana.mod.Dispatcher {
   def this(options: DispatcherOptions) = this()
 }

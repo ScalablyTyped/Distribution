@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientSpinEdit ()
   extends typings.devexpressWeb.ASPxClientSpinEdit
-/* static members */
-@JSGlobal("ASPxClientSpinEdit")
-@js.native
-object ASPxClientSpinEdit extends js.Object {
+object ASPxClientSpinEdit {
   
   /**
     * Converts the specified object to the ASPxClientSpinEdit type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientSpinEdit.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientSpinEdit = js.native
 }

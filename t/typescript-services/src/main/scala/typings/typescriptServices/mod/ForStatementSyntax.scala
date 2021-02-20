@@ -3,6 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.IExpressionSyntax
 import typings.typescriptServices.TypeScript.IStatementSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,11 +26,11 @@ class ForStatementSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "ForStatementSyntax")
-@js.native
-object ForStatementSyntax extends js.Object {
+object ForStatementSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "ForStatementSyntax.create")
+  @js.native
   def create(
     forKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
@@ -39,5 +40,8 @@ object ForStatementSyntax extends js.Object {
     statement: IStatementSyntax
   ): typings.typescriptServices.TypeScript.ForStatementSyntax = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "ForStatementSyntax.create1")
+  @js.native
   def create1(statement: IStatementSyntax): typings.typescriptServices.TypeScript.ForStatementSyntax = js.native
 }

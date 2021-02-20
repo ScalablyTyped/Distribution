@@ -2,12 +2,13 @@ package typings.vscode.mod
 
 import typings.vscode.anon.Dispose
 import typings.vscode.anon.MementosetKeysForSynckeys
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionContext extends js.Object {
+trait ExtensionContext extends StObject {
   
   /**
     * Get the absolute path of a resource contained in the extension.
@@ -152,69 +153,57 @@ object ExtensionContext {
   }
   
   @scala.inline
-  implicit class ExtensionContextOps[Self <: ExtensionContext] (val x: Self) extends AnyVal {
+  implicit class ExtensionContextMutableBuilder[Self <: ExtensionContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsAbsolutePath(value: String => String): Self = StObject.set(x, "asAbsolutePath", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentVariableCollection(value: EnvironmentVariableCollection): Self = StObject.set(x, "environmentVariableCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionMode(value: ExtensionMode): Self = StObject.set(x, "extensionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsAbsolutePath(value: String => String): Self = this.set("asAbsolutePath", js.Any.fromFunction1(value))
+    def setExtensionPath(value: String): Self = StObject.set(x, "extensionPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariableCollection(value: EnvironmentVariableCollection): Self = this.set("environmentVariableCollection", value.asInstanceOf[js.Any])
+    def setExtensionUri(value: Uri): Self = StObject.set(x, "extensionUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionMode(value: ExtensionMode): Self = this.set("extensionMode", value.asInstanceOf[js.Any])
+    def setGlobalState(value: MementosetKeysForSynckeys): Self = StObject.set(x, "globalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionPath(value: String): Self = this.set("extensionPath", value.asInstanceOf[js.Any])
+    def setGlobalStoragePath(value: String): Self = StObject.set(x, "globalStoragePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionUri(value: Uri): Self = this.set("extensionUri", value.asInstanceOf[js.Any])
+    def setGlobalStorageUri(value: Uri): Self = StObject.set(x, "globalStorageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalState(value: MementosetKeysForSynckeys): Self = this.set("globalState", value.asInstanceOf[js.Any])
+    def setLogPath(value: String): Self = StObject.set(x, "logPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalStoragePath(value: String): Self = this.set("globalStoragePath", value.asInstanceOf[js.Any])
+    def setLogUri(value: Uri): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalStorageUri(value: Uri): Self = this.set("globalStorageUri", value.asInstanceOf[js.Any])
+    def setStoragePath(value: String): Self = StObject.set(x, "storagePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogPath(value: String): Self = this.set("logPath", value.asInstanceOf[js.Any])
+    def setStoragePathUndefined: Self = StObject.set(x, "storagePath", js.undefined)
     
     @scala.inline
-    def setLogUri(value: Uri): Self = this.set("logUri", value.asInstanceOf[js.Any])
+    def setStorageUri(value: Uri): Self = StObject.set(x, "storageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionsVarargs(value: Dispose*): Self = this.set("subscriptions", js.Array(value :_*))
+    def setStorageUriUndefined: Self = StObject.set(x, "storageUri", js.undefined)
     
     @scala.inline
-    def setSubscriptions(value: js.Array[Dispose]): Self = this.set("subscriptions", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: js.Array[Dispose]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkspaceState(value: Memento): Self = this.set("workspaceState", value.asInstanceOf[js.Any])
+    def setSubscriptionsVarargs(value: Dispose*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
     
     @scala.inline
-    def setStoragePath(value: String): Self = this.set("storagePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoragePath: Self = this.set("storagePath", js.undefined)
-    
-    @scala.inline
-    def setStorageUri(value: Uri): Self = this.set("storageUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorageUri: Self = this.set("storageUri", js.undefined)
+    def setWorkspaceState(value: Memento): Self = StObject.set(x, "workspaceState", value.asInstanceOf[js.Any])
   }
 }

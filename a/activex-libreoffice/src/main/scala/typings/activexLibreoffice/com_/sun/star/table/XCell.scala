@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.table
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,48 +105,36 @@ object XCell {
   }
   
   @scala.inline
-  implicit class XCellOps[Self <: XCell] (val x: Self) extends AnyVal {
+  implicit class XCellMutableBuilder[Self <: XCell] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Double): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetError(value: () => Double): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setError(value: Double): Self = this.set("Error", value.asInstanceOf[js.Any])
+    def setGetFormula(value: () => String): Self = StObject.set(x, "getFormula", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormula(value: String): Self = this.set("Formula", value.asInstanceOf[js.Any])
+    def setGetType(value: () => CellContentType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setType(value: CellContentType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setSetFormula(value: String => Unit): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetError(value: () => Double): Self = this.set("getError", js.Any.fromFunction0(value))
+    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormula(value: () => String): Self = this.set("getFormula", js.Any.fromFunction0(value))
+    def setType(value: CellContentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetType(value: () => CellContentType): Self = this.set("getType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetValue(value: () => Double): Self = this.set("getValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetFormula(value: String => Unit): Self = this.set("setFormula", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -7,14 +7,14 @@ import typings.sentryCore.mod.BaseClient
 import typings.sentryCore.mod.Scope
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.eventMod.EventHint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/browser/dist/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
+object clientMod {
   
+  @JSImport("@sentry/browser/dist/client", "BrowserClient")
   @js.native
   /**
     * Creates a new Browser SDK instance.

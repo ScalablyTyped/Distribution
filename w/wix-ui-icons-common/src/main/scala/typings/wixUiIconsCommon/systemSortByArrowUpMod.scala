@@ -1,14 +1,21 @@
 package typings.wixUiIconsCommon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.SFC
 import typings.wixUiIconsCommon.sortByArrowUpMod.SortByArrowUpProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wix-ui-icons-common/system/SortByArrowUp", JSImport.Namespace)
-@js.native
-object systemSortByArrowUpMod extends js.Object {
+object systemSortByArrowUpMod extends Shortcut {
   
+  @JSImport("wix-ui-icons-common/system/SortByArrowUp", JSImport.Default)
+  @js.native
   val default: SFC[SortByArrowUpProps] = js.native
+  
+  type _To = SFC[SortByArrowUpProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `systemSortByArrowUpMod.foo` */
+  override def _to: SFC[SortByArrowUpProps] = default
 }

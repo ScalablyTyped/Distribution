@@ -12,13 +12,19 @@ import typings.vsoNodeApi.taskAgentInterfacesMod.TimelineRecord
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssJsonCollectionWrapperV
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/TaskApi", JSImport.Namespace)
-@js.native
-object taskApiMod extends js.Object {
+object taskApiMod {
+  
+  @JSImport("vso-node-api/TaskApi", "TaskApi")
+  @js.native
+  class TaskApi protected () extends ITaskApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait ITaskApi extends ClientApiBase {
@@ -149,11 +155,5 @@ object taskApiMod extends js.Object {
       planId: String,
       timelineId: String
     ): js.Promise[js.Array[TimelineRecord]] = js.native
-  }
-  
-  @js.native
-  class TaskApi protected () extends ITaskApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

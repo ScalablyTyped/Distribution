@@ -1,18 +1,28 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Shaders/subSurfaceScattering.fragment", JSImport.Namespace)
-@js.native
-object subSurfaceScatteringFragmentMod extends js.Object {
+object subSurfaceScatteringFragmentMod {
   
-  @js.native
-  object subSurfaceScatteringPixelShader extends js.Object {
+  object subSurfaceScatteringPixelShader {
     
-    var name: String = js.native
+    @JSImport("babylonjs/Shaders/subSurfaceScattering.fragment", "subSurfaceScatteringPixelShader")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var shader: String = js.native
+    @JSImport("babylonjs/Shaders/subSurfaceScattering.fragment", "subSurfaceScatteringPixelShader.name")
+    @js.native
+    def name: String = js.native
+    @scala.inline
+    def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Shaders/subSurfaceScattering.fragment", "subSurfaceScatteringPixelShader.shader")
+    @js.native
+    def shader: String = js.native
+    @scala.inline
+    def shader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shader")(x.asInstanceOf[js.Any])
   }
 }

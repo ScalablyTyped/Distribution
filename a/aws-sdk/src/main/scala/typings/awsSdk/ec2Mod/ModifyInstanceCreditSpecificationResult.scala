@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyInstanceCreditSpecificationResult extends js.Object {
+trait ModifyInstanceCreditSpecificationResult extends StObject {
   
   /**
     * Information about the instances whose credit option for CPU usage was successfully modified.
@@ -26,36 +27,24 @@ object ModifyInstanceCreditSpecificationResult {
   }
   
   @scala.inline
-  implicit class ModifyInstanceCreditSpecificationResultOps[Self <: ModifyInstanceCreditSpecificationResult] (val x: Self) extends AnyVal {
+  implicit class ModifyInstanceCreditSpecificationResultMutableBuilder[Self <: ModifyInstanceCreditSpecificationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccessfulInstanceCreditSpecifications(value: SuccessfulInstanceCreditSpecificationSet): Self = StObject.set(x, "SuccessfulInstanceCreditSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessfulInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "SuccessfulInstanceCreditSpecifications", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessfulInstanceCreditSpecificationsVarargs(value: SuccessfulInstanceCreditSpecificationItem*): Self = StObject.set(x, "SuccessfulInstanceCreditSpecifications", js.Array(value :_*))
     
     @scala.inline
-    def setSuccessfulInstanceCreditSpecificationsVarargs(value: SuccessfulInstanceCreditSpecificationItem*): Self = this.set("SuccessfulInstanceCreditSpecifications", js.Array(value :_*))
+    def setUnsuccessfulInstanceCreditSpecifications(value: UnsuccessfulInstanceCreditSpecificationSet): Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessfulInstanceCreditSpecifications(value: SuccessfulInstanceCreditSpecificationSet): Self = this.set("SuccessfulInstanceCreditSpecifications", value.asInstanceOf[js.Any])
+    def setUnsuccessfulInstanceCreditSpecificationsUndefined: Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", js.undefined)
     
     @scala.inline
-    def deleteSuccessfulInstanceCreditSpecifications: Self = this.set("SuccessfulInstanceCreditSpecifications", js.undefined)
-    
-    @scala.inline
-    def setUnsuccessfulInstanceCreditSpecificationsVarargs(value: UnsuccessfulInstanceCreditSpecificationItem*): Self = this.set("UnsuccessfulInstanceCreditSpecifications", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnsuccessfulInstanceCreditSpecifications(value: UnsuccessfulInstanceCreditSpecificationSet): Self = this.set("UnsuccessfulInstanceCreditSpecifications", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsuccessfulInstanceCreditSpecifications: Self = this.set("UnsuccessfulInstanceCreditSpecifications", js.undefined)
+    def setUnsuccessfulInstanceCreditSpecificationsVarargs(value: UnsuccessfulInstanceCreditSpecificationItem*): Self = StObject.set(x, "UnsuccessfulInstanceCreditSpecifications", js.Array(value :_*))
   }
 }

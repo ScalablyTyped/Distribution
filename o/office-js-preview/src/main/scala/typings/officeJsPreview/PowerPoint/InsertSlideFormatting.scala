@@ -1,11 +1,12 @@
 package typings.officeJsPreview.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InsertSlideFormatting extends js.Object
+sealed trait InsertSlideFormatting extends StObject
 /**
   *
   * Specifies the formatting options for when slides are inserted.
@@ -15,7 +16,7 @@ sealed trait InsertSlideFormatting extends js.Object
   */
 @JSGlobal("PowerPoint.InsertSlideFormatting")
 @js.native
-object InsertSlideFormatting extends js.Object {
+object InsertSlideFormatting extends StObject {
   
   /**
     * Copy the source theme into the target presentation and use that theme.

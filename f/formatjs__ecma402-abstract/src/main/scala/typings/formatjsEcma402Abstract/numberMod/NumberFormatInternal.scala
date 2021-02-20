@@ -2,6 +2,7 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import typings.formatjsEcma402Abstract.anon.FnCallValue
 import typings.std.Intl.PluralRules
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,75 +68,63 @@ object NumberFormatInternal {
   }
   
   @scala.inline
-  implicit class NumberFormatInternalOps[Self <: NumberFormatInternal] (val x: Self) extends AnyVal {
+  implicit class NumberFormatInternalMutableBuilder[Self <: NumberFormatInternal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoundFormat(value: FnCallValue): Self = StObject.set(x, "boundFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoundFormatUndefined: Self = StObject.set(x, "boundFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompactDisplay(value: NumberFormatOptionsCompactDisplay): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactDisplay(value: NumberFormatOptionsCompactDisplay): Self = this.set("compactDisplay", value.asInstanceOf[js.Any])
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyDisplay(value: NumberFormatOptionsCurrencyDisplay): Self = this.set("currencyDisplay", value.asInstanceOf[js.Any])
+    def setCurrencyDisplay(value: NumberFormatOptionsCurrencyDisplay): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencySign(value: NumberFormatOptionsCurrencySign): Self = this.set("currencySign", value.asInstanceOf[js.Any])
+    def setCurrencySign(value: NumberFormatOptionsCurrencySign): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLocale(value: String): Self = this.set("dataLocale", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def setDataLocaleData(value: NumberFormatLocaleInternalData): Self = this.set("dataLocaleData", value.asInstanceOf[js.Any])
+    def setDataLocale(value: String): Self = StObject.set(x, "dataLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setDataLocaleData(value: NumberFormatLocaleInternalData): Self = StObject.set(x, "dataLocaleData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotation(value: NumberFormatOptionsNotation): Self = this.set("notation", value.asInstanceOf[js.Any])
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberingSystem(value: String): Self = this.set("numberingSystem", value.asInstanceOf[js.Any])
+    def setNotation(value: NumberFormatOptionsNotation): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPl(value: PluralRules): Self = this.set("pl", value.asInstanceOf[js.Any])
+    def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignDisplay(value: NumberFormatOptionsSignDisplay): Self = this.set("signDisplay", value.asInstanceOf[js.Any])
+    def setPl(value: PluralRules): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: NumberFormatOptionsStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSignDisplay(value: NumberFormatOptionsSignDisplay): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitDisplay(value: NumberFormatOptionsUnitDisplay): Self = this.set("unitDisplay", value.asInstanceOf[js.Any])
+    def setStyle(value: NumberFormatOptionsStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseGrouping(value: Boolean): Self = this.set("useGrouping", value.asInstanceOf[js.Any])
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoundFormat(value: FnCallValue): Self = this.set("boundFormat", value.asInstanceOf[js.Any])
+    def setUnitDisplay(value: NumberFormatOptionsUnitDisplay): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoundFormat: Self = this.set("boundFormat", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
   }
 }

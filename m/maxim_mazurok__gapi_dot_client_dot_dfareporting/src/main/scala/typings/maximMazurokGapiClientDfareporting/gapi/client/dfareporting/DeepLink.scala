@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeepLink extends js.Object {
+trait DeepLink extends StObject {
   
   /** The URL of the mobile app being linked to. */
   var appUrl: js.UndefOr[String] = js.native
@@ -31,51 +32,39 @@ object DeepLink {
   }
   
   @scala.inline
-  implicit class DeepLinkOps[Self <: DeepLink] (val x: Self) extends AnyVal {
+  implicit class DeepLinkMutableBuilder[Self <: DeepLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppUrl(value: String): Self = StObject.set(x, "appUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFallbackUrl(value: String): Self = StObject.set(x, "fallbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppUrl(value: String): Self = this.set("appUrl", value.asInstanceOf[js.Any])
+    def setFallbackUrlUndefined: Self = StObject.set(x, "fallbackUrl", js.undefined)
     
     @scala.inline
-    def deleteAppUrl: Self = this.set("appUrl", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackUrl(value: String): Self = this.set("fallbackUrl", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFallbackUrl: Self = this.set("fallbackUrl", js.undefined)
+    def setMobileApp(value: MobileApp): Self = StObject.set(x, "mobileApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMobileAppUndefined: Self = StObject.set(x, "mobileApp", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRemarketingListIds(value: js.Array[String]): Self = StObject.set(x, "remarketingListIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobileApp(value: MobileApp): Self = this.set("mobileApp", value.asInstanceOf[js.Any])
+    def setRemarketingListIdsUndefined: Self = StObject.set(x, "remarketingListIds", js.undefined)
     
     @scala.inline
-    def deleteMobileApp: Self = this.set("mobileApp", js.undefined)
-    
-    @scala.inline
-    def setRemarketingListIdsVarargs(value: String*): Self = this.set("remarketingListIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemarketingListIds(value: js.Array[String]): Self = this.set("remarketingListIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemarketingListIds: Self = this.set("remarketingListIds", js.undefined)
+    def setRemarketingListIdsVarargs(value: String*): Self = StObject.set(x, "remarketingListIds", js.Array(value :_*))
   }
 }

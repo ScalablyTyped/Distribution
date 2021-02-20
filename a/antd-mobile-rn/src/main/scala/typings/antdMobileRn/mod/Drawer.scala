@@ -2,6 +2,7 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.DrawerWidth
 import typings.antdMobileRn.drawerIndexNativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Drawer () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Drawer")
-@js.native
-object Drawer extends js.Object {
+object Drawer {
   
-  var defaultProps: DrawerWidth = js.native
+  @JSImport("antd-mobile-rn", "Drawer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Drawer.defaultProps")
+  @js.native
+  def defaultProps: DrawerWidth = js.native
+  @scala.inline
+  def defaultProps_=(x: DrawerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

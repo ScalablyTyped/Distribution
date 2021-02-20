@@ -1,5 +1,6 @@
 package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Specifies the parameters needed for de-identification of DICOM stores.
   */
 @js.native
-trait SchemaDicomConfig extends js.Object {
+trait SchemaDicomConfig extends StObject {
   
   /**
     * Tags to be whitelisted, for example &quot;PatientID&quot;,
@@ -26,27 +27,15 @@ object SchemaDicomConfig {
   }
   
   @scala.inline
-  implicit class SchemaDicomConfigOps[Self <: SchemaDicomConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaDicomConfigMutableBuilder[Self <: SchemaDicomConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWhitelistTags(value: js.Array[String]): Self = StObject.set(x, "whitelistTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWhitelistTagsUndefined: Self = StObject.set(x, "whitelistTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWhitelistTagsVarargs(value: String*): Self = this.set("whitelistTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelistTags(value: js.Array[String]): Self = this.set("whitelistTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistTags: Self = this.set("whitelistTags", js.undefined)
+    def setWhitelistTagsVarargs(value: String*): Self = StObject.set(x, "whitelistTags", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
   */
 @js.native
-trait PlusRuntimeOpenFileOptions extends js.Object {
+trait PlusRuntimeOpenFileOptions extends StObject {
   
   /**
     * 优先使用的程序包名
@@ -38,30 +39,18 @@ object PlusRuntimeOpenFileOptions {
   }
   
   @scala.inline
-  implicit class PlusRuntimeOpenFileOptionsOps[Self <: PlusRuntimeOpenFileOptions] (val x: Self) extends AnyVal {
+  implicit class PlusRuntimeOpenFileOptionsMutableBuilder[Self <: PlusRuntimeOpenFileOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPname(value: String): Self = StObject.set(x, "pname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPname(value: String): Self = this.set("pname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePname: Self = this.set("pname", js.undefined)
-    
-    @scala.inline
-    def setPopover(value: js.Any): Self = this.set("popover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePopover: Self = this.set("popover", js.undefined)
+    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
   }
 }

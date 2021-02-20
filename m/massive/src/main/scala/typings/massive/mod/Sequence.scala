@@ -1,12 +1,13 @@
 package typings.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("massive", "Sequence")
 @js.native
-class Sequence protected () extends js.Object {
+class Sequence protected () extends StObject {
   /** A database sequence. */
   def this(db: Database, name: String, schema: String) = this()
   

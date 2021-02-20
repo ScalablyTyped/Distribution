@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * chart&lt;/a&gt;.
   */
 @js.native
-trait SchemaCandlestickChartSpec extends js.Object {
+trait SchemaCandlestickChartSpec extends StObject {
   
   /**
     * The Candlestick chart data. Only one CandlestickData is supported.
@@ -33,33 +34,21 @@ object SchemaCandlestickChartSpec {
   }
   
   @scala.inline
-  implicit class SchemaCandlestickChartSpecOps[Self <: SchemaCandlestickChartSpec] (val x: Self) extends AnyVal {
+  implicit class SchemaCandlestickChartSpecMutableBuilder[Self <: SchemaCandlestickChartSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Array[SchemaCandlestickData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataVarargs(value: SchemaCandlestickData*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: SchemaCandlestickData*): Self = this.set("data", js.Array(value :_*))
+    def setDomain(value: SchemaCandlestickDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[SchemaCandlestickData]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    
-    @scala.inline
-    def setDomain(value: SchemaCandlestickDomain): Self = this.set("domain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomain: Self = this.set("domain", js.undefined)
+    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Snapshot extends js.Object {
+trait Snapshot extends StObject {
   
   /**
     * The ARN (Amazon Resource Name) of the snapshot.
@@ -151,183 +152,171 @@ object Snapshot {
   }
   
   @scala.inline
-  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+  implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "AutoMinorVersionUpgrade", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setAutomaticFailover(value: AutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    def setAutomaticFailoverUndefined: Self = StObject.set(x, "AutomaticFailover", js.undefined)
     
     @scala.inline
-    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    def setCacheClusterCreateTime(value: TStamp): Self = StObject.set(x, "CacheClusterCreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticFailover(value: AutomaticFailoverStatus): Self = this.set("AutomaticFailover", value.asInstanceOf[js.Any])
+    def setCacheClusterCreateTimeUndefined: Self = StObject.set(x, "CacheClusterCreateTime", js.undefined)
     
     @scala.inline
-    def deleteAutomaticFailover: Self = this.set("AutomaticFailover", js.undefined)
+    def setCacheClusterId(value: String): Self = StObject.set(x, "CacheClusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterCreateTime(value: TStamp): Self = this.set("CacheClusterCreateTime", value.asInstanceOf[js.Any])
+    def setCacheClusterIdUndefined: Self = StObject.set(x, "CacheClusterId", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterCreateTime: Self = this.set("CacheClusterCreateTime", js.undefined)
+    def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
     
     @scala.inline
-    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
     
     @scala.inline
-    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheParameterGroupName(value: String): Self = this.set("CacheParameterGroupName", value.asInstanceOf[js.Any])
+    def setCacheSubnetGroupNameUndefined: Self = StObject.set(x, "CacheSubnetGroupName", js.undefined)
     
     @scala.inline
-    def deleteCacheParameterGroupName: Self = this.set("CacheParameterGroupName", js.undefined)
+    def setEngine(value: String): Self = StObject.set(x, "Engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheSubnetGroupName(value: String): Self = this.set("CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    def setEngineUndefined: Self = StObject.set(x, "Engine", js.undefined)
     
     @scala.inline
-    def deleteCacheSubnetGroupName: Self = this.set("CacheSubnetGroupName", js.undefined)
+    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     @scala.inline
-    def deleteEngine: Self = this.set("Engine", js.undefined)
+    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    def setNodeSnapshots(value: NodeSnapshotList): Self = StObject.set(x, "NodeSnapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setNodeSnapshotsUndefined: Self = StObject.set(x, "NodeSnapshots", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setNodeSnapshotsVarargs(value: NodeSnapshot*): Self = StObject.set(x, "NodeSnapshots", js.Array(value :_*))
     
     @scala.inline
-    def setNodeSnapshotsVarargs(value: NodeSnapshot*): Self = this.set("NodeSnapshots", js.Array(value :_*))
+    def setNumCacheNodes(value: IntegerOptional): Self = StObject.set(x, "NumCacheNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeSnapshots(value: NodeSnapshotList): Self = this.set("NodeSnapshots", value.asInstanceOf[js.Any])
+    def setNumCacheNodesUndefined: Self = StObject.set(x, "NumCacheNodes", js.undefined)
     
     @scala.inline
-    def deleteNodeSnapshots: Self = this.set("NodeSnapshots", js.undefined)
+    def setNumNodeGroups(value: IntegerOptional): Self = StObject.set(x, "NumNodeGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumCacheNodes(value: IntegerOptional): Self = this.set("NumCacheNodes", value.asInstanceOf[js.Any])
+    def setNumNodeGroupsUndefined: Self = StObject.set(x, "NumNodeGroups", js.undefined)
     
     @scala.inline
-    def deleteNumCacheNodes: Self = this.set("NumCacheNodes", js.undefined)
+    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumNodeGroups(value: IntegerOptional): Self = this.set("NumNodeGroups", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deleteNumNodeGroups: Self = this.set("NumNodeGroups", js.undefined)
+    def setPreferredAvailabilityZone(value: String): Self = StObject.set(x, "PreferredAvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setPreferredAvailabilityZoneUndefined: Self = StObject.set(x, "PreferredAvailabilityZone", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredAvailabilityZone(value: String): Self = this.set("PreferredAvailabilityZone", value.asInstanceOf[js.Any])
+    def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "PreferredMaintenanceWindow", js.undefined)
     
     @scala.inline
-    def deletePreferredAvailabilityZone: Self = this.set("PreferredAvailabilityZone", js.undefined)
+    def setPreferredOutpostArn(value: String): Self = StObject.set(x, "PreferredOutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    def setPreferredOutpostArnUndefined: Self = StObject.set(x, "PreferredOutpostArn", js.undefined)
     
     @scala.inline
-    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    def setReplicationGroupDescription(value: String): Self = StObject.set(x, "ReplicationGroupDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredOutpostArn(value: String): Self = this.set("PreferredOutpostArn", value.asInstanceOf[js.Any])
+    def setReplicationGroupDescriptionUndefined: Self = StObject.set(x, "ReplicationGroupDescription", js.undefined)
     
     @scala.inline
-    def deletePreferredOutpostArn: Self = this.set("PreferredOutpostArn", js.undefined)
+    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupDescription(value: String): Self = this.set("ReplicationGroupDescription", value.asInstanceOf[js.Any])
+    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
     @scala.inline
-    def deleteReplicationGroupDescription: Self = this.set("ReplicationGroupDescription", js.undefined)
+    def setSnapshotName(value: String): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    def setSnapshotNameUndefined: Self = StObject.set(x, "SnapshotName", js.undefined)
     
     @scala.inline
-    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+    def setSnapshotRetentionLimit(value: IntegerOptional): Self = StObject.set(x, "SnapshotRetentionLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotName(value: String): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
+    def setSnapshotRetentionLimitUndefined: Self = StObject.set(x, "SnapshotRetentionLimit", js.undefined)
     
     @scala.inline
-    def deleteSnapshotName: Self = this.set("SnapshotName", js.undefined)
+    def setSnapshotSource(value: String): Self = StObject.set(x, "SnapshotSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotRetentionLimit(value: IntegerOptional): Self = this.set("SnapshotRetentionLimit", value.asInstanceOf[js.Any])
+    def setSnapshotSourceUndefined: Self = StObject.set(x, "SnapshotSource", js.undefined)
     
     @scala.inline
-    def deleteSnapshotRetentionLimit: Self = this.set("SnapshotRetentionLimit", js.undefined)
+    def setSnapshotStatus(value: String): Self = StObject.set(x, "SnapshotStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotSource(value: String): Self = this.set("SnapshotSource", value.asInstanceOf[js.Any])
+    def setSnapshotStatusUndefined: Self = StObject.set(x, "SnapshotStatus", js.undefined)
     
     @scala.inline
-    def deleteSnapshotSource: Self = this.set("SnapshotSource", js.undefined)
+    def setSnapshotWindow(value: String): Self = StObject.set(x, "SnapshotWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotStatus(value: String): Self = this.set("SnapshotStatus", value.asInstanceOf[js.Any])
+    def setSnapshotWindowUndefined: Self = StObject.set(x, "SnapshotWindow", js.undefined)
     
     @scala.inline
-    def deleteSnapshotStatus: Self = this.set("SnapshotStatus", js.undefined)
+    def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotWindow(value: String): Self = this.set("SnapshotWindow", value.asInstanceOf[js.Any])
+    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
     
     @scala.inline
-    def deleteSnapshotWindow: Self = this.set("SnapshotWindow", js.undefined)
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicArn(value: String): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

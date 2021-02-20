@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TonemappingOperator extends js.Object
+sealed trait TonemappingOperator extends StObject
 @JSGlobal("BABYLON.TonemappingOperator")
 @js.native
-object TonemappingOperator extends js.Object {
+object TonemappingOperator extends StObject {
   
   /** Hable */
   @js.native

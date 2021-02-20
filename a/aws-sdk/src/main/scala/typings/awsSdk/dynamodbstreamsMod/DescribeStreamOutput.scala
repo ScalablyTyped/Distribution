@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStreamOutput extends js.Object {
+trait DescribeStreamOutput extends StObject {
   
   /**
     * A complete description of the stream, including its creation date and time, the DynamoDB table associated with the stream, the shard IDs within the stream, and the beginning and ending sequence numbers of stream records within the shards.
@@ -21,24 +22,12 @@ object DescribeStreamOutput {
   }
   
   @scala.inline
-  implicit class DescribeStreamOutputOps[Self <: DescribeStreamOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeStreamOutputMutableBuilder[Self <: DescribeStreamOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStreamDescription(value: StreamDescription): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStreamDescription(value: StreamDescription): Self = this.set("StreamDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamDescription: Self = this.set("StreamDescription", js.undefined)
+    def setStreamDescriptionUndefined: Self = StObject.set(x, "StreamDescription", js.undefined)
   }
 }

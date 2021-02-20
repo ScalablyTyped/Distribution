@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlternateDataFields extends js.Object {
+trait AlternateDataFields extends StObject {
   
   var alternateDataFields: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object AlternateDataFields {
   }
   
   @scala.inline
-  implicit class AlternateDataFieldsOps[Self <: AlternateDataFields] (val x: Self) extends AnyVal {
+  implicit class AlternateDataFieldsMutableBuilder[Self <: AlternateDataFields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateDataFields(value: Boolean): Self = StObject.set(x, "alternateDataFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateDataFieldsUndefined: Self = StObject.set(x, "alternateDataFields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomizeChart(value: js.Function): Self = StObject.set(x, "customizeChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateDataFields(value: Boolean): Self = this.set("alternateDataFields", value.asInstanceOf[js.Any])
+    def setCustomizeChartUndefined: Self = StObject.set(x, "customizeChart", js.undefined)
     
     @scala.inline
-    def deleteAlternateDataFields: Self = this.set("alternateDataFields", js.undefined)
+    def setCustomizeSeries(value: js.Function): Self = StObject.set(x, "customizeSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeChart(value: js.Function): Self = this.set("customizeChart", value.asInstanceOf[js.Any])
+    def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
     
     @scala.inline
-    def deleteCustomizeChart: Self = this.set("customizeChart", js.undefined)
+    def setDataFieldsDisplayMode(value: String): Self = StObject.set(x, "dataFieldsDisplayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeSeries(value: js.Function): Self = this.set("customizeSeries", value.asInstanceOf[js.Any])
+    def setDataFieldsDisplayModeUndefined: Self = StObject.set(x, "dataFieldsDisplayMode", js.undefined)
     
     @scala.inline
-    def deleteCustomizeSeries: Self = this.set("customizeSeries", js.undefined)
+    def setInverted(value: Boolean): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFieldsDisplayMode(value: String): Self = this.set("dataFieldsDisplayMode", value.asInstanceOf[js.Any])
+    def setInvertedUndefined: Self = StObject.set(x, "inverted", js.undefined)
     
     @scala.inline
-    def deleteDataFieldsDisplayMode: Self = this.set("dataFieldsDisplayMode", js.undefined)
+    def setProcessCell(value: js.Function): Self = StObject.set(x, "processCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    def setProcessCellUndefined: Self = StObject.set(x, "processCell", js.undefined)
     
     @scala.inline
-    def deleteInverted: Self = this.set("inverted", js.undefined)
+    def setPutDataFieldsInto(value: String): Self = StObject.set(x, "putDataFieldsInto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessCell(value: js.Function): Self = this.set("processCell", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessCell: Self = this.set("processCell", js.undefined)
-    
-    @scala.inline
-    def setPutDataFieldsInto(value: String): Self = this.set("putDataFieldsInto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePutDataFieldsInto: Self = this.set("putDataFieldsInto", js.undefined)
+    def setPutDataFieldsIntoUndefined: Self = StObject.set(x, "putDataFieldsInto", js.undefined)
   }
 }

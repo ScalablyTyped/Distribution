@@ -1,12 +1,13 @@
 package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.typesMod.ApiMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MangoPay extends js.Object {
+trait MangoPay extends StObject {
   
   var BankAccounts: typings.mangopay2NodejsSdk.mod.BankAccounts = js.native
   

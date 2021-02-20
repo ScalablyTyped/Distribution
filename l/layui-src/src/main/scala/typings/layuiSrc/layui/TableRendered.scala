@@ -1,11 +1,12 @@
 package typings.layuiSrc.layui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableRendered extends js.Object {
+trait TableRendered extends StObject {
   
   var config: TableOption = js.native
   
@@ -24,30 +25,18 @@ object TableRendered {
   }
   
   @scala.inline
-  implicit class TableRenderedOps[Self <: TableRendered] (val x: Self) extends AnyVal {
+  implicit class TableRenderedMutableBuilder[Self <: TableRendered] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: TableOption): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReload(value: TableOption => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfig(value: TableOption): Self = this.set("config", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReload(value: TableOption => Unit): Self = this.set("reload", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setResize(value: () => Unit): Self = this.set("resize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColsWidth(value: () => Unit): Self = this.set("setColsWidth", js.Any.fromFunction0(value))
+    def setSetColsWidth(value: () => Unit): Self = StObject.set(x, "setColsWidth", js.Any.fromFunction0(value))
   }
 }

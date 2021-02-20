@@ -1,25 +1,44 @@
 package typings.wdioLogger
 
 import typings.std.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wdio/logger/build/web", JSImport.Namespace)
-@js.native
-object webMod extends js.Object {
+object webMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("@wdio/logger/build/web", JSImport.Default)
+    @js.native
     def apply(component: String): Console = js.native
+    @JSImport("@wdio/logger/build/web", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var clearLogger: js.Function0[Unit] = js.native
+    @JSImport("@wdio/logger/build/web", "default.clearLogger")
+    @js.native
+    def clearLogger: js.Function0[Unit] = js.native
+    @scala.inline
+    def clearLogger_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearLogger")(x.asInstanceOf[js.Any])
     
-    var setLevel: js.Function0[Unit] = js.native
+    @JSImport("@wdio/logger/build/web", "default.setLevel")
+    @js.native
+    def setLevel: js.Function0[Unit] = js.native
+    @scala.inline
+    def setLevel_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setLevel")(x.asInstanceOf[js.Any])
     
-    var setLogLevelsConfig: js.Function0[Unit] = js.native
+    @JSImport("@wdio/logger/build/web", "default.setLogLevelsConfig")
+    @js.native
+    def setLogLevelsConfig: js.Function0[Unit] = js.native
+    @scala.inline
+    def setLogLevelsConfig_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setLogLevelsConfig")(x.asInstanceOf[js.Any])
     
-    var waitForBuffer: js.Function0[Unit] = js.native
+    @JSImport("@wdio/logger/build/web", "default.waitForBuffer")
+    @js.native
+    def waitForBuffer: js.Function0[Unit] = js.native
+    @scala.inline
+    def waitForBuffer_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForBuffer")(x.asInstanceOf[js.Any])
   }
 }

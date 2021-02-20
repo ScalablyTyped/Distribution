@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A product label represented as a key-value pair.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p2beta1ProductKeyValue extends js.Object {
+trait SchemaGoogleCloudVisionV1p2beta1ProductKeyValue extends StObject {
   
   /**
     * The key of the label attached to the product. Cannot be empty and cannot
@@ -31,30 +32,18 @@ object SchemaGoogleCloudVisionV1p2beta1ProductKeyValue {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1ProductKeyValueOps[Self <: SchemaGoogleCloudVisionV1p2beta1ProductKeyValue] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p2beta1ProductKeyValueMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1ProductKeyValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

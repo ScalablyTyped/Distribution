@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Read-replica configuration for connecting to the master.
   */
 @js.native
-trait SchemaReplicaConfiguration extends js.Object {
+trait SchemaReplicaConfiguration extends StObject {
   
   /**
     * Specifies if the replica is the failover target. If the field is set to
@@ -43,36 +44,24 @@ object SchemaReplicaConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaReplicaConfigurationOps[Self <: SchemaReplicaConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaReplicaConfigurationMutableBuilder[Self <: SchemaReplicaConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailoverTarget(value: Boolean): Self = StObject.set(x, "failoverTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailoverTargetUndefined: Self = StObject.set(x, "failoverTarget", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailoverTarget(value: Boolean): Self = this.set("failoverTarget", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteFailoverTarget: Self = this.set("failoverTarget", js.undefined)
+    def setMysqlReplicaConfiguration(value: SchemaMySqlReplicaConfiguration): Self = StObject.set(x, "mysqlReplicaConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setMysqlReplicaConfiguration(value: SchemaMySqlReplicaConfiguration): Self = this.set("mysqlReplicaConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMysqlReplicaConfiguration: Self = this.set("mysqlReplicaConfiguration", js.undefined)
+    def setMysqlReplicaConfigurationUndefined: Self = StObject.set(x, "mysqlReplicaConfiguration", js.undefined)
   }
 }

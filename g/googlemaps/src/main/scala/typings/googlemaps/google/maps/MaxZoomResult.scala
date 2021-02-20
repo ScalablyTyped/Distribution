@@ -2,6 +2,7 @@ package typings.googlemaps.google.maps
 
 import typings.googlemaps.google.maps.MaxZoomStatus.ERROR
 import typings.googlemaps.google.maps.MaxZoomStatus.OK
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,18 +15,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlemaps.google.maps.MaxZoomResultError
   - typings.googlemaps.google.maps.MaxZoomResultOk
 */
-trait MaxZoomResult extends js.Object
+trait MaxZoomResult extends StObject
 object MaxZoomResult {
   
   @scala.inline
-  def MaxZoomResultError(status: ERROR): MaxZoomResult = {
+  def MaxZoomResultError(status: ERROR): typings.googlemaps.google.maps.MaxZoomResultError = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MaxZoomResult]
+    __obj.asInstanceOf[typings.googlemaps.google.maps.MaxZoomResultError]
   }
   
   @scala.inline
-  def MaxZoomResultOk(status: OK, zoom: Double): MaxZoomResult = {
+  def MaxZoomResultOk(status: OK, zoom: Double): typings.googlemaps.google.maps.MaxZoomResultOk = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MaxZoomResult]
+    __obj.asInstanceOf[typings.googlemaps.google.maps.MaxZoomResultOk]
   }
 }

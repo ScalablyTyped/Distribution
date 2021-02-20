@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2ExpectedInput extends js.Object {
+trait GoogleActionsV2ExpectedInput extends StObject {
   
   /**
     * The customized prompt used to ask user for input.
@@ -34,42 +35,30 @@ object GoogleActionsV2ExpectedInput {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2ExpectedInputOps[Self <: GoogleActionsV2ExpectedInput] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2ExpectedInputMutableBuilder[Self <: GoogleActionsV2ExpectedInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputPrompt(value: GoogleActionsV2InputPrompt): Self = StObject.set(x, "inputPrompt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputPromptUndefined: Self = StObject.set(x, "inputPrompt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPossibleIntents(value: js.Array[GoogleActionsV2ExpectedIntent]): Self = StObject.set(x, "possibleIntents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputPrompt(value: GoogleActionsV2InputPrompt): Self = this.set("inputPrompt", value.asInstanceOf[js.Any])
+    def setPossibleIntentsUndefined: Self = StObject.set(x, "possibleIntents", js.undefined)
     
     @scala.inline
-    def deleteInputPrompt: Self = this.set("inputPrompt", js.undefined)
+    def setPossibleIntentsVarargs(value: GoogleActionsV2ExpectedIntent*): Self = StObject.set(x, "possibleIntents", js.Array(value :_*))
     
     @scala.inline
-    def setPossibleIntentsVarargs(value: GoogleActionsV2ExpectedIntent*): Self = this.set("possibleIntents", js.Array(value :_*))
+    def setSpeechBiasingHints(value: js.Array[String]): Self = StObject.set(x, "speechBiasingHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPossibleIntents(value: js.Array[GoogleActionsV2ExpectedIntent]): Self = this.set("possibleIntents", value.asInstanceOf[js.Any])
+    def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
     
     @scala.inline
-    def deletePossibleIntents: Self = this.set("possibleIntents", js.undefined)
-    
-    @scala.inline
-    def setSpeechBiasingHintsVarargs(value: String*): Self = this.set("speechBiasingHints", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpeechBiasingHints(value: js.Array[String]): Self = this.set("speechBiasingHints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeechBiasingHints: Self = this.set("speechBiasingHints", js.undefined)
+    def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
   }
 }

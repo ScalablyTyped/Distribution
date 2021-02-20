@@ -1,13 +1,14 @@
 package typings.reactSortableTree.anon
 
 import typings.reactSortableTree.mod.TreeItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & {  expanded :boolean | undefined} */
 @js.native
-trait FullTreeexpandedbooleanun extends js.Object {
+trait FullTreeexpandedbooleanun extends StObject {
   
   var expanded: js.UndefOr[Boolean] = js.native
   
@@ -22,30 +23,18 @@ object FullTreeexpandedbooleanun {
   }
   
   @scala.inline
-  implicit class FullTreeexpandedbooleanunOps[Self <: FullTreeexpandedbooleanun] (val x: Self) extends AnyVal {
+  implicit class FullTreeexpandedbooleanunMutableBuilder[Self <: FullTreeexpandedbooleanun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreeDataVarargs(value: TreeItem*): Self = this.set("treeData", js.Array(value :_*))
-    
-    @scala.inline
-    def setTreeData(value: js.Array[TreeItem]): Self = this.set("treeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
   }
 }

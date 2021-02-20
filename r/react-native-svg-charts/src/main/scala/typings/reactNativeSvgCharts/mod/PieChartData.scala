@@ -2,12 +2,13 @@ package typings.reactNativeSvgCharts.mod
 
 import typings.reactNativeSvgCharts.anon.CornerRadius
 import typings.reactNativeSvgCharts.anon.PartialPathProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PieChartData extends js.Object {
+trait PieChartData extends StObject {
   
   var arc: js.UndefOr[CornerRadius] = js.native
   
@@ -26,39 +27,27 @@ object PieChartData {
   }
   
   @scala.inline
-  implicit class PieChartDataOps[Self <: PieChartData] (val x: Self) extends AnyVal {
+  implicit class PieChartDataMutableBuilder[Self <: PieChartData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArc(value: CornerRadius): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArcUndefined: Self = StObject.set(x, "arc", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | Double): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setSvg(value: PartialPathProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArc(value: CornerRadius): Self = this.set("arc", value.asInstanceOf[js.Any])
+    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     
     @scala.inline
-    def deleteArc: Self = this.set("arc", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSvg(value: PartialPathProps): Self = this.set("svg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSvg: Self = this.set("svg", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

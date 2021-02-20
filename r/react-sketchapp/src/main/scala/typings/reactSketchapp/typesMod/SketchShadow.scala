@@ -1,12 +1,13 @@
 package typings.reactSketchapp.typesMod
 
 import typings.reactSketchapp.anon.Width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchShadow extends js.Object {
+trait SketchShadow extends StObject {
   
   var shadowColor: Color = js.native
   
@@ -36,36 +37,24 @@ object SketchShadow {
   }
   
   @scala.inline
-  implicit class SketchShadowOps[Self <: SketchShadow] (val x: Self) extends AnyVal {
+  implicit class SketchShadowMutableBuilder[Self <: SketchShadow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShadowInner(value: Boolean): Self = StObject.set(x, "shadowInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadowOffset(value: Width): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Color): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowInner(value: Boolean): Self = this.set("shadowInner", value.asInstanceOf[js.Any])
+    def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffset(value: Width): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowOpacity(value: Double): Self = this.set("shadowOpacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowRadius(value: Double): Self = this.set("shadowRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShadowSpread(value: Double): Self = this.set("shadowSpread", value.asInstanceOf[js.Any])
+    def setShadowSpread(value: Double): Self = StObject.set(x, "shadowSpread", value.asInstanceOf[js.Any])
   }
 }

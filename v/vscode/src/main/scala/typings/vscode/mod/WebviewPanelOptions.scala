@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebviewPanelOptions extends js.Object {
+trait WebviewPanelOptions extends StObject {
   
   /**
     * Controls if the find widget is enabled in the panel.
@@ -41,30 +42,18 @@ object WebviewPanelOptions {
   }
   
   @scala.inline
-  implicit class WebviewPanelOptionsOps[Self <: WebviewPanelOptions] (val x: Self) extends AnyVal {
+  implicit class WebviewPanelOptionsMutableBuilder[Self <: WebviewPanelOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableFindWidget(value: Boolean): Self = StObject.set(x, "enableFindWidget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableFindWidgetUndefined: Self = StObject.set(x, "enableFindWidget", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableFindWidget(value: Boolean): Self = this.set("enableFindWidget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableFindWidget: Self = this.set("enableFindWidget", js.undefined)
-    
-    @scala.inline
-    def setRetainContextWhenHidden(value: Boolean): Self = this.set("retainContextWhenHidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainContextWhenHidden: Self = this.set("retainContextWhenHidden", js.undefined)
+    def setRetainContextWhenHiddenUndefined: Self = StObject.set(x, "retainContextWhenHidden", js.undefined)
   }
 }

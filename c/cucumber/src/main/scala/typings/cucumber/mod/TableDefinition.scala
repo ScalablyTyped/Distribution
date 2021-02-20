@@ -2,12 +2,13 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableDefinition[Type] extends js.Object {
+trait TableDefinition[Type] extends StObject {
   
   /** Returns an array of objects where each row is converted to an object (column header is the key). */
   def hashes(): js.Array[
@@ -43,19 +44,7 @@ object TableDefinition {
   }
   
   @scala.inline
-  implicit class TableDefinitionOps[Self <: TableDefinition[_], Type] (val x: Self with TableDefinition[Type]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TableDefinitionMutableBuilder[Self <: TableDefinition[_], Type] (val x: Self with TableDefinition[Type]) extends AnyVal {
     
     @scala.inline
     def setHashes(
@@ -64,15 +53,15 @@ object TableDefinition {
     {[ columnName in keyof Type ]: string}
       */ typings.cucumber.cucumberStrings.TableDefinition with TopLevel[js.Any]
         ]
-    ): Self = this.set("hashes", js.Any.fromFunction0(value))
+    ): Self = StObject.set(x, "hashes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRaw(value: () => js.Array[js.Array[String]]): Self = this.set("raw", js.Any.fromFunction0(value))
+    def setRaw(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "raw", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRows(value: () => js.Array[js.Array[String]]): Self = this.set("rows", js.Any.fromFunction0(value))
+    def setRows(value: () => js.Array[js.Array[String]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRowsHash(value: () => StringDictionary[String]): Self = this.set("rowsHash", js.Any.fromFunction0(value))
+    def setRowsHash(value: () => StringDictionary[String]): Self = StObject.set(x, "rowsHash", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.reduxLittleRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reduxLittleRouter.reduxLittleRouterStrings.POP
   - typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE
 */
-trait HistoryAction extends js.Object
+trait HistoryAction extends StObject
 object HistoryAction {
   
   @scala.inline

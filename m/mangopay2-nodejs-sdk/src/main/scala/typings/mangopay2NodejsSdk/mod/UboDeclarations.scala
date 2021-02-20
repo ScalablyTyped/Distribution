@@ -2,6 +2,7 @@ package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.mod.uboDeclaration.UboDeclarationData
 import typings.mangopay2NodejsSdk.mod.uboDeclaration.UpdateUboDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mangopay2-nodejs-sdk", "UboDeclarations")
 @js.native
-class UboDeclarations () extends js.Object {
+class UboDeclarations () extends StObject {
   
   /**
     * Retrieves a UBO declaration object from the API.

@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInventoryPickup extends js.Object {
+trait SchemaInventoryPickup extends StObject {
   
   /**
     * Whether store pickup is available for this offer and whether the pickup
@@ -31,30 +32,18 @@ object SchemaInventoryPickup {
   }
   
   @scala.inline
-  implicit class SchemaInventoryPickupOps[Self <: SchemaInventoryPickup] (val x: Self) extends AnyVal {
+  implicit class SchemaInventoryPickupMutableBuilder[Self <: SchemaInventoryPickup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPickupMethod(value: String): Self = StObject.set(x, "pickupMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPickupMethodUndefined: Self = StObject.set(x, "pickupMethod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPickupSla(value: String): Self = StObject.set(x, "pickupSla", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickupMethod(value: String): Self = this.set("pickupMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePickupMethod: Self = this.set("pickupMethod", js.undefined)
-    
-    @scala.inline
-    def setPickupSla(value: String): Self = this.set("pickupSla", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePickupSla: Self = this.set("pickupSla", js.undefined)
+    def setPickupSlaUndefined: Self = StObject.set(x, "pickupSla", js.undefined)
   }
 }

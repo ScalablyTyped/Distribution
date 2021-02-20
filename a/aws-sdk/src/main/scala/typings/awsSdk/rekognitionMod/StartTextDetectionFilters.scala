@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartTextDetectionFilters extends js.Object {
+trait StartTextDetectionFilters extends StObject {
   
   /**
     * Filter focusing on a certain area of the frame. Uses a BoundingBox object to set the region of the screen.
@@ -26,33 +27,21 @@ object StartTextDetectionFilters {
   }
   
   @scala.inline
-  implicit class StartTextDetectionFiltersOps[Self <: StartTextDetectionFilters] (val x: Self) extends AnyVal {
+  implicit class StartTextDetectionFiltersMutableBuilder[Self <: StartTextDetectionFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRegionsOfInterest(value: RegionsOfInterest): Self = StObject.set(x, "RegionsOfInterest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegionsOfInterestUndefined: Self = StObject.set(x, "RegionsOfInterest", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegionsOfInterestVarargs(value: RegionOfInterest*): Self = StObject.set(x, "RegionsOfInterest", js.Array(value :_*))
     
     @scala.inline
-    def setRegionsOfInterestVarargs(value: RegionOfInterest*): Self = this.set("RegionsOfInterest", js.Array(value :_*))
+    def setWordFilter(value: DetectionFilter): Self = StObject.set(x, "WordFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegionsOfInterest(value: RegionsOfInterest): Self = this.set("RegionsOfInterest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegionsOfInterest: Self = this.set("RegionsOfInterest", js.undefined)
-    
-    @scala.inline
-    def setWordFilter(value: DetectionFilter): Self = this.set("WordFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordFilter: Self = this.set("WordFilter", js.undefined)
+    def setWordFilterUndefined: Self = StObject.set(x, "WordFilter", js.undefined)
   }
 }

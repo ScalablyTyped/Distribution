@@ -2,12 +2,13 @@ package typings.summernote.mod.global.Summernote
 
 import typings.jquery.JQuery.Node
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HintOptions extends js.Object {
+trait HintOptions extends StObject {
   
   var content: js.UndefOr[js.Function1[/* item */ String, htmlElement | Node]] = js.native
   
@@ -34,54 +35,42 @@ object HintOptions {
   }
   
   @scala.inline
-  implicit class HintOptionsOps[Self <: HintOptions] (val x: Self) extends AnyVal {
+  implicit class HintOptionsMutableBuilder[Self <: HintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: /* item */ String => htmlElement | Node): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: RegExp): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: (String, js.Function1[/* plausibleItems */ js.Array[String], Unit]) => Unit): Self = this.set("search", js.Any.fromFunction2(value))
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def setContent(value: /* item */ String => htmlElement | Node): Self = this.set("content", js.Any.fromFunction1(value))
+    def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setSearch(value: (String, js.Function1[/* plausibleItems */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMentionsVarargs(value: String*): Self = this.set("mentions", js.Array(value :_*))
+    def setTemplate(value: /* item */ String => htmlElement): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMentions(value: js.Array[String]): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: /* item */ String => htmlElement): Self = this.set("template", js.Any.fromFunction1(value))
+    def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
-    
-    @scala.inline
-    def setWordsVarargs(value: String*): Self = this.set("words", js.Array(value :_*))
-    
-    @scala.inline
-    def setWords(value: js.Array[String]): Self = this.set("words", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWords: Self = this.set("words", js.undefined)
+    def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
   }
 }

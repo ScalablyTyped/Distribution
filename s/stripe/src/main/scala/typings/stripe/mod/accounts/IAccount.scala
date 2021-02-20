@@ -9,6 +9,7 @@ import typings.stripe.stripeStrings.account
 import typings.stripe.stripeStrings.custom
 import typings.stripe.stripeStrings.express
 import typings.stripe.stripeStrings.standard
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,87 +128,75 @@ object IAccount {
   }
   
   @scala.inline
-  implicit class IAccountOps[Self <: IAccount] (val x: Self) extends AnyVal {
+  implicit class IAccountMutableBuilder[Self <: IAccount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: Cardpayments): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharges_enabled(value: Boolean): Self = StObject.set(x, "charges_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharges_enabled(value: Boolean): Self = this.set("charges_enabled", value.asInstanceOf[js.Any])
+    def setCompany(value: ICompany): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
     @scala.inline
-    def setDetails_submitted(value: Boolean): Self = this.set("details_submitted", value.asInstanceOf[js.Any])
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: account): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def setPayouts_enabled(value: Boolean): Self = this.set("payouts_enabled", value.asInstanceOf[js.Any])
+    def setDetails_submitted(value: Boolean): Self = StObject.set(x, "details_submitted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: standard | express | custom): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: Cardpayments): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setExternal_accounts(value: IList[IExternalAccount]): Self = StObject.set(x, "external_accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setExternal_accountsUndefined: Self = StObject.set(x, "external_accounts", js.undefined)
     
     @scala.inline
-    def setCompany(value: ICompany): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setIndividual(value: IIndividual): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompany: Self = this.set("company", js.undefined)
+    def setIndividualUndefined: Self = StObject.set(x, "individual", js.undefined)
     
     @scala.inline
-    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def setExternal_accounts(value: IList[IExternalAccount]): Self = this.set("external_accounts", value.asInstanceOf[js.Any])
+    def setObject(value: account): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExternal_accounts: Self = this.set("external_accounts", js.undefined)
+    def setPayouts_enabled(value: Boolean): Self = StObject.set(x, "payouts_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividual(value: IIndividual): Self = this.set("individual", value.asInstanceOf[js.Any])
+    def setRequirements(value: IAccountRequirements): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIndividual: Self = this.set("individual", js.undefined)
+    def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
     @scala.inline
-    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setType(value: standard | express | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setVerification(value: Disabledreason): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirements(value: IAccountRequirements): Self = this.set("requirements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequirements: Self = this.set("requirements", js.undefined)
-    
-    @scala.inline
-    def setVerification(value: Disabledreason): Self = this.set("verification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerification: Self = this.set("verification", js.undefined)
+    def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
   }
 }

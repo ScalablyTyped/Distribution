@@ -1,6 +1,7 @@
 package typings.node.tlsMod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,42 +43,30 @@ object TLSSocketOptions {
   }
   
   @scala.inline
-  implicit class TLSSocketOptionsOps[Self <: TLSSocketOptions] (val x: Self) extends AnyVal {
+  implicit class TLSSocketOptionsMutableBuilder[Self <: TLSSocketOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsServerUndefined: Self = StObject.set(x, "isServer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestOCSP(value: Boolean): Self = StObject.set(x, "requestOCSP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsServer(value: Boolean): Self = this.set("isServer", value.asInstanceOf[js.Any])
+    def setRequestOCSPUndefined: Self = StObject.set(x, "requestOCSP", js.undefined)
     
     @scala.inline
-    def deleteIsServer: Self = this.set("isServer", js.undefined)
+    def setServer(value: typings.node.netMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestOCSP(value: Boolean): Self = this.set("requestOCSP", value.asInstanceOf[js.Any])
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def deleteRequestOCSP: Self = this.set("requestOCSP", js.undefined)
+    def setSession(value: Buffer): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: typings.node.netMod.Server): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
-    
-    @scala.inline
-    def setSession(value: Buffer): Self = this.set("session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

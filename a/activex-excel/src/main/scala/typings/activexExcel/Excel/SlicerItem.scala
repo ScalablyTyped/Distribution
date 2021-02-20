@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlicerItem extends js.Object {
+trait SlicerItem extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -52,51 +53,39 @@ object SlicerItem {
   }
   
   @scala.inline
-  implicit class SlicerItemOps[Self <: SlicerItem] (val x: Self) extends AnyVal {
+  implicit class SlicerItemMutableBuilder[Self <: SlicerItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotSlicerItem_typekey(value: SlicerItem): Self = StObject.set(x, "Excel.SlicerItem_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("Caption", value.asInstanceOf[js.Any])
+    def setHasData(value: Boolean): Self = StObject.set(x, "HasData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSlicerItem_typekey(value: SlicerItem): Self = this.set("Excel.SlicerItem_typekey", value.asInstanceOf[js.Any])
+    def setParent(value: SlicerCache): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasData(value: Boolean): Self = this.set("HasData", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "Selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSourceName(value: js.Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: SlicerCache): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSourceNameStandard(value: String): Self = StObject.set(x, "SourceNameStandard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("Selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceName(value: js.Any): Self = this.set("SourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceNameStandard(value: String): Self = this.set("SourceNameStandard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

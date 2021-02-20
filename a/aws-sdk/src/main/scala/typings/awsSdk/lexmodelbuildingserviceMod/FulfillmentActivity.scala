@@ -1,11 +1,12 @@
 package typings.awsSdk.lexmodelbuildingserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FulfillmentActivity extends js.Object {
+trait FulfillmentActivity extends StObject {
   
   /**
     *  A description of the Lambda function that is run to fulfill the intent. 
@@ -27,27 +28,15 @@ object FulfillmentActivity {
   }
   
   @scala.inline
-  implicit class FulfillmentActivityOps[Self <: FulfillmentActivity] (val x: Self) extends AnyVal {
+  implicit class FulfillmentActivityMutableBuilder[Self <: FulfillmentActivity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodeHook(value: CodeHook): Self = StObject.set(x, "codeHook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeHookUndefined: Self = StObject.set(x, "codeHook", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: FulfillmentActivityType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCodeHook(value: CodeHook): Self = this.set("codeHook", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCodeHook: Self = this.set("codeHook", js.undefined)
+    def setType(value: FulfillmentActivityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

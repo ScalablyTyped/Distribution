@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.outputMod.networking.v1
 
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NetworkPolicyPeer describes a peer to allow traffic to/from. Only certain combinations of fields are allowed
   */
 @js.native
-trait NetworkPolicyPeer extends js.Object {
+trait NetworkPolicyPeer extends StObject {
   
   /**
     * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the other fields can be.
@@ -39,27 +40,15 @@ object NetworkPolicyPeer {
   }
   
   @scala.inline
-  implicit class NetworkPolicyPeerOps[Self <: NetworkPolicyPeer] (val x: Self) extends AnyVal {
+  implicit class NetworkPolicyPeerMutableBuilder[Self <: NetworkPolicyPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpBlock(value: IPBlock): Self = StObject.set(x, "ipBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespaceSelector(value: LabelSelector): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIpBlock(value: IPBlock): Self = this.set("ipBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamespaceSelector(value: LabelSelector): Self = this.set("namespaceSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPodSelector(value: LabelSelector): Self = this.set("podSelector", value.asInstanceOf[js.Any])
+    def setPodSelector(value: LabelSelector): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
   }
 }

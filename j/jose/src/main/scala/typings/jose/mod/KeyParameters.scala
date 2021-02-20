@@ -1,5 +1,6 @@
 package typings.jose.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,39 +24,27 @@ object KeyParameters {
   }
   
   @scala.inline
-  implicit class KeyParametersOps[Self <: KeyParameters] (val x: Self) extends AnyVal {
+  implicit class KeyParametersMutableBuilder[Self <: KeyParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setX5c(value: js.Array[String]): Self = StObject.set(x, "x5c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setX5cUndefined: Self = StObject.set(x, "x5c", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX5cVarargs(value: String*): Self = StObject.set(x, "x5c", js.Array(value :_*))
     
     @scala.inline
-    def setX5cVarargs(value: String*): Self = this.set("x5c", js.Array(value :_*))
+    def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX5c(value: js.Array[String]): Self = this.set("x5c", value.asInstanceOf[js.Any])
+    def setX5tNumbersignS256(value: String): Self = StObject.set(x, "x5t#S256", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteX5c: Self = this.set("x5c", js.undefined)
+    def setX5tNumbersignS256Undefined: Self = StObject.set(x, "x5t#S256", js.undefined)
     
     @scala.inline
-    def setX5t(value: String): Self = this.set("x5t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX5t: Self = this.set("x5t", js.undefined)
-    
-    @scala.inline
-    def setX5tNumbersignS256(value: String): Self = this.set("x5t#S256", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX5tNumbersignS256: Self = this.set("x5t#S256", js.undefined)
+    def setX5tUndefined: Self = StObject.set(x, "x5t", js.undefined)
   }
 }

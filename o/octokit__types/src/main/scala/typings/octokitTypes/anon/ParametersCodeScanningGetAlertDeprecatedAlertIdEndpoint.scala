@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.CodeScanningGetAlertDeprecatedAlertIdEn
 import typings.octokitTypes.endpointsMod.CodeScanningGetAlertRequestOptions
 import typings.octokitTypes.endpointsMod.CodeScanningGetAlertResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint extends js.Object {
+trait ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint extends StObject {
   
   var parameters: CodeScanningGetAlertDeprecatedAlertIdEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersCodeScanningGetAlertDeprecatedAlertIdEndpointOps[Self <: ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersCodeScanningGetAlertDeprecatedAlertIdEndpointMutableBuilder[Self <: ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: CodeScanningGetAlertDeprecatedAlertIdEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: CodeScanningGetAlertRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: CodeScanningGetAlertDeprecatedAlertIdEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: CodeScanningGetAlertRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[CodeScanningGetAlertResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[CodeScanningGetAlertResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

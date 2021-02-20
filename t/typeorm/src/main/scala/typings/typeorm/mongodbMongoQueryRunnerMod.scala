@@ -42,14 +42,14 @@ import typings.typeorm.mongodbTypingsMod.UnorderedBulkOperation
 import typings.typeorm.mongodbTypingsMod.UpdateWriteOpResult
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import typings.typeorm.tableTableMod.Table
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/driver/mongodb/MongoQueryRunner", JSImport.Namespace)
-@js.native
-object mongodbMongoQueryRunnerMod extends js.Object {
+object mongodbMongoQueryRunnerMod {
   
+  @JSImport("typeorm/driver/mongodb/MongoQueryRunner", "MongoQueryRunner")
   @js.native
   class MongoQueryRunner protected () extends QueryRunner {
     def this(connection: Connection, databaseConnection: MongoClient) = this()

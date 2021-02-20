@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.png32
 import typings.arcgisJsApi.arcgisJsApiStrings.png8
 import typings.arcgisJsApi.arcgisJsApiStrings.pngjpg
 import typings.arcgisJsApi.arcgisJsApiStrings.svg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,93 +117,81 @@ object MapImageLayerProperties {
   }
   
   @scala.inline
-  implicit class MapImageLayerPropertiesOps[Self <: MapImageLayerProperties] (val x: Self) extends AnyVal {
+  implicit class MapImageLayerPropertiesMutableBuilder[Self <: MapImageLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setDpiUndefined: Self = StObject.set(x, "dpi", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDpi(value: Double): Self = this.set("dpi", value.asInstanceOf[js.Any])
+    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
     @scala.inline
-    def deleteDpi: Self = this.set("dpi", js.undefined)
+    def setImageFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGdbVersion(value: String): Self = this.set("gdbVersion", value.asInstanceOf[js.Any])
+    def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
     
     @scala.inline
-    def deleteGdbVersion: Self = this.set("gdbVersion", js.undefined)
+    def setImageMaxHeight(value: Double): Self = StObject.set(x, "imageMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageFormat(value: png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg): Self = this.set("imageFormat", value.asInstanceOf[js.Any])
+    def setImageMaxHeightUndefined: Self = StObject.set(x, "imageMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteImageFormat: Self = this.set("imageFormat", js.undefined)
+    def setImageMaxWidth(value: Double): Self = StObject.set(x, "imageMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMaxHeight(value: Double): Self = this.set("imageMaxHeight", value.asInstanceOf[js.Any])
+    def setImageMaxWidthUndefined: Self = StObject.set(x, "imageMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteImageMaxHeight: Self = this.set("imageMaxHeight", js.undefined)
+    def setImageTransparency(value: Boolean): Self = StObject.set(x, "imageTransparency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageMaxWidth(value: Double): Self = this.set("imageMaxWidth", value.asInstanceOf[js.Any])
+    def setImageTransparencyUndefined: Self = StObject.set(x, "imageTransparency", js.undefined)
     
     @scala.inline
-    def deleteImageMaxWidth: Self = this.set("imageMaxWidth", js.undefined)
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageTransparency(value: Boolean): Self = this.set("imageTransparency", value.asInstanceOf[js.Any])
+    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     @scala.inline
-    def deleteImageTransparency: Self = this.set("imageTransparency", js.undefined)
+    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
+    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
     
     @scala.inline
-    def deleteLegendEnabled: Self = this.set("legendEnabled", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = this.set("portalItem", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deletePortalItem: Self = this.set("portalItem", js.undefined)
+    def setSublayers(value: CollectionProperties[SublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setSublayersVarargs(value: SublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value :_*))
     
     @scala.inline
-    def setSublayersVarargs(value: SublayerProperties*): Self = this.set("sublayers", js.Array(value :_*))
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSublayers(value: CollectionProperties[SublayerProperties]): Self = this.set("sublayers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSublayers: Self = this.set("sublayers", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

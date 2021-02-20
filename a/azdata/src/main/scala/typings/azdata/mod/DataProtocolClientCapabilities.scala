@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataProtocolClientCapabilities extends js.Object {
+trait DataProtocolClientCapabilities extends StObject {
   
   var hostName: String = js.native
   
@@ -20,24 +21,12 @@ object DataProtocolClientCapabilities {
   }
   
   @scala.inline
-  implicit class DataProtocolClientCapabilitiesOps[Self <: DataProtocolClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class DataProtocolClientCapabilitiesMutableBuilder[Self <: DataProtocolClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHostName(value: String): Self = this.set("hostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostVersion(value: String): Self = this.set("hostVersion", value.asInstanceOf[js.Any])
+    def setHostVersion(value: String): Self = StObject.set(x, "hostVersion", value.asInstanceOf[js.Any])
   }
 }

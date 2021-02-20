@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The ListNotificationChannelDescriptors response.
   */
 @js.native
-trait SchemaListNotificationChannelDescriptorsResponse extends js.Object {
+trait SchemaListNotificationChannelDescriptorsResponse extends StObject {
   
   /**
     * The monitored resource descriptors supported for the specified project,
@@ -32,33 +33,21 @@ object SchemaListNotificationChannelDescriptorsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListNotificationChannelDescriptorsResponseOps[Self <: SchemaListNotificationChannelDescriptorsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListNotificationChannelDescriptorsResponseMutableBuilder[Self <: SchemaListNotificationChannelDescriptorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelDescriptors(value: js.Array[SchemaNotificationChannelDescriptor]): Self = StObject.set(x, "channelDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelDescriptorsUndefined: Self = StObject.set(x, "channelDescriptors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelDescriptorsVarargs(value: SchemaNotificationChannelDescriptor*): Self = StObject.set(x, "channelDescriptors", js.Array(value :_*))
     
     @scala.inline
-    def setChannelDescriptorsVarargs(value: SchemaNotificationChannelDescriptor*): Self = this.set("channelDescriptors", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelDescriptors(value: js.Array[SchemaNotificationChannelDescriptor]): Self = this.set("channelDescriptors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannelDescriptors: Self = this.set("channelDescriptors", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

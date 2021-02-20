@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HighlightsRepositoryHighlightsTrayResponseRootObject extends js.Object {
+trait HighlightsRepositoryHighlightsTrayResponseRootObject extends StObject {
   
   var show_empty_state: Boolean = js.native
   
@@ -29,33 +30,21 @@ object HighlightsRepositoryHighlightsTrayResponseRootObject {
   }
   
   @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseRootObjectOps[Self <: HighlightsRepositoryHighlightsTrayResponseRootObject] (val x: Self) extends AnyVal {
+  implicit class HighlightsRepositoryHighlightsTrayResponseRootObjectMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseRootObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShow_empty_state(value: Boolean): Self = StObject.set(x, "show_empty_state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTray(value: js.Array[HighlightsRepositoryHighlightsTrayResponseTrayItem]): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_empty_state(value: Boolean): Self = this.set("show_empty_state", value.asInstanceOf[js.Any])
+    def setTrayVarargs(value: HighlightsRepositoryHighlightsTrayResponseTrayItem*): Self = StObject.set(x, "tray", js.Array(value :_*))
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrayVarargs(value: HighlightsRepositoryHighlightsTrayResponseTrayItem*): Self = this.set("tray", js.Array(value :_*))
-    
-    @scala.inline
-    def setTray(value: js.Array[HighlightsRepositoryHighlightsTrayResponseTrayItem]): Self = this.set("tray", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTv_channel(value: HighlightsRepositoryHighlightsTrayResponseTvChannel): Self = this.set("tv_channel", value.asInstanceOf[js.Any])
+    def setTv_channel(value: HighlightsRepositoryHighlightsTrayResponseTvChannel): Self = StObject.set(x, "tv_channel", value.asInstanceOf[js.Any])
   }
 }

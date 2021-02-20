@@ -17,16 +17,15 @@ import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
 import typings.rimraf.rimrafStrings.buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Fn0 extends js.Object {
+  trait Fn0 extends StObject {
     
     def apply(path: PathLike): js.Array[Buffer | String] = js.native
     def apply(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
@@ -38,7 +37,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply(path: PathLike): Stats = js.native
     def apply(path: PathLike, options: BigIntOptions): BigIntStats = js.native
@@ -46,26 +45,26 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallPathOptions extends js.Object {
+  trait FnCallPathOptions extends StObject {
     
     def apply(path: PathLike): Unit = js.native
     def apply(path: PathLike, options: RmDirOptions): Unit = js.native
   }
   
   @js.native
-  trait Typeofchmod extends js.Object {
+  trait Typeofchmod extends StObject {
     
     def apply(path: PathLike, mode: Mode, callback: NoParamCallback): Unit = js.native
   }
   
   @js.native
-  trait Typeoflstat extends js.Object {
+  trait Typeoflstat extends StObject {
     
     def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = js.native
   }
   
   @js.native
-  trait Typeofreaddir extends js.Object {
+  trait Typeofreaddir extends StObject {
     
     def apply(
       path: PathLike,
@@ -114,14 +113,14 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Typeofrmdir extends js.Object {
+  trait Typeofrmdir extends StObject {
     
     def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
     def apply(path: PathLike, options: RmDirOptions, callback: NoParamCallback): Unit = js.native
   }
   
   @js.native
-  trait Typeofstat extends js.Object {
+  trait Typeofstat extends StObject {
     
     def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* stats */ Stats, Unit]): Unit = js.native
     def apply(
@@ -137,7 +136,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Typeofunlink extends js.Object {
+  trait Typeofunlink extends StObject {
     
     def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
   }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonSdkApiUsageViolationReport extends js.Object {
+trait NonSdkApiUsageViolationReport extends StObject {
   
   /** Examples of the detected API usages. */
   var exampleApis: js.UndefOr[js.Array[NonSdkApi]] = js.native
@@ -28,45 +29,33 @@ object NonSdkApiUsageViolationReport {
   }
   
   @scala.inline
-  implicit class NonSdkApiUsageViolationReportOps[Self <: NonSdkApiUsageViolationReport] (val x: Self) extends AnyVal {
+  implicit class NonSdkApiUsageViolationReportMutableBuilder[Self <: NonSdkApiUsageViolationReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExampleApis(value: js.Array[NonSdkApi]): Self = StObject.set(x, "exampleApis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExampleApisUndefined: Self = StObject.set(x, "exampleApis", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExampleApisVarargs(value: NonSdkApi*): Self = StObject.set(x, "exampleApis", js.Array(value :_*))
     
     @scala.inline
-    def setExampleApisVarargs(value: NonSdkApi*): Self = this.set("exampleApis", js.Array(value :_*))
+    def setMinSdkVersion(value: Double): Self = StObject.set(x, "minSdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleApis(value: js.Array[NonSdkApi]): Self = this.set("exampleApis", value.asInstanceOf[js.Any])
+    def setMinSdkVersionUndefined: Self = StObject.set(x, "minSdkVersion", js.undefined)
     
     @scala.inline
-    def deleteExampleApis: Self = this.set("exampleApis", js.undefined)
+    def setTargetSdkVersion(value: Double): Self = StObject.set(x, "targetSdkVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSdkVersion(value: Double): Self = this.set("minSdkVersion", value.asInstanceOf[js.Any])
+    def setTargetSdkVersionUndefined: Self = StObject.set(x, "targetSdkVersion", js.undefined)
     
     @scala.inline
-    def deleteMinSdkVersion: Self = this.set("minSdkVersion", js.undefined)
+    def setUniqueApis(value: Double): Self = StObject.set(x, "uniqueApis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSdkVersion(value: Double): Self = this.set("targetSdkVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetSdkVersion: Self = this.set("targetSdkVersion", js.undefined)
-    
-    @scala.inline
-    def setUniqueApis(value: Double): Self = this.set("uniqueApis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueApis: Self = this.set("uniqueApis", js.undefined)
+    def setUniqueApisUndefined: Self = StObject.set(x, "uniqueApis", js.undefined)
   }
 }

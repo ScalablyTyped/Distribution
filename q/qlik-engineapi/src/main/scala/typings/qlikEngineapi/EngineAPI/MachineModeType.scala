@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_64
   - typings.qlikEngineapi.qlikEngineapiStrings.CONNECT_32
 */
-trait MachineModeType extends js.Object
+trait MachineModeType extends StObject
 object MachineModeType {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.reactNativeFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Dirs extends js.Object {
+trait Dirs extends StObject {
   
   var CacheDir: String = js.native
   
@@ -44,45 +45,33 @@ object Dirs {
   }
   
   @scala.inline
-  implicit class DirsOps[Self <: Dirs] (val x: Self) extends AnyVal {
+  implicit class DirsMutableBuilder[Self <: Dirs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheDir(value: String): Self = StObject.set(x, "CacheDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDCIMDir(value: String): Self = StObject.set(x, "DCIMDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentDir(value: String): Self = StObject.set(x, "DocumentDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheDir(value: String): Self = this.set("CacheDir", value.asInstanceOf[js.Any])
+    def setDownloadDir(value: String): Self = StObject.set(x, "DownloadDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDCIMDir(value: String): Self = this.set("DCIMDir", value.asInstanceOf[js.Any])
+    def setMainBundleDir(value: String): Self = StObject.set(x, "MainBundleDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentDir(value: String): Self = this.set("DocumentDir", value.asInstanceOf[js.Any])
+    def setMovieDir(value: String): Self = StObject.set(x, "MovieDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadDir(value: String): Self = this.set("DownloadDir", value.asInstanceOf[js.Any])
+    def setMusicDir(value: String): Self = StObject.set(x, "MusicDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMainBundleDir(value: String): Self = this.set("MainBundleDir", value.asInstanceOf[js.Any])
+    def setPictureDir(value: String): Self = StObject.set(x, "PictureDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMovieDir(value: String): Self = this.set("MovieDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMusicDir(value: String): Self = this.set("MusicDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPictureDir(value: String): Self = this.set("PictureDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSDCardDir(value: String): Self = this.set("SDCardDir", value.asInstanceOf[js.Any])
+    def setSDCardDir(value: String): Self = StObject.set(x, "SDCardDir", value.asInstanceOf[js.Any])
   }
 }

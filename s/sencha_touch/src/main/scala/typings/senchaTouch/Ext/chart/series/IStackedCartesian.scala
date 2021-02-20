@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.chart.series
 
 import typings.senchaTouch.Ext.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,48 +41,36 @@ object IStackedCartesian {
   }
   
   @scala.inline
-  implicit class IStackedCartesianOps[Self <: IStackedCartesian] (val x: Self) extends AnyVal {
+  implicit class IStackedCartesianMutableBuilder[Self <: IStackedCartesian] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetStacked(value: () => Boolean): Self = StObject.set(x, "getStacked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetStackedUndefined: Self = StObject.set(x, "getStacked", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidden(value: Array): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStacked(value: () => Boolean): Self = this.set("getStacked", js.Any.fromFunction0(value))
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteGetStacked: Self = this.set("getStacked", js.undefined)
+    def setSetHidden(value: /* hidden */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHidden(value: Array): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setSetStacked(value: /* stacked */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStacked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHidden(value: /* hidden */ js.UndefOr[Array] => Unit): Self = this.set("setHidden", js.Any.fromFunction1(value))
+    def setSetStackedUndefined: Self = StObject.set(x, "setStacked", js.undefined)
     
     @scala.inline
-    def deleteSetHidden: Self = this.set("setHidden", js.undefined)
+    def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetStacked(value: /* stacked */ js.UndefOr[Boolean] => Unit): Self = this.set("setStacked", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetStacked: Self = this.set("setStacked", js.undefined)
-    
-    @scala.inline
-    def setStacked(value: Boolean): Self = this.set("stacked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStacked: Self = this.set("stacked", js.undefined)
+    def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
   }
 }

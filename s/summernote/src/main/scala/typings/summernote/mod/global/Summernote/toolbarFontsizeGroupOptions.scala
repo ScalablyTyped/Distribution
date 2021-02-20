@@ -2,6 +2,7 @@ package typings.summernote.mod.global.Summernote
 
 import typings.summernote.summernoteStrings.fontname_
 import typings.summernote.summernoteStrings.fontsize_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.summernote.summernoteStrings.fontname_
   - typings.summernote.summernoteStrings.color
 */
-trait toolbarFontsizeGroupOptions extends js.Object
+trait toolbarFontsizeGroupOptions extends StObject
 object toolbarFontsizeGroupOptions {
   
   @scala.inline

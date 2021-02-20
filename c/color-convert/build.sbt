@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "color-convert"
-version := "1.9-dt-20200515Z-19334a"
+version := "1.9-dt-20200515Z-df6aa9"
 scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20200515Z-04bab1")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20200515Z-396355")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

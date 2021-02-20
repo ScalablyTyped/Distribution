@@ -3,12 +3,13 @@ package typings.rcTable.interfaceMod
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnSharedType[RecordType] extends js.Object {
+trait ColumnSharedType[RecordType] extends StObject {
   
   var align: js.UndefOr[AlignType] = js.native
   
@@ -37,62 +38,50 @@ object ColumnSharedType {
   }
   
   @scala.inline
-  implicit class ColumnSharedTypeOps[Self <: ColumnSharedType[_], RecordType] (val x: Self with ColumnSharedType[RecordType]) extends AnyVal {
+  implicit class ColumnSharedTypeMutableBuilder[Self <: ColumnSharedType[_], RecordType] (val x: Self with ColumnSharedType[RecordType]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: AlignType): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setEllipsis(value: CellEllipsisType): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setFixed(value: FixedType): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEllipsis(value: CellEllipsisType): Self = this.set("ellipsis", value.asInstanceOf[js.Any])
+    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
     @scala.inline
-    def deleteEllipsis: Self = this.set("ellipsis", js.undefined)
+    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixed(value: FixedType): Self = this.set("fixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFixed: Self = this.set("fixed", js.undefined)
-    
-    @scala.inline
-    def setKey(value: Key): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
     def setOnHeaderCell(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
-    ): Self = this.set("onHeaderCell", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onHeaderCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnHeaderCell: Self = this.set("onHeaderCell", js.undefined)
+    def setOnHeaderCellUndefined: Self = StObject.set(x, "onHeaderCell", js.undefined)
     
     @scala.inline
-    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

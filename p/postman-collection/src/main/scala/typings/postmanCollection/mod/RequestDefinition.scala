@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object RequestDefinition {
   }
   
   @scala.inline
-  implicit class RequestDefinitionOps[Self <: RequestDefinition] (val x: Self) extends AnyVal {
+  implicit class RequestDefinitionMutableBuilder[Self <: RequestDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: RequestAuthDefinition): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: RequestBodyDefinition): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String | Url): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def setAuth(value: RequestAuthDefinition): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCertificate(value: CertificateDefinition): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def setBody(value: RequestBodyDefinition): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setHeader(value: js.Array[HeaderDefinition]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def setCertificate(value: CertificateDefinition): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setHeaderVarargs(value: HeaderDefinition*): Self = StObject.set(x, "header", js.Array(value :_*))
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderVarargs(value: HeaderDefinition*): Self = this.set("header", js.Array(value :_*))
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setHeader(value: js.Array[HeaderDefinition]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setProxy(value: ProxyConfigDefinition): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    
-    @scala.inline
-    def setProxy(value: ProxyConfigDefinition): Self = this.set("proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
+    def setUrl(value: String | Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

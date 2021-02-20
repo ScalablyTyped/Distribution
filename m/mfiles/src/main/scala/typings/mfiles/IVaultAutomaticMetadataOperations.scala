@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultAutomaticMetadataOperations extends js.Object {
+trait IVaultAutomaticMetadataOperations extends StObject {
   
   def GetAutomaticMetadataForObject(ObjVer: IObjVer): IAutomaticMetadataResult = js.native
   
@@ -26,27 +27,15 @@ object IVaultAutomaticMetadataOperations {
   }
   
   @scala.inline
-  implicit class IVaultAutomaticMetadataOperationsOps[Self <: IVaultAutomaticMetadataOperations] (val x: Self) extends AnyVal {
+  implicit class IVaultAutomaticMetadataOperationsMutableBuilder[Self <: IVaultAutomaticMetadataOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAutomaticMetadataForObject(value: IObjVer => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAutomaticMetadataForTemporaryFile(value: Double => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAutomaticMetadataForObject(value: IObjVer => IAutomaticMetadataResult): Self = this.set("GetAutomaticMetadataForObject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAutomaticMetadataForTemporaryFile(value: Double => IAutomaticMetadataResult): Self = this.set("GetAutomaticMetadataForTemporaryFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetAutomaticMetadataForTemporaryFiles(value: IIDs => IAutomaticMetadataResult): Self = this.set("GetAutomaticMetadataForTemporaryFiles", js.Any.fromFunction1(value))
+    def setGetAutomaticMetadataForTemporaryFiles(value: IIDs => IAutomaticMetadataResult): Self = StObject.set(x, "GetAutomaticMetadataForTemporaryFiles", js.Any.fromFunction1(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Information about a single training query run for the model.
   */
 @js.native
-trait SchemaTrainingRun extends js.Object {
+trait SchemaTrainingRun extends StObject {
   
   /**
     * The evaluation metrics over training/eval data that were computed at the
@@ -41,45 +42,33 @@ object SchemaTrainingRun {
   }
   
   @scala.inline
-  implicit class SchemaTrainingRunOps[Self <: SchemaTrainingRun] (val x: Self) extends AnyVal {
+  implicit class SchemaTrainingRunMutableBuilder[Self <: SchemaTrainingRun] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvaluationMetrics(value: SchemaEvaluationMetrics): Self = StObject.set(x, "evaluationMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvaluationMetricsUndefined: Self = StObject.set(x, "evaluationMetrics", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[SchemaIterationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluationMetrics(value: SchemaEvaluationMetrics): Self = this.set("evaluationMetrics", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteEvaluationMetrics: Self = this.set("evaluationMetrics", js.undefined)
+    def setResultsVarargs(value: SchemaIterationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: SchemaIterationResult*): Self = this.set("results", js.Array(value :_*))
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[SchemaIterationResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setTrainingOptions(value: SchemaTrainingOptions): Self = StObject.set(x, "trainingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
-    
-    @scala.inline
-    def setTrainingOptions(value: SchemaTrainingOptions): Self = this.set("trainingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrainingOptions: Self = this.set("trainingOptions", js.undefined)
+    def setTrainingOptionsUndefined: Self = StObject.set(x, "trainingOptions", js.undefined)
   }
 }

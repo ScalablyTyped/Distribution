@@ -1,6 +1,7 @@
 package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object RegimeAcknowledge {
   }
   
   @scala.inline
-  implicit class RegimeAcknowledgeOps[Self <: RegimeAcknowledge] (val x: Self) extends AnyVal {
+  implicit class RegimeAcknowledgeMutableBuilder[Self <: RegimeAcknowledge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetric_names(value: js.Array[String]): Self = StObject.set(x, "metric_names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMetric_namesVarargs(value: String*): Self = StObject.set(x, "metric_names", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder_index(value: Double): Self = StObject.set(x, "order_index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetric_namesVarargs(value: String*): Self = this.set("metric_names", js.Array(value :_*))
-    
-    @scala.inline
-    def setMetric_names(value: js.Array[String]): Self = this.set("metric_names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrder_index(value: Double): Self = this.set("order_index", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPage_url(value: String): Self = this.set("page_url", value.asInstanceOf[js.Any])
+    def setPage_url(value: String): Self = StObject.set(x, "page_url", value.asInstanceOf[js.Any])
   }
 }

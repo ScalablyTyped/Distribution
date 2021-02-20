@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     item.setFeedbackForCorrect(FormApp.createFeedback().setText("Dogs rule, cats drool.").build());
   */
 @js.native
-trait QuizFeedbackBuilder extends js.Object {
+trait QuizFeedbackBuilder extends StObject {
   
   def addLink(url: String): QuizFeedbackBuilder = js.native
   def addLink(url: String, displayText: String): QuizFeedbackBuilder = js.native

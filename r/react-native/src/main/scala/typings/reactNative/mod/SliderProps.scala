@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,78 +84,66 @@ object SliderProps {
   }
   
   @scala.inline
-  implicit class SliderPropsOps[Self <: SliderProps] (val x: Self) extends AnyVal {
+  implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumTrackTintColor(value: ColorValue): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTrackTintColor(value: ColorValue): Self = this.set("maximumTrackTintColor", value.asInstanceOf[js.Any])
+    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
     @scala.inline
-    def deleteMaximumTrackTintColor: Self = this.set("maximumTrackTintColor", js.undefined)
+    def setMinimumTrackTintColor(value: ColorValue): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumValue(value: Double): Self = this.set("maximumValue", value.asInstanceOf[js.Any])
+    def setMinimumTrackTintColorUndefined: Self = StObject.set(x, "minimumTrackTintColor", js.undefined)
     
     @scala.inline
-    def deleteMaximumValue: Self = this.set("maximumValue", js.undefined)
+    def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumTrackTintColor(value: ColorValue): Self = this.set("minimumTrackTintColor", value.asInstanceOf[js.Any])
+    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
     @scala.inline
-    def deleteMinimumTrackTintColor: Self = this.set("minimumTrackTintColor", js.undefined)
+    def setOnSlidingComplete(value: /* value */ Double => Unit): Self = StObject.set(x, "onSlidingComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinimumValue(value: Double): Self = this.set("minimumValue", value.asInstanceOf[js.Any])
+    def setOnSlidingCompleteUndefined: Self = StObject.set(x, "onSlidingComplete", js.undefined)
     
     @scala.inline
-    def deleteMinimumValue: Self = this.set("minimumValue", js.undefined)
+    def setOnValueChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSlidingComplete(value: /* value */ Double => Unit): Self = this.set("onSlidingComplete", js.Any.fromFunction1(value))
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def deleteOnSlidingComplete: Self = this.set("onSlidingComplete", js.undefined)
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: /* value */ Double => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
+    def setThumbTintColor(value: ColorValue): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTintColor(value: ColorValue): Self = this.set("thumbTintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThumbTintColor: Self = this.set("thumbTintColor", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,25 +1,25 @@
 package typings.alt
 
 import typings.alt.AltJS.AltConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object AltJS extends js.Object {
+  object AltJS {
     
+    @JSGlobal("AltJS.Alt")
     @js.native
     class Alt ()
       extends typings.alt.AltJS.Alt {
       def this(config: AltConfig) = this()
     }
     
+    @JSGlobal("AltJS.lifeCycleEvents")
     @js.native
-    object lifeCycleEvents extends js.Object {
+    object lifeCycleEvents extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.alt.AltJS.lifeCycleEvents with Double] = js.native

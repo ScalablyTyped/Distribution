@@ -1,26 +1,24 @@
 package typings.monacoEditor.mod.editor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScrollType extends js.Object
+sealed trait ScrollType extends StObject
 @JSImport("monaco-editor", "editor.ScrollType")
 @js.native
-object ScrollType extends js.Object {
+object ScrollType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ScrollType with Double] = js.native
   
   @js.native
   sealed trait Immediate extends ScrollType
-  /* 1 */ @js.native
-  object Immediate extends TopLevel[Immediate with Double]
+  /* 1 */ val Immediate: typings.monacoEditor.mod.editor.ScrollType.Immediate with Double = js.native
   
   @js.native
   sealed trait Smooth extends ScrollType
-  /* 0 */ @js.native
-  object Smooth extends TopLevel[Smooth with Double]
+  /* 0 */ val Smooth: typings.monacoEditor.mod.editor.ScrollType.Smooth with Double = js.native
 }

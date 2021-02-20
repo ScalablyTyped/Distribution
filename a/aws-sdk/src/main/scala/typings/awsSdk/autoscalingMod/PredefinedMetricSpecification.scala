@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredefinedMetricSpecification extends js.Object {
+trait PredefinedMetricSpecification extends StObject {
   
   /**
     * The metric type. The following predefined metrics are available:    ASGAverageCPUUtilization - Average CPU utilization of the Auto Scaling group.    ASGAverageNetworkIn - Average number of bytes received on all network interfaces by the Auto Scaling group.    ASGAverageNetworkOut - Average number of bytes sent out on all network interfaces by the Auto Scaling group.    ALBRequestCountPerTarget - Number of requests completed per target in an Application Load Balancer target group.  
@@ -26,27 +27,15 @@ object PredefinedMetricSpecification {
   }
   
   @scala.inline
-  implicit class PredefinedMetricSpecificationOps[Self <: PredefinedMetricSpecification] (val x: Self) extends AnyVal {
+  implicit class PredefinedMetricSpecificationMutableBuilder[Self <: PredefinedMetricSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPredefinedMetricType(value: MetricType): Self = StObject.set(x, "PredefinedMetricType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceLabel(value: XmlStringMaxLen1023): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPredefinedMetricType(value: MetricType): Self = this.set("PredefinedMetricType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceLabel(value: XmlStringMaxLen1023): Self = this.set("ResourceLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLabel: Self = this.set("ResourceLabel", js.undefined)
+    def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
   }
 }

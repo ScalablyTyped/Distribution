@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UIColorType extends js.Object
+sealed trait UIColorType extends StObject
 /** Defines constants that specify known system color values. */
 @JSGlobal("Windows.UI.ViewManagement.UIColorType")
 @js.native
-object UIColorType extends js.Object {
+object UIColorType extends StObject {
   
   /** The accent color. */
   @js.native

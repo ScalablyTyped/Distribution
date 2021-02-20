@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param camera - The camera component.
   */
 @js.native
-trait PostEffectQueue extends js.Object {
+trait PostEffectQueue extends StObject {
   
   /**
     * Adds a post effect to the queue. If the queue is disabled adding a post effect will
@@ -55,33 +56,21 @@ object PostEffectQueue {
   }
   
   @scala.inline
-  implicit class PostEffectQueueOps[Self <: PostEffectQueue] (val x: Self) extends AnyVal {
+  implicit class PostEffectQueueMutableBuilder[Self <: PostEffectQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEffect(value: PostEffect => Unit): Self = StObject.set(x, "addEffect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEffect(value: PostEffect => Unit): Self = this.set("addEffect", js.Any.fromFunction1(value))
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveEffect(value: PostEffect => Unit): Self = this.set("removeEffect", js.Any.fromFunction1(value))
+    def setRemoveEffect(value: PostEffect => Unit): Self = StObject.set(x, "removeEffect", js.Any.fromFunction1(value))
   }
 }

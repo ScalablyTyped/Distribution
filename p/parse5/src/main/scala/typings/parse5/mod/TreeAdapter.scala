@@ -1,11 +1,12 @@
 package typings.parse5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeAdapter extends js.Object {
+trait TreeAdapter extends StObject {
   
   /**
     * Copies attributes to the given element. Only attributes that are not yet present in the element are copied.

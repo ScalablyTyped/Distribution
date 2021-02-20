@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRelationalDatabaseLogEventsResult extends js.Object {
+trait GetRelationalDatabaseLogEventsResult extends StObject {
   
   /**
     * A token used for advancing to the previous page of results from your get relational database log events request.
@@ -31,39 +32,27 @@ object GetRelationalDatabaseLogEventsResult {
   }
   
   @scala.inline
-  implicit class GetRelationalDatabaseLogEventsResultOps[Self <: GetRelationalDatabaseLogEventsResult] (val x: Self) extends AnyVal {
+  implicit class GetRelationalDatabaseLogEventsResultMutableBuilder[Self <: GetRelationalDatabaseLogEventsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextBackwardToken(value: String): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextBackwardTokenUndefined: Self = StObject.set(x, "nextBackwardToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextForwardToken(value: String): Self = StObject.set(x, "nextForwardToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextBackwardToken(value: String): Self = this.set("nextBackwardToken", value.asInstanceOf[js.Any])
+    def setNextForwardTokenUndefined: Self = StObject.set(x, "nextForwardToken", js.undefined)
     
     @scala.inline
-    def deleteNextBackwardToken: Self = this.set("nextBackwardToken", js.undefined)
+    def setResourceLogEvents(value: LogEventList): Self = StObject.set(x, "resourceLogEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextForwardToken(value: String): Self = this.set("nextForwardToken", value.asInstanceOf[js.Any])
+    def setResourceLogEventsUndefined: Self = StObject.set(x, "resourceLogEvents", js.undefined)
     
     @scala.inline
-    def deleteNextForwardToken: Self = this.set("nextForwardToken", js.undefined)
-    
-    @scala.inline
-    def setResourceLogEventsVarargs(value: LogEvent*): Self = this.set("resourceLogEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceLogEvents(value: LogEventList): Self = this.set("resourceLogEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLogEvents: Self = this.set("resourceLogEvents", js.undefined)
+    def setResourceLogEventsVarargs(value: LogEvent*): Self = StObject.set(x, "resourceLogEvents", js.Array(value :_*))
   }
 }

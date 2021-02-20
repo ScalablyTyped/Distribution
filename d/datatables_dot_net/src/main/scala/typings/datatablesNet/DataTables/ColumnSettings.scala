@@ -1,6 +1,7 @@
 package typings.datatablesNet.DataTables
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion "ajax-settings"
 //#region "colunm-settings"
 @js.native
-trait ColumnSettings extends js.Object {
+trait ColumnSettings extends StObject {
   
   /**
     * Cell type to be created for a column. th/td Since: 1.10
@@ -113,145 +114,133 @@ object ColumnSettings {
   }
   
   @scala.inline
-  implicit class ColumnSettingsOps[Self <: ColumnSettings] (val x: Self) extends AnyVal {
+  implicit class ColumnSettingsMutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCellType(value: String): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellTypeUndefined: Self = StObject.set(x, "cellType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellType(value: String): Self = this.set("cellType", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteCellType: Self = this.set("cellType", js.undefined)
+    def setContentPadding(value: String): Self = StObject.set(x, "contentPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
-    
-    @scala.inline
-    def setContentPadding(value: String): Self = this.set("contentPadding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentPadding: Self = this.set("contentPadding", js.undefined)
+    def setContentPaddingUndefined: Self = StObject.set(x, "contentPadding", js.undefined)
     
     @scala.inline
     def setCreatedCell(
       value: (/* cell */ Node, /* cellData */ js.Any, /* rowData */ js.Any, /* row */ Double, /* col */ Double) => Unit
-    ): Self = this.set("createdCell", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "createdCell", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteCreatedCell: Self = this.set("createdCell", js.undefined)
+    def setCreatedCellUndefined: Self = StObject.set(x, "createdCell", js.undefined)
     
     @scala.inline
-    def setData(value: Double | String | ObjectColumnData | FunctionColumnData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setData(value: Double | String | ObjectColumnData | FunctionColumnData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataNull: Self = StObject.set(x, "data", null)
     
     @scala.inline
-    def setDataNull: Self = this.set("data", null)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setDefaultContent(value: String): Self = this.set("defaultContent", value.asInstanceOf[js.Any])
+    def setDefaultContent(value: String): Self = StObject.set(x, "defaultContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultContent: Self = this.set("defaultContent", js.undefined)
+    def setDefaultContentUndefined: Self = StObject.set(x, "defaultContent", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOrderDataVarargs(value: Double*): Self = this.set("orderData", js.Array(value :_*))
+    def setOrderData(value: Double | js.Array[Double]): Self = StObject.set(x, "orderData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderData(value: Double | js.Array[Double]): Self = this.set("orderData", value.asInstanceOf[js.Any])
+    def setOrderDataType(value: String): Self = StObject.set(x, "orderDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderData: Self = this.set("orderData", js.undefined)
+    def setOrderDataTypeUndefined: Self = StObject.set(x, "orderDataType", js.undefined)
     
     @scala.inline
-    def setOrderDataType(value: String): Self = this.set("orderDataType", value.asInstanceOf[js.Any])
+    def setOrderDataUndefined: Self = StObject.set(x, "orderData", js.undefined)
     
     @scala.inline
-    def deleteOrderDataType: Self = this.set("orderDataType", js.undefined)
+    def setOrderDataVarargs(value: Double*): Self = StObject.set(x, "orderData", js.Array(value :_*))
     
     @scala.inline
-    def setOrderFixedVarargs(value: js.Any*): Self = this.set("orderFixed", js.Array(value :_*))
+    def setOrderFixed(value: js.Array[_] | ObjectOrderFixed): Self = StObject.set(x, "orderFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderFixed(value: js.Array[_] | ObjectOrderFixed): Self = this.set("orderFixed", value.asInstanceOf[js.Any])
+    def setOrderFixedUndefined: Self = StObject.set(x, "orderFixed", js.undefined)
     
     @scala.inline
-    def deleteOrderFixed: Self = this.set("orderFixed", js.undefined)
+    def setOrderFixedVarargs(value: js.Any*): Self = StObject.set(x, "orderFixed", js.Array(value :_*))
     
     @scala.inline
-    def setOrderSequenceVarargs(value: String*): Self = this.set("orderSequence", js.Array(value :_*))
+    def setOrderSequence(value: js.Array[String]): Self = StObject.set(x, "orderSequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderSequence(value: js.Array[String]): Self = this.set("orderSequence", value.asInstanceOf[js.Any])
+    def setOrderSequenceUndefined: Self = StObject.set(x, "orderSequence", js.undefined)
     
     @scala.inline
-    def deleteOrderSequence: Self = this.set("orderSequence", js.undefined)
+    def setOrderSequenceVarargs(value: String*): Self = StObject.set(x, "orderSequence", js.Array(value :_*))
     
     @scala.inline
-    def setOrderable(value: Boolean): Self = this.set("orderable", value.asInstanceOf[js.Any])
+    def setOrderable(value: Boolean): Self = StObject.set(x, "orderable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderable: Self = this.set("orderable", js.undefined)
+    def setOrderableUndefined: Self = StObject.set(x, "orderable", js.undefined)
+    
+    @scala.inline
+    def setRender(value: Double | String | ObjectColumnData | FunctionColumnRender | ObjectColumnRender): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRenderFunction4(
       value: (/* data */ js.Any, /* type */ js.Any, /* row */ js.Any, /* meta */ CellMetaSettings) => js.Any
-    ): Self = this.set("render", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "render", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setRender(value: Double | String | ObjectColumnData | FunctionColumnRender | ObjectColumnRender): Self = this.set("render", value.asInstanceOf[js.Any])
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchable(value: Boolean): Self = this.set("searchable", value.asInstanceOf[js.Any])
+    def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
     
     @scala.inline
-    def deleteSearchable: Self = this.set("searchable", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

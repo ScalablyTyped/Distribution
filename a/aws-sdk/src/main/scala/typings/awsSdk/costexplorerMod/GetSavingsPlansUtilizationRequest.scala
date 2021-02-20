@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSavingsPlansUtilizationRequest extends js.Object {
+trait GetSavingsPlansUtilizationRequest extends StObject {
   
   /**
     * Filters Savings Plans utilization coverage data for active Savings Plans dimensions. You can filter data with the following dimensions:    LINKED_ACCOUNT     SAVINGS_PLAN_ARN     SAVINGS_PLANS_TYPE     REGION     PAYMENT_OPTION     INSTANCE_TYPE_FAMILY     GetSavingsPlansUtilization uses the same Expression object as the other operations, but only AND is supported among each dimension.
@@ -31,33 +32,21 @@ object GetSavingsPlansUtilizationRequest {
   }
   
   @scala.inline
-  implicit class GetSavingsPlansUtilizationRequestOps[Self <: GetSavingsPlansUtilizationRequest] (val x: Self) extends AnyVal {
+  implicit class GetSavingsPlansUtilizationRequestMutableBuilder[Self <: GetSavingsPlansUtilizationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
     
     @scala.inline
-    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("Filter", js.undefined)
-    
-    @scala.inline
-    def setGranularity(value: Granularity): Self = this.set("Granularity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGranularity: Self = this.set("Granularity", js.undefined)
+    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

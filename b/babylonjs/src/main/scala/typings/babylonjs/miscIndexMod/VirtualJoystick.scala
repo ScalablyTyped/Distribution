@@ -3,6 +3,7 @@ package typings.babylonjs.miscIndexMod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.anon.PartialVirtualJoystickCus
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,26 +22,60 @@ class VirtualJoystick ()
   def this(leftJoystick: Boolean, customizations: PartialVirtualJoystickCus) = this()
 }
 /* static members */
-@JSImport("babylonjs/Misc/index", "VirtualJoystick")
-@js.native
-object VirtualJoystick extends js.Object {
+object VirtualJoystick {
+  
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Canvas the virtual joystick will render onto, default z-index of this is 5
     */
-  var Canvas: Nullable[HTMLCanvasElement] = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick.Canvas")
+  @js.native
+  def Canvas: Nullable[HTMLCanvasElement] = js.native
+  @scala.inline
+  def Canvas_=(x: Nullable[HTMLCanvasElement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Canvas")(x.asInstanceOf[js.Any])
   
-  var _GetDefaultOptions: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick._GetDefaultOptions")
+  @js.native
+  def _GetDefaultOptions: js.Any = js.native
+  @scala.inline
+  def _GetDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
   
-  var _alwaysVisibleSticks: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick._alwaysVisibleSticks")
+  @js.native
+  def _alwaysVisibleSticks: js.Any = js.native
+  @scala.inline
+  def _alwaysVisibleSticks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_alwaysVisibleSticks")(x.asInstanceOf[js.Any])
   
-  var _globalJoystickIndex: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick._globalJoystickIndex")
+  @js.native
+  def _globalJoystickIndex: js.Any = js.native
+  @scala.inline
+  def _globalJoystickIndex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_globalJoystickIndex")(x.asInstanceOf[js.Any])
   
-  var halfWidth: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick.halfWidth")
+  @js.native
+  def halfWidth: js.Any = js.native
+  @scala.inline
+  def halfWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("halfWidth")(x.asInstanceOf[js.Any])
   
-  var vjCanvasContext: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick.vjCanvasContext")
+  @js.native
+  def vjCanvasContext: js.Any = js.native
+  @scala.inline
+  def vjCanvasContext_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasContext")(x.asInstanceOf[js.Any])
   
-  var vjCanvasHeight: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick.vjCanvasHeight")
+  @js.native
+  def vjCanvasHeight: js.Any = js.native
+  @scala.inline
+  def vjCanvasHeight_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasHeight")(x.asInstanceOf[js.Any])
   
-  var vjCanvasWidth: js.Any = js.native
+  @JSImport("babylonjs/Misc/index", "VirtualJoystick.vjCanvasWidth")
+  @js.native
+  def vjCanvasWidth: js.Any = js.native
+  @scala.inline
+  def vjCanvasWidth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vjCanvasWidth")(x.asInstanceOf[js.Any])
 }

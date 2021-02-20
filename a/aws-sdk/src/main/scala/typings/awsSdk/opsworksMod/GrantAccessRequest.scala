@@ -1,11 +1,12 @@
 package typings.awsSdk.opsworksMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrantAccessRequest extends js.Object {
+trait GrantAccessRequest extends StObject {
   
   /**
     * The instance's AWS OpsWorks Stacks ID.
@@ -26,27 +27,15 @@ object GrantAccessRequest {
   }
   
   @scala.inline
-  implicit class GrantAccessRequestOps[Self <: GrantAccessRequest] (val x: Self) extends AnyVal {
+  implicit class GrantAccessRequestMutableBuilder[Self <: GrantAccessRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValidForInMinutes(value: ValidForInMinutes): Self = StObject.set(x, "ValidForInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidForInMinutes(value: ValidForInMinutes): Self = this.set("ValidForInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidForInMinutes: Self = this.set("ValidForInMinutes", js.undefined)
+    def setValidForInMinutesUndefined: Self = StObject.set(x, "ValidForInMinutes", js.undefined)
   }
 }

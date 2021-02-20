@@ -1,11 +1,12 @@
 package typings.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GalleryProfile extends js.Object {
+trait GalleryProfile extends StObject {
   
   var total_gallery_comments: Double = js.native
   
@@ -29,33 +30,21 @@ object GalleryProfile {
   }
   
   @scala.inline
-  implicit class GalleryProfileOps[Self <: GalleryProfile] (val x: Self) extends AnyVal {
+  implicit class GalleryProfileMutableBuilder[Self <: GalleryProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTotal_gallery_comments(value: Double): Self = StObject.set(x, "total_gallery_comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTotal_gallery_favorites(value: Double): Self = StObject.set(x, "total_gallery_favorites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotal_gallery_submissions(value: Double): Self = StObject.set(x, "total_gallery_submissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_gallery_comments(value: Double): Self = this.set("total_gallery_comments", value.asInstanceOf[js.Any])
+    def setTrophies(value: js.Array[Trophy]): Self = StObject.set(x, "trophies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal_gallery_favorites(value: Double): Self = this.set("total_gallery_favorites", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_gallery_submissions(value: Double): Self = this.set("total_gallery_submissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrophiesVarargs(value: Trophy*): Self = this.set("trophies", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrophies(value: js.Array[Trophy]): Self = this.set("trophies", value.asInstanceOf[js.Any])
+    def setTrophiesVarargs(value: Trophy*): Self = StObject.set(x, "trophies", js.Array(value :_*))
   }
 }

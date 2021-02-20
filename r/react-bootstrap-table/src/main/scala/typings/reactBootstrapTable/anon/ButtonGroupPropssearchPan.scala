@@ -1,20 +1,21 @@
 package typings.reactBootstrapTable.anon
 
 import typings.react.mod.ReactElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-bootstrap-table.react-bootstrap-table.ButtonGroupProps & {  searchPanel :react.react.ReactElement,   btnGroup :react.react.ReactElement,   searchField :react.react.ReactElement,   clearBtn :react.react.ReactElement} */
 @js.native
-trait ButtonGroupPropssearchPan extends js.Object {
+trait ButtonGroupPropssearchPan extends StObject {
   
   /**
     * Button group components.
     */
   var btnGroup: ReactElement = js.native
   
-   // search field JSX
+  // search field JSX
   /**
     * The button to clear the search field.
     */
@@ -35,7 +36,7 @@ trait ButtonGroupPropssearchPan extends js.Object {
     */
   var insertBtn: ReactElement = js.native
   
-   // button groups JSX
+  // button groups JSX
   /**
     * The individual search field.
     */
@@ -69,42 +70,30 @@ object ButtonGroupPropssearchPan {
   }
   
   @scala.inline
-  implicit class ButtonGroupPropssearchPanOps[Self <: ButtonGroupPropssearchPan] (val x: Self) extends AnyVal {
+  implicit class ButtonGroupPropssearchPanMutableBuilder[Self <: ButtonGroupPropssearchPan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBtnGroup(value: ReactElement): Self = StObject.set(x, "btnGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnGroup(value: ReactElement): Self = this.set("btnGroup", value.asInstanceOf[js.Any])
+    def setExportCSVBtn(value: ReactElement): Self = StObject.set(x, "exportCSVBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearBtn(value: ReactElement): Self = this.set("clearBtn", value.asInstanceOf[js.Any])
+    def setInsertBtn(value: ReactElement): Self = StObject.set(x, "insertBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteBtn(value: ReactElement): Self = this.set("deleteBtn", value.asInstanceOf[js.Any])
+    def setSearchField(value: ReactElement): Self = StObject.set(x, "searchField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportCSVBtn(value: ReactElement): Self = this.set("exportCSVBtn", value.asInstanceOf[js.Any])
+    def setSearchPanel(value: ReactElement): Self = StObject.set(x, "searchPanel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertBtn(value: ReactElement): Self = this.set("insertBtn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchField(value: ReactElement): Self = this.set("searchField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchPanel(value: ReactElement): Self = this.set("searchPanel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowSelectedOnlyBtn(value: ReactElement): Self = this.set("showSelectedOnlyBtn", value.asInstanceOf[js.Any])
+    def setShowSelectedOnlyBtn(value: ReactElement): Self = StObject.set(x, "showSelectedOnlyBtn", value.asInstanceOf[js.Any])
   }
 }

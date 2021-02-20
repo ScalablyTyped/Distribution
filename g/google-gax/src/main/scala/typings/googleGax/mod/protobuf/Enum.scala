@@ -2,9 +2,10 @@ package typings.googleGax.mod.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IEnum
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobuf.Enum")
 @js.native
@@ -20,8 +21,76 @@ class Enum protected ()
     */
   def this(name: String) = this()
   def this(name: String, values: StringDictionary[Double]) = this()
+  def this(name: String, values: js.UndefOr[scala.Nothing], options: StringDictionary[js.Any]) = this()
   def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any]) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: String
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: js.UndefOr[scala.Nothing],
+    comment: String
+  ) = this()
   def this(name: String, values: StringDictionary[Double], options: StringDictionary[js.Any], comment: String) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: js.UndefOr[scala.Nothing],
+    options: StringDictionary[js.Any],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: js.UndefOr[scala.Nothing],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: js.UndefOr[scala.Nothing],
+    comment: String,
+    comments: StringDictionary[String]
+  ) = this()
+  def this(
+    name: String,
+    values: StringDictionary[Double],
+    options: StringDictionary[js.Any],
+    comment: js.UndefOr[scala.Nothing],
+    comments: StringDictionary[String]
+  ) = this()
   def this(
     name: String,
     values: StringDictionary[Double],
@@ -30,11 +99,9 @@ class Enum protected ()
     comments: StringDictionary[String]
   ) = this()
 }
-
 /* static members */
-@JSImport("google-gax", "protobuf.Enum")
-@js.native
-object Enum extends js.Object {
+object Enum {
+  
   /**
     * Constructs an enum from an enum descriptor.
     * @param name Enum name
@@ -42,6 +109,7 @@ object Enum extends js.Object {
     * @returns Created enum
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("google-gax", "protobuf.Enum.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IEnum): typings.protobufjs.mod.Enum = js.native
 }
-

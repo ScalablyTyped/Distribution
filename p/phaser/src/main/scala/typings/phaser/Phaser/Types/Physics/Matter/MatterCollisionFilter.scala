@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are both true.
   */
 @js.native
-trait MatterCollisionFilter extends js.Object {
+trait MatterCollisionFilter extends StObject {
   
   /**
     * A bit field that specifies the collision category this body belongs to. The category value should have only one bit set, for example `0x0001`. This means there are up to 32 unique collision categories available.
@@ -53,36 +54,24 @@ object MatterCollisionFilter {
   }
   
   @scala.inline
-  implicit class MatterCollisionFilterOps[Self <: MatterCollisionFilter] (val x: Self) extends AnyVal {
+  implicit class MatterCollisionFilterMutableBuilder[Self <: MatterCollisionFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: Double): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
+    def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: Double): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
-    
-    @scala.inline
-    def setMask(value: Double): Self = this.set("mask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

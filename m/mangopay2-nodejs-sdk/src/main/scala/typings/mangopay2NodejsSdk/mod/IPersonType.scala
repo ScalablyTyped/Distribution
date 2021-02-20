@@ -3,12 +3,13 @@ package typings.mangopay2NodejsSdk.mod
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NATURAL
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPersonType extends js.Object {
+trait IPersonType extends StObject {
   
   var Legal: LEGAL = js.native
   
@@ -25,27 +26,15 @@ object IPersonType {
   }
   
   @scala.inline
-  implicit class IPersonTypeOps[Self <: IPersonType] (val x: Self) extends AnyVal {
+  implicit class IPersonTypeMutableBuilder[Self <: IPersonType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLegal(value: LEGAL): Self = StObject.set(x, "Legal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNatural(value: NATURAL): Self = StObject.set(x, "Natural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLegal(value: LEGAL): Self = this.set("Legal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNatural(value: NATURAL): Self = this.set("Natural", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotSpecified(value: NotSpecified): Self = this.set("NotSpecified", value.asInstanceOf[js.Any])
+    def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
   }
 }

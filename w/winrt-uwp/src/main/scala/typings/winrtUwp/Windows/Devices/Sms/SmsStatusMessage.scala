@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates an SMS status message. */
 @js.native
-trait SmsStatusMessage extends js.Object {
+trait SmsStatusMessage extends StObject {
   
   /** Gets the body of the status message. */
   var body: String = js.native
@@ -67,54 +68,42 @@ object SmsStatusMessage {
   }
   
   @scala.inline
-  implicit class SmsStatusMessageOps[Self <: SmsStatusMessage] (val x: Self) extends AnyVal {
+  implicit class SmsStatusMessageMutableBuilder[Self <: SmsStatusMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDischargeTime(value: Date): Self = StObject.set(x, "dischargeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDischargeTime(value: Date): Self = this.set("dischargeTime", value.asInstanceOf[js.Any])
+    def setMessageReferenceNumber(value: Double): Self = StObject.set(x, "messageReferenceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = this.set("messageClass", value.asInstanceOf[js.Any])
+    def setServiceCenterTimestamp(value: Date): Self = StObject.set(x, "serviceCenterTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageReferenceNumber(value: Double): Self = this.set("messageReferenceNumber", value.asInstanceOf[js.Any])
+    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageType(value: SmsMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceCenterTimestamp(value: Date): Self = this.set("serviceCenterTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSimIccId(value: String): Self = this.set("simIccId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

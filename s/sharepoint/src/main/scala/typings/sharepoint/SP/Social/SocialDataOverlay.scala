@@ -3,6 +3,7 @@ package typings.sharepoint.SP.Social
 import typings.sharepoint.SP.ClientValueObject
 import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,33 +52,21 @@ object SocialDataOverlay {
   }
   
   @scala.inline
-  implicit class SocialDataOverlayOps[Self <: SocialDataOverlay] (val x: Self) extends AnyVal {
+  implicit class SocialDataOverlayMutableBuilder[Self <: SocialDataOverlay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_actorIndexes(value: () => js.Array[Double]): Self = StObject.set(x, "get_actorIndexes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet_index(value: () => Double): Self = StObject.set(x, "get_index", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_length(value: () => Double): Self = StObject.set(x, "get_length", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_actorIndexes(value: () => js.Array[Double]): Self = this.set("get_actorIndexes", js.Any.fromFunction0(value))
+    def setGet_linkUri(value: () => String): Self = StObject.set(x, "get_linkUri", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGet_index(value: () => Double): Self = this.set("get_index", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_length(value: () => Double): Self = this.set("get_length", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_linkUri(value: () => String): Self = this.set("get_linkUri", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_overlayType(value: () => SocialDataOverlayType): Self = this.set("get_overlayType", js.Any.fromFunction0(value))
+    def setGet_overlayType(value: () => SocialDataOverlayType): Self = StObject.set(x, "get_overlayType", js.Any.fromFunction0(value))
   }
 }

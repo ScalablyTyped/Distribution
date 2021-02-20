@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.checkbox_
 import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.radio_
 import typings.chromeApps.chromeAppsStrings.separator_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CHECKBOX extends js.Object {
+trait CHECKBOX extends StObject {
   
   var CHECKBOX: checkbox_ = js.native
   
@@ -28,30 +29,18 @@ object CHECKBOX {
   }
   
   @scala.inline
-  implicit class CHECKBOXOps[Self <: CHECKBOX] (val x: Self) extends AnyVal {
+  implicit class CHECKBOXMutableBuilder[Self <: CHECKBOX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCHECKBOX(value: checkbox_): Self = StObject.set(x, "CHECKBOX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNORMAL(value: normal_): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRADIO(value: radio_): Self = StObject.set(x, "RADIO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCHECKBOX(value: checkbox_): Self = this.set("CHECKBOX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNORMAL(value: normal_): Self = this.set("NORMAL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRADIO(value: radio_): Self = this.set("RADIO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSEPARATOR(value: separator_): Self = this.set("SEPARATOR", value.asInstanceOf[js.Any])
+    def setSEPARATOR(value: separator_): Self = StObject.set(x, "SEPARATOR", value.asInstanceOf[js.Any])
   }
 }

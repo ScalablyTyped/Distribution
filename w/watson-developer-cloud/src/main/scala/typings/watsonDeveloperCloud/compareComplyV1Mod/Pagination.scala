@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Pagination details, if required by the length of the output. */
 @js.native
-trait Pagination extends js.Object {
+trait Pagination extends StObject {
   
   /** A token identifying the next page of results. */
   var next_cursor: js.UndefOr[String] = js.native
@@ -32,48 +33,36 @@ object Pagination {
   }
   
   @scala.inline
-  implicit class PaginationOps[Self <: Pagination] (val x: Self) extends AnyVal {
+  implicit class PaginationMutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNext_cursor(value: String): Self = StObject.set(x, "next_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext_cursorUndefined: Self = StObject.set(x, "next_cursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNext_url(value: String): Self = StObject.set(x, "next_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_cursor(value: String): Self = this.set("next_cursor", value.asInstanceOf[js.Any])
+    def setNext_urlUndefined: Self = StObject.set(x, "next_url", js.undefined)
     
     @scala.inline
-    def deleteNext_cursor: Self = this.set("next_cursor", js.undefined)
+    def setRefresh_cursor(value: String): Self = StObject.set(x, "refresh_cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext_url(value: String): Self = this.set("next_url", value.asInstanceOf[js.Any])
+    def setRefresh_cursorUndefined: Self = StObject.set(x, "refresh_cursor", js.undefined)
     
     @scala.inline
-    def deleteNext_url: Self = this.set("next_url", js.undefined)
+    def setRefresh_url(value: String): Self = StObject.set(x, "refresh_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh_cursor(value: String): Self = this.set("refresh_cursor", value.asInstanceOf[js.Any])
+    def setRefresh_urlUndefined: Self = StObject.set(x, "refresh_url", js.undefined)
     
     @scala.inline
-    def deleteRefresh_cursor: Self = this.set("refresh_cursor", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefresh_url(value: String): Self = this.set("refresh_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefresh_url: Self = this.set("refresh_url", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

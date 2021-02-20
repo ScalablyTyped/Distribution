@@ -1,11 +1,12 @@
 package typings.knuddelsUserappsApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomMessage extends js.Object {
+trait CustomMessage extends StObject {
   
   var customMessage: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object CustomMessage {
   }
   
   @scala.inline
-  implicit class CustomMessageOps[Self <: CustomMessage] (val x: Self) extends AnyVal {
+  implicit class CustomMessageMutableBuilder[Self <: CustomMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomMessage(value: String): Self = StObject.set(x, "customMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToAccount(value: Boolean): Self = StObject.set(x, "toAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomMessage(value: String): Self = this.set("customMessage", value.asInstanceOf[js.Any])
+    def setToAccountUndefined: Self = StObject.set(x, "toAccount", js.undefined)
     
     @scala.inline
-    def deleteCustomMessage: Self = this.set("customMessage", js.undefined)
+    def setTransferReason(value: String): Self = StObject.set(x, "transferReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToAccount(value: Boolean): Self = this.set("toAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToAccount: Self = this.set("toAccount", js.undefined)
-    
-    @scala.inline
-    def setTransferReason(value: String): Self = this.set("transferReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferReason: Self = this.set("transferReason", js.undefined)
+    def setTransferReasonUndefined: Self = StObject.set(x, "transferReason", js.undefined)
   }
 }

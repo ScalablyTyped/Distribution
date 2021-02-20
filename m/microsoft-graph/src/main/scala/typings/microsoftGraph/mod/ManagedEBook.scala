@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,132 +56,120 @@ object ManagedEBook {
   }
   
   @scala.inline
-  implicit class ManagedEBookOps[Self <: ManagedEBook] (val x: Self) extends AnyVal {
+  implicit class ManagedEBookMutableBuilder[Self <: ManagedEBook] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignments(value: NullableOption[js.Array[ManagedEBookAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
     @scala.inline
-    def setAssignmentsVarargs(value: ManagedEBookAssignment*): Self = this.set("assignments", js.Array(value :_*))
+    def setAssignmentsVarargs(value: ManagedEBookAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
     @scala.inline
-    def setAssignments(value: NullableOption[js.Array[ManagedEBookAssignment]]): Self = this.set("assignments", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignments: Self = this.set("assignments", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setAssignmentsNull: Self = this.set("assignments", null)
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDeviceStates(value: NullableOption[js.Array[DeviceInstallState]]): Self = StObject.set(x, "deviceStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDeviceStatesNull: Self = StObject.set(x, "deviceStates", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
     @scala.inline
-    def setDeviceStatesVarargs(value: DeviceInstallState*): Self = this.set("deviceStates", js.Array(value :_*))
+    def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
     
     @scala.inline
-    def setDeviceStates(value: NullableOption[js.Array[DeviceInstallState]]): Self = this.set("deviceStates", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeviceStates: Self = this.set("deviceStates", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDeviceStatesNull: Self = this.set("deviceStates", null)
+    def setInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "informationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setInformationUrlNull: Self = StObject.set(x, "informationUrl", null)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setInformationUrlUndefined: Self = StObject.set(x, "informationUrl", js.undefined)
     
     @scala.inline
-    def setInformationUrl(value: NullableOption[String]): Self = this.set("informationUrl", value.asInstanceOf[js.Any])
+    def setInstallSummary(value: NullableOption[EBookInstallSummary]): Self = StObject.set(x, "installSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInformationUrl: Self = this.set("informationUrl", js.undefined)
+    def setInstallSummaryNull: Self = StObject.set(x, "installSummary", null)
     
     @scala.inline
-    def setInformationUrlNull: Self = this.set("informationUrl", null)
+    def setInstallSummaryUndefined: Self = StObject.set(x, "installSummary", js.undefined)
     
     @scala.inline
-    def setInstallSummary(value: NullableOption[EBookInstallSummary]): Self = this.set("installSummary", value.asInstanceOf[js.Any])
+    def setLargeCover(value: NullableOption[MimeContent]): Self = StObject.set(x, "largeCover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInstallSummary: Self = this.set("installSummary", js.undefined)
+    def setLargeCoverNull: Self = StObject.set(x, "largeCover", null)
     
     @scala.inline
-    def setInstallSummaryNull: Self = this.set("installSummary", null)
+    def setLargeCoverUndefined: Self = StObject.set(x, "largeCover", js.undefined)
     
     @scala.inline
-    def setLargeCover(value: NullableOption[MimeContent]): Self = this.set("largeCover", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLargeCover: Self = this.set("largeCover", js.undefined)
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def setLargeCoverNull: Self = this.set("largeCover", null)
+    def setPrivacyInformationUrl(value: NullableOption[String]): Self = StObject.set(x, "privacyInformationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setPrivacyInformationUrlNull: Self = StObject.set(x, "privacyInformationUrl", null)
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setPrivacyInformationUrlUndefined: Self = StObject.set(x, "privacyInformationUrl", js.undefined)
     
     @scala.inline
-    def setPrivacyInformationUrl(value: NullableOption[String]): Self = this.set("privacyInformationUrl", value.asInstanceOf[js.Any])
+    def setPublishedDateTime(value: String): Self = StObject.set(x, "publishedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivacyInformationUrl: Self = this.set("privacyInformationUrl", js.undefined)
+    def setPublishedDateTimeUndefined: Self = StObject.set(x, "publishedDateTime", js.undefined)
     
     @scala.inline
-    def setPrivacyInformationUrlNull: Self = this.set("privacyInformationUrl", null)
+    def setPublisher(value: NullableOption[String]): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishedDateTime(value: String): Self = this.set("publishedDateTime", value.asInstanceOf[js.Any])
+    def setPublisherNull: Self = StObject.set(x, "publisher", null)
     
     @scala.inline
-    def deletePublishedDateTime: Self = this.set("publishedDateTime", js.undefined)
+    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     @scala.inline
-    def setPublisher(value: NullableOption[String]): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    def setUserStateSummary(value: NullableOption[js.Array[UserInstallStateSummary]]): Self = StObject.set(x, "userStateSummary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublisher: Self = this.set("publisher", js.undefined)
+    def setUserStateSummaryNull: Self = StObject.set(x, "userStateSummary", null)
     
     @scala.inline
-    def setPublisherNull: Self = this.set("publisher", null)
+    def setUserStateSummaryUndefined: Self = StObject.set(x, "userStateSummary", js.undefined)
     
     @scala.inline
-    def setUserStateSummaryVarargs(value: UserInstallStateSummary*): Self = this.set("userStateSummary", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserStateSummary(value: NullableOption[js.Array[UserInstallStateSummary]]): Self = this.set("userStateSummary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStateSummary: Self = this.set("userStateSummary", js.undefined)
-    
-    @scala.inline
-    def setUserStateSummaryNull: Self = this.set("userStateSummary", null)
+    def setUserStateSummaryVarargs(value: UserInstallStateSummary*): Self = StObject.set(x, "userStateSummary", js.Array(value :_*))
   }
 }

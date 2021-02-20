@@ -4,16 +4,14 @@ import typings.jupyterlabApputils.jupyterlabApputilsStrings.copy
 import typings.jupyterlabApputils.jupyterlabApputilsStrings.cut
 import typings.luminoCoreutils.mod.MimeData
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/apputils/lib/clipboard", JSImport.Namespace)
-@js.native
-object clipboardMod extends js.Object {
+object clipboardMod {
   
-  @js.native
-  object Clipboard extends js.Object {
+  object Clipboard {
     
     /**
       * Copy text to the system clipboard.
@@ -21,6 +19,8 @@ object clipboardMod extends js.Object {
       * #### Notes
       * This can only be called in response to a user input event.
       */
+    @JSImport("@jupyterlab/apputils/lib/clipboard", "Clipboard.copyToSystem")
+    @js.native
     def copyToSystem(clipboardData: ClipboardData): Unit = js.native
     
     /**
@@ -34,20 +34,28 @@ object clipboardMod extends js.Object {
       * #### Notes
       * This can only be called in response to a user input event.
       */
+    @JSImport("@jupyterlab/apputils/lib/clipboard", "Clipboard.generateEvent")
+    @js.native
     def generateEvent(node: HTMLElement): Unit = js.native
-    @JSName("generateEvent")
+    @JSImport("@jupyterlab/apputils/lib/clipboard", "Clipboard.generateEvent")
+    @js.native
     def generateEvent_copy(node: HTMLElement, `type`: copy): Unit = js.native
-    @JSName("generateEvent")
+    @JSImport("@jupyterlab/apputils/lib/clipboard", "Clipboard.generateEvent")
+    @js.native
     def generateEvent_cut(node: HTMLElement, `type`: cut): Unit = js.native
     
     /**
       * Get the application clipboard instance.
       */
+    @JSImport("@jupyterlab/apputils/lib/clipboard", "Clipboard.getInstance")
+    @js.native
     def getInstance(): MimeData = js.native
     
     /**
       * Set the application clipboard instance.
       */
+    @JSImport("@jupyterlab/apputils/lib/clipboard", "Clipboard.setInstance")
+    @js.native
     def setInstance(value: MimeData): Unit = js.native
   }
   

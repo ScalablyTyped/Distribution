@@ -8,21 +8,20 @@ import typings.std.Int32Array
 import typings.std.ReadonlyArray
 import typings.std.Uint16Array
 import typings.std.Uint32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/types", JSImport.Namespace)
-@js.native
-object typesMod extends js.Object {
-  
-  /** @hidden */
-  @js.native
-  trait DeepImmutableArray[T] extends ReadonlyArray[DeepImmutable[T]]
+object typesMod {
   
   type DataArray = js.Array[Double] | ArrayBuffer | ArrayBufferView
   
   type DeepImmutable[T] = DeepImmutableObject[T] | DeepImmutableArray[js.Any] | T
+  
+  /** @hidden */
+  @js.native
+  trait DeepImmutableArray[T] extends ReadonlyArray[DeepImmutable[T]]
   
   type DeepImmutableObject[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: babylonjs.babylonjs/types.DeepImmutable<T[K]>}

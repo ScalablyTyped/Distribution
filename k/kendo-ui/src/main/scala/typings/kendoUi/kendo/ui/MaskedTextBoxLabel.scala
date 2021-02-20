@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaskedTextBoxLabel extends js.Object {
+trait MaskedTextBoxLabel extends StObject {
   
   var content: js.UndefOr[String | js.Function] = js.native
   
@@ -20,30 +21,18 @@ object MaskedTextBoxLabel {
   }
   
   @scala.inline
-  implicit class MaskedTextBoxLabelOps[Self <: MaskedTextBoxLabel] (val x: Self) extends AnyVal {
+  implicit class MaskedTextBoxLabelMutableBuilder[Self <: MaskedTextBoxLabel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String | js.Function): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setFloating(value: Boolean): Self = this.set("floating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloating: Self = this.set("floating", js.undefined)
+    def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
   }
 }

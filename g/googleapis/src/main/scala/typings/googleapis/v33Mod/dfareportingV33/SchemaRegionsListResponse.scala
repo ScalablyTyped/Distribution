@@ -1,5 +1,6 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Region List Response
   */
 @js.native
-trait SchemaRegionsListResponse extends js.Object {
+trait SchemaRegionsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
@@ -30,33 +31,21 @@ object SchemaRegionsListResponse {
   }
   
   @scala.inline
-  implicit class SchemaRegionsListResponseOps[Self <: SchemaRegionsListResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaRegionsListResponseMutableBuilder[Self <: SchemaRegionsListResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegions(value: js.Array[SchemaRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
-    
-    @scala.inline
-    def setRegionsVarargs(value: SchemaRegion*): Self = this.set("regions", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegions(value: js.Array[SchemaRegion]): Self = this.set("regions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegions: Self = this.set("regions", js.undefined)
+    def setRegionsVarargs(value: SchemaRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

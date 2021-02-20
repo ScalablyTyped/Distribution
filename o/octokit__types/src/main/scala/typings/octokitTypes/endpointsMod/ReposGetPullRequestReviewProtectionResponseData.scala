@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.Teams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReposGetPullRequestReviewProtectionResponseData extends js.Object {
+trait ReposGetPullRequestReviewProtectionResponseData extends StObject {
   
   var dismiss_stale_reviews: Boolean = js.native
   
@@ -33,33 +34,21 @@ object ReposGetPullRequestReviewProtectionResponseData {
   }
   
   @scala.inline
-  implicit class ReposGetPullRequestReviewProtectionResponseDataOps[Self <: ReposGetPullRequestReviewProtectionResponseData] (val x: Self) extends AnyVal {
+  implicit class ReposGetPullRequestReviewProtectionResponseDataMutableBuilder[Self <: ReposGetPullRequestReviewProtectionResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDismiss_stale_reviews(value: Boolean): Self = StObject.set(x, "dismiss_stale_reviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDismissal_restrictions(value: Teams): Self = StObject.set(x, "dismissal_restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismiss_stale_reviews(value: Boolean): Self = this.set("dismiss_stale_reviews", value.asInstanceOf[js.Any])
+    def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissal_restrictions(value: Teams): Self = this.set("dismissal_restrictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequire_code_owner_reviews(value: Boolean): Self = this.set("require_code_owner_reviews", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequired_approving_review_count(value: Double): Self = this.set("required_approving_review_count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

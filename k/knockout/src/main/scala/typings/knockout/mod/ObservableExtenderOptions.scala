@@ -3,13 +3,14 @@ package typings.knockout.mod
 import typings.knockout.knockoutBooleans.`true`
 import typings.knockout.knockoutStrings.always
 import typings.knockout.mod.utils.CompareArraysOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<knockout.knockout.ExtendersOptions<T>> */
 @js.native
-trait ObservableExtenderOptions[T] extends js.Object {
+trait ObservableExtenderOptions[T] extends StObject {
   
   var deferred: js.UndefOr[`true`] = js.native
   
@@ -31,48 +32,36 @@ object ObservableExtenderOptions {
   }
   
   @scala.inline
-  implicit class ObservableExtenderOptionsOps[Self <: ObservableExtenderOptions[_], T] (val x: Self with ObservableExtenderOptions[T]) extends AnyVal {
+  implicit class ObservableExtenderOptionsMutableBuilder[Self <: ObservableExtenderOptions[_], T] (val x: Self with ObservableExtenderOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferred(value: `true`): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotify_(value: always | js.Any): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferred(value: `true`): Self = this.set("deferred", value.asInstanceOf[js.Any])
+    def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
     
     @scala.inline
-    def deleteDeferred: Self = this.set("deferred", js.undefined)
+    def setRateLimit(value: Double | RateLimitOptions): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotify(value: always | js.Any): Self = this.set("notify", value.asInstanceOf[js.Any])
+    def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
     
     @scala.inline
-    def deleteNotify: Self = this.set("notify", js.undefined)
+    def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateLimit(value: Double | RateLimitOptions): Self = this.set("rateLimit", value.asInstanceOf[js.Any])
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
     
     @scala.inline
-    def deleteRateLimit: Self = this.set("rateLimit", js.undefined)
+    def setTrackArrayChanges(value: `true` | CompareArraysOptions): Self = StObject.set(x, "trackArrayChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThrottle(value: Double): Self = this.set("throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
-    
-    @scala.inline
-    def setTrackArrayChanges(value: `true` | CompareArraysOptions): Self = this.set("trackArrayChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackArrayChanges: Self = this.set("trackArrayChanges", js.undefined)
+    def setTrackArrayChangesUndefined: Self = StObject.set(x, "trackArrayChanges", js.undefined)
   }
 }

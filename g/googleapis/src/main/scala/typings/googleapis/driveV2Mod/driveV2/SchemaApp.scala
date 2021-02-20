@@ -1,6 +1,7 @@
 package typings.googleapis.driveV2Mod.driveV2
 
 import typings.googleapis.anon.Category
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * extensions, and other details.
   */
 @js.native
-trait SchemaApp extends js.Object {
+trait SchemaApp extends StObject {
   
   /**
     * Whether the app is authorized to access data on the user&#39;s Drive.
@@ -149,177 +150,165 @@ object SchemaApp {
   }
   
   @scala.inline
-  implicit class SchemaAppOps[Self <: SchemaApp] (val x: Self) extends AnyVal {
+  implicit class SchemaAppMutableBuilder[Self <: SchemaApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorized(value: Boolean): Self = StObject.set(x, "authorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizedUndefined: Self = StObject.set(x, "authorized", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateInFolderTemplate(value: String): Self = StObject.set(x, "createInFolderTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorized(value: Boolean): Self = this.set("authorized", value.asInstanceOf[js.Any])
+    def setCreateInFolderTemplateUndefined: Self = StObject.set(x, "createInFolderTemplate", js.undefined)
     
     @scala.inline
-    def deleteAuthorized: Self = this.set("authorized", js.undefined)
+    def setCreateUrl(value: String): Self = StObject.set(x, "createUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateInFolderTemplate(value: String): Self = this.set("createInFolderTemplate", value.asInstanceOf[js.Any])
+    def setCreateUrlUndefined: Self = StObject.set(x, "createUrl", js.undefined)
     
     @scala.inline
-    def deleteCreateInFolderTemplate: Self = this.set("createInFolderTemplate", js.undefined)
+    def setHasDriveWideScope(value: Boolean): Self = StObject.set(x, "hasDriveWideScope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateUrl(value: String): Self = this.set("createUrl", value.asInstanceOf[js.Any])
+    def setHasDriveWideScopeUndefined: Self = StObject.set(x, "hasDriveWideScope", js.undefined)
     
     @scala.inline
-    def deleteCreateUrl: Self = this.set("createUrl", js.undefined)
+    def setIcons(value: js.Array[Category]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDriveWideScope(value: Boolean): Self = this.set("hasDriveWideScope", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteHasDriveWideScope: Self = this.set("hasDriveWideScope", js.undefined)
+    def setIconsVarargs(value: Category*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
     @scala.inline
-    def setIconsVarargs(value: Category*): Self = this.set("icons", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: js.Array[Category]): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setInstalled(value: Boolean): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInstalledUndefined: Self = StObject.set(x, "installed", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstalled(value: Boolean): Self = this.set("installed", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInstalled: Self = this.set("installed", js.undefined)
+    def setLongDescription(value: String): Self = StObject.set(x, "longDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLongDescriptionUndefined: Self = StObject.set(x, "longDescription", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongDescription(value: String): Self = this.set("longDescription", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLongDescription: Self = this.set("longDescription", js.undefined)
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOpenUrlTemplate(value: String): Self = StObject.set(x, "openUrlTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setOpenUrlTemplateUndefined: Self = StObject.set(x, "openUrlTemplate", js.undefined)
     
     @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    def setPrimaryFileExtensions(value: js.Array[String]): Self = StObject.set(x, "primaryFileExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenUrlTemplate(value: String): Self = this.set("openUrlTemplate", value.asInstanceOf[js.Any])
+    def setPrimaryFileExtensionsUndefined: Self = StObject.set(x, "primaryFileExtensions", js.undefined)
     
     @scala.inline
-    def deleteOpenUrlTemplate: Self = this.set("openUrlTemplate", js.undefined)
+    def setPrimaryFileExtensionsVarargs(value: String*): Self = StObject.set(x, "primaryFileExtensions", js.Array(value :_*))
     
     @scala.inline
-    def setPrimaryFileExtensionsVarargs(value: String*): Self = this.set("primaryFileExtensions", js.Array(value :_*))
+    def setPrimaryMimeTypes(value: js.Array[String]): Self = StObject.set(x, "primaryMimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryFileExtensions(value: js.Array[String]): Self = this.set("primaryFileExtensions", value.asInstanceOf[js.Any])
+    def setPrimaryMimeTypesUndefined: Self = StObject.set(x, "primaryMimeTypes", js.undefined)
     
     @scala.inline
-    def deletePrimaryFileExtensions: Self = this.set("primaryFileExtensions", js.undefined)
+    def setPrimaryMimeTypesVarargs(value: String*): Self = StObject.set(x, "primaryMimeTypes", js.Array(value :_*))
     
     @scala.inline
-    def setPrimaryMimeTypesVarargs(value: String*): Self = this.set("primaryMimeTypes", js.Array(value :_*))
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryMimeTypes(value: js.Array[String]): Self = this.set("primaryMimeTypes", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deletePrimaryMimeTypes: Self = this.set("primaryMimeTypes", js.undefined)
+    def setProductUrl(value: String): Self = StObject.set(x, "productUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    def setProductUrlUndefined: Self = StObject.set(x, "productUrl", js.undefined)
     
     @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
+    def setSecondaryFileExtensions(value: js.Array[String]): Self = StObject.set(x, "secondaryFileExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductUrl(value: String): Self = this.set("productUrl", value.asInstanceOf[js.Any])
+    def setSecondaryFileExtensionsUndefined: Self = StObject.set(x, "secondaryFileExtensions", js.undefined)
     
     @scala.inline
-    def deleteProductUrl: Self = this.set("productUrl", js.undefined)
+    def setSecondaryFileExtensionsVarargs(value: String*): Self = StObject.set(x, "secondaryFileExtensions", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryFileExtensionsVarargs(value: String*): Self = this.set("secondaryFileExtensions", js.Array(value :_*))
+    def setSecondaryMimeTypes(value: js.Array[String]): Self = StObject.set(x, "secondaryMimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryFileExtensions(value: js.Array[String]): Self = this.set("secondaryFileExtensions", value.asInstanceOf[js.Any])
+    def setSecondaryMimeTypesUndefined: Self = StObject.set(x, "secondaryMimeTypes", js.undefined)
     
     @scala.inline
-    def deleteSecondaryFileExtensions: Self = this.set("secondaryFileExtensions", js.undefined)
+    def setSecondaryMimeTypesVarargs(value: String*): Self = StObject.set(x, "secondaryMimeTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSecondaryMimeTypesVarargs(value: String*): Self = this.set("secondaryMimeTypes", js.Array(value :_*))
+    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryMimeTypes(value: js.Array[String]): Self = this.set("secondaryMimeTypes", value.asInstanceOf[js.Any])
+    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
     
     @scala.inline
-    def deleteSecondaryMimeTypes: Self = this.set("secondaryMimeTypes", js.undefined)
+    def setSupportsCreate(value: Boolean): Self = StObject.set(x, "supportsCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortDescription(value: String): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
+    def setSupportsCreateUndefined: Self = StObject.set(x, "supportsCreate", js.undefined)
     
     @scala.inline
-    def deleteShortDescription: Self = this.set("shortDescription", js.undefined)
+    def setSupportsImport(value: Boolean): Self = StObject.set(x, "supportsImport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsCreate(value: Boolean): Self = this.set("supportsCreate", value.asInstanceOf[js.Any])
+    def setSupportsImportUndefined: Self = StObject.set(x, "supportsImport", js.undefined)
     
     @scala.inline
-    def deleteSupportsCreate: Self = this.set("supportsCreate", js.undefined)
+    def setSupportsMultiOpen(value: Boolean): Self = StObject.set(x, "supportsMultiOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsImport(value: Boolean): Self = this.set("supportsImport", value.asInstanceOf[js.Any])
+    def setSupportsMultiOpenUndefined: Self = StObject.set(x, "supportsMultiOpen", js.undefined)
     
     @scala.inline
-    def deleteSupportsImport: Self = this.set("supportsImport", js.undefined)
+    def setSupportsOfflineCreate(value: Boolean): Self = StObject.set(x, "supportsOfflineCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsMultiOpen(value: Boolean): Self = this.set("supportsMultiOpen", value.asInstanceOf[js.Any])
+    def setSupportsOfflineCreateUndefined: Self = StObject.set(x, "supportsOfflineCreate", js.undefined)
     
     @scala.inline
-    def deleteSupportsMultiOpen: Self = this.set("supportsMultiOpen", js.undefined)
+    def setUseByDefault(value: Boolean): Self = StObject.set(x, "useByDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsOfflineCreate(value: Boolean): Self = this.set("supportsOfflineCreate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsOfflineCreate: Self = this.set("supportsOfflineCreate", js.undefined)
-    
-    @scala.inline
-    def setUseByDefault(value: Boolean): Self = this.set("useByDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseByDefault: Self = this.set("useByDefault", js.undefined)
+    def setUseByDefaultUndefined: Self = StObject.set(x, "useByDefault", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,7 +73,7 @@ object KmlLod {
   def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
-    equals: KmlObject => Boolean,
+    equals_ : KmlObject => Boolean,
     getId: () => String,
     getMaxFadeExtent: () => Double,
     getMaxLodPixels: () => Double,
@@ -94,50 +95,39 @@ object KmlLod {
     setMinFadeExtent: Double => Unit,
     setMinLodPixels: Double => Unit
   ): KmlLod = {
-    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), equals = js.Any.fromFunction1(equals), getId = js.Any.fromFunction0(getId), getMaxFadeExtent = js.Any.fromFunction0(getMaxFadeExtent), getMaxLodPixels = js.Any.fromFunction0(getMaxLodPixels), getMinFadeExtent = js.Any.fromFunction0(getMinFadeExtent), getMinLodPixels = js.Any.fromFunction0(getMinLodPixels), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction4(set), setMaxFadeExtent = js.Any.fromFunction1(setMaxFadeExtent), setMaxLodPixels = js.Any.fromFunction1(setMaxLodPixels), setMinFadeExtent = js.Any.fromFunction1(setMinFadeExtent), setMinLodPixels = js.Any.fromFunction1(setMinLodPixels))
+    val __obj = js.Dynamic.literal(click = js.Any.fromFunction1(click), dblclick = js.Any.fromFunction1(dblclick), getId = js.Any.fromFunction0(getId), getMaxFadeExtent = js.Any.fromFunction0(getMaxFadeExtent), getMaxLodPixels = js.Any.fromFunction0(getMaxLodPixels), getMinFadeExtent = js.Any.fromFunction0(getMinFadeExtent), getMinLodPixels = js.Any.fromFunction0(getMinLodPixels), getOwnerDocument = js.Any.fromFunction0(getOwnerDocument), getParentNode = js.Any.fromFunction0(getParentNode), getType = js.Any.fromFunction0(getType), getUrl = js.Any.fromFunction0(getUrl), mousedown = js.Any.fromFunction1(mousedown), mousemove = js.Any.fromFunction1(mousemove), mouseout = js.Any.fromFunction1(mouseout), mouseover = js.Any.fromFunction1(mouseover), mouseup = js.Any.fromFunction1(mouseup), release = js.Any.fromFunction0(release), set = js.Any.fromFunction4(set), setMaxFadeExtent = js.Any.fromFunction1(setMaxFadeExtent), setMaxLodPixels = js.Any.fromFunction1(setMaxLodPixels), setMinFadeExtent = js.Any.fromFunction1(setMinFadeExtent), setMinLodPixels = js.Any.fromFunction1(setMinLodPixels))
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[KmlLod]
   }
   
   @scala.inline
-  implicit class KmlLodOps[Self <: KmlLod] (val x: Self) extends AnyVal {
+  implicit class KmlLodMutableBuilder[Self <: KmlLod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMaxFadeExtent(value: () => Double): Self = StObject.set(x, "getMaxFadeExtent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMaxLodPixels(value: () => Double): Self = StObject.set(x, "getMaxLodPixels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMinFadeExtent(value: () => Double): Self = StObject.set(x, "getMinFadeExtent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxFadeExtent(value: () => Double): Self = this.set("getMaxFadeExtent", js.Any.fromFunction0(value))
+    def setGetMinLodPixels(value: () => Double): Self = StObject.set(x, "getMinLodPixels", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxLodPixels(value: () => Double): Self = this.set("getMaxLodPixels", js.Any.fromFunction0(value))
+    def setSet(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetMinFadeExtent(value: () => Double): Self = this.set("getMinFadeExtent", js.Any.fromFunction0(value))
+    def setSetMaxFadeExtent(value: Double => Unit): Self = StObject.set(x, "setMaxFadeExtent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMinLodPixels(value: () => Double): Self = this.set("getMinLodPixels", js.Any.fromFunction0(value))
+    def setSetMaxLodPixels(value: Double => Unit): Self = StObject.set(x, "setMaxLodPixels", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (Double, Double, Double, Double) => Unit): Self = this.set("set", js.Any.fromFunction4(value))
+    def setSetMinFadeExtent(value: Double => Unit): Self = StObject.set(x, "setMinFadeExtent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMaxFadeExtent(value: Double => Unit): Self = this.set("setMaxFadeExtent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMaxLodPixels(value: Double => Unit): Self = this.set("setMaxLodPixels", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinFadeExtent(value: Double => Unit): Self = this.set("setMinFadeExtent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMinLodPixels(value: Double => Unit): Self = this.set("setMinLodPixels", js.Any.fromFunction1(value))
+    def setSetMinLodPixels(value: Double => Unit): Self = StObject.set(x, "setMinLodPixels", js.Any.fromFunction1(value))
   }
 }

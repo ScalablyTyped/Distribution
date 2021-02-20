@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetSegmentDetectionResponse extends js.Object {
+trait GetSegmentDetectionResponse extends StObject {
   
   /**
     * An array of objects. There can be multiple audio streams. Each AudioMetadata object contains metadata for a single audio stream. Audio information in an AudioMetadata objects includes the audio codec, the number of audio channels, the duration of the audio stream, and the sample rate. Audio metadata is returned in each page of information returned by GetSegmentDetection.
@@ -51,72 +52,60 @@ object GetSegmentDetectionResponse {
   }
   
   @scala.inline
-  implicit class GetSegmentDetectionResponseOps[Self <: GetSegmentDetectionResponse] (val x: Self) extends AnyVal {
+  implicit class GetSegmentDetectionResponseMutableBuilder[Self <: GetSegmentDetectionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioMetadata(value: AudioMetadataList): Self = StObject.set(x, "AudioMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioMetadataUndefined: Self = StObject.set(x, "AudioMetadata", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioMetadataVarargs(value: AudioMetadata*): Self = StObject.set(x, "AudioMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setAudioMetadataVarargs(value: AudioMetadata*): Self = this.set("AudioMetadata", js.Array(value :_*))
+    def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioMetadata(value: AudioMetadataList): Self = this.set("AudioMetadata", value.asInstanceOf[js.Any])
+    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
     @scala.inline
-    def deleteAudioMetadata: Self = this.set("AudioMetadata", js.undefined)
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: VideoJobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    def setSegments(value: SegmentDetections): Self = StObject.set(x, "Segments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSegmentsVarargs(value: SegmentDetection*): Self = StObject.set(x, "Segments", js.Array(value :_*))
     
     @scala.inline
-    def setSegmentsVarargs(value: SegmentDetection*): Self = this.set("Segments", js.Array(value :_*))
+    def setSelectedSegmentTypes(value: SegmentTypesInfo): Self = StObject.set(x, "SelectedSegmentTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegments(value: SegmentDetections): Self = this.set("Segments", value.asInstanceOf[js.Any])
+    def setSelectedSegmentTypesUndefined: Self = StObject.set(x, "SelectedSegmentTypes", js.undefined)
     
     @scala.inline
-    def deleteSegments: Self = this.set("Segments", js.undefined)
+    def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = StObject.set(x, "SelectedSegmentTypes", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = this.set("SelectedSegmentTypes", js.Array(value :_*))
+    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedSegmentTypes(value: SegmentTypesInfo): Self = this.set("SelectedSegmentTypes", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteSelectedSegmentTypes: Self = this.set("SelectedSegmentTypes", js.undefined)
+    def setVideoMetadata(value: VideoMetadataList): Self = StObject.set(x, "VideoMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setVideoMetadataUndefined: Self = StObject.set(x, "VideoMetadata", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
-    
-    @scala.inline
-    def setVideoMetadataVarargs(value: VideoMetadata*): Self = this.set("VideoMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideoMetadata(value: VideoMetadataList): Self = this.set("VideoMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoMetadata: Self = this.set("VideoMetadata", js.undefined)
+    def setVideoMetadataVarargs(value: VideoMetadata*): Self = StObject.set(x, "VideoMetadata", js.Array(value :_*))
   }
 }

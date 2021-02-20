@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.lb
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenerRuleConditionHttpHeader extends js.Object {
+trait ListenerRuleConditionHttpHeader extends StObject {
   
   /**
     * Name of HTTP header to search. The maximum size is 40 characters. Comparison is case insensitive. Only RFC7240 characters are supported. Wildcards are not supported. You cannot use HTTP header condition to specify the host header, use a `host-header` condition instead.
@@ -27,27 +28,15 @@ object ListenerRuleConditionHttpHeader {
   }
   
   @scala.inline
-  implicit class ListenerRuleConditionHttpHeaderOps[Self <: ListenerRuleConditionHttpHeader] (val x: Self) extends AnyVal {
+  implicit class ListenerRuleConditionHttpHeaderMutableBuilder[Self <: ListenerRuleConditionHttpHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpHeaderName(value: Input[String]): Self = StObject.set(x, "httpHeaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHttpHeaderName(value: Input[String]): Self = this.set("httpHeaderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: Input[String]*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: Input[js.Array[Input[String]]]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: Input[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

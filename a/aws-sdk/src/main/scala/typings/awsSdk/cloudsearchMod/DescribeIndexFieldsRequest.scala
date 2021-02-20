@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIndexFieldsRequest extends js.Object {
+trait DescribeIndexFieldsRequest extends StObject {
   
   /**
     * Whether to display the deployed configuration (true) or include any pending changes (false). Defaults to false.
@@ -31,36 +32,24 @@ object DescribeIndexFieldsRequest {
   }
   
   @scala.inline
-  implicit class DescribeIndexFieldsRequestOps[Self <: DescribeIndexFieldsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeIndexFieldsRequestMutableBuilder[Self <: DescribeIndexFieldsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setFieldNames(value: DynamicFieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployed(value: Boolean): Self = this.set("Deployed", value.asInstanceOf[js.Any])
+    def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
     
     @scala.inline
-    def deleteDeployed: Self = this.set("Deployed", js.undefined)
-    
-    @scala.inline
-    def setFieldNamesVarargs(value: DynamicFieldName*): Self = this.set("FieldNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setFieldNames(value: DynamicFieldNameList): Self = this.set("FieldNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFieldNames: Self = this.set("FieldNames", js.undefined)
+    def setFieldNamesVarargs(value: DynamicFieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
   }
 }

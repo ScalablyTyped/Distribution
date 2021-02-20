@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliverabilityTestReport extends js.Object {
+trait DeliverabilityTestReport extends StObject {
   
   /**
     * The date and time when the predictive inbox placement test was created, in Unix time format.
@@ -46,54 +47,42 @@ object DeliverabilityTestReport {
   }
   
   @scala.inline
-  implicit class DeliverabilityTestReportOps[Self <: DeliverabilityTestReport] (val x: Self) extends AnyVal {
+  implicit class DeliverabilityTestReportMutableBuilder[Self <: DeliverabilityTestReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeliverabilityTestStatus(value: DeliverabilityTestStatus): Self = StObject.set(x, "DeliverabilityTestStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setDeliverabilityTestStatusUndefined: Self = StObject.set(x, "DeliverabilityTestStatus", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setFromEmailAddress(value: EmailAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliverabilityTestStatus(value: DeliverabilityTestStatus): Self = this.set("DeliverabilityTestStatus", value.asInstanceOf[js.Any])
+    def setFromEmailAddressUndefined: Self = StObject.set(x, "FromEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteDeliverabilityTestStatus: Self = this.set("DeliverabilityTestStatus", js.undefined)
+    def setReportId(value: ReportId): Self = StObject.set(x, "ReportId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromEmailAddress(value: EmailAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    def setReportIdUndefined: Self = StObject.set(x, "ReportId", js.undefined)
     
     @scala.inline
-    def deleteFromEmailAddress: Self = this.set("FromEmailAddress", js.undefined)
+    def setReportName(value: ReportName): Self = StObject.set(x, "ReportName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportId(value: ReportId): Self = this.set("ReportId", value.asInstanceOf[js.Any])
+    def setReportNameUndefined: Self = StObject.set(x, "ReportName", js.undefined)
     
     @scala.inline
-    def deleteReportId: Self = this.set("ReportId", js.undefined)
+    def setSubject(value: DeliverabilityTestSubject): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportName(value: ReportName): Self = this.set("ReportName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportName: Self = this.set("ReportName", js.undefined)
-    
-    @scala.inline
-    def setSubject(value: DeliverabilityTestSubject): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("Subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
   }
 }

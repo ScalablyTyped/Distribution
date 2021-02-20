@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHsmResponse extends js.Object {
+trait DescribeHsmResponse extends StObject {
   
   /**
     * The Availability Zone that the HSM is in.
@@ -118,147 +119,135 @@ object DescribeHsmResponse {
   }
   
   @scala.inline
-  implicit class DescribeHsmResponseOps[Self <: DescribeHsmResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeHsmResponseMutableBuilder[Self <: DescribeHsmResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: AZ): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEniId(value: EniId): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: AZ): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setEniIdUndefined: Self = StObject.set(x, "EniId", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setEniIp(value: IpAddress): Self = StObject.set(x, "EniIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEniId(value: EniId): Self = this.set("EniId", value.asInstanceOf[js.Any])
+    def setEniIpUndefined: Self = StObject.set(x, "EniIp", js.undefined)
     
     @scala.inline
-    def deleteEniId: Self = this.set("EniId", js.undefined)
+    def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEniIp(value: IpAddress): Self = this.set("EniIp", value.asInstanceOf[js.Any])
+    def setHsmArnUndefined: Self = StObject.set(x, "HsmArn", js.undefined)
     
     @scala.inline
-    def deleteEniIp: Self = this.set("EniIp", js.undefined)
+    def setHsmType(value: String): Self = StObject.set(x, "HsmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmArn(value: HsmArn): Self = this.set("HsmArn", value.asInstanceOf[js.Any])
+    def setHsmTypeUndefined: Self = StObject.set(x, "HsmType", js.undefined)
     
     @scala.inline
-    def deleteHsmArn: Self = this.set("HsmArn", js.undefined)
+    def setIamRoleArn(value: IamRoleArn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmType(value: String): Self = this.set("HsmType", value.asInstanceOf[js.Any])
+    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
     @scala.inline
-    def deleteHsmType: Self = this.set("HsmType", js.undefined)
+    def setPartitions(value: PartitionList): Self = StObject.set(x, "Partitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRoleArn(value: IamRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
     @scala.inline
-    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    def setPartitionsVarargs(value: PartitionArn*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
     
     @scala.inline
-    def setPartitionsVarargs(value: PartitionArn*): Self = this.set("Partitions", js.Array(value :_*))
+    def setSerialNumber(value: HsmSerialNumber): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitions(value: PartitionList): Self = this.set("Partitions", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
     @scala.inline
-    def deletePartitions: Self = this.set("Partitions", js.undefined)
+    def setServerCertLastUpdated(value: Timestamp): Self = StObject.set(x, "ServerCertLastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: HsmSerialNumber): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setServerCertLastUpdatedUndefined: Self = StObject.set(x, "ServerCertLastUpdated", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    def setServerCertUri(value: String): Self = StObject.set(x, "ServerCertUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertLastUpdated(value: Timestamp): Self = this.set("ServerCertLastUpdated", value.asInstanceOf[js.Any])
+    def setServerCertUriUndefined: Self = StObject.set(x, "ServerCertUri", js.undefined)
     
     @scala.inline
-    def deleteServerCertLastUpdated: Self = this.set("ServerCertLastUpdated", js.undefined)
+    def setSoftwareVersion(value: String): Self = StObject.set(x, "SoftwareVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerCertUri(value: String): Self = this.set("ServerCertUri", value.asInstanceOf[js.Any])
+    def setSoftwareVersionUndefined: Self = StObject.set(x, "SoftwareVersion", js.undefined)
     
     @scala.inline
-    def deleteServerCertUri: Self = this.set("ServerCertUri", js.undefined)
+    def setSshKeyLastUpdated(value: Timestamp): Self = StObject.set(x, "SshKeyLastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftwareVersion(value: String): Self = this.set("SoftwareVersion", value.asInstanceOf[js.Any])
+    def setSshKeyLastUpdatedUndefined: Self = StObject.set(x, "SshKeyLastUpdated", js.undefined)
     
     @scala.inline
-    def deleteSoftwareVersion: Self = this.set("SoftwareVersion", js.undefined)
+    def setSshPublicKey(value: SshKey): Self = StObject.set(x, "SshPublicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshKeyLastUpdated(value: Timestamp): Self = this.set("SshKeyLastUpdated", value.asInstanceOf[js.Any])
+    def setSshPublicKeyUndefined: Self = StObject.set(x, "SshPublicKey", js.undefined)
     
     @scala.inline
-    def deleteSshKeyLastUpdated: Self = this.set("SshKeyLastUpdated", js.undefined)
+    def setStatus(value: HsmStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSshPublicKey(value: SshKey): Self = this.set("SshPublicKey", value.asInstanceOf[js.Any])
+    def setStatusDetails(value: String): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSshPublicKey: Self = this.set("SshPublicKey", js.undefined)
+    def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
     @scala.inline
-    def setStatus(value: HsmStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusDetails(value: String): Self = this.set("StatusDetails", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "SubnetId", js.undefined)
     
     @scala.inline
-    def deleteStatusDetails: Self = this.set("StatusDetails", js.undefined)
+    def setSubscriptionEndDate(value: Timestamp): Self = StObject.set(x, "SubscriptionEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    def setSubscriptionEndDateUndefined: Self = StObject.set(x, "SubscriptionEndDate", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    def setSubscriptionStartDate(value: Timestamp): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionEndDate(value: Timestamp): Self = this.set("SubscriptionEndDate", value.asInstanceOf[js.Any])
+    def setSubscriptionStartDateUndefined: Self = StObject.set(x, "SubscriptionStartDate", js.undefined)
     
     @scala.inline
-    def deleteSubscriptionEndDate: Self = this.set("SubscriptionEndDate", js.undefined)
+    def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionStartDate(value: Timestamp): Self = this.set("SubscriptionStartDate", value.asInstanceOf[js.Any])
+    def setSubscriptionTypeUndefined: Self = StObject.set(x, "SubscriptionType", js.undefined)
     
     @scala.inline
-    def deleteSubscriptionStartDate: Self = this.set("SubscriptionStartDate", js.undefined)
+    def setVendorName(value: String): Self = StObject.set(x, "VendorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionType(value: SubscriptionType): Self = this.set("SubscriptionType", value.asInstanceOf[js.Any])
+    def setVendorNameUndefined: Self = StObject.set(x, "VendorName", js.undefined)
     
     @scala.inline
-    def deleteSubscriptionType: Self = this.set("SubscriptionType", js.undefined)
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVendorName(value: String): Self = this.set("VendorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVendorName: Self = this.set("VendorName", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

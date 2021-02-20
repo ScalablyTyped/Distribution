@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.awt.grid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.3
   */
 @js.native
-trait XGridControl extends js.Object {
+trait XGridControl extends StObject {
   
   /**
     * returns the column index of the currently active cell
@@ -86,39 +87,27 @@ object XGridControl {
   }
   
   @scala.inline
-  implicit class XGridControlOps[Self <: XGridControl] (val x: Self) extends AnyVal {
+  implicit class XGridControlMutableBuilder[Self <: XGridControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentColumn(value: Double): Self = StObject.set(x, "CurrentColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentRow(value: Double): Self = StObject.set(x, "CurrentRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetColumnAtPoint(value: (Double, Double) => Double): Self = StObject.set(x, "getColumnAtPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCurrentColumn(value: Double): Self = this.set("CurrentColumn", value.asInstanceOf[js.Any])
+    def setGetCurrentColumn(value: () => Double): Self = StObject.set(x, "getCurrentColumn", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCurrentRow(value: Double): Self = this.set("CurrentRow", value.asInstanceOf[js.Any])
+    def setGetCurrentRow(value: () => Double): Self = StObject.set(x, "getCurrentRow", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColumnAtPoint(value: (Double, Double) => Double): Self = this.set("getColumnAtPoint", js.Any.fromFunction2(value))
+    def setGetRowAtPoint(value: (Double, Double) => Double): Self = StObject.set(x, "getRowAtPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCurrentColumn(value: () => Double): Self = this.set("getCurrentColumn", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetCurrentRow(value: () => Double): Self = this.set("getCurrentRow", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRowAtPoint(value: (Double, Double) => Double): Self = this.set("getRowAtPoint", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGoToCell(value: (Double, Double) => Unit): Self = this.set("goToCell", js.Any.fromFunction2(value))
+    def setGoToCell(value: (Double, Double) => Unit): Self = StObject.set(x, "goToCell", js.Any.fromFunction2(value))
   }
 }

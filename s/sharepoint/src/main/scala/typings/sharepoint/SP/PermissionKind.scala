@@ -1,15 +1,16 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PermissionKind extends js.Object
+sealed trait PermissionKind extends StObject
 /** Specifies permissions that are used to define user roles. Represents SPBasePermissions class. */
 @JSGlobal("SP.PermissionKind")
 @js.native
-object PermissionKind extends js.Object {
+object PermissionKind extends StObject {
   
   /** Add, change, or delete HTML pages or Web Part Pages, and edit the Web site using a SharePoint Foundation?compatible editor. */
   @js.native

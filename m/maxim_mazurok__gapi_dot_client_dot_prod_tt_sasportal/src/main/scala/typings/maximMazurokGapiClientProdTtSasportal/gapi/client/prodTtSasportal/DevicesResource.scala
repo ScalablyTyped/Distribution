@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientProdTtSasportal.anon.PrettyPrint
 import typings.maximMazurokGapiClientProdTtSasportal.anon.QuotaUser
 import typings.maximMazurokGapiClientProdTtSasportal.anon.Resource
 import typings.maximMazurokGapiClientProdTtSasportal.anon.UploadType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevicesResource extends js.Object {
+trait DevicesResource extends StObject {
   
   def bulk(request: Alt, body: SasPortalBulkCreateDeviceRequest): Request[SasPortalBulkCreateDeviceResponse] = js.native
   /** Creates a device under a node or customer. Returned devices are unordered. */

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class PointerVisualizationSettings ()
   extends typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings
-/* static members */
-@JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
-@js.native
-object PointerVisualizationSettings extends js.Object {
+object PointerVisualizationSettings {
   
   /**
     * Gets a PointerVisualizationSettings object associated with the current app.
     * @return The PointerVisualizationSettings object associated with the current app.
     */
+  /* static member */
+  @JSGlobal("Windows.UI.Input.PointerVisualizationSettings.getForCurrentView")
+  @js.native
   def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings = js.native
 }

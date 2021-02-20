@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientListMetadata extends js.Object {
+trait RecipientListMetadata extends StObject {
   
   var id: String = js.native
   
@@ -24,30 +25,18 @@ object RecipientListMetadata {
   }
   
   @scala.inline
-  implicit class RecipientListMetadataOps[Self <: RecipientListMetadata] (val x: Self) extends AnyVal {
+  implicit class RecipientListMetadataMutableBuilder[Self <: RecipientListMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotal_accepted_recipients(value: Double): Self = StObject.set(x, "total_accepted_recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_accepted_recipients(value: Double): Self = this.set("total_accepted_recipients", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal_rejected_recipients(value: Double): Self = this.set("total_rejected_recipients", value.asInstanceOf[js.Any])
+    def setTotal_rejected_recipients(value: Double): Self = StObject.set(x, "total_rejected_recipients", value.asInstanceOf[js.Any])
   }
 }

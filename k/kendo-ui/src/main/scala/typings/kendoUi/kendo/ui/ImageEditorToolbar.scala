@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageEditorToolbar extends js.Object {
+trait ImageEditorToolbar extends StObject {
   
   var click: js.UndefOr[js.Function] = js.native
   
@@ -30,63 +31,51 @@ object ImageEditorToolbar {
   }
   
   @scala.inline
-  implicit class ImageEditorToolbarOps[Self <: ImageEditorToolbar] (val x: Self) extends AnyVal {
+  implicit class ImageEditorToolbarMutableBuilder[Self <: ImageEditorToolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: js.Function): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: js.Function): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setItems(value: js.Array[ImageEditorToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: js.Function): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setItemsVarargs(value: ImageEditorToolbarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: ImageEditorToolbarItem*): Self = this.set("items", js.Array(value :_*))
+    def setOpen(value: js.Function): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[ImageEditorToolbarItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setOverflowClose(value: js.Function): Self = StObject.set(x, "overflowClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: js.Function): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOverflowCloseUndefined: Self = StObject.set(x, "overflowClose", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOverflowOpen(value: js.Function): Self = StObject.set(x, "overflowOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowClose(value: js.Function): Self = this.set("overflowClose", value.asInstanceOf[js.Any])
+    def setOverflowOpenUndefined: Self = StObject.set(x, "overflowOpen", js.undefined)
     
     @scala.inline
-    def deleteOverflowClose: Self = this.set("overflowClose", js.undefined)
+    def setToggle(value: js.Function): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowOpen(value: js.Function): Self = this.set("overflowOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverflowOpen: Self = this.set("overflowOpen", js.undefined)
-    
-    @scala.inline
-    def setToggle(value: js.Function): Self = this.set("toggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToggle: Self = this.set("toggle", js.undefined)
+    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

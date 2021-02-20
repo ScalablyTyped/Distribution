@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.GitCreateTagEndpoint
 import typings.octokitTypes.endpointsMod.GitCreateTagRequestOptions
 import typings.octokitTypes.endpointsMod.GitCreateTagResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersGitCreateTagEndpoint extends js.Object {
+trait ParametersGitCreateTagEndpoint extends StObject {
   
   var parameters: GitCreateTagEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersGitCreateTagEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersGitCreateTagEndpointOps[Self <: ParametersGitCreateTagEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersGitCreateTagEndpointMutableBuilder[Self <: ParametersGitCreateTagEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: GitCreateTagEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: GitCreateTagRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: GitCreateTagEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: GitCreateTagRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitCreateTagResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[GitCreateTagResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

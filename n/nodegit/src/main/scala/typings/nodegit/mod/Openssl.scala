@@ -1,5 +1,6 @@
 package typings.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Openssl ()
   extends typings.nodegit.openSslMod.Openssl
 /* static members */
-@JSImport("nodegit", "Openssl")
-@js.native
-object Openssl extends js.Object {
+object Openssl {
   
+  @JSImport("nodegit", "Openssl.setLocking")
+  @js.native
   def setLocking(): Double = js.native
 }

@@ -1,5 +1,6 @@
 package typings.extjs.Ext.form.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,60 +50,48 @@ object IDisplay {
   }
   
   @scala.inline
-  implicit class IDisplayOps[Self <: IDisplay] (val x: Self) extends AnyVal {
+  implicit class IDisplayMutableBuilder[Self <: IDisplay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtmlEncode(value: Boolean): Self = StObject.set(x, "htmlEncode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRawValue(value: () => String): Self = this.set("getRawValue", js.Any.fromFunction0(value))
+    def setHtmlEncodeUndefined: Self = StObject.set(x, "htmlEncode", js.undefined)
     
     @scala.inline
-    def deleteGetRawValue: Self = this.set("getRawValue", js.undefined)
+    def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHtmlEncode(value: Boolean): Self = this.set("htmlEncode", value.asInstanceOf[js.Any])
+    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
     @scala.inline
-    def deleteHtmlEncode: Self = this.set("htmlEncode", js.undefined)
+    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDirty(value: () => Boolean): Self = this.set("isDirty", js.Any.fromFunction0(value))
+    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
     @scala.inline
-    def deleteIsDirty: Self = this.set("isDirty", js.undefined)
+    def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: js.Any): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScope(value: js.Any): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
-    
-    @scala.inline
-    def setValidate(value: () => Boolean): Self = this.set("validate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteValidate: Self = this.set("validate", js.undefined)
+    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

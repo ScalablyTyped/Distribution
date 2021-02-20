@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "piscina" : "1.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "piscina" : "1.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

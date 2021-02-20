@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteFileShareInput extends js.Object {
+trait DeleteFileShareInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the file share to be deleted.
@@ -26,27 +27,15 @@ object DeleteFileShareInput {
   }
   
   @scala.inline
-  implicit class DeleteFileShareInputOps[Self <: DeleteFileShareInput] (val x: Self) extends AnyVal {
+  implicit class DeleteFileShareInputMutableBuilder[Self <: DeleteFileShareInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceDelete(value: scala.Boolean): Self = StObject.set(x, "ForceDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = this.set("FileShareARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceDelete(value: scala.Boolean): Self = this.set("ForceDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceDelete: Self = this.set("ForceDelete", js.undefined)
+    def setForceDeleteUndefined: Self = StObject.set(x, "ForceDelete", js.undefined)
   }
 }

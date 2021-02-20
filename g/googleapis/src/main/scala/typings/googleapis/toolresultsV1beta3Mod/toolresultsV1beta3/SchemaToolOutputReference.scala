@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A reference to a ToolExecution output file.
   */
 @js.native
-trait SchemaToolOutputReference extends js.Object {
+trait SchemaToolOutputReference extends StObject {
   
   /**
     * The creation time of the file.  - In response: present if set by
@@ -37,36 +38,24 @@ object SchemaToolOutputReference {
   }
   
   @scala.inline
-  implicit class SchemaToolOutputReferenceOps[Self <: SchemaToolOutputReference] (val x: Self) extends AnyVal {
+  implicit class SchemaToolOutputReferenceMutableBuilder[Self <: SchemaToolOutputReference] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: SchemaTimestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutput(value: SchemaFileReference): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: SchemaTimestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setTestCase(value: SchemaTestCaseReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: SchemaFileReference): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
-    
-    @scala.inline
-    def setTestCase(value: SchemaTestCaseReference): Self = this.set("testCase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestCase: Self = this.set("testCase", js.undefined)
+    def setTestCaseUndefined: Self = StObject.set(x, "testCase", js.undefined)
   }
 }

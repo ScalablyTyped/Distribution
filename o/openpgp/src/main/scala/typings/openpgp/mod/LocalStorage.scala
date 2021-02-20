@@ -1,5 +1,6 @@
 package typings.openpgp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This object is used for storing and retrieving configuration from HTML5 local storage.
   */
-class LocalStorage () extends js.Object {
+class LocalStorage () extends StObject {
   
   /**
     * Reads the config out of the HTML5 local storage

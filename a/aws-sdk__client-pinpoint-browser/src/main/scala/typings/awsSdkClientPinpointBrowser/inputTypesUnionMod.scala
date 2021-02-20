@@ -1,12 +1,34 @@
 package typings.awsSdkClientPinpointBrowser
 
+import typings.awsSdkClientPinpointBrowser.typesAdmchannelrequestMod.ADMChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesApnschannelrequestMod.APNSChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesApnssandboxchannelrequestMod.APNSSandboxChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesApnsvoipchannelrequestMod.APNSVoipChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesApnsvoipsandboxchannelrequestMod.APNSVoipSandboxChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesBaiduChannelRequestMod.BaiduChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesCreateApplicationRequestMod.CreateApplicationRequest
+import typings.awsSdkClientPinpointBrowser.typesEmailChannelRequestMod.EmailChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesEndpointBatchRequestMod.EndpointBatchRequest
+import typings.awsSdkClientPinpointBrowser.typesEndpointRequestMod.EndpointRequest
+import typings.awsSdkClientPinpointBrowser.typesEventsRequestMod.EventsRequest
+import typings.awsSdkClientPinpointBrowser.typesExportJobRequestMod.ExportJobRequest
+import typings.awsSdkClientPinpointBrowser.typesGcmchannelrequestMod.GCMChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesImportJobRequestMod.ImportJobRequest
+import typings.awsSdkClientPinpointBrowser.typesMessageRequestMod.MessageRequest
+import typings.awsSdkClientPinpointBrowser.typesNumberValidateRequestMod.NumberValidateRequest
+import typings.awsSdkClientPinpointBrowser.typesSendUsersMessageRequestMod.SendUsersMessageRequest
+import typings.awsSdkClientPinpointBrowser.typesSmschannelrequestMod.SMSChannelRequest
+import typings.awsSdkClientPinpointBrowser.typesUpdateAttributesRequestMod.UpdateAttributesRequest
+import typings.awsSdkClientPinpointBrowser.typesWriteApplicationSettingsRequestMod.WriteApplicationSettingsRequest
+import typings.awsSdkClientPinpointBrowser.typesWriteCampaignRequestMod.WriteCampaignRequest
+import typings.awsSdkClientPinpointBrowser.typesWriteEventStreamMod.WriteEventStream
+import typings.awsSdkClientPinpointBrowser.typesWriteSegmentRequestMod.WriteSegmentRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/InputTypesUnion", JSImport.Namespace)
-@js.native
-object inputTypesUnionMod extends js.Object {
+object inputTypesUnionMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdkClientPinpointBrowser.typesCreateAppInputMod.CreateAppInput
@@ -81,5 +103,433 @@ object inputTypesUnionMod extends js.Object {
     - typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput
     - typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelInputMod.UpdateSmsChannelInput
   */
-  trait InputTypesUnion extends js.Object
+  trait InputTypesUnion extends StObject
+  object InputTypesUnion {
+    
+    @scala.inline
+    def CreateAppInput(CreateApplicationRequest: CreateApplicationRequest): typings.awsSdkClientPinpointBrowser.typesCreateAppInputMod.CreateAppInput = {
+      val __obj = js.Dynamic.literal(CreateApplicationRequest = CreateApplicationRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesCreateAppInputMod.CreateAppInput]
+    }
+    
+    @scala.inline
+    def CreateCampaignInput(ApplicationId: String, WriteCampaignRequest: WriteCampaignRequest): typings.awsSdkClientPinpointBrowser.typesCreateCampaignInputMod.CreateCampaignInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteCampaignRequest = WriteCampaignRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesCreateCampaignInputMod.CreateCampaignInput]
+    }
+    
+    @scala.inline
+    def CreateExportJobInput(ApplicationId: String, ExportJobRequest: ExportJobRequest): typings.awsSdkClientPinpointBrowser.typesCreateExportJobInputMod.CreateExportJobInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ExportJobRequest = ExportJobRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesCreateExportJobInputMod.CreateExportJobInput]
+    }
+    
+    @scala.inline
+    def CreateImportJobInput(ApplicationId: String, ImportJobRequest: ImportJobRequest): typings.awsSdkClientPinpointBrowser.typesCreateImportJobInputMod.CreateImportJobInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ImportJobRequest = ImportJobRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesCreateImportJobInputMod.CreateImportJobInput]
+    }
+    
+    @scala.inline
+    def CreateSegmentInput(ApplicationId: String, WriteSegmentRequest: WriteSegmentRequest): typings.awsSdkClientPinpointBrowser.typesCreateSegmentInputMod.CreateSegmentInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesCreateSegmentInputMod.CreateSegmentInput]
+    }
+    
+    @scala.inline
+    def DeleteAdmChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteAdmChannelInputMod.DeleteAdmChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteAdmChannelInputMod.DeleteAdmChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteApnsChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteApnsChannelInputMod.DeleteApnsChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteApnsChannelInputMod.DeleteApnsChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteApnsSandboxChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteApnsSandboxChannelInputMod.DeleteApnsSandboxChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteApnsSandboxChannelInputMod.DeleteApnsSandboxChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteApnsVoipChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipChannelInputMod.DeleteApnsVoipChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipChannelInputMod.DeleteApnsVoipChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteApnsVoipSandboxChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipSandboxChannelInputMod.DeleteApnsVoipSandboxChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteApnsVoipSandboxChannelInputMod.DeleteApnsVoipSandboxChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteAppInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteAppInputMod.DeleteAppInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteAppInputMod.DeleteAppInput]
+    }
+    
+    @scala.inline
+    def DeleteBaiduChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelInputMod.DeleteBaiduChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelInputMod.DeleteBaiduChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteCampaignInput(ApplicationId: String, CampaignId: String): typings.awsSdkClientPinpointBrowser.typesDeleteCampaignInputMod.DeleteCampaignInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteCampaignInputMod.DeleteCampaignInput]
+    }
+    
+    @scala.inline
+    def DeleteEmailChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteEmailChannelInputMod.DeleteEmailChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteEmailChannelInputMod.DeleteEmailChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteEndpointInput(ApplicationId: String, EndpointId: String): typings.awsSdkClientPinpointBrowser.typesDeleteEndpointInputMod.DeleteEndpointInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteEndpointInputMod.DeleteEndpointInput]
+    }
+    
+    @scala.inline
+    def DeleteEventStreamInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteEventStreamInputMod.DeleteEventStreamInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteEventStreamInputMod.DeleteEventStreamInput]
+    }
+    
+    @scala.inline
+    def DeleteGcmChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteGcmChannelInputMod.DeleteGcmChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteGcmChannelInputMod.DeleteGcmChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteSegmentInput(ApplicationId: String, SegmentId: String): typings.awsSdkClientPinpointBrowser.typesDeleteSegmentInputMod.DeleteSegmentInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteSegmentInputMod.DeleteSegmentInput]
+    }
+    
+    @scala.inline
+    def DeleteSmsChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesDeleteSmsChannelInputMod.DeleteSmsChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteSmsChannelInputMod.DeleteSmsChannelInput]
+    }
+    
+    @scala.inline
+    def DeleteUserEndpointsInput(ApplicationId: String, UserId: String): typings.awsSdkClientPinpointBrowser.typesDeleteUserEndpointsInputMod.DeleteUserEndpointsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesDeleteUserEndpointsInputMod.DeleteUserEndpointsInput]
+    }
+    
+    @scala.inline
+    def GetAdmChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetAdmChannelInputMod.GetAdmChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetAdmChannelInputMod.GetAdmChannelInput]
+    }
+    
+    @scala.inline
+    def GetApnsChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetApnsChannelInputMod.GetApnsChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetApnsChannelInputMod.GetApnsChannelInput]
+    }
+    
+    @scala.inline
+    def GetApnsSandboxChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetApnsSandboxChannelInputMod.GetApnsSandboxChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetApnsSandboxChannelInputMod.GetApnsSandboxChannelInput]
+    }
+    
+    @scala.inline
+    def GetApnsVoipChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetApnsVoipChannelInputMod.GetApnsVoipChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetApnsVoipChannelInputMod.GetApnsVoipChannelInput]
+    }
+    
+    @scala.inline
+    def GetApnsVoipSandboxChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetApnsVoipSandboxChannelInputMod.GetApnsVoipSandboxChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetApnsVoipSandboxChannelInputMod.GetApnsVoipSandboxChannelInput]
+    }
+    
+    @scala.inline
+    def GetAppInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetAppInputMod.GetAppInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetAppInputMod.GetAppInput]
+    }
+    
+    @scala.inline
+    def GetApplicationSettingsInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetApplicationSettingsInputMod.GetApplicationSettingsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetApplicationSettingsInputMod.GetApplicationSettingsInput]
+    }
+    
+    @scala.inline
+    def GetAppsInput(): typings.awsSdkClientPinpointBrowser.typesGetAppsInputMod.GetAppsInput = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetAppsInputMod.GetAppsInput]
+    }
+    
+    @scala.inline
+    def GetBaiduChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetBaiduChannelInputMod.GetBaiduChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetBaiduChannelInputMod.GetBaiduChannelInput]
+    }
+    
+    @scala.inline
+    def GetCampaignActivitiesInput(ApplicationId: String, CampaignId: String): typings.awsSdkClientPinpointBrowser.typesGetCampaignActivitiesInputMod.GetCampaignActivitiesInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetCampaignActivitiesInputMod.GetCampaignActivitiesInput]
+    }
+    
+    @scala.inline
+    def GetCampaignInput(ApplicationId: String, CampaignId: String): typings.awsSdkClientPinpointBrowser.typesGetCampaignInputMod.GetCampaignInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetCampaignInputMod.GetCampaignInput]
+    }
+    
+    @scala.inline
+    def GetCampaignVersionInput(ApplicationId: String, CampaignId: String, Version: String): typings.awsSdkClientPinpointBrowser.typesGetCampaignVersionInputMod.GetCampaignVersionInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetCampaignVersionInputMod.GetCampaignVersionInput]
+    }
+    
+    @scala.inline
+    def GetCampaignVersionsInput(ApplicationId: String, CampaignId: String): typings.awsSdkClientPinpointBrowser.typesGetCampaignVersionsInputMod.GetCampaignVersionsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetCampaignVersionsInputMod.GetCampaignVersionsInput]
+    }
+    
+    @scala.inline
+    def GetCampaignsInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetCampaignsInputMod.GetCampaignsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetCampaignsInputMod.GetCampaignsInput]
+    }
+    
+    @scala.inline
+    def GetChannelsInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetChannelsInputMod.GetChannelsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetChannelsInputMod.GetChannelsInput]
+    }
+    
+    @scala.inline
+    def GetEmailChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetEmailChannelInputMod.GetEmailChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetEmailChannelInputMod.GetEmailChannelInput]
+    }
+    
+    @scala.inline
+    def GetEndpointInput(ApplicationId: String, EndpointId: String): typings.awsSdkClientPinpointBrowser.typesGetEndpointInputMod.GetEndpointInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetEndpointInputMod.GetEndpointInput]
+    }
+    
+    @scala.inline
+    def GetEventStreamInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetEventStreamInputMod.GetEventStreamInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetEventStreamInputMod.GetEventStreamInput]
+    }
+    
+    @scala.inline
+    def GetExportJobInput(ApplicationId: String, JobId: String): typings.awsSdkClientPinpointBrowser.typesGetExportJobInputMod.GetExportJobInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetExportJobInputMod.GetExportJobInput]
+    }
+    
+    @scala.inline
+    def GetExportJobsInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetExportJobsInputMod.GetExportJobsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetExportJobsInputMod.GetExportJobsInput]
+    }
+    
+    @scala.inline
+    def GetGcmChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetGcmChannelInputMod.GetGcmChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetGcmChannelInputMod.GetGcmChannelInput]
+    }
+    
+    @scala.inline
+    def GetImportJobInput(ApplicationId: String, JobId: String): typings.awsSdkClientPinpointBrowser.typesGetImportJobInputMod.GetImportJobInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetImportJobInputMod.GetImportJobInput]
+    }
+    
+    @scala.inline
+    def GetImportJobsInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetImportJobsInputMod.GetImportJobsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetImportJobsInputMod.GetImportJobsInput]
+    }
+    
+    @scala.inline
+    def GetSegmentExportJobsInput(ApplicationId: String, SegmentId: String): typings.awsSdkClientPinpointBrowser.typesGetSegmentExportJobsInputMod.GetSegmentExportJobsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSegmentExportJobsInputMod.GetSegmentExportJobsInput]
+    }
+    
+    @scala.inline
+    def GetSegmentImportJobsInput(ApplicationId: String, SegmentId: String): typings.awsSdkClientPinpointBrowser.typesGetSegmentImportJobsInputMod.GetSegmentImportJobsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSegmentImportJobsInputMod.GetSegmentImportJobsInput]
+    }
+    
+    @scala.inline
+    def GetSegmentInput(ApplicationId: String, SegmentId: String): typings.awsSdkClientPinpointBrowser.typesGetSegmentInputMod.GetSegmentInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSegmentInputMod.GetSegmentInput]
+    }
+    
+    @scala.inline
+    def GetSegmentVersionInput(ApplicationId: String, SegmentId: String, Version: String): typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionInputMod.GetSegmentVersionInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionInputMod.GetSegmentVersionInput]
+    }
+    
+    @scala.inline
+    def GetSegmentVersionsInput(ApplicationId: String, SegmentId: String): typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionsInputMod.GetSegmentVersionsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionsInputMod.GetSegmentVersionsInput]
+    }
+    
+    @scala.inline
+    def GetSegmentsInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetSegmentsInputMod.GetSegmentsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSegmentsInputMod.GetSegmentsInput]
+    }
+    
+    @scala.inline
+    def GetSmsChannelInput(ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesGetSmsChannelInputMod.GetSmsChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetSmsChannelInputMod.GetSmsChannelInput]
+    }
+    
+    @scala.inline
+    def GetUserEndpointsInput(ApplicationId: String, UserId: String): typings.awsSdkClientPinpointBrowser.typesGetUserEndpointsInputMod.GetUserEndpointsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesGetUserEndpointsInputMod.GetUserEndpointsInput]
+    }
+    
+    @scala.inline
+    def PhoneNumberValidateInput(NumberValidateRequest: NumberValidateRequest): typings.awsSdkClientPinpointBrowser.typesPhoneNumberValidateInputMod.PhoneNumberValidateInput = {
+      val __obj = js.Dynamic.literal(NumberValidateRequest = NumberValidateRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesPhoneNumberValidateInputMod.PhoneNumberValidateInput]
+    }
+    
+    @scala.inline
+    def PutEventStreamInput(ApplicationId: String, WriteEventStream: WriteEventStream): typings.awsSdkClientPinpointBrowser.typesPutEventStreamInputMod.PutEventStreamInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteEventStream = WriteEventStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesPutEventStreamInputMod.PutEventStreamInput]
+    }
+    
+    @scala.inline
+    def PutEventsInput(ApplicationId: String, EventsRequest: EventsRequest): typings.awsSdkClientPinpointBrowser.typesPutEventsInputMod.PutEventsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EventsRequest = EventsRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesPutEventsInputMod.PutEventsInput]
+    }
+    
+    @scala.inline
+    def RemoveAttributesInput(ApplicationId: String, AttributeType: String, UpdateAttributesRequest: UpdateAttributesRequest): typings.awsSdkClientPinpointBrowser.typesRemoveAttributesInputMod.RemoveAttributesInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any], UpdateAttributesRequest = UpdateAttributesRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesRemoveAttributesInputMod.RemoveAttributesInput]
+    }
+    
+    @scala.inline
+    def SendMessagesInput(ApplicationId: String, MessageRequest: MessageRequest): typings.awsSdkClientPinpointBrowser.typesSendMessagesInputMod.SendMessagesInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], MessageRequest = MessageRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesSendMessagesInputMod.SendMessagesInput]
+    }
+    
+    @scala.inline
+    def SendUsersMessagesInput(ApplicationId: String, SendUsersMessageRequest: SendUsersMessageRequest): typings.awsSdkClientPinpointBrowser.typesSendUsersMessagesInputMod.SendUsersMessagesInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SendUsersMessageRequest = SendUsersMessageRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesSendUsersMessagesInputMod.SendUsersMessagesInput]
+    }
+    
+    @scala.inline
+    def UpdateAdmChannelInput(ADMChannelRequest: ADMChannelRequest, ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesUpdateAdmChannelInputMod.UpdateAdmChannelInput = {
+      val __obj = js.Dynamic.literal(ADMChannelRequest = ADMChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateAdmChannelInputMod.UpdateAdmChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateApnsChannelInput(APNSChannelRequest: APNSChannelRequest, ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesUpdateApnsChannelInputMod.UpdateApnsChannelInput = {
+      val __obj = js.Dynamic.literal(APNSChannelRequest = APNSChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateApnsChannelInputMod.UpdateApnsChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateApnsSandboxChannelInput(APNSSandboxChannelRequest: APNSSandboxChannelRequest, ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesUpdateApnsSandboxChannelInputMod.UpdateApnsSandboxChannelInput = {
+      val __obj = js.Dynamic.literal(APNSSandboxChannelRequest = APNSSandboxChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateApnsSandboxChannelInputMod.UpdateApnsSandboxChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateApnsVoipChannelInput(APNSVoipChannelRequest: APNSVoipChannelRequest, ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesUpdateApnsVoipChannelInputMod.UpdateApnsVoipChannelInput = {
+      val __obj = js.Dynamic.literal(APNSVoipChannelRequest = APNSVoipChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateApnsVoipChannelInputMod.UpdateApnsVoipChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateApnsVoipSandboxChannelInput(APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequest, ApplicationId: String): typings.awsSdkClientPinpointBrowser.typesUpdateApnsVoipSandboxChannelInputMod.UpdateApnsVoipSandboxChannelInput = {
+      val __obj = js.Dynamic.literal(APNSVoipSandboxChannelRequest = APNSVoipSandboxChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateApnsVoipSandboxChannelInputMod.UpdateApnsVoipSandboxChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateApplicationSettingsInput(ApplicationId: String, WriteApplicationSettingsRequest: WriteApplicationSettingsRequest): typings.awsSdkClientPinpointBrowser.typesUpdateApplicationSettingsInputMod.UpdateApplicationSettingsInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteApplicationSettingsRequest = WriteApplicationSettingsRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateApplicationSettingsInputMod.UpdateApplicationSettingsInput]
+    }
+    
+    @scala.inline
+    def UpdateBaiduChannelInput(ApplicationId: String, BaiduChannelRequest: BaiduChannelRequest): typings.awsSdkClientPinpointBrowser.typesUpdateBaiduChannelInputMod.UpdateBaiduChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], BaiduChannelRequest = BaiduChannelRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateBaiduChannelInputMod.UpdateBaiduChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateCampaignInput(ApplicationId: String, CampaignId: String, WriteCampaignRequest: WriteCampaignRequest): typings.awsSdkClientPinpointBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], WriteCampaignRequest = WriteCampaignRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput]
+    }
+    
+    @scala.inline
+    def UpdateEmailChannelInput(ApplicationId: String, EmailChannelRequest: EmailChannelRequest): typings.awsSdkClientPinpointBrowser.typesUpdateEmailChannelInputMod.UpdateEmailChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EmailChannelRequest = EmailChannelRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateEmailChannelInputMod.UpdateEmailChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateEndpointInput(ApplicationId: String, EndpointId: String, EndpointRequest: EndpointRequest): typings.awsSdkClientPinpointBrowser.typesUpdateEndpointInputMod.UpdateEndpointInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointId = EndpointId.asInstanceOf[js.Any], EndpointRequest = EndpointRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateEndpointInputMod.UpdateEndpointInput]
+    }
+    
+    @scala.inline
+    def UpdateEndpointsBatchInput(ApplicationId: String, EndpointBatchRequest: EndpointBatchRequest): typings.awsSdkClientPinpointBrowser.typesUpdateEndpointsBatchInputMod.UpdateEndpointsBatchInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndpointBatchRequest = EndpointBatchRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateEndpointsBatchInputMod.UpdateEndpointsBatchInput]
+    }
+    
+    @scala.inline
+    def UpdateGcmChannelInput(ApplicationId: String, GCMChannelRequest: GCMChannelRequest): typings.awsSdkClientPinpointBrowser.typesUpdateGcmChannelInputMod.UpdateGcmChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], GCMChannelRequest = GCMChannelRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateGcmChannelInputMod.UpdateGcmChannelInput]
+    }
+    
+    @scala.inline
+    def UpdateSegmentInput(ApplicationId: String, SegmentId: String, WriteSegmentRequest: WriteSegmentRequest): typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], WriteSegmentRequest = WriteSegmentRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateSegmentInputMod.UpdateSegmentInput]
+    }
+    
+    @scala.inline
+    def UpdateSmsChannelInput(ApplicationId: String, SMSChannelRequest: SMSChannelRequest): typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelInputMod.UpdateSmsChannelInput = {
+      val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SMSChannelRequest = SMSChannelRequest.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.awsSdkClientPinpointBrowser.typesUpdateSmsChannelInputMod.UpdateSmsChannelInput]
+    }
+  }
 }

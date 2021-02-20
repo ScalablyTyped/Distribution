@@ -1,11 +1,12 @@
 package typings.twit.mod.Twitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sizes extends js.Object {
+trait Sizes extends StObject {
   
   var large: Size = js.native
   
@@ -24,30 +25,18 @@ object Sizes {
   }
   
   @scala.inline
-  implicit class SizesOps[Self <: Sizes] (val x: Self) extends AnyVal {
+  implicit class SizesMutableBuilder[Self <: Sizes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLarge(value: Size): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedium(value: Size): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSmall(value: Size): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge(value: Size): Self = this.set("large", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMedium(value: Size): Self = this.set("medium", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmall(value: Size): Self = this.set("small", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThumb(value: Size): Self = this.set("thumb", value.asInstanceOf[js.Any])
+    def setThumb(value: Size): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
   }
 }

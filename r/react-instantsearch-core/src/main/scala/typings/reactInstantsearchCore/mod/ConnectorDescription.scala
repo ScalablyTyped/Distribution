@@ -2,12 +2,13 @@ package typings.reactInstantsearchCore.mod
 
 import typings.algoliasearchHelper.mod.SearchParameters
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorDescription[TProvided, TExposed] extends js.Object {
+trait ConnectorDescription[TProvided, TExposed] extends StObject {
   
   /**
     * This method is called when a widget is about to unmount in order to clean the searchState.
@@ -126,25 +127,7 @@ object ConnectorDescription {
   }
   
   @scala.inline
-  implicit class ConnectorDescriptionOps[Self <: ConnectorDescription[_, _], TProvided, TExposed] (val x: Self with (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided): Self = this.set("getProvidedProps", js.Any.fromFunction5(value))
+  implicit class ConnectorDescriptionMutableBuilder[Self <: ConnectorDescription[_, _], TProvided, TExposed] (val x: Self with (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
     
     @scala.inline
     def setCleanUp(
@@ -154,16 +137,19 @@ object ConnectorDescription {
           /* searchState */ SearchState, 
           SearchState
         ]
-    ): Self = this.set("cleanUp", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "cleanUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCleanUp: Self = this.set("cleanUp", js.undefined)
+    def setCleanUpUndefined: Self = StObject.set(x, "cleanUp", js.undefined)
     
     @scala.inline
-    def setDefaultProps(value: js.Any): Self = this.set("defaultProps", value.asInstanceOf[js.Any])
+    def setDefaultProps(value: js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultProps: Self = this.set("defaultProps", js.undefined)
+    def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    
+    @scala.inline
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGetMetadata(
@@ -174,10 +160,13 @@ object ConnectorDescription {
           /* repeated */ js.Any, 
           _
         ]
-    ): Self = this.set("getMetadata", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetMetadata: Self = this.set("getMetadata", js.undefined)
+    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
+    
+    @scala.inline
+    def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[_], js.Any, js.Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
     
     @scala.inline
     def setGetSearchParameters(
@@ -188,16 +177,16 @@ object ConnectorDescription {
           /* searchState */ SearchState, 
           SearchParameters
         ]
-    ): Self = this.set("getSearchParameters", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "getSearchParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetSearchParameters: Self = this.set("getSearchParameters", js.undefined)
+    def setGetSearchParametersUndefined: Self = StObject.set(x, "getSearchParameters", js.undefined)
     
     @scala.inline
-    def setPropTypes(value: js.Any): Self = this.set("propTypes", value.asInstanceOf[js.Any])
+    def setPropTypes(value: js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePropTypes: Self = this.set("propTypes", js.undefined)
+    def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
     
     @scala.inline
     def setRefine(
@@ -208,10 +197,10 @@ object ConnectorDescription {
           /* repeated */ js.Any, 
           SearchState
         ]
-    ): Self = this.set("refine", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "refine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRefine: Self = this.set("refine", js.undefined)
+    def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
     
     @scala.inline
     def setSearchForFacetValues(
@@ -221,9 +210,9 @@ object ConnectorDescription {
           /* nextRefinement */ js.UndefOr[js.Any], 
           _
         ]
-    ): Self = this.set("searchForFacetValues", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSearchForFacetValues: Self = this.set("searchForFacetValues", js.undefined)
+    def setSearchForFacetValuesUndefined: Self = StObject.set(x, "searchForFacetValues", js.undefined)
   }
 }

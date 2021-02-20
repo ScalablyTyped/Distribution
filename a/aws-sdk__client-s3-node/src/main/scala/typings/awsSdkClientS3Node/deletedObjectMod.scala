@@ -1,13 +1,13 @@
 package typings.awsSdkClientS3Node
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/model/_DeletedObject", JSImport.Namespace)
-@js.native
-object deletedObjectMod extends js.Object {
+object deletedObjectMod {
   
-  @JSName("_DeletedObject")
+  @JSImport("@aws-sdk/client-s3-node/model/_DeletedObject", "_DeletedObject")
+  @js.native
   val DeletedObject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

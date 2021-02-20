@@ -28,13 +28,22 @@ import typings.std.RsaHashedImportParams
 import typings.std.RsaOaepParams
 import typings.std.RsaPssParams
 import typings.std.SubtleCrypto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkijs/src/CryptoEngine", JSImport.Namespace)
-@js.native
-object cryptoEngineMod extends js.Object {
+object cryptoEngineMod {
+  
+  @JSImport("pkijs/src/CryptoEngine", JSImport.Default)
+  @js.native
+  /**
+    * Constructor for CryptoEngine class
+    * @param {*} [parameters={}]
+    */
+  class default () extends CryptoEngine {
+    def this(parameters: js.Any) = this()
+  }
   
   @js.native
   trait CryptoEngine extends SubtleCrypto {
@@ -634,14 +643,5 @@ object cryptoEngineMod extends js.Object {
     def verify(algorithm: AesCmacParams, key: CryptoKey, signature: BufferSource, data: BufferSource): js.Promise[Boolean] = js.native
     def verify(algorithm: EcdsaParams, key: CryptoKey, signature: BufferSource, data: BufferSource): js.Promise[Boolean] = js.native
     def verify(algorithm: RsaPssParams, key: CryptoKey, signature: BufferSource, data: BufferSource): js.Promise[Boolean] = js.native
-  }
-  
-  @js.native
-  /**
-    * Constructor for CryptoEngine class
-    * @param {*} [parameters={}]
-    */
-  class default () extends CryptoEngine {
-    def this(parameters: js.Any) = this()
   }
 }

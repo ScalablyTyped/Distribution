@@ -2,16 +2,16 @@ package typings.typeorm
 
 import typings.typeorm.tableUniqueOptionsMod.TableUniqueOptions
 import typings.typeorm.uniqueMetadataMod.UniqueMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/schema-builder/table/TableUnique", JSImport.Namespace)
-@js.native
-object tableUniqueMod extends js.Object {
+object tableUniqueMod {
   
+  @JSImport("typeorm/browser/schema-builder/table/TableUnique", "TableUnique")
   @js.native
-  class TableUnique protected () extends js.Object {
+  class TableUnique protected () extends StObject {
     def this(options: TableUniqueOptions) = this()
     
     /**
@@ -25,12 +25,13 @@ object tableUniqueMod extends js.Object {
     var name: js.UndefOr[String] = js.native
   }
   /* static members */
-  @js.native
-  object TableUnique extends js.Object {
+  object TableUnique {
     
     /**
       * Creates unique from the unique metadata object.
       */
+    @JSImport("typeorm/browser/schema-builder/table/TableUnique", "TableUnique.create")
+    @js.native
     def create(uniqueMetadata: UniqueMetadata): TableUnique = js.native
   }
 }

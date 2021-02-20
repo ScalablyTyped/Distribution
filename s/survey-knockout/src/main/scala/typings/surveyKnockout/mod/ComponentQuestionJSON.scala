@@ -1,12 +1,13 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ComponentQuestionJSON")
 @js.native
-class ComponentQuestionJSON protected () extends js.Object {
+class ComponentQuestionJSON protected () extends StObject {
   def this(name: String, json: js.Any) = this()
   
   val isComposite: Boolean = js.native

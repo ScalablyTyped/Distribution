@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Q2Color extends js.Object {
+trait Q2Color extends StObject {
   
   var medianSvgClassName: js.UndefOr[String] = js.native
   
@@ -42,96 +43,84 @@ object Q2Color {
   }
   
   @scala.inline
-  implicit class Q2ColorOps[Self <: Q2Color] (val x: Self) extends AnyVal {
+  implicit class Q2ColorMutableBuilder[Self <: Q2Color] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedianSvgClassName(value: String): Self = StObject.set(x, "medianSvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMedianSvgClassNameUndefined: Self = StObject.set(x, "medianSvgClassName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMedianSvgStyle(value: js.Object): Self = StObject.set(x, "medianSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedianSvgClassName(value: String): Self = this.set("medianSvgClassName", value.asInstanceOf[js.Any])
+    def setMedianSvgStyleUndefined: Self = StObject.set(x, "medianSvgStyle", js.undefined)
     
     @scala.inline
-    def deleteMedianSvgClassName: Self = this.set("medianSvgClassName", js.undefined)
+    def setQ2Color(value: String): Self = StObject.set(x, "q2Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedianSvgStyle(value: js.Object): Self = this.set("medianSvgStyle", value.asInstanceOf[js.Any])
+    def setQ2ColorUndefined: Self = StObject.set(x, "q2Color", js.undefined)
     
     @scala.inline
-    def deleteMedianSvgStyle: Self = this.set("medianSvgStyle", js.undefined)
+    def setQ2SvgClassName(value: String): Self = StObject.set(x, "q2SvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ2Color(value: String): Self = this.set("q2Color", value.asInstanceOf[js.Any])
+    def setQ2SvgClassNameUndefined: Self = StObject.set(x, "q2SvgClassName", js.undefined)
     
     @scala.inline
-    def deleteQ2Color: Self = this.set("q2Color", js.undefined)
+    def setQ2SvgStyle(value: js.Object): Self = StObject.set(x, "q2SvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ2SvgClassName(value: String): Self = this.set("q2SvgClassName", value.asInstanceOf[js.Any])
+    def setQ2SvgStyleUndefined: Self = StObject.set(x, "q2SvgStyle", js.undefined)
     
     @scala.inline
-    def deleteQ2SvgClassName: Self = this.set("q2SvgClassName", js.undefined)
+    def setQ3Color(value: String): Self = StObject.set(x, "q3Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ2SvgStyle(value: js.Object): Self = this.set("q2SvgStyle", value.asInstanceOf[js.Any])
+    def setQ3ColorUndefined: Self = StObject.set(x, "q3Color", js.undefined)
     
     @scala.inline
-    def deleteQ2SvgStyle: Self = this.set("q2SvgStyle", js.undefined)
+    def setQ3SvgClassName(value: String): Self = StObject.set(x, "q3SvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ3Color(value: String): Self = this.set("q3Color", value.asInstanceOf[js.Any])
+    def setQ3SvgClassNameUndefined: Self = StObject.set(x, "q3SvgClassName", js.undefined)
     
     @scala.inline
-    def deleteQ3Color: Self = this.set("q3Color", js.undefined)
+    def setQ3SvgStyle(value: js.Object): Self = StObject.set(x, "q3SvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ3SvgClassName(value: String): Self = this.set("q3SvgClassName", value.asInstanceOf[js.Any])
+    def setQ3SvgStyleUndefined: Self = StObject.set(x, "q3SvgStyle", js.undefined)
     
     @scala.inline
-    def deleteQ3SvgClassName: Self = this.set("q3SvgClassName", js.undefined)
+    def setWhiskerEndLength(value: String): Self = StObject.set(x, "whiskerEndLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ3SvgStyle(value: js.Object): Self = this.set("q3SvgStyle", value.asInstanceOf[js.Any])
+    def setWhiskerEndLengthUndefined: Self = StObject.set(x, "whiskerEndLength", js.undefined)
     
     @scala.inline
-    def deleteQ3SvgStyle: Self = this.set("q3SvgStyle", js.undefined)
+    def setWhiskerEndSvgClassName(value: String): Self = StObject.set(x, "whiskerEndSvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiskerEndLength(value: String): Self = this.set("whiskerEndLength", value.asInstanceOf[js.Any])
+    def setWhiskerEndSvgClassNameUndefined: Self = StObject.set(x, "whiskerEndSvgClassName", js.undefined)
     
     @scala.inline
-    def deleteWhiskerEndLength: Self = this.set("whiskerEndLength", js.undefined)
+    def setWhiskerEndSvgStyle(value: js.Object): Self = StObject.set(x, "whiskerEndSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiskerEndSvgClassName(value: String): Self = this.set("whiskerEndSvgClassName", value.asInstanceOf[js.Any])
+    def setWhiskerEndSvgStyleUndefined: Self = StObject.set(x, "whiskerEndSvgStyle", js.undefined)
     
     @scala.inline
-    def deleteWhiskerEndSvgClassName: Self = this.set("whiskerEndSvgClassName", js.undefined)
+    def setWhiskerSvgClassName(value: String): Self = StObject.set(x, "whiskerSvgClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiskerEndSvgStyle(value: js.Object): Self = this.set("whiskerEndSvgStyle", value.asInstanceOf[js.Any])
+    def setWhiskerSvgClassNameUndefined: Self = StObject.set(x, "whiskerSvgClassName", js.undefined)
     
     @scala.inline
-    def deleteWhiskerEndSvgStyle: Self = this.set("whiskerEndSvgStyle", js.undefined)
+    def setWhiskerSvgStyle(value: js.Object): Self = StObject.set(x, "whiskerSvgStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhiskerSvgClassName(value: String): Self = this.set("whiskerSvgClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhiskerSvgClassName: Self = this.set("whiskerSvgClassName", js.undefined)
-    
-    @scala.inline
-    def setWhiskerSvgStyle(value: js.Object): Self = this.set("whiskerSvgStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhiskerSvgStyle: Self = this.set("whiskerSvgStyle", js.undefined)
+    def setWhiskerSvgStyleUndefined: Self = StObject.set(x, "whiskerSvgStyle", js.undefined)
   }
 }

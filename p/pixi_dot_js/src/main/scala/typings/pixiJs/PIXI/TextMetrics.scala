@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait TextMetrics extends js.Object {
+trait TextMetrics extends StObject {
   
   /**
     * The font properties object from TextMetrics.measureFont
@@ -100,51 +101,39 @@ object TextMetrics {
   }
   
   @scala.inline
-  implicit class TextMetricsOps[Self <: TextMetrics] (val x: Self) extends AnyVal {
+  implicit class TextMetricsMutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFontProperties(value: IFontMetrics): Self = StObject.set(x, "fontProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontProperties(value: IFontMetrics): Self = this.set("fontProperties", value.asInstanceOf[js.Any])
+    def setLineWidths(value: js.Array[Double]): Self = StObject.set(x, "lineWidths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLineWidthsVarargs(value: Double*): Self = StObject.set(x, "lineWidths", js.Array(value :_*))
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidthsVarargs(value: Double*): Self = this.set("lineWidths", js.Array(value :_*))
+    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
     @scala.inline
-    def setLineWidths(value: js.Array[Double]): Self = this.set("lineWidths", value.asInstanceOf[js.Any])
+    def setMaxLineWidth(value: Double): Self = StObject.set(x, "maxLineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesVarargs(value: String*): Self = this.set("lines", js.Array(value :_*))
+    def setStyle(value: TextStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLines(value: js.Array[String]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLineWidth(value: Double): Self = this.set("maxLineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyle(value: TextStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

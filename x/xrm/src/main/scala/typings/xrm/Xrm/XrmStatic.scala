@@ -1,5 +1,6 @@
 package typings.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Static xRM object.
   */
 @js.native
-trait XrmStatic extends js.Object {
+trait XrmStatic extends StObject {
   
   /**
     * Provides methods to use native device capabilities of mobile devices.
@@ -80,42 +81,30 @@ object XrmStatic {
   }
   
   @scala.inline
-  implicit class XrmStaticOps[Self <: XrmStatic] (val x: Self) extends AnyVal {
+  implicit class XrmStaticMutableBuilder[Self <: XrmStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevice(value: Device): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncoding(value: Encoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMobile(value: Mobile): Self = StObject.set(x, "Mobile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("Device", value.asInstanceOf[js.Any])
+    def setNavigation(value: Navigation): Self = StObject.set(x, "Navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: Encoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    def setPage(value: Page): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMobile(value: Mobile): Self = this.set("Mobile", value.asInstanceOf[js.Any])
+    def setPanel(value: Panel): Self = StObject.set(x, "Panel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigation(value: Navigation): Self = this.set("Navigation", value.asInstanceOf[js.Any])
+    def setUtility(value: Utility): Self = StObject.set(x, "Utility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage(value: Page): Self = this.set("Page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPanel(value: Panel): Self = this.set("Panel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUtility(value: Utility): Self = this.set("Utility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWebApi(value: WebApi): Self = this.set("WebApi", value.asInstanceOf[js.Any])
+    def setWebApi(value: WebApi): Self = StObject.set(x, "WebApi", value.asInstanceOf[js.Any])
   }
 }

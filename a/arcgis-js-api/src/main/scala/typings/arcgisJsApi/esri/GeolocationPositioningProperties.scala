@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeolocationPositioningProperties extends js.Object {
+trait GeolocationPositioningProperties extends StObject {
   
   /**
     * The HTML5 Geolocation Position options for locating.
@@ -51,48 +52,36 @@ object GeolocationPositioningProperties {
   }
   
   @scala.inline
-  implicit class GeolocationPositioningPropertiesOps[Self <: GeolocationPositioningProperties] (val x: Self) extends AnyVal {
+  implicit class GeolocationPositioningPropertiesMutableBuilder[Self <: GeolocationPositioningProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeolocationOptionsUndefined: Self = StObject.set(x, "geolocationOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeolocationOptions(value: js.Any): Self = this.set("geolocationOptions", value.asInstanceOf[js.Any])
+    def setGoToLocationEnabledUndefined: Self = StObject.set(x, "goToLocationEnabled", js.undefined)
     
     @scala.inline
-    def deleteGeolocationOptions: Self = this.set("geolocationOptions", js.undefined)
+    def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToLocationEnabled(value: Boolean): Self = this.set("goToLocationEnabled", value.asInstanceOf[js.Any])
+    def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
     @scala.inline
-    def deleteGoToLocationEnabled: Self = this.set("goToLocationEnabled", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphic(value: GraphicProperties): Self = this.set("graphic", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteGraphic: Self = this.set("graphic", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

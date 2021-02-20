@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "OrderFulfillment")
 @js.native
-class OrderFulfillment () extends js.Object {
+class OrderFulfillment () extends StObject {
   
   /**
     * Application-defined data attached to this fulfillment. Metadata fields are intended to store descriptive

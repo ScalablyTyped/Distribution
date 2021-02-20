@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsIamGroupDetails extends js.Object {
+trait AwsIamGroupDetails extends StObject {
   
   /**
     * A list of the managed policies that are attached to the IAM group.
@@ -46,60 +47,48 @@ object AwsIamGroupDetails {
   }
   
   @scala.inline
-  implicit class AwsIamGroupDetailsOps[Self <: AwsIamGroupDetails] (val x: Self) extends AnyVal {
+  implicit class AwsIamGroupDetailsMutableBuilder[Self <: AwsIamGroupDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setAttachedManagedPoliciesVarargs(value: AwsIamAttachedManagedPolicy*): Self = this.set("AttachedManagedPolicies", js.Array(value :_*))
+    def setCreateDate(value: NonEmptyString): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = this.set("AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def deleteAttachedManagedPolicies: Self = this.set("AttachedManagedPolicies", js.undefined)
+    def setGroupId(value: NonEmptyString): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: NonEmptyString): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: NonEmptyString): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
     @scala.inline
-    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    def setGroupPolicyList(value: AwsIamGroupPolicyList): Self = StObject.set(x, "GroupPolicyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupName(value: NonEmptyString): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    def setGroupPolicyListUndefined: Self = StObject.set(x, "GroupPolicyList", js.undefined)
     
     @scala.inline
-    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    def setGroupPolicyListVarargs(value: AwsIamGroupPolicy*): Self = StObject.set(x, "GroupPolicyList", js.Array(value :_*))
     
     @scala.inline
-    def setGroupPolicyListVarargs(value: AwsIamGroupPolicy*): Self = this.set("GroupPolicyList", js.Array(value :_*))
+    def setPath(value: NonEmptyString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupPolicyList(value: AwsIamGroupPolicyList): Self = this.set("GroupPolicyList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupPolicyList: Self = this.set("GroupPolicyList", js.undefined)
-    
-    @scala.inline
-    def setPath(value: NonEmptyString): Self = this.set("Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

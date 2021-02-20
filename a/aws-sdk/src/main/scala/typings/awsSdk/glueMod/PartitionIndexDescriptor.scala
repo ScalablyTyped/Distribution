@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PartitionIndexDescriptor extends js.Object {
+trait PartitionIndexDescriptor extends StObject {
   
   /**
     * The name of the partition index.
@@ -31,30 +32,18 @@ object PartitionIndexDescriptor {
   }
   
   @scala.inline
-  implicit class PartitionIndexDescriptorOps[Self <: PartitionIndexDescriptor] (val x: Self) extends AnyVal {
+  implicit class PartitionIndexDescriptorMutableBuilder[Self <: PartitionIndexDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexName(value: NameString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexStatus(value: PartitionIndexStatus): Self = StObject.set(x, "IndexStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeys(value: KeySchemaElementList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: NameString): Self = this.set("IndexName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndexStatus(value: PartitionIndexStatus): Self = this.set("IndexStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeysVarargs(value: KeySchemaElement*): Self = this.set("Keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: KeySchemaElementList): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    def setKeysVarargs(value: KeySchemaElement*): Self = StObject.set(x, "Keys", js.Array(value :_*))
   }
 }

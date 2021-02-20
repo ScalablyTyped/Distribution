@@ -5,18 +5,16 @@ import typings.authmosphere.scopeMiddlewareOptionsMod.ScopeMiddlewareOptions
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("authmosphere/lib/src/express-tooling", JSImport.Namespace)
-@js.native
-object expressToolingMod extends js.Object {
+object expressToolingMod {
   
+  @JSImport("authmosphere/lib/src/express-tooling", "authenticationMiddleware")
+  @js.native
   val authenticationMiddleware: typings.authmosphere.expressToolingMod.authenticationMiddleware = js.native
-  
-  val requireScopesMiddleware: typings.authmosphere.expressToolingMod.requireScopesMiddleware = js.native
-  
   /**
     * Returns a function (middleware) to extract and validate an access token from a request.
     * Furthermore, it attaches the scopes granted by the token to the request for further usage.
@@ -43,6 +41,9 @@ object expressToolingMod extends js.Object {
     RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
   ]
   
+  @JSImport("authmosphere/lib/src/express-tooling", "requireScopesMiddleware")
+  @js.native
+  val requireScopesMiddleware: typings.authmosphere.expressToolingMod.requireScopesMiddleware = js.native
   /**
     * A factory that returns a middleware that compares scopes attached to `express.Request` object
     * with a given list (`scopes` parameter).

@@ -1,6 +1,7 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,33 +36,21 @@ object PatternObject {
   }
   
   @scala.inline
-  implicit class PatternObjectOps[Self <: PatternObject] (val x: Self) extends AnyVal {
+  implicit class PatternObjectMutableBuilder[Self <: PatternObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPattern(value: PatternOptionsObject): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPattern(value: PatternOptionsObject): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setPatternIndex(value: Double): Self = StObject.set(x, "patternIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
-    
-    @scala.inline
-    def setPatternIndex(value: Double): Self = this.set("patternIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatternIndex: Self = this.set("patternIndex", js.undefined)
+    def setPatternIndexUndefined: Self = StObject.set(x, "patternIndex", js.undefined)
   }
 }

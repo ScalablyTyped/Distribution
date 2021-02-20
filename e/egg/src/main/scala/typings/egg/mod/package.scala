@@ -1,5 +1,6 @@
 package typings.egg
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,4 +62,12 @@ package object mod {
   type RequestObjectBody = typings.egg.mod.PlainObject[js.Any]
   
   type RouterPath = java.lang.String | typings.std.RegExp
+  
+  @scala.inline
+  def start(): js.Promise[typings.egg.mod.Application] = typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[typings.egg.mod.Application]]
+  @scala.inline
+  def start(options: typings.egg.mod.StartOptions): js.Promise[typings.egg.mod.Application] = typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.egg.mod.Application]]
+  
+  @scala.inline
+  def startCluster(options: typings.egg.mod.ClusterOptions, callback: js.Function1[/* repeated */ js.Any, _]): scala.Unit = (typings.egg.mod.^.asInstanceOf[js.Dynamic].applyDynamic("startCluster")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 }

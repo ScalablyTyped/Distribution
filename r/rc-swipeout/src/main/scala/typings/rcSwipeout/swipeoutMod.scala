@@ -4,13 +4,31 @@ import typings.rcSwipeout.anon.AutoClose
 import typings.rcSwipeout.propTypesMod.IPropTypes
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-swipeout/lib/Swipeout", JSImport.Namespace)
-@js.native
-object swipeoutMod extends js.Object {
+object swipeoutMod {
+  
+  @JSImport("rc-swipeout/lib/Swipeout", JSImport.Default)
+  @js.native
+  class default protected () extends Swipeout {
+    def this(props: js.Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("rc-swipeout/lib/Swipeout", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rc-swipeout/lib/Swipeout", "default.defaultProps")
+    @js.native
+    def defaultProps: AutoClose = js.native
+    @scala.inline
+    def defaultProps_=(x: AutoClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait Swipeout
@@ -69,16 +87,5 @@ object swipeoutMod extends js.Object {
     var right: js.Any = js.native
     
     var swiping: Boolean = js.native
-  }
-  
-  @js.native
-  class default protected () extends Swipeout {
-    def this(props: js.Any) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: AutoClose = js.native
   }
 }

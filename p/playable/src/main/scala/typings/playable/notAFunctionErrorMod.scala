@@ -1,13 +1,13 @@
 package typings.playable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/core/dependency-container/errors/NotAFunctionError", JSImport.Namespace)
-@js.native
-object notAFunctionErrorMod extends js.Object {
+object notAFunctionErrorMod {
   
+  @JSImport("playable/dist/src/core/dependency-container/errors/NotAFunctionError", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.playable.extendableErrorMod.default {

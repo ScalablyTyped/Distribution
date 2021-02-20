@@ -2,14 +2,15 @@ package typings.ol
 
 import typings.ol.extentMod.Extent
 import typings.ol.featureMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/featureloader", JSImport.Namespace)
-@js.native
-object featureloaderMod extends js.Object {
+object featureloaderMod {
   
+  @JSImport("ol/featureloader", "loadFeaturesXhr")
+  @js.native
   def loadFeaturesXhr(
     url: String,
     format: default,
@@ -19,6 +20,8 @@ object featureloaderMod extends js.Object {
       Unit
     ]
   ): FeatureLoader = js.native
+  @JSImport("ol/featureloader", "loadFeaturesXhr")
+  @js.native
   def loadFeaturesXhr(
     url: FeatureUrlFunction,
     format: default,
@@ -29,9 +32,15 @@ object featureloaderMod extends js.Object {
     ]
   ): FeatureLoader = js.native
   
+  @JSImport("ol/featureloader", "setWithCredentials")
+  @js.native
   def setWithCredentials(xhrWithCredentials: Boolean): Unit = js.native
   
+  @JSImport("ol/featureloader", "xhr")
+  @js.native
   def xhr(url: String, format: default): FeatureLoader = js.native
+  @JSImport("ol/featureloader", "xhr")
+  @js.native
   def xhr(url: FeatureUrlFunction, format: default): FeatureLoader = js.native
   
   type FeatureLoader = js.ThisFunction3[

@@ -4,6 +4,7 @@ import typings.activexExcel.activexExcelNumbers.`-4109`
 import typings.activexExcel.activexExcelNumbers.`-4167`
 import typings.activexExcel.activexExcelNumbers.`3`
 import typings.activexExcel.activexExcelNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`3`
   - typings.activexExcel.activexExcelNumbers.`-4167`
 */
-trait XlWBATemplate extends js.Object
+trait XlWBATemplate extends StObject
 object XlWBATemplate {
   
   @scala.inline

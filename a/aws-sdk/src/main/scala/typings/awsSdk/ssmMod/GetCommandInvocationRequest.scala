@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetCommandInvocationRequest extends js.Object {
+trait GetCommandInvocationRequest extends StObject {
   
   /**
     * (Required) The parent command ID of the invocation plugin.
@@ -31,30 +32,18 @@ object GetCommandInvocationRequest {
   }
   
   @scala.inline
-  implicit class GetCommandInvocationRequestOps[Self <: GetCommandInvocationRequest] (val x: Self) extends AnyVal {
+  implicit class GetCommandInvocationRequestMutableBuilder[Self <: GetCommandInvocationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPluginName(value: CommandPluginName): Self = StObject.set(x, "PluginName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandId(value: CommandId): Self = this.set("CommandId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPluginName(value: CommandPluginName): Self = this.set("PluginName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePluginName: Self = this.set("PluginName", js.undefined)
+    def setPluginNameUndefined: Self = StObject.set(x, "PluginName", js.undefined)
   }
 }

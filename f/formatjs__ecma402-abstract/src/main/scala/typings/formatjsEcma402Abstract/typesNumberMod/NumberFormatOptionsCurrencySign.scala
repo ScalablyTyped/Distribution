@@ -1,5 +1,6 @@
 package typings.formatjsEcma402Abstract.typesNumberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.standard
   - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.accounting
 */
-trait NumberFormatOptionsCurrencySign extends js.Object
+trait NumberFormatOptionsCurrencySign extends StObject
 object NumberFormatOptionsCurrencySign {
   
   @scala.inline

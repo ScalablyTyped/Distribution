@@ -1,12 +1,17 @@
 package typings.typescriptCollections
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections/dist/lib/LinkedDictionary", JSImport.Namespace)
-@js.native
-object linkedDictionaryMod extends js.Object {
+object linkedDictionaryMod {
+  
+  @JSImport("typescript-collections/dist/lib/LinkedDictionary", JSImport.Default)
+  @js.native
+  class default[K, V] () extends LinkedDictionary[K, V] {
+    def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
+  }
   
   @js.native
   trait LinkedDictionary[K, V]
@@ -34,10 +39,5 @@ object linkedDictionaryMod extends js.Object {
     /* private */ def replace(oldPair: js.Any, newPair: js.Any): js.Any = js.native
     
     var tail: js.Any = js.native
-  }
-  
-  @js.native
-  class default[K, V] () extends LinkedDictionary[K, V] {
-    def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
 }

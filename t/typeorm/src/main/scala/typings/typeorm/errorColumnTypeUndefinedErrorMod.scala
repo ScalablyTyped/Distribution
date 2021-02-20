@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/error/ColumnTypeUndefinedError", JSImport.Namespace)
-@js.native
-object errorColumnTypeUndefinedErrorMod extends js.Object {
+object errorColumnTypeUndefinedErrorMod {
   
+  @JSImport("typeorm/error/ColumnTypeUndefinedError", "ColumnTypeUndefinedError")
   @js.native
   class ColumnTypeUndefinedError protected () extends Error {
     def this(`object`: js.Object, propertyName: String) = this()

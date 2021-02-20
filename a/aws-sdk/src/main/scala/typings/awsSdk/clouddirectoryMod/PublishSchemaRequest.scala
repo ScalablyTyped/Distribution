@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublishSchemaRequest extends js.Object {
+trait PublishSchemaRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the development schema. For more information, see arns.
@@ -36,36 +37,24 @@ object PublishSchemaRequest {
   }
   
   @scala.inline
-  implicit class PublishSchemaRequestOps[Self <: PublishSchemaRequest] (val x: Self) extends AnyVal {
+  implicit class PublishSchemaRequestMutableBuilder[Self <: PublishSchemaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDevelopmentSchemaArn(value: Arn): Self = StObject.set(x, "DevelopmentSchemaArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinorVersion(value: Version): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinorVersionUndefined: Self = StObject.set(x, "MinorVersion", js.undefined)
     
     @scala.inline
-    def setDevelopmentSchemaArn(value: Arn): Self = this.set("DevelopmentSchemaArn", value.asInstanceOf[js.Any])
+    def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def setMinorVersion(value: Version): Self = this.set("MinorVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinorVersion: Self = this.set("MinorVersion", js.undefined)
-    
-    @scala.inline
-    def setName(value: SchemaName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

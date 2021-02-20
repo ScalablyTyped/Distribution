@@ -1,13 +1,13 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/format/filter/ComparisonBinary", JSImport.Namespace)
-@js.native
-object comparisonBinaryMod extends js.Object {
+object comparisonBinaryMod {
   
+  @JSImport("ol/format/filter/ComparisonBinary", JSImport.Default)
   @js.native
   abstract class default protected ()
     extends typings.ol.comparisonMod.default {

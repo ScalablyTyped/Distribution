@@ -1,12 +1,13 @@
 package typings.mangopay2NodejsSdk.mod
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModelMethods[T /* <: js.Object */] extends js.Object {
+trait ModelMethods[T /* <: js.Object */] extends StObject {
   
   /**
     * Returns object property value

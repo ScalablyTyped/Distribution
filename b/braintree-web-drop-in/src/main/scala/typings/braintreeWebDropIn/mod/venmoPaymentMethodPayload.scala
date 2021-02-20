@@ -2,6 +2,7 @@ package typings.braintreeWebDropIn.mod
 
 import typings.braintreeWebDropIn.anon.Username
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.VenmoAccount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,39 +30,27 @@ object venmoPaymentMethodPayload {
   }
   
   @scala.inline
-  implicit class venmoPaymentMethodPayloadOps[Self <: venmoPaymentMethodPayload] (val x: Self) extends AnyVal {
+  implicit class venmoPaymentMethodPayloadMutableBuilder[Self <: venmoPaymentMethodPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: Username): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
     
     @scala.inline
-    def setDetails(value: Username): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    def setType(value: VenmoAccount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: VenmoAccount): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVaulted(value: Boolean): Self = StObject.set(x, "vaulted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceData(value: String): Self = this.set("deviceData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceData: Self = this.set("deviceData", js.undefined)
-    
-    @scala.inline
-    def setVaulted(value: Boolean): Self = this.set("vaulted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVaulted: Self = this.set("vaulted", js.undefined)
+    def setVaultedUndefined: Self = StObject.set(x, "vaulted", js.undefined)
   }
 }

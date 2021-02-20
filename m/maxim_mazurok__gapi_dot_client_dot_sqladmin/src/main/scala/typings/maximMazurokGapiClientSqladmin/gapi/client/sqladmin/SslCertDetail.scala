@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SslCertDetail extends js.Object {
+trait SslCertDetail extends StObject {
   
   /** The public information about the cert. */
   var certInfo: js.UndefOr[SslCert] = js.native
@@ -22,30 +23,18 @@ object SslCertDetail {
   }
   
   @scala.inline
-  implicit class SslCertDetailOps[Self <: SslCertDetail] (val x: Self) extends AnyVal {
+  implicit class SslCertDetailMutableBuilder[Self <: SslCertDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertInfo(value: SslCert): Self = StObject.set(x, "certInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertInfoUndefined: Self = StObject.set(x, "certInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertPrivateKey(value: String): Self = StObject.set(x, "certPrivateKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertInfo(value: SslCert): Self = this.set("certInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertInfo: Self = this.set("certInfo", js.undefined)
-    
-    @scala.inline
-    def setCertPrivateKey(value: String): Self = this.set("certPrivateKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertPrivateKey: Self = this.set("certPrivateKey", js.undefined)
+    def setCertPrivateKeyUndefined: Self = StObject.set(x, "certPrivateKey", js.undefined)
   }
 }

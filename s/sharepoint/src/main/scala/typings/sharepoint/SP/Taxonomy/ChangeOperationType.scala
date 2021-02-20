@@ -1,14 +1,15 @@
 package typings.sharepoint.SP.Taxonomy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChangeOperationType extends js.Object
+sealed trait ChangeOperationType extends StObject
 @JSGlobal("SP.Taxonomy.ChangeOperationType")
 @js.native
-object ChangeOperationType extends js.Object {
+object ChangeOperationType extends StObject {
   
   @js.native
   sealed trait add extends ChangeOperationType

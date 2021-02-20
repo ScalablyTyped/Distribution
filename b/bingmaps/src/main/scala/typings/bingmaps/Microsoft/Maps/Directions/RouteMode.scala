@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps.Directions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RouteMode extends js.Object
+sealed trait RouteMode extends StObject
 @JSGlobal("Microsoft.Maps.Directions.RouteMode")
 @js.native
-object RouteMode extends js.Object {
+object RouteMode extends StObject {
   
   /** Driving directions are calculated. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTrack extends js.Object {
+trait SchemaTrack extends StObject {
   
   /**
     * A list of all active releases in this track during a read request. On an
@@ -27,33 +28,21 @@ object SchemaTrack {
   }
   
   @scala.inline
-  implicit class SchemaTrackOps[Self <: SchemaTrack] (val x: Self) extends AnyVal {
+  implicit class SchemaTrackMutableBuilder[Self <: SchemaTrack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReleases(value: js.Array[SchemaTrackRelease]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReleasesUndefined: Self = StObject.set(x, "releases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReleasesVarargs(value: SchemaTrackRelease*): Self = StObject.set(x, "releases", js.Array(value :_*))
     
     @scala.inline
-    def setReleasesVarargs(value: SchemaTrackRelease*): Self = this.set("releases", js.Array(value :_*))
+    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleases(value: js.Array[SchemaTrackRelease]): Self = this.set("releases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReleases: Self = this.set("releases", js.undefined)
-    
-    @scala.inline
-    def setTrack(value: String): Self = this.set("track", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

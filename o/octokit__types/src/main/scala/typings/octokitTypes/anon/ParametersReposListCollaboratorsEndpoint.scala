@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ReposListCollaboratorsEndpoint
 import typings.octokitTypes.endpointsMod.ReposListCollaboratorsRequestOptions
 import typings.octokitTypes.endpointsMod.ReposListCollaboratorsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposListCollaboratorsEndpoint extends js.Object {
+trait ParametersReposListCollaboratorsEndpoint extends StObject {
   
   var parameters: ReposListCollaboratorsEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersReposListCollaboratorsEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposListCollaboratorsEndpointOps[Self <: ParametersReposListCollaboratorsEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposListCollaboratorsEndpointMutableBuilder[Self <: ParametersReposListCollaboratorsEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposListCollaboratorsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReposListCollaboratorsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposListCollaboratorsEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReposListCollaboratorsRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListCollaboratorsResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposListCollaboratorsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VaultNotificationConfig extends js.Object {
+trait VaultNotificationConfig extends StObject {
   
   /**
     * A list of one or more events for which Amazon S3 Glacier will send a notification to the specified Amazon SNS topic.
@@ -26,33 +27,21 @@ object VaultNotificationConfig {
   }
   
   @scala.inline
-  implicit class VaultNotificationConfigOps[Self <: VaultNotificationConfig] (val x: Self) extends AnyVal {
+  implicit class VaultNotificationConfigMutableBuilder[Self <: VaultNotificationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: NotificationEventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("Events", js.Array(value :_*))
+    def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: NotificationEventList): Self = this.set("Events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("Events", js.undefined)
-    
-    @scala.inline
-    def setSNSTopic(value: String): Self = this.set("SNSTopic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSNSTopic: Self = this.set("SNSTopic", js.undefined)
+    def setSNSTopicUndefined: Self = StObject.set(x, "SNSTopic", js.undefined)
   }
 }

@@ -1,15 +1,14 @@
 package typings.expectations
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Expectations")
-@js.native
-object Expectations extends js.Object {
+object Expectations {
   
   @js.native
-  trait Expect extends js.Object {
+  trait Expect extends StObject {
     
     var assertions: IAssertions = js.native
     
@@ -61,7 +60,7 @@ object Expectations extends js.Object {
   }
   
   @js.native
-  trait IAssertions extends js.Object {
+  trait IAssertions extends StObject {
     
     def fail(message: String): js.Any = js.native
     
@@ -70,7 +69,7 @@ object Expectations extends js.Object {
   }
   
   @js.native
-  trait IExpectations extends js.Object {
+  trait IExpectations extends StObject {
     
     def apply(value: js.Any): Expect = js.native
     

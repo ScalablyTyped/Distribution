@@ -1,11 +1,12 @@
 package typings.screeps.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KHO2 extends js.Object {
+trait KHO2 extends StObject {
   
   var KHO2: RangedMassAttack = js.native
   
@@ -22,27 +23,15 @@ object KHO2 {
   }
   
   @scala.inline
-  implicit class KHO2Ops[Self <: KHO2] (val x: Self) extends AnyVal {
+  implicit class KHO2MutableBuilder[Self <: KHO2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKHO2(value: RangedMassAttack): Self = StObject.set(x, "KHO2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKO(value: RangedAttack): Self = StObject.set(x, "KO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKHO2(value: RangedMassAttack): Self = this.set("KHO2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKO(value: RangedAttack): Self = this.set("KO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXKHO2(value: RangedAttackRangedMassAttack): Self = this.set("XKHO2", value.asInstanceOf[js.Any])
+    def setXKHO2(value: RangedAttackRangedMassAttack): Self = StObject.set(x, "XKHO2", value.asInstanceOf[js.Any])
   }
 }

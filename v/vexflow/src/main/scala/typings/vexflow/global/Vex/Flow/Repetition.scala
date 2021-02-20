@@ -1,5 +1,6 @@
 package typings.vexflow.global.Vex.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,12 +11,11 @@ class Repetition protected ()
   extends typings.vexflow.Vex.Flow.Repetition {
   def this(`type`: typings.vexflow.Vex.Flow.Repetition.`type`, x: Double, y_shift: Double) = this()
 }
-@JSGlobal("Vex.Flow.Repetition")
-@js.native
-object Repetition extends js.Object {
+object Repetition {
   
+  @JSGlobal("Vex.Flow.Repetition.type")
   @js.native
-  object `type` extends js.Object {
+  object `type` extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Repetition.`type` with Double] = js.native

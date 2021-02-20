@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudWorkspaceSourceContext extends js.Object {
+trait CloudWorkspaceSourceContext extends StObject {
   
   /** The ID of the snapshot. An empty snapshot_id refers to the most recent snapshot. */
   var snapshotId: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object CloudWorkspaceSourceContext {
   }
   
   @scala.inline
-  implicit class CloudWorkspaceSourceContextOps[Self <: CloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
+  implicit class CloudWorkspaceSourceContextMutableBuilder[Self <: CloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkspaceId(value: CloudWorkspaceId): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: String): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceId(value: CloudWorkspaceId): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceId: Self = this.set("workspaceId", js.undefined)
+    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

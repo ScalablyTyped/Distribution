@@ -1,11 +1,12 @@
 package typings.extendedListbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseListBox extends js.Object {
+trait BaseListBox extends StObject {
   
   /** Adds a new item to the list */
   def addItem(item: String): String = js.native

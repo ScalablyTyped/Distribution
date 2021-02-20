@@ -27,6 +27,7 @@ import typings.reactNative.reactNativeStrings.right
 import typings.reactNative.reactNativeStrings.top
 import typings.reactNative.reactNativeStrings.underline
 import typings.reactNative.reactNativeStrings.uppercase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -83,102 +84,90 @@ object TextStyle {
   }
   
   @scala.inline
-  implicit class TextStyleOps[Self <: TextStyle] (val x: Self) extends AnyVal {
+  implicit class TextStyleMutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorValue): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorValue): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: normal_ | italic): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontWeight(value: normal_ | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: normal_ | italic): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setIncludeFontPadding(value: Boolean): Self = StObject.set(x, "includeFontPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: normal_ | bold | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setIncludeFontPaddingUndefined: Self = StObject.set(x, "includeFontPadding", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeFontPadding(value: Boolean): Self = this.set("includeFontPadding", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteIncludeFontPadding: Self = this.set("includeFontPadding", js.undefined)
+    def setTextAlign(value: auto | left | right | center | justify): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlign(value: auto | left | right | center | justify): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    def setTextDecorationLine(value: none | underline | `line-through` | (`underline line-through`)): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAlignVertical(value: auto | top | bottom | center): Self = this.set("textAlignVertical", value.asInstanceOf[js.Any])
+    def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
     
     @scala.inline
-    def deleteTextAlignVertical: Self = this.set("textAlignVertical", js.undefined)
+    def setTextShadowColor(value: ColorValue): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDecorationLine(value: none | underline | `line-through` | (`underline line-through`)): Self = this.set("textDecorationLine", value.asInstanceOf[js.Any])
+    def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
     
     @scala.inline
-    def deleteTextDecorationLine: Self = this.set("textDecorationLine", js.undefined)
+    def setTextShadowOffset(value: Height): Self = StObject.set(x, "textShadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowColor(value: ColorValue): Self = this.set("textShadowColor", value.asInstanceOf[js.Any])
+    def setTextShadowOffsetUndefined: Self = StObject.set(x, "textShadowOffset", js.undefined)
     
     @scala.inline
-    def deleteTextShadowColor: Self = this.set("textShadowColor", js.undefined)
+    def setTextShadowRadius(value: Double): Self = StObject.set(x, "textShadowRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowOffset(value: Height): Self = this.set("textShadowOffset", value.asInstanceOf[js.Any])
+    def setTextShadowRadiusUndefined: Self = StObject.set(x, "textShadowRadius", js.undefined)
     
     @scala.inline
-    def deleteTextShadowOffset: Self = this.set("textShadowOffset", js.undefined)
+    def setTextTransform(value: none | capitalize | uppercase | lowercase): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowRadius(value: Double): Self = this.set("textShadowRadius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextShadowRadius: Self = this.set("textShadowRadius", js.undefined)
-    
-    @scala.inline
-    def setTextTransform(value: none | capitalize | uppercase | lowercase): Self = this.set("textTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextTransform: Self = this.set("textTransform", js.undefined)
+    def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.angularRouter.mod
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "ChildrenOutletContexts")
 @js.native
-class ChildrenOutletContexts () extends js.Object {
+class ChildrenOutletContexts () extends StObject {
   
   var contexts: js.Any = js.native
   

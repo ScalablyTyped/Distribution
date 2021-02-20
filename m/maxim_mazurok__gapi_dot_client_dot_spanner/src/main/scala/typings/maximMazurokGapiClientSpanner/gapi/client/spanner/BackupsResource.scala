@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientSpanner.anon.Key
 import typings.maximMazurokGapiClientSpanner.anon.Name
 import typings.maximMazurokGapiClientSpanner.anon.Oauthtoken
 import typings.maximMazurokGapiClientSpanner.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackupsResource extends js.Object {
+trait BackupsResource extends StObject {
   
   /**
     * Starts creating a new Cloud Spanner Backup. The returned backup long-running operation will have a name of the format `projects//instances//backups//operations/` and can be used to

@@ -1,11 +1,12 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteResponse extends js.Object {
+trait RouteResponse extends StObject {
   
   var agents: js.Array[AgentResponse] = js.native
 }
@@ -18,24 +19,12 @@ object RouteResponse {
   }
   
   @scala.inline
-  implicit class RouteResponseOps[Self <: RouteResponse] (val x: Self) extends AnyVal {
+  implicit class RouteResponseMutableBuilder[Self <: RouteResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgents(value: js.Array[AgentResponse]): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAgentsVarargs(value: AgentResponse*): Self = this.set("agents", js.Array(value :_*))
-    
-    @scala.inline
-    def setAgents(value: js.Array[AgentResponse]): Self = this.set("agents", value.asInstanceOf[js.Any])
+    def setAgentsVarargs(value: AgentResponse*): Self = StObject.set(x, "agents", js.Array(value :_*))
   }
 }

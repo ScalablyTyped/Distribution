@@ -9,18 +9,16 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Date
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("memfs/lib/node", JSImport.Namespace)
-@js.native
-object nodeMod extends js.Object {
+object nodeMod {
   
-  val SEP: /* "/" */ String = js.native
-  
+  @JSImport("memfs/lib/node", "File")
   @js.native
-  class File protected () extends js.Object {
+  class File protected () extends StObject {
     /**
       * Open a Link-Node pair. `node` is provided separately as that might be a different node
       * rather the one `link` points to, because it might be a symlink.
@@ -117,6 +115,7 @@ object nodeMod extends js.Object {
     def write(buf: Buffer, offset: Double, length: Double, position: Double): Double = js.native
   }
   
+  @JSImport("memfs/lib/node", "Link")
   @js.native
   class Link protected () extends EventEmitter {
     def this(vol: Volume, parent: Link, name: String) = this()
@@ -169,6 +168,7 @@ object nodeMod extends js.Object {
     def walk(steps: js.Array[String], stop: Double, i: Double): Link | Null = js.native
   }
   
+  @JSImport("memfs/lib/node", "Node")
   @js.native
   class Node protected () extends EventEmitter {
     def this(ino: Double) = this()
@@ -272,4 +272,8 @@ object nodeMod extends js.Object {
     def write(buf: Buffer, off: Double, len: Double): Double = js.native
     def write(buf: Buffer, off: Double, len: Double, pos: Double): Double = js.native
   }
+  
+  @JSImport("memfs/lib/node", "SEP")
+  @js.native
+  val SEP: /* "/" */ String = js.native
 }

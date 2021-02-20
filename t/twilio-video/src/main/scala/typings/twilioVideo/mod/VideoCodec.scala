@@ -1,5 +1,6 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.twilioVideo.twilioVideoStrings.VP8
   - typings.twilioVideo.twilioVideoStrings.VP9
 */
-trait VideoCodec extends js.Object
+trait VideoCodec extends StObject
 object VideoCodec {
   
   @scala.inline

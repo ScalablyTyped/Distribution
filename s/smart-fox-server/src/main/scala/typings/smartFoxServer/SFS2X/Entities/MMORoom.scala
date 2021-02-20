@@ -4,6 +4,7 @@ import typings.smartFoxServer.SFS2X.Entities.Data.Vec3D
 import typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable
 import typings.smartFoxServer.SFS2X.Managers.RoomManager
 import typings.smartFoxServer.SFS2X.Requests.MMO.MapLimits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,33 +72,21 @@ object MMORoom {
   }
   
   @scala.inline
-  implicit class MMORoomOps[Self <: MMORoom] (val x: Self) extends AnyVal {
+  implicit class MMORoomMutableBuilder[Self <: MMORoom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAOI(value: Vec3D): Self = StObject.set(x, "defaultAOI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMMOItem(value: Double => MMOItem): Self = StObject.set(x, "getMMOItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMMOItems(value: () => js.Array[MMOItem]): Self = StObject.set(x, "getMMOItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultAOI(value: Vec3D): Self = this.set("defaultAOI", value.asInstanceOf[js.Any])
+    def setHigherMapLimit(value: MapLimits): Self = StObject.set(x, "higherMapLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMMOItem(value: Double => MMOItem): Self = this.set("getMMOItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMMOItems(value: () => js.Array[MMOItem]): Self = this.set("getMMOItems", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setHigherMapLimit(value: MapLimits): Self = this.set("higherMapLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLowerMapLimit(value: MapLimits): Self = this.set("lowerMapLimit", value.asInstanceOf[js.Any])
+    def setLowerMapLimit(value: MapLimits): Self = StObject.set(x, "lowerMapLimit", value.asInstanceOf[js.Any])
   }
 }

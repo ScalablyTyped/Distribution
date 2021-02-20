@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,57 +55,45 @@ object Annotation {
   }
   
   @scala.inline
-  implicit class AnnotationOps[Self <: Annotation] (val x: Self) extends AnyVal {
+  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorReference(value: Reference): Self = StObject.set(x, "authorReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorReferenceUndefined: Self = StObject.set(x, "authorReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthorString(value: String): Self = StObject.set(x, "authorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setAuthorStringUndefined: Self = StObject.set(x, "authorString", js.undefined)
     
     @scala.inline
-    def set_authorString(value: Element): Self = this.set("_authorString", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_authorString: Self = this.set("_authorString", js.undefined)
+    def setTime(value: dateTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def delete_text: Self = this.set("_text", js.undefined)
+    def set_authorString(value: Element): Self = StObject.set(x, "_authorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_time(value: Element): Self = this.set("_time", value.asInstanceOf[js.Any])
+    def set_authorStringUndefined: Self = StObject.set(x, "_authorString", js.undefined)
     
     @scala.inline
-    def delete_time: Self = this.set("_time", js.undefined)
+    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorReference(value: Reference): Self = this.set("authorReference", value.asInstanceOf[js.Any])
+    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
     
     @scala.inline
-    def deleteAuthorReference: Self = this.set("authorReference", js.undefined)
+    def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorString(value: String): Self = this.set("authorString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthorString: Self = this.set("authorString", js.undefined)
-    
-    @scala.inline
-    def setTime(value: dateTime): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
   }
 }

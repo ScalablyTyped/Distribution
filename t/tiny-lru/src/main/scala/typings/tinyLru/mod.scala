@@ -1,20 +1,27 @@
 package typings.tinyLru
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tiny-lru", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("tiny-lru", JSImport.Default)
+  @js.native
   def default[T](): Lru[T] = js.native
+  @JSImport("tiny-lru", JSImport.Default)
+  @js.native
   def default[T](max: js.UndefOr[scala.Nothing], ttl: Double): Lru[T] = js.native
+  @JSImport("tiny-lru", JSImport.Default)
+  @js.native
   def default[T](max: Double): Lru[T] = js.native
+  @JSImport("tiny-lru", JSImport.Default)
+  @js.native
   def default[T](max: Double, ttl: Double): Lru[T] = js.native
   
   @js.native
-  trait Lru[T] extends js.Object {
+  trait Lru[T] extends StObject {
     
     def clear(): this.type = js.native
     

@@ -7,17 +7,23 @@ import typings.reactSvg.anon.HasError
 import typings.reactSvg.typesMod.Props
 import typings.reactSvg.typesMod.State
 import typings.reactSvg.typesMod.WrapperType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-svg/dist/ReactSVG", JSImport.Namespace)
-@js.native
-object reactSVGMod extends js.Object {
+object reactSVGMod {
   
+  @JSImport("react-svg/dist/ReactSVG", "ReactSVG")
   @js.native
-  class ReactSVG ()
+  class ReactSVG protected ()
     extends Component[Props, State, js.Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: js.Any) = this()
     
     var _isMounted: Boolean = js.native
     
@@ -47,11 +53,22 @@ object reactSVGMod extends js.Object {
     var svgWrapper: js.UndefOr[WrapperType | Null] = js.native
   }
   /* static members */
-  @js.native
-  object ReactSVG extends js.Object {
+  object ReactSVG {
     
-    var defaultProps: AfterInjection = js.native
+    @JSImport("react-svg/dist/ReactSVG", "ReactSVG")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var propTypes: BeforeInjection = js.native
+    @JSImport("react-svg/dist/ReactSVG", "ReactSVG.defaultProps")
+    @js.native
+    def defaultProps: AfterInjection = js.native
+    @scala.inline
+    def defaultProps_=(x: AfterInjection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-svg/dist/ReactSVG", "ReactSVG.propTypes")
+    @js.native
+    def propTypes: BeforeInjection = js.native
+    @scala.inline
+    def propTypes_=(x: BeforeInjection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

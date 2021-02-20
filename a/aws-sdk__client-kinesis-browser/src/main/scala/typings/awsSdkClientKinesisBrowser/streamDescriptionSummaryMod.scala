@@ -1,13 +1,13 @@
 package typings.awsSdkClientKinesisBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kinesis-browser/model/_StreamDescriptionSummary", JSImport.Namespace)
-@js.native
-object streamDescriptionSummaryMod extends js.Object {
+object streamDescriptionSummaryMod {
   
-  @JSName("_StreamDescriptionSummary")
+  @JSImport("@aws-sdk/client-kinesis-browser/model/_StreamDescriptionSummary", "_StreamDescriptionSummary")
+  @js.native
   val StreamDescriptionSummary: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

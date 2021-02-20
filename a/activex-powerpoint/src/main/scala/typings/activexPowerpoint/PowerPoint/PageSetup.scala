@@ -1,12 +1,13 @@
 package typings.activexPowerpoint.PowerPoint
 
 import typings.activexOffice.Office.MsoOrientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageSetup extends js.Object {
+trait PageSetup extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -47,45 +48,33 @@ object PageSetup {
   }
   
   @scala.inline
-  implicit class PageSetupOps[Self <: PageSetup] (val x: Self) extends AnyVal {
+  implicit class PageSetupMutableBuilder[Self <: PageSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstSlideNumber(value: Double): Self = StObject.set(x, "FirstSlideNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotesOrientation(value: MsoOrientation): Self = StObject.set(x, "NotesOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstSlideNumber(value: Double): Self = this.set("FirstSlideNumber", value.asInstanceOf[js.Any])
+    def setPowerPointDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "PowerPoint.PageSetup_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotesOrientation(value: MsoOrientation): Self = this.set("NotesOrientation", value.asInstanceOf[js.Any])
+    def setSlideHeight(value: Double): Self = StObject.set(x, "SlideHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSlideOrientation(value: MsoOrientation): Self = StObject.set(x, "SlideOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotPageSetup_typekey(value: PageSetup): Self = this.set("PowerPoint.PageSetup_typekey", value.asInstanceOf[js.Any])
+    def setSlideSize(value: PpSlideSizeType): Self = StObject.set(x, "SlideSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideHeight(value: Double): Self = this.set("SlideHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlideOrientation(value: MsoOrientation): Self = this.set("SlideOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlideSize(value: PpSlideSizeType): Self = this.set("SlideSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlideWidth(value: Double): Self = this.set("SlideWidth", value.asInstanceOf[js.Any])
+    def setSlideWidth(value: Double): Self = StObject.set(x, "SlideWidth", value.asInstanceOf[js.Any])
   }
 }

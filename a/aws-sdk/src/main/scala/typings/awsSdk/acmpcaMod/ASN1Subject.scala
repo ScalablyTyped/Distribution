@@ -1,11 +1,12 @@
 package typings.awsSdk.acmpcaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASN1Subject extends js.Object {
+trait ASN1Subject extends StObject {
   
   /**
     * Fully qualified domain name (FQDN) associated with the certificate subject.
@@ -86,102 +87,90 @@ object ASN1Subject {
   }
   
   @scala.inline
-  implicit class ASN1SubjectOps[Self <: ASN1Subject] (val x: Self) extends AnyVal {
+  implicit class ASN1SubjectMutableBuilder[Self <: ASN1Subject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommonName(value: String64): Self = StObject.set(x, "CommonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: CountryCodeString): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommonName(value: String64): Self = this.set("CommonName", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
     @scala.inline
-    def deleteCommonName: Self = this.set("CommonName", js.undefined)
+    def setDistinguishedNameQualifier(value: ASN1PrintableString64): Self = StObject.set(x, "DistinguishedNameQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: CountryCodeString): Self = this.set("Country", value.asInstanceOf[js.Any])
+    def setDistinguishedNameQualifierUndefined: Self = StObject.set(x, "DistinguishedNameQualifier", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("Country", js.undefined)
+    def setGenerationQualifier(value: String3): Self = StObject.set(x, "GenerationQualifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinguishedNameQualifier(value: ASN1PrintableString64): Self = this.set("DistinguishedNameQualifier", value.asInstanceOf[js.Any])
+    def setGenerationQualifierUndefined: Self = StObject.set(x, "GenerationQualifier", js.undefined)
     
     @scala.inline
-    def deleteDistinguishedNameQualifier: Self = this.set("DistinguishedNameQualifier", js.undefined)
+    def setGivenName(value: String16): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerationQualifier(value: String3): Self = this.set("GenerationQualifier", value.asInstanceOf[js.Any])
+    def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
     
     @scala.inline
-    def deleteGenerationQualifier: Self = this.set("GenerationQualifier", js.undefined)
+    def setInitials(value: String5): Self = StObject.set(x, "Initials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: String16): Self = this.set("GivenName", value.asInstanceOf[js.Any])
+    def setInitialsUndefined: Self = StObject.set(x, "Initials", js.undefined)
     
     @scala.inline
-    def deleteGivenName: Self = this.set("GivenName", js.undefined)
+    def setLocality(value: String128): Self = StObject.set(x, "Locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitials(value: String5): Self = this.set("Initials", value.asInstanceOf[js.Any])
+    def setLocalityUndefined: Self = StObject.set(x, "Locality", js.undefined)
     
     @scala.inline
-    def deleteInitials: Self = this.set("Initials", js.undefined)
+    def setOrganization(value: String64): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocality(value: String128): Self = this.set("Locality", value.asInstanceOf[js.Any])
+    def setOrganizationUndefined: Self = StObject.set(x, "Organization", js.undefined)
     
     @scala.inline
-    def deleteLocality: Self = this.set("Locality", js.undefined)
+    def setOrganizationalUnit(value: String64): Self = StObject.set(x, "OrganizationalUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganization(value: String64): Self = this.set("Organization", value.asInstanceOf[js.Any])
+    def setOrganizationalUnitUndefined: Self = StObject.set(x, "OrganizationalUnit", js.undefined)
     
     @scala.inline
-    def deleteOrganization: Self = this.set("Organization", js.undefined)
+    def setPseudonym(value: String128): Self = StObject.set(x, "Pseudonym", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationalUnit(value: String64): Self = this.set("OrganizationalUnit", value.asInstanceOf[js.Any])
+    def setPseudonymUndefined: Self = StObject.set(x, "Pseudonym", js.undefined)
     
     @scala.inline
-    def deleteOrganizationalUnit: Self = this.set("OrganizationalUnit", js.undefined)
+    def setSerialNumber(value: ASN1PrintableString64): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPseudonym(value: String128): Self = this.set("Pseudonym", value.asInstanceOf[js.Any])
+    def setSerialNumberUndefined: Self = StObject.set(x, "SerialNumber", js.undefined)
     
     @scala.inline
-    def deletePseudonym: Self = this.set("Pseudonym", js.undefined)
+    def setState(value: String128): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSerialNumber(value: ASN1PrintableString64): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    def setSurname(value: String40): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String128): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTitle(value: String64): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurname(value: String40): Self = this.set("Surname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSurname: Self = this.set("Surname", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String64): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBackupsOutput extends js.Object {
+trait ListBackupsOutput extends StObject {
   
   /**
     * List of BackupSummary objects.
@@ -26,33 +27,21 @@ object ListBackupsOutput {
   }
   
   @scala.inline
-  implicit class ListBackupsOutputOps[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
+  implicit class ListBackupsOutputMutableBuilder[Self <: ListBackupsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupSummaries(value: BackupSummaries): Self = StObject.set(x, "BackupSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setBackupSummariesVarargs(value: BackupSummary*): Self = this.set("BackupSummaries", js.Array(value :_*))
+    def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupSummaries(value: BackupSummaries): Self = this.set("BackupSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupSummaries: Self = this.set("BackupSummaries", js.undefined)
-    
-    @scala.inline
-    def setLastEvaluatedBackupArn(value: BackupArn): Self = this.set("LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastEvaluatedBackupArn: Self = this.set("LastEvaluatedBackupArn", js.undefined)
+    def setLastEvaluatedBackupArnUndefined: Self = StObject.set(x, "LastEvaluatedBackupArn", js.undefined)
   }
 }

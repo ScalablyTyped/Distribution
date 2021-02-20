@@ -1,12 +1,13 @@
 package typings.reactNativeChartsWrapper.mod
 
 import typings.reactNativeChartsWrapper.anon.BarWidth
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BarData extends js.Object {
+trait BarData extends StObject {
   
   var config: js.UndefOr[BarWidth] = js.native
   
@@ -21,33 +22,21 @@ object BarData {
   }
   
   @scala.inline
-  implicit class BarDataOps[Self <: BarData] (val x: Self) extends AnyVal {
+  implicit class BarDataMutableBuilder[Self <: BarData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: BarWidth): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSets(value: js.Array[BarDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: BarWidth): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
-    
-    @scala.inline
-    def setDataSetsVarargs(value: BarDataset*): Self = this.set("dataSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataSets(value: js.Array[BarDataset]): Self = this.set("dataSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSets: Self = this.set("dataSets", js.undefined)
+    def setDataSetsVarargs(value: BarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

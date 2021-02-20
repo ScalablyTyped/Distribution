@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkAuthenticationType extends js.Object
+sealed trait NetworkAuthenticationType extends StObject
 /** Defines values that indicate the type of authentication used by the network. */
 @JSGlobal("Windows.Networking.Connectivity.NetworkAuthenticationType")
 @js.native
-object NetworkAuthenticationType extends js.Object {
+object NetworkAuthenticationType extends StObject {
   
   /** Specifies an authentication type defined by an independent hardware vendor (IHV). */
   @js.native

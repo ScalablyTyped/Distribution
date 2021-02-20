@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.view
 
 import typings.activexLibreoffice.com_.sun.star.awt.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.beans.PropertyValue
   */
 @js.native
-trait PrinterDescriptor extends js.Object {
+trait PrinterDescriptor extends StObject {
   
   /** indicates, whether the printer allows changes to {@link PrinterDescriptor.PaperFormat} . */
   var CanSetPaperFormat: Boolean = js.native
@@ -68,42 +69,30 @@ object PrinterDescriptor {
   }
   
   @scala.inline
-  implicit class PrinterDescriptorOps[Self <: PrinterDescriptor] (val x: Self) extends AnyVal {
+  implicit class PrinterDescriptorMutableBuilder[Self <: PrinterDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanSetPaperFormat(value: Boolean): Self = StObject.set(x, "CanSetPaperFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanSetPaperOrientation(value: Boolean): Self = StObject.set(x, "CanSetPaperOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanSetPaperSize(value: Boolean): Self = StObject.set(x, "CanSetPaperSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSetPaperFormat(value: Boolean): Self = this.set("CanSetPaperFormat", value.asInstanceOf[js.Any])
+    def setIsBusy(value: Boolean): Self = StObject.set(x, "IsBusy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSetPaperOrientation(value: Boolean): Self = this.set("CanSetPaperOrientation", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanSetPaperSize(value: Boolean): Self = this.set("CanSetPaperSize", value.asInstanceOf[js.Any])
+    def setPaperFormat(value: PaperFormat): Self = StObject.set(x, "PaperFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBusy(value: Boolean): Self = this.set("IsBusy", value.asInstanceOf[js.Any])
+    def setPaperOrientation(value: PaperOrientation): Self = StObject.set(x, "PaperOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaperFormat(value: PaperFormat): Self = this.set("PaperFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaperOrientation(value: PaperOrientation): Self = this.set("PaperOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPaperSize(value: Size): Self = this.set("PaperSize", value.asInstanceOf[js.Any])
+    def setPaperSize(value: Size): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
   }
 }

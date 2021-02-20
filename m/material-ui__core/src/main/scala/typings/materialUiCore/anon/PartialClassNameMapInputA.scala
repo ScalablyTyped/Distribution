@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/InputAdornment/InputAdornment.InputAdornmentClassKey>> */
 @js.native
-trait PartialClassNameMapInputA extends js.Object {
+trait PartialClassNameMapInputA extends StObject {
   
   var disablePointerEvents: js.UndefOr[String] = js.native
   
@@ -27,48 +28,36 @@ object PartialClassNameMapInputA {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapInputAOps[Self <: PartialClassNameMapInputA] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapInputAMutableBuilder[Self <: PartialClassNameMapInputA] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisablePointerEvents(value: String): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisablePointerEventsUndefined: Self = StObject.set(x, "disablePointerEvents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisablePointerEvents(value: String): Self = this.set("disablePointerEvents", value.asInstanceOf[js.Any])
+    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
     @scala.inline
-    def deleteDisablePointerEvents: Self = this.set("disablePointerEvents", js.undefined)
+    def setPositionEnd(value: String): Self = StObject.set(x, "positionEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilled(value: String): Self = this.set("filled", value.asInstanceOf[js.Any])
+    def setPositionEndUndefined: Self = StObject.set(x, "positionEnd", js.undefined)
     
     @scala.inline
-    def deleteFilled: Self = this.set("filled", js.undefined)
+    def setPositionStart(value: String): Self = StObject.set(x, "positionStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionEnd(value: String): Self = this.set("positionEnd", value.asInstanceOf[js.Any])
+    def setPositionStartUndefined: Self = StObject.set(x, "positionStart", js.undefined)
     
     @scala.inline
-    def deletePositionEnd: Self = this.set("positionEnd", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionStart(value: String): Self = this.set("positionStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositionStart: Self = this.set("positionStart", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

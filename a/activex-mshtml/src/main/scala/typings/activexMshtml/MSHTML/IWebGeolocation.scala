@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebGeolocation extends js.Object {
+trait IWebGeolocation extends StObject {
   
   @JSName("MSHTML.IWebGeolocation_typekey")
   var MSHTMLDotIWebGeolocation_typekey: IWebGeolocation = js.native

@@ -1,6 +1,7 @@
 package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * QueuingConfiguration holds the configuration parameters for queuing
   */
 @js.native
-trait QueuingConfiguration extends js.Object {
+trait QueuingConfiguration extends StObject {
   
   /**
     * `handSize` is a small positive number that configures the shuffle sharding of requests into queues.  When enqueuing a request at this priority level the request's flow identifier (a string pair) is hashed and the hash value is used to shuffle the list of queues and deal a hand of the size specified here.  The request is put into one of the shortest queues in that hand. `handSize` must be no larger than `queues`, and should be significantly smaller (so that a few heavy flows do not saturate most of the queues).  See the user-facing documentation for more extensive guidance on setting this field.  This field has a default value of 8.
@@ -35,36 +36,24 @@ object QueuingConfiguration {
   }
   
   @scala.inline
-  implicit class QueuingConfigurationOps[Self <: QueuingConfiguration] (val x: Self) extends AnyVal {
+  implicit class QueuingConfigurationMutableBuilder[Self <: QueuingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandSize(value: Input[Double]): Self = StObject.set(x, "handSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandSizeUndefined: Self = StObject.set(x, "handSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQueueLengthLimit(value: Input[Double]): Self = StObject.set(x, "queueLengthLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandSize(value: Input[Double]): Self = this.set("handSize", value.asInstanceOf[js.Any])
+    def setQueueLengthLimitUndefined: Self = StObject.set(x, "queueLengthLimit", js.undefined)
     
     @scala.inline
-    def deleteHandSize: Self = this.set("handSize", js.undefined)
+    def setQueues(value: Input[Double]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueueLengthLimit(value: Input[Double]): Self = this.set("queueLengthLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueueLengthLimit: Self = this.set("queueLengthLimit", js.undefined)
-    
-    @scala.inline
-    def setQueues(value: Input[Double]): Self = this.set("queues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueues: Self = this.set("queues", js.undefined)
+    def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
   }
 }

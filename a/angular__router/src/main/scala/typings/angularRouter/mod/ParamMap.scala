@@ -1,11 +1,12 @@
 package typings.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParamMap extends js.Object {
+trait ParamMap extends StObject {
   
   /**
     * Retrieves a single value for a parameter.
@@ -49,33 +50,21 @@ object ParamMap {
   }
   
   @scala.inline
-  implicit class ParamMapOps[Self <: ParamMap] (val x: Self) extends AnyVal {
+  implicit class ParamMapMutableBuilder[Self <: ParamMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet(value: String => String | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAll(value: String => js.Array[String]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGet(value: String => String | Null): Self = this.set("get", js.Any.fromFunction1(value))
+    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAll(value: String => js.Array[String]): Self = this.set("getAll", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setHas(value: String => Boolean): Self = this.set("has", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

@@ -1,6 +1,7 @@
 package typings.extjs.Ext
 
 import typings.extjs.Ext.container.IAbstractContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object IContainer {
   }
   
   @scala.inline
-  implicit class IContainerOps[Self <: IContainer] (val x: Self) extends AnyVal {
+  implicit class IContainerMutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorSize(value: js.Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChildByElement(value: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "getChildByElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAnchorSize(value: js.Any): Self = this.set("anchorSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnchorSize: Self = this.set("anchorSize", js.undefined)
-    
-    @scala.inline
-    def setGetChildByElement(value: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent): Self = this.set("getChildByElement", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGetChildByElement: Self = this.set("getChildByElement", js.undefined)
+    def setGetChildByElementUndefined: Self = StObject.set(x, "getChildByElement", js.undefined)
   }
 }

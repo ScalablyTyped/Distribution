@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,120 +97,108 @@ object INodeStore {
   }
   
   @scala.inline
-  implicit class INodeStoreOps[Self <: INodeStore] (val x: Self) extends AnyVal {
+  implicit class INodeStoreMutableBuilder[Self <: INodeStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFolderSort(value: Boolean): Self = StObject.set(x, "folderSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolderSortUndefined: Self = StObject.set(x, "folderSort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFilters(value: () => _): Self = StObject.set(x, "getFilters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFolderSort(value: Boolean): Self = this.set("folderSort", value.asInstanceOf[js.Any])
+    def setGetFiltersUndefined: Self = StObject.set(x, "getFilters", js.undefined)
     
     @scala.inline
-    def deleteFolderSort: Self = this.set("folderSort", js.undefined)
+    def setGetFolderSort(value: () => Boolean): Self = StObject.set(x, "getFolderSort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilters(value: () => _): Self = this.set("getFilters", js.Any.fromFunction0(value))
+    def setGetFolderSortUndefined: Self = StObject.set(x, "getFolderSort", js.undefined)
     
     @scala.inline
-    def deleteGetFilters: Self = this.set("getFilters", js.undefined)
+    def setGetNode(value: () => IModel): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFolderSort(value: () => Boolean): Self = this.set("getFolderSort", js.Any.fromFunction0(value))
+    def setGetNodeUndefined: Self = StObject.set(x, "getNode", js.undefined)
     
     @scala.inline
-    def deleteGetFolderSort: Self = this.set("getFolderSort", js.undefined)
+    def setGetRecursive(value: () => Boolean): Self = StObject.set(x, "getRecursive", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNode(value: () => IModel): Self = this.set("getNode", js.Any.fromFunction0(value))
+    def setGetRecursiveUndefined: Self = StObject.set(x, "getRecursive", js.undefined)
     
     @scala.inline
-    def deleteGetNode: Self = this.set("getNode", js.undefined)
+    def setGetRootVisible(value: () => Boolean): Self = StObject.set(x, "getRootVisible", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecursive(value: () => Boolean): Self = this.set("getRecursive", js.Any.fromFunction0(value))
+    def setGetRootVisibleUndefined: Self = StObject.set(x, "getRootVisible", js.undefined)
     
     @scala.inline
-    def deleteGetRecursive: Self = this.set("getRecursive", js.undefined)
+    def setGetSorters(value: () => _): Self = StObject.set(x, "getSorters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRootVisible(value: () => Boolean): Self = this.set("getRootVisible", js.Any.fromFunction0(value))
+    def setGetSortersUndefined: Self = StObject.set(x, "getSorters", js.undefined)
     
     @scala.inline
-    def deleteGetRootVisible: Self = this.set("getRootVisible", js.undefined)
+    def setIsVisible(value: /* node */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSorters(value: () => _): Self = this.set("getSorters", js.Any.fromFunction0(value))
+    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
     @scala.inline
-    def deleteGetSorters: Self = this.set("getSorters", js.undefined)
+    def setNode(value: IModel): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVisible(value: /* node */ js.UndefOr[js.Any] => Boolean): Self = this.set("isVisible", js.Any.fromFunction1(value))
+    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
     @scala.inline
-    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
+    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: IModel): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
     @scala.inline
-    def deleteNode: Self = this.set("node", js.undefined)
+    def setRootVisible(value: Boolean): Self = StObject.set(x, "rootVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursive(value: Boolean): Self = this.set("recursive", value.asInstanceOf[js.Any])
+    def setRootVisibleUndefined: Self = StObject.set(x, "rootVisible", js.undefined)
     
     @scala.inline
-    def deleteRecursive: Self = this.set("recursive", js.undefined)
+    def setSetFilters(value: /* filters */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRootVisible(value: Boolean): Self = this.set("rootVisible", value.asInstanceOf[js.Any])
+    def setSetFiltersUndefined: Self = StObject.set(x, "setFilters", js.undefined)
     
     @scala.inline
-    def deleteRootVisible: Self = this.set("rootVisible", js.undefined)
+    def setSetFolderSort(value: /* folderSort */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setFolderSort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFilters(value: /* filters */ js.UndefOr[js.Any] => Unit): Self = this.set("setFilters", js.Any.fromFunction1(value))
+    def setSetFolderSortUndefined: Self = StObject.set(x, "setFolderSort", js.undefined)
     
     @scala.inline
-    def deleteSetFilters: Self = this.set("setFilters", js.undefined)
+    def setSetNode(value: /* node */ js.UndefOr[IModel] => Unit): Self = StObject.set(x, "setNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFolderSort(value: /* folderSort */ js.UndefOr[Boolean] => Unit): Self = this.set("setFolderSort", js.Any.fromFunction1(value))
+    def setSetNodeUndefined: Self = StObject.set(x, "setNode", js.undefined)
     
     @scala.inline
-    def deleteSetFolderSort: Self = this.set("setFolderSort", js.undefined)
+    def setSetRecursive(value: /* recursive */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setRecursive", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetNode(value: /* node */ js.UndefOr[IModel] => Unit): Self = this.set("setNode", js.Any.fromFunction1(value))
+    def setSetRecursiveUndefined: Self = StObject.set(x, "setRecursive", js.undefined)
     
     @scala.inline
-    def deleteSetNode: Self = this.set("setNode", js.undefined)
+    def setSetRootVisible(value: /* rootVisible */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setRootVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRecursive(value: /* recursive */ js.UndefOr[Boolean] => Unit): Self = this.set("setRecursive", js.Any.fromFunction1(value))
+    def setSetRootVisibleUndefined: Self = StObject.set(x, "setRootVisible", js.undefined)
     
     @scala.inline
-    def deleteSetRecursive: Self = this.set("setRecursive", js.undefined)
+    def setSetSorters(value: /* sorters */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSorters", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRootVisible(value: /* rootVisible */ js.UndefOr[Boolean] => Unit): Self = this.set("setRootVisible", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetRootVisible: Self = this.set("setRootVisible", js.undefined)
-    
-    @scala.inline
-    def setSetSorters(value: /* sorters */ js.UndefOr[js.Any] => Unit): Self = this.set("setSorters", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetSorters: Self = this.set("setSorters", js.undefined)
+    def setSetSortersUndefined: Self = StObject.set(x, "setSorters", js.undefined)
   }
 }

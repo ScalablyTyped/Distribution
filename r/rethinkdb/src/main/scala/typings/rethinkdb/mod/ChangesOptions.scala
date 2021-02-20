@@ -1,5 +1,6 @@
 package typings.rethinkdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See: https://rethinkdb.com/api/javascript/changes/
   */
 @js.native
-trait ChangesOptions extends js.Object {
+trait ChangesOptions extends StObject {
   
   /**
     * The number of changes the server will buffer between client reads before it starts dropping changes and generates an error (default: 100,000).
@@ -60,36 +61,24 @@ object ChangesOptions {
   }
   
   @scala.inline
-  implicit class ChangesOptionsOps[Self <: ChangesOptions] (val x: Self) extends AnyVal {
+  implicit class ChangesOptionsMutableBuilder[Self <: ChangesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangefeedQueueSize(value: Double): Self = StObject.set(x, "changefeedQueueSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeInitial(value: Boolean): Self = StObject.set(x, "includeInitial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeOffsets(value: Boolean): Self = StObject.set(x, "includeOffsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangefeedQueueSize(value: Double): Self = this.set("changefeedQueueSize", value.asInstanceOf[js.Any])
+    def setIncludeStates(value: Boolean): Self = StObject.set(x, "includeStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeInitial(value: Boolean): Self = this.set("includeInitial", value.asInstanceOf[js.Any])
+    def setIncludeTypes(value: Boolean): Self = StObject.set(x, "includeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeOffsets(value: Boolean): Self = this.set("includeOffsets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeStates(value: Boolean): Self = this.set("includeStates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeTypes(value: Boolean): Self = this.set("includeTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSquash(value: Boolean | Double): Self = this.set("squash", value.asInstanceOf[js.Any])
+    def setSquash(value: Boolean | Double): Self = StObject.set(x, "squash", value.asInstanceOf[js.Any])
   }
 }

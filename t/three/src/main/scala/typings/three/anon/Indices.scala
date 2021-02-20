@@ -1,11 +1,12 @@
 package typings.three.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Indices extends js.Object {
+trait Indices extends StObject {
   
   var detail: Double = js.native
   
@@ -24,36 +25,24 @@ object Indices {
   }
   
   @scala.inline
-  implicit class IndicesOps[Self <: Indices] (val x: Self) extends AnyVal {
+  implicit class IndicesMutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
     
     @scala.inline
-    def setDetail(value: Double): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicesVarargs(value: Double*): Self = this.set("indices", js.Array(value :_*))
+    def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: js.Array[Double]): Self = this.set("indices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticesVarargs(value: Double*): Self = this.set("vertices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVertices(value: js.Array[Double]): Self = this.set("vertices", value.asInstanceOf[js.Any])
+    def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

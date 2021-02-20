@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticsearchDestinationUpdate extends js.Object {
+trait ElasticsearchDestinationUpdate extends StObject {
   
   /**
     * The buffering options. If no value is specified, ElasticsearchBufferingHints object default values are used. 
@@ -71,84 +72,72 @@ object ElasticsearchDestinationUpdate {
   }
   
   @scala.inline
-  implicit class ElasticsearchDestinationUpdateOps[Self <: ElasticsearchDestinationUpdate] (val x: Self) extends AnyVal {
+  implicit class ElasticsearchDestinationUpdateMutableBuilder[Self <: ElasticsearchDestinationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBufferingHints(value: ElasticsearchBufferingHints): Self = StObject.set(x, "BufferingHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBufferingHintsUndefined: Self = StObject.set(x, "BufferingHints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferingHints(value: ElasticsearchBufferingHints): Self = this.set("BufferingHints", value.asInstanceOf[js.Any])
+    def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
     @scala.inline
-    def deleteBufferingHints: Self = this.set("BufferingHints", js.undefined)
+    def setClusterEndpoint(value: ElasticsearchClusterEndpoint): Self = StObject.set(x, "ClusterEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = this.set("CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
+    def setClusterEndpointUndefined: Self = StObject.set(x, "ClusterEndpoint", js.undefined)
     
     @scala.inline
-    def deleteCloudWatchLoggingOptions: Self = this.set("CloudWatchLoggingOptions", js.undefined)
+    def setDomainARN(value: ElasticsearchDomainARN): Self = StObject.set(x, "DomainARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterEndpoint(value: ElasticsearchClusterEndpoint): Self = this.set("ClusterEndpoint", value.asInstanceOf[js.Any])
+    def setDomainARNUndefined: Self = StObject.set(x, "DomainARN", js.undefined)
     
     @scala.inline
-    def deleteClusterEndpoint: Self = this.set("ClusterEndpoint", js.undefined)
+    def setIndexName(value: ElasticsearchIndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainARN(value: ElasticsearchDomainARN): Self = this.set("DomainARN", value.asInstanceOf[js.Any])
+    def setIndexNameUndefined: Self = StObject.set(x, "IndexName", js.undefined)
     
     @scala.inline
-    def deleteDomainARN: Self = this.set("DomainARN", js.undefined)
+    def setIndexRotationPeriod(value: ElasticsearchIndexRotationPeriod): Self = StObject.set(x, "IndexRotationPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexName(value: ElasticsearchIndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    def setIndexRotationPeriodUndefined: Self = StObject.set(x, "IndexRotationPeriod", js.undefined)
     
     @scala.inline
-    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    def setProcessingConfiguration(value: ProcessingConfiguration): Self = StObject.set(x, "ProcessingConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexRotationPeriod(value: ElasticsearchIndexRotationPeriod): Self = this.set("IndexRotationPeriod", value.asInstanceOf[js.Any])
+    def setProcessingConfigurationUndefined: Self = StObject.set(x, "ProcessingConfiguration", js.undefined)
     
     @scala.inline
-    def deleteIndexRotationPeriod: Self = this.set("IndexRotationPeriod", js.undefined)
+    def setRetryOptions(value: ElasticsearchRetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessingConfiguration(value: ProcessingConfiguration): Self = this.set("ProcessingConfiguration", value.asInstanceOf[js.Any])
+    def setRetryOptionsUndefined: Self = StObject.set(x, "RetryOptions", js.undefined)
     
     @scala.inline
-    def deleteProcessingConfiguration: Self = this.set("ProcessingConfiguration", js.undefined)
+    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetryOptions(value: ElasticsearchRetryOptions): Self = this.set("RetryOptions", value.asInstanceOf[js.Any])
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def deleteRetryOptions: Self = this.set("RetryOptions", js.undefined)
+    def setS3Update(value: S3DestinationUpdate): Self = StObject.set(x, "S3Update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setS3UpdateUndefined: Self = StObject.set(x, "S3Update", js.undefined)
     
     @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setTypeName(value: ElasticsearchTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Update(value: S3DestinationUpdate): Self = this.set("S3Update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Update: Self = this.set("S3Update", js.undefined)
-    
-    @scala.inline
-    def setTypeName(value: ElasticsearchTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
   }
 }

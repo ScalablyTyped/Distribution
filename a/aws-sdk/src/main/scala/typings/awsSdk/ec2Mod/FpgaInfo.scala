@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FpgaInfo extends js.Object {
+trait FpgaInfo extends StObject {
   
   /**
     * Describes the FPGAs for the instance type.
@@ -26,33 +27,21 @@ object FpgaInfo {
   }
   
   @scala.inline
-  implicit class FpgaInfoOps[Self <: FpgaInfo] (val x: Self) extends AnyVal {
+  implicit class FpgaInfoMutableBuilder[Self <: FpgaInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFpgas(value: FpgaDeviceInfoList): Self = StObject.set(x, "Fpgas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFpgasUndefined: Self = StObject.set(x, "Fpgas", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFpgasVarargs(value: FpgaDeviceInfo*): Self = StObject.set(x, "Fpgas", js.Array(value :_*))
     
     @scala.inline
-    def setFpgasVarargs(value: FpgaDeviceInfo*): Self = this.set("Fpgas", js.Array(value :_*))
+    def setTotalFpgaMemoryInMiB(value: totalFpgaMemory): Self = StObject.set(x, "TotalFpgaMemoryInMiB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFpgas(value: FpgaDeviceInfoList): Self = this.set("Fpgas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFpgas: Self = this.set("Fpgas", js.undefined)
-    
-    @scala.inline
-    def setTotalFpgaMemoryInMiB(value: totalFpgaMemory): Self = this.set("TotalFpgaMemoryInMiB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalFpgaMemoryInMiB: Self = this.set("TotalFpgaMemoryInMiB", js.undefined)
+    def setTotalFpgaMemoryInMiBUndefined: Self = StObject.set(x, "TotalFpgaMemoryInMiB", js.undefined)
   }
 }

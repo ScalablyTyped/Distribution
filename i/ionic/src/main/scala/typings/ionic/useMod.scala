@@ -1,14 +1,17 @@
 package typings.ionic
 
+import typings.ionic.definitionsMod.INamespace
 import typings.ionic.sshBaseMod.SSHBaseCommand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/ssh/use", JSImport.Namespace)
-@js.native
-object useMod extends js.Object {
+object useMod {
   
+  @JSImport("ionic/commands/ssh/use", "SSHUseCommand")
   @js.native
-  class SSHUseCommand () extends SSHBaseCommand
+  class SSHUseCommand protected () extends SSHBaseCommand {
+    def this(namespace: INamespace) = this()
+  }
 }

@@ -3,6 +3,7 @@ package typings.mendixmodelsdk.transportInterfacesMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.failed_
 import typings.mendixmodelsdk.mendixmodelsdkStrings.started_
 import typings.mendixmodelsdk.mendixmodelsdkStrings.updating_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mendixmodelsdk.mendixmodelsdkStrings.consistencyerrors
   - typings.mendixmodelsdk.mendixmodelsdkStrings.failed_
 */
-trait IUpdateAppJobStatus extends js.Object
+trait IUpdateAppJobStatus extends StObject
 object IUpdateAppJobStatus {
   
   @scala.inline

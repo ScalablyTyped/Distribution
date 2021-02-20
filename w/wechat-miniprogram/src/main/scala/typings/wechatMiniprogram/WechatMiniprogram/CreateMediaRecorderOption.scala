@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateMediaRecorderOption extends js.Object {
+trait CreateMediaRecorderOption extends StObject {
   
   /** 指定录制的时长（s)，到达自动停止。最大 7200，最小 5 */
   var duration: js.UndefOr[Double] = js.native
@@ -28,42 +29,30 @@ object CreateMediaRecorderOption {
   }
   
   @scala.inline
-  implicit class CreateMediaRecorderOptionOps[Self <: CreateMediaRecorderOption] (val x: Self) extends AnyVal {
+  implicit class CreateMediaRecorderOptionMutableBuilder[Self <: CreateMediaRecorderOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setGop(value: Double): Self = StObject.set(x, "gop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
+    def setGopUndefined: Self = StObject.set(x, "gop", js.undefined)
     
     @scala.inline
-    def deleteFps: Self = this.set("fps", js.undefined)
+    def setVideoBitsPerSecond(value: Double): Self = StObject.set(x, "videoBitsPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGop(value: Double): Self = this.set("gop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGop: Self = this.set("gop", js.undefined)
-    
-    @scala.inline
-    def setVideoBitsPerSecond(value: Double): Self = this.set("videoBitsPerSecond", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoBitsPerSecond: Self = this.set("videoBitsPerSecond", js.undefined)
+    def setVideoBitsPerSecondUndefined: Self = StObject.set(x, "videoBitsPerSecond", js.undefined)
   }
 }

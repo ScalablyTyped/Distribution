@@ -10,13 +10,14 @@ import typings.std.Uint32Array
 import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Foundation.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sequence of event fields and provides methods for adding fields to the sequence. */
 @js.native
-trait LoggingFields extends js.Object {
+trait LoggingFields extends StObject {
   
   /**
     * Adds a boolean field with the specified field name.

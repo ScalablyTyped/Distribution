@@ -2,14 +2,14 @@ package typings.three
 
 import typings.three.anon.Indices
 import typings.three.geometryMod.Geometry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/geometries/PolyhedronGeometry", JSImport.Namespace)
-@js.native
-object polyhedronGeometryMod extends js.Object {
+object polyhedronGeometryMod {
   
+  @JSImport("three/src/geometries/PolyhedronGeometry", "PolyhedronGeometry")
   @js.native
   class PolyhedronGeometry protected () extends Geometry {
     /**

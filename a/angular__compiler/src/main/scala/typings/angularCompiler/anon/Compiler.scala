@@ -2,12 +2,13 @@ package typings.angularCompiler.anon
 
 import typings.angularCompiler.aotCompilerMod.AotCompiler
 import typings.angularCompiler.staticReflectorMod.StaticReflector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compiler extends js.Object {
+trait Compiler extends StObject {
   
   var compiler: AotCompiler = js.native
   
@@ -22,24 +23,12 @@ object Compiler {
   }
   
   @scala.inline
-  implicit class CompilerOps[Self <: Compiler] (val x: Self) extends AnyVal {
+  implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompiler(value: AotCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompiler(value: AotCompiler): Self = this.set("compiler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReflector(value: StaticReflector): Self = this.set("reflector", value.asInstanceOf[js.Any])
+    def setReflector(value: StaticReflector): Self = StObject.set(x, "reflector", value.asInstanceOf[js.Any])
   }
 }

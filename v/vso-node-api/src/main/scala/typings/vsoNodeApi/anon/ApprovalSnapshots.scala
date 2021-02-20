@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApprovalSnapshots extends js.Object {
+trait ApprovalSnapshots extends StObject {
   
   var all: scala.Double = js.native
   
@@ -32,33 +33,21 @@ object ApprovalSnapshots {
   }
   
   @scala.inline
-  implicit class ApprovalSnapshotsOps[Self <: ApprovalSnapshots] (val x: Self) extends AnyVal {
+  implicit class ApprovalSnapshotsMutableBuilder[Self <: ApprovalSnapshots] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApprovalSnapshots(value: scala.Double): Self = StObject.set(x, "approvalSnapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutomatedApprovals(value: scala.Double): Self = StObject.set(x, "automatedApprovals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setManualApprovals(value: scala.Double): Self = StObject.set(x, "manualApprovals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApprovalSnapshots(value: scala.Double): Self = this.set("approvalSnapshots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutomatedApprovals(value: scala.Double): Self = this.set("automatedApprovals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManualApprovals(value: scala.Double): Self = this.set("manualApprovals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

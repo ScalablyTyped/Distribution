@@ -1,12 +1,11 @@
 package typings.wordpressApiFetch.mod.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/api-fetch", "Schema.ViewKeys")
-@js.native
-object ViewKeys extends js.Object {
+object ViewKeys {
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.mod.Schema.EmbedKeys.Block
@@ -18,7 +17,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.status
     - typings.wordpressApiFetch.wordpressApiFetchStrings.template
   */
-  trait Block extends js.Object
+  trait Block extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -28,7 +27,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.meta
     - typings.wordpressApiFetch.wordpressApiFetchStrings.parent
   */
-  trait Category extends js.Object
+  trait Category extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -38,7 +37,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.post
     - typings.wordpressApiFetch.wordpressApiFetchStrings.status
   */
-  trait Comment extends js.Object
+  trait Comment extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.mod.Schema.EmbedKeys.Media
@@ -54,7 +53,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.status
     - typings.wordpressApiFetch.wordpressApiFetchStrings.template
   */
-  trait Media extends js.Object
+  trait Media extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.mod.Schema.EmbedKeys.Page
@@ -71,7 +70,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.status
     - typings.wordpressApiFetch.wordpressApiFetchStrings.template
   */
-  trait Page extends js.Object
+  trait Page extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.mod.Schema.EmbedKeys.Post
@@ -90,7 +89,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.tags
     - typings.wordpressApiFetch.wordpressApiFetchStrings.template
   */
-  trait Post extends js.Object
+  trait Post extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -101,7 +100,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.modified
     - typings.wordpressApiFetch.wordpressApiFetchStrings.modified_gmt
   */
-  trait PostRevision extends js.Object
+  trait PostRevision extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -109,7 +108,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.public
     - typings.wordpressApiFetch.wordpressApiFetchStrings.queryable
   */
-  trait Status extends js.Object
+  trait Status extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -118,7 +117,7 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.hierarchical
     - typings.wordpressApiFetch.wordpressApiFetchStrings.types
   */
-  trait Taxonomy extends js.Object
+  trait Taxonomy extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
@@ -127,12 +126,12 @@ object ViewKeys extends js.Object {
     - typings.wordpressApiFetch.wordpressApiFetchStrings.hierarchical
     - typings.wordpressApiFetch.wordpressApiFetchStrings.taxonomies
   */
-  trait Type extends js.Object
+  trait Type extends StObject
   
   // prettier-ignore
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressApiFetch.mod.Schema.EmbedKeys.User
     - typings.wordpressApiFetch.wordpressApiFetchStrings.meta
   */
-  trait User extends js.Object
+  trait User extends StObject
 }

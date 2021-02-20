@@ -1,12 +1,13 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.Insets
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptionsBottomTab extends js.Object {
+trait OptionsBottomTab extends StObject {
   
   /**
     * Show the badge with the animation.
@@ -128,144 +129,132 @@ object OptionsBottomTab {
   }
   
   @scala.inline
-  implicit class OptionsBottomTabOps[Self <: OptionsBottomTab] (val x: Self) extends AnyVal {
+  implicit class OptionsBottomTabMutableBuilder[Self <: OptionsBottomTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimateBadge(value: Boolean): Self = StObject.set(x, "animateBadge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimateBadgeUndefined: Self = StObject.set(x, "animateBadge", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateBadge(value: Boolean): Self = this.set("animateBadge", value.asInstanceOf[js.Any])
+    def setBadgeColor(value: String): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimateBadge: Self = this.set("animateBadge", js.undefined)
+    def setBadgeColorUndefined: Self = StObject.set(x, "badgeColor", js.undefined)
     
     @scala.inline
-    def setBadge(value: String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
     @scala.inline
-    def deleteBadge: Self = this.set("badge", js.undefined)
+    def setDisableIconTint(value: Boolean): Self = StObject.set(x, "disableIconTint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeColor(value: String): Self = this.set("badgeColor", value.asInstanceOf[js.Any])
+    def setDisableIconTintUndefined: Self = StObject.set(x, "disableIconTint", js.undefined)
     
     @scala.inline
-    def deleteBadgeColor: Self = this.set("badgeColor", js.undefined)
+    def setDisableSelectedIconTint(value: Boolean): Self = StObject.set(x, "disableSelectedIconTint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableIconTint(value: Boolean): Self = this.set("disableIconTint", value.asInstanceOf[js.Any])
+    def setDisableSelectedIconTintUndefined: Self = StObject.set(x, "disableSelectedIconTint", js.undefined)
     
     @scala.inline
-    def deleteDisableIconTint: Self = this.set("disableIconTint", js.undefined)
+    def setDotIndicator(value: DotIndicatorOptions): Self = StObject.set(x, "dotIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSelectedIconTint(value: Boolean): Self = this.set("disableSelectedIconTint", value.asInstanceOf[js.Any])
+    def setDotIndicatorUndefined: Self = StObject.set(x, "dotIndicator", js.undefined)
     
     @scala.inline
-    def deleteDisableSelectedIconTint: Self = this.set("disableSelectedIconTint", js.undefined)
+    def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotIndicator(value: DotIndicatorOptions): Self = this.set("dotIndicator", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteDotIndicator: Self = this.set("dotIndicator", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: FontFamily): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: FontStyle): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setIcon(value: ImageResource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: FontWeight): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setIconColor(value: Color): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
     
     @scala.inline
-    def setIcon(value: ImageResource): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconInsets(value: Insets): Self = StObject.set(x, "iconInsets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconInsetsUndefined: Self = StObject.set(x, "iconInsets", js.undefined)
     
     @scala.inline
-    def setIconColor(value: Color): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    def setSelectTabOnPress(value: Boolean): Self = StObject.set(x, "selectTabOnPress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconInsets(value: Insets): Self = this.set("iconInsets", value.asInstanceOf[js.Any])
+    def setSelectTabOnPressUndefined: Self = StObject.set(x, "selectTabOnPress", js.undefined)
     
     @scala.inline
-    def deleteIconInsets: Self = this.set("iconInsets", js.undefined)
+    def setSelectedFontSize(value: Double): Self = StObject.set(x, "selectedFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectTabOnPress(value: Boolean): Self = this.set("selectTabOnPress", value.asInstanceOf[js.Any])
+    def setSelectedFontSizeUndefined: Self = StObject.set(x, "selectedFontSize", js.undefined)
     
     @scala.inline
-    def deleteSelectTabOnPress: Self = this.set("selectTabOnPress", js.undefined)
+    def setSelectedIcon(value: ImageResource): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedFontSize(value: Double): Self = this.set("selectedFontSize", value.asInstanceOf[js.Any])
+    def setSelectedIconColor(value: Color): Self = StObject.set(x, "selectedIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelectedFontSize: Self = this.set("selectedFontSize", js.undefined)
+    def setSelectedIconColorUndefined: Self = StObject.set(x, "selectedIconColor", js.undefined)
     
     @scala.inline
-    def setSelectedIcon(value: ImageResource): Self = this.set("selectedIcon", value.asInstanceOf[js.Any])
+    def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
     
     @scala.inline
-    def deleteSelectedIcon: Self = this.set("selectedIcon", js.undefined)
+    def setSelectedTextColor(value: Color): Self = StObject.set(x, "selectedTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedIconColor(value: Color): Self = this.set("selectedIconColor", value.asInstanceOf[js.Any])
+    def setSelectedTextColorUndefined: Self = StObject.set(x, "selectedTextColor", js.undefined)
     
     @scala.inline
-    def deleteSelectedIconColor: Self = this.set("selectedIconColor", js.undefined)
+    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedTextColor(value: Color): Self = this.set("selectedTextColor", value.asInstanceOf[js.Any])
+    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
     
     @scala.inline
-    def deleteSelectedTextColor: Self = this.set("selectedTextColor", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTestID: Self = this.set("testID", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTextColor(value: Color): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

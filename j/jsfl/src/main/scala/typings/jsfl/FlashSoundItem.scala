@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashSoundItem extends js.Object {
+trait FlashSoundItem extends StObject {
   
   var bitRate: String = js.native
   
@@ -47,48 +48,36 @@ object FlashSoundItem {
   }
   
   @scala.inline
-  implicit class FlashSoundItemOps[Self <: FlashSoundItem] (val x: Self) extends AnyVal {
+  implicit class FlashSoundItemMutableBuilder[Self <: FlashSoundItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitRate(value: String): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBits(value: String): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitRate(value: String): Self = this.set("bitRate", value.asInstanceOf[js.Any])
+    def setConvertStereoToMono(value: Boolean): Self = StObject.set(x, "convertStereoToMono", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBits(value: String): Self = this.set("bits", value.asInstanceOf[js.Any])
+    def setExportToFile(value: String => Boolean): Self = StObject.set(x, "exportToFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompressionType(value: String): Self = this.set("compressionType", value.asInstanceOf[js.Any])
+    def setFileLastModifiedDate(value: String): Self = StObject.set(x, "fileLastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvertStereoToMono(value: Boolean): Self = this.set("convertStereoToMono", value.asInstanceOf[js.Any])
+    def setOriginalCompressionType(value: String): Self = StObject.set(x, "originalCompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportToFile(value: String => Boolean): Self = this.set("exportToFile", js.Any.fromFunction1(value))
+    def setQuality(value: String): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileLastModifiedDate(value: String): Self = this.set("fileLastModifiedDate", value.asInstanceOf[js.Any])
+    def setSampleRate(value: String): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalCompressionType(value: String): Self = this.set("originalCompressionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuality(value: String): Self = this.set("quality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSampleRate(value: String): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFileExists(value: Boolean): Self = this.set("sourceFileExists", value.asInstanceOf[js.Any])
+    def setSourceFileExists(value: Boolean): Self = StObject.set(x, "sourceFileExists", value.asInstanceOf[js.Any])
   }
 }

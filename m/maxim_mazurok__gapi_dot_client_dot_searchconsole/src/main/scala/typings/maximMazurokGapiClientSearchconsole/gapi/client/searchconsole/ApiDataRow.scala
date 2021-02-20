@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiDataRow extends js.Object {
+trait ApiDataRow extends StObject {
   
   var clicks: js.UndefOr[Double] = js.native
   
@@ -26,51 +27,39 @@ object ApiDataRow {
   }
   
   @scala.inline
-  implicit class ApiDataRowOps[Self <: ApiDataRow] (val x: Self) extends AnyVal {
+  implicit class ApiDataRowMutableBuilder[Self <: ApiDataRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCtr(value: Double): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClicks(value: Double): Self = this.set("clicks", value.asInstanceOf[js.Any])
+    def setCtrUndefined: Self = StObject.set(x, "ctr", js.undefined)
     
     @scala.inline
-    def deleteClicks: Self = this.set("clicks", js.undefined)
+    def setImpressions(value: Double): Self = StObject.set(x, "impressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtr(value: Double): Self = this.set("ctr", value.asInstanceOf[js.Any])
+    def setImpressionsUndefined: Self = StObject.set(x, "impressions", js.undefined)
     
     @scala.inline
-    def deleteCtr: Self = this.set("ctr", js.undefined)
+    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpressions(value: Double): Self = this.set("impressions", value.asInstanceOf[js.Any])
+    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
     @scala.inline
-    def deleteImpressions: Self = this.set("impressions", js.undefined)
+    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
     @scala.inline
-    def setKeysVarargs(value: String*): Self = this.set("keys", js.Array(value :_*))
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeys(value: js.Array[String]): Self = this.set("keys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeys: Self = this.set("keys", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

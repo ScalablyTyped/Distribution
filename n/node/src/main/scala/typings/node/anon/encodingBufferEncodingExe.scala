@@ -3,13 +3,14 @@ package typings.node.anon
 import typings.node.BufferEncoding
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  encoding :node.BufferEncoding} & node.child_process.ExecOptions */
 @js.native
-trait encodingBufferEncodingExe extends js.Object {
+trait encodingBufferEncodingExe extends StObject {
   
   var cwd: js.UndefOr[String] = js.native
   
@@ -46,75 +47,63 @@ object encodingBufferEncodingExe {
   }
   
   @scala.inline
-  implicit class encodingBufferEncodingExeOps[Self <: encodingBufferEncodingExe] (val x: Self) extends AnyVal {
+  implicit class encodingBufferEncodingExeMutableBuilder[Self <: encodingBufferEncodingExe] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: ProcessEnv): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGid(value: Double): Self = this.set("gid", value.asInstanceOf[js.Any])
+    def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
     
     @scala.inline
-    def deleteGid: Self = this.set("gid", js.undefined)
+    def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKillSignal(value: Signals | Double): Self = this.set("killSignal", value.asInstanceOf[js.Any])
+    def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
     
     @scala.inline
-    def deleteKillSignal: Self = this.set("killSignal", js.undefined)
+    def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBuffer(value: Double): Self = this.set("maxBuffer", value.asInstanceOf[js.Any])
+    def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
     
     @scala.inline
-    def deleteMaxBuffer: Self = this.set("maxBuffer", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShell(value: String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteShell: Self = this.set("shell", js.undefined)
+    def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUid(value: Double): Self = this.set("uid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUid: Self = this.set("uid", js.undefined)
-    
-    @scala.inline
-    def setWindowsHide(value: Boolean): Self = this.set("windowsHide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsHide: Self = this.set("windowsHide", js.undefined)
+    def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
   }
 }

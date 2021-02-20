@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginShield extends js.Object {
+trait OriginShield extends StObject {
   
   /**
     * A flag that specifies whether Origin Shield is enabled. When it’s enabled, CloudFront routes all requests through Origin Shield, which can help protect your origin. When it’s disabled, CloudFront might send requests directly to your origin from multiple edge locations or regional edge caches.
@@ -26,27 +27,15 @@ object OriginShield {
   }
   
   @scala.inline
-  implicit class OriginShieldOps[Self <: OriginShield] (val x: Self) extends AnyVal {
+  implicit class OriginShieldMutableBuilder[Self <: OriginShield] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginShieldRegion(value: OriginShieldRegion): Self = StObject.set(x, "OriginShieldRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginShieldRegion(value: OriginShieldRegion): Self = this.set("OriginShieldRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginShieldRegion: Self = this.set("OriginShieldRegion", js.undefined)
+    def setOriginShieldRegionUndefined: Self = StObject.set(x, "OriginShieldRegion", js.undefined)
   }
 }

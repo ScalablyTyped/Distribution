@@ -2,6 +2,7 @@ package typings.webidl2.mod
 
 import typings.webidl2.webidl2Booleans.`false`
 import typings.webidl2.webidl2Strings.iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,30 +39,18 @@ object IterableDeclarationMemberType {
   }
   
   @scala.inline
-  implicit class IterableDeclarationMemberTypeOps[Self <: IterableDeclarationMemberType] (val x: Self) extends AnyVal {
+  implicit class IterableDeclarationMemberTypeMutableBuilder[Self <: IterableDeclarationMemberType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIdlType(value: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdlTypeVarargs(value: IDLTypeDescription*): Self = StObject.set(x, "idlType", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadonly(value: `false`): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdlTypeVarargs(value: IDLTypeDescription*): Self = this.set("idlType", js.Array(value :_*))
-    
-    @scala.inline
-    def setIdlType(value: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription])): Self = this.set("idlType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadonly(value: `false`): Self = this.set("readonly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: iterable): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: iterable): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

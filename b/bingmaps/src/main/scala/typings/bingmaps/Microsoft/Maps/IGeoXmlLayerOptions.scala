@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,48 +32,36 @@ object IGeoXmlLayerOptions {
   }
   
   @scala.inline
-  implicit class IGeoXmlLayerOptionsOps[Self <: IGeoXmlLayerOptions] (val x: Self) extends AnyVal {
+  implicit class IGeoXmlLayerOptionsMutableBuilder[Self <: IGeoXmlLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpdateMapViewUndefined: Self = StObject.set(x, "autoUpdateMapView", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoboxOptions(value: IInfoboxOptions): Self = StObject.set(x, "infoboxOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdateMapView(value: Boolean): Self = this.set("autoUpdateMapView", value.asInstanceOf[js.Any])
+    def setInfoboxOptionsUndefined: Self = StObject.set(x, "infoboxOptions", js.undefined)
     
     @scala.inline
-    def deleteAutoUpdateMapView: Self = this.set("autoUpdateMapView", js.undefined)
+    def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoboxOptions(value: IInfoboxOptions): Self = this.set("infoboxOptions", value.asInstanceOf[js.Any])
+    def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
     
     @scala.inline
-    def deleteInfoboxOptions: Self = this.set("infoboxOptions", js.undefined)
+    def setSuppressInfoboxes(value: Boolean): Self = StObject.set(x, "suppressInfoboxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerName(value: String): Self = this.set("layerName", value.asInstanceOf[js.Any])
+    def setSuppressInfoboxesUndefined: Self = StObject.set(x, "suppressInfoboxes", js.undefined)
     
     @scala.inline
-    def deleteLayerName: Self = this.set("layerName", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressInfoboxes(value: Boolean): Self = this.set("suppressInfoboxes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressInfoboxes: Self = this.set("suppressInfoboxes", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

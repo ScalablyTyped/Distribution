@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilityScreenReaderSectionAnnotationsOptions extends js.Object {
+trait LangAccessibilityScreenReaderSectionAnnotationsOptions extends StObject {
   
   var descriptionMultiplePoints: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object LangAccessibilityScreenReaderSectionAnnotationsOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilityScreenReaderSectionAnnotationsOptionsOps[Self <: LangAccessibilityScreenReaderSectionAnnotationsOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilityScreenReaderSectionAnnotationsOptionsMutableBuilder[Self <: LangAccessibilityScreenReaderSectionAnnotationsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescriptionMultiplePoints(value: String): Self = StObject.set(x, "descriptionMultiplePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionMultiplePointsUndefined: Self = StObject.set(x, "descriptionMultiplePoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionNoPoints(value: String): Self = StObject.set(x, "descriptionNoPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionMultiplePoints(value: String): Self = this.set("descriptionMultiplePoints", value.asInstanceOf[js.Any])
+    def setDescriptionNoPointsUndefined: Self = StObject.set(x, "descriptionNoPoints", js.undefined)
     
     @scala.inline
-    def deleteDescriptionMultiplePoints: Self = this.set("descriptionMultiplePoints", js.undefined)
+    def setDescriptionSinglePoint(value: String): Self = StObject.set(x, "descriptionSinglePoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionNoPoints(value: String): Self = this.set("descriptionNoPoints", value.asInstanceOf[js.Any])
+    def setDescriptionSinglePointUndefined: Self = StObject.set(x, "descriptionSinglePoint", js.undefined)
     
     @scala.inline
-    def deleteDescriptionNoPoints: Self = this.set("descriptionNoPoints", js.undefined)
+    def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionSinglePoint(value: String): Self = this.set("descriptionSinglePoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescriptionSinglePoint: Self = this.set("descriptionSinglePoint", js.undefined)
-    
-    @scala.inline
-    def setHeading(value: String): Self = this.set("heading", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
   }
 }

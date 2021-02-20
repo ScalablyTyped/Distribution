@@ -2,13 +2,16 @@ package typings.antdMobileRn
 
 import typings.antdMobileRn.anon.Value
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/date-picker-view/demo/basic.native", JSImport.Namespace)
-@js.native
-object datePickerViewDemoBasicNativeMod extends js.Object {
+object datePickerViewDemoBasicNativeMod {
+  
+  @JSImport("antd-mobile-rn/lib/date-picker-view/demo/basic.native", JSImport.Default)
+  @js.native
+  class default () extends DatePickerViewExample
   
   @js.native
   trait DatePickerViewExample
@@ -21,7 +24,4 @@ object datePickerViewDemoBasicNativeMod extends js.Object {
     @JSName("state")
     var state_DatePickerViewExample: Value = js.native
   }
-  
-  @js.native
-  class default () extends DatePickerViewExample
 }

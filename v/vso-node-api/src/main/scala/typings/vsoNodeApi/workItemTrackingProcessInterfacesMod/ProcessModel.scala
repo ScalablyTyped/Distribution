@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessModel extends js.Object {
+trait ProcessModel extends StObject {
   
   /**
     * Description of the process
@@ -53,39 +54,27 @@ object ProcessModel {
   }
   
   @scala.inline
-  implicit class ProcessModelOps[Self <: ProcessModel] (val x: Self) extends AnyVal {
+  implicit class ProcessModelMutableBuilder[Self <: ProcessModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjects(value: js.Array[ProjectReference]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setProjectsVarargs(value: ProjectReference*): Self = StObject.set(x, "projects", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setProperties(value: ProcessProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectsVarargs(value: ProjectReference*): Self = this.set("projects", js.Array(value :_*))
+    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjects(value: js.Array[ProjectReference]): Self = this.set("projects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: ProcessProperties): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferenceName(value: String): Self = this.set("referenceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeId(value: String): Self = this.set("typeId", value.asInstanceOf[js.Any])
+    def setTypeId(value: String): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.typescriptServices.global.TypeScript
 
 import typings.typescriptServices.TypeScript.ISeparatedSyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +18,15 @@ class ObjectTypeSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSGlobal("TypeScript.ObjectTypeSyntax")
-@js.native
-object ObjectTypeSyntax extends js.Object {
+object ObjectTypeSyntax {
   
+  /* static member */
+  @JSGlobal("TypeScript.ObjectTypeSyntax.create")
+  @js.native
   def create(openBraceToken: ISyntaxToken, closeBraceToken: ISyntaxToken): typings.typescriptServices.TypeScript.ObjectTypeSyntax = js.native
   
+  /* static member */
+  @JSGlobal("TypeScript.ObjectTypeSyntax.create1")
+  @js.native
   def create1(): typings.typescriptServices.TypeScript.ObjectTypeSyntax = js.native
 }

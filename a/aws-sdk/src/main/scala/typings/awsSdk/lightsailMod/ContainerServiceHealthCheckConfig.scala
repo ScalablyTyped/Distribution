@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerServiceHealthCheckConfig extends js.Object {
+trait ContainerServiceHealthCheckConfig extends StObject {
   
   /**
     * The number of consecutive health checks successes required before moving the container to the Healthy state.
@@ -46,54 +47,42 @@ object ContainerServiceHealthCheckConfig {
   }
   
   @scala.inline
-  implicit class ContainerServiceHealthCheckConfigOps[Self <: ContainerServiceHealthCheckConfig] (val x: Self) extends AnyVal {
+  implicit class ContainerServiceHealthCheckConfigMutableBuilder[Self <: ContainerServiceHealthCheckConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthyThreshold(value: integer): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthyThresholdUndefined: Self = StObject.set(x, "healthyThreshold", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntervalSeconds(value: integer): Self = StObject.set(x, "intervalSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthyThreshold(value: integer): Self = this.set("healthyThreshold", value.asInstanceOf[js.Any])
+    def setIntervalSecondsUndefined: Self = StObject.set(x, "intervalSeconds", js.undefined)
     
     @scala.inline
-    def deleteHealthyThreshold: Self = this.set("healthyThreshold", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalSeconds(value: integer): Self = this.set("intervalSeconds", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteIntervalSeconds: Self = this.set("intervalSeconds", js.undefined)
+    def setSuccessCodes(value: String): Self = StObject.set(x, "successCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSuccessCodesUndefined: Self = StObject.set(x, "successCodes", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTimeoutSeconds(value: integer): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessCodes(value: String): Self = this.set("successCodes", value.asInstanceOf[js.Any])
+    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
     
     @scala.inline
-    def deleteSuccessCodes: Self = this.set("successCodes", js.undefined)
+    def setUnhealthyThreshold(value: integer): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutSeconds(value: integer): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
-    
-    @scala.inline
-    def setUnhealthyThreshold(value: integer): Self = this.set("unhealthyThreshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnhealthyThreshold: Self = this.set("unhealthyThreshold", js.undefined)
+    def setUnhealthyThresholdUndefined: Self = StObject.set(x, "unhealthyThreshold", js.undefined)
   }
 }

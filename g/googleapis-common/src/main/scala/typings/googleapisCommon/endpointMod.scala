@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.schemaMod.Schema
 import typings.googleapisCommon.schemaMod.SchemaResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis-common/build/src/endpoint", JSImport.Namespace)
-@js.native
-object endpointMod extends js.Object {
+object endpointMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - org.scalablytyped.runtime.StringDictionary because Already inherited */ @js.native
+  - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("googleapis-common/build/src/endpoint", "Endpoint")
+  @js.native
   class Endpoint protected ()
     extends Target
        with APIRequestContext {

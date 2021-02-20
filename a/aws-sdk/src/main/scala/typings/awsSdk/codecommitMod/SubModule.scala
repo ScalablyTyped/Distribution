@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubModule extends js.Object {
+trait SubModule extends StObject {
   
   /**
     * The fully qualified path to the folder that contains the reference to the submodule.
@@ -31,36 +32,24 @@ object SubModule {
   }
   
   @scala.inline
-  implicit class SubModuleOps[Self <: SubModule] (val x: Self) extends AnyVal {
+  implicit class SubModuleMutableBuilder[Self <: SubModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsolutePath(value: Path): Self = this.set("absolutePath", value.asInstanceOf[js.Any])
+    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
     @scala.inline
-    def deleteAbsolutePath: Self = this.set("absolutePath", js.undefined)
+    def setRelativePath(value: Path): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommitId(value: ObjectId): Self = this.set("commitId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCommitId: Self = this.set("commitId", js.undefined)
-    
-    @scala.inline
-    def setRelativePath(value: Path): Self = this.set("relativePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelativePath: Self = this.set("relativePath", js.undefined)
+    def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
   }
 }

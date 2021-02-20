@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,30 +50,18 @@ object XHatchWindowController {
   }
   
   @scala.inline
-  implicit class XHatchWindowControllerOps[Self <: XHatchWindowController] (val x: Self) extends AnyVal {
+  implicit class XHatchWindowControllerMutableBuilder[Self <: XHatchWindowController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalcAdjustedRectangle(value: Rectangle => Rectangle): Self = StObject.set(x, "calcAdjustedRectangle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeactivated(value: () => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivated(value: () => Unit): Self = this.set("activated", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCalcAdjustedRectangle(value: Rectangle => Rectangle): Self = this.set("calcAdjustedRectangle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDeactivated(value: () => Unit): Self = this.set("deactivated", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRequestPositioning(value: Rectangle => Unit): Self = this.set("requestPositioning", js.Any.fromFunction1(value))
+    def setRequestPositioning(value: Rectangle => Unit): Self = StObject.set(x, "requestPositioning", js.Any.fromFunction1(value))
   }
 }

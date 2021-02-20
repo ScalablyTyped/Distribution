@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Details extends js.Object {
+trait Details extends StObject {
   
   var all: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object Details {
   }
   
   @scala.inline
-  implicit class DetailsOps[Self <: Details] (val x: Self) extends AnyVal {
+  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: scala.Double): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropLocation(value: scala.Double): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: scala.Double): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setLabel(value: scala.Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: scala.Double): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropLocation(value: scala.Double): Self = this.set("dropLocation", value.asInstanceOf[js.Any])
+    def setSymbols(value: scala.Double): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: scala.Double): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbols(value: scala.Double): Self = this.set("symbols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestResults(value: scala.Double): Self = this.set("testResults", value.asInstanceOf[js.Any])
+    def setTestResults(value: scala.Double): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
   }
 }

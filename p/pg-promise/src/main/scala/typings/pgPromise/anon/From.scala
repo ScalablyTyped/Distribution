@@ -1,12 +1,13 @@
 package typings.pgPromise.anon
 
 import typings.pgPromise.mod.Column
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait From[S] extends js.Object {
+trait From[S] extends StObject {
   
   var from: js.UndefOr[String] = js.native
   
@@ -23,42 +24,30 @@ object From {
   }
   
   @scala.inline
-  implicit class FromOps[Self <: From[_], S] (val x: Self with From[S]) extends AnyVal {
+  implicit class FromMutableBuilder[Self <: From[_], S] (val x: Self with From[S]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSkip(value: String | js.Array[String] | (js.Function1[/* c */ Column[S], Boolean])): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setSkipFunction1(value: /* c */ Column[S] => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFrom: Self = this.set("from", js.undefined)
+    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
     @scala.inline
-    def setSkipVarargs(value: String*): Self = this.set("skip", js.Array(value :_*))
+    def setSkipVarargs(value: String*): Self = StObject.set(x, "skip", js.Array(value :_*))
     
     @scala.inline
-    def setSkipFunction1(value: /* c */ Column[S] => Boolean): Self = this.set("skip", js.Any.fromFunction1(value))
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip(value: String | js.Array[String] | (js.Function1[/* c */ Column[S], Boolean])): Self = this.set("skip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkip: Self = this.set("skip", js.undefined)
-    
-    @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTo: Self = this.set("to", js.undefined)
+    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

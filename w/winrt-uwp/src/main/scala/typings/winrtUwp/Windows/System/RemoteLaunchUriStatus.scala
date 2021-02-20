@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RemoteLaunchUriStatus extends js.Object
+sealed trait RemoteLaunchUriStatus extends StObject
 /** Specifies the result of activating an application for a URI on a remote device. */
 @JSGlobal("Windows.System.RemoteLaunchUriStatus")
 @js.native
-object RemoteLaunchUriStatus extends js.Object {
+object RemoteLaunchUriStatus extends StObject {
   
   /** The app is not installed on the remote system */
   @js.native

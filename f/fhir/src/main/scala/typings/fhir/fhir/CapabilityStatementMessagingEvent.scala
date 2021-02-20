@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,69 +75,57 @@ object CapabilityStatementMessagingEvent {
   }
   
   @scala.inline
-  implicit class CapabilityStatementMessagingEventOps[Self <: CapabilityStatementMessagingEvent] (val x: Self) extends AnyVal {
+  implicit class CapabilityStatementMessagingEventMutableBuilder[Self <: CapabilityStatementMessagingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: code): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Coding): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: code): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setFocus(value: code): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: Reference): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: Reference): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_category(value: Element): Self = this.set("_category", value.asInstanceOf[js.Any])
+    def setResponse(value: Reference): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_category: Self = this.set("_category", js.undefined)
+    def set_category(value: Element): Self = StObject.set(x, "_category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    def set_categoryUndefined: Self = StObject.set(x, "_category", js.undefined)
     
     @scala.inline
-    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_focus(value: Element): Self = this.set("_focus", value.asInstanceOf[js.Any])
+    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
     @scala.inline
-    def delete_focus: Self = this.set("_focus", js.undefined)
+    def set_focus(value: Element): Self = StObject.set(x, "_focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    def set_focusUndefined: Self = StObject.set(x, "_focus", js.undefined)
     
     @scala.inline
-    def delete_mode: Self = this.set("_mode", js.undefined)
+    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: code): Self = this.set("category", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategory: Self = this.set("category", js.undefined)
-    
-    @scala.inline
-    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
   }
 }

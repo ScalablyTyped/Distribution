@@ -1,5 +1,6 @@
 package typings.ndnJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,11 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("ndn-js", "WebSocketTransport")
 @js.native
 class WebSocketTransport ()
-  extends typings.ndnJs.transportMod.Transport
-@JSImport("ndn-js", "WebSocketTransport")
-@js.native
-object WebSocketTransport extends js.Object {
+  extends typings.ndnJs.transportMod.WebSocketTransport
+object WebSocketTransport {
   
+  @JSImport("ndn-js", "WebSocketTransport.ConnectionInfo")
   @js.native
   class ConnectionInfo protected ()
     extends typings.ndnJs.transportMod.WebSocketTransport.ConnectionInfo {

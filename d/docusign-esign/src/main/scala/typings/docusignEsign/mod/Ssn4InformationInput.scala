@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ssn4InformationInput extends js.Object {
+trait Ssn4InformationInput extends StObject {
   
   /**
     * Specifies the display level for the recipient. Valid values are:
@@ -34,36 +35,24 @@ object Ssn4InformationInput {
   }
   
   @scala.inline
-  implicit class Ssn4InformationInputOps[Self <: Ssn4InformationInput] (val x: Self) extends AnyVal {
+  implicit class Ssn4InformationInputMutableBuilder[Self <: Ssn4InformationInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayLevelCode(value: String): Self = this.set("displayLevelCode", value.asInstanceOf[js.Any])
+    def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
     
     @scala.inline
-    def deleteDisplayLevelCode: Self = this.set("displayLevelCode", js.undefined)
+    def setSsn4(value: String): Self = StObject.set(x, "ssn4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceiveInResponse(value: String): Self = this.set("receiveInResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReceiveInResponse: Self = this.set("receiveInResponse", js.undefined)
-    
-    @scala.inline
-    def setSsn4(value: String): Self = this.set("ssn4", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsn4: Self = this.set("ssn4", js.undefined)
+    def setSsn4Undefined: Self = StObject.set(x, "ssn4", js.undefined)
   }
 }

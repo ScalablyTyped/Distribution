@@ -1,5 +1,6 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Define the parameter mapping for an instrument.
   */
 @js.native
-trait PointInstrumentMappingObject extends js.Object {
+trait PointInstrumentMappingObject extends StObject {
   
   /**
     * Define the duration of the notes for this instrument. This can be a
@@ -87,33 +88,21 @@ object PointInstrumentMappingObject {
   }
   
   @scala.inline
-  implicit class PointInstrumentMappingObjectOps[Self <: PointInstrumentMappingObject] (val x: Self) extends AnyVal {
+  implicit class PointInstrumentMappingObjectMutableBuilder[Self <: PointInstrumentMappingObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double | String | js.Function): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrequency(value: Double | String | js.Function): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPan(value: Double | String | js.Function): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double | String | js.Function): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
     @scala.inline
-    def setFrequency(value: Double | String | js.Function): Self = this.set("frequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: Double | String | js.Function): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPan(value: Double | String | js.Function): Self = this.set("pan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePan: Self = this.set("pan", js.undefined)
+    def setVolume(value: Double | String | js.Function): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationEventType extends js.Object {
+trait NotificationEventType extends StObject {
   
   var category: NotificationEventTypeCategory = js.native
   
@@ -72,60 +73,48 @@ object NotificationEventType {
   }
   
   @scala.inline
-  implicit class NotificationEventTypeOps[Self <: NotificationEventType] (val x: Self) extends AnyVal {
+  implicit class NotificationEventTypeMutableBuilder[Self <: NotificationEventType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: NotificationEventTypeCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomSubscriptionsAllowed(value: Boolean): Self = StObject.set(x, "customSubscriptionsAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: NotificationEventTypeCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setEventPublisher(value: NotificationEventPublisher): Self = StObject.set(x, "eventPublisher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFields(value: StringDictionary[NotificationEventField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomSubscriptionsAllowed(value: Boolean): Self = this.set("customSubscriptionsAllowed", value.asInstanceOf[js.Any])
+    def setHasInitiator(value: Boolean): Self = StObject.set(x, "hasInitiator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventPublisher(value: NotificationEventPublisher): Self = this.set("eventPublisher", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: StringDictionary[NotificationEventField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasInitiator(value: Boolean): Self = this.set("hasInitiator", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setRoles(value: js.Array[NotificationEventRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setRolesVarargs(value: NotificationEventRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRolesVarargs(value: NotificationEventRole*): Self = this.set("roles", js.Array(value :_*))
+    def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
     
     @scala.inline
-    def setRoles(value: js.Array[NotificationEventRole]): Self = this.set("roles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedScopesVarargs(value: String*): Self = this.set("supportedScopes", js.Array(value :_*))
-    
-    @scala.inline
-    def setSupportedScopes(value: js.Array[String]): Self = this.set("supportedScopes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

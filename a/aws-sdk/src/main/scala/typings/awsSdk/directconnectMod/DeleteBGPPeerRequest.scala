@@ -1,11 +1,12 @@
 package typings.awsSdk.directconnectMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteBGPPeerRequest extends js.Object {
+trait DeleteBGPPeerRequest extends StObject {
   
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
@@ -36,42 +37,30 @@ object DeleteBGPPeerRequest {
   }
   
   @scala.inline
-  implicit class DeleteBGPPeerRequestOps[Self <: DeleteBGPPeerRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteBGPPeerRequestMutableBuilder[Self <: DeleteBGPPeerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBgpPeerId(value: BGPPeerId): Self = StObject.set(x, "bgpPeerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    def setBgpPeerIdUndefined: Self = StObject.set(x, "bgpPeerId", js.undefined)
     
     @scala.inline
-    def deleteAsn: Self = this.set("asn", js.undefined)
+    def setCustomerAddress(value: CustomerAddress): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBgpPeerId(value: BGPPeerId): Self = this.set("bgpPeerId", value.asInstanceOf[js.Any])
+    def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
     
     @scala.inline
-    def deleteBgpPeerId: Self = this.set("bgpPeerId", js.undefined)
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
-    
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+    def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
   }
 }

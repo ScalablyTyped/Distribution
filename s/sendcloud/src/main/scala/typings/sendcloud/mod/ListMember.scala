@@ -1,11 +1,12 @@
 package typings.sendcloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMember extends js.Object {
+trait ListMember extends StObject {
   
   def addListMember(mail_list_addr: String, member_addr: String, name: String, options: ListMemberAddOptions): js.Promise[ListMemberAddResposne] = js.native
   
@@ -38,39 +39,27 @@ object ListMember {
   }
   
   @scala.inline
-  implicit class ListMemberOps[Self <: ListMember] (val x: Self) extends AnyVal {
+  implicit class ListMemberMutableBuilder[Self <: ListMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddListMember(value: (String, String, String, ListMemberAddOptions) => js.Promise[ListMemberAddResposne]): Self = StObject.set(x, "addListMember", js.Any.fromFunction4(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddToOtherList(value: (String, String) => js.Promise[js.Array[ListMemberAddResposne]]): Self = StObject.set(x, "addToOtherList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddListMember(value: (String, String, String, ListMemberAddOptions) => js.Promise[ListMemberAddResposne]): Self = this.set("addListMember", js.Any.fromFunction4(value))
+    def setApiUser(value: String): Self = StObject.set(x, "apiUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddToOtherList(value: (String, String) => js.Promise[js.Array[ListMemberAddResposne]]): Self = this.set("addToOtherList", js.Any.fromFunction2(value))
+    def setDeleteListMember(value: (String, String) => js.Promise[ListMemberDeleteResposne]): Self = StObject.set(x, "deleteListMember", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApiKey(value: String): Self = this.set("apiKey", value.asInstanceOf[js.Any])
+    def setGetData(value: (String, js.Object) => js.Promise[js.Object]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setApiUser(value: String): Self = this.set("apiUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleteListMember(value: (String, String) => js.Promise[ListMemberDeleteResposne]): Self = this.set("deleteListMember", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetData(value: (String, js.Object) => js.Promise[js.Object]): Self = this.set("getData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetListMember(value: (String, ListMemberListOptions) => js.Promise[ListMemberListResponse]): Self = this.set("getListMember", js.Any.fromFunction2(value))
+    def setGetListMember(value: (String, ListMemberListOptions) => js.Promise[ListMemberListResponse]): Self = StObject.set(x, "getListMember", js.Any.fromFunction2(value))
   }
 }

@@ -1,13 +1,16 @@
 package typings.qunitDom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("qunit-dom/dist/assertions/is-not-required", JSImport.Namespace)
-@js.native
-object isNotRequiredMod extends js.Object {
+object isNotRequiredMod {
   
+  @JSImport("qunit-dom/dist/assertions/is-not-required", JSImport.Default)
+  @js.native
   def default(): Unit = js.native
+  @JSImport("qunit-dom/dist/assertions/is-not-required", JSImport.Default)
+  @js.native
   def default(message: String): Unit = js.native
 }

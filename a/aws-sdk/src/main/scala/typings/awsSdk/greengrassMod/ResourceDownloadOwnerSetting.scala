@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceDownloadOwnerSetting extends js.Object {
+trait ResourceDownloadOwnerSetting extends StObject {
   
   /**
     * The group owner of the resource. This is the name of an existing Linux OS group on the system or a GID. The group's permissions are added to the Lambda process.
@@ -26,24 +27,12 @@ object ResourceDownloadOwnerSetting {
   }
   
   @scala.inline
-  implicit class ResourceDownloadOwnerSettingOps[Self <: ResourceDownloadOwnerSetting] (val x: Self) extends AnyVal {
+  implicit class ResourceDownloadOwnerSettingMutableBuilder[Self <: ResourceDownloadOwnerSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupOwner(value: string): Self = StObject.set(x, "GroupOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGroupOwner(value: string): Self = this.set("GroupOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGroupPermission(value: Permission): Self = this.set("GroupPermission", value.asInstanceOf[js.Any])
+    def setGroupPermission(value: Permission): Self = StObject.set(x, "GroupPermission", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.wechatMiniprogram.DB
 
 import typings.wechatMiniprogram.ICloudConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The class of all exposed cloud database instances
   */
 @js.native
-trait Database extends js.Object {
+trait Database extends StObject {
   
   val Geo: IGeo = js.native
   

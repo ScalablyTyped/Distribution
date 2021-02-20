@@ -1,11 +1,12 @@
 package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MasteryDto extends js.Object {
+trait MasteryDto extends StObject {
   
   var description: js.Array[String] = js.native
   
@@ -41,48 +42,36 @@ object MasteryDto {
   }
   
   @scala.inline
-  implicit class MasteryDtoOps[Self <: MasteryDto] (val x: Self) extends AnyVal {
+  implicit class MasteryDtoMutableBuilder[Self <: MasteryDto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescriptionVarargs(value: String*): Self = this.set("description", js.Array(value :_*))
+    def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: js.Array[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setMasteryTree(value: String): Self = StObject.set(x, "masteryTree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageDto): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPrereq(value: String): Self = StObject.set(x, "prereq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasteryTree(value: String): Self = this.set("masteryTree", value.asInstanceOf[js.Any])
+    def setRanks(value: Double): Self = StObject.set(x, "ranks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSanitizedDescription(value: js.Array[String]): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrereq(value: String): Self = this.set("prereq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRanks(value: Double): Self = this.set("ranks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSanitizedDescriptionVarargs(value: String*): Self = this.set("sanitizedDescription", js.Array(value :_*))
-    
-    @scala.inline
-    def setSanitizedDescription(value: js.Array[String]): Self = this.set("sanitizedDescription", value.asInstanceOf[js.Any])
+    def setSanitizedDescriptionVarargs(value: String*): Self = StObject.set(x, "sanitizedDescription", js.Array(value :_*))
   }
 }

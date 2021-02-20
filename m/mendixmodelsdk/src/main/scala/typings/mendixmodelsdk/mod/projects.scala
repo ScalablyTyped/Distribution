@@ -7,14 +7,14 @@ import typings.mendixmodelsdk.projectsMod.projects.IModule
 import typings.mendixmodelsdk.projectsMod.projects.IProject
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "projects")
-@js.native
-object projects extends js.Object {
+object projects {
   
+  @JSImport("mendixmodelsdk", "projects.Document")
   @js.native
   abstract class Document protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Document {
@@ -26,18 +26,31 @@ object projects extends js.Object {
       container: IFolderBase
     ) = this()
   }
-  /* static members */
-  @js.native
-  object Document extends js.Object {
+  object Document {
     
-    var structureTypeName: String = js.native
+    @JSImport("mendixmodelsdk", "projects.Document")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Document.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Document.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * See: {@link https://docs.mendix.com/refguide/resources relevant section in reference guide}
     */
+  @JSImport("mendixmodelsdk", "projects.Folder")
   @js.native
   class Folder protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Folder {
@@ -49,21 +62,37 @@ object projects extends js.Object {
       container: IFolderBase
     ) = this()
   }
-  /* static members */
-  @js.native
-  object Folder extends js.Object {
+  object Folder {
+    
+    @JSImport("mendixmodelsdk", "projects.Folder")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new Folder unit in the SDK and on the server.
       * Expects one argument, the IFolderBase in which this unit is contained.
       */
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Folder.createIn")
+    @js.native
     def createIn(container: IFolderBase): typings.mendixmodelsdk.projectsMod.projects.Folder = js.native
     
-    var structureTypeName: String = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Folder.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Folder.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "projects.FolderBase")
   @js.native
   abstract class FolderBase protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.FolderBase {
@@ -82,18 +111,31 @@ object projects extends js.Object {
       container: IProject
     ) = this()
   }
-  /* static members */
-  @js.native
-  object FolderBase extends js.Object {
+  object FolderBase {
     
-    var structureTypeName: String = js.native
+    @JSImport("mendixmodelsdk", "projects.FolderBase")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.FolderBase.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.FolderBase.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * See: {@link https://docs.mendix.com/refguide/modules relevant section in reference guide}
     */
+  @JSImport("mendixmodelsdk", "projects.Module")
   @js.native
   class Module protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Module {
@@ -105,21 +147,37 @@ object projects extends js.Object {
       container: IProject
     ) = this()
   }
-  /* static members */
-  @js.native
-  object Module extends js.Object {
+  object Module {
+    
+    @JSImport("mendixmodelsdk", "projects.Module")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new Module unit in the SDK and on the server.
       * Expects one argument, the IProject in which this unit is contained.
       */
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Module.createIn")
+    @js.native
     def createIn(container: IProject): typings.mendixmodelsdk.projectsMod.projects.Module = js.native
     
-    var structureTypeName: String = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Module.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Module.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "projects.ModuleDocument")
   @js.native
   abstract class ModuleDocument protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.ModuleDocument {
@@ -138,15 +196,28 @@ object projects extends js.Object {
       container: IModule
     ) = this()
   }
-  /* static members */
-  @js.native
-  object ModuleDocument extends js.Object {
+  object ModuleDocument {
     
-    var structureTypeName: String = js.native
+    @JSImport("mendixmodelsdk", "projects.ModuleDocument")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ModuleDocument.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ModuleDocument.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker")
   @js.native
   class OneTimeConversionMarker protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.OneTimeConversionMarker {
@@ -159,15 +230,20 @@ object projects extends js.Object {
       container: typings.mendixmodelsdk.internalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
-  /* static members */
-  @js.native
-  object OneTimeConversionMarker extends js.Object {
+  object OneTimeConversionMarker {
+    
+    @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
       * Expects one argument: the IModel object the instance will "live on".
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker.create")
+    @js.native
     def create(model: IModel): typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker = js.native
     
     /**
@@ -175,16 +251,30 @@ object projects extends js.Object {
       * The new OneTimeConversionMarker will be automatically stored in the 'markers' property
       * of the parent ProjectConversion element passed as argument.
       */
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker.createIn")
+    @js.native
     def createIn(container: typings.mendixmodelsdk.projectsMod.projects.ProjectConversion): typings.mendixmodelsdk.projectsMod.projects.OneTimeConversionMarker = js.native
     
-    var structureTypeName: String = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.OneTimeConversionMarker.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * See: {@link https://docs.mendix.com/refguide/project relevant section in reference guide}
     */
+  @JSImport("mendixmodelsdk", "projects.Project")
   @js.native
   class Project protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.Project {
@@ -196,15 +286,28 @@ object projects extends js.Object {
       container: IStructuralUnit
     ) = this()
   }
-  /* static members */
-  @js.native
-  object Project extends js.Object {
+  object Project {
     
-    var structureTypeName: String = js.native
+    @JSImport("mendixmodelsdk", "projects.Project")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Project.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.Project.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("mendixmodelsdk", "projects.ProjectConversion")
   @js.native
   class ProjectConversion protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.ProjectConversion {
@@ -216,24 +319,40 @@ object projects extends js.Object {
       container: IProject
     ) = this()
   }
-  /* static members */
-  @js.native
-  object ProjectConversion extends js.Object {
+  object ProjectConversion {
+    
+    @JSImport("mendixmodelsdk", "projects.ProjectConversion")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new ProjectConversion unit in the SDK and on the server.
       * Expects one argument, the IProject in which this unit is contained.
       */
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProjectConversion.createIn")
+    @js.native
     def createIn(container: IProject): typings.mendixmodelsdk.projectsMod.projects.ProjectConversion = js.native
     
-    var structureTypeName: String = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProjectConversion.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProjectConversion.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * See: {@link https://docs.mendix.com/refguide/project relevant section in reference guide}
     */
+  @JSImport("mendixmodelsdk", "projects.ProjectDocument")
   @js.native
   abstract class ProjectDocument protected ()
     extends typings.mendixmodelsdk.allModelClassesMod.projects.ProjectDocument {
@@ -245,12 +364,24 @@ object projects extends js.Object {
       container: IProject
     ) = this()
   }
-  /* static members */
-  @js.native
-  object ProjectDocument extends js.Object {
+  object ProjectDocument {
     
-    var structureTypeName: String = js.native
+    @JSImport("mendixmodelsdk", "projects.ProjectDocument")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProjectDocument.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    @scala.inline
+    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "projects.ProjectDocument.versionInfo")
+    @js.native
+    def versionInfo: typings.mendixmodelsdk.projectsMod.StructureVersionInfo = js.native
+    @scala.inline
+    def versionInfo_=(x: typings.mendixmodelsdk.projectsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

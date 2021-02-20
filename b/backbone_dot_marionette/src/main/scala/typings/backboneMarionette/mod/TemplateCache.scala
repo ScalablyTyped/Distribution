@@ -2,6 +2,7 @@ package typings.backboneMarionette.mod
 
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,9 +110,7 @@ class TemplateCache () extends DomMixin {
   def setInnerContent_MTemplateCache(el: js.Any, html: String): Unit = js.native
 }
 /* static members */
-@JSImport("backbone.marionette", "TemplateCache")
-@js.native
-object TemplateCache extends js.Object {
+object TemplateCache {
   
   /**
     * You can clear one or more, or all items from the cache using the clear
@@ -119,6 +118,8 @@ object TemplateCache extends js.Object {
     * from the DOM the next time it is retrieved.
     * @param  the templateId used for loading / caching of the templates to clear. If none specified, all templates will be cleared from the cache.
     */
+  @JSImport("backbone.marionette", "TemplateCache.clear")
+  @js.native
   def clear(templateId: String*): Unit = js.native
   
   /**
@@ -127,6 +128,10 @@ object TemplateCache extends js.Object {
     * created and stored but you do not have to manually create these
     * instances yourself. get will return a compiled template function.
     */
+  @JSImport("backbone.marionette", "TemplateCache.get")
+  @js.native
   def get(templateId: String): js.Any = js.native
+  @JSImport("backbone.marionette", "TemplateCache.get")
+  @js.native
   def get(templateId: String, options: js.Any): js.Any = js.native
 }

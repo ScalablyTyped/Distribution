@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CandleStickData extends js.Object {
+trait CandleStickData extends StObject {
   
   var dataSets: js.UndefOr[js.Array[CandleStickDataset]] = js.native
 }
@@ -18,27 +19,15 @@ object CandleStickData {
   }
   
   @scala.inline
-  implicit class CandleStickDataOps[Self <: CandleStickData] (val x: Self) extends AnyVal {
+  implicit class CandleStickDataMutableBuilder[Self <: CandleStickData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSets(value: js.Array[CandleStickDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataSetsVarargs(value: CandleStickDataset*): Self = this.set("dataSets", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataSets(value: js.Array[CandleStickDataset]): Self = this.set("dataSets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSets: Self = this.set("dataSets", js.undefined)
+    def setDataSetsVarargs(value: CandleStickDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

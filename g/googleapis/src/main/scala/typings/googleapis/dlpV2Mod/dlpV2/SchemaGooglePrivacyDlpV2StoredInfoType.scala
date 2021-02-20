@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * version and any pending updates.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2StoredInfoType extends js.Object {
+trait SchemaGooglePrivacyDlpV2StoredInfoType extends StObject {
   
   /**
     * Current version of the stored info type.
@@ -36,39 +37,27 @@ object SchemaGooglePrivacyDlpV2StoredInfoType {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2StoredInfoTypeOps[Self <: SchemaGooglePrivacyDlpV2StoredInfoType] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2StoredInfoTypeMutableBuilder[Self <: SchemaGooglePrivacyDlpV2StoredInfoType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVersion(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVersion(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    def setPendingVersions(value: js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]): Self = StObject.set(x, "pendingVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPendingVersionsUndefined: Self = StObject.set(x, "pendingVersions", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setPendingVersionsVarargs(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion*): Self = this.set("pendingVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPendingVersions(value: js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]): Self = this.set("pendingVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingVersions: Self = this.set("pendingVersions", js.undefined)
+    def setPendingVersionsVarargs(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion*): Self = StObject.set(x, "pendingVersions", js.Array(value :_*))
   }
 }

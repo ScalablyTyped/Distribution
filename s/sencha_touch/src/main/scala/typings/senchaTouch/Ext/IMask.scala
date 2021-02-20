@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,36 +30,24 @@ object IMask {
   }
   
   @scala.inline
-  implicit class IMaskOps[Self <: IMask] (val x: Self) extends AnyVal {
+  implicit class IMaskMutableBuilder[Self <: IMask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTransparent(value: () => Boolean): Self = StObject.set(x, "getTransparent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetTransparentUndefined: Self = StObject.set(x, "getTransparent", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetTransparent(value: /* transparent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setTransparent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetTransparent(value: () => Boolean): Self = this.set("getTransparent", js.Any.fromFunction0(value))
+    def setSetTransparentUndefined: Self = StObject.set(x, "setTransparent", js.undefined)
     
     @scala.inline
-    def deleteGetTransparent: Self = this.set("getTransparent", js.undefined)
+    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTransparent(value: /* transparent */ js.UndefOr[Boolean] => Unit): Self = this.set("setTransparent", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetTransparent: Self = this.set("setTransparent", js.undefined)
-    
-    @scala.inline
-    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
   }
 }

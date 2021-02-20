@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDns.anon.MaxResults
 import typings.maximMazurokGapiClientDns.anon.PrettyPrint
 import typings.maximMazurokGapiClientDns.anon.QuotaUser
 import typings.maximMazurokGapiClientDns.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoliciesResource extends js.Object {
+trait PoliciesResource extends StObject {
   
   def create(request: PrettyPrint, body: Policy): Request[Policy] = js.native
   /** Create a new Policy */

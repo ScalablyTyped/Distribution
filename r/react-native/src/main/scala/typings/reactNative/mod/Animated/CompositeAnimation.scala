@@ -1,11 +1,12 @@
 package typings.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositeAnimation extends js.Object {
+trait CompositeAnimation extends StObject {
   
   /**
     * Stops any running animation and resets the value to its original.

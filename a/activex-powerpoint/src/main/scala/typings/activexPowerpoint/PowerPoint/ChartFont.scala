@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartFont extends js.Object {
+trait ChartFont extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
@@ -73,72 +74,60 @@ object ChartFont {
   }
   
   @scala.inline
-  implicit class ChartFontOps[Self <: ChartFont] (val x: Self) extends AnyVal {
+  implicit class ChartFontMutableBuilder[Self <: ChartFont] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackground(value: js.Any): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBold(value: js.Any): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: js.Any): Self = this.set("Background", value.asInstanceOf[js.Any])
+    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: js.Any): Self = this.set("Bold", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: js.Any): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setFontStyle(value: js.Any): Self = StObject.set(x, "FontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorIndex(value: js.Any): Self = this.set("ColorIndex", value.asInstanceOf[js.Any])
+    def setItalic(value: js.Any): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setName(value: js.Any): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: js.Any): Self = this.set("FontStyle", value.asInstanceOf[js.Any])
+    def setOutlineFont(value: js.Any): Self = StObject.set(x, "OutlineFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: js.Any): Self = this.set("Italic", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: js.Any): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPowerPointDotChartFont_typekey(value: ChartFont): Self = StObject.set(x, "PowerPoint.ChartFont_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineFont(value: js.Any): Self = this.set("OutlineFont", value.asInstanceOf[js.Any])
+    def setShadow(value: js.Any): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setSize(value: js.Any): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPowerPointDotChartFont_typekey(value: ChartFont): Self = this.set("PowerPoint.ChartFont_typekey", value.asInstanceOf[js.Any])
+    def setStrikethrough(value: js.Any): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: js.Any): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    def setSubscript(value: js.Any): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: js.Any): Self = this.set("Size", value.asInstanceOf[js.Any])
+    def setSuperscript(value: js.Any): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikethrough(value: js.Any): Self = this.set("Strikethrough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscript(value: js.Any): Self = this.set("Subscript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuperscript(value: js.Any): Self = this.set("Superscript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: js.Any): Self = this.set("Underline", value.asInstanceOf[js.Any])
+    def setUnderline(value: js.Any): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
   }
 }

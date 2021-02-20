@@ -1,5 +1,6 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,24 +30,12 @@ object ServerJobRequestMessage {
   }
   
   @scala.inline
-  implicit class ServerJobRequestMessageOps[Self <: ServerJobRequestMessage] (val x: Self) extends AnyVal {
+  implicit class ServerJobRequestMessageMutableBuilder[Self <: ServerJobRequestMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTaskDefinition(value: TaskDefinition): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTaskDefinition(value: TaskDefinition): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskInstance(value: TaskInstance): Self = this.set("taskInstance", value.asInstanceOf[js.Any])
+    def setTaskInstance(value: TaskInstance): Self = StObject.set(x, "taskInstance", value.asInstanceOf[js.Any])
   }
 }

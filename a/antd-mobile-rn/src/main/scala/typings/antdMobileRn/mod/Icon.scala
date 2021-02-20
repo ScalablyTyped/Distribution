@@ -2,6 +2,7 @@ package typings.antdMobileRn.mod
 
 import typings.antdMobileRn.anon.Size
 import typings.antdMobileRn.iconIndexNativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Icon () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Icon")
-@js.native
-object Icon extends js.Object {
+object Icon {
   
-  var defaultProps: Size = js.native
+  @JSImport("antd-mobile-rn", "Icon")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Icon.defaultProps")
+  @js.native
+  def defaultProps: Size = js.native
+  @scala.inline
+  def defaultProps_=(x: Size): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

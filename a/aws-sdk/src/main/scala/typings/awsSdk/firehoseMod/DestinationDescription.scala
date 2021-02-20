@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DestinationDescription extends js.Object {
+trait DestinationDescription extends StObject {
   
   /**
     * The ID of the destination.
@@ -51,57 +52,45 @@ object DestinationDescription {
   }
   
   @scala.inline
-  implicit class DestinationDescriptionOps[Self <: DestinationDescription] (val x: Self) extends AnyVal {
+  implicit class DestinationDescriptionMutableBuilder[Self <: DestinationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationId(value: DestinationId): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElasticsearchDestinationDescription(value: ElasticsearchDestinationDescription): Self = StObject.set(x, "ElasticsearchDestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElasticsearchDestinationDescriptionUndefined: Self = StObject.set(x, "ElasticsearchDestinationDescription", js.undefined)
     
     @scala.inline
-    def setDestinationId(value: DestinationId): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
+    def setExtendedS3DestinationDescription(value: ExtendedS3DestinationDescription): Self = StObject.set(x, "ExtendedS3DestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElasticsearchDestinationDescription(value: ElasticsearchDestinationDescription): Self = this.set("ElasticsearchDestinationDescription", value.asInstanceOf[js.Any])
+    def setExtendedS3DestinationDescriptionUndefined: Self = StObject.set(x, "ExtendedS3DestinationDescription", js.undefined)
     
     @scala.inline
-    def deleteElasticsearchDestinationDescription: Self = this.set("ElasticsearchDestinationDescription", js.undefined)
+    def setHttpEndpointDestinationDescription(value: HttpEndpointDestinationDescription): Self = StObject.set(x, "HttpEndpointDestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedS3DestinationDescription(value: ExtendedS3DestinationDescription): Self = this.set("ExtendedS3DestinationDescription", value.asInstanceOf[js.Any])
+    def setHttpEndpointDestinationDescriptionUndefined: Self = StObject.set(x, "HttpEndpointDestinationDescription", js.undefined)
     
     @scala.inline
-    def deleteExtendedS3DestinationDescription: Self = this.set("ExtendedS3DestinationDescription", js.undefined)
+    def setRedshiftDestinationDescription(value: RedshiftDestinationDescription): Self = StObject.set(x, "RedshiftDestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpEndpointDestinationDescription(value: HttpEndpointDestinationDescription): Self = this.set("HttpEndpointDestinationDescription", value.asInstanceOf[js.Any])
+    def setRedshiftDestinationDescriptionUndefined: Self = StObject.set(x, "RedshiftDestinationDescription", js.undefined)
     
     @scala.inline
-    def deleteHttpEndpointDestinationDescription: Self = this.set("HttpEndpointDestinationDescription", js.undefined)
+    def setS3DestinationDescription(value: S3DestinationDescription): Self = StObject.set(x, "S3DestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshiftDestinationDescription(value: RedshiftDestinationDescription): Self = this.set("RedshiftDestinationDescription", value.asInstanceOf[js.Any])
+    def setS3DestinationDescriptionUndefined: Self = StObject.set(x, "S3DestinationDescription", js.undefined)
     
     @scala.inline
-    def deleteRedshiftDestinationDescription: Self = this.set("RedshiftDestinationDescription", js.undefined)
+    def setSplunkDestinationDescription(value: SplunkDestinationDescription): Self = StObject.set(x, "SplunkDestinationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3DestinationDescription(value: S3DestinationDescription): Self = this.set("S3DestinationDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3DestinationDescription: Self = this.set("S3DestinationDescription", js.undefined)
-    
-    @scala.inline
-    def setSplunkDestinationDescription(value: SplunkDestinationDescription): Self = this.set("SplunkDestinationDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSplunkDestinationDescription: Self = this.set("SplunkDestinationDescription", js.undefined)
+    def setSplunkDestinationDescriptionUndefined: Self = StObject.set(x, "SplunkDestinationDescription", js.undefined)
   }
 }

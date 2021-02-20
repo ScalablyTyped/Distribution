@@ -1,12 +1,13 @@
 package typings.angularCompiler.coreMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Directive extends js.Object {
+trait Directive extends StObject {
   
   var exportAs: js.UndefOr[String] = js.native
   
@@ -33,75 +34,63 @@ object Directive {
   }
   
   @scala.inline
-  implicit class DirectiveOps[Self <: Directive] (val x: Self) extends AnyVal {
+  implicit class DirectiveMutableBuilder[Self <: Directive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportAs(value: String): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGuards(value: StringDictionary[js.Any]): Self = StObject.set(x, "guards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportAs(value: String): Self = this.set("exportAs", value.asInstanceOf[js.Any])
+    def setGuardsUndefined: Self = StObject.set(x, "guards", js.undefined)
     
     @scala.inline
-    def deleteExportAs: Self = this.set("exportAs", js.undefined)
+    def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuards(value: StringDictionary[js.Any]): Self = this.set("guards", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteGuards: Self = this.set("guards", js.undefined)
+    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: StringDictionary[String]): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: String*): Self = this.set("inputs", js.Array(value :_*))
+    def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[String]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
     @scala.inline
-    def setOutputsVarargs(value: String*): Self = this.set("outputs", js.Array(value :_*))
+    def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputs(value: js.Array[String]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
     @scala.inline
-    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setProvidersVarargs(value: Provider*): Self = this.set("providers", js.Array(value :_*))
+    def setQueries(value: StringDictionary[js.Any]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProviders(value: js.Array[Provider]): Self = this.set("providers", value.asInstanceOf[js.Any])
+    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
     @scala.inline
-    def deleteProviders: Self = this.set("providers", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueries(value: StringDictionary[js.Any]): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQueries: Self = this.set("queries", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

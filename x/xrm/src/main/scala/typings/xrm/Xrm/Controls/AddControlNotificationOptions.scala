@@ -1,11 +1,12 @@
 package typings.xrm.Xrm.Controls
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddControlNotificationOptions extends js.Object {
+trait AddControlNotificationOptions extends StObject {
   
   /**
     * A collection of actions
@@ -37,42 +38,30 @@ object AddControlNotificationOptions {
   }
   
   @scala.inline
-  implicit class AddControlNotificationOptionsOps[Self <: AddControlNotificationOptions] (val x: Self) extends AnyVal {
+  implicit class AddControlNotificationOptionsMutableBuilder[Self <: AddControlNotificationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[ControlNotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: ControlNotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: String*): Self = this.set("messages", js.Array(value :_*))
+    def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: js.Array[String]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
     @scala.inline
-    def setUniqueId(value: String): Self = this.set("uniqueId", value.asInstanceOf[js.Any])
+    def setNotificationLevel(value: NotificationLevel): Self = StObject.set(x, "notificationLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: ControlNotificationAction*): Self = this.set("actions", js.Array(value :_*))
+    def setNotificationLevelUndefined: Self = StObject.set(x, "notificationLevel", js.undefined)
     
     @scala.inline
-    def setActions(value: js.Array[ControlNotificationAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
-    
-    @scala.inline
-    def setNotificationLevel(value: NotificationLevel): Self = this.set("notificationLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationLevel: Self = this.set("notificationLevel", js.undefined)
+    def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
   }
 }

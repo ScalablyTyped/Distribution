@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ItemPreviewInfo extends js.Object {
+trait ItemPreviewInfo extends StObject {
   
   var getUrl: js.UndefOr[NullableOption[String]] = js.native
   
@@ -22,45 +23,33 @@ object ItemPreviewInfo {
   }
   
   @scala.inline
-  implicit class ItemPreviewInfoOps[Self <: ItemPreviewInfo] (val x: Self) extends AnyVal {
+  implicit class ItemPreviewInfoMutableBuilder[Self <: ItemPreviewInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetUrl(value: NullableOption[String]): Self = StObject.set(x, "getUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetUrlNull: Self = StObject.set(x, "getUrl", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
     @scala.inline
-    def setGetUrl(value: NullableOption[String]): Self = this.set("getUrl", value.asInstanceOf[js.Any])
+    def setPostParameters(value: NullableOption[String]): Self = StObject.set(x, "postParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetUrl: Self = this.set("getUrl", js.undefined)
+    def setPostParametersNull: Self = StObject.set(x, "postParameters", null)
     
     @scala.inline
-    def setGetUrlNull: Self = this.set("getUrl", null)
+    def setPostParametersUndefined: Self = StObject.set(x, "postParameters", js.undefined)
     
     @scala.inline
-    def setPostParameters(value: NullableOption[String]): Self = this.set("postParameters", value.asInstanceOf[js.Any])
+    def setPostUrl(value: NullableOption[String]): Self = StObject.set(x, "postUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePostParameters: Self = this.set("postParameters", js.undefined)
+    def setPostUrlNull: Self = StObject.set(x, "postUrl", null)
     
     @scala.inline
-    def setPostParametersNull: Self = this.set("postParameters", null)
-    
-    @scala.inline
-    def setPostUrl(value: NullableOption[String]): Self = this.set("postUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostUrl: Self = this.set("postUrl", js.undefined)
-    
-    @scala.inline
-    def setPostUrlNull: Self = this.set("postUrl", null)
+    def setPostUrlUndefined: Self = StObject.set(x, "postUrl", js.undefined)
   }
 }

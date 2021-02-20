@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   var alertPolicies: AlertPoliciesResource = js.native
   
@@ -44,45 +45,33 @@ object ProjectsResource {
   }
   
   @scala.inline
-  implicit class ProjectsResourceOps[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertPolicies(value: AlertPoliciesResource): Self = StObject.set(x, "alertPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectdTimeSeries(value: CollectdTimeSeriesResource): Self = StObject.set(x, "collectdTimeSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroups(value: GroupsResource): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertPolicies(value: AlertPoliciesResource): Self = this.set("alertPolicies", value.asInstanceOf[js.Any])
+    def setMetricDescriptors(value: MetricDescriptorsResource): Self = StObject.set(x, "metricDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectdTimeSeries(value: CollectdTimeSeriesResource): Self = this.set("collectdTimeSeries", value.asInstanceOf[js.Any])
+    def setMonitoredResourceDescriptors(value: MonitoredResourceDescriptorsResource): Self = StObject.set(x, "monitoredResourceDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: GroupsResource): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setNotificationChannelDescriptors(value: NotificationChannelDescriptorsResource): Self = StObject.set(x, "notificationChannelDescriptors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetricDescriptors(value: MetricDescriptorsResource): Self = this.set("metricDescriptors", value.asInstanceOf[js.Any])
+    def setNotificationChannels(value: NotificationChannelsResource): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoredResourceDescriptors(value: MonitoredResourceDescriptorsResource): Self = this.set("monitoredResourceDescriptors", value.asInstanceOf[js.Any])
+    def setTimeSeries(value: TimeSeriesResource): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationChannelDescriptors(value: NotificationChannelDescriptorsResource): Self = this.set("notificationChannelDescriptors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotificationChannels(value: NotificationChannelsResource): Self = this.set("notificationChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeSeries(value: TimeSeriesResource): Self = this.set("timeSeries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUptimeCheckConfigs(value: UptimeCheckConfigsResource): Self = this.set("uptimeCheckConfigs", value.asInstanceOf[js.Any])
+    def setUptimeCheckConfigs(value: UptimeCheckConfigsResource): Self = StObject.set(x, "uptimeCheckConfigs", value.asInstanceOf[js.Any])
   }
 }

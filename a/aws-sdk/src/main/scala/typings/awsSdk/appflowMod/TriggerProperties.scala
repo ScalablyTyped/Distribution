@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggerProperties extends js.Object {
+trait TriggerProperties extends StObject {
   
   /**
     *  Specifies the configuration details of a schedule-triggered flow as defined by the user. 
@@ -21,24 +22,12 @@ object TriggerProperties {
   }
   
   @scala.inline
-  implicit class TriggerPropertiesOps[Self <: TriggerProperties] (val x: Self) extends AnyVal {
+  implicit class TriggerPropertiesMutableBuilder[Self <: TriggerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScheduled(value: ScheduledTriggerProperties): Self = StObject.set(x, "Scheduled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScheduled(value: ScheduledTriggerProperties): Self = this.set("Scheduled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduled: Self = this.set("Scheduled", js.undefined)
+    def setScheduledUndefined: Self = StObject.set(x, "Scheduled", js.undefined)
   }
 }

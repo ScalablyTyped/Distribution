@@ -1,11 +1,12 @@
 package typings.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LightOptions extends js.Object {
+trait LightOptions extends StObject {
   
   var color: js.UndefOr[Color] = js.native
   
@@ -26,48 +27,36 @@ object LightOptions {
   }
   
   @scala.inline
-  implicit class LightOptionsOps[Self <: LightOptions] (val x: Self) extends AnyVal {
+  implicit class LightOptionsMutableBuilder[Self <: LightOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setNormal(value: Point): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntensity(value: Double): Self = this.set("intensity", value.asInstanceOf[js.Any])
+    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
     @scala.inline
-    def deleteIntensity: Self = this.set("intensity", js.undefined)
+    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormal(value: Point): Self = this.set("normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormal: Self = this.set("normal", js.undefined)
-    
-    @scala.inline
-    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
   }
 }

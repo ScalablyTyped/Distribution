@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object ILineChange {
   }
   
   @scala.inline
-  implicit class ILineChangeOps[Self <: ILineChange] (val x: Self) extends AnyVal {
+  implicit class ILineChangeMutableBuilder[Self <: ILineChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharChanges(value: js.Array[ICharChange]): Self = StObject.set(x, "charChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharChangesUndefined: Self = StObject.set(x, "charChanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCharChangesVarargs(value: ICharChange*): Self = this.set("charChanges", js.Array(value :_*))
-    
-    @scala.inline
-    def setCharChanges(value: js.Array[ICharChange]): Self = this.set("charChanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCharChanges: Self = this.set("charChanges", js.undefined)
+    def setCharChangesVarargs(value: ICharChange*): Self = StObject.set(x, "charChanges", js.Array(value :_*))
   }
 }

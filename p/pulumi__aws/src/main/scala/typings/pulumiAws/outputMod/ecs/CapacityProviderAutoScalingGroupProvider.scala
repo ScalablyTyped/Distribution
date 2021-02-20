@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ecs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityProviderAutoScalingGroupProvider extends js.Object {
+trait CapacityProviderAutoScalingGroupProvider extends StObject {
   
   /**
     * - The Amazon Resource Name (ARN) of the associated auto scaling group.
@@ -35,27 +36,15 @@ object CapacityProviderAutoScalingGroupProvider {
   }
   
   @scala.inline
-  implicit class CapacityProviderAutoScalingGroupProviderOps[Self <: CapacityProviderAutoScalingGroupProvider] (val x: Self) extends AnyVal {
+  implicit class CapacityProviderAutoScalingGroupProviderMutableBuilder[Self <: CapacityProviderAutoScalingGroupProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoScalingGroupArn(value: String): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagedScaling(value: CapacityProviderAutoScalingGroupProviderManagedScaling): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAutoScalingGroupArn(value: String): Self = this.set("autoScalingGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManagedScaling(value: CapacityProviderAutoScalingGroupProviderManagedScaling): Self = this.set("managedScaling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManagedTerminationProtection(value: String): Self = this.set("managedTerminationProtection", value.asInstanceOf[js.Any])
+    def setManagedTerminationProtection(value: String): Self = StObject.set(x, "managedTerminationProtection", value.asInstanceOf[js.Any])
   }
 }

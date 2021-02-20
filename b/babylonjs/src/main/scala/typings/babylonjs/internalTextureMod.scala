@@ -1,6 +1,5 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.sphericalPolynomialMod.SphericalPolynomial
@@ -16,16 +15,16 @@ import typings.std.OffscreenCanvasRenderingContext2D
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderbuffer
 import typings.std.WebGLTexture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Textures/internalTexture", JSImport.Namespace)
-@js.native
-object internalTextureMod extends js.Object {
+object internalTextureMod {
   
+  @JSImport("babylonjs/Materials/Textures/internalTexture", "InternalTexture")
   @js.native
-  class InternalTexture protected () extends js.Object {
+  class InternalTexture protected () extends StObject {
     /**
       * Creates a new InternalTexture
       * @param engine defines the engine to use
@@ -301,10 +300,11 @@ object internalTextureMod extends js.Object {
     var width: Double = js.native
   }
   /* static members */
-  @js.native
-  object InternalTexture extends js.Object {
+  object InternalTexture {
     
     /** @hidden */
+    @JSImport("babylonjs/Materials/Textures/internalTexture", "InternalTexture._UpdateRGBDAsync")
+    @js.native
     def _UpdateRGBDAsync(
       internalTexture: InternalTexture,
       data: js.Array[js.Array[ArrayBufferView]],
@@ -315,9 +315,10 @@ object internalTextureMod extends js.Object {
   }
   
   @js.native
-  sealed trait InternalTextureSource extends js.Object
+  sealed trait InternalTextureSource extends StObject
+  @JSImport("babylonjs/Materials/Textures/internalTexture", "InternalTextureSource")
   @js.native
-  object InternalTextureSource extends js.Object {
+  object InternalTextureSource extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[InternalTextureSource with Double] = js.native
@@ -327,111 +328,97 @@ object internalTextureMod extends js.Object {
       */
     @js.native
     sealed trait Cube extends InternalTextureSource
-    /* 7 */ @js.native
-    object Cube extends TopLevel[Cube with Double]
+    /* 7 */ val Cube: typings.babylonjs.internalTextureMod.InternalTextureSource.Cube with Double = js.native
     
     /**
       * Texture data come from a prefiltered cube data file
       */
     @js.native
     sealed trait CubePrefiltered extends InternalTextureSource
-    /* 9 */ @js.native
-    object CubePrefiltered extends TopLevel[CubePrefiltered with Double]
+    /* 9 */ val CubePrefiltered: typings.babylonjs.internalTextureMod.InternalTextureSource.CubePrefiltered with Double = js.native
     
     /**
       * Texture data comes from a raw cube data
       */
     @js.native
     sealed trait CubeRaw extends InternalTextureSource
-    /* 8 */ @js.native
-    object CubeRaw extends TopLevel[CubeRaw with Double]
+    /* 8 */ val CubeRaw: typings.babylonjs.internalTextureMod.InternalTextureSource.CubeRaw with Double = js.native
     
     /**
       * Texture data comes from a raw cube data encoded with RGBD
       */
     @js.native
     sealed trait CubeRawRGBD extends InternalTextureSource
-    /* 13 */ @js.native
-    object CubeRawRGBD extends TopLevel[CubeRawRGBD with Double]
+    /* 13 */ val CubeRawRGBD: typings.babylonjs.internalTextureMod.InternalTextureSource.CubeRawRGBD with Double = js.native
     
     /**
       * Texture content is a depth texture
       */
     @js.native
     sealed trait Depth extends InternalTextureSource
-    /* 12 */ @js.native
-    object Depth extends TopLevel[Depth with Double]
+    /* 12 */ val Depth: typings.babylonjs.internalTextureMod.InternalTextureSource.Depth with Double = js.native
     
     /**
       * Texture content is dynamic (video or dynamic texture)
       */
     @js.native
     sealed trait Dynamic extends InternalTextureSource
-    /* 4 */ @js.native
-    object Dynamic extends TopLevel[Dynamic with Double]
+    /* 4 */ val Dynamic: typings.babylonjs.internalTextureMod.InternalTextureSource.Dynamic with Double = js.native
     
     /**
       * Texture content is part of a multi render target process
       */
     @js.native
     sealed trait MultiRenderTarget extends InternalTextureSource
-    /* 6 */ @js.native
-    object MultiRenderTarget extends TopLevel[MultiRenderTarget with Double]
+    /* 6 */ val MultiRenderTarget: typings.babylonjs.internalTextureMod.InternalTextureSource.MultiRenderTarget with Double = js.native
     
     /**
       * Texture data comes from raw data (ArrayBuffer)
       */
     @js.native
     sealed trait Raw extends InternalTextureSource
-    /* 3 */ @js.native
-    object Raw extends TopLevel[Raw with Double]
+    /* 3 */ val Raw: typings.babylonjs.internalTextureMod.InternalTextureSource.Raw with Double = js.native
     
     /**
       * Texture content is raw 2D array data
       */
     @js.native
     sealed trait Raw2DArray extends InternalTextureSource
-    /* 11 */ @js.native
-    object Raw2DArray extends TopLevel[Raw2DArray with Double]
+    /* 11 */ val Raw2DArray: typings.babylonjs.internalTextureMod.InternalTextureSource.Raw2DArray with Double = js.native
     
     /**
       * Texture content is raw 3D data
       */
     @js.native
     sealed trait Raw3D extends InternalTextureSource
-    /* 10 */ @js.native
-    object Raw3D extends TopLevel[Raw3D with Double]
+    /* 10 */ val Raw3D: typings.babylonjs.internalTextureMod.InternalTextureSource.Raw3D with Double = js.native
     
     /**
       * Texture content is generated by rendering to it
       */
     @js.native
     sealed trait RenderTarget extends InternalTextureSource
-    /* 5 */ @js.native
-    object RenderTarget extends TopLevel[RenderTarget with Double]
+    /* 5 */ val RenderTarget: typings.babylonjs.internalTextureMod.InternalTextureSource.RenderTarget with Double = js.native
     
     /**
       * Texture data is only used for temporary storage
       */
     @js.native
     sealed trait Temp extends InternalTextureSource
-    /* 2 */ @js.native
-    object Temp extends TopLevel[Temp with Double]
+    /* 2 */ val Temp: typings.babylonjs.internalTextureMod.InternalTextureSource.Temp with Double = js.native
     
     /**
       * The source of the texture data is unknown
       */
     @js.native
     sealed trait Unknown extends InternalTextureSource
-    /* 0 */ @js.native
-    object Unknown extends TopLevel[Unknown with Double]
+    /* 0 */ val Unknown: typings.babylonjs.internalTextureMod.InternalTextureSource.Unknown with Double = js.native
     
     /**
       * Texture data comes from an URL
       */
     @js.native
     sealed trait Url extends InternalTextureSource
-    /* 1 */ @js.native
-    object Url extends TopLevel[Url with Double]
+    /* 1 */ val Url: typings.babylonjs.internalTextureMod.InternalTextureSource.Url with Double = js.native
   }
 }

@@ -2,12 +2,13 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParticleEmitterFrameConfig extends js.Object {
+trait ParticleEmitterFrameConfig extends StObject {
   
   /**
     * Whether texture frames will be assigned consecutively (true) or at random (false).
@@ -33,39 +34,27 @@ object ParticleEmitterFrameConfig {
   }
   
   @scala.inline
-  implicit class ParticleEmitterFrameConfigOps[Self <: ParticleEmitterFrameConfig] (val x: Self) extends AnyVal {
+  implicit class ParticleEmitterFrameConfigMutableBuilder[Self <: ParticleEmitterFrameConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrames(value: Double | (js.Array[Double | Frame | String]) | String | Frame): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCycle(value: Boolean): Self = this.set("cycle", value.asInstanceOf[js.Any])
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def deleteCycle: Self = this.set("cycle", js.undefined)
+    def setFramesVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setFramesVarargs(value: (Double | Frame | String)*): Self = this.set("frames", js.Array(value :_*))
+    def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: Double | (js.Array[Double | Frame | String]) | String | Frame): Self = this.set("frames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: integer): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

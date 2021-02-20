@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalCharacterAlignment extends js.Object
+sealed trait VerticalCharacterAlignment extends StObject
 @JSGlobal("Windows.UI.Text.VerticalCharacterAlignment")
 @js.native
-object VerticalCharacterAlignment extends js.Object {
+object VerticalCharacterAlignment extends StObject {
   
   @js.native
   sealed trait baseline extends VerticalCharacterAlignment

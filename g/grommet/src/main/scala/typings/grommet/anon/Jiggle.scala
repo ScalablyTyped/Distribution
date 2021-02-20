@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Jiggle extends js.Object {
+trait Jiggle extends StObject {
   
   var duration: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Jiggle {
   }
   
   @scala.inline
-  implicit class JiggleOps[Self <: Jiggle] (val x: Self) extends AnyVal {
+  implicit class JiggleMutableBuilder[Self <: Jiggle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJiggle(value: Duration): Self = StObject.set(x, "jiggle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setJiggle(value: Duration): Self = this.set("jiggle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJiggle: Self = this.set("jiggle", js.undefined)
+    def setJiggleUndefined: Self = StObject.set(x, "jiggle", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,30 +34,18 @@ object AssignmentExpression {
   }
   
   @scala.inline
-  implicit class AssignmentExpressionOps[Self <: AssignmentExpression] (val x: Self) extends AnyVal {
+  implicit class AssignmentExpressionMutableBuilder[Self <: AssignmentExpression] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeft(value: Pattern | MemberExpression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOperator(value: AssignmentOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Pattern | MemberExpression): Self = this.set("left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOperator(value: AssignmentOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight(value: Expression): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.AssignmentExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: typings.estree.estreeStrings.AssignmentExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogCustomAttributeValue")
 @js.native
-class CatalogCustomAttributeValue () extends js.Object {
+class CatalogCustomAttributeValue () extends StObject {
   
   /**
     * A `true` or `false` value. Populated if `type` = `BOOLEAN`.

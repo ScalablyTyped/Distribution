@@ -1,16 +1,16 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/i18n/serializers/placeholder", JSImport.Namespace)
-@js.native
-object placeholderMod extends js.Object {
+object placeholderMod {
   
+  @JSImport("@angular/compiler/src/i18n/serializers/placeholder", "PlaceholderRegistry")
   @js.native
-  class PlaceholderRegistry () extends js.Object {
+  class PlaceholderRegistry () extends StObject {
     
     var _generateUniqueName: js.Any = js.native
     

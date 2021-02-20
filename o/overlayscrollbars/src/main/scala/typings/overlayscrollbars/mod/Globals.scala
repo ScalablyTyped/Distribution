@@ -3,12 +3,13 @@ package typings.overlayscrollbars.mod
 import typings.overlayscrollbars.anon.I
 import typings.overlayscrollbars.anon.XBoolean
 import typings.overlayscrollbars.anon.XNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Globals extends js.Object {
+trait Globals extends StObject {
   
   var autoUpdateLoop: Boolean = js.native
   
@@ -61,63 +62,51 @@ object Globals {
   }
   
   @scala.inline
-  implicit class GlobalsOps[Self <: Globals] (val x: Self) extends AnyVal {
+  implicit class GlobalsMutableBuilder[Self <: Globals] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoUpdateLoop(value: Boolean): Self = StObject.set(x, "autoUpdateLoop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUpdateRecommended(value: Boolean): Self = StObject.set(x, "autoUpdateRecommended", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCssCalc(value: String): Self = StObject.set(x, "cssCalc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoUpdateLoop(value: Boolean): Self = this.set("autoUpdateLoop", value.asInstanceOf[js.Any])
+    def setCssCalcNull: Self = StObject.set(x, "cssCalc", null)
     
     @scala.inline
-    def setAutoUpdateRecommended(value: Boolean): Self = this.set("autoUpdateRecommended", value.asInstanceOf[js.Any])
+    def setNativeScrollbarIsOverlaid(value: XBoolean): Self = StObject.set(x, "nativeScrollbarIsOverlaid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeScrollbarIsOverlaid(value: XBoolean): Self = this.set("nativeScrollbarIsOverlaid", value.asInstanceOf[js.Any])
+    def setNativeScrollbarSize(value: XNumber): Self = StObject.set(x, "nativeScrollbarSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeScrollbarSize(value: XNumber): Self = this.set("nativeScrollbarSize", value.asInstanceOf[js.Any])
+    def setNativeScrollbarStyling(value: Boolean): Self = StObject.set(x, "nativeScrollbarStyling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeScrollbarStyling(value: Boolean): Self = this.set("nativeScrollbarStyling", value.asInstanceOf[js.Any])
+    def setOverlayScrollbarDummySize(value: XNumber): Self = StObject.set(x, "overlayScrollbarDummySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlayScrollbarDummySize(value: XNumber): Self = this.set("overlayScrollbarDummySize", value.asInstanceOf[js.Any])
+    def setRestrictedMeasuring(value: Boolean): Self = StObject.set(x, "restrictedMeasuring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestrictedMeasuring(value: Boolean): Self = this.set("restrictedMeasuring", value.asInstanceOf[js.Any])
+    def setRtlScrollBehavior(value: I): Self = StObject.set(x, "rtlScrollBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtlScrollBehavior(value: I): Self = this.set("rtlScrollBehavior", value.asInstanceOf[js.Any])
+    def setSupportMutationObserver(value: Boolean): Self = StObject.set(x, "supportMutationObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportMutationObserver(value: Boolean): Self = this.set("supportMutationObserver", value.asInstanceOf[js.Any])
+    def setSupportPassiveEvents(value: Boolean): Self = StObject.set(x, "supportPassiveEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportPassiveEvents(value: Boolean): Self = this.set("supportPassiveEvents", value.asInstanceOf[js.Any])
+    def setSupportResizeObserver(value: Boolean): Self = StObject.set(x, "supportResizeObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportResizeObserver(value: Boolean): Self = this.set("supportResizeObserver", value.asInstanceOf[js.Any])
+    def setSupportTransform(value: Boolean): Self = StObject.set(x, "supportTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportTransform(value: Boolean): Self = this.set("supportTransform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportTransition(value: Boolean): Self = this.set("supportTransition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCssCalc(value: String): Self = this.set("cssCalc", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCssCalcNull: Self = this.set("cssCalc", null)
+    def setSupportTransition(value: Boolean): Self = StObject.set(x, "supportTransition", value.asInstanceOf[js.Any])
   }
 }

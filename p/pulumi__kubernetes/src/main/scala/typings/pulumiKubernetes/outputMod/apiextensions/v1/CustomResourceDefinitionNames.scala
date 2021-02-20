@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apiextensions.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceDefinitionNames indicates the names to serve this CustomResourceDefinition
   */
 @js.native
-trait CustomResourceDefinitionNames extends js.Object {
+trait CustomResourceDefinitionNames extends StObject {
   
   /**
     * categories is a list of grouped resources this custom resource belongs to (e.g. 'all'). This is published in API discovery documents, and used by clients to support invocations like `kubectl get all`.
@@ -56,42 +57,30 @@ object CustomResourceDefinitionNames {
   }
   
   @scala.inline
-  implicit class CustomResourceDefinitionNamesOps[Self <: CustomResourceDefinitionNames] (val x: Self) extends AnyVal {
+  implicit class CustomResourceDefinitionNamesMutableBuilder[Self <: CustomResourceDefinitionNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoriesVarargs(value: String*): Self = this.set("categories", js.Array(value :_*))
+    def setListKind(value: String): Self = StObject.set(x, "listKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[String]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setShortNames(value: js.Array[String]): Self = StObject.set(x, "shortNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListKind(value: String): Self = this.set("listKind", value.asInstanceOf[js.Any])
+    def setShortNamesVarargs(value: String*): Self = StObject.set(x, "shortNames", js.Array(value :_*))
     
     @scala.inline
-    def setPlural(value: String): Self = this.set("plural", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortNamesVarargs(value: String*): Self = this.set("shortNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setShortNames(value: js.Array[String]): Self = this.set("shortNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingular(value: String): Self = this.set("singular", value.asInstanceOf[js.Any])
+    def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
   }
 }

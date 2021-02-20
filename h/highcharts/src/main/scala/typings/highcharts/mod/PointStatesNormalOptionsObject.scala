@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointStatesNormalOptionsObject extends js.Object {
+trait PointStatesNormalOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) Animation when returning to normal state after
@@ -23,24 +24,12 @@ object PointStatesNormalOptionsObject {
   }
   
   @scala.inline
-  implicit class PointStatesNormalOptionsObjectOps[Self <: PointStatesNormalOptionsObject] (val x: Self) extends AnyVal {
+  implicit class PointStatesNormalOptionsObjectMutableBuilder[Self <: PointStatesNormalOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = this.set("animation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputDescription extends js.Object {
+trait OutputDescription extends StObject {
   
   /**
     * Data format used for writing data to the destination.
@@ -46,54 +47,42 @@ object OutputDescription {
   }
   
   @scala.inline
-  implicit class OutputDescriptionOps[Self <: OutputDescription] (val x: Self) extends AnyVal {
+  implicit class OutputDescriptionMutableBuilder[Self <: OutputDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationSchema(value: DestinationSchema): Self = StObject.set(x, "DestinationSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationSchemaUndefined: Self = StObject.set(x, "DestinationSchema", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKinesisFirehoseOutputDescription(value: KinesisFirehoseOutputDescription): Self = StObject.set(x, "KinesisFirehoseOutputDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationSchema(value: DestinationSchema): Self = this.set("DestinationSchema", value.asInstanceOf[js.Any])
+    def setKinesisFirehoseOutputDescriptionUndefined: Self = StObject.set(x, "KinesisFirehoseOutputDescription", js.undefined)
     
     @scala.inline
-    def deleteDestinationSchema: Self = this.set("DestinationSchema", js.undefined)
+    def setKinesisStreamsOutputDescription(value: KinesisStreamsOutputDescription): Self = StObject.set(x, "KinesisStreamsOutputDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisFirehoseOutputDescription(value: KinesisFirehoseOutputDescription): Self = this.set("KinesisFirehoseOutputDescription", value.asInstanceOf[js.Any])
+    def setKinesisStreamsOutputDescriptionUndefined: Self = StObject.set(x, "KinesisStreamsOutputDescription", js.undefined)
     
     @scala.inline
-    def deleteKinesisFirehoseOutputDescription: Self = this.set("KinesisFirehoseOutputDescription", js.undefined)
+    def setLambdaOutputDescription(value: LambdaOutputDescription): Self = StObject.set(x, "LambdaOutputDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesisStreamsOutputDescription(value: KinesisStreamsOutputDescription): Self = this.set("KinesisStreamsOutputDescription", value.asInstanceOf[js.Any])
+    def setLambdaOutputDescriptionUndefined: Self = StObject.set(x, "LambdaOutputDescription", js.undefined)
     
     @scala.inline
-    def deleteKinesisStreamsOutputDescription: Self = this.set("KinesisStreamsOutputDescription", js.undefined)
+    def setName(value: InAppStreamName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambdaOutputDescription(value: LambdaOutputDescription): Self = this.set("LambdaOutputDescription", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLambdaOutputDescription: Self = this.set("LambdaOutputDescription", js.undefined)
+    def setOutputId(value: Id): Self = StObject.set(x, "OutputId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: InAppStreamName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setOutputId(value: Id): Self = this.set("OutputId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputId: Self = this.set("OutputId", js.undefined)
+    def setOutputIdUndefined: Self = StObject.set(x, "OutputId", js.undefined)
   }
 }

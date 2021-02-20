@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Included in the result of a query execution to describe details of the columns involved.
   */
 @js.native
-trait Metadata[T] extends js.Object {
+trait Metadata[T] extends StObject {
   
   /**
     * Database byte size. This is only set for DB_TYPE_VARCHAR, DB_TYPE_CHAR and DB_TYPE_RAW column types.
@@ -69,69 +70,57 @@ object Metadata {
   }
   
   @scala.inline
-  implicit class MetadataOps[Self <: Metadata[_], T] (val x: Self with Metadata[T]) extends AnyVal {
+  implicit class MetadataMutableBuilder[Self <: Metadata[_], T] (val x: Self with Metadata[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByteSizeUndefined: Self = StObject.set(x, "byteSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbType(value: Double): Self = StObject.set(x, "dbType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDbTypeClass(value: DBObjectClass[T]): Self = StObject.set(x, "dbTypeClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByteSize(value: Double): Self = this.set("byteSize", value.asInstanceOf[js.Any])
+    def setDbTypeClassUndefined: Self = StObject.set(x, "dbTypeClass", js.undefined)
     
     @scala.inline
-    def deleteByteSize: Self = this.set("byteSize", js.undefined)
+    def setDbTypeName(value: String): Self = StObject.set(x, "dbTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbType(value: Double): Self = this.set("dbType", value.asInstanceOf[js.Any])
+    def setDbTypeNameUndefined: Self = StObject.set(x, "dbTypeName", js.undefined)
     
     @scala.inline
-    def deleteDbType: Self = this.set("dbType", js.undefined)
+    def setDbTypeUndefined: Self = StObject.set(x, "dbType", js.undefined)
     
     @scala.inline
-    def setDbTypeClass(value: DBObjectClass[T]): Self = this.set("dbTypeClass", value.asInstanceOf[js.Any])
+    def setFetchType(value: Double): Self = StObject.set(x, "fetchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDbTypeClass: Self = this.set("dbTypeClass", js.undefined)
+    def setFetchTypeUndefined: Self = StObject.set(x, "fetchType", js.undefined)
     
     @scala.inline
-    def setDbTypeName(value: String): Self = this.set("dbTypeName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDbTypeName: Self = this.set("dbTypeName", js.undefined)
+    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchType(value: Double): Self = this.set("fetchType", value.asInstanceOf[js.Any])
+    def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
     @scala.inline
-    def deleteFetchType: Self = this.set("fetchType", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullable(value: Boolean): Self = this.set("nullable", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deleteNullable: Self = this.set("nullable", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
-    
-    @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

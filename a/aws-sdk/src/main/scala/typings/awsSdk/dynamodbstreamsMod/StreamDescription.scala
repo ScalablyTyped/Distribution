@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbstreamsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamDescription extends js.Object {
+trait StreamDescription extends StObject {
   
   /**
     * The date and time when the request to create this stream was issued.
@@ -61,78 +62,66 @@ object StreamDescription {
   }
   
   @scala.inline
-  implicit class StreamDescriptionOps[Self <: StreamDescription] (val x: Self) extends AnyVal {
+  implicit class StreamDescriptionMutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationRequestDateTime(value: Date): Self = StObject.set(x, "CreationRequestDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationRequestDateTimeUndefined: Self = StObject.set(x, "CreationRequestDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeySchema(value: KeySchema): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationRequestDateTime(value: Date): Self = this.set("CreationRequestDateTime", value.asInstanceOf[js.Any])
+    def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
     @scala.inline
-    def deleteCreationRequestDateTime: Self = this.set("CreationRequestDateTime", js.undefined)
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
     
     @scala.inline
-    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    def setLastEvaluatedShardId(value: ShardId): Self = StObject.set(x, "LastEvaluatedShardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    def setLastEvaluatedShardIdUndefined: Self = StObject.set(x, "LastEvaluatedShardId", js.undefined)
     
     @scala.inline
-    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    def setShards(value: ShardDescriptionList): Self = StObject.set(x, "Shards", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastEvaluatedShardId(value: ShardId): Self = this.set("LastEvaluatedShardId", value.asInstanceOf[js.Any])
+    def setShardsUndefined: Self = StObject.set(x, "Shards", js.undefined)
     
     @scala.inline
-    def deleteLastEvaluatedShardId: Self = this.set("LastEvaluatedShardId", js.undefined)
+    def setShardsVarargs(value: Shard*): Self = StObject.set(x, "Shards", js.Array(value :_*))
     
     @scala.inline
-    def setShardsVarargs(value: Shard*): Self = this.set("Shards", js.Array(value :_*))
+    def setStreamArn(value: StreamArn): Self = StObject.set(x, "StreamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShards(value: ShardDescriptionList): Self = this.set("Shards", value.asInstanceOf[js.Any])
+    def setStreamArnUndefined: Self = StObject.set(x, "StreamArn", js.undefined)
     
     @scala.inline
-    def deleteShards: Self = this.set("Shards", js.undefined)
+    def setStreamLabel(value: String): Self = StObject.set(x, "StreamLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamArn(value: StreamArn): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
+    def setStreamLabelUndefined: Self = StObject.set(x, "StreamLabel", js.undefined)
     
     @scala.inline
-    def deleteStreamArn: Self = this.set("StreamArn", js.undefined)
+    def setStreamStatus(value: StreamStatus): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamLabel(value: String): Self = this.set("StreamLabel", value.asInstanceOf[js.Any])
+    def setStreamStatusUndefined: Self = StObject.set(x, "StreamStatus", js.undefined)
     
     @scala.inline
-    def deleteStreamLabel: Self = this.set("StreamLabel", js.undefined)
+    def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamStatus(value: StreamStatus): Self = this.set("StreamStatus", value.asInstanceOf[js.Any])
+    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
     
     @scala.inline
-    def deleteStreamStatus: Self = this.set("StreamStatus", js.undefined)
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamViewType(value: StreamViewType): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamViewType: Self = this.set("StreamViewType", js.undefined)
-    
-    @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentProperties extends js.Object {
+trait EnvironmentProperties extends StObject {
   
   /**
     * Describes the execution property groups.
@@ -21,24 +22,12 @@ object EnvironmentProperties {
   }
   
   @scala.inline
-  implicit class EnvironmentPropertiesOps[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
+  implicit class EnvironmentPropertiesMutableBuilder[Self <: EnvironmentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPropertyGroups(value: PropertyGroups): Self = StObject.set(x, "PropertyGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyGroupsVarargs(value: PropertyGroup*): Self = this.set("PropertyGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setPropertyGroups(value: PropertyGroups): Self = this.set("PropertyGroups", value.asInstanceOf[js.Any])
+    def setPropertyGroupsVarargs(value: PropertyGroup*): Self = StObject.set(x, "PropertyGroups", js.Array(value :_*))
   }
 }

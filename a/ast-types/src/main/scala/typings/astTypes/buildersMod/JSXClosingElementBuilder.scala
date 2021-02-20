@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.JSXIdentifierKind
 import typings.astTypes.kindsMod.JSXMemberExpressionKind
 import typings.astTypes.kindsMod.JSXNamespacedNameKind
 import typings.astTypes.namedTypesMod.namedTypes.JSXClosingElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSXClosingElementBuilder extends js.Object {
+trait JSXClosingElementBuilder extends StObject {
   
   def apply(name: JSXIdentifierKind): JSXClosingElement = js.native
   def apply(name: JSXMemberExpressionKind): JSXClosingElement = js.native

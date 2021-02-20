@@ -2,12 +2,13 @@ package typings.node.anon
 
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.MxRecord
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofresolveMx extends js.Object {
+trait TypeofresolveMx extends StObject {
   
   def apply(
     hostname: String,

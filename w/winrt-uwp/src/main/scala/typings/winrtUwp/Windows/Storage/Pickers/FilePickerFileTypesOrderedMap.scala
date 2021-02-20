@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.Collections.IIterator
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a collection of display names mapped to the associated file types (extensions). Each element in this collection maps a display name to a corresponding collection of file name extensions. The key is a single string, the value is a list/vector of strings representing one or more extension choices. */
 @js.native
-trait FilePickerFileTypesOrderedMap extends js.Object {
+trait FilePickerFileTypesOrderedMap extends StObject {
   
   /** Removes all display names and associated file name extensions from the collection. */
   def clear(): Unit = js.native
@@ -76,42 +77,30 @@ object FilePickerFileTypesOrderedMap {
   }
   
   @scala.inline
-  implicit class FilePickerFileTypesOrderedMapOps[Self <: FilePickerFileTypesOrderedMap] (val x: Self) extends AnyVal {
+  implicit class FilePickerFileTypesOrderedMapMutableBuilder[Self <: FilePickerFileTypesOrderedMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetView(value: () => IMapView[String, IVector[String]]): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setHasKey(value: String => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFirst(value: () => IIterator[IKeyValuePair[_, _]]): Self = this.set("first", js.Any.fromFunction0(value))
+    def setInsert(value: (String, IVector[String]) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetView(value: () => IMapView[String, IVector[String]]): Self = this.set("getView", js.Any.fromFunction0(value))
+    def setLookup(value: String => IVector[String]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasKey(value: String => Boolean): Self = this.set("hasKey", js.Any.fromFunction1(value))
+    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsert(value: (String, IVector[String]) => Boolean): Self = this.set("insert", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setLookup(value: String => IVector[String]): Self = this.set("lookup", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: String => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

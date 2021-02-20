@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DocumentMode extends js.Object
+sealed trait DocumentMode extends StObject
 /**
   * Specifies whether the document in the associated application is read-only or read-write.
   *
@@ -15,7 +16,7 @@ sealed trait DocumentMode extends js.Object
   */
 @JSGlobal("Office.DocumentMode")
 @js.native
-object DocumentMode extends js.Object {
+object DocumentMode extends StObject {
   
   /**
     * The document is read-only.

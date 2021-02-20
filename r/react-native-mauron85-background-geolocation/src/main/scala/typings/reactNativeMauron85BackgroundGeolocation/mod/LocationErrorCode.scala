@@ -1,5 +1,6 @@
 package typings.reactNativeMauron85BackgroundGeolocation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationNumbers.`2`
   - typings.reactNativeMauron85BackgroundGeolocation.reactNativeMauron85BackgroundGeolocationNumbers.`3`
 */
-trait LocationErrorCode extends js.Object
+trait LocationErrorCode extends StObject
 object LocationErrorCode {
   
   @scala.inline

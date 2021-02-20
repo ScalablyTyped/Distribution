@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseUpdateMetadata extends js.Object {
+trait ReleaseUpdateMetadata extends StObject {
   
   /**
     * Sets comment for release.
@@ -36,33 +37,21 @@ object ReleaseUpdateMetadata {
   }
   
   @scala.inline
-  implicit class ReleaseUpdateMetadataOps[Self <: ReleaseUpdateMetadata] (val x: Self) extends AnyVal {
+  implicit class ReleaseUpdateMetadataMutableBuilder[Self <: ReleaseUpdateMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeepForever(value: Boolean): Self = StObject.set(x, "keepForever", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManualEnvironments(value: js.Array[String]): Self = StObject.set(x, "manualEnvironments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setManualEnvironmentsVarargs(value: String*): Self = StObject.set(x, "manualEnvironments", js.Array(value :_*))
     
     @scala.inline
-    def setKeepForever(value: Boolean): Self = this.set("keepForever", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setManualEnvironmentsVarargs(value: String*): Self = this.set("manualEnvironments", js.Array(value :_*))
-    
-    @scala.inline
-    def setManualEnvironments(value: js.Array[String]): Self = this.set("manualEnvironments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ReleaseStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: ReleaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

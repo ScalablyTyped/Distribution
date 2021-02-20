@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartAppReplicationRequest extends js.Object {
+trait StartAppReplicationRequest extends StObject {
   
   /**
     * The ID of the application.
@@ -21,24 +22,12 @@ object StartAppReplicationRequest {
   }
   
   @scala.inline
-  implicit class StartAppReplicationRequestOps[Self <: StartAppReplicationRequest] (val x: Self) extends AnyVal {
+  implicit class StartAppReplicationRequestMutableBuilder[Self <: StartAppReplicationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppId: Self = this.set("appId", js.undefined)
+    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
   }
 }

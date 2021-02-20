@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPopulationRule extends js.Object {
+trait ListPopulationRule extends StObject {
   
   /** Floodlight activity ID associated with this rule. This field can be left blank. */
   var floodlightActivityId: js.UndefOr[String] = js.native
@@ -25,39 +26,27 @@ object ListPopulationRule {
   }
   
   @scala.inline
-  implicit class ListPopulationRuleOps[Self <: ListPopulationRule] (val x: Self) extends AnyVal {
+  implicit class ListPopulationRuleMutableBuilder[Self <: ListPopulationRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFloodlightActivityId(value: String): Self = StObject.set(x, "floodlightActivityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFloodlightActivityIdUndefined: Self = StObject.set(x, "floodlightActivityId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFloodlightActivityName(value: String): Self = StObject.set(x, "floodlightActivityName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityId(value: String): Self = this.set("floodlightActivityId", value.asInstanceOf[js.Any])
+    def setFloodlightActivityNameUndefined: Self = StObject.set(x, "floodlightActivityName", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityId: Self = this.set("floodlightActivityId", js.undefined)
+    def setListPopulationClauses(value: js.Array[ListPopulationClause]): Self = StObject.set(x, "listPopulationClauses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloodlightActivityName(value: String): Self = this.set("floodlightActivityName", value.asInstanceOf[js.Any])
+    def setListPopulationClausesUndefined: Self = StObject.set(x, "listPopulationClauses", js.undefined)
     
     @scala.inline
-    def deleteFloodlightActivityName: Self = this.set("floodlightActivityName", js.undefined)
-    
-    @scala.inline
-    def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = this.set("listPopulationClauses", js.Array(value :_*))
-    
-    @scala.inline
-    def setListPopulationClauses(value: js.Array[ListPopulationClause]): Self = this.set("listPopulationClauses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListPopulationClauses: Self = this.set("listPopulationClauses", js.undefined)
+    def setListPopulationClausesVarargs(value: ListPopulationClause*): Self = StObject.set(x, "listPopulationClauses", js.Array(value :_*))
   }
 }

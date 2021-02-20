@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Beatvalue extends js.Object {
+trait Beatvalue extends StObject {
   
   var beat_value: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object Beatvalue {
   }
   
   @scala.inline
-  implicit class BeatvalueOps[Self <: Beatvalue] (val x: Self) extends AnyVal {
+  implicit class BeatvalueMutableBuilder[Self <: Beatvalue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeat_value(value: Double): Self = StObject.set(x, "beat_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeat_valueUndefined: Self = StObject.set(x, "beat_value", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNum_beats(value: Double): Self = StObject.set(x, "num_beats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeat_value(value: Double): Self = this.set("beat_value", value.asInstanceOf[js.Any])
+    def setNum_beatsUndefined: Self = StObject.set(x, "num_beats", js.undefined)
     
     @scala.inline
-    def deleteBeat_value: Self = this.set("beat_value", js.undefined)
+    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNum_beats(value: Double): Self = this.set("num_beats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNum_beats: Self = this.set("num_beats", js.undefined)
-    
-    @scala.inline
-    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
   }
 }

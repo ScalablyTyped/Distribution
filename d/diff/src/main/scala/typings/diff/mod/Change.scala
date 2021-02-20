@@ -1,11 +1,12 @@
 package typings.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Change extends js.Object {
+trait Change extends StObject {
   
   /**
     * `true` if the value was inserted into the new string.
@@ -33,39 +34,27 @@ object Change {
   }
   
   @scala.inline
-  implicit class ChangeOps[Self <: Change] (val x: Self) extends AnyVal {
+  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setAdded(value: Boolean): Self = this.set("added", value.asInstanceOf[js.Any])
+    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdded: Self = this.set("added", js.undefined)
+    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setRemoved(value: Boolean): Self = this.set("removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoved: Self = this.set("removed", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

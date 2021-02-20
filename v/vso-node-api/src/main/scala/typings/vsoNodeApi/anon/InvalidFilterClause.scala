@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InvalidFilterClause extends js.Object {
+trait InvalidFilterClause extends StObject {
   
   var invalidFilterClause: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object InvalidFilterClause {
   }
   
   @scala.inline
-  implicit class InvalidFilterClauseOps[Self <: InvalidFilterClause] (val x: Self) extends AnyVal {
+  implicit class InvalidFilterClauseMutableBuilder[Self <: InvalidFilterClause] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidFilterClause(value: scala.Double): Self = StObject.set(x, "invalidFilterClause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvalidFilterClause(value: scala.Double): Self = this.set("invalidFilterClause", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOK(value: scala.Double): Self = this.set("oK", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = this.set("unknown", value.asInstanceOf[js.Any])
+    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

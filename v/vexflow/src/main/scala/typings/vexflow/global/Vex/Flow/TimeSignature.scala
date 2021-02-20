@@ -1,7 +1,6 @@
 package typings.vexflow.global.Vex.Flow
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vexflow.anon.CodeLine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,4 @@ class TimeSignature protected ()
   extends typings.vexflow.Vex.Flow.TimeSignature {
   def this(timeSpec: String) = this()
   def this(timeSpec: String, customPadding: Double) = this()
-}
-@JSGlobal("Vex.Flow.TimeSignature")
-@js.native
-object TimeSignature extends js.Object {
-  
-  @js.native
-  object glyphs extends /* name */ StringDictionary[CodeLine]
 }

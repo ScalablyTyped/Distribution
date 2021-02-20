@@ -1,12 +1,13 @@
 package typings.knockoutValidation
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutValidationUtils extends js.Object {
+trait KnockoutValidationUtils extends StObject {
   
   def contextFor(node: Element): KnockoutValidationConfiguration = js.native
   
@@ -57,57 +58,45 @@ object KnockoutValidationUtils {
   }
   
   @scala.inline
-  implicit class KnockoutValidationUtilsOps[Self <: KnockoutValidationUtils] (val x: Self) extends AnyVal {
+  implicit class KnockoutValidationUtilsMutableBuilder[Self <: KnockoutValidationUtils] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContextFor(value: Element => KnockoutValidationConfiguration): Self = StObject.set(x, "contextFor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetConfigOptions(value: Element => KnockoutValidationConfiguration): Self = StObject.set(x, "getConfigOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDomData(value: Element => KnockoutValidationConfiguration): Self = StObject.set(x, "getDomData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContextFor(value: Element => KnockoutValidationConfiguration): Self = this.set("contextFor", js.Any.fromFunction1(value))
+    def setGetValue(value: js.Any => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetConfigOptions(value: Element => KnockoutValidationConfiguration): Self = this.set("getConfigOptions", js.Any.fromFunction1(value))
+    def setHasAttribute(value: (Element, String) => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDomData(value: Element => KnockoutValidationConfiguration): Self = this.set("getDomData", js.Any.fromFunction1(value))
+    def setInsertAfter(value: (Element, Element) => Unit): Self = StObject.set(x, "insertAfter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetValue(value: js.Any => js.Any): Self = this.set("getValue", js.Any.fromFunction1(value))
+    def setIsArray(value: js.Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHasAttribute(value: (Element, String) => Boolean): Self = this.set("hasAttribute", js.Any.fromFunction2(value))
+    def setIsEmptyVal(value: js.Any => Boolean): Self = StObject.set(x, "isEmptyVal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertAfter(value: (Element, Element) => Unit): Self = this.set("insertAfter", js.Any.fromFunction2(value))
+    def setIsObject(value: js.Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsArray(value: js.Any => Boolean): Self = this.set("isArray", js.Any.fromFunction1(value))
+    def setIsValidatable(value: js.Any => Boolean): Self = StObject.set(x, "isValidatable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsEmptyVal(value: js.Any => Boolean): Self = this.set("isEmptyVal", js.Any.fromFunction1(value))
+    def setNewId(value: () => Double): Self = StObject.set(x, "newId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsObject(value: js.Any => Boolean): Self = this.set("isObject", js.Any.fromFunction1(value))
+    def setSetDomData(value: (Element, KnockoutValidationConfiguration) => Unit): Self = StObject.set(x, "setDomData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsValidatable(value: js.Any => Boolean): Self = this.set("isValidatable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setNewId(value: () => Double): Self = this.set("newId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDomData(value: (Element, KnockoutValidationConfiguration) => Unit): Self = this.set("setDomData", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValues(value: js.Any => js.Array[_]): Self = this.set("values", js.Any.fromFunction1(value))
+    def setValues(value: js.Any => js.Array[_]): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
   }
 }

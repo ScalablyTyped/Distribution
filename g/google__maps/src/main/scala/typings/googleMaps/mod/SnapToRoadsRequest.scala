@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapToRoadsRequest extends js.Object {
+trait SnapToRoadsRequest extends StObject {
   
   /**
     * Whether to interpolate a path to include all points forming the full road-geometry.
@@ -39,30 +40,18 @@ object SnapToRoadsRequest {
   }
   
   @scala.inline
-  implicit class SnapToRoadsRequestOps[Self <: SnapToRoadsRequest] (val x: Self) extends AnyVal {
+  implicit class SnapToRoadsRequestMutableBuilder[Self <: SnapToRoadsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInterpolate(value: Boolean): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathVarargs(value: LatLng*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[LatLng]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInterpolate(value: Boolean): Self = this.set("interpolate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterpolate: Self = this.set("interpolate", js.undefined)
+    def setPathVarargs(value: LatLng*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

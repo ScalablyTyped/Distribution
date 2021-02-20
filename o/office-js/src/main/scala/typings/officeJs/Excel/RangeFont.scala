@@ -10,6 +10,7 @@ import typings.officeJs.officeJsStrings.DoubleAccountant
 import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.Single
 import typings.officeJs.officeJsStrings.SingleAccountant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

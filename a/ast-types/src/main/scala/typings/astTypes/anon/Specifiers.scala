@@ -7,18 +7,19 @@ import typings.astTypes.kindsMod.ExportSpecifierKind
 import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.SourceLocationKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Specifiers extends js.Object {
+trait Specifiers extends StObject {
+  
+  var default: Boolean = js.native
   
   var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
   
   var declaration: DeclarationKind | ExpressionKind | Null = js.native
-  
-  var default: Boolean = js.native
   
   var loc: js.UndefOr[SourceLocationKind | Null] = js.native
   
@@ -35,66 +36,54 @@ object Specifiers {
   }
   
   @scala.inline
-  implicit class SpecifiersOps[Self <: Specifiers] (val x: Self) extends AnyVal {
+  implicit class SpecifiersMutableBuilder[Self <: Specifiers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
     @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = this.set("comments", js.Array(value :_*))
+    def setDeclaration(value: DeclarationKind | ExpressionKind): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = this.set("comments", value.asInstanceOf[js.Any])
+    def setDeclarationNull: Self = StObject.set(x, "declaration", null)
     
     @scala.inline
-    def deleteComments: Self = this.set("comments", js.undefined)
+    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommentsNull: Self = this.set("comments", null)
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclaration(value: DeclarationKind | ExpressionKind): Self = this.set("declaration", value.asInstanceOf[js.Any])
+    def setLocNull: Self = StObject.set(x, "loc", null)
     
     @scala.inline
-    def setDeclarationNull: Self = this.set("declaration", null)
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
     @scala.inline
-    def setLoc(value: SourceLocationKind): Self = this.set("loc", value.asInstanceOf[js.Any])
+    def setSource(value: LiteralKind): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoc: Self = this.set("loc", js.undefined)
+    def setSourceNull: Self = StObject.set(x, "source", null)
     
     @scala.inline
-    def setLocNull: Self = this.set("loc", null)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setSource(value: LiteralKind): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSpecifiers(value: js.Array[ExportSpecifierKind | ExportBatchSpecifierKind]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSpecifiersUndefined: Self = StObject.set(x, "specifiers", js.undefined)
     
     @scala.inline
-    def setSourceNull: Self = this.set("source", null)
-    
-    @scala.inline
-    def setSpecifiersVarargs(value: (ExportSpecifierKind | ExportBatchSpecifierKind)*): Self = this.set("specifiers", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpecifiers(value: js.Array[ExportSpecifierKind | ExportBatchSpecifierKind]): Self = this.set("specifiers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecifiers: Self = this.set("specifiers", js.undefined)
+    def setSpecifiersVarargs(value: (ExportSpecifierKind | ExportBatchSpecifierKind)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
   }
 }

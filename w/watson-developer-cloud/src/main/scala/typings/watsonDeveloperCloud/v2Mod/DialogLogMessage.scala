@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Dialog log message details. */
 @js.native
-trait DialogLogMessage extends js.Object {
+trait DialogLogMessage extends StObject {
   
   /** The severity of the log message. */
   var level: String = js.native
@@ -23,24 +24,12 @@ object DialogLogMessage {
   }
   
   @scala.inline
-  implicit class DialogLogMessageOps[Self <: DialogLogMessage] (val x: Self) extends AnyVal {
+  implicit class DialogLogMessageMutableBuilder[Self <: DialogLogMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLevel(value: String): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

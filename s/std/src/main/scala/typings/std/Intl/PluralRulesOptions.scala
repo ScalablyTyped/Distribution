@@ -2,12 +2,13 @@ package typings.std.Intl
 
 import typings.std.stdStrings.`best fit`
 import typings.std.stdStrings.lookup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PluralRulesOptions extends js.Object {
+trait PluralRulesOptions extends StObject {
   
   var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.native
   
@@ -32,60 +33,48 @@ object PluralRulesOptions {
   }
   
   @scala.inline
-  implicit class PluralRulesOptionsOps[Self <: PluralRulesOptions] (val x: Self) extends AnyVal {
+  implicit class PluralRulesOptionsMutableBuilder[Self <: PluralRulesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleMatcher(value: lookup | (`best fit`)): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
+    def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
     
     @scala.inline
-    def deleteLocaleMatcher: Self = this.set("localeMatcher", js.undefined)
+    def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumFractionDigits(value: Double): Self = this.set("maximumFractionDigits", value.asInstanceOf[js.Any])
+    def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
     
     @scala.inline
-    def deleteMaximumFractionDigits: Self = this.set("maximumFractionDigits", js.undefined)
+    def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumSignificantDigits(value: Double): Self = this.set("maximumSignificantDigits", value.asInstanceOf[js.Any])
+    def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
     
     @scala.inline
-    def deleteMaximumSignificantDigits: Self = this.set("maximumSignificantDigits", js.undefined)
+    def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumFractionDigits(value: Double): Self = this.set("minimumFractionDigits", value.asInstanceOf[js.Any])
+    def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
     
     @scala.inline
-    def deleteMinimumFractionDigits: Self = this.set("minimumFractionDigits", js.undefined)
+    def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumIntegerDigits(value: Double): Self = this.set("minimumIntegerDigits", value.asInstanceOf[js.Any])
+    def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
     @scala.inline
-    def deleteMinimumIntegerDigits: Self = this.set("minimumIntegerDigits", js.undefined)
+    def setType(value: PluralRuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumSignificantDigits(value: Double): Self = this.set("minimumSignificantDigits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumSignificantDigits: Self = this.set("minimumSignificantDigits", js.undefined)
-    
-    @scala.inline
-    def setType(value: PluralRuleType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

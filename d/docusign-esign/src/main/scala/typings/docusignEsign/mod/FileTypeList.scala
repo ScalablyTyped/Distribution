@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileTypeList extends js.Object {
+trait FileTypeList extends StObject {
   
   /**
     * A collection of file types.
@@ -21,27 +22,15 @@ object FileTypeList {
   }
   
   @scala.inline
-  implicit class FileTypeListOps[Self <: FileTypeList] (val x: Self) extends AnyVal {
+  implicit class FileTypeListMutableBuilder[Self <: FileTypeList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileTypes(value: js.Array[FileType]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFileTypesVarargs(value: FileType*): Self = this.set("fileTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setFileTypes(value: js.Array[FileType]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileTypes: Self = this.set("fileTypes", js.undefined)
+    def setFileTypesVarargs(value: FileType*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
   }
 }

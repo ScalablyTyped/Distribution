@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,27 +47,15 @@ object SceneServiceVersion {
   }
   
   @scala.inline
-  implicit class SceneServiceVersionOps[Self <: SceneServiceVersion] (val x: Self) extends AnyVal {
+  implicit class SceneServiceVersionMutableBuilder[Self <: SceneServiceVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMajor(value: Double): Self = this.set("major", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinor(value: Double): Self = this.set("minor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionString(value: String): Self = this.set("versionString", value.asInstanceOf[js.Any])
+    def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
   }
 }

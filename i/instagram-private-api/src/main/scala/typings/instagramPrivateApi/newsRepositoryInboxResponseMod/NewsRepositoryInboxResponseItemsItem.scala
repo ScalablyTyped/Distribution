@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewsRepositoryInboxResponseItemsItem extends js.Object {
+trait NewsRepositoryInboxResponseItemsItem extends StObject {
   
   var algorithm: String = js.native
   
@@ -56,69 +57,57 @@ object NewsRepositoryInboxResponseItemsItem {
   }
   
   @scala.inline
-  implicit class NewsRepositoryInboxResponseItemsItemOps[Self <: NewsRepositoryInboxResponseItemsItem] (val x: Self) extends AnyVal {
+  implicit class NewsRepositoryInboxResponseItemsItemMutableBuilder[Self <: NewsRepositoryInboxResponseItemsItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlgorithm(value: String): Self = this.set("algorithm", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setIs_new_suggestion(value: Boolean): Self = StObject.set(x, "is_new_suggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFollowed_by(value: Boolean): Self = this.set("followed_by", value.asInstanceOf[js.Any])
+    def setLarge_urls(value: js.Array[_]): Self = StObject.set(x, "large_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLarge_urlsVarargs(value: js.Any*): Self = StObject.set(x, "large_urls", js.Array(value :_*))
     
     @scala.inline
-    def setIs_new_suggestion(value: Boolean): Self = this.set("is_new_suggestion", value.asInstanceOf[js.Any])
+    def setMedia_ids(value: js.Array[_]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLarge_urlsVarargs(value: js.Any*): Self = this.set("large_urls", js.Array(value :_*))
+    def setMedia_idsVarargs(value: js.Any*): Self = StObject.set(x, "media_ids", js.Array(value :_*))
     
     @scala.inline
-    def setLarge_urls(value: js.Array[_]): Self = this.set("large_urls", value.asInstanceOf[js.Any])
+    def setMedia_infos(value: js.Array[_]): Self = StObject.set(x, "media_infos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_idsVarargs(value: js.Any*): Self = this.set("media_ids", js.Array(value :_*))
+    def setMedia_infosVarargs(value: js.Any*): Self = StObject.set(x, "media_infos", js.Array(value :_*))
     
     @scala.inline
-    def setMedia_ids(value: js.Array[_]): Self = this.set("media_ids", value.asInstanceOf[js.Any])
+    def setSocial_context(value: String): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_infosVarargs(value: js.Any*): Self = this.set("media_infos", js.Array(value :_*))
+    def setThumbnail_urls(value: js.Array[_]): Self = StObject.set(x, "thumbnail_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedia_infos(value: js.Array[_]): Self = this.set("media_infos", value.asInstanceOf[js.Any])
+    def setThumbnail_urlsVarargs(value: js.Any*): Self = StObject.set(x, "thumbnail_urls", js.Array(value :_*))
     
     @scala.inline
-    def setSocial_context(value: String): Self = this.set("social_context", value.asInstanceOf[js.Any])
+    def setUser(value: NewsRepositoryInboxResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail_urlsVarargs(value: js.Any*): Self = this.set("thumbnail_urls", js.Array(value :_*))
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbnail_urls(value: js.Array[_]): Self = this.set("thumbnail_urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: NewsRepositoryInboxResponseUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

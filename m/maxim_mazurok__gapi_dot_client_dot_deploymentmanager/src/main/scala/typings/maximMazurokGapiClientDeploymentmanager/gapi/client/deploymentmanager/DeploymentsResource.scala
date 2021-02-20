@@ -11,12 +11,13 @@ import typings.maximMazurokGapiClientDeploymentmanager.anon.Filter
 import typings.maximMazurokGapiClientDeploymentmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientDeploymentmanager.anon.PrettyPrint
 import typings.maximMazurokGapiClientDeploymentmanager.anon.Project
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentsResource extends js.Object {
+trait DeploymentsResource extends StObject {
   
   /** Cancels and removes the preview currently associated with the deployment. */
   def cancelPreview(request: Accesstoken): Request[Operation] = js.native

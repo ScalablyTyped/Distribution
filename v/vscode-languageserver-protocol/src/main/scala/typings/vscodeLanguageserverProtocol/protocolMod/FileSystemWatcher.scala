@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemWatcher extends js.Object {
+trait FileSystemWatcher extends StObject {
   
   /**
     * The  glob pattern to watch. Glob patterns can have the following syntax:
@@ -34,27 +35,15 @@ object FileSystemWatcher {
   }
   
   @scala.inline
-  implicit class FileSystemWatcherOps[Self <: FileSystemWatcher] (val x: Self) extends AnyVal {
+  implicit class FileSystemWatcherMutableBuilder[Self <: FileSystemWatcher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlobPattern(value: String): Self = StObject.set(x, "globPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGlobPattern(value: String): Self = this.set("globPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: Double): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.umbraco.umbraco.resources
 
 import typings.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description Loads in data for content types
   **/
 @js.native
-trait IContentTypeResource extends js.Object {
+trait IContentTypeResource extends StObject {
   
   /**
     * @ngdoc method
@@ -59,24 +60,12 @@ object IContentTypeResource {
   }
   
   @scala.inline
-  implicit class IContentTypeResourceOps[Self <: IContentTypeResource] (val x: Self) extends AnyVal {
+  implicit class IContentTypeResourceMutableBuilder[Self <: IContentTypeResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllPropertyTypeAliases(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllPropertyTypeAliases", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetAllPropertyTypeAliases(value: () => IPromise[IResourcePromise]): Self = this.set("getAllPropertyTypeAliases", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = this.set("getAllowedTypes", js.Any.fromFunction1(value))
+    def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
   }
 }

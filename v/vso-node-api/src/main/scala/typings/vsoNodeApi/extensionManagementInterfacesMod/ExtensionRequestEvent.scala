@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import typings.vsoNodeApi.galleryInterfacesMod.PublishedExtension
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionRequestEvent extends js.Object {
+trait ExtensionRequestEvent extends StObject {
   
   /**
     * The extension which has been requested
@@ -54,36 +55,24 @@ object ExtensionRequestEvent {
   }
   
   @scala.inline
-  implicit class ExtensionRequestEventOps[Self <: ExtensionRequestEvent] (val x: Self) extends AnyVal {
+  implicit class ExtensionRequestEventMutableBuilder[Self <: ExtensionRequestEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: PublishedExtension): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setLinks(value: ExtensionRequestUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: ExtensionHost): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setRequest(value: ExtensionRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostName(value: String): Self = this.set("hostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinks(value: ExtensionRequestUrls): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ExtensionRequest): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateType(value: ExtensionRequestUpdateType): Self = this.set("updateType", value.asInstanceOf[js.Any])
+    def setUpdateType(value: ExtensionRequestUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
   }
 }

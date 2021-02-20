@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2ListStoredInfoTypesResponse extends js.Object {
+trait GooglePrivacyDlpV2ListStoredInfoTypesResponse extends StObject {
   
   /** If the next page is available then the next page token to be used in following ListStoredInfoTypes request. */
   var nextPageToken: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object GooglePrivacyDlpV2ListStoredInfoTypesResponse {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2ListStoredInfoTypesResponseOps[Self <: GooglePrivacyDlpV2ListStoredInfoTypesResponse] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2ListStoredInfoTypesResponseMutableBuilder[Self <: GooglePrivacyDlpV2ListStoredInfoTypesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStoredInfoTypes(value: js.Array[GooglePrivacyDlpV2StoredInfoType]): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setStoredInfoTypesUndefined: Self = StObject.set(x, "storedInfoTypes", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setStoredInfoTypesVarargs(value: GooglePrivacyDlpV2StoredInfoType*): Self = this.set("storedInfoTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setStoredInfoTypes(value: js.Array[GooglePrivacyDlpV2StoredInfoType]): Self = this.set("storedInfoTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoredInfoTypes: Self = this.set("storedInfoTypes", js.undefined)
+    def setStoredInfoTypesVarargs(value: GooglePrivacyDlpV2StoredInfoType*): Self = StObject.set(x, "storedInfoTypes", js.Array(value :_*))
   }
 }

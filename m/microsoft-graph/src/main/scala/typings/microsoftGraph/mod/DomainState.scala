@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainState extends js.Object {
+trait DomainState extends StObject {
   
   /**
     * Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous
@@ -31,45 +32,33 @@ object DomainState {
   }
   
   @scala.inline
-  implicit class DomainStateOps[Self <: DomainState] (val x: Self) extends AnyVal {
+  implicit class DomainStateMutableBuilder[Self <: DomainState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastActionDateTimeNull: Self = StObject.set(x, "lastActionDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastActionDateTimeUndefined: Self = StObject.set(x, "lastActionDateTime", js.undefined)
     
     @scala.inline
-    def setLastActionDateTime(value: NullableOption[String]): Self = this.set("lastActionDateTime", value.asInstanceOf[js.Any])
+    def setOperation(value: NullableOption[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastActionDateTime: Self = this.set("lastActionDateTime", js.undefined)
+    def setOperationNull: Self = StObject.set(x, "operation", null)
     
     @scala.inline
-    def setLastActionDateTimeNull: Self = this.set("lastActionDateTime", null)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def setOperation(value: NullableOption[String]): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setStatus(value: NullableOption[String]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setStatusNull: Self = StObject.set(x, "status", null)
     
     @scala.inline
-    def setOperationNull: Self = this.set("operation", null)
-    
-    @scala.inline
-    def setStatus(value: NullableOption[String]): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setStatusNull: Self = this.set("status", null)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

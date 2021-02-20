@@ -1,11 +1,12 @@
 package typings.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableClasses extends js.Object {
+trait DraggableClasses extends StObject {
   
   var `ui-draggable`: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object DraggableClasses {
   }
   
   @scala.inline
-  implicit class DraggableClassesOps[Self <: DraggableClasses] (val x: Self) extends AnyVal {
+  implicit class DraggableClassesMutableBuilder[Self <: DraggableClasses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setUi-draggable`(value: String): Self = StObject.set(x, "ui-draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setUi-draggable-disabled`(value: String): Self = StObject.set(x, "ui-draggable-disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setUi-draggable-disabledUndefined`: Self = StObject.set(x, "ui-draggable-disabled", js.undefined)
     
     @scala.inline
-    def `setUi-draggable`(value: String): Self = this.set("ui-draggable", value.asInstanceOf[js.Any])
+    def `setUi-draggable-dragging`(value: String): Self = StObject.set(x, "ui-draggable-dragging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-draggable`: Self = this.set("ui-draggable", js.undefined)
+    def `setUi-draggable-draggingUndefined`: Self = StObject.set(x, "ui-draggable-dragging", js.undefined)
     
     @scala.inline
-    def `setUi-draggable-disabled`(value: String): Self = this.set("ui-draggable-disabled", value.asInstanceOf[js.Any])
+    def `setUi-draggable-handle`(value: String): Self = StObject.set(x, "ui-draggable-handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteUi-draggable-disabled`: Self = this.set("ui-draggable-disabled", js.undefined)
+    def `setUi-draggable-handleUndefined`: Self = StObject.set(x, "ui-draggable-handle", js.undefined)
     
     @scala.inline
-    def `setUi-draggable-dragging`(value: String): Self = this.set("ui-draggable-dragging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-draggable-dragging`: Self = this.set("ui-draggable-dragging", js.undefined)
-    
-    @scala.inline
-    def `setUi-draggable-handle`(value: String): Self = this.set("ui-draggable-handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteUi-draggable-handle`: Self = this.set("ui-draggable-handle", js.undefined)
+    def `setUi-draggableUndefined`: Self = StObject.set(x, "ui-draggable", js.undefined)
   }
 }

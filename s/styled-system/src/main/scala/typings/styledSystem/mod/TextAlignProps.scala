@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait TextAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The text-align CSS property specifies the horizontal alignment of an inline or table-cell box.
@@ -28,22 +29,7 @@ object TextAlignProps {
   }
   
   @scala.inline
-  implicit class TextAlignPropsOps[Self <: TextAlignProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with TextAlignProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextAlignVarargs(value: (js.Any | Null)*): Self = this.set("textAlign", js.Array(value :_*))
+  implicit class TextAlignPropsMutableBuilder[Self <: TextAlignProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with TextAlignProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setTextAlign(
@@ -51,12 +37,15 @@ object TextAlignProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _, 
           ThemeType
         ]
-    ): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    def setTextAlignNull: Self = StObject.set(x, "textAlign", null)
     
     @scala.inline
-    def setTextAlignNull: Self = this.set("textAlign", null)
+    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    @scala.inline
+    def setTextAlignVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "textAlign", js.Array(value :_*))
   }
 }

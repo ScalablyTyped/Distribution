@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactionForComment extends js.Object {
+trait ReactionForComment extends StObject {
   
   /**
     * The reaction for a specified comment.
@@ -31,39 +32,27 @@ object ReactionForComment {
   }
   
   @scala.inline
-  implicit class ReactionForCommentOps[Self <: ReactionForComment] (val x: Self) extends AnyVal {
+  implicit class ReactionForCommentMutableBuilder[Self <: ReactionForComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReaction(value: ReactionValueFormats): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReactionUndefined: Self = StObject.set(x, "reaction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReactionUsers(value: ReactionUsersList): Self = StObject.set(x, "reactionUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReaction(value: ReactionValueFormats): Self = this.set("reaction", value.asInstanceOf[js.Any])
+    def setReactionUsersUndefined: Self = StObject.set(x, "reactionUsers", js.undefined)
     
     @scala.inline
-    def deleteReaction: Self = this.set("reaction", js.undefined)
+    def setReactionUsersVarargs(value: Arn*): Self = StObject.set(x, "reactionUsers", js.Array(value :_*))
     
     @scala.inline
-    def setReactionUsersVarargs(value: Arn*): Self = this.set("reactionUsers", js.Array(value :_*))
+    def setReactionsFromDeletedUsersCount(value: Count): Self = StObject.set(x, "reactionsFromDeletedUsersCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReactionUsers(value: ReactionUsersList): Self = this.set("reactionUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReactionUsers: Self = this.set("reactionUsers", js.undefined)
-    
-    @scala.inline
-    def setReactionsFromDeletedUsersCount(value: Count): Self = this.set("reactionsFromDeletedUsersCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReactionsFromDeletedUsersCount: Self = this.set("reactionsFromDeletedUsersCount", js.undefined)
+    def setReactionsFromDeletedUsersCountUndefined: Self = StObject.set(x, "reactionsFromDeletedUsersCount", js.undefined)
   }
 }

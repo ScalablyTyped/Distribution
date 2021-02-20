@@ -1,6 +1,7 @@
 package typings.ts3NodejsLibrary.responseTypesMod
 
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,39 +28,27 @@ object PermEntry {
   }
   
   @scala.inline
-  implicit class PermEntryOps[Self <: PermEntry] (val x: Self) extends AnyVal {
+  implicit class PermEntryMutableBuilder[Self <: PermEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPermidUndefined: Self = StObject.set(x, "permid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPermnegated(value: Boolean): Self = StObject.set(x, "permnegated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermnegated(value: Boolean): Self = this.set("permnegated", value.asInstanceOf[js.Any])
+    def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermskip(value: Boolean): Self = this.set("permskip", value.asInstanceOf[js.Any])
+    def setPermsidUndefined: Self = StObject.set(x, "permsid", js.undefined)
     
     @scala.inline
-    def setPermvalue(value: Double): Self = this.set("permvalue", value.asInstanceOf[js.Any])
+    def setPermskip(value: Boolean): Self = StObject.set(x, "permskip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermid(value: Double): Self = this.set("permid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermid: Self = this.set("permid", js.undefined)
-    
-    @scala.inline
-    def setPermsid(value: String): Self = this.set("permsid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePermsid: Self = this.set("permsid", js.undefined)
+    def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
   }
 }

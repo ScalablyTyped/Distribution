@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to update the usage of plan data. */
 @js.native
-trait ProfileUsage extends js.Object {
+trait ProfileUsage extends StObject {
   
   /** The last time UsageInMegabytes was updated. */
   var lastSyncTime: Date = js.native
@@ -24,24 +25,12 @@ object ProfileUsage {
   }
   
   @scala.inline
-  implicit class ProfileUsageOps[Self <: ProfileUsage] (val x: Self) extends AnyVal {
+  implicit class ProfileUsageMutableBuilder[Self <: ProfileUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLastSyncTime(value: Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLastSyncTime(value: Date): Self = this.set("lastSyncTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsageInMegabytes(value: Double): Self = this.set("usageInMegabytes", value.asInstanceOf[js.Any])
+    def setUsageInMegabytes(value: Double): Self = StObject.set(x, "usageInMegabytes", value.asInstanceOf[js.Any])
   }
 }

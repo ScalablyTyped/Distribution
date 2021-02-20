@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,51 +42,39 @@ object DomainResource {
   }
   
   @scala.inline
-  implicit class DomainResourceOps[Self <: DomainResource] (val x: Self) extends AnyVal {
+  implicit class DomainResourceMutableBuilder[Self <: DomainResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContained(value: js.Array[Resource]): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainedUndefined: Self = StObject.set(x, "contained", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainedVarargs(value: Resource*): Self = StObject.set(x, "contained", js.Array(value :_*))
     
     @scala.inline
-    def setContainedVarargs(value: Resource*): Self = this.set("contained", js.Array(value :_*))
+    def setExtension(value: js.Array[Extension]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContained(value: js.Array[Resource]): Self = this.set("contained", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteContained: Self = this.set("contained", js.undefined)
+    def setExtensionVarargs(value: Extension*): Self = StObject.set(x, "extension", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionVarargs(value: Extension*): Self = this.set("extension", js.Array(value :_*))
+    def setModifierExtension(value: js.Array[Extension]): Self = StObject.set(x, "modifierExtension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: js.Array[Extension]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setModifierExtensionUndefined: Self = StObject.set(x, "modifierExtension", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setModifierExtensionVarargs(value: Extension*): Self = StObject.set(x, "modifierExtension", js.Array(value :_*))
     
     @scala.inline
-    def setModifierExtensionVarargs(value: Extension*): Self = this.set("modifierExtension", js.Array(value :_*))
+    def setText(value: Narrative): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifierExtension(value: js.Array[Extension]): Self = this.set("modifierExtension", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModifierExtension: Self = this.set("modifierExtension", js.undefined)
-    
-    @scala.inline
-    def setText(value: Narrative): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

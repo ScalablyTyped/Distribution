@@ -1,14 +1,21 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap-table", "BootstrapTable")
 @js.native
-class BootstrapTable ()
+class BootstrapTable protected ()
   extends Component[BootstrapTableProps, js.Object, js.Any] {
+  def this(props: BootstrapTableProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: BootstrapTableProps, context: js.Any) = this()
   
   /**
     * Deselect all rows in the table.

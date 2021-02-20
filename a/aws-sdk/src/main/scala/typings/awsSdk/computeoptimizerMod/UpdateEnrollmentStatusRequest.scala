@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateEnrollmentStatusRequest extends js.Object {
+trait UpdateEnrollmentStatusRequest extends StObject {
   
   /**
     * Indicates whether to enroll member accounts of the organization if the your account is the master account of an organization.
@@ -26,27 +27,15 @@ object UpdateEnrollmentStatusRequest {
   }
   
   @scala.inline
-  implicit class UpdateEnrollmentStatusRequestOps[Self <: UpdateEnrollmentStatusRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateEnrollmentStatusRequestMutableBuilder[Self <: UpdateEnrollmentStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = StObject.set(x, "includeMemberAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeMemberAccountsUndefined: Self = StObject.set(x, "includeMemberAccounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeMemberAccounts(value: IncludeMemberAccounts): Self = this.set("includeMemberAccounts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeMemberAccounts: Self = this.set("includeMemberAccounts", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

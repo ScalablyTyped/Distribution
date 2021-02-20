@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represent a Wi-Fi Direct advertisement and allows the app to control the listen state and custom information elements in the advertisement. */
 @js.native
-trait WiFiDirectAdvertisement extends js.Object {
+trait WiFiDirectAdvertisement extends StObject {
   
   /** Information elements to advertise in the Wi-Fi Direct advertisement. */
   var informationElements: IVector[WiFiDirectInformationElement] = js.native
@@ -39,33 +40,21 @@ object WiFiDirectAdvertisement {
   }
   
   @scala.inline
-  implicit class WiFiDirectAdvertisementOps[Self <: WiFiDirectAdvertisement] (val x: Self) extends AnyVal {
+  implicit class WiFiDirectAdvertisementMutableBuilder[Self <: WiFiDirectAdvertisement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInformationElements(value: IVector[WiFiDirectInformationElement]): Self = StObject.set(x, "informationElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsAutonomousGroupOwnerEnabled(value: Boolean): Self = StObject.set(x, "isAutonomousGroupOwnerEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLegacySettings(value: WiFiDirectLegacySettings): Self = StObject.set(x, "legacySettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInformationElements(value: IVector[WiFiDirectInformationElement]): Self = this.set("informationElements", value.asInstanceOf[js.Any])
+    def setListenStateDiscoverability(value: WiFiDirectAdvertisementListenStateDiscoverability): Self = StObject.set(x, "listenStateDiscoverability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutonomousGroupOwnerEnabled(value: Boolean): Self = this.set("isAutonomousGroupOwnerEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLegacySettings(value: WiFiDirectLegacySettings): Self = this.set("legacySettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListenStateDiscoverability(value: WiFiDirectAdvertisementListenStateDiscoverability): Self = this.set("listenStateDiscoverability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = this.set("supportedConfigurationMethods", value.asInstanceOf[js.Any])
+    def setSupportedConfigurationMethods(value: IVector[WiFiDirectConfigurationMethod]): Self = StObject.set(x, "supportedConfigurationMethods", value.asInstanceOf[js.Any])
   }
 }

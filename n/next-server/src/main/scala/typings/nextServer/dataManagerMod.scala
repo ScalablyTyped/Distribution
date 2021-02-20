@@ -1,16 +1,16 @@
 package typings.nextServer
 
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("next-server/dist/lib/data-manager", JSImport.Namespace)
-@js.native
-object dataManagerMod extends js.Object {
+object dataManagerMod {
   
+  @JSImport("next-server/dist/lib/data-manager", "DataManager")
   @js.native
-  class DataManager () extends js.Object {
+  class DataManager () extends StObject {
     def this(data: js.Any) = this()
     
     var data: Map[String, _] = js.native

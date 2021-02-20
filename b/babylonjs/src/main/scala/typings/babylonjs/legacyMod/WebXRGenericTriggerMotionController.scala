@@ -2,6 +2,7 @@ package typings.babylonjs.legacyMod
 
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.MotionControllerHandedness
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +18,18 @@ class WebXRGenericTriggerMotionController protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/Legacy/legacy", "WebXRGenericTriggerMotionController")
-@js.native
-object WebXRGenericTriggerMotionController extends js.Object {
+object WebXRGenericTriggerMotionController {
+  
+  @JSImport("babylonjs/Legacy/legacy", "WebXRGenericTriggerMotionController")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Static version of the profile id of this controller
     */
-  var ProfileId: String = js.native
+  @JSImport("babylonjs/Legacy/legacy", "WebXRGenericTriggerMotionController.ProfileId")
+  @js.native
+  def ProfileId: String = js.native
+  @scala.inline
+  def ProfileId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProfileId")(x.asInstanceOf[js.Any])
 }

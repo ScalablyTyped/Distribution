@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TechnologyTargeting extends js.Object {
+trait TechnologyTargeting extends StObject {
   
   /** IDs of device capabilities to be included/excluded. */
   var deviceCapabilityTargeting: js.UndefOr[CriteriaTargeting] = js.native
@@ -25,36 +26,24 @@ object TechnologyTargeting {
   }
   
   @scala.inline
-  implicit class TechnologyTargetingOps[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
+  implicit class TechnologyTargetingMutableBuilder[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceCapabilityTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCapabilityTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceCapabilityTargetingUndefined: Self = StObject.set(x, "deviceCapabilityTargeting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceCategoryTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCategoryTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCapabilityTargeting(value: CriteriaTargeting): Self = this.set("deviceCapabilityTargeting", value.asInstanceOf[js.Any])
+    def setDeviceCategoryTargetingUndefined: Self = StObject.set(x, "deviceCategoryTargeting", js.undefined)
     
     @scala.inline
-    def deleteDeviceCapabilityTargeting: Self = this.set("deviceCapabilityTargeting", js.undefined)
+    def setOperatingSystemTargeting(value: OperatingSystemTargeting): Self = StObject.set(x, "operatingSystemTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceCategoryTargeting(value: CriteriaTargeting): Self = this.set("deviceCategoryTargeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceCategoryTargeting: Self = this.set("deviceCategoryTargeting", js.undefined)
-    
-    @scala.inline
-    def setOperatingSystemTargeting(value: OperatingSystemTargeting): Self = this.set("operatingSystemTargeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatingSystemTargeting: Self = this.set("operatingSystemTargeting", js.undefined)
+    def setOperatingSystemTargetingUndefined: Self = StObject.set(x, "operatingSystemTargeting", js.undefined)
   }
 }

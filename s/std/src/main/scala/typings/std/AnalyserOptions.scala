@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,42 +25,30 @@ object AnalyserOptions {
   }
   
   @scala.inline
-  implicit class AnalyserOptionsOps[Self <: AnalyserOptions] (val x: Self) extends AnyVal {
+  implicit class AnalyserOptionsMutableBuilder[Self <: AnalyserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxDecibels(value: Double): Self = StObject.set(x, "maxDecibels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFftSize(value: Double): Self = this.set("fftSize", value.asInstanceOf[js.Any])
+    def setMaxDecibelsUndefined: Self = StObject.set(x, "maxDecibels", js.undefined)
     
     @scala.inline
-    def deleteFftSize: Self = this.set("fftSize", js.undefined)
+    def setMinDecibels(value: Double): Self = StObject.set(x, "minDecibels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDecibels(value: Double): Self = this.set("maxDecibels", value.asInstanceOf[js.Any])
+    def setMinDecibelsUndefined: Self = StObject.set(x, "minDecibels", js.undefined)
     
     @scala.inline
-    def deleteMaxDecibels: Self = this.set("maxDecibels", js.undefined)
+    def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDecibels(value: Double): Self = this.set("minDecibels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinDecibels: Self = this.set("minDecibels", js.undefined)
-    
-    @scala.inline
-    def setSmoothingTimeConstant(value: Double): Self = this.set("smoothingTimeConstant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothingTimeConstant: Self = this.set("smoothingTimeConstant", js.undefined)
+    def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
   }
 }

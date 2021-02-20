@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.s3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketObjectLockConfiguration extends js.Object {
+trait BucketObjectLockConfiguration extends StObject {
   
   /**
     * Indicates whether this bucket has an Object Lock configuration enabled. Valid value is `Enabled`.
@@ -26,27 +27,15 @@ object BucketObjectLockConfiguration {
   }
   
   @scala.inline
-  implicit class BucketObjectLockConfigurationOps[Self <: BucketObjectLockConfiguration] (val x: Self) extends AnyVal {
+  implicit class BucketObjectLockConfigurationMutableBuilder[Self <: BucketObjectLockConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectLockEnabled(value: String): Self = StObject.set(x, "objectLockEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRule(value: BucketObjectLockConfigurationRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setObjectLockEnabled(value: String): Self = this.set("objectLockEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRule(value: BucketObjectLockConfigurationRule): Self = this.set("rule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRule: Self = this.set("rule", js.undefined)
+    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

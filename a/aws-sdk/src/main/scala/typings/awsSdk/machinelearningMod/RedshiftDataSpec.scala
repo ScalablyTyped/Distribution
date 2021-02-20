@@ -1,11 +1,12 @@
 package typings.awsSdk.machinelearningMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RedshiftDataSpec extends js.Object {
+trait RedshiftDataSpec extends StObject {
   
   /**
     * A JSON string that represents the splitting and rearrangement processing to be applied to a DataSource. If the DataRearrangement parameter is not provided, all of the input data is used to create the Datasource. There are multiple parameters that control what data is used to create a datasource:  percentBegin Use percentBegin to indicate the beginning of the range of the data used to create the Datasource. If you do not include percentBegin and percentEnd, Amazon ML includes all of the data when creating the datasource. percentEnd Use percentEnd to indicate the end of the range of the data used to create the Datasource. If you do not include percentBegin and percentEnd, Amazon ML includes all of the data when creating the datasource. complement The complement parameter instructs Amazon ML to use the data that is not included in the range of percentBegin to percentEnd to create a datasource. The complement parameter is useful if you need to create complementary datasources for training and evaluation. To create a complementary datasource, use the same values for percentBegin and percentEnd, along with the complement parameter. For example, the following two datasources do not share any data, and can be used to train and evaluate a model. The first datasource has 25 percent of the data, and the second one has 75 percent of the data. Datasource for evaluation: {"splitting":{"percentBegin":0, "percentEnd":25}} Datasource for training: {"splitting":{"percentBegin":0, "percentEnd":25, "complement":"true"}}  strategy To change how Amazon ML splits the data for a datasource, use the strategy parameter. The default value for the strategy parameter is sequential, meaning that Amazon ML takes all of the data records between the percentBegin and percentEnd parameters for the datasource, in the order that the records appear in the input data. The following two DataRearrangement lines are examples of sequentially ordered training and evaluation datasources: Datasource for evaluation: {"splitting":{"percentBegin":70, "percentEnd":100, "strategy":"sequential"}} Datasource for training: {"splitting":{"percentBegin":70, "percentEnd":100, "strategy":"sequential", "complement":"true"}} To randomly split the input data into the proportions indicated by the percentBegin and percentEnd parameters, set the strategy parameter to random and provide a string that is used as the seed value for the random data splitting (for example, you can use the S3 path to your data as the random seed string). If you choose the random split strategy, Amazon ML assigns each row of data a pseudo-random number between 0 and 100, and then selects the rows that have an assigned number between percentBegin and percentEnd. Pseudo-random numbers are assigned using both the input seed string value and the byte offset as a seed, so changing the data results in a different split. Any existing ordering is preserved. The random splitting strategy ensures that variables in the training and evaluation data are distributed similarly. It is useful in the cases where the input data may have an implicit sort order, which would otherwise result in training and evaluation datasources containing non-similar data records. The following two DataRearrangement lines are examples of non-sequentially ordered training and evaluation datasources: Datasource for evaluation: {"splitting":{"percentBegin":70, "percentEnd":100, "strategy":"random", "randomSeed"="s3://my_s3_path/bucket/file.csv"}} Datasource for training: {"splitting":{"percentBegin":70, "percentEnd":100, "strategy":"random", "randomSeed"="s3://my_s3_path/bucket/file.csv", "complement":"true"}}  
@@ -56,48 +57,36 @@ object RedshiftDataSpec {
   }
   
   @scala.inline
-  implicit class RedshiftDataSpecOps[Self <: RedshiftDataSpec] (val x: Self) extends AnyVal {
+  implicit class RedshiftDataSpecMutableBuilder[Self <: RedshiftDataSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSchema(value: DataSchema): Self = StObject.set(x, "DataSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseCredentials(value: RedshiftDatabaseCredentials): Self = this.set("DatabaseCredentials", value.asInstanceOf[js.Any])
+    def setDataSchemaUndefined: Self = StObject.set(x, "DataSchema", js.undefined)
     
     @scala.inline
-    def setDatabaseInformation(value: RedshiftDatabase): Self = this.set("DatabaseInformation", value.asInstanceOf[js.Any])
+    def setDataSchemaUri(value: S3Url): Self = StObject.set(x, "DataSchemaUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3StagingLocation(value: S3Url): Self = this.set("S3StagingLocation", value.asInstanceOf[js.Any])
+    def setDataSchemaUriUndefined: Self = StObject.set(x, "DataSchemaUri", js.undefined)
     
     @scala.inline
-    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = this.set("SelectSqlQuery", value.asInstanceOf[js.Any])
+    def setDatabaseCredentials(value: RedshiftDatabaseCredentials): Self = StObject.set(x, "DatabaseCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataRearrangement(value: DataRearrangement): Self = this.set("DataRearrangement", value.asInstanceOf[js.Any])
+    def setDatabaseInformation(value: RedshiftDatabase): Self = StObject.set(x, "DatabaseInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataRearrangement: Self = this.set("DataRearrangement", js.undefined)
+    def setS3StagingLocation(value: S3Url): Self = StObject.set(x, "S3StagingLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSchema(value: DataSchema): Self = this.set("DataSchema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSchema: Self = this.set("DataSchema", js.undefined)
-    
-    @scala.inline
-    def setDataSchemaUri(value: S3Url): Self = this.set("DataSchemaUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSchemaUri: Self = this.set("DataSchemaUri", js.undefined)
+    def setSelectSqlQuery(value: RedshiftSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
   }
 }

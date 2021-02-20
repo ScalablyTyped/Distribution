@@ -1,11 +1,12 @@
 package typings.gapiYoutube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnBehalfOfContentOwnerRating extends js.Object {
+trait OnBehalfOfContentOwnerRating extends StObject {
   
   /**
     * The id parameter specifies the YouTube video ID.
@@ -31,30 +32,18 @@ object OnBehalfOfContentOwnerRating {
   }
   
   @scala.inline
-  implicit class OnBehalfOfContentOwnerRatingOps[Self <: OnBehalfOfContentOwnerRating] (val x: Self) extends AnyVal {
+  implicit class OnBehalfOfContentOwnerRatingMutableBuilder[Self <: OnBehalfOfContentOwnerRating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnBehalfOfContentOwner(value: String): Self = StObject.set(x, "onBehalfOfContentOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnBehalfOfContentOwnerUndefined: Self = StObject.set(x, "onBehalfOfContentOwner", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRating(value: String): Self = this.set("rating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnBehalfOfContentOwner(value: String): Self = this.set("onBehalfOfContentOwner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnBehalfOfContentOwner: Self = this.set("onBehalfOfContentOwner", js.undefined)
+    def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
   }
 }

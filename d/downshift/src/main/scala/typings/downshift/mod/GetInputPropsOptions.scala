@@ -1,16 +1,14 @@
 package typings.downshift.mod
 
-import typings.react.mod.AllHTMLAttributes
-import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInputPropsOptions
-  extends AllHTMLAttributes[HTMLInputElement]
-     with ClassAttributes[HTMLInputElement]
+trait GetInputPropsOptions extends HTMLProps[HTMLInputElement]
 object GetInputPropsOptions {
   
   @scala.inline

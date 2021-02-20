@@ -1,5 +1,6 @@
 package typings.googleapis.visionV1Mod.visionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * image that the color occupies in the image.
   */
 @js.native
-trait SchemaGoogleCloudVisionV1p2beta1ColorInfo extends js.Object {
+trait SchemaGoogleCloudVisionV1p2beta1ColorInfo extends StObject {
   
   /**
     * RGB components of the color.
@@ -36,36 +37,24 @@ object SchemaGoogleCloudVisionV1p2beta1ColorInfo {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1ColorInfoOps[Self <: SchemaGoogleCloudVisionV1p2beta1ColorInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudVisionV1p2beta1ColorInfoMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1ColorInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: SchemaColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPixelFraction(value: Double): Self = StObject.set(x, "pixelFraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: SchemaColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setPixelFractionUndefined: Self = StObject.set(x, "pixelFraction", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelFraction(value: Double): Self = this.set("pixelFraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePixelFraction: Self = this.set("pixelFraction", js.undefined)
-    
-    @scala.inline
-    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScore: Self = this.set("score", js.undefined)
+    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

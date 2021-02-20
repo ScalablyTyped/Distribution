@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProblemObservationsResponse extends js.Object {
+trait DescribeProblemObservationsResponse extends StObject {
   
   /**
     * Observations related to the problem.
@@ -21,24 +22,12 @@ object DescribeProblemObservationsResponse {
   }
   
   @scala.inline
-  implicit class DescribeProblemObservationsResponseOps[Self <: DescribeProblemObservationsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeProblemObservationsResponseMutableBuilder[Self <: DescribeProblemObservationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelatedObservations(value: RelatedObservations): Self = StObject.set(x, "RelatedObservations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRelatedObservations(value: RelatedObservations): Self = this.set("RelatedObservations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelatedObservations: Self = this.set("RelatedObservations", js.undefined)
+    def setRelatedObservationsUndefined: Self = StObject.set(x, "RelatedObservations", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,57 +43,45 @@ object SchemaExtension {
   }
   
   @scala.inline
-  implicit class SchemaExtensionOps[Self <: SchemaExtension] (val x: Self) extends AnyVal {
+  implicit class SchemaExtensionMutableBuilder[Self <: SchemaExtension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setProperties(value: js.Array[ExtensionSchemaProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setPropertiesVarargs(value: ExtensionSchemaProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
     @scala.inline
-    def setPropertiesVarargs(value: ExtensionSchemaProperty*): Self = this.set("properties", js.Array(value :_*))
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Array[ExtensionSchemaProperty]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setTargetTypes(value: js.Array[String]): Self = StObject.set(x, "targetTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setTargetTypesUndefined: Self = StObject.set(x, "targetTypes", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTargetTypesVarargs(value: String*): Self = this.set("targetTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetTypes(value: js.Array[String]): Self = this.set("targetTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetTypes: Self = this.set("targetTypes", js.undefined)
+    def setTargetTypesVarargs(value: String*): Self = StObject.set(x, "targetTypes", js.Array(value :_*))
   }
 }

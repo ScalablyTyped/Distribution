@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,27 +66,15 @@ object ASPxClientMenu {
   }
   
   @scala.inline
-  implicit class ASPxClientMenuOps[Self <: ASPxClientMenu] (val x: Self) extends AnyVal {
+  implicit class ASPxClientMenuMutableBuilder[Self <: ASPxClientMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetOrientation(value: () => String): Self = StObject.set(x, "GetOrientation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSetOrientation(value: String => Unit): Self = StObject.set(x, "SetOrientation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetOrientation(value: () => String): Self = this.set("GetOrientation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetOrientation(value: String => Unit): Self = this.set("SetOrientation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToggleSideMenu(value: () => Unit): Self = this.set("ToggleSideMenu", js.Any.fromFunction0(value))
+    def setToggleSideMenu(value: () => Unit): Self = StObject.set(x, "ToggleSideMenu", js.Any.fromFunction0(value))
   }
 }

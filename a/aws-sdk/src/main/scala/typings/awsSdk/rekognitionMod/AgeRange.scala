@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgeRange extends js.Object {
+trait AgeRange extends StObject {
   
   /**
     * The highest estimated age.
@@ -26,30 +27,18 @@ object AgeRange {
   }
   
   @scala.inline
-  implicit class AgeRangeOps[Self <: AgeRange] (val x: Self) extends AnyVal {
+  implicit class AgeRangeMutableBuilder[Self <: AgeRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHigh(value: UInteger): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighUndefined: Self = StObject.set(x, "High", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLow(value: UInteger): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh(value: UInteger): Self = this.set("High", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHigh: Self = this.set("High", js.undefined)
-    
-    @scala.inline
-    def setLow(value: UInteger): Self = this.set("Low", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLow: Self = this.set("Low", js.undefined)
+    def setLowUndefined: Self = StObject.set(x, "Low", js.undefined)
   }
 }

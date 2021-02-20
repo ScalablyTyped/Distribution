@@ -1,11 +1,12 @@
 package typings.nodeForge.mod.pki
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attribute extends js.Object {
+trait Attribute extends StObject {
   
   /**
     * Extensions
@@ -47,45 +48,33 @@ object Attribute {
   }
   
   @scala.inline
-  implicit class AttributeOps[Self <: Attribute] (val x: Self) extends AnyVal {
+  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensions(value: js.Array[_]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
     
     @scala.inline
-    def setValueTagClass(value: Double): Self = this.set("valueTagClass", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: js.Any*): Self = this.set("extensions", js.Array(value :_*))
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[_]): Self = this.set("extensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
-    
-    @scala.inline
-    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortName: Self = this.set("shortName", js.undefined)
+    def setValueTagClass(value: Double): Self = StObject.set(x, "valueTagClass", value.asInstanceOf[js.Any])
   }
 }

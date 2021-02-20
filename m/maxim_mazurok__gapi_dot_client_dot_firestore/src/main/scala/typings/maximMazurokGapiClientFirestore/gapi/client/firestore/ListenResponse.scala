@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListenResponse extends js.Object {
+trait ListenResponse extends StObject {
   
   /** A Document has changed. */
   var documentChange: js.UndefOr[DocumentChange] = js.native
@@ -34,48 +35,36 @@ object ListenResponse {
   }
   
   @scala.inline
-  implicit class ListenResponseOps[Self <: ListenResponse] (val x: Self) extends AnyVal {
+  implicit class ListenResponseMutableBuilder[Self <: ListenResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentChange(value: DocumentChange): Self = StObject.set(x, "documentChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentChangeUndefined: Self = StObject.set(x, "documentChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentDelete(value: DocumentDelete): Self = StObject.set(x, "documentDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentChange(value: DocumentChange): Self = this.set("documentChange", value.asInstanceOf[js.Any])
+    def setDocumentDeleteUndefined: Self = StObject.set(x, "documentDelete", js.undefined)
     
     @scala.inline
-    def deleteDocumentChange: Self = this.set("documentChange", js.undefined)
+    def setDocumentRemove(value: DocumentRemove): Self = StObject.set(x, "documentRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentDelete(value: DocumentDelete): Self = this.set("documentDelete", value.asInstanceOf[js.Any])
+    def setDocumentRemoveUndefined: Self = StObject.set(x, "documentRemove", js.undefined)
     
     @scala.inline
-    def deleteDocumentDelete: Self = this.set("documentDelete", js.undefined)
+    def setFilter(value: ExistenceFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentRemove(value: DocumentRemove): Self = this.set("documentRemove", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteDocumentRemove: Self = this.set("documentRemove", js.undefined)
+    def setTargetChange(value: TargetChange): Self = StObject.set(x, "targetChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: ExistenceFilter): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setTargetChange(value: TargetChange): Self = this.set("targetChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetChange: Self = this.set("targetChange", js.undefined)
+    def setTargetChangeUndefined: Self = StObject.set(x, "targetChange", js.undefined)
   }
 }

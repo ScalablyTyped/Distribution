@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutRecordsOutput extends js.Object {
+trait PutRecordsOutput extends StObject {
   
   /**
     * The encryption type used on the records. This parameter can be one of the following values:    NONE: Do not encrypt the records.    KMS: Use server-side encryption on the records using a customer-managed AWS KMS key.  
@@ -31,36 +32,24 @@ object PutRecordsOutput {
   }
   
   @scala.inline
-  implicit class PutRecordsOutputOps[Self <: PutRecordsOutput] (val x: Self) extends AnyVal {
+  implicit class PutRecordsOutputMutableBuilder[Self <: PutRecordsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptionType(value: EncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedRecordCount(value: PositiveIntegerObject): Self = StObject.set(x, "FailedRecordCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordsVarargs(value: PutRecordsResultEntry*): Self = this.set("Records", js.Array(value :_*))
+    def setFailedRecordCountUndefined: Self = StObject.set(x, "FailedRecordCount", js.undefined)
     
     @scala.inline
-    def setRecords(value: PutRecordsResultEntryList): Self = this.set("Records", value.asInstanceOf[js.Any])
+    def setRecords(value: PutRecordsResultEntryList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: EncryptionType): Self = this.set("EncryptionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEncryptionType: Self = this.set("EncryptionType", js.undefined)
-    
-    @scala.inline
-    def setFailedRecordCount(value: PositiveIntegerObject): Self = this.set("FailedRecordCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedRecordCount: Self = this.set("FailedRecordCount", js.undefined)
+    def setRecordsVarargs(value: PutRecordsResultEntry*): Self = StObject.set(x, "Records", js.Array(value :_*))
   }
 }

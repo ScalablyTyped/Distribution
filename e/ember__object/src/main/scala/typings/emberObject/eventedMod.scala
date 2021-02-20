@@ -1,15 +1,19 @@
 package typings.emberObject
 
+import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/object/evented", JSImport.Namespace)
-@js.native
-object eventedMod extends js.Object {
+object eventedMod extends Shortcut {
   
+  @JSImport("@ember/object/evented", JSImport.Default)
+  @js.native
   val default: typings.emberObject.mixinMod.default[Evented, typings.emberObject.mod.default] = js.native
   
+  @JSImport("@ember/object/evented", "on")
+  @js.native
   def on(
     eventName: String,
     eventName2: String,
@@ -19,6 +23,8 @@ object eventedMod extends js.Object {
     eventName6: String,
     func: js.Function1[/* repeated */ js.Any, Unit]
   ): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @JSImport("@ember/object/evented", "on")
+  @js.native
   def on(
     eventName: String,
     eventName2: String,
@@ -27,6 +33,8 @@ object eventedMod extends js.Object {
     eventName5: String,
     func: js.Function1[/* repeated */ js.Any, Unit]
   ): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @JSImport("@ember/object/evented", "on")
+  @js.native
   def on(
     eventName: String,
     eventName2: String,
@@ -34,20 +42,26 @@ object eventedMod extends js.Object {
     eventName4: String,
     func: js.Function1[/* repeated */ js.Any, Unit]
   ): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @JSImport("@ember/object/evented", "on")
+  @js.native
   def on(
     eventName: String,
     eventName2: String,
     eventName3: String,
     func: js.Function1[/* repeated */ js.Any, Unit]
   ): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @JSImport("@ember/object/evented", "on")
+  @js.native
   def on(eventName: String, eventName2: String, func: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Unit] = js.native
+  @JSImport("@ember/object/evented", "on")
+  @js.native
   def on(eventName: String, func: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Unit] = js.native
   
   /**
     * This mixin allows for Ember objects to subscribe to and emit events.
     */
   @js.native
-  trait Evented extends js.Object {
+  trait Evented extends StObject {
     
     /**
       * Checks to see if object has any subscriptions for named event.
@@ -99,4 +113,9 @@ object eventedMod extends js.Object {
       */
     def trigger(name: String, args: js.Any*): js.Any = js.native
   }
+  
+  type _To = typings.emberObject.mixinMod.default[Evented, typings.emberObject.mod.default]
+  
+  /* This means you don't have to write `default`, but can instead just say `eventedMod.foo` */
+  override def _to: typings.emberObject.mixinMod.default[Evented, typings.emberObject.mod.default] = default
 }

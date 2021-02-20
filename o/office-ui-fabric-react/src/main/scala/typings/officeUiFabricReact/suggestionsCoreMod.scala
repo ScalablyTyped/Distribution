@@ -5,14 +5,14 @@ import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
 import typings.react.mod.Component
 import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsCore", JSImport.Namespace)
-@js.native
-object suggestionsCoreMod extends js.Object {
+object suggestionsCoreMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsCore", "SuggestionsCore")
   @js.native
   class SuggestionsCore[T] protected ()
     extends Component[ISuggestionsCoreProps[T], js.Object, js.Any] {

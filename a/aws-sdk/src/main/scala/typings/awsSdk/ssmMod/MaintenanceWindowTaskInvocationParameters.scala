@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MaintenanceWindowTaskInvocationParameters extends js.Object {
+trait MaintenanceWindowTaskInvocationParameters extends StObject {
   
   /**
     * The parameters for an AUTOMATION task type.
@@ -36,42 +37,30 @@ object MaintenanceWindowTaskInvocationParameters {
   }
   
   @scala.inline
-  implicit class MaintenanceWindowTaskInvocationParametersOps[Self <: MaintenanceWindowTaskInvocationParameters] (val x: Self) extends AnyVal {
+  implicit class MaintenanceWindowTaskInvocationParametersMutableBuilder[Self <: MaintenanceWindowTaskInvocationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomation(value: MaintenanceWindowAutomationParameters): Self = StObject.set(x, "Automation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutomationUndefined: Self = StObject.set(x, "Automation", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLambda(value: MaintenanceWindowLambdaParameters): Self = StObject.set(x, "Lambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomation(value: MaintenanceWindowAutomationParameters): Self = this.set("Automation", value.asInstanceOf[js.Any])
+    def setLambdaUndefined: Self = StObject.set(x, "Lambda", js.undefined)
     
     @scala.inline
-    def deleteAutomation: Self = this.set("Automation", js.undefined)
+    def setRunCommand(value: MaintenanceWindowRunCommandParameters): Self = StObject.set(x, "RunCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLambda(value: MaintenanceWindowLambdaParameters): Self = this.set("Lambda", value.asInstanceOf[js.Any])
+    def setRunCommandUndefined: Self = StObject.set(x, "RunCommand", js.undefined)
     
     @scala.inline
-    def deleteLambda: Self = this.set("Lambda", js.undefined)
+    def setStepFunctions(value: MaintenanceWindowStepFunctionsParameters): Self = StObject.set(x, "StepFunctions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunCommand(value: MaintenanceWindowRunCommandParameters): Self = this.set("RunCommand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunCommand: Self = this.set("RunCommand", js.undefined)
-    
-    @scala.inline
-    def setStepFunctions(value: MaintenanceWindowStepFunctionsParameters): Self = this.set("StepFunctions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepFunctions: Self = this.set("StepFunctions", js.undefined)
+    def setStepFunctionsUndefined: Self = StObject.set(x, "StepFunctions", js.undefined)
   }
 }

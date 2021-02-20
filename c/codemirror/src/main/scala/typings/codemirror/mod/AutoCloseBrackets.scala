@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AutoCloseBrackets extends js.Object {
+trait AutoCloseBrackets extends StObject {
   
   /**
     * If the next character is in the string, opening a bracket should be auto-closed.
@@ -42,48 +43,36 @@ object AutoCloseBrackets {
   }
   
   @scala.inline
-  implicit class AutoCloseBracketsOps[Self <: AutoCloseBrackets] (val x: Self) extends AnyVal {
+  implicit class AutoCloseBracketsMutableBuilder[Self <: AutoCloseBrackets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloseBefore(value: String): Self = StObject.set(x, "closeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseBeforeUndefined: Self = StObject.set(x, "closeBefore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExplode(value: String): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseBefore(value: String): Self = this.set("closeBefore", value.asInstanceOf[js.Any])
+    def setExplodeUndefined: Self = StObject.set(x, "explode", js.undefined)
     
     @scala.inline
-    def deleteCloseBefore: Self = this.set("closeBefore", js.undefined)
+    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplode(value: String): Self = this.set("explode", value.asInstanceOf[js.Any])
+    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
     @scala.inline
-    def deleteExplode: Self = this.set("explode", js.undefined)
+    def setPairs(value: String): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverride(value: Boolean): Self = this.set("override", value.asInstanceOf[js.Any])
+    def setPairsUndefined: Self = StObject.set(x, "pairs", js.undefined)
     
     @scala.inline
-    def deleteOverride: Self = this.set("override", js.undefined)
+    def setTriples(value: String): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPairs(value: String): Self = this.set("pairs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePairs: Self = this.set("pairs", js.undefined)
-    
-    @scala.inline
-    def setTriples(value: String): Self = this.set("triples", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTriples: Self = this.set("triples", js.undefined)
+    def setTriplesUndefined: Self = StObject.set(x, "triples", js.undefined)
   }
 }

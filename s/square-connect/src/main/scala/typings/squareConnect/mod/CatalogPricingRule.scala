@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogPricingRule")
 @js.native
-class CatalogPricingRule () extends js.Object {
+class CatalogPricingRule () extends StObject {
   
   /**
     * @deprecated Please use the `exclude_products_id` field to apply an exclude set instead.

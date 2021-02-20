@@ -1,12 +1,13 @@
 package typings.awsSdkClientCodecommitNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/model/MergePullRequestByFastForward", JSImport.Namespace)
-@js.native
-object mergePullRequestByFastForwardMod extends js.Object {
+object mergePullRequestByFastForwardMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/model/MergePullRequestByFastForward", "MergePullRequestByFastForward")
+  @js.native
   val MergePullRequestByFastForward: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
 }

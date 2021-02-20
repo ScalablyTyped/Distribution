@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MitigationActionParams extends js.Object {
+trait MitigationActionParams extends StObject {
   
   /**
     * Parameters to define a mitigation action that moves devices associated with a certificate to one or more specified thing groups, typically for quarantine.
@@ -46,54 +47,42 @@ object MitigationActionParams {
   }
   
   @scala.inline
-  implicit class MitigationActionParamsOps[Self <: MitigationActionParams] (val x: Self) extends AnyVal {
+  implicit class MitigationActionParamsMutableBuilder[Self <: MitigationActionParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddThingsToThingGroupParams(value: AddThingsToThingGroupParams): Self = StObject.set(x, "addThingsToThingGroupParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddThingsToThingGroupParamsUndefined: Self = StObject.set(x, "addThingsToThingGroupParams", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableIoTLoggingParams(value: EnableIoTLoggingParams): Self = StObject.set(x, "enableIoTLoggingParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddThingsToThingGroupParams(value: AddThingsToThingGroupParams): Self = this.set("addThingsToThingGroupParams", value.asInstanceOf[js.Any])
+    def setEnableIoTLoggingParamsUndefined: Self = StObject.set(x, "enableIoTLoggingParams", js.undefined)
     
     @scala.inline
-    def deleteAddThingsToThingGroupParams: Self = this.set("addThingsToThingGroupParams", js.undefined)
+    def setPublishFindingToSnsParams(value: PublishFindingToSnsParams): Self = StObject.set(x, "publishFindingToSnsParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableIoTLoggingParams(value: EnableIoTLoggingParams): Self = this.set("enableIoTLoggingParams", value.asInstanceOf[js.Any])
+    def setPublishFindingToSnsParamsUndefined: Self = StObject.set(x, "publishFindingToSnsParams", js.undefined)
     
     @scala.inline
-    def deleteEnableIoTLoggingParams: Self = this.set("enableIoTLoggingParams", js.undefined)
+    def setReplaceDefaultPolicyVersionParams(value: ReplaceDefaultPolicyVersionParams): Self = StObject.set(x, "replaceDefaultPolicyVersionParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublishFindingToSnsParams(value: PublishFindingToSnsParams): Self = this.set("publishFindingToSnsParams", value.asInstanceOf[js.Any])
+    def setReplaceDefaultPolicyVersionParamsUndefined: Self = StObject.set(x, "replaceDefaultPolicyVersionParams", js.undefined)
     
     @scala.inline
-    def deletePublishFindingToSnsParams: Self = this.set("publishFindingToSnsParams", js.undefined)
+    def setUpdateCACertificateParams(value: UpdateCACertificateParams): Self = StObject.set(x, "updateCACertificateParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceDefaultPolicyVersionParams(value: ReplaceDefaultPolicyVersionParams): Self = this.set("replaceDefaultPolicyVersionParams", value.asInstanceOf[js.Any])
+    def setUpdateCACertificateParamsUndefined: Self = StObject.set(x, "updateCACertificateParams", js.undefined)
     
     @scala.inline
-    def deleteReplaceDefaultPolicyVersionParams: Self = this.set("replaceDefaultPolicyVersionParams", js.undefined)
+    def setUpdateDeviceCertificateParams(value: UpdateDeviceCertificateParams): Self = StObject.set(x, "updateDeviceCertificateParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateCACertificateParams(value: UpdateCACertificateParams): Self = this.set("updateCACertificateParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateCACertificateParams: Self = this.set("updateCACertificateParams", js.undefined)
-    
-    @scala.inline
-    def setUpdateDeviceCertificateParams(value: UpdateDeviceCertificateParams): Self = this.set("updateDeviceCertificateParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDeviceCertificateParams: Self = this.set("updateDeviceCertificateParams", js.undefined)
+    def setUpdateDeviceCertificateParamsUndefined: Self = StObject.set(x, "updateDeviceCertificateParams", js.undefined)
   }
 }

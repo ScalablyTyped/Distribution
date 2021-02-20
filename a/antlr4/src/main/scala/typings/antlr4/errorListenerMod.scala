@@ -2,19 +2,20 @@ package typings.antlr4
 
 import typings.antlr4.recognizerMod.Recognizer
 import typings.antlr4.tokenMod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antlr4/error/ErrorListener", JSImport.Namespace)
-@js.native
-object errorListenerMod extends js.Object {
+object errorListenerMod {
   
+  @JSImport("antlr4/error/ErrorListener", "ConsoleErrorListener")
   @js.native
   class ConsoleErrorListener () extends ErrorListener
   
+  @JSImport("antlr4/error/ErrorListener", "ErrorListener")
   @js.native
-  class ErrorListener () extends js.Object {
+  class ErrorListener () extends StObject {
     
     def reportAmbiguity(
       recognizer: Recognizer,
@@ -54,6 +55,7 @@ object errorListenerMod extends js.Object {
     ): Unit = js.native
   }
   
+  @JSImport("antlr4/error/ErrorListener", "ProxyErrorListener")
   @js.native
   class ProxyErrorListener () extends ErrorListener
 }

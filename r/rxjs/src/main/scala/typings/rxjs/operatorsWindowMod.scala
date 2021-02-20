@@ -1,13 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/window", JSImport.Namespace)
-@js.native
-object operatorsWindowMod extends js.Object {
+object operatorsWindowMod {
   
+  @JSImport("rxjs/operators/window", "window")
+  @js.native
   def window[T](
     windowBoundaries: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
   ): js.Any = js.native

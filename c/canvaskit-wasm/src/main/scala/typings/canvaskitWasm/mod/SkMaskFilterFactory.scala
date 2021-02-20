@@ -1,11 +1,12 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkMaskFilterFactory extends js.Object {
+trait SkMaskFilterFactory extends StObject {
   
   /**
     * Create a blur maskfilter
@@ -24,21 +25,9 @@ object SkMaskFilterFactory {
   }
   
   @scala.inline
-  implicit class SkMaskFilterFactoryOps[Self <: SkMaskFilterFactory] (val x: Self) extends AnyVal {
+  implicit class SkMaskFilterFactoryMutableBuilder[Self <: SkMaskFilterFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMakeBlur(value: (BlurStyle, Double, Boolean) => SkMaskFilter): Self = this.set("MakeBlur", js.Any.fromFunction3(value))
+    def setMakeBlur(value: (BlurStyle, Double, Boolean) => SkMaskFilter): Self = StObject.set(x, "MakeBlur", js.Any.fromFunction3(value))
   }
 }

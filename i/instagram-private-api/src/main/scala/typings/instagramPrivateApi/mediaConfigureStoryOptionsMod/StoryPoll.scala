@@ -2,6 +2,7 @@ package typings.instagramPrivateApi.mediaConfigureStoryOptionsMod
 
 import typings.instagramPrivateApi.instagramPrivateApiBooleans.`true`
 import typings.instagramPrivateApi.instagramPrivateApiNumbers.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,33 +40,21 @@ object StoryPoll {
   }
   
   @scala.inline
-  implicit class StoryPollOps[Self <: StoryPoll] (val x: Self) extends AnyVal {
+  implicit class StoryPollMutableBuilder[Self <: StoryPoll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTallies(value: js.Tuple2[StoryPollTallie, StoryPollTallie]): Self = StObject.set(x, "tallies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_sticker(value: `true`): Self = this.set("is_sticker", value.asInstanceOf[js.Any])
+    def setViewer_can_vote(value: `true`): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTallies(value: js.Tuple2[StoryPollTallie, StoryPollTallie]): Self = this.set("tallies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_can_vote(value: `true`): Self = this.set("viewer_can_vote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewer_vote(value: `0`): Self = this.set("viewer_vote", value.asInstanceOf[js.Any])
+    def setViewer_vote(value: `0`): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
   }
 }

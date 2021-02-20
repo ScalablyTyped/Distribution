@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines reasons for the revocation and renewal of a certificate for a media component. */
 @JSGlobal("Windows.Media.Protection.RevocationAndRenewalReasons")
 @js.native
-object RevocationAndRenewalReasons extends js.Object {
+object RevocationAndRenewalReasons extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

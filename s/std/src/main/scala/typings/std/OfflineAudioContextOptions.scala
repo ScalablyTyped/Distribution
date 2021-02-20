@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfflineAudioContextOptions extends js.Object {
+trait OfflineAudioContextOptions extends StObject {
   
   var length: Double = js.native
   
@@ -22,30 +23,18 @@ object OfflineAudioContextOptions {
   }
   
   @scala.inline
-  implicit class OfflineAudioContextOptionsOps[Self <: OfflineAudioContextOptions] (val x: Self) extends AnyVal {
+  implicit class OfflineAudioContextOptionsMutableBuilder[Self <: OfflineAudioContextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfChannels(value: Double): Self = this.set("numberOfChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfChannels: Self = this.set("numberOfChannels", js.undefined)
+    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }
 }

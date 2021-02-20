@@ -1,6 +1,7 @@
 package typings.babelTypes.mod
 
 import typings.babelTypes.babelTypesStrings.TSTypePredicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,36 +31,24 @@ object TSTypePredicate_ {
   }
   
   @scala.inline
-  implicit class TSTypePredicate_Ops[Self <: TSTypePredicate_] (val x: Self) extends AnyVal {
+  implicit class TSTypePredicate_MutableBuilder[Self <: TSTypePredicate_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsserts(value: Boolean): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssertsNull: Self = StObject.set(x, "asserts", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParameterName(value: Identifier_ | TSThisType_): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterName(value: Identifier_ | TSThisType_): Self = this.set("parameterName", value.asInstanceOf[js.Any])
+    def setType(value: TSTypePredicate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: TSTypePredicate): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsserts(value: Boolean): Self = this.set("asserts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssertsNull: Self = this.set("asserts", null)
-    
-    @scala.inline
-    def setTypeAnnotation(value: TSTypeAnnotation_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
   }
 }

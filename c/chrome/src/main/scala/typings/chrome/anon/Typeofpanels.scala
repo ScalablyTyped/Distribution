@@ -6,12 +6,13 @@ import typings.chrome.chrome.devtools.panels.ExtensionPanel
 import typings.chrome.chrome.devtools.panels.SourcesPanel
 import typings.chrome.chromeStrings.dark
 import typings.chrome.chromeStrings.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofpanels extends js.Object {
+trait Typeofpanels extends StObject {
   
   def create(title: String, iconPath: String, pagePath: String): Unit = js.native
   def create(

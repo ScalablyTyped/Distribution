@@ -1,11 +1,12 @@
 package typings.azure.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Enabled extends js.Object {
+trait Enabled extends StObject {
   
   var Enabled: Boolean = js.native
   
@@ -24,30 +25,18 @@ object Enabled {
   }
   
   @scala.inline
-  implicit class EnabledOps[Self <: Enabled] (val x: Self) extends AnyVal {
+  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeAPIs(value: Boolean): Self = StObject.set(x, "IncludeAPIs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetentionPolicy(value: Days): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeAPIs(value: Boolean): Self = this.set("IncludeAPIs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetentionPolicy(value: Days): Self = this.set("RetentionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

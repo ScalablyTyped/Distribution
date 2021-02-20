@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EquationNumbers extends js.Object {
+trait EquationNumbers extends StObject {
   
   /*This controls whether equations are numbered and how. By default it is set to "none" to be compatible with
     * earlier versions of MathJax where auto-numbering was not performed (so pages will not change their
@@ -45,54 +46,42 @@ object EquationNumbers {
   }
   
   @scala.inline
-  implicit class EquationNumbersOps[Self <: EquationNumbers] (val x: Self) extends AnyVal {
+  implicit class EquationNumbersMutableBuilder[Self <: EquationNumbers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoNumber(value: String): Self = StObject.set(x, "autoNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoNumberUndefined: Self = StObject.set(x, "autoNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatID(value: () => String): Self = StObject.set(x, "formatID", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutoNumber(value: String): Self = this.set("autoNumber", value.asInstanceOf[js.Any])
+    def setFormatIDUndefined: Self = StObject.set(x, "formatID", js.undefined)
     
     @scala.inline
-    def deleteAutoNumber: Self = this.set("autoNumber", js.undefined)
+    def setFormatNumber(value: /* n */ Double => String): Self = StObject.set(x, "formatNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatID(value: () => String): Self = this.set("formatID", js.Any.fromFunction0(value))
+    def setFormatNumberUndefined: Self = StObject.set(x, "formatNumber", js.undefined)
     
     @scala.inline
-    def deleteFormatID: Self = this.set("formatID", js.undefined)
+    def setFormatTag(value: /* n */ Double => String): Self = StObject.set(x, "formatTag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatNumber(value: /* n */ Double => String): Self = this.set("formatNumber", js.Any.fromFunction1(value))
+    def setFormatTagUndefined: Self = StObject.set(x, "formatTag", js.undefined)
     
     @scala.inline
-    def deleteFormatNumber: Self = this.set("formatNumber", js.undefined)
+    def setFormatURL(value: /* id */ String => String): Self = StObject.set(x, "formatURL", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFormatTag(value: /* n */ Double => String): Self = this.set("formatTag", js.Any.fromFunction1(value))
+    def setFormatURLUndefined: Self = StObject.set(x, "formatURL", js.undefined)
     
     @scala.inline
-    def deleteFormatTag: Self = this.set("formatTag", js.undefined)
+    def setUseLabelIds(value: Boolean): Self = StObject.set(x, "useLabelIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatURL(value: /* id */ String => String): Self = this.set("formatURL", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteFormatURL: Self = this.set("formatURL", js.undefined)
-    
-    @scala.inline
-    def setUseLabelIds(value: Boolean): Self = this.set("useLabelIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLabelIds: Self = this.set("useLabelIds", js.undefined)
+    def setUseLabelIdsUndefined: Self = StObject.set(x, "useLabelIds", js.undefined)
   }
 }

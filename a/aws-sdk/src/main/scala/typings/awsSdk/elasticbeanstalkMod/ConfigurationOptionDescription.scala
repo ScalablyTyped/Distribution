@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationOptionDescription extends js.Object {
+trait ConfigurationOptionDescription extends StObject {
   
   /**
     * An indication of which action is required if the value for this configuration option changes:    NoInterruption : There is no interruption to the environment or application availability.    RestartEnvironment : The environment is entirely restarted, all AWS resources are deleted and recreated, and the environment is unavailable during the process.    RestartApplicationServer : The environment is available the entire time. However, a short application outage occurs when the application servers on the running Amazon EC2 instances are restarted.  
@@ -71,87 +72,75 @@ object ConfigurationOptionDescription {
   }
   
   @scala.inline
-  implicit class ConfigurationOptionDescriptionOps[Self <: ConfigurationOptionDescription] (val x: Self) extends AnyVal {
+  implicit class ConfigurationOptionDescriptionMutableBuilder[Self <: ConfigurationOptionDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSeverity(value: ConfigurationOptionSeverity): Self = StObject.set(x, "ChangeSeverity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeSeverityUndefined: Self = StObject.set(x, "ChangeSeverity", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultValue(value: ConfigurationOptionDefaultValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSeverity(value: ConfigurationOptionSeverity): Self = this.set("ChangeSeverity", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
     @scala.inline
-    def deleteChangeSeverity: Self = this.set("ChangeSeverity", js.undefined)
+    def setMaxLength(value: OptionRestrictionMaxLength): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: ConfigurationOptionDefaultValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "MaxLength", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    def setMaxValue(value: OptionRestrictionMaxValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: OptionRestrictionMaxLength): Self = this.set("MaxLength", value.asInstanceOf[js.Any])
+    def setMaxValueUndefined: Self = StObject.set(x, "MaxValue", js.undefined)
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("MaxLength", js.undefined)
+    def setMinValue(value: OptionRestrictionMinValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxValue(value: OptionRestrictionMaxValue): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    def setMinValueUndefined: Self = StObject.set(x, "MinValue", js.undefined)
     
     @scala.inline
-    def deleteMaxValue: Self = this.set("MaxValue", js.undefined)
+    def setName(value: ConfigurationOptionName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinValue(value: OptionRestrictionMinValue): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteMinValue: Self = this.set("MinValue", js.undefined)
+    def setNamespace(value: OptionNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ConfigurationOptionName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRegex(value: OptionRestrictionRegex): Self = StObject.set(x, "Regex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: OptionNamespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setRegexUndefined: Self = StObject.set(x, "Regex", js.undefined)
     
     @scala.inline
-    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    def setUserDefined(value: UserDefinedOption): Self = StObject.set(x, "UserDefined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegex(value: OptionRestrictionRegex): Self = this.set("Regex", value.asInstanceOf[js.Any])
+    def setUserDefinedUndefined: Self = StObject.set(x, "UserDefined", js.undefined)
     
     @scala.inline
-    def deleteRegex: Self = this.set("Regex", js.undefined)
+    def setValueOptions(value: ConfigurationOptionPossibleValues): Self = StObject.set(x, "ValueOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDefined(value: UserDefinedOption): Self = this.set("UserDefined", value.asInstanceOf[js.Any])
+    def setValueOptionsUndefined: Self = StObject.set(x, "ValueOptions", js.undefined)
     
     @scala.inline
-    def deleteUserDefined: Self = this.set("UserDefined", js.undefined)
+    def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = StObject.set(x, "ValueOptions", js.Array(value :_*))
     
     @scala.inline
-    def setValueOptionsVarargs(value: ConfigurationOptionPossibleValue*): Self = this.set("ValueOptions", js.Array(value :_*))
+    def setValueType(value: ConfigurationOptionValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueOptions(value: ConfigurationOptionPossibleValues): Self = this.set("ValueOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueOptions: Self = this.set("ValueOptions", js.undefined)
-    
-    @scala.inline
-    def setValueType(value: ConfigurationOptionValueType): Self = this.set("ValueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueType: Self = this.set("ValueType", js.undefined)
+    def setValueTypeUndefined: Self = StObject.set(x, "ValueType", js.undefined)
   }
 }

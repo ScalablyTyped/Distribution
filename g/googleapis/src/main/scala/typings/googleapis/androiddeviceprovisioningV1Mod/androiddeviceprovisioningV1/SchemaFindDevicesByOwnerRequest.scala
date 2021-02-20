@@ -1,5 +1,6 @@
 package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovisioningV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request to find devices by customers.
   */
 @js.native
-trait SchemaFindDevicesByOwnerRequest extends js.Object {
+trait SchemaFindDevicesByOwnerRequest extends StObject {
   
   /**
     * Required. The list of customer IDs to search for.
@@ -40,45 +41,33 @@ object SchemaFindDevicesByOwnerRequest {
   }
   
   @scala.inline
-  implicit class SchemaFindDevicesByOwnerRequestOps[Self <: SchemaFindDevicesByOwnerRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaFindDevicesByOwnerRequestMutableBuilder[Self <: SchemaFindDevicesByOwnerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomerId(value: js.Array[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomerIdVarargs(value: String*): Self = StObject.set(x, "customerId", js.Array(value :_*))
     
     @scala.inline
-    def setCustomerIdVarargs(value: String*): Self = this.set("customerId", js.Array(value :_*))
+    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerId(value: js.Array[String]): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
-    
-    @scala.inline
-    def setSectionType(value: String): Self = this.set("sectionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionType: Self = this.set("sectionType", js.undefined)
+    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.cytoscape.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#core/graph-manipulation
   */
 @js.native
-trait CoreGraphManipulation extends js.Object {
+trait CoreGraphManipulation extends StObject {
   
   /**
     * Get elements in the graph matching the specified selector.

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines values used to indicate status of connection authentication with a mobile hotspot. Provides the response code from the WISPr server for an authentication attempt. */
 @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationResponseCode")
 @js.native
-object HotspotAuthenticationResponseCode extends js.Object {
+object HotspotAuthenticationResponseCode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

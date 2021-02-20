@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeProjectVersionsRequest extends js.Object {
+trait DescribeProjectVersionsRequest extends StObject {
   
   /**
     * The maximum number of results to return per paginated call. The largest value you can specify is 100. If you specify a value greater than 100, a ValidationException error occurs. The default value is 100. 
@@ -36,42 +37,30 @@ object DescribeProjectVersionsRequest {
   }
   
   @scala.inline
-  implicit class DescribeProjectVersionsRequestOps[Self <: DescribeProjectVersionsRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeProjectVersionsRequestMutableBuilder[Self <: DescribeProjectVersionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: ProjectVersionsPageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: ExtendedPaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectArn(value: ProjectArn): Self = this.set("ProjectArn", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setMaxResults(value: ProjectVersionsPageSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setProjectArn(value: ProjectArn): Self = StObject.set(x, "ProjectArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setVersionNames(value: VersionNames): Self = StObject.set(x, "VersionNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: ExtendedPaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVersionNamesUndefined: Self = StObject.set(x, "VersionNames", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVersionNamesVarargs(value: VersionName*): Self = this.set("VersionNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersionNames(value: VersionNames): Self = this.set("VersionNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionNames: Self = this.set("VersionNames", js.undefined)
+    def setVersionNamesVarargs(value: VersionName*): Self = StObject.set(x, "VersionNames", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeasureGroup extends js.Object {
+trait MeasureGroup extends StObject {
   
   /**
     * Returns the caption of the measure group used when displaying the name of the measure group to the user.
@@ -57,33 +58,21 @@ object MeasureGroup {
   }
   
   @scala.inline
-  implicit class MeasureGroupOps[Self <: MeasureGroup] (val x: Self) extends AnyVal {
+  implicit class MeasureGroupMutableBuilder[Self <: MeasureGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogName(value: js.Object => String): Self = StObject.set(x, "catalogName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCubeName(value: js.Object => String): Self = StObject.set(x, "cubeName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaption(value: js.Object => String): Self = this.set("caption", js.Any.fromFunction1(value))
+    def setDescription(value: js.Object => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCatalogName(value: js.Object => String): Self = this.set("catalogName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCubeName(value: js.Object => String): Self = this.set("cubeName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDescription(value: js.Object => String): Self = this.set("description", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setName(value: js.Object => String): Self = this.set("name", js.Any.fromFunction1(value))
+    def setName(value: js.Object => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
   }
 }

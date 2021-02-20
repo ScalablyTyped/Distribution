@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAttachmentResponse extends js.Object {
+trait DescribeAttachmentResponse extends StObject {
   
   /**
     * This object includes the attachment content and file name. In the previous response syntax, the value for the data parameter appears as blob, which is represented as a base64-encoded string. The value for fileName is the name of the attachment, such as troubleshoot-screenshot.png.
@@ -21,24 +22,12 @@ object DescribeAttachmentResponse {
   }
   
   @scala.inline
-  implicit class DescribeAttachmentResponseOps[Self <: DescribeAttachmentResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAttachmentResponseMutableBuilder[Self <: DescribeAttachmentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttachment(value: Attachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
   }
 }

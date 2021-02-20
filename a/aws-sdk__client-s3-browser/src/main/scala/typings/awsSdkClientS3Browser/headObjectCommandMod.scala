@@ -7,14 +7,14 @@ import typings.awsSdkClientS3Browser.typesHeadObjectInputMod.HeadObjectInput
 import typings.awsSdkClientS3Browser.typesHeadObjectOutputMod.HeadObjectOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/commands/HeadObjectCommand", JSImport.Namespace)
-@js.native
-object headObjectCommandMod extends js.Object {
+object headObjectCommandMod {
   
+  @JSImport("@aws-sdk/client-s3-browser/commands/HeadObjectCommand", "HeadObjectCommand")
   @js.native
   class HeadObjectCommand protected () extends Command[
           InputTypesUnion, 

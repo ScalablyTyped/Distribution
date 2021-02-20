@@ -2,22 +2,18 @@ package typings.signalsJs
 
 import typings.signalsJs.ioncesignalMod.IOnceSignal
 import typings.signalsJs.islotMod.ISlot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("signals.js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var IOnceSignal: js.Symbol = js.native
+  @JSImport("signals.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var IPrioritySignal: js.Symbol = js.native
-  
-  var ISignal: js.Symbol = js.native
-  
-  var ISlot: js.Symbol = js.native
-  
+  @JSImport("signals.js", "DeluxeSignal")
   @js.native
   class DeluxeSignal protected ()
     extends typings.signalsJs.deluxeSignalMod.DeluxeSignal {
@@ -37,12 +33,38 @@ object mod extends js.Object {
     def this(target: js.Object, valueClasses: js.Any*) = this()
   }
   
+  @JSImport("signals.js", "GenericEvent")
   @js.native
   class GenericEvent ()
     extends typings.signalsJs.genericEventMod.GenericEvent {
     def this(bubbles: Boolean) = this()
   }
   
+  @JSImport("signals.js", "IOnceSignal")
+  @js.native
+  def IOnceSignal: js.Symbol = js.native
+  @scala.inline
+  def IOnceSignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IOnceSignal")(x.asInstanceOf[js.Any])
+  
+  @JSImport("signals.js", "IPrioritySignal")
+  @js.native
+  def IPrioritySignal: js.Symbol = js.native
+  @scala.inline
+  def IPrioritySignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IPrioritySignal")(x.asInstanceOf[js.Any])
+  
+  @JSImport("signals.js", "ISignal")
+  @js.native
+  def ISignal: js.Symbol = js.native
+  @scala.inline
+  def ISignal_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISignal")(x.asInstanceOf[js.Any])
+  
+  @JSImport("signals.js", "ISlot")
+  @js.native
+  def ISlot: js.Symbol = js.native
+  @scala.inline
+  def ISlot_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISlot")(x.asInstanceOf[js.Any])
+  
+  @JSImport("signals.js", "MonoSignal")
   @js.native
   class MonoSignal protected ()
     extends typings.signalsJs.monoSignalMod.MonoSignal {
@@ -60,6 +82,7 @@ object mod extends js.Object {
     def this(valueClasses: js.Any*) = this()
   }
   
+  @JSImport("signals.js", "OnceSignal")
   @js.native
   class OnceSignal protected ()
     extends typings.signalsJs.onceSignalMod.OnceSignal {
@@ -77,16 +100,32 @@ object mod extends js.Object {
     def this(valueClasses: js.Any*) = this()
   }
   
+  @JSImport("signals.js", "PrioritySignal")
   @js.native
   class PrioritySignal protected ()
     extends typings.signalsJs.prioritySignalMod.PrioritySignal {
     def this(valueClasses: js.Any*) = this()
   }
   
+  @JSImport("signals.js", "Promise")
   @js.native
-  class Promise ()
-    extends typings.signalsJs.promiseMod.Promise
+  class Promise protected ()
+    extends typings.signalsJs.promiseMod.Promise {
+    /**
+      * Creates a Signal instance to dispatch value objects.
+      * @param    valueClasses Any number of class references that enable type checks in dispatch().
+      * For example, new Signal(String, uint)
+      * would allow: signal.dispatch("the Answer", 42)
+      * but not: signal.dispatch(true, 42.5)
+      * nor: signal.dispatch()
+      *
+      * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
+      * but this constructor has logic to support super(valueClasses).
+      */
+    def this(valueClasses: js.Any*) = this()
+  }
   
+  @JSImport("signals.js", "Signal")
   @js.native
   class Signal protected ()
     extends typings.signalsJs.signalMod.Signal {
@@ -104,6 +143,7 @@ object mod extends js.Object {
     def this(valueClasses: js.Any*) = this()
   }
   
+  @JSImport("signals.js", "Slot")
   @js.native
   class Slot protected ()
     extends typings.signalsJs.slotMod.Slot {
@@ -124,6 +164,7 @@ object mod extends js.Object {
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean, priority: Double) = this()
   }
   
+  @JSImport("signals.js", "SlotList")
   @js.native
   class SlotList protected ()
     extends typings.signalsJs.slotListMod.SlotList {
@@ -144,12 +185,19 @@ object mod extends js.Object {
     def this(head: ISlot, tail: typings.signalsJs.slotListMod.SlotList) = this()
   }
   /* static members */
-  @js.native
-  object SlotList extends js.Object {
+  object SlotList {
+    
+    @JSImport("signals.js", "SlotList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Represents an empty list. Used as the list terminator.
       */
-    var NIL: typings.signalsJs.slotListMod.SlotList = js.native
+    @JSImport("signals.js", "SlotList.NIL")
+    @js.native
+    def NIL: typings.signalsJs.slotListMod.SlotList = js.native
+    @scala.inline
+    def NIL_=(x: typings.signalsJs.slotListMod.SlotList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
   }
 }

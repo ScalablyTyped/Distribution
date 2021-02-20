@@ -1,12 +1,13 @@
 package typings.aliOss.anon
 
 import typings.aliOss.mod.NormalSuccessResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowEmpty extends js.Object {
+trait AllowEmpty extends StObject {
   
   var allowEmpty: Boolean = js.native
   
@@ -23,30 +24,18 @@ object AllowEmpty {
   }
   
   @scala.inline
-  implicit class AllowEmptyOps[Self <: AllowEmpty] (val x: Self) extends AnyVal {
+  implicit class AllowEmptyMutableBuilder[Self <: AllowEmpty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReferers(value: js.Array[String]): Self = StObject.set(x, "referers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReferersVarargs(value: String*): Self = StObject.set(x, "referers", js.Array(value :_*))
     
     @scala.inline
-    def setAllowEmpty(value: Boolean): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReferersVarargs(value: String*): Self = this.set("referers", js.Array(value :_*))
-    
-    @scala.inline
-    def setReferers(value: js.Array[String]): Self = this.set("referers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeGravity extends js.Object
+sealed trait RangeGravity extends StObject
 /** Specifies the gravity for a text range. */
 @JSGlobal("Windows.UI.Text.RangeGravity")
 @js.native
-object RangeGravity extends js.Object {
+object RangeGravity extends StObject {
   
   /** Use the formatting of the previous text run when on a boundary between runs. */
   @js.native

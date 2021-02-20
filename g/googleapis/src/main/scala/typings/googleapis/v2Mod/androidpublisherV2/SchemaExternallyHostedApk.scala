@@ -1,5 +1,6 @@
 package typings.googleapis.v2Mod.androidpublisherV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the enterprise private channel
   */
 @js.native
-trait SchemaExternallyHostedApk extends js.Object {
+trait SchemaExternallyHostedApk extends StObject {
   
   /**
     * The application label.
@@ -100,120 +101,108 @@ object SchemaExternallyHostedApk {
   }
   
   @scala.inline
-  implicit class SchemaExternallyHostedApkOps[Self <: SchemaExternallyHostedApk] (val x: Self) extends AnyVal {
+  implicit class SchemaExternallyHostedApkMutableBuilder[Self <: SchemaExternallyHostedApk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationLabel(value: String): Self = StObject.set(x, "applicationLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationLabelUndefined: Self = StObject.set(x, "applicationLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateBase64s(value: js.Array[String]): Self = StObject.set(x, "certificateBase64s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationLabel(value: String): Self = this.set("applicationLabel", value.asInstanceOf[js.Any])
+    def setCertificateBase64sUndefined: Self = StObject.set(x, "certificateBase64s", js.undefined)
     
     @scala.inline
-    def deleteApplicationLabel: Self = this.set("applicationLabel", js.undefined)
+    def setCertificateBase64sVarargs(value: String*): Self = StObject.set(x, "certificateBase64s", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateBase64sVarargs(value: String*): Self = this.set("certificateBase64s", js.Array(value :_*))
+    def setExternallyHostedUrl(value: String): Self = StObject.set(x, "externallyHostedUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateBase64s(value: js.Array[String]): Self = this.set("certificateBase64s", value.asInstanceOf[js.Any])
+    def setExternallyHostedUrlUndefined: Self = StObject.set(x, "externallyHostedUrl", js.undefined)
     
     @scala.inline
-    def deleteCertificateBase64s: Self = this.set("certificateBase64s", js.undefined)
+    def setFileSha1Base64(value: String): Self = StObject.set(x, "fileSha1Base64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternallyHostedUrl(value: String): Self = this.set("externallyHostedUrl", value.asInstanceOf[js.Any])
+    def setFileSha1Base64Undefined: Self = StObject.set(x, "fileSha1Base64", js.undefined)
     
     @scala.inline
-    def deleteExternallyHostedUrl: Self = this.set("externallyHostedUrl", js.undefined)
+    def setFileSha256Base64(value: String): Self = StObject.set(x, "fileSha256Base64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSha1Base64(value: String): Self = this.set("fileSha1Base64", value.asInstanceOf[js.Any])
+    def setFileSha256Base64Undefined: Self = StObject.set(x, "fileSha256Base64", js.undefined)
     
     @scala.inline
-    def deleteFileSha1Base64: Self = this.set("fileSha1Base64", js.undefined)
+    def setFileSize(value: String): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSha256Base64(value: String): Self = this.set("fileSha256Base64", value.asInstanceOf[js.Any])
+    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
     @scala.inline
-    def deleteFileSha256Base64: Self = this.set("fileSha256Base64", js.undefined)
+    def setIconBase64(value: String): Self = StObject.set(x, "iconBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: String): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    def setIconBase64Undefined: Self = StObject.set(x, "iconBase64", js.undefined)
     
     @scala.inline
-    def deleteFileSize: Self = this.set("fileSize", js.undefined)
+    def setMaximumSdk(value: Double): Self = StObject.set(x, "maximumSdk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconBase64(value: String): Self = this.set("iconBase64", value.asInstanceOf[js.Any])
+    def setMaximumSdkUndefined: Self = StObject.set(x, "maximumSdk", js.undefined)
     
     @scala.inline
-    def deleteIconBase64: Self = this.set("iconBase64", js.undefined)
+    def setMinimumSdk(value: Double): Self = StObject.set(x, "minimumSdk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumSdk(value: Double): Self = this.set("maximumSdk", value.asInstanceOf[js.Any])
+    def setMinimumSdkUndefined: Self = StObject.set(x, "minimumSdk", js.undefined)
     
     @scala.inline
-    def deleteMaximumSdk: Self = this.set("maximumSdk", js.undefined)
+    def setNativeCodes(value: js.Array[String]): Self = StObject.set(x, "nativeCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumSdk(value: Double): Self = this.set("minimumSdk", value.asInstanceOf[js.Any])
+    def setNativeCodesUndefined: Self = StObject.set(x, "nativeCodes", js.undefined)
     
     @scala.inline
-    def deleteMinimumSdk: Self = this.set("minimumSdk", js.undefined)
+    def setNativeCodesVarargs(value: String*): Self = StObject.set(x, "nativeCodes", js.Array(value :_*))
     
     @scala.inline
-    def setNativeCodesVarargs(value: String*): Self = this.set("nativeCodes", js.Array(value :_*))
+    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeCodes(value: js.Array[String]): Self = this.set("nativeCodes", value.asInstanceOf[js.Any])
+    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
     @scala.inline
-    def deleteNativeCodes: Self = this.set("nativeCodes", js.undefined)
+    def setUsesFeatures(value: js.Array[String]): Self = StObject.set(x, "usesFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    def setUsesFeaturesUndefined: Self = StObject.set(x, "usesFeatures", js.undefined)
     
     @scala.inline
-    def deletePackageName: Self = this.set("packageName", js.undefined)
+    def setUsesFeaturesVarargs(value: String*): Self = StObject.set(x, "usesFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setUsesFeaturesVarargs(value: String*): Self = this.set("usesFeatures", js.Array(value :_*))
+    def setUsesPermissions(value: js.Array[SchemaExternallyHostedApkUsesPermission]): Self = StObject.set(x, "usesPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsesFeatures(value: js.Array[String]): Self = this.set("usesFeatures", value.asInstanceOf[js.Any])
+    def setUsesPermissionsUndefined: Self = StObject.set(x, "usesPermissions", js.undefined)
     
     @scala.inline
-    def deleteUsesFeatures: Self = this.set("usesFeatures", js.undefined)
+    def setUsesPermissionsVarargs(value: SchemaExternallyHostedApkUsesPermission*): Self = StObject.set(x, "usesPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setUsesPermissionsVarargs(value: SchemaExternallyHostedApkUsesPermission*): Self = this.set("usesPermissions", js.Array(value :_*))
+    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsesPermissions(value: js.Array[SchemaExternallyHostedApkUsesPermission]): Self = this.set("usesPermissions", value.asInstanceOf[js.Any])
+    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
     @scala.inline
-    def deleteUsesPermissions: Self = this.set("usesPermissions", js.undefined)
+    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
-    
-    @scala.inline
-    def setVersionName(value: String): Self = this.set("versionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionName: Self = this.set("versionName", js.undefined)
+    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

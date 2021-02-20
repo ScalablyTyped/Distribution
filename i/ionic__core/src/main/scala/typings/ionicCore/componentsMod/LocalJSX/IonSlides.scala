@@ -3,12 +3,13 @@ package typings.ionicCore.componentsMod.LocalJSX
 import typings.ionicCore.ionicCoreStrings.ios
 import typings.ionicCore.ionicCoreStrings.md
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonSlides extends js.Object {
+trait IonSlides extends StObject {
   
   /**
     * The mode determines which platform styles to use.
@@ -119,138 +120,126 @@ object IonSlides {
   }
   
   @scala.inline
-  implicit class IonSlidesOps[Self <: IonSlides] (val x: Self) extends AnyVal {
+  implicit class IonSlidesMutableBuilder[Self <: IonSlides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnIonSlideDidChange(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideDidChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setOnIonSlideDidChangeUndefined: Self = StObject.set(x, "onIonSlideDidChange", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setOnIonSlideDoubleTap(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideDoubleTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideDidChange(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideDidChange", js.Any.fromFunction1(value))
+    def setOnIonSlideDoubleTapUndefined: Self = StObject.set(x, "onIonSlideDoubleTap", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideDidChange: Self = this.set("onIonSlideDidChange", js.undefined)
+    def setOnIonSlideDrag(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideDrag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideDoubleTap(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideDoubleTap", js.Any.fromFunction1(value))
+    def setOnIonSlideDragUndefined: Self = StObject.set(x, "onIonSlideDrag", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideDoubleTap: Self = this.set("onIonSlideDoubleTap", js.undefined)
+    def setOnIonSlideNextEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideNextEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideDrag(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideDrag", js.Any.fromFunction1(value))
+    def setOnIonSlideNextEndUndefined: Self = StObject.set(x, "onIonSlideNextEnd", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideDrag: Self = this.set("onIonSlideDrag", js.undefined)
+    def setOnIonSlideNextStart(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideNextStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideNextEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideNextEnd", js.Any.fromFunction1(value))
+    def setOnIonSlideNextStartUndefined: Self = StObject.set(x, "onIonSlideNextStart", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideNextEnd: Self = this.set("onIonSlideNextEnd", js.undefined)
+    def setOnIonSlidePrevEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlidePrevEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideNextStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideNextStart", js.Any.fromFunction1(value))
+    def setOnIonSlidePrevEndUndefined: Self = StObject.set(x, "onIonSlidePrevEnd", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideNextStart: Self = this.set("onIonSlideNextStart", js.undefined)
+    def setOnIonSlidePrevStart(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlidePrevStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlidePrevEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlidePrevEnd", js.Any.fromFunction1(value))
+    def setOnIonSlidePrevStartUndefined: Self = StObject.set(x, "onIonSlidePrevStart", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlidePrevEnd: Self = this.set("onIonSlidePrevEnd", js.undefined)
+    def setOnIonSlideReachEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideReachEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlidePrevStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlidePrevStart", js.Any.fromFunction1(value))
+    def setOnIonSlideReachEndUndefined: Self = StObject.set(x, "onIonSlideReachEnd", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlidePrevStart: Self = this.set("onIonSlidePrevStart", js.undefined)
+    def setOnIonSlideReachStart(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideReachStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideReachEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideReachEnd", js.Any.fromFunction1(value))
+    def setOnIonSlideReachStartUndefined: Self = StObject.set(x, "onIonSlideReachStart", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideReachEnd: Self = this.set("onIonSlideReachEnd", js.undefined)
+    def setOnIonSlideTap(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideTap", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideReachStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideReachStart", js.Any.fromFunction1(value))
+    def setOnIonSlideTapUndefined: Self = StObject.set(x, "onIonSlideTap", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideReachStart: Self = this.set("onIonSlideReachStart", js.undefined)
+    def setOnIonSlideTouchEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideTouchEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideTap(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTap", js.Any.fromFunction1(value))
+    def setOnIonSlideTouchEndUndefined: Self = StObject.set(x, "onIonSlideTouchEnd", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideTap: Self = this.set("onIonSlideTap", js.undefined)
+    def setOnIonSlideTouchStart(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideTouchStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideTouchEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTouchEnd", js.Any.fromFunction1(value))
+    def setOnIonSlideTouchStartUndefined: Self = StObject.set(x, "onIonSlideTouchStart", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideTouchEnd: Self = this.set("onIonSlideTouchEnd", js.undefined)
+    def setOnIonSlideTransitionEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideTouchStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTouchStart", js.Any.fromFunction1(value))
+    def setOnIonSlideTransitionEndUndefined: Self = StObject.set(x, "onIonSlideTransitionEnd", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideTouchStart: Self = this.set("onIonSlideTouchStart", js.undefined)
+    def setOnIonSlideTransitionStart(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideTransitionStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideTransitionEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTransitionEnd", js.Any.fromFunction1(value))
+    def setOnIonSlideTransitionStartUndefined: Self = StObject.set(x, "onIonSlideTransitionStart", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideTransitionEnd: Self = this.set("onIonSlideTransitionEnd", js.undefined)
+    def setOnIonSlideWillChange(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlideWillChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideTransitionStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTransitionStart", js.Any.fromFunction1(value))
+    def setOnIonSlideWillChangeUndefined: Self = StObject.set(x, "onIonSlideWillChange", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideTransitionStart: Self = this.set("onIonSlideTransitionStart", js.undefined)
+    def setOnIonSlidesDidLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonSlidesDidLoad", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnIonSlideWillChange(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideWillChange", js.Any.fromFunction1(value))
+    def setOnIonSlidesDidLoadUndefined: Self = StObject.set(x, "onIonSlidesDidLoad", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlideWillChange: Self = this.set("onIonSlideWillChange", js.undefined)
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonSlidesDidLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlidesDidLoad", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOnIonSlidesDidLoad: Self = this.set("onIonSlidesDidLoad", js.undefined)
+    def setPager(value: Boolean): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setScrollbar(value: Boolean): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPager(value: Boolean): Self = this.set("pager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePager: Self = this.set("pager", js.undefined)
-    
-    @scala.inline
-    def setScrollbar(value: Boolean): Self = this.set("scrollbar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollbar: Self = this.set("scrollbar", js.undefined)
+    def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,72 +73,60 @@ object LayerSearchSourceProperties {
   }
   
   @scala.inline
-  implicit class LayerSearchSourcePropertiesOps[Self <: LayerSearchSourceProperties] (val x: Self) extends AnyVal {
+  implicit class LayerSearchSourcePropertiesMutableBuilder[Self <: LayerSearchSourceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayField(value: String): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
     @scala.inline
-    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExactMatch(value: Boolean): Self = this.set("exactMatch", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteExactMatch: Self = this.set("exactMatch", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: LayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
     
     @scala.inline
-    def setOrderByFieldsVarargs(value: String*): Self = this.set("orderByFields", js.Array(value :_*))
+    def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderByFields(value: js.Array[String]): Self = this.set("orderByFields", value.asInstanceOf[js.Any])
+    def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
     
     @scala.inline
-    def deleteOrderByFields: Self = this.set("orderByFields", js.undefined)
+    def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
     
     @scala.inline
-    def setSearchFieldsVarargs(value: String*): Self = this.set("searchFields", js.Array(value :_*))
+    def setSearchTemplate(value: String): Self = StObject.set(x, "searchTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchFields(value: js.Array[String]): Self = this.set("searchFields", value.asInstanceOf[js.Any])
+    def setSearchTemplateUndefined: Self = StObject.set(x, "searchTemplate", js.undefined)
     
     @scala.inline
-    def deleteSearchFields: Self = this.set("searchFields", js.undefined)
+    def setSuggestionTemplate(value: String): Self = StObject.set(x, "suggestionTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchTemplate(value: String): Self = this.set("searchTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchTemplate: Self = this.set("searchTemplate", js.undefined)
-    
-    @scala.inline
-    def setSuggestionTemplate(value: String): Self = this.set("suggestionTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestionTemplate: Self = this.set("suggestionTemplate", js.undefined)
+    def setSuggestionTemplateUndefined: Self = StObject.set(x, "suggestionTemplate", js.undefined)
   }
 }

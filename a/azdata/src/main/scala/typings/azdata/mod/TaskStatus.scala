@@ -1,51 +1,44 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskStatus extends js.Object
+sealed trait TaskStatus extends StObject
 @JSImport("azdata", "TaskStatus")
 @js.native
-object TaskStatus extends js.Object {
+object TaskStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[TaskStatus with Double] = js.native
   
   @js.native
   sealed trait Canceled extends TaskStatus
-  /* 5 */ @js.native
-  object Canceled extends TopLevel[Canceled with Double]
+  /* 5 */ val Canceled: typings.azdata.mod.TaskStatus.Canceled with Double = js.native
   
   @js.native
   sealed trait Canceling extends TaskStatus
-  /* 6 */ @js.native
-  object Canceling extends TopLevel[Canceling with Double]
+  /* 6 */ val Canceling: typings.azdata.mod.TaskStatus.Canceling with Double = js.native
   
   @js.native
   sealed trait Failed extends TaskStatus
-  /* 4 */ @js.native
-  object Failed extends TopLevel[Failed with Double]
+  /* 4 */ val Failed: typings.azdata.mod.TaskStatus.Failed with Double = js.native
   
   @js.native
   sealed trait InProgress extends TaskStatus
-  /* 1 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
+  /* 1 */ val InProgress: typings.azdata.mod.TaskStatus.InProgress with Double = js.native
   
   @js.native
   sealed trait NotStarted extends TaskStatus
-  /* 0 */ @js.native
-  object NotStarted extends TopLevel[NotStarted with Double]
+  /* 0 */ val NotStarted: typings.azdata.mod.TaskStatus.NotStarted with Double = js.native
   
   @js.native
   sealed trait Succeeded extends TaskStatus
-  /* 2 */ @js.native
-  object Succeeded extends TopLevel[Succeeded with Double]
+  /* 2 */ val Succeeded: typings.azdata.mod.TaskStatus.Succeeded with Double = js.native
   
   @js.native
   sealed trait SucceededWithWarning extends TaskStatus
-  /* 3 */ @js.native
-  object SucceededWithWarning extends TopLevel[SucceededWithWarning with Double]
+  /* 3 */ val SucceededWithWarning: typings.azdata.mod.TaskStatus.SucceededWithWarning with Double = js.native
 }

@@ -1,18 +1,20 @@
 package typings.dateFns
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/setQuarter", JSImport.Namespace)
-@js.native
-object dateFnsSetQuarterMod extends js.Object {
+object dateFnsSetQuarterMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("date-fns/setQuarter", JSImport.Default)
+    @js.native
     def apply(date: Double, quarter: Double): Date = js.native
+    @JSImport("date-fns/setQuarter", JSImport.Default)
+    @js.native
     def apply(date: Date, quarter: Double): Date = js.native
   }
 }

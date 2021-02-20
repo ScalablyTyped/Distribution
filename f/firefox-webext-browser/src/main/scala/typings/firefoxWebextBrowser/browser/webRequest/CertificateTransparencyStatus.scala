@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts
 */
-trait CertificateTransparencyStatus extends js.Object
+trait CertificateTransparencyStatus extends StObject
 object CertificateTransparencyStatus {
   
   @scala.inline

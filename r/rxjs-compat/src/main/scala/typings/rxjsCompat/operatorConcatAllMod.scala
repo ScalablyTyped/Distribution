@@ -1,14 +1,16 @@
 package typings.rxjsCompat
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/concatAll", JSImport.Namespace)
-@js.native
-object operatorConcatAllMod extends js.Object {
+object operatorConcatAllMod {
   
+  @JSImport("rxjs-compat/operator/concatAll", "concatAll")
+  @js.native
   def concatAll[T](): js.Any = js.native
-  @JSName("concatAll")
+  @JSImport("rxjs-compat/operator/concatAll", "concatAll")
+  @js.native
   def concatAll_TR[T, R](): js.Any = js.native
 }

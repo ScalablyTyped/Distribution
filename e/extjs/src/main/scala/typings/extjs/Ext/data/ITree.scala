@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.util.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,48 +43,36 @@ object ITree {
   }
   
   @scala.inline
-  implicit class ITreeOps[Self <: ITree] (val x: Self) extends AnyVal {
+  implicit class ITreeMutableBuilder[Self <: ITree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNodeById(value: /* id */ js.UndefOr[String] => INodeInterface): Self = StObject.set(x, "getNodeById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetNodeByIdUndefined: Self = StObject.set(x, "getNodeById", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetRootNode(value: () => INodeInterface): Self = StObject.set(x, "getRootNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNodeById(value: /* id */ js.UndefOr[String] => INodeInterface): Self = this.set("getNodeById", js.Any.fromFunction1(value))
+    def setGetRootNodeUndefined: Self = StObject.set(x, "getRootNode", js.undefined)
     
     @scala.inline
-    def deleteGetNodeById: Self = this.set("getNodeById", js.undefined)
+    def setRemoveRootNode(value: () => INodeInterface): Self = StObject.set(x, "removeRootNode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRootNode(value: () => INodeInterface): Self = this.set("getRootNode", js.Any.fromFunction0(value))
+    def setRemoveRootNodeUndefined: Self = StObject.set(x, "removeRootNode", js.undefined)
     
     @scala.inline
-    def deleteGetRootNode: Self = this.set("getRootNode", js.undefined)
+    def setRoot(value: INodeInterface): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveRootNode(value: () => INodeInterface): Self = this.set("removeRootNode", js.Any.fromFunction0(value))
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteRemoveRootNode: Self = this.set("removeRootNode", js.undefined)
+    def setSetRootNode(value: /* node */ js.UndefOr[INodeInterface] => INodeInterface): Self = StObject.set(x, "setRootNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoot(value: INodeInterface): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setSetRootNode(value: /* node */ js.UndefOr[INodeInterface] => INodeInterface): Self = this.set("setRootNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetRootNode: Self = this.set("setRootNode", js.undefined)
+    def setSetRootNodeUndefined: Self = StObject.set(x, "setRootNode", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeBasedCanary extends js.Object {
+trait TimeBasedCanary extends StObject {
   
   /**
     * The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.
@@ -26,30 +27,18 @@ object TimeBasedCanary {
   }
   
   @scala.inline
-  implicit class TimeBasedCanaryOps[Self <: TimeBasedCanary] (val x: Self) extends AnyVal {
+  implicit class TimeBasedCanaryMutableBuilder[Self <: TimeBasedCanary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanaryInterval(value: WaitTimeInMins): Self = StObject.set(x, "canaryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanaryIntervalUndefined: Self = StObject.set(x, "canaryInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanaryPercentage(value: Percentage): Self = StObject.set(x, "canaryPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanaryInterval(value: WaitTimeInMins): Self = this.set("canaryInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanaryInterval: Self = this.set("canaryInterval", js.undefined)
-    
-    @scala.inline
-    def setCanaryPercentage(value: Percentage): Self = this.set("canaryPercentage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanaryPercentage: Self = this.set("canaryPercentage", js.undefined)
+    def setCanaryPercentageUndefined: Self = StObject.set(x, "canaryPercentage", js.undefined)
   }
 }

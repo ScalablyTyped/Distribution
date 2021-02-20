@@ -1,5 +1,6 @@
 package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is created and attached to that Replica in READ_WRITE mode.
   */
 @js.native
-trait SchemaNewDisk extends js.Object {
+trait SchemaNewDisk extends StObject {
   
   /**
     * How the disk will be attached to the Replica.
@@ -43,42 +44,30 @@ object SchemaNewDisk {
   }
   
   @scala.inline
-  implicit class SchemaNewDiskOps[Self <: SchemaNewDisk] (val x: Self) extends AnyVal {
+  implicit class SchemaNewDiskMutableBuilder[Self <: SchemaNewDisk] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachment(value: SchemaDiskAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: SchemaDiskAttachment): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
     
     @scala.inline
-    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDelete(value: Boolean): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
+    def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
     
     @scala.inline
-    def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    def setInitializeParams(value: SchemaNewDiskInitializeParams): Self = StObject.set(x, "initializeParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoot(value: Boolean): Self = this.set("boot", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBoot: Self = this.set("boot", js.undefined)
-    
-    @scala.inline
-    def setInitializeParams(value: SchemaNewDiskInitializeParams): Self = this.set("initializeParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitializeParams: Self = this.set("initializeParams", js.undefined)
+    def setInitializeParamsUndefined: Self = StObject.set(x, "initializeParams", js.undefined)
   }
 }

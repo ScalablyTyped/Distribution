@@ -1,7 +1,6 @@
 package typings.raygun
 
 import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
@@ -18,18 +17,40 @@ import typings.raygun.typesMod.RaygunOptions
 import typings.raygun.typesMod.Tag
 import typings.raygun.typesMod.Transport
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("raygun", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  object default {
+    
+    @JSImport("raygun", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("raygun", "default.Client")
+    @js.native
+    class Client () extends Raygun
+    @JSImport("raygun", "default.Client")
+    @js.native
+    def Client: Instantiable0[Raygun] = js.native
+    @scala.inline
+    def Client_=(x: Instantiable0[Raygun]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Client")(x.asInstanceOf[js.Any])
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("raygun", "Client")
+  @js.native
+  class Client () extends Raygun
+  @JSImport("raygun", "Client")
+  @js.native
   val Client: Instantiable0[Raygun] = js.native
   
   @js.native
-  trait Raygun extends js.Object {
+  trait Raygun extends StObject {
     
     var _apiKey: js.UndefOr[String] = js.native
     
@@ -272,15 +293,6 @@ object mod extends js.Object {
     def transport(): Transport = js.native
     
     def user(req: Request_[ParamsDictionary, _, _, Query]): RawUserData | Null = js.native
-  }
-  
-  @js.native
-  object default extends js.Object {
-    
-    @js.native
-    class Client () extends Raygun
-    @js.native
-    object Client extends TopLevel[Instantiable0[Raygun]]
   }
   
   type SendCB = js.Function2[/* error */ Error | Null, /* items */ js.UndefOr[js.Array[String]], Unit]

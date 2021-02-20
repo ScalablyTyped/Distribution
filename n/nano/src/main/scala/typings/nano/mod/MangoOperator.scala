@@ -1,5 +1,6 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nano.nanoStrings.$allMatch
   - typings.nano.nanoStrings.$elemMatch
 */
-trait MangoOperator extends js.Object
+trait MangoOperator extends StObject
 object MangoOperator {
   
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLocaleData for links to DTD of XML locale data files.
   */
 @js.native
-trait Currency extends js.Object {
+trait Currency extends StObject {
   
   /**
     * {@link Currency} abbreviation used by banks and in money exchange, for example, **EUR** or **USD** . This usually should be identical to the ISO 4217
@@ -56,39 +57,27 @@ object Currency {
   }
   
   @scala.inline
-  implicit class CurrencyOps[Self <: Currency] (val x: Self) extends AnyVal {
+  implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBankSymbol(value: String): Self = StObject.set(x, "BankSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalPlaces(value: Double): Self = StObject.set(x, "DecimalPlaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBankSymbol(value: String): Self = this.set("BankSymbol", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalPlaces(value: Double): Self = this.set("DecimalPlaces", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault(value: Boolean): Self = this.set("Default", value.asInstanceOf[js.Any])
+    def setSymbol(value: String): Self = StObject.set(x, "Symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: String): Self = this.set("Symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedInCompatibleFormatCodes(value: Boolean): Self = this.set("UsedInCompatibleFormatCodes", value.asInstanceOf[js.Any])
+    def setUsedInCompatibleFormatCodes(value: Boolean): Self = StObject.set(x, "UsedInCompatibleFormatCodes", value.asInstanceOf[js.Any])
   }
 }

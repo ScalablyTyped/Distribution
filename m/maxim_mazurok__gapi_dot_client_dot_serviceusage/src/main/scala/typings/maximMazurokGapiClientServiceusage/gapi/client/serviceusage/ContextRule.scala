@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContextRule extends js.Object {
+trait ContextRule extends StObject {
   
   /** A list of full type names or extension IDs of extensions allowed in grpc side channel from client to backend. */
   var allowedRequestExtensions: js.UndefOr[js.Array[String]] = js.native
@@ -31,60 +32,48 @@ object ContextRule {
   }
   
   @scala.inline
-  implicit class ContextRuleOps[Self <: ContextRule] (val x: Self) extends AnyVal {
+  implicit class ContextRuleMutableBuilder[Self <: ContextRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedRequestExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedRequestExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedRequestExtensionsUndefined: Self = StObject.set(x, "allowedRequestExtensions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedRequestExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedRequestExtensions", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedRequestExtensionsVarargs(value: String*): Self = this.set("allowedRequestExtensions", js.Array(value :_*))
+    def setAllowedResponseExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedResponseExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedRequestExtensions(value: js.Array[String]): Self = this.set("allowedRequestExtensions", value.asInstanceOf[js.Any])
+    def setAllowedResponseExtensionsUndefined: Self = StObject.set(x, "allowedResponseExtensions", js.undefined)
     
     @scala.inline
-    def deleteAllowedRequestExtensions: Self = this.set("allowedRequestExtensions", js.undefined)
+    def setAllowedResponseExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedResponseExtensions", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedResponseExtensionsVarargs(value: String*): Self = this.set("allowedResponseExtensions", js.Array(value :_*))
+    def setProvided(value: js.Array[String]): Self = StObject.set(x, "provided", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedResponseExtensions(value: js.Array[String]): Self = this.set("allowedResponseExtensions", value.asInstanceOf[js.Any])
+    def setProvidedUndefined: Self = StObject.set(x, "provided", js.undefined)
     
     @scala.inline
-    def deleteAllowedResponseExtensions: Self = this.set("allowedResponseExtensions", js.undefined)
+    def setProvidedVarargs(value: String*): Self = StObject.set(x, "provided", js.Array(value :_*))
     
     @scala.inline
-    def setProvidedVarargs(value: String*): Self = this.set("provided", js.Array(value :_*))
+    def setRequested(value: js.Array[String]): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvided(value: js.Array[String]): Self = this.set("provided", value.asInstanceOf[js.Any])
+    def setRequestedUndefined: Self = StObject.set(x, "requested", js.undefined)
     
     @scala.inline
-    def deleteProvided: Self = this.set("provided", js.undefined)
+    def setRequestedVarargs(value: String*): Self = StObject.set(x, "requested", js.Array(value :_*))
     
     @scala.inline
-    def setRequestedVarargs(value: String*): Self = this.set("requested", js.Array(value :_*))
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequested(value: js.Array[String]): Self = this.set("requested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequested: Self = this.set("requested", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.figmaStrings.VERTICAL
   - typings.figma.figmaStrings.BOTH
 */
-trait OverflowDirection extends js.Object
+trait OverflowDirection extends StObject
 object OverflowDirection {
   
   @scala.inline

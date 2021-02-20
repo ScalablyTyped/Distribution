@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeAssetResponse extends js.Object {
+trait DescribeAssetResponse extends StObject {
   
   /**
     * The ARN of the asset, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId} 
@@ -71,51 +72,39 @@ object DescribeAssetResponse {
   }
   
   @scala.inline
-  implicit class DescribeAssetResponseOps[Self <: DescribeAssetResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeAssetResponseMutableBuilder[Self <: DescribeAssetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetArn(value: ARN): Self = StObject.set(x, "assetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetCreationDate(value: Timestamp): Self = StObject.set(x, "assetCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssetHierarchies(value: AssetHierarchies): Self = StObject.set(x, "assetHierarchies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetArn(value: ARN): Self = this.set("assetArn", value.asInstanceOf[js.Any])
+    def setAssetHierarchiesVarargs(value: AssetHierarchy*): Self = StObject.set(x, "assetHierarchies", js.Array(value :_*))
     
     @scala.inline
-    def setAssetCreationDate(value: Timestamp): Self = this.set("assetCreationDate", value.asInstanceOf[js.Any])
+    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetHierarchiesVarargs(value: AssetHierarchy*): Self = this.set("assetHierarchies", js.Array(value :_*))
+    def setAssetLastUpdateDate(value: Timestamp): Self = StObject.set(x, "assetLastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetHierarchies(value: AssetHierarchies): Self = this.set("assetHierarchies", value.asInstanceOf[js.Any])
+    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setAssetName(value: Name): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetLastUpdateDate(value: Timestamp): Self = this.set("assetLastUpdateDate", value.asInstanceOf[js.Any])
+    def setAssetProperties(value: AssetProperties): Self = StObject.set(x, "assetProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetModelId(value: ID): Self = this.set("assetModelId", value.asInstanceOf[js.Any])
+    def setAssetPropertiesVarargs(value: AssetProperty*): Self = StObject.set(x, "assetProperties", js.Array(value :_*))
     
     @scala.inline
-    def setAssetName(value: Name): Self = this.set("assetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssetPropertiesVarargs(value: AssetProperty*): Self = this.set("assetProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setAssetProperties(value: AssetProperties): Self = this.set("assetProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssetStatus(value: AssetStatus): Self = this.set("assetStatus", value.asInstanceOf[js.Any])
+    def setAssetStatus(value: AssetStatus): Self = StObject.set(x, "assetStatus", value.asInstanceOf[js.Any])
   }
 }

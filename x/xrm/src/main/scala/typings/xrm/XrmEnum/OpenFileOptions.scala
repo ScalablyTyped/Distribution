@@ -2,6 +2,7 @@ package typings.xrm.XrmEnum
 
 import typings.xrm.xrmNumbers.`1`
 import typings.xrm.xrmNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmNumbers.`1`
   - typings.xrm.xrmNumbers.`2`
 */
-trait OpenFileOptions extends js.Object
+trait OpenFileOptions extends StObject
 object OpenFileOptions {
   
   @scala.inline

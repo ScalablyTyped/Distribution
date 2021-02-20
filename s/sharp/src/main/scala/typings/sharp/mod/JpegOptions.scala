@@ -1,5 +1,6 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,78 +47,66 @@ object JpegOptions {
   }
   
   @scala.inline
-  implicit class JpegOptionsOps[Self <: JpegOptions] (val x: Self) extends AnyVal {
+  implicit class JpegOptionsMutableBuilder[Self <: JpegOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChromaSubsampling(value: String): Self = StObject.set(x, "chromaSubsampling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChromaSubsamplingUndefined: Self = StObject.set(x, "chromaSubsampling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptimiseCoding(value: Boolean): Self = StObject.set(x, "optimiseCoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChromaSubsampling(value: String): Self = this.set("chromaSubsampling", value.asInstanceOf[js.Any])
+    def setOptimiseCodingUndefined: Self = StObject.set(x, "optimiseCoding", js.undefined)
     
     @scala.inline
-    def deleteChromaSubsampling: Self = this.set("chromaSubsampling", js.undefined)
+    def setOptimiseScans(value: Boolean): Self = StObject.set(x, "optimiseScans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimiseCoding(value: Boolean): Self = this.set("optimiseCoding", value.asInstanceOf[js.Any])
+    def setOptimiseScansUndefined: Self = StObject.set(x, "optimiseScans", js.undefined)
     
     @scala.inline
-    def deleteOptimiseCoding: Self = this.set("optimiseCoding", js.undefined)
+    def setOptimizeCoding(value: Boolean): Self = StObject.set(x, "optimizeCoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimiseScans(value: Boolean): Self = this.set("optimiseScans", value.asInstanceOf[js.Any])
+    def setOptimizeCodingUndefined: Self = StObject.set(x, "optimizeCoding", js.undefined)
     
     @scala.inline
-    def deleteOptimiseScans: Self = this.set("optimiseScans", js.undefined)
+    def setOptimizeScans(value: Boolean): Self = StObject.set(x, "optimizeScans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeCoding(value: Boolean): Self = this.set("optimizeCoding", value.asInstanceOf[js.Any])
+    def setOptimizeScansUndefined: Self = StObject.set(x, "optimizeScans", js.undefined)
     
     @scala.inline
-    def deleteOptimizeCoding: Self = this.set("optimizeCoding", js.undefined)
+    def setOvershootDeringing(value: Boolean): Self = StObject.set(x, "overshootDeringing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeScans(value: Boolean): Self = this.set("optimizeScans", value.asInstanceOf[js.Any])
+    def setOvershootDeringingUndefined: Self = StObject.set(x, "overshootDeringing", js.undefined)
     
     @scala.inline
-    def deleteOptimizeScans: Self = this.set("optimizeScans", js.undefined)
+    def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOvershootDeringing(value: Boolean): Self = this.set("overshootDeringing", value.asInstanceOf[js.Any])
+    def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
     
     @scala.inline
-    def deleteOvershootDeringing: Self = this.set("overshootDeringing", js.undefined)
+    def setQuantisationTable(value: Double): Self = StObject.set(x, "quantisationTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressive(value: Boolean): Self = this.set("progressive", value.asInstanceOf[js.Any])
+    def setQuantisationTableUndefined: Self = StObject.set(x, "quantisationTable", js.undefined)
     
     @scala.inline
-    def deleteProgressive: Self = this.set("progressive", js.undefined)
+    def setQuantizationTable(value: Double): Self = StObject.set(x, "quantizationTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantisationTable(value: Double): Self = this.set("quantisationTable", value.asInstanceOf[js.Any])
+    def setQuantizationTableUndefined: Self = StObject.set(x, "quantizationTable", js.undefined)
     
     @scala.inline
-    def deleteQuantisationTable: Self = this.set("quantisationTable", js.undefined)
+    def setTrellisQuantisation(value: Boolean): Self = StObject.set(x, "trellisQuantisation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantizationTable(value: Double): Self = this.set("quantizationTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantizationTable: Self = this.set("quantizationTable", js.undefined)
-    
-    @scala.inline
-    def setTrellisQuantisation(value: Boolean): Self = this.set("trellisQuantisation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrellisQuantisation: Self = this.set("trellisQuantisation", js.undefined)
+    def setTrellisQuantisationUndefined: Self = StObject.set(x, "trellisQuantisation", js.undefined)
   }
 }

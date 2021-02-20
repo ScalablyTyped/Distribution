@@ -1,20 +1,35 @@
 package typings.kendoUi.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.kendoUi.kendo.ui.FileManager
-import typings.kendoUi.kendo.ui.FileManagerOptions
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofFileManager
-  extends Instantiable1[/* element */ Element, FileManager]
-     with Instantiable2[/* element */ Element, /* options */ FileManagerOptions, FileManager] {
+trait TypeofFileManager extends StObject {
   
+  /* static member */
   def extend(proto: js.Object): FileManager = js.native
   
+  /* static member */
   var fn: FileManager = js.native
+}
+object TypeofFileManager {
+  
+  @scala.inline
+  def apply(extend: js.Object => FileManager, fn: FileManager): TypeofFileManager = {
+    val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofFileManager]
+  }
+  
+  @scala.inline
+  implicit class TypeofFileManagerMutableBuilder[Self <: TypeofFileManager] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setExtend(value: js.Object => FileManager): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFn(value: FileManager): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+  }
 }

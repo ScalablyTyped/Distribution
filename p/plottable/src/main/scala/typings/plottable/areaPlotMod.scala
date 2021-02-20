@@ -6,14 +6,14 @@ import typings.plottable.interfacesMod.IAccessor
 import typings.plottable.interfacesMod.Projector
 import typings.plottable.linePlotMod.Line
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/plots/areaPlot", JSImport.Namespace)
-@js.native
-object areaPlotMod extends js.Object {
+object areaPlotMod {
   
+  @JSImport("plottable/build/src/plots/areaPlot", "Area")
   @js.native
   /**
     * An Area Plot draws a filled region (area) between Y and Y0.
@@ -68,9 +68,16 @@ object areaPlotMod extends js.Object {
     def y0(y0: IAccessor[Double]): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Area extends js.Object {
+  object Area {
     
-    var _Y0_KEY: js.Any = js.native
+    @JSImport("plottable/build/src/plots/areaPlot", "Area")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/plots/areaPlot", "Area._Y0_KEY")
+    @js.native
+    def _Y0_KEY: js.Any = js.native
+    @scala.inline
+    def _Y0_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
   }
 }

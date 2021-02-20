@@ -3,6 +3,7 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IElement
 import typings.extjs.Ext.container.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -259,390 +260,378 @@ object IFieldContainer {
   }
   
   @scala.inline
-  implicit class IFieldContainerOps[Self <: IFieldContainer] (val x: Self) extends AnyVal {
+  implicit class IFieldContainerMutableBuilder[Self <: IFieldContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveError(value: String): Self = StObject.set(x, "activeError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveErrorUndefined: Self = StObject.set(x, "activeError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveErrorsTpl(value: js.Any): Self = StObject.set(x, "activeErrorsTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveError(value: String): Self = this.set("activeError", value.asInstanceOf[js.Any])
+    def setActiveErrorsTplUndefined: Self = StObject.set(x, "activeErrorsTpl", js.undefined)
     
     @scala.inline
-    def deleteActiveError: Self = this.set("activeError", js.undefined)
+    def setAfterBodyEl(value: js.Any): Self = StObject.set(x, "afterBodyEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveErrorsTpl(value: js.Any): Self = this.set("activeErrorsTpl", value.asInstanceOf[js.Any])
+    def setAfterBodyElUndefined: Self = StObject.set(x, "afterBodyEl", js.undefined)
     
     @scala.inline
-    def deleteActiveErrorsTpl: Self = this.set("activeErrorsTpl", js.undefined)
+    def setAfterLabelTextTpl(value: js.Any): Self = StObject.set(x, "afterLabelTextTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterBodyEl(value: js.Any): Self = this.set("afterBodyEl", value.asInstanceOf[js.Any])
+    def setAfterLabelTextTplUndefined: Self = StObject.set(x, "afterLabelTextTpl", js.undefined)
     
     @scala.inline
-    def deleteAfterBodyEl: Self = this.set("afterBodyEl", js.undefined)
+    def setAfterLabelTpl(value: js.Any): Self = StObject.set(x, "afterLabelTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterLabelTextTpl(value: js.Any): Self = this.set("afterLabelTextTpl", value.asInstanceOf[js.Any])
+    def setAfterLabelTplUndefined: Self = StObject.set(x, "afterLabelTpl", js.undefined)
     
     @scala.inline
-    def deleteAfterLabelTextTpl: Self = this.set("afterLabelTextTpl", js.undefined)
+    def setAfterSubTpl(value: js.Any): Self = StObject.set(x, "afterSubTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterLabelTpl(value: js.Any): Self = this.set("afterLabelTpl", value.asInstanceOf[js.Any])
+    def setAfterSubTplUndefined: Self = StObject.set(x, "afterSubTpl", js.undefined)
     
     @scala.inline
-    def deleteAfterLabelTpl: Self = this.set("afterLabelTpl", js.undefined)
+    def setAutoFitErrors(value: Boolean): Self = StObject.set(x, "autoFitErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterSubTpl(value: js.Any): Self = this.set("afterSubTpl", value.asInstanceOf[js.Any])
+    def setAutoFitErrorsUndefined: Self = StObject.set(x, "autoFitErrors", js.undefined)
     
     @scala.inline
-    def deleteAfterSubTpl: Self = this.set("afterSubTpl", js.undefined)
+    def setBaseBodyCls(value: String): Self = StObject.set(x, "baseBodyCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFitErrors(value: Boolean): Self = this.set("autoFitErrors", value.asInstanceOf[js.Any])
+    def setBaseBodyClsUndefined: Self = StObject.set(x, "baseBodyCls", js.undefined)
     
     @scala.inline
-    def deleteAutoFitErrors: Self = this.set("autoFitErrors", js.undefined)
+    def setBeforeBodyEl(value: js.Any): Self = StObject.set(x, "beforeBodyEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseBodyCls(value: String): Self = this.set("baseBodyCls", value.asInstanceOf[js.Any])
+    def setBeforeBodyElUndefined: Self = StObject.set(x, "beforeBodyEl", js.undefined)
     
     @scala.inline
-    def deleteBaseBodyCls: Self = this.set("baseBodyCls", js.undefined)
+    def setBeforeLabelTextTpl(value: js.Any): Self = StObject.set(x, "beforeLabelTextTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeBodyEl(value: js.Any): Self = this.set("beforeBodyEl", value.asInstanceOf[js.Any])
+    def setBeforeLabelTextTplUndefined: Self = StObject.set(x, "beforeLabelTextTpl", js.undefined)
     
     @scala.inline
-    def deleteBeforeBodyEl: Self = this.set("beforeBodyEl", js.undefined)
+    def setBeforeLabelTpl(value: js.Any): Self = StObject.set(x, "beforeLabelTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeLabelTextTpl(value: js.Any): Self = this.set("beforeLabelTextTpl", value.asInstanceOf[js.Any])
+    def setBeforeLabelTplUndefined: Self = StObject.set(x, "beforeLabelTpl", js.undefined)
     
     @scala.inline
-    def deleteBeforeLabelTextTpl: Self = this.set("beforeLabelTextTpl", js.undefined)
+    def setBeforeSubTpl(value: js.Any): Self = StObject.set(x, "beforeSubTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeLabelTpl(value: js.Any): Self = this.set("beforeLabelTpl", value.asInstanceOf[js.Any])
+    def setBeforeSubTplUndefined: Self = StObject.set(x, "beforeSubTpl", js.undefined)
     
     @scala.inline
-    def deleteBeforeLabelTpl: Self = this.set("beforeLabelTpl", js.undefined)
+    def setBodyEl(value: IElement): Self = StObject.set(x, "bodyEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeSubTpl(value: js.Any): Self = this.set("beforeSubTpl", value.asInstanceOf[js.Any])
+    def setBodyElUndefined: Self = StObject.set(x, "bodyEl", js.undefined)
     
     @scala.inline
-    def deleteBeforeSubTpl: Self = this.set("beforeSubTpl", js.undefined)
+    def setClearCls(value: String): Self = StObject.set(x, "clearCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBodyEl(value: IElement): Self = this.set("bodyEl", value.asInstanceOf[js.Any])
+    def setClearClsUndefined: Self = StObject.set(x, "clearCls", js.undefined)
     
     @scala.inline
-    def deleteBodyEl: Self = this.set("bodyEl", js.undefined)
+    def setCombineErrors(value: Boolean): Self = StObject.set(x, "combineErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearCls(value: String): Self = this.set("clearCls", value.asInstanceOf[js.Any])
+    def setCombineErrorsUndefined: Self = StObject.set(x, "combineErrors", js.undefined)
     
     @scala.inline
-    def deleteClearCls: Self = this.set("clearCls", js.undefined)
+    def setCombineLabels(value: Boolean): Self = StObject.set(x, "combineLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombineErrors(value: Boolean): Self = this.set("combineErrors", value.asInstanceOf[js.Any])
+    def setCombineLabelsUndefined: Self = StObject.set(x, "combineLabels", js.undefined)
     
     @scala.inline
-    def deleteCombineErrors: Self = this.set("combineErrors", js.undefined)
+    def setErrorEl(value: IElement): Self = StObject.set(x, "errorEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombineLabels(value: Boolean): Self = this.set("combineLabels", value.asInstanceOf[js.Any])
+    def setErrorElUndefined: Self = StObject.set(x, "errorEl", js.undefined)
     
     @scala.inline
-    def deleteCombineLabels: Self = this.set("combineLabels", js.undefined)
+    def setErrorMsgCls(value: String): Self = StObject.set(x, "errorMsgCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorEl(value: IElement): Self = this.set("errorEl", value.asInstanceOf[js.Any])
+    def setErrorMsgClsUndefined: Self = StObject.set(x, "errorMsgCls", js.undefined)
     
     @scala.inline
-    def deleteErrorEl: Self = this.set("errorEl", js.undefined)
+    def setFieldBodyCls(value: String): Self = StObject.set(x, "fieldBodyCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMsgCls(value: String): Self = this.set("errorMsgCls", value.asInstanceOf[js.Any])
+    def setFieldBodyClsUndefined: Self = StObject.set(x, "fieldBodyCls", js.undefined)
     
     @scala.inline
-    def deleteErrorMsgCls: Self = this.set("errorMsgCls", js.undefined)
+    def setFieldDefaults(value: js.Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldBodyCls(value: String): Self = this.set("fieldBodyCls", value.asInstanceOf[js.Any])
+    def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
     
     @scala.inline
-    def deleteFieldBodyCls: Self = this.set("fieldBodyCls", js.undefined)
+    def setFieldLabel(value: String): Self = StObject.set(x, "fieldLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDefaults(value: js.Any): Self = this.set("fieldDefaults", value.asInstanceOf[js.Any])
+    def setFieldLabelUndefined: Self = StObject.set(x, "fieldLabel", js.undefined)
     
     @scala.inline
-    def deleteFieldDefaults: Self = this.set("fieldDefaults", js.undefined)
+    def setFormItemCls(value: String): Self = StObject.set(x, "formItemCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldLabel(value: String): Self = this.set("fieldLabel", value.asInstanceOf[js.Any])
+    def setFormItemClsUndefined: Self = StObject.set(x, "formItemCls", js.undefined)
     
     @scala.inline
-    def deleteFieldLabel: Self = this.set("fieldLabel", js.undefined)
+    def setGetActiveError(value: () => String): Self = StObject.set(x, "getActiveError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormItemCls(value: String): Self = this.set("formItemCls", value.asInstanceOf[js.Any])
+    def setGetActiveErrorUndefined: Self = StObject.set(x, "getActiveError", js.undefined)
     
     @scala.inline
-    def deleteFormItemCls: Self = this.set("formItemCls", js.undefined)
+    def setGetActiveErrors(value: () => Array): Self = StObject.set(x, "getActiveErrors", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveError(value: () => String): Self = this.set("getActiveError", js.Any.fromFunction0(value))
+    def setGetActiveErrorsUndefined: Self = StObject.set(x, "getActiveErrors", js.undefined)
     
     @scala.inline
-    def deleteGetActiveError: Self = this.set("getActiveError", js.undefined)
+    def setGetCombinedErrors(value: /* invalidFields */ js.UndefOr[Array] => Array): Self = StObject.set(x, "getCombinedErrors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetActiveErrors(value: () => Array): Self = this.set("getActiveErrors", js.Any.fromFunction0(value))
+    def setGetCombinedErrorsUndefined: Self = StObject.set(x, "getCombinedErrors", js.undefined)
     
     @scala.inline
-    def deleteGetActiveErrors: Self = this.set("getActiveErrors", js.undefined)
+    def setGetFieldLabel(value: () => String): Self = StObject.set(x, "getFieldLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCombinedErrors(value: /* invalidFields */ js.UndefOr[Array] => Array): Self = this.set("getCombinedErrors", js.Any.fromFunction1(value))
+    def setGetFieldLabelUndefined: Self = StObject.set(x, "getFieldLabel", js.undefined)
     
     @scala.inline
-    def deleteGetCombinedErrors: Self = this.set("getCombinedErrors", js.undefined)
+    def setGetInputId(value: () => String): Self = StObject.set(x, "getInputId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFieldLabel(value: () => String): Self = this.set("getFieldLabel", js.Any.fromFunction0(value))
+    def setGetInputIdUndefined: Self = StObject.set(x, "getInputId", js.undefined)
     
     @scala.inline
-    def deleteGetFieldLabel: Self = this.set("getFieldLabel", js.undefined)
+    def setGetLabelWidth(value: () => Double): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInputId(value: () => String): Self = this.set("getInputId", js.Any.fromFunction0(value))
+    def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
     @scala.inline
-    def deleteGetInputId: Self = this.set("getInputId", js.undefined)
+    def setGetLabelableRenderData(value: () => _): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelWidth(value: () => Double): Self = this.set("getLabelWidth", js.Any.fromFunction0(value))
+    def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
     
     @scala.inline
-    def deleteGetLabelWidth: Self = this.set("getLabelWidth", js.undefined)
+    def setGetSubTplMarkup(value: () => String): Self = StObject.set(x, "getSubTplMarkup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelableRenderData(value: () => _): Self = this.set("getLabelableRenderData", js.Any.fromFunction0(value))
+    def setGetSubTplMarkupUndefined: Self = StObject.set(x, "getSubTplMarkup", js.undefined)
     
     @scala.inline
-    def deleteGetLabelableRenderData: Self = this.set("getLabelableRenderData", js.undefined)
+    def setHasActiveError(value: () => Boolean): Self = StObject.set(x, "hasActiveError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubTplMarkup(value: () => String): Self = this.set("getSubTplMarkup", js.Any.fromFunction0(value))
+    def setHasActiveErrorUndefined: Self = StObject.set(x, "hasActiveError", js.undefined)
     
     @scala.inline
-    def deleteGetSubTplMarkup: Self = this.set("getSubTplMarkup", js.undefined)
+    def setHasVisibleLabel(value: () => Boolean): Self = StObject.set(x, "hasVisibleLabel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasActiveError(value: () => Boolean): Self = this.set("hasActiveError", js.Any.fromFunction0(value))
+    def setHasVisibleLabelUndefined: Self = StObject.set(x, "hasVisibleLabel", js.undefined)
     
     @scala.inline
-    def deleteHasActiveError: Self = this.set("hasActiveError", js.undefined)
+    def setHideEmptyLabel(value: Boolean): Self = StObject.set(x, "hideEmptyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasVisibleLabel(value: () => Boolean): Self = this.set("hasVisibleLabel", js.Any.fromFunction0(value))
+    def setHideEmptyLabelUndefined: Self = StObject.set(x, "hideEmptyLabel", js.undefined)
     
     @scala.inline
-    def deleteHasVisibleLabel: Self = this.set("hasVisibleLabel", js.undefined)
+    def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideEmptyLabel(value: Boolean): Self = this.set("hideEmptyLabel", value.asInstanceOf[js.Any])
+    def setHideLabelUndefined: Self = StObject.set(x, "hideLabel", js.undefined)
     
     @scala.inline
-    def deleteHideEmptyLabel: Self = this.set("hideEmptyLabel", js.undefined)
+    def setInitFieldAncestor(value: () => Unit): Self = StObject.set(x, "initFieldAncestor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHideLabel(value: Boolean): Self = this.set("hideLabel", value.asInstanceOf[js.Any])
+    def setInitFieldAncestorUndefined: Self = StObject.set(x, "initFieldAncestor", js.undefined)
     
     @scala.inline
-    def deleteHideLabel: Self = this.set("hideLabel", js.undefined)
+    def setInitLabelable(value: () => Unit): Self = StObject.set(x, "initLabelable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitFieldAncestor(value: () => Unit): Self = this.set("initFieldAncestor", js.Any.fromFunction0(value))
+    def setInitLabelableUndefined: Self = StObject.set(x, "initLabelable", js.undefined)
     
     @scala.inline
-    def deleteInitFieldAncestor: Self = this.set("initFieldAncestor", js.undefined)
+    def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitLabelable(value: () => Unit): Self = this.set("initLabelable", js.Any.fromFunction0(value))
+    def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
     @scala.inline
-    def deleteInitLabelable: Self = this.set("initLabelable", js.undefined)
+    def setInvalidCls(value: String): Self = StObject.set(x, "invalidCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitRenderData(value: () => _): Self = this.set("initRenderData", js.Any.fromFunction0(value))
+    def setInvalidClsUndefined: Self = StObject.set(x, "invalidCls", js.undefined)
     
     @scala.inline
-    def deleteInitRenderData: Self = this.set("initRenderData", js.undefined)
+    def setIsFieldLabelable(value: Boolean): Self = StObject.set(x, "isFieldLabelable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidCls(value: String): Self = this.set("invalidCls", value.asInstanceOf[js.Any])
+    def setIsFieldLabelableUndefined: Self = StObject.set(x, "isFieldLabelable", js.undefined)
     
     @scala.inline
-    def deleteInvalidCls: Self = this.set("invalidCls", js.undefined)
+    def setLabelAlign(value: String): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFieldLabelable(value: Boolean): Self = this.set("isFieldLabelable", value.asInstanceOf[js.Any])
+    def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
     
     @scala.inline
-    def deleteIsFieldLabelable: Self = this.set("isFieldLabelable", js.undefined)
+    def setLabelAttrTpl(value: js.Any): Self = StObject.set(x, "labelAttrTpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAlign(value: String): Self = this.set("labelAlign", value.asInstanceOf[js.Any])
+    def setLabelAttrTplUndefined: Self = StObject.set(x, "labelAttrTpl", js.undefined)
     
     @scala.inline
-    def deleteLabelAlign: Self = this.set("labelAlign", js.undefined)
+    def setLabelCell(value: IElement): Self = StObject.set(x, "labelCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAttrTpl(value: js.Any): Self = this.set("labelAttrTpl", value.asInstanceOf[js.Any])
+    def setLabelCellUndefined: Self = StObject.set(x, "labelCell", js.undefined)
     
     @scala.inline
-    def deleteLabelAttrTpl: Self = this.set("labelAttrTpl", js.undefined)
+    def setLabelCls(value: String): Self = StObject.set(x, "labelCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCell(value: IElement): Self = this.set("labelCell", value.asInstanceOf[js.Any])
+    def setLabelClsExtra(value: String): Self = StObject.set(x, "labelClsExtra", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelCell: Self = this.set("labelCell", js.undefined)
+    def setLabelClsExtraUndefined: Self = StObject.set(x, "labelClsExtra", js.undefined)
     
     @scala.inline
-    def setLabelCls(value: String): Self = this.set("labelCls", value.asInstanceOf[js.Any])
+    def setLabelClsUndefined: Self = StObject.set(x, "labelCls", js.undefined)
     
     @scala.inline
-    def deleteLabelCls: Self = this.set("labelCls", js.undefined)
+    def setLabelConnector(value: String): Self = StObject.set(x, "labelConnector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelClsExtra(value: String): Self = this.set("labelClsExtra", value.asInstanceOf[js.Any])
+    def setLabelConnectorUndefined: Self = StObject.set(x, "labelConnector", js.undefined)
     
     @scala.inline
-    def deleteLabelClsExtra: Self = this.set("labelClsExtra", js.undefined)
+    def setLabelEl(value: IElement): Self = StObject.set(x, "labelEl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelConnector(value: String): Self = this.set("labelConnector", value.asInstanceOf[js.Any])
+    def setLabelElUndefined: Self = StObject.set(x, "labelEl", js.undefined)
     
     @scala.inline
-    def deleteLabelConnector: Self = this.set("labelConnector", js.undefined)
+    def setLabelPad(value: Double): Self = StObject.set(x, "labelPad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelEl(value: IElement): Self = this.set("labelEl", value.asInstanceOf[js.Any])
+    def setLabelPadUndefined: Self = StObject.set(x, "labelPad", js.undefined)
     
     @scala.inline
-    def deleteLabelEl: Self = this.set("labelEl", js.undefined)
+    def setLabelSeparator(value: String): Self = StObject.set(x, "labelSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelPad(value: Double): Self = this.set("labelPad", value.asInstanceOf[js.Any])
+    def setLabelSeparatorUndefined: Self = StObject.set(x, "labelSeparator", js.undefined)
     
     @scala.inline
-    def deleteLabelPad: Self = this.set("labelPad", js.undefined)
+    def setLabelStyle(value: String): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelSeparator(value: String): Self = this.set("labelSeparator", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelSeparator: Self = this.set("labelSeparator", js.undefined)
+    def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: String): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setMsgTarget(value: String): Self = StObject.set(x, "msgTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelWidth(value: Double): Self = this.set("labelWidth", value.asInstanceOf[js.Any])
+    def setMsgTargetUndefined: Self = StObject.set(x, "msgTarget", js.undefined)
     
     @scala.inline
-    def deleteLabelWidth: Self = this.set("labelWidth", js.undefined)
+    def setOnAdd(value: /* labelable */ js.UndefOr[ILabelable] => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMsgTarget(value: String): Self = this.set("msgTarget", value.asInstanceOf[js.Any])
+    def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
     @scala.inline
-    def deleteMsgTarget: Self = this.set("msgTarget", js.undefined)
+    def setOnFieldErrorChange(value: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onFieldErrorChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnAdd(value: /* labelable */ js.UndefOr[ILabelable] => Unit): Self = this.set("onAdd", js.Any.fromFunction1(value))
+    def setOnFieldErrorChangeUndefined: Self = StObject.set(x, "onFieldErrorChange", js.undefined)
     
     @scala.inline
-    def deleteOnAdd: Self = this.set("onAdd", js.undefined)
+    def setOnFieldValidityChange(value: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onFieldValidityChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnFieldErrorChange(value: (/* field */ js.UndefOr[ILabelable], /* error */ js.UndefOr[String]) => Unit): Self = this.set("onFieldErrorChange", js.Any.fromFunction2(value))
+    def setOnFieldValidityChangeUndefined: Self = StObject.set(x, "onFieldValidityChange", js.undefined)
     
     @scala.inline
-    def deleteOnFieldErrorChange: Self = this.set("onFieldErrorChange", js.undefined)
+    def setOnRemove(value: /* labelable */ js.UndefOr[ILabelable] => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFieldValidityChange(value: (js.UndefOr[typings.extjs.Ext.form.field.IField], js.UndefOr[Boolean]) => Unit): Self = this.set("onFieldValidityChange", js.Any.fromFunction2(value))
+    def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     
     @scala.inline
-    def deleteOnFieldValidityChange: Self = this.set("onFieldValidityChange", js.undefined)
+    def setPreventMark(value: Boolean): Self = StObject.set(x, "preventMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnRemove(value: /* labelable */ js.UndefOr[ILabelable] => Unit): Self = this.set("onRemove", js.Any.fromFunction1(value))
+    def setPreventMarkUndefined: Self = StObject.set(x, "preventMark", js.undefined)
     
     @scala.inline
-    def deleteOnRemove: Self = this.set("onRemove", js.undefined)
+    def setSetActiveError(value: js.UndefOr[String] => Unit): Self = StObject.set(x, "setActiveError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreventMark(value: Boolean): Self = this.set("preventMark", value.asInstanceOf[js.Any])
+    def setSetActiveErrorUndefined: Self = StObject.set(x, "setActiveError", js.undefined)
     
     @scala.inline
-    def deletePreventMark: Self = this.set("preventMark", js.undefined)
+    def setSetActiveErrors(value: js.UndefOr[Array] => Unit): Self = StObject.set(x, "setActiveErrors", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveError(value: js.UndefOr[String] => Unit): Self = this.set("setActiveError", js.Any.fromFunction1(value))
+    def setSetActiveErrorsUndefined: Self = StObject.set(x, "setActiveErrors", js.undefined)
     
     @scala.inline
-    def deleteSetActiveError: Self = this.set("setActiveError", js.undefined)
+    def setSetFieldDefaults(value: js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFieldDefaults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveErrors(value: js.UndefOr[Array] => Unit): Self = this.set("setActiveErrors", js.Any.fromFunction1(value))
+    def setSetFieldDefaultsUndefined: Self = StObject.set(x, "setFieldDefaults", js.undefined)
     
     @scala.inline
-    def deleteSetActiveErrors: Self = this.set("setActiveErrors", js.undefined)
+    def setSetFieldLabel(value: js.UndefOr[String] => Unit): Self = StObject.set(x, "setFieldLabel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFieldDefaults(value: js.UndefOr[js.Any] => Unit): Self = this.set("setFieldDefaults", js.Any.fromFunction1(value))
+    def setSetFieldLabelUndefined: Self = StObject.set(x, "setFieldLabel", js.undefined)
     
     @scala.inline
-    def deleteSetFieldDefaults: Self = this.set("setFieldDefaults", js.undefined)
+    def setTrimLabelSeparator(value: () => String): Self = StObject.set(x, "trimLabelSeparator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetFieldLabel(value: js.UndefOr[String] => Unit): Self = this.set("setFieldLabel", js.Any.fromFunction1(value))
+    def setTrimLabelSeparatorUndefined: Self = StObject.set(x, "trimLabelSeparator", js.undefined)
     
     @scala.inline
-    def deleteSetFieldLabel: Self = this.set("setFieldLabel", js.undefined)
+    def setUnsetActiveError(value: () => Unit): Self = StObject.set(x, "unsetActiveError", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTrimLabelSeparator(value: () => String): Self = this.set("trimLabelSeparator", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteTrimLabelSeparator: Self = this.set("trimLabelSeparator", js.undefined)
-    
-    @scala.inline
-    def setUnsetActiveError(value: () => Unit): Self = this.set("unsetActiveError", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteUnsetActiveError: Self = this.set("unsetActiveError", js.undefined)
+    def setUnsetActiveErrorUndefined: Self = StObject.set(x, "unsetActiveError", js.undefined)
   }
 }

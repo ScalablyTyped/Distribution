@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrint
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.OauthtokenOptionsRequestedPolicyVersion
 import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRequestIdResourceUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LicensesResource extends js.Object {
+trait LicensesResource extends StObject {
   
   /** Deletes the specified license.  Caution This resource is intended for use only by third-party partners who are creating Cloud Marketplace images. */
   def delete(): Request[Operation] = js.native

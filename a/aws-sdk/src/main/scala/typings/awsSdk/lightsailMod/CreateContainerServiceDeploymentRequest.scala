@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateContainerServiceDeploymentRequest extends js.Object {
+trait CreateContainerServiceDeploymentRequest extends StObject {
   
   /**
     * An object that describes the settings of the containers that will be launched on the container service.
@@ -31,33 +32,21 @@ object CreateContainerServiceDeploymentRequest {
   }
   
   @scala.inline
-  implicit class CreateContainerServiceDeploymentRequestOps[Self <: CreateContainerServiceDeploymentRequest] (val x: Self) extends AnyVal {
+  implicit class CreateContainerServiceDeploymentRequestMutableBuilder[Self <: CreateContainerServiceDeploymentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainers(value: ContainerMap): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainersUndefined: Self = StObject.set(x, "containers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicEndpoint(value: EndpointRequest): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
     
     @scala.inline
-    def setContainers(value: ContainerMap): Self = this.set("containers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainers: Self = this.set("containers", js.undefined)
-    
-    @scala.inline
-    def setPublicEndpoint(value: EndpointRequest): Self = this.set("publicEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicEndpoint: Self = this.set("publicEndpoint", js.undefined)
+    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

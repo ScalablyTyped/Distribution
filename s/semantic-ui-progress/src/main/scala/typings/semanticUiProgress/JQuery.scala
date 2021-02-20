@@ -68,12 +68,13 @@ import typings.semanticUiProgress.semanticUiProgressStrings.text
 import typings.semanticUiProgress.semanticUiProgressStrings.total
 import typings.semanticUiProgress.semanticUiProgressStrings.value
 import typings.semanticUiProgress.semanticUiProgressStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def progress(): JQuery = js.native
   def progress(behavior: setting, name: autoSuccess, value: js.UndefOr[scala.Nothing]): Boolean = js.native

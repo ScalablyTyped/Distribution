@@ -1,13 +1,13 @@
 package typings.mobxCookie
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-cookie", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("mobx-cookie", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.mobxCookie.mobxCookieMod.default {

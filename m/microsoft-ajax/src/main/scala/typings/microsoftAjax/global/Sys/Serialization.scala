@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,15 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains classes related to data serialization for AJAX client functionality in ASP.NET. For more information, see Using Web Services in ASP.NET AJAX.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb310840(v=vs.100).aspx}
   */
-@JSGlobal("Sys.Serialization")
-@js.native
-object Serialization extends js.Object {
+object Serialization {
   
   /**
     * Serializes JavaScript types into JSON-formatted data and deserializes JSON-formatted data into JavaScript types
     * The JavaScriptSerializer class contains only static methods.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310857(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Serialization.JavaScriptSerializer")
   @js.native
   //#region Constructors
   /**
@@ -26,9 +26,7 @@ object Serialization extends js.Object {
     */
   class JavaScriptSerializer ()
     extends typings.microsoftAjax.Sys.Serialization.JavaScriptSerializer
-  /* static members */
-  @js.native
-  object JavaScriptSerializer extends js.Object {
+  object JavaScriptSerializer {
     
     /**
       * Converts a JSON string into an ECMAScript (JavaScript) object graph. This member is static and can be invoked without creating an instance of the class.
@@ -36,6 +34,9 @@ object Serialization extends js.Object {
       * @param value
       *           The JSON string to deserialize.
       */
+    /* static member */
+    @JSGlobal("Sys.Serialization.JavaScriptSerializer.deserialize")
+    @js.native
     def deserialize(value: String): js.Any = js.native
     
     //#endregion
@@ -48,6 +49,9 @@ object Serialization extends js.Object {
       * @exception Sys.ArgumentException
       *           value contains a value that cannot be serialized.
       */
+    /* static member */
+    @JSGlobal("Sys.Serialization.JavaScriptSerializer.serialize")
+    @js.native
     def serialize(value: js.Any): String = js.native
   }
 }

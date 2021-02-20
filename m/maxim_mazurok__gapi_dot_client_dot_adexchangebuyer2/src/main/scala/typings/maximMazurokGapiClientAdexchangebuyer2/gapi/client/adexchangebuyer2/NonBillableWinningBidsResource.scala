@@ -2,12 +2,13 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.FilterSetName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonBillableWinningBidsResource extends js.Object {
+trait NonBillableWinningBidsResource extends StObject {
   
   /** List all reasons for which winning bids were not billable, with the number of bids not billed for each reason. */
   def list(): Request[ListNonBillableWinningBidsResponse] = js.native

@@ -1,11 +1,12 @@
 package typings.nodeSqlParser.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait With extends js.Object {
+trait With extends StObject {
   
   var columns: js.UndefOr[js.Array[_]] = js.native
   
@@ -22,36 +23,24 @@ object With {
   }
   
   @scala.inline
-  implicit class WithOps[Self <: With] (val x: Self) extends AnyVal {
+  implicit class WithMutableBuilder[Self <: With] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStmtVarargs(value: js.Any*): Self = this.set("stmt", js.Array(value :_*))
+    def setStmt(value: js.Array[_]): Self = StObject.set(x, "stmt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStmt(value: js.Array[_]): Self = this.set("stmt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnsVarargs(value: js.Any*): Self = this.set("columns", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumns(value: js.Array[_]): Self = this.set("columns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setStmtVarargs(value: js.Any*): Self = StObject.set(x, "stmt", js.Array(value :_*))
   }
 }

@@ -4,14 +4,14 @@ import typings.builderUtilRuntime.publishOptionsMod.BintrayOptions
 import typings.electronPublish.mod.HttpPublisher
 import typings.electronPublish.mod.PublishContext
 import typings.electronPublish.mod.PublishOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/publish/BintrayPublisher", JSImport.Namespace)
-@js.native
-object bintrayPublisherMod extends js.Object {
+object bintrayPublisherMod {
   
+  @JSImport("app-builder-lib/out/publish/BintrayPublisher", "BintrayPublisher")
   @js.native
   class BintrayPublisher protected () extends HttpPublisher {
     def this(context: PublishContext, info: BintrayOptions, version: String) = this()

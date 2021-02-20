@@ -3,16 +3,16 @@ package typings.three
 import typings.three.fogMod.IFog
 import typings.three.materialMod.Material
 import typings.three.webGLPropertiesMod.WebGLProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLMaterials", JSImport.Namespace)
-@js.native
-object webGLMaterialsMod extends js.Object {
+object webGLMaterialsMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLMaterials", "WebGLMaterials")
   @js.native
-  class WebGLMaterials protected () extends js.Object {
+  class WebGLMaterials protected () extends StObject {
     def this(properties: WebGLProperties) = this()
     
     def refreshFogUniforms(uniforms: js.Object, fog: IFog): Unit = js.native

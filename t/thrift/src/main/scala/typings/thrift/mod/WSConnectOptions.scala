@@ -1,11 +1,12 @@
 package typings.thrift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WSConnectOptions extends js.Object {
+trait WSConnectOptions extends StObject {
   
   var headers: js.UndefOr[HttpHeaders] = js.native
   
@@ -28,54 +29,42 @@ object WSConnectOptions {
   }
   
   @scala.inline
-  implicit class WSConnectOptionsOps[Self <: WSConnectOptions] (val x: Self) extends AnyVal {
+  implicit class WSConnectOptionsMutableBuilder[Self <: WSConnectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: HttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setProtocol(value: TProtocolConstructor): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: TProtocolConstructor): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setTransport(value: TTransportConstructor): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     
     @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setWsOptions(value: WSOptions): Self = StObject.set(x, "wsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport(value: TTransportConstructor): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
-    
-    @scala.inline
-    def setWsOptions(value: WSOptions): Self = this.set("wsOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWsOptions: Self = this.set("wsOptions", js.undefined)
+    def setWsOptionsUndefined: Self = StObject.set(x, "wsOptions", js.undefined)
   }
 }

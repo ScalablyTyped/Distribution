@@ -1,5 +1,6 @@
 package typings.reactAsync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object FetchOptions {
   }
   
   @scala.inline
-  implicit class FetchOptionsOps[Self <: FetchOptions[_], T] (val x: Self with FetchOptions[T]) extends AnyVal {
+  implicit class FetchOptionsMutableBuilder[Self <: FetchOptions[_], T] (val x: Self with FetchOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefer(value: Boolean): Self = this.set("defer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefer: Self = this.set("defer", js.undefined)
-    
-    @scala.inline
-    def setJson(value: Boolean): Self = this.set("json", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
   }
 }

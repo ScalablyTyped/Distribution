@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OidcConfigForResponse extends js.Object {
+trait OidcConfigForResponse extends StObject {
   
   /**
     * The OIDC IdP authorization endpoint used to configure your private workforce.
@@ -51,60 +52,48 @@ object OidcConfigForResponse {
   }
   
   @scala.inline
-  implicit class OidcConfigForResponseOps[Self <: OidcConfigForResponse] (val x: Self) extends AnyVal {
+  implicit class OidcConfigForResponseMutableBuilder[Self <: OidcConfigForResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthorizationEndpoint(value: OidcEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorizationEndpointUndefined: Self = StObject.set(x, "AuthorizationEndpoint", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationEndpoint(value: OidcEndpoint): Self = this.set("AuthorizationEndpoint", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationEndpoint: Self = this.set("AuthorizationEndpoint", js.undefined)
+    def setIssuer(value: OidcEndpoint): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientId(value: ClientId): Self = this.set("ClientId", value.asInstanceOf[js.Any])
+    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
     
     @scala.inline
-    def deleteClientId: Self = this.set("ClientId", js.undefined)
+    def setJwksUri(value: OidcEndpoint): Self = StObject.set(x, "JwksUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: OidcEndpoint): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    def setJwksUriUndefined: Self = StObject.set(x, "JwksUri", js.undefined)
     
     @scala.inline
-    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+    def setLogoutEndpoint(value: OidcEndpoint): Self = StObject.set(x, "LogoutEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwksUri(value: OidcEndpoint): Self = this.set("JwksUri", value.asInstanceOf[js.Any])
+    def setLogoutEndpointUndefined: Self = StObject.set(x, "LogoutEndpoint", js.undefined)
     
     @scala.inline
-    def deleteJwksUri: Self = this.set("JwksUri", js.undefined)
+    def setTokenEndpoint(value: OidcEndpoint): Self = StObject.set(x, "TokenEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogoutEndpoint(value: OidcEndpoint): Self = this.set("LogoutEndpoint", value.asInstanceOf[js.Any])
+    def setTokenEndpointUndefined: Self = StObject.set(x, "TokenEndpoint", js.undefined)
     
     @scala.inline
-    def deleteLogoutEndpoint: Self = this.set("LogoutEndpoint", js.undefined)
+    def setUserInfoEndpoint(value: OidcEndpoint): Self = StObject.set(x, "UserInfoEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTokenEndpoint(value: OidcEndpoint): Self = this.set("TokenEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenEndpoint: Self = this.set("TokenEndpoint", js.undefined)
-    
-    @scala.inline
-    def setUserInfoEndpoint(value: OidcEndpoint): Self = this.set("UserInfoEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserInfoEndpoint: Self = this.set("UserInfoEndpoint", js.undefined)
+    def setUserInfoEndpointUndefined: Self = StObject.set(x, "UserInfoEndpoint", js.undefined)
   }
 }

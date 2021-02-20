@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the result of a call to MediaProcessingTrigger::RequestAsync . */
 @JSGlobal("Windows.ApplicationModel.Background.MediaProcessingTriggerResult")
 @js.native
-object MediaProcessingTriggerResult extends js.Object {
+object MediaProcessingTriggerResult extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

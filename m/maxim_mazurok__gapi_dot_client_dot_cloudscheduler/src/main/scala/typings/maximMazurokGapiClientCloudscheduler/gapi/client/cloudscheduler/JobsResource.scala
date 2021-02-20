@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientCloudscheduler.anon.Name
 import typings.maximMazurokGapiClientCloudscheduler.anon.Oauthtoken
 import typings.maximMazurokGapiClientCloudscheduler.anon.PrettyPrint
 import typings.maximMazurokGapiClientCloudscheduler.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobsResource extends js.Object {
+trait JobsResource extends StObject {
   
   /** Creates a job. */
   def create(request: Accesstoken): Request[Job] = js.native

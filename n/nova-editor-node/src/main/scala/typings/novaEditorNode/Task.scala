@@ -1,11 +1,12 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Task extends js.Object {
+trait Task extends StObject {
   
   def getAction(name: String): js.UndefOr[TaskProcessAction] = js.native
   

@@ -1,19 +1,25 @@
 package typings.blueprintjsDatetime
 
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.reactDayPicker.propsMod.NavbarElementProps
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/datetime/lib/esm/datePickerNavbar", JSImport.Namespace)
-@js.native
-object datePickerNavbarMod extends js.Object {
+object datePickerNavbarMod {
   
+  @JSImport("@blueprintjs/datetime/lib/esm/datePickerNavbar", "DatePickerNavbar")
   @js.native
-  class DatePickerNavbar ()
-    extends Component[IDatePickerNavbarProps, js.Object, js.Any] {
+  class DatePickerNavbar protected ()
+    extends PureComponent[IDatePickerNavbarProps, js.Object, js.Any] {
+    def this(props: IDatePickerNavbarProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IDatePickerNavbarProps, context: js.Any) = this()
     
     var handleNextClick: js.Any = js.native
     

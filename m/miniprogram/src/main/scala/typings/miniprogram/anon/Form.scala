@@ -2,12 +2,13 @@ package typings.miniprogram.anon
 
 import typings.miniprogram.miniprogramStrings.code
 import typings.miniprogram.miniprogramStrings.manual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Form extends js.Object {
+trait Form extends StObject {
   
   var form: manual | code = js.native
 }
@@ -20,21 +21,9 @@ object Form {
   }
   
   @scala.inline
-  implicit class FormOps[Self <: Form] (val x: Self) extends AnyVal {
+  implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setForm(value: manual | code): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setForm(value: manual | code): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
   }
 }

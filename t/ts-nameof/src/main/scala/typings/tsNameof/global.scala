@@ -1,15 +1,13 @@
 package typings.tsNameof
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object nameof extends js.Object {
+  object nameof {
     
     /**
       * Gets a string representation of the last identifier of the given expression.
@@ -20,8 +18,14 @@ object global extends js.Object {
       *
       * @param obj An expression for which the last identifier will be parsed.
       */
+    @JSGlobal("nameof")
+    @js.native
     def apply(obj: js.Any): String = js.native
+    @JSGlobal("nameof")
+    @js.native
     def apply[T](): String = js.native
+    @JSGlobal("nameof")
+    @js.native
     def apply[T](func: js.Function1[/* obj */ T, _]): String = js.native
     
     /**
@@ -36,7 +40,11 @@ object global extends js.Object {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
+    @JSGlobal("nameof.full")
+    @js.native
     def full(obj: js.Any): String = js.native
+    @JSGlobal("nameof.full")
+    @js.native
     def full(obj: js.Any, periodIndex: Double): String = js.native
     /**
       * Gets the string representation of the entire type parameter expression.
@@ -51,6 +59,8 @@ object global extends js.Object {
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
     // tslint:disable-next-line no-unnecessary-generics
+    @JSGlobal("nameof.full")
+    @js.native
     def full[T](): String = js.native
     /**
       * Gets the string representation of the entire resultant expression.
@@ -65,8 +75,14 @@ object global extends js.Object {
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
     // tslint:disable-next-line no-unnecessary-generics
+    @JSGlobal("nameof.full")
+    @js.native
     def full[T](func: js.Function1[/* obj */ T, _]): String = js.native
+    @JSGlobal("nameof.full")
+    @js.native
     def full[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): String = js.native
+    @JSGlobal("nameof.full")
+    @js.native
     def full[T](periodIndex: Double): String = js.native
     
     /**
@@ -76,6 +92,8 @@ object global extends js.Object {
       *
       * @param value The value to interpolate.
       */
+    @JSGlobal("nameof.interpolate")
+    @js.native
     def interpolate[T](value: T): T = js.native
     
     /**
@@ -90,7 +108,11 @@ object global extends js.Object {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
+    @JSGlobal("nameof.split")
+    @js.native
     def split(obj: js.Any): js.Array[String] = js.native
+    @JSGlobal("nameof.split")
+    @js.native
     def split(obj: js.Any, periodIndex: Double): js.Array[String] = js.native
     /**
       * Gets an array of strings where each element is a subsequent part of the expression provided.
@@ -105,7 +127,11 @@ object global extends js.Object {
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
     // tslint:disable-next-line no-unnecessary-generics
+    @JSGlobal("nameof.split")
+    @js.native
     def split[T](func: js.Function1[/* obj */ T, _]): js.Array[String] = js.native
+    @JSGlobal("nameof.split")
+    @js.native
     def split[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): js.Array[String] = js.native
     
     /**
@@ -116,6 +142,8 @@ object global extends js.Object {
       *
       * @param args An array of expressions to be parsed.
       */
+    @JSGlobal("nameof.toArray")
+    @js.native
     def toArray(args: js.Any*): js.Array[String] = js.native
     /**
       * Gets an array containing the string representation of the final identifier of each expression in the array returned by the provided function.
@@ -126,6 +154,8 @@ object global extends js.Object {
       * @param func A function returning an array of expressions to be parsed, excluding the parameter's identifier.
       */
     // tslint:disable-next-line no-unnecessary-generics
+    @JSGlobal("nameof.toArray")
+    @js.native
     def toArray[T](func: js.Function1[/* obj */ T, js.Array[_]]): js.Array[String] = js.native
   }
 }

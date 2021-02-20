@@ -1,7 +1,7 @@
 package typings.webix.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,3 @@ trait promise
   
   def resolve(value: js.Any): js.Promise[_] = js.native
 }
-@JSImport("webix", "promise")
-@js.native
-object promise
-  extends TopLevel[typings.webix.webix.promise]

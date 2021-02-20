@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveRulesOptions extends js.Object {
+trait ResponsiveRulesOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A full set of chart options to
@@ -37,30 +38,18 @@ object ResponsiveRulesOptions {
   }
   
   @scala.inline
-  implicit class ResponsiveRulesOptionsOps[Self <: ResponsiveRulesOptions] (val x: Self) extends AnyVal {
+  implicit class ResponsiveRulesOptionsMutableBuilder[Self <: ResponsiveRulesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCondition(value: ResponsiveRulesConditionOptions): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartOptions(value: Options): Self = this.set("chartOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChartOptions: Self = this.set("chartOptions", js.undefined)
-    
-    @scala.inline
-    def setCondition(value: ResponsiveRulesConditionOptions): Self = this.set("condition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
   }
 }

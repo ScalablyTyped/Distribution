@@ -1,11 +1,12 @@
 package typings.dymoLabelFramework.dymo.label.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLabelRenderParamsXmlParams extends js.Object {
+trait CreateLabelRenderParamsXmlParams extends StObject {
   
   /**  The direction of the label content on the label (left-to-right or right-to-left). Use the dymo.label.framework.FlowDirection enumeration to specify the value. */
   var flowDirection: js.UndefOr[FlowDirection] = js.native
@@ -36,48 +37,36 @@ object CreateLabelRenderParamsXmlParams {
   }
   
   @scala.inline
-  implicit class CreateLabelRenderParamsXmlParamsOps[Self <: CreateLabelRenderParamsXmlParams] (val x: Self) extends AnyVal {
+  implicit class CreateLabelRenderParamsXmlParamsMutableBuilder[Self <: CreateLabelRenderParamsXmlParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowDirectionUndefined: Self = StObject.set(x, "flowDirection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelColor(value: Color): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowDirection(value: FlowDirection): Self = this.set("flowDirection", value.asInstanceOf[js.Any])
+    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def deleteFlowDirection: Self = this.set("flowDirection", js.undefined)
+    def setPngUseDisplayResolution(value: Boolean): Self = StObject.set(x, "pngUseDisplayResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelColor(value: Color): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    def setPngUseDisplayResolutionUndefined: Self = StObject.set(x, "pngUseDisplayResolution", js.undefined)
     
     @scala.inline
-    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    def setShadowColor(value: Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPngUseDisplayResolution(value: Boolean): Self = this.set("pngUseDisplayResolution", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deletePngUseDisplayResolution: Self = this.set("pngUseDisplayResolution", js.undefined)
+    def setShadowDepth(value: Double): Self = StObject.set(x, "shadowDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Color): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
-    
-    @scala.inline
-    def setShadowDepth(value: Double): Self = this.set("shadowDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowDepth: Self = this.set("shadowDepth", js.undefined)
+    def setShadowDepthUndefined: Self = StObject.set(x, "shadowDepth", js.undefined)
   }
 }

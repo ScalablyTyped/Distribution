@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.SP.BooleanResult
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.StringResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateTableRequest extends js.Object {
+trait UpdateTableRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
@@ -36,36 +37,24 @@ object UpdateTableRequest {
   }
   
   @scala.inline
-  implicit class UpdateTableRequestOps[Self <: UpdateTableRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateTableRequestMutableBuilder[Self <: UpdateTableRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    def setSkipArchive(value: BooleanNullable): Self = StObject.set(x, "SkipArchive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableInput(value: TableInput): Self = this.set("TableInput", value.asInstanceOf[js.Any])
+    def setSkipArchiveUndefined: Self = StObject.set(x, "SkipArchive", js.undefined)
     
     @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
-    
-    @scala.inline
-    def setSkipArchive(value: BooleanNullable): Self = this.set("SkipArchive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipArchive: Self = this.set("SkipArchive", js.undefined)
+    def setTableInput(value: TableInput): Self = StObject.set(x, "TableInput", value.asInstanceOf[js.Any])
   }
 }

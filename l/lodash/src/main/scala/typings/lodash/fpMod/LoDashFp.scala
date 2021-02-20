@@ -70,12 +70,13 @@ import typings.std.Error
 import typings.std.Exclude
 import typings.std.Pick
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoDashFp extends js.Object {
+trait LoDashFp extends StObject {
   
   def F(): `false` = js.native
   @JSName("F")

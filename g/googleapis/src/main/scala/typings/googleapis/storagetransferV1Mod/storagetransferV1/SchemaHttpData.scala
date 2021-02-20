@@ -1,5 +1,6 @@
 package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to transfer.
   */
 @js.native
-trait SchemaHttpData extends js.Object {
+trait SchemaHttpData extends StObject {
   
   /**
     * The URL that points to the file that stores the object list entries. This
@@ -52,24 +53,12 @@ object SchemaHttpData {
   }
   
   @scala.inline
-  implicit class SchemaHttpDataOps[Self <: SchemaHttpData] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpDataMutableBuilder[Self <: SchemaHttpData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListUrl(value: String): Self = StObject.set(x, "listUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setListUrl(value: String): Self = this.set("listUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListUrl: Self = this.set("listUrl", js.undefined)
+    def setListUrlUndefined: Self = StObject.set(x, "listUrl", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import typings.bingmaps.Microsoft.Maps.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGeoDataResultSet extends js.Object {
+trait IGeoDataResultSet extends StObject {
   
   /** Copyright information for the GeoData API. */
   var Copyright: String = js.native
@@ -26,30 +27,18 @@ object IGeoDataResultSet {
   }
   
   @scala.inline
-  implicit class IGeoDataResultSetOps[Self <: IGeoDataResultSet] (val x: Self) extends AnyVal {
+  implicit class IGeoDataResultSetMutableBuilder[Self <: IGeoDataResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[IGeoDataResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("Copyright", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocation(value: String | Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultsVarargs(value: IGeoDataResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[IGeoDataResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResultsVarargs(value: IGeoDataResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

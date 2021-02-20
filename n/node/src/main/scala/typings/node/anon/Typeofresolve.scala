@@ -17,12 +17,13 @@ import typings.node.nodeStrings.PTR
 import typings.node.nodeStrings.SOA
 import typings.node.nodeStrings.SRV
 import typings.node.nodeStrings.TXT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofresolve extends js.Object {
+trait Typeofresolve extends StObject {
   
   def apply(
     hostname: String,

@@ -1,6 +1,7 @@
 package typings.angularCore.mod
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   */
 @js.native
-trait DebugNode2 extends js.Object {
+trait DebugNode2 extends StObject {
   
   /**
     * Child nodes
@@ -20,7 +21,7 @@ trait DebugNode2 extends js.Object {
   /**
     * A list of Component/Directive types which need to be instantiated an this location.
     */
-  var factories: js.Array[Type[_]] = js.native
+  var factories: js.Array[typings.angularCore.mod.Type[_]] = js.native
   
   /**
     * HTML representation of the node.
@@ -52,7 +53,7 @@ object DebugNode2 {
   @scala.inline
   def apply(
     children: js.Array[DebugNode2],
-    factories: js.Array[Type[_]],
+    factories: js.Array[typings.angularCore.mod.Type[_]],
     injector: NodeInjectorDebug,
     instances: js.Array[_],
     native: Node,
@@ -64,51 +65,39 @@ object DebugNode2 {
   }
   
   @scala.inline
-  implicit class DebugNode2Ops[Self <: DebugNode2] (val x: Self) extends AnyVal {
+  implicit class DebugNode2MutableBuilder[Self <: DebugNode2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[DebugNode2]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: DebugNode2*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFactories(value: js.Array[typings.angularCore.mod.Type[_]]): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: DebugNode2*): Self = this.set("children", js.Array(value :_*))
+    def setFactoriesVarargs(value: typings.angularCore.mod.Type[js.Any]*): Self = StObject.set(x, "factories", js.Array(value :_*))
     
     @scala.inline
-    def setChildren(value: js.Array[DebugNode2]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFactoriesVarargs(value: Type[js.Any]*): Self = this.set("factories", js.Array(value :_*))
+    def setHtmlNull: Self = StObject.set(x, "html", null)
     
     @scala.inline
-    def setFactories(value: js.Array[Type[_]]): Self = this.set("factories", value.asInstanceOf[js.Any])
+    def setInjector(value: NodeInjectorDebug): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInjector(value: NodeInjectorDebug): Self = this.set("injector", value.asInstanceOf[js.Any])
+    def setInstances(value: js.Array[_]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstancesVarargs(value: js.Any*): Self = this.set("instances", js.Array(value :_*))
+    def setInstancesVarargs(value: js.Any*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
     @scala.inline
-    def setInstances(value: js.Array[_]): Self = this.set("instances", value.asInstanceOf[js.Any])
+    def setNative(value: Node): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNative(value: Node): Self = this.set("native", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHtmlNull: Self = this.set("html", null)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

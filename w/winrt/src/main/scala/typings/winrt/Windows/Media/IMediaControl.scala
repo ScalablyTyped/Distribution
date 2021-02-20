@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Media
 
 import typings.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMediaControl extends js.Object {
+trait IMediaControl extends StObject {
   
   var albumArt: Uri = js.native
   
@@ -69,69 +70,57 @@ object IMediaControl {
   }
   
   @scala.inline
-  implicit class IMediaControlOps[Self <: IMediaControl] (val x: Self) extends AnyVal {
+  implicit class IMediaControlMutableBuilder[Self <: IMediaControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlbumArt(value: Uri): Self = StObject.set(x, "albumArt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtistName(value: String): Self = StObject.set(x, "artistName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsPlaying(value: Boolean): Self = StObject.set(x, "isPlaying", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlbumArt(value: Uri): Self = this.set("albumArt", value.asInstanceOf[js.Any])
+    def setOnchanneldownpressed(value: js.Any): Self = StObject.set(x, "onchanneldownpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtistName(value: String): Self = this.set("artistName", value.asInstanceOf[js.Any])
+    def setOnchanneluppressed(value: js.Any): Self = StObject.set(x, "onchanneluppressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPlaying(value: Boolean): Self = this.set("isPlaying", value.asInstanceOf[js.Any])
+    def setOnfastforwardpressed(value: js.Any): Self = StObject.set(x, "onfastforwardpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnchanneldownpressed(value: js.Any): Self = this.set("onchanneldownpressed", value.asInstanceOf[js.Any])
+    def setOnnexttrackpressed(value: js.Any): Self = StObject.set(x, "onnexttrackpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnchanneluppressed(value: js.Any): Self = this.set("onchanneluppressed", value.asInstanceOf[js.Any])
+    def setOnpausepressed(value: js.Any): Self = StObject.set(x, "onpausepressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnfastforwardpressed(value: js.Any): Self = this.set("onfastforwardpressed", value.asInstanceOf[js.Any])
+    def setOnplaypausetogglepressed(value: js.Any): Self = StObject.set(x, "onplaypausetogglepressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnnexttrackpressed(value: js.Any): Self = this.set("onnexttrackpressed", value.asInstanceOf[js.Any])
+    def setOnplaypressed(value: js.Any): Self = StObject.set(x, "onplaypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnpausepressed(value: js.Any): Self = this.set("onpausepressed", value.asInstanceOf[js.Any])
+    def setOnprevioustrackpressed(value: js.Any): Self = StObject.set(x, "onprevioustrackpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnplaypausetogglepressed(value: js.Any): Self = this.set("onplaypausetogglepressed", value.asInstanceOf[js.Any])
+    def setOnrecordpressed(value: js.Any): Self = StObject.set(x, "onrecordpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnplaypressed(value: js.Any): Self = this.set("onplaypressed", value.asInstanceOf[js.Any])
+    def setOnrewindpressed(value: js.Any): Self = StObject.set(x, "onrewindpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnprevioustrackpressed(value: js.Any): Self = this.set("onprevioustrackpressed", value.asInstanceOf[js.Any])
+    def setOnsoundlevelchanged(value: js.Any): Self = StObject.set(x, "onsoundlevelchanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnrecordpressed(value: js.Any): Self = this.set("onrecordpressed", value.asInstanceOf[js.Any])
+    def setOnstoppressed(value: js.Any): Self = StObject.set(x, "onstoppressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnrewindpressed(value: js.Any): Self = this.set("onrewindpressed", value.asInstanceOf[js.Any])
+    def setSoundLevel(value: SoundLevel): Self = StObject.set(x, "soundLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnsoundlevelchanged(value: js.Any): Self = this.set("onsoundlevelchanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnstoppressed(value: js.Any): Self = this.set("onstoppressed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoundLevel(value: SoundLevel): Self = this.set("soundLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrackName(value: String): Self = this.set("trackName", value.asInstanceOf[js.Any])
+    def setTrackName(value: String): Self = StObject.set(x, "trackName", value.asInstanceOf[js.Any])
   }
 }

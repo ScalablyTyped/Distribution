@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,21 +58,9 @@ object BootstrapClientTreeView {
   }
   
   @scala.inline
-  implicit class BootstrapClientTreeViewOps[Self <: BootstrapClientTreeView] (val x: Self) extends AnyVal {
+  implicit class BootstrapClientTreeViewMutableBuilder[Self <: BootstrapClientTreeView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSetSelectedNode(value: BootstrapClientTreeViewNode => Unit): Self = this.set("SetSelectedNode", js.Any.fromFunction1(value))
+    def setSetSelectedNode(value: BootstrapClientTreeViewNode => Unit): Self = StObject.set(x, "SetSelectedNode", js.Any.fromFunction1(value))
   }
 }

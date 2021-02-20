@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateNotificationSubscriptionRequest extends js.Object {
+trait CreateNotificationSubscriptionRequest extends StObject {
   
   /**
     * The endpoint to receive the notifications. If the protocol is HTTPS, the endpoint is a URL that begins with https.
@@ -41,30 +42,18 @@ object CreateNotificationSubscriptionRequest {
   }
   
   @scala.inline
-  implicit class CreateNotificationSubscriptionRequestOps[Self <: CreateNotificationSubscriptionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateNotificationSubscriptionRequestMutableBuilder[Self <: CreateNotificationSubscriptionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: SubscriptionEndPointType): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProtocol(value: SubscriptionProtocolType): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpoint(value: SubscriptionEndPointType): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrganizationId(value: IdType): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProtocol(value: SubscriptionProtocolType): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscriptionType(value: SubscriptionType): Self = this.set("SubscriptionType", value.asInstanceOf[js.Any])
+    def setSubscriptionType(value: SubscriptionType): Self = StObject.set(x, "SubscriptionType", value.asInstanceOf[js.Any])
   }
 }

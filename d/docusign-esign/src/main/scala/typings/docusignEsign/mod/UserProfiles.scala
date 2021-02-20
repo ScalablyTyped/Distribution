@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserProfiles extends js.Object {
+trait UserProfiles extends StObject {
   
   /**
     * The user's address.
@@ -88,99 +89,87 @@ object UserProfiles {
   }
   
   @scala.inline
-  implicit class UserProfilesOps[Self <: UserProfiles] (val x: Self) extends AnyVal {
+  implicit class UserProfilesMutableBuilder[Self <: UserProfiles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddress(value: /* Contains address information. */ AddressInformation): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
-    
-    @scala.inline
-    def setAuthenticationMethodsVarargs(
-      value: (/* Contains information about the method used for authentication. */ AuthenticationMethod)*
-    ): Self = this.set("authenticationMethods", js.Array(value :_*))
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
     def setAuthenticationMethods(
       value: js.Array[
           /* Contains information about the method used for authentication. */ AuthenticationMethod
         ]
-    ): Self = this.set("authenticationMethods", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "authenticationMethods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthenticationMethods: Self = this.set("authenticationMethods", js.undefined)
+    def setAuthenticationMethodsUndefined: Self = StObject.set(x, "authenticationMethods", js.undefined)
     
     @scala.inline
-    def setCompanyName(value: String): Self = this.set("companyName", value.asInstanceOf[js.Any])
+    def setAuthenticationMethodsVarargs(
+      value: (/* Contains information about the method used for authentication. */ AuthenticationMethod)*
+    ): Self = StObject.set(x, "authenticationMethods", js.Array(value :_*))
     
     @scala.inline
-    def deleteCompanyName: Self = this.set("companyName", js.undefined)
+    def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOrganizationInfo(value: String): Self = this.set("displayOrganizationInfo", value.asInstanceOf[js.Any])
+    def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
     
     @scala.inline
-    def deleteDisplayOrganizationInfo: Self = this.set("displayOrganizationInfo", js.undefined)
+    def setDisplayOrganizationInfo(value: String): Self = StObject.set(x, "displayOrganizationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayPersonalInfo(value: String): Self = this.set("displayPersonalInfo", value.asInstanceOf[js.Any])
+    def setDisplayOrganizationInfoUndefined: Self = StObject.set(x, "displayOrganizationInfo", js.undefined)
     
     @scala.inline
-    def deleteDisplayPersonalInfo: Self = this.set("displayPersonalInfo", js.undefined)
+    def setDisplayPersonalInfo(value: String): Self = StObject.set(x, "displayPersonalInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayProfile(value: String): Self = this.set("displayProfile", value.asInstanceOf[js.Any])
+    def setDisplayPersonalInfoUndefined: Self = StObject.set(x, "displayPersonalInfo", js.undefined)
     
     @scala.inline
-    def deleteDisplayProfile: Self = this.set("displayProfile", js.undefined)
+    def setDisplayProfile(value: String): Self = StObject.set(x, "displayProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayUsageHistory(value: String): Self = this.set("displayUsageHistory", value.asInstanceOf[js.Any])
+    def setDisplayProfileUndefined: Self = StObject.set(x, "displayProfile", js.undefined)
     
     @scala.inline
-    def deleteDisplayUsageHistory: Self = this.set("displayUsageHistory", js.undefined)
+    def setDisplayUsageHistory(value: String): Self = StObject.set(x, "displayUsageHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileImageUri(value: String): Self = this.set("profileImageUri", value.asInstanceOf[js.Any])
+    def setDisplayUsageHistoryUndefined: Self = StObject.set(x, "displayUsageHistory", js.undefined)
     
     @scala.inline
-    def deleteProfileImageUri: Self = this.set("profileImageUri", js.undefined)
+    def setProfileImageUri(value: String): Self = StObject.set(x, "profileImageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setProfileImageUriUndefined: Self = StObject.set(x, "profileImageUri", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsageHistory(value: UsageHistory): Self = this.set("usageHistory", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteUsageHistory: Self = this.set("usageHistory", js.undefined)
+    def setUsageHistory(value: UsageHistory): Self = StObject.set(x, "usageHistory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDetails(value: UserInformation): Self = this.set("userDetails", value.asInstanceOf[js.Any])
+    def setUsageHistoryUndefined: Self = StObject.set(x, "usageHistory", js.undefined)
     
     @scala.inline
-    def deleteUserDetails: Self = this.set("userDetails", js.undefined)
+    def setUserDetails(value: UserInformation): Self = StObject.set(x, "userDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserProfileLastModifiedDate(value: String): Self = this.set("userProfileLastModifiedDate", value.asInstanceOf[js.Any])
+    def setUserDetailsUndefined: Self = StObject.set(x, "userDetails", js.undefined)
     
     @scala.inline
-    def deleteUserProfileLastModifiedDate: Self = this.set("userProfileLastModifiedDate", js.undefined)
+    def setUserProfileLastModifiedDate(value: String): Self = StObject.set(x, "userProfileLastModifiedDate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUserProfileLastModifiedDateUndefined: Self = StObject.set(x, "userProfileLastModifiedDate", js.undefined)
   }
 }

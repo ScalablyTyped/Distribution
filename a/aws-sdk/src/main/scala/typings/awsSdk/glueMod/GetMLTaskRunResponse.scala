@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetMLTaskRunResponse extends js.Object {
+trait GetMLTaskRunResponse extends StObject {
   
   /**
     * The date and time when this task run was completed.
@@ -66,78 +67,66 @@ object GetMLTaskRunResponse {
   }
   
   @scala.inline
-  implicit class GetMLTaskRunResponseOps[Self <: GetMLTaskRunResponse] (val x: Self) extends AnyVal {
+  implicit class GetMLTaskRunResponseMutableBuilder[Self <: GetMLTaskRunResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletedOn(value: Timestamp): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorString(value: GenericString): Self = StObject.set(x, "ErrorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedOn(value: Timestamp): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    def setErrorStringUndefined: Self = StObject.set(x, "ErrorString", js.undefined)
     
     @scala.inline
-    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    def setExecutionTime(value: ExecutionTime): Self = StObject.set(x, "ExecutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorString(value: GenericString): Self = this.set("ErrorString", value.asInstanceOf[js.Any])
+    def setExecutionTimeUndefined: Self = StObject.set(x, "ExecutionTime", js.undefined)
     
     @scala.inline
-    def deleteErrorString: Self = this.set("ErrorString", js.undefined)
+    def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionTime(value: ExecutionTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
     @scala.inline
-    def deleteExecutionTime: Self = this.set("ExecutionTime", js.undefined)
+    def setLogGroupName(value: GenericString): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedOn(value: Timestamp): Self = this.set("LastModifiedOn", value.asInstanceOf[js.Any])
+    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedOn: Self = this.set("LastModifiedOn", js.undefined)
+    def setProperties(value: TaskRunProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: GenericString): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
     @scala.inline
-    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    def setStartedOn(value: Timestamp): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: TaskRunProperties): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("Properties", js.undefined)
+    def setStatus(value: TaskStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedOn(value: Timestamp): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
+    def setTaskRunId(value: HashString): Self = StObject.set(x, "TaskRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: TaskStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTaskRunIdUndefined: Self = StObject.set(x, "TaskRunId", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskRunId(value: HashString): Self = this.set("TaskRunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskRunId: Self = this.set("TaskRunId", js.undefined)
-    
-    @scala.inline
-    def setTransformId(value: HashString): Self = this.set("TransformId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformId: Self = this.set("TransformId", js.undefined)
+    def setTransformIdUndefined: Self = StObject.set(x, "TransformId", js.undefined)
   }
 }

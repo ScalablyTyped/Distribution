@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Networking.Proximity
 
 import typings.winrtUwp.Windows.Networking.HostName
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information that identifies a peer. */
 @js.native
-trait PeerInformation extends js.Object {
+trait PeerInformation extends StObject {
   
   /** Gets the device data included during device discovery. */
   var discoveryData: IBuffer = js.native
@@ -34,33 +35,21 @@ object PeerInformation {
   }
   
   @scala.inline
-  implicit class PeerInformationOps[Self <: PeerInformation] (val x: Self) extends AnyVal {
+  implicit class PeerInformationMutableBuilder[Self <: PeerInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscoveryData(value: IBuffer): Self = StObject.set(x, "discoveryData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostName(value: HostName): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiscoveryData(value: IBuffer): Self = this.set("discoveryData", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHostName(value: HostName): Self = this.set("hostName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

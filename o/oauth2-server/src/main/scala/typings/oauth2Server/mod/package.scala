@@ -1,5 +1,6 @@
 package typings.oauth2Server
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,6 +23,23 @@ package object mod {
     - js.UndefOr[scala.Nothing]
   */
   type Falsey = js.UndefOr[typings.oauth2Server.mod._Falsey | scala.Null]
+  
+  /* static member */
+  @scala.inline
+  def OAuth2Server: org.scalablytyped.runtime.Instantiable1[
+    /* options */ typings.oauth2Server.mod.ServerOptions, 
+    typings.oauth2Server.mod.OAuth2Server
+  ] = typings.oauth2Server.mod.^.asInstanceOf[js.Dynamic].selectDynamic("OAuth2Server").asInstanceOf[org.scalablytyped.runtime.Instantiable1[
+    /* options */ typings.oauth2Server.mod.ServerOptions, 
+    typings.oauth2Server.mod.OAuth2Server
+  ]]
+  @scala.inline
+  def OAuth2Server_=(
+    x: org.scalablytyped.runtime.Instantiable1[
+      /* options */ typings.oauth2Server.mod.ServerOptions, 
+      typings.oauth2Server.mod.OAuth2Server
+    ]
+  ): scala.Unit = typings.oauth2Server.mod.^.asInstanceOf[js.Dynamic].updateDynamic("OAuth2Server")(x.asInstanceOf[js.Any])
   
   /**
     * An interface representing the user.

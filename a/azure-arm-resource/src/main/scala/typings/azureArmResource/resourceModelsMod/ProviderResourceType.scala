@@ -1,12 +1,13 @@
 package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProviderResourceType extends js.Object {
+trait ProviderResourceType extends StObject {
   
   /**
     * The aliases that are supported by this resource type.
@@ -42,57 +43,45 @@ object ProviderResourceType {
   }
   
   @scala.inline
-  implicit class ProviderResourceTypeOps[Self <: ProviderResourceType] (val x: Self) extends AnyVal {
+  implicit class ProviderResourceTypeMutableBuilder[Self <: ProviderResourceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[AliasType]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: AliasType*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
     @scala.inline
-    def setAliasesVarargs(value: AliasType*): Self = this.set("aliases", js.Array(value :_*))
+    def setApiVersions(value: js.Array[String]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Array[AliasType]): Self = this.set("aliases", value.asInstanceOf[js.Any])
+    def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("aliases", js.undefined)
+    def setApiVersionsVarargs(value: String*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
     
     @scala.inline
-    def setApiVersionsVarargs(value: String*): Self = this.set("apiVersions", js.Array(value :_*))
+    def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiVersions(value: js.Array[String]): Self = this.set("apiVersions", value.asInstanceOf[js.Any])
+    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
     @scala.inline
-    def deleteApiVersions: Self = this.set("apiVersions", js.undefined)
+    def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
     @scala.inline
-    def setLocationsVarargs(value: String*): Self = this.set("locations", js.Array(value :_*))
+    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocations(value: js.Array[String]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteLocations: Self = this.set("locations", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

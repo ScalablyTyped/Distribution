@@ -1,13 +1,14 @@
 package typings.cordovaPluginMediaCapture
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates properties of a media capture file. */
 @js.native
-trait MediaFile extends js.Object {
+trait MediaFile extends StObject {
   
   /** The full path of the file, including the name. */
   var fullPath: String = js.native

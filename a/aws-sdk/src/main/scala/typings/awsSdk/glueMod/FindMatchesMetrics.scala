@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindMatchesMetrics extends js.Object {
+trait FindMatchesMetrics extends StObject {
   
   /**
     * The area under the precision/recall curve (AUPRC) is a single number measuring the overall quality of the transform, that is independent of the choice made for precision vs. recall. Higher values indicate that you have a more attractive precision vs. recall tradeoff. For more information, see Precision and recall in Wikipedia.
@@ -41,48 +42,36 @@ object FindMatchesMetrics {
   }
   
   @scala.inline
-  implicit class FindMatchesMetricsOps[Self <: FindMatchesMetrics] (val x: Self) extends AnyVal {
+  implicit class FindMatchesMetricsMutableBuilder[Self <: FindMatchesMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = StObject.set(x, "AreaUnderPRCurve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaUnderPRCurveUndefined: Self = StObject.set(x, "AreaUnderPRCurve", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfusionMatrix(value: ConfusionMatrix): Self = StObject.set(x, "ConfusionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = this.set("AreaUnderPRCurve", value.asInstanceOf[js.Any])
+    def setConfusionMatrixUndefined: Self = StObject.set(x, "ConfusionMatrix", js.undefined)
     
     @scala.inline
-    def deleteAreaUnderPRCurve: Self = this.set("AreaUnderPRCurve", js.undefined)
+    def setF1(value: GenericBoundedDouble): Self = StObject.set(x, "F1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfusionMatrix(value: ConfusionMatrix): Self = this.set("ConfusionMatrix", value.asInstanceOf[js.Any])
+    def setF1Undefined: Self = StObject.set(x, "F1", js.undefined)
     
     @scala.inline
-    def deleteConfusionMatrix: Self = this.set("ConfusionMatrix", js.undefined)
+    def setPrecision(value: GenericBoundedDouble): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF1(value: GenericBoundedDouble): Self = this.set("F1", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "Precision", js.undefined)
     
     @scala.inline
-    def deleteF1: Self = this.set("F1", js.undefined)
+    def setRecall(value: GenericBoundedDouble): Self = StObject.set(x, "Recall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: GenericBoundedDouble): Self = this.set("Precision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrecision: Self = this.set("Precision", js.undefined)
-    
-    @scala.inline
-    def setRecall(value: GenericBoundedDouble): Self = this.set("Recall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecall: Self = this.set("Recall", js.undefined)
+    def setRecallUndefined: Self = StObject.set(x, "Recall", js.undefined)
   }
 }

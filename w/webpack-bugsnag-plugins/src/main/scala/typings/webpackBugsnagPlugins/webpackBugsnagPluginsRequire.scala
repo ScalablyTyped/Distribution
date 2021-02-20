@@ -1,5 +1,6 @@
 package typings.webpackBugsnagPlugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("webpack-bugsnag-plugins", JSImport.Namespace)
 @js.native
-object webpackBugsnagPluginsRequire extends js.Object
+object webpackBugsnagPluginsRequire extends StObject

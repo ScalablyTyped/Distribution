@@ -1,11 +1,12 @@
 package typings.awsSdk.servicediscoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NamespaceProperties extends js.Object {
+trait NamespaceProperties extends StObject {
   
   /**
     * A complex type that contains the ID for the Route 53 hosted zone that AWS Cloud Map creates when you create a namespace.
@@ -26,30 +27,18 @@ object NamespaceProperties {
   }
   
   @scala.inline
-  implicit class NamespacePropertiesOps[Self <: NamespaceProperties] (val x: Self) extends AnyVal {
+  implicit class NamespacePropertiesMutableBuilder[Self <: NamespaceProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsProperties(value: DnsProperties): Self = StObject.set(x, "DnsProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsPropertiesUndefined: Self = StObject.set(x, "DnsProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpProperties(value: HttpProperties): Self = StObject.set(x, "HttpProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsProperties(value: DnsProperties): Self = this.set("DnsProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDnsProperties: Self = this.set("DnsProperties", js.undefined)
-    
-    @scala.inline
-    def setHttpProperties(value: HttpProperties): Self = this.set("HttpProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpProperties: Self = this.set("HttpProperties", js.undefined)
+    def setHttpPropertiesUndefined: Self = StObject.set(x, "HttpProperties", js.undefined)
   }
 }

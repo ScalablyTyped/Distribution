@@ -1,11 +1,12 @@
 package typings.procfsStats.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Io extends js.Object {
+trait Io extends StObject {
   
   var cancelled_write_bytes: String = js.native
   
@@ -38,39 +39,27 @@ object Io {
   }
   
   @scala.inline
-  implicit class IoOps[Self <: Io] (val x: Self) extends AnyVal {
+  implicit class IoMutableBuilder[Self <: Io] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelled_write_bytes(value: String): Self = StObject.set(x, "cancelled_write_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRchar(value: String): Self = StObject.set(x, "rchar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRead_bytes(value: String): Self = StObject.set(x, "read_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelled_write_bytes(value: String): Self = this.set("cancelled_write_bytes", value.asInstanceOf[js.Any])
+    def setSyscr(value: String): Self = StObject.set(x, "syscr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRchar(value: String): Self = this.set("rchar", value.asInstanceOf[js.Any])
+    def setSyscw(value: String): Self = StObject.set(x, "syscw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead_bytes(value: String): Self = this.set("read_bytes", value.asInstanceOf[js.Any])
+    def setWchar(value: String): Self = StObject.set(x, "wchar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyscr(value: String): Self = this.set("syscr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSyscw(value: String): Self = this.set("syscw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWchar(value: String): Self = this.set("wchar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrite_bytes(value: String): Self = this.set("write_bytes", value.asInstanceOf[js.Any])
+    def setWrite_bytes(value: String): Self = StObject.set(x, "write_bytes", value.asInstanceOf[js.Any])
   }
 }

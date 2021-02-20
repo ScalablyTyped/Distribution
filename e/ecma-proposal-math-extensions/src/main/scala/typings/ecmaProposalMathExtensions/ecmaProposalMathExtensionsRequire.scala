@@ -1,5 +1,6 @@
 package typings.ecmaProposalMathExtensions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("ecma-proposal-math-extensions", JSImport.Namespace)
 @js.native
-object ecmaProposalMathExtensionsRequire extends js.Object
+object ecmaProposalMathExtensionsRequire extends StObject

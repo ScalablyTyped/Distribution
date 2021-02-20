@@ -3,12 +3,13 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.FormattingOptions
 import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentOnTypeFormattingParams extends js.Object {
+trait DocumentOnTypeFormattingParams extends StObject {
   
   /**
     * The character that has been typed.
@@ -39,30 +40,18 @@ object DocumentOnTypeFormattingParams {
   }
   
   @scala.inline
-  implicit class DocumentOnTypeFormattingParamsOps[Self <: DocumentOnTypeFormattingParams] (val x: Self) extends AnyVal {
+  implicit class DocumentOnTypeFormattingParamsMutableBuilder[Self <: DocumentOnTypeFormattingParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCh(value: String): Self = this.set("ch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: FormattingOptions): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Position): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextDocument(value: TextDocumentIdentifier): Self = this.set("textDocument", value.asInstanceOf[js.Any])
+    def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }
 }

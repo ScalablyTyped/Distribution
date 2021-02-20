@@ -1,36 +1,32 @@
 package typings.vueRouter.routerMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NavigationFailureType extends js.Object
+sealed trait NavigationFailureType extends StObject
 @JSImport("vue-router/types/router", "NavigationFailureType")
 @js.native
-object NavigationFailureType extends js.Object {
+object NavigationFailureType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[NavigationFailureType with Double] = js.native
   
   @js.native
   sealed trait aborted extends NavigationFailureType
-  /* 4 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
+  /* 4 */ val aborted: typings.vueRouter.routerMod.NavigationFailureType.aborted with Double = js.native
   
   @js.native
   sealed trait cancelled extends NavigationFailureType
-  /* 8 */ @js.native
-  object cancelled extends TopLevel[cancelled with Double]
+  /* 8 */ val cancelled: typings.vueRouter.routerMod.NavigationFailureType.cancelled with Double = js.native
   
   @js.native
   sealed trait duplicated extends NavigationFailureType
-  /* 16 */ @js.native
-  object duplicated extends TopLevel[duplicated with Double]
+  /* 16 */ val duplicated: typings.vueRouter.routerMod.NavigationFailureType.duplicated with Double = js.native
   
   @js.native
   sealed trait redirected extends NavigationFailureType
-  /* 2 */ @js.native
-  object redirected extends TopLevel[redirected with Double]
+  /* 2 */ val redirected: typings.vueRouter.routerMod.NavigationFailureType.redirected with Double = js.native
 }

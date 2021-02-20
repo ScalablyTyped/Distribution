@@ -1,5 +1,6 @@
 package typings.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cytoscape.cytoscapeStrings.`bottom-round-rectangle`
   - typings.cytoscape.cytoscapeStrings.`concave-hexagon`
 */
-trait NodeShape extends js.Object
+trait NodeShape extends StObject
 object NodeShape {
   
   @scala.inline

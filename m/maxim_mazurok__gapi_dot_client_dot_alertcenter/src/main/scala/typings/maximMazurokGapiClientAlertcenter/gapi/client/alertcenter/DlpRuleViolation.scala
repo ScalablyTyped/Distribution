@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DlpRuleViolation extends js.Object {
+trait DlpRuleViolation extends StObject {
   
   /**
     * Details about the violated DLP rule. Admins can use the predefined detectors provided by Google Cloud DLP https://cloud.google.com/dlp/ when setting up a DLP rule. Matched Cloud DLP
@@ -22,24 +23,12 @@ object DlpRuleViolation {
   }
   
   @scala.inline
-  implicit class DlpRuleViolationOps[Self <: DlpRuleViolation] (val x: Self) extends AnyVal {
+  implicit class DlpRuleViolationMutableBuilder[Self <: DlpRuleViolation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRuleViolationInfo(value: RuleViolationInfo): Self = StObject.set(x, "ruleViolationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRuleViolationInfo(value: RuleViolationInfo): Self = this.set("ruleViolationInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleViolationInfo: Self = this.set("ruleViolationInfo", js.undefined)
+    def setRuleViolationInfoUndefined: Self = StObject.set(x, "ruleViolationInfo", js.undefined)
   }
 }

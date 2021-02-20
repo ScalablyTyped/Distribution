@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.single
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,75 +85,63 @@ object SketchProperties {
   }
   
   @scala.inline
-  implicit class SketchPropertiesOps[Self <: SketchProperties] (val x: Self) extends AnyVal {
+  implicit class SketchPropertiesMutableBuilder[Self <: SketchProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableCreateTools(value: js.Array[String]): Self = StObject.set(x, "availableCreateTools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableCreateToolsUndefined: Self = StObject.set(x, "availableCreateTools", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailableCreateToolsVarargs(value: String*): Self = StObject.set(x, "availableCreateTools", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableCreateToolsVarargs(value: String*): Self = this.set("availableCreateTools", js.Array(value :_*))
+    def setCreationMode(value: single | continuous | update): Self = StObject.set(x, "creationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailableCreateTools(value: js.Array[String]): Self = this.set("availableCreateTools", value.asInstanceOf[js.Any])
+    def setCreationModeUndefined: Self = StObject.set(x, "creationMode", js.undefined)
     
     @scala.inline
-    def deleteAvailableCreateTools: Self = this.set("availableCreateTools", js.undefined)
+    def setDefaultCreateOptions(value: SketchDefaultCreateOptions): Self = StObject.set(x, "defaultCreateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationMode(value: single | continuous | update): Self = this.set("creationMode", value.asInstanceOf[js.Any])
+    def setDefaultCreateOptionsUndefined: Self = StObject.set(x, "defaultCreateOptions", js.undefined)
     
     @scala.inline
-    def deleteCreationMode: Self = this.set("creationMode", js.undefined)
+    def setDefaultUpdateOptions(value: SketchDefaultUpdateOptions): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCreateOptions(value: SketchDefaultCreateOptions): Self = this.set("defaultCreateOptions", value.asInstanceOf[js.Any])
+    def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
     
     @scala.inline
-    def deleteDefaultCreateOptions: Self = this.set("defaultCreateOptions", js.undefined)
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultUpdateOptions(value: SketchDefaultUpdateOptions): Self = this.set("defaultUpdateOptions", value.asInstanceOf[js.Any])
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def deleteDefaultUpdateOptions: Self = this.set("defaultUpdateOptions", js.undefined)
+    def setLayer(value: GraphicsLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setLayout(value: vertical | horizontal): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: GraphicsLayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: vertical | horizontal): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setViewModel(value: SketchViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setViewModel(value: SketchViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

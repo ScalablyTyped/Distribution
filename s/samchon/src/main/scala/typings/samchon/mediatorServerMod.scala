@@ -6,17 +6,36 @@ import typings.samchon.iserverMod.IServer
 import typings.samchon.mediatorSystemMod.MediatorSystem
 import typings.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediator
 import typings.samchon.parallelSystemMod.ParallelSystem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/parallel/derived/MediatorServer", JSImport.Namespace)
-@js.native
-object mediatorServerMod extends js.Object {
+object mediatorServerMod {
   
+  @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorDedicatedWorkerServer")
   @js.native
-  class MediatorDedicatedWorkerServer () extends MediatorServer
+  class MediatorDedicatedWorkerServer protected () extends MediatorServer {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: ParallelSystemArrayMediator[ParallelSystem], port: Double) = this()
+  }
   
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.samchon.iprotocolMod.IProtocol because Already inherited
+  - typings.samchon.slaveSystemMod.SlaveSystem because Already inherited
+  - typings.samchon.slaveServerMod.ISlaveServer because var conflicts: _Complete_process, communicator_. Inlined  */ @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorServer")
   @js.native
   class MediatorServer protected ()
     extends MediatorSystem
@@ -62,9 +81,41 @@ object mediatorServerMod extends js.Object {
     var server_base_ : js.Any = js.native
   }
   
+  @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorSharedWorkerServer")
   @js.native
-  class MediatorSharedWorkerServer () extends MediatorServer
+  class MediatorSharedWorkerServer protected () extends MediatorServer {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: ParallelSystemArrayMediator[ParallelSystem], port: Double) = this()
+  }
   
+  @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorWebServer")
   @js.native
-  class MediatorWebServer () extends MediatorServer
+  class MediatorWebServer protected () extends MediatorServer {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: ParallelSystemArrayMediator[ParallelSystem], port: Double) = this()
+  }
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-support-LayerPerformanceInfo.html)
   */
 @js.native
-trait LayerPerformanceInfo extends js.Object {
+trait LayerPerformanceInfo extends StObject {
   
   /**
     * The number of features displayed in the SceneView.
@@ -62,33 +63,21 @@ object LayerPerformanceInfo {
   }
   
   @scala.inline
-  implicit class LayerPerformanceInfoOps[Self <: LayerPerformanceInfo] (val x: Self) extends AnyVal {
+  implicit class LayerPerformanceInfoMutableBuilder[Self <: LayerPerformanceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayedNumberOfFeatures(value: Double): Self = StObject.set(x, "displayedNumberOfFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumNumberOfFeatures(value: Double): Self = StObject.set(x, "maximumNumberOfFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayedNumberOfFeatures(value: Double): Self = this.set("displayedNumberOfFeatures", value.asInstanceOf[js.Any])
+    def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: Layer): Self = this.set("layer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaximumNumberOfFeatures(value: Double): Self = this.set("maximumNumberOfFeatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMemory(value: Double): Self = this.set("memory", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalNumberOfFeatures(value: Double): Self = this.set("totalNumberOfFeatures", value.asInstanceOf[js.Any])
+    def setTotalNumberOfFeatures(value: Double): Self = StObject.set(x, "totalNumberOfFeatures", value.asInstanceOf[js.Any])
   }
 }

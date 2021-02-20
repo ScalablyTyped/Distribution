@@ -2,6 +2,7 @@ package typings.overlayscrollbars.anon
 
 import typings.overlayscrollbars.mod.Position
 import typings.overlayscrollbars.mod._Coordinates
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,30 +23,18 @@ object L {
   }
   
   @scala.inline
-  implicit class LOps[Self <: L] (val x: Self) extends AnyVal {
+  implicit class LMutableBuilder[Self <: L] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setL(value: Position): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setT(value: Position): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: Position): Self = this.set("l", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteL: Self = this.set("l", js.undefined)
-    
-    @scala.inline
-    def setT(value: Position): Self = this.set("t", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteT: Self = this.set("t", js.undefined)
+    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

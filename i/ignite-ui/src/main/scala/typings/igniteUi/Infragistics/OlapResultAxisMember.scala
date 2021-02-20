@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlapResultAxisMember extends js.Object {
+trait OlapResultAxisMember extends StObject {
   
   /**
     * Returns the caption of the axis member used when displaying the name of the axis member to the user.
@@ -97,48 +98,36 @@ object OlapResultAxisMember {
   }
   
   @scala.inline
-  implicit class OlapResultAxisMemberOps[Self <: OlapResultAxisMember] (val x: Self) extends AnyVal {
+  implicit class OlapResultAxisMemberMutableBuilder[Self <: OlapResultAxisMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildCount(value: js.Object => Double): Self = StObject.set(x, "childCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayInfo(value: js.Object => Double): Self = StObject.set(x, "displayInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCaption(value: js.Object => String): Self = this.set("caption", js.Any.fromFunction1(value))
+    def setDrilledDown(value: js.Object => Boolean): Self = StObject.set(x, "drilledDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildCount(value: js.Object => Double): Self = this.set("childCount", js.Any.fromFunction1(value))
+    def setHierarchyUniqueName(value: js.Object => String): Self = StObject.set(x, "hierarchyUniqueName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplayInfo(value: js.Object => Double): Self = this.set("displayInfo", js.Any.fromFunction1(value))
+    def setLevelNumber(value: js.Object => Double): Self = StObject.set(x, "levelNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrilledDown(value: js.Object => Boolean): Self = this.set("drilledDown", js.Any.fromFunction1(value))
+    def setLevelUniqueName(value: js.Object => String): Self = StObject.set(x, "levelUniqueName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHierarchyUniqueName(value: js.Object => String): Self = this.set("hierarchyUniqueName", js.Any.fromFunction1(value))
+    def setParentSameAsPrev(value: js.Object => Boolean): Self = StObject.set(x, "parentSameAsPrev", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLevelNumber(value: js.Object => Double): Self = this.set("levelNumber", js.Any.fromFunction1(value))
+    def setProperties(value: js.Object => js.Object): Self = StObject.set(x, "properties", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLevelUniqueName(value: js.Object => String): Self = this.set("levelUniqueName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParentSameAsPrev(value: js.Object => Boolean): Self = this.set("parentSameAsPrev", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setProperties(value: js.Object => js.Object): Self = this.set("properties", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUniqueName(value: js.Object => String): Self = this.set("uniqueName", js.Any.fromFunction1(value))
+    def setUniqueName(value: js.Object => String): Self = StObject.set(x, "uniqueName", js.Any.fromFunction1(value))
   }
 }

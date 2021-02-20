@@ -1,11 +1,12 @@
 package typings.grommet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Strong extends js.Object {
+trait Strong extends StObject {
   
   var medium: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object Strong {
   }
   
   @scala.inline
-  implicit class StrongOps[Self <: Strong] (val x: Self) extends AnyVal {
+  implicit class StrongMutableBuilder[Self <: Strong] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrong(value: Double): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedium(value: Double): Self = this.set("medium", value.asInstanceOf[js.Any])
+    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
     
     @scala.inline
-    def deleteMedium: Self = this.set("medium", js.undefined)
+    def setWeak(value: Double): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrong(value: Double): Self = this.set("strong", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrong: Self = this.set("strong", js.undefined)
-    
-    @scala.inline
-    def setWeak(value: Double): Self = this.set("weak", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeak: Self = this.set("weak", js.undefined)
+    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

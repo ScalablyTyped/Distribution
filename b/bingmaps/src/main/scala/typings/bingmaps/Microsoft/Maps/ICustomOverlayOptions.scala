@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICustomOverlayOptions extends js.Object {
+trait ICustomOverlayOptions extends StObject {
   
   /**
     * Specifies if the custom overlay should be rendered above or below the label layer of the map. When above,
@@ -24,24 +25,12 @@ object ICustomOverlayOptions {
   }
   
   @scala.inline
-  implicit class ICustomOverlayOptionsOps[Self <: ICustomOverlayOptions] (val x: Self) extends AnyVal {
+  implicit class ICustomOverlayOptionsMutableBuilder[Self <: ICustomOverlayOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeneathLabels(value: Boolean): Self = StObject.set(x, "beneathLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBeneathLabels(value: Boolean): Self = this.set("beneathLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeneathLabels: Self = this.set("beneathLabels", js.undefined)
+    def setBeneathLabelsUndefined: Self = StObject.set(x, "beneathLabels", js.undefined)
   }
 }

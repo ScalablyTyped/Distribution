@@ -2,12 +2,13 @@ package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.resizeGroupBaseMod.IResizeGroupState
 import typings.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetInitialResizeGroupState extends js.Object {
+trait GetInitialResizeGroupState extends StObject {
   
   def getInitialResizeGroupState(data: js.Any): IResizeGroupState = js.native
   

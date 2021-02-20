@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,23 +83,29 @@ class AxisDragGizmo protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.AxisDragGizmo")
-@js.native
-object AxisDragGizmo extends js.Object {
+object AxisDragGizmo {
   
   /** @hidden */
+  @JSGlobal("BABYLON.AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(scene: typings.babylonjs.BABYLON.Scene, material: typings.babylonjs.BABYLON.StandardMaterial): typings.babylonjs.BABYLON.TransformNode = js.native
+  @JSGlobal("BABYLON.AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.BABYLON.Scene,
     material: typings.babylonjs.BABYLON.StandardMaterial,
     thickness: js.UndefOr[scala.Nothing],
     isCollider: Boolean
   ): typings.babylonjs.BABYLON.TransformNode = js.native
+  @JSGlobal("BABYLON.AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.BABYLON.Scene,
     material: typings.babylonjs.BABYLON.StandardMaterial,
     thickness: Double
   ): typings.babylonjs.BABYLON.TransformNode = js.native
+  @JSGlobal("BABYLON.AxisDragGizmo._CreateArrow")
+  @js.native
   def _CreateArrow(
     scene: typings.babylonjs.BABYLON.Scene,
     material: typings.babylonjs.BABYLON.StandardMaterial,
@@ -107,5 +114,7 @@ object AxisDragGizmo extends js.Object {
   ): typings.babylonjs.BABYLON.TransformNode = js.native
   
   /** @hidden */
+  @JSGlobal("BABYLON.AxisDragGizmo._CreateArrowInstance")
+  @js.native
   def _CreateArrowInstance(scene: typings.babylonjs.BABYLON.Scene, arrow: typings.babylonjs.BABYLON.TransformNode): typings.babylonjs.BABYLON.TransformNode = js.native
 }

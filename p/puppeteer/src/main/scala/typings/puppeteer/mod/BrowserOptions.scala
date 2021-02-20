@@ -1,12 +1,13 @@
 package typings.puppeteer.mod
 
 import typings.puppeteer.anon.HasTouch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserOptions extends js.Object {
+trait BrowserOptions extends StObject {
   
   /**
     * Sets a consistent viewport for each page. Defaults to an 800x600 viewport. null disables the default viewport.
@@ -34,39 +35,27 @@ object BrowserOptions {
   }
   
   @scala.inline
-  implicit class BrowserOptionsOps[Self <: BrowserOptions] (val x: Self) extends AnyVal {
+  implicit class BrowserOptionsMutableBuilder[Self <: BrowserOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultViewport(value: HasTouch): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultViewportNull: Self = StObject.set(x, "defaultViewport", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultViewportUndefined: Self = StObject.set(x, "defaultViewport", js.undefined)
     
     @scala.inline
-    def setDefaultViewport(value: HasTouch): Self = this.set("defaultViewport", value.asInstanceOf[js.Any])
+    def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultViewport: Self = this.set("defaultViewport", js.undefined)
+    def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
     
     @scala.inline
-    def setDefaultViewportNull: Self = this.set("defaultViewport", null)
+    def setSlowMo(value: Double): Self = StObject.set(x, "slowMo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreHTTPSErrors(value: Boolean): Self = this.set("ignoreHTTPSErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIgnoreHTTPSErrors: Self = this.set("ignoreHTTPSErrors", js.undefined)
-    
-    @scala.inline
-    def setSlowMo(value: Double): Self = this.set("slowMo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSlowMo: Self = this.set("slowMo", js.undefined)
+    def setSlowMoUndefined: Self = StObject.set(x, "slowMo", js.undefined)
   }
 }

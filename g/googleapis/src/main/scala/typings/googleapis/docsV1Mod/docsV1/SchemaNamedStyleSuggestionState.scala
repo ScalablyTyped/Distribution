@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A suggestion state of a NamedStyle message.
   */
 @js.native
-trait SchemaNamedStyleSuggestionState extends js.Object {
+trait SchemaNamedStyleSuggestionState extends StObject {
   
   /**
     * The named style type that this suggestion state corresponds to.  This
@@ -38,36 +39,24 @@ object SchemaNamedStyleSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaNamedStyleSuggestionStateOps[Self <: SchemaNamedStyleSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaNamedStyleSuggestionStateMutableBuilder[Self <: SchemaNamedStyleSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParagraphStyleSuggestionState(value: SchemaParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedStyleType(value: String): Self = this.set("namedStyleType", value.asInstanceOf[js.Any])
+    def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
     
     @scala.inline
-    def deleteNamedStyleType: Self = this.set("namedStyleType", js.undefined)
+    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParagraphStyleSuggestionState(value: SchemaParagraphStyleSuggestionState): Self = this.set("paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParagraphStyleSuggestionState: Self = this.set("paragraphStyleSuggestionState", js.undefined)
-    
-    @scala.inline
-    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = this.set("textStyleSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyleSuggestionState: Self = this.set("textStyleSuggestionState", js.undefined)
+    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
   }
 }

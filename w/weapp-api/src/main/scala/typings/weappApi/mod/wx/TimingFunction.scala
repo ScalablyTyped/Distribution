@@ -1,5 +1,6 @@
 package typings.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.weappApi.weappApiStrings.`step-start`
   - typings.weappApi.weappApiStrings.`step-end`
 */
-trait TimingFunction extends js.Object
+trait TimingFunction extends StObject
 object TimingFunction {
   
   @scala.inline

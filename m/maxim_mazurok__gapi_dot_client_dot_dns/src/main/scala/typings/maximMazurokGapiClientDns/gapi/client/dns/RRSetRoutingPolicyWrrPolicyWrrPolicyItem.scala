@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDns.gapi.client.dns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RRSetRoutingPolicyWrrPolicyWrrPolicyItem extends js.Object {
+trait RRSetRoutingPolicyWrrPolicyWrrPolicyItem extends StObject {
   
   var kind: js.UndefOr[String] = js.native
   
@@ -29,48 +30,36 @@ object RRSetRoutingPolicyWrrPolicyWrrPolicyItem {
   }
   
   @scala.inline
-  implicit class RRSetRoutingPolicyWrrPolicyWrrPolicyItemOps[Self <: RRSetRoutingPolicyWrrPolicyWrrPolicyItem] (val x: Self) extends AnyVal {
+  implicit class RRSetRoutingPolicyWrrPolicyWrrPolicyItemMutableBuilder[Self <: RRSetRoutingPolicyWrrPolicyWrrPolicyItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRrdatas(value: js.Array[String]): Self = StObject.set(x, "rrdatas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRrdatasUndefined: Self = StObject.set(x, "rrdatas", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRrdatasVarargs(value: String*): Self = StObject.set(x, "rrdatas", js.Array(value :_*))
     
     @scala.inline
-    def setRrdatasVarargs(value: String*): Self = this.set("rrdatas", js.Array(value :_*))
+    def setSignatureRrdatas(value: js.Array[String]): Self = StObject.set(x, "signatureRrdatas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRrdatas(value: js.Array[String]): Self = this.set("rrdatas", value.asInstanceOf[js.Any])
+    def setSignatureRrdatasUndefined: Self = StObject.set(x, "signatureRrdatas", js.undefined)
     
     @scala.inline
-    def deleteRrdatas: Self = this.set("rrdatas", js.undefined)
+    def setSignatureRrdatasVarargs(value: String*): Self = StObject.set(x, "signatureRrdatas", js.Array(value :_*))
     
     @scala.inline
-    def setSignatureRrdatasVarargs(value: String*): Self = this.set("signatureRrdatas", js.Array(value :_*))
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureRrdatas(value: js.Array[String]): Self = this.set("signatureRrdatas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatureRrdatas: Self = this.set("signatureRrdatas", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

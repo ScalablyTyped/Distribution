@@ -2,6 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
   **/
 @js.native
-trait NavBar extends js.Object {
+trait NavBar extends StObject {
   
   //#endregion Events
   //#region Methods

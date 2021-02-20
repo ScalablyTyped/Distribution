@@ -1,38 +1,39 @@
 package typings.pickadate.Pickadate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // KlassOptions shared between date and time pickers
 @js.native
-trait KlassOptions extends js.Object {
+trait KlassOptions extends StObject {
   
-   // default 'picker__input'
+  // default 'picker__input'
   var active: js.UndefOr[String] = js.native
   
-   // default 'picker__wrap'
+  // default 'picker__wrap'
   var box: js.UndefOr[String] = js.native
   
-   // default 'picker__day--today' or 'picker__list-item--now'
+  // default 'picker__day--today' or 'picker__list-item--now'
   // Clear button
   var buttonClear: js.UndefOr[String] = js.native
   
-   // default 'picker__box'
+  // default 'picker__box'
   // Day/Time states
   var disabled: js.UndefOr[String] = js.native
   
-   // default 'picker--opened'
+  // default 'picker--opened'
   var focused: js.UndefOr[String] = js.native
   
-   // default 'picker__holder'
+  // default 'picker__holder'
   // The picker frame, wrapper, and box
   var frame: js.UndefOr[String] = js.native
   
   // default 'picker__day--selected' or 'picker__list-item--selected'
   var highlighted: js.UndefOr[String] = js.native
   
-   // default 'picker--focused'
+  // default 'picker--focused'
   // The picker holder
   var holder: js.UndefOr[String] = js.native
   
@@ -42,17 +43,17 @@ trait KlassOptions extends js.Object {
   // default 'picker__day--highlighted' or 'picker__list-item--highlighted'
   var now: js.UndefOr[String] = js.native
   
-   // default 'picker' or 'picker picker--time'
+  // default 'picker' or 'picker picker--time'
   var opened: js.UndefOr[String] = js.native
   
-   // default 'picker__input--active'
+  // default 'picker__input--active'
   // The root picker and states
   var picker: js.UndefOr[String] = js.native
   
-   // default 'picker__day--disabled' or 'picker__list-item--disabled'
+  // default 'picker__day--disabled' or 'picker__list-item--disabled'
   var selected: js.UndefOr[String] = js.native
   
-   // default 'picker__frame'
+  // default 'picker__frame'
   var wrap: js.UndefOr[String] = js.native
 }
 object KlassOptions {
@@ -64,102 +65,90 @@ object KlassOptions {
   }
   
   @scala.inline
-  implicit class KlassOptionsOps[Self <: KlassOptions] (val x: Self) extends AnyVal {
+  implicit class KlassOptionsMutableBuilder[Self <: KlassOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setButtonClear(value: String): Self = StObject.set(x, "buttonClear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBox(value: String): Self = this.set("box", value.asInstanceOf[js.Any])
+    def setButtonClearUndefined: Self = StObject.set(x, "buttonClear", js.undefined)
     
     @scala.inline
-    def deleteBox: Self = this.set("box", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonClear(value: String): Self = this.set("buttonClear", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteButtonClear: Self = this.set("buttonClear", js.undefined)
+    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setFrame(value: String): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: String): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setHighlighted(value: String): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrame(value: String): Self = this.set("frame", value.asInstanceOf[js.Any])
+    def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
     
     @scala.inline
-    def deleteFrame: Self = this.set("frame", js.undefined)
+    def setHolder(value: String): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlighted(value: String): Self = this.set("highlighted", value.asInstanceOf[js.Any])
+    def setHolderUndefined: Self = StObject.set(x, "holder", js.undefined)
     
     @scala.inline
-    def deleteHighlighted: Self = this.set("highlighted", js.undefined)
+    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHolder(value: String): Self = this.set("holder", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteHolder: Self = this.set("holder", js.undefined)
+    def setNow(value: String): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setOpened(value: String): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNow(value: String): Self = this.set("now", value.asInstanceOf[js.Any])
+    def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
     @scala.inline
-    def deleteNow: Self = this.set("now", js.undefined)
+    def setPicker(value: String): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpened(value: String): Self = this.set("opened", value.asInstanceOf[js.Any])
+    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
     
     @scala.inline
-    def deleteOpened: Self = this.set("opened", js.undefined)
+    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicker(value: String): Self = this.set("picker", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deletePicker: Self = this.set("picker", js.undefined)
+    def setWrap(value: String): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
-    
-    @scala.inline
-    def setWrap(value: String): Self = this.set("wrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrap: Self = this.set("wrap", js.undefined)
+    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

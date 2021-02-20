@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchTeamMembersFilter")
 @js.native
-class SearchTeamMembersFilter () extends js.Object {
+class SearchTeamMembersFilter () extends StObject {
   
   /**
     * When present, filter by team members assigned to the specified locations. When empty, include team members assigned to any location.

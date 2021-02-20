@@ -1,11 +1,12 @@
 package typings.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultsOptions extends js.Object {
+trait ResultsOptions extends StObject {
   
   /** include the breakdown of requests and bytes by mime type */
   var breakDown: js.UndefOr[Boolean] = js.native
@@ -37,60 +38,48 @@ object ResultsOptions {
   }
   
   @scala.inline
-  implicit class ResultsOptionsOps[Self <: ResultsOptions] (val x: Self) extends AnyVal {
+  implicit class ResultsOptionsMutableBuilder[Self <: ResultsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBreakDown(value: Boolean): Self = StObject.set(x, "breakDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBreakDownUndefined: Self = StObject.set(x, "breakDown", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomains(value: Boolean): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakDown(value: Boolean): Self = this.set("breakDown", value.asInstanceOf[js.Any])
+    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
     @scala.inline
-    def deleteBreakDown: Self = this.set("breakDown", js.undefined)
+    def setMedianMetric(value: String): Self = StObject.set(x, "medianMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomains(value: Boolean): Self = this.set("domains", value.asInstanceOf[js.Any])
+    def setMedianMetricUndefined: Self = StObject.set(x, "medianMetric", js.undefined)
     
     @scala.inline
-    def deleteDomains: Self = this.set("domains", js.undefined)
+    def setPageSpeed(value: Boolean): Self = StObject.set(x, "pageSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMedianMetric(value: String): Self = this.set("medianMetric", value.asInstanceOf[js.Any])
+    def setPageSpeedUndefined: Self = StObject.set(x, "pageSpeed", js.undefined)
     
     @scala.inline
-    def deleteMedianMetric: Self = this.set("medianMetric", js.undefined)
+    def setReporter(value: String): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSpeed(value: Boolean): Self = this.set("pageSpeed", value.asInstanceOf[js.Any])
+    def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
     @scala.inline
-    def deletePageSpeed: Self = this.set("pageSpeed", js.undefined)
+    def setRequests(value: Boolean): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReporter(value: String): Self = this.set("reporter", value.asInstanceOf[js.Any])
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
     @scala.inline
-    def deleteReporter: Self = this.set("reporter", js.undefined)
+    def setSpecs(value: String): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequests(value: Boolean): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
-    
-    @scala.inline
-    def setSpecs(value: String): Self = this.set("specs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecs: Self = this.set("specs", js.undefined)
+    def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
   }
 }

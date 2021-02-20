@@ -5,13 +5,14 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTIONS
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.report.Column
 import typings.mangopay2NodejsSdk.mod.report.Filters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.ReportData> */
 @js.native
-trait PartialReportData extends js.Object {
+trait PartialReportData extends StObject {
   
   var CallbackURL: js.UndefOr[String] = js.native
   
@@ -50,105 +51,93 @@ object PartialReportData {
   }
   
   @scala.inline
-  implicit class PartialReportDataOps[Self <: PartialReportData] (val x: Self) extends AnyVal {
+  implicit class PartialReportDataMutableBuilder[Self <: PartialReportData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallbackURL(value: String): Self = StObject.set(x, "CallbackURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackURLUndefined: Self = StObject.set(x, "CallbackURL", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumns(value: js.Array[Column]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackURL(value: String): Self = this.set("CallbackURL", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "Columns", js.undefined)
     
     @scala.inline
-    def deleteCallbackURL: Self = this.set("CallbackURL", js.undefined)
+    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: Column*): Self = this.set("Columns", js.Array(value :_*))
+    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[Column]): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("Columns", js.undefined)
+    def setDownloadFormat(value: CSV): Self = StObject.set(x, "DownloadFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDownloadFormatUndefined: Self = StObject.set(x, "DownloadFormat", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setDownloadURL(value: String): Self = StObject.set(x, "DownloadURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadFormat(value: CSV): Self = this.set("DownloadFormat", value.asInstanceOf[js.Any])
+    def setDownloadURLUndefined: Self = StObject.set(x, "DownloadURL", js.undefined)
     
     @scala.inline
-    def deleteDownloadFormat: Self = this.set("DownloadFormat", js.undefined)
+    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadURL(value: String): Self = this.set("DownloadURL", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteDownloadURL: Self = this.set("DownloadURL", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: Filters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setPreview(value: Boolean): Self = StObject.set(x, "Preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "Preview", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setReportDate(value: Timestamp): Self = StObject.set(x, "ReportDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("Preview", value.asInstanceOf[js.Any])
+    def setReportDateUndefined: Self = StObject.set(x, "ReportDate", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("Preview", js.undefined)
+    def setReportType(value: TRANSACTIONS): Self = StObject.set(x, "ReportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportDate(value: Timestamp): Self = this.set("ReportDate", value.asInstanceOf[js.Any])
+    def setReportTypeUndefined: Self = StObject.set(x, "ReportType", js.undefined)
     
     @scala.inline
-    def deleteReportDate: Self = this.set("ReportDate", js.undefined)
+    def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportType(value: TRANSACTIONS): Self = this.set("ReportType", value.asInstanceOf[js.Any])
+    def setResultCodeUndefined: Self = StObject.set(x, "ResultCode", js.undefined)
     
     @scala.inline
-    def deleteReportType: Self = this.set("ReportType", js.undefined)
+    def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultCode(value: String): Self = this.set("ResultCode", value.asInstanceOf[js.Any])
+    def setResultMessageUndefined: Self = StObject.set(x, "ResultMessage", js.undefined)
     
     @scala.inline
-    def deleteResultCode: Self = this.set("ResultCode", js.undefined)
+    def setSort(value: String): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultMessage(value: String): Self = this.set("ResultMessage", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "Sort", js.undefined)
     
     @scala.inline
-    def deleteResultMessage: Self = this.set("ResultMessage", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: String): Self = this.set("Sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("Sort", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

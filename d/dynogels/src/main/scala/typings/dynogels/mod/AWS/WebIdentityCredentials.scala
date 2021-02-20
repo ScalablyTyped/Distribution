@@ -1,6 +1,7 @@
 package typings.dynogels.mod.AWS
 
 import typings.awsSdk.webIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,6 +26,4 @@ class WebIdentityCredentials ()
   ) = this()
 }
 // Needed to expose interfaces on the class
-@JSImport("dynogels", "AWS.WebIdentityCredentials")
-@js.native
-object WebIdentityCredentials extends js.Object
+object WebIdentityCredentials

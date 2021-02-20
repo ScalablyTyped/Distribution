@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: ListObject is used by the GetLayout method to display the properties of a list object.
   */
 @js.native
-trait IListObject extends js.Object {
+trait IListObject extends StObject {
   
   /**
     * Set of data.
@@ -60,45 +61,33 @@ object IListObject {
   }
   
   @scala.inline
-  implicit class IListObjectOps[Self <: IListObject] (val x: Self) extends AnyVal {
+  implicit class IListObjectMutableBuilder[Self <: IListObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDataPages(value: js.Array[INxDataPage]): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQDataPagesVarargs(value: INxDataPage*): Self = StObject.set(x, "qDataPages", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQDimensionInfo(value: INxDimensionInfo): Self = StObject.set(x, "qDimensionInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDataPagesVarargs(value: INxDataPage*): Self = this.set("qDataPages", js.Array(value :_*))
+    def setQError(value: INxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDataPages(value: js.Array[INxDataPage]): Self = this.set("qDataPages", value.asInstanceOf[js.Any])
+    def setQErrorUndefined: Self = StObject.set(x, "qError", js.undefined)
     
     @scala.inline
-    def setQDimensionInfo(value: INxDimensionInfo): Self = this.set("qDimensionInfo", value.asInstanceOf[js.Any])
+    def setQExpressions(value: js.Array[INxListObjectExpression]): Self = StObject.set(x, "qExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQExpressionsVarargs(value: INxListObjectExpression*): Self = this.set("qExpressions", js.Array(value :_*))
+    def setQExpressionsVarargs(value: INxListObjectExpression*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setQExpressions(value: js.Array[INxListObjectExpression]): Self = this.set("qExpressions", value.asInstanceOf[js.Any])
+    def setQSize(value: ISize): Self = StObject.set(x, "qSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQSize(value: ISize): Self = this.set("qSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQStateName(value: String): Self = this.set("qStateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQError(value: INxValidationError): Self = this.set("qError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQError: Self = this.set("qError", js.undefined)
+    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
   }
 }

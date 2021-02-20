@@ -93,16 +93,30 @@ import typings.materialBase.typesMod.SpecificEventListener
 import typings.std.AddEventListenerOptions
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/base/component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
+  @JSImport("@material/base/component", JSImport.Default)
   @js.native
-  class MDCComponent[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends js.Object {
+  class default[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends MDCComponent[FoundationType] {
+    def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@material/base/component", "default.attachTo")
+    @js.native
+    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
+  }
+  
+  @JSImport("@material/base/component", "MDCComponent")
+  @js.native
+  class MDCComponent[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends StObject {
     def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
     def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
     
@@ -1393,21 +1407,10 @@ object componentMod extends js.Object {
     def unlisten_wheel(evtType: wheel, handler: SpecificEventListener[wheel], options: AddEventListenerOptions): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCComponent extends js.Object {
+  object MDCComponent {
     
-    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
-  }
-  
-  @js.native
-  class default[FoundationType /* <: MDCFoundation[js.Object] */] protected () extends MDCComponent[FoundationType] {
-    def this(root: Element, foundation: FoundationType, args: js.Any*) = this()
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
+    @JSImport("@material/base/component", "MDCComponent.attachTo")
+    @js.native
     def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
   }
 }

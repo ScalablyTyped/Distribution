@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Summary of the disk usage statistics for the environment. */
 @js.native
-trait DiskUsage extends js.Object {
+trait DiskUsage extends StObject {
   
   /** Total number of bytes available in the environment's disk capacity. */
   var maximum_allowed_bytes: js.UndefOr[Double] = js.native
@@ -23,30 +24,18 @@ object DiskUsage {
   }
   
   @scala.inline
-  implicit class DiskUsageOps[Self <: DiskUsage] (val x: Self) extends AnyVal {
+  implicit class DiskUsageMutableBuilder[Self <: DiskUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximum_allowed_bytes(value: Double): Self = StObject.set(x, "maximum_allowed_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaximum_allowed_bytesUndefined: Self = StObject.set(x, "maximum_allowed_bytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUsed_bytes(value: Double): Self = StObject.set(x, "used_bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum_allowed_bytes(value: Double): Self = this.set("maximum_allowed_bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximum_allowed_bytes: Self = this.set("maximum_allowed_bytes", js.undefined)
-    
-    @scala.inline
-    def setUsed_bytes(value: Double): Self = this.set("used_bytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsed_bytes: Self = this.set("used_bytes", js.undefined)
+    def setUsed_bytesUndefined: Self = StObject.set(x, "used_bytes", js.undefined)
   }
 }

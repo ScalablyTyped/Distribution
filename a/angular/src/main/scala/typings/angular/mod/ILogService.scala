@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api/ng/provider/$logProvider
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait ILogService extends js.Object {
+trait ILogService extends StObject {
   
   def debug(args: js.Any*): Unit = js.native
   @JSName("debug")

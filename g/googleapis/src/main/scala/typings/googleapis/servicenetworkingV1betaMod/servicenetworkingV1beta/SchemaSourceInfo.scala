@@ -1,6 +1,7 @@
 package typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Source information used to create a Service Config
   */
 @js.native
-trait SchemaSourceInfo extends js.Object {
+trait SchemaSourceInfo extends StObject {
   
   /**
     * All files used during config generation.
@@ -25,27 +26,15 @@ object SchemaSourceInfo {
   }
   
   @scala.inline
-  implicit class SchemaSourceInfoOps[Self <: SchemaSourceInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaSourceInfoMutableBuilder[Self <: SchemaSourceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceFiles(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "sourceFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceFilesUndefined: Self = StObject.set(x, "sourceFiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSourceFilesVarargs(value: StringDictionary[js.Any]*): Self = this.set("sourceFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceFiles(value: js.Array[StringDictionary[_]]): Self = this.set("sourceFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceFiles: Self = this.set("sourceFiles", js.undefined)
+    def setSourceFilesVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "sourceFiles", js.Array(value :_*))
   }
 }

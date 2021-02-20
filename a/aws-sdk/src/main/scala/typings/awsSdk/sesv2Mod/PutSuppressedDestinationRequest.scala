@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutSuppressedDestinationRequest extends js.Object {
+trait PutSuppressedDestinationRequest extends StObject {
   
   /**
     * The email address that should be added to the suppression list for your account.
@@ -26,24 +27,12 @@ object PutSuppressedDestinationRequest {
   }
   
   @scala.inline
-  implicit class PutSuppressedDestinationRequestOps[Self <: PutSuppressedDestinationRequest] (val x: Self) extends AnyVal {
+  implicit class PutSuppressedDestinationRequestMutableBuilder[Self <: PutSuppressedDestinationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReason(value: SuppressionListReason): Self = this.set("Reason", value.asInstanceOf[js.Any])
+    def setReason(value: SuppressionListReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckDomainTransferabilityRequest extends js.Object {
+trait CheckDomainTransferabilityRequest extends StObject {
   
   /**
     * If the registrar for the top-level domain (TLD) requires an authorization code to transfer the domain, the code that you got from the current registrar for the domain.
@@ -26,27 +27,15 @@ object CheckDomainTransferabilityRequest {
   }
   
   @scala.inline
-  implicit class CheckDomainTransferabilityRequestOps[Self <: CheckDomainTransferabilityRequest] (val x: Self) extends AnyVal {
+  implicit class CheckDomainTransferabilityRequestMutableBuilder[Self <: CheckDomainTransferabilityRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthCode(value: DomainAuthCode): Self = StObject.set(x, "AuthCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthCodeUndefined: Self = StObject.set(x, "AuthCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthCode(value: DomainAuthCode): Self = this.set("AuthCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthCode: Self = this.set("AuthCode", js.undefined)
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

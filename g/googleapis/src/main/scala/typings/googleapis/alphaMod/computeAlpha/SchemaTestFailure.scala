@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTestFailure extends js.Object {
+trait SchemaTestFailure extends StObject {
   
   var actualService: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object SchemaTestFailure {
   }
   
   @scala.inline
-  implicit class SchemaTestFailureOps[Self <: SchemaTestFailure] (val x: Self) extends AnyVal {
+  implicit class SchemaTestFailureMutableBuilder[Self <: SchemaTestFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualService(value: String): Self = StObject.set(x, "actualService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualServiceUndefined: Self = StObject.set(x, "actualService", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpectedService(value: String): Self = StObject.set(x, "expectedService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualService(value: String): Self = this.set("actualService", value.asInstanceOf[js.Any])
+    def setExpectedServiceUndefined: Self = StObject.set(x, "expectedService", js.undefined)
     
     @scala.inline
-    def deleteActualService: Self = this.set("actualService", js.undefined)
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedService(value: String): Self = this.set("expectedService", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteExpectedService: Self = this.set("expectedService", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

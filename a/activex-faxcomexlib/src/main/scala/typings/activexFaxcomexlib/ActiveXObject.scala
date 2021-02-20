@@ -83,12 +83,13 @@ import typings.activexFaxcomexlib.anon.PFaxServer
 import typings.activexFaxcomexlib.anon.PJobStatus
 import typings.activexFaxcomexlib.anon.Pctinfo
 import typings.activexFaxcomexlib.anon.PpvObj
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
   
   def on(
     obj: FaxAccount,

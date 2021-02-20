@@ -1,11 +1,12 @@
 package typings.reactCalendarTimeline.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineKeys extends js.Object {
+trait TimelineKeys extends StObject {
   
   var groupIdKey: String = js.native
   
@@ -44,45 +45,33 @@ object TimelineKeys {
   }
   
   @scala.inline
-  implicit class TimelineKeysOps[Self <: TimelineKeys] (val x: Self) extends AnyVal {
+  implicit class TimelineKeysMutableBuilder[Self <: TimelineKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupIdKey(value: String): Self = StObject.set(x, "groupIdKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupRightTitleKey(value: String): Self = StObject.set(x, "groupRightTitleKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupTitleKey(value: String): Self = StObject.set(x, "groupTitleKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIdKey(value: String): Self = this.set("groupIdKey", value.asInstanceOf[js.Any])
+    def setItemDivTitleKey(value: String): Self = StObject.set(x, "itemDivTitleKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupRightTitleKey(value: String): Self = this.set("groupRightTitleKey", value.asInstanceOf[js.Any])
+    def setItemGroupKey(value: String): Self = StObject.set(x, "itemGroupKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupTitleKey(value: String): Self = this.set("groupTitleKey", value.asInstanceOf[js.Any])
+    def setItemIdKey(value: String): Self = StObject.set(x, "itemIdKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemDivTitleKey(value: String): Self = this.set("itemDivTitleKey", value.asInstanceOf[js.Any])
+    def setItemTimeEndKey(value: String): Self = StObject.set(x, "itemTimeEndKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemGroupKey(value: String): Self = this.set("itemGroupKey", value.asInstanceOf[js.Any])
+    def setItemTimeStartKey(value: String): Self = StObject.set(x, "itemTimeStartKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemIdKey(value: String): Self = this.set("itemIdKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemTimeEndKey(value: String): Self = this.set("itemTimeEndKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemTimeStartKey(value: String): Self = this.set("itemTimeStartKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemTitleKey(value: String): Self = this.set("itemTitleKey", value.asInstanceOf[js.Any])
+    def setItemTitleKey(value: String): Self = StObject.set(x, "itemTitleKey", value.asInstanceOf[js.Any])
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothLEAdvertisementType extends js.Object
+sealed trait BluetoothLEAdvertisementType extends StObject
 /** Specifies the different types of Bluetooth LE advertisement payloads. */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType")
 @js.native
-object BluetoothLEAdvertisementType extends js.Object {
+object BluetoothLEAdvertisementType extends StObject {
   
   /** The advertisement is directed and indicates that the device is connectable but not scannable. This advertisement type cannot carry data. */
   @js.native

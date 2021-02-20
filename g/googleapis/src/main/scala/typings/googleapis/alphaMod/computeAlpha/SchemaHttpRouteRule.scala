@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * corresponding routing action that load balancing proxies will perform.
   */
 @js.native
-trait SchemaHttpRouteRule extends js.Object {
+trait SchemaHttpRouteRule extends StObject {
   
   /**
     * Specifies changes to request and response headers that need to take
@@ -47,45 +48,33 @@ object SchemaHttpRouteRule {
   }
   
   @scala.inline
-  implicit class SchemaHttpRouteRuleOps[Self <: SchemaHttpRouteRule] (val x: Self) extends AnyVal {
+  implicit class SchemaHttpRouteRuleMutableBuilder[Self <: SchemaHttpRouteRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaderAction(value: SchemaHttpHeaderAction): Self = StObject.set(x, "headerAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderActionUndefined: Self = StObject.set(x, "headerAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMatchRules(value: js.Array[SchemaHttpRouteRuleMatch]): Self = StObject.set(x, "matchRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderAction(value: SchemaHttpHeaderAction): Self = this.set("headerAction", value.asInstanceOf[js.Any])
+    def setMatchRulesUndefined: Self = StObject.set(x, "matchRules", js.undefined)
     
     @scala.inline
-    def deleteHeaderAction: Self = this.set("headerAction", js.undefined)
+    def setMatchRulesVarargs(value: SchemaHttpRouteRuleMatch*): Self = StObject.set(x, "matchRules", js.Array(value :_*))
     
     @scala.inline
-    def setMatchRulesVarargs(value: SchemaHttpRouteRuleMatch*): Self = this.set("matchRules", js.Array(value :_*))
+    def setRouteAction(value: SchemaHttpRouteAction): Self = StObject.set(x, "routeAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchRules(value: js.Array[SchemaHttpRouteRuleMatch]): Self = this.set("matchRules", value.asInstanceOf[js.Any])
+    def setRouteActionUndefined: Self = StObject.set(x, "routeAction", js.undefined)
     
     @scala.inline
-    def deleteMatchRules: Self = this.set("matchRules", js.undefined)
+    def setUrlRedirect(value: SchemaHttpRedirectAction): Self = StObject.set(x, "urlRedirect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteAction(value: SchemaHttpRouteAction): Self = this.set("routeAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteAction: Self = this.set("routeAction", js.undefined)
-    
-    @scala.inline
-    def setUrlRedirect(value: SchemaHttpRedirectAction): Self = this.set("urlRedirect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlRedirect: Self = this.set("urlRedirect", js.undefined)
+    def setUrlRedirectUndefined: Self = StObject.set(x, "urlRedirect", js.undefined)
   }
 }

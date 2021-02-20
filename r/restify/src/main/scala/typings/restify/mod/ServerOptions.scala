@@ -1,13 +1,13 @@
 package typings.restify.mod
 
-import typings.bunyan.mod.^
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerOptions extends js.Object {
+trait ServerOptions extends StObject {
   
   var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   
@@ -33,7 +33,7 @@ trait ServerOptions extends js.Object {
   
   var key: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   
-  var log: js.UndefOr[^] = js.native
+  var log: js.UndefOr[typings.bunyan.mod.^] = js.native
   
   var maxParamLength: js.UndefOr[Double] = js.native
   
@@ -72,195 +72,183 @@ object ServerOptions {
   }
   
   @scala.inline
-  implicit class ServerOptionsOps[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
     @scala.inline
-    def setCaVarargs(value: (String | Buffer)*): Self = this.set("ca", js.Array(value :_*))
+    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("ca", value.asInstanceOf[js.Any])
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def deleteCa: Self = this.set("ca", js.undefined)
+    def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
     
     @scala.inline
-    def setCertVarargs(value: (String | Buffer)*): Self = this.set("cert", js.Array(value :_*))
+    def setCertificate(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setCertificateVarargs(value: (String | Buffer)*): Self = StObject.set(x, "certificate", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateVarargs(value: (String | Buffer)*): Self = this.set("certificate", js.Array(value :_*))
+    def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setDtrace(value: Boolean): Self = StObject.set(x, "dtrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCiphers(value: String): Self = this.set("ciphers", value.asInstanceOf[js.Any])
+    def setDtraceUndefined: Self = StObject.set(x, "dtrace", js.undefined)
     
     @scala.inline
-    def deleteCiphers: Self = this.set("ciphers", js.undefined)
+    def setFormatters(value: Formatters_): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtrace(value: Boolean): Self = this.set("dtrace", value.asInstanceOf[js.Any])
+    def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
     
     @scala.inline
-    def deleteDtrace: Self = this.set("dtrace", js.undefined)
+    def setHandleUncaughtExceptions(value: Boolean): Self = StObject.set(x, "handleUncaughtExceptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatters(value: Formatters_): Self = this.set("formatters", value.asInstanceOf[js.Any])
+    def setHandleUncaughtExceptionsUndefined: Self = StObject.set(x, "handleUncaughtExceptions", js.undefined)
     
     @scala.inline
-    def deleteFormatters: Self = this.set("formatters", js.undefined)
+    def setHandleUpgrades(value: Boolean): Self = StObject.set(x, "handleUpgrades", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleUncaughtExceptions(value: Boolean): Self = this.set("handleUncaughtExceptions", value.asInstanceOf[js.Any])
+    def setHandleUpgradesUndefined: Self = StObject.set(x, "handleUpgrades", js.undefined)
     
     @scala.inline
-    def deleteHandleUncaughtExceptions: Self = this.set("handleUncaughtExceptions", js.undefined)
+    def setHttp2(value: js.Any): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandleUpgrades(value: Boolean): Self = this.set("handleUpgrades", value.asInstanceOf[js.Any])
+    def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
     
     @scala.inline
-    def deleteHandleUpgrades: Self = this.set("handleUpgrades", js.undefined)
+    def setHttpsServerOptions(value: typings.node.httpsMod.ServerOptions): Self = StObject.set(x, "httpsServerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttp2(value: js.Any): Self = this.set("http2", value.asInstanceOf[js.Any])
+    def setHttpsServerOptionsUndefined: Self = StObject.set(x, "httpsServerOptions", js.undefined)
     
     @scala.inline
-    def deleteHttp2: Self = this.set("http2", js.undefined)
+    def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpsServerOptions(value: typings.node.httpsMod.ServerOptions): Self = this.set("httpsServerOptions", value.asInstanceOf[js.Any])
+    def setIgnoreTrailingSlashUndefined: Self = StObject.set(x, "ignoreTrailingSlash", js.undefined)
     
     @scala.inline
-    def deleteHttpsServerOptions: Self = this.set("httpsServerOptions", js.undefined)
+    def setKey(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreTrailingSlash(value: Boolean): Self = this.set("ignoreTrailingSlash", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteIgnoreTrailingSlash: Self = this.set("ignoreTrailingSlash", js.undefined)
+    def setKeyVarargs(value: (String | Buffer)*): Self = StObject.set(x, "key", js.Array(value :_*))
     
     @scala.inline
-    def setKeyVarargs(value: (String | Buffer)*): Self = this.set("key", js.Array(value :_*))
+    def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setMaxParamLength(value: Double): Self = StObject.set(x, "maxParamLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog(value: ^): Self = this.set("log", value.asInstanceOf[js.Any])
+    def setMaxParamLengthUndefined: Self = StObject.set(x, "maxParamLength", js.undefined)
     
     @scala.inline
-    def deleteLog: Self = this.set("log", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxParamLength(value: Double): Self = this.set("maxParamLength", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxParamLength: Self = this.set("maxParamLength", js.undefined)
+    def setNoWriteContinue(value: Boolean): Self = StObject.set(x, "noWriteContinue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNoWriteContinueUndefined: Self = StObject.set(x, "noWriteContinue", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoWriteContinue(value: Boolean): Self = this.set("noWriteContinue", value.asInstanceOf[js.Any])
+    def setOnceNextUndefined: Self = StObject.set(x, "onceNext", js.undefined)
     
     @scala.inline
-    def deleteNoWriteContinue: Self = this.set("noWriteContinue", js.undefined)
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnceNext(value: Boolean): Self = this.set("onceNext", value.asInstanceOf[js.Any])
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
     @scala.inline
-    def deleteOnceNext: Self = this.set("onceNext", js.undefined)
+    def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     
     @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    def setRequestCert(value: Boolean): Self = StObject.set(x, "requestCert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
     
     @scala.inline
-    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    def setRouter(value: Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestCert(value: Boolean): Self = this.set("requestCert", value.asInstanceOf[js.Any])
+    def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
     
     @scala.inline
-    def deleteRequestCert: Self = this.set("requestCert", js.undefined)
+    def setSecureOptions(value: Double): Self = StObject.set(x, "secureOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouter(value: Router): Self = this.set("router", value.asInstanceOf[js.Any])
+    def setSecureOptionsUndefined: Self = StObject.set(x, "secureOptions", js.undefined)
     
     @scala.inline
-    def deleteRouter: Self = this.set("router", js.undefined)
+    def setSocketio(value: Boolean): Self = StObject.set(x, "socketio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecureOptions(value: Double): Self = this.set("secureOptions", value.asInstanceOf[js.Any])
+    def setSocketioUndefined: Self = StObject.set(x, "socketio", js.undefined)
     
     @scala.inline
-    def deleteSecureOptions: Self = this.set("secureOptions", js.undefined)
+    def setSpdy(value: typings.spdy.mod.ServerOptions): Self = StObject.set(x, "spdy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSocketio(value: Boolean): Self = this.set("socketio", value.asInstanceOf[js.Any])
+    def setSpdyUndefined: Self = StObject.set(x, "spdy", js.undefined)
     
     @scala.inline
-    def deleteSocketio: Self = this.set("socketio", js.undefined)
+    def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpdy(value: typings.spdy.mod.ServerOptions): Self = this.set("spdy", value.asInstanceOf[js.Any])
+    def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
     
     @scala.inline
-    def deleteSpdy: Self = this.set("spdy", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictNext(value: Boolean): Self = this.set("strictNext", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteStrictNext: Self = this.set("strictNext", js.undefined)
+    def setVersions(value: js.Array[String]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setVersionsVarargs(value: String*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: js.Array[String]): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
+    def setVersionsVarargs(value: String*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.intercomClient.anon
 
 import typings.intercomClient.intercomClientStrings.user
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Perpage extends js.Object {
+trait Perpage extends StObject {
   
   var per_page: js.UndefOr[Double] = js.native
   
@@ -22,27 +23,15 @@ object Perpage {
   }
   
   @scala.inline
-  implicit class PerpageOps[Self <: Perpage] (val x: Self) extends AnyVal {
+  implicit class PerpageMutableBuilder[Self <: Perpage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: user): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePer_page: Self = this.set("per_page", js.undefined)
+    def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,84 +45,72 @@ object PlannerPlan {
   }
   
   @scala.inline
-  implicit class PlannerPlanOps[Self <: PlannerPlan] (val x: Self) extends AnyVal {
+  implicit class PlannerPlanMutableBuilder[Self <: PlannerPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: NullableOption[js.Array[PlannerBucket]]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsNull: Self = StObject.set(x, "buckets", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
     @scala.inline
-    def setBucketsVarargs(value: PlannerBucket*): Self = this.set("buckets", js.Array(value :_*))
+    def setBucketsVarargs(value: PlannerBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBuckets(value: NullableOption[js.Array[PlannerBucket]]): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
     @scala.inline
-    def setBucketsNull: Self = this.set("buckets", null)
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
     
     @scala.inline
-    def setCreatedByNull: Self = this.set("createdBy", null)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setCreatedDateTime(value: NullableOption[String]): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setDetails(value: NullableOption[PlannerPlanDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setDetailsNull: Self = StObject.set(x, "details", null)
     
     @scala.inline
-    def setCreatedDateTimeNull: Self = this.set("createdDateTime", null)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setDetails(value: NullableOption[PlannerPlanDetails]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setOwner(value: NullableOption[String]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setOwnerNull: Self = StObject.set(x, "owner", null)
     
     @scala.inline
-    def setDetailsNull: Self = this.set("details", null)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setOwner(value: NullableOption[String]): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setTasksNull: Self = StObject.set(x, "tasks", null)
     
     @scala.inline
-    def setOwnerNull: Self = this.set("owner", null)
+    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
     @scala.inline
-    def setTasksVarargs(value: PlannerTask*): Self = this.set("tasks", js.Array(value :_*))
+    def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
     
     @scala.inline
-    def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = this.set("tasks", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTasks: Self = this.set("tasks", js.undefined)
-    
-    @scala.inline
-    def setTasksNull: Self = this.set("tasks", null)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

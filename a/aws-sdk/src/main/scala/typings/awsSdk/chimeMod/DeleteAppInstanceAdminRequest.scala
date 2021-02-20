@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteAppInstanceAdminRequest extends js.Object {
+trait DeleteAppInstanceAdminRequest extends StObject {
   
   /**
     * The ARN of the app instance's administrator.
@@ -26,24 +27,12 @@ object DeleteAppInstanceAdminRequest {
   }
   
   @scala.inline
-  implicit class DeleteAppInstanceAdminRequestOps[Self <: DeleteAppInstanceAdminRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteAppInstanceAdminRequestMutableBuilder[Self <: DeleteAppInstanceAdminRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppInstanceAdminArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceAdminArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAppInstanceAdminArn(value: ChimeArn): Self = this.set("AppInstanceAdminArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppInstanceArn(value: ChimeArn): Self = this.set("AppInstanceArn", value.asInstanceOf[js.Any])
+    def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
   }
 }

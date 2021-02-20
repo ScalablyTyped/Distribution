@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamConfig extends js.Object {
+trait StreamConfig extends StObject {
   
   /**
     * The destination BigQuery structure that contains both the dataset location and corresponding schema config. The output is organized in one table per resource type. The server reuses
@@ -38,33 +39,21 @@ object StreamConfig {
   }
   
   @scala.inline
-  implicit class StreamConfigOps[Self <: StreamConfig] (val x: Self) extends AnyVal {
+  implicit class StreamConfigMutableBuilder[Self <: StreamConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBigqueryDestination(value: GoogleCloudHealthcareV1FhirBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceTypes(value: js.Array[String]): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBigqueryDestination(value: GoogleCloudHealthcareV1FhirBigQueryDestination): Self = this.set("bigqueryDestination", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
     @scala.inline
-    def deleteBigqueryDestination: Self = this.set("bigqueryDestination", js.undefined)
-    
-    @scala.inline
-    def setResourceTypesVarargs(value: String*): Self = this.set("resourceTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceTypes(value: js.Array[String]): Self = this.set("resourceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTypes: Self = this.set("resourceTypes", js.undefined)
+    def setResourceTypesVarargs(value: String*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

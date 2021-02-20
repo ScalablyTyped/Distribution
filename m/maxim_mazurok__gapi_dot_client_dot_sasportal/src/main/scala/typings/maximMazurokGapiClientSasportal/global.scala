@@ -7,35 +7,45 @@ import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.NodesResour
 import typings.maximMazurokGapiClientSasportal.gapi.client.sasportal.PoliciesResource
 import typings.maximMazurokGapiClientSasportal.maximMazurokGapiClientSasportalStrings.sasportal
 import typings.maximMazurokGapiClientSasportal.maximMazurokGapiClientSasportalStrings.v1alpha1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
       /** Load SAS Portal API v1alpha1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: sasportal, version: v1alpha1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
       def load(name: sasportal, version: v1alpha1, callback: js.Function0[_]): Unit = js.native
       
-      @js.native
-      object sasportal extends js.Object {
+      object sasportal {
         
+        @JSGlobal("gapi.client.sasportal.customers")
+        @js.native
         val customers: CustomersResource = js.native
         
+        @JSGlobal("gapi.client.sasportal.deployments")
+        @js.native
         val deployments: DeploymentsResource = js.native
         
+        @JSGlobal("gapi.client.sasportal.installer")
+        @js.native
         val installer: InstallerResource = js.native
         
+        @JSGlobal("gapi.client.sasportal.nodes")
+        @js.native
         val nodes: NodesResource = js.native
         
+        @JSGlobal("gapi.client.sasportal.policies")
+        @js.native
         val policies: PoliciesResource = js.native
       }
     }

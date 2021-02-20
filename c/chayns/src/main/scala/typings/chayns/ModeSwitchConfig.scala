@@ -1,5 +1,6 @@
 package typings.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 // chayns.ui.modeswitch.init()
 @js.native
-trait ModeSwitchConfig extends js.Object {
+trait ModeSwitchConfig extends StObject {
   
   def callback(result: ModeSwitchItem): Unit = js.native
   
@@ -30,39 +31,27 @@ object ModeSwitchConfig {
   }
   
   @scala.inline
-  implicit class ModeSwitchConfigOps[Self <: ModeSwitchConfig] (val x: Self) extends AnyVal {
+  implicit class ModeSwitchConfigMutableBuilder[Self <: ModeSwitchConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: ModeSwitchItem => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadline(value: String): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
     
     @scala.inline
-    def setCallback(value: ModeSwitchItem => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setItems(value: js.Array[ModeSwitchItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: ModeSwitchItem*): Self = this.set("items", js.Array(value :_*))
+    def setItemsVarargs(value: ModeSwitchItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItems(value: js.Array[ModeSwitchItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setPreventclose(value: Boolean): Self = StObject.set(x, "preventclose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeadline: Self = this.set("headline", js.undefined)
-    
-    @scala.inline
-    def setPreventclose(value: Boolean): Self = this.set("preventclose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreventclose: Self = this.set("preventclose", js.undefined)
+    def setPreventcloseUndefined: Self = StObject.set(x, "preventclose", js.undefined)
   }
 }

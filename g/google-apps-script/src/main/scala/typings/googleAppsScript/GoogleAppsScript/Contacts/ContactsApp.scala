@@ -2,6 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Month
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * contacts listed therein.
   */
 @js.native
-trait ContactsApp extends js.Object {
+trait ContactsApp extends StObject {
   
   var ExtendedField: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any = js.native
   

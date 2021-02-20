@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageContext extends js.Object {
+trait ImageContext extends StObject {
   
   /** Parameters for crop hints annotation request. */
   var cropHintsParams: js.UndefOr[CropHintsParams] = js.native
@@ -36,51 +37,39 @@ object ImageContext {
   }
   
   @scala.inline
-  implicit class ImageContextOps[Self <: ImageContext] (val x: Self) extends AnyVal {
+  implicit class ImageContextMutableBuilder[Self <: ImageContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCropHintsParams(value: CropHintsParams): Self = StObject.set(x, "cropHintsParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCropHintsParamsUndefined: Self = StObject.set(x, "cropHintsParams", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCropHintsParams(value: CropHintsParams): Self = this.set("cropHintsParams", value.asInstanceOf[js.Any])
+    def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
     @scala.inline
-    def deleteCropHintsParams: Self = this.set("cropHintsParams", js.undefined)
+    def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
     
     @scala.inline
-    def setLanguageHintsVarargs(value: String*): Self = this.set("languageHints", js.Array(value :_*))
+    def setLatLongRect(value: LatLongRect): Self = StObject.set(x, "latLongRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageHints(value: js.Array[String]): Self = this.set("languageHints", value.asInstanceOf[js.Any])
+    def setLatLongRectUndefined: Self = StObject.set(x, "latLongRect", js.undefined)
     
     @scala.inline
-    def deleteLanguageHints: Self = this.set("languageHints", js.undefined)
+    def setProductSearchParams(value: ProductSearchParams): Self = StObject.set(x, "productSearchParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatLongRect(value: LatLongRect): Self = this.set("latLongRect", value.asInstanceOf[js.Any])
+    def setProductSearchParamsUndefined: Self = StObject.set(x, "productSearchParams", js.undefined)
     
     @scala.inline
-    def deleteLatLongRect: Self = this.set("latLongRect", js.undefined)
+    def setWebDetectionParams(value: WebDetectionParams): Self = StObject.set(x, "webDetectionParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductSearchParams(value: ProductSearchParams): Self = this.set("productSearchParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductSearchParams: Self = this.set("productSearchParams", js.undefined)
-    
-    @scala.inline
-    def setWebDetectionParams(value: WebDetectionParams): Self = this.set("webDetectionParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebDetectionParams: Self = this.set("webDetectionParams", js.undefined)
+    def setWebDetectionParamsUndefined: Self = StObject.set(x, "webDetectionParams", js.undefined)
   }
 }

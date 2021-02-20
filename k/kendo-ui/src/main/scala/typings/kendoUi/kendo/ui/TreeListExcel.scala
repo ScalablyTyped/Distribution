@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeListExcel extends js.Object {
+trait TreeListExcel extends StObject {
   
   var fileName: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object TreeListExcel {
   }
   
   @scala.inline
-  implicit class TreeListExcelOps[Self <: TreeListExcel] (val x: Self) extends AnyVal {
+  implicit class TreeListExcelMutableBuilder[Self <: TreeListExcel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
     
     @scala.inline
-    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForceProxy(value: Boolean): Self = this.set("forceProxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceProxy: Self = this.set("forceProxy", js.undefined)
-    
-    @scala.inline
-    def setProxyURL(value: String): Self = this.set("proxyURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyURL: Self = this.set("proxyURL", js.undefined)
+    def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
   }
 }

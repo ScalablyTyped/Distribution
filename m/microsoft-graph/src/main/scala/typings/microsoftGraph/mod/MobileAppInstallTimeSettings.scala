@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MobileAppInstallTimeSettings extends js.Object {
+trait MobileAppInstallTimeSettings extends StObject {
   
   // The time at which the app should be installed.
   var deadlineDateTime: js.UndefOr[NullableOption[String]] = js.native
@@ -25,42 +26,30 @@ object MobileAppInstallTimeSettings {
   }
   
   @scala.inline
-  implicit class MobileAppInstallTimeSettingsOps[Self <: MobileAppInstallTimeSettings] (val x: Self) extends AnyVal {
+  implicit class MobileAppInstallTimeSettingsMutableBuilder[Self <: MobileAppInstallTimeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadlineDateTime(value: NullableOption[String]): Self = StObject.set(x, "deadlineDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeadlineDateTimeNull: Self = StObject.set(x, "deadlineDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadlineDateTimeUndefined: Self = StObject.set(x, "deadlineDateTime", js.undefined)
     
     @scala.inline
-    def setDeadlineDateTime(value: NullableOption[String]): Self = this.set("deadlineDateTime", value.asInstanceOf[js.Any])
+    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeadlineDateTime: Self = this.set("deadlineDateTime", js.undefined)
+    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
     @scala.inline
-    def setDeadlineDateTimeNull: Self = this.set("deadlineDateTime", null)
+    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
     @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = this.set("startDateTime", value.asInstanceOf[js.Any])
+    def setUseLocalTime(value: Boolean): Self = StObject.set(x, "useLocalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartDateTime: Self = this.set("startDateTime", js.undefined)
-    
-    @scala.inline
-    def setStartDateTimeNull: Self = this.set("startDateTime", null)
-    
-    @scala.inline
-    def setUseLocalTime(value: Boolean): Self = this.set("useLocalTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLocalTime: Self = this.set("useLocalTime", js.undefined)
+    def setUseLocalTimeUndefined: Self = StObject.set(x, "useLocalTime", js.undefined)
   }
 }

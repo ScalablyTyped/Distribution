@@ -1,16 +1,16 @@
 package typings.tensorflowTfjsData
 
 import typings.tensorflowTfjsData.byteChunkIteratorMod.ByteChunkIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-data/dist/datasource", JSImport.Namespace)
-@js.native
-object datasourceMod extends js.Object {
+object datasourceMod {
   
+  @JSImport("@tensorflow/tfjs-data/dist/datasource", "DataSource")
   @js.native
-  abstract class DataSource () extends js.Object {
+  abstract class DataSource () extends StObject {
     
     /**
       * Obtain a new stream of binary data chunks.

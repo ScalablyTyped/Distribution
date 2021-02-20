@@ -1,5 +1,6 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.minappEnv.IAPISuccessParam
   - typings.minappEnv.IAPIError
 */
-trait IAPICompleteParam extends js.Object
+trait IAPICompleteParam extends StObject
 object IAPICompleteParam {
   
   @scala.inline
-  def IAPISuccessParam(errMsg: java.lang.String): IAPICompleteParam = {
+  def IAPIError(errMsg: java.lang.String): typings.minappEnv.IAPIError = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IAPICompleteParam]
+    __obj.asInstanceOf[typings.minappEnv.IAPIError]
   }
   
   @scala.inline
-  def IAPIError(errMsg: java.lang.String): IAPICompleteParam = {
+  def IAPISuccessParam(errMsg: java.lang.String): typings.minappEnv.IAPISuccessParam = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IAPICompleteParam]
+    __obj.asInstanceOf[typings.minappEnv.IAPISuccessParam]
   }
 }

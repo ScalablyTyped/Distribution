@@ -1,5 +1,6 @@
 package typings.jointjs.mod.g
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +47,7 @@ class Line () extends _PathObjectUnit {
   def intersect(path: Path): js.Array[Point] | Null = js.native
   def intersect(path: Path, opt: SegmentSubdivisionsOpt): js.Array[Point] | Null = js.native
   def intersect(polyline: Polyline): js.Array[Point] | Null = js.native
-   // Backwards compatibility, should return an array
+  // Backwards compatibility, should return an array
   def intersect(rect: Rect): js.Array[Point] | Null = js.native
   
   def intersectionWithLine(l: Line): js.Array[Point] | Null = js.native

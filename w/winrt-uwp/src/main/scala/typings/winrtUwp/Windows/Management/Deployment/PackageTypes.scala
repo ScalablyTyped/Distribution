@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PackageTypes extends js.Object
+sealed trait PackageTypes extends StObject
 /** Defines the types of packages to be included in the result set of a query. */
 @JSGlobal("Windows.Management.Deployment.PackageTypes")
 @js.native
-object PackageTypes extends js.Object {
+object PackageTypes extends StObject {
   
   /** Include the bundle packages when you enumerate the package repository. */
   @js.native

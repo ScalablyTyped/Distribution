@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGames.gapi.client.games
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotRevision extends js.Object {
+trait SnapshotRevision extends StObject {
   
   /** Reference to the game provided blob for this revision. */
   var blob: js.UndefOr[SnapshotDataResource] = js.native
@@ -28,42 +29,30 @@ object SnapshotRevision {
   }
   
   @scala.inline
-  implicit class SnapshotRevisionOps[Self <: SnapshotRevision] (val x: Self) extends AnyVal {
+  implicit class SnapshotRevisionMutableBuilder[Self <: SnapshotRevision] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: SnapshotDataResource): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoverImage(value: SnapshotCoverImageResource): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: SnapshotDataResource): Self = this.set("blob", value.asInstanceOf[js.Any])
+    def setCoverImageUndefined: Self = StObject.set(x, "coverImage", js.undefined)
     
     @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverImage(value: SnapshotCoverImageResource): Self = this.set("coverImage", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteCoverImage: Self = this.set("coverImage", js.undefined)
+    def setMetadata(value: SnapshotMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: SnapshotMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

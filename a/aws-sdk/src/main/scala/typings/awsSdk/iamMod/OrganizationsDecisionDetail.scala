@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrganizationsDecisionDetail extends js.Object {
+trait OrganizationsDecisionDetail extends StObject {
   
   /**
     * Specifies whether the simulated operation is allowed by the Organizations service control policies that impact the simulated user's account.
@@ -21,24 +22,12 @@ object OrganizationsDecisionDetail {
   }
   
   @scala.inline
-  implicit class OrganizationsDecisionDetailOps[Self <: OrganizationsDecisionDetail] (val x: Self) extends AnyVal {
+  implicit class OrganizationsDecisionDetailMutableBuilder[Self <: OrganizationsDecisionDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedByOrganizations(value: booleanType): Self = StObject.set(x, "AllowedByOrganizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAllowedByOrganizations(value: booleanType): Self = this.set("AllowedByOrganizations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowedByOrganizations: Self = this.set("AllowedByOrganizations", js.undefined)
+    def setAllowedByOrganizationsUndefined: Self = StObject.set(x, "AllowedByOrganizations", js.undefined)
   }
 }

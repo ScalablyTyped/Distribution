@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConformancePackComplianceFilters extends js.Object {
+trait ConformancePackComplianceFilters extends StObject {
   
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
@@ -26,33 +27,21 @@ object ConformancePackComplianceFilters {
   }
   
   @scala.inline
-  implicit class ConformancePackComplianceFiltersOps[Self <: ConformancePackComplianceFilters] (val x: Self) extends AnyVal {
+  implicit class ConformancePackComplianceFiltersMutableBuilder[Self <: ConformancePackComplianceFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = StObject.set(x, "ConfigRuleNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceType(value: ConformancePackComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
     @scala.inline
-    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
-    
-    @scala.inline
-    def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = this.set("ConfigRuleNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = this.set("ConfigRuleNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigRuleNames: Self = this.set("ConfigRuleNames", js.undefined)
+    def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
   }
 }

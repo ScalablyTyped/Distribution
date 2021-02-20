@@ -1,11 +1,12 @@
 package typings.awsSdk.timestreamqueryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryResponse extends js.Object {
+trait QueryResponse extends StObject {
   
   /**
     *  The column data types of the returned result set. 
@@ -36,39 +37,27 @@ object QueryResponse {
   }
   
   @scala.inline
-  implicit class QueryResponseOps[Self <: QueryResponse] (val x: Self) extends AnyVal {
+  implicit class QueryResponseMutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnInfo(value: ColumnInfoList): Self = StObject.set(x, "ColumnInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnInfoVarargs(value: ColumnInfo*): Self = StObject.set(x, "ColumnInfo", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnInfoVarargs(value: ColumnInfo*): Self = this.set("ColumnInfo", js.Array(value :_*))
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def setColumnInfo(value: ColumnInfoList): Self = this.set("ColumnInfo", value.asInstanceOf[js.Any])
+    def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryId(value: QueryId): Self = this.set("QueryId", value.asInstanceOf[js.Any])
+    def setRows(value: RowList): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowsVarargs(value: Row*): Self = this.set("Rows", js.Array(value :_*))
-    
-    @scala.inline
-    def setRows(value: RowList): Self = this.set("Rows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setRowsVarargs(value: Row*): Self = StObject.set(x, "Rows", js.Array(value :_*))
   }
 }

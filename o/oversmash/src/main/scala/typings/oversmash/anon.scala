@@ -3,16 +3,15 @@ package typings.oversmash
 import typings.oversmash.mod.CallerOptions
 import typings.oversmash.mod.Player
 import typings.oversmash.mod.PlayerStats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Options extends js.Object {
+  trait Options extends StObject {
     
     val options: CallerOptions = js.native
     

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReservedInstanceReservationValue extends js.Object {
+trait ReservedInstanceReservationValue extends StObject {
   
   /**
     * The total value of the Convertible Reserved Instance that you are exchanging.
@@ -26,30 +27,18 @@ object ReservedInstanceReservationValue {
   }
   
   @scala.inline
-  implicit class ReservedInstanceReservationValueOps[Self <: ReservedInstanceReservationValue] (val x: Self) extends AnyVal {
+  implicit class ReservedInstanceReservationValueMutableBuilder[Self <: ReservedInstanceReservationValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReservationValue(value: ReservationValue): Self = StObject.set(x, "ReservationValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReservationValueUndefined: Self = StObject.set(x, "ReservationValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReservedInstanceId(value: String): Self = StObject.set(x, "ReservedInstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservationValue(value: ReservationValue): Self = this.set("ReservationValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservationValue: Self = this.set("ReservationValue", js.undefined)
-    
-    @scala.inline
-    def setReservedInstanceId(value: String): Self = this.set("ReservedInstanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservedInstanceId: Self = this.set("ReservedInstanceId", js.undefined)
+    def setReservedInstanceIdUndefined: Self = StObject.set(x, "ReservedInstanceId", js.undefined)
   }
 }

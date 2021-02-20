@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBackupsInput extends js.Object {
+trait ListBackupsInput extends StObject {
   
   /**
     * The backups from the table specified by BackupType are listed. Where BackupType can be:    USER - On-demand backup created by you.    SYSTEM - On-demand backup automatically created by DynamoDB.    ALL - All types of on-demand backups (USER and SYSTEM).  
@@ -46,54 +47,42 @@ object ListBackupsInput {
   }
   
   @scala.inline
-  implicit class ListBackupsInputOps[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
+  implicit class ListBackupsInputMutableBuilder[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupType(value: BackupTypeFilter): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupTypeUndefined: Self = StObject.set(x, "BackupType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExclusiveStartBackupArn(value: BackupArn): Self = StObject.set(x, "ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupType(value: BackupTypeFilter): Self = this.set("BackupType", value.asInstanceOf[js.Any])
+    def setExclusiveStartBackupArnUndefined: Self = StObject.set(x, "ExclusiveStartBackupArn", js.undefined)
     
     @scala.inline
-    def deleteBackupType: Self = this.set("BackupType", js.undefined)
+    def setLimit(value: BackupsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveStartBackupArn(value: BackupArn): Self = this.set("ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     @scala.inline
-    def deleteExclusiveStartBackupArn: Self = this.set("ExclusiveStartBackupArn", js.undefined)
+    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: BackupsInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = StObject.set(x, "TimeRangeLowerBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setTimeRangeLowerBoundUndefined: Self = StObject.set(x, "TimeRangeLowerBound", js.undefined)
     
     @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = StObject.set(x, "TimeRangeUpperBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = this.set("TimeRangeLowerBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRangeLowerBound: Self = this.set("TimeRangeLowerBound", js.undefined)
-    
-    @scala.inline
-    def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = this.set("TimeRangeUpperBound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeRangeUpperBound: Self = this.set("TimeRangeUpperBound", js.undefined)
+    def setTimeRangeUpperBoundUndefined: Self = StObject.set(x, "TimeRangeUpperBound", js.undefined)
   }
 }

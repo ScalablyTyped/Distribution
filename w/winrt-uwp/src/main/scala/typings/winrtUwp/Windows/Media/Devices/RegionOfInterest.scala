@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Devices
 
 import typings.winrtUwp.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a region of interest which is a rectangular region on the image which is used for functions such as focus and exposure. */
 @js.native
-trait RegionOfInterest extends js.Object {
+trait RegionOfInterest extends StObject {
   
   /** Gets or sets a value that specifies if auto exposure is enabled. */
   var autoExposureEnabled: Boolean = js.native
@@ -48,39 +49,27 @@ object RegionOfInterest {
   }
   
   @scala.inline
-  implicit class RegionOfInterestOps[Self <: RegionOfInterest] (val x: Self) extends AnyVal {
+  implicit class RegionOfInterestMutableBuilder[Self <: RegionOfInterest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoExposureEnabled(value: Boolean): Self = StObject.set(x, "autoExposureEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusEnabled(value: Boolean): Self = StObject.set(x, "autoFocusEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoWhiteBalanceEnabled(value: Boolean): Self = StObject.set(x, "autoWhiteBalanceEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoExposureEnabled(value: Boolean): Self = this.set("autoExposureEnabled", value.asInstanceOf[js.Any])
+    def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocusEnabled(value: Boolean): Self = this.set("autoFocusEnabled", value.asInstanceOf[js.Any])
+    def setBoundsNormalized(value: Boolean): Self = StObject.set(x, "boundsNormalized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWhiteBalanceEnabled(value: Boolean): Self = this.set("autoWhiteBalanceEnabled", value.asInstanceOf[js.Any])
+    def setType(value: RegionOfInterestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Rect): Self = this.set("bounds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBoundsNormalized(value: Boolean): Self = this.set("boundsNormalized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: RegionOfInterestType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

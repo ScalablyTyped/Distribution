@@ -1,15 +1,13 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.theming")
-@js.native
-object theming extends js.Object {
+object theming {
   
-  @js.native
-  object Parameters extends js.Object {
+  object Parameters {
     
     /**
       * Returns the current value for one or more theming parameters, depending on the given
@@ -24,9 +22,17 @@ object theming extends js.Object {
       * scope set via a CSS class.
       * @returns the CSS parameter value(s)
       */
+    @JSGlobal("sap.ui.core.theming.Parameters.get")
+    @js.native
     def get(vName: String): String | js.Any = js.native
+    @JSGlobal("sap.ui.core.theming.Parameters.get")
+    @js.native
     def get(vName: String, oElement: typings.openui5.sap.ui.core.Element): String | js.Any = js.native
+    @JSGlobal("sap.ui.core.theming.Parameters.get")
+    @js.native
     def get(vName: js.Array[String]): String | js.Any = js.native
+    @JSGlobal("sap.ui.core.theming.Parameters.get")
+    @js.native
     def get(vName: js.Array[String], oElement: typings.openui5.sap.ui.core.Element): String | js.Any = js.native
     
     /**
@@ -37,6 +43,8 @@ object theming extends js.Object {
       * @param oElement element/control instance
       * @returns Two dimensional array with scopes in bottom up order
       */
+    @JSGlobal("sap.ui.core.theming.Parameters.getActiveScopesFor")
+    @js.native
     def getActiveScopesFor(oElement: js.Any): js.Array[js.Array[String]] = js.native
     
     /**
@@ -44,13 +52,16 @@ object theming extends js.Object {
       * @param bAvoidLoading Whether loading of parameters should be avoided
       * @returns Scope names
       */
-    @JSName("_getScopes")
+    @JSGlobal("sap.ui.core.theming.Parameters._getScopes")
+    @js.native
     def getScopes(bAvoidLoading: Boolean): js.Array[_] = js.native
     
     /**
       * Resets the CSS parameters which finally will reload the parametersthe next time they are queried via
       * the method <code>get</code>.
       */
+    @JSGlobal("sap.ui.core.theming.Parameters.reset")
+    @js.native
     def reset(): Unit = js.native
   }
 }

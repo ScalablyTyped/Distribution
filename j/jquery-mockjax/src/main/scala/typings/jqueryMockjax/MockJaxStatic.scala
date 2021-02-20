@@ -1,11 +1,12 @@
 package typings.jqueryMockjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MockJaxStatic extends js.Object {
+trait MockJaxStatic extends StObject {
   
   def apply(options: js.Array[MockJaxSettings]): js.Array[Double] = js.native
   def apply(options: MockJaxSettings): Double = js.native

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,33 +55,21 @@ object ViewSettings {
   }
   
   @scala.inline
-  implicit class ViewSettingsOps[Self <: ViewSettings] (val x: Self) extends AnyVal {
+  implicit class ViewSettingsMutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setShowHoriRuler(value: Boolean): Self = StObject.set(x, "ShowHoriRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShowHoriScrollBar(value: Boolean): Self = StObject.set(x, "ShowHoriScrollBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowVertRuler(value: Boolean): Self = StObject.set(x, "ShowVertRuler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHoriRuler(value: Boolean): Self = this.set("ShowHoriRuler", value.asInstanceOf[js.Any])
+    def setShowVertScrollBar(value: Boolean): Self = StObject.set(x, "ShowVertScrollBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowHoriScrollBar(value: Boolean): Self = this.set("ShowHoriScrollBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowVertRuler(value: Boolean): Self = this.set("ShowVertRuler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowVertScrollBar(value: Boolean): Self = this.set("ShowVertScrollBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZoomValue(value: Double): Self = this.set("ZoomValue", value.asInstanceOf[js.Any])
+    def setZoomValue(value: Double): Self = StObject.set(x, "ZoomValue", value.asInstanceOf[js.Any])
   }
 }

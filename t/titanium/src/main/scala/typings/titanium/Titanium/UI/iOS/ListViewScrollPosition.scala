@@ -1,5 +1,6 @@
 package typings.titanium.Titanium.UI.iOS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * <ListViewAnimationProperties> when invoking the ListView's `scrollToItem`, `appendSection`,
   * `deleteSectionAt`, `insertSectionAt` and `replaceSectionAt` methods.
   */
-@JSGlobal("Titanium.UI.iOS.ListViewScrollPosition")
-@js.native
-object ListViewScrollPosition extends js.Object
+object ListViewScrollPosition

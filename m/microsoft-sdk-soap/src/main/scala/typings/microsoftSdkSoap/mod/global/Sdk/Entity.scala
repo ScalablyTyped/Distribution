@@ -1,13 +1,14 @@
 package typings.microsoftSdkSoap.mod.global.Sdk
 
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.IEntityMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Entity")
 @js.native
-class Entity protected () extends js.Object {
+class Entity protected () extends StObject {
   /**
     * Represents an instance of an entity (a record).
     * @param type The logical name of the entity.

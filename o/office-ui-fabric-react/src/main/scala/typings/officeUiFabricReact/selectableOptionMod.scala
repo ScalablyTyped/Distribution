@@ -1,18 +1,16 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.selectableOptionTypesMod.ISelectableOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/selectableOption", JSImport.Namespace)
-@js.native
-object selectableOptionMod extends js.Object {
+object selectableOptionMod {
   
-  def getAllSelectedOptions(options: js.Array[ISelectableOption], selectedIndices: js.Array[Double]): js.Array[ISelectableOption] = js.native
-  
+  @JSImport("office-ui-fabric-react/lib/utilities/selectableOption", "SelectableOptionMenuItemType")
   @js.native
-  object SelectableOptionMenuItemType extends js.Object {
+  object SelectableOptionMenuItemType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -25,4 +23,8 @@ object selectableOptionMod extends js.Object {
     
     /* 0 */ val Normal: typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType.Normal with Double = js.native
   }
+  
+  @JSImport("office-ui-fabric-react/lib/utilities/selectableOption", "getAllSelectedOptions")
+  @js.native
+  def getAllSelectedOptions(options: js.Array[ISelectableOption], selectedIndices: js.Array[Double]): js.Array[ISelectableOption] = js.native
 }

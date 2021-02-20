@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Actor extends js.Object {
+trait Actor extends StObject {
   
   var actor: js.UndefOr[Verification] = js.native
   
@@ -36,81 +37,69 @@ object Actor {
   }
   
   @scala.inline
-  implicit class ActorOps[Self <: Actor] (val x: Self) extends AnyVal {
+  implicit class ActorMutableBuilder[Self <: Actor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActor(value: Verification): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: js.Array[Content]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActor(value: Verification): Self = this.set("actor", value.asInstanceOf[js.Any])
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def deleteActor: Self = this.set("actor", js.undefined)
+    def setAttachmentsVarargs(value: Content*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: Content*): Self = this.set("attachments", js.Array(value :_*))
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: js.Array[Content]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
     
     @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    def setPlusoners(value: SelfLink): Self = StObject.set(x, "plusoners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalContent(value: String): Self = this.set("originalContent", value.asInstanceOf[js.Any])
+    def setPlusonersUndefined: Self = StObject.set(x, "plusoners", js.undefined)
     
     @scala.inline
-    def deleteOriginalContent: Self = this.set("originalContent", js.undefined)
+    def setReplies(value: SelfLink): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlusoners(value: SelfLink): Self = this.set("plusoners", value.asInstanceOf[js.Any])
+    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
     @scala.inline
-    def deletePlusoners: Self = this.set("plusoners", js.undefined)
+    def setResharers(value: SelfLink): Self = StObject.set(x, "resharers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplies(value: SelfLink): Self = this.set("replies", value.asInstanceOf[js.Any])
+    def setResharersUndefined: Self = StObject.set(x, "resharers", js.undefined)
     
     @scala.inline
-    def deleteReplies: Self = this.set("replies", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResharers(value: SelfLink): Self = this.set("resharers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResharers: Self = this.set("resharers", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

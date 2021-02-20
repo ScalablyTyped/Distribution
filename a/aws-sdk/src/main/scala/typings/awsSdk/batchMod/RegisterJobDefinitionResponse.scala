@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegisterJobDefinitionResponse extends js.Object {
+trait RegisterJobDefinitionResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the job definition.
@@ -31,27 +32,15 @@ object RegisterJobDefinitionResponse {
   }
   
   @scala.inline
-  implicit class RegisterJobDefinitionResponseOps[Self <: RegisterJobDefinitionResponse] (val x: Self) extends AnyVal {
+  implicit class RegisterJobDefinitionResponseMutableBuilder[Self <: RegisterJobDefinitionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobDefinitionArn(value: String): Self = StObject.set(x, "jobDefinitionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobDefinitionName(value: String): Self = StObject.set(x, "jobDefinitionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobDefinitionArn(value: String): Self = this.set("jobDefinitionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobDefinitionName(value: String): Self = this.set("jobDefinitionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevision(value: Integer): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setRevision(value: Integer): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
   }
 }

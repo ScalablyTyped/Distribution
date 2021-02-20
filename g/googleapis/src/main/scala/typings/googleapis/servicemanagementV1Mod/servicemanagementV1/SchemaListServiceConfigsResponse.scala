@@ -1,5 +1,6 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for ListServiceConfigs method.
   */
 @js.native
-trait SchemaListServiceConfigsResponse extends js.Object {
+trait SchemaListServiceConfigsResponse extends StObject {
   
   /**
     * The token of the next page of results.
@@ -29,33 +30,21 @@ object SchemaListServiceConfigsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListServiceConfigsResponseOps[Self <: SchemaListServiceConfigsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListServiceConfigsResponseMutableBuilder[Self <: SchemaListServiceConfigsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServiceConfigs(value: js.Array[SchemaService]): Self = StObject.set(x, "serviceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setServiceConfigsUndefined: Self = StObject.set(x, "serviceConfigs", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setServiceConfigsVarargs(value: SchemaService*): Self = this.set("serviceConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceConfigs(value: js.Array[SchemaService]): Self = this.set("serviceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceConfigs: Self = this.set("serviceConfigs", js.undefined)
+    def setServiceConfigsVarargs(value: SchemaService*): Self = StObject.set(x, "serviceConfigs", js.Array(value :_*))
   }
 }

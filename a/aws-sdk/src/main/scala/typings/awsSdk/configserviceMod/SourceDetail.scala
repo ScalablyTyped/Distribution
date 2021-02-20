@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceDetail extends js.Object {
+trait SourceDetail extends StObject {
   
   /**
     * The source of the event, such as an AWS service, that triggers AWS Config to evaluate your AWS resources.
@@ -31,36 +32,24 @@ object SourceDetail {
   }
   
   @scala.inline
-  implicit class SourceDetailOps[Self <: SourceDetail] (val x: Self) extends AnyVal {
+  implicit class SourceDetailMutableBuilder[Self <: SourceDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventSource(value: EventSource): Self = StObject.set(x, "EventSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventSourceUndefined: Self = StObject.set(x, "EventSource", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = StObject.set(x, "MaximumExecutionFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSource(value: EventSource): Self = this.set("EventSource", value.asInstanceOf[js.Any])
+    def setMaximumExecutionFrequencyUndefined: Self = StObject.set(x, "MaximumExecutionFrequency", js.undefined)
     
     @scala.inline
-    def deleteEventSource: Self = this.set("EventSource", js.undefined)
+    def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = this.set("MaximumExecutionFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumExecutionFrequency: Self = this.set("MaximumExecutionFrequency", js.undefined)
-    
-    @scala.inline
-    def setMessageType(value: MessageType): Self = this.set("MessageType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessageType: Self = this.set("MessageType", js.undefined)
+    def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
   }
 }

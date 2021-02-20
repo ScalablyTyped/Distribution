@@ -1,12 +1,13 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/input/Input.InputState> */
 @js.native
-trait PartialInputState extends js.Object {
+trait PartialInputState extends StObject {
   
   var focused: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object PartialInputState {
   }
   
   @scala.inline
-  implicit class PartialInputStateOps[Self <: PartialInputState] (val x: Self) extends AnyVal {
+  implicit class PartialInputStateMutableBuilder[Self <: PartialInputState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocused(value: Boolean): Self = this.set("focused", value.asInstanceOf[js.Any])
+    def setPrevValueUndefined: Self = StObject.set(x, "prevValue", js.undefined)
     
     @scala.inline
-    def deleteFocused: Self = this.set("focused", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrevValue(value: js.Any): Self = this.set("prevValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevValue: Self = this.set("prevValue", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

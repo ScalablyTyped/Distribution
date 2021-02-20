@@ -1,6 +1,7 @@
 package typings.playcanvas.global.pc
 
 import typings.playcanvas.pc.callbacks.CreateScreen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,9 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The pc.script namespace holds the createLoadingScreen function that
   * is used to override the default PlayCanvas loading screen.
   */
-@JSGlobal("pc.script")
-@js.native
-object script extends js.Object {
+object script {
   
   /**
     * Handles the creation of the loading screen of the application. A script can subscribe to
@@ -28,5 +27,7 @@ object script extends js.Object {
     * });
     * @param callback - A function which can set up and tear down a customised loading screen.
     */
+  @JSGlobal("pc.script.createLoadingScreen")
+  @js.native
   def createLoadingScreen(callback: CreateScreen): Unit = js.native
 }

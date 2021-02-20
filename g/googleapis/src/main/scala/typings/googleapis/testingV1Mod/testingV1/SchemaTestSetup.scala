@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * test.
   */
 @js.native
-trait SchemaTestSetup extends js.Object {
+trait SchemaTestSetup extends StObject {
   
   /**
     * The device will be logged in on this account for the duration of the
@@ -62,66 +63,54 @@ object SchemaTestSetup {
   }
   
   @scala.inline
-  implicit class SchemaTestSetupOps[Self <: SchemaTestSetup] (val x: Self) extends AnyVal {
+  implicit class SchemaTestSetupMutableBuilder[Self <: SchemaTestSetup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount(value: SchemaAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalApks(value: js.Array[SchemaApk]): Self = StObject.set(x, "additionalApks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount(value: SchemaAccount): Self = this.set("account", value.asInstanceOf[js.Any])
+    def setAdditionalApksUndefined: Self = StObject.set(x, "additionalApks", js.undefined)
     
     @scala.inline
-    def deleteAccount: Self = this.set("account", js.undefined)
+    def setAdditionalApksVarargs(value: SchemaApk*): Self = StObject.set(x, "additionalApks", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalApksVarargs(value: SchemaApk*): Self = this.set("additionalApks", js.Array(value :_*))
+    def setDirectoriesToPull(value: js.Array[String]): Self = StObject.set(x, "directoriesToPull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalApks(value: js.Array[SchemaApk]): Self = this.set("additionalApks", value.asInstanceOf[js.Any])
+    def setDirectoriesToPullUndefined: Self = StObject.set(x, "directoriesToPull", js.undefined)
     
     @scala.inline
-    def deleteAdditionalApks: Self = this.set("additionalApks", js.undefined)
+    def setDirectoriesToPullVarargs(value: String*): Self = StObject.set(x, "directoriesToPull", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoriesToPullVarargs(value: String*): Self = this.set("directoriesToPull", js.Array(value :_*))
+    def setEnvironmentVariables(value: js.Array[SchemaEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoriesToPull(value: js.Array[String]): Self = this.set("directoriesToPull", value.asInstanceOf[js.Any])
+    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
     @scala.inline
-    def deleteDirectoriesToPull: Self = this.set("directoriesToPull", js.undefined)
+    def setEnvironmentVariablesVarargs(value: SchemaEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
     
     @scala.inline
-    def setEnvironmentVariablesVarargs(value: SchemaEnvironmentVariable*): Self = this.set("environmentVariables", js.Array(value :_*))
+    def setFilesToPush(value: js.Array[SchemaDeviceFile]): Self = StObject.set(x, "filesToPush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentVariables(value: js.Array[SchemaEnvironmentVariable]): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    def setFilesToPushUndefined: Self = StObject.set(x, "filesToPush", js.undefined)
     
     @scala.inline
-    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    def setFilesToPushVarargs(value: SchemaDeviceFile*): Self = StObject.set(x, "filesToPush", js.Array(value :_*))
     
     @scala.inline
-    def setFilesToPushVarargs(value: SchemaDeviceFile*): Self = this.set("filesToPush", js.Array(value :_*))
+    def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilesToPush(value: js.Array[SchemaDeviceFile]): Self = this.set("filesToPush", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilesToPush: Self = this.set("filesToPush", js.undefined)
-    
-    @scala.inline
-    def setNetworkProfile(value: String): Self = this.set("networkProfile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkProfile: Self = this.set("networkProfile", js.undefined)
+    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
   }
 }

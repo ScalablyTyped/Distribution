@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.ArrayLike
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,54 +120,42 @@ object RenderCamera {
   }
   
   @scala.inline
-  implicit class RenderCameraOps[Self <: RenderCamera] (val x: Self) extends AnyVal {
+  implicit class RenderCameraMutableBuilder[Self <: RenderCamera] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: ArrayLike[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEye(value: ArrayLike[Double]): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: ArrayLike[Double]): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setFovX(value: Double): Self = StObject.set(x, "fovX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEye(value: ArrayLike[Double]): Self = this.set("eye", value.asInstanceOf[js.Any])
+    def setFovY(value: Double): Self = StObject.set(x, "fovY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFar(value: Double): Self = this.set("far", value.asInstanceOf[js.Any])
+    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFovX(value: Double): Self = this.set("fovX", value.asInstanceOf[js.Any])
+    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFovY(value: Double): Self = this.set("fovY", value.asInstanceOf[js.Any])
+    def setProjectionMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNear(value: Double): Self = this.set("near", value.asInstanceOf[js.Any])
+    def setUp(value: ArrayLike[Double]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    def setViewInverseTransposeMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewInverseTransposeMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectionMatrix(value: ArrayLike[Double]): Self = this.set("projectionMatrix", value.asInstanceOf[js.Any])
+    def setViewMatrix(value: ArrayLike[Double]): Self = StObject.set(x, "viewMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUp(value: ArrayLike[Double]): Self = this.set("up", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewInverseTransposeMatrix(value: ArrayLike[Double]): Self = this.set("viewInverseTransposeMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewMatrix(value: ArrayLike[Double]): Self = this.set("viewMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewport(value: js.Any): Self = this.set("viewport", value.asInstanceOf[js.Any])
+    def setViewport(value: js.Any): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

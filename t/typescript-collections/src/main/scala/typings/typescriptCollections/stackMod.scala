@@ -2,16 +2,26 @@ package typings.typescriptCollections
 
 import typings.typescriptCollections.utilMod.IEqualsFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-collections/dist/lib/Stack", JSImport.Namespace)
-@js.native
-object stackMod extends js.Object {
+object stackMod {
+  
+  @JSImport("typescript-collections/dist/lib/Stack", JSImport.Default)
+  @js.native
+  /**
+    * Creates an empty Stack.
+    * @class A Stack is a Last-In-First-Out (LIFO) data structure, the last
+    * element added to the stack will be the first one to be removed. This
+    * implementation uses a linked list as a container.
+    * @constructor
+    */
+  class default[T] () extends Stack[T]
   
   @js.native
-  trait Stack[T] extends js.Object {
+  trait Stack[T] extends StObject {
     
     /**
       * Pushes an item onto the top of this stack.
@@ -97,14 +107,4 @@ object stackMod extends js.Object {
       */
     def size(): Double = js.native
   }
-  
-  @js.native
-  /**
-    * Creates an empty Stack.
-    * @class A Stack is a Last-In-First-Out (LIFO) data structure, the last
-    * element added to the stack will be the first one to be removed. This
-    * implementation uses a linked list as a container.
-    * @constructor
-    */
-  class default[T] () extends Stack[T]
 }

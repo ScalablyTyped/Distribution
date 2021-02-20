@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangOptions extends js.Object {
+trait LangOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Configure the accessibility
@@ -239,243 +240,231 @@ object LangOptions {
   }
   
   @scala.inline
-  implicit class LangOptionsOps[Self <: LangOptions] (val x: Self) extends AnyVal {
+  implicit class LangOptionsMutableBuilder[Self <: LangOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibility(value: LangAccessibilityOptions): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextButtonTitle(value: String): Self = StObject.set(x, "contextButtonTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibility(value: LangAccessibilityOptions): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def setContextButtonTitleUndefined: Self = StObject.set(x, "contextButtonTitle", js.undefined)
     
     @scala.inline
-    def deleteAccessibility: Self = this.set("accessibility", js.undefined)
+    def setDecimalPoint(value: String): Self = StObject.set(x, "decimalPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextButtonTitle(value: String): Self = this.set("contextButtonTitle", value.asInstanceOf[js.Any])
+    def setDecimalPointUndefined: Self = StObject.set(x, "decimalPoint", js.undefined)
     
     @scala.inline
-    def deleteContextButtonTitle: Self = this.set("contextButtonTitle", js.undefined)
+    def setDownloadCSV(value: String): Self = StObject.set(x, "downloadCSV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimalPoint(value: String): Self = this.set("decimalPoint", value.asInstanceOf[js.Any])
+    def setDownloadCSVUndefined: Self = StObject.set(x, "downloadCSV", js.undefined)
     
     @scala.inline
-    def deleteDecimalPoint: Self = this.set("decimalPoint", js.undefined)
+    def setDownloadJPEG(value: String): Self = StObject.set(x, "downloadJPEG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadCSV(value: String): Self = this.set("downloadCSV", value.asInstanceOf[js.Any])
+    def setDownloadJPEGUndefined: Self = StObject.set(x, "downloadJPEG", js.undefined)
     
     @scala.inline
-    def deleteDownloadCSV: Self = this.set("downloadCSV", js.undefined)
+    def setDownloadPDF(value: String): Self = StObject.set(x, "downloadPDF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadJPEG(value: String): Self = this.set("downloadJPEG", value.asInstanceOf[js.Any])
+    def setDownloadPDFUndefined: Self = StObject.set(x, "downloadPDF", js.undefined)
     
     @scala.inline
-    def deleteDownloadJPEG: Self = this.set("downloadJPEG", js.undefined)
+    def setDownloadPNG(value: String): Self = StObject.set(x, "downloadPNG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadPDF(value: String): Self = this.set("downloadPDF", value.asInstanceOf[js.Any])
+    def setDownloadPNGUndefined: Self = StObject.set(x, "downloadPNG", js.undefined)
     
     @scala.inline
-    def deleteDownloadPDF: Self = this.set("downloadPDF", js.undefined)
+    def setDownloadSVG(value: String): Self = StObject.set(x, "downloadSVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadPNG(value: String): Self = this.set("downloadPNG", value.asInstanceOf[js.Any])
+    def setDownloadSVGUndefined: Self = StObject.set(x, "downloadSVG", js.undefined)
     
     @scala.inline
-    def deleteDownloadPNG: Self = this.set("downloadPNG", js.undefined)
+    def setDownloadXLS(value: String): Self = StObject.set(x, "downloadXLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadSVG(value: String): Self = this.set("downloadSVG", value.asInstanceOf[js.Any])
+    def setDownloadXLSUndefined: Self = StObject.set(x, "downloadXLS", js.undefined)
     
     @scala.inline
-    def deleteDownloadSVG: Self = this.set("downloadSVG", js.undefined)
+    def setDrillUpText(value: String): Self = StObject.set(x, "drillUpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDownloadXLS(value: String): Self = this.set("downloadXLS", value.asInstanceOf[js.Any])
+    def setDrillUpTextUndefined: Self = StObject.set(x, "drillUpText", js.undefined)
     
     @scala.inline
-    def deleteDownloadXLS: Self = this.set("downloadXLS", js.undefined)
+    def setExitFullscreen(value: String): Self = StObject.set(x, "exitFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrillUpText(value: String): Self = this.set("drillUpText", value.asInstanceOf[js.Any])
+    def setExitFullscreenUndefined: Self = StObject.set(x, "exitFullscreen", js.undefined)
     
     @scala.inline
-    def deleteDrillUpText: Self = this.set("drillUpText", js.undefined)
+    def setExportData(value: LangExportDataOptions): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitFullscreen(value: String): Self = this.set("exitFullscreen", value.asInstanceOf[js.Any])
+    def setExportDataUndefined: Self = StObject.set(x, "exportData", js.undefined)
     
     @scala.inline
-    def deleteExitFullscreen: Self = this.set("exitFullscreen", js.undefined)
+    def setHideData(value: String): Self = StObject.set(x, "hideData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportData(value: LangExportDataOptions): Self = this.set("exportData", value.asInstanceOf[js.Any])
+    def setHideDataUndefined: Self = StObject.set(x, "hideData", js.undefined)
     
     @scala.inline
-    def deleteExportData: Self = this.set("exportData", js.undefined)
+    def setInvalidDate(value: String): Self = StObject.set(x, "invalidDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideData(value: String): Self = this.set("hideData", value.asInstanceOf[js.Any])
+    def setInvalidDateUndefined: Self = StObject.set(x, "invalidDate", js.undefined)
     
     @scala.inline
-    def deleteHideData: Self = this.set("hideData", js.undefined)
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidDate(value: String): Self = this.set("invalidDate", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteInvalidDate: Self = this.set("invalidDate", js.undefined)
+    def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
     
     @scala.inline
-    def setMonthsVarargs(value: String*): Self = this.set("months", js.Array(value :_*))
+    def setNavigation(value: LangNavigationOptions): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonths(value: js.Array[String]): Self = this.set("months", value.asInstanceOf[js.Any])
+    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
     @scala.inline
-    def deleteMonths: Self = this.set("months", js.undefined)
+    def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigation(value: LangNavigationOptions): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
     
     @scala.inline
-    def deleteNavigation: Self = this.set("navigation", js.undefined)
+    def setNumericSymbolMagnitude(value: Double): Self = StObject.set(x, "numericSymbolMagnitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoData(value: String): Self = this.set("noData", value.asInstanceOf[js.Any])
+    def setNumericSymbolMagnitudeUndefined: Self = StObject.set(x, "numericSymbolMagnitude", js.undefined)
     
     @scala.inline
-    def deleteNoData: Self = this.set("noData", js.undefined)
+    def setNumericSymbols(value: js.Array[String]): Self = StObject.set(x, "numericSymbols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericSymbolMagnitude(value: Double): Self = this.set("numericSymbolMagnitude", value.asInstanceOf[js.Any])
+    def setNumericSymbolsUndefined: Self = StObject.set(x, "numericSymbols", js.undefined)
     
     @scala.inline
-    def deleteNumericSymbolMagnitude: Self = this.set("numericSymbolMagnitude", js.undefined)
+    def setNumericSymbolsVarargs(value: String*): Self = StObject.set(x, "numericSymbols", js.Array(value :_*))
     
     @scala.inline
-    def setNumericSymbolsVarargs(value: String*): Self = this.set("numericSymbols", js.Array(value :_*))
+    def setPrintChart(value: String): Self = StObject.set(x, "printChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumericSymbols(value: js.Array[String]): Self = this.set("numericSymbols", value.asInstanceOf[js.Any])
+    def setPrintChartUndefined: Self = StObject.set(x, "printChart", js.undefined)
     
     @scala.inline
-    def deleteNumericSymbols: Self = this.set("numericSymbols", js.undefined)
+    def setRangeSelectorFrom(value: String): Self = StObject.set(x, "rangeSelectorFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintChart(value: String): Self = this.set("printChart", value.asInstanceOf[js.Any])
+    def setRangeSelectorFromUndefined: Self = StObject.set(x, "rangeSelectorFrom", js.undefined)
     
     @scala.inline
-    def deletePrintChart: Self = this.set("printChart", js.undefined)
+    def setRangeSelectorTo(value: String): Self = StObject.set(x, "rangeSelectorTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeSelectorFrom(value: String): Self = this.set("rangeSelectorFrom", value.asInstanceOf[js.Any])
+    def setRangeSelectorToUndefined: Self = StObject.set(x, "rangeSelectorTo", js.undefined)
     
     @scala.inline
-    def deleteRangeSelectorFrom: Self = this.set("rangeSelectorFrom", js.undefined)
+    def setRangeSelectorZoom(value: String): Self = StObject.set(x, "rangeSelectorZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeSelectorTo(value: String): Self = this.set("rangeSelectorTo", value.asInstanceOf[js.Any])
+    def setRangeSelectorZoomUndefined: Self = StObject.set(x, "rangeSelectorZoom", js.undefined)
     
     @scala.inline
-    def deleteRangeSelectorTo: Self = this.set("rangeSelectorTo", js.undefined)
+    def setResetZoom(value: String): Self = StObject.set(x, "resetZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeSelectorZoom(value: String): Self = this.set("rangeSelectorZoom", value.asInstanceOf[js.Any])
+    def setResetZoomTitle(value: String): Self = StObject.set(x, "resetZoomTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangeSelectorZoom: Self = this.set("rangeSelectorZoom", js.undefined)
+    def setResetZoomTitleUndefined: Self = StObject.set(x, "resetZoomTitle", js.undefined)
     
     @scala.inline
-    def setResetZoom(value: String): Self = this.set("resetZoom", value.asInstanceOf[js.Any])
+    def setResetZoomUndefined: Self = StObject.set(x, "resetZoom", js.undefined)
     
     @scala.inline
-    def deleteResetZoom: Self = this.set("resetZoom", js.undefined)
+    def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetZoomTitle(value: String): Self = this.set("resetZoomTitle", value.asInstanceOf[js.Any])
+    def setShortMonthsUndefined: Self = StObject.set(x, "shortMonths", js.undefined)
     
     @scala.inline
-    def deleteResetZoomTitle: Self = this.set("resetZoomTitle", js.undefined)
+    def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
     
     @scala.inline
-    def setShortMonthsVarargs(value: String*): Self = this.set("shortMonths", js.Array(value :_*))
+    def setShortWeekdays(value: js.Array[String]): Self = StObject.set(x, "shortWeekdays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortMonths(value: js.Array[String]): Self = this.set("shortMonths", value.asInstanceOf[js.Any])
+    def setShortWeekdaysUndefined: Self = StObject.set(x, "shortWeekdays", js.undefined)
     
     @scala.inline
-    def deleteShortMonths: Self = this.set("shortMonths", js.undefined)
+    def setShortWeekdaysVarargs(value: String*): Self = StObject.set(x, "shortWeekdays", js.Array(value :_*))
     
     @scala.inline
-    def setShortWeekdaysVarargs(value: String*): Self = this.set("shortWeekdays", js.Array(value :_*))
+    def setStockTools(value: LangStockToolsOptions): Self = StObject.set(x, "stockTools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortWeekdays(value: js.Array[String]): Self = this.set("shortWeekdays", value.asInstanceOf[js.Any])
+    def setStockToolsUndefined: Self = StObject.set(x, "stockTools", js.undefined)
     
     @scala.inline
-    def deleteShortWeekdays: Self = this.set("shortWeekdays", js.undefined)
+    def setThousandsSep(value: String): Self = StObject.set(x, "thousandsSep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStockTools(value: LangStockToolsOptions): Self = this.set("stockTools", value.asInstanceOf[js.Any])
+    def setThousandsSepUndefined: Self = StObject.set(x, "thousandsSep", js.undefined)
     
     @scala.inline
-    def deleteStockTools: Self = this.set("stockTools", js.undefined)
+    def setViewData(value: String): Self = StObject.set(x, "viewData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThousandsSep(value: String): Self = this.set("thousandsSep", value.asInstanceOf[js.Any])
+    def setViewDataUndefined: Self = StObject.set(x, "viewData", js.undefined)
     
     @scala.inline
-    def deleteThousandsSep: Self = this.set("thousandsSep", js.undefined)
+    def setViewFullscreen(value: String): Self = StObject.set(x, "viewFullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewData(value: String): Self = this.set("viewData", value.asInstanceOf[js.Any])
+    def setViewFullscreenUndefined: Self = StObject.set(x, "viewFullscreen", js.undefined)
     
     @scala.inline
-    def deleteViewData: Self = this.set("viewData", js.undefined)
+    def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewFullscreen(value: String): Self = this.set("viewFullscreen", value.asInstanceOf[js.Any])
+    def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
     
     @scala.inline
-    def deleteViewFullscreen: Self = this.set("viewFullscreen", js.undefined)
+    def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
     
     @scala.inline
-    def setWeekdaysVarargs(value: String*): Self = this.set("weekdays", js.Array(value :_*))
+    def setZoomIn(value: String): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeekdays(value: js.Array[String]): Self = this.set("weekdays", value.asInstanceOf[js.Any])
+    def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
     
     @scala.inline
-    def deleteWeekdays: Self = this.set("weekdays", js.undefined)
+    def setZoomOut(value: String): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomIn(value: String): Self = this.set("zoomIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomIn: Self = this.set("zoomIn", js.undefined)
-    
-    @scala.inline
-    def setZoomOut(value: String): Self = this.set("zoomOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOut: Self = this.set("zoomOut", js.undefined)
+    def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
   }
 }

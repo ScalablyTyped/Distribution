@@ -1,11 +1,12 @@
 package typings.awsSdk.codeartifactMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRepositoriesInDomainResult extends js.Object {
+trait ListRepositoriesInDomainResult extends StObject {
   
   /**
     *  If there are additional results, this is the token for the next set of results. 
@@ -26,33 +27,21 @@ object ListRepositoriesInDomainResult {
   }
   
   @scala.inline
-  implicit class ListRepositoriesInDomainResultOps[Self <: ListRepositoriesInDomainResult] (val x: Self) extends AnyVal {
+  implicit class ListRepositoriesInDomainResultMutableBuilder[Self <: ListRepositoriesInDomainResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepositories(value: RepositorySummaryList): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setRepositoriesVarargs(value: RepositorySummary*): Self = this.set("repositories", js.Array(value :_*))
-    
-    @scala.inline
-    def setRepositories(value: RepositorySummaryList): Self = this.set("repositories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRepositories: Self = this.set("repositories", js.undefined)
+    def setRepositoriesVarargs(value: RepositorySummary*): Self = StObject.set(x, "repositories", js.Array(value :_*))
   }
 }

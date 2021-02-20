@@ -1,14 +1,14 @@
 package typings.twilioMcsClient
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-mcs-client/lib/services/transporterror", JSImport.Namespace)
-@js.native
-object transporterrorMod extends js.Object {
+object transporterrorMod {
   
+  @JSImport("twilio-mcs-client/lib/services/transporterror", "TransportError")
   @js.native
   class TransportError protected () extends Error {
     def this(message: String, code: Double, body: js.Any, status: String, headers: js.Any) = this()

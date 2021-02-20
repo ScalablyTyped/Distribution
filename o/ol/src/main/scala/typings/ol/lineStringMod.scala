@@ -2,13 +2,19 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/LineString", JSImport.Namespace)
-@js.native
-object lineStringMod extends js.Object {
+object lineStringMod {
+  
+  @JSImport("ol/geom/LineString", JSImport.Default)
+  @js.native
+  class default protected () extends LineString {
+    def this(coordinates: js.Array[Coordinate | Double]) = this()
+    def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
+  }
   
   @js.native
   trait LineString
@@ -51,11 +57,5 @@ object lineStringMod extends js.Object {
       * Return the length of the linestring on projected plane.
       */
     def getLength(): Double = js.native
-  }
-  
-  @js.native
-  class default protected () extends LineString {
-    def this(coordinates: js.Array[Coordinate | Double]) = this()
-    def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
 }

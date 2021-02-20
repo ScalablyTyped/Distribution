@@ -2,12 +2,13 @@ package typings.wordpressComponents.anon
 
 import typings.wordpressComponents.queryControlsMod.QueryControls.Order
 import typings.wordpressComponents.queryControlsMod.QueryControls.OrderBy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnOrderByChange extends js.Object {
+trait OnOrderByChange extends StObject {
   
   def onOrderByChange(orderBy: OrderBy): Unit = js.native
   
@@ -26,30 +27,18 @@ object OnOrderByChange {
   }
   
   @scala.inline
-  implicit class OnOrderByChangeOps[Self <: OnOrderByChange] (val x: Self) extends AnyVal {
+  implicit class OnOrderByChangeMutableBuilder[Self <: OnOrderByChange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnOrderByChange(value: OrderBy => Unit): Self = StObject.set(x, "onOrderByChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnOrderChange(value: Order => Unit): Self = StObject.set(x, "onOrderChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOrderByChange(value: OrderBy => Unit): Self = this.set("onOrderByChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOnOrderChange(value: Order => Unit): Self = this.set("onOrderChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOrder(value: Order): Self = this.set("order", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
   }
 }

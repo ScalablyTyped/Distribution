@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetParameterRequest extends js.Object {
+trait GetParameterRequest extends StObject {
   
   /**
     * The name of the parameter you want to query.
@@ -26,27 +27,15 @@ object GetParameterRequest {
   }
   
   @scala.inline
-  implicit class GetParameterRequestOps[Self <: GetParameterRequest] (val x: Self) extends AnyVal {
+  implicit class GetParameterRequestMutableBuilder[Self <: GetParameterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: PSParameterName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWithDecryption(value: Boolean): Self = this.set("WithDecryption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWithDecryption: Self = this.set("WithDecryption", js.undefined)
+    def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
   }
 }

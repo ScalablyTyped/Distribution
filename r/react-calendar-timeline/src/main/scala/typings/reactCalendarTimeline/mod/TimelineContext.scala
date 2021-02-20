@@ -1,11 +1,12 @@
 package typings.reactCalendarTimeline.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineContext extends js.Object {
+trait TimelineContext extends StObject {
   
   var canvasTimeEnd: Double = js.native
   
@@ -32,33 +33,21 @@ object TimelineContext {
   }
   
   @scala.inline
-  implicit class TimelineContextOps[Self <: TimelineContext] (val x: Self) extends AnyVal {
+  implicit class TimelineContextMutableBuilder[Self <: TimelineContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvasTimeEnd(value: Double): Self = StObject.set(x, "canvasTimeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanvasTimeStart(value: Double): Self = StObject.set(x, "canvasTimeStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimelineWidth(value: Double): Self = StObject.set(x, "timelineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasTimeEnd(value: Double): Self = this.set("canvasTimeEnd", value.asInstanceOf[js.Any])
+    def setVisibleTimeEnd(value: Double): Self = StObject.set(x, "visibleTimeEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasTimeStart(value: Double): Self = this.set("canvasTimeStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimelineWidth(value: Double): Self = this.set("timelineWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleTimeEnd(value: Double): Self = this.set("visibleTimeEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleTimeStart(value: Double): Self = this.set("visibleTimeStart", value.asInstanceOf[js.Any])
+    def setVisibleTimeStart(value: Double): Self = StObject.set(x, "visibleTimeStart", value.asInstanceOf[js.Any])
   }
 }

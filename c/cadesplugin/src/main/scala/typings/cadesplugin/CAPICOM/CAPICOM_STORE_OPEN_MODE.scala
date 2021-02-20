@@ -5,6 +5,7 @@ import typings.cadesplugin.cadespluginNumbers.`128`
 import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`256`
 import typings.cadesplugin.cadespluginNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,30 +36,18 @@ object CAPICOM_STORE_OPEN_MODE {
   }
   
   @scala.inline
-  implicit class CAPICOM_STORE_OPEN_MODEOps[Self <: CAPICOM_STORE_OPEN_MODE] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_STORE_OPEN_MODEMutableBuilder[Self <: CAPICOM_STORE_OPEN_MODE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_STORE_OPEN_EXISTING_ONLY(value: `128`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_EXISTING_ONLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_STORE_OPEN_INCLUDE_ARCHIVED(value: `256`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_STORE_OPEN_READ_ONLY(value: `0`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_READ_ONLY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_STORE_OPEN_EXISTING_ONLY(value: `128`): Self = this.set("CAPICOM_STORE_OPEN_EXISTING_ONLY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_STORE_OPEN_INCLUDE_ARCHIVED(value: `256`): Self = this.set("CAPICOM_STORE_OPEN_INCLUDE_ARCHIVED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_STORE_OPEN_READ_ONLY(value: `0`): Self = this.set("CAPICOM_STORE_OPEN_READ_ONLY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_STORE_OPEN_READ_WRITE(value: `1`): Self = this.set("CAPICOM_STORE_OPEN_READ_WRITE", value.asInstanceOf[js.Any])
+    def setCAPICOM_STORE_OPEN_READ_WRITE(value: `1`): Self = StObject.set(x, "CAPICOM_STORE_OPEN_READ_WRITE", value.asInstanceOf[js.Any])
   }
 }

@@ -3,13 +3,14 @@ package typings.phonon.Phonon
 import typings.awesomplete.mod.Options
 import typings.phonon.Element
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*** Main object ***/
 @js.native
-trait Phonon extends js.Object {
+trait Phonon extends StObject {
   
   def ajax(request: PhononAjaxObject): PhononAjaxReturnObject = js.native
   

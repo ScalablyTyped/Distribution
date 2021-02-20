@@ -1,12 +1,13 @@
 package typings.extjs.Ext.dd
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDragDropElement extends js.Object {
+trait IDragDropElement extends StObject {
   
   /** [Method] Returns the X position of an html element
     * @param el HTMLElement the element for which to get the position
@@ -76,72 +77,60 @@ object IDragDropElement {
   }
   
   @scala.inline
-  implicit class IDragDropElementOps[Self <: IDragDropElement] (val x: Self) extends AnyVal {
+  implicit class IDragDropElementMutableBuilder[Self <: IDragDropElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPosX(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPosXUndefined: Self = StObject.set(x, "getPosX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetPosY(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = StObject.set(x, "getPosY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPosX(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = this.set("getPosX", js.Any.fromFunction1(value))
+    def setGetPosYUndefined: Self = StObject.set(x, "getPosY", js.undefined)
     
     @scala.inline
-    def deleteGetPosX: Self = this.set("getPosX", js.undefined)
+    def setGetScrollLeft(value: () => Double): Self = StObject.set(x, "getScrollLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPosY(value: /* el */ js.UndefOr[HTMLElement] => Double): Self = this.set("getPosY", js.Any.fromFunction1(value))
+    def setGetScrollLeftUndefined: Self = StObject.set(x, "getScrollLeft", js.undefined)
     
     @scala.inline
-    def deleteGetPosY: Self = this.set("getPosY", js.undefined)
+    def setGetScrollTop(value: () => Double): Self = StObject.set(x, "getScrollTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetScrollLeft(value: () => Double): Self = this.set("getScrollLeft", js.Any.fromFunction0(value))
+    def setGetScrollTopUndefined: Self = StObject.set(x, "getScrollTop", js.undefined)
     
     @scala.inline
-    def deleteGetScrollLeft: Self = this.set("getScrollLeft", js.undefined)
+    def setGetStyle(value: (/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String]) => String): Self = StObject.set(x, "getStyle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetScrollTop(value: () => Double): Self = this.set("getScrollTop", js.Any.fromFunction0(value))
+    def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
     
     @scala.inline
-    def deleteGetScrollTop: Self = this.set("getScrollTop", js.undefined)
+    def setHandleWasClicked(value: /* node */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "handleWasClicked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStyle(value: (/* el */ js.UndefOr[HTMLElement], /* styleProp */ js.UndefOr[String]) => String): Self = this.set("getStyle", js.Any.fromFunction2(value))
+    def setHandleWasClickedUndefined: Self = StObject.set(x, "handleWasClicked", js.undefined)
     
     @scala.inline
-    def deleteGetStyle: Self = this.set("getStyle", js.undefined)
+    def setMoveToEl(value: (/* moveEl */ js.UndefOr[HTMLElement], /* targetEl */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "moveToEl", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setHandleWasClicked(value: /* node */ js.UndefOr[HTMLElement] => Unit): Self = this.set("handleWasClicked", js.Any.fromFunction1(value))
+    def setMoveToElUndefined: Self = StObject.set(x, "moveToEl", js.undefined)
     
     @scala.inline
-    def deleteHandleWasClicked: Self = this.set("handleWasClicked", js.undefined)
+    def setNumericSort(value: (/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "numericSort", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMoveToEl(value: (/* moveEl */ js.UndefOr[HTMLElement], /* targetEl */ js.UndefOr[HTMLElement]) => Unit): Self = this.set("moveToEl", js.Any.fromFunction2(value))
+    def setNumericSortUndefined: Self = StObject.set(x, "numericSort", js.undefined)
     
     @scala.inline
-    def deleteMoveToEl: Self = this.set("moveToEl", js.undefined)
+    def setSwapNode(value: (/* n1 */ js.UndefOr[HTMLElement], /* n2 */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "swapNode", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNumericSort(value: (/* a */ js.UndefOr[Double], /* b */ js.UndefOr[Double]) => Double): Self = this.set("numericSort", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteNumericSort: Self = this.set("numericSort", js.undefined)
-    
-    @scala.inline
-    def setSwapNode(value: (/* n1 */ js.UndefOr[HTMLElement], /* n2 */ js.UndefOr[HTMLElement]) => Unit): Self = this.set("swapNode", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteSwapNode: Self = this.set("swapNode", js.undefined)
+    def setSwapNodeUndefined: Self = StObject.set(x, "swapNode", js.undefined)
   }
 }

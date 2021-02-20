@@ -1,17 +1,19 @@
 package typings.protractor.anon
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable2
 import typings.seleniumWebdriver.chromeMod.Driver
 import typings.seleniumWebdriver.chromeMod.Options
 import typings.seleniumWebdriver.httpMod.Executor
 import typings.seleniumWebdriver.mod.CreateSessionCapabilities
+import typings.seleniumWebdriver.mod.Session
 import typings.seleniumWebdriver.remoteMod.DriverService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofDriverInstantiable extends Instantiable0[Driver] {
+trait TypeofDriverInstantiable extends Instantiable2[/* session */ Session, /* executor */ Executor, Driver] {
   
   /**
     * Creates a new session with the ChromeDriver.

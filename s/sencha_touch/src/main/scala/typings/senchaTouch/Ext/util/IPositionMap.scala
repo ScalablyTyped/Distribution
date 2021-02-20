@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.util
 
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,30 +28,18 @@ object IPositionMap {
   }
   
   @scala.inline
-  implicit class IPositionMapOps[Self <: IPositionMap] (val x: Self) extends AnyVal {
+  implicit class IPositionMapMutableBuilder[Self <: IPositionMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMinimumHeight(value: () => Double): Self = StObject.set(x, "getMinimumHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMinimumHeightUndefined: Self = StObject.set(x, "getMinimumHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetMinimumHeight(value: /* minimumHeight */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinimumHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMinimumHeight(value: () => Double): Self = this.set("getMinimumHeight", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetMinimumHeight: Self = this.set("getMinimumHeight", js.undefined)
-    
-    @scala.inline
-    def setSetMinimumHeight(value: /* minimumHeight */ js.UndefOr[Double] => Unit): Self = this.set("setMinimumHeight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetMinimumHeight: Self = this.set("setMinimumHeight", js.undefined)
+    def setSetMinimumHeightUndefined: Self = StObject.set(x, "setMinimumHeight", js.undefined)
   }
 }

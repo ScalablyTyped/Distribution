@@ -1,12 +1,13 @@
 package typings.auth0.mod
 
 import typings.auth0.anon.Methods
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Domain extends js.Object {
+trait Domain extends StObject {
   
   var custom_client_ip_header: js.UndefOr[String] = js.native
   
@@ -43,54 +44,42 @@ object Domain {
   }
   
   @scala.inline
-  implicit class DomainOps[Self <: Domain] (val x: Self) extends AnyVal {
+  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom_client_ip_header(value: String): Self = StObject.set(x, "custom_client_ip_header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom_client_ip_headerUndefined: Self = StObject.set(x, "custom_client_ip_header", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustom_domain_id(value: String): Self = StObject.set(x, "custom_domain_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_domain_id(value: String): Self = this.set("custom_domain_id", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setOrigin_domain_name(value: String): Self = StObject.set(x, "origin_domain_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    def setOrigin_domain_nameUndefined: Self = StObject.set(x, "origin_domain_name", js.undefined)
     
     @scala.inline
-    def setStatus(value: CustomDomainStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: CustomDomainType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStatus(value: CustomDomainStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerification(value: Methods): Self = this.set("verification", value.asInstanceOf[js.Any])
+    def setTls_policy(value: String): Self = StObject.set(x, "tls_policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_client_ip_header(value: String): Self = this.set("custom_client_ip_header", value.asInstanceOf[js.Any])
+    def setTls_policyUndefined: Self = StObject.set(x, "tls_policy", js.undefined)
     
     @scala.inline
-    def deleteCustom_client_ip_header: Self = this.set("custom_client_ip_header", js.undefined)
+    def setType(value: CustomDomainType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrigin_domain_name(value: String): Self = this.set("origin_domain_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigin_domain_name: Self = this.set("origin_domain_name", js.undefined)
-    
-    @scala.inline
-    def setTls_policy(value: String): Self = this.set("tls_policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTls_policy: Self = this.set("tls_policy", js.undefined)
+    def setVerification(value: Methods): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,36 +26,24 @@ object FeedOptions {
   }
   
   @scala.inline
-  implicit class FeedOptionsOps[Self <: FeedOptions] (val x: Self) extends AnyVal {
+  implicit class FeedOptionsMutableBuilder[Self <: FeedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContinuationUndefined: Self = StObject.set(x, "continuation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableScanInQuery(value: Boolean): Self = StObject.set(x, "enableScanInQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuation(value: String): Self = this.set("continuation", value.asInstanceOf[js.Any])
+    def setEnableScanInQueryUndefined: Self = StObject.set(x, "enableScanInQuery", js.undefined)
     
     @scala.inline
-    def deleteContinuation: Self = this.set("continuation", js.undefined)
+    def setMaxItemCount(value: Double): Self = StObject.set(x, "maxItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableScanInQuery(value: Boolean): Self = this.set("enableScanInQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableScanInQuery: Self = this.set("enableScanInQuery", js.undefined)
-    
-    @scala.inline
-    def setMaxItemCount(value: Double): Self = this.set("maxItemCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxItemCount: Self = this.set("maxItemCount", js.undefined)
+    def setMaxItemCountUndefined: Self = StObject.set(x, "maxItemCount", js.undefined)
   }
 }

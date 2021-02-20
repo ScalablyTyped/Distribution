@@ -4,12 +4,13 @@ import typings.chromeApps.chromeAppsStrings.class_
 import typings.chromeApps.chromeAppsStrings.reserved_
 import typings.chromeApps.chromeAppsStrings.standard_
 import typings.chromeApps.chromeAppsStrings.vendor_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CLASS extends js.Object {
+trait CLASS extends StObject {
   
   var CLASS: class_ = js.native
   
@@ -28,30 +29,18 @@ object CLASS {
   }
   
   @scala.inline
-  implicit class CLASSOps[Self <: CLASS] (val x: Self) extends AnyVal {
+  implicit class CLASSMutableBuilder[Self <: CLASS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLASS(value: class_): Self = StObject.set(x, "CLASS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRESERVED(value: reserved_): Self = StObject.set(x, "RESERVED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSTANDARD(value: standard_): Self = StObject.set(x, "STANDARD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLASS(value: class_): Self = this.set("CLASS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRESERVED(value: reserved_): Self = this.set("RESERVED", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTANDARD(value: standard_): Self = this.set("STANDARD", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVENDOR(value: vendor_): Self = this.set("VENDOR", value.asInstanceOf[js.Any])
+    def setVENDOR(value: vendor_): Self = StObject.set(x, "VENDOR", value.asInstanceOf[js.Any])
   }
 }

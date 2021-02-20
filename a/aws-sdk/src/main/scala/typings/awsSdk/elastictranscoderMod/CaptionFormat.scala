@@ -1,11 +1,12 @@
 package typings.awsSdk.elastictranscoderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaptionFormat extends js.Object {
+trait CaptionFormat extends StObject {
   
   /**
     * The encryption settings, if any, that you want Elastic Transcoder to apply to your caption formats.
@@ -31,36 +32,24 @@ object CaptionFormat {
   }
   
   @scala.inline
-  implicit class CaptionFormatOps[Self <: CaptionFormat] (val x: Self) extends AnyVal {
+  implicit class CaptionFormatMutableBuilder[Self <: CaptionFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: CaptionFormatFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setPattern(value: CaptionFormatPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: CaptionFormatFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("Format", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: CaptionFormatPattern): Self = this.set("Pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("Pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
   }
 }

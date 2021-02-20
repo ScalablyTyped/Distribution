@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parameter extends js.Object {
+trait Parameter extends StObject {
   
   /**
     * Get parameterization containing this parameter
@@ -97,51 +98,39 @@ object Parameter {
   }
   
   @scala.inline
-  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetContainingParameterization(value: () => Parameterization): Self = StObject.set(x, "getContainingParameterization", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLabelText(value: () => String): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContainingParameterization(value: () => Parameterization): Self = this.set("getContainingParameterization", js.Any.fromFunction0(value))
+    def setGetPeerIntervalBoundaryParameter(value: () => Parameter): Self = StObject.set(x, "getPeerIntervalBoundaryParameter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLabelText(value: () => String): Self = this.set("getLabelText", js.Any.fromFunction0(value))
+    def setGetProperty(value: () => js.Any): Self = StObject.set(x, "getProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setGetTextProperty(value: () => js.Any): Self = StObject.set(x, "getTextProperty", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPeerIntervalBoundaryParameter(value: () => Parameter): Self = this.set("getPeerIntervalBoundaryParameter", js.Any.fromFunction0(value))
+    def setGetURIToValueEntitySet(value: String => Unit): Self = StObject.set(x, "getURIToValueEntitySet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProperty(value: () => js.Any): Self = this.set("getProperty", js.Any.fromFunction0(value))
+    def setIsIntervalBoundary(value: () => Boolean): Self = StObject.set(x, "isIntervalBoundary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTextProperty(value: () => js.Any): Self = this.set("getTextProperty", js.Any.fromFunction0(value))
+    def setIsLowerIntervalBoundary(value: () => Boolean): Self = StObject.set(x, "isLowerIntervalBoundary", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetURIToValueEntitySet(value: String => Unit): Self = this.set("getURIToValueEntitySet", js.Any.fromFunction1(value))
+    def setIsOptional(value: () => Boolean): Self = StObject.set(x, "isOptional", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsIntervalBoundary(value: () => Boolean): Self = this.set("isIntervalBoundary", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsLowerIntervalBoundary(value: () => Boolean): Self = this.set("isLowerIntervalBoundary", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsOptional(value: () => Boolean): Self = this.set("isOptional", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsValueSetAvailable(value: () => Boolean): Self = this.set("isValueSetAvailable", js.Any.fromFunction0(value))
+    def setIsValueSetAvailable(value: () => Boolean): Self = StObject.set(x, "isValueSetAvailable", js.Any.fromFunction0(value))
   }
 }

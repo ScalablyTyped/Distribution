@@ -1,13 +1,13 @@
 package typings.opentelemetryApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/api/build/src/platform/node/globalThis", JSImport.Namespace)
-@js.native
-object nodeGlobalThisMod extends js.Object {
+object nodeGlobalThisMod {
   
-  @JSName("_globalThis")
+  @JSImport("@opentelemetry/api/build/src/platform/node/globalThis", "_globalThis")
+  @js.native
   val globalThis: /* globalThis */ js.Any = js.native
 }

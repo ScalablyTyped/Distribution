@@ -1,11 +1,12 @@
 package typings.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearCompositionParameters extends js.Object {
+trait ClearCompositionParameters extends StObject {
   
   /** ID of the context where the composition will be cleared */
   var contextID: Double = js.native
@@ -19,21 +20,9 @@ object ClearCompositionParameters {
   }
   
   @scala.inline
-  implicit class ClearCompositionParametersOps[Self <: ClearCompositionParameters] (val x: Self) extends AnyVal {
+  implicit class ClearCompositionParametersMutableBuilder[Self <: ClearCompositionParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContextID(value: Double): Self = this.set("contextID", value.asInstanceOf[js.Any])
+    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
   }
 }

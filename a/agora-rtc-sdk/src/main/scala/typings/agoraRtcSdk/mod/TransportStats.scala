@@ -9,6 +9,7 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.other
 import typings.agoraRtcSdk.agoraRtcSdkStrings.unknown
 import typings.agoraRtcSdk.agoraRtcSdkStrings.wifi
 import typings.agoraRtcSdk.agoraRtcSdkStrings.wimax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If {@link getTransportStats} is called successfully, this interface provides the statistics.
   */
 @js.native
-trait TransportStats extends js.Object {
+trait TransportStats extends StObject {
   
   /**
     * Network type.
@@ -58,36 +59,24 @@ object TransportStats {
   }
   
   @scala.inline
-  implicit class TransportStatsOps[Self <: TransportStats] (val x: Self) extends AnyVal {
+  implicit class TransportStatsMutableBuilder[Self <: TransportStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutgoingAvailableBandwidth(value: String): Self = StObject.set(x, "OutgoingAvailableBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = this.set("NetworkType", value.asInstanceOf[js.Any])
+    def setOutgoingAvailableBandwidthUndefined: Self = StObject.set(x, "OutgoingAvailableBandwidth", js.undefined)
     
     @scala.inline
-    def deleteNetworkType: Self = this.set("NetworkType", js.undefined)
+    def setRTT(value: String): Self = StObject.set(x, "RTT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutgoingAvailableBandwidth(value: String): Self = this.set("OutgoingAvailableBandwidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutgoingAvailableBandwidth: Self = this.set("OutgoingAvailableBandwidth", js.undefined)
-    
-    @scala.inline
-    def setRTT(value: String): Self = this.set("RTT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRTT: Self = this.set("RTT", js.undefined)
+    def setRTTUndefined: Self = StObject.set(x, "RTT", js.undefined)
   }
 }

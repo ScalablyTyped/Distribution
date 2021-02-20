@@ -2,12 +2,13 @@ package typings.vegaTypings.transformMod
 
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseBin extends js.Object {
+trait BaseBin extends StObject {
   
   /**
     * The number base to use for automatic bin determination (default is base 10).
@@ -67,63 +68,51 @@ object BaseBin {
   }
   
   @scala.inline
-  implicit class BaseBinOps[Self <: BaseBin] (val x: Self) extends AnyVal {
+  implicit class BaseBinMutableBuilder[Self <: BaseBin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase(value: Double | SignalRef): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDivide(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: Double | SignalRef): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setDivideUndefined: Self = StObject.set(x, "divide", js.undefined)
     
     @scala.inline
-    def deleteBase: Self = this.set("base", js.undefined)
+    def setMaxbins(value: Double | SignalRef): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDivide(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("divide", value.asInstanceOf[js.Any])
+    def setMaxbinsUndefined: Self = StObject.set(x, "maxbins", js.undefined)
     
     @scala.inline
-    def deleteDivide: Self = this.set("divide", js.undefined)
+    def setMinstep(value: Double | SignalRef): Self = StObject.set(x, "minstep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxbins(value: Double | SignalRef): Self = this.set("maxbins", value.asInstanceOf[js.Any])
+    def setMinstepUndefined: Self = StObject.set(x, "minstep", js.undefined)
     
     @scala.inline
-    def deleteMaxbins: Self = this.set("maxbins", js.undefined)
+    def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinstep(value: Double | SignalRef): Self = this.set("minstep", value.asInstanceOf[js.Any])
+    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
     
     @scala.inline
-    def deleteMinstep: Self = this.set("minstep", js.undefined)
+    def setStep(value: Double | SignalRef): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNice(value: Boolean | SignalRef): Self = this.set("nice", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteNice: Self = this.set("nice", js.undefined)
+    def setSteps(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double | SignalRef): Self = this.set("step", value.asInstanceOf[js.Any])
+    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
     @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setStepsVarargs(value: (Double | SignalRef)*): Self = this.set("steps", js.Array(value :_*))
-    
-    @scala.inline
-    def setSteps(value: (js.Array[Double | SignalRef]) | SignalRef): Self = this.set("steps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSteps: Self = this.set("steps", js.undefined)
+    def setStepsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

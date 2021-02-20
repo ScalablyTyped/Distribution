@@ -1,11 +1,12 @@
 package typings.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PivotFilterTopBottomCriterion extends js.Object
+sealed trait PivotFilterTopBottomCriterion extends StObject
 /**
   *
   * Represents the criteria for the top/bottom values filter.
@@ -14,7 +15,7 @@ sealed trait PivotFilterTopBottomCriterion extends js.Object
   */
 @JSGlobal("Excel.PivotFilterTopBottomCriterion")
 @js.native
-object PivotFilterTopBottomCriterion extends js.Object {
+object PivotFilterTopBottomCriterion extends StObject {
   
   @js.native
   sealed trait bottomItems extends PivotFilterTopBottomCriterion

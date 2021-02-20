@@ -1,11 +1,12 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AsideBackground extends js.Object {
+trait AsideBackground extends StObject {
   
   // Example: '#000000'
   var asideBackground: js.UndefOr[String] = js.native
@@ -27,42 +28,30 @@ object AsideBackground {
   }
   
   @scala.inline
-  implicit class AsideBackgroundOps[Self <: AsideBackground] (val x: Self) extends AnyVal {
+  implicit class AsideBackgroundMutableBuilder[Self <: AsideBackground] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsideBackground(value: String): Self = StObject.set(x, "asideBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsideBackgroundUndefined: Self = StObject.set(x, "asideBackground", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBottomMenuBackground(value: String): Self = StObject.set(x, "bottomMenuBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsideBackground(value: String): Self = this.set("asideBackground", value.asInstanceOf[js.Any])
+    def setBottomMenuBackgroundUndefined: Self = StObject.set(x, "bottomMenuBackground", js.undefined)
     
     @scala.inline
-    def deleteAsideBackground: Self = this.set("asideBackground", js.undefined)
+    def setCanvasBackground(value: String): Self = StObject.set(x, "canvasBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMenuBackground(value: String): Self = this.set("bottomMenuBackground", value.asInstanceOf[js.Any])
+    def setCanvasBackgroundUndefined: Self = StObject.set(x, "canvasBackground", js.undefined)
     
     @scala.inline
-    def deleteBottomMenuBackground: Self = this.set("bottomMenuBackground", js.undefined)
+    def setTopMenuBackground(value: String): Self = StObject.set(x, "topMenuBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasBackground(value: String): Self = this.set("canvasBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanvasBackground: Self = this.set("canvasBackground", js.undefined)
-    
-    @scala.inline
-    def setTopMenuBackground(value: String): Self = this.set("topMenuBackground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopMenuBackground: Self = this.set("topMenuBackground", js.undefined)
+    def setTopMenuBackgroundUndefined: Self = StObject.set(x, "topMenuBackground", js.undefined)
   }
 }

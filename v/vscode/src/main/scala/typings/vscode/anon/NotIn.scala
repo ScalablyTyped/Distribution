@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotIn extends js.Object {
+trait NotIn extends StObject {
   
   var close: String = js.native
   
@@ -22,33 +23,21 @@ object NotIn {
   }
   
   @scala.inline
-  implicit class NotInOps[Self <: NotIn] (val x: Self) extends AnyVal {
+  implicit class NotInMutableBuilder[Self <: NotIn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
     
     @scala.inline
-    def setOpen(value: String): Self = this.set("open", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotInVarargs(value: String*): Self = this.set("notIn", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotIn(value: js.Array[String]): Self = this.set("notIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotIn: Self = this.set("notIn", js.undefined)
+    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

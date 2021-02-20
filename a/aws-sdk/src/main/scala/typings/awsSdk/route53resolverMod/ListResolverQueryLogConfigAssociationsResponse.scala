@@ -1,11 +1,12 @@
 package typings.awsSdk.route53resolverMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResolverQueryLogConfigAssociationsResponse extends js.Object {
+trait ListResolverQueryLogConfigAssociationsResponse extends StObject {
   
   /**
     * If there are more than MaxResults query logging associations, you can submit another ListResolverQueryLogConfigAssociations request to get the next group of associations. In the next request, specify the value of NextToken from the previous response. 
@@ -36,45 +37,33 @@ object ListResolverQueryLogConfigAssociationsResponse {
   }
   
   @scala.inline
-  implicit class ListResolverQueryLogConfigAssociationsResponseOps[Self <: ListResolverQueryLogConfigAssociationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListResolverQueryLogConfigAssociationsResponseMutableBuilder[Self <: ListResolverQueryLogConfigAssociationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolverQueryLogConfigAssociations(value: ResolverQueryLogConfigAssociationList): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResolverQueryLogConfigAssociationsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setResolverQueryLogConfigAssociationsVarargs(value: ResolverQueryLogConfigAssociation*): Self = StObject.set(x, "ResolverQueryLogConfigAssociations", js.Array(value :_*))
     
     @scala.inline
-    def setResolverQueryLogConfigAssociationsVarargs(value: ResolverQueryLogConfigAssociation*): Self = this.set("ResolverQueryLogConfigAssociations", js.Array(value :_*))
+    def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolverQueryLogConfigAssociations(value: ResolverQueryLogConfigAssociationList): Self = this.set("ResolverQueryLogConfigAssociations", value.asInstanceOf[js.Any])
+    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
     
     @scala.inline
-    def deleteResolverQueryLogConfigAssociations: Self = this.set("ResolverQueryLogConfigAssociations", js.undefined)
+    def setTotalFilteredCount(value: Count): Self = StObject.set(x, "TotalFilteredCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalCount(value: Count): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
-    
-    @scala.inline
-    def setTotalFilteredCount(value: Count): Self = this.set("TotalFilteredCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalFilteredCount: Self = this.set("TotalFilteredCount", js.undefined)
+    def setTotalFilteredCountUndefined: Self = StObject.set(x, "TotalFilteredCount", js.undefined)
   }
 }

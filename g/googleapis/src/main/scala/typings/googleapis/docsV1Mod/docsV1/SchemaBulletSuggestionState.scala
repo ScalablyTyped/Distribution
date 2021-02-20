@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * suggested value.
   */
 @js.native
-trait SchemaBulletSuggestionState extends js.Object {
+trait SchemaBulletSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to the list_id.
@@ -37,36 +38,24 @@ object SchemaBulletSuggestionState {
   }
   
   @scala.inline
-  implicit class SchemaBulletSuggestionStateOps[Self <: SchemaBulletSuggestionState] (val x: Self) extends AnyVal {
+  implicit class SchemaBulletSuggestionStateMutableBuilder[Self <: SchemaBulletSuggestionState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setListIdSuggested(value: Boolean): Self = StObject.set(x, "listIdSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setListIdSuggestedUndefined: Self = StObject.set(x, "listIdSuggested", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNestingLevelSuggested(value: Boolean): Self = StObject.set(x, "nestingLevelSuggested", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListIdSuggested(value: Boolean): Self = this.set("listIdSuggested", value.asInstanceOf[js.Any])
+    def setNestingLevelSuggestedUndefined: Self = StObject.set(x, "nestingLevelSuggested", js.undefined)
     
     @scala.inline
-    def deleteListIdSuggested: Self = this.set("listIdSuggested", js.undefined)
+    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestingLevelSuggested(value: Boolean): Self = this.set("nestingLevelSuggested", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNestingLevelSuggested: Self = this.set("nestingLevelSuggested", js.undefined)
-    
-    @scala.inline
-    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = this.set("textStyleSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyleSuggestionState: Self = this.set("textStyleSuggestionState", js.undefined)
+    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
   }
 }

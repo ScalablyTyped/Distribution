@@ -1,12 +1,13 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "SelectQueryRules")
 @js.native
-class SelectQueryRules () extends js.Object {
+class SelectQueryRules () extends StObject {
   
   def append(appendToCurrent: String): SelectQueryRules = js.native
   
@@ -69,17 +70,26 @@ class SelectQueryRules () extends js.Object {
   
   def toRawObject(): RawRules = js.native
 }
-/* static members */
-@JSImport("node-mysql-wrapper", "SelectQueryRules")
-@js.native
-object SelectQueryRules extends js.Object {
+object SelectQueryRules {
   
-   //auto den benei oute sto last, oute sto from.
+  //auto den benei oute sto last, oute sto from.
+  /* static member */
+  @JSImport("node-mysql-wrapper", "SelectQueryRules.build")
+  @js.native
   def build(): SelectQueryRules = js.native
   
+  /* static member */
+  @JSImport("node-mysql-wrapper", "SelectQueryRules.fromRawObject")
+  @js.native
   def fromRawObject(obj: RawRules): SelectQueryRules = js.native
   
+  /* static member */
+  @JSImport("node-mysql-wrapper", "SelectQueryRules.toRawObject")
+  @js.native
   def toRawObject(rules: SelectQueryRules): RawRules = js.native
   
-  def toString(rules: SelectQueryRules): String = js.native
+  /* static member */
+  @JSImport("node-mysql-wrapper", "SelectQueryRules.toString")
+  @js.native
+  def toString_(rules: SelectQueryRules): String = js.native
 }

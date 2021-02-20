@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.UI.Text
 
 import typings.winrtUwp.Windows.UI.Text.TabLeader.equals
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The character that is used to fill the space taken by a tab character. */
 @JSGlobal("Windows.UI.Text.TabLeader")
 @js.native
-object TabLeader extends js.Object {
+object TabLeader extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.Text.TabLeader with Double] = js.native

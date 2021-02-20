@@ -1,13 +1,14 @@
 package typings.jsprintmanager.mod.JSPM
 
 import typings.jsprintmanager.mod.zip.Reader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.PrintFile")
 @js.native
-class PrintFile protected () extends js.Object {
+class PrintFile protected () extends StObject {
   def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String) = this()
   def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String, copies: Double) = this()
   

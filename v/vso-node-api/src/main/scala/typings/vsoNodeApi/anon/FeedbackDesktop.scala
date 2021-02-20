@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeedbackDesktop extends js.Object {
+trait FeedbackDesktop extends StObject {
   
   var feedbackDesktop: scala.Double = js.native
   
@@ -38,39 +39,27 @@ object FeedbackDesktop {
   }
   
   @scala.inline
-  implicit class FeedbackDesktopOps[Self <: FeedbackDesktop] (val x: Self) extends AnyVal {
+  implicit class FeedbackDesktopMutableBuilder[Self <: FeedbackDesktop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeedbackDesktop(value: scala.Double): Self = StObject.set(x, "feedbackDesktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeedbackWeb(value: scala.Double): Self = StObject.set(x, "feedbackWeb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSessionInsightsForAll(value: scala.Double): Self = StObject.set(x, "sessionInsightsForAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackDesktop(value: scala.Double): Self = this.set("feedbackDesktop", value.asInstanceOf[js.Any])
+    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackWeb(value: scala.Double): Self = this.set("feedbackWeb", value.asInstanceOf[js.Any])
+    def setXTDesktop(value: scala.Double): Self = StObject.set(x, "xTDesktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionInsightsForAll(value: scala.Double): Self = this.set("sessionInsightsForAll", value.asInstanceOf[js.Any])
+    def setXTDesktop2(value: scala.Double): Self = StObject.set(x, "xTDesktop2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknown(value: scala.Double): Self = this.set("unknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXTDesktop(value: scala.Double): Self = this.set("xTDesktop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXTDesktop2(value: scala.Double): Self = this.set("xTDesktop2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setXTWeb(value: scala.Double): Self = this.set("xTWeb", value.asInstanceOf[js.Any])
+    def setXTWeb(value: scala.Double): Self = StObject.set(x, "xTWeb", value.asInstanceOf[js.Any])
   }
 }

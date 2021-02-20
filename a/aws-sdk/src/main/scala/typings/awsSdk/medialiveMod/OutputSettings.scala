@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputSettings extends js.Object {
+trait OutputSettings extends StObject {
   
   var ArchiveOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.ArchiveOutputSettings] = js.native
   
@@ -32,66 +33,54 @@ object OutputSettings {
   }
   
   @scala.inline
-  implicit class OutputSettingsOps[Self <: OutputSettings] (val x: Self) extends AnyVal {
+  implicit class OutputSettingsMutableBuilder[Self <: OutputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveOutputSettings(value: ArchiveOutputSettings): Self = StObject.set(x, "ArchiveOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveOutputSettingsUndefined: Self = StObject.set(x, "ArchiveOutputSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameCaptureOutputSettings(value: FrameCaptureOutputSettings): Self = StObject.set(x, "FrameCaptureOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveOutputSettings(value: ArchiveOutputSettings): Self = this.set("ArchiveOutputSettings", value.asInstanceOf[js.Any])
+    def setFrameCaptureOutputSettingsUndefined: Self = StObject.set(x, "FrameCaptureOutputSettings", js.undefined)
     
     @scala.inline
-    def deleteArchiveOutputSettings: Self = this.set("ArchiveOutputSettings", js.undefined)
+    def setHlsOutputSettings(value: HlsOutputSettings): Self = StObject.set(x, "HlsOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameCaptureOutputSettings(value: FrameCaptureOutputSettings): Self = this.set("FrameCaptureOutputSettings", value.asInstanceOf[js.Any])
+    def setHlsOutputSettingsUndefined: Self = StObject.set(x, "HlsOutputSettings", js.undefined)
     
     @scala.inline
-    def deleteFrameCaptureOutputSettings: Self = this.set("FrameCaptureOutputSettings", js.undefined)
+    def setMediaPackageOutputSettings(value: MediaPackageOutputSettings): Self = StObject.set(x, "MediaPackageOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHlsOutputSettings(value: HlsOutputSettings): Self = this.set("HlsOutputSettings", value.asInstanceOf[js.Any])
+    def setMediaPackageOutputSettingsUndefined: Self = StObject.set(x, "MediaPackageOutputSettings", js.undefined)
     
     @scala.inline
-    def deleteHlsOutputSettings: Self = this.set("HlsOutputSettings", js.undefined)
+    def setMsSmoothOutputSettings(value: MsSmoothOutputSettings): Self = StObject.set(x, "MsSmoothOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaPackageOutputSettings(value: MediaPackageOutputSettings): Self = this.set("MediaPackageOutputSettings", value.asInstanceOf[js.Any])
+    def setMsSmoothOutputSettingsUndefined: Self = StObject.set(x, "MsSmoothOutputSettings", js.undefined)
     
     @scala.inline
-    def deleteMediaPackageOutputSettings: Self = this.set("MediaPackageOutputSettings", js.undefined)
+    def setMultiplexOutputSettings(value: MultiplexOutputSettings): Self = StObject.set(x, "MultiplexOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMsSmoothOutputSettings(value: MsSmoothOutputSettings): Self = this.set("MsSmoothOutputSettings", value.asInstanceOf[js.Any])
+    def setMultiplexOutputSettingsUndefined: Self = StObject.set(x, "MultiplexOutputSettings", js.undefined)
     
     @scala.inline
-    def deleteMsSmoothOutputSettings: Self = this.set("MsSmoothOutputSettings", js.undefined)
+    def setRtmpOutputSettings(value: RtmpOutputSettings): Self = StObject.set(x, "RtmpOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplexOutputSettings(value: MultiplexOutputSettings): Self = this.set("MultiplexOutputSettings", value.asInstanceOf[js.Any])
+    def setRtmpOutputSettingsUndefined: Self = StObject.set(x, "RtmpOutputSettings", js.undefined)
     
     @scala.inline
-    def deleteMultiplexOutputSettings: Self = this.set("MultiplexOutputSettings", js.undefined)
+    def setUdpOutputSettings(value: UdpOutputSettings): Self = StObject.set(x, "UdpOutputSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtmpOutputSettings(value: RtmpOutputSettings): Self = this.set("RtmpOutputSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRtmpOutputSettings: Self = this.set("RtmpOutputSettings", js.undefined)
-    
-    @scala.inline
-    def setUdpOutputSettings(value: UdpOutputSettings): Self = this.set("UdpOutputSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUdpOutputSettings: Self = this.set("UdpOutputSettings", js.undefined)
+    def setUdpOutputSettingsUndefined: Self = StObject.set(x, "UdpOutputSettings", js.undefined)
   }
 }

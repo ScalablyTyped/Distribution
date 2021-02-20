@@ -1,6 +1,5 @@
 package typings.astTypes.namedTypesMod.namedTypes
 
-import org.scalablytyped.runtime.TopLevel
 import typings.astTypes.astTypesStrings.Ampersand
 import typings.astTypes.astTypesStrings.Asterisk
 import typings.astTypes.astTypesStrings.AsteriskAsterisk
@@ -28,6 +27,7 @@ import typings.astTypes.kindsMod.NodeKind
 import typings.astTypes.kindsMod.PrintableKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,12 +46,54 @@ trait BinaryExpression
   
   var loc: js.UndefOr[SourceLocationKind | Null] = js.native
   
-  var operator: EqualssignEqualssign | ExclamationmarkEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | LessthansignLessthansign | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | Plussign | `-_` | Asterisk | Slash | Percentsign | Ampersand | Verticalline | typings.astTypes.astTypesStrings.^  | in | instanceof | AsteriskAsterisk = js.native
+  var operator: EqualssignEqualssign | ExclamationmarkEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | LessthansignLessthansign | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | Plussign | `-_` | Asterisk | Slash | Percentsign | Ampersand | Verticalline | typings.astTypes.astTypesStrings.^ | in | instanceof | AsteriskAsterisk = js.native
   
   var right: ExpressionKind = js.native
   
   var `type`: typings.astTypes.astTypesStrings.BinaryExpression = js.native
 }
-@JSImport("ast-types/gen/namedTypes", "namedTypes.BinaryExpression")
-@js.native
-object BinaryExpression extends TopLevel[Type[BinaryExpression]]
+object BinaryExpression {
+  
+  @JSImport("ast-types/gen/namedTypes", "namedTypes.BinaryExpression")
+  @js.native
+  val ^ : Type[BinaryExpression] = js.native
+  
+  @scala.inline
+  implicit class BinaryExpressionMutableBuilder[Self <: BinaryExpression] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    
+    @scala.inline
+    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    @scala.inline
+    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    
+    @scala.inline
+    def setLeft(value: ExpressionKind): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocNull: Self = StObject.set(x, "loc", null)
+    
+    @scala.inline
+    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    
+    @scala.inline
+    def setOperator(
+      value: EqualssignEqualssign | ExclamationmarkEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | LessthansignLessthansign | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | Plussign | `-_` | Asterisk | Slash | Percentsign | Ampersand | Verticalline | typings.astTypes.astTypesStrings.^ | in | instanceof | AsteriskAsterisk
+    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRight(value: ExpressionKind): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: typings.astTypes.astTypesStrings.BinaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

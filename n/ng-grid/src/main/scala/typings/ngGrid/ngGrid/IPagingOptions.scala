@@ -1,11 +1,12 @@
 package typings.ngGrid.ngGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPagingOptions extends js.Object {
+trait IPagingOptions extends StObject {
   
   /** currentPage: the uhm... current page. */
   var currentPage: js.UndefOr[Double] = js.native
@@ -28,45 +29,33 @@ object IPagingOptions {
   }
   
   @scala.inline
-  implicit class IPagingOptionsOps[Self <: IPagingOptions] (val x: Self) extends AnyVal {
+  implicit class IPagingOptionsMutableBuilder[Self <: IPagingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPage(value: Double): Self = this.set("currentPage", value.asInstanceOf[js.Any])
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def deleteCurrentPage: Self = this.set("currentPage", js.undefined)
+    def setPageSizes(value: js.Array[Double]): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
     
     @scala.inline
-    def setPageSizesVarargs(value: Double*): Self = this.set("pageSizes", js.Array(value :_*))
+    def setTotalServerItems(value: Double): Self = StObject.set(x, "totalServerItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSizes(value: js.Array[Double]): Self = this.set("pageSizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSizes: Self = this.set("pageSizes", js.undefined)
-    
-    @scala.inline
-    def setTotalServerItems(value: Double): Self = this.set("totalServerItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalServerItems: Self = this.set("totalServerItems", js.undefined)
+    def setTotalServerItemsUndefined: Self = StObject.set(x, "totalServerItems", js.undefined)
   }
 }

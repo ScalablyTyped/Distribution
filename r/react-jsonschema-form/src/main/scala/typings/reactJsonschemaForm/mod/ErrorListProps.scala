@@ -1,12 +1,13 @@
 package typings.reactJsonschemaForm.mod
 
 import typings.jsonSchema.mod.JSONSchema6
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorListProps extends js.Object {
+trait ErrorListProps extends StObject {
   
   var errorSchema: FormValidation = js.native
   
@@ -33,36 +34,24 @@ object ErrorListProps {
   }
   
   @scala.inline
-  implicit class ErrorListPropsOps[Self <: ErrorListProps] (val x: Self) extends AnyVal {
+  implicit class ErrorListPropsMutableBuilder[Self <: ErrorListProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorSchema(value: FormValidation): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrors(value: js.Array[AjvError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorsVarargs(value: AjvError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setErrorSchema(value: FormValidation): Self = this.set("errorSchema", value.asInstanceOf[js.Any])
+    def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorsVarargs(value: AjvError*): Self = this.set("errors", js.Array(value :_*))
+    def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[AjvError]): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormContext(value: js.Any): Self = this.set("formContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchema(value: JSONSchema6): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUiSchema(value: UiSchema): Self = this.set("uiSchema", value.asInstanceOf[js.Any])
+    def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
   }
 }

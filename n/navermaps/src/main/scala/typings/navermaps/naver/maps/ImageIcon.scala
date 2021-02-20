@@ -1,11 +1,12 @@
 package typings.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageIcon extends js.Object {
+trait ImageIcon extends StObject {
   
   var anchor: js.UndefOr[Point | PointLiteral | Position] = js.native
   
@@ -26,45 +27,33 @@ object ImageIcon {
   }
   
   @scala.inline
-  implicit class ImageIconOps[Self <: ImageIcon] (val x: Self) extends AnyVal {
+  implicit class ImageIconMutableBuilder[Self <: ImageIcon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Point | PointLiteral | Position): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigin(value: Point | PointLiteral): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def setAnchor(value: Point | PointLiteral | Position): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setScaledSize(value: Size | SizeLiteral): Self = StObject.set(x, "scaledSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setScaledSizeUndefined: Self = StObject.set(x, "scaledSize", js.undefined)
     
     @scala.inline
-    def setOrigin(value: Point | PointLiteral): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setSize(value: Size | SizeLiteral): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setScaledSize(value: Size | SizeLiteral): Self = this.set("scaledSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaledSize: Self = this.set("scaledSize", js.undefined)
-    
-    @scala.inline
-    def setSize(value: Size | SizeLiteral): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

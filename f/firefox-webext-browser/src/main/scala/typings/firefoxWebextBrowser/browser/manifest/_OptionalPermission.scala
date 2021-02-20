@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tabHide
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.topSites
 */
-trait _OptionalPermission extends js.Object
+trait _OptionalPermission extends StObject
 object _OptionalPermission {
   
   @scala.inline

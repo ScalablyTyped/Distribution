@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeployedImage extends js.Object {
+trait DeployedImage extends StObject {
   
   /**
     * The date and time when the image path for the model resolved to the ResolvedImage 
@@ -31,36 +32,24 @@ object DeployedImage {
   }
   
   @scala.inline
-  implicit class DeployedImageOps[Self <: DeployedImage] (val x: Self) extends AnyVal {
+  implicit class DeployedImageMutableBuilder[Self <: DeployedImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResolutionTime(value: Timestamp): Self = StObject.set(x, "ResolutionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResolutionTimeUndefined: Self = StObject.set(x, "ResolutionTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedImage(value: ContainerImage): Self = StObject.set(x, "ResolvedImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionTime(value: Timestamp): Self = this.set("ResolutionTime", value.asInstanceOf[js.Any])
+    def setResolvedImageUndefined: Self = StObject.set(x, "ResolvedImage", js.undefined)
     
     @scala.inline
-    def deleteResolutionTime: Self = this.set("ResolutionTime", js.undefined)
+    def setSpecifiedImage(value: ContainerImage): Self = StObject.set(x, "SpecifiedImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvedImage(value: ContainerImage): Self = this.set("ResolvedImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResolvedImage: Self = this.set("ResolvedImage", js.undefined)
-    
-    @scala.inline
-    def setSpecifiedImage(value: ContainerImage): Self = this.set("SpecifiedImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecifiedImage: Self = this.set("SpecifiedImage", js.undefined)
+    def setSpecifiedImageUndefined: Self = StObject.set(x, "SpecifiedImage", js.undefined)
   }
 }

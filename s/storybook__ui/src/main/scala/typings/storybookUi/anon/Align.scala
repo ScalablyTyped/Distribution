@@ -3,12 +3,13 @@ package typings.storybookUi.anon
 import typings.react.mod.CSSProperties
 import typings.storybookUi.storybookUiStrings.bottom
 import typings.storybookUi.storybookUiStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Align extends js.Object {
+trait Align extends StObject {
   
   var align: bottom | right = js.native
   
@@ -25,27 +26,15 @@ object Align {
   }
   
   @scala.inline
-  implicit class AlignOps[Self <: Align] (val x: Self) extends AnyVal {
+  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: bottom | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlign(value: bottom | right): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: CSSProperties): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: CSSProperties): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

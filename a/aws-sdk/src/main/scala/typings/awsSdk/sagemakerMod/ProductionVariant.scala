@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductionVariant extends js.Object {
+trait ProductionVariant extends StObject {
   
   /**
     * The size of the Elastic Inference (EI) instance to use for the production variant. EI instances provide on-demand GPU computing for inference. For more information, see Using Elastic Inference in Amazon SageMaker.
@@ -51,42 +52,30 @@ object ProductionVariant {
   }
   
   @scala.inline
-  implicit class ProductionVariantOps[Self <: ProductionVariant] (val x: Self) extends AnyVal {
+  implicit class ProductionVariantMutableBuilder[Self <: ProductionVariant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorType(value: ProductionVariantAcceleratorType): Self = StObject.set(x, "AcceleratorType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorTypeUndefined: Self = StObject.set(x, "AcceleratorType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialInstanceCount(value: TaskCount): Self = StObject.set(x, "InitialInstanceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialInstanceCount(value: TaskCount): Self = this.set("InitialInstanceCount", value.asInstanceOf[js.Any])
+    def setInitialVariantWeight(value: VariantWeight): Self = StObject.set(x, "InitialVariantWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: ProductionVariantInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setInitialVariantWeightUndefined: Self = StObject.set(x, "InitialVariantWeight", js.undefined)
     
     @scala.inline
-    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    def setInstanceType(value: ProductionVariantInstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariantName(value: VariantName): Self = this.set("VariantName", value.asInstanceOf[js.Any])
+    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleratorType(value: ProductionVariantAcceleratorType): Self = this.set("AcceleratorType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcceleratorType: Self = this.set("AcceleratorType", js.undefined)
-    
-    @scala.inline
-    def setInitialVariantWeight(value: VariantWeight): Self = this.set("InitialVariantWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialVariantWeight: Self = this.set("InitialVariantWeight", js.undefined)
+    def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
   }
 }

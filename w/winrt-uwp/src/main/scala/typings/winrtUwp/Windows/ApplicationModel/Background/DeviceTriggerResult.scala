@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceTriggerResult extends js.Object
+sealed trait DeviceTriggerResult extends StObject
 /** Indicates whether the device background task operation was allowed or denied, and if it was denied specifies the reason. */
 @JSGlobal("Windows.ApplicationModel.Background.DeviceTriggerResult")
 @js.native
-object DeviceTriggerResult extends js.Object {
+object DeviceTriggerResult extends StObject {
   
   /** The device background task was triggered. */
   @js.native

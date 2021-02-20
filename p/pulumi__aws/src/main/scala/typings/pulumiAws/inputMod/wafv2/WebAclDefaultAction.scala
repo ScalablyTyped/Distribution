@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclDefaultAction extends js.Object {
+trait WebAclDefaultAction extends StObject {
   
   /**
     * Specifies that AWS WAF should allow requests by default.
@@ -27,30 +28,18 @@ object WebAclDefaultAction {
   }
   
   @scala.inline
-  implicit class WebAclDefaultActionOps[Self <: WebAclDefaultAction] (val x: Self) extends AnyVal {
+  implicit class WebAclDefaultActionMutableBuilder[Self <: WebAclDefaultAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow(value: Input[WebAclDefaultActionAllow]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlock(value: Input[WebAclDefaultActionBlock]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow(value: Input[WebAclDefaultActionAllow]): Self = this.set("allow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllow: Self = this.set("allow", js.undefined)
-    
-    @scala.inline
-    def setBlock(value: Input[WebAclDefaultActionBlock]): Self = this.set("block", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlock: Self = this.set("block", js.undefined)
+    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
   }
 }

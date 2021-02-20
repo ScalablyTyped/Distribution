@@ -1,11 +1,12 @@
 package typings.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentInfo extends js.Object {
+trait AgentInfo extends StObject {
   
   var creation_time: String = js.native
   
@@ -40,45 +41,33 @@ object AgentInfo {
   }
   
   @scala.inline
-  implicit class AgentInfoOps[Self <: AgentInfo] (val x: Self) extends AnyVal {
+  implicit class AgentInfoMutableBuilder[Self <: AgentInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreation_time(value: String): Self = this.set("creation_time", value.asInstanceOf[js.Any])
+    def setMetrics(value: js.Any): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDid(value: DID): Self = this.set("did", value.asInstanceOf[js.Any])
+    def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpiration(value: Double): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetrics(value: js.Any): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setRoleNull: Self = StObject.set(x, "role", null)
     
     @scala.inline
-    def setName(value: AgentName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUrl(value: AgentURL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: AgentURL): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerkey(value: Verkey): Self = this.set("verkey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoleNull: Self = this.set("role", null)
+    def setVerkey(value: Verkey): Self = StObject.set(x, "verkey", value.asInstanceOf[js.Any])
   }
 }

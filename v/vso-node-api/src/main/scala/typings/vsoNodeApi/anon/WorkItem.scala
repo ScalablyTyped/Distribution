@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkItem extends js.Object {
+trait WorkItem extends StObject {
   
   var workItem: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object WorkItem {
   }
   
   @scala.inline
-  implicit class WorkItemOps[Self <: WorkItem] (val x: Self) extends AnyVal {
+  implicit class WorkItemMutableBuilder[Self <: WorkItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkItem(value: scala.Double): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkItem(value: scala.Double): Self = this.set("workItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkItemLink(value: scala.Double): Self = this.set("workItemLink", value.asInstanceOf[js.Any])
+    def setWorkItemLink(value: scala.Double): Self = StObject.set(x, "workItemLink", value.asInstanceOf[js.Any])
   }
 }

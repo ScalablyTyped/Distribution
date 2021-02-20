@@ -2,14 +2,14 @@ package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_gpu_depthwise", JSImport.Namespace)
-@js.native
-object convGpuDepthwiseMod extends js.Object {
+object convGpuDepthwiseMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_gpu_depthwise", "DepthwiseConv2DProgram")
   @js.native
   class DepthwiseConv2DProgram protected () extends GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()

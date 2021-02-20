@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationsFibonacciTypeOptions extends js.Object {
+trait AnnotationsFibonacciTypeOptions extends StObject {
   
   /**
     * (Highstock) An array of background colors: Default to: (see online
@@ -61,78 +62,66 @@ object AnnotationsFibonacciTypeOptions {
   }
   
   @scala.inline
-  implicit class AnnotationsFibonacciTypeOptionsOps[Self <: AnnotationsFibonacciTypeOptions] (val x: Self) extends AnyVal {
+  implicit class AnnotationsFibonacciTypeOptionsMutableBuilder[Self <: AnnotationsFibonacciTypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColors(value: js.Object): Self = StObject.set(x, "backgroundColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorsUndefined: Self = StObject.set(x, "backgroundColors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColors(value: js.Object): Self = this.set("backgroundColors", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColors: Self = this.set("backgroundColors", js.undefined)
+    def setLabels(value: js.Array[AnnotationsFibonacciTypeLabelsOptions]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setLabelsVarargs(value: AnnotationsFibonacciTypeLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: AnnotationsFibonacciTypeLabelsOptions*): Self = this.set("labels", js.Array(value :_*))
+    def setLine(value: AnnotationsFibonacciTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[AnnotationsFibonacciTypeLabelsOptions]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
     @scala.inline
-    def setLine(value: AnnotationsFibonacciTypeLineOptions): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLineColors(value: js.Object): Self = StObject.set(x, "lineColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineColorsUndefined: Self = StObject.set(x, "lineColors", js.undefined)
     
     @scala.inline
-    def setLineColor(value: String): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    def setPoints(value: js.Array[AnnotationsFibonacciTypePointsOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineColors(value: js.Object): Self = this.set("lineColors", value.asInstanceOf[js.Any])
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def deleteLineColors: Self = this.set("lineColors", js.undefined)
+    def setPointsVarargs(value: AnnotationsFibonacciTypePointsOptions*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: AnnotationsFibonacciTypePointsOptions*): Self = this.set("points", js.Array(value :_*))
+    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[AnnotationsFibonacciTypePointsOptions]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxis(value: Double): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXAxis: Self = this.set("xAxis", js.undefined)
-    
-    @scala.inline
-    def setYAxis(value: Double): Self = this.set("yAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxis: Self = this.set("yAxis", js.undefined)
+    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

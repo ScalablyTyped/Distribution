@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  defaultCanSort :boolean,   disableSortBy :boolean,   sortDescFirst :boolean,   sortInverted :boolean,   sortType :react-table.react-table.SortByFn<D> | react-table.react-table.DefaultSortTypes | string}> */
 @js.native
-trait UseSortByColumnOptions[D /* <: js.Object */] extends js.Object {
+trait UseSortByColumnOptions[D /* <: js.Object */] extends StObject {
   
   var defaultCanSort: js.UndefOr[Boolean] = js.native
   
@@ -27,53 +28,41 @@ object UseSortByColumnOptions {
   }
   
   @scala.inline
-  implicit class UseSortByColumnOptionsOps[Self <: UseSortByColumnOptions[_], D /* <: js.Object */] (val x: Self with UseSortByColumnOptions[D]) extends AnyVal {
+  implicit class UseSortByColumnOptionsMutableBuilder[Self <: UseSortByColumnOptions[_], D /* <: js.Object */] (val x: Self with UseSortByColumnOptions[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultCanSortUndefined: Self = StObject.set(x, "defaultCanSort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableSortBy(value: Boolean): Self = StObject.set(x, "disableSortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCanSort(value: Boolean): Self = this.set("defaultCanSort", value.asInstanceOf[js.Any])
+    def setDisableSortByUndefined: Self = StObject.set(x, "disableSortBy", js.undefined)
     
     @scala.inline
-    def deleteDefaultCanSort: Self = this.set("defaultCanSort", js.undefined)
+    def setSortDescFirst(value: Boolean): Self = StObject.set(x, "sortDescFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableSortBy(value: Boolean): Self = this.set("disableSortBy", value.asInstanceOf[js.Any])
+    def setSortDescFirstUndefined: Self = StObject.set(x, "sortDescFirst", js.undefined)
     
     @scala.inline
-    def deleteDisableSortBy: Self = this.set("disableSortBy", js.undefined)
+    def setSortInverted(value: Boolean): Self = StObject.set(x, "sortInverted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortDescFirst(value: Boolean): Self = this.set("sortDescFirst", value.asInstanceOf[js.Any])
+    def setSortInvertedUndefined: Self = StObject.set(x, "sortInverted", js.undefined)
     
     @scala.inline
-    def deleteSortDescFirst: Self = this.set("sortDescFirst", js.undefined)
-    
-    @scala.inline
-    def setSortInverted(value: Boolean): Self = this.set("sortInverted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortInverted: Self = this.set("sortInverted", js.undefined)
+    def setSortType(value: SortByFn[D] | DefaultSortTypes | String): Self = StObject.set(x, "sortType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSortTypeFunction4(
       value: (/* rowA */ Row[D], /* rowB */ Row[D], /* columnId */ IdType[D], /* desc */ js.UndefOr[Boolean]) => Double
-    ): Self = this.set("sortType", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "sortType", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSortType(value: SortByFn[D] | DefaultSortTypes | String): Self = this.set("sortType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortType: Self = this.set("sortType", js.undefined)
+    def setSortTypeUndefined: Self = StObject.set(x, "sortType", js.undefined)
   }
 }

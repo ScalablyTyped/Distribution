@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InspectorIssueDetails extends js.Object {
+trait InspectorIssueDetails extends StObject {
   
   var blockedByResponseIssueDetails: js.UndefOr[BlockedByResponseIssueDetails] = js.native
   
@@ -26,48 +27,36 @@ object InspectorIssueDetails {
   }
   
   @scala.inline
-  implicit class InspectorIssueDetailsOps[Self <: InspectorIssueDetails] (val x: Self) extends AnyVal {
+  implicit class InspectorIssueDetailsMutableBuilder[Self <: InspectorIssueDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockedByResponseIssueDetails(value: BlockedByResponseIssueDetails): Self = StObject.set(x, "blockedByResponseIssueDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockedByResponseIssueDetailsUndefined: Self = StObject.set(x, "blockedByResponseIssueDetails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentSecurityPolicyIssueDetails(value: ContentSecurityPolicyIssueDetails): Self = StObject.set(x, "contentSecurityPolicyIssueDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockedByResponseIssueDetails(value: BlockedByResponseIssueDetails): Self = this.set("blockedByResponseIssueDetails", value.asInstanceOf[js.Any])
+    def setContentSecurityPolicyIssueDetailsUndefined: Self = StObject.set(x, "contentSecurityPolicyIssueDetails", js.undefined)
     
     @scala.inline
-    def deleteBlockedByResponseIssueDetails: Self = this.set("blockedByResponseIssueDetails", js.undefined)
+    def setHeavyAdIssueDetails(value: HeavyAdIssueDetails): Self = StObject.set(x, "heavyAdIssueDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSecurityPolicyIssueDetails(value: ContentSecurityPolicyIssueDetails): Self = this.set("contentSecurityPolicyIssueDetails", value.asInstanceOf[js.Any])
+    def setHeavyAdIssueDetailsUndefined: Self = StObject.set(x, "heavyAdIssueDetails", js.undefined)
     
     @scala.inline
-    def deleteContentSecurityPolicyIssueDetails: Self = this.set("contentSecurityPolicyIssueDetails", js.undefined)
+    def setMixedContentIssueDetails(value: MixedContentIssueDetails): Self = StObject.set(x, "mixedContentIssueDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeavyAdIssueDetails(value: HeavyAdIssueDetails): Self = this.set("heavyAdIssueDetails", value.asInstanceOf[js.Any])
+    def setMixedContentIssueDetailsUndefined: Self = StObject.set(x, "mixedContentIssueDetails", js.undefined)
     
     @scala.inline
-    def deleteHeavyAdIssueDetails: Self = this.set("heavyAdIssueDetails", js.undefined)
+    def setSameSiteCookieIssueDetails(value: SameSiteCookieIssueDetails): Self = StObject.set(x, "sameSiteCookieIssueDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixedContentIssueDetails(value: MixedContentIssueDetails): Self = this.set("mixedContentIssueDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMixedContentIssueDetails: Self = this.set("mixedContentIssueDetails", js.undefined)
-    
-    @scala.inline
-    def setSameSiteCookieIssueDetails(value: SameSiteCookieIssueDetails): Self = this.set("sameSiteCookieIssueDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSameSiteCookieIssueDetails: Self = this.set("sameSiteCookieIssueDetails", js.undefined)
+    def setSameSiteCookieIssueDetailsUndefined: Self = StObject.set(x, "sameSiteCookieIssueDetails", js.undefined)
   }
 }

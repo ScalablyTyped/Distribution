@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaDatafeedFormat extends js.Object {
+trait SchemaDatafeedFormat extends StObject {
   
   /**
     * Delimiter for the separation of values in a delimiter-separated values
@@ -35,36 +36,24 @@ object SchemaDatafeedFormat {
   }
   
   @scala.inline
-  implicit class SchemaDatafeedFormatOps[Self <: SchemaDatafeedFormat] (val x: Self) extends AnyVal {
+  implicit class SchemaDatafeedFormatMutableBuilder[Self <: SchemaDatafeedFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnDelimiter(value: String): Self = StObject.set(x, "columnDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnDelimiterUndefined: Self = StObject.set(x, "columnDelimiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileEncoding(value: String): Self = StObject.set(x, "fileEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnDelimiter(value: String): Self = this.set("columnDelimiter", value.asInstanceOf[js.Any])
+    def setFileEncodingUndefined: Self = StObject.set(x, "fileEncoding", js.undefined)
     
     @scala.inline
-    def deleteColumnDelimiter: Self = this.set("columnDelimiter", js.undefined)
+    def setQuotingMode(value: String): Self = StObject.set(x, "quotingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileEncoding(value: String): Self = this.set("fileEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileEncoding: Self = this.set("fileEncoding", js.undefined)
-    
-    @scala.inline
-    def setQuotingMode(value: String): Self = this.set("quotingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuotingMode: Self = this.set("quotingMode", js.undefined)
+    def setQuotingModeUndefined: Self = StObject.set(x, "quotingMode", js.undefined)
   }
 }

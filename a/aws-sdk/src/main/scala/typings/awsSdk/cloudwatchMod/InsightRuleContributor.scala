@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightRuleContributor extends js.Object {
+trait InsightRuleContributor extends StObject {
   
   /**
     * An approximation of the aggregate value that comes from this contributor.
@@ -35,33 +36,21 @@ object InsightRuleContributor {
   }
   
   @scala.inline
-  implicit class InsightRuleContributorOps[Self <: InsightRuleContributor] (val x: Self) extends AnyVal {
+  implicit class InsightRuleContributorMutableBuilder[Self <: InsightRuleContributor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximateAggregateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateAggregateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatapoints(value: InsightRuleContributorDatapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatapointsVarargs(value: InsightRuleContributorDatapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
     
     @scala.inline
-    def setApproximateAggregateValue(value: InsightRuleUnboundDouble): Self = this.set("ApproximateAggregateValue", value.asInstanceOf[js.Any])
+    def setKeys(value: InsightRuleContributorKeys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatapointsVarargs(value: InsightRuleContributorDatapoint*): Self = this.set("Datapoints", js.Array(value :_*))
-    
-    @scala.inline
-    def setDatapoints(value: InsightRuleContributorDatapoints): Self = this.set("Datapoints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeysVarargs(value: InsightRuleContributorKey*): Self = this.set("Keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setKeys(value: InsightRuleContributorKeys): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    def setKeysVarargs(value: InsightRuleContributorKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
   }
 }

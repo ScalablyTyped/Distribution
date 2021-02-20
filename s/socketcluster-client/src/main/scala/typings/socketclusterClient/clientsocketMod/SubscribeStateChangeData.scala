@@ -1,6 +1,7 @@
 package typings.socketclusterClient.clientsocketMod
 
 import typings.agChannel.mod.ChannelState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object SubscribeStateChangeData {
   }
   
   @scala.inline
-  implicit class SubscribeStateChangeDataOps[Self <: SubscribeStateChangeData] (val x: Self) extends AnyVal {
+  implicit class SubscribeStateChangeDataMutableBuilder[Self <: SubscribeStateChangeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNewChannelState(value: ChannelState): Self = StObject.set(x, "newChannelState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNewChannelState(value: ChannelState): Self = this.set("newChannelState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldChannelState(value: ChannelState): Self = this.set("oldChannelState", value.asInstanceOf[js.Any])
+    def setOldChannelState(value: ChannelState): Self = StObject.set(x, "oldChannelState", value.asInstanceOf[js.Any])
   }
 }

@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Web
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebErrorStatus extends js.Object
+sealed trait WebErrorStatus extends StObject
 @JSGlobal("Windows.Web.WebErrorStatus")
 @js.native
-object WebErrorStatus extends js.Object {
+object WebErrorStatus extends StObject {
   
   @js.native
   sealed trait badGateway extends WebErrorStatus

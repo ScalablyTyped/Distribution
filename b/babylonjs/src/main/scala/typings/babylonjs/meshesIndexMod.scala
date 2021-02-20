@@ -2,14 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.DragAxis
 import typings.babylonjs.transformNodeMod.TransformNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Meshes/index", JSImport.Namespace)
-@js.native
-object meshesIndexMod extends js.Object {
+object meshesIndexMod {
   
+  @JSImport("babylonjs/Behaviors/Meshes/index", "AttachToBoxBehavior")
   @js.native
   class AttachToBoxBehavior protected ()
     extends typings.babylonjs.attachToBoxBehaviorMod.AttachToBoxBehavior {
@@ -20,6 +20,7 @@ object meshesIndexMod extends js.Object {
     def this(ui: TransformNode) = this()
   }
   
+  @JSImport("babylonjs/Behaviors/Meshes/index", "FadeInOutBehavior")
   @js.native
   /**
     * Instatiates the FadeInOutBehavior
@@ -27,6 +28,7 @@ object meshesIndexMod extends js.Object {
   class FadeInOutBehavior ()
     extends typings.babylonjs.fadeInOutBehaviorMod.FadeInOutBehavior
   
+  @JSImport("babylonjs/Behaviors/Meshes/index", "MultiPointerScaleBehavior")
   @js.native
   /**
     * Instantiate a new behavior that when attached to a mesh will allow the mesh to be scaled
@@ -34,6 +36,7 @@ object meshesIndexMod extends js.Object {
   class MultiPointerScaleBehavior ()
     extends typings.babylonjs.multiPointerScaleBehaviorMod.MultiPointerScaleBehavior
   
+  @JSImport("babylonjs/Behaviors/Meshes/index", "PointerDragBehavior")
   @js.native
   /**
     * Creates a pointer drag behavior that can be attached to a mesh
@@ -44,14 +47,26 @@ object meshesIndexMod extends js.Object {
     def this(options: DragAxis) = this()
   }
   /* static members */
-  @js.native
-  object PointerDragBehavior extends js.Object {
+  object PointerDragBehavior {
     
-    var _AnyMouseID: js.Any = js.native
+    @JSImport("babylonjs/Behaviors/Meshes/index", "PointerDragBehavior")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _planeScene: js.Any = js.native
+    @JSImport("babylonjs/Behaviors/Meshes/index", "PointerDragBehavior._AnyMouseID")
+    @js.native
+    def _AnyMouseID: js.Any = js.native
+    @scala.inline
+    def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Behaviors/Meshes/index", "PointerDragBehavior._planeScene")
+    @js.native
+    def _planeScene: js.Any = js.native
+    @scala.inline
+    def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/Behaviors/Meshes/index", "SixDofDragBehavior")
   @js.native
   /**
     * Instantiates a behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
@@ -59,9 +74,16 @@ object meshesIndexMod extends js.Object {
   class SixDofDragBehavior ()
     extends typings.babylonjs.sixDofDragBehaviorMod.SixDofDragBehavior
   /* static members */
-  @js.native
-  object SixDofDragBehavior extends js.Object {
+  object SixDofDragBehavior {
     
-    var _virtualScene: js.Any = js.native
+    @JSImport("babylonjs/Behaviors/Meshes/index", "SixDofDragBehavior")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("babylonjs/Behaviors/Meshes/index", "SixDofDragBehavior._virtualScene")
+    @js.native
+    def _virtualScene: js.Any = js.native
+    @scala.inline
+    def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
   }
 }

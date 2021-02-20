@@ -1,5 +1,6 @@
 package typings.angularCore.r3SymbolsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @publicApi
   */
 @js.native
-trait Injector extends js.Object {
+trait Injector extends StObject {
   
   /**
     * @deprecated from v4.0.0 use Type<T> or InjectionToken<T>

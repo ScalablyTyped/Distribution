@@ -1,11 +1,12 @@
 package typings.androiduix.android.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PackedIntVector extends js.Object {
+trait PackedIntVector extends StObject {
   
   def adjustValuesBelow(startRow: Double, column: Double, delta: Double): Unit = js.native
   
@@ -68,69 +69,57 @@ object PackedIntVector {
   }
   
   @scala.inline
-  implicit class PackedIntVectorOps[Self <: PackedIntVector] (val x: Self) extends AnyVal {
+  implicit class PackedIntVectorMutableBuilder[Self <: PackedIntVector] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdjustValuesBelow(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "adjustValuesBelow", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAt(value: (Double, Double) => Unit): Self = StObject.set(x, "deleteAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValue(value: (Double, Double) => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAdjustValuesBelow(value: (Double, Double, Double) => Unit): Self = this.set("adjustValuesBelow", js.Any.fromFunction3(value))
+    def setGrowBuffer(value: () => js.Any): Self = StObject.set(x, "growBuffer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteAt(value: (Double, Double) => Unit): Self = this.set("deleteAt", js.Any.fromFunction2(value))
+    def setInsertAt(value: (Double, js.Array[Double]) => Unit): Self = StObject.set(x, "insertAt", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetValue(value: (Double, Double) => Double): Self = this.set("getValue", js.Any.fromFunction2(value))
+    def setMColumns(value: js.Any): Self = StObject.set(x, "mColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrowBuffer(value: () => js.Any): Self = this.set("growBuffer", js.Any.fromFunction0(value))
+    def setMRowGapLength(value: js.Any): Self = StObject.set(x, "mRowGapLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertAt(value: (Double, js.Array[Double]) => Unit): Self = this.set("insertAt", js.Any.fromFunction2(value))
+    def setMRowGapStart(value: js.Any): Self = StObject.set(x, "mRowGapStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMColumns(value: js.Any): Self = this.set("mColumns", value.asInstanceOf[js.Any])
+    def setMRows(value: js.Any): Self = StObject.set(x, "mRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMRowGapLength(value: js.Any): Self = this.set("mRowGapLength", value.asInstanceOf[js.Any])
+    def setMValueGap(value: js.Any): Self = StObject.set(x, "mValueGap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMRowGapStart(value: js.Any): Self = this.set("mRowGapStart", value.asInstanceOf[js.Any])
+    def setMValues(value: js.Any): Self = StObject.set(x, "mValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMRows(value: js.Any): Self = this.set("mRows", value.asInstanceOf[js.Any])
+    def setMoveRowGapTo(value: js.Any => js.Any): Self = StObject.set(x, "moveRowGapTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMValueGap(value: js.Any): Self = this.set("mValueGap", value.asInstanceOf[js.Any])
+    def setMoveValueGapTo(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "moveValueGapTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMValues(value: js.Any): Self = this.set("mValues", value.asInstanceOf[js.Any])
+    def setSetValue(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMoveRowGapTo(value: js.Any => js.Any): Self = this.set("moveRowGapTo", js.Any.fromFunction1(value))
+    def setSetValueInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "setValueInternal", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setMoveValueGapTo(value: (js.Any, js.Any) => js.Any): Self = this.set("moveValueGapTo", js.Any.fromFunction2(value))
+    def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetValue(value: (Double, Double, Double) => Unit): Self = this.set("setValue", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetValueInternal(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("setValueInternal", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSize(value: () => Double): Self = this.set("size", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWidth(value: () => Double): Self = this.set("width", js.Any.fromFunction0(value))
+    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.wegameApi.wx.types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.wegameApi.wegameApiStrings.utf8
   - typings.wegameApi.wegameApiStrings.latin1
 */
-trait FileContentEncoding extends js.Object
+trait FileContentEncoding extends StObject
 object FileContentEncoding {
   
   @scala.inline

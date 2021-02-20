@@ -3,16 +3,15 @@ package typings.nodeFetch
 import typings.nodeFetch.anon.Capture
 import typings.nodeFetch.anon.`0`
 import typings.nodeFetch.nodeFetchStrings.abort
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-fetch/externals", JSImport.Namespace)
-@js.native
-object externalsMod extends js.Object {
+object externalsMod {
   
   @js.native
-  trait AbortSignal extends js.Object {
+  trait AbortSignal extends StObject {
     
     var aborted: Boolean = js.native
     

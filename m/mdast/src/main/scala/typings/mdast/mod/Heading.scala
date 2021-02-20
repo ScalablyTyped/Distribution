@@ -7,6 +7,7 @@ import typings.mdast.mdastNumbers.`4`
 import typings.mdast.mdastNumbers.`5`
 import typings.mdast.mdastNumbers.`6`
 import typings.mdast.mdastStrings.heading
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object Heading {
   }
   
   @scala.inline
-  implicit class HeadingOps[Self <: Heading] (val x: Self) extends AnyVal {
+  implicit class HeadingMutableBuilder[Self <: Heading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDepth(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: PhrasingContent*): Self = this.set("children", js.Array(value :_*))
-    
-    @scala.inline
-    def setChildren(value: js.Array[PhrasingContent]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDepth(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = this.set("depth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: heading): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: heading): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

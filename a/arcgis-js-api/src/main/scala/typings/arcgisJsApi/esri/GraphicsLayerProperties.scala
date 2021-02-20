@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,39 +41,27 @@ object GraphicsLayerProperties {
   }
   
   @scala.inline
-  implicit class GraphicsLayerPropertiesOps[Self <: GraphicsLayerProperties] (val x: Self) extends AnyVal {
+  implicit class GraphicsLayerPropertiesMutableBuilder[Self <: GraphicsLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElevationInfo(value: GraphicsLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphics(value: CollectionProperties[GraphicProperties]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevationInfo(value: GraphicsLayerElevationInfo): Self = this.set("elevationInfo", value.asInstanceOf[js.Any])
+    def setGraphicsUndefined: Self = StObject.set(x, "graphics", js.undefined)
     
     @scala.inline
-    def deleteElevationInfo: Self = this.set("elevationInfo", js.undefined)
+    def setGraphicsVarargs(value: GraphicProperties*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
     @scala.inline
-    def setGraphicsVarargs(value: GraphicProperties*): Self = this.set("graphics", js.Array(value :_*))
+    def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphics(value: CollectionProperties[GraphicProperties]): Self = this.set("graphics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGraphics: Self = this.set("graphics", js.undefined)
-    
-    @scala.inline
-    def setScreenSizePerspectiveEnabled(value: Boolean): Self = this.set("screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScreenSizePerspectiveEnabled: Self = this.set("screenSizePerspectiveEnabled", js.undefined)
+    def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
   }
 }

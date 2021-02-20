@@ -1,5 +1,6 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,36 +39,24 @@ object SwirlEffect {
   }
   
   @scala.inline
-  implicit class SwirlEffectOps[Self <: SwirlEffect] (val x: Self) extends AnyVal {
+  implicit class SwirlEffectMutableBuilder[Self <: SwirlEffect] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterX(value: Double): Self = this.set("centerX", value.asInstanceOf[js.Any])
+    def setWorldX(value: js.Any): Self = StObject.set(x, "worldX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterY(value: Double): Self = this.set("centerY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorldX(value: js.Any): Self = this.set("worldX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorldY(value: js.Any): Self = this.set("worldY", value.asInstanceOf[js.Any])
+    def setWorldY(value: js.Any): Self = StObject.set(x, "worldY", value.asInstanceOf[js.Any])
   }
 }

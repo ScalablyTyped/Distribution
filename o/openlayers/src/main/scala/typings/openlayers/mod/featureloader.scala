@@ -1,12 +1,11 @@
 package typings.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "featureloader")
-@js.native
-object featureloader extends js.Object {
+object featureloader {
   
   /**
     * Create an XHR feature loader for a `url` and `format`. The feature loader
@@ -17,7 +16,11 @@ object featureloader extends js.Object {
     * @return The feature loader.
     * @api
     */
+  @JSImport("openlayers", "featureloader.tile")
+  @js.native
   def tile(url: String, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
+  @JSImport("openlayers", "featureloader.tile")
+  @js.native
   def tile(url: FeatureUrlFunction, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
   
   /**
@@ -29,6 +32,10 @@ object featureloader extends js.Object {
     * @return The feature loader.
     * @api
     */
+  @JSImport("openlayers", "featureloader.xhr")
+  @js.native
   def xhr(url: String, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
+  @JSImport("openlayers", "featureloader.xhr")
+  @js.native
   def xhr(url: FeatureUrlFunction, format: typings.openlayers.mod.format.Feature): FeatureLoader_ = js.native
 }

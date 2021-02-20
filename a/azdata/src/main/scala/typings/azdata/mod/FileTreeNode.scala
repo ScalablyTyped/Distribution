@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileTreeNode extends js.Object {
+trait FileTreeNode extends StObject {
   
   var children: js.Array[FileTreeNode] = js.native
   
@@ -32,36 +33,24 @@ object FileTreeNode {
   }
   
   @scala.inline
-  implicit class FileTreeNodeOps[Self <: FileTreeNode] (val x: Self) extends AnyVal {
+  implicit class FileTreeNodeMutableBuilder[Self <: FileTreeNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[FileTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: FileTreeNode*): Self = this.set("children", js.Array(value :_*))
+    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[FileTreeNode]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullPath(value: String): Self = this.set("fullPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFile(value: Boolean): Self = this.set("isFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

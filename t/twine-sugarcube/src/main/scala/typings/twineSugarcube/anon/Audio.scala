@@ -1,11 +1,12 @@
 package typings.twineSugarcube.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Audio extends js.Object {
+trait Audio extends StObject {
   
   val audio: Boolean = js.native
   
@@ -38,39 +39,27 @@ object Audio {
   }
   
   @scala.inline
-  implicit class AudioOps[Self <: Audio] (val x: Self) extends AnyVal {
+  implicit class AudioMutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileAPI(value: Boolean): Self = StObject.set(x, "fileAPI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeolocation(value: Boolean): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Boolean): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setMutationObserver(value: Boolean): Self = StObject.set(x, "mutationObserver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileAPI(value: Boolean): Self = this.set("fileAPI", value.asInstanceOf[js.Any])
+    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeolocation(value: Boolean): Self = this.set("geolocation", value.asInstanceOf[js.Any])
+    def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutationObserver(value: Boolean): Self = this.set("mutationObserver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouch(value: Boolean): Self = this.set("touch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransitionEndEvent(value: String): Self = this.set("transitionEndEvent", value.asInstanceOf[js.Any])
+    def setTransitionEndEvent(value: String): Self = StObject.set(x, "transitionEndEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectArtifacts extends js.Object {
+trait ProjectArtifacts extends StObject {
   
   /**
     *  An identifier for this artifact definition. 
@@ -62,69 +63,57 @@ object ProjectArtifacts {
   }
   
   @scala.inline
-  implicit class ProjectArtifactsOps[Self <: ProjectArtifacts] (val x: Self) extends AnyVal {
+  implicit class ProjectArtifactsMutableBuilder[Self <: ProjectArtifacts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifactIdentifier(value: String): Self = StObject.set(x, "artifactIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtifactIdentifierUndefined: Self = StObject.set(x, "artifactIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ArtifactsType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
     @scala.inline
-    def setArtifactIdentifier(value: String): Self = this.set("artifactIdentifier", value.asInstanceOf[js.Any])
+    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteArtifactIdentifier: Self = this.set("artifactIdentifier", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setEncryptionDisabled(value: WrapperBoolean): Self = this.set("encryptionDisabled", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEncryptionDisabled: Self = this.set("encryptionDisabled", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNamespaceType(value: ArtifactNamespace): Self = StObject.set(x, "namespaceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNamespaceTypeUndefined: Self = StObject.set(x, "namespaceType", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOverrideArtifactName(value: WrapperBoolean): Self = StObject.set(x, "overrideArtifactName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOverrideArtifactNameUndefined: Self = StObject.set(x, "overrideArtifactName", js.undefined)
     
     @scala.inline
-    def setNamespaceType(value: ArtifactNamespace): Self = this.set("namespaceType", value.asInstanceOf[js.Any])
+    def setPackaging(value: ArtifactPackaging): Self = StObject.set(x, "packaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespaceType: Self = this.set("namespaceType", js.undefined)
+    def setPackagingUndefined: Self = StObject.set(x, "packaging", js.undefined)
     
     @scala.inline
-    def setOverrideArtifactName(value: WrapperBoolean): Self = this.set("overrideArtifactName", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOverrideArtifactName: Self = this.set("overrideArtifactName", js.undefined)
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def setPackaging(value: ArtifactPackaging): Self = this.set("packaging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackaging: Self = this.set("packaging", js.undefined)
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setType(value: ArtifactsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.officeUiFabricReact.indexBundleMod
 
 import typings.officeUiFabricReact.anon.Items
 import typings.officeUiFabricReact.basePickerTypesMod.IBasePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,9 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   def this(basePickerProps: P) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react/lib/index.bundle", "BasePicker")
-@js.native
-object BasePicker extends js.Object {
+object BasePicker {
   
+  @JSImport("office-ui-fabric-react/lib/index.bundle", "BasePicker.getDerivedStateFromProps")
+  @js.native
   def getDerivedStateFromProps(newProps: IBasePickerProps[_]): Items | Null = js.native
 }

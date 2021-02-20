@@ -1,11 +1,12 @@
 package typings.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenProvider extends js.Object {
+trait TokenProvider extends StObject {
   
   var cacheTTLInSeconds: js.UndefOr[Double] = js.native
   
@@ -20,27 +21,15 @@ object TokenProvider {
   }
   
   @scala.inline
-  implicit class TokenProviderOps[Self <: TokenProvider] (val x: Self) extends AnyVal {
+  implicit class TokenProviderMutableBuilder[Self <: TokenProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheTTLInSeconds(value: Double): Self = StObject.set(x, "cacheTTLInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheTTLInSecondsUndefined: Self = StObject.set(x, "cacheTTLInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableCache(value: Boolean): Self = this.set("enableCache", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCacheTTLInSeconds(value: Double): Self = this.set("cacheTTLInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCacheTTLInSeconds: Self = this.set("cacheTTLInSeconds", js.undefined)
+    def setEnableCache(value: Boolean): Self = StObject.set(x, "enableCache", value.asInstanceOf[js.Any])
   }
 }

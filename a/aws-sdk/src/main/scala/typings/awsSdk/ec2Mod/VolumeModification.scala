@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeModification extends js.Object {
+trait VolumeModification extends StObject {
   
   /**
     * The modification completion or failure time.
@@ -76,90 +77,78 @@ object VolumeModification {
   }
   
   @scala.inline
-  implicit class VolumeModificationOps[Self <: VolumeModification] (val x: Self) extends AnyVal {
+  implicit class VolumeModificationMutableBuilder[Self <: VolumeModification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModificationState(value: VolumeModificationState): Self = StObject.set(x, "ModificationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: DateTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setModificationStateUndefined: Self = StObject.set(x, "ModificationState", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setOriginalIops(value: Integer): Self = StObject.set(x, "OriginalIops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModificationState(value: VolumeModificationState): Self = this.set("ModificationState", value.asInstanceOf[js.Any])
+    def setOriginalIopsUndefined: Self = StObject.set(x, "OriginalIops", js.undefined)
     
     @scala.inline
-    def deleteModificationState: Self = this.set("ModificationState", js.undefined)
+    def setOriginalSize(value: Integer): Self = StObject.set(x, "OriginalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalIops(value: Integer): Self = this.set("OriginalIops", value.asInstanceOf[js.Any])
+    def setOriginalSizeUndefined: Self = StObject.set(x, "OriginalSize", js.undefined)
     
     @scala.inline
-    def deleteOriginalIops: Self = this.set("OriginalIops", js.undefined)
+    def setOriginalVolumeType(value: VolumeType): Self = StObject.set(x, "OriginalVolumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalSize(value: Integer): Self = this.set("OriginalSize", value.asInstanceOf[js.Any])
+    def setOriginalVolumeTypeUndefined: Self = StObject.set(x, "OriginalVolumeType", js.undefined)
     
     @scala.inline
-    def deleteOriginalSize: Self = this.set("OriginalSize", js.undefined)
+    def setProgress(value: Long): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalVolumeType(value: VolumeType): Self = this.set("OriginalVolumeType", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
     @scala.inline
-    def deleteOriginalVolumeType: Self = this.set("OriginalVolumeType", js.undefined)
+    def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: Long): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteProgress: Self = this.set("Progress", js.undefined)
+    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setTargetIops(value: Integer): Self = StObject.set(x, "TargetIops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    def setTargetIopsUndefined: Self = StObject.set(x, "TargetIops", js.undefined)
     
     @scala.inline
-    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    def setTargetSize(value: Integer): Self = StObject.set(x, "TargetSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetIops(value: Integer): Self = this.set("TargetIops", value.asInstanceOf[js.Any])
+    def setTargetSizeUndefined: Self = StObject.set(x, "TargetSize", js.undefined)
     
     @scala.inline
-    def deleteTargetIops: Self = this.set("TargetIops", js.undefined)
+    def setTargetVolumeType(value: VolumeType): Self = StObject.set(x, "TargetVolumeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetSize(value: Integer): Self = this.set("TargetSize", value.asInstanceOf[js.Any])
+    def setTargetVolumeTypeUndefined: Self = StObject.set(x, "TargetVolumeType", js.undefined)
     
     @scala.inline
-    def deleteTargetSize: Self = this.set("TargetSize", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetVolumeType(value: VolumeType): Self = this.set("TargetVolumeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVolumeType: Self = this.set("TargetVolumeType", js.undefined)
-    
-    @scala.inline
-    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudsearchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeExpressionsResponse extends js.Object {
+trait DescribeExpressionsResponse extends StObject {
   
   /**
     * The expressions configured for the domain.
@@ -21,24 +22,12 @@ object DescribeExpressionsResponse {
   }
   
   @scala.inline
-  implicit class DescribeExpressionsResponseOps[Self <: DescribeExpressionsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeExpressionsResponseMutableBuilder[Self <: DescribeExpressionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpressions(value: ExpressionStatusList): Self = StObject.set(x, "Expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpressionsVarargs(value: ExpressionStatus*): Self = this.set("Expressions", js.Array(value :_*))
-    
-    @scala.inline
-    def setExpressions(value: ExpressionStatusList): Self = this.set("Expressions", value.asInstanceOf[js.Any])
+    def setExpressionsVarargs(value: ExpressionStatus*): Self = StObject.set(x, "Expressions", js.Array(value :_*))
   }
 }

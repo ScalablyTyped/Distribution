@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Declineon extends js.Object {
+trait Declineon extends StObject {
   
   /**
     * Automatically declines certain charge types regardless of whether the card
@@ -30,30 +31,18 @@ object Declineon {
   }
   
   @scala.inline
-  implicit class DeclineonOps[Self <: Declineon] (val x: Self) extends AnyVal {
+  implicit class DeclineonMutableBuilder[Self <: Declineon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecline_on(value: Avsfailure): Self = StObject.set(x, "decline_on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecline_onUndefined: Self = StObject.set(x, "decline_on", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatement_descriptor_prefix(value: String): Self = StObject.set(x, "statement_descriptor_prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecline_on(value: Avsfailure): Self = this.set("decline_on", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecline_on: Self = this.set("decline_on", js.undefined)
-    
-    @scala.inline
-    def setStatement_descriptor_prefix(value: String): Self = this.set("statement_descriptor_prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatement_descriptor_prefix: Self = this.set("statement_descriptor_prefix", js.undefined)
+    def setStatement_descriptor_prefixUndefined: Self = StObject.set(x, "statement_descriptor_prefix", js.undefined)
   }
 }

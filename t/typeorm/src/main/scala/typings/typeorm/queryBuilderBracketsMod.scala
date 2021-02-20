@@ -1,16 +1,16 @@
 package typings.typeorm
 
 import typings.typeorm.queryBuilderWhereExpressionMod.WhereExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/query-builder/Brackets", JSImport.Namespace)
-@js.native
-object queryBuilderBracketsMod extends js.Object {
+object queryBuilderBracketsMod {
   
+  @JSImport("typeorm/query-builder/Brackets", "Brackets")
   @js.native
-  class Brackets protected () extends js.Object {
+  class Brackets protected () extends StObject {
     /**
       * Given WHERE query builder that will build a WHERE expression that will be taken into brackets.
       */

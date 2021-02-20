@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActivitySetThreadSubscriptionResponseData extends js.Object {
+trait ActivitySetThreadSubscriptionResponseData extends StObject {
   
   var created_at: String = js.native
   
@@ -35,36 +36,24 @@ object ActivitySetThreadSubscriptionResponseData {
   }
   
   @scala.inline
-  implicit class ActivitySetThreadSubscriptionResponseDataOps[Self <: ActivitySetThreadSubscriptionResponseData] (val x: Self) extends AnyVal {
+  implicit class ActivitySetThreadSubscriptionResponseDataMutableBuilder[Self <: ActivitySetThreadSubscriptionResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated_at(value: String): Self = this.set("created_at", value.asInstanceOf[js.Any])
+    def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnored(value: Boolean): Self = this.set("ignored", value.asInstanceOf[js.Any])
+    def setThread_url(value: String): Self = StObject.set(x, "thread_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubscribed(value: Boolean): Self = this.set("subscribed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThread_url(value: String): Self = this.set("thread_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

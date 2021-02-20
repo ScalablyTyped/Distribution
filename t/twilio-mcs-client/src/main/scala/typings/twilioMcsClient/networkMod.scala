@@ -4,16 +4,16 @@ import typings.node.Buffer
 import typings.std.FormData
 import typings.twilioMcsClient.configurationMod.Configuration
 import typings.twilioMcsClient.transportMod.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-mcs-client/lib/services/network", JSImport.Namespace)
-@js.native
-object networkMod extends js.Object {
+object networkMod {
   
+  @JSImport("twilio-mcs-client/lib/services/network", "Network")
   @js.native
-  class Network protected () extends js.Object {
+  class Network protected () extends StObject {
     def this(config: Configuration, transport: Transport) = this()
     
     var backoffConfig: js.Any = js.native

@@ -1,11 +1,12 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclECCBasic extends js.Object {
+trait SjclECCBasic extends StObject {
   
   def generateKeys(cn: String): SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey] = js.native
   
@@ -26,27 +27,15 @@ object SjclECCBasic {
   }
   
   @scala.inline
-  implicit class SjclECCBasicOps[Self <: SjclECCBasic] (val x: Self) extends AnyVal {
+  implicit class SjclECCBasicMutableBuilder[Self <: SjclECCBasic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerateKeys(value: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]): Self = StObject.set(x, "generateKeys", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPublicKey(value: SjclECCPublicKeyFactory[SjclECCPublicKey]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGenerateKeys(value: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]): Self = this.set("generateKeys", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPublicKey(value: SjclECCPublicKeyFactory[SjclECCPublicKey]): Self = this.set("publicKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretKey(value: SjclECCSecretKeyFactory[SjclECCSecretKey]): Self = this.set("secretKey", value.asInstanceOf[js.Any])
+    def setSecretKey(value: SjclECCSecretKeyFactory[SjclECCSecretKey]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
   }
 }

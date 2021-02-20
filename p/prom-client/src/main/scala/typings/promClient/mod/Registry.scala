@@ -1,12 +1,13 @@
 package typings.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prom-client", "Registry")
 @js.native
-class Registry () extends js.Object {
+class Registry () extends StObject {
   
   /**
   	 * Remove all metrics from the registry
@@ -70,13 +71,13 @@ class Registry () extends js.Object {
   def setDefaultLabels(labels: js.Object): Unit = js.native
 }
 /* static members */
-@JSImport("prom-client", "Registry")
-@js.native
-object Registry extends js.Object {
+object Registry {
   
   /**
   	 * Merge registers
   	 * @param registers The registers you want to merge together
   	 */
+  @JSImport("prom-client", "Registry.merge")
+  @js.native
   def merge(registers: js.Array[Registry]): Registry = js.native
 }

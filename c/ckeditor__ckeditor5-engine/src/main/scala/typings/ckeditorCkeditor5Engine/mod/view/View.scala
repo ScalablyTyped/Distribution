@@ -4,6 +4,7 @@ import typings.ckeditorCkeditor5Engine.anon.Priority
 import typings.ckeditorCkeditor5Engine.anon.`0`
 import typings.ckeditorCkeditor5Utils.mod.Emitter
 import typings.ckeditorCkeditor5Utils.mod.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

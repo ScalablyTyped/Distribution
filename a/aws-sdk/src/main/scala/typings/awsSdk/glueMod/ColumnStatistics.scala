@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnStatistics extends js.Object {
+trait ColumnStatistics extends StObject {
   
   /**
     * The timestamp of when column statistics were generated.
@@ -41,30 +42,18 @@ object ColumnStatistics {
   }
   
   @scala.inline
-  implicit class ColumnStatisticsOps[Self <: ColumnStatistics] (val x: Self) extends AnyVal {
+  implicit class ColumnStatisticsMutableBuilder[Self <: ColumnStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzedTime(value: Timestamp): Self = StObject.set(x, "AnalyzedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnType(value: TypeString): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzedTime(value: Timestamp): Self = this.set("AnalyzedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnName(value: NameString): Self = this.set("ColumnName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColumnType(value: TypeString): Self = this.set("ColumnType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatisticsData(value: ColumnStatisticsData): Self = this.set("StatisticsData", value.asInstanceOf[js.Any])
+    def setStatisticsData(value: ColumnStatisticsData): Self = StObject.set(x, "StatisticsData", value.asInstanceOf[js.Any])
   }
 }

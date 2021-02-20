@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubForm extends js.Object {
+trait SubForm extends StObject {
   
   @JSName("Access.SubForm_typekey")
   var AccessDotSubForm_typekey: SubForm = js.native

@@ -4,12 +4,13 @@ import typings.relayRuntime.getRequestIdentifierMod.RequestIdentifier
 import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestDescriptor extends js.Object {
+trait RequestDescriptor extends StObject {
   
   val cacheConfig: CacheConfig | Null = js.native
   
@@ -28,33 +29,21 @@ object RequestDescriptor {
   }
   
   @scala.inline
-  implicit class RequestDescriptorOps[Self <: RequestDescriptor] (val x: Self) extends AnyVal {
+  implicit class RequestDescriptorMutableBuilder[Self <: RequestDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheConfigNull: Self = StObject.set(x, "cacheConfig", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: RequestIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: RequestIdentifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setNode(value: ConcreteRequest): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: ConcreteRequest): Self = this.set("node", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCacheConfig(value: CacheConfig): Self = this.set("cacheConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCacheConfigNull: Self = this.set("cacheConfig", null)
+    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

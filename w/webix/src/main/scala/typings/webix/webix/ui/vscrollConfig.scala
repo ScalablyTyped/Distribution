@@ -2,12 +2,13 @@ package typings.webix.webix.ui
 
 import typings.std.HTMLElement
 import typings.webix.webix.EventHash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait vscrollConfig extends js.Object {
+trait vscrollConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.native
   
@@ -42,90 +43,78 @@ object vscrollConfig {
   }
   
   @scala.inline
-  implicit class vscrollConfigOps[Self <: vscrollConfig] (val x: Self) extends AnyVal {
+  implicit class vscrollConfigMutableBuilder[Self <: vscrollConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String | HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setScroll(value: String): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOn(value: EventHash): Self = this.set("on", value.asInstanceOf[js.Any])
+    def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOn: Self = this.set("on", js.undefined)
+    def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
     
     @scala.inline
-    def setScroll(value: String): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    def setScrollPos(value: Double): Self = StObject.set(x, "scrollPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setScrollPosUndefined: Self = StObject.set(x, "scrollPos", js.undefined)
     
     @scala.inline
-    def setScrollHeight(value: Double): Self = this.set("scrollHeight", value.asInstanceOf[js.Any])
+    def setScrollSize(value: Double): Self = StObject.set(x, "scrollSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollHeight: Self = this.set("scrollHeight", js.undefined)
+    def setScrollSizeUndefined: Self = StObject.set(x, "scrollSize", js.undefined)
     
     @scala.inline
-    def setScrollPos(value: Double): Self = this.set("scrollPos", value.asInstanceOf[js.Any])
+    def setScrollStep(value: Double): Self = StObject.set(x, "scrollStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScrollPos: Self = this.set("scrollPos", js.undefined)
+    def setScrollStepUndefined: Self = StObject.set(x, "scrollStep", js.undefined)
     
     @scala.inline
-    def setScrollSize(value: Double): Self = this.set("scrollSize", value.asInstanceOf[js.Any])
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
     @scala.inline
-    def deleteScrollSize: Self = this.set("scrollSize", js.undefined)
+    def setScrollVisible(value: Boolean): Self = StObject.set(x, "scrollVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollStep(value: Double): Self = this.set("scrollStep", value.asInstanceOf[js.Any])
+    def setScrollVisibleUndefined: Self = StObject.set(x, "scrollVisible", js.undefined)
     
     @scala.inline
-    def deleteScrollStep: Self = this.set("scrollStep", js.undefined)
+    def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollVisible(value: Boolean): Self = this.set("scrollVisible", value.asInstanceOf[js.Any])
+    def setScrollWidthUndefined: Self = StObject.set(x, "scrollWidth", js.undefined)
     
     @scala.inline
-    def deleteScrollVisible: Self = this.set("scrollVisible", js.undefined)
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollWidth(value: Double): Self = this.set("scrollWidth", value.asInstanceOf[js.Any])
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
     @scala.inline
-    def deleteScrollWidth: Self = this.set("scrollWidth", js.undefined)
+    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
-    
-    @scala.inline
-    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoom: Self = this.set("zoom", js.undefined)
+    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

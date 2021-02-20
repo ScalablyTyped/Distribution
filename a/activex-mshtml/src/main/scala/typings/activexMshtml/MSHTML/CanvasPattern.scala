@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasPattern extends js.Object {
+trait CanvasPattern extends StObject {
   
   @JSName("MSHTML.CanvasPattern_typekey")
   var MSHTMLDotCanvasPattern_typekey: CanvasPattern = js.native
@@ -20,21 +21,9 @@ object CanvasPattern {
   }
   
   @scala.inline
-  implicit class CanvasPatternOps[Self <: CanvasPattern] (val x: Self) extends AnyVal {
+  implicit class CanvasPatternMutableBuilder[Self <: CanvasPattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotCanvasPattern_typekey(value: CanvasPattern): Self = this.set("MSHTML.CanvasPattern_typekey", value.asInstanceOf[js.Any])
+    def setMSHTMLDotCanvasPattern_typekey(value: CanvasPattern): Self = StObject.set(x, "MSHTML.CanvasPattern_typekey", value.asInstanceOf[js.Any])
   }
 }

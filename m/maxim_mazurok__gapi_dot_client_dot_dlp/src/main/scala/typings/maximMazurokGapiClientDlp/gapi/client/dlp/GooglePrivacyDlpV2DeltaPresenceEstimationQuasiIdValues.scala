@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues extends js.Object {
+trait GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues extends StObject {
   
   /**
     * The estimated probability that a given individual sharing these quasi-identifier values is in the dataset. This value, typically called δ, is the ratio between the number of records
@@ -26,33 +27,21 @@ object GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValuesOps[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValuesMutableBuilder[Self <: GooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEstimatedProbability(value: Double): Self = StObject.set(x, "estimatedProbability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEstimatedProbabilityUndefined: Self = StObject.set(x, "estimatedProbability", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQuasiIdsValues(value: js.Array[GooglePrivacyDlpV2Value]): Self = StObject.set(x, "quasiIdsValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedProbability(value: Double): Self = this.set("estimatedProbability", value.asInstanceOf[js.Any])
+    def setQuasiIdsValuesUndefined: Self = StObject.set(x, "quasiIdsValues", js.undefined)
     
     @scala.inline
-    def deleteEstimatedProbability: Self = this.set("estimatedProbability", js.undefined)
-    
-    @scala.inline
-    def setQuasiIdsValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = this.set("quasiIdsValues", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuasiIdsValues(value: js.Array[GooglePrivacyDlpV2Value]): Self = this.set("quasiIdsValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuasiIdsValues: Self = this.set("quasiIdsValues", js.undefined)
+    def setQuasiIdsValuesVarargs(value: GooglePrivacyDlpV2Value*): Self = StObject.set(x, "quasiIdsValues", js.Array(value :_*))
   }
 }

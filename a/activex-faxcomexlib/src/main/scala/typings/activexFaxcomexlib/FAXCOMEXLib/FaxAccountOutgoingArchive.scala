@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.FAXCOMEXLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccountOutgoingArchive Class */
 @js.native
-trait FaxAccountOutgoingArchive extends js.Object {
+trait FaxAccountOutgoingArchive extends StObject {
   
   @JSName("FAXCOMEXLib.FaxAccountOutgoingArchive_typekey")
   var FAXCOMEXLibDotFaxAccountOutgoingArchive_typekey: FaxAccountOutgoingArchive = js.native

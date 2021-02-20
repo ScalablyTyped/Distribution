@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociatedTargetNetwork extends js.Object {
+trait AssociatedTargetNetwork extends StObject {
   
   /**
     * The ID of the subnet.
@@ -26,30 +27,18 @@ object AssociatedTargetNetwork {
   }
   
   @scala.inline
-  implicit class AssociatedTargetNetworkOps[Self <: AssociatedTargetNetwork] (val x: Self) extends AnyVal {
+  implicit class AssociatedTargetNetworkMutableBuilder[Self <: AssociatedTargetNetwork] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNetworkId(value: String): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNetworkType(value: AssociatedNetworkType): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkId(value: String): Self = this.set("NetworkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkId: Self = this.set("NetworkId", js.undefined)
-    
-    @scala.inline
-    def setNetworkType(value: AssociatedNetworkType): Self = this.set("NetworkType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkType: Self = this.set("NetworkType", js.undefined)
+    def setNetworkTypeUndefined: Self = StObject.set(x, "NetworkType", js.undefined)
   }
 }

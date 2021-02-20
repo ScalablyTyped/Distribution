@@ -1,11 +1,12 @@
 package typings.meteor.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoginStyle extends js.Object {
+trait LoginStyle extends StObject {
   
   var loginStyle: js.UndefOr[String] = js.native
   
@@ -28,57 +29,45 @@ object LoginStyle {
   }
   
   @scala.inline
-  implicit class LoginStyleOps[Self <: LoginStyle] (val x: Self) extends AnyVal {
+  implicit class LoginStyleMutableBuilder[Self <: LoginStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoginStyle(value: String): Self = StObject.set(x, "loginStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoginStyleUndefined: Self = StObject.set(x, "loginStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoginUrlParameters(value: js.Object): Self = StObject.set(x, "loginUrlParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginStyle(value: String): Self = this.set("loginStyle", value.asInstanceOf[js.Any])
+    def setLoginUrlParametersUndefined: Self = StObject.set(x, "loginUrlParameters", js.undefined)
     
     @scala.inline
-    def deleteLoginStyle: Self = this.set("loginStyle", js.undefined)
+    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoginUrlParameters(value: js.Object): Self = this.set("loginUrlParameters", value.asInstanceOf[js.Any])
+    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
     @scala.inline
-    def deleteLoginUrlParameters: Self = this.set("loginUrlParameters", js.undefined)
+    def setRequestOfflineToken(value: Boolean): Self = StObject.set(x, "requestOfflineToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedirectUrl(value: String): Self = this.set("redirectUrl", value.asInstanceOf[js.Any])
+    def setRequestOfflineTokenUndefined: Self = StObject.set(x, "requestOfflineToken", js.undefined)
     
     @scala.inline
-    def deleteRedirectUrl: Self = this.set("redirectUrl", js.undefined)
+    def setRequestPermissions(value: js.Array[String]): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestOfflineToken(value: Boolean): Self = this.set("requestOfflineToken", value.asInstanceOf[js.Any])
+    def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
     
     @scala.inline
-    def deleteRequestOfflineToken: Self = this.set("requestOfflineToken", js.undefined)
+    def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setRequestPermissionsVarargs(value: String*): Self = this.set("requestPermissions", js.Array(value :_*))
+    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestPermissions(value: js.Array[String]): Self = this.set("requestPermissions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestPermissions: Self = this.set("requestPermissions", js.undefined)
-    
-    @scala.inline
-    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
   }
 }

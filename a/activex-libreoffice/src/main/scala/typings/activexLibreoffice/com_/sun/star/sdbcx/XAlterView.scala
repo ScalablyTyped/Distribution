@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sdbcx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.4
   */
 @js.native
-trait XAlterView extends js.Object {
+trait XAlterView extends StObject {
   
   /**
     * changes the command which constitutes the view
@@ -29,21 +30,9 @@ object XAlterView {
   }
   
   @scala.inline
-  implicit class XAlterViewOps[Self <: XAlterView] (val x: Self) extends AnyVal {
+  implicit class XAlterViewMutableBuilder[Self <: XAlterView] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlterCommand(value: String => Unit): Self = this.set("alterCommand", js.Any.fromFunction1(value))
+    def setAlterCommand(value: String => Unit): Self = StObject.set(x, "alterCommand", js.Any.fromFunction1(value))
   }
 }

@@ -2,6 +2,7 @@ package typings.saucelabs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.anon.Completed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,108 +50,96 @@ object Build {
   }
   
   @scala.inline
-  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+  implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletion_time(value: Double): Self = StObject.set(x, "deletion_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreation_time(value: Double): Self = this.set("creation_time", value.asInstanceOf[js.Any])
+    def setDeletion_timeUndefined: Self = StObject.set(x, "deletion_time", js.undefined)
     
     @scala.inline
-    def deleteCreation_time: Self = this.set("creation_time", js.undefined)
+    def setEnd_time(value: Double): Self = StObject.set(x, "end_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletion_time(value: Double): Self = this.set("deletion_time", value.asInstanceOf[js.Any])
+    def setEnd_timeUndefined: Self = StObject.set(x, "end_time", js.undefined)
     
     @scala.inline
-    def deleteDeletion_time: Self = this.set("deletion_time", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd_time(value: Double): Self = this.set("end_time", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEnd_time: Self = this.set("end_time", js.undefined)
+    def setJobs(value: Completed): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModification_time(value: Double): Self = StObject.set(x, "modification_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobs(value: Completed): Self = this.set("jobs", value.asInstanceOf[js.Any])
+    def setModification_timeUndefined: Self = StObject.set(x, "modification_time", js.undefined)
     
     @scala.inline
-    def deleteJobs: Self = this.set("jobs", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModification_time(value: Double): Self = this.set("modification_time", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteModification_time: Self = this.set("modification_time", js.undefined)
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPassedUndefined: Self = StObject.set(x, "passed", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassed(value: Boolean): Self = this.set("passed", value.asInstanceOf[js.Any])
+    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
     @scala.inline
-    def deletePassed: Self = this.set("passed", js.undefined)
+    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
     @scala.inline
-    def deletePrefix: Self = this.set("prefix", js.undefined)
+    def setRun(value: Double): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
+    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
     @scala.inline
-    def deletePublic: Self = this.set("public", js.undefined)
+    def setStart_time(value: Double): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRun(value: Double): Self = this.set("run", value.asInstanceOf[js.Any])
+    def setStart_timeUndefined: Self = StObject.set(x, "start_time", js.undefined)
     
     @scala.inline
-    def deleteRun: Self = this.set("run", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart_time(value: Double): Self = this.set("start_time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart_time: Self = this.set("start_time", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

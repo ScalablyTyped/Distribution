@@ -2,12 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.workItemTrackingInterfacesMod.WorkItemFieldReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessConfiguration extends js.Object {
+trait ProcessConfiguration extends StObject {
   
   /**
     * Details about bug work items
@@ -52,39 +53,27 @@ object ProcessConfiguration {
   }
   
   @scala.inline
-  implicit class ProcessConfigurationOps[Self <: ProcessConfiguration] (val x: Self) extends AnyVal {
+  implicit class ProcessConfigurationMutableBuilder[Self <: ProcessConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBugWorkItems(value: CategoryConfiguration): Self = StObject.set(x, "bugWorkItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPortfolioBacklogs(value: js.Array[CategoryConfiguration]): Self = StObject.set(x, "portfolioBacklogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortfolioBacklogsVarargs(value: CategoryConfiguration*): Self = StObject.set(x, "portfolioBacklogs", js.Array(value :_*))
     
     @scala.inline
-    def setBugWorkItems(value: CategoryConfiguration): Self = this.set("bugWorkItems", value.asInstanceOf[js.Any])
+    def setRequirementBacklog(value: CategoryConfiguration): Self = StObject.set(x, "requirementBacklog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioBacklogsVarargs(value: CategoryConfiguration*): Self = this.set("portfolioBacklogs", js.Array(value :_*))
+    def setTaskBacklog(value: CategoryConfiguration): Self = StObject.set(x, "taskBacklog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortfolioBacklogs(value: js.Array[CategoryConfiguration]): Self = this.set("portfolioBacklogs", value.asInstanceOf[js.Any])
+    def setTypeFields(value: StringDictionary[WorkItemFieldReference]): Self = StObject.set(x, "typeFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequirementBacklog(value: CategoryConfiguration): Self = this.set("requirementBacklog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaskBacklog(value: CategoryConfiguration): Self = this.set("taskBacklog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeFields(value: StringDictionary[WorkItemFieldReference]): Self = this.set("typeFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

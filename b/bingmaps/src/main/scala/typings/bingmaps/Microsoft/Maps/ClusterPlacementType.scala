@@ -1,14 +1,15 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClusterPlacementType extends js.Object
+sealed trait ClusterPlacementType extends StObject
 @JSGlobal("Microsoft.Maps.ClusterPlacementType")
 @js.native
-object ClusterPlacementType extends js.Object {
+object ClusterPlacementType extends StObject {
   
   /**
     * This method is the simplest way to represent a cluster. It places the cluster at the first location in the cluster. This method may not accurately

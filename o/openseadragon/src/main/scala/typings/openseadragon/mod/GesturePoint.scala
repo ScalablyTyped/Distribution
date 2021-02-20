@@ -1,11 +1,12 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GesturePoint extends js.Object {
+trait GesturePoint extends StObject {
   
   var captured: Boolean = js.native
   
@@ -60,60 +61,48 @@ object GesturePoint {
   }
   
   @scala.inline
-  implicit class GesturePointOps[Self <: GesturePoint] (val x: Self) extends AnyVal {
+  implicit class GesturePointMutableBuilder[Self <: GesturePoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptured(value: Boolean): Self = StObject.set(x, "captured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactPos(value: Point): Self = StObject.set(x, "contactPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactTime(value: Double): Self = StObject.set(x, "contactTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptured(value: Boolean): Self = this.set("captured", value.asInstanceOf[js.Any])
+    def setCurrentPos(value: Point): Self = StObject.set(x, "currentPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactPos(value: Point): Self = this.set("contactPos", value.asInstanceOf[js.Any])
+    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactTime(value: Double): Self = this.set("contactTime", value.asInstanceOf[js.Any])
+    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPos(value: Point): Self = this.set("currentPos", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTime(value: Double): Self = this.set("currentTime", value.asInstanceOf[js.Any])
+    def setInsideElement(value: Boolean): Self = StObject.set(x, "insideElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setInsideElementPressed(value: Boolean): Self = StObject.set(x, "insideElementPressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideElement(value: Boolean): Self = this.set("insideElement", value.asInstanceOf[js.Any])
+    def setLastPos(value: Point): Self = StObject.set(x, "lastPos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsideElementPressed(value: Boolean): Self = this.set("insideElementPressed", value.asInstanceOf[js.Any])
+    def setLastTime(value: Double): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrimary(value: Boolean): Self = this.set("isPrimary", value.asInstanceOf[js.Any])
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastPos(value: Point): Self = this.set("lastPos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastTime(value: Double): Self = this.set("lastTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

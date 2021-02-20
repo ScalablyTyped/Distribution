@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDoubleclickbidmanager.anon.Key
 import typings.maximMazurokGapiClientDoubleclickbidmanager.anon.Oauthtoken
 import typings.maximMazurokGapiClientDoubleclickbidmanager.anon.PrettyPrint
 import typings.maximMazurokGapiClientDoubleclickbidmanager.anon.QueryId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueriesResource extends js.Object {
+trait QueriesResource extends StObject {
   
   /** Creates a query. */
   def createquery(request: Asynchronous): Request[Query] = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDatastoreResponse extends js.Object {
+trait DescribeDatastoreResponse extends StObject {
   
   /**
     * Information about the data store.
@@ -26,30 +27,18 @@ object DescribeDatastoreResponse {
   }
   
   @scala.inline
-  implicit class DescribeDatastoreResponseOps[Self <: DescribeDatastoreResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDatastoreResponseMutableBuilder[Self <: DescribeDatastoreResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatistics(value: DatastoreStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatastore(value: Datastore): Self = this.set("datastore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDatastore: Self = this.set("datastore", js.undefined)
-    
-    @scala.inline
-    def setStatistics(value: DatastoreStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
   }
 }

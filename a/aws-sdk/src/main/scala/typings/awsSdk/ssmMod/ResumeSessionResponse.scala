@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResumeSessionResponse extends js.Object {
+trait ResumeSessionResponse extends StObject {
   
   /**
     * The ID of the session.
@@ -31,36 +32,24 @@ object ResumeSessionResponse {
   }
   
   @scala.inline
-  implicit class ResumeSessionResponseOps[Self <: ResumeSessionResponse] (val x: Self) extends AnyVal {
+  implicit class ResumeSessionResponseMutableBuilder[Self <: ResumeSessionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamUrl(value: StreamUrl): Self = StObject.set(x, "StreamUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionId(value: SessionId): Self = this.set("SessionId", value.asInstanceOf[js.Any])
+    def setStreamUrlUndefined: Self = StObject.set(x, "StreamUrl", js.undefined)
     
     @scala.inline
-    def deleteSessionId: Self = this.set("SessionId", js.undefined)
+    def setTokenValue(value: TokenValue): Self = StObject.set(x, "TokenValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamUrl(value: StreamUrl): Self = this.set("StreamUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamUrl: Self = this.set("StreamUrl", js.undefined)
-    
-    @scala.inline
-    def setTokenValue(value: TokenValue): Self = this.set("TokenValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenValue: Self = this.set("TokenValue", js.undefined)
+    def setTokenValueUndefined: Self = StObject.set(x, "TokenValue", js.undefined)
   }
 }

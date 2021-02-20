@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceOptions extends js.Object {
+trait DataSourceOptions extends StObject {
   
   var aggregate: js.UndefOr[js.Array[DataSourceAggregateItem]] = js.native
   
@@ -66,174 +67,162 @@ object DataSourceOptions {
   }
   
   @scala.inline
-  implicit class DataSourceOptionsOps[Self <: DataSourceOptions] (val x: Self) extends AnyVal {
+  implicit class DataSourceOptionsMutableBuilder[Self <: DataSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregate(value: js.Array[DataSourceAggregateItem]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregateVarargs(value: DataSourceAggregateItem*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
     
     @scala.inline
-    def setAggregateVarargs(value: DataSourceAggregateItem*): Self = this.set("aggregate", js.Array(value :_*))
+    def setAutoSync(value: Boolean): Self = StObject.set(x, "autoSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregate(value: js.Array[DataSourceAggregateItem]): Self = this.set("aggregate", value.asInstanceOf[js.Any])
+    def setAutoSyncUndefined: Self = StObject.set(x, "autoSync", js.undefined)
     
     @scala.inline
-    def deleteAggregate: Self = this.set("aggregate", js.undefined)
+    def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSync(value: Boolean): Self = this.set("autoSync", value.asInstanceOf[js.Any])
+    def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     @scala.inline
-    def deleteAutoSync: Self = this.set("autoSync", js.undefined)
+    def setChange(value: /* e */ DataSourceChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBatch(value: Boolean): Self = this.set("batch", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteBatch: Self = this.set("batch", js.undefined)
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: /* e */ DataSourceChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setError(value: /* e */ DataSourceErrorEvent => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* e */ DataSourceErrorEvent => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setGroup(value: DataSourceGroupItem | js.Array[DataSourceGroupItem]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Any): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def setGroupVarargs(value: DataSourceGroupItem*): Self = this.set("group", js.Array(value :_*))
+    def setInPlaceSort(value: Boolean): Self = StObject.set(x, "inPlaceSort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: DataSourceGroupItem | js.Array[DataSourceGroupItem]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setInPlaceSortUndefined: Self = StObject.set(x, "inPlaceSort", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setOfflineStorage(value: js.Any): Self = StObject.set(x, "offlineStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPlaceSort(value: Boolean): Self = this.set("inPlaceSort", value.asInstanceOf[js.Any])
+    def setOfflineStorageUndefined: Self = StObject.set(x, "offlineStorage", js.undefined)
     
     @scala.inline
-    def deleteInPlaceSort: Self = this.set("inPlaceSort", js.undefined)
+    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfflineStorage(value: js.Any): Self = this.set("offlineStorage", value.asInstanceOf[js.Any])
+    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOfflineStorage: Self = this.set("offlineStorage", js.undefined)
+    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
     @scala.inline
-    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
     @scala.inline
-    def deletePage: Self = this.set("page", js.undefined)
+    def setPush(value: /* e */ DataSourcePushEvent => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
     
     @scala.inline
-    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    def setRequestEnd(value: /* e */ DataSourceRequestEndEvent => Unit): Self = StObject.set(x, "requestEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPush(value: /* e */ DataSourcePushEvent => Unit): Self = this.set("push", js.Any.fromFunction1(value))
+    def setRequestEndUndefined: Self = StObject.set(x, "requestEnd", js.undefined)
     
     @scala.inline
-    def deletePush: Self = this.set("push", js.undefined)
+    def setRequestStart(value: /* e */ DataSourceRequestStartEvent => Unit): Self = StObject.set(x, "requestStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRequestEnd(value: /* e */ DataSourceRequestEndEvent => Unit): Self = this.set("requestEnd", js.Any.fromFunction1(value))
+    def setRequestStartUndefined: Self = StObject.set(x, "requestStart", js.undefined)
     
     @scala.inline
-    def deleteRequestEnd: Self = this.set("requestEnd", js.undefined)
+    def setSchema(value: DataSourceSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestStart(value: /* e */ DataSourceRequestStartEvent => Unit): Self = this.set("requestStart", js.Any.fromFunction1(value))
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteRequestStart: Self = this.set("requestStart", js.undefined)
+    def setServerAggregates(value: Boolean): Self = StObject.set(x, "serverAggregates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: DataSourceSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setServerAggregatesUndefined: Self = StObject.set(x, "serverAggregates", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setServerFiltering(value: Boolean): Self = StObject.set(x, "serverFiltering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerAggregates(value: Boolean): Self = this.set("serverAggregates", value.asInstanceOf[js.Any])
+    def setServerFilteringUndefined: Self = StObject.set(x, "serverFiltering", js.undefined)
     
     @scala.inline
-    def deleteServerAggregates: Self = this.set("serverAggregates", js.undefined)
+    def setServerGrouping(value: Boolean): Self = StObject.set(x, "serverGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerFiltering(value: Boolean): Self = this.set("serverFiltering", value.asInstanceOf[js.Any])
+    def setServerGroupingUndefined: Self = StObject.set(x, "serverGrouping", js.undefined)
     
     @scala.inline
-    def deleteServerFiltering: Self = this.set("serverFiltering", js.undefined)
+    def setServerPaging(value: Boolean): Self = StObject.set(x, "serverPaging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerGrouping(value: Boolean): Self = this.set("serverGrouping", value.asInstanceOf[js.Any])
+    def setServerPagingUndefined: Self = StObject.set(x, "serverPaging", js.undefined)
     
     @scala.inline
-    def deleteServerGrouping: Self = this.set("serverGrouping", js.undefined)
+    def setServerSorting(value: Boolean): Self = StObject.set(x, "serverSorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerPaging(value: Boolean): Self = this.set("serverPaging", value.asInstanceOf[js.Any])
+    def setServerSortingUndefined: Self = StObject.set(x, "serverSorting", js.undefined)
     
     @scala.inline
-    def deleteServerPaging: Self = this.set("serverPaging", js.undefined)
+    def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerSorting(value: Boolean): Self = this.set("serverSorting", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteServerSorting: Self = this.set("serverSorting", js.undefined)
+    def setSync(value: /* e */ DataSourceEvent => Unit): Self = StObject.set(x, "sync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSort(value: js.Any): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setTransport(value: DataSourceTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSync(value: /* e */ DataSourceEvent => Unit): Self = this.set("sync", js.Any.fromFunction1(value))
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     
     @scala.inline
-    def deleteSync: Self = this.set("sync", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransport(value: DataSourceTransport): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

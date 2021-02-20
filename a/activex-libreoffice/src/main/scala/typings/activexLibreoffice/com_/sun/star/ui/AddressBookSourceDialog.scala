@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,21 +40,9 @@ object AddressBookSourceDialog {
   }
   
   @scala.inline
-  implicit class AddressBookSourceDialogOps[Self <: AddressBookSourceDialog] (val x: Self) extends AnyVal {
+  implicit class AddressBookSourceDialogMutableBuilder[Self <: AddressBookSourceDialog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateWithDataSource(value: (XWindow, XPropertySet, String, String, String) => Unit): Self = this.set("createWithDataSource", js.Any.fromFunction5(value))
+    def setCreateWithDataSource(value: (XWindow, XPropertySet, String, String, String) => Unit): Self = StObject.set(x, "createWithDataSource", js.Any.fromFunction5(value))
   }
 }

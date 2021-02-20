@@ -1,6 +1,7 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a directions object with options that you may provide.
   */
 @js.native
-trait Directions extends js.Object {
+trait Directions extends StObject {
   
   /**
     * Cancels a previous request for route directions.
@@ -45,17 +46,26 @@ trait Directions extends js.Object {
     callback: js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]
   ): Double = js.native
 }
-@JSGlobal("mapkit.Directions")
-@js.native
-object Directions extends js.Object {
+object Directions {
+  
+  @scala.inline
+  def apply(
+    cancel: Double => Boolean,
+    eta: (EtaRequestOptions, js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]) => Double,
+    route: (DirectionsRequest, js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]) => Double
+  ): Directions = {
+    val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), eta = js.Any.fromFunction2(eta), route = js.Any.fromFunction2(route))
+    __obj.asInstanceOf[Directions]
+  }
   
   @js.native
-  sealed trait Transport extends js.Object
+  sealed trait Transport extends StObject
   /**
     * The modes of transportation.
     */
+  @JSGlobal("mapkit.Directions.Transport")
   @js.native
-  object Transport extends js.Object {
+  object Transport extends StObject {
     
     /**
       * A constant identifying the mode of transportation as driving.
@@ -68,5 +78,22 @@ object Directions extends js.Object {
       */
     @js.native
     sealed trait Walking extends Transport
+  }
+  
+  @scala.inline
+  implicit class DirectionsMutableBuilder[Self <: Directions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCancel(value: Double => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setEta(
+      value: (EtaRequestOptions, js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]) => Double
+    ): Self = StObject.set(x, "eta", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setRoute(
+      value: (DirectionsRequest, js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]) => Double
+    ): Self = StObject.set(x, "route", js.Any.fromFunction2(value))
   }
 }

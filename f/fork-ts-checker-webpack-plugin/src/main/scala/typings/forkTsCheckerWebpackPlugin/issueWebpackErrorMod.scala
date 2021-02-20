@@ -2,14 +2,14 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.issueIssueMod.Issue
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueWebpackError", JSImport.Namespace)
-@js.native
-object issueWebpackErrorMod extends js.Object {
+object issueWebpackErrorMod {
   
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueWebpackError", "IssueWebpackError")
   @js.native
   class IssueWebpackError protected () extends Error {
     def this(message: String, issue: Issue) = this()

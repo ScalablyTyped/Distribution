@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Background extends js.Object {
+trait Background extends StObject {
   
   var background: DragEnter = js.native
   
@@ -24,30 +25,18 @@ object Background {
   }
   
   @scala.inline
-  implicit class BackgroundOps[Self <: Background] (val x: Self) extends AnyVal {
+  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: DragEnter): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinks(value: DragEnter): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodes(value: DragEnter): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: DragEnter): Self = this.set("background", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinks(value: DragEnter): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodes(value: DragEnter): Self = this.set("nodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPorts(value: DragLeave): Self = this.set("ports", value.asInstanceOf[js.Any])
+    def setPorts(value: DragLeave): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An object was moved.
   */
 @js.native
-trait SchemaMove extends js.Object {
+trait SchemaMove extends StObject {
   
   /**
     * The added parent object(s).
@@ -29,36 +30,24 @@ object SchemaMove {
   }
   
   @scala.inline
-  implicit class SchemaMoveOps[Self <: SchemaMove] (val x: Self) extends AnyVal {
+  implicit class SchemaMoveMutableBuilder[Self <: SchemaMove] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddedParents(value: js.Array[SchemaTargetReference]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddedParentsVarargs(value: SchemaTargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
     
     @scala.inline
-    def setAddedParentsVarargs(value: SchemaTargetReference*): Self = this.set("addedParents", js.Array(value :_*))
+    def setRemovedParents(value: js.Array[SchemaTargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddedParents(value: js.Array[SchemaTargetReference]): Self = this.set("addedParents", value.asInstanceOf[js.Any])
+    def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
     
     @scala.inline
-    def deleteAddedParents: Self = this.set("addedParents", js.undefined)
-    
-    @scala.inline
-    def setRemovedParentsVarargs(value: SchemaTargetReference*): Self = this.set("removedParents", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovedParents(value: js.Array[SchemaTargetReference]): Self = this.set("removedParents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemovedParents: Self = this.set("removedParents", js.undefined)
+    def setRemovedParentsVarargs(value: SchemaTargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
   }
 }

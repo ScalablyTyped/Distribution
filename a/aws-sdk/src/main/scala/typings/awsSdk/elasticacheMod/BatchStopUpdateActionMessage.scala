@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticacheMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchStopUpdateActionMessage extends js.Object {
+trait BatchStopUpdateActionMessage extends StObject {
   
   /**
     * The cache cluster IDs
@@ -31,39 +32,27 @@ object BatchStopUpdateActionMessage {
   }
   
   @scala.inline
-  implicit class BatchStopUpdateActionMessageOps[Self <: BatchStopUpdateActionMessage] (val x: Self) extends AnyVal {
+  implicit class BatchStopUpdateActionMessageMutableBuilder[Self <: BatchStopUpdateActionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheClusterIds(value: CacheClusterIdList): Self = StObject.set(x, "CacheClusterIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheClusterIdsUndefined: Self = StObject.set(x, "CacheClusterIds", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheClusterIdsVarargs(value: String*): Self = StObject.set(x, "CacheClusterIds", js.Array(value :_*))
     
     @scala.inline
-    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    def setReplicationGroupIds(value: ReplicationGroupIdList): Self = StObject.set(x, "ReplicationGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheClusterIdsVarargs(value: String*): Self = this.set("CacheClusterIds", js.Array(value :_*))
+    def setReplicationGroupIdsUndefined: Self = StObject.set(x, "ReplicationGroupIds", js.undefined)
     
     @scala.inline
-    def setCacheClusterIds(value: CacheClusterIdList): Self = this.set("CacheClusterIds", value.asInstanceOf[js.Any])
+    def setReplicationGroupIdsVarargs(value: String*): Self = StObject.set(x, "ReplicationGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def deleteCacheClusterIds: Self = this.set("CacheClusterIds", js.undefined)
-    
-    @scala.inline
-    def setReplicationGroupIdsVarargs(value: String*): Self = this.set("ReplicationGroupIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationGroupIds(value: ReplicationGroupIdList): Self = this.set("ReplicationGroupIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationGroupIds: Self = this.set("ReplicationGroupIds", js.undefined)
+    def setServiceUpdateName(value: String): Self = StObject.set(x, "ServiceUpdateName", value.asInstanceOf[js.Any])
   }
 }

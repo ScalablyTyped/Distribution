@@ -1,5 +1,6 @@
 package typings.appleMapkitJsBrowser.mapkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initialization options for the camera zoom range.
   */
 @js.native
-trait CameraZoomRangeConstructorOptions extends js.Object {
+trait CameraZoomRangeConstructorOptions extends StObject {
   
   /**
     * The maximum allowed distance of the camera from the center of the map in meters.
@@ -29,30 +30,18 @@ object CameraZoomRangeConstructorOptions {
   }
   
   @scala.inline
-  implicit class CameraZoomRangeConstructorOptionsOps[Self <: CameraZoomRangeConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class CameraZoomRangeConstructorOptionsMutableBuilder[Self <: CameraZoomRangeConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxCameraDistance(value: Double): Self = StObject.set(x, "maxCameraDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxCameraDistanceUndefined: Self = StObject.set(x, "maxCameraDistance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinCameraDistance(value: Double): Self = StObject.set(x, "minCameraDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCameraDistance(value: Double): Self = this.set("maxCameraDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxCameraDistance: Self = this.set("maxCameraDistance", js.undefined)
-    
-    @scala.inline
-    def setMinCameraDistance(value: Double): Self = this.set("minCameraDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinCameraDistance: Self = this.set("minCameraDistance", js.undefined)
+    def setMinCameraDistanceUndefined: Self = StObject.set(x, "minCameraDistance", js.undefined)
   }
 }

@@ -3,14 +3,14 @@ package typings.sipJs
 import typings.sipJs.coreMod.Logger
 import typings.sipJs.transportOptionsMod.TransportOptions
 import typings.std.WebSocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/platform/web/transport/transport", JSImport.Namespace)
-@js.native
-object transportTransportMod extends js.Object {
+object transportTransportMod {
   
+  @JSImport("sip.js/lib/platform/web/transport/transport", "Transport")
   @js.native
   class Transport protected ()
     extends typings.sipJs.transportMod.Transport {
@@ -119,9 +119,16 @@ object transportTransportMod extends js.Object {
     def ws: js.UndefOr[WebSocket] = js.native
   }
   /* static members */
-  @js.native
-  object Transport extends js.Object {
+  object Transport {
     
-    var defaultOptions: js.Any = js.native
+    @JSImport("sip.js/lib/platform/web/transport/transport", "Transport")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("sip.js/lib/platform/web/transport/transport", "Transport.defaultOptions")
+    @js.native
+    def defaultOptions: js.Any = js.native
+    @scala.inline
+    def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   }
 }

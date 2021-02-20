@@ -32,13 +32,14 @@ import typings.evernote.mod.Types.SharedNotebook
 import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.UserID
 import typings.evernote.mod.UserStore.AuthenticationResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStoreClient")
 @js.native
-class NoteStoreClient () extends js.Object {
+class NoteStoreClient () extends StObject {
   
   def authenticateToSharedNote(guid: Guid, noteKey: String): js.Promise[AuthenticationResult] = js.native
   def authenticateToSharedNote(guid: Guid, noteKey: String, authenticationToken: String): js.Promise[AuthenticationResult] = js.native

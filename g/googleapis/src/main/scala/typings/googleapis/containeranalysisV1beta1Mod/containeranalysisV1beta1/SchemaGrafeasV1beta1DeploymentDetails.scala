@@ -1,5 +1,6 @@
 package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details of a deployment occurrence.
   */
 @js.native
-trait SchemaGrafeasV1beta1DeploymentDetails extends js.Object {
+trait SchemaGrafeasV1beta1DeploymentDetails extends StObject {
   
   /**
     * Required. Deployment history for the resource.
@@ -24,24 +25,12 @@ object SchemaGrafeasV1beta1DeploymentDetails {
   }
   
   @scala.inline
-  implicit class SchemaGrafeasV1beta1DeploymentDetailsOps[Self <: SchemaGrafeasV1beta1DeploymentDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaGrafeasV1beta1DeploymentDetailsMutableBuilder[Self <: SchemaGrafeasV1beta1DeploymentDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployment(value: SchemaDeployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeployment(value: SchemaDeployment): Self = this.set("deployment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeployment: Self = this.set("deployment", js.undefined)
+    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
   }
 }

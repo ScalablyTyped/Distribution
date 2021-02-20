@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISceneLike extends js.Object {
+trait ISceneLike extends StObject {
   
   def _addPendingData(data: js.Any): Unit = js.native
   
@@ -26,27 +27,15 @@ object ISceneLike {
   }
   
   @scala.inline
-  implicit class ISceneLikeOps[Self <: ISceneLike] (val x: Self) extends AnyVal {
+  implicit class ISceneLikeMutableBuilder[Self <: ISceneLike] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOfflineProvider(value: IOfflineProvider): Self = StObject.set(x, "offlineProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_addPendingData(value: js.Any => Unit): Self = StObject.set(x, "_addPendingData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set_addPendingData(value: js.Any => Unit): Self = this.set("_addPendingData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def set_removePendingData(value: js.Any => Unit): Self = this.set("_removePendingData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setOfflineProvider(value: IOfflineProvider): Self = this.set("offlineProvider", value.asInstanceOf[js.Any])
+    def set_removePendingData(value: js.Any => Unit): Self = StObject.set(x, "_removePendingData", js.Any.fromFunction1(value))
   }
 }

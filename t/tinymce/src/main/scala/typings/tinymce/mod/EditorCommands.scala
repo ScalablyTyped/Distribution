@@ -1,11 +1,12 @@
 package typings.tinymce.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorCommands extends js.Object {
+trait EditorCommands extends StObject {
   
   def addCommands(command_list: js.Object): Unit = js.native
   def addCommands(command_list: js.Object, `type`: String): Unit = js.native

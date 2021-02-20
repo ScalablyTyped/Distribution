@@ -1,5 +1,6 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A batch entry encoding a single non-batch accountstatuses response.
   */
 @js.native
-trait SchemaAccountstatusesCustomBatchResponseEntry extends js.Object {
+trait SchemaAccountstatusesCustomBatchResponseEntry extends StObject {
   
   /**
     * The requested account status. Defined if and only if the request was
@@ -35,36 +36,24 @@ object SchemaAccountstatusesCustomBatchResponseEntry {
   }
   
   @scala.inline
-  implicit class SchemaAccountstatusesCustomBatchResponseEntryOps[Self <: SchemaAccountstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaAccountstatusesCustomBatchResponseEntryMutableBuilder[Self <: SchemaAccountstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountStatus(value: SchemaAccountStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountStatusUndefined: Self = StObject.set(x, "accountStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountStatus(value: SchemaAccountStatus): Self = this.set("accountStatus", value.asInstanceOf[js.Any])
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def deleteAccountStatus: Self = this.set("accountStatus", js.undefined)
+    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
-    
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = this.set("errors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
   }
 }

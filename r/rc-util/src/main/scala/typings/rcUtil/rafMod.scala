@@ -1,18 +1,25 @@
 package typings.rcUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-util/lib/raf", JSImport.Namespace)
-@js.native
-object rafMod extends js.Object {
+object rafMod {
   
-  @js.native
-  object default extends js.Object {
+  object default {
     
+    @JSImport("rc-util/lib/raf", JSImport.Default)
+    @js.native
     def apply(callback: js.Function0[Unit]): Double = js.native
+    @JSImport("rc-util/lib/raf", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var cancel: js.Function1[/* num */ Double, Unit] = js.native
+    @JSImport("rc-util/lib/raf", "default.cancel")
+    @js.native
+    def cancel: js.Function1[/* num */ Double, Unit] = js.native
+    @scala.inline
+    def cancel_=(x: js.Function1[/* num */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancel")(x.asInstanceOf[js.Any])
   }
 }

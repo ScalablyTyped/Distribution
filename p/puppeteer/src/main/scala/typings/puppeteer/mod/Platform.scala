@@ -1,5 +1,6 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.win64
   - typings.puppeteer.puppeteerStrings.linux
 */
-trait Platform extends js.Object
+trait Platform extends StObject
 object Platform {
   
   @scala.inline

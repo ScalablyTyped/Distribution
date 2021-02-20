@@ -1,11 +1,12 @@
 package typings.smartFoxServer.SFS2X.Requests
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RoomEvents extends js.Object {
+trait RoomEvents extends StObject {
   
   /** @type {boolean} Sets whether or not the userCountChange event should be dispatched whenever the users (or players+spectators) count changes in the Room. */
   var allowUserCountChance: Boolean = js.native
@@ -33,30 +34,18 @@ object RoomEvents {
   }
   
   @scala.inline
-  implicit class RoomEventsOps[Self <: RoomEvents] (val x: Self) extends AnyVal {
+  implicit class RoomEventsMutableBuilder[Self <: RoomEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowUserCountChance(value: Boolean): Self = StObject.set(x, "allowUserCountChance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowUserEnter(value: Boolean): Self = StObject.set(x, "allowUserEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowUserExit(value: Boolean): Self = StObject.set(x, "allowUserExit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowUserCountChance(value: Boolean): Self = this.set("allowUserCountChance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowUserEnter(value: Boolean): Self = this.set("allowUserEnter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowUserExit(value: Boolean): Self = this.set("allowUserExit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAllowUserVariablesUpdate(value: Boolean): Self = this.set("allowUserVariablesUpdate", value.asInstanceOf[js.Any])
+    def setAllowUserVariablesUpdate(value: Boolean): Self = StObject.set(x, "allowUserVariablesUpdate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "MapEvent")
 @js.native
-class MapEvent protected () extends js.Object {
+class MapEvent protected () extends StObject {
   /**
     * Creates a new MapEvent
     *

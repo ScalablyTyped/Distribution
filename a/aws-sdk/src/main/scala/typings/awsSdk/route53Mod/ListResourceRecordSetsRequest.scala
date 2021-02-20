@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResourceRecordSetsRequest extends js.Object {
+trait ListResourceRecordSetsRequest extends StObject {
   
   /**
     * The ID of the hosted zone that contains the resource record sets that you want to list.
@@ -41,45 +42,33 @@ object ListResourceRecordSetsRequest {
   }
   
   @scala.inline
-  implicit class ListResourceRecordSetsRequestOps[Self <: ListResourceRecordSetsRequest] (val x: Self) extends AnyVal {
+  implicit class ListResourceRecordSetsRequestMutableBuilder[Self <: ListResourceRecordSetsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
     @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    def setStartRecordIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "StartRecordIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setStartRecordIdentifierUndefined: Self = StObject.set(x, "StartRecordIdentifier", js.undefined)
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    def setStartRecordName(value: DNSName): Self = StObject.set(x, "StartRecordName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRecordIdentifier(value: ResourceRecordSetIdentifier): Self = this.set("StartRecordIdentifier", value.asInstanceOf[js.Any])
+    def setStartRecordNameUndefined: Self = StObject.set(x, "StartRecordName", js.undefined)
     
     @scala.inline
-    def deleteStartRecordIdentifier: Self = this.set("StartRecordIdentifier", js.undefined)
+    def setStartRecordType(value: RRType): Self = StObject.set(x, "StartRecordType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartRecordName(value: DNSName): Self = this.set("StartRecordName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRecordName: Self = this.set("StartRecordName", js.undefined)
-    
-    @scala.inline
-    def setStartRecordType(value: RRType): Self = this.set("StartRecordType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRecordType: Self = this.set("StartRecordType", js.undefined)
+    def setStartRecordTypeUndefined: Self = StObject.set(x, "StartRecordType", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
 @js.native
-trait SaveWidgetOptions extends js.Object {
+trait SaveWidgetOptions extends StObject {
   
   var attribution: js.UndefOr[Attribution] = js.native
   
@@ -21,30 +22,18 @@ object SaveWidgetOptions {
   }
   
   @scala.inline
-  implicit class SaveWidgetOptionsOps[Self <: SaveWidgetOptions] (val x: Self) extends AnyVal {
+  implicit class SaveWidgetOptionsMutableBuilder[Self <: SaveWidgetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: Attribution): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlace(value: Place): Self = StObject.set(x, "place", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttribution(value: Attribution): Self = this.set("attribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
-    
-    @scala.inline
-    def setPlace(value: Place): Self = this.set("place", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlace: Self = this.set("place", js.undefined)
+    def setPlaceUndefined: Self = StObject.set(x, "place", js.undefined)
   }
 }

@@ -2,21 +2,21 @@ package typings.prex
 
 import typings.std.AsyncIterableIterator
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prex/out/lib/boundedQueue", JSImport.Namespace)
-@js.native
-object boundedQueueMod extends js.Object {
+object boundedQueueMod {
   
+  @JSImport("prex/out/lib/boundedQueue", "AsyncBoundedQueue")
   @js.native
   /**
     * Initializes a new instance of the AsyncProducerConsumerQueue class.
     *
     * @param iterable An optional iterable of values or promises.
     */
-  class AsyncBoundedQueue[T] () extends js.Object {
+  class AsyncBoundedQueue[T] () extends StObject {
     def this(iterable: Iterable[T | js.Thenable[T]]) = this()
     
     var _dequeue: js.Any = js.native

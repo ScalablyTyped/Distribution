@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,18 +98,32 @@ class PublishedRestService protected () extends Document {
   def version: String = js.native
   def version_=(newValue: String): Unit = js.native
 }
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService")
-@js.native
-object PublishedRestService extends js.Object {
+object PublishedRestService {
+  
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new PublishedRestService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.createIn")
+  @js.native
   def createIn(container: IFolderBase): PublishedRestService = js.native
   
-  var structureTypeName: String = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  @scala.inline
+  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
-  var versionInfo: StructureVersionInfo = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.PublishedRestService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  @scala.inline
+  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

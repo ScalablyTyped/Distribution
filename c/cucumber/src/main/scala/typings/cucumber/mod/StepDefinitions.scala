@@ -1,12 +1,13 @@
 package typings.cucumber.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StepDefinitions extends js.Object {
+trait StepDefinitions extends StObject {
   
   def Given(pattern: String, code: StepDefinitionCode): Unit = js.native
   def Given(pattern: String, options: StepDefinitionOptions, code: StepDefinitionCode): Unit = js.native

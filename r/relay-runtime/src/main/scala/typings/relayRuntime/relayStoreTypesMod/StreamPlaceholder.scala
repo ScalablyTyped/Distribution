@@ -4,6 +4,7 @@ import typings.relayRuntime.normalizationNodeMod.NormalizationSelectableNode
 import typings.relayRuntime.relayRuntimeStrings.stream_
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,39 +40,27 @@ object StreamPlaceholder {
   }
   
   @scala.inline
-  implicit class StreamPlaceholderOps[Self <: StreamPlaceholder] (val x: Self) extends AnyVal {
+  implicit class StreamPlaceholderMutableBuilder[Self <: StreamPlaceholder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: stream_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNode(value: NormalizationSelectableNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: stream_): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setParentID(value: DataID): Self = StObject.set(x, "parentID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNode(value: NormalizationSelectableNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
     
     @scala.inline
-    def setParentID(value: DataID): Self = this.set("parentID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathVarargs(value: String*): Self = this.set("path", js.Array(value :_*))
-    
-    @scala.inline
-    def setPath(value: js.Array[String]): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVariables(value: Variables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
   }
 }

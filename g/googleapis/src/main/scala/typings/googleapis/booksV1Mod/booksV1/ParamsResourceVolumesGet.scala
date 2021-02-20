@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,66 +61,54 @@ object ParamsResourceVolumesGet {
   }
   
   @scala.inline
-  implicit class ParamsResourceVolumesGetOps[Self <: ParamsResourceVolumesGet] (val x: Self) extends AnyVal {
+  implicit class ParamsResourceVolumesGetMutableBuilder[Self <: ParamsResourceVolumesGet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setIncludeNonComicsSeries(value: Boolean): Self = StObject.set(x, "includeNonComicsSeries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    def setIncludeNonComicsSeriesUndefined: Self = StObject.set(x, "includeNonComicsSeries", js.undefined)
     
     @scala.inline
-    def deleteCountry: Self = this.set("country", js.undefined)
+    def setPartner(value: String): Self = StObject.set(x, "partner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNonComicsSeries(value: Boolean): Self = this.set("includeNonComicsSeries", value.asInstanceOf[js.Any])
+    def setPartnerUndefined: Self = StObject.set(x, "partner", js.undefined)
     
     @scala.inline
-    def deleteIncludeNonComicsSeries: Self = this.set("includeNonComicsSeries", js.undefined)
+    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartner(value: String): Self = this.set("partner", value.asInstanceOf[js.Any])
+    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
     @scala.inline
-    def deletePartner: Self = this.set("partner", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteProjection: Self = this.set("projection", js.undefined)
+    def setUser_library_consistent_read(value: Boolean): Self = StObject.set(x, "user_library_consistent_read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setUser_library_consistent_readUndefined: Self = StObject.set(x, "user_library_consistent_read", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUser_library_consistent_read(value: Boolean): Self = this.set("user_library_consistent_read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser_library_consistent_read: Self = this.set("user_library_consistent_read", js.undefined)
-    
-    @scala.inline
-    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

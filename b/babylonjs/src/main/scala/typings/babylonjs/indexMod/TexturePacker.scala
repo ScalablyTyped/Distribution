@@ -1,6 +1,7 @@
 package typings.babylonjs.indexMod
 
 import typings.babylonjs.packerMod.ITexturePackerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,25 +26,35 @@ class TexturePacker protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs/index", "TexturePacker")
-@js.native
-object TexturePacker extends js.Object {
+object TexturePacker {
   
   /** Packer Layout Constant 2 */
+  @JSImport("babylonjs/index", "TexturePacker.LAYOUT_COLNUM")
+  @js.native
   val LAYOUT_COLNUM: Double = js.native
   
   /** Packer Layout Constant 1 */
+  @JSImport("babylonjs/index", "TexturePacker.LAYOUT_POWER2")
+  @js.native
   val LAYOUT_POWER2: Double = js.native
   
   /** Packer Layout Constant 0 */
+  @JSImport("babylonjs/index", "TexturePacker.LAYOUT_STRIP")
+  @js.native
   val LAYOUT_STRIP: Double = js.native
   
   /** Packer Layout Constant 2 */
+  @JSImport("babylonjs/index", "TexturePacker.SUBUV_COLOR")
+  @js.native
   val SUBUV_COLOR: Double = js.native
   
   /** Packer Layout Constant 1 */
+  @JSImport("babylonjs/index", "TexturePacker.SUBUV_EXTEND")
+  @js.native
   val SUBUV_EXTEND: Double = js.native
   
   /** Packer Layout Constant 0 */
+  @JSImport("babylonjs/index", "TexturePacker.SUBUV_WRAP")
+  @js.native
   val SUBUV_WRAP: Double = js.native
 }

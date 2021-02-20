@@ -1,11 +1,12 @@
 package typings.awsSdk.stepfunctionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetExecutionHistoryOutput extends js.Object {
+trait GetExecutionHistoryOutput extends StObject {
   
   /**
     * The list of events that occurred in the execution.
@@ -26,30 +27,18 @@ object GetExecutionHistoryOutput {
   }
   
   @scala.inline
-  implicit class GetExecutionHistoryOutputOps[Self <: GetExecutionHistoryOutput] (val x: Self) extends AnyVal {
+  implicit class GetExecutionHistoryOutputMutableBuilder[Self <: GetExecutionHistoryOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvents(value: HistoryEventList): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventsVarargs(value: HistoryEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventsVarargs(value: HistoryEvent*): Self = this.set("events", js.Array(value :_*))
-    
-    @scala.inline
-    def setEvents(value: HistoryEventList): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: PageToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

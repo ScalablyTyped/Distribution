@@ -5,12 +5,13 @@ import typings.cadesplugin.cadespluginNumbers.`1`
 import typings.cadesplugin.cadespluginNumbers.`2`
 import typings.cadesplugin.cadespluginNumbers.`3`
 import typings.cadesplugin.cadespluginNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAPICOM_STORE_LOCATION extends js.Object {
+trait CAPICOM_STORE_LOCATION extends StObject {
   
   val CAPICOM_ACTIVE_DIRECTORY_USER_STORE: `3` = js.native
   
@@ -37,33 +38,21 @@ object CAPICOM_STORE_LOCATION {
   }
   
   @scala.inline
-  implicit class CAPICOM_STORE_LOCATIONOps[Self <: CAPICOM_STORE_LOCATION] (val x: Self) extends AnyVal {
+  implicit class CAPICOM_STORE_LOCATIONMutableBuilder[Self <: CAPICOM_STORE_LOCATION] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCAPICOM_ACTIVE_DIRECTORY_USER_STORE(value: `3`): Self = StObject.set(x, "CAPICOM_ACTIVE_DIRECTORY_USER_STORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = StObject.set(x, "CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCAPICOM_LOCAL_MACHINE_STORE(value: `1`): Self = StObject.set(x, "CAPICOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_ACTIVE_DIRECTORY_USER_STORE(value: `3`): Self = this.set("CAPICOM_ACTIVE_DIRECTORY_USER_STORE", value.asInstanceOf[js.Any])
+    def setCAPICOM_MEMORY_STORE(value: `0`): Self = StObject.set(x, "CAPICOM_MEMORY_STORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCAPICOM_CURRENT_USER_STORE(value: `2`): Self = this.set("CAPICOM_CURRENT_USER_STORE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_LOCAL_MACHINE_STORE(value: `1`): Self = this.set("CAPICOM_LOCAL_MACHINE_STORE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_MEMORY_STORE(value: `0`): Self = this.set("CAPICOM_MEMORY_STORE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCAPICOM_SMART_CARD_USER_STORE(value: `4`): Self = this.set("CAPICOM_SMART_CARD_USER_STORE", value.asInstanceOf[js.Any])
+    def setCAPICOM_SMART_CARD_USER_STORE(value: `4`): Self = StObject.set(x, "CAPICOM_SMART_CARD_USER_STORE", value.asInstanceOf[js.Any])
   }
 }

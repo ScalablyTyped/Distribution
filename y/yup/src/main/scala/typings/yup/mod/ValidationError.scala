@@ -1,6 +1,7 @@
 package typings.yup.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +36,22 @@ class ValidationError protected () extends Error {
   var value: js.Any = js.native
 }
 /* static members */
-@JSImport("yup", "ValidationError")
-@js.native
-object ValidationError extends js.Object {
+object ValidationError {
   
+  @JSImport("yup", "ValidationError.formatError")
+  @js.native
   def formatError(message: String): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = js.native
+  @JSImport("yup", "ValidationError.formatError")
+  @js.native
   def formatError(message: String, params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = js.native
+  @JSImport("yup", "ValidationError.formatError")
+  @js.native
   def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String]): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = js.native
+  @JSImport("yup", "ValidationError.formatError")
+  @js.native
   def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String], params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = js.native
   
+  @JSImport("yup", "ValidationError.isError")
+  @js.native
   def isError(err: js.Any): /* is yup.yup.ValidationError */ Boolean = js.native
 }

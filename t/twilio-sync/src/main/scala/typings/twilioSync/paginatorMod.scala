@@ -1,15 +1,15 @@
 package typings.twilioSync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/paginator", JSImport.Namespace)
-@js.native
-object paginatorMod extends js.Object {
+object paginatorMod {
   
+  @JSImport("twilio-sync/lib/paginator", "Paginator")
   @js.native
-  class Paginator[Item] protected () extends js.Object {
+  class Paginator[Item] protected () extends StObject {
     def this(items: js.Any, source: js.Any, prevToken: String, nextToken: String) = this()
     
     def hasNextPage: Boolean = js.native

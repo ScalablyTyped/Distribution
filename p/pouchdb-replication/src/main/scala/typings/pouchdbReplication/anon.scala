@@ -5,16 +5,15 @@ import typings.pouchdbReplication.PouchDB.Database
 import typings.pouchdbReplication.PouchDB.Replication.ReplicateOptions
 import typings.pouchdbReplication.PouchDB.Replication.Replication
 import typings.pouchdbReplication.PouchDB.Replication.ReplicationResultComplete
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait From extends js.Object {
+  trait From extends StObject {
     
     /**
       * Replicate data from `source`. Both the source and target can be a PouchDB instance

@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExternalPropertyFileReferences extends js.Object {
+trait ExternalPropertyFileReferences extends StObject {
   
   /**
     * An array of external property files containing run.addresses arrays to be merged with the root log file.
@@ -102,159 +103,147 @@ object ExternalPropertyFileReferences {
   }
   
   @scala.inline
-  implicit class ExternalPropertyFileReferencesOps[Self <: ExternalPropertyFileReferences] (val x: Self) extends AnyVal {
+  implicit class ExternalPropertyFileReferencesMutableBuilder[Self <: ExternalPropertyFileReferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddresses(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddressesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "addresses", js.Array(value :_*))
     
     @scala.inline
-    def setAddressesVarargs(value: ExternalPropertyFileReference*): Self = this.set("addresses", js.Array(value :_*))
+    def setArtifacts(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddresses(value: js.Array[ExternalPropertyFileReference]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
     @scala.inline
-    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    def setArtifactsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
     @scala.inline
-    def setArtifactsVarargs(value: ExternalPropertyFileReference*): Self = this.set("artifacts", js.Array(value :_*))
+    def setConversion(value: ExternalPropertyFileReference): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: js.Array[ExternalPropertyFileReference]): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
     @scala.inline
-    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    def setDriver(value: ExternalPropertyFileReference): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConversion(value: ExternalPropertyFileReference): Self = this.set("conversion", value.asInstanceOf[js.Any])
+    def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
     
     @scala.inline
-    def deleteConversion: Self = this.set("conversion", js.undefined)
+    def setExtensions(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: ExternalPropertyFileReference): Self = this.set("driver", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteDriver: Self = this.set("driver", js.undefined)
+    def setExtensionsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionsVarargs(value: ExternalPropertyFileReference*): Self = this.set("extensions", js.Array(value :_*))
+    def setExternalizedProperties(value: ExternalPropertyFileReference): Self = StObject.set(x, "externalizedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[ExternalPropertyFileReference]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setExternalizedPropertiesUndefined: Self = StObject.set(x, "externalizedProperties", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    def setGraphs(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "graphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalizedProperties(value: ExternalPropertyFileReference): Self = this.set("externalizedProperties", value.asInstanceOf[js.Any])
+    def setGraphsUndefined: Self = StObject.set(x, "graphs", js.undefined)
     
     @scala.inline
-    def deleteExternalizedProperties: Self = this.set("externalizedProperties", js.undefined)
+    def setGraphsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "graphs", js.Array(value :_*))
     
     @scala.inline
-    def setGraphsVarargs(value: ExternalPropertyFileReference*): Self = this.set("graphs", js.Array(value :_*))
+    def setInvocations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "invocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphs(value: js.Array[ExternalPropertyFileReference]): Self = this.set("graphs", value.asInstanceOf[js.Any])
+    def setInvocationsUndefined: Self = StObject.set(x, "invocations", js.undefined)
     
     @scala.inline
-    def deleteGraphs: Self = this.set("graphs", js.undefined)
+    def setInvocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "invocations", js.Array(value :_*))
     
     @scala.inline
-    def setInvocationsVarargs(value: ExternalPropertyFileReference*): Self = this.set("invocations", js.Array(value :_*))
+    def setLogicalLocations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "logicalLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvocations(value: js.Array[ExternalPropertyFileReference]): Self = this.set("invocations", value.asInstanceOf[js.Any])
+    def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
     
     @scala.inline
-    def deleteInvocations: Self = this.set("invocations", js.undefined)
+    def setLogicalLocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
     
     @scala.inline
-    def setLogicalLocationsVarargs(value: ExternalPropertyFileReference*): Self = this.set("logicalLocations", js.Array(value :_*))
+    def setPolicies(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalLocations(value: js.Array[ExternalPropertyFileReference]): Self = this.set("logicalLocations", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "policies", js.undefined)
     
     @scala.inline
-    def deleteLogicalLocations: Self = this.set("logicalLocations", js.undefined)
+    def setPoliciesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "policies", js.Array(value :_*))
     
     @scala.inline
-    def setPoliciesVarargs(value: ExternalPropertyFileReference*): Self = this.set("policies", js.Array(value :_*))
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: js.Array[ExternalPropertyFileReference]): Self = this.set("policies", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePolicies: Self = this.set("policies", js.undefined)
+    def setResults(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setResultsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "results", js.Array(value :_*))
     
     @scala.inline
-    def setResultsVarargs(value: ExternalPropertyFileReference*): Self = this.set("results", js.Array(value :_*))
+    def setTaxonomies(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResults(value: js.Array[ExternalPropertyFileReference]): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setTaxonomiesUndefined: Self = StObject.set(x, "taxonomies", js.undefined)
     
     @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setTaxonomiesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
     
     @scala.inline
-    def setTaxonomiesVarargs(value: ExternalPropertyFileReference*): Self = this.set("taxonomies", js.Array(value :_*))
+    def setThreadFlowLocations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "threadFlowLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaxonomies(value: js.Array[ExternalPropertyFileReference]): Self = this.set("taxonomies", value.asInstanceOf[js.Any])
+    def setThreadFlowLocationsUndefined: Self = StObject.set(x, "threadFlowLocations", js.undefined)
     
     @scala.inline
-    def deleteTaxonomies: Self = this.set("taxonomies", js.undefined)
+    def setThreadFlowLocationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "threadFlowLocations", js.Array(value :_*))
     
     @scala.inline
-    def setThreadFlowLocationsVarargs(value: ExternalPropertyFileReference*): Self = this.set("threadFlowLocations", js.Array(value :_*))
+    def setTranslations(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadFlowLocations(value: js.Array[ExternalPropertyFileReference]): Self = this.set("threadFlowLocations", value.asInstanceOf[js.Any])
+    def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
     @scala.inline
-    def deleteThreadFlowLocations: Self = this.set("threadFlowLocations", js.undefined)
+    def setTranslationsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "translations", js.Array(value :_*))
     
     @scala.inline
-    def setTranslationsVarargs(value: ExternalPropertyFileReference*): Self = this.set("translations", js.Array(value :_*))
+    def setWebRequests(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "webRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTranslations(value: js.Array[ExternalPropertyFileReference]): Self = this.set("translations", value.asInstanceOf[js.Any])
+    def setWebRequestsUndefined: Self = StObject.set(x, "webRequests", js.undefined)
     
     @scala.inline
-    def deleteTranslations: Self = this.set("translations", js.undefined)
+    def setWebRequestsVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "webRequests", js.Array(value :_*))
     
     @scala.inline
-    def setWebRequestsVarargs(value: ExternalPropertyFileReference*): Self = this.set("webRequests", js.Array(value :_*))
+    def setWebResponses(value: js.Array[ExternalPropertyFileReference]): Self = StObject.set(x, "webResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebRequests(value: js.Array[ExternalPropertyFileReference]): Self = this.set("webRequests", value.asInstanceOf[js.Any])
+    def setWebResponsesUndefined: Self = StObject.set(x, "webResponses", js.undefined)
     
     @scala.inline
-    def deleteWebRequests: Self = this.set("webRequests", js.undefined)
-    
-    @scala.inline
-    def setWebResponsesVarargs(value: ExternalPropertyFileReference*): Self = this.set("webResponses", js.Array(value :_*))
-    
-    @scala.inline
-    def setWebResponses(value: js.Array[ExternalPropertyFileReference]): Self = this.set("webResponses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebResponses: Self = this.set("webResponses", js.undefined)
+    def setWebResponsesVarargs(value: ExternalPropertyFileReference*): Self = StObject.set(x, "webResponses", js.Array(value :_*))
   }
 }

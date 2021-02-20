@@ -1,11 +1,12 @@
 package typings.octokitPluginRestEndpointMethods.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateForIssue extends js.Object {
+trait CreateForIssue extends StObject {
   
   var createForCommitComment: `873` = js.native
   
@@ -74,75 +75,63 @@ object CreateForIssue {
   }
   
   @scala.inline
-  implicit class CreateForIssueOps[Self <: CreateForIssue] (val x: Self) extends AnyVal {
+  implicit class CreateForIssueMutableBuilder[Self <: CreateForIssue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateForCommitComment(value: `873`): Self = StObject.set(x, "createForCommitComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateForIssue(value: `874`): Self = StObject.set(x, "createForIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateForIssueComment(value: `875`): Self = StObject.set(x, "createForIssueComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateForCommitComment(value: `873`): Self = this.set("createForCommitComment", value.asInstanceOf[js.Any])
+    def setCreateForPullRequestReviewComment(value: `876`): Self = StObject.set(x, "createForPullRequestReviewComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateForIssue(value: `874`): Self = this.set("createForIssue", value.asInstanceOf[js.Any])
+    def setCreateForTeamDiscussionCommentInOrg(value: `877`): Self = StObject.set(x, "createForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateForIssueComment(value: `875`): Self = this.set("createForIssueComment", value.asInstanceOf[js.Any])
+    def setCreateForTeamDiscussionInOrg(value: `878`): Self = StObject.set(x, "createForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateForPullRequestReviewComment(value: `876`): Self = this.set("createForPullRequestReviewComment", value.asInstanceOf[js.Any])
+    def setDeleteForCommitComment(value: `879`): Self = StObject.set(x, "deleteForCommitComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateForTeamDiscussionCommentInOrg(value: `877`): Self = this.set("createForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
+    def setDeleteForIssue(value: `880`): Self = StObject.set(x, "deleteForIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateForTeamDiscussionInOrg(value: `878`): Self = this.set("createForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
+    def setDeleteForIssueComment(value: `881`): Self = StObject.set(x, "deleteForIssueComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteForCommitComment(value: `879`): Self = this.set("deleteForCommitComment", value.asInstanceOf[js.Any])
+    def setDeleteForPullRequestComment(value: `882`): Self = StObject.set(x, "deleteForPullRequestComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteForIssue(value: `880`): Self = this.set("deleteForIssue", value.asInstanceOf[js.Any])
+    def setDeleteForTeamDiscussion(value: `883`): Self = StObject.set(x, "deleteForTeamDiscussion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteForIssueComment(value: `881`): Self = this.set("deleteForIssueComment", value.asInstanceOf[js.Any])
+    def setDeleteForTeamDiscussionComment(value: `884`): Self = StObject.set(x, "deleteForTeamDiscussionComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteForPullRequestComment(value: `882`): Self = this.set("deleteForPullRequestComment", value.asInstanceOf[js.Any])
+    def setDeleteLegacy(value: `885`): Self = StObject.set(x, "deleteLegacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteForTeamDiscussion(value: `883`): Self = this.set("deleteForTeamDiscussion", value.asInstanceOf[js.Any])
+    def setListForCommitComment(value: `886`): Self = StObject.set(x, "listForCommitComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteForTeamDiscussionComment(value: `884`): Self = this.set("deleteForTeamDiscussionComment", value.asInstanceOf[js.Any])
+    def setListForIssue(value: `887`): Self = StObject.set(x, "listForIssue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteLegacy(value: `885`): Self = this.set("deleteLegacy", value.asInstanceOf[js.Any])
+    def setListForIssueComment(value: `888`): Self = StObject.set(x, "listForIssueComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForCommitComment(value: `886`): Self = this.set("listForCommitComment", value.asInstanceOf[js.Any])
+    def setListForPullRequestReviewComment(value: `889`): Self = StObject.set(x, "listForPullRequestReviewComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForIssue(value: `887`): Self = this.set("listForIssue", value.asInstanceOf[js.Any])
+    def setListForTeamDiscussionCommentInOrg(value: `890`): Self = StObject.set(x, "listForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListForIssueComment(value: `888`): Self = this.set("listForIssueComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListForPullRequestReviewComment(value: `889`): Self = this.set("listForPullRequestReviewComment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListForTeamDiscussionCommentInOrg(value: `890`): Self = this.set("listForTeamDiscussionCommentInOrg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setListForTeamDiscussionInOrg(value: `891`): Self = this.set("listForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
+    def setListForTeamDiscussionInOrg(value: `891`): Self = StObject.set(x, "listForTeamDiscussionInOrg", value.asInstanceOf[js.Any])
   }
 }

@@ -14,13 +14,14 @@ import typings.officeJs.officeJsStrings.Square
 import typings.officeJs.officeJsStrings.Star
 import typings.officeJs.officeJsStrings.Triangle
 import typings.officeJs.officeJsStrings.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`. */
 @js.native
-trait ChartPointUpdateData extends js.Object {
+trait ChartPointUpdateData extends StObject {
   
   /**
     *
@@ -89,62 +90,50 @@ object ChartPointUpdateData {
   }
   
   @scala.inline
-  implicit class ChartPointUpdateDataOps[Self <: ChartPointUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartPointUpdateDataMutableBuilder[Self <: ChartPointUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataLabel(value: ChartDataLabelUpdateData): Self = StObject.set(x, "dataLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataLabelUndefined: Self = StObject.set(x, "dataLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: ChartPointFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLabel(value: ChartDataLabelUpdateData): Self = this.set("dataLabel", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDataLabel: Self = this.set("dataLabel", js.undefined)
+    def setHasDataLabel(value: Boolean): Self = StObject.set(x, "hasDataLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: ChartPointFormatUpdateData): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setHasDataLabelUndefined: Self = StObject.set(x, "hasDataLabel", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setMarkerBackgroundColor(value: String): Self = StObject.set(x, "markerBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasDataLabel(value: Boolean): Self = this.set("hasDataLabel", value.asInstanceOf[js.Any])
+    def setMarkerBackgroundColorUndefined: Self = StObject.set(x, "markerBackgroundColor", js.undefined)
     
     @scala.inline
-    def deleteHasDataLabel: Self = this.set("hasDataLabel", js.undefined)
+    def setMarkerForegroundColor(value: String): Self = StObject.set(x, "markerForegroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerBackgroundColor(value: String): Self = this.set("markerBackgroundColor", value.asInstanceOf[js.Any])
+    def setMarkerForegroundColorUndefined: Self = StObject.set(x, "markerForegroundColor", js.undefined)
     
     @scala.inline
-    def deleteMarkerBackgroundColor: Self = this.set("markerBackgroundColor", js.undefined)
+    def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerForegroundColor(value: String): Self = this.set("markerForegroundColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkerForegroundColor: Self = this.set("markerForegroundColor", js.undefined)
-    
-    @scala.inline
-    def setMarkerSize(value: Double): Self = this.set("markerSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarkerSize: Self = this.set("markerSize", js.undefined)
+    def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
     
     @scala.inline
     def setMarkerStyle(
       value: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture
-    ): Self = this.set("markerStyle", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarkerStyle: Self = this.set("markerStyle", js.undefined)
+    def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
   }
 }

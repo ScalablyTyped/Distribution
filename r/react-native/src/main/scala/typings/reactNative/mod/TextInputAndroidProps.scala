@@ -24,12 +24,13 @@ import typings.reactNative.reactNativeStrings.top
 import typings.reactNative.reactNativeStrings.username
 import typings.reactNative.reactNativeStrings.yes
 import typings.reactNative.reactNativeStrings.yesExcludeDescendants
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextInputAndroidProps extends js.Object {
+trait TextInputAndroidProps extends StObject {
   
   /**
     * Determines which content to suggest on auto complete, e.g.`username`.
@@ -134,86 +135,74 @@ object TextInputAndroidProps {
   }
   
   @scala.inline
-  implicit class TextInputAndroidPropsOps[Self <: TextInputAndroidProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class TextInputAndroidPropsMutableBuilder[Self <: TextInputAndroidProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAutoCompleteType(
       value: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
-    ): Self = this.set("autoCompleteType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "autoCompleteType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoCompleteType: Self = this.set("autoCompleteType", js.undefined)
+    def setAutoCompleteTypeUndefined: Self = StObject.set(x, "autoCompleteType", js.undefined)
     
     @scala.inline
-    def setDisableFullscreenUI(value: Boolean): Self = this.set("disableFullscreenUI", value.asInstanceOf[js.Any])
+    def setDisableFullscreenUI(value: Boolean): Self = StObject.set(x, "disableFullscreenUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisableFullscreenUI: Self = this.set("disableFullscreenUI", js.undefined)
+    def setDisableFullscreenUIUndefined: Self = StObject.set(x, "disableFullscreenUI", js.undefined)
     
     @scala.inline
-    def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = this.set("importantForAutofill", value.asInstanceOf[js.Any])
+    def setImportantForAutofill(value: auto | no | noExcludeDescendants | yes | yesExcludeDescendants): Self = StObject.set(x, "importantForAutofill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImportantForAutofill: Self = this.set("importantForAutofill", js.undefined)
+    def setImportantForAutofillUndefined: Self = StObject.set(x, "importantForAutofill", js.undefined)
     
     @scala.inline
-    def setInlineImageLeft(value: String): Self = this.set("inlineImageLeft", value.asInstanceOf[js.Any])
+    def setInlineImageLeft(value: String): Self = StObject.set(x, "inlineImageLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineImageLeft: Self = this.set("inlineImageLeft", js.undefined)
+    def setInlineImageLeftUndefined: Self = StObject.set(x, "inlineImageLeft", js.undefined)
     
     @scala.inline
-    def setInlineImagePadding(value: Double): Self = this.set("inlineImagePadding", value.asInstanceOf[js.Any])
+    def setInlineImagePadding(value: Double): Self = StObject.set(x, "inlineImagePadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInlineImagePadding: Self = this.set("inlineImagePadding", js.undefined)
+    def setInlineImagePaddingUndefined: Self = StObject.set(x, "inlineImagePadding", js.undefined)
     
     @scala.inline
-    def setNumberOfLines(value: Double): Self = this.set("numberOfLines", value.asInstanceOf[js.Any])
+    def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberOfLines: Self = this.set("numberOfLines", js.undefined)
+    def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
     
     @scala.inline
-    def setReturnKeyLabel(value: String): Self = this.set("returnKeyLabel", value.asInstanceOf[js.Any])
+    def setReturnKeyLabel(value: String): Self = StObject.set(x, "returnKeyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReturnKeyLabel: Self = this.set("returnKeyLabel", js.undefined)
+    def setReturnKeyLabelUndefined: Self = StObject.set(x, "returnKeyLabel", js.undefined)
     
     @scala.inline
-    def setShowSoftInputOnFocus(value: Boolean): Self = this.set("showSoftInputOnFocus", value.asInstanceOf[js.Any])
+    def setShowSoftInputOnFocus(value: Boolean): Self = StObject.set(x, "showSoftInputOnFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowSoftInputOnFocus: Self = this.set("showSoftInputOnFocus", js.undefined)
+    def setShowSoftInputOnFocusUndefined: Self = StObject.set(x, "showSoftInputOnFocus", js.undefined)
     
     @scala.inline
-    def setTextAlignVertical(value: auto | top | bottom | center): Self = this.set("textAlignVertical", value.asInstanceOf[js.Any])
+    def setTextAlignVertical(value: auto | top | bottom | center): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextAlignVertical: Self = this.set("textAlignVertical", js.undefined)
+    def setTextAlignVerticalUndefined: Self = StObject.set(x, "textAlignVertical", js.undefined)
     
     @scala.inline
-    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = this.set("textBreakStrategy", value.asInstanceOf[js.Any])
+    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextBreakStrategy: Self = this.set("textBreakStrategy", js.undefined)
+    def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
     
     @scala.inline
-    def setUnderlineColorAndroid(value: ColorValue): Self = this.set("underlineColorAndroid", value.asInstanceOf[js.Any])
+    def setUnderlineColorAndroid(value: ColorValue): Self = StObject.set(x, "underlineColorAndroid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnderlineColorAndroid: Self = this.set("underlineColorAndroid", js.undefined)
+    def setUnderlineColorAndroidUndefined: Self = StObject.set(x, "underlineColorAndroid", js.undefined)
   }
 }

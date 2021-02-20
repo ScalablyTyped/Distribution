@@ -9,19 +9,20 @@ import typings.reactVis.reactVisStrings.bottomleft
 import typings.reactVis.reactVisStrings.bottomright
 import typings.reactVis.reactVisStrings.topleft
 import typings.reactVis.reactVisStrings.topright
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HintProps extends js.Object {
+trait HintProps extends StObject {
   
-   // default: {}
+  // default: {}
   var align: js.UndefOr[Vertical] = js.native
   
   var format: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.native
   
-   // default: {'horizontal':'auto','vertical':'auto'}
+  // default: {'horizontal':'auto','vertical':'auto'}
   var getAlignStyle: js.UndefOr[RVGetAlignStyle] = js.native
   
   var innerHeight: js.UndefOr[Double] = js.native
@@ -49,84 +50,72 @@ object HintProps {
   }
   
   @scala.inline
-  implicit class HintPropsOps[Self <: HintProps] (val x: Self) extends AnyVal {
+  implicit class HintPropsMutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: Vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: /* x */ js.Any => js.Array[Title]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAlign(value: Vertical): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setGetAlignStyle(value: (/* align */ Horizontal, /* x */ Double, /* y */ Double) => CSSProperties): Self = StObject.set(x, "getAlignStyle", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFormat(value: /* x */ js.Any => js.Array[Title]): Self = this.set("format", js.Any.fromFunction1(value))
+    def setGetAlignStyleUndefined: Self = StObject.set(x, "getAlignStyle", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAlignStyle(value: (/* align */ Horizontal, /* x */ Double, /* y */ Double) => CSSProperties): Self = this.set("getAlignStyle", js.Any.fromFunction3(value))
+    def setInnerHeightUndefined: Self = StObject.set(x, "innerHeight", js.undefined)
     
     @scala.inline
-    def deleteGetAlignStyle: Self = this.set("getAlignStyle", js.undefined)
+    def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerHeight(value: Double): Self = this.set("innerHeight", value.asInstanceOf[js.Any])
+    def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
     @scala.inline
-    def deleteInnerHeight: Self = this.set("innerHeight", js.undefined)
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerWidth(value: Double): Self = this.set("innerWidth", value.asInstanceOf[js.Any])
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def deleteInnerWidth: Self = this.set("innerWidth", js.undefined)
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setOrientation(value: bottomleft | bottomright | topleft | topright): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setScales(value: StringDictionary[js.Any]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: bottomleft | bottomright | topleft | topright): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScales(value: StringDictionary[js.Any]): Self = this.set("scales", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteScales: Self = this.set("scales", js.undefined)
+    def setValue(value: StringDictionary[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setValue(value: StringDictionary[js.Any]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

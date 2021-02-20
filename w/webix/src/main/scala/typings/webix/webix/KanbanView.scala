@@ -3,12 +3,13 @@ package typings.webix.webix
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KanbanView extends js.Object {
+trait KanbanView extends StObject {
   
   @JSName("$dragCreate")
   def $dragCreate(source: HTMLElement, event: Event): HTMLElement = js.native

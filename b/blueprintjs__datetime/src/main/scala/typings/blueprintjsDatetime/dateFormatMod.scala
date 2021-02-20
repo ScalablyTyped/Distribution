@@ -3,25 +3,34 @@ package typings.blueprintjsDatetime
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/datetime/lib/esm/dateFormat", JSImport.Namespace)
-@js.native
-object dateFormatMod extends js.Object {
+object dateFormatMod {
   
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @js.native
   def getFormattedDateString(date: Null, props: IDateFormatProps with IDatePickerBaseProps): String = js.native
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @js.native
   def getFormattedDateString(date: Null, props: IDateFormatProps with IDatePickerBaseProps, ignoreRange: Boolean): String = js.native
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @js.native
   def getFormattedDateString(date: Date, props: IDateFormatProps with IDatePickerBaseProps): String = js.native
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @js.native
   def getFormattedDateString(date: Date, props: IDateFormatProps with IDatePickerBaseProps, ignoreRange: Boolean): String = js.native
-  @JSName("getFormattedDateString")
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @js.native
   def getFormattedDateString_false(date: `false`, props: IDateFormatProps with IDatePickerBaseProps): String = js.native
-  @JSName("getFormattedDateString")
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @js.native
   def getFormattedDateString_false(date: `false`, props: IDateFormatProps with IDatePickerBaseProps, ignoreRange: Boolean): String = js.native
   
   @js.native
-  trait IDateFormatProps extends js.Object {
+  trait IDateFormatProps extends StObject {
     
     /**
       * Function to render a JavaScript `Date` to a string.

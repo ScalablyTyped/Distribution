@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureValue extends js.Object {
+trait FeatureValue extends StObject {
   
   /** The categorical feature value. */
   var categoricalValue: js.UndefOr[CategoricalValue] = js.native
@@ -25,36 +26,24 @@ object FeatureValue {
   }
   
   @scala.inline
-  implicit class FeatureValueOps[Self <: FeatureValue] (val x: Self) extends AnyVal {
+  implicit class FeatureValueMutableBuilder[Self <: FeatureValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategoricalValue(value: CategoricalValue): Self = StObject.set(x, "categoricalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoricalValueUndefined: Self = StObject.set(x, "categoricalValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeatureColumn(value: String): Self = StObject.set(x, "featureColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoricalValue(value: CategoricalValue): Self = this.set("categoricalValue", value.asInstanceOf[js.Any])
+    def setFeatureColumnUndefined: Self = StObject.set(x, "featureColumn", js.undefined)
     
     @scala.inline
-    def deleteCategoricalValue: Self = this.set("categoricalValue", js.undefined)
+    def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureColumn(value: String): Self = this.set("featureColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatureColumn: Self = this.set("featureColumn", js.undefined)
-    
-    @scala.inline
-    def setNumericalValue(value: Double): Self = this.set("numericalValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumericalValue: Self = this.set("numericalValue", js.undefined)
+    def setNumericalValueUndefined: Self = StObject.set(x, "numericalValue", js.undefined)
   }
 }

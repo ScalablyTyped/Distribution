@@ -1,31 +1,28 @@
 package typings.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PollingWatchKind extends js.Object
+sealed trait PollingWatchKind extends StObject
 @JSImport("typescript", "PollingWatchKind")
 @js.native
-object PollingWatchKind extends js.Object {
+object PollingWatchKind extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[PollingWatchKind with Double] = js.native
   
   @js.native
   sealed trait DynamicPriority extends PollingWatchKind
-  /* 2 */ @js.native
-  object DynamicPriority extends TopLevel[DynamicPriority with Double]
+  /* 2 */ val DynamicPriority: typings.typescript.mod.PollingWatchKind.DynamicPriority with Double = js.native
   
   @js.native
   sealed trait FixedInterval extends PollingWatchKind
-  /* 0 */ @js.native
-  object FixedInterval extends TopLevel[FixedInterval with Double]
+  /* 0 */ val FixedInterval: typings.typescript.mod.PollingWatchKind.FixedInterval with Double = js.native
   
   @js.native
   sealed trait PriorityInterval extends PollingWatchKind
-  /* 1 */ @js.native
-  object PriorityInterval extends TopLevel[PriorityInterval with Double]
+  /* 1 */ val PriorityInterval: typings.typescript.mod.PollingWatchKind.PriorityInterval with Double = js.native
 }

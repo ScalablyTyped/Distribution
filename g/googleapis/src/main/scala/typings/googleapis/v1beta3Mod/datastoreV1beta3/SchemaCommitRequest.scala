@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for Datastore.Commit.
   */
 @js.native
-trait SchemaCommitRequest extends js.Object {
+trait SchemaCommitRequest extends StObject {
   
   /**
     * The type of commit to perform. Defaults to `TRANSACTIONAL`.
@@ -42,39 +43,27 @@ object SchemaCommitRequest {
   }
   
   @scala.inline
-  implicit class SchemaCommitRequestOps[Self <: SchemaCommitRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCommitRequestMutableBuilder[Self <: SchemaCommitRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMutations(value: js.Array[SchemaMutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setMutationsUndefined: Self = StObject.set(x, "mutations", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setMutationsVarargs(value: SchemaMutation*): Self = StObject.set(x, "mutations", js.Array(value :_*))
     
     @scala.inline
-    def setMutationsVarargs(value: SchemaMutation*): Self = this.set("mutations", js.Array(value :_*))
+    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutations(value: js.Array[SchemaMutation]): Self = this.set("mutations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutations: Self = this.set("mutations", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

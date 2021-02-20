@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientHealthcare.anon.Type
 import typings.maximMazurokGapiClientHealthcare.anon.UploadType
 import typings.maximMazurokGapiClientHealthcare.anon.Uploadprotocol
 import typings.maximMazurokGapiClientHealthcare.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FhirResource extends js.Object {
+trait FhirResource extends StObject {
   
   /**
     * Retrieves a Patient resource and resources related to that patient. Implements the FHIR extended operation Patient-everything

@@ -1,11 +1,12 @@
 package typings.awsSdk.efsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemPolicyDescription extends js.Object {
+trait FileSystemPolicyDescription extends StObject {
   
   /**
     * Specifies the EFS file system to which the FileSystemPolicy applies.
@@ -26,30 +27,18 @@ object FileSystemPolicyDescription {
   }
   
   @scala.inline
-  implicit class FileSystemPolicyDescriptionOps[Self <: FileSystemPolicyDescription] (val x: Self) extends AnyVal {
+  implicit class FileSystemPolicyDescriptionMutableBuilder[Self <: FileSystemPolicyDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
-    
-    @scala.inline
-    def setPolicy(value: Policy): Self = this.set("Policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

@@ -4,14 +4,14 @@ import typings.awsSdkHashNode.awsSdkHashNodeStrings.ascii
 import typings.awsSdkHashNode.awsSdkHashNodeStrings.latin1
 import typings.awsSdkHashNode.awsSdkHashNodeStrings.utf8
 import typings.awsSdkTypes.cryptoMod.SourceData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/hash-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/hash-node", "Hash")
   @js.native
   class Hash protected ()
     extends typings.awsSdkTypes.cryptoMod.Hash {

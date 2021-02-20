@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DebugAdapterTracker extends js.Object {
+trait DebugAdapterTracker extends StObject {
   
   /**
     * The debug adapter has sent a Debug Adapter Protocol message to VS Code.
@@ -49,54 +50,42 @@ object DebugAdapterTracker {
   }
   
   @scala.inline
-  implicit class DebugAdapterTrackerOps[Self <: DebugAdapterTracker] (val x: Self) extends AnyVal {
+  implicit class DebugAdapterTrackerMutableBuilder[Self <: DebugAdapterTracker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnDidSendMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onDidSendMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnDidSendMessageUndefined: Self = StObject.set(x, "onDidSendMessage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnDidSendMessage(value: /* message */ js.Any => Unit): Self = this.set("onDidSendMessage", js.Any.fromFunction1(value))
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteOnDidSendMessage: Self = this.set("onDidSendMessage", js.undefined)
+    def setOnExit(value: (/* code */ js.UndefOr[Double], /* signal */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnError(value: /* error */ Error => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setOnWillReceiveMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onWillReceiveMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnExit(value: (/* code */ js.UndefOr[Double], /* signal */ js.UndefOr[String]) => Unit): Self = this.set("onExit", js.Any.fromFunction2(value))
+    def setOnWillReceiveMessageUndefined: Self = StObject.set(x, "onWillReceiveMessage", js.undefined)
     
     @scala.inline
-    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    def setOnWillStartSession(value: () => Unit): Self = StObject.set(x, "onWillStartSession", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnWillReceiveMessage(value: /* message */ js.Any => Unit): Self = this.set("onWillReceiveMessage", js.Any.fromFunction1(value))
+    def setOnWillStartSessionUndefined: Self = StObject.set(x, "onWillStartSession", js.undefined)
     
     @scala.inline
-    def deleteOnWillReceiveMessage: Self = this.set("onWillReceiveMessage", js.undefined)
+    def setOnWillStopSession(value: () => Unit): Self = StObject.set(x, "onWillStopSession", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnWillStartSession(value: () => Unit): Self = this.set("onWillStartSession", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnWillStartSession: Self = this.set("onWillStartSession", js.undefined)
-    
-    @scala.inline
-    def setOnWillStopSession(value: () => Unit): Self = this.set("onWillStopSession", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnWillStopSession: Self = this.set("onWillStopSession", js.undefined)
+    def setOnWillStopSessionUndefined: Self = StObject.set(x, "onWillStopSession", js.undefined)
   }
 }

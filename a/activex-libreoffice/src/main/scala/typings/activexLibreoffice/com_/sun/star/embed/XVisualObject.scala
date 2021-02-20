@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,30 +75,18 @@ object XVisualObject {
   }
   
   @scala.inline
-  implicit class XVisualObjectOps[Self <: XVisualObject] (val x: Self) extends AnyVal {
+  implicit class XVisualObjectMutableBuilder[Self <: XVisualObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMapUnit(value: Double => Double): Self = StObject.set(x, "getMapUnit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPreferredVisualRepresentation(value: Double => VisualRepresentation): Self = StObject.set(x, "getPreferredVisualRepresentation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetVisualAreaSize(value: Double => Size): Self = StObject.set(x, "getVisualAreaSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMapUnit(value: Double => Double): Self = this.set("getMapUnit", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetPreferredVisualRepresentation(value: Double => VisualRepresentation): Self = this.set("getPreferredVisualRepresentation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetVisualAreaSize(value: Double => Size): Self = this.set("getVisualAreaSize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetVisualAreaSize(value: (Double, Size) => Unit): Self = this.set("setVisualAreaSize", js.Any.fromFunction2(value))
+    def setSetVisualAreaSize(value: (Double, Size) => Unit): Self = StObject.set(x, "setVisualAreaSize", js.Any.fromFunction2(value))
   }
 }

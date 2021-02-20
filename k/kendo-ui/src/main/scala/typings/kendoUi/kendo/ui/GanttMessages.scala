@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GanttMessages extends js.Object {
+trait GanttMessages extends StObject {
   
   var actions: js.UndefOr[GanttMessagesActions] = js.native
   
@@ -38,84 +39,72 @@ object GanttMessages {
   }
   
   @scala.inline
-  implicit class GanttMessagesOps[Self <: GanttMessages] (val x: Self) extends AnyVal {
+  implicit class GanttMessagesMutableBuilder[Self <: GanttMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: GanttMessagesActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: GanttMessagesActions): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setDeleteDependencyConfirmation(value: String): Self = StObject.set(x, "deleteDependencyConfirmation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: String): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setDeleteDependencyConfirmationUndefined: Self = StObject.set(x, "deleteDependencyConfirmation", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setDeleteDependencyWindowTitle(value: String): Self = StObject.set(x, "deleteDependencyWindowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDependencyConfirmation(value: String): Self = this.set("deleteDependencyConfirmation", value.asInstanceOf[js.Any])
+    def setDeleteDependencyWindowTitleUndefined: Self = StObject.set(x, "deleteDependencyWindowTitle", js.undefined)
     
     @scala.inline
-    def deleteDeleteDependencyConfirmation: Self = this.set("deleteDependencyConfirmation", js.undefined)
+    def setDeleteTaskConfirmation(value: String): Self = StObject.set(x, "deleteTaskConfirmation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteDependencyWindowTitle(value: String): Self = this.set("deleteDependencyWindowTitle", value.asInstanceOf[js.Any])
+    def setDeleteTaskConfirmationUndefined: Self = StObject.set(x, "deleteTaskConfirmation", js.undefined)
     
     @scala.inline
-    def deleteDeleteDependencyWindowTitle: Self = this.set("deleteDependencyWindowTitle", js.undefined)
+    def setDeleteTaskWindowTitle(value: String): Self = StObject.set(x, "deleteTaskWindowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTaskConfirmation(value: String): Self = this.set("deleteTaskConfirmation", value.asInstanceOf[js.Any])
+    def setDeleteTaskWindowTitleUndefined: Self = StObject.set(x, "deleteTaskWindowTitle", js.undefined)
     
     @scala.inline
-    def deleteDeleteTaskConfirmation: Self = this.set("deleteTaskConfirmation", js.undefined)
+    def setDestroy(value: String): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteTaskWindowTitle(value: String): Self = this.set("deleteTaskWindowTitle", value.asInstanceOf[js.Any])
+    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     @scala.inline
-    def deleteDeleteTaskWindowTitle: Self = this.set("deleteTaskWindowTitle", js.undefined)
+    def setEditor(value: GanttMessagesEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: String): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
     @scala.inline
-    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    def setPlannedTasks(value: GanttMessagesPlannedTasks): Self = StObject.set(x, "plannedTasks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditor(value: GanttMessagesEditor): Self = this.set("editor", value.asInstanceOf[js.Any])
+    def setPlannedTasksUndefined: Self = StObject.set(x, "plannedTasks", js.undefined)
     
     @scala.inline
-    def deleteEditor: Self = this.set("editor", js.undefined)
+    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlannedTasks(value: GanttMessagesPlannedTasks): Self = this.set("plannedTasks", value.asInstanceOf[js.Any])
+    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
     @scala.inline
-    def deletePlannedTasks: Self = this.set("plannedTasks", js.undefined)
+    def setViews(value: GanttMessagesViews): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSave: Self = this.set("save", js.undefined)
-    
-    @scala.inline
-    def setViews(value: GanttMessagesViews): Self = this.set("views", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViews: Self = this.set("views", js.undefined)
+    def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
   }
 }

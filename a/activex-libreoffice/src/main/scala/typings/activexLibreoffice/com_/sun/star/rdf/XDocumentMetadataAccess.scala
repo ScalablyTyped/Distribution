@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -192,54 +193,42 @@ object XDocumentMetadataAccess {
   }
   
   @scala.inline
-  implicit class XDocumentMetadataAccessOps[Self <: XDocumentMetadataAccess] (val x: Self) extends AnyVal {
+  implicit class XDocumentMetadataAccessMutableBuilder[Self <: XDocumentMetadataAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddContentOrStylesFile(value: String => Unit): Self = StObject.set(x, "addContentOrStylesFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMetadataFile(value: (String, SeqEquiv[XURI]) => XURI): Self = StObject.set(x, "addMetadataFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetElementByMetadataReference(value: StringPair => XMetadatable): Self = StObject.set(x, "getElementByMetadataReference", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddContentOrStylesFile(value: String => Unit): Self = this.set("addContentOrStylesFile", js.Any.fromFunction1(value))
+    def setGetElementByURI(value: XURI => XMetadatable): Self = StObject.set(x, "getElementByURI", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddMetadataFile(value: (String, SeqEquiv[XURI]) => XURI): Self = this.set("addMetadataFile", js.Any.fromFunction2(value))
+    def setGetMetadataGraphsWithType(value: XURI => SafeArray[XURI]): Self = StObject.set(x, "getMetadataGraphsWithType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetElementByMetadataReference(value: StringPair => XMetadatable): Self = this.set("getElementByMetadataReference", js.Any.fromFunction1(value))
+    def setImportMetadataFile(value: (Double, XInputStream, String, XURI, SeqEquiv[XURI]) => XURI): Self = StObject.set(x, "importMetadataFile", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetElementByURI(value: XURI => XMetadatable): Self = this.set("getElementByURI", js.Any.fromFunction1(value))
+    def setLoadMetadataFromMedium(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "loadMetadataFromMedium", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMetadataGraphsWithType(value: XURI => SafeArray[XURI]): Self = this.set("getMetadataGraphsWithType", js.Any.fromFunction1(value))
+    def setLoadMetadataFromStorage(value: (XStorage, XURI, XInteractionHandler) => Unit): Self = StObject.set(x, "loadMetadataFromStorage", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setImportMetadataFile(value: (Double, XInputStream, String, XURI, SeqEquiv[XURI]) => XURI): Self = this.set("importMetadataFile", js.Any.fromFunction5(value))
+    def setRemoveContentOrStylesFile(value: String => Unit): Self = StObject.set(x, "removeContentOrStylesFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadMetadataFromMedium(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("loadMetadataFromMedium", js.Any.fromFunction1(value))
+    def setRemoveMetadataFile(value: XURI => Unit): Self = StObject.set(x, "removeMetadataFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoadMetadataFromStorage(value: (XStorage, XURI, XInteractionHandler) => Unit): Self = this.set("loadMetadataFromStorage", js.Any.fromFunction3(value))
+    def setStoreMetadataToMedium(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "storeMetadataToMedium", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveContentOrStylesFile(value: String => Unit): Self = this.set("removeContentOrStylesFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveMetadataFile(value: XURI => Unit): Self = this.set("removeMetadataFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStoreMetadataToMedium(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("storeMetadataToMedium", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStoreMetadataToStorage(value: XStorage => Unit): Self = this.set("storeMetadataToStorage", js.Any.fromFunction1(value))
+    def setStoreMetadataToStorage(value: XStorage => Unit): Self = StObject.set(x, "storeMetadataToStorage", js.Any.fromFunction1(value))
   }
 }

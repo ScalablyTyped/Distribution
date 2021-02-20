@@ -1,43 +1,58 @@
 package typings.server
 
 import typings.express.mod.CookieOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("server/reply", JSImport.Namespace)
-@js.native
-object replyMod extends js.Object {
+object replyMod {
   
+  @JSImport("server/reply", "cookie")
+  @js.native
   val cookie: cookieType = js.native
   
+  @JSImport("server/reply", "download")
+  @js.native
   val download: downloadType = js.native
   
+  @JSImport("server/reply", "header")
+  @js.native
   val header: headerType = js.native
   
+  @JSImport("server/reply", "json")
+  @js.native
   val json: jsonType = js.native
   
+  @JSImport("server/reply", "jsonp")
+  @js.native
   val jsonp: jsonpType = js.native
   
+  @JSImport("server/reply", "redirect")
+  @js.native
   val redirect: Redirect_ = js.native
   
+  @JSImport("server/reply", "render")
+  @js.native
   val render: renderType = js.native
   
+  @JSImport("server/reply", "send")
+  @js.native
   val send: sendType = js.native
   
+  @JSImport("server/reply", "status")
+  @js.native
   val status: statusType = js.native
   
-  val `type`: typeType = js.native
-  
   @js.native
-  trait Redirect_ extends js.Object {
+  trait Redirect_ extends StObject {
     
     def apply(path: String): Reply = js.native
     def apply(status: Double, path: String): Reply = js.native
   }
   
   @js.native
-  trait Reply extends js.Object {
+  trait Reply extends StObject {
     
     def cookie(name: String, value: String): Reply = js.native
     def cookie(name: String, value: String, opts: CookieOptions): Reply = js.native
@@ -103,6 +118,10 @@ object replyMod extends js.Object {
   type sendType = js.Function1[/* body */ js.UndefOr[js.Any], js.Any]
   
   type statusType = js.Function1[/* code */ Double, Reply]
+  
+  @JSImport("server/reply", "type")
+  @js.native
+  val `type`: typeType = js.native
   
   type typeType = js.Function1[/* type */ String, Reply]
 }

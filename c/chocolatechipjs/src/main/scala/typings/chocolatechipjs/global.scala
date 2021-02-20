@@ -1,15 +1,22 @@
 package typings.chocolatechipjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @JSName("$")
-  var _empty: ChocolateChipStatic = js.native
+  @JSGlobal("$")
+  @js.native
+  def _empty: ChocolateChipStatic = js.native
   
-  var chocolatechipjs: ChocolateChipStatic = js.native
+  @scala.inline
+  def _empty_=(x: ChocolateChipStatic): Unit = js.Dynamic.global.updateDynamic("$")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("chocolatechipjs")
+  @js.native
+  def chocolatechipjs: ChocolateChipStatic = js.native
+  @scala.inline
+  def chocolatechipjs_=(x: ChocolateChipStatic): Unit = js.Dynamic.global.updateDynamic("chocolatechipjs")(x.asInstanceOf[js.Any])
 }

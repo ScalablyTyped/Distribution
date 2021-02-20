@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchOrdersFulfillmentFilter")
 @js.native
-class SearchOrdersFulfillmentFilter () extends js.Object {
+class SearchOrdersFulfillmentFilter () extends StObject {
   
   /**
     * List of `fulfillment states` to filter for. Will return orders if any of its fulfillments match any of the

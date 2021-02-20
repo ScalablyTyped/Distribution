@@ -8,13 +8,12 @@ import typings.fastify.utilsMod.RawServerBase
 import typings.fastify.utilsMod.RawServerDefault
 import typings.std.Error
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fastify/types/plugin", JSImport.Namespace)
-@js.native
-object pluginMod extends js.Object {
+object pluginMod {
   
   type FastifyPlugin[Options /* <: FastifyPluginOptions */] = (FastifyPluginCallback[Options, RawServerDefault]) | (FastifyPluginAsync[Options, RawServerDefault])
   

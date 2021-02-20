@@ -52,14 +52,14 @@ import typings.typeorm.mongodbTypingsMod.UpdateWriteOpResult
 import typings.typeorm.queryBuilderQueryPartialEntityMod.QueryDeepPartialEntity
 import typings.typeorm.resultDeleteResultMod.DeleteResult
 import typings.typeorm.resultUpdateResultMod.UpdateResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/entity-manager/MongoEntityManager", JSImport.Namespace)
-@js.native
-object entityManagerMongoEntityManagerMod extends js.Object {
+object entityManagerMongoEntityManagerMod {
   
+  @JSImport("typeorm/entity-manager/MongoEntityManager", "MongoEntityManager")
   @js.native
   class MongoEntityManager protected () extends EntityManager {
     def this(connection: Connection) = this()

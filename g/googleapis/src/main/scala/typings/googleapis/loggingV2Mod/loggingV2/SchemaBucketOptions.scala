@@ -1,5 +1,6 @@
 package typings.googleapis.loggingV2Mod.loggingV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * because both bounds are finite.
   */
 @js.native
-trait SchemaBucketOptions extends js.Object {
+trait SchemaBucketOptions extends StObject {
   
   /**
     * The explicit buckets.
@@ -47,36 +48,24 @@ object SchemaBucketOptions {
   }
   
   @scala.inline
-  implicit class SchemaBucketOptionsOps[Self <: SchemaBucketOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaBucketOptionsMutableBuilder[Self <: SchemaBucketOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExplicitBuckets(value: SchemaExplicit): Self = StObject.set(x, "explicitBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExplicitBucketsUndefined: Self = StObject.set(x, "explicitBuckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExponentialBuckets(value: SchemaExponential): Self = StObject.set(x, "exponentialBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicitBuckets(value: SchemaExplicit): Self = this.set("explicitBuckets", value.asInstanceOf[js.Any])
+    def setExponentialBucketsUndefined: Self = StObject.set(x, "exponentialBuckets", js.undefined)
     
     @scala.inline
-    def deleteExplicitBuckets: Self = this.set("explicitBuckets", js.undefined)
+    def setLinearBuckets(value: SchemaLinear): Self = StObject.set(x, "linearBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExponentialBuckets(value: SchemaExponential): Self = this.set("exponentialBuckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExponentialBuckets: Self = this.set("exponentialBuckets", js.undefined)
-    
-    @scala.inline
-    def setLinearBuckets(value: SchemaLinear): Self = this.set("linearBuckets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinearBuckets: Self = this.set("linearBuckets", js.undefined)
+    def setLinearBucketsUndefined: Self = StObject.set(x, "linearBuckets", js.undefined)
   }
 }

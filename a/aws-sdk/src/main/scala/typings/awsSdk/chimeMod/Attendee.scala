@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attendee extends js.Object {
+trait Attendee extends StObject {
   
   /**
     * The Amazon Chime SDK attendee ID.
@@ -31,36 +32,24 @@ object Attendee {
   }
   
   @scala.inline
-  implicit class AttendeeOps[Self <: Attendee] (val x: Self) extends AnyVal {
+  implicit class AttendeeMutableBuilder[Self <: Attendee] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttendeeIdUndefined: Self = StObject.set(x, "AttendeeId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttendeeId(value: GuidString): Self = this.set("AttendeeId", value.asInstanceOf[js.Any])
+    def setExternalUserIdUndefined: Self = StObject.set(x, "ExternalUserId", js.undefined)
     
     @scala.inline
-    def deleteAttendeeId: Self = this.set("AttendeeId", js.undefined)
+    def setJoinToken(value: JoinTokenString): Self = StObject.set(x, "JoinToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalUserId(value: ExternalUserIdType): Self = this.set("ExternalUserId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalUserId: Self = this.set("ExternalUserId", js.undefined)
-    
-    @scala.inline
-    def setJoinToken(value: JoinTokenString): Self = this.set("JoinToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJoinToken: Self = this.set("JoinToken", js.undefined)
+    def setJoinTokenUndefined: Self = StObject.set(x, "JoinToken", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.breeze.breeze
 
 import typings.breeze.anon.Entities
 import typings.breeze.breeze.core.ErrorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityManager extends js.Object {
+trait EntityManager extends StObject {
   
   def acceptChanges(): Unit = js.native
   
@@ -112,7 +113,7 @@ trait EntityManager extends js.Object {
   def exportEntities_String(entities: js.Array[Entity]): String = js.native
   
   def fetchEntityByKey(entityKey: EntityKey): js.Promise[EntityByKeyResult] = js.native
-   // string | Object
+  // string | Object
   def fetchEntityByKey(typeName: String, keyValue: js.Any): js.Promise[EntityByKeyResult] = js.native
   def fetchEntityByKey(typeName: String, keyValue: js.Any, checkLocalCacheFirst: Boolean): js.Promise[EntityByKeyResult] = js.native
   def fetchEntityByKey(typeName: String, keyValues: js.Array[_]): js.Promise[EntityByKeyResult] = js.native

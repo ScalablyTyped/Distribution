@@ -1,11 +1,12 @@
 package typings.progressjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProgressJs extends js.Object {
+trait ProgressJs extends StObject {
   
   /**
     * Set an auto-increase timer for the progress-bar.

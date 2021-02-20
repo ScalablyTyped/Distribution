@@ -1,12 +1,13 @@
 package typings.contentfulManagement.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentType extends js.Object {
+trait ContentType extends StObject {
   
   var contentType: String = js.native
   
@@ -32,48 +33,36 @@ object ContentType {
   }
   
   @scala.inline
-  implicit class ContentTypeOps[Self <: ContentType] (val x: Self) extends AnyVal {
+  implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetails(value: Record[String, _]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: Record[String, _]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setUploadFrom(value: Record[String, _]): Self = StObject.set(x, "uploadFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setUploadFromUndefined: Self = StObject.set(x, "uploadFrom", js.undefined)
     
     @scala.inline
-    def setUpload(value: String): Self = this.set("upload", value.asInstanceOf[js.Any])
+    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
     @scala.inline
-    def deleteUpload: Self = this.set("upload", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadFrom(value: Record[String, _]): Self = this.set("uploadFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadFrom: Self = this.set("uploadFrom", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

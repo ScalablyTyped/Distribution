@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRecommenderConfigurationsRequest extends js.Object {
+trait GetRecommenderConfigurationsRequest extends StObject {
   
   /**
     * The maximum number of items to include in each page of a paginated response. This parameter is not supported for application, campaign, and journey metrics.
@@ -26,30 +27,18 @@ object GetRecommenderConfigurationsRequest {
   }
   
   @scala.inline
-  implicit class GetRecommenderConfigurationsRequestOps[Self <: GetRecommenderConfigurationsRequest] (val x: Self) extends AnyVal {
+  implicit class GetRecommenderConfigurationsRequestMutableBuilder[Self <: GetRecommenderConfigurationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageSize: Self = this.set("PageSize", js.undefined)
-    
-    @scala.inline
-    def setToken(value: string): Self = this.set("Token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("Token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the settings defining a file to save to.
   */
 @js.native
-trait RichEditFileInfo extends js.Object {
+trait RichEditFileInfo extends StObject {
   
   /**
     * Gets or sets the file's document format.
@@ -34,27 +35,15 @@ object RichEditFileInfo {
   }
   
   @scala.inline
-  implicit class RichEditFileInfoOps[Self <: RichEditFileInfo] (val x: Self) extends AnyVal {
+  implicit class RichEditFileInfoMutableBuilder[Self <: RichEditFileInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "documentFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentFormat(value: DocumentFormat): Self = this.set("documentFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFolderPath(value: String): Self = this.set("folderPath", value.asInstanceOf[js.Any])
+    def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
   }
 }

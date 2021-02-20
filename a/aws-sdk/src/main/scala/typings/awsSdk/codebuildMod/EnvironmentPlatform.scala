@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentPlatform extends js.Object {
+trait EnvironmentPlatform extends StObject {
   
   /**
     * The list of programming languages that are available for the specified platform.
@@ -26,33 +27,21 @@ object EnvironmentPlatform {
   }
   
   @scala.inline
-  implicit class EnvironmentPlatformOps[Self <: EnvironmentPlatform] (val x: Self) extends AnyVal {
+  implicit class EnvironmentPlatformMutableBuilder[Self <: EnvironmentPlatform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguages(value: EnvironmentLanguages): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguagesVarargs(value: EnvironmentLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
     @scala.inline
-    def setLanguagesVarargs(value: EnvironmentLanguage*): Self = this.set("languages", js.Array(value :_*))
+    def setPlatform(value: PlatformType): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguages(value: EnvironmentLanguages): Self = this.set("languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguages: Self = this.set("languages", js.undefined)
-    
-    @scala.inline
-    def setPlatform(value: PlatformType): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlatform: Self = this.set("platform", js.undefined)
+    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
   }
 }

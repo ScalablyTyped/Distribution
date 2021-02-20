@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceMinutes extends js.Object {
+trait DeviceMinutes extends StObject {
   
   /**
     * When specified, represents only the sum of metered minutes used by the resource to run tests.
@@ -31,36 +32,24 @@ object DeviceMinutes {
   }
   
   @scala.inline
-  implicit class DeviceMinutesOps[Self <: DeviceMinutes] (val x: Self) extends AnyVal {
+  implicit class DeviceMinutesMutableBuilder[Self <: DeviceMinutes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMetered(value: Double): Self = StObject.set(x, "metered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMeteredUndefined: Self = StObject.set(x, "metered", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetered(value: Double): Self = this.set("metered", value.asInstanceOf[js.Any])
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     @scala.inline
-    def deleteMetered: Self = this.set("metered", js.undefined)
+    def setUnmetered(value: Double): Self = StObject.set(x, "unmetered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
-    
-    @scala.inline
-    def setUnmetered(value: Double): Self = this.set("unmetered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnmetered: Self = this.set("unmetered", js.undefined)
+    def setUnmeteredUndefined: Self = StObject.set(x, "unmetered", js.undefined)
   }
 }

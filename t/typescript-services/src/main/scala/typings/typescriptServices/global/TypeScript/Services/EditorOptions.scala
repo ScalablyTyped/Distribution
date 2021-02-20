@@ -1,5 +1,6 @@
 package typings.typescriptServices.global.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class EditorOptions ()
   extends typings.typescriptServices.TypeScript.Services.EditorOptions
-/* static members */
-@JSGlobal("TypeScript.Services.EditorOptions")
-@js.native
-object EditorOptions extends js.Object {
+object EditorOptions {
   
-  def clone(objectToClone: typings.typescriptServices.TypeScript.Services.EditorOptions): typings.typescriptServices.TypeScript.Services.EditorOptions = js.native
+  /* static member */
+  @JSGlobal("TypeScript.Services.EditorOptions.clone")
+  @js.native
+  def clone_(objectToClone: typings.typescriptServices.TypeScript.Services.EditorOptions): typings.typescriptServices.TypeScript.Services.EditorOptions = js.native
 }

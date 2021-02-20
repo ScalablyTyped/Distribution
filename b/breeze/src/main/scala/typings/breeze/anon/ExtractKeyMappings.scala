@@ -3,12 +3,13 @@ package typings.breeze.anon
 import typings.breeze.breeze.KeyMapping
 import typings.breeze.breeze.NodeContext
 import typings.breeze.breeze.QueryContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtractKeyMappings extends js.Object {
+trait ExtractKeyMappings extends StObject {
   
   var extractKeyMappings: js.UndefOr[js.Function1[/* data */ js.Object, js.Array[KeyMapping]]] = js.native
   
@@ -29,42 +30,30 @@ object ExtractKeyMappings {
   }
   
   @scala.inline
-  implicit class ExtractKeyMappingsOps[Self <: ExtractKeyMappings] (val x: Self) extends AnyVal {
+  implicit class ExtractKeyMappingsMutableBuilder[Self <: ExtractKeyMappings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtractKeyMappings(value: /* data */ js.Object => js.Array[KeyMapping]): Self = StObject.set(x, "extractKeyMappings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtractKeyMappingsUndefined: Self = StObject.set(x, "extractKeyMappings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtractResults(value: /* data */ js.Object => js.Object): Self = StObject.set(x, "extractResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setExtractResultsUndefined: Self = StObject.set(x, "extractResults", js.undefined)
     
     @scala.inline
-    def setVisitNode(value: (js.Object, QueryContext, NodeContext) => EntityType): Self = this.set("visitNode", js.Any.fromFunction3(value))
+    def setExtractSaveResults(value: /* data */ js.Object => js.Array[_]): Self = StObject.set(x, "extractSaveResults", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtractKeyMappings(value: /* data */ js.Object => js.Array[KeyMapping]): Self = this.set("extractKeyMappings", js.Any.fromFunction1(value))
+    def setExtractSaveResultsUndefined: Self = StObject.set(x, "extractSaveResults", js.undefined)
     
     @scala.inline
-    def deleteExtractKeyMappings: Self = this.set("extractKeyMappings", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtractResults(value: /* data */ js.Object => js.Object): Self = this.set("extractResults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteExtractResults: Self = this.set("extractResults", js.undefined)
-    
-    @scala.inline
-    def setExtractSaveResults(value: /* data */ js.Object => js.Array[_]): Self = this.set("extractSaveResults", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteExtractSaveResults: Self = this.set("extractSaveResults", js.undefined)
+    def setVisitNode(value: (js.Object, QueryContext, NodeContext) => EntityType): Self = StObject.set(x, "visitNode", js.Any.fromFunction3(value))
   }
 }

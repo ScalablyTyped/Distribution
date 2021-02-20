@@ -1,5 +1,7 @@
 package typings.gitlab.mod
 
+import typings.gitlab.baseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("gitlab", "RepositoryFiles")
 @js.native
 class RepositoryFiles ()
-  extends typings.gitlab.repositoryFilesMod.RepositoryFiles
+  extends typings.gitlab.servicesMod.RepositoryFiles {
+  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+}

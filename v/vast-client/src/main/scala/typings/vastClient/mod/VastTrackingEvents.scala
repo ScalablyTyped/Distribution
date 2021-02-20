@@ -1,6 +1,7 @@
 package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,42 +32,30 @@ object VastTrackingEvents {
   }
   
   @scala.inline
-  implicit class VastTrackingEventsOps[Self <: VastTrackingEvents] (val x: Self) extends AnyVal {
+  implicit class VastTrackingEventsMutableBuilder[Self <: VastTrackingEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplete(value: js.Array[String]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompleteVarargs(value: String*): Self = StObject.set(x, "complete", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstQuartile(value: js.Array[String]): Self = StObject.set(x, "firstQuartile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleteVarargs(value: String*): Self = this.set("complete", js.Array(value :_*))
+    def setFirstQuartileVarargs(value: String*): Self = StObject.set(x, "firstQuartile", js.Array(value :_*))
     
     @scala.inline
-    def setComplete(value: js.Array[String]): Self = this.set("complete", value.asInstanceOf[js.Any])
+    def setMidpoint(value: js.Array[String]): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstQuartileVarargs(value: String*): Self = this.set("firstQuartile", js.Array(value :_*))
+    def setMidpointVarargs(value: String*): Self = StObject.set(x, "midpoint", js.Array(value :_*))
     
     @scala.inline
-    def setFirstQuartile(value: js.Array[String]): Self = this.set("firstQuartile", value.asInstanceOf[js.Any])
+    def setThirdQuartile(value: js.Array[String]): Self = StObject.set(x, "thirdQuartile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMidpointVarargs(value: String*): Self = this.set("midpoint", js.Array(value :_*))
-    
-    @scala.inline
-    def setMidpoint(value: js.Array[String]): Self = this.set("midpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThirdQuartileVarargs(value: String*): Self = this.set("thirdQuartile", js.Array(value :_*))
-    
-    @scala.inline
-    def setThirdQuartile(value: js.Array[String]): Self = this.set("thirdQuartile", value.asInstanceOf[js.Any])
+    def setThirdQuartileVarargs(value: String*): Self = StObject.set(x, "thirdQuartile", js.Array(value :_*))
   }
 }

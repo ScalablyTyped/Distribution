@@ -1,11 +1,12 @@
 package typings.awsSdk.accessanalyzerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetArchiveRuleRequest extends js.Object {
+trait GetArchiveRuleRequest extends StObject {
   
   /**
     * The name of the analyzer to retrieve rules from.
@@ -26,24 +27,12 @@ object GetArchiveRuleRequest {
   }
   
   @scala.inline
-  implicit class GetArchiveRuleRequestOps[Self <: GetArchiveRuleRequest] (val x: Self) extends AnyVal {
+  implicit class GetArchiveRuleRequestMutableBuilder[Self <: GetArchiveRuleRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzerName(value: Name): Self = StObject.set(x, "analyzerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAnalyzerName(value: Name): Self = this.set("analyzerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleName(value: Name): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }
 }

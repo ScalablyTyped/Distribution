@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollbackConfiguration extends js.Object {
+trait RollbackConfiguration extends StObject {
   
   /**
     * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration
@@ -28,33 +29,21 @@ object RollbackConfiguration {
   }
   
   @scala.inline
-  implicit class RollbackConfigurationOps[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
+  implicit class RollbackConfigurationMutableBuilder[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitoringTimeInMinutes(value: integer): Self = StObject.set(x, "MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonitoringTimeInMinutesUndefined: Self = StObject.set(x, "MonitoringTimeInMinutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRollbackTriggers(value: listOfRollbackTrigger): Self = StObject.set(x, "RollbackTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringTimeInMinutes(value: integer): Self = this.set("MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
+    def setRollbackTriggersUndefined: Self = StObject.set(x, "RollbackTriggers", js.undefined)
     
     @scala.inline
-    def deleteMonitoringTimeInMinutes: Self = this.set("MonitoringTimeInMinutes", js.undefined)
-    
-    @scala.inline
-    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = this.set("RollbackTriggers", js.Array(value :_*))
-    
-    @scala.inline
-    def setRollbackTriggers(value: listOfRollbackTrigger): Self = this.set("RollbackTriggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollbackTriggers: Self = this.set("RollbackTriggers", js.undefined)
+    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
   }
 }

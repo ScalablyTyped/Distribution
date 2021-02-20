@@ -1,11 +1,12 @@
 package typings.mjmlReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderProps extends js.Object {
+trait BorderProps extends StObject {
   
   var border: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object BorderProps {
   }
   
   @scala.inline
-  implicit class BorderPropsOps[Self <: BorderProps] (val x: Self) extends AnyVal {
+  implicit class BorderPropsMutableBuilder[Self <: BorderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderBottom(value: String): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
     @scala.inline
-    def setBorder(value: String): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setBorderLeft(value: String): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
     @scala.inline
-    def setBorderBottom(value: String): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
+    def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def setBorderLeft(value: String): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
+    def setBorderRight(value: String): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
+    def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
     @scala.inline
-    def setBorderRadius(value: String | Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setBorderTop(value: String): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
     @scala.inline
-    def setBorderRight(value: String): Self = this.set("borderRight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
-    
-    @scala.inline
-    def setBorderTop(value: String): Self = this.set("borderTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

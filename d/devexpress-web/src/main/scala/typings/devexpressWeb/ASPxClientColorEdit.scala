@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,33 +107,21 @@ object ASPxClientColorEdit {
   }
   
   @scala.inline
-  implicit class ASPxClientColorEditOps[Self <: ASPxClientColorEdit] (val x: Self) extends AnyVal {
+  implicit class ASPxClientColorEditMutableBuilder[Self <: ASPxClientColorEdit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "ColorChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAutomaticColorSelected(value: () => Boolean): Self = StObject.set(x, "IsAutomaticColorSelected", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColorChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = this.set("ColorChanged", value.asInstanceOf[js.Any])
+    def setSetColor(value: String => Unit): Self = StObject.set(x, "SetColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetColor(value: () => String): Self = this.set("GetColor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsAutomaticColorSelected(value: () => Boolean): Self = this.set("IsAutomaticColorSelected", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColor(value: String => Unit): Self = this.set("SetColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = this.set("TextChanged", value.asInstanceOf[js.Any])
+    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
   }
 }

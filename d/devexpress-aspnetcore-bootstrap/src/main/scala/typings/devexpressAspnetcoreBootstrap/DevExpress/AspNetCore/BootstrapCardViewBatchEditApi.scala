@@ -1,11 +1,12 @@
 package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapCardViewBatchEditApi extends js.Object {
+trait BootstrapCardViewBatchEditApi extends StObject {
   
   def addNewCard(): Unit = js.native
   
@@ -56,57 +57,45 @@ object BootstrapCardViewBatchEditApi {
   }
   
   @scala.inline
-  implicit class BootstrapCardViewBatchEditApiOps[Self <: BootstrapCardViewBatchEditApi] (val x: Self) extends AnyVal {
+  implicit class BootstrapCardViewBatchEditApiMutableBuilder[Self <: BootstrapCardViewBatchEditApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddNewCard(value: () => Unit): Self = StObject.set(x, "addNewCard", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteCard(value: Double => Unit): Self = StObject.set(x, "deleteCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteCardByKey(value: js.Any => Unit): Self = StObject.set(x, "deleteCardByKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddNewCard(value: () => Unit): Self = this.set("addNewCard", js.Any.fromFunction0(value))
+    def setGetCardVisibleIndices(value: Boolean => js.Array[Double]): Self = StObject.set(x, "getCardVisibleIndices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteCard(value: Double => Unit): Self = this.set("deleteCard", js.Any.fromFunction1(value))
+    def setGetDeletedCardIndices(value: () => js.Array[Double]): Self = StObject.set(x, "getDeletedCardIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteCardByKey(value: js.Any => Unit): Self = this.set("deleteCardByKey", js.Any.fromFunction1(value))
+    def setGetInsertedCardIndices(value: () => js.Array[Double]): Self = StObject.set(x, "getInsertedCardIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCardVisibleIndices(value: Boolean => js.Array[Double]): Self = this.set("getCardVisibleIndices", js.Any.fromFunction1(value))
+    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeletedCardIndices(value: () => js.Array[Double]): Self = this.set("getDeletedCardIndices", js.Any.fromFunction0(value))
+    def setIsDeletedCard(value: Double => Boolean): Self = StObject.set(x, "isDeletedCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInsertedCardIndices(value: () => js.Array[Double]): Self = this.set("getInsertedCardIndices", js.Any.fromFunction0(value))
+    def setIsNewCard(value: Double => Boolean): Self = StObject.set(x, "isNewCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInstance(value: js.Any): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setRecoverCard(value: Double => Unit): Self = StObject.set(x, "recoverCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDeletedCard(value: Double => Boolean): Self = this.set("isDeletedCard", js.Any.fromFunction1(value))
+    def setRecoverCardByKey(value: js.Any => Unit): Self = StObject.set(x, "recoverCardByKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsNewCard(value: Double => Boolean): Self = this.set("isNewCard", js.Any.fromFunction1(value))
+    def setValidateCard(value: Double => Boolean): Self = StObject.set(x, "validateCard", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRecoverCard(value: Double => Unit): Self = this.set("recoverCard", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRecoverCardByKey(value: js.Any => Unit): Self = this.set("recoverCardByKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateCard(value: Double => Boolean): Self = this.set("validateCard", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setValidateCards(value: Boolean => Boolean): Self = this.set("validateCards", js.Any.fromFunction1(value))
+    def setValidateCards(value: Boolean => Boolean): Self = StObject.set(x, "validateCards", js.Any.fromFunction1(value))
   }
 }

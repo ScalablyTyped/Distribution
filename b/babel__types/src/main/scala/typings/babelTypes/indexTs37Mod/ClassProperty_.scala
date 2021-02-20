@@ -4,6 +4,7 @@ import typings.babelTypes.babelTypesStrings.ClassProperty
 import typings.babelTypes.babelTypesStrings.`private`
 import typings.babelTypes.babelTypesStrings.`protected`
 import typings.babelTypes.babelTypesStrings.public
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,87 +57,75 @@ object ClassProperty_ {
   }
   
   @scala.inline
-  implicit class ClassProperty_Ops[Self <: ClassProperty_] (val x: Self) extends AnyVal {
+  implicit class ClassProperty_MutableBuilder[Self <: ClassProperty_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbstractNull: Self = StObject.set(x, "abstract", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputed(value: Boolean): Self = this.set("computed", value.asInstanceOf[js.Any])
+    def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
     @scala.inline
-    def setKey(value: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
+    def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ClassProperty): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setDeclareNull: Self = StObject.set(x, "declare", null)
     
     @scala.inline
-    def setAbstract(value: Boolean): Self = this.set("abstract", value.asInstanceOf[js.Any])
+    def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbstractNull: Self = this.set("abstract", null)
+    def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
     
     @scala.inline
-    def setAccessibility(value: public | `private` | `protected`): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setAccessibilityNull: Self = this.set("accessibility", null)
+    def setDefinite(value: Boolean): Self = StObject.set(x, "definite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclare(value: Boolean): Self = this.set("declare", value.asInstanceOf[js.Any])
+    def setDefiniteNull: Self = StObject.set(x, "definite", null)
     
     @scala.inline
-    def setDeclareNull: Self = this.set("declare", null)
+    def setKey(value: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecoratorsVarargs(value: Decorator_ *): Self = this.set("decorators", js.Array(value :_*))
+    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecorators(value: js.Array[Decorator_]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     @scala.inline
-    def setDecoratorsNull: Self = this.set("decorators", null)
+    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinite(value: Boolean): Self = this.set("definite", value.asInstanceOf[js.Any])
+    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
     @scala.inline
-    def setDefiniteNull: Self = this.set("definite", null)
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptional(value: Boolean): Self = this.set("optional", value.asInstanceOf[js.Any])
+    def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionalNull: Self = this.set("optional", null)
+    def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
     @scala.inline
-    def setReadonlyNull: Self = this.set("readonly", null)
+    def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeAnnotationNull: Self = this.set("typeAnnotation", null)
-    
-    @scala.inline
-    def setValue(value: Expression): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValueNull: Self = this.set("value", null)
+    def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

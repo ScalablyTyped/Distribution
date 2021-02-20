@@ -1,6 +1,7 @@
 package typings.screeps.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,39 +32,27 @@ object Dictpart {
   }
   
   @scala.inline
-  implicit class DictpartOps[Self <: Dictpart] (val x: Self) extends AnyVal {
+  implicit class DictpartMutableBuilder[Self <: Dictpart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttack(value: UH): Self = StObject.set(x, "attack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCarry(value: KH): Self = StObject.set(x, "carry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeal(value: LHO2): Self = StObject.set(x, "heal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttack(value: UH): Self = this.set("attack", value.asInstanceOf[js.Any])
+    def setMove(value: XZHO2): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarry(value: KH): Self = this.set("carry", value.asInstanceOf[js.Any])
+    def setRanged_attack(value: KHO2): Self = StObject.set(x, "ranged_attack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeal(value: LHO2): Self = this.set("heal", value.asInstanceOf[js.Any])
+    def setTough(value: GHO2): Self = StObject.set(x, "tough", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove(value: XZHO2): Self = this.set("move", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRanged_attack(value: KHO2): Self = this.set("ranged_attack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTough(value: GHO2): Self = this.set("tough", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWork(value: GH): Self = this.set("work", value.asInstanceOf[js.Any])
+    def setWork(value: GH): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
   }
 }

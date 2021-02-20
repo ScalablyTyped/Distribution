@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * rule and a PivotGroup that does not.
   */
 @js.native
-trait SchemaPivotGroupRule extends js.Object {
+trait SchemaPivotGroupRule extends StObject {
   
   /**
     * A DateTimeRule.
@@ -38,36 +39,24 @@ object SchemaPivotGroupRule {
   }
   
   @scala.inline
-  implicit class SchemaPivotGroupRuleOps[Self <: SchemaPivotGroupRule] (val x: Self) extends AnyVal {
+  implicit class SchemaPivotGroupRuleMutableBuilder[Self <: SchemaPivotGroupRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateTimeRule(value: SchemaDateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateTimeRuleUndefined: Self = StObject.set(x, "dateTimeRule", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHistogramRule(value: SchemaHistogramRule): Self = StObject.set(x, "histogramRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateTimeRule(value: SchemaDateTimeRule): Self = this.set("dateTimeRule", value.asInstanceOf[js.Any])
+    def setHistogramRuleUndefined: Self = StObject.set(x, "histogramRule", js.undefined)
     
     @scala.inline
-    def deleteDateTimeRule: Self = this.set("dateTimeRule", js.undefined)
+    def setManualRule(value: SchemaManualRule): Self = StObject.set(x, "manualRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistogramRule(value: SchemaHistogramRule): Self = this.set("histogramRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistogramRule: Self = this.set("histogramRule", js.undefined)
-    
-    @scala.inline
-    def setManualRule(value: SchemaManualRule): Self = this.set("manualRule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualRule: Self = this.set("manualRule", js.undefined)
+    def setManualRuleUndefined: Self = StObject.set(x, "manualRule", js.undefined)
   }
 }

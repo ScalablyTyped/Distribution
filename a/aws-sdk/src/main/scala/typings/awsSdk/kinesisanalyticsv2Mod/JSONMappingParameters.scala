@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONMappingParameters extends js.Object {
+trait JSONMappingParameters extends StObject {
   
   /**
     * The path to the top-level parent that contains the records.
@@ -21,21 +22,9 @@ object JSONMappingParameters {
   }
   
   @scala.inline
-  implicit class JSONMappingParametersOps[Self <: JSONMappingParameters] (val x: Self) extends AnyVal {
+  implicit class JSONMappingParametersMutableBuilder[Self <: JSONMappingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRecordRowPath(value: RecordRowPath): Self = this.set("RecordRowPath", value.asInstanceOf[js.Any])
+    def setRecordRowPath(value: RecordRowPath): Self = StObject.set(x, "RecordRowPath", value.asInstanceOf[js.Any])
   }
 }

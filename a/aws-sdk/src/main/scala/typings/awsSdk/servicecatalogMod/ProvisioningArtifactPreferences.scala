@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProvisioningArtifactPreferences extends js.Object {
+trait ProvisioningArtifactPreferences extends StObject {
   
   /**
     * One or more AWS accounts where stack instances are deployed from the stack set. These accounts can be scoped in ProvisioningPreferences$StackSetAccounts and UpdateProvisioningPreferences$StackSetAccounts. Applicable only to a CFN_STACKSET provisioned product type.
@@ -26,36 +27,24 @@ object ProvisioningArtifactPreferences {
   }
   
   @scala.inline
-  implicit class ProvisioningArtifactPreferencesOps[Self <: ProvisioningArtifactPreferences] (val x: Self) extends AnyVal {
+  implicit class ProvisioningArtifactPreferencesMutableBuilder[Self <: ProvisioningArtifactPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStackSetAccounts(value: StackSetAccounts): Self = StObject.set(x, "StackSetAccounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStackSetAccountsUndefined: Self = StObject.set(x, "StackSetAccounts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStackSetAccountsVarargs(value: AccountId*): Self = StObject.set(x, "StackSetAccounts", js.Array(value :_*))
     
     @scala.inline
-    def setStackSetAccountsVarargs(value: AccountId*): Self = this.set("StackSetAccounts", js.Array(value :_*))
+    def setStackSetRegions(value: StackSetRegions): Self = StObject.set(x, "StackSetRegions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackSetAccounts(value: StackSetAccounts): Self = this.set("StackSetAccounts", value.asInstanceOf[js.Any])
+    def setStackSetRegionsUndefined: Self = StObject.set(x, "StackSetRegions", js.undefined)
     
     @scala.inline
-    def deleteStackSetAccounts: Self = this.set("StackSetAccounts", js.undefined)
-    
-    @scala.inline
-    def setStackSetRegionsVarargs(value: Region*): Self = this.set("StackSetRegions", js.Array(value :_*))
-    
-    @scala.inline
-    def setStackSetRegions(value: StackSetRegions): Self = this.set("StackSetRegions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackSetRegions: Self = this.set("StackSetRegions", js.undefined)
+    def setStackSetRegionsVarargs(value: Region*): Self = StObject.set(x, "StackSetRegions", js.Array(value :_*))
   }
 }

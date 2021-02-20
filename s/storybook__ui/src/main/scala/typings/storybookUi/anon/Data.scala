@@ -3,12 +3,13 @@ package typings.storybookUi.anon
 import typings.react.mod.MutableRefObject
 import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookUi.sidebarTypesMod.Highlight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data extends js.Object {
+trait Data extends StObject {
   
   var data: StoriesHash = js.native
   
@@ -43,45 +44,33 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataOps[Self <: Data] (val x: Self) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: StoriesHash): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighlightedRef(value: MutableRefObject[Highlight]): Self = StObject.set(x, "highlightedRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsBrowsing(value: Boolean): Self = StObject.set(x, "isBrowsing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StoriesHash): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightedRef(value: MutableRefObject[Highlight]): Self = this.set("highlightedRef", value.asInstanceOf[js.Any])
+    def setOnSelectStoryId(value: String => Unit): Self = StObject.set(x, "onSelectStoryId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsBrowsing(value: Boolean): Self = this.set("isBrowsing", value.asInstanceOf[js.Any])
+    def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMain(value: Boolean): Self = this.set("isMain", value.asInstanceOf[js.Any])
+    def setSelectedStoryId(value: String): Self = StObject.set(x, "selectedStoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSelectStoryId(value: String => Unit): Self = this.set("onSelectStoryId", js.Any.fromFunction1(value))
+    def setSelectedStoryIdNull: Self = StObject.set(x, "selectedStoryId", null)
     
     @scala.inline
-    def setRefId(value: String): Self = this.set("refId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetHighlightedItemId(value: String => Unit): Self = this.set("setHighlightedItemId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectedStoryId(value: String): Self = this.set("selectedStoryId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedStoryIdNull: Self = this.set("selectedStoryId", null)
+    def setSetHighlightedItemId(value: String => Unit): Self = StObject.set(x, "setHighlightedItemId", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListAppImageConfigsRequest extends js.Object {
+trait ListAppImageConfigsRequest extends StObject {
   
   /**
     * A filter that returns only AppImageConfigs created on or after the specified time.
@@ -61,72 +62,60 @@ object ListAppImageConfigsRequest {
   }
   
   @scala.inline
-  implicit class ListAppImageConfigsRequestOps[Self <: ListAppImageConfigsRequest] (val x: Self) extends AnyVal {
+  implicit class ListAppImageConfigsRequestMutableBuilder[Self <: ListAppImageConfigsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTimeAfter(value: Timestamp): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimeBefore(value: Timestamp): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimeAfter(value: Timestamp): Self = this.set("CreationTimeAfter", value.asInstanceOf[js.Any])
+    def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
     @scala.inline
-    def deleteCreationTimeAfter: Self = this.set("CreationTimeAfter", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimeBefore(value: Timestamp): Self = this.set("CreationTimeBefore", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteCreationTimeBefore: Self = this.set("CreationTimeBefore", js.undefined)
+    def setModifiedTimeAfter(value: Timestamp): Self = StObject.set(x, "ModifiedTimeAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setModifiedTimeAfterUndefined: Self = StObject.set(x, "ModifiedTimeAfter", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setModifiedTimeBefore(value: Timestamp): Self = StObject.set(x, "ModifiedTimeBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTimeAfter(value: Timestamp): Self = this.set("ModifiedTimeAfter", value.asInstanceOf[js.Any])
+    def setModifiedTimeBeforeUndefined: Self = StObject.set(x, "ModifiedTimeBefore", js.undefined)
     
     @scala.inline
-    def deleteModifiedTimeAfter: Self = this.set("ModifiedTimeAfter", js.undefined)
+    def setNameContains(value: AppImageConfigName): Self = StObject.set(x, "NameContains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTimeBefore(value: Timestamp): Self = this.set("ModifiedTimeBefore", value.asInstanceOf[js.Any])
+    def setNameContainsUndefined: Self = StObject.set(x, "NameContains", js.undefined)
     
     @scala.inline
-    def deleteModifiedTimeBefore: Self = this.set("ModifiedTimeBefore", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameContains(value: AppImageConfigName): Self = this.set("NameContains", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteNameContains: Self = this.set("NameContains", js.undefined)
+    def setSortBy(value: AppImageConfigSortKey): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortBy(value: AppImageConfigSortKey): Self = this.set("SortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("SortBy", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

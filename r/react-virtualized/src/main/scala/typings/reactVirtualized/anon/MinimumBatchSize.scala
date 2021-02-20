@@ -3,12 +3,13 @@ package typings.reactVirtualized.anon
 import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.reactVirtualized.reactVirtualizedNumbers.`10`
 import typings.reactVirtualized.reactVirtualizedNumbers.`15`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MinimumBatchSize extends js.Object {
+trait MinimumBatchSize extends StObject {
   
   var minimumBatchSize: `10` = js.native
   
@@ -25,27 +26,15 @@ object MinimumBatchSize {
   }
   
   @scala.inline
-  implicit class MinimumBatchSizeOps[Self <: MinimumBatchSize] (val x: Self) extends AnyVal {
+  implicit class MinimumBatchSizeMutableBuilder[Self <: MinimumBatchSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinimumBatchSize(value: `10`): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRowCount(value: `0`): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMinimumBatchSize(value: `10`): Self = this.set("minimumBatchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowCount(value: `0`): Self = this.set("rowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreshold(value: `15`): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    def setThreshold(value: `15`): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,30 +57,18 @@ object AgentNotebookInfo {
   }
   
   @scala.inline
-  implicit class AgentNotebookInfoOps[Self <: AgentNotebookInfo] (val x: Self) extends AnyVal {
+  implicit class AgentNotebookInfoMutableBuilder[Self <: AgentNotebookInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecuteDatabase(value: String): Self = StObject.set(x, "executeDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastRunNotebookError(value: String): Self = StObject.set(x, "lastRunNotebookError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetDatabase(value: String): Self = StObject.set(x, "targetDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecuteDatabase(value: String): Self = this.set("executeDatabase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastRunNotebookError(value: String): Self = this.set("lastRunNotebookError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetDatabase(value: String): Self = this.set("targetDatabase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplateId(value: Double): Self = this.set("templateId", value.asInstanceOf[js.Any])
+    def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssociateSkillWithSkillGroupRequest extends js.Object {
+trait AssociateSkillWithSkillGroupRequest extends StObject {
   
   /**
     * The ARN of the skill group to associate the skill to. Required.
@@ -26,27 +27,15 @@ object AssociateSkillWithSkillGroupRequest {
   }
   
   @scala.inline
-  implicit class AssociateSkillWithSkillGroupRequestOps[Self <: AssociateSkillWithSkillGroupRequest] (val x: Self) extends AnyVal {
+  implicit class AssociateSkillWithSkillGroupRequestMutableBuilder[Self <: AssociateSkillWithSkillGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSkillGroupArn(value: Arn): Self = StObject.set(x, "SkillGroupArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSkillGroupArnUndefined: Self = StObject.set(x, "SkillGroupArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSkillId(value: SkillId): Self = this.set("SkillId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSkillGroupArn(value: Arn): Self = this.set("SkillGroupArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkillGroupArn: Self = this.set("SkillGroupArn", js.undefined)
+    def setSkillId(value: SkillId): Self = StObject.set(x, "SkillId", value.asInstanceOf[js.Any])
   }
 }

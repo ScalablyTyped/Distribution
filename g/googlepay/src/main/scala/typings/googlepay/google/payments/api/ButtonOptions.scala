@@ -3,6 +3,7 @@ package typings.googlepay.google.payments.api
 import typings.std.Event
 import typings.std.HTMLDocument
 import typings.std.ShadowRoot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * guidelines](https://developers.google.com/pay/api/web/guides/brand-guidelines).
   */
 @js.native
-trait ButtonOptions extends js.Object {
+trait ButtonOptions extends StObject {
   
   /**
     * Specifies the button color of the Google Pay button.
@@ -66,45 +67,33 @@ object ButtonOptions {
   }
   
   @scala.inline
-  implicit class ButtonOptionsOps[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+  implicit class ButtonOptionsMutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonColor(value: ButtonColor): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonColorUndefined: Self = StObject.set(x, "buttonColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonRootNode(value: HTMLDocument | ShadowRoot): Self = StObject.set(x, "buttonRootNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: Event => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setButtonRootNodeUndefined: Self = StObject.set(x, "buttonRootNode", js.undefined)
     
     @scala.inline
-    def setButtonColor(value: ButtonColor): Self = this.set("buttonColor", value.asInstanceOf[js.Any])
+    def setButtonSizeMode(value: ButtonSizeMode): Self = StObject.set(x, "buttonSizeMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonColor: Self = this.set("buttonColor", js.undefined)
+    def setButtonSizeModeUndefined: Self = StObject.set(x, "buttonSizeMode", js.undefined)
     
     @scala.inline
-    def setButtonRootNode(value: HTMLDocument | ShadowRoot): Self = this.set("buttonRootNode", value.asInstanceOf[js.Any])
+    def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteButtonRootNode: Self = this.set("buttonRootNode", js.undefined)
+    def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
     
     @scala.inline
-    def setButtonSizeMode(value: ButtonSizeMode): Self = this.set("buttonSizeMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButtonSizeMode: Self = this.set("buttonSizeMode", js.undefined)
-    
-    @scala.inline
-    def setButtonType(value: ButtonType): Self = this.set("buttonType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteButtonType: Self = this.set("buttonType", js.undefined)
+    def setOnClick(value: Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
   }
 }

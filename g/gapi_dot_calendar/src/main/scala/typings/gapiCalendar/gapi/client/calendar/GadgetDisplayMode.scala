@@ -1,5 +1,6 @@
 package typings.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gapiCalendar.gapiCalendarStrings.icon
   - typings.gapiCalendar.gapiCalendarStrings.chip
 */
-trait GadgetDisplayMode extends js.Object
+trait GadgetDisplayMode extends StObject
 object GadgetDisplayMode {
   
   @scala.inline

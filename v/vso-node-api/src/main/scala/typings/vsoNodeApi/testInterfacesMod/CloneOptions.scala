@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloneOptions extends js.Object {
+trait CloneOptions extends StObject {
   
   /**
     * If set to true requirements will be cloned
@@ -54,36 +55,24 @@ object CloneOptions {
   }
   
   @scala.inline
-  implicit class CloneOptionsOps[Self <: CloneOptions] (val x: Self) extends AnyVal {
+  implicit class CloneOptionsMutableBuilder[Self <: CloneOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloneRequirements(value: Boolean): Self = StObject.set(x, "cloneRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyAllSuites(value: Boolean): Self = StObject.set(x, "copyAllSuites", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyAncestorHierarchy(value: Boolean): Self = StObject.set(x, "copyAncestorHierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloneRequirements(value: Boolean): Self = this.set("cloneRequirements", value.asInstanceOf[js.Any])
+    def setDestinationWorkItemType(value: String): Self = StObject.set(x, "destinationWorkItemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyAllSuites(value: Boolean): Self = this.set("copyAllSuites", value.asInstanceOf[js.Any])
+    def setOverrideParameters(value: StringDictionary[String]): Self = StObject.set(x, "overrideParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyAncestorHierarchy(value: Boolean): Self = this.set("copyAncestorHierarchy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationWorkItemType(value: String): Self = this.set("destinationWorkItemType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOverrideParameters(value: StringDictionary[String]): Self = this.set("overrideParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedLinkComment(value: String): Self = this.set("relatedLinkComment", value.asInstanceOf[js.Any])
+    def setRelatedLinkComment(value: String): Self = StObject.set(x, "relatedLinkComment", value.asInstanceOf[js.Any])
   }
 }

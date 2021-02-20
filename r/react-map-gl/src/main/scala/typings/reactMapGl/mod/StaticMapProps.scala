@@ -2,6 +2,7 @@ package typings.reactMapGl.mod
 
 import typings.reactMapGl.anon.Height
 import typings.reactMapGl.anon.MaxPitch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,54 +31,42 @@ object StaticMapProps {
   }
   
   @scala.inline
-  implicit class StaticMapPropsOps[Self <: StaticMapProps] (val x: Self) extends AnyVal {
+  implicit class StaticMapPropsMutableBuilder[Self <: StaticMapProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableTokenWarning(value: Boolean): Self = StObject.set(x, "disableTokenWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisableTokenWarningUndefined: Self = StObject.set(x, "disableTokenWarning", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setOnResize(value: /* dimensions */ Height => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisableTokenWarning(value: Boolean): Self = this.set("disableTokenWarning", value.asInstanceOf[js.Any])
+    def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     @scala.inline
-    def deleteDisableTokenWarning: Self = this.set("disableTokenWarning", js.undefined)
+    def setPreventStyleDiffing(value: Boolean): Self = StObject.set(x, "preventStyleDiffing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnResize(value: /* dimensions */ Height => Unit): Self = this.set("onResize", js.Any.fromFunction1(value))
+    def setPreventStyleDiffingUndefined: Self = StObject.set(x, "preventStyleDiffing", js.undefined)
     
     @scala.inline
-    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreventStyleDiffing(value: Boolean): Self = this.set("preventStyleDiffing", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deletePreventStyleDiffing: Self = this.set("preventStyleDiffing", js.undefined)
+    def setVisibilityConstraints(value: MaxPitch): Self = StObject.set(x, "visibilityConstraints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setVisibilityConstraints(value: MaxPitch): Self = this.set("visibilityConstraints", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibilityConstraints: Self = this.set("visibilityConstraints", js.undefined)
+    def setVisibilityConstraintsUndefined: Self = StObject.set(x, "visibilityConstraints", js.undefined)
   }
 }

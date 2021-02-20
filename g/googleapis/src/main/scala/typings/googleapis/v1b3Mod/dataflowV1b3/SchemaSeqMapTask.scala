@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes a particular function to invoke.
   */
 @js.native
-trait SchemaSeqMapTask extends js.Object {
+trait SchemaSeqMapTask extends StObject {
   
   /**
     * Information about each of the inputs.
@@ -51,60 +52,48 @@ object SchemaSeqMapTask {
   }
   
   @scala.inline
-  implicit class SchemaSeqMapTaskOps[Self <: SchemaSeqMapTask] (val x: Self) extends AnyVal {
+  implicit class SchemaSeqMapTaskMutableBuilder[Self <: SchemaSeqMapTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputs(value: js.Array[SchemaSideInputInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
     @scala.inline
-    def setInputsVarargs(value: SchemaSideInputInfo*): Self = this.set("inputs", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputs(value: js.Array[SchemaSideInputInfo]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setOutputInfos(value: js.Array[SchemaSeqMapTaskOutputInfo]): Self = StObject.set(x, "outputInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOutputInfosUndefined: Self = StObject.set(x, "outputInfos", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOutputInfosVarargs(value: SchemaSeqMapTaskOutputInfo*): Self = StObject.set(x, "outputInfos", js.Array(value :_*))
     
     @scala.inline
-    def setOutputInfosVarargs(value: SchemaSeqMapTaskOutputInfo*): Self = this.set("outputInfos", js.Array(value :_*))
+    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputInfos(value: js.Array[SchemaSeqMapTaskOutputInfo]): Self = this.set("outputInfos", value.asInstanceOf[js.Any])
+    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
     @scala.inline
-    def deleteOutputInfos: Self = this.set("outputInfos", js.undefined)
+    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
     @scala.inline
-    def deleteStageName: Self = this.set("stageName", js.undefined)
+    def setUserFn(value: StringDictionary[js.Any]): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemName: Self = this.set("systemName", js.undefined)
-    
-    @scala.inline
-    def setUserFn(value: StringDictionary[js.Any]): Self = this.set("userFn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserFn: Self = this.set("userFn", js.undefined)
+    def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.intlMessageformatParser.srcTypesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Options extends js.Object {
+trait Options extends StObject {
   
   /**
     * Capture location info in AST
@@ -43,42 +44,30 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureLocation(value: Boolean): Self = StObject.set(x, "captureLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptureLocationUndefined: Self = StObject.set(x, "captureLocation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreTag(value: Boolean): Self = StObject.set(x, "ignoreTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptureLocation(value: Boolean): Self = this.set("captureLocation", value.asInstanceOf[js.Any])
+    def setIgnoreTagUndefined: Self = StObject.set(x, "ignoreTag", js.undefined)
     
     @scala.inline
-    def deleteCaptureLocation: Self = this.set("captureLocation", js.undefined)
+    def setNormalizeHashtagInPlural(value: Boolean): Self = StObject.set(x, "normalizeHashtagInPlural", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreTag(value: Boolean): Self = this.set("ignoreTag", value.asInstanceOf[js.Any])
+    def setNormalizeHashtagInPluralUndefined: Self = StObject.set(x, "normalizeHashtagInPlural", js.undefined)
     
     @scala.inline
-    def deleteIgnoreTag: Self = this.set("ignoreTag", js.undefined)
+    def setShouldParseSkeletons(value: Boolean): Self = StObject.set(x, "shouldParseSkeletons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizeHashtagInPlural(value: Boolean): Self = this.set("normalizeHashtagInPlural", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalizeHashtagInPlural: Self = this.set("normalizeHashtagInPlural", js.undefined)
-    
-    @scala.inline
-    def setShouldParseSkeletons(value: Boolean): Self = this.set("shouldParseSkeletons", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldParseSkeletons: Self = this.set("shouldParseSkeletons", js.undefined)
+    def setShouldParseSkeletonsUndefined: Self = StObject.set(x, "shouldParseSkeletons", js.undefined)
   }
 }

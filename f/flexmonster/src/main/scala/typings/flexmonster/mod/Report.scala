@@ -1,12 +1,13 @@
 package typings.flexmonster.mod
 
 import typings.flexmonster.anon.Columns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Report extends js.Object {
+trait Report extends StObject {
   
   var conditions: js.UndefOr[js.Array[ConditionalFormat]] = js.native
   
@@ -35,78 +36,66 @@ object Report {
   }
   
   @scala.inline
-  implicit class ReportOps[Self <: Report] (val x: Self) extends AnyVal {
+  implicit class ReportMutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConditions(value: js.Array[ConditionalFormat]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: ConditionalFormat*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: ConditionalFormat*): Self = this.set("conditions", js.Array(value :_*))
+    def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[ConditionalFormat]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: String): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setFormats(value: js.Array[Format]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setFormatsVarargs(value: Format*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
     @scala.inline
-    def setFormatsVarargs(value: Format*): Self = this.set("formats", js.Array(value :_*))
+    def setLocalization(value: js.Object | String): Self = StObject.set(x, "localization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormats(value: js.Array[Format]): Self = this.set("formats", value.asInstanceOf[js.Any])
+    def setLocalizationUndefined: Self = StObject.set(x, "localization", js.undefined)
     
     @scala.inline
-    def deleteFormats: Self = this.set("formats", js.undefined)
+    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalization(value: js.Object | String): Self = this.set("localization", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteLocalization: Self = this.set("localization", js.undefined)
+    def setSlice(value: Slice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: Options): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setTableSizes(value: Columns): Self = StObject.set(x, "tableSizes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlice(value: Slice): Self = this.set("slice", value.asInstanceOf[js.Any])
+    def setTableSizesUndefined: Self = StObject.set(x, "tableSizes", js.undefined)
     
     @scala.inline
-    def deleteSlice: Self = this.set("slice", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableSizes(value: Columns): Self = this.set("tableSizes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableSizes: Self = this.set("tableSizes", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

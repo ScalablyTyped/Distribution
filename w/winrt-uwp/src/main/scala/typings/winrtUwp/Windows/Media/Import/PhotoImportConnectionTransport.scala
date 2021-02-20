@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Import
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportConnectionTransport extends js.Object
+sealed trait PhotoImportConnectionTransport extends StObject
 /** Specifies the connection transport used for photo import. */
 @JSGlobal("Windows.Media.Import.PhotoImportConnectionTransport")
 @js.native
-object PhotoImportConnectionTransport extends js.Object {
+object PhotoImportConnectionTransport extends StObject {
   
   /** The connection transport is Bluetooth. */
   @js.native

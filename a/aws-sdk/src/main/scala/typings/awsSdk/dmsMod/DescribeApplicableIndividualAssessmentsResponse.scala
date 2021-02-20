@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeApplicableIndividualAssessmentsResponse extends js.Object {
+trait DescribeApplicableIndividualAssessmentsResponse extends StObject {
   
   /**
     * List of names for the individual assessments supported by the premigration assessment run that you start based on the specified request parameters. For more information on the available individual assessments, including compatibility with different migration task configurations, see Working with premigration assessment runs in the AWS Database Migration Service User Guide. 
@@ -26,33 +27,21 @@ object DescribeApplicableIndividualAssessmentsResponse {
   }
   
   @scala.inline
-  implicit class DescribeApplicableIndividualAssessmentsResponseOps[Self <: DescribeApplicableIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeApplicableIndividualAssessmentsResponseMutableBuilder[Self <: DescribeApplicableIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndividualAssessmentNames(value: IndividualAssessmentNameList): Self = StObject.set(x, "IndividualAssessmentNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndividualAssessmentNamesUndefined: Self = StObject.set(x, "IndividualAssessmentNames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndividualAssessmentNamesVarargs(value: String*): Self = StObject.set(x, "IndividualAssessmentNames", js.Array(value :_*))
     
     @scala.inline
-    def setIndividualAssessmentNamesVarargs(value: String*): Self = this.set("IndividualAssessmentNames", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndividualAssessmentNames(value: IndividualAssessmentNameList): Self = this.set("IndividualAssessmentNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndividualAssessmentNames: Self = this.set("IndividualAssessmentNames", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tuyaPanelKit.tuyaPanelKitStrings.UE
   - typings.tuyaPanelKit.tuyaPanelKitStrings.IN
 */
-trait MobileService extends js.Object
+trait MobileService extends StObject
 object MobileService {
   
   @scala.inline

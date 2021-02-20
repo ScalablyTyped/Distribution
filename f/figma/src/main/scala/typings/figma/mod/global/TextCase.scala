@@ -1,5 +1,6 @@
 package typings.figma.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.figma.figmaStrings.LOWER
   - typings.figma.figmaStrings.TITLE
 */
-trait TextCase extends js.Object
+trait TextCase extends StObject
 object TextCase {
   
   @scala.inline

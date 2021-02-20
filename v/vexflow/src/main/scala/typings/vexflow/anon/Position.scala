@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Position extends js.Object {
+trait Position extends StObject {
   
   var position: js.UndefOr[typings.vexflow.Vex.Flow.TextBracket.Positions] = js.native
   
@@ -26,42 +27,30 @@ object Position {
   }
   
   @scala.inline
-  implicit class PositionOps[Self <: Position] (val x: Self) extends AnyVal {
+  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPosition(value: typings.vexflow.Vex.Flow.TextBracket.Positions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: typings.vexflow.Vex.Flow.Note): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStop(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStop(value: typings.vexflow.Vex.Flow.Note): Self = this.set("stop", value.asInstanceOf[js.Any])
+    def setSuperscript(value: String): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: typings.vexflow.Vex.Flow.TextBracket.Positions): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperscript(value: String): Self = this.set("superscript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperscript: Self = this.set("superscript", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

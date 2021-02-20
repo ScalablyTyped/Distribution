@@ -1,11 +1,12 @@
 package typings.awsSdk.marketplacecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelChangeSetResponse extends js.Object {
+trait CancelChangeSetResponse extends StObject {
   
   /**
     * The ARN associated with the change set referenced in this request.
@@ -26,30 +27,18 @@ object CancelChangeSetResponse {
   }
   
   @scala.inline
-  implicit class CancelChangeSetResponseOps[Self <: CancelChangeSetResponse] (val x: Self) extends AnyVal {
+  implicit class CancelChangeSetResponseMutableBuilder[Self <: CancelChangeSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeSetArn(value: ARN): Self = StObject.set(x, "ChangeSetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeSetArnUndefined: Self = StObject.set(x, "ChangeSetArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetArn(value: ARN): Self = this.set("ChangeSetArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeSetArn: Self = this.set("ChangeSetArn", js.undefined)
-    
-    @scala.inline
-    def setChangeSetId(value: ResourceId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
   }
 }

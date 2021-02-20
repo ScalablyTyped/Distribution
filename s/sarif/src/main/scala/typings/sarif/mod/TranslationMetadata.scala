@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TranslationMetadata extends js.Object {
+trait TranslationMetadata extends StObject {
   
   /**
     * The absolute URI from which the translation metadata can be downloaded.
@@ -51,57 +52,45 @@ object TranslationMetadata {
   }
   
   @scala.inline
-  implicit class TranslationMetadataOps[Self <: TranslationMetadata] (val x: Self) extends AnyVal {
+  implicit class TranslationMetadataMutableBuilder[Self <: TranslationMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDownloadUriUndefined: Self = StObject.set(x, "downloadUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullDescription(value: MultiformatMessageString): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setFullDescriptionUndefined: Self = StObject.set(x, "fullDescription", js.undefined)
     
     @scala.inline
-    def setDownloadUri(value: String): Self = this.set("downloadUri", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDownloadUri: Self = this.set("downloadUri", js.undefined)
+    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
     @scala.inline
-    def setFullDescription(value: MultiformatMessageString): Self = this.set("fullDescription", value.asInstanceOf[js.Any])
+    def setInformationUri(value: String): Self = StObject.set(x, "informationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullDescription: Self = this.set("fullDescription", js.undefined)
+    def setInformationUriUndefined: Self = StObject.set(x, "informationUri", js.undefined)
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullName: Self = this.set("fullName", js.undefined)
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInformationUri(value: String): Self = this.set("informationUri", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deleteInformationUri: Self = this.set("informationUri", js.undefined)
+    def setShortDescription(value: MultiformatMessageString): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
-    
-    @scala.inline
-    def setShortDescription(value: MultiformatMessageString): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShortDescription: Self = this.set("shortDescription", js.undefined)
+    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
   }
 }

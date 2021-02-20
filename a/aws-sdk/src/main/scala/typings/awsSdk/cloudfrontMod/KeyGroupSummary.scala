@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyGroupSummary extends js.Object {
+trait KeyGroupSummary extends StObject {
   
   /**
     * A key group.
@@ -21,21 +22,9 @@ object KeyGroupSummary {
   }
   
   @scala.inline
-  implicit class KeyGroupSummaryOps[Self <: KeyGroupSummary] (val x: Self) extends AnyVal {
+  implicit class KeyGroupSummaryMutableBuilder[Self <: KeyGroupSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyGroup(value: KeyGroup): Self = this.set("KeyGroup", value.asInstanceOf[js.Any])
+    def setKeyGroup(value: KeyGroup): Self = StObject.set(x, "KeyGroup", value.asInstanceOf[js.Any])
   }
 }

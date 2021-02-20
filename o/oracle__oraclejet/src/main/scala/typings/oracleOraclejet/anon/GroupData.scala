@@ -1,11 +1,12 @@
 package typings.oracleOraclejet.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupData extends js.Object {
+trait GroupData extends StObject {
   
   var data: js.Object = js.native
   
@@ -24,33 +25,21 @@ object GroupData {
   }
   
   @scala.inline
-  implicit class GroupDataOps[Self <: GroupData] (val x: Self) extends AnyVal {
+  implicit class GroupDataMutableBuilder[Self <: GroupData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupData(value: js.Array[_]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupDataVarargs(value: js.Any*): Self = StObject.set(x, "groupData", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupDataVarargs(value: js.Any*): Self = this.set("groupData", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupData(value: js.Array[_]): Self = this.set("groupData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemData(value: js.Object): Self = this.set("itemData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeriesData(value: js.Object): Self = this.set("seriesData", value.asInstanceOf[js.Any])
+    def setSeriesData(value: js.Object): Self = StObject.set(x, "seriesData", value.asInstanceOf[js.Any])
   }
 }

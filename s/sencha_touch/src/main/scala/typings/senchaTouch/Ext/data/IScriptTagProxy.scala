@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.data.proxy.IServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,98 +86,86 @@ object IScriptTagProxy {
   }
   
   @scala.inline
-  implicit class IScriptTagProxyOps[Self <: IScriptTagProxy] (val x: Self) extends AnyVal {
+  implicit class IScriptTagProxyMutableBuilder[Self <: IScriptTagProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoAppendParams(value: Boolean): Self = StObject.set(x, "autoAppendParams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbort(value: () => Unit): Self = this.set("abort", js.Any.fromFunction0(value))
+    def setAutoAppendParamsUndefined: Self = StObject.set(x, "autoAppendParams", js.undefined)
     
     @scala.inline
-    def deleteAbort: Self = this.set("abort", js.undefined)
+    def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAppendParams(value: Boolean): Self = this.set("autoAppendParams", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAutoAppendParams: Self = this.set("autoAppendParams", js.undefined)
-    
-    @scala.inline
-    def setCallbackKey(value: String): Self = this.set("callbackKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCallbackKey: Self = this.set("callbackKey", js.undefined)
+    def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
     
     @scala.inline
     def setDoRequest(
       value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
-    ): Self = this.set("doRequest", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteDoRequest: Self = this.set("doRequest", js.undefined)
+    def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
     @scala.inline
-    def setGetAutoAppendParams(value: () => Boolean): Self = this.set("getAutoAppendParams", js.Any.fromFunction0(value))
+    def setGetAutoAppendParams(value: () => Boolean): Self = StObject.set(x, "getAutoAppendParams", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetAutoAppendParams: Self = this.set("getAutoAppendParams", js.undefined)
+    def setGetAutoAppendParamsUndefined: Self = StObject.set(x, "getAutoAppendParams", js.undefined)
     
     @scala.inline
-    def setGetCallbackKey(value: () => String): Self = this.set("getCallbackKey", js.Any.fromFunction0(value))
+    def setGetCallbackKey(value: () => String): Self = StObject.set(x, "getCallbackKey", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetCallbackKey: Self = this.set("getCallbackKey", js.undefined)
+    def setGetCallbackKeyUndefined: Self = StObject.set(x, "getCallbackKey", js.undefined)
     
     @scala.inline
-    def setGetDefaultWriterType(value: () => String): Self = this.set("getDefaultWriterType", js.Any.fromFunction0(value))
+    def setGetDefaultWriterType(value: () => String): Self = StObject.set(x, "getDefaultWriterType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetDefaultWriterType: Self = this.set("getDefaultWriterType", js.undefined)
+    def setGetDefaultWriterTypeUndefined: Self = StObject.set(x, "getDefaultWriterType", js.undefined)
     
     @scala.inline
-    def setGetRecordParam(value: () => String): Self = this.set("getRecordParam", js.Any.fromFunction0(value))
+    def setGetRecordParam(value: () => String): Self = StObject.set(x, "getRecordParam", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetRecordParam: Self = this.set("getRecordParam", js.undefined)
+    def setGetRecordParamUndefined: Self = StObject.set(x, "getRecordParam", js.undefined)
     
     @scala.inline
-    def setRecordParam(value: String): Self = this.set("recordParam", value.asInstanceOf[js.Any])
+    def setRecordParam(value: String): Self = StObject.set(x, "recordParam", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRecordParam: Self = this.set("recordParam", js.undefined)
+    def setRecordParamUndefined: Self = StObject.set(x, "recordParam", js.undefined)
     
     @scala.inline
-    def setSetAutoAppendParams(value: /* autoAppendParams */ js.UndefOr[Boolean] => Unit): Self = this.set("setAutoAppendParams", js.Any.fromFunction1(value))
+    def setSetAutoAppendParams(value: /* autoAppendParams */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAutoAppendParams", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetAutoAppendParams: Self = this.set("setAutoAppendParams", js.undefined)
+    def setSetAutoAppendParamsUndefined: Self = StObject.set(x, "setAutoAppendParams", js.undefined)
     
     @scala.inline
-    def setSetCallbackKey(value: /* callbackKey */ js.UndefOr[String] => Unit): Self = this.set("setCallbackKey", js.Any.fromFunction1(value))
+    def setSetCallbackKey(value: /* callbackKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setCallbackKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetCallbackKey: Self = this.set("setCallbackKey", js.undefined)
+    def setSetCallbackKeyUndefined: Self = StObject.set(x, "setCallbackKey", js.undefined)
     
     @scala.inline
-    def setSetDefaultWriterType(value: /* defaultWriterType */ js.UndefOr[String] => Unit): Self = this.set("setDefaultWriterType", js.Any.fromFunction1(value))
+    def setSetDefaultWriterType(value: /* defaultWriterType */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDefaultWriterType", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetDefaultWriterType: Self = this.set("setDefaultWriterType", js.undefined)
+    def setSetDefaultWriterTypeUndefined: Self = StObject.set(x, "setDefaultWriterType", js.undefined)
     
     @scala.inline
-    def setSetRecordParam(value: /* recordParam */ js.UndefOr[String] => Unit): Self = this.set("setRecordParam", js.Any.fromFunction1(value))
+    def setSetRecordParam(value: /* recordParam */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRecordParam", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetRecordParam: Self = this.set("setRecordParam", js.undefined)
+    def setSetRecordParamUndefined: Self = StObject.set(x, "setRecordParam", js.undefined)
   }
 }

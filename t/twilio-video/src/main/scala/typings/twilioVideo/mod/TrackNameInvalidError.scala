@@ -2,6 +2,7 @@ package typings.twilioVideo.mod
 
 import typings.twilioVideo.twilioVideoNumbers.`53301`
 import typings.twilioVideo.twilioVideoStrings.`Track name is invalid`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

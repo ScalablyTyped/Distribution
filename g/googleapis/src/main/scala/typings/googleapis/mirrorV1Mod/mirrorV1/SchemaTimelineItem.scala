@@ -1,5 +1,6 @@
 package typings.googleapis.mirrorV1Mod.mirrorV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * structure, described below.
   */
 @js.native
-trait SchemaTimelineItem extends js.Object {
+trait SchemaTimelineItem extends StObject {
   
   /**
     * A list of media attachments associated with this item. As a convenience,
@@ -208,183 +209,171 @@ object SchemaTimelineItem {
   }
   
   @scala.inline
-  implicit class SchemaTimelineItemOps[Self <: SchemaTimelineItem] (val x: Self) extends AnyVal {
+  implicit class SchemaTimelineItemMutableBuilder[Self <: SchemaTimelineItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: js.Array[SchemaAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachmentsVarargs(value: SchemaAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentsVarargs(value: SchemaAttachment*): Self = this.set("attachments", js.Array(value :_*))
+    def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: js.Array[SchemaAttachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setCanonicalUrl(value: String): Self = StObject.set(x, "canonicalUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    def setCanonicalUrlUndefined: Self = StObject.set(x, "canonicalUrl", js.undefined)
     
     @scala.inline
-    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanonicalUrl(value: String): Self = this.set("canonicalUrl", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteCanonicalUrl: Self = this.set("canonicalUrl", js.undefined)
+    def setCreator(value: SchemaContact): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setDisplayTime(value: String): Self = StObject.set(x, "displayTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: SchemaContact): Self = this.set("creator", value.asInstanceOf[js.Any])
+    def setDisplayTimeUndefined: Self = StObject.set(x, "displayTime", js.undefined)
     
     @scala.inline
-    def deleteCreator: Self = this.set("creator", js.undefined)
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayTime(value: String): Self = this.set("displayTime", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteDisplayTime: Self = this.set("displayTime", js.undefined)
+    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsBundleCover(value: Boolean): Self = StObject.set(x, "isBundleCover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInReplyTo(value: String): Self = this.set("inReplyTo", value.asInstanceOf[js.Any])
+    def setIsBundleCoverUndefined: Self = StObject.set(x, "isBundleCover", js.undefined)
     
     @scala.inline
-    def deleteInReplyTo: Self = this.set("inReplyTo", js.undefined)
+    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsBundleCover(value: Boolean): Self = this.set("isBundleCover", value.asInstanceOf[js.Any])
+    def setIsDeletedUndefined: Self = StObject.set(x, "isDeleted", js.undefined)
     
     @scala.inline
-    def deleteIsBundleCover: Self = this.set("isBundleCover", js.undefined)
+    def setIsPinned(value: Boolean): Self = StObject.set(x, "isPinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsDeleted(value: Boolean): Self = this.set("isDeleted", value.asInstanceOf[js.Any])
+    def setIsPinnedUndefined: Self = StObject.set(x, "isPinned", js.undefined)
     
     @scala.inline
-    def deleteIsDeleted: Self = this.set("isDeleted", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPinned(value: Boolean): Self = this.set("isPinned", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsPinned: Self = this.set("isPinned", js.undefined)
+    def setLocation(value: SchemaLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMenuItems(value: js.Array[SchemaMenuItem]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: SchemaLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setMenuItemsVarargs(value: SchemaMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
     
     @scala.inline
-    def setMenuItemsVarargs(value: SchemaMenuItem*): Self = this.set("menuItems", js.Array(value :_*))
+    def setNotification(value: SchemaNotificationConfig): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItems(value: js.Array[SchemaMenuItem]): Self = this.set("menuItems", value.asInstanceOf[js.Any])
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def deleteMenuItems: Self = this.set("menuItems", js.undefined)
+    def setPinScore(value: Double): Self = StObject.set(x, "pinScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification(value: SchemaNotificationConfig): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setPinScoreUndefined: Self = StObject.set(x, "pinScore", js.undefined)
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setRecipients(value: js.Array[SchemaContact]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinScore(value: Double): Self = this.set("pinScore", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
     @scala.inline
-    def deletePinScore: Self = this.set("pinScore", js.undefined)
+    def setRecipientsVarargs(value: SchemaContact*): Self = StObject.set(x, "recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: SchemaContact*): Self = this.set("recipients", js.Array(value :_*))
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: js.Array[SchemaContact]): Self = this.set("recipients", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("recipients", js.undefined)
+    def setSourceItemId(value: String): Self = StObject.set(x, "sourceItemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setSourceItemIdUndefined: Self = StObject.set(x, "sourceItemId", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setSpeakableText(value: String): Self = StObject.set(x, "speakableText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceItemId(value: String): Self = this.set("sourceItemId", value.asInstanceOf[js.Any])
+    def setSpeakableTextUndefined: Self = StObject.set(x, "speakableText", js.undefined)
     
     @scala.inline
-    def deleteSourceItemId: Self = this.set("sourceItemId", js.undefined)
+    def setSpeakableType(value: String): Self = StObject.set(x, "speakableType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeakableText(value: String): Self = this.set("speakableText", value.asInstanceOf[js.Any])
+    def setSpeakableTypeUndefined: Self = StObject.set(x, "speakableType", js.undefined)
     
     @scala.inline
-    def deleteSpeakableText: Self = this.set("speakableText", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpeakableType(value: String): Self = this.set("speakableType", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteSpeakableType: Self = this.set("speakableType", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

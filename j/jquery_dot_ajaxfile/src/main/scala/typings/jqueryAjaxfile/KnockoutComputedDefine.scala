@@ -1,12 +1,13 @@
 package typings.jqueryAjaxfile
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutComputedDefine[T] extends js.Object {
+trait KnockoutComputedDefine[T] extends StObject {
   
   var deferEvaluation: js.UndefOr[Boolean] = js.native
   
@@ -31,57 +32,45 @@ object KnockoutComputedDefine {
   }
   
   @scala.inline
-  implicit class KnockoutComputedDefineOps[Self <: KnockoutComputedDefine[_], T] (val x: Self with KnockoutComputedDefine[T]) extends AnyVal {
+  implicit class KnockoutComputedDefineMutableBuilder[Self <: KnockoutComputedDefine[_], T] (val x: Self with KnockoutComputedDefine[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferEvaluationUndefined: Self = StObject.set(x, "deferEvaluation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisposeWhen(value: () => Boolean): Self = StObject.set(x, "disposeWhen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRead(value: () => T): Self = this.set("read", js.Any.fromFunction0(value))
+    def setDisposeWhenNodeIsRemoved(value: Node): Self = StObject.set(x, "disposeWhenNodeIsRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeferEvaluation(value: Boolean): Self = this.set("deferEvaluation", value.asInstanceOf[js.Any])
+    def setDisposeWhenNodeIsRemovedUndefined: Self = StObject.set(x, "disposeWhenNodeIsRemoved", js.undefined)
     
     @scala.inline
-    def deleteDeferEvaluation: Self = this.set("deferEvaluation", js.undefined)
+    def setDisposeWhenUndefined: Self = StObject.set(x, "disposeWhen", js.undefined)
     
     @scala.inline
-    def setDisposeWhen(value: () => Boolean): Self = this.set("disposeWhen", js.Any.fromFunction0(value))
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisposeWhen: Self = this.set("disposeWhen", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setDisposeWhenNodeIsRemoved(value: Node): Self = this.set("disposeWhenNodeIsRemoved", value.asInstanceOf[js.Any])
+    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisposeWhenNodeIsRemoved: Self = this.set("disposeWhenNodeIsRemoved", js.undefined)
+    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRead(value: () => T): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setWrite(value: /* value */ T => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPure(value: Boolean): Self = this.set("pure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePure: Self = this.set("pure", js.undefined)
-    
-    @scala.inline
-    def setWrite(value: /* value */ T => Unit): Self = this.set("write", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

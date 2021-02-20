@@ -1,12 +1,13 @@
 package typings.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // addListener
 @js.native
-trait ListenerParameters extends js.Object {
+trait ListenerParameters extends StObject {
   
   /**
     * deprecated: For objects v2, use objects.the objects listener
@@ -46,72 +47,60 @@ object ListenerParameters {
   }
   
   @scala.inline
-  implicit class ListenerParametersOps[Self <: ListenerParameters] (val x: Self) extends AnyVal {
+  implicit class ListenerParametersMutableBuilder[Self <: ListenerParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMembership(value: /* membershipEvent */ MembershipEvent => Unit): Self = StObject.set(x, "membership", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: /* messageEvent */ MessageEvent => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMembership(value: /* membershipEvent */ MembershipEvent => Unit): Self = this.set("membership", js.Any.fromFunction1(value))
+    def setMessageAction(value: /* messageActionEvent */ MessageActionEvent => Unit): Self = StObject.set(x, "messageAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteMembership: Self = this.set("membership", js.undefined)
+    def setMessageActionUndefined: Self = StObject.set(x, "messageAction", js.undefined)
     
     @scala.inline
-    def setMessage(value: /* messageEvent */ MessageEvent => Unit): Self = this.set("message", js.Any.fromFunction1(value))
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setObjects(value: /* objectsEvent */ ObjectsEvent[ObjectCustom, ObjectCustom, ObjectCustom] => Unit): Self = StObject.set(x, "objects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMessageAction(value: /* messageActionEvent */ MessageActionEvent => Unit): Self = this.set("messageAction", js.Any.fromFunction1(value))
+    def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
     
     @scala.inline
-    def deleteMessageAction: Self = this.set("messageAction", js.undefined)
+    def setPresence(value: /* presenceEvent */ PresenceEvent => Unit): Self = StObject.set(x, "presence", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setObjects(value: /* objectsEvent */ ObjectsEvent[ObjectCustom, ObjectCustom, ObjectCustom] => Unit): Self = this.set("objects", js.Any.fromFunction1(value))
+    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
     @scala.inline
-    def deleteObjects: Self = this.set("objects", js.undefined)
+    def setSignal(value: /* signalEvent */ SignalEvent => Unit): Self = StObject.set(x, "signal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPresence(value: /* presenceEvent */ PresenceEvent => Unit): Self = this.set("presence", js.Any.fromFunction1(value))
+    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
     @scala.inline
-    def deletePresence: Self = this.set("presence", js.undefined)
+    def setSpace(value: /* spaceEvent */ SpaceEvent => Unit): Self = StObject.set(x, "space", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSignal(value: /* signalEvent */ SignalEvent => Unit): Self = this.set("signal", js.Any.fromFunction1(value))
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
+    def setStatus(value: /* statusEvent */ StatusEvent => Unit): Self = StObject.set(x, "status", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpace(value: /* spaceEvent */ SpaceEvent => Unit): Self = this.set("space", js.Any.fromFunction1(value))
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setUser(value: /* userEvent */ UserEvent => Unit): Self = StObject.set(x, "user", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStatus(value: /* statusEvent */ StatusEvent => Unit): Self = this.set("status", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setUser(value: /* userEvent */ UserEvent => Unit): Self = this.set("user", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

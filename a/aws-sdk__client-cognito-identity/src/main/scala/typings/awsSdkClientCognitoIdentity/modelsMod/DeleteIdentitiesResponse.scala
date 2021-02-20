@@ -1,12 +1,13 @@
 package typings.awsSdkClientCognitoIdentity.modelsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity/types/models", "DeleteIdentitiesResponse")
-@js.native
-object DeleteIdentitiesResponse extends js.Object {
+object DeleteIdentitiesResponse {
   
+  @JSImport("@aws-sdk/client-cognito-identity/types/models", "DeleteIdentitiesResponse.filterSensitiveLog")
+  @js.native
   def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.DeleteIdentitiesResponse): js.Any = js.native
 }

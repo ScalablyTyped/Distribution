@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemDataSource extends js.Object {
+trait FileSystemDataSource extends StObject {
   
   /**
     * The full path to the directory to associate with the channel.
@@ -41,30 +42,18 @@ object FileSystemDataSource {
   }
   
   @scala.inline
-  implicit class FileSystemDataSourceOps[Self <: FileSystemDataSource] (val x: Self) extends AnyVal {
+  implicit class FileSystemDataSourceMutableBuilder[Self <: FileSystemDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryPath(value: DirectoryPath): Self = StObject.set(x, "DirectoryPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemAccessMode(value: FileSystemAccessMode): Self = StObject.set(x, "FileSystemAccessMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryPath(value: DirectoryPath): Self = this.set("DirectoryPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileSystemAccessMode(value: FileSystemAccessMode): Self = this.set("FileSystemAccessMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileSystemType(value: FileSystemType): Self = this.set("FileSystemType", value.asInstanceOf[js.Any])
+    def setFileSystemType(value: FileSystemType): Self = StObject.set(x, "FileSystemType", value.asInstanceOf[js.Any])
   }
 }

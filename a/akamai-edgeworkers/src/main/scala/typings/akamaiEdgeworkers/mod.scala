@@ -6,6 +6,7 @@ import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.None
 import typings.akamaiEdgeworkers.akamaiEdgeworkersStrings.Strict
 import typings.akamaiEdgeworkers.anon.Domain
 import typings.akamaiEdgeworkers.anon.ToUTCString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Query, add, and remove cookies.
   */
-@JSImport("cookies", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Provides access to the Cookies header of a request, allowing the
     * addition, removal, or modification of cookie values.
     */
+  @JSImport("cookies", "Cookies")
   @js.native
   /**
     * Constructor for a new "Cookies" struct to hold cookies.
@@ -36,7 +36,7 @@ object mod extends js.Object {
     *      take a string and return the result of the custom decoding of
     *      that string.
     */
-  class Cookies () extends js.Object {
+  class Cookies () extends StObject {
     def this(header: String) = this()
     def this(header: js.Array[String]) = this()
     def this(header: js.UndefOr[scala.Nothing], options: js.Object) = this()
@@ -87,12 +87,13 @@ object mod extends js.Object {
   /**
     * Provides access to the SetCookies header of a request.
     */
+  @JSImport("cookies", "SetCookie")
   @js.native
   /**
     * Constructor for a new "SetCookie" struct to hold a specific Set-Cookie
     * header representation.
     */
-  class SetCookie () extends js.Object {
+  class SetCookie () extends StObject {
     def this(opts: Domain) = this()
     
     var domain: String = js.native

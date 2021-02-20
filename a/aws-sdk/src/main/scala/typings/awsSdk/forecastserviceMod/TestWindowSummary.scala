@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestWindowSummary extends js.Object {
+trait TestWindowSummary extends StObject {
   
   /**
     * If the test failed, the reason why it failed.
@@ -36,42 +37,30 @@ object TestWindowSummary {
   }
   
   @scala.inline
-  implicit class TestWindowSummaryOps[Self <: TestWindowSummary] (val x: Self) extends AnyVal {
+  implicit class TestWindowSummaryMutableBuilder[Self <: TestWindowSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: ErrorMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setTestWindowEnd(value: Timestamp): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTestWindowEndUndefined: Self = StObject.set(x, "TestWindowEnd", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setTestWindowStart(value: Timestamp): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestWindowEnd(value: Timestamp): Self = this.set("TestWindowEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestWindowEnd: Self = this.set("TestWindowEnd", js.undefined)
-    
-    @scala.inline
-    def setTestWindowStart(value: Timestamp): Self = this.set("TestWindowStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestWindowStart: Self = this.set("TestWindowStart", js.undefined)
+    def setTestWindowStartUndefined: Self = StObject.set(x, "TestWindowStart", js.undefined)
   }
 }

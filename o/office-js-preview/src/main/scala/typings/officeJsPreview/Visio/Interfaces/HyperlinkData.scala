@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "hyperlink.toJSON()". */
 @js.native
-trait HyperlinkData extends js.Object {
+trait HyperlinkData extends StObject {
   
   /**
     *
@@ -49,42 +50,30 @@ object HyperlinkData {
   }
   
   @scala.inline
-  implicit class HyperlinkDataOps[Self <: HyperlinkData] (val x: Self) extends AnyVal {
+  implicit class HyperlinkDataMutableBuilder[Self <: HyperlinkData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setExtraInfo(value: String): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExtraInfoUndefined: Self = StObject.set(x, "extraInfo", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSubAddress(value: String): Self = StObject.set(x, "subAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtraInfo(value: String): Self = this.set("extraInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtraInfo: Self = this.set("extraInfo", js.undefined)
-    
-    @scala.inline
-    def setSubAddress(value: String): Self = this.set("subAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubAddress: Self = this.set("subAddress", js.undefined)
+    def setSubAddressUndefined: Self = StObject.set(x, "subAddress", js.undefined)
   }
 }

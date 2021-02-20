@@ -1,5 +1,6 @@
 package typings.extjs.Ext.form
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,42 +36,30 @@ object IRadio {
   }
   
   @scala.inline
-  implicit class IRadioOps[Self <: IRadio] (val x: Self) extends AnyVal {
+  implicit class IRadioMutableBuilder[Self <: IRadio] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGroupValue(value: () => String): Self = StObject.set(x, "getGroupValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGroupValueUndefined: Self = StObject.set(x, "getGroupValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetModelData(value: () => _): Self = StObject.set(x, "getModelData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGroupValue(value: () => String): Self = this.set("getGroupValue", js.Any.fromFunction0(value))
+    def setGetModelDataUndefined: Self = StObject.set(x, "getModelData", js.undefined)
     
     @scala.inline
-    def deleteGetGroupValue: Self = this.set("getGroupValue", js.undefined)
+    def setIsRadio(value: Boolean): Self = StObject.set(x, "isRadio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetModelData(value: () => _): Self = this.set("getModelData", js.Any.fromFunction0(value))
+    def setIsRadioUndefined: Self = StObject.set(x, "isRadio", js.undefined)
     
     @scala.inline
-    def deleteGetModelData: Self = this.set("getModelData", js.undefined)
+    def setOnRemoved(value: () => Unit): Self = StObject.set(x, "onRemoved", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsRadio(value: Boolean): Self = this.set("isRadio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsRadio: Self = this.set("isRadio", js.undefined)
-    
-    @scala.inline
-    def setOnRemoved(value: () => Unit): Self = this.set("onRemoved", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnRemoved: Self = this.set("onRemoved", js.undefined)
+    def setOnRemovedUndefined: Self = StObject.set(x, "onRemoved", js.undefined)
   }
 }

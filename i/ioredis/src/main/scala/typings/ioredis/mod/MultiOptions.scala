@@ -1,11 +1,12 @@
 package typings.ioredis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiOptions extends js.Object {
+trait MultiOptions extends StObject {
   
   var pipeline: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object MultiOptions {
   }
   
   @scala.inline
-  implicit class MultiOptionsOps[Self <: MultiOptions] (val x: Self) extends AnyVal {
+  implicit class MultiOptionsMutableBuilder[Self <: MultiOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPipeline(value: Boolean): Self = this.set("pipeline", value.asInstanceOf[js.Any])
+    def setPipeline(value: Boolean): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
   }
 }

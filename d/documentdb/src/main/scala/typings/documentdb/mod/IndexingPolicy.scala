@@ -1,11 +1,12 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexingPolicy extends js.Object {
+trait IndexingPolicy extends StObject {
   
   /** Represents the paths to be excluded from indexing. */
   var ExcludedPaths: js.Array[ExcludedPath] = js.native
@@ -33,36 +34,24 @@ object IndexingPolicy {
   }
   
   @scala.inline
-  implicit class IndexingPolicyOps[Self <: IndexingPolicy] (val x: Self) extends AnyVal {
+  implicit class IndexingPolicyMutableBuilder[Self <: IndexingPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedPaths(value: js.Array[ExcludedPath]): Self = StObject.set(x, "ExcludedPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedPathsVarargs(value: ExcludedPath*): Self = StObject.set(x, "ExcludedPaths", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedPathsVarargs(value: ExcludedPath*): Self = this.set("ExcludedPaths", js.Array(value :_*))
+    def setIncludedPaths(value: js.Array[IncludedPath]): Self = StObject.set(x, "IncludedPaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedPaths(value: js.Array[ExcludedPath]): Self = this.set("ExcludedPaths", value.asInstanceOf[js.Any])
+    def setIncludedPathsVarargs(value: IncludedPath*): Self = StObject.set(x, "IncludedPaths", js.Array(value :_*))
     
     @scala.inline
-    def setIncludedPathsVarargs(value: IncludedPath*): Self = this.set("IncludedPaths", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludedPaths(value: js.Array[IncludedPath]): Self = this.set("IncludedPaths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAutomatic(value: Boolean): Self = this.set("automatic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndexingMode(value: IndexingMode): Self = this.set("indexingMode", value.asInstanceOf[js.Any])
+    def setIndexingMode(value: IndexingMode): Self = StObject.set(x, "indexingMode", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/_Endpoint", JSImport.Namespace)
-@js.native
-object endpointMod extends js.Object {
+object endpointMod {
   
-  @JSName("_Endpoint")
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/_Endpoint", "_Endpoint")
+  @js.native
   val Endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.giphyApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Giphy extends js.Object {
+trait Giphy extends StObject {
   
   def id(ids: String): js.Promise[MultiResponse] = js.native
   def id(ids: String, cb: Callback[MultiResponse]): Unit = js.native

@@ -8,12 +8,13 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.fsMod.Stats
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserSyncInstance extends js.Object {
+trait BrowserSyncInstance extends StObject {
   
   /**
     * A simple true/false flag that you can use to determine if there's a currently-running Browsersync instance.

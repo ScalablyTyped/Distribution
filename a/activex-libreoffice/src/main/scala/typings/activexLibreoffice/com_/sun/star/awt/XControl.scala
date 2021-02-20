@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,60 +101,48 @@ object XControl {
   }
   
   @scala.inline
-  implicit class XControlOps[Self <: XControl] (val x: Self) extends AnyVal {
+  implicit class XControlMutableBuilder[Self <: XControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatePeer(value: (XToolkit, XWindowPeer) => Unit): Self = StObject.set(x, "createPeer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContext(value: () => XInterface): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContext(value: XInterface): Self = this.set("Context", value.asInstanceOf[js.Any])
+    def setGetModel(value: () => XControlModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setModel(value: XControlModel): Self = this.set("Model", value.asInstanceOf[js.Any])
+    def setGetPeer(value: () => XWindowPeer): Self = StObject.set(x, "getPeer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPeer(value: XWindowPeer): Self = this.set("Peer", value.asInstanceOf[js.Any])
+    def setGetView(value: () => XView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setView(value: XView): Self = this.set("View", value.asInstanceOf[js.Any])
+    def setIsDesignMode(value: () => Boolean): Self = StObject.set(x, "isDesignMode", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreatePeer(value: (XToolkit, XWindowPeer) => Unit): Self = this.set("createPeer", js.Any.fromFunction2(value))
+    def setIsTransparent(value: () => Boolean): Self = StObject.set(x, "isTransparent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetContext(value: () => XInterface): Self = this.set("getContext", js.Any.fromFunction0(value))
+    def setModel(value: XControlModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetModel(value: () => XControlModel): Self = this.set("getModel", js.Any.fromFunction0(value))
+    def setPeer(value: XWindowPeer): Self = StObject.set(x, "Peer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPeer(value: () => XWindowPeer): Self = this.set("getPeer", js.Any.fromFunction0(value))
+    def setSetContext(value: XInterface => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetView(value: () => XView): Self = this.set("getView", js.Any.fromFunction0(value))
+    def setSetDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setDesignMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsDesignMode(value: () => Boolean): Self = this.set("isDesignMode", js.Any.fromFunction0(value))
+    def setSetModel(value: XControlModel => Boolean): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsTransparent(value: () => Boolean): Self = this.set("isTransparent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetContext(value: XInterface => Unit): Self = this.set("setContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDesignMode(value: Boolean => Unit): Self = this.set("setDesignMode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetModel(value: XControlModel => Boolean): Self = this.set("setModel", js.Any.fromFunction1(value))
+    def setView(value: XView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }
 }

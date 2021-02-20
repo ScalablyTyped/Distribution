@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Activity extends js.Object {
+trait Activity extends StObject {
   
   /**
     * The settings for a custom message activity. This type of activity calls an AWS Lambda function or web hook that sends messages to participants.
@@ -66,78 +67,66 @@ object Activity {
   }
   
   @scala.inline
-  implicit class ActivityOps[Self <: Activity] (val x: Self) extends AnyVal {
+  implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCUSTOM(value: CustomMessageActivity): Self = StObject.set(x, "CUSTOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCUSTOMUndefined: Self = StObject.set(x, "CUSTOM", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionalSplit(value: ConditionalSplitActivity): Self = StObject.set(x, "ConditionalSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCUSTOM(value: CustomMessageActivity): Self = this.set("CUSTOM", value.asInstanceOf[js.Any])
+    def setConditionalSplitUndefined: Self = StObject.set(x, "ConditionalSplit", js.undefined)
     
     @scala.inline
-    def deleteCUSTOM: Self = this.set("CUSTOM", js.undefined)
+    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionalSplit(value: ConditionalSplitActivity): Self = this.set("ConditionalSplit", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteConditionalSplit: Self = this.set("ConditionalSplit", js.undefined)
+    def setEMAIL(value: EmailMessageActivity): Self = StObject.set(x, "EMAIL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEMAILUndefined: Self = StObject.set(x, "EMAIL", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setHoldout(value: HoldoutActivity): Self = StObject.set(x, "Holdout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEMAIL(value: EmailMessageActivity): Self = this.set("EMAIL", value.asInstanceOf[js.Any])
+    def setHoldoutUndefined: Self = StObject.set(x, "Holdout", js.undefined)
     
     @scala.inline
-    def deleteEMAIL: Self = this.set("EMAIL", js.undefined)
+    def setMultiCondition(value: MultiConditionalSplitActivity): Self = StObject.set(x, "MultiCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldout(value: HoldoutActivity): Self = this.set("Holdout", value.asInstanceOf[js.Any])
+    def setMultiConditionUndefined: Self = StObject.set(x, "MultiCondition", js.undefined)
     
     @scala.inline
-    def deleteHoldout: Self = this.set("Holdout", js.undefined)
+    def setPUSH(value: PushMessageActivity): Self = StObject.set(x, "PUSH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiCondition(value: MultiConditionalSplitActivity): Self = this.set("MultiCondition", value.asInstanceOf[js.Any])
+    def setPUSHUndefined: Self = StObject.set(x, "PUSH", js.undefined)
     
     @scala.inline
-    def deleteMultiCondition: Self = this.set("MultiCondition", js.undefined)
+    def setRandomSplit(value: RandomSplitActivity): Self = StObject.set(x, "RandomSplit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPUSH(value: PushMessageActivity): Self = this.set("PUSH", value.asInstanceOf[js.Any])
+    def setRandomSplitUndefined: Self = StObject.set(x, "RandomSplit", js.undefined)
     
     @scala.inline
-    def deletePUSH: Self = this.set("PUSH", js.undefined)
+    def setSMS(value: SMSMessageActivity): Self = StObject.set(x, "SMS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandomSplit(value: RandomSplitActivity): Self = this.set("RandomSplit", value.asInstanceOf[js.Any])
+    def setSMSUndefined: Self = StObject.set(x, "SMS", js.undefined)
     
     @scala.inline
-    def deleteRandomSplit: Self = this.set("RandomSplit", js.undefined)
+    def setWait(value: WaitActivity): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMS(value: SMSMessageActivity): Self = this.set("SMS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMS: Self = this.set("SMS", js.undefined)
-    
-    @scala.inline
-    def setWait(value: WaitActivity): Self = this.set("Wait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait: Self = this.set("Wait", js.undefined)
+    def setWaitUndefined: Self = StObject.set(x, "Wait", js.undefined)
   }
 }

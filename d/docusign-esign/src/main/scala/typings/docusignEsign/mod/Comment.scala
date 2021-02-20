@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   /**
     * The Guid of the envelope the comment thread belongs to.
@@ -127,150 +128,138 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHmac(value: String): Self = StObject.set(x, "hmac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvelopeId(value: String): Self = this.set("envelopeId", value.asInstanceOf[js.Any])
+    def setHmacUndefined: Self = StObject.set(x, "hmac", js.undefined)
     
     @scala.inline
-    def deleteEnvelopeId: Self = this.set("envelopeId", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHmac(value: String): Self = this.set("hmac", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHmac: Self = this.set("hmac", js.undefined)
+    def setMentions(value: js.Array[String]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMentionsVarargs(value: String*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
     @scala.inline
-    def setMentionsVarargs(value: String*): Self = this.set("mentions", js.Array(value :_*))
+    def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMentions(value: js.Array[String]): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deleteMentions: Self = this.set("mentions", js.undefined)
+    def setSentByEmail(value: String): Self = StObject.set(x, "sentByEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
+    def setSentByEmailUndefined: Self = StObject.set(x, "sentByEmail", js.undefined)
     
     @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
+    def setSentByFullName(value: String): Self = StObject.set(x, "sentByFullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentByEmail(value: String): Self = this.set("sentByEmail", value.asInstanceOf[js.Any])
+    def setSentByFullNameUndefined: Self = StObject.set(x, "sentByFullName", js.undefined)
     
     @scala.inline
-    def deleteSentByEmail: Self = this.set("sentByEmail", js.undefined)
+    def setSentByImageId(value: String): Self = StObject.set(x, "sentByImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentByFullName(value: String): Self = this.set("sentByFullName", value.asInstanceOf[js.Any])
+    def setSentByImageIdUndefined: Self = StObject.set(x, "sentByImageId", js.undefined)
     
     @scala.inline
-    def deleteSentByFullName: Self = this.set("sentByFullName", js.undefined)
+    def setSentByInitials(value: String): Self = StObject.set(x, "sentByInitials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentByImageId(value: String): Self = this.set("sentByImageId", value.asInstanceOf[js.Any])
+    def setSentByInitialsUndefined: Self = StObject.set(x, "sentByInitials", js.undefined)
     
     @scala.inline
-    def deleteSentByImageId: Self = this.set("sentByImageId", js.undefined)
+    def setSentByRecipientId(value: String): Self = StObject.set(x, "sentByRecipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentByInitials(value: String): Self = this.set("sentByInitials", value.asInstanceOf[js.Any])
+    def setSentByRecipientIdUndefined: Self = StObject.set(x, "sentByRecipientId", js.undefined)
     
     @scala.inline
-    def deleteSentByInitials: Self = this.set("sentByInitials", js.undefined)
+    def setSentByUserId(value: String): Self = StObject.set(x, "sentByUserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentByRecipientId(value: String): Self = this.set("sentByRecipientId", value.asInstanceOf[js.Any])
+    def setSentByUserIdUndefined: Self = StObject.set(x, "sentByUserId", js.undefined)
     
     @scala.inline
-    def deleteSentByRecipientId: Self = this.set("sentByRecipientId", js.undefined)
+    def setSigningGroupId(value: String): Self = StObject.set(x, "signingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentByUserId(value: String): Self = this.set("sentByUserId", value.asInstanceOf[js.Any])
+    def setSigningGroupIdUndefined: Self = StObject.set(x, "signingGroupId", js.undefined)
     
     @scala.inline
-    def deleteSentByUserId: Self = this.set("sentByUserId", js.undefined)
+    def setSigningGroupName(value: String): Self = StObject.set(x, "signingGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningGroupId(value: String): Self = this.set("signingGroupId", value.asInstanceOf[js.Any])
+    def setSigningGroupNameUndefined: Self = StObject.set(x, "signingGroupName", js.undefined)
     
     @scala.inline
-    def deleteSigningGroupId: Self = this.set("signingGroupId", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningGroupName(value: String): Self = this.set("signingGroupName", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     @scala.inline
-    def deleteSigningGroupName: Self = this.set("signingGroupName", js.undefined)
+    def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
     
     @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabId(value: String): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTabId: Self = this.set("tabId", js.undefined)
+    def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setThreadOriginatorId(value: String): Self = StObject.set(x, "threadOriginatorId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadId(value: String): Self = this.set("threadId", value.asInstanceOf[js.Any])
+    def setThreadOriginatorIdUndefined: Self = StObject.set(x, "threadOriginatorId", js.undefined)
     
     @scala.inline
-    def deleteThreadId: Self = this.set("threadId", js.undefined)
+    def setTimeStampFormatted(value: String): Self = StObject.set(x, "timeStampFormatted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadOriginatorId(value: String): Self = this.set("threadOriginatorId", value.asInstanceOf[js.Any])
+    def setTimeStampFormattedUndefined: Self = StObject.set(x, "timeStampFormatted", js.undefined)
     
     @scala.inline
-    def deleteThreadOriginatorId: Self = this.set("threadOriginatorId", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStampFormatted(value: String): Self = this.set("timeStampFormatted", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteTimeStampFormatted: Self = this.set("timeStampFormatted", js.undefined)
+    def setVisibleTo(value: js.Array[String]): Self = StObject.set(x, "visibleTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setVisibleToUndefined: Self = StObject.set(x, "visibleTo", js.undefined)
     
     @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setVisibleToVarargs(value: String*): Self = this.set("visibleTo", js.Array(value :_*))
-    
-    @scala.inline
-    def setVisibleTo(value: js.Array[String]): Self = this.set("visibleTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleTo: Self = this.set("visibleTo", js.undefined)
+    def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value :_*))
   }
 }

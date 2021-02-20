@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatOptions extends js.Object {
+trait ChatOptions extends StObject {
   
   var actionClick: js.UndefOr[js.Function1[/* e */ ChatActionClickEvent, Unit]] = js.native
   
@@ -32,66 +33,54 @@ object ChatOptions {
   }
   
   @scala.inline
-  implicit class ChatOptionsOps[Self <: ChatOptions] (val x: Self) extends AnyVal {
+  implicit class ChatOptionsMutableBuilder[Self <: ChatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionClick(value: /* e */ ChatActionClickEvent => Unit): Self = StObject.set(x, "actionClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionClickUndefined: Self = StObject.set(x, "actionClick", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessages(value: ChatMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionClick(value: /* e */ ChatActionClickEvent => Unit): Self = this.set("actionClick", js.Any.fromFunction1(value))
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteActionClick: Self = this.set("actionClick", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: ChatMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setPost(value: /* e */ ChatPostEvent => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSendMessage(value: /* e */ ChatSendMessageEvent => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPost(value: /* e */ ChatPostEvent => Unit): Self = this.set("post", js.Any.fromFunction1(value))
+    def setSendMessageUndefined: Self = StObject.set(x, "sendMessage", js.undefined)
     
     @scala.inline
-    def deletePost: Self = this.set("post", js.undefined)
+    def setTypingEnd(value: /* e */ ChatTypingEndEvent => Unit): Self = StObject.set(x, "typingEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSendMessage(value: /* e */ ChatSendMessageEvent => Unit): Self = this.set("sendMessage", js.Any.fromFunction1(value))
+    def setTypingEndUndefined: Self = StObject.set(x, "typingEnd", js.undefined)
     
     @scala.inline
-    def deleteSendMessage: Self = this.set("sendMessage", js.undefined)
+    def setTypingStart(value: /* e */ ChatTypingStartEvent => Unit): Self = StObject.set(x, "typingStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTypingEnd(value: /* e */ ChatTypingEndEvent => Unit): Self = this.set("typingEnd", js.Any.fromFunction1(value))
+    def setTypingStartUndefined: Self = StObject.set(x, "typingStart", js.undefined)
     
     @scala.inline
-    def deleteTypingEnd: Self = this.set("typingEnd", js.undefined)
+    def setUser(value: ChatUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypingStart(value: /* e */ ChatTypingStartEvent => Unit): Self = this.set("typingStart", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteTypingStart: Self = this.set("typingStart", js.undefined)
-    
-    @scala.inline
-    def setUser(value: ChatUser): Self = this.set("user", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("user", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

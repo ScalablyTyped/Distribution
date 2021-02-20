@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashboardValidationMessage extends js.Object {
+trait DashboardValidationMessage extends StObject {
   
   /**
     * The data path related to the message.
@@ -26,30 +27,18 @@ object DashboardValidationMessage {
   }
   
   @scala.inline
-  implicit class DashboardValidationMessageOps[Self <: DashboardValidationMessage] (val x: Self) extends AnyVal {
+  implicit class DashboardValidationMessageMutableBuilder[Self <: DashboardValidationMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataPath(value: DataPath): Self = StObject.set(x, "DataPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataPathUndefined: Self = StObject.set(x, "DataPath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataPath(value: DataPath): Self = this.set("DataPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataPath: Self = this.set("DataPath", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("Message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

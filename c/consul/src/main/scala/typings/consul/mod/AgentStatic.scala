@@ -3,6 +3,7 @@ package typings.consul.mod
 import org.scalablytyped.runtime.Instantiable1
 import typings.consul.mod.Agent.CheckStatic
 import typings.consul.mod.Agent.ServiceStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

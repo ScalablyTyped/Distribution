@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.androiddeviceprovisioning
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomerListDpcsResponse extends js.Object {
+trait CustomerListDpcsResponse extends StObject {
   
   /** The list of DPCs available to the customer that support zero-touch enrollment. */
   var dpcs: js.UndefOr[js.Array[Dpc]] = js.native
@@ -19,27 +20,15 @@ object CustomerListDpcsResponse {
   }
   
   @scala.inline
-  implicit class CustomerListDpcsResponseOps[Self <: CustomerListDpcsResponse] (val x: Self) extends AnyVal {
+  implicit class CustomerListDpcsResponseMutableBuilder[Self <: CustomerListDpcsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDpcs(value: js.Array[Dpc]): Self = StObject.set(x, "dpcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDpcsUndefined: Self = StObject.set(x, "dpcs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDpcsVarargs(value: Dpc*): Self = this.set("dpcs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDpcs(value: js.Array[Dpc]): Self = this.set("dpcs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDpcs: Self = this.set("dpcs", js.undefined)
+    def setDpcsVarargs(value: Dpc*): Self = StObject.set(x, "dpcs", js.Array(value :_*))
   }
 }

@@ -4,12 +4,13 @@ import typings.hapiHapi.mod.Lifecycle.FailAction
 import typings.hapiHapi.mod.Lifecycle.Method
 import typings.hapiHapi.mod.Lifecycle.ReturnValue
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsPreObject extends js.Object {
+trait RouteOptionsPreObject extends StObject {
   
   /**
     * key name used to assign the response of the method to in request.pre and request.preResponses.

@@ -1,5 +1,6 @@
 package typings.googleapis.resellerV1Mod.resellerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for subscription seats.
   */
 @js.native
-trait SchemaSeats extends js.Object {
+trait SchemaSeats extends StObject {
   
   /**
     * Identifies the resource as a subscription seat setting. Value:
@@ -55,42 +56,30 @@ object SchemaSeats {
   }
   
   @scala.inline
-  implicit class SchemaSeatsOps[Self <: SchemaSeats] (val x: Self) extends AnyVal {
+  implicit class SchemaSeatsMutableBuilder[Self <: SchemaSeats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLicensedNumberOfSeats(value: Double): Self = StObject.set(x, "licensedNumberOfSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLicensedNumberOfSeatsUndefined: Self = StObject.set(x, "licensedNumberOfSeats", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMaximumNumberOfSeats(value: Double): Self = StObject.set(x, "maximumNumberOfSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLicensedNumberOfSeats(value: Double): Self = this.set("licensedNumberOfSeats", value.asInstanceOf[js.Any])
+    def setMaximumNumberOfSeatsUndefined: Self = StObject.set(x, "maximumNumberOfSeats", js.undefined)
     
     @scala.inline
-    def deleteLicensedNumberOfSeats: Self = this.set("licensedNumberOfSeats", js.undefined)
+    def setNumberOfSeats(value: Double): Self = StObject.set(x, "numberOfSeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumNumberOfSeats(value: Double): Self = this.set("maximumNumberOfSeats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumNumberOfSeats: Self = this.set("maximumNumberOfSeats", js.undefined)
-    
-    @scala.inline
-    def setNumberOfSeats(value: Double): Self = this.set("numberOfSeats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfSeats: Self = this.set("numberOfSeats", js.undefined)
+    def setNumberOfSeatsUndefined: Self = StObject.set(x, "numberOfSeats", js.undefined)
   }
 }

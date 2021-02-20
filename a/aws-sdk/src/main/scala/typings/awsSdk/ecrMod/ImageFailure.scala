@@ -1,11 +1,12 @@
 package typings.awsSdk.ecrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageFailure extends js.Object {
+trait ImageFailure extends StObject {
   
   /**
     * The code associated with the failure.
@@ -31,36 +32,24 @@ object ImageFailure {
   }
   
   @scala.inline
-  implicit class ImageFailureOps[Self <: ImageFailure] (val x: Self) extends AnyVal {
+  implicit class ImageFailureMutableBuilder[Self <: ImageFailure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureCode(value: ImageFailureCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReason(value: ImageFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: ImageFailureCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: ImageFailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
-    
-    @scala.inline
-    def setImageId(value: ImageIdentifier): Self = this.set("imageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageId: Self = this.set("imageId", js.undefined)
+    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
   }
 }

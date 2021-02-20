@@ -1,15 +1,16 @@
 package typings.pdfjsDist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextContentItem extends js.Object {
+trait TextContentItem extends StObject {
   
   var dir: String = js.native
   
-   // Left-to-right (ltr), etc
+  // Left-to-right (ltr), etc
   var fontName: String = js.native
   
   var height: Double = js.native
@@ -18,7 +19,7 @@ trait TextContentItem extends js.Object {
   
   var transform: js.Array[Double] = js.native
   
-   // [0..5]   4=x, 5=y
+  // [0..5]   4=x, 5=y
   var width: Double = js.native
 }
 object TextContentItem {
@@ -37,39 +38,27 @@ object TextContentItem {
   }
   
   @scala.inline
-  implicit class TextContentItemOps[Self <: TextContentItem] (val x: Self) extends AnyVal {
+  implicit class TextContentItemMutableBuilder[Self <: TextContentItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
     @scala.inline
-    def setStr(value: String): Self = this.set("str", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformVarargs(value: Double*): Self = this.set("transform", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransform(value: js.Array[Double]): Self = this.set("transform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

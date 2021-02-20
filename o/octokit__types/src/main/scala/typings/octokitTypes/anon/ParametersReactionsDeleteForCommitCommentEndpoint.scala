@@ -3,12 +3,13 @@ package typings.octokitTypes.anon
 import typings.octokitTypes.endpointsMod.ReactionsDeleteForCommitCommentEndpoint
 import typings.octokitTypes.endpointsMod.ReactionsDeleteForCommitCommentRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReactionsDeleteForCommitCommentEndpoint extends js.Object {
+trait ParametersReactionsDeleteForCommitCommentEndpoint extends StObject {
   
   var parameters: ReactionsDeleteForCommitCommentEndpoint = js.native
   
@@ -29,27 +30,15 @@ object ParametersReactionsDeleteForCommitCommentEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReactionsDeleteForCommitCommentEndpointOps[Self <: ParametersReactionsDeleteForCommitCommentEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReactionsDeleteForCommitCommentEndpointMutableBuilder[Self <: ParametersReactionsDeleteForCommitCommentEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReactionsDeleteForCommitCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ReactionsDeleteForCommitCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReactionsDeleteForCommitCommentEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ReactionsDeleteForCommitCommentRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -4,12 +4,13 @@ import typings.amapJsSdk.AMap.CircleOptions
 import typings.amapJsSdk.AMap.MarkerOptions
 import typings.amapJsSdk.AMap.Pixel
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ButtonDom extends js.Object {
+trait ButtonDom extends StObject {
   
   var buttonDom: js.UndefOr[String | HTMLElement] = js.native
   
@@ -52,114 +53,102 @@ object ButtonDom {
   }
   
   @scala.inline
-  implicit class ButtonDomOps[Self <: ButtonDom] (val x: Self) extends AnyVal {
+  implicit class ButtonDomMutableBuilder[Self <: ButtonDom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonDom(value: String | HTMLElement): Self = StObject.set(x, "buttonDom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonDomUndefined: Self = StObject.set(x, "buttonDom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setButtonOffset(value: Pixel): Self = StObject.set(x, "buttonOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonDom(value: String | HTMLElement): Self = this.set("buttonDom", value.asInstanceOf[js.Any])
+    def setButtonOffsetUndefined: Self = StObject.set(x, "buttonOffset", js.undefined)
     
     @scala.inline
-    def deleteButtonDom: Self = this.set("buttonDom", js.undefined)
+    def setButtonPosition(value: String): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonOffset(value: Pixel): Self = this.set("buttonOffset", value.asInstanceOf[js.Any])
+    def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
     
     @scala.inline
-    def deleteButtonOffset: Self = this.set("buttonOffset", js.undefined)
+    def setCircleOptions(value: CircleOptions): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonPosition(value: String): Self = this.set("buttonPosition", value.asInstanceOf[js.Any])
+    def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
     
     @scala.inline
-    def deleteButtonPosition: Self = this.set("buttonPosition", js.undefined)
+    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircleOptions(value: CircleOptions): Self = this.set("circleOptions", value.asInstanceOf[js.Any])
+    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
     @scala.inline
-    def deleteCircleOptions: Self = this.set("circleOptions", js.undefined)
+    def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConvert(value: Boolean): Self = this.set("convert", value.asInstanceOf[js.Any])
+    def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
     
     @scala.inline
-    def deleteConvert: Self = this.set("convert", js.undefined)
+    def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableHighAccuracy(value: Boolean): Self = this.set("enableHighAccuracy", value.asInstanceOf[js.Any])
+    def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
     
     @scala.inline
-    def deleteEnableHighAccuracy: Self = this.set("enableHighAccuracy", js.undefined)
+    def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerOptions(value: MarkerOptions): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
     
     @scala.inline
-    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    def setNoIpLocate(value: Boolean): Self = StObject.set(x, "noIpLocate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumAge(value: Double): Self = this.set("maximumAge", value.asInstanceOf[js.Any])
+    def setNoIpLocateUndefined: Self = StObject.set(x, "noIpLocate", js.undefined)
     
     @scala.inline
-    def deleteMaximumAge: Self = this.set("maximumAge", js.undefined)
+    def setPanToLocation(value: Boolean): Self = StObject.set(x, "panToLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoIpLocate(value: Boolean): Self = this.set("noIpLocate", value.asInstanceOf[js.Any])
+    def setPanToLocationUndefined: Self = StObject.set(x, "panToLocation", js.undefined)
     
     @scala.inline
-    def deleteNoIpLocate: Self = this.set("noIpLocate", js.undefined)
+    def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanToLocation(value: Boolean): Self = this.set("panToLocation", value.asInstanceOf[js.Any])
+    def setShowButtonUndefined: Self = StObject.set(x, "showButton", js.undefined)
     
     @scala.inline
-    def deletePanToLocation: Self = this.set("panToLocation", js.undefined)
+    def setShowCircle(value: Boolean): Self = StObject.set(x, "showCircle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowButton(value: Boolean): Self = this.set("showButton", value.asInstanceOf[js.Any])
+    def setShowCircleUndefined: Self = StObject.set(x, "showCircle", js.undefined)
     
     @scala.inline
-    def deleteShowButton: Self = this.set("showButton", js.undefined)
+    def setShowMarker(value: Boolean): Self = StObject.set(x, "showMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowCircle(value: Boolean): Self = this.set("showCircle", value.asInstanceOf[js.Any])
+    def setShowMarkerUndefined: Self = StObject.set(x, "showMarker", js.undefined)
     
     @scala.inline
-    def deleteShowCircle: Self = this.set("showCircle", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMarker(value: Boolean): Self = this.set("showMarker", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deleteShowMarker: Self = this.set("showMarker", js.undefined)
+    def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setZoomToAccuracy(value: Boolean): Self = StObject.set(x, "zoomToAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNative(value: Boolean): Self = this.set("useNative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNative: Self = this.set("useNative", js.undefined)
-    
-    @scala.inline
-    def setZoomToAccuracy(value: Boolean): Self = this.set("zoomToAccuracy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomToAccuracy: Self = this.set("zoomToAccuracy", js.undefined)
+    def setZoomToAccuracyUndefined: Self = StObject.set(x, "zoomToAccuracy", js.undefined)
   }
 }

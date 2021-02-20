@@ -6,25 +6,24 @@ import typings.pulumiPulumi.pulumiPulumiStrings.urn
 import typings.pulumiPulumi.resourceMod.Resource
 import typings.std.Array
 import typings.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/queryable", JSImport.Namespace)
-@js.native
-object queryableMod extends js.Object {
+object queryableMod {
   
   @js.native
-  trait ModifyOptionalProperties[T] extends js.Object
-  
-  @js.native
-  trait ResolvedArray[T] extends Array[Resolved[T]]
+  trait ModifyOptionalProperties[T] extends StObject
   
   type OptionalKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? P : never}[keyof T] */ js.Any
   
   type RequiredKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: undefined extends T[P]? never : P}[keyof T] */ js.Any
   
   type Resolved[T] = ResolvedSimple[js.Any | T]
+  
+  @js.native
+  trait ResolvedArray[T] extends Array[Resolved[T]]
   
   type ResolvedObject[T] = ModifyOptionalProperties[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 

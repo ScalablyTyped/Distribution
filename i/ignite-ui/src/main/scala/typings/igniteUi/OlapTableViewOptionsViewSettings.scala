@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,42 +48,30 @@ object OlapTableViewOptionsViewSettings {
   }
   
   @scala.inline
-  implicit class OlapTableViewOptionsViewSettingsOps[Self <: OlapTableViewOptionsViewSettings] (val x: Self) extends AnyVal {
+  implicit class OlapTableViewOptionsViewSettingsMutableBuilder[Self <: OlapTableViewOptionsViewSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompactColumnHeaders(value: Boolean): Self = StObject.set(x, "compactColumnHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompactColumnHeadersUndefined: Self = StObject.set(x, "compactColumnHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompactRowHeaders(value: Boolean): Self = StObject.set(x, "compactRowHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactColumnHeaders(value: Boolean): Self = this.set("compactColumnHeaders", value.asInstanceOf[js.Any])
+    def setCompactRowHeadersUndefined: Self = StObject.set(x, "compactRowHeaders", js.undefined)
     
     @scala.inline
-    def deleteCompactColumnHeaders: Self = this.set("compactColumnHeaders", js.undefined)
+    def setIsParentInFrontForColumns(value: Boolean): Self = StObject.set(x, "isParentInFrontForColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactRowHeaders(value: Boolean): Self = this.set("compactRowHeaders", value.asInstanceOf[js.Any])
+    def setIsParentInFrontForColumnsUndefined: Self = StObject.set(x, "isParentInFrontForColumns", js.undefined)
     
     @scala.inline
-    def deleteCompactRowHeaders: Self = this.set("compactRowHeaders", js.undefined)
+    def setIsParentInFrontForRows(value: Boolean): Self = StObject.set(x, "isParentInFrontForRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsParentInFrontForColumns(value: Boolean): Self = this.set("isParentInFrontForColumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsParentInFrontForColumns: Self = this.set("isParentInFrontForColumns", js.undefined)
-    
-    @scala.inline
-    def setIsParentInFrontForRows(value: Boolean): Self = this.set("isParentInFrontForRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsParentInFrontForRows: Self = this.set("isParentInFrontForRows", js.undefined)
+    def setIsParentInFrontForRowsUndefined: Self = StObject.set(x, "isParentInFrontForRows", js.undefined)
   }
 }

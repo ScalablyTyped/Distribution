@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalGatewayVirtualInterface extends js.Object {
+trait LocalGatewayVirtualInterface extends StObject {
   
   /**
     * The local address.
@@ -61,75 +62,63 @@ object LocalGatewayVirtualInterface {
   }
   
   @scala.inline
-  implicit class LocalGatewayVirtualInterfaceOps[Self <: LocalGatewayVirtualInterface] (val x: Self) extends AnyVal {
+  implicit class LocalGatewayVirtualInterfaceMutableBuilder[Self <: LocalGatewayVirtualInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalAddress(value: String): Self = StObject.set(x, "LocalAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalAddressUndefined: Self = StObject.set(x, "LocalAddress", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalBgpAsn(value: Integer): Self = StObject.set(x, "LocalBgpAsn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: String): Self = this.set("LocalAddress", value.asInstanceOf[js.Any])
+    def setLocalBgpAsnUndefined: Self = StObject.set(x, "LocalBgpAsn", js.undefined)
     
     @scala.inline
-    def deleteLocalAddress: Self = this.set("LocalAddress", js.undefined)
+    def setLocalGatewayId(value: String): Self = StObject.set(x, "LocalGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalBgpAsn(value: Integer): Self = this.set("LocalBgpAsn", value.asInstanceOf[js.Any])
+    def setLocalGatewayIdUndefined: Self = StObject.set(x, "LocalGatewayId", js.undefined)
     
     @scala.inline
-    def deleteLocalBgpAsn: Self = this.set("LocalBgpAsn", js.undefined)
+    def setLocalGatewayVirtualInterfaceId(value: LocalGatewayVirtualInterfaceId): Self = StObject.set(x, "LocalGatewayVirtualInterfaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalGatewayId(value: String): Self = this.set("LocalGatewayId", value.asInstanceOf[js.Any])
+    def setLocalGatewayVirtualInterfaceIdUndefined: Self = StObject.set(x, "LocalGatewayVirtualInterfaceId", js.undefined)
     
     @scala.inline
-    def deleteLocalGatewayId: Self = this.set("LocalGatewayId", js.undefined)
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalGatewayVirtualInterfaceId(value: LocalGatewayVirtualInterfaceId): Self = this.set("LocalGatewayVirtualInterfaceId", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteLocalGatewayVirtualInterfaceId: Self = this.set("LocalGatewayVirtualInterfaceId", js.undefined)
+    def setPeerAddress(value: String): Self = StObject.set(x, "PeerAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setPeerAddressUndefined: Self = StObject.set(x, "PeerAddress", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setPeerBgpAsn(value: Integer): Self = StObject.set(x, "PeerBgpAsn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerAddress(value: String): Self = this.set("PeerAddress", value.asInstanceOf[js.Any])
+    def setPeerBgpAsnUndefined: Self = StObject.set(x, "PeerBgpAsn", js.undefined)
     
     @scala.inline
-    def deletePeerAddress: Self = this.set("PeerAddress", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerBgpAsn(value: Integer): Self = this.set("PeerBgpAsn", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deletePeerBgpAsn: Self = this.set("PeerBgpAsn", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVlan(value: Integer): Self = StObject.set(x, "Vlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVlan(value: Integer): Self = this.set("Vlan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVlan: Self = this.set("Vlan", js.undefined)
+    def setVlanUndefined: Self = StObject.set(x, "Vlan", js.undefined)
   }
 }

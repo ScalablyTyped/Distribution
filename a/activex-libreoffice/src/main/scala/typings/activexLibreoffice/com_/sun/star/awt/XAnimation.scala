@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.awt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.4
   */
 @js.native
-trait XAnimation extends js.Object {
+trait XAnimation extends StObject {
   
   /** determines whether the animation is currently running */
   def isAnimationRunning(): Boolean = js.native
@@ -29,27 +30,15 @@ object XAnimation {
   }
   
   @scala.inline
-  implicit class XAnimationOps[Self <: XAnimation] (val x: Self) extends AnyVal {
+  implicit class XAnimationMutableBuilder[Self <: XAnimation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAnimationRunning(value: () => Boolean): Self = StObject.set(x, "isAnimationRunning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartAnimation(value: () => Unit): Self = StObject.set(x, "startAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsAnimationRunning(value: () => Boolean): Self = this.set("isAnimationRunning", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartAnimation(value: () => Unit): Self = this.set("startAnimation", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopAnimation(value: () => Unit): Self = this.set("stopAnimation", js.Any.fromFunction0(value))
+    def setStopAnimation(value: () => Unit): Self = StObject.set(x, "stopAnimation", js.Any.fromFunction0(value))
   }
 }

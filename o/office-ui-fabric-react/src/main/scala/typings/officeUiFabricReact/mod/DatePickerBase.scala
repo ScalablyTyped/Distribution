@@ -1,6 +1,7 @@
 package typings.officeUiFabricReact.mod
 
 import typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ class DatePickerBase protected ()
   def this(props: IDatePickerProps) = this()
 }
 /* static members */
-@JSImport("office-ui-fabric-react", "DatePickerBase")
-@js.native
-object DatePickerBase extends js.Object {
+object DatePickerBase {
   
-  var defaultProps: IDatePickerProps = js.native
+  @JSImport("office-ui-fabric-react", "DatePickerBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "DatePickerBase.defaultProps")
+  @js.native
+  def defaultProps: IDatePickerProps = js.native
+  @scala.inline
+  def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

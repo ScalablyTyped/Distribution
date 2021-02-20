@@ -1,11 +1,12 @@
 package typings.nodeForge.mod.pki
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CAStore extends js.Object {
+trait CAStore extends StObject {
   
   def addCertificate(cert: String): Unit = js.native
   def addCertificate(cert: Certificate): Unit = js.native

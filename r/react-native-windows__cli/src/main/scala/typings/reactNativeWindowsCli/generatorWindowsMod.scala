@@ -2,14 +2,15 @@ package typings.reactNativeWindowsCli
 
 import typings.reactNativeWindowsCli.anon.Verbose
 import typings.reactNativeWindowsCli.mod.GenerateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-native-windows/cli/lib-commonjs/generator-windows", JSImport.Namespace)
-@js.native
-object generatorWindowsMod extends js.Object {
+object generatorWindowsMod {
   
+  @JSImport("@react-native-windows/cli/lib-commonjs/generator-windows", "copyProjectTemplateAndReplace")
+  @js.native
   def copyProjectTemplateAndReplace(
     srcRootPath: String,
     destPath: String,
@@ -18,5 +19,7 @@ object generatorWindowsMod extends js.Object {
     options: GenerateOptions
   ): js.Promise[Unit] = js.native
   
+  @JSImport("@react-native-windows/cli/lib-commonjs/generator-windows", "installDependencies")
+  @js.native
   def installDependencies(options: Verbose): Unit = js.native
 }

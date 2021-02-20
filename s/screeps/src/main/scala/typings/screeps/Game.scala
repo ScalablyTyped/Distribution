@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The main global game object containing all the gameplay information.
   */
 @js.native
-trait Game extends js.Object {
+trait Game extends StObject {
   
   /**
     * A hash containing all your construction sites with their id as hash keys.

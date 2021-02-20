@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Invoice")
 @js.native
-class Invoice () extends js.Object {
+class Invoice () extends StObject {
   
   /**
     * The timestamp when the invoice was created, in RFC 3339 format.

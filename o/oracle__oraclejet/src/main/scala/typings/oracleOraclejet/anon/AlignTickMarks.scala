@@ -11,12 +11,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.start
 import typings.oracleOraclejet.oracleOraclejetStrings.top
 import typings.oracleOraclejet.oracleOraclejetStrings.zero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlignTickMarks extends js.Object {
+trait AlignTickMarks extends StObject {
   
   var alignTickMarks: off | on = js.native
   
@@ -91,84 +92,72 @@ object AlignTickMarks {
   }
   
   @scala.inline
-  implicit class AlignTickMarksOps[Self <: AlignTickMarks] (val x: Self) extends AnyVal {
+  implicit class AlignTickMarksMutableBuilder[Self <: AlignTickMarks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignTickMarks(value: off | on): Self = StObject.set(x, "alignTickMarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisLine(value: LineColorLineWidth): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaselineScaling(value: min | zero): Self = StObject.set(x, "baselineScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignTickMarks(value: off | on): Self = this.set("alignTickMarks", value.asInstanceOf[js.Any])
+    def setDataMax(value: Double): Self = StObject.set(x, "dataMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisLine(value: LineColorLineWidth): Self = this.set("axisLine", value.asInstanceOf[js.Any])
+    def setDataMin(value: Double): Self = StObject.set(x, "dataMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaselineScaling(value: min | zero): Self = this.set("baselineScaling", value.asInstanceOf[js.Any])
+    def setMajorTick(value: BaselineColor): Self = StObject.set(x, "majorTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMax(value: Double): Self = this.set("dataMax", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMin(value: Double): Self = this.set("dataMin", value.asInstanceOf[js.Any])
+    def setMaxSize(value: String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorTick(value: BaselineColor): Self = this.set("majorTick", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinStep(value: Double): Self = StObject.set(x, "minStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSize(value: String): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    def setMinorStep(value: Double): Self = StObject.set(x, "minorStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinorTick(value: LineStyle): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinStep(value: Double): Self = this.set("minStep", value.asInstanceOf[js.Any])
+    def setPosition(value: start | end | top | bottom | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorStep(value: Double): Self = this.set("minorStep", value.asInstanceOf[js.Any])
+    def setReferenceObjects(value: js.Array[DisplayInLegend]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorTick(value: LineStyle): Self = this.set("minorTick", value.asInstanceOf[js.Any])
+    def setReferenceObjectsVarargs(value: DisplayInLegend*): Self = StObject.set(x, "referenceObjects", js.Array(value :_*))
     
     @scala.inline
-    def setPosition(value: start | end | top | bottom | auto): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setRendered(value: off | on): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceObjectsVarargs(value: DisplayInLegend*): Self = this.set("referenceObjects", js.Array(value :_*))
+    def setScale(value: log | linear): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferenceObjects(value: js.Array[DisplayInLegend]): Self = this.set("referenceObjects", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendered(value: off | on): Self = this.set("rendered", value.asInstanceOf[js.Any])
+    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: log | linear): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setTickLabel(value: Position): Self = StObject.set(x, "tickLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTickLabel(value: Position): Self = this.set("tickLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitleStyle(value: js.Object): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    def setTitleStyle(value: js.Object): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
   }
 }

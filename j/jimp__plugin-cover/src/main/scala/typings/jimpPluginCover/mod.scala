@@ -1,18 +1,19 @@
 package typings.jimpPluginCover
 
 import typings.jimpCore.etcMod.ImageCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/plugin-cover", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@jimp/plugin-cover", JSImport.Default)
+  @js.native
   def default(): Cover = js.native
   
   @js.native
-  trait Cover extends js.Object {
+  trait Cover extends StObject {
     
     def cover(w: Double, h: Double): this.type = js.native
     def cover(w: Double, h: Double, alignBits: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native

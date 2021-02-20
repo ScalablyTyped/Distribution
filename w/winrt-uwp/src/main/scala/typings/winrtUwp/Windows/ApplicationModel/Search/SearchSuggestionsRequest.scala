@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Search
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Stores suggestions and information about the request for suggestions. */
 @js.native
-trait SearchSuggestionsRequest extends js.Object {
+trait SearchSuggestionsRequest extends StObject {
   
   /**
     * Gets an object that lets an app respond to a request for suggestions asynchronously.
@@ -33,27 +34,15 @@ object SearchSuggestionsRequest {
   }
   
   @scala.inline
-  implicit class SearchSuggestionsRequestOps[Self <: SearchSuggestionsRequest] (val x: Self) extends AnyVal {
+  implicit class SearchSuggestionsRequestMutableBuilder[Self <: SearchSuggestionsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDeferral(value: () => SearchSuggestionsRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDeferral(value: () => SearchSuggestionsRequestDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = this.set("isCanceled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSearchSuggestionCollection(value: SearchSuggestionCollection): Self = this.set("searchSuggestionCollection", value.asInstanceOf[js.Any])
+    def setSearchSuggestionCollection(value: SearchSuggestionCollection): Self = StObject.set(x, "searchSuggestionCollection", value.asInstanceOf[js.Any])
   }
 }

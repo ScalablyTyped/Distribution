@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FindParametersProperties extends js.Object {
+trait FindParametersProperties extends StObject {
   
   /**
     * Determines whether to look for an exact match of the search text or not.
@@ -79,78 +80,66 @@ object FindParametersProperties {
   }
   
   @scala.inline
-  implicit class FindParametersPropertiesOps[Self <: FindParametersProperties] (val x: Self) extends AnyVal {
+  implicit class FindParametersPropertiesMutableBuilder[Self <: FindParametersProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: Boolean): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: Boolean): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGdbVersion(value: String): Self = this.set("gdbVersion", value.asInstanceOf[js.Any])
+    def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
     
     @scala.inline
-    def deleteGdbVersion: Self = this.set("gdbVersion", js.undefined)
+    def setLayerIds(value: js.Array[Double]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryPrecision(value: Double): Self = this.set("geometryPrecision", value.asInstanceOf[js.Any])
+    def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
     @scala.inline
-    def deleteGeometryPrecision: Self = this.set("geometryPrecision", js.undefined)
+    def setLayerIdsVarargs(value: Double*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
     
     @scala.inline
-    def setLayerIdsVarargs(value: Double*): Self = this.set("layerIds", js.Array(value :_*))
+    def setMaxAllowableOffset(value: Double): Self = StObject.set(x, "maxAllowableOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerIds(value: js.Array[Double]): Self = this.set("layerIds", value.asInstanceOf[js.Any])
+    def setMaxAllowableOffsetUndefined: Self = StObject.set(x, "maxAllowableOffset", js.undefined)
     
     @scala.inline
-    def deleteLayerIds: Self = this.set("layerIds", js.undefined)
+    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAllowableOffset(value: Double): Self = this.set("maxAllowableOffset", value.asInstanceOf[js.Any])
+    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
     @scala.inline
-    def deleteMaxAllowableOffset: Self = this.set("maxAllowableOffset", js.undefined)
+    def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = this.set("outSpatialReference", value.asInstanceOf[js.Any])
+    def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
     
     @scala.inline
-    def deleteOutSpatialReference: Self = this.set("outSpatialReference", js.undefined)
+    def setSearchFields(value: js.Array[String]): Self = StObject.set(x, "searchFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnGeometry(value: Boolean): Self = this.set("returnGeometry", value.asInstanceOf[js.Any])
+    def setSearchFieldsUndefined: Self = StObject.set(x, "searchFields", js.undefined)
     
     @scala.inline
-    def deleteReturnGeometry: Self = this.set("returnGeometry", js.undefined)
+    def setSearchFieldsVarargs(value: String*): Self = StObject.set(x, "searchFields", js.Array(value :_*))
     
     @scala.inline
-    def setSearchFieldsVarargs(value: String*): Self = this.set("searchFields", js.Array(value :_*))
+    def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchFields(value: js.Array[String]): Self = this.set("searchFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchFields: Self = this.set("searchFields", js.undefined)
-    
-    @scala.inline
-    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
   }
 }

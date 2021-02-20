@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a Google Tag Manager Container.
   */
 @js.native
-trait SchemaContainer extends js.Object {
+trait SchemaContainer extends StObject {
   
   /**
     * GTM Account ID.
@@ -81,93 +82,81 @@ object SchemaContainer {
   }
   
   @scala.inline
-  implicit class SchemaContainerOps[Self <: SchemaContainer] (val x: Self) extends AnyVal {
+  implicit class SchemaContainerMutableBuilder[Self <: SchemaContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setDomainName(value: js.Array[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
     @scala.inline
-    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
     
     @scala.inline
-    def setDomainNameVarargs(value: String*): Self = this.set("domainName", js.Array(value :_*))
+    def setEnabledBuiltInVariable(value: js.Array[String]): Self = StObject.set(x, "enabledBuiltInVariable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: js.Array[String]): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    def setEnabledBuiltInVariableUndefined: Self = StObject.set(x, "enabledBuiltInVariable", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    def setEnabledBuiltInVariableVarargs(value: String*): Self = StObject.set(x, "enabledBuiltInVariable", js.Array(value :_*))
     
     @scala.inline
-    def setEnabledBuiltInVariableVarargs(value: String*): Self = this.set("enabledBuiltInVariable", js.Array(value :_*))
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledBuiltInVariable(value: js.Array[String]): Self = this.set("enabledBuiltInVariable", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteEnabledBuiltInVariable: Self = this.set("enabledBuiltInVariable", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setTimeZoneCountryId(value: String): Self = StObject.set(x, "timeZoneCountryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicId(value: String): Self = this.set("publicId", value.asInstanceOf[js.Any])
+    def setTimeZoneCountryIdUndefined: Self = StObject.set(x, "timeZoneCountryId", js.undefined)
     
     @scala.inline
-    def deletePublicId: Self = this.set("publicId", js.undefined)
+    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZoneCountryId(value: String): Self = this.set("timeZoneCountryId", value.asInstanceOf[js.Any])
+    def setTimeZoneIdUndefined: Self = StObject.set(x, "timeZoneId", js.undefined)
     
     @scala.inline
-    def deleteTimeZoneCountryId: Self = this.set("timeZoneCountryId", js.undefined)
+    def setUsageContext(value: js.Array[String]): Self = StObject.set(x, "usageContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZoneId(value: String): Self = this.set("timeZoneId", value.asInstanceOf[js.Any])
+    def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
     
     @scala.inline
-    def deleteTimeZoneId: Self = this.set("timeZoneId", js.undefined)
-    
-    @scala.inline
-    def setUsageContextVarargs(value: String*): Self = this.set("usageContext", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsageContext(value: js.Array[String]): Self = this.set("usageContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsageContext: Self = this.set("usageContext", js.undefined)
+    def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
   }
 }

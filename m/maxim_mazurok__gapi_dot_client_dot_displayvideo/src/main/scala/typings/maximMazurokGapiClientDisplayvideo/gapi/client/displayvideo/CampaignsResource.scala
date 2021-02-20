@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.Callback
 import typings.maximMazurokGapiClientDisplayvideo.anon.CampaignId
 import typings.maximMazurokGapiClientDisplayvideo.anon.Fields
 import typings.maximMazurokGapiClientDisplayvideo.anon.Key
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CampaignsResource extends js.Object {
+trait CampaignsResource extends StObject {
   
   def create(request: AdvertiserId, body: Campaign): Request[Campaign] = js.native
   /** Creates a new campaign. Returns the newly created campaign if successful. */

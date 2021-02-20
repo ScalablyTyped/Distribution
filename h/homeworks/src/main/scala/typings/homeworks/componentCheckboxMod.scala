@@ -7,14 +7,14 @@ import typings.angularCore.mod.Renderer2
 import typings.angularForms.mod.ControlValueAccessor
 import typings.homeworks.homeworks.Event
 import typings.homeworks.managerMod.HomeworksManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/checkbox/component.checkbox", JSImport.Namespace)
-@js.native
-object componentCheckboxMod extends js.Object {
+object componentCheckboxMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/checkbox/component.checkbox", "WorksCheckbox")
   @js.native
   class WorksCheckbox protected ()
     extends HomeworksManager

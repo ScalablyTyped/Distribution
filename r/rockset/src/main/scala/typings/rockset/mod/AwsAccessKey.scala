@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsAccessKey extends js.Object {
+trait AwsAccessKey extends StObject {
   
   // AWS access key ID
   var aws_access_key_id: String = js.native
@@ -22,24 +23,12 @@ object AwsAccessKey {
   }
   
   @scala.inline
-  implicit class AwsAccessKeyOps[Self <: AwsAccessKey] (val x: Self) extends AnyVal {
+  implicit class AwsAccessKeyMutableBuilder[Self <: AwsAccessKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAws_access_key_id(value: String): Self = StObject.set(x, "aws_access_key_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAws_access_key_id(value: String): Self = this.set("aws_access_key_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAws_secret_access_key(value: String): Self = this.set("aws_secret_access_key", value.asInstanceOf[js.Any])
+    def setAws_secret_access_key(value: String): Self = StObject.set(x, "aws_secret_access_key", value.asInstanceOf[js.Any])
   }
 }

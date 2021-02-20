@@ -1,7 +1,8 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _CertificateTransparencyLoggingPreference extends js.Object
+trait _CertificateTransparencyLoggingPreference extends StObject

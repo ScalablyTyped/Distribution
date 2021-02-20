@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeaseWorkItemResponse extends js.Object {
+trait LeaseWorkItemResponse extends StObject {
   
   /** Untranslated bag-of-bytes WorkResponse for UnifiedWorker. */
   var unifiedWorkerResponse: js.UndefOr[
@@ -27,37 +28,25 @@ object LeaseWorkItemResponse {
   }
   
   @scala.inline
-  implicit class LeaseWorkItemResponseOps[Self <: LeaseWorkItemResponse] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class LeaseWorkItemResponseMutableBuilder[Self <: LeaseWorkItemResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemResponse with TopLevel[js.Any]
-    ): Self = this.set("unifiedWorkerResponse", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnifiedWorkerResponse: Self = this.set("unifiedWorkerResponse", js.undefined)
+    def setUnifiedWorkerResponseUndefined: Self = StObject.set(x, "unifiedWorkerResponse", js.undefined)
     
     @scala.inline
-    def setWorkItemsVarargs(value: WorkItem*): Self = this.set("workItems", js.Array(value :_*))
+    def setWorkItems(value: js.Array[WorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItems(value: js.Array[WorkItem]): Self = this.set("workItems", value.asInstanceOf[js.Any])
+    def setWorkItemsUndefined: Self = StObject.set(x, "workItems", js.undefined)
     
     @scala.inline
-    def deleteWorkItems: Self = this.set("workItems", js.undefined)
+    def setWorkItemsVarargs(value: WorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSource extends js.Object {
+trait DataSource extends StObject {
   
   /** Information about an application which feeds sensor data into the platform. */
   var application: js.UndefOr[Application] = js.native
@@ -54,69 +55,57 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataQualityStandard(value: js.Array[String]): Self = StObject.set(x, "dataQualityStandard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("application", value.asInstanceOf[js.Any])
+    def setDataQualityStandardUndefined: Self = StObject.set(x, "dataQualityStandard", js.undefined)
     
     @scala.inline
-    def deleteApplication: Self = this.set("application", js.undefined)
+    def setDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "dataQualityStandard", js.Array(value :_*))
     
     @scala.inline
-    def setDataQualityStandardVarargs(value: String*): Self = this.set("dataQualityStandard", js.Array(value :_*))
+    def setDataStreamId(value: String): Self = StObject.set(x, "dataStreamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataQualityStandard(value: js.Array[String]): Self = this.set("dataQualityStandard", value.asInstanceOf[js.Any])
+    def setDataStreamIdUndefined: Self = StObject.set(x, "dataStreamId", js.undefined)
     
     @scala.inline
-    def deleteDataQualityStandard: Self = this.set("dataQualityStandard", js.undefined)
+    def setDataStreamName(value: String): Self = StObject.set(x, "dataStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataStreamId(value: String): Self = this.set("dataStreamId", value.asInstanceOf[js.Any])
+    def setDataStreamNameUndefined: Self = StObject.set(x, "dataStreamName", js.undefined)
     
     @scala.inline
-    def deleteDataStreamId: Self = this.set("dataStreamId", js.undefined)
+    def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataStreamName(value: String): Self = this.set("dataStreamName", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteDataStreamName: Self = this.set("dataStreamName", js.undefined)
+    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: DataType): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

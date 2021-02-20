@@ -4,6 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import typings.std.HTMLUListElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent react-bootstrap-typeahead.react-bootstrap-typeahead.MenuProps */
 /* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.AllTypeaheadOwnAndInjectedProps<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadMenuPropsPick> */
 @js.native
-trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends js.Object {
+trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -51,92 +52,80 @@ object TypeaheadMenuProps {
   }
   
   @scala.inline
-  implicit class TypeaheadMenuPropsOps[Self <: TypeaheadMenuProps[_], T /* <: TypeaheadModel */] (val x: Self with TypeaheadMenuProps[T]) extends AnyVal {
+  implicit class TypeaheadMenuPropsMutableBuilder[Self <: TypeaheadMenuProps[_], T /* <: TypeaheadModel */] (val x: Self with TypeaheadMenuProps[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmptyLabel(value: String): Self = StObject.set(x, "emptyLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setEmptyLabelUndefined: Self = StObject.set(x, "emptyLabel", js.undefined)
     
     @scala.inline
-    def setOptionsVarargs(value: T*): Self = this.set("options", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[T]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setInnerRef(value: LegacyRef[HTMLUListElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setInnerRefFunction1(value: /* instance */ HTMLUListElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
     @scala.inline
-    def setEmptyLabel(value: String): Self = this.set("emptyLabel", value.asInstanceOf[js.Any])
+    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
     @scala.inline
-    def deleteEmptyLabel: Self = this.set("emptyLabel", js.undefined)
+    def setLabelKey(value: TypeaheadLabelKey[T]): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRefFunction1(value: /* instance */ HTMLUListElement | Null => Unit): Self = this.set("innerRef", js.Any.fromFunction1(value))
+    def setLabelKeyFunction1(value: T => String): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInnerRef(value: LegacyRef[HTMLUListElement]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
+    def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
     
     @scala.inline
-    def deleteInnerRef: Self = this.set("innerRef", js.undefined)
+    def setMaxHeight(value: String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRefNull: Self = this.set("innerRef", null)
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def setLabelKeyFunction1(value: T => String): Self = this.set("labelKey", js.Any.fromFunction1(value))
+    def setNewSelectionPrefix(value: String): Self = StObject.set(x, "newSelectionPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelKey(value: TypeaheadLabelKey[T]): Self = this.set("labelKey", value.asInstanceOf[js.Any])
+    def setNewSelectionPrefixUndefined: Self = StObject.set(x, "newSelectionPrefix", js.undefined)
     
     @scala.inline
-    def deleteLabelKey: Self = this.set("labelKey", js.undefined)
+    def setOptions(value: js.Array[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: String): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
-    
-    @scala.inline
-    def setNewSelectionPrefix(value: String): Self = this.set("newSelectionPrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNewSelectionPrefix: Self = this.set("newSelectionPrefix", js.undefined)
+    def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
     def setRenderMenuItemChildren(
       value: (/* option */ TypeaheadResult[T], /* props */ TypeaheadMenuProps[T], /* index */ Double) => ReactNode
-    ): Self = this.set("renderMenuItemChildren", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "renderMenuItemChildren", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRenderMenuItemChildren: Self = this.set("renderMenuItemChildren", js.undefined)
+    def setRenderMenuItemChildrenUndefined: Self = StObject.set(x, "renderMenuItemChildren", js.undefined)
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

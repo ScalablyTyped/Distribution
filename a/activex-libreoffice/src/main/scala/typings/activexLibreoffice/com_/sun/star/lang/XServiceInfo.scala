@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.lang
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,33 +61,21 @@ object XServiceInfo {
   }
   
   @scala.inline
-  implicit class XServiceInfoOps[Self <: XServiceInfo] (val x: Self) extends AnyVal {
+  implicit class XServiceInfoMutableBuilder[Self <: XServiceInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetImplementationName(value: () => String): Self = StObject.set(x, "getImplementationName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSupportedServiceNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedServiceNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplementationName(value: String): Self = StObject.set(x, "ImplementationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplementationName(value: String): Self = this.set("ImplementationName", value.asInstanceOf[js.Any])
+    def setSupportedServiceNames(value: SafeArray[String]): Self = StObject.set(x, "SupportedServiceNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportedServiceNames(value: SafeArray[String]): Self = this.set("SupportedServiceNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetImplementationName(value: () => String): Self = this.set("getImplementationName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSupportedServiceNames(value: () => SafeArray[String]): Self = this.set("getSupportedServiceNames", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSupportsService(value: String => Boolean): Self = this.set("supportsService", js.Any.fromFunction1(value))
+    def setSupportsService(value: String => Boolean): Self = StObject.set(x, "supportsService", js.Any.fromFunction1(value))
   }
 }

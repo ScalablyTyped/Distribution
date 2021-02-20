@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeaturizationConfig extends js.Object {
+trait FeaturizationConfig extends StObject {
   
   /**
     * An array of featurization (transformation) information for the fields of a dataset.
@@ -31,39 +32,27 @@ object FeaturizationConfig {
   }
   
   @scala.inline
-  implicit class FeaturizationConfigOps[Self <: FeaturizationConfig] (val x: Self) extends AnyVal {
+  implicit class FeaturizationConfigMutableBuilder[Self <: FeaturizationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeaturizations(value: Featurizations): Self = StObject.set(x, "Featurizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturizationsUndefined: Self = StObject.set(x, "Featurizations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturizationsVarargs(value: Featurization*): Self = StObject.set(x, "Featurizations", js.Array(value :_*))
     
     @scala.inline
-    def setForecastFrequency(value: Frequency): Self = this.set("ForecastFrequency", value.asInstanceOf[js.Any])
+    def setForecastDimensions(value: ForecastDimensions): Self = StObject.set(x, "ForecastDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeaturizationsVarargs(value: Featurization*): Self = this.set("Featurizations", js.Array(value :_*))
+    def setForecastDimensionsUndefined: Self = StObject.set(x, "ForecastDimensions", js.undefined)
     
     @scala.inline
-    def setFeaturizations(value: Featurizations): Self = this.set("Featurizations", value.asInstanceOf[js.Any])
+    def setForecastDimensionsVarargs(value: Name*): Self = StObject.set(x, "ForecastDimensions", js.Array(value :_*))
     
     @scala.inline
-    def deleteFeaturizations: Self = this.set("Featurizations", js.undefined)
-    
-    @scala.inline
-    def setForecastDimensionsVarargs(value: Name*): Self = this.set("ForecastDimensions", js.Array(value :_*))
-    
-    @scala.inline
-    def setForecastDimensions(value: ForecastDimensions): Self = this.set("ForecastDimensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForecastDimensions: Self = this.set("ForecastDimensions", js.undefined)
+    def setForecastFrequency(value: Frequency): Self = StObject.set(x, "ForecastFrequency", value.asInstanceOf[js.Any])
   }
 }

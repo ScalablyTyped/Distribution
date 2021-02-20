@@ -3,6 +3,7 @@ package typings.datatablesNet.DataTables
 import org.scalablytyped.runtime.Instantiable1
 import typings.datatablesNet.JQuery
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion "Namespaces"
 //#region "Static-Methods"
 @js.native
-trait StaticFunctions extends js.Object {
+trait StaticFunctions extends StObject {
   
   /**
     * Returns JQuery object

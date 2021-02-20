@@ -1,14 +1,15 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AssertionLevel extends js.Object
+sealed trait AssertionLevel extends StObject
 @JSGlobal("TypeScript.AssertionLevel")
 @js.native
-object AssertionLevel extends js.Object {
+object AssertionLevel extends StObject {
   
   @js.native
   sealed trait Aggressive extends AssertionLevel

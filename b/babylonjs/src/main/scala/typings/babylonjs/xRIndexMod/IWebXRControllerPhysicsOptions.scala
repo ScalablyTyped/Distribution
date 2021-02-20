@@ -1,5 +1,6 @@
 package typings.babylonjs.xRIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/XR/index", "IWebXRControllerPhysicsOptions")
 @js.native
 class IWebXRControllerPhysicsOptions ()
-  extends typings.babylonjs.webXRControllerPhysicsMod.IWebXRControllerPhysicsOptions
+  extends typings.babylonjs.featuresIndexMod.IWebXRControllerPhysicsOptions

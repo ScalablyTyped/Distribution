@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Issue extends js.Object {
+trait Issue extends StObject {
   
   /** List of issues. Applicable only for Collection Edition and Omnibus. */
   var issue: js.UndefOr[js.Array[IssueDisplayNumber]] = js.native
@@ -28,45 +29,33 @@ object Issue {
   }
   
   @scala.inline
-  implicit class IssueOps[Self <: Issue] (val x: Self) extends AnyVal {
+  implicit class IssueMutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIssue(value: js.Array[IssueDisplayNumber]): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIssueVarargs(value: IssueDisplayNumber*): Self = StObject.set(x, "issue", js.Array(value :_*))
     
     @scala.inline
-    def setIssueVarargs(value: IssueDisplayNumber*): Self = this.set("issue", js.Array(value :_*))
+    def setOrderNumber(value: Double): Self = StObject.set(x, "orderNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssue(value: js.Array[IssueDisplayNumber]): Self = this.set("issue", value.asInstanceOf[js.Any])
+    def setOrderNumberUndefined: Self = StObject.set(x, "orderNumber", js.undefined)
     
     @scala.inline
-    def deleteIssue: Self = this.set("issue", js.undefined)
+    def setSeriesBookType(value: String): Self = StObject.set(x, "seriesBookType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderNumber(value: Double): Self = this.set("orderNumber", value.asInstanceOf[js.Any])
+    def setSeriesBookTypeUndefined: Self = StObject.set(x, "seriesBookType", js.undefined)
     
     @scala.inline
-    def deleteOrderNumber: Self = this.set("orderNumber", js.undefined)
+    def setSeriesId(value: String): Self = StObject.set(x, "seriesId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeriesBookType(value: String): Self = this.set("seriesBookType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesBookType: Self = this.set("seriesBookType", js.undefined)
-    
-    @scala.inline
-    def setSeriesId(value: String): Self = this.set("seriesId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeriesId: Self = this.set("seriesId", js.undefined)
+    def setSeriesIdUndefined: Self = StObject.set(x, "seriesId", js.undefined)
   }
 }

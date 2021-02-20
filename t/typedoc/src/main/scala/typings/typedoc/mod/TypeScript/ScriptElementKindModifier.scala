@@ -1,12 +1,13 @@
 package typings.typedoc.mod.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "TypeScript.ScriptElementKindModifier")
 @js.native
-object ScriptElementKindModifier extends js.Object {
+object ScriptElementKindModifier extends StObject {
   
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.typescript.mod.ScriptElementKindModifier with String] = js.native

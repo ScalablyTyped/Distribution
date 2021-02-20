@@ -1,29 +1,46 @@
 package typings.novaEditor
 
 import typings.std.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("console")
+  @js.native
   val console: Console = js.native
   
-  @JSName("__dirname")
+  @JSGlobal("__dirname")
+  @js.native
   val dirname: String = js.native
   
-  val exports: js.Any = js.native
+  /* was `typeof module.exports` */
+  @JSGlobal("exports")
+  @js.native
+  def exports: js.Any = js.native
+  @scala.inline
+  def exports_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
   
-  @JSName("__filename")
+  @JSGlobal("__filename")
+  @js.native
   val filename: String = js.native
   
-  def require(module: String): js.Any = js.native
-  
-  @js.native
-  object module extends js.Object {
+  object module {
     
-    var exports: js.Any = js.native
+    @JSGlobal("module")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSGlobal("module.exports")
+    @js.native
+    def exports: js.Any = js.native
+    @scala.inline
+    def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   }
+  
+  @JSGlobal("require")
+  @js.native
+  def require(module: String): js.Any = js.native
 }

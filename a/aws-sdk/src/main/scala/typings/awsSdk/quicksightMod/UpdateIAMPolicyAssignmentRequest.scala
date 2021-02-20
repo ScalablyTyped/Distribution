@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateIAMPolicyAssignmentRequest extends js.Object {
+trait UpdateIAMPolicyAssignmentRequest extends StObject {
   
   /**
     * The name of the assignment, also called a rule. This name must be unique within an AWS account.
@@ -46,45 +47,33 @@ object UpdateIAMPolicyAssignmentRequest {
   }
   
   @scala.inline
-  implicit class UpdateIAMPolicyAssignmentRequestOps[Self <: UpdateIAMPolicyAssignmentRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateIAMPolicyAssignmentRequestMutableBuilder[Self <: UpdateIAMPolicyAssignmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
     
     @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
+    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setIdentities(value: IdentityMap): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
     
     @scala.inline
-    def setAssignmentStatus(value: AssignmentStatus): Self = this.set("AssignmentStatus", value.asInstanceOf[js.Any])
+    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAssignmentStatus: Self = this.set("AssignmentStatus", js.undefined)
+    def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentities(value: IdentityMap): Self = this.set("Identities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentities: Self = this.set("Identities", js.undefined)
-    
-    @scala.inline
-    def setPolicyArn(value: Arn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
   }
 }

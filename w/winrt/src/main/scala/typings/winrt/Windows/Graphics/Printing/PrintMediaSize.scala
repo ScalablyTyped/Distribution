@@ -1,23 +1,24 @@
 package typings.winrt.Windows.Graphics.Printing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintMediaSize extends js.Object
+sealed trait PrintMediaSize extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintMediaSize")
 @js.native
-object PrintMediaSize extends js.Object {
+object PrintMediaSize extends StObject {
+  
+  @js.native
+  sealed trait default extends PrintMediaSize
   
   @js.native
   sealed trait businessCard extends PrintMediaSize
   
   @js.native
   sealed trait creditCard extends PrintMediaSize
-  
-  @js.native
-  sealed trait default extends PrintMediaSize
   
   @js.native
   sealed trait isoA0 extends PrintMediaSize

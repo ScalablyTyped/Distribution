@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents one beacon observed once.
   */
 @js.native
-trait SchemaObservation extends js.Object {
+trait SchemaObservation extends StObject {
   
   /**
     * The ID advertised by the beacon the client has encountered.  If the
@@ -39,36 +40,24 @@ object SchemaObservation {
   }
   
   @scala.inline
-  implicit class SchemaObservationOps[Self <: SchemaObservation] (val x: Self) extends AnyVal {
+  implicit class SchemaObservationMutableBuilder[Self <: SchemaObservation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisedId(value: SchemaAdvertisedId): Self = StObject.set(x, "advertisedId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertisedIdUndefined: Self = StObject.set(x, "advertisedId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTelemetry(value: String): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisedId(value: SchemaAdvertisedId): Self = this.set("advertisedId", value.asInstanceOf[js.Any])
+    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
     @scala.inline
-    def deleteAdvertisedId: Self = this.set("advertisedId", js.undefined)
+    def setTimestampMs(value: String): Self = StObject.set(x, "timestampMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTelemetry(value: String): Self = this.set("telemetry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTelemetry: Self = this.set("telemetry", js.undefined)
-    
-    @scala.inline
-    def setTimestampMs(value: String): Self = this.set("timestampMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestampMs: Self = this.set("timestampMs", js.undefined)
+    def setTimestampMsUndefined: Self = StObject.set(x, "timestampMs", js.undefined)
   }
 }

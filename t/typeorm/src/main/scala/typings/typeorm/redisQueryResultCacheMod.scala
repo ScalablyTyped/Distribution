@@ -5,14 +5,14 @@ import typings.typeorm.queryResultCacheMod.QueryResultCache
 import typings.typeorm.typeormStrings.ioredis
 import typings.typeorm.typeormStrings.ioredisSlashcluster
 import typings.typeorm.typeormStrings.redis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/cache/RedisQueryResultCache", JSImport.Namespace)
-@js.native
-object redisQueryResultCacheMod extends js.Object {
+object redisQueryResultCacheMod {
   
+  @JSImport("typeorm/browser/cache/RedisQueryResultCache", "RedisQueryResultCache")
   @js.native
   class RedisQueryResultCache protected () extends QueryResultCache {
     def this(connection: Connection, clientType: ioredis) = this()

@@ -1,11 +1,12 @@
 package typings.tampermonkey.Tampermonkey
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OpenTabOptions extends js.Object {
+trait OpenTabOptions extends StObject {
   
   /** Decides whether the new tab should be focused */
   var active: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object OpenTabOptions {
   }
   
   @scala.inline
-  implicit class OpenTabOptionsOps[Self <: OpenTabOptions] (val x: Self) extends AnyVal {
+  implicit class OpenTabOptionsMutableBuilder[Self <: OpenTabOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setSetParent(value: Boolean): Self = StObject.set(x, "setParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsert(value: Boolean): Self = this.set("insert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsert: Self = this.set("insert", js.undefined)
-    
-    @scala.inline
-    def setSetParent(value: Boolean): Self = this.set("setParent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSetParent: Self = this.set("setParent", js.undefined)
+    def setSetParentUndefined: Self = StObject.set(x, "setParent", js.undefined)
   }
 }

@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesGetSamplingStatisticSummariesOutputMod.
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/GetSamplingStatisticSummariesCommand", JSImport.Namespace)
-@js.native
-object getSamplingStatisticSummariesCommandMod extends js.Object {
+object getSamplingStatisticSummariesCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/GetSamplingStatisticSummariesCommand", "GetSamplingStatisticSummariesCommand")
   @js.native
   class GetSamplingStatisticSummariesCommand protected () extends Command[
           InputTypesUnion, 

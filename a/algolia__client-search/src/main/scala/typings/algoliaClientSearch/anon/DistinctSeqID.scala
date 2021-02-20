@@ -3,12 +3,13 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.HighlightResult
 import typings.algoliaClientSearch.mod.RankingInfo
 import typings.algoliaClientSearch.mod.SnippetResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistinctSeqID[THit] extends js.Object {
+trait DistinctSeqID[THit] extends StObject {
   
   val _distinctSeqID: js.UndefOr[Double] = js.native
   
@@ -29,45 +30,33 @@ object DistinctSeqID {
   }
   
   @scala.inline
-  implicit class DistinctSeqIDOps[Self <: DistinctSeqID[_], THit] (val x: Self with DistinctSeqID[THit]) extends AnyVal {
+  implicit class DistinctSeqIDMutableBuilder[Self <: DistinctSeqID[_], THit] (val x: Self with DistinctSeqID[THit]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_distinctSeqID(value: Double): Self = StObject.set(x, "_distinctSeqID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_distinctSeqIDUndefined: Self = StObject.set(x, "_distinctSeqID", js.undefined)
     
     @scala.inline
-    def setObjectID(value: String): Self = this.set("objectID", value.asInstanceOf[js.Any])
+    def set_highlightResult(value: HighlightResult[THit]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_distinctSeqID(value: Double): Self = this.set("_distinctSeqID", value.asInstanceOf[js.Any])
+    def set_highlightResultUndefined: Self = StObject.set(x, "_highlightResult", js.undefined)
     
     @scala.inline
-    def delete_distinctSeqID: Self = this.set("_distinctSeqID", js.undefined)
+    def set_rankingInfo(value: RankingInfo): Self = StObject.set(x, "_rankingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_highlightResult(value: HighlightResult[THit]): Self = this.set("_highlightResult", value.asInstanceOf[js.Any])
+    def set_rankingInfoUndefined: Self = StObject.set(x, "_rankingInfo", js.undefined)
     
     @scala.inline
-    def delete_highlightResult: Self = this.set("_highlightResult", js.undefined)
+    def set_snippetResult(value: SnippetResult[THit]): Self = StObject.set(x, "_snippetResult", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_rankingInfo(value: RankingInfo): Self = this.set("_rankingInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_rankingInfo: Self = this.set("_rankingInfo", js.undefined)
-    
-    @scala.inline
-    def set_snippetResult(value: SnippetResult[THit]): Self = this.set("_snippetResult", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_snippetResult: Self = this.set("_snippetResult", js.undefined)
+    def set_snippetResultUndefined: Self = StObject.set(x, "_snippetResult", js.undefined)
   }
 }

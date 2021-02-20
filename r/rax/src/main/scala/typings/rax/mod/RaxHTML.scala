@@ -1,5 +1,6 @@
 package typings.rax.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Rax.DOM
 // ----------------------------------------------------------------------
 @js.native
-trait RaxHTML extends js.Object {
+trait RaxHTML extends StObject {
   
   def a(
     props: ClassAttributes[HTMLAnchorElement] with AnchorHTMLAttributes[HTMLAnchorElement],

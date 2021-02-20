@@ -3,6 +3,7 @@ package typings.vscodeLanguageserver.mod
 import typings.vscodeLanguageserver.progressMod.ResultProgress
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GcsIntegration extends js.Object {
+trait GcsIntegration extends StObject {
   
   // credentials for an AWS key integration
   var gcp_service_account: js.UndefOr[GcpServiceAccount] = js.native
@@ -19,24 +20,12 @@ object GcsIntegration {
   }
   
   @scala.inline
-  implicit class GcsIntegrationOps[Self <: GcsIntegration] (val x: Self) extends AnyVal {
+  implicit class GcsIntegrationMutableBuilder[Self <: GcsIntegration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGcp_service_account(value: GcpServiceAccount): Self = StObject.set(x, "gcp_service_account", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGcp_service_account(value: GcpServiceAccount): Self = this.set("gcp_service_account", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGcp_service_account: Self = this.set("gcp_service_account", js.undefined)
+    def setGcp_service_accountUndefined: Self = StObject.set(x, "gcp_service_account", js.undefined)
   }
 }

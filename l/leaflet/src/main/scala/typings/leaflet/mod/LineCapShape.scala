@@ -1,5 +1,6 @@
 package typings.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.leaflet.leafletStrings.square
   - typings.leaflet.leafletStrings.inherit
 */
-trait LineCapShape extends js.Object
+trait LineCapShape extends StObject
 object LineCapShape {
   
   @scala.inline

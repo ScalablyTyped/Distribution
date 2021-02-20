@@ -1,11 +1,12 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserLegacy extends js.Object {
+trait BrowserLegacy extends StObject {
   
   var bBounding: Boolean = js.native
   
@@ -24,30 +25,18 @@ object BrowserLegacy {
   }
   
   @scala.inline
-  implicit class BrowserLegacyOps[Self <: BrowserLegacy] (val x: Self) extends AnyVal {
+  implicit class BrowserLegacyMutableBuilder[Self <: BrowserLegacy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBBounding(value: Boolean): Self = StObject.set(x, "bBounding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBScrollOversize(value: Boolean): Self = StObject.set(x, "bScrollOversize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBScrollbarLeft(value: Boolean): Self = StObject.set(x, "bScrollbarLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBBounding(value: Boolean): Self = this.set("bBounding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBScrollOversize(value: Boolean): Self = this.set("bScrollOversize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBScrollbarLeft(value: Boolean): Self = this.set("bScrollbarLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
+    def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
   }
 }

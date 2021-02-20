@@ -4,17 +4,17 @@ import typings.sipJs.inviteMod.OutgoingInviteRequestDelegate
 import typings.sipJs.messagesMod.OutgoingRequestMessage
 import typings.sipJs.userAgentClientMod.UserAgentClient
 import typings.sipJs.userAgentCoreMod.UserAgentCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/user-agents/invite-user-agent-client", JSImport.Namespace)
-@js.native
-object inviteUserAgentClientMod extends js.Object {
+object inviteUserAgentClientMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
-  - typings.sipJs.inviteMod.OutgoingInviteRequest because var conflicts: delegate, message. Inlined  */ @js.native
+  - typings.sipJs.inviteMod.OutgoingInviteRequest because var conflicts: delegate, message. Inlined  */ @JSImport("sip.js/lib/core/user-agents/invite-user-agent-client", "InviteUserAgentClient")
+  @js.native
   class InviteUserAgentClient protected () extends UserAgentClient {
     def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
     def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingInviteRequestDelegate) = this()

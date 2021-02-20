@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoDescription extends js.Object {
+trait VideoDescription extends StObject {
   
   /**
     * This setting only applies to H.264, H.265, and MPEG2 outputs. Use Insert AFD signaling (AfdSignaling) to specify whether the service includes AFD values in the output video data and what those values are. * Choose None to remove all AFD values from this output. * Choose Fixed to ignore input AFD values and instead encode the value specified in the job. * Choose Auto to calculate output AFD values based on the input AFD scaler data.
@@ -91,108 +92,96 @@ object VideoDescription {
   }
   
   @scala.inline
-  implicit class VideoDescriptionOps[Self <: VideoDescription] (val x: Self) extends AnyVal {
+  implicit class VideoDescriptionMutableBuilder[Self <: VideoDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAntiAlias(value: AntiAlias): Self = StObject.set(x, "AntiAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfdSignaling(value: AfdSignaling): Self = this.set("AfdSignaling", value.asInstanceOf[js.Any])
+    def setAntiAliasUndefined: Self = StObject.set(x, "AntiAlias", js.undefined)
     
     @scala.inline
-    def deleteAfdSignaling: Self = this.set("AfdSignaling", js.undefined)
+    def setCodecSettings(value: VideoCodecSettings): Self = StObject.set(x, "CodecSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntiAlias(value: AntiAlias): Self = this.set("AntiAlias", value.asInstanceOf[js.Any])
+    def setCodecSettingsUndefined: Self = StObject.set(x, "CodecSettings", js.undefined)
     
     @scala.inline
-    def deleteAntiAlias: Self = this.set("AntiAlias", js.undefined)
+    def setColorMetadata(value: ColorMetadata): Self = StObject.set(x, "ColorMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecSettings(value: VideoCodecSettings): Self = this.set("CodecSettings", value.asInstanceOf[js.Any])
+    def setColorMetadataUndefined: Self = StObject.set(x, "ColorMetadata", js.undefined)
     
     @scala.inline
-    def deleteCodecSettings: Self = this.set("CodecSettings", js.undefined)
+    def setCrop(value: Rectangle): Self = StObject.set(x, "Crop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMetadata(value: ColorMetadata): Self = this.set("ColorMetadata", value.asInstanceOf[js.Any])
+    def setCropUndefined: Self = StObject.set(x, "Crop", js.undefined)
     
     @scala.inline
-    def deleteColorMetadata: Self = this.set("ColorMetadata", js.undefined)
+    def setDropFrameTimecode(value: DropFrameTimecode): Self = StObject.set(x, "DropFrameTimecode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrop(value: Rectangle): Self = this.set("Crop", value.asInstanceOf[js.Any])
+    def setDropFrameTimecodeUndefined: Self = StObject.set(x, "DropFrameTimecode", js.undefined)
     
     @scala.inline
-    def deleteCrop: Self = this.set("Crop", js.undefined)
+    def setFixedAfd(value: integerMin0Max15): Self = StObject.set(x, "FixedAfd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDropFrameTimecode(value: DropFrameTimecode): Self = this.set("DropFrameTimecode", value.asInstanceOf[js.Any])
+    def setFixedAfdUndefined: Self = StObject.set(x, "FixedAfd", js.undefined)
     
     @scala.inline
-    def deleteDropFrameTimecode: Self = this.set("DropFrameTimecode", js.undefined)
+    def setHeight(value: integerMin32Max8192): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedAfd(value: integerMin0Max15): Self = this.set("FixedAfd", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "Height", js.undefined)
     
     @scala.inline
-    def deleteFixedAfd: Self = this.set("FixedAfd", js.undefined)
+    def setPosition(value: Rectangle): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: integerMin32Max8192): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "Position", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("Height", js.undefined)
+    def setRespondToAfd(value: RespondToAfd): Self = StObject.set(x, "RespondToAfd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Rectangle): Self = this.set("Position", value.asInstanceOf[js.Any])
+    def setRespondToAfdUndefined: Self = StObject.set(x, "RespondToAfd", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("Position", js.undefined)
+    def setScalingBehavior(value: ScalingBehavior): Self = StObject.set(x, "ScalingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRespondToAfd(value: RespondToAfd): Self = this.set("RespondToAfd", value.asInstanceOf[js.Any])
+    def setScalingBehaviorUndefined: Self = StObject.set(x, "ScalingBehavior", js.undefined)
     
     @scala.inline
-    def deleteRespondToAfd: Self = this.set("RespondToAfd", js.undefined)
+    def setSharpness(value: integerMin0Max100): Self = StObject.set(x, "Sharpness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingBehavior(value: ScalingBehavior): Self = this.set("ScalingBehavior", value.asInstanceOf[js.Any])
+    def setSharpnessUndefined: Self = StObject.set(x, "Sharpness", js.undefined)
     
     @scala.inline
-    def deleteScalingBehavior: Self = this.set("ScalingBehavior", js.undefined)
+    def setTimecodeInsertion(value: VideoTimecodeInsertion): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharpness(value: integerMin0Max100): Self = this.set("Sharpness", value.asInstanceOf[js.Any])
+    def setTimecodeInsertionUndefined: Self = StObject.set(x, "TimecodeInsertion", js.undefined)
     
     @scala.inline
-    def deleteSharpness: Self = this.set("Sharpness", js.undefined)
+    def setVideoPreprocessors(value: VideoPreprocessor): Self = StObject.set(x, "VideoPreprocessors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimecodeInsertion(value: VideoTimecodeInsertion): Self = this.set("TimecodeInsertion", value.asInstanceOf[js.Any])
+    def setVideoPreprocessorsUndefined: Self = StObject.set(x, "VideoPreprocessors", js.undefined)
     
     @scala.inline
-    def deleteTimecodeInsertion: Self = this.set("TimecodeInsertion", js.undefined)
+    def setWidth(value: integerMin32Max8192): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoPreprocessors(value: VideoPreprocessor): Self = this.set("VideoPreprocessors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoPreprocessors: Self = this.set("VideoPreprocessors", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: integerMin32Max8192): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("Width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }
 }

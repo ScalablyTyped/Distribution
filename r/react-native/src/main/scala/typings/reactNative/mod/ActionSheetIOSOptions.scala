@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionSheetIOSOptions extends js.Object {
+trait ActionSheetIOSOptions extends StObject {
   
   var anchor: js.UndefOr[Double] = js.native
   
@@ -30,60 +31,48 @@ object ActionSheetIOSOptions {
   }
   
   @scala.inline
-  implicit class ActionSheetIOSOptionsOps[Self <: ActionSheetIOSOptions] (val x: Self) extends AnyVal {
+  implicit class ActionSheetIOSOptionsMutableBuilder[Self <: ActionSheetIOSOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCancelButtonIndex(value: Double): Self = StObject.set(x, "cancelButtonIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    def setCancelButtonIndexUndefined: Self = StObject.set(x, "cancelButtonIndex", js.undefined)
     
     @scala.inline
-    def setOptions(value: js.Array[String]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setDestructiveButtonIndex(value: Double): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchor(value: Double): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setDestructiveButtonIndexUndefined: Self = StObject.set(x, "destructiveButtonIndex", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelButtonIndex(value: Double): Self = this.set("cancelButtonIndex", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteCancelButtonIndex: Self = this.set("cancelButtonIndex", js.undefined)
+    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestructiveButtonIndex(value: Double): Self = this.set("destructiveButtonIndex", value.asInstanceOf[js.Any])
+    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def deleteDestructiveButtonIndex: Self = this.set("destructiveButtonIndex", js.undefined)
+    def setTintColor(value: ColorValue | ProcessedColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTintColor(value: ColorValue | ProcessedColorValue): Self = this.set("tintColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTintColor: Self = this.set("tintColor", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

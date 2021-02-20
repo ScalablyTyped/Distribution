@@ -1,15 +1,16 @@
 package typings.officeUiFabricReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/utilities/color/_rgbaOrHexString", JSImport.Namespace)
-@js.native
-object rgbaOrHexStringMod extends js.Object {
+object rgbaOrHexStringMod {
   
-  @JSName("_rgbaOrHexString")
+  @JSImport("office-ui-fabric-react/lib/utilities/color/_rgbaOrHexString", "_rgbaOrHexString")
+  @js.native
   def rgbaOrHexString(r: Double, g: Double, b: Double, a: js.UndefOr[scala.Nothing], hex: String): String = js.native
-  @JSName("_rgbaOrHexString")
+  @JSImport("office-ui-fabric-react/lib/utilities/color/_rgbaOrHexString", "_rgbaOrHexString")
+  @js.native
   def rgbaOrHexString(r: Double, g: Double, b: Double, a: Double, hex: String): String = js.native
 }

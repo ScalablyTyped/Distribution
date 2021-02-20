@@ -1,5 +1,6 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object SendContactOptions {
   }
   
   @scala.inline
-  implicit class SendContactOptionsOps[Self <: SendContactOptions] (val x: Self) extends AnyVal {
+  implicit class SendContactOptionsMutableBuilder[Self <: SendContactOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVcard(value: String): Self = StObject.set(x, "vcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLast_name: Self = this.set("last_name", js.undefined)
-    
-    @scala.inline
-    def setVcard(value: String): Self = this.set("vcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVcard: Self = this.set("vcard", js.undefined)
+    def setVcardUndefined: Self = StObject.set(x, "vcard", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoundNote extends js.Object {
+trait SoundNote extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -43,42 +44,30 @@ object SoundNote {
   }
   
   @scala.inline
-  implicit class SoundNoteOps[Self <: SoundNote] (val x: Self) extends AnyVal {
+  implicit class SoundNoteMutableBuilder[Self <: SoundNote] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setExcelDotSoundNote_typekey(value: SoundNote): Self = StObject.set(x, "Excel.SoundNote_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setImport(value: String => js.Any): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelete(value: () => js.Any): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcelDotSoundNote_typekey(value: SoundNote): Self = this.set("Excel.SoundNote_typekey", value.asInstanceOf[js.Any])
+    def setPlay(value: () => js.Any): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImport(value: String => js.Any): Self = this.set("Import", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlay(value: () => js.Any): Self = this.set("Play", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRecord(value: () => js.Any): Self = this.set("Record", js.Any.fromFunction0(value))
+    def setRecord(value: () => js.Any): Self = StObject.set(x, "Record", js.Any.fromFunction0(value))
   }
 }

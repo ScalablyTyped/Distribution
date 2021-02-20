@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDOMDocumentType extends js.Object {
+trait IDOMDocumentType extends StObject {
   
   @JSName("MSHTML.IDOMDocumentType_typekey")
   var MSHTMLDotIDOMDocumentType_typekey: IDOMDocumentType = js.native
@@ -40,39 +41,27 @@ object IDOMDocumentType {
   }
   
   @scala.inline
-  implicit class IDOMDocumentTypeOps[Self <: IDOMDocumentType] (val x: Self) extends AnyVal {
+  implicit class IDOMDocumentTypeMutableBuilder[Self <: IDOMDocumentType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntities(value: js.Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInternalSubset(value: js.Any): Self = StObject.set(x, "internalSubset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMSHTMLDotIDOMDocumentType_typekey(value: IDOMDocumentType): Self = StObject.set(x, "MSHTML.IDOMDocumentType_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIDOMDocumentType_typekey(value: IDOMDocumentType): Self = this.set("MSHTML.IDOMDocumentType_typekey", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntities(value: js.Any): Self = this.set("entities", value.asInstanceOf[js.Any])
+    def setNotations(value: js.Any): Self = StObject.set(x, "notations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternalSubset(value: js.Any): Self = this.set("internalSubset", value.asInstanceOf[js.Any])
+    def setPublicId(value: js.Any): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotations(value: js.Any): Self = this.set("notations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicId(value: js.Any): Self = this.set("publicId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemId(value: js.Any): Self = this.set("systemId", value.asInstanceOf[js.Any])
+    def setSystemId(value: js.Any): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
   }
 }

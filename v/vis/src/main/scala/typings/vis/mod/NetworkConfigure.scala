@@ -1,13 +1,14 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkConfigure extends js.Object {
+trait NetworkConfigure extends StObject {
   
-   // please note, filter could be also a function. This case is not represented here
+  // please note, filter could be also a function. This case is not represented here
   var container: js.UndefOr[js.Any] = js.native
   
   var enabled: js.UndefOr[Boolean] = js.native
@@ -25,45 +26,33 @@ object NetworkConfigure {
   }
   
   @scala.inline
-  implicit class NetworkConfigureOps[Self <: NetworkConfigure] (val x: Self) extends AnyVal {
+  implicit class NetworkConfigureMutableBuilder[Self <: NetworkConfigure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setFilter(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: String*): Self = this.set("filter", js.Array(value :_*))
+    def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: String | js.Array[String] | Boolean): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setShowButton(value: Boolean): Self = this.set("showButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowButton: Self = this.set("showButton", js.undefined)
+    def setShowButtonUndefined: Self = StObject.set(x, "showButton", js.undefined)
   }
 }

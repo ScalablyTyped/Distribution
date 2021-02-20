@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,24 +41,12 @@ object XSpreadsheetDocument {
   }
   
   @scala.inline
-  implicit class XSpreadsheetDocumentOps[Self <: XSpreadsheetDocument] (val x: Self) extends AnyVal {
+  implicit class XSpreadsheetDocumentMutableBuilder[Self <: XSpreadsheetDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSheets(value: () => XSpreadsheets): Self = StObject.set(x, "getSheets", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSheets(value: XSpreadsheets): Self = this.set("Sheets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetSheets(value: () => XSpreadsheets): Self = this.set("getSheets", js.Any.fromFunction0(value))
+    def setSheets(value: XSpreadsheets): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
   }
 }

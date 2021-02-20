@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupManagerStatus extends js.Object {
+trait SchemaInstanceGroupManagerStatus extends StObject {
   
   /**
     * [Output Only] A bit indicating whether the managed instance group is in a
@@ -33,30 +34,18 @@ object SchemaInstanceGroupManagerStatus {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagerStatusOps[Self <: SchemaInstanceGroupManagerStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagerStatusMutableBuilder[Self <: SchemaInstanceGroupManagerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsStable(value: Boolean): Self = StObject.set(x, "isStable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsStableUndefined: Self = StObject.set(x, "isStable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVersionTarget(value: SchemaInstanceGroupManagerStatusVersionTarget): Self = StObject.set(x, "versionTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsStable(value: Boolean): Self = this.set("isStable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsStable: Self = this.set("isStable", js.undefined)
-    
-    @scala.inline
-    def setVersionTarget(value: SchemaInstanceGroupManagerStatusVersionTarget): Self = this.set("versionTarget", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionTarget: Self = this.set("versionTarget", js.undefined)
+    def setVersionTargetUndefined: Self = StObject.set(x, "versionTarget", js.undefined)
   }
 }

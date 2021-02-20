@@ -3,14 +3,14 @@ package typings.ethersprojectAbi
 import typings.ethersprojectAbi.abstractCoderMod.Coder
 import typings.ethersprojectAbi.abstractCoderMod.Writer
 import typings.ethersprojectBignumber.bignumberMod.BigNumberish
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ethersproject/abi/lib/coders/number", JSImport.Namespace)
-@js.native
-object numberMod extends js.Object {
+object numberMod {
   
+  @JSImport("@ethersproject/abi/lib/coders/number", "NumberCoder")
   @js.native
   class NumberCoder protected () extends Coder {
     def this(size: Double, signed: Boolean, localName: String) = this()

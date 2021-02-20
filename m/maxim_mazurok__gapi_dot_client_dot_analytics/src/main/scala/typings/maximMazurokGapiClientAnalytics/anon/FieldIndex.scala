@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalytics.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldIndex extends js.Object {
+trait FieldIndex extends StObject {
   
   /** Determines if the filter is case sensitive. */
   var caseSensitive: js.UndefOr[Boolean] = js.native
@@ -31,48 +32,36 @@ object FieldIndex {
   }
   
   @scala.inline
-  implicit class FieldIndexOps[Self <: FieldIndex] (val x: Self) extends AnyVal {
+  implicit class FieldIndexMutableBuilder[Self <: FieldIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    def setFieldIndex(value: Double): Self = StObject.set(x, "fieldIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    def setFieldIndexUndefined: Self = StObject.set(x, "fieldIndex", js.undefined)
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setReplaceString(value: String): Self = StObject.set(x, "replaceString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldIndex(value: Double): Self = this.set("fieldIndex", value.asInstanceOf[js.Any])
+    def setReplaceStringUndefined: Self = StObject.set(x, "replaceString", js.undefined)
     
     @scala.inline
-    def deleteFieldIndex: Self = this.set("fieldIndex", js.undefined)
+    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplaceString(value: String): Self = this.set("replaceString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceString: Self = this.set("replaceString", js.undefined)
-    
-    @scala.inline
-    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
   }
 }

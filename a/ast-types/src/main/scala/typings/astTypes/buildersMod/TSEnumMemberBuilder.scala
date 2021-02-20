@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.StringLiteralKind
 import typings.astTypes.namedTypesMod.namedTypes.TSEnumMember
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TSEnumMemberBuilder extends js.Object {
+trait TSEnumMemberBuilder extends StObject {
   
   def apply(id: IdentifierKind): TSEnumMember = js.native
   def apply(id: IdentifierKind, initializer: ExpressionKind): TSEnumMember = js.native

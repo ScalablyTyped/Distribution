@@ -1,5 +1,6 @@
 package typings.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Commit ()
   extends typings.nodegit.commitMod.Commit
 /* static members */
-@JSImport("nodegit", "Commit")
-@js.native
-object Commit extends js.Object {
+object Commit {
   
+  @JSImport("nodegit", "Commit.create")
+  @js.native
   def create(
     repo: typings.nodegit.repositoryMod.Repository,
     updateRef: String,
@@ -25,6 +26,8 @@ object Commit extends js.Object {
     parents: js.Array[_]
   ): typings.nodegit.oidMod.Oid = js.native
   
+  @JSImport("nodegit", "Commit.createV")
+  @js.native
   def createV(
     id: typings.nodegit.oidMod.Oid,
     repo: typings.nodegit.repositoryMod.Repository,
@@ -37,6 +40,8 @@ object Commit extends js.Object {
     parentCount: Double
   ): Double = js.native
   
+  @JSImport("nodegit", "Commit.createWithSignature")
+  @js.native
   def createWithSignature(
     repo: typings.nodegit.repositoryMod.Repository,
     commitContent: String,
@@ -49,9 +54,17 @@ object Commit extends js.Object {
     *
     *
     */
+  @JSImport("nodegit", "Commit.lookup")
+  @js.native
   def lookup(repo: typings.nodegit.repositoryMod.Repository, id: String): js.Promise[typings.nodegit.commitMod.Commit] = js.native
+  @JSImport("nodegit", "Commit.lookup")
+  @js.native
   def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.commitMod.Commit): js.Promise[typings.nodegit.commitMod.Commit] = js.native
+  @JSImport("nodegit", "Commit.lookup")
+  @js.native
   def lookup(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid): js.Promise[typings.nodegit.commitMod.Commit] = js.native
   
+  @JSImport("nodegit", "Commit.lookupPrefix")
+  @js.native
   def lookupPrefix(repo: typings.nodegit.repositoryMod.Repository, id: typings.nodegit.oidMod.Oid, len: Double): js.Promise[typings.nodegit.commitMod.Commit] = js.native
 }

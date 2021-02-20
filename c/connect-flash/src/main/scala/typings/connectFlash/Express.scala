@@ -1,16 +1,15 @@
 package typings.connectFlash
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Express")
-@js.native
-object Express extends js.Object {
+object Express {
   
   @js.native
-  trait Request extends js.Object {
+  trait Request extends StObject {
     
     def flash(): StringDictionary[js.Array[String]] = js.native
     def flash(message: String): js.Array[String] = js.native

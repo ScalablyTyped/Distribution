@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TriggerId extends js.Object {
+trait TriggerId extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -62,114 +63,102 @@ object TriggerId {
   }
   
   @scala.inline
-  implicit class TriggerIdOps[Self <: TriggerId] (val x: Self) extends AnyVal {
+  implicit class TriggerIdMutableBuilder[Self <: TriggerId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     @scala.inline
-    def set$Dotxgafv(value: String): Self = this.set("$.xgafv", value.asInstanceOf[js.Any])
+    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$Dotxgafv: Self = this.set("$.xgafv", js.undefined)
+    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
     @scala.inline
-    def setAccess_token(value: String): Self = this.set("access_token", value.asInstanceOf[js.Any])
+    def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccess_token: Self = this.set("access_token", js.undefined)
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlt: Self = this.set("alt", js.undefined)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setCallback(value: String): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     @scala.inline
-    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     @scala.inline
-    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    def setTagId(value: String | js.Array[String]): Self = StObject.set(x, "tagId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    def setTagIdUndefined: Self = StObject.set(x, "tagId", js.undefined)
     
     @scala.inline
-    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    def setTagIdVarargs(value: String*): Self = StObject.set(x, "tagId", js.Array(value :_*))
     
     @scala.inline
-    def setTagIdVarargs(value: String*): Self = this.set("tagId", js.Array(value :_*))
+    def setTriggerId(value: String | js.Array[String]): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagId(value: String | js.Array[String]): Self = this.set("tagId", value.asInstanceOf[js.Any])
+    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
     
     @scala.inline
-    def deleteTagId: Self = this.set("tagId", js.undefined)
+    def setTriggerIdVarargs(value: String*): Self = StObject.set(x, "triggerId", js.Array(value :_*))
     
     @scala.inline
-    def setTriggerIdVarargs(value: String*): Self = this.set("triggerId", js.Array(value :_*))
+    def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerId(value: String | js.Array[String]): Self = this.set("triggerId", value.asInstanceOf[js.Any])
+    def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
     @scala.inline
-    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
+    def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUploadType(value: String): Self = this.set("uploadType", value.asInstanceOf[js.Any])
+    def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
     
     @scala.inline
-    def deleteUploadType: Self = this.set("uploadType", js.undefined)
+    def setVariableId(value: String | js.Array[String]): Self = StObject.set(x, "variableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpload_protocol(value: String): Self = this.set("upload_protocol", value.asInstanceOf[js.Any])
+    def setVariableIdUndefined: Self = StObject.set(x, "variableId", js.undefined)
     
     @scala.inline
-    def deleteUpload_protocol: Self = this.set("upload_protocol", js.undefined)
-    
-    @scala.inline
-    def setVariableIdVarargs(value: String*): Self = this.set("variableId", js.Array(value :_*))
-    
-    @scala.inline
-    def setVariableId(value: String | js.Array[String]): Self = this.set("variableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableId: Self = this.set("variableId", js.undefined)
+    def setVariableIdVarargs(value: String*): Self = StObject.set(x, "variableId", js.Array(value :_*))
   }
 }

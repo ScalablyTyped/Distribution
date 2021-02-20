@@ -1,11 +1,12 @@
 package typings.bootstrapPaginator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PaginatorOptions extends js.Object {
+trait PaginatorOptions extends StObject {
   
   var alignment: js.UndefOr[String] = js.native
   
@@ -62,112 +63,100 @@ object PaginatorOptions {
   }
   
   @scala.inline
-  implicit class PaginatorOptionsOps[Self <: PaginatorOptions] (val x: Self) extends AnyVal {
+  implicit class PaginatorOptionsMutableBuilder[Self <: PaginatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBootstrapMajorVersion(value: Double): Self = StObject.set(x, "bootstrapMajorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setBootstrapMajorVersionUndefined: Self = StObject.set(x, "bootstrapMajorVersion", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setBootstrapTooltipOptions(value: js.Object): Self = StObject.set(x, "bootstrapTooltipOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapMajorVersion(value: Double): Self = this.set("bootstrapMajorVersion", value.asInstanceOf[js.Any])
+    def setBootstrapTooltipOptionsUndefined: Self = StObject.set(x, "bootstrapTooltipOptions", js.undefined)
     
     @scala.inline
-    def deleteBootstrapMajorVersion: Self = this.set("bootstrapMajorVersion", js.undefined)
+    def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapTooltipOptions(value: js.Object): Self = this.set("bootstrapTooltipOptions", value.asInstanceOf[js.Any])
+    def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
     @scala.inline
-    def deleteBootstrapTooltipOptions: Self = this.set("bootstrapTooltipOptions", js.undefined)
+    def setItemContainerClass(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = StObject.set(x, "itemContainerClass", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCurrentPage(value: Double): Self = this.set("currentPage", value.asInstanceOf[js.Any])
+    def setItemContainerClassUndefined: Self = StObject.set(x, "itemContainerClass", js.undefined)
     
     @scala.inline
-    def deleteCurrentPage: Self = this.set("currentPage", js.undefined)
+    def setItemTexts(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = StObject.set(x, "itemTexts", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setItemContainerClass(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = this.set("itemContainerClass", js.Any.fromFunction3(value))
+    def setItemTextsUndefined: Self = StObject.set(x, "itemTexts", js.undefined)
     
     @scala.inline
-    def deleteItemContainerClass: Self = this.set("itemContainerClass", js.undefined)
+    def setNumberOfPages(value: Double): Self = StObject.set(x, "numberOfPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemTexts(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = this.set("itemTexts", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteItemTexts: Self = this.set("itemTexts", js.undefined)
-    
-    @scala.inline
-    def setNumberOfPages(value: Double): Self = this.set("numberOfPages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfPages: Self = this.set("numberOfPages", js.undefined)
+    def setNumberOfPagesUndefined: Self = StObject.set(x, "numberOfPages", js.undefined)
     
     @scala.inline
     def setOnPageChanged(
       value: (/* event */ js.Any, /* originalEvent */ js.Any, /* type */ String, /* page */ Double) => Unit
-    ): Self = this.set("onPageChanged", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onPageChanged", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnPageChanged: Self = this.set("onPageChanged", js.undefined)
+    def setOnPageChangedUndefined: Self = StObject.set(x, "onPageChanged", js.undefined)
     
     @scala.inline
     def setOnPageClicked(
       value: (/* event */ js.Any, /* originalEvent */ js.Any, /* type */ String, /* page */ Double) => Unit
-    ): Self = this.set("onPageClicked", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "onPageClicked", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteOnPageClicked: Self = this.set("onPageClicked", js.undefined)
+    def setOnPageClickedUndefined: Self = StObject.set(x, "onPageClicked", js.undefined)
     
     @scala.inline
-    def setPageUrl(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = this.set("pageUrl", js.Any.fromFunction3(value))
+    def setPageUrl(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = StObject.set(x, "pageUrl", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
+    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
     @scala.inline
-    def setShouldShowPage(value: Boolean): Self = this.set("shouldShowPage", value.asInstanceOf[js.Any])
+    def setShouldShowPage(value: Boolean): Self = StObject.set(x, "shouldShowPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShouldShowPage: Self = this.set("shouldShowPage", js.undefined)
+    def setShouldShowPageUndefined: Self = StObject.set(x, "shouldShowPage", js.undefined)
     
     @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setTooltipTitles(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = this.set("tooltipTitles", js.Any.fromFunction3(value))
+    def setTooltipTitles(value: (/* type */ String, /* page */ Double, /* current */ Double) => String): Self = StObject.set(x, "tooltipTitles", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteTooltipTitles: Self = this.set("tooltipTitles", js.undefined)
+    def setTooltipTitlesUndefined: Self = StObject.set(x, "tooltipTitles", js.undefined)
     
     @scala.inline
-    def setTotalPages(value: Double): Self = this.set("totalPages", value.asInstanceOf[js.Any])
+    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTotalPages: Self = this.set("totalPages", js.undefined)
+    def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
     
     @scala.inline
-    def setUseBootstrapTooltip(value: Boolean): Self = this.set("useBootstrapTooltip", value.asInstanceOf[js.Any])
+    def setUseBootstrapTooltip(value: Boolean): Self = StObject.set(x, "useBootstrapTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUseBootstrapTooltip: Self = this.set("useBootstrapTooltip", js.undefined)
+    def setUseBootstrapTooltipUndefined: Self = StObject.set(x, "useBootstrapTooltip", js.undefined)
   }
 }

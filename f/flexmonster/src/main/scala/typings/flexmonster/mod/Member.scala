@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Member extends js.Object {
+trait Member extends StObject {
   
   var caption: js.UndefOr[String] = js.native
   
@@ -28,57 +29,45 @@ object Member {
   }
   
   @scala.inline
-  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: js.Array[Member]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteCaption: Self = this.set("caption", js.undefined)
+    def setChildrenVarargs(value: Member*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: Member*): Self = this.set("children", js.Array(value :_*))
+    def setHierarchyName(value: String): Self = StObject.set(x, "hierarchyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[Member]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setHierarchyNameUndefined: Self = StObject.set(x, "hierarchyName", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHierarchyName(value: String): Self = this.set("hierarchyName", value.asInstanceOf[js.Any])
+    def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
     
     @scala.inline
-    def deleteHierarchyName: Self = this.set("hierarchyName", js.undefined)
+    def setParentMember(value: String): Self = StObject.set(x, "parentMember", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsLeaf(value: Boolean): Self = this.set("isLeaf", value.asInstanceOf[js.Any])
+    def setParentMemberUndefined: Self = StObject.set(x, "parentMember", js.undefined)
     
     @scala.inline
-    def deleteIsLeaf: Self = this.set("isLeaf", js.undefined)
+    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentMember(value: String): Self = this.set("parentMember", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentMember: Self = this.set("parentMember", js.undefined)
-    
-    @scala.inline
-    def setUniqueName(value: String): Self = this.set("uniqueName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueName: Self = this.set("uniqueName", js.undefined)
+    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
   }
 }

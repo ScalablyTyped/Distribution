@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OcclusionDataStorage extends js.Object {
+trait OcclusionDataStorage extends StObject {
   
   /** @hidden */
   var isOccluded: Boolean = js.native
@@ -41,36 +42,24 @@ object OcclusionDataStorage {
   }
   
   @scala.inline
-  implicit class OcclusionDataStorageOps[Self <: OcclusionDataStorage] (val x: Self) extends AnyVal {
+  implicit class OcclusionDataStorageMutableBuilder[Self <: OcclusionDataStorage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsOccluded(value: Boolean): Self = StObject.set(x, "isOccluded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsOcclusionQueryInProgress(value: Boolean): Self = StObject.set(x, "isOcclusionQueryInProgress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOcclusionInternalRetryCounter(value: Double): Self = StObject.set(x, "occlusionInternalRetryCounter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOccluded(value: Boolean): Self = this.set("isOccluded", value.asInstanceOf[js.Any])
+    def setOcclusionQueryAlgorithmType(value: Double): Self = StObject.set(x, "occlusionQueryAlgorithmType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOcclusionQueryInProgress(value: Boolean): Self = this.set("isOcclusionQueryInProgress", value.asInstanceOf[js.Any])
+    def setOcclusionRetryCount(value: Double): Self = StObject.set(x, "occlusionRetryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOcclusionInternalRetryCounter(value: Double): Self = this.set("occlusionInternalRetryCounter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOcclusionQueryAlgorithmType(value: Double): Self = this.set("occlusionQueryAlgorithmType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOcclusionRetryCount(value: Double): Self = this.set("occlusionRetryCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOcclusionType(value: Double): Self = this.set("occlusionType", value.asInstanceOf[js.Any])
+    def setOcclusionType(value: Double): Self = StObject.set(x, "occlusionType", value.asInstanceOf[js.Any])
   }
 }

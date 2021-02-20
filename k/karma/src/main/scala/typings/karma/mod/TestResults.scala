@@ -1,11 +1,12 @@
 package typings.karma.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestResults extends js.Object {
+trait TestResults extends StObject {
   
   var disconnected: Boolean = js.native
   
@@ -26,33 +27,21 @@ object TestResults {
   }
   
   @scala.inline
-  implicit class TestResultsOps[Self <: TestResults] (val x: Self) extends AnyVal {
+  implicit class TestResultsMutableBuilder[Self <: TestResults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisconnected(value: Boolean): Self = StObject.set(x, "disconnected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisconnected(value: Boolean): Self = this.set("disconnected", value.asInstanceOf[js.Any])
+    def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailed(value: Double): Self = this.set("failed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: Double): Self = this.set("success", value.asInstanceOf[js.Any])
+    def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

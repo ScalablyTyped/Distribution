@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalDeviceResourceData extends js.Object {
+trait LocalDeviceResourceData extends StObject {
   
   /**
     * Group/owner related settings for local resources.
@@ -26,30 +27,18 @@ object LocalDeviceResourceData {
   }
   
   @scala.inline
-  implicit class LocalDeviceResourceDataOps[Self <: LocalDeviceResourceData] (val x: Self) extends AnyVal {
+  implicit class LocalDeviceResourceDataMutableBuilder[Self <: LocalDeviceResourceData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupOwnerSettingUndefined: Self = StObject.set(x, "GroupOwnerSetting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourcePath(value: string): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = this.set("GroupOwnerSetting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupOwnerSetting: Self = this.set("GroupOwnerSetting", js.undefined)
-    
-    @scala.inline
-    def setSourcePath(value: string): Self = this.set("SourcePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcePath: Self = this.set("SourcePath", js.undefined)
+    def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeGenNode extends js.Object {
+trait CodeGenNode extends StObject {
   
   /**
     * Properties of the node, in the form of name-value pairs.
@@ -36,36 +37,24 @@ object CodeGenNode {
   }
   
   @scala.inline
-  implicit class CodeGenNodeOps[Self <: CodeGenNode] (val x: Self) extends AnyVal {
+  implicit class CodeGenNodeMutableBuilder[Self <: CodeGenNode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: CodeGenNodeArgs): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsVarargs(value: CodeGenNodeArg*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: CodeGenIdentifier): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: CodeGenNodeArg*): Self = this.set("Args", js.Array(value :_*))
+    def setLineNumber(value: Integer): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: CodeGenNodeArgs): Self = this.set("Args", value.asInstanceOf[js.Any])
+    def setLineNumberUndefined: Self = StObject.set(x, "LineNumber", js.undefined)
     
     @scala.inline
-    def setId(value: CodeGenIdentifier): Self = this.set("Id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNodeType(value: CodeGenNodeType): Self = this.set("NodeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineNumber(value: Integer): Self = this.set("LineNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineNumber: Self = this.set("LineNumber", js.undefined)
+    def setNodeType(value: CodeGenNodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
   }
 }

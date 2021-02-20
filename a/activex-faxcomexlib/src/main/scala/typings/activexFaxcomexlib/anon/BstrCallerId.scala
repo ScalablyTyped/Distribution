@@ -1,12 +1,13 @@
 package typings.activexFaxcomexlib.anon
 
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BstrCallerId extends js.Object {
+trait BstrCallerId extends StObject {
   
   val bstrCallerId: String = js.native
   
@@ -25,30 +26,18 @@ object BstrCallerId {
   }
   
   @scala.inline
-  implicit class BstrCallerIdOps[Self <: BstrCallerId] (val x: Self) extends AnyVal {
+  implicit class BstrCallerIdMutableBuilder[Self <: BstrCallerId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBstrCallerId(value: String): Self = StObject.set(x, "bstrCallerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLCallId(value: Double): Self = StObject.set(x, "lCallId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLDeviceId(value: Double): Self = StObject.set(x, "lDeviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBstrCallerId(value: String): Self = this.set("bstrCallerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLCallId(value: Double): Self = this.set("lCallId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLDeviceId(value: Double): Self = this.set("lDeviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = this.set("pFaxServer", value.asInstanceOf[js.Any])
+    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

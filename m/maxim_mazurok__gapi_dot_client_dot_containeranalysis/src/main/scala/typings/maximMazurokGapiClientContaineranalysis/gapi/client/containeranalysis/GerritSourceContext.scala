@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GerritSourceContext extends js.Object {
+trait GerritSourceContext extends StObject {
   
   /** An alias, which may be a branch or tag. */
   var aliasContext: js.UndefOr[AliasContext] = js.native
@@ -28,42 +29,30 @@ object GerritSourceContext {
   }
   
   @scala.inline
-  implicit class GerritSourceContextOps[Self <: GerritSourceContext] (val x: Self) extends AnyVal {
+  implicit class GerritSourceContextMutableBuilder[Self <: GerritSourceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliasContext(value: AliasContext): Self = StObject.set(x, "aliasContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasContextUndefined: Self = StObject.set(x, "aliasContext", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGerritProject(value: String): Self = StObject.set(x, "gerritProject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasContext(value: AliasContext): Self = this.set("aliasContext", value.asInstanceOf[js.Any])
+    def setGerritProjectUndefined: Self = StObject.set(x, "gerritProject", js.undefined)
     
     @scala.inline
-    def deleteAliasContext: Self = this.set("aliasContext", js.undefined)
+    def setHostUri(value: String): Self = StObject.set(x, "hostUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGerritProject(value: String): Self = this.set("gerritProject", value.asInstanceOf[js.Any])
+    def setHostUriUndefined: Self = StObject.set(x, "hostUri", js.undefined)
     
     @scala.inline
-    def deleteGerritProject: Self = this.set("gerritProject", js.undefined)
+    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostUri(value: String): Self = this.set("hostUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostUri: Self = this.set("hostUri", js.undefined)
-    
-    @scala.inline
-    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

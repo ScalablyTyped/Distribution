@@ -7,6 +7,7 @@ import typings.knockout.knockoutStrings.beforeChange
 import typings.knockout.knockoutStrings.change
 import typings.knockout.knockoutStrings.spectate
 import typings.knockout.mod.utils.ArrayChanges
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -3,6 +3,7 @@ package typings.arcgisJsApi.esri
 import typings.std.Object
 import typings.std.PropertyKey
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,63 +73,51 @@ object RequestInterceptor {
   }
   
   @scala.inline
-  implicit class RequestInterceptorOps[Self <: RequestInterceptor] (val x: Self) extends AnyVal {
+  implicit class RequestInterceptorMutableBuilder[Self <: RequestInterceptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: /* response */ RequestResponse => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAfter(value: /* response */ RequestResponse => Unit): Self = this.set("after", js.Any.fromFunction1(value))
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBefore(value: /* params */ js.Any => js.Any): Self = this.set("before", js.Any.fromFunction1(value))
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: /* error */ Error => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setResponseData(value: js.Any): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setUrls(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseData(value: js.Any): Self = this.set("responseData", value.asInstanceOf[js.Any])
+    def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
     @scala.inline
-    def deleteResponseData: Self = this.set("responseData", js.undefined)
-    
-    @scala.inline
-    def setUrlsVarargs(value: (String | RegExp)*): Self = this.set("urls", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrls(value: String | RegExp | (js.Array[String | RegExp])): Self = this.set("urls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrls: Self = this.set("urls", js.undefined)
+    def setUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

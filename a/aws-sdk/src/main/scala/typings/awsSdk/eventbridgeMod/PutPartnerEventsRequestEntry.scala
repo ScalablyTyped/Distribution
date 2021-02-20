@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutPartnerEventsRequestEntry extends js.Object {
+trait PutPartnerEventsRequestEntry extends StObject {
   
   /**
     * A valid JSON string. There is no other schema imposed. The JSON string may contain fields and nested subobjects.
@@ -41,51 +42,39 @@ object PutPartnerEventsRequestEntry {
   }
   
   @scala.inline
-  implicit class PutPartnerEventsRequestEntryOps[Self <: PutPartnerEventsRequestEntry] (val x: Self) extends AnyVal {
+  implicit class PutPartnerEventsRequestEntryMutableBuilder[Self <: PutPartnerEventsRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: String): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailType(value: String): Self = StObject.set(x, "DetailType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailTypeUndefined: Self = StObject.set(x, "DetailType", js.undefined)
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("Detail", value.asInstanceOf[js.Any])
+    def setDetailUndefined: Self = StObject.set(x, "Detail", js.undefined)
     
     @scala.inline
-    def deleteDetail: Self = this.set("Detail", js.undefined)
+    def setResources(value: EventResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailType(value: String): Self = this.set("DetailType", value.asInstanceOf[js.Any])
+    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
     @scala.inline
-    def deleteDetailType: Self = this.set("DetailType", js.undefined)
+    def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
     @scala.inline
-    def setResourcesVarargs(value: EventResource*): Self = this.set("Resources", js.Array(value :_*))
+    def setSource(value: EventSourceName): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResources(value: EventResourceList): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
     @scala.inline
-    def deleteResources: Self = this.set("Resources", js.undefined)
+    def setTime(value: EventTime): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: EventSourceName): Self = this.set("Source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("Source", js.undefined)
-    
-    @scala.inline
-    def setTime(value: EventTime): Self = this.set("Time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("Time", js.undefined)
+    def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataGroupOptions extends js.Object {
+trait DataGroupOptions extends StObject {
   
   var drawPoints: js.UndefOr[Graph2dDrawPointsOption | js.Function0[Unit]] = js.native
   
-   // TODO
+  // TODO
   var excludeFromLegend: js.UndefOr[Boolean] = js.native
   
   var interpolation: js.UndefOr[Boolean | InterpolationOptions] = js.native
@@ -29,57 +30,45 @@ object DataGroupOptions {
   }
   
   @scala.inline
-  implicit class DataGroupOptionsOps[Self <: DataGroupOptions] (val x: Self) extends AnyVal {
+  implicit class DataGroupOptionsMutableBuilder[Self <: DataGroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrawPoints(value: Graph2dDrawPointsOption | js.Function0[Unit]): Self = StObject.set(x, "drawPoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDrawPointsFunction0(value: () => Unit): Self = StObject.set(x, "drawPoints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDrawPointsUndefined: Self = StObject.set(x, "drawPoints", js.undefined)
     
     @scala.inline
-    def setDrawPointsFunction0(value: () => Unit): Self = this.set("drawPoints", js.Any.fromFunction0(value))
+    def setExcludeFromLegend(value: Boolean): Self = StObject.set(x, "excludeFromLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawPoints(value: Graph2dDrawPointsOption | js.Function0[Unit]): Self = this.set("drawPoints", value.asInstanceOf[js.Any])
+    def setExcludeFromLegendUndefined: Self = StObject.set(x, "excludeFromLegend", js.undefined)
     
     @scala.inline
-    def deleteDrawPoints: Self = this.set("drawPoints", js.undefined)
+    def setInterpolation(value: Boolean | InterpolationOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeFromLegend(value: Boolean): Self = this.set("excludeFromLegend", value.asInstanceOf[js.Any])
+    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
     @scala.inline
-    def deleteExcludeFromLegend: Self = this.set("excludeFromLegend", js.undefined)
+    def setShaded(value: Graph2dShadedOption): Self = StObject.set(x, "shaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterpolation(value: Boolean | InterpolationOptions): Self = this.set("interpolation", value.asInstanceOf[js.Any])
+    def setShadedUndefined: Self = StObject.set(x, "shaded", js.undefined)
     
     @scala.inline
-    def deleteInterpolation: Self = this.set("interpolation", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShaded(value: Graph2dShadedOption): Self = this.set("shaded", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShaded: Self = this.set("shaded", js.undefined)
+    def setYAxisOrientation(value: RightLeftEnumType): Self = StObject.set(x, "yAxisOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setYAxisOrientation(value: RightLeftEnumType): Self = this.set("yAxisOrientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYAxisOrientation: Self = this.set("yAxisOrientation", js.undefined)
+    def setYAxisOrientationUndefined: Self = StObject.set(x, "yAxisOrientation", js.undefined)
   }
 }

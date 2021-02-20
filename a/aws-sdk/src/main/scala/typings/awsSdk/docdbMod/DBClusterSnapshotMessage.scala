@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterSnapshotMessage extends js.Object {
+trait DBClusterSnapshotMessage extends StObject {
   
   /**
     * Provides a list of cluster snapshots.
@@ -26,33 +27,21 @@ object DBClusterSnapshotMessage {
   }
   
   @scala.inline
-  implicit class DBClusterSnapshotMessageOps[Self <: DBClusterSnapshotMessage] (val x: Self) extends AnyVal {
+  implicit class DBClusterSnapshotMessageMutableBuilder[Self <: DBClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterSnapshots(value: DBClusterSnapshotList): Self = StObject.set(x, "DBClusterSnapshots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterSnapshotsUndefined: Self = StObject.set(x, "DBClusterSnapshots", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterSnapshotsVarargs(value: DBClusterSnapshot*): Self = StObject.set(x, "DBClusterSnapshots", js.Array(value :_*))
     
     @scala.inline
-    def setDBClusterSnapshotsVarargs(value: DBClusterSnapshot*): Self = this.set("DBClusterSnapshots", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterSnapshots(value: DBClusterSnapshotList): Self = this.set("DBClusterSnapshots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterSnapshots: Self = this.set("DBClusterSnapshots", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,54 +55,42 @@ object Label {
   }
   
   @scala.inline
-  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdGroups(value: () => AdWordsSelector[AdGroup]): Self = StObject.set(x, "adGroups", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAds(value: () => AdWordsSelector[Ad]): Self = StObject.set(x, "ads", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = StObject.set(x, "campaigns", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdGroups(value: () => AdWordsSelector[AdGroup]): Self = this.set("adGroups", js.Any.fromFunction0(value))
+    def setGetColor(value: () => String): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAds(value: () => AdWordsSelector[Ad]): Self = this.set("ads", js.Any.fromFunction0(value))
+    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCampaigns(value: () => AdWordsSelector[Campaign]): Self = this.set("campaigns", js.Any.fromFunction0(value))
+    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetColor(value: () => String): Self = this.set("getColor", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    def setKeywords(value: () => AdWordsSelector[Keyword]): Self = StObject.set(x, "keywords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    def setSetColor(value: String => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setKeywords(value: () => AdWordsSelector[Keyword]): Self = this.set("keywords", js.Any.fromFunction0(value))
+    def setSetDescription(value: String => Unit): Self = StObject.set(x, "setDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetColor(value: String => Unit): Self = this.set("setColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDescription(value: String => Unit): Self = this.set("setDescription", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetName(value: String => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

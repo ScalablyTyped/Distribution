@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFExportContentFlag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IArchiveOldVersionsJob extends js.Object {
+trait IArchiveOldVersionsJob extends StObject {
   
   var AtLeastNDaysOlder: Double = js.native
   
@@ -54,54 +55,42 @@ object IArchiveOldVersionsJob {
   }
   
   @scala.inline
-  implicit class IArchiveOldVersionsJobOps[Self <: IArchiveOldVersionsJob] (val x: Self) extends AnyVal {
+  implicit class IArchiveOldVersionsJobMutableBuilder[Self <: IArchiveOldVersionsJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtLeastNDaysOlder(value: Double): Self = StObject.set(x, "AtLeastNDaysOlder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtLeastNVersionsOlder(value: Double): Self = StObject.set(x, "AtLeastNVersionsOlder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheckedInBefore(value: ITimestamp): Self = StObject.set(x, "CheckedInBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtLeastNDaysOlder(value: Double): Self = this.set("AtLeastNDaysOlder", value.asInstanceOf[js.Any])
+    def setClone(value: () => IArchiveOldVersionsJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAtLeastNVersionsOlder(value: Double): Self = this.set("AtLeastNVersionsOlder", value.asInstanceOf[js.Any])
+    def setFlags(value: MFExportContentFlag): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedInBefore(value: ITimestamp): Self = this.set("CheckedInBefore", value.asInstanceOf[js.Any])
+    def setImpersonation(value: IImpersonation): Self = StObject.set(x, "Impersonation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IArchiveOldVersionsJob): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setMarkedForArchiving(value: Boolean): Self = StObject.set(x, "MarkedForArchiving", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: MFExportContentFlag): Self = this.set("Flags", value.asInstanceOf[js.Any])
+    def setNoVersionTag(value: Boolean): Self = StObject.set(x, "NoVersionTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImpersonation(value: IImpersonation): Self = this.set("Impersonation", value.asInstanceOf[js.Any])
+    def setTargetLocation(value: String): Self = StObject.set(x, "TargetLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkedForArchiving(value: Boolean): Self = this.set("MarkedForArchiving", value.asInstanceOf[js.Any])
+    def setUseAtLeastNDaysOlder(value: Boolean): Self = StObject.set(x, "UseAtLeastNDaysOlder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoVersionTag(value: Boolean): Self = this.set("NoVersionTag", value.asInstanceOf[js.Any])
+    def setUseAtLeastNVersionsOlder(value: Boolean): Self = StObject.set(x, "UseAtLeastNVersionsOlder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLocation(value: String): Self = this.set("TargetLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseAtLeastNDaysOlder(value: Boolean): Self = this.set("UseAtLeastNDaysOlder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseAtLeastNVersionsOlder(value: Boolean): Self = this.set("UseAtLeastNVersionsOlder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseCheckedInBefore(value: Boolean): Self = this.set("UseCheckedInBefore", value.asInstanceOf[js.Any])
+    def setUseCheckedInBefore(value: Boolean): Self = StObject.set(x, "UseCheckedInBefore", value.asInstanceOf[js.Any])
   }
 }

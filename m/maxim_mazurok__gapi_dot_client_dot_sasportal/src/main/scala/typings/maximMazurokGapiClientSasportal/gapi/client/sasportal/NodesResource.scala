@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientSasportal.anon.Parent
 import typings.maximMazurokGapiClientSasportal.anon.QuotaUser
 import typings.maximMazurokGapiClientSasportal.anon.UpdateMask
 import typings.maximMazurokGapiClientSasportal.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodesResource extends js.Object {
+trait NodesResource extends StObject {
   
   def create(request: Alt, body: SasPortalNode): Request[SasPortalNode] = js.native
   /** Creates a new node. */

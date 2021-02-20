@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListSubscriptionEventsRequest")
 @js.native
-class ListSubscriptionEventsRequest () extends js.Object {
+class ListSubscriptionEventsRequest () extends StObject {
   
   /**
     * A pagination cursor returned by a previous call to this endpoint.

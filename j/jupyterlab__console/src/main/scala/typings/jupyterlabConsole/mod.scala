@@ -4,16 +4,14 @@ import typings.jupyterlabConsole.widgetMod.CodeConsole.IContentFactory
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IModelFactoryOptions
 import typings.jupyterlabConsole.widgetMod.CodeConsole.IOptions
 import typings.luminoCoreutils.mod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/console", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val IConsoleTracker: Token[typings.jupyterlabConsole.tokensMod.IConsoleTracker] = js.native
-  
+  @JSImport("@jupyterlab/console", "CodeConsole")
   @js.native
   class CodeConsole protected ()
     extends typings.jupyterlabConsole.widgetMod.CodeConsole {
@@ -22,34 +20,29 @@ object mod extends js.Object {
       */
     def this(options: IOptions) = this()
   }
-  @js.native
-  object CodeConsole extends js.Object {
-    
-    /**
-      * A default content factory for the code console.
-      */
-    val defaultContentFactory: IContentFactory = js.native
-    
-    /**
-      * The default `ModelFactory` instance.
-      */
-    val defaultModelFactory: typings.jupyterlabConsole.widgetMod.CodeConsole.ModelFactory = js.native
+  object CodeConsole {
     
     /**
       * Default implementation of `IContentFactory`.
       */
+    @JSImport("@jupyterlab/console", "CodeConsole.ContentFactory")
     @js.native
+    /**
+      * Create a content factory for a cell.
+      */
     class ContentFactory ()
-      extends typings.jupyterlabConsole.widgetMod.CodeConsole.ContentFactory
+      extends typings.jupyterlabConsole.widgetMod.CodeConsole.ContentFactory {
+      def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+    }
     /**
       * A namespace for the code console content factory.
       */
-    @js.native
-    object ContentFactory extends js.Object
+    object ContentFactory
     
     /**
       * The default implementation of an `IModelFactory`.
       */
+    @JSImport("@jupyterlab/console", "CodeConsole.ModelFactory")
     @js.native
     /**
       * Create a new cell model factory.
@@ -58,8 +51,23 @@ object mod extends js.Object {
       extends typings.jupyterlabConsole.widgetMod.CodeConsole.ModelFactory {
       def this(options: IModelFactoryOptions) = this()
     }
+    
+    /**
+      * A default content factory for the code console.
+      */
+    @JSImport("@jupyterlab/console", "CodeConsole.defaultContentFactory")
+    @js.native
+    val defaultContentFactory: IContentFactory = js.native
+    
+    /**
+      * The default `ModelFactory` instance.
+      */
+    @JSImport("@jupyterlab/console", "CodeConsole.defaultModelFactory")
+    @js.native
+    val defaultModelFactory: typings.jupyterlabConsole.widgetMod.CodeConsole.ModelFactory = js.native
   }
   
+  @JSImport("@jupyterlab/console", "ConsoleHistory")
   @js.native
   class ConsoleHistory protected ()
     extends typings.jupyterlabConsole.historyMod.ConsoleHistory {
@@ -69,6 +77,7 @@ object mod extends js.Object {
     def this(options: typings.jupyterlabConsole.historyMod.ConsoleHistory.IOptions) = this()
   }
   
+  @JSImport("@jupyterlab/console", "ConsolePanel")
   @js.native
   class ConsolePanel protected ()
     extends typings.jupyterlabConsole.panelMod.ConsolePanel {
@@ -77,32 +86,41 @@ object mod extends js.Object {
       */
     def this(options: typings.jupyterlabConsole.panelMod.ConsolePanel.IOptions) = this()
   }
-  @js.native
-  object ConsolePanel extends js.Object {
+  object ConsolePanel {
+    
+    /**
+      * Default implementation of `IContentFactory`.
+      */
+    @JSImport("@jupyterlab/console", "ConsolePanel.ContentFactory")
+    @js.native
+    /**
+      * Create a content factory for a cell.
+      */
+    class ContentFactory ()
+      extends typings.jupyterlabConsole.panelMod.ConsolePanel.ContentFactory {
+      def this(options: typings.jupyterlabCells.widgetMod.Cell.ContentFactory.IOptions) = this()
+    }
+    /**
+      * A namespace for the console panel content factory.
+      */
+    object ContentFactory
     
     /**
       * The console renderer token.
       */
+    @JSImport("@jupyterlab/console", "ConsolePanel.IContentFactory")
+    @js.native
     val IContentFactory: Token[typings.jupyterlabConsole.panelMod.ConsolePanel.IContentFactory] = js.native
     
     /**
       * A default code console content factory.
       */
+    @JSImport("@jupyterlab/console", "ConsolePanel.defaultContentFactory")
+    @js.native
     val defaultContentFactory: typings.jupyterlabConsole.panelMod.ConsolePanel.IContentFactory = js.native
-    
-    /**
-      * Default implementation of `IContentFactory`.
-      */
-    @js.native
-    class ContentFactory ()
-      extends typings.jupyterlabConsole.panelMod.ConsolePanel.ContentFactory
-    /**
-      * A namespace for the console panel content factory.
-      */
-    @js.native
-    object ContentFactory extends js.Object
   }
   
+  @JSImport("@jupyterlab/console", "ForeignHandler")
   @js.native
   class ForeignHandler protected ()
     extends typings.jupyterlabConsole.foreignMod.ForeignHandler {
@@ -111,4 +129,8 @@ object mod extends js.Object {
       */
     def this(options: typings.jupyterlabConsole.foreignMod.ForeignHandler.IOptions) = this()
   }
+  
+  @JSImport("@jupyterlab/console", "IConsoleTracker")
+  @js.native
+  val IConsoleTracker: Token[typings.jupyterlabConsole.tokensMod.IConsoleTracker] = js.native
 }

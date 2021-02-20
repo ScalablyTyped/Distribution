@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Predicate extends js.Object {
+trait Predicate extends StObject {
   
   /**
     * A unique identifier for a predicate in a Rule, such as ByteMatchSetId or IPSetId. The ID is returned by the corresponding Create or List command.
@@ -31,27 +32,15 @@ object Predicate {
   }
   
   @scala.inline
-  implicit class PredicateOps[Self <: Predicate] (val x: Self) extends AnyVal {
+  implicit class PredicateMutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataId(value: ResourceId): Self = StObject.set(x, "DataId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNegated(value: Negated): Self = StObject.set(x, "Negated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDataId(value: ResourceId): Self = this.set("DataId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNegated(value: Negated): Self = this.set("Negated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: PredicateType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: PredicateType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

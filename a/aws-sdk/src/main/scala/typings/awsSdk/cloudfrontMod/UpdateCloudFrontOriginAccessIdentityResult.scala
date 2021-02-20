@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudfrontMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateCloudFrontOriginAccessIdentityResult extends js.Object {
+trait UpdateCloudFrontOriginAccessIdentityResult extends StObject {
   
   /**
     * The origin access identity's information.
@@ -26,30 +27,18 @@ object UpdateCloudFrontOriginAccessIdentityResult {
   }
   
   @scala.inline
-  implicit class UpdateCloudFrontOriginAccessIdentityResultOps[Self <: UpdateCloudFrontOriginAccessIdentityResult] (val x: Self) extends AnyVal {
+  implicit class UpdateCloudFrontOriginAccessIdentityResultMutableBuilder[Self <: UpdateCloudFrontOriginAccessIdentityResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudFrontOriginAccessIdentity(value: CloudFrontOriginAccessIdentity): Self = StObject.set(x, "CloudFrontOriginAccessIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudFrontOriginAccessIdentityUndefined: Self = StObject.set(x, "CloudFrontOriginAccessIdentity", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudFrontOriginAccessIdentity(value: CloudFrontOriginAccessIdentity): Self = this.set("CloudFrontOriginAccessIdentity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudFrontOriginAccessIdentity: Self = this.set("CloudFrontOriginAccessIdentity", js.undefined)
-    
-    @scala.inline
-    def setETag(value: String): Self = this.set("ETag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteETag: Self = this.set("ETag", js.undefined)
+    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
   }
 }

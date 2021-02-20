@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.data.proxy.IAjax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,66 +54,54 @@ object IRestProxy {
   }
   
   @scala.inline
-  implicit class IRestProxyOps[Self <: IRestProxy] (val x: Self) extends AnyVal {
+  implicit class IRestProxyMutableBuilder[Self <: IRestProxy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendIdUndefined: Self = StObject.set(x, "appendId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendId(value: Boolean): Self = this.set("appendId", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteAppendId: Self = this.set("appendId", js.undefined)
+    def setGetActionMethods(value: () => _): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setGetAppendId(value: () => Boolean): Self = StObject.set(x, "getAppendId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActionMethods(value: () => _): Self = this.set("getActionMethods", js.Any.fromFunction0(value))
+    def setGetAppendIdUndefined: Self = StObject.set(x, "getAppendId", js.undefined)
     
     @scala.inline
-    def deleteGetActionMethods: Self = this.set("getActionMethods", js.undefined)
+    def setGetFormat(value: () => String): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAppendId(value: () => Boolean): Self = this.set("getAppendId", js.Any.fromFunction0(value))
+    def setGetFormatUndefined: Self = StObject.set(x, "getFormat", js.undefined)
     
     @scala.inline
-    def deleteGetAppendId: Self = this.set("getAppendId", js.undefined)
+    def setSetActionMethods(value: /* actionMethods */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActionMethods", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFormat(value: () => String): Self = this.set("getFormat", js.Any.fromFunction0(value))
+    def setSetActionMethodsUndefined: Self = StObject.set(x, "setActionMethods", js.undefined)
     
     @scala.inline
-    def deleteGetFormat: Self = this.set("getFormat", js.undefined)
+    def setSetAppendId(value: /* appendId */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAppendId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActionMethods(value: /* actionMethods */ js.UndefOr[js.Any] => Unit): Self = this.set("setActionMethods", js.Any.fromFunction1(value))
+    def setSetAppendIdUndefined: Self = StObject.set(x, "setAppendId", js.undefined)
     
     @scala.inline
-    def deleteSetActionMethods: Self = this.set("setActionMethods", js.undefined)
+    def setSetFormat(value: /* format */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAppendId(value: /* appendId */ js.UndefOr[Boolean] => Unit): Self = this.set("setAppendId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetAppendId: Self = this.set("setAppendId", js.undefined)
-    
-    @scala.inline
-    def setSetFormat(value: /* format */ js.UndefOr[String] => Unit): Self = this.set("setFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetFormat: Self = this.set("setFormat", js.undefined)
+    def setSetFormatUndefined: Self = StObject.set(x, "setFormat", js.undefined)
   }
 }

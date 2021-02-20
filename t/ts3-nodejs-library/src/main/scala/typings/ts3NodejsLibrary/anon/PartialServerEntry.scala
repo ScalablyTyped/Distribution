@@ -1,12 +1,13 @@
 package typings.ts3NodejsLibrary.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/types/ResponseTypes.ServerEntry> */
 @js.native
-trait PartialServerEntry extends js.Object {
+trait PartialServerEntry extends StObject {
   
   var virtualserverAutostart: js.UndefOr[Double] = js.native
   
@@ -39,84 +40,72 @@ object PartialServerEntry {
   }
   
   @scala.inline
-  implicit class PartialServerEntryOps[Self <: PartialServerEntry] (val x: Self) extends AnyVal {
+  implicit class PartialServerEntryMutableBuilder[Self <: PartialServerEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVirtualserverAutostart(value: Double): Self = StObject.set(x, "virtualserverAutostart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setVirtualserverAutostartUndefined: Self = StObject.set(x, "virtualserverAutostart", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVirtualserverClientsonline(value: Double): Self = StObject.set(x, "virtualserverClientsonline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverAutostart(value: Double): Self = this.set("virtualserverAutostart", value.asInstanceOf[js.Any])
+    def setVirtualserverClientsonlineUndefined: Self = StObject.set(x, "virtualserverClientsonline", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverAutostart: Self = this.set("virtualserverAutostart", js.undefined)
+    def setVirtualserverId(value: String): Self = StObject.set(x, "virtualserverId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverClientsonline(value: Double): Self = this.set("virtualserverClientsonline", value.asInstanceOf[js.Any])
+    def setVirtualserverIdUndefined: Self = StObject.set(x, "virtualserverId", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverClientsonline: Self = this.set("virtualserverClientsonline", js.undefined)
+    def setVirtualserverMachineId(value: String): Self = StObject.set(x, "virtualserverMachineId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverId(value: String): Self = this.set("virtualserverId", value.asInstanceOf[js.Any])
+    def setVirtualserverMachineIdUndefined: Self = StObject.set(x, "virtualserverMachineId", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverId: Self = this.set("virtualserverId", js.undefined)
+    def setVirtualserverMaxclients(value: Double): Self = StObject.set(x, "virtualserverMaxclients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverMachineId(value: String): Self = this.set("virtualserverMachineId", value.asInstanceOf[js.Any])
+    def setVirtualserverMaxclientsUndefined: Self = StObject.set(x, "virtualserverMaxclients", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverMachineId: Self = this.set("virtualserverMachineId", js.undefined)
+    def setVirtualserverName(value: String): Self = StObject.set(x, "virtualserverName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverMaxclients(value: Double): Self = this.set("virtualserverMaxclients", value.asInstanceOf[js.Any])
+    def setVirtualserverNameUndefined: Self = StObject.set(x, "virtualserverName", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverMaxclients: Self = this.set("virtualserverMaxclients", js.undefined)
+    def setVirtualserverPort(value: Double): Self = StObject.set(x, "virtualserverPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverName(value: String): Self = this.set("virtualserverName", value.asInstanceOf[js.Any])
+    def setVirtualserverPortUndefined: Self = StObject.set(x, "virtualserverPort", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverName: Self = this.set("virtualserverName", js.undefined)
+    def setVirtualserverQueryclientsonline(value: Double): Self = StObject.set(x, "virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverPort(value: Double): Self = this.set("virtualserverPort", value.asInstanceOf[js.Any])
+    def setVirtualserverQueryclientsonlineUndefined: Self = StObject.set(x, "virtualserverQueryclientsonline", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverPort: Self = this.set("virtualserverPort", js.undefined)
+    def setVirtualserverStatus(value: String): Self = StObject.set(x, "virtualserverStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverQueryclientsonline(value: Double): Self = this.set("virtualserverQueryclientsonline", value.asInstanceOf[js.Any])
+    def setVirtualserverStatusUndefined: Self = StObject.set(x, "virtualserverStatus", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverQueryclientsonline: Self = this.set("virtualserverQueryclientsonline", js.undefined)
+    def setVirtualserverUniqueIdentifier(value: String): Self = StObject.set(x, "virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverStatus(value: String): Self = this.set("virtualserverStatus", value.asInstanceOf[js.Any])
+    def setVirtualserverUniqueIdentifierUndefined: Self = StObject.set(x, "virtualserverUniqueIdentifier", js.undefined)
     
     @scala.inline
-    def deleteVirtualserverStatus: Self = this.set("virtualserverStatus", js.undefined)
+    def setVirtualserverUptime(value: Double): Self = StObject.set(x, "virtualserverUptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVirtualserverUniqueIdentifier(value: String): Self = this.set("virtualserverUniqueIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualserverUniqueIdentifier: Self = this.set("virtualserverUniqueIdentifier", js.undefined)
-    
-    @scala.inline
-    def setVirtualserverUptime(value: Double): Self = this.set("virtualserverUptime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVirtualserverUptime: Self = this.set("virtualserverUptime", js.undefined)
+    def setVirtualserverUptimeUndefined: Self = StObject.set(x, "virtualserverUptime", js.undefined)
   }
 }

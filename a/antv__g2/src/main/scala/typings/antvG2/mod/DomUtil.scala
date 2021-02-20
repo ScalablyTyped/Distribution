@@ -111,13 +111,14 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@antv/g2", "DomUtil")
 @js.native
-class DomUtil () extends js.Object {
+class DomUtil () extends StObject {
   
   def addEventListener(target: HTMLElement, eventType: String, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   @JSName("addEventListener")

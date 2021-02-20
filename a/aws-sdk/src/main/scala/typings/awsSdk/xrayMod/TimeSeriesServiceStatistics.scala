@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSeriesServiceStatistics extends js.Object {
+trait TimeSeriesServiceStatistics extends StObject {
   
   var EdgeSummaryStatistics: js.UndefOr[EdgeStatistics] = js.native
   
@@ -35,51 +36,39 @@ object TimeSeriesServiceStatistics {
   }
   
   @scala.inline
-  implicit class TimeSeriesServiceStatisticsOps[Self <: TimeSeriesServiceStatistics] (val x: Self) extends AnyVal {
+  implicit class TimeSeriesServiceStatisticsMutableBuilder[Self <: TimeSeriesServiceStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEdgeSummaryStatistics(value: EdgeStatistics): Self = StObject.set(x, "EdgeSummaryStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEdgeSummaryStatisticsUndefined: Self = StObject.set(x, "EdgeSummaryStatistics", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseTimeHistogram(value: Histogram): Self = StObject.set(x, "ResponseTimeHistogram", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdgeSummaryStatistics(value: EdgeStatistics): Self = this.set("EdgeSummaryStatistics", value.asInstanceOf[js.Any])
+    def setResponseTimeHistogramUndefined: Self = StObject.set(x, "ResponseTimeHistogram", js.undefined)
     
     @scala.inline
-    def deleteEdgeSummaryStatistics: Self = this.set("EdgeSummaryStatistics", js.undefined)
+    def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = StObject.set(x, "ResponseTimeHistogram", js.Array(value :_*))
     
     @scala.inline
-    def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = this.set("ResponseTimeHistogram", js.Array(value :_*))
+    def setServiceForecastStatistics(value: ForecastStatistics): Self = StObject.set(x, "ServiceForecastStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseTimeHistogram(value: Histogram): Self = this.set("ResponseTimeHistogram", value.asInstanceOf[js.Any])
+    def setServiceForecastStatisticsUndefined: Self = StObject.set(x, "ServiceForecastStatistics", js.undefined)
     
     @scala.inline
-    def deleteResponseTimeHistogram: Self = this.set("ResponseTimeHistogram", js.undefined)
+    def setServiceSummaryStatistics(value: ServiceStatistics): Self = StObject.set(x, "ServiceSummaryStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceForecastStatistics(value: ForecastStatistics): Self = this.set("ServiceForecastStatistics", value.asInstanceOf[js.Any])
+    def setServiceSummaryStatisticsUndefined: Self = StObject.set(x, "ServiceSummaryStatistics", js.undefined)
     
     @scala.inline
-    def deleteServiceForecastStatistics: Self = this.set("ServiceForecastStatistics", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceSummaryStatistics(value: ServiceStatistics): Self = this.set("ServiceSummaryStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceSummaryStatistics: Self = this.set("ServiceSummaryStatistics", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

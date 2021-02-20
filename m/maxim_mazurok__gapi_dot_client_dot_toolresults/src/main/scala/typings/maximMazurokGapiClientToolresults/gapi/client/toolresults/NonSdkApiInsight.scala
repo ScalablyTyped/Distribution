@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NonSdkApiInsight extends js.Object {
+trait NonSdkApiInsight extends StObject {
   
   /** Optional sample stack traces, for which this insight applies (there should be at least one). */
   var exampleTraceMessages: js.UndefOr[js.Array[String]] = js.native
@@ -28,45 +29,33 @@ object NonSdkApiInsight {
   }
   
   @scala.inline
-  implicit class NonSdkApiInsightOps[Self <: NonSdkApiInsight] (val x: Self) extends AnyVal {
+  implicit class NonSdkApiInsightMutableBuilder[Self <: NonSdkApiInsight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExampleTraceMessages(value: js.Array[String]): Self = StObject.set(x, "exampleTraceMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExampleTraceMessagesUndefined: Self = StObject.set(x, "exampleTraceMessages", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExampleTraceMessagesVarargs(value: String*): Self = StObject.set(x, "exampleTraceMessages", js.Array(value :_*))
     
     @scala.inline
-    def setExampleTraceMessagesVarargs(value: String*): Self = this.set("exampleTraceMessages", js.Array(value :_*))
+    def setMatcherId(value: String): Self = StObject.set(x, "matcherId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExampleTraceMessages(value: js.Array[String]): Self = this.set("exampleTraceMessages", value.asInstanceOf[js.Any])
+    def setMatcherIdUndefined: Self = StObject.set(x, "matcherId", js.undefined)
     
     @scala.inline
-    def deleteExampleTraceMessages: Self = this.set("exampleTraceMessages", js.undefined)
+    def setPendingGoogleUpdateInsight(value: PendingGoogleUpdateInsight): Self = StObject.set(x, "pendingGoogleUpdateInsight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatcherId(value: String): Self = this.set("matcherId", value.asInstanceOf[js.Any])
+    def setPendingGoogleUpdateInsightUndefined: Self = StObject.set(x, "pendingGoogleUpdateInsight", js.undefined)
     
     @scala.inline
-    def deleteMatcherId: Self = this.set("matcherId", js.undefined)
+    def setUpgradeInsight(value: UpgradeInsight): Self = StObject.set(x, "upgradeInsight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPendingGoogleUpdateInsight(value: PendingGoogleUpdateInsight): Self = this.set("pendingGoogleUpdateInsight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePendingGoogleUpdateInsight: Self = this.set("pendingGoogleUpdateInsight", js.undefined)
-    
-    @scala.inline
-    def setUpgradeInsight(value: UpgradeInsight): Self = this.set("upgradeInsight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpgradeInsight: Self = this.set("upgradeInsight", js.undefined)
+    def setUpgradeInsightUndefined: Self = StObject.set(x, "upgradeInsight", js.undefined)
   }
 }

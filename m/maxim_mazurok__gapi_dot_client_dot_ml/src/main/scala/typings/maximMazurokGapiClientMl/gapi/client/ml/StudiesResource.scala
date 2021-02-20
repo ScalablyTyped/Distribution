@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientMl.anon.Alt
 import typings.maximMazurokGapiClientMl.anon.AltCallback
 import typings.maximMazurokGapiClientMl.anon.Fields
 import typings.maximMazurokGapiClientMl.anon.StudyId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StudiesResource extends js.Object {
+trait StudiesResource extends StObject {
   
   def create(request: AltCallback, body: GoogleCloudMlV1Study): Request[GoogleCloudMlV1Study] = js.native
   /** Creates a study. */

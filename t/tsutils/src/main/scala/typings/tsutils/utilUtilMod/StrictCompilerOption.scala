@@ -1,5 +1,6 @@
 package typings.tsutils.utilUtilMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tsutils.tsutilsStrings.alwaysStrict
   - typings.tsutils.tsutilsStrings.strictBindCallApply
 */
-trait StrictCompilerOption extends js.Object
+trait StrictCompilerOption extends StObject
 object StrictCompilerOption {
   
   @scala.inline

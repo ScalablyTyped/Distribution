@@ -1,11 +1,12 @@
 package typings.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerScope extends js.Object {
+trait ServerScope extends StObject {
   
   // http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication
   def auth(username: String, userpass: String): js.Promise[DatabaseAuthResponse] = js.native

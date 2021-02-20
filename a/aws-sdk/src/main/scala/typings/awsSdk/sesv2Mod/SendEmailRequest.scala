@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendEmailRequest extends js.Object {
+trait SendEmailRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to use when sending the email.
@@ -66,81 +67,69 @@ object SendEmailRequest {
   }
   
   @scala.inline
-  implicit class SendEmailRequestOps[Self <: SendEmailRequest] (val x: Self) extends AnyVal {
+  implicit class SendEmailRequestMutableBuilder[Self <: SendEmailRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent(value: EmailContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: EmailContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
     
     @scala.inline
-    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    def setEmailTags(value: MessageTagList): Self = StObject.set(x, "EmailTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: Destination): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setEmailTagsUndefined: Self = StObject.set(x, "EmailTags", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("Destination", js.undefined)
+    def setEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "EmailTags", js.Array(value :_*))
     
     @scala.inline
-    def setEmailTagsVarargs(value: MessageTag*): Self = this.set("EmailTags", js.Array(value :_*))
+    def setFeedbackForwardingEmailAddress(value: EmailAddress): Self = StObject.set(x, "FeedbackForwardingEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailTags(value: MessageTagList): Self = this.set("EmailTags", value.asInstanceOf[js.Any])
+    def setFeedbackForwardingEmailAddressIdentityArn(value: AmazonResourceName): Self = StObject.set(x, "FeedbackForwardingEmailAddressIdentityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailTags: Self = this.set("EmailTags", js.undefined)
+    def setFeedbackForwardingEmailAddressIdentityArnUndefined: Self = StObject.set(x, "FeedbackForwardingEmailAddressIdentityArn", js.undefined)
     
     @scala.inline
-    def setFeedbackForwardingEmailAddress(value: EmailAddress): Self = this.set("FeedbackForwardingEmailAddress", value.asInstanceOf[js.Any])
+    def setFeedbackForwardingEmailAddressUndefined: Self = StObject.set(x, "FeedbackForwardingEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteFeedbackForwardingEmailAddress: Self = this.set("FeedbackForwardingEmailAddress", js.undefined)
+    def setFromEmailAddress(value: EmailAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackForwardingEmailAddressIdentityArn(value: AmazonResourceName): Self = this.set("FeedbackForwardingEmailAddressIdentityArn", value.asInstanceOf[js.Any])
+    def setFromEmailAddressIdentityArn(value: AmazonResourceName): Self = StObject.set(x, "FromEmailAddressIdentityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeedbackForwardingEmailAddressIdentityArn: Self = this.set("FeedbackForwardingEmailAddressIdentityArn", js.undefined)
+    def setFromEmailAddressIdentityArnUndefined: Self = StObject.set(x, "FromEmailAddressIdentityArn", js.undefined)
     
     @scala.inline
-    def setFromEmailAddress(value: EmailAddress): Self = this.set("FromEmailAddress", value.asInstanceOf[js.Any])
+    def setFromEmailAddressUndefined: Self = StObject.set(x, "FromEmailAddress", js.undefined)
     
     @scala.inline
-    def deleteFromEmailAddress: Self = this.set("FromEmailAddress", js.undefined)
+    def setListManagementOptions(value: ListManagementOptions): Self = StObject.set(x, "ListManagementOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromEmailAddressIdentityArn(value: AmazonResourceName): Self = this.set("FromEmailAddressIdentityArn", value.asInstanceOf[js.Any])
+    def setListManagementOptionsUndefined: Self = StObject.set(x, "ListManagementOptions", js.undefined)
     
     @scala.inline
-    def deleteFromEmailAddressIdentityArn: Self = this.set("FromEmailAddressIdentityArn", js.undefined)
+    def setReplyToAddresses(value: EmailAddressList): Self = StObject.set(x, "ReplyToAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListManagementOptions(value: ListManagementOptions): Self = this.set("ListManagementOptions", value.asInstanceOf[js.Any])
+    def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
     @scala.inline
-    def deleteListManagementOptions: Self = this.set("ListManagementOptions", js.undefined)
-    
-    @scala.inline
-    def setReplyToAddressesVarargs(value: EmailAddress*): Self = this.set("ReplyToAddresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplyToAddresses(value: EmailAddressList): Self = this.set("ReplyToAddresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplyToAddresses: Self = this.set("ReplyToAddresses", js.undefined)
+    def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
   }
 }

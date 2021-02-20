@@ -10,13 +10,14 @@ import typings.winrtUwp.winrtUwpStrings.enumerationcompleted
 import typings.winrtUwp.winrtUwpStrings.removed
 import typings.winrtUwp.winrtUwpStrings.stopped
 import typings.winrtUwp.winrtUwpStrings.updated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enumerates devices dynamically, so that the app receives notifications if devices are added, removed, or changed after the initial enumeration is complete. */
 @js.native
-trait DeviceWatcher extends js.Object {
+trait DeviceWatcher extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

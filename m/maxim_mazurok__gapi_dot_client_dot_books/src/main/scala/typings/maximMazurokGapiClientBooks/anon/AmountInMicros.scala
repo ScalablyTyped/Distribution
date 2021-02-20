@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmountInMicros extends js.Object {
+trait AmountInMicros extends StObject {
   
   var amountInMicros: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object AmountInMicros {
   }
   
   @scala.inline
-  implicit class AmountInMicrosOps[Self <: AmountInMicros] (val x: Self) extends AnyVal {
+  implicit class AmountInMicrosMutableBuilder[Self <: AmountInMicros] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmountInMicros(value: Double): Self = StObject.set(x, "amountInMicros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountInMicrosUndefined: Self = StObject.set(x, "amountInMicros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmountInMicros(value: Double): Self = this.set("amountInMicros", value.asInstanceOf[js.Any])
+    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
     @scala.inline
-    def deleteAmountInMicros: Self = this.set("amountInMicros", js.undefined)
+    def setReleaseNumber(value: String): Self = StObject.set(x, "releaseNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    def setReleaseNumberUndefined: Self = StObject.set(x, "releaseNumber", js.undefined)
     
     @scala.inline
-    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    def setReleaseTime(value: String): Self = StObject.set(x, "releaseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseNumber(value: String): Self = this.set("releaseNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReleaseNumber: Self = this.set("releaseNumber", js.undefined)
-    
-    @scala.inline
-    def setReleaseTime(value: String): Self = this.set("releaseTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReleaseTime: Self = this.set("releaseTime", js.undefined)
+    def setReleaseTimeUndefined: Self = StObject.set(x, "releaseTime", js.undefined)
   }
 }

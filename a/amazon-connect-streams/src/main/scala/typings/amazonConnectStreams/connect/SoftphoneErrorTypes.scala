@@ -1,14 +1,15 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SoftphoneErrorTypes extends js.Object
+sealed trait SoftphoneErrorTypes extends StObject
 @JSGlobal("connect.SoftphoneErrorTypes")
 @js.native
-object SoftphoneErrorTypes extends js.Object {
+object SoftphoneErrorTypes extends StObject {
   
   @js.native
   sealed trait ICE_COLLECTION_TIMEOUT extends SoftphoneErrorTypes

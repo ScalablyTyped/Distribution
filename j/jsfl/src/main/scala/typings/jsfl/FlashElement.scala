@@ -1,5 +1,6 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -195,159 +196,147 @@ object FlashElement {
   }
   
   @scala.inline
-  implicit class FlashElementOps[Self <: FlashElement] (val x: Self) extends AnyVal {
+  implicit class FlashElementMutableBuilder[Self <: FlashElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBitmapRenderMode(value: String): Self = StObject.set(x, "bitmapRenderMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlendMode(value: String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setButtonTracking(value: String): Self = StObject.set(x, "buttonTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmapRenderMode(value: String): Self = this.set("bitmapRenderMode", value.asInstanceOf[js.Any])
+    def setCacheAsBitmap(value: Boolean): Self = StObject.set(x, "cacheAsBitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlendMode(value: String): Self = this.set("blendMode", value.asInstanceOf[js.Any])
+    def setColorAlphaAmount(value: Double): Self = StObject.set(x, "colorAlphaAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonTracking(value: String): Self = this.set("buttonTracking", value.asInstanceOf[js.Any])
+    def setColorAlphaPercent(value: Double): Self = StObject.set(x, "colorAlphaPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheAsBitmap(value: Boolean): Self = this.set("cacheAsBitmap", value.asInstanceOf[js.Any])
+    def setColorBlueAmount(value: Double): Self = StObject.set(x, "colorBlueAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorAlphaAmount(value: Double): Self = this.set("colorAlphaAmount", value.asInstanceOf[js.Any])
+    def setColorBluePercent(value: Double): Self = StObject.set(x, "colorBluePercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorAlphaPercent(value: Double): Self = this.set("colorAlphaPercent", value.asInstanceOf[js.Any])
+    def setColorGreenAmount(value: Double): Self = StObject.set(x, "colorGreenAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorBlueAmount(value: Double): Self = this.set("colorBlueAmount", value.asInstanceOf[js.Any])
+    def setColorGreenPercent(value: Double): Self = StObject.set(x, "colorGreenPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorBluePercent(value: Double): Self = this.set("colorBluePercent", value.asInstanceOf[js.Any])
+    def setColorMode(value: String): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorGreenAmount(value: Double): Self = this.set("colorGreenAmount", value.asInstanceOf[js.Any])
+    def setColorRedAmount(value: Double): Self = StObject.set(x, "colorRedAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorGreenPercent(value: Double): Self = this.set("colorGreenPercent", value.asInstanceOf[js.Any])
+    def setColorRedPercent(value: Double): Self = StObject.set(x, "colorRedPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorMode(value: String): Self = this.set("colorMode", value.asInstanceOf[js.Any])
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRedAmount(value: Double): Self = this.set("colorRedAmount", value.asInstanceOf[js.Any])
+    def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRedPercent(value: Double): Self = this.set("colorRedPercent", value.asInstanceOf[js.Any])
+    def setFilters(value: js.Array[FlashFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setFiltersVarargs(value: FlashFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def setElementType(value: String): Self = this.set("elementType", value.asInstanceOf[js.Any])
+    def setFirstFrame(value: Double): Self = StObject.set(x, "firstFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltersVarargs(value: FlashFilter*): Self = this.set("filters", js.Array(value :_*))
+    def setGetPersistentData(value: String => js.Any): Self = StObject.set(x, "getPersistentData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFilters(value: js.Array[FlashFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setGetTransformationPoint(value: () => FlashPoint): Self = StObject.set(x, "getTransformationPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstFrame(value: Double): Self = this.set("firstFrame", value.asInstanceOf[js.Any])
+    def setHasPersistentData(value: String => Boolean): Self = StObject.set(x, "hasPersistentData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPersistentData(value: String => js.Any): Self = this.set("getPersistentData", js.Any.fromFunction1(value))
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTransformationPoint(value: () => FlashPoint): Self = this.set("getTransformationPoint", js.Any.fromFunction0(value))
+    def setLayer(value: FlashLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasPersistentData(value: String => Boolean): Self = this.set("hasPersistentData", js.Any.fromFunction1(value))
+    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: FlashLayer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setLoop(value: String): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMatrix(value: FlashMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoop(value: String): Self = this.set("loop", value.asInstanceOf[js.Any])
+    def setRemovePersistentData(value: String => Unit): Self = StObject.set(x, "removePersistentData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatrix(value: FlashMatrix): Self = this.set("matrix", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemovePersistentData(value: String => Unit): Self = this.set("removePersistentData", js.Any.fromFunction1(value))
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleX(value: Double): Self = this.set("scaleX", value.asInstanceOf[js.Any])
+    def setSetPersistentData(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "setPersistentData", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setScaleY(value: Double): Self = this.set("scaleY", value.asInstanceOf[js.Any])
+    def setSetTransformationPoint(value: FlashPoint => Unit): Self = StObject.set(x, "setTransformationPoint", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPersistentData(value: (String, String, js.Any) => Unit): Self = this.set("setPersistentData", js.Any.fromFunction3(value))
+    def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTransformationPoint(value: FlashPoint => Unit): Self = this.set("setTransformationPoint", js.Any.fromFunction1(value))
+    def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewX(value: Double): Self = this.set("skewX", value.asInstanceOf[js.Any])
+    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkewY(value: Double): Self = this.set("skewY", value.asInstanceOf[js.Any])
+    def setTransformX(value: Double): Self = StObject.set(x, "transformX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolType(value: String): Self = this.set("symbolType", value.asInstanceOf[js.Any])
+    def setTransformY(value: Double): Self = StObject.set(x, "transformY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    def setUseBackgroundColor(value: Boolean): Self = StObject.set(x, "useBackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformX(value: Double): Self = this.set("transformX", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransformY(value: Double): Self = this.set("transformY", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseBackgroundColor(value: Boolean): Self = this.set("useBackgroundColor", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.sketchapp
 
 import typings.sketchapp.sketchappStrings.borderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchMSBorderOptions extends js.Object {
+trait SketchMSBorderOptions extends StObject {
   
   var _class: borderOptions = js.native
   
@@ -33,36 +34,24 @@ object SketchMSBorderOptions {
   }
   
   @scala.inline
-  implicit class SketchMSBorderOptionsOps[Self <: SketchMSBorderOptions] (val x: Self) extends AnyVal {
+  implicit class SketchMSBorderOptionsMutableBuilder[Self <: SketchMSBorderOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashPattern(value: js.Array[Double]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_class(value: borderOptions): Self = this.set("_class", value.asInstanceOf[js.Any])
+    def setLineCapStyle(value: SketchMSBorderLineCapStyle): Self = StObject.set(x, "lineCapStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashPatternVarargs(value: Double*): Self = this.set("dashPattern", js.Array(value :_*))
+    def setLineJoinStyle(value: SketchMSBorderLineJoinStyle): Self = StObject.set(x, "lineJoinStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashPattern(value: js.Array[Double]): Self = this.set("dashPattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineCapStyle(value: SketchMSBorderLineCapStyle): Self = this.set("lineCapStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLineJoinStyle(value: SketchMSBorderLineJoinStyle): Self = this.set("lineJoinStyle", value.asInstanceOf[js.Any])
+    def set_class(value: borderOptions): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

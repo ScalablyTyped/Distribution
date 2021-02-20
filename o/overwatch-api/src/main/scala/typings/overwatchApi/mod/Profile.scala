@@ -4,12 +4,13 @@ import typings.overwatchApi.anon.Competitive
 import typings.overwatchApi.anon.Damage
 import typings.overwatchApi.anon.Frame
 import typings.overwatchApi.anon.Quickplay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Profile extends js.Object {
+trait Profile extends StObject {
   
   var competitive: Damage = js.native
   
@@ -52,48 +53,36 @@ object Profile {
   }
   
   @scala.inline
-  implicit class ProfileOps[Self <: Profile] (val x: Self) extends AnyVal {
+  implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompetitive(value: Damage): Self = StObject.set(x, "competitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndorsement(value: Frame): Self = StObject.set(x, "endorsement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGames(value: Competitive): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompetitive(value: Damage): Self = this.set("competitive", value.asInstanceOf[js.Any])
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndorsement(value: Frame): Self = this.set("endorsement", value.asInstanceOf[js.Any])
+    def setLevelFrame(value: String): Self = StObject.set(x, "levelFrame", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGames(value: Competitive): Self = this.set("games", value.asInstanceOf[js.Any])
+    def setPlaytime(value: Quickplay): Self = StObject.set(x, "playtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setPortrait(value: String): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevelFrame(value: String): Self = this.set("levelFrame", value.asInstanceOf[js.Any])
+    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaytime(value: Quickplay): Self = this.set("playtime", value.asInstanceOf[js.Any])
+    def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortrait(value: String): Self = this.set("portrait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrivate(value: Boolean): Self = this.set("private", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStar(value: String): Self = this.set("star", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

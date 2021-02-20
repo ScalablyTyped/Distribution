@@ -1,15 +1,15 @@
 package typings.agGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/templateService", JSImport.Namespace)
-@js.native
-object templateServiceMod extends js.Object {
+object templateServiceMod {
   
+  @JSImport("ag-grid/dist/lib/templateService", "TemplateService")
   @js.native
-  class TemplateService () extends js.Object {
+  class TemplateService () extends StObject {
     
     @JSName("$scope")
     var $scope: js.Any = js.native

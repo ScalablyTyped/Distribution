@@ -2,6 +2,24 @@
 # Scala.js typings for apigee-access
 
 
+## Library description:
+Provides access to Apigee-specific functionality
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | apigee-access |
+| Keywords           | apigee |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 43423 |
+| # stars            | 1 |
+
+## Links
+- [Homepage](https://github.com/apigee/apigee-access)
+- [Bugs](https://github.com/apigee/apigee-access/issues)
+- [Repository](https://github.com/apigee/apigee-access)
+- [Npm](https://www.npmjs.com/package/apigee-access)
+    
 
 
 ## Note

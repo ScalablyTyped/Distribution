@@ -1,20 +1,22 @@
 package typings.gitlab
 
 import typings.gitlab.anon.searchstringundefinedPagi
+import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
 import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gitlab/dist/types/core/services/Branches", JSImport.Namespace)
-@js.native
-object branchesMod extends js.Object {
+object branchesMod {
   
+  @JSImport("gitlab/dist/types/core/services/Branches", "Branches")
   @js.native
   class Branches () extends BaseService {
+    def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
     def all(projectId: String, options: searchstringundefinedPagi): js.Promise[GetResponse] = js.native

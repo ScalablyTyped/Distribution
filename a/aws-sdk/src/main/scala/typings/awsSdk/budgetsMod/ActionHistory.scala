@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionHistory extends js.Object {
+trait ActionHistory extends StObject {
   
   /**
     *  The description of details of the event. 
@@ -38,30 +39,18 @@ object ActionHistory {
   }
   
   @scala.inline
-  implicit class ActionHistoryOps[Self <: ActionHistory] (val x: Self) extends AnyVal {
+  implicit class ActionHistoryMutableBuilder[Self <: ActionHistory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionHistoryDetails(value: ActionHistoryDetails): Self = StObject.set(x, "ActionHistoryDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: ActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionHistoryDetails(value: ActionHistoryDetails): Self = this.set("ActionHistoryDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEventType(value: EventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ActionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: GenericTimestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: GenericTimestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

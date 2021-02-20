@@ -5,25 +5,14 @@ import typings.ethereumjsTx.typesMod.FakeTxData
 import typings.ethereumjsTx.typesMod.PrefixedHexString
 import typings.ethereumjsTx.typesMod.TransactionOptions
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereumjs-tx/dist/fake", JSImport.Namespace)
-@js.native
-object fakeMod extends js.Object {
+object fakeMod {
   
-  @js.native
-  trait FakeTransaction
-    extends typings.ethereumjsTx.transactionMod.default {
-    
-    /**
-      * Set from address to bypass transaction signing.
-      * This is not an optional property, as its getter never returns undefined.
-      */
-    var from: Buffer = js.native
-  }
-  
+  @JSImport("ethereumjs-tx/dist/fake", JSImport.Default)
   @js.native
   class default () extends FakeTransaction {
     def this(data: js.Array[BufferLike]) = this()
@@ -35,5 +24,16 @@ object fakeMod extends js.Object {
     def this(data: FakeTxData, opts: TransactionOptions) = this()
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()
+  }
+  
+  @js.native
+  trait FakeTransaction
+    extends typings.ethereumjsTx.transactionMod.default {
+    
+    /**
+      * Set from address to bypass transaction signing.
+      * This is not an optional property, as its getter never returns undefined.
+      */
+    var from: Buffer = js.native
   }
 }

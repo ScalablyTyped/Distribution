@@ -2,16 +2,21 @@ package typings.marko
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.marko.tagMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/compiler/taglib-loader/Taglib", JSImport.Namespace)
-@js.native
-object taglibMod extends js.Object {
+object taglibMod {
+  
+  @JSImport("marko/src/compiler/taglib-loader/Taglib", JSImport.Default)
+  @js.native
+  class default protected () extends Taglib {
+    def this(filePath: String) = this()
+  }
   
   @js.native
-  trait Taglib extends js.Object {
+  trait Taglib extends StObject {
     
     def addAttribute(attribute: typings.marko.attributeMod.default): Unit = js.native
     
@@ -56,10 +61,5 @@ object taglibMod extends js.Object {
     def toJSON(): js.Any = js.native
     
     var transformers: js.Array[typings.marko.transformerMod.default] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Taglib {
-    def this(filePath: String) = this()
   }
 }

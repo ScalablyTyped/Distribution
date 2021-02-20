@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebVR API interface represents the state of a VR sensor at a given timestamp (which includes orientation, position, velocity, and acceleration information.) */
 @js.native
-trait VRPose extends js.Object {
+trait VRPose extends StObject {
   
   val angularAcceleration: Float32Array | Null = js.native
   
@@ -31,57 +32,45 @@ object VRPose {
   }
   
   @scala.inline
-  implicit class VRPoseOps[Self <: VRPose] (val x: Self) extends AnyVal {
+  implicit class VRPoseMutableBuilder[Self <: VRPose] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngularAcceleration(value: Float32Array): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngularAccelerationNull: Self = StObject.set(x, "angularAcceleration", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngularVelocity(value: Float32Array): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setAngularVelocityNull: Self = StObject.set(x, "angularVelocity", null)
     
     @scala.inline
-    def setAngularAcceleration(value: Float32Array): Self = this.set("angularAcceleration", value.asInstanceOf[js.Any])
+    def setLinearAcceleration(value: Float32Array): Self = StObject.set(x, "linearAcceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularAccelerationNull: Self = this.set("angularAcceleration", null)
+    def setLinearAccelerationNull: Self = StObject.set(x, "linearAcceleration", null)
     
     @scala.inline
-    def setAngularVelocity(value: Float32Array): Self = this.set("angularVelocity", value.asInstanceOf[js.Any])
+    def setLinearVelocity(value: Float32Array): Self = StObject.set(x, "linearVelocity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngularVelocityNull: Self = this.set("angularVelocity", null)
+    def setLinearVelocityNull: Self = StObject.set(x, "linearVelocity", null)
     
     @scala.inline
-    def setLinearAcceleration(value: Float32Array): Self = this.set("linearAcceleration", value.asInstanceOf[js.Any])
+    def setOrientation(value: Float32Array): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearAccelerationNull: Self = this.set("linearAcceleration", null)
+    def setOrientationNull: Self = StObject.set(x, "orientation", null)
     
     @scala.inline
-    def setLinearVelocity(value: Float32Array): Self = this.set("linearVelocity", value.asInstanceOf[js.Any])
+    def setPosition(value: Float32Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinearVelocityNull: Self = this.set("linearVelocity", null)
+    def setPositionNull: Self = StObject.set(x, "position", null)
     
     @scala.inline
-    def setOrientation(value: Float32Array): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrientationNull: Self = this.set("orientation", null)
-    
-    @scala.inline
-    def setPosition(value: Float32Array): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionNull: Self = this.set("position", null)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.backbone.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Parseable extends js.Object {
+trait Parseable extends StObject {
   
   var parse: js.UndefOr[Boolean] = js.native
 }
@@ -18,24 +19,12 @@ object Parseable {
   }
   
   @scala.inline
-  implicit class ParseableOps[Self <: Parseable] (val x: Self) extends AnyVal {
+  implicit class ParseableMutableBuilder[Self <: Parseable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParse(value: Boolean): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParse(value: Boolean): Self = this.set("parse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParse: Self = this.set("parse", js.undefined)
+    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.winjs.WinJS.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents a selection of ListView items.
   **/
 @js.native
-trait ISelection[T] extends js.Object {
+trait ISelection[T] extends StObject {
   
   //#region Methods
   /**
@@ -94,48 +95,36 @@ object ISelection {
   }
   
   @scala.inline
-  implicit class ISelectionOps[Self <: ISelection[_], T] (val x: Self with ISelection[T]) extends AnyVal {
+  implicit class ISelectionMutableBuilder[Self <: ISelection[_], T] (val x: Self with ISelection[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: js.Any => Promise[_]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Promise[_]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: js.Any => Promise[_]): Self = this.set("add", js.Any.fromFunction1(value))
+    def setGetIndices(value: () => js.Array[Double]): Self = StObject.set(x, "getIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Promise[_]): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setGetItems(value: () => Promise[js.Array[IItem[T]]]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: () => Double): Self = this.set("count", js.Any.fromFunction0(value))
+    def setGetRanges(value: () => js.Array[ISelectionRange]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndices(value: () => js.Array[Double]): Self = this.set("getIndices", js.Any.fromFunction0(value))
+    def setIsEverything(value: () => Boolean): Self = StObject.set(x, "isEverything", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItems(value: () => Promise[js.Array[IItem[T]]]): Self = this.set("getItems", js.Any.fromFunction0(value))
+    def setRemove(value: js.Any => Promise[_]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRanges(value: () => js.Array[ISelectionRange]): Self = this.set("getRanges", js.Any.fromFunction0(value))
+    def setSelectAll(value: () => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsEverything(value: () => Boolean): Self = this.set("isEverything", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemove(value: js.Any => Promise[_]): Self = this.set("remove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectAll(value: () => Unit): Self = this.set("selectAll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: js.Any => Promise[_]): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: js.Any => Promise[_]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

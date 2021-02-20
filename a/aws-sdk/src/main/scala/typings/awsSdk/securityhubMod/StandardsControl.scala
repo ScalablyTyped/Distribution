@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardsControl extends js.Object {
+trait StandardsControl extends StObject {
   
   /**
     * The identifier of the security standard control.
@@ -66,81 +67,69 @@ object StandardsControl {
   }
   
   @scala.inline
-  implicit class StandardsControlOps[Self <: StandardsControl] (val x: Self) extends AnyVal {
+  implicit class StandardsControlMutableBuilder[Self <: StandardsControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlId(value: NonEmptyString): Self = StObject.set(x, "ControlId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlIdUndefined: Self = StObject.set(x, "ControlId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setControlStatus(value: ControlStatus): Self = StObject.set(x, "ControlStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlId(value: NonEmptyString): Self = this.set("ControlId", value.asInstanceOf[js.Any])
+    def setControlStatusUndefined: Self = StObject.set(x, "ControlStatus", js.undefined)
     
     @scala.inline
-    def deleteControlId: Self = this.set("ControlId", js.undefined)
+    def setControlStatusUpdatedAt(value: Timestamp): Self = StObject.set(x, "ControlStatusUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlStatus(value: ControlStatus): Self = this.set("ControlStatus", value.asInstanceOf[js.Any])
+    def setControlStatusUpdatedAtUndefined: Self = StObject.set(x, "ControlStatusUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteControlStatus: Self = this.set("ControlStatus", js.undefined)
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlStatusUpdatedAt(value: Timestamp): Self = this.set("ControlStatusUpdatedAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteControlStatusUpdatedAt: Self = this.set("ControlStatusUpdatedAt", js.undefined)
+    def setDisabledReason(value: NonEmptyString): Self = StObject.set(x, "DisabledReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDisabledReasonUndefined: Self = StObject.set(x, "DisabledReason", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setRelatedRequirements(value: RelatedRequirementsList): Self = StObject.set(x, "RelatedRequirements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledReason(value: NonEmptyString): Self = this.set("DisabledReason", value.asInstanceOf[js.Any])
+    def setRelatedRequirementsUndefined: Self = StObject.set(x, "RelatedRequirements", js.undefined)
     
     @scala.inline
-    def deleteDisabledReason: Self = this.set("DisabledReason", js.undefined)
+    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = StObject.set(x, "RelatedRequirements", js.Array(value :_*))
     
     @scala.inline
-    def setRelatedRequirementsVarargs(value: NonEmptyString*): Self = this.set("RelatedRequirements", js.Array(value :_*))
+    def setRemediationUrl(value: NonEmptyString): Self = StObject.set(x, "RemediationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedRequirements(value: RelatedRequirementsList): Self = this.set("RelatedRequirements", value.asInstanceOf[js.Any])
+    def setRemediationUrlUndefined: Self = StObject.set(x, "RemediationUrl", js.undefined)
     
     @scala.inline
-    def deleteRelatedRequirements: Self = this.set("RelatedRequirements", js.undefined)
+    def setSeverityRating(value: SeverityRating): Self = StObject.set(x, "SeverityRating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemediationUrl(value: NonEmptyString): Self = this.set("RemediationUrl", value.asInstanceOf[js.Any])
+    def setSeverityRatingUndefined: Self = StObject.set(x, "SeverityRating", js.undefined)
     
     @scala.inline
-    def deleteRemediationUrl: Self = this.set("RemediationUrl", js.undefined)
+    def setStandardsControlArn(value: NonEmptyString): Self = StObject.set(x, "StandardsControlArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverityRating(value: SeverityRating): Self = this.set("SeverityRating", value.asInstanceOf[js.Any])
+    def setStandardsControlArnUndefined: Self = StObject.set(x, "StandardsControlArn", js.undefined)
     
     @scala.inline
-    def deleteSeverityRating: Self = this.set("SeverityRating", js.undefined)
+    def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStandardsControlArn(value: NonEmptyString): Self = this.set("StandardsControlArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardsControlArn: Self = this.set("StandardsControlArn", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: NonEmptyString): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

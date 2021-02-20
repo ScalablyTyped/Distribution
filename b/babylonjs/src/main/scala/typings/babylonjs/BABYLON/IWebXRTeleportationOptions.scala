@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.XRHandedness
 import typings.babylonjs.anon.DisableLighting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IWebXRTeleportationOptions extends js.Object {
+trait IWebXRTeleportationOptions extends StObject {
   
   /**
     * if provided, this scene will be used to render meshes.
@@ -102,114 +103,102 @@ object IWebXRTeleportationOptions {
   }
   
   @scala.inline
-  implicit class IWebXRTeleportationOptionsOps[Self <: IWebXRTeleportationOptions] (val x: Self) extends AnyVal {
+  implicit class IWebXRTeleportationOptionsMutableBuilder[Self <: IWebXRTeleportationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomUtilityLayerSceneUndefined: Self = StObject.set(x, "customUtilityLayerScene", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultTargetMeshOptions(value: DisableLighting): Self = StObject.set(x, "defaultTargetMeshOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXrInput(value: WebXRInput): Self = this.set("xrInput", value.asInstanceOf[js.Any])
+    def setDefaultTargetMeshOptionsUndefined: Self = StObject.set(x, "defaultTargetMeshOptions", js.undefined)
     
     @scala.inline
-    def setCustomUtilityLayerScene(value: Scene): Self = this.set("customUtilityLayerScene", value.asInstanceOf[js.Any])
+    def setFloorMeshes(value: js.Array[AbstractMesh]): Self = StObject.set(x, "floorMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomUtilityLayerScene: Self = this.set("customUtilityLayerScene", js.undefined)
+    def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
     @scala.inline
-    def setDefaultTargetMeshOptions(value: DisableLighting): Self = this.set("defaultTargetMeshOptions", value.asInstanceOf[js.Any])
+    def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultTargetMeshOptions: Self = this.set("defaultTargetMeshOptions", js.undefined)
+    def setForceHandedness(value: XRHandedness): Self = StObject.set(x, "forceHandedness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorMeshesVarargs(value: AbstractMesh*): Self = this.set("floorMeshes", js.Array(value :_*))
+    def setForceHandednessUndefined: Self = StObject.set(x, "forceHandedness", js.undefined)
     
     @scala.inline
-    def setFloorMeshes(value: js.Array[AbstractMesh]): Self = this.set("floorMeshes", value.asInstanceOf[js.Any])
+    def setGenerateRayPathMesh(value: /* points */ js.Array[Vector3] => AbstractMesh): Self = StObject.set(x, "generateRayPathMesh", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFloorMeshes: Self = this.set("floorMeshes", js.undefined)
+    def setGenerateRayPathMeshUndefined: Self = StObject.set(x, "generateRayPathMesh", js.undefined)
     
     @scala.inline
-    def setForceHandedness(value: XRHandedness): Self = this.set("forceHandedness", value.asInstanceOf[js.Any])
+    def setPickBlockerMeshes(value: js.Array[AbstractMesh]): Self = StObject.set(x, "pickBlockerMeshes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForceHandedness: Self = this.set("forceHandedness", js.undefined)
+    def setPickBlockerMeshesUndefined: Self = StObject.set(x, "pickBlockerMeshes", js.undefined)
     
     @scala.inline
-    def setGenerateRayPathMesh(value: /* points */ js.Array[Vector3] => AbstractMesh): Self = this.set("generateRayPathMesh", js.Any.fromFunction1(value))
+    def setPickBlockerMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "pickBlockerMeshes", js.Array(value :_*))
     
     @scala.inline
-    def deleteGenerateRayPathMesh: Self = this.set("generateRayPathMesh", js.undefined)
+    def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPickBlockerMeshesVarargs(value: AbstractMesh*): Self = this.set("pickBlockerMeshes", js.Array(value :_*))
+    def setRenderingGroupIdUndefined: Self = StObject.set(x, "renderingGroupId", js.undefined)
     
     @scala.inline
-    def setPickBlockerMeshes(value: js.Array[AbstractMesh]): Self = this.set("pickBlockerMeshes", value.asInstanceOf[js.Any])
+    def setSnapPointsOnly(value: Boolean): Self = StObject.set(x, "snapPointsOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePickBlockerMeshes: Self = this.set("pickBlockerMeshes", js.undefined)
+    def setSnapPointsOnlyUndefined: Self = StObject.set(x, "snapPointsOnly", js.undefined)
     
     @scala.inline
-    def setRenderingGroupId(value: Double): Self = this.set("renderingGroupId", value.asInstanceOf[js.Any])
+    def setSnapPositions(value: js.Array[Vector3]): Self = StObject.set(x, "snapPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRenderingGroupId: Self = this.set("renderingGroupId", js.undefined)
+    def setSnapPositionsUndefined: Self = StObject.set(x, "snapPositions", js.undefined)
     
     @scala.inline
-    def setSnapPointsOnly(value: Boolean): Self = this.set("snapPointsOnly", value.asInstanceOf[js.Any])
+    def setSnapPositionsVarargs(value: Vector3*): Self = StObject.set(x, "snapPositions", js.Array(value :_*))
     
     @scala.inline
-    def deleteSnapPointsOnly: Self = this.set("snapPointsOnly", js.undefined)
+    def setSnapToPositionRadius(value: Double): Self = StObject.set(x, "snapToPositionRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapPositionsVarargs(value: Vector3*): Self = this.set("snapPositions", js.Array(value :_*))
+    def setSnapToPositionRadiusUndefined: Self = StObject.set(x, "snapToPositionRadius", js.undefined)
     
     @scala.inline
-    def setSnapPositions(value: js.Array[Vector3]): Self = this.set("snapPositions", value.asInstanceOf[js.Any])
+    def setTeleportationTargetMesh(value: AbstractMesh): Self = StObject.set(x, "teleportationTargetMesh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnapPositions: Self = this.set("snapPositions", js.undefined)
+    def setTeleportationTargetMeshUndefined: Self = StObject.set(x, "teleportationTargetMesh", js.undefined)
     
     @scala.inline
-    def setSnapToPositionRadius(value: Double): Self = this.set("snapToPositionRadius", value.asInstanceOf[js.Any])
+    def setTimeToTeleport(value: Double): Self = StObject.set(x, "timeToTeleport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSnapToPositionRadius: Self = this.set("snapToPositionRadius", js.undefined)
+    def setTimeToTeleportUndefined: Self = StObject.set(x, "timeToTeleport", js.undefined)
     
     @scala.inline
-    def setTeleportationTargetMesh(value: AbstractMesh): Self = this.set("teleportationTargetMesh", value.asInstanceOf[js.Any])
+    def setUseMainComponentOnly(value: Boolean): Self = StObject.set(x, "useMainComponentOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTeleportationTargetMesh: Self = this.set("teleportationTargetMesh", js.undefined)
+    def setUseMainComponentOnlyUndefined: Self = StObject.set(x, "useMainComponentOnly", js.undefined)
     
     @scala.inline
-    def setTimeToTeleport(value: Double): Self = this.set("timeToTeleport", value.asInstanceOf[js.Any])
+    def setUseUtilityLayer(value: Boolean): Self = StObject.set(x, "useUtilityLayer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimeToTeleport: Self = this.set("timeToTeleport", js.undefined)
+    def setUseUtilityLayerUndefined: Self = StObject.set(x, "useUtilityLayer", js.undefined)
     
     @scala.inline
-    def setUseMainComponentOnly(value: Boolean): Self = this.set("useMainComponentOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseMainComponentOnly: Self = this.set("useMainComponentOnly", js.undefined)
-    
-    @scala.inline
-    def setUseUtilityLayer(value: Boolean): Self = this.set("useUtilityLayer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseUtilityLayer: Self = this.set("useUtilityLayer", js.undefined)
+    def setXrInput(value: WebXRInput): Self = StObject.set(x, "xrInput", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NxDimension extends js.Object {
+trait NxDimension extends StObject {
   
   var qAttributeDimensions: js.Array[NxAttrDimDef] = js.native
   
@@ -47,54 +48,42 @@ object NxDimension {
   }
   
   @scala.inline
-  implicit class NxDimensionOps[Self <: NxDimension] (val x: Self) extends AnyVal {
+  implicit class NxDimensionMutableBuilder[Self <: NxDimension] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQAttributeDimensions(value: js.Array[NxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQAttributeDimensionsVarargs(value: NxAttrDimDef*): Self = StObject.set(x, "qAttributeDimensions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQAttributeExpressions(value: js.Array[NxAttrExprDef]): Self = StObject.set(x, "qAttributeExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttributeDimensionsVarargs(value: NxAttrDimDef*): Self = this.set("qAttributeDimensions", js.Array(value :_*))
+    def setQAttributeExpressionsVarargs(value: NxAttrExprDef*): Self = StObject.set(x, "qAttributeExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setQAttributeDimensions(value: js.Array[NxAttrDimDef]): Self = this.set("qAttributeDimensions", value.asInstanceOf[js.Any])
+    def setQCalcCond(value: ValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttributeExpressionsVarargs(value: NxAttrExprDef*): Self = this.set("qAttributeExpressions", js.Array(value :_*))
+    def setQDef(value: NxInlineDimensionDef): Self = StObject.set(x, "qDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQAttributeExpressions(value: js.Array[NxAttrExprDef]): Self = this.set("qAttributeExpressions", value.asInstanceOf[js.Any])
+    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQCalcCond(value: ValueExpr): Self = this.set("qCalcCond", value.asInstanceOf[js.Any])
+    def setQNullSuppression(value: Boolean): Self = StObject.set(x, "qNullSuppression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDef(value: NxInlineDimensionDef): Self = this.set("qDef", value.asInstanceOf[js.Any])
+    def setQOtherLabel(value: String): Self = StObject.set(x, "qOtherLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQLibraryId(value: String): Self = this.set("qLibraryId", value.asInstanceOf[js.Any])
+    def setQOtherTotalSpec(value: OtherTotalSpecProp): Self = StObject.set(x, "qOtherTotalSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQNullSuppression(value: Boolean): Self = this.set("qNullSuppression", value.asInstanceOf[js.Any])
+    def setQShowAll(value: Boolean): Self = StObject.set(x, "qShowAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQOtherLabel(value: String): Self = this.set("qOtherLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQOtherTotalSpec(value: OtherTotalSpecProp): Self = this.set("qOtherTotalSpec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQShowAll(value: Boolean): Self = this.set("qShowAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTotalLabel(value: String): Self = this.set("qTotalLabel", value.asInstanceOf[js.Any])
+    def setQTotalLabel(value: String): Self = StObject.set(x, "qTotalLabel", value.asInstanceOf[js.Any])
   }
 }

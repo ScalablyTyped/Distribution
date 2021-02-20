@@ -1,5 +1,6 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -175,7 +176,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that are idempotent, such as deleting old rows from a very large table.
   */
 @js.native
-trait SchemaTransactionOptions extends js.Object {
+trait SchemaTransactionOptions extends StObject {
   
   /**
     * Partitioned DML transaction.  Authorization to begin a Partitioned DML
@@ -207,36 +208,24 @@ object SchemaTransactionOptions {
   }
   
   @scala.inline
-  implicit class SchemaTransactionOptionsOps[Self <: SchemaTransactionOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaTransactionOptionsMutableBuilder[Self <: SchemaTransactionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPartitionedDml(value: SchemaPartitionedDml): Self = StObject.set(x, "partitionedDml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartitionedDmlUndefined: Self = StObject.set(x, "partitionedDml", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: SchemaReadOnly): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionedDml(value: SchemaPartitionedDml): Self = this.set("partitionedDml", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deletePartitionedDml: Self = this.set("partitionedDml", js.undefined)
+    def setReadWrite(value: SchemaReadWrite): Self = StObject.set(x, "readWrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: SchemaReadOnly): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setReadWrite(value: SchemaReadWrite): Self = this.set("readWrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadWrite: Self = this.set("readWrite", js.undefined)
+    def setReadWriteUndefined: Self = StObject.set(x, "readWrite", js.undefined)
   }
 }

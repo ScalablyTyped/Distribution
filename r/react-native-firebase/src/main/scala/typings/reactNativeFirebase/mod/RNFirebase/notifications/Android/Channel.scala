@@ -1,12 +1,13 @@
 package typings.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Channel")
 @js.native
-class Channel protected () extends js.Object {
+class Channel protected () extends StObject {
   def this(channelId: String, name: String, importance: Importance) = this()
   
   var bypassDnd: js.UndefOr[Boolean] = js.native

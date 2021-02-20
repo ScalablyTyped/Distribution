@@ -1,6 +1,7 @@
 package typings.minecraftScriptingTypesServer
 
 import typings.minecraftScriptingTypesShared.IEntity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This event is triggered whenever an entity dies. This won't be triggered when an entity is removed (such as when using destroyEntity).
   */
 @js.native
-trait IEntityDeathEventData extends js.Object {
+trait IEntityDeathEventData extends StObject {
   
   /**
     * The entity that died
@@ -25,21 +26,9 @@ object IEntityDeathEventData {
   }
   
   @scala.inline
-  implicit class IEntityDeathEventDataOps[Self <: IEntityDeathEventData] (val x: Self) extends AnyVal {
+  implicit class IEntityDeathEventDataMutableBuilder[Self <: IEntityDeathEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntity(value: IEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
   }
 }

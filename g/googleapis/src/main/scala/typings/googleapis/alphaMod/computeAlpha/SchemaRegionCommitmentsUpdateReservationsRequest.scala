@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaRegionCommitmentsUpdateReservationsRequest extends js.Object {
+trait SchemaRegionCommitmentsUpdateReservationsRequest extends StObject {
   
   /**
     * List of reservations for the capacity move of VMs with accelerators and
@@ -22,27 +23,15 @@ object SchemaRegionCommitmentsUpdateReservationsRequest {
   }
   
   @scala.inline
-  implicit class SchemaRegionCommitmentsUpdateReservationsRequestOps[Self <: SchemaRegionCommitmentsUpdateReservationsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRegionCommitmentsUpdateReservationsRequestMutableBuilder[Self <: SchemaRegionCommitmentsUpdateReservationsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReservations(value: js.Array[SchemaReservation]): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReservationsVarargs(value: SchemaReservation*): Self = this.set("reservations", js.Array(value :_*))
-    
-    @scala.inline
-    def setReservations(value: js.Array[SchemaReservation]): Self = this.set("reservations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReservations: Self = this.set("reservations", js.undefined)
+    def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
   }
 }

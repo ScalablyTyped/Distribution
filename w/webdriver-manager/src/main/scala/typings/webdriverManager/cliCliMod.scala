@@ -3,16 +3,16 @@ package typings.webdriverManager
 import typings.webdriverManager.optionsMod.Options
 import typings.webdriverManager.programsMod.Program
 import typings.webdriverManager.programsMod.Programs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webdriver-manager/built/lib/cli/cli", JSImport.Namespace)
-@js.native
-object cliCliMod extends js.Object {
+object cliCliMod {
   
+  @JSImport("webdriver-manager/built/lib/cli/cli", "Cli")
   @js.native
-  class Cli () extends js.Object {
+  class Cli () extends StObject {
     
     /**
       * Get the options used by the programs and create the minimist options

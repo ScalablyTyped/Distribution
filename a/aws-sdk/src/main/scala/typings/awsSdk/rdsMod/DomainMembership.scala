@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DomainMembership extends js.Object {
+trait DomainMembership extends StObject {
   
   /**
     * The identifier of the Active Directory Domain.
@@ -36,42 +37,30 @@ object DomainMembership {
   }
   
   @scala.inline
-  implicit class DomainMembershipOps[Self <: DomainMembership] (val x: Self) extends AnyVal {
+  implicit class DomainMembershipMutableBuilder[Self <: DomainMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFQDN(value: String): Self = StObject.set(x, "FQDN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    def setFQDNUndefined: Self = StObject.set(x, "FQDN", js.undefined)
     
     @scala.inline
-    def deleteDomain: Self = this.set("Domain", js.undefined)
+    def setIAMRoleName(value: String): Self = StObject.set(x, "IAMRoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFQDN(value: String): Self = this.set("FQDN", value.asInstanceOf[js.Any])
+    def setIAMRoleNameUndefined: Self = StObject.set(x, "IAMRoleName", js.undefined)
     
     @scala.inline
-    def deleteFQDN: Self = this.set("FQDN", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIAMRoleName(value: String): Self = this.set("IAMRoleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIAMRoleName: Self = this.set("IAMRoleName", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

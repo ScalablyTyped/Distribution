@@ -1,5 +1,6 @@
 package typings.winjs.global.WinJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,15 +24,21 @@ class ErrorFromName protected ()
   def this(name: String) = this()
   def this(name: String, message: String) = this()
 }
-/* static members */
-@JSGlobal("WinJS.ErrorFromName")
-@js.native
-object ErrorFromName extends js.Object {
+object ErrorFromName {
+  
+  @JSGlobal("WinJS.ErrorFromName")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#endregion Constructors
   //#region Properties
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSGlobal("WinJS.ErrorFromName.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  @scala.inline
+  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.issue
 import typings.octokitTypes.octokitTypesStrings.organization
 import typings.octokitTypes.octokitTypesStrings.pull_request
 import typings.octokitTypes.octokitTypesStrings.repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsersGetContextForUserEndpoint extends js.Object {
+trait UsersGetContextForUserEndpoint extends StObject {
   
   /**
     * Uses the ID for the `subject_type` you specified. **Required** when using `subject_type`.
@@ -32,33 +33,21 @@ object UsersGetContextForUserEndpoint {
   }
   
   @scala.inline
-  implicit class UsersGetContextForUserEndpointOps[Self <: UsersGetContextForUserEndpoint] (val x: Self) extends AnyVal {
+  implicit class UsersGetContextForUserEndpointMutableBuilder[Self <: UsersGetContextForUserEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubject_id(value: String): Self = StObject.set(x, "subject_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubject_idUndefined: Self = StObject.set(x, "subject_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubject_type(value: organization | repository | issue | pull_request): Self = StObject.set(x, "subject_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    def setSubject_typeUndefined: Self = StObject.set(x, "subject_type", js.undefined)
     
     @scala.inline
-    def setSubject_id(value: String): Self = this.set("subject_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject_id: Self = this.set("subject_id", js.undefined)
-    
-    @scala.inline
-    def setSubject_type(value: organization | repository | issue | pull_request): Self = this.set("subject_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject_type: Self = this.set("subject_type", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.hlsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -181,4 +182,20 @@ package object mod {
   type K_SUBTITLE_TRACK_SWITCH = typings.hlsJs.hlsJsStrings.hlsSubtitleTrackSwitch
   
   type LevelAttr = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  
+  /**
+    * checks whether your browser is supporting MediaSource Extensions
+    */
+  /* static member */
+  @scala.inline
+  def isSupported(): scala.Boolean = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[scala.Boolean]
+  
+  /**
+    * returns hls.js dist version number
+    */
+  /* static member */
+  @scala.inline
+  def version: java.lang.String = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+  @scala.inline
+  def version_=(x: java.lang.String): scala.Unit = typings.hlsJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

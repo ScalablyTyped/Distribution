@@ -7,14 +7,15 @@ import typings.reactBase16Styling.anon.Base16Themes
 import typings.reactBase16Styling.typesMod.StylingConfig
 import typings.reactBase16Styling.typesMod.StylingFunction
 import typings.reactBase16Styling.typesMod.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-base16-styling", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("react-base16-styling", "createStyling")
+  @js.native
   val createStyling: CurriedFunction3[
     js.Function1[/* base16Theme */ Base16Theme, StylingConfig], 
     js.UndefOr[Base16Themes], 
@@ -22,11 +23,21 @@ object mod extends js.Object {
     StylingFunction
   ] = js.native
   
+  @JSImport("react-base16-styling", "getBase16Theme")
+  @js.native
   def getBase16Theme(theme: Theme): js.UndefOr[Base16Theme] = js.native
+  @JSImport("react-base16-styling", "getBase16Theme")
+  @js.native
   def getBase16Theme(theme: Theme, base16Themes: StringDictionary[Base16Theme]): js.UndefOr[Base16Theme] = js.native
   
+  @JSImport("react-base16-styling", "invertBase16Theme")
+  @js.native
   def invertBase16Theme(base16Theme: Base16Theme): Base16Theme = js.native
   
+  @JSImport("react-base16-styling", "invertTheme")
+  @js.native
   def invertTheme(): js.UndefOr[Theme] = js.native
+  @JSImport("react-base16-styling", "invertTheme")
+  @js.native
   def invertTheme(theme: Theme): js.UndefOr[Theme] = js.native
 }

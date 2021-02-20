@@ -1,11 +1,12 @@
 package typings.awsSdk.syntheticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCanariesLastRunResponse extends js.Object {
+trait DescribeCanariesLastRunResponse extends StObject {
   
   /**
     * An array that contains the information from the most recent run of each canary.
@@ -26,33 +27,21 @@ object DescribeCanariesLastRunResponse {
   }
   
   @scala.inline
-  implicit class DescribeCanariesLastRunResponseOps[Self <: DescribeCanariesLastRunResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCanariesLastRunResponseMutableBuilder[Self <: DescribeCanariesLastRunResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanariesLastRun(value: CanariesLastRun): Self = StObject.set(x, "CanariesLastRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanariesLastRunUndefined: Self = StObject.set(x, "CanariesLastRun", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = StObject.set(x, "CanariesLastRun", js.Array(value :_*))
     
     @scala.inline
-    def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = this.set("CanariesLastRun", js.Array(value :_*))
+    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanariesLastRun(value: CanariesLastRun): Self = this.set("CanariesLastRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanariesLastRun: Self = this.set("CanariesLastRun", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPeeredDnsDomainsResponse extends js.Object {
+trait ListPeeredDnsDomainsResponse extends StObject {
   
   /** The list of peered DNS domains. */
   var peeredDnsDomains: js.UndefOr[js.Array[PeeredDnsDomain]] = js.native
@@ -19,27 +20,15 @@ object ListPeeredDnsDomainsResponse {
   }
   
   @scala.inline
-  implicit class ListPeeredDnsDomainsResponseOps[Self <: ListPeeredDnsDomainsResponse] (val x: Self) extends AnyVal {
+  implicit class ListPeeredDnsDomainsResponseMutableBuilder[Self <: ListPeeredDnsDomainsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeeredDnsDomains(value: js.Array[PeeredDnsDomain]): Self = StObject.set(x, "peeredDnsDomains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeeredDnsDomainsUndefined: Self = StObject.set(x, "peeredDnsDomains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPeeredDnsDomainsVarargs(value: PeeredDnsDomain*): Self = this.set("peeredDnsDomains", js.Array(value :_*))
-    
-    @scala.inline
-    def setPeeredDnsDomains(value: js.Array[PeeredDnsDomain]): Self = this.set("peeredDnsDomains", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeeredDnsDomains: Self = this.set("peeredDnsDomains", js.undefined)
+    def setPeeredDnsDomainsVarargs(value: PeeredDnsDomain*): Self = StObject.set(x, "peeredDnsDomains", js.Array(value :_*))
   }
 }

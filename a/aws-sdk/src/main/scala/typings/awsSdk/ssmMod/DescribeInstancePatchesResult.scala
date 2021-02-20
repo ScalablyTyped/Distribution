@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeInstancePatchesResult extends js.Object {
+trait DescribeInstancePatchesResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
@@ -26,33 +27,21 @@ object DescribeInstancePatchesResult {
   }
   
   @scala.inline
-  implicit class DescribeInstancePatchesResultOps[Self <: DescribeInstancePatchesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeInstancePatchesResultMutableBuilder[Self <: DescribeInstancePatchesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPatches(value: PatchComplianceDataList): Self = StObject.set(x, "Patches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPatchesUndefined: Self = StObject.set(x, "Patches", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPatchesVarargs(value: PatchComplianceData*): Self = this.set("Patches", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatches(value: PatchComplianceDataList): Self = this.set("Patches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePatches: Self = this.set("Patches", js.undefined)
+    def setPatchesVarargs(value: PatchComplianceData*): Self = StObject.set(x, "Patches", js.Array(value :_*))
   }
 }

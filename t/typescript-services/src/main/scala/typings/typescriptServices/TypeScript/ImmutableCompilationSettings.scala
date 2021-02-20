@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImmutableCompilationSettings extends js.Object {
+trait ImmutableCompilationSettings extends StObject {
   
   var _allowAutomaticSemicolonInsertion: js.Any = js.native
   
@@ -134,135 +135,123 @@ object ImmutableCompilationSettings {
   }
   
   @scala.inline
-  implicit class ImmutableCompilationSettingsOps[Self <: ImmutableCompilationSettings] (val x: Self) extends AnyVal {
+  implicit class ImmutableCompilationSettingsMutableBuilder[Self <: ImmutableCompilationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowAutomaticSemicolonInsertion(value: () => Boolean): Self = StObject.set(x, "allowAutomaticSemicolonInsertion", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeGenTarget(value: () => LanguageVersion): Self = StObject.set(x, "codeGenTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodepage(value: () => Double): Self = StObject.set(x, "codepage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_allowAutomaticSemicolonInsertion(value: js.Any): Self = this.set("_allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
+    def setCreateFileLog(value: () => Boolean): Self = StObject.set(x, "createFileLog", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_codeGenTarget(value: js.Any): Self = this.set("_codeGenTarget", value.asInstanceOf[js.Any])
+    def setGatherDiagnostics(value: () => Boolean): Self = StObject.set(x, "gatherDiagnostics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_codepage(value: js.Any): Self = this.set("_codepage", value.asInstanceOf[js.Any])
+    def setGenerateDeclarationFiles(value: () => Boolean): Self = StObject.set(x, "generateDeclarationFiles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_createFileLog(value: js.Any): Self = this.set("_createFileLog", value.asInstanceOf[js.Any])
+    def setMapRoot(value: () => String): Self = StObject.set(x, "mapRoot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_gatherDiagnostics(value: js.Any): Self = this.set("_gatherDiagnostics", value.asInstanceOf[js.Any])
+    def setMapSourceFiles(value: () => Boolean): Self = StObject.set(x, "mapSourceFiles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_generateDeclarationFiles(value: js.Any): Self = this.set("_generateDeclarationFiles", value.asInstanceOf[js.Any])
+    def setModuleGenTarget(value: () => ModuleGenTarget): Self = StObject.set(x, "moduleGenTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_mapRoot(value: js.Any): Self = this.set("_mapRoot", value.asInstanceOf[js.Any])
+    def setNoImplicitAny(value: () => Boolean): Self = StObject.set(x, "noImplicitAny", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_mapSourceFiles(value: js.Any): Self = this.set("_mapSourceFiles", value.asInstanceOf[js.Any])
+    def setNoLib(value: () => Boolean): Self = StObject.set(x, "noLib", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_moduleGenTarget(value: js.Any): Self = this.set("_moduleGenTarget", value.asInstanceOf[js.Any])
+    def setNoResolve(value: () => Boolean): Self = StObject.set(x, "noResolve", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_noImplicitAny(value: js.Any): Self = this.set("_noImplicitAny", value.asInstanceOf[js.Any])
+    def setOutDirOption(value: () => String): Self = StObject.set(x, "outDirOption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_noLib(value: js.Any): Self = this.set("_noLib", value.asInstanceOf[js.Any])
+    def setOutFileOption(value: () => String): Self = StObject.set(x, "outFileOption", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_noResolve(value: js.Any): Self = this.set("_noResolve", value.asInstanceOf[js.Any])
+    def setPropagateEnumConstants(value: () => Boolean): Self = StObject.set(x, "propagateEnumConstants", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_outDirOption(value: js.Any): Self = this.set("_outDirOption", value.asInstanceOf[js.Any])
+    def setRemoveComments(value: () => Boolean): Self = StObject.set(x, "removeComments", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_outFileOption(value: js.Any): Self = this.set("_outFileOption", value.asInstanceOf[js.Any])
+    def setSourceRoot(value: () => String): Self = StObject.set(x, "sourceRoot", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_propagateEnumConstants(value: js.Any): Self = this.set("_propagateEnumConstants", value.asInstanceOf[js.Any])
+    def setToCompilationSettings(value: () => js.Any): Self = StObject.set(x, "toCompilationSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_removeComments(value: js.Any): Self = this.set("_removeComments", value.asInstanceOf[js.Any])
+    def setUseCaseSensitiveFileResolution(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileResolution", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_sourceRoot(value: js.Any): Self = this.set("_sourceRoot", value.asInstanceOf[js.Any])
+    def setWatch(value: () => Boolean): Self = StObject.set(x, "watch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set_useCaseSensitiveFileResolution(value: js.Any): Self = this.set("_useCaseSensitiveFileResolution", value.asInstanceOf[js.Any])
+    def set_allowAutomaticSemicolonInsertion(value: js.Any): Self = StObject.set(x, "_allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_watch(value: js.Any): Self = this.set("_watch", value.asInstanceOf[js.Any])
+    def set_codeGenTarget(value: js.Any): Self = StObject.set(x, "_codeGenTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowAutomaticSemicolonInsertion(value: () => Boolean): Self = this.set("allowAutomaticSemicolonInsertion", js.Any.fromFunction0(value))
+    def set_codepage(value: js.Any): Self = StObject.set(x, "_codepage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodeGenTarget(value: () => LanguageVersion): Self = this.set("codeGenTarget", js.Any.fromFunction0(value))
+    def set_createFileLog(value: js.Any): Self = StObject.set(x, "_createFileLog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodepage(value: () => Double): Self = this.set("codepage", js.Any.fromFunction0(value))
+    def set_gatherDiagnostics(value: js.Any): Self = StObject.set(x, "_gatherDiagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFileLog(value: () => Boolean): Self = this.set("createFileLog", js.Any.fromFunction0(value))
+    def set_generateDeclarationFiles(value: js.Any): Self = StObject.set(x, "_generateDeclarationFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatherDiagnostics(value: () => Boolean): Self = this.set("gatherDiagnostics", js.Any.fromFunction0(value))
+    def set_mapRoot(value: js.Any): Self = StObject.set(x, "_mapRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateDeclarationFiles(value: () => Boolean): Self = this.set("generateDeclarationFiles", js.Any.fromFunction0(value))
+    def set_mapSourceFiles(value: js.Any): Self = StObject.set(x, "_mapSourceFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapRoot(value: () => String): Self = this.set("mapRoot", js.Any.fromFunction0(value))
+    def set_moduleGenTarget(value: js.Any): Self = StObject.set(x, "_moduleGenTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapSourceFiles(value: () => Boolean): Self = this.set("mapSourceFiles", js.Any.fromFunction0(value))
+    def set_noImplicitAny(value: js.Any): Self = StObject.set(x, "_noImplicitAny", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModuleGenTarget(value: () => ModuleGenTarget): Self = this.set("moduleGenTarget", js.Any.fromFunction0(value))
+    def set_noLib(value: js.Any): Self = StObject.set(x, "_noLib", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoImplicitAny(value: () => Boolean): Self = this.set("noImplicitAny", js.Any.fromFunction0(value))
+    def set_noResolve(value: js.Any): Self = StObject.set(x, "_noResolve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoLib(value: () => Boolean): Self = this.set("noLib", js.Any.fromFunction0(value))
+    def set_outDirOption(value: js.Any): Self = StObject.set(x, "_outDirOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoResolve(value: () => Boolean): Self = this.set("noResolve", js.Any.fromFunction0(value))
+    def set_outFileOption(value: js.Any): Self = StObject.set(x, "_outFileOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutDirOption(value: () => String): Self = this.set("outDirOption", js.Any.fromFunction0(value))
+    def set_propagateEnumConstants(value: js.Any): Self = StObject.set(x, "_propagateEnumConstants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutFileOption(value: () => String): Self = this.set("outFileOption", js.Any.fromFunction0(value))
+    def set_removeComments(value: js.Any): Self = StObject.set(x, "_removeComments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagateEnumConstants(value: () => Boolean): Self = this.set("propagateEnumConstants", js.Any.fromFunction0(value))
+    def set_sourceRoot(value: js.Any): Self = StObject.set(x, "_sourceRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveComments(value: () => Boolean): Self = this.set("removeComments", js.Any.fromFunction0(value))
+    def set_useCaseSensitiveFileResolution(value: js.Any): Self = StObject.set(x, "_useCaseSensitiveFileResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRoot(value: () => String): Self = this.set("sourceRoot", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setToCompilationSettings(value: () => js.Any): Self = this.set("toCompilationSettings", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUseCaseSensitiveFileResolution(value: () => Boolean): Self = this.set("useCaseSensitiveFileResolution", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWatch(value: () => Boolean): Self = this.set("watch", js.Any.fromFunction0(value))
+    def set_watch(value: js.Any): Self = StObject.set(x, "_watch", value.asInstanceOf[js.Any])
   }
 }

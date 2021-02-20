@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectStackDriftInput extends js.Object {
+trait DetectStackDriftInput extends StObject {
   
   /**
     * The logical names of any resources you want to use as filters.
@@ -26,30 +27,18 @@ object DetectStackDriftInput {
   }
   
   @scala.inline
-  implicit class DetectStackDriftInputOps[Self <: DetectStackDriftInput] (val x: Self) extends AnyVal {
+  implicit class DetectStackDriftInputMutableBuilder[Self <: DetectStackDriftInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogicalResourceIds(value: LogicalResourceIds): Self = StObject.set(x, "LogicalResourceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogicalResourceIdsUndefined: Self = StObject.set(x, "LogicalResourceIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value :_*))
     
     @scala.inline
-    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = this.set("LogicalResourceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogicalResourceIds(value: LogicalResourceIds): Self = this.set("LogicalResourceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogicalResourceIds: Self = this.set("LogicalResourceIds", js.undefined)
+    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

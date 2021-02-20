@@ -6,6 +6,7 @@ import typings.sequelize.anon.Schema
 import typings.sequelize.anon.SchemaTableName
 import typings.sequelize.anon.TableName
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * referenced anyway, so it can be used.
   */
 @js.native
-trait QueryInterface extends js.Object {
+trait QueryInterface extends StObject {
   
   /**
     * Returns the dialect-specific sql generator.

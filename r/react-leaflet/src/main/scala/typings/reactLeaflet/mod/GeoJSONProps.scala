@@ -8,22 +8,16 @@ import typings.leaflet.mod.Layer
 import typings.leaflet.mod.LayerEvent
 import typings.leaflet.mod.PathOptions
 import typings.leaflet.mod.StyleFunction
-import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.LayerOptions because Already inherited
-- typings.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typings.leaflet.mod.GeoJSONOptions because var conflicts: attribution, pane. Inlined coordsToLatLng, filter, onEachFeature, pointToLayer, style
-- typings.reactLeaflet.mod.FeatureGroupEvents because var conflicts: onclick, oncontextmenu, ondblclick, onmouseout, onmouseover. Inlined onlayeradd, onlayerremove
-- typings.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ @js.native
-trait GeoJSONProps
-  extends PathOptions
-     with PathEvents {
-  
-  var children: js.UndefOr[Children] = js.native
+- typings.leaflet.mod.GeoJSONOptions because var conflicts: attribution, pane. Inlined style, pointToLayer, onEachFeature, coordsToLatLng, filter
+- typings.reactLeaflet.mod.FeatureGroupEvents because var conflicts: onclick, oncontextmenu, ondblclick, onmouseout, onmouseover. Inlined onlayeradd, onlayerremove */ @js.native
+trait GeoJSONProps extends PathProps {
   
   /**
     * A Function that will be used for converting GeoJSON coordinates to LatLngs.
@@ -50,8 +44,6 @@ trait GeoJSONProps
     * ```
     */
   var filter: js.UndefOr[js.Function1[/* geoJsonFeature */ Feature[GeometryObject, js.Any], Boolean]] = js.native
-  
-  var leaflet: js.UndefOr[LeafletContext] = js.native
   
   /**
     * A Function that will be called once for each created Feature, after it
@@ -92,7 +84,7 @@ trait GeoJSONProps
     ]
   ] = js.native
   
-   // should import GeoJSON typings
+  // should import GeoJSON typings
   /**
     * PathOptions or a Function defining the Path options for styling GeoJSON lines and polygons,
     * called internally when data is added.
@@ -116,86 +108,59 @@ object GeoJSONProps {
   }
   
   @scala.inline
-  implicit class GeoJSONPropsOps[Self <: GeoJSONProps] (val x: Self) extends AnyVal {
+  implicit class GeoJSONPropsMutableBuilder[Self <: GeoJSONProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = StObject.set(x, "coordsToLatLng", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoordsToLatLngUndefined: Self = StObject.set(x, "coordsToLatLng", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: GeoJsonObject | js.Array[GeoJsonObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: GeoJsonObject*): Self = this.set("data", js.Array(value :_*))
+    def setDataVarargs(value: GeoJsonObject*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: GeoJsonObject | js.Array[GeoJsonObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, js.Any] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setChildren(value: Children): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer) => Unit): Self = StObject.set(x, "onEachFeature", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setOnEachFeatureUndefined: Self = StObject.set(x, "onEachFeature", js.undefined)
     
     @scala.inline
-    def setCoordsToLatLng(value: /* coords */ (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) => LatLng_): Self = this.set("coordsToLatLng", js.Any.fromFunction1(value))
+    def setOnlayeradd(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayeradd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteCoordsToLatLng: Self = this.set("coordsToLatLng", js.undefined)
+    def setOnlayeraddUndefined: Self = StObject.set(x, "onlayeradd", js.undefined)
     
     @scala.inline
-    def setFilter(value: /* geoJsonFeature */ Feature[GeometryObject, js.Any] => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    def setOnlayerremove(value: /* event */ LayerEvent => Unit): Self = StObject.set(x, "onlayerremove", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setLeaflet(value: LeafletContext): Self = this.set("leaflet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLeaflet: Self = this.set("leaflet", js.undefined)
-    
-    @scala.inline
-    def setOnEachFeature(value: (/* feature */ Feature[GeometryObject, js.Any], /* layer */ Layer) => Unit): Self = this.set("onEachFeature", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnEachFeature: Self = this.set("onEachFeature", js.undefined)
-    
-    @scala.inline
-    def setOnlayeradd(value: /* event */ LayerEvent => Unit): Self = this.set("onlayeradd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnlayeradd: Self = this.set("onlayeradd", js.undefined)
-    
-    @scala.inline
-    def setOnlayerremove(value: /* event */ LayerEvent => Unit): Self = this.set("onlayerremove", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnlayerremove: Self = this.set("onlayerremove", js.undefined)
+    def setOnlayerremoveUndefined: Self = StObject.set(x, "onlayerremove", js.undefined)
     
     @scala.inline
     def setPointToLayer(
       value: (/* geoJsonPoint */ Feature[typings.geojson.mod.Point, js.Any], /* latlng */ LatLng_) => Layer
-    ): Self = this.set("pointToLayer", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "pointToLayer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deletePointToLayer: Self = this.set("pointToLayer", js.undefined)
+    def setPointToLayerUndefined: Self = StObject.set(x, "pointToLayer", js.undefined)
     
     @scala.inline
-    def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, js.Any]] => PathOptions): Self = this.set("style", js.Any.fromFunction1(value))
+    def setStyle(value: PathOptions | StyleFunction[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: PathOptions | StyleFunction[js.Any]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleFunction1(value: /* feature */ js.UndefOr[Feature[GeometryObject, js.Any]] => PathOptions): Self = StObject.set(x, "style", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

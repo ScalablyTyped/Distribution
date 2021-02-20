@@ -1,5 +1,6 @@
 package typings.bootstrapDatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeDecade
   - typings.bootstrapDatepicker.bootstrapDatepickerStrings.changeCentury
 */
-trait DatepickerEvents extends js.Object
+trait DatepickerEvents extends StObject
 object DatepickerEvents {
   
   @scala.inline

@@ -4,6 +4,7 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.activexLibreoffice.com_.sun.star.table.TableSortDescriptor2
 import typings.activexLibreoffice.com_.sun.star.table.TableSortField
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,36 +66,24 @@ object SheetSortDescriptor2 {
   }
   
   @scala.inline
-  implicit class SheetSortDescriptor2Ops[Self <: SheetSortDescriptor2] (val x: Self) extends AnyVal {
+  implicit class SheetSortDescriptor2MutableBuilder[Self <: SheetSortDescriptor2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsHeader(value: Boolean): Self = StObject.set(x, "ContainsHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCopyOutputData(value: Boolean): Self = StObject.set(x, "CopyOutputData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindFormatsToContent(value: Boolean): Self = this.set("BindFormatsToContent", value.asInstanceOf[js.Any])
+    def setIsUserListEnabled(value: Boolean): Self = StObject.set(x, "IsUserListEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsHeader(value: Boolean): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    def setOutputPosition(value: CellAddress): Self = StObject.set(x, "OutputPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyOutputData(value: Boolean): Self = this.set("CopyOutputData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUserListEnabled(value: Boolean): Self = this.set("IsUserListEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutputPosition(value: CellAddress): Self = this.set("OutputPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserListIndex(value: Double): Self = this.set("UserListIndex", value.asInstanceOf[js.Any])
+    def setUserListIndex(value: Double): Self = StObject.set(x, "UserListIndex", value.asInstanceOf[js.Any])
   }
 }

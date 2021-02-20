@@ -1,11 +1,12 @@
 package typings.leafletRoutingMachine.mod.Routing_
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocodingEvent extends js.Object {
+trait GeocodingEvent extends StObject {
   
   var waypoint: Waypoint_ = js.native
   
@@ -20,24 +21,12 @@ object GeocodingEvent {
   }
   
   @scala.inline
-  implicit class GeocodingEventOps[Self <: GeocodingEvent] (val x: Self) extends AnyVal {
+  implicit class GeocodingEventMutableBuilder[Self <: GeocodingEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWaypoint(value: Waypoint_): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWaypoint(value: Waypoint_): Self = this.set("waypoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaypointIndex(value: Double): Self = this.set("waypointIndex", value.asInstanceOf[js.Any])
+    def setWaypointIndex(value: Double): Self = StObject.set(x, "waypointIndex", value.asInstanceOf[js.Any])
   }
 }

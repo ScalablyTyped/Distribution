@@ -1,12 +1,13 @@
 package typings.minecraftScriptingTypesShared
 
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.event_data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEventData[T] extends js.Object {
+trait IEventData[T] extends StObject {
   
   /**
     * The identifier of the event
@@ -29,27 +30,15 @@ object IEventData {
   }
   
   @scala.inline
-  implicit class IEventDataOps[Self <: IEventData[_], T] (val x: Self with IEventData[T]) extends AnyVal {
+  implicit class IEventDataMutableBuilder[Self <: IEventData[_], T] (val x: Self with IEventData[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set__identifier__(value: String): Self = StObject.set(x, "__identifier__", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set__identifier__(value: String): Self = this.set("__identifier__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set__type__(value: event_data): Self = this.set("__type__", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setData(value: T): Self = this.set("data", value.asInstanceOf[js.Any])
+    def set__type__(value: event_data): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

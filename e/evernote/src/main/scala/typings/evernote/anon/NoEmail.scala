@@ -1,11 +1,12 @@
 package typings.evernote.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoEmail extends js.Object {
+trait NoEmail extends StObject {
   
   var noEmail: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object NoEmail {
   }
   
   @scala.inline
-  implicit class NoEmailOps[Self <: NoEmail] (val x: Self) extends AnyVal {
+  implicit class NoEmailMutableBuilder[Self <: NoEmail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNoEmail(value: Boolean): Self = StObject.set(x, "noEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoEmailUndefined: Self = StObject.set(x, "noEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNoShare(value: Boolean): Self = StObject.set(x, "noShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEmail(value: Boolean): Self = this.set("noEmail", value.asInstanceOf[js.Any])
+    def setNoSharePublicly(value: Boolean): Self = StObject.set(x, "noSharePublicly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNoEmail: Self = this.set("noEmail", js.undefined)
+    def setNoSharePubliclyUndefined: Self = StObject.set(x, "noSharePublicly", js.undefined)
     
     @scala.inline
-    def setNoShare(value: Boolean): Self = this.set("noShare", value.asInstanceOf[js.Any])
+    def setNoShareUndefined: Self = StObject.set(x, "noShare", js.undefined)
     
     @scala.inline
-    def deleteNoShare: Self = this.set("noShare", js.undefined)
+    def setNoUpdateContent(value: Boolean): Self = StObject.set(x, "noUpdateContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoSharePublicly(value: Boolean): Self = this.set("noSharePublicly", value.asInstanceOf[js.Any])
+    def setNoUpdateContentUndefined: Self = StObject.set(x, "noUpdateContent", js.undefined)
     
     @scala.inline
-    def deleteNoSharePublicly: Self = this.set("noSharePublicly", js.undefined)
+    def setNoUpdateTitle(value: Boolean): Self = StObject.set(x, "noUpdateTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoUpdateContent(value: Boolean): Self = this.set("noUpdateContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoUpdateContent: Self = this.set("noUpdateContent", js.undefined)
-    
-    @scala.inline
-    def setNoUpdateTitle(value: Boolean): Self = this.set("noUpdateTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoUpdateTitle: Self = this.set("noUpdateTitle", js.undefined)
+    def setNoUpdateTitleUndefined: Self = StObject.set(x, "noUpdateTitle", js.undefined)
   }
 }

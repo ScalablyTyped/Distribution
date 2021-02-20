@@ -1,11 +1,12 @@
 package typings.ionicCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn extends js.Object {
+trait Fn extends StObject {
   
   var circles: Double = js.native
   
@@ -22,27 +23,15 @@ object Fn {
   }
   
   @scala.inline
-  implicit class FnOps[Self <: Fn] (val x: Self) extends AnyVal {
+  implicit class FnMutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCircles(value: Double): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCircles(value: Double): Self = this.set("circles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDur(value: Double): Self = this.set("dur", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFn(value: () => Style): Self = this.set("fn", js.Any.fromFunction0(value))
+    def setFn(value: () => Style): Self = StObject.set(x, "fn", js.Any.fromFunction0(value))
   }
 }

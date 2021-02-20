@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the service capabilities of a device. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothServiceCapabilities")
 @js.native
-object BluetoothServiceCapabilities extends js.Object {
+object BluetoothServiceCapabilities extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

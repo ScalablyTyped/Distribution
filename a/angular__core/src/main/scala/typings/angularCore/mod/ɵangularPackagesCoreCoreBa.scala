@@ -2,13 +2,14 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Console
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275angular_packages_core_core_ba")
 @js.native
-abstract class ɵangularPackagesCoreCoreBa () extends js.Object {
+abstract class ɵangularPackagesCoreCoreBa () extends StObject {
   
   def component: js.Any = js.native
   

@@ -1,11 +1,12 @@
 package typings.wepy.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Iv extends js.Object {
+trait Iv extends StObject {
   
   var encryptedData: String = js.native
   
@@ -26,33 +27,21 @@ object Iv {
   }
   
   @scala.inline
-  implicit class IvOps[Self <: Iv] (val x: Self) extends AnyVal {
+  implicit class IvMutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptedData(value: String): Self = this.set("encryptedData", value.asInstanceOf[js.Any])
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIv(value: String): Self = this.set("iv", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawData(value: String): Self = this.set("rawData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserInfo(value: js.Object): Self = this.set("userInfo", value.asInstanceOf[js.Any])
+    def setUserInfo(value: js.Object): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
   }
 }

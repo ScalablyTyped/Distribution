@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauthorization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidateAttestationOccurrenceRequest extends js.Object {
+trait ValidateAttestationOccurrenceRequest extends StObject {
   
   /**
     * Required. An AttestationOccurrence to be checked that it can be verified by the Attestor. It does not have to be an existing entity in Container Analysis. It must otherwise be a
@@ -28,36 +29,24 @@ object ValidateAttestationOccurrenceRequest {
   }
   
   @scala.inline
-  implicit class ValidateAttestationOccurrenceRequestOps[Self <: ValidateAttestationOccurrenceRequest] (val x: Self) extends AnyVal {
+  implicit class ValidateAttestationOccurrenceRequestMutableBuilder[Self <: ValidateAttestationOccurrenceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttestation(value: AttestationOccurrence): Self = StObject.set(x, "attestation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttestationUndefined: Self = StObject.set(x, "attestation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOccurrenceNote(value: String): Self = StObject.set(x, "occurrenceNote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttestation(value: AttestationOccurrence): Self = this.set("attestation", value.asInstanceOf[js.Any])
+    def setOccurrenceNoteUndefined: Self = StObject.set(x, "occurrenceNote", js.undefined)
     
     @scala.inline
-    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    def setOccurrenceResourceUri(value: String): Self = StObject.set(x, "occurrenceResourceUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOccurrenceNote(value: String): Self = this.set("occurrenceNote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOccurrenceNote: Self = this.set("occurrenceNote", js.undefined)
-    
-    @scala.inline
-    def setOccurrenceResourceUri(value: String): Self = this.set("occurrenceResourceUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOccurrenceResourceUri: Self = this.set("occurrenceResourceUri", js.undefined)
+    def setOccurrenceResourceUriUndefined: Self = StObject.set(x, "occurrenceResourceUri", js.undefined)
   }
 }

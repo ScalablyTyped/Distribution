@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudWatchLoggingOptionUpdate extends js.Object {
+trait CloudWatchLoggingOptionUpdate extends StObject {
   
   /**
     * ID of the CloudWatch logging option to update
@@ -31,33 +32,21 @@ object CloudWatchLoggingOptionUpdate {
   }
   
   @scala.inline
-  implicit class CloudWatchLoggingOptionUpdateOps[Self <: CloudWatchLoggingOptionUpdate] (val x: Self) extends AnyVal {
+  implicit class CloudWatchLoggingOptionUpdateMutableBuilder[Self <: CloudWatchLoggingOptionUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudWatchLoggingOptionId(value: Id): Self = StObject.set(x, "CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogStreamARNUpdate(value: LogStreamARN): Self = StObject.set(x, "LogStreamARNUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogStreamARNUpdateUndefined: Self = StObject.set(x, "LogStreamARNUpdate", js.undefined)
     
     @scala.inline
-    def setCloudWatchLoggingOptionId(value: Id): Self = this.set("CloudWatchLoggingOptionId", value.asInstanceOf[js.Any])
+    def setRoleARNUpdate(value: RoleARN): Self = StObject.set(x, "RoleARNUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStreamARNUpdate(value: LogStreamARN): Self = this.set("LogStreamARNUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogStreamARNUpdate: Self = this.set("LogStreamARNUpdate", js.undefined)
-    
-    @scala.inline
-    def setRoleARNUpdate(value: RoleARN): Self = this.set("RoleARNUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARNUpdate: Self = this.set("RoleARNUpdate", js.undefined)
+    def setRoleARNUpdateUndefined: Self = StObject.set(x, "RoleARNUpdate", js.undefined)
   }
 }

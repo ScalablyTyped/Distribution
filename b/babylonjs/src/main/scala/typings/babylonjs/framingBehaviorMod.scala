@@ -6,14 +6,14 @@ import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.easingMod.ExponentialEase
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Cameras/framingBehavior", JSImport.Namespace)
-@js.native
-object framingBehaviorMod extends js.Object {
+object framingBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior")
   @js.native
   class FramingBehavior () extends Behavior[ArcRotateCamera] {
     
@@ -256,27 +256,46 @@ object framingBehaviorMod extends js.Object {
     def zoomStopsAnimation_=(flag: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object FramingBehavior extends js.Object {
+  object FramingBehavior {
+    
+    @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The easing function used by animations
       */
-    var EasingFunction: ExponentialEase = js.native
+    @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.EasingFunction")
+    @js.native
+    def EasingFunction: ExponentialEase = js.native
+    @scala.inline
+    def EasingFunction_=(x: ExponentialEase): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingFunction")(x.asInstanceOf[js.Any])
     
     /**
       * The easing mode used by animations
       */
-    var EasingMode: Double = js.native
+    @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.EasingMode")
+    @js.native
+    def EasingMode: Double = js.native
+    @scala.inline
+    def EasingMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EasingMode")(x.asInstanceOf[js.Any])
     
     /**
       * The camera is not allowed to zoom closer to the mesh than the point at which the adjusted bounding sphere touches the frustum sides
       */
-    var FitFrustumSidesMode: Double = js.native
+    @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.FitFrustumSidesMode")
+    @js.native
+    def FitFrustumSidesMode: Double = js.native
+    @scala.inline
+    def FitFrustumSidesMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FitFrustumSidesMode")(x.asInstanceOf[js.Any])
     
     /**
       * The camera can move all the way towards the mesh.
       */
-    var IgnoreBoundsSizeMode: Double = js.native
+    @JSImport("babylonjs/Behaviors/Cameras/framingBehavior", "FramingBehavior.IgnoreBoundsSizeMode")
+    @js.native
+    def IgnoreBoundsSizeMode: Double = js.native
+    @scala.inline
+    def IgnoreBoundsSizeMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IgnoreBoundsSizeMode")(x.asInstanceOf[js.Any])
   }
 }

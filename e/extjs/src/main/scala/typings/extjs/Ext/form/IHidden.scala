@@ -2,6 +2,7 @@ package typings.extjs.Ext.form
 
 import typings.extjs.Ext.IComponent
 import typings.extjs.Ext.form.field.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,60 +57,48 @@ object IHidden {
   }
   
   @scala.inline
-  implicit class IHiddenOps[Self <: IHidden] (val x: Self) extends AnyVal {
+  implicit class IHiddenMutableBuilder[Self <: IHidden] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearInvalid(value: () => Unit): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkInvalid(value: () => Unit): Self = StObject.set(x, "markInvalid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearInvalid(value: () => Unit): Self = this.set("clearInvalid", js.Any.fromFunction0(value))
+    def setMarkInvalidUndefined: Self = StObject.set(x, "markInvalid", js.undefined)
     
     @scala.inline
-    def deleteClearInvalid: Self = this.set("clearInvalid", js.undefined)
+    def setSetHeight(value: () => IComponent): Self = StObject.set(x, "setHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMarkInvalid(value: () => Unit): Self = this.set("markInvalid", js.Any.fromFunction0(value))
+    def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
     @scala.inline
-    def deleteMarkInvalid: Self = this.set("markInvalid", js.undefined)
+    def setSetPagePosition(value: () => IComponent): Self = StObject.set(x, "setPagePosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetHeight(value: () => IComponent): Self = this.set("setHeight", js.Any.fromFunction0(value))
+    def setSetPagePositionUndefined: Self = StObject.set(x, "setPagePosition", js.undefined)
     
     @scala.inline
-    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    def setSetPosition(value: () => IComponent): Self = StObject.set(x, "setPosition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetPagePosition(value: () => IComponent): Self = this.set("setPagePosition", js.Any.fromFunction0(value))
+    def setSetPositionUndefined: Self = StObject.set(x, "setPosition", js.undefined)
     
     @scala.inline
-    def deleteSetPagePosition: Self = this.set("setPagePosition", js.undefined)
+    def setSetSize(value: () => IComponent): Self = StObject.set(x, "setSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetPosition(value: () => IComponent): Self = this.set("setPosition", js.Any.fromFunction0(value))
+    def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
     @scala.inline
-    def deleteSetPosition: Self = this.set("setPosition", js.undefined)
+    def setSetWidth(value: () => IComponent): Self = StObject.set(x, "setWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetSize(value: () => IComponent): Self = this.set("setSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSetSize: Self = this.set("setSize", js.undefined)
-    
-    @scala.inline
-    def setSetWidth(value: () => IComponent): Self = this.set("setWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSetWidth: Self = this.set("setWidth", js.undefined)
+    def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Engine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,4 +25,7 @@ package object model {
     - js.Array[java.lang.String | typings.ckeditorCkeditor5Engine.mod.model.Node]
   */
   type SchemaContextDefinition = typings.ckeditorCkeditor5Engine.mod.model._SchemaContextDefinition | (js.Array[java.lang.String | typings.ckeditorCkeditor5Engine.mod.model.Node]) | java.lang.String
+  
+  @scala.inline
+  def getItems(options: js.Object): typings.std.Iterable[typings.ckeditorCkeditor5Engine.mod.model.Item] = typings.ckeditorCkeditor5Engine.mod.model.^.asInstanceOf[js.Dynamic].applyDynamic("getItems")(options.asInstanceOf[js.Any]).asInstanceOf[typings.std.Iterable[typings.ckeditorCkeditor5Engine.mod.model.Item]]
 }

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.AccountId
 import typings.googleapis.anon.ColumnType
 import typings.googleapis.anon.Filters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Real time data for a given view (profile).
   */
 @js.native
-trait SchemaRealtimeData extends js.Object {
+trait SchemaRealtimeData extends StObject {
   
   /**
     * Column headers that list dimension names followed by the metric names.
@@ -75,78 +76,66 @@ object SchemaRealtimeData {
   }
   
   @scala.inline
-  implicit class SchemaRealtimeDataOps[Self <: SchemaRealtimeData] (val x: Self) extends AnyVal {
+  implicit class SchemaRealtimeDataMutableBuilder[Self <: SchemaRealtimeData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnHeaders(value: js.Array[ColumnType]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
     
     @scala.inline
-    def setColumnHeadersVarargs(value: ColumnType*): Self = this.set("columnHeaders", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeaders(value: js.Array[ColumnType]): Self = this.set("columnHeaders", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteColumnHeaders: Self = this.set("columnHeaders", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setProfileInfo(value: AccountId): Self = StObject.set(x, "profileInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setProfileInfoUndefined: Self = StObject.set(x, "profileInfo", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setQuery(value: Filters): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileInfo(value: AccountId): Self = this.set("profileInfo", value.asInstanceOf[js.Any])
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteProfileInfo: Self = this.set("profileInfo", js.undefined)
+    def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: Filters): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: js.Array[String]*): Self = this.set("rows", js.Array(value :_*))
+    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[js.Array[String]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
     
     @scala.inline
-    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    def setTotalsForAllResults(value: StringDictionary[String]): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalResults(value: Double): Self = this.set("totalResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalResults: Self = this.set("totalResults", js.undefined)
-    
-    @scala.inline
-    def setTotalsForAllResults(value: StringDictionary[String]): Self = this.set("totalsForAllResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalsForAllResults: Self = this.set("totalsForAllResults", js.undefined)
+    def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)
   }
 }

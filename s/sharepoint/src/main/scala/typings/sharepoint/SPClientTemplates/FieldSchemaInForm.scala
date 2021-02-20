@@ -1,5 +1,6 @@
 package typings.sharepoint.SPClientTemplates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,48 +64,36 @@ object FieldSchemaInForm {
   }
   
   @scala.inline
-  implicit class FieldSchemaInFormOps[Self <: FieldSchemaInForm] (val x: Self) extends AnyVal {
+  implicit class FieldSchemaInFormMutableBuilder[Self <: FieldSchemaInForm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirection(value: String): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIMEMode(value: js.Any): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("Hidden", value.asInstanceOf[js.Any])
+    def setReadOnlyField(value: Boolean): Self = StObject.set(x, "ReadOnlyField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIMEMode(value: js.Any): Self = this.set("IMEMode", value.asInstanceOf[js.Any])
+    def setRequired(value: Boolean): Self = StObject.set(x, "Required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setRestrictedMode(value: Boolean): Self = StObject.set(x, "RestrictedMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnlyField(value: Boolean): Self = this.set("ReadOnlyField", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Boolean): Self = this.set("Required", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestrictedMode(value: Boolean): Self = this.set("RestrictedMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseMinWidth(value: Boolean): Self = this.set("UseMinWidth", value.asInstanceOf[js.Any])
+    def setUseMinWidth(value: Boolean): Self = StObject.set(x, "UseMinWidth", value.asInstanceOf[js.Any])
   }
 }

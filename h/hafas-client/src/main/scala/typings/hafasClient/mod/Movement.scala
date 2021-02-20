@@ -1,11 +1,12 @@
 package typings.hafasClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Movement extends js.Object {
+trait Movement extends StObject {
   
   var direction: js.UndefOr[String] = js.native
   
@@ -30,66 +31,54 @@ object Movement {
   }
   
   @scala.inline
-  implicit class MovementOps[Self <: Movement] (val x: Self) extends AnyVal {
+  implicit class MovementMutableBuilder[Self <: Movement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
     @scala.inline
-    def setFramesVarargs(value: Frame*): Self = this.set("frames", js.Array(value :_*))
+    def setLine(value: Line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: js.Array[Frame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: Line): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setNextStopovers(value: js.Array[StopOver]): Self = StObject.set(x, "nextStopovers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setNextStopoversUndefined: Self = StObject.set(x, "nextStopovers", js.undefined)
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setNextStopoversVarargs(value: StopOver*): Self = StObject.set(x, "nextStopovers", js.Array(value :_*))
     
     @scala.inline
-    def setNextStopoversVarargs(value: StopOver*): Self = this.set("nextStopovers", js.Array(value :_*))
+    def setPolyline(value: FeatureCollection): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextStopovers(value: js.Array[StopOver]): Self = this.set("nextStopovers", value.asInstanceOf[js.Any])
+    def setPolylineUndefined: Self = StObject.set(x, "polyline", js.undefined)
     
     @scala.inline
-    def deleteNextStopovers: Self = this.set("nextStopovers", js.undefined)
+    def setTripId(value: String): Self = StObject.set(x, "tripId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolyline(value: FeatureCollection): Self = this.set("polyline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolyline: Self = this.set("polyline", js.undefined)
-    
-    @scala.inline
-    def setTripId(value: String): Self = this.set("tripId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTripId: Self = this.set("tripId", js.undefined)
+    def setTripIdUndefined: Self = StObject.set(x, "tripId", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexInfopath.InfoPath
 
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceObject extends js.Object {
+trait DataSourceObject extends StObject {
   
   val DOM: IXMLDOMDocument = js.native
   
@@ -35,33 +36,21 @@ object DataSourceObject {
   }
   
   @scala.inline
-  implicit class DataSourceObjectOps[Self <: DataSourceObject] (val x: Self) extends AnyVal {
+  implicit class DataSourceObjectMutableBuilder[Self <: DataSourceObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotDataSourceObject_typekey(value: DataSourceObject): Self = StObject.set(x, "InfoPath.DataSourceObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = this.set("DOM", value.asInstanceOf[js.Any])
+    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInfoPathDotDataSourceObject_typekey(value: DataSourceObject): Self = this.set("InfoPath.DataSourceObject_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: () => Unit): Self = this.set("Query", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setQueryAdapter(value: js.Any): Self = this.set("QueryAdapter", value.asInstanceOf[js.Any])
+    def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
   }
 }

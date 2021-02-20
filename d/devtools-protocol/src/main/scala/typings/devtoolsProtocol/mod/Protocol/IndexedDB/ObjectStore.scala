@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectStore extends js.Object {
+trait ObjectStore extends StObject {
   
   /**
     * If true, object store has auto increment flag set.
@@ -36,33 +37,21 @@ object ObjectStore {
   }
   
   @scala.inline
-  implicit class ObjectStoreOps[Self <: ObjectStore] (val x: Self) extends AnyVal {
+  implicit class ObjectStoreMutableBuilder[Self <: ObjectStore] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexes(value: js.Array[ObjectStoreIndex]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexesVarargs(value: ObjectStoreIndex*): Self = StObject.set(x, "indexes", js.Array(value :_*))
     
     @scala.inline
-    def setAutoIncrement(value: Boolean): Self = this.set("autoIncrement", value.asInstanceOf[js.Any])
+    def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexesVarargs(value: ObjectStoreIndex*): Self = this.set("indexes", js.Array(value :_*))
-    
-    @scala.inline
-    def setIndexes(value: js.Array[ObjectStoreIndex]): Self = this.set("indexes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyPath(value: KeyPath): Self = this.set("keyPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.bezierJs.BezierJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Inflection extends js.Object {
+trait Inflection extends StObject {
   
   var values: js.Array[Double] = js.native
   
@@ -24,45 +25,33 @@ object Inflection {
   }
   
   @scala.inline
-  implicit class InflectionOps[Self <: Inflection] (val x: Self) extends AnyVal {
+  implicit class InflectionMutableBuilder[Self <: Inflection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
+    def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
     
     @scala.inline
-    def setValues(value: js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setY(value: js.Array[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXVarargs(value: Double*): Self = this.set("x", js.Array(value :_*))
+    def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
     
     @scala.inline
-    def setX(value: js.Array[Double]): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setZ(value: js.Array[Double]): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYVarargs(value: Double*): Self = this.set("y", js.Array(value :_*))
+    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
     
     @scala.inline
-    def setY(value: js.Array[Double]): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZVarargs(value: Double*): Self = this.set("z", js.Array(value :_*))
-    
-    @scala.inline
-    def setZ(value: js.Array[Double]): Self = this.set("z", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZ: Self = this.set("z", js.undefined)
+    def setZVarargs(value: Double*): Self = StObject.set(x, "z", js.Array(value :_*))
   }
 }

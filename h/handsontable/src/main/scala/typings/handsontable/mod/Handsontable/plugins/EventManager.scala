@@ -2,12 +2,13 @@ package typings.handsontable.mod.Handsontable.plugins
 
 import typings.std.Element
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventManager extends js.Object {
+trait EventManager extends StObject {
   
   def addEventListener(element: Element, eventName: String, callback: js.Function1[/* event */ Event, Unit]): js.Function0[Unit] = js.native
   
@@ -42,45 +43,33 @@ object EventManager {
   }
   
   @scala.inline
-  implicit class EventManagerOps[Self <: EventManager] (val x: Self) extends AnyVal {
+  implicit class EventManagerMutableBuilder[Self <: EventManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddEventListener(value: (Element, String, js.Function1[/* event */ Event, Unit]) => js.Function0[Unit]): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearEvents(value: () => Unit): Self = StObject.set(x, "clearEvents", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddEventListener(value: (Element, String, js.Function1[/* event */ Event, Unit]) => js.Function0[Unit]): Self = this.set("addEventListener", js.Any.fromFunction3(value))
+    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setClearEvents(value: () => Unit): Self = this.set("clearEvents", js.Any.fromFunction0(value))
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setExtendEvent(value: (js.Object, Event) => js.Any): Self = StObject.set(x, "extendEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExtendEvent(value: (js.Object, Event) => js.Any): Self = this.set("extendEvent", js.Any.fromFunction2(value))
+    def setFireEvent(value: (Element, String) => Unit): Self = StObject.set(x, "fireEvent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFireEvent(value: (Element, String) => Unit): Self = this.set("fireEvent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveEventListener(value: (Element, String, js.Function1[/* event */ Event, Unit]) => Unit): Self = this.set("removeEventListener", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setRemoveEventListener(value: (Element, String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

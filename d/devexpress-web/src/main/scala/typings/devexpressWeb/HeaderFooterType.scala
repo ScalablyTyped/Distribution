@@ -1,17 +1,18 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HeaderFooterType extends js.Object
+sealed trait HeaderFooterType extends StObject
 /**
   * Lists the header/footer types.
   */
 @JSGlobal("HeaderFooterType")
 @js.native
-object HeaderFooterType extends js.Object {
+object HeaderFooterType extends StObject {
   
   /**
     * A header/footer displayed on even pages of the section.

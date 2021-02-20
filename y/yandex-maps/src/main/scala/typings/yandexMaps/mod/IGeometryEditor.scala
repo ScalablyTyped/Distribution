@@ -1,5 +1,6 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,30 +32,18 @@ object IGeometryEditor {
   }
   
   @scala.inline
-  implicit class IGeometryEditorOps[Self <: IGeometryEditor] (val x: Self) extends AnyVal {
+  implicit class IGeometryEditorMutableBuilder[Self <: IGeometryEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeometry(value: IGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartEditing(value: () => Unit): Self = StObject.set(x, "startEditing", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: IDataManager): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: IGeometry): Self = this.set("geometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartEditing(value: () => Unit): Self = this.set("startEditing", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setState(value: IDataManager): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStopEditing(value: () => Unit): Self = this.set("stopEditing", js.Any.fromFunction0(value))
+    def setStopEditing(value: () => Unit): Self = StObject.set(x, "stopEditing", js.Any.fromFunction0(value))
   }
 }

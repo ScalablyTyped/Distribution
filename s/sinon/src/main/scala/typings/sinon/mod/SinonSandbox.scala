@@ -9,12 +9,13 @@ import typings.std.Date
 import typings.std.Parameters
 import typings.std.PropertyDescriptor
 import typings.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SinonSandbox extends js.Object {
+trait SinonSandbox extends StObject {
   
   /**
     * A convenience reference for sinon.assert

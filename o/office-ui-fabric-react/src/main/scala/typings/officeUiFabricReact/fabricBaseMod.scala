@@ -2,17 +2,23 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.fabricTypesMod.IFabricProps
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Fabric/Fabric.base", JSImport.Namespace)
-@js.native
-object fabricBaseMod extends js.Object {
+object fabricBaseMod {
   
+  @JSImport("office-ui-fabric-react/lib/components/Fabric/Fabric.base", "FabricBase")
   @js.native
-  class FabricBase ()
+  class FabricBase protected ()
     extends Component[IFabricProps, js.Object, js.Any] {
+    def this(props: IFabricProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IFabricProps, context: js.Any) = this()
     
     var _addClassNameToBody: js.Any = js.native
     

@@ -1,12 +1,13 @@
 package typings.ink.anon
 
 import typings.ink.renderNodeToOutputMod.OutputTransformer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OffsetX extends js.Object {
+trait OffsetX extends StObject {
   
   var offsetX: js.UndefOr[Double] = js.native
   
@@ -25,42 +26,30 @@ object OffsetX {
   }
   
   @scala.inline
-  implicit class OffsetXOps[Self <: OffsetX] (val x: Self) extends AnyVal {
+  implicit class OffsetXMutableBuilder[Self <: OffsetX] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipStaticElements(value: Boolean): Self = this.set("skipStaticElements", value.asInstanceOf[js.Any])
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    def setSkipStaticElements(value: Boolean): Self = StObject.set(x, "skipStaticElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    def setTransformers(value: js.Array[OutputTransformer]): Self = StObject.set(x, "transformers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    def setTransformersUndefined: Self = StObject.set(x, "transformers", js.undefined)
     
     @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
-    
-    @scala.inline
-    def setTransformersVarargs(value: OutputTransformer*): Self = this.set("transformers", js.Array(value :_*))
-    
-    @scala.inline
-    def setTransformers(value: js.Array[OutputTransformer]): Self = this.set("transformers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransformers: Self = this.set("transformers", js.undefined)
+    def setTransformersVarargs(value: OutputTransformer*): Self = StObject.set(x, "transformers", js.Array(value :_*))
   }
 }

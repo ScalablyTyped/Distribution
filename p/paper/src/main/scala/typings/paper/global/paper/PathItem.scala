@@ -1,5 +1,6 @@
 package typings.paper.global.paper
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PathItem ()
   extends typings.paper.paper.PathItem
-/* static members */
-@JSGlobal("paper.PathItem")
-@js.native
-object PathItem extends js.Object {
+object PathItem {
   
   /** 
     * Creates a path item from the given object, determining if the
@@ -28,6 +26,9 @@ object PathItem extends js.Object {
     * 
     * @return the newly created path item
     */
+  /* static member */
+  @JSGlobal("paper.PathItem.create")
+  @js.native
   def create(`object`: js.Object): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
   /** 
     * Creates a path item from the given SVG path-data, determining if the
@@ -38,6 +39,9 @@ object PathItem extends js.Object {
     * 
     * @return the newly created path item
     */
+  /* static member */
+  @JSGlobal("paper.PathItem.create")
+  @js.native
   def create(pathData: String): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
   /** 
     * Creates a path item from the given segments array, determining if the
@@ -48,5 +52,8 @@ object PathItem extends js.Object {
     * 
     * @return the newly created path item
     */
+  /* static member */
+  @JSGlobal("paper.PathItem.create")
+  @js.native
   def create(segments: js.Array[js.Array[Double]]): typings.paper.paper.Path | typings.paper.paper.CompoundPath = js.native
 }

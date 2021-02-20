@@ -1,16 +1,16 @@
 package typings.reactNativeNavigation
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/commands/Deprecations", JSImport.Namespace)
-@js.native
-object deprecationsMod extends js.Object {
+object deprecationsMod {
   
+  @JSImport("react-native-navigation/lib/dist/commands/Deprecations", "Deprecations")
   @js.native
-  class Deprecations () extends js.Object {
+  class Deprecations () extends StObject {
     
     def checkForDeprecatedOptions(options: Record[String, _]): Unit = js.native
     

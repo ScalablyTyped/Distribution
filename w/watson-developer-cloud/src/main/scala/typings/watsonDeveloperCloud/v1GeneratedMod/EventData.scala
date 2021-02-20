@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Query event data object. */
 @js.native
-trait EventData extends js.Object {
+trait EventData extends StObject {
   
   /** The optional timestamp for the event that was created. If not provided, the time that the event was created in the log was used. */
   var client_timestamp: js.UndefOr[String] = js.native
@@ -38,48 +39,36 @@ object EventData {
   }
   
   @scala.inline
-  implicit class EventDataOps[Self <: EventData] (val x: Self) extends AnyVal {
+  implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClient_timestamp(value: String): Self = StObject.set(x, "client_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClient_timestampUndefined: Self = StObject.set(x, "client_timestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollection_id(value: String): Self = this.set("collection_id", value.asInstanceOf[js.Any])
+    def setDisplay_rank(value: Double): Self = StObject.set(x, "display_rank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_id(value: String): Self = this.set("document_id", value.asInstanceOf[js.Any])
+    def setDisplay_rankUndefined: Self = StObject.set(x, "display_rank", js.undefined)
     
     @scala.inline
-    def setEnvironment_id(value: String): Self = this.set("environment_id", value.asInstanceOf[js.Any])
+    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession_token(value: String): Self = this.set("session_token", value.asInstanceOf[js.Any])
+    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClient_timestamp(value: String): Self = this.set("client_timestamp", value.asInstanceOf[js.Any])
+    def setQuery_id(value: String): Self = StObject.set(x, "query_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClient_timestamp: Self = this.set("client_timestamp", js.undefined)
+    def setQuery_idUndefined: Self = StObject.set(x, "query_id", js.undefined)
     
     @scala.inline
-    def setDisplay_rank(value: Double): Self = this.set("display_rank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplay_rank: Self = this.set("display_rank", js.undefined)
-    
-    @scala.inline
-    def setQuery_id(value: String): Self = this.set("query_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuery_id: Self = this.set("query_id", js.undefined)
+    def setSession_token(value: String): Self = StObject.set(x, "session_token", value.asInstanceOf[js.Any])
   }
 }

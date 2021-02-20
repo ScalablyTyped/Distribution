@@ -1,66 +1,82 @@
 package typings.scheduler
 
 import typings.scheduler.anon.Delay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("scheduler", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @JSName("unstable_cancelCallback")
+  @JSImport("scheduler", "unstable_cancelCallback")
+  @js.native
   def unstableCancelCallback(callbackNode: CallbackNode): Unit = js.native
   
-  @JSName("unstable_continueExecution")
+  @JSImport("scheduler", "unstable_continueExecution")
+  @js.native
   def unstableContinueExecution(): Unit = js.native
   
-  @JSName("unstable_getCurrentPriorityLevel")
+  @JSImport("scheduler", "unstable_getCurrentPriorityLevel")
+  @js.native
   def unstableGetCurrentPriorityLevel(): Double = js.native
   
-  @JSName("unstable_getFirstCallbackNode")
+  @JSImport("scheduler", "unstable_getFirstCallbackNode")
+  @js.native
   def unstableGetFirstCallbackNode(): CallbackNode | Null = js.native
   
-  @JSName("unstable_IdlePriority")
+  @JSImport("scheduler", "unstable_IdlePriority")
+  @js.native
   val unstableIdlePriority: /* 5 */ Double = js.native
   
-  @JSName("unstable_ImmediatePriority")
+  @JSImport("scheduler", "unstable_ImmediatePriority")
+  @js.native
   val unstableImmediatePriority: /* 1 */ Double = js.native
   
-  @JSName("unstable_LowPriority")
+  @JSImport("scheduler", "unstable_LowPriority")
+  @js.native
   val unstableLowPriority: /* 4 */ Double = js.native
   
-  @JSName("unstable_next")
+  @JSImport("scheduler", "unstable_next")
+  @js.native
   def unstableNext[T](eventHandler: js.Function0[T]): T = js.native
   
-  @JSName("unstable_NormalPriority")
+  @JSImport("scheduler", "unstable_NormalPriority")
+  @js.native
   val unstableNormalPriority: /* 3 */ Double = js.native
   
-  @JSName("unstable_now")
+  @JSImport("scheduler", "unstable_now")
+  @js.native
   def unstableNow(): Double = js.native
   
-  @JSName("unstable_pauseExecution")
+  @JSImport("scheduler", "unstable_pauseExecution")
+  @js.native
   def unstablePauseExecution(): Unit = js.native
   
-  @JSName("unstable_runWithPriority")
+  @JSImport("scheduler", "unstable_runWithPriority")
+  @js.native
   def unstableRunWithPriority[T](priorityLevel: Double, eventHandler: js.Function0[T]): T = js.native
   
-  @JSName("unstable_scheduleCallback")
+  @JSImport("scheduler", "unstable_scheduleCallback")
+  @js.native
   def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType): CallbackNode = js.native
-  @JSName("unstable_scheduleCallback")
+  @JSImport("scheduler", "unstable_scheduleCallback")
+  @js.native
   def unstableScheduleCallback(priorityLevel: Double, callback: FrameCallbackType, options: Delay): CallbackNode = js.native
   
-  @JSName("unstable_shouldYield")
+  @JSImport("scheduler", "unstable_shouldYield")
+  @js.native
   def unstableShouldYield(): Boolean = js.native
   
-  @JSName("unstable_UserBlockingPriority")
+  @JSImport("scheduler", "unstable_UserBlockingPriority")
+  @js.native
   val unstableUserBlockingPriority: /* 2 */ Double = js.native
   
-  @JSName("unstable_wrapCallback")
+  @JSImport("scheduler", "unstable_wrapCallback")
+  @js.native
   def unstableWrapCallback(callback: FrameCallbackType): js.Function0[FrameCallbackType] = js.native
   
   @js.native
-  trait CallbackNode extends js.Object {
+  trait CallbackNode extends StObject {
     
     def callback(): (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit = js.native
     @JSName("callback")

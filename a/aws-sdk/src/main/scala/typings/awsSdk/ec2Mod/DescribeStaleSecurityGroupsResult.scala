@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStaleSecurityGroupsResult extends js.Object {
+trait DescribeStaleSecurityGroupsResult extends StObject {
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
@@ -26,33 +27,21 @@ object DescribeStaleSecurityGroupsResult {
   }
   
   @scala.inline
-  implicit class DescribeStaleSecurityGroupsResultOps[Self <: DescribeStaleSecurityGroupsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeStaleSecurityGroupsResultMutableBuilder[Self <: DescribeStaleSecurityGroupsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStaleSecurityGroupSet(value: StaleSecurityGroupSet): Self = StObject.set(x, "StaleSecurityGroupSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStaleSecurityGroupSetUndefined: Self = StObject.set(x, "StaleSecurityGroupSet", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = this.set("StaleSecurityGroupSet", js.Array(value :_*))
-    
-    @scala.inline
-    def setStaleSecurityGroupSet(value: StaleSecurityGroupSet): Self = this.set("StaleSecurityGroupSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStaleSecurityGroupSet: Self = this.set("StaleSecurityGroupSet", js.undefined)
+    def setStaleSecurityGroupSetVarargs(value: StaleSecurityGroup*): Self = StObject.set(x, "StaleSecurityGroupSet", js.Array(value :_*))
   }
 }

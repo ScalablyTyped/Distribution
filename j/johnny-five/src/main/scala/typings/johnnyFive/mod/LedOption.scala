@@ -1,11 +1,12 @@
 package typings.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LedOption extends js.Object {
+trait LedOption extends StObject {
   
   var address: js.UndefOr[Double] = js.native
   
@@ -26,45 +27,33 @@ object LedOption {
   }
   
   @scala.inline
-  implicit class LedOptionOps[Self <: LedOption] (val x: Self) extends AnyVal {
+  implicit class LedOptionMutableBuilder[Self <: LedOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPin(value: Double): Self = this.set("pin", value.asInstanceOf[js.Any])
+    def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
     @scala.inline
-    def setAddress(value: Double): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setIsAnode(value: Boolean): Self = StObject.set(x, "isAnode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
     
     @scala.inline
-    def setController(value: String): Self = this.set("controller", value.asInstanceOf[js.Any])
+    def setPin(value: Double): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteController: Self = this.set("controller", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAnode(value: Boolean): Self = this.set("isAnode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsAnode: Self = this.set("isAnode", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

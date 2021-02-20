@@ -1,11 +1,12 @@
 package typings.inversify.interfacesMod.interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Context extends js.Object {
+trait Context extends StObject {
   
   def addPlan(plan: Plan): Unit = js.native
   
@@ -35,36 +36,24 @@ object Context {
   }
   
   @scala.inline
-  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+  implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddPlan(value: Plan => Unit): Self = StObject.set(x, "addPlan", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentRequest(value: Request): Self = StObject.set(x, "currentRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddPlan(value: Plan => Unit): Self = this.set("addPlan", js.Any.fromFunction1(value))
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: Container): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setPlan(value: Plan): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentRequest(value: Request): Self = this.set("currentRequest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlan(value: Plan): Self = this.set("plan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetCurrentRequest(value: Request => Unit): Self = this.set("setCurrentRequest", js.Any.fromFunction1(value))
+    def setSetCurrentRequest(value: Request => Unit): Self = StObject.set(x, "setCurrentRequest", js.Any.fromFunction1(value))
   }
 }

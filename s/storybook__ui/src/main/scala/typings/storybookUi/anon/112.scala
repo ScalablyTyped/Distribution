@@ -1,11 +1,12 @@
 package typings.storybookUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `112` extends js.Object {
+trait `112` extends StObject {
   
   var `1`: Boolean = js.native
   
@@ -49,42 +50,30 @@ object `112` {
   }
   
   @scala.inline
-  implicit class `112Ops`[Self <: `112`] (val x: Self) extends AnyVal {
+  implicit class `112MutableBuilder`[Self <: `112`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set1(value: Boolean): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `set1-11`(value: Boolean): Self = StObject.set(x, "1-11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `set1-12`(value: Boolean): Self = StObject.set(x, "1-12", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set1(value: Boolean): Self = this.set("1", value.asInstanceOf[js.Any])
+    def `set1-12-121`(value: Boolean): Self = StObject.set(x, "1-12-121", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set1-11`(value: Boolean): Self = this.set("1-11", value.asInstanceOf[js.Any])
+    def `set1-12-122`(value: Boolean): Self = StObject.set(x, "1-12-122", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set1-12`(value: Boolean): Self = this.set("1-12", value.asInstanceOf[js.Any])
+    def set2(value: Boolean): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set1-12-121`(value: Boolean): Self = this.set("1-12-121", value.asInstanceOf[js.Any])
+    def `set2-21`(value: Boolean): Self = StObject.set(x, "2-21", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `set1-12-122`(value: Boolean): Self = this.set("1-12-122", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set2(value: Boolean): Self = this.set("2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `set2-21`(value: Boolean): Self = this.set("2-21", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `set2-22`(value: Boolean): Self = this.set("2-22", value.asInstanceOf[js.Any])
+    def `set2-22`(value: Boolean): Self = StObject.set(x, "2-22", value.asInstanceOf[js.Any])
   }
 }

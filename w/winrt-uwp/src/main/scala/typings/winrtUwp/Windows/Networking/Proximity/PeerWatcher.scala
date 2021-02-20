@@ -8,13 +8,14 @@ import typings.winrtUwp.winrtUwpStrings.enumerationcompleted
 import typings.winrtUwp.winrtUwpStrings.removed
 import typings.winrtUwp.winrtUwpStrings.stopped
 import typings.winrtUwp.winrtUwpStrings.updated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Dynamically discovers peer apps within wireless range. */
 @js.native
-trait PeerWatcher extends js.Object {
+trait PeerWatcher extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

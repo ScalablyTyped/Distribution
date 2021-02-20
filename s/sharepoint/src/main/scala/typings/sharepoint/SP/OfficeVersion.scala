@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfficeVersion extends js.Object {
+trait OfficeVersion extends StObject {
   
   var assemblyVersion: String = js.native
   
@@ -41,42 +42,30 @@ object OfficeVersion {
   }
   
   @scala.inline
-  implicit class OfficeVersionOps[Self <: OfficeVersion] (val x: Self) extends AnyVal {
+  implicit class OfficeVersionMutableBuilder[Self <: OfficeVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssemblyVersion(value: String): Self = StObject.set(x, "assemblyVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMajorBuildVersion(value: Double): Self = StObject.set(x, "majorBuildVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMajorVersion(value: String): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssemblyVersion(value: String): Self = this.set("assemblyVersion", value.asInstanceOf[js.Any])
+    def setMajorVersionDotZero(value: String): Self = StObject.set(x, "majorVersionDotZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorBuildVersion(value: Double): Self = this.set("majorBuildVersion", value.asInstanceOf[js.Any])
+    def setPreviousMajorBuildVersion(value: Double): Self = StObject.set(x, "previousMajorBuildVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersion(value: String): Self = this.set("majorVersion", value.asInstanceOf[js.Any])
+    def setPreviousVersion(value: String): Self = StObject.set(x, "previousVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorVersionDotZero(value: String): Self = this.set("majorVersionDotZero", value.asInstanceOf[js.Any])
+    def setPreviousVersionDotZero(value: String): Self = StObject.set(x, "previousVersionDotZero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousMajorBuildVersion(value: Double): Self = this.set("previousMajorBuildVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousVersion(value: String): Self = this.set("previousVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreviousVersionDotZero(value: String): Self = this.set("previousVersionDotZero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWssMajorVersion(value: String): Self = this.set("wssMajorVersion", value.asInstanceOf[js.Any])
+    def setWssMajorVersion(value: String): Self = StObject.set(x, "wssMajorVersion", value.asInstanceOf[js.Any])
   }
 }

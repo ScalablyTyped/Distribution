@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{initialRowStateAccessor (row : react-table.react-table.Row<D>): react-table.react-table.UseRowStateLocalState<D, unknown>, getResetRowStateDeps (instance : react-table.react-table.TableInstance<D>): std.Array<any>,   autoResetRowState :boolean | undefined}> */
 @js.native
-trait UseRowStateOptions[D /* <: js.Object */] extends js.Object {
+trait UseRowStateOptions[D /* <: js.Object */] extends StObject {
   
   var autoResetRowState: js.UndefOr[Boolean] = js.native
   
@@ -23,36 +24,24 @@ object UseRowStateOptions {
   }
   
   @scala.inline
-  implicit class UseRowStateOptionsOps[Self <: UseRowStateOptions[_], D /* <: js.Object */] (val x: Self with UseRowStateOptions[D]) extends AnyVal {
+  implicit class UseRowStateOptionsMutableBuilder[Self <: UseRowStateOptions[_], D /* <: js.Object */] (val x: Self with UseRowStateOptions[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoResetRowState(value: Boolean): Self = StObject.set(x, "autoResetRowState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoResetRowStateUndefined: Self = StObject.set(x, "autoResetRowState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[_]): Self = StObject.set(x, "getResetRowStateDeps", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoResetRowState(value: Boolean): Self = this.set("autoResetRowState", value.asInstanceOf[js.Any])
+    def setGetResetRowStateDepsUndefined: Self = StObject.set(x, "getResetRowStateDeps", js.undefined)
     
     @scala.inline
-    def deleteAutoResetRowState: Self = this.set("autoResetRowState", js.undefined)
+    def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, _]): Self = StObject.set(x, "initialRowStateAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetResetRowStateDeps(value: /* instance */ TableInstance[D] => js.Array[_]): Self = this.set("getResetRowStateDeps", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetResetRowStateDeps: Self = this.set("getResetRowStateDeps", js.undefined)
-    
-    @scala.inline
-    def setInitialRowStateAccessor(value: /* row */ Row[D] => UseRowStateLocalState[D, _]): Self = this.set("initialRowStateAccessor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteInitialRowStateAccessor: Self = this.set("initialRowStateAccessor", js.undefined)
+    def setInitialRowStateAccessorUndefined: Self = StObject.set(x, "initialRowStateAccessor", js.undefined)
   }
 }

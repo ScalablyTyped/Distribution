@@ -4,6 +4,7 @@ import typings.googleAuthLibrary.mod.Compute
 import typings.googleAuthLibrary.mod.JWT
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,195 +159,183 @@ object ParamsResourcePlacementsList {
   }
   
   @scala.inline
-  implicit class ParamsResourcePlacementsListOps[Self <: ParamsResourcePlacementsList] (val x: Self) extends AnyVal {
+  implicit class ParamsResourcePlacementsListMutableBuilder[Self <: ParamsResourcePlacementsList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "advertiserIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
     
     @scala.inline
-    def setAdvertiserIdsVarargs(value: String*): Self = this.set("advertiserIds", js.Array(value :_*))
+    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIds(value: js.Array[String]): Self = this.set("advertiserIds", value.asInstanceOf[js.Any])
+    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserIds: Self = this.set("advertiserIds", js.undefined)
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     @scala.inline
-    def deleteArchived: Self = this.set("archived", js.undefined)
+    def setCampaignIds(value: js.Array[String]): Self = StObject.set(x, "campaignIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setCampaignIdsUndefined: Self = StObject.set(x, "campaignIds", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("auth", js.undefined)
+    def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value :_*))
     
     @scala.inline
-    def setCampaignIdsVarargs(value: String*): Self = this.set("campaignIds", js.Array(value :_*))
+    def setCompatibilities(value: js.Array[String]): Self = StObject.set(x, "compatibilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCampaignIds(value: js.Array[String]): Self = this.set("campaignIds", value.asInstanceOf[js.Any])
+    def setCompatibilitiesUndefined: Self = StObject.set(x, "compatibilities", js.undefined)
     
     @scala.inline
-    def deleteCampaignIds: Self = this.set("campaignIds", js.undefined)
+    def setCompatibilitiesVarargs(value: String*): Self = StObject.set(x, "compatibilities", js.Array(value :_*))
     
     @scala.inline
-    def setCompatibilitiesVarargs(value: String*): Self = this.set("compatibilities", js.Array(value :_*))
+    def setContentCategoryIds(value: js.Array[String]): Self = StObject.set(x, "contentCategoryIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatibilities(value: js.Array[String]): Self = this.set("compatibilities", value.asInstanceOf[js.Any])
+    def setContentCategoryIdsUndefined: Self = StObject.set(x, "contentCategoryIds", js.undefined)
     
     @scala.inline
-    def deleteCompatibilities: Self = this.set("compatibilities", js.undefined)
+    def setContentCategoryIdsVarargs(value: String*): Self = StObject.set(x, "contentCategoryIds", js.Array(value :_*))
     
     @scala.inline
-    def setContentCategoryIdsVarargs(value: String*): Self = this.set("contentCategoryIds", js.Array(value :_*))
+    def setDirectorySiteIds(value: js.Array[String]): Self = StObject.set(x, "directorySiteIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentCategoryIds(value: js.Array[String]): Self = this.set("contentCategoryIds", value.asInstanceOf[js.Any])
+    def setDirectorySiteIdsUndefined: Self = StObject.set(x, "directorySiteIds", js.undefined)
     
     @scala.inline
-    def deleteContentCategoryIds: Self = this.set("contentCategoryIds", js.undefined)
+    def setDirectorySiteIdsVarargs(value: String*): Self = StObject.set(x, "directorySiteIds", js.Array(value :_*))
     
     @scala.inline
-    def setDirectorySiteIdsVarargs(value: String*): Self = this.set("directorySiteIds", js.Array(value :_*))
+    def setGroupIds(value: js.Array[String]): Self = StObject.set(x, "groupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectorySiteIds(value: js.Array[String]): Self = this.set("directorySiteIds", value.asInstanceOf[js.Any])
+    def setGroupIdsUndefined: Self = StObject.set(x, "groupIds", js.undefined)
     
     @scala.inline
-    def deleteDirectorySiteIds: Self = this.set("directorySiteIds", js.undefined)
+    def setGroupIdsVarargs(value: String*): Self = StObject.set(x, "groupIds", js.Array(value :_*))
     
     @scala.inline
-    def setGroupIdsVarargs(value: String*): Self = this.set("groupIds", js.Array(value :_*))
+    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIds(value: js.Array[String]): Self = this.set("groupIds", value.asInstanceOf[js.Any])
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def deleteGroupIds: Self = this.set("groupIds", js.undefined)
+    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
     @scala.inline
-    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    def setMaxEndDate(value: String): Self = StObject.set(x, "maxEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setMaxEndDateUndefined: Self = StObject.set(x, "maxEndDate", js.undefined)
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxEndDate(value: String): Self = this.set("maxEndDate", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteMaxEndDate: Self = this.set("maxEndDate", js.undefined)
+    def setMaxStartDate(value: String): Self = StObject.set(x, "maxStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setMaxStartDateUndefined: Self = StObject.set(x, "maxStartDate", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setMinEndDate(value: String): Self = StObject.set(x, "minEndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxStartDate(value: String): Self = this.set("maxStartDate", value.asInstanceOf[js.Any])
+    def setMinEndDateUndefined: Self = StObject.set(x, "minEndDate", js.undefined)
     
     @scala.inline
-    def deleteMaxStartDate: Self = this.set("maxStartDate", js.undefined)
+    def setMinStartDate(value: String): Self = StObject.set(x, "minStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinEndDate(value: String): Self = this.set("minEndDate", value.asInstanceOf[js.Any])
+    def setMinStartDateUndefined: Self = StObject.set(x, "minStartDate", js.undefined)
     
     @scala.inline
-    def deleteMinEndDate: Self = this.set("minEndDate", js.undefined)
+    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinStartDate(value: String): Self = this.set("minStartDate", value.asInstanceOf[js.Any])
+    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     @scala.inline
-    def deleteMinStartDate: Self = this.set("minStartDate", js.undefined)
+    def setPaymentSource(value: String): Self = StObject.set(x, "paymentSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    def setPaymentSourceUndefined: Self = StObject.set(x, "paymentSource", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    def setPlacementStrategyIds(value: js.Array[String]): Self = StObject.set(x, "placementStrategyIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentSource(value: String): Self = this.set("paymentSource", value.asInstanceOf[js.Any])
+    def setPlacementStrategyIdsUndefined: Self = StObject.set(x, "placementStrategyIds", js.undefined)
     
     @scala.inline
-    def deletePaymentSource: Self = this.set("paymentSource", js.undefined)
+    def setPlacementStrategyIdsVarargs(value: String*): Self = StObject.set(x, "placementStrategyIds", js.Array(value :_*))
     
     @scala.inline
-    def setPlacementStrategyIdsVarargs(value: String*): Self = this.set("placementStrategyIds", js.Array(value :_*))
+    def setPricingTypes(value: js.Array[String]): Self = StObject.set(x, "pricingTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementStrategyIds(value: js.Array[String]): Self = this.set("placementStrategyIds", value.asInstanceOf[js.Any])
+    def setPricingTypesUndefined: Self = StObject.set(x, "pricingTypes", js.undefined)
     
     @scala.inline
-    def deletePlacementStrategyIds: Self = this.set("placementStrategyIds", js.undefined)
+    def setPricingTypesVarargs(value: String*): Self = StObject.set(x, "pricingTypes", js.Array(value :_*))
     
     @scala.inline
-    def setPricingTypesVarargs(value: String*): Self = this.set("pricingTypes", js.Array(value :_*))
+    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPricingTypes(value: js.Array[String]): Self = this.set("pricingTypes", value.asInstanceOf[js.Any])
+    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
     @scala.inline
-    def deletePricingTypes: Self = this.set("pricingTypes", js.undefined)
+    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
     
     @scala.inline
-    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    def setSiteIds(value: js.Array[String]): Self = StObject.set(x, "siteIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    def setSiteIdsUndefined: Self = StObject.set(x, "siteIds", js.undefined)
     
     @scala.inline
-    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value :_*))
     
     @scala.inline
-    def setSiteIdsVarargs(value: String*): Self = this.set("siteIds", js.Array(value :_*))
+    def setSizeIds(value: js.Array[String]): Self = StObject.set(x, "sizeIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSiteIds(value: js.Array[String]): Self = this.set("siteIds", value.asInstanceOf[js.Any])
+    def setSizeIdsUndefined: Self = StObject.set(x, "sizeIds", js.undefined)
     
     @scala.inline
-    def deleteSiteIds: Self = this.set("siteIds", js.undefined)
+    def setSizeIdsVarargs(value: String*): Self = StObject.set(x, "sizeIds", js.Array(value :_*))
     
     @scala.inline
-    def setSizeIdsVarargs(value: String*): Self = this.set("sizeIds", js.Array(value :_*))
+    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeIds(value: js.Array[String]): Self = this.set("sizeIds", value.asInstanceOf[js.Any])
+    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
     @scala.inline
-    def deleteSizeIds: Self = this.set("sizeIds", js.undefined)
+    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortField: Self = this.set("sortField", js.undefined)
-    
-    @scala.inline
-    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

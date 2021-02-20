@@ -4,12 +4,13 @@ import typings.hapi.hapiBooleans.`false`
 import typings.hapi.hapiStrings.`try`
 import typings.hapi.hapiStrings.optional
 import typings.hapi.hapiStrings.required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteOptionsAccess extends js.Object {
+trait RouteOptionsAccess extends StObject {
   
   /**
     * Default value: none.
@@ -84,69 +85,57 @@ object RouteOptionsAccess {
   }
   
   @scala.inline
-  implicit class RouteOptionsAccessOps[Self <: RouteOptionsAccess] (val x: Self) extends AnyVal {
+  implicit class RouteOptionsAccessMutableBuilder[Self <: RouteOptionsAccess] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccess(value: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessVarargs(value: RouteOptionsAccessObject*): Self = StObject.set(x, "access", js.Array(value :_*))
     
     @scala.inline
-    def setAccessVarargs(value: RouteOptionsAccessObject*): Self = this.set("access", js.Array(value :_*))
+    def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccess(value: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]): Self = this.set("access", value.asInstanceOf[js.Any])
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
     @scala.inline
-    def deleteAccess: Self = this.set("access", js.undefined)
+    def setMode(value: required | optional | `try`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntity(value: RouteOptionsAccessEntity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
+    def setPayload(value: `false` | required | optional): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: required | optional | `try`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: `false` | required | optional): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deletePayload: Self = this.set("payload", js.undefined)
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
     @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: RouteOptionsAccessScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value :_*))
     
     @scala.inline
-    def setStrategiesVarargs(value: String*): Self = this.set("strategies", js.Array(value :_*))
+    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrategies(value: js.Array[String]): Self = this.set("strategies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategies: Self = this.set("strategies", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: String): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
   }
 }

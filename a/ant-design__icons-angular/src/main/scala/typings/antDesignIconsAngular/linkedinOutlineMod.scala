@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/LinkedinOutline", JSImport.Namespace)
-@js.native
-object linkedinOutlineMod extends js.Object {
+object linkedinOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/LinkedinOutline", "LinkedinOutline")
+  @js.native
   val LinkedinOutline: IconDefinition = js.native
 }

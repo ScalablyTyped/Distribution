@@ -3,13 +3,18 @@ package typings.appBuilderLib
 import typings.appBuilderLib.coreMod.Target
 import typings.appBuilderLib.msiOptionsMod.MsiOptions
 import typings.appBuilderLib.winPackagerMod.WinPackager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("app-builder-lib/out/targets/MsiTarget", JSImport.Namespace)
-@js.native
-object msiTargetMod extends js.Object {
+object msiTargetMod {
+  
+  @JSImport("app-builder-lib/out/targets/MsiTarget", JSImport.Default)
+  @js.native
+  class default protected () extends MsiTarget {
+    def this(packager: WinPackager, outDir: String) = this()
+  }
   
   @js.native
   trait MsiTarget extends Target {
@@ -28,10 +33,5 @@ object msiTargetMod extends js.Object {
     val vm: js.Any = js.native
     
     var writeManifest: js.Any = js.native
-  }
-  
-  @js.native
-  class default protected () extends MsiTarget {
-    def this(packager: WinPackager, outDir: String) = this()
   }
 }

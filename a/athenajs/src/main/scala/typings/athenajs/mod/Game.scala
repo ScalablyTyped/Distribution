@@ -1,12 +1,13 @@
 package typings.athenajs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Game")
 @js.native
-class Game protected () extends js.Object {
+class Game protected () extends StObject {
   def this(options: GameOptions) = this()
   
   def bindEvents(eventList: String): Unit = js.native

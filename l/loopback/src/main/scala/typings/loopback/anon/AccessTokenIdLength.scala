@@ -1,12 +1,13 @@
 package typings.loopback.anon
 
 import typings.loopback.mod.ACL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessTokenIdLength extends js.Object {
+trait AccessTokenIdLength extends StObject {
   
   var accessTokenIdLength: Double = js.native
   
@@ -23,30 +24,18 @@ object AccessTokenIdLength {
   }
   
   @scala.inline
-  implicit class AccessTokenIdLengthOps[Self <: AccessTokenIdLength] (val x: Self) extends AnyVal {
+  implicit class AccessTokenIdLengthMutableBuilder[Self <: AccessTokenIdLength] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessTokenIdLength(value: Double): Self = StObject.set(x, "accessTokenIdLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
     
     @scala.inline
-    def setAccessTokenIdLength(value: Double): Self = this.set("accessTokenIdLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAclsVarargs(value: ACL*): Self = this.set("acls", js.Array(value :_*))
-    
-    @scala.inline
-    def setAcls(value: js.Array[ACL]): Self = this.set("acls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHttp(value: Path): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setHttp(value: Path): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

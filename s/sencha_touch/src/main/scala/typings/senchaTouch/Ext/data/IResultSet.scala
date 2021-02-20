@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext.data
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,126 +97,114 @@ object IResultSet {
   }
   
   @scala.inline
-  implicit class IResultSetOps[Self <: IResultSet] (val x: Self) extends AnyVal {
+  implicit class IResultSetMutableBuilder[Self <: IResultSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setGetLoaded(value: () => Boolean): Self = StObject.set(x, "getLoaded", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    def setGetLoadedUndefined: Self = StObject.set(x, "getLoaded", js.undefined)
     
     @scala.inline
-    def deleteGetCount: Self = this.set("getCount", js.undefined)
+    def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLoaded(value: () => Boolean): Self = this.set("getLoaded", js.Any.fromFunction0(value))
+    def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
     
     @scala.inline
-    def deleteGetLoaded: Self = this.set("getLoaded", js.undefined)
+    def setGetRecords(value: () => Array): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMessage(value: () => String): Self = this.set("getMessage", js.Any.fromFunction0(value))
+    def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
     
     @scala.inline
-    def deleteGetMessage: Self = this.set("getMessage", js.undefined)
+    def setGetSuccess(value: () => Boolean): Self = StObject.set(x, "getSuccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRecords(value: () => Array): Self = this.set("getRecords", js.Any.fromFunction0(value))
+    def setGetSuccessUndefined: Self = StObject.set(x, "getSuccess", js.undefined)
     
     @scala.inline
-    def deleteGetRecords: Self = this.set("getRecords", js.undefined)
+    def setGetTotal(value: () => Double): Self = StObject.set(x, "getTotal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSuccess(value: () => Boolean): Self = this.set("getSuccess", js.Any.fromFunction0(value))
+    def setGetTotalUndefined: Self = StObject.set(x, "getTotal", js.undefined)
     
     @scala.inline
-    def deleteGetSuccess: Self = this.set("getSuccess", js.undefined)
+    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetTotal(value: () => Double): Self = this.set("getTotal", js.Any.fromFunction0(value))
+    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
     @scala.inline
-    def deleteGetTotal: Self = this.set("getTotal", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: Boolean): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    def setRecords(value: Array): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setSetCount(value: /* count */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRecords(value: Array): Self = this.set("records", value.asInstanceOf[js.Any])
+    def setSetCountUndefined: Self = StObject.set(x, "setCount", js.undefined)
     
     @scala.inline
-    def deleteRecords: Self = this.set("records", js.undefined)
+    def setSetLoaded(value: /* loaded */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setLoaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCount(value: /* count */ js.UndefOr[Double] => Unit): Self = this.set("setCount", js.Any.fromFunction1(value))
+    def setSetLoadedUndefined: Self = StObject.set(x, "setLoaded", js.undefined)
     
     @scala.inline
-    def deleteSetCount: Self = this.set("setCount", js.undefined)
+    def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLoaded(value: /* loaded */ js.UndefOr[Boolean] => Unit): Self = this.set("setLoaded", js.Any.fromFunction1(value))
+    def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
     
     @scala.inline
-    def deleteSetLoaded: Self = this.set("setLoaded", js.undefined)
+    def setSetRecords(value: /* records */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setRecords", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = this.set("setMessage", js.Any.fromFunction1(value))
+    def setSetRecordsUndefined: Self = StObject.set(x, "setRecords", js.undefined)
     
     @scala.inline
-    def deleteSetMessage: Self = this.set("setMessage", js.undefined)
+    def setSetSuccess(value: /* success */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setSuccess", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetRecords(value: /* records */ js.UndefOr[Array] => Unit): Self = this.set("setRecords", js.Any.fromFunction1(value))
+    def setSetSuccessUndefined: Self = StObject.set(x, "setSuccess", js.undefined)
     
     @scala.inline
-    def deleteSetRecords: Self = this.set("setRecords", js.undefined)
+    def setSetTotal(value: /* total */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTotal", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetSuccess(value: /* success */ js.UndefOr[Boolean] => Unit): Self = this.set("setSuccess", js.Any.fromFunction1(value))
+    def setSetTotalUndefined: Self = StObject.set(x, "setTotal", js.undefined)
     
     @scala.inline
-    def deleteSetSuccess: Self = this.set("setSuccess", js.undefined)
+    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetTotal(value: /* total */ js.UndefOr[Double] => Unit): Self = this.set("setTotal", js.Any.fromFunction1(value))
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteSetTotal: Self = this.set("setTotal", js.undefined)
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: Boolean): Self = this.set("success", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

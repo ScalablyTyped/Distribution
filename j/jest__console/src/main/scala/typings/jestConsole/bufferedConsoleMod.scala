@@ -7,13 +7,55 @@ import typings.jestConsole.typesMod.LogType
 import typings.jestSourceMap.typesMod.SourceMapRegistry
 import typings.std.Console
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jest/console/build/BufferedConsole", JSImport.Namespace)
-@js.native
-object bufferedConsoleMod extends js.Object {
+object bufferedConsoleMod {
+  
+  @JSImport("@jest/console/build/BufferedConsole", JSImport.Default)
+  @js.native
+  class default protected () extends BufferedConsole {
+    def this(getSourceMaps: js.Function0[js.UndefOr[SourceMapRegistry | Null]]) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("@jest/console/build/BufferedConsole", "default.write")
+    @js.native
+    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
+    @JSImport("@jest/console/build/BufferedConsole", "default.write")
+    @js.native
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: js.UndefOr[scala.Nothing],
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = js.native
+    @JSImport("@jest/console/build/BufferedConsole", "default.write")
+    @js.native
+    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
+    @JSImport("@jest/console/build/BufferedConsole", "default.write")
+    @js.native
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: Double,
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = js.native
+    @JSImport("@jest/console/build/BufferedConsole", "default.write")
+    @js.native
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: Null,
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = js.native
+  }
   
   @js.native
   trait BufferedConsole extends Console {
@@ -55,38 +97,5 @@ object bufferedConsoleMod extends js.Object {
     def log(firstArg: js.Any, rest: js.Any*): Unit = js.native
     
     def warn(firstArg: js.Any, rest: js.Any*): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends BufferedConsole {
-    def this(getSourceMaps: js.Function0[js.UndefOr[SourceMapRegistry | Null]]) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
-    def write(
-      buffer: ConsoleBuffer,
-      `type`: LogType,
-      message: LogMessage,
-      level: js.UndefOr[scala.Nothing],
-      sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
-    def write(
-      buffer: ConsoleBuffer,
-      `type`: LogType,
-      message: LogMessage,
-      level: Double,
-      sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
-    def write(
-      buffer: ConsoleBuffer,
-      `type`: LogType,
-      message: LogMessage,
-      level: Null,
-      sourceMaps: SourceMapRegistry
-    ): js.Array[LogEntry] = js.native
   }
 }

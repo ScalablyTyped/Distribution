@@ -1,15 +1,15 @@
 package typings.angularCompiler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.angularCompiler.elementSchemaRegistryMod.ElementSchemaRegistry
+import typings.angularCompiler.mod.ElementSchemaRegistry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/testing/src/schema_registry_mock", JSImport.Namespace)
-@js.native
-object schemaRegistryMockMod extends js.Object {
+object schemaRegistryMockMod {
   
+  @JSImport("@angular/compiler/testing/src/schema_registry_mock", "MockSchemaRegistry")
   @js.native
   class MockSchemaRegistry protected () extends ElementSchemaRegistry {
     def this(

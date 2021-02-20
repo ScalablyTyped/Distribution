@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An aggregation analyzing log information for queries and events. */
 @js.native
-trait MetricTokenAggregation extends js.Object {
+trait MetricTokenAggregation extends StObject {
   
   /** The event type associated with this metric result. This field, when present, will always be `click`. */
   var event_type: js.UndefOr[String] = js.native
@@ -23,33 +24,21 @@ object MetricTokenAggregation {
   }
   
   @scala.inline
-  implicit class MetricTokenAggregationOps[Self <: MetricTokenAggregation] (val x: Self) extends AnyVal {
+  implicit class MetricTokenAggregationMutableBuilder[Self <: MetricTokenAggregation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEvent_typeUndefined: Self = StObject.set(x, "event_type", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[MetricTokenAggregationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent_type(value: String): Self = this.set("event_type", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteEvent_type: Self = this.set("event_type", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: MetricTokenAggregationResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[MetricTokenAggregationResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: MetricTokenAggregationResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

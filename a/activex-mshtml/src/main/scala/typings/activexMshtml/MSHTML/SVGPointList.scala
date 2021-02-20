@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SVGPointList extends js.Object {
+trait SVGPointList extends StObject {
   
   @JSName("MSHTML.SVGPointList_typekey")
   var MSHTMLDotSVGPointList_typekey: SVGPointList = js.native
@@ -46,45 +47,33 @@ object SVGPointList {
   }
   
   @scala.inline
-  implicit class SVGPointListOps[Self <: SVGPointList] (val x: Self) extends AnyVal {
+  implicit class SVGPointListMutableBuilder[Self <: SVGPointList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendItem(value: SVGPoint => SVGPoint): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetItem(value: Double => SVGPoint): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMSHTMLDotSVGPointList_typekey(value: SVGPointList): Self = this.set("MSHTML.SVGPointList_typekey", value.asInstanceOf[js.Any])
+    def setInitialize(value: SVGPoint => SVGPoint): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendItem(value: SVGPoint => SVGPoint): Self = this.set("appendItem", js.Any.fromFunction1(value))
+    def setInsertItemBefore(value: (SVGPoint, Double) => SVGPoint): Self = StObject.set(x, "insertItemBefore", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setMSHTMLDotSVGPointList_typekey(value: SVGPointList): Self = StObject.set(x, "MSHTML.SVGPointList_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: Double => SVGPoint): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setNumberOfItems(value: Double): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialize(value: SVGPoint => SVGPoint): Self = this.set("initialize", js.Any.fromFunction1(value))
+    def setRemoveItem(value: Double => SVGPoint): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInsertItemBefore(value: (SVGPoint, Double) => SVGPoint): Self = this.set("insertItemBefore", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setNumberOfItems(value: Double): Self = this.set("numberOfItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoveItem(value: Double => SVGPoint): Self = this.set("removeItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceItem(value: (SVGPoint, Double) => SVGPoint): Self = this.set("replaceItem", js.Any.fromFunction2(value))
+    def setReplaceItem(value: (SVGPoint, Double) => SVGPoint): Self = StObject.set(x, "replaceItem", js.Any.fromFunction2(value))
   }
 }

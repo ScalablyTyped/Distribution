@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Workteam extends js.Object {
+trait Workteam extends StObject {
   
   /**
     * The date and time that the work team was created (timestamp).
@@ -71,72 +72,60 @@ object Workteam {
   }
   
   @scala.inline
-  implicit class WorkteamOps[Self <: Workteam] (val x: Self) extends AnyVal {
+  implicit class WorkteamMutableBuilder[Self <: Workteam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String200): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = this.set("MemberDefinitions", js.Array(value :_*))
+    def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
     @scala.inline
-    def setMemberDefinitions(value: MemberDefinitions): Self = this.set("MemberDefinitions", value.asInstanceOf[js.Any])
+    def setMemberDefinitions(value: MemberDefinitions): Self = StObject.set(x, "MemberDefinitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
     
     @scala.inline
-    def setWorkteamName(value: WorkteamName): Self = this.set("WorkteamName", value.asInstanceOf[js.Any])
+    def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setNotificationConfigurationUndefined: Self = StObject.set(x, "NotificationConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    def setProductListingIds(value: ProductListings): Self = StObject.set(x, "ProductListingIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Timestamp): Self = this.set("LastUpdatedDate", value.asInstanceOf[js.Any])
+    def setProductListingIdsUndefined: Self = StObject.set(x, "ProductListingIds", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedDate: Self = this.set("LastUpdatedDate", js.undefined)
+    def setProductListingIdsVarargs(value: String*): Self = StObject.set(x, "ProductListingIds", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationConfiguration(value: NotificationConfiguration): Self = this.set("NotificationConfiguration", value.asInstanceOf[js.Any])
+    def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationConfiguration: Self = this.set("NotificationConfiguration", js.undefined)
+    def setSubDomainUndefined: Self = StObject.set(x, "SubDomain", js.undefined)
     
     @scala.inline
-    def setProductListingIdsVarargs(value: String*): Self = this.set("ProductListingIds", js.Array(value :_*))
+    def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductListingIds(value: ProductListings): Self = this.set("ProductListingIds", value.asInstanceOf[js.Any])
+    def setWorkforceArnUndefined: Self = StObject.set(x, "WorkforceArn", js.undefined)
     
     @scala.inline
-    def deleteProductListingIds: Self = this.set("ProductListingIds", js.undefined)
+    def setWorkteamArn(value: WorkteamArn): Self = StObject.set(x, "WorkteamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubDomain(value: String): Self = this.set("SubDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubDomain: Self = this.set("SubDomain", js.undefined)
-    
-    @scala.inline
-    def setWorkforceArn(value: WorkforceArn): Self = this.set("WorkforceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkforceArn: Self = this.set("WorkforceArn", js.undefined)
+    def setWorkteamName(value: WorkteamName): Self = StObject.set(x, "WorkteamName", value.asInstanceOf[js.Any])
   }
 }

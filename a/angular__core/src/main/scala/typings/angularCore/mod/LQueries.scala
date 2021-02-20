@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * lQueries represent a collection of individual LQuery objects tracked in a given view.
   */
 @js.native
-trait LQueries extends js.Object {
+trait LQueries extends StObject {
   
   /**
     * A method called when a new embedded view is created. As a result a set of LQueries applicable
@@ -50,33 +51,21 @@ object LQueries {
   }
   
   @scala.inline
-  implicit class LQueriesOps[Self <: LQueries] (val x: Self) extends AnyVal {
+  implicit class LQueriesMutableBuilder[Self <: LQueries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateEmbeddedView(value: TView => LQueries | Null): Self = StObject.set(x, "createEmbeddedView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetachView(value: TView => Unit): Self = StObject.set(x, "detachView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertView(value: TView => Unit): Self = StObject.set(x, "insertView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateEmbeddedView(value: TView => LQueries | Null): Self = this.set("createEmbeddedView", js.Any.fromFunction1(value))
+    def setQueries(value: js.Array[LQuery[_]]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetachView(value: TView => Unit): Self = this.set("detachView", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInsertView(value: TView => Unit): Self = this.set("insertView", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQueriesVarargs(value: LQuery[js.Any]*): Self = this.set("queries", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueries(value: js.Array[LQuery[_]]): Self = this.set("queries", value.asInstanceOf[js.Any])
+    def setQueriesVarargs(value: LQuery[js.Any]*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

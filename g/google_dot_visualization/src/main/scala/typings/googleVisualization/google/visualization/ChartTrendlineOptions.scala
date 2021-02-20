@@ -3,12 +3,13 @@ package typings.googleVisualization.google.visualization
 import typings.googleVisualization.googleVisualizationStrings.exponential
 import typings.googleVisualization.googleVisualizationStrings.linear
 import typings.googleVisualization.googleVisualizationStrings.polynomial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartTrendlineOptions extends js.Object {
+trait ChartTrendlineOptions extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -39,78 +40,66 @@ object ChartTrendlineOptions {
   }
   
   @scala.inline
-  implicit class ChartTrendlineOptionsOps[Self <: ChartTrendlineOptions] (val x: Self) extends AnyVal {
+  implicit class ChartTrendlineOptionsMutableBuilder[Self <: ChartTrendlineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDegree(value: Double): Self = StObject.set(x, "degree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDegreeUndefined: Self = StObject.set(x, "degree", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setLabelInLegend(value: String): Self = StObject.set(x, "labelInLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDegree(value: Double): Self = this.set("degree", value.asInstanceOf[js.Any])
+    def setLabelInLegendUndefined: Self = StObject.set(x, "labelInLegend", js.undefined)
     
     @scala.inline
-    def deleteDegree: Self = this.set("degree", js.undefined)
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelInLegend(value: String): Self = this.set("labelInLegend", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteLabelInLegend: Self = this.set("labelInLegend", js.undefined)
+    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPointSizeUndefined: Self = StObject.set(x, "pointSize", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setPointsVisible(value: Boolean): Self = StObject.set(x, "pointsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointSize(value: Double): Self = this.set("pointSize", value.asInstanceOf[js.Any])
+    def setPointsVisibleUndefined: Self = StObject.set(x, "pointsVisible", js.undefined)
     
     @scala.inline
-    def deletePointSize: Self = this.set("pointSize", js.undefined)
+    def setShowR2(value: Boolean): Self = StObject.set(x, "showR2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPointsVisible(value: Boolean): Self = this.set("pointsVisible", value.asInstanceOf[js.Any])
+    def setShowR2Undefined: Self = StObject.set(x, "showR2", js.undefined)
     
     @scala.inline
-    def deletePointsVisible: Self = this.set("pointsVisible", js.undefined)
+    def setType(value: linear | exponential | polynomial): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowR2(value: Boolean): Self = this.set("showR2", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteShowR2: Self = this.set("showR2", js.undefined)
+    def setVisibleInLegend(value: Boolean): Self = StObject.set(x, "visibleInLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: linear | exponential | polynomial): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setVisibleInLegend(value: Boolean): Self = this.set("visibleInLegend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibleInLegend: Self = this.set("visibleInLegend", js.undefined)
+    def setVisibleInLegendUndefined: Self = StObject.set(x, "visibleInLegend", js.undefined)
   }
 }

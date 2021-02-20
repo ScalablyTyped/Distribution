@@ -7,12 +7,13 @@ import typings.phaser.Phaser.Device.Features
 import typings.phaser.Phaser.Device.Fullscreen
 import typings.phaser.Phaser.Device.OS
 import typings.phaser.Phaser.Device.Video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceConf extends js.Object {
+trait DeviceConf extends StObject {
   
   /**
     * The Audio Device functions.
@@ -72,42 +73,30 @@ object DeviceConf {
   }
   
   @scala.inline
-  implicit class DeviceConfOps[Self <: DeviceConf] (val x: Self) extends AnyVal {
+  implicit class DeviceConfMutableBuilder[Self <: DeviceConf] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowser(value: Browser): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanvasFeatures(value: CanvasFeatures): Self = StObject.set(x, "canvasFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: Audio): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowser(value: Browser): Self = this.set("browser", value.asInstanceOf[js.Any])
+    def setFullscreen(value: Fullscreen): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvasFeatures(value: CanvasFeatures): Self = this.set("canvasFeatures", value.asInstanceOf[js.Any])
+    def setInput(value: typings.phaser.Phaser.Device.Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: Features): Self = this.set("features", value.asInstanceOf[js.Any])
+    def setOs(value: OS): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: Fullscreen): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInput(value: typings.phaser.Phaser.Device.Input): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOs(value: OS): Self = this.set("os", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideo(value: Video): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

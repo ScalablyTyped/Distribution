@@ -1,6 +1,7 @@
 package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,30 +26,18 @@ object INavigation {
   }
   
   @scala.inline
-  implicit class INavigationOps[Self <: INavigation] (val x: Self) extends AnyVal {
+  implicit class INavigationMutableBuilder[Self <: INavigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRestoreZoom(value: () => Unit): Self = StObject.set(x, "restoreZoom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRestoreZoomUndefined: Self = StObject.set(x, "restoreZoom", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetZoom(value: /* zoomConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRestoreZoom(value: () => Unit): Self = this.set("restoreZoom", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteRestoreZoom: Self = this.set("restoreZoom", js.undefined)
-    
-    @scala.inline
-    def setSetZoom(value: /* zoomConfig */ js.UndefOr[js.Any] => Unit): Self = this.set("setZoom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetZoom: Self = this.set("setZoom", js.undefined)
+    def setSetZoomUndefined: Self = StObject.set(x, "setZoom", js.undefined)
   }
 }

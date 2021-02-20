@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutputSettings extends js.Object {
+trait OutputSettings extends StObject {
   
   /**
     * Settings for HLS output groups
@@ -21,24 +22,12 @@ object OutputSettings {
   }
   
   @scala.inline
-  implicit class OutputSettingsOps[Self <: OutputSettings] (val x: Self) extends AnyVal {
+  implicit class OutputSettingsMutableBuilder[Self <: OutputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHlsSettings(value: HlsSettings): Self = StObject.set(x, "HlsSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHlsSettings(value: HlsSettings): Self = this.set("HlsSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHlsSettings: Self = this.set("HlsSettings", js.undefined)
+    def setHlsSettingsUndefined: Self = StObject.set(x, "HlsSettings", js.undefined)
   }
 }

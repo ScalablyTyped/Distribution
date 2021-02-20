@@ -3,12 +3,13 @@ package typings.arangodb.ArangoDB
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.arangodbStrings.id
 import typings.arangodb.arangodbStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArangoSearchViewCollectionLink extends js.Object {
+trait ArangoSearchViewCollectionLink extends StObject {
   
   var analyzers: js.UndefOr[js.Array[String]] = js.native
   
@@ -29,51 +30,39 @@ object ArangoSearchViewCollectionLink {
   }
   
   @scala.inline
-  implicit class ArangoSearchViewCollectionLinkOps[Self <: ArangoSearchViewCollectionLink] (val x: Self) extends AnyVal {
+  implicit class ArangoSearchViewCollectionLinkMutableBuilder[Self <: ArangoSearchViewCollectionLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalyzers(value: js.Array[String]): Self = StObject.set(x, "analyzers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyzersUndefined: Self = StObject.set(x, "analyzers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalyzersVarargs(value: String*): Self = StObject.set(x, "analyzers", js.Array(value :_*))
     
     @scala.inline
-    def setAnalyzersVarargs(value: String*): Self = this.set("analyzers", js.Array(value :_*))
+    def setFields(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyzers(value: js.Array[String]): Self = this.set("analyzers", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteAnalyzers: Self = this.set("analyzers", js.undefined)
+    def setIncludeAllFields(value: Boolean): Self = StObject.set(x, "includeAllFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setIncludeAllFieldsUndefined: Self = StObject.set(x, "includeAllFields", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setStoreValues(value: none | id): Self = StObject.set(x, "storeValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeAllFields(value: Boolean): Self = this.set("includeAllFields", value.asInstanceOf[js.Any])
+    def setStoreValuesUndefined: Self = StObject.set(x, "storeValues", js.undefined)
     
     @scala.inline
-    def deleteIncludeAllFields: Self = this.set("includeAllFields", js.undefined)
+    def setTrackListPositions(value: Boolean): Self = StObject.set(x, "trackListPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreValues(value: none | id): Self = this.set("storeValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreValues: Self = this.set("storeValues", js.undefined)
-    
-    @scala.inline
-    def setTrackListPositions(value: Boolean): Self = this.set("trackListPositions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackListPositions: Self = this.set("trackListPositions", js.undefined)
+    def setTrackListPositionsUndefined: Self = StObject.set(x, "trackListPositions", js.undefined)
   }
 }

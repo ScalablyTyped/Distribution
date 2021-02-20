@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AST extends js.Object {
+trait AST extends StObject {
   
   var Tag: ComponentType[js.Object] = js.native
   
@@ -41,54 +42,42 @@ object AST {
   }
   
   @scala.inline
-  implicit class ASTOps[Self <: AST] (val x: Self) extends AnyVal {
+  implicit class ASTMutableBuilder[Self <: AST] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[AST | Element | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenVarargs(value: (AST | Element | String)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: AST): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: ComponentType[js.Object]): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    def setParentNull: Self = StObject.set(x, "parent", null)
     
     @scala.inline
-    def setChildrenVarargs(value: (AST | Element | String)*): Self = this.set("children", js.Array(value :_*))
+    def setPriority(value: Map[String, js.UndefOr[Boolean]]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[AST | Element | String]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setProps(value: StringDictionary[js.UndefOr[Styles | String]]): Self = this.set("props", value.asInstanceOf[js.Any])
+    def setProps(value: StringDictionary[js.UndefOr[Styles | String]]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: AST): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentNull: Self = this.set("parent", null)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setPriority(value: Map[String, js.UndefOr[Boolean]]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setStyles(value: String): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStyle(value: Styles): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setStyles(value: String): Self = this.set("styles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setTag(value: ComponentType[js.Object]): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
   }
 }

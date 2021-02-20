@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateTaskSetResponse extends js.Object {
+trait CreateTaskSetResponse extends StObject {
   
   var taskSet: js.UndefOr[TaskSet] = js.native
 }
@@ -18,24 +19,12 @@ object CreateTaskSetResponse {
   }
   
   @scala.inline
-  implicit class CreateTaskSetResponseOps[Self <: CreateTaskSetResponse] (val x: Self) extends AnyVal {
+  implicit class CreateTaskSetResponseMutableBuilder[Self <: CreateTaskSetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTaskSet(value: TaskSet): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTaskSet(value: TaskSet): Self = this.set("taskSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaskSet: Self = this.set("taskSet", js.undefined)
+    def setTaskSetUndefined: Self = StObject.set(x, "taskSet", js.undefined)
   }
 }

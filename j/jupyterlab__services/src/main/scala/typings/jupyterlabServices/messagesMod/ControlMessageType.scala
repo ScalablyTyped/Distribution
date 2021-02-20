@@ -1,5 +1,6 @@
 package typings.jupyterlabServices.messagesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.debug_request
   - typings.jupyterlabServices.jupyterlabServicesStrings.debug_reply
 */
-trait ControlMessageType extends js.Object
+trait ControlMessageType extends StObject
 object ControlMessageType {
   
   @scala.inline

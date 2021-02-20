@@ -1,11 +1,12 @@
 package typings.paypalRestSdk.mod.invoice
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailRequest extends js.Object {
+trait EmailRequest extends StObject {
   
   var cc_emails: js.UndefOr[js.Array[String]] = js.native
   
@@ -26,51 +27,39 @@ object EmailRequest {
   }
   
   @scala.inline
-  implicit class EmailRequestOps[Self <: EmailRequest] (val x: Self) extends AnyVal {
+  implicit class EmailRequestMutableBuilder[Self <: EmailRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCc_emails(value: js.Array[String]): Self = StObject.set(x, "cc_emails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCc_emailsUndefined: Self = StObject.set(x, "cc_emails", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCc_emailsVarargs(value: String*): Self = StObject.set(x, "cc_emails", js.Array(value :_*))
     
     @scala.inline
-    def setCc_emailsVarargs(value: String*): Self = this.set("cc_emails", js.Array(value :_*))
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCc_emails(value: js.Array[String]): Self = this.set("cc_emails", value.asInstanceOf[js.Any])
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     @scala.inline
-    def deleteCc_emails: Self = this.set("cc_emails", js.undefined)
+    def setSend_to_merchant(value: Boolean): Self = StObject.set(x, "send_to_merchant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
+    def setSend_to_merchantUndefined: Self = StObject.set(x, "send_to_merchant", js.undefined)
     
     @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setSend_to_payer(value: Boolean): Self = StObject.set(x, "send_to_payer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSend_to_merchant(value: Boolean): Self = this.set("send_to_merchant", value.asInstanceOf[js.Any])
+    def setSend_to_payerUndefined: Self = StObject.set(x, "send_to_payer", js.undefined)
     
     @scala.inline
-    def deleteSend_to_merchant: Self = this.set("send_to_merchant", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSend_to_payer(value: Boolean): Self = this.set("send_to_payer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSend_to_payer: Self = this.set("send_to_payer", js.undefined)
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("subject", js.undefined)
+    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

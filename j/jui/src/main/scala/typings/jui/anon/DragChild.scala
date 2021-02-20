@@ -1,12 +1,13 @@
 package typings.jui.anon
 
 import typings.jui.mod.UITreeNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DragChild extends js.Object {
+trait DragChild extends StObject {
   
   /**
     * @cfg {Boolean} [drag=false]
@@ -51,60 +52,48 @@ object DragChild {
   }
   
   @scala.inline
-  implicit class DragChildOps[Self <: DragChild] (val x: Self) extends AnyVal {
+  implicit class DragChildMutableBuilder[Self <: DragChild] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDragChild(value: Boolean): Self = StObject.set(x, "dragChild", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragChildUndefined: Self = StObject.set(x, "dragChild", js.undefined)
     
     @scala.inline
-    def setDrag(value: Boolean): Self = this.set("drag", value.asInstanceOf[js.Any])
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragChild(value: Boolean): Self = this.set("dragChild", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDragChild: Self = this.set("dragChild", js.undefined)
+    def setRoot(value: UITreeNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: js.Any): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setRootFold(value: Boolean): Self = StObject.set(x, "rootFold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setRootFoldUndefined: Self = StObject.set(x, "rootFold", js.undefined)
     
     @scala.inline
-    def setRoot(value: UITreeNode): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setRootHide(value: Boolean): Self = StObject.set(x, "rootHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootHideUndefined: Self = StObject.set(x, "rootHide", js.undefined)
     
     @scala.inline
-    def setRootFold(value: Boolean): Self = this.set("rootFold", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteRootFold: Self = this.set("rootFold", js.undefined)
+    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootHide(value: Boolean): Self = this.set("rootHide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootHide: Self = this.set("rootHide", js.undefined)
-    
-    @scala.inline
-    def setTpl(value: js.Any): Self = this.set("tpl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTpl: Self = this.set("tpl", js.undefined)
+    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

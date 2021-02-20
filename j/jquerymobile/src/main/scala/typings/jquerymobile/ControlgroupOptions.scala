@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ControlgroupOptions extends js.Object {
+trait ControlgroupOptions extends StObject {
   
   var corners: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object ControlgroupOptions {
   }
   
   @scala.inline
-  implicit class ControlgroupOptionsOps[Self <: ControlgroupOptions] (val x: Self) extends AnyVal {
+  implicit class ControlgroupOptionsMutableBuilder[Self <: ControlgroupOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludeInvisible(value: Boolean): Self = StObject.set(x, "excludeInvisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorners(value: Boolean): Self = this.set("corners", value.asInstanceOf[js.Any])
+    def setExcludeInvisibleUndefined: Self = StObject.set(x, "excludeInvisible", js.undefined)
     
     @scala.inline
-    def deleteCorners: Self = this.set("corners", js.undefined)
+    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludeInvisible(value: Boolean): Self = this.set("excludeInvisible", value.asInstanceOf[js.Any])
+    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
     @scala.inline
-    def deleteExcludeInvisible: Self = this.set("excludeInvisible", js.undefined)
+    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMini(value: Boolean): Self = this.set("mini", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteMini: Self = this.set("mini", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

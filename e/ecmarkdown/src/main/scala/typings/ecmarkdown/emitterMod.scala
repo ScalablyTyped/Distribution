@@ -15,16 +15,16 @@ import typings.ecmarkdown.nodeTypesMod.TildeNode
 import typings.ecmarkdown.nodeTypesMod.UnderscoreNode
 import typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode
 import typings.ecmarkdown.nodeTypesMod.UnorderedListNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecmarkdown/dist/emitter", JSImport.Namespace)
-@js.native
-object emitterMod extends js.Object {
+object emitterMod {
   
+  @JSImport("ecmarkdown/dist/emitter", "Emitter")
   @js.native
-  class Emitter () extends js.Object {
+  class Emitter () extends StObject {
     
     def emit(node: js.Array[Node]): String = js.native
     def emit(node: Node): String = js.native
@@ -64,10 +64,13 @@ object emitterMod extends js.Object {
     def wrapFragment(wrapping: String, fragment: js.Array[Node]): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Emitter extends js.Object {
+  object Emitter {
     
+    @JSImport("ecmarkdown/dist/emitter", "Emitter.emit")
+    @js.native
     def emit(node: js.Array[Node]): String = js.native
+    @JSImport("ecmarkdown/dist/emitter", "Emitter.emit")
+    @js.native
     def emit(node: Node): String = js.native
   }
 }

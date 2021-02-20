@@ -1,6 +1,7 @@
 package typings.rcEasyui.mod
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,190 +72,261 @@ class Tabs protected ()
   
   def unselect(e: js.Any): Unit = js.native
 }
-@JSImport("rc-easyui", "Tabs")
-@js.native
-object Tabs extends js.Object {
+object Tabs {
   
-  @js.native
-  object contextTypes extends js.Object {
+  object contextTypes {
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "Tabs.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.contextTypes.locale
+      @JSImport("rc-easyui", "Tabs.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "Tabs.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.contextTypes.t
+      @JSImport("rc-easyui", "Tabs.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
-  @js.native
-  object defaultProps extends js.Object {
+  object defaultProps {
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.border")
+    @js.native
     val border: Boolean = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.headerHeight")
+    @js.native
     val headerHeight: Double = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.headerWidth")
+    @js.native
     val headerWidth: Double = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.justified")
+    @js.native
     val justified: Boolean = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.narrow")
+    @js.native
     val narrow: Boolean = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.onTabClose")
+    @js.native
     def onTabClose(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.onTabSelect")
+    @js.native
     def onTabSelect(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.onTabUnselect")
+    @js.native
     def onTabUnselect(e: js.Any): Unit = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.plain")
+    @js.native
     val plain: Boolean = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.scrollIncrement")
+    @js.native
     val scrollIncrement: Double = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.scrollable")
+    @js.native
     val scrollable: Boolean = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.selectedIndex")
+    @js.native
     val selectedIndex: Double = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.tabHeight")
+    @js.native
     val tabHeight: Double = js.native
     
+    @JSImport("rc-easyui", "Tabs.defaultProps.tabPosition")
+    @js.native
     val tabPosition: String = js.native
   }
   
-  @js.native
-  object propTypes extends js.Object {
+  object propTypes {
     
-    @js.native
-    object border extends js.Object {
+    object border {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.border")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.border
+      @JSImport("rc-easyui", "Tabs.propTypes.border.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object className extends js.Object {
+    object className {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.className")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.className
+      @JSImport("rc-easyui", "Tabs.propTypes.className.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object headerHeight extends js.Object {
+    object headerHeight {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.headerHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.headerHeight
+      @JSImport("rc-easyui", "Tabs.propTypes.headerHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object headerWidth extends js.Object {
+    object headerWidth {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.headerWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.headerWidth
+      @JSImport("rc-easyui", "Tabs.propTypes.headerWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object justified extends js.Object {
+    object justified {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.justified")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.justified
+      @JSImport("rc-easyui", "Tabs.propTypes.justified.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object narrow extends js.Object {
+    object narrow {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.narrow")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.narrow
+      @JSImport("rc-easyui", "Tabs.propTypes.narrow.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object plain extends js.Object {
+    object plain {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.plain")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.plain
+      @JSImport("rc-easyui", "Tabs.propTypes.plain.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object scrollIncrement extends js.Object {
+    object scrollIncrement {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.scrollIncrement")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.scrollIncrement
+      @JSImport("rc-easyui", "Tabs.propTypes.scrollIncrement.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object scrollable extends js.Object {
+    object scrollable {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.scrollable")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.scrollable
+      @JSImport("rc-easyui", "Tabs.propTypes.scrollable.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object selectedIndex extends js.Object {
+    object selectedIndex {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.selectedIndex")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.selectedIndex
+      @JSImport("rc-easyui", "Tabs.propTypes.selectedIndex.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object style extends js.Object {
+    object style {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.style")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.style
+      @JSImport("rc-easyui", "Tabs.propTypes.style.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object tabHeight extends js.Object {
+    object tabHeight {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.tabHeight")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.tabHeight
+      @JSImport("rc-easyui", "Tabs.propTypes.tabHeight.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object tabPosition extends js.Object {
+    object tabPosition {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.tabPosition")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.tabPosition
+      @JSImport("rc-easyui", "Tabs.propTypes.tabPosition.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object tabWidth extends js.Object {
+    object tabWidth {
       
+      @JSImport("rc-easyui", "Tabs.propTypes.tabWidth")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.Tabs.propTypes.tabWidth
+      @JSImport("rc-easyui", "Tabs.propTypes.tabWidth.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

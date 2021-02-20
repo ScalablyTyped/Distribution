@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KafkaSettings extends js.Object {
+trait KafkaSettings extends StObject {
   
   /**
     * The broker location and port of the Kafka broker that hosts your Kafka instance. Specify the broker in the form  broker-hostname-or-ip:port . For example, "ec2-12-345-678-901.compute-1.amazonaws.com:2345".
@@ -66,78 +67,66 @@ object KafkaSettings {
   }
   
   @scala.inline
-  implicit class KafkaSettingsOps[Self <: KafkaSettings] (val x: Self) extends AnyVal {
+  implicit class KafkaSettingsMutableBuilder[Self <: KafkaSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroker(value: String): Self = StObject.set(x, "Broker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokerUndefined: Self = StObject.set(x, "Broker", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeControlDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeControlDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroker(value: String): Self = this.set("Broker", value.asInstanceOf[js.Any])
+    def setIncludeControlDetailsUndefined: Self = StObject.set(x, "IncludeControlDetails", js.undefined)
     
     @scala.inline
-    def deleteBroker: Self = this.set("Broker", js.undefined)
+    def setIncludeNullAndEmpty(value: BooleanOptional): Self = StObject.set(x, "IncludeNullAndEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeControlDetails(value: BooleanOptional): Self = this.set("IncludeControlDetails", value.asInstanceOf[js.Any])
+    def setIncludeNullAndEmptyUndefined: Self = StObject.set(x, "IncludeNullAndEmpty", js.undefined)
     
     @scala.inline
-    def deleteIncludeControlDetails: Self = this.set("IncludeControlDetails", js.undefined)
+    def setIncludePartitionValue(value: BooleanOptional): Self = StObject.set(x, "IncludePartitionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeNullAndEmpty(value: BooleanOptional): Self = this.set("IncludeNullAndEmpty", value.asInstanceOf[js.Any])
+    def setIncludePartitionValueUndefined: Self = StObject.set(x, "IncludePartitionValue", js.undefined)
     
     @scala.inline
-    def deleteIncludeNullAndEmpty: Self = this.set("IncludeNullAndEmpty", js.undefined)
+    def setIncludeTableAlterOperations(value: BooleanOptional): Self = StObject.set(x, "IncludeTableAlterOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludePartitionValue(value: BooleanOptional): Self = this.set("IncludePartitionValue", value.asInstanceOf[js.Any])
+    def setIncludeTableAlterOperationsUndefined: Self = StObject.set(x, "IncludeTableAlterOperations", js.undefined)
     
     @scala.inline
-    def deleteIncludePartitionValue: Self = this.set("IncludePartitionValue", js.undefined)
+    def setIncludeTransactionDetails(value: BooleanOptional): Self = StObject.set(x, "IncludeTransactionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTableAlterOperations(value: BooleanOptional): Self = this.set("IncludeTableAlterOperations", value.asInstanceOf[js.Any])
+    def setIncludeTransactionDetailsUndefined: Self = StObject.set(x, "IncludeTransactionDetails", js.undefined)
     
     @scala.inline
-    def deleteIncludeTableAlterOperations: Self = this.set("IncludeTableAlterOperations", js.undefined)
+    def setMessageFormat(value: MessageFormatValue): Self = StObject.set(x, "MessageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeTransactionDetails(value: BooleanOptional): Self = this.set("IncludeTransactionDetails", value.asInstanceOf[js.Any])
+    def setMessageFormatUndefined: Self = StObject.set(x, "MessageFormat", js.undefined)
     
     @scala.inline
-    def deleteIncludeTransactionDetails: Self = this.set("IncludeTransactionDetails", js.undefined)
+    def setMessageMaxBytes(value: IntegerOptional): Self = StObject.set(x, "MessageMaxBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageFormat(value: MessageFormatValue): Self = this.set("MessageFormat", value.asInstanceOf[js.Any])
+    def setMessageMaxBytesUndefined: Self = StObject.set(x, "MessageMaxBytes", js.undefined)
     
     @scala.inline
-    def deleteMessageFormat: Self = this.set("MessageFormat", js.undefined)
+    def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = StObject.set(x, "PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageMaxBytes(value: IntegerOptional): Self = this.set("MessageMaxBytes", value.asInstanceOf[js.Any])
+    def setPartitionIncludeSchemaTableUndefined: Self = StObject.set(x, "PartitionIncludeSchemaTable", js.undefined)
     
     @scala.inline
-    def deleteMessageMaxBytes: Self = this.set("MessageMaxBytes", js.undefined)
+    def setTopic(value: String): Self = StObject.set(x, "Topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = this.set("PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionIncludeSchemaTable: Self = this.set("PartitionIncludeSchemaTable", js.undefined)
-    
-    @scala.inline
-    def setTopic(value: String): Self = this.set("Topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopic: Self = this.set("Topic", js.undefined)
+    def setTopicUndefined: Self = StObject.set(x, "Topic", js.undefined)
   }
 }

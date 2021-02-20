@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.browser.webNavigation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the frame to retrieve information about. */
 @js.native
-trait GetFrameDetails extends js.Object {
+trait GetFrameDetails extends StObject {
   
   /** The ID of the frame in the given tab. */
   var frameId: Double = js.native
@@ -26,30 +27,18 @@ object GetFrameDetails {
   }
   
   @scala.inline
-  implicit class GetFrameDetailsOps[Self <: GetFrameDetails] (val x: Self) extends AnyVal {
+  implicit class GetFrameDetailsMutableBuilder[Self <: GetFrameDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
     
     @scala.inline
-    def setFrameId(value: Double): Self = this.set("frameId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProcessId(value: Double): Self = this.set("processId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProcessId: Self = this.set("processId", js.undefined)
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
   }
 }

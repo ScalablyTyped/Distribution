@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.newsRepositoryInboxResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NewsRepositoryInboxResponseTimeBucket extends js.Object {
+trait NewsRepositoryInboxResponseTimeBucket extends StObject {
   
   var headers: js.Array[String] = js.native
   
@@ -20,30 +21,18 @@ object NewsRepositoryInboxResponseTimeBucket {
   }
   
   @scala.inline
-  implicit class NewsRepositoryInboxResponseTimeBucketOps[Self <: NewsRepositoryInboxResponseTimeBucket] (val x: Self) extends AnyVal {
+  implicit class NewsRepositoryInboxResponseTimeBucketMutableBuilder[Self <: NewsRepositoryInboxResponseTimeBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
-    
-    @scala.inline
-    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = this.set("indices", js.Array(value :_*))
-    
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
   }
 }

@@ -2,17 +2,38 @@ package typings.rsocketFlowable
 
 import typings.std.Error
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-flowable/Flowable", JSImport.Namespace)
-@js.native
-object flowableMod extends js.Object {
+object flowableMod {
+  
+  @JSImport("rsocket-flowable/Flowable", JSImport.Default)
+  @js.native
+  class default[T] protected () extends Flowable[T] {
+    def this(source: Source[T]) = this()
+    def this(source: Source[T], max: Double) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("rsocket-flowable/Flowable", "default.error")
+    @js.native
+    def error(error: Error): Flowable[scala.Nothing] = js.native
+    
+    @JSImport("rsocket-flowable/Flowable", "default.just")
+    @js.native
+    def just[U](values: U*): Flowable[U] = js.native
+    
+    @JSImport("rsocket-flowable/Flowable", "default.never")
+    @js.native
+    def never(): Flowable[scala.Nothing] = js.native
+  }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPublisher<T> * / any */ @js.native
-  trait Flowable[T] extends js.Object {
+  trait Flowable[T] extends StObject {
     
     def lift[R](
       onSubscribeLift: js.Function1[
@@ -32,22 +53,6 @@ object flowableMod extends js.Object {
     ): Unit = js.native
     
     def take(toTake: Double): Flowable[T] = js.native
-  }
-  
-  @js.native
-  class default[T] protected () extends Flowable[T] {
-    def this(source: Source[T]) = this()
-    def this(source: Source[T], max: Double) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    def error(error: Error): Flowable[scala.Nothing] = js.native
-    
-    def just[U](values: U*): Flowable[U] = js.native
-    
-    def never(): Flowable[scala.Nothing] = js.native
   }
   
   type Source[T] = js.Function1[

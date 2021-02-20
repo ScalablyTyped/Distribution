@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GCPressureAmount extends js.Object
+sealed trait GCPressureAmount extends StObject
 /** Microsoft internal use only. */
 @JSGlobal("Windows.Foundation.Metadata.GCPressureAmount")
 @js.native
-object GCPressureAmount extends js.Object {
+object GCPressureAmount extends StObject {
   
   /** Over 100k of memory pressure. */
   @js.native

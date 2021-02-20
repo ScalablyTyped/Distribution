@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormLayout extends js.Object {
+trait FormLayout extends StObject {
   
   /**
     * Gets and sets extensions list
@@ -31,36 +32,24 @@ object FormLayout {
   }
   
   @scala.inline
-  implicit class FormLayoutOps[Self <: FormLayout] (val x: Self) extends AnyVal {
+  implicit class FormLayoutMutableBuilder[Self <: FormLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtensions(value: js.Array[Extension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPages(value: js.Array[Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensionsVarargs(value: Extension*): Self = this.set("extensions", js.Array(value :_*))
+    def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
     @scala.inline
-    def setExtensions(value: js.Array[Extension]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setSystemControls(value: js.Array[Control]): Self = StObject.set(x, "systemControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPagesVarargs(value: Page*): Self = this.set("pages", js.Array(value :_*))
-    
-    @scala.inline
-    def setPages(value: js.Array[Page]): Self = this.set("pages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemControlsVarargs(value: Control*): Self = this.set("systemControls", js.Array(value :_*))
-    
-    @scala.inline
-    def setSystemControls(value: js.Array[Control]): Self = this.set("systemControls", value.asInstanceOf[js.Any])
+    def setSystemControlsVarargs(value: Control*): Self = StObject.set(x, "systemControls", js.Array(value :_*))
   }
 }

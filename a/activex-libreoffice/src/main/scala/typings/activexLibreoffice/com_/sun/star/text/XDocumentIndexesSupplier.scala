@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,24 +37,12 @@ object XDocumentIndexesSupplier {
   }
   
   @scala.inline
-  implicit class XDocumentIndexesSupplierOps[Self <: XDocumentIndexesSupplier] (val x: Self) extends AnyVal {
+  implicit class XDocumentIndexesSupplierMutableBuilder[Self <: XDocumentIndexesSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentIndexes(value: XIndexAccess): Self = StObject.set(x, "DocumentIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDocumentIndexes(value: XIndexAccess): Self = this.set("DocumentIndexes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDocumentIndexes(value: () => XIndexAccess): Self = this.set("getDocumentIndexes", js.Any.fromFunction0(value))
+    def setGetDocumentIndexes(value: () => XIndexAccess): Self = StObject.set(x, "getDocumentIndexes", js.Any.fromFunction0(value))
   }
 }

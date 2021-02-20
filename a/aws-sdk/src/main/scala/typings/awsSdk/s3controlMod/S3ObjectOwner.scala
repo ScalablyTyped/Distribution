@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3ObjectOwner extends js.Object {
+trait S3ObjectOwner extends StObject {
   
   /**
     * 
@@ -26,30 +27,18 @@ object S3ObjectOwner {
   }
   
   @scala.inline
-  implicit class S3ObjectOwnerOps[Self <: S3ObjectOwner] (val x: Self) extends AnyVal {
+  implicit class S3ObjectOwnerMutableBuilder[Self <: S3ObjectOwner] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setID(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: NonEmptyMaxLength1024String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
-    
-    @scala.inline
-    def setID(value: NonEmptyMaxLength1024String): Self = this.set("ID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteID: Self = this.set("ID", js.undefined)
+    def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientYoutubereporting.anon.Callback
 import typings.maximMazurokGapiClientYoutubereporting.anon.Fields
 import typings.maximMazurokGapiClientYoutubereporting.anon.IncludeSystemManaged
 import typings.maximMazurokGapiClientYoutubereporting.anon.JobId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobsResource extends js.Object {
+trait JobsResource extends StObject {
   
   /** Creates a job and returns it. */
   def create(request: Callback): Request[Job] = js.native

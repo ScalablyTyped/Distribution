@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientIap.gapi.client.iap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationSettings extends js.Object {
+trait ApplicationSettings extends StObject {
   
   /** Customization for Access Denied page. */
   var accessDeniedPageSettings: js.UndefOr[AccessDeniedPageSettings] = js.native
@@ -25,36 +26,24 @@ object ApplicationSettings {
   }
   
   @scala.inline
-  implicit class ApplicationSettingsOps[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
+  implicit class ApplicationSettingsMutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessDeniedPageSettings(value: AccessDeniedPageSettings): Self = StObject.set(x, "accessDeniedPageSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessDeniedPageSettingsUndefined: Self = StObject.set(x, "accessDeniedPageSettings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessDeniedPageSettings(value: AccessDeniedPageSettings): Self = this.set("accessDeniedPageSettings", value.asInstanceOf[js.Any])
+    def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
     
     @scala.inline
-    def deleteAccessDeniedPageSettings: Self = this.set("accessDeniedPageSettings", js.undefined)
+    def setCsmSettings(value: CsmSettings): Self = StObject.set(x, "csmSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieDomain(value: String): Self = this.set("cookieDomain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCookieDomain: Self = this.set("cookieDomain", js.undefined)
-    
-    @scala.inline
-    def setCsmSettings(value: CsmSettings): Self = this.set("csmSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCsmSettings: Self = this.set("csmSettings", js.undefined)
+    def setCsmSettingsUndefined: Self = StObject.set(x, "csmSettings", js.undefined)
   }
 }

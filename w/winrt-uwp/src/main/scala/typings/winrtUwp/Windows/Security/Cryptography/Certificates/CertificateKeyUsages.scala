@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the usages of a certificate key. */
 @js.native
-trait CertificateKeyUsages extends js.Object {
+trait CertificateKeyUsages extends StObject {
   
   /** Gets or sets if the key is for cRLSign. */
   var crlSign: Boolean = js.native
@@ -50,42 +51,30 @@ object CertificateKeyUsages {
   }
   
   @scala.inline
-  implicit class CertificateKeyUsagesOps[Self <: CertificateKeyUsages] (val x: Self) extends AnyVal {
+  implicit class CertificateKeyUsagesMutableBuilder[Self <: CertificateKeyUsages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCrlSign(value: Boolean): Self = StObject.set(x, "crlSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataEncipherment(value: Boolean): Self = StObject.set(x, "dataEncipherment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDigitalSignature(value: Boolean): Self = StObject.set(x, "digitalSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrlSign(value: Boolean): Self = this.set("crlSign", value.asInstanceOf[js.Any])
+    def setEncipherOnly(value: Boolean): Self = StObject.set(x, "encipherOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataEncipherment(value: Boolean): Self = this.set("dataEncipherment", value.asInstanceOf[js.Any])
+    def setKeyAgreement(value: Boolean): Self = StObject.set(x, "keyAgreement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigitalSignature(value: Boolean): Self = this.set("digitalSignature", value.asInstanceOf[js.Any])
+    def setKeyCertificateSign(value: Boolean): Self = StObject.set(x, "keyCertificateSign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncipherOnly(value: Boolean): Self = this.set("encipherOnly", value.asInstanceOf[js.Any])
+    def setKeyEncipherment(value: Boolean): Self = StObject.set(x, "keyEncipherment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyAgreement(value: Boolean): Self = this.set("keyAgreement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyCertificateSign(value: Boolean): Self = this.set("keyCertificateSign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyEncipherment(value: Boolean): Self = this.set("keyEncipherment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonRepudiation(value: Boolean): Self = this.set("nonRepudiation", value.asInstanceOf[js.Any])
+    def setNonRepudiation(value: Boolean): Self = StObject.set(x, "nonRepudiation", value.asInstanceOf[js.Any])
   }
 }

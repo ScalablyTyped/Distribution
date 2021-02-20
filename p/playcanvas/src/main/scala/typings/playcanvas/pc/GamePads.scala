@@ -1,5 +1,6 @@
 package typings.playcanvas.pc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input handler for accessing GamePad input.
   */
 @js.native
-trait GamePads extends js.Object {
+trait GamePads extends StObject {
   
   /**
     * Get the value of one of the analogue axes of the pad.
@@ -64,33 +65,21 @@ object GamePads {
   }
   
   @scala.inline
-  implicit class GamePadsOps[Self <: GamePads] (val x: Self) extends AnyVal {
+  implicit class GamePadsMutableBuilder[Self <: GamePads] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAxis(value: (Double, Double) => Double): Self = StObject.set(x, "getAxis", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPressed(value: (Double, Double) => Boolean): Self = StObject.set(x, "isPressed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPoll(value: () => js.Array[js.Object]): Self = StObject.set(x, "poll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAxis(value: (Double, Double) => Double): Self = this.set("getAxis", js.Any.fromFunction2(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsPressed(value: (Double, Double) => Boolean): Self = this.set("isPressed", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPoll(value: () => js.Array[js.Object]): Self = this.set("poll", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWasPressed(value: (Double, Double) => Boolean): Self = this.set("wasPressed", js.Any.fromFunction2(value))
+    def setWasPressed(value: (Double, Double) => Boolean): Self = StObject.set(x, "wasPressed", js.Any.fromFunction2(value))
   }
 }

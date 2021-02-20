@@ -1,12 +1,13 @@
 package typings.luxon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "Zone")
 @js.native
-class Zone () extends js.Object {
+class Zone () extends StObject {
   
   def equals(other: Zone): Boolean = js.native
   

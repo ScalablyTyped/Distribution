@@ -5,14 +5,14 @@ import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/highlightsPostProcess", JSImport.Namespace)
-@js.native
-object highlightsPostProcessMod extends js.Object {
+object highlightsPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/highlightsPostProcess", "HighlightsPostProcess")
   @js.native
   class HighlightsPostProcess protected () extends PostProcess {
     /**

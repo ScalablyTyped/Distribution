@@ -1,6 +1,7 @@
 package typings.titanium
 
 import typings.titanium.Titanium.App.iOS.UserNotificationCategory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the <Titanium.App.iOS.registerUserNotificationSettings> method.
   */
 @js.native
-trait GetUserNotificationSettings extends js.Object {
+trait GetUserNotificationSettings extends StObject {
   
   /**
     * The current alert settings.
@@ -83,96 +84,84 @@ object GetUserNotificationSettings {
   }
   
   @scala.inline
-  implicit class GetUserNotificationSettingsOps[Self <: GetUserNotificationSettings] (val x: Self) extends AnyVal {
+  implicit class GetUserNotificationSettingsMutableBuilder[Self <: GetUserNotificationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlertSetting(value: Double): Self = StObject.set(x, "alertSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertSettingUndefined: Self = StObject.set(x, "alertSetting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlertStyle(value: Double): Self = StObject.set(x, "alertStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertSetting(value: Double): Self = this.set("alertSetting", value.asInstanceOf[js.Any])
+    def setAlertStyleUndefined: Self = StObject.set(x, "alertStyle", js.undefined)
     
     @scala.inline
-    def deleteAlertSetting: Self = this.set("alertSetting", js.undefined)
+    def setAuthorizationStatus(value: Double): Self = StObject.set(x, "authorizationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertStyle(value: Double): Self = this.set("alertStyle", value.asInstanceOf[js.Any])
+    def setAuthorizationStatusUndefined: Self = StObject.set(x, "authorizationStatus", js.undefined)
     
     @scala.inline
-    def deleteAlertStyle: Self = this.set("alertStyle", js.undefined)
+    def setBadgeSetting(value: Double): Self = StObject.set(x, "badgeSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationStatus(value: Double): Self = this.set("authorizationStatus", value.asInstanceOf[js.Any])
+    def setBadgeSettingUndefined: Self = StObject.set(x, "badgeSetting", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationStatus: Self = this.set("authorizationStatus", js.undefined)
+    def setCarPlaySetting(value: Double): Self = StObject.set(x, "carPlaySetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadgeSetting(value: Double): Self = this.set("badgeSetting", value.asInstanceOf[js.Any])
+    def setCarPlaySettingUndefined: Self = StObject.set(x, "carPlaySetting", js.undefined)
     
     @scala.inline
-    def deleteBadgeSetting: Self = this.set("badgeSetting", js.undefined)
+    def setCategories(value: js.Array[UserNotificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarPlaySetting(value: Double): Self = this.set("carPlaySetting", value.asInstanceOf[js.Any])
+    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
     @scala.inline
-    def deleteCarPlaySetting: Self = this.set("carPlaySetting", js.undefined)
+    def setCategoriesVarargs(value: UserNotificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
     @scala.inline
-    def setCategoriesVarargs(value: UserNotificationCategory*): Self = this.set("categories", js.Array(value :_*))
+    def setCriticalAlertSetting(value: Double): Self = StObject.set(x, "criticalAlertSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Array[UserNotificationCategory]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setCriticalAlertSettingUndefined: Self = StObject.set(x, "criticalAlertSetting", js.undefined)
     
     @scala.inline
-    def deleteCategories: Self = this.set("categories", js.undefined)
+    def setLockScreenSetting(value: Double): Self = StObject.set(x, "lockScreenSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCriticalAlertSetting(value: Double): Self = this.set("criticalAlertSetting", value.asInstanceOf[js.Any])
+    def setLockScreenSettingUndefined: Self = StObject.set(x, "lockScreenSetting", js.undefined)
     
     @scala.inline
-    def deleteCriticalAlertSetting: Self = this.set("criticalAlertSetting", js.undefined)
+    def setNotificationCenterSetting(value: Double): Self = StObject.set(x, "notificationCenterSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockScreenSetting(value: Double): Self = this.set("lockScreenSetting", value.asInstanceOf[js.Any])
+    def setNotificationCenterSettingUndefined: Self = StObject.set(x, "notificationCenterSetting", js.undefined)
     
     @scala.inline
-    def deleteLockScreenSetting: Self = this.set("lockScreenSetting", js.undefined)
+    def setProvidesAppNotificationSettings(value: Double): Self = StObject.set(x, "providesAppNotificationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationCenterSetting(value: Double): Self = this.set("notificationCenterSetting", value.asInstanceOf[js.Any])
+    def setProvidesAppNotificationSettingsUndefined: Self = StObject.set(x, "providesAppNotificationSettings", js.undefined)
     
     @scala.inline
-    def deleteNotificationCenterSetting: Self = this.set("notificationCenterSetting", js.undefined)
+    def setSoundSetting(value: Double): Self = StObject.set(x, "soundSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidesAppNotificationSettings(value: Double): Self = this.set("providesAppNotificationSettings", value.asInstanceOf[js.Any])
+    def setSoundSettingUndefined: Self = StObject.set(x, "soundSetting", js.undefined)
     
     @scala.inline
-    def deleteProvidesAppNotificationSettings: Self = this.set("providesAppNotificationSettings", js.undefined)
+    def setTypes(value: js.Array[Double]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoundSetting(value: Double): Self = this.set("soundSetting", value.asInstanceOf[js.Any])
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
     @scala.inline
-    def deleteSoundSetting: Self = this.set("soundSetting", js.undefined)
-    
-    @scala.inline
-    def setTypesVarargs(value: Double*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[Double]): Self = this.set("types", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypes: Self = this.set("types", js.undefined)
+    def setTypesVarargs(value: Double*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

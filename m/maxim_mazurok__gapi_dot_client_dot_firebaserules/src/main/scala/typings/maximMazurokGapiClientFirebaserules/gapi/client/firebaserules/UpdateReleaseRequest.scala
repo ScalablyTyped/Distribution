@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateReleaseRequest extends js.Object {
+trait UpdateReleaseRequest extends StObject {
   
   /** `Release` to update. */
   var release: js.UndefOr[Release] = js.native
@@ -22,30 +23,18 @@ object UpdateReleaseRequest {
   }
   
   @scala.inline
-  implicit class UpdateReleaseRequestOps[Self <: UpdateReleaseRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateReleaseRequestMutableBuilder[Self <: UpdateReleaseRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: Release): Self = this.set("release", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRelease: Self = this.set("release", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

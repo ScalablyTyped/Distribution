@@ -2,12 +2,13 @@ package typings.plotlyJs.anon
 
 import typings.plotlyJs.mod.Datum
 import typings.plotlyJs.plotlyJsStrings.data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array extends js.Object {
+trait Array extends StObject {
   
   var array: js.Array[Datum] = js.native
   
@@ -25,36 +26,24 @@ object Array {
   }
   
   @scala.inline
-  implicit class ArrayOps[Self <: Array] (val x: Self) extends AnyVal {
+  implicit class ArrayMutableBuilder[Self <: Array] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArray(value: js.Array[Datum]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrayVarargs(value: Datum*): Self = StObject.set(x, "array", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArrayminus(value: js.Array[Datum]): Self = StObject.set(x, "arrayminus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArrayVarargs(value: Datum*): Self = this.set("array", js.Array(value :_*))
+    def setArrayminusUndefined: Self = StObject.set(x, "arrayminus", js.undefined)
     
     @scala.inline
-    def setArray(value: js.Array[Datum]): Self = this.set("array", value.asInstanceOf[js.Any])
+    def setArrayminusVarargs(value: Datum*): Self = StObject.set(x, "arrayminus", js.Array(value :_*))
     
     @scala.inline
-    def setType(value: data): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setArrayminusVarargs(value: Datum*): Self = this.set("arrayminus", js.Array(value :_*))
-    
-    @scala.inline
-    def setArrayminus(value: js.Array[Datum]): Self = this.set("arrayminus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteArrayminus: Self = this.set("arrayminus", js.undefined)
+    def setType(value: data): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.kTrustedTypesSinkViolation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.kTrustedTypesPolicyViolation
 */
-trait ContentSecurityPolicyViolationType extends js.Object
+trait ContentSecurityPolicyViolationType extends StObject
 object ContentSecurityPolicyViolationType {
   
   @scala.inline

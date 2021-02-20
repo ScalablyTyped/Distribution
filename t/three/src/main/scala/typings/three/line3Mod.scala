@@ -2,16 +2,16 @@ package typings.three
 
 import typings.three.matrix4Mod.Matrix4
 import typings.three.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/math/Line3", JSImport.Namespace)
-@js.native
-object line3Mod extends js.Object {
+object line3Mod {
   
+  @JSImport("three/src/math/Line3", "Line3")
   @js.native
-  class Line3 () extends js.Object {
+  class Line3 () extends StObject {
     def this(start: Vector3) = this()
     def this(start: js.UndefOr[scala.Nothing], end: Vector3) = this()
     def this(start: Vector3, end: Vector3) = this()

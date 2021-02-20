@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetContactMethodsRequest extends js.Object {
+trait GetContactMethodsRequest extends StObject {
   
   /**
     * The protocols used to send notifications, such as Email, or SMS (text messaging). Specify a protocol in your request to return information about a specific contact method protocol.
@@ -21,27 +22,15 @@ object GetContactMethodsRequest {
   }
   
   @scala.inline
-  implicit class GetContactMethodsRequestOps[Self <: GetContactMethodsRequest] (val x: Self) extends AnyVal {
+  implicit class GetContactMethodsRequestMutableBuilder[Self <: GetContactMethodsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProtocols(value: ContactProtocolsList): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProtocolsVarargs(value: ContactProtocol*): Self = this.set("protocols", js.Array(value :_*))
-    
-    @scala.inline
-    def setProtocols(value: ContactProtocolsList): Self = this.set("protocols", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    def setProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "protocols", js.Array(value :_*))
   }
 }

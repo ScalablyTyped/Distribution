@@ -1,12 +1,13 @@
 package typings.firefoxWebextBrowser.anon
 
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Basepath extends js.Object {
+trait Basepath extends StObject {
   
   var base_path: ExtensionURL = js.native
   
@@ -21,30 +22,18 @@ object Basepath {
   }
   
   @scala.inline
-  implicit class BasepathOps[Self <: Basepath] (val x: Self) extends AnyVal {
+  implicit class BasepathMutableBuilder[Self <: Basepath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBase_path(value: ExtensionURL): Self = StObject.set(x, "base_path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
     @scala.inline
-    def setBase_path(value: ExtensionURL): Self = this.set("base_path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = this.set("paths", js.Array(value :_*))
-    
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = this.set("paths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaths: Self = this.set("paths", js.undefined)
+    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

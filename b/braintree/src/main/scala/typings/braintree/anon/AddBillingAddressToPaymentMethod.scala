@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddBillingAddressToPaymentMethod extends js.Object {
+trait AddBillingAddressToPaymentMethod extends StObject {
   
   var addBillingAddressToPaymentMethod: js.UndefOr[Boolean] = js.native
   
@@ -40,90 +41,78 @@ object AddBillingAddressToPaymentMethod {
   }
   
   @scala.inline
-  implicit class AddBillingAddressToPaymentMethodOps[Self <: AddBillingAddressToPaymentMethod] (val x: Self) extends AnyVal {
+  implicit class AddBillingAddressToPaymentMethodMutableBuilder[Self <: AddBillingAddressToPaymentMethod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddBillingAddressToPaymentMethod(value: Boolean): Self = StObject.set(x, "addBillingAddressToPaymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddBillingAddressToPaymentMethodUndefined: Self = StObject.set(x, "addBillingAddressToPaymentMethod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHoldInEscrow(value: Boolean): Self = StObject.set(x, "holdInEscrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddBillingAddressToPaymentMethod(value: Boolean): Self = this.set("addBillingAddressToPaymentMethod", value.asInstanceOf[js.Any])
+    def setHoldInEscrowUndefined: Self = StObject.set(x, "holdInEscrow", js.undefined)
     
     @scala.inline
-    def deleteAddBillingAddressToPaymentMethod: Self = this.set("addBillingAddressToPaymentMethod", js.undefined)
+    def setPaypal(value: CustomField): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoldInEscrow(value: Boolean): Self = this.set("holdInEscrow", value.asInstanceOf[js.Any])
+    def setPaypalUndefined: Self = StObject.set(x, "paypal", js.undefined)
     
     @scala.inline
-    def deleteHoldInEscrow: Self = this.set("holdInEscrow", js.undefined)
+    def setSkipAdvancedFraudChecking(value: Boolean): Self = StObject.set(x, "skipAdvancedFraudChecking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaypal(value: CustomField): Self = this.set("paypal", value.asInstanceOf[js.Any])
+    def setSkipAdvancedFraudCheckingUndefined: Self = StObject.set(x, "skipAdvancedFraudChecking", js.undefined)
     
     @scala.inline
-    def deletePaypal: Self = this.set("paypal", js.undefined)
+    def setSkipAvs(value: Boolean): Self = StObject.set(x, "skipAvs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipAdvancedFraudChecking(value: Boolean): Self = this.set("skipAdvancedFraudChecking", value.asInstanceOf[js.Any])
+    def setSkipAvsUndefined: Self = StObject.set(x, "skipAvs", js.undefined)
     
     @scala.inline
-    def deleteSkipAdvancedFraudChecking: Self = this.set("skipAdvancedFraudChecking", js.undefined)
+    def setSkipCvv(value: Boolean): Self = StObject.set(x, "skipCvv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipAvs(value: Boolean): Self = this.set("skipAvs", value.asInstanceOf[js.Any])
+    def setSkipCvvUndefined: Self = StObject.set(x, "skipCvv", js.undefined)
     
     @scala.inline
-    def deleteSkipAvs: Self = this.set("skipAvs", js.undefined)
+    def setStoreInVault(value: Boolean): Self = StObject.set(x, "storeInVault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipCvv(value: Boolean): Self = this.set("skipCvv", value.asInstanceOf[js.Any])
+    def setStoreInVaultOnSuccess(value: Boolean): Self = StObject.set(x, "storeInVaultOnSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSkipCvv: Self = this.set("skipCvv", js.undefined)
+    def setStoreInVaultOnSuccessUndefined: Self = StObject.set(x, "storeInVaultOnSuccess", js.undefined)
     
     @scala.inline
-    def setStoreInVault(value: Boolean): Self = this.set("storeInVault", value.asInstanceOf[js.Any])
+    def setStoreInVaultUndefined: Self = StObject.set(x, "storeInVault", js.undefined)
     
     @scala.inline
-    def deleteStoreInVault: Self = this.set("storeInVault", js.undefined)
+    def setStoreShippingAddressInVault(value: Boolean): Self = StObject.set(x, "storeShippingAddressInVault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreInVaultOnSuccess(value: Boolean): Self = this.set("storeInVaultOnSuccess", value.asInstanceOf[js.Any])
+    def setStoreShippingAddressInVaultUndefined: Self = StObject.set(x, "storeShippingAddressInVault", js.undefined)
     
     @scala.inline
-    def deleteStoreInVaultOnSuccess: Self = this.set("storeInVaultOnSuccess", js.undefined)
+    def setSubmitForSettlement(value: Boolean): Self = StObject.set(x, "submitForSettlement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreShippingAddressInVault(value: Boolean): Self = this.set("storeShippingAddressInVault", value.asInstanceOf[js.Any])
+    def setSubmitForSettlementUndefined: Self = StObject.set(x, "submitForSettlement", js.undefined)
     
     @scala.inline
-    def deleteStoreShippingAddressInVault: Self = this.set("storeShippingAddressInVault", js.undefined)
+    def setThreeDSecure(value: Required): Self = StObject.set(x, "threeDSecure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubmitForSettlement(value: Boolean): Self = this.set("submitForSettlement", value.asInstanceOf[js.Any])
+    def setThreeDSecureUndefined: Self = StObject.set(x, "threeDSecure", js.undefined)
     
     @scala.inline
-    def deleteSubmitForSettlement: Self = this.set("submitForSettlement", js.undefined)
+    def setVenmo(value: ProfileId): Self = StObject.set(x, "venmo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreeDSecure(value: Required): Self = this.set("threeDSecure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreeDSecure: Self = this.set("threeDSecure", js.undefined)
-    
-    @scala.inline
-    def setVenmo(value: ProfileId): Self = this.set("venmo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVenmo: Self = this.set("venmo", js.undefined)
+    def setVenmoUndefined: Self = StObject.set(x, "venmo", js.undefined)
   }
 }

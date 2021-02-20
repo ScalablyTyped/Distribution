@@ -1,16 +1,16 @@
 package typings.agGrid
 
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rowModels/pinnedRowModel", JSImport.Namespace)
-@js.native
-object pinnedRowModelMod extends js.Object {
+object pinnedRowModelMod {
   
+  @JSImport("ag-grid/dist/lib/rowModels/pinnedRowModel", "PinnedRowModel")
   @js.native
-  class PinnedRowModel () extends js.Object {
+  class PinnedRowModel () extends StObject {
     
     var columnApi: js.Any = js.native
     

@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LightingProperties extends js.Object {
+trait LightingProperties extends StObject {
   
   /**
     * The time and date for which the sun position and light direction is computed.
@@ -37,36 +38,24 @@ object LightingProperties {
   }
   
   @scala.inline
-  implicit class LightingPropertiesOps[Self <: LightingProperties] (val x: Self) extends AnyVal {
+  implicit class LightingPropertiesMutableBuilder[Self <: LightingProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: DateProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: DateProperties): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDirectShadowsEnabledUndefined: Self = StObject.set(x, "directShadowsEnabled", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDisplayUTCOffset(value: Double): Self = StObject.set(x, "displayUTCOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectShadowsEnabled(value: Boolean): Self = this.set("directShadowsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirectShadowsEnabled: Self = this.set("directShadowsEnabled", js.undefined)
-    
-    @scala.inline
-    def setDisplayUTCOffset(value: Double): Self = this.set("displayUTCOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayUTCOffset: Self = this.set("displayUTCOffset", js.undefined)
+    def setDisplayUTCOffsetUndefined: Self = StObject.set(x, "displayUTCOffset", js.undefined)
   }
 }

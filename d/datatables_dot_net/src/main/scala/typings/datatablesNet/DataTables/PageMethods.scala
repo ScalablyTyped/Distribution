@@ -1,5 +1,6 @@
 package typings.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion "order-methods"
 //#region "page-methods"
 @js.native
-trait PageMethods extends js.Object {
+trait PageMethods extends StObject {
   
   /**
     * Get the current page of the table.

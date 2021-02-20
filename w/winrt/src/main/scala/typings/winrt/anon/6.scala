@@ -4,12 +4,13 @@ import typings.winrt.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrt.Windows.Foundation.AsyncStatus
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Security.Authentication.OnlineId.UserIdentity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `6` extends js.Object {
+trait `6` extends StObject {
   
   def completed(asyncInfo: IAsyncOperation[UserIdentity], asyncStatus: AsyncStatus): Unit = js.native
   @JSName("completed")

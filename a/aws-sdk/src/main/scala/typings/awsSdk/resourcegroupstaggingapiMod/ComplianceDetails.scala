@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupstaggingapiMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComplianceDetails extends js.Object {
+trait ComplianceDetails extends StObject {
   
   /**
     * Whether a resource is compliant with the effective tag policy.
@@ -31,42 +32,30 @@ object ComplianceDetails {
   }
   
   @scala.inline
-  implicit class ComplianceDetailsOps[Self <: ComplianceDetails] (val x: Self) extends AnyVal {
+  implicit class ComplianceDetailsMutableBuilder[Self <: ComplianceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplianceStatus(value: ComplianceStatus): Self = StObject.set(x, "ComplianceStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComplianceStatusUndefined: Self = StObject.set(x, "ComplianceStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeysWithNoncompliantValues(value: TagKeyList): Self = StObject.set(x, "KeysWithNoncompliantValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplianceStatus(value: ComplianceStatus): Self = this.set("ComplianceStatus", value.asInstanceOf[js.Any])
+    def setKeysWithNoncompliantValuesUndefined: Self = StObject.set(x, "KeysWithNoncompliantValues", js.undefined)
     
     @scala.inline
-    def deleteComplianceStatus: Self = this.set("ComplianceStatus", js.undefined)
+    def setKeysWithNoncompliantValuesVarargs(value: TagKey*): Self = StObject.set(x, "KeysWithNoncompliantValues", js.Array(value :_*))
     
     @scala.inline
-    def setKeysWithNoncompliantValuesVarargs(value: TagKey*): Self = this.set("KeysWithNoncompliantValues", js.Array(value :_*))
+    def setNoncompliantKeys(value: TagKeyList): Self = StObject.set(x, "NoncompliantKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeysWithNoncompliantValues(value: TagKeyList): Self = this.set("KeysWithNoncompliantValues", value.asInstanceOf[js.Any])
+    def setNoncompliantKeysUndefined: Self = StObject.set(x, "NoncompliantKeys", js.undefined)
     
     @scala.inline
-    def deleteKeysWithNoncompliantValues: Self = this.set("KeysWithNoncompliantValues", js.undefined)
-    
-    @scala.inline
-    def setNoncompliantKeysVarargs(value: TagKey*): Self = this.set("NoncompliantKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setNoncompliantKeys(value: TagKeyList): Self = this.set("NoncompliantKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoncompliantKeys: Self = this.set("NoncompliantKeys", js.undefined)
+    def setNoncompliantKeysVarargs(value: TagKey*): Self = StObject.set(x, "NoncompliantKeys", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjectManagerOptions extends js.Object {
+trait IObjectManagerOptions extends StObject {
   
   var clusterHasBalloon: js.UndefOr[Boolean] = js.native
   
@@ -26,51 +27,39 @@ object IObjectManagerOptions {
   }
   
   @scala.inline
-  implicit class IObjectManagerOptionsOps[Self <: IObjectManagerOptions] (val x: Self) extends AnyVal {
+  implicit class IObjectManagerOptionsMutableBuilder[Self <: IObjectManagerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterHasBalloon(value: Boolean): Self = StObject.set(x, "clusterHasBalloon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterHasBalloonUndefined: Self = StObject.set(x, "clusterHasBalloon", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterize(value: Boolean): Self = StObject.set(x, "clusterize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterHasBalloon(value: Boolean): Self = this.set("clusterHasBalloon", value.asInstanceOf[js.Any])
+    def setClusterizeUndefined: Self = StObject.set(x, "clusterize", js.undefined)
     
     @scala.inline
-    def deleteClusterHasBalloon: Self = this.set("clusterHasBalloon", js.undefined)
+    def setGeoObjectOpenBalloonOnClick(value: Boolean): Self = StObject.set(x, "geoObjectOpenBalloonOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterize(value: Boolean): Self = this.set("clusterize", value.asInstanceOf[js.Any])
+    def setGeoObjectOpenBalloonOnClickUndefined: Self = StObject.set(x, "geoObjectOpenBalloonOnClick", js.undefined)
     
     @scala.inline
-    def deleteClusterize: Self = this.set("clusterize", js.undefined)
+    def setSyncOverlayInit(value: Boolean): Self = StObject.set(x, "syncOverlayInit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoObjectOpenBalloonOnClick(value: Boolean): Self = this.set("geoObjectOpenBalloonOnClick", value.asInstanceOf[js.Any])
+    def setSyncOverlayInitUndefined: Self = StObject.set(x, "syncOverlayInit", js.undefined)
     
     @scala.inline
-    def deleteGeoObjectOpenBalloonOnClick: Self = this.set("geoObjectOpenBalloonOnClick", js.undefined)
+    def setViewportMargin(value: Double | js.Array[Double]): Self = StObject.set(x, "viewportMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSyncOverlayInit(value: Boolean): Self = this.set("syncOverlayInit", value.asInstanceOf[js.Any])
+    def setViewportMarginUndefined: Self = StObject.set(x, "viewportMargin", js.undefined)
     
     @scala.inline
-    def deleteSyncOverlayInit: Self = this.set("syncOverlayInit", js.undefined)
-    
-    @scala.inline
-    def setViewportMarginVarargs(value: Double*): Self = this.set("viewportMargin", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewportMargin(value: Double | js.Array[Double]): Self = this.set("viewportMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewportMargin: Self = this.set("viewportMargin", js.undefined)
+    def setViewportMarginVarargs(value: Double*): Self = StObject.set(x, "viewportMargin", js.Array(value :_*))
   }
 }

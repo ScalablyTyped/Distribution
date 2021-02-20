@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstancePortState extends js.Object {
+trait InstancePortState extends StObject {
   
   /**
     * An alias that defines access for a preconfigured range of IP addresses. The only alias currently supported is lightsail-connect, which allows IP addresses of the browser-based RDP/SSH client in the Lightsail console to connect to your instance.
@@ -46,60 +47,48 @@ object InstancePortState {
   }
   
   @scala.inline
-  implicit class InstancePortStateOps[Self <: InstancePortState] (val x: Self) extends AnyVal {
+  implicit class InstancePortStateMutableBuilder[Self <: InstancePortState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrListAliases(value: StringList): Self = StObject.set(x, "cidrListAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrListAliasesUndefined: Self = StObject.set(x, "cidrListAliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCidrListAliasesVarargs(value: String*): Self = StObject.set(x, "cidrListAliases", js.Array(value :_*))
     
     @scala.inline
-    def setCidrListAliasesVarargs(value: String*): Self = this.set("cidrListAliases", js.Array(value :_*))
+    def setCidrs(value: StringList): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrListAliases(value: StringList): Self = this.set("cidrListAliases", value.asInstanceOf[js.Any])
+    def setCidrsUndefined: Self = StObject.set(x, "cidrs", js.undefined)
     
     @scala.inline
-    def deleteCidrListAliases: Self = this.set("cidrListAliases", js.undefined)
+    def setCidrsVarargs(value: String*): Self = StObject.set(x, "cidrs", js.Array(value :_*))
     
     @scala.inline
-    def setCidrsVarargs(value: String*): Self = this.set("cidrs", js.Array(value :_*))
+    def setFromPort(value: Port): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCidrs(value: StringList): Self = this.set("cidrs", value.asInstanceOf[js.Any])
+    def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
     
     @scala.inline
-    def deleteCidrs: Self = this.set("cidrs", js.undefined)
+    def setProtocol(value: NetworkProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: Port): Self = this.set("fromPort", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteFromPort: Self = this.set("fromPort", js.undefined)
+    def setState(value: PortState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: NetworkProtocol): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    def setToPort(value: Port): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: PortState): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setToPort(value: Port): Self = this.set("toPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPort: Self = this.set("toPort", js.undefined)
+    def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSMBSettingsOutput extends js.Object {
+trait DescribeSMBSettingsOutput extends StObject {
   
   /**
     * Indicates the status of a gateway that is a member of the Active Directory domain.    ACCESS_DENIED: Indicates that the JoinDomain operation failed due to an authentication error.    DETACHED: Indicates that gateway is not joined to a domain.    JOINED: Indicates that the gateway has successfully joined a domain.    JOINING: Indicates that a JoinDomain operation is in progress.    NETWORK_ERROR: Indicates that JoinDomain operation failed due to a network or connectivity error.    TIMEOUT: Indicates that the JoinDomain operation failed because the operation didn't complete within the allotted time.    UNKNOWN_ERROR: Indicates that the JoinDomain operation failed due to another type of error.  
@@ -43,54 +44,42 @@ object DescribeSMBSettingsOutput {
   }
   
   @scala.inline
-  implicit class DescribeSMBSettingsOutputOps[Self <: DescribeSMBSettingsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeSMBSettingsOutputMutableBuilder[Self <: DescribeSMBSettingsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveDirectoryStatusUndefined: Self = StObject.set(x, "ActiveDirectoryStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = this.set("ActiveDirectoryStatus", value.asInstanceOf[js.Any])
+    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     @scala.inline
-    def deleteActiveDirectoryStatus: Self = this.set("ActiveDirectoryStatus", js.undefined)
+    def setFileSharesVisible(value: Boolean): Self = StObject.set(x, "FileSharesVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setFileSharesVisibleUndefined: Self = StObject.set(x, "FileSharesVisible", js.undefined)
     
     @scala.inline
-    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSharesVisible(value: Boolean): Self = this.set("FileSharesVisible", value.asInstanceOf[js.Any])
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
     @scala.inline
-    def deleteFileSharesVisible: Self = this.set("FileSharesVisible", js.undefined)
+    def setSMBGuestPasswordSet(value: Boolean): Self = StObject.set(x, "SMBGuestPasswordSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    def setSMBGuestPasswordSetUndefined: Self = StObject.set(x, "SMBGuestPasswordSet", js.undefined)
     
     @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSMBGuestPasswordSet(value: Boolean): Self = this.set("SMBGuestPasswordSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMBGuestPasswordSet: Self = this.set("SMBGuestPasswordSet", js.undefined)
-    
-    @scala.inline
-    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = this.set("SMBSecurityStrategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSMBSecurityStrategy: Self = this.set("SMBSecurityStrategy", js.undefined)
+    def setSMBSecurityStrategyUndefined: Self = StObject.set(x, "SMBSecurityStrategy", js.undefined)
   }
 }

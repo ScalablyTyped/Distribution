@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPropertyValue extends js.Object {
+trait IPropertyValue extends StObject {
   
   def Clone(): IPropertyValue = js.native
   
@@ -49,42 +50,30 @@ object IPropertyValue {
   }
   
   @scala.inline
-  implicit class IPropertyValueOps[Self <: IPropertyValue] (val x: Self) extends AnyVal {
+  implicit class IPropertyValueMutableBuilder[Self <: IPropertyValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IPropertyValue): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloneFrom(value: IPropertyValue => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetValueAsLocalizedText(value: () => String): Self = StObject.set(x, "GetValueAsLocalizedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IPropertyValue): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGetValueAsText(value: (Boolean, Boolean, Boolean, Boolean, Boolean, Boolean) => String): Self = StObject.set(x, "GetValueAsText", js.Any.fromFunction6(value))
     
     @scala.inline
-    def setCloneFrom(value: IPropertyValue => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
+    def setGetValueAsUnlocalizedText(value: () => String): Self = StObject.set(x, "GetValueAsUnlocalizedText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetValueAsLocalizedText(value: () => String): Self = this.set("GetValueAsLocalizedText", js.Any.fromFunction0(value))
+    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValueAsText(value: (Boolean, Boolean, Boolean, Boolean, Boolean, Boolean) => String): Self = this.set("GetValueAsText", js.Any.fromFunction6(value))
+    def setTypedValue(value: ITypedValue): Self = StObject.set(x, "TypedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetValueAsUnlocalizedText(value: () => String): Self = this.set("GetValueAsUnlocalizedText", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = this.set("PropertyDef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypedValue(value: ITypedValue): Self = this.set("TypedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: ITypedValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: ITypedValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import typings.actionsOnGoogle.actionsOnGoogleStrings.suggestion_chips
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object DialogflowV1MessageSuggestions {
   }
   
   @scala.inline
-  implicit class DialogflowV1MessageSuggestionsOps[Self <: DialogflowV1MessageSuggestions] (val x: Self) extends AnyVal {
+  implicit class DialogflowV1MessageSuggestionsMutableBuilder[Self <: DialogflowV1MessageSuggestions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuggestions(value: js.Array[DialogflowV1MessageSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSuggestionsVarargs(value: DialogflowV1MessageSuggestion*): Self = this.set("suggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestions(value: js.Array[DialogflowV1MessageSuggestion]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    def setSuggestionsVarargs(value: DialogflowV1MessageSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

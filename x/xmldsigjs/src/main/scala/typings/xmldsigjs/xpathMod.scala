@@ -3,16 +3,17 @@ package typings.xmldsigjs
 import typings.std.Node
 import typings.std.XPathEvaluator
 import typings.xmldsigjs.transformMod.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmldsigjs/build/types/xml/transforms/xpath", JSImport.Namespace)
-@js.native
-object xpathMod extends js.Object {
+object xpathMod {
   
+  @JSImport("xmldsigjs/build/types/xml/transforms/xpath", "XmlDsigXPathTransform")
   @js.native
   class XmlDsigXPathTransform () extends Transform {
+    def this(properties: js.Object) = this()
     
     /* protected */ def Evaluate(node: Node, xpath: String): Boolean = js.native
     

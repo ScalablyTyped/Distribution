@@ -1,11 +1,12 @@
 package typings.awsSdk.organizationsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DelegatedService extends js.Object {
+trait DelegatedService extends StObject {
   
   /**
     * The date that the account became a delegated administrator for this service. 
@@ -26,30 +27,18 @@ object DelegatedService {
   }
   
   @scala.inline
-  implicit class DelegatedServiceOps[Self <: DelegatedService] (val x: Self) extends AnyVal {
+  implicit class DelegatedServiceMutableBuilder[Self <: DelegatedService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegationEnabledDate(value: Timestamp): Self = StObject.set(x, "DelegationEnabledDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegationEnabledDateUndefined: Self = StObject.set(x, "DelegationEnabledDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServicePrincipal(value: ServicePrincipal): Self = StObject.set(x, "ServicePrincipal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegationEnabledDate(value: Timestamp): Self = this.set("DelegationEnabledDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelegationEnabledDate: Self = this.set("DelegationEnabledDate", js.undefined)
-    
-    @scala.inline
-    def setServicePrincipal(value: ServicePrincipal): Self = this.set("ServicePrincipal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServicePrincipal: Self = this.set("ServicePrincipal", js.undefined)
+    def setServicePrincipalUndefined: Self = StObject.set(x, "ServicePrincipal", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,33 +40,21 @@ object ObjectOrientedRenderer3 {
   }
   
   @scala.inline
-  implicit class ObjectOrientedRenderer3Ops[Self <: ObjectOrientedRenderer3] (val x: Self) extends AnyVal {
+  implicit class ObjectOrientedRenderer3MutableBuilder[Self <: ObjectOrientedRenderer3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateComment(value: String => RComment): Self = StObject.set(x, "createComment", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateElement(value: String => RElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateElementNS(value: (String, String) => RElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreateComment(value: String => RComment): Self = this.set("createComment", js.Any.fromFunction1(value))
+    def setCreateTextNode(value: String => RText): Self = StObject.set(x, "createTextNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateElement(value: String => RElement): Self = this.set("createElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateElementNS(value: (String, String) => RElement): Self = this.set("createElementNS", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setCreateTextNode(value: String => RText): Self = this.set("createTextNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setQuerySelector(value: String => RElement | Null): Self = this.set("querySelector", js.Any.fromFunction1(value))
+    def setQuerySelector(value: String => RElement | Null): Self = StObject.set(x, "querySelector", js.Any.fromFunction1(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.UI.Input.Inking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages all aspects of handwriting recognition. */
 @js.native
-trait InkRecognizer extends js.Object {
+trait InkRecognizer extends StObject {
   
   /** Gets the name of the InkRecognizer . */
   var name: String = js.native
@@ -20,21 +21,9 @@ object InkRecognizer {
   }
   
   @scala.inline
-  implicit class InkRecognizerOps[Self <: InkRecognizer] (val x: Self) extends AnyVal {
+  implicit class InkRecognizerMutableBuilder[Self <: InkRecognizer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

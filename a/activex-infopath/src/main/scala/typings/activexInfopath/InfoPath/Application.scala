@@ -2,12 +2,13 @@ package typings.activexInfopath.InfoPath
 
 import typings.activexAdodb.ADODB.Connection
 import typings.activexAdodb.ADODB.Recordset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Application extends js.Object {
+trait Application extends StObject {
   
   val ActiveWindow: Window = js.native
   

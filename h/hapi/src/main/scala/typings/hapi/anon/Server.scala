@@ -1,11 +1,12 @@
 package typings.hapi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Server extends js.Object {
+trait Server extends StObject {
   
   /**
     * Response timeout in milliseconds. Sets the maximum time allowed for the server to respond to an incoming request before giving up and responding with a Service Unavailable (503) error
@@ -28,30 +29,18 @@ object Server {
   }
   
   @scala.inline
-  implicit class ServerOps[Self <: Server] (val x: Self) extends AnyVal {
+  implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServer(value: Boolean | Double): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSocket(value: Boolean | Double): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: Boolean | Double): Self = this.set("server", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServer: Self = this.set("server", js.undefined)
-    
-    @scala.inline
-    def setSocket(value: Boolean | Double): Self = this.set("socket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSocket: Self = this.set("socket", js.undefined)
+    def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
   }
 }

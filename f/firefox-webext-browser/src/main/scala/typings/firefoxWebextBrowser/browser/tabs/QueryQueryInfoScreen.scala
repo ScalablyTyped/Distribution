@@ -1,5 +1,6 @@
 package typings.firefoxWebextBrowser.browser.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Window
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Application
 */
-trait QueryQueryInfoScreen extends js.Object
+trait QueryQueryInfoScreen extends StObject
 object QueryQueryInfoScreen {
   
   @scala.inline

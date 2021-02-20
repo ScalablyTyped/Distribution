@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatcheventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutEventsResponse extends js.Object {
+trait PutEventsResponse extends StObject {
   
   /**
     * The successfully and unsuccessfully ingested events results. If the ingestion was successful, the entry has the event ID in it. Otherwise, you can use the error code and error message to identify the problem with the entry.
@@ -26,33 +27,21 @@ object PutEventsResponse {
   }
   
   @scala.inline
-  implicit class PutEventsResponseOps[Self <: PutEventsResponse] (val x: Self) extends AnyVal {
+  implicit class PutEventsResponseMutableBuilder[Self <: PutEventsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntries(value: PutEventsResultEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntriesVarargs(value: PutEventsResultEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
     
     @scala.inline
-    def setEntriesVarargs(value: PutEventsResultEntry*): Self = this.set("Entries", js.Array(value :_*))
+    def setFailedEntryCount(value: Integer): Self = StObject.set(x, "FailedEntryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntries(value: PutEventsResultEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntries: Self = this.set("Entries", js.undefined)
-    
-    @scala.inline
-    def setFailedEntryCount(value: Integer): Self = this.set("FailedEntryCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedEntryCount: Self = this.set("FailedEntryCount", js.undefined)
+    def setFailedEntryCountUndefined: Self = StObject.set(x, "FailedEntryCount", js.undefined)
   }
 }

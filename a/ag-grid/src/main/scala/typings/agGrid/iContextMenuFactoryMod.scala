@@ -4,16 +4,15 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.rowNodeMod.RowNode
 import typings.std.MouseEvent
 import typings.std.Touch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/interfaces/iContextMenuFactory", JSImport.Namespace)
-@js.native
-object iContextMenuFactoryMod extends js.Object {
+object iContextMenuFactoryMod {
   
   @js.native
-  trait IContextMenuFactory extends js.Object {
+  trait IContextMenuFactory extends StObject {
     
     def hideActiveMenu(): Unit = js.native
     

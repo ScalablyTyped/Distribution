@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
 import typings.winrtUwp.Windows.Foundation.Deferral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the PairingRequested event. */
 @js.native
-trait DevicePairingRequestedEventArgs extends js.Object {
+trait DevicePairingRequestedEventArgs extends StObject {
   
   /** Accepts a PairingRequested event and pairs the device with the application. */
   def accept(): Unit = js.native

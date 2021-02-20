@@ -1,21 +1,22 @@
 package typings.hapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _RouteOptionsAccessObject extends js.Object
+trait _RouteOptionsAccessObject extends StObject
 object _RouteOptionsAccessObject {
   
   @scala.inline
-  def RouteOptionsAccessScopeObject(scope: RouteOptionsAccessScope): _RouteOptionsAccessObject = {
-    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_RouteOptionsAccessObject]
+  def RouteOptionsAccessEntityObject(entity: RouteOptionsAccessEntity): typings.hapi.mod.RouteOptionsAccessEntityObject = {
+    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.hapi.mod.RouteOptionsAccessEntityObject]
   }
   
   @scala.inline
-  def RouteOptionsAccessEntityObject(entity: RouteOptionsAccessEntity): _RouteOptionsAccessObject = {
-    val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_RouteOptionsAccessObject]
+  def RouteOptionsAccessScopeObject(scope: RouteOptionsAccessScope): typings.hapi.mod.RouteOptionsAccessScopeObject = {
+    val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.hapi.mod.RouteOptionsAccessScopeObject]
   }
 }

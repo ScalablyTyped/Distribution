@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetLoadBalancerResult extends js.Object {
+trait GetLoadBalancerResult extends StObject {
   
   /**
     * An object containing information about your load balancer.
@@ -21,24 +22,12 @@ object GetLoadBalancerResult {
   }
   
   @scala.inline
-  implicit class GetLoadBalancerResultOps[Self <: GetLoadBalancerResult] (val x: Self) extends AnyVal {
+  implicit class GetLoadBalancerResultMutableBuilder[Self <: GetLoadBalancerResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancer(value: LoadBalancer): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoadBalancer(value: LoadBalancer): Self = this.set("loadBalancer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoadBalancer: Self = this.set("loadBalancer", js.undefined)
+    def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,33 +73,21 @@ object XDragSourceContext {
   }
   
   @scala.inline
-  implicit class XDragSourceContextOps[Self <: XDragSourceContext] (val x: Self) extends AnyVal {
+  implicit class XDragSourceContextMutableBuilder[Self <: XDragSourceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentCursor(value: Double): Self = StObject.set(x, "CurrentCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCurrentCursor(value: () => Double): Self = StObject.set(x, "getCurrentCursor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetCursor(value: Double => Unit): Self = StObject.set(x, "setCursor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurrentCursor(value: Double): Self = this.set("CurrentCursor", value.asInstanceOf[js.Any])
+    def setSetImage(value: Double => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentCursor(value: () => Double): Self = this.set("getCurrentCursor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCursor(value: Double => Unit): Self = this.set("setCursor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetImage(value: Double => Unit): Self = this.set("setImage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransferablesFlavorsChanged(value: () => Unit): Self = this.set("transferablesFlavorsChanged", js.Any.fromFunction0(value))
+    def setTransferablesFlavorsChanged(value: () => Unit): Self = StObject.set(x, "transferablesFlavorsChanged", js.Any.fromFunction0(value))
   }
 }

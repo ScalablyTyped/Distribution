@@ -2,12 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestCaseResult extends js.Object {
+trait TestCaseResult extends StObject {
   
   var afnStripId: Double = js.native
   
@@ -157,165 +158,153 @@ object TestCaseResult {
   }
   
   @scala.inline
-  implicit class TestCaseResultOps[Self <: TestCaseResult] (val x: Self) extends AnyVal {
+  implicit class TestCaseResultMutableBuilder[Self <: TestCaseResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfnStripId(value: Double): Self = StObject.set(x, "afnStripId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArea(value: ShallowReference): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociatedBugs(value: js.Array[ShallowReference]): Self = StObject.set(x, "associatedBugs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfnStripId(value: Double): Self = this.set("afnStripId", value.asInstanceOf[js.Any])
+    def setAssociatedBugsVarargs(value: ShallowReference*): Self = StObject.set(x, "associatedBugs", js.Array(value :_*))
     
     @scala.inline
-    def setArea(value: ShallowReference): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setAutomatedTestId(value: String): Self = StObject.set(x, "automatedTestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedBugsVarargs(value: ShallowReference*): Self = this.set("associatedBugs", js.Array(value :_*))
+    def setAutomatedTestName(value: String): Self = StObject.set(x, "automatedTestName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedBugs(value: js.Array[ShallowReference]): Self = this.set("associatedBugs", value.asInstanceOf[js.Any])
+    def setAutomatedTestStorage(value: String): Self = StObject.set(x, "automatedTestStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestId(value: String): Self = this.set("automatedTestId", value.asInstanceOf[js.Any])
+    def setAutomatedTestType(value: String): Self = StObject.set(x, "automatedTestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestName(value: String): Self = this.set("automatedTestName", value.asInstanceOf[js.Any])
+    def setAutomatedTestTypeId(value: String): Self = StObject.set(x, "automatedTestTypeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestStorage(value: String): Self = this.set("automatedTestStorage", value.asInstanceOf[js.Any])
+    def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestType(value: String): Self = this.set("automatedTestType", value.asInstanceOf[js.Any])
+    def setBuildReference(value: BuildReference): Self = StObject.set(x, "buildReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomatedTestTypeId(value: String): Self = this.set("automatedTestTypeId", value.asInstanceOf[js.Any])
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: ShallowReference): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildReference(value: BuildReference): Self = this.set("buildReference", value.asInstanceOf[js.Any])
+    def setComputerName(value: String): Self = StObject.set(x, "computerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setConfiguration(value: ShallowReference): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletedDate(value: Date): Self = this.set("completedDate", value.asInstanceOf[js.Any])
+    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputerName(value: String): Self = this.set("computerName", value.asInstanceOf[js.Any])
+    def setCustomFields(value: js.Array[CustomTestField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: ShallowReference): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setCustomFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
     
     @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setDurationInMs(value: Double): Self = StObject.set(x, "durationInMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFieldsVarargs(value: CustomTestField*): Self = this.set("customFields", js.Array(value :_*))
+    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFields(value: js.Array[CustomTestField]): Self = this.set("customFields", value.asInstanceOf[js.Any])
+    def setFailingSince(value: FailingSince): Self = StObject.set(x, "failingSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationInMs(value: Double): Self = this.set("durationInMs", value.asInstanceOf[js.Any])
+    def setFailureType(value: String): Self = StObject.set(x, "failureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailingSince(value: FailingSince): Self = this.set("failingSince", value.asInstanceOf[js.Any])
+    def setIterationDetails(value: js.Array[TestIterationDetailsModel]): Self = StObject.set(x, "iterationDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureType(value: String): Self = this.set("failureType", value.asInstanceOf[js.Any])
+    def setIterationDetailsVarargs(value: TestIterationDetailsModel*): Self = StObject.set(x, "iterationDetails", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationDetailsVarargs(value: TestIterationDetailsModel*): Self = this.set("iterationDetails", js.Array(value :_*))
+    def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIterationDetails(value: js.Array[TestIterationDetailsModel]): Self = this.set("iterationDetails", value.asInstanceOf[js.Any])
+    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedBy(value: IdentityRef): Self = this.set("lastUpdatedBy", value.asInstanceOf[js.Any])
+    def setOwner(value: IdentityRef): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedDate(value: Date): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutcome(value: String): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    def setProject(value: ShallowReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: IdentityRef): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRelease(value: ShallowReference): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setReleaseReference(value: ReleaseReference): Self = StObject.set(x, "releaseReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProject(value: ShallowReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setResetCount(value: Double): Self = StObject.set(x, "resetCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelease(value: ShallowReference): Self = this.set("release", value.asInstanceOf[js.Any])
+    def setResolutionState(value: String): Self = StObject.set(x, "resolutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReleaseReference(value: ReleaseReference): Self = this.set("releaseReference", value.asInstanceOf[js.Any])
+    def setResolutionStateId(value: Double): Self = StObject.set(x, "resolutionStateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResetCount(value: Double): Self = this.set("resetCount", value.asInstanceOf[js.Any])
+    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionState(value: String): Self = this.set("resolutionState", value.asInstanceOf[js.Any])
+    def setRunBy(value: IdentityRef): Self = StObject.set(x, "runBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolutionStateId(value: Double): Self = this.set("resolutionStateId", value.asInstanceOf[js.Any])
+    def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevision(value: Double): Self = this.set("revision", value.asInstanceOf[js.Any])
+    def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunBy(value: IdentityRef): Self = this.set("runBy", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackTrace(value: String): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
+    def setTestCase(value: ShallowReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartedDate(value: Date): Self = this.set("startedDate", value.asInstanceOf[js.Any])
+    def setTestCaseReferenceId(value: Double): Self = StObject.set(x, "testCaseReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTestCaseTitle(value: String): Self = StObject.set(x, "testCaseTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCase(value: ShallowReference): Self = this.set("testCase", value.asInstanceOf[js.Any])
+    def setTestPlan(value: ShallowReference): Self = StObject.set(x, "testPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCaseReferenceId(value: Double): Self = this.set("testCaseReferenceId", value.asInstanceOf[js.Any])
+    def setTestPoint(value: ShallowReference): Self = StObject.set(x, "testPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestCaseTitle(value: String): Self = this.set("testCaseTitle", value.asInstanceOf[js.Any])
+    def setTestRun(value: ShallowReference): Self = StObject.set(x, "testRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestPlan(value: ShallowReference): Self = this.set("testPlan", value.asInstanceOf[js.Any])
+    def setTestSuite(value: ShallowReference): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestPoint(value: ShallowReference): Self = this.set("testPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestRun(value: ShallowReference): Self = this.set("testRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSuite(value: ShallowReference): Self = this.set("testSuite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

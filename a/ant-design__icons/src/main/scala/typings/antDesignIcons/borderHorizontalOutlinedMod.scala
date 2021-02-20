@@ -1,14 +1,21 @@
 package typings.antDesignIcons
 
+import org.scalablytyped.runtime.Shortcut
 import typings.antDesignIcons.anon.PickAntdIconPropstwoToneC
 import typings.react.mod.ForwardRefExoticComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons/dist/icons/BorderHorizontalOutlined", JSImport.Namespace)
-@js.native
-object borderHorizontalOutlinedMod extends js.Object {
+object borderHorizontalOutlinedMod extends Shortcut {
   
+  @JSImport("@ant-design/icons/dist/icons/BorderHorizontalOutlined", JSImport.Default)
+  @js.native
   val default: ForwardRefExoticComponent[PickAntdIconPropstwoToneC] = js.native
+  
+  type _To = ForwardRefExoticComponent[PickAntdIconPropstwoToneC]
+  
+  /* This means you don't have to write `default`, but can instead just say `borderHorizontalOutlinedMod.foo` */
+  override def _to: ForwardRefExoticComponent[PickAntdIconPropstwoToneC] = default
 }

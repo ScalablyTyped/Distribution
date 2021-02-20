@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The interface for a renderer factory.
   */
 @js.native
-trait IRendererFactory extends js.Object {
+trait IRendererFactory extends StObject {
   
   /**
     * Create a renderer which displays the mime data.
@@ -48,36 +49,24 @@ object IRendererFactory {
   }
   
   @scala.inline
-  implicit class IRendererFactoryOps[Self <: IRendererFactory] (val x: Self) extends AnyVal {
+  implicit class IRendererFactoryMutableBuilder[Self <: IRendererFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateRenderer(value: IRendererOptions => IRenderer): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultRank(value: Double): Self = StObject.set(x, "defaultRank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultRankUndefined: Self = StObject.set(x, "defaultRank", js.undefined)
     
     @scala.inline
-    def setCreateRenderer(value: IRendererOptions => IRenderer): Self = this.set("createRenderer", js.Any.fromFunction1(value))
+    def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeTypesVarargs(value: String*): Self = this.set("mimeTypes", js.Array(value :_*))
+    def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
     
     @scala.inline
-    def setMimeTypes(value: js.Array[String]): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSafe(value: Boolean): Self = this.set("safe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultRank(value: Double): Self = this.set("defaultRank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultRank: Self = this.set("defaultRank", js.undefined)
+    def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
   }
 }

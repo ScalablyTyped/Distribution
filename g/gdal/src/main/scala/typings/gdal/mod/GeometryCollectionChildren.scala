@@ -1,11 +1,12 @@
 package typings.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeometryCollectionChildren extends js.Object {
+trait GeometryCollectionChildren extends StObject {
   
   def add(geometry: js.Array[Geometry]): Unit = js.native
   def add(geometry: Geometry): Unit = js.native

@@ -3,12 +3,13 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.`reingold-fruchterman`
 import typings.highcharts.highchartsStrings.circle
 import typings.highcharts.highchartsStrings.random
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
+trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
   
   /**
     * (Highcharts) Approximation used to calculate repulsive forces affecting
@@ -145,102 +146,90 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
   }
   
   @scala.inline
-  implicit class PlotNetworkgraphLayoutAlgorithmOptionsOps[Self <: PlotNetworkgraphLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
+  implicit class PlotNetworkgraphLayoutAlgorithmOptionsMutableBuilder[Self <: PlotNetworkgraphLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApproximation(value: OptionsApproximationValue): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttractiveForce(value: js.Function): Self = StObject.set(x, "attractiveForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApproximation(value: OptionsApproximationValue): Self = this.set("approximation", value.asInstanceOf[js.Any])
+    def setAttractiveForceUndefined: Self = StObject.set(x, "attractiveForce", js.undefined)
     
     @scala.inline
-    def deleteApproximation: Self = this.set("approximation", js.undefined)
+    def setEnableSimulation(value: Boolean): Self = StObject.set(x, "enableSimulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttractiveForce(value: js.Function): Self = this.set("attractiveForce", value.asInstanceOf[js.Any])
+    def setEnableSimulationUndefined: Self = StObject.set(x, "enableSimulation", js.undefined)
     
     @scala.inline
-    def deleteAttractiveForce: Self = this.set("attractiveForce", js.undefined)
+    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSimulation(value: Boolean): Self = this.set("enableSimulation", value.asInstanceOf[js.Any])
+    def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
     @scala.inline
-    def deleteEnableSimulation: Self = this.set("enableSimulation", js.undefined)
+    def setGravitationalConstant(value: Double): Self = StObject.set(x, "gravitationalConstant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriction(value: Double): Self = this.set("friction", value.asInstanceOf[js.Any])
+    def setGravitationalConstantUndefined: Self = StObject.set(x, "gravitationalConstant", js.undefined)
     
     @scala.inline
-    def deleteFriction: Self = this.set("friction", js.undefined)
+    def setInitialPositionRadius(value: Double): Self = StObject.set(x, "initialPositionRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGravitationalConstant(value: Double): Self = this.set("gravitationalConstant", value.asInstanceOf[js.Any])
+    def setInitialPositionRadiusUndefined: Self = StObject.set(x, "initialPositionRadius", js.undefined)
     
     @scala.inline
-    def deleteGravitationalConstant: Self = this.set("gravitationalConstant", js.undefined)
+    def setInitialPositions(value: circle | random | js.Function): Self = StObject.set(x, "initialPositions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPositionRadius(value: Double): Self = this.set("initialPositionRadius", value.asInstanceOf[js.Any])
+    def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
     
     @scala.inline
-    def deleteInitialPositionRadius: Self = this.set("initialPositionRadius", js.undefined)
+    def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialPositions(value: circle | random | js.Function): Self = this.set("initialPositions", value.asInstanceOf[js.Any])
+    def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
     @scala.inline
-    def deleteInitialPositions: Self = this.set("initialPositions", js.undefined)
+    def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegration(value: OptionsIntegrationValue): Self = this.set("integration", value.asInstanceOf[js.Any])
+    def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
     
     @scala.inline
-    def deleteIntegration: Self = this.set("integration", js.undefined)
+    def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkLength(value: Double): Self = this.set("linkLength", value.asInstanceOf[js.Any])
+    def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
     
     @scala.inline
-    def deleteLinkLength: Self = this.set("linkLength", js.undefined)
+    def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxIterations(value: Double): Self = this.set("maxIterations", value.asInstanceOf[js.Any])
+    def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
     
     @scala.inline
-    def deleteMaxIterations: Self = this.set("maxIterations", js.undefined)
+    def setRepulsiveForce(value: js.Function): Self = StObject.set(x, "repulsiveForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSpeed(value: Double): Self = this.set("maxSpeed", value.asInstanceOf[js.Any])
+    def setRepulsiveForceUndefined: Self = StObject.set(x, "repulsiveForce", js.undefined)
     
     @scala.inline
-    def deleteMaxSpeed: Self = this.set("maxSpeed", js.undefined)
+    def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepulsiveForce(value: js.Function): Self = this.set("repulsiveForce", value.asInstanceOf[js.Any])
+    def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
     @scala.inline
-    def deleteRepulsiveForce: Self = this.set("repulsiveForce", js.undefined)
+    def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheta(value: Double): Self = this.set("theta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheta: Self = this.set("theta", js.undefined)
-    
-    @scala.inline
-    def setType(value: `reingold-fruchterman`): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

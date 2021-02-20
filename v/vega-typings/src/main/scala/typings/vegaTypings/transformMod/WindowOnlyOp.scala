@@ -1,5 +1,6 @@
 package typings.vegaTypings.transformMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.prev_value
   - typings.vegaTypings.vegaTypingsStrings.next_value
 */
-trait WindowOnlyOp extends js.Object
+trait WindowOnlyOp extends StObject
 object WindowOnlyOp {
   
   @scala.inline

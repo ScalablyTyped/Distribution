@@ -1,11 +1,12 @@
 package typings.awsSdk.cloud9Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateEnvironmentEC2Result extends js.Object {
+trait CreateEnvironmentEC2Result extends StObject {
   
   /**
     * The ID of the environment that was created.
@@ -21,24 +22,12 @@ object CreateEnvironmentEC2Result {
   }
   
   @scala.inline
-  implicit class CreateEnvironmentEC2ResultOps[Self <: CreateEnvironmentEC2Result] (val x: Self) extends AnyVal {
+  implicit class CreateEnvironmentEC2ResultMutableBuilder[Self <: CreateEnvironmentEC2Result] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = this.set("environmentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
   }
 }

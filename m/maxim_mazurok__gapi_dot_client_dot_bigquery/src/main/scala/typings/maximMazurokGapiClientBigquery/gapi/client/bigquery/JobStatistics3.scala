@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobStatistics3 extends js.Object {
+trait JobStatistics3 extends StObject {
   
   /**
     * [Output-only] The number of bad records encountered. Note that if the job has failed because of more bad records encountered than the maximum allowed in the load job configuration,
@@ -34,48 +35,36 @@ object JobStatistics3 {
   }
   
   @scala.inline
-  implicit class JobStatistics3Ops[Self <: JobStatistics3] (val x: Self) extends AnyVal {
+  implicit class JobStatistics3MutableBuilder[Self <: JobStatistics3] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadRecords(value: String): Self = StObject.set(x, "badRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadRecordsUndefined: Self = StObject.set(x, "badRecords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputFileBytes(value: String): Self = StObject.set(x, "inputFileBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadRecords(value: String): Self = this.set("badRecords", value.asInstanceOf[js.Any])
+    def setInputFileBytesUndefined: Self = StObject.set(x, "inputFileBytes", js.undefined)
     
     @scala.inline
-    def deleteBadRecords: Self = this.set("badRecords", js.undefined)
+    def setInputFiles(value: String): Self = StObject.set(x, "inputFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFileBytes(value: String): Self = this.set("inputFileBytes", value.asInstanceOf[js.Any])
+    def setInputFilesUndefined: Self = StObject.set(x, "inputFiles", js.undefined)
     
     @scala.inline
-    def deleteInputFileBytes: Self = this.set("inputFileBytes", js.undefined)
+    def setOutputBytes(value: String): Self = StObject.set(x, "outputBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputFiles(value: String): Self = this.set("inputFiles", value.asInstanceOf[js.Any])
+    def setOutputBytesUndefined: Self = StObject.set(x, "outputBytes", js.undefined)
     
     @scala.inline
-    def deleteInputFiles: Self = this.set("inputFiles", js.undefined)
+    def setOutputRows(value: String): Self = StObject.set(x, "outputRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputBytes(value: String): Self = this.set("outputBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputBytes: Self = this.set("outputBytes", js.undefined)
-    
-    @scala.inline
-    def setOutputRows(value: String): Self = this.set("outputRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputRows: Self = this.set("outputRows", js.undefined)
+    def setOutputRowsUndefined: Self = StObject.set(x, "outputRows", js.undefined)
   }
 }

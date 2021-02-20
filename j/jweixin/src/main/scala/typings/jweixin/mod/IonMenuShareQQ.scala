@@ -1,5 +1,6 @@
 package typings.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +11,16 @@ trait IonMenuShareQQ extends BaseParams {
   // 用户取消分享后执行的回调函数
   def cancel(): Unit = js.native
   
-   // 分享标题
+  // 分享标题
   var desc: String = js.native
   
-   // 分享链接
+  // 分享链接
   var imgUrl: String = js.native
   
-   // 分享描述
+  // 分享描述
   var link: String = js.native
   
-   // 分享图标
+  // 分享图标
   // 用户确认分享后执行的回调函数
   @JSName("success")
   def success_MIonMenuShareQQ(): Unit = js.native
@@ -35,36 +36,24 @@ object IonMenuShareQQ {
   }
   
   @scala.inline
-  implicit class IonMenuShareQQOps[Self <: IonMenuShareQQ] (val x: Self) extends AnyVal {
+  implicit class IonMenuShareQQMutableBuilder[Self <: IonMenuShareQQ] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setImgUrl(value: String): Self = this.set("imgUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

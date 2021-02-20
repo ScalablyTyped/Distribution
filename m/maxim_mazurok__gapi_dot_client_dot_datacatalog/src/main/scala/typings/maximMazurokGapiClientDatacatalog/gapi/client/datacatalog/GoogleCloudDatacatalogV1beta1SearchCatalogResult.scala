@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1SearchCatalogResult extends js.Object {
+trait GoogleCloudDatacatalogV1beta1SearchCatalogResult extends StObject {
   
   /**
     * The full name of the cloud resource the entry belongs to. See: https://cloud.google.com/apis/design/resource_names#full_resource_name. Example: *
@@ -37,42 +38,30 @@ object GoogleCloudDatacatalogV1beta1SearchCatalogResult {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogResultOps[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogResult] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1SearchCatalogResultMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1SearchCatalogResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLinkedResource(value: String): Self = StObject.set(x, "linkedResource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkedResourceUndefined: Self = StObject.set(x, "linkedResource", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRelativeResourceName(value: String): Self = StObject.set(x, "relativeResourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedResource(value: String): Self = this.set("linkedResource", value.asInstanceOf[js.Any])
+    def setRelativeResourceNameUndefined: Self = StObject.set(x, "relativeResourceName", js.undefined)
     
     @scala.inline
-    def deleteLinkedResource: Self = this.set("linkedResource", js.undefined)
+    def setSearchResultSubtype(value: String): Self = StObject.set(x, "searchResultSubtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeResourceName(value: String): Self = this.set("relativeResourceName", value.asInstanceOf[js.Any])
+    def setSearchResultSubtypeUndefined: Self = StObject.set(x, "searchResultSubtype", js.undefined)
     
     @scala.inline
-    def deleteRelativeResourceName: Self = this.set("relativeResourceName", js.undefined)
+    def setSearchResultType(value: String): Self = StObject.set(x, "searchResultType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchResultSubtype(value: String): Self = this.set("searchResultSubtype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchResultSubtype: Self = this.set("searchResultSubtype", js.undefined)
-    
-    @scala.inline
-    def setSearchResultType(value: String): Self = this.set("searchResultType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearchResultType: Self = this.set("searchResultType", js.undefined)
+    def setSearchResultTypeUndefined: Self = StObject.set(x, "searchResultType", js.undefined)
   }
 }

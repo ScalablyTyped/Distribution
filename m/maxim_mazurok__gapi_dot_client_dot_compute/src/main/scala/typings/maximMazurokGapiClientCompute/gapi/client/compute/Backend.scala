@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Backend extends js.Object {
+trait Backend extends StObject {
   
   /**
     * Specifies the balancing mode for the backend.
@@ -141,90 +142,78 @@ object Backend {
   }
   
   @scala.inline
-  implicit class BackendOps[Self <: Backend] (val x: Self) extends AnyVal {
+  implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBalancingMode(value: String): Self = StObject.set(x, "balancingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBalancingModeUndefined: Self = StObject.set(x, "balancingMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapacityScaler(value: Double): Self = StObject.set(x, "capacityScaler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBalancingMode(value: String): Self = this.set("balancingMode", value.asInstanceOf[js.Any])
+    def setCapacityScalerUndefined: Self = StObject.set(x, "capacityScaler", js.undefined)
     
     @scala.inline
-    def deleteBalancingMode: Self = this.set("balancingMode", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapacityScaler(value: Double): Self = this.set("capacityScaler", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCapacityScaler: Self = this.set("capacityScaler", js.undefined)
+    def setFailover(value: Boolean): Self = StObject.set(x, "failover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFailoverUndefined: Self = StObject.set(x, "failover", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailover(value: Boolean): Self = this.set("failover", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def deleteFailover: Self = this.set("failover", js.undefined)
+    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setMaxConnectionsPerEndpoint(value: Double): Self = StObject.set(x, "maxConnectionsPerEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setMaxConnectionsPerEndpointUndefined: Self = StObject.set(x, "maxConnectionsPerEndpoint", js.undefined)
     
     @scala.inline
-    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    def setMaxConnectionsPerInstance(value: Double): Self = StObject.set(x, "maxConnectionsPerInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    def setMaxConnectionsPerInstanceUndefined: Self = StObject.set(x, "maxConnectionsPerInstance", js.undefined)
     
     @scala.inline
-    def setMaxConnectionsPerEndpoint(value: Double): Self = this.set("maxConnectionsPerEndpoint", value.asInstanceOf[js.Any])
+    def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
     
     @scala.inline
-    def deleteMaxConnectionsPerEndpoint: Self = this.set("maxConnectionsPerEndpoint", js.undefined)
+    def setMaxRate(value: Double): Self = StObject.set(x, "maxRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxConnectionsPerInstance(value: Double): Self = this.set("maxConnectionsPerInstance", value.asInstanceOf[js.Any])
+    def setMaxRatePerEndpoint(value: Double): Self = StObject.set(x, "maxRatePerEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxConnectionsPerInstance: Self = this.set("maxConnectionsPerInstance", js.undefined)
+    def setMaxRatePerEndpointUndefined: Self = StObject.set(x, "maxRatePerEndpoint", js.undefined)
     
     @scala.inline
-    def setMaxRate(value: Double): Self = this.set("maxRate", value.asInstanceOf[js.Any])
+    def setMaxRatePerInstance(value: Double): Self = StObject.set(x, "maxRatePerInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxRate: Self = this.set("maxRate", js.undefined)
+    def setMaxRatePerInstanceUndefined: Self = StObject.set(x, "maxRatePerInstance", js.undefined)
     
     @scala.inline
-    def setMaxRatePerEndpoint(value: Double): Self = this.set("maxRatePerEndpoint", value.asInstanceOf[js.Any])
+    def setMaxRateUndefined: Self = StObject.set(x, "maxRate", js.undefined)
     
     @scala.inline
-    def deleteMaxRatePerEndpoint: Self = this.set("maxRatePerEndpoint", js.undefined)
+    def setMaxUtilization(value: Double): Self = StObject.set(x, "maxUtilization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRatePerInstance(value: Double): Self = this.set("maxRatePerInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxRatePerInstance: Self = this.set("maxRatePerInstance", js.undefined)
-    
-    @scala.inline
-    def setMaxUtilization(value: Double): Self = this.set("maxUtilization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxUtilization: Self = this.set("maxUtilization", js.undefined)
+    def setMaxUtilizationUndefined: Self = StObject.set(x, "maxUtilization", js.undefined)
   }
 }

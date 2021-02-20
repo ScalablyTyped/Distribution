@@ -1,12 +1,13 @@
 package typings.flexmonster.anon
 
 import typings.flexmonster.mod.MeasureObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveMeasure extends js.Object {
+trait ActiveMeasure extends StObject {
   
   var activeMeasure: js.UndefOr[MeasureObject] = js.native
   
@@ -57,138 +58,126 @@ object ActiveMeasure {
   }
   
   @scala.inline
-  implicit class ActiveMeasureOps[Self <: ActiveMeasure] (val x: Self) extends AnyVal {
+  implicit class ActiveMeasureMutableBuilder[Self <: ActiveMeasure] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveMeasure(value: MeasureObject): Self = StObject.set(x, "activeMeasure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveMeasureUndefined: Self = StObject.set(x, "activeMeasure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActiveTupleIndex(value: Double): Self = StObject.set(x, "activeTupleIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveMeasure(value: MeasureObject): Self = this.set("activeMeasure", value.asInstanceOf[js.Any])
+    def setActiveTupleIndexUndefined: Self = StObject.set(x, "activeTupleIndex", js.undefined)
     
     @scala.inline
-    def deleteActiveMeasure: Self = this.set("activeMeasure", js.undefined)
+    def setAutoRange(value: Boolean): Self = StObject.set(x, "autoRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveTupleIndex(value: Double): Self = this.set("activeTupleIndex", value.asInstanceOf[js.Any])
+    def setAutoRangeUndefined: Self = StObject.set(x, "autoRange", js.undefined)
     
     @scala.inline
-    def deleteActiveTupleIndex: Self = this.set("activeTupleIndex", js.undefined)
+    def setAxisShortNumberFormat(value: Boolean): Self = StObject.set(x, "axisShortNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRange(value: Boolean): Self = this.set("autoRange", value.asInstanceOf[js.Any])
+    def setAxisShortNumberFormatUndefined: Self = StObject.set(x, "axisShortNumberFormat", js.undefined)
     
     @scala.inline
-    def deleteAutoRange: Self = this.set("autoRange", js.undefined)
+    def setLabelsHierarchy(value: String): Self = StObject.set(x, "labelsHierarchy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisShortNumberFormat(value: Boolean): Self = this.set("axisShortNumberFormat", value.asInstanceOf[js.Any])
+    def setLabelsHierarchyUndefined: Self = StObject.set(x, "labelsHierarchy", js.undefined)
     
     @scala.inline
-    def deleteAxisShortNumberFormat: Self = this.set("axisShortNumberFormat", js.undefined)
+    def setMultipleMeasures(value: Boolean): Self = StObject.set(x, "multipleMeasures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsHierarchy(value: String): Self = this.set("labelsHierarchy", value.asInstanceOf[js.Any])
+    def setMultipleMeasuresUndefined: Self = StObject.set(x, "multipleMeasures", js.undefined)
     
     @scala.inline
-    def deleteLabelsHierarchy: Self = this.set("labelsHierarchy", js.undefined)
+    def setOneLevel(value: Boolean): Self = StObject.set(x, "oneLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleMeasures(value: Boolean): Self = this.set("multipleMeasures", value.asInstanceOf[js.Any])
+    def setOneLevelUndefined: Self = StObject.set(x, "oneLevel", js.undefined)
     
     @scala.inline
-    def deleteMultipleMeasures: Self = this.set("multipleMeasures", js.undefined)
+    def setPieDataIndex(value: String): Self = StObject.set(x, "pieDataIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneLevel(value: Boolean): Self = this.set("oneLevel", value.asInstanceOf[js.Any])
+    def setPieDataIndexUndefined: Self = StObject.set(x, "pieDataIndex", js.undefined)
     
     @scala.inline
-    def deleteOneLevel: Self = this.set("oneLevel", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPieDataIndex(value: String): Self = this.set("pieDataIndex", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePieDataIndex: Self = this.set("pieDataIndex", js.undefined)
+    def setReversedAxes(value: Boolean): Self = StObject.set(x, "reversedAxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setReversedAxesUndefined: Self = StObject.set(x, "reversedAxes", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setShowAllLabels(value: Boolean): Self = StObject.set(x, "showAllLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReversedAxes(value: Boolean): Self = this.set("reversedAxes", value.asInstanceOf[js.Any])
+    def setShowAllLabelsUndefined: Self = StObject.set(x, "showAllLabels", js.undefined)
     
     @scala.inline
-    def deleteReversedAxes: Self = this.set("reversedAxes", js.undefined)
+    def setShowDataLabels(value: Boolean): Self = StObject.set(x, "showDataLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAllLabels(value: Boolean): Self = this.set("showAllLabels", value.asInstanceOf[js.Any])
+    def setShowDataLabelsUndefined: Self = StObject.set(x, "showDataLabels", js.undefined)
     
     @scala.inline
-    def deleteShowAllLabels: Self = this.set("showAllLabels", js.undefined)
+    def setShowFilter(value: Boolean): Self = StObject.set(x, "showFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDataLabels(value: Boolean): Self = this.set("showDataLabels", value.asInstanceOf[js.Any])
+    def setShowFilterUndefined: Self = StObject.set(x, "showFilter", js.undefined)
     
     @scala.inline
-    def deleteShowDataLabels: Self = this.set("showDataLabels", js.undefined)
+    def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFilter(value: Boolean): Self = this.set("showFilter", value.asInstanceOf[js.Any])
+    def setShowLegendButton(value: Boolean): Self = StObject.set(x, "showLegendButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowFilter: Self = this.set("showFilter", js.undefined)
+    def setShowLegendButtonUndefined: Self = StObject.set(x, "showLegendButton", js.undefined)
     
     @scala.inline
-    def setShowLegend(value: Boolean): Self = this.set("showLegend", value.asInstanceOf[js.Any])
+    def setShowLegendUndefined: Self = StObject.set(x, "showLegend", js.undefined)
     
     @scala.inline
-    def deleteShowLegend: Self = this.set("showLegend", js.undefined)
+    def setShowMeasures(value: Boolean): Self = StObject.set(x, "showMeasures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLegendButton(value: Boolean): Self = this.set("showLegendButton", value.asInstanceOf[js.Any])
+    def setShowMeasuresUndefined: Self = StObject.set(x, "showMeasures", js.undefined)
     
     @scala.inline
-    def deleteShowLegendButton: Self = this.set("showLegendButton", js.undefined)
+    def setShowOneMeasureSelection(value: Boolean): Self = StObject.set(x, "showOneMeasureSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMeasures(value: Boolean): Self = this.set("showMeasures", value.asInstanceOf[js.Any])
+    def setShowOneMeasureSelectionUndefined: Self = StObject.set(x, "showOneMeasureSelection", js.undefined)
     
     @scala.inline
-    def deleteShowMeasures: Self = this.set("showMeasures", js.undefined)
+    def setShowWarning(value: Boolean): Self = StObject.set(x, "showWarning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowOneMeasureSelection(value: Boolean): Self = this.set("showOneMeasureSelection", value.asInstanceOf[js.Any])
+    def setShowWarningUndefined: Self = StObject.set(x, "showWarning", js.undefined)
     
     @scala.inline
-    def deleteShowOneMeasureSelection: Self = this.set("showOneMeasureSelection", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowWarning(value: Boolean): Self = this.set("showWarning", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteShowWarning: Self = this.set("showWarning", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

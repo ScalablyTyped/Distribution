@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CryptographicPadding extends js.Object
+sealed trait CryptographicPadding extends StObject
 /** Specifies a padding mode for asymmetric algorithm signature or encryption operations. */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicPadding")
 @js.native
-object CryptographicPadding extends js.Object {
+object CryptographicPadding extends StObject {
   
   /** Do not use padding. */
   @js.native

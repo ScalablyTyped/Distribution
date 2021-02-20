@@ -1,5 +1,6 @@
 package typings.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,4 +15,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularRouter.mod.ActivationEnd
   - typings.angularRouter.mod.Scroll
 */
-trait Event extends js.Object
+trait Event extends StObject

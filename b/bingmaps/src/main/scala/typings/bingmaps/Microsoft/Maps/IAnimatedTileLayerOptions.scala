@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAnimatedTileLayerOptions extends js.Object {
+trait IAnimatedTileLayerOptions extends StObject {
   
   /** A boolean that specifies whether the animation should auto-start when it is added to the map or not. Default: true **/
   var autoPlay: js.UndefOr[Boolean] = js.native
@@ -34,54 +35,42 @@ object IAnimatedTileLayerOptions {
   }
   
   @scala.inline
-  implicit class IAnimatedTileLayerOptionsOps[Self <: IAnimatedTileLayerOptions] (val x: Self) extends AnyVal {
+  implicit class IAnimatedTileLayerOptionsMutableBuilder[Self <: IAnimatedTileLayerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMercatorVarargs(value: TileSource*): Self = this.set("mercator", js.Array(value :_*))
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def setMercator(value: js.Array[TileSource]): Self = this.set("mercator", value.asInstanceOf[js.Any])
+    def setLoadingScreen(value: CustomOverlay): Self = StObject.set(x, "loadingScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    def setLoadingScreenUndefined: Self = StObject.set(x, "loadingScreen", js.undefined)
     
     @scala.inline
-    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    def setMaxTotalLoadTime(value: Double): Self = StObject.set(x, "maxTotalLoadTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setMaxTotalLoadTimeUndefined: Self = StObject.set(x, "maxTotalLoadTime", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setMercator(value: js.Array[TileSource]): Self = StObject.set(x, "mercator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadingScreen(value: CustomOverlay): Self = this.set("loadingScreen", value.asInstanceOf[js.Any])
+    def setMercatorVarargs(value: TileSource*): Self = StObject.set(x, "mercator", js.Array(value :_*))
     
     @scala.inline
-    def deleteLoadingScreen: Self = this.set("loadingScreen", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTotalLoadTime(value: Double): Self = this.set("maxTotalLoadTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxTotalLoadTime: Self = this.set("maxTotalLoadTime", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

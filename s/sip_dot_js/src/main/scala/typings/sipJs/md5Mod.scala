@@ -5,16 +5,16 @@ import typings.sipJs.sipJsBooleans.`false`
 import typings.sipJs.sipJsBooleans.`true`
 import typings.std.Int32Array
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/messages/md5", JSImport.Namespace)
-@js.native
-object md5Mod extends js.Object {
+object md5Mod {
   
+  @JSImport("sip.js/lib/core/messages/md5", "Md5")
   @js.native
-  class Md5 () extends js.Object {
+  class Md5 () extends StObject {
     
     var _buffer: js.Any = js.native
     
@@ -44,37 +44,78 @@ object md5Mod extends js.Object {
     def start(): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Md5 extends js.Object {
+  object Md5 {
     
-    var _hex: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _md5cycle: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5._hex")
+    @js.native
+    def _hex: js.Any = js.native
+    @scala.inline
+    def _hex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_hex")(x.asInstanceOf[js.Any])
     
-    var buffer32Identity: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5._md5cycle")
+    @js.native
+    def _md5cycle: js.Any = js.native
+    @scala.inline
+    def _md5cycle_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_md5cycle")(x.asInstanceOf[js.Any])
     
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.buffer32Identity")
+    @js.native
+    def buffer32Identity: js.Any = js.native
+    @scala.inline
+    def buffer32Identity_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffer32Identity")(x.asInstanceOf[js.Any])
+    
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
+    @js.native
     def hashAsciiStr(str: String): String = js.native
-    @JSName("hashAsciiStr")
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
+    @js.native
     def hashAsciiStr_Int32Array(str: String): Int32Array = js.native
-    @JSName("hashAsciiStr")
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
+    @js.native
     def hashAsciiStr_false(str: String, raw: `false`): String = js.native
-    @JSName("hashAsciiStr")
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
+    @js.native
     def hashAsciiStr_true(str: String, raw: `true`): Int32Array = js.native
     
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
+    @js.native
     def hashStr(str: String): String = js.native
-    @JSName("hashStr")
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
+    @js.native
     def hashStr_Int32Array(str: String): Int32Array = js.native
-    @JSName("hashStr")
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
+    @js.native
     def hashStr_false(str: String, raw: `false`): String = js.native
-    @JSName("hashStr")
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
+    @js.native
     def hashStr_true(str: String, raw: `true`): Int32Array = js.native
     
-    var hexChars: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hexChars")
+    @js.native
+    def hexChars: js.Any = js.native
+    @scala.inline
+    def hexChars_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hexChars")(x.asInstanceOf[js.Any])
     
-    var hexOut: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.hexOut")
+    @js.native
+    def hexOut: js.Any = js.native
+    @scala.inline
+    def hexOut_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hexOut")(x.asInstanceOf[js.Any])
     
-    var onePassHasher: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.onePassHasher")
+    @js.native
+    def onePassHasher: js.Any = js.native
+    @scala.inline
+    def onePassHasher_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onePassHasher")(x.asInstanceOf[js.Any])
     
-    var stateIdentity: js.Any = js.native
+    @JSImport("sip.js/lib/core/messages/md5", "Md5.stateIdentity")
+    @js.native
+    def stateIdentity: js.Any = js.native
+    @scala.inline
+    def stateIdentity_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateIdentity")(x.asInstanceOf[js.Any])
   }
 }

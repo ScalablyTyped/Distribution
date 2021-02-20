@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,57 +55,45 @@ object ClaimResponseError {
   }
   
   @scala.inline
-  implicit class ClaimResponseErrorOps[Self <: ClaimResponseError] (val x: Self) extends AnyVal {
+  implicit class ClaimResponseErrorMutableBuilder[Self <: ClaimResponseError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailSequenceLinkId(value: positiveInt): Self = StObject.set(x, "detailSequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDetailSequenceLinkIdUndefined: Self = StObject.set(x, "detailSequenceLinkId", js.undefined)
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setSequenceLinkId(value: positiveInt): Self = StObject.set(x, "sequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_detailSequenceLinkId(value: Element): Self = this.set("_detailSequenceLinkId", value.asInstanceOf[js.Any])
+    def setSequenceLinkIdUndefined: Self = StObject.set(x, "sequenceLinkId", js.undefined)
     
     @scala.inline
-    def delete_detailSequenceLinkId: Self = this.set("_detailSequenceLinkId", js.undefined)
+    def setSubdetailSequenceLinkId(value: positiveInt): Self = StObject.set(x, "subdetailSequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sequenceLinkId(value: Element): Self = this.set("_sequenceLinkId", value.asInstanceOf[js.Any])
+    def setSubdetailSequenceLinkIdUndefined: Self = StObject.set(x, "subdetailSequenceLinkId", js.undefined)
     
     @scala.inline
-    def delete_sequenceLinkId: Self = this.set("_sequenceLinkId", js.undefined)
+    def set_detailSequenceLinkId(value: Element): Self = StObject.set(x, "_detailSequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_subdetailSequenceLinkId(value: Element): Self = this.set("_subdetailSequenceLinkId", value.asInstanceOf[js.Any])
+    def set_detailSequenceLinkIdUndefined: Self = StObject.set(x, "_detailSequenceLinkId", js.undefined)
     
     @scala.inline
-    def delete_subdetailSequenceLinkId: Self = this.set("_subdetailSequenceLinkId", js.undefined)
+    def set_sequenceLinkId(value: Element): Self = StObject.set(x, "_sequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetailSequenceLinkId(value: positiveInt): Self = this.set("detailSequenceLinkId", value.asInstanceOf[js.Any])
+    def set_sequenceLinkIdUndefined: Self = StObject.set(x, "_sequenceLinkId", js.undefined)
     
     @scala.inline
-    def deleteDetailSequenceLinkId: Self = this.set("detailSequenceLinkId", js.undefined)
+    def set_subdetailSequenceLinkId(value: Element): Self = StObject.set(x, "_subdetailSequenceLinkId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceLinkId(value: positiveInt): Self = this.set("sequenceLinkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceLinkId: Self = this.set("sequenceLinkId", js.undefined)
-    
-    @scala.inline
-    def setSubdetailSequenceLinkId(value: positiveInt): Self = this.set("subdetailSequenceLinkId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubdetailSequenceLinkId: Self = this.set("subdetailSequenceLinkId", js.undefined)
+    def set_subdetailSequenceLinkIdUndefined: Self = StObject.set(x, "_subdetailSequenceLinkId", js.undefined)
   }
 }

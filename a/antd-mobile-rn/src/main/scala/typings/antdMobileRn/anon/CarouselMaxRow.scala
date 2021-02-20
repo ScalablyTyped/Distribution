@@ -2,12 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CarouselMaxRow extends js.Object {
+trait CarouselMaxRow extends StObject {
   
   var carouselMaxRow: Double = js.native
   
@@ -37,39 +38,27 @@ object CarouselMaxRow {
   }
   
   @scala.inline
-  implicit class CarouselMaxRowOps[Self <: CarouselMaxRow] (val x: Self) extends AnyVal {
+  implicit class CarouselMaxRowMutableBuilder[Self <: CarouselMaxRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnNum(value: Double): Self = StObject.set(x, "columnNum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: js.Array[scala.Nothing]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCarouselMaxRow(value: Double): Self = this.set("carouselMaxRow", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: scala.Nothing*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setColumnNum(value: Double): Self = this.set("columnNum", value.asInstanceOf[js.Any])
+    def setHasLine(value: Boolean): Self = StObject.set(x, "hasLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataVarargs(value: scala.Nothing*): Self = this.set("data", js.Array(value :_*))
+    def setIsCarousel(value: Boolean): Self = StObject.set(x, "isCarousel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[scala.Nothing]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasLine(value: Boolean): Self = this.set("hasLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsCarousel(value: Boolean): Self = this.set("isCarousel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

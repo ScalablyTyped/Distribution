@@ -1,5 +1,6 @@
 package typings.simpleWebsocket
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("simple-websocket", JSImport.Namespace)
 @js.native
-object simpleWebsocketRequire extends js.Object
+object simpleWebsocketRequire extends StObject

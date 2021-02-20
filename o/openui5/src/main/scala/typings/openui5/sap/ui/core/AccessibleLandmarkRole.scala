@@ -1,11 +1,12 @@
 package typings.openui5.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AccessibleLandmarkRole extends js.Object
+sealed trait AccessibleLandmarkRole extends StObject
 /**
   * Defines the accessible landmark roles for ARIA support. This enumeration is used with the
   * AccessibleRole control property.For more information, goto "Roles for Accessible Rich Internet
@@ -13,7 +14,7 @@ sealed trait AccessibleLandmarkRole extends js.Object
   */
 @JSGlobal("sap.ui.core.AccessibleLandmarkRole")
 @js.native
-object AccessibleLandmarkRole extends js.Object {
+object AccessibleLandmarkRole extends StObject {
   
   @js.native
   sealed trait Banner extends AccessibleLandmarkRole

@@ -2,6 +2,7 @@ package typings.officeJsPreview.PowerPoint
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,24 +32,12 @@ object Application {
   }
   
   @scala.inline
-  implicit class ApplicationOps[Self <: Application] (val x: Self) extends AnyVal {
+  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContext(value: RequestContext): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToJSON(value: () => StringDictionary[String]): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => StringDictionary[String]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

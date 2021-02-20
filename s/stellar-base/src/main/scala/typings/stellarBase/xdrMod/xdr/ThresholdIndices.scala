@@ -8,12 +8,13 @@ import typings.stellarBase.stellarBaseStrings.thresholdHigh
 import typings.stellarBase.stellarBaseStrings.thresholdLow
 import typings.stellarBase.stellarBaseStrings.thresholdMasterWeight
 import typings.stellarBase.stellarBaseStrings.thresholdMed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThresholdIndices extends js.Object {
+trait ThresholdIndices extends StObject {
   
   val name: thresholdMasterWeight | thresholdLow | thresholdMed | thresholdHigh = js.native
   
@@ -31,24 +32,12 @@ object ThresholdIndices {
   }
   
   @scala.inline
-  implicit class ThresholdIndicesOps[Self <: ThresholdIndices] (val x: Self) extends AnyVal {
+  implicit class ThresholdIndicesMutableBuilder[Self <: ThresholdIndices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: thresholdMasterWeight | thresholdLow | thresholdMed | thresholdHigh): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: thresholdMasterWeight | thresholdLow | thresholdMed | thresholdHigh): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: `0` | `1` | `2` | `3`): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

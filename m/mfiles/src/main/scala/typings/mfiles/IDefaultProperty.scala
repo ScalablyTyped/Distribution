@@ -3,12 +3,13 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import typings.mfiles.MFiles.MFDefaultPropertyType
 import typings.mfiles.MFiles.MFEmailField
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDefaultProperty extends js.Object {
+trait IDefaultProperty extends StObject {
   
   def Clone(): IDefaultProperty = js.native
   
@@ -95,93 +96,81 @@ object IDefaultProperty {
   }
   
   @scala.inline
-  implicit class IDefaultPropertyOps[Self <: IDefaultProperty] (val x: Self) extends AnyVal {
+  implicit class IDefaultPropertyMutableBuilder[Self <: IDefaultProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IDefaultProperty): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataFixedValueValue(value: ITypedValue): Self = StObject.set(x, "DataFixedValueValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataFromEmailAddVLItemIfNotFound(value: Boolean): Self = StObject.set(x, "DataFromEmailAddVLItemIfNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IDefaultProperty): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setDataFromEmailField(value: MFEmailField): Self = StObject.set(x, "DataFromEmailField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFixedValueValue(value: ITypedValue): Self = this.set("DataFixedValueValue", value.asInstanceOf[js.Any])
+    def setDataFromEmailHeaderAddVLItemIfNotFound(value: Boolean): Self = StObject.set(x, "DataFromEmailHeaderAddVLItemIfNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromEmailAddVLItemIfNotFound(value: Boolean): Self = this.set("DataFromEmailAddVLItemIfNotFound", value.asInstanceOf[js.Any])
+    def setDataFromEmailHeaderField(value: String): Self = StObject.set(x, "DataFromEmailHeaderField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromEmailField(value: MFEmailField): Self = this.set("DataFromEmailField", value.asInstanceOf[js.Any])
+    def setDataFromEmailHeaderTreatLookupAsID(value: Boolean): Self = StObject.set(x, "DataFromEmailHeaderTreatLookupAsID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromEmailHeaderAddVLItemIfNotFound(value: Boolean): Self = this.set("DataFromEmailHeaderAddVLItemIfNotFound", value.asInstanceOf[js.Any])
+    def setDataFromEmailTreatLookupAsID(value: Boolean): Self = StObject.set(x, "DataFromEmailTreatLookupAsID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromEmailHeaderField(value: String): Self = this.set("DataFromEmailHeaderField", value.asInstanceOf[js.Any])
+    def setDataFromHPDSSXMLAddVLItemIfNotFound(value: Boolean): Self = StObject.set(x, "DataFromHPDSSXMLAddVLItemIfNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromEmailHeaderTreatLookupAsID(value: Boolean): Self = this.set("DataFromEmailHeaderTreatLookupAsID", value.asInstanceOf[js.Any])
+    def setDataFromHPDSSXMLPromptName(value: String): Self = StObject.set(x, "DataFromHPDSSXMLPromptName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromEmailTreatLookupAsID(value: Boolean): Self = this.set("DataFromEmailTreatLookupAsID", value.asInstanceOf[js.Any])
+    def setDataFromHPDSSXMLTreatLookupAsID(value: Boolean): Self = StObject.set(x, "DataFromHPDSSXMLTreatLookupAsID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromHPDSSXMLAddVLItemIfNotFound(value: Boolean): Self = this.set("DataFromHPDSSXMLAddVLItemIfNotFound", value.asInstanceOf[js.Any])
+    def setDataFromOCRAddVLItemIfNotFound(value: Boolean): Self = StObject.set(x, "DataFromOCRAddVLItemIfNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromHPDSSXMLPromptName(value: String): Self = this.set("DataFromHPDSSXMLPromptName", value.asInstanceOf[js.Any])
+    def setDataFromOCRTreatLookupAsID(value: Boolean): Self = StObject.set(x, "DataFromOCRTreatLookupAsID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromHPDSSXMLTreatLookupAsID(value: Boolean): Self = this.set("DataFromHPDSSXMLTreatLookupAsID", value.asInstanceOf[js.Any])
+    def setDataFromOCRZone(value: IOCRZone): Self = StObject.set(x, "DataFromOCRZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromOCRAddVLItemIfNotFound(value: Boolean): Self = this.set("DataFromOCRAddVLItemIfNotFound", value.asInstanceOf[js.Any])
+    def setDataFromXMLAddVLItemIfNotFound(value: Boolean): Self = StObject.set(x, "DataFromXMLAddVLItemIfNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromOCRTreatLookupAsID(value: Boolean): Self = this.set("DataFromOCRTreatLookupAsID", value.asInstanceOf[js.Any])
+    def setDataFromXMLTreatLookupAsID(value: Boolean): Self = StObject.set(x, "DataFromXMLTreatLookupAsID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromOCRZone(value: IOCRZone): Self = this.set("DataFromOCRZone", value.asInstanceOf[js.Any])
+    def setDataFromXMLXPathExpression(value: String): Self = StObject.set(x, "DataFromXMLXPathExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromXMLAddVLItemIfNotFound(value: Boolean): Self = this.set("DataFromXMLAddVLItemIfNotFound", value.asInstanceOf[js.Any])
+    def setPropertyDefID(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDefID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFromXMLTreatLookupAsID(value: Boolean): Self = this.set("DataFromXMLTreatLookupAsID", value.asInstanceOf[js.Any])
+    def setSetFixedValue(value: ITypedValue => Unit): Self = StObject.set(x, "SetFixedValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataFromXMLXPathExpression(value: String): Self = this.set("DataFromXMLXPathExpression", value.asInstanceOf[js.Any])
+    def setSetFromEmail(value: (MFEmailField, Boolean, Boolean) => Unit): Self = StObject.set(x, "SetFromEmail", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPropertyDefID(value: MFBuiltInPropertyDef | Double): Self = this.set("PropertyDefID", value.asInstanceOf[js.Any])
+    def setSetFromEmailHeader(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "SetFromEmailHeader", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetFixedValue(value: ITypedValue => Unit): Self = this.set("SetFixedValue", js.Any.fromFunction1(value))
+    def setSetFromHPDSSXML(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "SetFromHPDSSXML", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetFromEmail(value: (MFEmailField, Boolean, Boolean) => Unit): Self = this.set("SetFromEmail", js.Any.fromFunction3(value))
+    def setSetFromOCR(value: (IOCRZone, Boolean, Boolean) => Unit): Self = StObject.set(x, "SetFromOCR", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetFromEmailHeader(value: (String, Boolean, Boolean) => Unit): Self = this.set("SetFromEmailHeader", js.Any.fromFunction3(value))
+    def setSetFromXML(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "SetFromXML", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setSetFromHPDSSXML(value: (String, Boolean, Boolean) => Unit): Self = this.set("SetFromHPDSSXML", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetFromOCR(value: (IOCRZone, Boolean, Boolean) => Unit): Self = this.set("SetFromOCR", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setSetFromXML(value: (String, Boolean, Boolean) => Unit): Self = this.set("SetFromXML", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setType(value: MFDefaultPropertyType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setType(value: MFDefaultPropertyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

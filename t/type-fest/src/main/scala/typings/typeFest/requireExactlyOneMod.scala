@@ -2,13 +2,12 @@ package typings.typeFest
 
 import typings.std.Exclude
 import typings.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("type-fest/source/require-exactly-one", JSImport.Namespace)
-@js.native
-object requireExactlyOneMod extends js.Object {
+object requireExactlyOneMod {
   
   type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   

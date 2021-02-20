@@ -1,15 +1,15 @@
 package typings.grammarkdown
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown/dist/stringwriter", JSImport.Namespace)
-@js.native
-object stringwriterMod extends js.Object {
+object stringwriterMod {
   
+  @JSImport("grammarkdown/dist/stringwriter", "StringWriter")
   @js.native
-  class StringWriter () extends js.Object {
+  class StringWriter () extends StObject {
     def this(eol: String) = this()
     
     var _depth: js.Any = js.native

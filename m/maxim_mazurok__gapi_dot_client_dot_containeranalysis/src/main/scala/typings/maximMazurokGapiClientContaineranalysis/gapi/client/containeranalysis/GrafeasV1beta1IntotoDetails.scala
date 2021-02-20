@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrafeasV1beta1IntotoDetails extends js.Object {
+trait GrafeasV1beta1IntotoDetails extends StObject {
   
   var signatures: js.UndefOr[js.Array[GrafeasV1beta1IntotoSignature]] = js.native
   
@@ -20,33 +21,21 @@ object GrafeasV1beta1IntotoDetails {
   }
   
   @scala.inline
-  implicit class GrafeasV1beta1IntotoDetailsOps[Self <: GrafeasV1beta1IntotoDetails] (val x: Self) extends AnyVal {
+  implicit class GrafeasV1beta1IntotoDetailsMutableBuilder[Self <: GrafeasV1beta1IntotoDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignatures(value: js.Array[GrafeasV1beta1IntotoSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignaturesVarargs(value: GrafeasV1beta1IntotoSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
     @scala.inline
-    def setSignaturesVarargs(value: GrafeasV1beta1IntotoSignature*): Self = this.set("signatures", js.Array(value :_*))
+    def setSigned(value: Link): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatures(value: js.Array[GrafeasV1beta1IntotoSignature]): Self = this.set("signatures", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignatures: Self = this.set("signatures", js.undefined)
-    
-    @scala.inline
-    def setSigned(value: Link): Self = this.set("signed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSigned: Self = this.set("signed", js.undefined)
+    def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
   }
 }

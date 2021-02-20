@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Sync tree args
   */
 @js.native
-trait ISyncTreeArgs extends js.Object {
+trait ISyncTreeArgs extends StObject {
   
   /* optional, specifies whether to set the synced node to be the active node, this will default to true if not specified*/
   var activate: Boolean = js.native
@@ -31,30 +32,18 @@ object ISyncTreeArgs {
   }
   
   @scala.inline
-  implicit class ISyncTreeArgsOps[Self <: ISyncTreeArgs] (val x: Self) extends AnyVal {
+  implicit class ISyncTreeArgsMutableBuilder[Self <: ISyncTreeArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceReload(value: Boolean): Self = StObject.set(x, "forceReload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: Boolean): Self = this.set("activate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceReload(value: Boolean): Self = this.set("forceReload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTree(value: String): Self = this.set("tree", value.asInstanceOf[js.Any])
+    def setTree(value: String): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
   }
 }

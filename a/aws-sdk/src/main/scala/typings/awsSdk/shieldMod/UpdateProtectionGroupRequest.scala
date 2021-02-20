@@ -1,11 +1,12 @@
 package typings.awsSdk.shieldMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProtectionGroupRequest extends js.Object {
+trait UpdateProtectionGroupRequest extends StObject {
   
   /**
     * Defines how AWS Shield combines resource data for the group in order to detect, mitigate, and report events.   Sum - Use the total traffic across the group. This is a good choice for most cases. Examples include Elastic IP addresses for EC2 instances that scale manually or automatically.   Mean - Use the average of the traffic across the group. This is a good choice for resources that share traffic uniformly. Examples include accelerators and load balancers.   Max - Use the highest traffic from each resource. This is useful for resources that don't share traffic and for resources that share that traffic in a non-uniform way. Examples include CloudFront distributions and origin resources for CloudFront distributions.  
@@ -45,42 +46,30 @@ object UpdateProtectionGroupRequest {
   }
   
   @scala.inline
-  implicit class UpdateProtectionGroupRequestOps[Self <: UpdateProtectionGroupRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateProtectionGroupRequestMutableBuilder[Self <: UpdateProtectionGroupRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregation(value: ProtectionGroupAggregation): Self = StObject.set(x, "Aggregation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMembers(value: ProtectionGroupMembers): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
     @scala.inline
-    def setAggregation(value: ProtectionGroupAggregation): Self = this.set("Aggregation", value.asInstanceOf[js.Any])
+    def setMembersVarargs(value: ResourceArn*): Self = StObject.set(x, "Members", js.Array(value :_*))
     
     @scala.inline
-    def setPattern(value: ProtectionGroupPattern): Self = this.set("Pattern", value.asInstanceOf[js.Any])
+    def setPattern(value: ProtectionGroupPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionGroupId(value: ProtectionGroupId): Self = this.set("ProtectionGroupId", value.asInstanceOf[js.Any])
+    def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembersVarargs(value: ResourceArn*): Self = this.set("Members", js.Array(value :_*))
+    def setResourceType(value: ProtectedResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMembers(value: ProtectionGroupMembers): Self = this.set("Members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembers: Self = this.set("Members", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: ProtectedResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

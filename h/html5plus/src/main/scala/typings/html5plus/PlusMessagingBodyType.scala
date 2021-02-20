@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
   */
 @js.native
-trait PlusMessagingBodyType extends js.Object {
+trait PlusMessagingBodyType extends StObject {
   
   /**
     * Html类型
@@ -40,30 +41,18 @@ object PlusMessagingBodyType {
   }
   
   @scala.inline
-  implicit class PlusMessagingBodyTypeOps[Self <: PlusMessagingBodyType] (val x: Self) extends AnyVal {
+  implicit class PlusMessagingBodyTypeMutableBuilder[Self <: PlusMessagingBodyType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextSlashhtml(value: String): Self = StObject.set(x, "text/html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTextSlashhtmlUndefined: Self = StObject.set(x, "text/html", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextSlashplain(value: String): Self = StObject.set(x, "text/plain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextSlashhtml(value: String): Self = this.set("text/html", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextSlashhtml: Self = this.set("text/html", js.undefined)
-    
-    @scala.inline
-    def setTextSlashplain(value: String): Self = this.set("text/plain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextSlashplain: Self = this.set("text/plain", js.undefined)
+    def setTextSlashplainUndefined: Self = StObject.set(x, "text/plain", js.undefined)
   }
 }

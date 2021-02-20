@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SelectParameters extends js.Object {
+trait SelectParameters extends StObject {
   
   /**
     * The expression that is used to select the object.
@@ -36,42 +37,30 @@ object SelectParameters {
   }
   
   @scala.inline
-  implicit class SelectParametersOps[Self <: SelectParameters] (val x: Self) extends AnyVal {
+  implicit class SelectParametersMutableBuilder[Self <: SelectParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpressionType(value: ExpressionType): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpressionTypeUndefined: Self = StObject.set(x, "ExpressionType", js.undefined)
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("Expression", js.undefined)
+    def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressionType(value: ExpressionType): Self = this.set("ExpressionType", value.asInstanceOf[js.Any])
+    def setInputSerializationUndefined: Self = StObject.set(x, "InputSerialization", js.undefined)
     
     @scala.inline
-    def deleteExpressionType: Self = this.set("ExpressionType", js.undefined)
+    def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputSerialization(value: InputSerialization): Self = this.set("InputSerialization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputSerialization: Self = this.set("InputSerialization", js.undefined)
-    
-    @scala.inline
-    def setOutputSerialization(value: OutputSerialization): Self = this.set("OutputSerialization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputSerialization: Self = this.set("OutputSerialization", js.undefined)
+    def setOutputSerializationUndefined: Self = StObject.set(x, "OutputSerialization", js.undefined)
   }
 }

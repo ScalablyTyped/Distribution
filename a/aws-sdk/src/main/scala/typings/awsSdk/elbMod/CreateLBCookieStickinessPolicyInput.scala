@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateLBCookieStickinessPolicyInput extends js.Object {
+trait CreateLBCookieStickinessPolicyInput extends StObject {
   
   /**
     * The time period, in seconds, after which the cookie should be considered stale. If you do not specify this parameter, the default value is 0, which indicates that the sticky session should last for the duration of the browser session.
@@ -31,30 +32,18 @@ object CreateLBCookieStickinessPolicyInput {
   }
   
   @scala.inline
-  implicit class CreateLBCookieStickinessPolicyInputOps[Self <: CreateLBCookieStickinessPolicyInput] (val x: Self) extends AnyVal {
+  implicit class CreateLBCookieStickinessPolicyInputMutableBuilder[Self <: CreateLBCookieStickinessPolicyInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookieExpirationPeriod(value: CookieExpirationPeriod): Self = StObject.set(x, "CookieExpirationPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookieExpirationPeriodUndefined: Self = StObject.set(x, "CookieExpirationPeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = this.set("LoadBalancerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCookieExpirationPeriod(value: CookieExpirationPeriod): Self = this.set("CookieExpirationPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCookieExpirationPeriod: Self = this.set("CookieExpirationPeriod", js.undefined)
+    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

@@ -1,17 +1,18 @@
 package typings.lock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lock", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("lock", "Lock")
+  @js.native
   def Lock(): ILock = js.native
   
   @js.native
-  trait ILock extends js.Object {
+  trait ILock extends StObject {
     
     def apply(key: String, exec: exec): Unit = js.native
     def apply(key: js.Array[String], exec: exec): Unit = js.native

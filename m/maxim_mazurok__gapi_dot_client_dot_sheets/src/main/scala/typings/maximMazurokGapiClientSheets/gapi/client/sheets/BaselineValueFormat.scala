@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaselineValueFormat extends js.Object {
+trait BaselineValueFormat extends StObject {
   
   /** The comparison type of key value with baseline value. */
   var comparisonType: js.UndefOr[String] = js.native
@@ -40,66 +41,54 @@ object BaselineValueFormat {
   }
   
   @scala.inline
-  implicit class BaselineValueFormatOps[Self <: BaselineValueFormat] (val x: Self) extends AnyVal {
+  implicit class BaselineValueFormatMutableBuilder[Self <: BaselineValueFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonType(value: String): Self = this.set("comparisonType", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteComparisonType: Self = this.set("comparisonType", js.undefined)
+    def setNegativeColor(value: Color): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNegativeColorStyle(value: ColorStyle): Self = StObject.set(x, "negativeColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setNegativeColorStyleUndefined: Self = StObject.set(x, "negativeColorStyle", js.undefined)
     
     @scala.inline
-    def setNegativeColor(value: Color): Self = this.set("negativeColor", value.asInstanceOf[js.Any])
+    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
     @scala.inline
-    def deleteNegativeColor: Self = this.set("negativeColor", js.undefined)
+    def setPosition(value: TextPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNegativeColorStyle(value: ColorStyle): Self = this.set("negativeColorStyle", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteNegativeColorStyle: Self = this.set("negativeColorStyle", js.undefined)
+    def setPositiveColor(value: Color): Self = StObject.set(x, "positiveColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: TextPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPositiveColorStyle(value: ColorStyle): Self = StObject.set(x, "positiveColorStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositiveColorStyleUndefined: Self = StObject.set(x, "positiveColorStyle", js.undefined)
     
     @scala.inline
-    def setPositiveColor(value: Color): Self = this.set("positiveColor", value.asInstanceOf[js.Any])
+    def setPositiveColorUndefined: Self = StObject.set(x, "positiveColor", js.undefined)
     
     @scala.inline
-    def deletePositiveColor: Self = this.set("positiveColor", js.undefined)
+    def setTextFormat(value: TextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositiveColorStyle(value: ColorStyle): Self = this.set("positiveColorStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositiveColorStyle: Self = this.set("positiveColorStyle", js.undefined)
-    
-    @scala.inline
-    def setTextFormat(value: TextFormat): Self = this.set("textFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextFormat: Self = this.set("textFormat", js.undefined)
+    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

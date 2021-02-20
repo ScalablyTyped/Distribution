@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeJobQueuesRequest extends js.Object {
+trait DescribeJobQueuesRequest extends StObject {
   
   /**
     * A list of up to 100 queue names or full queue Amazon Resource Name (ARN) entries.
@@ -31,39 +32,27 @@ object DescribeJobQueuesRequest {
   }
   
   @scala.inline
-  implicit class DescribeJobQueuesRequestOps[Self <: DescribeJobQueuesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeJobQueuesRequestMutableBuilder[Self <: DescribeJobQueuesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobQueues(value: StringList): Self = StObject.set(x, "jobQueues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobQueuesUndefined: Self = StObject.set(x, "jobQueues", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobQueuesVarargs(value: String*): Self = StObject.set(x, "jobQueues", js.Array(value :_*))
     
     @scala.inline
-    def setJobQueuesVarargs(value: String*): Self = this.set("jobQueues", js.Array(value :_*))
+    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobQueues(value: StringList): Self = this.set("jobQueues", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteJobQueues: Self = this.set("jobQueues", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

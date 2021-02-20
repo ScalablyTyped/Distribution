@@ -8,14 +8,14 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.targetStateMod.TargetState
 import typings.uirouterCore.transitionInterfaceMod.TreeChanges
 import typings.uirouterCore.viewViewMod.ViewService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/path", JSImport.Namespace)
-@js.native
-object pathMod extends js.Object {
+object pathMod {
   
+  @JSImport("@uirouter/core/lib/path", "PathNode")
   @js.native
   class PathNode protected ()
     extends typings.uirouterCore.pathNodeMod.PathNode {
@@ -25,37 +25,44 @@ object pathMod extends js.Object {
     def this(state: StateObject) = this()
   }
   /* static members */
-  @js.native
-  object PathNode extends js.Object {
+  object PathNode {
     
     /**
       * Returns a clone of the PathNode
       * @deprecated use instance method `node.clone()`
       */
+    @JSImport("@uirouter/core/lib/path", "PathNode.clone")
+    @js.native
     def clone(node: typings.uirouterCore.pathNodeMod.PathNode): typings.uirouterCore.pathNodeMod.PathNode = js.native
   }
   
+  @JSImport("@uirouter/core/lib/path", "PathUtils")
   @js.native
   class PathUtils ()
     extends typings.uirouterCore.pathUtilsMod.PathUtils
   /* static members */
-  @js.native
-  object PathUtils extends js.Object {
+  object PathUtils {
     
     /**
       * Creates ViewConfig objects and adds to nodes.
       *
       * On each [[PathNode]], creates ViewConfig objects from the views: property of the node's state
       */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.applyViewConfigs")
+    @js.native
     def applyViewConfigs(
       $view: ViewService,
       path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       states: js.Array[StateObject]
     ): Unit = js.native
     
+    @JSImport("@uirouter/core/lib/path", "PathUtils.buildPath")
+    @js.native
     def buildPath(targetState: TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
     
     /** Given a fromPath: PathNode[] and a TargetState, builds a toPath: PathNode[] */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.buildToPath")
+    @js.native
     def buildToPath(fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode], targetState: TargetState): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
     
     /**
@@ -66,10 +73,14 @@ object pathMod extends js.Object {
       * @param paramsFn a function which returns the parameters to consider when comparing
       * @returns true if the the states and parameter values for both paths are identical
       */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.equals")
+    @js.native
     def equals(
       pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
     ): Boolean = js.native
+    @JSImport("@uirouter/core/lib/path", "PathUtils.equals")
+    @js.native
     def equals(
       pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
@@ -87,10 +98,14 @@ object pathMod extends js.Object {
       * caller, for instance, $state.transitionTo(..., toParams).  If a key was found in toParams,
       * it is not inherited from the fromPath.
       */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.inheritParams")
+    @js.native
     def inheritParams(
       fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    @JSImport("@uirouter/core/lib/path", "PathUtils.inheritParams")
+    @js.native
     def inheritParams(
       fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
@@ -98,6 +113,8 @@ object pathMod extends js.Object {
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
     
     /** Given a PathNode[], create an TargetState */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.makeTargetState")
+    @js.native
     def makeTargetState(registry: StateRegistry, path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): TargetState = js.native
     
     /**
@@ -115,19 +132,27 @@ object pathMod extends js.Object {
       *
       * @returns an array of PathNodes from the first path which match the nodes in the second path
       */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.matching")
+    @js.native
     def matching(
       pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode]
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
+    @JSImport("@uirouter/core/lib/path", "PathUtils.matching")
+    @js.native
     def matching(
       pathA: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       pathB: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       paramsFn: GetParamsFn
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
     
+    @JSImport("@uirouter/core/lib/path", "PathUtils.nonDynamicParams")
+    @js.native
     def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[Param] = js.native
     
     /** Gets the raw parameter values from a path */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.paramValues")
+    @js.native
     def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = js.native
     
     /**
@@ -140,6 +165,8 @@ object pathMod extends js.Object {
       * @param predicate a [[Predicate]] fn that matches [[PathNode]]s
       * @returns a subpath up to the matching node, or undefined if no match is found
       */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.subPath")
+    @js.native
     def subPath(
       path: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       predicate: Predicate[typings.uirouterCore.pathNodeMod.PathNode]
@@ -148,6 +175,8 @@ object pathMod extends js.Object {
     /**
       * Computes the tree changes (entering, exiting) between a fromPath and toPath.
       */
+    @JSImport("@uirouter/core/lib/path", "PathUtils.treeChanges")
+    @js.native
     def treeChanges(
       fromPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],
       toPath: js.Array[typings.uirouterCore.pathNodeMod.PathNode],

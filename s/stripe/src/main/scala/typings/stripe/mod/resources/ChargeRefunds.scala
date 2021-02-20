@@ -6,17 +6,20 @@ import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.refunds.IRefund
 import typings.stripe.mod.refunds.IRefundCreationOptions
 import typings.stripe.mod.refunds.IRefundListOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.ChargeRefunds")
 @js.native
-class ChargeRefunds () extends StripeResource {
+class ChargeRefunds protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   /**
     * When you create a new refund, you must specify a charge to create it on.

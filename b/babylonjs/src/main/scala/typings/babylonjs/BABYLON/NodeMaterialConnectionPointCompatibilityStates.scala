@@ -1,14 +1,15 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeMaterialConnectionPointCompatibilityStates extends js.Object
+sealed trait NodeMaterialConnectionPointCompatibilityStates extends StObject
 @JSGlobal("BABYLON.NodeMaterialConnectionPointCompatibilityStates")
 @js.native
-object NodeMaterialConnectionPointCompatibilityStates extends js.Object {
+object NodeMaterialConnectionPointCompatibilityStates extends StObject {
   
   /** Points are compatibles */
   @js.native

@@ -3,12 +3,13 @@ package typings.sparkpost.mod
 import typings.sparkpost.sparkpostStrings.active
 import typings.sparkpost.sparkpostStrings.suspended
 import typings.sparkpost.sparkpostStrings.terminated
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SubaccountInformation extends js.Object {
+trait SubaccountInformation extends StObject {
   
   var compliance_status: String = js.native
   
@@ -33,36 +34,24 @@ object SubaccountInformation {
   }
   
   @scala.inline
-  implicit class SubaccountInformationOps[Self <: SubaccountInformation] (val x: Self) extends AnyVal {
+  implicit class SubaccountInformationMutableBuilder[Self <: SubaccountInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompliance_status(value: String): Self = StObject.set(x, "compliance_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIp_pool(value: String): Self = StObject.set(x, "ip_pool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliance_status(value: String): Self = this.set("compliance_status", value.asInstanceOf[js.Any])
+    def setIp_poolUndefined: Self = StObject.set(x, "ip_pool", js.undefined)
     
     @scala.inline
-    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: active | suspended | terminated): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIp_pool(value: String): Self = this.set("ip_pool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIp_pool: Self = this.set("ip_pool", js.undefined)
+    def setStatus(value: active | suspended | terminated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

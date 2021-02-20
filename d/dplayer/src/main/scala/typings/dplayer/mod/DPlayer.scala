@@ -1,12 +1,13 @@
 package typings.dplayer.mod
 
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DPlayer extends js.Object {
+trait DPlayer extends StObject {
   
   var danmaku: Danmaku = js.native
   
@@ -63,63 +64,51 @@ object DPlayer {
   }
   
   @scala.inline
-  implicit class DPlayerOps[Self <: DPlayer] (val x: Self) extends AnyVal {
+  implicit class DPlayerMutableBuilder[Self <: DPlayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDanmaku(value: Danmaku): Self = StObject.set(x, "danmaku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDanmaku(value: Danmaku): Self = this.set("danmaku", value.asInstanceOf[js.Any])
+    def setFullScreen(value: FullScreen): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestroy(value: () => Unit): Self = this.set("destroy", js.Any.fromFunction0(value))
+    def setNotice(value: (String, Double, Double) => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setOn(value: (DPlayerEvents, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFullScreen(value: FullScreen): Self = this.set("fullScreen", value.asInstanceOf[js.Any])
+    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotice(value: (String, Double, Double) => Unit): Self = this.set("notice", js.Any.fromFunction3(value))
+    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOn(value: (DPlayerEvents, js.Function0[Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPause(value: () => Unit): Self = this.set("pause", js.Any.fromFunction0(value))
+    def setSpeed(value: Double => Unit): Self = StObject.set(x, "speed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPlay(value: () => Unit): Self = this.set("play", js.Any.fromFunction0(value))
+    def setSwitchQuality(value: Double => Unit): Self = StObject.set(x, "switchQuality", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSeek(value: Double => Unit): Self = this.set("seek", js.Any.fromFunction1(value))
+    def setSwitchVideo(value: (DPlayerVideo, DPlayerDanmaku) => Unit): Self = StObject.set(x, "switchVideo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSpeed(value: Double => Unit): Self = this.set("speed", js.Any.fromFunction1(value))
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSwitchQuality(value: Double => Unit): Self = this.set("switchQuality", js.Any.fromFunction1(value))
+    def setVideo(value: HTMLVideoElement): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwitchVideo(value: (DPlayerVideo, DPlayerDanmaku) => Unit): Self = this.set("switchVideo", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setVideo(value: HTMLVideoElement): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVolume(value: (Double, Boolean, Boolean) => Unit): Self = this.set("volume", js.Any.fromFunction3(value))
+    def setVolume(value: (Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "volume", js.Any.fromFunction3(value))
   }
 }

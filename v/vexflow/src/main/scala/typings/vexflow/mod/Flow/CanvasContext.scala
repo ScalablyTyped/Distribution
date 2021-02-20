@@ -1,6 +1,7 @@
 package typings.vexflow.mod.Flow
 
 import typings.std.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +12,23 @@ class CanvasContext protected ()
   extends typings.vexflow.Vex.Flow.CanvasContext {
   def this(context: CanvasRenderingContext2D) = this()
 }
-/* static members */
-@JSImport("vexflow", "Flow.CanvasContext")
-@js.native
-object CanvasContext extends js.Object {
+object CanvasContext {
   
-  var HEIGHT: Double = js.native
+  @JSImport("vexflow", "Flow.CanvasContext")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var WIDTH: Double = js.native
+  /* static member */
+  @JSImport("vexflow", "Flow.CanvasContext.HEIGHT")
+  @js.native
+  def HEIGHT: Double = js.native
+  @scala.inline
+  def HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.CanvasContext.WIDTH")
+  @js.native
+  def WIDTH: Double = js.native
+  @scala.inline
+  def WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WIDTH")(x.asInstanceOf[js.Any])
 }

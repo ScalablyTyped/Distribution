@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.transferProgressMod.TransferProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/indexer", JSImport.Namespace)
-@js.native
-object indexerMod extends js.Object {
+object indexerMod {
   
+  @JSImport("nodegit/indexer", "Indexer")
   @js.native
-  class Indexer () extends js.Object {
+  class Indexer () extends StObject {
     
     def commit(stats: TransferProgress): Double = js.native
     

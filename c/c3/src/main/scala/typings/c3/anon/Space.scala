@@ -1,11 +1,12 @@
 package typings.c3.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Space extends js.Object {
+trait Space extends StObject {
   
   /**
     * Set space between bars in bar charts
@@ -31,36 +32,24 @@ object Space {
   }
   
   @scala.inline
-  implicit class SpaceOps[Self <: Space] (val x: Self) extends AnyVal {
+  implicit class SpaceMutableBuilder[Self <: Space] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSpace(value: Double): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidth(value: Double | Ratio): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace(value: Double): Self = this.set("space", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteSpace: Self = this.set("space", js.undefined)
+    def setZerobased(value: Boolean): Self = StObject.set(x, "zerobased", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double | Ratio): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
-    
-    @scala.inline
-    def setZerobased(value: Boolean): Self = this.set("zerobased", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZerobased: Self = this.set("zerobased", js.undefined)
+    def setZerobasedUndefined: Self = StObject.set(x, "zerobased", js.undefined)
   }
 }

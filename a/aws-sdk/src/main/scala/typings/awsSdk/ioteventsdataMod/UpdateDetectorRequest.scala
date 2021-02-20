@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsdataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDetectorRequest extends js.Object {
+trait UpdateDetectorRequest extends StObject {
   
   /**
     * The name of the detector model that created the detectors (instances).
@@ -36,33 +37,21 @@ object UpdateDetectorRequest {
   }
   
   @scala.inline
-  implicit class UpdateDetectorRequestOps[Self <: UpdateDetectorRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateDetectorRequestMutableBuilder[Self <: UpdateDetectorRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
     
     @scala.inline
-    def setDetectorModelName(value: DetectorModelName): Self = this.set("detectorModelName", value.asInstanceOf[js.Any])
+    def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageId(value: MessageId): Self = this.set("messageId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: DetectorStateDefinition): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyValue(value: KeyValue): Self = this.set("keyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    def setState(value: DetectorStateDefinition): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

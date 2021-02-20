@@ -1,11 +1,12 @@
 package typings.openseadragon.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationTime extends js.Object {
+trait AnimationTime extends StObject {
   
   var animationTime: Double = js.native
   
@@ -24,36 +25,24 @@ object AnimationTime {
   }
   
   @scala.inline
-  implicit class AnimationTimeOps[Self <: AnimationTime] (val x: Self) extends AnyVal {
+  implicit class AnimationTimeMutableBuilder[Self <: AnimationTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationTime(value: Double): Self = StObject.set(x, "animationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExponential(value: Boolean): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
     
     @scala.inline
-    def setAnimationTime(value: Double): Self = this.set("animationTime", value.asInstanceOf[js.Any])
+    def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpringStiffness(value: Double): Self = this.set("springStiffness", value.asInstanceOf[js.Any])
+    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def setExponential(value: Boolean): Self = this.set("exponential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExponential: Self = this.set("exponential", js.undefined)
-    
-    @scala.inline
-    def setInitial(value: Double): Self = this.set("initial", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitial: Self = this.set("initial", js.undefined)
+    def setSpringStiffness(value: Double): Self = StObject.set(x, "springStiffness", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.winrt.Windows.Networking.Sockets
 
 import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStreamSocketInformation extends js.Object {
+trait IStreamSocketInformation extends StObject {
   
   var bandwidthStatistics: BandwidthStatistics = js.native
   
@@ -49,48 +50,36 @@ object IStreamSocketInformation {
   }
   
   @scala.inline
-  implicit class IStreamSocketInformationOps[Self <: IStreamSocketInformation] (val x: Self) extends AnyVal {
+  implicit class IStreamSocketInformationMutableBuilder[Self <: IStreamSocketInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidthStatistics(value: BandwidthStatistics): Self = StObject.set(x, "bandwidthStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalAddress(value: HostName): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalPort(value: String): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidthStatistics(value: BandwidthStatistics): Self = this.set("bandwidthStatistics", value.asInstanceOf[js.Any])
+    def setProtectionLevel(value: SocketProtectionLevel): Self = StObject.set(x, "protectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalAddress(value: HostName): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    def setRemoteAddress(value: HostName): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalPort(value: String): Self = this.set("localPort", value.asInstanceOf[js.Any])
+    def setRemoteHostName(value: HostName): Self = StObject.set(x, "remoteHostName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectionLevel(value: SocketProtectionLevel): Self = this.set("protectionLevel", value.asInstanceOf[js.Any])
+    def setRemotePort(value: String): Self = StObject.set(x, "remotePort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteAddress(value: HostName): Self = this.set("remoteAddress", value.asInstanceOf[js.Any])
+    def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteHostName(value: HostName): Self = this.set("remoteHostName", value.asInstanceOf[js.Any])
+    def setRoundTripTimeStatistics(value: RoundTripTimeStatistics): Self = StObject.set(x, "roundTripTimeStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemotePort(value: String): Self = this.set("remotePort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemoteServiceName(value: String): Self = this.set("remoteServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoundTripTimeStatistics(value: RoundTripTimeStatistics): Self = this.set("roundTripTimeStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionKey(value: IBuffer): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
+    def setSessionKey(value: IBuffer): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
   }
 }

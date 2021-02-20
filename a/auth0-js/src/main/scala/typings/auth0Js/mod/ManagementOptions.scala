@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagementOptions extends js.Object {
+trait ManagementOptions extends StObject {
   
   var audience: js.UndefOr[String] = js.native
   
@@ -32,63 +33,51 @@ object ManagementOptions {
   }
   
   @scala.inline
-  implicit class ManagementOptionsOps[Self <: ManagementOptions] (val x: Self) extends AnyVal {
+  implicit class ManagementOptionsMutableBuilder[Self <: ManagementOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
     @scala.inline
-    def setAudience(value: String): Self = this.set("audience", value.asInstanceOf[js.Any])
+    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudience: Self = this.set("audience", js.undefined)
+    def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientId: Self = this.set("clientId", js.undefined)
+    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSecret(value: String): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteClientSecret: Self = this.set("clientSecret", js.undefined)
+    def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
     
     @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTelemetry(value: Boolean): Self = this.set("telemetry", value.asInstanceOf[js.Any])
+    def setTokenProvider(value: TokenProvider): Self = StObject.set(x, "tokenProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTelemetry: Self = this.set("telemetry", js.undefined)
+    def setTokenProviderUndefined: Self = StObject.set(x, "tokenProvider", js.undefined)
     
     @scala.inline
-    def setToken(value: String): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setTokenProvider(value: TokenProvider): Self = this.set("tokenProvider", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokenProvider: Self = this.set("tokenProvider", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

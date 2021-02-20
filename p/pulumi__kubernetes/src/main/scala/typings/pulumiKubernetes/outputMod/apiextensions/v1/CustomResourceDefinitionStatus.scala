@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.apiextensions.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CustomResourceDefinitionStatus indicates the state of the CustomResourceDefinition
   */
 @js.native
-trait CustomResourceDefinitionStatus extends js.Object {
+trait CustomResourceDefinitionStatus extends StObject {
   
   /**
     * acceptedNames are the names that are actually being used to serve discovery. They may be different than the names in spec.
@@ -38,33 +39,21 @@ object CustomResourceDefinitionStatus {
   }
   
   @scala.inline
-  implicit class CustomResourceDefinitionStatusOps[Self <: CustomResourceDefinitionStatus] (val x: Self) extends AnyVal {
+  implicit class CustomResourceDefinitionStatusMutableBuilder[Self <: CustomResourceDefinitionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptedNames(value: CustomResourceDefinitionNames): Self = StObject.set(x, "acceptedNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditions(value: js.Array[CustomResourceDefinitionCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionsVarargs(value: CustomResourceDefinitionCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setAcceptedNames(value: CustomResourceDefinitionNames): Self = this.set("acceptedNames", value.asInstanceOf[js.Any])
+    def setStoredVersions(value: js.Array[String]): Self = StObject.set(x, "storedVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionsVarargs(value: CustomResourceDefinitionCondition*): Self = this.set("conditions", js.Array(value :_*))
-    
-    @scala.inline
-    def setConditions(value: js.Array[CustomResourceDefinitionCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoredVersionsVarargs(value: String*): Self = this.set("storedVersions", js.Array(value :_*))
-    
-    @scala.inline
-    def setStoredVersions(value: js.Array[String]): Self = this.set("storedVersions", value.asInstanceOf[js.Any])
+    def setStoredVersionsVarargs(value: String*): Self = StObject.set(x, "storedVersions", js.Array(value :_*))
   }
 }

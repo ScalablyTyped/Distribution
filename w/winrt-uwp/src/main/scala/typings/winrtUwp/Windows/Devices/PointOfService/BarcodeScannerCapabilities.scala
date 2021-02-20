@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Devices.PointOfService
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the barcode scanner capabilities. */
 @js.native
-trait BarcodeScannerCapabilities extends js.Object {
+trait BarcodeScannerCapabilities extends StObject {
   
   /** Indicates whether the barcode scanner supports image preview. */
   var isImagePreviewSupported: Boolean = js.native
@@ -38,33 +39,21 @@ object BarcodeScannerCapabilities {
   }
   
   @scala.inline
-  implicit class BarcodeScannerCapabilitiesOps[Self <: BarcodeScannerCapabilities] (val x: Self) extends AnyVal {
+  implicit class BarcodeScannerCapabilitiesMutableBuilder[Self <: BarcodeScannerCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsImagePreviewSupported(value: Boolean): Self = StObject.set(x, "isImagePreviewSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSoftwareTriggerSupported(value: Boolean): Self = StObject.set(x, "isSoftwareTriggerSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsStatisticsReportingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsReportingSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsImagePreviewSupported(value: Boolean): Self = this.set("isImagePreviewSupported", value.asInstanceOf[js.Any])
+    def setIsStatisticsUpdatingSupported(value: Boolean): Self = StObject.set(x, "isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSoftwareTriggerSupported(value: Boolean): Self = this.set("isSoftwareTriggerSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsStatisticsReportingSupported(value: Boolean): Self = this.set("isStatisticsReportingSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsStatisticsUpdatingSupported(value: Boolean): Self = this.set("isStatisticsUpdatingSupported", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = this.set("powerReportingType", value.asInstanceOf[js.Any])
+    def setPowerReportingType(value: UnifiedPosPowerReportingType): Self = StObject.set(x, "powerReportingType", value.asInstanceOf[js.Any])
   }
 }

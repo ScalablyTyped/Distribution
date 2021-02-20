@@ -1,13 +1,12 @@
 package typings.macosVersion
 
 import typings.macosVersion.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("macos-version", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	@returns The macOS version or `undefined` if the platform is not macOS.
@@ -18,7 +17,27 @@ object mod extends js.Object {
   	//=> '10.12.3'
   	```
   	*/
+  @JSImport("macos-version", JSImport.Namespace)
+  @js.native
   def apply(): js.UndefOr[String] = js.native
+  
+  @JSImport("macos-version", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+  	@returns The macOS version or `undefined` if the platform is not macOS.
+  	@example
+  	```
+  	import macosVersion = require('macos-version');
+  	macosVersion();
+  	//=> '10.12.3'
+  	```
+  	*/
+  // TODO: remove this in the next major version
+  @JSImport("macos-version", "default")
+  @js.native
+  def default(): js.UndefOr[String] = js.native
   
   /**
   	Throws an error if the specified [semver range](https://github.com/npm/node-semver#ranges) does not match the macOS version.
@@ -29,6 +48,8 @@ object mod extends js.Object {
   	//=> [Error: Requires macOS >=10.12.5]
   	```
   	*/
+  @JSImport("macos-version", "assert")
+  @js.native
   def assert(semverRange: String): Unit = js.native
   
   /**
@@ -41,6 +62,8 @@ object mod extends js.Object {
   	//=> [Error: Requires macOS 10.12.5 or later]
   	```
   	*/
+  @JSImport("macos-version", "assertGreaterThanOrEqualTo")
+  @js.native
   def assertGreaterThanOrEqualTo(version: String): Unit = js.native
   
   /**
@@ -52,22 +75,17 @@ object mod extends js.Object {
   	//=> [Error: Requires macOS]
   	```
   	*/
+  @JSImport("macos-version", "assertMacOS")
+  @js.native
   def assertMacOS(): Unit = js.native
   
-  /**
-  	@returns The macOS version or `undefined` if the platform is not macOS.
-  	@example
-  	```
-  	import macosVersion = require('macos-version');
-  	macosVersion();
-  	//=> '10.12.3'
-  	```
-  	*/
   // TODO: remove this in the next major version
-  def default(): js.UndefOr[String] = js.native
-  // TODO: remove this in the next major version
-  @JSName("default")
-  var default_Original: Call = js.native
+  @JSImport("macos-version", "default")
+  @js.native
+  def default_Fmod: Call = js.native
+  
+  @scala.inline
+  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	@returns Whether the specified [semver range](https://github.com/npm/node-semver#ranges) matches the macOS version.
@@ -78,6 +96,8 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
+  @JSImport("macos-version", "is")
+  @js.native
   def is(semverRange: String): Boolean = js.native
   
   /**
@@ -89,6 +109,8 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
+  @JSImport("macos-version", "isGreaterThanOrEqualTo")
+  @js.native
   def isGreaterThanOrEqualTo(version: String): Boolean = js.native
   
   /**
@@ -101,5 +123,7 @@ object mod extends js.Object {
   	}
   	```
   	*/
+  @JSImport("macos-version", "isMacOS")
+  @js.native
   val isMacOS: Boolean = js.native
 }

@@ -1,12 +1,13 @@
 package typings.uirouterCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "RejectType")
 @js.native
-object RejectType extends js.Object {
+object RejectType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.uirouterCore.rejectFactoryMod.RejectType with Double] = js.native

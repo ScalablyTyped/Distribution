@@ -1,11 +1,12 @@
 package typings.awsSdk.mediatailorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bumper extends js.Object {
+trait Bumper extends StObject {
   
   /**
     * The URL for the end bumper asset. 
@@ -26,30 +27,18 @@ object Bumper {
   }
   
   @scala.inline
-  implicit class BumperOps[Self <: Bumper] (val x: Self) extends AnyVal {
+  implicit class BumperMutableBuilder[Self <: Bumper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndUrl(value: string): Self = StObject.set(x, "EndUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndUrlUndefined: Self = StObject.set(x, "EndUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartUrl(value: string): Self = StObject.set(x, "StartUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndUrl(value: string): Self = this.set("EndUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndUrl: Self = this.set("EndUrl", js.undefined)
-    
-    @scala.inline
-    def setStartUrl(value: string): Self = this.set("StartUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartUrl: Self = this.set("StartUrl", js.undefined)
+    def setStartUrlUndefined: Self = StObject.set(x, "StartUrl", js.undefined)
   }
 }

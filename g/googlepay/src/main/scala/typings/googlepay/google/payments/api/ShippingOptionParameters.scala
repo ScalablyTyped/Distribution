@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * nothing to show at initial request time.
   */
 @js.native
-trait ShippingOptionParameters extends js.Object {
+trait ShippingOptionParameters extends StObject {
   
   /**
     * Identifier to the default selected shipping option. If this field is
@@ -39,30 +40,18 @@ object ShippingOptionParameters {
   }
   
   @scala.inline
-  implicit class ShippingOptionParametersOps[Self <: ShippingOptionParameters] (val x: Self) extends AnyVal {
+  implicit class ShippingOptionParametersMutableBuilder[Self <: ShippingOptionParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultSelectedOptionId(value: String): Self = StObject.set(x, "defaultSelectedOptionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultSelectedOptionIdUndefined: Self = StObject.set(x, "defaultSelectedOptionId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShippingOptions(value: js.Array[SelectionOption]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingOptionsVarargs(value: SelectionOption*): Self = this.set("shippingOptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setShippingOptions(value: js.Array[SelectionOption]): Self = this.set("shippingOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDefaultSelectedOptionId(value: String): Self = this.set("defaultSelectedOptionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultSelectedOptionId: Self = this.set("defaultSelectedOptionId", js.undefined)
+    def setShippingOptionsVarargs(value: SelectionOption*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
   }
 }

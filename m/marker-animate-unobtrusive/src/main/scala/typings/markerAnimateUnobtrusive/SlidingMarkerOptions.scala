@@ -5,6 +5,7 @@ import typings.googlemaps.google.maps.Marker
 import typings.googlemaps.google.maps.MarkerOptions
 import typings.markerAnimateUnobtrusive.jQuery.easing.IEasingType
 import typings.markerAnimateUnobtrusive.markerAnimateUnobtrusiveStrings.linear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,38 +36,26 @@ object SlidingMarkerOptions {
   }
   
   @scala.inline
-  implicit class SlidingMarkerOptionsOps[Self <: SlidingMarkerOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class SlidingMarkerOptionsMutableBuilder[Self <: SlidingMarkerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAnimateFunctionAdapter(
       value: (/* marker */ Marker, /* destPoint */ LatLng, /* easing */ linear | IEasingType, /* duration */ Double) => Unit
-    ): Self = this.set("animateFunctionAdapter", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "animateFunctionAdapter", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteAnimateFunctionAdapter: Self = this.set("animateFunctionAdapter", js.undefined)
+    def setAnimateFunctionAdapterUndefined: Self = StObject.set(x, "animateFunctionAdapter", js.undefined)
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def setEasing(value: IEasingType): Self = this.set("easing", value.asInstanceOf[js.Any])
+    def setEasing(value: IEasingType): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEasing: Self = this.set("easing", js.undefined)
+    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
   }
 }

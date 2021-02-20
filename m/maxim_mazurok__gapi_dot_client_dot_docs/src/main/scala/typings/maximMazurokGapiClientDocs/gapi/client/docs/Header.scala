@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Header extends js.Object {
+trait Header extends StObject {
   
   /** The contents of the header. The indexes for a header's content begin at zero. */
   var content: js.UndefOr[js.Array[StructuralElement]] = js.native
@@ -22,33 +23,21 @@ object Header {
   }
   
   @scala.inline
-  implicit class HeaderOps[Self <: Header] (val x: Self) extends AnyVal {
+  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
     @scala.inline
-    def setContentVarargs(value: StructuralElement*): Self = this.set("content", js.Array(value :_*))
+    def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: js.Array[StructuralElement]): Self = this.set("content", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
-    
-    @scala.inline
-    def setHeaderId(value: String): Self = this.set("headerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaderId: Self = this.set("headerId", js.undefined)
+    def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
   }
 }

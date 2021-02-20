@@ -1,11 +1,12 @@
 package typings.awsSdk.storagegatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeBandwidthRateLimitScheduleOutput extends js.Object {
+trait DescribeBandwidthRateLimitScheduleOutput extends StObject {
   
   /**
     *  An array that contains the bandwidth rate limit intervals for a tape or volume gateway. 
@@ -23,33 +24,21 @@ object DescribeBandwidthRateLimitScheduleOutput {
   }
   
   @scala.inline
-  implicit class DescribeBandwidthRateLimitScheduleOutputOps[Self <: DescribeBandwidthRateLimitScheduleOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeBandwidthRateLimitScheduleOutputMutableBuilder[Self <: DescribeBandwidthRateLimitScheduleOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidthRateLimitIntervals(value: BandwidthRateLimitIntervals): Self = StObject.set(x, "BandwidthRateLimitIntervals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandwidthRateLimitIntervalsUndefined: Self = StObject.set(x, "BandwidthRateLimitIntervals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBandwidthRateLimitIntervalsVarargs(value: BandwidthRateLimitInterval*): Self = StObject.set(x, "BandwidthRateLimitIntervals", js.Array(value :_*))
     
     @scala.inline
-    def setBandwidthRateLimitIntervalsVarargs(value: BandwidthRateLimitInterval*): Self = this.set("BandwidthRateLimitIntervals", js.Array(value :_*))
+    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidthRateLimitIntervals(value: BandwidthRateLimitIntervals): Self = this.set("BandwidthRateLimitIntervals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBandwidthRateLimitIntervals: Self = this.set("BandwidthRateLimitIntervals", js.undefined)
-    
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

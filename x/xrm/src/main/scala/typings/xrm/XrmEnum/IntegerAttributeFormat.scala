@@ -2,6 +2,7 @@ package typings.xrm.XrmEnum
 
 import typings.xrm.xrmStrings.duration
 import typings.xrm.xrmStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.xrm.xrmStrings.duration
   - typings.xrm.xrmStrings.none
 */
-trait IntegerAttributeFormat extends js.Object
+trait IntegerAttributeFormat extends StObject
 object IntegerAttributeFormat {
   
   @scala.inline

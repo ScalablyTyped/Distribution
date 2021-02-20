@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1SpeechTranscriptionConfig extends js.Object {
+trait GoogleCloudVideointelligenceV1SpeechTranscriptionConfig extends StObject {
   
   /** Optional. For file formats, such as MXF or MKV, supporting multiple audio tracks, specify up to two tracks. Default: track 0. */
   var audioTracks: js.UndefOr[js.Array[Double]] = js.native
@@ -63,78 +64,66 @@ object GoogleCloudVideointelligenceV1SpeechTranscriptionConfig {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1SpeechTranscriptionConfigOps[Self <: GoogleCloudVideointelligenceV1SpeechTranscriptionConfig] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1SpeechTranscriptionConfigMutableBuilder[Self <: GoogleCloudVideointelligenceV1SpeechTranscriptionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioTracks(value: js.Array[Double]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioTracksUndefined: Self = StObject.set(x, "audioTracks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioTracksVarargs(value: Double*): Self = StObject.set(x, "audioTracks", js.Array(value :_*))
     
     @scala.inline
-    def setAudioTracksVarargs(value: Double*): Self = this.set("audioTracks", js.Array(value :_*))
+    def setDiarizationSpeakerCount(value: Double): Self = StObject.set(x, "diarizationSpeakerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioTracks(value: js.Array[Double]): Self = this.set("audioTracks", value.asInstanceOf[js.Any])
+    def setDiarizationSpeakerCountUndefined: Self = StObject.set(x, "diarizationSpeakerCount", js.undefined)
     
     @scala.inline
-    def deleteAudioTracks: Self = this.set("audioTracks", js.undefined)
+    def setEnableAutomaticPunctuation(value: Boolean): Self = StObject.set(x, "enableAutomaticPunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiarizationSpeakerCount(value: Double): Self = this.set("diarizationSpeakerCount", value.asInstanceOf[js.Any])
+    def setEnableAutomaticPunctuationUndefined: Self = StObject.set(x, "enableAutomaticPunctuation", js.undefined)
     
     @scala.inline
-    def deleteDiarizationSpeakerCount: Self = this.set("diarizationSpeakerCount", js.undefined)
+    def setEnableSpeakerDiarization(value: Boolean): Self = StObject.set(x, "enableSpeakerDiarization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableAutomaticPunctuation(value: Boolean): Self = this.set("enableAutomaticPunctuation", value.asInstanceOf[js.Any])
+    def setEnableSpeakerDiarizationUndefined: Self = StObject.set(x, "enableSpeakerDiarization", js.undefined)
     
     @scala.inline
-    def deleteEnableAutomaticPunctuation: Self = this.set("enableAutomaticPunctuation", js.undefined)
+    def setEnableWordConfidence(value: Boolean): Self = StObject.set(x, "enableWordConfidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSpeakerDiarization(value: Boolean): Self = this.set("enableSpeakerDiarization", value.asInstanceOf[js.Any])
+    def setEnableWordConfidenceUndefined: Self = StObject.set(x, "enableWordConfidence", js.undefined)
     
     @scala.inline
-    def deleteEnableSpeakerDiarization: Self = this.set("enableSpeakerDiarization", js.undefined)
+    def setFilterProfanity(value: Boolean): Self = StObject.set(x, "filterProfanity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableWordConfidence(value: Boolean): Self = this.set("enableWordConfidence", value.asInstanceOf[js.Any])
+    def setFilterProfanityUndefined: Self = StObject.set(x, "filterProfanity", js.undefined)
     
     @scala.inline
-    def deleteEnableWordConfidence: Self = this.set("enableWordConfidence", js.undefined)
+    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterProfanity(value: Boolean): Self = this.set("filterProfanity", value.asInstanceOf[js.Any])
+    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     @scala.inline
-    def deleteFilterProfanity: Self = this.set("filterProfanity", js.undefined)
+    def setMaxAlternatives(value: Double): Self = StObject.set(x, "maxAlternatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    def setMaxAlternativesUndefined: Self = StObject.set(x, "maxAlternatives", js.undefined)
     
     @scala.inline
-    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    def setSpeechContexts(value: js.Array[GoogleCloudVideointelligenceV1SpeechContext]): Self = StObject.set(x, "speechContexts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAlternatives(value: Double): Self = this.set("maxAlternatives", value.asInstanceOf[js.Any])
+    def setSpeechContextsUndefined: Self = StObject.set(x, "speechContexts", js.undefined)
     
     @scala.inline
-    def deleteMaxAlternatives: Self = this.set("maxAlternatives", js.undefined)
-    
-    @scala.inline
-    def setSpeechContextsVarargs(value: GoogleCloudVideointelligenceV1SpeechContext*): Self = this.set("speechContexts", js.Array(value :_*))
-    
-    @scala.inline
-    def setSpeechContexts(value: js.Array[GoogleCloudVideointelligenceV1SpeechContext]): Self = this.set("speechContexts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpeechContexts: Self = this.set("speechContexts", js.undefined)
+    def setSpeechContextsVarargs(value: GoogleCloudVideointelligenceV1SpeechContext*): Self = StObject.set(x, "speechContexts", js.Array(value :_*))
   }
 }

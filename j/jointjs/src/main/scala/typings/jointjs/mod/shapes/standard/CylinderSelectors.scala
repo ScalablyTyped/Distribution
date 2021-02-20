@@ -2,12 +2,13 @@ package typings.jointjs.mod.shapes.standard
 
 import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGEllipseAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CylinderSelectors extends js.Object {
+trait CylinderSelectors extends StObject {
   
   var body: js.UndefOr[CylinderBodyAttributes] = js.native
   
@@ -24,36 +25,24 @@ object CylinderSelectors {
   }
   
   @scala.inline
-  implicit class CylinderSelectorsOps[Self <: CylinderSelectors] (val x: Self) extends AnyVal {
+  implicit class CylinderSelectorsMutableBuilder[Self <: CylinderSelectors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: CylinderBodyAttributes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: SVGAttributes): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: CylinderBodyAttributes): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setTop(value: SVGEllipseAttributes): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: SVGAttributes): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setTop(value: SVGEllipseAttributes): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTop: Self = this.set("top", js.undefined)
+    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

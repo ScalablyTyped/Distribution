@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteSubscriptionFilterRequest extends js.Object {
+trait DeleteSubscriptionFilterRequest extends StObject {
   
   /**
     * The name of the subscription filter.
@@ -26,24 +27,12 @@ object DeleteSubscriptionFilterRequest {
   }
   
   @scala.inline
-  implicit class DeleteSubscriptionFilterRequestOps[Self <: DeleteSubscriptionFilterRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteSubscriptionFilterRequestMutableBuilder[Self <: DeleteSubscriptionFilterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFilterName(value: FilterName): Self = this.set("filterName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

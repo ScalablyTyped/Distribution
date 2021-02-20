@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueueUpdateItemsRequest extends js.Object {
+trait QueueUpdateItemsRequest extends StObject {
   
   var customData: js.Object = js.native
   
@@ -20,27 +21,15 @@ object QueueUpdateItemsRequest {
   }
   
   @scala.inline
-  implicit class QueueUpdateItemsRequestOps[Self <: QueueUpdateItemsRequest] (val x: Self) extends AnyVal {
+  implicit class QueueUpdateItemsRequestMutableBuilder[Self <: QueueUpdateItemsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: js.Array[QueueItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCustomData(value: js.Object): Self = this.set("customData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemVarargs(value: QueueItem*): Self = this.set("item", js.Array(value :_*))
-    
-    @scala.inline
-    def setItem(value: js.Array[QueueItem]): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setItemVarargs(value: QueueItem*): Self = StObject.set(x, "item", js.Array(value :_*))
   }
 }

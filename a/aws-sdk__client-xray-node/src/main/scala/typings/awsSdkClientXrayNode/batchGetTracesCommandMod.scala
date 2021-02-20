@@ -7,14 +7,14 @@ import typings.awsSdkClientXrayNode.typesBatchGetTracesOutputMod.BatchGetTracesO
 import typings.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/commands/BatchGetTracesCommand", JSImport.Namespace)
-@js.native
-object batchGetTracesCommandMod extends js.Object {
+object batchGetTracesCommandMod {
   
+  @JSImport("@aws-sdk/client-xray-node/commands/BatchGetTracesCommand", "BatchGetTracesCommand")
   @js.native
   class BatchGetTracesCommand protected () extends Command[
           InputTypesUnion, 

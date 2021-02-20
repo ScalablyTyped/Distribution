@@ -1,12 +1,13 @@
 package typings.libp2pGossipsub.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/score/peer-score-params.TopicScoreParams> */
 @js.native
-trait PartialTopicScoreParams extends js.Object {
+trait PartialTopicScoreParams extends StObject {
   
   var firstMessageDeliveriesCap: js.UndefOr[Double] = js.native
   
@@ -51,120 +52,108 @@ object PartialTopicScoreParams {
   }
   
   @scala.inline
-  implicit class PartialTopicScoreParamsOps[Self <: PartialTopicScoreParams] (val x: Self) extends AnyVal {
+  implicit class PartialTopicScoreParamsMutableBuilder[Self <: PartialTopicScoreParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstMessageDeliveriesCap(value: Double): Self = StObject.set(x, "firstMessageDeliveriesCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirstMessageDeliveriesCapUndefined: Self = StObject.set(x, "firstMessageDeliveriesCap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "firstMessageDeliveriesDecay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMessageDeliveriesCap(value: Double): Self = this.set("firstMessageDeliveriesCap", value.asInstanceOf[js.Any])
+    def setFirstMessageDeliveriesDecayUndefined: Self = StObject.set(x, "firstMessageDeliveriesDecay", js.undefined)
     
     @scala.inline
-    def deleteFirstMessageDeliveriesCap: Self = this.set("firstMessageDeliveriesCap", js.undefined)
+    def setFirstMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "firstMessageDeliveriesWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMessageDeliveriesDecay(value: Double): Self = this.set("firstMessageDeliveriesDecay", value.asInstanceOf[js.Any])
+    def setFirstMessageDeliveriesWeightUndefined: Self = StObject.set(x, "firstMessageDeliveriesWeight", js.undefined)
     
     @scala.inline
-    def deleteFirstMessageDeliveriesDecay: Self = this.set("firstMessageDeliveriesDecay", js.undefined)
+    def setInvalidMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "invalidMessageDeliveriesDecay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstMessageDeliveriesWeight(value: Double): Self = this.set("firstMessageDeliveriesWeight", value.asInstanceOf[js.Any])
+    def setInvalidMessageDeliveriesDecayUndefined: Self = StObject.set(x, "invalidMessageDeliveriesDecay", js.undefined)
     
     @scala.inline
-    def deleteFirstMessageDeliveriesWeight: Self = this.set("firstMessageDeliveriesWeight", js.undefined)
+    def setInvalidMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "invalidMessageDeliveriesWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidMessageDeliveriesDecay(value: Double): Self = this.set("invalidMessageDeliveriesDecay", value.asInstanceOf[js.Any])
+    def setInvalidMessageDeliveriesWeightUndefined: Self = StObject.set(x, "invalidMessageDeliveriesWeight", js.undefined)
     
     @scala.inline
-    def deleteInvalidMessageDeliveriesDecay: Self = this.set("invalidMessageDeliveriesDecay", js.undefined)
+    def setMeshFailurePenaltyDecay(value: Double): Self = StObject.set(x, "meshFailurePenaltyDecay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidMessageDeliveriesWeight(value: Double): Self = this.set("invalidMessageDeliveriesWeight", value.asInstanceOf[js.Any])
+    def setMeshFailurePenaltyDecayUndefined: Self = StObject.set(x, "meshFailurePenaltyDecay", js.undefined)
     
     @scala.inline
-    def deleteInvalidMessageDeliveriesWeight: Self = this.set("invalidMessageDeliveriesWeight", js.undefined)
+    def setMeshFailurePenaltyWeight(value: Double): Self = StObject.set(x, "meshFailurePenaltyWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshFailurePenaltyDecay(value: Double): Self = this.set("meshFailurePenaltyDecay", value.asInstanceOf[js.Any])
+    def setMeshFailurePenaltyWeightUndefined: Self = StObject.set(x, "meshFailurePenaltyWeight", js.undefined)
     
     @scala.inline
-    def deleteMeshFailurePenaltyDecay: Self = this.set("meshFailurePenaltyDecay", js.undefined)
+    def setMeshMessageDeliveriesActivation(value: Double): Self = StObject.set(x, "meshMessageDeliveriesActivation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshFailurePenaltyWeight(value: Double): Self = this.set("meshFailurePenaltyWeight", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesActivationUndefined: Self = StObject.set(x, "meshMessageDeliveriesActivation", js.undefined)
     
     @scala.inline
-    def deleteMeshFailurePenaltyWeight: Self = this.set("meshFailurePenaltyWeight", js.undefined)
+    def setMeshMessageDeliveriesCap(value: Double): Self = StObject.set(x, "meshMessageDeliveriesCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesActivation(value: Double): Self = this.set("meshMessageDeliveriesActivation", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesCapUndefined: Self = StObject.set(x, "meshMessageDeliveriesCap", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveriesActivation: Self = this.set("meshMessageDeliveriesActivation", js.undefined)
+    def setMeshMessageDeliveriesDecay(value: Double): Self = StObject.set(x, "meshMessageDeliveriesDecay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesCap(value: Double): Self = this.set("meshMessageDeliveriesCap", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesDecayUndefined: Self = StObject.set(x, "meshMessageDeliveriesDecay", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveriesCap: Self = this.set("meshMessageDeliveriesCap", js.undefined)
+    def setMeshMessageDeliveriesThreshold(value: Double): Self = StObject.set(x, "meshMessageDeliveriesThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesDecay(value: Double): Self = this.set("meshMessageDeliveriesDecay", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesThresholdUndefined: Self = StObject.set(x, "meshMessageDeliveriesThreshold", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveriesDecay: Self = this.set("meshMessageDeliveriesDecay", js.undefined)
+    def setMeshMessageDeliveriesWeight(value: Double): Self = StObject.set(x, "meshMessageDeliveriesWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesThreshold(value: Double): Self = this.set("meshMessageDeliveriesThreshold", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesWeightUndefined: Self = StObject.set(x, "meshMessageDeliveriesWeight", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveriesThreshold: Self = this.set("meshMessageDeliveriesThreshold", js.undefined)
+    def setMeshMessageDeliveriesWindow(value: Double): Self = StObject.set(x, "meshMessageDeliveriesWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesWeight(value: Double): Self = this.set("meshMessageDeliveriesWeight", value.asInstanceOf[js.Any])
+    def setMeshMessageDeliveriesWindowUndefined: Self = StObject.set(x, "meshMessageDeliveriesWindow", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveriesWeight: Self = this.set("meshMessageDeliveriesWeight", js.undefined)
+    def setTimeInMeshCap(value: Double): Self = StObject.set(x, "timeInMeshCap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeshMessageDeliveriesWindow(value: Double): Self = this.set("meshMessageDeliveriesWindow", value.asInstanceOf[js.Any])
+    def setTimeInMeshCapUndefined: Self = StObject.set(x, "timeInMeshCap", js.undefined)
     
     @scala.inline
-    def deleteMeshMessageDeliveriesWindow: Self = this.set("meshMessageDeliveriesWindow", js.undefined)
+    def setTimeInMeshQuantum(value: Double): Self = StObject.set(x, "timeInMeshQuantum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeInMeshCap(value: Double): Self = this.set("timeInMeshCap", value.asInstanceOf[js.Any])
+    def setTimeInMeshQuantumUndefined: Self = StObject.set(x, "timeInMeshQuantum", js.undefined)
     
     @scala.inline
-    def deleteTimeInMeshCap: Self = this.set("timeInMeshCap", js.undefined)
+    def setTimeInMeshWeight(value: Double): Self = StObject.set(x, "timeInMeshWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeInMeshQuantum(value: Double): Self = this.set("timeInMeshQuantum", value.asInstanceOf[js.Any])
+    def setTimeInMeshWeightUndefined: Self = StObject.set(x, "timeInMeshWeight", js.undefined)
     
     @scala.inline
-    def deleteTimeInMeshQuantum: Self = this.set("timeInMeshQuantum", js.undefined)
+    def setTopicWeight(value: Double): Self = StObject.set(x, "topicWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeInMeshWeight(value: Double): Self = this.set("timeInMeshWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeInMeshWeight: Self = this.set("timeInMeshWeight", js.undefined)
-    
-    @scala.inline
-    def setTopicWeight(value: Double): Self = this.set("topicWeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopicWeight: Self = this.set("topicWeight", js.undefined)
+    def setTopicWeightUndefined: Self = StObject.set(x, "topicWeight", js.undefined)
   }
 }

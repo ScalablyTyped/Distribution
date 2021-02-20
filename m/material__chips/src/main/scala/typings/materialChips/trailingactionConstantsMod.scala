@@ -1,62 +1,74 @@
 package typings.materialChips
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/chips/trailingaction/constants", JSImport.Namespace)
-@js.native
-object trailingactionConstantsMod extends js.Object {
+object trailingactionConstantsMod {
   
   @js.native
-  sealed trait InteractionTrigger extends js.Object
+  sealed trait InteractionTrigger extends StObject
+  @JSImport("@material/chips/trailingaction/constants", "InteractionTrigger")
   @js.native
-  object InteractionTrigger extends js.Object {
+  object InteractionTrigger extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[InteractionTrigger with Double] = js.native
     
     @js.native
     sealed trait BACKSPACE_KEY extends InteractionTrigger
-    /* 2 */ @js.native
-    object BACKSPACE_KEY extends TopLevel[BACKSPACE_KEY with Double]
+    /* 2 */ val BACKSPACE_KEY: typings.materialChips.trailingactionConstantsMod.InteractionTrigger.BACKSPACE_KEY with Double = js.native
     
     @js.native
     sealed trait CLICK extends InteractionTrigger
-    /* 1 */ @js.native
-    object CLICK extends TopLevel[CLICK with Double]
+    /* 1 */ val CLICK: typings.materialChips.trailingactionConstantsMod.InteractionTrigger.CLICK with Double = js.native
     
     @js.native
     sealed trait DELETE_KEY extends InteractionTrigger
-    /* 3 */ @js.native
-    object DELETE_KEY extends TopLevel[DELETE_KEY with Double]
+    /* 3 */ val DELETE_KEY: typings.materialChips.trailingactionConstantsMod.InteractionTrigger.DELETE_KEY with Double = js.native
     
     @js.native
     sealed trait ENTER_KEY extends InteractionTrigger
-    /* 5 */ @js.native
-    object ENTER_KEY extends TopLevel[ENTER_KEY with Double]
+    /* 5 */ val ENTER_KEY: typings.materialChips.trailingactionConstantsMod.InteractionTrigger.ENTER_KEY with Double = js.native
     
     @js.native
     sealed trait SPACEBAR_KEY extends InteractionTrigger
-    /* 4 */ @js.native
-    object SPACEBAR_KEY extends TopLevel[SPACEBAR_KEY with Double]
+    /* 4 */ val SPACEBAR_KEY: typings.materialChips.trailingactionConstantsMod.InteractionTrigger.SPACEBAR_KEY with Double = js.native
     
     @js.native
     sealed trait UNSPECIFIED extends InteractionTrigger
-    /* 0 */ @js.native
-    object UNSPECIFIED extends TopLevel[UNSPECIFIED with Double]
+    /* 0 */ val UNSPECIFIED: typings.materialChips.trailingactionConstantsMod.InteractionTrigger.UNSPECIFIED with Double = js.native
   }
   
-  @js.native
-  object strings extends js.Object {
+  object strings {
     
-    var ARIA_HIDDEN: String = js.native
+    @JSImport("@material/chips/trailingaction/constants", "strings")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var INTERACTION_EVENT: String = js.native
+    @JSImport("@material/chips/trailingaction/constants", "strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    @scala.inline
+    def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
     
-    var NAVIGATION_EVENT: String = js.native
+    @JSImport("@material/chips/trailingaction/constants", "strings.INTERACTION_EVENT")
+    @js.native
+    def INTERACTION_EVENT: String = js.native
+    @scala.inline
+    def INTERACTION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERACTION_EVENT")(x.asInstanceOf[js.Any])
     
-    var TAB_INDEX: String = js.native
+    @JSImport("@material/chips/trailingaction/constants", "strings.NAVIGATION_EVENT")
+    @js.native
+    def NAVIGATION_EVENT: String = js.native
+    @scala.inline
+    def NAVIGATION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATION_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/chips/trailingaction/constants", "strings.TAB_INDEX")
+    @js.native
+    def TAB_INDEX: String = js.native
+    @scala.inline
+    def TAB_INDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_INDEX")(x.asInstanceOf[js.Any])
   }
 }

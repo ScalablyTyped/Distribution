@@ -1,11 +1,12 @@
 package typings.nextServer.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AmpFirst extends js.Object {
+trait AmpFirst extends StObject {
   
   var ampFirst: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object AmpFirst {
   }
   
   @scala.inline
-  implicit class AmpFirstOps[Self <: AmpFirst] (val x: Self) extends AnyVal {
+  implicit class AmpFirstMutableBuilder[Self <: AmpFirst] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmpFirst(value: Boolean): Self = StObject.set(x, "ampFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmpFirstUndefined: Self = StObject.set(x, "ampFirst", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasQuery(value: Boolean): Self = StObject.set(x, "hasQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmpFirst(value: Boolean): Self = this.set("ampFirst", value.asInstanceOf[js.Any])
+    def setHasQueryUndefined: Self = StObject.set(x, "hasQuery", js.undefined)
     
     @scala.inline
-    def deleteAmpFirst: Self = this.set("ampFirst", js.undefined)
+    def setHybrid(value: Boolean): Self = StObject.set(x, "hybrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasQuery(value: Boolean): Self = this.set("hasQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHasQuery: Self = this.set("hasQuery", js.undefined)
-    
-    @scala.inline
-    def setHybrid(value: Boolean): Self = this.set("hybrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHybrid: Self = this.set("hybrid", js.undefined)
+    def setHybridUndefined: Self = StObject.set(x, "hybrid", js.undefined)
   }
 }

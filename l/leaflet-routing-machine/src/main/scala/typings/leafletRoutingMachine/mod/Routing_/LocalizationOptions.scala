@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.leafletRoutingMachine.anon.E
 import typings.leafletRoutingMachine.anon.EndPlaceholder
 import typings.leafletRoutingMachine.anon.Hours
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalizationOptions extends js.Object {
+trait LocalizationOptions extends StObject {
   
   var directions: E = js.native
   

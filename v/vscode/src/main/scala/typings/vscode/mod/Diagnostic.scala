@@ -1,13 +1,14 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Diagnostic")
 @js.native
-class Diagnostic protected () extends js.Object {
+class Diagnostic protected () extends StObject {
   /**
     * Creates a new diagnostic object.
     *

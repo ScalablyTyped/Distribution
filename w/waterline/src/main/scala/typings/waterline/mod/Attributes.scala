@@ -1,6 +1,7 @@
 package typings.waterline.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object Attributes {
   }
   
   @scala.inline
-  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToObject(value: () => _): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToJSON(value: () => String): Self = this.set("toJSON", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToJSON: Self = this.set("toJSON", js.undefined)
-    
-    @scala.inline
-    def setToObject(value: () => _): Self = this.set("toObject", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToObject: Self = this.set("toObject", js.undefined)
+    def setToObjectUndefined: Self = StObject.set(x, "toObject", js.undefined)
   }
 }

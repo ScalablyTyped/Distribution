@@ -1,11 +1,12 @@
 package typings.ecmaProposalMathExtensions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Math extends js.Object {
+trait Math extends StObject {
   
   /** This is the number of how many degrees are one radian. */
   val DEG_PER_RAD: Double = js.native
@@ -75,39 +76,27 @@ object Math {
   }
   
   @scala.inline
-  implicit class MathOps[Self <: Math] (val x: Self) extends AnyVal {
+  implicit class MathMutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDEG_PER_RAD(value: Double): Self = StObject.set(x, "DEG_PER_RAD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDegrees(value: Double => Double): Self = StObject.set(x, "degrees", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDEG_PER_RAD(value: Double): Self = this.set("DEG_PER_RAD", value.asInstanceOf[js.Any])
+    def setFscale(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "fscale", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setRAD_PER_DEG(value: Double): Self = this.set("RAD_PER_DEG", value.asInstanceOf[js.Any])
+    def setRAD_PER_DEG(value: Double): Self = StObject.set(x, "RAD_PER_DEG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClamp(value: (Double, Double, Double) => Double): Self = this.set("clamp", js.Any.fromFunction3(value))
+    def setRadians(value: Double => Double): Self = StObject.set(x, "radians", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDegrees(value: Double => Double): Self = this.set("degrees", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setFscale(value: (Double, Double, Double, Double, Double) => Double): Self = this.set("fscale", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setRadians(value: Double => Double): Self = this.set("radians", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setScale(value: (Double, Double, Double, Double, Double) => Double): Self = this.set("scale", js.Any.fromFunction5(value))
+    def setScale(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "scale", js.Any.fromFunction5(value))
   }
 }

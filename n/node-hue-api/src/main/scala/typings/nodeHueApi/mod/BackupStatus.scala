@@ -1,5 +1,6 @@
 package typings.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeHueApi.nodeHueApiStrings.prepare_restore
   - typings.nodeHueApi.nodeHueApiStrings.restoring
 */
-trait BackupStatus extends js.Object
+trait BackupStatus extends StObject
 object BackupStatus {
   
   @scala.inline

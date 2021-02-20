@@ -1,15 +1,15 @@
 package typings.firebaseDatabase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/Path", JSImport.Namespace)
-@js.native
-object pathMod extends js.Object {
+object pathMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/Path", "Path")
   @js.native
-  class Path protected () extends js.Object {
+  class Path protected () extends StObject {
     /**
       * @param {string|Array.<string>} pathOrString Path string to parse,
       *      or another path, or the raw tokens array
@@ -84,21 +84,15 @@ object pathMod extends js.Object {
     def toUrlEncodedString(): String = js.native
   }
   /* static members */
-  @js.native
-  object Path extends js.Object {
-    
-    /**
-      * Singleton to represent an empty path
-      *
-      * @const
-      */
-    def Empty: Path = js.native
+  object Path {
     
     /**
       * @param {!Path} left
       * @param {!Path} right
       * @return {number} -1, 0, 1 if left is less, equal, or greater than the right.
       */
+    @JSImport("@firebase/database/dist/src/core/util/Path", "Path.comparePaths")
+    @js.native
     def comparePaths(left: Path, right: Path): Double = js.native
     
     /**
@@ -106,11 +100,14 @@ object pathMod extends js.Object {
       * @param {!Path} innerPath
       * @return {!Path} The path from outerPath to innerPath
       */
+    @JSImport("@firebase/database/dist/src/core/util/Path", "Path.relativePath")
+    @js.native
     def relativePath(outerPath: Path, innerPath: Path): Path = js.native
   }
   
+  @JSImport("@firebase/database/dist/src/core/util/Path", "ValidationPath")
   @js.native
-  class ValidationPath protected () extends js.Object {
+  class ValidationPath protected () extends StObject {
     /**
       * @param {!Path} path Initial Path.
       * @param {string} errorPrefix_ Prefix for any error messages.
@@ -138,15 +135,5 @@ object pathMod extends js.Object {
       * @return {string}
       */
     def toErrorString(): String = js.native
-  }
-  /* static members */
-  @js.native
-  object ValidationPath extends js.Object {
-    
-    /** @const {number} Maximum key depth. */
-    def MAX_PATH_DEPTH: Double = js.native
-    
-    /** @const {number} Maximum number of (UTF8) bytes in a Firebase path. */
-    def MAX_PATH_LENGTH_BYTES: Double = js.native
   }
 }

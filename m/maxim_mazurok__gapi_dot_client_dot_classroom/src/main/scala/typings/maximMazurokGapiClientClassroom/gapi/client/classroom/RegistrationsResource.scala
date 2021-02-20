@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientClassroom.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientClassroom.anon.RegistrationId
 import typings.maximMazurokGapiClientClassroom.anon.UploadTypeUploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegistrationsResource extends js.Object {
+trait RegistrationsResource extends StObject {
   
   def create(request: OauthtokenPrettyPrint, body: Registration): Request[Registration] = js.native
   /**

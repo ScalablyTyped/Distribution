@@ -1,16 +1,18 @@
 package typings.convertUnits.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Illumunance
 /* Rewritten from type alias, can be one of: 
   - typings.convertUnits.convertUnitsStrings.ppm
   - typings.convertUnits.convertUnitsStrings.ppb
   - typings.convertUnits.convertUnitsStrings.ppt
   - typings.convertUnits.convertUnitsStrings.ppq
 */
-trait uPartsPer extends js.Object
+trait uPartsPer extends StObject
 object uPartsPer {
   
   @scala.inline

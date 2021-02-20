@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.Globalization.NumberFormatting
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Rounds numbers to a specified number of significant digits. */
 @js.native
-trait SignificantDigitsNumberRounder extends js.Object {
+trait SignificantDigitsNumberRounder extends StObject {
   
   /**
     * Rounds a Double number to the specified number of significant digits.
@@ -74,42 +75,30 @@ object SignificantDigitsNumberRounder {
   }
   
   @scala.inline
-  implicit class SignificantDigitsNumberRounderOps[Self <: SignificantDigitsNumberRounder] (val x: Self) extends AnyVal {
+  implicit class SignificantDigitsNumberRounderMutableBuilder[Self <: SignificantDigitsNumberRounder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRoundDouble(value: Double => Double): Self = StObject.set(x, "roundDouble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRoundInt32(value: Double => Double): Self = StObject.set(x, "roundInt32", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoundInt64(value: Double => Double): Self = StObject.set(x, "roundInt64", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundDouble(value: Double => Double): Self = this.set("roundDouble", js.Any.fromFunction1(value))
+    def setRoundSingle(value: Double => Double): Self = StObject.set(x, "roundSingle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundInt32(value: Double => Double): Self = this.set("roundInt32", js.Any.fromFunction1(value))
+    def setRoundUInt32(value: Double => Double): Self = StObject.set(x, "roundUInt32", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundInt64(value: Double => Double): Self = this.set("roundInt64", js.Any.fromFunction1(value))
+    def setRoundUInt64(value: Double => Double): Self = StObject.set(x, "roundUInt64", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRoundSingle(value: Double => Double): Self = this.set("roundSingle", js.Any.fromFunction1(value))
+    def setRoundingAlgorithm(value: RoundingAlgorithm): Self = StObject.set(x, "roundingAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoundUInt32(value: Double => Double): Self = this.set("roundUInt32", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoundUInt64(value: Double => Double): Self = this.set("roundUInt64", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRoundingAlgorithm(value: RoundingAlgorithm): Self = this.set("roundingAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignificantDigits(value: Double): Self = this.set("significantDigits", value.asInstanceOf[js.Any])
+    def setSignificantDigits(value: Double): Self = StObject.set(x, "significantDigits", value.asInstanceOf[js.Any])
   }
 }

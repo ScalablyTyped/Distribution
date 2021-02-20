@@ -2,12 +2,13 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverProtocol.anon.CommitCharactersSupport
 import typings.vscodeLanguageserverProtocol.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompletionClientCapabilities extends js.Object {
+trait CompletionClientCapabilities extends StObject {
   
   /**
     * The client supports the following `CompletionItem` specific
@@ -37,42 +38,30 @@ object CompletionClientCapabilities {
   }
   
   @scala.inline
-  implicit class CompletionClientCapabilitiesOps[Self <: CompletionClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class CompletionClientCapabilitiesMutableBuilder[Self <: CompletionClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionItem(value: CommitCharactersSupport): Self = StObject.set(x, "completionItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionItemKind(value: `0`): Self = StObject.set(x, "completionItemKind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletionItemKindUndefined: Self = StObject.set(x, "completionItemKind", js.undefined)
     
     @scala.inline
-    def setCompletionItem(value: CommitCharactersSupport): Self = this.set("completionItem", value.asInstanceOf[js.Any])
+    def setCompletionItemUndefined: Self = StObject.set(x, "completionItem", js.undefined)
     
     @scala.inline
-    def deleteCompletionItem: Self = this.set("completionItem", js.undefined)
+    def setContextSupport(value: Boolean): Self = StObject.set(x, "contextSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionItemKind(value: `0`): Self = this.set("completionItemKind", value.asInstanceOf[js.Any])
+    def setContextSupportUndefined: Self = StObject.set(x, "contextSupport", js.undefined)
     
     @scala.inline
-    def deleteCompletionItemKind: Self = this.set("completionItemKind", js.undefined)
+    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextSupport(value: Boolean): Self = this.set("contextSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextSupport: Self = this.set("contextSupport", js.undefined)
-    
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = this.set("dynamicRegistration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDynamicRegistration: Self = this.set("dynamicRegistration", js.undefined)
+    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

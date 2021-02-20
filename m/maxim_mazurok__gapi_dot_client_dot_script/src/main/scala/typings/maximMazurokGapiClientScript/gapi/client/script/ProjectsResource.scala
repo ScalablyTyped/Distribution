@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientScript.anon.Resource
 import typings.maximMazurokGapiClientScript.anon.ScriptId
 import typings.maximMazurokGapiClientScript.anon.UploadType
 import typings.maximMazurokGapiClientScript.anon.Uploadprotocol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsResource extends js.Object {
+trait ProjectsResource extends StObject {
   
   /** Creates a new, empty script project with no script files and a base manifest file. */
   def create(request: Resource): Request[Project] = js.native

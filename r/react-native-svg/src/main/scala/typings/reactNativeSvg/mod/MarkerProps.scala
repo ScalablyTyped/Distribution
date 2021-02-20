@@ -1,11 +1,12 @@
 package typings.reactNativeSvg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarkerProps extends js.Object {
+trait MarkerProps extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object MarkerProps {
   }
   
   @scala.inline
-  implicit class MarkerPropsOps[Self <: MarkerProps] (val x: Self) extends AnyVal {
+  implicit class MarkerPropsMutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerHeight(value: NumberProp): Self = StObject.set(x, "markerHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMarkerHeightUndefined: Self = StObject.set(x, "markerHeight", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMarkerUnits(value: MarkerUnits): Self = StObject.set(x, "markerUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerHeight(value: NumberProp): Self = this.set("markerHeight", value.asInstanceOf[js.Any])
+    def setMarkerUnitsUndefined: Self = StObject.set(x, "markerUnits", js.undefined)
     
     @scala.inline
-    def deleteMarkerHeight: Self = this.set("markerHeight", js.undefined)
+    def setMarkerWidth(value: NumberProp): Self = StObject.set(x, "markerWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerUnits(value: MarkerUnits): Self = this.set("markerUnits", value.asInstanceOf[js.Any])
+    def setMarkerWidthUndefined: Self = StObject.set(x, "markerWidth", js.undefined)
     
     @scala.inline
-    def deleteMarkerUnits: Self = this.set("markerUnits", js.undefined)
+    def setOrient(value: Orient | NumberProp): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarkerWidth(value: NumberProp): Self = this.set("markerWidth", value.asInstanceOf[js.Any])
+    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
     @scala.inline
-    def deleteMarkerWidth: Self = this.set("markerWidth", js.undefined)
+    def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrient(value: Orient | NumberProp): Self = this.set("orient", value.asInstanceOf[js.Any])
+    def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteOrient: Self = this.set("orient", js.undefined)
+    def setRefX(value: NumberProp): Self = StObject.set(x, "refX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveAspectRatio(value: String): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    def setRefXUndefined: Self = StObject.set(x, "refX", js.undefined)
     
     @scala.inline
-    def deletePreserveAspectRatio: Self = this.set("preserveAspectRatio", js.undefined)
+    def setRefY(value: NumberProp): Self = StObject.set(x, "refY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefX(value: NumberProp): Self = this.set("refX", value.asInstanceOf[js.Any])
+    def setRefYUndefined: Self = StObject.set(x, "refY", js.undefined)
     
     @scala.inline
-    def deleteRefX: Self = this.set("refX", js.undefined)
+    def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefY(value: NumberProp): Self = this.set("refY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefY: Self = this.set("refY", js.undefined)
-    
-    @scala.inline
-    def setViewBox(value: String): Self = this.set("viewBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewBox: Self = this.set("viewBox", js.undefined)
+    def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
   }
 }

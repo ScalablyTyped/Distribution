@@ -1,14 +1,15 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GalleryElementDimensions extends js.Object
+sealed trait GalleryElementDimensions extends StObject
 @JSGlobal("CUI.GalleryElementDimensions")
 @js.native
-object GalleryElementDimensions extends js.Object {
+object GalleryElementDimensions extends StObject {
   
   @js.native
   sealed trait size128by128 extends GalleryElementDimensions

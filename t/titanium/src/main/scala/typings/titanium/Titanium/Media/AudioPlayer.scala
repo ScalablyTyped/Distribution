@@ -6,6 +6,7 @@ import typings.titanium.titaniumStrings.complete
 import typings.titanium.titaniumStrings.error
 import typings.titanium.titaniumStrings.metadata
 import typings.titanium.titaniumStrings.seek
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

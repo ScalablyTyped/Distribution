@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FpgaImageAttribute extends js.Object {
+trait FpgaImageAttribute extends StObject {
   
   /**
     * The description of the AFI.
@@ -41,54 +42,42 @@ object FpgaImageAttribute {
   }
   
   @scala.inline
-  implicit class FpgaImageAttributeOps[Self <: FpgaImageAttribute] (val x: Self) extends AnyVal {
+  implicit class FpgaImageAttributeMutableBuilder[Self <: FpgaImageAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFpgaImageId(value: String): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setFpgaImageIdUndefined: Self = StObject.set(x, "FpgaImageId", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setLoadPermissions(value: LoadPermissionList): Self = StObject.set(x, "LoadPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFpgaImageId(value: String): Self = this.set("FpgaImageId", value.asInstanceOf[js.Any])
+    def setLoadPermissionsUndefined: Self = StObject.set(x, "LoadPermissions", js.undefined)
     
     @scala.inline
-    def deleteFpgaImageId: Self = this.set("FpgaImageId", js.undefined)
+    def setLoadPermissionsVarargs(value: LoadPermission*): Self = StObject.set(x, "LoadPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setLoadPermissionsVarargs(value: LoadPermission*): Self = this.set("LoadPermissions", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadPermissions(value: LoadPermissionList): Self = this.set("LoadPermissions", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLoadPermissions: Self = this.set("LoadPermissions", js.undefined)
+    def setProductCodes(value: ProductCodeList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
   }
 }

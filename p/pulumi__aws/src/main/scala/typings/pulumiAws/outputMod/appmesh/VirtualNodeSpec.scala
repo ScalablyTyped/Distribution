@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualNodeSpec extends js.Object {
+trait VirtualNodeSpec extends StObject {
   
   /**
     * The defaults for backends.
@@ -41,51 +42,39 @@ object VirtualNodeSpec {
   }
   
   @scala.inline
-  implicit class VirtualNodeSpecOps[Self <: VirtualNodeSpec] (val x: Self) extends AnyVal {
+  implicit class VirtualNodeSpecMutableBuilder[Self <: VirtualNodeSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendDefaults(value: VirtualNodeSpecBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackends(value: js.Array[VirtualNodeSpecBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendDefaults(value: VirtualNodeSpecBackendDefaults): Self = this.set("backendDefaults", value.asInstanceOf[js.Any])
+    def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
     @scala.inline
-    def deleteBackendDefaults: Self = this.set("backendDefaults", js.undefined)
+    def setBackendsVarargs(value: VirtualNodeSpecBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
     
     @scala.inline
-    def setBackendsVarargs(value: VirtualNodeSpecBackend*): Self = this.set("backends", js.Array(value :_*))
+    def setListener(value: VirtualNodeSpecListener): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackends(value: js.Array[VirtualNodeSpecBackend]): Self = this.set("backends", value.asInstanceOf[js.Any])
+    def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
     @scala.inline
-    def deleteBackends: Self = this.set("backends", js.undefined)
+    def setLogging(value: VirtualNodeSpecLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListener(value: VirtualNodeSpecListener): Self = this.set("listener", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteListener: Self = this.set("listener", js.undefined)
+    def setServiceDiscovery(value: VirtualNodeSpecServiceDiscovery): Self = StObject.set(x, "serviceDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: VirtualNodeSpecLogging): Self = this.set("logging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
-    
-    @scala.inline
-    def setServiceDiscovery(value: VirtualNodeSpecServiceDiscovery): Self = this.set("serviceDiscovery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceDiscovery: Self = this.set("serviceDiscovery", js.undefined)
+    def setServiceDiscoveryUndefined: Self = StObject.set(x, "serviceDiscovery", js.undefined)
   }
 }

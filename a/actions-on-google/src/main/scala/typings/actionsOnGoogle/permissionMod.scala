@@ -2,14 +2,14 @@ package typings.actionsOnGoogle
 
 import typings.actionsOnGoogle.permissionPermissionMod.PermissionOptions
 import typings.actionsOnGoogle.updateMod.UpdatePermissionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission", JSImport.Namespace)
-@js.native
-object permissionMod extends js.Object {
+object permissionMod {
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission", "Permission")
   @js.native
   class Permission protected ()
     extends typings.actionsOnGoogle.permissionPermissionMod.Permission {
@@ -20,6 +20,7 @@ object permissionMod extends js.Object {
     def this(options: PermissionOptions) = this()
   }
   
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/permission", "UpdatePermission")
   @js.native
   class UpdatePermission protected ()
     extends typings.actionsOnGoogle.updateMod.UpdatePermission {

@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This is an abstract class, so you should not use this constructor.
   */
-abstract class GraphObject () extends js.Object {
+abstract class GraphObject () extends StObject {
   
   /**Gets or sets the function to execute when the ActionTool is cancelled and this GraphObject's .isActionable is set to true.*/
   def actionCancel(e: InputEvent, obj: GraphObject): Unit = js.native
@@ -53,7 +54,7 @@ abstract class GraphObject () extends js.Object {
   /**Gets or sets the function to execute when the user single-primary-clicks on this object.*/
   def click(e: InputEvent, obj: GraphObject): Unit = js.native
   
-    // undocumented
+  // undocumented
   /* protected */ def cloneProtected(copy: GraphObject): Unit = js.native
   
   /**Gets or sets the column of this GraphObject if it is in a Table Panel.*/
@@ -285,42 +286,87 @@ abstract class GraphObject () extends js.Object {
   /**Gets or sets the desired width of this GraphObject in local coordinates.*/
   var width: Double = js.native
 }
-/* static members */
-@JSImport("go", "GraphObject")
-@js.native
-object GraphObject extends js.Object {
+object GraphObject {
+  
+  @JSImport("go", "GraphObject")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**GraphObjects with this as the value of GraphObject.stretch are stretched depending on the context they are used.*/
-  var Default: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.Default")
+  @js.native
+  def Default: EnumValue = js.native
+  @scala.inline
+  def Default_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are scaled in both directions so as to fit exactly in the given bounds; there is no clipping but the aspect ratio may change, causing the object to appear stretched.*/
-  var Fill: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.Fill")
+  @js.native
+  def Fill: EnumValue = js.native
+  @scala.inline
+  def Fill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fill")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are scaled as much as possible in the x-axis*/
-  var Horizontal: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.Horizontal")
+  @js.native
+  def Horizontal: EnumValue = js.native
+  @scala.inline
+  def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are not automatically scaled to fit in the given bounds; there may be clipping in one or both directions.*/
-  var None: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.None")
+  @js.native
+  def None: EnumValue = js.native
+  @scala.inline
+  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**Pictures with this as the value of Picture.imageStretch are drawn with equal scale in both directions to fit the arranged (actual) bounds.*/
-  var Uniform: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.Uniform")
+  @js.native
+  def Uniform: EnumValue = js.native
   
   /**Pictures with this as the value of Picture.imageStretch are drawn with equal scale in both directions to fit the larger side of the image bounds.*/
-  var UniformToFill: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.UniformToFill")
+  @js.native
+  def UniformToFill: EnumValue = js.native
+  @scala.inline
+  def UniformToFill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniformToFill")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def Uniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uniform")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are scaled as much as possible in the y-axis*/
-  var Vertical: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "GraphObject.Vertical")
+  @js.native
+  def Vertical: EnumValue = js.native
+  @scala.inline
+  def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
   
   /**
     * This static function defines a named function that GraphObject.make can use to build objects.
     * @param {string} name a capitalized name; must not be "" or "None"
     * @param {function(Array<*>):Object} func
     */
+  /* static member */
+  @JSImport("go", "GraphObject.defineBuilder")
+  @js.native
   def defineBuilder(name: String, func: js.Function1[/* args */ js.Array[_], js.Object]): Unit = js.native
   
-    // undocumented
+  // undocumented
+  /* static member */
+  @JSImport("go", "GraphObject.getBuilders")
+  @js.native
   def getBuilders(): Map[String, js.Function1[/* args */ js.Array[_], js.Object]] = js.native
   
+  @JSImport("go", "GraphObject.make")
+  @js.native
   def make(`type`: String, initializers: js.Any*): js.Any = js.native
   /**
     * This static function builds an object given its class and additional arguments providing initial properties or GraphObjects that become Panel elements.
@@ -335,6 +381,9 @@ object GraphObject extends js.Object {
     * is recognized to take that value,
     * or a string that is used as the value of a commonly set property.
     */
+  /* static member */
+  @JSImport("go", "GraphObject.make")
+  @js.native
   def make(`type`: Constructor, initializers: js.Any*): js.Any = js.native
   
   /**
@@ -348,12 +397,21 @@ object GraphObject extends js.Object {
     *        the default predicate checks whether the argument is a string
     * @return {*}
     */
+  /* static member */
+  @JSImport("go", "GraphObject.takeBuilderArgument")
+  @js.native
   def takeBuilderArgument(args: js.Array[_]): js.Any = js.native
+  @JSImport("go", "GraphObject.takeBuilderArgument")
+  @js.native
   def takeBuilderArgument(
     args: js.Array[_],
     defval: js.UndefOr[scala.Nothing],
     pred: js.Function1[/* arg */ js.Any, Boolean]
   ): js.Any = js.native
+  @JSImport("go", "GraphObject.takeBuilderArgument")
+  @js.native
   def takeBuilderArgument(args: js.Array[_], defval: js.Any): js.Any = js.native
+  @JSImport("go", "GraphObject.takeBuilderArgument")
+  @js.native
   def takeBuilderArgument(args: js.Array[_], defval: js.Any, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = js.native
 }

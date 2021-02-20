@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Source extends js.Object {
+trait Source extends StObject {
   
   // configuration for ingestion from  a dynamodb table
   var dynamodb: js.UndefOr[SourceDynamoDb] = js.native
@@ -43,69 +44,57 @@ object Source {
   }
   
   @scala.inline
-  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynamodb(value: SourceDynamoDb): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile_upload(value: SourceFileUpload): Self = StObject.set(x, "file_upload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegration_name(value: String): Self = this.set("integration_name", value.asInstanceOf[js.Any])
+    def setFile_uploadUndefined: Self = StObject.set(x, "file_upload", js.undefined)
     
     @scala.inline
-    def setDynamodb(value: SourceDynamoDb): Self = this.set("dynamodb", value.asInstanceOf[js.Any])
+    def setFormat_params(value: FormatParams): Self = StObject.set(x, "format_params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamodb: Self = this.set("dynamodb", js.undefined)
+    def setFormat_paramsUndefined: Self = StObject.set(x, "format_params", js.undefined)
     
     @scala.inline
-    def setFile_upload(value: SourceFileUpload): Self = this.set("file_upload", value.asInstanceOf[js.Any])
+    def setGcs(value: SourceGcs): Self = StObject.set(x, "gcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFile_upload: Self = this.set("file_upload", js.undefined)
+    def setGcsUndefined: Self = StObject.set(x, "gcs", js.undefined)
     
     @scala.inline
-    def setFormat_params(value: FormatParams): Self = this.set("format_params", value.asInstanceOf[js.Any])
+    def setIntegration_name(value: String): Self = StObject.set(x, "integration_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat_params: Self = this.set("format_params", js.undefined)
+    def setKinesis(value: SourceKinesis): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcs(value: SourceGcs): Self = this.set("gcs", value.asInstanceOf[js.Any])
+    def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
     
     @scala.inline
-    def deleteGcs: Self = this.set("gcs", js.undefined)
+    def setRedshift(value: SourceRedshift): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKinesis(value: SourceKinesis): Self = this.set("kinesis", value.asInstanceOf[js.Any])
+    def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
     
     @scala.inline
-    def deleteKinesis: Self = this.set("kinesis", js.undefined)
+    def setS3(value: SourceS3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedshift(value: SourceRedshift): Self = this.set("redshift", value.asInstanceOf[js.Any])
+    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
     
     @scala.inline
-    def deleteRedshift: Self = this.set("redshift", js.undefined)
+    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3(value: SourceS3): Self = this.set("s3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3: Self = this.set("s3", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

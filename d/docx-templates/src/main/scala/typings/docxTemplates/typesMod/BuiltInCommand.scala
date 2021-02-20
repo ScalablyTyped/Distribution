@@ -1,5 +1,6 @@
 package typings.docxTemplates.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,4 +19,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.docxTemplates.docxTemplatesStrings.LINK
   - typings.docxTemplates.docxTemplatesStrings.HTML
 */
-trait BuiltInCommand extends js.Object
+trait BuiltInCommand extends StObject

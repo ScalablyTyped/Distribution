@@ -1,11 +1,12 @@
 package typings.awsSdk.comprehendMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDetectDominantLanguageItemResult extends js.Object {
+trait BatchDetectDominantLanguageItemResult extends StObject {
   
   /**
     * The zero-based index of the document in the input list.
@@ -26,33 +27,21 @@ object BatchDetectDominantLanguageItemResult {
   }
   
   @scala.inline
-  implicit class BatchDetectDominantLanguageItemResultOps[Self <: BatchDetectDominantLanguageItemResult] (val x: Self) extends AnyVal {
+  implicit class BatchDetectDominantLanguageItemResultMutableBuilder[Self <: BatchDetectDominantLanguageItemResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguages(value: ListOfDominantLanguages): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Integer): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setLanguagesUndefined: Self = StObject.set(x, "Languages", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("Index", js.undefined)
-    
-    @scala.inline
-    def setLanguagesVarargs(value: DominantLanguage*): Self = this.set("Languages", js.Array(value :_*))
-    
-    @scala.inline
-    def setLanguages(value: ListOfDominantLanguages): Self = this.set("Languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguages: Self = this.set("Languages", js.undefined)
+    def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value :_*))
   }
 }

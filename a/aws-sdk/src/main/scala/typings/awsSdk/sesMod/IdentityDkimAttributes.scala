@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdentityDkimAttributes extends js.Object {
+trait IdentityDkimAttributes extends StObject {
   
   /**
     * Is true if DKIM signing is enabled for email sent from the identity. It's false otherwise. The default value is true.
@@ -31,33 +32,21 @@ object IdentityDkimAttributes {
   }
   
   @scala.inline
-  implicit class IdentityDkimAttributesOps[Self <: IdentityDkimAttributes] (val x: Self) extends AnyVal {
+  implicit class IdentityDkimAttributesMutableBuilder[Self <: IdentityDkimAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDkimEnabled(value: Enabled): Self = StObject.set(x, "DkimEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDkimTokens(value: VerificationTokenList): Self = StObject.set(x, "DkimTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDkimTokensUndefined: Self = StObject.set(x, "DkimTokens", js.undefined)
     
     @scala.inline
-    def setDkimEnabled(value: Enabled): Self = this.set("DkimEnabled", value.asInstanceOf[js.Any])
+    def setDkimTokensVarargs(value: VerificationToken*): Self = StObject.set(x, "DkimTokens", js.Array(value :_*))
     
     @scala.inline
-    def setDkimVerificationStatus(value: VerificationStatus): Self = this.set("DkimVerificationStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDkimTokensVarargs(value: VerificationToken*): Self = this.set("DkimTokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setDkimTokens(value: VerificationTokenList): Self = this.set("DkimTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDkimTokens: Self = this.set("DkimTokens", js.undefined)
+    def setDkimVerificationStatus(value: VerificationStatus): Self = StObject.set(x, "DkimVerificationStatus", value.asInstanceOf[js.Any])
   }
 }

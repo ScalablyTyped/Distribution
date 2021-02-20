@@ -2,12 +2,13 @@ package typings.winrt.Windows.UI.Text
 
 import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextDocument extends js.Object {
+trait ITextDocument extends StObject {
   
   def applyDisplayUpdates(): Double = js.native
   
@@ -91,90 +92,78 @@ object ITextDocument {
   }
   
   @scala.inline
-  implicit class ITextDocumentOps[Self <: ITextDocument] (val x: Self) extends AnyVal {
+  implicit class ITextDocumentMutableBuilder[Self <: ITextDocument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplyDisplayUpdates(value: () => Double): Self = StObject.set(x, "applyDisplayUpdates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchDisplayUpdates(value: () => Double): Self = StObject.set(x, "batchDisplayUpdates", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeginUndoGroup(value: () => Unit): Self = StObject.set(x, "beginUndoGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setApplyDisplayUpdates(value: () => Double): Self = this.set("applyDisplayUpdates", js.Any.fromFunction0(value))
+    def setCanCopy(value: () => Boolean): Self = StObject.set(x, "canCopy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBatchDisplayUpdates(value: () => Double): Self = this.set("batchDisplayUpdates", js.Any.fromFunction0(value))
+    def setCanPaste(value: () => Boolean): Self = StObject.set(x, "canPaste", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBeginUndoGroup(value: () => Unit): Self = this.set("beginUndoGroup", js.Any.fromFunction0(value))
+    def setCanRedo(value: () => Boolean): Self = StObject.set(x, "canRedo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanCopy(value: () => Boolean): Self = this.set("canCopy", js.Any.fromFunction0(value))
+    def setCanUndo(value: () => Boolean): Self = StObject.set(x, "canUndo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCanPaste(value: () => Boolean): Self = this.set("canPaste", js.Any.fromFunction0(value))
+    def setCaretType(value: CaretType): Self = StObject.set(x, "caretType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanRedo(value: () => Boolean): Self = this.set("canRedo", js.Any.fromFunction0(value))
+    def setDefaultTabStop(value: Double): Self = StObject.set(x, "defaultTabStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanUndo(value: () => Boolean): Self = this.set("canUndo", js.Any.fromFunction0(value))
+    def setEndUndoGroup(value: () => Unit): Self = StObject.set(x, "endUndoGroup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCaretType(value: CaretType): Self = this.set("caretType", value.asInstanceOf[js.Any])
+    def setGetDefaultCharacterFormat(value: () => ITextCharacterFormat): Self = StObject.set(x, "getDefaultCharacterFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDefaultTabStop(value: Double): Self = this.set("defaultTabStop", value.asInstanceOf[js.Any])
+    def setGetDefaultParagraphFormat(value: () => ITextParagraphFormat): Self = StObject.set(x, "getDefaultParagraphFormat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEndUndoGroup(value: () => Unit): Self = this.set("endUndoGroup", js.Any.fromFunction0(value))
+    def setGetRange(value: (Double, Double) => ITextRange): Self = StObject.set(x, "getRange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDefaultCharacterFormat(value: () => ITextCharacterFormat): Self = this.set("getDefaultCharacterFormat", js.Any.fromFunction0(value))
+    def setGetRangeFromPoint(value: (Point, PointOptions) => ITextRange): Self = StObject.set(x, "getRangeFromPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDefaultParagraphFormat(value: () => ITextParagraphFormat): Self = this.set("getDefaultParagraphFormat", js.Any.fromFunction0(value))
+    def setGetText(value: TextGetOptions => String): Self = StObject.set(x, "getText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRange(value: (Double, Double) => ITextRange): Self = this.set("getRange", js.Any.fromFunction2(value))
+    def setLoadFromStream(value: (TextSetOptions, IRandomAccessStream) => Unit): Self = StObject.set(x, "loadFromStream", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetRangeFromPoint(value: (Point, PointOptions) => ITextRange): Self = this.set("getRangeFromPoint", js.Any.fromFunction2(value))
+    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetText(value: TextGetOptions => String): Self = this.set("getText", js.Any.fromFunction1(value))
+    def setSaveToStream(value: (TextGetOptions, IRandomAccessStream) => Unit): Self = StObject.set(x, "saveToStream", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLoadFromStream(value: (TextSetOptions, IRandomAccessStream) => Unit): Self = this.set("loadFromStream", js.Any.fromFunction2(value))
+    def setSelection(value: ITextSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedo(value: () => Unit): Self = this.set("redo", js.Any.fromFunction0(value))
+    def setSetDefaultCharacterFormat(value: ITextCharacterFormat => Unit): Self = StObject.set(x, "setDefaultCharacterFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSaveToStream(value: (TextGetOptions, IRandomAccessStream) => Unit): Self = this.set("saveToStream", js.Any.fromFunction2(value))
+    def setSetDefaultParagraphFormat(value: ITextParagraphFormat => Unit): Self = StObject.set(x, "setDefaultParagraphFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelection(value: ITextSelection): Self = this.set("selection", value.asInstanceOf[js.Any])
+    def setSetText(value: (TextSetOptions, String) => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetDefaultCharacterFormat(value: ITextCharacterFormat => Unit): Self = this.set("setDefaultCharacterFormat", js.Any.fromFunction1(value))
+    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetDefaultParagraphFormat(value: ITextParagraphFormat => Unit): Self = this.set("setDefaultParagraphFormat", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetText(value: (TextSetOptions, String) => Unit): Self = this.set("setText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUndo(value: () => Unit): Self = this.set("undo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUndoLimit(value: Double): Self = this.set("undoLimit", value.asInstanceOf[js.Any])
+    def setUndoLimit(value: Double): Self = StObject.set(x, "undoLimit", value.asInstanceOf[js.Any])
   }
 }

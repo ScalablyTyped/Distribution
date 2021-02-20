@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatOptions extends js.Object {
+trait FormatOptions extends StObject {
   
   /**
     * Options that define how Excel input is to be interpreted by DataBrew.
@@ -26,30 +27,18 @@ object FormatOptions {
   }
   
   @scala.inline
-  implicit class FormatOptionsOps[Self <: FormatOptions] (val x: Self) extends AnyVal {
+  implicit class FormatOptionsMutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcel(value: ExcelOptions): Self = StObject.set(x, "Excel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcelUndefined: Self = StObject.set(x, "Excel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJson(value: JsonOptions): Self = StObject.set(x, "Json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcel(value: ExcelOptions): Self = this.set("Excel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcel: Self = this.set("Excel", js.undefined)
-    
-    @scala.inline
-    def setJson(value: JsonOptions): Self = this.set("Json", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJson: Self = this.set("Json", js.undefined)
+    def setJsonUndefined: Self = StObject.set(x, "Json", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayApplianceRecipient extends js.Object {
+trait DisplayApplianceRecipient extends StObject {
   
   var cfrPart11: js.UndefOr[Boolean] = js.native
   
@@ -56,138 +57,126 @@ object DisplayApplianceRecipient {
   }
   
   @scala.inline
-  implicit class DisplayApplianceRecipientOps[Self <: DisplayApplianceRecipient] (val x: Self) extends AnyVal {
+  implicit class DisplayApplianceRecipientMutableBuilder[Self <: DisplayApplianceRecipient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCfrPart11(value: Boolean): Self = StObject.set(x, "cfrPart11", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCfrPart11Undefined: Self = StObject.set(x, "cfrPart11", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCfrPart11(value: Boolean): Self = this.set("cfrPart11", value.asInstanceOf[js.Any])
+    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
     
     @scala.inline
-    def deleteCfrPart11: Self = this.set("cfrPart11", js.undefined)
+    def setDigitalSignatureBase64(value: String): Self = StObject.set(x, "digitalSignatureBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setDigitalSignatureBase64Undefined: Self = StObject.set(x, "digitalSignatureBase64", js.undefined)
     
     @scala.inline
-    def deleteCompany: Self = this.set("company", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigitalSignatureBase64(value: String): Self = this.set("digitalSignatureBase64", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDigitalSignatureBase64: Self = this.set("digitalSignatureBase64", js.undefined)
+    def setInPersonEmail(value: String): Self = StObject.set(x, "inPersonEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setInPersonEmailUndefined: Self = StObject.set(x, "inPersonEmail", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setInitialsBase64(value: String): Self = StObject.set(x, "initialsBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInPersonEmail(value: String): Self = this.set("inPersonEmail", value.asInstanceOf[js.Any])
+    def setInitialsBase64Undefined: Self = StObject.set(x, "initialsBase64", js.undefined)
     
     @scala.inline
-    def deleteInPersonEmail: Self = this.set("inPersonEmail", js.undefined)
+    def setIsNotary(value: Boolean): Self = StObject.set(x, "isNotary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialsBase64(value: String): Self = this.set("initialsBase64", value.asInstanceOf[js.Any])
+    def setIsNotaryUndefined: Self = StObject.set(x, "isNotary", js.undefined)
     
     @scala.inline
-    def deleteInitialsBase64: Self = this.set("initialsBase64", js.undefined)
+    def setNotarySealBase64(value: String): Self = StObject.set(x, "notarySealBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNotary(value: Boolean): Self = this.set("isNotary", value.asInstanceOf[js.Any])
+    def setNotarySealBase64Undefined: Self = StObject.set(x, "notarySealBase64", js.undefined)
     
     @scala.inline
-    def deleteIsNotary: Self = this.set("isNotary", js.undefined)
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotarySealBase64(value: String): Self = this.set("notarySealBase64", value.asInstanceOf[js.Any])
+    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     @scala.inline
-    def deleteNotarySealBase64: Self = this.set("notarySealBase64", js.undefined)
+    def setRecipientCompleteCount(value: Double): Self = StObject.set(x, "recipientCompleteCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setRecipientCompleteCountUndefined: Self = StObject.set(x, "recipientCompleteCount", js.undefined)
     
     @scala.inline
-    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    def setRecipientGuidId(value: String): Self = StObject.set(x, "recipientGuidId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientCompleteCount(value: Double): Self = this.set("recipientCompleteCount", value.asInstanceOf[js.Any])
+    def setRecipientGuidIdUndefined: Self = StObject.set(x, "recipientGuidId", js.undefined)
     
     @scala.inline
-    def deleteRecipientCompleteCount: Self = this.set("recipientCompleteCount", js.undefined)
+    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientGuidId(value: String): Self = this.set("recipientGuidId", value.asInstanceOf[js.Any])
+    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
     @scala.inline
-    def deleteRecipientGuidId: Self = this.set("recipientGuidId", js.undefined)
+    def setRecipientStatus(value: String): Self = StObject.set(x, "recipientStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientId(value: String): Self = this.set("recipientId", value.asInstanceOf[js.Any])
+    def setRecipientStatusUndefined: Self = StObject.set(x, "recipientStatus", js.undefined)
     
     @scala.inline
-    def deleteRecipientId: Self = this.set("recipientId", js.undefined)
+    def setRecipientType(value: String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientStatus(value: String): Self = this.set("recipientStatus", value.asInstanceOf[js.Any])
+    def setRecipientTypeUndefined: Self = StObject.set(x, "recipientType", js.undefined)
     
     @scala.inline
-    def deleteRecipientStatus: Self = this.set("recipientStatus", js.undefined)
+    def setRowState(value: String): Self = StObject.set(x, "rowState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientType(value: String): Self = this.set("recipientType", value.asInstanceOf[js.Any])
+    def setRowStateUndefined: Self = StObject.set(x, "rowState", js.undefined)
     
     @scala.inline
-    def deleteRecipientType: Self = this.set("recipientType", js.undefined)
+    def setSignatureBase64(value: String): Self = StObject.set(x, "signatureBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowState(value: String): Self = this.set("rowState", value.asInstanceOf[js.Any])
+    def setSignatureBase64Undefined: Self = StObject.set(x, "signatureBase64", js.undefined)
     
     @scala.inline
-    def deleteRowState: Self = this.set("rowState", js.undefined)
+    def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignatureBase64(value: String): Self = this.set("signatureBase64", value.asInstanceOf[js.Any])
+    def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
     
     @scala.inline
-    def deleteSignatureBase64: Self = this.set("signatureBase64", js.undefined)
+    def setSignerApplyTabs(value: Boolean): Self = StObject.set(x, "signerApplyTabs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigned(value: Boolean): Self = this.set("signed", value.asInstanceOf[js.Any])
+    def setSignerApplyTabsUndefined: Self = StObject.set(x, "signerApplyTabs", js.undefined)
     
     @scala.inline
-    def deleteSigned: Self = this.set("signed", js.undefined)
+    def setSignerAttachmentBase64(value: String): Self = StObject.set(x, "signerAttachmentBase64", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignerApplyTabs(value: Boolean): Self = this.set("signerApplyTabs", value.asInstanceOf[js.Any])
+    def setSignerAttachmentBase64Undefined: Self = StObject.set(x, "signerAttachmentBase64", js.undefined)
     
     @scala.inline
-    def deleteSignerApplyTabs: Self = this.set("signerApplyTabs", js.undefined)
+    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignerAttachmentBase64(value: String): Self = this.set("signerAttachmentBase64", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignerAttachmentBase64: Self = this.set("signerAttachmentBase64", js.undefined)
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("userName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

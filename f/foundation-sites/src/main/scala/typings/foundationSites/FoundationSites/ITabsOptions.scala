@@ -1,11 +1,12 @@
 package typings.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITabsOptions extends js.Object {
+trait ITabsOptions extends StObject {
   
   var autoFocus: js.UndefOr[Boolean] = js.native
   
@@ -26,48 +27,36 @@ object ITabsOptions {
   }
   
   @scala.inline
-  implicit class ITabsOptionsOps[Self <: ITabsOptions] (val x: Self) extends AnyVal {
+  implicit class ITabsOptionsMutableBuilder[Self <: ITabsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkClass(value: String): Self = StObject.set(x, "linkClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    def setLinkClassUndefined: Self = StObject.set(x, "linkClass", js.undefined)
     
     @scala.inline
-    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    def setMatchHeight(value: Boolean): Self = StObject.set(x, "matchHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkClass(value: String): Self = this.set("linkClass", value.asInstanceOf[js.Any])
+    def setMatchHeightUndefined: Self = StObject.set(x, "matchHeight", js.undefined)
     
     @scala.inline
-    def deleteLinkClass: Self = this.set("linkClass", js.undefined)
+    def setPanelClass(value: String): Self = StObject.set(x, "panelClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchHeight(value: Boolean): Self = this.set("matchHeight", value.asInstanceOf[js.Any])
+    def setPanelClassUndefined: Self = StObject.set(x, "panelClass", js.undefined)
     
     @scala.inline
-    def deleteMatchHeight: Self = this.set("matchHeight", js.undefined)
+    def setWrapOnKeys(value: Boolean): Self = StObject.set(x, "wrapOnKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelClass(value: String): Self = this.set("panelClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePanelClass: Self = this.set("panelClass", js.undefined)
-    
-    @scala.inline
-    def setWrapOnKeys(value: Boolean): Self = this.set("wrapOnKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapOnKeys: Self = this.set("wrapOnKeys", js.undefined)
+    def setWrapOnKeysUndefined: Self = StObject.set(x, "wrapOnKeys", js.undefined)
   }
 }

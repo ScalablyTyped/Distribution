@@ -7,6 +7,7 @@ import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.OnInit
 import typings.angularCore.mod.ViewContainerRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

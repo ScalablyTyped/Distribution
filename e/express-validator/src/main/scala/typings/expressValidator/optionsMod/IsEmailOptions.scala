@@ -1,11 +1,12 @@
 package typings.expressValidator.optionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsEmailOptions extends js.Object {
+trait IsEmailOptions extends StObject {
   
   var allow_display_name: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object IsEmailOptions {
   }
   
   @scala.inline
-  implicit class IsEmailOptionsOps[Self <: IsEmailOptions] (val x: Self) extends AnyVal {
+  implicit class IsEmailOptionsMutableBuilder[Self <: IsEmailOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllow_display_name(value: Boolean): Self = StObject.set(x, "allow_display_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllow_display_nameUndefined: Self = StObject.set(x, "allow_display_name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllow_utf8_local_part(value: Boolean): Self = StObject.set(x, "allow_utf8_local_part", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_display_name(value: Boolean): Self = this.set("allow_display_name", value.asInstanceOf[js.Any])
+    def setAllow_utf8_local_partUndefined: Self = StObject.set(x, "allow_utf8_local_part", js.undefined)
     
     @scala.inline
-    def deleteAllow_display_name: Self = this.set("allow_display_name", js.undefined)
+    def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllow_utf8_local_part(value: Boolean): Self = this.set("allow_utf8_local_part", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllow_utf8_local_part: Self = this.set("allow_utf8_local_part", js.undefined)
-    
-    @scala.inline
-    def setRequire_tld(value: Boolean): Self = this.set("require_tld", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequire_tld: Self = this.set("require_tld", js.undefined)
+    def setRequire_tldUndefined: Self = StObject.set(x, "require_tld", js.undefined)
   }
 }

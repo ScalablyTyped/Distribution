@@ -1,12 +1,13 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.IRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentSymbol extends js.Object {
+trait DocumentSymbol extends StObject {
   
   var children: js.UndefOr[js.Array[DocumentSymbol]] = js.native
   
@@ -40,54 +41,42 @@ object DocumentSymbol {
   }
   
   @scala.inline
-  implicit class DocumentSymbolOps[Self <: DocumentSymbol] (val x: Self) extends AnyVal {
+  implicit class DocumentSymbolMutableBuilder[Self <: DocumentSymbol] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: js.Array[DocumentSymbol]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: SymbolKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: IRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionRange(value: IRange): Self = this.set("selectionRange", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: SymbolTag*): Self = this.set("tags", js.Array(value :_*))
+    def setRange(value: IRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[SymbolTag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setSelectionRange(value: IRange): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildrenVarargs(value: DocumentSymbol*): Self = this.set("children", js.Array(value :_*))
+    def setTags(value: js.Array[SymbolTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: js.Array[DocumentSymbol]): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    def setTagsVarargs(value: SymbolTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

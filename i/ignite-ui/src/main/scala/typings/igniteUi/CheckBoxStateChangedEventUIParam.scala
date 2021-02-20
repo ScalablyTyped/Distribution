@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckBoxStateChangedEventUIParam extends js.Object {
+trait CheckBoxStateChangedEventUIParam extends StObject {
   
   /**
     * Gets reference to the grid the RowSelectors are initialized for.
@@ -56,66 +57,54 @@ object CheckBoxStateChangedEventUIParam {
   }
   
   @scala.inline
-  implicit class CheckBoxStateChangedEventUIParamOps[Self <: CheckBoxStateChangedEventUIParam] (val x: Self) extends AnyVal {
+  implicit class CheckBoxStateChangedEventUIParamMutableBuilder[Self <: CheckBoxStateChangedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsHeader(value: Boolean): Self = StObject.set(x, "isHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setIsHeaderUndefined: Self = StObject.set(x, "isHeader", js.undefined)
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHeader(value: Boolean): Self = this.set("isHeader", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteIsHeader: Self = this.set("isHeader", js.undefined)
+    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def setRow(value: String): Self = this.set("row", value.asInstanceOf[js.Any])
+    def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRow: Self = this.set("row", js.undefined)
+    def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setRowSelector(value: String): Self = StObject.set(x, "rowSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setRowSelectorUndefined: Self = StObject.set(x, "rowSelector", js.undefined)
     
     @scala.inline
-    def setRowKey(value: String): Self = this.set("rowKey", value.asInstanceOf[js.Any])
+    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
     @scala.inline
-    def deleteRowKey: Self = this.set("rowKey", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSelector(value: String): Self = this.set("rowSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowSelector: Self = this.set("rowSelector", js.undefined)
-    
-    @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

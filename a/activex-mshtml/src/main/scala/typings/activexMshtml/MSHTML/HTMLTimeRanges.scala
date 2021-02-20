@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLTimeRanges extends js.Object {
+trait HTMLTimeRanges extends StObject {
   
   @JSName("MSHTML.HTMLTimeRanges_typekey")
   var MSHTMLDotHTMLTimeRanges_typekey: HTMLTimeRanges = js.native
@@ -37,36 +38,24 @@ object HTMLTimeRanges {
   }
   
   @scala.inline
-  implicit class HTMLTimeRangesOps[Self <: HTMLTimeRanges] (val x: Self) extends AnyVal {
+  implicit class HTMLTimeRangesMutableBuilder[Self <: HTMLTimeRanges] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDouble(value: Double => Double): Self = StObject.set(x, "endDouble", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLTimeRanges_typekey(value: HTMLTimeRanges): Self = this.set("MSHTML.HTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
+    def setMSHTMLDotHTMLTimeRanges_typekey(value: HTMLTimeRanges): Self = StObject.set(x, "MSHTML.HTMLTimeRanges_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double => Double): Self = this.set("end", js.Any.fromFunction1(value))
+    def setStart(value: Double => Double): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEndDouble(value: Double => Double): Self = this.set("endDouble", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double => Double): Self = this.set("start", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartDouble(value: Double => Double): Self = this.set("startDouble", js.Any.fromFunction1(value))
+    def setStartDouble(value: Double => Double): Self = StObject.set(x, "startDouble", js.Any.fromFunction1(value))
   }
 }

@@ -6,6 +6,7 @@ import typings.webcl.webclNumbers.`0x1102`
 import typings.webcl.webclNumbers.`0x1106`
 import typings.webcl.webclNumbers.`0x1107`
 import typings.webcl.webclNumbers.`0x1108`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webcl.webclNumbers.`0x1107`
   - typings.webcl.webclNumbers.`0x1108`
 */
-trait MemInfo extends js.Object
+trait MemInfo extends StObject
 object MemInfo {
   
   @scala.inline

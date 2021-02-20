@@ -1,15 +1,15 @@
 package typings.firebaseDatabase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/util/SortedMap", JSImport.Namespace)
-@js.native
-object sortedMapMod extends js.Object {
+object sortedMapMod {
   
+  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBEmptyNode")
   @js.native
-  class LLRBEmptyNode[K, V] () extends js.Object {
+  class LLRBEmptyNode[K, V] () extends StObject {
     
     /**
       * @private
@@ -106,8 +106,9 @@ object sortedMapMod extends js.Object {
     var value: V = js.native
   }
   
+  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode")
   @js.native
-  class LLRBNode[K, V] protected () extends js.Object {
+  class LLRBNode[K, V] protected () extends StObject {
     /**
       * @template K, V
       * @param {!K} key Key associated with this node.
@@ -293,16 +294,28 @@ object sortedMapMod extends js.Object {
     var value: V = js.native
   }
   /* static members */
-  @js.native
-  object LLRBNode extends js.Object {
+  object LLRBNode {
     
-    var BLACK: Boolean = js.native
+    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var RED: Boolean = js.native
+    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode.BLACK")
+    @js.native
+    def BLACK: Boolean = js.native
+    @scala.inline
+    def BLACK_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode.RED")
+    @js.native
+    def RED: Boolean = js.native
+    @scala.inline
+    def RED_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap")
   @js.native
-  class SortedMap[K, V] protected () extends js.Object {
+  class SortedMap[K, V] protected () extends StObject {
     /**
       * @template K, V
       * @param {function(K, K):number} comparator_ Key comparator.
@@ -410,18 +423,26 @@ object sortedMapMod extends js.Object {
     var root_ : js.Any = js.native
   }
   /* static members */
-  @js.native
-  object SortedMap extends js.Object {
+  object SortedMap {
+    
+    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Always use the same empty node, to reduce memory.
       * @const
       */
-    var EMPTY_NODE: LLRBEmptyNode[_, _] = js.native
+    @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap.EMPTY_NODE")
+    @js.native
+    def EMPTY_NODE: LLRBEmptyNode[js.Any, js.Any] = js.native
+    @scala.inline
+    def EMPTY_NODE_=(x: LLRBEmptyNode[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY_NODE")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMapIterator")
   @js.native
-  class SortedMapIterator[K, V, T] protected () extends js.Object {
+  class SortedMapIterator[K, V, T] protected () extends StObject {
     def this(node: LLRBEmptyNode[K, V], startKey: K, comparator: Comparator[K], isReverse_ : Boolean) = this()
     def this(node: LLRBEmptyNode[K, V], startKey: Null, comparator: Comparator[K], isReverse_ : Boolean) = this()
     /**

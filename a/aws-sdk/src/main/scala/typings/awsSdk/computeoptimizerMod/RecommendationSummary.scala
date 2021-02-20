@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecommendationSummary extends js.Object {
+trait RecommendationSummary extends StObject {
   
   /**
     * The AWS account ID of the recommendation summary.
@@ -31,39 +32,27 @@ object RecommendationSummary {
   }
   
   @scala.inline
-  implicit class RecommendationSummaryOps[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
+  implicit class RecommendationSummaryMutableBuilder[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecommendationResourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setRecommendationResourceTypeUndefined: Self = StObject.set(x, "recommendationResourceType", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setSummaries(value: Summaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommendationResourceType(value: RecommendationSourceType): Self = this.set("recommendationResourceType", value.asInstanceOf[js.Any])
+    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
     @scala.inline
-    def deleteRecommendationResourceType: Self = this.set("recommendationResourceType", js.undefined)
-    
-    @scala.inline
-    def setSummariesVarargs(value: Summary*): Self = this.set("summaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setSummaries(value: Summaries): Self = this.set("summaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaries: Self = this.set("summaries", js.undefined)
+    def setSummariesVarargs(value: Summary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

@@ -5,12 +5,13 @@ import typings.next.routerMod.PrivateRouteInfo
 import typings.next.routerMod.Subscription
 import typings.react.mod.ComponentType
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
+trait App extends StObject {
   
   var App: AppComponent = js.native
   
@@ -51,66 +52,54 @@ object App {
   }
   
   @scala.inline
-  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
+  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: AppComponent): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: AppComponent): Self = this.set("App", value.asInstanceOf[js.Any])
+    def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
     
     @scala.inline
-    def setComponent(value: ComponentType[js.Object]): Self = this.set("Component", value.asInstanceOf[js.Any])
+    def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialProps(value: js.Any): Self = this.set("initialProps", value.asInstanceOf[js.Any])
+    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
     @scala.inline
-    def setIsFallback(value: Boolean): Self = this.set("isFallback", value.asInstanceOf[js.Any])
+    def setInitialProps(value: js.Any): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageLoader(value: js.Any): Self = this.set("pageLoader", value.asInstanceOf[js.Any])
+    def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscription(value: (/* data */ PrivateRouteInfo, /* App */ AppComponent) => js.Promise[Unit]): Self = this.set("subscription", js.Any.fromFunction2(value))
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWrapApp(value: AppComponent => js.Any): Self = this.set("wrapApp", js.Any.fromFunction1(value))
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def setDefaultLocale(value: String): Self = this.set("defaultLocale", value.asInstanceOf[js.Any])
+    def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultLocale: Self = this.set("defaultLocale", js.undefined)
+    def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
     
     @scala.inline
-    def setErr(value: Error): Self = this.set("err", value.asInstanceOf[js.Any])
+    def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
     
     @scala.inline
-    def deleteErr: Self = this.set("err", js.undefined)
+    def setPageLoader(value: js.Any): Self = StObject.set(x, "pageLoader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setSubscription(value: (/* data */ PrivateRouteInfo, /* App */ AppComponent) => js.Promise[Unit]): Self = StObject.set(x, "subscription", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
-    
-    @scala.inline
-    def setLocalesVarargs(value: String*): Self = this.set("locales", js.Array(value :_*))
-    
-    @scala.inline
-    def setLocales(value: js.Array[String]): Self = this.set("locales", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocales: Self = this.set("locales", js.undefined)
+    def setWrapApp(value: AppComponent => js.Any): Self = StObject.set(x, "wrapApp", js.Any.fromFunction1(value))
   }
 }

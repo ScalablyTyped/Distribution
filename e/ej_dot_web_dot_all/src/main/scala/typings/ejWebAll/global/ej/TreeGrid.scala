@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class TreeGrid protected ()
   extends typings.ejWebAll.ej.TreeGrid {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.TreeGrid.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.TreeGrid.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.TreeGrid")
-@js.native
-object TreeGrid extends js.Object {
+object TreeGrid {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.TreeGrid = js.native
-  
+  @JSGlobal("ej.TreeGrid")
   @js.native
-  object BatchEditMode extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.TreeGrid.BatchEditMode")
+  @js.native
+  object BatchEditMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.BatchEditMode with Double] = js.native
@@ -37,8 +36,9 @@ object TreeGrid extends js.Object {
     /* 1 */ val Row: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Row with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.BeginEditAction")
   @js.native
-  object BeginEditAction extends js.Object {
+  object BeginEditAction extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.BeginEditAction with Double] = js.native
@@ -48,8 +48,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val DblClick: typings.ejWebAll.ej.TreeGrid.BeginEditAction.DblClick with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.ClipMode")
   @js.native
-  object ClipMode extends js.Object {
+  object ClipMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ClipMode with Double] = js.native
@@ -59,8 +60,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Ellipsis: typings.ejWebAll.ej.TreeGrid.ClipMode.Ellipsis with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.ColumnResizeMode")
   @js.native
-  object ColumnResizeMode extends js.Object {
+  object ColumnResizeMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ColumnResizeMode with Double] = js.native
@@ -72,8 +74,9 @@ object TreeGrid extends js.Object {
     /* 2 */ val Normal: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.ContextMenuItems")
   @js.native
-  object ContextMenuItems extends js.Object {
+  object ContextMenuItems extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ContextMenuItems with Double] = js.native
@@ -85,8 +88,9 @@ object TreeGrid extends js.Object {
     /* 1 */ val Edit: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Edit with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.EditMode")
   @js.native
-  object EditMode extends js.Object {
+  object EditMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.EditMode with Double] = js.native
@@ -100,8 +104,9 @@ object TreeGrid extends js.Object {
     /* 1 */ val RowEditing: typings.ejWebAll.ej.TreeGrid.EditMode.RowEditing with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.EditingType")
   @js.native
-  object EditingType extends js.Object {
+  object EditingType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.EditingType with Double] = js.native
@@ -121,8 +126,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val String: typings.ejWebAll.ej.TreeGrid.EditingType.String with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.FilterHierarchyMode")
   @js.native
-  object FilterHierarchyMode extends js.Object {
+  object FilterHierarchyMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode with Double] = js.native
@@ -136,8 +142,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Parent: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Parent with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.FilterType")
   @js.native
-  object FilterType extends js.Object {
+  object FilterType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.FilterType with Double] = js.native
@@ -147,8 +154,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Menu: typings.ejWebAll.ej.TreeGrid.FilterType.Menu with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.HeaderTextOverflow")
   @js.native
-  object HeaderTextOverflow extends js.Object {
+  object HeaderTextOverflow extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow with Double] = js.native
@@ -158,8 +166,16 @@ object TreeGrid extends js.Object {
     /* 1 */ val Wrap: typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow.Wrap with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.TreeGrid.Locale")
   @js.native
-  object PageSizeMode extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.TreeGrid.PageSizeMode")
+  @js.native
+  object PageSizeMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.PageSizeMode with Double] = js.native
@@ -169,8 +185,9 @@ object TreeGrid extends js.Object {
     /* 1 */ val Root: typings.ejWebAll.ej.TreeGrid.PageSizeMode.Root with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.PrintMode")
   @js.native
-  object PrintMode extends js.Object {
+  object PrintMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.PrintMode with Double] = js.native
@@ -180,8 +197,9 @@ object TreeGrid extends js.Object {
     /* 1 */ val CurrentPage: typings.ejWebAll.ej.TreeGrid.PrintMode.CurrentPage with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.RowPosition")
   @js.native
-  object RowPosition extends js.Object {
+  object RowPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.RowPosition with Double] = js.native
@@ -197,8 +215,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Top: typings.ejWebAll.ej.TreeGrid.RowPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.SearchHierarchyMode")
   @js.native
-  object SearchHierarchyMode extends js.Object {
+  object SearchHierarchyMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode with Double] = js.native
@@ -212,8 +231,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Parent: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Parent with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.SelectionMode")
   @js.native
-  object SelectionMode extends js.Object {
+  object SelectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SelectionMode with Double] = js.native
@@ -223,8 +243,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Row: typings.ejWebAll.ej.TreeGrid.SelectionMode.Row with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.SelectionType")
   @js.native
-  object SelectionType extends js.Object {
+  object SelectionType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SelectionType with Double] = js.native
@@ -236,8 +257,9 @@ object TreeGrid extends js.Object {
     /* 0 */ val Single: typings.ejWebAll.ej.TreeGrid.SelectionType.Single with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.SummaryType")
   @js.native
-  object SummaryType extends js.Object {
+  object SummaryType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SummaryType with Double] = js.native
@@ -263,8 +285,9 @@ object TreeGrid extends js.Object {
     /* 7 */ val TrueCount: typings.ejWebAll.ej.TreeGrid.SummaryType.TrueCount with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.ToolbarItems")
   @js.native
-  object ToolbarItems extends js.Object {
+  object ToolbarItems extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ToolbarItems with Double] = js.native
@@ -292,8 +315,9 @@ object TreeGrid extends js.Object {
     /* 3 */ val Update: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Update with Double = js.native
   }
   
+  @JSGlobal("ej.TreeGrid.UnboundType")
   @js.native
-  object UnboundType extends js.Object {
+  object UnboundType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.UnboundType with Double] = js.native
@@ -306,4 +330,11 @@ object TreeGrid extends js.Object {
     
     /* 1 */ val Save: typings.ejWebAll.ej.TreeGrid.UnboundType.Save with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.TreeGrid.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.TreeGrid = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.TreeGrid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

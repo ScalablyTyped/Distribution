@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Input.Inking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InkRecognitionTarget extends js.Object
+sealed trait InkRecognitionTarget extends StObject
 @JSGlobal("Windows.UI.Input.Inking.InkRecognitionTarget")
 @js.native
-object InkRecognitionTarget extends js.Object {
+object InkRecognitionTarget extends StObject {
   
   @js.native
   sealed trait all extends InkRecognitionTarget

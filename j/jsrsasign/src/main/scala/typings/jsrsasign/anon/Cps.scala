@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cps extends js.Object {
+trait Cps extends StObject {
   
   var cps: String = js.native
   
@@ -22,27 +23,15 @@ object Cps {
   }
   
   @scala.inline
-  implicit class CpsOps[Self <: Cps] (val x: Self) extends AnyVal {
+  implicit class CpsMutableBuilder[Self <: Cps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCps(value: String): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCps(value: String): Self = this.set("cps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnotice(value: String): Self = this.set("unotice", value.asInstanceOf[js.Any])
+    def setUnotice(value: String): Self = StObject.set(x, "unotice", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Security
 
 import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CertificateSecurityState extends js.Object {
+trait CertificateSecurityState extends StObject {
   
   /**
     * Page certificate.
@@ -123,84 +124,72 @@ object CertificateSecurityState {
   }
   
   @scala.inline
-  implicit class CertificateSecurityStateOps[Self <: CertificateSecurityState] (val x: Self) extends AnyVal {
+  implicit class CertificateSecurityStateMutableBuilder[Self <: CertificateSecurityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateHasSha1Signature(value: Boolean): Self = StObject.set(x, "certificateHasSha1Signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateHasWeakSignature(value: Boolean): Self = StObject.set(x, "certificateHasWeakSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateVarargs(value: String*): Self = this.set("certificate", js.Array(value :_*))
+    def setCertificateNetworkError(value: String): Self = StObject.set(x, "certificateNetworkError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: js.Array[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setCertificateNetworkErrorUndefined: Self = StObject.set(x, "certificateNetworkError", js.undefined)
     
     @scala.inline
-    def setCertificateHasSha1Signature(value: Boolean): Self = this.set("certificateHasSha1Signature", value.asInstanceOf[js.Any])
+    def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
     
     @scala.inline
-    def setCertificateHasWeakSignature(value: Boolean): Self = this.set("certificateHasWeakSignature", value.asInstanceOf[js.Any])
+    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCipher(value: String): Self = this.set("cipher", value.asInstanceOf[js.Any])
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setKeyExchange(value: String): Self = StObject.set(x, "keyExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyExchange(value: String): Self = this.set("keyExchange", value.asInstanceOf[js.Any])
+    def setKeyExchangeGroup(value: String): Self = StObject.set(x, "keyExchangeGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModernSSL(value: Boolean): Self = this.set("modernSSL", value.asInstanceOf[js.Any])
+    def setKeyExchangeGroupUndefined: Self = StObject.set(x, "keyExchangeGroup", js.undefined)
     
     @scala.inline
-    def setObsoleteSslCipher(value: Boolean): Self = this.set("obsoleteSslCipher", value.asInstanceOf[js.Any])
+    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObsoleteSslKeyExchange(value: Boolean): Self = this.set("obsoleteSslKeyExchange", value.asInstanceOf[js.Any])
+    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
     @scala.inline
-    def setObsoleteSslProtocol(value: Boolean): Self = this.set("obsoleteSslProtocol", value.asInstanceOf[js.Any])
+    def setModernSSL(value: Boolean): Self = StObject.set(x, "modernSSL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObsoleteSslSignature(value: Boolean): Self = this.set("obsoleteSslSignature", value.asInstanceOf[js.Any])
+    def setObsoleteSslCipher(value: Boolean): Self = StObject.set(x, "obsoleteSslCipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setObsoleteSslKeyExchange(value: Boolean): Self = StObject.set(x, "obsoleteSslKeyExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectName(value: String): Self = this.set("subjectName", value.asInstanceOf[js.Any])
+    def setObsoleteSslProtocol(value: Boolean): Self = StObject.set(x, "obsoleteSslProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidFrom(value: TimeSinceEpoch): Self = this.set("validFrom", value.asInstanceOf[js.Any])
+    def setObsoleteSslSignature(value: Boolean): Self = StObject.set(x, "obsoleteSslSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidTo(value: TimeSinceEpoch): Self = this.set("validTo", value.asInstanceOf[js.Any])
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateNetworkError(value: String): Self = this.set("certificateNetworkError", value.asInstanceOf[js.Any])
+    def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCertificateNetworkError: Self = this.set("certificateNetworkError", js.undefined)
+    def setValidFrom(value: TimeSinceEpoch): Self = StObject.set(x, "validFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyExchangeGroup(value: String): Self = this.set("keyExchangeGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyExchangeGroup: Self = this.set("keyExchangeGroup", js.undefined)
-    
-    @scala.inline
-    def setMac(value: String): Self = this.set("mac", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMac: Self = this.set("mac", js.undefined)
+    def setValidTo(value: TimeSinceEpoch): Self = StObject.set(x, "validTo", value.asInstanceOf[js.Any])
   }
 }

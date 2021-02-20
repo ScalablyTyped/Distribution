@@ -1,11 +1,12 @@
 package typings.imgurRestApi.ImgurRestApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MemeMetadata extends js.Object {
+trait MemeMetadata extends StObject {
   
   var bg_image: String = js.native
   
@@ -24,30 +25,18 @@ object MemeMetadata {
   }
   
   @scala.inline
-  implicit class MemeMetadataOps[Self <: MemeMetadata] (val x: Self) extends AnyVal {
+  implicit class MemeMetadataMutableBuilder[Self <: MemeMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg_image(value: String): Self = StObject.set(x, "bg_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottom_text(value: String): Self = StObject.set(x, "bottom_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeme_name(value: String): Self = StObject.set(x, "meme_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg_image(value: String): Self = this.set("bg_image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBottom_text(value: String): Self = this.set("bottom_text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeme_name(value: String): Self = this.set("meme_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop_text(value: String): Self = this.set("top_text", value.asInstanceOf[js.Any])
+    def setTop_text(value: String): Self = StObject.set(x, "top_text", value.asInstanceOf[js.Any])
   }
 }

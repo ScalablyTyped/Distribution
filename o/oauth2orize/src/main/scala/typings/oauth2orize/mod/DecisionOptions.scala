@@ -1,11 +1,12 @@
 package typings.oauth2orize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecisionOptions extends js.Object {
+trait DecisionOptions extends StObject {
   
   var cancelField: String = js.native
   
@@ -22,27 +23,15 @@ object DecisionOptions {
   }
   
   @scala.inline
-  implicit class DecisionOptionsOps[Self <: DecisionOptions] (val x: Self) extends AnyVal {
+  implicit class DecisionOptionsMutableBuilder[Self <: DecisionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancelField(value: String): Self = StObject.set(x, "cancelField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCancelField(value: String): Self = this.set("cancelField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSessionKey(value: String): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserProperty(value: String): Self = this.set("userProperty", value.asInstanceOf[js.Any])
+    def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
   }
 }

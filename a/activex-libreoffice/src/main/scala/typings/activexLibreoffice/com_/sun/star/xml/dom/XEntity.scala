@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.xml.dom
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,36 +85,24 @@ object XEntity {
   }
   
   @scala.inline
-  implicit class XEntityOps[Self <: XEntity] (val x: Self) extends AnyVal {
+  implicit class XEntityMutableBuilder[Self <: XEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetNotationName(value: () => String): Self = StObject.set(x, "getNotationName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNotationName(value: String): Self = this.set("NotationName", value.asInstanceOf[js.Any])
+    def setNotationName(value: String): Self = StObject.set(x, "NotationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicId(value: String): Self = this.set("PublicId", value.asInstanceOf[js.Any])
+    def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSystemId(value: String): Self = this.set("SystemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetNotationName(value: () => String): Self = this.set("getNotationName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPublicId(value: () => String): Self = this.set("getPublicId", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSystemId(value: () => String): Self = this.set("getSystemId", js.Any.fromFunction0(value))
+    def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
   }
 }

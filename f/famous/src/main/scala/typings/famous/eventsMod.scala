@@ -1,19 +1,21 @@
 package typings.famous
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("famous/dom-renderers/events", JSImport.Namespace)
-@js.native
-object eventsMod extends js.Object {
+object eventsMod {
   
+  @JSImport("famous/dom-renderers/events", "EventMap")
   @js.native
-  class EventMap () extends js.Object
+  class EventMap () extends StObject
   
+  @JSImport("famous/dom-renderers/events", "MouseEvent")
   @js.native
-  class MouseEvent () extends js.Object
+  class MouseEvent () extends StObject
   
+  @JSImport("famous/dom-renderers/events", "TouchEvent")
   @js.native
-  class TouchEvent () extends js.Object
+  class TouchEvent () extends StObject
 }

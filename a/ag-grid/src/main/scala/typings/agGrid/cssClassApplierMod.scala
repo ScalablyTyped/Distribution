@@ -6,20 +6,21 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.gridOptionsWrapperMod.GridOptionsWrapper
 import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", JSImport.Namespace)
-@js.native
-object cssClassApplierMod extends js.Object {
+object cssClassApplierMod {
   
+  @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier")
   @js.native
-  class CssClassApplier () extends js.Object
+  class CssClassApplier () extends StObject
   /* static members */
-  @js.native
-  object CssClassApplier extends js.Object {
+  object CssClassApplier {
     
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @js.native
     def addColumnClassesFromCollDef(
       classesOrFunc: String,
       abstractColDef: AbstractColDef,
@@ -28,6 +29,8 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: ColumnGroup
     ): Unit = js.native
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @js.native
     def addColumnClassesFromCollDef(
       classesOrFunc: String,
       abstractColDef: AbstractColDef,
@@ -36,6 +39,8 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: OriginalColumnGroup
     ): Unit = js.native
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @js.native
     def addColumnClassesFromCollDef(
       classesOrFunc: js.Array[String],
       abstractColDef: AbstractColDef,
@@ -44,6 +49,8 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: ColumnGroup
     ): Unit = js.native
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @js.native
     def addColumnClassesFromCollDef(
       classesOrFunc: js.Array[String],
       abstractColDef: AbstractColDef,
@@ -52,6 +59,8 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: OriginalColumnGroup
     ): Unit = js.native
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @js.native
     def addColumnClassesFromCollDef(
       classesOrFunc: js.Function1[/* params */ js.Any, String | js.Array[String]],
       abstractColDef: AbstractColDef,
@@ -60,6 +69,8 @@ object cssClassApplierMod extends js.Object {
       column: Column,
       columnGroup: ColumnGroup
     ): Unit = js.native
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @js.native
     def addColumnClassesFromCollDef(
       classesOrFunc: js.Function1[/* params */ js.Any, String | js.Array[String]],
       abstractColDef: AbstractColDef,
@@ -69,6 +80,8 @@ object cssClassApplierMod extends js.Object {
       columnGroup: OriginalColumnGroup
     ): Unit = js.native
     
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addHeaderClassesFromColDef")
+    @js.native
     def addHeaderClassesFromColDef(
       abstractColDef: AbstractColDef,
       eHeaderCell: HTMLElement,
@@ -77,6 +90,8 @@ object cssClassApplierMod extends js.Object {
       columnGroup: ColumnGroup
     ): Unit = js.native
     
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addToolPanelClassesFromColDef")
+    @js.native
     def addToolPanelClassesFromColDef(
       abstractColDef: AbstractColDef,
       eHeaderCell: HTMLElement,

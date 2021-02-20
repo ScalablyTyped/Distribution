@@ -2,6 +2,7 @@ package typings.std
 
 import typings.std.stdStrings.nfc_
 import typings.std.stdStrings.usb_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.nfc_
   - typings.std.stdStrings.usb_
 */
-trait Transport extends js.Object
+trait Transport extends StObject
 object Transport {
   
   @scala.inline

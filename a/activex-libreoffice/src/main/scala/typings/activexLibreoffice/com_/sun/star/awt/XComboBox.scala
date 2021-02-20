@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,63 +86,51 @@ object XComboBox {
   }
   
   @scala.inline
-  implicit class XComboBoxOps[Self <: XComboBox] (val x: Self) extends AnyVal {
+  implicit class XComboBoxMutableBuilder[Self <: XComboBox] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddItem(value: (String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDropDownLineCount(value: Double): Self = this.set("DropDownLineCount", value.asInstanceOf[js.Any])
+    def setAddItems(value: (SeqEquiv[String], Double) => Unit): Self = StObject.set(x, "addItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setItemCount(value: Double): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setDropDownLineCount(value: Double): Self = StObject.set(x, "DropDownLineCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: SafeArray[String]): Self = this.set("Items", value.asInstanceOf[js.Any])
+    def setGetDropDownLineCount(value: () => Double): Self = StObject.set(x, "getDropDownLineCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddActionListener(value: XActionListener => Unit): Self = this.set("addActionListener", js.Any.fromFunction1(value))
+    def setGetItem(value: Double => String): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddItem(value: (String, Double) => Unit): Self = this.set("addItem", js.Any.fromFunction2(value))
+    def setGetItemCount(value: () => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddItemListener(value: XItemListener => Unit): Self = this.set("addItemListener", js.Any.fromFunction1(value))
+    def setGetItems(value: () => SafeArray[String]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddItems(value: (SeqEquiv[String], Double) => Unit): Self = this.set("addItems", js.Any.fromFunction2(value))
+    def setItemCount(value: Double): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDropDownLineCount(value: () => Double): Self = this.set("getDropDownLineCount", js.Any.fromFunction0(value))
+    def setItems(value: SafeArray[String]): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItem(value: Double => String): Self = this.set("getItem", js.Any.fromFunction1(value))
+    def setRemoveActionListener(value: XActionListener => Unit): Self = StObject.set(x, "removeActionListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItemCount(value: () => Double): Self = this.set("getItemCount", js.Any.fromFunction0(value))
+    def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItems(value: () => SafeArray[String]): Self = this.set("getItems", js.Any.fromFunction0(value))
+    def setRemoveItems(value: (Double, Double) => Unit): Self = StObject.set(x, "removeItems", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveActionListener(value: XActionListener => Unit): Self = this.set("removeActionListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveItemListener(value: XItemListener => Unit): Self = this.set("removeItemListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveItems(value: (Double, Double) => Unit): Self = this.set("removeItems", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDropDownLineCount(value: Double => Unit): Self = this.set("setDropDownLineCount", js.Any.fromFunction1(value))
+    def setSetDropDownLineCount(value: Double => Unit): Self = StObject.set(x, "setDropDownLineCount", js.Any.fromFunction1(value))
   }
 }

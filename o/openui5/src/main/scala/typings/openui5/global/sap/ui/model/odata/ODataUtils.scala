@@ -1,12 +1,11 @@
 package typings.openui5.global.sap.ui.model.odata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.odata.ODataUtils")
-@js.native
-object ODataUtils extends js.Object {
+object ODataUtils {
   
   /**
     * Compares the given OData values based on their type. All date and time types can also becompared
@@ -22,7 +21,11 @@ object ODataUtils extends js.Object {
     * first value is smaller, <code>1</code> if the first value is larger, <code>NaN</code> if  they
     * cannot be compared
     */
+  @JSGlobal("sap.ui.model.odata.ODataUtils.compare")
+  @js.native
   def compare(vValue1: js.Any, vValue2: js.Any): Double = js.native
+  @JSGlobal("sap.ui.model.odata.ODataUtils.compare")
+  @js.native
   def compare(vValue1: js.Any, vValue2: js.Any, bAsDecimal: String): Double = js.native
   
   /**
@@ -33,6 +36,8 @@ object ODataUtils extends js.Object {
     * @param sType the EDM type (e.g. Edm.Decimal)
     * @returns the formatted value
     */
+  @JSGlobal("sap.ui.model.odata.ODataUtils.formatValue")
+  @js.native
   def formatValue(vValue: js.Any, sType: String): String = js.native
   
   /**
@@ -44,8 +49,12 @@ object ODataUtils extends js.Object {
     * value is larger and <code>NaN</code> if they cannot be compared (e.g. one value  is
     * <code>null</code> or <code>undefined</code>)
     */
+  @JSGlobal("sap.ui.model.odata.ODataUtils.getComparator")
+  @js.native
   def getComparator(sEdmType: String): js.Any = js.native
   
+  @JSGlobal("sap.ui.model.odata.ODataUtils.setOrigin")
+  @js.native
   def setOrigin(sServiceURL: String, vParameters: String): String = js.native
   /**
     * Adds an origin to the given service URL.If an origin is already present, it will only be replaced if
@@ -64,5 +73,7 @@ object ODataUtils extends js.Object {
     * object then additional Parameters can be given
     * @returns the service URL with the added origin.
     */
+  @JSGlobal("sap.ui.model.odata.ODataUtils.setOrigin")
+  @js.native
   def setOrigin(sServiceURL: String, vParameters: js.Any): String = js.native
 }

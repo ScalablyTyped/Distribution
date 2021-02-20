@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,69 +35,57 @@ object DirectoryRole {
   }
   
   @scala.inline
-  implicit class DirectoryRoleOps[Self <: DirectoryRole] (val x: Self) extends AnyVal {
+  implicit class DirectoryRoleMutableBuilder[Self <: DirectoryRole] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setMembersNull: Self = StObject.set(x, "members", null)
     
     @scala.inline
-    def setDisplayNameNull: Self = this.set("displayName", null)
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def setMembersVarargs(value: DirectoryObject*): Self = this.set("members", js.Array(value :_*))
+    def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = this.set("members", value.asInstanceOf[js.Any])
+    def setRoleTemplateId(value: NullableOption[String]): Self = StObject.set(x, "roleTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setRoleTemplateIdNull: Self = StObject.set(x, "roleTemplateId", null)
     
     @scala.inline
-    def setMembersNull: Self = this.set("members", null)
+    def setRoleTemplateIdUndefined: Self = StObject.set(x, "roleTemplateId", js.undefined)
     
     @scala.inline
-    def setRoleTemplateId(value: NullableOption[String]): Self = this.set("roleTemplateId", value.asInstanceOf[js.Any])
+    def setScopedMembers(value: NullableOption[js.Array[ScopedRoleMembership]]): Self = StObject.set(x, "scopedMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoleTemplateId: Self = this.set("roleTemplateId", js.undefined)
+    def setScopedMembersNull: Self = StObject.set(x, "scopedMembers", null)
     
     @scala.inline
-    def setRoleTemplateIdNull: Self = this.set("roleTemplateId", null)
+    def setScopedMembersUndefined: Self = StObject.set(x, "scopedMembers", js.undefined)
     
     @scala.inline
-    def setScopedMembersVarargs(value: ScopedRoleMembership*): Self = this.set("scopedMembers", js.Array(value :_*))
-    
-    @scala.inline
-    def setScopedMembers(value: NullableOption[js.Array[ScopedRoleMembership]]): Self = this.set("scopedMembers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopedMembers: Self = this.set("scopedMembers", js.undefined)
-    
-    @scala.inline
-    def setScopedMembersNull: Self = this.set("scopedMembers", null)
+    def setScopedMembersVarargs(value: ScopedRoleMembership*): Self = StObject.set(x, "scopedMembers", js.Array(value :_*))
   }
 }

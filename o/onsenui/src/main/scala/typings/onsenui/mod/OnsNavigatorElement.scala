@@ -1,6 +1,7 @@
 package typings.onsenui.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ trait OnsNavigatorElement extends HTMLElement {
   
   var pageLoader: js.Any = js.native
   
-   //attribute length in future?
+  //attribute length in future?
   /**
     * @description Navigator's page stack.
     */

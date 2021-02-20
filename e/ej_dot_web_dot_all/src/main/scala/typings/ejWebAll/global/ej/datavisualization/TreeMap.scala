@@ -3,6 +3,7 @@ package typings.ejWebAll.global.ej.datavisualization
 import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Model
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +17,15 @@ class TreeMap protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-/* static members */
-@JSGlobal("ej.datavisualization.TreeMap")
-@js.native
-object TreeMap extends js.Object {
+object TreeMap {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.datavisualization.TreeMap = js.native
-  
+  @JSGlobal("ej.datavisualization.TreeMap")
   @js.native
-  object DockPosition extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.datavisualization.TreeMap.DockPosition")
+  @js.native
+  object DockPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.DockPosition with Double] = js.native
@@ -40,8 +39,9 @@ object TreeMap extends js.Object {
     /* 0 */ val Top: typings.ejWebAll.ej.datavisualization.TreeMap.DockPosition.Top with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.TreeMap.ItemsLayoutMode")
   @js.native
-  object ItemsLayoutMode extends js.Object {
+  object ItemsLayoutMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.ItemsLayoutMode with Double] = js.native
@@ -55,8 +55,16 @@ object TreeMap extends js.Object {
     /* 0 */ val Squarified: typings.ejWebAll.ej.datavisualization.TreeMap.ItemsLayoutMode.Squarified with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.datavisualization.TreeMap.Locale")
   @js.native
-  object Position extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.datavisualization.TreeMap.Position")
+  @js.native
+  object Position extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.Position with Double] = js.native
@@ -82,8 +90,9 @@ object TreeMap extends js.Object {
     /* 3 */ val Topright: typings.ejWebAll.ej.datavisualization.TreeMap.Position.Topright with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.TreeMap.TextOverflow")
   @js.native
-  object TextOverflow extends js.Object {
+  object TextOverflow extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.TextOverflow with Double] = js.native
@@ -97,8 +106,9 @@ object TreeMap extends js.Object {
     /* 3 */ val WrapByWord: typings.ejWebAll.ej.datavisualization.TreeMap.TextOverflow.WrapByWord with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.TreeMap.VisibilityMode")
   @js.native
-  object VisibilityMode extends js.Object {
+  object VisibilityMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.VisibilityMode with Double] = js.native
@@ -108,8 +118,16 @@ object TreeMap extends js.Object {
     /* 0 */ val Top: typings.ejWebAll.ej.datavisualization.TreeMap.VisibilityMode.Top with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.datavisualization.TreeMap.fn")
   @js.native
-  object groupSelectionMode extends js.Object {
+  def fn: typings.ejWebAll.ej.datavisualization.TreeMap = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.datavisualization.TreeMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.datavisualization.TreeMap.groupSelectionMode")
+  @js.native
+  object groupSelectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.groupSelectionMode with Double] = js.native
@@ -119,8 +137,9 @@ object TreeMap extends js.Object {
     /* 1 */ val Multiple: typings.ejWebAll.ej.datavisualization.TreeMap.groupSelectionMode.Multiple with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.TreeMap.selectionMode")
   @js.native
-  object selectionMode extends js.Object {
+  object selectionMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.TreeMap.selectionMode with Double] = js.native

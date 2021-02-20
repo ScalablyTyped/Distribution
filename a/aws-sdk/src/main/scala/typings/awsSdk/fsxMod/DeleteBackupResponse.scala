@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteBackupResponse extends js.Object {
+trait DeleteBackupResponse extends StObject {
   
   /**
     * The ID of the backup deleted.
@@ -26,30 +27,18 @@ object DeleteBackupResponse {
   }
   
   @scala.inline
-  implicit class DeleteBackupResponseOps[Self <: DeleteBackupResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteBackupResponseMutableBuilder[Self <: DeleteBackupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupIdUndefined: Self = StObject.set(x, "BackupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLifecycle(value: BackupLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupId(value: BackupId): Self = this.set("BackupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupId: Self = this.set("BackupId", js.undefined)
-    
-    @scala.inline
-    def setLifecycle(value: BackupLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
   }
 }

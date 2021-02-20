@@ -8,6 +8,7 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 3.0
   */
 @js.native
-trait XDocumentProperties extends js.Object {
+trait XDocumentProperties extends StObject {
   
   /** contains the initial author of the document. */
   var Author: String = js.native
@@ -250,102 +251,90 @@ object XDocumentProperties {
   }
   
   @scala.inline
-  implicit class XDocumentPropertiesOps[Self <: XDocumentProperties] (val x: Self) extends AnyVal {
+  implicit class XDocumentPropertiesMutableBuilder[Self <: XDocumentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoloadSecs(value: Double): Self = StObject.set(x, "AutoloadSecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoloadURL(value: String): Self = StObject.set(x, "AutoloadURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setCreationDate(value: DateTime): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoloadSecs(value: Double): Self = this.set("AutoloadSecs", value.asInstanceOf[js.Any])
+    def setDefaultTarget(value: String): Self = StObject.set(x, "DefaultTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoloadURL(value: String): Self = this.set("AutoloadURL", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateTime): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setDocumentStatistics(value: SafeArray[NamedValue]): Self = StObject.set(x, "DocumentStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTarget(value: String): Self = this.set("DefaultTarget", value.asInstanceOf[js.Any])
+    def setEditingCycles(value: Double): Self = StObject.set(x, "EditingCycles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setEditingDuration(value: Double): Self = StObject.set(x, "EditingDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentStatistics(value: SafeArray[NamedValue]): Self = this.set("DocumentStatistics", value.asInstanceOf[js.Any])
+    def setGenerator(value: String): Self = StObject.set(x, "Generator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditingCycles(value: Double): Self = this.set("EditingCycles", value.asInstanceOf[js.Any])
+    def setGetUserDefinedProperties(value: () => XPropertyContainer): Self = StObject.set(x, "getUserDefinedProperties", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEditingDuration(value: Double): Self = this.set("EditingDuration", value.asInstanceOf[js.Any])
+    def setKeywords(value: SafeArray[String]): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerator(value: String): Self = this.set("Generator", value.asInstanceOf[js.Any])
+    def setLanguage(value: Locale): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: SafeArray[String]): Self = this.set("Keywords", value.asInstanceOf[js.Any])
+    def setLoadFromMedium(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadFromMedium", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLanguage(value: Locale): Self = this.set("Language", value.asInstanceOf[js.Any])
+    def setLoadFromStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadFromStorage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setModificationDate(value: DateTime): Self = this.set("ModificationDate", value.asInstanceOf[js.Any])
+    def setModificationDate(value: DateTime): Self = StObject.set(x, "ModificationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedBy(value: String): Self = this.set("ModifiedBy", value.asInstanceOf[js.Any])
+    def setModifiedBy(value: String): Self = StObject.set(x, "ModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintDate(value: DateTime): Self = this.set("PrintDate", value.asInstanceOf[js.Any])
+    def setPrintDate(value: DateTime): Self = StObject.set(x, "PrintDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintedBy(value: String): Self = this.set("PrintedBy", value.asInstanceOf[js.Any])
+    def setPrintedBy(value: String): Self = StObject.set(x, "PrintedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setResetUserData(value: String => Unit): Self = StObject.set(x, "resetUserData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplateDate(value: DateTime): Self = this.set("TemplateDate", value.asInstanceOf[js.Any])
+    def setStoreToMedium(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToMedium", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTemplateName(value: String): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    def setStoreToStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setTemplateURL(value: String): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
+    def setTemplateDate(value: DateTime): Self = StObject.set(x, "TemplateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserDefinedProperties(value: XPropertyContainer): Self = this.set("UserDefinedProperties", value.asInstanceOf[js.Any])
+    def setTemplateName(value: String): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetUserDefinedProperties(value: () => XPropertyContainer): Self = this.set("getUserDefinedProperties", js.Any.fromFunction0(value))
+    def setTemplateURL(value: String): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadFromMedium(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("loadFromMedium", js.Any.fromFunction2(value))
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadFromStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = this.set("loadFromStorage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setResetUserData(value: String => Unit): Self = this.set("resetUserData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStoreToMedium(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToMedium", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStoreToStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = this.set("storeToStorage", js.Any.fromFunction2(value))
+    def setUserDefinedProperties(value: XPropertyContainer): Self = StObject.set(x, "UserDefinedProperties", value.asInstanceOf[js.Any])
   }
 }

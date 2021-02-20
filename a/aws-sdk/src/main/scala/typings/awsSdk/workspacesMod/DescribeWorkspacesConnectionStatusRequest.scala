@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorkspacesConnectionStatusRequest extends js.Object {
+trait DescribeWorkspacesConnectionStatusRequest extends StObject {
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results.
@@ -26,33 +27,21 @@ object DescribeWorkspacesConnectionStatusRequest {
   }
   
   @scala.inline
-  implicit class DescribeWorkspacesConnectionStatusRequestOps[Self <: DescribeWorkspacesConnectionStatusRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeWorkspacesConnectionStatusRequestMutableBuilder[Self <: DescribeWorkspacesConnectionStatusRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkspaceIds(value: WorkspaceIdList): Self = StObject.set(x, "WorkspaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setWorkspaceIdsUndefined: Self = StObject.set(x, "WorkspaceIds", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = this.set("WorkspaceIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setWorkspaceIds(value: WorkspaceIdList): Self = this.set("WorkspaceIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceIds: Self = this.set("WorkspaceIds", js.undefined)
+    def setWorkspaceIdsVarargs(value: WorkspaceId*): Self = StObject.set(x, "WorkspaceIds", js.Array(value :_*))
   }
 }

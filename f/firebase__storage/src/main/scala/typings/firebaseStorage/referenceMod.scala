@@ -8,14 +8,14 @@ import typings.firebaseStorageTypes.mod.UploadTask
 import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/compat/reference", JSImport.Namespace)
-@js.native
-object referenceMod extends js.Object {
+object referenceMod {
   
+  @JSImport("@firebase/storage/dist/compat/reference", "ReferenceCompat")
   @js.native
   class ReferenceCompat protected () extends Reference {
     def this(_delegate: typings.firebaseStorage.srcReferenceMod.Reference, storage: StorageServiceCompat) = this()

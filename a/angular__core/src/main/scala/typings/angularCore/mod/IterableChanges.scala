@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IterableChanges[V] extends js.Object {
+trait IterableChanges[V] extends StObject {
   
   /** Iterate over all added items. */
   def forEachAddedItem(fn: js.Function1[/* record */ IterableChangeRecord[V], Unit]): Unit = js.native
@@ -81,31 +82,19 @@ object IterableChanges {
   }
   
   @scala.inline
-  implicit class IterableChangesOps[Self <: IterableChanges[_], V] (val x: Self with IterableChanges[V]) extends AnyVal {
+  implicit class IterableChangesMutableBuilder[Self <: IterableChanges[_], V] (val x: Self with IterableChanges[V]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForEachAddedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachAddedItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForEachIdentityChange(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachIdentityChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForEachItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForEachAddedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = this.set("forEachAddedItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setForEachIdentityChange(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = this.set("forEachIdentityChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setForEachItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = this.set("forEachItem", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setForEachMovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = this.set("forEachMovedItem", js.Any.fromFunction1(value))
+    def setForEachMovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachMovedItem", js.Any.fromFunction1(value))
     
     @scala.inline
     def setForEachOperation(
@@ -115,12 +104,12 @@ object IterableChanges {
           /* currentIndex */ Double | Null, 
           Unit
         ] => Unit
-    ): Self = this.set("forEachOperation", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "forEachOperation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForEachPreviousItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = this.set("forEachPreviousItem", js.Any.fromFunction1(value))
+    def setForEachPreviousItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachPreviousItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setForEachRemovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = this.set("forEachRemovedItem", js.Any.fromFunction1(value))
+    def setForEachRemovedItem(value: js.Function1[/* record */ IterableChangeRecord[V], Unit] => Unit): Self = StObject.set(x, "forEachRemovedItem", js.Any.fromFunction1(value))
   }
 }

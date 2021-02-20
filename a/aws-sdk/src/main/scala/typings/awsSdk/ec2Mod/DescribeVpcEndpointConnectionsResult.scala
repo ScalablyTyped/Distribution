@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeVpcEndpointConnectionsResult extends js.Object {
+trait DescribeVpcEndpointConnectionsResult extends StObject {
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeVpcEndpointConnectionsResult {
   }
   
   @scala.inline
-  implicit class DescribeVpcEndpointConnectionsResultOps[Self <: DescribeVpcEndpointConnectionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeVpcEndpointConnectionsResultMutableBuilder[Self <: DescribeVpcEndpointConnectionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVpcEndpointConnections(value: VpcEndpointConnectionSet): Self = StObject.set(x, "VpcEndpointConnections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setVpcEndpointConnectionsUndefined: Self = StObject.set(x, "VpcEndpointConnections", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setVpcEndpointConnectionsVarargs(value: VpcEndpointConnection*): Self = this.set("VpcEndpointConnections", js.Array(value :_*))
-    
-    @scala.inline
-    def setVpcEndpointConnections(value: VpcEndpointConnectionSet): Self = this.set("VpcEndpointConnections", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcEndpointConnections: Self = this.set("VpcEndpointConnections", js.undefined)
+    def setVpcEndpointConnectionsVarargs(value: VpcEndpointConnection*): Self = StObject.set(x, "VpcEndpointConnections", js.Array(value :_*))
   }
 }

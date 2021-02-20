@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to parse XML or HTML source code from a string into a DOM Document. */
 @js.native
-trait DOMParser extends js.Object {
+trait DOMParser extends StObject {
   
   /**
     * Parses string using either the HTML or XML parser, according to type, and returns the resulting Document. type can be "text/html" (which will invoke the HTML parser), or any of "text/xml", "application/xml", "application/xhtml+xml", or "image/svg+xml" (which will invoke the XML parser).
@@ -28,21 +29,9 @@ object DOMParser {
   }
   
   @scala.inline
-  implicit class DOMParserOps[Self <: DOMParser] (val x: Self) extends AnyVal {
+  implicit class DOMParserMutableBuilder[Self <: DOMParser] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParseFromString(value: (java.lang.String, DOMParserSupportedType) => Document): Self = this.set("parseFromString", js.Any.fromFunction2(value))
+    def setParseFromString(value: (java.lang.String, DOMParserSupportedType) => Document): Self = StObject.set(x, "parseFromString", js.Any.fromFunction2(value))
   }
 }

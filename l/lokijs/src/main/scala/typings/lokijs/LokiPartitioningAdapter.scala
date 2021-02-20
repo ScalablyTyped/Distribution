@@ -2,6 +2,7 @@ package typings.lokijs
 
 import typings.lokijs.anon.PageSize
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -101,66 +102,54 @@ object LokiPartitioningAdapter {
   }
   
   @scala.inline
-  implicit class LokiPartitioningAdapterOps[Self <: LokiPartitioningAdapter] (val x: Self) extends AnyVal {
+  implicit class LokiPartitioningAdapterMutableBuilder[Self <: LokiPartitioningAdapter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdapterNull: Self = StObject.set(x, "adapter", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDbname(value: String): Self = StObject.set(x, "dbname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbname(value: String): Self = this.set("dbname", value.asInstanceOf[js.Any])
+    def setDbref(value: Loki): Self = StObject.set(x, "dbref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportDatabase(value: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = this.set("exportDatabase", js.Any.fromFunction3(value))
+    def setDbrefNull: Self = StObject.set(x, "dbref", null)
     
     @scala.inline
-    def setLoadNextPage(value: js.Function0[Unit] => Unit): Self = this.set("loadNextPage", js.Any.fromFunction1(value))
+    def setDirtyPartitions(value: js.Array[Double]): Self = StObject.set(x, "dirtyPartitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadNextPartition(value: (Double, js.Function0[Unit]) => Unit): Self = this.set("loadNextPartition", js.Any.fromFunction2(value))
+    def setDirtyPartitionsUndefined: Self = StObject.set(x, "dirtyPartitions", js.undefined)
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setDirtyPartitionsVarargs(value: Double*): Self = StObject.set(x, "dirtyPartitions", js.Array(value :_*))
     
     @scala.inline
-    def setOptions(value: PageSize): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setExportDatabase(value: (String, Loki, js.Function1[/* err */ Error | Null, Unit]) => Unit): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPageIterator(value: PageIterator | js.Object): Self = this.set("pageIterator", value.asInstanceOf[js.Any])
+    def setLoadNextPage(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSaveNextPage(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = this.set("saveNextPage", js.Any.fromFunction1(value))
+    def setLoadNextPartition(value: (Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "loadNextPartition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSaveNextPartition(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = this.set("saveNextPartition", js.Any.fromFunction1(value))
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdapter(value: LokiPersistenceAdapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    def setOptions(value: PageSize): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdapterNull: Self = this.set("adapter", null)
+    def setPageIterator(value: PageIterator | js.Object): Self = StObject.set(x, "pageIterator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbref(value: Loki): Self = this.set("dbref", value.asInstanceOf[js.Any])
+    def setSaveNextPage(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDbrefNull: Self = this.set("dbref", null)
-    
-    @scala.inline
-    def setDirtyPartitionsVarargs(value: Double*): Self = this.set("dirtyPartitions", js.Array(value :_*))
-    
-    @scala.inline
-    def setDirtyPartitions(value: js.Array[Double]): Self = this.set("dirtyPartitions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDirtyPartitions: Self = this.set("dirtyPartitions", js.undefined)
+    def setSaveNextPartition(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "saveNextPartition", js.Any.fromFunction1(value))
   }
 }

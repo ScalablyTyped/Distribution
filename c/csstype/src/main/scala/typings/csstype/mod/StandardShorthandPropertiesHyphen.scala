@@ -1,11 +1,12 @@
 package typings.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardShorthandPropertiesHyphen[TLength] extends js.Object {
+trait StandardShorthandPropertiesHyphen[TLength] extends StObject {
   
   /**
     * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
@@ -654,288 +655,276 @@ object StandardShorthandPropertiesHyphen {
   }
   
   @scala.inline
-  implicit class StandardShorthandPropertiesHyphenOps[Self <: StandardShorthandPropertiesHyphen[_], TLength] (val x: Self with StandardShorthandPropertiesHyphen[TLength]) extends AnyVal {
+  implicit class StandardShorthandPropertiesHyphenMutableBuilder[Self <: StandardShorthandPropertiesHyphen[_], TLength] (val x: Self with StandardShorthandPropertiesHyphen[TLength]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: Globals): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimation(value: AnimationProperty): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAll(value: Globals): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setBackground(value: BackgroundProperty[TLength]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: AnimationProperty): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setBorder(value: BorderProperty[TLength]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: BackgroundProperty[TLength]): Self = this.set("background", value.asInstanceOf[js.Any])
+    def `setBorder-block`(value: BorderBlockProperty[TLength]): Self = StObject.set(x, "border-block", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def `setBorder-block-end`(value: BorderBlockEndProperty[TLength]): Self = StObject.set(x, "border-block-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: BorderProperty[TLength]): Self = this.set("border", value.asInstanceOf[js.Any])
+    def `setBorder-block-endUndefined`: Self = StObject.set(x, "border-block-end", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def `setBorder-block-start`(value: BorderBlockStartProperty[TLength]): Self = StObject.set(x, "border-block-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-block`(value: BorderBlockProperty[TLength]): Self = this.set("border-block", value.asInstanceOf[js.Any])
+    def `setBorder-block-startUndefined`: Self = StObject.set(x, "border-block-start", js.undefined)
     
     @scala.inline
-    def `deleteBorder-block`: Self = this.set("border-block", js.undefined)
+    def `setBorder-blockUndefined`: Self = StObject.set(x, "border-block", js.undefined)
     
     @scala.inline
-    def `setBorder-block-end`(value: BorderBlockEndProperty[TLength]): Self = this.set("border-block-end", value.asInstanceOf[js.Any])
+    def `setBorder-bottom`(value: BorderBottomProperty[TLength]): Self = StObject.set(x, "border-bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-block-end`: Self = this.set("border-block-end", js.undefined)
+    def `setBorder-bottomUndefined`: Self = StObject.set(x, "border-bottom", js.undefined)
     
     @scala.inline
-    def `setBorder-block-start`(value: BorderBlockStartProperty[TLength]): Self = this.set("border-block-start", value.asInstanceOf[js.Any])
+    def `setBorder-color`(value: BorderColorProperty): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-block-start`: Self = this.set("border-block-start", js.undefined)
+    def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
     @scala.inline
-    def `setBorder-bottom`(value: BorderBottomProperty[TLength]): Self = this.set("border-bottom", value.asInstanceOf[js.Any])
+    def `setBorder-image`(value: BorderImageProperty): Self = StObject.set(x, "border-image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-bottom`: Self = this.set("border-bottom", js.undefined)
+    def `setBorder-imageUndefined`: Self = StObject.set(x, "border-image", js.undefined)
     
     @scala.inline
-    def `setBorder-color`(value: BorderColorProperty): Self = this.set("border-color", value.asInstanceOf[js.Any])
+    def `setBorder-inline`(value: BorderInlineProperty[TLength]): Self = StObject.set(x, "border-inline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-color`: Self = this.set("border-color", js.undefined)
+    def `setBorder-inline-end`(value: BorderInlineEndProperty[TLength]): Self = StObject.set(x, "border-inline-end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-image`(value: BorderImageProperty): Self = this.set("border-image", value.asInstanceOf[js.Any])
+    def `setBorder-inline-endUndefined`: Self = StObject.set(x, "border-inline-end", js.undefined)
     
     @scala.inline
-    def `deleteBorder-image`: Self = this.set("border-image", js.undefined)
+    def `setBorder-inline-start`(value: BorderInlineStartProperty[TLength]): Self = StObject.set(x, "border-inline-start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-inline`(value: BorderInlineProperty[TLength]): Self = this.set("border-inline", value.asInstanceOf[js.Any])
+    def `setBorder-inline-startUndefined`: Self = StObject.set(x, "border-inline-start", js.undefined)
     
     @scala.inline
-    def `deleteBorder-inline`: Self = this.set("border-inline", js.undefined)
+    def `setBorder-inlineUndefined`: Self = StObject.set(x, "border-inline", js.undefined)
     
     @scala.inline
-    def `setBorder-inline-end`(value: BorderInlineEndProperty[TLength]): Self = this.set("border-inline-end", value.asInstanceOf[js.Any])
+    def `setBorder-left`(value: BorderLeftProperty[TLength]): Self = StObject.set(x, "border-left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-inline-end`: Self = this.set("border-inline-end", js.undefined)
+    def `setBorder-leftUndefined`: Self = StObject.set(x, "border-left", js.undefined)
     
     @scala.inline
-    def `setBorder-inline-start`(value: BorderInlineStartProperty[TLength]): Self = this.set("border-inline-start", value.asInstanceOf[js.Any])
+    def `setBorder-radius`(value: BorderRadiusProperty[TLength]): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-inline-start`: Self = this.set("border-inline-start", js.undefined)
+    def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
     
     @scala.inline
-    def `setBorder-left`(value: BorderLeftProperty[TLength]): Self = this.set("border-left", value.asInstanceOf[js.Any])
+    def `setBorder-right`(value: BorderRightProperty[TLength]): Self = StObject.set(x, "border-right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-left`: Self = this.set("border-left", js.undefined)
+    def `setBorder-rightUndefined`: Self = StObject.set(x, "border-right", js.undefined)
     
     @scala.inline
-    def `setBorder-radius`(value: BorderRadiusProperty[TLength]): Self = this.set("border-radius", value.asInstanceOf[js.Any])
+    def `setBorder-style`(value: BorderStyleProperty): Self = StObject.set(x, "border-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-radius`: Self = this.set("border-radius", js.undefined)
+    def `setBorder-styleUndefined`: Self = StObject.set(x, "border-style", js.undefined)
     
     @scala.inline
-    def `setBorder-right`(value: BorderRightProperty[TLength]): Self = this.set("border-right", value.asInstanceOf[js.Any])
+    def `setBorder-top`(value: BorderTopProperty[TLength]): Self = StObject.set(x, "border-top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-right`: Self = this.set("border-right", js.undefined)
+    def `setBorder-topUndefined`: Self = StObject.set(x, "border-top", js.undefined)
     
     @scala.inline
-    def `setBorder-style`(value: BorderStyleProperty): Self = this.set("border-style", value.asInstanceOf[js.Any])
+    def `setBorder-width`(value: BorderWidthProperty[TLength]): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteBorder-style`: Self = this.set("border-style", js.undefined)
+    def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
     @scala.inline
-    def `setBorder-top`(value: BorderTopProperty[TLength]): Self = this.set("border-top", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def `deleteBorder-top`: Self = this.set("border-top", js.undefined)
+    def `setColumn-rule`(value: ColumnRuleProperty[TLength]): Self = StObject.set(x, "column-rule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBorder-width`(value: BorderWidthProperty[TLength]): Self = this.set("border-width", value.asInstanceOf[js.Any])
+    def `setColumn-ruleUndefined`: Self = StObject.set(x, "column-rule", js.undefined)
     
     @scala.inline
-    def `deleteBorder-width`: Self = this.set("border-width", js.undefined)
+    def setColumns(value: ColumnsProperty[TLength]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setColumn-rule`(value: ColumnRuleProperty[TLength]): Self = this.set("column-rule", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def `deleteColumn-rule`: Self = this.set("column-rule", js.undefined)
+    def setFlex(value: FlexProperty[TLength]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: ColumnsProperty[TLength]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def `setFlex-flow`(value: FlexFlowProperty): Self = StObject.set(x, "flex-flow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def `setFlex-flowUndefined`: Self = StObject.set(x, "flex-flow", js.undefined)
     
     @scala.inline
-    def setFlex(value: FlexProperty[TLength]): Self = this.set("flex", value.asInstanceOf[js.Any])
+    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
     @scala.inline
-    def deleteFlex: Self = this.set("flex", js.undefined)
+    def setFont(value: FontProperty): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setFlex-flow`(value: FlexFlowProperty): Self = this.set("flex-flow", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def `deleteFlex-flow`: Self = this.set("flex-flow", js.undefined)
+    def setGap(value: GapProperty[TLength]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontProperty): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setGrid(value: GridProperty): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGap(value: GapProperty[TLength]): Self = this.set("gap", value.asInstanceOf[js.Any])
+    def `setGrid-area`(value: GridAreaProperty): Self = StObject.set(x, "grid-area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGap: Self = this.set("gap", js.undefined)
+    def `setGrid-areaUndefined`: Self = StObject.set(x, "grid-area", js.undefined)
     
     @scala.inline
-    def setGrid(value: GridProperty): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def `setGrid-column`(value: GridColumnProperty): Self = StObject.set(x, "grid-column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrid: Self = this.set("grid", js.undefined)
+    def `setGrid-columnUndefined`: Self = StObject.set(x, "grid-column", js.undefined)
     
     @scala.inline
-    def `setGrid-area`(value: GridAreaProperty): Self = this.set("grid-area", value.asInstanceOf[js.Any])
+    def `setGrid-row`(value: GridRowProperty): Self = StObject.set(x, "grid-row", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteGrid-area`: Self = this.set("grid-area", js.undefined)
+    def `setGrid-rowUndefined`: Self = StObject.set(x, "grid-row", js.undefined)
     
     @scala.inline
-    def `setGrid-column`(value: GridColumnProperty): Self = this.set("grid-column", value.asInstanceOf[js.Any])
+    def `setGrid-template`(value: GridTemplateProperty): Self = StObject.set(x, "grid-template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteGrid-column`: Self = this.set("grid-column", js.undefined)
+    def `setGrid-templateUndefined`: Self = StObject.set(x, "grid-template", js.undefined)
     
     @scala.inline
-    def `setGrid-row`(value: GridRowProperty): Self = this.set("grid-row", value.asInstanceOf[js.Any])
+    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
     @scala.inline
-    def `deleteGrid-row`: Self = this.set("grid-row", js.undefined)
+    def `setLine-clamp`(value: LineClampProperty): Self = StObject.set(x, "line-clamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setGrid-template`(value: GridTemplateProperty): Self = this.set("grid-template", value.asInstanceOf[js.Any])
+    def `setLine-clampUndefined`: Self = StObject.set(x, "line-clamp", js.undefined)
     
     @scala.inline
-    def `deleteGrid-template`: Self = this.set("grid-template", js.undefined)
+    def `setList-style`(value: ListStyleProperty): Self = StObject.set(x, "list-style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-clamp`(value: LineClampProperty): Self = this.set("line-clamp", value.asInstanceOf[js.Any])
+    def `setList-styleUndefined`: Self = StObject.set(x, "list-style", js.undefined)
     
     @scala.inline
-    def `deleteLine-clamp`: Self = this.set("line-clamp", js.undefined)
+    def setMargin(value: MarginProperty[TLength]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setList-style`(value: ListStyleProperty): Self = this.set("list-style", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def `deleteList-style`: Self = this.set("list-style", js.undefined)
+    def setMask(value: MaskProperty[TLength]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: MarginProperty[TLength]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def `setMask-border`(value: MaskBorderProperty): Self = StObject.set(x, "mask-border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def `setMask-borderUndefined`: Self = StObject.set(x, "mask-border", js.undefined)
     
     @scala.inline
-    def setMask(value: MaskProperty[TLength]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setMotion(value: OffsetProperty[TLength]): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setMask-border`(value: MaskBorderProperty): Self = this.set("mask-border", value.asInstanceOf[js.Any])
+    def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
     
     @scala.inline
-    def `deleteMask-border`: Self = this.set("mask-border", js.undefined)
+    def setOffset(value: OffsetProperty[TLength]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotion(value: OffsetProperty[TLength]): Self = this.set("motion", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMotion: Self = this.set("motion", js.undefined)
+    def setOutline(value: OutlineProperty[TLength]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: OffsetProperty[TLength]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOverflow(value: OverflowProperty): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutline(value: OutlineProperty[TLength]): Self = this.set("outline", value.asInstanceOf[js.Any])
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def deleteOutline: Self = this.set("outline", js.undefined)
+    def setPadding(value: PaddingProperty[TLength]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: OverflowProperty): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    def `setPlace-items`(value: PlaceItemsProperty): Self = StObject.set(x, "place-items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: PaddingProperty[TLength]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def `setPlace-itemsUndefined`: Self = StObject.set(x, "place-items", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def `setPlace-self`(value: PlaceSelfProperty): Self = StObject.set(x, "place-self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPlace-items`(value: PlaceItemsProperty): Self = this.set("place-items", value.asInstanceOf[js.Any])
+    def `setPlace-selfUndefined`: Self = StObject.set(x, "place-self", js.undefined)
     
     @scala.inline
-    def `deletePlace-items`: Self = this.set("place-items", js.undefined)
+    def `setText-decoration`(value: TextDecorationProperty[TLength]): Self = StObject.set(x, "text-decoration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setPlace-self`(value: PlaceSelfProperty): Self = this.set("place-self", value.asInstanceOf[js.Any])
+    def `setText-decorationUndefined`: Self = StObject.set(x, "text-decoration", js.undefined)
     
     @scala.inline
-    def `deletePlace-self`: Self = this.set("place-self", js.undefined)
+    def `setText-emphasis`(value: TextEmphasisProperty): Self = StObject.set(x, "text-emphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-decoration`(value: TextDecorationProperty[TLength]): Self = this.set("text-decoration", value.asInstanceOf[js.Any])
+    def `setText-emphasisUndefined`: Self = StObject.set(x, "text-emphasis", js.undefined)
     
     @scala.inline
-    def `deleteText-decoration`: Self = this.set("text-decoration", js.undefined)
+    def setTransition(value: TransitionProperty): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setText-emphasis`(value: TextEmphasisProperty): Self = this.set("text-emphasis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteText-emphasis`: Self = this.set("text-emphasis", js.undefined)
-    
-    @scala.inline
-    def setTransition(value: TransitionProperty): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
   }
 }

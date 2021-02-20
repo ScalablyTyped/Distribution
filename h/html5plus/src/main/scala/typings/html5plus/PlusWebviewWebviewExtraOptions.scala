@@ -1,6 +1,7 @@
 package typings.html5plus
 
 import typings.html5plus.html5plusStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewExtraOptions extends js.Object {
+trait PlusWebviewWebviewExtraOptions extends StObject {
   
   /**
     * 窗口动画加速
@@ -56,36 +57,24 @@ object PlusWebviewWebviewExtraOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewExtraOptionsOps[Self <: PlusWebviewWebviewExtraOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewExtraOptionsMutableBuilder[Self <: PlusWebviewWebviewExtraOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleration(value: auto): Self = StObject.set(x, "acceleration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccelerationUndefined: Self = StObject.set(x, "acceleration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapture(value: PlusNativeObjBitmap): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceleration(value: auto): Self = this.set("acceleration", value.asInstanceOf[js.Any])
+    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
     @scala.inline
-    def deleteAcceleration: Self = this.set("acceleration", js.undefined)
+    def setOtherCapture(value: PlusNativeObjBitmap): Self = StObject.set(x, "otherCapture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapture(value: PlusNativeObjBitmap): Self = this.set("capture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCapture: Self = this.set("capture", js.undefined)
-    
-    @scala.inline
-    def setOtherCapture(value: PlusNativeObjBitmap): Self = this.set("otherCapture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOtherCapture: Self = this.set("otherCapture", js.undefined)
+    def setOtherCaptureUndefined: Self = StObject.set(x, "otherCapture", js.undefined)
   }
 }

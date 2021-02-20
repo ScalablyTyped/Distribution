@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.i18n.XCollator
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * sorted after your modifications, you should call {@link XSortableGridData.sortByColumn()} , again.
   */
 @js.native
-trait SortableGridDataModel
-  extends XMutableGridDataModel
-     with XSortableGridData {
+trait SortableGridDataModel extends XSortableMutableGridDataModel {
   
   /**
     * creates a new instance of the `SortableGridDataModel`
@@ -93,24 +92,12 @@ object SortableGridDataModel {
   }
   
   @scala.inline
-  implicit class SortableGridDataModelOps[Self <: SortableGridDataModel] (val x: Self) extends AnyVal {
+  implicit class SortableGridDataModelMutableBuilder[Self <: SortableGridDataModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: XMutableGridDataModel => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreate(value: XMutableGridDataModel => Unit): Self = this.set("create", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateWithCollator(value: (XMutableGridDataModel, XCollator) => Unit): Self = this.set("createWithCollator", js.Any.fromFunction2(value))
+    def setCreateWithCollator(value: (XMutableGridDataModel, XCollator) => Unit): Self = StObject.set(x, "createWithCollator", js.Any.fromFunction2(value))
   }
 }

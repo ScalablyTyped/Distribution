@@ -7,14 +7,14 @@ import typings.pulumiKubernetes.priorityLevelConfigurationMod.PriorityLevelConfi
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", JSImport.Namespace)
-@js.native
-object flowcontrolV1alpha1Mod extends js.Object {
+object flowcontrolV1alpha1Mod {
   
+  @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchema")
   @js.native
   class FlowSchema protected ()
     extends typings.pulumiKubernetes.flowSchemaMod.FlowSchema {
@@ -31,8 +31,7 @@ object flowcontrolV1alpha1Mod extends js.Object {
     def this(name: String, args: FlowSchemaArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object FlowSchema extends js.Object {
+  object FlowSchema {
     
     /**
       * Get an existing FlowSchema resource's state with the given name, ID, and optional extra
@@ -42,16 +41,23 @@ object flowcontrolV1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchema.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.flowSchemaMod.FlowSchema = js.native
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchema.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.flowSchemaMod.FlowSchema = js.native
     
     /**
       * Returns true if the given object is an instance of FlowSchema.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchema.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/flowSchema.FlowSchema */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchemaList")
   @js.native
   class FlowSchemaList protected ()
     extends typings.pulumiKubernetes.flowSchemaListMod.FlowSchemaList {
@@ -68,8 +74,7 @@ object flowcontrolV1alpha1Mod extends js.Object {
     def this(name: String, args: FlowSchemaListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object FlowSchemaList extends js.Object {
+  object FlowSchemaList {
     
     /**
       * Get an existing FlowSchemaList resource's state with the given name, ID, and optional extra
@@ -79,16 +84,23 @@ object flowcontrolV1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchemaList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.flowSchemaListMod.FlowSchemaList = js.native
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchemaList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.flowSchemaListMod.FlowSchemaList = js.native
     
     /**
       * Returns true if the given object is an instance of FlowSchemaList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "FlowSchemaList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/flowSchemaList.FlowSchemaList */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfiguration")
   @js.native
   class PriorityLevelConfiguration protected ()
     extends typings.pulumiKubernetes.priorityLevelConfigurationMod.PriorityLevelConfiguration {
@@ -105,8 +117,7 @@ object flowcontrolV1alpha1Mod extends js.Object {
     def this(name: String, args: PriorityLevelConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PriorityLevelConfiguration extends js.Object {
+  object PriorityLevelConfiguration {
     
     /**
       * Get an existing PriorityLevelConfiguration resource's state with the given name, ID, and optional extra
@@ -116,16 +127,23 @@ object flowcontrolV1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.priorityLevelConfigurationMod.PriorityLevelConfiguration = js.native
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfiguration.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.priorityLevelConfigurationMod.PriorityLevelConfiguration = js.native
     
     /**
       * Returns true if the given object is an instance of PriorityLevelConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfiguration.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/priorityLevelConfiguration.PriorityLevelConfiguration */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfigurationList")
   @js.native
   class PriorityLevelConfigurationList protected ()
     extends typings.pulumiKubernetes.priorityLevelConfigurationListMod.PriorityLevelConfigurationList {
@@ -142,8 +160,7 @@ object flowcontrolV1alpha1Mod extends js.Object {
     def this(name: String, args: PriorityLevelConfigurationListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object PriorityLevelConfigurationList extends js.Object {
+  object PriorityLevelConfigurationList {
     
     /**
       * Get an existing PriorityLevelConfigurationList resource's state with the given name, ID, and optional extra
@@ -153,13 +170,19 @@ object flowcontrolV1alpha1Mod extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfigurationList.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiKubernetes.priorityLevelConfigurationListMod.PriorityLevelConfigurationList = js.native
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfigurationList.get")
+    @js.native
     def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.priorityLevelConfigurationListMod.PriorityLevelConfigurationList = js.native
     
     /**
       * Returns true if the given object is an instance of PriorityLevelConfigurationList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/kubernetes/flowcontrol/v1alpha1", "PriorityLevelConfigurationList.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/priorityLevelConfigurationList.PriorityLevelConfigurationList */ Boolean = js.native
   }
 }

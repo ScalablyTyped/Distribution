@@ -1,5 +1,6 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * rules for a given sheet.
   */
 @js.native
-trait ConditionalFormatRule extends js.Object {
+trait ConditionalFormatRule extends StObject {
   
   def copy(): ConditionalFormatRuleBuilder = js.native
   
@@ -34,30 +35,18 @@ object ConditionalFormatRule {
   }
   
   @scala.inline
-  implicit class ConditionalFormatRuleOps[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
+  implicit class ConditionalFormatRuleMutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopy(value: () => ConditionalFormatRuleBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBooleanCondition(value: () => BooleanCondition | Null): Self = StObject.set(x, "getBooleanCondition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetGradientCondition(value: () => GradientCondition | Null): Self = StObject.set(x, "getGradientCondition", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCopy(value: () => ConditionalFormatRuleBuilder): Self = this.set("copy", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetBooleanCondition(value: () => BooleanCondition | Null): Self = this.set("getBooleanCondition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetGradientCondition(value: () => GradientCondition | Null): Self = this.set("getGradientCondition", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetRanges(value: () => js.Array[Range]): Self = this.set("getRanges", js.Any.fromFunction0(value))
+    def setGetRanges(value: () => js.Array[Range]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
   }
 }

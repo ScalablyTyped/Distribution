@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsRedshiftClusterHsmStatus extends js.Object {
+trait AwsRedshiftClusterHsmStatus extends StObject {
   
   /**
     * The name of the HSM client certificate that the Amazon Redshift cluster uses to retrieve the data encryption keys that are stored in an HSM.
@@ -31,36 +32,24 @@ object AwsRedshiftClusterHsmStatus {
   }
   
   @scala.inline
-  implicit class AwsRedshiftClusterHsmStatusOps[Self <: AwsRedshiftClusterHsmStatus] (val x: Self) extends AnyVal {
+  implicit class AwsRedshiftClusterHsmStatusMutableBuilder[Self <: AwsRedshiftClusterHsmStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHsmClientCertificateIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHsmClientCertificateIdentifierUndefined: Self = StObject.set(x, "HsmClientCertificateIdentifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHsmConfigurationIdentifier(value: NonEmptyString): Self = StObject.set(x, "HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmClientCertificateIdentifier(value: NonEmptyString): Self = this.set("HsmClientCertificateIdentifier", value.asInstanceOf[js.Any])
+    def setHsmConfigurationIdentifierUndefined: Self = StObject.set(x, "HsmConfigurationIdentifier", js.undefined)
     
     @scala.inline
-    def deleteHsmClientCertificateIdentifier: Self = this.set("HsmClientCertificateIdentifier", js.undefined)
+    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmConfigurationIdentifier(value: NonEmptyString): Self = this.set("HsmConfigurationIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHsmConfigurationIdentifier: Self = this.set("HsmConfigurationIdentifier", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

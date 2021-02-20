@@ -2,6 +2,7 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ckeditor.CKEDITOR.htmlParser.basicWriter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,36 +47,24 @@ object htmlWriter {
   }
   
   @scala.inline
-  implicit class htmlWriterOps[Self <: htmlWriter] (val x: Self) extends AnyVal {
+  implicit class htmlWriterMutableBuilder[Self <: htmlWriter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndentation(value: () => Unit): Self = StObject.set(x, "indentation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndentationChars(value: String): Self = StObject.set(x, "indentationChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineBreak(value: () => Unit): Self = StObject.set(x, "lineBreak", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIndentation(value: () => Unit): Self = this.set("indentation", js.Any.fromFunction0(value))
+    def setLineBreakChars(value: String): Self = StObject.set(x, "lineBreakChars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentationChars(value: String): Self = this.set("indentationChars", value.asInstanceOf[js.Any])
+    def setSelfClosingEnd(value: String): Self = StObject.set(x, "selfClosingEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineBreak(value: () => Unit): Self = this.set("lineBreak", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLineBreakChars(value: String): Self = this.set("lineBreakChars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelfClosingEnd(value: String): Self = this.set("selfClosingEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetRules(value: (String, StringDictionary[js.Any]) => Unit): Self = this.set("setRules", js.Any.fromFunction2(value))
+    def setSetRules(value: (String, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "setRules", js.Any.fromFunction2(value))
   }
 }

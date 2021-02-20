@@ -1,11 +1,12 @@
 package typings.awsSdk.applicationautoscalingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeScheduledActionsResponse extends js.Object {
+trait DescribeScheduledActionsResponse extends StObject {
   
   /**
     * The token required to get the next set of results. This value is null if there are no more results to return.
@@ -26,33 +27,21 @@ object DescribeScheduledActionsResponse {
   }
   
   @scala.inline
-  implicit class DescribeScheduledActionsResponseOps[Self <: DescribeScheduledActionsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeScheduledActionsResponseMutableBuilder[Self <: DescribeScheduledActionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScheduledActions(value: ScheduledActions): Self = StObject.set(x, "ScheduledActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setScheduledActionsUndefined: Self = StObject.set(x, "ScheduledActions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setScheduledActionsVarargs(value: ScheduledAction*): Self = this.set("ScheduledActions", js.Array(value :_*))
-    
-    @scala.inline
-    def setScheduledActions(value: ScheduledActions): Self = this.set("ScheduledActions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduledActions: Self = this.set("ScheduledActions", js.undefined)
+    def setScheduledActionsVarargs(value: ScheduledAction*): Self = StObject.set(x, "ScheduledActions", js.Array(value :_*))
   }
 }

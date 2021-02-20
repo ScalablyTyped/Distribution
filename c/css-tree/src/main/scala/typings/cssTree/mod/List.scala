@@ -1,12 +1,13 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("css-tree", "List")
 @js.native
-class List[TData] () extends js.Object {
+class List[TData] () extends StObject {
   
   def append(item: ListItem[TData]): List[TData] = js.native
   

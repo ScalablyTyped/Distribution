@@ -2,13 +2,14 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import typings.std.SafeArray
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxDocument Class */
 @js.native
-trait FaxDocument extends js.Object {
+trait FaxDocument extends StObject {
   
   /** Whether to attach a fax to the receipt */
   var AttachFaxToReceipt: Boolean = js.native

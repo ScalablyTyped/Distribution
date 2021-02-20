@@ -1,11 +1,12 @@
 package typings.monacoEditor.mod.languages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignatureHelp extends js.Object {
+trait SignatureHelp extends StObject {
   
   /**
     * The active parameter of the active signature.
@@ -31,30 +32,18 @@ object SignatureHelp {
   }
   
   @scala.inline
-  implicit class SignatureHelpOps[Self <: SignatureHelp] (val x: Self) extends AnyVal {
+  implicit class SignatureHelpMutableBuilder[Self <: SignatureHelp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveParameter(value: Double): Self = StObject.set(x, "activeParameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveSignature(value: Double): Self = StObject.set(x, "activeSignature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignatures(value: js.Array[SignatureInformation]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveParameter(value: Double): Self = this.set("activeParameter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setActiveSignature(value: Double): Self = this.set("activeSignature", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignaturesVarargs(value: SignatureInformation*): Self = this.set("signatures", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignatures(value: js.Array[SignatureInformation]): Self = this.set("signatures", value.asInstanceOf[js.Any])
+    def setSignaturesVarargs(value: SignatureInformation*): Self = StObject.set(x, "signatures", js.Array(value :_*))
   }
 }

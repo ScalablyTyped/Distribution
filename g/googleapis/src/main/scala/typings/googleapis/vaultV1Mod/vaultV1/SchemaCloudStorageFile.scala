@@ -1,5 +1,6 @@
 package typings.googleapis.vaultV1Mod.vaultV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An export file on cloud storage
   */
 @js.native
-trait SchemaCloudStorageFile extends js.Object {
+trait SchemaCloudStorageFile extends StObject {
   
   /**
     * The cloud storage bucket name of this export file. Can be used in cloud
@@ -41,42 +42,30 @@ object SchemaCloudStorageFile {
   }
   
   @scala.inline
-  implicit class SchemaCloudStorageFileOps[Self <: SchemaCloudStorageFile] (val x: Self) extends AnyVal {
+  implicit class SchemaCloudStorageFileMutableBuilder[Self <: SchemaCloudStorageFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("bucketName", value.asInstanceOf[js.Any])
+    def setMd5HashUndefined: Self = StObject.set(x, "md5Hash", js.undefined)
     
     @scala.inline
-    def deleteBucketName: Self = this.set("bucketName", js.undefined)
+    def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMd5Hash(value: String): Self = this.set("md5Hash", value.asInstanceOf[js.Any])
+    def setObjectNameUndefined: Self = StObject.set(x, "objectName", js.undefined)
     
     @scala.inline
-    def deleteMd5Hash: Self = this.set("md5Hash", js.undefined)
+    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectName(value: String): Self = this.set("objectName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectName: Self = this.set("objectName", js.undefined)
-    
-    @scala.inline
-    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

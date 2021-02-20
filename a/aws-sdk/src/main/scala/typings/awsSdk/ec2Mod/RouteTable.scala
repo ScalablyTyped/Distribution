@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteTable extends js.Object {
+trait RouteTable extends StObject {
   
   /**
     * The associations between the route table and one or more subnets or a gateway.
@@ -51,72 +52,60 @@ object RouteTable {
   }
   
   @scala.inline
-  implicit class RouteTableOps[Self <: RouteTable] (val x: Self) extends AnyVal {
+  implicit class RouteTableMutableBuilder[Self <: RouteTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociations(value: RouteTableAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociationsVarargs(value: RouteTableAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
     
     @scala.inline
-    def setAssociationsVarargs(value: RouteTableAssociation*): Self = this.set("Associations", js.Array(value :_*))
+    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociations(value: RouteTableAssociationList): Self = this.set("Associations", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteAssociations: Self = this.set("Associations", js.undefined)
+    def setPropagatingVgws(value: PropagatingVgwList): Self = StObject.set(x, "PropagatingVgws", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setPropagatingVgwsUndefined: Self = StObject.set(x, "PropagatingVgws", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setPropagatingVgwsVarargs(value: PropagatingVgw*): Self = StObject.set(x, "PropagatingVgws", js.Array(value :_*))
     
     @scala.inline
-    def setPropagatingVgwsVarargs(value: PropagatingVgw*): Self = this.set("PropagatingVgws", js.Array(value :_*))
+    def setRouteTableId(value: String): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropagatingVgws(value: PropagatingVgwList): Self = this.set("PropagatingVgws", value.asInstanceOf[js.Any])
+    def setRouteTableIdUndefined: Self = StObject.set(x, "RouteTableId", js.undefined)
     
     @scala.inline
-    def deletePropagatingVgws: Self = this.set("PropagatingVgws", js.undefined)
+    def setRoutes(value: RouteList): Self = StObject.set(x, "Routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteTableId(value: String): Self = this.set("RouteTableId", value.asInstanceOf[js.Any])
+    def setRoutesUndefined: Self = StObject.set(x, "Routes", js.undefined)
     
     @scala.inline
-    def deleteRouteTableId: Self = this.set("RouteTableId", js.undefined)
+    def setRoutesVarargs(value: Route*): Self = StObject.set(x, "Routes", js.Array(value :_*))
     
     @scala.inline
-    def setRoutesVarargs(value: Route*): Self = this.set("Routes", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutes(value: RouteList): Self = this.set("Routes", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteRoutes: Self = this.set("Routes", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

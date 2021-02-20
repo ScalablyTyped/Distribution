@@ -4,24 +4,29 @@ import typings.amapJsApi.AMap.LocationValue
 import typings.amapJsApi.AMap.convertFrom.Result
 import typings.amapJsApi.AMap.convertFrom.SearchStatus
 import typings.amapJsApi.AMap.convertFrom.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.convertFrom")
-@js.native
-object convertFrom extends js.Object {
+object convertFrom {
   
+  @JSGlobal("AMap.convertFrom")
+  @js.native
   def apply(
     lnglat: js.Array[LocationValue],
     `type`: Null,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]
   ): Unit = js.native
+  @JSGlobal("AMap.convertFrom")
+  @js.native
   def apply(
     lnglat: js.Array[LocationValue],
     `type`: Type,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | Result, Unit]
   ): Unit = js.native
+  @JSGlobal("AMap.convertFrom")
+  @js.native
   def apply(
     lnglat: LocationValue,
     `type`: Null,
@@ -33,6 +38,8 @@ object convertFrom extends js.Object {
     * @param type 用于说明是哪个服务商的坐标
     * @param callback 转换完成后的回调函数
     */
+  @JSGlobal("AMap.convertFrom")
+  @js.native
   def apply(
     lnglat: LocationValue,
     `type`: Type,

@@ -15,6 +15,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.rowsChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.valueChanged
 import typings.std.CustomEvent
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -126,9 +127,7 @@ trait ojTextArea
   @JSName("setProperty")
   def setProperty_rows(property: rows, value: Double): Unit = js.native
 }
-@JSImport("@oracle/oraclejet/ojinputtext", "ojTextArea")
-@js.native
-object ojTextArea extends js.Object {
+object ojTextArea {
   
   type ojAnimateEnd = CustomEvent[Action]
   

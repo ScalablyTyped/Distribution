@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FacetResult extends js.Object {
+trait FacetResult extends StObject {
   
   /**
     * The key for the facet values. This is the same as the DocumentAttributeKey provided in the query.
@@ -31,39 +32,27 @@ object FacetResult {
   }
   
   @scala.inline
-  implicit class FacetResultOps[Self <: FacetResult] (val x: Self) extends AnyVal {
+  implicit class FacetResultMutableBuilder[Self <: FacetResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentAttributeKeyUndefined: Self = StObject.set(x, "DocumentAttributeKey", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentAttributeValueCountPairs(value: DocumentAttributeValueCountPairList): Self = StObject.set(x, "DocumentAttributeValueCountPairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentAttributeKey(value: DocumentAttributeKey): Self = this.set("DocumentAttributeKey", value.asInstanceOf[js.Any])
+    def setDocumentAttributeValueCountPairsUndefined: Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.undefined)
     
     @scala.inline
-    def deleteDocumentAttributeKey: Self = this.set("DocumentAttributeKey", js.undefined)
+    def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = StObject.set(x, "DocumentAttributeValueCountPairs", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentAttributeValueCountPairsVarargs(value: DocumentAttributeValueCountPair*): Self = this.set("DocumentAttributeValueCountPairs", js.Array(value :_*))
+    def setDocumentAttributeValueType(value: DocumentAttributeValueType): Self = StObject.set(x, "DocumentAttributeValueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentAttributeValueCountPairs(value: DocumentAttributeValueCountPairList): Self = this.set("DocumentAttributeValueCountPairs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentAttributeValueCountPairs: Self = this.set("DocumentAttributeValueCountPairs", js.undefined)
-    
-    @scala.inline
-    def setDocumentAttributeValueType(value: DocumentAttributeValueType): Self = this.set("DocumentAttributeValueType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDocumentAttributeValueType: Self = this.set("DocumentAttributeValueType", js.undefined)
+    def setDocumentAttributeValueTypeUndefined: Self = StObject.set(x, "DocumentAttributeValueType", js.undefined)
   }
 }

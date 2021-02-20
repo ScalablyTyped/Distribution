@@ -1,6 +1,7 @@
 package typings.chromeApps.chrome.runtime
 
 import typings.chromeApps.chromeAppsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,36 +25,24 @@ object AutomationNonInteractive {
   }
   
   @scala.inline
-  implicit class AutomationNonInteractiveOps[Self <: AutomationNonInteractive] (val x: Self) extends AnyVal {
+  implicit class AutomationNonInteractiveMutableBuilder[Self <: AutomationNonInteractive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDesktop(value: `false`): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInteract(value: `false`): Self = StObject.set(x, "interact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInteract(value: `false`): Self = this.set("interact", value.asInstanceOf[js.Any])
+    def setMatches(value: js.Array[String | UrlMatches]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDesktop(value: `false`): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def deleteDesktop: Self = this.set("desktop", js.undefined)
-    
-    @scala.inline
-    def setMatchesVarargs(value: (String | UrlMatches)*): Self = this.set("matches", js.Array(value :_*))
-    
-    @scala.inline
-    def setMatches(value: js.Array[String | UrlMatches]): Self = this.set("matches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatches: Self = this.set("matches", js.undefined)
+    def setMatchesVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

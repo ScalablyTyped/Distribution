@@ -7,6 +7,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,30 +61,18 @@ object XPresentation2 {
   }
   
   @scala.inline
-  implicit class XPresentation2Ops[Self <: XPresentation2] (val x: Self) extends AnyVal {
+  implicit class XPresentation2MutableBuilder[Self <: XPresentation2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setController(value: XSlideShowController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetController(value: () => XSlideShowController): Self = StObject.set(x, "getController", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setController(value: XSlideShowController): Self = this.set("Controller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetController(value: () => XSlideShowController): Self = this.set("getController", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsRunning(value: () => Boolean): Self = this.set("isRunning", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartWithArguments(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("startWithArguments", js.Any.fromFunction1(value))
+    def setStartWithArguments(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "startWithArguments", js.Any.fromFunction1(value))
   }
 }

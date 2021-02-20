@@ -1,11 +1,12 @@
 package typings.awsSdk.elbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTagsInput extends js.Object {
+trait DescribeTagsInput extends StObject {
   
   /**
     * The names of the load balancers.
@@ -21,24 +22,12 @@ object DescribeTagsInput {
   }
   
   @scala.inline
-  implicit class DescribeTagsInputOps[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
+  implicit class DescribeTagsInputMutableBuilder[Self <: DescribeTagsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadBalancerNames(value: LoadBalancerNamesMax20): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoadBalancerNamesVarargs(value: AccessPointName*): Self = this.set("LoadBalancerNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setLoadBalancerNames(value: LoadBalancerNamesMax20): Self = this.set("LoadBalancerNames", value.asInstanceOf[js.Any])
+    def setLoadBalancerNamesVarargs(value: AccessPointName*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
   }
 }

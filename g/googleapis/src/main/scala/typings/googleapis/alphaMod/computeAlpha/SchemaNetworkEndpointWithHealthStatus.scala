@@ -1,11 +1,12 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaNetworkEndpointWithHealthStatus extends js.Object {
+trait SchemaNetworkEndpointWithHealthStatus extends StObject {
   
   /**
     * [Output only] The health status of network endpoint;
@@ -26,33 +27,21 @@ object SchemaNetworkEndpointWithHealthStatus {
   }
   
   @scala.inline
-  implicit class SchemaNetworkEndpointWithHealthStatusOps[Self <: SchemaNetworkEndpointWithHealthStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaNetworkEndpointWithHealthStatusMutableBuilder[Self <: SchemaNetworkEndpointWithHealthStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealths(value: js.Array[SchemaHealthStatusForNetworkEndpoint]): Self = StObject.set(x, "healths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthsUndefined: Self = StObject.set(x, "healths", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHealthsVarargs(value: SchemaHealthStatusForNetworkEndpoint*): Self = StObject.set(x, "healths", js.Array(value :_*))
     
     @scala.inline
-    def setHealthsVarargs(value: SchemaHealthStatusForNetworkEndpoint*): Self = this.set("healths", js.Array(value :_*))
+    def setNetworkEndpoint(value: SchemaNetworkEndpoint): Self = StObject.set(x, "networkEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealths(value: js.Array[SchemaHealthStatusForNetworkEndpoint]): Self = this.set("healths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealths: Self = this.set("healths", js.undefined)
-    
-    @scala.inline
-    def setNetworkEndpoint(value: SchemaNetworkEndpoint): Self = this.set("networkEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkEndpoint: Self = this.set("networkEndpoint", js.undefined)
+    def setNetworkEndpointUndefined: Self = StObject.set(x, "networkEndpoint", js.undefined)
   }
 }

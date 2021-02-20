@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "Ingest")
 @js.native
-class Ingest () extends js.Object {
+class Ingest () extends StObject {
   
   def deletePipeline(params: IngestDeletePipelineParams): js.Promise[_] = js.native
   def deletePipeline(

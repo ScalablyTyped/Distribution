@@ -8,6 +8,7 @@ import typings.activexMsxml2.activexMsxml2Numbers.`256`
 import typings.activexMsxml2.activexMsxml2Numbers.`2`
 import typings.activexMsxml2.activexMsxml2Numbers.`4`
 import typings.activexMsxml2.activexMsxml2Numbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMsxml2.activexMsxml2Numbers.`1`
   - typings.activexMsxml2.activexMsxml2Numbers.`16`
 */
-trait _SCHEMADERIVATIONMETHOD extends js.Object
+trait _SCHEMADERIVATIONMETHOD extends StObject
 object _SCHEMADERIVATIONMETHOD {
   
   @scala.inline

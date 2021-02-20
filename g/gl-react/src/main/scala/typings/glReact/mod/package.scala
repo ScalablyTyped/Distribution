@@ -1,10 +1,14 @@
 package typings.glReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 package object mod {
+  
+  @scala.inline
+  def GLSL(strings: typings.std.TemplateStringsArray, values: js.Any*): java.lang.String = (typings.glReact.mod.^.asInstanceOf[js.Dynamic].applyDynamic("GLSL")(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   type ShadersSheet = org.scalablytyped.runtime.StringDictionary[typings.glReact.mod.ShaderIdentifier]
   

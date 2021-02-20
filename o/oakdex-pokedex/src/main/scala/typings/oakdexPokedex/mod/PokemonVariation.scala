@@ -1,12 +1,13 @@
 package typings.oakdexPokedex.mod
 
 import typings.oakdexPokedex.anon.Jump
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PokemonVariation extends js.Object {
+trait PokemonVariation extends StObject {
   
   var abilities: js.UndefOr[js.Array[String]] = js.native
   
@@ -39,84 +40,72 @@ object PokemonVariation {
   }
   
   @scala.inline
-  implicit class PokemonVariationOps[Self <: PokemonVariation] (val x: Self) extends AnyVal {
+  implicit class PokemonVariationMutableBuilder[Self <: PokemonVariation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbilities(value: js.Array[String]): Self = StObject.set(x, "abilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbilitiesUndefined: Self = StObject.set(x, "abilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbilitiesVarargs(value: String*): Self = StObject.set(x, "abilities", js.Array(value :_*))
     
     @scala.inline
-    def setNames(value: Translations): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setBase_stats(value: StatObject): Self = StObject.set(x, "base_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    def setBase_statsUndefined: Self = StObject.set(x, "base_stats", js.undefined)
     
     @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbilitiesVarargs(value: String*): Self = this.set("abilities", js.Array(value :_*))
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def setAbilities(value: js.Array[String]): Self = this.set("abilities", value.asInstanceOf[js.Any])
+    def setHeight_eu(value: String): Self = StObject.set(x, "height_eu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAbilities: Self = this.set("abilities", js.undefined)
+    def setHeight_euUndefined: Self = StObject.set(x, "height_eu", js.undefined)
     
     @scala.inline
-    def setBase_stats(value: StatObject): Self = this.set("base_stats", value.asInstanceOf[js.Any])
+    def setHeight_us(value: String): Self = StObject.set(x, "height_us", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBase_stats: Self = this.set("base_stats", js.undefined)
+    def setHeight_usUndefined: Self = StObject.set(x, "height_us", js.undefined)
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setImage_suffix(value: String): Self = StObject.set(x, "image_suffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setImage_suffixUndefined: Self = StObject.set(x, "image_suffix", js.undefined)
     
     @scala.inline
-    def setHeight_eu(value: String): Self = this.set("height_eu", value.asInstanceOf[js.Any])
+    def setNames(value: Translations): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeight_eu: Self = this.set("height_eu", js.undefined)
+    def setPokeathlon_stats(value: Jump): Self = StObject.set(x, "pokeathlon_stats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight_us(value: String): Self = this.set("height_us", value.asInstanceOf[js.Any])
+    def setPokeathlon_statsUndefined: Self = StObject.set(x, "pokeathlon_stats", js.undefined)
     
     @scala.inline
-    def deleteHeight_us: Self = this.set("height_us", js.undefined)
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage_suffix(value: String): Self = this.set("image_suffix", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     
     @scala.inline
-    def deleteImage_suffix: Self = this.set("image_suffix", js.undefined)
+    def setWeight_eu(value: String): Self = StObject.set(x, "weight_eu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPokeathlon_stats(value: Jump): Self = this.set("pokeathlon_stats", value.asInstanceOf[js.Any])
+    def setWeight_euUndefined: Self = StObject.set(x, "weight_eu", js.undefined)
     
     @scala.inline
-    def deletePokeathlon_stats: Self = this.set("pokeathlon_stats", js.undefined)
+    def setWeight_us(value: String): Self = StObject.set(x, "weight_us", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWeight_eu(value: String): Self = this.set("weight_eu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight_eu: Self = this.set("weight_eu", js.undefined)
-    
-    @scala.inline
-    def setWeight_us(value: String): Self = this.set("weight_us", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight_us: Self = this.set("weight_us", js.undefined)
+    def setWeight_usUndefined: Self = StObject.set(x, "weight_us", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewaySpec extends js.Object {
+trait VirtualGatewaySpec extends StObject {
   
   /**
     * A reference to an object that represents the defaults for backends.
@@ -28,36 +29,24 @@ object VirtualGatewaySpec {
   }
   
   @scala.inline
-  implicit class VirtualGatewaySpecOps[Self <: VirtualGatewaySpec] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewaySpecMutableBuilder[Self <: VirtualGatewaySpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackendDefaults(value: VirtualGatewayBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListeners(value: VirtualGatewayListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListenersVarargs(value: VirtualGatewayListener*): Self = this.set("listeners", js.Array(value :_*))
+    def setListenersVarargs(value: VirtualGatewayListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
     
     @scala.inline
-    def setListeners(value: VirtualGatewayListeners): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    def setLogging(value: VirtualGatewayLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackendDefaults(value: VirtualGatewayBackendDefaults): Self = this.set("backendDefaults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackendDefaults: Self = this.set("backendDefaults", js.undefined)
-    
-    @scala.inline
-    def setLogging(value: VirtualGatewayLogging): Self = this.set("logging", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
   }
 }

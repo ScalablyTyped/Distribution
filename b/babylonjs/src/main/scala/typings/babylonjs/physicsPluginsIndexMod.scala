@@ -1,13 +1,13 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Physics/Plugins/index", JSImport.Namespace)
-@js.native
-object physicsPluginsIndexMod extends js.Object {
+object physicsPluginsIndexMod {
   
+  @JSImport("babylonjs/Physics/Plugins/index", "AmmoJSPlugin")
   @js.native
   /**
     * Initializes the ammoJS plugin
@@ -38,16 +38,22 @@ object physicsPluginsIndexMod extends js.Object {
     def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
   }
   /* static members */
-  @js.native
-  object AmmoJSPlugin extends js.Object {
+  object AmmoJSPlugin {
     
+    @JSImport("babylonjs/Physics/Plugins/index", "AmmoJSPlugin.DISABLE_COLLISION_FLAG")
+    @js.native
     val DISABLE_COLLISION_FLAG: js.Any = js.native
     
+    @JSImport("babylonjs/Physics/Plugins/index", "AmmoJSPlugin.DISABLE_DEACTIVATION_FLAG")
+    @js.native
     val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
     
+    @JSImport("babylonjs/Physics/Plugins/index", "AmmoJSPlugin.KINEMATIC_FLAG")
+    @js.native
     val KINEMATIC_FLAG: js.Any = js.native
   }
   
+  @JSImport("babylonjs/Physics/Plugins/index", "CannonJSPlugin")
   @js.native
   class CannonJSPlugin ()
     extends typings.babylonjs.cannonJSPluginMod.CannonJSPlugin {
@@ -64,6 +70,7 @@ object physicsPluginsIndexMod extends js.Object {
     def this(_useDeltaForWorldStep: Boolean, iterations: Double, cannonInjection: js.Any) = this()
   }
   
+  @JSImport("babylonjs/Physics/Plugins/index", "OimoJSPlugin")
   @js.native
   class OimoJSPlugin ()
     extends typings.babylonjs.oimoJSPluginMod.OimoJSPlugin {

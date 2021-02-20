@@ -1,12 +1,13 @@
 package typings.jpm.anon
 
 import typings.jpm.FFAddonSDK.BrowserWindow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IsPrivate extends js.Object {
+trait IsPrivate extends StObject {
   
   var isPrivate: js.UndefOr[Boolean] = js.native
   
@@ -29,51 +30,39 @@ object IsPrivate {
   }
   
   @scala.inline
-  implicit class IsPrivateOps[Self <: IsPrivate] (val x: Self) extends AnyVal {
+  implicit class IsPrivateMutableBuilder[Self <: IsPrivate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnActivate(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
     @scala.inline
-    def setIsPrivate(value: Boolean): Self = this.set("isPrivate", value.asInstanceOf[js.Any])
+    def setOnClose(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsPrivate: Self = this.set("isPrivate", js.undefined)
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setOnActivate(value: /* window */ BrowserWindow => _): Self = this.set("onActivate", js.Any.fromFunction1(value))
+    def setOnDeactivate(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnActivate: Self = this.set("onActivate", js.undefined)
+    def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
     @scala.inline
-    def setOnClose(value: /* window */ BrowserWindow => _): Self = this.set("onClose", js.Any.fromFunction1(value))
+    def setOnOpen(value: /* window */ BrowserWindow => _): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     
     @scala.inline
-    def setOnDeactivate(value: /* window */ BrowserWindow => _): Self = this.set("onDeactivate", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDeactivate: Self = this.set("onDeactivate", js.undefined)
-    
-    @scala.inline
-    def setOnOpen(value: /* window */ BrowserWindow => _): Self = this.set("onOpen", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

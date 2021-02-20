@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SynonymInfo extends js.Object {
+trait SynonymInfo extends StObject {
   
   val AntonymList: js.Any = js.native
   
@@ -58,57 +59,45 @@ object SynonymInfo {
   }
   
   @scala.inline
-  implicit class SynonymInfoOps[Self <: SynonymInfo] (val x: Self) extends AnyVal {
+  implicit class SynonymInfoMutableBuilder[Self <: SynonymInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAntonymList(value: js.Any): Self = StObject.set(x, "AntonymList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAntonymList(value: js.Any): Self = this.set("AntonymList", value.asInstanceOf[js.Any])
+    def setFound(value: Boolean): Self = StObject.set(x, "Found", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setMeaningCount(value: Double): Self = StObject.set(x, "MeaningCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setMeaningList(value: js.Any): Self = StObject.set(x, "MeaningList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFound(value: Boolean): Self = this.set("Found", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeaningCount(value: Double): Self = this.set("MeaningCount", value.asInstanceOf[js.Any])
+    def setPartOfSpeechList(value: js.Any): Self = StObject.set(x, "PartOfSpeechList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeaningList(value: js.Any): Self = this.set("MeaningList", value.asInstanceOf[js.Any])
+    def setRelatedExpressionList(value: js.Any): Self = StObject.set(x, "RelatedExpressionList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRelatedWordList(value: js.Any): Self = StObject.set(x, "RelatedWordList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartOfSpeechList(value: js.Any): Self = this.set("PartOfSpeechList", value.asInstanceOf[js.Any])
+    def setSynonymList(value: js.Any => js.Any): Self = StObject.set(x, "SynonymList", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRelatedExpressionList(value: js.Any): Self = this.set("RelatedExpressionList", value.asInstanceOf[js.Any])
+    def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelatedWordList(value: js.Any): Self = this.set("RelatedWordList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSynonymList(value: js.Any => js.Any): Self = this.set("SynonymList", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWord(value: String): Self = this.set("Word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotSynonymInfo_typekey(value: SynonymInfo): Self = this.set("Word.SynonymInfo_typekey", value.asInstanceOf[js.Any])
+    def setWordDotSynonymInfo_typekey(value: SynonymInfo): Self = StObject.set(x, "Word.SynonymInfo_typekey", value.asInstanceOf[js.Any])
   }
 }

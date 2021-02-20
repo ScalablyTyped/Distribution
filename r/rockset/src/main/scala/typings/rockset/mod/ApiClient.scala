@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiClient extends js.Object {
+trait ApiClient extends StObject {
   
   var apiKeys: ApiKeysApi = js.native
   
@@ -41,42 +42,30 @@ object ApiClient {
   }
   
   @scala.inline
-  implicit class ApiClientOps[Self <: ApiClient] (val x: Self) extends AnyVal {
+  implicit class ApiClientMutableBuilder[Self <: ApiClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiKeys(value: ApiKeysApi): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollections(value: CollectionsApi): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocuments(value: DocumentsApi): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeys(value: ApiKeysApi): Self = this.set("apiKeys", value.asInstanceOf[js.Any])
+    def setIntegrations(value: IntegrationsApi): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollections(value: CollectionsApi): Self = this.set("collections", value.asInstanceOf[js.Any])
+    def setOrganizations(value: OrganizationsApi): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocuments(value: DocumentsApi): Self = this.set("documents", value.asInstanceOf[js.Any])
+    def setQueries(value: QueriesApi): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrations(value: IntegrationsApi): Self = this.set("integrations", value.asInstanceOf[js.Any])
+    def setUsers(value: UsersApi): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizations(value: OrganizationsApi): Self = this.set("organizations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueries(value: QueriesApi): Self = this.set("queries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsers(value: UsersApi): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkspaces(value: WorkspacesApi): Self = this.set("workspaces", value.asInstanceOf[js.Any])
+    def setWorkspaces(value: WorkspacesApi): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
   }
 }

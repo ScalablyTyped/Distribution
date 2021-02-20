@@ -1,11 +1,12 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoneType extends js.Object {
+trait ZoneType extends StObject {
   
   /**
     * load patch for specified native module, allow user to
@@ -55,39 +56,27 @@ object ZoneType {
   }
   
   @scala.inline
-  implicit class ZoneTypeOps[Self <: ZoneType] (val x: Self) extends AnyVal {
+  implicit class ZoneTypeMutableBuilder[Self <: ZoneType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssertZonePatched(value: () => Unit): Self = StObject.set(x, "assertZonePatched", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrent(value: Zone): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentTask(value: Task): Self = StObject.set(x, "currentTask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set__load_patch(value: (String, PatchFn) => Unit): Self = this.set("__load_patch", js.Any.fromFunction2(value))
+    def setCurrentTaskNull: Self = StObject.set(x, "currentTask", null)
     
     @scala.inline
-    def set__symbol__(value: String => String): Self = this.set("__symbol__", js.Any.fromFunction1(value))
+    def setRoot(value: Zone): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssertZonePatched(value: () => Unit): Self = this.set("assertZonePatched", js.Any.fromFunction0(value))
+    def set__load_patch(value: (String, PatchFn) => Unit): Self = StObject.set(x, "__load_patch", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCurrent(value: Zone): Self = this.set("current", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoot(value: Zone): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTask(value: Task): Self = this.set("currentTask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCurrentTaskNull: Self = this.set("currentTask", null)
+    def set__symbol__(value: String => String): Self = StObject.set(x, "__symbol__", js.Any.fromFunction1(value))
   }
 }

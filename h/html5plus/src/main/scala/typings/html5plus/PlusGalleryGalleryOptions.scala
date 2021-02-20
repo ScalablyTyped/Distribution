@@ -3,6 +3,7 @@ package typings.html5plus
 import typings.html5plus.html5plusStrings.image
 import typings.html5plus.html5plusStrings.none
 import typings.html5plus.html5plusStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/gallery.html](http://www.html5plus.org/doc/zh_cn/gallery.html)
   */
 @js.native
-trait PlusGalleryGalleryOptions extends js.Object {
+trait PlusGalleryGalleryOptions extends StObject {
   
   /**
     * 是否显示系统相册文件选择界面的动画
@@ -104,75 +105,63 @@ object PlusGalleryGalleryOptions {
   }
   
   @scala.inline
-  implicit class PlusGalleryGalleryOptionsOps[Self <: PlusGalleryGalleryOptions] (val x: Self) extends AnyVal {
+  implicit class PlusGalleryGalleryOptionsMutableBuilder[Self <: PlusGalleryGalleryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setFilter(value: image | video | none): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteFilename: Self = this.set("filename", js.undefined)
+    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: image | video | none): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setOnmaxed(value: () => Unit): Self = StObject.set(x, "onmaxed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    def setOnmaxedUndefined: Self = StObject.set(x, "onmaxed", js.undefined)
     
     @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    def setPopover(value: PlusGalleryPopPosition): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnmaxed(value: () => Unit): Self = this.set("onmaxed", js.Any.fromFunction0(value))
+    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
     @scala.inline
-    def deleteOnmaxed: Self = this.set("onmaxed", js.undefined)
+    def setSelected(value: js.Array[_]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopover(value: PlusGalleryPopPosition): Self = this.set("popover", value.asInstanceOf[js.Any])
+    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     @scala.inline
-    def deletePopover: Self = this.set("popover", js.undefined)
+    def setSelectedVarargs(value: js.Any*): Self = StObject.set(x, "selected", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedVarargs(value: js.Any*): Self = this.set("selected", js.Array(value :_*))
+    def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected(value: js.Array[_]): Self = this.set("selected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected: Self = this.set("selected", js.undefined)
-    
-    @scala.inline
-    def setSystem(value: Boolean): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
   }
 }

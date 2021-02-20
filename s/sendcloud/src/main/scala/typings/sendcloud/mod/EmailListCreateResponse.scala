@@ -2,12 +2,13 @@ package typings.sendcloud.mod
 
 import typings.sendcloud.anon.Createdat
 import typings.sendcloud.sendcloudStrings.success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EmailListCreateResponse extends js.Object {
+trait EmailListCreateResponse extends StObject {
   
   var list: Createdat = js.native
   
@@ -22,24 +23,12 @@ object EmailListCreateResponse {
   }
   
   @scala.inline
-  implicit class EmailListCreateResponseOps[Self <: EmailListCreateResponse] (val x: Self) extends AnyVal {
+  implicit class EmailListCreateResponseMutableBuilder[Self <: EmailListCreateResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setList(value: Createdat): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setList(value: Createdat): Self = this.set("list", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: success): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

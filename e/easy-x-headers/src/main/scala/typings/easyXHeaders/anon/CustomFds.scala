@@ -1,11 +1,12 @@
 package typings.easyXHeaders.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomFds extends js.Object {
+trait CustomFds extends StObject {
   
   var customFds: js.UndefOr[js.Any] = js.native
   
@@ -32,66 +33,54 @@ object CustomFds {
   }
   
   @scala.inline
-  implicit class CustomFdsOps[Self <: CustomFds] (val x: Self) extends AnyVal {
+  implicit class CustomFdsMutableBuilder[Self <: CustomFds] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomFds(value: js.Any): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomFdsUndefined: Self = StObject.set(x, "customFds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomFds(value: js.Any): Self = this.set("customFds", value.asInstanceOf[js.Any])
+    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
     @scala.inline
-    def deleteCustomFds: Self = this.set("customFds", js.undefined)
+    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     @scala.inline
-    def deleteCwd: Self = this.set("cwd", js.undefined)
+    def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    def setKillSignal(value: String): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Any): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKillSignal(value: String): Self = this.set("killSignal", value.asInstanceOf[js.Any])
+    def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
     
     @scala.inline
-    def deleteKillSignal: Self = this.set("killSignal", js.undefined)
+    def setStdio(value: js.Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxBuffer(value: Double): Self = this.set("maxBuffer", value.asInstanceOf[js.Any])
+    def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     
     @scala.inline
-    def deleteMaxBuffer: Self = this.set("maxBuffer", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdio(value: js.Any): Self = this.set("stdio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdio: Self = this.set("stdio", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

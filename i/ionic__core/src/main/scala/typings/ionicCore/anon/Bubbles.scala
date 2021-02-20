@@ -1,11 +1,12 @@
 package typings.ionicCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bubbles extends js.Object {
+trait Bubbles extends StObject {
   
   var bubbles: Circles = js.native
   
@@ -39,39 +40,27 @@ object Bubbles {
   }
   
   @scala.inline
-  implicit class BubblesOps[Self <: Bubbles] (val x: Self) extends AnyVal {
+  implicit class BubblesMutableBuilder[Self <: Bubbles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBubbles(value: Circles): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCircles(value: Circles): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCircular(value: Dur): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubbles(value: Circles): Self = this.set("bubbles", value.asInstanceOf[js.Any])
+    def setCrescent(value: Fn): Self = StObject.set(x, "crescent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircles(value: Circles): Self = this.set("circles", value.asInstanceOf[js.Any])
+    def setDots(value: CirclesDur): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircular(value: Dur): Self = this.set("circular", value.asInstanceOf[js.Any])
+    def setLines(value: Lines): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrescent(value: Fn): Self = this.set("crescent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDots(value: CirclesDur): Self = this.set("dots", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLines(value: Lines): Self = this.set("lines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `setLines-small`(value: Lines): Self = this.set("lines-small", value.asInstanceOf[js.Any])
+    def `setLines-small`(value: Lines): Self = StObject.set(x, "lines-small", value.asInstanceOf[js.Any])
   }
 }

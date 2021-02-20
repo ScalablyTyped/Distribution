@@ -1,11 +1,12 @@
 package typings.awsSdk.databrewMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartJobRunResponse extends js.Object {
+trait StartJobRunResponse extends StObject {
   
   /**
     * A system-generated identifier for this particular job run.
@@ -21,21 +22,9 @@ object StartJobRunResponse {
   }
   
   @scala.inline
-  implicit class StartJobRunResponseOps[Self <: StartJobRunResponse] (val x: Self) extends AnyVal {
+  implicit class StartJobRunResponseMutableBuilder[Self <: StartJobRunResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRunId(value: JobRunId): Self = this.set("RunId", value.asInstanceOf[js.Any])
+    def setRunId(value: JobRunId): Self = StObject.set(x, "RunId", value.asInstanceOf[js.Any])
   }
 }

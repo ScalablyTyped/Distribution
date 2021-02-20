@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HandPreference extends js.Object
+sealed trait HandPreference extends StObject
 @JSGlobal("Windows.UI.ViewManagement.HandPreference")
 @js.native
-object HandPreference extends js.Object {
+object HandPreference extends StObject {
   
   @js.native
   sealed trait leftHanded extends HandPreference

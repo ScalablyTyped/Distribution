@@ -1,17 +1,17 @@
 package typings.merklePatriciaTree
 
 import typings.merklePatriciaTree.baseTrieMod.Trie
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("merkle-patricia-tree/dist/scratchReadStream", JSImport.Namespace)
-@js.native
-object scratchReadStreamMod extends js.Object {
+object scratchReadStreamMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  class ScratchReadStream protected () extends js.Object {
+  - Dropped any */ @JSImport("merkle-patricia-tree/dist/scratchReadStream", "ScratchReadStream")
+  @js.native
+  class ScratchReadStream protected () extends StObject {
     def this(trie: Trie) = this()
     
     def _read(): js.Promise[Unit] = js.native

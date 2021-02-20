@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransformStreamDefaultController[O] extends js.Object {
+trait TransformStreamDefaultController[O] extends StObject {
   
   val desiredSize: Double | Null = js.native
   

@@ -1,16 +1,16 @@
 package typings.jestCucumber
 
 import typings.jestCucumber.reportEventGeneratorMod.ReportEventGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-cucumber/dist/src/reporting/formatters/SummaryFormatter", JSImport.Namespace)
-@js.native
-object summaryFormatterMod extends js.Object {
+object summaryFormatterMod {
   
+  @JSImport("jest-cucumber/dist/src/reporting/formatters/SummaryFormatter", "SummaryFormatter")
   @js.native
-  class SummaryFormatter protected () extends js.Object {
+  class SummaryFormatter protected () extends StObject {
     def this(reportEventGenerator: ReportEventGenerator) = this()
   }
 }

@@ -1,12 +1,13 @@
 package typings.tensorflowModelsUniversalSentenceEncoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow-models/universal-sentence-encoder/dist/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
+object utilMod {
   
+  @JSImport("@tensorflow-models/universal-sentence-encoder/dist/util", "stringToChars")
+  @js.native
   def stringToChars(input: String): js.Array[String] = js.native
 }

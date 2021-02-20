@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GlideDuration extends js.Object {
+trait GlideDuration extends StObject {
   
   /**
     * Add the specified duration to the object.
@@ -152,48 +153,36 @@ object GlideDuration {
   }
   
   @scala.inline
-  implicit class GlideDurationOps[Self <: GlideDuration] (val x: Self) extends AnyVal {
+  implicit class GlideDurationMutableBuilder[Self <: GlideDuration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: GlideDuration => GlideDuration): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDayPart(value: () => Double): Self = StObject.set(x, "getDayPart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAdd(value: GlideDuration => GlideDuration): Self = this.set("add", js.Any.fromFunction1(value))
+    def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetByFormat(value: String => String): Self = this.set("getByFormat", js.Any.fromFunction1(value))
+    def setGetDurationValue(value: () => String): Self = StObject.set(x, "getDurationValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDayPart(value: () => Double): Self = this.set("getDayPart", js.Any.fromFunction0(value))
+    def setGetRoundedDayPart(value: () => Double): Self = StObject.set(x, "getRoundedDayPart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayValue(value: () => String): Self = this.set("getDisplayValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDurationValue(value: () => String): Self = this.set("getDurationValue", js.Any.fromFunction0(value))
+    def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRoundedDayPart(value: () => Double): Self = this.set("getRoundedDayPart", js.Any.fromFunction0(value))
+    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetValue(value: () => String): Self = this.set("getValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDisplayValue(value: String => Unit): Self = this.set("setDisplayValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSubtract(value: GlideDuration => GlideDuration): Self = this.set("subtract", js.Any.fromFunction1(value))
+    def setSubtract(value: GlideDuration => GlideDuration): Self = StObject.set(x, "subtract", js.Any.fromFunction1(value))
   }
 }

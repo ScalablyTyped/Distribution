@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSessionsResult extends js.Object {
+trait DescribeSessionsResult extends StObject {
   
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If there are no more pages, this value is null.
@@ -26,33 +27,21 @@ object DescribeSessionsResult {
   }
   
   @scala.inline
-  implicit class DescribeSessionsResultOps[Self <: DescribeSessionsResult] (val x: Self) extends AnyVal {
+  implicit class DescribeSessionsResultMutableBuilder[Self <: DescribeSessionsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSessions(value: SessionList): Self = StObject.set(x, "Sessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSessionsUndefined: Self = StObject.set(x, "Sessions", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSessionsVarargs(value: Session*): Self = this.set("Sessions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSessions(value: SessionList): Self = this.set("Sessions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSessions: Self = this.set("Sessions", js.undefined)
+    def setSessionsVarargs(value: Session*): Self = StObject.set(x, "Sessions", js.Array(value :_*))
   }
 }

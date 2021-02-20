@@ -1,5 +1,6 @@
 package typings.sharepoint.global.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class AccessRequests ()
   extends typings.sharepoint.SP.AccessRequests
-/* static members */
-@JSGlobal("SP.AccessRequests")
-@js.native
-object AccessRequests extends js.Object {
+object AccessRequests {
   
+  /* static member */
+  @JSGlobal("SP.AccessRequests.changeRequestStatus")
+  @js.native
   def changeRequestStatus(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     itemId: Double,
@@ -22,6 +23,9 @@ object AccessRequests extends js.Object {
     permissionLevel: Double
   ): Unit = js.native
   
+  /* static member */
+  @JSGlobal("SP.AccessRequests.changeRequestStatusBulk")
+  @js.native
   def changeRequestStatusBulk(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     requestIds: js.Array[Double],

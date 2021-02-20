@@ -1,17 +1,18 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalAlignment extends js.Object
+sealed trait VerticalAlignment extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.VerticalAlignment")
 @js.native
-object VerticalAlignment extends js.Object {
+object VerticalAlignment extends StObject {
   
   @js.native
   sealed trait bottom extends VerticalAlignment

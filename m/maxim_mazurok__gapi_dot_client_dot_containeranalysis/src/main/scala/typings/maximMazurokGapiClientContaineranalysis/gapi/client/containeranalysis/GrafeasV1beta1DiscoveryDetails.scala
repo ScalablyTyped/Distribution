@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containeranalysis
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GrafeasV1beta1DiscoveryDetails extends js.Object {
+trait GrafeasV1beta1DiscoveryDetails extends StObject {
   
   /** Required. Analysis status for the discovered resource. */
   var discovered: js.UndefOr[Discovered] = js.native
@@ -19,24 +20,12 @@ object GrafeasV1beta1DiscoveryDetails {
   }
   
   @scala.inline
-  implicit class GrafeasV1beta1DiscoveryDetailsOps[Self <: GrafeasV1beta1DiscoveryDetails] (val x: Self) extends AnyVal {
+  implicit class GrafeasV1beta1DiscoveryDetailsMutableBuilder[Self <: GrafeasV1beta1DiscoveryDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiscovered(value: Discovered): Self = StObject.set(x, "discovered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDiscovered(value: Discovered): Self = this.set("discovered", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiscovered: Self = this.set("discovered", js.undefined)
+    def setDiscoveredUndefined: Self = StObject.set(x, "discovered", js.undefined)
   }
 }

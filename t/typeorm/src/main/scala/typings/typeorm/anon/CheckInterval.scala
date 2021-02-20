@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CheckInterval extends js.Object {
+trait CheckInterval extends StObject {
   
   /**
     * How often to run resource timeout checks. (default=0, disabled)
@@ -52,60 +53,48 @@ object CheckInterval {
   }
   
   @scala.inline
-  implicit class CheckIntervalOps[Self <: CheckInterval] (val x: Self) extends AnyVal {
+  implicit class CheckIntervalMutableBuilder[Self <: CheckInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckInterval(value: Double): Self = this.set("checkInterval", value.asInstanceOf[js.Any])
+    def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
     
     @scala.inline
-    def deleteCheckInterval: Self = this.set("checkInterval", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleTimeout(value: Double): Self = this.set("idleTimeout", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteIdleTimeout: Self = this.set("idleTimeout", js.undefined)
+    def setMaxWaitingRequests(value: Double): Self = StObject.set(x, "maxWaitingRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxWaitingRequestsUndefined: Self = StObject.set(x, "maxWaitingRequests", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWaitingRequests(value: Double): Self = this.set("maxWaitingRequests", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMaxWaitingRequests: Self = this.set("maxWaitingRequests", js.undefined)
+    def setPoolErrorHandler(value: /* err */ js.Any => _): Self = StObject.set(x, "poolErrorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setPoolErrorHandlerUndefined: Self = StObject.set(x, "poolErrorHandler", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolErrorHandler(value: /* err */ js.Any => _): Self = this.set("poolErrorHandler", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deletePoolErrorHandler: Self = this.set("poolErrorHandler", js.undefined)
-    
-    @scala.inline
-    def setRequestTimeout(value: Double): Self = this.set("requestTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestTimeout: Self = this.set("requestTimeout", js.undefined)
+    def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BShowIndicator extends js.Object {
+trait BShowIndicator extends StObject {
   
   /**
     * Whether to show the indicator of the device.
@@ -26,30 +27,18 @@ object BShowIndicator {
   }
   
   @scala.inline
-  implicit class BShowIndicatorOps[Self <: BShowIndicator] (val x: Self) extends AnyVal {
+  implicit class BShowIndicatorMutableBuilder[Self <: BShowIndicator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBShowIndicator(value: Boolean): Self = StObject.set(x, "bShowIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBShowIndicatorUndefined: Self = StObject.set(x, "bShowIndicator", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBShowUI(value: Boolean): Self = StObject.set(x, "bShowUI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBShowIndicator(value: Boolean): Self = this.set("bShowIndicator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBShowIndicator: Self = this.set("bShowIndicator", js.undefined)
-    
-    @scala.inline
-    def setBShowUI(value: Boolean): Self = this.set("bShowUI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBShowUI: Self = this.set("bShowUI", js.undefined)
+    def setBShowUIUndefined: Self = StObject.set(x, "bShowUI", js.undefined)
   }
 }

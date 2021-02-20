@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentBusyStatus extends js.Object
+sealed trait AppointmentBusyStatus extends StObject
 /** Specifies the busy status for a participant of an appointment. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentBusyStatus")
 @js.native
-object AppointmentBusyStatus extends js.Object {
+object AppointmentBusyStatus extends StObject {
   
   /** The participant is busy and so can't attend the appointment. */
   @js.native

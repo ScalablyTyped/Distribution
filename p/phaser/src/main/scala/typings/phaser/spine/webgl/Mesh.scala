@@ -4,6 +4,7 @@ import typings.phaser.spine.Disposable
 import typings.phaser.spine.Restorable
 import typings.std.Float32Array
 import typings.std.Uint16Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,102 +110,90 @@ object Mesh {
   }
   
   @scala.inline
-  implicit class MeshOps[Self <: Mesh] (val x: Self) extends AnyVal {
+  implicit class MeshMutableBuilder[Self <: Mesh] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBind(value: Shader => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setDirtyIndices(value: js.Any): Self = StObject.set(x, "dirtyIndices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBind(value: Shader => Unit): Self = this.set("bind", js.Any.fromFunction1(value))
+    def setDirtyVertices(value: js.Any): Self = StObject.set(x, "dirtyVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setDraw(value: (Shader, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDirtyIndices(value: js.Any): Self = this.set("dirtyIndices", value.asInstanceOf[js.Any])
+    def setDrawWithOffset(value: (Shader, Double, Double, Double) => Unit): Self = StObject.set(x, "drawWithOffset", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setDirtyVertices(value: js.Any): Self = this.set("dirtyVertices", value.asInstanceOf[js.Any])
+    def setElementsPerVertex(value: js.Any): Self = StObject.set(x, "elementsPerVertex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDraw(value: (Shader, Double) => Unit): Self = this.set("draw", js.Any.fromFunction2(value))
+    def setGetAttributes(value: () => js.Array[VertexAttribute]): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrawWithOffset(value: (Shader, Double, Double, Double) => Unit): Self = this.set("drawWithOffset", js.Any.fromFunction4(value))
+    def setGetIndices(value: () => Uint16Array): Self = StObject.set(x, "getIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setElementsPerVertex(value: js.Any): Self = this.set("elementsPerVertex", value.asInstanceOf[js.Any])
+    def setGetVertexSizeInFloats(value: () => Double): Self = StObject.set(x, "getVertexSizeInFloats", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAttributes(value: () => js.Array[VertexAttribute]): Self = this.set("getAttributes", js.Any.fromFunction0(value))
+    def setGetVertices(value: () => Float32Array): Self = StObject.set(x, "getVertices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndices(value: () => Uint16Array): Self = this.set("getIndices", js.Any.fromFunction0(value))
+    def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVertexSizeInFloats(value: () => Double): Self = this.set("getVertexSizeInFloats", js.Any.fromFunction0(value))
+    def setIndicesBuffer(value: js.Any): Self = StObject.set(x, "indicesBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetVertices(value: () => Float32Array): Self = this.set("getVertices", js.Any.fromFunction0(value))
+    def setIndicesLength(value: js.Any): Self = StObject.set(x, "indicesLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndices(value: js.Any): Self = this.set("indices", value.asInstanceOf[js.Any])
+    def setMaxIndices(value: () => Double): Self = StObject.set(x, "maxIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIndicesBuffer(value: js.Any): Self = this.set("indicesBuffer", value.asInstanceOf[js.Any])
+    def setMaxVertices(value: () => Double): Self = StObject.set(x, "maxVertices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIndicesLength(value: js.Any): Self = this.set("indicesLength", value.asInstanceOf[js.Any])
+    def setNumIndices(value: () => Double): Self = StObject.set(x, "numIndices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxIndices(value: () => Double): Self = this.set("maxIndices", js.Any.fromFunction0(value))
+    def setNumVertices(value: () => Double): Self = StObject.set(x, "numVertices", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMaxVertices(value: () => Double): Self = this.set("maxVertices", js.Any.fromFunction0(value))
+    def setSetIndices(value: js.Array[Double] => Unit): Self = StObject.set(x, "setIndices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumIndices(value: () => Double): Self = this.set("numIndices", js.Any.fromFunction0(value))
+    def setSetIndicesLength(value: Double => Unit): Self = StObject.set(x, "setIndicesLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNumVertices(value: () => Double): Self = this.set("numVertices", js.Any.fromFunction0(value))
+    def setSetVertices(value: js.Array[Double] => Unit): Self = StObject.set(x, "setVertices", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIndices(value: js.Array[Double] => Unit): Self = this.set("setIndices", js.Any.fromFunction1(value))
+    def setSetVerticesLength(value: Double => Unit): Self = StObject.set(x, "setVerticesLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIndicesLength(value: Double => Unit): Self = this.set("setIndicesLength", js.Any.fromFunction1(value))
+    def setUnbind(value: Shader => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVertices(value: js.Array[Double] => Unit): Self = this.set("setVertices", js.Any.fromFunction1(value))
+    def setUpdate(value: js.Any): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetVerticesLength(value: Double => Unit): Self = this.set("setVerticesLength", js.Any.fromFunction1(value))
+    def setVertices(value: js.Any): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnbind(value: Shader => Unit): Self = this.set("unbind", js.Any.fromFunction1(value))
+    def setVerticesBuffer(value: js.Any): Self = StObject.set(x, "verticesBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate(value: js.Any): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertices(value: js.Any): Self = this.set("vertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticesBuffer(value: js.Any): Self = this.set("verticesBuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticesLength(value: js.Any): Self = this.set("verticesLength", value.asInstanceOf[js.Any])
+    def setVerticesLength(value: js.Any): Self = StObject.set(x, "verticesLength", value.asInstanceOf[js.Any])
   }
 }

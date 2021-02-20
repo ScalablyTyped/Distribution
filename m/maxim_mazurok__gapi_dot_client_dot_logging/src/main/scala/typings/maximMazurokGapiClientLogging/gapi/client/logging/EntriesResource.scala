@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientLogging.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientLogging.anon.AltCallback
 import typings.maximMazurokGapiClientLogging.anon.CallbackFields
 import typings.maximMazurokGapiClientLogging.anon.FieldsKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntriesResource extends js.Object {
+trait EntriesResource extends StObject {
   
   /**
     * Lists log entries. Use this method to retrieve log entries that originated from a project/folder/organization/billing account. For ways to export log entries, see Exporting Logs

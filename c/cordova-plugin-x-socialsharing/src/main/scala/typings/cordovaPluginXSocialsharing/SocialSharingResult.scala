@@ -1,11 +1,12 @@
 package typings.cordovaPluginXSocialsharing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SocialSharingResult extends js.Object {
+trait SocialSharingResult extends StObject {
   
   var app: js.UndefOr[String] = js.native
   
@@ -20,27 +21,15 @@ object SocialSharingResult {
   }
   
   @scala.inline
-  implicit class SocialSharingResultOps[Self <: SocialSharingResult] (val x: Self) extends AnyVal {
+  implicit class SocialSharingResultMutableBuilder[Self <: SocialSharingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompleted(value: Boolean): Self = this.set("completed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApp: Self = this.set("app", js.undefined)
+    def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
   }
 }

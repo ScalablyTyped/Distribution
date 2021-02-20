@@ -1,6 +1,7 @@
 package typings.extjs.Ext.grid
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,66 +42,54 @@ object ILockable {
   }
   
   @scala.inline
-  implicit class ILockableOps[Self <: ILockable] (val x: Self) extends AnyVal {
+  implicit class ILockableMutableBuilder[Self <: ILockable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLockedGridConfig(value: js.Any): Self = StObject.set(x, "lockedGridConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockedGridConfigUndefined: Self = StObject.set(x, "lockedGridConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLockedViewConfig(value: js.Any): Self = StObject.set(x, "lockedViewConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockedGridConfig(value: js.Any): Self = this.set("lockedGridConfig", value.asInstanceOf[js.Any])
+    def setLockedViewConfigUndefined: Self = StObject.set(x, "lockedViewConfig", js.undefined)
     
     @scala.inline
-    def deleteLockedGridConfig: Self = this.set("lockedGridConfig", js.undefined)
+    def setNormalGridConfig(value: js.Any): Self = StObject.set(x, "normalGridConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockedViewConfig(value: js.Any): Self = this.set("lockedViewConfig", value.asInstanceOf[js.Any])
+    def setNormalGridConfigUndefined: Self = StObject.set(x, "normalGridConfig", js.undefined)
     
     @scala.inline
-    def deleteLockedViewConfig: Self = this.set("lockedViewConfig", js.undefined)
+    def setNormalViewConfig(value: js.Any): Self = StObject.set(x, "normalViewConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalGridConfig(value: js.Any): Self = this.set("normalGridConfig", value.asInstanceOf[js.Any])
+    def setNormalViewConfigUndefined: Self = StObject.set(x, "normalViewConfig", js.undefined)
     
     @scala.inline
-    def deleteNormalGridConfig: Self = this.set("normalGridConfig", js.undefined)
+    def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalViewConfig(value: js.Any): Self = this.set("normalViewConfig", value.asInstanceOf[js.Any])
+    def setScrollDeltaUndefined: Self = StObject.set(x, "scrollDelta", js.undefined)
     
     @scala.inline
-    def deleteNormalViewConfig: Self = this.set("normalViewConfig", js.undefined)
+    def setSubGridXType(value: String): Self = StObject.set(x, "subGridXType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollDelta(value: Double): Self = this.set("scrollDelta", value.asInstanceOf[js.Any])
+    def setSubGridXTypeUndefined: Self = StObject.set(x, "subGridXType", js.undefined)
     
     @scala.inline
-    def deleteScrollDelta: Self = this.set("scrollDelta", js.undefined)
+    def setSyncRowHeight(value: Boolean): Self = StObject.set(x, "syncRowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubGridXType(value: String): Self = this.set("subGridXType", value.asInstanceOf[js.Any])
+    def setSyncRowHeightUndefined: Self = StObject.set(x, "syncRowHeight", js.undefined)
     
     @scala.inline
-    def deleteSubGridXType: Self = this.set("subGridXType", js.undefined)
+    def setSyncRowHeights(value: () => Unit): Self = StObject.set(x, "syncRowHeights", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSyncRowHeight(value: Boolean): Self = this.set("syncRowHeight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncRowHeight: Self = this.set("syncRowHeight", js.undefined)
-    
-    @scala.inline
-    def setSyncRowHeights(value: () => Unit): Self = this.set("syncRowHeights", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteSyncRowHeights: Self = this.set("syncRowHeights", js.undefined)
+    def setSyncRowHeightsUndefined: Self = StObject.set(x, "syncRowHeights", js.undefined)
   }
 }

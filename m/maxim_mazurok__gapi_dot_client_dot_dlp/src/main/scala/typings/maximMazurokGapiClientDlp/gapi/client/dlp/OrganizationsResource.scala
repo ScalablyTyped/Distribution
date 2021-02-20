@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OrganizationsResource extends js.Object {
+trait OrganizationsResource extends StObject {
   
   var deidentifyTemplates: DeidentifyTemplatesResource = js.native
   
@@ -29,30 +30,18 @@ object OrganizationsResource {
   }
   
   @scala.inline
-  implicit class OrganizationsResourceOps[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
+  implicit class OrganizationsResourceMutableBuilder[Self <: OrganizationsResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = StObject.set(x, "deidentifyTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInspectTemplates(value: InspectTemplatesResource): Self = StObject.set(x, "inspectTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeidentifyTemplates(value: DeidentifyTemplatesResource): Self = this.set("deidentifyTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInspectTemplates(value: InspectTemplatesResource): Self = this.set("inspectTemplates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLocations(value: LocationsResource): Self = this.set("locations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStoredInfoTypes(value: StoredInfoTypesResource): Self = this.set("storedInfoTypes", value.asInstanceOf[js.Any])
+    def setStoredInfoTypes(value: StoredInfoTypesResource): Self = StObject.set(x, "storedInfoTypes", value.asInstanceOf[js.Any])
   }
 }

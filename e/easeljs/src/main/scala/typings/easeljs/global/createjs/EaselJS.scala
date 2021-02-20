@@ -1,5 +1,6 @@
 package typings.easeljs.global.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class EaselJS ()
   extends typings.easeljs.createjs.EaselJS
 /* static members */
-@JSGlobal("createjs.EaselJS")
-@js.native
-object EaselJS extends js.Object {
+object EaselJS {
+  
+  @JSGlobal("createjs.EaselJS")
+  @js.native
+  val ^ : js.Any = js.native
   
   // properties
-  var buildDate: String = js.native
+  @JSGlobal("createjs.EaselJS.buildDate")
+  @js.native
+  def buildDate: String = js.native
+  @scala.inline
+  def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
   
-  var version: String = js.native
+  @JSGlobal("createjs.EaselJS.version")
+  @js.native
+  def version: String = js.native
+  @scala.inline
+  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

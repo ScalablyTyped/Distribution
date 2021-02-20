@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeHapgResponse extends js.Object {
+trait DescribeHapgResponse extends StObject {
   
   /**
     * The ARN of the high-availability partition group.
@@ -61,84 +62,72 @@ object DescribeHapgResponse {
   }
   
   @scala.inline
-  implicit class DescribeHapgResponseOps[Self <: DescribeHapgResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeHapgResponseMutableBuilder[Self <: DescribeHapgResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHapgArnUndefined: Self = StObject.set(x, "HapgArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHapgSerial(value: String): Self = StObject.set(x, "HapgSerial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHapgArn(value: HapgArn): Self = this.set("HapgArn", value.asInstanceOf[js.Any])
+    def setHapgSerialUndefined: Self = StObject.set(x, "HapgSerial", js.undefined)
     
     @scala.inline
-    def deleteHapgArn: Self = this.set("HapgArn", js.undefined)
+    def setHsmsLastActionFailed(value: HsmList): Self = StObject.set(x, "HsmsLastActionFailed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHapgSerial(value: String): Self = this.set("HapgSerial", value.asInstanceOf[js.Any])
+    def setHsmsLastActionFailedUndefined: Self = StObject.set(x, "HsmsLastActionFailed", js.undefined)
     
     @scala.inline
-    def deleteHapgSerial: Self = this.set("HapgSerial", js.undefined)
+    def setHsmsLastActionFailedVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsLastActionFailed", js.Array(value :_*))
     
     @scala.inline
-    def setHsmsLastActionFailedVarargs(value: HsmArn*): Self = this.set("HsmsLastActionFailed", js.Array(value :_*))
+    def setHsmsPendingDeletion(value: HsmList): Self = StObject.set(x, "HsmsPendingDeletion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmsLastActionFailed(value: HsmList): Self = this.set("HsmsLastActionFailed", value.asInstanceOf[js.Any])
+    def setHsmsPendingDeletionUndefined: Self = StObject.set(x, "HsmsPendingDeletion", js.undefined)
     
     @scala.inline
-    def deleteHsmsLastActionFailed: Self = this.set("HsmsLastActionFailed", js.undefined)
+    def setHsmsPendingDeletionVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsPendingDeletion", js.Array(value :_*))
     
     @scala.inline
-    def setHsmsPendingDeletionVarargs(value: HsmArn*): Self = this.set("HsmsPendingDeletion", js.Array(value :_*))
+    def setHsmsPendingRegistration(value: HsmList): Self = StObject.set(x, "HsmsPendingRegistration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmsPendingDeletion(value: HsmList): Self = this.set("HsmsPendingDeletion", value.asInstanceOf[js.Any])
+    def setHsmsPendingRegistrationUndefined: Self = StObject.set(x, "HsmsPendingRegistration", js.undefined)
     
     @scala.inline
-    def deleteHsmsPendingDeletion: Self = this.set("HsmsPendingDeletion", js.undefined)
+    def setHsmsPendingRegistrationVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsPendingRegistration", js.Array(value :_*))
     
     @scala.inline
-    def setHsmsPendingRegistrationVarargs(value: HsmArn*): Self = this.set("HsmsPendingRegistration", js.Array(value :_*))
+    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHsmsPendingRegistration(value: HsmList): Self = this.set("HsmsPendingRegistration", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def deleteHsmsPendingRegistration: Self = this.set("HsmsPendingRegistration", js.undefined)
+    def setLastModifiedTimestamp(value: Timestamp): Self = StObject.set(x, "LastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Label): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setLastModifiedTimestampUndefined: Self = StObject.set(x, "LastModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setPartitionSerialList(value: PartitionSerialList): Self = StObject.set(x, "PartitionSerialList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTimestamp(value: Timestamp): Self = this.set("LastModifiedTimestamp", value.asInstanceOf[js.Any])
+    def setPartitionSerialListUndefined: Self = StObject.set(x, "PartitionSerialList", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedTimestamp: Self = this.set("LastModifiedTimestamp", js.undefined)
+    def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value :_*))
     
     @scala.inline
-    def setPartitionSerialListVarargs(value: PartitionSerial*): Self = this.set("PartitionSerialList", js.Array(value :_*))
+    def setState(value: CloudHsmObjectState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionSerialList(value: PartitionSerialList): Self = this.set("PartitionSerialList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionSerialList: Self = this.set("PartitionSerialList", js.undefined)
-    
-    @scala.inline
-    def setState(value: CloudHsmObjectState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

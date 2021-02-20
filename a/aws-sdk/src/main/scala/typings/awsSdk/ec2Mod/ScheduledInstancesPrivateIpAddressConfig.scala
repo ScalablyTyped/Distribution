@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledInstancesPrivateIpAddressConfig extends js.Object {
+trait ScheduledInstancesPrivateIpAddressConfig extends StObject {
   
   /**
     * Indicates whether this is a primary IPv4 address. Otherwise, this is a secondary IPv4 address.
@@ -26,30 +27,18 @@ object ScheduledInstancesPrivateIpAddressConfig {
   }
   
   @scala.inline
-  implicit class ScheduledInstancesPrivateIpAddressConfigOps[Self <: ScheduledInstancesPrivateIpAddressConfig] (val x: Self) extends AnyVal {
+  implicit class ScheduledInstancesPrivateIpAddressConfigMutableBuilder[Self <: ScheduledInstancesPrivateIpAddressConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrimary(value: Boolean): Self = StObject.set(x, "Primary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrimaryUndefined: Self = StObject.set(x, "Primary", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimary(value: Boolean): Self = this.set("Primary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimary: Self = this.set("Primary", js.undefined)
-    
-    @scala.inline
-    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
   }
 }

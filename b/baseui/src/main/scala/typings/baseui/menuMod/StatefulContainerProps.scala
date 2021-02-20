@@ -12,12 +12,13 @@ import typings.baseui.baseuiStrings.reset
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatefulContainerProps extends js.Object {
+trait StatefulContainerProps extends StObject {
   
   var addMenuToNesting: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.native
   
@@ -56,116 +57,104 @@ object StatefulContainerProps {
   }
   
   @scala.inline
-  implicit class StatefulContainerPropsOps[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
+  implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddMenuToNesting(value: /* ref */ Ref[HTMLElement] => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMenuToNestingUndefined: Self = StObject.set(x, "addMenuToNesting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildren(value: /* args */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setItemsVarargs(value: ItemT*): Self = this.set("items", js.Array(value :_*))
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setItems(value: ItemsT): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setGetChildMenu(value: /* ref */ Ref[HTMLElement] => Unit): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddMenuToNesting(value: /* ref */ Ref[HTMLElement] => Unit): Self = this.set("addMenuToNesting", js.Any.fromFunction1(value))
+    def setGetChildMenuUndefined: Self = StObject.set(x, "getChildMenu", js.undefined)
     
     @scala.inline
-    def deleteAddMenuToNesting: Self = this.set("addMenuToNesting", js.undefined)
+    def setGetParentMenu(value: /* ref */ Ref[HTMLElement] => Unit): Self = StObject.set(x, "getParentMenu", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildren(value: /* args */ RenderProps => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    def setGetParentMenuUndefined: Self = StObject.set(x, "getParentMenu", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setGetRequiredItemProps(value: (/* item */ js.Any, /* index */ Double) => RenderItemProps): Self = StObject.set(x, "getRequiredItemProps", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetChildMenu(value: /* ref */ Ref[HTMLElement] => Unit): Self = this.set("getChildMenu", js.Any.fromFunction1(value))
+    def setGetRequiredItemPropsUndefined: Self = StObject.set(x, "getRequiredItemProps", js.undefined)
     
     @scala.inline
-    def deleteGetChildMenu: Self = this.set("getChildMenu", js.undefined)
+    def setInitialState(value: StatefulContainerState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetParentMenu(value: /* ref */ Ref[HTMLElement] => Unit): Self = this.set("getParentMenu", js.Any.fromFunction1(value))
+    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def deleteGetParentMenu: Self = this.set("getParentMenu", js.undefined)
+    def setItems(value: ItemsT): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRequiredItemProps(value: (/* item */ js.Any, /* index */ Double) => RenderItemProps): Self = this.set("getRequiredItemProps", js.Any.fromFunction2(value))
+    def setItemsVarargs(value: ItemT*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteGetRequiredItemProps: Self = this.set("getRequiredItemProps", js.undefined)
+    def setKeyboardControlNode(value: Ref[_]): Self = StObject.set(x, "keyboardControlNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialState(value: StatefulContainerState): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    def setKeyboardControlNodeFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "keyboardControlNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    def setKeyboardControlNodeNull: Self = StObject.set(x, "keyboardControlNode", null)
     
     @scala.inline
-    def setKeyboardControlNodeFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("keyboardControlNode", js.Any.fromFunction1(value))
+    def setKeyboardControlNodeUndefined: Self = StObject.set(x, "keyboardControlNode", js.undefined)
     
     @scala.inline
-    def setKeyboardControlNode(value: Ref[_]): Self = this.set("keyboardControlNode", value.asInstanceOf[js.Any])
+    def setOnActiveDescendantChange(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onActiveDescendantChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteKeyboardControlNode: Self = this.set("keyboardControlNode", js.undefined)
+    def setOnActiveDescendantChangeUndefined: Self = StObject.set(x, "onActiveDescendantChange", js.undefined)
     
     @scala.inline
-    def setKeyboardControlNodeNull: Self = this.set("keyboardControlNode", null)
+    def setOnItemSelect(value: /* args */ Item => js.Any): Self = StObject.set(x, "onItemSelect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnActiveDescendantChange(value: /* id */ js.UndefOr[String] => Unit): Self = this.set("onActiveDescendantChange", js.Any.fromFunction1(value))
+    def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
     
     @scala.inline
-    def deleteOnActiveDescendantChange: Self = this.set("onActiveDescendantChange", js.undefined)
+    def setRemoveMenuFromNesting(value: /* ref */ Ref[HTMLElement] => Unit): Self = StObject.set(x, "removeMenuFromNesting", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnItemSelect(value: /* args */ Item => js.Any): Self = this.set("onItemSelect", js.Any.fromFunction1(value))
+    def setRemoveMenuFromNestingUndefined: Self = StObject.set(x, "removeMenuFromNesting", js.undefined)
     
     @scala.inline
-    def deleteOnItemSelect: Self = this.set("onItemSelect", js.undefined)
+    def setRootRef(value: Ref[_]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveMenuFromNesting(value: /* ref */ Ref[HTMLElement] => Unit): Self = this.set("removeMenuFromNesting", js.Any.fromFunction1(value))
+    def setRootRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "rootRef", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRemoveMenuFromNesting: Self = this.set("removeMenuFromNesting", js.undefined)
+    def setRootRefNull: Self = StObject.set(x, "rootRef", null)
     
     @scala.inline
-    def setRootRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("rootRef", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRootRef(value: Ref[_]): Self = this.set("rootRef", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRootRef: Self = this.set("rootRef", js.undefined)
-    
-    @scala.inline
-    def setRootRefNull: Self = this.set("rootRef", null)
+    def setRootRefUndefined: Self = StObject.set(x, "rootRef", js.undefined)
     
     @scala.inline
     def setStateReducer(
       value: (/* changeType */ moveDown | moveUp | reset | enter_ | click | character | focus | mouseEnter, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState
-    ): Self = this.set("stateReducer", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteStateReducer: Self = this.set("stateReducer", js.undefined)
+    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
     
     @scala.inline
-    def setTypeAhead(value: Boolean): Self = this.set("typeAhead", value.asInstanceOf[js.Any])
+    def setTypeAhead(value: Boolean): Self = StObject.set(x, "typeAhead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTypeAhead: Self = this.set("typeAhead", js.undefined)
+    def setTypeAheadUndefined: Self = StObject.set(x, "typeAhead", js.undefined)
   }
 }

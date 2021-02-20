@@ -4,6 +4,7 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,33 +48,21 @@ object XRegressionCurveContainer {
   }
   
   @scala.inline
-  implicit class XRegressionCurveContainerOps[Self <: XRegressionCurveContainer] (val x: Self) extends AnyVal {
+  implicit class XRegressionCurveContainerMutableBuilder[Self <: XRegressionCurveContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "addRegressionCurve", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRegressionCurves(value: () => SafeArray[XRegressionCurve]): Self = StObject.set(x, "getRegressionCurves", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRegressionCurves(value: SafeArray[XRegressionCurve]): Self = StObject.set(x, "RegressionCurves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegressionCurves(value: SafeArray[XRegressionCurve]): Self = this.set("RegressionCurves", value.asInstanceOf[js.Any])
+    def setRemoveRegressionCurve(value: XRegressionCurve => Unit): Self = StObject.set(x, "removeRegressionCurve", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRegressionCurve(value: XRegressionCurve => Unit): Self = this.set("addRegressionCurve", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetRegressionCurves(value: () => SafeArray[XRegressionCurve]): Self = this.set("getRegressionCurves", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveRegressionCurve(value: XRegressionCurve => Unit): Self = this.set("removeRegressionCurve", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRegressionCurves(value: SeqEquiv[XRegressionCurve] => Unit): Self = this.set("setRegressionCurves", js.Any.fromFunction1(value))
+    def setSetRegressionCurves(value: SeqEquiv[XRegressionCurve] => Unit): Self = StObject.set(x, "setRegressionCurves", js.Any.fromFunction1(value))
   }
 }

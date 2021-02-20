@@ -1,5 +1,6 @@
 package typings.googleapis.v1managementMod.gamesManagementV1management
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * experience.
   */
 @js.native
-trait SchemaGamesPlayerExperienceInfoResource extends js.Object {
+trait SchemaGamesPlayerExperienceInfoResource extends StObject {
   
   /**
     * The current number of experience points for the player.
@@ -42,42 +43,30 @@ object SchemaGamesPlayerExperienceInfoResource {
   }
   
   @scala.inline
-  implicit class SchemaGamesPlayerExperienceInfoResourceOps[Self <: SchemaGamesPlayerExperienceInfoResource] (val x: Self) extends AnyVal {
+  implicit class SchemaGamesPlayerExperienceInfoResourceMutableBuilder[Self <: SchemaGamesPlayerExperienceInfoResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentExperiencePoints(value: String): Self = StObject.set(x, "currentExperiencePoints", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentExperiencePointsUndefined: Self = StObject.set(x, "currentExperiencePoints", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentLevel(value: SchemaGamesPlayerLevelResource): Self = StObject.set(x, "currentLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentExperiencePoints(value: String): Self = this.set("currentExperiencePoints", value.asInstanceOf[js.Any])
+    def setCurrentLevelUndefined: Self = StObject.set(x, "currentLevel", js.undefined)
     
     @scala.inline
-    def deleteCurrentExperiencePoints: Self = this.set("currentExperiencePoints", js.undefined)
+    def setLastLevelUpTimestampMillis(value: String): Self = StObject.set(x, "lastLevelUpTimestampMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentLevel(value: SchemaGamesPlayerLevelResource): Self = this.set("currentLevel", value.asInstanceOf[js.Any])
+    def setLastLevelUpTimestampMillisUndefined: Self = StObject.set(x, "lastLevelUpTimestampMillis", js.undefined)
     
     @scala.inline
-    def deleteCurrentLevel: Self = this.set("currentLevel", js.undefined)
+    def setNextLevel(value: SchemaGamesPlayerLevelResource): Self = StObject.set(x, "nextLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastLevelUpTimestampMillis(value: String): Self = this.set("lastLevelUpTimestampMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastLevelUpTimestampMillis: Self = this.set("lastLevelUpTimestampMillis", js.undefined)
-    
-    @scala.inline
-    def setNextLevel(value: SchemaGamesPlayerLevelResource): Self = this.set("nextLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextLevel: Self = this.set("nextLevel", js.undefined)
+    def setNextLevelUndefined: Self = StObject.set(x, "nextLevel", js.undefined)
   }
 }

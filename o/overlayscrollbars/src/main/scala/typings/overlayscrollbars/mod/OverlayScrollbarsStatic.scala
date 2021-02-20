@@ -4,12 +4,13 @@ import typings.overlayscrollbars.anon.Dictindex
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.NodeListOf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverlayScrollbarsStatic extends js.Object {
+trait OverlayScrollbarsStatic extends StObject {
   
   def apply(): js.UndefOr[OverlayScrollbars] = js.native
   def apply(elements: js.Array[Element]): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native

@@ -1,5 +1,6 @@
 package typings.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,39 +25,27 @@ object BarDatasetConfig {
   }
   
   @scala.inline
-  implicit class BarDatasetConfigOps[Self <: BarDatasetConfig] (val x: Self) extends AnyVal {
+  implicit class BarDatasetConfigMutableBuilder[Self <: BarDatasetConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarShadowColor(value: Color): Self = StObject.set(x, "barShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarShadowColorUndefined: Self = StObject.set(x, "barShadowColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHighlightAlpha(value: Double): Self = StObject.set(x, "highlightAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarShadowColor(value: Color): Self = this.set("barShadowColor", value.asInstanceOf[js.Any])
+    def setHighlightAlphaUndefined: Self = StObject.set(x, "highlightAlpha", js.undefined)
     
     @scala.inline
-    def deleteBarShadowColor: Self = this.set("barShadowColor", js.undefined)
+    def setStackLabels(value: js.Array[String]): Self = StObject.set(x, "stackLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighlightAlpha(value: Double): Self = this.set("highlightAlpha", value.asInstanceOf[js.Any])
+    def setStackLabelsUndefined: Self = StObject.set(x, "stackLabels", js.undefined)
     
     @scala.inline
-    def deleteHighlightAlpha: Self = this.set("highlightAlpha", js.undefined)
-    
-    @scala.inline
-    def setStackLabelsVarargs(value: String*): Self = this.set("stackLabels", js.Array(value :_*))
-    
-    @scala.inline
-    def setStackLabels(value: js.Array[String]): Self = this.set("stackLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackLabels: Self = this.set("stackLabels", js.undefined)
+    def setStackLabelsVarargs(value: String*): Self = StObject.set(x, "stackLabels", js.Array(value :_*))
   }
 }

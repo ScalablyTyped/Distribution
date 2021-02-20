@@ -2,6 +2,7 @@ package typings.yup.mod
 
 import typings.std.Record
 import typings.yup.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.yup.mod.SchemaFieldRefDescription
   - typings.yup.mod.SchemaFieldInnerTypeDescription
 */
-trait SchemaFieldDescription extends js.Object
+trait SchemaFieldDescription extends StObject
 object SchemaFieldDescription {
   
   @scala.inline
@@ -21,23 +22,23 @@ object SchemaFieldDescription {
     meta: js.Object,
     tests: js.Array[Name],
     `type`: String
-  ): SchemaFieldDescription = {
+  ): typings.yup.mod.SchemaDescription = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SchemaFieldDescription]
+    __obj.asInstanceOf[typings.yup.mod.SchemaDescription]
   }
   
   @scala.inline
-  def SchemaFieldRefDescription(key: String, `type`: typings.yup.yupStrings.ref): SchemaFieldDescription = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SchemaFieldDescription]
-  }
-  
-  @scala.inline
-  def SchemaFieldInnerTypeDescription(label: String, meta: js.Object, tests: js.Array[Name], `type`: String): SchemaFieldDescription = {
+  def SchemaFieldInnerTypeDescription(label: String, meta: js.Object, tests: js.Array[Name], `type`: String): typings.yup.mod.SchemaFieldInnerTypeDescription = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SchemaFieldDescription]
+    __obj.asInstanceOf[typings.yup.mod.SchemaFieldInnerTypeDescription]
+  }
+  
+  @scala.inline
+  def SchemaFieldRefDescription(key: String, `type`: typings.yup.yupStrings.ref): typings.yup.mod.SchemaFieldRefDescription = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.yup.mod.SchemaFieldRefDescription]
   }
 }

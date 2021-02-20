@@ -8,6 +8,7 @@ import typings.angularCore.angularCoreNumbers.`32`
 import typings.angularCore.angularCoreNumbers.`4`
 import typings.angularCore.angularCoreNumbers.`64`
 import typings.angularCore.angularCoreNumbers.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCore.angularCoreNumbers.`64`
   - typings.angularCore.angularCoreNumbers.`128`
 */
-trait TNodeFlags extends js.Object
+trait TNodeFlags extends StObject
 object TNodeFlags {
   
   /** Bit #5 - This bit is set if the node has any "class" inputs */

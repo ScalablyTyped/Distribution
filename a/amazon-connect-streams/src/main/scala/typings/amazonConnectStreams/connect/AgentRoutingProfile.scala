@@ -1,11 +1,12 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentRoutingProfile extends js.Object {
+trait AgentRoutingProfile extends StObject {
   
   /** See `agent.getChannelConcurrency()` for more info. */
   val channelConcurrencyMap: AgentChannelConcurrencyMap = js.native
@@ -41,39 +42,27 @@ object AgentRoutingProfile {
   }
   
   @scala.inline
-  implicit class AgentRoutingProfileOps[Self <: AgentRoutingProfile] (val x: Self) extends AnyVal {
+  implicit class AgentRoutingProfileMutableBuilder[Self <: AgentRoutingProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelConcurrencyMap(value: AgentChannelConcurrencyMap): Self = StObject.set(x, "channelConcurrencyMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultOutboundQueue(value: Queue): Self = StObject.set(x, "defaultOutboundQueue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelConcurrencyMap(value: AgentChannelConcurrencyMap): Self = this.set("channelConcurrencyMap", value.asInstanceOf[js.Any])
+    def setQueues(value: js.Array[Queue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultOutboundQueue(value: Queue): Self = this.set("defaultOutboundQueue", value.asInstanceOf[js.Any])
+    def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "queues", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRoutingProfileARN(value: String): Self = StObject.set(x, "routingProfileARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueuesVarargs(value: Queue*): Self = this.set("queues", js.Array(value :_*))
-    
-    @scala.inline
-    def setQueues(value: js.Array[Queue]): Self = this.set("queues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutingProfileARN(value: String): Self = this.set("routingProfileARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoutingProfileId(value: String): Self = this.set("routingProfileId", value.asInstanceOf[js.Any])
+    def setRoutingProfileId(value: String): Self = StObject.set(x, "routingProfileId", value.asInstanceOf[js.Any])
   }
 }

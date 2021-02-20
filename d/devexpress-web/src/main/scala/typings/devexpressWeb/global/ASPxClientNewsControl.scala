@@ -1,5 +1,6 @@
 package typings.devexpressWeb.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class ASPxClientNewsControl ()
   extends typings.devexpressWeb.ASPxClientNewsControl
-/* static members */
-@JSGlobal("ASPxClientNewsControl")
-@js.native
-object ASPxClientNewsControl extends js.Object {
+object ASPxClientNewsControl {
   
   /**
     * Converts the specified object to the ASPxClientNewsControl type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
+  /* static member */
+  @JSGlobal("ASPxClientNewsControl.Cast")
+  @js.native
   def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientNewsControl = js.native
 }

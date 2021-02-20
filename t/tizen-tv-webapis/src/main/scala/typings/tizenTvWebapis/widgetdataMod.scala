@@ -2,16 +2,15 @@ package typings.tizenTvWebapis
 
 import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import typings.tizenTvWebapis.webapisMod.SuccessCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tizen-tv-webapis/widgetdata", JSImport.Namespace)
-@js.native
-object widgetdataMod extends js.Object {
+object widgetdataMod {
   
   @js.native
-  trait WidgetDataManager extends js.Object {
+  trait WidgetDataManager extends StObject {
     
     /**
       * Retrieves the plugin version number.

@@ -2,6 +2,7 @@ package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQueryEventObject
 import typings.kendoUi.kendo.mobile.ui.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,42 +27,30 @@ object TouchGesturechangeEvent {
   }
   
   @scala.inline
-  implicit class TouchGesturechangeEventOps[Self <: TouchGesturechangeEvent] (val x: Self) extends AnyVal {
+  implicit class TouchGesturechangeEventMutableBuilder[Self <: TouchGesturechangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenter(value: Point): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def deleteCenter: Self = this.set("center", js.undefined)
+    def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setTouches(value: js.Any): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: JQueryEventObject): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
-    
-    @scala.inline
-    def setTouches(value: js.Any): Self = this.set("touches", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouches: Self = this.set("touches", js.undefined)
+    def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
   }
 }

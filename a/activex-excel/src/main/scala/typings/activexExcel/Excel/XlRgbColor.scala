@@ -135,6 +135,7 @@ import typings.activexExcel.activexExcelNumbers.`9470064`
 import typings.activexExcel.activexExcelNumbers.`9498256`
 import typings.activexExcel.activexExcelNumbers.`9639167`
 import typings.activexExcel.activexExcelNumbers.`9662683`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -276,7 +277,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`65535`
   - typings.activexExcel.activexExcelNumbers.`3329434`
 */
-trait XlRgbColor extends js.Object
+trait XlRgbColor extends StObject
 object XlRgbColor {
   
   @scala.inline

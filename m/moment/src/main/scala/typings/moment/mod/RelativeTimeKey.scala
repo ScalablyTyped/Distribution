@@ -4,6 +4,7 @@ import typings.moment.momentStrings.d_
 import typings.moment.momentStrings.m_
 import typings.moment.momentStrings.mm_
 import typings.moment.momentStrings.w_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.moment.momentStrings.y
   - typings.moment.momentStrings.yy
 */
-trait RelativeTimeKey extends js.Object
+trait RelativeTimeKey extends StObject
 object RelativeTimeKey {
   
   @scala.inline

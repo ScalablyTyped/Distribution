@@ -4,13 +4,14 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL
 import typings.mangopay2NodejsSdk.mod.Timestamp
 import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.BaseUserLegalData, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserLegalData | 'PersonType'> */
 @js.native
-trait CreateUserLegalData extends js.Object {
+trait CreateUserLegalData extends StObject {
   
   var CompanyNumber: js.UndefOr[String] = js.native
   
@@ -59,75 +60,63 @@ object CreateUserLegalData {
   }
   
   @scala.inline
-  implicit class CreateUserLegalDataOps[Self <: CreateUserLegalData] (val x: Self) extends AnyVal {
+  implicit class CreateUserLegalDataMutableBuilder[Self <: CreateUserLegalData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompanyNumber(value: String): Self = StObject.set(x, "CompanyNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompanyNumberUndefined: Self = StObject.set(x, "CompanyNumber", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalPersonType(value: LegalPersonType): Self = this.set("LegalPersonType", value.asInstanceOf[js.Any])
+    def setHeadquartersAddressUndefined: Self = StObject.set(x, "HeadquartersAddress", js.undefined)
     
     @scala.inline
-    def setLegalRepresentativeBirthday(value: Timestamp): Self = this.set("LegalRepresentativeBirthday", value.asInstanceOf[js.Any])
+    def setLegalPersonType(value: LegalPersonType): Self = StObject.set(x, "LegalPersonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalRepresentativeCountryOfResidence(value: CountryISO): Self = this.set("LegalRepresentativeCountryOfResidence", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeAddress(value: AddressType): Self = StObject.set(x, "LegalRepresentativeAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalRepresentativeFirstName(value: String): Self = this.set("LegalRepresentativeFirstName", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeAddressUndefined: Self = StObject.set(x, "LegalRepresentativeAddress", js.undefined)
     
     @scala.inline
-    def setLegalRepresentativeLastName(value: String): Self = this.set("LegalRepresentativeLastName", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeBirthday(value: Timestamp): Self = StObject.set(x, "LegalRepresentativeBirthday", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalRepresentativeNationality(value: CountryISO): Self = this.set("LegalRepresentativeNationality", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeCountryOfResidence(value: CountryISO): Self = StObject.set(x, "LegalRepresentativeCountryOfResidence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeEmail(value: String): Self = StObject.set(x, "LegalRepresentativeEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersonType(value: LEGAL): Self = this.set("PersonType", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeEmailUndefined: Self = StObject.set(x, "LegalRepresentativeEmail", js.undefined)
     
     @scala.inline
-    def setCompanyNumber(value: String): Self = this.set("CompanyNumber", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeFirstName(value: String): Self = StObject.set(x, "LegalRepresentativeFirstName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompanyNumber: Self = this.set("CompanyNumber", js.undefined)
+    def setLegalRepresentativeLastName(value: String): Self = StObject.set(x, "LegalRepresentativeLastName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeadquartersAddress(value: AddressType): Self = this.set("HeadquartersAddress", value.asInstanceOf[js.Any])
+    def setLegalRepresentativeNationality(value: CountryISO): Self = StObject.set(x, "LegalRepresentativeNationality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeadquartersAddress: Self = this.set("HeadquartersAddress", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalRepresentativeAddress(value: AddressType): Self = this.set("LegalRepresentativeAddress", value.asInstanceOf[js.Any])
+    def setPersonType(value: LEGAL): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegalRepresentativeAddress: Self = this.set("LegalRepresentativeAddress", js.undefined)
+    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegalRepresentativeEmail(value: String): Self = this.set("LegalRepresentativeEmail", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLegalRepresentativeEmail: Self = this.set("LegalRepresentativeEmail", js.undefined)
-    
-    @scala.inline
-    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTag: Self = this.set("Tag", js.undefined)
+    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,54 +27,42 @@ object ExternalReferencePolygon {
   }
   
   @scala.inline
-  implicit class ExternalReferencePolygonOps[Self <: ExternalReferencePolygon] (val x: Self) extends AnyVal {
+  implicit class ExternalReferencePolygonMutableBuilder[Self <: ExternalReferencePolygon] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurveRings(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "curveRings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurveRingsUndefined: Self = StObject.set(x, "curveRings", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurveRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "curveRings", js.Array(value :_*))
     
     @scala.inline
-    def setCurveRingsVarargs(value: js.Array[js.Array[Double]]*): Self = this.set("curveRings", js.Array(value :_*))
+    def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveRings(value: js.Array[js.Array[js.Array[Double]]]): Self = this.set("curveRings", value.asInstanceOf[js.Any])
+    def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
     
     @scala.inline
-    def deleteCurveRings: Self = this.set("curveRings", js.undefined)
+    def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasM(value: Boolean): Self = this.set("hasM", value.asInstanceOf[js.Any])
+    def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
     
     @scala.inline
-    def deleteHasM: Self = this.set("hasM", js.undefined)
+    def setRings(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasZ(value: Boolean): Self = this.set("hasZ", value.asInstanceOf[js.Any])
+    def setRingsUndefined: Self = StObject.set(x, "rings", js.undefined)
     
     @scala.inline
-    def deleteHasZ: Self = this.set("hasZ", js.undefined)
+    def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "rings", js.Array(value :_*))
     
     @scala.inline
-    def setRingsVarargs(value: js.Array[js.Array[Double]]*): Self = this.set("rings", js.Array(value :_*))
+    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRings(value: js.Array[js.Array[js.Array[Double]]]): Self = this.set("rings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRings: Self = this.set("rings", js.undefined)
-    
-    @scala.inline
-    def setSpatialReference(value: ExternalReferenceSpatialReference): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
   }
 }

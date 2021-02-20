@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListTablesInput extends js.Object {
+trait ListTablesInput extends StObject {
   
   /**
     * The first table name that this operation will evaluate. Use the value that was returned for LastEvaluatedTableName in a previous operation, so that you can obtain the next page of results.
@@ -26,30 +27,18 @@ object ListTablesInput {
   }
   
   @scala.inline
-  implicit class ListTablesInputOps[Self <: ListTablesInput] (val x: Self) extends AnyVal {
+  implicit class ListTablesInputMutableBuilder[Self <: ListTablesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExclusiveStartTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartTableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExclusiveStartTableNameUndefined: Self = StObject.set(x, "ExclusiveStartTableName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: ListTablesInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveStartTableName(value: TableName): Self = this.set("ExclusiveStartTableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExclusiveStartTableName: Self = this.set("ExclusiveStartTableName", js.undefined)
-    
-    @scala.inline
-    def setLimit(value: ListTablesInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLimit: Self = this.set("Limit", js.undefined)
+    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

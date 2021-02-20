@@ -2,12 +2,13 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.pan
 import typings.arcgisJsApi.arcgisJsApiStrings.rotate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationToggleViewModelProperties extends js.Object {
+trait NavigationToggleViewModelProperties extends StObject {
   
   /**
     * The navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view).
@@ -32,30 +33,18 @@ object NavigationToggleViewModelProperties {
   }
   
   @scala.inline
-  implicit class NavigationToggleViewModelPropertiesOps[Self <: NavigationToggleViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class NavigationToggleViewModelPropertiesMutableBuilder[Self <: NavigationToggleViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNavigationMode(value: pan | rotate): Self = StObject.set(x, "navigationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNavigationModeUndefined: Self = StObject.set(x, "navigationMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationMode(value: pan | rotate): Self = this.set("navigationMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNavigationMode: Self = this.set("navigationMode", js.undefined)
-    
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

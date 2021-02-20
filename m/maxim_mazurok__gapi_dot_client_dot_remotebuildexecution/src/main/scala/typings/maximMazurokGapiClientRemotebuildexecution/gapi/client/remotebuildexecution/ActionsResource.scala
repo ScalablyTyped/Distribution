@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.Fields
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.InstanceName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsResource extends js.Object {
+trait ActionsResource extends StObject {
   
   /**
     * Execute an action remotely. In order to execute an action, the client must first upload all of the inputs, the Command to run, and the Action into the ContentAddressableStorage. It

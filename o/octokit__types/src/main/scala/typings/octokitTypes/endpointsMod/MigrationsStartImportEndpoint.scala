@@ -4,12 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.git
 import typings.octokitTypes.octokitTypesStrings.mercurial
 import typings.octokitTypes.octokitTypesStrings.subversion
 import typings.octokitTypes.octokitTypesStrings.tfvc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationsStartImportEndpoint extends js.Object {
+trait MigrationsStartImportEndpoint extends StObject {
   
   var owner: String = js.native
   
@@ -49,51 +50,39 @@ object MigrationsStartImportEndpoint {
   }
   
   @scala.inline
-  implicit class MigrationsStartImportEndpointOps[Self <: MigrationsStartImportEndpoint] (val x: Self) extends AnyVal {
+  implicit class MigrationsStartImportEndpointMutableBuilder[Self <: MigrationsStartImportEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTfvc_project(value: String): Self = StObject.set(x, "tfvc_project", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setTfvc_projectUndefined: Self = StObject.set(x, "tfvc_project", js.undefined)
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setVcs(value: subversion | git | mercurial | tfvc): Self = StObject.set(x, "vcs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVcs_url(value: String): Self = this.set("vcs_url", value.asInstanceOf[js.Any])
+    def setVcsUndefined: Self = StObject.set(x, "vcs", js.undefined)
     
     @scala.inline
-    def setTfvc_project(value: String): Self = this.set("tfvc_project", value.asInstanceOf[js.Any])
+    def setVcs_password(value: String): Self = StObject.set(x, "vcs_password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTfvc_project: Self = this.set("tfvc_project", js.undefined)
+    def setVcs_passwordUndefined: Self = StObject.set(x, "vcs_password", js.undefined)
     
     @scala.inline
-    def setVcs(value: subversion | git | mercurial | tfvc): Self = this.set("vcs", value.asInstanceOf[js.Any])
+    def setVcs_url(value: String): Self = StObject.set(x, "vcs_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVcs: Self = this.set("vcs", js.undefined)
+    def setVcs_username(value: String): Self = StObject.set(x, "vcs_username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVcs_password(value: String): Self = this.set("vcs_password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVcs_password: Self = this.set("vcs_password", js.undefined)
-    
-    @scala.inline
-    def setVcs_username(value: String): Self = this.set("vcs_username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVcs_username: Self = this.set("vcs_username", js.undefined)
+    def setVcs_usernameUndefined: Self = StObject.set(x, "vcs_username", js.undefined)
   }
 }

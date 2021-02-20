@@ -1,6 +1,7 @@
 package typings.rax.mod
 
 import typings.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Rax.Children
 // ----------------------------------------------------------------------
 @js.native
-trait RaxChildren extends js.Object {
+trait RaxChildren extends StObject {
   
   def count(children: js.Any): Double = js.native
   

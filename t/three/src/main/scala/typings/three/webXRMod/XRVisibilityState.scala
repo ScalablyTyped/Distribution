@@ -1,5 +1,6 @@
 package typings.three.webXRMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.three.threeStrings.`visible-blurred`
   - typings.three.threeStrings.hidden
 */
-trait XRVisibilityState extends js.Object
+trait XRVisibilityState extends StObject
 object XRVisibilityState {
   
   @scala.inline

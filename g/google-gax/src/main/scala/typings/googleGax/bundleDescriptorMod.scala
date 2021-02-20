@@ -1,15 +1,14 @@
 package typings.googleGax
 
-import typings.googleGax.apiCallerMod.APICaller
 import typings.googleGax.descriptorMod.Descriptor
-import typings.googleGax.gaxMod.CallSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-gax/build/src/bundlingCalls/bundleDescriptor", JSImport.Namespace)
-@js.native
-object bundleDescriptorMod extends js.Object {
+object bundleDescriptorMod {
+  
+  @JSImport("google-gax/build/src/bundlingCalls/bundleDescriptor", "BundleDescriptor")
   @js.native
   class BundleDescriptor protected () extends Descriptor {
     /**
@@ -51,13 +50,13 @@ object bundleDescriptorMod extends js.Object {
       subresponseField: Null,
       byteLengthFunction: js.Function
     ) = this()
+    
     var bundledField: String = js.native
+    
     var byteLengthFunction: js.Function = js.native
+    
     var requestDiscriminatorFields: js.Array[String] = js.native
+    
     var subresponseField: String | Null = js.native
-    /* CompleteClass */
-    override def getApiCaller(settings: CallSettings): APICaller = js.native
   }
-  
 }
-

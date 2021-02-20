@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitTreeDiffEntry extends js.Object {
+trait GitTreeDiffEntry extends StObject {
   
   /**
     * SHA1 hash of the object in the base tree, if it exists. Will be null in case of adds.
@@ -47,33 +48,21 @@ object GitTreeDiffEntry {
   }
   
   @scala.inline
-  implicit class GitTreeDiffEntryOps[Self <: GitTreeDiffEntry] (val x: Self) extends AnyVal {
+  implicit class GitTreeDiffEntryMutableBuilder[Self <: GitTreeDiffEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseObjectId(value: String): Self = StObject.set(x, "baseObjectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectType(value: GitObjectType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseObjectId(value: String): Self = this.set("baseObjectId", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeType(value: VersionControlChangeType): Self = this.set("changeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectType(value: GitObjectType): Self = this.set("objectType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetObjectId(value: String): Self = this.set("targetObjectId", value.asInstanceOf[js.Any])
+    def setTargetObjectId(value: String): Self = StObject.set(x, "targetObjectId", value.asInstanceOf[js.Any])
   }
 }

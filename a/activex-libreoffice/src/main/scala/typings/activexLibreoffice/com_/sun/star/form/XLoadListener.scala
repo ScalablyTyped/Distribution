@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,33 +71,21 @@ object XLoadListener {
   }
   
   @scala.inline
-  implicit class XLoadListenerOps[Self <: XLoadListener] (val x: Self) extends AnyVal {
+  implicit class XLoadListenerMutableBuilder[Self <: XLoadListener] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoaded(value: EventObject => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReloaded(value: EventObject => Unit): Self = StObject.set(x, "reloaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReloading(value: EventObject => Unit): Self = StObject.set(x, "reloading", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoaded(value: EventObject => Unit): Self = this.set("loaded", js.Any.fromFunction1(value))
+    def setUnloaded(value: EventObject => Unit): Self = StObject.set(x, "unloaded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReloaded(value: EventObject => Unit): Self = this.set("reloaded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReloading(value: EventObject => Unit): Self = this.set("reloading", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnloaded(value: EventObject => Unit): Self = this.set("unloaded", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnloading(value: EventObject => Unit): Self = this.set("unloading", js.Any.fromFunction1(value))
+    def setUnloading(value: EventObject => Unit): Self = StObject.set(x, "unloading", js.Any.fromFunction1(value))
   }
 }

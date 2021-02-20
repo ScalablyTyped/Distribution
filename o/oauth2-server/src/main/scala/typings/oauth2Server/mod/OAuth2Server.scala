@@ -1,5 +1,6 @@
 package typings.oauth2Server.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents an OAuth2 server instance.
   */
 @js.native
-trait OAuth2Server extends js.Object {
+trait OAuth2Server extends StObject {
   
   /**
     * Authenticates a request.

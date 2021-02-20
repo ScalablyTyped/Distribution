@@ -1,11 +1,12 @@
 package typings.prismReactRenderer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrismLib extends js.Object {
+trait PrismLib extends StObject {
   
   def highlight(code: String, grammar: PrismGrammar, language: Language): String = js.native
   
@@ -26,27 +27,15 @@ object PrismLib {
   }
   
   @scala.inline
-  implicit class PrismLibOps[Self <: PrismLib] (val x: Self) extends AnyVal {
+  implicit class PrismLibMutableBuilder[Self <: PrismLib] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighlight(value: (String, PrismGrammar, Language) => String): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguages(value: LanguageDict): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHighlight(value: (String, PrismGrammar, Language) => String): Self = this.set("highlight", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setLanguages(value: LanguageDict): Self = this.set("languages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenize(value: (String, PrismGrammar, Language) => js.Array[PrismToken | String]): Self = this.set("tokenize", js.Any.fromFunction3(value))
+    def setTokenize(value: (String, PrismGrammar, Language) => js.Array[PrismToken | String]): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
   }
 }

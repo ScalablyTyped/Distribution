@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These properties describe the printing of the content of a text document. */
 @js.native
-trait PrintSettings extends js.Object {
+trait PrintSettings extends StObject {
   
   /**
     * determines how notes are printed.
@@ -81,60 +82,48 @@ object PrintSettings {
   }
   
   @scala.inline
-  implicit class PrintSettingsOps[Self <: PrintSettings] (val x: Self) extends AnyVal {
+  implicit class PrintSettingsMutableBuilder[Self <: PrintSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPrintAnnotationMode(value: NotePrintMode): Self = StObject.set(x, "PrintAnnotationMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrintBlackFonts(value: Boolean): Self = StObject.set(x, "PrintBlackFonts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrintControls(value: Boolean): Self = StObject.set(x, "PrintControls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintAnnotationMode(value: NotePrintMode): Self = this.set("PrintAnnotationMode", value.asInstanceOf[js.Any])
+    def setPrintDrawings(value: Boolean): Self = StObject.set(x, "PrintDrawings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintBlackFonts(value: Boolean): Self = this.set("PrintBlackFonts", value.asInstanceOf[js.Any])
+    def setPrintEmptyPages(value: Boolean): Self = StObject.set(x, "PrintEmptyPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintControls(value: Boolean): Self = this.set("PrintControls", value.asInstanceOf[js.Any])
+    def setPrintFaxName(value: String): Self = StObject.set(x, "PrintFaxName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintDrawings(value: Boolean): Self = this.set("PrintDrawings", value.asInstanceOf[js.Any])
+    def setPrintGraphics(value: Boolean): Self = StObject.set(x, "PrintGraphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintEmptyPages(value: Boolean): Self = this.set("PrintEmptyPages", value.asInstanceOf[js.Any])
+    def setPrintLeftPages(value: Boolean): Self = StObject.set(x, "PrintLeftPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintFaxName(value: String): Self = this.set("PrintFaxName", value.asInstanceOf[js.Any])
+    def setPrintPageBackground(value: Boolean): Self = StObject.set(x, "PrintPageBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintGraphics(value: Boolean): Self = this.set("PrintGraphics", value.asInstanceOf[js.Any])
+    def setPrintPaperFromSetup(value: Boolean): Self = StObject.set(x, "PrintPaperFromSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintLeftPages(value: Boolean): Self = this.set("PrintLeftPages", value.asInstanceOf[js.Any])
+    def setPrintProspect(value: Boolean): Self = StObject.set(x, "PrintProspect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintPageBackground(value: Boolean): Self = this.set("PrintPageBackground", value.asInstanceOf[js.Any])
+    def setPrintReversed(value: Boolean): Self = StObject.set(x, "PrintReversed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintPaperFromSetup(value: Boolean): Self = this.set("PrintPaperFromSetup", value.asInstanceOf[js.Any])
+    def setPrintRightPages(value: Boolean): Self = StObject.set(x, "PrintRightPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintProspect(value: Boolean): Self = this.set("PrintProspect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintReversed(value: Boolean): Self = this.set("PrintReversed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintRightPages(value: Boolean): Self = this.set("PrintRightPages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintTables(value: Boolean): Self = this.set("PrintTables", value.asInstanceOf[js.Any])
+    def setPrintTables(value: Boolean): Self = StObject.set(x, "PrintTables", value.asInstanceOf[js.Any])
   }
 }

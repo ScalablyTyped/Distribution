@@ -1,13 +1,14 @@
 package typings.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "DocumentSymbol")
-@js.native
-object DocumentSymbol extends js.Object {
+object DocumentSymbol {
   
+  @JSImport("vscode-languageserver-protocol", "DocumentSymbol.create")
+  @js.native
   def create(
     name: String,
     detail: js.UndefOr[scala.Nothing],
@@ -15,6 +16,8 @@ object DocumentSymbol extends js.Object {
     range: typings.vscodeLanguageserverTypes.mod.Range,
     selectionRange: typings.vscodeLanguageserverTypes.mod.Range
   ): typings.vscodeLanguageserverTypes.mod.DocumentSymbol = js.native
+  @JSImport("vscode-languageserver-protocol", "DocumentSymbol.create")
+  @js.native
   def create(
     name: String,
     detail: js.UndefOr[scala.Nothing],
@@ -33,6 +36,8 @@ object DocumentSymbol extends js.Object {
     * @param selectionRange The selectionRange of the symbol.
     * @param children Children of the symbol.
     */
+  @JSImport("vscode-languageserver-protocol", "DocumentSymbol.create")
+  @js.native
   def create(
     name: String,
     detail: String,
@@ -40,6 +45,8 @@ object DocumentSymbol extends js.Object {
     range: typings.vscodeLanguageserverTypes.mod.Range,
     selectionRange: typings.vscodeLanguageserverTypes.mod.Range
   ): typings.vscodeLanguageserverTypes.mod.DocumentSymbol = js.native
+  @JSImport("vscode-languageserver-protocol", "DocumentSymbol.create")
+  @js.native
   def create(
     name: String,
     detail: String,
@@ -52,5 +59,7 @@ object DocumentSymbol extends js.Object {
   /**
     * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
     */
+  @JSImport("vscode-languageserver-protocol", "DocumentSymbol.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = js.native
 }

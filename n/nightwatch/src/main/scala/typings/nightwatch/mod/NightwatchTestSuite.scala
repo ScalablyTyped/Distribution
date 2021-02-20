@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchTestSuite extends js.Object {
+trait NightwatchTestSuite extends StObject {
   
   var group: String = js.native
   
@@ -24,30 +25,18 @@ object NightwatchTestSuite {
   }
   
   @scala.inline
-  implicit class NightwatchTestSuiteOps[Self <: NightwatchTestSuite] (val x: Self) extends AnyVal {
+  implicit class NightwatchTestSuiteMutableBuilder[Self <: NightwatchTestSuite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModule(value: String): Self = this.set("module", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResults(value: js.Any): Self = this.set("results", value.asInstanceOf[js.Any])
+    def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }
 }

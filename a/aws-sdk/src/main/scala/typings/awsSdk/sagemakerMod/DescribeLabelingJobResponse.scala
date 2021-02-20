@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLabelingJobResponse extends js.Object {
+trait DescribeLabelingJobResponse extends StObject {
   
   /**
     * The date and time that the labeling job was created.
@@ -118,96 +119,84 @@ object DescribeLabelingJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeLabelingJobResponseOps[Self <: DescribeLabelingJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLabelingJobResponseMutableBuilder[Self <: DescribeLabelingJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
     @scala.inline
-    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setHumanTaskConfig(value: HumanTaskConfig): Self = StObject.set(x, "HumanTaskConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHumanTaskConfig(value: HumanTaskConfig): Self = this.set("HumanTaskConfig", value.asInstanceOf[js.Any])
+    def setInputConfig(value: LabelingJobInputConfig): Self = StObject.set(x, "InputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: LabelingJobInputConfig): Self = this.set("InputConfig", value.asInstanceOf[js.Any])
+    def setJobReferenceCode(value: JobReferenceCode): Self = StObject.set(x, "JobReferenceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobReferenceCode(value: JobReferenceCode): Self = this.set("JobReferenceCode", value.asInstanceOf[js.Any])
+    def setLabelAttributeName(value: LabelAttributeName): Self = StObject.set(x, "LabelAttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCounters(value: LabelCounters): Self = this.set("LabelCounters", value.asInstanceOf[js.Any])
+    def setLabelAttributeNameUndefined: Self = StObject.set(x, "LabelAttributeName", js.undefined)
     
     @scala.inline
-    def setLabelingJobArn(value: LabelingJobArn): Self = this.set("LabelingJobArn", value.asInstanceOf[js.Any])
+    def setLabelCategoryConfigS3Uri(value: S3Uri): Self = StObject.set(x, "LabelCategoryConfigS3Uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobName(value: LabelingJobName): Self = this.set("LabelingJobName", value.asInstanceOf[js.Any])
+    def setLabelCategoryConfigS3UriUndefined: Self = StObject.set(x, "LabelCategoryConfigS3Uri", js.undefined)
     
     @scala.inline
-    def setLabelingJobStatus(value: LabelingJobStatus): Self = this.set("LabelingJobStatus", value.asInstanceOf[js.Any])
+    def setLabelCounters(value: LabelCounters): Self = StObject.set(x, "LabelCounters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    def setLabelingJobAlgorithmsConfig(value: LabelingJobAlgorithmsConfig): Self = StObject.set(x, "LabelingJobAlgorithmsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputConfig(value: LabelingJobOutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    def setLabelingJobAlgorithmsConfigUndefined: Self = StObject.set(x, "LabelingJobAlgorithmsConfig", js.undefined)
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setLabelingJobArn(value: LabelingJobArn): Self = StObject.set(x, "LabelingJobArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    def setLabelingJobName(value: LabelingJobName): Self = StObject.set(x, "LabelingJobName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    def setLabelingJobOutput(value: LabelingJobOutput): Self = StObject.set(x, "LabelingJobOutput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelAttributeName(value: LabelAttributeName): Self = this.set("LabelAttributeName", value.asInstanceOf[js.Any])
+    def setLabelingJobOutputUndefined: Self = StObject.set(x, "LabelingJobOutput", js.undefined)
     
     @scala.inline
-    def deleteLabelAttributeName: Self = this.set("LabelAttributeName", js.undefined)
+    def setLabelingJobStatus(value: LabelingJobStatus): Self = StObject.set(x, "LabelingJobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelCategoryConfigS3Uri(value: S3Uri): Self = this.set("LabelCategoryConfigS3Uri", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelCategoryConfigS3Uri: Self = this.set("LabelCategoryConfigS3Uri", js.undefined)
+    def setOutputConfig(value: LabelingJobOutputConfig): Self = StObject.set(x, "OutputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobAlgorithmsConfig(value: LabelingJobAlgorithmsConfig): Self = this.set("LabelingJobAlgorithmsConfig", value.asInstanceOf[js.Any])
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelingJobAlgorithmsConfig: Self = this.set("LabelingJobAlgorithmsConfig", js.undefined)
+    def setStoppingConditions(value: LabelingJobStoppingConditions): Self = StObject.set(x, "StoppingConditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobOutput(value: LabelingJobOutput): Self = this.set("LabelingJobOutput", value.asInstanceOf[js.Any])
+    def setStoppingConditionsUndefined: Self = StObject.set(x, "StoppingConditions", js.undefined)
     
     @scala.inline
-    def deleteLabelingJobOutput: Self = this.set("LabelingJobOutput", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoppingConditions(value: LabelingJobStoppingConditions): Self = this.set("StoppingConditions", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStoppingConditions: Self = this.set("StoppingConditions", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

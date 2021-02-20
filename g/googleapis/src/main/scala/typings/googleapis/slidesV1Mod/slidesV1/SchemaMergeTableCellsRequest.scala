@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Merges cells in a Table.
   */
 @js.native
-trait SchemaMergeTableCellsRequest extends js.Object {
+trait SchemaMergeTableCellsRequest extends StObject {
   
   /**
     * The object ID of the table.
@@ -33,30 +34,18 @@ object SchemaMergeTableCellsRequest {
   }
   
   @scala.inline
-  implicit class SchemaMergeTableCellsRequestOps[Self <: SchemaMergeTableCellsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaMergeTableCellsRequestMutableBuilder[Self <: SchemaMergeTableCellsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableRange(value: SchemaTableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setTableRange(value: SchemaTableRange): Self = this.set("tableRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableRange: Self = this.set("tableRange", js.undefined)
+    def setTableRangeUndefined: Self = StObject.set(x, "tableRange", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/esm/languages/prism/autohotkey", JSImport.Namespace)
-@js.native
-object languagesPrismAutohotkeyMod extends js.Object {
+object languagesPrismAutohotkeyMod {
   
+  @JSImport("react-syntax-highlighter/dist/esm/languages/prism/autohotkey", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.testingV1Mod.testingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A description of a test environment.
   */
 @js.native
-trait SchemaTestEnvironmentCatalog extends js.Object {
+trait SchemaTestEnvironmentCatalog extends StObject {
   
   /**
     * Supported Android devices.
@@ -39,42 +40,30 @@ object SchemaTestEnvironmentCatalog {
   }
   
   @scala.inline
-  implicit class SchemaTestEnvironmentCatalogOps[Self <: SchemaTestEnvironmentCatalog] (val x: Self) extends AnyVal {
+  implicit class SchemaTestEnvironmentCatalogMutableBuilder[Self <: SchemaTestEnvironmentCatalog] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidDeviceCatalog(value: SchemaAndroidDeviceCatalog): Self = StObject.set(x, "androidDeviceCatalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidDeviceCatalogUndefined: Self = StObject.set(x, "androidDeviceCatalog", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIosDeviceCatalog(value: SchemaIosDeviceCatalog): Self = StObject.set(x, "iosDeviceCatalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDeviceCatalog(value: SchemaAndroidDeviceCatalog): Self = this.set("androidDeviceCatalog", value.asInstanceOf[js.Any])
+    def setIosDeviceCatalogUndefined: Self = StObject.set(x, "iosDeviceCatalog", js.undefined)
     
     @scala.inline
-    def deleteAndroidDeviceCatalog: Self = this.set("androidDeviceCatalog", js.undefined)
+    def setNetworkConfigurationCatalog(value: SchemaNetworkConfigurationCatalog): Self = StObject.set(x, "networkConfigurationCatalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosDeviceCatalog(value: SchemaIosDeviceCatalog): Self = this.set("iosDeviceCatalog", value.asInstanceOf[js.Any])
+    def setNetworkConfigurationCatalogUndefined: Self = StObject.set(x, "networkConfigurationCatalog", js.undefined)
     
     @scala.inline
-    def deleteIosDeviceCatalog: Self = this.set("iosDeviceCatalog", js.undefined)
+    def setSoftwareCatalog(value: SchemaProvidedSoftwareCatalog): Self = StObject.set(x, "softwareCatalog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkConfigurationCatalog(value: SchemaNetworkConfigurationCatalog): Self = this.set("networkConfigurationCatalog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkConfigurationCatalog: Self = this.set("networkConfigurationCatalog", js.undefined)
-    
-    @scala.inline
-    def setSoftwareCatalog(value: SchemaProvidedSoftwareCatalog): Self = this.set("softwareCatalog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSoftwareCatalog: Self = this.set("softwareCatalog", js.undefined)
+    def setSoftwareCatalogUndefined: Self = StObject.set(x, "softwareCatalog", js.undefined)
   }
 }

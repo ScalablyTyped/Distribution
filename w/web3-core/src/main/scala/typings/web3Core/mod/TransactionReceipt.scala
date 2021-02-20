@@ -1,12 +1,13 @@
 package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionReceipt extends js.Object {
+trait TransactionReceipt extends StObject {
   
   var blockHash: String = js.native
   
@@ -55,66 +56,54 @@ object TransactionReceipt {
   }
   
   @scala.inline
-  implicit class TransactionReceiptOps[Self <: TransactionReceipt] (val x: Self) extends AnyVal {
+  implicit class TransactionReceiptMutableBuilder[Self <: TransactionReceipt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContractAddress(value: String): Self = StObject.set(x, "contractAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockHash(value: String): Self = this.set("blockHash", value.asInstanceOf[js.Any])
+    def setContractAddressUndefined: Self = StObject.set(x, "contractAddress", js.undefined)
     
     @scala.inline
-    def setBlockNumber(value: Double): Self = this.set("blockNumber", value.asInstanceOf[js.Any])
+    def setCumulativeGasUsed(value: Double): Self = StObject.set(x, "cumulativeGasUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulativeGasUsed(value: Double): Self = this.set("cumulativeGasUsed", value.asInstanceOf[js.Any])
+    def setEvents(value: StringDictionary[EventLog]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setGasUsed(value: Double): Self = this.set("gasUsed", value.asInstanceOf[js.Any])
+    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogsVarargs(value: Log*): Self = this.set("logs", js.Array(value :_*))
+    def setGasUsed(value: Double): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogs(value: js.Array[Log]): Self = this.set("logs", value.asInstanceOf[js.Any])
+    def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogsBloom(value: String): Self = this.set("logsBloom", value.asInstanceOf[js.Any])
+    def setLogsBloom(value: String): Self = StObject.set(x, "logsBloom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
     @scala.inline
-    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionHash(value: String): Self = this.set("transactionHash", value.asInstanceOf[js.Any])
+    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransactionIndex(value: Double): Self = this.set("transactionIndex", value.asInstanceOf[js.Any])
+    def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContractAddress(value: String): Self = this.set("contractAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContractAddress: Self = this.set("contractAddress", js.undefined)
-    
-    @scala.inline
-    def setEvents(value: StringDictionary[EventLog]): Self = this.set("events", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
   }
 }

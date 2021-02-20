@@ -2,13 +2,18 @@ package typings.antDesignReactNative
 
 import typings.antDesignReactNative.mod.Carousel
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native/lib/carousel/demo/basic", JSImport.Namespace)
-@js.native
-object carouselDemoBasicMod extends js.Object {
+object carouselDemoBasicMod {
+  
+  @JSImport("@ant-design/react-native/lib/carousel/demo/basic", JSImport.Default)
+  @js.native
+  class default protected () extends BasicCarouselExample {
+    def this(props: js.Any) = this()
+  }
   
   @js.native
   trait BasicCarouselExample
@@ -19,10 +24,5 @@ object carouselDemoBasicMod extends js.Object {
     def onHorizontalSelectedIndexChange(index: Double): Unit = js.native
     
     def onVerticalSelectedIndexChange(index: Double): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends BasicCarouselExample {
-    def this(props: js.Any) = this()
   }
 }

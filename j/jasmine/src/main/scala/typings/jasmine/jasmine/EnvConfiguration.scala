@@ -1,5 +1,6 @@
 package typings.jasmine.jasmine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration that can be used when configuring Jasmine via {@link jasmine.Env.configure}
   */
 @js.native
-trait EnvConfiguration extends js.Object {
+trait EnvConfiguration extends StObject {
   
   var failFast: js.UndefOr[Boolean] = js.native
   
@@ -35,66 +36,54 @@ object EnvConfiguration {
   }
   
   @scala.inline
-  implicit class EnvConfigurationOps[Self <: EnvConfiguration] (val x: Self) extends AnyVal {
+  implicit class EnvConfigurationMutableBuilder[Self <: EnvConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailFastUndefined: Self = StObject.set(x, "failFast", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailSpecWithNoExpectations(value: Boolean): Self = StObject.set(x, "failSpecWithNoExpectations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailFast(value: Boolean): Self = this.set("failFast", value.asInstanceOf[js.Any])
+    def setFailSpecWithNoExpectationsUndefined: Self = StObject.set(x, "failSpecWithNoExpectations", js.undefined)
     
     @scala.inline
-    def deleteFailFast: Self = this.set("failFast", js.undefined)
+    def setHideDisabled(value: Boolean): Self = StObject.set(x, "hideDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailSpecWithNoExpectations(value: Boolean): Self = this.set("failSpecWithNoExpectations", value.asInstanceOf[js.Any])
+    def setHideDisabledUndefined: Self = StObject.set(x, "hideDisabled", js.undefined)
     
     @scala.inline
-    def deleteFailSpecWithNoExpectations: Self = this.set("failSpecWithNoExpectations", js.undefined)
+    def setOneFailurePerSpec(value: Boolean): Self = StObject.set(x, "oneFailurePerSpec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDisabled(value: Boolean): Self = this.set("hideDisabled", value.asInstanceOf[js.Any])
+    def setOneFailurePerSpecUndefined: Self = StObject.set(x, "oneFailurePerSpec", js.undefined)
     
     @scala.inline
-    def deleteHideDisabled: Self = this.set("hideDisabled", js.undefined)
+    def setPromise(value: js.Function): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneFailurePerSpec(value: Boolean): Self = this.set("oneFailurePerSpec", value.asInstanceOf[js.Any])
+    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
     
     @scala.inline
-    def deleteOneFailurePerSpec: Self = this.set("oneFailurePerSpec", js.undefined)
+    def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromise(value: js.Function): Self = this.set("promise", value.asInstanceOf[js.Any])
+    def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
     
     @scala.inline
-    def deletePromise: Self = this.set("promise", js.undefined)
+    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRandom(value: Boolean): Self = this.set("random", value.asInstanceOf[js.Any])
+    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
     @scala.inline
-    def deleteRandom: Self = this.set("random", js.undefined)
+    def setSpecFilter(value: js.Function): Self = StObject.set(x, "specFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeed(value: Double): Self = this.set("seed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeed: Self = this.set("seed", js.undefined)
-    
-    @scala.inline
-    def setSpecFilter(value: js.Function): Self = this.set("specFilter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpecFilter: Self = this.set("specFilter", js.undefined)
+    def setSpecFilterUndefined: Self = StObject.set(x, "specFilter", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebViewPartition extends js.Object {
+trait WebViewPartition extends StObject {
   
   /**
     * Path to files, relative, absolute or pattern
@@ -27,27 +28,15 @@ object WebViewPartition {
   }
   
   @scala.inline
-  implicit class WebViewPartitionOps[Self <: WebViewPartition] (val x: Self) extends AnyVal {
+  implicit class WebViewPartitionMutableBuilder[Self <: WebViewPartition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessible_resources(value: js.Array[String]): Self = StObject.set(x, "accessible_resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessible_resourcesVarargs(value: String*): Self = StObject.set(x, "accessible_resources", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccessible_resourcesVarargs(value: String*): Self = this.set("accessible_resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setAccessible_resources(value: js.Array[String]): Self = this.set("accessible_resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

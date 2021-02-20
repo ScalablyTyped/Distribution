@@ -1,12 +1,13 @@
 package typings.reactSyntaxHighlighter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-syntax-highlighter/dist/cjs/languages/prism/bison", JSImport.Namespace)
-@js.native
-object bisonMod extends js.Object {
+object bisonMod {
   
+  @JSImport("react-syntax-highlighter/dist/cjs/languages/prism/bison", JSImport.Default)
+  @js.native
   val default: js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IShadowOptions extends js.Object {
+trait IShadowOptions extends StObject {
   
   /**
     * Whether the shadow should affect stroke operations
@@ -55,60 +56,48 @@ object IShadowOptions {
   }
   
   @scala.inline
-  implicit class IShadowOptionsOps[Self <: IShadowOptions] (val x: Self) extends AnyVal {
+  implicit class IShadowOptionsMutableBuilder[Self <: IShadowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAffectStroke(value: Boolean): Self = StObject.set(x, "affectStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAffectStrokeUndefined: Self = StObject.set(x, "affectStroke", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffectStroke(value: Boolean): Self = this.set("affectStroke", value.asInstanceOf[js.Any])
+    def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
     
     @scala.inline
-    def deleteAffectStroke: Self = this.set("affectStroke", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: Double): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBlur: Self = this.set("blur", js.undefined)
+    def setIncludeDefaultValues(value: Boolean): Self = StObject.set(x, "includeDefaultValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setIncludeDefaultValuesUndefined: Self = StObject.set(x, "includeDefaultValues", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setNonScaling(value: Boolean): Self = StObject.set(x, "nonScaling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDefaultValues(value: Boolean): Self = this.set("includeDefaultValues", value.asInstanceOf[js.Any])
+    def setNonScalingUndefined: Self = StObject.set(x, "nonScaling", js.undefined)
     
     @scala.inline
-    def deleteIncludeDefaultValues: Self = this.set("includeDefaultValues", js.undefined)
+    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNonScaling(value: Boolean): Self = this.set("nonScaling", value.asInstanceOf[js.Any])
+    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
     @scala.inline
-    def deleteNonScaling: Self = this.set("nonScaling", js.undefined)
+    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
-    
-    @scala.inline
-    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
   }
 }

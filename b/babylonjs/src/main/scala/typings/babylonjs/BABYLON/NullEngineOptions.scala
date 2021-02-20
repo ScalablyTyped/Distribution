@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NullEngineOptions extends js.Object {
+trait NullEngineOptions extends StObject {
   
   /**
     * If delta time between frames should be constant
@@ -54,39 +55,27 @@ object NullEngineOptions {
   }
   
   @scala.inline
-  implicit class NullEngineOptionsOps[Self <: NullEngineOptions] (val x: Self) extends AnyVal {
+  implicit class NullEngineOptionsMutableBuilder[Self <: NullEngineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLockstepMaxSteps(value: Double): Self = StObject.set(x, "lockstepMaxSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderHeight(value: Double): Self = StObject.set(x, "renderHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeterministicLockstep(value: Boolean): Self = this.set("deterministicLockstep", value.asInstanceOf[js.Any])
+    def setRenderWidth(value: Double): Self = StObject.set(x, "renderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockstepMaxSteps(value: Double): Self = this.set("lockstepMaxSteps", value.asInstanceOf[js.Any])
+    def setTextureSize(value: Double): Self = StObject.set(x, "textureSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderHeight(value: Double): Self = this.set("renderHeight", value.asInstanceOf[js.Any])
+    def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderWidth(value: Double): Self = this.set("renderWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextureSize(value: Double): Self = this.set("textureSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseHighPrecisionMatrix(value: Boolean): Self = this.set("useHighPrecisionMatrix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseHighPrecisionMatrix: Self = this.set("useHighPrecisionMatrix", js.undefined)
+    def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
   }
 }

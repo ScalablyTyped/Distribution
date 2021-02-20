@@ -1,18 +1,20 @@
 package typings.typedoc
 
-import typings.typedoc.componentMod.AbstractComponent
+import typings.typedoc.componentsMod.ConverterComponent
 import typings.typedoc.converterConverterMod.Converter
 import typings.typedoc.reflectionsMod.DeclarationReflection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/plugins/TypePlugin", JSImport.Namespace)
-@js.native
-object typePluginMod extends js.Object {
+object typePluginMod {
   
+  @JSImport("typedoc/dist/lib/converter/plugins/TypePlugin", "TypePlugin")
   @js.native
-  class TypePlugin () extends AbstractComponent[Converter] {
+  class TypePlugin protected () extends ConverterComponent {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
     
     var onResolve: js.Any = js.native
     

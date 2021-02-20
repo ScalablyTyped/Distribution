@@ -1,5 +1,6 @@
 package typings.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,60 +31,48 @@ object VersionDefinition {
   }
   
   @scala.inline
-  implicit class VersionDefinitionOps[Self <: VersionDefinition] (val x: Self) extends AnyVal {
+  implicit class VersionDefinitionMutableBuilder[Self <: VersionDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild(value: String): Self = this.set("build", value.asInstanceOf[js.Any])
+    def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
     
     @scala.inline
-    def deleteBuild: Self = this.set("build", js.undefined)
+    def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajor(value: String): Self = this.set("major", value.asInstanceOf[js.Any])
+    def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
     
     @scala.inline
-    def deleteMajor: Self = this.set("major", js.undefined)
+    def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinor(value: String): Self = this.set("minor", value.asInstanceOf[js.Any])
+    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
     @scala.inline
-    def deleteMinor: Self = this.set("minor", js.undefined)
+    def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatch(value: String): Self = this.set("patch", value.asInstanceOf[js.Any])
+    def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
     
     @scala.inline
-    def deletePatch: Self = this.set("patch", js.undefined)
+    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrerelease(value: String): Self = this.set("prerelease", value.asInstanceOf[js.Any])
+    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     @scala.inline
-    def deletePrerelease: Self = this.set("prerelease", js.undefined)
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRaw(value: String): Self = this.set("raw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRaw: Self = this.set("raw", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

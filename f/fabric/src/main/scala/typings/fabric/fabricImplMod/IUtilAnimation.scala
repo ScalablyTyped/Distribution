@@ -1,11 +1,12 @@
 package typings.fabric.fabricImplMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUtilAnimation extends js.Object {
+trait IUtilAnimation extends StObject {
   
   /**
     * Changes value from one to another within certain period of time, invoking callbacks as value is being changed.

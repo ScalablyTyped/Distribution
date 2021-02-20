@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientNotebooks.anon.Callback
 import typings.maximMazurokGapiClientNotebooks.anon.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationsResource extends js.Object {
+trait LocationsResource extends StObject {
   
   var environments: EnvironmentsResource = js.native
   

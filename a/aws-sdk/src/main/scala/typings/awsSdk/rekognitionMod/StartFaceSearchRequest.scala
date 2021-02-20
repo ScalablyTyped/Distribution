@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartFaceSearchRequest extends js.Object {
+trait StartFaceSearchRequest extends StObject {
   
   /**
     * Idempotent token used to identify the start request. If you use the same token with multiple StartFaceSearch requests, the same JobId is returned. Use ClientRequestToken to prevent the same job from being accidently started more than once. 
@@ -46,48 +47,36 @@ object StartFaceSearchRequest {
   }
   
   @scala.inline
-  implicit class StartFaceSearchRequestOps[Self <: StartFaceSearchRequest] (val x: Self) extends AnyVal {
+  implicit class StartFaceSearchRequestMutableBuilder[Self <: StartFaceSearchRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionId(value: CollectionId): Self = this.set("CollectionId", value.asInstanceOf[js.Any])
+    def setFaceMatchThreshold(value: Percent): Self = StObject.set(x, "FaceMatchThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: Video): Self = this.set("Video", value.asInstanceOf[js.Any])
+    def setFaceMatchThresholdUndefined: Self = StObject.set(x, "FaceMatchThreshold", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setJobTag(value: JobTag): Self = StObject.set(x, "JobTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setJobTagUndefined: Self = StObject.set(x, "JobTag", js.undefined)
     
     @scala.inline
-    def setFaceMatchThreshold(value: Percent): Self = this.set("FaceMatchThreshold", value.asInstanceOf[js.Any])
+    def setNotificationChannel(value: NotificationChannel): Self = StObject.set(x, "NotificationChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFaceMatchThreshold: Self = this.set("FaceMatchThreshold", js.undefined)
+    def setNotificationChannelUndefined: Self = StObject.set(x, "NotificationChannel", js.undefined)
     
     @scala.inline
-    def setJobTag(value: JobTag): Self = this.set("JobTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobTag: Self = this.set("JobTag", js.undefined)
-    
-    @scala.inline
-    def setNotificationChannel(value: NotificationChannel): Self = this.set("NotificationChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationChannel: Self = this.set("NotificationChannel", js.undefined)
+    def setVideo(value: Video): Self = StObject.set(x, "Video", value.asInstanceOf[js.Any])
   }
 }

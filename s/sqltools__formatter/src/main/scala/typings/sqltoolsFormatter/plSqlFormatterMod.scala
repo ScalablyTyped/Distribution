@@ -1,13 +1,16 @@
 package typings.sqltoolsFormatter
 
 import typings.sqltoolsFormatter.typesMod.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sqltools/formatter/lib/languages/PlSqlFormatter", JSImport.Namespace)
-@js.native
-object plSqlFormatterMod extends js.Object {
+object plSqlFormatterMod {
+  
+  @JSImport("@sqltools/formatter/lib/languages/PlSqlFormatter", JSImport.Default)
+  @js.native
+  class default () extends PlSqlFormatter
   
   @js.native
   trait PlSqlFormatter
@@ -16,7 +19,4 @@ object plSqlFormatterMod extends js.Object {
     @JSName("tokenOverride")
     def tokenOverride_MPlSqlFormatter(token: Token, previousReservedToken: Token): Token = js.native
   }
-  
-  @js.native
-  class default () extends PlSqlFormatter
 }

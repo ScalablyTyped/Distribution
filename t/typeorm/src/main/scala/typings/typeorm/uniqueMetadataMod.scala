@@ -6,16 +6,16 @@ import typings.typeorm.columnMetadataMod.ColumnMetadata
 import typings.typeorm.embeddedMetadataMod.EmbeddedMetadata
 import typings.typeorm.entityMetadataMod.EntityMetadata
 import typings.typeorm.namingStrategyInterfaceMod.NamingStrategyInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/metadata/UniqueMetadata", JSImport.Namespace)
-@js.native
-object uniqueMetadataMod extends js.Object {
+object uniqueMetadataMod {
   
+  @JSImport("typeorm/browser/metadata/UniqueMetadata", "UniqueMetadata")
   @js.native
-  class UniqueMetadata protected () extends js.Object {
+  class UniqueMetadata protected () extends StObject {
     def this(options: ColumnsEmbeddedMetadata) = this()
     
     /**

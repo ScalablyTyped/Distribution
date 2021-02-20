@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationJob extends js.Object {
+trait MigrationJob extends StObject {
   
   /** Output only. The timestamp when the migration job resource was created. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z". */
   var createTime: js.UndefOr[String] = js.native
@@ -84,136 +85,124 @@ object MigrationJob {
   }
   
   @scala.inline
-  implicit class MigrationJobOps[Self <: MigrationJob] (val x: Self) extends AnyVal {
+  implicit class MigrationJobMutableBuilder[Self <: MigrationJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDestinationDatabase(value: DatabaseType): Self = StObject.set(x, "destinationDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDestinationDatabaseUndefined: Self = StObject.set(x, "destinationDatabase", js.undefined)
     
     @scala.inline
-    def setDestination(value: String): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationDatabase(value: DatabaseType): Self = this.set("destinationDatabase", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDestinationDatabase: Self = this.set("destinationDatabase", js.undefined)
+    def setDumpPath(value: String): Self = StObject.set(x, "dumpPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDumpPathUndefined: Self = StObject.set(x, "dumpPath", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDumpPath(value: String): Self = this.set("dumpPath", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDumpPath: Self = this.set("dumpPath", js.undefined)
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
-    
-    @scala.inline
-    def setError(value: Status): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.MigrationJob with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setPhase(value: String): Self = this.set("phase", value.asInstanceOf[js.Any])
+    def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhase: Self = this.set("phase", js.undefined)
+    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
     @scala.inline
-    def setReverseSshConnectivity(value: ReverseSshConnectivity): Self = this.set("reverseSshConnectivity", value.asInstanceOf[js.Any])
+    def setReverseSshConnectivity(value: ReverseSshConnectivity): Self = StObject.set(x, "reverseSshConnectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReverseSshConnectivity: Self = this.set("reverseSshConnectivity", js.undefined)
+    def setReverseSshConnectivityUndefined: Self = StObject.set(x, "reverseSshConnectivity", js.undefined)
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceDatabase(value: DatabaseType): Self = StObject.set(x, "sourceDatabase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceDatabase(value: DatabaseType): Self = this.set("sourceDatabase", value.asInstanceOf[js.Any])
+    def setSourceDatabaseUndefined: Self = StObject.set(x, "sourceDatabase", js.undefined)
     
     @scala.inline
-    def deleteSourceDatabase: Self = this.set("sourceDatabase", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setStaticIpConnectivity(value: js.Any): Self = this.set("staticIpConnectivity", value.asInstanceOf[js.Any])
+    def setStaticIpConnectivity(value: js.Any): Self = StObject.set(x, "staticIpConnectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStaticIpConnectivity: Self = this.set("staticIpConnectivity", js.undefined)
+    def setStaticIpConnectivityUndefined: Self = StObject.set(x, "staticIpConnectivity", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     @scala.inline
-    def setVpcPeeringConnectivity(value: VpcPeeringConnectivity): Self = this.set("vpcPeeringConnectivity", value.asInstanceOf[js.Any])
+    def setVpcPeeringConnectivity(value: VpcPeeringConnectivity): Self = StObject.set(x, "vpcPeeringConnectivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVpcPeeringConnectivity: Self = this.set("vpcPeeringConnectivity", js.undefined)
+    def setVpcPeeringConnectivityUndefined: Self = StObject.set(x, "vpcPeeringConnectivity", js.undefined)
   }
 }

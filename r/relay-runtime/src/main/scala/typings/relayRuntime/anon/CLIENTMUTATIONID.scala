@@ -10,12 +10,13 @@ import typings.relayRuntime.relayRuntimeStrings.hasPreviousPage
 import typings.relayRuntime.relayRuntimeStrings.node
 import typings.relayRuntime.relayRuntimeStrings.pageInfo_
 import typings.relayRuntime.relayRuntimeStrings.startCursor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CLIENTMUTATIONID extends js.Object {
+trait CLIENTMUTATIONID extends StObject {
   
   var CLIENT_MUTATION_ID: clientMutationId = js.native
   
@@ -60,51 +61,39 @@ object CLIENTMUTATIONID {
   }
   
   @scala.inline
-  implicit class CLIENTMUTATIONIDOps[Self <: CLIENTMUTATIONID] (val x: Self) extends AnyVal {
+  implicit class CLIENTMUTATIONIDMutableBuilder[Self <: CLIENTMUTATIONID] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCLIENT_MUTATION_ID(value: clientMutationId): Self = StObject.set(x, "CLIENT_MUTATION_ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCURSOR(value: cursor): Self = StObject.set(x, "CURSOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEDGES(value: edges): Self = StObject.set(x, "EDGES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCLIENT_MUTATION_ID(value: clientMutationId): Self = this.set("CLIENT_MUTATION_ID", value.asInstanceOf[js.Any])
+    def setEDGES_HAVE_SOURCE_FIELD(value: Boolean): Self = StObject.set(x, "EDGES_HAVE_SOURCE_FIELD", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCURSOR(value: cursor): Self = this.set("CURSOR", value.asInstanceOf[js.Any])
+    def setEND_CURSOR(value: endCursor): Self = StObject.set(x, "END_CURSOR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGES(value: edges): Self = this.set("EDGES", value.asInstanceOf[js.Any])
+    def setHAS_NEXT_PAGE(value: hasNextPage): Self = StObject.set(x, "HAS_NEXT_PAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEDGES_HAVE_SOURCE_FIELD(value: Boolean): Self = this.set("EDGES_HAVE_SOURCE_FIELD", value.asInstanceOf[js.Any])
+    def setHAS_PREV_PAGE(value: hasPreviousPage): Self = StObject.set(x, "HAS_PREV_PAGE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEND_CURSOR(value: endCursor): Self = this.set("END_CURSOR", value.asInstanceOf[js.Any])
+    def setNODE(value: node): Self = StObject.set(x, "NODE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHAS_NEXT_PAGE(value: hasNextPage): Self = this.set("HAS_NEXT_PAGE", value.asInstanceOf[js.Any])
+    def setPAGE_INFO(value: pageInfo_): Self = StObject.set(x, "PAGE_INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHAS_PREV_PAGE(value: hasPreviousPage): Self = this.set("HAS_PREV_PAGE", value.asInstanceOf[js.Any])
+    def setPAGE_INFO_TYPE(value: PageInfo): Self = StObject.set(x, "PAGE_INFO_TYPE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNODE(value: node): Self = this.set("NODE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPAGE_INFO(value: pageInfo_): Self = this.set("PAGE_INFO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPAGE_INFO_TYPE(value: PageInfo): Self = this.set("PAGE_INFO_TYPE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTART_CURSOR(value: startCursor): Self = this.set("START_CURSOR", value.asInstanceOf[js.Any])
+    def setSTART_CURSOR(value: startCursor): Self = StObject.set(x, "START_CURSOR", value.asInstanceOf[js.Any])
   }
 }

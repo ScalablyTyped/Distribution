@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeScanningGetAlertDeprecatedAlertIdEndpoint extends js.Object {
+trait CodeScanningGetAlertDeprecatedAlertIdEndpoint extends StObject {
   
   /**
     * The code scanning alert number.
@@ -26,30 +27,18 @@ object CodeScanningGetAlertDeprecatedAlertIdEndpoint {
   }
   
   @scala.inline
-  implicit class CodeScanningGetAlertDeprecatedAlertIdEndpointOps[Self <: CodeScanningGetAlertDeprecatedAlertIdEndpoint] (val x: Self) extends AnyVal {
+  implicit class CodeScanningGetAlertDeprecatedAlertIdEndpointMutableBuilder[Self <: CodeScanningGetAlertDeprecatedAlertIdEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlert_id(value: Double): Self = StObject.set(x, "alert_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlert_idUndefined: Self = StObject.set(x, "alert_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlert_id(value: Double): Self = this.set("alert_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlert_id: Self = this.set("alert_id", js.undefined)
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

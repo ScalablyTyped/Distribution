@@ -1,6 +1,7 @@
 package typings.vueTemplateCompiler.mod
 
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,42 +30,30 @@ object ASTText {
   }
   
   @scala.inline
-  implicit class ASTTextOps[Self <: ASTText] (val x: Self) extends AnyVal {
+  implicit class ASTTextMutableBuilder[Self <: ASTText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsComment(value: Boolean): Self = StObject.set(x, "isComment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsCommentUndefined: Self = StObject.set(x, "isComment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSsrOptimizability(value: SSROptimizability): Self = StObject.set(x, "ssrOptimizability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setSsrOptimizabilityUndefined: Self = StObject.set(x, "ssrOptimizability", js.undefined)
     
     @scala.inline
-    def setType(value: `3`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComment(value: Boolean): Self = this.set("isComment", value.asInstanceOf[js.Any])
+    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
     @scala.inline
-    def deleteIsComment: Self = this.set("isComment", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsrOptimizability(value: SSROptimizability): Self = this.set("ssrOptimizability", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSsrOptimizability: Self = this.set("ssrOptimizability", js.undefined)
-    
-    @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatic: Self = this.set("static", js.undefined)
+    def setType(value: `3`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

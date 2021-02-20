@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IssuingOptions extends js.Object {
+trait IssuingOptions extends StObject {
   
   /** Required. When true, includes a URL to the issuing CA certificate in the "authority information access" X.509 extension. */
   var includeCaCertUrl: js.UndefOr[Boolean] = js.native
@@ -25,30 +26,18 @@ object IssuingOptions {
   }
   
   @scala.inline
-  implicit class IssuingOptionsOps[Self <: IssuingOptions] (val x: Self) extends AnyVal {
+  implicit class IssuingOptionsMutableBuilder[Self <: IssuingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeCaCertUrl(value: Boolean): Self = StObject.set(x, "includeCaCertUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeCaCertUrlUndefined: Self = StObject.set(x, "includeCaCertUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeCrlAccessUrl(value: Boolean): Self = StObject.set(x, "includeCrlAccessUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCaCertUrl(value: Boolean): Self = this.set("includeCaCertUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeCaCertUrl: Self = this.set("includeCaCertUrl", js.undefined)
-    
-    @scala.inline
-    def setIncludeCrlAccessUrl(value: Boolean): Self = this.set("includeCrlAccessUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeCrlAccessUrl: Self = this.set("includeCrlAccessUrl", js.undefined)
+    def setIncludeCrlAccessUrlUndefined: Self = StObject.set(x, "includeCrlAccessUrl", js.undefined)
   }
 }

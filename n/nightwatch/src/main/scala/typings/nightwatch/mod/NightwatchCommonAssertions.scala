@@ -1,11 +1,12 @@
 package typings.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NightwatchCommonAssertions extends js.Object {
+trait NightwatchCommonAssertions extends StObject {
   
   var NightwatchAssertionsError: typings.nightwatch.mod.NightwatchAssertionsError = js.native
   

@@ -2,12 +2,13 @@ package typings.angularCompiler.anon
 
 import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import typings.angularCompiler.coreMod.ViewEncapsulation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DefaultEncapsulation extends js.Object {
+trait DefaultEncapsulation extends StObject {
   
   var defaultEncapsulation: js.UndefOr[ViewEncapsulation] = js.native
   
@@ -30,57 +31,45 @@ object DefaultEncapsulation {
   }
   
   @scala.inline
-  implicit class DefaultEncapsulationOps[Self <: DefaultEncapsulation] (val x: Self) extends AnyVal {
+  implicit class DefaultEncapsulationMutableBuilder[Self <: DefaultEncapsulation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJitDevMode(value: Boolean): Self = StObject.set(x, "jitDevMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEncapsulation(value: ViewEncapsulation): Self = this.set("defaultEncapsulation", value.asInstanceOf[js.Any])
+    def setJitDevModeUndefined: Self = StObject.set(x, "jitDevMode", js.undefined)
     
     @scala.inline
-    def deleteDefaultEncapsulation: Self = this.set("defaultEncapsulation", js.undefined)
+    def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJitDevMode(value: Boolean): Self = this.set("jitDevMode", value.asInstanceOf[js.Any])
+    def setMissingTranslationNull: Self = StObject.set(x, "missingTranslation", null)
     
     @scala.inline
-    def deleteJitDevMode: Self = this.set("jitDevMode", js.undefined)
+    def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
     
     @scala.inline
-    def setMissingTranslation(value: MissingTranslationStrategy): Self = this.set("missingTranslation", value.asInstanceOf[js.Any])
+    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMissingTranslation: Self = this.set("missingTranslation", js.undefined)
+    def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
     
     @scala.inline
-    def setMissingTranslationNull: Self = this.set("missingTranslation", null)
+    def setStrictInjectionParameters(value: Boolean): Self = StObject.set(x, "strictInjectionParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = this.set("preserveWhitespaces", value.asInstanceOf[js.Any])
+    def setStrictInjectionParametersUndefined: Self = StObject.set(x, "strictInjectionParameters", js.undefined)
     
     @scala.inline
-    def deletePreserveWhitespaces: Self = this.set("preserveWhitespaces", js.undefined)
+    def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrictInjectionParameters(value: Boolean): Self = this.set("strictInjectionParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrictInjectionParameters: Self = this.set("strictInjectionParameters", js.undefined)
-    
-    @scala.inline
-    def setUseJit(value: Boolean): Self = this.set("useJit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseJit: Self = this.set("useJit", js.undefined)
+    def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
   }
 }

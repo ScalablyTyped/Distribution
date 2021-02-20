@@ -2,12 +2,13 @@ package typings.plottable.anon
 
 import typings.plottable.plottableStrings.bottomup
 import typings.plottable.plottableStrings.topdown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bottomup extends js.Object {
+trait Bottomup extends StObject {
   
   var bottomup: typings.plottable.plottableStrings.bottomup = js.native
   
@@ -22,24 +23,12 @@ object Bottomup {
   }
   
   @scala.inline
-  implicit class BottomupOps[Self <: Bottomup] (val x: Self) extends AnyVal {
+  implicit class BottomupMutableBuilder[Self <: Bottomup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBottomup(value: bottomup): Self = StObject.set(x, "bottomup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBottomup(value: bottomup): Self = this.set("bottomup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopdown(value: topdown): Self = this.set("topdown", value.asInstanceOf[js.Any])
+    def setTopdown(value: topdown): Self = StObject.set(x, "topdown", value.asInstanceOf[js.Any])
   }
 }

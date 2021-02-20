@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IntegrationDetails extends js.Object {
+trait IntegrationDetails extends StObject {
   
   /** Additional details of the entry in string format. Must be UTF-8 encoded with a length of no more than 1000 characters. */
   var details: js.UndefOr[String] = js.native
@@ -25,30 +26,18 @@ object IntegrationDetails {
   }
   
   @scala.inline
-  implicit class IntegrationDetailsOps[Self <: IntegrationDetails] (val x: Self) extends AnyVal {
+  implicit class IntegrationDetailsMutableBuilder[Self <: IntegrationDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntegrationCode(value: String): Self = StObject.set(x, "integrationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
-    
-    @scala.inline
-    def setIntegrationCode(value: String): Self = this.set("integrationCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntegrationCode: Self = this.set("integrationCode", js.undefined)
+    def setIntegrationCodeUndefined: Self = StObject.set(x, "integrationCode", js.undefined)
   }
 }

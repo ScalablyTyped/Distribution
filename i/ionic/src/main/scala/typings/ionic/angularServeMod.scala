@@ -5,16 +5,17 @@ import typings.ionic.definitionsMod.AngularServeOptions
 import typings.ionic.libServeMod.ServeCLI
 import typings.ionic.libServeMod.ServeRunner
 import typings.ionic.libServeMod.ServeRunnerDeps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/lib/project/angular/serve", JSImport.Namespace)
-@js.native
-object angularServeMod extends js.Object {
+object angularServeMod {
   
+  @JSImport("ionic/lib/project/angular/serve", "AngularServeCLI")
   @js.native
-  class AngularServeCLI () extends ServeCLI[AngularServeOptions] {
+  class AngularServeCLI protected () extends ServeCLI[AngularServeOptions] {
+    def this(e: ServeRunnerDeps) = this()
     
     /* protected */ def buildArchitectCommand(options: AngularServeOptions): js.Array[String] = js.native
     
@@ -26,6 +27,7 @@ object angularServeMod extends js.Object {
     /* protected */ def serveOptionsToNgArgs(options: AngularServeOptions): js.Promise[js.Array[String]] = js.native
   }
   
+  @JSImport("ionic/lib/project/angular/serve", "AngularServeRunner")
   @js.native
   class AngularServeRunner protected () extends ServeRunner[AngularServeOptions] {
     def this(e: AngularServeRunnerDeps) = this()

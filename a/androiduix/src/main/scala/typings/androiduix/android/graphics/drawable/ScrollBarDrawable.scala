@@ -2,6 +2,7 @@ package typings.androiduix.android.graphics.drawable
 
 import typings.androiduix.android.graphics.Canvas
 import typings.androiduix.android.graphics.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

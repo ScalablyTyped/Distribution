@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ElasticsearchBufferingHints extends js.Object {
+trait ElasticsearchBufferingHints extends StObject {
   
   /**
     * Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300 (5 minutes).
@@ -26,30 +27,18 @@ object ElasticsearchBufferingHints {
   }
   
   @scala.inline
-  implicit class ElasticsearchBufferingHintsOps[Self <: ElasticsearchBufferingHints] (val x: Self) extends AnyVal {
+  implicit class ElasticsearchBufferingHintsMutableBuilder[Self <: ElasticsearchBufferingHints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIntervalInSeconds(value: ElasticsearchBufferingIntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeInMBs(value: ElasticsearchBufferingSizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalInSeconds(value: ElasticsearchBufferingIntervalInSeconds): Self = this.set("IntervalInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIntervalInSeconds: Self = this.set("IntervalInSeconds", js.undefined)
-    
-    @scala.inline
-    def setSizeInMBs(value: ElasticsearchBufferingSizeInMBs): Self = this.set("SizeInMBs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeInMBs: Self = this.set("SizeInMBs", js.undefined)
+    def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
   }
 }

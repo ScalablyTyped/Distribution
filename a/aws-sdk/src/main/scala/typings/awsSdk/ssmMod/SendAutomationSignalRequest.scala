@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SendAutomationSignalRequest extends js.Object {
+trait SendAutomationSignalRequest extends StObject {
   
   /**
     * The unique identifier for an existing Automation execution that you want to send the signal to.
@@ -31,30 +32,18 @@ object SendAutomationSignalRequest {
   }
   
   @scala.inline
-  implicit class SendAutomationSignalRequestOps[Self <: SendAutomationSignalRequest] (val x: Self) extends AnyVal {
+  implicit class SendAutomationSignalRequestMutableBuilder[Self <: SendAutomationSignalRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayload(value: AutomationParameterMap): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
     @scala.inline
-    def setAutomationExecutionId(value: AutomationExecutionId): Self = this.set("AutomationExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignalType(value: SignalType): Self = this.set("SignalType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPayload(value: AutomationParameterMap): Self = this.set("Payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayload: Self = this.set("Payload", js.undefined)
+    def setSignalType(value: SignalType): Self = StObject.set(x, "SignalType", value.asInstanceOf[js.Any])
   }
 }

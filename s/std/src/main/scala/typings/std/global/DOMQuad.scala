@@ -1,17 +1,14 @@
 package typings.std.global
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
 import typings.std.DOMPointInit
 import typings.std.DOMQuadInit
 import typings.std.DOMRectInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("DOMQuad")
 @js.native
 class DOMQuad ()
@@ -37,29 +34,19 @@ class DOMQuad ()
   def this(p1: DOMPointInit, p2: DOMPointInit, p3: js.UndefOr[scala.Nothing], p4: DOMPointInit) = this()
   def this(p1: DOMPointInit, p2: DOMPointInit, p3: DOMPointInit, p4: DOMPointInit) = this()
 }
-@JSGlobal("DOMQuad")
-@js.native
-object DOMQuad
-  extends Instantiable0[typings.std.DOMQuad]
-     with Instantiable1[/* p1 */ DOMPointInit, typings.std.DOMQuad]
-     with Instantiable2[js.UndefOr[/* p1 */ DOMPointInit], /* p2 */ DOMPointInit, typings.std.DOMQuad]
-     with Instantiable3[
-      js.UndefOr[/* p1 */ DOMPointInit], 
-      js.UndefOr[/* p2 */ DOMPointInit], 
-      /* p3 */ DOMPointInit, 
-      typings.std.DOMQuad
-    ]
-     with Instantiable4[
-      js.UndefOr[/* p1 */ DOMPointInit], 
-      js.UndefOr[/* p2 */ DOMPointInit], 
-      js.UndefOr[/* p3 */ DOMPointInit], 
-      /* p4 */ DOMPointInit, 
-      typings.std.DOMQuad
-    ] {
+object DOMQuad {
   
+  @JSGlobal("DOMQuad.fromQuad")
+  @js.native
   def fromQuad(): typings.std.DOMQuad = js.native
+  @JSGlobal("DOMQuad.fromQuad")
+  @js.native
   def fromQuad(other: DOMQuadInit): typings.std.DOMQuad = js.native
   
+  @JSGlobal("DOMQuad.fromRect")
+  @js.native
   def fromRect(): typings.std.DOMQuad = js.native
+  @JSGlobal("DOMQuad.fromRect")
+  @js.native
   def fromRect(other: DOMRectInit): typings.std.DOMQuad = js.native
 }

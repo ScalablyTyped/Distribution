@@ -1,5 +1,6 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A single data point from a collectd-based plugin.
   */
 @js.native
-trait SchemaCollectdValue extends js.Object {
+trait SchemaCollectdValue extends StObject {
   
   /**
     * The data source for the collectd value. For example there are two data
@@ -35,36 +36,24 @@ object SchemaCollectdValue {
   }
   
   @scala.inline
-  implicit class SchemaCollectdValueOps[Self <: SchemaCollectdValue] (val x: Self) extends AnyVal {
+  implicit class SchemaCollectdValueMutableBuilder[Self <: SchemaCollectdValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceName(value: String): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceNameUndefined: Self = StObject.set(x, "dataSourceName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceName(value: String): Self = this.set("dataSourceName", value.asInstanceOf[js.Any])
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def deleteDataSourceName: Self = this.set("dataSourceName", js.undefined)
+    def setValue(value: SchemaTypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
-    
-    @scala.inline
-    def setValue(value: SchemaTypedValue): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

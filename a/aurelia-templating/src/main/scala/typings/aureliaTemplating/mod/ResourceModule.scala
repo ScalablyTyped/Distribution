@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.aureliaDependencyInjection.mod.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ResourceModule")
 @js.native
-class ResourceModule protected () extends js.Object {
+class ResourceModule protected () extends StObject {
   /**
     * Creates an instance of ResourceModule.
     * @param moduleId The id of the module that contains view resources.

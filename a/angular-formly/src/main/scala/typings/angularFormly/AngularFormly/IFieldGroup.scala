@@ -1,12 +1,13 @@
 package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFieldGroup extends js.Object {
+trait IFieldGroup extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -41,99 +42,87 @@ object IFieldGroup {
   }
   
   @scala.inline
-  implicit class IFieldGroupOps[Self <: IFieldGroup] (val x: Self) extends AnyVal {
+  implicit class IFieldGroupMutableBuilder[Self <: IFieldGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setElementAttributes(value: String): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setFieldGroup(value: IFieldArray): Self = StObject.set(x, "fieldGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementAttributes(value: String): Self = this.set("elementAttributes", value.asInstanceOf[js.Any])
+    def setFieldGroupUndefined: Self = StObject.set(x, "fieldGroup", js.undefined)
     
     @scala.inline
-    def deleteElementAttributes: Self = this.set("elementAttributes", js.undefined)
+    def setFieldGroupVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fieldGroup", js.Array(value :_*))
     
     @scala.inline
-    def setFieldGroupVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = this.set("fieldGroup", js.Array(value :_*))
+    def setForm(value: js.Object): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldGroup(value: IFieldArray): Self = this.set("fieldGroup", value.asInstanceOf[js.Any])
+    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
     @scala.inline
-    def deleteFieldGroup: Self = this.set("fieldGroup", js.undefined)
+    def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: js.Object): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setHideExpression(value: String | IExpressionFunction): Self = StObject.set(x, "hideExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForm: Self = this.set("form", js.undefined)
+    def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setHide(value: Boolean): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setHideExpressionUndefined: Self = StObject.set(x, "hideExpression", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = this.set("hideExpression", js.Any.fromFunction3(value))
+    def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideExpression(value: String | IExpressionFunction): Self = this.set("hideExpression", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHideExpression: Self = this.set("hideExpression", js.undefined)
+    def setModel(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | Double): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setOptions(value: IFormOptionsAPI): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String | StringDictionary[js.Any]): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setTemplateOptions(value: ITemplateOptions): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IFormOptionsAPI): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateOptions(value: ITemplateOptions): Self = this.set("templateOptions", value.asInstanceOf[js.Any])
+    def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
     @scala.inline
-    def deleteTemplateOptions: Self = this.set("templateOptions", js.undefined)
-    
-    @scala.inline
-    def setWrapperVarargs(value: String*): Self = this.set("wrapper", js.Array(value :_*))
-    
-    @scala.inline
-    def setWrapper(value: String | js.Array[String]): Self = this.set("wrapper", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrapper: Self = this.set("wrapper", js.undefined)
+    def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
   }
 }

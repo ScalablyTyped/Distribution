@@ -2,12 +2,13 @@ package typings.node.cryptoMod
 
 import typings.node.anon.Format
 import typings.node.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extends js.Object {
+trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extends StObject {
   
   /**
     * Key size in bits
@@ -36,33 +37,21 @@ object RSAKeyPairOptions {
   }
   
   @scala.inline
-  implicit class RSAKeyPairOptionsOps[Self <: RSAKeyPairOptions[_, _], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self with (RSAKeyPairOptions[PubF, PrivF])) extends AnyVal {
+  implicit class RSAKeyPairOptionsMutableBuilder[Self <: RSAKeyPairOptions[_, _], PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] (val x: Self with (RSAKeyPairOptions[PubF, PrivF])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setModulusLength(value: Double): Self = StObject.set(x, "modulusLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] with Type): Self = StObject.set(x, "privateKeyEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicExponent(value: Double): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModulusLength(value: Double): Self = this.set("modulusLength", value.asInstanceOf[js.Any])
+    def setPublicExponentUndefined: Self = StObject.set(x, "publicExponent", js.undefined)
     
     @scala.inline
-    def setPrivateKeyEncoding(value: BasePrivateKeyEncodingOptions[PrivF] with Type): Self = this.set("privateKeyEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicKeyEncoding(value: Format[PubF]): Self = this.set("publicKeyEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPublicExponent(value: Double): Self = this.set("publicExponent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicExponent: Self = this.set("publicExponent", js.undefined)
+    def setPublicKeyEncoding(value: Format[PubF]): Self = StObject.set(x, "publicKeyEncoding", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartYAxisItemLabelsRotation extends js.Object {
+trait ChartYAxisItemLabelsRotation extends StObject {
   
   var align: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object ChartYAxisItemLabelsRotation {
   }
   
   @scala.inline
-  implicit class ChartYAxisItemLabelsRotationOps[Self <: ChartYAxisItemLabelsRotation] (val x: Self) extends AnyVal {
+  implicit class ChartYAxisItemLabelsRotationMutableBuilder[Self <: ChartYAxisItemLabelsRotation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
-    
-    @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
   }
 }

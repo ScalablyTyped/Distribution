@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,45 +95,33 @@ object FeatureLayerCapabilitiesOperations {
   }
   
   @scala.inline
-  implicit class FeatureLayerCapabilitiesOperationsOps[Self <: FeatureLayerCapabilitiesOperations] (val x: Self) extends AnyVal {
+  implicit class FeatureLayerCapabilitiesOperationsMutableBuilder[Self <: FeatureLayerCapabilitiesOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSupportsAdd(value: Boolean): Self = StObject.set(x, "supportsAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSupportsCalculate(value: Boolean): Self = StObject.set(x, "supportsCalculate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsDelete(value: Boolean): Self = StObject.set(x, "supportsDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsAdd(value: Boolean): Self = this.set("supportsAdd", value.asInstanceOf[js.Any])
+    def setSupportsEditing(value: Boolean): Self = StObject.set(x, "supportsEditing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsCalculate(value: Boolean): Self = this.set("supportsCalculate", value.asInstanceOf[js.Any])
+    def setSupportsQuery(value: Boolean): Self = StObject.set(x, "supportsQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsDelete(value: Boolean): Self = this.set("supportsDelete", value.asInstanceOf[js.Any])
+    def setSupportsQueryAttachments(value: Boolean): Self = StObject.set(x, "supportsQueryAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsEditing(value: Boolean): Self = this.set("supportsEditing", value.asInstanceOf[js.Any])
+    def setSupportsResizeAttachments(value: Boolean): Self = StObject.set(x, "supportsResizeAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsQuery(value: Boolean): Self = this.set("supportsQuery", value.asInstanceOf[js.Any])
+    def setSupportsUpdate(value: Boolean): Self = StObject.set(x, "supportsUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupportsQueryAttachments(value: Boolean): Self = this.set("supportsQueryAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsResizeAttachments(value: Boolean): Self = this.set("supportsResizeAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsUpdate(value: Boolean): Self = this.set("supportsUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsValidateSql(value: Boolean): Self = this.set("supportsValidateSql", value.asInstanceOf[js.Any])
+    def setSupportsValidateSql(value: Boolean): Self = StObject.set(x, "supportsValidateSql", value.asInstanceOf[js.Any])
   }
 }

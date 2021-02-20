@@ -2,6 +2,7 @@ package typings.aliApp.my
 
 import typings.aliApp.anon.Index
 import typings.aliApp.anon.PartialBadge
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,57 +49,45 @@ object ActionSheetOptions {
   }
   
   @scala.inline
-  implicit class ActionSheetOptionsOps[Self <: ActionSheetOptions] (val x: Self) extends AnyVal {
+  implicit class ActionSheetOptionsMutableBuilder[Self <: ActionSheetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadges(value: js.Array[PartialBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBadgesVarargs(value: PartialBadge*): Self = StObject.set(x, "badges", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: String*): Self = this.set("items", js.Array(value :_*))
+    def setCancelButtonText(value: String): Self = StObject.set(x, "cancelButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[String]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
     
     @scala.inline
-    def setBadgesVarargs(value: PartialBadge*): Self = this.set("badges", js.Array(value :_*))
+    def setDestructiveBtnIndex(value: Double): Self = StObject.set(x, "destructiveBtnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBadges(value: js.Array[PartialBadge]): Self = this.set("badges", value.asInstanceOf[js.Any])
+    def setDestructiveBtnIndexUndefined: Self = StObject.set(x, "destructiveBtnIndex", js.undefined)
     
     @scala.inline
-    def deleteBadges: Self = this.set("badges", js.undefined)
+    def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancelButtonText(value: String): Self = this.set("cancelButtonText", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def deleteCancelButtonText: Self = this.set("cancelButtonText", js.undefined)
+    def setSuccess(value: /* res */ Index => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDestructiveBtnIndex(value: Double): Self = this.set("destructiveBtnIndex", value.asInstanceOf[js.Any])
+    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
     @scala.inline
-    def deleteDestructiveBtnIndex: Self = this.set("destructiveBtnIndex", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: /* res */ Index => Unit): Self = this.set("success", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSuccess: Self = this.set("success", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

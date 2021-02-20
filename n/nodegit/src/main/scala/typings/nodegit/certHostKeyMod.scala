@@ -2,16 +2,16 @@ package typings.nodegit
 
 import typings.nodegit.certMod.Cert
 import typings.nodegit.certMod.Cert.TYPE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/cert-host-key", JSImport.Namespace)
-@js.native
-object certHostKeyMod extends js.Object {
+object certHostKeyMod {
   
+  @JSImport("nodegit/cert-host-key", "CertHostkey")
   @js.native
-  class CertHostkey () extends js.Object {
+  class CertHostkey () extends StObject {
     
     var hashMd5: String = js.native
     

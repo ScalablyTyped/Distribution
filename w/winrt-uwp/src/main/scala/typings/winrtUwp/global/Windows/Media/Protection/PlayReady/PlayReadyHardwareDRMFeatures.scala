@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Indicates the valid list of hardware digital rights management (DRM) feature values that can be queried. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyHardwareDRMFeatures")
 @js.native
-object PlayReadyHardwareDRMFeatures extends js.Object {
+object PlayReadyHardwareDRMFeatures extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

@@ -1,11 +1,12 @@
 package typings.awsSdk.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response[D, E] extends js.Object {
+trait Response[D, E] extends StObject {
   
   @JSName("$response")
   var $response: typings.awsSdk.responseMod.Response[D, E] = js.native
@@ -19,21 +20,9 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response[_, _], D, E] (val x: Self with (Response[D, E])) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response[_, _], D, E] (val x: Self with (Response[D, E])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def set$response(value: typings.awsSdk.responseMod.Response[D, E]): Self = this.set("$response", value.asInstanceOf[js.Any])
+    def set$response(value: typings.awsSdk.responseMod.Response[D, E]): Self = StObject.set(x, "$response", value.asInstanceOf[js.Any])
   }
 }

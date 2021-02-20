@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FontWeight extends js.Object {
+trait FontWeight extends StObject {
   
   var color: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object FontWeight {
   }
   
   @scala.inline
-  implicit class FontWeightOps[Self <: FontWeight] (val x: Self) extends AnyVal {
+  implicit class FontWeightMutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setPrimaryTextColor(value: String): Self = StObject.set(x, "primaryTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
+    def setPrimaryTextColorUndefined: Self = StObject.set(x, "primaryTextColor", js.undefined)
     
     @scala.inline
-    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    def setSecondaryColor(value: String): Self = StObject.set(x, "secondaryColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryTextColor(value: String): Self = this.set("primaryTextColor", value.asInstanceOf[js.Any])
+    def setSecondaryColorUndefined: Self = StObject.set(x, "secondaryColor", js.undefined)
     
     @scala.inline
-    def deletePrimaryTextColor: Self = this.set("primaryTextColor", js.undefined)
+    def setSecondaryTextColor(value: String): Self = StObject.set(x, "secondaryTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryColor(value: String): Self = this.set("secondaryColor", value.asInstanceOf[js.Any])
+    def setSecondaryTextColorUndefined: Self = StObject.set(x, "secondaryTextColor", js.undefined)
     
     @scala.inline
-    def deleteSecondaryColor: Self = this.set("secondaryColor", js.undefined)
+    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecondaryTextColor(value: String): Self = this.set("secondaryTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryTextColor: Self = this.set("secondaryTextColor", js.undefined)
-    
-    @scala.inline
-    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

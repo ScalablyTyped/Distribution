@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteCertificateRequest extends js.Object {
+trait DeleteCertificateRequest extends StObject {
   
   /**
     * The ID of the certificate. (The last part of the certificate ARN contains the certificate ID.)
@@ -26,27 +27,15 @@ object DeleteCertificateRequest {
   }
   
   @scala.inline
-  implicit class DeleteCertificateRequestOps[Self <: DeleteCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteCertificateRequestMutableBuilder[Self <: DeleteCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceDelete(value: ForceDelete): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceDelete(value: ForceDelete): Self = this.set("forceDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceDelete: Self = this.set("forceDelete", js.undefined)
+    def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
   }
 }

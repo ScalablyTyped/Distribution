@@ -9,12 +9,13 @@ import typings.maximMazurokGapiClientCloudidentity.anon.Key
 import typings.maximMazurokGapiClientCloudidentity.anon.Name
 import typings.maximMazurokGapiClientCloudidentity.anon.Oauthtoken
 import typings.maximMazurokGapiClientCloudidentity.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceUsersResource extends js.Object {
+trait DeviceUsersResource extends StObject {
   
   /** Approves device to access user data. */
   def approve(request: Fields): Request[Operation] = js.native

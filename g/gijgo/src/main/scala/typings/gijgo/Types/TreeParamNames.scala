@@ -1,11 +1,12 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeParamNames extends js.Object {
+trait TreeParamNames extends StObject {
   
   var parentId: js.UndefOr[String] = js.native
 }
@@ -18,24 +19,12 @@ object TreeParamNames {
   }
   
   @scala.inline
-  implicit class TreeParamNamesOps[Self <: TreeParamNames] (val x: Self) extends AnyVal {
+  implicit class TreeParamNamesMutableBuilder[Self <: TreeParamNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentId: Self = this.set("parentId", js.undefined)
+    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
   }
 }

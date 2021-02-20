@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListIdentityProvidersResponse extends js.Object {
+trait ListIdentityProvidersResponse extends StObject {
   
   /**
     * A pagination token.
@@ -26,30 +27,18 @@ object ListIdentityProvidersResponse {
   }
   
   @scala.inline
-  implicit class ListIdentityProvidersResponseOps[Self <: ListIdentityProvidersResponse] (val x: Self) extends AnyVal {
+  implicit class ListIdentityProvidersResponseMutableBuilder[Self <: ListIdentityProvidersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProviders(value: ProvidersListType): Self = StObject.set(x, "Providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidersVarargs(value: ProviderDescription*): Self = this.set("Providers", js.Array(value :_*))
-    
-    @scala.inline
-    def setProviders(value: ProvidersListType): Self = this.set("Providers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextToken(value: PaginationKeyType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setProvidersVarargs(value: ProviderDescription*): Self = StObject.set(x, "Providers", js.Array(value :_*))
   }
 }

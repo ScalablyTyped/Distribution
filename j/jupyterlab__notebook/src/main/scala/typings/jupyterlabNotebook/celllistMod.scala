@@ -7,14 +7,14 @@ import typings.jupyterlabObservables.modeldbMod.IModelDB
 import typings.jupyterlabObservables.observablelistMod.IObservableList.IChangedArgs
 import typings.jupyterlabObservables.undoablelistMod.IObservableUndoableList
 import typings.luminoSignaling.mod.ISignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jupyterlab/notebook/lib/celllist", JSImport.Namespace)
-@js.native
-object celllistMod extends js.Object {
+object celllistMod {
   
+  @JSImport("@jupyterlab/notebook/lib/celllist", "CellList")
   @js.native
   class CellList protected () extends IObservableUndoableList[ICellModel] {
     /**

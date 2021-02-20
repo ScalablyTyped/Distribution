@@ -10,6 +10,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.XModifiable
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,30 +85,18 @@ object XTable {
   }
   
   @scala.inline
-  implicit class XTableOps[Self <: XTable] (val x: Self) extends AnyVal {
+  implicit class XTableMutableBuilder[Self <: XTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateCursor(value: () => XCellCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateCursorByRange(value: XCellRange => XCellCursor): Self = StObject.set(x, "createCursorByRange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setColumnCount(value: Double): Self = this.set("ColumnCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRowCount(value: Double): Self = this.set("RowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreateCursor(value: () => XCellCursor): Self = this.set("createCursor", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateCursorByRange(value: XCellRange => XCellCursor): Self = this.set("createCursorByRange", js.Any.fromFunction1(value))
+    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }
 }

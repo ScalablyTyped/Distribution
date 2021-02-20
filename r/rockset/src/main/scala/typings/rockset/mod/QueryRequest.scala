@@ -1,11 +1,12 @@
 package typings.rockset.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryRequest extends js.Object {
+trait QueryRequest extends StObject {
   
   // details about the query
   var sql: js.UndefOr[QueryRequestSql] = js.native
@@ -19,24 +20,12 @@ object QueryRequest {
   }
   
   @scala.inline
-  implicit class QueryRequestOps[Self <: QueryRequest] (val x: Self) extends AnyVal {
+  implicit class QueryRequestMutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSql(value: QueryRequestSql): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSql(value: QueryRequestSql): Self = this.set("sql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSql: Self = this.set("sql", js.undefined)
+    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

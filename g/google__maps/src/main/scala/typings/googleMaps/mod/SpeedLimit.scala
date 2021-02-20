@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpeedLimit extends js.Object {
+trait SpeedLimit extends StObject {
   
   /** A unique identifier for a place. All place IDs returned by the Roads API will correspond to road segments. */
   var placeId: String = js.native
@@ -25,27 +26,15 @@ object SpeedLimit {
   }
   
   @scala.inline
-  implicit class SpeedLimitOps[Self <: SpeedLimit] (val x: Self) extends AnyVal {
+  implicit class SpeedLimitMutableBuilder[Self <: SpeedLimit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSpeedLimit(value: Double): Self = StObject.set(x, "speedLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPlaceId(value: String): Self = this.set("placeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeedLimit(value: Double): Self = this.set("speedLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnits(value: SpeedLimitUnit): Self = this.set("units", value.asInstanceOf[js.Any])
+    def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.formatjsEcma402Abstract.numberMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrencyData extends js.Object {
+trait CurrencyData extends StObject {
   
   var displayName: LDMLPluralRuleMap[String] = js.native
   
@@ -22,27 +23,15 @@ object CurrencyData {
   }
   
   @scala.inline
-  implicit class CurrencyDataOps[Self <: CurrencyData] (val x: Self) extends AnyVal {
+  implicit class CurrencyDataMutableBuilder[Self <: CurrencyData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNarrow(value: String): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDisplayName(value: LDMLPluralRuleMap[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNarrow(value: String): Self = this.set("narrow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

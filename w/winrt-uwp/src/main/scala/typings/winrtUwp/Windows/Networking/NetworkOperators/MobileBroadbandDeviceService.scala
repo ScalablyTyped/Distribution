@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband device service. */
 @js.native
-trait MobileBroadbandDeviceService extends js.Object {
+trait MobileBroadbandDeviceService extends StObject {
   
   /** Gets the unique device service identity for the mobile broadband device service. */
   var deviceServiceId: String = js.native
@@ -41,30 +42,18 @@ object MobileBroadbandDeviceService {
   }
   
   @scala.inline
-  implicit class MobileBroadbandDeviceServiceOps[Self <: MobileBroadbandDeviceService] (val x: Self) extends AnyVal {
+  implicit class MobileBroadbandDeviceServiceMutableBuilder[Self <: MobileBroadbandDeviceService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceServiceId(value: String): Self = StObject.set(x, "deviceServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenCommandSession(value: () => MobileBroadbandDeviceServiceCommandSession): Self = StObject.set(x, "openCommandSession", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenDataSession(value: () => MobileBroadbandDeviceServiceDataSession): Self = StObject.set(x, "openDataSession", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeviceServiceId(value: String): Self = this.set("deviceServiceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenCommandSession(value: () => MobileBroadbandDeviceServiceCommandSession): Self = this.set("openCommandSession", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOpenDataSession(value: () => MobileBroadbandDeviceServiceDataSession): Self = this.set("openDataSession", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSupportedCommands(value: IVectorView[Double]): Self = this.set("supportedCommands", value.asInstanceOf[js.Any])
+    def setSupportedCommands(value: IVectorView[Double]): Self = StObject.set(x, "supportedCommands", value.asInstanceOf[js.Any])
   }
 }

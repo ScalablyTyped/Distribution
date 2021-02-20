@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyReplicationInstanceResponse extends js.Object {
+trait ModifyReplicationInstanceResponse extends StObject {
   
   /**
     * The modified replication instance.
@@ -21,24 +22,12 @@ object ModifyReplicationInstanceResponse {
   }
   
   @scala.inline
-  implicit class ModifyReplicationInstanceResponseOps[Self <: ModifyReplicationInstanceResponse] (val x: Self) extends AnyVal {
+  implicit class ModifyReplicationInstanceResponseMutableBuilder[Self <: ModifyReplicationInstanceResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicationInstance(value: ReplicationInstance): Self = StObject.set(x, "ReplicationInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationInstance(value: ReplicationInstance): Self = this.set("ReplicationInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationInstance: Self = this.set("ReplicationInstance", js.undefined)
+    def setReplicationInstanceUndefined: Self = StObject.set(x, "ReplicationInstance", js.undefined)
   }
 }

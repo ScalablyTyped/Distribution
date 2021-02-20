@@ -1,11 +1,12 @@
 package typings.awsSdk.fsxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystem extends js.Object {
+trait FileSystem extends StObject {
   
   /**
     * A list of administrative actions for the file system that are in process or waiting to be processed. Administrative actions describe changes to the Windows file system that you have initiated using the UpdateFileSystem action. 
@@ -100,138 +101,126 @@ object FileSystem {
   }
   
   @scala.inline
-  implicit class FileSystemOps[Self <: FileSystem] (val x: Self) extends AnyVal {
+  implicit class FileSystemMutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrativeActions(value: AdministrativeActions): Self = StObject.set(x, "AdministrativeActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministrativeActionsUndefined: Self = StObject.set(x, "AdministrativeActions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdministrativeActionsVarargs(value: AdministrativeAction*): Self = StObject.set(x, "AdministrativeActions", js.Array(value :_*))
     
     @scala.inline
-    def setAdministrativeActionsVarargs(value: AdministrativeAction*): Self = this.set("AdministrativeActions", js.Array(value :_*))
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrativeActions(value: AdministrativeActions): Self = this.set("AdministrativeActions", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     @scala.inline
-    def deleteAdministrativeActions: Self = this.set("AdministrativeActions", js.undefined)
+    def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    def setFailureDetails(value: FileSystemFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
     @scala.inline
-    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDetails(value: FileSystemFailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    def setFileSystemIdUndefined: Self = StObject.set(x, "FileSystemId", js.undefined)
     
     @scala.inline
-    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    def setFileSystemType(value: FileSystemType): Self = StObject.set(x, "FileSystemType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    def setFileSystemTypeUndefined: Self = StObject.set(x, "FileSystemType", js.undefined)
     
     @scala.inline
-    def deleteFileSystemId: Self = this.set("FileSystemId", js.undefined)
+    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemType(value: FileSystemType): Self = this.set("FileSystemType", value.asInstanceOf[js.Any])
+    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteFileSystemType: Self = this.set("FileSystemType", js.undefined)
+    def setLifecycle(value: FileSystemLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
     
     @scala.inline
-    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    def setLustreConfiguration(value: LustreFileSystemConfiguration): Self = StObject.set(x, "LustreConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifecycle(value: FileSystemLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    def setLustreConfigurationUndefined: Self = StObject.set(x, "LustreConfiguration", js.undefined)
     
     @scala.inline
-    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    def setNetworkInterfaceIds(value: NetworkInterfaceIds): Self = StObject.set(x, "NetworkInterfaceIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLustreConfiguration(value: LustreFileSystemConfiguration): Self = this.set("LustreConfiguration", value.asInstanceOf[js.Any])
+    def setNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NetworkInterfaceIds", js.undefined)
     
     @scala.inline
-    def deleteLustreConfiguration: Self = this.set("LustreConfiguration", js.undefined)
+    def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = StObject.set(x, "NetworkInterfaceIds", js.Array(value :_*))
     
     @scala.inline
-    def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = this.set("NetworkInterfaceIds", js.Array(value :_*))
+    def setOwnerId(value: AWSAccountId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkInterfaceIds(value: NetworkInterfaceIds): Self = this.set("NetworkInterfaceIds", value.asInstanceOf[js.Any])
+    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
     @scala.inline
-    def deleteNetworkInterfaceIds: Self = this.set("NetworkInterfaceIds", js.undefined)
+    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerId(value: AWSAccountId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
     @scala.inline
-    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    def setStorageCapacity(value: StorageCapacity): Self = StObject.set(x, "StorageCapacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
+    def setStorageCapacityUndefined: Self = StObject.set(x, "StorageCapacity", js.undefined)
     
     @scala.inline
-    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
+    def setStorageType(value: StorageType): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageCapacity(value: StorageCapacity): Self = this.set("StorageCapacity", value.asInstanceOf[js.Any])
+    def setStorageTypeUndefined: Self = StObject.set(x, "StorageType", js.undefined)
     
     @scala.inline
-    def deleteStorageCapacity: Self = this.set("StorageCapacity", js.undefined)
+    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorageType(value: StorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
     @scala.inline
-    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
     @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setWindowsConfiguration(value: WindowsFileSystemConfiguration): Self = StObject.set(x, "WindowsConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcId: Self = this.set("VpcId", js.undefined)
-    
-    @scala.inline
-    def setWindowsConfiguration(value: WindowsFileSystemConfiguration): Self = this.set("WindowsConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsConfiguration: Self = this.set("WindowsConfiguration", js.undefined)
+    def setWindowsConfigurationUndefined: Self = StObject.set(x, "WindowsConfiguration", js.undefined)
   }
 }

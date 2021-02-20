@@ -1,11 +1,12 @@
 package typings.sharepoint.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseType extends js.Object {
+trait BaseType extends StObject {
   
   var BaseType: Double = js.native
   
@@ -26,33 +27,21 @@ object BaseType {
   }
   
   @scala.inline
-  implicit class BaseTypeOps[Self <: BaseType] (val x: Self) extends AnyVal {
+  implicit class BaseTypeMutableBuilder[Self <: BaseType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseType(value: Double): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultItemOpen(value: Double): Self = StObject.set(x, "DefaultItemOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirection(value: String): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseType(value: Double): Self = this.set("BaseType", value.asInstanceOf[js.Any])
+    def setEnableVesioning(value: Boolean): Self = StObject.set(x, "EnableVesioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultItemOpen(value: Double): Self = this.set("DefaultItemOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDirection(value: String): Self = this.set("Direction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableVesioning(value: Boolean): Self = this.set("EnableVesioning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

@@ -3,14 +3,14 @@ package typings.firebaseDatabase
 import typings.firebaseDatabase.immutableTreeMod.ImmutableTree
 import typings.firebaseDatabase.operationMod.Operation
 import typings.firebaseDatabase.pathMod.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/database/dist/src/core/operation/AckUserWrite", JSImport.Namespace)
-@js.native
-object ackUserWriteMod extends js.Object {
+object ackUserWriteMod {
   
+  @JSImport("@firebase/database/dist/src/core/operation/AckUserWrite", "AckUserWrite")
   @js.native
   class AckUserWrite protected () extends Operation {
     /**

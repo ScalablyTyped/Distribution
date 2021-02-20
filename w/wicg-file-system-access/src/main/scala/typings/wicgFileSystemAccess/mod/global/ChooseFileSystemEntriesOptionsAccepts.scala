@@ -1,12 +1,13 @@
 package typings.wicgFileSystemAccess.mod.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Old methods available on Chromium 85 instead of the ones above.
 @js.native
-trait ChooseFileSystemEntriesOptionsAccepts extends js.Object {
+trait ChooseFileSystemEntriesOptionsAccepts extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -23,42 +24,30 @@ object ChooseFileSystemEntriesOptionsAccepts {
   }
   
   @scala.inline
-  implicit class ChooseFileSystemEntriesOptionsAcceptsOps[Self <: ChooseFileSystemEntriesOptionsAccepts] (val x: Self) extends AnyVal {
+  implicit class ChooseFileSystemEntriesOptionsAcceptsMutableBuilder[Self <: ChooseFileSystemEntriesOptionsAccepts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setExtensionsVarargs(value: String*): Self = this.set("extensions", js.Array(value :_*))
+    def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtensions(value: js.Array[String]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
     
     @scala.inline
-    def deleteExtensions: Self = this.set("extensions", js.undefined)
-    
-    @scala.inline
-    def setMimeTypesVarargs(value: String*): Self = this.set("mimeTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setMimeTypes(value: js.Array[String]): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMimeTypes: Self = this.set("mimeTypes", js.undefined)
+    def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
   }
 }

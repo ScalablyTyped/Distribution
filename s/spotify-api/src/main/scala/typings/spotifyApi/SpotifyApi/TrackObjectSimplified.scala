@@ -1,6 +1,7 @@
 package typings.spotifyApi.SpotifyApi
 
 import typings.spotifyApi.spotifyApiStrings.track
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [track object (simplified)](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
 @js.native
-trait TrackObjectSimplified extends js.Object {
+trait TrackObjectSimplified extends StObject {
   
   /**
     * The artists who performed the track.
@@ -121,87 +122,75 @@ object TrackObjectSimplified {
   }
   
   @scala.inline
-  implicit class TrackObjectSimplifiedOps[Self <: TrackObjectSimplified] (val x: Self) extends AnyVal {
+  implicit class TrackObjectSimplifiedMutableBuilder[Self <: TrackObjectSimplified] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArtistsVarargs(value: ArtistObjectSimplified*): Self = StObject.set(x, "artists", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtistsVarargs(value: ArtistObjectSimplified*): Self = this.set("artists", js.Array(value :_*))
+    def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
     
     @scala.inline
-    def setArtists(value: js.Array[ArtistObjectSimplified]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
     
     @scala.inline
-    def setDisc_number(value: Double): Self = this.set("disc_number", value.asInstanceOf[js.Any])
+    def setDisc_number(value: Double): Self = StObject.set(x, "disc_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration_ms(value: Double): Self = this.set("duration_ms", value.asInstanceOf[js.Any])
+    def setDuration_ms(value: Double): Self = StObject.set(x, "duration_ms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExplicit(value: Boolean): Self = this.set("explicit", value.asInstanceOf[js.Any])
+    def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = this.set("external_urls", value.asInstanceOf[js.Any])
+    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIs_playable(value: Boolean): Self = StObject.set(x, "is_playable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack_number(value: Double): Self = this.set("track_number", value.asInstanceOf[js.Any])
+    def setIs_playableUndefined: Self = StObject.set(x, "is_playable", js.undefined)
     
     @scala.inline
-    def setType(value: track): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLinked_from(value: TrackLinkObject): Self = StObject.set(x, "linked_from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setLinked_fromUndefined: Self = StObject.set(x, "linked_from", js.undefined)
     
     @scala.inline
-    def setAvailable_marketsVarargs(value: String*): Self = this.set("available_markets", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable_markets(value: js.Array[String]): Self = this.set("available_markets", value.asInstanceOf[js.Any])
+    def setPreview_url(value: String): Self = StObject.set(x, "preview_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailable_markets: Self = this.set("available_markets", js.undefined)
+    def setPreview_urlNull: Self = StObject.set(x, "preview_url", null)
     
     @scala.inline
-    def setIs_playable(value: Boolean): Self = this.set("is_playable", value.asInstanceOf[js.Any])
+    def setRestrictions(value: RestrictionsObject): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIs_playable: Self = this.set("is_playable", js.undefined)
+    def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
     
     @scala.inline
-    def setLinked_from(value: TrackLinkObject): Self = this.set("linked_from", value.asInstanceOf[js.Any])
+    def setTrack_number(value: Double): Self = StObject.set(x, "track_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinked_from: Self = this.set("linked_from", js.undefined)
+    def setType(value: track): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview_url(value: String): Self = this.set("preview_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreview_urlNull: Self = this.set("preview_url", null)
-    
-    @scala.inline
-    def setRestrictions(value: RestrictionsObject): Self = this.set("restrictions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

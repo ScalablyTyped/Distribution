@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data when an app is activated to replace an appointment in the user’s calendar. */
 @js.native
-trait WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs extends js.Object {
+trait WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
   var activatedOperation: ActivatedOperation = js.native
@@ -46,36 +47,24 @@ object WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs {
   }
   
   @scala.inline
-  implicit class WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgsOps[Self <: WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs] (val x: Self) extends AnyVal {
+  implicit class WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgsMutableBuilder[Self <: WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = this.set("activatedOperation", value.asInstanceOf[js.Any])
+    def setReplaceAppointmentOperation(value: ReplaceAppointmentOperation): Self = StObject.set(x, "replaceAppointmentOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: ActivationKind): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = this.set("previousExecutionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaceAppointmentOperation(value: ReplaceAppointmentOperation): Self = this.set("replaceAppointmentOperation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = this.set("splashScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerb(value: String): Self = this.set("verb", value.asInstanceOf[js.Any])
+    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

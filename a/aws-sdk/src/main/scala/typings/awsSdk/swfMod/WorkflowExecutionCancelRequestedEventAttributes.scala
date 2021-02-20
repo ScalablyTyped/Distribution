@@ -1,11 +1,12 @@
 package typings.awsSdk.swfMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkflowExecutionCancelRequestedEventAttributes extends js.Object {
+trait WorkflowExecutionCancelRequestedEventAttributes extends StObject {
   
   /**
     * If set, indicates that the request to cancel the workflow execution was automatically generated, and specifies the cause. This happens if the parent workflow execution times out or is terminated, and the child policy is set to cancel child executions.
@@ -31,36 +32,24 @@ object WorkflowExecutionCancelRequestedEventAttributes {
   }
   
   @scala.inline
-  implicit class WorkflowExecutionCancelRequestedEventAttributesOps[Self <: WorkflowExecutionCancelRequestedEventAttributes] (val x: Self) extends AnyVal {
+  implicit class WorkflowExecutionCancelRequestedEventAttributesMutableBuilder[Self <: WorkflowExecutionCancelRequestedEventAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCause(value: WorkflowExecutionCancelRequestedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExternalInitiatedEventId(value: EventId): Self = StObject.set(x, "externalInitiatedEventId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCause(value: WorkflowExecutionCancelRequestedCause): Self = this.set("cause", value.asInstanceOf[js.Any])
+    def setExternalInitiatedEventIdUndefined: Self = StObject.set(x, "externalInitiatedEventId", js.undefined)
     
     @scala.inline
-    def deleteCause: Self = this.set("cause", js.undefined)
+    def setExternalWorkflowExecution(value: WorkflowExecution): Self = StObject.set(x, "externalWorkflowExecution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalInitiatedEventId(value: EventId): Self = this.set("externalInitiatedEventId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalInitiatedEventId: Self = this.set("externalInitiatedEventId", js.undefined)
-    
-    @scala.inline
-    def setExternalWorkflowExecution(value: WorkflowExecution): Self = this.set("externalWorkflowExecution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExternalWorkflowExecution: Self = this.set("externalWorkflowExecution", js.undefined)
+    def setExternalWorkflowExecutionUndefined: Self = StObject.set(x, "externalWorkflowExecution", js.undefined)
   }
 }

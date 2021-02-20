@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Doing extends js.Object {
+trait Doing extends StObject {
   
   var doing: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object Doing {
   }
   
   @scala.inline
-  implicit class DoingOps[Self <: Doing] (val x: Self) extends AnyVal {
+  implicit class DoingMutableBuilder[Self <: Doing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoing(value: scala.Double): Self = StObject.set(x, "doing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDone(value: scala.Double): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDoing(value: scala.Double): Self = this.set("doing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDone(value: scala.Double): Self = this.set("done", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFollowed(value: scala.Double): Self = this.set("followed", value.asInstanceOf[js.Any])
+    def setFollowed(value: scala.Double): Self = StObject.set(x, "followed", value.asInstanceOf[js.Any])
   }
 }

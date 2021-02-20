@@ -1,11 +1,12 @@
 package typings.dwt.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayMode extends js.Object {
+trait DisplayMode extends StObject {
   
   var displayMode: js.UndefOr[String] = js.native
   
@@ -28,48 +29,36 @@ object DisplayMode {
   }
   
   @scala.inline
-  implicit class DisplayModeOps[Self <: DisplayMode] (val x: Self) extends AnyVal {
+  implicit class DisplayModeMutableBuilder[Self <: DisplayMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayMode(value: String): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGoToThumbnail(value: Boolean): Self = StObject.set(x, "goToThumbnail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: String): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setGoToThumbnailUndefined: Self = StObject.set(x, "goToThumbnail", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoToThumbnail(value: Boolean): Self = this.set("goToThumbnail", value.asInstanceOf[js.Any])
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
-    def deleteGoToThumbnail: Self = this.set("goToThumbnail", js.undefined)
+    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
     @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedColor(value: String): Self = this.set("selectedColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedColor: Self = this.set("selectedColor", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: Boolean): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

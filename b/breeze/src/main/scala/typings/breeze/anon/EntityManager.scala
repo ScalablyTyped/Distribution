@@ -2,12 +2,13 @@ package typings.breeze.anon
 
 import typings.breeze.breeze.EntityQuery
 import typings.breeze.breeze.HttpResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityManager extends js.Object {
+trait EntityManager extends StObject {
   
   var entityManager: typings.breeze.breeze.EntityManager = js.native
   
@@ -28,39 +29,27 @@ object EntityManager {
   }
   
   @scala.inline
-  implicit class EntityManagerOps[Self <: EntityManager] (val x: Self) extends AnyVal {
+  implicit class EntityManagerMutableBuilder[Self <: EntityManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntityManager(value: typings.breeze.breeze.EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpResponse(value: HttpResponse): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntityManager(value: typings.breeze.breeze.EntityManager): Self = this.set("entityManager", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setHttpResponse(value: HttpResponse): Self = this.set("httpResponse", value.asInstanceOf[js.Any])
+    def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: EntityQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setStack(value: String): Self = this.set("stack", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStack: Self = this.set("stack", js.undefined)
+    def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

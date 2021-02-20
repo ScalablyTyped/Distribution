@@ -8,6 +8,7 @@ import typings.backboneMarionette.anon.InstantiableView
 import typings.backboneMarionette.anon.PreventRender
 import typings.backboneMarionette.backboneMarionetteBooleans.`false`
 import typings.std.DocumentFragment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,7 +115,7 @@ class CollectionView[TModel /* <: Model[_, ModelSetOptions, js.Object] */, TView
   def filter(child: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
   def filter(child: js.UndefOr[scala.Nothing], index: Double, collection: TCollection): Boolean = js.native
   
-   // Mirrors Backbone.Collection.comparator
+  // Mirrors Backbone.Collection.comparator
   /**
     * Override this method to determine which viewComparator to use.
     */

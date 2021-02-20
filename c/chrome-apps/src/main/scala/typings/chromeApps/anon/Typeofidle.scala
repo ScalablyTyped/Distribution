@@ -3,12 +3,13 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.idle.IdleState
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofidle extends js.Object {
+trait Typeofidle extends StObject {
   
   /**
     * Fired when the system changes to an active, idle or locked state.
@@ -49,27 +50,15 @@ object Typeofidle {
   }
   
   @scala.inline
-  implicit class TypeofidleOps[Self <: Typeofidle] (val x: Self) extends AnyVal {
+  implicit class TypeofidleMutableBuilder[Self <: Typeofidle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnStateChanged(value: Event[js.Function1[/* newState */ IdleState, Unit]]): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQueryState(value: (integer, js.Function1[/* newState */ IdleState, Unit]) => Unit): Self = StObject.set(x, "queryState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnStateChanged(value: Event[js.Function1[/* newState */ IdleState, Unit]]): Self = this.set("onStateChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryState(value: (integer, js.Function1[/* newState */ IdleState, Unit]) => Unit): Self = this.set("queryState", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetDetectionInterval(value: integer => Unit): Self = this.set("setDetectionInterval", js.Any.fromFunction1(value))
+    def setSetDetectionInterval(value: integer => Unit): Self = StObject.set(x, "setDetectionInterval", js.Any.fromFunction1(value))
   }
 }

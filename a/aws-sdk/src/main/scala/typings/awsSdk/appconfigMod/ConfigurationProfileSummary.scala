@@ -1,11 +1,12 @@
 package typings.awsSdk.appconfigMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationProfileSummary extends js.Object {
+trait ConfigurationProfileSummary extends StObject {
   
   /**
     * The application ID.
@@ -41,51 +42,39 @@ object ConfigurationProfileSummary {
   }
   
   @scala.inline
-  implicit class ConfigurationProfileSummaryOps[Self <: ConfigurationProfileSummary] (val x: Self) extends AnyVal {
+  implicit class ConfigurationProfileSummaryMutableBuilder[Self <: ConfigurationProfileSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationId(value: Id): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    def setLocationUri(value: Uri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationUri(value: Uri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    def setValidatorTypes(value: ValidatorTypeList): Self = StObject.set(x, "ValidatorTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setValidatorTypesUndefined: Self = StObject.set(x, "ValidatorTypes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
-    
-    @scala.inline
-    def setValidatorTypesVarargs(value: ValidatorType*): Self = this.set("ValidatorTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidatorTypes(value: ValidatorTypeList): Self = this.set("ValidatorTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidatorTypes: Self = this.set("ValidatorTypes", js.undefined)
+    def setValidatorTypesVarargs(value: ValidatorType*): Self = StObject.set(x, "ValidatorTypes", js.Array(value :_*))
   }
 }

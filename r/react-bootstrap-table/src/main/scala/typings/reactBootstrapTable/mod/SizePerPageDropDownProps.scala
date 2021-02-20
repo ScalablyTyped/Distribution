@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.reactBootstrapTable.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizePerPageDropDownProps extends js.Object {
+trait SizePerPageDropDownProps extends StObject {
   
   /**
     * Bootstrap css style class for the button, e.g. 'btn-warning'
@@ -57,69 +58,57 @@ object SizePerPageDropDownProps {
   }
   
   @scala.inline
-  implicit class SizePerPageDropDownPropsOps[Self <: SizePerPageDropDownProps] (val x: Self) extends AnyVal {
+  implicit class SizePerPageDropDownPropsMutableBuilder[Self <: SizePerPageDropDownProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBtnContextual(value: String): Self = StObject.set(x, "btnContextual", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBtnContextualUndefined: Self = StObject.set(x, "btnContextual", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBtnContextual(value: String): Self = this.set("btnContextual", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteBtnContextual: Self = this.set("btnContextual", js.undefined)
+    def setCurrSizePerPage(value: String): Self = StObject.set(x, "currSizePerPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setCurrSizePerPageUndefined: Self = StObject.set(x, "currSizePerPage", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrSizePerPage(value: String): Self = this.set("currSizePerPage", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteCurrSizePerPage: Self = this.set("currSizePerPage", js.undefined)
+    def setOnClick(value: /* toggleDropDown */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: /* toggleDropDown */ js.Function0[Unit] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOptions(value: js.Array[Double | Text]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOpen: Self = this.set("open", js.undefined)
+    def setOptionsVarargs(value: (Double | Text)*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setOptionsVarargs(value: (Double | Text)*): Self = this.set("options", js.Array(value :_*))
+    def setVariation(value: DropDirection): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: js.Array[Double | Text]): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setVariation(value: DropDirection): Self = this.set("variation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariation: Self = this.set("variation", js.undefined)
+    def setVariationUndefined: Self = StObject.set(x, "variation", js.undefined)
   }
 }

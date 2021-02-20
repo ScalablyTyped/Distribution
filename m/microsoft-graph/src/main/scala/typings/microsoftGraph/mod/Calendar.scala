@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -94,198 +95,186 @@ object Calendar {
   }
   
   @scala.inline
-  implicit class CalendarOps[Self <: Calendar] (val x: Self) extends AnyVal {
+  implicit class CalendarMutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowedOnlineMeetingProviders(value: NullableOption[js.Array[OnlineMeetingProviderType]]): Self = StObject.set(x, "allowedOnlineMeetingProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedOnlineMeetingProvidersNull: Self = StObject.set(x, "allowedOnlineMeetingProviders", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedOnlineMeetingProvidersUndefined: Self = StObject.set(x, "allowedOnlineMeetingProviders", js.undefined)
     
     @scala.inline
-    def setAllowedOnlineMeetingProvidersVarargs(value: OnlineMeetingProviderType*): Self = this.set("allowedOnlineMeetingProviders", js.Array(value :_*))
+    def setAllowedOnlineMeetingProvidersVarargs(value: OnlineMeetingProviderType*): Self = StObject.set(x, "allowedOnlineMeetingProviders", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedOnlineMeetingProviders(value: NullableOption[js.Array[OnlineMeetingProviderType]]): Self = this.set("allowedOnlineMeetingProviders", value.asInstanceOf[js.Any])
+    def setCalendarPermissions(value: NullableOption[js.Array[CalendarPermission]]): Self = StObject.set(x, "calendarPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowedOnlineMeetingProviders: Self = this.set("allowedOnlineMeetingProviders", js.undefined)
+    def setCalendarPermissionsNull: Self = StObject.set(x, "calendarPermissions", null)
     
     @scala.inline
-    def setAllowedOnlineMeetingProvidersNull: Self = this.set("allowedOnlineMeetingProviders", null)
+    def setCalendarPermissionsUndefined: Self = StObject.set(x, "calendarPermissions", js.undefined)
     
     @scala.inline
-    def setCalendarPermissionsVarargs(value: CalendarPermission*): Self = this.set("calendarPermissions", js.Array(value :_*))
+    def setCalendarPermissionsVarargs(value: CalendarPermission*): Self = StObject.set(x, "calendarPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setCalendarPermissions(value: NullableOption[js.Array[CalendarPermission]]): Self = this.set("calendarPermissions", value.asInstanceOf[js.Any])
+    def setCalendarView(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "calendarView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendarPermissions: Self = this.set("calendarPermissions", js.undefined)
+    def setCalendarViewNull: Self = StObject.set(x, "calendarView", null)
     
     @scala.inline
-    def setCalendarPermissionsNull: Self = this.set("calendarPermissions", null)
+    def setCalendarViewUndefined: Self = StObject.set(x, "calendarView", js.undefined)
     
     @scala.inline
-    def setCalendarViewVarargs(value: Event*): Self = this.set("calendarView", js.Array(value :_*))
+    def setCalendarViewVarargs(value: Event*): Self = StObject.set(x, "calendarView", js.Array(value :_*))
     
     @scala.inline
-    def setCalendarView(value: NullableOption[js.Array[Event]]): Self = this.set("calendarView", value.asInstanceOf[js.Any])
+    def setCanEdit(value: NullableOption[Boolean]): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCalendarView: Self = this.set("calendarView", js.undefined)
+    def setCanEditNull: Self = StObject.set(x, "canEdit", null)
     
     @scala.inline
-    def setCalendarViewNull: Self = this.set("calendarView", null)
+    def setCanEditUndefined: Self = StObject.set(x, "canEdit", js.undefined)
     
     @scala.inline
-    def setCanEdit(value: NullableOption[Boolean]): Self = this.set("canEdit", value.asInstanceOf[js.Any])
+    def setCanShare(value: NullableOption[Boolean]): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanEdit: Self = this.set("canEdit", js.undefined)
+    def setCanShareNull: Self = StObject.set(x, "canShare", null)
     
     @scala.inline
-    def setCanEditNull: Self = this.set("canEdit", null)
+    def setCanShareUndefined: Self = StObject.set(x, "canShare", js.undefined)
     
     @scala.inline
-    def setCanShare(value: NullableOption[Boolean]): Self = this.set("canShare", value.asInstanceOf[js.Any])
+    def setCanViewPrivateItems(value: NullableOption[Boolean]): Self = StObject.set(x, "canViewPrivateItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanShare: Self = this.set("canShare", js.undefined)
+    def setCanViewPrivateItemsNull: Self = StObject.set(x, "canViewPrivateItems", null)
     
     @scala.inline
-    def setCanShareNull: Self = this.set("canShare", null)
+    def setCanViewPrivateItemsUndefined: Self = StObject.set(x, "canViewPrivateItems", js.undefined)
     
     @scala.inline
-    def setCanViewPrivateItems(value: NullableOption[Boolean]): Self = this.set("canViewPrivateItems", value.asInstanceOf[js.Any])
+    def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCanViewPrivateItems: Self = this.set("canViewPrivateItems", js.undefined)
+    def setChangeKeyNull: Self = StObject.set(x, "changeKey", null)
     
     @scala.inline
-    def setCanViewPrivateItemsNull: Self = this.set("canViewPrivateItems", null)
+    def setChangeKeyUndefined: Self = StObject.set(x, "changeKey", js.undefined)
     
     @scala.inline
-    def setChangeKey(value: NullableOption[String]): Self = this.set("changeKey", value.asInstanceOf[js.Any])
+    def setColor(value: NullableOption[CalendarColor]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChangeKey: Self = this.set("changeKey", js.undefined)
+    def setColorNull: Self = StObject.set(x, "color", null)
     
     @scala.inline
-    def setChangeKeyNull: Self = this.set("changeKey", null)
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setColor(value: NullableOption[CalendarColor]): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setDefaultOnlineMeetingProvider(value: NullableOption[OnlineMeetingProviderType]): Self = StObject.set(x, "defaultOnlineMeetingProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setDefaultOnlineMeetingProviderNull: Self = StObject.set(x, "defaultOnlineMeetingProvider", null)
     
     @scala.inline
-    def setColorNull: Self = this.set("color", null)
+    def setDefaultOnlineMeetingProviderUndefined: Self = StObject.set(x, "defaultOnlineMeetingProvider", js.undefined)
     
     @scala.inline
-    def setDefaultOnlineMeetingProvider(value: NullableOption[OnlineMeetingProviderType]): Self = this.set("defaultOnlineMeetingProvider", value.asInstanceOf[js.Any])
+    def setEvents(value: NullableOption[js.Array[Event]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultOnlineMeetingProvider: Self = this.set("defaultOnlineMeetingProvider", js.undefined)
+    def setEventsNull: Self = StObject.set(x, "events", null)
     
     @scala.inline
-    def setDefaultOnlineMeetingProviderNull: Self = this.set("defaultOnlineMeetingProvider", null)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setEventsVarargs(value: Event*): Self = this.set("events", js.Array(value :_*))
+    def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEvents(value: NullableOption[js.Array[Event]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setHexColor(value: NullableOption[String]): Self = StObject.set(x, "hexColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setHexColorNull: Self = StObject.set(x, "hexColor", null)
     
     @scala.inline
-    def setEventsNull: Self = this.set("events", null)
+    def setHexColorUndefined: Self = StObject.set(x, "hexColor", js.undefined)
     
     @scala.inline
-    def setHexColor(value: NullableOption[String]): Self = this.set("hexColor", value.asInstanceOf[js.Any])
+    def setIsDefaultCalendar(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefaultCalendar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHexColor: Self = this.set("hexColor", js.undefined)
+    def setIsDefaultCalendarNull: Self = StObject.set(x, "isDefaultCalendar", null)
     
     @scala.inline
-    def setHexColorNull: Self = this.set("hexColor", null)
+    def setIsDefaultCalendarUndefined: Self = StObject.set(x, "isDefaultCalendar", js.undefined)
     
     @scala.inline
-    def setIsDefaultCalendar(value: NullableOption[Boolean]): Self = this.set("isDefaultCalendar", value.asInstanceOf[js.Any])
+    def setIsRemovable(value: NullableOption[Boolean]): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDefaultCalendar: Self = this.set("isDefaultCalendar", js.undefined)
+    def setIsRemovableNull: Self = StObject.set(x, "isRemovable", null)
     
     @scala.inline
-    def setIsDefaultCalendarNull: Self = this.set("isDefaultCalendar", null)
+    def setIsRemovableUndefined: Self = StObject.set(x, "isRemovable", js.undefined)
     
     @scala.inline
-    def setIsRemovable(value: NullableOption[Boolean]): Self = this.set("isRemovable", value.asInstanceOf[js.Any])
+    def setIsTallyingResponses(value: NullableOption[Boolean]): Self = StObject.set(x, "isTallyingResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsRemovable: Self = this.set("isRemovable", js.undefined)
+    def setIsTallyingResponsesNull: Self = StObject.set(x, "isTallyingResponses", null)
     
     @scala.inline
-    def setIsRemovableNull: Self = this.set("isRemovable", null)
+    def setIsTallyingResponsesUndefined: Self = StObject.set(x, "isTallyingResponses", js.undefined)
     
     @scala.inline
-    def setIsTallyingResponses(value: NullableOption[Boolean]): Self = this.set("isTallyingResponses", value.asInstanceOf[js.Any])
+    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsTallyingResponses: Self = this.set("isTallyingResponses", js.undefined)
+    def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
     
     @scala.inline
-    def setIsTallyingResponsesNull: Self = this.set("isTallyingResponses", null)
+    def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = this.set("multiValueExtendedProperties", js.Array(value :_*))
+    def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
     
     @scala.inline
-    def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = this.set("multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiValueExtendedProperties: Self = this.set("multiValueExtendedProperties", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setMultiValueExtendedPropertiesNull: Self = this.set("multiValueExtendedProperties", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOwner(value: NullableOption[EmailAddress]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOwnerNull: Self = StObject.set(x, "owner", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setOwner(value: NullableOption[EmailAddress]): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
     
     @scala.inline
-    def setOwnerNull: Self = this.set("owner", null)
+    def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
     @scala.inline
-    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = this.set("singleValueExtendedProperties", js.Array(value :_*))
-    
-    @scala.inline
-    def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = this.set("singleValueExtendedProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSingleValueExtendedProperties: Self = this.set("singleValueExtendedProperties", js.undefined)
-    
-    @scala.inline
-    def setSingleValueExtendedPropertiesNull: Self = this.set("singleValueExtendedProperties", null)
+    def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
   }
 }

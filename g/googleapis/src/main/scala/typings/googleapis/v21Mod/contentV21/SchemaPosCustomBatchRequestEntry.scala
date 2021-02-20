@@ -1,11 +1,12 @@
 package typings.googleapis.v21Mod.contentV21
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaPosCustomBatchRequestEntry extends js.Object {
+trait SchemaPosCustomBatchRequestEntry extends StObject {
   
   /**
     * An entry ID, unique within the batch request.
@@ -53,66 +54,54 @@ object SchemaPosCustomBatchRequestEntry {
   }
   
   @scala.inline
-  implicit class SchemaPosCustomBatchRequestEntryOps[Self <: SchemaPosCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaPosCustomBatchRequestEntryMutableBuilder[Self <: SchemaPosCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInventory(value: SchemaPosInventory): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
     
     @scala.inline
-    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventory(value: SchemaPosInventory): Self = this.set("inventory", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteInventory: Self = this.set("inventory", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setSale(value: SchemaPosSale): Self = StObject.set(x, "sale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setSaleUndefined: Self = StObject.set(x, "sale", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setStore(value: SchemaPosStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSale(value: SchemaPosSale): Self = this.set("sale", value.asInstanceOf[js.Any])
+    def setStoreCode(value: String): Self = StObject.set(x, "storeCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSale: Self = this.set("sale", js.undefined)
+    def setStoreCodeUndefined: Self = StObject.set(x, "storeCode", js.undefined)
     
     @scala.inline
-    def setStore(value: SchemaPosStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
     @scala.inline
-    def deleteStore: Self = this.set("store", js.undefined)
+    def setTargetMerchantId(value: String): Self = StObject.set(x, "targetMerchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStoreCode(value: String): Self = this.set("storeCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStoreCode: Self = this.set("storeCode", js.undefined)
-    
-    @scala.inline
-    def setTargetMerchantId(value: String): Self = this.set("targetMerchantId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetMerchantId: Self = this.set("targetMerchantId", js.undefined)
+    def setTargetMerchantIdUndefined: Self = StObject.set(x, "targetMerchantId", js.undefined)
   }
 }

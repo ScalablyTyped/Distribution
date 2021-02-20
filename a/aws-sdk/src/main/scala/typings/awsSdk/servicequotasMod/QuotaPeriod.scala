@@ -1,11 +1,12 @@
 package typings.awsSdk.servicequotasMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuotaPeriod extends js.Object {
+trait QuotaPeriod extends StObject {
   
   /**
     * The time unit of a period.
@@ -26,30 +27,18 @@ object QuotaPeriod {
   }
   
   @scala.inline
-  implicit class QuotaPeriodOps[Self <: QuotaPeriod] (val x: Self) extends AnyVal {
+  implicit class QuotaPeriodMutableBuilder[Self <: QuotaPeriod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeriodUnit(value: PeriodUnit): Self = StObject.set(x, "PeriodUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPeriodUnitUndefined: Self = StObject.set(x, "PeriodUnit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriodValue(value: PeriodValue): Self = StObject.set(x, "PeriodValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodUnit(value: PeriodUnit): Self = this.set("PeriodUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriodUnit: Self = this.set("PeriodUnit", js.undefined)
-    
-    @scala.inline
-    def setPeriodValue(value: PeriodValue): Self = this.set("PeriodValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriodValue: Self = this.set("PeriodValue", js.undefined)
+    def setPeriodValueUndefined: Self = StObject.set(x, "PeriodValue", js.undefined)
   }
 }

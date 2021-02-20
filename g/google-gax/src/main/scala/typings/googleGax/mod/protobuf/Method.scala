@@ -2,9 +2,10 @@ package typings.googleGax.mod.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobuf.Method")
 @js.native
@@ -21,135 +22,20 @@ class Method protected ()
     * @param [options] Declared options
     * @param [comment] The comment for this method
     */
-  def this(name: String, `type`: js.UndefOr[String], requestType: String, responseType: String) = this()
   def this(
     name: String,
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any]
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: StringDictionary[js.Any],
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: StringDictionary[js.Any],
-    options: StringDictionary[js.Any],
-    comment: String
-  ) = this()
-  def this(
-    name: String,
-    `type`: js.UndefOr[String],
-    requestType: String,
-    responseType: String,
-    requestStream: Boolean,
-    responseStream: Boolean,
-    options: StringDictionary[js.Any],
-    comment: String
+    requestStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
+    options: js.UndefOr[StringDictionary[js.Any]],
+    comment: js.UndefOr[String]
   ) = this()
 }
-
 /* static members */
-@JSImport("google-gax", "protobuf.Method")
-@js.native
-object Method extends js.Object {
+object Method {
+  
   /**
     * Constructs a method from a method descriptor.
     * @param name Method name
@@ -157,6 +43,7 @@ object Method extends js.Object {
     * @returns Created method
     * @throws {TypeError} If arguments are invalid
     */
+  @JSImport("google-gax", "protobuf.Method.fromJSON")
+  @js.native
   def fromJSON(name: String, json: IMethod): typings.protobufjs.mod.Method = js.native
 }
-

@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.loadingManagerMod.LoadingManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/loaders/Loader", JSImport.Namespace)
-@js.native
-object loaderMod extends js.Object {
+object loaderMod {
   
+  @JSImport("three/src/loaders/Loader", "Loader")
   @js.native
-  class Loader () extends js.Object {
+  class Loader () extends StObject {
     def this(manager: LoadingManager) = this()
     
     /**

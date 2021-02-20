@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait S3Grantee extends js.Object {
+trait S3Grantee extends StObject {
   
   /**
     * 
@@ -31,36 +32,24 @@ object S3Grantee {
   }
   
   @scala.inline
-  implicit class S3GranteeOps[Self <: S3Grantee] (val x: Self) extends AnyVal {
+  implicit class S3GranteeMutableBuilder[Self <: S3Grantee] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdentifier(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: NonEmptyMaxLength1024String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    def setTypeIdentifier(value: S3GranteeTypeIdentifier): Self = StObject.set(x, "TypeIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentifier(value: NonEmptyMaxLength1024String): Self = this.set("Identifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIdentifier: Self = this.set("Identifier", js.undefined)
-    
-    @scala.inline
-    def setTypeIdentifier(value: S3GranteeTypeIdentifier): Self = this.set("TypeIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeIdentifier: Self = this.set("TypeIdentifier", js.undefined)
+    def setTypeIdentifierUndefined: Self = StObject.set(x, "TypeIdentifier", js.undefined)
   }
 }

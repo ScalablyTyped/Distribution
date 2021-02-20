@@ -1,11 +1,12 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInvoiceSummary extends js.Object {
+trait SchemaInvoiceSummary extends StObject {
   
   /**
     * Summary of the total amounts of the additional charges.
@@ -46,60 +47,48 @@ object SchemaInvoiceSummary {
   }
   
   @scala.inline
-  implicit class SchemaInvoiceSummaryOps[Self <: SchemaInvoiceSummary] (val x: Self) extends AnyVal {
+  implicit class SchemaInvoiceSummaryMutableBuilder[Self <: SchemaInvoiceSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalChargeSummaries(value: js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]): Self = StObject.set(x, "additionalChargeSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalChargeSummariesUndefined: Self = StObject.set(x, "additionalChargeSummaries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalChargeSummariesVarargs(value: SchemaInvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalChargeSummariesVarargs(value: SchemaInvoiceSummaryAdditionalChargeSummary*): Self = this.set("additionalChargeSummaries", js.Array(value :_*))
+    def setCustomerBalance(value: SchemaAmount): Self = StObject.set(x, "customerBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalChargeSummaries(value: js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]): Self = this.set("additionalChargeSummaries", value.asInstanceOf[js.Any])
+    def setCustomerBalanceUndefined: Self = StObject.set(x, "customerBalance", js.undefined)
     
     @scala.inline
-    def deleteAdditionalChargeSummaries: Self = this.set("additionalChargeSummaries", js.undefined)
+    def setGoogleBalance(value: SchemaAmount): Self = StObject.set(x, "googleBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerBalance(value: SchemaAmount): Self = this.set("customerBalance", value.asInstanceOf[js.Any])
+    def setGoogleBalanceUndefined: Self = StObject.set(x, "googleBalance", js.undefined)
     
     @scala.inline
-    def deleteCustomerBalance: Self = this.set("customerBalance", js.undefined)
+    def setMerchantBalance(value: SchemaAmount): Self = StObject.set(x, "merchantBalance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleBalance(value: SchemaAmount): Self = this.set("googleBalance", value.asInstanceOf[js.Any])
+    def setMerchantBalanceUndefined: Self = StObject.set(x, "merchantBalance", js.undefined)
     
     @scala.inline
-    def deleteGoogleBalance: Self = this.set("googleBalance", js.undefined)
+    def setProductTotal(value: SchemaAmount): Self = StObject.set(x, "productTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantBalance(value: SchemaAmount): Self = this.set("merchantBalance", value.asInstanceOf[js.Any])
+    def setProductTotalUndefined: Self = StObject.set(x, "productTotal", js.undefined)
     
     @scala.inline
-    def deleteMerchantBalance: Self = this.set("merchantBalance", js.undefined)
+    def setPromotionSummaries(value: js.Array[SchemaPromotion]): Self = StObject.set(x, "promotionSummaries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductTotal(value: SchemaAmount): Self = this.set("productTotal", value.asInstanceOf[js.Any])
+    def setPromotionSummariesUndefined: Self = StObject.set(x, "promotionSummaries", js.undefined)
     
     @scala.inline
-    def deleteProductTotal: Self = this.set("productTotal", js.undefined)
-    
-    @scala.inline
-    def setPromotionSummariesVarargs(value: SchemaPromotion*): Self = this.set("promotionSummaries", js.Array(value :_*))
-    
-    @scala.inline
-    def setPromotionSummaries(value: js.Array[SchemaPromotion]): Self = this.set("promotionSummaries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePromotionSummaries: Self = this.set("promotionSummaries", js.undefined)
+    def setPromotionSummariesVarargs(value: SchemaPromotion*): Self = StObject.set(x, "promotionSummaries", js.Array(value :_*))
   }
 }

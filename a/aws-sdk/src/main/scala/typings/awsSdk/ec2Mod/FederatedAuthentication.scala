@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FederatedAuthentication extends js.Object {
+trait FederatedAuthentication extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM SAML identity provider.
@@ -26,30 +27,18 @@ object FederatedAuthentication {
   }
   
   @scala.inline
-  implicit class FederatedAuthenticationOps[Self <: FederatedAuthentication] (val x: Self) extends AnyVal {
+  implicit class FederatedAuthenticationMutableBuilder[Self <: FederatedAuthentication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSamlProviderArn(value: String): Self = StObject.set(x, "SamlProviderArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSamlProviderArnUndefined: Self = StObject.set(x, "SamlProviderArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSelfServiceSamlProviderArn(value: String): Self = StObject.set(x, "SelfServiceSamlProviderArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamlProviderArn(value: String): Self = this.set("SamlProviderArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamlProviderArn: Self = this.set("SamlProviderArn", js.undefined)
-    
-    @scala.inline
-    def setSelfServiceSamlProviderArn(value: String): Self = this.set("SelfServiceSamlProviderArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelfServiceSamlProviderArn: Self = this.set("SelfServiceSamlProviderArn", js.undefined)
+    def setSelfServiceSamlProviderArnUndefined: Self = StObject.set(x, "SelfServiceSamlProviderArn", js.undefined)
   }
 }

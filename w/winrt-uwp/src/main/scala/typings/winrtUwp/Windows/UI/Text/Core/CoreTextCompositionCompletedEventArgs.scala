@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Deferral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the CompositionCompleted event. */
 @js.native
-trait CoreTextCompositionCompletedEventArgs extends js.Object {
+trait CoreTextCompositionCompletedEventArgs extends StObject {
   
   /** Gets a collection of CoreTextCompositionSegment objects representing the segments in the composition string. Applications can use this property, for example, to get the pre-conversion string for each composition segment. */
   var compositionSegments: IVectorView[CoreTextCompositionSegment] = js.native
@@ -35,27 +36,15 @@ object CoreTextCompositionCompletedEventArgs {
   }
   
   @scala.inline
-  implicit class CoreTextCompositionCompletedEventArgsOps[Self <: CoreTextCompositionCompletedEventArgs] (val x: Self) extends AnyVal {
+  implicit class CoreTextCompositionCompletedEventArgsMutableBuilder[Self <: CoreTextCompositionCompletedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompositionSegments(value: IVectorView[CoreTextCompositionSegment]): Self = StObject.set(x, "compositionSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCompositionSegments(value: IVectorView[CoreTextCompositionSegment]): Self = this.set("compositionSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = this.set("isCanceled", value.asInstanceOf[js.Any])
+    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
   }
 }

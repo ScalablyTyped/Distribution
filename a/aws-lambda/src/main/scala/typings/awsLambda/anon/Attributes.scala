@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.connectContactFlowMod.ConnectContactFlowChannel
 import typings.awsLambda.connectContactFlowMod.ConnectContactFlowEndpoint
 import typings.awsLambda.connectContactFlowMod.ConnectContactFlowInitiationMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attributes extends js.Object {
+trait Attributes extends StObject {
   
   var Attributes: StringDictionary[String] = js.native
   
@@ -51,60 +52,48 @@ object Attributes {
   }
   
   @scala.inline
-  implicit class AttributesOps[Self <: Attributes] (val x: Self) extends AnyVal {
+  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannel(value: ConnectContactFlowChannel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContactId(value: String): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setCustomerEndpoint(value: ConnectContactFlowEndpoint): Self = StObject.set(x, "CustomerEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: ConnectContactFlowChannel): Self = this.set("Channel", value.asInstanceOf[js.Any])
+    def setCustomerEndpointNull: Self = StObject.set(x, "CustomerEndpoint", null)
     
     @scala.inline
-    def setContactId(value: String): Self = this.set("ContactId", value.asInstanceOf[js.Any])
+    def setInitialContactId(value: String): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialContactId(value: String): Self = this.set("InitialContactId", value.asInstanceOf[js.Any])
+    def setInitiationMethod(value: ConnectContactFlowInitiationMethod): Self = StObject.set(x, "InitiationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitiationMethod(value: ConnectContactFlowInitiationMethod): Self = this.set("InitiationMethod", value.asInstanceOf[js.Any])
+    def setInstanceARN(value: String): Self = StObject.set(x, "InstanceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceARN(value: String): Self = this.set("InstanceARN", value.asInstanceOf[js.Any])
+    def setMediaStreams(value: Customer): Self = StObject.set(x, "MediaStreams", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaStreams(value: Customer): Self = this.set("MediaStreams", value.asInstanceOf[js.Any])
+    def setPreviousContactId(value: String): Self = StObject.set(x, "PreviousContactId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviousContactId(value: String): Self = this.set("PreviousContactId", value.asInstanceOf[js.Any])
+    def setQueue(value: String): Self = StObject.set(x, "Queue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerEndpoint(value: ConnectContactFlowEndpoint): Self = this.set("CustomerEndpoint", value.asInstanceOf[js.Any])
+    def setQueueNull: Self = StObject.set(x, "Queue", null)
     
     @scala.inline
-    def setCustomerEndpointNull: Self = this.set("CustomerEndpoint", null)
+    def setSystemEndpoint(value: ConnectContactFlowEndpoint): Self = StObject.set(x, "SystemEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueue(value: String): Self = this.set("Queue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueNull: Self = this.set("Queue", null)
-    
-    @scala.inline
-    def setSystemEndpoint(value: ConnectContactFlowEndpoint): Self = this.set("SystemEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSystemEndpointNull: Self = this.set("SystemEndpoint", null)
+    def setSystemEndpointNull: Self = StObject.set(x, "SystemEndpoint", null)
   }
 }

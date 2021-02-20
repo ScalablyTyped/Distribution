@@ -1,14 +1,15 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateTimeKind extends js.Object
+sealed trait DateTimeKind extends StObject
 @JSGlobal("SP.DateTimeKind")
 @js.native
-object DateTimeKind extends js.Object {
+object DateTimeKind extends StObject {
   
   @js.native
   sealed trait local extends DateTimeKind

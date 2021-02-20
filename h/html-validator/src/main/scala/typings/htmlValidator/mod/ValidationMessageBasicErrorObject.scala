@@ -2,12 +2,13 @@ package typings.htmlValidator.mod
 
 import typings.htmlValidator.htmlValidatorStrings.error
 import typings.htmlValidator.htmlValidatorStrings.fatal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationMessageBasicErrorObject extends js.Object {
+trait ValidationMessageBasicErrorObject extends StObject {
   
   var subType: js.UndefOr[fatal] = js.native
   
@@ -23,27 +24,15 @@ object ValidationMessageBasicErrorObject {
   }
   
   @scala.inline
-  implicit class ValidationMessageBasicErrorObjectOps[Self <: ValidationMessageBasicErrorObject] (val x: Self) extends AnyVal {
+  implicit class ValidationMessageBasicErrorObjectMutableBuilder[Self <: ValidationMessageBasicErrorObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSubType(value: fatal): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setType(value: error): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubType(value: fatal): Self = this.set("subType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubType: Self = this.set("subType", js.undefined)
+    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

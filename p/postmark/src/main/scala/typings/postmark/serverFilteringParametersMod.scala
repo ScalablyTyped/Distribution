@@ -1,14 +1,14 @@
 package typings.postmark
 
 import typings.postmark.filteringParametersMod.FilteringParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("postmark/dist/client/models/server/ServerFilteringParameters", JSImport.Namespace)
-@js.native
-object serverFilteringParametersMod extends js.Object {
+object serverFilteringParametersMod {
   
+  @JSImport("postmark/dist/client/models/server/ServerFilteringParameters", "ServerFilteringParameters")
   @js.native
   class ServerFilteringParameters () extends FilteringParameters {
     def this(count: Double) = this()

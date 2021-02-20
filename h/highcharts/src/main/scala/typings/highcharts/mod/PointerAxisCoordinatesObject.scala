@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointerAxisCoordinatesObject extends js.Object {
+trait PointerAxisCoordinatesObject extends StObject {
   
   /**
     * Positions on the x-axis.
@@ -26,30 +27,18 @@ object PointerAxisCoordinatesObject {
   }
   
   @scala.inline
-  implicit class PointerAxisCoordinatesObjectOps[Self <: PointerAxisCoordinatesObject] (val x: Self) extends AnyVal {
+  implicit class PointerAxisCoordinatesObjectMutableBuilder[Self <: PointerAxisCoordinatesObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setXAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setXAxisVarargs(value: PointerAxisCoordinateObject*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setYAxis(value: js.Array[PointerAxisCoordinateObject]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXAxisVarargs(value: PointerAxisCoordinateObject*): Self = this.set("xAxis", js.Array(value :_*))
-    
-    @scala.inline
-    def setXAxis(value: js.Array[PointerAxisCoordinateObject]): Self = this.set("xAxis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setYAxisVarargs(value: PointerAxisCoordinateObject*): Self = this.set("yAxis", js.Array(value :_*))
-    
-    @scala.inline
-    def setYAxis(value: js.Array[PointerAxisCoordinateObject]): Self = this.set("yAxis", value.asInstanceOf[js.Any])
+    def setYAxisVarargs(value: PointerAxisCoordinateObject*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
   }
 }

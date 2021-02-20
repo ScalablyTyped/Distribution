@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HTMLDefaults extends js.Object {
+trait HTMLDefaults extends StObject {
   
   @JSName("MSHTML.HTMLDefaults_typekey")
   var MSHTMLDotHTMLDefaults_typekey: HTMLDefaults = js.native
@@ -58,57 +59,45 @@ object HTMLDefaults {
   }
   
   @scala.inline
-  implicit class HTMLDefaultsOps[Self <: HTMLDefaults] (val x: Self) extends AnyVal {
+  implicit class HTMLDefaultsMutableBuilder[Self <: HTMLDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanHaveHTML(value: Boolean): Self = StObject.set(x, "canHaveHTML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentEditable(value: String): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotHTMLDefaults_typekey(value: HTMLDefaults): Self = this.set("MSHTML.HTMLDefaults_typekey", value.asInstanceOf[js.Any])
+    def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanHaveHTML(value: Boolean): Self = this.set("canHaveHTML", value.asInstanceOf[js.Any])
+    def setIsMultiLine(value: Boolean): Self = StObject.set(x, "isMultiLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstructor(value: js.Any): Self = this.set("constructor", value.asInstanceOf[js.Any])
+    def setMSHTMLDotHTMLDefaults_typekey(value: HTMLDefaults): Self = StObject.set(x, "MSHTML.HTMLDefaults_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentEditable(value: String): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    def setScrollSegmentX(value: Double): Self = StObject.set(x, "scrollSegmentX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrozen(value: Boolean): Self = this.set("frozen", value.asInstanceOf[js.Any])
+    def setScrollSegmentY(value: Double): Self = StObject.set(x, "scrollSegmentY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMultiLine(value: Boolean): Self = this.set("isMultiLine", value.asInstanceOf[js.Any])
+    def setStyle(value: IHTMLStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSegmentX(value: Double): Self = this.set("scrollSegmentX", value.asInstanceOf[js.Any])
+    def setTabStop(value: Boolean): Self = StObject.set(x, "tabStop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollSegmentY(value: Double): Self = this.set("scrollSegmentY", value.asInstanceOf[js.Any])
+    def setViewInheritStyle(value: Boolean): Self = StObject.set(x, "viewInheritStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: IHTMLStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setViewLink(value: IHTMLDocument): Self = StObject.set(x, "viewLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabStop(value: Boolean): Self = this.set("tabStop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewInheritStyle(value: Boolean): Self = this.set("viewInheritStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewLink(value: IHTMLDocument): Self = this.set("viewLink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewMasterTab(value: Boolean): Self = this.set("viewMasterTab", value.asInstanceOf[js.Any])
+    def setViewMasterTab(value: Boolean): Self = StObject.set(x, "viewMasterTab", value.asInstanceOf[js.Any])
   }
 }

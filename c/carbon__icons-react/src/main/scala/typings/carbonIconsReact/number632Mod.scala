@@ -1,13 +1,20 @@
 package typings.carbonIconsReact
 
+import org.scalablytyped.runtime.Shortcut
 import typings.carbonIconsReact.mod.CarbonIconType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@carbon/icons-react/lib/number--6/32", JSImport.Namespace)
-@js.native
-object number632Mod extends js.Object {
+object number632Mod extends Shortcut {
   
+  @JSImport("@carbon/icons-react/lib/number--6/32", JSImport.Default)
+  @js.native
   val default: CarbonIconType = js.native
+  
+  type _To = CarbonIconType
+  
+  /* This means you don't have to write `default`, but can instead just say `number632Mod.foo` */
+  override def _to: CarbonIconType = default
 }

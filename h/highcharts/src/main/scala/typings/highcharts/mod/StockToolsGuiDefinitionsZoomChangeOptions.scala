@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StockToolsGuiDefinitionsZoomChangeOptions extends js.Object {
+trait StockToolsGuiDefinitionsZoomChangeOptions extends StObject {
   
   /**
     * (Highstock) A collection of strings pointing to config options for the
@@ -28,45 +29,33 @@ object StockToolsGuiDefinitionsZoomChangeOptions {
   }
   
   @scala.inline
-  implicit class StockToolsGuiDefinitionsZoomChangeOptionsOps[Self <: StockToolsGuiDefinitionsZoomChangeOptions] (val x: Self) extends AnyVal {
+  implicit class StockToolsGuiDefinitionsZoomChangeOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsZoomChangeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    def setZoomX(value: StockToolsGuiDefinitionsZoomChangeZoomXOptions): Self = StObject.set(x, "zoomX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setZoomXUndefined: Self = StObject.set(x, "zoomX", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setZoomXY(value: StockToolsGuiDefinitionsZoomChangeZoomXYOptions): Self = StObject.set(x, "zoomXY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomX(value: StockToolsGuiDefinitionsZoomChangeZoomXOptions): Self = this.set("zoomX", value.asInstanceOf[js.Any])
+    def setZoomXYUndefined: Self = StObject.set(x, "zoomXY", js.undefined)
     
     @scala.inline
-    def deleteZoomX: Self = this.set("zoomX", js.undefined)
+    def setZoomY(value: StockToolsGuiDefinitionsZoomChangeZoomYOptions): Self = StObject.set(x, "zoomY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setZoomXY(value: StockToolsGuiDefinitionsZoomChangeZoomXYOptions): Self = this.set("zoomXY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomXY: Self = this.set("zoomXY", js.undefined)
-    
-    @scala.inline
-    def setZoomY(value: StockToolsGuiDefinitionsZoomChangeZoomYOptions): Self = this.set("zoomY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomY: Self = this.set("zoomY", js.undefined)
+    def setZoomYUndefined: Self = StObject.set(x, "zoomY", js.undefined)
   }
 }

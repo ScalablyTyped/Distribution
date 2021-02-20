@@ -1,16 +1,17 @@
 package typings.xadesjs
 
-import typings.xmlCore.mod.XmlObject
+import typings.xadesjs.xmlBaseMod.XadesObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xadesjs/build/types/xml/signature_product_place", JSImport.Namespace)
-@js.native
-object signatureProductPlaceMod extends js.Object {
+object signatureProductPlaceMod {
   
+  @JSImport("xadesjs/build/types/xml/signature_product_place", "SignatureProductionPlace")
   @js.native
-  class SignatureProductionPlace () extends XmlObject {
+  class SignatureProductionPlace () extends XadesObject {
+    def this(properties: js.Object) = this()
     
     var City: String = js.native
     

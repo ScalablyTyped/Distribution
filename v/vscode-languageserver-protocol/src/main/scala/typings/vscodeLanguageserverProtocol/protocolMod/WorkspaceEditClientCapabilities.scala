@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceEditClientCapabilities extends js.Object {
+trait WorkspaceEditClientCapabilities extends StObject {
   
   /**
     * The client supports versioned document changes in `WorkspaceEdit`s
@@ -37,39 +38,27 @@ object WorkspaceEditClientCapabilities {
   }
   
   @scala.inline
-  implicit class WorkspaceEditClientCapabilitiesOps[Self <: WorkspaceEditClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class WorkspaceEditClientCapabilitiesMutableBuilder[Self <: WorkspaceEditClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentChanges(value: Boolean): Self = StObject.set(x, "documentChanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureHandling(value: FailureHandlingKind): Self = StObject.set(x, "failureHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentChanges(value: Boolean): Self = this.set("documentChanges", value.asInstanceOf[js.Any])
+    def setFailureHandlingUndefined: Self = StObject.set(x, "failureHandling", js.undefined)
     
     @scala.inline
-    def deleteDocumentChanges: Self = this.set("documentChanges", js.undefined)
+    def setResourceOperations(value: js.Array[ResourceOperationKind]): Self = StObject.set(x, "resourceOperations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureHandling(value: FailureHandlingKind): Self = this.set("failureHandling", value.asInstanceOf[js.Any])
+    def setResourceOperationsUndefined: Self = StObject.set(x, "resourceOperations", js.undefined)
     
     @scala.inline
-    def deleteFailureHandling: Self = this.set("failureHandling", js.undefined)
-    
-    @scala.inline
-    def setResourceOperationsVarargs(value: ResourceOperationKind*): Self = this.set("resourceOperations", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceOperations(value: js.Array[ResourceOperationKind]): Self = this.set("resourceOperations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceOperations: Self = this.set("resourceOperations", js.undefined)
+    def setResourceOperationsVarargs(value: ResourceOperationKind*): Self = StObject.set(x, "resourceOperations", js.Array(value :_*))
   }
 }

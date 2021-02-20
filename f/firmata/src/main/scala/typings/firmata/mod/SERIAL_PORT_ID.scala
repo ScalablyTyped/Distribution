@@ -8,6 +8,7 @@ import typings.firmata.firmataNumbers.`0x08`
 import typings.firmata.firmataNumbers.`0x09`
 import typings.firmata.firmataNumbers.`0x10`
 import typings.firmata.firmataNumbers.`0x11`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firmata.firmataNumbers.`0x10`
   - typings.firmata.firmataNumbers.`0x11`
 */
-trait SERIAL_PORT_ID extends js.Object
+trait SERIAL_PORT_ID extends StObject
 object SERIAL_PORT_ID {
   
   @scala.inline

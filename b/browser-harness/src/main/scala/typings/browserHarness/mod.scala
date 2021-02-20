@@ -10,21 +10,20 @@ import typings.browserHarness.browserHarnessStrings.ready
 import typings.browserHarness.browserHarnessStrings.windowDotonerror
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("browser-harness", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  var events: HarnessEvents = js.native
-  
-  def listen(port: Double): js.Any = js.native
-  def listen(port: Double, callback: js.Function): js.Any = js.native
-  
+  @JSImport("browser-harness", JSImport.Namespace)
   @js.native
-  class Browser protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("browser-harness", "Browser")
+  @js.native
+  class Browser protected () extends StObject {
     //constructor(args: { type: string; location?: string; args?: string[] });
     def this(args: Location) = this()
     
@@ -34,8 +33,40 @@ object mod extends js.Object {
     def open(harnessUrl: String, serverUrl: String): js.Any = js.native
   }
   
+  object config {
+    
+    @JSImport("browser-harness", "config")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("browser-harness", "config.retryMS")
+    @js.native
+    def retryMS: Double = js.native
+    @scala.inline
+    def retryMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("retryMS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("browser-harness", "config.timeoutMS")
+    @js.native
+    def timeoutMS: Double = js.native
+    @scala.inline
+    def timeoutMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutMS")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("browser-harness", "events")
   @js.native
-  trait Driver extends js.Object {
+  def events: HarnessEvents = js.native
+  @scala.inline
+  def events_=(x: HarnessEvents): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+  
+  @JSImport("browser-harness", "listen")
+  @js.native
+  def listen(port: Double): js.Any = js.native
+  @JSImport("browser-harness", "listen")
+  @js.native
+  def listen(port: Double, callback: js.Function): js.Any = js.native
+  
+  @js.native
+  trait Driver extends StObject {
     
     var events: DriverEvents = js.native
     
@@ -91,7 +122,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ElementProxy extends js.Object {
+  trait ElementProxy extends StObject {
     
     def addClass(className: String): ElementProxy = js.native
     def addClass(className: String, callback: js.Function2[/* err */ Error, /* element */ this.type, Unit]): ElementProxy = js.native
@@ -443,13 +474,5 @@ object mod extends js.Object {
     
     @JSName("once")
     def once_ready(event: ready, listener: js.Function1[/* driver */ Driver, Unit]): this.type = js.native
-  }
-  
-  @js.native
-  object config extends js.Object {
-    
-    var retryMS: Double = js.native
-    
-    var timeoutMS: Double = js.native
   }
 }

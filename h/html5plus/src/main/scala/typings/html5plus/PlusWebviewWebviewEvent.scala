@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewEvent extends js.Object {
+trait PlusWebviewWebviewEvent extends StObject {
   
   /**
     * Webview窗口关闭事件
@@ -153,114 +154,102 @@ object PlusWebviewWebviewEvent {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewEventOps[Self <: PlusWebviewWebviewEvent] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewEventMutableBuilder[Self <: PlusWebviewWebviewEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDragBounce(value: String): Self = StObject.set(x, "dragBounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setDragBounceUndefined: Self = StObject.set(x, "dragBounce", js.undefined)
     
     @scala.inline
-    def deleteClose: Self = this.set("close", js.undefined)
+    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragBounce(value: String): Self = this.set("dragBounce", value.asInstanceOf[js.Any])
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def deleteDragBounce: Self = this.set("dragBounce", js.undefined)
+    def setHide(value: String): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setLoaded(value: String): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHide(value: String): Self = this.set("hide", value.asInstanceOf[js.Any])
+    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoaded(value: String): Self = this.set("loaded", value.asInstanceOf[js.Any])
+    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
     @scala.inline
-    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    def setMaskClick(value: String): Self = StObject.set(x, "maskClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoading(value: String): Self = this.set("loading", value.asInstanceOf[js.Any])
+    def setMaskClickUndefined: Self = StObject.set(x, "maskClick", js.undefined)
     
     @scala.inline
-    def deleteLoading: Self = this.set("loading", js.undefined)
+    def setPopGesture(value: String): Self = StObject.set(x, "popGesture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaskClick(value: String): Self = this.set("maskClick", value.asInstanceOf[js.Any])
+    def setPopGestureUndefined: Self = StObject.set(x, "popGesture", js.undefined)
     
     @scala.inline
-    def deleteMaskClick: Self = this.set("maskClick", js.undefined)
+    def setProgressChanged(value: String): Self = StObject.set(x, "progressChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopGesture(value: String): Self = this.set("popGesture", value.asInstanceOf[js.Any])
+    def setProgressChangedUndefined: Self = StObject.set(x, "progressChanged", js.undefined)
     
     @scala.inline
-    def deletePopGesture: Self = this.set("popGesture", js.undefined)
+    def setPullToRefresh(value: String): Self = StObject.set(x, "pullToRefresh", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgressChanged(value: String): Self = this.set("progressChanged", value.asInstanceOf[js.Any])
+    def setPullToRefreshUndefined: Self = StObject.set(x, "pullToRefresh", js.undefined)
     
     @scala.inline
-    def deleteProgressChanged: Self = this.set("progressChanged", js.undefined)
+    def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPullToRefresh(value: String): Self = this.set("pullToRefresh", value.asInstanceOf[js.Any])
+    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
-    def deletePullToRefresh: Self = this.set("pullToRefresh", js.undefined)
+    def setRendering(value: String): Self = StObject.set(x, "rendering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendered(value: String): Self = this.set("rendered", value.asInstanceOf[js.Any])
+    def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
     
     @scala.inline
-    def deleteRendered: Self = this.set("rendered", js.undefined)
+    def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendering(value: String): Self = this.set("rendering", value.asInstanceOf[js.Any])
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteRendering: Self = this.set("rendering", js.undefined)
+    def setSlideBounce(value: String): Self = StObject.set(x, "slideBounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: String): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setSlideBounceUndefined: Self = StObject.set(x, "slideBounce", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setTitleUpdate(value: String): Self = StObject.set(x, "titleUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlideBounce(value: String): Self = this.set("slideBounce", value.asInstanceOf[js.Any])
+    def setTitleUpdateUndefined: Self = StObject.set(x, "titleUpdate", js.undefined)
     
     @scala.inline
-    def deleteSlideBounce: Self = this.set("slideBounce", js.undefined)
+    def setTouchstart(value: String): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleUpdate(value: String): Self = this.set("titleUpdate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleUpdate: Self = this.set("titleUpdate", js.undefined)
-    
-    @scala.inline
-    def setTouchstart(value: String): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchstart: Self = this.set("touchstart", js.undefined)
+    def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
   }
 }

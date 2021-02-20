@@ -1,15 +1,15 @@
 package typings.three
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/animation/PropertyMixer", JSImport.Namespace)
-@js.native
-object propertyMixerMod extends js.Object {
+object propertyMixerMod {
   
+  @JSImport("three/src/animation/PropertyMixer", "PropertyMixer")
   @js.native
-  class PropertyMixer protected () extends js.Object {
+  class PropertyMixer protected () extends StObject {
     def this(binding: js.Any, typeName: String, valueSize: Double) = this()
     
     def accumulate(accuIndex: Double, weight: Double): Unit = js.native

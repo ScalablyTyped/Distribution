@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ManualInterventionStatus extends js.Object
+sealed trait ManualInterventionStatus extends StObject
 @JSImport("vso-node-api/interfaces/ReleaseInterfaces", "ManualInterventionStatus")
 @js.native
-object ManualInterventionStatus extends js.Object {
+object ManualInterventionStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ManualInterventionStatus with Double] = js.native
@@ -19,38 +19,33 @@ object ManualInterventionStatus extends js.Object {
     */
   @js.native
   sealed trait Approved extends ManualInterventionStatus
-  /* 4 */ @js.native
-  object Approved extends TopLevel[Approved with Double]
+  /* 4 */ val Approved: typings.vsoNodeApi.releaseInterfacesMod.ManualInterventionStatus.Approved with Double = js.native
   
   /**
     * The manual intervention is canceled.
     */
   @js.native
   sealed trait Canceled extends ManualInterventionStatus
-  /* 8 */ @js.native
-  object Canceled extends TopLevel[Canceled with Double]
+  /* 8 */ val Canceled: typings.vsoNodeApi.releaseInterfacesMod.ManualInterventionStatus.Canceled with Double = js.native
   
   /**
     * The manual intervention is pending.
     */
   @js.native
   sealed trait Pending extends ManualInterventionStatus
-  /* 1 */ @js.native
-  object Pending extends TopLevel[Pending with Double]
+  /* 1 */ val Pending: typings.vsoNodeApi.releaseInterfacesMod.ManualInterventionStatus.Pending with Double = js.native
   
   /**
     * The manual intervention is rejected.
     */
   @js.native
   sealed trait Rejected extends ManualInterventionStatus
-  /* 2 */ @js.native
-  object Rejected extends TopLevel[Rejected with Double]
+  /* 2 */ val Rejected: typings.vsoNodeApi.releaseInterfacesMod.ManualInterventionStatus.Rejected with Double = js.native
   
   /**
     * The manual intervention does not have the status set.
     */
   @js.native
   sealed trait Unknown extends ManualInterventionStatus
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  /* 0 */ val Unknown: typings.vsoNodeApi.releaseInterfacesMod.ManualInterventionStatus.Unknown with Double = js.native
 }

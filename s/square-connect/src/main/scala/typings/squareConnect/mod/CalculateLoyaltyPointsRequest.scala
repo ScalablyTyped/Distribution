@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CalculateLoyaltyPointsRequest")
 @js.native
-class CalculateLoyaltyPointsRequest () extends js.Object {
+class CalculateLoyaltyPointsRequest () extends StObject {
   
   /**
     * The `order` ID for which to calculate the points.

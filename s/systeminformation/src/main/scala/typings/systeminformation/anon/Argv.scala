@@ -1,11 +1,12 @@
 package typings.systeminformation.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Argv extends js.Object {
+trait Argv extends StObject {
   
   var argv: js.Array[java.lang.String] = js.native
   
@@ -32,39 +33,27 @@ object Argv {
   }
   
   @scala.inline
-  implicit class ArgvOps[Self <: Argv] (val x: Self) extends AnyVal {
+  implicit class ArgvMutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgv(value: js.Array[java.lang.String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgvVarargs(value: java.lang.String*): Self = StObject.set(x, "argv", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuild_info(value: java.lang.String): Self = StObject.set(x, "build_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgvVarargs(value: java.lang.String*): Self = this.set("argv", js.Array(value :_*))
+    def setExit_status(value: Double): Self = StObject.set(x, "exit_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgv(value: js.Array[java.lang.String]): Self = this.set("argv", value.asInstanceOf[js.Any])
+    def setPlatform_info(value: java.lang.String): Self = StObject.set(x, "platform_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuild_info(value: java.lang.String): Self = this.set("build_info", value.asInstanceOf[js.Any])
+    def setVersion(value: js.Array[Double]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit_status(value: Double): Self = this.set("exit_status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatform_info(value: java.lang.String): Self = this.set("platform_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersionVarargs(value: Double*): Self = this.set("version", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersion(value: js.Array[Double]): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

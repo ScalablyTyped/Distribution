@@ -1,5 +1,6 @@
 package typings.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object RowSelectionModel {
   }
   
   @scala.inline
-  implicit class RowSelectionModelOps[Self <: RowSelectionModel[_, _], T /* <: SlickData */, E] (val x: Self with (RowSelectionModel[T, E])) extends AnyVal {
+  implicit class RowSelectionModelMutableBuilder[Self <: RowSelectionModel[_, _], T /* <: SlickData */, E] (val x: Self with (RowSelectionModel[T, E])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetSelectedRanges(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelectedRows(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRows", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetSelectedRanges(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSelectedRanges", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSelectedRanges(value: () => js.Array[Double]): Self = this.set("getSelectedRanges", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetSelectedRows(value: () => js.Array[Double]): Self = this.set("getSelectedRows", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetSelectedRanges(value: js.Array[Double] => Unit): Self = this.set("setSelectedRanges", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSelectedRows(value: js.Array[Double] => Unit): Self = this.set("setSelectedRows", js.Any.fromFunction1(value))
+    def setSetSelectedRows(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSelectedRows", js.Any.fromFunction1(value))
   }
 }

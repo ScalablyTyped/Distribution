@@ -5,16 +5,15 @@ import typings.q.mod.IPromise
 import typings.q.mod.IWhenable
 import typings.q.mod.Promise
 import typings.q.mod.PromiseState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeofq extends js.Object {
+  trait Typeofq extends StObject {
     
     /**
       * Calling with nothing at all creates a void promise

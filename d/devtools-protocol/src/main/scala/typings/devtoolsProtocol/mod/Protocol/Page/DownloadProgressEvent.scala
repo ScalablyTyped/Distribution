@@ -3,12 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.devtoolsProtocolStrings.canceled
 import typings.devtoolsProtocol.devtoolsProtocolStrings.completed
 import typings.devtoolsProtocol.devtoolsProtocolStrings.inProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadProgressEvent extends js.Object {
+trait DownloadProgressEvent extends StObject {
   
   /**
     * Global unique identifier of the download.
@@ -39,30 +40,18 @@ object DownloadProgressEvent {
   }
   
   @scala.inline
-  implicit class DownloadProgressEventOps[Self <: DownloadProgressEvent] (val x: Self) extends AnyVal {
+  implicit class DownloadProgressEventMutableBuilder[Self <: DownloadProgressEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReceivedBytes(value: Double): Self = StObject.set(x, "receivedBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: inProgress | completed | canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuid(value: String): Self = this.set("guid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReceivedBytes(value: Double): Self = this.set("receivedBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: inProgress | completed | canceled): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalBytes(value: Double): Self = this.set("totalBytes", value.asInstanceOf[js.Any])
+    def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
   }
 }

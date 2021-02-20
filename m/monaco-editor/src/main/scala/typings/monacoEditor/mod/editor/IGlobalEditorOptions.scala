@@ -3,12 +3,13 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.monacoEditorBooleans.`false`
 import typings.monacoEditor.monacoEditorBooleans.`true`
 import typings.monacoEditor.monacoEditorStrings.configuredByTheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IGlobalEditorOptions extends js.Object {
+trait IGlobalEditorOptions extends StObject {
   
   /**
     * Controls whether `tabSize` and `insertSpaces` will be automatically detected when a file is opened based on the file contents.
@@ -87,78 +88,66 @@ object IGlobalEditorOptions {
   }
   
   @scala.inline
-  implicit class IGlobalEditorOptionsOps[Self <: IGlobalEditorOptions] (val x: Self) extends AnyVal {
+  implicit class IGlobalEditorOptionsMutableBuilder[Self <: IGlobalEditorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetectIndentation(value: Boolean): Self = StObject.set(x, "detectIndentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetectIndentationUndefined: Self = StObject.set(x, "detectIndentation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetectIndentation(value: Boolean): Self = this.set("detectIndentation", value.asInstanceOf[js.Any])
+    def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
     
     @scala.inline
-    def deleteDetectIndentation: Self = this.set("detectIndentation", js.undefined)
+    def setLargeFileOptimizations(value: Boolean): Self = StObject.set(x, "largeFileOptimizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertSpaces(value: Boolean): Self = this.set("insertSpaces", value.asInstanceOf[js.Any])
+    def setLargeFileOptimizationsUndefined: Self = StObject.set(x, "largeFileOptimizations", js.undefined)
     
     @scala.inline
-    def deleteInsertSpaces: Self = this.set("insertSpaces", js.undefined)
+    def setMaxTokenizationLineLength(value: Double): Self = StObject.set(x, "maxTokenizationLineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLargeFileOptimizations(value: Boolean): Self = this.set("largeFileOptimizations", value.asInstanceOf[js.Any])
+    def setMaxTokenizationLineLengthUndefined: Self = StObject.set(x, "maxTokenizationLineLength", js.undefined)
     
     @scala.inline
-    def deleteLargeFileOptimizations: Self = this.set("largeFileOptimizations", js.undefined)
+    def setSemanticHighlightingDotenabled(value: `true` | `false` | configuredByTheme): Self = StObject.set(x, "semanticHighlighting.enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTokenizationLineLength(value: Double): Self = this.set("maxTokenizationLineLength", value.asInstanceOf[js.Any])
+    def setSemanticHighlightingDotenabledUndefined: Self = StObject.set(x, "semanticHighlighting.enabled", js.undefined)
     
     @scala.inline
-    def deleteMaxTokenizationLineLength: Self = this.set("maxTokenizationLineLength", js.undefined)
+    def setStablePeek(value: Boolean): Self = StObject.set(x, "stablePeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSemanticHighlightingDotenabled(value: `true` | `false` | configuredByTheme): Self = this.set("semanticHighlighting.enabled", value.asInstanceOf[js.Any])
+    def setStablePeekUndefined: Self = StObject.set(x, "stablePeek", js.undefined)
     
     @scala.inline
-    def deleteSemanticHighlightingDotenabled: Self = this.set("semanticHighlighting.enabled", js.undefined)
+    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStablePeek(value: Boolean): Self = this.set("stablePeek", value.asInstanceOf[js.Any])
+    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
     @scala.inline
-    def deleteStablePeek: Self = this.set("stablePeek", js.undefined)
+    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabSize(value: Double): Self = this.set("tabSize", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTabSize: Self = this.set("tabSize", js.undefined)
+    def setTrimAutoWhitespace(value: Boolean): Self = StObject.set(x, "trimAutoWhitespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTrimAutoWhitespaceUndefined: Self = StObject.set(x, "trimAutoWhitespace", js.undefined)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setWordBasedSuggestions(value: Boolean): Self = StObject.set(x, "wordBasedSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrimAutoWhitespace(value: Boolean): Self = this.set("trimAutoWhitespace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrimAutoWhitespace: Self = this.set("trimAutoWhitespace", js.undefined)
-    
-    @scala.inline
-    def setWordBasedSuggestions(value: Boolean): Self = this.set("wordBasedSuggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWordBasedSuggestions: Self = this.set("wordBasedSuggestions", js.undefined)
+    def setWordBasedSuggestionsUndefined: Self = StObject.set(x, "wordBasedSuggestions", js.undefined)
   }
 }

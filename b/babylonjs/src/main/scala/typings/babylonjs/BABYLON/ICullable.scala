@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICullable extends js.Object {
+trait ICullable extends StObject {
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
@@ -31,24 +32,12 @@ object ICullable {
   }
   
   @scala.inline
-  implicit class ICullableOps[Self <: ICullable] (val x: Self) extends AnyVal {
+  implicit class ICullableMutableBuilder[Self <: ICullable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isCompletelyInFrustum", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIsCompletelyInFrustum(value: js.Array[Plane] => Boolean): Self = this.set("isCompletelyInFrustum", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsInFrustum(value: js.Array[Plane] => Boolean): Self = this.set("isInFrustum", js.Any.fromFunction1(value))
+    def setIsInFrustum(value: js.Array[Plane] => Boolean): Self = StObject.set(x, "isInFrustum", js.Any.fromFunction1(value))
   }
 }

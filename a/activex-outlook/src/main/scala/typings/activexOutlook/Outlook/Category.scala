@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.activexStdole.stdole.OLE_COLOR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Category extends js.Object {
+trait Category extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -56,54 +57,42 @@ object Category {
   }
   
   @scala.inline
-  implicit class CategoryOps[Self <: Category] (val x: Self) extends AnyVal {
+  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCategoryBorderColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryGradientBottomColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryGradientBottomColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setCategoryGradientTopColor(value: OLE_COLOR): Self = StObject.set(x, "CategoryGradientTopColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryBorderColor(value: OLE_COLOR): Self = this.set("CategoryBorderColor", value.asInstanceOf[js.Any])
+    def setCategoryID(value: String): Self = StObject.set(x, "CategoryID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryGradientBottomColor(value: OLE_COLOR): Self = this.set("CategoryGradientBottomColor", value.asInstanceOf[js.Any])
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryGradientTopColor(value: OLE_COLOR): Self = this.set("CategoryGradientTopColor", value.asInstanceOf[js.Any])
+    def setColor(value: OlCategoryColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryID(value: String): Self = this.set("CategoryID", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setOutlookDotCategory_typekey(value: Category): Self = StObject.set(x, "Outlook.Category_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: OlCategoryColor): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotCategory_typekey(value: Category): Self = this.set("Outlook.Category_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortcutKey(value: OlCategoryShortcutKey): Self = this.set("ShortcutKey", value.asInstanceOf[js.Any])
+    def setShortcutKey(value: OlCategoryShortcutKey): Self = StObject.set(x, "ShortcutKey", value.asInstanceOf[js.Any])
   }
 }

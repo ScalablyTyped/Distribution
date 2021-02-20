@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listFeedback` operation. */
 @js.native
-trait ListFeedbackParams extends js.Object {
+trait ListFeedbackParams extends StObject {
   
   /** An optional string in the format `YYYY-MM-DD` that filters the output to include only feedback that was added after the specified date. */
   var after: js.UndefOr[String] = js.native
@@ -69,126 +70,114 @@ object ListFeedbackParams {
   }
   
   @scala.inline
-  implicit class ListFeedbackParamsOps[Self <: ListFeedbackParams] (val x: Self) extends AnyVal {
+  implicit class ListFeedbackParamsMutableBuilder[Self <: ListFeedbackParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter(value: String): Self = this.set("after", value.asInstanceOf[js.Any])
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setCategory_added(value: String): Self = StObject.set(x, "category_added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore(value: String): Self = this.set("before", value.asInstanceOf[js.Any])
+    def setCategory_addedUndefined: Self = StObject.set(x, "category_added", js.undefined)
     
     @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setCategory_not_changed(value: String): Self = StObject.set(x, "category_not_changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory_added(value: String): Self = this.set("category_added", value.asInstanceOf[js.Any])
+    def setCategory_not_changedUndefined: Self = StObject.set(x, "category_not_changed", js.undefined)
     
     @scala.inline
-    def deleteCategory_added: Self = this.set("category_added", js.undefined)
+    def setCategory_removed(value: String): Self = StObject.set(x, "category_removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory_not_changed(value: String): Self = this.set("category_not_changed", value.asInstanceOf[js.Any])
+    def setCategory_removedUndefined: Self = StObject.set(x, "category_removed", js.undefined)
     
     @scala.inline
-    def deleteCategory_not_changed: Self = this.set("category_not_changed", js.undefined)
+    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory_removed(value: String): Self = this.set("category_removed", value.asInstanceOf[js.Any])
+    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def deleteCategory_removed: Self = this.set("category_removed", js.undefined)
+    def setDocument_title(value: String): Self = StObject.set(x, "document_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    def setDocument_titleUndefined: Self = StObject.set(x, "document_title", js.undefined)
     
     @scala.inline
-    def deleteCursor: Self = this.set("cursor", js.undefined)
+    def setFeedback_type(value: String): Self = StObject.set(x, "feedback_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument_title(value: String): Self = this.set("document_title", value.asInstanceOf[js.Any])
+    def setFeedback_typeUndefined: Self = StObject.set(x, "feedback_type", js.undefined)
     
     @scala.inline
-    def deleteDocument_title: Self = this.set("document_title", js.undefined)
+    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedback_type(value: String): Self = this.set("feedback_type", value.asInstanceOf[js.Any])
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def deleteFeedback_type: Self = this.set("feedback_type", js.undefined)
+    def setInclude_total(value: Boolean): Self = StObject.set(x, "include_total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    def setInclude_totalUndefined: Self = StObject.set(x, "include_total", js.undefined)
     
     @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInclude_total(value: Boolean): Self = this.set("include_total", value.asInstanceOf[js.Any])
+    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
     @scala.inline
-    def deleteInclude_total: Self = this.set("include_total", js.undefined)
+    def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
     
     @scala.inline
-    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    def setPage_limit(value: Double): Self = StObject.set(x, "page_limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel_version(value: String): Self = this.set("model_version", value.asInstanceOf[js.Any])
+    def setPage_limitUndefined: Self = StObject.set(x, "page_limit", js.undefined)
     
     @scala.inline
-    def deleteModel_version: Self = this.set("model_version", js.undefined)
+    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPage_limit(value: Double): Self = this.set("page_limit", value.asInstanceOf[js.Any])
+    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
     @scala.inline
-    def deletePage_limit: Self = this.set("page_limit", js.undefined)
+    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn_response(value: Boolean): Self = this.set("return_response", value.asInstanceOf[js.Any])
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteReturn_response: Self = this.set("return_response", js.undefined)
+    def setType_added(value: String): Self = StObject.set(x, "type_added", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSort(value: String): Self = this.set("sort", value.asInstanceOf[js.Any])
+    def setType_addedUndefined: Self = StObject.set(x, "type_added", js.undefined)
     
     @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setType_not_changed(value: String): Self = StObject.set(x, "type_not_changed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType_added(value: String): Self = this.set("type_added", value.asInstanceOf[js.Any])
+    def setType_not_changedUndefined: Self = StObject.set(x, "type_not_changed", js.undefined)
     
     @scala.inline
-    def deleteType_added: Self = this.set("type_added", js.undefined)
+    def setType_removed(value: String): Self = StObject.set(x, "type_removed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType_not_changed(value: String): Self = this.set("type_not_changed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType_not_changed: Self = this.set("type_not_changed", js.undefined)
-    
-    @scala.inline
-    def setType_removed(value: String): Self = this.set("type_removed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType_removed: Self = this.set("type_removed", js.undefined)
+    def setType_removedUndefined: Self = StObject.set(x, "type_removed", js.undefined)
   }
 }

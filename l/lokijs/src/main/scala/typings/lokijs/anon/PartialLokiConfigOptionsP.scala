@@ -7,13 +7,14 @@ import typings.lokijs.lokijsStrings.localStorage
 import typings.lokijs.lokijsStrings.memory
 import typings.lokijs.lokijsStrings.normal
 import typings.lokijs.lokijsStrings.pretty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.LokiConfigOptions> & std.Partial<lokijs.ThrottledSaveDrainOptions> */
 @js.native
-trait PartialLokiConfigOptionsP extends js.Object {
+trait PartialLokiConfigOptionsP extends StObject {
   
   var adapter: js.UndefOr[LokiPersistenceAdapter | Null] = js.native
   
@@ -52,111 +53,99 @@ object PartialLokiConfigOptionsP {
   }
   
   @scala.inline
-  implicit class PartialLokiConfigOptionsPOps[Self <: PartialLokiConfigOptionsP] (val x: Self) extends AnyVal {
+  implicit class PartialLokiConfigOptionsPMutableBuilder[Self <: PartialLokiConfigOptionsP] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdapter(value: LokiPersistenceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdapterNull: Self = StObject.set(x, "adapter", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
     
     @scala.inline
-    def setAdapter(value: LokiPersistenceAdapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdapter: Self = this.set("adapter", js.undefined)
+    def setAutoloadCallback(value: /* err */ js.Any => Unit): Self = StObject.set(x, "autoloadCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdapterNull: Self = this.set("adapter", null)
+    def setAutoloadCallbackUndefined: Self = StObject.set(x, "autoloadCallback", js.undefined)
     
     @scala.inline
-    def setAutoload(value: Boolean): Self = this.set("autoload", value.asInstanceOf[js.Any])
+    def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
     
     @scala.inline
-    def deleteAutoload: Self = this.set("autoload", js.undefined)
+    def setAutosave(value: Boolean): Self = StObject.set(x, "autosave", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoloadCallback(value: /* err */ js.Any => Unit): Self = this.set("autoloadCallback", js.Any.fromFunction1(value))
+    def setAutosaveCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "autosaveCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAutoloadCallback: Self = this.set("autoloadCallback", js.undefined)
+    def setAutosaveCallbackUndefined: Self = StObject.set(x, "autosaveCallback", js.undefined)
     
     @scala.inline
-    def setAutosave(value: Boolean): Self = this.set("autosave", value.asInstanceOf[js.Any])
+    def setAutosaveInterval(value: String | Double): Self = StObject.set(x, "autosaveInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutosave: Self = this.set("autosave", js.undefined)
+    def setAutosaveIntervalUndefined: Self = StObject.set(x, "autosaveInterval", js.undefined)
     
     @scala.inline
-    def setAutosaveCallback(value: /* err */ js.UndefOr[js.Any] => Unit): Self = this.set("autosaveCallback", js.Any.fromFunction1(value))
+    def setAutosaveUndefined: Self = StObject.set(x, "autosave", js.undefined)
     
     @scala.inline
-    def deleteAutosaveCallback: Self = this.set("autosaveCallback", js.undefined)
+    def setDestructureDelimiter(value: String): Self = StObject.set(x, "destructureDelimiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutosaveInterval(value: String | Double): Self = this.set("autosaveInterval", value.asInstanceOf[js.Any])
+    def setDestructureDelimiterUndefined: Self = StObject.set(x, "destructureDelimiter", js.undefined)
     
     @scala.inline
-    def deleteAutosaveInterval: Self = this.set("autosaveInterval", js.undefined)
+    def setPersistenceMethod(value: fs | localStorage | memory): Self = StObject.set(x, "persistenceMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestructureDelimiter(value: String): Self = this.set("destructureDelimiter", value.asInstanceOf[js.Any])
+    def setPersistenceMethodNull: Self = StObject.set(x, "persistenceMethod", null)
     
     @scala.inline
-    def deleteDestructureDelimiter: Self = this.set("destructureDelimiter", js.undefined)
+    def setPersistenceMethodUndefined: Self = StObject.set(x, "persistenceMethod", js.undefined)
     
     @scala.inline
-    def setPersistenceMethod(value: fs | localStorage | memory): Self = this.set("persistenceMethod", value.asInstanceOf[js.Any])
+    def setRecursiveWait(value: Boolean): Self = StObject.set(x, "recursiveWait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistenceMethod: Self = this.set("persistenceMethod", js.undefined)
+    def setRecursiveWaitLimit(value: Boolean): Self = StObject.set(x, "recursiveWaitLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistenceMethodNull: Self = this.set("persistenceMethod", null)
+    def setRecursiveWaitLimitDuration(value: Double): Self = StObject.set(x, "recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursiveWait(value: Boolean): Self = this.set("recursiveWait", value.asInstanceOf[js.Any])
+    def setRecursiveWaitLimitDurationUndefined: Self = StObject.set(x, "recursiveWaitLimitDuration", js.undefined)
     
     @scala.inline
-    def deleteRecursiveWait: Self = this.set("recursiveWait", js.undefined)
+    def setRecursiveWaitLimitUndefined: Self = StObject.set(x, "recursiveWaitLimit", js.undefined)
     
     @scala.inline
-    def setRecursiveWaitLimit(value: Boolean): Self = this.set("recursiveWaitLimit", value.asInstanceOf[js.Any])
+    def setRecursiveWaitUndefined: Self = StObject.set(x, "recursiveWait", js.undefined)
     
     @scala.inline
-    def deleteRecursiveWaitLimit: Self = this.set("recursiveWaitLimit", js.undefined)
+    def setSerializationMethod(value: normal | pretty | destructured): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecursiveWaitLimitDuration(value: Double): Self = this.set("recursiveWaitLimitDuration", value.asInstanceOf[js.Any])
+    def setSerializationMethodNull: Self = StObject.set(x, "serializationMethod", null)
     
     @scala.inline
-    def deleteRecursiveWaitLimitDuration: Self = this.set("recursiveWaitLimitDuration", js.undefined)
+    def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
     
     @scala.inline
-    def setSerializationMethod(value: normal | pretty | destructured): Self = this.set("serializationMethod", value.asInstanceOf[js.Any])
+    def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSerializationMethod: Self = this.set("serializationMethod", js.undefined)
+    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
     @scala.inline
-    def setSerializationMethodNull: Self = this.set("serializationMethod", null)
+    def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStarted(value: Double): Self = this.set("started", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarted: Self = this.set("started", js.undefined)
-    
-    @scala.inline
-    def setThrottledSaves(value: Boolean): Self = this.set("throttledSaves", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottledSaves: Self = this.set("throttledSaves", js.undefined)
+    def setThrottledSavesUndefined: Self = StObject.set(x, "throttledSaves", js.undefined)
   }
 }

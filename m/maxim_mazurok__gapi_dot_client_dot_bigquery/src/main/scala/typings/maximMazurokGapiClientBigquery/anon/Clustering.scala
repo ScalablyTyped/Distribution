@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.RangePartitioning
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.TableReference
 import typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.TimePartitioning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clustering extends js.Object {
+trait Clustering extends StObject {
   
   /** [Beta] Clustering specification for this table, if configured. */
   var clustering: js.UndefOr[typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Clustering] = js.native
@@ -63,94 +64,82 @@ object Clustering {
   }
   
   @scala.inline
-  implicit class ClusteringOps[Self <: Clustering] (val x: Self) extends AnyVal {
+  implicit class ClusteringMutableBuilder[Self <: Clustering] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClustering(value: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Clustering): Self = StObject.set(x, "clustering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusteringUndefined: Self = StObject.set(x, "clustering", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClustering(value: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.Clustering): Self = this.set("clustering", value.asInstanceOf[js.Any])
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def deleteClustering: Self = this.set("clustering", js.undefined)
+    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     @scala.inline
-    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Clustering with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setRangePartitioning(value: RangePartitioning): Self = this.set("rangePartitioning", value.asInstanceOf[js.Any])
+    def setRangePartitioning(value: RangePartitioning): Self = StObject.set(x, "rangePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRangePartitioning: Self = this.set("rangePartitioning", js.undefined)
+    def setRangePartitioningUndefined: Self = StObject.set(x, "rangePartitioning", js.undefined)
     
     @scala.inline
-    def setTableReference(value: TableReference): Self = this.set("tableReference", value.asInstanceOf[js.Any])
+    def setTableReference(value: TableReference): Self = StObject.set(x, "tableReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTableReference: Self = this.set("tableReference", js.undefined)
+    def setTableReferenceUndefined: Self = StObject.set(x, "tableReference", js.undefined)
     
     @scala.inline
-    def setTimePartitioning(value: TimePartitioning): Self = this.set("timePartitioning", value.asInstanceOf[js.Any])
+    def setTimePartitioning(value: TimePartitioning): Self = StObject.set(x, "timePartitioning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimePartitioning: Self = this.set("timePartitioning", js.undefined)
+    def setTimePartitioningUndefined: Self = StObject.set(x, "timePartitioning", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def setView(value: UseLegacySql): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setView(value: UseLegacySql): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

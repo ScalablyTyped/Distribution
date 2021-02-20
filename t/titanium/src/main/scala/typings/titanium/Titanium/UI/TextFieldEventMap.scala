@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,75 +77,63 @@ object TextFieldEventMap {
   }
   
   @scala.inline
-  implicit class TextFieldEventMapOps[Self <: TextFieldEventMap] (val x: Self) extends AnyVal {
+  implicit class TextFieldEventMapMutableBuilder[Self <: TextFieldEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlur(value: TextFieldBlurEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChange(value: TextFieldChangeEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClick(value: TextFieldClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlur(value: TextFieldBlurEvent): Self = this.set("blur", value.asInstanceOf[js.Any])
+    def setDblclick(value: TextFieldDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: TextFieldChangeEvent): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setDoubletap(value: TextFieldDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: TextFieldClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setFocus(value: TextFieldFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: TextFieldDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: TextFieldKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: TextFieldDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: TextFieldLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: TextFieldFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: TextFieldLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: TextFieldKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setPinch(value: TextFieldPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: TextFieldLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPostlayout(value: TextFieldPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: TextFieldLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setReturn(value: TextFieldReturnEvent): Self = StObject.set(x, "return", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: TextFieldPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSingletap(value: TextFieldSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: TextFieldPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setSwipe(value: TextFieldSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturn(value: TextFieldReturnEvent): Self = this.set("return", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: TextFieldTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: TextFieldSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchend(value: TextFieldTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: TextFieldSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: TextFieldTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: TextFieldTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: TextFieldTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: TextFieldTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: TextFieldTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: TextFieldTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: TextFieldTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: TextFieldTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

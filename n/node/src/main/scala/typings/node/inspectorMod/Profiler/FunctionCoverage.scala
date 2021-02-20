@@ -1,5 +1,6 @@
 package typings.node.inspectorMod.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Coverage data for a JavaScript function.
   */
 @js.native
-trait FunctionCoverage extends js.Object {
+trait FunctionCoverage extends StObject {
   
   /**
     * JavaScript function name.
@@ -34,30 +35,18 @@ object FunctionCoverage {
   }
   
   @scala.inline
-  implicit class FunctionCoverageOps[Self <: FunctionCoverage] (val x: Self) extends AnyVal {
+  implicit class FunctionCoverageMutableBuilder[Self <: FunctionCoverage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsBlockCoverage(value: Boolean): Self = StObject.set(x, "isBlockCoverage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRanges(value: js.Array[CoverageRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsBlockCoverage(value: Boolean): Self = this.set("isBlockCoverage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRangesVarargs(value: CoverageRange*): Self = this.set("ranges", js.Array(value :_*))
-    
-    @scala.inline
-    def setRanges(value: js.Array[CoverageRange]): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    def setRangesVarargs(value: CoverageRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
   }
 }

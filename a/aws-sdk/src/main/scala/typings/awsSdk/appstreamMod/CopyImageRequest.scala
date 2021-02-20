@@ -1,11 +1,12 @@
 package typings.awsSdk.appstreamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyImageRequest extends js.Object {
+trait CopyImageRequest extends StObject {
   
   /**
     * The description that the image will have when it is copied to the destination.
@@ -36,33 +37,21 @@ object CopyImageRequest {
   }
   
   @scala.inline
-  implicit class CopyImageRequestOps[Self <: CopyImageRequest] (val x: Self) extends AnyVal {
+  implicit class CopyImageRequestMutableBuilder[Self <: CopyImageRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationImageDescription(value: Description): Self = StObject.set(x, "DestinationImageDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationImageDescriptionUndefined: Self = StObject.set(x, "DestinationImageDescription", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationImageName(value: Name): Self = StObject.set(x, "DestinationImageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationImageName(value: Name): Self = this.set("DestinationImageName", value.asInstanceOf[js.Any])
+    def setDestinationRegion(value: RegionName): Self = StObject.set(x, "DestinationRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationRegion(value: RegionName): Self = this.set("DestinationRegion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceImageName(value: Name): Self = this.set("SourceImageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationImageDescription(value: Description): Self = this.set("DestinationImageDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationImageDescription: Self = this.set("DestinationImageDescription", js.undefined)
+    def setSourceImageName(value: Name): Self = StObject.set(x, "SourceImageName", value.asInstanceOf[js.Any])
   }
 }

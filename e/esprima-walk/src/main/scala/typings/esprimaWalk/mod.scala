@@ -12,28 +12,33 @@ import typings.std.GetRootNodeOptions
 import typings.std.HTMLElement
 import typings.std.NodeListOf
 import typings.std.ParentNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("esprima-walk", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Walk the provided AST; fn is called once for each node with a `type`
     * @param {ESTree.Program} ast program to walk
     * @param {function} fn function invoked for each node with type
     */
+  @JSImport("esprima-walk", JSImport.Namespace)
+  @js.native
   def apply(ast: Program, fn: js.Function1[/* node */ Node, Unit]): Unit = js.native
   
+  @JSImport("esprima-walk", "walk")
+  @js.native
   def walk(ast: Program, fn: js.Function1[/* node */ Node, Unit]): Unit = js.native
   
+  @JSImport("esprima-walk", "walkAddParent")
+  @js.native
   def walkAddParent(ast: Program, fn: js.Function1[/* node */ NodeWithParent, Unit]): Unit = js.native
   
   /* Inlined std.Node & {  parent :std.Node | undefined} */
   @js.native
-  trait NodeWithParent extends js.Object {
+  trait NodeWithParent extends StObject {
     
     val ATTRIBUTE_NODE: Double = js.native
     

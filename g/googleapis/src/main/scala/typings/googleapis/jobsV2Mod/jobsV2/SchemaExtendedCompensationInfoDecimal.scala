@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV2Mod.jobsV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Deprecated. See CompensationInfo.  Decimal number.
   */
 @js.native
-trait SchemaExtendedCompensationInfoDecimal extends js.Object {
+trait SchemaExtendedCompensationInfoDecimal extends StObject {
   
   /**
     * Micro (10^-6) units. The value must be between -999,999 and +999,999
@@ -33,30 +34,18 @@ object SchemaExtendedCompensationInfoDecimal {
   }
   
   @scala.inline
-  implicit class SchemaExtendedCompensationInfoDecimalOps[Self <: SchemaExtendedCompensationInfoDecimal] (val x: Self) extends AnyVal {
+  implicit class SchemaExtendedCompensationInfoDecimalMutableBuilder[Self <: SchemaExtendedCompensationInfoDecimal] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMicrosUndefined: Self = StObject.set(x, "micros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMicros(value: Double): Self = this.set("micros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMicros: Self = this.set("micros", js.undefined)
-    
-    @scala.inline
-    def setUnits(value: String): Self = this.set("units", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnits: Self = this.set("units", js.undefined)
+    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

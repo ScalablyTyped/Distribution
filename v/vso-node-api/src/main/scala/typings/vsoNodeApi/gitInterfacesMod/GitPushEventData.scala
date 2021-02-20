@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GitPushEventData extends js.Object {
+trait GitPushEventData extends StObject {
   
   var afterId: String = js.native
   
@@ -32,36 +33,24 @@ object GitPushEventData {
   }
   
   @scala.inline
-  implicit class GitPushEventDataOps[Self <: GitPushEventData] (val x: Self) extends AnyVal {
+  implicit class GitPushEventDataMutableBuilder[Self <: GitPushEventData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterId(value: String): Self = StObject.set(x, "afterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeId(value: String): Self = StObject.set(x, "beforeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterId(value: String): Self = this.set("afterId", value.asInstanceOf[js.Any])
+    def setCommits(value: js.Array[GitCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeId(value: String): Self = this.set("beforeId", value.asInstanceOf[js.Any])
+    def setCommitsVarargs(value: GitCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
     @scala.inline
-    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCommitsVarargs(value: GitCommit*): Self = this.set("commits", js.Array(value :_*))
-    
-    @scala.inline
-    def setCommits(value: js.Array[GitCommit]): Self = this.set("commits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepository(value: GitRepository): Self = this.set("repository", value.asInstanceOf[js.Any])
+    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

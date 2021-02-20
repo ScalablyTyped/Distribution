@@ -3,16 +3,15 @@ package typings.storybookAddonActions
 import typings.std.Record
 import typings.storybookAddonActions.actionOptionsMod.ActionOptions
 import typings.storybookAddonActions.actionsMapMod.ActionsMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-actions/dist/models/ActionsFunction", JSImport.Namespace)
-@js.native
-object actionsFunctionMod extends js.Object {
+object actionsFunctionMod {
   
   @js.native
-  trait ActionsFunction extends js.Object {
+  trait ActionsFunction extends StObject {
     
     def apply[T /* <: String */](handler1: T): ActionsMap[T] = js.native
     def apply[T /* <: String */](handler1: T, handler2: T): ActionsMap[T] = js.native

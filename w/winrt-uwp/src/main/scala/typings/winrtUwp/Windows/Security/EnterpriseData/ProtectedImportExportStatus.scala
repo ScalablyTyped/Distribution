@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.EnterpriseData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProtectedImportExportStatus extends js.Object
+sealed trait ProtectedImportExportStatus extends StObject
 /** Possible status values for an enterprise protected file that has been imported from or exported to a container file. */
 @JSGlobal("Windows.Security.EnterpriseData.ProtectedImportExportStatus")
 @js.native
-object ProtectedImportExportStatus extends js.Object {
+object ProtectedImportExportStatus extends StObject {
   
   /** The keys to access the protected file have been dropped while the device is locked. */
   @js.native

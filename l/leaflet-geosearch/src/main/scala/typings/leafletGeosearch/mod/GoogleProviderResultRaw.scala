@@ -1,12 +1,13 @@
 package typings.leafletGeosearch.mod
 
 import typings.leafletGeosearch.anon.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleProviderResultRaw extends js.Object {
+trait GoogleProviderResultRaw extends StObject {
   
   var address_components: js.Array[GoogleProviderResultAddressComponent] = js.native
   
@@ -33,39 +34,27 @@ object GoogleProviderResultRaw {
   }
   
   @scala.inline
-  implicit class GoogleProviderResultRawOps[Self <: GoogleProviderResultRaw] (val x: Self) extends AnyVal {
+  implicit class GoogleProviderResultRawMutableBuilder[Self <: GoogleProviderResultRaw] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress_components(value: js.Array[GoogleProviderResultAddressComponent]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddress_componentsVarargs(value: GoogleProviderResultAddressComponent*): Self = StObject.set(x, "address_components", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_componentsVarargs(value: GoogleProviderResultAddressComponent*): Self = this.set("address_components", js.Array(value :_*))
+    def setGeometry(value: Location): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress_components(value: js.Array[GoogleProviderResultAddressComponent]): Self = this.set("address_components", value.asInstanceOf[js.Any])
+    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatted_address(value: String): Self = this.set("formatted_address", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometry(value: Location): Self = this.set("geometry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

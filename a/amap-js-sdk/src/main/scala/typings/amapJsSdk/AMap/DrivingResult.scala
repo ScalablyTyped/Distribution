@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DrivingResult extends js.Object {
+trait DrivingResult extends StObject {
   
   var destination: LngLat | Poi = js.native
   
@@ -38,42 +39,30 @@ object DrivingResult {
   }
   
   @scala.inline
-  implicit class DrivingResultOps[Self <: DrivingResult] (val x: Self) extends AnyVal {
+  implicit class DrivingResultMutableBuilder[Self <: DrivingResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: LngLat | Poi): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigin(value: LngLat): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: LngLat | Poi): Self = this.set("destination", value.asInstanceOf[js.Any])
+    def setRoutes(value: js.Array[DriveRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    def setRoutesVarargs(value: DriveRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
-    def setOrigin(value: LngLat): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setStart(value: Poi): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutesVarargs(value: DriveRoute*): Self = this.set("routes", js.Array(value :_*))
+    def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutes(value: js.Array[DriveRoute]): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Poi): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTaxi_cost(value: Double): Self = this.set("taxi_cost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaypoints(value: Poi): Self = this.set("waypoints", value.asInstanceOf[js.Any])
+    def setWaypoints(value: Poi): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.fontMod.Font
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BevelEnabled extends js.Object {
+trait BevelEnabled extends StObject {
   
   /**
   		 * @default false
@@ -57,45 +58,33 @@ object BevelEnabled {
   }
   
   @scala.inline
-  implicit class BevelEnabledOps[Self <: BevelEnabled] (val x: Self) extends AnyVal {
+  implicit class BevelEnabledMutableBuilder[Self <: BevelEnabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBevelOffset(value: Double): Self = StObject.set(x, "bevelOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBevelSegments(value: Double): Self = StObject.set(x, "bevelSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelEnabled(value: Boolean): Self = this.set("bevelEnabled", value.asInstanceOf[js.Any])
+    def setBevelSize(value: Double): Self = StObject.set(x, "bevelSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelOffset(value: Double): Self = this.set("bevelOffset", value.asInstanceOf[js.Any])
+    def setBevelThickness(value: Double): Self = StObject.set(x, "bevelThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelSegments(value: Double): Self = this.set("bevelSegments", value.asInstanceOf[js.Any])
+    def setCurveSegments(value: Double): Self = StObject.set(x, "curveSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelSize(value: Double): Self = this.set("bevelSize", value.asInstanceOf[js.Any])
+    def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBevelThickness(value: Double): Self = this.set("bevelThickness", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveSegments(value: Double): Self = this.set("curveSegments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFont(value: Font): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

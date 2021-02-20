@@ -6,16 +6,14 @@ import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.RemoteConfigAbort
 import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.RemoteConfigFetchClient
 import typings.firebaseRemoteConfig.storageMod.Storage
 import typings.firebaseRemoteConfig.storageMod.ThrottleMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/remote-config/dist/src/client/retrying_client", JSImport.Namespace)
-@js.native
-object retryingClientMod extends js.Object {
+object retryingClientMod {
   
-  def setAbortableTimeout(signal: RemoteConfigAbortSignal, throttleEndTimeMillis: Double): js.Promise[Unit] = js.native
-  
+  @JSImport("@firebase/remote-config/dist/src/client/retrying_client", "RetryingClient")
   @js.native
   class RetryingClient protected () extends RemoteConfigFetchClient {
     def this(client: RemoteConfigFetchClient, storage: Storage) = this()
@@ -31,4 +29,8 @@ object retryingClientMod extends js.Object {
     
     val storage: js.Any = js.native
   }
+  
+  @JSImport("@firebase/remote-config/dist/src/client/retrying_client", "setAbortableTimeout")
+  @js.native
+  def setAbortableTimeout(signal: RemoteConfigAbortSignal, throttleEndTimeMillis: Double): js.Promise[Unit] = js.native
 }

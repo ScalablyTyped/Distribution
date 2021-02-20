@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProcessTemplateType extends js.Object
+sealed trait ProcessTemplateType extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "ProcessTemplateType")
 @js.native
-object ProcessTemplateType extends js.Object {
+object ProcessTemplateType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ProcessTemplateType with Double] = js.native
@@ -19,22 +19,19 @@ object ProcessTemplateType extends js.Object {
     */
   @js.native
   sealed trait Custom extends ProcessTemplateType
-  /* 0 */ @js.native
-  object Custom extends TopLevel[Custom with Double]
+  /* 0 */ val Custom: typings.vsoNodeApi.buildInterfacesMod.ProcessTemplateType.Custom with Double = js.native
   
   /**
     * Indicates a default template.
     */
   @js.native
   sealed trait Default extends ProcessTemplateType
-  /* 1 */ @js.native
-  object Default extends TopLevel[Default with Double]
+  /* 1 */ val Default: typings.vsoNodeApi.buildInterfacesMod.ProcessTemplateType.Default with Double = js.native
   
   /**
     * Indicates an upgrade template.
     */
   @js.native
   sealed trait Upgrade extends ProcessTemplateType
-  /* 2 */ @js.native
-  object Upgrade extends TopLevel[Upgrade with Double]
+  /* 2 */ val Upgrade: typings.vsoNodeApi.buildInterfacesMod.ProcessTemplateType.Upgrade with Double = js.native
 }

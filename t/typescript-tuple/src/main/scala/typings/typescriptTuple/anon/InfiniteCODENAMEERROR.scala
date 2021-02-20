@@ -1,12 +1,13 @@
 package typings.typescriptTuple.anon
 
 import typings.typescriptTuple.utilsMod.Concat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfiniteCODENAMEERROR[TupleSet /* <: js.Array[js.Array[_]] */] extends js.Object {
+trait InfiniteCODENAMEERROR[TupleSet /* <: js.Array[js.Array[_]] */] extends StObject {
   
   var empty: js.Array[js.Any] = js.native
   
@@ -33,28 +34,16 @@ object InfiniteCODENAMEERROR {
   }
   
   @scala.inline
-  implicit class InfiniteCODENAMEERROROps[Self <: InfiniteCODENAMEERROR[_], TupleSet /* <: js.Array[js.Array[_]] */] (val x: Self with InfiniteCODENAMEERROR[TupleSet]) extends AnyVal {
+  implicit class InfiniteCODENAMEERRORMutableBuilder[Self <: InfiniteCODENAMEERROR[_], TupleSet /* <: js.Array[js.Array[_]] */] (val x: Self with InfiniteCODENAMEERROR[TupleSet]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEmpty(value: js.Array[js.Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmptyVarargs(value: js.Any*): Self = StObject.set(x, "empty", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEmptyVarargs(value: js.Any*): Self = this.set("empty", js.Array(value :_*))
-    
-    @scala.inline
-    def setEmpty(value: js.Array[js.Any]): Self = this.set("empty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInfinite(value: CODENAMEERROR): Self = this.set("infinite", value.asInstanceOf[js.Any])
+    def setInfinite(value: CODENAMEERROR): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNonEmpty(
@@ -62,6 +51,6 @@ object InfiniteCODENAMEERROR {
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>> */ js.Object, 
           _
         ]
-    ): Self = this.set("nonEmpty", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }
 }

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientScript.anon.DeploymentId
 import typings.maximMazurokGapiClientScript.anon.Fields
 import typings.maximMazurokGapiClientScript.anon.Key
 import typings.maximMazurokGapiClientScript.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentsResource extends js.Object {
+trait DeploymentsResource extends StObject {
   
   /** Creates a deployment of an Apps Script project. */
   def create(request: Callback): Request[Deployment] = js.native

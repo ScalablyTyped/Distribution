@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointsResponse extends js.Object {
+trait EndpointsResponse extends StObject {
   
   /**
     * An array of responses, one for each endpoint that's associated with the user ID.
@@ -21,24 +22,12 @@ object EndpointsResponse {
   }
   
   @scala.inline
-  implicit class EndpointsResponseOps[Self <: EndpointsResponse] (val x: Self) extends AnyVal {
+  implicit class EndpointsResponseMutableBuilder[Self <: EndpointsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: ListOfEndpointResponse): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemVarargs(value: EndpointResponse*): Self = this.set("Item", js.Array(value :_*))
-    
-    @scala.inline
-    def setItem(value: ListOfEndpointResponse): Self = this.set("Item", value.asInstanceOf[js.Any])
+    def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
   }
 }

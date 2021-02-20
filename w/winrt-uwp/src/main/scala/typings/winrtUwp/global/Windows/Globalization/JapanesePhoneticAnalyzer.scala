@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Globalization
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 abstract class JapanesePhoneticAnalyzer ()
   extends typings.winrtUwp.Windows.Globalization.JapanesePhoneticAnalyzer
-/* static members */
-@JSGlobal("Windows.Globalization.JapanesePhoneticAnalyzer")
-@js.native
-object JapanesePhoneticAnalyzer extends js.Object {
+object JapanesePhoneticAnalyzer {
   
   /**
     * Reads a Japanese string that is a combination of Kanji characters and Hiragana characters, and returns a collection of proper readings from the string with word breaks.
     * @param input A Japanese string that is a combination of Kanji characters and Hiragana characters.
     * @return A collection of JapanesePhoneme objects that represent proper readings from the string with word breaks.
     */
+  /* static member */
+  @JSGlobal("Windows.Globalization.JapanesePhoneticAnalyzer.getWords")
+  @js.native
   def getWords(input: String): IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme] = js.native
   /**
     * Reads a Japanese string that is a combination of Kanji characters and Hiragana characters, and returns a collection of proper readings from the string with word breaks. Optionally uses the "Mono Ruby" strategy in breaking multi-Kanji words into multiple Kanji words.
@@ -27,5 +28,8 @@ object JapanesePhoneticAnalyzer extends js.Object {
     * @param monoRuby Specifies the use of the word-breaking strategy "Mono Ruby".
     * @return A collection of JapanesePhoneme objects that represent proper readings from the string with word breaks.
     */
+  /* static member */
+  @JSGlobal("Windows.Globalization.JapanesePhoneticAnalyzer.getWords")
+  @js.native
   def getWords(input: String, monoRuby: Boolean): IVectorView[typings.winrtUwp.Windows.Globalization.JapanesePhoneme] = js.native
 }

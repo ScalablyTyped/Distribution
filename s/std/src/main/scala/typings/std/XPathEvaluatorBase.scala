@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XPathEvaluatorBase extends js.Object {
+trait XPathEvaluatorBase extends StObject {
   
   def createExpression(expression: java.lang.String): XPathExpression = js.native
   def createExpression(expression: java.lang.String, resolver: XPathNSResolver): XPathExpression = js.native

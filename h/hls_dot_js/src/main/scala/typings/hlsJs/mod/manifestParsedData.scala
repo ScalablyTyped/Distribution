@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait manifestParsedData extends js.Object {
+trait manifestParsedData extends StObject {
   
   var firstLevel: Double = js.native
   
@@ -20,27 +21,15 @@ object manifestParsedData {
   }
   
   @scala.inline
-  implicit class manifestParsedDataOps[Self <: manifestParsedData] (val x: Self) extends AnyVal {
+  implicit class manifestParsedDataMutableBuilder[Self <: manifestParsedData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstLevel(value: Double): Self = StObject.set(x, "firstLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevels(value: js.Array[Level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFirstLevel(value: Double): Self = this.set("firstLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevelsVarargs(value: Level*): Self = this.set("levels", js.Array(value :_*))
-    
-    @scala.inline
-    def setLevels(value: js.Array[Level]): Self = this.set("levels", value.asInstanceOf[js.Any])
+    def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
   }
 }

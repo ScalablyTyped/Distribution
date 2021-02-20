@@ -7,14 +7,14 @@ import typings.awsSdkClientCodecommitNode.typesUpdateDefaultBranchInputMod.Updat
 import typings.awsSdkClientCodecommitNode.typesUpdateDefaultBranchOutputMod.UpdateDefaultBranchOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/commands/UpdateDefaultBranchCommand", JSImport.Namespace)
-@js.native
-object updateDefaultBranchCommandMod extends js.Object {
+object updateDefaultBranchCommandMod {
   
+  @JSImport("@aws-sdk/client-codecommit-node/commands/UpdateDefaultBranchCommand", "UpdateDefaultBranchCommand")
   @js.native
   class UpdateDefaultBranchCommand protected () extends Command[
           InputTypesUnion, 

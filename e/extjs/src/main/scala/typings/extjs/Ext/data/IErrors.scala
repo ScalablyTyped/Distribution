@@ -2,6 +2,7 @@ package typings.extjs.Ext.data
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.util.IMixedCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,30 +30,18 @@ object IErrors {
   }
   
   @scala.inline
-  implicit class IErrorsOps[Self <: IErrors] (val x: Self) extends AnyVal {
+  implicit class IErrorsMutableBuilder[Self <: IErrors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetByField(value: /* fieldName */ js.UndefOr[String] => Array): Self = StObject.set(x, "getByField", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetByFieldUndefined: Self = StObject.set(x, "getByField", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetByField(value: /* fieldName */ js.UndefOr[String] => Array): Self = this.set("getByField", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetByField: Self = this.set("getByField", js.undefined)
-    
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
   }
 }

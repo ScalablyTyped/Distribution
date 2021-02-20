@@ -1,12 +1,13 @@
 package typings.webcl.WEBCL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.3
 @js.native
-trait WebCLDevice extends js.Object {
+trait WebCLDevice extends StObject {
   
   def enableExtension(extensionName: String): Boolean = js.native
   
@@ -27,27 +28,15 @@ object WebCLDevice {
   }
   
   @scala.inline
-  implicit class WebCLDeviceOps[Self <: WebCLDevice] (val x: Self) extends AnyVal {
+  implicit class WebCLDeviceMutableBuilder[Self <: WebCLDevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableExtension(value: String => Boolean): Self = StObject.set(x, "enableExtension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetInfo(value: DeviceInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnableExtension(value: String => Boolean): Self = this.set("enableExtension", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetInfo(value: DeviceInfo => js.Any): Self = this.set("getInfo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSupportedExtensions(value: () => js.Array[String]): Self = this.set("getSupportedExtensions", js.Any.fromFunction0(value))
+    def setGetSupportedExtensions(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedExtensions", js.Any.fromFunction0(value))
   }
 }

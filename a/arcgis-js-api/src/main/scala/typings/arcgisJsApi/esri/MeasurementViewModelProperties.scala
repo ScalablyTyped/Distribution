@@ -23,12 +23,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeasurementViewModelProperties extends js.Object {
+trait MeasurementViewModelProperties extends StObject {
   
   /**
     * Specifies the current measurement tool to display.
@@ -80,54 +81,42 @@ object MeasurementViewModelProperties {
   }
   
   @scala.inline
-  implicit class MeasurementViewModelPropertiesOps[Self <: MeasurementViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class MeasurementViewModelPropertiesMutableBuilder[Self <: MeasurementViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveTool(value: area | distance | `direct-line`): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActiveTool(value: area | distance | `direct-line`): Self = this.set("activeTool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActiveTool: Self = this.set("activeTool", js.undefined)
+    def setActiveToolUndefined: Self = StObject.set(x, "activeTool", js.undefined)
     
     @scala.inline
     def setActiveViewModel(
       value: AreaMeasurement2DViewModel | AreaMeasurement3DViewModelProperties | DirectLineMeasurement3DViewModelProperties | DistanceMeasurement2DViewModelProperties
-    ): Self = this.set("activeViewModel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "activeViewModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActiveViewModel: Self = this.set("activeViewModel", js.undefined)
+    def setActiveViewModelUndefined: Self = StObject.set(x, "activeViewModel", js.undefined)
     
     @scala.inline
     def setAreaUnit(
       value: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-    ): Self = this.set("areaUnit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "areaUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAreaUnit: Self = this.set("areaUnit", js.undefined)
+    def setAreaUnitUndefined: Self = StObject.set(x, "areaUnit", js.undefined)
     
     @scala.inline
     def setLinearUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-    ): Self = this.set("linearUnit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "linearUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinearUnit: Self = this.set("linearUnit", js.undefined)
+    def setLinearUnitUndefined: Self = StObject.set(x, "linearUnit", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

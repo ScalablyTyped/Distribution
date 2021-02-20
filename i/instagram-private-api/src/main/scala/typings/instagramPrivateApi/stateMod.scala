@@ -11,16 +11,16 @@ import typings.request.mod.CookieJar
 import typings.toughCookie.mod.Cookie
 import typings.toughCookie.mod.CookieJar.Serialized
 import typings.toughCookie.mod.MemoryCookieStore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("instagram-private-api/dist/core/state", JSImport.Namespace)
-@js.native
-object stateMod extends js.Object {
+object stateMod {
   
+  @JSImport("instagram-private-api/dist/core/state", "State")
   @js.native
-  class State () extends js.Object {
+  class State () extends StObject {
     
     var adid: String = js.native
     
@@ -145,9 +145,16 @@ object stateMod extends js.Object {
     def webUserAgent: String = js.native
   }
   /* static members */
-  @js.native
-  object State extends js.Object {
+  object State {
     
-    var stateDebug: js.Any = js.native
+    @JSImport("instagram-private-api/dist/core/state", "State")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("instagram-private-api/dist/core/state", "State.stateDebug")
+    @js.native
+    def stateDebug: js.Any = js.native
+    @scala.inline
+    def stateDebug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateDebug")(x.asInstanceOf[js.Any])
   }
 }

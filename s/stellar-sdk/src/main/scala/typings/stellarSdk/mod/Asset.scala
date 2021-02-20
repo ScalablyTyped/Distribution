@@ -1,5 +1,6 @@
 package typings.stellarSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +13,13 @@ class Asset protected ()
   def this(code: String, issuer: String) = this()
 }
 /* static members */
-@JSImport("stellar-sdk", "Asset")
-@js.native
-object Asset extends js.Object {
+object Asset {
   
+  @JSImport("stellar-sdk", "Asset.fromOperation")
+  @js.native
   def fromOperation(xdr: typings.stellarBase.xdrMod.default.Asset): typings.stellarBase.mod.Asset = js.native
   
+  @JSImport("stellar-sdk", "Asset.native")
+  @js.native
   def native(): typings.stellarBase.mod.Asset = js.native
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1alphaMod.appengineV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SSL configuration for a DomainMapping resource.
   */
 @js.native
-trait SchemaSslSettings extends js.Object {
+trait SchemaSslSettings extends StObject {
   
   /**
     * ID of the AuthorizedCertificate resource configuring SSL for the
@@ -38,30 +39,18 @@ object SchemaSslSettings {
   }
   
   @scala.inline
-  implicit class SchemaSslSettingsOps[Self <: SchemaSslSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaSslSettingsMutableBuilder[Self <: SchemaSslSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsManagedCertificate(value: Boolean): Self = StObject.set(x, "isManagedCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: String): Self = this.set("certificateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
-    
-    @scala.inline
-    def setIsManagedCertificate(value: Boolean): Self = this.set("isManagedCertificate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsManagedCertificate: Self = this.set("isManagedCertificate", js.undefined)
+    def setIsManagedCertificateUndefined: Self = StObject.set(x, "isManagedCertificate", js.undefined)
   }
 }

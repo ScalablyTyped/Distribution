@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnGroupSchema extends js.Object {
+trait ColumnGroupSchema extends StObject {
   
   /**
     * A structure containing the list of schemas for column group columns.
@@ -26,33 +27,21 @@ object ColumnGroupSchema {
   }
   
   @scala.inline
-  implicit class ColumnGroupSchemaOps[Self <: ColumnGroupSchema] (val x: Self) extends AnyVal {
+  implicit class ColumnGroupSchemaMutableBuilder[Self <: ColumnGroupSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnGroupColumnSchemaList(value: ColumnGroupColumnSchemaList): Self = StObject.set(x, "ColumnGroupColumnSchemaList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnGroupColumnSchemaListUndefined: Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnGroupColumnSchemaListVarargs(value: ColumnGroupColumnSchema*): Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.Array(value :_*))
     
     @scala.inline
-    def setColumnGroupColumnSchemaListVarargs(value: ColumnGroupColumnSchema*): Self = this.set("ColumnGroupColumnSchemaList", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnGroupColumnSchemaList(value: ColumnGroupColumnSchemaList): Self = this.set("ColumnGroupColumnSchemaList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnGroupColumnSchemaList: Self = this.set("ColumnGroupColumnSchemaList", js.undefined)
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

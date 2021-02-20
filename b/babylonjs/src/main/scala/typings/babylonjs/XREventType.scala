@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babylonjs.babylonjsStrings.squeezeend
   - typings.babylonjs.babylonjsStrings.reset
 */
-trait XREventType extends js.Object
+trait XREventType extends StObject
 object XREventType {
   
   @scala.inline

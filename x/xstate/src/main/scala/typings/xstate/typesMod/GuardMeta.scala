@@ -2,6 +2,7 @@ package typings.xstate.typesMod
 
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,21 +25,9 @@ object GuardMeta {
   }
   
   @scala.inline
-  implicit class GuardMetaOps[Self <: GuardMeta[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (GuardMeta[TContext, TEvent])) extends AnyVal {
+  implicit class GuardMetaMutableBuilder[Self <: GuardMeta[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (GuardMeta[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCond(value: Guard[TContext, TEvent]): Self = this.set("cond", value.asInstanceOf[js.Any])
+    def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
   }
 }

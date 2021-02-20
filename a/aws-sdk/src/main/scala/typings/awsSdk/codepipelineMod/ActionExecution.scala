@@ -1,11 +1,12 @@
 package typings.awsSdk.codepipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionExecution extends js.Object {
+trait ActionExecution extends StObject {
   
   /**
     * ID of the workflow action execution in the current stage. Use the GetPipelineState action to retrieve the current action execution details of the current stage.  For older executions, this field might be empty. The action execution ID is available for executions run on or after March 2020. 
@@ -66,78 +67,66 @@ object ActionExecution {
   }
   
   @scala.inline
-  implicit class ActionExecutionOps[Self <: ActionExecution] (val x: Self) extends AnyVal {
+  implicit class ActionExecutionMutableBuilder[Self <: ActionExecution] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionExecutionId(value: ActionExecutionId): Self = StObject.set(x, "actionExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionExecutionIdUndefined: Self = StObject.set(x, "actionExecutionId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionExecutionId(value: ActionExecutionId): Self = this.set("actionExecutionId", value.asInstanceOf[js.Any])
+    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
     @scala.inline
-    def deleteActionExecutionId: Self = this.set("actionExecutionId", js.undefined)
+    def setExternalExecutionId(value: ExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorDetails(value: ErrorDetails): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    def setExternalExecutionIdUndefined: Self = StObject.set(x, "externalExecutionId", js.undefined)
     
     @scala.inline
-    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    def setExternalExecutionUrl(value: Url): Self = StObject.set(x, "externalExecutionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalExecutionId(value: ExecutionId): Self = this.set("externalExecutionId", value.asInstanceOf[js.Any])
+    def setExternalExecutionUrlUndefined: Self = StObject.set(x, "externalExecutionUrl", js.undefined)
     
     @scala.inline
-    def deleteExternalExecutionId: Self = this.set("externalExecutionId", js.undefined)
+    def setLastStatusChange(value: Timestamp): Self = StObject.set(x, "lastStatusChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalExecutionUrl(value: Url): Self = this.set("externalExecutionUrl", value.asInstanceOf[js.Any])
+    def setLastStatusChangeUndefined: Self = StObject.set(x, "lastStatusChange", js.undefined)
     
     @scala.inline
-    def deleteExternalExecutionUrl: Self = this.set("externalExecutionUrl", js.undefined)
+    def setLastUpdatedBy(value: LastUpdatedBy): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastStatusChange(value: Timestamp): Self = this.set("lastStatusChange", value.asInstanceOf[js.Any])
+    def setLastUpdatedByUndefined: Self = StObject.set(x, "lastUpdatedBy", js.undefined)
     
     @scala.inline
-    def deleteLastStatusChange: Self = this.set("lastStatusChange", js.undefined)
+    def setPercentComplete(value: Percentage): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedBy(value: LastUpdatedBy): Self = this.set("lastUpdatedBy", value.asInstanceOf[js.Any])
+    def setPercentCompleteUndefined: Self = StObject.set(x, "percentComplete", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedBy: Self = this.set("lastUpdatedBy", js.undefined)
+    def setStatus(value: ActionExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentComplete(value: Percentage): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    def setSummary(value: ExecutionSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: ActionExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setToken(value: ActionExecutionToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: ExecutionSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummary: Self = this.set("summary", js.undefined)
-    
-    @scala.inline
-    def setToken(value: ActionExecutionToken): Self = this.set("token", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

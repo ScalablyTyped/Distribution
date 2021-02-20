@@ -1,6 +1,7 @@
 package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and not by end users.
   */
 @js.native
-trait SchemaControllerConfig extends js.Object {
+trait SchemaControllerConfig extends StObject {
   
   var cmd: js.UndefOr[String] = js.native
   
@@ -38,66 +39,54 @@ object SchemaControllerConfig {
   }
   
   @scala.inline
-  implicit class SchemaControllerConfigOps[Self <: SchemaControllerConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaControllerConfigMutableBuilder[Self <: SchemaControllerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisks(value: StringDictionary[String]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def deleteCmd: Self = this.set("cmd", js.undefined)
+    def setGcsLogPath(value: String): Self = StObject.set(x, "gcsLogPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: StringDictionary[String]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    def setGcsLogPathUndefined: Self = StObject.set(x, "gcsLogPath", js.undefined)
     
     @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
+    def setGcsSinks(value: StringDictionary[SchemaRepeatedString]): Self = StObject.set(x, "gcsSinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsLogPath(value: String): Self = this.set("gcsLogPath", value.asInstanceOf[js.Any])
+    def setGcsSinksUndefined: Self = StObject.set(x, "gcsSinks", js.undefined)
     
     @scala.inline
-    def deleteGcsLogPath: Self = this.set("gcsLogPath", js.undefined)
+    def setGcsSources(value: StringDictionary[SchemaRepeatedString]): Self = StObject.set(x, "gcsSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsSinks(value: StringDictionary[SchemaRepeatedString]): Self = this.set("gcsSinks", value.asInstanceOf[js.Any])
+    def setGcsSourcesUndefined: Self = StObject.set(x, "gcsSources", js.undefined)
     
     @scala.inline
-    def deleteGcsSinks: Self = this.set("gcsSinks", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGcsSources(value: StringDictionary[SchemaRepeatedString]): Self = this.set("gcsSources", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteGcsSources: Self = this.set("gcsSources", js.undefined)
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setVars(value: StringDictionary[String]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
-    
-    @scala.inline
-    def setVars(value: StringDictionary[String]): Self = this.set("vars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVars: Self = this.set("vars", js.undefined)
+    def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
   }
 }

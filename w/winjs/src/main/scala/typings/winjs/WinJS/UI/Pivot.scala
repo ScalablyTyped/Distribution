@@ -3,6 +3,7 @@ package typings.winjs.WinJS.UI
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A tab control that displays multiple items.
   **/
 @js.native
-trait Pivot extends js.Object {
+trait Pivot extends StObject {
   
   //#endregion Events
   //#region Methods

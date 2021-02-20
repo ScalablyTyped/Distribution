@@ -1,12 +1,13 @@
 package typings.mapsjs.anon
 
 import typings.mapsjs.mod.tile.quad
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EndpointCollection extends js.Object {
+trait EndpointCollection extends StObject {
   
   var endpointCollection: js.Array[String] = js.native
   
@@ -36,42 +37,30 @@ object EndpointCollection {
   }
   
   @scala.inline
-  implicit class EndpointCollectionOps[Self <: EndpointCollection] (val x: Self) extends AnyVal {
+  implicit class EndpointCollectionMutableBuilder[Self <: EndpointCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpointCollection(value: js.Array[String]): Self = StObject.set(x, "endpointCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointCollectionVarargs(value: String*): Self = StObject.set(x, "endpointCollection", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIdxMinX(value: Double): Self = StObject.set(x, "idxMinX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointCollectionVarargs(value: String*): Self = this.set("endpointCollection", js.Array(value :_*))
+    def setIdxMinY(value: Double): Self = StObject.set(x, "idxMinY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointCollection(value: js.Array[String]): Self = this.set("endpointCollection", value.asInstanceOf[js.Any])
+    def setQuadCollection(value: js.Array[quad]): Self = StObject.set(x, "quadCollection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdxMinX(value: Double): Self = this.set("idxMinX", value.asInstanceOf[js.Any])
+    def setQuadCollectionVarargs(value: quad*): Self = StObject.set(x, "quadCollection", js.Array(value :_*))
     
     @scala.inline
-    def setIdxMinY(value: Double): Self = this.set("idxMinY", value.asInstanceOf[js.Any])
+    def setUlX(value: Double): Self = StObject.set(x, "ulX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuadCollectionVarargs(value: quad*): Self = this.set("quadCollection", js.Array(value :_*))
-    
-    @scala.inline
-    def setQuadCollection(value: js.Array[quad]): Self = this.set("quadCollection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUlX(value: Double): Self = this.set("ulX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUlY(value: Double): Self = this.set("ulY", value.asInstanceOf[js.Any])
+    def setUlY(value: Double): Self = StObject.set(x, "ulY", value.asInstanceOf[js.Any])
   }
 }

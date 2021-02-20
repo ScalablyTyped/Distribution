@@ -1,5 +1,6 @@
 package typings.extjs.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,54 +58,42 @@ object IPoint {
   }
   
   @scala.inline
-  implicit class IPointOps[Self <: IPoint] (val x: Self) extends AnyVal {
+  implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEquals_(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsContainedBy(value: /* region */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isContainedBy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEquals(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = this.set("equals", js.Any.fromFunction1(value))
+    def setIsContainedByUndefined: Self = StObject.set(x, "isContainedBy", js.undefined)
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setIsWithin(value: (/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "isWithin", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setIsContainedBy(value: /* region */ js.UndefOr[js.Any] => Boolean): Self = this.set("isContainedBy", js.Any.fromFunction1(value))
+    def setIsWithinUndefined: Self = StObject.set(x, "isWithin", js.undefined)
     
     @scala.inline
-    def deleteIsContainedBy: Self = this.set("isContainedBy", js.undefined)
+    def setRoundedEquals(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "roundedEquals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIsWithin(value: (/* p */ js.UndefOr[js.Any], /* threshold */ js.UndefOr[js.Any]) => Boolean): Self = this.set("isWithin", js.Any.fromFunction2(value))
+    def setRoundedEqualsUndefined: Self = StObject.set(x, "roundedEquals", js.undefined)
     
     @scala.inline
-    def deleteIsWithin: Self = this.set("isWithin", js.undefined)
+    def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRoundedEquals(value: /* p */ js.UndefOr[js.Any] => Boolean): Self = this.set("roundedEquals", js.Any.fromFunction1(value))
+    def setToString_Undefined: Self = StObject.set(x, "toString", js.undefined)
     
     @scala.inline
-    def deleteRoundedEquals: Self = this.set("roundedEquals", js.undefined)
+    def setTranslate(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setToString(value: () => String): Self = this.set("toString", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteToString: Self = this.set("toString", js.undefined)
-    
-    @scala.inline
-    def setTranslate(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => IRegion): Self = this.set("translate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteTranslate: Self = this.set("translate", js.undefined)
+    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
   }
 }

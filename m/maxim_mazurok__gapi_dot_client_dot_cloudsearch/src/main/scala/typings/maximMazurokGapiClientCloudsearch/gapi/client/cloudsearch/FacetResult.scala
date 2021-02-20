@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FacetResult extends js.Object {
+trait FacetResult extends StObject {
   
   /** FacetBuckets for values in response containing at least a single result. */
   var buckets: js.UndefOr[js.Array[FacetBucket]] = js.native
@@ -28,45 +29,33 @@ object FacetResult {
   }
   
   @scala.inline
-  implicit class FacetResultOps[Self <: FacetResult] (val x: Self) extends AnyVal {
+  implicit class FacetResultMutableBuilder[Self <: FacetResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBuckets(value: js.Array[FacetBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBucketsVarargs(value: FacetBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
     @scala.inline
-    def setBucketsVarargs(value: FacetBucket*): Self = this.set("buckets", js.Array(value :_*))
+    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuckets(value: js.Array[FacetBucket]): Self = this.set("buckets", value.asInstanceOf[js.Any])
+    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
     @scala.inline
-    def deleteBuckets: Self = this.set("buckets", js.undefined)
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
     @scala.inline
-    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
-    
-    @scala.inline
-    def setSourceName(value: String): Self = this.set("sourceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceName: Self = this.set("sourceName", js.undefined)
+    def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
   }
 }

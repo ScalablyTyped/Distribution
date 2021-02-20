@@ -1,5 +1,6 @@
 package typings.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object DatabaseAccountRequestOptions {
   }
   
   @scala.inline
-  implicit class DatabaseAccountRequestOptionsOps[Self <: DatabaseAccountRequestOptions] (val x: Self) extends AnyVal {
+  implicit class DatabaseAccountRequestOptionsMutableBuilder[Self <: DatabaseAccountRequestOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUrlConnection(value: String): Self = StObject.set(x, "urlConnection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUrlConnection(value: String): Self = this.set("urlConnection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlConnection: Self = this.set("urlConnection", js.undefined)
+    def setUrlConnectionUndefined: Self = StObject.set(x, "urlConnection", js.undefined)
   }
 }

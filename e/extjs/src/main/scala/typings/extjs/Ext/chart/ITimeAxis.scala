@@ -2,6 +2,7 @@ package typings.extjs.Ext.chart
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.chart.axis.INumeric
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,42 +31,30 @@ object ITimeAxis {
   }
   
   @scala.inline
-  implicit class ITimeAxisOps[Self <: ITimeAxis] (val x: Self) extends AnyVal {
+  implicit class ITimeAxisMutableBuilder[Self <: ITimeAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateFormat(value: js.Any): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFromDate(value: js.Any): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateFormat(value: js.Any): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    def setFromDateUndefined: Self = StObject.set(x, "fromDate", js.undefined)
     
     @scala.inline
-    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    def setStep(value: Array): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromDate(value: js.Any): Self = this.set("fromDate", value.asInstanceOf[js.Any])
+    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     @scala.inline
-    def deleteFromDate: Self = this.set("fromDate", js.undefined)
+    def setToDate(value: js.Any): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStep(value: Array): Self = this.set("step", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStep: Self = this.set("step", js.undefined)
-    
-    @scala.inline
-    def setToDate(value: js.Any): Self = this.set("toDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToDate: Self = this.set("toDate", js.undefined)
+    def setToDateUndefined: Self = StObject.set(x, "toDate", js.undefined)
   }
 }

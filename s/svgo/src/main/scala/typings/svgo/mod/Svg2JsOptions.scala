@@ -1,11 +1,12 @@
 package typings.svgo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Svg2JsOptions extends js.Object {
+trait Svg2JsOptions extends StObject {
   
   /** @default true */
   var lowercase: js.UndefOr[Boolean] = js.native
@@ -34,54 +35,42 @@ object Svg2JsOptions {
   }
   
   @scala.inline
-  implicit class Svg2JsOptionsOps[Self <: Svg2JsOptions] (val x: Self) extends AnyVal {
+  implicit class Svg2JsOptionsMutableBuilder[Self <: Svg2JsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowercase(value: Boolean): Self = this.set("lowercase", value.asInstanceOf[js.Any])
+    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def deleteLowercase: Self = this.set("lowercase", js.undefined)
+    def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: Boolean): Self = this.set("normalize", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteNormalize: Self = this.set("normalize", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Boolean): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
     @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrim: Self = this.set("trim", js.undefined)
-    
-    @scala.inline
-    def setXmlns(value: Boolean): Self = this.set("xmlns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXmlns: Self = this.set("xmlns", js.undefined)
+    def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
   }
 }

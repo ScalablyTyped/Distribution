@@ -1,5 +1,6 @@
 package typings.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.exceljs.exceljsStrings.thisMonth
   - typings.exceljs.exceljsStrings.nextMonth
 */
-trait TimePeriodTypes extends js.Object
+trait TimePeriodTypes extends StObject
 object TimePeriodTypes {
   
   @scala.inline

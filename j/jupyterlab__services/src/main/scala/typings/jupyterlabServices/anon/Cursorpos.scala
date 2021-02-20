@@ -2,12 +2,13 @@ package typings.jupyterlabServices.anon
 
 import typings.jupyterlabServices.jupyterlabServicesNumbers.`0`
 import typings.jupyterlabServices.jupyterlabServicesNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cursorpos extends js.Object {
+trait Cursorpos extends StObject {
   
   var code: String = js.native
   
@@ -24,27 +25,15 @@ object Cursorpos {
   }
   
   @scala.inline
-  implicit class CursorposOps[Self <: Cursorpos] (val x: Self) extends AnyVal {
+  implicit class CursorposMutableBuilder[Self <: Cursorpos] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCursor_pos(value: Double): Self = StObject.set(x, "cursor_pos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCursor_pos(value: Double): Self = this.set("cursor_pos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetail_level(value: `0` | `1`): Self = this.set("detail_level", value.asInstanceOf[js.Any])
+    def setDetail_level(value: `0` | `1`): Self = StObject.set(x, "detail_level", value.asInstanceOf[js.Any])
   }
 }

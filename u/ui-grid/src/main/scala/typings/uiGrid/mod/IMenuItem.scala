@@ -1,12 +1,13 @@
 package typings.uiGrid.mod
 
 import typings.angular.mod.IAngularEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMenuItem extends js.Object {
+trait IMenuItem extends StObject {
   
   /** the method to call when the menu is clicked */
   var action: js.UndefOr[js.Function1[/* $event */ IAngularEvent, Unit]] = js.native
@@ -38,60 +39,48 @@ object IMenuItem {
   }
   
   @scala.inline
-  implicit class IMenuItemOps[Self <: IMenuItem] (val x: Self) extends AnyVal {
+  implicit class IMenuItemMutableBuilder[Self <: IMenuItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: /* $event */ IAngularEvent => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAction(value: /* $event */ IAngularEvent => Unit): Self = this.set("action", js.Any.fromFunction1(value))
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: () => Boolean): Self = this.set("active", js.Any.fromFunction0(value))
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setLeaveOpen(value: Boolean): Self = StObject.set(x, "leaveOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLeaveOpenUndefined: Self = StObject.set(x, "leaveOpen", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setShown(value: () => Boolean): Self = StObject.set(x, "shown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLeaveOpen(value: Boolean): Self = this.set("leaveOpen", value.asInstanceOf[js.Any])
+    def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
     
     @scala.inline
-    def deleteLeaveOpen: Self = this.set("leaveOpen", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShown(value: () => Boolean): Self = this.set("shown", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteShown: Self = this.set("shown", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

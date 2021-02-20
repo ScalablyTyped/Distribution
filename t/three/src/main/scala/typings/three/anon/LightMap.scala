@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.uniformsLibMod.IUniform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LightMap extends js.Object {
+trait LightMap extends StObject {
   
   var lightMap: IUniform = js.native
   
@@ -21,24 +22,12 @@ object LightMap {
   }
   
   @scala.inline
-  implicit class LightMapOps[Self <: LightMap] (val x: Self) extends AnyVal {
+  implicit class LightMapMutableBuilder[Self <: LightMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLightMap(value: IUniform): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLightMap(value: IUniform): Self = this.set("lightMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLightMapIntensity(value: IUniform): Self = this.set("lightMapIntensity", value.asInstanceOf[js.Any])
+    def setLightMapIntensity(value: IUniform): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
   }
 }

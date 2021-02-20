@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaRouterStatusBgpPeerStatus extends js.Object {
+trait SchemaRouterStatusBgpPeerStatus extends StObject {
   
   /**
     * Routes that were advertised to the remote BGP peer
@@ -67,81 +68,69 @@ object SchemaRouterStatusBgpPeerStatus {
   }
   
   @scala.inline
-  implicit class SchemaRouterStatusBgpPeerStatusOps[Self <: SchemaRouterStatusBgpPeerStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaRouterStatusBgpPeerStatusMutableBuilder[Self <: SchemaRouterStatusBgpPeerStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdvertisedRoutes(value: js.Array[SchemaRoute]): Self = StObject.set(x, "advertisedRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdvertisedRoutesUndefined: Self = StObject.set(x, "advertisedRoutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = StObject.set(x, "advertisedRoutes", js.Array(value :_*))
     
     @scala.inline
-    def setAdvertisedRoutesVarargs(value: SchemaRoute*): Self = this.set("advertisedRoutes", js.Array(value :_*))
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertisedRoutes(value: js.Array[SchemaRoute]): Self = this.set("advertisedRoutes", value.asInstanceOf[js.Any])
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def deleteAdvertisedRoutes: Self = this.set("advertisedRoutes", js.undefined)
+    def setLinkedVpnTunnel(value: String): Self = StObject.set(x, "linkedVpnTunnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setLinkedVpnTunnelUndefined: Self = StObject.set(x, "linkedVpnTunnel", js.undefined)
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedVpnTunnel(value: String): Self = this.set("linkedVpnTunnel", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLinkedVpnTunnel: Self = this.set("linkedVpnTunnel", js.undefined)
+    def setNumLearnedRoutes(value: Double): Self = StObject.set(x, "numLearnedRoutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumLearnedRoutesUndefined: Self = StObject.set(x, "numLearnedRoutes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPeerIpAddress(value: String): Self = StObject.set(x, "peerIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumLearnedRoutes(value: Double): Self = this.set("numLearnedRoutes", value.asInstanceOf[js.Any])
+    def setPeerIpAddressUndefined: Self = StObject.set(x, "peerIpAddress", js.undefined)
     
     @scala.inline
-    def deleteNumLearnedRoutes: Self = this.set("numLearnedRoutes", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeerIpAddress(value: String): Self = this.set("peerIpAddress", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deletePeerIpAddress: Self = this.set("peerIpAddress", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setUptime(value: String): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
     
     @scala.inline
-    def setUptime(value: String): Self = this.set("uptime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUptime: Self = this.set("uptime", js.undefined)
-    
-    @scala.inline
-    def setUptimeSeconds(value: String): Self = this.set("uptimeSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUptimeSeconds: Self = this.set("uptimeSeconds", js.undefined)
+    def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
   }
 }

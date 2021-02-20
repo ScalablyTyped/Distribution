@@ -4,12 +4,13 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.importRule
 import typings.devtoolsProtocol.devtoolsProtocolStrings.inlineSheet
 import typings.devtoolsProtocol.devtoolsProtocolStrings.linkedSheet
 import typings.devtoolsProtocol.devtoolsProtocolStrings.mediaRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CSSMedia extends js.Object {
+trait CSSMedia extends StObject {
   
   /**
     * Array of media queries.
@@ -54,51 +55,39 @@ object CSSMedia {
   }
   
   @scala.inline
-  implicit class CSSMediaOps[Self <: CSSMedia] (val x: Self) extends AnyVal {
+  implicit class CSSMediaMutableBuilder[Self <: CSSMedia] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMediaList(value: js.Array[MediaQuery]): Self = StObject.set(x, "mediaList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMediaListUndefined: Self = StObject.set(x, "mediaList", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaListVarargs(value: MediaQuery*): Self = StObject.set(x, "mediaList", js.Array(value :_*))
     
     @scala.inline
-    def setSource(value: mediaRule | importRule | linkedSheet | inlineSheet): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def setMediaListVarargs(value: MediaQuery*): Self = this.set("mediaList", js.Array(value :_*))
+    def setSource(value: mediaRule | importRule | linkedSheet | inlineSheet): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaList(value: js.Array[MediaQuery]): Self = this.set("mediaList", value.asInstanceOf[js.Any])
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMediaList: Self = this.set("mediaList", js.undefined)
+    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
     
     @scala.inline
-    def setRange(value: SourceRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setStyleSheetIdUndefined: Self = StObject.set(x, "styleSheetId", js.undefined)
     
     @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceURL: Self = this.set("sourceURL", js.undefined)
-    
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = this.set("styleSheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyleSheetId: Self = this.set("styleSheetId", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

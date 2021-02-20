@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchlogsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutLogEventsRequest extends js.Object {
+trait PutLogEventsRequest extends StObject {
   
   /**
     * The log events.
@@ -36,36 +37,24 @@ object PutLogEventsRequest {
   }
   
   @scala.inline
-  implicit class PutLogEventsRequestOps[Self <: PutLogEventsRequest] (val x: Self) extends AnyVal {
+  implicit class PutLogEventsRequestMutableBuilder[Self <: PutLogEventsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogEvents(value: InputLogEvents): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogEventsVarargs(value: InputLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEventsVarargs(value: InputLogEvent*): Self = this.set("logEvents", js.Array(value :_*))
+    def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogEvents(value: InputLogEvents): Self = this.set("logEvents", value.asInstanceOf[js.Any])
+    def setSequenceToken(value: SequenceToken): Self = StObject.set(x, "sequenceToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogStreamName(value: LogStreamName): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSequenceToken(value: SequenceToken): Self = this.set("sequenceToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceToken: Self = this.set("sequenceToken", js.undefined)
+    def setSequenceTokenUndefined: Self = StObject.set(x, "sequenceToken", js.undefined)
   }
 }

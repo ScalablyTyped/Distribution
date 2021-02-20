@@ -1,15 +1,14 @@
 package typings.rxLiteCoincidence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     def buffer[TBufferClosing](bufferClosingSelector: js.Function0[Observable[TBufferClosing]]): Observable[js.Array[T]] = js.native
     def buffer[TBufferOpening](bufferOpenings: Observable[TBufferOpening]): Observable[js.Array[T]] = js.native

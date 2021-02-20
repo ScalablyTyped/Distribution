@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInfoboxEventArgs extends js.Object {
+trait IInfoboxEventArgs extends StObject {
   
   /** The event that occurred. **/
   var eventName: String = js.native
@@ -35,39 +36,27 @@ object IInfoboxEventArgs {
   }
   
   @scala.inline
-  implicit class IInfoboxEventArgsOps[Self <: IInfoboxEventArgs] (val x: Self) extends AnyVal {
+  implicit class IInfoboxEventArgsMutableBuilder[Self <: IInfoboxEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     
     @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageX(value: Double): Self = this.set("pageX", value.asInstanceOf[js.Any])
+    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageY(value: Double): Self = this.set("pageY", value.asInstanceOf[js.Any])
+    def setTarget(value: Infobox): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTarget(value: Infobox): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetType(value: String): Self = this.set("targetType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalEvent(value: MouseEvent): Self = this.set("originalEvent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalEvent: Self = this.set("originalEvent", js.undefined)
+    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

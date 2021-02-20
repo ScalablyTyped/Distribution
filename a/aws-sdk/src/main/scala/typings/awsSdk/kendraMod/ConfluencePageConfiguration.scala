@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfluencePageConfiguration extends js.Object {
+trait ConfluencePageConfiguration extends StObject {
   
   /**
     * Defines how page metadata fields should be mapped to index fields. Before you can map a field, you must first create an index field with a matching type using the console or the UpdateIndex operation. If you specify the PageFieldMappings parameter, you must specify at least one field mapping.
@@ -21,27 +22,15 @@ object ConfluencePageConfiguration {
   }
   
   @scala.inline
-  implicit class ConfluencePageConfigurationOps[Self <: ConfluencePageConfiguration] (val x: Self) extends AnyVal {
+  implicit class ConfluencePageConfigurationMutableBuilder[Self <: ConfluencePageConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageFieldMappings(value: ConfluencePageFieldMappingsList): Self = StObject.set(x, "PageFieldMappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageFieldMappingsUndefined: Self = StObject.set(x, "PageFieldMappings", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPageFieldMappingsVarargs(value: ConfluencePageToIndexFieldMapping*): Self = this.set("PageFieldMappings", js.Array(value :_*))
-    
-    @scala.inline
-    def setPageFieldMappings(value: ConfluencePageFieldMappingsList): Self = this.set("PageFieldMappings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageFieldMappings: Self = this.set("PageFieldMappings", js.undefined)
+    def setPageFieldMappingsVarargs(value: ConfluencePageToIndexFieldMapping*): Self = StObject.set(x, "PageFieldMappings", js.Array(value :_*))
   }
 }

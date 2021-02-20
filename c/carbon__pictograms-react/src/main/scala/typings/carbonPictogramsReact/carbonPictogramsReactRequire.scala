@@ -1,5 +1,6 @@
 package typings.carbonPictogramsReact
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@carbon/pictograms-react", JSImport.Namespace)
 @js.native
-object carbonPictogramsReactRequire extends js.Object
+object carbonPictogramsReactRequire extends StObject

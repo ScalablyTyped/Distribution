@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecipientWithMultichannelAddresses extends js.Object {
+trait RecipientWithMultichannelAddresses extends StObject {
   
   /**
     * Address information for a recipient. At a minimum, address or multichannel_addresses is required.
@@ -30,30 +31,18 @@ object RecipientWithMultichannelAddresses {
   }
   
   @scala.inline
-  implicit class RecipientWithMultichannelAddressesOps[Self <: RecipientWithMultichannelAddresses] (val x: Self) extends AnyVal {
+  implicit class RecipientWithMultichannelAddressesMutableBuilder[Self <: RecipientWithMultichannelAddresses] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: Address | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMultichannel_addresses(value: js.Array[MultichannelAddress]): Self = StObject.set(x, "multichannel_addresses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultichannel_addressesVarargs(value: MultichannelAddress*): Self = this.set("multichannel_addresses", js.Array(value :_*))
-    
-    @scala.inline
-    def setMultichannel_addresses(value: js.Array[MultichannelAddress]): Self = this.set("multichannel_addresses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAddress(value: Address | String): Self = this.set("address", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setMultichannel_addressesVarargs(value: MultichannelAddress*): Self = StObject.set(x, "multichannel_addresses", js.Array(value :_*))
   }
 }

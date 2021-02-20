@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait hasExtensions extends js.Object {
+trait hasExtensions extends StObject {
   
   def addCallout(calloutExtension: Callout): AdWordsOperation[Callout] = js.native
   
@@ -59,60 +60,48 @@ object hasExtensions {
   }
   
   @scala.inline
-  implicit class hasExtensionsOps[Self <: hasExtensions] (val x: Self) extends AnyVal {
+  implicit class hasExtensionsMutableBuilder[Self <: hasExtensions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCallout(value: Callout => AdWordsOperation[Callout]): Self = StObject.set(x, "addCallout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddMessage(value: Message => AdWordsOperation[Message]): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddMobileApp(value: MobileApp => AdWordsOperation[MobileApp]): Self = StObject.set(x, "addMobileApp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCallout(value: Callout => AdWordsOperation[Callout]): Self = this.set("addCallout", js.Any.fromFunction1(value))
+    def setAddPhoneNumber(value: PhoneNumber => AdWordsOperation[PhoneNumber]): Self = StObject.set(x, "addPhoneNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddMessage(value: Message => AdWordsOperation[Message]): Self = this.set("addMessage", js.Any.fromFunction1(value))
+    def setAddReview(value: Review => AdWordsOperation[Review]): Self = StObject.set(x, "addReview", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddMobileApp(value: MobileApp => AdWordsOperation[MobileApp]): Self = this.set("addMobileApp", js.Any.fromFunction1(value))
+    def setAddSitelink(value: Sitelink => AdWordsOperation[Sitelink]): Self = StObject.set(x, "addSitelink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddPhoneNumber(value: PhoneNumber => AdWordsOperation[PhoneNumber]): Self = this.set("addPhoneNumber", js.Any.fromFunction1(value))
+    def setAddSnippet(value: Snippet => AdWordsOperation[Snippet]): Self = StObject.set(x, "addSnippet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddReview(value: Review => AdWordsOperation[Review]): Self = this.set("addReview", js.Any.fromFunction1(value))
+    def setRemoveCallout(value: Callout => Unit): Self = StObject.set(x, "removeCallout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSitelink(value: Sitelink => AdWordsOperation[Sitelink]): Self = this.set("addSitelink", js.Any.fromFunction1(value))
+    def setRemoveMessage(value: Message => Unit): Self = StObject.set(x, "removeMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSnippet(value: Snippet => AdWordsOperation[Snippet]): Self = this.set("addSnippet", js.Any.fromFunction1(value))
+    def setRemoveMobileApp(value: MobileApp => Unit): Self = StObject.set(x, "removeMobileApp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveCallout(value: Callout => Unit): Self = this.set("removeCallout", js.Any.fromFunction1(value))
+    def setRemovePhoneNumber(value: PhoneNumber => Unit): Self = StObject.set(x, "removePhoneNumber", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveMessage(value: Message => Unit): Self = this.set("removeMessage", js.Any.fromFunction1(value))
+    def setRemoveReview(value: Review => Unit): Self = StObject.set(x, "removeReview", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveMobileApp(value: MobileApp => Unit): Self = this.set("removeMobileApp", js.Any.fromFunction1(value))
+    def setRemoveSitelink(value: Sitelink => Unit): Self = StObject.set(x, "removeSitelink", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemovePhoneNumber(value: PhoneNumber => Unit): Self = this.set("removePhoneNumber", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveReview(value: Review => Unit): Self = this.set("removeReview", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSitelink(value: Sitelink => Unit): Self = this.set("removeSitelink", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveSnippet(value: Snippet => Unit): Self = this.set("removeSnippet", js.Any.fromFunction1(value))
+    def setRemoveSnippet(value: Snippet => Unit): Self = StObject.set(x, "removeSnippet", js.Any.fromFunction1(value))
   }
 }

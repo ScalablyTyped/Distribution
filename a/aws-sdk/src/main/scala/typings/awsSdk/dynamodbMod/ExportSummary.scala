@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportSummary extends js.Object {
+trait ExportSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the export.
@@ -26,30 +27,18 @@ object ExportSummary {
   }
   
   @scala.inline
-  implicit class ExportSummaryOps[Self <: ExportSummary] (val x: Self) extends AnyVal {
+  implicit class ExportSummaryMutableBuilder[Self <: ExportSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportArn(value: ExportArn): Self = this.set("ExportArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportArn: Self = this.set("ExportArn", js.undefined)
-    
-    @scala.inline
-    def setExportStatus(value: ExportStatus): Self = this.set("ExportStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExportStatus: Self = this.set("ExportStatus", js.undefined)
+    def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ordered series of geographic points. */
 @js.native
-trait Geopath extends js.Object {
+trait Geopath extends StObject {
   
   /** Gets the altitude reference system used by the Geopath . */
   var altitudeReferenceSystem: AltitudeReferenceSystem = js.native
@@ -35,30 +36,18 @@ object Geopath {
   }
   
   @scala.inline
-  implicit class GeopathOps[Self <: Geopath] (val x: Self) extends AnyVal {
+  implicit class GeopathMutableBuilder[Self <: Geopath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoshapeType(value: GeoshapeType): Self = StObject.set(x, "geoshapeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositions(value: IVectorView[BasicGeoposition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = this.set("altitudeReferenceSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGeoshapeType(value: GeoshapeType): Self = this.set("geoshapeType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositions(value: IVectorView[BasicGeoposition]): Self = this.set("positions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpatialReferenceId(value: Double): Self = this.set("spatialReferenceId", value.asInstanceOf[js.Any])
+    def setSpatialReferenceId(value: Double): Self = StObject.set(x, "spatialReferenceId", value.asInstanceOf[js.Any])
   }
 }

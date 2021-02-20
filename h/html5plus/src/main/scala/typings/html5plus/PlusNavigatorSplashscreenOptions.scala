@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/navigator.html](http://www.html5plus.org/doc/zh_cn/navigator.html)
   */
 @js.native
-trait PlusNavigatorSplashscreenOptions extends js.Object {
+trait PlusNavigatorSplashscreenOptions extends StObject {
   
   /**
     * 是否自动关闭启动界面
@@ -63,48 +64,36 @@ object PlusNavigatorSplashscreenOptions {
   }
   
   @scala.inline
-  implicit class PlusNavigatorSplashscreenOptionsOps[Self <: PlusNavigatorSplashscreenOptions] (val x: Self) extends AnyVal {
+  implicit class PlusNavigatorSplashscreenOptionsMutableBuilder[Self <: PlusNavigatorSplashscreenOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoclose_w2a(value: Boolean): Self = StObject.set(x, "autoclose_w2a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoclose(value: Boolean): Self = this.set("autoclose", value.asInstanceOf[js.Any])
+    def setAutoclose_w2aUndefined: Self = StObject.set(x, "autoclose_w2a", js.undefined)
     
     @scala.inline
-    def deleteAutoclose: Self = this.set("autoclose", js.undefined)
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoclose_w2a(value: Boolean): Self = this.set("autoclose_w2a", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteAutoclose_w2a: Self = this.set("autoclose_w2a", js.undefined)
+    def setDelay_w2a(value: Double): Self = StObject.set(x, "delay_w2a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDelay_w2aUndefined: Self = StObject.set(x, "delay_w2a", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay_w2a(value: Double): Self = this.set("delay_w2a", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelay_w2a: Self = this.set("delay_w2a", js.undefined)
-    
-    @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }
 }

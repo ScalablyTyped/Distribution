@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContinueUpdateRollbackInput extends js.Object {
+trait ContinueUpdateRollbackInput extends StObject {
   
   /**
     * A unique identifier for this ContinueUpdateRollback request. Specify this token if you plan to retry requests so that AWS CloudFormation knows that you're not attempting to continue the rollback to a stack with the same name. You might retry ContinueUpdateRollback requests to ensure that AWS CloudFormation successfully received them.
@@ -36,42 +37,30 @@ object ContinueUpdateRollbackInput {
   }
   
   @scala.inline
-  implicit class ContinueUpdateRollbackInputOps[Self <: ContinueUpdateRollbackInput] (val x: Self) extends AnyVal {
+  implicit class ContinueUpdateRollbackInputMutableBuilder[Self <: ContinueUpdateRollbackInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcesToSkip(value: ResourcesToSkip): Self = StObject.set(x, "ResourcesToSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    def setResourcesToSkipUndefined: Self = StObject.set(x, "ResourcesToSkip", js.undefined)
     
     @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    def setResourcesToSkipVarargs(value: ResourceToSkip*): Self = StObject.set(x, "ResourcesToSkip", js.Array(value :_*))
     
     @scala.inline
-    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcesToSkipVarargs(value: ResourceToSkip*): Self = this.set("ResourcesToSkip", js.Array(value :_*))
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def setResourcesToSkip(value: ResourcesToSkip): Self = this.set("ResourcesToSkip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourcesToSkip: Self = this.set("ResourcesToSkip", js.undefined)
-    
-    @scala.inline
-    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

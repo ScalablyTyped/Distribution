@@ -9,12 +9,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
 import typings.arcgisJsApi.arcgisJsApiStrings.redo
 import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SketchRedoEvent extends js.Object {
+trait SketchRedoEvent extends StObject {
   
   var graphics: js.Array[Graphic] = js.native
   
@@ -36,30 +37,18 @@ object SketchRedoEvent {
   }
   
   @scala.inline
-  implicit class SketchRedoEventOps[Self <: SketchRedoEvent] (val x: Self) extends AnyVal {
+  implicit class SketchRedoEventMutableBuilder[Self <: SketchRedoEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTool(value: point | polyline | polygon | rectangle | circle | move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphicsVarargs(value: Graphic*): Self = this.set("graphics", js.Array(value :_*))
-    
-    @scala.inline
-    def setGraphics(value: js.Array[Graphic]): Self = this.set("graphics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTool(value: point | polyline | polygon | rectangle | circle | move | transform | reshape): Self = this.set("tool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: redo): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: redo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

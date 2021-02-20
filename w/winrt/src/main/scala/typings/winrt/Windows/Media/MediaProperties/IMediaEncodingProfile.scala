@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMediaEncodingProfile extends js.Object {
+trait IMediaEncodingProfile extends StObject {
   
   var audio: AudioEncodingProperties = js.native
   
@@ -26,27 +27,15 @@ object IMediaEncodingProfile {
   }
   
   @scala.inline
-  implicit class IMediaEncodingProfileOps[Self <: IMediaEncodingProfile] (val x: Self) extends AnyVal {
+  implicit class IMediaEncodingProfileMutableBuilder[Self <: IMediaEncodingProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: AudioEncodingProperties): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainer(value: ContainerEncodingProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudio(value: AudioEncodingProperties): Self = this.set("audio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContainer(value: ContainerEncodingProperties): Self = this.set("container", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideo(value: VideoEncodingProperties): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setVideo(value: VideoEncodingProperties): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

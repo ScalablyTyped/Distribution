@@ -6,6 +6,7 @@ import typings.std.HTMLElement
 import typings.webix.webix.DataStore
 import typings.webix.webix.WebixCallback
 import typings.webix.webix.WebixTemplate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

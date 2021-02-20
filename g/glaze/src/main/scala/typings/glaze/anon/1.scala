@@ -1,11 +1,12 @@
 package typings.glaze.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `1` extends js.Object {
+trait `1` extends StObject {
   
   val `-1px`: String | Double = js.native
   

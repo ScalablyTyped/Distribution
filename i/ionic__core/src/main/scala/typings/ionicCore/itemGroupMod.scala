@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/item-group/item-group", JSImport.Namespace)
-@js.native
-object itemGroupMod extends js.Object {
+object itemGroupMod {
   
+  @JSImport("@ionic/core/dist/types/components/item-group/item-group", "ItemGroup")
   @js.native
   class ItemGroup () extends ComponentInterface {
     

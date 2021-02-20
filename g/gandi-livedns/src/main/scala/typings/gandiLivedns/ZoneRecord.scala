@@ -1,11 +1,12 @@
 package typings.gandiLivedns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoneRecord extends js.Object {
+trait ZoneRecord extends StObject {
   
   var rrset_name: String = js.native
   
@@ -27,33 +28,21 @@ object ZoneRecord {
   }
   
   @scala.inline
-  implicit class ZoneRecordOps[Self <: ZoneRecord] (val x: Self) extends AnyVal {
+  implicit class ZoneRecordMutableBuilder[Self <: ZoneRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRrset_name(value: String): Self = StObject.set(x, "rrset_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRrset_ttl(value: Double): Self = StObject.set(x, "rrset_ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRrset_type(value: String): Self = StObject.set(x, "rrset_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRrset_name(value: String): Self = this.set("rrset_name", value.asInstanceOf[js.Any])
+    def setRrset_values(value: js.Array[String]): Self = StObject.set(x, "rrset_values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRrset_ttl(value: Double): Self = this.set("rrset_ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRrset_type(value: String): Self = this.set("rrset_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRrset_valuesVarargs(value: String*): Self = this.set("rrset_values", js.Array(value :_*))
-    
-    @scala.inline
-    def setRrset_values(value: js.Array[String]): Self = this.set("rrset_values", value.asInstanceOf[js.Any])
+    def setRrset_valuesVarargs(value: String*): Self = StObject.set(x, "rrset_values", js.Array(value :_*))
   }
 }

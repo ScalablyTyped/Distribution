@@ -1,11 +1,12 @@
 package typings.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlTagConfigurationType extends js.Object {
+trait SqlTagConfigurationType extends StObject {
   
   var normalizeIdentifier: js.UndefOr[IdentifierNormalizerType] = js.native
 }
@@ -18,24 +19,12 @@ object SqlTagConfigurationType {
   }
   
   @scala.inline
-  implicit class SqlTagConfigurationTypeOps[Self <: SqlTagConfigurationType] (val x: Self) extends AnyVal {
+  implicit class SqlTagConfigurationTypeMutableBuilder[Self <: SqlTagConfigurationType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalizeIdentifier(value: /* identifierName */ String => String): Self = StObject.set(x, "normalizeIdentifier", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNormalizeIdentifier(value: /* identifierName */ String => String): Self = this.set("normalizeIdentifier", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteNormalizeIdentifier: Self = this.set("normalizeIdentifier", js.undefined)
+    def setNormalizeIdentifierUndefined: Self = StObject.set(x, "normalizeIdentifier", js.undefined)
   }
 }

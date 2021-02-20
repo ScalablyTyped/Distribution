@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Location")
 @js.native
-class Location protected () extends js.Object {
+class Location protected () extends StObject {
   def this(uri: Uri, rangeOrPosition: Position) = this()
   /**
     * Creates a new location object.

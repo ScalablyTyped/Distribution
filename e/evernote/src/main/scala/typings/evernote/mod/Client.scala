@@ -4,13 +4,14 @@ import typings.evernote.anon.China
 import typings.evernote.mod.Types.LinkedNotebook
 import typings.oauth.mod.OAuth
 import typings.oauth.mod.oauth1tokenCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Client")
 @js.native
-class Client protected () extends js.Object {
+class Client protected () extends StObject {
   def this(config: China) = this()
   
   def getAccessToken(oauthToken: String, oauthTokenSecret: String, oauthVerifier: String, callback: oauth1tokenCallback): Unit = js.native

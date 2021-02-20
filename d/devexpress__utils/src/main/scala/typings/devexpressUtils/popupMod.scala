@@ -1,20 +1,21 @@
 package typings.devexpressUtils
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/utils/popup", JSImport.Namespace)
-@js.native
-object popupMod extends js.Object {
+object popupMod {
   
+  @JSImport("@devexpress/utils/lib/utils/popup", "PopupUtils")
   @js.native
-  class PopupUtils () extends js.Object
+  class PopupUtils () extends StObject
   /* static members */
-  @js.native
-  object PopupUtils extends js.Object {
+  object PopupUtils {
     
+    @JSImport("@devexpress/utils/lib/utils/popup", "PopupUtils.preventContextMenu")
+    @js.native
     def preventContextMenu(evt: MouseEvent): Unit = js.native
   }
 }

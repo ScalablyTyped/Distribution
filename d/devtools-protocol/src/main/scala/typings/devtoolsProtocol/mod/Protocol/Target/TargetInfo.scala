@@ -2,12 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetInfo extends js.Object {
+trait TargetInfo extends StObject {
   
   /**
     * Whether the target has an attached client.
@@ -56,54 +57,42 @@ object TargetInfo {
   }
   
   @scala.inline
-  implicit class TargetInfoOps[Self <: TargetInfo] (val x: Self) extends AnyVal {
+  implicit class TargetInfoMutableBuilder[Self <: TargetInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
     @scala.inline
-    def setAttached(value: Boolean): Self = this.set("attached", value.asInstanceOf[js.Any])
+    def setCanAccessOpener(value: Boolean): Self = StObject.set(x, "canAccessOpener", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanAccessOpener(value: Boolean): Self = this.set("canAccessOpener", value.asInstanceOf[js.Any])
+    def setOpenerFrameId(value: FrameId): Self = StObject.set(x, "openerFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetId(value: TargetID): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def setOpenerFrameIdUndefined: Self = StObject.set(x, "openerFrameId", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setOpenerId(value: TargetID): Self = StObject.set(x, "openerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setOpenerIdUndefined: Self = StObject.set(x, "openerId", js.undefined)
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = this.set("browserContextId", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBrowserContextId: Self = this.set("browserContextId", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenerFrameId(value: FrameId): Self = this.set("openerFrameId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenerFrameId: Self = this.set("openerFrameId", js.undefined)
-    
-    @scala.inline
-    def setOpenerId(value: TargetID): Self = this.set("openerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpenerId: Self = this.set("openerId", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

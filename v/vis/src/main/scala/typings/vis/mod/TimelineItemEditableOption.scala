@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineItemEditableOption extends js.Object {
+trait TimelineItemEditableOption extends StObject {
   
   var remove: js.UndefOr[Boolean] = js.native
   
@@ -22,36 +23,24 @@ object TimelineItemEditableOption {
   }
   
   @scala.inline
-  implicit class TimelineItemEditableOptionOps[Self <: TimelineItemEditableOption] (val x: Self) extends AnyVal {
+  implicit class TimelineItemEditableOptionMutableBuilder[Self <: TimelineItemEditableOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateGroup(value: Boolean): Self = StObject.set(x, "updateGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: Boolean): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setUpdateGroupUndefined: Self = StObject.set(x, "updateGroup", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setUpdateTime(value: Boolean): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateGroup(value: Boolean): Self = this.set("updateGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateGroup: Self = this.set("updateGroup", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: Boolean): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -1,16 +1,16 @@
 package typings.electronPublish
 
 import typings.electronPublish.progressMod.ProgressBar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("electron-publish/out/multiProgress", JSImport.Namespace)
-@js.native
-object multiProgressMod extends js.Object {
+object multiProgressMod {
   
+  @JSImport("electron-publish/out/multiProgress", "MultiProgress")
   @js.native
-  class MultiProgress () extends js.Object {
+  class MultiProgress () extends StObject {
     
     var allocateLines: js.Any = js.native
     

@@ -1,11 +1,12 @@
 package typings.ace.AceAjax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceHolder extends js.Object {
+trait PlaceHolder extends StObject {
   
   /**
     * PlaceHolder.cancel()
@@ -69,42 +70,30 @@ object PlaceHolder {
   }
   
   @scala.inline
-  implicit class PlaceHolderOps[Self <: PlaceHolder] (val x: Self) extends AnyVal {
+  implicit class PlaceHolderMutableBuilder[Self <: PlaceHolder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHideOtherMarkers(value: () => Unit): Self = StObject.set(x, "hideOtherMarkers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
+    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDetach(value: () => Unit): Self = this.set("detach", js.Any.fromFunction0(value))
+    def setOnCursorChange(value: () => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHideOtherMarkers(value: () => Unit): Self = this.set("hideOtherMarkers", js.Any.fromFunction0(value))
+    def setOnUpdate(value: () => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOn(value: (String, js.Function1[/* e */ js.Any, _]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
+    def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnCursorChange(value: () => Unit): Self = this.set("onCursorChange", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOnUpdate(value: () => Unit): Self = this.set("onUpdate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetup(value: () => Unit): Self = this.set("setup", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowOtherMarkers(value: () => Unit): Self = this.set("showOtherMarkers", js.Any.fromFunction0(value))
+    def setShowOtherMarkers(value: () => Unit): Self = StObject.set(x, "showOtherMarkers", js.Any.fromFunction0(value))
   }
 }

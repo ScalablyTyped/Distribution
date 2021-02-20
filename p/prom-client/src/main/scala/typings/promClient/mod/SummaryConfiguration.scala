@@ -1,11 +1,12 @@
 package typings.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SummaryConfiguration[T /* <: String */] extends js.Object {
+trait SummaryConfiguration[T /* <: String */] extends StObject {
   
   var ageBuckets: js.UndefOr[Double] = js.native
   
@@ -34,75 +35,63 @@ object SummaryConfiguration {
   }
   
   @scala.inline
-  implicit class SummaryConfigurationOps[Self <: SummaryConfiguration[_], T /* <: String */] (val x: Self with SummaryConfiguration[T]) extends AnyVal {
+  implicit class SummaryConfigurationMutableBuilder[Self <: SummaryConfiguration[_], T /* <: String */] (val x: Self with SummaryConfiguration[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgeBuckets(value: Double): Self = StObject.set(x, "ageBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgeBucketsUndefined: Self = StObject.set(x, "ageBuckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregator(value: Aggregator): Self = StObject.set(x, "aggregator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelp(value: String): Self = this.set("help", value.asInstanceOf[js.Any])
+    def setAggregatorUndefined: Self = StObject.set(x, "aggregator", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCompressCount(value: Double): Self = StObject.set(x, "compressCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgeBuckets(value: Double): Self = this.set("ageBuckets", value.asInstanceOf[js.Any])
+    def setCompressCountUndefined: Self = StObject.set(x, "compressCount", js.undefined)
     
     @scala.inline
-    def deleteAgeBuckets: Self = this.set("ageBuckets", js.undefined)
+    def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregator(value: Aggregator): Self = this.set("aggregator", value.asInstanceOf[js.Any])
+    def setLabelNames(value: js.Array[T]): Self = StObject.set(x, "labelNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAggregator: Self = this.set("aggregator", js.undefined)
+    def setLabelNamesUndefined: Self = StObject.set(x, "labelNames", js.undefined)
     
     @scala.inline
-    def setCompressCount(value: Double): Self = this.set("compressCount", value.asInstanceOf[js.Any])
+    def setLabelNamesVarargs(value: T*): Self = StObject.set(x, "labelNames", js.Array(value :_*))
     
     @scala.inline
-    def deleteCompressCount: Self = this.set("compressCount", js.undefined)
+    def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelNamesVarargs(value: T*): Self = this.set("labelNames", js.Array(value :_*))
+    def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
     
     @scala.inline
-    def setLabelNames(value: js.Array[T]): Self = this.set("labelNames", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelNames: Self = this.set("labelNames", js.undefined)
+    def setPercentiles(value: js.Array[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxAgeSeconds(value: Double): Self = this.set("maxAgeSeconds", value.asInstanceOf[js.Any])
+    def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
     
     @scala.inline
-    def deleteMaxAgeSeconds: Self = this.set("maxAgeSeconds", js.undefined)
+    def setPercentilesVarargs(value: Double*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
     
     @scala.inline
-    def setPercentilesVarargs(value: Double*): Self = this.set("percentiles", js.Array(value :_*))
+    def setRegisters(value: js.Array[Registry]): Self = StObject.set(x, "registers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentiles(value: js.Array[Double]): Self = this.set("percentiles", value.asInstanceOf[js.Any])
+    def setRegistersUndefined: Self = StObject.set(x, "registers", js.undefined)
     
     @scala.inline
-    def deletePercentiles: Self = this.set("percentiles", js.undefined)
-    
-    @scala.inline
-    def setRegistersVarargs(value: Registry*): Self = this.set("registers", js.Array(value :_*))
-    
-    @scala.inline
-    def setRegisters(value: js.Array[Registry]): Self = this.set("registers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRegisters: Self = this.set("registers", js.undefined)
+    def setRegistersVarargs(value: Registry*): Self = StObject.set(x, "registers", js.Array(value :_*))
   }
 }

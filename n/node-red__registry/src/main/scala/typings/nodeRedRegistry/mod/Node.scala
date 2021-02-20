@@ -4,6 +4,7 @@ import typings.node.eventsMod.EventEmitter
 import typings.nodeRedRegistry.nodeRedRegistryStrings.close
 import typings.nodeRedRegistry.nodeRedRegistryStrings.input
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,7 +70,7 @@ trait Node[TCreds /* <: js.Object */] extends EventEmitter {
     */
   @JSName("on")
   def on_close(event: close, listener: js.Function1[/* done */ js.Function0[Unit], Unit]): this.type = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   /**
     * If the registered listener accepts two arguments, the first will be a boolean
     * flag that indicates whether the node is being closed because it has been removed

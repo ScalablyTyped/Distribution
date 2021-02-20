@@ -2,6 +2,7 @@ package typings.vegaTypings.anon
 
 import typings.vegaTypings.layoutMod._LayoutOffset
 import typings.vegaTypings.signalMod.SignalRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,54 +31,42 @@ object ColumnFooter {
   }
   
   @scala.inline
-  implicit class ColumnFooterOps[Self <: ColumnFooter] (val x: Self) extends AnyVal {
+  implicit class ColumnFooterMutableBuilder[Self <: ColumnFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnFooter(value: Double | SignalRef): Self = StObject.set(x, "columnFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnFooterUndefined: Self = StObject.set(x, "columnFooter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnHeader(value: Double | SignalRef): Self = StObject.set(x, "columnHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnFooter(value: Double | SignalRef): Self = this.set("columnFooter", value.asInstanceOf[js.Any])
+    def setColumnHeaderUndefined: Self = StObject.set(x, "columnHeader", js.undefined)
     
     @scala.inline
-    def deleteColumnFooter: Self = this.set("columnFooter", js.undefined)
+    def setColumnTitle(value: Double | SignalRef): Self = StObject.set(x, "columnTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnHeader(value: Double | SignalRef): Self = this.set("columnHeader", value.asInstanceOf[js.Any])
+    def setColumnTitleUndefined: Self = StObject.set(x, "columnTitle", js.undefined)
     
     @scala.inline
-    def deleteColumnHeader: Self = this.set("columnHeader", js.undefined)
+    def setRowFooter(value: Double | SignalRef): Self = StObject.set(x, "rowFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnTitle(value: Double | SignalRef): Self = this.set("columnTitle", value.asInstanceOf[js.Any])
+    def setRowFooterUndefined: Self = StObject.set(x, "rowFooter", js.undefined)
     
     @scala.inline
-    def deleteColumnTitle: Self = this.set("columnTitle", js.undefined)
+    def setRowHeader(value: Double | SignalRef): Self = StObject.set(x, "rowHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowFooter(value: Double | SignalRef): Self = this.set("rowFooter", value.asInstanceOf[js.Any])
+    def setRowHeaderUndefined: Self = StObject.set(x, "rowHeader", js.undefined)
     
     @scala.inline
-    def deleteRowFooter: Self = this.set("rowFooter", js.undefined)
+    def setRowTitle(value: Double | SignalRef): Self = StObject.set(x, "rowTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowHeader(value: Double | SignalRef): Self = this.set("rowHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowHeader: Self = this.set("rowHeader", js.undefined)
-    
-    @scala.inline
-    def setRowTitle(value: Double | SignalRef): Self = this.set("rowTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowTitle: Self = this.set("rowTitle", js.undefined)
+    def setRowTitleUndefined: Self = StObject.set(x, "rowTitle", js.undefined)
   }
 }

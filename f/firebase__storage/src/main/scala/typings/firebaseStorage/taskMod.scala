@@ -8,14 +8,14 @@ import typings.firebaseStorage.referenceMod.ReferenceCompat
 import typings.firebaseStorage.taskenumsMod.TaskEvent
 import typings.firebaseStorage.tasksnapshotMod.UploadTaskSnapshotCompat
 import typings.firebaseStorageTypes.mod.UploadTask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/storage/dist/compat/task", JSImport.Namespace)
-@js.native
-object taskMod extends js.Object {
+object taskMod {
   
+  @JSImport("@firebase/storage/dist/compat/task", "UploadTaskCompat")
   @js.native
   class UploadTaskCompat protected () extends UploadTask {
     def this(_delegate: typings.firebaseStorage.srcTaskMod.UploadTask, _ref: ReferenceCompat) = this()

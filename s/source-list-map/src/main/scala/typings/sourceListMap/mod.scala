@@ -3,18 +3,16 @@ package typings.sourceListMap
 import typings.sourceListMap.anon.File
 import typings.sourceListMap.anon.Map
 import typings.sourceListMap.anon.Sources
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("source-list-map", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = js.native
-  
+  @JSImport("source-list-map", "CodeNode")
   @js.native
-  class CodeNode protected () extends js.Object {
+  class CodeNode protected () extends StObject {
     def this(generatedCode: String) = this()
     
     def addGeneratedCode(generatedCode: String): Unit = js.native
@@ -29,8 +27,9 @@ object mod extends js.Object {
     def mapGeneratedCode(fn: js.Function1[/* code */ String, String]): Unit = js.native
   }
   
+  @JSImport("source-list-map", "MappingsContext")
   @js.native
-  class MappingsContext () extends js.Object {
+  class MappingsContext () extends StObject {
     
     var currentOriginalLine: Double = js.native
     
@@ -45,8 +44,9 @@ object mod extends js.Object {
     var sourcesContent: js.Array[String] = js.native
   }
   
+  @JSImport("source-list-map", "SourceListMap")
   @js.native
-  class SourceListMap () extends js.Object {
+  class SourceListMap () extends StObject {
     def this(generatedCode: String) = this()
     def this(generatedCode: js.Array[SourceNode | CodeNode]) = this()
     def this(generatedCode: CodeNode) = this()
@@ -109,8 +109,9 @@ object mod extends js.Object {
     def toStringWithSourceMap(options: File): Map = js.native
   }
   
+  @JSImport("source-list-map", "SourceNode")
   @js.native
-  class SourceNode protected () extends js.Object {
+  class SourceNode protected () extends StObject {
     def this(generatedCode: String, source: String, originalSource: String) = this()
     def this(generatedCode: String, source: String, originalSource: String, startingLine: Double) = this()
     
@@ -128,4 +129,8 @@ object mod extends js.Object {
     
     var startingLine: Double = js.native
   }
+  
+  @JSImport("source-list-map", "fromStringWithSourceMap")
+  @js.native
+  def fromStringWithSourceMap(code: String, map: Sources): SourceListMap = js.native
 }

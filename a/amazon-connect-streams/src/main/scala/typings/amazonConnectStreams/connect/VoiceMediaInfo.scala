@@ -1,11 +1,12 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceMediaInfo extends js.Object {
+trait VoiceMediaInfo extends StObject {
   
   val autoAccept: Boolean = js.native
   
@@ -32,33 +33,21 @@ object VoiceMediaInfo {
   }
   
   @scala.inline
-  implicit class VoiceMediaInfoOps[Self <: VoiceMediaInfo] (val x: Self) extends AnyVal {
+  implicit class VoiceMediaInfoMutableBuilder[Self <: VoiceMediaInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoAccept(value: Boolean): Self = StObject.set(x, "autoAccept", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallConfigJson(value: String): Self = StObject.set(x, "callConfigJson", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallContextToken(value: String): Self = StObject.set(x, "callContextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAccept(value: Boolean): Self = this.set("autoAccept", value.asInstanceOf[js.Any])
+    def setCallType(value: SoftphoneCallType): Self = StObject.set(x, "callType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallConfigJson(value: String): Self = this.set("callConfigJson", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallContextToken(value: String): Self = this.set("callContextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCallType(value: SoftphoneCallType): Self = this.set("callType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaLegContextToken(value: String): Self = this.set("mediaLegContextToken", value.asInstanceOf[js.Any])
+    def setMediaLegContextToken(value: String): Self = StObject.set(x, "mediaLegContextToken", value.asInstanceOf[js.Any])
   }
 }

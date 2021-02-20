@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientBigqueryreservation.anon.Accesstoken
 import typings.maximMazurokGapiClientBigqueryreservation.anon.Alt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OperationsResource extends js.Object {
+trait OperationsResource extends StObject {
   
   /**
     * Deletes a long-running operation. This method indicates that the client is no longer interested in the operation result. It does not cancel the operation. If the server doesn't

@@ -7,14 +7,16 @@ import typings.awsSdk.ec2Mod.FilterList
 import typings.awsSdk.ec2Mod.ImageId
 import typings.awsSdk.ec2Mod.ImageIdStringList
 import typings.awsSdk.ec2Mod.OwnerStringList
+import typings.awsSdk.ec2Mod.String
 import typings.awsSdk.serviceMod.WaiterConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeImagesRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait DescribeImagesRequestwait extends js.Object {
+trait DescribeImagesRequestwait extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -53,66 +55,54 @@ object DescribeImagesRequestwait {
   }
   
   @scala.inline
-  implicit class DescribeImagesRequestwaitOps[Self <: DescribeImagesRequestwait] (val x: Self) extends AnyVal {
+  implicit class DescribeImagesRequestwaitMutableBuilder[Self <: DescribeImagesRequestwait] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    def setExecutableUsers(value: ExecutableByStringList): Self = StObject.set(x, "ExecutableUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setExecutableUsersUndefined: Self = StObject.set(x, "ExecutableUsers", js.undefined)
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setExecutableUsersVarargs(value: String*): Self = StObject.set(x, "ExecutableUsers", js.Array(value :_*))
     
     @scala.inline
-    def setExecutableUsersVarargs(value: typings.awsSdk.ec2Mod.String*): Self = this.set("ExecutableUsers", js.Array(value :_*))
+    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutableUsers(value: ExecutableByStringList): Self = this.set("ExecutableUsers", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteExecutableUsers: Self = this.set("ExecutableUsers", js.undefined)
+    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    def setImageIds(value: ImageIdStringList): Self = StObject.set(x, "ImageIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setImageIdsUndefined: Self = StObject.set(x, "ImageIds", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setImageIdsVarargs(value: ImageId*): Self = StObject.set(x, "ImageIds", js.Array(value :_*))
     
     @scala.inline
-    def setImageIdsVarargs(value: ImageId*): Self = this.set("ImageIds", js.Array(value :_*))
+    def setOwners(value: OwnerStringList): Self = StObject.set(x, "Owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageIds(value: ImageIdStringList): Self = this.set("ImageIds", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "Owners", js.undefined)
     
     @scala.inline
-    def deleteImageIds: Self = this.set("ImageIds", js.undefined)
-    
-    @scala.inline
-    def setOwnersVarargs(value: typings.awsSdk.ec2Mod.String*): Self = this.set("Owners", js.Array(value :_*))
-    
-    @scala.inline
-    def setOwners(value: OwnerStringList): Self = this.set("Owners", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwners: Self = this.set("Owners", js.undefined)
+    def setOwnersVarargs(value: String*): Self = StObject.set(x, "Owners", js.Array(value :_*))
   }
 }

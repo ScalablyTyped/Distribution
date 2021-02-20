@@ -3,12 +3,13 @@ package typings.ionicCore.componentsMod.LocalJSX
 import typings.ionicCore.ionicCoreStrings.bottom
 import typings.ionicCore.ionicCoreStrings.top
 import typings.std.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonInfiniteScroll extends js.Object {
+trait IonInfiniteScroll extends StObject {
   
   /**
     * If `true`, the infinite scroll will be hidden and scroll event listeners will be removed.  Set this to true to disable the infinite scroll from actively trying to receive new data while scrolling. This is useful when it is known that there is no more data that can be added, and the infinite scroll is no longer needed.
@@ -39,42 +40,30 @@ object IonInfiniteScroll {
   }
   
   @scala.inline
-  implicit class IonInfiniteScrollOps[Self <: IonInfiniteScroll] (val x: Self) extends AnyVal {
+  implicit class IonInfiniteScrollMutableBuilder[Self <: IonInfiniteScroll] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnIonInfinite(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonInfinite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setOnIonInfiniteUndefined: Self = StObject.set(x, "onIonInfinite", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setPosition(value: top | bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIonInfinite(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonInfinite", js.Any.fromFunction1(value))
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteOnIonInfinite: Self = this.set("onIonInfinite", js.undefined)
+    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: top | bottom): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: String): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

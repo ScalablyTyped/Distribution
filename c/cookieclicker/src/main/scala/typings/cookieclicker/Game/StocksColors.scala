@@ -1,11 +1,12 @@
 package typings.cookieclicker.Game
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StocksColors extends js.Object {
+trait StocksColors extends StObject {
   
   /**
     * The background color of the graph
@@ -46,36 +47,24 @@ object StocksColors {
   }
   
   @scala.inline
-  implicit class StocksColorsOps[Self <: StocksColors] (val x: Self) extends AnyVal {
+  implicit class StocksColorsMutableBuilder[Self <: StocksColors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHigh(value: String): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHightlight(value: String): Self = StObject.set(x, "hightlight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: String): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigh(value: String): Self = this.set("high", value.asInstanceOf[js.Any])
+    def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHightlight(value: String): Self = this.set("hightlight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine1(value: String): Self = this.set("line1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine2(value: String): Self = this.set("line2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLow(value: String): Self = this.set("low", value.asInstanceOf[js.Any])
+    def setLow(value: String): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
   }
 }

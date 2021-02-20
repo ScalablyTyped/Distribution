@@ -10,12 +10,13 @@ import typings.chromeApps.chrome.bluetoothLowEnergy.Service
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.integer
 import typings.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofbluetoothLowEnergy extends js.Object {
+trait TypeofbluetoothLowEnergy extends StObject {
   
   /**
     * Establishes a connection between the application and the device with the given address. A device may be already connected and its GATT services available without calling connect, however, an app that wants to access GATT services of a device should call this function to make sure that a connection to the device is maintained. If the device is not connected, all GATT services of the device will be discovered after a successful call to connect.

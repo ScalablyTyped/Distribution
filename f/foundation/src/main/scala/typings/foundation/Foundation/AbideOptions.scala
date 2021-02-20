@@ -1,11 +1,12 @@
 package typings.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbideOptions extends js.Object {
+trait AbideOptions extends StObject {
   
   var error_labels: js.UndefOr[Boolean] = js.native
   
@@ -30,60 +31,48 @@ object AbideOptions {
   }
   
   @scala.inline
-  implicit class AbideOptionsOps[Self <: AbideOptions] (val x: Self) extends AnyVal {
+  implicit class AbideOptionsMutableBuilder[Self <: AbideOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError_labels(value: Boolean): Self = StObject.set(x, "error_labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setError_labelsUndefined: Self = StObject.set(x, "error_labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFocus_on_invalid(value: Boolean): Self = StObject.set(x, "focus_on_invalid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError_labels(value: Boolean): Self = this.set("error_labels", value.asInstanceOf[js.Any])
+    def setFocus_on_invalidUndefined: Self = StObject.set(x, "focus_on_invalid", js.undefined)
     
     @scala.inline
-    def deleteError_labels: Self = this.set("error_labels", js.undefined)
+    def setLive_validate(value: Boolean): Self = StObject.set(x, "live_validate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus_on_invalid(value: Boolean): Self = this.set("focus_on_invalid", value.asInstanceOf[js.Any])
+    def setLive_validateUndefined: Self = StObject.set(x, "live_validate", js.undefined)
     
     @scala.inline
-    def deleteFocus_on_invalid: Self = this.set("focus_on_invalid", js.undefined)
+    def setPatterns(value: AbidePatterns): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLive_validate(value: Boolean): Self = this.set("live_validate", value.asInstanceOf[js.Any])
+    def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
     
     @scala.inline
-    def deleteLive_validate: Self = this.set("live_validate", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatterns(value: AbidePatterns): Self = this.set("patterns", value.asInstanceOf[js.Any])
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     @scala.inline
-    def deletePatterns: Self = this.set("patterns", js.undefined)
+    def setValidate_on_blur(value: Boolean): Self = StObject.set(x, "validate_on_blur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    def setValidate_on_blurUndefined: Self = StObject.set(x, "validate_on_blur", js.undefined)
     
     @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setValidators(value: js.Object): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidate_on_blur(value: Boolean): Self = this.set("validate_on_blur", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidate_on_blur: Self = this.set("validate_on_blur", js.undefined)
-    
-    @scala.inline
-    def setValidators(value: js.Object): Self = this.set("validators", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
   }
 }

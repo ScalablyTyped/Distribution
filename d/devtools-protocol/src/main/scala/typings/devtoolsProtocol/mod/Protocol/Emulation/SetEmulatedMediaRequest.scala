@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Emulation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetEmulatedMediaRequest extends js.Object {
+trait SetEmulatedMediaRequest extends StObject {
   
   /**
     * Media features to emulate.
@@ -26,33 +27,21 @@ object SetEmulatedMediaRequest {
   }
   
   @scala.inline
-  implicit class SetEmulatedMediaRequestOps[Self <: SetEmulatedMediaRequest] (val x: Self) extends AnyVal {
+  implicit class SetEmulatedMediaRequestMutableBuilder[Self <: SetEmulatedMediaRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFeatures(value: js.Array[MediaFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturesVarargs(value: MediaFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
     
     @scala.inline
-    def setFeaturesVarargs(value: MediaFeature*): Self = this.set("features", js.Array(value :_*))
+    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatures(value: js.Array[MediaFeature]): Self = this.set("features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeatures: Self = this.set("features", js.undefined)
-    
-    @scala.inline
-    def setMedia(value: String): Self = this.set("media", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMedia: Self = this.set("media", js.undefined)
+    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
   }
 }

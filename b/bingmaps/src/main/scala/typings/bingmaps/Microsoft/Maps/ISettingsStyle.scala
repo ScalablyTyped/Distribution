@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISettingsStyle extends js.Object {
+trait ISettingsStyle extends StObject {
   
   /** A hex color value that all land is first flushed to before things are drawn on it. */
   var landColor: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object ISettingsStyle {
   }
   
   @scala.inline
-  implicit class ISettingsStyleOps[Self <: ISettingsStyle] (val x: Self) extends AnyVal {
+  implicit class ISettingsStyleMutableBuilder[Self <: ISettingsStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLandColor(value: String): Self = StObject.set(x, "landColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLandColorUndefined: Self = StObject.set(x, "landColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShadedReliefVisible(value: Boolean): Self = StObject.set(x, "shadedReliefVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandColor(value: String): Self = this.set("landColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLandColor: Self = this.set("landColor", js.undefined)
-    
-    @scala.inline
-    def setShadedReliefVisible(value: Boolean): Self = this.set("shadedReliefVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadedReliefVisible: Self = this.set("shadedReliefVisible", js.undefined)
+    def setShadedReliefVisibleUndefined: Self = StObject.set(x, "shadedReliefVisible", js.undefined)
   }
 }

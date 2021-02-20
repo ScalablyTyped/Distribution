@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,25 @@ class Signature protected ()
   extends typings.ejWebAll.ej.Signature {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Signature.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Signature.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.Signature")
-@js.native
-object Signature extends js.Object {
+object Signature {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.Signature = js.native
-  
+  @JSGlobal("ej.Signature")
   @js.native
-  object SaveImageFormat extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("ej.Signature.Locale")
+  @js.native
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Signature.SaveImageFormat")
+  @js.native
+  object SaveImageFormat extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Signature.SaveImageFormat with Double] = js.native
@@ -38,4 +44,11 @@ object Signature extends js.Object {
     
     /* 3 */ val TIFF: typings.ejWebAll.ej.Signature.SaveImageFormat.TIFF with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.Signature.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.Signature = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.Signature): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

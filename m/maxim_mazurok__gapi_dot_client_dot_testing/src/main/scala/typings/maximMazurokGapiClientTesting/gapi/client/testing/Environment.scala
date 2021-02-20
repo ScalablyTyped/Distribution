@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Environment extends js.Object {
+trait Environment extends StObject {
   
   /** An Android device which must be used with an Android test. */
   var androidDevice: js.UndefOr[AndroidDevice] = js.native
@@ -22,30 +23,18 @@ object Environment {
   }
   
   @scala.inline
-  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+  implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidDevice(value: AndroidDevice): Self = StObject.set(x, "androidDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidDeviceUndefined: Self = StObject.set(x, "androidDevice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIosDevice(value: IosDevice): Self = StObject.set(x, "iosDevice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidDevice(value: AndroidDevice): Self = this.set("androidDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroidDevice: Self = this.set("androidDevice", js.undefined)
-    
-    @scala.inline
-    def setIosDevice(value: IosDevice): Self = this.set("iosDevice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIosDevice: Self = this.set("iosDevice", js.undefined)
+    def setIosDeviceUndefined: Self = StObject.set(x, "iosDevice", js.undefined)
   }
 }

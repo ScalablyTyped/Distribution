@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RouteResultProperties extends js.Object {
+trait RouteResultProperties extends StObject {
   
   /**
     * Route directions are returned if `RouteParameters.returnDirections = true`.
@@ -44,45 +45,33 @@ object RouteResultProperties {
   }
   
   @scala.inline
-  implicit class RouteResultPropertiesOps[Self <: RouteResultProperties] (val x: Self) extends AnyVal {
+  implicit class RouteResultPropertiesMutableBuilder[Self <: RouteResultProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirections(value: DirectionsFeatureSetProperties): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoute(value: GraphicProperties): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirections(value: DirectionsFeatureSetProperties): Self = this.set("directions", value.asInstanceOf[js.Any])
+    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirections: Self = this.set("directions", js.undefined)
+    def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
     
     @scala.inline
-    def setRoute(value: GraphicProperties): Self = this.set("route", value.asInstanceOf[js.Any])
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
+    def setStops(value: js.Array[GraphicProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteName(value: String): Self = this.set("routeName", value.asInstanceOf[js.Any])
+    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
     @scala.inline
-    def deleteRouteName: Self = this.set("routeName", js.undefined)
-    
-    @scala.inline
-    def setStopsVarargs(value: GraphicProperties*): Self = this.set("stops", js.Array(value :_*))
-    
-    @scala.inline
-    def setStops(value: js.Array[GraphicProperties]): Self = this.set("stops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStops: Self = this.set("stops", js.undefined)
+    def setStopsVarargs(value: GraphicProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedShapeOptions extends js.Object {
+trait SharedShapeOptions extends StObject {
   
   var angle: js.UndefOr[Double] = js.native
   
@@ -28,54 +29,42 @@ object SharedShapeOptions {
   }
   
   @scala.inline
-  implicit class SharedShapeOptionsOps[Self <: SharedShapeOptions] (val x: Self) extends AnyVal {
+  implicit class SharedShapeOptionsMutableBuilder[Self <: SharedShapeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCollisionGroup(value: Double): Self = StObject.set(x, "collisionGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    def setCollisionGroupUndefined: Self = StObject.set(x, "collisionGroup", js.undefined)
     
     @scala.inline
-    def deleteAngle: Self = this.set("angle", js.undefined)
+    def setCollisionMask(value: Double): Self = StObject.set(x, "collisionMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionGroup(value: Double): Self = this.set("collisionGroup", value.asInstanceOf[js.Any])
+    def setCollisionMaskUndefined: Self = StObject.set(x, "collisionMask", js.undefined)
     
     @scala.inline
-    def deleteCollisionGroup: Self = this.set("collisionGroup", js.undefined)
+    def setCollisionResponse(value: Boolean): Self = StObject.set(x, "collisionResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionMask(value: Double): Self = this.set("collisionMask", value.asInstanceOf[js.Any])
+    def setCollisionResponseUndefined: Self = StObject.set(x, "collisionResponse", js.undefined)
     
     @scala.inline
-    def deleteCollisionMask: Self = this.set("collisionMask", js.undefined)
+    def setPosition(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollisionResponse(value: Boolean): Self = this.set("collisionResponse", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteCollisionResponse: Self = this.set("collisionResponse", js.undefined)
+    def setSensor(value: Boolean): Self = StObject.set(x, "sensor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: js.Tuple2[Double, Double]): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setSensor(value: Boolean): Self = this.set("sensor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensor: Self = this.set("sensor", js.undefined)
+    def setSensorUndefined: Self = StObject.set(x, "sensor", js.undefined)
   }
 }

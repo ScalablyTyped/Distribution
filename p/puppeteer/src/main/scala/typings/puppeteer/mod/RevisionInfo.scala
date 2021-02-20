@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevisionInfo extends js.Object {
+trait RevisionInfo extends StObject {
   
   /** Path to the revision executable */
   var executablePath: String = js.native
@@ -40,36 +41,24 @@ object RevisionInfo {
   }
   
   @scala.inline
-  implicit class RevisionInfoOps[Self <: RevisionInfo] (val x: Self) extends AnyVal {
+  implicit class RevisionInfoMutableBuilder[Self <: RevisionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFolderPath(value: String): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutablePath(value: String): Self = this.set("executablePath", value.asInstanceOf[js.Any])
+    def setProduct(value: Product_): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderPath(value: String): Self = this.set("folderPath", value.asInstanceOf[js.Any])
+    def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProduct(value: Product_): Self = this.set("product", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRevision(value: String): Self = this.set("revision", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

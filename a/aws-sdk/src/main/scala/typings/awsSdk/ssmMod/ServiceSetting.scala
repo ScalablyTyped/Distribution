@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceSetting extends js.Object {
+trait ServiceSetting extends StObject {
   
   /**
     * The ARN of the service setting.
@@ -46,54 +47,42 @@ object ServiceSetting {
   }
   
   @scala.inline
-  implicit class ServiceSettingOps[Self <: ServiceSetting] (val x: Self) extends AnyVal {
+  implicit class ServiceSettingMutableBuilder[Self <: ServiceSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def deleteARN: Self = this.set("ARN", js.undefined)
+    def setLastModifiedUser(value: String): Self = StObject.set(x, "LastModifiedUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDate(value: DateTime): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setLastModifiedUserUndefined: Self = StObject.set(x, "LastModifiedUser", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedUser(value: String): Self = this.set("LastModifiedUser", value.asInstanceOf[js.Any])
+    def setSettingIdUndefined: Self = StObject.set(x, "SettingId", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedUser: Self = this.set("LastModifiedUser", js.undefined)
+    def setSettingValue(value: ServiceSettingValue): Self = StObject.set(x, "SettingValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingId(value: ServiceSettingId): Self = this.set("SettingId", value.asInstanceOf[js.Any])
+    def setSettingValueUndefined: Self = StObject.set(x, "SettingValue", js.undefined)
     
     @scala.inline
-    def deleteSettingId: Self = this.set("SettingId", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSettingValue(value: ServiceSettingValue): Self = this.set("SettingValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSettingValue: Self = this.set("SettingValue", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

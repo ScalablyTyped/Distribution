@@ -1,6 +1,7 @@
 package typings.cookieclicker.Game
 
 import typings.cookieclicker.CanvasRenderingContext2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,80 +41,68 @@ object BaselessArt {
   }
   
   @scala.inline
-  implicit class BaselessArtOps[Self <: BaselessArt] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBgFunction2(value: (/* building */ GameObject, /* ctx */ CanvasRenderingContext2D) => Unit): Self = this.set("bg", js.Any.fromFunction2(value))
+  implicit class BaselessArtMutableBuilder[Self <: BaselessArt] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setBg(
       value: String | (js.Function2[/* building */ GameObject, /* ctx */ CanvasRenderingContext2D, Unit])
-    ): Self = this.set("bg", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicFunction2(value: (/* building */ GameObject, /* i */ Double) => String): Self = this.set("pic", js.Any.fromFunction2(value))
+    def setBgFunction2(value: (/* building */ GameObject, /* ctx */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "bg", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPic(value: String | (js.Function2[/* building */ GameObject, /* i */ Double, String])): Self = this.set("pic", value.asInstanceOf[js.Any])
+    def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrames(value: Double): Self = this.set("frames", value.asInstanceOf[js.Any])
+    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
     @scala.inline
-    def deleteFrames: Self = this.set("frames", js.undefined)
+    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH(value: Double): Self = this.set("h", value.asInstanceOf[js.Any])
+    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
     @scala.inline
-    def deleteH: Self = this.set("h", js.undefined)
+    def setPic(value: String | (js.Function2[/* building */ GameObject, /* i */ Double, String])): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setPicFunction2(value: (/* building */ GameObject, /* i */ Double) => String): Self = StObject.set(x, "pic", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: Double): Self = this.set("w", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteW: Self = this.set("w", js.undefined)
+    def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXV(value: Double): Self = this.set("xV", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteXV: Self = this.set("xV", js.undefined)
+    def setXV(value: Double): Self = StObject.set(x, "xV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    def setXVUndefined: Self = StObject.set(x, "xV", js.undefined)
     
     @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setYV(value: Double): Self = this.set("yV", value.asInstanceOf[js.Any])
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     @scala.inline
-    def deleteYV: Self = this.set("yV", js.undefined)
+    def setYV(value: Double): Self = StObject.set(x, "yV", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setYVUndefined: Self = StObject.set(x, "yV", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.mendixmodelsdk.microflowsMod.microflows
 
 import typings.mendixmodelsdk.datatypesMod.datatypes.IDataType
 import typings.mendixmodelsdk.projectsMod.projects.IDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

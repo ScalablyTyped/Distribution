@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The detected anger, disgust, fear, joy, or sadness that is conveyed by the content. Emotion information can be returned for detected entities, keywords, or user-specified target phrases found in the text. */
 @js.native
-trait EmotionResult extends js.Object {
+trait EmotionResult extends StObject {
   
   /** Emotion results for the document as a whole. */
   var document: js.UndefOr[DocumentEmotionResults] = js.native
@@ -23,33 +24,21 @@ object EmotionResult {
   }
   
   @scala.inline
-  implicit class EmotionResultOps[Self <: EmotionResult] (val x: Self) extends AnyVal {
+  implicit class EmotionResultMutableBuilder[Self <: EmotionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocument(value: DocumentEmotionResults): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargets(value: js.Array[TargetedEmotionResults]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocument(value: DocumentEmotionResults): Self = this.set("document", value.asInstanceOf[js.Any])
+    def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     
     @scala.inline
-    def deleteDocument: Self = this.set("document", js.undefined)
-    
-    @scala.inline
-    def setTargetsVarargs(value: TargetedEmotionResults*): Self = this.set("targets", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargets(value: js.Array[TargetedEmotionResults]): Self = this.set("targets", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargets: Self = this.set("targets", js.undefined)
+    def setTargetsVarargs(value: TargetedEmotionResults*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

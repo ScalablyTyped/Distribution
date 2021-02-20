@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,24 +40,12 @@ object ASPxClientRadarDiagram {
   }
   
   @scala.inline
-  implicit class ASPxClientRadarDiagramOps[Self <: ASPxClientRadarDiagram] (val x: Self) extends AnyVal {
+  implicit class ASPxClientRadarDiagramMutableBuilder[Self <: ASPxClientRadarDiagram] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagramToPoint(value: (js.Any, js.Any) => ASPxClientControlCoordinates): Self = StObject.set(x, "DiagramToPoint", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDiagramToPoint(value: (js.Any, js.Any) => ASPxClientControlCoordinates): Self = this.set("DiagramToPoint", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = this.set("PointToDiagram", js.Any.fromFunction2(value))
+    def setPointToDiagram(value: (Double, Double) => ASPxClientDiagramCoordinates): Self = StObject.set(x, "PointToDiagram", js.Any.fromFunction2(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/DeleteItemInput", JSImport.Namespace)
-@js.native
-object deleteItemInputMod extends js.Object {
+object deleteItemInputMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/DeleteItemInput", "DeleteItemInput")
+  @js.native
   val DeleteItemInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

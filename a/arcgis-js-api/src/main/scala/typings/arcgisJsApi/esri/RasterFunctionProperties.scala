@@ -14,12 +14,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.u32
 import typings.arcgisJsApi.arcgisJsApiStrings.u4
 import typings.arcgisJsApi.arcgisJsApiStrings.u8
 import typings.arcgisJsApi.arcgisJsApiStrings.unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RasterFunctionProperties extends js.Object {
+trait RasterFunctionProperties extends StObject {
   
   /**
     * The arguments for the raster function.
@@ -60,42 +61,30 @@ object RasterFunctionProperties {
   }
   
   @scala.inline
-  implicit class RasterFunctionPropertiesOps[Self <: RasterFunctionProperties] (val x: Self) extends AnyVal {
+  implicit class RasterFunctionPropertiesMutableBuilder[Self <: RasterFunctionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFunctionArguments(value: js.Any): Self = StObject.set(x, "functionArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFunctionArgumentsUndefined: Self = StObject.set(x, "functionArguments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionArguments(value: js.Any): Self = this.set("functionArguments", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     @scala.inline
-    def deleteFunctionArguments: Self = this.set("functionArguments", js.undefined)
+    def setOutputPixelType(value: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown): Self = StObject.set(x, "outputPixelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    def setOutputPixelTypeUndefined: Self = StObject.set(x, "outputPixelType", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputPixelType(value: c128 | c64 | f32 | f64 | s16 | s32 | s8 | u1 | u16 | u2 | u32 | u4 | u8 | unknown): Self = this.set("outputPixelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputPixelType: Self = this.set("outputPixelType", js.undefined)
-    
-    @scala.inline
-    def setVariableName(value: String): Self = this.set("variableName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariableName: Self = this.set("variableName", js.undefined)
+    def setVariableNameUndefined: Self = StObject.set(x, "variableName", js.undefined)
   }
 }

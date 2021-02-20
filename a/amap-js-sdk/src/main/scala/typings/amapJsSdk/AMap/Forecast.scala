@@ -1,11 +1,12 @@
 package typings.amapJsSdk.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Forecast extends js.Object {
+trait Forecast extends StObject {
   
   var date: String = js.native
   
@@ -47,48 +48,36 @@ object Forecast {
   }
   
   @scala.inline
-  implicit class ForecastOps[Self <: Forecast] (val x: Self) extends AnyVal {
+  implicit class ForecastMutableBuilder[Self <: Forecast] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayTemp(value: Double): Self = StObject.set(x, "dayTemp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayWeather(value: String): Self = StObject.set(x, "dayWeather", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDayWindDir(value: String): Self = StObject.set(x, "dayWindDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayTemp(value: Double): Self = this.set("dayTemp", value.asInstanceOf[js.Any])
+    def setDayWindPower(value: String): Self = StObject.set(x, "dayWindPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayWeather(value: String): Self = this.set("dayWeather", value.asInstanceOf[js.Any])
+    def setNightTemp(value: Double): Self = StObject.set(x, "nightTemp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayWindDir(value: String): Self = this.set("dayWindDir", value.asInstanceOf[js.Any])
+    def setNightWeather(value: String): Self = StObject.set(x, "nightWeather", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayWindPower(value: String): Self = this.set("dayWindPower", value.asInstanceOf[js.Any])
+    def setNightWindDir(value: String): Self = StObject.set(x, "nightWindDir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNightTemp(value: Double): Self = this.set("nightTemp", value.asInstanceOf[js.Any])
+    def setNightWindPower(value: String): Self = StObject.set(x, "nightWindPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNightWeather(value: String): Self = this.set("nightWeather", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNightWindDir(value: String): Self = this.set("nightWindDir", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNightWindPower(value: String): Self = this.set("nightWindPower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeek(value: String): Self = this.set("week", value.asInstanceOf[js.Any])
+    def setWeek(value: String): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
   }
 }

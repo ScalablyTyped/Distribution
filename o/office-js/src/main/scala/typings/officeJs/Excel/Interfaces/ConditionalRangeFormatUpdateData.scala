@@ -1,12 +1,13 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ... })`. */
 @js.native
-trait ConditionalRangeFormatUpdateData extends js.Object {
+trait ConditionalRangeFormatUpdateData extends StObject {
   
   /**
     *
@@ -49,42 +50,30 @@ object ConditionalRangeFormatUpdateData {
   }
   
   @scala.inline
-  implicit class ConditionalRangeFormatUpdateDataOps[Self <: ConditionalRangeFormatUpdateData] (val x: Self) extends AnyVal {
+  implicit class ConditionalRangeFormatUpdateDataMutableBuilder[Self <: ConditionalRangeFormatUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorders(value: ConditionalRangeBorderCollectionUpdateData): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFill(value: ConditionalRangeFillUpdateData): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: ConditionalRangeBorderCollectionUpdateData): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setFont(value: ConditionalRangeFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: ConditionalRangeFillUpdateData): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setNumberFormat(value: js.Any): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: ConditionalRangeFontUpdateData): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
-    
-    @scala.inline
-    def setNumberFormat(value: js.Any): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullSymbolBinder extends js.Object {
+trait PullSymbolBinder extends StObject {
   
   /* private */ def bindAllDeclsToPullSymbol(askedDecl: js.Any): js.Any = js.native
   
@@ -134,135 +135,123 @@ object PullSymbolBinder {
   }
   
   @scala.inline
-  implicit class PullSymbolBinderOps[Self <: PullSymbolBinder] (val x: Self) extends AnyVal {
+  implicit class PullSymbolBinderMutableBuilder[Self <: PullSymbolBinder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindAllDeclsToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindAllDeclsToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindCallSignatureDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindCallSignatureDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindCatchVariableToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindCatchVariableToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindAllDeclsToPullSymbol(value: js.Any => js.Any): Self = this.set("bindAllDeclsToPullSymbol", js.Any.fromFunction1(value))
+    def setBindClassDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindClassDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindCallSignatureDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindCallSignatureDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindConstructSignatureDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindConstructSignatureDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindCatchVariableToPullSymbol(value: js.Any => js.Any): Self = this.set("bindCatchVariableToPullSymbol", js.Any.fromFunction1(value))
+    def setBindConstructorDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindConstructorDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindClassDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindClassDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindConstructorTypeDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindConstructorTypeDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindConstructSignatureDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindConstructSignatureDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindDeclToPullSymbol(value: PullDecl => Unit): Self = StObject.set(x, "bindDeclToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindConstructorDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindConstructorDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindEnumDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindEnumDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindConstructorTypeDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindConstructorTypeDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindEnumIndexerDeclsToPullSymbols(value: js.Any => js.Any): Self = StObject.set(x, "bindEnumIndexerDeclsToPullSymbols", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindDeclToPullSymbol(value: PullDecl => Unit): Self = this.set("bindDeclToPullSymbol", js.Any.fromFunction1(value))
+    def setBindEnumMemberDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindEnumMemberDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindEnumDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindEnumDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindFunctionDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindFunctionDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindEnumIndexerDeclsToPullSymbols(value: js.Any => js.Any): Self = this.set("bindEnumIndexerDeclsToPullSymbols", js.Any.fromFunction1(value))
+    def setBindFunctionExpressionToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindFunctionExpressionToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindEnumMemberDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindEnumMemberDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindFunctionTypeDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindFunctionTypeDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindFunctionDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindFunctionDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindGetAccessorDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindGetAccessorDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindFunctionExpressionToPullSymbol(value: js.Any => js.Any): Self = this.set("bindFunctionExpressionToPullSymbol", js.Any.fromFunction1(value))
+    def setBindImportDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "bindImportDeclaration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindFunctionTypeDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindFunctionTypeDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindIndexSignatureDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindIndexSignatureDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindGetAccessorDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindGetAccessorDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindInterfaceDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindInterfaceDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindImportDeclaration(value: js.Any => js.Any): Self = this.set("bindImportDeclaration", js.Any.fromFunction1(value))
+    def setBindMethodDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindMethodDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindIndexSignatureDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindIndexSignatureDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindModuleDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindModuleDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindInterfaceDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindInterfaceDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindObjectTypeDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindObjectTypeDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindMethodDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindMethodDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindParameterSymbols(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "bindParameterSymbols", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setBindModuleDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindModuleDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindPropertyDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindPropertyDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindObjectTypeDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindObjectTypeDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindSetAccessorDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindSetAccessorDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindParameterSymbols(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = this.set("bindParameterSymbols", js.Any.fromFunction4(value))
+    def setBindSingleDeclToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindSingleDeclToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindPropertyDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindPropertyDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindStaticPrototypePropertyOfClass(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "bindStaticPrototypePropertyOfClass", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBindSetAccessorDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindSetAccessorDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setBindVariableDeclarationToPullSymbol(value: js.Any => js.Any): Self = StObject.set(x, "bindVariableDeclarationToPullSymbol", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBindSingleDeclToPullSymbol(value: js.Any => js.Any): Self = this.set("bindSingleDeclToPullSymbol", js.Any.fromFunction1(value))
+    def setCheckThatExportsMatch(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "checkThatExportsMatch", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setBindStaticPrototypePropertyOfClass(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("bindStaticPrototypePropertyOfClass", js.Any.fromFunction3(value))
+    def setDeclsBeingBound(value: js.Any): Self = StObject.set(x, "declsBeingBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindVariableDeclarationToPullSymbol(value: js.Any => js.Any): Self = this.set("bindVariableDeclarationToPullSymbol", js.Any.fromFunction1(value))
+    def setEnsurePriorDeclarationsAreBound(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "ensurePriorDeclarationsAreBound", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCheckThatExportsMatch(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("checkThatExportsMatch", js.Any.fromFunction3(value))
+    def setFindDeclsInContext(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "findDeclsInContext", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDeclsBeingBound(value: js.Any): Self = this.set("declsBeingBound", value.asInstanceOf[js.Any])
+    def setFindExistingVariableSymbolForModuleValueDecl(value: js.Any => js.Any): Self = StObject.set(x, "findExistingVariableSymbolForModuleValueDecl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnsurePriorDeclarationsAreBound(value: (js.Any, js.Any) => js.Any): Self = this.set("ensurePriorDeclarationsAreBound", js.Any.fromFunction2(value))
+    def setGetDeclsToBind(value: js.Any => js.Any): Self = StObject.set(x, "getDeclsToBind", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindDeclsInContext(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("findDeclsInContext", js.Any.fromFunction3(value))
+    def setGetExistingSymbol(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "getExistingSymbol", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setFindExistingVariableSymbolForModuleValueDecl(value: js.Any => js.Any): Self = this.set("findExistingVariableSymbolForModuleValueDecl", js.Any.fromFunction1(value))
+    def setGetIndexForInsertingSignatureAtEndOfEnclosingDeclInSignatureList(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getIndexForInsertingSignatureAtEndOfEnclosingDeclInSignatureList", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDeclsToBind(value: js.Any => js.Any): Self = this.set("getDeclsToBind", js.Any.fromFunction1(value))
+    def setGetParent(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "getParent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetExistingSymbol(value: (js.Any, js.Any, js.Any) => js.Any): Self = this.set("getExistingSymbol", js.Any.fromFunction3(value))
+    def setInBindingOtherDeclsWalker(value: js.Any): Self = StObject.set(x, "inBindingOtherDeclsWalker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetIndexForInsertingSignatureAtEndOfEnclosingDeclInSignatureList(value: (js.Any, js.Any) => js.Any): Self = this.set("getIndexForInsertingSignatureAtEndOfEnclosingDeclInSignatureList", js.Any.fromFunction2(value))
+    def setSemanticInfoChain(value: js.Any): Self = StObject.set(x, "semanticInfoChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetParent(value: (js.Any, js.Any) => js.Any): Self = this.set("getParent", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setInBindingOtherDeclsWalker(value: js.Any): Self = this.set("inBindingOtherDeclsWalker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSemanticInfoChain(value: js.Any): Self = this.set("semanticInfoChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldBindDeclaration(value: js.Any => js.Any): Self = this.set("shouldBindDeclaration", js.Any.fromFunction1(value))
+    def setShouldBindDeclaration(value: js.Any => js.Any): Self = StObject.set(x, "shouldBindDeclaration", js.Any.fromFunction1(value))
   }
 }

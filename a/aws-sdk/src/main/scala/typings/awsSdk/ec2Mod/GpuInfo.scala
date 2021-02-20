@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GpuInfo extends js.Object {
+trait GpuInfo extends StObject {
   
   /**
     * Describes the GPU accelerators for the instance type.
@@ -26,33 +27,21 @@ object GpuInfo {
   }
   
   @scala.inline
-  implicit class GpuInfoOps[Self <: GpuInfo] (val x: Self) extends AnyVal {
+  implicit class GpuInfoMutableBuilder[Self <: GpuInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGpus(value: GpuDeviceInfoList): Self = StObject.set(x, "Gpus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGpusUndefined: Self = StObject.set(x, "Gpus", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGpusVarargs(value: GpuDeviceInfo*): Self = StObject.set(x, "Gpus", js.Array(value :_*))
     
     @scala.inline
-    def setGpusVarargs(value: GpuDeviceInfo*): Self = this.set("Gpus", js.Array(value :_*))
+    def setTotalGpuMemoryInMiB(value: totalGpuMemory): Self = StObject.set(x, "TotalGpuMemoryInMiB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGpus(value: GpuDeviceInfoList): Self = this.set("Gpus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGpus: Self = this.set("Gpus", js.undefined)
-    
-    @scala.inline
-    def setTotalGpuMemoryInMiB(value: totalGpuMemory): Self = this.set("TotalGpuMemoryInMiB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalGpuMemoryInMiB: Self = this.set("TotalGpuMemoryInMiB", js.undefined)
+    def setTotalGpuMemoryInMiBUndefined: Self = StObject.set(x, "TotalGpuMemoryInMiB", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHistogramsResponse extends js.Object {
+trait GetHistogramsResponse extends StObject {
   
   /**
     * Histograms.
@@ -21,24 +22,12 @@ object GetHistogramsResponse {
   }
   
   @scala.inline
-  implicit class GetHistogramsResponseOps[Self <: GetHistogramsResponse] (val x: Self) extends AnyVal {
+  implicit class GetHistogramsResponseMutableBuilder[Self <: GetHistogramsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHistograms(value: js.Array[Histogram]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHistogramsVarargs(value: Histogram*): Self = this.set("histograms", js.Array(value :_*))
-    
-    @scala.inline
-    def setHistograms(value: js.Array[Histogram]): Self = this.set("histograms", value.asInstanceOf[js.Any])
+    def setHistogramsVarargs(value: Histogram*): Self = StObject.set(x, "histograms", js.Array(value :_*))
   }
 }

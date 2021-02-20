@@ -1,6 +1,7 @@
 package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,33 +28,21 @@ object FiveRatingSet {
   }
   
   @scala.inline
-  implicit class FiveRatingSetOps[Self <: FiveRatingSet] (val x: Self) extends AnyVal {
+  implicit class FiveRatingSetMutableBuilder[Self <: FiveRatingSet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFourBars(value: Icon): Self = StObject.set(x, "fourBars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNoBars(value: Icon): Self = StObject.set(x, "noBars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOneBar(value: Icon): Self = StObject.set(x, "oneBar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFourBars(value: Icon): Self = this.set("fourBars", value.asInstanceOf[js.Any])
+    def setThreeBars(value: Icon): Self = StObject.set(x, "threeBars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoBars(value: Icon): Self = this.set("noBars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOneBar(value: Icon): Self = this.set("oneBar", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setThreeBars(value: Icon): Self = this.set("threeBars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwoBars(value: Icon): Self = this.set("twoBars", value.asInstanceOf[js.Any])
+    def setTwoBars(value: Icon): Self = StObject.set(x, "twoBars", value.asInstanceOf[js.Any])
   }
 }

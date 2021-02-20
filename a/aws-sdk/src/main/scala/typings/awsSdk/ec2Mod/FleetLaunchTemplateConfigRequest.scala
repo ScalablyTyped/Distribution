@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FleetLaunchTemplateConfigRequest extends js.Object {
+trait FleetLaunchTemplateConfigRequest extends StObject {
   
   /**
     * The launch template to use. You must specify either the launch template ID or launch template name in the request. 
@@ -26,33 +27,21 @@ object FleetLaunchTemplateConfigRequest {
   }
   
   @scala.inline
-  implicit class FleetLaunchTemplateConfigRequestOps[Self <: FleetLaunchTemplateConfigRequest] (val x: Self) extends AnyVal {
+  implicit class FleetLaunchTemplateConfigRequestMutableBuilder[Self <: FleetLaunchTemplateConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLaunchTemplateSpecification(value: FleetLaunchTemplateSpecificationRequest): Self = StObject.set(x, "LaunchTemplateSpecification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLaunchTemplateSpecificationUndefined: Self = StObject.set(x, "LaunchTemplateSpecification", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOverrides(value: FleetLaunchTemplateOverridesListRequest): Self = StObject.set(x, "Overrides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLaunchTemplateSpecification(value: FleetLaunchTemplateSpecificationRequest): Self = this.set("LaunchTemplateSpecification", value.asInstanceOf[js.Any])
+    def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
     
     @scala.inline
-    def deleteLaunchTemplateSpecification: Self = this.set("LaunchTemplateSpecification", js.undefined)
-    
-    @scala.inline
-    def setOverridesVarargs(value: FleetLaunchTemplateOverridesRequest*): Self = this.set("Overrides", js.Array(value :_*))
-    
-    @scala.inline
-    def setOverrides(value: FleetLaunchTemplateOverridesListRequest): Self = this.set("Overrides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverrides: Self = this.set("Overrides", js.undefined)
+    def setOverridesVarargs(value: FleetLaunchTemplateOverridesRequest*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
   }
 }

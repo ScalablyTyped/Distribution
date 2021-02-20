@@ -5,16 +5,16 @@ import typings.agGrid.groupCellRendererMod.GroupCellRendererParams
 import typings.agGrid.iCellRendererMod.ICellRendererComp
 import typings.agGrid.utilsMod.Promise
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/cellRendererService", JSImport.Namespace)
-@js.native
-object cellRendererServiceMod extends js.Object {
+object cellRendererServiceMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/cellRendererService", "CellRendererService")
   @js.native
-  class CellRendererService () extends js.Object {
+  class CellRendererService () extends StObject {
     
     def bindToHtml(cellRendererPromise: Promise[ICellRendererComp], eTarget: HTMLElement): Promise[ICellRendererComp] = js.native
     

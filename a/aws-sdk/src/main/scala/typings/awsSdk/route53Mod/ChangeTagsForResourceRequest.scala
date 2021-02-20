@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeTagsForResourceRequest extends js.Object {
+trait ChangeTagsForResourceRequest extends StObject {
   
   /**
     * A complex type that contains a list of the tags that you want to add to the specified health check or hosted zone and/or the tags that you want to edit Value for. You can add a maximum of 10 tags to a health check or a hosted zone.
@@ -36,42 +37,30 @@ object ChangeTagsForResourceRequest {
   }
   
   @scala.inline
-  implicit class ChangeTagsForResourceRequestOps[Self <: ChangeTagsForResourceRequest] (val x: Self) extends AnyVal {
+  implicit class ChangeTagsForResourceRequestMutableBuilder[Self <: ChangeTagsForResourceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTags(value: TagList): Self = StObject.set(x, "AddTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddTagsUndefined: Self = StObject.set(x, "AddTags", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddTagsVarargs(value: Tag*): Self = StObject.set(x, "AddTags", js.Array(value :_*))
     
     @scala.inline
-    def setResourceId(value: TagResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    def setRemoveTagKeys(value: TagKeyList): Self = StObject.set(x, "RemoveTagKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: TagResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setRemoveTagKeysUndefined: Self = StObject.set(x, "RemoveTagKeys", js.undefined)
     
     @scala.inline
-    def setAddTagsVarargs(value: Tag*): Self = this.set("AddTags", js.Array(value :_*))
+    def setRemoveTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "RemoveTagKeys", js.Array(value :_*))
     
     @scala.inline
-    def setAddTags(value: TagList): Self = this.set("AddTags", value.asInstanceOf[js.Any])
+    def setResourceId(value: TagResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddTags: Self = this.set("AddTags", js.undefined)
-    
-    @scala.inline
-    def setRemoveTagKeysVarargs(value: TagKey*): Self = this.set("RemoveTagKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemoveTagKeys(value: TagKeyList): Self = this.set("RemoveTagKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveTagKeys: Self = this.set("RemoveTagKeys", js.undefined)
+    def setResourceType(value: TagResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }
 }

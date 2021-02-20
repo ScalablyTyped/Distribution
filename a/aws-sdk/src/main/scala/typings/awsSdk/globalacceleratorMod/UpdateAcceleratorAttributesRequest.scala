@@ -1,11 +1,12 @@
 package typings.awsSdk.globalacceleratorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAcceleratorAttributesRequest extends js.Object {
+trait UpdateAcceleratorAttributesRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the accelerator that you want to update.
@@ -36,39 +37,27 @@ object UpdateAcceleratorAttributesRequest {
   }
   
   @scala.inline
-  implicit class UpdateAcceleratorAttributesRequestOps[Self <: UpdateAcceleratorAttributesRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAcceleratorAttributesRequestMutableBuilder[Self <: UpdateAcceleratorAttributesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlowLogsEnabled(value: GenericBoolean): Self = StObject.set(x, "FlowLogsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFlowLogsEnabledUndefined: Self = StObject.set(x, "FlowLogsEnabled", js.undefined)
     
     @scala.inline
-    def setAcceleratorArn(value: GenericString): Self = this.set("AcceleratorArn", value.asInstanceOf[js.Any])
+    def setFlowLogsS3Bucket(value: GenericString): Self = StObject.set(x, "FlowLogsS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowLogsEnabled(value: GenericBoolean): Self = this.set("FlowLogsEnabled", value.asInstanceOf[js.Any])
+    def setFlowLogsS3BucketUndefined: Self = StObject.set(x, "FlowLogsS3Bucket", js.undefined)
     
     @scala.inline
-    def deleteFlowLogsEnabled: Self = this.set("FlowLogsEnabled", js.undefined)
+    def setFlowLogsS3Prefix(value: GenericString): Self = StObject.set(x, "FlowLogsS3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlowLogsS3Bucket(value: GenericString): Self = this.set("FlowLogsS3Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowLogsS3Bucket: Self = this.set("FlowLogsS3Bucket", js.undefined)
-    
-    @scala.inline
-    def setFlowLogsS3Prefix(value: GenericString): Self = this.set("FlowLogsS3Prefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFlowLogsS3Prefix: Self = this.set("FlowLogsS3Prefix", js.undefined)
+    def setFlowLogsS3PrefixUndefined: Self = StObject.set(x, "FlowLogsS3Prefix", js.undefined)
   }
 }

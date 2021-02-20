@@ -1,5 +1,6 @@
 package typings.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.natsHemera.natsHemeraStrings.trace
   - typings.natsHemera.natsHemeraStrings.silent
 */
-trait LogLevel extends js.Object
+trait LogLevel extends StObject
 object LogLevel {
   
   @scala.inline

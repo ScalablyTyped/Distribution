@@ -4,12 +4,13 @@ import typings.ariClient.anon.Body
 import typings.ariClient.anon.From
 import typings.ariClient.anon.Tech
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Endpoints extends js.Object {
+trait Endpoints extends StObject {
   
   /**
     * Details for an endpoint.

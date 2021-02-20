@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalResult extends js.Object {
+trait LocalResult extends StObject {
   
   var bounds: Bounds = js.native
   
@@ -59,63 +60,51 @@ object LocalResult {
   }
   
   @scala.inline
-  implicit class LocalResultOps[Self <: LocalResult] (val x: Self) extends AnyVal {
+  implicit class LocalResultMutableBuilder[Self <: LocalResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenter(value: LocalResultPoi): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounds(value: Bounds): Self = this.set("bounds", value.asInstanceOf[js.Any])
+    def setGetCityList(value: () => js.Array[_]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCenter(value: LocalResultPoi): Self = this.set("center", value.asInstanceOf[js.Any])
+    def setGetCurrentNumPois(value: () => Double): Self = StObject.set(x, "getCurrentNumPois", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setGetNumPages(value: () => Double): Self = StObject.set(x, "getNumPages", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCityList(value: () => js.Array[_]): Self = this.set("getCityList", js.Any.fromFunction0(value))
+    def setGetNumPois(value: () => Double): Self = StObject.set(x, "getNumPois", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentNumPois(value: () => Double): Self = this.set("getCurrentNumPois", js.Any.fromFunction0(value))
+    def setGetPageIndex(value: () => Double): Self = StObject.set(x, "getPageIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetNumPages(value: () => Double): Self = this.set("getNumPages", js.Any.fromFunction0(value))
+    def setGetPoi(value: Double => LocalResultPoi): Self = StObject.set(x, "getPoi", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNumPois(value: () => Double): Self = this.set("getNumPois", js.Any.fromFunction0(value))
+    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPageIndex(value: () => Double): Self = this.set("getPageIndex", js.Any.fromFunction0(value))
+    def setMoreResultsUrl(value: String): Self = StObject.set(x, "moreResultsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetPoi(value: Double => LocalResultPoi): Self = this.set("getPoi", js.Any.fromFunction1(value))
+    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyword(value: String): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreResultsUrl(value: String): Self = this.set("moreResultsUrl", value.asInstanceOf[js.Any])
+    def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuggestionsVarargs(value: String*): Self = this.set("suggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestions(value: js.Array[String]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs.materialsIndexMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Materials/index", "InternalTextureSource")
 @js.native
-object InternalTextureSource extends js.Object {
+object InternalTextureSource extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.internalTextureMod.InternalTextureSource with Double] = js.native

@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
 import typings.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends js.Object {
+trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends StObject {
   
   /**
     * Create a new document for a given resource.
@@ -57,24 +58,12 @@ object CustomReadonlyEditorProvider {
   }
   
   @scala.inline
-  implicit class CustomReadonlyEditorProviderOps[Self <: CustomReadonlyEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomReadonlyEditorProvider[T]) extends AnyVal {
+  implicit class CustomReadonlyEditorProviderMutableBuilder[Self <: CustomReadonlyEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomReadonlyEditorProvider[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = StObject.set(x, "openCustomDocument", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = this.set("openCustomDocument", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setResolveCustomEditor(value: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = this.set("resolveCustomEditor", js.Any.fromFunction3(value))
+    def setResolveCustomEditor(value: (T, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveCustomEditor", js.Any.fromFunction3(value))
   }
 }

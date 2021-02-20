@@ -1,11 +1,12 @@
 package typings.jsSchema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberConstructor extends js.Object {
+trait NumberConstructor extends StObject {
   
   def above(n: Double): NumberConstructor = js.native
   
@@ -32,33 +33,21 @@ object NumberConstructor {
   }
   
   @scala.inline
-  implicit class NumberConstructorOps[Self <: NumberConstructor] (val x: Self) extends AnyVal {
+  implicit class NumberConstructorMutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbove(value: Double => NumberConstructor): Self = StObject.set(x, "above", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBelow(value: Double => NumberConstructor): Self = StObject.set(x, "below", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMax(value: Double => NumberConstructor): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAbove(value: Double => NumberConstructor): Self = this.set("above", js.Any.fromFunction1(value))
+    def setMin(value: Double => NumberConstructor): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBelow(value: Double => NumberConstructor): Self = this.set("below", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMax(value: Double => NumberConstructor): Self = this.set("max", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setMin(value: Double => NumberConstructor): Self = this.set("min", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStep(value: Double => NumberConstructor): Self = this.set("step", js.Any.fromFunction1(value))
+    def setStep(value: Double => NumberConstructor): Self = StObject.set(x, "step", js.Any.fromFunction1(value))
   }
 }

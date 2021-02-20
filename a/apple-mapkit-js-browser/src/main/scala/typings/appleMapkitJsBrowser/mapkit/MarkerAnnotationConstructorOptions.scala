@@ -1,6 +1,7 @@
 package typings.appleMapkitJsBrowser.mapkit
 
 import typings.appleMapkitJsBrowser.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,60 +56,48 @@ object MarkerAnnotationConstructorOptions {
   }
   
   @scala.inline
-  implicit class MarkerAnnotationConstructorOptionsOps[Self <: MarkerAnnotationConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class MarkerAnnotationConstructorOptionsMutableBuilder[Self <: MarkerAnnotationConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGlyphColor(value: String): Self = StObject.set(x, "glyphColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setGlyphColorUndefined: Self = StObject.set(x, "glyphColor", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setGlyphImage(value: `1`): Self = StObject.set(x, "glyphImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphColor(value: String): Self = this.set("glyphColor", value.asInstanceOf[js.Any])
+    def setGlyphImageUndefined: Self = StObject.set(x, "glyphImage", js.undefined)
     
     @scala.inline
-    def deleteGlyphColor: Self = this.set("glyphColor", js.undefined)
+    def setGlyphText(value: String): Self = StObject.set(x, "glyphText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphImage(value: `1`): Self = this.set("glyphImage", value.asInstanceOf[js.Any])
+    def setGlyphTextUndefined: Self = StObject.set(x, "glyphText", js.undefined)
     
     @scala.inline
-    def deleteGlyphImage: Self = this.set("glyphImage", js.undefined)
+    def setSelectedGlyphImage(value: js.Object): Self = StObject.set(x, "selectedGlyphImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlyphText(value: String): Self = this.set("glyphText", value.asInstanceOf[js.Any])
+    def setSelectedGlyphImageUndefined: Self = StObject.set(x, "selectedGlyphImage", js.undefined)
     
     @scala.inline
-    def deleteGlyphText: Self = this.set("glyphText", js.undefined)
+    def setSubtitleVisibility(value: String): Self = StObject.set(x, "subtitleVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedGlyphImage(value: js.Object): Self = this.set("selectedGlyphImage", value.asInstanceOf[js.Any])
+    def setSubtitleVisibilityUndefined: Self = StObject.set(x, "subtitleVisibility", js.undefined)
     
     @scala.inline
-    def deleteSelectedGlyphImage: Self = this.set("selectedGlyphImage", js.undefined)
+    def setTitleVisibility(value: String): Self = StObject.set(x, "titleVisibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleVisibility(value: String): Self = this.set("subtitleVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubtitleVisibility: Self = this.set("subtitleVisibility", js.undefined)
-    
-    @scala.inline
-    def setTitleVisibility(value: String): Self = this.set("titleVisibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleVisibility: Self = this.set("titleVisibility", js.undefined)
+    def setTitleVisibilityUndefined: Self = StObject.set(x, "titleVisibility", js.undefined)
   }
 }

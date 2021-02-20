@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartParallelAxesResizeControlledAxisOptions extends js.Object {
+trait ChartParallelAxesResizeControlledAxisOptions extends StObject {
   
   /**
     * (Highstock) Array of axes that should move out of the way of resizing
@@ -28,36 +29,24 @@ object ChartParallelAxesResizeControlledAxisOptions {
   }
   
   @scala.inline
-  implicit class ChartParallelAxesResizeControlledAxisOptionsOps[Self <: ChartParallelAxesResizeControlledAxisOptions] (val x: Self) extends AnyVal {
+  implicit class ChartParallelAxesResizeControlledAxisOptionsMutableBuilder[Self <: ChartParallelAxesResizeControlledAxisOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNext(value: js.Array[Double | String]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextVarargs(value: (Double | String)*): Self = StObject.set(x, "next", js.Array(value :_*))
     
     @scala.inline
-    def setNextVarargs(value: (Double | String)*): Self = this.set("next", js.Array(value :_*))
+    def setPrev(value: js.Array[Double | String]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: js.Array[Double | String]): Self = this.set("next", value.asInstanceOf[js.Any])
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
-    
-    @scala.inline
-    def setPrevVarargs(value: (Double | String)*): Self = this.set("prev", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrev(value: js.Array[Double | String]): Self = this.set("prev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
+    def setPrevVarargs(value: (Double | String)*): Self = StObject.set(x, "prev", js.Array(value :_*))
   }
 }

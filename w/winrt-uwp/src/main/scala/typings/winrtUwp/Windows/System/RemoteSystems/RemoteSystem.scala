@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This class manages the attributes of a discovered remote system (device) and provides the capabilities to discover remote systems as part of Project Rome. */
 @js.native
-trait RemoteSystem extends js.Object {
+trait RemoteSystem extends StObject {
   
   /** A list of the applications on this remote system that have registered with the Connected Devices Platform. */
   var apps: IVectorView[RemoteSystemApp] = js.native
@@ -64,51 +65,39 @@ object RemoteSystem {
   }
   
   @scala.inline
-  implicit class RemoteSystemOps[Self <: RemoteSystem] (val x: Self) extends AnyVal {
+  implicit class RemoteSystemMutableBuilder[Self <: RemoteSystem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApps(value: IVectorView[RemoteSystemApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCapabilitySupportedAsync(value: String => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "getCapabilitySupportedAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApps(value: IVectorView[RemoteSystemApp]): Self = this.set("apps", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setIsAvailableByProximity(value: Boolean): Self = StObject.set(x, "isAvailableByProximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCapabilitySupportedAsync(value: String => IPromiseWithIAsyncOperation[Boolean]): Self = this.set("getCapabilitySupportedAsync", js.Any.fromFunction1(value))
+    def setIsAvailableBySpatialProximity(value: Boolean): Self = StObject.set(x, "isAvailableBySpatialProximity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAvailableByProximity(value: Boolean): Self = this.set("isAvailableByProximity", value.asInstanceOf[js.Any])
+    def setManufacturerDisplayName(value: String): Self = StObject.set(x, "manufacturerDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAvailableBySpatialProximity(value: Boolean): Self = this.set("isAvailableBySpatialProximity", value.asInstanceOf[js.Any])
+    def setModelDisplayName(value: String): Self = StObject.set(x, "modelDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPlatform(value: RemoteSystemPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManufacturerDisplayName(value: String): Self = this.set("manufacturerDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModelDisplayName(value: String): Self = this.set("modelDisplayName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlatform(value: RemoteSystemPlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: RemoteSystemStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: RemoteSystemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

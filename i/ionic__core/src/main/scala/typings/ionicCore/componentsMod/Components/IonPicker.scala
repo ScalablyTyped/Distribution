@@ -6,12 +6,13 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import typings.ionicCore.pickerInterfaceMod.PickerButton
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonPicker extends js.Object {
+trait IonPicker extends StObject {
   
   /**
     * If `true`, the picker will animate.

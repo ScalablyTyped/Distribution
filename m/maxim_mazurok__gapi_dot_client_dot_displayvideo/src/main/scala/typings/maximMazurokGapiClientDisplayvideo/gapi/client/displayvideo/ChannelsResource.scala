@@ -13,12 +13,13 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.PageToken
 import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrint
 import typings.maximMazurokGapiClientDisplayvideo.anon.UpdateMask
 import typings.maximMazurokGapiClientDisplayvideo.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelsResource extends js.Object {
+trait ChannelsResource extends StObject {
   
   /** Creates a new channel. Returns the newly created channel if successful. */
   def create(request: AccesstokenAdvertiserId): Request[Channel] = js.native

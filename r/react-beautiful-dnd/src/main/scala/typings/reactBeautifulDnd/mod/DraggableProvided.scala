@@ -1,12 +1,13 @@
 package typings.reactBeautifulDnd.mod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableProvided extends js.Object {
+trait DraggableProvided extends StObject {
   
   var dragHandleProps: js.UndefOr[DraggableProvidedDragHandleProps] = js.native
   

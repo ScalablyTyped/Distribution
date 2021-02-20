@@ -1,8 +1,9 @@
 package typings.awsSdk.worklinkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateDevicePolicyConfigurationResponse extends js.Object
+trait UpdateDevicePolicyConfigurationResponse extends StObject

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotConfiguratorMessagesFieldMenuOperators extends js.Object {
+trait PivotConfiguratorMessagesFieldMenuOperators extends StObject {
   
   var contains: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object PivotConfiguratorMessagesFieldMenuOperators {
   }
   
   @scala.inline
-  implicit class PivotConfiguratorMessagesFieldMenuOperatorsOps[Self <: PivotConfiguratorMessagesFieldMenuOperators] (val x: Self) extends AnyVal {
+  implicit class PivotConfiguratorMessagesFieldMenuOperatorsMutableBuilder[Self <: PivotConfiguratorMessagesFieldMenuOperators] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoesnotcontain(value: String): Self = StObject.set(x, "doesnotcontain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContains(value: String): Self = this.set("contains", value.asInstanceOf[js.Any])
+    def setDoesnotcontainUndefined: Self = StObject.set(x, "doesnotcontain", js.undefined)
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setEndswith(value: String): Self = StObject.set(x, "endswith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesnotcontain(value: String): Self = this.set("doesnotcontain", value.asInstanceOf[js.Any])
+    def setEndswithUndefined: Self = StObject.set(x, "endswith", js.undefined)
     
     @scala.inline
-    def deleteDoesnotcontain: Self = this.set("doesnotcontain", js.undefined)
+    def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndswith(value: String): Self = this.set("endswith", value.asInstanceOf[js.Any])
+    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
     @scala.inline
-    def deleteEndswith: Self = this.set("endswith", js.undefined)
+    def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEq(value: String): Self = this.set("eq", value.asInstanceOf[js.Any])
+    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
     
     @scala.inline
-    def deleteEq: Self = this.set("eq", js.undefined)
+    def setStartswith(value: String): Self = StObject.set(x, "startswith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeq(value: String): Self = this.set("neq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNeq: Self = this.set("neq", js.undefined)
-    
-    @scala.inline
-    def setStartswith(value: String): Self = this.set("startswith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartswith: Self = this.set("startswith", js.undefined)
+    def setStartswithUndefined: Self = StObject.set(x, "startswith", js.undefined)
   }
 }

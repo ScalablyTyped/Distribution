@@ -40,12 +40,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.RunScriptResponse
 import typings.devtoolsProtocol.mod.Protocol.Runtime.SetAsyncCallStackDepthRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.SetCustomObjectFormatterEnabledRequest
 import typings.devtoolsProtocol.mod.Protocol.Runtime.SetMaxCallStackSizeToCaptureRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuntimeApi extends js.Object {
+trait RuntimeApi extends StObject {
   
   /**
     * If executionContextId is empty, adds binding with the given name on the

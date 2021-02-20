@@ -3,12 +3,13 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoTriState
 import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.SmartArt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InlineShape extends js.Object {
+trait InlineShape extends StObject {
   
   def Activate(): Unit = js.native
   
@@ -148,144 +149,132 @@ object InlineShape {
   }
   
   @scala.inline
-  implicit class InlineShapeOps[Self <: InlineShape] (val x: Self) extends AnyVal {
+  implicit class InlineShapeMutableBuilder[Self <: InlineShape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternativeText(value: String): Self = StObject.set(x, "AlternativeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorID(value: Double): Self = StObject.set(x, "AnchorID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivate(value: () => Unit): Self = this.set("Activate", js.Any.fromFunction0(value))
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeText(value: String): Self = this.set("AlternativeText", value.asInstanceOf[js.Any])
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorID(value: Double): Self = this.set("AnchorID", value.asInstanceOf[js.Any])
+    def setChart(value: Chart): Self = StObject.set(x, "Chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setConvertToShape(value: () => Shape): Self = StObject.set(x, "ConvertToShape", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("Borders", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChart(value: Chart): Self = this.set("Chart", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConvertToShape(value: () => Shape): Self = this.set("ConvertToShape", js.Any.fromFunction0(value))
+    def setEditID(value: Double): Self = StObject.set(x, "EditID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setField(value: Field): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditID(value: Double): Self = this.set("EditID", value.asInstanceOf[js.Any])
+    def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: Field): Self = this.set("Field", value.asInstanceOf[js.Any])
+    def setGroupItems(value: GroupShapes): Self = StObject.set(x, "GroupItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: FillFormat): Self = this.set("Fill", value.asInstanceOf[js.Any])
+    def setHasChart(value: MsoTriState): Self = StObject.set(x, "HasChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlow(value: GlowFormat): Self = this.set("Glow", value.asInstanceOf[js.Any])
+    def setHasSmartArt(value: MsoTriState): Self = StObject.set(x, "HasSmartArt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupItems(value: GroupShapes): Self = this.set("GroupItems", value.asInstanceOf[js.Any])
+    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChart(value: MsoTriState): Self = this.set("HasChart", value.asInstanceOf[js.Any])
+    def setHorizontalLineFormat(value: HorizontalLineFormat): Self = StObject.set(x, "HorizontalLineFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSmartArt(value: MsoTriState): Self = this.set("HasSmartArt", value.asInstanceOf[js.Any])
+    def setHyperlink(value: Hyperlink): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    def setIsPictureBullet(value: Boolean): Self = StObject.set(x, "IsPictureBullet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalLineFormat(value: HorizontalLineFormat): Self = this.set("HorizontalLineFormat", value.asInstanceOf[js.Any])
+    def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperlink(value: Hyperlink): Self = this.set("Hyperlink", value.asInstanceOf[js.Any])
+    def setLinkFormat(value: LinkFormat): Self = StObject.set(x, "LinkFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPictureBullet(value: Boolean): Self = this.set("IsPictureBullet", value.asInstanceOf[js.Any])
+    def setLockAspectRatio(value: MsoTriState): Self = StObject.set(x, "LockAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLine(value: LineFormat): Self = this.set("Line", value.asInstanceOf[js.Any])
+    def setOLEFormat(value: OLEFormat): Self = StObject.set(x, "OLEFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkFormat(value: LinkFormat): Self = this.set("LinkFormat", value.asInstanceOf[js.Any])
+    def setOWSAnchor(value: Double): Self = StObject.set(x, "OWSAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockAspectRatio(value: MsoTriState): Self = this.set("LockAspectRatio", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOLEFormat(value: OLEFormat): Self = this.set("OLEFormat", value.asInstanceOf[js.Any])
+    def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOWSAnchor(value: Double): Self = this.set("OWSAnchor", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPictureFormat(value: PictureFormat): Self = this.set("PictureFormat", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setScaleHeight(value: Double): Self = StObject.set(x, "ScaleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReflection(value: ReflectionFormat): Self = this.set("Reflection", value.asInstanceOf[js.Any])
+    def setScaleWidth(value: Double): Self = StObject.set(x, "ScaleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    def setScript(value: Script): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleHeight(value: Double): Self = this.set("ScaleHeight", value.asInstanceOf[js.Any])
+    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScaleWidth(value: Double): Self = this.set("ScaleWidth", value.asInstanceOf[js.Any])
+    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: Script): Self = this.set("Script", value.asInstanceOf[js.Any])
+    def setSmartArt(value: SmartArt): Self = StObject.set(x, "SmartArt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    def setSoftEdge(value: SoftEdgeFormat): Self = StObject.set(x, "SoftEdge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: ShadowFormat): Self = this.set("Shadow", value.asInstanceOf[js.Any])
+    def setTextEffect(value: TextEffectFormat): Self = StObject.set(x, "TextEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmartArt(value: SmartArt): Self = this.set("SmartArt", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSoftEdge(value: SoftEdgeFormat): Self = this.set("SoftEdge", value.asInstanceOf[js.Any])
+    def setType(value: WdInlineShapeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextEffect(value: TextEffectFormat): Self = this.set("TextEffect", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: WdInlineShapeType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotInlineShape_typekey(value: InlineShape): Self = this.set("Word.InlineShape_typekey", value.asInstanceOf[js.Any])
+    def setWordDotInlineShape_typekey(value: InlineShape): Self = StObject.set(x, "Word.InlineShape_typekey", value.asInstanceOf[js.Any])
   }
 }

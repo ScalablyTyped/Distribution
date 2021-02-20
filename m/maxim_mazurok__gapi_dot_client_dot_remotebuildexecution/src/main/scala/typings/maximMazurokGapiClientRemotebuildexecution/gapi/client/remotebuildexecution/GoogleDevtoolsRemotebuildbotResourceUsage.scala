@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebuildexecution
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleDevtoolsRemotebuildbotResourceUsage extends js.Object {
+trait GoogleDevtoolsRemotebuildbotResourceUsage extends StObject {
   
   var cpuUsedPercent: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object GoogleDevtoolsRemotebuildbotResourceUsage {
   }
   
   @scala.inline
-  implicit class GoogleDevtoolsRemotebuildbotResourceUsageOps[Self <: GoogleDevtoolsRemotebuildbotResourceUsage] (val x: Self) extends AnyVal {
+  implicit class GoogleDevtoolsRemotebuildbotResourceUsageMutableBuilder[Self <: GoogleDevtoolsRemotebuildbotResourceUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuUsedPercent(value: Double): Self = StObject.set(x, "cpuUsedPercent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuUsedPercentUndefined: Self = StObject.set(x, "cpuUsedPercent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDiskUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuUsedPercent(value: Double): Self = this.set("cpuUsedPercent", value.asInstanceOf[js.Any])
+    def setDiskUsageUndefined: Self = StObject.set(x, "diskUsage", js.undefined)
     
     @scala.inline
-    def deleteCpuUsedPercent: Self = this.set("cpuUsedPercent", js.undefined)
+    def setMemoryUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = StObject.set(x, "memoryUsage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = this.set("diskUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDiskUsage: Self = this.set("diskUsage", js.undefined)
-    
-    @scala.inline
-    def setMemoryUsage(value: GoogleDevtoolsRemotebuildbotResourceUsageStat): Self = this.set("memoryUsage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemoryUsage: Self = this.set("memoryUsage", js.undefined)
+    def setMemoryUsageUndefined: Self = StObject.set(x, "memoryUsage", js.undefined)
   }
 }

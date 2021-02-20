@@ -1,11 +1,12 @@
 package typings.jsGraphAlgorithms.JsGraphs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Edge extends js.Object {
+trait Edge extends StObject {
   
   def either(): Double = js.native
   
@@ -40,45 +41,33 @@ object Edge {
   }
   
   @scala.inline
-  implicit class EdgeOps[Self <: Edge] (val x: Self) extends AnyVal {
+  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEither(value: () => Double): Self = StObject.set(x, "either", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEither(value: () => Double): Self = this.set("either", js.Any.fromFunction0(value))
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setFrom(value: () => Double): Self = this.set("from", js.Any.fromFunction0(value))
+    def setOther(value: Double => Double): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOther(value: Double => Double): Self = this.set("other", js.Any.fromFunction1(value))
+    def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTo(value: () => Double): Self = this.set("to", js.Any.fromFunction0(value))
+    def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV(value: js.Any): Self = this.set("v", value.asInstanceOf[js.Any])
+    def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setW(value: js.Any): Self = this.set("w", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

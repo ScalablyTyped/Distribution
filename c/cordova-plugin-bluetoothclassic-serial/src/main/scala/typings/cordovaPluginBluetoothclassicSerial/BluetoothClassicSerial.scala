@@ -1,11 +1,12 @@
 package typings.cordovaPluginBluetoothclassicSerial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BluetoothClassicSerial extends js.Object {
+trait BluetoothClassicSerial extends StObject {
   
   def available(interfaceId: String): Unit = js.native
   def available(

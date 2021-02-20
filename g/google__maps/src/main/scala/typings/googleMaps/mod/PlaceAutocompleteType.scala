@@ -1,5 +1,6 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.LeftparenthesisregionsRightparenthesis
   - typings.googleMaps.googleMapsStrings.LeftparenthesiscitiesRightparenthesis
 */
-trait PlaceAutocompleteType extends js.Object
+trait PlaceAutocompleteType extends StObject
 object PlaceAutocompleteType {
   
   @scala.inline

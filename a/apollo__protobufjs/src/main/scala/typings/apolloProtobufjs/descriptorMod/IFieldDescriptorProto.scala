@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.descriptorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFieldDescriptorProto extends js.Object {
+trait IFieldDescriptorProto extends StObject {
   
   var defaultValue: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object IFieldDescriptorProto {
   }
   
   @scala.inline
-  implicit class IFieldDescriptorProtoOps[Self <: IFieldDescriptorProto] (val x: Self) extends AnyVal {
+  implicit class IFieldDescriptorProtoMutableBuilder[Self <: IFieldDescriptorProto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendee(value: String): Self = StObject.set(x, "extendee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: String): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setExtendeeUndefined: Self = StObject.set(x, "extendee", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setJsonName(value: js.Any): Self = StObject.set(x, "jsonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendee(value: String): Self = this.set("extendee", value.asInstanceOf[js.Any])
+    def setJsonNameUndefined: Self = StObject.set(x, "jsonName", js.undefined)
     
     @scala.inline
-    def deleteExtendee: Self = this.set("extendee", js.undefined)
+    def setLabel(value: IFieldDescriptorProtoLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonName(value: js.Any): Self = this.set("jsonName", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteJsonName: Self = this.set("jsonName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: IFieldDescriptorProtoLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setOneofIndex(value: Double): Self = StObject.set(x, "oneofIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setOneofIndexUndefined: Self = StObject.set(x, "oneofIndex", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setOptions(value: IFieldOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneofIndex(value: Double): Self = this.set("oneofIndex", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteOneofIndex: Self = this.set("oneofIndex", js.undefined)
+    def setType(value: IFieldDescriptorProtoType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: IFieldOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
     
     @scala.inline
-    def setType(value: IFieldDescriptorProtoType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setTypeName(value: String): Self = this.set("typeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeName: Self = this.set("typeName", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

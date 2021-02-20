@@ -1,12 +1,13 @@
 package typings.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualFilters :boolean,   disableFilters :boolean,   defaultCanFilter :boolean,   filterTypes :react-table.react-table.FilterTypes<D>,   autoResetFilters :boolean | undefined}> */
 @js.native
-trait UseFiltersOptions[D /* <: js.Object */] extends js.Object {
+trait UseFiltersOptions[D /* <: js.Object */] extends StObject {
   
   var autoResetFilters: js.UndefOr[Boolean] = js.native
   
@@ -27,48 +28,36 @@ object UseFiltersOptions {
   }
   
   @scala.inline
-  implicit class UseFiltersOptionsOps[Self <: UseFiltersOptions[_], D /* <: js.Object */] (val x: Self with UseFiltersOptions[D]) extends AnyVal {
+  implicit class UseFiltersOptionsMutableBuilder[Self <: UseFiltersOptions[_], D /* <: js.Object */] (val x: Self with UseFiltersOptions[D]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoResetFilters(value: Boolean): Self = StObject.set(x, "autoResetFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoResetFiltersUndefined: Self = StObject.set(x, "autoResetFilters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultCanFilter(value: Boolean): Self = StObject.set(x, "defaultCanFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoResetFilters(value: Boolean): Self = this.set("autoResetFilters", value.asInstanceOf[js.Any])
+    def setDefaultCanFilterUndefined: Self = StObject.set(x, "defaultCanFilter", js.undefined)
     
     @scala.inline
-    def deleteAutoResetFilters: Self = this.set("autoResetFilters", js.undefined)
+    def setDisableFilters(value: Boolean): Self = StObject.set(x, "disableFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultCanFilter(value: Boolean): Self = this.set("defaultCanFilter", value.asInstanceOf[js.Any])
+    def setDisableFiltersUndefined: Self = StObject.set(x, "disableFilters", js.undefined)
     
     @scala.inline
-    def deleteDefaultCanFilter: Self = this.set("defaultCanFilter", js.undefined)
+    def setFilterTypes(value: FilterTypes[D]): Self = StObject.set(x, "filterTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableFilters(value: Boolean): Self = this.set("disableFilters", value.asInstanceOf[js.Any])
+    def setFilterTypesUndefined: Self = StObject.set(x, "filterTypes", js.undefined)
     
     @scala.inline
-    def deleteDisableFilters: Self = this.set("disableFilters", js.undefined)
+    def setManualFilters(value: Boolean): Self = StObject.set(x, "manualFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilterTypes(value: FilterTypes[D]): Self = this.set("filterTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilterTypes: Self = this.set("filterTypes", js.undefined)
-    
-    @scala.inline
-    def setManualFilters(value: Boolean): Self = this.set("manualFilters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualFilters: Self = this.set("manualFilters", js.undefined)
+    def setManualFiltersUndefined: Self = StObject.set(x, "manualFilters", js.undefined)
   }
 }

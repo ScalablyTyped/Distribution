@@ -1,5 +1,6 @@
 package typings.reactCalendarTimeline.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.month
   - typings.reactCalendarTimeline.reactCalendarTimelineStrings.year
 */
-trait Unit extends js.Object
+trait Unit extends StObject
 object Unit {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.typescriptServices.TypeScript.Services.Formatting
 
 import typings.typescriptServices.TypeScript.Services.FormatCodeOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RulesProvider extends js.Object {
+trait RulesProvider extends StObject {
   
   var activeRules: js.Any = js.native
   
@@ -48,48 +49,36 @@ object RulesProvider {
   }
   
   @scala.inline
-  implicit class RulesProviderOps[Self <: RulesProvider] (val x: Self) extends AnyVal {
+  implicit class RulesProviderMutableBuilder[Self <: RulesProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveRules(value: js.Any): Self = StObject.set(x, "activeRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateActiveRules(value: js.Any => js.Any): Self = StObject.set(x, "createActiveRules", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnsureUpToDate(value: FormatCodeOptions => Unit): Self = StObject.set(x, "ensureUpToDate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActiveRules(value: js.Any): Self = this.set("activeRules", value.asInstanceOf[js.Any])
+    def setGetRuleByName(value: String => Rule): Self = StObject.set(x, "getRuleByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateActiveRules(value: js.Any => js.Any): Self = this.set("createActiveRules", js.Any.fromFunction1(value))
+    def setGetRuleName(value: Rule => String): Self = StObject.set(x, "getRuleName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnsureUpToDate(value: FormatCodeOptions => Unit): Self = this.set("ensureUpToDate", js.Any.fromFunction1(value))
+    def setGetRulesMap(value: () => RulesMap): Self = StObject.set(x, "getRulesMap", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetRuleByName(value: String => Rule): Self = this.set("getRuleByName", js.Any.fromFunction1(value))
+    def setGlobalRules(value: js.Any): Self = StObject.set(x, "globalRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRuleName(value: Rule => String): Self = this.set("getRuleName", js.Any.fromFunction1(value))
+    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRulesMap(value: () => RulesMap): Self = this.set("getRulesMap", js.Any.fromFunction0(value))
+    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalRules(value: js.Any): Self = this.set("globalRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLogger(value: js.Any): Self = this.set("logger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRulesMap(value: js.Any): Self = this.set("rulesMap", value.asInstanceOf[js.Any])
+    def setRulesMap(value: js.Any): Self = StObject.set(x, "rulesMap", value.asInstanceOf[js.Any])
   }
 }

@@ -4,13 +4,18 @@ import typings.antvGBase.anon.Height
 import typings.antvGBase.typesMod.BBox
 import typings.antvGBase.typesMod.ShapeAttrs
 import typings.antvGBase.typesMod.ShapeCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/g-base/lib/abstract/shape", JSImport.Namespace)
-@js.native
-object shapeMod extends js.Object {
+object shapeMod {
+  
+  @JSImport("@antv/g-base/lib/abstract/shape", JSImport.Default)
+  @js.native
+  abstract class default protected () extends AbstractShape {
+    def this(cfg: ShapeCfg) = this()
+  }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.antvGBase.interfacesMod.IObservable because Already inherited
@@ -78,10 +83,5 @@ object shapeMod extends js.Object {
       * @return {Boolean} 仅仅使用 BBox 进行拾取
       */
     def isOnlyHitBox(): Boolean = js.native
-  }
-  
-  @js.native
-  abstract class default protected () extends AbstractShape {
-    def this(cfg: ShapeCfg) = this()
   }
 }

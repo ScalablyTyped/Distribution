@@ -1,11 +1,12 @@
 package typings.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHingeConstraintOptions extends js.Object {
+trait IHingeConstraintOptions extends StObject {
   
   var axisA: js.UndefOr[Vec3] = js.native
   
@@ -26,48 +27,36 @@ object IHingeConstraintOptions {
   }
   
   @scala.inline
-  implicit class IHingeConstraintOptionsOps[Self <: IHingeConstraintOptions] (val x: Self) extends AnyVal {
+  implicit class IHingeConstraintOptionsMutableBuilder[Self <: IHingeConstraintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAxisA(value: Vec3): Self = StObject.set(x, "axisA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAxisAUndefined: Self = StObject.set(x, "axisA", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAxisB(value: Vec3): Self = StObject.set(x, "axisB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisA(value: Vec3): Self = this.set("axisA", value.asInstanceOf[js.Any])
+    def setAxisBUndefined: Self = StObject.set(x, "axisB", js.undefined)
     
     @scala.inline
-    def deleteAxisA: Self = this.set("axisA", js.undefined)
+    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAxisB(value: Vec3): Self = this.set("axisB", value.asInstanceOf[js.Any])
+    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
     
     @scala.inline
-    def deleteAxisB: Self = this.set("axisB", js.undefined)
+    def setPivotA(value: Vec3): Self = StObject.set(x, "pivotA", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxForce(value: Double): Self = this.set("maxForce", value.asInstanceOf[js.Any])
+    def setPivotAUndefined: Self = StObject.set(x, "pivotA", js.undefined)
     
     @scala.inline
-    def deleteMaxForce: Self = this.set("maxForce", js.undefined)
+    def setPivotB(value: Vec3): Self = StObject.set(x, "pivotB", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPivotA(value: Vec3): Self = this.set("pivotA", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotA: Self = this.set("pivotA", js.undefined)
-    
-    @scala.inline
-    def setPivotB(value: Vec3): Self = this.set("pivotB", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePivotB: Self = this.set("pivotB", js.undefined)
+    def setPivotBUndefined: Self = StObject.set(x, "pivotB", js.undefined)
   }
 }

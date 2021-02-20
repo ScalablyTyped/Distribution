@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** EmotionScores. */
 @js.native
-trait EmotionScores extends js.Object {
+trait EmotionScores extends StObject {
   
   /** Anger score from 0 to 1. A higher score means that the text is more likely to convey anger. */
   var anger: js.UndefOr[Double] = js.native
@@ -32,48 +33,36 @@ object EmotionScores {
   }
   
   @scala.inline
-  implicit class EmotionScoresOps[Self <: EmotionScores] (val x: Self) extends AnyVal {
+  implicit class EmotionScoresMutableBuilder[Self <: EmotionScores] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnger(value: Double): Self = StObject.set(x, "anger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAngerUndefined: Self = StObject.set(x, "anger", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisgust(value: Double): Self = StObject.set(x, "disgust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnger(value: Double): Self = this.set("anger", value.asInstanceOf[js.Any])
+    def setDisgustUndefined: Self = StObject.set(x, "disgust", js.undefined)
     
     @scala.inline
-    def deleteAnger: Self = this.set("anger", js.undefined)
+    def setFear(value: Double): Self = StObject.set(x, "fear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisgust(value: Double): Self = this.set("disgust", value.asInstanceOf[js.Any])
+    def setFearUndefined: Self = StObject.set(x, "fear", js.undefined)
     
     @scala.inline
-    def deleteDisgust: Self = this.set("disgust", js.undefined)
+    def setJoy(value: Double): Self = StObject.set(x, "joy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFear(value: Double): Self = this.set("fear", value.asInstanceOf[js.Any])
+    def setJoyUndefined: Self = StObject.set(x, "joy", js.undefined)
     
     @scala.inline
-    def deleteFear: Self = this.set("fear", js.undefined)
+    def setSadness(value: Double): Self = StObject.set(x, "sadness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoy(value: Double): Self = this.set("joy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJoy: Self = this.set("joy", js.undefined)
-    
-    @scala.inline
-    def setSadness(value: Double): Self = this.set("sadness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSadness: Self = this.set("sadness", js.undefined)
+    def setSadnessUndefined: Self = StObject.set(x, "sadness", js.undefined)
   }
 }

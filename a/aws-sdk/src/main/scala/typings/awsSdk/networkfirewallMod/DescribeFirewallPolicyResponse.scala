@@ -1,11 +1,12 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeFirewallPolicyResponse extends js.Object {
+trait DescribeFirewallPolicyResponse extends StObject {
   
   /**
     * The policy for the specified firewall policy. 
@@ -31,30 +32,18 @@ object DescribeFirewallPolicyResponse {
   }
   
   @scala.inline
-  implicit class DescribeFirewallPolicyResponseOps[Self <: DescribeFirewallPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeFirewallPolicyResponseMutableBuilder[Self <: DescribeFirewallPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirewallPolicy(value: FirewallPolicy): Self = StObject.set(x, "FirewallPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = StObject.set(x, "FirewallPolicyResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirewallPolicyUndefined: Self = StObject.set(x, "FirewallPolicy", js.undefined)
     
     @scala.inline
-    def setFirewallPolicyResponse(value: FirewallPolicyResponse): Self = this.set("FirewallPolicyResponse", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = this.set("UpdateToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFirewallPolicy(value: FirewallPolicy): Self = this.set("FirewallPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFirewallPolicy: Self = this.set("FirewallPolicy", js.undefined)
+    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
   }
 }

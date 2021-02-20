@@ -3,12 +3,13 @@ package typings.protractor.anon
 import org.scalablytyped.runtime.Instantiable0
 import typings.seleniumWebdriver.chromeMod.ServiceBuilder
 import typings.seleniumWebdriver.remoteMod.DriverService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofchrome extends js.Object {
+trait Typeofchrome extends StObject {
   
   var Driver: TypeofDriverInstantiable = js.native
   
@@ -35,33 +36,21 @@ object Typeofchrome {
   }
   
   @scala.inline
-  implicit class TypeofchromeOps[Self <: Typeofchrome] (val x: Self) extends AnyVal {
+  implicit class TypeofchromeMutableBuilder[Self <: Typeofchrome] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDriver(value: TypeofDriverInstantiable): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDefaultService(value: () => DriverService): Self = StObject.set(x, "getDefaultService", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptions(value: TypeofOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriver(value: TypeofDriverInstantiable): Self = this.set("Driver", value.asInstanceOf[js.Any])
+    def setServiceBuilder(value: Instantiable0[ServiceBuilder]): Self = StObject.set(x, "ServiceBuilder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: TypeofOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceBuilder(value: Instantiable0[ServiceBuilder]): Self = this.set("ServiceBuilder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDefaultService(value: () => DriverService): Self = this.set("getDefaultService", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetDefaultService(value: DriverService => Unit): Self = this.set("setDefaultService", js.Any.fromFunction1(value))
+    def setSetDefaultService(value: DriverService => Unit): Self = StObject.set(x, "setDefaultService", js.Any.fromFunction1(value))
   }
 }

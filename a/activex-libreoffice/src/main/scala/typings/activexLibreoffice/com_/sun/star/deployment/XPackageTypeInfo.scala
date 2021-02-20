@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.deployment
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait XPackageTypeInfo extends js.Object {
+trait XPackageTypeInfo extends StObject {
   
   /**
     * returns a description string to describe a package type.
@@ -88,45 +89,33 @@ object XPackageTypeInfo {
   }
   
   @scala.inline
-  implicit class XPackageTypeInfoOps[Self <: XPackageTypeInfo] (val x: Self) extends AnyVal {
+  implicit class XPackageTypeInfoMutableBuilder[Self <: XPackageTypeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileFilter(value: String): Self = StObject.set(x, "FileFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDescription(value: () => String): Self = StObject.set(x, "getDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setGetFileFilter(value: () => String): Self = StObject.set(x, "getFileFilter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFileFilter(value: String): Self = this.set("FileFilter", value.asInstanceOf[js.Any])
+    def setGetIcon(value: (Boolean, Boolean) => js.Any): Self = StObject.set(x, "getIcon", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMediaType(value: String): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShortDescription(value: String): Self = this.set("ShortDescription", value.asInstanceOf[js.Any])
+    def setGetShortDescription(value: () => String): Self = StObject.set(x, "getShortDescription", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDescription(value: () => String): Self = this.set("getDescription", js.Any.fromFunction0(value))
+    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetFileFilter(value: () => String): Self = this.set("getFileFilter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIcon(value: (Boolean, Boolean) => js.Any): Self = this.set("getIcon", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetMediaType(value: () => String): Self = this.set("getMediaType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetShortDescription(value: () => String): Self = this.set("getShortDescription", js.Any.fromFunction0(value))
+    def setShortDescription(value: String): Self = StObject.set(x, "ShortDescription", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAssessmentTemplateRequest extends js.Object {
+trait CreateAssessmentTemplateRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment target for which you want to create the assessment template.
@@ -46,42 +47,30 @@ object CreateAssessmentTemplateRequest {
   }
   
   @scala.inline
-  implicit class CreateAssessmentTemplateRequestOps[Self <: CreateAssessmentTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAssessmentTemplateRequestMutableBuilder[Self <: CreateAssessmentTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssessmentTemplateName(value: AssessmentTemplateName): Self = StObject.set(x, "assessmentTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationInSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentTargetArn(value: Arn): Self = this.set("assessmentTargetArn", value.asInstanceOf[js.Any])
+    def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssessmentTemplateName(value: AssessmentTemplateName): Self = this.set("assessmentTemplateName", value.asInstanceOf[js.Any])
+    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
     
     @scala.inline
-    def setDurationInSeconds(value: AssessmentRunDuration): Self = this.set("durationInSeconds", value.asInstanceOf[js.Any])
+    def setUserAttributesForFindings(value: UserAttributeList): Self = StObject.set(x, "userAttributesForFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    def setUserAttributesForFindingsUndefined: Self = StObject.set(x, "userAttributesForFindings", js.undefined)
     
     @scala.inline
-    def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserAttributesForFindingsVarargs(value: Attribute*): Self = this.set("userAttributesForFindings", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserAttributesForFindings(value: UserAttributeList): Self = this.set("userAttributesForFindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserAttributesForFindings: Self = this.set("userAttributesForFindings", js.undefined)
+    def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value :_*))
   }
 }

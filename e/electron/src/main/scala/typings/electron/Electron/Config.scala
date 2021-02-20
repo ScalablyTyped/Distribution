@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config extends js.Object {
+trait Config extends StObject {
   
   /**
     * The URL associated with the PAC file.
@@ -31,36 +32,24 @@ object Config {
   }
   
   @scala.inline
-  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPacScript(value: String): Self = StObject.set(x, "pacScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPacScriptUndefined: Self = StObject.set(x, "pacScript", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxyBypassRules(value: String): Self = StObject.set(x, "proxyBypassRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacScript(value: String): Self = this.set("pacScript", value.asInstanceOf[js.Any])
+    def setProxyBypassRulesUndefined: Self = StObject.set(x, "proxyBypassRules", js.undefined)
     
     @scala.inline
-    def deletePacScript: Self = this.set("pacScript", js.undefined)
+    def setProxyRules(value: String): Self = StObject.set(x, "proxyRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProxyBypassRules(value: String): Self = this.set("proxyBypassRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyBypassRules: Self = this.set("proxyBypassRules", js.undefined)
-    
-    @scala.inline
-    def setProxyRules(value: String): Self = this.set("proxyRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxyRules: Self = this.set("proxyRules", js.undefined)
+    def setProxyRulesUndefined: Self = StObject.set(x, "proxyRules", js.undefined)
   }
 }

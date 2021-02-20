@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientBooks.anon
 
 import typings.maximMazurokGapiClientBooks.gapi.client.books.BooksAnnotationsRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CfiRange extends js.Object {
+trait CfiRange extends StObject {
   
   /** Range in CFI format for this annotation for version above. */
   var cfiRange: js.UndefOr[BooksAnnotationsRange] = js.native
@@ -32,48 +33,36 @@ object CfiRange {
   }
   
   @scala.inline
-  implicit class CfiRangeOps[Self <: CfiRange] (val x: Self) extends AnyVal {
+  implicit class CfiRangeMutableBuilder[Self <: CfiRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCfiRange(value: BooksAnnotationsRange): Self = StObject.set(x, "cfiRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCfiRangeUndefined: Self = StObject.set(x, "cfiRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCfiRange(value: BooksAnnotationsRange): Self = this.set("cfiRange", value.asInstanceOf[js.Any])
+    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
     @scala.inline
-    def deleteCfiRange: Self = this.set("cfiRange", js.undefined)
+    def setGbImageRange(value: BooksAnnotationsRange): Self = StObject.set(x, "gbImageRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentVersion(value: String): Self = this.set("contentVersion", value.asInstanceOf[js.Any])
+    def setGbImageRangeUndefined: Self = StObject.set(x, "gbImageRange", js.undefined)
     
     @scala.inline
-    def deleteContentVersion: Self = this.set("contentVersion", js.undefined)
+    def setGbTextRange(value: BooksAnnotationsRange): Self = StObject.set(x, "gbTextRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGbImageRange(value: BooksAnnotationsRange): Self = this.set("gbImageRange", value.asInstanceOf[js.Any])
+    def setGbTextRangeUndefined: Self = StObject.set(x, "gbTextRange", js.undefined)
     
     @scala.inline
-    def deleteGbImageRange: Self = this.set("gbImageRange", js.undefined)
+    def setImageCfiRange(value: BooksAnnotationsRange): Self = StObject.set(x, "imageCfiRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGbTextRange(value: BooksAnnotationsRange): Self = this.set("gbTextRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGbTextRange: Self = this.set("gbTextRange", js.undefined)
-    
-    @scala.inline
-    def setImageCfiRange(value: BooksAnnotationsRange): Self = this.set("imageCfiRange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageCfiRange: Self = this.set("imageCfiRange", js.undefined)
+    def setImageCfiRangeUndefined: Self = StObject.set(x, "imageCfiRange", js.undefined)
   }
 }

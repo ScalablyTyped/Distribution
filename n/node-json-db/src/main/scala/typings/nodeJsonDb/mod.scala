@@ -1,16 +1,16 @@
 package typings.nodeJsonDb
 
 import typings.nodeJsonDb.jsonDBConfigMod.Config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-json-db", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("node-json-db", "JsonDB")
   @js.native
-  class JsonDB protected () extends js.Object {
+  class JsonDB protected () extends StObject {
     /**
       * JSONDB Constructor
       * @param filename where to save the "DB". Can also be used to give the whole configuration

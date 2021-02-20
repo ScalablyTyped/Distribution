@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.aureliaMetadata.mod.Origin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ConventionalViewStrategy")
 @js.native
-class ConventionalViewStrategy protected () extends js.Object {
+class ConventionalViewStrategy protected () extends StObject {
   /**
     * Creates an instance of ConventionalViewStrategy.
     * @param viewLocator The view locator service for conventionally locating the view.

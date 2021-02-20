@@ -5,12 +5,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.end
 import typings.oracleOraclejet.oracleOraclejetStrings.off
 import typings.oracleOraclejet.oracleOraclejetStrings.on
 import typings.oracleOraclejet.oracleOraclejetStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Isolate extends js.Object {
+trait Isolate extends StObject {
   
   var isolate: js.UndefOr[off | on] = js.native
   
@@ -29,42 +30,30 @@ object Isolate {
   }
   
   @scala.inline
-  implicit class IsolateOps[Self <: Isolate] (val x: Self) extends AnyVal {
+  implicit class IsolateMutableBuilder[Self <: Isolate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsolate(value: off | on): Self = StObject.set(x, "isolate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsolateUndefined: Self = StObject.set(x, "isolate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelHalign(value: center | end | start): Self = StObject.set(x, "labelHalign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsolate(value: off | on): Self = this.set("isolate", value.asInstanceOf[js.Any])
+    def setLabelHalignUndefined: Self = StObject.set(x, "labelHalign", js.undefined)
     
     @scala.inline
-    def deleteIsolate: Self = this.set("isolate", js.undefined)
+    def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelHalign(value: center | end | start): Self = this.set("labelHalign", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteLabelHalign: Self = this.set("labelHalign", js.undefined)
+    def setUseNodeColor(value: on | off): Self = StObject.set(x, "useNodeColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: js.Object): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
-    
-    @scala.inline
-    def setUseNodeColor(value: on | off): Self = this.set("useNodeColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNodeColor: Self = this.set("useNodeColor", js.undefined)
+    def setUseNodeColorUndefined: Self = StObject.set(x, "useNodeColor", js.undefined)
   }
 }

@@ -2,20 +2,13 @@ package typings.hapi.mod
 
 import typings.hapi.anon.Default
 import typings.hapi.mod.Util.Dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerAuth extends js.Object {
-  
-  /**
-    * An object where each key is an authentication strategy name and the value is the exposed strategy API.
-    * Available only when the authentication scheme exposes an API by returning an api key in the object
-    * returned from its implementation function.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverauthapi)
-    */
-  var api: Dictionary[ServerAuthSchemeObjectApi] = js.native
+trait ServerAuth extends StObject {
   
   /**
     * Sets a default strategy which is applied to every route where:
@@ -36,6 +29,14 @@ trait ServerAuth extends js.Object {
     */
   def default(options: String): Unit = js.native
   def default(options: ServerAuthConfig): Unit = js.native
+  
+  /**
+    * An object where each key is an authentication strategy name and the value is the exposed strategy API.
+    * Available only when the authentication scheme exposes an API by returning an api key in the object
+    * returned from its implementation function.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverauthapi)
+    */
+  var api: Dictionary[ServerAuthSchemeObjectApi] = js.native
   
   /**
     * Registers an authentication scheme where:

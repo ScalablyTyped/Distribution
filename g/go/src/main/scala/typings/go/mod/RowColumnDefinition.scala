@@ -1,5 +1,6 @@
 package typings.go.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not need to use this constructor, because calls to Panel.getRowDefinition or Panel.getColumnDefinition will automatically create and remember a RowColumnDefinition for you.
   */
-class RowColumnDefinition () extends js.Object {
+class RowColumnDefinition () extends StObject {
   
   /**This read-only property returns the usable row height or column width, after arrangement, that objects in this row or column can be placed within.*/
   var actual: Double = js.native
@@ -34,7 +35,7 @@ class RowColumnDefinition () extends js.Object {
   
   def computeEffectiveSpacing(): Double = js.native
   
-    // undocumented
+  // undocumented
   def computeEffectiveSpacingTop(): Double = js.native
   
   /**Determines whether or not the background, if there is one, is in front of or behind the separators.*/
@@ -85,17 +86,33 @@ class RowColumnDefinition () extends js.Object {
   /**Gets or sets the column width.*/
   var width: Double = js.native
 }
-/* static members */
-@JSImport("go", "RowColumnDefinition")
-@js.native
-object RowColumnDefinition extends js.Object {
+object RowColumnDefinition {
+  
+  @JSImport("go", "RowColumnDefinition")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**The default .sizing, which resolves to RowColumnDefinition.None or else the Table Panel's rowSizing and columnSizing if present.*/
-  var Default: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "RowColumnDefinition.Default")
+  @js.native
+  def Default: EnumValue = js.native
+  @scala.inline
+  def Default_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /**The default .sizing if none is specified on the Table Panel's rowSizing and columnSizing.*/
-  var None: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "RowColumnDefinition.None")
+  @js.native
+  def None: EnumValue = js.native
+  @scala.inline
+  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**If a Table Panel is larger than all the rows then this .sizing grants this row and any others with the same value the extra space, apportioned proportionally between them*/
-  var ProportionalExtra: EnumValue = js.native
+  /* static member */
+  @JSImport("go", "RowColumnDefinition.ProportionalExtra")
+  @js.native
+  def ProportionalExtra: EnumValue = js.native
+  @scala.inline
+  def ProportionalExtra_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProportionalExtra")(x.asInstanceOf[js.Any])
 }

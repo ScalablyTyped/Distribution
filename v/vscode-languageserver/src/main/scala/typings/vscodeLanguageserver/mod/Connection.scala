@@ -49,12 +49,13 @@ import typings.vscodeLanguageserverTypes.mod.DeclarationLink
 import typings.vscodeLanguageserverTypes.mod.Definition
 import typings.vscodeLanguageserverTypes.mod.DefinitionLink
 import typings.vscodeLanguageserverTypes.mod.SignatureHelp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] extends js.Object {
+trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] extends StObject {
   
   /**
     * A property to provide access to client specific features like registering

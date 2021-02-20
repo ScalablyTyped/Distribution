@@ -1,11 +1,12 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositeFactory extends js.Object {
+trait CompositeFactory extends StObject {
   
   /**
     * Generic add function. Adds one or many body(s), constraint(s) or a composite(s) to the given composite.

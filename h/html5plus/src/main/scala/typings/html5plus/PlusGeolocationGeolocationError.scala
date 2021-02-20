@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
 @js.native
-trait PlusGeolocationGeolocationError extends js.Object {
+trait PlusGeolocationGeolocationError extends StObject {
   
   /**
     * 访问权限被拒绝
@@ -69,54 +70,42 @@ object PlusGeolocationGeolocationError {
   }
   
   @scala.inline
-  implicit class PlusGeolocationGeolocationErrorOps[Self <: PlusGeolocationGeolocationError] (val x: Self) extends AnyVal {
+  implicit class PlusGeolocationGeolocationErrorMutableBuilder[Self <: PlusGeolocationGeolocationError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPERMISSION_DENIED(value: Double): Self = this.set("PERMISSION_DENIED", value.asInstanceOf[js.Any])
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def deletePERMISSION_DENIED: Self = this.set("PERMISSION_DENIED", js.undefined)
+    def setPERMISSION_DENIED(value: Double): Self = StObject.set(x, "PERMISSION_DENIED", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPOSITION_UNAVAILABLE(value: Double): Self = this.set("POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
+    def setPERMISSION_DENIEDUndefined: Self = StObject.set(x, "PERMISSION_DENIED", js.undefined)
     
     @scala.inline
-    def deletePOSITION_UNAVAILABLE: Self = this.set("POSITION_UNAVAILABLE", js.undefined)
+    def setPOSITION_UNAVAILABLE(value: Double): Self = StObject.set(x, "POSITION_UNAVAILABLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTIMEOUT(value: Double): Self = this.set("TIMEOUT", value.asInstanceOf[js.Any])
+    def setPOSITION_UNAVAILABLEUndefined: Self = StObject.set(x, "POSITION_UNAVAILABLE", js.undefined)
     
     @scala.inline
-    def deleteTIMEOUT: Self = this.set("TIMEOUT", js.undefined)
+    def setTIMEOUT(value: Double): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUNKNOWN_ERROR(value: Double): Self = this.set("UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+    def setTIMEOUTUndefined: Self = StObject.set(x, "TIMEOUT", js.undefined)
     
     @scala.inline
-    def deleteUNKNOWN_ERROR: Self = this.set("UNKNOWN_ERROR", js.undefined)
+    def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: Double): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setUNKNOWN_ERRORUndefined: Self = StObject.set(x, "UNKNOWN_ERROR", js.undefined)
   }
 }

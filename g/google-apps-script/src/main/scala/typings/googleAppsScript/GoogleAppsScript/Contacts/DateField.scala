@@ -2,6 +2,7 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Month
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Date object.
   */
 @js.native
-trait DateField extends js.Object {
+trait DateField extends StObject {
   
   def deleteDateField(): Unit = js.native
   

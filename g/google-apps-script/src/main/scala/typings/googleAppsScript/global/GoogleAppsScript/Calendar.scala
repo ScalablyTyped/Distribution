@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Calendar")
-@js.native
-object Calendar extends js.Object {
+object Calendar {
   
   /**
     * An enum representing the named colors available in the Calendar service.
     */
+  @JSGlobal("GoogleAppsScript.Calendar.Color")
   @js.native
-  object Color extends js.Object {
+  object Color extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Calendar.Color with Double] = js.native
@@ -63,8 +63,9 @@ object Calendar extends js.Object {
   /**
     * An enum representing the named event colors available in the Calendar service.
     */
+  @JSGlobal("GoogleAppsScript.Calendar.EventColor")
   @js.native
-  object EventColor extends js.Object {
+  object EventColor extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Calendar.EventColor with Double] = js.native
@@ -95,8 +96,9 @@ object Calendar extends js.Object {
   /**
     * An enum representing the statuses a guest can have for an event.
     */
+  @JSGlobal("GoogleAppsScript.Calendar.GuestStatus")
   @js.native
-  object GuestStatus extends js.Object {
+  object GuestStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Calendar.GuestStatus with Double] = js.native
@@ -115,8 +117,9 @@ object Calendar extends js.Object {
   /**
     * An enum representing the visibility of an event.
     */
+  @JSGlobal("GoogleAppsScript.Calendar.Visibility")
   @js.native
-  object Visibility extends js.Object {
+  object Visibility extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Calendar.Visibility with Double] = js.native

@@ -1,6 +1,7 @@
 package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ResourceRequirements describes the compute resource requirements.
   */
 @js.native
-trait SchemaResourceRequirements extends js.Object {
+trait SchemaResourceRequirements extends StObject {
   
   /**
     * Limits describes the maximum amount of compute resources allowed. The
@@ -54,42 +55,30 @@ object SchemaResourceRequirements {
   }
   
   @scala.inline
-  implicit class SchemaResourceRequirementsOps[Self <: SchemaResourceRequirements] (val x: Self) extends AnyVal {
+  implicit class SchemaResourceRequirementsMutableBuilder[Self <: SchemaResourceRequirements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLimits(value: StringDictionary[String]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLimitsInMap(value: StringDictionary[SchemaQuantity]): Self = StObject.set(x, "limitsInMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimitsInMapUndefined: Self = StObject.set(x, "limitsInMap", js.undefined)
     
     @scala.inline
-    def setLimits(value: StringDictionary[String]): Self = this.set("limits", value.asInstanceOf[js.Any])
+    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
     @scala.inline
-    def deleteLimits: Self = this.set("limits", js.undefined)
+    def setRequests(value: StringDictionary[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitsInMap(value: StringDictionary[SchemaQuantity]): Self = this.set("limitsInMap", value.asInstanceOf[js.Any])
+    def setRequestsInMap(value: StringDictionary[SchemaQuantity]): Self = StObject.set(x, "requestsInMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimitsInMap: Self = this.set("limitsInMap", js.undefined)
+    def setRequestsInMapUndefined: Self = StObject.set(x, "requestsInMap", js.undefined)
     
     @scala.inline
-    def setRequests(value: StringDictionary[String]): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
-    
-    @scala.inline
-    def setRequestsInMap(value: StringDictionary[SchemaQuantity]): Self = this.set("requestsInMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestsInMap: Self = this.set("requestsInMap", js.undefined)
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
   }
 }

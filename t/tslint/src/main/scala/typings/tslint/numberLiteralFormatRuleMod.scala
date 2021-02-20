@@ -1,31 +1,61 @@
 package typings.tslint
 
 import typings.tslint.mod.Rules.AbstractRule
+import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/numberLiteralFormatRule", JSImport.Namespace)
-@js.native
-object numberLiteralFormatRuleMod extends js.Object {
+object numberLiteralFormatRuleMod {
   
+  @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule")
   @js.native
-  class Rule () extends AbstractRule
+  class Rule protected () extends AbstractRule {
+    def this(options: IOptions) = this()
+  }
   /* static members */
-  @js.native
-  object Rule extends js.Object {
+  object Rule {
     
-    var FAILURE_STRING_LEADING_0: String = js.native
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var FAILURE_STRING_LEADING_DECIMAL: String = js.native
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule.FAILURE_STRING_LEADING_0")
+    @js.native
+    def FAILURE_STRING_LEADING_0: String = js.native
+    @scala.inline
+    def FAILURE_STRING_LEADING_0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_LEADING_0")(x.asInstanceOf[js.Any])
     
-    var FAILURE_STRING_NOT_UPPERCASE: String = js.native
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule.FAILURE_STRING_LEADING_DECIMAL")
+    @js.native
+    def FAILURE_STRING_LEADING_DECIMAL: String = js.native
+    @scala.inline
+    def FAILURE_STRING_LEADING_DECIMAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_LEADING_DECIMAL")(x.asInstanceOf[js.Any])
     
-    var FAILURE_STRING_TRAILING_0: String = js.native
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule.FAILURE_STRING_NOT_UPPERCASE")
+    @js.native
+    def FAILURE_STRING_NOT_UPPERCASE: String = js.native
+    @scala.inline
+    def FAILURE_STRING_NOT_UPPERCASE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_NOT_UPPERCASE")(x.asInstanceOf[js.Any])
     
-    var FAILURE_STRING_TRAILING_DECIMAL: String = js.native
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule.FAILURE_STRING_TRAILING_0")
+    @js.native
+    def FAILURE_STRING_TRAILING_0: String = js.native
+    @scala.inline
+    def FAILURE_STRING_TRAILING_0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_TRAILING_0")(x.asInstanceOf[js.Any])
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule.FAILURE_STRING_TRAILING_DECIMAL")
+    @js.native
+    def FAILURE_STRING_TRAILING_DECIMAL: String = js.native
+    @scala.inline
+    def FAILURE_STRING_TRAILING_DECIMAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_TRAILING_DECIMAL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("tslint/lib/rules/numberLiteralFormatRule", "Rule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

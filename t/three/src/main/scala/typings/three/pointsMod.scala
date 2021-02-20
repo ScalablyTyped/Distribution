@@ -6,14 +6,14 @@ import typings.three.geometryMod.Geometry
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/objects/Points", JSImport.Namespace)
-@js.native
-object pointsMod extends js.Object {
+object pointsMod {
   
+  @JSImport("three/src/objects/Points", "Points")
   @js.native
   /**
   	 * @param geometry An instance of Geometry or BufferGeometry.

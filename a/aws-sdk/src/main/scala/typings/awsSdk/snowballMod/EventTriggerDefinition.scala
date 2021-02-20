@@ -1,11 +1,12 @@
 package typings.awsSdk.snowballMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventTriggerDefinition extends js.Object {
+trait EventTriggerDefinition extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for any local Amazon S3 resource that is an AWS Lambda function's event trigger associated with this job.
@@ -21,24 +22,12 @@ object EventTriggerDefinition {
   }
   
   @scala.inline
-  implicit class EventTriggerDefinitionOps[Self <: EventTriggerDefinition] (val x: Self) extends AnyVal {
+  implicit class EventTriggerDefinitionMutableBuilder[Self <: EventTriggerDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventResourceARN(value: ResourceARN): Self = StObject.set(x, "EventResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEventResourceARN(value: ResourceARN): Self = this.set("EventResourceARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventResourceARN: Self = this.set("EventResourceARN", js.undefined)
+    def setEventResourceARNUndefined: Self = StObject.set(x, "EventResourceARN", js.undefined)
   }
 }

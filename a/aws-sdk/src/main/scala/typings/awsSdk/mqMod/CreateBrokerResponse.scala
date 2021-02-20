@@ -1,11 +1,12 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBrokerResponse extends js.Object {
+trait CreateBrokerResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the broker.
@@ -26,30 +27,18 @@ object CreateBrokerResponse {
   }
   
   @scala.inline
-  implicit class CreateBrokerResponseOps[Self <: CreateBrokerResponse] (val x: Self) extends AnyVal {
+  implicit class CreateBrokerResponseMutableBuilder[Self <: CreateBrokerResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokerArn(value: string): Self = StObject.set(x, "BrokerArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokerArnUndefined: Self = StObject.set(x, "BrokerArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokerArn(value: string): Self = this.set("BrokerArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrokerArn: Self = this.set("BrokerArn", js.undefined)
-    
-    @scala.inline
-    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    def setBrokerIdUndefined: Self = StObject.set(x, "BrokerId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactBootstrapTable.reactBootstrapTableStrings.GreaterthansignEqualssign
   - typings.reactBootstrapTable.reactBootstrapTableStrings.ExclamationmarkEqualssign
 */
-trait FilterComparator extends js.Object
+trait FilterComparator extends StObject
 object FilterComparator {
   
   @scala.inline

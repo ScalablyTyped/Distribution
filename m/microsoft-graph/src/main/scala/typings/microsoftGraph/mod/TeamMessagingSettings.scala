@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TeamMessagingSettings extends js.Object {
+trait TeamMessagingSettings extends StObject {
   
   // If set to true, @channel mentions are allowed.
   var allowChannelMentions: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -31,63 +32,51 @@ object TeamMessagingSettings {
   }
   
   @scala.inline
-  implicit class TeamMessagingSettingsOps[Self <: TeamMessagingSettings] (val x: Self) extends AnyVal {
+  implicit class TeamMessagingSettingsMutableBuilder[Self <: TeamMessagingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowChannelMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowChannelMentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowChannelMentionsNull: Self = StObject.set(x, "allowChannelMentions", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowChannelMentionsUndefined: Self = StObject.set(x, "allowChannelMentions", js.undefined)
     
     @scala.inline
-    def setAllowChannelMentions(value: NullableOption[Boolean]): Self = this.set("allowChannelMentions", value.asInstanceOf[js.Any])
+    def setAllowOwnerDeleteMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowOwnerDeleteMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowChannelMentions: Self = this.set("allowChannelMentions", js.undefined)
+    def setAllowOwnerDeleteMessagesNull: Self = StObject.set(x, "allowOwnerDeleteMessages", null)
     
     @scala.inline
-    def setAllowChannelMentionsNull: Self = this.set("allowChannelMentions", null)
+    def setAllowOwnerDeleteMessagesUndefined: Self = StObject.set(x, "allowOwnerDeleteMessages", js.undefined)
     
     @scala.inline
-    def setAllowOwnerDeleteMessages(value: NullableOption[Boolean]): Self = this.set("allowOwnerDeleteMessages", value.asInstanceOf[js.Any])
+    def setAllowTeamMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowTeamMentions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowOwnerDeleteMessages: Self = this.set("allowOwnerDeleteMessages", js.undefined)
+    def setAllowTeamMentionsNull: Self = StObject.set(x, "allowTeamMentions", null)
     
     @scala.inline
-    def setAllowOwnerDeleteMessagesNull: Self = this.set("allowOwnerDeleteMessages", null)
+    def setAllowTeamMentionsUndefined: Self = StObject.set(x, "allowTeamMentions", js.undefined)
     
     @scala.inline
-    def setAllowTeamMentions(value: NullableOption[Boolean]): Self = this.set("allowTeamMentions", value.asInstanceOf[js.Any])
+    def setAllowUserDeleteMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserDeleteMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowTeamMentions: Self = this.set("allowTeamMentions", js.undefined)
+    def setAllowUserDeleteMessagesNull: Self = StObject.set(x, "allowUserDeleteMessages", null)
     
     @scala.inline
-    def setAllowTeamMentionsNull: Self = this.set("allowTeamMentions", null)
+    def setAllowUserDeleteMessagesUndefined: Self = StObject.set(x, "allowUserDeleteMessages", js.undefined)
     
     @scala.inline
-    def setAllowUserDeleteMessages(value: NullableOption[Boolean]): Self = this.set("allowUserDeleteMessages", value.asInstanceOf[js.Any])
+    def setAllowUserEditMessages(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserEditMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllowUserDeleteMessages: Self = this.set("allowUserDeleteMessages", js.undefined)
+    def setAllowUserEditMessagesNull: Self = StObject.set(x, "allowUserEditMessages", null)
     
     @scala.inline
-    def setAllowUserDeleteMessagesNull: Self = this.set("allowUserDeleteMessages", null)
-    
-    @scala.inline
-    def setAllowUserEditMessages(value: NullableOption[Boolean]): Self = this.set("allowUserEditMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowUserEditMessages: Self = this.set("allowUserEditMessages", js.undefined)
-    
-    @scala.inline
-    def setAllowUserEditMessagesNull: Self = this.set("allowUserEditMessages", null)
+    def setAllowUserEditMessagesUndefined: Self = StObject.set(x, "allowUserEditMessages", js.undefined)
   }
 }

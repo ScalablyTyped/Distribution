@@ -7,6 +7,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.urlMod.URL_
 import typings.openidClient.anon.Body
 import typings.openidClient.anon.DPoP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -213,18 +214,28 @@ class Client protected ()
   def userinfo(accessToken: TokenSet, options: DPoP): js.Promise[UserinfoResponse] = js.native
 }
 /* static members */
-@JSImport("openid-client", "Client")
-@js.native
-object Client extends js.Object {
+object Client {
   
+  @JSImport("openid-client", "Client")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("openid-client", "Client.fromUri")
+  @js.native
   def fromUri(registrationClientUri: String, registrationAccessToken: String): js.Promise[Client] = js.native
+  @JSImport("openid-client", "Client.fromUri")
+  @js.native
   def fromUri(
     registrationClientUri: String,
     registrationAccessToken: String,
     jwks: js.UndefOr[scala.Nothing],
     clientOptions: ClientOptions
   ): js.Promise[Client] = js.native
+  @JSImport("openid-client", "Client.fromUri")
+  @js.native
   def fromUri(registrationClientUri: String, registrationAccessToken: String, jwks: JSONWebKeySet): js.Promise[Client] = js.native
+  @JSImport("openid-client", "Client.fromUri")
+  @js.native
   def fromUri(
     registrationClientUri: String,
     registrationAccessToken: String,
@@ -232,8 +243,16 @@ object Client extends js.Object {
     clientOptions: ClientOptions
   ): js.Promise[Client] = js.native
   
-  var issuer: Issuer[Client] = js.native
+  @JSImport("openid-client", "Client.issuer")
+  @js.native
+  def issuer: Issuer[Client] = js.native
+  @scala.inline
+  def issuer_=(x: Issuer[Client]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issuer")(x.asInstanceOf[js.Any])
   
+  @JSImport("openid-client", "Client.register")
+  @js.native
   def register(metadata: js.Object): js.Promise[Client] = js.native
+  @JSImport("openid-client", "Client.register")
+  @js.native
   def register(metadata: js.Object, other: RegisterOther with ClientOptions): js.Promise[Client] = js.native
 }

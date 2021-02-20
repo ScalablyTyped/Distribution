@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeScanningUploadSarifEndpoint extends js.Object {
+trait CodeScanningUploadSarifEndpoint extends StObject {
   
   /**
     * The base directory used in the analysis, as it appears in the SARIF file.
@@ -51,48 +52,36 @@ object CodeScanningUploadSarifEndpoint {
   }
   
   @scala.inline
-  implicit class CodeScanningUploadSarifEndpointOps[Self <: CodeScanningUploadSarifEndpoint] (val x: Self) extends AnyVal {
+  implicit class CodeScanningUploadSarifEndpointMutableBuilder[Self <: CodeScanningUploadSarifEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckout_uri(value: String): Self = StObject.set(x, "checkout_uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckout_uriUndefined: Self = StObject.set(x, "checkout_uri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit_sha(value: String): Self = this.set("commit_sha", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    def setSarif(value: String): Self = StObject.set(x, "sarif", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSarif(value: String): Self = this.set("sarif", value.asInstanceOf[js.Any])
+    def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTool_name(value: String): Self = this.set("tool_name", value.asInstanceOf[js.Any])
+    def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
     
     @scala.inline
-    def setCheckout_uri(value: String): Self = this.set("checkout_uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCheckout_uri: Self = this.set("checkout_uri", js.undefined)
-    
-    @scala.inline
-    def setStarted_at(value: String): Self = this.set("started_at", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStarted_at: Self = this.set("started_at", js.undefined)
+    def setTool_name(value: String): Self = StObject.set(x, "tool_name", value.asInstanceOf[js.Any])
   }
 }

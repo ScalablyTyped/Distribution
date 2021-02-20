@@ -6,16 +6,19 @@ import typings.stripe.mod.IList
 import typings.stripe.mod.IListOptionsCreated
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.disputes.IDispute
 import typings.stripe.mod.disputes.IDisputeUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Disputes")
 @js.native
-class Disputes () extends StripeResource {
+class Disputes protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def close(disputeId: String): js.Promise[IDispute] = js.native
   /**
@@ -30,7 +33,7 @@ class Disputes () extends StripeResource {
   def close(disputeId: String, options: HeaderOptions, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
   def close(disputeId: String, response: IResponseFn[IDispute]): js.Promise[IDispute] = js.native
   
-   // TODO: Implement placeholder method
+  // TODO: Implement placeholder method
   def getMetadata(): Unit = js.native
   
   def list(): IListPromise[IDispute] = js.native

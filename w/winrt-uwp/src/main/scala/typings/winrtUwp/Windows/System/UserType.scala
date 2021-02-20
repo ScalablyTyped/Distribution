@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserType extends js.Object
+sealed trait UserType extends StObject
 /** Represents user types. */
 @JSGlobal("Windows.System.UserType")
 @js.native
-object UserType extends js.Object {
+object UserType extends StObject {
   
   /** The user is a local guest. */
   @js.native

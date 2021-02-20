@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SystemMemoryInfo extends js.Object {
+trait SystemMemoryInfo extends StObject {
   
   /**
     * The total amount of memory not being used by applications or disk cache.
@@ -40,30 +41,18 @@ object SystemMemoryInfo {
   }
   
   @scala.inline
-  implicit class SystemMemoryInfoOps[Self <: SystemMemoryInfo] (val x: Self) extends AnyVal {
+  implicit class SystemMemoryInfoMutableBuilder[Self <: SystemMemoryInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFree(value: Double): Self = StObject.set(x, "free", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSwapFree(value: Double): Self = StObject.set(x, "swapFree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSwapTotal(value: Double): Self = StObject.set(x, "swapTotal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFree(value: Double): Self = this.set("free", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwapFree(value: Double): Self = this.set("swapFree", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwapTotal(value: Double): Self = this.set("swapTotal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

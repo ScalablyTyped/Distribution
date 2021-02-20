@@ -1,11 +1,12 @@
 package typings.awsSdk.dynamodbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportDescription extends js.Object {
+trait ExportDescription extends StObject {
   
   /**
     * The billable size of the table export.
@@ -111,132 +112,120 @@ object ExportDescription {
   }
   
   @scala.inline
-  implicit class ExportDescriptionOps[Self <: ExportDescription] (val x: Self) extends AnyVal {
+  implicit class ExportDescriptionMutableBuilder[Self <: ExportDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBilledSizeBytes(value: BilledSizeBytes): Self = StObject.set(x, "BilledSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBilledSizeBytesUndefined: Self = StObject.set(x, "BilledSizeBytes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBilledSizeBytes(value: BilledSizeBytes): Self = this.set("BilledSizeBytes", value.asInstanceOf[js.Any])
+    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
     @scala.inline
-    def deleteBilledSizeBytes: Self = this.set("BilledSizeBytes", js.undefined)
+    def setEndTime(value: ExportEndTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: ExportEndTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setExportArnUndefined: Self = StObject.set(x, "ExportArn", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setExportFormat(value: ExportFormat): Self = StObject.set(x, "ExportFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportArn(value: ExportArn): Self = this.set("ExportArn", value.asInstanceOf[js.Any])
+    def setExportFormatUndefined: Self = StObject.set(x, "ExportFormat", js.undefined)
     
     @scala.inline
-    def deleteExportArn: Self = this.set("ExportArn", js.undefined)
+    def setExportManifest(value: ExportManifest): Self = StObject.set(x, "ExportManifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFormat(value: ExportFormat): Self = this.set("ExportFormat", value.asInstanceOf[js.Any])
+    def setExportManifestUndefined: Self = StObject.set(x, "ExportManifest", js.undefined)
     
     @scala.inline
-    def deleteExportFormat: Self = this.set("ExportFormat", js.undefined)
+    def setExportStatus(value: ExportStatus): Self = StObject.set(x, "ExportStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportManifest(value: ExportManifest): Self = this.set("ExportManifest", value.asInstanceOf[js.Any])
+    def setExportStatusUndefined: Self = StObject.set(x, "ExportStatus", js.undefined)
     
     @scala.inline
-    def deleteExportManifest: Self = this.set("ExportManifest", js.undefined)
+    def setExportTime(value: ExportTime): Self = StObject.set(x, "ExportTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportStatus(value: ExportStatus): Self = this.set("ExportStatus", value.asInstanceOf[js.Any])
+    def setExportTimeUndefined: Self = StObject.set(x, "ExportTime", js.undefined)
     
     @scala.inline
-    def deleteExportStatus: Self = this.set("ExportStatus", js.undefined)
+    def setFailureCode(value: FailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportTime(value: ExportTime): Self = this.set("ExportTime", value.asInstanceOf[js.Any])
+    def setFailureCodeUndefined: Self = StObject.set(x, "FailureCode", js.undefined)
     
     @scala.inline
-    def deleteExportTime: Self = this.set("ExportTime", js.undefined)
+    def setFailureMessage(value: FailureMessage): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureCode(value: FailureCode): Self = this.set("FailureCode", value.asInstanceOf[js.Any])
+    def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
     
     @scala.inline
-    def deleteFailureCode: Self = this.set("FailureCode", js.undefined)
+    def setItemCount(value: ItemCount): Self = StObject.set(x, "ItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureMessage(value: FailureMessage): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    def setItemCountUndefined: Self = StObject.set(x, "ItemCount", js.undefined)
     
     @scala.inline
-    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemCount(value: ItemCount): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    def setS3BucketOwner(value: S3BucketOwner): Self = StObject.set(x, "S3BucketOwner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    def setS3BucketOwnerUndefined: Self = StObject.set(x, "S3BucketOwner", js.undefined)
     
     @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("S3Bucket", value.asInstanceOf[js.Any])
+    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
     @scala.inline
-    def deleteS3Bucket: Self = this.set("S3Bucket", js.undefined)
+    def setS3Prefix(value: S3Prefix): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketOwner(value: S3BucketOwner): Self = this.set("S3BucketOwner", value.asInstanceOf[js.Any])
+    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
     @scala.inline
-    def deleteS3BucketOwner: Self = this.set("S3BucketOwner", js.undefined)
+    def setS3SseAlgorithm(value: S3SseAlgorithm): Self = StObject.set(x, "S3SseAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3Prefix(value: S3Prefix): Self = this.set("S3Prefix", value.asInstanceOf[js.Any])
+    def setS3SseAlgorithmUndefined: Self = StObject.set(x, "S3SseAlgorithm", js.undefined)
     
     @scala.inline
-    def deleteS3Prefix: Self = this.set("S3Prefix", js.undefined)
+    def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = StObject.set(x, "S3SseKmsKeyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3SseAlgorithm(value: S3SseAlgorithm): Self = this.set("S3SseAlgorithm", value.asInstanceOf[js.Any])
+    def setS3SseKmsKeyIdUndefined: Self = StObject.set(x, "S3SseKmsKeyId", js.undefined)
     
     @scala.inline
-    def deleteS3SseAlgorithm: Self = this.set("S3SseAlgorithm", js.undefined)
+    def setStartTime(value: ExportStartTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3SseKmsKeyId(value: S3SseKmsKeyId): Self = this.set("S3SseKmsKeyId", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteS3SseKmsKeyId: Self = this.set("S3SseKmsKeyId", js.undefined)
+    def setTableArn(value: TableArn): Self = StObject.set(x, "TableArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: ExportStartTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setTableArnUndefined: Self = StObject.set(x, "TableArn", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setTableId(value: TableId): Self = StObject.set(x, "TableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableArn(value: TableArn): Self = this.set("TableArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableArn: Self = this.set("TableArn", js.undefined)
-    
-    @scala.inline
-    def setTableId(value: TableId): Self = this.set("TableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("TableId", js.undefined)
+    def setTableIdUndefined: Self = StObject.set(x, "TableId", js.undefined)
   }
 }

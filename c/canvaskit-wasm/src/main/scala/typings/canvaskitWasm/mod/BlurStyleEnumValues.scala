@@ -1,5 +1,6 @@
 package typings.canvaskitWasm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,30 +25,18 @@ object BlurStyleEnumValues {
   }
   
   @scala.inline
-  implicit class BlurStyleEnumValuesOps[Self <: BlurStyleEnumValues] (val x: Self) extends AnyVal {
+  implicit class BlurStyleEnumValuesMutableBuilder[Self <: BlurStyleEnumValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInner(value: BlurStyle): Self = StObject.set(x, "Inner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNormal(value: BlurStyle): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOuter(value: BlurStyle): Self = StObject.set(x, "Outer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInner(value: BlurStyle): Self = this.set("Inner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: BlurStyle): Self = this.set("Normal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOuter(value: BlurStyle): Self = this.set("Outer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSolid(value: BlurStyle): Self = this.set("Solid", value.asInstanceOf[js.Any])
+    def setSolid(value: BlurStyle): Self = StObject.set(x, "Solid", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The extracted object from the sentence. */
 @js.native
-trait SemanticRolesResultObject extends js.Object {
+trait SemanticRolesResultObject extends StObject {
   
   /** An array of extracted keywords. */
   var keywords: js.UndefOr[js.Array[SemanticRolesKeyword]] = js.native
@@ -23,33 +24,21 @@ object SemanticRolesResultObject {
   }
   
   @scala.inline
-  implicit class SemanticRolesResultObjectOps[Self <: SemanticRolesResultObject] (val x: Self) extends AnyVal {
+  implicit class SemanticRolesResultObjectMutableBuilder[Self <: SemanticRolesResultObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeywords(value: js.Array[SemanticRolesKeyword]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
     @scala.inline
-    def setKeywordsVarargs(value: SemanticRolesKeyword*): Self = this.set("keywords", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: js.Array[SemanticRolesKeyword]): Self = this.set("keywords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeywords: Self = this.set("keywords", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

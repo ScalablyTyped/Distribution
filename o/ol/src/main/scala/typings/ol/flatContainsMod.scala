@@ -1,16 +1,19 @@
 package typings.ol
 
 import typings.ol.extentMod.Extent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/flat/contains", JSImport.Namespace)
-@js.native
-object flatContainsMod extends js.Object {
+object flatContainsMod {
   
+  @JSImport("ol/geom/flat/contains", "linearRingContainsExtent")
+  @js.native
   def linearRingContainsExtent(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double, extent: Extent): Boolean = js.native
   
+  @JSImport("ol/geom/flat/contains", "linearRingContainsXY")
+  @js.native
   def linearRingContainsXY(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -20,6 +23,8 @@ object flatContainsMod extends js.Object {
     y: Double
   ): Boolean = js.native
   
+  @JSImport("ol/geom/flat/contains", "linearRingsContainsXY")
+  @js.native
   def linearRingsContainsXY(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -29,6 +34,8 @@ object flatContainsMod extends js.Object {
     y: Double
   ): Boolean = js.native
   
+  @JSImport("ol/geom/flat/contains", "linearRingssContainsXY")
+  @js.native
   def linearRingssContainsXY(
     flatCoordinates: js.Array[Double],
     offset: Double,

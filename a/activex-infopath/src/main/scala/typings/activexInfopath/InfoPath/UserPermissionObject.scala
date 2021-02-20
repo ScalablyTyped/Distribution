@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserPermissionObject extends js.Object {
+trait UserPermissionObject extends StObject {
   
   var ExpirationDate: js.Any = js.native
   
@@ -37,36 +38,24 @@ object UserPermissionObject {
   }
   
   @scala.inline
-  implicit class UserPermissionObjectOps[Self <: UserPermissionObject] (val x: Self) extends AnyVal {
+  implicit class UserPermissionObjectMutableBuilder[Self <: UserPermissionObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDate(value: js.Any): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInfoPathDotUserPermissionObject_typekey(value: UserPermissionObject): Self = StObject.set(x, "InfoPath.UserPermissionObject_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDate(value: js.Any): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    def setPermission(value: Double): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoPathDotUserPermissionObject_typekey(value: UserPermissionObject): Self = this.set("InfoPath.UserPermissionObject_typekey", value.asInstanceOf[js.Any])
+    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPermission(value: Double): Self = this.set("Permission", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("Remove", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

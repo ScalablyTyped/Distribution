@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.maybe
   - typings.std.stdStrings.probably
 */
-trait CanPlayTypeResult extends js.Object
+trait CanPlayTypeResult extends StObject
 object CanPlayTypeResult {
   
   @scala.inline

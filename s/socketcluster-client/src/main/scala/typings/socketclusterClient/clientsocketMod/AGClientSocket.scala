@@ -1,7 +1,6 @@
 package typings.socketclusterClient.clientsocketMod
 
 import typings.agChannel.mod.Client
-import typings.asyncStreamEmitter.mod.AsyncStreamEmitter
 import typings.scErrors.mod.SocketProtocolErrorStatuses_
 import typings.scErrors.mod.SocketProtocolIgnoreStatuses_
 import typings.socketclusterClient.anon.AckTimeout
@@ -35,13 +34,14 @@ import typings.socketclusterClient.socketclusterClientStrings.unsubscribe
 import typings.socketclusterClient.socketclusterClientStrings.unsubscribed
 import typings.socketclusterServer.serverMod.CodecEngine
 import typings.writableConsumableStream.consumerMod.ConsumerStats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait AGClientSocket
-  extends AsyncStreamEmitter[js.Any]
+  extends typings.asyncStreamEmitter.mod.^[js.Any]
      with Client {
   
   val AUTHENTICATED: authenticated = js.native

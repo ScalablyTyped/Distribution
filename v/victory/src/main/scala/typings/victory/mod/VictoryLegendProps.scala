@@ -9,6 +9,7 @@ import typings.victory.victoryStrings.horizontal
 import typings.victory.victoryStrings.labels
 import typings.victory.victoryStrings.parent
 import typings.victory.victoryStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -180,153 +181,141 @@ object VictoryLegendProps {
   }
   
   @scala.inline
-  implicit class VictoryLegendPropsOps[Self <: VictoryLegendProps] (val x: Self) extends AnyVal {
+  implicit class VictoryLegendPropsMutableBuilder[Self <: VictoryLegendProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderComponent(value: ReactElement): Self = StObject.set(x, "borderComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderComponentUndefined: Self = StObject.set(x, "borderComponent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderPadding(value: PaddingProps): Self = StObject.set(x, "borderPadding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderComponent(value: ReactElement): Self = this.set("borderComponent", value.asInstanceOf[js.Any])
+    def setBorderPaddingUndefined: Self = StObject.set(x, "borderPadding", js.undefined)
     
     @scala.inline
-    def deleteBorderComponent: Self = this.set("borderComponent", js.undefined)
+    def setCenterTitle(value: Boolean): Self = StObject.set(x, "centerTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderPadding(value: PaddingProps): Self = this.set("borderPadding", value.asInstanceOf[js.Any])
+    def setCenterTitleUndefined: Self = StObject.set(x, "centerTitle", js.undefined)
     
     @scala.inline
-    def deleteBorderPadding: Self = this.set("borderPadding", js.undefined)
+    def setColorScale(value: ColorScalePropType): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterTitle(value: Boolean): Self = this.set("centerTitle", value.asInstanceOf[js.Any])
+    def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
     @scala.inline
-    def deleteCenterTitle: Self = this.set("centerTitle", js.undefined)
+    def setColorScaleVarargs(value: String*): Self = StObject.set(x, "colorScale", js.Array(value :_*))
     
     @scala.inline
-    def setColorScaleVarargs(value: String*): Self = this.set("colorScale", js.Array(value :_*))
+    def setData(value: js.Array[Name]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorScale(value: ColorScalePropType): Self = this.set("colorScale", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteColorScale: Self = this.set("colorScale", js.undefined)
+    def setDataVarargs(value: Name*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def setDataVarargs(value: Name*): Self = this.set("data", js.Array(value :_*))
+    def setEventKey(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[Name]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
     @scala.inline
-    def setEventKeyVarargs(value: String*): Self = this.set("eventKey", js.Array(value :_*))
+    def setEventKeyVarargs(value: String*): Self = StObject.set(x, "eventKey", js.Array(value :_*))
     
     @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = this.set("eventKey", js.Any.fromFunction1(value))
+    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback | js.Array[String]): Self = this.set("eventKey", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteEventKey: Self = this.set("eventKey", js.undefined)
+    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback])*): Self = this.set("events", js.Array(value :_*))
+    def setExternalEventMutations(value: js.Array[_]): Self = StObject.set(x, "externalEventMutations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, StringOrNumberOrCallback]]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setExternalEventMutationsUndefined: Self = StObject.set(x, "externalEventMutations", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setExternalEventMutationsVarargs(value: js.Any*): Self = StObject.set(x, "externalEventMutations", js.Array(value :_*))
     
     @scala.inline
-    def setExternalEventMutationsVarargs(value: js.Any*): Self = this.set("externalEventMutations", js.Array(value :_*))
+    def setGutter(value: Double | Left): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExternalEventMutations(value: js.Array[_]): Self = this.set("externalEventMutations", value.asInstanceOf[js.Any])
+    def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
     
     @scala.inline
-    def deleteExternalEventMutations: Self = this.set("externalEventMutations", js.undefined)
+    def setItemsPerRow(value: Double): Self = StObject.set(x, "itemsPerRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutter(value: Double | Left): Self = this.set("gutter", value.asInstanceOf[js.Any])
+    def setItemsPerRowUndefined: Self = StObject.set(x, "itemsPerRow", js.undefined)
     
     @scala.inline
-    def deleteGutter: Self = this.set("gutter", js.undefined)
+    def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsPerRow(value: Double): Self = this.set("itemsPerRow", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteItemsPerRow: Self = this.set("itemsPerRow", js.undefined)
+    def setRowGutter(value: Double | OmitBlockPropsleftright): Self = StObject.set(x, "rowGutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: horizontal | vertical): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setRowGutterUndefined: Self = StObject.set(x, "rowGutter", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowGutter(value: Double | OmitBlockPropsleftright): Self = this.set("rowGutter", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteRowGutter: Self = this.set("rowGutter", js.undefined)
+    def setSymbolSpacer(value: Double): Self = StObject.set(x, "symbolSpacer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSymbolSpacerUndefined: Self = StObject.set(x, "symbolSpacer", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setTitle(value: String | js.Array[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSymbolSpacer(value: Double): Self = this.set("symbolSpacer", value.asInstanceOf[js.Any])
+    def setTitleComponent(value: ReactElement): Self = StObject.set(x, "titleComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSymbolSpacer: Self = this.set("symbolSpacer", js.undefined)
+    def setTitleComponentUndefined: Self = StObject.set(x, "titleComponent", js.undefined)
     
     @scala.inline
-    def setTitleVarargs(value: String*): Self = this.set("title", js.Array(value :_*))
+    def setTitleOrientation(value: OrientationTypes): Self = StObject.set(x, "titleOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String | js.Array[String]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitleOrientationUndefined: Self = StObject.set(x, "titleOrientation", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitleComponent(value: ReactElement): Self = this.set("titleComponent", value.asInstanceOf[js.Any])
+    def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
     
     @scala.inline
-    def deleteTitleComponent: Self = this.set("titleComponent", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitleOrientation(value: OrientationTypes): Self = this.set("titleOrientation", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteTitleOrientation: Self = this.set("titleOrientation", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

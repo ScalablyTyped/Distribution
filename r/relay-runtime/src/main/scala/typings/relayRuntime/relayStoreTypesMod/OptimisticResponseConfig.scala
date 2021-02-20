@@ -1,12 +1,13 @@
 package typings.relayRuntime.relayStoreTypesMod
 
 import typings.relayRuntime.relayNetworkTypesMod.PayloadData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OptimisticResponseConfig extends js.Object {
+trait OptimisticResponseConfig extends StObject {
   
   val operation: OperationDescriptor = js.native
   
@@ -23,39 +24,27 @@ object OptimisticResponseConfig {
   }
   
   @scala.inline
-  implicit class OptimisticResponseConfigOps[Self <: OptimisticResponseConfig] (val x: Self) extends AnyVal {
+  implicit class OptimisticResponseConfigMutableBuilder[Self <: OptimisticResponseConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResponse(value: PayloadData): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResponseNull: Self = StObject.set(x, "response", null)
     
     @scala.inline
-    def setOperation(value: OperationDescriptor): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
     @scala.inline
-    def setResponse(value: PayloadData): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = StObject.set(x, "updater", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteResponse: Self = this.set("response", js.undefined)
+    def setUpdaterNull: Self = StObject.set(x, "updater", null)
     
     @scala.inline
-    def setResponseNull: Self = this.set("response", null)
-    
-    @scala.inline
-    def setUpdater(value: (/* store */ RecordSourceSelectorProxy[js.Object], js.Object) => Unit): Self = this.set("updater", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteUpdater: Self = this.set("updater", js.undefined)
-    
-    @scala.inline
-    def setUpdaterNull: Self = this.set("updater", null)
+    def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
   }
 }

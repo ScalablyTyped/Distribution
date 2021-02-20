@@ -1,13 +1,12 @@
 package typings.iterm2Version
 
 import typings.iterm2Version.anon.Call
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("iterm2-version", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Get the [iTerm2](https://www.iterm2.com) version.
@@ -19,7 +18,13 @@ object mod extends js.Object {
   	//=> '3.0.15'
   	```
   	*/
+  @JSImport("iterm2-version", JSImport.Namespace)
+  @js.native
   def apply(): js.UndefOr[String] = js.native
+  
+  @JSImport("iterm2-version", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Get the [iTerm2](https://www.iterm2.com) version.
@@ -34,10 +39,16 @@ object mod extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function iterm2Version(): string | undefined;
   // export = iterm2Version;
+  @JSImport("iterm2-version", "default")
+  @js.native
   def default(): js.UndefOr[String] = js.native
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function iterm2Version(): string | undefined;
   // export = iterm2Version;
-  @JSName("default")
-  var default_Original: Call = js.native
+  @JSImport("iterm2-version", "default")
+  @js.native
+  def default_Fmod: Call = js.native
+  
+  @scala.inline
+  def default_Fmod_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

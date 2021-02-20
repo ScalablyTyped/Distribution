@@ -1,11 +1,12 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStyleUrl extends js.Object {
+trait IStyleUrl extends StObject {
   
   /** List of style css urls o be downloaded */
   var styleURLs: js.Array[String] = js.native
@@ -19,24 +20,12 @@ object IStyleUrl {
   }
   
   @scala.inline
-  implicit class IStyleUrlOps[Self <: IStyleUrl] (val x: Self) extends AnyVal {
+  implicit class IStyleUrlMutableBuilder[Self <: IStyleUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStyleURLs(value: js.Array[String]): Self = StObject.set(x, "styleURLs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStyleURLsVarargs(value: String*): Self = this.set("styleURLs", js.Array(value :_*))
-    
-    @scala.inline
-    def setStyleURLs(value: js.Array[String]): Self = this.set("styleURLs", value.asInstanceOf[js.Any])
+    def setStyleURLsVarargs(value: String*): Self = StObject.set(x, "styleURLs", js.Array(value :_*))
   }
 }

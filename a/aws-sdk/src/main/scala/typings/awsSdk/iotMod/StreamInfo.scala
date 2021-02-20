@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamInfo extends js.Object {
+trait StreamInfo extends StObject {
   
   /**
     * The date when the stream was created.
@@ -56,69 +57,57 @@ object StreamInfo {
   }
   
   @scala.inline
-  implicit class StreamInfoOps[Self <: StreamInfo] (val x: Self) extends AnyVal {
+  implicit class StreamInfoMutableBuilder[Self <: StreamInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: DateType): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: StreamDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: DateType): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    def setFiles(value: StreamFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: StreamDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: StreamFile*): Self = this.set("files", js.Array(value :_*))
+    def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: StreamFiles): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
+    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
     @scala.inline
-    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    def setStreamArn(value: StreamArn): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setStreamId(value: StreamId): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamArn(value: StreamArn): Self = this.set("streamArn", value.asInstanceOf[js.Any])
+    def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
     @scala.inline
-    def deleteStreamArn: Self = this.set("streamArn", js.undefined)
+    def setStreamVersion(value: StreamVersion): Self = StObject.set(x, "streamVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreamId(value: StreamId): Self = this.set("streamId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamId: Self = this.set("streamId", js.undefined)
-    
-    @scala.inline
-    def setStreamVersion(value: StreamVersion): Self = this.set("streamVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamVersion: Self = this.set("streamVersion", js.undefined)
+    def setStreamVersionUndefined: Self = StObject.set(x, "streamVersion", js.undefined)
   }
 }

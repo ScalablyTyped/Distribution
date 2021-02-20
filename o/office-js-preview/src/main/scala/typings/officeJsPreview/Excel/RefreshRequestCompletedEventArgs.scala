@@ -3,6 +3,7 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.officeJsPreviewStrings.LinkedDataTypeRefreshRequestCompleted
 import typings.officeJsPreview.officeJsPreviewStrings.Local
 import typings.officeJsPreview.officeJsPreviewStrings.Remote
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait RefreshRequestCompletedEventArgs extends js.Object {
+trait RefreshRequestCompletedEventArgs extends StObject {
   
   /**
     *
@@ -77,39 +78,27 @@ object RefreshRequestCompletedEventArgs {
   }
   
   @scala.inline
-  implicit class RefreshRequestCompletedEventArgsOps[Self <: RefreshRequestCompletedEventArgs] (val x: Self) extends AnyVal {
+  implicit class RefreshRequestCompletedEventArgsMutableBuilder[Self <: RefreshRequestCompletedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRefreshed(value: Boolean): Self = StObject.set(x, "refreshed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshed(value: Boolean): Self = this.set("refreshed", value.asInstanceOf[js.Any])
+    def setType(value: LinkedDataTypeRefreshRequestCompleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: Double): Self = this.set("serviceId", value.asInstanceOf[js.Any])
+    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def setType(value: LinkedDataTypeRefreshRequestCompleted): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

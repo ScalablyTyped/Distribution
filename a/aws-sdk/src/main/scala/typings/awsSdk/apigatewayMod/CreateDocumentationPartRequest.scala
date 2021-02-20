@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDocumentationPartRequest extends js.Object {
+trait CreateDocumentationPartRequest extends StObject {
   
   /**
     * [Required] The location of the targeted API entity of the to-be-created documentation part.
@@ -31,27 +32,15 @@ object CreateDocumentationPartRequest {
   }
   
   @scala.inline
-  implicit class CreateDocumentationPartRequestOps[Self <: CreateDocumentationPartRequest] (val x: Self) extends AnyVal {
+  implicit class CreateDocumentationPartRequestMutableBuilder[Self <: CreateDocumentationPartRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: DocumentationPartLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocation(value: DocumentationPartLocation): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProperties(value: String): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

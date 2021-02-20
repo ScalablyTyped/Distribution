@@ -5,12 +5,13 @@ import typings.tensorflowTfjsConverter.compiledApiMod.CollectionDef.IBytesList
 import typings.tensorflowTfjsConverter.compiledApiMod.CollectionDef.IFloatList
 import typings.tensorflowTfjsConverter.compiledApiMod.CollectionDef.IInt64List
 import typings.tensorflowTfjsConverter.compiledApiMod.CollectionDef.INodeList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICollectionDef extends js.Object {
+trait ICollectionDef extends StObject {
   
   /** CollectionDef anyList */
   var anyList: js.UndefOr[IAnyList | Null] = js.native
@@ -36,63 +37,51 @@ object ICollectionDef {
   }
   
   @scala.inline
-  implicit class ICollectionDefOps[Self <: ICollectionDef] (val x: Self) extends AnyVal {
+  implicit class ICollectionDefMutableBuilder[Self <: ICollectionDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnyList(value: IAnyList): Self = StObject.set(x, "anyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnyListNull: Self = StObject.set(x, "anyList", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnyListUndefined: Self = StObject.set(x, "anyList", js.undefined)
     
     @scala.inline
-    def setAnyList(value: IAnyList): Self = this.set("anyList", value.asInstanceOf[js.Any])
+    def setBytesList(value: IBytesList): Self = StObject.set(x, "bytesList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnyList: Self = this.set("anyList", js.undefined)
+    def setBytesListNull: Self = StObject.set(x, "bytesList", null)
     
     @scala.inline
-    def setAnyListNull: Self = this.set("anyList", null)
+    def setBytesListUndefined: Self = StObject.set(x, "bytesList", js.undefined)
     
     @scala.inline
-    def setBytesList(value: IBytesList): Self = this.set("bytesList", value.asInstanceOf[js.Any])
+    def setFloatList(value: IFloatList): Self = StObject.set(x, "floatList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBytesList: Self = this.set("bytesList", js.undefined)
+    def setFloatListNull: Self = StObject.set(x, "floatList", null)
     
     @scala.inline
-    def setBytesListNull: Self = this.set("bytesList", null)
+    def setFloatListUndefined: Self = StObject.set(x, "floatList", js.undefined)
     
     @scala.inline
-    def setFloatList(value: IFloatList): Self = this.set("floatList", value.asInstanceOf[js.Any])
+    def setInt64List(value: IInt64List): Self = StObject.set(x, "int64List", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloatList: Self = this.set("floatList", js.undefined)
+    def setInt64ListNull: Self = StObject.set(x, "int64List", null)
     
     @scala.inline
-    def setFloatListNull: Self = this.set("floatList", null)
+    def setInt64ListUndefined: Self = StObject.set(x, "int64List", js.undefined)
     
     @scala.inline
-    def setInt64List(value: IInt64List): Self = this.set("int64List", value.asInstanceOf[js.Any])
+    def setNodeList(value: INodeList): Self = StObject.set(x, "nodeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInt64List: Self = this.set("int64List", js.undefined)
+    def setNodeListNull: Self = StObject.set(x, "nodeList", null)
     
     @scala.inline
-    def setInt64ListNull: Self = this.set("int64List", null)
-    
-    @scala.inline
-    def setNodeList(value: INodeList): Self = this.set("nodeList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeList: Self = this.set("nodeList", js.undefined)
-    
-    @scala.inline
-    def setNodeListNull: Self = this.set("nodeList", null)
+    def setNodeListUndefined: Self = StObject.set(x, "nodeList", js.undefined)
   }
 }

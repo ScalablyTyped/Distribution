@@ -2,6 +2,7 @@ package typings.screeps
 
 import typings.screeps.screepsStrings.closed
 import typings.screeps.screepsStrings.normal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,24 +23,12 @@ object RoomStatusPermanent {
   }
   
   @scala.inline
-  implicit class RoomStatusPermanentOps[Self <: RoomStatusPermanent] (val x: Self) extends AnyVal {
+  implicit class RoomStatusPermanentMutableBuilder[Self <: RoomStatusPermanent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStatus(value: normal | closed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatus(value: normal | closed): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Null): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Null): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

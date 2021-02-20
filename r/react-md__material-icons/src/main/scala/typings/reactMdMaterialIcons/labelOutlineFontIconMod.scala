@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/LabelOutlineFontIcon", JSImport.Namespace)
-@js.native
-object labelOutlineFontIconMod extends js.Object {
+object labelOutlineFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/LabelOutlineFontIcon", "LabelOutlineFontIcon")
+  @js.native
   val LabelOutlineFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

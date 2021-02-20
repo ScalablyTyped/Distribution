@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _ClientCapabilities extends js.Object {
+trait _ClientCapabilities extends StObject {
   
   /**
     * Experimental client capabilities.
@@ -36,42 +37,30 @@ object _ClientCapabilities {
   }
   
   @scala.inline
-  implicit class _ClientCapabilitiesOps[Self <: _ClientCapabilities] (val x: Self) extends AnyVal {
+  implicit class _ClientCapabilitiesMutableBuilder[Self <: _ClientCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExperimental(value: js.Object): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextDocument(value: TextDocumentClientCapabilities): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimental(value: js.Object): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    def setTextDocumentUndefined: Self = StObject.set(x, "textDocument", js.undefined)
     
     @scala.inline
-    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    def setWindow(value: js.Object): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextDocument(value: TextDocumentClientCapabilities): Self = this.set("textDocument", value.asInstanceOf[js.Any])
+    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
     @scala.inline
-    def deleteTextDocument: Self = this.set("textDocument", js.undefined)
+    def setWorkspace(value: WorkspaceClientCapabilities): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWindow(value: js.Object): Self = this.set("window", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
-    
-    @scala.inline
-    def setWorkspace(value: WorkspaceClientCapabilities): Self = this.set("workspace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspace: Self = this.set("workspace", js.undefined)
+    def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
   }
 }

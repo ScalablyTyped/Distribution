@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Networking.Vpn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnAppIdType extends js.Object
+sealed trait VpnAppIdType extends StObject
 /** Specifies the type of AppId understood by the VPN platform. */
 @JSGlobal("Windows.Networking.Vpn.VpnAppIdType")
 @js.native
-object VpnAppIdType extends js.Object {
+object VpnAppIdType extends StObject {
   
   /** File path. */
   @js.native

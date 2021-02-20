@@ -1,11 +1,12 @@
 package typings.webgme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearOldDataAtStartUp extends js.Object {
+trait ClearOldDataAtStartUp extends StObject {
   
   /**
     * If true, all data stored for jobs 
@@ -61,39 +62,27 @@ object ClearOldDataAtStartUp {
   }
   
   @scala.inline
-  implicit class ClearOldDataAtStartUpOps[Self <: ClearOldDataAtStartUp] (val x: Self) extends AnyVal {
+  implicit class ClearOldDataAtStartUpMutableBuilder[Self <: ClearOldDataAtStartUp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearOldDataAtStartUp(value: Boolean): Self = StObject.set(x, "clearOldDataAtStartUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearOutputTimeout(value: Double): Self = StObject.set(x, "clearOutputTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearOldDataAtStartUp(value: Boolean): Self = this.set("clearOldDataAtStartUp", value.asInstanceOf[js.Any])
+    def setLabelJobs(value: String): Self = StObject.set(x, "labelJobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearOutputTimeout(value: Double): Self = this.set("clearOutputTimeout", value.asInstanceOf[js.Any])
+    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    def setNonceNull: Self = StObject.set(x, "nonce", null)
     
     @scala.inline
-    def setLabelJobs(value: String): Self = this.set("labelJobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkerRefreshInterval(value: Double): Self = this.set("workerRefreshInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNonceNull: Self = this.set("nonce", null)
+    def setWorkerRefreshInterval(value: Double): Self = StObject.set(x, "workerRefreshInterval", value.asInstanceOf[js.Any])
   }
 }

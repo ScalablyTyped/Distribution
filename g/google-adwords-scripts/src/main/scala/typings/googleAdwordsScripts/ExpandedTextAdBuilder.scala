@@ -1,14 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExpandedTextAdBuilder[ExpandedTextAd]
-  extends AdWordsBuilder[ExpandedTextAdBuilder[ExpandedTextAd]]
-     with hasFinalUrlBuilder[ExpandedTextAdBuilder[ExpandedTextAd]]
-     with hasTrackingTemplateBuilder[ExpandedTextAdBuilder[ExpandedTextAd]] {
+trait ExpandedTextAdBuilder[ExpandedTextAd] extends AdBuilder[ExpandedTextAdBuilder[ExpandedTextAd]] {
   
   def withDescription(descriptions: String): ExpandedTextAdBuilder[ExpandedTextAd] = js.native
   
@@ -40,33 +38,21 @@ object ExpandedTextAdBuilder {
   }
   
   @scala.inline
-  implicit class ExpandedTextAdBuilderOps[Self <: ExpandedTextAdBuilder[_], ExpandedTextAd] (val x: Self with ExpandedTextAdBuilder[ExpandedTextAd]) extends AnyVal {
+  implicit class ExpandedTextAdBuilderMutableBuilder[Self <: ExpandedTextAdBuilder[_], ExpandedTextAd] (val x: Self with ExpandedTextAdBuilder[ExpandedTextAd]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithDescription(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithHeadlinePart1(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withHeadlinePart1", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithHeadlinePart2(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withHeadlinePart2", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDescription(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = this.set("withDescription", js.Any.fromFunction1(value))
+    def setWithPath1(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withPath1", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithHeadlinePart1(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = this.set("withHeadlinePart1", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithHeadlinePart2(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = this.set("withHeadlinePart2", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithPath1(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = this.set("withPath1", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithPath2(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = this.set("withPath2", js.Any.fromFunction1(value))
+    def setWithPath2(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withPath2", js.Any.fromFunction1(value))
   }
 }

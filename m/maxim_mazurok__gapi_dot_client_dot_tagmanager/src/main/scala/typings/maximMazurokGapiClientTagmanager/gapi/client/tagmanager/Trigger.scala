@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Trigger extends js.Object {
+trait Trigger extends StObject {
   
   /** GTM Account ID. */
   var accountId: js.UndefOr[String] = js.native
@@ -177,222 +178,210 @@ object Trigger {
   }
   
   @scala.inline
-  implicit class TriggerOps[Self <: Trigger] (val x: Self) extends AnyVal {
+  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoEventFilter(value: js.Array[Condition]): Self = StObject.set(x, "autoEventFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAutoEventFilterUndefined: Self = StObject.set(x, "autoEventFilter", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAutoEventFilterVarargs(value: Condition*): Self = StObject.set(x, "autoEventFilter", js.Array(value :_*))
     
     @scala.inline
-    def setAutoEventFilterVarargs(value: Condition*): Self = this.set("autoEventFilter", js.Array(value :_*))
+    def setCheckValidation(value: Parameter): Self = StObject.set(x, "checkValidation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoEventFilter(value: js.Array[Condition]): Self = this.set("autoEventFilter", value.asInstanceOf[js.Any])
+    def setCheckValidationUndefined: Self = StObject.set(x, "checkValidation", js.undefined)
     
     @scala.inline
-    def deleteAutoEventFilter: Self = this.set("autoEventFilter", js.undefined)
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckValidation(value: Parameter): Self = this.set("checkValidation", value.asInstanceOf[js.Any])
+    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
     @scala.inline
-    def deleteCheckValidation: Self = this.set("checkValidation", js.undefined)
+    def setContinuousTimeMinMilliseconds(value: Parameter): Self = StObject.set(x, "continuousTimeMinMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setContinuousTimeMinMillisecondsUndefined: Self = StObject.set(x, "continuousTimeMinMilliseconds", js.undefined)
     
     @scala.inline
-    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    def setCustomEventFilter(value: js.Array[Condition]): Self = StObject.set(x, "customEventFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContinuousTimeMinMilliseconds(value: Parameter): Self = this.set("continuousTimeMinMilliseconds", value.asInstanceOf[js.Any])
+    def setCustomEventFilterUndefined: Self = StObject.set(x, "customEventFilter", js.undefined)
     
     @scala.inline
-    def deleteContinuousTimeMinMilliseconds: Self = this.set("continuousTimeMinMilliseconds", js.undefined)
+    def setCustomEventFilterVarargs(value: Condition*): Self = StObject.set(x, "customEventFilter", js.Array(value :_*))
     
     @scala.inline
-    def setCustomEventFilterVarargs(value: Condition*): Self = this.set("customEventFilter", js.Array(value :_*))
+    def setEventName(value: Parameter): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomEventFilter(value: js.Array[Condition]): Self = this.set("customEventFilter", value.asInstanceOf[js.Any])
+    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
     @scala.inline
-    def deleteCustomEventFilter: Self = this.set("customEventFilter", js.undefined)
+    def setFilter(value: js.Array[Condition]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventName(value: Parameter): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteEventName: Self = this.set("eventName", js.undefined)
+    def setFilterVarargs(value: Condition*): Self = StObject.set(x, "filter", js.Array(value :_*))
     
     @scala.inline
-    def setFilterVarargs(value: Condition*): Self = this.set("filter", js.Array(value :_*))
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: js.Array[Condition]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setHorizontalScrollPercentageList(value: Parameter): Self = StObject.set(x, "horizontalScrollPercentageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setHorizontalScrollPercentageListUndefined: Self = StObject.set(x, "horizontalScrollPercentageList", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setInterval(value: Parameter): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalScrollPercentageList(value: Parameter): Self = this.set("horizontalScrollPercentageList", value.asInstanceOf[js.Any])
+    def setIntervalSeconds(value: Parameter): Self = StObject.set(x, "intervalSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontalScrollPercentageList: Self = this.set("horizontalScrollPercentageList", js.undefined)
+    def setIntervalSecondsUndefined: Self = StObject.set(x, "intervalSeconds", js.undefined)
     
     @scala.inline
-    def setInterval(value: Parameter): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setLimit(value: Parameter): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntervalSeconds(value: Parameter): Self = this.set("intervalSeconds", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteIntervalSeconds: Self = this.set("intervalSeconds", js.undefined)
+    def setMaxTimerLengthSeconds(value: Parameter): Self = StObject.set(x, "maxTimerLengthSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Parameter): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMaxTimerLengthSecondsUndefined: Self = StObject.set(x, "maxTimerLengthSeconds", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTimerLengthSeconds(value: Parameter): Self = this.set("maxTimerLengthSeconds", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMaxTimerLengthSeconds: Self = this.set("maxTimerLengthSeconds", js.undefined)
+    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setParameter(value: js.Array[Parameter]): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
     
     @scala.inline
-    def setParameterVarargs(value: Parameter*): Self = this.set("parameter", js.Array(value :_*))
+    def setParentFolderId(value: String): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameter(value: js.Array[Parameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
     
     @scala.inline
-    def deleteParameter: Self = this.set("parameter", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFolderId(value: String): Self = this.set("parentFolderId", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteParentFolderId: Self = this.set("parentFolderId", js.undefined)
+    def setSelector(value: Parameter): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setTagManagerUrl(value: String): Self = StObject.set(x, "tagManagerUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelector(value: Parameter): Self = this.set("selector", value.asInstanceOf[js.Any])
+    def setTagManagerUrlUndefined: Self = StObject.set(x, "tagManagerUrl", js.undefined)
     
     @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setTotalTimeMinMilliseconds(value: Parameter): Self = StObject.set(x, "totalTimeMinMilliseconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagManagerUrl(value: String): Self = this.set("tagManagerUrl", value.asInstanceOf[js.Any])
+    def setTotalTimeMinMillisecondsUndefined: Self = StObject.set(x, "totalTimeMinMilliseconds", js.undefined)
     
     @scala.inline
-    def deleteTagManagerUrl: Self = this.set("tagManagerUrl", js.undefined)
+    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalTimeMinMilliseconds(value: Parameter): Self = this.set("totalTimeMinMilliseconds", value.asInstanceOf[js.Any])
+    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
     
     @scala.inline
-    def deleteTotalTimeMinMilliseconds: Self = this.set("totalTimeMinMilliseconds", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggerId(value: String): Self = this.set("triggerId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTriggerId: Self = this.set("triggerId", js.undefined)
+    def setUniqueTriggerId(value: Parameter): Self = StObject.set(x, "uniqueTriggerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUniqueTriggerIdUndefined: Self = StObject.set(x, "uniqueTriggerId", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVerticalScrollPercentageList(value: Parameter): Self = StObject.set(x, "verticalScrollPercentageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUniqueTriggerId(value: Parameter): Self = this.set("uniqueTriggerId", value.asInstanceOf[js.Any])
+    def setVerticalScrollPercentageListUndefined: Self = StObject.set(x, "verticalScrollPercentageList", js.undefined)
     
     @scala.inline
-    def deleteUniqueTriggerId: Self = this.set("uniqueTriggerId", js.undefined)
+    def setVisibilitySelector(value: Parameter): Self = StObject.set(x, "visibilitySelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalScrollPercentageList(value: Parameter): Self = this.set("verticalScrollPercentageList", value.asInstanceOf[js.Any])
+    def setVisibilitySelectorUndefined: Self = StObject.set(x, "visibilitySelector", js.undefined)
     
     @scala.inline
-    def deleteVerticalScrollPercentageList: Self = this.set("verticalScrollPercentageList", js.undefined)
+    def setVisiblePercentageMax(value: Parameter): Self = StObject.set(x, "visiblePercentageMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisibilitySelector(value: Parameter): Self = this.set("visibilitySelector", value.asInstanceOf[js.Any])
+    def setVisiblePercentageMaxUndefined: Self = StObject.set(x, "visiblePercentageMax", js.undefined)
     
     @scala.inline
-    def deleteVisibilitySelector: Self = this.set("visibilitySelector", js.undefined)
+    def setVisiblePercentageMin(value: Parameter): Self = StObject.set(x, "visiblePercentageMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisiblePercentageMax(value: Parameter): Self = this.set("visiblePercentageMax", value.asInstanceOf[js.Any])
+    def setVisiblePercentageMinUndefined: Self = StObject.set(x, "visiblePercentageMin", js.undefined)
     
     @scala.inline
-    def deleteVisiblePercentageMax: Self = this.set("visiblePercentageMax", js.undefined)
+    def setWaitForTags(value: Parameter): Self = StObject.set(x, "waitForTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisiblePercentageMin(value: Parameter): Self = this.set("visiblePercentageMin", value.asInstanceOf[js.Any])
+    def setWaitForTagsTimeout(value: Parameter): Self = StObject.set(x, "waitForTagsTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisiblePercentageMin: Self = this.set("visiblePercentageMin", js.undefined)
+    def setWaitForTagsTimeoutUndefined: Self = StObject.set(x, "waitForTagsTimeout", js.undefined)
     
     @scala.inline
-    def setWaitForTags(value: Parameter): Self = this.set("waitForTags", value.asInstanceOf[js.Any])
+    def setWaitForTagsUndefined: Self = StObject.set(x, "waitForTags", js.undefined)
     
     @scala.inline
-    def deleteWaitForTags: Self = this.set("waitForTags", js.undefined)
+    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForTagsTimeout(value: Parameter): Self = this.set("waitForTagsTimeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForTagsTimeout: Self = this.set("waitForTagsTimeout", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceId(value: String): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceId: Self = this.set("workspaceId", js.undefined)
+    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

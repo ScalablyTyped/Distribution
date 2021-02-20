@@ -2,13 +2,129 @@ package typings.jsmockito
 
 import typings.jsmockito.JsMockito.Verifier
 import typings.jsmockito.anon.Instantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
+  
+  object JsMockito {
+    
+    @JSGlobal("JsMockito")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    object Integration {
+      
+      @JSGlobal("JsMockito.Integration.JsTestDriver")
+      @js.native
+      def JsTestDriver(): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.JsUnitTest")
+      @js.native
+      def JsUnitTest(): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.QUnit")
+      @js.native
+      def QUnit(): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.YUITest")
+      @js.native
+      def YUITest(): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.importTo")
+      @js.native
+      def importTo(target: js.Any): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.jSpec")
+      @js.native
+      def jSpec(): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.jsUnity")
+      @js.native
+      def jsUnity(): Unit = js.native
+      
+      @JSGlobal("JsMockito.Integration.screwunit")
+      @js.native
+      def screwunit(): Unit = js.native
+    }
+    
+    @JSGlobal("JsMockito.JsMockitoStubBuilder")
+    @js.native
+    class JsMockitoStubBuilder ()
+      extends typings.jsmockito.JsMockito.JsMockitoStubBuilder
+    
+    object Verifiers {
+      
+      @JSGlobal("JsMockito.Verifiers.never")
+      @js.native
+      def never(): Verifier = js.native
+      
+      @JSGlobal("JsMockito.Verifiers.noMoreInteractions")
+      @js.native
+      def noMoreInteractions(): Verifier = js.native
+      
+      @JSGlobal("JsMockito.Verifiers.once")
+      @js.native
+      def once(): Verifier = js.native
+      
+      @JSGlobal("JsMockito.Verifiers.times")
+      @js.native
+      def times(wanted: Double): Verifier = js.native
+      
+      @JSGlobal("JsMockito.Verifiers.zeroInteractions")
+      @js.native
+      def zeroInteractions(): Verifier = js.native
+    }
+    
+    @JSGlobal("JsMockito.isMock")
+    @js.native
+    def isMock(maybeMock: js.Any): Boolean = js.native
+    
+    @JSGlobal("JsMockito.mock")
+    @js.native
+    def mock[T](Obj: Instantiable[T]): T = js.native
+    
+    @JSGlobal("JsMockito.mockFunction")
+    @js.native
+    def mockFunction(): js.Function = js.native
+    @JSGlobal("JsMockito.mockFunction")
+    @js.native
+    def mockFunction(funcName: String): js.Function = js.native
+    @JSGlobal("JsMockito.mockFunction")
+    @js.native
+    def mockFunction(funcName: String, delegate: js.Function): js.Function = js.native
+    
+    @JSGlobal("JsMockito.spy")
+    @js.native
+    def spy[T](delegate: T): T = js.native
+    
+    @JSGlobal("JsMockito.verify")
+    @js.native
+    def verify[T](mock: T): T = js.native
+    @JSGlobal("JsMockito.verify")
+    @js.native
+    def verify[T](mock: T, verifier: Verifier): T = js.native
+    
+    @JSGlobal("JsMockito.verifyNoMoreInteractions")
+    @js.native
+    def verifyNoMoreInteractions(mock: js.Any*): Unit = js.native
+    
+    @JSGlobal("JsMockito.verifyZeroInteractions")
+    @js.native
+    def verifyZeroInteractions(mock: js.Any*): Unit = js.native
+    
+    @JSGlobal("JsMockito.version")
+    @js.native
+    def version: String = js.native
+    @scala.inline
+    def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("JsMockito.when")
+    @js.native
+    def when[T](mock: T): T = js.native
+  }
   
   //
   // Functions that are copied by JsMockito.Integration.importTo() to the global scope are repeated here.
@@ -19,6 +135,8 @@ object global extends js.Object {
     * @param maybeMock An object
     * @return {boolean} true if the variable is a mock
     */
+  @JSGlobal("isMock")
+  @js.native
   def isMock(maybeMock: js.Any): Boolean = js.native
   
   /**
@@ -50,6 +168,8 @@ object global extends js.Object {
     * @param Obj {function} the constructor for the object to be mocked
     * @return {object} a mock object
     */
+  @JSGlobal("mock")
+  @js.native
   def mock[T](Obj: Instantiable[T]): T = js.native
   
   /**
@@ -69,8 +189,14 @@ object global extends js.Object {
     * @param delegate The function to delegate unstubbed calls to (optional)
     * @return {T} an anonymous function
     */
+  @JSGlobal("mockFunction")
+  @js.native
   def mockFunction(): js.Function = js.native
+  @JSGlobal("mockFunction")
+  @js.native
   def mockFunction(funcName: String): js.Function = js.native
+  @JSGlobal("mockFunction")
+  @js.native
   def mockFunction(funcName: String, delegate: js.Function): js.Function = js.native
   
   /**
@@ -80,6 +206,8 @@ object global extends js.Object {
     * </pre>
     * @see JsMockito.Verifiers.times(0)
     */
+  @JSGlobal("never")
+  @js.native
   def never(): Verifier = js.native
   
   /** Test that no further interactions remain unverified on the mock.  For
@@ -89,6 +217,8 @@ object global extends js.Object {
     * </pre>
     * @see JsMockito.verifyNoMoreInteractions()
     */
+  @JSGlobal("noMoreInteractions")
+  @js.native
   def noMoreInteractions(): Verifier = js.native
   
   /**
@@ -99,6 +229,8 @@ object global extends js.Object {
     * This is the default verifier.
     * @see JsMockito.Verifiers.times(1)
     */
+  @JSGlobal("once")
+  @js.native
   def once(): Verifier = js.native
   
   /**
@@ -109,6 +241,8 @@ object global extends js.Object {
     * @param delegate A 'real' (concrete) object or function that the mock will delegate unstubbed invocations to
     * @return {T} A mock object (as per mock) or mock function (as per mockFunction)
     */
+  @JSGlobal("spy")
+  @js.native
   def spy[T](delegate: T): T = js.native
   
   /**
@@ -119,6 +253,8 @@ object global extends js.Object {
     *
     * @param wanted The number of desired invocations
     */
+  @JSGlobal("times")
+  @js.native
   def times(wanted: Double): Verifier = js.native
   
   /**
@@ -128,7 +264,11 @@ object global extends js.Object {
     * @param verifier Optional JsMockito.Verifier instance (default: JsMockito.Verifiers.once())
     * @return {T} A verifier on which the method or function to be verified can be invoked
     */
+  @JSGlobal("verify")
+  @js.native
   def verify[T](mock: T): T = js.native
+  @JSGlobal("verify")
+  @js.native
   def verify[T](mock: T, verifier: Verifier): T = js.native
   
   /**
@@ -137,6 +277,8 @@ object global extends js.Object {
     *
     * @param mock A mock object or mock anonymous function (multiple accepted)
     */
+  @JSGlobal("verifyNoMoreInteractions")
+  @js.native
   def verifyNoMoreInteractions(mock: js.Any*): Unit = js.native
   
   /**
@@ -144,6 +286,8 @@ object global extends js.Object {
     *
     * @param mock A mock object or mock anonymous function (multiple accepted)
     */
+  @JSGlobal("verifyZeroInteractions")
+  @js.native
   def verifyZeroInteractions(mock: js.Any*): Unit = js.native
   
   /**
@@ -152,6 +296,8 @@ object global extends js.Object {
     * @param mock A mock object or mock anonymous function
     * @return {T} A stub builder on which the method or function to be stubbed can be invoked
     */
+  @JSGlobal("when")
+  @js.native
   def when[T](mock: T): T = js.native
   
   /** Test that no interaction were made on the mock.  For example:
@@ -160,68 +306,7 @@ object global extends js.Object {
     * </pre>
     * @see JsMockito.verifyZeroInteractions()
     */
-  def zeroInteractions(): Verifier = js.native
-  
+  @JSGlobal("zeroInteractions")
   @js.native
-  object JsMockito extends js.Object {
-    
-    def isMock(maybeMock: js.Any): Boolean = js.native
-    
-    def mock[T](Obj: Instantiable[T]): T = js.native
-    
-    def mockFunction(): js.Function = js.native
-    def mockFunction(funcName: String): js.Function = js.native
-    def mockFunction(funcName: String, delegate: js.Function): js.Function = js.native
-    
-    def spy[T](delegate: T): T = js.native
-    
-    def verify[T](mock: T): T = js.native
-    def verify[T](mock: T, verifier: Verifier): T = js.native
-    
-    def verifyNoMoreInteractions(mock: js.Any*): Unit = js.native
-    
-    def verifyZeroInteractions(mock: js.Any*): Unit = js.native
-    
-    var version: String = js.native
-    
-    def when[T](mock: T): T = js.native
-    
-    @js.native
-    object Integration extends js.Object {
-      
-      def JsTestDriver(): Unit = js.native
-      
-      def JsUnitTest(): Unit = js.native
-      
-      def QUnit(): Unit = js.native
-      
-      def YUITest(): Unit = js.native
-      
-      def importTo(target: js.Any): Unit = js.native
-      
-      def jSpec(): Unit = js.native
-      
-      def jsUnity(): Unit = js.native
-      
-      def screwunit(): Unit = js.native
-    }
-    
-    @js.native
-    class JsMockitoStubBuilder ()
-      extends typings.jsmockito.JsMockito.JsMockitoStubBuilder
-    
-    @js.native
-    object Verifiers extends js.Object {
-      
-      def never(): Verifier = js.native
-      
-      def noMoreInteractions(): Verifier = js.native
-      
-      def once(): Verifier = js.native
-      
-      def times(wanted: Double): Verifier = js.native
-      
-      def zeroInteractions(): Verifier = js.native
-    }
-  }
+  def zeroInteractions(): Verifier = js.native
 }

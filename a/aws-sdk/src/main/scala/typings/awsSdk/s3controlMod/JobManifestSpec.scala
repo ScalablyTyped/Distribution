@@ -1,11 +1,12 @@
 package typings.awsSdk.s3controlMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobManifestSpec extends js.Object {
+trait JobManifestSpec extends StObject {
   
   /**
     * If the specified manifest object is in the S3BatchOperations_CSV_20180820 format, this element describes which columns contain the required data.
@@ -26,30 +27,18 @@ object JobManifestSpec {
   }
   
   @scala.inline
-  implicit class JobManifestSpecOps[Self <: JobManifestSpec] (val x: Self) extends AnyVal {
+  implicit class JobManifestSpecMutableBuilder[Self <: JobManifestSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: JobManifestFieldList): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldsVarargs(value: JobManifestFieldName*): Self = StObject.set(x, "Fields", js.Array(value :_*))
     
     @scala.inline
-    def setFormat(value: JobManifestFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldsVarargs(value: JobManifestFieldName*): Self = this.set("Fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: JobManifestFieldList): Self = this.set("Fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFields: Self = this.set("Fields", js.undefined)
+    def setFormat(value: JobManifestFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
   }
 }

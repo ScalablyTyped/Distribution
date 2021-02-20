@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.PowerClassConstant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassName extends js.Object {
+trait ClassName extends StObject {
   
   var className: PowerClassConstant = js.native
   
@@ -31,63 +32,51 @@ object ClassName {
   }
   
   @scala.inline
-  implicit class ClassNameOps[Self <: ClassName] (val x: Self) extends AnyVal {
+  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: PowerClassConstant): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDuration(value: Double | js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: PowerClassConstant): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def setCooldown(value: Double): Self = this.set("cooldown", value.asInstanceOf[js.Any])
+    def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
     
     @scala.inline
-    def setLevelVarargs(value: Double*): Self = this.set("level", js.Array(value :_*))
+    def setEffect(value: js.Array[Double]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: js.Array[Double]): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
     @scala.inline
-    def setDurationVarargs(value: Double*): Self = this.set("duration", js.Array(value :_*))
+    def setEffectVarargs(value: Double*): Self = StObject.set(x, "effect", js.Array(value :_*))
     
     @scala.inline
-    def setDuration(value: Double | js.Array[Double]): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setLevel(value: js.Array[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
+    def setLevelVarargs(value: Double*): Self = StObject.set(x, "level", js.Array(value :_*))
     
     @scala.inline
-    def setEffectVarargs(value: Double*): Self = this.set("effect", js.Array(value :_*))
+    def setOps(value: Double | js.Array[Double]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEffect(value: js.Array[Double]): Self = this.set("effect", value.asInstanceOf[js.Any])
+    def setOpsUndefined: Self = StObject.set(x, "ops", js.undefined)
     
     @scala.inline
-    def deleteEffect: Self = this.set("effect", js.undefined)
+    def setOpsVarargs(value: Double*): Self = StObject.set(x, "ops", js.Array(value :_*))
     
     @scala.inline
-    def setOpsVarargs(value: Double*): Self = this.set("ops", js.Array(value :_*))
+    def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOps(value: Double | js.Array[Double]): Self = this.set("ops", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOps: Self = this.set("ops", js.undefined)
-    
-    @scala.inline
-    def setRange(value: Double): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

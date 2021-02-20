@@ -1,11 +1,12 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MountPoint extends js.Object {
+trait MountPoint extends StObject {
   
   /**
     * The path on the container at which to mount the host volume.
@@ -31,36 +32,24 @@ object MountPoint {
   }
   
   @scala.inline
-  implicit class MountPointOps[Self <: MountPoint] (val x: Self) extends AnyVal {
+  implicit class MountPointMutableBuilder[Self <: MountPoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerPathUndefined: Self = StObject.set(x, "containerPath", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerPath(value: String): Self = this.set("containerPath", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deleteContainerPath: Self = this.set("containerPath", js.undefined)
+    def setSourceVolume(value: String): Self = StObject.set(x, "sourceVolume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
-    
-    @scala.inline
-    def setSourceVolume(value: String): Self = this.set("sourceVolume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceVolume: Self = this.set("sourceVolume", js.undefined)
+    def setSourceVolumeUndefined: Self = StObject.set(x, "sourceVolume", js.undefined)
   }
 }

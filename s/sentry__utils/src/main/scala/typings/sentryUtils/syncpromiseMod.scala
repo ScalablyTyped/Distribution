@@ -1,14 +1,14 @@
 package typings.sentryUtils
 
 import typings.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@sentry/utils/dist/syncpromise", JSImport.Namespace)
-@js.native
-object syncpromiseMod extends js.Object {
+object syncpromiseMod {
   
+  @JSImport("@sentry/utils/dist/syncpromise", "SyncPromise")
   @js.native
   class SyncPromise[T] protected () extends PromiseLike[T] {
     def this(executor: js.Function2[
@@ -46,19 +46,30 @@ object syncpromiseMod extends js.Object {
     def `finally`[TResult](): js.Thenable[TResult] = js.native
     def `finally`[TResult](onfinally: js.Function0[Unit]): js.Thenable[TResult] = js.native
   }
-  /* static members */
-  @js.native
-  object SyncPromise extends js.Object {
+  object SyncPromise {
     
     /** JSDoc */
+    /* static member */
+    @JSImport("@sentry/utils/dist/syncpromise", "SyncPromise.all")
+    @js.native
     def all[U](collection: js.Array[U | js.Thenable[U]]): js.Thenable[js.Array[U]] = js.native
     
     /** JSDoc */
+    /* static member */
+    @JSImport("@sentry/utils/dist/syncpromise", "SyncPromise.reject")
+    @js.native
     def reject[T](): js.Thenable[T] = js.native
+    @JSImport("@sentry/utils/dist/syncpromise", "SyncPromise.reject")
+    @js.native
     def reject[T](reason: js.Any): js.Thenable[T] = js.native
     
     /** JSDoc */
+    /* static member */
+    @JSImport("@sentry/utils/dist/syncpromise", "SyncPromise.resolve")
+    @js.native
     def resolve[T](value: T): js.Thenable[T] = js.native
+    @JSImport("@sentry/utils/dist/syncpromise", "SyncPromise.resolve")
+    @js.native
     def resolve[T](value: js.Thenable[T]): js.Thenable[T] = js.native
   }
 }

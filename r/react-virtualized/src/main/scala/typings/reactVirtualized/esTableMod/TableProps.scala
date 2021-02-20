@@ -19,6 +19,7 @@ import typings.reactVirtualized.mod.Index
 import typings.reactVirtualized.mod.IndexRange
 import typings.reactVirtualized.mod.OverscanIndexRange
 import typings.reactVirtualized.mod.ScrollEventData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -392,365 +393,353 @@ object TableProps {
   }
   
   @scala.inline
-  implicit class TablePropsOps[Self <: TableProps] (val x: Self) extends AnyVal {
+  implicit class TablePropsMutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
     @scala.inline
-    def setHeight(value: Double with js.UndefOr[Double]): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setAutoContainerWidth(value: Boolean): Self = StObject.set(x, "autoContainerWidth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAutoContainerWidthUndefined: Self = StObject.set(x, "autoContainerWidth", js.undefined)
+    
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
+    
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+    
+    @scala.inline
+    def setCellRangeRenderer(value: /* params */ GridCellRangeProps => js.Array[ReactNode]): Self = StObject.set(x, "cellRangeRenderer", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setCellRangeRendererUndefined: Self = StObject.set(x, "cellRangeRenderer", js.undefined)
+    
+    @scala.inline
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    @scala.inline
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    @scala.inline
+    def setContainerProps(value: js.Object): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContainerPropsUndefined: Self = StObject.set(x, "containerProps", js.undefined)
+    
+    @scala.inline
+    def setContainerRole(value: String): Self = StObject.set(x, "containerRole", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContainerRoleUndefined: Self = StObject.set(x, "containerRole", js.undefined)
+    
+    @scala.inline
+    def setContainerStyle(value: CSSProperties): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+    
+    @scala.inline
+    def setDeferredMeasurementCache(value: CellMeasurerCache): Self = StObject.set(x, "deferredMeasurementCache", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeferredMeasurementCacheUndefined: Self = StObject.set(x, "deferredMeasurementCache", js.undefined)
+    
+    @scala.inline
+    def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDisableHeaderUndefined: Self = StObject.set(x, "disableHeader", js.undefined)
+    
+    @scala.inline
+    def setEstimatedColumnSize(value: Double): Self = StObject.set(x, "estimatedColumnSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEstimatedColumnSizeUndefined: Self = StObject.set(x, "estimatedColumnSize", js.undefined)
+    
+    @scala.inline
+    def setEstimatedRowSize(value: Double): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEstimatedRowSizeUndefined: Self = StObject.set(x, "estimatedRowSize", js.undefined)
+    
+    @scala.inline
+    def setGetScrollbarSize(value: () => Double): Self = StObject.set(x, "getScrollbarSize", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetScrollbarSizeUndefined: Self = StObject.set(x, "getScrollbarSize", js.undefined)
+    
+    @scala.inline
+    def setGridClassName(value: String): Self = StObject.set(x, "gridClassName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGridClassNameUndefined: Self = StObject.set(x, "gridClassName", js.undefined)
+    
+    @scala.inline
+    def setGridStyle(value: js.Any): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGridStyleUndefined: Self = StObject.set(x, "gridStyle", js.undefined)
+    
+    @scala.inline
+    def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
+    
+    @scala.inline
+    def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = StObject.set(x, "headerRowRenderer", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setHeaderRowRendererUndefined: Self = StObject.set(x, "headerRowRenderer", js.undefined)
+    
+    @scala.inline
+    def setHeaderStyle(value: js.Any): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+    
+    @scala.inline
+    def setHeight(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    @scala.inline
+    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsScrollingUndefined: Self = StObject.set(x, "isScrolling", js.undefined)
+    
+    @scala.inline
+    def setNoContentRenderer(value: () => ReactNode): Self = StObject.set(x, "noContentRenderer", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
+    
+    @scala.inline
+    def setNoRowsRenderer(value: () => Element | Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setNoRowsRendererUndefined: Self = StObject.set(x, "noRowsRenderer", js.undefined)
+    
+    @scala.inline
+    def setOnHeaderClick(value: /* params */ HeaderMouseEventHandlerParams => Unit): Self = StObject.set(x, "onHeaderClick", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnHeaderClickUndefined: Self = StObject.set(x, "onHeaderClick", js.undefined)
+    
+    @scala.inline
+    def setOnRowClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+    
+    @scala.inline
+    def setOnRowDoubleClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
+    
+    @scala.inline
+    def setOnRowMouseOut(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
+    
+    @scala.inline
+    def setOnRowMouseOver(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
+    
+    @scala.inline
+    def setOnRowsRendered(value: /* info */ IndexRange with OverscanIndexRange => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
     
     @scala.inline
     def setOnScroll(
       value: (js.UndefOr[js.Function1[/* params */ ScrollParams, _]]) with (js.UndefOr[js.Function1[/* info */ ScrollEventData, Unit]])
-    ): Self = this.set("onScroll", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => _): Self = StObject.set(x, "onScrollbarPresenceChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowHeightFunction1(value: /* params */ Index => Double): Self = this.set("rowHeight", js.Any.fromFunction1(value))
+    def setOnScrollbarPresenceChangeUndefined: Self = StObject.set(x, "onScrollbarPresenceChange", js.undefined)
     
     @scala.inline
-    def setRowHeight(value: Double | (js.Function1[/* params */ Index, Double])): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setScrollToAlignment(value: js.UndefOr[Alignment] with js.UndefOr[String]): Self = this.set("scrollToAlignment", value.asInstanceOf[js.Any])
+    def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double with js.UndefOr[Double]): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setOverscanColumnCount(value: Double): Self = StObject.set(x, "overscanColumnCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    def setOverscanColumnCountUndefined: Self = StObject.set(x, "overscanColumnCount", js.undefined)
     
     @scala.inline
-    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = StObject.set(x, "overscanIndicesGetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setAria-readonly`(value: Boolean): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    def setOverscanIndicesGetterUndefined: Self = StObject.set(x, "overscanIndicesGetter", js.undefined)
     
     @scala.inline
-    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    def setOverscanRowCount(value: Double): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoContainerWidth(value: Boolean): Self = this.set("autoContainerWidth", value.asInstanceOf[js.Any])
+    def setOverscanRowCountUndefined: Self = StObject.set(x, "overscanRowCount", js.undefined)
     
     @scala.inline
-    def deleteAutoContainerWidth: Self = this.set("autoContainerWidth", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    def setRowClassName(value: String | (js.Function1[/* info */ Index, String])): Self = StObject.set(x, "rowClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    def setRowClassNameFunction1(value: /* info */ Index => String): Self = StObject.set(x, "rowClassName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
     
     @scala.inline
-    def setCellRangeRenderer(value: /* params */ GridCellRangeProps => js.Array[ReactNode]): Self = this.set("cellRangeRenderer", js.Any.fromFunction1(value))
+    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCellRangeRenderer: Self = this.set("cellRangeRenderer", js.undefined)
+    def setRowGetter(value: /* info */ Index => _): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setRowGetterUndefined: Self = StObject.set(x, "rowGetter", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setRowHeight(value: Double | (js.Function1[/* params */ Index, Double])): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setRowHeightFunction1(value: /* params */ Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainerProps(value: js.Object): Self = this.set("containerProps", value.asInstanceOf[js.Any])
+    def setRowRendererUndefined: Self = StObject.set(x, "rowRenderer", js.undefined)
     
     @scala.inline
-    def deleteContainerProps: Self = this.set("containerProps", js.undefined)
+    def setRowStyle(value: CSSProperties | (js.Function1[/* info */ Index, CSSProperties])): Self = StObject.set(x, "rowStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerRole(value: String): Self = this.set("containerRole", value.asInstanceOf[js.Any])
+    def setRowStyleFunction1(value: /* info */ Index => CSSProperties): Self = StObject.set(x, "rowStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContainerRole: Self = this.set("containerRole", js.undefined)
+    def setRowStyleUndefined: Self = StObject.set(x, "rowStyle", js.undefined)
     
     @scala.inline
-    def setContainerStyle(value: CSSProperties): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
     
     @scala.inline
-    def setDeferredMeasurementCache(value: CellMeasurerCache): Self = this.set("deferredMeasurementCache", value.asInstanceOf[js.Any])
+    def setScrollToAlignment(value: js.UndefOr[Alignment] with js.UndefOr[String]): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferredMeasurementCache: Self = this.set("deferredMeasurementCache", js.undefined)
+    def setScrollToColumn(value: Double): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHeader(value: Boolean): Self = this.set("disableHeader", value.asInstanceOf[js.Any])
+    def setScrollToColumnUndefined: Self = StObject.set(x, "scrollToColumn", js.undefined)
     
     @scala.inline
-    def deleteDisableHeader: Self = this.set("disableHeader", js.undefined)
+    def setScrollToIndex(value: Double): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedColumnSize(value: Double): Self = this.set("estimatedColumnSize", value.asInstanceOf[js.Any])
+    def setScrollToIndexUndefined: Self = StObject.set(x, "scrollToIndex", js.undefined)
     
     @scala.inline
-    def deleteEstimatedColumnSize: Self = this.set("estimatedColumnSize", js.undefined)
+    def setScrollToRow(value: Double): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEstimatedRowSize(value: Double): Self = this.set("estimatedRowSize", value.asInstanceOf[js.Any])
+    def setScrollToRowUndefined: Self = StObject.set(x, "scrollToRow", js.undefined)
     
     @scala.inline
-    def deleteEstimatedRowSize: Self = this.set("estimatedRowSize", js.undefined)
+    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetScrollbarSize(value: () => Double): Self = this.set("getScrollbarSize", js.Any.fromFunction0(value))
+    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
     @scala.inline
-    def deleteGetScrollbarSize: Self = this.set("getScrollbarSize", js.undefined)
+    def setScrollingResetTimeInterval(value: Double): Self = StObject.set(x, "scrollingResetTimeInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridClassName(value: String): Self = this.set("gridClassName", value.asInstanceOf[js.Any])
+    def setScrollingResetTimeIntervalUndefined: Self = StObject.set(x, "scrollingResetTimeInterval", js.undefined)
     
     @scala.inline
-    def deleteGridClassName: Self = this.set("gridClassName", js.undefined)
+    def setSort(value: /* info */ SortBy => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGridStyle(value: js.Any): Self = this.set("gridStyle", value.asInstanceOf[js.Any])
+    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridStyle: Self = this.set("gridStyle", js.undefined)
+    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
     @scala.inline
-    def setHeaderClassName(value: String): Self = this.set("headerClassName", value.asInstanceOf[js.Any])
+    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeaderClassName: Self = this.set("headerClassName", js.undefined)
+    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
     @scala.inline
-    def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = this.set("headerRowRenderer", js.Any.fromFunction1(value))
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def deleteHeaderRowRenderer: Self = this.set("headerRowRenderer", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderStyle(value: js.Any): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTabIndexNull: Self = StObject.set(x, "tabIndex", null)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     @scala.inline
-    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsScrolling: Self = this.set("isScrolling", js.undefined)
-    
-    @scala.inline
-    def setNoContentRenderer(value: () => ReactNode): Self = this.set("noContentRenderer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteNoContentRenderer: Self = this.set("noContentRenderer", js.undefined)
-    
-    @scala.inline
-    def setNoRowsRenderer(value: () => Element | Null): Self = this.set("noRowsRenderer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteNoRowsRenderer: Self = this.set("noRowsRenderer", js.undefined)
-    
-    @scala.inline
-    def setOnHeaderClick(value: /* params */ HeaderMouseEventHandlerParams => Unit): Self = this.set("onHeaderClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnHeaderClick: Self = this.set("onHeaderClick", js.undefined)
-    
-    @scala.inline
-    def setOnRowClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowClick: Self = this.set("onRowClick", js.undefined)
-    
-    @scala.inline
-    def setOnRowDoubleClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowDoubleClick", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowDoubleClick: Self = this.set("onRowDoubleClick", js.undefined)
-    
-    @scala.inline
-    def setOnRowMouseOut(value: /* info */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowMouseOut", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowMouseOut: Self = this.set("onRowMouseOut", js.undefined)
-    
-    @scala.inline
-    def setOnRowMouseOver(value: /* info */ RowMouseEventHandlerParams => Unit): Self = this.set("onRowMouseOver", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowMouseOver: Self = this.set("onRowMouseOver", js.undefined)
-    
-    @scala.inline
-    def setOnRowsRendered(value: /* info */ IndexRange with OverscanIndexRange => Unit): Self = this.set("onRowsRendered", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnRowsRendered: Self = this.set("onRowsRendered", js.undefined)
-    
-    @scala.inline
-    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => _): Self = this.set("onScrollbarPresenceChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnScrollbarPresenceChange: Self = this.set("onScrollbarPresenceChange", js.undefined)
-    
-    @scala.inline
-    def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = this.set("onSectionRendered", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnSectionRendered: Self = this.set("onSectionRendered", js.undefined)
-    
-    @scala.inline
-    def setOverscanColumnCount(value: Double): Self = this.set("overscanColumnCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverscanColumnCount: Self = this.set("overscanColumnCount", js.undefined)
-    
-    @scala.inline
-    def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = this.set("overscanIndicesGetter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOverscanIndicesGetter: Self = this.set("overscanIndicesGetter", js.undefined)
-    
-    @scala.inline
-    def setOverscanRowCount(value: Double): Self = this.set("overscanRowCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverscanRowCount: Self = this.set("overscanRowCount", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
-    
-    @scala.inline
-    def setRowClassNameFunction1(value: /* info */ Index => String): Self = this.set("rowClassName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowClassName(value: String | (js.Function1[/* info */ Index, String])): Self = this.set("rowClassName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowClassName: Self = this.set("rowClassName", js.undefined)
-    
-    @scala.inline
-    def setRowGetter(value: /* info */ Index => _): Self = this.set("rowGetter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRowGetter: Self = this.set("rowGetter", js.undefined)
-    
-    @scala.inline
-    def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = this.set("rowRenderer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRowRenderer: Self = this.set("rowRenderer", js.undefined)
-    
-    @scala.inline
-    def setRowStyleFunction1(value: /* info */ Index => CSSProperties): Self = this.set("rowStyle", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRowStyle(value: CSSProperties | (js.Function1[/* info */ Index, CSSProperties])): Self = this.set("rowStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRowStyle: Self = this.set("rowStyle", js.undefined)
-    
-    @scala.inline
-    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollLeft: Self = this.set("scrollLeft", js.undefined)
-    
-    @scala.inline
-    def setScrollToColumn(value: Double): Self = this.set("scrollToColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollToColumn: Self = this.set("scrollToColumn", js.undefined)
-    
-    @scala.inline
-    def setScrollToIndex(value: Double): Self = this.set("scrollToIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollToIndex: Self = this.set("scrollToIndex", js.undefined)
-    
-    @scala.inline
-    def setScrollToRow(value: Double): Self = this.set("scrollToRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollToRow: Self = this.set("scrollToRow", js.undefined)
-    
-    @scala.inline
-    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
-    
-    @scala.inline
-    def setScrollingResetTimeInterval(value: Double): Self = this.set("scrollingResetTimeInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScrollingResetTimeInterval: Self = this.set("scrollingResetTimeInterval", js.undefined)
-    
-    @scala.inline
-    def setSort(value: /* info */ SortBy => Unit): Self = this.set("sort", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
-    
-    @scala.inline
-    def setSortBy(value: String): Self = this.set("sortBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortBy: Self = this.set("sortBy", js.undefined)
-    
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = this.set("sortDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortDirection: Self = this.set("sortDirection", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
-    
-    @scala.inline
-    def setTabIndexNull: Self = this.set("tabIndex", null)
+    def setWidth(value: Double with js.UndefOr[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

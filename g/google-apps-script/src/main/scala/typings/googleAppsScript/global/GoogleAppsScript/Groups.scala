@@ -1,12 +1,11 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Groups")
-@js.native
-object Groups extends js.Object {
+object Groups {
   
   /**
     * Possible roles of a user within a group, such as owner or ordinary member. Users subscribed to a
@@ -15,8 +14,9 @@ object Groups extends js.Object {
     *
     * Group.getRole(email)
     */
+  @JSGlobal("GoogleAppsScript.Groups.Role")
   @js.native
-  object Role extends js.Object {
+  object Role extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Groups.Role with Double] = js.native

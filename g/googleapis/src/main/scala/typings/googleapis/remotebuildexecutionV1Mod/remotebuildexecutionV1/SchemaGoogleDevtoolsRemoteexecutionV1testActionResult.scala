@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An ActionResult represents the result of an Action being run.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends js.Object {
+trait SchemaGoogleDevtoolsRemoteexecutionV1testActionResult extends StObject {
   
   /**
     * The exit code of the command.
@@ -96,66 +97,54 @@ object SchemaGoogleDevtoolsRemoteexecutionV1testActionResult {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testActionResultOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testActionResultMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOutputDirectories(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory]): Self = StObject.set(x, "outputDirectories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExitCode(value: Double): Self = this.set("exitCode", value.asInstanceOf[js.Any])
+    def setOutputDirectoriesUndefined: Self = StObject.set(x, "outputDirectories", js.undefined)
     
     @scala.inline
-    def deleteExitCode: Self = this.set("exitCode", js.undefined)
+    def setOutputDirectoriesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory*): Self = StObject.set(x, "outputDirectories", js.Array(value :_*))
     
     @scala.inline
-    def setOutputDirectoriesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory*): Self = this.set("outputDirectories", js.Array(value :_*))
+    def setOutputFiles(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputDirectories(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputDirectory]): Self = this.set("outputDirectories", value.asInstanceOf[js.Any])
+    def setOutputFilesUndefined: Self = StObject.set(x, "outputFiles", js.undefined)
     
     @scala.inline
-    def deleteOutputDirectories: Self = this.set("outputDirectories", js.undefined)
+    def setOutputFilesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
     
     @scala.inline
-    def setOutputFilesVarargs(value: SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile*): Self = this.set("outputFiles", js.Array(value :_*))
+    def setStderrDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "stderrDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputFiles(value: js.Array[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]): Self = this.set("outputFiles", value.asInstanceOf[js.Any])
+    def setStderrDigestUndefined: Self = StObject.set(x, "stderrDigest", js.undefined)
     
     @scala.inline
-    def deleteOutputFiles: Self = this.set("outputFiles", js.undefined)
+    def setStderrRaw(value: String): Self = StObject.set(x, "stderrRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderrDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("stderrDigest", value.asInstanceOf[js.Any])
+    def setStderrRawUndefined: Self = StObject.set(x, "stderrRaw", js.undefined)
     
     @scala.inline
-    def deleteStderrDigest: Self = this.set("stderrDigest", js.undefined)
+    def setStdoutDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "stdoutDigest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStderrRaw(value: String): Self = this.set("stderrRaw", value.asInstanceOf[js.Any])
+    def setStdoutDigestUndefined: Self = StObject.set(x, "stdoutDigest", js.undefined)
     
     @scala.inline
-    def deleteStderrRaw: Self = this.set("stderrRaw", js.undefined)
+    def setStdoutRaw(value: String): Self = StObject.set(x, "stdoutRaw", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdoutDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = this.set("stdoutDigest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdoutDigest: Self = this.set("stdoutDigest", js.undefined)
-    
-    @scala.inline
-    def setStdoutRaw(value: String): Self = this.set("stdoutRaw", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStdoutRaw: Self = this.set("stdoutRaw", js.undefined)
+    def setStdoutRawUndefined: Self = StObject.set(x, "stdoutRaw", js.undefined)
   }
 }

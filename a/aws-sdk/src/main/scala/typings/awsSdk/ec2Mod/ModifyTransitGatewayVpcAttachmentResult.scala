@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyTransitGatewayVpcAttachmentResult extends js.Object {
+trait ModifyTransitGatewayVpcAttachmentResult extends StObject {
   
   /**
     * Information about the modified attachment.
@@ -21,24 +22,12 @@ object ModifyTransitGatewayVpcAttachmentResult {
   }
   
   @scala.inline
-  implicit class ModifyTransitGatewayVpcAttachmentResultOps[Self <: ModifyTransitGatewayVpcAttachmentResult] (val x: Self) extends AnyVal {
+  implicit class ModifyTransitGatewayVpcAttachmentResultMutableBuilder[Self <: ModifyTransitGatewayVpcAttachmentResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTransitGatewayVpcAttachment(value: TransitGatewayVpcAttachment): Self = StObject.set(x, "TransitGatewayVpcAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTransitGatewayVpcAttachment(value: TransitGatewayVpcAttachment): Self = this.set("TransitGatewayVpcAttachment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitGatewayVpcAttachment: Self = this.set("TransitGatewayVpcAttachment", js.undefined)
+    def setTransitGatewayVpcAttachmentUndefined: Self = StObject.set(x, "TransitGatewayVpcAttachment", js.undefined)
   }
 }

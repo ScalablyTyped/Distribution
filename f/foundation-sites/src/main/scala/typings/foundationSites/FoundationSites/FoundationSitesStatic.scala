@@ -18,12 +18,13 @@ import typings.foundationSites.anon.InstantiableTabs
 import typings.foundationSites.anon.InstantiableToggler
 import typings.foundationSites.anon.InstantiableTooltip
 import typings.foundationSites.anon.Throttle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoundationSitesStatic extends js.Object {
+trait FoundationSitesStatic extends StObject {
   
   var Abide: Instantiable = js.native
   

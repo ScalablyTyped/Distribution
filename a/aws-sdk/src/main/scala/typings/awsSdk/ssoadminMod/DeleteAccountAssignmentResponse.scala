@@ -1,11 +1,12 @@
 package typings.awsSdk.ssoadminMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteAccountAssignmentResponse extends js.Object {
+trait DeleteAccountAssignmentResponse extends StObject {
   
   /**
     * The status object for the account assignment deletion operation.
@@ -21,24 +22,12 @@ object DeleteAccountAssignmentResponse {
   }
   
   @scala.inline
-  implicit class DeleteAccountAssignmentResponseOps[Self <: DeleteAccountAssignmentResponse] (val x: Self) extends AnyVal {
+  implicit class DeleteAccountAssignmentResponseMutableBuilder[Self <: DeleteAccountAssignmentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountAssignmentDeletionStatus(value: AccountAssignmentOperationStatus): Self = StObject.set(x, "AccountAssignmentDeletionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAccountAssignmentDeletionStatus(value: AccountAssignmentOperationStatus): Self = this.set("AccountAssignmentDeletionStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccountAssignmentDeletionStatus: Self = this.set("AccountAssignmentDeletionStatus", js.undefined)
+    def setAccountAssignmentDeletionStatusUndefined: Self = StObject.set(x, "AccountAssignmentDeletionStatus", js.undefined)
   }
 }

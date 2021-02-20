@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIndexRequest extends js.Object {
+trait CreateIndexRequest extends StObject {
   
   /**
     * The ARN of the directory where the index should be created.
@@ -41,42 +42,30 @@ object CreateIndexRequest {
   }
   
   @scala.inline
-  implicit class CreateIndexRequestOps[Self <: CreateIndexRequest] (val x: Self) extends AnyVal {
+  implicit class CreateIndexRequestMutableBuilder[Self <: CreateIndexRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsUnique(value: Bool): Self = StObject.set(x, "IsUnique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkName(value: LinkName): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
     
     @scala.inline
-    def setIsUnique(value: Bool): Self = this.set("IsUnique", value.asInstanceOf[js.Any])
+    def setOrderedIndexedAttributeList(value: AttributeKeyList): Self = StObject.set(x, "OrderedIndexedAttributeList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderedIndexedAttributeListVarargs(value: AttributeKey*): Self = this.set("OrderedIndexedAttributeList", js.Array(value :_*))
+    def setOrderedIndexedAttributeListVarargs(value: AttributeKey*): Self = StObject.set(x, "OrderedIndexedAttributeList", js.Array(value :_*))
     
     @scala.inline
-    def setOrderedIndexedAttributeList(value: AttributeKeyList): Self = this.set("OrderedIndexedAttributeList", value.asInstanceOf[js.Any])
+    def setParentReference(value: ObjectReference): Self = StObject.set(x, "ParentReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkName: Self = this.set("LinkName", js.undefined)
-    
-    @scala.inline
-    def setParentReference(value: ObjectReference): Self = this.set("ParentReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParentReference: Self = this.set("ParentReference", js.undefined)
+    def setParentReferenceUndefined: Self = StObject.set(x, "ParentReference", js.undefined)
   }
 }

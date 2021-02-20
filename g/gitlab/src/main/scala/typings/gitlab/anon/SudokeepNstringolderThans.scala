@@ -1,12 +1,13 @@
 package typings.gitlab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined gitlab.gitlab/dist/types/core/infrastructure.Sudo & {  keepN :string,   olderThan :string} */
 @js.native
-trait SudokeepNstringolderThans extends js.Object {
+trait SudokeepNstringolderThans extends StObject {
   
   var keepN: String = js.native
   
@@ -23,30 +24,18 @@ object SudokeepNstringolderThans {
   }
   
   @scala.inline
-  implicit class SudokeepNstringolderThansOps[Self <: SudokeepNstringolderThans] (val x: Self) extends AnyVal {
+  implicit class SudokeepNstringolderThansMutableBuilder[Self <: SudokeepNstringolderThans] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeepN(value: String): Self = StObject.set(x, "keepN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOlderThan(value: String): Self = StObject.set(x, "olderThan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepN(value: String): Self = this.set("keepN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOlderThan(value: String): Self = this.set("olderThan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSudo(value: String | Double): Self = this.set("sudo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSudo: Self = this.set("sudo", js.undefined)
+    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

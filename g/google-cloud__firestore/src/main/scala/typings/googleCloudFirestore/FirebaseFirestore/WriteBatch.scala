@@ -1,11 +1,14 @@
 package typings.googleCloudFirestore.FirebaseFirestore
 
+import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteBatch extends js.Object {
+trait WriteBatch extends StObject {
+  
   /**
     * Commits all of the writes in this write batch as a single atomic unit.
     *
@@ -13,6 +16,7 @@ trait WriteBatch extends js.Object {
     * successfully written to the backend as an atomic unit.
     */
   def commit(): js.Promise[js.Array[WriteResult]] = js.native
+  
   /**
     * Create the document referred to by the provided `DocumentReference`. The
     * operation will fail the batch if a document exists at the specified
@@ -23,6 +27,7 @@ trait WriteBatch extends js.Object {
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
   def create[T](documentRef: DocumentReference[T], data: T): WriteBatch = js.native
+  
   /**
     * Deletes the document referred to by the provided `DocumentReference`.
     *
@@ -32,6 +37,8 @@ trait WriteBatch extends js.Object {
     */
   def delete(documentRef: DocumentReference[_]): WriteBatch = js.native
   def delete(documentRef: DocumentReference[_], precondition: Precondition): WriteBatch = js.native
+  
+  def set[T](documentRef: DocumentReference[T], data: T): WriteBatch = js.native
   /**
     * Write to the document referred to by the provided `DocumentReference`.
     * If the document does not exist yet, it will be created. If you pass
@@ -42,8 +49,8 @@ trait WriteBatch extends js.Object {
     * @param options An object to configure the set behavior.
     * @return This `WriteBatch` instance. Used for chaining method calls.
     */
-  def set[T](documentRef: DocumentReference[T], data: T): WriteBatch = js.native
-  def set[T](documentRef: DocumentReference[T], data: T, options: SetOptions): WriteBatch = js.native
+  def set[T](documentRef: DocumentReference[T], data: Partial[T], options: SetOptions): WriteBatch = js.native
+  
   /**
     * Update fields of the document referred to by the provided
     * `DocumentReference`. If the document doesn't yet exist, the update fails
@@ -81,4 +88,3 @@ trait WriteBatch extends js.Object {
   def update(documentRef: DocumentReference[_], field: String, value: js.Any, fieldsOrPrecondition: js.Any*): WriteBatch = js.native
   def update(documentRef: DocumentReference[_], field: FieldPath, value: js.Any, fieldsOrPrecondition: js.Any*): WriteBatch = js.native
 }
-

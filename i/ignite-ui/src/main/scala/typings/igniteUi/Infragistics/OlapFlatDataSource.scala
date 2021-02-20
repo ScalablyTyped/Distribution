@@ -1,11 +1,12 @@
 package typings.igniteUi.Infragistics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OlapFlatDataSource extends js.Object {
+trait OlapFlatDataSource extends StObject {
   
   /**
     * Adds a hierarchy to the columns of the pivot grid.
@@ -328,141 +329,129 @@ object OlapFlatDataSource {
   }
   
   @scala.inline
-  implicit class OlapFlatDataSourceOps[Self <: OlapFlatDataSource] (val x: Self) extends AnyVal {
+  implicit class OlapFlatDataSourceMutableBuilder[Self <: OlapFlatDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddColumnItem(value: js.Object => Unit): Self = StObject.set(x, "addColumnItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddFilterItem(value: js.Object => Unit): Self = StObject.set(x, "addFilterItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddFilterMember(value: (String, String) => Unit): Self = StObject.set(x, "addFilterMember", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddColumnItem(value: js.Object => Unit): Self = this.set("addColumnItem", js.Any.fromFunction1(value))
+    def setAddMeasureItem(value: js.Object => Unit): Self = StObject.set(x, "addMeasureItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFilterItem(value: js.Object => Unit): Self = this.set("addFilterItem", js.Any.fromFunction1(value))
+    def setAddRowItem(value: js.Object => Unit): Self = StObject.set(x, "addRowItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFilterMember(value: (String, String) => Unit): Self = this.set("addFilterMember", js.Any.fromFunction2(value))
+    def setClearPendingChanges(value: () => Unit): Self = StObject.set(x, "clearPendingChanges", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddMeasureItem(value: js.Object => Unit): Self = this.set("addMeasureItem", js.Any.fromFunction1(value))
+    def setCollapseTupleMember(value: (String, Double, Double) => Unit): Self = StObject.set(x, "collapseTupleMember", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setAddRowItem(value: js.Object => Unit): Self = this.set("addRowItem", js.Any.fromFunction1(value))
+    def setColumnAxis(value: () => js.Array[_]): Self = StObject.set(x, "columnAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearPendingChanges(value: () => Unit): Self = this.set("clearPendingChanges", js.Any.fromFunction0(value))
+    def setCube(value: () => js.Object): Self = StObject.set(x, "cube", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCollapseTupleMember(value: (String, Double, Double) => Unit): Self = this.set("collapseTupleMember", js.Any.fromFunction3(value))
+    def setCubes(value: () => js.Array[_]): Self = StObject.set(x, "cubes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setColumnAxis(value: () => js.Array[_]): Self = this.set("columnAxis", js.Any.fromFunction0(value))
+    def setExpandTupleMember(value: (String, Double, Double) => Unit): Self = StObject.set(x, "expandTupleMember", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCube(value: () => js.Object): Self = this.set("cube", js.Any.fromFunction0(value))
+    def setFilters(value: () => js.Array[_]): Self = StObject.set(x, "filters", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCubes(value: () => js.Array[_]): Self = this.set("cubes", js.Any.fromFunction0(value))
+    def setGetCoreElement(value: (js.Function, js.Object) => js.Object): Self = StObject.set(x, "getCoreElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setExpandTupleMember(value: (String, Double, Double) => Unit): Self = this.set("expandTupleMember", js.Any.fromFunction3(value))
+    def setGetCoreElements(value: (js.Function, js.Object) => js.Object): Self = StObject.set(x, "getCoreElements", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setFilters(value: () => js.Array[_]): Self = this.set("filters", js.Any.fromFunction0(value))
+    def setGetDimension(value: String => js.Object): Self = StObject.set(x, "getDimension", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCoreElement(value: (js.Function, js.Object) => js.Object): Self = this.set("getCoreElement", js.Any.fromFunction2(value))
+    def setGetFilterMemberNames(value: String => js.Array[_]): Self = StObject.set(x, "getFilterMemberNames", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCoreElements(value: (js.Function, js.Object) => js.Object): Self = this.set("getCoreElements", js.Any.fromFunction2(value))
+    def setGetHierarchy(value: String => js.Object): Self = StObject.set(x, "getHierarchy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDimension(value: String => js.Object): Self = this.set("getDimension", js.Any.fromFunction1(value))
+    def setGetLevel(value: String => js.Object): Self = StObject.set(x, "getLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFilterMemberNames(value: String => js.Array[_]): Self = this.set("getFilterMemberNames", js.Any.fromFunction1(value))
+    def setGetMeasure(value: String => js.Object): Self = StObject.set(x, "getMeasure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetHierarchy(value: String => js.Object): Self = this.set("getHierarchy", js.Any.fromFunction1(value))
+    def setGetMeasureList(value: () => js.Object): Self = StObject.set(x, "getMeasureList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLevel(value: String => js.Object): Self = this.set("getLevel", js.Any.fromFunction1(value))
+    def setGetMembersOfHierarchy(value: String => Unit): Self = StObject.set(x, "getMembersOfHierarchy", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMeasure(value: String => js.Object): Self = this.set("getMeasure", js.Any.fromFunction1(value))
+    def setGetMembersOfLevel(value: String => Unit): Self = StObject.set(x, "getMembersOfLevel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMeasureList(value: () => js.Object): Self = this.set("getMeasureList", js.Any.fromFunction0(value))
+    def setGetMembersOfMember(value: String => Unit): Self = StObject.set(x, "getMembersOfMember", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMembersOfHierarchy(value: String => Unit): Self = this.set("getMembersOfHierarchy", js.Any.fromFunction1(value))
+    def setInitialize(value: () => js.Object): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMembersOfLevel(value: String => Unit): Self = this.set("getMembersOfLevel", js.Any.fromFunction1(value))
+    def setIsInitialized(value: () => Boolean): Self = StObject.set(x, "isInitialized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMembersOfMember(value: String => Unit): Self = this.set("getMembersOfMember", js.Any.fromFunction1(value))
+    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInitialize(value: () => js.Object): Self = this.set("initialize", js.Any.fromFunction0(value))
+    def setIsUpdating(value: () => Boolean): Self = StObject.set(x, "isUpdating", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsInitialized(value: () => Boolean): Self = this.set("isInitialized", js.Any.fromFunction0(value))
+    def setMeasures(value: () => js.Array[_]): Self = StObject.set(x, "measures", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
+    def setMetadataTree(value: () => js.Object): Self = StObject.set(x, "metadataTree", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsUpdating(value: () => Boolean): Self = this.set("isUpdating", js.Any.fromFunction0(value))
+    def setRemoveAllFilterMembers(value: String => Unit): Self = StObject.set(x, "removeAllFilterMembers", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMeasures(value: () => js.Array[_]): Self = this.set("measures", js.Any.fromFunction0(value))
+    def setRemoveColumnItem(value: js.Object => Unit): Self = StObject.set(x, "removeColumnItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMetadataTree(value: () => js.Object): Self = this.set("metadataTree", js.Any.fromFunction0(value))
+    def setRemoveFilterItem(value: js.Object => Unit): Self = StObject.set(x, "removeFilterItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAllFilterMembers(value: String => Unit): Self = this.set("removeAllFilterMembers", js.Any.fromFunction1(value))
+    def setRemoveFilterMember(value: (String, String) => Unit): Self = StObject.set(x, "removeFilterMember", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveColumnItem(value: js.Object => Unit): Self = this.set("removeColumnItem", js.Any.fromFunction1(value))
+    def setRemoveMeasureItem(value: js.Object => Unit): Self = StObject.set(x, "removeMeasureItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveFilterItem(value: js.Object => Unit): Self = this.set("removeFilterItem", js.Any.fromFunction1(value))
+    def setRemoveRowItem(value: js.Object => Unit): Self = StObject.set(x, "removeRowItem", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveFilterMember(value: (String, String) => Unit): Self = this.set("removeFilterMember", js.Any.fromFunction2(value))
+    def setResult(value: () => js.Object): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemoveMeasureItem(value: js.Object => Unit): Self = this.set("removeMeasureItem", js.Any.fromFunction1(value))
+    def setRowAxis(value: () => js.Array[_]): Self = StObject.set(x, "rowAxis", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRemoveRowItem(value: js.Object => Unit): Self = this.set("removeRowItem", js.Any.fromFunction1(value))
+    def setSetCube(value: String => js.Object): Self = StObject.set(x, "setCube", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResult(value: () => js.Object): Self = this.set("result", js.Any.fromFunction0(value))
+    def setSetMeasureListIndex(value: Double => Unit): Self = StObject.set(x, "setMeasureListIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRowAxis(value: () => js.Array[_]): Self = this.set("rowAxis", js.Any.fromFunction0(value))
+    def setSetMeasureListLocation(value: js.Object => Unit): Self = StObject.set(x, "setMeasureListLocation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetCube(value: String => js.Object): Self = this.set("setCube", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMeasureListIndex(value: Double => Unit): Self = this.set("setMeasureListIndex", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetMeasureListLocation(value: js.Object => Unit): Self = this.set("setMeasureListLocation", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: () => js.Object): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => js.Object): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

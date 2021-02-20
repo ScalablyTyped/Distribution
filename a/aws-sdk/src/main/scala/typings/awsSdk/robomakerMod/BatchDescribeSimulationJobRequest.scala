@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDescribeSimulationJobRequest extends js.Object {
+trait BatchDescribeSimulationJobRequest extends StObject {
   
   /**
     * A list of Amazon Resource Names (ARNs) of simulation jobs to describe.
@@ -21,24 +22,12 @@ object BatchDescribeSimulationJobRequest {
   }
   
   @scala.inline
-  implicit class BatchDescribeSimulationJobRequestOps[Self <: BatchDescribeSimulationJobRequest] (val x: Self) extends AnyVal {
+  implicit class BatchDescribeSimulationJobRequestMutableBuilder[Self <: BatchDescribeSimulationJobRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobs(value: Arns): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobsVarargs(value: Arn*): Self = this.set("jobs", js.Array(value :_*))
-    
-    @scala.inline
-    def setJobs(value: Arns): Self = this.set("jobs", value.asInstanceOf[js.Any])
+    def setJobsVarargs(value: Arn*): Self = StObject.set(x, "jobs", js.Array(value :_*))
   }
 }

@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an altimeter reading. */
 @js.native
-trait AltimeterReading extends js.Object {
+trait AltimeterReading extends StObject {
   
   /** Gets the current altitude determined by the altimeter sensor. */
   var altitudeChangeInMeters: Double = js.native
@@ -24,24 +25,12 @@ object AltimeterReading {
   }
   
   @scala.inline
-  implicit class AltimeterReadingOps[Self <: AltimeterReading] (val x: Self) extends AnyVal {
+  implicit class AltimeterReadingMutableBuilder[Self <: AltimeterReading] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitudeChangeInMeters(value: Double): Self = StObject.set(x, "altitudeChangeInMeters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAltitudeChangeInMeters(value: Double): Self = this.set("altitudeChangeInMeters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

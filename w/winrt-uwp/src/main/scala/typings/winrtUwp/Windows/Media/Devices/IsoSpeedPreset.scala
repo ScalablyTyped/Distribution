@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IsoSpeedPreset extends js.Object
+sealed trait IsoSpeedPreset extends StObject
 /** Defines the possible values for ISO speed presets. */
 @JSGlobal("Windows.Media.Devices.IsoSpeedPreset")
 @js.native
-object IsoSpeedPreset extends js.Object {
+object IsoSpeedPreset extends StObject {
   
   /** The film speed is automatically set. */
   @js.native

@@ -1,11 +1,12 @@
 package typings.sarif.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CodeFlow extends js.Object {
+trait CodeFlow extends StObject {
   
   /**
     * A message relevant to the code flow.
@@ -32,36 +33,24 @@ object CodeFlow {
   }
   
   @scala.inline
-  implicit class CodeFlowOps[Self <: CodeFlow] (val x: Self) extends AnyVal {
+  implicit class CodeFlowMutableBuilder[Self <: CodeFlow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThreadFlowsVarargs(value: ThreadFlow*): Self = this.set("threadFlows", js.Array(value :_*))
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def setThreadFlows(value: js.Array[ThreadFlow]): Self = this.set("threadFlows", value.asInstanceOf[js.Any])
+    def setThreadFlows(value: js.Array[ThreadFlow]): Self = StObject.set(x, "threadFlows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
-    
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setThreadFlowsVarargs(value: ThreadFlow*): Self = StObject.set(x, "threadFlows", js.Array(value :_*))
   }
 }

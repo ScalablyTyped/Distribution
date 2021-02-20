@@ -2,6 +2,7 @@ package typings.watsonDeveloperCloud.sdkMod
 
 import typings.watsonDeveloperCloud.v3GeneratedMod.Options
 import typings.watsonDeveloperCloud.v3GeneratedMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,20 +33,19 @@ class PersonalityInsightsV3 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3")
-@js.native
-object PersonalityInsightsV3 extends js.Object {
+object PersonalityInsightsV3 {
   
-  var URL: String = js.native
+  @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Constants for the `profileAsCsv` operation. */
-  @js.native
-  object ProfileAsCsvConstants extends js.Object {
+  object ProfileAsCsvConstants {
     
     /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can specify any combination of languages for the input and response content. */
+    @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.ProfileAsCsvConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
+    object AcceptLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -76,8 +76,9 @@ object PersonalityInsightsV3 extends js.Object {
     }
     
     /** The language of the input text for the request: Arabic, English, Japanese, Korean, or Spanish. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The effect of the **Content-Language** parameter depends on the **Content-Type** parameter. When **Content-Type** is `text/plain` or `text/html`, **Content-Language** is the only way to specify the language. When **Content-Type** is `application/json`, **Content-Language** overrides a language specified with the `language` parameter of a `ContentItem` object, and content items that specify a different language are ignored; omit this parameter to base the language on the specification of the content items. You can specify any combination of languages for **Content-Language** and **Accept-Language**. */
+    @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.ProfileAsCsvConstants.ContentLanguage")
     @js.native
-    object ContentLanguage extends js.Object {
+    object ContentLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -96,8 +97,9 @@ object PersonalityInsightsV3 extends js.Object {
     }
     
     /** The type of the input. For more information, see **Content types** in the method description. Default: `text/plain`. */
+    @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.ProfileAsCsvConstants.ContentType")
     @js.native
-    object ContentType extends js.Object {
+    object ContentType extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -113,12 +115,12 @@ object PersonalityInsightsV3 extends js.Object {
   }
   
   /** Constants for the `profile` operation. */
-  @js.native
-  object ProfileConstants extends js.Object {
+  object ProfileConstants {
     
     /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can specify any combination of languages for the input and response content. */
+    @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.ProfileConstants.AcceptLanguage")
     @js.native
-    object AcceptLanguage extends js.Object {
+    object AcceptLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -149,8 +151,9 @@ object PersonalityInsightsV3 extends js.Object {
     }
     
     /** The language of the input text for the request: Arabic, English, Japanese, Korean, or Spanish. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The effect of the **Content-Language** parameter depends on the **Content-Type** parameter. When **Content-Type** is `text/plain` or `text/html`, **Content-Language** is the only way to specify the language. When **Content-Type** is `application/json`, **Content-Language** overrides a language specified with the `language` parameter of a `ContentItem` object, and content items that specify a different language are ignored; omit this parameter to base the language on the specification of the content items. You can specify any combination of languages for **Content-Language** and **Accept-Language**. */
+    @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.ProfileConstants.ContentLanguage")
     @js.native
-    object ContentLanguage extends js.Object {
+    object ContentLanguage extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -169,8 +172,9 @@ object PersonalityInsightsV3 extends js.Object {
     }
     
     /** The type of the input. For more information, see **Content types** in the method description. Default: `text/plain`. */
+    @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.ProfileConstants.ContentType")
     @js.native
-    object ContentType extends js.Object {
+    object ContentType extends StObject {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
@@ -184,4 +188,11 @@ object PersonalityInsightsV3 extends js.Object {
       /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.v3GeneratedMod.ProfileConstants.ContentType.TEXT_PLAIN with String = js.native
     }
   }
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "PersonalityInsightsV3.URL")
+  @js.native
+  def URL: String = js.native
+  @scala.inline
+  def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }

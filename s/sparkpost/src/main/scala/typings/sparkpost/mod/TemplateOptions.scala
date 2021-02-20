@@ -1,11 +1,12 @@
 package typings.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateOptions extends js.Object {
+trait TemplateOptions extends StObject {
   
   /** Enable or disable click tracking */
   var click_tracking: Boolean = js.native
@@ -25,27 +26,15 @@ object TemplateOptions {
   }
   
   @scala.inline
-  implicit class TemplateOptionsOps[Self <: TemplateOptions] (val x: Self) extends AnyVal {
+  implicit class TemplateOptionsMutableBuilder[Self <: TemplateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick_tracking(value: Boolean): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpen_tracking(value: Boolean): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClick_tracking(value: Boolean): Self = this.set("click_tracking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen_tracking(value: Boolean): Self = this.set("open_tracking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransactional(value: Boolean): Self = this.set("transactional", value.asInstanceOf[js.Any])
+    def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
   }
 }

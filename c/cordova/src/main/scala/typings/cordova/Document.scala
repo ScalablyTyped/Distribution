@@ -11,12 +11,13 @@ import typings.cordova.cordovaStrings.startcallbutton
 import typings.cordova.cordovaStrings.volumedownbutton
 import typings.cordova.cordovaStrings.volumeupbutton
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
   
   def addEventListener(`type`: String, listener: js.Function1[/* ev */ Event, _]): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function1[/* ev */ Event, _], useCapture: Boolean): Unit = js.native

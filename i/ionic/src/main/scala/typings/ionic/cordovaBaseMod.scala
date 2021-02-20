@@ -5,23 +5,31 @@ import typings.ionic.anon.RequiredProjectIntegratio
 import typings.ionic.commandMod.Command
 import typings.ionic.definitionsMod.CommandInstanceInfo
 import typings.ionic.definitionsMod.CommandMetadataOption
+import typings.ionic.definitionsMod.INamespace
 import typings.ionic.definitionsMod.IShellRunOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ionic/commands/cordova/base", JSImport.Namespace)
-@js.native
-object cordovaBaseMod extends js.Object {
+object cordovaBaseMod {
   
+  @JSImport("ionic/commands/cordova/base", "CORDOVA_BUILD_EXAMPLE_COMMANDS")
+  @js.native
   val CORDOVA_BUILD_EXAMPLE_COMMANDS: js.Array[String] = js.native
   
+  @JSImport("ionic/commands/cordova/base", "CORDOVA_COMPILE_OPTIONS")
+  @js.native
   val CORDOVA_COMPILE_OPTIONS: js.Array[CommandMetadataOption] = js.native
   
+  @JSImport("ionic/commands/cordova/base", "CORDOVA_RUN_OPTIONS")
+  @js.native
   val CORDOVA_RUN_OPTIONS: js.Array[CommandMetadataOption] = js.native
   
+  @JSImport("ionic/commands/cordova/base", "CordovaCommand")
   @js.native
-  abstract class CordovaCommand () extends Command {
+  abstract class CordovaCommand protected () extends Command {
+    def this(namespace: INamespace) = this()
     
     var _integration: js.Any = js.native
     

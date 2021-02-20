@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,27 +24,15 @@ object DashboardItemEventMap {
   }
   
   @scala.inline
-  implicit class DashboardItemEventMapOps[Self <: DashboardItemEventMap] (val x: Self) extends AnyVal {
+  implicit class DashboardItemEventMapMutableBuilder[Self <: DashboardItemEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: DashboardItemClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelete(value: DashboardItemDeleteEvent): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClick(value: DashboardItemClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDelete(value: DashboardItemDeleteEvent): Self = this.set("delete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMove(value: DashboardItemMoveEvent): Self = this.set("move", value.asInstanceOf[js.Any])
+    def setMove(value: DashboardItemMoveEvent): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
   }
 }

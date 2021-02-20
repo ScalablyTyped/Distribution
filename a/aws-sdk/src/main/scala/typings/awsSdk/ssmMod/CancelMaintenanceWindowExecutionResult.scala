@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelMaintenanceWindowExecutionResult extends js.Object {
+trait CancelMaintenanceWindowExecutionResult extends StObject {
   
   /**
     * The ID of the maintenance window execution that has been stopped.
@@ -21,24 +22,12 @@ object CancelMaintenanceWindowExecutionResult {
   }
   
   @scala.inline
-  implicit class CancelMaintenanceWindowExecutionResultOps[Self <: CancelMaintenanceWindowExecutionResult] (val x: Self) extends AnyVal {
+  implicit class CancelMaintenanceWindowExecutionResultMutableBuilder[Self <: CancelMaintenanceWindowExecutionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = StObject.set(x, "WindowExecutionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWindowExecutionId(value: MaintenanceWindowExecutionId): Self = this.set("WindowExecutionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowExecutionId: Self = this.set("WindowExecutionId", js.undefined)
+    def setWindowExecutionIdUndefined: Self = StObject.set(x, "WindowExecutionId", js.undefined)
   }
 }

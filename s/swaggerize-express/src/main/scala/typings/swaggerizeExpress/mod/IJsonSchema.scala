@@ -1,12 +1,13 @@
 package typings.swaggerizeExpress.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IJsonSchema extends js.Object {
+trait IJsonSchema extends StObject {
   
   @JSName("$schema")
   var $schema: js.UndefOr[String] = js.native
@@ -80,225 +81,213 @@ object IJsonSchema {
   }
   
   @scala.inline
-  implicit class IJsonSchemaOps[Self <: IJsonSchema] (val x: Self) extends AnyVal {
+  implicit class IJsonSchemaMutableBuilder[Self <: IJsonSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalItems(value: Boolean | IJsonSchema): Self = StObject.set(x, "additionalItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$schema(value: String): Self = this.set("$schema", value.asInstanceOf[js.Any])
+    def setAdditionalItemsUndefined: Self = StObject.set(x, "additionalItems", js.undefined)
     
     @scala.inline
-    def delete$schema: Self = this.set("$schema", js.undefined)
+    def setAdditionalProperties(value: Boolean | IJsonSchema): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalItems(value: Boolean | IJsonSchema): Self = this.set("additionalItems", value.asInstanceOf[js.Any])
+    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
     @scala.inline
-    def deleteAdditionalItems: Self = this.set("additionalItems", js.undefined)
+    def setAllOf(value: js.Array[IJsonSchema]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalProperties(value: Boolean | IJsonSchema): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
     
     @scala.inline
-    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    def setAllOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
     
     @scala.inline
-    def setAllOfVarargs(value: IJsonSchema*): Self = this.set("allOf", js.Array(value :_*))
+    def setAnyOf(value: js.Array[IJsonSchema]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllOf(value: js.Array[IJsonSchema]): Self = this.set("allOf", value.asInstanceOf[js.Any])
+    def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
     
     @scala.inline
-    def deleteAllOf: Self = this.set("allOf", js.undefined)
+    def setAnyOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
     
     @scala.inline
-    def setAnyOfVarargs(value: IJsonSchema*): Self = this.set("anyOf", js.Array(value :_*))
+    def setDefinitions(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnyOf(value: js.Array[IJsonSchema]): Self = this.set("anyOf", value.asInstanceOf[js.Any])
+    def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
     
     @scala.inline
-    def deleteAnyOf: Self = this.set("anyOf", js.undefined)
+    def setDependencies(value: StringDictionary[IJsonSchema | js.Array[String]]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitions(value: StringDictionary[IJsonSchema]): Self = this.set("definitions", value.asInstanceOf[js.Any])
+    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
     @scala.inline
-    def deleteDefinitions: Self = this.set("definitions", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDependencies(value: StringDictionary[IJsonSchema | js.Array[String]]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
     @scala.inline
-    def setEnumVarargs(value: js.Any*): Self = this.set("enum", js.Array(value :_*))
+    def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnum(value: js.Array[_]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    def setExclusiveMaximumUndefined: Self = StObject.set(x, "exclusiveMaximum", js.undefined)
     
     @scala.inline
-    def deleteEnum: Self = this.set("enum", js.undefined)
+    def setExclusiveMinimum(value: Boolean): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveMaximum(value: Boolean): Self = this.set("exclusiveMaximum", value.asInstanceOf[js.Any])
+    def setExclusiveMinimumUndefined: Self = StObject.set(x, "exclusiveMinimum", js.undefined)
     
     @scala.inline
-    def deleteExclusiveMaximum: Self = this.set("exclusiveMaximum", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExclusiveMinimum(value: Boolean): Self = this.set("exclusiveMinimum", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteExclusiveMinimum: Self = this.set("exclusiveMinimum", js.undefined)
+    def setItems(value: IJsonSchema | js.Array[IJsonSchema]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setItemsVarargs(value: IJsonSchema*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: IJsonSchema*): Self = this.set("items", js.Array(value :_*))
+    def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: IJsonSchema | js.Array[IJsonSchema]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxItems(value: Double): Self = this.set("maxItems", value.asInstanceOf[js.Any])
+    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
     @scala.inline
-    def deleteMaxItems: Self = this.set("maxItems", js.undefined)
+    def setMaxProperties(value: Double): Self = StObject.set(x, "maxProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    def setMaxPropertiesUndefined: Self = StObject.set(x, "maxProperties", js.undefined)
     
     @scala.inline
-    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxProperties(value: Double): Self = this.set("maxProperties", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteMaxProperties: Self = this.set("maxProperties", js.undefined)
+    def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinItems(value: Double): Self = this.set("minItems", value.asInstanceOf[js.Any])
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def deleteMinItems: Self = this.set("minItems", js.undefined)
+    def setMinProperties(value: Double): Self = StObject.set(x, "minProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setMinPropertiesUndefined: Self = StObject.set(x, "minProperties", js.undefined)
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinProperties(value: Double): Self = this.set("minProperties", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def deleteMinProperties: Self = this.set("minProperties", js.undefined)
+    def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setMultipleOfUndefined: Self = StObject.set(x, "multipleOf", js.undefined)
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setNot(value: IJsonSchema): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipleOf(value: Double): Self = this.set("multipleOf", value.asInstanceOf[js.Any])
+    def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
     
     @scala.inline
-    def deleteMultipleOf: Self = this.set("multipleOf", js.undefined)
+    def setOneOf(value: js.Array[IJsonSchema]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNot(value: IJsonSchema): Self = this.set("not", value.asInstanceOf[js.Any])
+    def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
     
     @scala.inline
-    def deleteNot: Self = this.set("not", js.undefined)
+    def setOneOfVarargs(value: IJsonSchema*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
     
     @scala.inline
-    def setOneOfVarargs(value: IJsonSchema*): Self = this.set("oneOf", js.Array(value :_*))
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOneOf(value: js.Array[IJsonSchema]): Self = this.set("oneOf", value.asInstanceOf[js.Any])
+    def setPatternProperties(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOneOf: Self = this.set("oneOf", js.undefined)
+    def setPatternPropertiesUndefined: Self = StObject.set(x, "patternProperties", js.undefined)
     
     @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setProperties(value: StringDictionary[IJsonSchema]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPatternProperties(value: StringDictionary[IJsonSchema]): Self = this.set("patternProperties", value.asInstanceOf[js.Any])
+    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
     @scala.inline
-    def deletePatternProperties: Self = this.set("patternProperties", js.undefined)
+    def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: StringDictionary[IJsonSchema]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteProperties: Self = this.set("properties", js.undefined)
+    def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
     
     @scala.inline
-    def setRequiredVarargs(value: String*): Self = this.set("required", js.Array(value :_*))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: js.Array[String]): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
     
     @scala.inline
-    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String | js.Array[String]): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUniqueItems(value: Boolean): Self = this.set("uniqueItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueItems: Self = this.set("uniqueItems", js.undefined)
+    def setUniqueItemsUndefined: Self = StObject.set(x, "uniqueItems", js.undefined)
   }
 }

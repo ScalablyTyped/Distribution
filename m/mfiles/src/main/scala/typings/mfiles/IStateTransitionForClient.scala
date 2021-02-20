@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStateTransitionForClient extends js.Object {
+trait IStateTransitionForClient extends StObject {
   
   def Clone(): IStateTransitionForClient = js.native
   
@@ -44,45 +45,33 @@ object IStateTransitionForClient {
   }
   
   @scala.inline
-  implicit class IStateTransitionForClientOps[Self <: IStateTransitionForClient] (val x: Self) extends AnyVal {
+  implicit class IStateTransitionForClientMutableBuilder[Self <: IStateTransitionForClient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IStateTransitionForClient): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromState(value: Double): Self = StObject.set(x, "FromState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAsLookup(value: () => ILookup): Self = StObject.set(x, "GetAsLookup", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IStateTransitionForClient): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGetAsTypedValue(value: () => ITypedValue): Self = StObject.set(x, "GetAsTypedValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFromState(value: Double): Self = this.set("FromState", value.asInstanceOf[js.Any])
+    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAsLookup(value: () => ILookup): Self = this.set("GetAsLookup", js.Any.fromFunction0(value))
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAsTypedValue(value: () => ITypedValue): Self = this.set("GetAsTypedValue", js.Any.fromFunction0(value))
+    def setSelectable(value: Boolean): Self = StObject.set(x, "Selectable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setSelectableFlagAffectedByPseudoUsers(value: Boolean): Self = StObject.set(x, "SelectableFlagAffectedByPseudoUsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectable(value: Boolean): Self = this.set("Selectable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectableFlagAffectedByPseudoUsers(value: Boolean): Self = this.set("SelectableFlagAffectedByPseudoUsers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToState(value: Double): Self = this.set("ToState", value.asInstanceOf[js.Any])
+    def setToState(value: Double): Self = StObject.set(x, "ToState", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,54 +85,42 @@ object predominanceRendererResult {
   }
   
   @scala.inline
-  implicit class predominanceRendererResultOps[Self <: predominanceRendererResult] (val x: Self) extends AnyVal {
+  implicit class predominanceRendererResultMutableBuilder[Self <: predominanceRendererResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapTheme(value: String): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedCategoryInfos(value: js.Array[_]): Self = StObject.set(x, "excludedCategoryInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemapId(value: String): Self = this.set("basemapId", value.asInstanceOf[js.Any])
+    def setExcludedCategoryInfosVarargs(value: js.Any*): Self = StObject.set(x, "excludedCategoryInfos", js.Array(value :_*))
     
     @scala.inline
-    def setBasemapTheme(value: String): Self = this.set("basemapTheme", value.asInstanceOf[js.Any])
+    def setOpacity(value: opacityVisualVariableResult): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedCategoryInfosVarargs(value: js.Any*): Self = this.set("excludedCategoryInfos", js.Array(value :_*))
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setExcludedCategoryInfos(value: js.Array[_]): Self = this.set("excludedCategoryInfos", value.asInstanceOf[js.Any])
+    def setPredominanceScheme(value: PredominanceScheme): Self = StObject.set(x, "predominanceScheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredominanceScheme(value: PredominanceScheme): Self = this.set("predominanceScheme", value.asInstanceOf[js.Any])
+    def setPredominantCategoryInfos(value: js.Array[typeUniqueValueInfo]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredominantCategoryInfosVarargs(value: typeUniqueValueInfo*): Self = this.set("predominantCategoryInfos", js.Array(value :_*))
+    def setPredominantCategoryInfosVarargs(value: typeUniqueValueInfo*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value :_*))
     
     @scala.inline
-    def setPredominantCategoryInfos(value: js.Array[typeUniqueValueInfo]): Self = this.set("predominantCategoryInfos", value.asInstanceOf[js.Any])
+    def setRenderer(value: UniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: UniqueValueRenderer): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setSize(value: sizeVisualVariableResult): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: opacityVisualVariableResult): Self = this.set("opacity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
-    
-    @scala.inline
-    def setSize(value: sizeVisualVariableResult): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

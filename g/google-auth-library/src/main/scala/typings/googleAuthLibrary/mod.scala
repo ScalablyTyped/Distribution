@@ -1,5 +1,6 @@
 package typings.googleAuthLibrary
 
+import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.anon.TypeofDefaultTransporter
 import typings.googleAuthLibrary.computeclientMod.ComputeOptions
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
@@ -8,18 +9,16 @@ import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.loginticketMod.TokenPayload
 import typings.googleAuthLibrary.oauth2clientMod.OAuth2ClientOptions
 import typings.googleAuthLibrary.refreshclientMod.UserRefreshClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-auth-library", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val auth: typings.googleAuthLibrary.googleauthMod.GoogleAuth = js.native
-  
+  @JSImport("google-auth-library", "CodeChallengeMethod")
   @js.native
-  object CodeChallengeMethod extends js.Object {
+  object CodeChallengeMethod extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod with String] = js.native
@@ -29,6 +28,7 @@ object mod extends js.Object {
     /* "S256" */ val S256: typings.googleAuthLibrary.oauth2clientMod.CodeChallengeMethod.S256 with String = js.native
   }
   
+  @JSImport("google-auth-library", "Compute")
   @js.native
   /**
     * Google Compute Engine service account credentials.
@@ -41,21 +41,24 @@ object mod extends js.Object {
     def this(options: ComputeOptions) = this()
   }
   
+  @JSImport("google-auth-library", "DefaultTransporter")
   @js.native
   class DefaultTransporter ()
     extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
   /* static members */
-  @js.native
-  object DefaultTransporter extends js.Object {
+  object DefaultTransporter {
     
     /**
       * Default user agent.
       */
+    @JSImport("google-auth-library", "DefaultTransporter.USER_AGENT")
+    @js.native
     val USER_AGENT: String = js.native
   }
   
+  @JSImport("google-auth-library", "GCPEnv")
   @js.native
-  object GCPEnv extends js.Object {
+  object GCPEnv extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googleAuthLibrary.envDetectMod.GCPEnv with String] = js.native
@@ -71,21 +74,30 @@ object mod extends js.Object {
     /* "NONE" */ val NONE: typings.googleAuthLibrary.envDetectMod.GCPEnv.NONE with String = js.native
   }
   
+  @JSImport("google-auth-library", "GoogleAuth")
   @js.native
   class GoogleAuth ()
     extends typings.googleAuthLibrary.googleauthMod.GoogleAuth {
     def this(opts: GoogleAuthOptions) = this()
   }
   /* static members */
-  @js.native
-  object GoogleAuth extends js.Object {
+  object GoogleAuth {
+    
+    @JSImport("google-auth-library", "GoogleAuth")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Export DefaultTransporter as a static property of the class.
       */
-    var DefaultTransporter: TypeofDefaultTransporter = js.native
+    @JSImport("google-auth-library", "GoogleAuth.DefaultTransporter")
+    @js.native
+    def DefaultTransporter: TypeofDefaultTransporter = js.native
+    @scala.inline
+    def DefaultTransporter_=(x: TypeofDefaultTransporter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTransporter")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("google-auth-library", "IAMAuth")
   @js.native
   class IAMAuth protected ()
     extends typings.googleAuthLibrary.iamMod.IAMAuth {
@@ -99,6 +111,7 @@ object mod extends js.Object {
     def this(selector: String, token: String) = this()
   }
   
+  @JSImport("google-auth-library", "IdTokenClient")
   @js.native
   class IdTokenClient protected ()
     extends typings.googleAuthLibrary.idtokenclientMod.IdTokenClient {
@@ -111,6 +124,7 @@ object mod extends js.Object {
     def this(options: IdTokenOptions) = this()
   }
   
+  @JSImport("google-auth-library", "JWT")
   @js.native
   class JWT protected ()
     extends typings.googleAuthLibrary.jwtclientMod.JWT {
@@ -137,6 +151,7 @@ object mod extends js.Object {
     ) = this()
   }
   
+  @JSImport("google-auth-library", "JWTAccess")
   @js.native
   class JWTAccess protected ()
     extends typings.googleAuthLibrary.jwtaccessMod.JWTAccess {
@@ -158,8 +173,11 @@ object mod extends js.Object {
     ) = this()
   }
   /* static members */
-  @js.native
-  object JWTAccess extends js.Object {
+  object JWTAccess {
+    
+    @JSImport("google-auth-library", "JWTAccess")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns an expiration time for the JWT token.
@@ -167,9 +185,14 @@ object mod extends js.Object {
       * @param iat The issued at time for the JWT.
       * @returns An expiration time for the JWT.
       */
-    var getExpirationTime: js.Any = js.native
+    @JSImport("google-auth-library", "JWTAccess.getExpirationTime")
+    @js.native
+    def getExpirationTime: js.Any = js.native
+    @scala.inline
+    def getExpirationTime_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getExpirationTime")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("google-auth-library", "LoginTicket")
   @js.native
   /**
     * Create a simple class to extract user ID from an ID Token
@@ -185,6 +208,7 @@ object mod extends js.Object {
     def this(env: String, pay: TokenPayload) = this()
   }
   
+  @JSImport("google-auth-library", "OAuth2Client")
   @js.native
   /**
     * Handles OAuth2 flow for Google APIs.
@@ -208,63 +232,85 @@ object mod extends js.Object {
     def this(clientId: String, clientSecret: String, redirectUri: String) = this()
   }
   /* static members */
-  @js.native
-  object OAuth2Client extends js.Object {
+  object OAuth2Client {
     
     /**
       * Clock skew - five minutes in seconds
       */
+    @JSImport("google-auth-library", "OAuth2Client.CLOCK_SKEW_SECS_")
+    @js.native
     val CLOCK_SKEW_SECS_ : js.Any = js.native
     
     /**
       * The base URL for auth endpoints.
       */
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_AUTH_BASE_URL_")
+    @js.native
     val GOOGLE_OAUTH2_AUTH_BASE_URL_ : js.Any = js.native
     
     /**
       * Google Sign on certificates in JWK format.
       */
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_")
+    @js.native
     val GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_ : js.Any = js.native
     
     /**
       * Google Sign on certificates in PEM format.
       */
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_")
+    @js.native
     val GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_ : js.Any = js.native
     
     /**
       * Google Sign on certificates in JWK format.
       */
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_")
+    @js.native
     val GOOGLE_OAUTH2_IAP_PUBLIC_KEY_URL_ : js.Any = js.native
     
     /**
       * The base endpoint to revoke tokens.
       */
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_REVOKE_URL_")
+    @js.native
     val GOOGLE_OAUTH2_REVOKE_URL_ : js.Any = js.native
     
     /**
       * The base endpoint for token retrieval.
       */
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_OAUTH2_TOKEN_URL_")
+    @js.native
     val GOOGLE_OAUTH2_TOKEN_URL_ : js.Any = js.native
     
+    @JSImport("google-auth-library", "OAuth2Client.GOOGLE_TOKEN_INFO_URL")
+    @js.native
     val GOOGLE_TOKEN_INFO_URL: /* "https://oauth2.googleapis.com/tokeninfo" */ String = js.native
     
     /**
       * The allowed oauth token issuers.
       */
+    @JSImport("google-auth-library", "OAuth2Client.ISSUERS_")
+    @js.native
     val ISSUERS_ : js.Any = js.native
     
     /**
       * Max Token Lifetime is one day in seconds
       */
+    @JSImport("google-auth-library", "OAuth2Client.MAX_TOKEN_LIFETIME_SECS_")
+    @js.native
     val MAX_TOKEN_LIFETIME_SECS_ : js.Any = js.native
     
     /**
       * Generates an URL to revoke the given token.
       * @param token The existing token to be revoked.
       */
+    @JSImport("google-auth-library", "OAuth2Client.getRevokeTokenUrl")
+    @js.native
     def getRevokeTokenUrl(token: String): String = js.native
   }
   
+  @JSImport("google-auth-library", "UserRefreshClient")
   @js.native
   /**
     * User Refresh Token credentials.
@@ -283,5 +329,33 @@ object mod extends js.Object {
     def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, refreshToken: String) = this()
     def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
     def this(clientId: String, clientSecret: String, refreshToken: String) = this()
+  }
+  
+  object auth extends Shortcut {
+    
+    @JSImport("google-auth-library", "auth")
+    @js.native
+    val ^ : typings.googleAuthLibrary.googleauthMod.GoogleAuth = js.native
+    
+    /**
+      * Export DefaultTransporter as a static property of the class.
+      */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("google-auth-library", "auth.DefaultTransporter")
+    @js.native
+    class DefaultTransporterCls ()
+      extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+    /* static members */
+    object DefaultTransporterCls {
+      
+      @JSImport("google-auth-library", "auth.DefaultTransporter.constructor")
+      @js.native
+      def constructor(): js.Any = js.native
+    }
+    
+    type _To = typings.googleAuthLibrary.googleauthMod.GoogleAuth
+    
+    /* This means you don't have to write `^`, but can instead just say `auth.foo` */
+    override def _to: typings.googleAuthLibrary.googleauthMod.GoogleAuth = ^
   }
 }

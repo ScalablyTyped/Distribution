@@ -2,6 +2,7 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,45 +76,33 @@ object TaskAgentPool {
   }
   
   @scala.inline
-  implicit class TaskAgentPoolOps[Self <: TaskAgentPool] (val x: Self) extends AnyVal {
+  implicit class TaskAgentPoolMutableBuilder[Self <: TaskAgentPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoProvision(value: Boolean): Self = StObject.set(x, "autoProvision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministratorsGroup(value: IdentityRef): Self = this.set("administratorsGroup", value.asInstanceOf[js.Any])
+    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoProvision(value: Boolean): Self = this.set("autoProvision", value.asInstanceOf[js.Any])
+    def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedBy(value: IdentityRef): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedOn(value: Date): Self = this.set("createdOn", value.asInstanceOf[js.Any])
+    def setProvisioned(value: Boolean): Self = StObject.set(x, "provisioned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupScopeId(value: String): Self = this.set("groupScopeId", value.asInstanceOf[js.Any])
+    def setServiceAccountsGroup(value: IdentityRef): Self = StObject.set(x, "serviceAccountsGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProvisioned(value: Boolean): Self = this.set("provisioned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceAccountsGroup(value: IdentityRef): Self = this.set("serviceAccountsGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

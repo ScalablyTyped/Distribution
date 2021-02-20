@@ -14,40 +14,14 @@ import typings.tensorflowTfjsData.typesMod.FileElement
 import typings.tensorflowTfjsData.typesMod.MicrophoneConfig
 import typings.tensorflowTfjsData.typesMod.WebcamConfig
 import typings.tensorflowTfjsData.webcamIteratorMod.WebcamIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data")
-@js.native
-object data extends js.Object {
+object data {
   
-  def array[T /* <: TensorContainer */](items: js.Array[T]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
-  
-  def csv(source: RequestInfo): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
-  def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
-  
-  def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
-  
-  def generator[T /* <: TensorContainer */](
-    generator: js.Function0[
-      (Iterator[T, _, js.UndefOr[scala.Nothing]]) | (js.Promise[Iterator[T, _, js.UndefOr[scala.Nothing]]])
-    ]
-  ): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
-  
-  def microphone(): js.Promise[MicrophoneIterator] = js.native
-  def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = js.native
-  
-  @JSName("version_data")
-  val versionData: /* "2.7.0" */ String = js.native
-  
-  def webcam(): js.Promise[WebcamIterator] = js.native
-  def webcam(webcamVideoElement: js.UndefOr[scala.Nothing], webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
-  def webcam(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = js.native
-  def webcam(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
-  
-  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): typings.tensorflowTfjsData.datasetMod.Dataset[O] = js.native
-  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.CSVDataset")
   @js.native
   class CSVDataset protected ()
     extends typings.tensorflowTfjs.mod.data.CSVDataset {
@@ -87,16 +61,19 @@ object data extends js.Object {
     def this(input: DataSource, csvConfig: CSVConfig) = this()
   }
   
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.Dataset")
   @js.native
   abstract class Dataset[T /* <: TensorContainer */] ()
     extends typings.tensorflowTfjs.mod.data.Dataset[T]
   /* static members */
-  @js.native
-  object Dataset extends js.Object {
+  object Dataset {
     
+    @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.Dataset.MAX_BUFFER_SIZE")
+    @js.native
     val MAX_BUFFER_SIZE: /* 10000 */ Double = js.native
   }
   
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.FileDataSource")
   @js.native
   class FileDataSource protected ()
     extends typings.tensorflowTfjs.mod.data.FileDataSource {
@@ -114,6 +91,7 @@ object data extends js.Object {
     def this(input: FileElement, options: FileChunkIteratorOptions) = this()
   }
   
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.TextLineDataset")
   @js.native
   class TextLineDataset protected ()
     extends typings.tensorflowTfjs.mod.data.TextLineDataset {
@@ -125,6 +103,7 @@ object data extends js.Object {
     def this(input: DataSource) = this()
   }
   
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.URLDataSource")
   @js.native
   class URLDataSource protected ()
     extends typings.tensorflowTfjs.mod.data.URLDataSource {
@@ -138,4 +117,55 @@ object data extends js.Object {
     def this(url: RequestInfo) = this()
     def this(url: RequestInfo, fileOptions: FileChunkIteratorOptions) = this()
   }
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.array")
+  @js.native
+  def array[T /* <: TensorContainer */](items: js.Array[T]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.csv")
+  @js.native
+  def csv(source: RequestInfo): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.csv")
+  @js.native
+  def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.func")
+  @js.native
+  def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.generator")
+  @js.native
+  def generator[T /* <: TensorContainer */](
+    generator: js.Function0[
+      (Iterator[T, _, js.UndefOr[scala.Nothing]]) | (js.Promise[Iterator[T, _, js.UndefOr[scala.Nothing]]])
+    ]
+  ): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.microphone")
+  @js.native
+  def microphone(): js.Promise[MicrophoneIterator] = js.native
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.microphone")
+  @js.native
+  def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.version_data")
+  @js.native
+  val versionData: /* "2.7.0" */ String = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.webcam")
+  @js.native
+  def webcam(): js.Promise[WebcamIterator] = js.native
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.webcam")
+  @js.native
+  def webcam(webcamVideoElement: js.UndefOr[scala.Nothing], webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.webcam")
+  @js.native
+  def webcam(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = js.native
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.webcam")
+  @js.native
+  def webcam(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
+  
+  @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "data.zip")
+  @js.native
+  def zip[O /* <: TensorContainer */](datasets: DatasetContainer): typings.tensorflowTfjsData.datasetMod.Dataset[O] = js.native
 }

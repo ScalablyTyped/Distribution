@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListGallery extends js.Object {
+trait ListGallery extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -40,39 +41,27 @@ object ListGallery {
   }
   
   @scala.inline
-  implicit class ListGalleryOps[Self <: ListGallery] (val x: Self) extends AnyVal {
+  implicit class ListGalleryMutableBuilder[Self <: ListGallery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListTemplates(value: ListTemplates): Self = StObject.set(x, "ListTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setModified(value: Double => Boolean): Self = StObject.set(x, "Modified", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListTemplates(value: ListTemplates): Self = this.set("ListTemplates", value.asInstanceOf[js.Any])
+    def setReset(value: Double => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModified(value: Double => Boolean): Self = this.set("Modified", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: Double => Unit): Self = this.set("Reset", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWordDotListGallery_typekey(value: ListGallery): Self = this.set("Word.ListGallery_typekey", value.asInstanceOf[js.Any])
+    def setWordDotListGallery_typekey(value: ListGallery): Self = StObject.set(x, "Word.ListGallery_typekey", value.asInstanceOf[js.Any])
   }
 }

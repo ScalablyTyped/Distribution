@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MultiplexProgramChannelDestinationSettings extends js.Object {
+trait MultiplexProgramChannelDestinationSettings extends StObject {
   
   /**
     * The ID of the Multiplex that the encoder is providing output to. You do not need to specify the individual inputs to the Multiplex; MediaLive will handle the connection of the two MediaLive pipelines to the two Multiplex instances.
@@ -27,30 +28,18 @@ object MultiplexProgramChannelDestinationSettings {
   }
   
   @scala.inline
-  implicit class MultiplexProgramChannelDestinationSettingsOps[Self <: MultiplexProgramChannelDestinationSettings] (val x: Self) extends AnyVal {
+  implicit class MultiplexProgramChannelDestinationSettingsMutableBuilder[Self <: MultiplexProgramChannelDestinationSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMultiplexId(value: stringMin1): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMultiplexIdUndefined: Self = StObject.set(x, "MultiplexId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProgramName(value: stringMin1): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiplexId(value: stringMin1): Self = this.set("MultiplexId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiplexId: Self = this.set("MultiplexId", js.undefined)
-    
-    @scala.inline
-    def setProgramName(value: stringMin1): Self = this.set("ProgramName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgramName: Self = this.set("ProgramName", js.undefined)
+    def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
   }
 }

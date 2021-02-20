@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDomains.anon.Accesstoken
 import typings.maximMazurokGapiClientDomains.anon.Alt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationsResource extends js.Object {
+trait LocationsResource extends StObject {
   
   /** Gets information about a location. */
   def get(): Request[Location] = js.native

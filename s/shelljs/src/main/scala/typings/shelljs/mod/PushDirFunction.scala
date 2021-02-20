@@ -2,12 +2,13 @@ package typings.shelljs.mod
 
 import typings.shelljs.shelljsStrings.PlussignN
 import typings.shelljs.shelljsStrings.`-N`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushDirFunction extends js.Object {
+trait PushDirFunction extends StObject {
   
   /**
     * Saves the current directory on the top of the directory stack and then cd to dir.

@@ -1,12 +1,13 @@
 package typings.babylonjs
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VRStageParameters extends js.Object {
+trait VRStageParameters extends StObject {
   
   var sittingToStandingTransform: js.UndefOr[Float32Array] = js.native
   
@@ -23,36 +24,24 @@ object VRStageParameters {
   }
   
   @scala.inline
-  implicit class VRStageParametersOps[Self <: VRStageParameters] (val x: Self) extends AnyVal {
+  implicit class VRStageParametersMutableBuilder[Self <: VRStageParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSittingToStandingTransform(value: Float32Array): Self = StObject.set(x, "sittingToStandingTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSittingToStandingTransformUndefined: Self = StObject.set(x, "sittingToStandingTransform", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeX(value: Double): Self = StObject.set(x, "sizeX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSittingToStandingTransform(value: Float32Array): Self = this.set("sittingToStandingTransform", value.asInstanceOf[js.Any])
+    def setSizeXUndefined: Self = StObject.set(x, "sizeX", js.undefined)
     
     @scala.inline
-    def deleteSittingToStandingTransform: Self = this.set("sittingToStandingTransform", js.undefined)
+    def setSizeY(value: Double): Self = StObject.set(x, "sizeY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeX(value: Double): Self = this.set("sizeX", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeX: Self = this.set("sizeX", js.undefined)
-    
-    @scala.inline
-    def setSizeY(value: Double): Self = this.set("sizeY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeY: Self = this.set("sizeY", js.undefined)
+    def setSizeYUndefined: Self = StObject.set(x, "sizeY", js.undefined)
   }
 }

@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Email
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxEmptyFolderStatus extends js.Object
+sealed trait EmailMailboxEmptyFolderStatus extends StObject
 /** Indicates the result of a call to TryEmptyFolderAsync . */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxEmptyFolderStatus")
 @js.native
-object EmailMailboxEmptyFolderStatus extends js.Object {
+object EmailMailboxEmptyFolderStatus extends StObject {
   
   /** An error occurred while deleting parts of the folder. */
   @js.native

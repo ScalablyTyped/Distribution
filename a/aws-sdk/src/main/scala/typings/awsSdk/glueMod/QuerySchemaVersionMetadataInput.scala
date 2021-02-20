@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuerySchemaVersionMetadataInput extends js.Object {
+trait QuerySchemaVersionMetadataInput extends StObject {
   
   /**
     * Maximum number of results required per page. If the value is not supplied, this will be defaulted to 25 per page.
@@ -46,57 +47,45 @@ object QuerySchemaVersionMetadataInput {
   }
   
   @scala.inline
-  implicit class QuerySchemaVersionMetadataInputOps[Self <: QuerySchemaVersionMetadataInput] (val x: Self) extends AnyVal {
+  implicit class QuerySchemaVersionMetadataInputMutableBuilder[Self <: QuerySchemaVersionMetadataInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: QuerySchemaVersionMetadataMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMetadataList(value: MetadataList): Self = StObject.set(x, "MetadataList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: QuerySchemaVersionMetadataMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setMetadataListVarargs(value: MetadataKeyValuePair*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
     
     @scala.inline
-    def setMetadataListVarargs(value: MetadataKeyValuePair*): Self = this.set("MetadataList", js.Array(value :_*))
+    def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadataList(value: MetadataList): Self = this.set("MetadataList", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMetadataList: Self = this.set("MetadataList", js.undefined)
+    def setSchemaId(value: SchemaId): Self = StObject.set(x, "SchemaId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: SchemaRegistryTokenString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSchemaIdUndefined: Self = StObject.set(x, "SchemaId", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setSchemaVersionId(value: SchemaVersionIdString): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaId(value: SchemaId): Self = this.set("SchemaId", value.asInstanceOf[js.Any])
+    def setSchemaVersionIdUndefined: Self = StObject.set(x, "SchemaVersionId", js.undefined)
     
     @scala.inline
-    def deleteSchemaId: Self = this.set("SchemaId", js.undefined)
+    def setSchemaVersionNumber(value: SchemaVersionNumber): Self = StObject.set(x, "SchemaVersionNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaVersionId(value: SchemaVersionIdString): Self = this.set("SchemaVersionId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersionId: Self = this.set("SchemaVersionId", js.undefined)
-    
-    @scala.inline
-    def setSchemaVersionNumber(value: SchemaVersionNumber): Self = this.set("SchemaVersionNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchemaVersionNumber: Self = this.set("SchemaVersionNumber", js.undefined)
+    def setSchemaVersionNumberUndefined: Self = StObject.set(x, "SchemaVersionNumber", js.undefined)
   }
 }

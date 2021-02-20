@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.paginatorMod.PaginatorProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/paginator", JSImport.Namespace)
-@js.native
-object primereactPaginatorMod extends js.Object {
+object primereactPaginatorMod {
   
+  @JSImport("primereact/paginator", "Paginator")
   @js.native
-  class Paginator ()
-    extends Component[PaginatorProps, js.Any, js.Any]
+  class Paginator protected ()
+    extends typings.primereact.paginatorMod.Paginator {
+    def this(props: PaginatorProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: PaginatorProps, context: js.Any) = this()
+  }
 }

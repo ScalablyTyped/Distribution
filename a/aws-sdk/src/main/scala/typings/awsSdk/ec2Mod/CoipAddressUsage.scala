@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CoipAddressUsage extends js.Object {
+trait CoipAddressUsage extends StObject {
   
   /**
     * The allocation ID of the address.
@@ -36,42 +37,30 @@ object CoipAddressUsage {
   }
   
   @scala.inline
-  implicit class CoipAddressUsageOps[Self <: CoipAddressUsage] (val x: Self) extends AnyVal {
+  implicit class CoipAddressUsageMutableBuilder[Self <: CoipAddressUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllocationId(value: String): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
     
     @scala.inline
-    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    def setAwsService(value: String): Self = StObject.set(x, "AwsService", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsAccountId(value: String): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    def setAwsServiceUndefined: Self = StObject.set(x, "AwsService", js.undefined)
     
     @scala.inline
-    def deleteAwsAccountId: Self = this.set("AwsAccountId", js.undefined)
+    def setCoIp(value: String): Self = StObject.set(x, "CoIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAwsService(value: String): Self = this.set("AwsService", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAwsService: Self = this.set("AwsService", js.undefined)
-    
-    @scala.inline
-    def setCoIp(value: String): Self = this.set("CoIp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoIp: Self = this.set("CoIp", js.undefined)
+    def setCoIpUndefined: Self = StObject.set(x, "CoIp", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.wafMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateWebACLRequest extends js.Object {
+trait UpdateWebACLRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
@@ -36,39 +37,27 @@ object UpdateWebACLRequest {
   }
   
   @scala.inline
-  implicit class UpdateWebACLRequestOps[Self <: UpdateWebACLRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateWebACLRequestMutableBuilder[Self <: UpdateWebACLRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultAction(value: WafAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultActionUndefined: Self = StObject.set(x, "DefaultAction", js.undefined)
     
     @scala.inline
-    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
+    def setUpdates(value: WebACLUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebACLId(value: ResourceId): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
+    def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
     
     @scala.inline
-    def setDefaultAction(value: WafAction): Self = this.set("DefaultAction", value.asInstanceOf[js.Any])
+    def setUpdatesVarargs(value: WebACLUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
     
     @scala.inline
-    def deleteDefaultAction: Self = this.set("DefaultAction", js.undefined)
-    
-    @scala.inline
-    def setUpdatesVarargs(value: WebACLUpdate*): Self = this.set("Updates", js.Array(value :_*))
-    
-    @scala.inline
-    def setUpdates(value: WebACLUpdates): Self = this.set("Updates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdates: Self = this.set("Updates", js.undefined)
+    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

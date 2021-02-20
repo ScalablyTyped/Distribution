@@ -6,16 +6,16 @@ import typings.axeCore.mod.Spec
 import typings.axePuppeteer.typesMod.AnalyzeCB
 import typings.puppeteer.mod.Frame
 import typings.puppeteer.mod.Page
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("axe-puppeteer/dist/axePuppeteer", JSImport.Namespace)
-@js.native
-object axePuppeteerMod extends js.Object {
+object axePuppeteerMod {
   
+  @JSImport("axe-puppeteer/dist/axePuppeteer", "AxePuppeteer")
   @js.native
-  class AxePuppeteer protected () extends js.Object {
+  class AxePuppeteer protected () extends StObject {
     def this(pageFrame: Frame) = this()
     def this(pageFrame: Page) = this()
     def this(pageFrame: Frame, source: String) = this()

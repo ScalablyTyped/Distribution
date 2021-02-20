@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.kinesis
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration extends js.Object {
+trait FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration extends StObject {
   
   /**
     * Enables or disables data processing.
@@ -33,28 +34,13 @@ object FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration {
   }
   
   @scala.inline
-  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationOps[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration] (val x: Self) extends AnyVal {
+  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
-    
-    @scala.inline
-    def setProcessorsVarargs(value: Input[FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor]*): Self = this.set("processors", js.Array(value :_*))
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
     def setProcessors(
@@ -63,9 +49,12 @@ object FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration {
             Input[FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor]
           ]
         ]
-    ): Self = this.set("processors", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProcessors: Self = this.set("processors", js.undefined)
+    def setProcessorsUndefined: Self = StObject.set(x, "processors", js.undefined)
+    
+    @scala.inline
+    def setProcessorsVarargs(value: Input[FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor]*): Self = StObject.set(x, "processors", js.Array(value :_*))
   }
 }

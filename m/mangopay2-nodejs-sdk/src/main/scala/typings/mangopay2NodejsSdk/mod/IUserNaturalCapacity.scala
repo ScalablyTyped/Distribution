@@ -2,12 +2,13 @@ package typings.mangopay2NodejsSdk.mod
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DECLARATIVE
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NORMAL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUserNaturalCapacity extends js.Object {
+trait IUserNaturalCapacity extends StObject {
   
   /**
     * User used only for declaration purpose
@@ -28,24 +29,12 @@ object IUserNaturalCapacity {
   }
   
   @scala.inline
-  implicit class IUserNaturalCapacityOps[Self <: IUserNaturalCapacity] (val x: Self) extends AnyVal {
+  implicit class IUserNaturalCapacityMutableBuilder[Self <: IUserNaturalCapacity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeclarative(value: DECLARATIVE): Self = StObject.set(x, "Declarative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeclarative(value: DECLARATIVE): Self = this.set("Declarative", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNormal(value: NORMAL): Self = this.set("Normal", value.asInstanceOf[js.Any])
+    def setNormal(value: NORMAL): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
   }
 }

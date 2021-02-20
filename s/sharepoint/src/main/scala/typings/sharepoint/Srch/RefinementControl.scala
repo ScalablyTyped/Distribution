@@ -1,11 +1,12 @@
 package typings.sharepoint.Srch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefinementControl extends js.Object {
+trait RefinementControl extends StObject {
   
   var alternateRenderContext: js.Any = js.native
   
@@ -47,48 +48,36 @@ object RefinementControl {
   }
   
   @scala.inline
-  implicit class RefinementControlOps[Self <: RefinementControl] (val x: Self) extends AnyVal {
+  implicit class RefinementControlMutableBuilder[Self <: RefinementControl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlternateRenderContext(value: js.Any): Self = StObject.set(x, "alternateRenderContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlternateRenderer(value: js.Any): Self = StObject.set(x, "alternateRenderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateRenderContext(value: js.Any): Self = this.set("alternateRenderContext", value.asInstanceOf[js.Any])
+    def setCountDisplay(value: String): Self = StObject.set(x, "countDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternateRenderer(value: js.Any): Self = this.set("alternateRenderer", value.asInstanceOf[js.Any])
+    def setDeepHits(value: Double): Self = StObject.set(x, "deepHits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    def setOverrideDisplayName(value: String): Self = StObject.set(x, "overrideDisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountDisplay(value: String): Self = this.set("countDisplay", value.asInstanceOf[js.Any])
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeepHits(value: Double): Self = this.set("deepHits", value.asInstanceOf[js.Any])
+    def setRenderTemplateId(value: String): Self = StObject.set(x, "renderTemplateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideDisplayName(value: String): Self = this.set("overrideDisplayName", value.asInstanceOf[js.Any])
+    def setSpec(value: String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderTemplateId(value: String): Self = this.set("renderTemplateId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpec(value: String): Self = this.set("spec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDefaultDateIntervals(value: Boolean): Self = this.set("useDefaultDateIntervals", value.asInstanceOf[js.Any])
+    def setUseDefaultDateIntervals(value: Boolean): Self = StObject.set(x, "useDefaultDateIntervals", value.asInstanceOf[js.Any])
   }
 }

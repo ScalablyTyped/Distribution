@@ -1,13 +1,14 @@
 package typings.reapop
 
 import typings.reapop.componentsContextMod.ComponentContextType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reapop/dist/hooks/useComponentsContext", JSImport.Namespace)
-@js.native
-object useComponentsContextMod extends js.Object {
+object useComponentsContextMod {
   
+  @JSImport("reapop/dist/hooks/useComponentsContext", "useComponentsContext")
+  @js.native
   def useComponentsContext(): ComponentContextType = js.native
 }

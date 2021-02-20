@@ -3,13 +3,14 @@ package typings.winrtUwp.Windows.UI.Text.Core
 import typings.winrtUwp.Windows.Foundation.Deferral
 import typings.winrtUwp.Windows.UI.Text.UnderlineType
 import typings.winrtUwp.Windows.UI.ViewManagement.UIElementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the FormatUpdating event. */
 @js.native
-trait CoreTextFormatUpdatingEventArgs extends js.Object {
+trait CoreTextFormatUpdatingEventArgs extends StObject {
   
   /** Gets a value that represents the background color to be applied to the text range. The text input server populates this property before raising the event. */
   var backgroundColor: UIElementType = js.native
@@ -60,45 +61,33 @@ object CoreTextFormatUpdatingEventArgs {
   }
   
   @scala.inline
-  implicit class CoreTextFormatUpdatingEventArgsOps[Self <: CoreTextFormatUpdatingEventArgs] (val x: Self) extends AnyVal {
+  implicit class CoreTextFormatUpdatingEventArgsMutableBuilder[Self <: CoreTextFormatUpdatingEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: UIElementType): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: UIElementType): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setRange(value: CoreTextRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
+    def setReason(value: CoreTextFormatUpdatingReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCanceled(value: Boolean): Self = this.set("isCanceled", value.asInstanceOf[js.Any])
+    def setResult(value: CoreTextFormatUpdatingResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: CoreTextRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setTextColor(value: UIElementType): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: CoreTextFormatUpdatingReason): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setUnderlineColor(value: UIElementType): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: CoreTextFormatUpdatingResult): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextColor(value: UIElementType): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineColor(value: UIElementType): Self = this.set("underlineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineType(value: UnderlineType): Self = this.set("underlineType", value.asInstanceOf[js.Any])
+    def setUnderlineType(value: UnderlineType): Self = StObject.set(x, "underlineType", value.asInstanceOf[js.Any])
   }
 }

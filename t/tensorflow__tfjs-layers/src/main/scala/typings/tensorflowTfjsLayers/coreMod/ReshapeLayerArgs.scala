@@ -2,6 +2,7 @@ package typings.tensorflowTfjsLayers.coreMod
 
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +22,12 @@ object ReshapeLayerArgs {
   }
   
   @scala.inline
-  implicit class ReshapeLayerArgsOps[Self <: ReshapeLayerArgs] (val x: Self) extends AnyVal {
+  implicit class ReshapeLayerArgsMutableBuilder[Self <: ReshapeLayerArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetShape(value: Shape): Self = StObject.set(x, "targetShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetShapeVarargs(value: (Null | Double)*): Self = this.set("targetShape", js.Array(value :_*))
-    
-    @scala.inline
-    def setTargetShape(value: Shape): Self = this.set("targetShape", value.asInstanceOf[js.Any])
+    def setTargetShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "targetShape", js.Array(value :_*))
   }
 }

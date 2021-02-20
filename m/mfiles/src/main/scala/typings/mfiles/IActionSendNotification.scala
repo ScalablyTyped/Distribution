@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IActionSendNotification extends js.Object {
+trait IActionSendNotification extends StObject {
   
   def Clone(): IActionSendNotification = js.native
   
@@ -29,30 +30,18 @@ object IActionSendNotification {
   }
   
   @scala.inline
-  implicit class IActionSendNotificationOps[Self <: IActionSendNotification] (val x: Self) extends AnyVal {
+  implicit class IActionSendNotificationMutableBuilder[Self <: IActionSendNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IActionSendNotification): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipientsEx(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "RecipientsEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IActionSendNotification): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("Message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRecipientsEx(value: IUserOrUserGroupIDExs): Self = this.set("RecipientsEx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
   }
 }

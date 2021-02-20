@@ -1,11 +1,12 @@
 package typings.stripeV3.stripe.paymentMethod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AchCreditTransferDetails extends js.Object {
+trait AchCreditTransferDetails extends StObject {
   
   var account_number: String = js.native
   
@@ -24,30 +25,18 @@ object AchCreditTransferDetails {
   }
   
   @scala.inline
-  implicit class AchCreditTransferDetailsOps[Self <: AchCreditTransferDetails] (val x: Self) extends AnyVal {
+  implicit class AchCreditTransferDetailsMutableBuilder[Self <: AchCreditTransferDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccount_number(value: String): Self = this.set("account_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBank_name(value: String): Self = this.set("bank_name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRouting_number(value: String): Self = this.set("routing_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSwift_coode(value: String): Self = this.set("swift_coode", value.asInstanceOf[js.Any])
+    def setSwift_coode(value: String): Self = StObject.set(x, "swift_coode", value.asInstanceOf[js.Any])
   }
 }

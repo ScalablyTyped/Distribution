@@ -4,14 +4,14 @@ import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/helpers/AxesHelper", JSImport.Namespace)
-@js.native
-object axesHelperMod extends js.Object {
+object axesHelperMod {
   
+  @JSImport("three/src/helpers/AxesHelper", "AxesHelper")
   @js.native
   /**
   	 * @param [size=1]

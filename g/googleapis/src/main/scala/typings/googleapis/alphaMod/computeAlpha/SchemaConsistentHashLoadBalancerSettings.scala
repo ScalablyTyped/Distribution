@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This message defines settings for a consistent hash style load balancer.
   */
 @js.native
-trait SchemaConsistentHashLoadBalancerSettings extends js.Object {
+trait SchemaConsistentHashLoadBalancerSettings extends StObject {
   
   /**
     * Hash is based on HTTP Cookie. This field describes a HTTP cookie that
@@ -41,36 +42,24 @@ object SchemaConsistentHashLoadBalancerSettings {
   }
   
   @scala.inline
-  implicit class SchemaConsistentHashLoadBalancerSettingsOps[Self <: SchemaConsistentHashLoadBalancerSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaConsistentHashLoadBalancerSettingsMutableBuilder[Self <: SchemaConsistentHashLoadBalancerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpCookie(value: SchemaConsistentHashLoadBalancerSettingsHttpCookie): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpCookieUndefined: Self = StObject.set(x, "httpCookie", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpHeaderName(value: String): Self = StObject.set(x, "httpHeaderName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpCookie(value: SchemaConsistentHashLoadBalancerSettingsHttpCookie): Self = this.set("httpCookie", value.asInstanceOf[js.Any])
+    def setHttpHeaderNameUndefined: Self = StObject.set(x, "httpHeaderName", js.undefined)
     
     @scala.inline
-    def deleteHttpCookie: Self = this.set("httpCookie", js.undefined)
+    def setMinimumRingSize(value: String): Self = StObject.set(x, "minimumRingSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpHeaderName(value: String): Self = this.set("httpHeaderName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHttpHeaderName: Self = this.set("httpHeaderName", js.undefined)
-    
-    @scala.inline
-    def setMinimumRingSize(value: String): Self = this.set("minimumRingSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumRingSize: Self = this.set("minimumRingSize", js.undefined)
+    def setMinimumRingSizeUndefined: Self = StObject.set(x, "minimumRingSize", js.undefined)
   }
 }

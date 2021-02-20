@@ -1,5 +1,6 @@
 package typings.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webix.webixStrings.onValidationError
   - typings.webix.webixStrings.onValidationSuccess
 */
-trait DataCollectionEventName extends js.Object
+trait DataCollectionEventName extends StObject
 object DataCollectionEventName {
   
   @scala.inline

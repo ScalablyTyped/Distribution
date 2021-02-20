@@ -1,5 +1,6 @@
 package typings.pixiJs.global.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,10 +38,11 @@ class Spritesheet protected ()
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()
   def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any, resolutionFilename: String) = this()
 }
-/* static members */
-@JSGlobal("PIXI.Spritesheet")
-@js.native
-object Spritesheet extends js.Object {
+object Spritesheet {
+  
+  @JSGlobal("PIXI.Spritesheet")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The maximum number of Textures to build per process.
@@ -48,5 +50,10 @@ object Spritesheet extends js.Object {
     * @type {number}
     * @default 1000
     */
-  var BATCH_SIZE: Double = js.native
+  /* static member */
+  @JSGlobal("PIXI.Spritesheet.BATCH_SIZE")
+  @js.native
+  def BATCH_SIZE: Double = js.native
+  @scala.inline
+  def BATCH_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCH_SIZE")(x.asInstanceOf[js.Any])
 }

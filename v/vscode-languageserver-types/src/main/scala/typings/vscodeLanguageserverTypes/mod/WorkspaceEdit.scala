@@ -1,12 +1,13 @@
 package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkspaceEdit extends js.Object {
+trait WorkspaceEdit extends StObject {
   
   /**
     * Holds changes to existing resources.
@@ -27,9 +28,34 @@ trait WorkspaceEdit extends js.Object {
     */
   var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.native
 }
-@JSImport("vscode-languageserver-types", "WorkspaceEdit")
-@js.native
-object WorkspaceEdit extends js.Object {
+object WorkspaceEdit {
   
+  @scala.inline
+  def apply(): WorkspaceEdit = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[WorkspaceEdit]
+  }
+  
+  @JSImport("vscode-languageserver-types", "WorkspaceEdit.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = js.native
+  
+  @scala.inline
+  implicit class WorkspaceEditMutableBuilder[Self <: WorkspaceEdit] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setChanges(value: StringDictionary[js.Array[TextEdit]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
+    
+    @scala.inline
+    def setDocumentChanges(value: js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]): Self = StObject.set(x, "documentChanges", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
+    
+    @scala.inline
+    def setDocumentChangesVarargs(value: (TextDocumentEdit | CreateFile | RenameFile | DeleteFile)*): Self = StObject.set(x, "documentChanges", js.Array(value :_*))
+  }
 }

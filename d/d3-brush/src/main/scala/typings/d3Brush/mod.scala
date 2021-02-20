@@ -11,24 +11,31 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
 import typings.d3Selection.mod.ValueFn
 import typings.std.SVGGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-brush", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("d3-brush", "brush")
+  @js.native
   def brush[Datum](): BrushBehavior[Datum] = js.native
   
+  @JSImport("d3-brush", "brushSelection")
+  @js.native
   def brushSelection(node: SVGGElement): BrushSelection_ | Null = js.native
   
+  @JSImport("d3-brush", "brushX")
+  @js.native
   def brushX[Datum](): BrushBehavior[Datum] = js.native
   
+  @JSImport("d3-brush", "brushY")
+  @js.native
   def brushY[Datum](): BrushBehavior[Datum] = js.native
   
   @js.native
-  trait BrushBehavior[Datum] extends js.Object {
+  trait BrushBehavior[Datum] extends StObject {
     
     /**
       * Applies the brush to the specified group, which must be a selection of SVG G elements.
@@ -254,15 +261,17 @@ object mod extends js.Object {
     def touchable(touchable: ValueFn[SVGGElement, Datum, Boolean]): this.type = js.native
   }
   
+  type BrushSelection_ = js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])]
+  
   @js.native
-  trait D3BrushEvent[Datum] extends js.Object {
+  trait D3BrushEvent[Datum] extends StObject {
     
     /**
       * The mode of the brush.
       */
     var mode: drag | space | handle | center = js.native
     
-     // Leave failsafe string type for cases like 'brush.foo'
+    // Leave failsafe string type for cases like 'brush.foo'
     /**
       * The current brush selection associated with the event.
       * This is null when the selection is empty.
@@ -298,6 +307,4 @@ object mod extends js.Object {
       */
     var `type`: start | brush | end | String = js.native
   }
-  
-  type BrushSelection_ = js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])]
 }

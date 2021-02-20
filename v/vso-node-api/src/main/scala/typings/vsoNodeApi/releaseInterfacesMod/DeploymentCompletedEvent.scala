@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentCompletedEvent extends js.Object {
+trait DeploymentCompletedEvent extends StObject {
   
   var comment: String = js.native
   
@@ -33,33 +34,21 @@ object DeploymentCompletedEvent {
   }
   
   @scala.inline
-  implicit class DeploymentCompletedEventOps[Self <: DeploymentCompletedEvent] (val x: Self) extends AnyVal {
+  implicit class DeploymentCompletedEventMutableBuilder[Self <: DeploymentCompletedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeployment(value: Deployment): Self = this.set("deployment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnvironment(value: ReleaseEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProject(value: ProjectReference): Self = this.set("project", value.asInstanceOf[js.Any])
+    def setProject(value: ProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
   }
 }

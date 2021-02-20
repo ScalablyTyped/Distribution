@@ -1,11 +1,12 @@
 package typings.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EscapeFunctions extends js.Object {
+trait EscapeFunctions extends StObject {
   
   /**
     * Escape an untrusted string to be used as a SQL value. Use this on user

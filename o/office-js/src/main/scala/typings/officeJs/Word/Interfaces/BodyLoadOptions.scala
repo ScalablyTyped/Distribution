@@ -1,5 +1,6 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait BodyLoadOptions extends js.Object {
+trait BodyLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -116,90 +117,78 @@ object BodyLoadOptions {
   }
   
   @scala.inline
-  implicit class BodyLoadOptionsOps[Self <: BodyLoadOptions] (val x: Self) extends AnyVal {
+  implicit class BodyLoadOptionsMutableBuilder[Self <: BodyLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFont(value: FontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setParentBody(value: BodyLoadOptions): Self = StObject.set(x, "parentBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: FontLoadOptions): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setParentBodyOrNullObject(value: BodyLoadOptions): Self = StObject.set(x, "parentBodyOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setParentBodyOrNullObjectUndefined: Self = StObject.set(x, "parentBodyOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentBody(value: BodyLoadOptions): Self = this.set("parentBody", value.asInstanceOf[js.Any])
+    def setParentBodyUndefined: Self = StObject.set(x, "parentBody", js.undefined)
     
     @scala.inline
-    def deleteParentBody: Self = this.set("parentBody", js.undefined)
+    def setParentContentControl(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentBodyOrNullObject(value: BodyLoadOptions): Self = this.set("parentBodyOrNullObject", value.asInstanceOf[js.Any])
+    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = StObject.set(x, "parentContentControlOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentBodyOrNullObject: Self = this.set("parentBodyOrNullObject", js.undefined)
+    def setParentContentControlOrNullObjectUndefined: Self = StObject.set(x, "parentContentControlOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentContentControl(value: ContentControlLoadOptions): Self = this.set("parentContentControl", value.asInstanceOf[js.Any])
+    def setParentContentControlUndefined: Self = StObject.set(x, "parentContentControl", js.undefined)
     
     @scala.inline
-    def deleteParentContentControl: Self = this.set("parentContentControl", js.undefined)
+    def setParentSection(value: SectionLoadOptions): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentContentControlOrNullObject(value: ContentControlLoadOptions): Self = this.set("parentContentControlOrNullObject", value.asInstanceOf[js.Any])
+    def setParentSectionOrNullObject(value: SectionLoadOptions): Self = StObject.set(x, "parentSectionOrNullObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentContentControlOrNullObject: Self = this.set("parentContentControlOrNullObject", js.undefined)
+    def setParentSectionOrNullObjectUndefined: Self = StObject.set(x, "parentSectionOrNullObject", js.undefined)
     
     @scala.inline
-    def setParentSection(value: SectionLoadOptions): Self = this.set("parentSection", value.asInstanceOf[js.Any])
+    def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
     
     @scala.inline
-    def deleteParentSection: Self = this.set("parentSection", js.undefined)
+    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentSectionOrNullObject(value: SectionLoadOptions): Self = this.set("parentSectionOrNullObject", value.asInstanceOf[js.Any])
+    def setStyleBuiltIn(value: Boolean): Self = StObject.set(x, "styleBuiltIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteParentSectionOrNullObject: Self = this.set("parentSectionOrNullObject", js.undefined)
+    def setStyleBuiltInUndefined: Self = StObject.set(x, "styleBuiltIn", js.undefined)
     
     @scala.inline
-    def setStyle(value: Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleBuiltIn(value: Boolean): Self = this.set("styleBuiltIn", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteStyleBuiltIn: Self = this.set("styleBuiltIn", js.undefined)
+    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: Boolean): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

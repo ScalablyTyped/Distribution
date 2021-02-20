@@ -1,6 +1,7 @@
 package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,108 +43,96 @@ object Description_ {
   }
   
   @scala.inline
-  implicit class Description_Ops[Self <: Description_] (val x: Self) extends AnyVal {
+  implicit class Description_MutableBuilder[Self <: Description_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExample(value: js.Array[_]): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setExampleVarargs(value: js.Any*): Self = StObject.set(x, "example", js.Array(value :_*))
     
     @scala.inline
-    def setExampleVarargs(value: js.Any*): Self = this.set("example", js.Array(value :_*))
+    def setFlags(value: js.Object): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExample(value: js.Array[_]): Self = this.set("example", value.asInstanceOf[js.Any])
+    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     @scala.inline
-    def deleteExample: Self = this.set("example", js.undefined)
+    def setInvalids(value: js.Array[_]): Self = StObject.set(x, "invalids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFlags(value: js.Object): Self = this.set("flags", value.asInstanceOf[js.Any])
+    def setInvalidsUndefined: Self = StObject.set(x, "invalids", js.undefined)
     
     @scala.inline
-    def deleteFlags: Self = this.set("flags", js.undefined)
+    def setInvalidsVarargs(value: js.Any*): Self = StObject.set(x, "invalids", js.Array(value :_*))
     
     @scala.inline
-    def setInvalidsVarargs(value: js.Any*): Self = this.set("invalids", js.Array(value :_*))
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalids(value: js.Array[_]): Self = this.set("invalids", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteInvalids: Self = this.set("invalids", js.undefined)
+    def setMeta(value: js.Array[_]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setMetaVarargs(value: js.Any*): Self = StObject.set(x, "meta", js.Array(value :_*))
     
     @scala.inline
-    def setMetaVarargs(value: js.Any*): Self = this.set("meta", js.Array(value :_*))
+    def setNotes(value: js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: js.Array[_]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
     @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
     
     @scala.inline
-    def setNotesVarargs(value: String*): Self = this.set("notes", js.Array(value :_*))
+    def setOptions(value: ValidationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotes(value: js.Array[String]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteNotes: Self = this.set("notes", js.undefined)
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: ValidationOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setType(value: Types | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: Types | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setValids(value: js.Array[_]): Self = StObject.set(x, "valids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setValidsUndefined: Self = StObject.set(x, "valids", js.undefined)
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setValidsVarargs(value: js.Any*): Self = this.set("valids", js.Array(value :_*))
-    
-    @scala.inline
-    def setValids(value: js.Array[_]): Self = this.set("valids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValids: Self = this.set("valids", js.undefined)
+    def setValidsVarargs(value: js.Any*): Self = StObject.set(x, "valids", js.Array(value :_*))
   }
 }

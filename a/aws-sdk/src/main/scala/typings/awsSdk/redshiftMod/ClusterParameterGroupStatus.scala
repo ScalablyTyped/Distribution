@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterParameterGroupStatus extends js.Object {
+trait ClusterParameterGroupStatus extends StObject {
   
   /**
     * The list of parameter statuses.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
@@ -31,39 +32,27 @@ object ClusterParameterGroupStatus {
   }
   
   @scala.inline
-  implicit class ClusterParameterGroupStatusOps[Self <: ClusterParameterGroupStatus] (val x: Self) extends AnyVal {
+  implicit class ClusterParameterGroupStatusMutableBuilder[Self <: ClusterParameterGroupStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClusterParameterStatusList(value: ClusterParameterStatusList): Self = StObject.set(x, "ClusterParameterStatusList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterParameterStatusListUndefined: Self = StObject.set(x, "ClusterParameterStatusList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterParameterStatusListVarargs(value: ClusterParameterStatus*): Self = StObject.set(x, "ClusterParameterStatusList", js.Array(value :_*))
     
     @scala.inline
-    def setClusterParameterStatusListVarargs(value: ClusterParameterStatus*): Self = this.set("ClusterParameterStatusList", js.Array(value :_*))
+    def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterParameterStatusList(value: ClusterParameterStatusList): Self = this.set("ClusterParameterStatusList", value.asInstanceOf[js.Any])
+    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
     
     @scala.inline
-    def deleteClusterParameterStatusList: Self = this.set("ClusterParameterStatusList", js.undefined)
+    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterApplyStatus(value: String): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
-    
-    @scala.inline
-    def setParameterGroupName(value: String): Self = this.set("ParameterGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterGroupName: Self = this.set("ParameterGroupName", js.undefined)
+    def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
   }
 }

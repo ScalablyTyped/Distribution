@@ -1,11 +1,12 @@
 package typings.awsSdk.fmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityGroupRuleDescription extends js.Object {
+trait SecurityGroupRuleDescription extends StObject {
   
   /**
     * The start of the port range for the TCP and UDP protocols, or an ICMP/ICMPv6 type number. A value of -1 indicates all ICMP/ICMPv6 types.
@@ -46,54 +47,42 @@ object SecurityGroupRuleDescription {
   }
   
   @scala.inline
-  implicit class SecurityGroupRuleDescriptionOps[Self <: SecurityGroupRuleDescription] (val x: Self) extends AnyVal {
+  implicit class SecurityGroupRuleDescriptionMutableBuilder[Self <: SecurityGroupRuleDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFromPort(value: IPPortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIPV4Range(value: CIDR): Self = StObject.set(x, "IPV4Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: IPPortNumber): Self = this.set("FromPort", value.asInstanceOf[js.Any])
+    def setIPV4RangeUndefined: Self = StObject.set(x, "IPV4Range", js.undefined)
     
     @scala.inline
-    def deleteFromPort: Self = this.set("FromPort", js.undefined)
+    def setIPV6Range(value: CIDR): Self = StObject.set(x, "IPV6Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPV4Range(value: CIDR): Self = this.set("IPV4Range", value.asInstanceOf[js.Any])
+    def setIPV6RangeUndefined: Self = StObject.set(x, "IPV6Range", js.undefined)
     
     @scala.inline
-    def deleteIPV4Range: Self = this.set("IPV4Range", js.undefined)
+    def setPrefixListId(value: ResourceId): Self = StObject.set(x, "PrefixListId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIPV6Range(value: CIDR): Self = this.set("IPV6Range", value.asInstanceOf[js.Any])
+    def setPrefixListIdUndefined: Self = StObject.set(x, "PrefixListId", js.undefined)
     
     @scala.inline
-    def deleteIPV6Range: Self = this.set("IPV6Range", js.undefined)
+    def setProtocol(value: LengthBoundedString): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrefixListId(value: ResourceId): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def deletePrefixListId: Self = this.set("PrefixListId", js.undefined)
+    def setToPort(value: IPPortNumber): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: LengthBoundedString): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
-    
-    @scala.inline
-    def setToPort(value: IPPortNumber): Self = this.set("ToPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPort: Self = this.set("ToPort", js.undefined)
+    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
   }
 }

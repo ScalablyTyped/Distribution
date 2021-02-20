@@ -1,13 +1,13 @@
 package typings.awsSdkClientXrayNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/model/_BackendConnectionErrors", JSImport.Namespace)
-@js.native
-object backendConnectionErrorsMod extends js.Object {
+object backendConnectionErrorsMod {
   
-  @JSName("_BackendConnectionErrors")
+  @JSImport("@aws-sdk/client-xray-node/model/_BackendConnectionErrors", "_BackendConnectionErrors")
+  @js.native
   val BackendConnectionErrors: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

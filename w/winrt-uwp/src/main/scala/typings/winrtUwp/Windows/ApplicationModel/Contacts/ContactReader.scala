@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to read Contact objects in batches from the ContactStore which may be local or remotely located. */
 @js.native
-trait ContactReader extends js.Object {
+trait ContactReader extends StObject {
   
   /**
     * Gets the reason a Contact matched the search query. Returns the properties and substrings that match.
@@ -35,24 +36,12 @@ object ContactReader {
   }
   
   @scala.inline
-  implicit class ContactReaderOps[Self <: ContactReader] (val x: Self) extends AnyVal {
+  implicit class ContactReaderMutableBuilder[Self <: ContactReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetMatchingPropertiesWithMatchReason(value: Contact => IVectorView[ContactMatchReason]): Self = StObject.set(x, "getMatchingPropertiesWithMatchReason", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetMatchingPropertiesWithMatchReason(value: Contact => IVectorView[ContactMatchReason]): Self = this.set("getMatchingPropertiesWithMatchReason", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[ContactBatch]): Self = this.set("readBatchAsync", js.Any.fromFunction0(value))
+    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[ContactBatch]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

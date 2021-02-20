@@ -1,5 +1,6 @@
 package typings.jwplayer.jwplayer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jwplayer.jwplayerStrings.seeked
   - typings.jwplayer.jwplayerStrings.remove
 */
-trait NoParamEvent extends js.Object
+trait NoParamEvent extends StObject
 object NoParamEvent {
   
   @scala.inline

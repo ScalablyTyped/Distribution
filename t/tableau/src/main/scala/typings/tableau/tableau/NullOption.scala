@@ -1,15 +1,16 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NullOption extends js.Object
+sealed trait NullOption extends StObject
 /** An enumeration that indicates what to do with null values for a given filter or mark selection call. */
 @JSGlobal("tableau.NullOption")
 @js.native
-object NullOption extends js.Object {
+object NullOption extends StObject {
   
   /** Include null and non-null values in the filter. */
   @js.native

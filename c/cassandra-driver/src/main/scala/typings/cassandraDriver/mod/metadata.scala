@@ -1,15 +1,15 @@
 package typings.cassandraDriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "metadata")
-@js.native
-object metadata extends js.Object {
+object metadata {
   
+  @JSImport("cassandra-driver", "metadata.IndexKind")
   @js.native
-  object IndexKind extends js.Object {
+  object IndexKind extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.cassandraDriver.metadataMod.metadata.IndexKind with Double] = js.native

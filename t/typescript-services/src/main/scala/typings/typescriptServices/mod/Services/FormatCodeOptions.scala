@@ -1,5 +1,6 @@
 package typings.typescriptServices.mod.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class FormatCodeOptions ()
   extends typings.typescriptServices.TypeScript.Services.FormatCodeOptions
-/* static members */
-@JSImport("typescript-services", "Services.FormatCodeOptions")
-@js.native
-object FormatCodeOptions extends js.Object {
+object FormatCodeOptions {
   
-  def clone(objectToClone: typings.typescriptServices.TypeScript.Services.FormatCodeOptions): typings.typescriptServices.TypeScript.Services.FormatCodeOptions = js.native
+  /* static member */
+  @JSImport("typescript-services", "Services.FormatCodeOptions.clone")
+  @js.native
+  def clone_(objectToClone: typings.typescriptServices.TypeScript.Services.FormatCodeOptions): typings.typescriptServices.TypeScript.Services.FormatCodeOptions = js.native
 }

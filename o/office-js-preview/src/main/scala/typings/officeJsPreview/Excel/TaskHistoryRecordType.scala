@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TaskHistoryRecordType extends js.Object
+sealed trait TaskHistoryRecordType extends StObject
 /**
   *
   * Represents the type of change recorded in the task history record.
@@ -15,7 +16,7 @@ sealed trait TaskHistoryRecordType extends js.Object
   */
 @JSGlobal("Excel.TaskHistoryRecordType")
 @js.native
-object TaskHistoryRecordType extends js.Object {
+object TaskHistoryRecordType extends StObject {
   
   /**
     * Represents a user being assigned to a task.

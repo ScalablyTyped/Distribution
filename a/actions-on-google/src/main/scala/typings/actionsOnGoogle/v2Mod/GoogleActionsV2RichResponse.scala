@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2RichResponse extends js.Object {
+trait GoogleActionsV2RichResponse extends StObject {
   
   /**
     * A list of UI elements which compose the response
@@ -47,42 +48,30 @@ object GoogleActionsV2RichResponse {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2RichResponseOps[Self <: GoogleActionsV2RichResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2RichResponseMutableBuilder[Self <: GoogleActionsV2RichResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[GoogleActionsV2RichResponseItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemsVarargs(value: GoogleActionsV2RichResponseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: GoogleActionsV2RichResponseItem*): Self = this.set("items", js.Array(value :_*))
+    def setLinkOutSuggestion(value: GoogleActionsV2UiElementsLinkOutSuggestion): Self = StObject.set(x, "linkOutSuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[GoogleActionsV2RichResponseItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLinkOutSuggestionUndefined: Self = StObject.set(x, "linkOutSuggestion", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setSuggestions(value: js.Array[GoogleActionsV2UiElementsSuggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkOutSuggestion(value: GoogleActionsV2UiElementsLinkOutSuggestion): Self = this.set("linkOutSuggestion", value.asInstanceOf[js.Any])
+    def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
     @scala.inline
-    def deleteLinkOutSuggestion: Self = this.set("linkOutSuggestion", js.undefined)
-    
-    @scala.inline
-    def setSuggestionsVarargs(value: GoogleActionsV2UiElementsSuggestion*): Self = this.set("suggestions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSuggestions(value: js.Array[GoogleActionsV2UiElementsSuggestion]): Self = this.set("suggestions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    def setSuggestionsVarargs(value: GoogleActionsV2UiElementsSuggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

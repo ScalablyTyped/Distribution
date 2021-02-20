@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }   ] } ```
   */
 @js.native
-trait SchemaBuildBazelRemoteExecutionV2Directory extends js.Object {
+trait SchemaBuildBazelRemoteExecutionV2Directory extends StObject {
   
   /**
     * The subdirectories in the directory.
@@ -57,45 +58,33 @@ object SchemaBuildBazelRemoteExecutionV2Directory {
   }
   
   @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2DirectoryOps[Self <: SchemaBuildBazelRemoteExecutionV2Directory] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildBazelRemoteExecutionV2DirectoryMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2Directory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectories(value: js.Array[SchemaBuildBazelRemoteExecutionV2DirectoryNode]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2DirectoryNode*): Self = StObject.set(x, "directories", js.Array(value :_*))
     
     @scala.inline
-    def setDirectoriesVarargs(value: SchemaBuildBazelRemoteExecutionV2DirectoryNode*): Self = this.set("directories", js.Array(value :_*))
+    def setFiles(value: js.Array[SchemaBuildBazelRemoteExecutionV2FileNode]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectories(value: js.Array[SchemaBuildBazelRemoteExecutionV2DirectoryNode]): Self = this.set("directories", value.asInstanceOf[js.Any])
+    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
     @scala.inline
-    def deleteDirectories: Self = this.set("directories", js.undefined)
+    def setFilesVarargs(value: SchemaBuildBazelRemoteExecutionV2FileNode*): Self = StObject.set(x, "files", js.Array(value :_*))
     
     @scala.inline
-    def setFilesVarargs(value: SchemaBuildBazelRemoteExecutionV2FileNode*): Self = this.set("files", js.Array(value :_*))
+    def setSymlinks(value: js.Array[SchemaBuildBazelRemoteExecutionV2SymlinkNode]): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiles(value: js.Array[SchemaBuildBazelRemoteExecutionV2FileNode]): Self = this.set("files", value.asInstanceOf[js.Any])
+    def setSymlinksUndefined: Self = StObject.set(x, "symlinks", js.undefined)
     
     @scala.inline
-    def deleteFiles: Self = this.set("files", js.undefined)
-    
-    @scala.inline
-    def setSymlinksVarargs(value: SchemaBuildBazelRemoteExecutionV2SymlinkNode*): Self = this.set("symlinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setSymlinks(value: js.Array[SchemaBuildBazelRemoteExecutionV2SymlinkNode]): Self = this.set("symlinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymlinks: Self = this.set("symlinks", js.undefined)
+    def setSymlinksVarargs(value: SchemaBuildBazelRemoteExecutionV2SymlinkNode*): Self = StObject.set(x, "symlinks", js.Array(value :_*))
   }
 }

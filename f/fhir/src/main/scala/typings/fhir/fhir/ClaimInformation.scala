@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,90 +85,78 @@ object ClaimInformation {
   }
   
   @scala.inline
-  implicit class ClaimInformationOps[Self <: ClaimInformation] (val x: Self) extends AnyVal {
+  implicit class ClaimInformationMutableBuilder[Self <: ClaimInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setReason(value: CodeableConcept): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    def setSequence(value: positiveInt): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    def setTimingDate(value: date): Self = StObject.set(x, "timingDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_timingDate(value: Element): Self = this.set("_timingDate", value.asInstanceOf[js.Any])
+    def setTimingDateUndefined: Self = StObject.set(x, "timingDate", js.undefined)
     
     @scala.inline
-    def delete_timingDate: Self = this.set("_timingDate", js.undefined)
+    def setTimingPeriod(value: Period): Self = StObject.set(x, "timingPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueString(value: Element): Self = this.set("_valueString", value.asInstanceOf[js.Any])
+    def setTimingPeriodUndefined: Self = StObject.set(x, "timingPeriod", js.undefined)
     
     @scala.inline
-    def delete_valueString: Self = this.set("_valueString", js.undefined)
+    def setValueAttachment(value: Attachment): Self = StObject.set(x, "valueAttachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setValueAttachmentUndefined: Self = StObject.set(x, "valueAttachment", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: CodeableConcept): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setValueReference(value: Reference): Self = StObject.set(x, "valueReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingDate(value: date): Self = this.set("timingDate", value.asInstanceOf[js.Any])
+    def setValueReferenceUndefined: Self = StObject.set(x, "valueReference", js.undefined)
     
     @scala.inline
-    def deleteTimingDate: Self = this.set("timingDate", js.undefined)
+    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimingPeriod(value: Period): Self = this.set("timingPeriod", value.asInstanceOf[js.Any])
+    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     
     @scala.inline
-    def deleteTimingPeriod: Self = this.set("timingPeriod", js.undefined)
+    def set_sequence(value: Element): Self = StObject.set(x, "_sequence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueAttachment(value: Attachment): Self = this.set("valueAttachment", value.asInstanceOf[js.Any])
+    def set_sequenceUndefined: Self = StObject.set(x, "_sequence", js.undefined)
     
     @scala.inline
-    def deleteValueAttachment: Self = this.set("valueAttachment", js.undefined)
+    def set_timingDate(value: Element): Self = StObject.set(x, "_timingDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueQuantity(value: Quantity): Self = this.set("valueQuantity", value.asInstanceOf[js.Any])
+    def set_timingDateUndefined: Self = StObject.set(x, "_timingDate", js.undefined)
     
     @scala.inline
-    def deleteValueQuantity: Self = this.set("valueQuantity", js.undefined)
+    def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueReference(value: Reference): Self = this.set("valueReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueReference: Self = this.set("valueReference", js.undefined)
-    
-    @scala.inline
-    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueString: Self = this.set("valueString", js.undefined)
+    def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
   }
 }

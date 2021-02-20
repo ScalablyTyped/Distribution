@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "TransactionLineItem")
 @js.native
-class TransactionLineItem () extends js.Object {
+class TransactionLineItem () extends StObject {
   
   var commodityCode: js.UndefOr[String] = js.native
   

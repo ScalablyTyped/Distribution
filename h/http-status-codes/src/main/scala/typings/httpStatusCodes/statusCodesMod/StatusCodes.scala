@@ -1,15 +1,15 @@
 package typings.httpStatusCodes.statusCodesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StatusCodes extends js.Object
+sealed trait StatusCodes extends StObject
 @JSImport("http-status-codes/build/cjs/status-codes", "StatusCodes")
 @js.native
-object StatusCodes extends js.Object {
+object StatusCodes extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StatusCodes with Double] = js.native
@@ -21,8 +21,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait ACCEPTED extends StatusCodes
-  /* 202 */ @js.native
-  object ACCEPTED extends TopLevel[ACCEPTED with Double]
+  /* 202 */ val ACCEPTED: typings.httpStatusCodes.statusCodesMod.StatusCodes.ACCEPTED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.3
@@ -31,8 +30,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait BAD_GATEWAY extends StatusCodes
-  /* 502 */ @js.native
-  object BAD_GATEWAY extends TopLevel[BAD_GATEWAY with Double]
+  /* 502 */ val BAD_GATEWAY: typings.httpStatusCodes.statusCodesMod.StatusCodes.BAD_GATEWAY with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.1
@@ -41,8 +39,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait BAD_REQUEST extends StatusCodes
-  /* 400 */ @js.native
-  object BAD_REQUEST extends TopLevel[BAD_REQUEST with Double]
+  /* 400 */ val BAD_REQUEST: typings.httpStatusCodes.statusCodesMod.StatusCodes.BAD_REQUEST with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.8
@@ -51,8 +48,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait CONFLICT extends StatusCodes
-  /* 409 */ @js.native
-  object CONFLICT extends TopLevel[CONFLICT with Double]
+  /* 409 */ val CONFLICT: typings.httpStatusCodes.statusCodesMod.StatusCodes.CONFLICT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.2.1
@@ -61,8 +57,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait CONTINUE extends StatusCodes
-  /* 100 */ @js.native
-  object CONTINUE extends TopLevel[CONTINUE with Double]
+  /* 100 */ val CONTINUE: typings.httpStatusCodes.statusCodesMod.StatusCodes.CONTINUE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.2
@@ -71,8 +66,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait CREATED extends StatusCodes
-  /* 201 */ @js.native
-  object CREATED extends TopLevel[CREATED with Double]
+  /* 201 */ val CREATED: typings.httpStatusCodes.statusCodesMod.StatusCodes.CREATED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.14
@@ -81,8 +75,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait EXPECTATION_FAILED extends StatusCodes
-  /* 417 */ @js.native
-  object EXPECTATION_FAILED extends TopLevel[EXPECTATION_FAILED with Double]
+  /* 417 */ val EXPECTATION_FAILED: typings.httpStatusCodes.statusCodesMod.StatusCodes.EXPECTATION_FAILED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.5
@@ -91,8 +84,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait FAILED_DEPENDENCY extends StatusCodes
-  /* 424 */ @js.native
-  object FAILED_DEPENDENCY extends TopLevel[FAILED_DEPENDENCY with Double]
+  /* 424 */ val FAILED_DEPENDENCY: typings.httpStatusCodes.statusCodesMod.StatusCodes.FAILED_DEPENDENCY with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.3
@@ -101,8 +93,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait FORBIDDEN extends StatusCodes
-  /* 403 */ @js.native
-  object FORBIDDEN extends TopLevel[FORBIDDEN with Double]
+  /* 403 */ val FORBIDDEN: typings.httpStatusCodes.statusCodesMod.StatusCodes.FORBIDDEN with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.5
@@ -111,8 +102,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait GATEWAY_TIMEOUT extends StatusCodes
-  /* 504 */ @js.native
-  object GATEWAY_TIMEOUT extends TopLevel[GATEWAY_TIMEOUT with Double]
+  /* 504 */ val GATEWAY_TIMEOUT: typings.httpStatusCodes.statusCodesMod.StatusCodes.GATEWAY_TIMEOUT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.9
@@ -121,8 +111,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait GONE extends StatusCodes
-  /* 410 */ @js.native
-  object GONE extends TopLevel[GONE with Double]
+  /* 410 */ val GONE: typings.httpStatusCodes.statusCodesMod.StatusCodes.GONE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.6
@@ -131,8 +120,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait HTTP_VERSION_NOT_SUPPORTED extends StatusCodes
-  /* 505 */ @js.native
-  object HTTP_VERSION_NOT_SUPPORTED extends TopLevel[HTTP_VERSION_NOT_SUPPORTED with Double]
+  /* 505 */ val HTTP_VERSION_NOT_SUPPORTED: typings.httpStatusCodes.statusCodesMod.StatusCodes.HTTP_VERSION_NOT_SUPPORTED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2324#section-2.3.2
@@ -141,8 +129,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait IM_A_TEAPOT extends StatusCodes
-  /* 418 */ @js.native
-  object IM_A_TEAPOT extends TopLevel[IM_A_TEAPOT with Double]
+  /* 418 */ val IM_A_TEAPOT: typings.httpStatusCodes.statusCodesMod.StatusCodes.IM_A_TEAPOT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.6
@@ -151,8 +138,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait INSUFFICIENT_SPACE_ON_RESOURCE extends StatusCodes
-  /* 419 */ @js.native
-  object INSUFFICIENT_SPACE_ON_RESOURCE extends TopLevel[INSUFFICIENT_SPACE_ON_RESOURCE with Double]
+  /* 419 */ val INSUFFICIENT_SPACE_ON_RESOURCE: typings.httpStatusCodes.statusCodesMod.StatusCodes.INSUFFICIENT_SPACE_ON_RESOURCE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.6
@@ -161,8 +147,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait INSUFFICIENT_STORAGE extends StatusCodes
-  /* 507 */ @js.native
-  object INSUFFICIENT_STORAGE extends TopLevel[INSUFFICIENT_STORAGE with Double]
+  /* 507 */ val INSUFFICIENT_STORAGE: typings.httpStatusCodes.statusCodesMod.StatusCodes.INSUFFICIENT_STORAGE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.1
@@ -171,8 +156,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait INTERNAL_SERVER_ERROR extends StatusCodes
-  /* 500 */ @js.native
-  object INTERNAL_SERVER_ERROR extends TopLevel[INTERNAL_SERVER_ERROR with Double]
+  /* 500 */ val INTERNAL_SERVER_ERROR: typings.httpStatusCodes.statusCodesMod.StatusCodes.INTERNAL_SERVER_ERROR with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.10
@@ -181,8 +165,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait LENGTH_REQUIRED extends StatusCodes
-  /* 411 */ @js.native
-  object LENGTH_REQUIRED extends TopLevel[LENGTH_REQUIRED with Double]
+  /* 411 */ val LENGTH_REQUIRED: typings.httpStatusCodes.statusCodesMod.StatusCodes.LENGTH_REQUIRED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.4
@@ -191,8 +174,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait LOCKED extends StatusCodes
-  /* 423 */ @js.native
-  object LOCKED extends TopLevel[LOCKED with Double]
+  /* 423 */ val LOCKED: typings.httpStatusCodes.statusCodesMod.StatusCodes.LOCKED with Double = js.native
   
   /**
     * @deprecated
@@ -202,8 +184,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait METHOD_FAILURE extends StatusCodes
-  /* 420 */ @js.native
-  object METHOD_FAILURE extends TopLevel[METHOD_FAILURE with Double]
+  /* 420 */ val METHOD_FAILURE: typings.httpStatusCodes.statusCodesMod.StatusCodes.METHOD_FAILURE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.5
@@ -212,8 +193,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait METHOD_NOT_ALLOWED extends StatusCodes
-  /* 405 */ @js.native
-  object METHOD_NOT_ALLOWED extends TopLevel[METHOD_NOT_ALLOWED with Double]
+  /* 405 */ val METHOD_NOT_ALLOWED: typings.httpStatusCodes.statusCodesMod.StatusCodes.METHOD_NOT_ALLOWED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.2
@@ -222,8 +202,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait MOVED_PERMANENTLY extends StatusCodes
-  /* 301 */ @js.native
-  object MOVED_PERMANENTLY extends TopLevel[MOVED_PERMANENTLY with Double]
+  /* 301 */ val MOVED_PERMANENTLY: typings.httpStatusCodes.statusCodesMod.StatusCodes.MOVED_PERMANENTLY with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.3
@@ -232,8 +211,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait MOVED_TEMPORARILY extends StatusCodes
-  /* 302 */ @js.native
-  object MOVED_TEMPORARILY extends TopLevel[MOVED_TEMPORARILY with Double]
+  /* 302 */ val MOVED_TEMPORARILY: typings.httpStatusCodes.statusCodesMod.StatusCodes.MOVED_TEMPORARILY with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.1
@@ -242,8 +220,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait MULTIPLE_CHOICES extends StatusCodes
-  /* 300 */ @js.native
-  object MULTIPLE_CHOICES extends TopLevel[MULTIPLE_CHOICES with Double]
+  /* 300 */ val MULTIPLE_CHOICES: typings.httpStatusCodes.statusCodesMod.StatusCodes.MULTIPLE_CHOICES with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.2
@@ -252,8 +229,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait MULTI_STATUS extends StatusCodes
-  /* 207 */ @js.native
-  object MULTI_STATUS extends TopLevel[MULTI_STATUS with Double]
+  /* 207 */ val MULTI_STATUS: typings.httpStatusCodes.statusCodesMod.StatusCodes.MULTI_STATUS with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-6
@@ -262,8 +238,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NETWORK_AUTHENTICATION_REQUIRED extends StatusCodes
-  /* 511 */ @js.native
-  object NETWORK_AUTHENTICATION_REQUIRED extends TopLevel[NETWORK_AUTHENTICATION_REQUIRED with Double]
+  /* 511 */ val NETWORK_AUTHENTICATION_REQUIRED: typings.httpStatusCodes.statusCodesMod.StatusCodes.NETWORK_AUTHENTICATION_REQUIRED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.4
@@ -272,8 +247,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NON_AUTHORITATIVE_INFORMATION extends StatusCodes
-  /* 203 */ @js.native
-  object NON_AUTHORITATIVE_INFORMATION extends TopLevel[NON_AUTHORITATIVE_INFORMATION with Double]
+  /* 203 */ val NON_AUTHORITATIVE_INFORMATION: typings.httpStatusCodes.statusCodesMod.StatusCodes.NON_AUTHORITATIVE_INFORMATION with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.6
@@ -282,8 +256,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NOT_ACCEPTABLE extends StatusCodes
-  /* 406 */ @js.native
-  object NOT_ACCEPTABLE extends TopLevel[NOT_ACCEPTABLE with Double]
+  /* 406 */ val NOT_ACCEPTABLE: typings.httpStatusCodes.statusCodesMod.StatusCodes.NOT_ACCEPTABLE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.4
@@ -292,8 +265,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NOT_FOUND extends StatusCodes
-  /* 404 */ @js.native
-  object NOT_FOUND extends TopLevel[NOT_FOUND with Double]
+  /* 404 */ val NOT_FOUND: typings.httpStatusCodes.statusCodesMod.StatusCodes.NOT_FOUND with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.2
@@ -302,8 +274,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NOT_IMPLEMENTED extends StatusCodes
-  /* 501 */ @js.native
-  object NOT_IMPLEMENTED extends TopLevel[NOT_IMPLEMENTED with Double]
+  /* 501 */ val NOT_IMPLEMENTED: typings.httpStatusCodes.statusCodesMod.StatusCodes.NOT_IMPLEMENTED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7232#section-4.1
@@ -312,8 +283,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NOT_MODIFIED extends StatusCodes
-  /* 304 */ @js.native
-  object NOT_MODIFIED extends TopLevel[NOT_MODIFIED with Double]
+  /* 304 */ val NOT_MODIFIED: typings.httpStatusCodes.statusCodesMod.StatusCodes.NOT_MODIFIED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.5
@@ -322,8 +292,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait NO_CONTENT extends StatusCodes
-  /* 204 */ @js.native
-  object NO_CONTENT extends TopLevel[NO_CONTENT with Double]
+  /* 204 */ val NO_CONTENT: typings.httpStatusCodes.statusCodesMod.StatusCodes.NO_CONTENT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.1
@@ -336,8 +305,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait OK extends StatusCodes
-  /* 200 */ @js.native
-  object OK extends TopLevel[OK with Double]
+  /* 200 */ val OK: typings.httpStatusCodes.statusCodesMod.StatusCodes.OK with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7233#section-4.1
@@ -346,8 +314,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PARTIAL_CONTENT extends StatusCodes
-  /* 206 */ @js.native
-  object PARTIAL_CONTENT extends TopLevel[PARTIAL_CONTENT with Double]
+  /* 206 */ val PARTIAL_CONTENT: typings.httpStatusCodes.statusCodesMod.StatusCodes.PARTIAL_CONTENT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.2
@@ -356,8 +323,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PAYMENT_REQUIRED extends StatusCodes
-  /* 402 */ @js.native
-  object PAYMENT_REQUIRED extends TopLevel[PAYMENT_REQUIRED with Double]
+  /* 402 */ val PAYMENT_REQUIRED: typings.httpStatusCodes.statusCodesMod.StatusCodes.PAYMENT_REQUIRED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7538#section-3
@@ -366,8 +332,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PERMANENT_REDIRECT extends StatusCodes
-  /* 308 */ @js.native
-  object PERMANENT_REDIRECT extends TopLevel[PERMANENT_REDIRECT with Double]
+  /* 308 */ val PERMANENT_REDIRECT: typings.httpStatusCodes.statusCodesMod.StatusCodes.PERMANENT_REDIRECT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7232#section-4.2
@@ -376,8 +341,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PRECONDITION_FAILED extends StatusCodes
-  /* 412 */ @js.native
-  object PRECONDITION_FAILED extends TopLevel[PRECONDITION_FAILED with Double]
+  /* 412 */ val PRECONDITION_FAILED: typings.httpStatusCodes.statusCodesMod.StatusCodes.PRECONDITION_FAILED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-3
@@ -386,8 +350,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PRECONDITION_REQUIRED extends StatusCodes
-  /* 428 */ @js.native
-  object PRECONDITION_REQUIRED extends TopLevel[PRECONDITION_REQUIRED with Double]
+  /* 428 */ val PRECONDITION_REQUIRED: typings.httpStatusCodes.statusCodesMod.StatusCodes.PRECONDITION_REQUIRED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.1
@@ -396,8 +359,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PROCESSING extends StatusCodes
-  /* 102 */ @js.native
-  object PROCESSING extends TopLevel[PROCESSING with Double]
+  /* 102 */ val PROCESSING: typings.httpStatusCodes.statusCodesMod.StatusCodes.PROCESSING with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7235#section-3.2
@@ -406,8 +368,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait PROXY_AUTHENTICATION_REQUIRED extends StatusCodes
-  /* 407 */ @js.native
-  object PROXY_AUTHENTICATION_REQUIRED extends TopLevel[PROXY_AUTHENTICATION_REQUIRED with Double]
+  /* 407 */ val PROXY_AUTHENTICATION_REQUIRED: typings.httpStatusCodes.statusCodesMod.StatusCodes.PROXY_AUTHENTICATION_REQUIRED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7233#section-4.4
@@ -416,8 +377,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait REQUESTED_RANGE_NOT_SATISFIABLE extends StatusCodes
-  /* 416 */ @js.native
-  object REQUESTED_RANGE_NOT_SATISFIABLE extends TopLevel[REQUESTED_RANGE_NOT_SATISFIABLE with Double]
+  /* 416 */ val REQUESTED_RANGE_NOT_SATISFIABLE: typings.httpStatusCodes.statusCodesMod.StatusCodes.REQUESTED_RANGE_NOT_SATISFIABLE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-5
@@ -426,8 +386,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait REQUEST_HEADER_FIELDS_TOO_LARGE extends StatusCodes
-  /* 431 */ @js.native
-  object REQUEST_HEADER_FIELDS_TOO_LARGE extends TopLevel[REQUEST_HEADER_FIELDS_TOO_LARGE with Double]
+  /* 431 */ val REQUEST_HEADER_FIELDS_TOO_LARGE: typings.httpStatusCodes.statusCodesMod.StatusCodes.REQUEST_HEADER_FIELDS_TOO_LARGE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.7
@@ -436,8 +395,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait REQUEST_TIMEOUT extends StatusCodes
-  /* 408 */ @js.native
-  object REQUEST_TIMEOUT extends TopLevel[REQUEST_TIMEOUT with Double]
+  /* 408 */ val REQUEST_TIMEOUT: typings.httpStatusCodes.statusCodesMod.StatusCodes.REQUEST_TIMEOUT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.11
@@ -446,8 +404,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait REQUEST_TOO_LONG extends StatusCodes
-  /* 413 */ @js.native
-  object REQUEST_TOO_LONG extends TopLevel[REQUEST_TOO_LONG with Double]
+  /* 413 */ val REQUEST_TOO_LONG: typings.httpStatusCodes.statusCodesMod.StatusCodes.REQUEST_TOO_LONG with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.12
@@ -456,8 +413,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait REQUEST_URI_TOO_LONG extends StatusCodes
-  /* 414 */ @js.native
-  object REQUEST_URI_TOO_LONG extends TopLevel[REQUEST_URI_TOO_LONG with Double]
+  /* 414 */ val REQUEST_URI_TOO_LONG: typings.httpStatusCodes.statusCodesMod.StatusCodes.REQUEST_URI_TOO_LONG with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.3.6
@@ -466,8 +422,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait RESET_CONTENT extends StatusCodes
-  /* 205 */ @js.native
-  object RESET_CONTENT extends TopLevel[RESET_CONTENT with Double]
+  /* 205 */ val RESET_CONTENT: typings.httpStatusCodes.statusCodesMod.StatusCodes.RESET_CONTENT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.4
@@ -476,8 +431,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait SEE_OTHER extends StatusCodes
-  /* 303 */ @js.native
-  object SEE_OTHER extends TopLevel[SEE_OTHER with Double]
+  /* 303 */ val SEE_OTHER: typings.httpStatusCodes.statusCodesMod.StatusCodes.SEE_OTHER with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.6.4
@@ -486,8 +440,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait SERVICE_UNAVAILABLE extends StatusCodes
-  /* 503 */ @js.native
-  object SERVICE_UNAVAILABLE extends TopLevel[SERVICE_UNAVAILABLE with Double]
+  /* 503 */ val SERVICE_UNAVAILABLE: typings.httpStatusCodes.statusCodesMod.StatusCodes.SERVICE_UNAVAILABLE with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.2.2
@@ -496,8 +449,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait SWITCHING_PROTOCOLS extends StatusCodes
-  /* 101 */ @js.native
-  object SWITCHING_PROTOCOLS extends TopLevel[SWITCHING_PROTOCOLS with Double]
+  /* 101 */ val SWITCHING_PROTOCOLS: typings.httpStatusCodes.statusCodesMod.StatusCodes.SWITCHING_PROTOCOLS with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.4.7
@@ -506,8 +458,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait TEMPORARY_REDIRECT extends StatusCodes
-  /* 307 */ @js.native
-  object TEMPORARY_REDIRECT extends TopLevel[TEMPORARY_REDIRECT with Double]
+  /* 307 */ val TEMPORARY_REDIRECT: typings.httpStatusCodes.statusCodesMod.StatusCodes.TEMPORARY_REDIRECT with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc6585#section-4
@@ -516,8 +467,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait TOO_MANY_REQUESTS extends StatusCodes
-  /* 429 */ @js.native
-  object TOO_MANY_REQUESTS extends TopLevel[TOO_MANY_REQUESTS with Double]
+  /* 429 */ val TOO_MANY_REQUESTS: typings.httpStatusCodes.statusCodesMod.StatusCodes.TOO_MANY_REQUESTS with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7235#section-3.1
@@ -526,8 +476,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait UNAUTHORIZED extends StatusCodes
-  /* 401 */ @js.native
-  object UNAUTHORIZED extends TopLevel[UNAUTHORIZED with Double]
+  /* 401 */ val UNAUTHORIZED: typings.httpStatusCodes.statusCodesMod.StatusCodes.UNAUTHORIZED with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7725
@@ -536,8 +485,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait UNAVAILABLE_FOR_LEGAL_REASONS extends StatusCodes
-  /* 451 */ @js.native
-  object UNAVAILABLE_FOR_LEGAL_REASONS extends TopLevel[UNAVAILABLE_FOR_LEGAL_REASONS with Double]
+  /* 451 */ val UNAVAILABLE_FOR_LEGAL_REASONS: typings.httpStatusCodes.statusCodesMod.StatusCodes.UNAVAILABLE_FOR_LEGAL_REASONS with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc2518#section-10.3
@@ -546,8 +494,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait UNPROCESSABLE_ENTITY extends StatusCodes
-  /* 422 */ @js.native
-  object UNPROCESSABLE_ENTITY extends TopLevel[UNPROCESSABLE_ENTITY with Double]
+  /* 422 */ val UNPROCESSABLE_ENTITY: typings.httpStatusCodes.statusCodesMod.StatusCodes.UNPROCESSABLE_ENTITY with Double = js.native
   
   /**
     * Official Documentation @ https://tools.ietf.org/html/rfc7231#section-6.5.13
@@ -556,8 +503,7 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait UNSUPPORTED_MEDIA_TYPE extends StatusCodes
-  /* 415 */ @js.native
-  object UNSUPPORTED_MEDIA_TYPE extends TopLevel[UNSUPPORTED_MEDIA_TYPE with Double]
+  /* 415 */ val UNSUPPORTED_MEDIA_TYPE: typings.httpStatusCodes.statusCodesMod.StatusCodes.UNSUPPORTED_MEDIA_TYPE with Double = js.native
   
   /**
     * @deprecated
@@ -567,6 +513,5 @@ object StatusCodes extends js.Object {
     */
   @js.native
   sealed trait USE_PROXY extends StatusCodes
-  /* 305 */ @js.native
-  object USE_PROXY extends TopLevel[USE_PROXY with Double]
+  /* 305 */ val USE_PROXY: typings.httpStatusCodes.statusCodesMod.StatusCodes.USE_PROXY with Double = js.native
 }

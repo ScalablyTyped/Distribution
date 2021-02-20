@@ -1,11 +1,12 @@
 package typings.ionicons.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentDidUpdate extends js.Object {
+trait ComponentDidUpdate extends StObject {
   
   /**
     * The component has just re-rendered.
@@ -27,21 +28,9 @@ object ComponentDidUpdate {
   }
   
   @scala.inline
-  implicit class ComponentDidUpdateOps[Self <: ComponentDidUpdate] (val x: Self) extends AnyVal {
+  implicit class ComponentDidUpdateMutableBuilder[Self <: ComponentDidUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentDidUpdate(value: () => Unit): Self = this.set("componentDidUpdate", js.Any.fromFunction0(value))
+    def setComponentDidUpdate(value: () => Unit): Self = StObject.set(x, "componentDidUpdate", js.Any.fromFunction0(value))
   }
 }

@@ -1,13 +1,12 @@
 package typings.awsSdkClientS3Browser
 
 import typings.awsSdkClientS3Browser.typesNoSuchUploadMod.NoSuchUpload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/types/AbortMultipartUploadExceptionsUnion", JSImport.Namespace)
-@js.native
-object abortMultipartUploadExceptionsUnionMod extends js.Object {
+object abortMultipartUploadExceptionsUnionMod {
   
   type AbortMultipartUploadExceptionsUnion = NoSuchUpload
 }

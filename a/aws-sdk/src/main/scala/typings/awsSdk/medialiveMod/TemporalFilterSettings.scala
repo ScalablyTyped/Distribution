@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemporalFilterSettings extends js.Object {
+trait TemporalFilterSettings extends StObject {
   
   /**
     * If you enable this filter, the results are the following:
@@ -28,30 +29,18 @@ object TemporalFilterSettings {
   }
   
   @scala.inline
-  implicit class TemporalFilterSettingsOps[Self <: TemporalFilterSettings] (val x: Self) extends AnyVal {
+  implicit class TemporalFilterSettingsMutableBuilder[Self <: TemporalFilterSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPostFilterSharpening(value: TemporalFilterPostFilterSharpening): Self = StObject.set(x, "PostFilterSharpening", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPostFilterSharpeningUndefined: Self = StObject.set(x, "PostFilterSharpening", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrength(value: TemporalFilterStrength): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostFilterSharpening(value: TemporalFilterPostFilterSharpening): Self = this.set("PostFilterSharpening", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostFilterSharpening: Self = this.set("PostFilterSharpening", js.undefined)
-    
-    @scala.inline
-    def setStrength(value: TemporalFilterStrength): Self = this.set("Strength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrength: Self = this.set("Strength", js.undefined)
+    def setStrengthUndefined: Self = StObject.set(x, "Strength", js.undefined)
   }
 }

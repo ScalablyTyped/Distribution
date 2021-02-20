@@ -4,12 +4,13 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGamesmanagement.anon.Alt
 import typings.maximMazurokGapiClientGamesmanagement.anon.EventId
 import typings.maximMazurokGapiClientGamesmanagement.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventsResource extends js.Object {
+trait EventsResource extends StObject {
   
   /** Resets all player progress on the event with the given ID for the currently authenticated player. This method is only accessible to whitelisted tester accounts for your application. */
   def reset(): Request[Unit] = js.native

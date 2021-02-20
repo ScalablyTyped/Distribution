@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAnalytics.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComparisonType extends js.Object {
+trait ComparisonType extends StObject {
   
   /** Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL. */
   var comparisonType: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object ComparisonType {
   }
   
   @scala.inline
-  implicit class ComparisonTypeOps[Self <: ComparisonType] (val x: Self) extends AnyVal {
+  implicit class ComparisonTypeMutableBuilder[Self <: ComparisonType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComparisonType(value: String): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComparisonValue(value: String): Self = StObject.set(x, "comparisonValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonType(value: String): Self = this.set("comparisonType", value.asInstanceOf[js.Any])
+    def setComparisonValueUndefined: Self = StObject.set(x, "comparisonValue", js.undefined)
     
     @scala.inline
-    def deleteComparisonType: Self = this.set("comparisonType", js.undefined)
+    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComparisonValue(value: String): Self = this.set("comparisonValue", value.asInstanceOf[js.Any])
+    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
     @scala.inline
-    def deleteComparisonValue: Self = this.set("comparisonValue", js.undefined)
+    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
     @scala.inline
-    def deleteExpression: Self = this.set("expression", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchType: Self = this.set("matchType", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

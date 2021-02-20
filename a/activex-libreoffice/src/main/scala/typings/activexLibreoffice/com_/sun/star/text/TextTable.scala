@@ -22,6 +22,7 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XSortable
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -260,105 +261,93 @@ object TextTable {
   }
   
   @scala.inline
-  implicit class TextTableOps[Self <: TextTable] (val x: Self) extends AnyVal {
+  implicit class TextTableMutableBuilder[Self <: TextTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: Color): Self = this.set("BackColor", value.asInstanceOf[js.Any])
+    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicFilter(value: String): Self = this.set("BackGraphicFilter", value.asInstanceOf[js.Any])
+    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = this.set("BackGraphicLocation", value.asInstanceOf[js.Any])
+    def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackGraphicURL(value: String): Self = this.set("BackGraphicURL", value.asInstanceOf[js.Any])
+    def setBreakType(value: BreakType): Self = StObject.set(x, "BreakType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackTransparent(value: Boolean): Self = this.set("BackTransparent", value.asInstanceOf[js.Any])
+    def setChartColumnAsLabel(value: Boolean): Self = StObject.set(x, "ChartColumnAsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMargin(value: Double): Self = this.set("BottomMargin", value.asInstanceOf[js.Any])
+    def setChartRowAsLabel(value: Boolean): Self = StObject.set(x, "ChartRowAsLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBreakType(value: BreakType): Self = this.set("BreakType", value.asInstanceOf[js.Any])
+    def setCollapsingBorders(value: Boolean): Self = StObject.set(x, "CollapsingBorders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartColumnAsLabel(value: Boolean): Self = this.set("ChartColumnAsLabel", value.asInstanceOf[js.Any])
+    def setHeaderRowCount(value: Double): Self = StObject.set(x, "HeaderRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartRowAsLabel(value: Boolean): Self = this.set("ChartRowAsLabel", value.asInstanceOf[js.Any])
+    def setHoriOrient(value: Double): Self = StObject.set(x, "HoriOrient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollapsingBorders(value: Boolean): Self = this.set("CollapsingBorders", value.asInstanceOf[js.Any])
+    def setIsWidthRelative(value: Boolean): Self = StObject.set(x, "IsWidthRelative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderRowCount(value: Double): Self = this.set("HeaderRowCount", value.asInstanceOf[js.Any])
+    def setKeepTogether(value: Boolean): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHoriOrient(value: Double): Self = this.set("HoriOrient", value.asInstanceOf[js.Any])
+    def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsWidthRelative(value: Boolean): Self = this.set("IsWidthRelative", value.asInstanceOf[js.Any])
+    def setPageDescName(value: String): Self = StObject.set(x, "PageDescName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepTogether(value: Boolean): Self = this.set("KeepTogether", value.asInstanceOf[js.Any])
+    def setPageNumberOffset(value: Double): Self = StObject.set(x, "PageNumberOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Double): Self = this.set("LeftMargin", value.asInstanceOf[js.Any])
+    def setRelativeWidth(value: Double): Self = StObject.set(x, "RelativeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageDescName(value: String): Self = this.set("PageDescName", value.asInstanceOf[js.Any])
+    def setRepeatHeadline(value: Boolean): Self = StObject.set(x, "RepeatHeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageNumberOffset(value: Double): Self = this.set("PageNumberOffset", value.asInstanceOf[js.Any])
+    def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelativeWidth(value: Double): Self = this.set("RelativeWidth", value.asInstanceOf[js.Any])
+    def setShadowFormat(value: ShadowFormat): Self = StObject.set(x, "ShadowFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatHeadline(value: Boolean): Self = this.set("RepeatHeadline", value.asInstanceOf[js.Any])
+    def setSplit(value: Boolean): Self = StObject.set(x, "Split", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightMargin(value: Double): Self = this.set("RightMargin", value.asInstanceOf[js.Any])
+    def setTableBorder(value: TableBorder): Self = StObject.set(x, "TableBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowFormat(value: ShadowFormat): Self = this.set("ShadowFormat", value.asInstanceOf[js.Any])
+    def setTableColumnRelativeSum(value: Double): Self = StObject.set(x, "TableColumnRelativeSum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSplit(value: Boolean): Self = this.set("Split", value.asInstanceOf[js.Any])
+    def setTableColumnSeparators(value: SafeArray[TableColumnSeparator]): Self = StObject.set(x, "TableColumnSeparators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableBorder(value: TableBorder): Self = this.set("TableBorder", value.asInstanceOf[js.Any])
+    def setTableInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "TableInteropGrabBag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableColumnRelativeSum(value: Double): Self = this.set("TableColumnRelativeSum", value.asInstanceOf[js.Any])
+    def setTableTemplateName(value: String): Self = StObject.set(x, "TableTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableColumnSeparators(value: SafeArray[TableColumnSeparator]): Self = this.set("TableColumnSeparators", value.asInstanceOf[js.Any])
+    def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableInteropGrabBag(value: SafeArray[PropertyValue]): Self = this.set("TableInteropGrabBag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableTemplateName(value: String): Self = this.set("TableTemplateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopMargin(value: Double): Self = this.set("TopMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

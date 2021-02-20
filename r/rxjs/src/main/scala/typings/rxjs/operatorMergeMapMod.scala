@@ -1,13 +1,14 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/mergeMap", JSImport.Namespace)
-@js.native
-object operatorMergeMapMod extends js.Object {
+object operatorMergeMapMod {
   
+  @JSImport("rxjs/operator/mergeMap", "mergeMap")
+  @js.native
   def mergeMap[T, R](
     project: js.Function2[
       /* value */ T, 
@@ -15,6 +16,8 @@ object operatorMergeMapMod extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
     ]
   ): js.Any = js.native
+  @JSImport("rxjs/operator/mergeMap", "mergeMap")
+  @js.native
   def mergeMap[T, R](
     project: js.Function2[
       /* value */ T, 

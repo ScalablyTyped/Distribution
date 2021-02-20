@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Security.Credentials
 
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.System.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a web account authentication provider. */
 @js.native
-trait WebAccountProvider extends js.Object {
+trait WebAccountProvider extends StObject {
   
   /** Gets the authority of the web account provider. Use authority to disambiguate between a single provider with multiple identities (such as a Microsoft account versus Azure Active Directory). */
   var authority: String = js.native
@@ -44,36 +45,24 @@ object WebAccountProvider {
   }
   
   @scala.inline
-  implicit class WebAccountProviderOps[Self <: WebAccountProvider] (val x: Self) extends AnyVal {
+  implicit class WebAccountProviderMutableBuilder[Self <: WebAccountProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayPurpose(value: String): Self = StObject.set(x, "displayPurpose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthority(value: String): Self = this.set("authority", value.asInstanceOf[js.Any])
+    def setIconUri(value: Uri): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayPurpose(value: String): Self = this.set("displayPurpose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIconUri(value: Uri): Self = this.set("iconUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUser(value: User): Self = this.set("user", value.asInstanceOf[js.Any])
+    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

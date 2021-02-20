@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvelopeAttachmentsResult extends js.Object {
+trait EnvelopeAttachmentsResult extends StObject {
   
   /**
     * An array of attachment objects that contain information about the attachments.
@@ -21,27 +22,15 @@ object EnvelopeAttachmentsResult {
   }
   
   @scala.inline
-  implicit class EnvelopeAttachmentsResultOps[Self <: EnvelopeAttachmentsResult] (val x: Self) extends AnyVal {
+  implicit class EnvelopeAttachmentsResultMutableBuilder[Self <: EnvelopeAttachmentsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: js.Array[EnvelopeAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttachmentsVarargs(value: EnvelopeAttachment*): Self = this.set("attachments", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttachments(value: js.Array[EnvelopeAttachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setAttachmentsVarargs(value: EnvelopeAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
   }
 }

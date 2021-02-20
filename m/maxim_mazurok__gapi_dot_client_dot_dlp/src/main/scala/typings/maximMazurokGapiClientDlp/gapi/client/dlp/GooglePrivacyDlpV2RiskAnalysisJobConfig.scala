@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2RiskAnalysisJobConfig extends js.Object {
+trait GooglePrivacyDlpV2RiskAnalysisJobConfig extends StObject {
   
   /** Actions to execute at the completion of the job. Are executed in the order provided. */
   var actions: js.UndefOr[js.Array[GooglePrivacyDlpV2Action]] = js.native
@@ -25,39 +26,27 @@ object GooglePrivacyDlpV2RiskAnalysisJobConfig {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2RiskAnalysisJobConfigOps[Self <: GooglePrivacyDlpV2RiskAnalysisJobConfig] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2RiskAnalysisJobConfigMutableBuilder[Self <: GooglePrivacyDlpV2RiskAnalysisJobConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[GooglePrivacyDlpV2Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: GooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: GooglePrivacyDlpV2Action*): Self = this.set("actions", js.Array(value :_*))
+    def setPrivacyMetric(value: GooglePrivacyDlpV2PrivacyMetric): Self = StObject.set(x, "privacyMetric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[GooglePrivacyDlpV2Action]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setPrivacyMetricUndefined: Self = StObject.set(x, "privacyMetric", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setSourceTable(value: GooglePrivacyDlpV2BigQueryTable): Self = StObject.set(x, "sourceTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivacyMetric(value: GooglePrivacyDlpV2PrivacyMetric): Self = this.set("privacyMetric", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivacyMetric: Self = this.set("privacyMetric", js.undefined)
-    
-    @scala.inline
-    def setSourceTable(value: GooglePrivacyDlpV2BigQueryTable): Self = this.set("sourceTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTable: Self = this.set("sourceTable", js.undefined)
+    def setSourceTableUndefined: Self = StObject.set(x, "sourceTable", js.undefined)
   }
 }

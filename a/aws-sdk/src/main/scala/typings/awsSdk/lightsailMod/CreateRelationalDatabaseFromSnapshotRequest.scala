@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateRelationalDatabaseFromSnapshotRequest extends js.Object {
+trait CreateRelationalDatabaseFromSnapshotRequest extends StObject {
   
   /**
     * The Availability Zone in which to create your new database. Use the us-east-2a case-sensitive format. You can get a list of Availability Zones by using the get regions operation. Be sure to add the include relational database Availability Zones parameter to your request.
@@ -61,72 +62,60 @@ object CreateRelationalDatabaseFromSnapshotRequest {
   }
   
   @scala.inline
-  implicit class CreateRelationalDatabaseFromSnapshotRequestOps[Self <: CreateRelationalDatabaseFromSnapshotRequest] (val x: Self) extends AnyVal {
+  implicit class CreateRelationalDatabaseFromSnapshotRequestMutableBuilder[Self <: CreateRelationalDatabaseFromSnapshotRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseBundleId(value: String): Self = StObject.set(x, "relationalDatabaseBundleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    def setRelationalDatabaseBundleIdUndefined: Self = StObject.set(x, "relationalDatabaseBundleId", js.undefined)
     
     @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseBundleId(value: String): Self = this.set("relationalDatabaseBundleId", value.asInstanceOf[js.Any])
+    def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
     
     @scala.inline
-    def deleteRelationalDatabaseBundleId: Self = this.set("relationalDatabaseBundleId", js.undefined)
+    def setRestoreTime(value: IsoDate): Self = StObject.set(x, "restoreTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = this.set("relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    def setRestoreTimeUndefined: Self = StObject.set(x, "restoreTime", js.undefined)
     
     @scala.inline
-    def deleteRelationalDatabaseSnapshotName: Self = this.set("relationalDatabaseSnapshotName", js.undefined)
+    def setSourceRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "sourceRelationalDatabaseName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRestoreTime(value: IsoDate): Self = this.set("restoreTime", value.asInstanceOf[js.Any])
+    def setSourceRelationalDatabaseNameUndefined: Self = StObject.set(x, "sourceRelationalDatabaseName", js.undefined)
     
     @scala.inline
-    def deleteRestoreTime: Self = this.set("restoreTime", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceRelationalDatabaseName(value: ResourceName): Self = this.set("sourceRelationalDatabaseName", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSourceRelationalDatabaseName: Self = this.set("sourceRelationalDatabaseName", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    def setUseLatestRestorableTime(value: Boolean): Self = StObject.set(x, "useLatestRestorableTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setUseLatestRestorableTime(value: Boolean): Self = this.set("useLatestRestorableTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseLatestRestorableTime: Self = this.set("useLatestRestorableTime", js.undefined)
+    def setUseLatestRestorableTimeUndefined: Self = StObject.set(x, "useLatestRestorableTime", js.undefined)
   }
 }

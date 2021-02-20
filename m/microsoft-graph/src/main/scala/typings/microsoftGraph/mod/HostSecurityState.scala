@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HostSecurityState extends js.Object {
+trait HostSecurityState extends StObject {
   
   // Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
   var fqdn: js.UndefOr[NullableOption[String]] = js.native
@@ -41,99 +42,87 @@ object HostSecurityState {
   }
   
   @scala.inline
-  implicit class HostSecurityStateOps[Self <: HostSecurityState] (val x: Self) extends AnyVal {
+  implicit class HostSecurityStateMutableBuilder[Self <: HostSecurityState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFqdn(value: NullableOption[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFqdnNull: Self = StObject.set(x, "fqdn", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
     
     @scala.inline
-    def setFqdn(value: NullableOption[String]): Self = this.set("fqdn", value.asInstanceOf[js.Any])
+    def setIsAzureAdJoined(value: NullableOption[Boolean]): Self = StObject.set(x, "isAzureAdJoined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFqdn: Self = this.set("fqdn", js.undefined)
+    def setIsAzureAdJoinedNull: Self = StObject.set(x, "isAzureAdJoined", null)
     
     @scala.inline
-    def setFqdnNull: Self = this.set("fqdn", null)
+    def setIsAzureAdJoinedUndefined: Self = StObject.set(x, "isAzureAdJoined", js.undefined)
     
     @scala.inline
-    def setIsAzureAdJoined(value: NullableOption[Boolean]): Self = this.set("isAzureAdJoined", value.asInstanceOf[js.Any])
+    def setIsAzureAdRegistered(value: NullableOption[Boolean]): Self = StObject.set(x, "isAzureAdRegistered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAzureAdJoined: Self = this.set("isAzureAdJoined", js.undefined)
+    def setIsAzureAdRegisteredNull: Self = StObject.set(x, "isAzureAdRegistered", null)
     
     @scala.inline
-    def setIsAzureAdJoinedNull: Self = this.set("isAzureAdJoined", null)
+    def setIsAzureAdRegisteredUndefined: Self = StObject.set(x, "isAzureAdRegistered", js.undefined)
     
     @scala.inline
-    def setIsAzureAdRegistered(value: NullableOption[Boolean]): Self = this.set("isAzureAdRegistered", value.asInstanceOf[js.Any])
+    def setIsHybridAzureDomainJoined(value: NullableOption[Boolean]): Self = StObject.set(x, "isHybridAzureDomainJoined", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsAzureAdRegistered: Self = this.set("isAzureAdRegistered", js.undefined)
+    def setIsHybridAzureDomainJoinedNull: Self = StObject.set(x, "isHybridAzureDomainJoined", null)
     
     @scala.inline
-    def setIsAzureAdRegisteredNull: Self = this.set("isAzureAdRegistered", null)
+    def setIsHybridAzureDomainJoinedUndefined: Self = StObject.set(x, "isHybridAzureDomainJoined", js.undefined)
     
     @scala.inline
-    def setIsHybridAzureDomainJoined(value: NullableOption[Boolean]): Self = this.set("isHybridAzureDomainJoined", value.asInstanceOf[js.Any])
+    def setNetBiosName(value: NullableOption[String]): Self = StObject.set(x, "netBiosName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsHybridAzureDomainJoined: Self = this.set("isHybridAzureDomainJoined", js.undefined)
+    def setNetBiosNameNull: Self = StObject.set(x, "netBiosName", null)
     
     @scala.inline
-    def setIsHybridAzureDomainJoinedNull: Self = this.set("isHybridAzureDomainJoined", null)
+    def setNetBiosNameUndefined: Self = StObject.set(x, "netBiosName", js.undefined)
     
     @scala.inline
-    def setNetBiosName(value: NullableOption[String]): Self = this.set("netBiosName", value.asInstanceOf[js.Any])
+    def setOs(value: NullableOption[String]): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNetBiosName: Self = this.set("netBiosName", js.undefined)
+    def setOsNull: Self = StObject.set(x, "os", null)
     
     @scala.inline
-    def setNetBiosNameNull: Self = this.set("netBiosName", null)
+    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
     
     @scala.inline
-    def setOs(value: NullableOption[String]): Self = this.set("os", value.asInstanceOf[js.Any])
+    def setPrivateIpAddress(value: NullableOption[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOs: Self = this.set("os", js.undefined)
+    def setPrivateIpAddressNull: Self = StObject.set(x, "privateIpAddress", null)
     
     @scala.inline
-    def setOsNull: Self = this.set("os", null)
+    def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
     
     @scala.inline
-    def setPrivateIpAddress(value: NullableOption[String]): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
+    def setPublicIpAddress(value: NullableOption[String]): Self = StObject.set(x, "publicIpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
+    def setPublicIpAddressNull: Self = StObject.set(x, "publicIpAddress", null)
     
     @scala.inline
-    def setPrivateIpAddressNull: Self = this.set("privateIpAddress", null)
+    def setPublicIpAddressUndefined: Self = StObject.set(x, "publicIpAddress", js.undefined)
     
     @scala.inline
-    def setPublicIpAddress(value: NullableOption[String]): Self = this.set("publicIpAddress", value.asInstanceOf[js.Any])
+    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublicIpAddress: Self = this.set("publicIpAddress", js.undefined)
+    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
     @scala.inline
-    def setPublicIpAddressNull: Self = this.set("publicIpAddress", null)
-    
-    @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = this.set("riskScore", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRiskScore: Self = this.set("riskScore", js.undefined)
-    
-    @scala.inline
-    def setRiskScoreNull: Self = this.set("riskScore", null)
+    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
   }
 }

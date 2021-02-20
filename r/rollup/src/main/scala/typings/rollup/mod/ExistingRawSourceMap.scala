@@ -1,5 +1,6 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,57 +31,45 @@ object ExistingRawSourceMap {
   }
   
   @scala.inline
-  implicit class ExistingRawSourceMapOps[Self <: ExistingRawSourceMap] (val x: Self) extends AnyVal {
+  implicit class ExistingRawSourceMapMutableBuilder[Self <: ExistingRawSourceMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMappings(value: String): Self = this.set("mappings", value.asInstanceOf[js.Any])
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setSourceRoot(value: String): Self = StObject.set(x, "sourceRoot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourcesVarargs(value: String*): Self = this.set("sources", js.Array(value :_*))
+    def setSourceRootUndefined: Self = StObject.set(x, "sourceRoot", js.undefined)
     
     @scala.inline
-    def setSources(value: js.Array[String]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setSourcesContentUndefined: Self = StObject.set(x, "sourcesContent", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
     
     @scala.inline
-    def setSourceRoot(value: String): Self = this.set("sourceRoot", value.asInstanceOf[js.Any])
+    def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def deleteSourceRoot: Self = this.set("sourceRoot", js.undefined)
-    
-    @scala.inline
-    def setSourcesContentVarargs(value: String*): Self = this.set("sourcesContent", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourcesContent(value: js.Array[String]): Self = this.set("sourcesContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourcesContent: Self = this.set("sourcesContent", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

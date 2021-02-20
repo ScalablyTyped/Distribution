@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Devices.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITouchCapabilities extends js.Object {
+trait ITouchCapabilities extends StObject {
   
   var contacts: Double = js.native
   
@@ -20,24 +21,12 @@ object ITouchCapabilities {
   }
   
   @scala.inline
-  implicit class ITouchCapabilitiesOps[Self <: ITouchCapabilities] (val x: Self) extends AnyVal {
+  implicit class ITouchCapabilitiesMutableBuilder[Self <: ITouchCapabilities] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContacts(value: Double): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setContacts(value: Double): Self = this.set("contacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchPresent(value: Double): Self = this.set("touchPresent", value.asInstanceOf[js.Any])
+    def setTouchPresent(value: Double): Self = StObject.set(x, "touchPresent", value.asInstanceOf[js.Any])
   }
 }

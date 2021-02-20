@@ -1,5 +1,6 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait DataPivotHierarchyLoadOptions extends js.Object {
+trait DataPivotHierarchyLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -84,66 +85,54 @@ object DataPivotHierarchyLoadOptions {
   }
   
   @scala.inline
-  implicit class DataPivotHierarchyLoadOptionsOps[Self <: DataPivotHierarchyLoadOptions] (val x: Self) extends AnyVal {
+  implicit class DataPivotHierarchyLoadOptionsMutableBuilder[Self <: DataPivotHierarchyLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: PivotFieldLoadOptions): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: PivotFieldLoadOptions): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Boolean): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: Boolean): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setShowAs(value: Boolean): Self = StObject.set(x, "showAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Boolean): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setShowAsUndefined: Self = StObject.set(x, "showAs", js.undefined)
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setSummarizeBy(value: Boolean): Self = StObject.set(x, "summarizeBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowAs(value: Boolean): Self = this.set("showAs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowAs: Self = this.set("showAs", js.undefined)
-    
-    @scala.inline
-    def setSummarizeBy(value: Boolean): Self = this.set("summarizeBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummarizeBy: Self = this.set("summarizeBy", js.undefined)
+    def setSummarizeByUndefined: Self = StObject.set(x, "summarizeBy", js.undefined)
   }
 }

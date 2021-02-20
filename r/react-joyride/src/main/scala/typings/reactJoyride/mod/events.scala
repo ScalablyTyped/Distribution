@@ -10,12 +10,13 @@ import typings.reactJoyride.reactJoyrideStrings.tooltip
 import typings.reactJoyride.reactJoyrideStrings.tourColonend
 import typings.reactJoyride.reactJoyrideStrings.tourColonstart
 import typings.reactJoyride.reactJoyrideStrings.tourColonstatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait events extends js.Object {
+trait events extends StObject {
   
   var BEACON: beacon = js.native
   
@@ -57,48 +58,36 @@ object events {
   }
   
   @scala.inline
-  implicit class eventsOps[Self <: events] (val x: Self) extends AnyVal {
+  implicit class eventsMutableBuilder[Self <: events] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBEACON(value: beacon): Self = StObject.set(x, "BEACON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSTEP_AFTER(value: stepColonafter): Self = StObject.set(x, "STEP_AFTER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBEACON(value: beacon): Self = this.set("BEACON", value.asInstanceOf[js.Any])
+    def setSTEP_BEFORE(value: stepColonbefore): Self = StObject.set(x, "STEP_BEFORE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setERROR(value: error): Self = this.set("ERROR", value.asInstanceOf[js.Any])
+    def setTARGET_NOT_FOUND(value: errorColontarget_not_found): Self = StObject.set(x, "TARGET_NOT_FOUND", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSTEP_AFTER(value: stepColonafter): Self = this.set("STEP_AFTER", value.asInstanceOf[js.Any])
+    def setTOOLTIP(value: tooltip): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSTEP_BEFORE(value: stepColonbefore): Self = this.set("STEP_BEFORE", value.asInstanceOf[js.Any])
+    def setTOOLTIP_CLOSE(value: close): Self = StObject.set(x, "TOOLTIP_CLOSE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTARGET_NOT_FOUND(value: errorColontarget_not_found): Self = this.set("TARGET_NOT_FOUND", value.asInstanceOf[js.Any])
+    def setTOUR_END(value: tourColonend): Self = StObject.set(x, "TOUR_END", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTOOLTIP(value: tooltip): Self = this.set("TOOLTIP", value.asInstanceOf[js.Any])
+    def setTOUR_START(value: tourColonstart): Self = StObject.set(x, "TOUR_START", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTOOLTIP_CLOSE(value: close): Self = this.set("TOOLTIP_CLOSE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTOUR_END(value: tourColonend): Self = this.set("TOUR_END", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTOUR_START(value: tourColonstart): Self = this.set("TOUR_START", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTOUR_STATUS(value: tourColonstatus): Self = this.set("TOUR_STATUS", value.asInstanceOf[js.Any])
+    def setTOUR_STATUS(value: tourColonstatus): Self = StObject.set(x, "TOUR_STATUS", value.asInstanceOf[js.Any])
   }
 }

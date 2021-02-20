@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiStage extends js.Object {
+trait ApiStage extends StObject {
   
   /**
     * API Id of the associated API stage in a usage plan.
@@ -31,36 +32,24 @@ object ApiStage {
   }
   
   @scala.inline
-  implicit class ApiStageOps[Self <: ApiStage] (val x: Self) extends AnyVal {
+  implicit class ApiStageMutableBuilder[Self <: ApiStage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiIdUndefined: Self = StObject.set(x, "apiId", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiId(value: String): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
     @scala.inline
-    def deleteApiId: Self = this.set("apiId", js.undefined)
+    def setThrottle(value: MapOfApiStageThrottleSettings): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStage(value: String): Self = this.set("stage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStage: Self = this.set("stage", js.undefined)
-    
-    @scala.inline
-    def setThrottle(value: MapOfApiStageThrottleSettings): Self = this.set("throttle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThrottle: Self = this.set("throttle", js.undefined)
+    def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
   }
 }

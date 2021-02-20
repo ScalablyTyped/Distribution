@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -363,324 +364,312 @@ object IgTree {
   }
   
   @scala.inline
-  implicit class IgTreeOps[Self <: IgTree] (val x: Self) extends AnyVal {
+  implicit class IgTreeMutableBuilder[Self <: IgTree] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindings(value: IgTreeBindings): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
     
     @scala.inline
-    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    def setCheckboxMode(value: String): Self = StObject.set(x, "checkboxMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindings(value: IgTreeBindings): Self = this.set("bindings", value.asInstanceOf[js.Any])
+    def setCheckboxModeUndefined: Self = StObject.set(x, "checkboxMode", js.undefined)
     
     @scala.inline
-    def deleteBindings: Self = this.set("bindings", js.undefined)
+    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCheckboxMode(value: String): Self = this.set("checkboxMode", value.asInstanceOf[js.Any])
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteCheckboxMode: Self = this.set("checkboxMode", js.undefined)
+    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDataBinding(value: (/* event */ Event, /* ui */ DataBindingEventUIParam) => Unit): Self = this.set("dataBinding", js.Any.fromFunction2(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: (/* event */ Event, /* ui */ DataBoundEventUIParam) => Unit): Self = this.set("dataBound", js.Any.fromFunction2(value))
+    def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDataSourceTypeUndefined: Self = StObject.set(x, "dataSourceType", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
     @scala.inline
-    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    def setDefaultNodeTarget(value: String): Self = StObject.set(x, "defaultNodeTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    def setDefaultNodeTargetUndefined: Self = StObject.set(x, "defaultNodeTarget", js.undefined)
     
     @scala.inline
-    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    def setDrag(value: (/* event */ Event, /* ui */ DragEventUIParam) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDefaultNodeTarget(value: String): Self = this.set("defaultNodeTarget", value.asInstanceOf[js.Any])
+    def setDragAndDrop(value: Boolean): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultNodeTarget: Self = this.set("defaultNodeTarget", js.undefined)
+    def setDragAndDropSettings(value: IgTreeDragAndDropSettings): Self = StObject.set(x, "dragAndDropSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrag(value: (/* event */ Event, /* ui */ DragEventUIParam) => Unit): Self = this.set("drag", js.Any.fromFunction2(value))
+    def setDragAndDropSettingsUndefined: Self = StObject.set(x, "dragAndDropSettings", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
     
     @scala.inline
-    def setDragAndDrop(value: Boolean): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    def setDragStart(value: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDragAndDrop: Self = this.set("dragAndDrop", js.undefined)
+    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
     @scala.inline
-    def setDragAndDropSettings(value: IgTreeDragAndDropSettings): Self = this.set("dragAndDropSettings", value.asInstanceOf[js.Any])
+    def setDragStop(value: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit): Self = StObject.set(x, "dragStop", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteDragAndDropSettings: Self = this.set("dragAndDropSettings", js.undefined)
+    def setDragStopUndefined: Self = StObject.set(x, "dragStop", js.undefined)
     
     @scala.inline
-    def setDragStart(value: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit): Self = this.set("dragStart", js.Any.fromFunction2(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDragStop(value: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit): Self = this.set("dragStop", js.Any.fromFunction2(value))
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteDragStop: Self = this.set("dragStop", js.undefined)
+    def setHotTracking(value: Boolean): Self = StObject.set(x, "hotTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHotTrackingUndefined: Self = StObject.set(x, "hotTracking", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setInitialExpandDepth(value: Double): Self = StObject.set(x, "initialExpandDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHotTracking(value: Boolean): Self = this.set("hotTracking", value.asInstanceOf[js.Any])
+    def setInitialExpandDepthUndefined: Self = StObject.set(x, "initialExpandDepth", js.undefined)
     
     @scala.inline
-    def deleteHotTracking: Self = this.set("hotTracking", js.undefined)
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialExpandDepth(value: Double): Self = this.set("initialExpandDepth", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteInitialExpandDepth: Self = this.set("initialExpandDepth", js.undefined)
+    def setLeafNodeImageClass(value: String): Self = StObject.set(x, "leafNodeImageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLeafNodeImageClassUndefined: Self = StObject.set(x, "leafNodeImageClass", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLeafNodeImageTooltip(value: String): Self = StObject.set(x, "leafNodeImageTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeafNodeImageClass(value: String): Self = this.set("leafNodeImageClass", value.asInstanceOf[js.Any])
+    def setLeafNodeImageTooltipUndefined: Self = StObject.set(x, "leafNodeImageTooltip", js.undefined)
     
     @scala.inline
-    def deleteLeafNodeImageClass: Self = this.set("leafNodeImageClass", js.undefined)
+    def setLeafNodeImageUrl(value: String): Self = StObject.set(x, "leafNodeImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeafNodeImageTooltip(value: String): Self = this.set("leafNodeImageTooltip", value.asInstanceOf[js.Any])
+    def setLeafNodeImageUrlUndefined: Self = StObject.set(x, "leafNodeImageUrl", js.undefined)
     
     @scala.inline
-    def deleteLeafNodeImageTooltip: Self = this.set("leafNodeImageTooltip", js.undefined)
+    def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeafNodeImageUrl(value: String): Self = this.set("leafNodeImageUrl", value.asInstanceOf[js.Any])
+    def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
     
     @scala.inline
-    def deleteLeafNodeImageUrl: Self = this.set("leafNodeImageUrl", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadOnDemand(value: Boolean): Self = this.set("loadOnDemand", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLoadOnDemand: Self = this.set("loadOnDemand", js.undefined)
+    def setNodeCheckstateChanged(value: (/* event */ Event, /* ui */ NodeCheckstateChangedEventUIParam) => Unit): Self = StObject.set(x, "nodeCheckstateChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNodeCheckstateChangedUndefined: Self = StObject.set(x, "nodeCheckstateChanged", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setNodeCheckstateChanging(value: (/* event */ Event, /* ui */ NodeCheckstateChangingEventUIParam) => Unit): Self = StObject.set(x, "nodeCheckstateChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeCheckstateChanged(value: (/* event */ Event, /* ui */ NodeCheckstateChangedEventUIParam) => Unit): Self = this.set("nodeCheckstateChanged", js.Any.fromFunction2(value))
+    def setNodeCheckstateChangingUndefined: Self = StObject.set(x, "nodeCheckstateChanging", js.undefined)
     
     @scala.inline
-    def deleteNodeCheckstateChanged: Self = this.set("nodeCheckstateChanged", js.undefined)
+    def setNodeClick(value: (/* event */ Event, /* ui */ NodeClickEventUIParam) => Unit): Self = StObject.set(x, "nodeClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeCheckstateChanging(value: (/* event */ Event, /* ui */ NodeCheckstateChangingEventUIParam) => Unit): Self = this.set("nodeCheckstateChanging", js.Any.fromFunction2(value))
+    def setNodeClickUndefined: Self = StObject.set(x, "nodeClick", js.undefined)
     
     @scala.inline
-    def deleteNodeCheckstateChanging: Self = this.set("nodeCheckstateChanging", js.undefined)
+    def setNodeCollapsed(value: (/* event */ Event, /* ui */ NodeCollapsedEventUIParam) => Unit): Self = StObject.set(x, "nodeCollapsed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeClick(value: (/* event */ Event, /* ui */ NodeClickEventUIParam) => Unit): Self = this.set("nodeClick", js.Any.fromFunction2(value))
+    def setNodeCollapsedUndefined: Self = StObject.set(x, "nodeCollapsed", js.undefined)
     
     @scala.inline
-    def deleteNodeClick: Self = this.set("nodeClick", js.undefined)
+    def setNodeCollapsing(value: (/* event */ Event, /* ui */ NodeCollapsingEventUIParam) => Unit): Self = StObject.set(x, "nodeCollapsing", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeCollapsed(value: (/* event */ Event, /* ui */ NodeCollapsedEventUIParam) => Unit): Self = this.set("nodeCollapsed", js.Any.fromFunction2(value))
+    def setNodeCollapsingUndefined: Self = StObject.set(x, "nodeCollapsing", js.undefined)
     
     @scala.inline
-    def deleteNodeCollapsed: Self = this.set("nodeCollapsed", js.undefined)
+    def setNodeDoubleClick(value: (/* event */ Event, /* ui */ NodeDoubleClickEventUIParam) => Unit): Self = StObject.set(x, "nodeDoubleClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeCollapsing(value: (/* event */ Event, /* ui */ NodeCollapsingEventUIParam) => Unit): Self = this.set("nodeCollapsing", js.Any.fromFunction2(value))
+    def setNodeDoubleClickUndefined: Self = StObject.set(x, "nodeDoubleClick", js.undefined)
     
     @scala.inline
-    def deleteNodeCollapsing: Self = this.set("nodeCollapsing", js.undefined)
+    def setNodeDropped(value: (/* event */ Event, /* ui */ NodeDroppedEventUIParam) => Unit): Self = StObject.set(x, "nodeDropped", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeDoubleClick(value: (/* event */ Event, /* ui */ NodeDoubleClickEventUIParam) => Unit): Self = this.set("nodeDoubleClick", js.Any.fromFunction2(value))
+    def setNodeDroppedUndefined: Self = StObject.set(x, "nodeDropped", js.undefined)
     
     @scala.inline
-    def deleteNodeDoubleClick: Self = this.set("nodeDoubleClick", js.undefined)
+    def setNodeDropping(value: (/* event */ Event, /* ui */ NodeDroppingEventUIParam) => Unit): Self = StObject.set(x, "nodeDropping", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeDropped(value: (/* event */ Event, /* ui */ NodeDroppedEventUIParam) => Unit): Self = this.set("nodeDropped", js.Any.fromFunction2(value))
+    def setNodeDroppingUndefined: Self = StObject.set(x, "nodeDropping", js.undefined)
     
     @scala.inline
-    def deleteNodeDropped: Self = this.set("nodeDropped", js.undefined)
+    def setNodeExpanded(value: (/* event */ Event, /* ui */ NodeExpandedEventUIParam) => Unit): Self = StObject.set(x, "nodeExpanded", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeDropping(value: (/* event */ Event, /* ui */ NodeDroppingEventUIParam) => Unit): Self = this.set("nodeDropping", js.Any.fromFunction2(value))
+    def setNodeExpandedUndefined: Self = StObject.set(x, "nodeExpanded", js.undefined)
     
     @scala.inline
-    def deleteNodeDropping: Self = this.set("nodeDropping", js.undefined)
+    def setNodeExpanding(value: (/* event */ Event, /* ui */ NodeExpandingEventUIParam) => Unit): Self = StObject.set(x, "nodeExpanding", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeExpanded(value: (/* event */ Event, /* ui */ NodeExpandedEventUIParam) => Unit): Self = this.set("nodeExpanded", js.Any.fromFunction2(value))
+    def setNodeExpandingUndefined: Self = StObject.set(x, "nodeExpanding", js.undefined)
     
     @scala.inline
-    def deleteNodeExpanded: Self = this.set("nodeExpanded", js.undefined)
+    def setNodePopulated(value: (/* event */ Event, /* ui */ NodePopulatedEventUIParam) => Unit): Self = StObject.set(x, "nodePopulated", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodeExpanding(value: (/* event */ Event, /* ui */ NodeExpandingEventUIParam) => Unit): Self = this.set("nodeExpanding", js.Any.fromFunction2(value))
+    def setNodePopulatedUndefined: Self = StObject.set(x, "nodePopulated", js.undefined)
     
     @scala.inline
-    def deleteNodeExpanding: Self = this.set("nodeExpanding", js.undefined)
+    def setNodePopulating(value: (/* event */ Event, /* ui */ NodePopulatingEventUIParam) => Unit): Self = StObject.set(x, "nodePopulating", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNodePopulated(value: (/* event */ Event, /* ui */ NodePopulatedEventUIParam) => Unit): Self = this.set("nodePopulated", js.Any.fromFunction2(value))
+    def setNodePopulatingUndefined: Self = StObject.set(x, "nodePopulating", js.undefined)
     
     @scala.inline
-    def deleteNodePopulated: Self = this.set("nodePopulated", js.undefined)
+    def setParentNodeImageClass(value: String): Self = StObject.set(x, "parentNodeImageClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodePopulating(value: (/* event */ Event, /* ui */ NodePopulatingEventUIParam) => Unit): Self = this.set("nodePopulating", js.Any.fromFunction2(value))
+    def setParentNodeImageClassUndefined: Self = StObject.set(x, "parentNodeImageClass", js.undefined)
     
     @scala.inline
-    def deleteNodePopulating: Self = this.set("nodePopulating", js.undefined)
+    def setParentNodeImageTooltip(value: String): Self = StObject.set(x, "parentNodeImageTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentNodeImageClass(value: String): Self = this.set("parentNodeImageClass", value.asInstanceOf[js.Any])
+    def setParentNodeImageTooltipUndefined: Self = StObject.set(x, "parentNodeImageTooltip", js.undefined)
     
     @scala.inline
-    def deleteParentNodeImageClass: Self = this.set("parentNodeImageClass", js.undefined)
+    def setParentNodeImageUrl(value: String): Self = StObject.set(x, "parentNodeImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentNodeImageTooltip(value: String): Self = this.set("parentNodeImageTooltip", value.asInstanceOf[js.Any])
+    def setParentNodeImageUrlUndefined: Self = StObject.set(x, "parentNodeImageUrl", js.undefined)
     
     @scala.inline
-    def deleteParentNodeImageTooltip: Self = this.set("parentNodeImageTooltip", js.undefined)
+    def setPathSeparator(value: String): Self = StObject.set(x, "pathSeparator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentNodeImageUrl(value: String): Self = this.set("parentNodeImageUrl", value.asInstanceOf[js.Any])
+    def setPathSeparatorUndefined: Self = StObject.set(x, "pathSeparator", js.undefined)
     
     @scala.inline
-    def deleteParentNodeImageUrl: Self = this.set("parentNodeImageUrl", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathSeparator(value: String): Self = this.set("pathSeparator", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deletePathSeparator: Self = this.set("pathSeparator", js.undefined)
+    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = StObject.set(x, "rendered", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit): Self = StObject.set(x, "rendering", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = this.set("rendered", js.Any.fromFunction2(value))
+    def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
     
     @scala.inline
-    def deleteRendered: Self = this.set("rendered", js.undefined)
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Unit): Self = this.set("rendering", js.Any.fromFunction2(value))
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
     @scala.inline
-    def deleteRendering: Self = this.set("rendering", js.undefined)
+    def setResponseContentType(value: String): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
     
     @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    def setResponseDataKey(value: String): Self = StObject.set(x, "responseDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseContentType(value: String): Self = this.set("responseContentType", value.asInstanceOf[js.Any])
+    def setResponseDataKeyUndefined: Self = StObject.set(x, "responseDataKey", js.undefined)
     
     @scala.inline
-    def deleteResponseContentType: Self = this.set("responseContentType", js.undefined)
+    def setResponseDataType(value: String): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataKey(value: String): Self = this.set("responseDataKey", value.asInstanceOf[js.Any])
+    def setResponseDataTypeUndefined: Self = StObject.set(x, "responseDataType", js.undefined)
     
     @scala.inline
-    def deleteResponseDataKey: Self = this.set("responseDataKey", js.undefined)
+    def setSelectionChanged(value: (/* event */ Event, /* ui */ IgTreeSelectionChangedEventUIParam) => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setResponseDataType(value: String): Self = this.set("responseDataType", value.asInstanceOf[js.Any])
+    def setSelectionChangedUndefined: Self = StObject.set(x, "selectionChanged", js.undefined)
     
     @scala.inline
-    def deleteResponseDataType: Self = this.set("responseDataType", js.undefined)
+    def setSelectionChanging(value: (/* event */ Event, /* ui */ SelectionChangingEventUIParam) => Unit): Self = StObject.set(x, "selectionChanging", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSelectionChanged(value: (/* event */ Event, /* ui */ IgTreeSelectionChangedEventUIParam) => Unit): Self = this.set("selectionChanged", js.Any.fromFunction2(value))
+    def setSelectionChangingUndefined: Self = StObject.set(x, "selectionChanging", js.undefined)
     
     @scala.inline
-    def deleteSelectionChanged: Self = this.set("selectionChanged", js.undefined)
+    def setSingleBranchExpand(value: Boolean): Self = StObject.set(x, "singleBranchExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionChanging(value: (/* event */ Event, /* ui */ SelectionChangingEventUIParam) => Unit): Self = this.set("selectionChanging", js.Any.fromFunction2(value))
+    def setSingleBranchExpandUndefined: Self = StObject.set(x, "singleBranchExpand", js.undefined)
     
     @scala.inline
-    def deleteSelectionChanging: Self = this.set("selectionChanging", js.undefined)
+    def setUpdateUrl(value: String): Self = StObject.set(x, "updateUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleBranchExpand(value: Boolean): Self = this.set("singleBranchExpand", value.asInstanceOf[js.Any])
+    def setUpdateUrlUndefined: Self = StObject.set(x, "updateUrl", js.undefined)
     
     @scala.inline
-    def deleteSingleBranchExpand: Self = this.set("singleBranchExpand", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdateUrl(value: String): Self = this.set("updateUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateUrl: Self = this.set("updateUrl", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

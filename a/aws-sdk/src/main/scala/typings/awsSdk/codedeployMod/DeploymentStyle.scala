@@ -1,11 +1,12 @@
 package typings.awsSdk.codedeployMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeploymentStyle extends js.Object {
+trait DeploymentStyle extends StObject {
   
   /**
     * Indicates whether to route deployment traffic behind a load balancer.
@@ -26,30 +27,18 @@ object DeploymentStyle {
   }
   
   @scala.inline
-  implicit class DeploymentStyleOps[Self <: DeploymentStyle] (val x: Self) extends AnyVal {
+  implicit class DeploymentStyleMutableBuilder[Self <: DeploymentStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentOption(value: DeploymentOption): Self = StObject.set(x, "deploymentOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentOptionUndefined: Self = StObject.set(x, "deploymentOption", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentOption(value: DeploymentOption): Self = this.set("deploymentOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentOption: Self = this.set("deploymentOption", js.undefined)
-    
-    @scala.inline
-    def setDeploymentType(value: DeploymentType): Self = this.set("deploymentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentType: Self = this.set("deploymentType", js.undefined)
+    def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
   }
 }

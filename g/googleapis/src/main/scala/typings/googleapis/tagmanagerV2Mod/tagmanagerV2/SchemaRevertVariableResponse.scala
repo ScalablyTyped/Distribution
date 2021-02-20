@@ -1,5 +1,6 @@
 package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The result of reverting a variable in a workspace.
   */
 @js.native
-trait SchemaRevertVariableResponse extends js.Object {
+trait SchemaRevertVariableResponse extends StObject {
   
   /**
     * Variable as it appears in the latest container version since the last
@@ -26,24 +27,12 @@ object SchemaRevertVariableResponse {
   }
   
   @scala.inline
-  implicit class SchemaRevertVariableResponseOps[Self <: SchemaRevertVariableResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaRevertVariableResponseMutableBuilder[Self <: SchemaRevertVariableResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setVariable(value: SchemaVariable): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setVariable(value: SchemaVariable): Self = this.set("variable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariable: Self = this.set("variable", js.undefined)
+    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

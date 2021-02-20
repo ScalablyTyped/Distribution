@@ -2,6 +2,7 @@ package typings.senchaTouch.Ext
 
 import typings.senchaTouch.Ext.mixin.IObservable
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -722,648 +723,636 @@ object IElement {
   }
   
   @scala.inline
-  implicit class IElementOps[Self <: IElement] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDISPLAY(value: Double): Self = this.set("DISPLAY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDISPLAY: Self = this.set("DISPLAY", js.undefined)
-    
-    @scala.inline
-    def setOFFSETS(value: Double): Self = this.set("OFFSETS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOFFSETS: Self = this.set("OFFSETS", js.undefined)
-    
-    @scala.inline
-    def setVISIBILITY(value: Double): Self = this.set("VISIBILITY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVISIBILITY: Self = this.set("VISIBILITY", js.undefined)
+  implicit class IElementMutableBuilder[Self <: IElement] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAddCls(
       value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => IElement
-    ): Self = this.set("addCls", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "addCls", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteAddCls: Self = this.set("addCls", js.undefined)
+    def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
     
     @scala.inline
-    def setAppendChild(value: /* element */ js.UndefOr[js.Any] => IElement): Self = this.set("appendChild", js.Any.fromFunction1(value))
+    def setAppendChild(value: /* element */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAppendChild: Self = this.set("appendChild", js.undefined)
+    def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
     @scala.inline
-    def setAppendTo(value: /* el */ js.UndefOr[js.Any] => IElement): Self = this.set("appendTo", js.Any.fromFunction1(value))
+    def setAppendTo(value: /* el */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
     @scala.inline
-    def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => IElement): Self = this.set("applyStyles", js.Any.fromFunction1(value))
+    def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteApplyStyles: Self = this.set("applyStyles", js.undefined)
+    def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
     
     @scala.inline
-    def setChild(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("child", js.Any.fromFunction2(value))
+    def setChild(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "child", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteChild: Self = this.set("child", js.undefined)
+    def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
     @scala.inline
-    def setContains(value: /* element */ js.UndefOr[js.Any] => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
+    def setContains(value: /* element */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
     def setCreateChild(
       value: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => IElement
-    ): Self = this.set("createChild", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "createChild", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteCreateChild: Self = this.set("createChild", js.undefined)
+    def setCreateChildUndefined: Self = StObject.set(x, "createChild", js.undefined)
     
     @scala.inline
-    def setCssTranslate(value: () => Unit): Self = this.set("cssTranslate", js.Any.fromFunction0(value))
+    def setCssTranslate(value: () => Unit): Self = StObject.set(x, "cssTranslate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteCssTranslate: Self = this.set("cssTranslate", js.undefined)
+    def setCssTranslateUndefined: Self = StObject.set(x, "cssTranslate", js.undefined)
     
     @scala.inline
-    def setDefaultUnit(value: java.lang.String): Self = this.set("defaultUnit", value.asInstanceOf[js.Any])
+    def setDISPLAY(value: Double): Self = StObject.set(x, "DISPLAY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDefaultUnit: Self = this.set("defaultUnit", js.undefined)
+    def setDISPLAYUndefined: Self = StObject.set(x, "DISPLAY", js.undefined)
     
     @scala.inline
-    def setDom(value: HTMLElement): Self = this.set("dom", value.asInstanceOf[js.Any])
+    def setDefaultUnit(value: java.lang.String): Self = StObject.set(x, "defaultUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDom: Self = this.set("dom", js.undefined)
+    def setDefaultUnitUndefined: Self = StObject.set(x, "defaultUnit", js.undefined)
     
     @scala.inline
-    def setDown(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("down", js.Any.fromFunction2(value))
+    def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDown: Self = this.set("down", js.undefined)
+    def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+    
+    @scala.inline
+    def setDown(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     @scala.inline
     def setFindParent(
       value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("findParent", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteFindParent: Self = this.set("findParent", js.undefined)
+    ): Self = StObject.set(x, "findParent", js.Any.fromFunction3(value))
     
     @scala.inline
     def setFindParentNode(
       value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any], /* returnEl */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("findParentNode", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "findParentNode", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteFindParentNode: Self = this.set("findParentNode", js.undefined)
+    def setFindParentNodeUndefined: Self = StObject.set(x, "findParentNode", js.undefined)
     
     @scala.inline
-    def setFirst(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("first", js.Any.fromFunction2(value))
+    def setFindParentUndefined: Self = StObject.set(x, "findParent", js.undefined)
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setFirst(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "first", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
     def setGetAlignToXY(
       value: (/* element */ js.UndefOr[js.Any], /* position */ js.UndefOr[java.lang.String], /* offsets */ js.UndefOr[Array]) => Array
-    ): Self = this.set("getAlignToXY", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getAlignToXY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetAlignToXY: Self = this.set("getAlignToXY", js.undefined)
+    def setGetAlignToXYUndefined: Self = StObject.set(x, "getAlignToXY", js.undefined)
     
     @scala.inline
     def setGetAnchorXY(
       value: (/* anchor */ js.UndefOr[java.lang.String], /* local */ js.UndefOr[Boolean], /* size */ js.UndefOr[js.Any]) => Array
-    ): Self = this.set("getAnchorXY", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "getAnchorXY", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteGetAnchorXY: Self = this.set("getAnchorXY", js.undefined)
+    def setGetAnchorXYUndefined: Self = StObject.set(x, "getAnchorXY", js.undefined)
     
     @scala.inline
     def setGetAttribute(
       value: (/* name */ js.UndefOr[java.lang.String], /* namespace */ js.UndefOr[java.lang.String]) => java.lang.String
-    ): Self = this.set("getAttribute", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "getAttribute", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetAttribute: Self = this.set("getAttribute", js.undefined)
+    def setGetAttributeUndefined: Self = StObject.set(x, "getAttribute", js.undefined)
     
     @scala.inline
-    def setGetBorderWidth(value: /* side */ js.UndefOr[java.lang.String] => Double): Self = this.set("getBorderWidth", js.Any.fromFunction1(value))
+    def setGetBorderWidth(value: /* side */ js.UndefOr[java.lang.String] => Double): Self = StObject.set(x, "getBorderWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetBorderWidth: Self = this.set("getBorderWidth", js.undefined)
+    def setGetBorderWidthUndefined: Self = StObject.set(x, "getBorderWidth", js.undefined)
     
     @scala.inline
-    def setGetBottom(value: () => Double): Self = this.set("getBottom", js.Any.fromFunction0(value))
+    def setGetBottom(value: () => Double): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetBottom: Self = this.set("getBottom", js.undefined)
+    def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
     
     @scala.inline
-    def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => _): Self = this.set("getBox", js.Any.fromFunction2(value))
+    def setGetBox(value: (/* contentBox */ js.UndefOr[Boolean], /* local */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getBox", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteGetBox: Self = this.set("getBox", js.undefined)
+    def setGetBoxUndefined: Self = StObject.set(x, "getBox", js.undefined)
     
     @scala.inline
-    def setGetHTML(value: () => java.lang.String): Self = this.set("getHTML", js.Any.fromFunction0(value))
+    def setGetHTML(value: () => java.lang.String): Self = StObject.set(x, "getHTML", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetHTML: Self = this.set("getHTML", js.undefined)
+    def setGetHTMLUndefined: Self = StObject.set(x, "getHTML", js.undefined)
     
     @scala.inline
-    def setGetHeight(value: /* contentHeight */ js.UndefOr[Boolean] => Double): Self = this.set("getHeight", js.Any.fromFunction1(value))
+    def setGetHeight(value: /* contentHeight */ js.UndefOr[Boolean] => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetHeight: Self = this.set("getHeight", js.undefined)
+    def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
     
     @scala.inline
-    def setGetLeft(value: () => Double): Self = this.set("getLeft", js.Any.fromFunction0(value))
+    def setGetLeft(value: () => Double): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetLeft: Self = this.set("getLeft", js.undefined)
+    def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
     
     @scala.inline
-    def setGetMargin(value: /* sides */ js.UndefOr[java.lang.String] => _): Self = this.set("getMargin", js.Any.fromFunction1(value))
+    def setGetMargin(value: /* sides */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "getMargin", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetMargin: Self = this.set("getMargin", js.undefined)
+    def setGetMarginUndefined: Self = StObject.set(x, "getMargin", js.undefined)
     
     @scala.inline
-    def setGetOffsetsTo(value: /* element */ js.UndefOr[js.Any] => Array): Self = this.set("getOffsetsTo", js.Any.fromFunction1(value))
+    def setGetOffsetsTo(value: /* element */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "getOffsetsTo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetOffsetsTo: Self = this.set("getOffsetsTo", js.undefined)
+    def setGetOffsetsToUndefined: Self = StObject.set(x, "getOffsetsTo", js.undefined)
     
     @scala.inline
-    def setGetOuterHeight(value: () => Unit): Self = this.set("getOuterHeight", js.Any.fromFunction0(value))
+    def setGetOuterHeight(value: () => Unit): Self = StObject.set(x, "getOuterHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetOuterHeight: Self = this.set("getOuterHeight", js.undefined)
+    def setGetOuterHeightUndefined: Self = StObject.set(x, "getOuterHeight", js.undefined)
     
     @scala.inline
-    def setGetOuterWidth(value: () => Unit): Self = this.set("getOuterWidth", js.Any.fromFunction0(value))
+    def setGetOuterWidth(value: () => Unit): Self = StObject.set(x, "getOuterWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetOuterWidth: Self = this.set("getOuterWidth", js.undefined)
+    def setGetOuterWidthUndefined: Self = StObject.set(x, "getOuterWidth", js.undefined)
     
     @scala.inline
-    def setGetPadding(value: /* side */ js.UndefOr[java.lang.String] => Double): Self = this.set("getPadding", js.Any.fromFunction1(value))
+    def setGetPadding(value: /* side */ js.UndefOr[java.lang.String] => Double): Self = StObject.set(x, "getPadding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetPadding: Self = this.set("getPadding", js.undefined)
+    def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
     
     @scala.inline
-    def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => _): Self = this.set("getPageBox", js.Any.fromFunction1(value))
+    def setGetPageBox(value: /* asRegion */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getPageBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetPageBox: Self = this.set("getPageBox", js.undefined)
+    def setGetPageBoxUndefined: Self = StObject.set(x, "getPageBox", js.undefined)
     
     @scala.inline
-    def setGetRight(value: () => Double): Self = this.set("getRight", js.Any.fromFunction0(value))
+    def setGetRight(value: () => Double): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetRight: Self = this.set("getRight", js.undefined)
+    def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
     
     @scala.inline
-    def setGetScrollParent(value: () => Unit): Self = this.set("getScrollParent", js.Any.fromFunction0(value))
+    def setGetScrollParent(value: () => Unit): Self = StObject.set(x, "getScrollParent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetScrollParent: Self = this.set("getScrollParent", js.undefined)
+    def setGetScrollParentUndefined: Self = StObject.set(x, "getScrollParent", js.undefined)
     
     @scala.inline
-    def setGetSize(value: /* contentSize */ js.UndefOr[Boolean] => _): Self = this.set("getSize", js.Any.fromFunction1(value))
+    def setGetSize(value: /* contentSize */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetSize: Self = this.set("getSize", js.undefined)
+    def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
     
     @scala.inline
-    def setGetStyle(value: /* prop */ js.UndefOr[java.lang.String] => java.lang.String): Self = this.set("getStyle", js.Any.fromFunction1(value))
+    def setGetStyle(value: /* prop */ js.UndefOr[java.lang.String] => java.lang.String): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetStyle: Self = this.set("getStyle", js.undefined)
+    def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
     
     @scala.inline
-    def setGetTop(value: () => Double): Self = this.set("getTop", js.Any.fromFunction0(value))
+    def setGetTop(value: () => Double): Self = StObject.set(x, "getTop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetTop: Self = this.set("getTop", js.undefined)
+    def setGetTopUndefined: Self = StObject.set(x, "getTop", js.undefined)
     
     @scala.inline
-    def setGetValue(value: /* asNumber */ js.UndefOr[Boolean] => _): Self = this.set("getValue", js.Any.fromFunction1(value))
+    def setGetValue(value: /* asNumber */ js.UndefOr[Boolean] => _): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
     @scala.inline
-    def setGetViewSize(value: () => _): Self = this.set("getViewSize", js.Any.fromFunction0(value))
+    def setGetViewSize(value: () => _): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetViewSize: Self = this.set("getViewSize", js.undefined)
+    def setGetViewSizeUndefined: Self = StObject.set(x, "getViewSize", js.undefined)
     
     @scala.inline
-    def setGetWidth(value: /* contentWidth */ js.UndefOr[Boolean] => Double): Self = this.set("getWidth", js.Any.fromFunction1(value))
+    def setGetWidth(value: /* contentWidth */ js.UndefOr[Boolean] => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteGetWidth: Self = this.set("getWidth", js.undefined)
+    def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
     
     @scala.inline
-    def setGetX(value: () => Double): Self = this.set("getX", js.Any.fromFunction0(value))
+    def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetX: Self = this.set("getX", js.undefined)
+    def setGetXUndefined: Self = StObject.set(x, "getX", js.undefined)
     
     @scala.inline
-    def setGetXY(value: () => Array): Self = this.set("getXY", js.Any.fromFunction0(value))
+    def setGetXY(value: () => Array): Self = StObject.set(x, "getXY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetXY: Self = this.set("getXY", js.undefined)
+    def setGetXYUndefined: Self = StObject.set(x, "getXY", js.undefined)
     
     @scala.inline
-    def setGetY(value: () => Double): Self = this.set("getY", js.Any.fromFunction0(value))
+    def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetY: Self = this.set("getY", js.undefined)
+    def setGetYUndefined: Self = StObject.set(x, "getY", js.undefined)
     
     @scala.inline
-    def setHasCls(value: /* name */ js.UndefOr[java.lang.String] => Boolean): Self = this.set("hasCls", js.Any.fromFunction1(value))
+    def setHasCls(value: /* name */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "hasCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteHasCls: Self = this.set("hasCls", js.undefined)
+    def setHasClsUndefined: Self = StObject.set(x, "hasCls", js.undefined)
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteHide: Self = this.set("hide", js.undefined)
+    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
     @scala.inline
-    def setId(value: java.lang.String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => IElement): Self = this.set("insertAfter", js.Any.fromFunction1(value))
+    def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInsertAfter: Self = this.set("insertAfter", js.undefined)
+    def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
     @scala.inline
-    def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => IElement): Self = this.set("insertBefore", js.Any.fromFunction1(value))
+    def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInsertBefore: Self = this.set("insertBefore", js.undefined)
+    def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
     @scala.inline
-    def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => IElement): Self = this.set("insertFirst", js.Any.fromFunction1(value))
+    def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteInsertFirst: Self = this.set("insertFirst", js.undefined)
+    def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
     
     @scala.inline
     def setInsertHtml(
       value: (/* where */ js.UndefOr[java.lang.String], /* html */ js.UndefOr[java.lang.String], /* returnEl */ js.UndefOr[Boolean]) => _
-    ): Self = this.set("insertHtml", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertHtml", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertHtml: Self = this.set("insertHtml", js.undefined)
+    def setInsertHtmlUndefined: Self = StObject.set(x, "insertHtml", js.undefined)
     
     @scala.inline
     def setInsertSibling(
       value: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => IElement
-    ): Self = this.set("insertSibling", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "insertSibling", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteInsertSibling: Self = this.set("insertSibling", js.undefined)
+    def setInsertSiblingUndefined: Self = StObject.set(x, "insertSibling", js.undefined)
     
     @scala.inline
-    def setIs(value: /* selector */ js.UndefOr[java.lang.String] => Boolean): Self = this.set("is", js.Any.fromFunction1(value))
+    def setIs(value: /* selector */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIs: Self = this.set("is", js.undefined)
+    def setIsDescendent(value: () => Unit): Self = StObject.set(x, "isDescendent", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDescendent(value: () => Unit): Self = this.set("isDescendent", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteIsDescendent: Self = this.set("isDescendent", js.undefined)
+    def setIsDescendentUndefined: Self = StObject.set(x, "isDescendent", js.undefined)
     
     @scala.inline
     def setIsStyle(
       value: (/* style */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[java.lang.String]) => Boolean
-    ): Self = this.set("isStyle", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "isStyle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteIsStyle: Self = this.set("isStyle", js.undefined)
+    def setIsStyleUndefined: Self = StObject.set(x, "isStyle", js.undefined)
     
     @scala.inline
-    def setIsTransparent(value: /* prop */ js.UndefOr[java.lang.String] => Boolean): Self = this.set("isTransparent", js.Any.fromFunction1(value))
+    def setIsTransparent(value: /* prop */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "isTransparent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIsTransparent: Self = this.set("isTransparent", js.undefined)
+    def setIsTransparentUndefined: Self = StObject.set(x, "isTransparent", js.undefined)
     
     @scala.inline
-    def setLast(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("last", js.Any.fromFunction2(value))
+    def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setLast(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "last", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMask(value: () => Unit): Self = this.set("mask", js.Any.fromFunction0(value))
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
-    def deleteMask: Self = this.set("mask", js.undefined)
+    def setMask(value: () => Unit): Self = StObject.set(x, "mask", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("next", js.Any.fromFunction2(value))
+    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setNext(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "next", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setParent(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("parent", js.Any.fromFunction2(value))
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setOFFSETS(value: Double): Self = StObject.set(x, "OFFSETS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrev(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = this.set("prev", js.Any.fromFunction2(value))
+    def setOFFSETSUndefined: Self = StObject.set(x, "OFFSETS", js.undefined)
     
     @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
+    def setParent(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "parent", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPurgeAllListeners(value: () => Unit): Self = this.set("purgeAllListeners", js.Any.fromFunction0(value))
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deletePurgeAllListeners: Self = this.set("purgeAllListeners", js.undefined)
+    def setPrev(value: (/* selector */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "prev", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = this.set("query", js.Any.fromFunction1(value))
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     @scala.inline
-    def deleteQuery: Self = this.set("query", js.undefined)
+    def setPurgeAllListeners(value: () => Unit): Self = StObject.set(x, "purgeAllListeners", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRadioCls(value: /* className */ js.UndefOr[js.Any] => IElement): Self = this.set("radioCls", js.Any.fromFunction1(value))
+    def setPurgeAllListenersUndefined: Self = StObject.set(x, "purgeAllListeners", js.undefined)
     
     @scala.inline
-    def deleteRadioCls: Self = this.set("radioCls", js.undefined)
+    def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
     @scala.inline
-    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    def setRadioCls(value: /* className */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setRadioClsUndefined: Self = StObject.set(x, "radioCls", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveAllListeners(value: () => Unit): Self = this.set("removeAllListeners", js.Any.fromFunction0(value))
+    def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     @scala.inline
-    def deleteRemoveAllListeners: Self = this.set("removeAllListeners", js.undefined)
+    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setRemoveAllListenersUndefined: Self = StObject.set(x, "removeAllListeners", js.undefined)
     
     @scala.inline
     def setRemoveCls(
       value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => IElement
-    ): Self = this.set("removeCls", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "removeCls", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteRemoveCls: Self = this.set("removeCls", js.undefined)
+    def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
     
     @scala.inline
-    def setRepaint(value: () => IElement): Self = this.set("repaint", js.Any.fromFunction0(value))
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteRepaint: Self = this.set("repaint", js.undefined)
+    def setRepaint(value: () => IElement): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setReplace(value: /* element */ js.UndefOr[js.Any] => IElement): Self = this.set("replace", js.Any.fromFunction1(value))
+    def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
     
     @scala.inline
-    def deleteReplace: Self = this.set("replace", js.undefined)
+    def setReplace(value: /* element */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
     @scala.inline
     def setReplaceCls(
       value: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => IElement
-    ): Self = this.set("replaceCls", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "replaceCls", js.Any.fromFunction4(value))
     
     @scala.inline
-    def deleteReplaceCls: Self = this.set("replaceCls", js.undefined)
+    def setReplaceClsUndefined: Self = StObject.set(x, "replaceCls", js.undefined)
     
     @scala.inline
-    def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => IElement): Self = this.set("replaceWith", js.Any.fromFunction1(value))
+    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def deleteReplaceWith: Self = this.set("replaceWith", js.undefined)
+    def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSerializeForm(value: /* form */ js.UndefOr[js.Any] => java.lang.String): Self = this.set("serializeForm", js.Any.fromFunction1(value))
+    def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
     
     @scala.inline
-    def deleteSerializeForm: Self = this.set("serializeForm", js.undefined)
+    def setSerializeForm(value: /* form */ js.UndefOr[js.Any] => java.lang.String): Self = StObject.set(x, "serializeForm", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => IElement): Self = this.set("set", js.Any.fromFunction2(value))
+    def setSerializeFormUndefined: Self = StObject.set(x, "serializeForm", js.undefined)
     
     @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
+    def setSet(value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => IElement): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => IElement): Self = this.set("setBottom", js.Any.fromFunction1(value))
+    def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetBottom: Self = this.set("setBottom", js.undefined)
+    def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
     @scala.inline
-    def setSetBox(value: /* box */ js.UndefOr[js.Any] => IElement): Self = this.set("setBox", js.Any.fromFunction1(value))
+    def setSetBox(value: /* box */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetBox: Self = this.set("setBox", js.undefined)
+    def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
     
     @scala.inline
-    def setSetCls(value: /* className */ js.UndefOr[js.Any] => Unit): Self = this.set("setCls", js.Any.fromFunction1(value))
+    def setSetCls(value: /* className */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetCls: Self = this.set("setCls", js.undefined)
+    def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
     
     @scala.inline
-    def setSetHTML(value: /* html */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setHTML", js.Any.fromFunction1(value))
+    def setSetHTML(value: /* html */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setHTML", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetHTML: Self = this.set("setHTML", js.undefined)
+    def setSetHTMLUndefined: Self = StObject.set(x, "setHTML", js.undefined)
     
     @scala.inline
-    def setSetHeight(value: /* height */ js.UndefOr[js.Any] => IElement): Self = this.set("setHeight", js.Any.fromFunction1(value))
+    def setSetHeight(value: /* height */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
     @scala.inline
-    def setSetLeft(value: /* left */ js.UndefOr[java.lang.String] => IElement): Self = this.set("setLeft", js.Any.fromFunction1(value))
+    def setSetLeft(value: /* left */ js.UndefOr[java.lang.String] => IElement): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetLeft: Self = this.set("setLeft", js.undefined)
+    def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
     @scala.inline
-    def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => IElement): Self = this.set("setMaxHeight", js.Any.fromFunction1(value))
+    def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMaxHeight: Self = this.set("setMaxHeight", js.undefined)
+    def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
     
     @scala.inline
-    def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => IElement): Self = this.set("setMaxWidth", js.Any.fromFunction1(value))
+    def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMaxWidth: Self = this.set("setMaxWidth", js.undefined)
+    def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
     
     @scala.inline
-    def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => IElement): Self = this.set("setMinHeight", js.Any.fromFunction1(value))
+    def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMinHeight: Self = this.set("setMinHeight", js.undefined)
+    def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
     @scala.inline
-    def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => IElement): Self = this.set("setMinWidth", js.Any.fromFunction1(value))
+    def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetMinWidth: Self = this.set("setMinWidth", js.undefined)
+    def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
     
     @scala.inline
-    def setSetRight(value: /* right */ js.UndefOr[java.lang.String] => IElement): Self = this.set("setRight", js.Any.fromFunction1(value))
+    def setSetRight(value: /* right */ js.UndefOr[java.lang.String] => IElement): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetRight: Self = this.set("setRight", js.undefined)
+    def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
     
     @scala.inline
-    def setSetSize(value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => IElement): Self = this.set("setSize", js.Any.fromFunction2(value))
+    def setSetSize(value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => IElement): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSetSize: Self = this.set("setSize", js.undefined)
+    def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
     @scala.inline
-    def setSetStyle(value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => IElement): Self = this.set("setStyle", js.Any.fromFunction2(value))
+    def setSetStyle(value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => IElement): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
     
     @scala.inline
-    def setSetTop(value: /* top */ js.UndefOr[java.lang.String] => IElement): Self = this.set("setTop", js.Any.fromFunction1(value))
+    def setSetTop(value: /* top */ js.UndefOr[java.lang.String] => IElement): Self = StObject.set(x, "setTop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetTop: Self = this.set("setTop", js.undefined)
+    def setSetTopLeft(value: () => Unit): Self = StObject.set(x, "setTopLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetTopLeft(value: () => Unit): Self = this.set("setTopLeft", js.Any.fromFunction0(value))
+    def setSetTopLeftUndefined: Self = StObject.set(x, "setTopLeft", js.undefined)
     
     @scala.inline
-    def deleteSetTopLeft: Self = this.set("setTopLeft", js.undefined)
+    def setSetTopUndefined: Self = StObject.set(x, "setTop", js.undefined)
     
     @scala.inline
-    def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => IElement): Self = this.set("setVisibilityMode", js.Any.fromFunction1(value))
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteSetVisibilityMode: Self = this.set("setVisibilityMode", js.undefined)
+    def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetVisible(value: /* visible */ js.UndefOr[Boolean] => IElement): Self = this.set("setVisible", js.Any.fromFunction1(value))
+    def setSetVisibilityModeUndefined: Self = StObject.set(x, "setVisibilityMode", js.undefined)
     
     @scala.inline
-    def deleteSetVisible: Self = this.set("setVisible", js.undefined)
+    def setSetVisible(value: /* visible */ js.UndefOr[Boolean] => IElement): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetWidth(value: /* width */ js.UndefOr[js.Any] => IElement): Self = this.set("setWidth", js.Any.fromFunction1(value))
+    def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
     
     @scala.inline
-    def deleteSetWidth: Self = this.set("setWidth", js.undefined)
+    def setSetWidth(value: /* width */ js.UndefOr[js.Any] => IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetX(value: /* x */ js.UndefOr[Double] => IElement): Self = this.set("setX", js.Any.fromFunction1(value))
+    def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
     
     @scala.inline
-    def deleteSetX: Self = this.set("setX", js.undefined)
+    def setSetX(value: /* x */ js.UndefOr[Double] => IElement): Self = StObject.set(x, "setX", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetXY(value: /* pos */ js.UndefOr[Array] => IElement): Self = this.set("setXY", js.Any.fromFunction1(value))
+    def setSetXUndefined: Self = StObject.set(x, "setX", js.undefined)
     
     @scala.inline
-    def deleteSetXY: Self = this.set("setXY", js.undefined)
+    def setSetXY(value: /* pos */ js.UndefOr[Array] => IElement): Self = StObject.set(x, "setXY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetY(value: /* y */ js.UndefOr[Double] => IElement): Self = this.set("setY", js.Any.fromFunction1(value))
+    def setSetXYUndefined: Self = StObject.set(x, "setXY", js.undefined)
     
     @scala.inline
-    def deleteSetY: Self = this.set("setY", js.undefined)
+    def setSetY(value: /* y */ js.UndefOr[Double] => IElement): Self = StObject.set(x, "setY", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    def setSetYUndefined: Self = StObject.set(x, "setY", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setToggleCls(value: /* className */ js.UndefOr[java.lang.String] => IElement): Self = this.set("toggleCls", js.Any.fromFunction1(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteToggleCls: Self = this.set("toggleCls", js.undefined)
+    def setToggleCls(value: /* className */ js.UndefOr[java.lang.String] => IElement): Self = StObject.set(x, "toggleCls", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTranslatePoints(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => _): Self = this.set("translatePoints", js.Any.fromFunction2(value))
+    def setToggleClsUndefined: Self = StObject.set(x, "toggleCls", js.undefined)
     
     @scala.inline
-    def deleteTranslatePoints: Self = this.set("translatePoints", js.undefined)
+    def setTranslatePoints(value: (/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[Double]) => _): Self = StObject.set(x, "translatePoints", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUnmask(value: () => Unit): Self = this.set("unmask", js.Any.fromFunction0(value))
+    def setTranslatePointsUndefined: Self = StObject.set(x, "translatePoints", js.undefined)
     
     @scala.inline
-    def deleteUnmask: Self = this.set("unmask", js.undefined)
+    def setUnmask(value: () => Unit): Self = StObject.set(x, "unmask", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUp(value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => _): Self = this.set("up", js.Any.fromFunction2(value))
+    def setUnmaskUndefined: Self = StObject.set(x, "unmask", js.undefined)
     
     @scala.inline
-    def deleteUp: Self = this.set("up", js.undefined)
+    def setUp(value: (/* simpleSelector */ js.UndefOr[java.lang.String], /* maxDepth */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "up", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setUpdate(value: /* html */ js.UndefOr[java.lang.String] => Unit): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdate(value: /* html */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWrap(value: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean]) => _): Self = this.set("wrap", js.Any.fromFunction2(value))
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
     @scala.inline
-    def deleteWrap: Self = this.set("wrap", js.undefined)
+    def setVISIBILITY(value: Double): Self = StObject.set(x, "VISIBILITY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVISIBILITYUndefined: Self = StObject.set(x, "VISIBILITY", js.undefined)
+    
+    @scala.inline
+    def setWrap(value: (/* config */ js.UndefOr[js.Any], /* domNode */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "wrap", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
   }
 }

@@ -3,6 +3,7 @@ package typings.webgl2
 import typings.std.HTMLElement
 import typings.std.WebGLContextAttributes
 import typings.webgl2.webgl2Strings.`experimental-webgl2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

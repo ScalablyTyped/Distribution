@@ -1,5 +1,6 @@
 package typings.trezorConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object GetPublicKeyParams {
   }
   
   @scala.inline
-  implicit class GetPublicKeyParamsOps[Self <: GetPublicKeyParams] (val x: Self) extends AnyVal {
+  implicit class GetPublicKeyParamsMutableBuilder[Self <: GetPublicKeyParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCoinUndefined: Self = StObject.set(x, "coin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrossChain(value: Boolean): Self = StObject.set(x, "crossChain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setCrossChainUndefined: Self = StObject.set(x, "crossChain", js.undefined)
     
     @scala.inline
-    def setCoin(value: String): Self = this.set("coin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCoin: Self = this.set("coin", js.undefined)
-    
-    @scala.inline
-    def setCrossChain(value: Boolean): Self = this.set("crossChain", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrossChain: Self = this.set("crossChain", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

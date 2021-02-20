@@ -1,11 +1,12 @@
 package typings.codemirror.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchBrackets extends js.Object {
+trait MatchBrackets extends StObject {
   
   /**
     * Only use the character after the start position, never the one before it.
@@ -41,48 +42,36 @@ object MatchBrackets {
   }
   
   @scala.inline
-  implicit class MatchBracketsOps[Self <: MatchBrackets] (val x: Self) extends AnyVal {
+  implicit class MatchBracketsMutableBuilder[Self <: MatchBrackets] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCursor(value: Boolean): Self = StObject.set(x, "afterCursor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterCursorUndefined: Self = StObject.set(x, "afterCursor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxHighlightLineLength(value: Double): Self = StObject.set(x, "maxHighlightLineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterCursor(value: Boolean): Self = this.set("afterCursor", value.asInstanceOf[js.Any])
+    def setMaxHighlightLineLengthUndefined: Self = StObject.set(x, "maxHighlightLineLength", js.undefined)
     
     @scala.inline
-    def deleteAfterCursor: Self = this.set("afterCursor", js.undefined)
+    def setMaxScanLineLength(value: Double): Self = StObject.set(x, "maxScanLineLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHighlightLineLength(value: Double): Self = this.set("maxHighlightLineLength", value.asInstanceOf[js.Any])
+    def setMaxScanLineLengthUndefined: Self = StObject.set(x, "maxScanLineLength", js.undefined)
     
     @scala.inline
-    def deleteMaxHighlightLineLength: Self = this.set("maxHighlightLineLength", js.undefined)
+    def setMaxScanLines(value: Double): Self = StObject.set(x, "maxScanLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScanLineLength(value: Double): Self = this.set("maxScanLineLength", value.asInstanceOf[js.Any])
+    def setMaxScanLinesUndefined: Self = StObject.set(x, "maxScanLines", js.undefined)
     
     @scala.inline
-    def deleteMaxScanLineLength: Self = this.set("maxScanLineLength", js.undefined)
+    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxScanLines(value: Double): Self = this.set("maxScanLines", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxScanLines: Self = this.set("maxScanLines", js.undefined)
-    
-    @scala.inline
-    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrict: Self = this.set("strict", js.undefined)
+    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

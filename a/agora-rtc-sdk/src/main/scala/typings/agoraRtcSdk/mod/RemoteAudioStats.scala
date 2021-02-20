@@ -1,5 +1,6 @@
 package typings.agoraRtcSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If {@link getRemoteAudioStats} is called successfully, the {@link RemoteAudioStatsMap} interface provides the UID and {@link RemoteAudioStats} of each remote user.
   */
 @js.native
-trait RemoteAudioStats extends js.Object {
+trait RemoteAudioStats extends StObject {
   
   /**
     * Decoding type of the received audio.
@@ -66,72 +67,60 @@ object RemoteAudioStats {
   }
   
   @scala.inline
-  implicit class RemoteAudioStatsOps[Self <: RemoteAudioStats] (val x: Self) extends AnyVal {
+  implicit class RemoteAudioStatsMutableBuilder[Self <: RemoteAudioStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodecType(value: String): Self = StObject.set(x, "CodecType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecTypeUndefined: Self = StObject.set(x, "CodecType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnd2EndDelay(value: String): Self = StObject.set(x, "End2EndDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodecType(value: String): Self = this.set("CodecType", value.asInstanceOf[js.Any])
+    def setEnd2EndDelayUndefined: Self = StObject.set(x, "End2EndDelay", js.undefined)
     
     @scala.inline
-    def deleteCodecType: Self = this.set("CodecType", js.undefined)
+    def setMuteState(value: String): Self = StObject.set(x, "MuteState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd2EndDelay(value: String): Self = this.set("End2EndDelay", value.asInstanceOf[js.Any])
+    def setMuteStateUndefined: Self = StObject.set(x, "MuteState", js.undefined)
     
     @scala.inline
-    def deleteEnd2EndDelay: Self = this.set("End2EndDelay", js.undefined)
+    def setPacketLossRate(value: String): Self = StObject.set(x, "PacketLossRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMuteState(value: String): Self = this.set("MuteState", value.asInstanceOf[js.Any])
+    def setPacketLossRateUndefined: Self = StObject.set(x, "PacketLossRate", js.undefined)
     
     @scala.inline
-    def deleteMuteState: Self = this.set("MuteState", js.undefined)
+    def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacketLossRate(value: String): Self = this.set("PacketLossRate", value.asInstanceOf[js.Any])
+    def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
     
     @scala.inline
-    def deletePacketLossRate: Self = this.set("PacketLossRate", js.undefined)
+    def setRecvLevel(value: String): Self = StObject.set(x, "RecvLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecvBitrate(value: String): Self = this.set("RecvBitrate", value.asInstanceOf[js.Any])
+    def setRecvLevelUndefined: Self = StObject.set(x, "RecvLevel", js.undefined)
     
     @scala.inline
-    def deleteRecvBitrate: Self = this.set("RecvBitrate", js.undefined)
+    def setTotalFreezeTime(value: String): Self = StObject.set(x, "TotalFreezeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecvLevel(value: String): Self = this.set("RecvLevel", value.asInstanceOf[js.Any])
+    def setTotalFreezeTimeUndefined: Self = StObject.set(x, "TotalFreezeTime", js.undefined)
     
     @scala.inline
-    def deleteRecvLevel: Self = this.set("RecvLevel", js.undefined)
+    def setTotalPlayDuration(value: String): Self = StObject.set(x, "TotalPlayDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalFreezeTime(value: String): Self = this.set("TotalFreezeTime", value.asInstanceOf[js.Any])
+    def setTotalPlayDurationUndefined: Self = StObject.set(x, "TotalPlayDuration", js.undefined)
     
     @scala.inline
-    def deleteTotalFreezeTime: Self = this.set("TotalFreezeTime", js.undefined)
+    def setTransportDelay(value: String): Self = StObject.set(x, "TransportDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalPlayDuration(value: String): Self = this.set("TotalPlayDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPlayDuration: Self = this.set("TotalPlayDuration", js.undefined)
-    
-    @scala.inline
-    def setTransportDelay(value: String): Self = this.set("TransportDelay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransportDelay: Self = this.set("TransportDelay", js.undefined)
+    def setTransportDelayUndefined: Self = StObject.set(x, "TransportDelay", js.undefined)
   }
 }

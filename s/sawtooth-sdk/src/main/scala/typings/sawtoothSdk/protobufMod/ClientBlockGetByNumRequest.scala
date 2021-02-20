@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,16 +30,18 @@ class ClientBlockGetByNumRequest () extends IClientBlockGetByNumRequest {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest")
-@js.native
-object ClientBlockGetByNumRequest extends js.Object {
+object ClientBlockGetByNumRequest {
   
   /**
     * Creates a new ClientBlockGetByNumRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientBlockGetByNumRequest instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.create")
+  @js.native
   def create(): ClientBlockGetByNumRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.create")
+  @js.native
   def create(properties: IClientBlockGetByNumRequest): ClientBlockGetByNumRequest = js.native
   
   /**
@@ -49,9 +52,17 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.decode")
+  @js.native
   def decode(reader: Reader): ClientBlockGetByNumRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ClientBlockGetByNumRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): ClientBlockGetByNumRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ClientBlockGetByNumRequest = js.native
   
   /**
@@ -61,7 +72,11 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ClientBlockGetByNumRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ClientBlockGetByNumRequest = js.native
   
   /**
@@ -70,7 +85,11 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.encode")
+  @js.native
   def encode(message: IClientBlockGetByNumRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.encode")
+  @js.native
   def encode(message: IClientBlockGetByNumRequest, writer: Writer): Writer = js.native
   
   /**
@@ -79,7 +98,11 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientBlockGetByNumRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientBlockGetByNumRequest, writer: Writer): Writer = js.native
   
   /**
@@ -87,6 +110,8 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @param object Plain object
     * @returns ClientBlockGetByNumRequest
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ClientBlockGetByNumRequest = js.native
   
   /**
@@ -95,7 +120,11 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.toObject")
+  @js.native
   def toObject(message: ClientBlockGetByNumRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.toObject")
+  @js.native
   def toObject(message: ClientBlockGetByNumRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -103,5 +132,7 @@ object ClientBlockGetByNumRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientBlockGetByNumRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

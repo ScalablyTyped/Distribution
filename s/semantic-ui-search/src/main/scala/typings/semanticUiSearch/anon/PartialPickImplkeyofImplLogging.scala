@@ -1,12 +1,13 @@
 package typings.semanticUiSearch.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.ErrorSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.ErrorSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplLogging extends js.Object {
+trait PartialPickImplkeyofImplLogging extends StObject {
   
   var logging: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object PartialPickImplkeyofImplLogging {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplLoggingOps[Self <: PartialPickImplkeyofImplLogging] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplLoggingMutableBuilder[Self <: PartialPickImplkeyofImplLogging] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: String): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: String): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setNoResultsUndefined: Self = StObject.set(x, "noResults", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setNoTemplate(value: String): Self = StObject.set(x, "noTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoResults(value: String): Self = this.set("noResults", value.asInstanceOf[js.Any])
+    def setNoTemplateUndefined: Self = StObject.set(x, "noTemplate", js.undefined)
     
     @scala.inline
-    def deleteNoResults: Self = this.set("noResults", js.undefined)
+    def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoTemplate(value: String): Self = this.set("noTemplate", value.asInstanceOf[js.Any])
+    def setServerErrorUndefined: Self = StObject.set(x, "serverError", js.undefined)
     
     @scala.inline
-    def deleteNoTemplate: Self = this.set("noTemplate", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerError(value: String): Self = this.set("serverError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServerError: Self = this.set("serverError", js.undefined)
-    
-    @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

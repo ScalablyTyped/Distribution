@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.container
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,27 +79,15 @@ object XEnumerableMap {
   }
   
   @scala.inline
-  implicit class XEnumerableMapOps[Self <: XEnumerableMap] (val x: Self) extends AnyVal {
+  implicit class XEnumerableMapMutableBuilder[Self <: XEnumerableMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateElementEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createElementEnumeration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateKeyEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createKeyEnumeration", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateElementEnumeration(value: Boolean => XEnumeration): Self = this.set("createElementEnumeration", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateKeyEnumeration(value: Boolean => XEnumeration): Self = this.set("createKeyEnumeration", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateValueEnumeration(value: Boolean => XEnumeration): Self = this.set("createValueEnumeration", js.Any.fromFunction1(value))
+    def setCreateValueEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createValueEnumeration", js.Any.fromFunction1(value))
   }
 }

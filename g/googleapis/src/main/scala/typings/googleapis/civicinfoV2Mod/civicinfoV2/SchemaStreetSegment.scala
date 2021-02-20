@@ -1,11 +1,12 @@
 package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaStreetSegment extends js.Object {
+trait SchemaStreetSegment extends StObject {
   
   var administrationRegionIds: js.UndefOr[js.Array[String]] = js.native
   
@@ -106,312 +107,300 @@ object SchemaStreetSegment {
   }
   
   @scala.inline
-  implicit class SchemaStreetSegmentOps[Self <: SchemaStreetSegment] (val x: Self) extends AnyVal {
+  implicit class SchemaStreetSegmentMutableBuilder[Self <: SchemaStreetSegment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdministrationRegionIds(value: js.Array[String]): Self = StObject.set(x, "administrationRegionIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdministrationRegionIdsUndefined: Self = StObject.set(x, "administrationRegionIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdministrationRegionIdsVarargs(value: String*): Self = StObject.set(x, "administrationRegionIds", js.Array(value :_*))
     
     @scala.inline
-    def setAdministrationRegionIdsVarargs(value: String*): Self = this.set("administrationRegionIds", js.Array(value :_*))
+    def setBeforeGeocodeId(value: String): Self = StObject.set(x, "beforeGeocodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdministrationRegionIds(value: js.Array[String]): Self = this.set("administrationRegionIds", value.asInstanceOf[js.Any])
+    def setBeforeGeocodeIdUndefined: Self = StObject.set(x, "beforeGeocodeId", js.undefined)
     
     @scala.inline
-    def deleteAdministrationRegionIds: Self = this.set("administrationRegionIds", js.undefined)
+    def setCatalistUniquePrecinctCode(value: String): Self = StObject.set(x, "catalistUniquePrecinctCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeGeocodeId(value: String): Self = this.set("beforeGeocodeId", value.asInstanceOf[js.Any])
+    def setCatalistUniquePrecinctCodeUndefined: Self = StObject.set(x, "catalistUniquePrecinctCode", js.undefined)
     
     @scala.inline
-    def deleteBeforeGeocodeId: Self = this.set("beforeGeocodeId", js.undefined)
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCatalistUniquePrecinctCode(value: String): Self = this.set("catalistUniquePrecinctCode", value.asInstanceOf[js.Any])
+    def setCityCouncilDistrict(value: String): Self = StObject.set(x, "cityCouncilDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCatalistUniquePrecinctCode: Self = this.set("catalistUniquePrecinctCode", js.undefined)
+    def setCityCouncilDistrictUndefined: Self = StObject.set(x, "cityCouncilDistrict", js.undefined)
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
     @scala.inline
-    def deleteCity: Self = this.set("city", js.undefined)
+    def setCongressionalDistrict(value: String): Self = StObject.set(x, "congressionalDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityCouncilDistrict(value: String): Self = this.set("cityCouncilDistrict", value.asInstanceOf[js.Any])
+    def setCongressionalDistrictUndefined: Self = StObject.set(x, "congressionalDistrict", js.undefined)
     
     @scala.inline
-    def deleteCityCouncilDistrict: Self = this.set("cityCouncilDistrict", js.undefined)
+    def setContestIds(value: js.Array[String]): Self = StObject.set(x, "contestIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCongressionalDistrict(value: String): Self = this.set("congressionalDistrict", value.asInstanceOf[js.Any])
+    def setContestIdsUndefined: Self = StObject.set(x, "contestIds", js.undefined)
     
     @scala.inline
-    def deleteCongressionalDistrict: Self = this.set("congressionalDistrict", js.undefined)
+    def setContestIdsVarargs(value: String*): Self = StObject.set(x, "contestIds", js.Array(value :_*))
     
     @scala.inline
-    def setContestIdsVarargs(value: String*): Self = this.set("contestIds", js.Array(value :_*))
+    def setCountyCouncilDistrict(value: String): Self = StObject.set(x, "countyCouncilDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContestIds(value: js.Array[String]): Self = this.set("contestIds", value.asInstanceOf[js.Any])
+    def setCountyCouncilDistrictUndefined: Self = StObject.set(x, "countyCouncilDistrict", js.undefined)
     
     @scala.inline
-    def deleteContestIds: Self = this.set("contestIds", js.undefined)
+    def setCountyFips(value: String): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountyCouncilDistrict(value: String): Self = this.set("countyCouncilDistrict", value.asInstanceOf[js.Any])
+    def setCountyFipsUndefined: Self = StObject.set(x, "countyFips", js.undefined)
     
     @scala.inline
-    def deleteCountyCouncilDistrict: Self = this.set("countyCouncilDistrict", js.undefined)
+    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCountyFips(value: String): Self = this.set("countyFips", value.asInstanceOf[js.Any])
+    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     @scala.inline
-    def deleteCountyFips: Self = this.set("countyFips", js.undefined)
+    def setEarlyVoteSiteByIds(value: js.Array[String]): Self = StObject.set(x, "earlyVoteSiteByIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    def setEarlyVoteSiteByIdsUndefined: Self = StObject.set(x, "earlyVoteSiteByIds", js.undefined)
     
     @scala.inline
-    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    def setEarlyVoteSiteByIdsVarargs(value: String*): Self = StObject.set(x, "earlyVoteSiteByIds", js.Array(value :_*))
     
     @scala.inline
-    def setEarlyVoteSiteByIdsVarargs(value: String*): Self = this.set("earlyVoteSiteByIds", js.Array(value :_*))
+    def setEndHouseNumber(value: String): Self = StObject.set(x, "endHouseNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEarlyVoteSiteByIds(value: js.Array[String]): Self = this.set("earlyVoteSiteByIds", value.asInstanceOf[js.Any])
+    def setEndHouseNumberUndefined: Self = StObject.set(x, "endHouseNumber", js.undefined)
     
     @scala.inline
-    def deleteEarlyVoteSiteByIds: Self = this.set("earlyVoteSiteByIds", js.undefined)
+    def setGeocodedPoint(value: SchemaPointProto): Self = StObject.set(x, "geocodedPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndHouseNumber(value: String): Self = this.set("endHouseNumber", value.asInstanceOf[js.Any])
+    def setGeocodedPointUndefined: Self = StObject.set(x, "geocodedPoint", js.undefined)
     
     @scala.inline
-    def deleteEndHouseNumber: Self = this.set("endHouseNumber", js.undefined)
+    def setGeographicDivisionOcdIds(value: js.Array[String]): Self = StObject.set(x, "geographicDivisionOcdIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocodedPoint(value: SchemaPointProto): Self = this.set("geocodedPoint", value.asInstanceOf[js.Any])
+    def setGeographicDivisionOcdIdsUndefined: Self = StObject.set(x, "geographicDivisionOcdIds", js.undefined)
     
     @scala.inline
-    def deleteGeocodedPoint: Self = this.set("geocodedPoint", js.undefined)
+    def setGeographicDivisionOcdIdsVarargs(value: String*): Self = StObject.set(x, "geographicDivisionOcdIds", js.Array(value :_*))
     
     @scala.inline
-    def setGeographicDivisionOcdIdsVarargs(value: String*): Self = this.set("geographicDivisionOcdIds", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeographicDivisionOcdIds(value: js.Array[String]): Self = this.set("geographicDivisionOcdIds", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteGeographicDivisionOcdIds: Self = this.set("geographicDivisionOcdIds", js.undefined)
+    def setJudicialDistrict(value: String): Self = StObject.set(x, "judicialDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setJudicialDistrictUndefined: Self = StObject.set(x, "judicialDistrict", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setMailOnly(value: Boolean): Self = StObject.set(x, "mailOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJudicialDistrict(value: String): Self = this.set("judicialDistrict", value.asInstanceOf[js.Any])
+    def setMailOnlyUndefined: Self = StObject.set(x, "mailOnly", js.undefined)
     
     @scala.inline
-    def deleteJudicialDistrict: Self = this.set("judicialDistrict", js.undefined)
+    def setMunicipalDistrict(value: String): Self = StObject.set(x, "municipalDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailOnly(value: Boolean): Self = this.set("mailOnly", value.asInstanceOf[js.Any])
+    def setMunicipalDistrictUndefined: Self = StObject.set(x, "municipalDistrict", js.undefined)
     
     @scala.inline
-    def deleteMailOnly: Self = this.set("mailOnly", js.undefined)
+    def setNcoaAddress(value: String): Self = StObject.set(x, "ncoaAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMunicipalDistrict(value: String): Self = this.set("municipalDistrict", value.asInstanceOf[js.Any])
+    def setNcoaAddressUndefined: Self = StObject.set(x, "ncoaAddress", js.undefined)
     
     @scala.inline
-    def deleteMunicipalDistrict: Self = this.set("municipalDistrict", js.undefined)
+    def setOddOrEvens(value: js.Array[String]): Self = StObject.set(x, "oddOrEvens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNcoaAddress(value: String): Self = this.set("ncoaAddress", value.asInstanceOf[js.Any])
+    def setOddOrEvensUndefined: Self = StObject.set(x, "oddOrEvens", js.undefined)
     
     @scala.inline
-    def deleteNcoaAddress: Self = this.set("ncoaAddress", js.undefined)
+    def setOddOrEvensVarargs(value: String*): Self = StObject.set(x, "oddOrEvens", js.Array(value :_*))
     
     @scala.inline
-    def setOddOrEvensVarargs(value: String*): Self = this.set("oddOrEvens", js.Array(value :_*))
+    def setOriginalId(value: String): Self = StObject.set(x, "originalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOddOrEvens(value: js.Array[String]): Self = this.set("oddOrEvens", value.asInstanceOf[js.Any])
+    def setOriginalIdUndefined: Self = StObject.set(x, "originalId", js.undefined)
     
     @scala.inline
-    def deleteOddOrEvens: Self = this.set("oddOrEvens", js.undefined)
+    def setPollinglocationByIds(value: js.Array[String]): Self = StObject.set(x, "pollinglocationByIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalId(value: String): Self = this.set("originalId", value.asInstanceOf[js.Any])
+    def setPollinglocationByIdsUndefined: Self = StObject.set(x, "pollinglocationByIds", js.undefined)
     
     @scala.inline
-    def deleteOriginalId: Self = this.set("originalId", js.undefined)
+    def setPollinglocationByIdsVarargs(value: String*): Self = StObject.set(x, "pollinglocationByIds", js.Array(value :_*))
     
     @scala.inline
-    def setPollinglocationByIdsVarargs(value: String*): Self = this.set("pollinglocationByIds", js.Array(value :_*))
+    def setPrecinctName(value: String): Self = StObject.set(x, "precinctName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPollinglocationByIds(value: js.Array[String]): Self = this.set("pollinglocationByIds", value.asInstanceOf[js.Any])
+    def setPrecinctNameUndefined: Self = StObject.set(x, "precinctName", js.undefined)
     
     @scala.inline
-    def deletePollinglocationByIds: Self = this.set("pollinglocationByIds", js.undefined)
+    def setPrecinctOcdId(value: String): Self = StObject.set(x, "precinctOcdId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecinctName(value: String): Self = this.set("precinctName", value.asInstanceOf[js.Any])
+    def setPrecinctOcdIdUndefined: Self = StObject.set(x, "precinctOcdId", js.undefined)
     
     @scala.inline
-    def deletePrecinctName: Self = this.set("precinctName", js.undefined)
+    def setProvenances(value: js.Array[SchemaProvenance]): Self = StObject.set(x, "provenances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecinctOcdId(value: String): Self = this.set("precinctOcdId", value.asInstanceOf[js.Any])
+    def setProvenancesUndefined: Self = StObject.set(x, "provenances", js.undefined)
     
     @scala.inline
-    def deletePrecinctOcdId: Self = this.set("precinctOcdId", js.undefined)
+    def setProvenancesVarargs(value: SchemaProvenance*): Self = StObject.set(x, "provenances", js.Array(value :_*))
     
     @scala.inline
-    def setProvenancesVarargs(value: SchemaProvenance*): Self = this.set("provenances", js.Array(value :_*))
+    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvenances(value: js.Array[SchemaProvenance]): Self = this.set("provenances", value.asInstanceOf[js.Any])
+    def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
     
     @scala.inline
-    def deleteProvenances: Self = this.set("provenances", js.undefined)
+    def setSchoolDistrict(value: String): Self = StObject.set(x, "schoolDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublished(value: Boolean): Self = this.set("published", value.asInstanceOf[js.Any])
+    def setSchoolDistrictUndefined: Self = StObject.set(x, "schoolDistrict", js.undefined)
     
     @scala.inline
-    def deletePublished: Self = this.set("published", js.undefined)
+    def setStartHouseNumber(value: String): Self = StObject.set(x, "startHouseNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchoolDistrict(value: String): Self = this.set("schoolDistrict", value.asInstanceOf[js.Any])
+    def setStartHouseNumberUndefined: Self = StObject.set(x, "startHouseNumber", js.undefined)
     
     @scala.inline
-    def deleteSchoolDistrict: Self = this.set("schoolDistrict", js.undefined)
+    def setStartLatE7(value: String): Self = StObject.set(x, "startLatE7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartHouseNumber(value: String): Self = this.set("startHouseNumber", value.asInstanceOf[js.Any])
+    def setStartLatE7Undefined: Self = StObject.set(x, "startLatE7", js.undefined)
     
     @scala.inline
-    def deleteStartHouseNumber: Self = this.set("startHouseNumber", js.undefined)
+    def setStartLngE7(value: String): Self = StObject.set(x, "startLngE7", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLatE7(value: String): Self = this.set("startLatE7", value.asInstanceOf[js.Any])
+    def setStartLngE7Undefined: Self = StObject.set(x, "startLngE7", js.undefined)
     
     @scala.inline
-    def deleteStartLatE7: Self = this.set("startLatE7", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartLngE7(value: String): Self = this.set("startLngE7", value.asInstanceOf[js.Any])
+    def setStateHouseDistrict(value: String): Self = StObject.set(x, "stateHouseDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartLngE7: Self = this.set("startLngE7", js.undefined)
+    def setStateHouseDistrictUndefined: Self = StObject.set(x, "stateHouseDistrict", js.undefined)
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setStateSenateDistrict(value: String): Self = StObject.set(x, "stateSenateDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateSenateDistrictUndefined: Self = StObject.set(x, "stateSenateDistrict", js.undefined)
     
     @scala.inline
-    def setStateHouseDistrict(value: String): Self = this.set("stateHouseDistrict", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteStateHouseDistrict: Self = this.set("stateHouseDistrict", js.undefined)
+    def setStreetName(value: String): Self = StObject.set(x, "streetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateSenateDistrict(value: String): Self = this.set("stateSenateDistrict", value.asInstanceOf[js.Any])
+    def setStreetNameUndefined: Self = StObject.set(x, "streetName", js.undefined)
     
     @scala.inline
-    def deleteStateSenateDistrict: Self = this.set("stateSenateDistrict", js.undefined)
+    def setSubAdministrativeAreaName(value: String): Self = StObject.set(x, "subAdministrativeAreaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStreetName(value: String): Self = this.set("streetName", value.asInstanceOf[js.Any])
+    def setSubAdministrativeAreaNameUndefined: Self = StObject.set(x, "subAdministrativeAreaName", js.undefined)
     
     @scala.inline
-    def deleteStreetName: Self = this.set("streetName", js.undefined)
+    def setSurrogateId(value: String): Self = StObject.set(x, "surrogateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubAdministrativeAreaName(value: String): Self = this.set("subAdministrativeAreaName", value.asInstanceOf[js.Any])
+    def setSurrogateIdUndefined: Self = StObject.set(x, "surrogateId", js.undefined)
     
     @scala.inline
-    def deleteSubAdministrativeAreaName: Self = this.set("subAdministrativeAreaName", js.undefined)
+    def setTargetsmartUniquePrecinctCode(value: String): Self = StObject.set(x, "targetsmartUniquePrecinctCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurrogateId(value: String): Self = this.set("surrogateId", value.asInstanceOf[js.Any])
+    def setTargetsmartUniquePrecinctCodeUndefined: Self = StObject.set(x, "targetsmartUniquePrecinctCode", js.undefined)
     
     @scala.inline
-    def deleteSurrogateId: Self = this.set("surrogateId", js.undefined)
+    def setTownshipDistrict(value: String): Self = StObject.set(x, "townshipDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetsmartUniquePrecinctCode(value: String): Self = this.set("targetsmartUniquePrecinctCode", value.asInstanceOf[js.Any])
+    def setTownshipDistrictUndefined: Self = StObject.set(x, "townshipDistrict", js.undefined)
     
     @scala.inline
-    def deleteTargetsmartUniquePrecinctCode: Self = this.set("targetsmartUniquePrecinctCode", js.undefined)
+    def setUnitNumber(value: String): Self = StObject.set(x, "unitNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTownshipDistrict(value: String): Self = this.set("townshipDistrict", value.asInstanceOf[js.Any])
+    def setUnitNumberUndefined: Self = StObject.set(x, "unitNumber", js.undefined)
     
     @scala.inline
-    def deleteTownshipDistrict: Self = this.set("townshipDistrict", js.undefined)
+    def setUnitType(value: String): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitNumber(value: String): Self = this.set("unitNumber", value.asInstanceOf[js.Any])
+    def setUnitTypeUndefined: Self = StObject.set(x, "unitType", js.undefined)
     
     @scala.inline
-    def deleteUnitNumber: Self = this.set("unitNumber", js.undefined)
+    def setVanPrecinctCode(value: String): Self = StObject.set(x, "vanPrecinctCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitType(value: String): Self = this.set("unitType", value.asInstanceOf[js.Any])
+    def setVanPrecinctCodeUndefined: Self = StObject.set(x, "vanPrecinctCode", js.undefined)
     
     @scala.inline
-    def deleteUnitType: Self = this.set("unitType", js.undefined)
+    def setVoterGeographicDivisionOcdIds(value: js.Array[String]): Self = StObject.set(x, "voterGeographicDivisionOcdIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVanPrecinctCode(value: String): Self = this.set("vanPrecinctCode", value.asInstanceOf[js.Any])
+    def setVoterGeographicDivisionOcdIdsUndefined: Self = StObject.set(x, "voterGeographicDivisionOcdIds", js.undefined)
     
     @scala.inline
-    def deleteVanPrecinctCode: Self = this.set("vanPrecinctCode", js.undefined)
+    def setVoterGeographicDivisionOcdIdsVarargs(value: String*): Self = StObject.set(x, "voterGeographicDivisionOcdIds", js.Array(value :_*))
     
     @scala.inline
-    def setVoterGeographicDivisionOcdIdsVarargs(value: String*): Self = this.set("voterGeographicDivisionOcdIds", js.Array(value :_*))
+    def setWardDistrict(value: String): Self = StObject.set(x, "wardDistrict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVoterGeographicDivisionOcdIds(value: js.Array[String]): Self = this.set("voterGeographicDivisionOcdIds", value.asInstanceOf[js.Any])
+    def setWardDistrictUndefined: Self = StObject.set(x, "wardDistrict", js.undefined)
     
     @scala.inline
-    def deleteVoterGeographicDivisionOcdIds: Self = this.set("voterGeographicDivisionOcdIds", js.undefined)
+    def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWardDistrict(value: String): Self = this.set("wardDistrict", value.asInstanceOf[js.Any])
+    def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
     
     @scala.inline
-    def deleteWardDistrict: Self = this.set("wardDistrict", js.undefined)
+    def setZip(value: String): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWildcard(value: Boolean): Self = this.set("wildcard", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWildcard: Self = this.set("wildcard", js.undefined)
-    
-    @scala.inline
-    def setZip(value: String): Self = this.set("zip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZip: Self = this.set("zip", js.undefined)
+    def setZipUndefined: Self = StObject.set(x, "zip", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyVpcEndpointServiceConfigurationRequest extends js.Object {
+trait ModifyVpcEndpointServiceConfigurationRequest extends StObject {
   
   /**
     * Indicates whether requests to create an endpoint to your service must be accepted.
@@ -61,81 +62,69 @@ object ModifyVpcEndpointServiceConfigurationRequest {
   }
   
   @scala.inline
-  implicit class ModifyVpcEndpointServiceConfigurationRequestOps[Self <: ModifyVpcEndpointServiceConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyVpcEndpointServiceConfigurationRequestMutableBuilder[Self <: ModifyVpcEndpointServiceConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptanceRequiredUndefined: Self = StObject.set(x, "AcceptanceRequired", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddGatewayLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "AddGatewayLoadBalancerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: VpcEndpointServiceId): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
+    def setAddGatewayLoadBalancerArnsUndefined: Self = StObject.set(x, "AddGatewayLoadBalancerArns", js.undefined)
     
     @scala.inline
-    def setAcceptanceRequired(value: Boolean): Self = this.set("AcceptanceRequired", value.asInstanceOf[js.Any])
+    def setAddGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "AddGatewayLoadBalancerArns", js.Array(value :_*))
     
     @scala.inline
-    def deleteAcceptanceRequired: Self = this.set("AcceptanceRequired", js.undefined)
+    def setAddNetworkLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "AddNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddGatewayLoadBalancerArnsVarargs(value: String*): Self = this.set("AddGatewayLoadBalancerArns", js.Array(value :_*))
+    def setAddNetworkLoadBalancerArnsUndefined: Self = StObject.set(x, "AddNetworkLoadBalancerArns", js.undefined)
     
     @scala.inline
-    def setAddGatewayLoadBalancerArns(value: ValueStringList): Self = this.set("AddGatewayLoadBalancerArns", value.asInstanceOf[js.Any])
+    def setAddNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "AddNetworkLoadBalancerArns", js.Array(value :_*))
     
     @scala.inline
-    def deleteAddGatewayLoadBalancerArns: Self = this.set("AddGatewayLoadBalancerArns", js.undefined)
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddNetworkLoadBalancerArnsVarargs(value: String*): Self = this.set("AddNetworkLoadBalancerArns", js.Array(value :_*))
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setAddNetworkLoadBalancerArns(value: ValueStringList): Self = this.set("AddNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
+    def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAddNetworkLoadBalancerArns: Self = this.set("AddNetworkLoadBalancerArns", js.undefined)
+    def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setRemoveGatewayLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "RemoveGatewayLoadBalancerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setRemoveGatewayLoadBalancerArnsUndefined: Self = StObject.set(x, "RemoveGatewayLoadBalancerArns", js.undefined)
     
     @scala.inline
-    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
+    def setRemoveGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "RemoveGatewayLoadBalancerArns", js.Array(value :_*))
     
     @scala.inline
-    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
+    def setRemoveNetworkLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveGatewayLoadBalancerArnsVarargs(value: String*): Self = this.set("RemoveGatewayLoadBalancerArns", js.Array(value :_*))
+    def setRemoveNetworkLoadBalancerArnsUndefined: Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", js.undefined)
     
     @scala.inline
-    def setRemoveGatewayLoadBalancerArns(value: ValueStringList): Self = this.set("RemoveGatewayLoadBalancerArns", value.asInstanceOf[js.Any])
+    def setRemoveNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", js.Array(value :_*))
     
     @scala.inline
-    def deleteRemoveGatewayLoadBalancerArns: Self = this.set("RemoveGatewayLoadBalancerArns", js.undefined)
+    def setRemovePrivateDnsName(value: Boolean): Self = StObject.set(x, "RemovePrivateDnsName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveNetworkLoadBalancerArnsVarargs(value: String*): Self = this.set("RemoveNetworkLoadBalancerArns", js.Array(value :_*))
+    def setRemovePrivateDnsNameUndefined: Self = StObject.set(x, "RemovePrivateDnsName", js.undefined)
     
     @scala.inline
-    def setRemoveNetworkLoadBalancerArns(value: ValueStringList): Self = this.set("RemoveNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveNetworkLoadBalancerArns: Self = this.set("RemoveNetworkLoadBalancerArns", js.undefined)
-    
-    @scala.inline
-    def setRemovePrivateDnsName(value: Boolean): Self = this.set("RemovePrivateDnsName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemovePrivateDnsName: Self = this.set("RemovePrivateDnsName", js.undefined)
+    def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
   }
 }

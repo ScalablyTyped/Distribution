@@ -1,11 +1,12 @@
 package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableDataInsertAllRequest extends js.Object {
+trait TableDataInsertAllRequest extends StObject {
   
   var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
   
@@ -26,51 +27,39 @@ object TableDataInsertAllRequest {
   }
   
   @scala.inline
-  implicit class TableDataInsertAllRequestOps[Self <: TableDataInsertAllRequest] (val x: Self) extends AnyVal {
+  implicit class TableDataInsertAllRequestMutableBuilder[Self <: TableDataInsertAllRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreUnknownValues(value: Boolean): Self = StObject.set(x, "ignoreUnknownValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIgnoreUnknownValuesUndefined: Self = StObject.set(x, "ignoreUnknownValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreUnknownValues(value: Boolean): Self = this.set("ignoreUnknownValues", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIgnoreUnknownValues: Self = this.set("ignoreUnknownValues", js.undefined)
+    def setRows(value: js.Array[TableDataInsertAllRequestRows]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setRowsVarargs(value: TableDataInsertAllRequestRows*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: TableDataInsertAllRequestRows*): Self = this.set("rows", js.Array(value :_*))
+    def setSkipInvalidRows(value: Boolean): Self = StObject.set(x, "skipInvalidRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[TableDataInsertAllRequestRows]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSkipInvalidRowsUndefined: Self = StObject.set(x, "skipInvalidRows", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setTemplateSuffix(value: String): Self = StObject.set(x, "templateSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkipInvalidRows(value: Boolean): Self = this.set("skipInvalidRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipInvalidRows: Self = this.set("skipInvalidRows", js.undefined)
-    
-    @scala.inline
-    def setTemplateSuffix(value: String): Self = this.set("templateSuffix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateSuffix: Self = this.set("templateSuffix", js.undefined)
+    def setTemplateSuffixUndefined: Self = StObject.set(x, "templateSuffix", js.undefined)
   }
 }

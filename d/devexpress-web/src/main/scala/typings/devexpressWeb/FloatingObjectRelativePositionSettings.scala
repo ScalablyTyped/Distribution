@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains relative position settings for floating objects.
   */
 @js.native
-trait FloatingObjectRelativePositionSettings extends js.Object {
+trait FloatingObjectRelativePositionSettings extends StObject {
   
   /**
     * Gets or sets a value specifying to what element the horizontal position of a floating object is relative.
@@ -44,30 +45,18 @@ object FloatingObjectRelativePositionSettings {
   }
   
   @scala.inline
-  implicit class FloatingObjectRelativePositionSettingsOps[Self <: FloatingObjectRelativePositionSettings] (val x: Self) extends AnyVal {
+  implicit class FloatingObjectRelativePositionSettingsMutableBuilder[Self <: FloatingObjectRelativePositionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalRelativePosition(value: Double): Self = StObject.set(x, "horizontalRelativePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = StObject.set(x, "verticalPositionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = this.set("horizontalPositionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontalRelativePosition(value: Double): Self = this.set("horizontalRelativePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = this.set("verticalPositionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalRelativePosition(value: Double): Self = this.set("verticalRelativePosition", value.asInstanceOf[js.Any])
+    def setVerticalRelativePosition(value: Double): Self = StObject.set(x, "verticalRelativePosition", value.asInstanceOf[js.Any])
   }
 }

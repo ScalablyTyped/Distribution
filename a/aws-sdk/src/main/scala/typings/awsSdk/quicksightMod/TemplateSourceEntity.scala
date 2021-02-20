@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateSourceEntity extends js.Object {
+trait TemplateSourceEntity extends StObject {
   
   /**
     * The source analysis, if it is based on an analysis.
@@ -26,30 +27,18 @@ object TemplateSourceEntity {
   }
   
   @scala.inline
-  implicit class TemplateSourceEntityOps[Self <: TemplateSourceEntity] (val x: Self) extends AnyVal {
+  implicit class TemplateSourceEntityMutableBuilder[Self <: TemplateSourceEntity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSourceAnalysis(value: TemplateSourceAnalysis): Self = StObject.set(x, "SourceAnalysis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceAnalysisUndefined: Self = StObject.set(x, "SourceAnalysis", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSourceTemplate(value: TemplateSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceAnalysis(value: TemplateSourceAnalysis): Self = this.set("SourceAnalysis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceAnalysis: Self = this.set("SourceAnalysis", js.undefined)
-    
-    @scala.inline
-    def setSourceTemplate(value: TemplateSourceTemplate): Self = this.set("SourceTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceTemplate: Self = this.set("SourceTemplate", js.undefined)
+    def setSourceTemplateUndefined: Self = StObject.set(x, "SourceTemplate", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "AdditionalRecipient")
 @js.native
-class AdditionalRecipient () extends js.Object {
+class AdditionalRecipient () extends StObject {
   
   /**
     * The amount of money distributed to the recipient.

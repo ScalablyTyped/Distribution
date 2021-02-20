@@ -8,12 +8,13 @@ import typings.maximMazurokGapiClientAssuredworkloads.anon.ExternalId
 import typings.maximMazurokGapiClientAssuredworkloads.anon.Fields
 import typings.maximMazurokGapiClientAssuredworkloads.anon.Key
 import typings.maximMazurokGapiClientAssuredworkloads.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WorkloadsResource extends js.Object {
+trait WorkloadsResource extends StObject {
   
   /** Creates Assured Workload. */
   def create(request: Callback): Request[GoogleLongrunningOperation] = js.native

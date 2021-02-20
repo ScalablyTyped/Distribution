@@ -1,13 +1,14 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Unfortunately, we have no way of declaring that the component constructor must implement this
 @js.native
-trait StaticLifecycle[P, S] extends js.Object {
+trait StaticLifecycle[P, S] extends StObject {
   
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[P, S]] = js.native
   
@@ -22,30 +23,18 @@ object StaticLifecycle {
   }
   
   @scala.inline
-  implicit class StaticLifecycleOps[Self <: StaticLifecycle[_, _], P, S] (val x: Self with (StaticLifecycle[P, S])) extends AnyVal {
+  implicit class StaticLifecycleMutableBuilder[Self <: StaticLifecycle[_, _], P, S] (val x: Self with (StaticLifecycle[P, S])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetDerivedStateFromError(value: /* error */ js.Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDerivedStateFromErrorUndefined: Self = StObject.set(x, "getDerivedStateFromError", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDerivedStateFromProps(value: (P, S) => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromProps", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetDerivedStateFromError(value: /* error */ js.Any => Partial[S] | Null): Self = this.set("getDerivedStateFromError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteGetDerivedStateFromError: Self = this.set("getDerivedStateFromError", js.undefined)
-    
-    @scala.inline
-    def setGetDerivedStateFromProps(value: (P, S) => Partial[S] | Null): Self = this.set("getDerivedStateFromProps", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteGetDerivedStateFromProps: Self = this.set("getDerivedStateFromProps", js.undefined)
+    def setGetDerivedStateFromPropsUndefined: Self = StObject.set(x, "getDerivedStateFromProps", js.undefined)
   }
 }

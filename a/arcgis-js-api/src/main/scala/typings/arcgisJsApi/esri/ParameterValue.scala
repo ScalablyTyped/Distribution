@@ -13,6 +13,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.double
 import typings.arcgisJsApi.arcgisJsApiStrings.field
 import typings.arcgisJsApi.arcgisJsApiStrings.long
 import typings.arcgisJsApi.arcgisJsApiStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

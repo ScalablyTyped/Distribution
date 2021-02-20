@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeWorkspaceBundlesRequest extends js.Object {
+trait DescribeWorkspaceBundlesRequest extends StObject {
   
   /**
     * The identifiers of the bundles. You cannot combine this parameter with any other filter.
@@ -31,39 +32,27 @@ object DescribeWorkspaceBundlesRequest {
   }
   
   @scala.inline
-  implicit class DescribeWorkspaceBundlesRequestOps[Self <: DescribeWorkspaceBundlesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeWorkspaceBundlesRequestMutableBuilder[Self <: DescribeWorkspaceBundlesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBundleIds(value: BundleIdList): Self = StObject.set(x, "BundleIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBundleIdsUndefined: Self = StObject.set(x, "BundleIds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value :_*))
     
     @scala.inline
-    def setBundleIdsVarargs(value: BundleId*): Self = this.set("BundleIds", js.Array(value :_*))
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBundleIds(value: BundleIdList): Self = this.set("BundleIds", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteBundleIds: Self = this.set("BundleIds", js.undefined)
+    def setOwner(value: BundleOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: BundleOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("Owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
   }
 }

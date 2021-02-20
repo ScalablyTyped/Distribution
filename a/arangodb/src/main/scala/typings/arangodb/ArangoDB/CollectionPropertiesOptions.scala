@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionPropertiesOptions extends js.Object {
+trait CollectionPropertiesOptions extends StObject {
   
   var indexBuckets: js.UndefOr[Double] = js.native
   
@@ -24,42 +25,30 @@ object CollectionPropertiesOptions {
   }
   
   @scala.inline
-  implicit class CollectionPropertiesOptionsOps[Self <: CollectionPropertiesOptions] (val x: Self) extends AnyVal {
+  implicit class CollectionPropertiesOptionsMutableBuilder[Self <: CollectionPropertiesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIndexBuckets(value: Double): Self = StObject.set(x, "indexBuckets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIndexBucketsUndefined: Self = StObject.set(x, "indexBuckets", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexBuckets(value: Double): Self = this.set("indexBuckets", value.asInstanceOf[js.Any])
+    def setJournalSizeUndefined: Self = StObject.set(x, "journalSize", js.undefined)
     
     @scala.inline
-    def deleteIndexBuckets: Self = this.set("indexBuckets", js.undefined)
+    def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJournalSize(value: Double): Self = this.set("journalSize", value.asInstanceOf[js.Any])
+    def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
     
     @scala.inline
-    def deleteJournalSize: Self = this.set("journalSize", js.undefined)
+    def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplicationFactor(value: Double): Self = this.set("replicationFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationFactor: Self = this.set("replicationFactor", js.undefined)
-    
-    @scala.inline
-    def setWaitForSync(value: Boolean): Self = this.set("waitForSync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitForSync: Self = this.set("waitForSync", js.undefined)
+    def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
   }
 }

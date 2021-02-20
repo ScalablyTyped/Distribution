@@ -1,11 +1,12 @@
 package typings.googleapis.youtubeV3Mod.youtubeV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaSponsorSnippet extends js.Object {
+trait SchemaSponsorSnippet extends StObject {
   
   /**
     * The id of the channel being sponsored.
@@ -37,42 +38,30 @@ object SchemaSponsorSnippet {
   }
   
   @scala.inline
-  implicit class SchemaSponsorSnippetOps[Self <: SchemaSponsorSnippet] (val x: Self) extends AnyVal {
+  implicit class SchemaSponsorSnippetMutableBuilder[Self <: SchemaSponsorSnippet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCumulativeDurationMonths(value: Double): Self = StObject.set(x, "cumulativeDurationMonths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    def setCumulativeDurationMonthsUndefined: Self = StObject.set(x, "cumulativeDurationMonths", js.undefined)
     
     @scala.inline
-    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    def setSponsorDetails(value: SchemaChannelProfileDetails): Self = StObject.set(x, "sponsorDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulativeDurationMonths(value: Double): Self = this.set("cumulativeDurationMonths", value.asInstanceOf[js.Any])
+    def setSponsorDetailsUndefined: Self = StObject.set(x, "sponsorDetails", js.undefined)
     
     @scala.inline
-    def deleteCumulativeDurationMonths: Self = this.set("cumulativeDurationMonths", js.undefined)
+    def setSponsorSince(value: String): Self = StObject.set(x, "sponsorSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSponsorDetails(value: SchemaChannelProfileDetails): Self = this.set("sponsorDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsorDetails: Self = this.set("sponsorDetails", js.undefined)
-    
-    @scala.inline
-    def setSponsorSince(value: String): Self = this.set("sponsorSince", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSponsorSince: Self = this.set("sponsorSince", js.undefined)
+    def setSponsorSinceUndefined: Self = StObject.set(x, "sponsorSince", js.undefined)
   }
 }

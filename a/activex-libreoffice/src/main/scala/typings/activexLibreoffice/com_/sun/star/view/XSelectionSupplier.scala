@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.view
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,33 +47,21 @@ object XSelectionSupplier {
   }
   
   @scala.inline
-  implicit class XSelectionSupplierOps[Self <: XSelectionSupplier] (val x: Self) extends AnyVal {
+  implicit class XSelectionSupplierMutableBuilder[Self <: XSelectionSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetSelection(value: () => js.Any): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemoveSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "removeSelectionChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelection(value: js.Any): Self = this.set("Selection", value.asInstanceOf[js.Any])
+    def setSelect(value: js.Any => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = this.set("addSelectionChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSelection(value: () => js.Any): Self = this.set("getSelection", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = this.set("removeSelectionChangeListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelect(value: js.Any => Boolean): Self = this.set("select", js.Any.fromFunction1(value))
+    def setSelection(value: js.Any): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

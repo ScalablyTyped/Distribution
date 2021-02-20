@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridRowProps extends js.Object {
+trait GridRowProps extends StObject {
   
   val gridRow: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object GridRowProps {
   }
   
   @scala.inline
-  implicit class GridRowPropsOps[Self <: GridRowProps] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGridRowVarargs(value: js.Any*): Self = this.set("gridRow", js.Array(value :_*))
+  implicit class GridRowPropsMutableBuilder[Self <: GridRowProps] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setGridRow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridRow */ _
         ]
-    ): Self = this.set("gridRow", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGridRow: Self = this.set("gridRow", js.undefined)
+    def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+    
+    @scala.inline
+    def setGridRowVarargs(value: js.Any*): Self = StObject.set(x, "gridRow", js.Array(value :_*))
   }
 }

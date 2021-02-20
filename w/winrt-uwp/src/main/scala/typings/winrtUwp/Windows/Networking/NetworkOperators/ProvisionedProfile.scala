@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import typings.winrtUwp.Windows.Networking.Connectivity.NetworkCostType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Updates cost and usage information for a mobile broadband profile. */
 @js.native
-trait ProvisionedProfile extends js.Object {
+trait ProvisionedProfile extends StObject {
   
   /**
     * Called by the application to update the cost for a specific profile.
@@ -30,24 +31,12 @@ object ProvisionedProfile {
   }
   
   @scala.inline
-  implicit class ProvisionedProfileOps[Self <: ProvisionedProfile] (val x: Self) extends AnyVal {
+  implicit class ProvisionedProfileMutableBuilder[Self <: ProvisionedProfile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUpdateCost(value: NetworkCostType => Unit): Self = StObject.set(x, "updateCost", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUpdateCost(value: NetworkCostType => Unit): Self = this.set("updateCost", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateUsage(value: ProfileUsage => Unit): Self = this.set("updateUsage", js.Any.fromFunction1(value))
+    def setUpdateUsage(value: ProfileUsage => Unit): Self = StObject.set(x, "updateUsage", js.Any.fromFunction1(value))
   }
 }

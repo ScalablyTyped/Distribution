@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobObjOutputPayloadAdvanced extends js.Object {
+trait JobObjOutputPayloadAdvanced extends StObject {
   
   var exportFileStructure: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object JobObjOutputPayloadAdvanced {
   }
   
   @scala.inline
-  implicit class JobObjOutputPayloadAdvancedOps[Self <: JobObjOutputPayloadAdvanced] (val x: Self) extends AnyVal {
+  implicit class JobObjOutputPayloadAdvancedMutableBuilder[Self <: JobObjOutputPayloadAdvanced] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExportFileStructure(value: String): Self = StObject.set(x, "exportFileStructure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExportFileStructureUndefined: Self = StObject.set(x, "exportFileStructure", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setModelGuid(value: String): Self = StObject.set(x, "modelGuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportFileStructure(value: String): Self = this.set("exportFileStructure", value.asInstanceOf[js.Any])
+    def setModelGuidUndefined: Self = StObject.set(x, "modelGuid", js.undefined)
     
     @scala.inline
-    def deleteExportFileStructure: Self = this.set("exportFileStructure", js.undefined)
+    def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelGuid(value: String): Self = this.set("modelGuid", value.asInstanceOf[js.Any])
+    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
     @scala.inline
-    def deleteModelGuid: Self = this.set("modelGuid", js.undefined)
-    
-    @scala.inline
-    def setObjectIdsVarargs(value: String*): Self = this.set("objectIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setObjectIds(value: js.Array[String]): Self = this.set("objectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectIds: Self = this.set("objectIds", js.undefined)
+    def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
   }
 }

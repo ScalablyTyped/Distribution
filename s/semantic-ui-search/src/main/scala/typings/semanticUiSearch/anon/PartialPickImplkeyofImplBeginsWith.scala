@@ -1,13 +1,14 @@
 package typings.semanticUiSearch.anon
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.RegExpSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.RegExpSettings._Impl>> */
 @js.native
-trait PartialPickImplkeyofImplBeginsWith extends js.Object {
+trait PartialPickImplkeyofImplBeginsWith extends StObject {
   
   var beginsWith: js.UndefOr[String] = js.native
   
@@ -22,30 +23,18 @@ object PartialPickImplkeyofImplBeginsWith {
   }
   
   @scala.inline
-  implicit class PartialPickImplkeyofImplBeginsWithOps[Self <: PartialPickImplkeyofImplBeginsWith] (val x: Self) extends AnyVal {
+  implicit class PartialPickImplkeyofImplBeginsWithMutableBuilder[Self <: PartialPickImplkeyofImplBeginsWith] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginsWithUndefined: Self = StObject.set(x, "beginsWith", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginsWith(value: String): Self = this.set("beginsWith", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBeginsWith: Self = this.set("beginsWith", js.undefined)
-    
-    @scala.inline
-    def setEscape(value: RegExp): Self = this.set("escape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEscape: Self = this.set("escape", js.undefined)
+    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
   }
 }

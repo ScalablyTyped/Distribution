@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeEmailAddress extends js.Object {
+trait IncludeEmailAddress extends StObject {
   
   var includeEmailAddress: scala.Double = js.native
   
@@ -22,27 +23,15 @@ object IncludeEmailAddress {
   }
   
   @scala.inline
-  implicit class IncludeEmailAddressOps[Self <: IncludeEmailAddress] (val x: Self) extends AnyVal {
+  implicit class IncludeEmailAddressMutableBuilder[Self <: IncludeEmailAddress] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeEmailAddress(value: scala.Double): Self = StObject.set(x, "includeEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeExtensions(value: scala.Double): Self = StObject.set(x, "includeExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncludeEmailAddress(value: scala.Double): Self = this.set("includeEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIncludeExtensions(value: scala.Double): Self = this.set("includeExtensions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

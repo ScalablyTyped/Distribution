@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to watch for changes being made to the DOM tree. It is designed as a replacement for the older Mutation Events feature which was part of the DOM3 Events specification. */
 @js.native
-trait MutationObserver extends js.Object {
+trait MutationObserver extends StObject {
   
   /**
     * Stops observer from observing any mutations. Until the observe() method is used again, observer's callback will not be invoked.

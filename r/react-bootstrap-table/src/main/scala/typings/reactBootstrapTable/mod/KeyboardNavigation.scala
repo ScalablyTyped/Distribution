@@ -1,12 +1,13 @@
 package typings.reactBootstrapTable.mod
 
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyboardNavigation extends js.Object {
+trait KeyboardNavigation extends StObject {
   
   /**
     * Set to false to disable click to navigate, usually user wants to click to select row instead of navigation.
@@ -47,54 +48,42 @@ object KeyboardNavigation {
   }
   
   @scala.inline
-  implicit class KeyboardNavigationOps[Self <: KeyboardNavigation] (val x: Self) extends AnyVal {
+  implicit class KeyboardNavigationMutableBuilder[Self <: KeyboardNavigation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClickToNav(value: Boolean): Self = StObject.set(x, "clickToNav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickToNavUndefined: Self = StObject.set(x, "clickToNav", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomStyle(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyle", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClickToNav(value: Boolean): Self = this.set("clickToNav", value.asInstanceOf[js.Any])
+    def setCustomStyleOnEditCell(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = StObject.set(x, "customStyleOnEditCell", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteClickToNav: Self = this.set("clickToNav", js.undefined)
+    def setCustomStyleOnEditCellUndefined: Self = StObject.set(x, "customStyleOnEditCell", js.undefined)
     
     @scala.inline
-    def setCustomStyle(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = this.set("customStyle", js.Any.fromFunction2(value))
+    def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
     
     @scala.inline
-    def deleteCustomStyle: Self = this.set("customStyle", js.undefined)
+    def setEnterToEdit(value: Boolean): Self = StObject.set(x, "enterToEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomStyleOnEditCell(value: (/* cell */ js.Any, /* row */ js.Any) => CSSProperties): Self = this.set("customStyleOnEditCell", js.Any.fromFunction2(value))
+    def setEnterToEditUndefined: Self = StObject.set(x, "enterToEdit", js.undefined)
     
     @scala.inline
-    def deleteCustomStyleOnEditCell: Self = this.set("customStyleOnEditCell", js.undefined)
+    def setEnterToExpand(value: Boolean): Self = StObject.set(x, "enterToExpand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterToEdit(value: Boolean): Self = this.set("enterToEdit", value.asInstanceOf[js.Any])
+    def setEnterToExpandUndefined: Self = StObject.set(x, "enterToExpand", js.undefined)
     
     @scala.inline
-    def deleteEnterToEdit: Self = this.set("enterToEdit", js.undefined)
+    def setEnterToSelect(value: Boolean): Self = StObject.set(x, "enterToSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterToExpand(value: Boolean): Self = this.set("enterToExpand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnterToExpand: Self = this.set("enterToExpand", js.undefined)
-    
-    @scala.inline
-    def setEnterToSelect(value: Boolean): Self = this.set("enterToSelect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnterToSelect: Self = this.set("enterToSelect", js.undefined)
+    def setEnterToSelectUndefined: Self = StObject.set(x, "enterToSelect", js.undefined)
   }
 }

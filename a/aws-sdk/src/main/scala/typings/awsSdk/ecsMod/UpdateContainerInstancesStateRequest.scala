@@ -1,11 +1,12 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateContainerInstancesStateRequest extends js.Object {
+trait UpdateContainerInstancesStateRequest extends StObject {
   
   /**
     * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instance to update. If you do not specify a cluster, the default cluster is assumed.
@@ -31,33 +32,21 @@ object UpdateContainerInstancesStateRequest {
   }
   
   @scala.inline
-  implicit class UpdateContainerInstancesStateRequestOps[Self <: UpdateContainerInstancesStateRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateContainerInstancesStateRequestMutableBuilder[Self <: UpdateContainerInstancesStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainerInstancesVarargs(value: String*): Self = this.set("containerInstances", js.Array(value :_*))
+    def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
     
     @scala.inline
-    def setContainerInstances(value: StringList): Self = this.set("containerInstances", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: ContainerInstanceStatus): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setStatus(value: ContainerInstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

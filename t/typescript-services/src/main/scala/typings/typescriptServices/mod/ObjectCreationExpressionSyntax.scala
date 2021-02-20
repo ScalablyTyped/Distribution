@@ -2,6 +2,7 @@ package typings.typescriptServices.mod
 
 import typings.typescriptServices.TypeScript.IMemberExpressionSyntax
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,12 +18,15 @@ class ObjectCreationExpressionSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "ObjectCreationExpressionSyntax")
-@js.native
-object ObjectCreationExpressionSyntax extends js.Object {
+object ObjectCreationExpressionSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "ObjectCreationExpressionSyntax.create")
+  @js.native
   def create(newKeyword: ISyntaxToken, expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "ObjectCreationExpressionSyntax.create1")
+  @js.native
   def create1(expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax = js.native
 }

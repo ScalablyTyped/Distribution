@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response message for listing proposals.
   */
 @js.native
-trait SchemaListProposalsResponse extends js.Object {
+trait SchemaListProposalsResponse extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
@@ -29,33 +30,21 @@ object SchemaListProposalsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListProposalsResponseOps[Self <: SchemaListProposalsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListProposalsResponseMutableBuilder[Self <: SchemaListProposalsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProposals(value: js.Array[SchemaProposal]): Self = StObject.set(x, "proposals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setProposalsUndefined: Self = StObject.set(x, "proposals", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setProposalsVarargs(value: SchemaProposal*): Self = this.set("proposals", js.Array(value :_*))
-    
-    @scala.inline
-    def setProposals(value: js.Array[SchemaProposal]): Self = this.set("proposals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProposals: Self = this.set("proposals", js.undefined)
+    def setProposalsVarargs(value: SchemaProposal*): Self = StObject.set(x, "proposals", js.Array(value :_*))
   }
 }

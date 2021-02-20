@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFMetadataStructureItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExportStructureItem extends js.Object {
+trait IExportStructureItem extends StObject {
   
   def Clone(): IExportStructureItem = js.native
   
@@ -30,30 +31,18 @@ object IExportStructureItem {
   }
   
   @scala.inline
-  implicit class IExportStructureItemOps[Self <: IExportStructureItem] (val x: Self) extends AnyVal {
+  implicit class IExportStructureItemMutableBuilder[Self <: IExportStructureItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IExportStructureItem): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStructureItemGUID(value: String): Self = StObject.set(x, "StructureItemGUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStructureItemID(value: Double): Self = StObject.set(x, "StructureItemID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IExportStructureItem): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStructureItemGUID(value: String): Self = this.set("StructureItemGUID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureItemID(value: Double): Self = this.set("StructureItemID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructureItemType(value: MFMetadataStructureItem): Self = this.set("StructureItemType", value.asInstanceOf[js.Any])
+    def setStructureItemType(value: MFMetadataStructureItem): Self = StObject.set(x, "StructureItemType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.twilioVideo.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncodingParameters extends js.Object {
+trait EncodingParameters extends StObject {
   
   var maxAudioBitrate: js.UndefOr[Double | Null] = js.native
   
@@ -20,36 +21,24 @@ object EncodingParameters {
   }
   
   @scala.inline
-  implicit class EncodingParametersOps[Self <: EncodingParameters] (val x: Self) extends AnyVal {
+  implicit class EncodingParametersMutableBuilder[Self <: EncodingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxAudioBitrate(value: Double): Self = StObject.set(x, "maxAudioBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxAudioBitrateNull: Self = StObject.set(x, "maxAudioBitrate", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxAudioBitrateUndefined: Self = StObject.set(x, "maxAudioBitrate", js.undefined)
     
     @scala.inline
-    def setMaxAudioBitrate(value: Double): Self = this.set("maxAudioBitrate", value.asInstanceOf[js.Any])
+    def setMaxVideoBitrate(value: Double): Self = StObject.set(x, "maxVideoBitrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaxAudioBitrate: Self = this.set("maxAudioBitrate", js.undefined)
+    def setMaxVideoBitrateNull: Self = StObject.set(x, "maxVideoBitrate", null)
     
     @scala.inline
-    def setMaxAudioBitrateNull: Self = this.set("maxAudioBitrate", null)
-    
-    @scala.inline
-    def setMaxVideoBitrate(value: Double): Self = this.set("maxVideoBitrate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxVideoBitrate: Self = this.set("maxVideoBitrate", js.undefined)
-    
-    @scala.inline
-    def setMaxVideoBitrateNull: Self = this.set("maxVideoBitrate", null)
+    def setMaxVideoBitrateUndefined: Self = StObject.set(x, "maxVideoBitrate", js.undefined)
   }
 }

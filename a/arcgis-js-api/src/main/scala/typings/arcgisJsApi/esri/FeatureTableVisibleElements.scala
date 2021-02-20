@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,36 +44,24 @@ object FeatureTableVisibleElements {
   }
   
   @scala.inline
-  implicit class FeatureTableVisibleElementsOps[Self <: FeatureTableVisibleElements] (val x: Self) extends AnyVal {
+  implicit class FeatureTableVisibleElementsMutableBuilder[Self <: FeatureTableVisibleElements] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: Boolean): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setMenuItems(value: VisibleElementsMenuItems): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     
     @scala.inline
-    def setMenu(value: Boolean): Self = this.set("menu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenu: Self = this.set("menu", js.undefined)
-    
-    @scala.inline
-    def setMenuItems(value: VisibleElementsMenuItems): Self = this.set("menuItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMenuItems: Self = this.set("menuItems", js.undefined)
+    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
   }
 }

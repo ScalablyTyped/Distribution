@@ -1,5 +1,6 @@
 package typings.stremioAddonSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stremioAddonSdk.stremioAddonSdkStrings.channel
   - typings.stremioAddonSdk.stremioAddonSdkStrings.tv
 */
-trait ContentType extends js.Object
+trait ContentType extends StObject
 object ContentType {
   
   @scala.inline

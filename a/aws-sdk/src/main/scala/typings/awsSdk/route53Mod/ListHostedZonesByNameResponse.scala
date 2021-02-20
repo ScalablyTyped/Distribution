@@ -1,11 +1,12 @@
 package typings.awsSdk.route53Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListHostedZonesByNameResponse extends js.Object {
+trait ListHostedZonesByNameResponse extends StObject {
   
   /**
     * For the second and subsequent calls to ListHostedZonesByName, DNSName is the value that you specified for the dnsname parameter in the request that produced the current response.
@@ -51,54 +52,42 @@ object ListHostedZonesByNameResponse {
   }
   
   @scala.inline
-  implicit class ListHostedZonesByNameResponseOps[Self <: ListHostedZonesByNameResponse] (val x: Self) extends AnyVal {
+  implicit class ListHostedZonesByNameResponseMutableBuilder[Self <: ListHostedZonesByNameResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZonesVarargs(value: HostedZone*): Self = this.set("HostedZones", js.Array(value :_*))
+    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
     
     @scala.inline
-    def setHostedZones(value: HostedZones): Self = this.set("HostedZones", value.asInstanceOf[js.Any])
+    def setHostedZones(value: HostedZones): Self = StObject.set(x, "HostedZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    def setHostedZonesVarargs(value: HostedZone*): Self = StObject.set(x, "HostedZones", js.Array(value :_*))
     
     @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDNSName(value: DNSName): Self = this.set("DNSName", value.asInstanceOf[js.Any])
+    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDNSName: Self = this.set("DNSName", js.undefined)
+    def setNextDNSName(value: DNSName): Self = StObject.set(x, "NextDNSName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    def setNextDNSNameUndefined: Self = StObject.set(x, "NextDNSName", js.undefined)
     
     @scala.inline
-    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    def setNextHostedZoneId(value: ResourceId): Self = StObject.set(x, "NextHostedZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextDNSName(value: DNSName): Self = this.set("NextDNSName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextDNSName: Self = this.set("NextDNSName", js.undefined)
-    
-    @scala.inline
-    def setNextHostedZoneId(value: ResourceId): Self = this.set("NextHostedZoneId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextHostedZoneId: Self = this.set("NextHostedZoneId", js.undefined)
+    def setNextHostedZoneIdUndefined: Self = StObject.set(x, "NextHostedZoneId", js.undefined)
   }
 }

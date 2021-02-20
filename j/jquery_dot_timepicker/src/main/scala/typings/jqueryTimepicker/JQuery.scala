@@ -5,12 +5,13 @@ import typings.jqueryTimepicker.jqueryTimepickerStrings.getMinute
 import typings.jqueryTimepicker.jqueryTimepickerStrings.getTime
 import typings.jqueryTimepicker.jqueryTimepickerStrings.getTimeAsDate
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def timepicker(): JQuery = js.native
   def timepicker(methodName: String): js.Any = js.native

@@ -1,19 +1,25 @@
 package typings.screeps.global
 
-import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MINERAL_DENSITY")
-@js.native
-object MINERAL_DENSITY extends /* rcl */ NumberDictionary[Double] {
+object MINERAL_DENSITY {
   
-  var `1`: Double = js.native
+  @JSGlobal("MINERAL_DENSITY.1")
+  @js.native
+  val `1`: Double = js.native
   
-  var `2`: Double = js.native
+  @JSGlobal("MINERAL_DENSITY.2")
+  @js.native
+  val `2`: Double = js.native
   
-  var `3`: Double = js.native
+  @JSGlobal("MINERAL_DENSITY.3")
+  @js.native
+  val `3`: Double = js.native
   
-  var `4`: Double = js.native
+  @JSGlobal("MINERAL_DENSITY.4")
+  @js.native
+  val `4`: Double = js.native
 }

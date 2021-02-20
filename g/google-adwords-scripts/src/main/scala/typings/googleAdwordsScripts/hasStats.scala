@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait hasStats extends js.Object {
+trait hasStats extends StObject {
   
   def getStatsFor(dateFrom: String, dateTo: String): AdWordsStats = js.native
   def getStatsFor(dateFrom: String, dateTo: AdWordsDate): AdWordsStats = js.native

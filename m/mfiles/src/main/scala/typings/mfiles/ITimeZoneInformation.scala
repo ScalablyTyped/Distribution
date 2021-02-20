@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITimeZoneInformation extends js.Object {
+trait ITimeZoneInformation extends StObject {
   
   def LoadTimeZoneByName(TimeZoneName: String): Unit = js.native
   
@@ -22,27 +23,15 @@ object ITimeZoneInformation {
   }
   
   @scala.inline
-  implicit class ITimeZoneInformationOps[Self <: ITimeZoneInformation] (val x: Self) extends AnyVal {
+  implicit class ITimeZoneInformationMutableBuilder[Self <: ITimeZoneInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLoadTimeZoneByName(value: String => Unit): Self = StObject.set(x, "LoadTimeZoneByName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLoadWithCurrentTimeZone(value: () => Unit): Self = StObject.set(x, "LoadWithCurrentTimeZone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLoadTimeZoneByName(value: String => Unit): Self = this.set("LoadTimeZoneByName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadWithCurrentTimeZone(value: () => Unit): Self = this.set("LoadWithCurrentTimeZone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStandardName(value: String): Self = this.set("StandardName", value.asInstanceOf[js.Any])
+    def setStandardName(value: String): Self = StObject.set(x, "StandardName", value.asInstanceOf[js.Any])
   }
 }

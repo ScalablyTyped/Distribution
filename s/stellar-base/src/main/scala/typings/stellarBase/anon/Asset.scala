@@ -1,12 +1,13 @@
 package typings.stellarBase.anon
 
 import typings.stellarBase.xdrMod.xdr.AllowTrustOpAsset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Asset extends js.Object {
+trait Asset extends StObject {
   
   var asset: AllowTrustOpAsset = js.native
   
@@ -23,27 +24,15 @@ object Asset {
   }
   
   @scala.inline
-  implicit class AssetOps[Self <: Asset] (val x: Self) extends AnyVal {
+  implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsset(value: AllowTrustOpAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorize(value: Double): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsset(value: AllowTrustOpAsset): Self = this.set("asset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAuthorize(value: Double): Self = this.set("authorize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrustor(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = this.set("trustor", value.asInstanceOf[js.Any])
+    def setTrustor(value: typings.stellarBase.xdrMod.xdr.AccountId): Self = StObject.set(x, "trustor", value.asInstanceOf[js.Any])
   }
 }

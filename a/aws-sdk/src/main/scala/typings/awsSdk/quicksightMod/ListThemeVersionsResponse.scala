@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListThemeVersionsResponse extends js.Object {
+trait ListThemeVersionsResponse extends StObject {
   
   /**
     * The token for the next set of results, or null if there are no more results.
@@ -36,45 +37,33 @@ object ListThemeVersionsResponse {
   }
   
   @scala.inline
-  implicit class ListThemeVersionsResponseOps[Self <: ListThemeVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class ListThemeVersionsResponseMutableBuilder[Self <: ListThemeVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    def setThemeVersionSummaryList(value: ThemeVersionSummaryList): Self = StObject.set(x, "ThemeVersionSummaryList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setThemeVersionSummaryListUndefined: Self = StObject.set(x, "ThemeVersionSummaryList", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setThemeVersionSummaryListVarargs(value: ThemeVersionSummary*): Self = this.set("ThemeVersionSummaryList", js.Array(value :_*))
-    
-    @scala.inline
-    def setThemeVersionSummaryList(value: ThemeVersionSummaryList): Self = this.set("ThemeVersionSummaryList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThemeVersionSummaryList: Self = this.set("ThemeVersionSummaryList", js.undefined)
+    def setThemeVersionSummaryListVarargs(value: ThemeVersionSummary*): Self = StObject.set(x, "ThemeVersionSummaryList", js.Array(value :_*))
   }
 }

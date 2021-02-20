@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFresnelParametersSerialized extends js.Object {
+trait IFresnelParametersSerialized extends StObject {
   
   /**
     * Define bias applied to computed fresnel term
@@ -41,42 +42,30 @@ object IFresnelParametersSerialized {
   }
   
   @scala.inline
-  implicit class IFresnelParametersSerializedOps[Self <: IFresnelParametersSerialized] (val x: Self) extends AnyVal {
+  implicit class IFresnelParametersSerializedMutableBuilder[Self <: IFresnelParametersSerialized] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBias(value: Double): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftColor(value: js.Array[Double]): Self = StObject.set(x, "leftColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBias(value: Double): Self = this.set("bias", value.asInstanceOf[js.Any])
+    def setLeftColorVarargs(value: Double*): Self = StObject.set(x, "leftColor", js.Array(value :_*))
     
     @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftColorVarargs(value: Double*): Self = this.set("leftColor", js.Array(value :_*))
+    def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
     
     @scala.inline
-    def setLeftColor(value: js.Array[Double]): Self = this.set("leftColor", value.asInstanceOf[js.Any])
+    def setRightColor(value: js.Array[Double]): Self = StObject.set(x, "rightColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightColorVarargs(value: Double*): Self = this.set("rightColor", js.Array(value :_*))
-    
-    @scala.inline
-    def setRightColor(value: js.Array[Double]): Self = this.set("rightColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPower(value: Double): Self = this.set("power", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePower: Self = this.set("power", js.undefined)
+    def setRightColorVarargs(value: Double*): Self = StObject.set(x, "rightColor", js.Array(value :_*))
   }
 }

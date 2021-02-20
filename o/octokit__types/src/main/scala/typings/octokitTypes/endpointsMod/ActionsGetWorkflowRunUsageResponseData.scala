@@ -1,12 +1,13 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.MACOS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsGetWorkflowRunUsageResponseData extends js.Object {
+trait ActionsGetWorkflowRunUsageResponseData extends StObject {
   
   var billable: MACOS = js.native
   
@@ -21,24 +22,12 @@ object ActionsGetWorkflowRunUsageResponseData {
   }
   
   @scala.inline
-  implicit class ActionsGetWorkflowRunUsageResponseDataOps[Self <: ActionsGetWorkflowRunUsageResponseData] (val x: Self) extends AnyVal {
+  implicit class ActionsGetWorkflowRunUsageResponseDataMutableBuilder[Self <: ActionsGetWorkflowRunUsageResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillable(value: MACOS): Self = StObject.set(x, "billable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBillable(value: MACOS): Self = this.set("billable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRun_duration_ms(value: Double): Self = this.set("run_duration_ms", value.asInstanceOf[js.Any])
+    def setRun_duration_ms(value: Double): Self = StObject.set(x, "run_duration_ms", value.asInstanceOf[js.Any])
   }
 }

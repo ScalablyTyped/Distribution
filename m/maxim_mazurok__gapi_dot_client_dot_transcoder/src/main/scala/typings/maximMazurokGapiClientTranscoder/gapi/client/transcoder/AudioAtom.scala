@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioAtom extends js.Object {
+trait AudioAtom extends StObject {
   
   /** List of `Channel`s for this audio stream. for in-depth explanation. */
   var channels: js.UndefOr[js.Array[AudioChannel]] = js.native
@@ -22,33 +23,21 @@ object AudioAtom {
   }
   
   @scala.inline
-  implicit class AudioAtomOps[Self <: AudioAtom] (val x: Self) extends AnyVal {
+  implicit class AudioAtomMutableBuilder[Self <: AudioAtom] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannels(value: js.Array[AudioChannel]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelsVarargs(value: AudioChannel*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
     @scala.inline
-    def setChannelsVarargs(value: AudioChannel*): Self = this.set("channels", js.Array(value :_*))
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannels(value: js.Array[AudioChannel]): Self = this.set("channels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChannels: Self = this.set("channels", js.undefined)
-    
-    @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

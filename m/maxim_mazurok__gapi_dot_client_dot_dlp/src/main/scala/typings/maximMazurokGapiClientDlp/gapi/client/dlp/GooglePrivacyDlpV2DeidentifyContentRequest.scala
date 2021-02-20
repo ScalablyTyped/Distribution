@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GooglePrivacyDlpV2DeidentifyContentRequest extends js.Object {
+trait GooglePrivacyDlpV2DeidentifyContentRequest extends StObject {
   
   /** Configuration for the de-identification of the content item. Items specified here will override the template referenced by the deidentify_template_name argument. */
   var deidentifyConfig: js.UndefOr[GooglePrivacyDlpV2DeidentifyConfig] = js.native
@@ -40,54 +41,42 @@ object GooglePrivacyDlpV2DeidentifyContentRequest {
   }
   
   @scala.inline
-  implicit class GooglePrivacyDlpV2DeidentifyContentRequestOps[Self <: GooglePrivacyDlpV2DeidentifyContentRequest] (val x: Self) extends AnyVal {
+  implicit class GooglePrivacyDlpV2DeidentifyContentRequestMutableBuilder[Self <: GooglePrivacyDlpV2DeidentifyContentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeidentifyConfig(value: GooglePrivacyDlpV2DeidentifyConfig): Self = StObject.set(x, "deidentifyConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeidentifyConfigUndefined: Self = StObject.set(x, "deidentifyConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeidentifyTemplateName(value: String): Self = StObject.set(x, "deidentifyTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeidentifyConfig(value: GooglePrivacyDlpV2DeidentifyConfig): Self = this.set("deidentifyConfig", value.asInstanceOf[js.Any])
+    def setDeidentifyTemplateNameUndefined: Self = StObject.set(x, "deidentifyTemplateName", js.undefined)
     
     @scala.inline
-    def deleteDeidentifyConfig: Self = this.set("deidentifyConfig", js.undefined)
+    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeidentifyTemplateName(value: String): Self = this.set("deidentifyTemplateName", value.asInstanceOf[js.Any])
+    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
     @scala.inline
-    def deleteDeidentifyTemplateName: Self = this.set("deidentifyTemplateName", js.undefined)
+    def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectConfig(value: GooglePrivacyDlpV2InspectConfig): Self = this.set("inspectConfig", value.asInstanceOf[js.Any])
+    def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     
     @scala.inline
-    def deleteInspectConfig: Self = this.set("inspectConfig", js.undefined)
+    def setItem(value: GooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInspectTemplateName(value: String): Self = this.set("inspectTemplateName", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteInspectTemplateName: Self = this.set("inspectTemplateName", js.undefined)
+    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: GooglePrivacyDlpV2ContentItem): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setLocationId(value: String): Self = this.set("locationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocationId: Self = this.set("locationId", js.undefined)
+    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
   }
 }

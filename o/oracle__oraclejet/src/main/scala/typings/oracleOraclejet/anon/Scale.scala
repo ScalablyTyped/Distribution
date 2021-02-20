@@ -9,12 +9,13 @@ import typings.oracleOraclejet.oracleOraclejetStrings.quarters
 import typings.oracleOraclejet.oracleOraclejetStrings.seconds
 import typings.oracleOraclejet.oracleOraclejetStrings.weeks
 import typings.oracleOraclejet.oracleOraclejetStrings.years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scale extends js.Object {
+trait Scale extends StObject {
   
   var converter: js.UndefOr[Converters | typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]] = js.native
   
@@ -33,42 +34,30 @@ object Scale {
   }
   
   @scala.inline
-  implicit class ScaleOps[Self <: Scale] (val x: Self) extends AnyVal {
+  implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConverter(value: Converters | typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterUndefined: Self = StObject.set(x, "converter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: seconds | minutes | hours | days | weeks | months | quarters | years): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setConverter(value: Converters | typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]): Self = this.set("converter", value.asInstanceOf[js.Any])
+    def setScale(value: seconds | minutes | hours | days | weeks | months | quarters | years): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConverter: Self = this.set("converter", js.undefined)
+    def setZoomOrder(value: js.Array[String]): Self = StObject.set(x, "zoomOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setZoomOrderUndefined: Self = StObject.set(x, "zoomOrder", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
-    
-    @scala.inline
-    def setZoomOrderVarargs(value: String*): Self = this.set("zoomOrder", js.Array(value :_*))
-    
-    @scala.inline
-    def setZoomOrder(value: js.Array[String]): Self = this.set("zoomOrder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomOrder: Self = this.set("zoomOrder", js.undefined)
+    def setZoomOrderVarargs(value: String*): Self = StObject.set(x, "zoomOrder", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetRouteResult extends js.Object {
+trait GetRouteResult extends StObject {
   
   /**
     * Specifies whether a route is managed by API Gateway. If you created an API using quick create, the $default route is managed by API Gateway. You can't modify the $default route key.
@@ -81,99 +82,87 @@ object GetRouteResult {
   }
   
   @scala.inline
-  implicit class GetRouteResultOps[Self <: GetRouteResult] (val x: Self) extends AnyVal {
+  implicit class GetRouteResultMutableBuilder[Self <: GetRouteResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiGatewayManaged(value: boolean): Self = StObject.set(x, "ApiGatewayManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiGatewayManagedUndefined: Self = StObject.set(x, "ApiGatewayManaged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiKeyRequired(value: boolean): Self = StObject.set(x, "ApiKeyRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiGatewayManaged(value: boolean): Self = this.set("ApiGatewayManaged", value.asInstanceOf[js.Any])
+    def setApiKeyRequiredUndefined: Self = StObject.set(x, "ApiKeyRequired", js.undefined)
     
     @scala.inline
-    def deleteApiGatewayManaged: Self = this.set("ApiGatewayManaged", js.undefined)
+    def setAuthorizationScopes(value: AuthorizationScopes): Self = StObject.set(x, "AuthorizationScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApiKeyRequired(value: boolean): Self = this.set("ApiKeyRequired", value.asInstanceOf[js.Any])
+    def setAuthorizationScopesUndefined: Self = StObject.set(x, "AuthorizationScopes", js.undefined)
     
     @scala.inline
-    def deleteApiKeyRequired: Self = this.set("ApiKeyRequired", js.undefined)
+    def setAuthorizationScopesVarargs(value: StringWithLengthBetween1And64*): Self = StObject.set(x, "AuthorizationScopes", js.Array(value :_*))
     
     @scala.inline
-    def setAuthorizationScopesVarargs(value: StringWithLengthBetween1And64*): Self = this.set("AuthorizationScopes", js.Array(value :_*))
+    def setAuthorizationType(value: AuthorizationType): Self = StObject.set(x, "AuthorizationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationScopes(value: AuthorizationScopes): Self = this.set("AuthorizationScopes", value.asInstanceOf[js.Any])
+    def setAuthorizationTypeUndefined: Self = StObject.set(x, "AuthorizationType", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationScopes: Self = this.set("AuthorizationScopes", js.undefined)
+    def setAuthorizerId(value: Id): Self = StObject.set(x, "AuthorizerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizationType(value: AuthorizationType): Self = this.set("AuthorizationType", value.asInstanceOf[js.Any])
+    def setAuthorizerIdUndefined: Self = StObject.set(x, "AuthorizerId", js.undefined)
     
     @scala.inline
-    def deleteAuthorizationType: Self = this.set("AuthorizationType", js.undefined)
+    def setModelSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "ModelSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthorizerId(value: Id): Self = this.set("AuthorizerId", value.asInstanceOf[js.Any])
+    def setModelSelectionExpressionUndefined: Self = StObject.set(x, "ModelSelectionExpression", js.undefined)
     
     @scala.inline
-    def deleteAuthorizerId: Self = this.set("AuthorizerId", js.undefined)
+    def setOperationName(value: StringWithLengthBetween1And64): Self = StObject.set(x, "OperationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModelSelectionExpression(value: SelectionExpression): Self = this.set("ModelSelectionExpression", value.asInstanceOf[js.Any])
+    def setOperationNameUndefined: Self = StObject.set(x, "OperationName", js.undefined)
     
     @scala.inline
-    def deleteModelSelectionExpression: Self = this.set("ModelSelectionExpression", js.undefined)
+    def setRequestModels(value: RouteModels): Self = StObject.set(x, "RequestModels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationName(value: StringWithLengthBetween1And64): Self = this.set("OperationName", value.asInstanceOf[js.Any])
+    def setRequestModelsUndefined: Self = StObject.set(x, "RequestModels", js.undefined)
     
     @scala.inline
-    def deleteOperationName: Self = this.set("OperationName", js.undefined)
+    def setRequestParameters(value: RouteParameters): Self = StObject.set(x, "RequestParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestModels(value: RouteModels): Self = this.set("RequestModels", value.asInstanceOf[js.Any])
+    def setRequestParametersUndefined: Self = StObject.set(x, "RequestParameters", js.undefined)
     
     @scala.inline
-    def deleteRequestModels: Self = this.set("RequestModels", js.undefined)
+    def setRouteId(value: Id): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestParameters(value: RouteParameters): Self = this.set("RequestParameters", value.asInstanceOf[js.Any])
+    def setRouteIdUndefined: Self = StObject.set(x, "RouteId", js.undefined)
     
     @scala.inline
-    def deleteRequestParameters: Self = this.set("RequestParameters", js.undefined)
+    def setRouteKey(value: SelectionKey): Self = StObject.set(x, "RouteKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteId(value: Id): Self = this.set("RouteId", value.asInstanceOf[js.Any])
+    def setRouteKeyUndefined: Self = StObject.set(x, "RouteKey", js.undefined)
     
     @scala.inline
-    def deleteRouteId: Self = this.set("RouteId", js.undefined)
+    def setRouteResponseSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "RouteResponseSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteKey(value: SelectionKey): Self = this.set("RouteKey", value.asInstanceOf[js.Any])
+    def setRouteResponseSelectionExpressionUndefined: Self = StObject.set(x, "RouteResponseSelectionExpression", js.undefined)
     
     @scala.inline
-    def deleteRouteKey: Self = this.set("RouteKey", js.undefined)
+    def setTarget(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRouteResponseSelectionExpression(value: SelectionExpression): Self = this.set("RouteResponseSelectionExpression", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRouteResponseSelectionExpression: Self = this.set("RouteResponseSelectionExpression", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: StringWithLengthBetween1And128): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

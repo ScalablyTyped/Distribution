@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,16 +64,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The Sys.Net namespace contains classes that manage communication between AJAX-enabled ASP.NET client applications and Web services on the server. For more information, see Using Web Services in ASP.NET AJAX. The Sys.Net namespace is part of the Microsoft Ajax Library.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb310860(v=vs.100).aspx}
   */
-@JSGlobal("Sys.Net")
-@js.native
-object Net extends js.Object {
+object Net {
   
-  var WebRequestManager: typings.microsoftAjax.Sys.Net.IWebRequestManager = js.native
+  @JSGlobal("Sys.Net")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Manages the flow of the Web requests issued by the Sys.Net.WebRequest object to the associated executor object.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397435(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Net.IWebRequestManager")
   @js.native
   //#region Constructor
   /**
@@ -88,6 +90,7 @@ object Net extends js.Object {
     *
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397488(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Net.NetworkRequestEventArgs")
   @js.native
   class NetworkRequestEventArgs protected ()
     extends typings.microsoftAjax.Sys.Net.NetworkRequestEventArgs {
@@ -104,6 +107,7 @@ object Net extends js.Object {
     * Provides the script API to make a Web request.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310979(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Net.WebRequest")
   @js.native
   //#region Constructors
   /**
@@ -116,6 +120,7 @@ object Net extends js.Object {
     * Provides the abstract base class from which network executors derive.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397434(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Net.WebRequestExecutor")
   @js.native
   //#region Constructors
   /**
@@ -124,6 +129,13 @@ object Net extends js.Object {
   class WebRequestExecutor ()
     extends typings.microsoftAjax.Sys.Net.WebRequestExecutor
   
+  @JSGlobal("Sys.Net.WebRequestManager")
+  @js.native
+  def WebRequestManager: typings.microsoftAjax.Sys.Net.IWebRequestManager = js.native
+  @scala.inline
+  def WebRequestManager_=(x: typings.microsoftAjax.Sys.Net.IWebRequestManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebRequestManager")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("Sys.Net.WebServiceError")
   @js.native
   class WebServiceError ()
     extends typings.microsoftAjax.Sys.Net.WebServiceError
@@ -133,13 +145,15 @@ object Net extends js.Object {
     * Enables your application to call Web services asynchronously by using ECMAScript (JavaScript).
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310823(v=vs.100).aspx}
     */
+  @JSGlobal("Sys.Net.WebServiceProxy")
   @js.native
   class WebServiceProxy ()
     extends typings.microsoftAjax.Sys.Net.WebServiceProxy
-  /* static members */
-  @js.native
-  object WebServiceProxy extends js.Object {
+  object WebServiceProxy {
     
+    /* static member */
+    @JSGlobal("Sys.Net.WebServiceProxy.invoke")
+    @js.native
     def invoke(
       servicePath: String,
       methodName: String,

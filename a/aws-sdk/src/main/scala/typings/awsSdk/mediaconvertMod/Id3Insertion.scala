@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Id3Insertion extends js.Object {
+trait Id3Insertion extends StObject {
   
   /**
     * Use ID3 tag (Id3) to provide a tag value in base64-encode format.
@@ -26,30 +27,18 @@ object Id3Insertion {
   }
   
   @scala.inline
-  implicit class Id3InsertionOps[Self <: Id3Insertion] (val x: Self) extends AnyVal {
+  implicit class Id3InsertionMutableBuilder[Self <: Id3Insertion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId3(value: stringPatternAZaZ0902): Self = StObject.set(x, "Id3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setId3Undefined: Self = StObject.set(x, "Id3", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTimecode(value: stringPattern010920405090509092): Self = StObject.set(x, "Timecode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId3(value: stringPatternAZaZ0902): Self = this.set("Id3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId3: Self = this.set("Id3", js.undefined)
-    
-    @scala.inline
-    def setTimecode(value: stringPattern010920405090509092): Self = this.set("Timecode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimecode: Self = this.set("Timecode", js.undefined)
+    def setTimecodeUndefined: Self = StObject.set(x, "Timecode", js.undefined)
   }
 }

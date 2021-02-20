@@ -4,13 +4,14 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import typings.reactMdIcon.fontIconMod.FontIconProps
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/material-icons/types/CloudQueueFontIcon", JSImport.Namespace)
-@js.native
-object cloudQueueFontIconMod extends js.Object {
+object cloudQueueFontIconMod {
   
+  @JSImport("@react-md/material-icons/types/CloudQueueFontIcon", "CloudQueueFontIcon")
+  @js.native
   val CloudQueueFontIcon: ForwardRefExoticComponent[FontIconProps with RefAttributes[HTMLElement]] = js.native
 }

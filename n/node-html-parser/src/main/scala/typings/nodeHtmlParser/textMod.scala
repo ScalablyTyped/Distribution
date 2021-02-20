@@ -1,16 +1,21 @@
 package typings.nodeHtmlParser
 
-import typings.nodeHtmlParser.nodeMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-html-parser/dist/nodes/text", JSImport.Namespace)
-@js.native
-object textMod extends js.Object {
+object textMod {
+  
+  @JSImport("node-html-parser/dist/nodes/text", JSImport.Default)
+  @js.native
+  class default protected () extends TextNode {
+    def this(rawText: String) = this()
+  }
   
   @js.native
-  trait TextNode extends Node {
+  trait TextNode
+    extends typings.nodeHtmlParser.nodeMod.default {
     
     /**
       * Detect if the node contains only white space.
@@ -24,10 +29,5 @@ object textMod extends js.Object {
       */
     @JSName("text")
     def text_MTextNode: String = js.native
-  }
-  
-  @js.native
-  class default protected () extends TextNode {
-    def this(rawText: String) = this()
   }
 }

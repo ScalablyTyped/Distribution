@@ -1,11 +1,12 @@
 package typings.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignaturesCollection extends js.Object {
+trait SignaturesCollection extends StObject {
   
   val Count: Double = js.native
   
@@ -31,30 +32,18 @@ object SignaturesCollection {
   }
   
   @scala.inline
-  implicit class SignaturesCollectionOps[Self <: SignaturesCollection] (val x: Self) extends AnyVal {
+  implicit class SignaturesCollectionMutableBuilder[Self <: SignaturesCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreate(value: () => SignatureObject): Self = StObject.set(x, "Create", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfoPathDotSignaturesCollection_typekey(value: SignaturesCollection): Self = StObject.set(x, "InfoPath.SignaturesCollection_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCreate(value: () => SignatureObject): Self = this.set("Create", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInfoPathDotSignaturesCollection_typekey(value: SignaturesCollection): Self = this.set("InfoPath.SignaturesCollection_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: js.Any => SignatureObject): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setItem(value: js.Any => SignatureObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

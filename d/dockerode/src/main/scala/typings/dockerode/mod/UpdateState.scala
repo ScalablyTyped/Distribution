@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.dockerode.dockerodeStrings.rollback_paused
   - typings.dockerode.dockerodeStrings.rollback_completed
 */
-trait UpdateState extends js.Object
+trait UpdateState extends StObject
 object UpdateState {
   
   @scala.inline

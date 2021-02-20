@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Message extends js.Object {
+trait Message extends StObject {
   
   /**
     * The action to occur if a recipient taps the push notification. Valid values are: OPEN_APP - Your app opens or it becomes the foreground app if it was sent to the background. This is the default action. DEEP_LINK - Your app opens and displays a designated user interface in the app. This setting uses the deep-linking features of iOS and Android. URL - The default mobile browser on the recipient's device opens and loads the web page at a URL that you specify.
@@ -76,90 +77,78 @@ object Message {
   }
   
   @scala.inline
-  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("Action", js.undefined)
+    def setImageIconUrl(value: string): Self = StObject.set(x, "ImageIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    def setImageIconUrlUndefined: Self = StObject.set(x, "ImageIconUrl", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("Body", js.undefined)
+    def setImageSmallIconUrl(value: string): Self = StObject.set(x, "ImageSmallIconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageIconUrl(value: string): Self = this.set("ImageIconUrl", value.asInstanceOf[js.Any])
+    def setImageSmallIconUrlUndefined: Self = StObject.set(x, "ImageSmallIconUrl", js.undefined)
     
     @scala.inline
-    def deleteImageIconUrl: Self = this.set("ImageIconUrl", js.undefined)
+    def setImageUrl(value: string): Self = StObject.set(x, "ImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSmallIconUrl(value: string): Self = this.set("ImageSmallIconUrl", value.asInstanceOf[js.Any])
+    def setImageUrlUndefined: Self = StObject.set(x, "ImageUrl", js.undefined)
     
     @scala.inline
-    def deleteImageSmallIconUrl: Self = this.set("ImageSmallIconUrl", js.undefined)
+    def setJsonBody(value: string): Self = StObject.set(x, "JsonBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageUrl(value: string): Self = this.set("ImageUrl", value.asInstanceOf[js.Any])
+    def setJsonBodyUndefined: Self = StObject.set(x, "JsonBody", js.undefined)
     
     @scala.inline
-    def deleteImageUrl: Self = this.set("ImageUrl", js.undefined)
+    def setMediaUrl(value: string): Self = StObject.set(x, "MediaUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonBody(value: string): Self = this.set("JsonBody", value.asInstanceOf[js.Any])
+    def setMediaUrlUndefined: Self = StObject.set(x, "MediaUrl", js.undefined)
     
     @scala.inline
-    def deleteJsonBody: Self = this.set("JsonBody", js.undefined)
+    def setRawContent(value: string): Self = StObject.set(x, "RawContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaUrl(value: string): Self = this.set("MediaUrl", value.asInstanceOf[js.Any])
+    def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
     
     @scala.inline
-    def deleteMediaUrl: Self = this.set("MediaUrl", js.undefined)
+    def setSilentPush(value: boolean): Self = StObject.set(x, "SilentPush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
     
     @scala.inline
-    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    def setTimeToLive(value: integer): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSilentPush(value: boolean): Self = this.set("SilentPush", value.asInstanceOf[js.Any])
+    def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
     
     @scala.inline
-    def deleteSilentPush: Self = this.set("SilentPush", js.undefined)
+    def setTitle(value: string): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToLive(value: integer): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     
     @scala.inline
-    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+    def setUrl(value: string): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
-    
-    @scala.inline
-    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("Url", js.undefined)
+    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

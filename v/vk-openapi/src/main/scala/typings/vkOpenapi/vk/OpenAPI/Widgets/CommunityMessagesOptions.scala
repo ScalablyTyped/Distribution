@@ -2,12 +2,13 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
 import typings.vkOpenapi.vkOpenapiNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommunityMessagesOptions extends js.Object {
+trait CommunityMessagesOptions extends StObject {
   
   var buttonType: js.UndefOr[String] = js.native
   
@@ -40,84 +41,72 @@ object CommunityMessagesOptions {
   }
   
   @scala.inline
-  implicit class CommunityMessagesOptionsOps[Self <: CommunityMessagesOptions] (val x: Self) extends AnyVal {
+  implicit class CommunityMessagesOptionsMutableBuilder[Self <: CommunityMessagesOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableButtonTooltip(value: `1`): Self = StObject.set(x, "disableButtonTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonType(value: String): Self = this.set("buttonType", value.asInstanceOf[js.Any])
+    def setDisableButtonTooltipUndefined: Self = StObject.set(x, "disableButtonTooltip", js.undefined)
     
     @scala.inline
-    def deleteButtonType: Self = this.set("buttonType", js.undefined)
+    def setDisableExpandChatSound(value: `1`): Self = StObject.set(x, "disableExpandChatSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableButtonTooltip(value: `1`): Self = this.set("disableButtonTooltip", value.asInstanceOf[js.Any])
+    def setDisableExpandChatSoundUndefined: Self = StObject.set(x, "disableExpandChatSound", js.undefined)
     
     @scala.inline
-    def deleteDisableButtonTooltip: Self = this.set("disableButtonTooltip", js.undefined)
+    def setDisableNewMessagesSound(value: `1`): Self = StObject.set(x, "disableNewMessagesSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableExpandChatSound(value: `1`): Self = this.set("disableExpandChatSound", value.asInstanceOf[js.Any])
+    def setDisableNewMessagesSoundUndefined: Self = StObject.set(x, "disableNewMessagesSound", js.undefined)
     
     @scala.inline
-    def deleteDisableExpandChatSound: Self = this.set("disableExpandChatSound", js.undefined)
+    def setDisableTitleChange(value: `1`): Self = StObject.set(x, "disableTitleChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableNewMessagesSound(value: `1`): Self = this.set("disableNewMessagesSound", value.asInstanceOf[js.Any])
+    def setDisableTitleChangeUndefined: Self = StObject.set(x, "disableTitleChange", js.undefined)
     
     @scala.inline
-    def deleteDisableNewMessagesSound: Self = this.set("disableNewMessagesSound", js.undefined)
+    def setExpandTimeout(value: Double): Self = StObject.set(x, "expandTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableTitleChange(value: `1`): Self = this.set("disableTitleChange", value.asInstanceOf[js.Any])
+    def setExpandTimeoutUndefined: Self = StObject.set(x, "expandTimeout", js.undefined)
     
     @scala.inline
-    def deleteDisableTitleChange: Self = this.set("disableTitleChange", js.undefined)
+    def setExpanded(value: `1`): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandTimeout(value: Double): Self = this.set("expandTimeout", value.asInstanceOf[js.Any])
+    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     @scala.inline
-    def deleteExpandTimeout: Self = this.set("expandTimeout", js.undefined)
+    def setOnCanNotWrite(value: /* reason */ OnCanNotWriteReason => Unit): Self = StObject.set(x, "onCanNotWrite", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExpanded(value: `1`): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    def setOnCanNotWriteUndefined: Self = StObject.set(x, "onCanNotWrite", js.undefined)
     
     @scala.inline
-    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    def setTooltipButtonText(value: String): Self = StObject.set(x, "tooltipButtonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCanNotWrite(value: /* reason */ OnCanNotWriteReason => Unit): Self = this.set("onCanNotWrite", js.Any.fromFunction1(value))
+    def setTooltipButtonTextUndefined: Self = StObject.set(x, "tooltipButtonText", js.undefined)
     
     @scala.inline
-    def deleteOnCanNotWrite: Self = this.set("onCanNotWrite", js.undefined)
+    def setWelcomeScreen(value: NumericBoolean): Self = StObject.set(x, "welcomeScreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTooltipButtonText(value: String): Self = this.set("tooltipButtonText", value.asInstanceOf[js.Any])
+    def setWelcomeScreenUndefined: Self = StObject.set(x, "welcomeScreen", js.undefined)
     
     @scala.inline
-    def deleteTooltipButtonText: Self = this.set("tooltipButtonText", js.undefined)
+    def setWidgetPosition(value: String): Self = StObject.set(x, "widgetPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWelcomeScreen(value: NumericBoolean): Self = this.set("welcomeScreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWelcomeScreen: Self = this.set("welcomeScreen", js.undefined)
-    
-    @scala.inline
-    def setWidgetPosition(value: String): Self = this.set("widgetPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidgetPosition: Self = this.set("widgetPosition", js.undefined)
+    def setWidgetPositionUndefined: Self = StObject.set(x, "widgetPosition", js.undefined)
   }
 }

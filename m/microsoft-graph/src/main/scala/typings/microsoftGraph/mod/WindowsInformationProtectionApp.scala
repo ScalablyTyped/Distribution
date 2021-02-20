@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsInformationProtectionApp extends js.Object {
+trait WindowsInformationProtectionApp extends StObject {
   
   // If true, app is denied protection or exemption.
   var denied: js.UndefOr[Boolean] = js.native
@@ -31,57 +32,45 @@ object WindowsInformationProtectionApp {
   }
   
   @scala.inline
-  implicit class WindowsInformationProtectionAppOps[Self <: WindowsInformationProtectionApp] (val x: Self) extends AnyVal {
+  implicit class WindowsInformationProtectionAppMutableBuilder[Self <: WindowsInformationProtectionApp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDenied(value: Boolean): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDenied(value: Boolean): Self = this.set("denied", value.asInstanceOf[js.Any])
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def deleteDenied: Self = this.set("denied", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setProductName(value: NullableOption[String]): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setProductNameNull: Self = StObject.set(x, "productName", null)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
     @scala.inline
-    def setProductName(value: NullableOption[String]): Self = this.set("productName", value.asInstanceOf[js.Any])
+    def setPublisherName(value: NullableOption[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductName: Self = this.set("productName", js.undefined)
+    def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
     
     @scala.inline
-    def setProductNameNull: Self = this.set("productName", null)
-    
-    @scala.inline
-    def setPublisherName(value: NullableOption[String]): Self = this.set("publisherName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublisherName: Self = this.set("publisherName", js.undefined)
-    
-    @scala.inline
-    def setPublisherNameNull: Self = this.set("publisherName", null)
+    def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
   }
 }

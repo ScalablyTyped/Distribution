@@ -1,5 +1,6 @@
 package typings.openlayers.mod.format
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.openlayers.openlayersStrings.gps
   - typings.openlayers.openlayersStrings.none
 */
-trait IGCZ extends js.Object
+trait IGCZ extends StObject
 object IGCZ {
   
   @scala.inline

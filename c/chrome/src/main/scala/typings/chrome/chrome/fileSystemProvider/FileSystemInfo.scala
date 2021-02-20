@@ -1,11 +1,12 @@
 package typings.chrome.chrome.fileSystemProvider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileSystemInfo extends js.Object {
+trait FileSystemInfo extends StObject {
   
   /** A human-readable name for the file system. */
   var displayName: String = js.native
@@ -57,48 +58,36 @@ object FileSystemInfo {
   }
   
   @scala.inline
-  implicit class FileSystemInfoOps[Self <: FileSystemInfo] (val x: Self) extends AnyVal {
+  implicit class FileSystemInfoMutableBuilder[Self <: FileSystemInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpenedFiles(value: js.Array[OpenedFileInfo]): Self = StObject.set(x, "openedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setOpenedFilesLimit(value: Double): Self = StObject.set(x, "openedFilesLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSystemId(value: String): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
+    def setOpenedFilesVarargs(value: OpenedFileInfo*): Self = StObject.set(x, "openedFiles", js.Array(value :_*))
     
     @scala.inline
-    def setOpenedFilesVarargs(value: OpenedFileInfo*): Self = this.set("openedFiles", js.Array(value :_*))
+    def setSupportsNotifyTag(value: Boolean): Self = StObject.set(x, "supportsNotifyTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenedFiles(value: js.Array[OpenedFileInfo]): Self = this.set("openedFiles", value.asInstanceOf[js.Any])
+    def setSupportsNotifyTagUndefined: Self = StObject.set(x, "supportsNotifyTag", js.undefined)
     
     @scala.inline
-    def setOpenedFilesLimit(value: Double): Self = this.set("openedFilesLimit", value.asInstanceOf[js.Any])
+    def setWatchers(value: js.Array[FileWatchersInfo]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWatchersVarargs(value: FileWatchersInfo*): Self = this.set("watchers", js.Array(value :_*))
+    def setWatchersVarargs(value: FileWatchersInfo*): Self = StObject.set(x, "watchers", js.Array(value :_*))
     
     @scala.inline
-    def setWatchers(value: js.Array[FileWatchersInfo]): Self = this.set("watchers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWritable(value: Boolean): Self = this.set("writable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsNotifyTag(value: Boolean): Self = this.set("supportsNotifyTag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSupportsNotifyTag: Self = this.set("supportsNotifyTag", js.undefined)
+    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

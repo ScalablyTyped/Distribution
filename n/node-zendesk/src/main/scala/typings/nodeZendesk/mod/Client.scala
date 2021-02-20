@@ -1,12 +1,13 @@
 package typings.nodeZendesk.mod
 
 import typings.nodeZendesk.mod.Attachments.Methods
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Client extends js.Object {
+trait Client extends StObject {
   
   var accountsettings: js.Any = js.native
   
@@ -159,159 +160,147 @@ object Client {
   }
   
   @scala.inline
-  implicit class ClientOps[Self <: Client] (val x: Self) extends AnyVal {
+  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountsettings(value: js.Any): Self = StObject.set(x, "accountsettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivitystream(value: js.Any): Self = StObject.set(x, "activitystream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttachments(value: Methods): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountsettings(value: js.Any): Self = this.set("accountsettings", value.asInstanceOf[js.Any])
+    def setBrand(value: js.Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivitystream(value: js.Any): Self = this.set("activitystream", value.asInstanceOf[js.Any])
+    def setCategories(value: js.Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Methods): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setCustomagentroles(value: js.Any): Self = StObject.set(x, "customagentroles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrand(value: js.Any): Self = this.set("brand", value.asInstanceOf[js.Any])
+    def setDynamiccontent(value: js.Any): Self = StObject.set(x, "dynamiccontent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategories(value: js.Any): Self = this.set("categories", value.asInstanceOf[js.Any])
+    def setForums(value: js.Any): Self = StObject.set(x, "forums", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomagentroles(value: js.Any): Self = this.set("customagentroles", value.asInstanceOf[js.Any])
+    def setForumsubscriptions(value: js.Any): Self = StObject.set(x, "forumsubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynamiccontent(value: js.Any): Self = this.set("dynamiccontent", value.asInstanceOf[js.Any])
+    def setGroupmemberships(value: js.Any): Self = StObject.set(x, "groupmemberships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForums(value: js.Any): Self = this.set("forums", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForumsubscriptions(value: js.Any): Self = this.set("forumsubscriptions", value.asInstanceOf[js.Any])
+    def setHelpers(value: js.Any): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupmemberships(value: js.Any): Self = this.set("groupmemberships", value.asInstanceOf[js.Any])
+    def setImports(value: js.Any): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Any): Self = this.set("groups", value.asInstanceOf[js.Any])
+    def setInstallations(value: js.Any): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpers(value: js.Any): Self = this.set("helpers", value.asInstanceOf[js.Any])
+    def setJobstatuses(value: typings.nodeZendesk.mod.JobStatuses.Methods): Self = StObject.set(x, "jobstatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImports(value: js.Any): Self = this.set("imports", value.asInstanceOf[js.Any])
+    def setLocales(value: js.Any): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallations(value: js.Any): Self = this.set("installations", value.asInstanceOf[js.Any])
+    def setMacros(value: typings.nodeZendesk.mod.Macros.Methods): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobstatuses(value: typings.nodeZendesk.mod.JobStatuses.Methods): Self = this.set("jobstatuses", value.asInstanceOf[js.Any])
+    def setOauthtokens(value: js.Any): Self = StObject.set(x, "oauthtokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocales(value: js.Any): Self = this.set("locales", value.asInstanceOf[js.Any])
+    def setOrganizationfields(value: js.Any): Self = StObject.set(x, "organizationfields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMacros(value: typings.nodeZendesk.mod.Macros.Methods): Self = this.set("macros", value.asInstanceOf[js.Any])
+    def setOrganizationmemberships(value: js.Any): Self = StObject.set(x, "organizationmemberships", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauthtokens(value: js.Any): Self = this.set("oauthtokens", value.asInstanceOf[js.Any])
+    def setOrganizations(value: js.Any): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationfields(value: js.Any): Self = this.set("organizationfields", value.asInstanceOf[js.Any])
+    def setPolicies(value: js.Any): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationmemberships(value: js.Any): Self = this.set("organizationmemberships", value.asInstanceOf[js.Any])
+    def setRequests(value: typings.nodeZendesk.mod.Requests.Methods): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizations(value: js.Any): Self = this.set("organizations", value.asInstanceOf[js.Any])
+    def setSatisfactionratings(value: js.Any): Self = StObject.set(x, "satisfactionratings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPolicies(value: js.Any): Self = this.set("policies", value.asInstanceOf[js.Any])
+    def setSearch(value: js.Any): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequests(value: typings.nodeZendesk.mod.Requests.Methods): Self = this.set("requests", value.asInstanceOf[js.Any])
+    def setSessions(value: js.Any): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSatisfactionratings(value: js.Any): Self = this.set("satisfactionratings", value.asInstanceOf[js.Any])
+    def setSharingagreement(value: js.Any): Self = StObject.set(x, "sharingagreement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: js.Any): Self = this.set("search", value.asInstanceOf[js.Any])
+    def setSuspendedtickets(value: js.Any): Self = StObject.set(x, "suspendedtickets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessions(value: js.Any): Self = this.set("sessions", value.asInstanceOf[js.Any])
+    def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSharingagreement(value: js.Any): Self = this.set("sharingagreement", value.asInstanceOf[js.Any])
+    def setTargets(value: js.Any): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuspendedtickets(value: js.Any): Self = this.set("suspendedtickets", value.asInstanceOf[js.Any])
+    def setTicketaudits(value: js.Any): Self = StObject.set(x, "ticketaudits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: js.Any): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTicketevents(value: js.Any): Self = StObject.set(x, "ticketevents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargets(value: js.Any): Self = this.set("targets", value.asInstanceOf[js.Any])
+    def setTicketexport(value: js.Any): Self = StObject.set(x, "ticketexport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketaudits(value: js.Any): Self = this.set("ticketaudits", value.asInstanceOf[js.Any])
+    def setTicketfields(value: js.Any): Self = StObject.set(x, "ticketfields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketevents(value: js.Any): Self = this.set("ticketevents", value.asInstanceOf[js.Any])
+    def setTicketforms(value: js.Any): Self = StObject.set(x, "ticketforms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketexport(value: js.Any): Self = this.set("ticketexport", value.asInstanceOf[js.Any])
+    def setTicketimport(value: js.Any): Self = StObject.set(x, "ticketimport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketfields(value: js.Any): Self = this.set("ticketfields", value.asInstanceOf[js.Any])
+    def setTicketmetrics(value: js.Any): Self = StObject.set(x, "ticketmetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketforms(value: js.Any): Self = this.set("ticketforms", value.asInstanceOf[js.Any])
+    def setTickets(value: typings.nodeZendesk.mod.Tickets.Methods): Self = StObject.set(x, "tickets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketimport(value: js.Any): Self = this.set("ticketimport", value.asInstanceOf[js.Any])
+    def setTopiccomments(value: js.Any): Self = StObject.set(x, "topiccomments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTicketmetrics(value: js.Any): Self = this.set("ticketmetrics", value.asInstanceOf[js.Any])
+    def setTopics(value: js.Any): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTickets(value: typings.nodeZendesk.mod.Tickets.Methods): Self = this.set("tickets", value.asInstanceOf[js.Any])
+    def setTopicsubscriptions(value: js.Any): Self = StObject.set(x, "topicsubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopiccomments(value: js.Any): Self = this.set("topiccomments", value.asInstanceOf[js.Any])
+    def setTopicvotes(value: js.Any): Self = StObject.set(x, "topicvotes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopics(value: js.Any): Self = this.set("topics", value.asInstanceOf[js.Any])
+    def setTriggers(value: js.Any): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicsubscriptions(value: js.Any): Self = this.set("topicsubscriptions", value.asInstanceOf[js.Any])
+    def setUserfields(value: typings.nodeZendesk.mod.Users.Fields.Methods): Self = StObject.set(x, "userfields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopicvotes(value: js.Any): Self = this.set("topicvotes", value.asInstanceOf[js.Any])
+    def setUseridentities(value: typings.nodeZendesk.mod.Users.Identities.Methods): Self = StObject.set(x, "useridentities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTriggers(value: js.Any): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    def setUsers(value: typings.nodeZendesk.mod.Users.Methods): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserfields(value: typings.nodeZendesk.mod.Users.Fields.Methods): Self = this.set("userfields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseridentities(value: typings.nodeZendesk.mod.Users.Identities.Methods): Self = this.set("useridentities", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsers(value: typings.nodeZendesk.mod.Users.Methods): Self = this.set("users", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViews(value: js.Any): Self = this.set("views", value.asInstanceOf[js.Any])
+    def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }
 }

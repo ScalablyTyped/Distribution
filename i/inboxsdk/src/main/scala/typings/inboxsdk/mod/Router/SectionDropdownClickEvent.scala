@@ -1,12 +1,13 @@
 package typings.inboxsdk.mod.Router
 
 import typings.inboxsdk.mod.Common.DropdownView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SectionDropdownClickEvent extends js.Object {
+trait SectionDropdownClickEvent extends StObject {
   
   var dropdown: DropdownView = js.native
 }
@@ -19,21 +20,9 @@ object SectionDropdownClickEvent {
   }
   
   @scala.inline
-  implicit class SectionDropdownClickEventOps[Self <: SectionDropdownClickEvent] (val x: Self) extends AnyVal {
+  implicit class SectionDropdownClickEventMutableBuilder[Self <: SectionDropdownClickEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDropdown(value: DropdownView): Self = this.set("dropdown", value.asInstanceOf[js.Any])
+    def setDropdown(value: DropdownView): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
   }
 }

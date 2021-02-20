@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListProvisioningTemplatesResponse extends js.Object {
+trait ListProvisioningTemplatesResponse extends StObject {
   
   /**
     * A token to retrieve the next set of results.
@@ -26,33 +27,21 @@ object ListProvisioningTemplatesResponse {
   }
   
   @scala.inline
-  implicit class ListProvisioningTemplatesResponseOps[Self <: ListProvisioningTemplatesResponse] (val x: Self) extends AnyVal {
+  implicit class ListProvisioningTemplatesResponseMutableBuilder[Self <: ListProvisioningTemplatesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplates(value: ProvisioningTemplateListing): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setTemplatesVarargs(value: ProvisioningTemplateSummary*): Self = this.set("templates", js.Array(value :_*))
-    
-    @scala.inline
-    def setTemplates(value: ProvisioningTemplateListing): Self = this.set("templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("templates", js.undefined)
+    def setTemplatesVarargs(value: ProvisioningTemplateSummary*): Self = StObject.set(x, "templates", js.Array(value :_*))
   }
 }

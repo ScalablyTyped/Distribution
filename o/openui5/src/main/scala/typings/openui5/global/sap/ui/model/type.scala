@@ -1,13 +1,13 @@
 package typings.openui5.global.sap.ui.model
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.model.type")
-@js.native
-object `type` extends js.Object {
+object `type` {
   
+  @JSGlobal("sap.ui.model.type.Boolean")
   @js.native
   class Boolean protected ()
     extends typings.openui5.sap.ui.model.`type`.Boolean {
@@ -20,6 +20,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.Currency")
   @js.native
   class Currency protected ()
     extends typings.openui5.sap.ui.model.`type`.Currency {
@@ -33,6 +34,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.Date")
   @js.native
   class Date protected ()
     extends typings.openui5.sap.ui.model.`type`.Date {
@@ -46,6 +48,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.DateTime")
   @js.native
   class DateTime protected ()
     extends typings.openui5.sap.ui.model.`type`.DateTime {
@@ -63,6 +66,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.FileSize")
   @js.native
   class FileSize protected ()
     extends typings.openui5.sap.ui.model.`type`.FileSize {
@@ -76,6 +80,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.Float")
   @js.native
   class Float protected ()
     extends typings.openui5.sap.ui.model.`type`.Float {
@@ -89,6 +94,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.Integer")
   @js.native
   class Integer protected ()
     extends typings.openui5.sap.ui.model.`type`.Integer {
@@ -102,6 +108,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.String")
   @js.native
   class String protected ()
     extends typings.openui5.sap.ui.model.`type`.String {
@@ -115,6 +122,7 @@ object `type` extends js.Object {
     def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   }
   
+  @JSGlobal("sap.ui.model.type.Time")
   @js.native
   class Time protected ()
     extends typings.openui5.sap.ui.model.`type`.Time {

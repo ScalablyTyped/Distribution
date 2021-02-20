@@ -6,6 +6,7 @@ import typings.activexOutlook.activexOutlookNumbers.`2`
 import typings.activexOutlook.activexOutlookNumbers.`3`
 import typings.activexOutlook.activexOutlookNumbers.`4`
 import typings.activexOutlook.activexOutlookNumbers.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexOutlook.activexOutlookNumbers.`0`
   - typings.activexOutlook.activexOutlookNumbers.`1`
 */
-trait OlMarkInterval extends js.Object
+trait OlMarkInterval extends StObject
 object OlMarkInterval {
   
   @scala.inline

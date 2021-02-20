@@ -3,12 +3,13 @@ package typings.arangodb.ArangoDB
 import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.anon.SegmentThreshold
 import typings.arangodb.arangodbStrings.arangosearch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ArangoSearchViewProperties extends js.Object {
+trait ArangoSearchViewProperties extends StObject {
   
   var cleanupIntervalStep: Double = js.native
   
@@ -42,39 +43,27 @@ object ArangoSearchViewProperties {
   }
   
   @scala.inline
-  implicit class ArangoSearchViewPropertiesOps[Self <: ArangoSearchViewProperties] (val x: Self) extends AnyVal {
+  implicit class ArangoSearchViewPropertiesMutableBuilder[Self <: ArangoSearchViewProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCleanupIntervalStep(value: Double): Self = StObject.set(x, "cleanupIntervalStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConsolidationIntervalMsec(value: Double): Self = StObject.set(x, "consolidationIntervalMsec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConsolidationPolicy(value: SegmentThreshold): Self = StObject.set(x, "consolidationPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCleanupIntervalStep(value: Double): Self = this.set("cleanupIntervalStep", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsolidationIntervalMsec(value: Double): Self = this.set("consolidationIntervalMsec", value.asInstanceOf[js.Any])
+    def setLinks(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConsolidationPolicy(value: SegmentThreshold): Self = this.set("consolidationPolicy", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinks(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = this.set("links", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: arangosearch): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: arangosearch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

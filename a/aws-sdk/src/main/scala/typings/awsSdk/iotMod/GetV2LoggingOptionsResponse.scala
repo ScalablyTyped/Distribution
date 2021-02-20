@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetV2LoggingOptionsResponse extends js.Object {
+trait GetV2LoggingOptionsResponse extends StObject {
   
   /**
     * The default log level.
@@ -31,36 +32,24 @@ object GetV2LoggingOptionsResponse {
   }
   
   @scala.inline
-  implicit class GetV2LoggingOptionsResponseOps[Self <: GetV2LoggingOptionsResponse] (val x: Self) extends AnyVal {
+  implicit class GetV2LoggingOptionsResponseMutableBuilder[Self <: GetV2LoggingOptionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultLogLevel(value: LogLevel): Self = StObject.set(x, "defaultLogLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultLogLevelUndefined: Self = StObject.set(x, "defaultLogLevel", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisableAllLogs(value: DisableAllLogs): Self = StObject.set(x, "disableAllLogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultLogLevel(value: LogLevel): Self = this.set("defaultLogLevel", value.asInstanceOf[js.Any])
+    def setDisableAllLogsUndefined: Self = StObject.set(x, "disableAllLogs", js.undefined)
     
     @scala.inline
-    def deleteDefaultLogLevel: Self = this.set("defaultLogLevel", js.undefined)
+    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAllLogs(value: DisableAllLogs): Self = this.set("disableAllLogs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableAllLogs: Self = this.set("disableAllLogs", js.undefined)
-    
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

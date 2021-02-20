@@ -14,20 +14,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws/batch", JSImport.Namespace)
-@js.native
-object batchMod extends js.Object {
+object batchMod {
   
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = js.native
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = js.native
-  
-  def getJobQueue(args: GetJobQueueArgs): js.Promise[GetJobQueueResult] = js.native
-  def getJobQueue(args: GetJobQueueArgs, opts: InvokeOptions): js.Promise[GetJobQueueResult] = js.native
-  
+  @JSImport("@pulumi/aws/batch", "ComputeEnvironment")
   @js.native
   class ComputeEnvironment protected ()
     extends typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment {
@@ -42,8 +36,7 @@ object batchMod extends js.Object {
     def this(name: String, args: ComputeEnvironmentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object ComputeEnvironment extends js.Object {
+  object ComputeEnvironment {
     
     /**
       * Get an existing ComputeEnvironment resource's state with the given name, ID, and optional extra
@@ -54,18 +47,29 @@ object batchMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/batch", "ComputeEnvironment.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
+    @JSImport("@pulumi/aws/batch", "ComputeEnvironment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
+    @JSImport("@pulumi/aws/batch", "ComputeEnvironment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ComputeEnvironmentState): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
+    @JSImport("@pulumi/aws/batch", "ComputeEnvironment.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): typings.pulumiAws.computeEnvironmentMod.ComputeEnvironment = js.native
     
     /**
       * Returns true if the given object is an instance of ComputeEnvironment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/batch", "ComputeEnvironment.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/batch", "JobDefinition")
   @js.native
   class JobDefinition protected ()
     extends typings.pulumiAws.jobDefinitionMod.JobDefinition {
@@ -80,8 +84,7 @@ object batchMod extends js.Object {
     def this(name: String, args: JobDefinitionArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object JobDefinition extends js.Object {
+  object JobDefinition {
     
     /**
       * Get an existing JobDefinition resource's state with the given name, ID, and optional extra
@@ -92,18 +95,29 @@ object batchMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/batch", "JobDefinition.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
+    @JSImport("@pulumi/aws/batch", "JobDefinition.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
+    @JSImport("@pulumi/aws/batch", "JobDefinition.get")
+    @js.native
     def get(name: String, id: Input[ID], state: JobDefinitionState): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
+    @JSImport("@pulumi/aws/batch", "JobDefinition.get")
+    @js.native
     def get(name: String, id: Input[ID], state: JobDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.jobDefinitionMod.JobDefinition = js.native
     
     /**
       * Returns true if the given object is an instance of JobDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/batch", "JobDefinition.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws/batch", "JobQueue")
   @js.native
   class JobQueue protected ()
     extends typings.pulumiAws.jobQueueMod.JobQueue {
@@ -118,8 +132,7 @@ object batchMod extends js.Object {
     def this(name: String, args: JobQueueArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object JobQueue extends js.Object {
+  object JobQueue {
     
     /**
       * Get an existing JobQueue resource's state with the given name, ID, and optional extra
@@ -130,15 +143,39 @@ object batchMod extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws/batch", "JobQueue.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.jobQueueMod.JobQueue = js.native
+    @JSImport("@pulumi/aws/batch", "JobQueue.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.jobQueueMod.JobQueue = js.native
+    @JSImport("@pulumi/aws/batch", "JobQueue.get")
+    @js.native
     def get(name: String, id: Input[ID], state: JobQueueState): typings.pulumiAws.jobQueueMod.JobQueue = js.native
+    @JSImport("@pulumi/aws/batch", "JobQueue.get")
+    @js.native
     def get(name: String, id: Input[ID], state: JobQueueState, opts: CustomResourceOptions): typings.pulumiAws.jobQueueMod.JobQueue = js.native
     
     /**
       * Returns true if the given object is an instance of JobQueue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws/batch", "JobQueue.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws/batch", "getComputeEnvironment")
+  @js.native
+  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = js.native
+  @JSImport("@pulumi/aws/batch", "getComputeEnvironment")
+  @js.native
+  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = js.native
+  
+  @JSImport("@pulumi/aws/batch", "getJobQueue")
+  @js.native
+  def getJobQueue(args: GetJobQueueArgs): js.Promise[GetJobQueueResult] = js.native
+  @JSImport("@pulumi/aws/batch", "getJobQueue")
+  @js.native
+  def getJobQueue(args: GetJobQueueArgs, opts: InvokeOptions): js.Promise[GetJobQueueResult] = js.native
 }

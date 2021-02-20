@@ -1,12 +1,13 @@
 package typings.stylableCore.anon
 
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyframesMap extends js.Object {
+trait KeyframesMap extends StObject {
   
   var keyframesMap: Record[String, String] = js.native
   
@@ -21,24 +22,12 @@ object KeyframesMap {
   }
   
   @scala.inline
-  implicit class KeyframesMapOps[Self <: KeyframesMap] (val x: Self) extends AnyVal {
+  implicit class KeyframesMapMutableBuilder[Self <: KeyframesMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeyframesMap(value: Record[String, String]): Self = StObject.set(x, "keyframesMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setKeyframesMap(value: Record[String, String]): Self = this.set("keyframesMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNamedMap(value: Record[String, String]): Self = this.set("namedMap", value.asInstanceOf[js.Any])
+    def setNamedMap(value: Record[String, String]): Self = StObject.set(x, "namedMap", value.asInstanceOf[js.Any])
   }
 }

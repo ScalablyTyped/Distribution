@@ -1,6 +1,6 @@
 package typings.nodeSass.mod.types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +14,19 @@ trait Map
   
   def setKey(index: Double, key: Value): Unit = js.native
 }
-@JSImport("node-sass", "types.Map")
-@js.native
-object Map extends TopLevel[MapConstructor]
+object Map {
+  
+  @JSImport("node-sass", "types.Map")
+  @js.native
+  val ^ : MapConstructor = js.native
+  
+  @scala.inline
+  implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGetKey(value: Double => Value): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setSetKey(value: (Double, Value) => Unit): Self = StObject.set(x, "setKey", js.Any.fromFunction2(value))
+  }
+}

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ThreatMatch extends js.Object {
+trait ThreatMatch extends StObject {
   
   /** The cache lifetime for the returned match. Clients must not cache this response for more than this duration to avoid false positives. */
   var cacheDuration: js.UndefOr[String] = js.native
@@ -34,54 +35,42 @@ object ThreatMatch {
   }
   
   @scala.inline
-  implicit class ThreatMatchOps[Self <: ThreatMatch] (val x: Self) extends AnyVal {
+  implicit class ThreatMatchMutableBuilder[Self <: ThreatMatch] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheDuration(value: String): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheDurationUndefined: Self = StObject.set(x, "cacheDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheDuration(value: String): Self = this.set("cacheDuration", value.asInstanceOf[js.Any])
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def deleteCacheDuration: Self = this.set("cacheDuration", js.undefined)
+    def setThreat(value: ThreatEntry): Self = StObject.set(x, "threat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setThreatEntryMetadata(value: ThreatEntryMetadata): Self = StObject.set(x, "threatEntryMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setThreatEntryMetadataUndefined: Self = StObject.set(x, "threatEntryMetadata", js.undefined)
     
     @scala.inline
-    def setThreat(value: ThreatEntry): Self = this.set("threat", value.asInstanceOf[js.Any])
+    def setThreatEntryType(value: String): Self = StObject.set(x, "threatEntryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreat: Self = this.set("threat", js.undefined)
+    def setThreatEntryTypeUndefined: Self = StObject.set(x, "threatEntryType", js.undefined)
     
     @scala.inline
-    def setThreatEntryMetadata(value: ThreatEntryMetadata): Self = this.set("threatEntryMetadata", value.asInstanceOf[js.Any])
+    def setThreatType(value: String): Self = StObject.set(x, "threatType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThreatEntryMetadata: Self = this.set("threatEntryMetadata", js.undefined)
+    def setThreatTypeUndefined: Self = StObject.set(x, "threatType", js.undefined)
     
     @scala.inline
-    def setThreatEntryType(value: String): Self = this.set("threatEntryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatEntryType: Self = this.set("threatEntryType", js.undefined)
-    
-    @scala.inline
-    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatType: Self = this.set("threatType", js.undefined)
+    def setThreatUndefined: Self = StObject.set(x, "threat", js.undefined)
   }
 }

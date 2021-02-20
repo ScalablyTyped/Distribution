@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Attachment extends js.Object {
+trait Attachment extends StObject {
   
   @JSName("Access.Attachment_typekey")
   var AccessDotAttachment_typekey: Attachment = js.native

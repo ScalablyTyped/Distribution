@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint extends js.Object {
+trait EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint extends StObject {
   
   /**
     * The name of the SCIM group. This must match the GitHub organization that the group maps to.
@@ -40,42 +41,30 @@ object EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpointOps[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpointMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMembers(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
     @scala.inline
-    def setEnterprise(value: String): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    def setMembersVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers*): Self = StObject.set(x, "members", js.Array(value :_*))
     
     @scala.inline
-    def setSchemasVarargs(value: String*): Self = this.set("schemas", js.Array(value :_*))
+    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemas(value: js.Array[String]): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
     @scala.inline
-    def setScim_group_id(value: String): Self = this.set("scim_group_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMembersVarargs(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers*): Self = this.set("members", js.Array(value :_*))
-    
-    @scala.inline
-    def setMembers(value: js.Array[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupParamsMembers]): Self = this.set("members", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMembers: Self = this.set("members", js.undefined)
+    def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
   }
 }

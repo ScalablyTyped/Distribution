@@ -8,12 +8,13 @@ import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Channel
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.ChannelGroup
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Importance
 import typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.RemoteInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Action extends js.Object {
+trait Action extends StObject {
   
   var Action: Instantiable3[
     /* action */ String, 
@@ -83,19 +84,7 @@ object Action {
   }
   
   @scala.inline
-  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAction(
@@ -105,55 +94,55 @@ object Action {
           /* title */ String, 
           typings.reactNativeFirebase.mod.RNFirebase.notifications.Android.Action
         ]
-    ): Self = this.set("Action", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBadgeIconType(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.BadgeIconType */ js.Any
-    ): Self = this.set("BadgeIconType", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "BadgeIconType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: Category): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setCategory(value: Category): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChannel(
       value: Instantiable3[/* channelId */ String, /* name */ String, /* importance */ Importance, Channel]
-    ): Self = this.set("Channel", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelGroup(value: Instantiable2[/* groupId */ String, /* name */ String, ChannelGroup]): Self = this.set("ChannelGroup", value.asInstanceOf[js.Any])
+    def setChannelGroup(value: Instantiable2[/* groupId */ String, /* name */ String, ChannelGroup]): Self = StObject.set(x, "ChannelGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaults(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Defaults */ js.Any
-    ): Self = this.set("Defaults", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Defaults", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupAlert(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.GroupAlert */ js.Any
-    ): Self = this.set("GroupAlert", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "GroupAlert", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImportance(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Importance */ js.Any
-    ): Self = this.set("Importance", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPriority(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Priority */ js.Any
-    ): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteInput(value: Instantiable1[/* resultKey */ String, RemoteInput]): Self = this.set("RemoteInput", value.asInstanceOf[js.Any])
+    def setRemoteInput(value: Instantiable1[/* resultKey */ String, RemoteInput]): Self = StObject.set(x, "RemoteInput", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSemanticAction(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.SemanticAction */ js.Any
-    ): Self = this.set("SemanticAction", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "SemanticAction", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVisibility(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Android.Visibility */ js.Any
-    ): Self = this.set("Visibility", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
   }
 }

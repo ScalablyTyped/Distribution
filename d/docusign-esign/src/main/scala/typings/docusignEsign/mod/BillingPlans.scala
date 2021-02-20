@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BillingPlans extends js.Object {
+trait BillingPlans extends StObject {
   
   /**
     * The billing address for the account.
@@ -80,85 +81,73 @@ object BillingPlans {
   }
   
   @scala.inline
-  implicit class BillingPlansOps[Self <: BillingPlans] (val x: Self) extends AnyVal {
+  implicit class BillingPlansMutableBuilder[Self <: BillingPlans] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAddress(value: /* Contains information about the address associated with the account. */ AccountAddress): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAddressIsCreditCardAddress(value: String): Self = StObject.set(x, "billingAddressIsCreditCardAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingAddressIsCreditCardAddressUndefined: Self = StObject.set(x, "billingAddressIsCreditCardAddress", js.undefined)
     
     @scala.inline
-    def setBillingAddress(value: /* Contains information about the address associated with the account. */ AccountAddress): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    def setBillingPlan(value: /* Contains information about an account billing plan. */ AccountBillingPlan): Self = StObject.set(x, "billingPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddressIsCreditCardAddress(value: String): Self = this.set("billingAddressIsCreditCardAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingAddressIsCreditCardAddress: Self = this.set("billingAddressIsCreditCardAddress", js.undefined)
-    
-    @scala.inline
-    def setBillingPlan(value: /* Contains information about an account billing plan. */ AccountBillingPlan): Self = this.set("billingPlan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBillingPlan: Self = this.set("billingPlan", js.undefined)
+    def setBillingPlanUndefined: Self = StObject.set(x, "billingPlan", js.undefined)
     
     @scala.inline
     def setCreditCardInformation(
       value: /* This object contains information about a credit card that is associated with an account. */ CreditCardInformation
-    ): Self = this.set("creditCardInformation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "creditCardInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreditCardInformation: Self = this.set("creditCardInformation", js.undefined)
+    def setCreditCardInformationUndefined: Self = StObject.set(x, "creditCardInformation", js.undefined)
     
     @scala.inline
     def setDirectDebitProcessorInformation(
       value: /* Contains information about a bank that processes a customer's direct debit payments. */ DirectDebitProcessorInformation
-    ): Self = this.set("directDebitProcessorInformation", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "directDebitProcessorInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectDebitProcessorInformation: Self = this.set("directDebitProcessorInformation", js.undefined)
+    def setDirectDebitProcessorInformationUndefined: Self = StObject.set(x, "directDebitProcessorInformation", js.undefined)
     
     @scala.inline
-    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = this.set("downgradePlanInformation", value.asInstanceOf[js.Any])
+    def setDowngradePlanInformation(value: DowngradePlanUpdateResponse): Self = StObject.set(x, "downgradePlanInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDowngradePlanInformation: Self = this.set("downgradePlanInformation", js.undefined)
+    def setDowngradePlanInformationUndefined: Self = StObject.set(x, "downgradePlanInformation", js.undefined)
     
     @scala.inline
-    def setPaymentMethod(value: String): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setPaymentMethod(value: String): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def setPaymentProcessorInformation(value: PaymentProcessorInformation): Self = this.set("paymentProcessorInformation", value.asInstanceOf[js.Any])
+    def setPaymentProcessorInformation(value: PaymentProcessorInformation): Self = StObject.set(x, "paymentProcessorInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaymentProcessorInformation: Self = this.set("paymentProcessorInformation", js.undefined)
+    def setPaymentProcessorInformationUndefined: Self = StObject.set(x, "paymentProcessorInformation", js.undefined)
     
     @scala.inline
-    def setReferralInformation(value: ReferralInformation): Self = this.set("referralInformation", value.asInstanceOf[js.Any])
+    def setReferralInformation(value: ReferralInformation): Self = StObject.set(x, "referralInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReferralInformation: Self = this.set("referralInformation", js.undefined)
+    def setReferralInformationUndefined: Self = StObject.set(x, "referralInformation", js.undefined)
     
     @scala.inline
-    def setSuccessorPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = this.set("successorPlans", js.Array(value :_*))
+    def setSuccessorPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = StObject.set(x, "successorPlans", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessorPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = this.set("successorPlans", value.asInstanceOf[js.Any])
+    def setSuccessorPlansUndefined: Self = StObject.set(x, "successorPlans", js.undefined)
     
     @scala.inline
-    def deleteSuccessorPlans: Self = this.set("successorPlans", js.undefined)
+    def setSuccessorPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "successorPlans", js.Array(value :_*))
   }
 }

@@ -3,6 +3,7 @@ package typings.typescriptServices.mod
 import typings.typescriptServices.TypeScript.IExpressionSyntax
 import typings.typescriptServices.TypeScript.ISyntaxList
 import typings.typescriptServices.TypeScript.ISyntaxToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +20,15 @@ class CaseSwitchClauseSyntax protected ()
     parsedInStrictMode: Boolean
   ) = this()
 }
-/* static members */
-@JSImport("typescript-services", "CaseSwitchClauseSyntax")
-@js.native
-object CaseSwitchClauseSyntax extends js.Object {
+object CaseSwitchClauseSyntax {
   
+  /* static member */
+  @JSImport("typescript-services", "CaseSwitchClauseSyntax.create")
+  @js.native
   def create(caseKeyword: ISyntaxToken, expression: IExpressionSyntax, colonToken: ISyntaxToken): typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax = js.native
   
+  /* static member */
+  @JSImport("typescript-services", "CaseSwitchClauseSyntax.create1")
+  @js.native
   def create1(expression: IExpressionSyntax): typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax = js.native
 }

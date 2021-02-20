@@ -14,73 +14,47 @@ import typings.xmlCore.typesMod.XmlBufferEncoding
 import typings.xmlCore.typesMod.XmlChildElementType
 import typings.xmlCore.typesMod.XmlContentType
 import typings.xmlCore.typesMod.XmlElementType
+import typings.xmlCore.typesMod.XmlNamespace
 import typings.xmlCore.utilsMod.SelectNodes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xml-core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("xml-core", "APPLICATION_XML")
+  @js.native
   val APPLICATION_XML: /* "application/xml" */ String = js.native
   
-  val DEFAULT_NAMESPACE_URI: /* "" */ String = js.native
-  
-  val DEFAULT_PREFIX: /* "" */ String = js.native
-  
-  def Parse(xmlString: String): Document = js.native
-  
-  val Select: SelectNodes = js.native
-  
-  def SelectNamespaces(node: Element): AssocArray[String] = js.native
-  
-  def SelectSingleNode(node: Node, path: String): Node | Null = js.native
-  
-  def Stringify(target: Node): String = js.native
-  
-  def XmlAttribute[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  def XmlAttribute[T](params: XmlAttributeType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  
-  val XmlBase64Converter: IConverter[Uint8Array] = js.native
-  
-  val XmlBooleanConverter: IConverter[Boolean] = js.native
-  
-  def XmlChildElement[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  def XmlChildElement[T](params: XmlChildElementType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = js.native
-  
-  def XmlContent[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  def XmlContent[T](params: XmlContentType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  
-  def XmlElement(params: XmlElementType): js.Function1[/* target */ js.Function, Unit] = js.native
-  
-  val XmlNumberConverter: IConverter[Double] = js.native
-  
-  def assign(target: js.Any, sources: js.Any*): js.Any = js.native
-  
-  def isDocument(obj: js.Any): /* is std.Document */ Boolean = js.native
-  
-  def isElement(obj: js.Any): /* is std.Element */ Boolean = js.native
-  
+  @JSImport("xml-core", "Collection")
   @js.native
   class Collection[I] ()
     extends typings.xmlCore.collectionMod.Collection[I] {
     def this(items: js.Array[I]) = this()
   }
   
+  @JSImport("xml-core", "Convert")
   @js.native
   class Convert ()
     extends typings.xmlCore.convertMod.Convert
   /* static members */
-  @js.native
-  object Convert extends js.Object {
+  object Convert {
     
-    /* protected */ def Base64Padding(base64: String): String = js.native
+    @JSImport("xml-core", "Convert.Base64Padding")
+    @js.native
+    def Base64Padding(base64: String): String = js.native
     
+    @JSImport("xml-core", "Convert.FromBase64")
+    @js.native
     def FromBase64(base64Text: String): Uint8Array = js.native
     
+    @JSImport("xml-core", "Convert.FromBase64Url")
+    @js.native
     def FromBase64Url(base64url: String): Uint8Array = js.native
     
+    @JSImport("xml-core", "Convert.FromBinary")
+    @js.native
     def FromBinary(text: String): Uint8Array = js.native
     
     /**
@@ -92,6 +66,8 @@ object mod extends js.Object {
       *
       * @memberOf Convert
       */
+    @JSImport("xml-core", "Convert.FromDateTime")
+    @js.native
     def FromDateTime(dateTime: Date): String = js.native
     
     /**
@@ -103,17 +79,31 @@ object mod extends js.Object {
       *
       * @memberOf Convert
       */
+    @JSImport("xml-core", "Convert.FromHex")
+    @js.native
     def FromHex(hexString: String): Uint8Array = js.native
     
+    @JSImport("xml-core", "Convert.FromString")
+    @js.native
     def FromString(str: String): Uint8Array = js.native
+    @JSImport("xml-core", "Convert.FromString")
+    @js.native
     def FromString(str: String, enc: XmlBufferEncoding): Uint8Array = js.native
     
+    @JSImport("xml-core", "Convert.FromUtf8String")
+    @js.native
     def FromUtf8String(text: String): Uint8Array = js.native
     
+    @JSImport("xml-core", "Convert.ToBase64")
+    @js.native
     def ToBase64(buf: Uint8Array): String = js.native
     
+    @JSImport("xml-core", "Convert.ToBase64Url")
+    @js.native
     def ToBase64Url(data: Uint8Array): String = js.native
     
+    @JSImport("xml-core", "Convert.ToBinary")
+    @js.native
     def ToBinary(buffer: Uint8Array): String = js.native
     
     /**
@@ -125,6 +115,8 @@ object mod extends js.Object {
       *
       * @memberOf Convert
       */
+    @JSImport("xml-core", "Convert.ToDateTime")
+    @js.native
     def ToDateTime(dateTime: String): Date = js.native
     
     /**
@@ -132,20 +124,60 @@ object mod extends js.Object {
       * @param  {BufferSource} buffer Incoming buffer
       * @returns string
       */
+    @JSImport("xml-core", "Convert.ToHex")
+    @js.native
     def ToHex(buffer: Uint8Array): String = js.native
     
+    @JSImport("xml-core", "Convert.ToString")
+    @js.native
     def ToString(buffer: BufferSource): String = js.native
+    @JSImport("xml-core", "Convert.ToString")
+    @js.native
     def ToString(buffer: BufferSource, enc: XmlBufferEncoding): String = js.native
     
+    @JSImport("xml-core", "Convert.ToUtf8String")
+    @js.native
     def ToUtf8String(buffer: Uint8Array): String = js.native
   }
   
+  @JSImport("xml-core", "DEFAULT_NAMESPACE_URI")
+  @js.native
+  val DEFAULT_NAMESPACE_URI: /* "" */ String = js.native
+  
+  @JSImport("xml-core", "DEFAULT_PREFIX")
+  @js.native
+  val DEFAULT_PREFIX: /* "" */ String = js.native
+  
+  @JSImport("xml-core", "NamespaceManager")
   @js.native
   class NamespaceManager ()
-    extends typings.xmlCore.namespaceManagerMod.NamespaceManager
+    extends typings.xmlCore.namespaceManagerMod.NamespaceManager {
+    def this(items: js.Array[XmlNamespace]) = this()
+  }
   
+  @JSImport("xml-core", "Parse")
   @js.native
-  object XE extends js.Object {
+  def Parse(xmlString: String): Document = js.native
+  
+  @JSImport("xml-core", "Select")
+  @js.native
+  val Select: SelectNodes = js.native
+  
+  @JSImport("xml-core", "SelectNamespaces")
+  @js.native
+  def SelectNamespaces(node: Element): AssocArray[String] = js.native
+  
+  @JSImport("xml-core", "SelectSingleNode")
+  @js.native
+  def SelectSingleNode(node: Node, path: String): Node | Null = js.native
+  
+  @JSImport("xml-core", "Stringify")
+  @js.native
+  def Stringify(target: Node): String = js.native
+  
+  @JSImport("xml-core", "XE")
+  @js.native
+  object XE extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.xmlCore.errorMod.XE with Double] = js.native
@@ -189,24 +221,69 @@ object mod extends js.Object {
     /* 18 */ val XML_EXCEPTION: typings.xmlCore.errorMod.XE.XML_EXCEPTION with Double = js.native
   }
   
+  @JSImport("xml-core", "XmlAttribute")
+  @js.native
+  def XmlAttribute[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @JSImport("xml-core", "XmlAttribute")
+  @js.native
+  def XmlAttribute[T](params: XmlAttributeType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  
+  @JSImport("xml-core", "XmlBase64Converter")
+  @js.native
+  val XmlBase64Converter: IConverter[Uint8Array] = js.native
+  
+  @JSImport("xml-core", "XmlBooleanConverter")
+  @js.native
+  val XmlBooleanConverter: IConverter[Boolean] = js.native
+  
+  @JSImport("xml-core", "XmlChildElement")
+  @js.native
+  def XmlChildElement[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  @JSImport("xml-core", "XmlChildElement")
+  @js.native
+  def XmlChildElement[T](params: XmlChildElementType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String | js.Symbol, Unit] = js.native
+  
+  @JSImport("xml-core", "XmlCollection")
   @js.native
   class XmlCollection[I /* <: typings.xmlCore.xmlObjectMod.XmlObject */] ()
-    extends typings.xmlCore.xmlCollectionMod.XmlCollection[I]
+    extends typings.xmlCore.xmlCollectionMod.XmlCollection[I] {
+    def this(properties: js.Object) = this()
+  }
   /* static members */
-  @js.native
-  object XmlCollection extends js.Object {
+  object XmlCollection {
     
-    var parser: js.Any = js.native
+    @JSImport("xml-core", "XmlCollection")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("xml-core", "XmlCollection.parser")
+    @js.native
+    def parser: js.Any = js.native
+    @scala.inline
+    def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("xml-core", "XmlContent")
+  @js.native
+  def XmlContent[T](): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @JSImport("xml-core", "XmlContent")
+  @js.native
+  def XmlContent[T](params: XmlContentType[T]): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  
+  @JSImport("xml-core", "XmlElement")
+  @js.native
+  def XmlElement(params: XmlElementType): js.Function1[/* target */ js.Function, Unit] = js.native
+  
+  @JSImport("xml-core", "XmlError")
   @js.native
   class XmlError protected ()
     extends typings.xmlCore.errorMod.XmlError {
     def this(code: XE, args: js.Any*) = this()
   }
   
+  @JSImport("xml-core", "XmlNodeType")
   @js.native
-  object XmlNodeType extends js.Object {
+  object XmlNodeType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.xmlCore.xmlMod.XmlNodeType with Double] = js.native
@@ -248,14 +325,22 @@ object mod extends js.Object {
     /* 17 */ val XmlDeclaration: typings.xmlCore.xmlMod.XmlNodeType.XmlDeclaration with Double = js.native
   }
   
+  @JSImport("xml-core", "XmlNumberConverter")
+  @js.native
+  val XmlNumberConverter: IConverter[Double] = js.native
+  
+  @JSImport("xml-core", "XmlObject")
   @js.native
   class XmlObject ()
     extends typings.xmlCore.xmlObjectMod.XmlObject {
     def this(properties: js.Object) = this()
   }
   /* static members */
-  @js.native
-  object XmlObject extends js.Object {
+  object XmlObject {
+    
+    @JSImport("xml-core", "XmlObject")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates new instance of XmlDocument with given name of root element
@@ -264,50 +349,138 @@ object mod extends js.Object {
       * @param  {string} prefix
       * @returns Document
       */
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: js.UndefOr[scala.Nothing], prefix: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: String, prefix: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: Null, prefix: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: String, namespaceUri: js.UndefOr[scala.Nothing], prefix: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: String, namespaceUri: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: String, namespaceUri: String, prefix: String): Document = js.native
+    @JSImport("xml-core", "XmlObject.CreateDocument")
+    @js.native
     def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document = js.native
     
+    @JSImport("xml-core", "XmlObject.GetAttribute")
+    @js.native
     def GetAttribute(element: Element, attrName: String): String | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetAttribute")
+    @js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: String): String | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetAttribute")
+    @js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: String, required: Boolean): String | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetAttribute")
+    @js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: Null, required: Boolean): String | Null = js.native
     
+    @JSImport("xml-core", "XmlObject.GetChild")
+    @js.native
     def GetChild(node: Element, localName: String): Element | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetChild")
+    @js.native
     def GetChild(node: Element, localName: String, nameSpace: js.UndefOr[scala.Nothing], required: Boolean): Element | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetChild")
+    @js.native
     def GetChild(node: Element, localName: String, nameSpace: String): Element | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetChild")
+    @js.native
     def GetChild(node: Element, localName: String, nameSpace: String, required: Boolean): Element | Null = js.native
     
+    @JSImport("xml-core", "XmlObject.GetChildren")
+    @js.native
     def GetChildren(node: Node, localName: String): js.Array[Element] = js.native
+    @JSImport("xml-core", "XmlObject.GetChildren")
+    @js.native
     def GetChildren(node: Node, localName: String, nameSpace: String): js.Array[Element] = js.native
     
+    @JSImport("xml-core", "XmlObject.GetElement")
+    @js.native
     def GetElement(element: Element, name: String): Element = js.native
+    @JSImport("xml-core", "XmlObject.GetElement")
+    @js.native
     def GetElement(element: Element, name: String, required: Boolean): Element = js.native
     
+    @JSImport("xml-core", "XmlObject.GetElementById")
+    @js.native
     def GetElementById(element: Document, idValue: String): Element | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetElementById")
+    @js.native
     def GetElementById(element: Element, idValue: String): Element | Null = js.native
     
+    @JSImport("xml-core", "XmlObject.GetFirstChild")
+    @js.native
     def GetFirstChild(node: Node, localName: String): Element | Null = js.native
+    @JSImport("xml-core", "XmlObject.GetFirstChild")
+    @js.native
     def GetFirstChild(node: Node, localName: String, nameSpace: String): Element | Null = js.native
     
+    @JSImport("xml-core", "XmlObject.LoadXml")
+    @js.native
     def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: String): T = js.native
+    @JSImport("xml-core", "XmlObject.LoadXml")
+    @js.native
     def LoadXml[T /* <: typings.xmlCore.xmlObjectMod.XmlObject */](param: Element): T = js.native
     
-    var attributes: AssocArray[XmlAttributeType[_]] = js.native
+    @JSImport("xml-core", "XmlObject.attributes")
+    @js.native
+    def attributes: AssocArray[XmlAttributeType[js.Any]] = js.native
+    @scala.inline
+    def attributes_=(x: AssocArray[XmlAttributeType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
     
-    var elements: AssocArray[XmlChildElementType[_]] = js.native
+    @JSImport("xml-core", "XmlObject.elements")
+    @js.native
+    def elements: AssocArray[XmlChildElementType[js.Any]] = js.native
+    @scala.inline
+    def elements_=(x: AssocArray[XmlChildElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
-    var localName: String = js.native
+    @JSImport("xml-core", "XmlObject.localName")
+    @js.native
+    def localName: String = js.native
+    @scala.inline
+    def localName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localName")(x.asInstanceOf[js.Any])
     
-    var namespaceURI: String | Null = js.native
+    @JSImport("xml-core", "XmlObject.namespaceURI")
+    @js.native
+    def namespaceURI: String | Null = js.native
+    @scala.inline
+    def namespaceURI_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("namespaceURI")(x.asInstanceOf[js.Any])
     
-    var prefix: String | Null = js.native
+    @JSImport("xml-core", "XmlObject.prefix")
+    @js.native
+    def prefix: String | Null = js.native
+    @scala.inline
+    def prefix_=(x: String | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
   }
+  
+  @JSImport("xml-core", "assign")
+  @js.native
+  def assign(target: js.Any, sources: js.Any*): js.Any = js.native
+  
+  @JSImport("xml-core", "isDocument")
+  @js.native
+  def isDocument(obj: js.Any): /* is std.Document */ Boolean = js.native
+  
+  @JSImport("xml-core", "isElement")
+  @js.native
+  def isElement(obj: js.Any): /* is std.Element */ Boolean = js.native
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudTalentV4JobProcessingOptions extends js.Object {
+trait GoogleCloudTalentV4JobProcessingOptions extends StObject {
   
   /** If set to `true`, the service does not attempt to resolve a more precise address for the job. */
   var disableStreetAddressResolution: js.UndefOr[Boolean] = js.native
@@ -25,30 +26,18 @@ object GoogleCloudTalentV4JobProcessingOptions {
   }
   
   @scala.inline
-  implicit class GoogleCloudTalentV4JobProcessingOptionsOps[Self <: GoogleCloudTalentV4JobProcessingOptions] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudTalentV4JobProcessingOptionsMutableBuilder[Self <: GoogleCloudTalentV4JobProcessingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHtmlSanitization(value: String): Self = StObject.set(x, "htmlSanitization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStreetAddressResolution(value: Boolean): Self = this.set("disableStreetAddressResolution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisableStreetAddressResolution: Self = this.set("disableStreetAddressResolution", js.undefined)
-    
-    @scala.inline
-    def setHtmlSanitization(value: String): Self = this.set("htmlSanitization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHtmlSanitization: Self = this.set("htmlSanitization", js.undefined)
+    def setHtmlSanitizationUndefined: Self = StObject.set(x, "htmlSanitization", js.undefined)
   }
 }

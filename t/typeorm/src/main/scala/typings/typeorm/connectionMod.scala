@@ -24,16 +24,16 @@ import typings.typeorm.repositoryMod.Repository
 import typings.typeorm.selectQueryBuilderMod.SelectQueryBuilder
 import typings.typeorm.sqljsEntityManagerMod.SqljsEntityManager
 import typings.typeorm.treeRepositoryMod.TreeRepository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/connection/Connection", JSImport.Namespace)
-@js.native
-object connectionMod extends js.Object {
+object connectionMod {
   
+  @JSImport("typeorm/browser/connection/Connection", "Connection")
   @js.native
-  class Connection protected () extends js.Object {
+  class Connection protected () extends StObject {
     def this(options: ConnectionOptions) = this()
     
     /**

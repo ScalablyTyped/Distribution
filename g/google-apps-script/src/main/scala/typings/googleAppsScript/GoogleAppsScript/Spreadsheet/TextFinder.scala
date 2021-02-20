@@ -1,6 +1,7 @@
 package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import typings.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Find or replace text within a range, sheet or spreadsheet. Can also specify search options.
   */
 @js.native
-trait TextFinder extends js.Object {
+trait TextFinder extends StObject {
   
   def findAll(): js.Array[Range] = js.native
   
@@ -57,54 +58,42 @@ object TextFinder {
   }
   
   @scala.inline
-  implicit class TextFinderOps[Self <: TextFinder] (val x: Self) extends AnyVal {
+  implicit class TextFinderMutableBuilder[Self <: TextFinder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindAll(value: () => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindNext(value: () => Range | Null): Self = StObject.set(x, "findNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFindPrevious(value: () => Range | Null): Self = StObject.set(x, "findPrevious", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindAll(value: () => js.Array[Range]): Self = this.set("findAll", js.Any.fromFunction0(value))
+    def setGetCurrentMatch(value: () => Range | Null): Self = StObject.set(x, "getCurrentMatch", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFindNext(value: () => Range | Null): Self = this.set("findNext", js.Any.fromFunction0(value))
+    def setIgnoreDiacritics(value: Boolean => TextFinder): Self = StObject.set(x, "ignoreDiacritics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFindPrevious(value: () => Range | Null): Self = this.set("findPrevious", js.Any.fromFunction0(value))
+    def setMatchCase(value: Boolean => TextFinder): Self = StObject.set(x, "matchCase", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentMatch(value: () => Range | Null): Self = this.set("getCurrentMatch", js.Any.fromFunction0(value))
+    def setMatchEntireCell(value: Boolean => TextFinder): Self = StObject.set(x, "matchEntireCell", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIgnoreDiacritics(value: Boolean => TextFinder): Self = this.set("ignoreDiacritics", js.Any.fromFunction1(value))
+    def setMatchFormulaText(value: Boolean => TextFinder): Self = StObject.set(x, "matchFormulaText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatchCase(value: Boolean => TextFinder): Self = this.set("matchCase", js.Any.fromFunction1(value))
+    def setReplaceAllWith(value: String => Integer): Self = StObject.set(x, "replaceAllWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatchEntireCell(value: Boolean => TextFinder): Self = this.set("matchEntireCell", js.Any.fromFunction1(value))
+    def setReplaceWith(value: String => Integer): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMatchFormulaText(value: Boolean => TextFinder): Self = this.set("matchFormulaText", js.Any.fromFunction1(value))
+    def setStartFrom(value: Range => TextFinder): Self = StObject.set(x, "startFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReplaceAllWith(value: String => Integer): Self = this.set("replaceAllWith", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceWith(value: String => Integer): Self = this.set("replaceWith", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStartFrom(value: Range => TextFinder): Self = this.set("startFrom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUseRegularExpression(value: Boolean => TextFinder): Self = this.set("useRegularExpression", js.Any.fromFunction1(value))
+    def setUseRegularExpression(value: Boolean => TextFinder): Self = StObject.set(x, "useRegularExpression", js.Any.fromFunction1(value))
   }
 }

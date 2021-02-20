@@ -1,12 +1,13 @@
 package typings.officeUiFabricReact.anon
 
 import typings.officeUiFabricReact.hoverCardTypesMod.HoverCardType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardDismissDelay extends js.Object {
+trait CardDismissDelay extends StObject {
   
   var cardDismissDelay: Double = js.native
   
@@ -40,39 +41,27 @@ object CardDismissDelay {
   }
   
   @scala.inline
-  implicit class CardDismissDelayOps[Self <: CardDismissDelay] (val x: Self) extends AnyVal {
+  implicit class CardDismissDelayMutableBuilder[Self <: CardDismissDelay] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardOpenDelay(value: Double): Self = StObject.set(x, "cardOpenDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpandedCardOpenDelay(value: Double): Self = StObject.set(x, "expandedCardOpenDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardDismissDelay(value: Double): Self = this.set("cardDismissDelay", value.asInstanceOf[js.Any])
+    def setInstantOpenOnClick(value: Boolean): Self = StObject.set(x, "instantOpenOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardOpenDelay(value: Double): Self = this.set("cardOpenDelay", value.asInstanceOf[js.Any])
+    def setOpenHotKey(value: Double): Self = StObject.set(x, "openHotKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedCardOpenDelay(value: Double): Self = this.set("expandedCardOpenDelay", value.asInstanceOf[js.Any])
+    def setSetInitialFocus(value: Boolean): Self = StObject.set(x, "setInitialFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstantOpenOnClick(value: Boolean): Self = this.set("instantOpenOnClick", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenHotKey(value: Double): Self = this.set("openHotKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSetInitialFocus(value: Boolean): Self = this.set("setInitialFocus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: HoverCardType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: HoverCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,13 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Networking.EndpointPair
 import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Networking.HostNameSortOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait INetworkInformationStatics extends js.Object {
+trait INetworkInformationStatics extends StObject {
   
   def getConnectionProfiles(): IVectorView[ConnectionProfile] = js.native
   
@@ -45,39 +46,27 @@ object INetworkInformationStatics {
   }
   
   @scala.inline
-  implicit class INetworkInformationStaticsOps[Self <: INetworkInformationStatics] (val x: Self) extends AnyVal {
+  implicit class INetworkInformationStaticsMutableBuilder[Self <: INetworkInformationStatics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = StObject.set(x, "getConnectionProfiles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetHostNames(value: () => IVectorView[HostName]): Self = StObject.set(x, "getHostNames", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInternetConnectionProfile(value: () => ConnectionProfile): Self = StObject.set(x, "getInternetConnectionProfile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetConnectionProfiles(value: () => IVectorView[ConnectionProfile]): Self = this.set("getConnectionProfiles", js.Any.fromFunction0(value))
+    def setGetLanIdentifiers(value: () => IVectorView[LanIdentifier]): Self = StObject.set(x, "getLanIdentifiers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHostNames(value: () => IVectorView[HostName]): Self = this.set("getHostNames", js.Any.fromFunction0(value))
+    def setGetProxyConfigurationAsync(value: Uri => IAsyncOperation[ProxyConfiguration]): Self = StObject.set(x, "getProxyConfigurationAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetInternetConnectionProfile(value: () => ConnectionProfile): Self = this.set("getInternetConnectionProfile", js.Any.fromFunction0(value))
+    def setGetSortedEndpointPairs(value: (IIterable[EndpointPair], HostNameSortOptions) => IVectorView[EndpointPair]): Self = StObject.set(x, "getSortedEndpointPairs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetLanIdentifiers(value: () => IVectorView[LanIdentifier]): Self = this.set("getLanIdentifiers", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetProxyConfigurationAsync(value: Uri => IAsyncOperation[ProxyConfiguration]): Self = this.set("getProxyConfigurationAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSortedEndpointPairs(value: (IIterable[EndpointPair], HostNameSortOptions) => IVectorView[EndpointPair]): Self = this.set("getSortedEndpointPairs", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setOnnetworkstatuschanged(value: js.Any): Self = this.set("onnetworkstatuschanged", value.asInstanceOf[js.Any])
+    def setOnnetworkstatuschanged(value: js.Any): Self = StObject.set(x, "onnetworkstatuschanged", value.asInstanceOf[js.Any])
   }
 }

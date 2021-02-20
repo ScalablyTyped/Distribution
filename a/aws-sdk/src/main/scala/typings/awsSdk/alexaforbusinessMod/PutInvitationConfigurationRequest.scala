@@ -1,11 +1,12 @@
 package typings.awsSdk.alexaforbusinessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutInvitationConfigurationRequest extends js.Object {
+trait PutInvitationConfigurationRequest extends StObject {
   
   /**
     * The email ID of the organization or individual contact that the enrolled user can use. 
@@ -31,36 +32,24 @@ object PutInvitationConfigurationRequest {
   }
   
   @scala.inline
-  implicit class PutInvitationConfigurationRequestOps[Self <: PutInvitationConfigurationRequest] (val x: Self) extends AnyVal {
+  implicit class PutInvitationConfigurationRequestMutableBuilder[Self <: PutInvitationConfigurationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactEmail(value: Email): Self = StObject.set(x, "ContactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactEmailUndefined: Self = StObject.set(x, "ContactEmail", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganizationName(value: OrganizationName): Self = StObject.set(x, "OrganizationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationName(value: OrganizationName): Self = this.set("OrganizationName", value.asInstanceOf[js.Any])
+    def setPrivateSkillIds(value: ShortSkillIdList): Self = StObject.set(x, "PrivateSkillIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactEmail(value: Email): Self = this.set("ContactEmail", value.asInstanceOf[js.Any])
+    def setPrivateSkillIdsUndefined: Self = StObject.set(x, "PrivateSkillIds", js.undefined)
     
     @scala.inline
-    def deleteContactEmail: Self = this.set("ContactEmail", js.undefined)
-    
-    @scala.inline
-    def setPrivateSkillIdsVarargs(value: SkillId*): Self = this.set("PrivateSkillIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrivateSkillIds(value: ShortSkillIdList): Self = this.set("PrivateSkillIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrivateSkillIds: Self = this.set("PrivateSkillIds", js.undefined)
+    def setPrivateSkillIdsVarargs(value: SkillId*): Self = StObject.set(x, "PrivateSkillIds", js.Array(value :_*))
   }
 }

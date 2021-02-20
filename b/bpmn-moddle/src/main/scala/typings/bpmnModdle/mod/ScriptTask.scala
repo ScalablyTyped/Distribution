@@ -1,17 +1,12 @@
 package typings.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.bpmnModdle.mod.TypeDerived because Already inherited
-- typings.bpmnModdle.mod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ @js.native
-trait ScriptTask extends Activity {
-  
-  var incomingConversationLinks: js.Array[ConversationLink] = js.native
-  
-  var outgoingConversationLinks: js.Array[ConversationLink] = js.native
+@js.native
+trait ScriptTask extends Task {
   
   var script: String = js.native
   
@@ -51,36 +46,12 @@ object ScriptTask {
   }
   
   @scala.inline
-  implicit class ScriptTaskOps[Self <: ScriptTask] (val x: Self) extends AnyVal {
+  implicit class ScriptTaskMutableBuilder[Self <: ScriptTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIncomingConversationLinksVarargs(value: ConversationLink*): Self = this.set("incomingConversationLinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncomingConversationLinks(value: js.Array[ConversationLink]): Self = this.set("incomingConversationLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutgoingConversationLinksVarargs(value: ConversationLink*): Self = this.set("outgoingConversationLinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setOutgoingConversationLinks(value: js.Array[ConversationLink]): Self = this.set("outgoingConversationLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScript(value: String): Self = this.set("script", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScriptFormat(value: String): Self = this.set("scriptFormat", value.asInstanceOf[js.Any])
+    def setScriptFormat(value: String): Self = StObject.set(x, "scriptFormat", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryExecutionStatus extends js.Object {
+trait QueryExecutionStatus extends StObject {
   
   /**
     * The date and time that the query completed.
@@ -36,42 +37,30 @@ object QueryExecutionStatus {
   }
   
   @scala.inline
-  implicit class QueryExecutionStatusOps[Self <: QueryExecutionStatus] (val x: Self) extends AnyVal {
+  implicit class QueryExecutionStatusMutableBuilder[Self <: QueryExecutionStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompletionDateTime(value: Date): Self = StObject.set(x, "CompletionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletionDateTimeUndefined: Self = StObject.set(x, "CompletionDateTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: QueryExecutionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompletionDateTime(value: Date): Self = this.set("CompletionDateTime", value.asInstanceOf[js.Any])
+    def setStateChangeReason(value: String): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompletionDateTime: Self = this.set("CompletionDateTime", js.undefined)
+    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
     @scala.inline
-    def setState(value: QueryExecutionState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setSubmissionDateTime(value: Date): Self = StObject.set(x, "SubmissionDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStateChangeReason(value: String): Self = this.set("StateChangeReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStateChangeReason: Self = this.set("StateChangeReason", js.undefined)
-    
-    @scala.inline
-    def setSubmissionDateTime(value: Date): Self = this.set("SubmissionDateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubmissionDateTime: Self = this.set("SubmissionDateTime", js.undefined)
+    def setSubmissionDateTimeUndefined: Self = StObject.set(x, "SubmissionDateTime", js.undefined)
   }
 }

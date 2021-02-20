@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,36 +81,24 @@ object XWordCursor {
   }
   
   @scala.inline
-  implicit class XWordCursorOps[Self <: XWordCursor] (val x: Self) extends AnyVal {
+  implicit class XWordCursorMutableBuilder[Self <: XWordCursor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGotoEndOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoEndOfWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGotoNextWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoNextWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGotoPreviousWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoPreviousWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoEndOfWord(value: Boolean => Boolean): Self = this.set("gotoEndOfWord", js.Any.fromFunction1(value))
+    def setGotoStartOfWord(value: Boolean => Boolean): Self = StObject.set(x, "gotoStartOfWord", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGotoNextWord(value: Boolean => Boolean): Self = this.set("gotoNextWord", js.Any.fromFunction1(value))
+    def setIsEndOfWord(value: () => Boolean): Self = StObject.set(x, "isEndOfWord", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGotoPreviousWord(value: Boolean => Boolean): Self = this.set("gotoPreviousWord", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGotoStartOfWord(value: Boolean => Boolean): Self = this.set("gotoStartOfWord", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setIsEndOfWord(value: () => Boolean): Self = this.set("isEndOfWord", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsStartOfWord(value: () => Boolean): Self = this.set("isStartOfWord", js.Any.fromFunction0(value))
+    def setIsStartOfWord(value: () => Boolean): Self = StObject.set(x, "isStartOfWord", js.Any.fromFunction0(value))
   }
 }

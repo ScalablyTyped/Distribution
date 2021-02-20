@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.chart
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,33 +65,21 @@ object ChartAxisXSupplier {
   }
   
   @scala.inline
-  implicit class ChartAxisXSupplierOps[Self <: ChartAxisXSupplier] (val x: Self) extends AnyVal {
+  implicit class ChartAxisXSupplierMutableBuilder[Self <: ChartAxisXSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasXAxis(value: Boolean): Self = StObject.set(x, "HasXAxis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHasXAxisDescription(value: Boolean): Self = StObject.set(x, "HasXAxisDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHasXAxisGrid(value: Boolean): Self = StObject.set(x, "HasXAxisGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasXAxis(value: Boolean): Self = this.set("HasXAxis", value.asInstanceOf[js.Any])
+    def setHasXAxisHelpGrid(value: Boolean): Self = StObject.set(x, "HasXAxisHelpGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasXAxisDescription(value: Boolean): Self = this.set("HasXAxisDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasXAxisGrid(value: Boolean): Self = this.set("HasXAxisGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasXAxisHelpGrid(value: Boolean): Self = this.set("HasXAxisHelpGrid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHasXAxisTitle(value: Boolean): Self = this.set("HasXAxisTitle", value.asInstanceOf[js.Any])
+    def setHasXAxisTitle(value: Boolean): Self = StObject.set(x, "HasXAxisTitle", value.asInstanceOf[js.Any])
   }
 }

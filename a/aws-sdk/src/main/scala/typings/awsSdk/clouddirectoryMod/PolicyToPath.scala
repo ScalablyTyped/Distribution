@@ -1,11 +1,12 @@
 package typings.awsSdk.clouddirectoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolicyToPath extends js.Object {
+trait PolicyToPath extends StObject {
   
   /**
     * The path that is referenced from the root.
@@ -26,33 +27,21 @@ object PolicyToPath {
   }
   
   @scala.inline
-  implicit class PolicyToPathOps[Self <: PolicyToPath] (val x: Self) extends AnyVal {
+  implicit class PolicyToPathMutableBuilder[Self <: PolicyToPath] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPath(value: PathString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicies(value: PolicyAttachmentList): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: PathString): Self = this.set("Path", value.asInstanceOf[js.Any])
+    def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("Path", js.undefined)
-    
-    @scala.inline
-    def setPoliciesVarargs(value: PolicyAttachment*): Self = this.set("Policies", js.Array(value :_*))
-    
-    @scala.inline
-    def setPolicies(value: PolicyAttachmentList): Self = this.set("Policies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicies: Self = this.set("Policies", js.undefined)
+    def setPoliciesVarargs(value: PolicyAttachment*): Self = StObject.set(x, "Policies", js.Array(value :_*))
   }
 }

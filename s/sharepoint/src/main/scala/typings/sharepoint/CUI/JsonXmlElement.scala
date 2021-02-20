@@ -1,11 +1,12 @@
 package typings.sharepoint.CUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonXmlElement extends js.Object {
+trait JsonXmlElement extends StObject {
   
   def appendChild(name: String, attrs: js.Array[String]): JsonXmlElement = js.native
   
@@ -32,33 +33,21 @@ object JsonXmlElement {
   }
   
   @scala.inline
-  implicit class JsonXmlElementOps[Self <: JsonXmlElement] (val x: Self) extends AnyVal {
+  implicit class JsonXmlElementMutableBuilder[Self <: JsonXmlElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendChild(value: (String, js.Array[String]) => JsonXmlElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendChildNode(value: JsonXmlElement => JsonXmlElement): Self = StObject.set(x, "appendChildNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGet_attributes(value: () => js.Array[String]): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppendChild(value: (String, js.Array[String]) => JsonXmlElement): Self = this.set("appendChild", js.Any.fromFunction2(value))
+    def setGet_childNodes(value: () => js.Array[JsonXmlElement]): Self = StObject.set(x, "get_childNodes", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAppendChildNode(value: JsonXmlElement => JsonXmlElement): Self = this.set("appendChildNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGet_attributes(value: () => js.Array[String]): Self = this.set("get_attributes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_childNodes(value: () => js.Array[JsonXmlElement]): Self = this.set("get_childNodes", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGet_name(value: () => String): Self = this.set("get_name", js.Any.fromFunction0(value))
+    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
   }
 }

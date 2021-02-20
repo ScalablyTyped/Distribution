@@ -1,5 +1,6 @@
 package typings.atlassianConnectJs.AP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,6 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A JavaScript module which provides functions to interact with the user currently in session.
   */
-@JSGlobal("AP.user")
-@js.native
-object user extends js.Object
+object user

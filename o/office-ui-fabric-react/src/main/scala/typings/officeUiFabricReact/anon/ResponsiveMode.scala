@@ -1,11 +1,12 @@
 package typings.officeUiFabricReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponsiveMode extends js.Object {
+trait ResponsiveMode extends StObject {
   
   var responsiveMode: js.UndefOr[typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode] = js.native
 }
@@ -18,24 +19,12 @@ object ResponsiveMode {
   }
   
   @scala.inline
-  implicit class ResponsiveModeOps[Self <: ResponsiveMode] (val x: Self) extends AnyVal {
+  implicit class ResponsiveModeMutableBuilder[Self <: ResponsiveMode] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResponsiveMode(value: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode): Self = StObject.set(x, "responsiveMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResponsiveMode(value: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode): Self = this.set("responsiveMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponsiveMode: Self = this.set("responsiveMode", js.undefined)
+    def setResponsiveModeUndefined: Self = StObject.set(x, "responsiveMode", js.undefined)
   }
 }

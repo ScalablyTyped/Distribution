@@ -1,11 +1,12 @@
 package typings.officeUiFabricReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Available extends js.Object {
+trait Available extends StObject {
   
   var available: String = js.native
   
@@ -38,39 +39,27 @@ object Available {
   }
   
   @scala.inline
-  implicit class AvailableOps[Self <: Available] (val x: Self) extends AnyVal {
+  implicit class AvailableMutableBuilder[Self <: Available] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailable(value: String): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAway(value: String): Self = StObject.set(x, "away", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailable(value: String): Self = this.set("available", value.asInstanceOf[js.Any])
+    def setBusy(value: String): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAway(value: String): Self = this.set("away", value.asInstanceOf[js.Any])
+    def setDnd(value: String): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setOffline(value: String): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusy(value: String): Self = this.set("busy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDnd(value: String): Self = this.set("dnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffline(value: String): Self = this.set("offline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOof(value: String): Self = this.set("oof", value.asInstanceOf[js.Any])
+    def setOof(value: String): Self = StObject.set(x, "oof", value.asInstanceOf[js.Any])
   }
 }

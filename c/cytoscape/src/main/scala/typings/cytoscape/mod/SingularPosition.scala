@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/position--dimensions
   */
 @js.native
-trait SingularPosition extends js.Object {
+trait SingularPosition extends StObject {
   
   /**
     * Gets whether the element is active (e.g. on user tap, grab, etc).
@@ -75,45 +76,33 @@ object SingularPosition {
   }
   
   @scala.inline
-  implicit class SingularPositionOps[Self <: SingularPosition] (val x: Self) extends AnyVal {
+  implicit class SingularPositionMutableBuilder[Self <: SingularPosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: () => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOuterHeight(value: () => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActive(value: () => Boolean): Self = this.set("active", js.Any.fromFunction0(value))
+    def setOuterWidth(value: () => Double): Self = StObject.set(x, "outerWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHeight(value: () => Double): Self = this.set("height", js.Any.fromFunction0(value))
+    def setRenderedHeight(value: () => Double): Self = StObject.set(x, "renderedHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOuterHeight(value: () => Double): Self = this.set("outerHeight", js.Any.fromFunction0(value))
+    def setRenderedOuterHeight(value: () => Double): Self = StObject.set(x, "renderedOuterHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOuterWidth(value: () => Double): Self = this.set("outerWidth", js.Any.fromFunction0(value))
+    def setRenderedOuterWidth(value: () => Double): Self = StObject.set(x, "renderedOuterWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderedHeight(value: () => Double): Self = this.set("renderedHeight", js.Any.fromFunction0(value))
+    def setRenderedWidth(value: () => Double): Self = StObject.set(x, "renderedWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderedOuterHeight(value: () => Double): Self = this.set("renderedOuterHeight", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRenderedOuterWidth(value: () => Double): Self = this.set("renderedOuterWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRenderedWidth(value: () => Double): Self = this.set("renderedWidth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setWidth(value: () => Double): Self = this.set("width", js.Any.fromFunction0(value))
+    def setWidth(value: () => Double): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
   }
 }

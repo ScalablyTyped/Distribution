@@ -1,12 +1,13 @@
 package typings.activexWia.WIA
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The DeviceCommand object describes a CommandID that can be used when calling ExecuteCommand on a Device or Item object. */
 @js.native
-trait DeviceCommand extends js.Object {
+trait DeviceCommand extends StObject {
   
   /** Returns the commandID for this Command */
   val CommandID: String = js.native
@@ -30,30 +31,18 @@ object DeviceCommand {
   }
   
   @scala.inline
-  implicit class DeviceCommandOps[Self <: DeviceCommand] (val x: Self) extends AnyVal {
+  implicit class DeviceCommandMutableBuilder[Self <: DeviceCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandID(value: String): Self = StObject.set(x, "CommandID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandID(value: String): Self = this.set("CommandID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWIADotDeviceCommand_typekey(value: DeviceCommand): Self = this.set("WIA.DeviceCommand_typekey", value.asInstanceOf[js.Any])
+    def setWIADotDeviceCommand_typekey(value: DeviceCommand): Self = StObject.set(x, "WIA.DeviceCommand_typekey", value.asInstanceOf[js.Any])
   }
 }

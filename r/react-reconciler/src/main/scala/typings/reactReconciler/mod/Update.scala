@@ -4,13 +4,14 @@ import typings.reactReconciler.reactReconcilerNumbers.`0`
 import typings.reactReconciler.reactReconcilerNumbers.`1`
 import typings.reactReconciler.reactReconcilerNumbers.`2`
 import typings.reactReconciler.reactReconcilerNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // react-reconciler/ReactUpdateQueue
 @js.native
-trait Update[State] extends js.Object {
+trait Update[State] extends StObject {
   
   var callback: js.Function0[_] | Null = js.native
   
@@ -33,45 +34,33 @@ object Update {
   }
   
   @scala.inline
-  implicit class UpdateOps[Self <: Update[_], State] (val x: Self with Update[State]) extends AnyVal {
+  implicit class UpdateMutableBuilder[Self <: Update[_], State] (val x: Self with Update[State]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback(value: () => _): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallbackNull: Self = StObject.set(x, "callback", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationTime(value: ExpirationTime): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationTime(value: ExpirationTime): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    def setNext(value: Update[State]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayload(value: js.Any): Self = this.set("payload", value.asInstanceOf[js.Any])
+    def setNextEffect(value: Update[State]): Self = StObject.set(x, "nextEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTag(value: `0` | `1` | `2` | `3`): Self = this.set("tag", value.asInstanceOf[js.Any])
+    def setNextEffectNull: Self = StObject.set(x, "nextEffect", null)
     
     @scala.inline
-    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    def setNextNull: Self = StObject.set(x, "next", null)
     
     @scala.inline
-    def setCallbackNull: Self = this.set("callback", null)
+    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNext(value: Update[State]): Self = this.set("next", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextNull: Self = this.set("next", null)
-    
-    @scala.inline
-    def setNextEffect(value: Update[State]): Self = this.set("nextEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNextEffectNull: Self = this.set("nextEffect", null)
+    def setTag(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

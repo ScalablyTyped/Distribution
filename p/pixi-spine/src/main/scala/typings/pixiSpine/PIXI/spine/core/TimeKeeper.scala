@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeKeeper extends js.Object {
+trait TimeKeeper extends StObject {
   
   var delta: Double = js.native
   
@@ -41,42 +42,30 @@ object TimeKeeper {
   }
   
   @scala.inline
-  implicit class TimeKeeperOps[Self <: TimeKeeper] (val x: Self) extends AnyVal {
+  implicit class TimeKeeperMutableBuilder[Self <: TimeKeeper] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameCount(value: js.Any): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameTime(value: js.Any): Self = StObject.set(x, "frameTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setFramesPerSecond(value: Double): Self = StObject.set(x, "framesPerSecond", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameCount(value: js.Any): Self = this.set("frameCount", value.asInstanceOf[js.Any])
+    def setLastTime(value: js.Any): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameTime(value: js.Any): Self = this.set("frameTime", value.asInstanceOf[js.Any])
+    def setMaxDelta(value: Double): Self = StObject.set(x, "maxDelta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFramesPerSecond(value: Double): Self = this.set("framesPerSecond", value.asInstanceOf[js.Any])
+    def setTotalTime(value: Double): Self = StObject.set(x, "totalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastTime(value: js.Any): Self = this.set("lastTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxDelta(value: Double): Self = this.set("maxDelta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalTime(value: Double): Self = this.set("totalTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

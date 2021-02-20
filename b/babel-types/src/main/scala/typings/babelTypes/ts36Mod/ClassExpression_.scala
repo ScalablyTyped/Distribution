@@ -1,6 +1,7 @@
 package typings.babelTypes.ts36Mod
 
 import typings.babelTypes.babelTypesStrings.ClassExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,69 +51,57 @@ object ClassExpression_ {
   }
   
   @scala.inline
-  implicit class ClassExpression_Ops[Self <: ClassExpression_] (val x: Self) extends AnyVal {
+  implicit class ClassExpression_MutableBuilder[Self <: ClassExpression_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: ClassBody_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
     @scala.inline
-    def setBody(value: ClassBody_): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
     @scala.inline
-    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperClass(value: Expression): Self = this.set("superClass", value.asInstanceOf[js.Any])
+    def setImplements(value: js.Array[ClassImplements_]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ClassExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setImplementsUndefined: Self = StObject.set(x, "implements", js.undefined)
     
     @scala.inline
-    def setDecoratorsVarargs(value: Decorator_ *): Self = this.set("decorators", js.Array(value :_*))
+    def setImplementsVarargs(value: ClassImplements_ *): Self = StObject.set(x, "implements", js.Array(value :_*))
     
     @scala.inline
-    def setDecorators(value: js.Array[Decorator_]): Self = this.set("decorators", value.asInstanceOf[js.Any])
+    def setMixins(value: js.Array[_]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecorators: Self = this.set("decorators", js.undefined)
+    def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
     
     @scala.inline
-    def setImplementsVarargs(value: ClassImplements_ *): Self = this.set("implements", js.Array(value :_*))
+    def setMixinsVarargs(value: js.Any*): Self = StObject.set(x, "mixins", js.Array(value :_*))
     
     @scala.inline
-    def setImplements(value: js.Array[ClassImplements_]): Self = this.set("implements", value.asInstanceOf[js.Any])
+    def setSuperClass(value: Expression): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImplements: Self = this.set("implements", js.undefined)
+    def setSuperTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "superTypeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMixinsVarargs(value: js.Any*): Self = this.set("mixins", js.Array(value :_*))
+    def setSuperTypeParametersUndefined: Self = StObject.set(x, "superTypeParameters", js.undefined)
     
     @scala.inline
-    def setMixins(value: js.Array[_]): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    def setType(value: ClassExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMixins: Self = this.set("mixins", js.undefined)
+    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperTypeParameters(value: TypeParameterInstantiation_): Self = this.set("superTypeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperTypeParameters: Self = this.set("superTypeParameters", js.undefined)
-    
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
+    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

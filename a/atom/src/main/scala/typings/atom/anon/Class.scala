@@ -6,12 +6,13 @@ import typings.atom.atomStrings.hover
 import typings.atom.atomStrings.manual
 import typings.atom.mod.TooltipPlacement
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Class extends js.Object {
+trait Class extends StObject {
   
   var `class`: js.UndefOr[String] = js.native
   
@@ -38,72 +39,60 @@ object Class {
   }
   
   @scala.inline
-  implicit class ClassOps[Self <: Class] (val x: Self) extends AnyVal {
+  implicit class ClassMutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Hide): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteClass: Self = this.set("class", js.undefined)
+    def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelay(value: Hide): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setKeyBindingCommand(value: String): Self = StObject.set(x, "keyBindingCommand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setKeyBindingCommandUndefined: Self = StObject.set(x, "keyBindingCommand", js.undefined)
     
     @scala.inline
-    def deleteHtml: Self = this.set("html", js.undefined)
+    def setKeyBindingTarget(value: HTMLElement): Self = StObject.set(x, "keyBindingTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyBindingCommand(value: String): Self = this.set("keyBindingCommand", value.asInstanceOf[js.Any])
+    def setKeyBindingTargetUndefined: Self = StObject.set(x, "keyBindingTarget", js.undefined)
     
     @scala.inline
-    def deleteKeyBindingCommand: Self = this.set("keyBindingCommand", js.undefined)
+    def setPlacement(value: TooltipPlacement | js.Function0[TooltipPlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyBindingTarget(value: HTMLElement): Self = this.set("keyBindingTarget", value.asInstanceOf[js.Any])
+    def setPlacementFunction0(value: () => TooltipPlacement): Self = StObject.set(x, "placement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteKeyBindingTarget: Self = this.set("keyBindingTarget", js.undefined)
+    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
     @scala.inline
-    def setPlacementFunction0(value: () => TooltipPlacement): Self = this.set("placement", js.Any.fromFunction0(value))
+    def setTitle(value: String | js.Function0[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: TooltipPlacement | js.Function0[TooltipPlacement]): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setTitleFunction0(value: () => String): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deletePlacement: Self = this.set("placement", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTitleFunction0(value: () => String): Self = this.set("title", js.Any.fromFunction0(value))
+    def setTrigger(value: click | hover | focus | manual): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String | js.Function0[String]): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTrigger(value: click | hover | focus | manual): Self = this.set("trigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

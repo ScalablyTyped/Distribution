@@ -3,12 +3,13 @@ package typings.stripe.mod.accounts
 import typings.stripe.stripeStrings.fraud
 import typings.stripe.stripeStrings.other
 import typings.stripe.stripeStrings.terms_of_service
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IRejectReason extends js.Object {
+trait IRejectReason extends StObject {
   
   /**
     * The reason for rejecting the account. May be one of "fraud",
@@ -25,21 +26,9 @@ object IRejectReason {
   }
   
   @scala.inline
-  implicit class IRejectReasonOps[Self <: IRejectReason] (val x: Self) extends AnyVal {
+  implicit class IRejectReasonMutableBuilder[Self <: IRejectReason] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReason(value: fraud | terms_of_service | other): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setReason(value: fraud | terms_of_service | other): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

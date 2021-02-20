@@ -3,14 +3,14 @@ package typings.ts3NodejsLibrary
 import typings.std.Error
 import typings.ts3NodejsLibrary.anon.ExtraMsg
 import typings.ts3NodejsLibrary.responseTypesMod.QueryErrorMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts3-nodejs-library/lib/exception/ResponseError", JSImport.Namespace)
-@js.native
-object responseErrorMod extends js.Object {
+object responseErrorMod {
   
+  @JSImport("ts3-nodejs-library/lib/exception/ResponseError", "ResponseError")
   @js.native
   class ResponseError protected () extends Error {
     def this(error: QueryErrorMessage, stack: String) = this()

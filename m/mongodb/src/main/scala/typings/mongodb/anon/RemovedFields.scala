@@ -2,12 +2,13 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mod.FieldUpdates
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemovedFields[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
+trait RemovedFields[TSchema /* <: StringDictionary[js.Any] */] extends StObject {
   
   var removedFields: js.Array[/* keyof TSchema */ String] = js.native
   
@@ -26,27 +27,15 @@ object RemovedFields {
   }
   
   @scala.inline
-  implicit class RemovedFieldsOps[Self <: RemovedFields[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with RemovedFields[TSchema]) extends AnyVal {
+  implicit class RemovedFieldsMutableBuilder[Self <: RemovedFields[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with RemovedFields[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemovedFields(value: js.Array[/* keyof TSchema */ String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemovedFieldsVarargs(value: (/* keyof TSchema */ String)*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemovedFieldsVarargs(value: (/* keyof TSchema */ String)*): Self = this.set("removedFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setRemovedFields(value: js.Array[/* keyof TSchema */ String]): Self = this.set("removedFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdatedFields(value: FieldUpdates[TSchema]): Self = this.set("updatedFields", value.asInstanceOf[js.Any])
+    def setUpdatedFields(value: FieldUpdates[TSchema]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.typeorm.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigName extends js.Object {
+trait ConfigName extends StObject {
   
   /**
     * Filename of the ormconfig configuration. By default its equal to "ormconfig".
@@ -27,30 +28,18 @@ object ConfigName {
   }
   
   @scala.inline
-  implicit class ConfigNameOps[Self <: ConfigName] (val x: Self) extends AnyVal {
+  implicit class ConfigNameMutableBuilder[Self <: ConfigName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigName(value: String): Self = this.set("configName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigName: Self = this.set("configName", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -134,120 +135,108 @@ object ICompositeElementLite {
   }
   
   @scala.inline
-  implicit class ICompositeElementLiteOps[Self <: ICompositeElementLite] (val x: Self) extends AnyVal {
+  implicit class ICompositeElementLiteMutableBuilder[Self <: ICompositeElementLite] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClear(value: /* removeDom */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAdd(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = this.set("add", js.Any.fromFunction1(value))
+    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     @scala.inline
-    def deleteAdd: Self = this.set("add", js.undefined)
+    def setContains(value: /* el */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClear(value: /* removeDom */ js.UndefOr[Boolean] => Unit): Self = this.set("clear", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteClear: Self = this.set("clear", js.undefined)
-    
-    @scala.inline
-    def setContains(value: /* el */ js.UndefOr[js.Any] => Boolean): Self = this.set("contains", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteContains: Self = this.set("contains", js.undefined)
+    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
     @scala.inline
     def setEach(
       value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.extjs.Ext.dom.ICompositeElement
-    ): Self = this.set("each", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def setElements(value: Array): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setElements(value: Array): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def setFill(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = this.set("fill", js.Any.fromFunction1(value))
+    def setFill(value: /* els */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = this.set("filter", js.Any.fromFunction1(value))
+    def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.extjs.Ext.dom.ICompositeElement): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def setFirst(value: () => typings.extjs.Ext.dom.IElement): Self = this.set("first", js.Any.fromFunction0(value))
+    def setFirst(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteFirst: Self = this.set("first", js.undefined)
+    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
     @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetCount: Self = this.set("getCount", js.undefined)
+    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
     @scala.inline
-    def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = this.set("indexOf", js.Any.fromFunction1(value))
+    def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteIndexOf: Self = this.set("indexOf", js.undefined)
+    def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
     @scala.inline
-    def setIsComposite(value: Boolean): Self = this.set("isComposite", value.asInstanceOf[js.Any])
+    def setIsComposite(value: Boolean): Self = StObject.set(x, "isComposite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsComposite: Self = this.set("isComposite", js.undefined)
+    def setIsCompositeUndefined: Self = StObject.set(x, "isComposite", js.undefined)
     
     @scala.inline
-    def setItem(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.dom.IElement): Self = this.set("item", js.Any.fromFunction1(value))
+    def setItem(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def setLast(value: () => typings.extjs.Ext.dom.IElement): Self = this.set("last", js.Any.fromFunction0(value))
+    def setLast(value: () => typings.extjs.Ext.dom.IElement): Self = StObject.set(x, "last", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteLast: Self = this.set("last", js.undefined)
+    def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
     @scala.inline
     def setRemoveElement(
       value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
-    ): Self = this.set("removeElement", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRemoveElement: Self = this.set("removeElement", js.undefined)
+    def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
     @scala.inline
     def setReplaceElement(
       value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.extjs.Ext.dom.ICompositeElement
-    ): Self = this.set("replaceElement", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteReplaceElement: Self = this.set("replaceElement", js.undefined)
+    def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
     
     @scala.inline
-    def setSlice(value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array): Self = this.set("slice", js.Any.fromFunction2(value))
+    def setSlice(value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => Array): Self = StObject.set(x, "slice", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSlice: Self = this.set("slice", js.undefined)
+    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
   }
 }

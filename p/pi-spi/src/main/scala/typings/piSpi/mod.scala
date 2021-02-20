@@ -1,20 +1,17 @@
 package typings.piSpi
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pi-spi", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  def initialize(device: String): SPI = js.native
-  
+  @JSImport("pi-spi", "SPI")
   @js.native
-  class SPI () extends js.Object {
+  class SPI () extends StObject {
     
     def bitOrder(): Double = js.native
     def bitOrder(order: order): Unit = js.native
@@ -35,41 +32,43 @@ object mod extends js.Object {
     def write(writebuf: Buffer, cb: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native
   }
   
+  @JSImport("pi-spi", "initialize")
   @js.native
-  sealed trait mode extends js.Object
+  def initialize(device: String): SPI = js.native
+  
   @js.native
-  object mode extends js.Object {
+  sealed trait mode extends StObject
+  @JSImport("pi-spi", "mode")
+  @js.native
+  object mode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[mode with Double] = js.native
     
     @js.native
     sealed trait CPHA extends mode
-    /* 0x01 */ @js.native
-    object CPHA extends TopLevel[CPHA with Double]
+    /* 0x01 */ val CPHA: typings.piSpi.mod.mode.CPHA with Double = js.native
     
     @js.native
     sealed trait CPOL extends mode
-    /* 0x02 */ @js.native
-    object CPOL extends TopLevel[CPOL with Double]
+    /* 0x02 */ val CPOL: typings.piSpi.mod.mode.CPOL with Double = js.native
   }
   
   @js.native
-  sealed trait order extends js.Object
+  sealed trait order extends StObject
+  @JSImport("pi-spi", "order")
   @js.native
-  object order extends js.Object {
+  object order extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[order with Double] = js.native
     
     @js.native
     sealed trait LSB_FIRST extends order
-    /* 1 */ @js.native
-    object LSB_FIRST extends TopLevel[LSB_FIRST with Double]
+    /* 1 */ val LSB_FIRST: typings.piSpi.mod.order.LSB_FIRST with Double = js.native
     
     @js.native
     sealed trait MSB_FIRST extends order
-    /* 0 */ @js.native
-    object MSB_FIRST extends TopLevel[MSB_FIRST with Double]
+    /* 0 */ val MSB_FIRST: typings.piSpi.mod.order.MSB_FIRST with Double = js.native
   }
 }

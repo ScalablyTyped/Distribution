@@ -1,11 +1,12 @@
 package typings.pgPromise.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RawType extends js.Object {
+trait RawType extends StObject {
   
   var rawType: js.Symbol = js.native
   
@@ -20,24 +21,12 @@ object RawType {
   }
   
   @scala.inline
-  implicit class RawTypeOps[Self <: RawType] (val x: Self) extends AnyVal {
+  implicit class RawTypeMutableBuilder[Self <: RawType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRawType(value: js.Symbol): Self = StObject.set(x, "rawType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRawType(value: js.Symbol): Self = this.set("rawType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setToPostgres(value: js.Symbol): Self = this.set("toPostgres", value.asInstanceOf[js.Any])
+    def setToPostgres(value: js.Symbol): Self = StObject.set(x, "toPostgres", value.asInstanceOf[js.Any])
   }
 }

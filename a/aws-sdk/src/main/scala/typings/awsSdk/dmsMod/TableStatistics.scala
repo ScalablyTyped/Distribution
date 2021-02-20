@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableStatistics extends js.Object {
+trait TableStatistics extends StObject {
   
   /**
     * The data definition language (DDL) used to build and modify the structure of your tables.
@@ -111,132 +112,120 @@ object TableStatistics {
   }
   
   @scala.inline
-  implicit class TableStatisticsOps[Self <: TableStatistics] (val x: Self) extends AnyVal {
+  implicit class TableStatisticsMutableBuilder[Self <: TableStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDdls(value: Long): Self = StObject.set(x, "Ddls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDdlsUndefined: Self = StObject.set(x, "Ddls", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletes(value: Long): Self = StObject.set(x, "Deletes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDdls(value: Long): Self = this.set("Ddls", value.asInstanceOf[js.Any])
+    def setDeletesUndefined: Self = StObject.set(x, "Deletes", js.undefined)
     
     @scala.inline
-    def deleteDdls: Self = this.set("Ddls", js.undefined)
+    def setFullLoadCondtnlChkFailedRows(value: Long): Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletes(value: Long): Self = this.set("Deletes", value.asInstanceOf[js.Any])
+    def setFullLoadCondtnlChkFailedRowsUndefined: Self = StObject.set(x, "FullLoadCondtnlChkFailedRows", js.undefined)
     
     @scala.inline
-    def deleteDeletes: Self = this.set("Deletes", js.undefined)
+    def setFullLoadEndTime(value: TStamp): Self = StObject.set(x, "FullLoadEndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLoadCondtnlChkFailedRows(value: Long): Self = this.set("FullLoadCondtnlChkFailedRows", value.asInstanceOf[js.Any])
+    def setFullLoadEndTimeUndefined: Self = StObject.set(x, "FullLoadEndTime", js.undefined)
     
     @scala.inline
-    def deleteFullLoadCondtnlChkFailedRows: Self = this.set("FullLoadCondtnlChkFailedRows", js.undefined)
+    def setFullLoadErrorRows(value: Long): Self = StObject.set(x, "FullLoadErrorRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLoadEndTime(value: TStamp): Self = this.set("FullLoadEndTime", value.asInstanceOf[js.Any])
+    def setFullLoadErrorRowsUndefined: Self = StObject.set(x, "FullLoadErrorRows", js.undefined)
     
     @scala.inline
-    def deleteFullLoadEndTime: Self = this.set("FullLoadEndTime", js.undefined)
+    def setFullLoadReloaded(value: BooleanOptional): Self = StObject.set(x, "FullLoadReloaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLoadErrorRows(value: Long): Self = this.set("FullLoadErrorRows", value.asInstanceOf[js.Any])
+    def setFullLoadReloadedUndefined: Self = StObject.set(x, "FullLoadReloaded", js.undefined)
     
     @scala.inline
-    def deleteFullLoadErrorRows: Self = this.set("FullLoadErrorRows", js.undefined)
+    def setFullLoadRows(value: Long): Self = StObject.set(x, "FullLoadRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLoadReloaded(value: BooleanOptional): Self = this.set("FullLoadReloaded", value.asInstanceOf[js.Any])
+    def setFullLoadRowsUndefined: Self = StObject.set(x, "FullLoadRows", js.undefined)
     
     @scala.inline
-    def deleteFullLoadReloaded: Self = this.set("FullLoadReloaded", js.undefined)
+    def setFullLoadStartTime(value: TStamp): Self = StObject.set(x, "FullLoadStartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLoadRows(value: Long): Self = this.set("FullLoadRows", value.asInstanceOf[js.Any])
+    def setFullLoadStartTimeUndefined: Self = StObject.set(x, "FullLoadStartTime", js.undefined)
     
     @scala.inline
-    def deleteFullLoadRows: Self = this.set("FullLoadRows", js.undefined)
+    def setInserts(value: Long): Self = StObject.set(x, "Inserts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullLoadStartTime(value: TStamp): Self = this.set("FullLoadStartTime", value.asInstanceOf[js.Any])
+    def setInsertsUndefined: Self = StObject.set(x, "Inserts", js.undefined)
     
     @scala.inline
-    def deleteFullLoadStartTime: Self = this.set("FullLoadStartTime", js.undefined)
+    def setLastUpdateTime(value: TStamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInserts(value: Long): Self = this.set("Inserts", value.asInstanceOf[js.Any])
+    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
     @scala.inline
-    def deleteInserts: Self = this.set("Inserts", js.undefined)
+    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastUpdateTime(value: TStamp): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
     @scala.inline
-    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+    def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
     
     @scala.inline
-    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
+    def setTableState(value: String): Self = StObject.set(x, "TableState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: String): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    def setTableStateUndefined: Self = StObject.set(x, "TableState", js.undefined)
     
     @scala.inline
-    def deleteTableName: Self = this.set("TableName", js.undefined)
+    def setUpdates(value: Long): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableState(value: String): Self = this.set("TableState", value.asInstanceOf[js.Any])
+    def setUpdatesUndefined: Self = StObject.set(x, "Updates", js.undefined)
     
     @scala.inline
-    def deleteTableState: Self = this.set("TableState", js.undefined)
+    def setValidationFailedRecords(value: Long): Self = StObject.set(x, "ValidationFailedRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdates(value: Long): Self = this.set("Updates", value.asInstanceOf[js.Any])
+    def setValidationFailedRecordsUndefined: Self = StObject.set(x, "ValidationFailedRecords", js.undefined)
     
     @scala.inline
-    def deleteUpdates: Self = this.set("Updates", js.undefined)
+    def setValidationPendingRecords(value: Long): Self = StObject.set(x, "ValidationPendingRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationFailedRecords(value: Long): Self = this.set("ValidationFailedRecords", value.asInstanceOf[js.Any])
+    def setValidationPendingRecordsUndefined: Self = StObject.set(x, "ValidationPendingRecords", js.undefined)
     
     @scala.inline
-    def deleteValidationFailedRecords: Self = this.set("ValidationFailedRecords", js.undefined)
+    def setValidationState(value: String): Self = StObject.set(x, "ValidationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationPendingRecords(value: Long): Self = this.set("ValidationPendingRecords", value.asInstanceOf[js.Any])
+    def setValidationStateDetails(value: String): Self = StObject.set(x, "ValidationStateDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidationPendingRecords: Self = this.set("ValidationPendingRecords", js.undefined)
+    def setValidationStateDetailsUndefined: Self = StObject.set(x, "ValidationStateDetails", js.undefined)
     
     @scala.inline
-    def setValidationState(value: String): Self = this.set("ValidationState", value.asInstanceOf[js.Any])
+    def setValidationStateUndefined: Self = StObject.set(x, "ValidationState", js.undefined)
     
     @scala.inline
-    def deleteValidationState: Self = this.set("ValidationState", js.undefined)
+    def setValidationSuspendedRecords(value: Long): Self = StObject.set(x, "ValidationSuspendedRecords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationStateDetails(value: String): Self = this.set("ValidationStateDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationStateDetails: Self = this.set("ValidationStateDetails", js.undefined)
-    
-    @scala.inline
-    def setValidationSuspendedRecords(value: Long): Self = this.set("ValidationSuspendedRecords", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationSuspendedRecords: Self = this.set("ValidationSuspendedRecords", js.undefined)
+    def setValidationSuspendedRecordsUndefined: Self = StObject.set(x, "ValidationSuspendedRecords", js.undefined)
   }
 }

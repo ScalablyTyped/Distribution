@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePlayerSessionsInput extends js.Object {
+trait CreatePlayerSessionsInput extends StObject {
   
   /**
     * A unique identifier for the game session to add players to.
@@ -31,33 +32,21 @@ object CreatePlayerSessionsInput {
   }
   
   @scala.inline
-  implicit class CreatePlayerSessionsInputOps[Self <: CreatePlayerSessionsInput] (val x: Self) extends AnyVal {
+  implicit class CreatePlayerSessionsInputMutableBuilder[Self <: CreatePlayerSessionsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPlayerDataMap(value: PlayerDataMap): Self = StObject.set(x, "PlayerDataMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlayerDataMapUndefined: Self = StObject.set(x, "PlayerDataMap", js.undefined)
     
     @scala.inline
-    def setGameSessionId(value: ArnStringModel): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    def setPlayerIds(value: PlayerIdList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = this.set("PlayerIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setPlayerIds(value: PlayerIdList): Self = this.set("PlayerIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlayerDataMap(value: PlayerDataMap): Self = this.set("PlayerDataMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerDataMap: Self = this.set("PlayerDataMap", js.undefined)
+    def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,84 +50,72 @@ object MobileAppContentFile {
   }
   
   @scala.inline
-  implicit class MobileAppContentFileOps[Self <: MobileAppContentFile] (val x: Self) extends AnyVal {
+  implicit class MobileAppContentFileMutableBuilder[Self <: MobileAppContentFile] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAzureStorageUri(value: NullableOption[String]): Self = StObject.set(x, "azureStorageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAzureStorageUriExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "azureStorageUriExpirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAzureStorageUriExpirationDateTimeNull: Self = StObject.set(x, "azureStorageUriExpirationDateTime", null)
     
     @scala.inline
-    def setAzureStorageUri(value: NullableOption[String]): Self = this.set("azureStorageUri", value.asInstanceOf[js.Any])
+    def setAzureStorageUriExpirationDateTimeUndefined: Self = StObject.set(x, "azureStorageUriExpirationDateTime", js.undefined)
     
     @scala.inline
-    def deleteAzureStorageUri: Self = this.set("azureStorageUri", js.undefined)
+    def setAzureStorageUriNull: Self = StObject.set(x, "azureStorageUri", null)
     
     @scala.inline
-    def setAzureStorageUriNull: Self = this.set("azureStorageUri", null)
+    def setAzureStorageUriUndefined: Self = StObject.set(x, "azureStorageUri", js.undefined)
     
     @scala.inline
-    def setAzureStorageUriExpirationDateTime(value: NullableOption[String]): Self = this.set("azureStorageUriExpirationDateTime", value.asInstanceOf[js.Any])
+    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAzureStorageUriExpirationDateTime: Self = this.set("azureStorageUriExpirationDateTime", js.undefined)
+    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     @scala.inline
-    def setAzureStorageUriExpirationDateTimeNull: Self = this.set("azureStorageUriExpirationDateTime", null)
+    def setIsCommitted(value: Boolean): Self = StObject.set(x, "isCommitted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDateTime(value: String): Self = this.set("createdDateTime", value.asInstanceOf[js.Any])
+    def setIsCommittedUndefined: Self = StObject.set(x, "isCommitted", js.undefined)
     
     @scala.inline
-    def deleteCreatedDateTime: Self = this.set("createdDateTime", js.undefined)
+    def setManifest(value: NullableOption[Double]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCommitted(value: Boolean): Self = this.set("isCommitted", value.asInstanceOf[js.Any])
+    def setManifestNull: Self = StObject.set(x, "manifest", null)
     
     @scala.inline
-    def deleteIsCommitted: Self = this.set("isCommitted", js.undefined)
+    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
     @scala.inline
-    def setManifest(value: NullableOption[Double]): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManifest: Self = this.set("manifest", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setManifestNull: Self = this.set("manifest", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSizeEncrypted(value: Double): Self = StObject.set(x, "sizeEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setSizeEncryptedUndefined: Self = StObject.set(x, "sizeEncrypted", js.undefined)
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setUploadState(value: MobileAppContentFileUploadState): Self = StObject.set(x, "uploadState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeEncrypted(value: Double): Self = this.set("sizeEncrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeEncrypted: Self = this.set("sizeEncrypted", js.undefined)
-    
-    @scala.inline
-    def setUploadState(value: MobileAppContentFileUploadState): Self = this.set("uploadState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadState: Self = this.set("uploadState", js.undefined)
+    def setUploadStateUndefined: Self = StObject.set(x, "uploadState", js.undefined)
   }
 }

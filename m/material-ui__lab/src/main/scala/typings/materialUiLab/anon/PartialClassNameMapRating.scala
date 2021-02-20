@@ -1,12 +1,13 @@
 package typings.materialUiLab.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Rating/Rating.RatingClassKey>> */
 @js.native
-trait PartialClassNameMapRating extends js.Object {
+trait PartialClassNameMapRating extends StObject {
   
   var decimal: js.UndefOr[String] = js.native
   
@@ -49,114 +50,102 @@ object PartialClassNameMapRating {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapRatingOps[Self <: PartialClassNameMapRating] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapRatingMutableBuilder[Self <: PartialClassNameMapRating] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecimal(value: String): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusVisible(value: String): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    def setIconActive(value: String): Self = StObject.set(x, "iconActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    def setIconActiveUndefined: Self = StObject.set(x, "iconActive", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setIconEmpty(value: String): Self = StObject.set(x, "iconEmpty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setIconEmptyUndefined: Self = StObject.set(x, "iconEmpty", js.undefined)
     
     @scala.inline
-    def setIconActive(value: String): Self = this.set("iconActive", value.asInstanceOf[js.Any])
+    def setIconFilled(value: String): Self = StObject.set(x, "iconFilled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconActive: Self = this.set("iconActive", js.undefined)
+    def setIconFilledUndefined: Self = StObject.set(x, "iconFilled", js.undefined)
     
     @scala.inline
-    def setIconEmpty(value: String): Self = this.set("iconEmpty", value.asInstanceOf[js.Any])
+    def setIconFocus(value: String): Self = StObject.set(x, "iconFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconEmpty: Self = this.set("iconEmpty", js.undefined)
+    def setIconFocusUndefined: Self = StObject.set(x, "iconFocus", js.undefined)
     
     @scala.inline
-    def setIconFilled(value: String): Self = this.set("iconFilled", value.asInstanceOf[js.Any])
+    def setIconHover(value: String): Self = StObject.set(x, "iconHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconFilled: Self = this.set("iconFilled", js.undefined)
+    def setIconHoverUndefined: Self = StObject.set(x, "iconHover", js.undefined)
     
     @scala.inline
-    def setIconFocus(value: String): Self = this.set("iconFocus", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def deleteIconFocus: Self = this.set("iconFocus", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconHover(value: String): Self = this.set("iconHover", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteIconHover: Self = this.set("iconHover", js.undefined)
+    def setPristine(value: String): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setPristineUndefined: Self = StObject.set(x, "pristine", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPristine(value: String): Self = this.set("pristine", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
     @scala.inline
-    def deletePristine: Self = this.set("pristine", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: String): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    def setSizeLarge(value: String): Self = StObject.set(x, "sizeLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSizeLargeUndefined: Self = StObject.set(x, "sizeLarge", js.undefined)
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSizeSmall(value: String): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeLarge(value: String): Self = this.set("sizeLarge", value.asInstanceOf[js.Any])
+    def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
     
     @scala.inline
-    def deleteSizeLarge: Self = this.set("sizeLarge", js.undefined)
+    def setVisuallyhidden(value: String): Self = StObject.set(x, "visuallyhidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeSmall(value: String): Self = this.set("sizeSmall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeSmall: Self = this.set("sizeSmall", js.undefined)
-    
-    @scala.inline
-    def setVisuallyhidden(value: String): Self = this.set("visuallyhidden", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisuallyhidden: Self = this.set("visuallyhidden", js.undefined)
+    def setVisuallyhiddenUndefined: Self = StObject.set(x, "visuallyhidden", js.undefined)
   }
 }

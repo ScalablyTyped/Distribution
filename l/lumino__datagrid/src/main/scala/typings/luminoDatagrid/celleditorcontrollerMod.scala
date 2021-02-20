@@ -4,16 +4,14 @@ import typings.luminoDatagrid.celleditorMod.CellEditor.CellConfig
 import typings.luminoDatagrid.celleditorMod.ICellEditOptions
 import typings.luminoDatagrid.celleditorMod.ICellEditor
 import typings.luminoDatagrid.datamodelMod.DataModel.Metadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/datagrid/lib/celleditorcontroller", JSImport.Namespace)
-@js.native
-object celleditorcontrollerMod extends js.Object {
+object celleditorcontrollerMod {
   
-  def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = js.native
-  
+  @JSImport("@lumino/datagrid/lib/celleditorcontroller", "CellEditorController")
   @js.native
   class CellEditorController () extends ICellEditorController {
     
@@ -49,8 +47,23 @@ object celleditorcontrollerMod extends js.Object {
     var _typeBasedOverrides: js.Any = js.native
   }
   
+  @JSImport("@lumino/datagrid/lib/celleditorcontroller", "resolveOption")
   @js.native
-  trait ICellEditorController extends js.Object {
+  def resolveOption[T](option: ConfigOption[T], config: CellConfig): T = js.native
+  
+  type ConfigFunc[T] = js.Function1[/* config */ CellConfig, T]
+  
+  type ConfigOption[T] = T | ConfigFunc[T]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.luminoDatagrid.celleditorMod.CellDataType
+    - typings.luminoDatagrid.datamodelMod.DataModel.Metadata
+    - typings.luminoDatagrid.luminoDatagridStrings.default
+  */
+  type EditorOverrideIdentifier = _EditorOverrideIdentifier | Metadata
+  
+  @js.native
+  trait ICellEditorController extends StObject {
     
     /**
       * Cancel editing.
@@ -81,18 +94,7 @@ object celleditorcontrollerMod extends js.Object {
     def setEditor(identifier: EditorOverrideIdentifier, editor: Resolver): Unit = js.native
   }
   
-  trait _EditorOverrideIdentifier extends js.Object
-  
-  type ConfigFunc[T] = js.Function1[/* config */ CellConfig, T]
-  
-  type ConfigOption[T] = T | ConfigFunc[T]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoDatagrid.celleditorMod.CellDataType
-    - typings.luminoDatagrid.datamodelMod.DataModel.Metadata
-    - typings.luminoDatagrid.luminoDatagridStrings.default
-  */
-  type EditorOverrideIdentifier = _EditorOverrideIdentifier | Metadata
-  
   type Resolver = ConfigFunc[js.UndefOr[ICellEditor]]
+  
+  trait _EditorOverrideIdentifier extends StObject
 }

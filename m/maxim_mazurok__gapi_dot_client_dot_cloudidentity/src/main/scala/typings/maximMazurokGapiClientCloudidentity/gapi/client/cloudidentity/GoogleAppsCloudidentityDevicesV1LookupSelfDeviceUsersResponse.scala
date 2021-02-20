@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse extends js.Object {
+trait GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse extends StObject {
   
   /** The obfuscated customer Id that may be passed back to other Devices API methods such as List, Get, etc. */
   var customer: js.UndefOr[String] = js.native
@@ -28,39 +29,27 @@ object GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse {
   }
   
   @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponseOps[Self <: GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse] (val x: Self) extends AnyVal {
+  implicit class GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponseMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
     @scala.inline
-    def deleteCustomer: Self = this.set("customer", js.undefined)
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
     @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNames(value: js.Array[String]): Self = this.set("names", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNames: Self = this.set("names", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

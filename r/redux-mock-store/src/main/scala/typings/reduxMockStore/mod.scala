@@ -8,13 +8,12 @@ import typings.redux.mod.Observable
 import typings.redux.mod.Reducer
 import typings.redux.mod.Store
 import typings.redux.mod.Unsubscribe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-mock-store", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Create Mock Store returns a function that will create a mock store from a state
@@ -24,8 +23,14 @@ object mod extends js.Object {
     * @template S The type of state to be held by the store.
     * @template DispatchExts The additional Dispatch signatures for the middlewares applied.
     */
+  @JSImport("redux-mock-store", JSImport.Default)
+  @js.native
   def default[S, DispatchExts](): MockStoreCreator[S, DispatchExts] = js.native
+  @JSImport("redux-mock-store", JSImport.Default)
+  @js.native
   def default[S, DispatchExts](middlewares: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]]): MockStoreCreator[S, DispatchExts] = js.native
+  
+  type MockGetState[S] = js.Function1[/* actions */ js.Array[AnyAction], S]
   
   @js.native
   trait MockStore[S, A /* <: Action[_] */] extends Store[S, A] {
@@ -35,9 +40,11 @@ object mod extends js.Object {
     def getActions(): js.Array[_] = js.native
   }
   
+  type MockStoreCreator[S, DispatchExts] = js.Function1[/* state */ js.UndefOr[S | MockGetState[S]], MockStoreEnhanced[S, DispatchExts]]
+  
   /* Inlined redux-mock-store.redux-mock-store.MockStore<S, redux.redux.AnyAction> & {  dispatch :DispatchExts} */
   @js.native
-  trait MockStoreEnhanced[S, DispatchExts] extends js.Object {
+  trait MockStoreEnhanced[S, DispatchExts] extends StObject {
     
     def apply(): Observable[S] = js.native
     
@@ -145,8 +152,4 @@ object mod extends js.Object {
       */
     def subscribe(listener: js.Function0[Unit]): Unsubscribe = js.native
   }
-  
-  type MockGetState[S] = js.Function1[/* actions */ js.Array[AnyAction], S]
-  
-  type MockStoreCreator[S, DispatchExts] = js.Function1[/* state */ js.UndefOr[S | MockGetState[S]], MockStoreEnhanced[S, DispatchExts]]
 }

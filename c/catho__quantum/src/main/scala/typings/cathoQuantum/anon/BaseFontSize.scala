@@ -1,11 +1,12 @@
 package typings.cathoQuantum.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BaseFontSize extends js.Object {
+trait BaseFontSize extends StObject {
   
   var baseFontSize: js.UndefOr[Double] = js.native
   
@@ -22,36 +23,24 @@ object BaseFontSize {
   }
   
   @scala.inline
-  implicit class BaseFontSizeOps[Self <: BaseFontSize] (val x: Self) extends AnyVal {
+  implicit class BaseFontSizeMutableBuilder[Self <: BaseFontSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseFontSize(value: Double): Self = this.set("baseFontSize", value.asInstanceOf[js.Any])
+    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     @scala.inline
-    def deleteBaseFontSize: Self = this.set("baseFontSize", js.undefined)
+    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Object): Self = this.set("colors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColors: Self = this.set("colors", js.undefined)
-    
-    @scala.inline
-    def setSpacing(value: js.Object): Self = this.set("spacing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

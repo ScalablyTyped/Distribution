@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DevicePoolCompatibilityResult extends js.Object {
+trait DevicePoolCompatibilityResult extends StObject {
   
   /**
     * Whether the result was compatible with the device pool.
@@ -31,39 +32,27 @@ object DevicePoolCompatibilityResult {
   }
   
   @scala.inline
-  implicit class DevicePoolCompatibilityResultOps[Self <: DevicePoolCompatibilityResult] (val x: Self) extends AnyVal {
+  implicit class DevicePoolCompatibilityResultMutableBuilder[Self <: DevicePoolCompatibilityResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompatible(value: Boolean): Self = StObject.set(x, "compatible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompatibleUndefined: Self = StObject.set(x, "compatible", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompatible(value: Boolean): Self = this.set("compatible", value.asInstanceOf[js.Any])
+    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     @scala.inline
-    def deleteCompatible: Self = this.set("compatible", js.undefined)
+    def setIncompatibilityMessages(value: IncompatibilityMessages): Self = StObject.set(x, "incompatibilityMessages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    def setIncompatibilityMessagesUndefined: Self = StObject.set(x, "incompatibilityMessages", js.undefined)
     
     @scala.inline
-    def deleteDevice: Self = this.set("device", js.undefined)
-    
-    @scala.inline
-    def setIncompatibilityMessagesVarargs(value: IncompatibilityMessage*): Self = this.set("incompatibilityMessages", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncompatibilityMessages(value: IncompatibilityMessages): Self = this.set("incompatibilityMessages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncompatibilityMessages: Self = this.set("incompatibilityMessages", js.undefined)
+    def setIncompatibilityMessagesVarargs(value: IncompatibilityMessage*): Self = StObject.set(x, "incompatibilityMessages", js.Array(value :_*))
   }
 }

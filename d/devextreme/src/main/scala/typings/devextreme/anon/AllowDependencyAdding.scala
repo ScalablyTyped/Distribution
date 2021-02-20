@@ -1,11 +1,12 @@
 package typings.devextreme.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AllowDependencyAdding extends js.Object {
+trait AllowDependencyAdding extends StObject {
   
   var allowDependencyAdding: js.UndefOr[Boolean] = js.native
   
@@ -34,72 +35,60 @@ object AllowDependencyAdding {
   }
   
   @scala.inline
-  implicit class AllowDependencyAddingOps[Self <: AllowDependencyAdding] (val x: Self) extends AnyVal {
+  implicit class AllowDependencyAddingMutableBuilder[Self <: AllowDependencyAdding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowDependencyAdding(value: Boolean): Self = StObject.set(x, "allowDependencyAdding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowDependencyAddingUndefined: Self = StObject.set(x, "allowDependencyAdding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowDependencyDeleting(value: Boolean): Self = StObject.set(x, "allowDependencyDeleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDependencyAdding(value: Boolean): Self = this.set("allowDependencyAdding", value.asInstanceOf[js.Any])
+    def setAllowDependencyDeletingUndefined: Self = StObject.set(x, "allowDependencyDeleting", js.undefined)
     
     @scala.inline
-    def deleteAllowDependencyAdding: Self = this.set("allowDependencyAdding", js.undefined)
+    def setAllowResourceAdding(value: Boolean): Self = StObject.set(x, "allowResourceAdding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowDependencyDeleting(value: Boolean): Self = this.set("allowDependencyDeleting", value.asInstanceOf[js.Any])
+    def setAllowResourceAddingUndefined: Self = StObject.set(x, "allowResourceAdding", js.undefined)
     
     @scala.inline
-    def deleteAllowDependencyDeleting: Self = this.set("allowDependencyDeleting", js.undefined)
+    def setAllowResourceDeleting(value: Boolean): Self = StObject.set(x, "allowResourceDeleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowResourceAdding(value: Boolean): Self = this.set("allowResourceAdding", value.asInstanceOf[js.Any])
+    def setAllowResourceDeletingUndefined: Self = StObject.set(x, "allowResourceDeleting", js.undefined)
     
     @scala.inline
-    def deleteAllowResourceAdding: Self = this.set("allowResourceAdding", js.undefined)
+    def setAllowResourceUpdating(value: Boolean): Self = StObject.set(x, "allowResourceUpdating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowResourceDeleting(value: Boolean): Self = this.set("allowResourceDeleting", value.asInstanceOf[js.Any])
+    def setAllowResourceUpdatingUndefined: Self = StObject.set(x, "allowResourceUpdating", js.undefined)
     
     @scala.inline
-    def deleteAllowResourceDeleting: Self = this.set("allowResourceDeleting", js.undefined)
+    def setAllowTaskAdding(value: Boolean): Self = StObject.set(x, "allowTaskAdding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowResourceUpdating(value: Boolean): Self = this.set("allowResourceUpdating", value.asInstanceOf[js.Any])
+    def setAllowTaskAddingUndefined: Self = StObject.set(x, "allowTaskAdding", js.undefined)
     
     @scala.inline
-    def deleteAllowResourceUpdating: Self = this.set("allowResourceUpdating", js.undefined)
+    def setAllowTaskDeleting(value: Boolean): Self = StObject.set(x, "allowTaskDeleting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTaskAdding(value: Boolean): Self = this.set("allowTaskAdding", value.asInstanceOf[js.Any])
+    def setAllowTaskDeletingUndefined: Self = StObject.set(x, "allowTaskDeleting", js.undefined)
     
     @scala.inline
-    def deleteAllowTaskAdding: Self = this.set("allowTaskAdding", js.undefined)
+    def setAllowTaskUpdating(value: Boolean): Self = StObject.set(x, "allowTaskUpdating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTaskDeleting(value: Boolean): Self = this.set("allowTaskDeleting", value.asInstanceOf[js.Any])
+    def setAllowTaskUpdatingUndefined: Self = StObject.set(x, "allowTaskUpdating", js.undefined)
     
     @scala.inline
-    def deleteAllowTaskDeleting: Self = this.set("allowTaskDeleting", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowTaskUpdating(value: Boolean): Self = this.set("allowTaskUpdating", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAllowTaskUpdating: Self = this.set("allowTaskUpdating", js.undefined)
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

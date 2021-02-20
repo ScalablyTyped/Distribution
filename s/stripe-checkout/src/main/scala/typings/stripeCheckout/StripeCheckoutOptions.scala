@@ -3,12 +3,13 @@ package typings.stripeCheckout
 import typings.stripeCheckout.stripeCheckoutStrings.auto
 import typings.stripeV3.stripe.Source
 import typings.stripeV3.stripe.Token
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StripeCheckoutOptions extends js.Object {
+trait StripeCheckoutOptions extends StObject {
   
   var alipay: js.UndefOr[Boolean | auto] = js.native
   
@@ -61,144 +62,132 @@ object StripeCheckoutOptions {
   }
   
   @scala.inline
-  implicit class StripeCheckoutOptionsOps[Self <: StripeCheckoutOptions] (val x: Self) extends AnyVal {
+  implicit class StripeCheckoutOptionsMutableBuilder[Self <: StripeCheckoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlipay(value: Boolean | auto): Self = StObject.set(x, "alipay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlipayReusable(value: Boolean): Self = StObject.set(x, "alipayReusable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlipayReusableUndefined: Self = StObject.set(x, "alipayReusable", js.undefined)
     
     @scala.inline
-    def setAlipay(value: Boolean | auto): Self = this.set("alipay", value.asInstanceOf[js.Any])
+    def setAlipayUndefined: Self = StObject.set(x, "alipay", js.undefined)
     
     @scala.inline
-    def deleteAlipay: Self = this.set("alipay", js.undefined)
+    def setAllowRememberMe(value: Boolean): Self = StObject.set(x, "allowRememberMe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlipayReusable(value: Boolean): Self = this.set("alipayReusable", value.asInstanceOf[js.Any])
+    def setAllowRememberMeUndefined: Self = StObject.set(x, "allowRememberMe", js.undefined)
     
     @scala.inline
-    def deleteAlipayReusable: Self = this.set("alipayReusable", js.undefined)
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowRememberMe(value: Boolean): Self = this.set("allowRememberMe", value.asInstanceOf[js.Any])
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def deleteAllowRememberMe: Self = this.set("allowRememberMe", js.undefined)
+    def setBillingAddress(value: Boolean): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setBitcoin(value: Boolean): Self = StObject.set(x, "bitcoin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAddress(value: Boolean): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    def setBitcoinUndefined: Self = StObject.set(x, "bitcoin", js.undefined)
     
     @scala.inline
-    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBitcoin(value: Boolean): Self = this.set("bitcoin", value.asInstanceOf[js.Any])
+    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def deleteBitcoin: Self = this.set("bitcoin", js.undefined)
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: () => Unit): Self = this.set("closed", js.Any.fromFunction0(value))
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteClosed: Self = this.set("closed", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setOpened(value: () => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPanelLabel(value: String): Self = StObject.set(x, "panelLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpened(value: () => Unit): Self = this.set("opened", js.Any.fromFunction0(value))
+    def setPanelLabelUndefined: Self = StObject.set(x, "panelLabel", js.undefined)
     
     @scala.inline
-    def deleteOpened: Self = this.set("opened", js.undefined)
+    def setShippingAddress(value: Boolean): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelLabel(value: String): Self = this.set("panelLabel", value.asInstanceOf[js.Any])
+    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
     
     @scala.inline
-    def deletePanelLabel: Self = this.set("panelLabel", js.undefined)
+    def setSource(value: /* source */ Source => Unit): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShippingAddress(value: Boolean): Self = this.set("shippingAddress", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteShippingAddress: Self = this.set("shippingAddress", js.undefined)
+    def setToken(value: /* token */ Token => Unit): Self = StObject.set(x, "token", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSource(value: /* source */ Source => Unit): Self = this.set("source", js.Any.fromFunction1(value))
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setZipCode(value: Boolean): Self = StObject.set(x, "zipCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: /* token */ Token => Unit): Self = this.set("token", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setZipCode(value: Boolean): Self = this.set("zipCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZipCode: Self = this.set("zipCode", js.undefined)
+    def setZipCodeUndefined: Self = StObject.set(x, "zipCode", js.undefined)
   }
 }

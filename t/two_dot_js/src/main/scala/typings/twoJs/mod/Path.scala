@@ -1,6 +1,7 @@
 package typings.twoJs.mod
 
 import typings.twoJs.mod.Utils.Collection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,10 +67,10 @@ class Path protected () extends Object {
   
   var vertices: Collection[Anchor] = js.native
 }
-/* static members */
-@JSImport("two.js", "Path")
-@js.native
-object Path extends js.Object {
+object Path {
   
+  /* static member */
+  @JSImport("two.js", "Path.MakeObservable")
+  @js.native
   def MakeObservable(obj: js.Any): js.Any = js.native
 }

@@ -1,6 +1,7 @@
 package typings.sparqljs.mod
 
 import typings.sparqljs.sparqljsStrings.minus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,27 +23,15 @@ object MinusPattern {
   }
   
   @scala.inline
-  implicit class MinusPatternOps[Self <: MinusPattern] (val x: Self) extends AnyVal {
+  implicit class MinusPatternMutableBuilder[Self <: MinusPattern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPatternsVarargs(value: Pattern*): Self = this.set("patterns", js.Array(value :_*))
-    
-    @scala.inline
-    def setPatterns(value: js.Array[Pattern]): Self = this.set("patterns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: minus): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: minus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

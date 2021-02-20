@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetShowHingeRequest extends js.Object {
+trait SetShowHingeRequest extends StObject {
   
   /**
     * hinge data, null means hideHinge
@@ -21,24 +22,12 @@ object SetShowHingeRequest {
   }
   
   @scala.inline
-  implicit class SetShowHingeRequestOps[Self <: SetShowHingeRequest] (val x: Self) extends AnyVal {
+  implicit class SetShowHingeRequestMutableBuilder[Self <: SetShowHingeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHingeConfig(value: HingeConfig): Self = StObject.set(x, "hingeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHingeConfig(value: HingeConfig): Self = this.set("hingeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHingeConfig: Self = this.set("hingeConfig", js.undefined)
+    def setHingeConfigUndefined: Self = StObject.set(x, "hingeConfig", js.undefined)
   }
 }

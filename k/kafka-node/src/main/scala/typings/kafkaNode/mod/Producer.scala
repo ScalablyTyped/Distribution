@@ -3,6 +3,7 @@ package typings.kafkaNode.mod
 import typings.kafkaNode.kafkaNodeStrings.error
 import typings.kafkaNode.kafkaNodeStrings.ready
 import typings.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,13 +1,13 @@
 package typings.zetapushJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("zetapush-js", "services")
-@js.native
-object services extends js.Object {
+object services {
   
+  @JSImport("zetapush-js", "services.Macro")
   @js.native
   class Macro protected () extends Service {
     def this($publish: AsyncMacroServicePublisher) = this()
@@ -36,10 +36,17 @@ object services extends js.Object {
     @JSName("$publish")
     var $publish_Original: AsyncMacroServicePublisher = js.native
   }
-  /* static members */
-  @js.native
-  object Macro extends js.Object {
+  object Macro {
     
-    var DEFAULT_DEPLOYMENT_ID: String = js.native
+    @JSImport("zetapush-js", "services.Macro")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("zetapush-js", "services.Macro.DEFAULT_DEPLOYMENT_ID")
+    @js.native
+    def DEFAULT_DEPLOYMENT_ID: String = js.native
+    @scala.inline
+    def DEFAULT_DEPLOYMENT_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_DEPLOYMENT_ID")(x.asInstanceOf[js.Any])
   }
 }

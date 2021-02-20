@@ -1,11 +1,12 @@
 package typings.dc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Errors extends js.Object {
+trait Errors extends StObject {
   
   def BadArgumentException(): Unit = js.native
   
@@ -22,27 +23,15 @@ object Errors {
   }
   
   @scala.inline
-  implicit class ErrorsOps[Self <: Errors] (val x: Self) extends AnyVal {
+  implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBadArgumentException(value: () => Unit): Self = StObject.set(x, "BadArgumentException", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setException(value: String => Unit): Self = StObject.set(x, "Exception", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBadArgumentException(value: () => Unit): Self = this.set("BadArgumentException", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setException(value: String => Unit): Self = this.set("Exception", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setInvalidStateException(value: () => Unit): Self = this.set("InvalidStateException", js.Any.fromFunction0(value))
+    def setInvalidStateException(value: () => Unit): Self = StObject.set(x, "InvalidStateException", js.Any.fromFunction0(value))
   }
 }

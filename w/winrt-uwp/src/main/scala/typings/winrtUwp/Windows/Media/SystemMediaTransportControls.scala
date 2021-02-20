@@ -9,13 +9,14 @@ import typings.winrtUwp.winrtUwpStrings.playbackpositionchangerequested
 import typings.winrtUwp.winrtUwpStrings.playbackratechangerequested
 import typings.winrtUwp.winrtUwpStrings.propertychanged
 import typings.winrtUwp.winrtUwpStrings.shuffleenabledchangerequested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an object that enables integrate with the system media transport controls and support for media commands. */
 @js.native
-trait SystemMediaTransportControls extends js.Object {
+trait SystemMediaTransportControls extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

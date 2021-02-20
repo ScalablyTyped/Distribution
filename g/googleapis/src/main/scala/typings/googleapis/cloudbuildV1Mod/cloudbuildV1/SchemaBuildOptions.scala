@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Optional arguments to enable specific features of builds.
   */
 @js.native
-trait SchemaBuildOptions extends js.Object {
+trait SchemaBuildOptions extends StObject {
   
   /**
     * Requested disk size for the VM that runs the build. Note that this is
@@ -96,96 +97,84 @@ object SchemaBuildOptions {
   }
   
   @scala.inline
-  implicit class SchemaBuildOptionsOps[Self <: SchemaBuildOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildOptionsMutableBuilder[Self <: SchemaBuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("env", js.Array(value :_*))
+    def setLogStreamingOption(value: String): Self = StObject.set(x, "logStreamingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setLogStreamingOptionUndefined: Self = StObject.set(x, "logStreamingOption", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("env", js.undefined)
+    def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogStreamingOption(value: String): Self = this.set("logStreamingOption", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteLogStreamingOption: Self = this.set("logStreamingOption", js.undefined)
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: String): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setRequestedVerifyOption(value: String): Self = StObject.set(x, "requestedVerifyOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    def setRequestedVerifyOptionUndefined: Self = StObject.set(x, "requestedVerifyOption", js.undefined)
     
     @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setSecretEnv(value: js.Array[String]): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestedVerifyOption(value: String): Self = this.set("requestedVerifyOption", value.asInstanceOf[js.Any])
+    def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
     
     @scala.inline
-    def deleteRequestedVerifyOption: Self = this.set("requestedVerifyOption", js.undefined)
+    def setSecretEnvVarargs(value: String*): Self = StObject.set(x, "secretEnv", js.Array(value :_*))
     
     @scala.inline
-    def setSecretEnvVarargs(value: String*): Self = this.set("secretEnv", js.Array(value :_*))
+    def setSourceProvenanceHash(value: js.Array[String]): Self = StObject.set(x, "sourceProvenanceHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecretEnv(value: js.Array[String]): Self = this.set("secretEnv", value.asInstanceOf[js.Any])
+    def setSourceProvenanceHashUndefined: Self = StObject.set(x, "sourceProvenanceHash", js.undefined)
     
     @scala.inline
-    def deleteSecretEnv: Self = this.set("secretEnv", js.undefined)
+    def setSourceProvenanceHashVarargs(value: String*): Self = StObject.set(x, "sourceProvenanceHash", js.Array(value :_*))
     
     @scala.inline
-    def setSourceProvenanceHashVarargs(value: String*): Self = this.set("sourceProvenanceHash", js.Array(value :_*))
+    def setSubstitutionOption(value: String): Self = StObject.set(x, "substitutionOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceProvenanceHash(value: js.Array[String]): Self = this.set("sourceProvenanceHash", value.asInstanceOf[js.Any])
+    def setSubstitutionOptionUndefined: Self = StObject.set(x, "substitutionOption", js.undefined)
     
     @scala.inline
-    def deleteSourceProvenanceHash: Self = this.set("sourceProvenanceHash", js.undefined)
+    def setVolumes(value: js.Array[SchemaVolume]): Self = StObject.set(x, "volumes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubstitutionOption(value: String): Self = this.set("substitutionOption", value.asInstanceOf[js.Any])
+    def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
     @scala.inline
-    def deleteSubstitutionOption: Self = this.set("substitutionOption", js.undefined)
+    def setVolumesVarargs(value: SchemaVolume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
     
     @scala.inline
-    def setVolumesVarargs(value: SchemaVolume*): Self = this.set("volumes", js.Array(value :_*))
+    def setWorkerPool(value: String): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumes(value: js.Array[SchemaVolume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumes: Self = this.set("volumes", js.undefined)
-    
-    @scala.inline
-    def setWorkerPool(value: String): Self = this.set("workerPool", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerPool: Self = this.set("workerPool", js.undefined)
+    def setWorkerPoolUndefined: Self = StObject.set(x, "workerPool", js.undefined)
   }
 }

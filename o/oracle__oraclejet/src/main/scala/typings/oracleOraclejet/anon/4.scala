@@ -2,12 +2,13 @@ package typings.oracleOraclejet.anon
 
 import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContext
 import typings.oracleOraclejet.ojdiagramMod.DvtDiagramLayoutContextNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `4` extends js.Object {
+trait `4` extends StObject {
   
   var labelLayout: typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout | (js.Function2[
     /* context */ DvtDiagramLayoutContext, 
@@ -30,24 +31,7 @@ object `4` {
   }
   
   @scala.inline
-  implicit class `4Ops`[Self <: `4`] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLabelLayoutFunction2(
-      value: (/* context */ DvtDiagramLayoutContext, /* node */ DvtDiagramLayoutContextNode) => typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
-    ): Self = this.set("labelLayout", js.Any.fromFunction2(value))
+  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setLabelLayout(
@@ -56,6 +40,11 @@ object `4` {
           /* node */ DvtDiagramLayoutContextNode, 
           typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
         ])
-    ): Self = this.set("labelLayout", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLabelLayoutFunction2(
+      value: (/* context */ DvtDiagramLayoutContext, /* node */ DvtDiagramLayoutContextNode) => typings.oracleOraclejet.ojdiagramUtilsMod.LabelLayout
+    ): Self = StObject.set(x, "labelLayout", js.Any.fromFunction2(value))
   }
 }

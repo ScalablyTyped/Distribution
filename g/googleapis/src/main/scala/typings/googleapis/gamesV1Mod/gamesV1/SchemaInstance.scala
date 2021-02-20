@@ -1,5 +1,6 @@
 package typings.googleapis.gamesV1Mod.gamesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for the Instance resource.
   */
 @js.native
-trait SchemaInstance extends js.Object {
+trait SchemaInstance extends StObject {
   
   /**
     * URI which shows where a user can acquire this instance.
@@ -67,72 +68,60 @@ object SchemaInstance {
   }
   
   @scala.inline
-  implicit class SchemaInstanceOps[Self <: SchemaInstance] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceMutableBuilder[Self <: SchemaInstance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquisitionUri(value: String): Self = StObject.set(x, "acquisitionUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcquisitionUriUndefined: Self = StObject.set(x, "acquisitionUri", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidInstance(value: SchemaInstanceAndroidDetails): Self = StObject.set(x, "androidInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquisitionUri(value: String): Self = this.set("acquisitionUri", value.asInstanceOf[js.Any])
+    def setAndroidInstanceUndefined: Self = StObject.set(x, "androidInstance", js.undefined)
     
     @scala.inline
-    def deleteAcquisitionUri: Self = this.set("acquisitionUri", js.undefined)
+    def setIosInstance(value: SchemaInstanceIosDetails): Self = StObject.set(x, "iosInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidInstance(value: SchemaInstanceAndroidDetails): Self = this.set("androidInstance", value.asInstanceOf[js.Any])
+    def setIosInstanceUndefined: Self = StObject.set(x, "iosInstance", js.undefined)
     
     @scala.inline
-    def deleteAndroidInstance: Self = this.set("androidInstance", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIosInstance(value: SchemaInstanceIosDetails): Self = this.set("iosInstance", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIosInstance: Self = this.set("iosInstance", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setPlatformType(value: String): Self = StObject.set(x, "platformType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlatformTypeUndefined: Self = StObject.set(x, "platformType", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRealtimePlay(value: Boolean): Self = StObject.set(x, "realtimePlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    def setRealtimePlayUndefined: Self = StObject.set(x, "realtimePlay", js.undefined)
     
     @scala.inline
-    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    def setTurnBasedPlay(value: Boolean): Self = StObject.set(x, "turnBasedPlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealtimePlay(value: Boolean): Self = this.set("realtimePlay", value.asInstanceOf[js.Any])
+    def setTurnBasedPlayUndefined: Self = StObject.set(x, "turnBasedPlay", js.undefined)
     
     @scala.inline
-    def deleteRealtimePlay: Self = this.set("realtimePlay", js.undefined)
+    def setWebInstance(value: SchemaInstanceWebDetails): Self = StObject.set(x, "webInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTurnBasedPlay(value: Boolean): Self = this.set("turnBasedPlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTurnBasedPlay: Self = this.set("turnBasedPlay", js.undefined)
-    
-    @scala.inline
-    def setWebInstance(value: SchemaInstanceWebDetails): Self = this.set("webInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebInstance: Self = this.set("webInstance", js.undefined)
+    def setWebInstanceUndefined: Self = StObject.set(x, "webInstance", js.undefined)
   }
 }

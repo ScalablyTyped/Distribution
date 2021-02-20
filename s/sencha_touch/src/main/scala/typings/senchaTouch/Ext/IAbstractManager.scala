@@ -1,6 +1,7 @@
 package typings.senchaTouch.Ext
 
 import typings.senchaTouch.Ext.util.IHashMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,80 +85,68 @@ object IAbstractManager {
   }
   
   @scala.inline
-  implicit class IAbstractManagerOps[Self <: IAbstractManager] (val x: Self) extends AnyVal {
+  implicit class IAbstractManagerMutableBuilder[Self <: IAbstractManager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAll(value: IHashMap): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreate(value: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => _): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAll(value: IHashMap): Self = this.set("all", value.asInstanceOf[js.Any])
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def deleteAll: Self = this.set("all", js.undefined)
+    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCreate(value: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => _): Self = this.set("create", js.Any.fromFunction2(value))
+    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setGet(value: /* id */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("each", js.Any.fromFunction2(value))
+    def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteEach: Self = this.set("each", js.undefined)
+    def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
     @scala.inline
-    def setGet(value: /* id */ js.UndefOr[java.lang.String] => _): Self = this.set("get", js.Any.fromFunction1(value))
+    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
     @scala.inline
-    def deleteGet: Self = this.set("get", js.undefined)
+    def setIsRegistered(value: /* type */ js.UndefOr[java.lang.String] => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteGetCount: Self = this.set("getCount", js.undefined)
-    
-    @scala.inline
-    def setIsRegistered(value: /* type */ js.UndefOr[java.lang.String] => Boolean): Self = this.set("isRegistered", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteIsRegistered: Self = this.set("isRegistered", js.undefined)
+    def setIsRegisteredUndefined: Self = StObject.set(x, "isRegistered", js.undefined)
     
     @scala.inline
     def setOnAvailable(
       value: (/* id */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
-    ): Self = this.set("onAvailable", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "onAvailable", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteOnAvailable: Self = this.set("onAvailable", js.undefined)
+    def setOnAvailableUndefined: Self = StObject.set(x, "onAvailable", js.undefined)
     
     @scala.inline
-    def setRegister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("register", js.Any.fromFunction1(value))
+    def setRegister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteRegister: Self = this.set("register", js.undefined)
+    def setRegisterType(value: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "registerType", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRegisterType(value: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any]) => Unit): Self = this.set("registerType", js.Any.fromFunction2(value))
+    def setRegisterTypeUndefined: Self = StObject.set(x, "registerType", js.undefined)
     
     @scala.inline
-    def deleteRegisterType: Self = this.set("registerType", js.undefined)
+    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
     @scala.inline
-    def setUnregister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
+    def setUnregister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteUnregister: Self = this.set("unregister", js.undefined)
+    def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
   }
 }

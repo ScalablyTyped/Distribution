@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * EditorBreakpoint...
   */
 @js.native
-trait IEditorBreakpoint extends js.Object {
+trait IEditorBreakpoint extends StObject {
   
   /**
     * If set to true then the breakpoint is enabled (in use).
@@ -34,27 +35,15 @@ object IEditorBreakpoint {
   }
   
   @scala.inline
-  implicit class IEditorBreakpointOps[Self <: IEditorBreakpoint] (val x: Self) extends AnyVal {
+  implicit class IEditorBreakpointMutableBuilder[Self <: IEditorBreakpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQEnabled(value: Boolean): Self = StObject.set(x, "qEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQbufferName(value: String): Self = StObject.set(x, "qbufferName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQEnabled(value: Boolean): Self = this.set("qEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQbufferName(value: String): Self = this.set("qbufferName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQlineIx(value: Double): Self = this.set("qlineIx", value.asInstanceOf[js.Any])
+    def setQlineIx(value: Double): Self = StObject.set(x, "qlineIx", value.asInstanceOf[js.Any])
   }
 }

@@ -5,14 +5,15 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Reducer
 import typings.redux.mod.Store
 import typings.redux.mod.StoreEnhancer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-injectable-store", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("redux-injectable-store", "createInjectableStore")
+  @js.native
   val createInjectableStore: InjectableStoreCreator = js.native
   
   @js.native
@@ -26,7 +27,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait InjectableStoreCreator extends js.Object {
+  trait InjectableStoreCreator extends StObject {
     
     def apply[S](): InjectableStore[S] = js.native
     def apply[S](enhancer: js.UndefOr[scala.Nothing], wrapReducer: WrapReducer[S]): InjectableStore[S] = js.native

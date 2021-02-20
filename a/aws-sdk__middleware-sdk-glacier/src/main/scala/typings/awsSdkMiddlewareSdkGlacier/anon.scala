@@ -3,16 +3,15 @@ package typings.awsSdkMiddlewareSdkGlacier
 import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Sha256 extends js.Object {
+  trait Sha256 extends StObject {
     
     var sha256: HashConstructor = js.native
     

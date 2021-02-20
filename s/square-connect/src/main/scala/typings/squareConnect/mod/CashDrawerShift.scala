@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CashDrawerShift")
 @js.native
-class CashDrawerShift () extends js.Object {
+class CashDrawerShift () extends StObject {
   
   /**
     * The amount of money added to the cash drawer for reasons other than cash payments.

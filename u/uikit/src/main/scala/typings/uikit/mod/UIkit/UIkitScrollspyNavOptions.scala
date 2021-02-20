@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitScrollspyNavOptions extends js.Object {
+trait UIkitScrollspyNavOptions extends StObject {
   
   var closest: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object UIkitScrollspyNavOptions {
   }
   
   @scala.inline
-  implicit class UIkitScrollspyNavOptionsOps[Self <: UIkitScrollspyNavOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitScrollspyNavOptionsMutableBuilder[Self <: UIkitScrollspyNavOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClosest(value: String): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClosestUndefined: Self = StObject.set(x, "closest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCls(value: String): Self = StObject.set(x, "cls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosest(value: String): Self = this.set("closest", value.asInstanceOf[js.Any])
+    def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
     
     @scala.inline
-    def deleteClosest: Self = this.set("closest", js.undefined)
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCls(value: String): Self = this.set("cls", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteCls: Self = this.set("cls", js.undefined)
+    def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflow(value: Boolean): Self = this.set("overflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOverflow: Self = this.set("overflow", js.undefined)
-    
-    @scala.inline
-    def setScroll(value: Boolean): Self = this.set("scroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScroll: Self = this.set("scroll", js.undefined)
+    def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
   }
 }

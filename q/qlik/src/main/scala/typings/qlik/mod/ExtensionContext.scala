@@ -2,12 +2,13 @@ package typings.qlik.mod
 
 import typings.jquery.JQuery
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionContext extends js.Object {
+trait ExtensionContext extends StObject {
   
   @JSName("$element")
   var $element: JQuery[HTMLElement] = js.native

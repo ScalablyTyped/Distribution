@@ -1,5 +1,6 @@
 package typings.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,27 +22,15 @@ object PublisherAdvertisement {
   }
   
   @scala.inline
-  implicit class PublisherAdvertisementOps[Self <: PublisherAdvertisement] (val x: Self) extends AnyVal {
+  implicit class PublisherAdvertisementMutableBuilder[Self <: PublisherAdvertisement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBroadcastsVarargs(value: String*): Self = this.set("broadcasts", js.Array(value :_*))
-    
-    @scala.inline
-    def setBroadcasts(value: js.Array[String]): Self = this.set("broadcasts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBroadcasts: Self = this.set("broadcasts", js.undefined)
+    def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
   }
 }

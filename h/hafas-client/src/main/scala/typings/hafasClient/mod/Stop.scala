@@ -1,6 +1,7 @@
 package typings.hafasClient.mod
 
 import typings.hafasClient.hafasClientStrings.stop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A stop always belongs to a station. It may for example be a sign, a basic shelter or a railway platform.
   */
 @js.native
-trait Stop extends js.Object {
+trait Stop extends StObject {
   
   var distance: js.UndefOr[Double] = js.native
   
@@ -48,99 +49,87 @@ object Stop {
   }
   
   @scala.inline
-  implicit class StopOps[Self <: Stop] (val x: Self) extends AnyVal {
+  implicit class StopMutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntrances(value: js.Array[Location]): Self = StObject.set(x, "entrances", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: stop): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEntrancesUndefined: Self = StObject.set(x, "entrances", js.undefined)
     
     @scala.inline
-    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    def setEntrancesVarargs(value: Location*): Self = StObject.set(x, "entrances", js.Array(value :_*))
     
     @scala.inline
-    def deleteDistance: Self = this.set("distance", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEntrancesVarargs(value: Location*): Self = this.set("entrances", js.Array(value :_*))
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setEntrances(value: js.Array[Location]): Self = this.set("entrances", value.asInstanceOf[js.Any])
+    def setIds(value: Ids): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEntrances: Self = this.set("entrances", js.undefined)
+    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsMeta(value: Boolean): Self = StObject.set(x, "isMeta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsMetaUndefined: Self = StObject.set(x, "isMeta", js.undefined)
     
     @scala.inline
-    def setIds(value: Ids): Self = this.set("ids", value.asInstanceOf[js.Any])
+    def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIds: Self = this.set("ids", js.undefined)
+    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     @scala.inline
-    def setIsMeta(value: Boolean): Self = this.set("isMeta", value.asInstanceOf[js.Any])
+    def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
     @scala.inline
-    def deleteIsMeta: Self = this.set("isMeta", js.undefined)
+    def setLoadFactor(value: String): Self = StObject.set(x, "loadFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinesVarargs(value: Line*): Self = this.set("lines", js.Array(value :_*))
+    def setLoadFactorUndefined: Self = StObject.set(x, "loadFactor", js.undefined)
     
     @scala.inline
-    def setLines(value: js.Array[Line]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLines: Self = this.set("lines", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLoadFactor(value: String): Self = this.set("loadFactor", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadFactor: Self = this.set("loadFactor", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReisezentrumOpeningHours(value: ReisezentrumOpeningHours): Self = StObject.set(x, "reisezentrumOpeningHours", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReisezentrumOpeningHoursUndefined: Self = StObject.set(x, "reisezentrumOpeningHours", js.undefined)
     
     @scala.inline
-    def setProducts(value: Products): Self = this.set("products", value.asInstanceOf[js.Any])
+    def setTransitAuthority(value: String): Self = StObject.set(x, "transitAuthority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProducts: Self = this.set("products", js.undefined)
+    def setTransitAuthorityUndefined: Self = StObject.set(x, "transitAuthority", js.undefined)
     
     @scala.inline
-    def setReisezentrumOpeningHours(value: ReisezentrumOpeningHours): Self = this.set("reisezentrumOpeningHours", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReisezentrumOpeningHours: Self = this.set("reisezentrumOpeningHours", js.undefined)
-    
-    @scala.inline
-    def setTransitAuthority(value: String): Self = this.set("transitAuthority", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransitAuthority: Self = this.set("transitAuthority", js.undefined)
+    def setType(value: stop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

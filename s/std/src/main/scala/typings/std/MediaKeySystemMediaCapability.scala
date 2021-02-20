@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaKeySystemMediaCapability extends js.Object {
+trait MediaKeySystemMediaCapability extends StObject {
   
   var contentType: js.UndefOr[java.lang.String] = js.native
   
@@ -20,30 +21,18 @@ object MediaKeySystemMediaCapability {
   }
   
   @scala.inline
-  implicit class MediaKeySystemMediaCapabilityOps[Self <: MediaKeySystemMediaCapability] (val x: Self) extends AnyVal {
+  implicit class MediaKeySystemMediaCapabilityMutableBuilder[Self <: MediaKeySystemMediaCapability] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentType(value: java.lang.String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRobustness(value: java.lang.String): Self = StObject.set(x, "robustness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentType(value: java.lang.String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
-    
-    @scala.inline
-    def setRobustness(value: java.lang.String): Self = this.set("robustness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRobustness: Self = this.set("robustness", js.undefined)
+    def setRobustnessUndefined: Self = StObject.set(x, "robustness", js.undefined)
   }
 }

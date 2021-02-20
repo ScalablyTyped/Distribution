@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListThingRegistrationTaskReportsResponse extends js.Object {
+trait ListThingRegistrationTaskReportsResponse extends StObject {
   
   /**
     * The token to use to get the next set of results, or null if there are no additional results.
@@ -31,39 +32,27 @@ object ListThingRegistrationTaskReportsResponse {
   }
   
   @scala.inline
-  implicit class ListThingRegistrationTaskReportsResponseOps[Self <: ListThingRegistrationTaskReportsResponse] (val x: Self) extends AnyVal {
+  implicit class ListThingRegistrationTaskReportsResponseMutableBuilder[Self <: ListThingRegistrationTaskReportsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setResourceLinks(value: S3FileUrlList): Self = StObject.set(x, "resourceLinks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportType(value: ReportType): Self = this.set("reportType", value.asInstanceOf[js.Any])
+    def setResourceLinksUndefined: Self = StObject.set(x, "resourceLinks", js.undefined)
     
     @scala.inline
-    def deleteReportType: Self = this.set("reportType", js.undefined)
-    
-    @scala.inline
-    def setResourceLinksVarargs(value: S3FileUrl*): Self = this.set("resourceLinks", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceLinks(value: S3FileUrlList): Self = this.set("resourceLinks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLinks: Self = this.set("resourceLinks", js.undefined)
+    def setResourceLinksVarargs(value: S3FileUrl*): Self = StObject.set(x, "resourceLinks", js.Array(value :_*))
   }
 }

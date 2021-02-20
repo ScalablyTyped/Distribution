@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
 @js.native
-trait PlusNativeObjViewEvents extends js.Object {
+trait PlusNativeObjViewEvents extends StObject {
   
   /**
     * 点击事件
@@ -66,48 +67,36 @@ object PlusNativeObjViewEvents {
   }
   
   @scala.inline
-  implicit class PlusNativeObjViewEventsOps[Self <: PlusNativeObjViewEvents] (val x: Self) extends AnyVal {
+  implicit class PlusNativeObjViewEventsMutableBuilder[Self <: PlusNativeObjViewEvents] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDoubleclick(value: String): Self = StObject.set(x, "doubleclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: String): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubleclickUndefined: Self = StObject.set(x, "doubleclick", js.undefined)
     
     @scala.inline
-    def deleteClick: Self = this.set("click", js.undefined)
+    def setTouchend(value: String): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubleclick(value: String): Self = this.set("doubleclick", value.asInstanceOf[js.Any])
+    def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
     
     @scala.inline
-    def deleteDoubleclick: Self = this.set("doubleclick", js.undefined)
+    def setTouchmove(value: String): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: String): Self = this.set("touchend", value.asInstanceOf[js.Any])
+    def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
     
     @scala.inline
-    def deleteTouchend: Self = this.set("touchend", js.undefined)
+    def setTouchstart(value: String): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchmove(value: String): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchmove: Self = this.set("touchmove", js.undefined)
-    
-    @scala.inline
-    def setTouchstart(value: String): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouchstart: Self = this.set("touchstart", js.undefined)
+    def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
   }
 }

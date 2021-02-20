@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LineDashEnding extends js.Object
+sealed trait LineDashEnding extends StObject
 @JSGlobal("__esri.CIM.LineDashEnding")
 @js.native
-object LineDashEnding extends js.Object {
+object LineDashEnding extends StObject {
   
   /**
     * Custom - the pattern is fit to the length of the feature by adjusting the gaps slightly.

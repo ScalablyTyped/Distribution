@@ -1,11 +1,12 @@
 package typings.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangePageOptions extends js.Object {
+trait ChangePageOptions extends StObject {
   
   var allowSamePageTransition: js.UndefOr[Boolean] = js.native
   
@@ -38,84 +39,72 @@ object ChangePageOptions {
   }
   
   @scala.inline
-  implicit class ChangePageOptionsOps[Self <: ChangePageOptions] (val x: Self) extends AnyVal {
+  implicit class ChangePageOptionsMutableBuilder[Self <: ChangePageOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSamePageTransition(value: Boolean): Self = StObject.set(x, "allowSamePageTransition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowSamePageTransitionUndefined: Self = StObject.set(x, "allowSamePageTransition", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChangeHash(value: Boolean): Self = StObject.set(x, "changeHash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowSamePageTransition(value: Boolean): Self = this.set("allowSamePageTransition", value.asInstanceOf[js.Any])
+    def setChangeHashUndefined: Self = StObject.set(x, "changeHash", js.undefined)
     
     @scala.inline
-    def deleteAllowSamePageTransition: Self = this.set("allowSamePageTransition", js.undefined)
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeHash(value: Boolean): Self = this.set("changeHash", value.asInstanceOf[js.Any])
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def deleteChangeHash: Self = this.set("changeHash", js.undefined)
+    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setPageContainer(value: JQuery): Self = StObject.set(x, "pageContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataUrl(value: String): Self = this.set("dataUrl", value.asInstanceOf[js.Any])
+    def setPageContainerUndefined: Self = StObject.set(x, "pageContainer", js.undefined)
     
     @scala.inline
-    def deleteDataUrl: Self = this.set("dataUrl", js.undefined)
+    def setReloadPage(value: Boolean): Self = StObject.set(x, "reloadPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageContainer(value: JQuery): Self = this.set("pageContainer", value.asInstanceOf[js.Any])
+    def setReloadPageUndefined: Self = StObject.set(x, "reloadPage", js.undefined)
     
     @scala.inline
-    def deletePageContainer: Self = this.set("pageContainer", js.undefined)
+    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReloadPage(value: Boolean): Self = this.set("reloadPage", value.asInstanceOf[js.Any])
+    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
     @scala.inline
-    def deleteReloadPage: Self = this.set("reloadPage", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     @scala.inline
-    def deleteReverse: Self = this.set("reverse", js.undefined)
+    def setShowLoadMsg(value: Boolean): Self = StObject.set(x, "showLoadMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    def setShowLoadMsgUndefined: Self = StObject.set(x, "showLoadMsg", js.undefined)
     
     @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowLoadMsg(value: Boolean): Self = this.set("showLoadMsg", value.asInstanceOf[js.Any])
+    def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
     @scala.inline
-    def deleteShowLoadMsg: Self = this.set("showLoadMsg", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransition: Self = this.set("transition", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,204 +14,403 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Res ()
   extends typings.microsoftAjax.Sys.Res
-/* static members */
-@JSGlobal("Sys.Res")
-@js.native
-object Res extends js.Object {
+object Res {
+  
+  @JSGlobal("Sys.Res")
+  @js.native
+  val ^ : js.Any = js.native
   
   //#region Fields
   /**
     * @return "Actual value was {0}."
     */
-  var actualValue: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.actualValue")
+  @js.native
+  def actualValue: String = js.native
+  @scala.inline
+  def actualValue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("actualValue")(x.asInstanceOf[js.Any])
   
   /**
     * @return "The application failed to load within the specified time out period."
     */
-  var appLoadTimedout: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.appLoadTimedout")
+  @js.native
+  def appLoadTimedout: String = js.native
+  @scala.inline
+  def appLoadTimedout_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appLoadTimedout")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Value does not fall within the expected range."
     */
-  var argument: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.argument")
+  @js.native
+  def argument: String = js.native
   
   /**
     * @return "Value cannot be null."
     */
-  var argumentNull: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.argumentNull")
+  @js.native
+  def argumentNull: String = js.native
+  @scala.inline
+  def argumentNull_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("argumentNull")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Specified argument was out of the range of valid values.
     */
-  var argumentOutOfRange: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.argumentOutOfRange")
+  @js.native
+  def argumentOutOfRange: String = js.native
+  @scala.inline
+  def argumentOutOfRange_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("argumentOutOfRange")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Object cannot be converted to the required type."
     */
-  var argumentType: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.argumentType")
+  @js.native
+  def argumentType: String = js.native
   
   /**
     * @return "Object of type '{0}' cannot be converted to type '{1}'."
     */
-  var argumentTypeWithTypes: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.argumentTypeWithTypes")
+  @js.native
+  def argumentTypeWithTypes: String = js.native
+  @scala.inline
+  def argumentTypeWithTypes_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("argumentTypeWithTypes")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def argumentType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("argumentType")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Value cannot be undefined."
     */
-  var argumentUndefined: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.argumentUndefined")
+  @js.native
+  def argumentUndefined: String = js.native
+  @scala.inline
+  def argumentUndefined_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("argumentUndefined")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def argument_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("argument")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Assertion Failed: {0}"
     */
-  var assertFailed: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.assertFailed")
+  @js.native
+  def assertFailed: String = js.native
+  @scala.inline
+  def assertFailed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assertFailed")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Assertion Failed: {0}\r\nat {1}"
     */
-  var assetFailedCaller: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.assetFailedCaller")
+  @js.native
+  def assetFailedCaller: String = js.native
+  @scala.inline
+  def assetFailedCaller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assetFailedCaller")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Base URL does not contain ://."
     */
-  var badBaseUrl1: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.badBaseUrl1")
+  @js.native
+  def badBaseUrl1: String = js.native
+  @scala.inline
+  def badBaseUrl1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badBaseUrl1")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Base URL does not contain another /."
     */
-  var badBaseUrl2: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.badBaseUrl2")
+  @js.native
+  def badBaseUrl2: String = js.native
+  @scala.inline
+  def badBaseUrl2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badBaseUrl2")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot find last / in base URL."
     */
-  var badBaseUrl3: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.badBaseUrl3")
+  @js.native
+  def badBaseUrl3: String = js.native
+  @scala.inline
+  def badBaseUrl3_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("badBaseUrl3")(x.asInstanceOf[js.Any])
   
   /**
     * @return "{0}\r\n\r\nBreak into debugger?"
     */
-  var breakIntoDebugger: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.breakIntoDebugger")
+  @js.native
+  def breakIntoDebugger: String = js.native
+  @scala.inline
+  def breakIntoDebugger_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("breakIntoDebugger")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot abort when executor has not started."
     */
-  var cannotAbortBeforeStart: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.cannotAbortBeforeStart")
+  @js.native
+  def cannotAbortBeforeStart: String = js.native
+  @scala.inline
+  def cannotAbortBeforeStart_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotAbortBeforeStart")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot call {0} when responseAvailable is false."
     */
-  var cannotCallBeforeResponse: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.cannotCallBeforeResponse")
+  @js.native
+  def cannotCallBeforeResponse: String = js.native
+  @scala.inline
+  def cannotCallBeforeResponse_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotCallBeforeResponse")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot call {0} once started."
     */
-  var cannotCallOnceStarted: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.cannotCallOnceStarted")
+  @js.native
+  def cannotCallOnceStarted: String = js.native
+  @scala.inline
+  def cannotCallOnceStarted_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotCallOnceStarted")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot call {0} outside of a completed event handler."
     */
-  var cannotCallOutsideHandler: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.cannotCallOutsideHandler")
+  @js.native
+  def cannotCallOutsideHandler: String = js.native
+  @scala.inline
+  def cannotCallOutsideHandler_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotCallOutsideHandler")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot deserialize empty string."
     */
-  var cannotDeserializeEmptyString: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.cannotDeserializeEmptyString")
+  @js.native
+  def cannotDeserializeEmptyString: String = js.native
+  @scala.inline
+  def cannotDeserializeEmptyString_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotDeserializeEmptyString")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot serialize non-finite numbers."
     */
-  var cannotSerializeNonFiniteNumbers: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.cannotSerializeNonFiniteNumbers")
+  @js.native
+  def cannotSerializeNonFiniteNumbers: String = js.native
+  @scala.inline
+  def cannotSerializeNonFiniteNumbers_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cannotSerializeNonFiniteNumbers")(x.asInstanceOf[js.Any])
   
   /**
     * @return "The id property can't be set on a control."
     */
-  var controlCantSetId: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.controlCantSetId")
+  @js.native
+  def controlCantSetId: String = js.native
+  @scala.inline
+  def controlCantSetId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controlCantSetId")(x.asInstanceOf[js.Any])
   
   /**
     * @return "'{0}' is not a valid value for enum {1}."
     */
-  var enumInvalidValue: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.enumInvalidValue")
+  @js.native
+  def enumInvalidValue: String = js.native
+  @scala.inline
+  def enumInvalidValue_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enumInvalidValue")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Handler was not added through the Sys.UI.DomEvent.addHandler method.
     */
-  var eventHandlerInvalid: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.eventHandlerInvalid")
+  @js.native
+  def eventHandlerInvalid: String = js.native
+  @scala.inline
+  def eventHandlerInvalid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventHandlerInvalid")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Handler must be a function."
     */
-  var eventHandlerNotFunction: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.eventHandlerNotFunction")
+  @js.native
+  def eventHandlerNotFunction: String = js.native
+  @scala.inline
+  def eventHandlerNotFunction_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventHandlerNotFunction")(x.asInstanceOf[js.Any])
   
   /**
     * @return "One of the identified items was in an invalid format."
     */
-  var format: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.format")
+  @js.native
+  def format: String = js.native
   
   /**
     * @return "The string was not recognized as a valid Date."
     */
-  var formatBadDate: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.formatBadDate")
+  @js.native
+  def formatBadDate: String = js.native
+  @scala.inline
+  def formatBadDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatBadDate")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Format specifier was invalid."
     */
-  var formatBadFormatSpecifier: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.formatBadFormatSpecifier")
+  @js.native
+  def formatBadFormatSpecifier: String = js.native
+  @scala.inline
+  def formatBadFormatSpecifier_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatBadFormatSpecifier")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Input string was not in a correct format."
     */
-  var formatInvalidString: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.formatInvalidString")
+  @js.native
+  def formatInvalidString: String = js.native
+  @scala.inline
+  def formatInvalidString_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatInvalidString")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def format_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Could not create a valid Sys.Net.WebRequestExecutor from: {0}."
     */
-  var invalidExecutorType: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.invalidExecutorType")
+  @js.native
+  def invalidExecutorType: String = js.native
+  @scala.inline
+  def invalidExecutorType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidExecutorType")(x.asInstanceOf[js.Any])
   
   /**
     * @return "httpVerb cannot be set to an empty or null string."
     */
-  var invalidHttpVerb: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.invalidHttpVerb")
+  @js.native
+  def invalidHttpVerb: String = js.native
+  @scala.inline
+  def invalidHttpVerb_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidHttpVerb")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Operation is not valid due to the current state of the object."
     */
-  var invalidOperation: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.invalidOperation")
+  @js.native
+  def invalidOperation: String = js.native
+  @scala.inline
+  def invalidOperation_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidOperation")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Value must be greater than or equal to zero."
     */
-  var invalidTimeout: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.invalidTimeout")
+  @js.native
+  def invalidTimeout: String = js.native
+  @scala.inline
+  def invalidTimeout_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidTimeout")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot call invoke more than once."
     */
-  var invokeCalledTwice: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.invokeCalledTwice")
+  @js.native
+  def invokeCalledTwice: String = js.native
+  @scala.inline
+  def invokeCalledTwice_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invokeCalledTwice")(x.asInstanceOf[js.Any])
   
   /**
     * @return "The method or operation is not implemented."
     */
-  var notImplemented: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.notImplemented")
+  @js.native
+  def notImplemented: String = js.native
+  @scala.inline
+  def notImplemented_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notImplemented")(x.asInstanceOf[js.Any])
   
   /**
     * @return "Cannot call executeRequest with a null webRequest."
     */
-  var nullWebRequest: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.nullWebRequest")
+  @js.native
+  def nullWebRequest: String = js.native
+  @scala.inline
+  def nullWebRequest_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nullWebRequest")(x.asInstanceOf[js.Any])
   
   /**
     * @return "'{0}' is not an Array property."
     */
-  var propertyNotAnArray: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.propertyNotAnArray")
+  @js.native
+  def propertyNotAnArray: String = js.native
+  @scala.inline
+  def propertyNotAnArray_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propertyNotAnArray")(x.asInstanceOf[js.Any])
   
   /**
     * @return "'{0}' is not a writable property."
     */
-  var propertyNotWritable: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.propertyNotWritable")
+  @js.native
+  def propertyNotWritable: String = js.native
+  @scala.inline
+  def propertyNotWritable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propertyNotWritable")(x.asInstanceOf[js.Any])
   
   /**
     * @return "'{0}' is not a property or an existing field."
     */
-  var propertyUndefined: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.propertyUndefined")
+  @js.native
+  def propertyUndefined: String = js.native
+  @scala.inline
+  def propertyUndefined_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propertyUndefined")(x.asInstanceOf[js.Any])
   
   /**
     * @return "'{0}' is not an event."
     */
-  var undefinedEvent: String = js.native
+  /* static member */
+  @JSGlobal("Sys.Res.undefinedEvent")
+  @js.native
+  def undefinedEvent: String = js.native
+  @scala.inline
+  def undefinedEvent_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedEvent")(x.asInstanceOf[js.Any])
 }

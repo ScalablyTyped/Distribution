@@ -10,6 +10,7 @@ import typings.tuyaPanelKit.anon.CloseIcon
 import typings.tuyaPanelKit.tuyaPanelKitStrings.error
 import typings.tuyaPanelKit.tuyaPanelKitStrings.success
 import typings.tuyaPanelKit.tuyaPanelKitStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,114 +57,102 @@ object NotificationProps {
   }
   
   @scala.inline
-  implicit class NotificationPropsOps[Self <: NotificationProps] (val x: Self) extends AnyVal {
+  implicit class NotificationPropsMutableBuilder[Self <: NotificationProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoCloseTime(value: Double): Self = StObject.set(x, "autoCloseTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCloseTimeUndefined: Self = StObject.set(x, "autoCloseTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackIcon(value: String): Self = StObject.set(x, "backIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setBackIconCenter(value: Boolean): Self = StObject.set(x, "backIconCenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoCloseTime(value: Double): Self = this.set("autoCloseTime", value.asInstanceOf[js.Any])
+    def setBackIconCenterUndefined: Self = StObject.set(x, "backIconCenter", js.undefined)
     
     @scala.inline
-    def deleteAutoCloseTime: Self = this.set("autoCloseTime", js.undefined)
+    def setBackIconSize(value: Double): Self = StObject.set(x, "backIconSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackIcon(value: String): Self = this.set("backIcon", value.asInstanceOf[js.Any])
+    def setBackIconSizeUndefined: Self = StObject.set(x, "backIconSize", js.undefined)
     
     @scala.inline
-    def deleteBackIcon: Self = this.set("backIcon", js.undefined)
+    def setBackIconUndefined: Self = StObject.set(x, "backIcon", js.undefined)
     
     @scala.inline
-    def setBackIconCenter(value: Boolean): Self = this.set("backIconCenter", value.asInstanceOf[js.Any])
+    def setEnableClose(value: Boolean): Self = StObject.set(x, "enableClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackIconCenter: Self = this.set("backIconCenter", js.undefined)
+    def setEnableCloseUndefined: Self = StObject.set(x, "enableClose", js.undefined)
     
     @scala.inline
-    def setBackIconSize(value: Double): Self = this.set("backIconSize", value.asInstanceOf[js.Any])
+    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackIconSize: Self = this.set("backIconSize", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setEnableClose(value: Boolean): Self = this.set("enableClose", value.asInstanceOf[js.Any])
+    def setImageSource(value: ImageSourcePropType): Self = StObject.set(x, "imageSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableClose: Self = this.set("enableClose", js.undefined)
+    def setImageSourceUndefined: Self = StObject.set(x, "imageSource", js.undefined)
     
     @scala.inline
-    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setImageSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "imageSource", js.Array(value :_*))
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setImageStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSourceVarargs(value: ImageURISource*): Self = this.set("imageSource", js.Array(value :_*))
+    def setImageStyleNull: Self = StObject.set(x, "imageStyle", null)
     
     @scala.inline
-    def setImageSource(value: ImageSourcePropType): Self = this.set("imageSource", value.asInstanceOf[js.Any])
+    def setImageStyleUndefined: Self = StObject.set(x, "imageStyle", js.undefined)
     
     @scala.inline
-    def deleteImageSource: Self = this.set("imageSource", js.undefined)
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageStyle(value: StyleProp[ImageStyle]): Self = this.set("imageStyle", value.asInstanceOf[js.Any])
+    def setMotionConfig(value: MotionProps): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteImageStyle: Self = this.set("imageStyle", js.undefined)
+    def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     
     @scala.inline
-    def setImageStyleNull: Self = this.set("imageStyle", null)
+    def setMotionStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "motionStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMotionConfig(value: MotionProps): Self = this.set("motionConfig", value.asInstanceOf[js.Any])
+    def setMotionStyleNull: Self = StObject.set(x, "motionStyle", null)
     
     @scala.inline
-    def deleteMotionConfig: Self = this.set("motionConfig", js.undefined)
+    def setMotionStyleUndefined: Self = StObject.set(x, "motionStyle", js.undefined)
     
     @scala.inline
-    def setMotionStyle(value: StyleProp[ViewStyle]): Self = this.set("motionStyle", value.asInstanceOf[js.Any])
+    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteMotionStyle: Self = this.set("motionStyle", js.undefined)
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def setMotionStyleNull: Self = this.set("motionStyle", null)
+    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
     @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    def setTheme(value: CloseIcon): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteShow: Self = this.set("show", js.undefined)
+    def setVariant(value: success | warning | error): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: CloseIcon): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setVariant(value: success | warning | error): Self = this.set("variant", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariant: Self = this.set("variant", js.undefined)
+    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

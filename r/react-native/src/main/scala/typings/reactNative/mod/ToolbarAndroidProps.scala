@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,99 +107,87 @@ object ToolbarAndroidProps {
   }
   
   @scala.inline
-  implicit class ToolbarAndroidPropsOps[Self <: ToolbarAndroidProps] (val x: Self) extends AnyVal {
+  implicit class ToolbarAndroidPropsMutableBuilder[Self <: ToolbarAndroidProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[ToolbarAndroidAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: ToolbarAndroidAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: ToolbarAndroidAction*): Self = this.set("actions", js.Array(value :_*))
+    def setContentInsetEnd(value: Double): Self = StObject.set(x, "contentInsetEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: js.Array[ToolbarAndroidAction]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setContentInsetEndUndefined: Self = StObject.set(x, "contentInsetEnd", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setContentInsetStart(value: Double): Self = StObject.set(x, "contentInsetStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentInsetEnd(value: Double): Self = this.set("contentInsetEnd", value.asInstanceOf[js.Any])
+    def setContentInsetStartUndefined: Self = StObject.set(x, "contentInsetStart", js.undefined)
     
     @scala.inline
-    def deleteContentInsetEnd: Self = this.set("contentInsetEnd", js.undefined)
+    def setLogo(value: ImageURISource): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentInsetStart(value: Double): Self = this.set("contentInsetStart", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteContentInsetStart: Self = this.set("contentInsetStart", js.undefined)
+    def setNavIcon(value: ImageURISource): Self = StObject.set(x, "navIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: ImageURISource): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setNavIconUndefined: Self = StObject.set(x, "navIcon", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setOnActionSelected(value: /* position */ Double => Unit): Self = StObject.set(x, "onActionSelected", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavIcon(value: ImageURISource): Self = this.set("navIcon", value.asInstanceOf[js.Any])
+    def setOnActionSelectedUndefined: Self = StObject.set(x, "onActionSelected", js.undefined)
     
     @scala.inline
-    def deleteNavIcon: Self = this.set("navIcon", js.undefined)
+    def setOnIconClicked(value: () => Unit): Self = StObject.set(x, "onIconClicked", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnActionSelected(value: /* position */ Double => Unit): Self = this.set("onActionSelected", js.Any.fromFunction1(value))
+    def setOnIconClickedUndefined: Self = StObject.set(x, "onIconClicked", js.undefined)
     
     @scala.inline
-    def deleteOnActionSelected: Self = this.set("onActionSelected", js.undefined)
+    def setOverflowIcon(value: ImageURISource): Self = StObject.set(x, "overflowIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnIconClicked(value: () => Unit): Self = this.set("onIconClicked", js.Any.fromFunction0(value))
+    def setOverflowIconUndefined: Self = StObject.set(x, "overflowIcon", js.undefined)
     
     @scala.inline
-    def deleteOnIconClicked: Self = this.set("onIconClicked", js.undefined)
+    def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverflowIcon(value: ImageURISource): Self = this.set("overflowIcon", value.asInstanceOf[js.Any])
+    def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     
     @scala.inline
-    def deleteOverflowIcon: Self = this.set("overflowIcon", js.undefined)
+    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRtl(value: Boolean): Self = this.set("rtl", value.asInstanceOf[js.Any])
+    def setSubtitleColor(value: ColorValue): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRtl: Self = this.set("rtl", js.undefined)
+    def setSubtitleColorUndefined: Self = StObject.set(x, "subtitleColor", js.undefined)
     
     @scala.inline
-    def setSubtitle(value: String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     @scala.inline
-    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitleColor(value: ColorValue): Self = this.set("subtitleColor", value.asInstanceOf[js.Any])
+    def setTitleColor(value: ColorValue): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSubtitleColor: Self = this.set("subtitleColor", js.undefined)
+    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setTitleColor(value: ColorValue): Self = this.set("titleColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitleColor: Self = this.set("titleColor", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

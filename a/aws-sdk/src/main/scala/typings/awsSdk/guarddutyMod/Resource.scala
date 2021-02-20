@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Resource extends js.Object {
+trait Resource extends StObject {
   
   /**
     * The IAM access key details (IAM user information) of a user that engaged in the activity that prompted GuardDuty to generate a finding.
@@ -36,45 +37,33 @@ object Resource {
   }
   
   @scala.inline
-  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessKeyDetails(value: AccessKeyDetails): Self = StObject.set(x, "AccessKeyDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessKeyDetailsUndefined: Self = StObject.set(x, "AccessKeyDetails", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceDetails(value: InstanceDetails): Self = StObject.set(x, "InstanceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessKeyDetails(value: AccessKeyDetails): Self = this.set("AccessKeyDetails", value.asInstanceOf[js.Any])
+    def setInstanceDetailsUndefined: Self = StObject.set(x, "InstanceDetails", js.undefined)
     
     @scala.inline
-    def deleteAccessKeyDetails: Self = this.set("AccessKeyDetails", js.undefined)
+    def setResourceType(value: String): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceDetails(value: InstanceDetails): Self = this.set("InstanceDetails", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
     @scala.inline
-    def deleteInstanceDetails: Self = this.set("InstanceDetails", js.undefined)
+    def setS3BucketDetails(value: S3BucketDetails): Self = StObject.set(x, "S3BucketDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceType(value: String): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    def setS3BucketDetailsUndefined: Self = StObject.set(x, "S3BucketDetails", js.undefined)
     
     @scala.inline
-    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
-    
-    @scala.inline
-    def setS3BucketDetailsVarargs(value: S3BucketDetail*): Self = this.set("S3BucketDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setS3BucketDetails(value: S3BucketDetails): Self = this.set("S3BucketDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BucketDetails: Self = this.set("S3BucketDetails", js.undefined)
+    def setS3BucketDetailsVarargs(value: S3BucketDetail*): Self = StObject.set(x, "S3BucketDetails", js.Array(value :_*))
   }
 }

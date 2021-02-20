@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListResourcesForTagOptionOutput extends js.Object {
+trait ListResourcesForTagOptionOutput extends StObject {
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
@@ -26,33 +27,21 @@ object ListResourcesForTagOptionOutput {
   }
   
   @scala.inline
-  implicit class ListResourcesForTagOptionOutputOps[Self <: ListResourcesForTagOptionOutput] (val x: Self) extends AnyVal {
+  implicit class ListResourcesForTagOptionOutputMutableBuilder[Self <: ListResourcesForTagOptionOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceDetails(value: ResourceDetails): Self = StObject.set(x, "ResourceDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    def setResourceDetailsUndefined: Self = StObject.set(x, "ResourceDetails", js.undefined)
     
     @scala.inline
-    def deletePageToken: Self = this.set("PageToken", js.undefined)
-    
-    @scala.inline
-    def setResourceDetailsVarargs(value: ResourceDetail*): Self = this.set("ResourceDetails", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceDetails(value: ResourceDetails): Self = this.set("ResourceDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceDetails: Self = this.set("ResourceDetails", js.undefined)
+    def setResourceDetailsVarargs(value: ResourceDetail*): Self = StObject.set(x, "ResourceDetails", js.Array(value :_*))
   }
 }

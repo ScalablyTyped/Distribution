@@ -6,12 +6,13 @@ import typings.rethinkdb.rethinkdbStrings.hard
 import typings.rethinkdb.rethinkdbStrings.replace
 import typings.rethinkdb.rethinkdbStrings.soft
 import typings.rethinkdb.rethinkdbStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertOptions extends js.Object {
+trait InsertOptions extends StObject {
   
   var conflict: js.UndefOr[
     error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, _])
@@ -30,41 +31,29 @@ object InsertOptions {
   }
   
   @scala.inline
-  implicit class InsertOptionsOps[Self <: InsertOptions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => _): Self = this.set("conflict", js.Any.fromFunction3(value))
+  implicit class InsertOptionsMutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setConflict(
       value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, _])
-    ): Self = this.set("conflict", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConflict: Self = this.set("conflict", js.undefined)
+    def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => _): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDurability(value: hard | soft): Self = this.set("durability", value.asInstanceOf[js.Any])
+    def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)
     
     @scala.inline
-    def deleteDurability: Self = this.set("durability", js.undefined)
+    def setDurability(value: hard | soft): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnChanges(value: Boolean | always): Self = this.set("returnChanges", value.asInstanceOf[js.Any])
+    def setDurabilityUndefined: Self = StObject.set(x, "durability", js.undefined)
     
     @scala.inline
-    def deleteReturnChanges: Self = this.set("returnChanges", js.undefined)
+    def setReturnChanges(value: Boolean | always): Self = StObject.set(x, "returnChanges", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setReturnChangesUndefined: Self = StObject.set(x, "returnChanges", js.undefined)
   }
 }

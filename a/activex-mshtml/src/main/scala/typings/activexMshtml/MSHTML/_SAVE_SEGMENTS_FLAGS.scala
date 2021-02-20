@@ -2,6 +2,7 @@ package typings.activexMshtml.MSHTML
 
 import typings.activexMshtml.activexMshtmlNumbers.`1`
 import typings.activexMshtml.activexMshtmlNumbers.`2147483647`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexMshtml.activexMshtmlNumbers.`2147483647`
   - typings.activexMshtml.activexMshtmlNumbers.`1`
 */
-trait _SAVE_SEGMENTS_FLAGS extends js.Object
+trait _SAVE_SEGMENTS_FLAGS extends StObject
 object _SAVE_SEGMENTS_FLAGS {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlotSlowstochasticParamsOptions extends js.Object {
+trait PlotSlowstochasticParamsOptions extends StObject {
   
   /**
     * (Highstock) Periods for Slow Stochastic oscillator: [%K, %D, SMA(%D)].
@@ -21,24 +22,12 @@ object PlotSlowstochasticParamsOptions {
   }
   
   @scala.inline
-  implicit class PlotSlowstochasticParamsOptionsOps[Self <: PlotSlowstochasticParamsOptions] (val x: Self) extends AnyVal {
+  implicit class PlotSlowstochasticParamsOptionsMutableBuilder[Self <: PlotSlowstochasticParamsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPeriods(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPeriods(value: js.Tuple3[Double, Double, Double]): Self = this.set("periods", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriods: Self = this.set("periods", js.undefined)
+    def setPeriodsUndefined: Self = StObject.set(x, "periods", js.undefined)
   }
 }

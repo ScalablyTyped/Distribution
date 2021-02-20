@@ -9,6 +9,7 @@ import typings.std.Uint16Array
 import typings.std.Uint32Array
 import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   from the {@link pc.Application}.
   */
 @js.native
-trait Mesh extends js.Object {
+trait Mesh extends StObject {
   
   /**
     * The axis-aligned bounding box for the object space vertices of this mesh.

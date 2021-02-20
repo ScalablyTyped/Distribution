@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TestRulesetRequest extends js.Object {
+trait TestRulesetRequest extends StObject {
   
   /** Optional `Source` to be checked for correctness. This field must not be set when the resource name refers to a `Ruleset`. */
   var source: js.UndefOr[Source] = js.native
@@ -22,30 +23,18 @@ object TestRulesetRequest {
   }
   
   @scala.inline
-  implicit class TestRulesetRequestOps[Self <: TestRulesetRequest] (val x: Self) extends AnyVal {
+  implicit class TestRulesetRequestMutableBuilder[Self <: TestRulesetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTestSuite(value: TestSuite): Self = StObject.set(x, "testSuite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: Source): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setTestSuite(value: TestSuite): Self = this.set("testSuite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTestSuite: Self = this.set("testSuite", js.undefined)
+    def setTestSuiteUndefined: Self = StObject.set(x, "testSuite", js.undefined)
   }
 }

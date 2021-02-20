@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashBitmapItem extends js.Object {
+trait FlashBitmapItem extends StObject {
   
   var allowSmoothing: Boolean = js.native
   
@@ -47,48 +48,36 @@ object FlashBitmapItem {
   }
   
   @scala.inline
-  implicit class FlashBitmapItemOps[Self <: FlashBitmapItem] (val x: Self) extends AnyVal {
+  implicit class FlashBitmapItemMutableBuilder[Self <: FlashBitmapItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowSmoothing(value: Boolean): Self = StObject.set(x, "allowSmoothing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompressionType(value: String): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExportToFile(value: String => Boolean): Self = StObject.set(x, "exportToFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowSmoothing(value: Boolean): Self = this.set("allowSmoothing", value.asInstanceOf[js.Any])
+    def setFileLastModifiedDate(value: String): Self = StObject.set(x, "fileLastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompressionType(value: String): Self = this.set("compressionType", value.asInstanceOf[js.Any])
+    def setOriginalCompressionType(value: String): Self = StObject.set(x, "originalCompressionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportToFile(value: String => Boolean): Self = this.set("exportToFile", js.Any.fromFunction1(value))
+    def setSourceFileExists(value: Boolean): Self = StObject.set(x, "sourceFileExists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileLastModifiedDate(value: String): Self = this.set("fileLastModifiedDate", value.asInstanceOf[js.Any])
+    def setSourceFileIsCurrent(value: Boolean): Self = StObject.set(x, "sourceFileIsCurrent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalCompressionType(value: String): Self = this.set("originalCompressionType", value.asInstanceOf[js.Any])
+    def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFileExists(value: Boolean): Self = this.set("sourceFileExists", value.asInstanceOf[js.Any])
+    def setUseDeblocking(value: Boolean): Self = StObject.set(x, "useDeblocking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceFileIsCurrent(value: Boolean): Self = this.set("sourceFileIsCurrent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceFilePath(value: String): Self = this.set("sourceFilePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDeblocking(value: Boolean): Self = this.set("useDeblocking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseImportedJPEGQuality(value: Boolean): Self = this.set("useImportedJPEGQuality", value.asInstanceOf[js.Any])
+    def setUseImportedJPEGQuality(value: Boolean): Self = StObject.set(x, "useImportedJPEGQuality", value.asInstanceOf[js.Any])
   }
 }

@@ -1,16 +1,19 @@
 package typings.amcharts
 
-import typings.amcharts.amCoordinateChartMod.AmCoordinateChart
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("amcharts/AmRectangularChart", JSImport.Namespace)
-@js.native
-object amRectangularChartMod extends js.Object {
+object amRectangularChartMod {
+  
+  @JSImport("amcharts/AmRectangularChart", JSImport.Default)
+  @js.native
+  class default () extends AmRectangularChart
   
   @js.native
-  trait AmRectangularChart extends AmCoordinateChart {
+  trait AmRectangularChart
+    extends typings.amcharts.amCoordinateChartMod.default {
     
     /**
       * Adds a ChartCursor object to a chart
@@ -202,7 +205,4 @@ object amRectangularChartMod extends js.Object {
       */
     var zoomOutText: String = js.native
   }
-  
-  @js.native
-  class default () extends AmRectangularChart
 }

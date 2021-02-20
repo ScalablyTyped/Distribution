@@ -1,5 +1,6 @@
 package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The response for the `ListBrokers()` method.
   */
 @js.native
-trait SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse extends js.Object {
+trait SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse extends StObject {
   
   /**
     * The list of brokers in the container.
@@ -33,33 +34,21 @@ object SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponseOps[Self <: SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponseMutableBuilder[Self <: SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBrokers(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]): Self = StObject.set(x, "brokers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBrokersUndefined: Self = StObject.set(x, "brokers", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrokersVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Broker*): Self = StObject.set(x, "brokers", js.Array(value :_*))
     
     @scala.inline
-    def setBrokersVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Broker*): Self = this.set("brokers", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrokers(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]): Self = this.set("brokers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBrokers: Self = this.set("brokers", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

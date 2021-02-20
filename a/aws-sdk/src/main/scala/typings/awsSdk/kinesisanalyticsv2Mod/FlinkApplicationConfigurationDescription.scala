@@ -1,11 +1,12 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlinkApplicationConfigurationDescription extends js.Object {
+trait FlinkApplicationConfigurationDescription extends StObject {
   
   /**
     * Describes an application's checkpointing configuration. Checkpointing is the process of persisting application state for fault tolerance.
@@ -36,42 +37,30 @@ object FlinkApplicationConfigurationDescription {
   }
   
   @scala.inline
-  implicit class FlinkApplicationConfigurationDescriptionOps[Self <: FlinkApplicationConfigurationDescription] (val x: Self) extends AnyVal {
+  implicit class FlinkApplicationConfigurationDescriptionMutableBuilder[Self <: FlinkApplicationConfigurationDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckpointConfigurationDescription(value: CheckpointConfigurationDescription): Self = StObject.set(x, "CheckpointConfigurationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckpointConfigurationDescriptionUndefined: Self = StObject.set(x, "CheckpointConfigurationDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJobPlanDescription(value: JobPlanDescription): Self = StObject.set(x, "JobPlanDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckpointConfigurationDescription(value: CheckpointConfigurationDescription): Self = this.set("CheckpointConfigurationDescription", value.asInstanceOf[js.Any])
+    def setJobPlanDescriptionUndefined: Self = StObject.set(x, "JobPlanDescription", js.undefined)
     
     @scala.inline
-    def deleteCheckpointConfigurationDescription: Self = this.set("CheckpointConfigurationDescription", js.undefined)
+    def setMonitoringConfigurationDescription(value: MonitoringConfigurationDescription): Self = StObject.set(x, "MonitoringConfigurationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobPlanDescription(value: JobPlanDescription): Self = this.set("JobPlanDescription", value.asInstanceOf[js.Any])
+    def setMonitoringConfigurationDescriptionUndefined: Self = StObject.set(x, "MonitoringConfigurationDescription", js.undefined)
     
     @scala.inline
-    def deleteJobPlanDescription: Self = this.set("JobPlanDescription", js.undefined)
+    def setParallelismConfigurationDescription(value: ParallelismConfigurationDescription): Self = StObject.set(x, "ParallelismConfigurationDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringConfigurationDescription(value: MonitoringConfigurationDescription): Self = this.set("MonitoringConfigurationDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMonitoringConfigurationDescription: Self = this.set("MonitoringConfigurationDescription", js.undefined)
-    
-    @scala.inline
-    def setParallelismConfigurationDescription(value: ParallelismConfigurationDescription): Self = this.set("ParallelismConfigurationDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParallelismConfigurationDescription: Self = this.set("ParallelismConfigurationDescription", js.undefined)
+    def setParallelismConfigurationDescriptionUndefined: Self = StObject.set(x, "ParallelismConfigurationDescription", js.undefined)
   }
 }

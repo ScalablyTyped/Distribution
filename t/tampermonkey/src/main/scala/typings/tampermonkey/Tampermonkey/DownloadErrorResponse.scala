@@ -5,12 +5,13 @@ import typings.tampermonkey.tampermonkeyStrings.not_permitted
 import typings.tampermonkey.tampermonkeyStrings.not_succeeded
 import typings.tampermonkey.tampermonkeyStrings.not_supported
 import typings.tampermonkey.tampermonkeyStrings.not_whitelisted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DownloadErrorResponse extends js.Object {
+trait DownloadErrorResponse extends StObject {
   
   /** Detail about that error */
   var details: js.UndefOr[String] = js.native
@@ -38,27 +39,15 @@ object DownloadErrorResponse {
   }
   
   @scala.inline
-  implicit class DownloadErrorResponseOps[Self <: DownloadErrorResponse] (val x: Self) extends AnyVal {
+  implicit class DownloadErrorResponseMutableBuilder[Self <: DownloadErrorResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setError(value: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): Self = this.set("error", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setError(value: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

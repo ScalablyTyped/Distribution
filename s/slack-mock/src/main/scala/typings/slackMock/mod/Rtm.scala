@@ -1,12 +1,13 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // RTM
 @js.native
-trait Rtm[T] extends js.Object {
+trait Rtm[T] extends StObject {
   
   var calls: js.Array[RtmCall[T]] = js.native
   
@@ -36,42 +37,30 @@ object Rtm {
   }
   
   @scala.inline
-  implicit class RtmOps[Self <: Rtm[_], T] (val x: Self with Rtm[T]) extends AnyVal {
+  implicit class RtmMutableBuilder[Self <: Rtm[_], T] (val x: Self with Rtm[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalls(value: js.Array[RtmCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallsVarargs(value: RtmCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClients(value: js.Array[typings.ws.mod.^]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallsVarargs(value: RtmCall[T]*): Self = this.set("calls", js.Array(value :_*))
+    def setClientsVarargs(value: typings.ws.mod.^ *): Self = StObject.set(x, "clients", js.Array(value :_*))
     
     @scala.inline
-    def setCalls(value: js.Array[RtmCall[T]]): Self = this.set("calls", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClientsVarargs(value: typings.ws.mod.^ *): Self = this.set("clients", js.Array(value :_*))
+    def setSend(value: (String, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClients(value: js.Array[typings.ws.mod.^]): Self = this.set("clients", value.asInstanceOf[js.Any])
+    def setStartServer(value: String => Unit): Self = StObject.set(x, "startServer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSend(value: (String, T) => js.Promise[Unit]): Self = this.set("send", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStartServer(value: String => Unit): Self = this.set("startServer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopServer(value: String => Unit): Self = this.set("stopServer", js.Any.fromFunction1(value))
+    def setStopServer(value: String => Unit): Self = StObject.set(x, "stopServer", js.Any.fromFunction1(value))
   }
 }

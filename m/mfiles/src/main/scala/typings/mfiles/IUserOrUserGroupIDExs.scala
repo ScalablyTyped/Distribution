@@ -1,12 +1,13 @@
 package typings.mfiles
 
 import typings.mfiles.MFiles.MFUserOrUserGroupType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUserOrUserGroupIDExs extends js.Object {
+trait IUserOrUserGroupIDExs extends StObject {
   
   def Add(Index: Double, UserOrUserGroupIDEx: IUserOrUserGroupIDEx): Unit = js.native
   
@@ -39,39 +40,27 @@ object IUserOrUserGroupIDExs {
   }
   
   @scala.inline
-  implicit class IUserOrUserGroupIDExsOps[Self <: IUserOrUserGroupIDExs] (val x: Self) extends AnyVal {
+  implicit class IUserOrUserGroupIDExsMutableBuilder[Self <: IUserOrUserGroupIDExs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Double, IUserOrUserGroupIDEx) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IUserOrUserGroupIDExs): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (Double, IUserOrUserGroupIDEx) => Unit): Self = this.set("Add", js.Any.fromFunction2(value))
+    def setGetUserOrUserGroupIDEx(value: (Double, MFUserOrUserGroupType) => IUserOrUserGroupIDEx): Self = StObject.set(x, "GetUserOrUserGroupIDEx", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setClone(value: () => IUserOrUserGroupIDExs): Self = this.set("Clone", js.Any.fromFunction0(value))
+    def setGetUserOrUserGroupIDExIndex(value: (Double, MFUserOrUserGroupType) => Double): Self = StObject.set(x, "GetUserOrUserGroupIDExIndex", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setItem(value: Double => IUserOrUserGroupIDEx): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserOrUserGroupIDEx(value: (Double, MFUserOrUserGroupType) => IUserOrUserGroupIDEx): Self = this.set("GetUserOrUserGroupIDEx", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetUserOrUserGroupIDExIndex(value: (Double, MFUserOrUserGroupType) => Double): Self = this.set("GetUserOrUserGroupIDExIndex", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setItem(value: Double => IUserOrUserGroupIDEx): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.localforage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalForageDbMethodsCore extends js.Object {
+trait LocalForageDbMethodsCore extends StObject {
   
   def clear(): js.Promise[Unit] = js.native
   def clear(callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native

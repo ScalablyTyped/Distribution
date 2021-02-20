@@ -1,11 +1,12 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegexPatternSetReferenceStatement extends js.Object {
+trait RegexPatternSetReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the RegexPatternSet that this statement references.
@@ -31,30 +32,18 @@ object RegexPatternSetReferenceStatement {
   }
   
   @scala.inline
-  implicit class RegexPatternSetReferenceStatementOps[Self <: RegexPatternSetReferenceStatement] (val x: Self) extends AnyVal {
+  implicit class RegexPatternSetReferenceStatementMutableBuilder[Self <: RegexPatternSetReferenceStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTextTransformations(value: TextTransformations): Self = StObject.set(x, "TextTransformations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setARN(value: ResourceArn): Self = this.set("ARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldToMatch(value: FieldToMatch): Self = this.set("FieldToMatch", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextTransformationsVarargs(value: TextTransformation*): Self = this.set("TextTransformations", js.Array(value :_*))
-    
-    @scala.inline
-    def setTextTransformations(value: TextTransformations): Self = this.set("TextTransformations", value.asInstanceOf[js.Any])
+    def setTextTransformationsVarargs(value: TextTransformation*): Self = StObject.set(x, "TextTransformations", js.Array(value :_*))
   }
 }

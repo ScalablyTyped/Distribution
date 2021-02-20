@@ -13,16 +13,16 @@ import typings.three.materialMod.Material
 import typings.three.vector4Mod.Vector4
 import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLState", JSImport.Namespace)
-@js.native
-object webGLStateMod extends js.Object {
+object webGLStateMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLState", "WebGLColorBuffer")
   @js.native
-  class WebGLColorBuffer () extends js.Object {
+  class WebGLColorBuffer () extends StObject {
     
     def reset(): Unit = js.native
     
@@ -33,8 +33,9 @@ object webGLStateMod extends js.Object {
     def setMask(colorMask: Boolean): Unit = js.native
   }
   
+  @JSImport("three/src/renderers/webgl/WebGLState", "WebGLDepthBuffer")
   @js.native
-  class WebGLDepthBuffer () extends js.Object {
+  class WebGLDepthBuffer () extends StObject {
     
     def reset(): Unit = js.native
     
@@ -49,8 +50,9 @@ object webGLStateMod extends js.Object {
     def setTest(depthTest: Boolean): Unit = js.native
   }
   
+  @JSImport("three/src/renderers/webgl/WebGLState", "WebGLState")
   @js.native
-  class WebGLState protected () extends js.Object {
+  class WebGLState protected () extends StObject {
     def this(gl: WebGLRenderingContext, extensions: WebGLExtensions, capabilities: WebGLCapabilities) = this()
     
     def activeTexture(webglSlot: Double): Unit = js.native
@@ -165,8 +167,9 @@ object webGLStateMod extends js.Object {
     def viewport(viewport: Vector4): Unit = js.native
   }
   
+  @JSImport("three/src/renderers/webgl/WebGLState", "WebGLStencilBuffer")
   @js.native
-  class WebGLStencilBuffer () extends js.Object {
+  class WebGLStencilBuffer () extends StObject {
     
     def reset(): Unit = js.native
     

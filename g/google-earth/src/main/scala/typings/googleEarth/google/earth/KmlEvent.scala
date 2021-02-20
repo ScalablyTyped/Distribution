@@ -1,11 +1,12 @@
 package typings.googleEarth.google.earth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KmlEvent extends js.Object {
+trait KmlEvent extends StObject {
   
   /**
     * Indicates whether or not an event is a bubbling event.
@@ -64,39 +65,27 @@ object KmlEvent {
   }
   
   @scala.inline
-  implicit class KmlEventOps[Self <: KmlEvent] (val x: Self) extends AnyVal {
+  implicit class KmlEventMutableBuilder[Self <: KmlEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBubbles(value: () => Boolean): Self = StObject.set(x, "getBubbles", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetCancelable(value: () => Boolean): Self = StObject.set(x, "getCancelable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentTarget(value: GEEventEmitter): Self = StObject.set(x, "getCurrentTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetBubbles(value: () => Boolean): Self = this.set("getBubbles", js.Any.fromFunction0(value))
+    def setGetEventPhase(value: () => GEEventPhaseEnum): Self = StObject.set(x, "getEventPhase", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCancelable(value: () => Boolean): Self = this.set("getCancelable", js.Any.fromFunction0(value))
+    def setGetTarget(value: () => GEEventEmitter): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTarget(value: GEEventEmitter): Self = this.set("getCurrentTarget", value.asInstanceOf[js.Any])
+    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEventPhase(value: () => GEEventPhaseEnum): Self = this.set("getEventPhase", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTarget(value: () => GEEventEmitter): Self = this.set("getTarget", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = this.set("preventDefault", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = this.set("stopPropagation", js.Any.fromFunction0(value))
+    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

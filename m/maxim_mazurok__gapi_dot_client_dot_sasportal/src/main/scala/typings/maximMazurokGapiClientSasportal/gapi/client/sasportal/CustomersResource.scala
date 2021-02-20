@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientSasportal.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientSasportal.anon.Name
 import typings.maximMazurokGapiClientSasportal.anon.PageToken
 import typings.maximMazurokGapiClientSasportal.anon.QuotaUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomersResource extends js.Object {
+trait CustomersResource extends StObject {
   
   var deployments: DeploymentsResource = js.native
   

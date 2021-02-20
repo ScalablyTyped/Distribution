@@ -2,13 +2,14 @@ package typings.aureliaDependencyInjection.mod
 
 import typings.aureliaDependencyInjection.anon.TypeofContainer
 import typings.aureliaDependencyInjection.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "Container")
 @js.native
-class Container () extends js.Object {
+class Container () extends StObject {
   def this(configuration: ContainerConfiguration) = this()
   
   def _createInvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: (DependencyCtorOrFunctor[TBase, TImpl, TArgs]) with `1`): InvocationHandler[TBase, TImpl, TArgs] = js.native
@@ -85,9 +86,15 @@ class Container () extends js.Object {
   def unregister(key: js.Any): Unit = js.native
 }
 /* static members */
-@JSImport("aurelia-dependency-injection", "Container")
-@js.native
-object Container extends js.Object {
+object Container {
   
-  var instance: Container = js.native
+  @JSImport("aurelia-dependency-injection", "Container")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("aurelia-dependency-injection", "Container.instance")
+  @js.native
+  def instance: Container = js.native
+  @scala.inline
+  def instance_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

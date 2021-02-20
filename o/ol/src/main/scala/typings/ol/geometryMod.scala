@@ -5,13 +5,16 @@ import typings.ol.extentMod.Extent
 import typings.ol.geometryTypeMod.GeometryType
 import typings.ol.projMod.ProjectionLike
 import typings.ol.projMod.TransformFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/geom/Geometry", JSImport.Namespace)
-@js.native
-object geometryMod extends js.Object {
+object geometryMod {
+  
+  @JSImport("ol/geom/Geometry", JSImport.Default)
+  @js.native
+  abstract class default () extends Geometry
   
   @js.native
   trait Geometry
@@ -115,7 +118,4 @@ object geometryMod extends js.Object {
       */
     def translate(deltaX: Double, deltaY: Double): Unit = js.native
   }
-  
-  @js.native
-  abstract class default () extends Geometry
 }

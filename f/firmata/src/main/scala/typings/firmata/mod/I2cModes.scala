@@ -1,12 +1,13 @@
 package typings.firmata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line interface-name
 @js.native
-trait I2cModes extends js.Object {
+trait I2cModes extends StObject {
   
   var CONTINUOUS_READ: I2C_MODE = js.native
   
@@ -25,30 +26,18 @@ object I2cModes {
   }
   
   @scala.inline
-  implicit class I2cModesOps[Self <: I2cModes] (val x: Self) extends AnyVal {
+  implicit class I2cModesMutableBuilder[Self <: I2cModes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCONTINUOUS_READ(value: I2C_MODE): Self = StObject.set(x, "CONTINUOUS_READ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setREAD(value: I2C_MODE): Self = StObject.set(x, "READ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSTOP_READING(value: I2C_MODE): Self = StObject.set(x, "STOP_READING", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCONTINUOUS_READ(value: I2C_MODE): Self = this.set("CONTINUOUS_READ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREAD(value: I2C_MODE): Self = this.set("READ", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSTOP_READING(value: I2C_MODE): Self = this.set("STOP_READING", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWRITE(value: I2C_MODE): Self = this.set("WRITE", value.asInstanceOf[js.Any])
+    def setWRITE(value: I2C_MODE): Self = StObject.set(x, "WRITE", value.asInstanceOf[js.Any])
   }
 }

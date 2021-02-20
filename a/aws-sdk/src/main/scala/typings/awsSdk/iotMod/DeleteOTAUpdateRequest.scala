@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteOTAUpdateRequest extends js.Object {
+trait DeleteOTAUpdateRequest extends StObject {
   
   /**
     * Specifies if the stream associated with an OTA update should be deleted when the OTA update is deleted.
@@ -31,33 +32,21 @@ object DeleteOTAUpdateRequest {
   }
   
   @scala.inline
-  implicit class DeleteOTAUpdateRequestOps[Self <: DeleteOTAUpdateRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteOTAUpdateRequestMutableBuilder[Self <: DeleteOTAUpdateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteStream(value: DeleteStream): Self = StObject.set(x, "deleteStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteStreamUndefined: Self = StObject.set(x, "deleteStream", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceDeleteAWSJob(value: ForceDeleteAWSJob): Self = StObject.set(x, "forceDeleteAWSJob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOtaUpdateId(value: OTAUpdateId): Self = this.set("otaUpdateId", value.asInstanceOf[js.Any])
+    def setForceDeleteAWSJobUndefined: Self = StObject.set(x, "forceDeleteAWSJob", js.undefined)
     
     @scala.inline
-    def setDeleteStream(value: DeleteStream): Self = this.set("deleteStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeleteStream: Self = this.set("deleteStream", js.undefined)
-    
-    @scala.inline
-    def setForceDeleteAWSJob(value: ForceDeleteAWSJob): Self = this.set("forceDeleteAWSJob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceDeleteAWSJob: Self = this.set("forceDeleteAWSJob", js.undefined)
+    def setOtaUpdateId(value: OTAUpdateId): Self = StObject.set(x, "otaUpdateId", value.asInstanceOf[js.Any])
   }
 }

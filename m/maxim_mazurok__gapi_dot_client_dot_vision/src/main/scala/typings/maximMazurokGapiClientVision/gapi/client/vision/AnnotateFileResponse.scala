@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotateFileResponse extends js.Object {
+trait AnnotateFileResponse extends StObject {
   
   /** If set, represents the error message for the failed request. The `responses` field will not be set in this case. */
   var error: js.UndefOr[Status] = js.native
@@ -28,45 +29,33 @@ object AnnotateFileResponse {
   }
   
   @scala.inline
-  implicit class AnnotateFileResponseOps[Self <: AnnotateFileResponse] (val x: Self) extends AnyVal {
+  implicit class AnnotateFileResponseMutableBuilder[Self <: AnnotateFileResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Status): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def deleteError: Self = this.set("error", js.undefined)
+    def setResponses(value: js.Array[AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
+    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
     @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
+    def setResponsesVarargs(value: AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
     
     @scala.inline
-    def setResponsesVarargs(value: AnnotateImageResponse*): Self = this.set("responses", js.Array(value :_*))
+    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponses(value: js.Array[AnnotateImageResponse]): Self = this.set("responses", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResponses: Self = this.set("responses", js.undefined)
-    
-    @scala.inline
-    def setTotalPages(value: Double): Self = this.set("totalPages", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPages: Self = this.set("totalPages", js.undefined)
+    def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
   }
 }

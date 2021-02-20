@@ -1,15 +1,16 @@
 package typings.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConnectionType extends js.Object
+sealed trait ConnectionType extends StObject
 /** Lists the different types of connections. */
 @JSGlobal("connect.ConnectionType")
 @js.native
-object ConnectionType extends js.Object {
+object ConnectionType extends StObject {
   
   /** The agent connection. */
   @js.native

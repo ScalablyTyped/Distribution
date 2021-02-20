@@ -1,5 +1,6 @@
 package typings.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The developer is responsible for calling the saveAsync method after adding or deleting settings to save the settings in the document.
   */
 @js.native
-trait Settings extends js.Object {
+trait Settings extends StObject {
   
   /**
     * Adds an event handler for the settingsChanged event.

@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecordingGroup extends js.Object {
+trait RecordingGroup extends StObject {
   
   /**
     * Specifies whether AWS Config records configuration changes for every supported type of regional resource. If you set this option to true, when AWS Config adds support for a new type of regional resource, it starts recording resources of that type automatically. If you set this option to true, you cannot enumerate a list of resourceTypes.
@@ -31,39 +32,27 @@ object RecordingGroup {
   }
   
   @scala.inline
-  implicit class RecordingGroupOps[Self <: RecordingGroup] (val x: Self) extends AnyVal {
+  implicit class RecordingGroupMutableBuilder[Self <: RecordingGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllSupported(value: AllSupported): Self = StObject.set(x, "allSupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllSupportedUndefined: Self = StObject.set(x, "allSupported", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeGlobalResourceTypes(value: IncludeGlobalResourceTypes): Self = StObject.set(x, "includeGlobalResourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllSupported(value: AllSupported): Self = this.set("allSupported", value.asInstanceOf[js.Any])
+    def setIncludeGlobalResourceTypesUndefined: Self = StObject.set(x, "includeGlobalResourceTypes", js.undefined)
     
     @scala.inline
-    def deleteAllSupported: Self = this.set("allSupported", js.undefined)
+    def setResourceTypes(value: ResourceTypeList): Self = StObject.set(x, "resourceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeGlobalResourceTypes(value: IncludeGlobalResourceTypes): Self = this.set("includeGlobalResourceTypes", value.asInstanceOf[js.Any])
+    def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
     @scala.inline
-    def deleteIncludeGlobalResourceTypes: Self = this.set("includeGlobalResourceTypes", js.undefined)
-    
-    @scala.inline
-    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("resourceTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceTypes(value: ResourceTypeList): Self = this.set("resourceTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceTypes: Self = this.set("resourceTypes", js.undefined)
+    def setResourceTypesVarargs(value: ResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
   }
 }

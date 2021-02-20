@@ -3,12 +3,13 @@ package typings.reactBootstrapTable.anon
 import typings.react.mod.ReactElement
 import typings.reactBootstrapTable.mod.SizePerPageDropDown
 import typings.std.HTMLUListElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageList extends js.Object {
+trait PageList extends StObject {
   
   /**
     * The default list of page change buttons.
@@ -38,27 +39,15 @@ object PageList {
   }
   
   @scala.inline
-  implicit class PageListOps[Self <: PageList] (val x: Self) extends AnyVal {
+  implicit class PageListMutableBuilder[Self <: PageList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPageList(value: HTMLUListElement): Self = StObject.set(x, "pageList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSizePerPageDropDown(value: SizePerPageDropDown): Self = StObject.set(x, "sizePerPageDropDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPageList(value: HTMLUListElement): Self = this.set("pageList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSizePerPageDropDown(value: SizePerPageDropDown): Self = this.set("sizePerPageDropDown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalText(value: String | ReactElement): Self = this.set("totalText", value.asInstanceOf[js.Any])
+    def setTotalText(value: String | ReactElement): Self = StObject.set(x, "totalText", value.asInstanceOf[js.Any])
   }
 }

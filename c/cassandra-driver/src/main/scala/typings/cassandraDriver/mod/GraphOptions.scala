@@ -1,12 +1,13 @@
 package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.typesMod.types.consistencies
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphOptions extends js.Object {
+trait GraphOptions extends StObject {
   
   var language: js.UndefOr[String] = js.native
   
@@ -29,54 +30,42 @@ object GraphOptions {
   }
   
   @scala.inline
-  implicit class GraphOptionsOps[Self <: GraphOptions] (val x: Self) extends AnyVal {
+  implicit class GraphOptionsMutableBuilder[Self <: GraphOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setReadConsistency(value: consistencies): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setReadConsistencyUndefined: Self = StObject.set(x, "readConsistency", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadConsistency(value: consistencies): Self = this.set("readConsistency", value.asInstanceOf[js.Any])
+    def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
     
     @scala.inline
-    def deleteReadConsistency: Self = this.set("readConsistency", js.undefined)
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadTimeout(value: Double): Self = this.set("readTimeout", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteReadTimeout: Self = this.set("readTimeout", js.undefined)
+    def setWriteConsistency(value: consistencies): Self = StObject.set(x, "writeConsistency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
-    
-    @scala.inline
-    def setWriteConsistency(value: consistencies): Self = this.set("writeConsistency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteConsistency: Self = this.set("writeConsistency", js.undefined)
+    def setWriteConsistencyUndefined: Self = StObject.set(x, "writeConsistency", js.undefined)
   }
 }

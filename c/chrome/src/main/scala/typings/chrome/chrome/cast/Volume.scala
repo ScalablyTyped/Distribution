@@ -1,11 +1,12 @@
 package typings.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Volume extends js.Object {
+trait Volume extends StObject {
   
   var level: Double | Null = js.native
   
@@ -20,30 +21,18 @@ object Volume {
   }
   
   @scala.inline
-  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+  implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelNull: Self = StObject.set(x, "level", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevelNull: Self = this.set("level", null)
-    
-    @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMutedNull: Self = this.set("muted", null)
+    def setMutedNull: Self = StObject.set(x, "muted", null)
   }
 }

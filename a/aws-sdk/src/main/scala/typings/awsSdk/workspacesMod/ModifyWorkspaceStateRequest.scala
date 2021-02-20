@@ -1,11 +1,12 @@
 package typings.awsSdk.workspacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyWorkspaceStateRequest extends js.Object {
+trait ModifyWorkspaceStateRequest extends StObject {
   
   /**
     * The identifier of the WorkSpace.
@@ -26,24 +27,12 @@ object ModifyWorkspaceStateRequest {
   }
   
   @scala.inline
-  implicit class ModifyWorkspaceStateRequestOps[Self <: ModifyWorkspaceStateRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyWorkspaceStateRequestMutableBuilder[Self <: ModifyWorkspaceStateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = this.set("WorkspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkspaceState(value: TargetWorkspaceState): Self = this.set("WorkspaceState", value.asInstanceOf[js.Any])
+    def setWorkspaceState(value: TargetWorkspaceState): Self = StObject.set(x, "WorkspaceState", value.asInstanceOf[js.Any])
   }
 }

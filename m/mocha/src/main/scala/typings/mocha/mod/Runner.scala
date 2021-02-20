@@ -2,6 +2,7 @@ package typings.mocha.mod
 
 import typings.mocha.Mocha.RunnerConstants
 import typings.mocha.Mocha.Suite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,15 +43,18 @@ class Runner protected ()
   extends typings.mocha.Mocha.Runner {
   def this(suite: Suite, delay: Boolean) = this()
 }
-/* static members */
-@JSImport("mocha", "Runner")
-@js.native
-object Runner extends js.Object {
+object Runner {
   
+  /* static member */
+  @JSImport("mocha", "Runner.constants")
+  @js.native
   val constants: RunnerConstants = js.native
   
   /**
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */
-  /* protected */ def immediately(callback: js.Function): Unit = js.native
+  /* static member */
+  @JSImport("mocha", "Runner.immediately")
+  @js.native
+  def immediately(callback: js.Function): Unit = js.native
 }

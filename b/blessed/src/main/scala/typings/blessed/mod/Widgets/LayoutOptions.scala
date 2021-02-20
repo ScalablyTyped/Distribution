@@ -3,6 +3,7 @@ package typings.blessed.mod.Widgets
 import typings.blessed.blessedStrings.`inline-block`
 import typings.blessed.blessedStrings.`inline`
 import typings.blessed.blessedStrings.grid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,27 +33,15 @@ object LayoutOptions {
   }
   
   @scala.inline
-  implicit class LayoutOptionsOps[Self <: LayoutOptions] (val x: Self) extends AnyVal {
+  implicit class LayoutOptionsMutableBuilder[Self <: LayoutOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLayout(value: `inline` | `inline-block` | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRenderer(value: () => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLayout(value: `inline` | `inline-block` | grid): Self = this.set("layout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRenderer(value: () => Unit): Self = this.set("renderer", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
   }
 }

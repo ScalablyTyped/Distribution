@@ -1,5 +1,6 @@
 package typings.pulumiKubernetes.outputMod.core.v1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling.
   */
 @js.native
-trait GCEPersistentDiskVolumeSource extends js.Object {
+trait GCEPersistentDiskVolumeSource extends StObject {
   
   /**
     * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
@@ -41,30 +42,18 @@ object GCEPersistentDiskVolumeSource {
   }
   
   @scala.inline
-  implicit class GCEPersistentDiskVolumeSourceOps[Self <: GCEPersistentDiskVolumeSource] (val x: Self) extends AnyVal {
+  implicit class GCEPersistentDiskVolumeSourceMutableBuilder[Self <: GCEPersistentDiskVolumeSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPdName(value: String): Self = StObject.set(x, "pdName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFsType(value: String): Self = this.set("fsType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPartition(value: Double): Self = this.set("partition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPdName(value: String): Self = this.set("pdName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

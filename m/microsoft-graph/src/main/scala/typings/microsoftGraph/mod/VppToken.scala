@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,96 +62,84 @@ object VppToken {
   }
   
   @scala.inline
-  implicit class VppTokenOps[Self <: VppToken] (val x: Self) extends AnyVal {
+  implicit class VppTokenMutableBuilder[Self <: VppToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppleId(value: NullableOption[String]): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppleIdNull: Self = StObject.set(x, "appleId", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAppleIdUndefined: Self = StObject.set(x, "appleId", js.undefined)
     
     @scala.inline
-    def setAppleId(value: NullableOption[String]): Self = this.set("appleId", value.asInstanceOf[js.Any])
+    def setAutomaticallyUpdateApps(value: Boolean): Self = StObject.set(x, "automaticallyUpdateApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAppleId: Self = this.set("appleId", js.undefined)
+    def setAutomaticallyUpdateAppsUndefined: Self = StObject.set(x, "automaticallyUpdateApps", js.undefined)
     
     @scala.inline
-    def setAppleIdNull: Self = this.set("appleId", null)
+    def setCountryOrRegion(value: NullableOption[String]): Self = StObject.set(x, "countryOrRegion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutomaticallyUpdateApps(value: Boolean): Self = this.set("automaticallyUpdateApps", value.asInstanceOf[js.Any])
+    def setCountryOrRegionNull: Self = StObject.set(x, "countryOrRegion", null)
     
     @scala.inline
-    def deleteAutomaticallyUpdateApps: Self = this.set("automaticallyUpdateApps", js.undefined)
+    def setCountryOrRegionUndefined: Self = StObject.set(x, "countryOrRegion", js.undefined)
     
     @scala.inline
-    def setCountryOrRegion(value: NullableOption[String]): Self = this.set("countryOrRegion", value.asInstanceOf[js.Any])
+    def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCountryOrRegion: Self = this.set("countryOrRegion", js.undefined)
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setCountryOrRegionNull: Self = this.set("countryOrRegion", null)
+    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDateTime(value: String): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedDateTime(value: String): Self = this.set("lastModifiedDateTime", value.asInstanceOf[js.Any])
+    def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedDateTime: Self = this.set("lastModifiedDateTime", js.undefined)
+    def setLastSyncStatus(value: VppTokenSyncStatus): Self = StObject.set(x, "lastSyncStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncDateTime(value: String): Self = this.set("lastSyncDateTime", value.asInstanceOf[js.Any])
+    def setLastSyncStatusUndefined: Self = StObject.set(x, "lastSyncStatus", js.undefined)
     
     @scala.inline
-    def deleteLastSyncDateTime: Self = this.set("lastSyncDateTime", js.undefined)
+    def setOrganizationName(value: NullableOption[String]): Self = StObject.set(x, "organizationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastSyncStatus(value: VppTokenSyncStatus): Self = this.set("lastSyncStatus", value.asInstanceOf[js.Any])
+    def setOrganizationNameNull: Self = StObject.set(x, "organizationName", null)
     
     @scala.inline
-    def deleteLastSyncStatus: Self = this.set("lastSyncStatus", js.undefined)
+    def setOrganizationNameUndefined: Self = StObject.set(x, "organizationName", js.undefined)
     
     @scala.inline
-    def setOrganizationName(value: NullableOption[String]): Self = this.set("organizationName", value.asInstanceOf[js.Any])
+    def setState(value: VppTokenState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrganizationName: Self = this.set("organizationName", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setOrganizationNameNull: Self = this.set("organizationName", null)
+    def setToken(value: NullableOption[String]): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: VppTokenState): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setTokenNull: Self = StObject.set(x, "token", null)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
     @scala.inline
-    def setToken(value: NullableOption[String]): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setVppTokenAccountType(value: VppTokenAccountType): Self = StObject.set(x, "vppTokenAccountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteToken: Self = this.set("token", js.undefined)
-    
-    @scala.inline
-    def setTokenNull: Self = this.set("token", null)
-    
-    @scala.inline
-    def setVppTokenAccountType(value: VppTokenAccountType): Self = this.set("vppTokenAccountType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVppTokenAccountType: Self = this.set("vppTokenAccountType", js.undefined)
+    def setVppTokenAccountTypeUndefined: Self = StObject.set(x, "vppTokenAccountType", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.UI.WebUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the content that HtmlPrintDocumentSource.content prints. */
 @JSGlobal("Windows.UI.WebUI.PrintContent")
 @js.native
-object PrintContent extends js.Object {
+object PrintContent extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.UI.WebUI.PrintContent with Double] = js.native

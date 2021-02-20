@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPackagingConfigurationsResponse extends js.Object {
+trait ListPackagingConfigurationsResponse extends StObject {
   
   /**
     * A token that can be used to resume pagination from the end of the collection.
@@ -26,33 +27,21 @@ object ListPackagingConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class ListPackagingConfigurationsResponseOps[Self <: ListPackagingConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class ListPackagingConfigurationsResponseMutableBuilder[Self <: ListPackagingConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPackagingConfigurations(value: listOfPackagingConfiguration): Self = StObject.set(x, "PackagingConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPackagingConfigurationsUndefined: Self = StObject.set(x, "PackagingConfigurations", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPackagingConfigurationsVarargs(value: PackagingConfiguration*): Self = this.set("PackagingConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setPackagingConfigurations(value: listOfPackagingConfiguration): Self = this.set("PackagingConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePackagingConfigurations: Self = this.set("PackagingConfigurations", js.undefined)
+    def setPackagingConfigurationsVarargs(value: PackagingConfiguration*): Self = StObject.set(x, "PackagingConfigurations", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.babylonjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SixDofDragBehavior ()
   extends typings.babylonjs.legacyMod.SixDofDragBehavior
 /* static members */
-@JSImport("babylonjs", "SixDofDragBehavior")
-@js.native
-object SixDofDragBehavior extends js.Object {
+object SixDofDragBehavior {
   
-  var _virtualScene: js.Any = js.native
+  @JSImport("babylonjs", "SixDofDragBehavior")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs", "SixDofDragBehavior._virtualScene")
+  @js.native
+  def _virtualScene: js.Any = js.native
+  @scala.inline
+  def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
 }

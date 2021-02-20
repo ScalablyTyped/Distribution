@@ -9,16 +9,16 @@ import typings.three.webGLAttributesMod.WebGLAttributes
 import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
 import typings.three.webGLProgramMod.WebGLProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/renderers/webgl/WebGLBindingStates", JSImport.Namespace)
-@js.native
-object webGLBindingStatesMod extends js.Object {
+object webGLBindingStatesMod {
   
+  @JSImport("three/src/renderers/webgl/WebGLBindingStates", "WebGLBindingStates")
   @js.native
-  class WebGLBindingStates protected () extends js.Object {
+  class WebGLBindingStates protected () extends StObject {
     def this(
       gl: WebGLRenderingContext,
       extensions: WebGLExtensions,

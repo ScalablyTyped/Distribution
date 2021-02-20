@@ -1,22 +1,15 @@
 package typings.reactOnclickoutside
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.react.mod.Component
 import typings.react.mod.Context
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait TypeofComponent
-    extends Instantiable1[
-          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
-          Component[js.Object, js.Object, js.Object]
-        ] {
+  trait TypeofComponent extends StObject {
     
     // tslint won't let me format the sample code in a way that vscode likes it :(
     /**
@@ -39,6 +32,25 @@ object anon extends js.Object {
       *
       * @see https://reactjs.org/docs/context.html#classcontexttype
       */
+    /* static member */
     var contextType: js.UndefOr[Context[_]] = js.native
+  }
+  object TypeofComponent {
+    
+    @scala.inline
+    def apply(): TypeofComponent = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TypeofComponent]
+    }
+    
+    @scala.inline
+    implicit class TypeofComponentMutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setContextType(value: Context[_]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
+    }
   }
 }

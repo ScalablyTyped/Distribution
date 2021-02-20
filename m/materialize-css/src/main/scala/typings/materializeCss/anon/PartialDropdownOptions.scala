@@ -1,15 +1,17 @@
 package typings.materializeCss.anon
 
+import typings.materializeCss.M.Dropdown
 import typings.materializeCss.materializeCssStrings.left
 import typings.materializeCss.materializeCssStrings.right
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.DropdownOptions> */
 @js.native
-trait PartialDropdownOptions extends js.Object {
+trait PartialDropdownOptions extends StObject {
   
   var alignment: js.UndefOr[left | right] = js.native
   
@@ -27,13 +29,13 @@ trait PartialDropdownOptions extends js.Object {
   
   var inDuration: js.UndefOr[Double] = js.native
   
-  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* el */ Element, Unit]] = js.native
+  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
   
-  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* el */ Element, Unit]] = js.native
+  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
   
-  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* el */ Element, Unit]] = js.native
+  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
   
-  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* el */ Element, Unit]] = js.native
+  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]] = js.native
   
   var outDuration: js.UndefOr[Double] = js.native
 }
@@ -46,96 +48,84 @@ object PartialDropdownOptions {
   }
   
   @scala.inline
-  implicit class PartialDropdownOptionsOps[Self <: PartialDropdownOptions] (val x: Self) extends AnyVal {
+  implicit class PartialDropdownOptionsMutableBuilder[Self <: PartialDropdownOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: left | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoTrigger(value: Boolean): Self = StObject.set(x, "autoTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: left | right): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setAutoTriggerUndefined: Self = StObject.set(x, "autoTrigger", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoTrigger(value: Boolean): Self = this.set("autoTrigger", value.asInstanceOf[js.Any])
+    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
     @scala.inline
-    def deleteAutoTrigger: Self = this.set("autoTrigger", js.undefined)
+    def setConstrainWidth(value: Boolean): Self = StObject.set(x, "constrainWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    def setConstrainWidthUndefined: Self = StObject.set(x, "constrainWidth", js.undefined)
     
     @scala.inline
-    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstrainWidth(value: Boolean): Self = this.set("constrainWidth", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteConstrainWidth: Self = this.set("constrainWidth", js.undefined)
+    def setCoverTrigger(value: Boolean): Self = StObject.set(x, "coverTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: Element): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setCoverTriggerUndefined: Self = StObject.set(x, "coverTrigger", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoverTrigger(value: Boolean): Self = this.set("coverTrigger", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteCoverTrigger: Self = this.set("coverTrigger", js.undefined)
+    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: Boolean): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setInDurationUndefined: Self = StObject.set(x, "inDuration", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setOnCloseEnd(value: js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]): Self = StObject.set(x, "onCloseEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInDuration(value: Double): Self = this.set("inDuration", value.asInstanceOf[js.Any])
+    def setOnCloseEndUndefined: Self = StObject.set(x, "onCloseEnd", js.undefined)
     
     @scala.inline
-    def deleteInDuration: Self = this.set("inDuration", js.undefined)
+    def setOnCloseStart(value: js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]): Self = StObject.set(x, "onCloseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCloseEnd(value: js.ThisFunction1[PartialDropdownOptions, /* el */ Element, Unit]): Self = this.set("onCloseEnd", value.asInstanceOf[js.Any])
+    def setOnCloseStartUndefined: Self = StObject.set(x, "onCloseStart", js.undefined)
     
     @scala.inline
-    def deleteOnCloseEnd: Self = this.set("onCloseEnd", js.undefined)
+    def setOnOpenEnd(value: js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]): Self = StObject.set(x, "onOpenEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCloseStart(value: js.ThisFunction1[PartialDropdownOptions, /* el */ Element, Unit]): Self = this.set("onCloseStart", value.asInstanceOf[js.Any])
+    def setOnOpenEndUndefined: Self = StObject.set(x, "onOpenEnd", js.undefined)
     
     @scala.inline
-    def deleteOnCloseStart: Self = this.set("onCloseStart", js.undefined)
+    def setOnOpenStart(value: js.ThisFunction1[/* this */ Dropdown, /* el */ Element, Unit]): Self = StObject.set(x, "onOpenStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOpenEnd(value: js.ThisFunction1[PartialDropdownOptions, /* el */ Element, Unit]): Self = this.set("onOpenEnd", value.asInstanceOf[js.Any])
+    def setOnOpenStartUndefined: Self = StObject.set(x, "onOpenStart", js.undefined)
     
     @scala.inline
-    def deleteOnOpenEnd: Self = this.set("onOpenEnd", js.undefined)
+    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnOpenStart(value: js.ThisFunction1[PartialDropdownOptions, /* el */ Element, Unit]): Self = this.set("onOpenStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnOpenStart: Self = this.set("onOpenStart", js.undefined)
-    
-    @scala.inline
-    def setOutDuration(value: Double): Self = this.set("outDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutDuration: Self = this.set("outDuration", js.undefined)
+    def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
   }
 }

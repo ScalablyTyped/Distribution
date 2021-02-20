@@ -44,6 +44,7 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -192,36 +193,24 @@ object ojInputTextEventMap {
   }
   
   @scala.inline
-  implicit class ojInputTextEventMapOps[Self <: ojInputTextEventMap] (val x: Self) extends AnyVal {
+  implicit class ojInputTextEventMapMutableBuilder[Self <: ojInputTextEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearIconChanged(value: JetElementCustomEvent[never | always | conditional]): Self = StObject.set(x, "clearIconChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = StObject.set(x, "converterChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "listChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClearIconChanged(value: JetElementCustomEvent[never | always | conditional]): Self = this.set("clearIconChanged", value.asInstanceOf[js.Any])
+    def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConverterChanged(value: JetElementCustomEvent[Converter[_] | RegisteredConverter | Null]): Self = this.set("converterChanged", value.asInstanceOf[js.Any])
+    def setOjAnimateStart(value: ojAnimateStart): Self = StObject.set(x, "ojAnimateStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListChanged(value: JetElementCustomEvent[String]): Self = this.set("listChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOjAnimateEnd(value: ojAnimateEnd): Self = this.set("ojAnimateEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOjAnimateStart(value: ojAnimateStart): Self = this.set("ojAnimateStart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVirtualKeyboardChanged(value: JetElementCustomEvent[auto | email | number | search | tel | text | url]): Self = this.set("virtualKeyboardChanged", value.asInstanceOf[js.Any])
+    def setVirtualKeyboardChanged(value: JetElementCustomEvent[auto | email | number | search | tel | text | url]): Self = StObject.set(x, "virtualKeyboardChanged", value.asInstanceOf[js.Any])
   }
 }

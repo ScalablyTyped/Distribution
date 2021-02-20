@@ -1,6 +1,7 @@
 package typings.extjs.Ext.data
 
 import typings.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,72 +47,60 @@ object IAssociation {
   }
   
   @scala.inline
-  implicit class IAssociationOps[Self <: IAssociation] (val x: Self) extends AnyVal {
+  implicit class IAssociationMutableBuilder[Self <: IAssociation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedModel(value: String): Self = StObject.set(x, "associatedModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedModelUndefined: Self = StObject.set(x, "associatedModel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAssociatedName(value: String): Self = StObject.set(x, "associatedName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedModel(value: String): Self = this.set("associatedModel", value.asInstanceOf[js.Any])
+    def setAssociatedNameUndefined: Self = StObject.set(x, "associatedName", js.undefined)
     
     @scala.inline
-    def deleteAssociatedModel: Self = this.set("associatedModel", js.undefined)
+    def setAssociationKey(value: String): Self = StObject.set(x, "associationKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedName(value: String): Self = this.set("associatedName", value.asInstanceOf[js.Any])
+    def setAssociationKeyUndefined: Self = StObject.set(x, "associationKey", js.undefined)
     
     @scala.inline
-    def deleteAssociatedName: Self = this.set("associatedName", js.undefined)
+    def setGetReader(value: () => typings.extjs.Ext.data.reader.IReader): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAssociationKey(value: String): Self = this.set("associationKey", value.asInstanceOf[js.Any])
+    def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
     
     @scala.inline
-    def deleteAssociationKey: Self = this.set("associationKey", js.undefined)
+    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetReader(value: () => typings.extjs.Ext.data.reader.IReader): Self = this.set("getReader", js.Any.fromFunction0(value))
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteGetReader: Self = this.set("getReader", js.undefined)
+    def setOwnerModel(value: String): Self = StObject.set(x, "ownerModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setOwnerModelUndefined: Self = StObject.set(x, "ownerModel", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerModel(value: String): Self = this.set("ownerModel", value.asInstanceOf[js.Any])
+    def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
     
     @scala.inline
-    def deleteOwnerModel: Self = this.set("ownerModel", js.undefined)
+    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerName(value: String): Self = this.set("ownerName", value.asInstanceOf[js.Any])
+    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def deleteOwnerName: Self = this.set("ownerName", js.undefined)
+    def setReader(value: typings.extjs.Ext.data.reader.IReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrimaryKey(value: String): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
-    
-    @scala.inline
-    def setReader(value: typings.extjs.Ext.data.reader.IReader): Self = this.set("reader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReader: Self = this.set("reader", js.undefined)
+    def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.ejWebAll.global.ej
 
 import typings.ejWebAll.JQuery
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,20 +13,18 @@ class Tile protected ()
   extends typings.ejWebAll.ej.Tile {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
-  def this(element: JQuery, options: typings.ejWebAll.ej.Tile.Model) = this()
-  def this(element: Element, options: typings.ejWebAll.ej.Tile.Model) = this()
+  def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
+  def this(element: Element, options: typings.ejWebAll.ej.Model) = this()
 }
-/* static members */
-@JSGlobal("ej.Tile")
-@js.native
-object Tile extends js.Object {
+object Tile {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.Tile = js.native
-  
+  @JSGlobal("ej.Tile")
   @js.native
-  object BadgePosition extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.Tile.BadgePosition")
+  @js.native
+  object BadgePosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tile.BadgePosition with Double] = js.native
@@ -35,8 +34,9 @@ object Tile extends js.Object {
     /* 0 */ val Topright: typings.ejWebAll.ej.Tile.BadgePosition.Topright with Double = js.native
   }
   
+  @JSGlobal("ej.Tile.CaptionAlignment")
   @js.native
-  object CaptionAlignment extends js.Object {
+  object CaptionAlignment extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tile.CaptionAlignment with Double] = js.native
@@ -50,8 +50,9 @@ object Tile extends js.Object {
     /* 2 */ val Right: typings.ejWebAll.ej.Tile.CaptionAlignment.Right with Double = js.native
   }
   
+  @JSGlobal("ej.Tile.CaptionPosition")
   @js.native
-  object CaptionPosition extends js.Object {
+  object CaptionPosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tile.CaptionPosition with Double] = js.native
@@ -63,8 +64,9 @@ object Tile extends js.Object {
     /* 2 */ val Outer: typings.ejWebAll.ej.Tile.CaptionPosition.Outer with Double = js.native
   }
   
+  @JSGlobal("ej.Tile.ImagePosition")
   @js.native
-  object ImagePosition extends js.Object {
+  object ImagePosition extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tile.ImagePosition with Double] = js.native
@@ -90,8 +92,16 @@ object Tile extends js.Object {
     /* 6 */ val TopRight: typings.ejWebAll.ej.Tile.ImagePosition.TopRight with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.Tile.Locale")
   @js.native
-  object TileSize extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Tile.TileSize")
+  @js.native
+  object TileSize extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tile.TileSize with Double] = js.native
@@ -105,8 +115,16 @@ object Tile extends js.Object {
     /* 3 */ val Wide: typings.ejWebAll.ej.Tile.TileSize.Wide with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.Tile.fn")
   @js.native
-  object liveTileType extends js.Object {
+  def fn: typings.ejWebAll.ej.Tile = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.Tile): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.Tile.liveTileType")
+  @js.native
+  object liveTileType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Tile.liveTileType with Double] = js.native

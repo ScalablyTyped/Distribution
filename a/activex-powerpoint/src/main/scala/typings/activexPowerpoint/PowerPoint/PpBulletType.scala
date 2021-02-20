@@ -5,6 +5,7 @@ import typings.activexPowerpoint.activexPowerpointNumbers.`0`
 import typings.activexPowerpoint.activexPowerpointNumbers.`1`
 import typings.activexPowerpoint.activexPowerpointNumbers.`2`
 import typings.activexPowerpoint.activexPowerpointNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexPowerpoint.activexPowerpointNumbers.`3`
   - typings.activexPowerpoint.activexPowerpointNumbers.`1`
 */
-trait PpBulletType extends js.Object
+trait PpBulletType extends StObject
 object PpBulletType {
   
   @scala.inline

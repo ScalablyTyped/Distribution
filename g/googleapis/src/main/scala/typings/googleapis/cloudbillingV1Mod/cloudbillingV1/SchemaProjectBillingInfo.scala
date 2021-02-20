@@ -1,5 +1,6 @@
 package typings.googleapis.cloudbillingV1Mod.cloudbillingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can be assigned to multiple projects).
   */
 @js.native
-trait SchemaProjectBillingInfo extends js.Object {
+trait SchemaProjectBillingInfo extends StObject {
   
   /**
     * The resource name of the billing account associated with the project, if
@@ -51,42 +52,30 @@ object SchemaProjectBillingInfo {
   }
   
   @scala.inline
-  implicit class SchemaProjectBillingInfoOps[Self <: SchemaProjectBillingInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaProjectBillingInfoMutableBuilder[Self <: SchemaProjectBillingInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBillingAccountName(value: String): Self = StObject.set(x, "billingAccountName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBillingAccountNameUndefined: Self = StObject.set(x, "billingAccountName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBillingEnabled(value: Boolean): Self = StObject.set(x, "billingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingAccountName(value: String): Self = this.set("billingAccountName", value.asInstanceOf[js.Any])
+    def setBillingEnabledUndefined: Self = StObject.set(x, "billingEnabled", js.undefined)
     
     @scala.inline
-    def deleteBillingAccountName: Self = this.set("billingAccountName", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBillingEnabled(value: Boolean): Self = this.set("billingEnabled", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteBillingEnabled: Self = this.set("billingEnabled", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

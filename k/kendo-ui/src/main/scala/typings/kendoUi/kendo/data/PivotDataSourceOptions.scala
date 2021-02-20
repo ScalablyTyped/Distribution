@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,57 +29,45 @@ object PivotDataSourceOptions {
   }
   
   @scala.inline
-  implicit class PivotDataSourceOptionsOps[Self <: PivotDataSourceOptions] (val x: Self) extends AnyVal {
+  implicit class PivotDataSourceOptionsMutableBuilder[Self <: PivotDataSourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: js.Array[PivotDataSourceAxisOptions | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = this.set("columns", js.Array(value :_*))
+    def setMeasures(value: js.Array[String] | PivotDataSourceMeasureOptions): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[PivotDataSourceAxisOptions | String]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setMeasuresVarargs(value: String*): Self = StObject.set(x, "measures", js.Array(value :_*))
     
     @scala.inline
-    def setMeasuresVarargs(value: String*): Self = this.set("measures", js.Array(value :_*))
+    def setRows(value: js.Array[PivotDataSourceAxisOptions | String]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeasures(value: js.Array[String] | PivotDataSourceMeasureOptions): Self = this.set("measures", value.asInstanceOf[js.Any])
+    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def deleteMeasures: Self = this.set("measures", js.undefined)
+    def setRowsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
     @scala.inline
-    def setRowsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = this.set("rows", js.Array(value :_*))
+    def setSchema(value: PivotSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRows(value: js.Array[PivotDataSourceAxisOptions | String]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteRows: Self = this.set("rows", js.undefined)
+    def setTransport(value: PivotTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: PivotSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
-    
-    @scala.inline
-    def setTransport(value: PivotTransport): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

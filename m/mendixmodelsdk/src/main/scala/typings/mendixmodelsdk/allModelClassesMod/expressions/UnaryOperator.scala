@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.allModelClassesMod.expressions
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator")
 @js.native
-class UnaryOperator ()
-  extends typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator")
-@js.native
-object UnaryOperator extends js.Object {
+class UnaryOperator protected ()
+  extends typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object UnaryOperator {
   
-  var None: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var UnaryMinus: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator.None")
+  @js.native
+  def None: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator = js.native
+  @scala.inline
+  def None_=(x: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "expressions.UnaryOperator.UnaryMinus")
+  @js.native
+  def UnaryMinus: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator = js.native
+  @scala.inline
+  def UnaryMinus_=(x: typings.mendixmodelsdk.expressionsMod.expressions.UnaryOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnaryMinus")(x.asInstanceOf[js.Any])
 }

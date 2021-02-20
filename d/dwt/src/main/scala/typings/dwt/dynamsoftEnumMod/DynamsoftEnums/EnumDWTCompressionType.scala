@@ -1,94 +1,79 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTCompressionType extends js.Object
+sealed trait EnumDWTCompressionType extends StObject
 /**
   * TWAIN compression types.
   */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_CompressionType")
 @js.native
-object EnumDWTCompressionType extends js.Object {
+object EnumDWTCompressionType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTCompressionType with Double] = js.native
   
   @js.native
   sealed trait TWCP_BITFIELDS extends EnumDWTCompressionType
-  /* 12 */ @js.native
-  object TWCP_BITFIELDS extends TopLevel[TWCP_BITFIELDS with Double]
+  /* 12 */ val TWCP_BITFIELDS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_BITFIELDS with Double = js.native
   
   @js.native
   sealed trait TWCP_GROUP31D extends EnumDWTCompressionType
-  /* 2 */ @js.native
-  object TWCP_GROUP31D extends TopLevel[TWCP_GROUP31D with Double]
+  /* 2 */ val TWCP_GROUP31D: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_GROUP31D with Double = js.native
   
   @js.native
   sealed trait TWCP_GROUP31DEOL extends EnumDWTCompressionType
-  /* 3 */ @js.native
-  object TWCP_GROUP31DEOL extends TopLevel[TWCP_GROUP31DEOL with Double]
+  /* 3 */ val TWCP_GROUP31DEOL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_GROUP31DEOL with Double = js.native
   
   @js.native
   sealed trait TWCP_GROUP32D extends EnumDWTCompressionType
-  /* 4 */ @js.native
-  object TWCP_GROUP32D extends TopLevel[TWCP_GROUP32D with Double]
+  /* 4 */ val TWCP_GROUP32D: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_GROUP32D with Double = js.native
   
   @js.native
   sealed trait TWCP_GROUP4 extends EnumDWTCompressionType
-  /* 5 */ @js.native
-  object TWCP_GROUP4 extends TopLevel[TWCP_GROUP4 with Double]
+  /* 5 */ val TWCP_GROUP4: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_GROUP4 with Double = js.native
   
   @js.native
   sealed trait TWCP_JBIG extends EnumDWTCompressionType
-  /* 8 */ @js.native
-  object TWCP_JBIG extends TopLevel[TWCP_JBIG with Double]
+  /* 8 */ val TWCP_JBIG: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_JBIG with Double = js.native
   
   @js.native
   sealed trait TWCP_JPEG extends EnumDWTCompressionType
-  /* 6 */ @js.native
-  object TWCP_JPEG extends TopLevel[TWCP_JPEG with Double]
+  /* 6 */ val TWCP_JPEG: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_JPEG with Double = js.native
   
   @js.native
   sealed trait TWCP_JPEG2000 extends EnumDWTCompressionType
-  /* 14 */ @js.native
-  object TWCP_JPEG2000 extends TopLevel[TWCP_JPEG2000 with Double]
+  /* 14 */ val TWCP_JPEG2000: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_JPEG2000 with Double = js.native
   
   @js.native
   sealed trait TWCP_LZW extends EnumDWTCompressionType
-  /* 7 */ @js.native
-  object TWCP_LZW extends TopLevel[TWCP_LZW with Double]
+  /* 7 */ val TWCP_LZW: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_LZW with Double = js.native
   
   @js.native
   sealed trait TWCP_NONE extends EnumDWTCompressionType
-  /* 0 */ @js.native
-  object TWCP_NONE extends TopLevel[TWCP_NONE with Double]
+  /* 0 */ val TWCP_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_NONE with Double = js.native
   
   @js.native
   sealed trait TWCP_PACKBITS extends EnumDWTCompressionType
-  /* 1 */ @js.native
-  object TWCP_PACKBITS extends TopLevel[TWCP_PACKBITS with Double]
+  /* 1 */ val TWCP_PACKBITS: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_PACKBITS with Double = js.native
   
   @js.native
   sealed trait TWCP_PNG extends EnumDWTCompressionType
-  /* 9 */ @js.native
-  object TWCP_PNG extends TopLevel[TWCP_PNG with Double]
+  /* 9 */ val TWCP_PNG: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_PNG with Double = js.native
   
   @js.native
   sealed trait TWCP_RLE4 extends EnumDWTCompressionType
-  /* 10 */ @js.native
-  object TWCP_RLE4 extends TopLevel[TWCP_RLE4 with Double]
+  /* 10 */ val TWCP_RLE4: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_RLE4 with Double = js.native
   
   @js.native
   sealed trait TWCP_RLE8 extends EnumDWTCompressionType
-  /* 11 */ @js.native
-  object TWCP_RLE8 extends TopLevel[TWCP_RLE8 with Double]
+  /* 11 */ val TWCP_RLE8: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_RLE8 with Double = js.native
   
   @js.native
   sealed trait TWCP_ZIP extends EnumDWTCompressionType
-  /* 13 */ @js.native
-  object TWCP_ZIP extends TopLevel[TWCP_ZIP with Double]
+  /* 13 */ val TWCP_ZIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCompressionType.TWCP_ZIP with Double = js.native
 }

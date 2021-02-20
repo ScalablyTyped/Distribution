@@ -1,12 +1,13 @@
 package typings.activexWord.Word
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -65,63 +66,51 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDate(value: VarDate): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setEdit(value: () => Unit): Self = StObject.set(x, "Edit", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDate(value: VarDate): Self = this.set("Date", value.asInstanceOf[js.Any])
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    def setInitial(value: String): Self = StObject.set(x, "Initial", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEdit(value: () => Unit): Self = this.set("Edit", js.Any.fromFunction0(value))
+    def setIsInk(value: Boolean): Self = StObject.set(x, "IsInk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitial(value: String): Self = this.set("Initial", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInk(value: Boolean): Self = this.set("IsInk", value.asInstanceOf[js.Any])
+    def setReference(value: Range): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setScope(value: Range): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    def setShowTip(value: Boolean): Self = StObject.set(x, "ShowTip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReference(value: Range): Self = this.set("Reference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScope(value: Range): Self = this.set("Scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowTip(value: Boolean): Self = this.set("ShowTip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotComment_typekey(value: Comment): Self = this.set("Word.Comment_typekey", value.asInstanceOf[js.Any])
+    def setWordDotComment_typekey(value: Comment): Self = StObject.set(x, "Word.Comment_typekey", value.asInstanceOf[js.Any])
   }
 }

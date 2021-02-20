@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -194,156 +195,144 @@ object IgGridColumn {
   }
   
   @scala.inline
-  implicit class IgGridColumnOps[Self <: IgGridColumn] (val x: Self) extends AnyVal {
+  implicit class IgGridColumnMutableBuilder[Self <: IgGridColumn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnCssClass(value: String): Self = StObject.set(x, "columnCssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    def setColumnCssClassUndefined: Self = StObject.set(x, "columnCssClass", js.undefined)
     
     @scala.inline
-    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnCssClass(value: String): Self = this.set("columnCssClass", value.asInstanceOf[js.Any])
+    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
     @scala.inline
-    def deleteColumnCssClass: Self = this.set("columnCssClass", js.undefined)
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    def setDateDisplayType(value: String): Self = StObject.set(x, "dateDisplayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setDateDisplayTypeUndefined: Self = StObject.set(x, "dateDisplayType", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateDisplayType(value: String): Self = this.set("dateDisplayType", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteDateDisplayType: Self = this.set("dateDisplayType", js.undefined)
+    def setFormatter(value: String | js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormula(value: String | js.Function): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: String | js.Function): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
     @scala.inline
-    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    def setGroup(value: js.Array[_]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormula(value: String | js.Function): Self = this.set("formula", value.asInstanceOf[js.Any])
+    def setGroupOptions(value: IgGridColumnGroupOptions): Self = StObject.set(x, "groupOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormula: Self = this.set("formula", js.undefined)
+    def setGroupOptionsUndefined: Self = StObject.set(x, "groupOptions", js.undefined)
     
     @scala.inline
-    def setGroupVarargs(value: js.Any*): Self = this.set("group", js.Array(value :_*))
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def setGroup(value: js.Array[_]): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setGroupVarargs(value: js.Any*): Self = StObject.set(x, "group", js.Array(value :_*))
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setHeaderCssClass(value: String): Self = StObject.set(x, "headerCssClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupOptions(value: IgGridColumnGroupOptions): Self = this.set("groupOptions", value.asInstanceOf[js.Any])
+    def setHeaderCssClassUndefined: Self = StObject.set(x, "headerCssClass", js.undefined)
     
     @scala.inline
-    def deleteGroupOptions: Self = this.set("groupOptions", js.undefined)
+    def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderCssClass(value: String): Self = this.set("headerCssClass", value.asInstanceOf[js.Any])
+    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
     @scala.inline
-    def deleteHeaderCssClass: Self = this.set("headerCssClass", js.undefined)
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderText(value: String): Self = this.set("headerText", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteHeaderText: Self = this.set("headerText", js.undefined)
+    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setMapper(value: String | js.Function): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setMapperUndefined: Self = StObject.set(x, "mapper", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setNavigationIndex(value: Double): Self = StObject.set(x, "navigationIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMapper(value: String | js.Function): Self = this.set("mapper", value.asInstanceOf[js.Any])
+    def setNavigationIndexUndefined: Self = StObject.set(x, "navigationIndex", js.undefined)
     
     @scala.inline
-    def deleteMapper: Self = this.set("mapper", js.undefined)
+    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigationIndex(value: Double): Self = this.set("navigationIndex", value.asInstanceOf[js.Any])
+    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
     @scala.inline
-    def deleteNavigationIndex: Self = this.set("navigationIndex", js.undefined)
+    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
     @scala.inline
-    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
     @scala.inline
-    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    def setUnbound(value: Boolean): Self = StObject.set(x, "unbound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setUnboundUndefined: Self = StObject.set(x, "unbound", js.undefined)
     
     @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setUnboundValues(value: js.Array[_]): Self = StObject.set(x, "unboundValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnbound(value: Boolean): Self = this.set("unbound", value.asInstanceOf[js.Any])
+    def setUnboundValuesUndefined: Self = StObject.set(x, "unboundValues", js.undefined)
     
     @scala.inline
-    def deleteUnbound: Self = this.set("unbound", js.undefined)
+    def setUnboundValuesVarargs(value: js.Any*): Self = StObject.set(x, "unboundValues", js.Array(value :_*))
     
     @scala.inline
-    def setUnboundValuesVarargs(value: js.Any*): Self = this.set("unboundValues", js.Array(value :_*))
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnboundValues(value: js.Array[_]): Self = this.set("unboundValues", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnboundValues: Self = this.set("unboundValues", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

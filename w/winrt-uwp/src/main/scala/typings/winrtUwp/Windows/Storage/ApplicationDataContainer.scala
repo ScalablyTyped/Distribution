@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Storage
 
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a container for app settings. The methods and properties of this class support creating, deleting, enumerating, and traversing the container hierarchy. */
 @js.native
-trait ApplicationDataContainer extends js.Object {
+trait ApplicationDataContainer extends StObject {
   
   /** Gets the child application settings containers of this application settings container. */
   var containers: IMapView[String, ApplicationDataContainer] = js.native
@@ -52,36 +53,24 @@ object ApplicationDataContainer {
   }
   
   @scala.inline
-  implicit class ApplicationDataContainerOps[Self <: ApplicationDataContainer] (val x: Self) extends AnyVal {
+  implicit class ApplicationDataContainerMutableBuilder[Self <: ApplicationDataContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainers(value: IMapView[String, ApplicationDataContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateContainer(value: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer): Self = StObject.set(x, "createContainer", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteContainer(value: String => Unit): Self = StObject.set(x, "deleteContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContainers(value: IMapView[String, ApplicationDataContainer]): Self = this.set("containers", value.asInstanceOf[js.Any])
+    def setLocality(value: ApplicationDataLocality): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateContainer(value: (String, ApplicationDataCreateDisposition) => ApplicationDataContainer): Self = this.set("createContainer", js.Any.fromFunction2(value))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteContainer(value: String => Unit): Self = this.set("deleteContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocality(value: ApplicationDataLocality): Self = this.set("locality", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValues(value: IPropertySet): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValues(value: IPropertySet): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

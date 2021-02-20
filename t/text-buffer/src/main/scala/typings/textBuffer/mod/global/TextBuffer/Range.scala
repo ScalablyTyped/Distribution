@@ -1,13 +1,14 @@
 package typings.textBuffer.mod.global.TextBuffer
 
 import typings.textBuffer.anon.ReadonlyRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a region in a buffer in row/column coordinates. */
 @js.native
-trait Range extends js.Object {
+trait Range extends StObject {
   
   // Comparison
   /**

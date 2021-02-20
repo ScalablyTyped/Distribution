@@ -1,5 +1,6 @@
 package typings.googleapis.containerV1Mod.containerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * certificates.
   */
 @js.native
-trait SchemaMasterAuth extends js.Object {
+trait SchemaMasterAuth extends StObject {
   
   /**
     * [Output only] Base64-encoded public certificate used by clients to
@@ -61,54 +62,42 @@ object SchemaMasterAuth {
   }
   
   @scala.inline
-  implicit class SchemaMasterAuthOps[Self <: SchemaMasterAuth] (val x: Self) extends AnyVal {
+  implicit class SchemaMasterAuthMutableBuilder[Self <: SchemaMasterAuth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientCertificateConfig(value: SchemaClientCertificateConfig): Self = StObject.set(x, "clientCertificateConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientCertificateConfigUndefined: Self = StObject.set(x, "clientCertificateConfig", js.undefined)
     
     @scala.inline
-    def setClientCertificate(value: String): Self = this.set("clientCertificate", value.asInstanceOf[js.Any])
+    def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
     
     @scala.inline
-    def deleteClientCertificate: Self = this.set("clientCertificate", js.undefined)
+    def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientCertificateConfig(value: SchemaClientCertificateConfig): Self = this.set("clientCertificateConfig", value.asInstanceOf[js.Any])
+    def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
     
     @scala.inline
-    def deleteClientCertificateConfig: Self = this.set("clientCertificateConfig", js.undefined)
+    def setClusterCaCertificate(value: String): Self = StObject.set(x, "clusterCaCertificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientKey(value: String): Self = this.set("clientKey", value.asInstanceOf[js.Any])
+    def setClusterCaCertificateUndefined: Self = StObject.set(x, "clusterCaCertificate", js.undefined)
     
     @scala.inline
-    def deleteClientKey: Self = this.set("clientKey", js.undefined)
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterCaCertificate(value: String): Self = this.set("clusterCaCertificate", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteClusterCaCertificate: Self = this.set("clusterCaCertificate", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

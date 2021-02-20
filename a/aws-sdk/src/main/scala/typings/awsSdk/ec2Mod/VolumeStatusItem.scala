@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VolumeStatusItem extends js.Object {
+trait VolumeStatusItem extends StObject {
   
   /**
     * The details of the operation.
@@ -51,69 +52,57 @@ object VolumeStatusItem {
   }
   
   @scala.inline
-  implicit class VolumeStatusItemOps[Self <: VolumeStatusItem] (val x: Self) extends AnyVal {
+  implicit class VolumeStatusItemMutableBuilder[Self <: VolumeStatusItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: VolumeStatusActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: VolumeStatusAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def setActionsVarargs(value: VolumeStatusAction*): Self = this.set("Actions", js.Array(value :_*))
+    def setAttachmentStatuses(value: VolumeStatusAttachmentStatusList): Self = StObject.set(x, "AttachmentStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActions(value: VolumeStatusActionsList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setAttachmentStatusesUndefined: Self = StObject.set(x, "AttachmentStatuses", js.undefined)
     
     @scala.inline
-    def deleteActions: Self = this.set("Actions", js.undefined)
+    def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = StObject.set(x, "AttachmentStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setAttachmentStatusesVarargs(value: VolumeStatusAttachmentStatus*): Self = this.set("AttachmentStatuses", js.Array(value :_*))
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentStatuses(value: VolumeStatusAttachmentStatusList): Self = this.set("AttachmentStatuses", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAttachmentStatuses: Self = this.set("AttachmentStatuses", js.undefined)
+    def setEvents(value: VolumeStatusEventsList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setEventsVarargs(value: VolumeStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: VolumeStatusEvent*): Self = this.set("Events", js.Array(value :_*))
+    def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: VolumeStatusEventsList): Self = this.set("Events", value.asInstanceOf[js.Any])
+    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("Events", js.undefined)
+    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    def setVolumeIdUndefined: Self = StObject.set(x, "VolumeId", js.undefined)
     
     @scala.inline
-    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    def setVolumeStatus(value: VolumeStatusInfo): Self = StObject.set(x, "VolumeStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
-    
-    @scala.inline
-    def setVolumeStatus(value: VolumeStatusInfo): Self = this.set("VolumeStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeStatus: Self = this.set("VolumeStatus", js.undefined)
+    def setVolumeStatusUndefined: Self = StObject.set(x, "VolumeStatus", js.undefined)
   }
 }

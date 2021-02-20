@@ -59,6 +59,7 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +68,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // React.DOM
 // ----------------------------------------------------------------------
 @js.native
-trait ReactHTML extends js.Object {
+trait ReactHTML extends StObject {
   
   var a: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement] = js.native
   
@@ -429,368 +430,356 @@ object ReactHTML {
   }
   
   @scala.inline
-  implicit class ReactHTMLOps[Self <: ReactHTML] (val x: Self) extends AnyVal {
+  implicit class ReactHTMLMutableBuilder[Self <: ReactHTML] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbbr(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddress(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: DetailedHTMLFactory[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setArea(value: DetailedHTMLFactory[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbbr(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    def setArticle(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setAside(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArea(value: DetailedHTMLFactory[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]): Self = this.set("area", value.asInstanceOf[js.Any])
+    def setAudio(value: DetailedHTMLFactory[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArticle(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("article", value.asInstanceOf[js.Any])
+    def setB(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAside(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("aside", value.asInstanceOf[js.Any])
+    def setBase(value: DetailedHTMLFactory[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: DetailedHTMLFactory[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setBdi(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setBdo(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBase(value: DetailedHTMLFactory[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]): Self = this.set("base", value.asInstanceOf[js.Any])
+    def setBig(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBdi(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    def setBlockquote(value: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBdo(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    def setBody(value: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBig(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("big", value.asInstanceOf[js.Any])
+    def setBr(value: DetailedHTMLFactory[HTMLAttributes[HTMLBRElement], HTMLBRElement]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockquote(value: DetailedHTMLFactory[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    def setButton(value: DetailedHTMLFactory[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: DetailedHTMLFactory[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCanvas(value: DetailedHTMLFactory[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBr(value: DetailedHTMLFactory[HTMLAttributes[HTMLBRElement], HTMLBRElement]): Self = this.set("br", value.asInstanceOf[js.Any])
+    def setCaption(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: DetailedHTMLFactory[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): Self = this.set("button", value.asInstanceOf[js.Any])
+    def setCite(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: DetailedHTMLFactory[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    def setCode(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaption(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("caption", value.asInstanceOf[js.Any])
+    def setCol(value: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCite(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("cite", value.asInstanceOf[js.Any])
+    def setColgroup(value: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setData(value: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCol(value: DetailedHTMLFactory[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = this.set("col", value.asInstanceOf[js.Any])
+    def setDatalist(value: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColgroup(value: DetailedHTMLFactory[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    def setDd(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: DetailedHTMLFactory[DataHTMLAttributes[HTMLDataElement], HTMLDataElement]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDel(value: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatalist(value: DetailedHTMLFactory[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]): Self = this.set("datalist", value.asInstanceOf[js.Any])
+    def setDetails(value: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDd(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("dd", value.asInstanceOf[js.Any])
+    def setDfn(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDel(value: DetailedHTMLFactory[DelHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("del", value.asInstanceOf[js.Any])
+    def setDialog(value: DetailedHTMLFactory[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: DetailedHTMLFactory[DetailsHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setDiv(value: DetailedHTMLFactory[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDfn(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("dfn", value.asInstanceOf[js.Any])
+    def setDl(value: DetailedHTMLFactory[HTMLAttributes[HTMLDListElement], HTMLDListElement]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDialog(value: DetailedHTMLFactory[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    def setDt(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiv(value: DetailedHTMLFactory[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = this.set("div", value.asInstanceOf[js.Any])
+    def setEm(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDl(value: DetailedHTMLFactory[HTMLAttributes[HTMLDListElement], HTMLDListElement]): Self = this.set("dl", value.asInstanceOf[js.Any])
+    def setEmbed(value: DetailedHTMLFactory[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDt(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("dt", value.asInstanceOf[js.Any])
+    def setFieldset(value: DetailedHTMLFactory[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEm(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("em", value.asInstanceOf[js.Any])
+    def setFigcaption(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbed(value: DetailedHTMLFactory[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]): Self = this.set("embed", value.asInstanceOf[js.Any])
+    def setFigure(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldset(value: DetailedHTMLFactory[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]): Self = this.set("fieldset", value.asInstanceOf[js.Any])
+    def setFooter(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFigcaption(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("figcaption", value.asInstanceOf[js.Any])
+    def setForm(value: DetailedHTMLFactory[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFigure(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("figure", value.asInstanceOf[js.Any])
+    def setH1(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    def setH2(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForm(value: DetailedHTMLFactory[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]): Self = this.set("form", value.asInstanceOf[js.Any])
+    def setH3(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH1(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    def setH4(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH2(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    def setH5(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH3(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    def setH6(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH4(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    def setHead(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLHeadElement]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH5(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    def setHeader(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setH6(value: DetailedHTMLFactory[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    def setHgroup(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHead(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLHeadElement]): Self = this.set("head", value.asInstanceOf[js.Any])
+    def setHr(value: DetailedHTMLFactory[HTMLAttributes[HTMLHRElement], HTMLHRElement]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeader(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("header", value.asInstanceOf[js.Any])
+    def setHtml(value: DetailedHTMLFactory[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHgroup(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("hgroup", value.asInstanceOf[js.Any])
+    def setI(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHr(value: DetailedHTMLFactory[HTMLAttributes[HTMLHRElement], HTMLHRElement]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    def setIframe(value: DetailedHTMLFactory[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHtml(value: DetailedHTMLFactory[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]): Self = this.set("html", value.asInstanceOf[js.Any])
+    def setImg(value: DetailedHTMLFactory[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setI(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("i", value.asInstanceOf[js.Any])
+    def setInput(value: DetailedHTMLFactory[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIframe(value: DetailedHTMLFactory[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    def setIns(value: DetailedHTMLFactory[InsHTMLAttributes[HTMLModElement], HTMLModElement]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImg(value: DetailedHTMLFactory[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]): Self = this.set("img", value.asInstanceOf[js.Any])
+    def setKbd(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: DetailedHTMLFactory[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setKeygen(value: DetailedHTMLFactory[KeygenHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIns(value: DetailedHTMLFactory[InsHTMLAttributes[HTMLModElement], HTMLModElement]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    def setLabel(value: DetailedHTMLFactory[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKbd(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("kbd", value.asInstanceOf[js.Any])
+    def setLegend(value: DetailedHTMLFactory[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeygen(value: DetailedHTMLFactory[KeygenHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("keygen", value.asInstanceOf[js.Any])
+    def setLi(value: DetailedHTMLFactory[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: DetailedHTMLFactory[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setLink(value: DetailedHTMLFactory[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegend(value: DetailedHTMLFactory[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setMain(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLi(value: DetailedHTMLFactory[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]): Self = this.set("li", value.asInstanceOf[js.Any])
+    def setMap(value: DetailedHTMLFactory[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink(value: DetailedHTMLFactory[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setMark(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("main", value.asInstanceOf[js.Any])
+    def setMenu(value: DetailedHTMLFactory[MenuHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMap(value: DetailedHTMLFactory[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]): Self = this.set("map", value.asInstanceOf[js.Any])
+    def setMenuitem(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMark(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("mark", value.asInstanceOf[js.Any])
+    def setMeta(value: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenu(value: DetailedHTMLFactory[MenuHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    def setMeter(value: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuitem(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("menuitem", value.asInstanceOf[js.Any])
+    def setNav(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: DetailedHTMLFactory[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    def setNoscript(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeter(value: DetailedHTMLFactory[MeterHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    def setObject(value: DetailedHTMLFactory[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNav(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("nav", value.asInstanceOf[js.Any])
+    def setOl(value: DetailedHTMLFactory[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoscript(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("noscript", value.asInstanceOf[js.Any])
+    def setOptgroup(value: DetailedHTMLFactory[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObject(value: DetailedHTMLFactory[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]): Self = this.set("object", value.asInstanceOf[js.Any])
+    def setOption(value: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOl(value: DetailedHTMLFactory[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    def setOutput(value: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptgroup(value: DetailedHTMLFactory[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]): Self = this.set("optgroup", value.asInstanceOf[js.Any])
+    def setP(value: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOption(value: DetailedHTMLFactory[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]): Self = this.set("option", value.asInstanceOf[js.Any])
+    def setParam(value: DetailedHTMLFactory[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: DetailedHTMLFactory[OutputHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setPicture(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: DetailedHTMLFactory[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setPre(value: DetailedHTMLFactory[HTMLAttributes[HTMLPreElement], HTMLPreElement]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParam(value: DetailedHTMLFactory[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]): Self = this.set("param", value.asInstanceOf[js.Any])
+    def setProgress(value: DetailedHTMLFactory[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPicture(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("picture", value.asInstanceOf[js.Any])
+    def setQ(value: DetailedHTMLFactory[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPre(value: DetailedHTMLFactory[HTMLAttributes[HTMLPreElement], HTMLPreElement]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    def setRp(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: DetailedHTMLFactory[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setRt(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: DetailedHTMLFactory[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setRuby(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRp(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("rp", value.asInstanceOf[js.Any])
+    def setS(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRt(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("rt", value.asInstanceOf[js.Any])
+    def setSamp(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuby(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("ruby", value.asInstanceOf[js.Any])
+    def setScript(value: DetailedHTMLFactory[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("s", value.asInstanceOf[js.Any])
+    def setSection(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamp(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("samp", value.asInstanceOf[js.Any])
+    def setSelect(value: DetailedHTMLFactory[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: DetailedHTMLFactory[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setSlot(value: DetailedHTMLFactory[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSection(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("section", value.asInstanceOf[js.Any])
+    def setSmall(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: DetailedHTMLFactory[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]): Self = this.set("select", value.asInstanceOf[js.Any])
+    def setSource(value: DetailedHTMLFactory[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlot(value: DetailedHTMLFactory[SlotHTMLAttributes[HTMLSlotElement], HTMLSlotElement]): Self = this.set("slot", value.asInstanceOf[js.Any])
+    def setSpan(value: DetailedHTMLFactory[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSmall(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("small", value.asInstanceOf[js.Any])
+    def setStrong(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: DetailedHTMLFactory[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setStyle(value: DetailedHTMLFactory[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpan(value: DetailedHTMLFactory[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]): Self = this.set("span", value.asInstanceOf[js.Any])
+    def setSub(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrong(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    def setSummary(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: DetailedHTMLFactory[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setSup(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSub(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("sub", value.asInstanceOf[js.Any])
+    def setTable(value: DetailedHTMLFactory[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSummary(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("summary", value.asInstanceOf[js.Any])
+    def setTbody(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSup(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("sup", value.asInstanceOf[js.Any])
+    def setTd(value: DetailedHTMLFactory[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTable(value: DetailedHTMLFactory[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]): Self = this.set("table", value.asInstanceOf[js.Any])
+    def setTemplate(value: DetailedHTMLFactory[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTbody(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    def setTextarea(value: DetailedHTMLFactory[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTd(value: DetailedHTMLFactory[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]): Self = this.set("td", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTemplate(value: DetailedHTMLFactory[HTMLAttributes[HTMLTemplateElement], HTMLTemplateElement]): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTextarea(value: DetailedHTMLFactory[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]): Self = this.set("textarea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTfoot(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    def setTfoot(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTh(
       value: DetailedHTMLFactory[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]
-    ): Self = this.set("th", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThead(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = this.set("thead", value.asInstanceOf[js.Any])
+    def setThead(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTime(value: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("time", value.asInstanceOf[js.Any])
+    def setTime(value: DetailedHTMLFactory[TimeHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: DetailedHTMLFactory[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTr(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    def setTr(value: DetailedHTMLFactory[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack(value: DetailedHTMLFactory[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setTrack(value: DetailedHTMLFactory[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setU(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("u", value.asInstanceOf[js.Any])
+    def setU(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUl(value: DetailedHTMLFactory[HTMLAttributes[HTMLUListElement], HTMLUListElement]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    def setUl(value: DetailedHTMLFactory[HTMLAttributes[HTMLUListElement], HTMLUListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVar(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("var", value.asInstanceOf[js.Any])
+    def setVar(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideo(value: DetailedHTMLFactory[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]): Self = this.set("video", value.asInstanceOf[js.Any])
+    def setVideo(value: DetailedHTMLFactory[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWbr(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = this.set("wbr", value.asInstanceOf[js.Any])
+    def setWbr(value: DetailedHTMLFactory[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebview(value: DetailedHTMLFactory[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]): Self = this.set("webview", value.asInstanceOf[js.Any])
+    def setWebview(value: DetailedHTMLFactory[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
   }
 }

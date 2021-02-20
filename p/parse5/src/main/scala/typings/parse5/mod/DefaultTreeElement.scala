@@ -1,5 +1,6 @@
 package typings.parse5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,42 +51,30 @@ object DefaultTreeElement {
   }
   
   @scala.inline
-  implicit class DefaultTreeElementOps[Self <: DefaultTreeElement] (val x: Self) extends AnyVal {
+  implicit class DefaultTreeElementMutableBuilder[Self <: DefaultTreeElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttrs(value: js.Array[Attribute]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttrsVarargs(value: Attribute*): Self = StObject.set(x, "attrs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildNodes(value: js.Array[DefaultTreeNode]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttrsVarargs(value: Attribute*): Self = this.set("attrs", js.Array(value :_*))
+    def setChildNodesVarargs(value: DefaultTreeNode*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
     
     @scala.inline
-    def setAttrs(value: js.Array[Attribute]): Self = this.set("attrs", value.asInstanceOf[js.Any])
+    def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildNodesVarargs(value: DefaultTreeNode*): Self = this.set("childNodes", js.Array(value :_*))
+    def setSourceCodeLocation(value: ElementLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildNodes(value: js.Array[DefaultTreeNode]): Self = this.set("childNodes", value.asInstanceOf[js.Any])
+    def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
     
     @scala.inline
-    def setNamespaceURI(value: String): Self = this.set("namespaceURI", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCodeLocation(value: ElementLocation): Self = this.set("sourceCodeLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceCodeLocation: Self = this.set("sourceCodeLocation", js.undefined)
+    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

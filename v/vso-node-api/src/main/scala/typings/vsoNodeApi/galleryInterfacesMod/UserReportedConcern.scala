@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserReportedConcern extends js.Object {
+trait UserReportedConcern extends StObject {
   
   /**
     * Category of the concern
@@ -48,33 +49,21 @@ object UserReportedConcern {
   }
   
   @scala.inline
-  implicit class UserReportedConcernOps[Self <: UserReportedConcern] (val x: Self) extends AnyVal {
+  implicit class UserReportedConcernMutableBuilder[Self <: UserReportedConcern] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCategory(value: ConcernCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcernText(value: String): Self = StObject.set(x, "concernText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReviewId(value: Double): Self = StObject.set(x, "reviewId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: ConcernCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setSubmittedDate(value: Date): Self = StObject.set(x, "submittedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcernText(value: String): Self = this.set("concernText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReviewId(value: Double): Self = this.set("reviewId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSubmittedDate(value: Date): Self = this.set("submittedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

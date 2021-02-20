@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,42 +87,30 @@ object XFlatParagraphIterator {
   }
   
   @scala.inline
-  implicit class XFlatParagraphIteratorOps[Self <: XFlatParagraphIterator] (val x: Self) extends AnyVal {
+  implicit class XFlatParagraphIteratorMutableBuilder[Self <: XFlatParagraphIterator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFirstPara(value: XFlatParagraph): Self = StObject.set(x, "FirstPara", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFirstPara(value: () => XFlatParagraph): Self = StObject.set(x, "getFirstPara", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetLastPara(value: () => XFlatParagraph): Self = StObject.set(x, "getLastPara", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setFirstPara(value: XFlatParagraph): Self = this.set("FirstPara", value.asInstanceOf[js.Any])
+    def setGetNextPara(value: () => XFlatParagraph): Self = StObject.set(x, "getNextPara", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setLastPara(value: XFlatParagraph): Self = this.set("LastPara", value.asInstanceOf[js.Any])
+    def setGetParaAfter(value: XFlatParagraph => XFlatParagraph): Self = StObject.set(x, "getParaAfter", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNextPara(value: XFlatParagraph): Self = this.set("NextPara", value.asInstanceOf[js.Any])
+    def setGetParaBefore(value: XFlatParagraph => XFlatParagraph): Self = StObject.set(x, "getParaBefore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFirstPara(value: () => XFlatParagraph): Self = this.set("getFirstPara", js.Any.fromFunction0(value))
+    def setLastPara(value: XFlatParagraph): Self = StObject.set(x, "LastPara", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetLastPara(value: () => XFlatParagraph): Self = this.set("getLastPara", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetNextPara(value: () => XFlatParagraph): Self = this.set("getNextPara", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetParaAfter(value: XFlatParagraph => XFlatParagraph): Self = this.set("getParaAfter", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetParaBefore(value: XFlatParagraph => XFlatParagraph): Self = this.set("getParaBefore", js.Any.fromFunction1(value))
+    def setNextPara(value: XFlatParagraph): Self = StObject.set(x, "NextPara", value.asInstanceOf[js.Any])
   }
 }

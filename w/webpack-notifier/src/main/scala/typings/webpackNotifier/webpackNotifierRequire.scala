@@ -1,5 +1,6 @@
 package typings.webpackNotifier
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("webpack-notifier", JSImport.Namespace)
 @js.native
-object webpackNotifierRequire extends js.Object
+object webpackNotifierRequire extends StObject

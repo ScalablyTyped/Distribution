@@ -11,12 +11,13 @@ import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseNamesReque
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseNamesResponse
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseRequest
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexedDBApi extends js.Object {
+trait IndexedDBApi extends StObject {
   
   /**
     * Clears all entries from an object store.
@@ -82,45 +83,33 @@ object IndexedDBApi {
   }
   
   @scala.inline
-  implicit class IndexedDBApiOps[Self <: IndexedDBApi] (val x: Self) extends AnyVal {
+  implicit class IndexedDBApiMutableBuilder[Self <: IndexedDBApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClearObjectStore(value: ClearObjectStoreRequest => js.Promise[Unit]): Self = StObject.set(x, "clearObjectStore", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteDatabase(value: DeleteDatabaseRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeleteObjectStoreEntries(value: DeleteObjectStoreEntriesRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteObjectStoreEntries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearObjectStore(value: ClearObjectStoreRequest => js.Promise[Unit]): Self = this.set("clearObjectStore", js.Any.fromFunction1(value))
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteDatabase(value: DeleteDatabaseRequest => js.Promise[Unit]): Self = this.set("deleteDatabase", js.Any.fromFunction1(value))
+    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeleteObjectStoreEntries(value: DeleteObjectStoreEntriesRequest => js.Promise[Unit]): Self = this.set("deleteObjectStoreEntries", js.Any.fromFunction1(value))
+    def setGetMetadata(value: GetMetadataRequest => js.Promise[GetMetadataResponse]): Self = StObject.set(x, "getMetadata", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setRequestData(value: RequestDataRequest => js.Promise[RequestDataResponse]): Self = StObject.set(x, "requestData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setRequestDatabase(value: RequestDatabaseRequest => js.Promise[RequestDatabaseResponse]): Self = StObject.set(x, "requestDatabase", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetMetadata(value: GetMetadataRequest => js.Promise[GetMetadataResponse]): Self = this.set("getMetadata", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestData(value: RequestDataRequest => js.Promise[RequestDataResponse]): Self = this.set("requestData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestDatabase(value: RequestDatabaseRequest => js.Promise[RequestDatabaseResponse]): Self = this.set("requestDatabase", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRequestDatabaseNames(value: RequestDatabaseNamesRequest => js.Promise[RequestDatabaseNamesResponse]): Self = this.set("requestDatabaseNames", js.Any.fromFunction1(value))
+    def setRequestDatabaseNames(value: RequestDatabaseNamesRequest => js.Promise[RequestDatabaseNamesResponse]): Self = StObject.set(x, "requestDatabaseNames", js.Any.fromFunction1(value))
   }
 }

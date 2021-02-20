@@ -2,13 +2,14 @@ package typings.officeUiFabricReact.personaTypesMod
 
 import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.anon.Available
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaSharedProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaSharedProps, 'presence' | 'isOutOfOffice' | 'size' | 'presenceColors'> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaProps, 'className'> */
 @js.native
-trait IPersonaPresenceStyleProps extends js.Object {
+trait IPersonaPresenceStyleProps extends StObject {
   
   var className: js.UndefOr[String] = js.native
   
@@ -31,51 +32,39 @@ object IPersonaPresenceStyleProps {
   }
   
   @scala.inline
-  implicit class IPersonaPresenceStylePropsOps[Self <: IPersonaPresenceStyleProps] (val x: Self) extends AnyVal {
+  implicit class IPersonaPresenceStylePropsMutableBuilder[Self <: IPersonaPresenceStyleProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsOutOfOffice(value: Boolean): Self = StObject.set(x, "isOutOfOffice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setIsOutOfOfficeUndefined: Self = StObject.set(x, "isOutOfOffice", js.undefined)
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setPresence(value: PersonaPresence): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setPresenceColors(value: Available): Self = StObject.set(x, "presenceColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOutOfOffice(value: Boolean): Self = this.set("isOutOfOffice", value.asInstanceOf[js.Any])
+    def setPresenceColorsUndefined: Self = StObject.set(x, "presenceColors", js.undefined)
     
     @scala.inline
-    def deleteIsOutOfOffice: Self = this.set("isOutOfOffice", js.undefined)
+    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
     @scala.inline
-    def setPresence(value: PersonaPresence): Self = this.set("presence", value.asInstanceOf[js.Any])
+    def setSize(value: PersonaSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePresence: Self = this.set("presence", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setPresenceColors(value: Available): Self = this.set("presenceColors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresenceColors: Self = this.set("presenceColors", js.undefined)
-    
-    @scala.inline
-    def setSize(value: PersonaSize): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
+    def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

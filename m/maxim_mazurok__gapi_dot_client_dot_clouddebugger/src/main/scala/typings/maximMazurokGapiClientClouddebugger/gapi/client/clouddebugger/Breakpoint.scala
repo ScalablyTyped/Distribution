@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Breakpoint extends js.Object {
+trait Breakpoint extends StObject {
   
   /** Action that the agent should perform when the code at the breakpoint location is hit. */
   var action: js.UndefOr[String] = js.native
@@ -95,142 +96,130 @@ object Breakpoint {
   }
   
   @scala.inline
-  implicit class BreakpointOps[Self <: Breakpoint] (val x: Self) extends AnyVal {
+  implicit class BreakpointMutableBuilder[Self <: Breakpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanaryExpireTime(value: String): Self = StObject.set(x, "canaryExpireTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    def setCanaryExpireTimeUndefined: Self = StObject.set(x, "canaryExpireTime", js.undefined)
     
     @scala.inline
-    def deleteAction: Self = this.set("action", js.undefined)
+    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanaryExpireTime(value: String): Self = this.set("canaryExpireTime", value.asInstanceOf[js.Any])
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def deleteCanaryExpireTime: Self = this.set("canaryExpireTime", js.undefined)
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setEvaluatedExpressions(value: js.Array[Variable]): Self = StObject.set(x, "evaluatedExpressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setEvaluatedExpressionsUndefined: Self = StObject.set(x, "evaluatedExpressions", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setEvaluatedExpressionsVarargs(value: Variable*): Self = StObject.set(x, "evaluatedExpressions", js.Array(value :_*))
     
     @scala.inline
-    def setEvaluatedExpressionsVarargs(value: Variable*): Self = this.set("evaluatedExpressions", js.Array(value :_*))
+    def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvaluatedExpressions(value: js.Array[Variable]): Self = this.set("evaluatedExpressions", value.asInstanceOf[js.Any])
+    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
     @scala.inline
-    def deleteEvaluatedExpressions: Self = this.set("evaluatedExpressions", js.undefined)
+    def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
     @scala.inline
-    def setExpressionsVarargs(value: String*): Self = this.set("expressions", js.Array(value :_*))
+    def setFinalTime(value: String): Self = StObject.set(x, "finalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpressions(value: js.Array[String]): Self = this.set("expressions", value.asInstanceOf[js.Any])
+    def setFinalTimeUndefined: Self = StObject.set(x, "finalTime", js.undefined)
     
     @scala.inline
-    def deleteExpressions: Self = this.set("expressions", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalTime(value: String): Self = this.set("finalTime", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFinalTime: Self = this.set("finalTime", js.undefined)
+    def setIsFinalState(value: Boolean): Self = StObject.set(x, "isFinalState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
-    
-    @scala.inline
-    def setIsFinalState(value: Boolean): Self = this.set("isFinalState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFinalState: Self = this.set("isFinalState", js.undefined)
+    def setIsFinalStateUndefined: Self = StObject.set(x, "isFinalState", js.undefined)
     
     @scala.inline
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientClouddebugger.maximMazurokGapiClientClouddebuggerStrings.Breakpoint with TopLevel[js.Any]
-    ): Self = this.set("labels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def setLocation(value: SourceLocation): Self = this.set("location", value.asInstanceOf[js.Any])
+    def setLocation(value: SourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
     @scala.inline
-    def setLogMessageFormat(value: String): Self = this.set("logMessageFormat", value.asInstanceOf[js.Any])
+    def setLogMessageFormat(value: String): Self = StObject.set(x, "logMessageFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogMessageFormat: Self = this.set("logMessageFormat", js.undefined)
+    def setLogMessageFormatUndefined: Self = StObject.set(x, "logMessageFormat", js.undefined)
     
     @scala.inline
-    def setStackFramesVarargs(value: StackFrame*): Self = this.set("stackFrames", js.Array(value :_*))
+    def setStackFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackFrames(value: js.Array[StackFrame]): Self = this.set("stackFrames", value.asInstanceOf[js.Any])
+    def setStackFramesUndefined: Self = StObject.set(x, "stackFrames", js.undefined)
     
     @scala.inline
-    def deleteStackFrames: Self = this.set("stackFrames", js.undefined)
+    def setStackFramesVarargs(value: StackFrame*): Self = StObject.set(x, "stackFrames", js.Array(value :_*))
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def setStatus(value: StatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStatus(value: StatusMessage): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setUserEmail(value: String): Self = this.set("userEmail", value.asInstanceOf[js.Any])
+    def setUserEmail(value: String): Self = StObject.set(x, "userEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserEmail: Self = this.set("userEmail", js.undefined)
+    def setUserEmailUndefined: Self = StObject.set(x, "userEmail", js.undefined)
     
     @scala.inline
-    def setVariableTableVarargs(value: Variable*): Self = this.set("variableTable", js.Array(value :_*))
+    def setVariableTable(value: js.Array[Variable]): Self = StObject.set(x, "variableTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariableTable(value: js.Array[Variable]): Self = this.set("variableTable", value.asInstanceOf[js.Any])
+    def setVariableTableUndefined: Self = StObject.set(x, "variableTable", js.undefined)
     
     @scala.inline
-    def deleteVariableTable: Self = this.set("variableTable", js.undefined)
+    def setVariableTableVarargs(value: Variable*): Self = StObject.set(x, "variableTable", js.Array(value :_*))
   }
 }

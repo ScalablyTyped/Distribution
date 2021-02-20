@@ -2,15 +2,18 @@ package typings.stripe.mod.resources
 
 import typings.stripe.mod.HeaderOptions
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.subscriptions.ISubscription
 import typings.stripe.mod.subscriptions.ISubscriptionCustCreationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.CustomerSubscriptions")
 @js.native
-class CustomerSubscriptions () extends SubscriptionsBase {
+class CustomerSubscriptions protected () extends SubscriptionsBase {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: ISubscriptionCustCreationOptions): js.Promise[ISubscription] = js.native
   /**

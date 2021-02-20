@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeepBothFiles extends js.Object {
+trait KeepBothFiles extends StObject {
   
   var keepBothFiles: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object KeepBothFiles {
   }
   
   @scala.inline
-  implicit class KeepBothFilesOps[Self <: KeepBothFiles] (val x: Self) extends AnyVal {
+  implicit class KeepBothFilesMutableBuilder[Self <: KeepBothFiles] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKeepBothFiles(value: scala.Double): Self = StObject.set(x, "keepBothFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKeepSourcePath(value: scala.Double): Self = StObject.set(x, "keepSourcePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeepTargetPath(value: scala.Double): Self = StObject.set(x, "keepTargetPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepBothFiles(value: scala.Double): Self = this.set("keepBothFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeepSourcePath(value: scala.Double): Self = this.set("keepSourcePath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeepTargetPath(value: scala.Double): Self = this.set("keepTargetPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndecided(value: scala.Double): Self = this.set("undecided", value.asInstanceOf[js.Any])
+    def setUndecided(value: scala.Double): Self = StObject.set(x, "undecided", value.asInstanceOf[js.Any])
   }
 }

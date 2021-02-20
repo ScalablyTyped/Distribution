@@ -3,14 +3,14 @@ package typings.reactSpringShared
 import org.scalablytyped.runtime.TopLevel
 import typings.allocTypes.mod.Omit
 import typings.allocTypes.mod.Remap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-spring/shared/cjs/types.util", JSImport.Namespace)
-@js.native
-object typesUtilMod extends js.Object {
+object typesUtilMod {
   
+  @JSImport("@react-spring/shared/cjs/types.util", "Any")
   @js.native
   class Any ()
     extends typings.allocTypes.mod.Any

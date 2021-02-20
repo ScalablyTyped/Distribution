@@ -1,11 +1,12 @@
 package typings.playable.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ORIGINSCOPED extends js.Object {
+trait ORIGINSCOPED extends StObject {
   
   var ORIGIN_SCOPED: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object ORIGINSCOPED {
   }
   
   @scala.inline
-  implicit class ORIGINSCOPEDOps[Self <: ORIGINSCOPED] (val x: Self) extends AnyVal {
+  implicit class ORIGINSCOPEDMutableBuilder[Self <: ORIGINSCOPED] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setORIGIN_SCOPED(value: Boolean): Self = this.set("ORIGIN_SCOPED", value.asInstanceOf[js.Any])
+    def setORIGIN_SCOPED(value: Boolean): Self = StObject.set(x, "ORIGIN_SCOPED", value.asInstanceOf[js.Any])
   }
 }

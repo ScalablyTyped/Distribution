@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.ModelMatrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PointPrimitiveCollection")
 @js.native
-class PointPrimitiveCollection () extends js.Object {
+class PointPrimitiveCollection () extends StObject {
   def this(options: ModelMatrix) = this()
   
   def add(): PointPrimitive = js.native

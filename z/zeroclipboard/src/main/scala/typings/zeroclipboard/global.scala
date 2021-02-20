@@ -1,18 +1,18 @@
 package typings.zeroclipboard
 
-import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.zeroclipboard.ZC.List
 import typings.zeroclipboard.ZC.ZeroClipboardClient
 import typings.zeroclipboard.ZC.ZeroClipboardStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("ZeroClipboard")
   @js.native
   class ZeroClipboard () extends ZeroClipboardClient {
     def this(elements: Element) = this()
@@ -22,6 +22,9 @@ object global extends js.Object {
     * [ZeroClipboard description]
     * @type {ZC.ZeroClipboardStatic}
     */
+  @JSGlobal("ZeroClipboard")
   @js.native
-  object ZeroClipboard extends TopLevel[ZeroClipboardStatic]
+  def ZeroClipboard: ZeroClipboardStatic = js.native
+  @scala.inline
+  def ZeroClipboard_=(x: ZeroClipboardStatic): Unit = js.Dynamic.global.updateDynamic("ZeroClipboard")(x.asInstanceOf[js.Any])
 }

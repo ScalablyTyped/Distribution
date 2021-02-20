@@ -1,12 +1,13 @@
 package typings.googleapis.anon
 
 import typings.googleapis.v5Mod.pagespeedonlineV5.SchemaLighthouseCategoryV5
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Accessibility extends js.Object {
+trait Accessibility extends StObject {
   
   var accessibility: js.UndefOr[SchemaLighthouseCategoryV5] = js.native
   
@@ -27,48 +28,36 @@ object Accessibility {
   }
   
   @scala.inline
-  implicit class AccessibilityOps[Self <: Accessibility] (val x: Self) extends AnyVal {
+  implicit class AccessibilityMutableBuilder[Self <: Accessibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibility(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setBest-practices`(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "best-practices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibility(value: SchemaLighthouseCategoryV5): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    def `setBest-practicesUndefined`: Self = StObject.set(x, "best-practices", js.undefined)
     
     @scala.inline
-    def deleteAccessibility: Self = this.set("accessibility", js.undefined)
+    def setPerformance(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setBest-practices`(value: SchemaLighthouseCategoryV5): Self = this.set("best-practices", value.asInstanceOf[js.Any])
+    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
     @scala.inline
-    def `deleteBest-practices`: Self = this.set("best-practices", js.undefined)
+    def setPwa(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "pwa", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerformance(value: SchemaLighthouseCategoryV5): Self = this.set("performance", value.asInstanceOf[js.Any])
+    def setPwaUndefined: Self = StObject.set(x, "pwa", js.undefined)
     
     @scala.inline
-    def deletePerformance: Self = this.set("performance", js.undefined)
+    def setSeo(value: SchemaLighthouseCategoryV5): Self = StObject.set(x, "seo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPwa(value: SchemaLighthouseCategoryV5): Self = this.set("pwa", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePwa: Self = this.set("pwa", js.undefined)
-    
-    @scala.inline
-    def setSeo(value: SchemaLighthouseCategoryV5): Self = this.set("seo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeo: Self = this.set("seo", js.undefined)
+    def setSeoUndefined: Self = StObject.set(x, "seo", js.undefined)
   }
 }

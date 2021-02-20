@@ -1,12 +1,19 @@
 package typings.reactFns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-fns/dist/utils/featureDetection", JSImport.Namespace)
-@js.native
-object featureDetectionMod extends js.Object {
+object featureDetectionMod {
   
-  var supportsPassiveListener: Boolean = js.native
+  @JSImport("react-fns/dist/utils/featureDetection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-fns/dist/utils/featureDetection", "supportsPassiveListener")
+  @js.native
+  def supportsPassiveListener: Boolean = js.native
+  @scala.inline
+  def supportsPassiveListener_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportsPassiveListener")(x.asInstanceOf[js.Any])
 }

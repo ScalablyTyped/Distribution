@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1ImportDataRequest extends js.Object {
+trait GoogleCloudDatalabelingV1beta1ImportDataRequest extends StObject {
   
   /** Required. Specify the input source of the data. */
   var inputConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1InputConfig] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDatalabelingV1beta1ImportDataRequest {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ImportDataRequestOps[Self <: GoogleCloudDatalabelingV1beta1ImportDataRequest] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1ImportDataRequestMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImportDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputConfig(value: GoogleCloudDatalabelingV1beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserEmailAddress(value: String): Self = StObject.set(x, "userEmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputConfig(value: GoogleCloudDatalabelingV1beta1InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
-    
-    @scala.inline
-    def setUserEmailAddress(value: String): Self = this.set("userEmailAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserEmailAddress: Self = this.set("userEmailAddress", js.undefined)
+    def setUserEmailAddressUndefined: Self = StObject.set(x, "userEmailAddress", js.undefined)
   }
 }

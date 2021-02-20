@@ -1,14 +1,16 @@
 package typings.videoJs.videoCoreNovttMod.default
 
+import typings.videoJs.mod.videojs.ClickableComponent
 import typings.videoJs.mod.videojs.ComponentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js/dist/alt/video.core.novtt", "ClickableComponent")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js/dist/alt/video.core.novtt", "default.ClickableComponent")
 @js.native
-class ClickableComponentCls protected ()
-  extends typings.videoJs.mod.videojs.ClickableComponent {
+class ClickableComponentCls protected () extends ClickableComponent {
   /**
     * Creates an instance of this class.
     *

@@ -1,12 +1,13 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "EventEmitter")
 @js.native
-class EventEmitter[T] () extends js.Object {
+class EventEmitter[T] () extends StObject {
   
   /**
     * Dispose this object and free resources.

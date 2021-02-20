@@ -51,131 +51,24 @@ import typings.jupyterlabServices.jupyterlabServicesStrings.stdin
 import typings.jupyterlabServices.jupyterlabServicesStrings.stream
 import typings.jupyterlabServices.jupyterlabServicesStrings.update_display_data
 import typings.luminoCoreutils.jsonMod.JSONObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _Message extends js.Object
+trait _Message extends StObject
 object _Message {
   
   @scala.inline
-  def IExecuteInputMsg(
+  def IClearOutputMsg(
     channel: iopub,
-    content: Executioncount,
-    header: IHeader[execute_input],
+    content: Wait,
+    header: IHeader[clear_output],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.IClearOutputMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IInspectReplyMsg(
-    channel: shell,
-    content: ReplyContent[IInspectReply],
-    header: IHeader[inspect_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[inspect_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def ICompleteRequestMsg(
-    channel: shell,
-    content: Code,
-    header: IHeader[complete_request],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IExecuteReplyMsg(
-    channel: shell,
-    content: ReplyContent[IExecuteReply] with IExecuteCount,
-    header: IHeader[execute_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[execute_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IDebugEventMsg(
-    channel: iopub,
-    content: Event,
-    header: IHeader[debug_event],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IHistoryReplyMsg(
-    channel: shell,
-    content: ReplyContent[IHistoryReply],
-    header: IHeader[history_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[history_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IErrorMsg(
-    channel: iopub,
-    content: Ename,
-    header: IHeader[error],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IInputReplyMsg(
-    channel: stdin,
-    content: ReplyContent[IInputReply],
-    header: IHeader[input_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[input_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IDebugRequestMsg(
-    channel: control,
-    content: Arguments,
-    header: IHeader[debug_request],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IExecuteRequestMsg(
-    channel: shell,
-    content: Allowstdin,
-    header: IHeader[execute_request],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IClearOutputMsg]
   }
   
   @scala.inline
@@ -185,33 +78,9 @@ object _Message {
     header: IHeader[comm_info_reply],
     metadata: JSONObject,
     parent_header: IHeader[comm_info_request]
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.ICommInfoReplyMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IInfoReplyMsg(
-    channel: shell,
-    content: ReplyContent[IInfoReply],
-    header: IHeader[kernel_info_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[kernel_info_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IDisplayDataMsg(
-    channel: iopub,
-    content: Metadata,
-    header: IHeader[display_data],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.ICommInfoReplyMsg]
   }
   
   @scala.inline
@@ -221,45 +90,177 @@ object _Message {
     header: IHeader[comm_info_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.ICommInfoRequestMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.ICommInfoRequestMsg]
   }
   
   @scala.inline
-  def IClearOutputMsg(
-    channel: iopub,
-    content: Wait,
-    header: IHeader[clear_output],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IStatusMsg(
-    channel: iopub,
-    content: Executionstate,
-    header: IHeader[status],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IInspectRequestMsg(
+  def ICompleteReplyMsg(
     channel: shell,
-    content: Cursorpos,
-    header: IHeader[inspect_request],
+    content: ReplyContent[ICompleteReply],
+    header: IHeader[complete_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[complete_request]
+  ): typings.jupyterlabServices.messagesMod.ICompleteReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.ICompleteReplyMsg]
+  }
+  
+  @scala.inline
+  def ICompleteRequestMsg(
+    channel: shell,
+    content: Code,
+    header: IHeader[complete_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.ICompleteRequestMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.ICompleteRequestMsg]
+  }
+  
+  @scala.inline
+  def IDebugEventMsg(
+    channel: iopub,
+    content: Event,
+    header: IHeader[debug_event],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IDebugEventMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IDebugEventMsg]
+  }
+  
+  @scala.inline
+  def IDebugReplyMsg(
+    channel: control,
+    content: Body,
+    header: IHeader[debug_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IDebugReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IDebugReplyMsg]
+  }
+  
+  @scala.inline
+  def IDebugRequestMsg(
+    channel: control,
+    content: Arguments,
+    header: IHeader[debug_request],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IDebugRequestMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IDebugRequestMsg]
+  }
+  
+  @scala.inline
+  def IDisplayDataMsg(
+    channel: iopub,
+    content: Metadata,
+    header: IHeader[display_data],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IDisplayDataMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IDisplayDataMsg]
+  }
+  
+  @scala.inline
+  def IErrorMsg(
+    channel: iopub,
+    content: Ename,
+    header: IHeader[error],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IErrorMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IErrorMsg]
+  }
+  
+  @scala.inline
+  def IExecuteInputMsg(
+    channel: iopub,
+    content: Executioncount,
+    header: IHeader[execute_input],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IExecuteInputMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IExecuteInputMsg]
+  }
+  
+  @scala.inline
+  def IExecuteReplyMsg(
+    channel: shell,
+    content: ReplyContent[IExecuteReply] with IExecuteCount,
+    header: IHeader[execute_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[execute_request]
+  ): typings.jupyterlabServices.messagesMod.IExecuteReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IExecuteReplyMsg]
+  }
+  
+  @scala.inline
+  def IExecuteRequestMsg(
+    channel: shell,
+    content: Allowstdin,
+    header: IHeader[execute_request],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IExecuteRequestMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IExecuteRequestMsg]
+  }
+  
+  @scala.inline
+  def IExecuteResultMsg(
+    channel: iopub,
+    content: Transient,
+    header: IHeader[execute_result],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IExecuteResultMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IExecuteResultMsg]
+  }
+  
+  @scala.inline
+  def IHistoryReplyMsg(
+    channel: shell,
+    content: ReplyContent[IHistoryReply],
+    header: IHeader[history_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[history_request]
+  ): typings.jupyterlabServices.messagesMod.IHistoryReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IHistoryReplyMsg]
+  }
+  
+  @scala.inline
+  def IHistoryRequestMsg(
+    channel: shell,
+    content: IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail,
+    header: IHeader[history_request],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IHistoryRequestMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IHistoryRequestMsg]
+  }
+  
+  @scala.inline
+  def IInfoReplyMsg(
+    channel: shell,
+    content: ReplyContent[IInfoReply],
+    header: IHeader[kernel_info_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[kernel_info_request]
+  ): typings.jupyterlabServices.messagesMod.IInfoReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IInfoReplyMsg]
   }
   
   @scala.inline
@@ -271,81 +272,21 @@ object _Message {
     header: IHeader[kernel_info_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.IInfoRequestMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IInfoRequestMsg]
   }
   
   @scala.inline
-  def IIsCompleteRequestMsg(
-    channel: shell,
-    content: CodeString,
-    header: IHeader[is_complete_request],
+  def IInputReplyMsg(
+    channel: stdin,
+    content: ReplyContent[IInputReply],
+    header: IHeader[input_reply],
     metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+    parent_header: IHeader[input_request]
+  ): typings.jupyterlabServices.messagesMod.IInputReplyMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IIsCompleteReplyMsg(
-    channel: shell,
-    content: ReplyContent[IIsCompleteReplyIncomplete | IIsCompleteReplyOther],
-    header: IHeader[is_complete_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[is_complete_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def ICompleteReplyMsg(
-    channel: shell,
-    content: ReplyContent[ICompleteReply],
-    header: IHeader[complete_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[complete_request]
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IUpdateDisplayDataMsg(
-    channel: iopub,
-    content: Metadata with TransientDisplayidString,
-    header: IHeader[update_display_data],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IExecuteResultMsg(
-    channel: iopub,
-    content: Transient,
-    header: IHeader[execute_result],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
-  }
-  
-  @scala.inline
-  def IDebugReplyMsg(
-    channel: control,
-    content: Body,
-    header: IHeader[debug_reply],
-    metadata: JSONObject,
-    parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IInputReplyMsg]
   }
   
   @scala.inline
@@ -355,21 +296,69 @@ object _Message {
     header: IHeader[input_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.IInputRequestMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IInputRequestMsg]
   }
   
   @scala.inline
-  def IHistoryRequestMsg(
+  def IInspectReplyMsg(
     channel: shell,
-    content: IHistoryRequestRange | IHistoryRequestSearch | IHistoryRequestTail,
-    header: IHeader[history_request],
+    content: ReplyContent[IInspectReply],
+    header: IHeader[inspect_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[inspect_request]
+  ): typings.jupyterlabServices.messagesMod.IInspectReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IInspectReplyMsg]
+  }
+  
+  @scala.inline
+  def IInspectRequestMsg(
+    channel: shell,
+    content: Cursorpos,
+    header: IHeader[inspect_request],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.IInspectRequestMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IInspectRequestMsg]
+  }
+  
+  @scala.inline
+  def IIsCompleteReplyMsg(
+    channel: shell,
+    content: ReplyContent[IIsCompleteReplyIncomplete | IIsCompleteReplyOther],
+    header: IHeader[is_complete_reply],
+    metadata: JSONObject,
+    parent_header: IHeader[is_complete_request]
+  ): typings.jupyterlabServices.messagesMod.IIsCompleteReplyMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IIsCompleteReplyMsg]
+  }
+  
+  @scala.inline
+  def IIsCompleteRequestMsg(
+    channel: shell,
+    content: CodeString,
+    header: IHeader[is_complete_request],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IIsCompleteRequestMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IIsCompleteRequestMsg]
+  }
+  
+  @scala.inline
+  def IStatusMsg(
+    channel: iopub,
+    content: Executionstate,
+    header: IHeader[status],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IStatusMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IStatusMsg]
   }
   
   @scala.inline
@@ -379,8 +368,20 @@ object _Message {
     header: IHeader[stream],
     metadata: JSONObject,
     parent_header: IHeader[MessageType] | js.Object
-  ): _Message = {
+  ): typings.jupyterlabServices.messagesMod.IStreamMsg = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Message]
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IStreamMsg]
+  }
+  
+  @scala.inline
+  def IUpdateDisplayDataMsg(
+    channel: iopub,
+    content: Metadata with TransientDisplayidString,
+    header: IHeader[update_display_data],
+    metadata: JSONObject,
+    parent_header: IHeader[MessageType] | js.Object
+  ): typings.jupyterlabServices.messagesMod.IUpdateDisplayDataMsg = {
+    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.jupyterlabServices.messagesMod.IUpdateDisplayDataMsg]
   }
 }

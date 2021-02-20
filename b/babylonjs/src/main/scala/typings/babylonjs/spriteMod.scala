@@ -9,14 +9,14 @@ import typings.babylonjs.spriteManagerMod.ISpriteManager
 import typings.babylonjs.spriteManagerMod.SpriteManager
 import typings.babylonjs.thinSpriteMod.ThinSprite
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Sprites/sprite", JSImport.Namespace)
-@js.native
-object spriteMod extends js.Object {
+object spriteMod {
   
+  @JSImport("babylonjs/Sprites/sprite", "Sprite")
   @js.native
   class Sprite protected ()
     extends ThinSprite
@@ -115,8 +115,7 @@ object spriteMod extends js.Object {
     var useAlphaForPicking: Boolean = js.native
   }
   /* static members */
-  @js.native
-  object Sprite extends js.Object {
+  object Sprite {
     
     /**
       * Parses a JSON object to create a new sprite
@@ -124,6 +123,8 @@ object spriteMod extends js.Object {
       * @param manager defines the hosting manager
       * @returns the new sprite
       */
+    @JSImport("babylonjs/Sprites/sprite", "Sprite.Parse")
+    @js.native
     def Parse(parsedSprite: js.Any, manager: SpriteManager): Sprite = js.native
   }
 }

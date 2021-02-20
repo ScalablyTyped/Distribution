@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TextMacro...
   */
 @js.native
-trait ITextMacro extends js.Object {
+trait ITextMacro extends StObject {
   
   /**
     * Variable value.
@@ -58,36 +59,24 @@ object ITextMacro {
   }
   
   @scala.inline
-  implicit class ITextMacroOps[Self <: ITextMacro] (val x: Self) extends AnyVal {
+  implicit class ITextMacroMutableBuilder[Self <: ITextMacro] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDisplayString(value: String): Self = StObject.set(x, "qDisplayString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQIsReserved(value: Boolean): Self = StObject.set(x, "qIsReserved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQIsSystem(value: Boolean): Self = StObject.set(x, "qIsSystem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDisplayString(value: String): Self = this.set("qDisplayString", value.asInstanceOf[js.Any])
+    def setQRefSeqNo(value: Double): Self = StObject.set(x, "qRefSeqNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsReserved(value: Boolean): Self = this.set("qIsReserved", value.asInstanceOf[js.Any])
+    def setQSetSeqNo(value: Double): Self = StObject.set(x, "qSetSeqNo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQIsSystem(value: Boolean): Self = this.set("qIsSystem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQRefSeqNo(value: Double): Self = this.set("qRefSeqNo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQSetSeqNo(value: Double): Self = this.set("qSetSeqNo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTag(value: String): Self = this.set("qTag", value.asInstanceOf[js.Any])
+    def setQTag(value: String): Self = StObject.set(x, "qTag", value.asInstanceOf[js.Any])
   }
 }

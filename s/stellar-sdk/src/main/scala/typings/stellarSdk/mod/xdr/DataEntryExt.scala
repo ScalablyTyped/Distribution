@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.stellarSdk.stellarSdkStrings.base64
 import typings.stellarSdk.stellarSdkStrings.hex
 import typings.stellarSdk.stellarSdkStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,34 +13,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class DataEntryExt ()
   extends typings.stellarBase.mod.xdr.DataEntryExt
-/* static members */
-@JSImport("stellar-sdk", "xdr.DataEntryExt")
-@js.native
-object DataEntryExt extends js.Object {
+object DataEntryExt {
   
-  def `0`(): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
-  
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.fromXDR")
+  @js.native
   def fromXDR(input: Buffer): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
-  @JSName("fromXDR")
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.fromXDR")
+  @js.native
   def fromXDR_base64(input: String, format: base64): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
-  @JSName("fromXDR")
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.fromXDR")
+  @js.native
   def fromXDR_hex(input: String, format: hex): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
-  @JSName("fromXDR")
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.fromXDR")
+  @js.native
   def fromXDR_raw(input: Buffer, format: raw): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.isValid")
+  @js.native
   def isValid(value: typings.stellarBase.xdrMod.xdr.DataEntryExt): Boolean = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.read")
+  @js.native
   def read(io: Buffer): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.toXDR")
+  @js.native
   def toXDR(value: typings.stellarBase.xdrMod.xdr.DataEntryExt): Buffer = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.validateXDR")
+  @js.native
   def validateXDR(input: Buffer): Boolean = js.native
-  @JSName("validateXDR")
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.validateXDR")
+  @js.native
   def validateXDR_base64(input: String, format: base64): Boolean = js.native
-  @JSName("validateXDR")
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.validateXDR")
+  @js.native
   def validateXDR_hex(input: String, format: hex): Boolean = js.native
-  @JSName("validateXDR")
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.validateXDR")
+  @js.native
   def validateXDR_raw(input: Buffer, format: raw): Boolean = js.native
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.write")
+  @js.native
   def write(value: typings.stellarBase.xdrMod.xdr.DataEntryExt, io: Buffer): Unit = js.native
+  
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.DataEntryExt.0")
+  @js.native
+  def `0`(): typings.stellarBase.xdrMod.xdr.DataEntryExt = js.native
 }

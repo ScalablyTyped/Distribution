@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,66 +60,54 @@ object MedicationAdministrationDosage {
   }
   
   @scala.inline
-  implicit class MedicationAdministrationDosageOps[Self <: MedicationAdministrationDosage] (val x: Self) extends AnyVal {
+  implicit class MedicationAdministrationDosageMutableBuilder[Self <: MedicationAdministrationDosage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDose(value: Quantity): Self = StObject.set(x, "dose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDoseUndefined: Self = StObject.set(x, "dose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_text(value: Element): Self = this.set("_text", value.asInstanceOf[js.Any])
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def delete_text: Self = this.set("_text", js.undefined)
+    def setRateQuantity(value: Quantity): Self = StObject.set(x, "rateQuantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDose(value: Quantity): Self = this.set("dose", value.asInstanceOf[js.Any])
+    def setRateQuantityUndefined: Self = StObject.set(x, "rateQuantity", js.undefined)
     
     @scala.inline
-    def deleteDose: Self = this.set("dose", js.undefined)
+    def setRateRatio(value: Ratio): Self = StObject.set(x, "rateRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: CodeableConcept): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setRateRatioUndefined: Self = StObject.set(x, "rateRatio", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setRoute(value: CodeableConcept): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateQuantity(value: Quantity): Self = this.set("rateQuantity", value.asInstanceOf[js.Any])
+    def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
     @scala.inline
-    def deleteRateQuantity: Self = this.set("rateQuantity", js.undefined)
+    def setSite(value: CodeableConcept): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRateRatio(value: Ratio): Self = this.set("rateRatio", value.asInstanceOf[js.Any])
+    def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     
     @scala.inline
-    def deleteRateRatio: Self = this.set("rateRatio", js.undefined)
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoute(value: CodeableConcept): Self = this.set("route", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteRoute: Self = this.set("route", js.undefined)
+    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSite(value: CodeableConcept): Self = this.set("site", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSite: Self = this.set("site", js.undefined)
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
   }
 }

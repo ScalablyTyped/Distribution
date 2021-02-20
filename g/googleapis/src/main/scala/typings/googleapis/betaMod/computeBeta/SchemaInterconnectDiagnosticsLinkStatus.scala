@@ -1,11 +1,12 @@
 package typings.googleapis.betaMod.computeBeta
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInterconnectDiagnosticsLinkStatus extends js.Object {
+trait SchemaInterconnectDiagnosticsLinkStatus extends StObject {
   
   /**
     * A list of InterconnectDiagnostics.ARPEntry objects, describing the ARP
@@ -47,57 +48,45 @@ object SchemaInterconnectDiagnosticsLinkStatus {
   }
   
   @scala.inline
-  implicit class SchemaInterconnectDiagnosticsLinkStatusOps[Self <: SchemaInterconnectDiagnosticsLinkStatus] (val x: Self) extends AnyVal {
+  implicit class SchemaInterconnectDiagnosticsLinkStatusMutableBuilder[Self <: SchemaInterconnectDiagnosticsLinkStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
     
     @scala.inline
-    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = this.set("arpCaches", js.Array(value :_*))
+    def setCircuitId(value: String): Self = StObject.set(x, "circuitId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = this.set("arpCaches", value.asInstanceOf[js.Any])
+    def setCircuitIdUndefined: Self = StObject.set(x, "circuitId", js.undefined)
     
     @scala.inline
-    def deleteArpCaches: Self = this.set("arpCaches", js.undefined)
+    def setGoogleDemarc(value: String): Self = StObject.set(x, "googleDemarc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircuitId(value: String): Self = this.set("circuitId", value.asInstanceOf[js.Any])
+    def setGoogleDemarcUndefined: Self = StObject.set(x, "googleDemarc", js.undefined)
     
     @scala.inline
-    def deleteCircuitId: Self = this.set("circuitId", js.undefined)
+    def setLacpStatus(value: SchemaInterconnectDiagnosticsLinkLACPStatus): Self = StObject.set(x, "lacpStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleDemarc(value: String): Self = this.set("googleDemarc", value.asInstanceOf[js.Any])
+    def setLacpStatusUndefined: Self = StObject.set(x, "lacpStatus", js.undefined)
     
     @scala.inline
-    def deleteGoogleDemarc: Self = this.set("googleDemarc", js.undefined)
+    def setReceivingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "receivingOpticalPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLacpStatus(value: SchemaInterconnectDiagnosticsLinkLACPStatus): Self = this.set("lacpStatus", value.asInstanceOf[js.Any])
+    def setReceivingOpticalPowerUndefined: Self = StObject.set(x, "receivingOpticalPower", js.undefined)
     
     @scala.inline
-    def deleteLacpStatus: Self = this.set("lacpStatus", js.undefined)
+    def setTransmittingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "transmittingOpticalPower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceivingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = this.set("receivingOpticalPower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReceivingOpticalPower: Self = this.set("receivingOpticalPower", js.undefined)
-    
-    @scala.inline
-    def setTransmittingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = this.set("transmittingOpticalPower", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransmittingOpticalPower: Self = this.set("transmittingOpticalPower", js.undefined)
+    def setTransmittingOpticalPowerUndefined: Self = StObject.set(x, "transmittingOpticalPower", js.undefined)
   }
 }

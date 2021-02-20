@@ -1,15 +1,15 @@
 package typings.typedUndo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typed-undo/dist/UndoableEdit", JSImport.Namespace)
-@js.native
-object undoableEditMod extends js.Object {
+object undoableEditMod {
   
+  @JSImport("typed-undo/dist/UndoableEdit", "UndoableEdit")
   @js.native
-  abstract class UndoableEdit () extends js.Object {
+  abstract class UndoableEdit () extends StObject {
     
     /**
       * A significant edit is worthy to be saved and to be displayed to the user as undoable.

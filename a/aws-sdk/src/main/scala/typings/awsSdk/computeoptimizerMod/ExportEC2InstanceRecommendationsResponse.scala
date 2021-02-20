@@ -1,11 +1,12 @@
 package typings.awsSdk.computeoptimizerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportEC2InstanceRecommendationsResponse extends js.Object {
+trait ExportEC2InstanceRecommendationsResponse extends StObject {
   
   /**
     * The identification number of the export job. Use the DescribeRecommendationExportJobs action, and specify the job ID to view the status of an export job.
@@ -26,30 +27,18 @@ object ExportEC2InstanceRecommendationsResponse {
   }
   
   @scala.inline
-  implicit class ExportEC2InstanceRecommendationsResponseOps[Self <: ExportEC2InstanceRecommendationsResponse] (val x: Self) extends AnyVal {
+  implicit class ExportEC2InstanceRecommendationsResponseMutableBuilder[Self <: ExportEC2InstanceRecommendationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Destination(value: S3Destination): Self = StObject.set(x, "s3Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobId: Self = this.set("jobId", js.undefined)
-    
-    @scala.inline
-    def setS3Destination(value: S3Destination): Self = this.set("s3Destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3Destination: Self = this.set("s3Destination", js.undefined)
+    def setS3DestinationUndefined: Self = StObject.set(x, "s3Destination", js.undefined)
   }
 }

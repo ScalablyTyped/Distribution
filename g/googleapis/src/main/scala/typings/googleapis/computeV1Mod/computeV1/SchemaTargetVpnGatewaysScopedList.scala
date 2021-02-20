@@ -1,12 +1,13 @@
 package typings.googleapis.computeV1Mod.computeV1
 
 import typings.googleapis.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTargetVpnGatewaysScopedList extends js.Object {
+trait SchemaTargetVpnGatewaysScopedList extends StObject {
   
   /**
     * [Output Only] A list of target VPN gateways contained in this scope.
@@ -28,33 +29,21 @@ object SchemaTargetVpnGatewaysScopedList {
   }
   
   @scala.inline
-  implicit class SchemaTargetVpnGatewaysScopedListOps[Self <: SchemaTargetVpnGatewaysScopedList] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetVpnGatewaysScopedListMutableBuilder[Self <: SchemaTargetVpnGatewaysScopedList] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTargetVpnGateways(value: js.Array[SchemaTargetVpnGateway]): Self = StObject.set(x, "targetVpnGateways", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTargetVpnGatewaysUndefined: Self = StObject.set(x, "targetVpnGateways", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTargetVpnGatewaysVarargs(value: SchemaTargetVpnGateway*): Self = StObject.set(x, "targetVpnGateways", js.Array(value :_*))
     
     @scala.inline
-    def setTargetVpnGatewaysVarargs(value: SchemaTargetVpnGateway*): Self = this.set("targetVpnGateways", js.Array(value :_*))
+    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetVpnGateways(value: js.Array[SchemaTargetVpnGateway]): Self = this.set("targetVpnGateways", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVpnGateways: Self = this.set("targetVpnGateways", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

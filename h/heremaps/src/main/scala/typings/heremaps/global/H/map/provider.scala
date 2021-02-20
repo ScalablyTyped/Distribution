@@ -2,18 +2,18 @@ package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.provider.ImageTileProvider.Options
 import typings.heremaps.H.map.provider.Invalidations.Mark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("H.map.provider")
-@js.native
-object provider extends js.Object {
+object provider {
   
   /**
     * An ImageTileProvider uses network service to provide bitmap images as tiles.
     * @property tileSize {number} - Size of a tile image supported by the provider
     */
+  @JSGlobal("H.map.provider.ImageTileProvider")
   @js.native
   class ImageTileProvider protected ()
     extends typings.heremaps.H.map.provider.ImageTileProvider {
@@ -28,20 +28,22 @@ object provider extends js.Object {
     * This class represents invalidation states of a renderable object. A renderer can optimize its rendering strategies based on the information in this object.
     * @property MARK_INITIAL {H.map.provider.Invalidations.Mark} - This constant represents the initial invalidation mark an invalidations object has.
     */
+  @JSGlobal("H.map.provider.Invalidations")
   @js.native
   class Invalidations ()
     extends typings.heremaps.H.map.provider.Invalidations
-  /* static members */
-  @js.native
-  object Invalidations extends js.Object {
+  object Invalidations {
     
-    var MARK_INITIAL: Mark = js.native
+    @JSGlobal("H.map.provider.Invalidations")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * This enumeration encapsulates bit flags for different invalidations of map objects.
       */
+    @JSGlobal("H.map.provider.Invalidations.Flag")
     @js.native
-    object Flag extends js.Object {
+    object Flag extends StObject {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[typings.heremaps.H.map.provider.Invalidations.Flag with Double] = js.native
@@ -58,6 +60,13 @@ object provider extends js.Object {
       
       /* 5 */ val Z_ORDER: typings.heremaps.H.map.provider.Invalidations.Flag.Z_ORDER with Double = js.native
     }
+    
+    /* static member */
+    @JSGlobal("H.map.provider.Invalidations.MARK_INITIAL")
+    @js.native
+    def MARK_INITIAL: Mark = js.native
+    @scala.inline
+    def MARK_INITIAL_=(x: Mark): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARK_INITIAL")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -70,6 +79,7 @@ object provider extends js.Object {
     * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
     * @property uid {string} - Provider instance unique identifier, generated at construction time
     */
+  @JSGlobal("H.map.provider.MarkerTileProvider")
   @js.native
   class MarkerTileProvider protected ()
     extends typings.heremaps.H.map.provider.MarkerTileProvider {
@@ -83,6 +93,7 @@ object provider extends js.Object {
   /**
     * An abstract class to manage and provide map objects (Marker, Polyline, Polygon)
     */
+  @JSGlobal("H.map.provider.ObjectProvider")
   @js.native
   /**
     * Constructor
@@ -101,6 +112,7 @@ object provider extends js.Object {
     * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
     * @property uid {string} - Provider instance unique identifier, generated at construction time
     */
+  @JSGlobal("H.map.provider.Provider")
   @js.native
   /**
     * Constructor
@@ -115,6 +127,7 @@ object provider extends js.Object {
     * RemoteTileProvider is an abstract class which should be used by classes implementing data provision on a tile basis. Every child class needs to implement 'requestInternal'
     * (to request remote tile) and 'getCache' (to provide configured cache object were tiled data is being cached)
     */
+  @JSGlobal("H.map.provider.RemoteTileProvider")
   @js.native
   class RemoteTileProvider protected ()
     extends typings.heremaps.H.map.provider.RemoteTileProvider {
@@ -135,6 +148,7 @@ object provider extends js.Object {
     * @property y {number} - Tile row
     * @property z {number} - Tile zoom level
     */
+  @JSGlobal("H.map.provider.Tile")
   @js.native
   class Tile protected ()
     extends typings.heremaps.H.map.provider.Tile {
@@ -159,6 +173,7 @@ object provider extends js.Object {
     * @property max {number} - Maximum zoom level at which provider can server data, set at construction time
     * @property uid {string} - Provider instance unique identifier, generated at construction time
     */
+  @JSGlobal("H.map.provider.TileProvider")
   @js.native
   class TileProvider protected ()
     extends typings.heremaps.H.map.provider.TileProvider {

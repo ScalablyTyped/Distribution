@@ -1,16 +1,26 @@
 package typings.plottable
 
 import typings.plottable.labelMod.Label
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/components/wrappedLabel", JSImport.Namespace)
-@js.native
-object wrappedLabelMod extends js.Object {
+object wrappedLabelMod {
   
+  @JSImport("plottable/build/src/components/wrappedLabel", "WrappedLabel")
   @js.native
+  /**
+    * A Label is a Component that displays a single line of text.
+    *
+    * @constructor
+    * @param {string} [displayText=""] The text of the Label.
+    * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
+    */
   class WrappedLabel () extends Label {
+    def this(displayText: String) = this()
+    def this(displayText: js.UndefOr[scala.Nothing], angle: Double) = this()
+    def this(displayText: String, angle: Double) = this()
     
     var _maxLines: Double = js.native
     

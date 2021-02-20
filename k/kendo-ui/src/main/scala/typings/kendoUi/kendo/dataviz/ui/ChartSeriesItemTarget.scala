@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartSeriesItemTarget extends js.Object {
+trait ChartSeriesItemTarget extends StObject {
   
   var border: js.UndefOr[js.Function | ChartSeriesItemTargetBorder] = js.native
   
@@ -22,36 +23,24 @@ object ChartSeriesItemTarget {
   }
   
   @scala.inline
-  implicit class ChartSeriesItemTargetOps[Self <: ChartSeriesItemTarget] (val x: Self) extends AnyVal {
+  implicit class ChartSeriesItemTargetMutableBuilder[Self <: ChartSeriesItemTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: js.Function | ChartSeriesItemTargetBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: js.Function | ChartSeriesItemTargetBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setLine(value: ChartSeriesItemTargetLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String | js.Function): Self = this.set("color", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
-    
-    @scala.inline
-    def setLine(value: ChartSeriesItemTargetLine): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

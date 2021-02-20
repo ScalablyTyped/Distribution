@@ -1,5 +1,6 @@
 package typings.googleapis.peopleV1Mod.peopleV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A person&#39;s read-only membership in a group.
   */
 @js.native
-trait SchemaMembership extends js.Object {
+trait SchemaMembership extends StObject {
   
   /**
     * The contact group membership.
@@ -34,36 +35,24 @@ object SchemaMembership {
   }
   
   @scala.inline
-  implicit class SchemaMembershipOps[Self <: SchemaMembership] (val x: Self) extends AnyVal {
+  implicit class SchemaMembershipMutableBuilder[Self <: SchemaMembership] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContactGroupMembership(value: SchemaContactGroupMembership): Self = StObject.set(x, "contactGroupMembership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContactGroupMembershipUndefined: Self = StObject.set(x, "contactGroupMembership", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainMembership(value: SchemaDomainMembership): Self = StObject.set(x, "domainMembership", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContactGroupMembership(value: SchemaContactGroupMembership): Self = this.set("contactGroupMembership", value.asInstanceOf[js.Any])
+    def setDomainMembershipUndefined: Self = StObject.set(x, "domainMembership", js.undefined)
     
     @scala.inline
-    def deleteContactGroupMembership: Self = this.set("contactGroupMembership", js.undefined)
+    def setMetadata(value: SchemaFieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainMembership(value: SchemaDomainMembership): Self = this.set("domainMembership", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDomainMembership: Self = this.set("domainMembership", js.undefined)
-    
-    @scala.inline
-    def setMetadata(value: SchemaFieldMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

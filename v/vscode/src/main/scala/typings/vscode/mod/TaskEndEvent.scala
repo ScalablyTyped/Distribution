@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is not intended to be implemented.
   */
 @js.native
-trait TaskEndEvent extends js.Object {
+trait TaskEndEvent extends StObject {
   
   /**
     * The task item representing the task that finished.
@@ -26,21 +27,9 @@ object TaskEndEvent {
   }
   
   @scala.inline
-  implicit class TaskEndEventOps[Self <: TaskEndEvent] (val x: Self) extends AnyVal {
+  implicit class TaskEndEventMutableBuilder[Self <: TaskEndEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExecution(value: TaskExecution): Self = this.set("execution", value.asInstanceOf[js.Any])
+    def setExecution(value: TaskExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.kendo.data.HierarchicalDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeViewOptions extends js.Object {
+trait TreeViewOptions extends StObject {
   
   var animation: js.UndefOr[Boolean | TreeViewAnimation] = js.native
   
@@ -67,168 +68,156 @@ object TreeViewOptions {
   }
   
   @scala.inline
-  implicit class TreeViewOptionsOps[Self <: TreeViewOptions] (val x: Self) extends AnyVal {
+  implicit class TreeViewOptionsMutableBuilder[Self <: TreeViewOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Boolean | TreeViewAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: Boolean | TreeViewAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
     
     @scala.inline
-    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    def setChange(value: /* e */ TreeViewEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoScroll(value: Boolean): Self = this.set("autoScroll", value.asInstanceOf[js.Any])
+    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def deleteAutoScroll: Self = this.set("autoScroll", js.undefined)
+    def setCheck(value: /* e */ TreeViewCheckEvent => Unit): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChange(value: /* e */ TreeViewEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
     @scala.inline
-    def deleteChange: Self = this.set("change", js.undefined)
+    def setCheckboxes(value: Boolean | TreeViewCheckboxes): Self = StObject.set(x, "checkboxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheck(value: /* e */ TreeViewCheckEvent => Unit): Self = this.set("check", js.Any.fromFunction1(value))
+    def setCheckboxesUndefined: Self = StObject.set(x, "checkboxes", js.undefined)
     
     @scala.inline
-    def deleteCheck: Self = this.set("check", js.undefined)
+    def setCollapse(value: /* e */ TreeViewCollapseEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckboxes(value: Boolean | TreeViewCheckboxes): Self = this.set("checkboxes", value.asInstanceOf[js.Any])
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def deleteCheckboxes: Self = this.set("checkboxes", js.undefined)
+    def setDataBound(value: /* e */ TreeViewDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapse(value: /* e */ TreeViewCollapseEvent => Unit): Self = this.set("collapse", js.Any.fromFunction1(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ TreeViewDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataImageUrlField(value: String): Self = this.set("dataImageUrlField", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataImageUrlField: Self = this.set("dataImageUrlField", js.undefined)
+    def setDataSpriteCssClassField(value: String): Self = StObject.set(x, "dataSpriteCssClassField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any | HierarchicalDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDataTextField(value: String | js.Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSpriteCssClassField(value: String): Self = this.set("dataSpriteCssClassField", value.asInstanceOf[js.Any])
+    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
     @scala.inline
-    def deleteDataSpriteCssClassField: Self = this.set("dataSpriteCssClassField", js.undefined)
+    def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataTextField(value: String | js.Any): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
     
     @scala.inline
-    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    def setDrag(value: /* e */ TreeViewDragEvent => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataUrlField(value: String): Self = this.set("dataUrlField", value.asInstanceOf[js.Any])
+    def setDragAndDrop(value: Boolean): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataUrlField: Self = this.set("dataUrlField", js.undefined)
+    def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
     
     @scala.inline
-    def setDrag(value: /* e */ TreeViewDragEvent => Unit): Self = this.set("drag", js.Any.fromFunction1(value))
+    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
     @scala.inline
-    def deleteDrag: Self = this.set("drag", js.undefined)
+    def setDragend(value: /* e */ TreeViewDragendEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragAndDrop(value: Boolean): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
     
     @scala.inline
-    def deleteDragAndDrop: Self = this.set("dragAndDrop", js.undefined)
+    def setDragstart(value: /* e */ TreeViewDragstartEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragend(value: /* e */ TreeViewDragendEvent => Unit): Self = this.set("dragend", js.Any.fromFunction1(value))
+    def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
     
     @scala.inline
-    def deleteDragend: Self = this.set("dragend", js.undefined)
+    def setDrop(value: /* e */ TreeViewDropEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDragstart(value: /* e */ TreeViewDragstartEvent => Unit): Self = this.set("dragstart", js.Any.fromFunction1(value))
+    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
     @scala.inline
-    def deleteDragstart: Self = this.set("dragstart", js.undefined)
+    def setExpand(value: /* e */ TreeViewExpandEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrop(value: /* e */ TreeViewDropEvent => Unit): Self = this.set("drop", js.Any.fromFunction1(value))
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteDrop: Self = this.set("drop", js.undefined)
+    def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: /* e */ TreeViewExpandEvent => Unit): Self = this.set("expand", js.Any.fromFunction1(value))
+    def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setMessages(value: TreeViewMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoadOnDemand(value: Boolean): Self = this.set("loadOnDemand", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteLoadOnDemand: Self = this.set("loadOnDemand", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: TreeViewMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setNavigate(value: /* e */ TreeViewNavigateEvent => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSelect(value: /* e */ TreeViewSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNavigate(value: /* e */ TreeViewNavigateEvent => Unit): Self = this.set("navigate", js.Any.fromFunction1(value))
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deleteNavigate: Self = this.set("navigate", js.undefined)
+    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: /* e */ TreeViewSelectEvent => Unit): Self = this.set("select", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
-    
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = this.set("template", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplate: Self = this.set("template", js.undefined)
+    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

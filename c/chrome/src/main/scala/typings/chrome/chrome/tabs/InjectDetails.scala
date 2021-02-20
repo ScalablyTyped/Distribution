@@ -1,11 +1,12 @@
 package typings.chrome.chrome.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InjectDetails extends js.Object {
+trait InjectDetails extends StObject {
   
   /**
     * Optional.
@@ -59,60 +60,48 @@ object InjectDetails {
   }
   
   @scala.inline
-  implicit class InjectDetailsOps[Self <: InjectDetails] (val x: Self) extends AnyVal {
+  implicit class InjectDetailsMutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllFrames(value: Boolean): Self = this.set("allFrames", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteAllFrames: Self = this.set("allFrames", js.undefined)
+    def setCssOrigin(value: String): Self = StObject.set(x, "cssOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setCssOriginUndefined: Self = StObject.set(x, "cssOrigin", js.undefined)
     
     @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
+    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCssOrigin(value: String): Self = this.set("cssOrigin", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteCssOrigin: Self = this.set("cssOrigin", js.undefined)
+    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameId(value: Double): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setMatchAboutBlankUndefined: Self = StObject.set(x, "matchAboutBlank", js.undefined)
     
     @scala.inline
-    def deleteFrameId: Self = this.set("frameId", js.undefined)
+    def setRunAt(value: String): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchAboutBlank(value: Boolean): Self = this.set("matchAboutBlank", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatchAboutBlank: Self = this.set("matchAboutBlank", js.undefined)
-    
-    @scala.inline
-    def setRunAt(value: String): Self = this.set("runAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRunAt: Self = this.set("runAt", js.undefined)
+    def setRunAtUndefined: Self = StObject.set(x, "runAt", js.undefined)
   }
 }

@@ -6,18 +6,37 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.IStorageFolder
 import typings.winrtUwp.Windows.Storage.NameCollisionOption
 import typings.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes for creating and saving media playlists for playback. */
-@JSGlobal("Windows.Media.Playlists")
-@js.native
-object Playlists extends js.Object {
+object Playlists {
+  
+  @js.native
+  sealed trait PlaylistFormat extends StObject
+  /** Indicates the format of a playlist file. */
+  @JSGlobal("Windows.Media.Playlists.PlaylistFormat")
+  @js.native
+  object PlaylistFormat extends StObject {
+    
+    /** M3U playlist. */
+    @js.native
+    sealed trait m3u extends PlaylistFormat
+    
+    /** Windows Media playlist. */
+    @js.native
+    sealed trait windowsMedia extends PlaylistFormat
+    
+    /** Zune playlist. */
+    @js.native
+    sealed trait zune extends PlaylistFormat
+  }
   
   /** Provides access to a media playlist. */
   @js.native
-  trait Playlist extends js.Object {
+  trait Playlist extends StObject {
     
     /** The set of media files that make up the playlist. */
     var files: IVector[StorageFile] = js.native
@@ -50,24 +69,5 @@ object Playlists extends js.Object {
       * @return Represents the asynchronous action to save the playlist.
       */
     def saveAsync(): IPromiseWithIAsyncAction = js.native
-  }
-  
-  @js.native
-  sealed trait PlaylistFormat extends js.Object
-  /** Indicates the format of a playlist file. */
-  @js.native
-  object PlaylistFormat extends js.Object {
-    
-    /** M3U playlist. */
-    @js.native
-    sealed trait m3u extends PlaylistFormat
-    
-    /** Windows Media playlist. */
-    @js.native
-    sealed trait windowsMedia extends PlaylistFormat
-    
-    /** Zune playlist. */
-    @js.native
-    sealed trait zune extends PlaylistFormat
   }
 }

@@ -4,6 +4,7 @@ import typings.activexWord.activexWordNumbers.`-4127`
 import typings.activexWord.activexWordNumbers.`-4134`
 import typings.activexWord.activexWordNumbers.`-4142`
 import typings.activexWord.activexWordNumbers.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWord.activexWordNumbers.`4`
   - typings.activexWord.activexWordNumbers.`-4142`
 */
-trait XlTickLabelPosition extends js.Object
+trait XlTickLabelPosition extends StObject
 object XlTickLabelPosition {
   
   @scala.inline

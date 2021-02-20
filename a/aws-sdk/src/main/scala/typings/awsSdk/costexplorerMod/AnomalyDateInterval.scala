@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnomalyDateInterval extends js.Object {
+trait AnomalyDateInterval extends StObject {
   
   /**
     *  The last date an anomaly was observed. 
@@ -26,27 +27,15 @@ object AnomalyDateInterval {
   }
   
   @scala.inline
-  implicit class AnomalyDateIntervalOps[Self <: AnomalyDateInterval] (val x: Self) extends AnyVal {
+  implicit class AnomalyDateIntervalMutableBuilder[Self <: AnomalyDateInterval] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndDate(value: YearMonthDay): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStartDate(value: YearMonthDay): Self = this.set("StartDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndDate(value: YearMonthDay): Self = this.set("EndDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    def setStartDate(value: YearMonthDay): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
   }
 }

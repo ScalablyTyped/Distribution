@@ -1,5 +1,6 @@
 package typings.dhtmlxgantt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,7 +110,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.dhtmlxgantt.dhtmlxganttStrings.onTaskUnselected
   - typings.dhtmlxgantt.dhtmlxganttStrings.onTemplatesReady
 */
-trait GanttEventName extends js.Object
+trait GanttEventName extends StObject
 object GanttEventName {
   
   @scala.inline

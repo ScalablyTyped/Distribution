@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Classifier and score combination. */
 @js.native
-trait ClassifierResult extends js.Object {
+trait ClassifierResult extends StObject {
   
   /** Classes within the classifier. */
   var classes: js.Array[ClassResult] = js.native
@@ -26,30 +27,18 @@ object ClassifierResult {
   }
   
   @scala.inline
-  implicit class ClassifierResultOps[Self <: ClassifierResult] (val x: Self) extends AnyVal {
+  implicit class ClassifierResultMutableBuilder[Self <: ClassifierResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: js.Array[ClassResult]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesVarargs(value: ClassResult*): Self = StObject.set(x, "classes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassesVarargs(value: ClassResult*): Self = this.set("classes", js.Array(value :_*))
-    
-    @scala.inline
-    def setClasses(value: js.Array[ClassResult]): Self = this.set("classes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClassifier_id(value: String): Self = this.set("classifier_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

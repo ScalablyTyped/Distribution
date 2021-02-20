@@ -1,15 +1,21 @@
 package typings.twilioSync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("twilio-sync/lib/router", JSImport.Namespace)
-@js.native
-object routerMod extends js.Object {
+object routerMod {
   
+  @JSImport("twilio-sync/lib/router", JSImport.Default)
   @js.native
-  class Router protected () extends js.Object {
+  class default protected () extends Router {
+    def this(params: js.Any) = this()
+  }
+  
+  @JSImport("twilio-sync/lib/router", "Router")
+  @js.native
+  class Router protected () extends StObject {
     def this(params: js.Any) = this()
     
     var config: js.Any = js.native
@@ -40,10 +46,5 @@ object routerMod extends js.Object {
       * Unsubscribe from events
       */
     def unsubscribe(sid: String): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends Router {
-    def this(params: js.Any) = this()
   }
 }

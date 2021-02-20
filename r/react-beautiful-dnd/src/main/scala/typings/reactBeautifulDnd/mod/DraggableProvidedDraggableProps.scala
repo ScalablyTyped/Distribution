@@ -2,12 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import typings.react.mod.TransitionEvent
 import typings.react.mod.TransitionEventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableProvidedDraggableProps extends js.Object {
+trait DraggableProvidedDraggableProps extends StObject {
   
   // used for shared global styles
   var `data-rbd-draggable-context-id`: String = js.native
@@ -30,36 +31,24 @@ object DraggableProvidedDraggableProps {
   }
   
   @scala.inline
-  implicit class DraggableProvidedDraggablePropsOps[Self <: DraggableProvidedDraggableProps] (val x: Self) extends AnyVal {
+  implicit class DraggableProvidedDraggablePropsMutableBuilder[Self <: DraggableProvidedDraggableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setData-rbd-draggable-context-id`(value: String): Self = StObject.set(x, "data-rbd-draggable-context-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setData-rbd-draggable-id`(value: String): Self = StObject.set(x, "data-rbd-draggable-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnTransitionEnd(value: TransitionEvent[_] => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
     
     @scala.inline
-    def `setData-rbd-draggable-context-id`(value: String): Self = this.set("data-rbd-draggable-context-id", value.asInstanceOf[js.Any])
+    def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
     @scala.inline
-    def `setData-rbd-draggable-id`(value: String): Self = this.set("data-rbd-draggable-id", value.asInstanceOf[js.Any])
+    def setStyle(value: DraggingStyle | NotDraggingStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnTransitionEnd(value: TransitionEvent[_] => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: DraggingStyle | NotDraggingStyle): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

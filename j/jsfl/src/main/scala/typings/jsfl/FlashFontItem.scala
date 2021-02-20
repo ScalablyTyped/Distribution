@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashFontItem extends js.Object {
+trait FlashFontItem extends StObject {
   
   // Specifies whether the Font item is bitmapped.
   var bitmap: Boolean = js.native
@@ -53,45 +54,33 @@ object FlashFontItem {
   }
   
   @scala.inline
-  implicit class FlashFontItemOps[Self <: FlashFontItem] (val x: Self) extends AnyVal {
+  implicit class FlashFontItemMutableBuilder[Self <: FlashFontItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBitmap(value: Boolean): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmbedRanges(value: String): Self = StObject.set(x, "embedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBitmap(value: Boolean): Self = this.set("bitmap", value.asInstanceOf[js.Any])
+    def setEmbedVariantGlyphs(value: Boolean): Self = StObject.set(x, "embedVariantGlyphs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setEmbeddedCharacters(value: String): Self = StObject.set(x, "embeddedCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedRanges(value: String): Self = this.set("embedRanges", value.asInstanceOf[js.Any])
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbedVariantGlyphs(value: Boolean): Self = this.set("embedVariantGlyphs", value.asInstanceOf[js.Any])
+    def setIsDefineFont4Symbol(value: Boolean): Self = StObject.set(x, "isDefineFont4Symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmbeddedCharacters(value: String): Self = this.set("embeddedCharacters", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsDefineFont4Symbol(value: Boolean): Self = this.set("isDefineFont4Symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

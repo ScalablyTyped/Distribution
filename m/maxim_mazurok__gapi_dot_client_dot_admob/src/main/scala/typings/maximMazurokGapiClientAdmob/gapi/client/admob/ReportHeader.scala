@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportHeader extends js.Object {
+trait ReportHeader extends StObject {
   
   /** The date range for which the report is generated. This is identical to the range specified in the report request. */
   var dateRange: js.UndefOr[DateRange] = js.native
@@ -25,36 +26,24 @@ object ReportHeader {
   }
   
   @scala.inline
-  implicit class ReportHeaderOps[Self <: ReportHeader] (val x: Self) extends AnyVal {
+  implicit class ReportHeaderMutableBuilder[Self <: ReportHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateRange(value: DateRange): Self = this.set("dateRange", value.asInstanceOf[js.Any])
+    def setLocalizationSettingsUndefined: Self = StObject.set(x, "localizationSettings", js.undefined)
     
     @scala.inline
-    def deleteDateRange: Self = this.set("dateRange", js.undefined)
+    def setReportingTimeZone(value: String): Self = StObject.set(x, "reportingTimeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizationSettings(value: LocalizationSettings): Self = this.set("localizationSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocalizationSettings: Self = this.set("localizationSettings", js.undefined)
-    
-    @scala.inline
-    def setReportingTimeZone(value: String): Self = this.set("reportingTimeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReportingTimeZone: Self = this.set("reportingTimeZone", js.undefined)
+    def setReportingTimeZoneUndefined: Self = StObject.set(x, "reportingTimeZone", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see http://docs.angularjs.org/api/ng/service/$http
   */
 @js.native
-trait IHttpService extends js.Object {
+trait IHttpService extends StObject {
   
   /**
     * Object describing the request to be made and how it should be processed.

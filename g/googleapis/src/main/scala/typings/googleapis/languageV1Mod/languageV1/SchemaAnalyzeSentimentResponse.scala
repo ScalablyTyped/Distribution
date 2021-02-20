@@ -1,5 +1,6 @@
 package typings.googleapis.languageV1Mod.languageV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The sentiment analysis response message.
   */
 @js.native
-trait SchemaAnalyzeSentimentResponse extends js.Object {
+trait SchemaAnalyzeSentimentResponse extends StObject {
   
   /**
     * The overall sentiment of the input document.
@@ -36,39 +37,27 @@ object SchemaAnalyzeSentimentResponse {
   }
   
   @scala.inline
-  implicit class SchemaAnalyzeSentimentResponseOps[Self <: SchemaAnalyzeSentimentResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAnalyzeSentimentResponseMutableBuilder[Self <: SchemaAnalyzeSentimentResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDocumentSentiment(value: SchemaSentiment): Self = StObject.set(x, "documentSentiment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDocumentSentimentUndefined: Self = StObject.set(x, "documentSentiment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentSentiment(value: SchemaSentiment): Self = this.set("documentSentiment", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteDocumentSentiment: Self = this.set("documentSentiment", js.undefined)
+    def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
-    
-    @scala.inline
-    def setSentencesVarargs(value: SchemaSentence*): Self = this.set("sentences", js.Array(value :_*))
-    
-    @scala.inline
-    def setSentences(value: js.Array[SchemaSentence]): Self = this.set("sentences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSentences: Self = this.set("sentences", js.undefined)
+    def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
   }
 }

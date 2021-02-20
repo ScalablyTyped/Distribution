@@ -1,6 +1,7 @@
 package typings.emberData.mod.DS
 
 import typings.rsvp.mod.default.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("ember-data", "DS.HasManyReference")
 @js.native
-class HasManyReference[T] () extends js.Object {
+class HasManyReference[T] () extends StObject {
   
   /**
     * `ids()` returns an array of the record ids in this relationship.

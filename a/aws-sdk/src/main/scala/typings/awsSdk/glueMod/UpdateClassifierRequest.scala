@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateClassifierRequest extends js.Object {
+trait UpdateClassifierRequest extends StObject {
   
   /**
     * A CsvClassifier object with updated fields.
@@ -36,42 +37,30 @@ object UpdateClassifierRequest {
   }
   
   @scala.inline
-  implicit class UpdateClassifierRequestOps[Self <: UpdateClassifierRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateClassifierRequestMutableBuilder[Self <: UpdateClassifierRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCsvClassifier(value: UpdateCsvClassifierRequest): Self = StObject.set(x, "CsvClassifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCsvClassifierUndefined: Self = StObject.set(x, "CsvClassifier", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGrokClassifier(value: UpdateGrokClassifierRequest): Self = StObject.set(x, "GrokClassifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCsvClassifier(value: UpdateCsvClassifierRequest): Self = this.set("CsvClassifier", value.asInstanceOf[js.Any])
+    def setGrokClassifierUndefined: Self = StObject.set(x, "GrokClassifier", js.undefined)
     
     @scala.inline
-    def deleteCsvClassifier: Self = this.set("CsvClassifier", js.undefined)
+    def setJsonClassifier(value: UpdateJsonClassifierRequest): Self = StObject.set(x, "JsonClassifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrokClassifier(value: UpdateGrokClassifierRequest): Self = this.set("GrokClassifier", value.asInstanceOf[js.Any])
+    def setJsonClassifierUndefined: Self = StObject.set(x, "JsonClassifier", js.undefined)
     
     @scala.inline
-    def deleteGrokClassifier: Self = this.set("GrokClassifier", js.undefined)
+    def setXMLClassifier(value: UpdateXMLClassifierRequest): Self = StObject.set(x, "XMLClassifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonClassifier(value: UpdateJsonClassifierRequest): Self = this.set("JsonClassifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonClassifier: Self = this.set("JsonClassifier", js.undefined)
-    
-    @scala.inline
-    def setXMLClassifier(value: UpdateXMLClassifierRequest): Self = this.set("XMLClassifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXMLClassifier: Self = this.set("XMLClassifier", js.undefined)
+    def setXMLClassifierUndefined: Self = StObject.set(x, "XMLClassifier", js.undefined)
   }
 }

@@ -4,12 +4,13 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.FileProperties.BasicProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStorageItem extends js.Object {
+trait IStorageItem extends StObject {
   
   var attributes: FileAttributes = js.native
   

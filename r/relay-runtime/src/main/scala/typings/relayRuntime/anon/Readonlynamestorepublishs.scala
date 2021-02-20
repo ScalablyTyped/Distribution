@@ -3,6 +3,7 @@ package typings.relayRuntime.anon
 import typings.relayRuntime.relayRuntimeStrings.storeDotpublish
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import typings.relayRuntime.relayStoreTypesMod.RecordSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,27 +27,15 @@ object Readonlynamestorepublishs {
   }
   
   @scala.inline
-  implicit class ReadonlynamestorepublishsOps[Self <: Readonlynamestorepublishs] (val x: Self) extends AnyVal {
+  implicit class ReadonlynamestorepublishsMutableBuilder[Self <: Readonlynamestorepublishs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: storeDotpublish): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptimistic(value: Boolean): Self = StObject.set(x, "optimistic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: storeDotpublish): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptimistic(value: Boolean): Self = this.set("optimistic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: RecordSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setSource(value: RecordSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

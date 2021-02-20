@@ -1,11 +1,12 @@
 package typings.log4js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Level extends js.Object {
+trait Level extends StObject {
   
   var colour: String = js.native
   

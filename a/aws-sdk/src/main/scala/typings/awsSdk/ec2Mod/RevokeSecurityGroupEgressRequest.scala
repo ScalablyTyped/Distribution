@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevokeSecurityGroupEgressRequest extends js.Object {
+trait RevokeSecurityGroupEgressRequest extends StObject {
   
   /**
     * Not supported. Use a set of IP permissions to specify the CIDR.
@@ -61,72 +62,60 @@ object RevokeSecurityGroupEgressRequest {
   }
   
   @scala.inline
-  implicit class RevokeSecurityGroupEgressRequestOps[Self <: RevokeSecurityGroupEgressRequest] (val x: Self) extends AnyVal {
+  implicit class RevokeSecurityGroupEgressRequestMutableBuilder[Self <: RevokeSecurityGroupEgressRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidrIp(value: String): Self = StObject.set(x, "CidrIp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCidrIpUndefined: Self = StObject.set(x, "CidrIp", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupId(value: SecurityGroupId): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setCidrIp(value: String): Self = this.set("CidrIp", value.asInstanceOf[js.Any])
+    def setFromPort(value: Integer): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCidrIp: Self = this.set("CidrIp", js.undefined)
+    def setFromPortUndefined: Self = StObject.set(x, "FromPort", js.undefined)
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    def setGroupId(value: SecurityGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setIpPermissions(value: IpPermissionList): Self = StObject.set(x, "IpPermissions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromPort(value: Integer): Self = this.set("FromPort", value.asInstanceOf[js.Any])
+    def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
     
     @scala.inline
-    def deleteFromPort: Self = this.set("FromPort", js.undefined)
+    def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
     
     @scala.inline
-    def setIpPermissionsVarargs(value: IpPermission*): Self = this.set("IpPermissions", js.Array(value :_*))
+    def setIpProtocol(value: String): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpPermissions(value: IpPermissionList): Self = this.set("IpPermissions", value.asInstanceOf[js.Any])
+    def setIpProtocolUndefined: Self = StObject.set(x, "IpProtocol", js.undefined)
     
     @scala.inline
-    def deleteIpPermissions: Self = this.set("IpPermissions", js.undefined)
+    def setSourceSecurityGroupName(value: String): Self = StObject.set(x, "SourceSecurityGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpProtocol(value: String): Self = this.set("IpProtocol", value.asInstanceOf[js.Any])
+    def setSourceSecurityGroupNameUndefined: Self = StObject.set(x, "SourceSecurityGroupName", js.undefined)
     
     @scala.inline
-    def deleteIpProtocol: Self = this.set("IpProtocol", js.undefined)
+    def setSourceSecurityGroupOwnerId(value: String): Self = StObject.set(x, "SourceSecurityGroupOwnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSecurityGroupName(value: String): Self = this.set("SourceSecurityGroupName", value.asInstanceOf[js.Any])
+    def setSourceSecurityGroupOwnerIdUndefined: Self = StObject.set(x, "SourceSecurityGroupOwnerId", js.undefined)
     
     @scala.inline
-    def deleteSourceSecurityGroupName: Self = this.set("SourceSecurityGroupName", js.undefined)
+    def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSecurityGroupOwnerId(value: String): Self = this.set("SourceSecurityGroupOwnerId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceSecurityGroupOwnerId: Self = this.set("SourceSecurityGroupOwnerId", js.undefined)
-    
-    @scala.inline
-    def setToPort(value: Integer): Self = this.set("ToPort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToPort: Self = this.set("ToPort", js.undefined)
+    def setToPortUndefined: Self = StObject.set(x, "ToPort", js.undefined)
   }
 }

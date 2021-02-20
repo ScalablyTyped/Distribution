@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartImportLabelsTaskRunRequest extends js.Object {
+trait StartImportLabelsTaskRunRequest extends StObject {
   
   /**
     * The Amazon Simple Storage Service (Amazon S3) path from where you import the labels.
@@ -31,30 +32,18 @@ object StartImportLabelsTaskRunRequest {
   }
   
   @scala.inline
-  implicit class StartImportLabelsTaskRunRequestOps[Self <: StartImportLabelsTaskRunRequest] (val x: Self) extends AnyVal {
+  implicit class StartImportLabelsTaskRunRequestMutableBuilder[Self <: StartImportLabelsTaskRunRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputS3Path(value: UriString): Self = StObject.set(x, "InputS3Path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReplaceAllLabels(value: ReplaceBoolean): Self = StObject.set(x, "ReplaceAllLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplaceAllLabelsUndefined: Self = StObject.set(x, "ReplaceAllLabels", js.undefined)
     
     @scala.inline
-    def setInputS3Path(value: UriString): Self = this.set("InputS3Path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransformId(value: HashString): Self = this.set("TransformId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplaceAllLabels(value: ReplaceBoolean): Self = this.set("ReplaceAllLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceAllLabels: Self = this.set("ReplaceAllLabels", js.undefined)
+    def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }
 }

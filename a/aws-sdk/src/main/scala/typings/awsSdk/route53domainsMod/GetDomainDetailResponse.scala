@@ -1,11 +1,12 @@
 package typings.awsSdk.route53domainsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDomainDetailResponse extends js.Object {
+trait GetDomainDetailResponse extends StObject {
   
   /**
     * Email address to contact to report incorrect contact information for a domain, to report that the domain is being used to send spam, to report that someone is cybersquatting on a domain name, or report some other type of abuse.
@@ -127,135 +128,123 @@ object GetDomainDetailResponse {
   }
   
   @scala.inline
-  implicit class GetDomainDetailResponseOps[Self <: GetDomainDetailResponse] (val x: Self) extends AnyVal {
+  implicit class GetDomainDetailResponseMutableBuilder[Self <: GetDomainDetailResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbuseContactEmail(value: Email): Self = StObject.set(x, "AbuseContactEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbuseContactEmailUndefined: Self = StObject.set(x, "AbuseContactEmail", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAbuseContactPhone(value: ContactNumber): Self = StObject.set(x, "AbuseContactPhone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminContact(value: ContactDetail): Self = this.set("AdminContact", value.asInstanceOf[js.Any])
+    def setAbuseContactPhoneUndefined: Self = StObject.set(x, "AbuseContactPhone", js.undefined)
     
     @scala.inline
-    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameserversVarargs(value: Nameserver*): Self = this.set("Nameservers", js.Array(value :_*))
+    def setAdminPrivacy(value: Boolean): Self = StObject.set(x, "AdminPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNameservers(value: NameserverList): Self = this.set("Nameservers", value.asInstanceOf[js.Any])
+    def setAdminPrivacyUndefined: Self = StObject.set(x, "AdminPrivacy", js.undefined)
     
     @scala.inline
-    def setRegistrantContact(value: ContactDetail): Self = this.set("RegistrantContact", value.asInstanceOf[js.Any])
+    def setAutoRenew(value: Boolean): Self = StObject.set(x, "AutoRenew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTechContact(value: ContactDetail): Self = this.set("TechContact", value.asInstanceOf[js.Any])
+    def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
     @scala.inline
-    def setAbuseContactEmail(value: Email): Self = this.set("AbuseContactEmail", value.asInstanceOf[js.Any])
+    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAbuseContactEmail: Self = this.set("AbuseContactEmail", js.undefined)
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def setAbuseContactPhone(value: ContactNumber): Self = this.set("AbuseContactPhone", value.asInstanceOf[js.Any])
+    def setDnsSec(value: DNSSec): Self = StObject.set(x, "DnsSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAbuseContactPhone: Self = this.set("AbuseContactPhone", js.undefined)
+    def setDnsSecUndefined: Self = StObject.set(x, "DnsSec", js.undefined)
     
     @scala.inline
-    def setAdminPrivacy(value: Boolean): Self = this.set("AdminPrivacy", value.asInstanceOf[js.Any])
+    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdminPrivacy: Self = this.set("AdminPrivacy", js.undefined)
+    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRenew(value: Boolean): Self = this.set("AutoRenew", value.asInstanceOf[js.Any])
+    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     @scala.inline
-    def deleteAutoRenew: Self = this.set("AutoRenew", js.undefined)
+    def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsSec(value: DNSSec): Self = this.set("DnsSec", value.asInstanceOf[js.Any])
+    def setRegistrantPrivacy(value: Boolean): Self = StObject.set(x, "RegistrantPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDnsSec: Self = this.set("DnsSec", js.undefined)
+    def setRegistrantPrivacyUndefined: Self = StObject.set(x, "RegistrantPrivacy", js.undefined)
     
     @scala.inline
-    def setExpirationDate(value: Timestamp): Self = this.set("ExpirationDate", value.asInstanceOf[js.Any])
+    def setRegistrarName(value: RegistrarName): Self = StObject.set(x, "RegistrarName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDate: Self = this.set("ExpirationDate", js.undefined)
+    def setRegistrarNameUndefined: Self = StObject.set(x, "RegistrarName", js.undefined)
     
     @scala.inline
-    def setRegistrantPrivacy(value: Boolean): Self = this.set("RegistrantPrivacy", value.asInstanceOf[js.Any])
+    def setRegistrarUrl(value: RegistrarUrl): Self = StObject.set(x, "RegistrarUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistrantPrivacy: Self = this.set("RegistrantPrivacy", js.undefined)
+    def setRegistrarUrlUndefined: Self = StObject.set(x, "RegistrarUrl", js.undefined)
     
     @scala.inline
-    def setRegistrarName(value: RegistrarName): Self = this.set("RegistrarName", value.asInstanceOf[js.Any])
+    def setRegistryDomainId(value: RegistryDomainId): Self = StObject.set(x, "RegistryDomainId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistrarName: Self = this.set("RegistrarName", js.undefined)
+    def setRegistryDomainIdUndefined: Self = StObject.set(x, "RegistryDomainId", js.undefined)
     
     @scala.inline
-    def setRegistrarUrl(value: RegistrarUrl): Self = this.set("RegistrarUrl", value.asInstanceOf[js.Any])
+    def setReseller(value: Reseller): Self = StObject.set(x, "Reseller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistrarUrl: Self = this.set("RegistrarUrl", js.undefined)
+    def setResellerUndefined: Self = StObject.set(x, "Reseller", js.undefined)
     
     @scala.inline
-    def setRegistryDomainId(value: RegistryDomainId): Self = this.set("RegistryDomainId", value.asInstanceOf[js.Any])
+    def setStatusList(value: DomainStatusList): Self = StObject.set(x, "StatusList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegistryDomainId: Self = this.set("RegistryDomainId", js.undefined)
+    def setStatusListUndefined: Self = StObject.set(x, "StatusList", js.undefined)
     
     @scala.inline
-    def setReseller(value: Reseller): Self = this.set("Reseller", value.asInstanceOf[js.Any])
+    def setStatusListVarargs(value: DomainStatus*): Self = StObject.set(x, "StatusList", js.Array(value :_*))
     
     @scala.inline
-    def deleteReseller: Self = this.set("Reseller", js.undefined)
+    def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusListVarargs(value: DomainStatus*): Self = this.set("StatusList", js.Array(value :_*))
+    def setTechPrivacy(value: Boolean): Self = StObject.set(x, "TechPrivacy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusList(value: DomainStatusList): Self = this.set("StatusList", value.asInstanceOf[js.Any])
+    def setTechPrivacyUndefined: Self = StObject.set(x, "TechPrivacy", js.undefined)
     
     @scala.inline
-    def deleteStatusList: Self = this.set("StatusList", js.undefined)
+    def setUpdatedDate(value: Timestamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTechPrivacy(value: Boolean): Self = this.set("TechPrivacy", value.asInstanceOf[js.Any])
+    def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
     
     @scala.inline
-    def deleteTechPrivacy: Self = this.set("TechPrivacy", js.undefined)
+    def setWhoIsServer(value: RegistrarWhoIsServer): Self = StObject.set(x, "WhoIsServer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdatedDate(value: Timestamp): Self = this.set("UpdatedDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedDate: Self = this.set("UpdatedDate", js.undefined)
-    
-    @scala.inline
-    def setWhoIsServer(value: RegistrarWhoIsServer): Self = this.set("WhoIsServer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhoIsServer: Self = this.set("WhoIsServer", js.undefined)
+    def setWhoIsServerUndefined: Self = StObject.set(x, "WhoIsServer", js.undefined)
   }
 }

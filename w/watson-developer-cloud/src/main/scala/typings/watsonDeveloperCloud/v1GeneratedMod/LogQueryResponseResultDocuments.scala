@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.v1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing result information that was returned by the query used to create this log entry. Only returned with logs of type `query`. */
 @js.native
-trait LogQueryResponseResultDocuments extends js.Object {
+trait LogQueryResponseResultDocuments extends StObject {
   
   /** The number of results returned in the query associate with this log. */
   var count: js.UndefOr[Double] = js.native
@@ -23,33 +24,21 @@ object LogQueryResponseResultDocuments {
   }
   
   @scala.inline
-  implicit class LogQueryResponseResultDocumentsOps[Self <: LogQueryResponseResultDocuments] (val x: Self) extends AnyVal {
+  implicit class LogQueryResponseResultDocumentsMutableBuilder[Self <: LogQueryResponseResultDocuments] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResults(value: js.Array[LogQueryResponseResultDocumentsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setResultsVarargs(value: LogQueryResponseResultDocumentsResult*): Self = this.set("results", js.Array(value :_*))
-    
-    @scala.inline
-    def setResults(value: js.Array[LogQueryResponseResultDocumentsResult]): Self = this.set("results", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResults: Self = this.set("results", js.undefined)
+    def setResultsVarargs(value: LogQueryResponseResultDocumentsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

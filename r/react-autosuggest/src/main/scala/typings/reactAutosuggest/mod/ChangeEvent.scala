@@ -6,12 +6,13 @@ import typings.reactAutosuggest.reactAutosuggestStrings.down
 import typings.reactAutosuggest.reactAutosuggestStrings.enter
 import typings.reactAutosuggest.reactAutosuggestStrings.escape
 import typings.reactAutosuggest.reactAutosuggestStrings.up
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangeEvent extends js.Object {
+trait ChangeEvent extends StObject {
   
   var method: down | up | escape | enter | click | `type` = js.native
   
@@ -26,24 +27,12 @@ object ChangeEvent {
   }
   
   @scala.inline
-  implicit class ChangeEventOps[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+  implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMethod(value: down | up | escape | enter | click | `type`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMethod(value: down | up | escape | enter | click | `type`): Self = this.set("method", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewValue(value: String): Self = this.set("newValue", value.asInstanceOf[js.Any])
+    def setNewValue(value: String): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }
 }

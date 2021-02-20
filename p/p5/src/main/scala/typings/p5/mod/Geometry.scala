@@ -1,11 +1,12 @@
 package typings.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geometry extends js.Object {
+trait Geometry extends StObject {
   
   /**
     *   Averages the vertex normals. Used in curved
@@ -52,33 +53,21 @@ object Geometry {
   }
   
   @scala.inline
-  implicit class GeometryOps[Self <: Geometry] (val x: Self) extends AnyVal {
+  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverageNormals(value: () => Geometry): Self = StObject.set(x, "averageNormals", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAveragePoleNormals(value: () => Geometry): Self = StObject.set(x, "averagePoleNormals", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeFaces(value: () => Geometry): Self = StObject.set(x, "computeFaces", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAverageNormals(value: () => Geometry): Self = this.set("averageNormals", js.Any.fromFunction0(value))
+    def setComputeNormals(value: () => Geometry): Self = StObject.set(x, "computeNormals", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAveragePoleNormals(value: () => Geometry): Self = this.set("averagePoleNormals", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setComputeFaces(value: () => Geometry): Self = this.set("computeFaces", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setComputeNormals(value: () => Geometry): Self = this.set("computeNormals", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNormalize(value: () => Geometry): Self = this.set("normalize", js.Any.fromFunction0(value))
+    def setNormalize(value: () => Geometry): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
   }
 }

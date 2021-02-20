@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageDsn extends js.Object {
+trait MessageDsn extends StObject {
   
   /**
     * When the message was received by the reporting mail transfer agent (MTA), in RFC 822 date-time format.
@@ -31,36 +32,24 @@ object MessageDsn {
   }
   
   @scala.inline
-  implicit class MessageDsnOps[Self <: MessageDsn] (val x: Self) extends AnyVal {
+  implicit class MessageDsnMutableBuilder[Self <: MessageDsn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArrivalDate(value: ArrivalDate): Self = StObject.set(x, "ArrivalDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArrivalDateUndefined: Self = StObject.set(x, "ArrivalDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtensionFields(value: ExtensionFieldList): Self = StObject.set(x, "ExtensionFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReportingMta(value: ReportingMta): Self = this.set("ReportingMta", value.asInstanceOf[js.Any])
+    def setExtensionFieldsUndefined: Self = StObject.set(x, "ExtensionFields", js.undefined)
     
     @scala.inline
-    def setArrivalDate(value: ArrivalDate): Self = this.set("ArrivalDate", value.asInstanceOf[js.Any])
+    def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value :_*))
     
     @scala.inline
-    def deleteArrivalDate: Self = this.set("ArrivalDate", js.undefined)
-    
-    @scala.inline
-    def setExtensionFieldsVarargs(value: ExtensionField*): Self = this.set("ExtensionFields", js.Array(value :_*))
-    
-    @scala.inline
-    def setExtensionFields(value: ExtensionFieldList): Self = this.set("ExtensionFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExtensionFields: Self = this.set("ExtensionFields", js.undefined)
+    def setReportingMta(value: ReportingMta): Self = StObject.set(x, "ReportingMta", value.asInstanceOf[js.Any])
   }
 }

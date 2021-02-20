@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SignatureValidationResult extends js.Object
+sealed trait SignatureValidationResult extends StObject
 /** Describes the result of a signature verification operation. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.SignatureValidationResult")
 @js.native
-object SignatureValidationResult extends js.Object {
+object SignatureValidationResult extends StObject {
   
   /** A severe error occurred such as missing key provider information or an incorrect algorithm id. */
   @js.native

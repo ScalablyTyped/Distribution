@@ -1,12 +1,13 @@
 package typings.bingmaps.Microsoft.Maps
 
 import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataBinningOptions extends js.Object {
+trait IDataBinningOptions extends StObject {
   
   /* The name of a property in the Pushpin.metadata object on which to perform calculations (average, count, sum) against the pushpins in each data bin. */
   var aggregationProperty: js.UndefOr[String] = js.native
@@ -61,64 +62,52 @@ object IDataBinningOptions {
   }
   
   @scala.inline
-  implicit class IDataBinningOptionsOps[Self <: IDataBinningOptions] (val x: Self) extends AnyVal {
+  implicit class IDataBinningOptionsMutableBuilder[Self <: IDataBinningOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregationProperty(value: String): Self = StObject.set(x, "aggregationProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAggregationProperty(value: String): Self = this.set("aggregationProperty", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAggregationProperty: Self = this.set("aggregationProperty", js.undefined)
+    def setAggregationPropertyUndefined: Self = StObject.set(x, "aggregationProperty", js.undefined)
     
     @scala.inline
     def setColorCallback(
       value: (/* binInfo */ IDataBinInfo, /* min */ IDataBinMetrics, /* max */ IDataBinMetrics) => String | Color
-    ): Self = this.set("colorCallback", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "colorCallback", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteColorCallback: Self = this.set("colorCallback", js.undefined)
+    def setColorCallbackUndefined: Self = StObject.set(x, "colorCallback", js.undefined)
     
     @scala.inline
-    def setDataBinType(value: DataBinType): Self = this.set("dataBinType", value.asInstanceOf[js.Any])
+    def setDataBinType(value: DataBinType): Self = StObject.set(x, "dataBinType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataBinType: Self = this.set("dataBinType", js.undefined)
+    def setDataBinTypeUndefined: Self = StObject.set(x, "dataBinType", js.undefined)
     
     @scala.inline
-    def setDistanceUnits(value: DistanceUnits): Self = this.set("distanceUnits", value.asInstanceOf[js.Any])
+    def setDistanceUnits(value: DistanceUnits): Self = StObject.set(x, "distanceUnits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDistanceUnits: Self = this.set("distanceUnits", js.undefined)
+    def setDistanceUnitsUndefined: Self = StObject.set(x, "distanceUnits", js.undefined)
     
     @scala.inline
-    def setPolygonOptions(value: IPolygonOptions): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
     @scala.inline
-    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRadius: Self = this.set("radius", js.undefined)
+    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
     def setScaleCallback(
       value: (/* binInfo */ IDataBinInfo, /* min */ IDataBinMetrics, /* max */ IDataBinMetrics) => Double
-    ): Self = this.set("scaleCallback", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "scaleCallback", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteScaleCallback: Self = this.set("scaleCallback", js.undefined)
+    def setScaleCallbackUndefined: Self = StObject.set(x, "scaleCallback", js.undefined)
   }
 }

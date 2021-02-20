@@ -1,16 +1,16 @@
 package typings.uifabricUtilities
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uifabric/utilities/lib/AutoScroll", JSImport.Namespace)
-@js.native
-object autoScrollMod extends js.Object {
+object autoScrollMod {
   
+  @JSImport("@uifabric/utilities/lib/AutoScroll", "AutoScroll")
   @js.native
-  class AutoScroll protected () extends js.Object {
+  class AutoScroll protected () extends StObject {
     def this(element: HTMLElement) = this()
     
     var _computeScrollVelocity: js.Any = js.native

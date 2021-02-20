@@ -4,13 +4,14 @@ import typings.winrtUwp.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrtUwp.Windows.Foundation.AsyncStatus
 import typings.winrtUwp.Windows.Foundation.IAsyncOperation
 import typings.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Commits data in a buffer to a backing store. */
 @js.native
-trait DataWriterStoreOperation extends js.Object {
+trait DataWriterStoreOperation extends StObject {
   
   /** Requests the cancellation of the data store operation. */
   def cancel(): Unit = js.native

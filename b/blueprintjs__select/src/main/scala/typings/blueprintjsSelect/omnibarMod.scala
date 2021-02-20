@@ -5,17 +5,51 @@ import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsSelect.anon.PartialIOverlayProps
 import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
-import typings.react.mod.Component
+import typings.react.mod.PureComponent
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", JSImport.Namespace)
-@js.native
-object omnibarMod extends js.Object {
+object omnibarMod {
+  
+  @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar")
+  @js.native
+  class Omnibar[T] protected ()
+    extends PureComponent[IOmnibarProps[T], js.Object, js.Any] {
+    def this(props: IOmnibarProps[T]) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: IOmnibarProps[T], context: js.Any) = this()
+    
+    var TypedQueryList: js.Any = js.native
+    
+    var handleOverlayClose: js.Any = js.native
+    
+    var renderQueryList: js.Any = js.native
+  }
+  /* static members */
+  object Omnibar {
+    
+    @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar.displayName")
+    @js.native
+    def displayName: String = js.native
+    @scala.inline
+    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar.ofType")
+    @js.native
+    def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = js.native
+  }
   
   @js.native
   trait IOmnibarProps[T] extends IListItemsProps[T] {
@@ -47,24 +81,5 @@ object omnibarMod extends js.Object {
     
     /** Props to spread to `Overlay`. */
     var overlayProps: js.UndefOr[PartialIOverlayProps] = js.native
-  }
-  
-  @js.native
-  class Omnibar[T] ()
-    extends Component[IOmnibarProps[T], js.Object, js.Any] {
-    
-    var TypedQueryList: js.Any = js.native
-    
-    var handleOverlayClose: js.Any = js.native
-    
-    var renderQueryList: js.Any = js.native
-  }
-  /* static members */
-  @js.native
-  object Omnibar extends js.Object {
-    
-    var displayName: String = js.native
-    
-    def ofType[U](): Instantiable1[/* props */ IOmnibarProps[U], Omnibar[U]] = js.native
   }
 }

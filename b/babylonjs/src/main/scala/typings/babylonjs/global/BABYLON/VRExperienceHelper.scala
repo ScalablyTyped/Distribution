@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.VRExperienceHelperOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,17 +24,19 @@ class VRExperienceHelper protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.VRExperienceHelper")
-@js.native
-object VRExperienceHelper extends js.Object {
+object VRExperienceHelper {
   
   /**
     * Speed Constant Teleportation Mode
     */
+  @JSGlobal("BABYLON.VRExperienceHelper.TELEPORTATIONMODE_CONSTANTSPEED")
+  @js.native
   val TELEPORTATIONMODE_CONSTANTSPEED: Double = js.native
   
   /**
     * Time Constant Teleportation Mode
     */
+  @JSGlobal("BABYLON.VRExperienceHelper.TELEPORTATIONMODE_CONSTANTTIME")
+  @js.native
   val TELEPORTATIONMODE_CONSTANTTIME: Double = js.native
 }

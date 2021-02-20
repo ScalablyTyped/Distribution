@@ -1,5 +1,6 @@
 package typings.googleapis.datastoreV1Mod.datastoreV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.datastore.admin.v1beta1.DatastoreAdmin.ExportEntities.
   */
 @js.native
-trait SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse extends js.Object {
+trait SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse extends StObject {
   
   /**
     * Location of the output metadata file. This can be used to begin an import
@@ -28,24 +29,12 @@ object SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponseOps[Self <: SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponseMutableBuilder[Self <: SchemaGoogleDatastoreAdminV1beta1ExportEntitiesResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOutputUrl(value: String): Self = StObject.set(x, "outputUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOutputUrl(value: String): Self = this.set("outputUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOutputUrl: Self = this.set("outputUrl", js.undefined)
+    def setOutputUrlUndefined: Self = StObject.set(x, "outputUrl", js.undefined)
   }
 }

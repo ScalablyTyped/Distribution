@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextSetOptions extends js.Object
+sealed trait TextSetOptions extends StObject
 /** Specifies options for setting the text in a text range. */
 @JSGlobal("Windows.UI.Text.TextSetOptions")
 @js.native
-object TextSetOptions extends js.Object {
+object TextSetOptions extends StObject {
   
   /** Apply the RTF default settings for the document. RTF often contains document default properties. These properties are typically ignored when inserting RTF (as distinguished from opening an RTF file). */
   @js.native

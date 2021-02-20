@@ -1,5 +1,6 @@
 package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Android related attributes to the Dynamic Link.
   */
 @js.native
-trait SchemaAndroidInfo extends js.Object {
+trait SchemaAndroidInfo extends StObject {
   
   /**
     * Link to open on Android if the app is not installed.
@@ -40,42 +41,30 @@ object SchemaAndroidInfo {
   }
   
   @scala.inline
-  implicit class SchemaAndroidInfoOps[Self <: SchemaAndroidInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaAndroidInfoMutableBuilder[Self <: SchemaAndroidInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroidFallbackLink(value: String): Self = StObject.set(x, "androidFallbackLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidFallbackLinkUndefined: Self = StObject.set(x, "androidFallbackLink", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAndroidLink(value: String): Self = StObject.set(x, "androidLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidFallbackLink(value: String): Self = this.set("androidFallbackLink", value.asInstanceOf[js.Any])
+    def setAndroidLinkUndefined: Self = StObject.set(x, "androidLink", js.undefined)
     
     @scala.inline
-    def deleteAndroidFallbackLink: Self = this.set("androidFallbackLink", js.undefined)
+    def setAndroidMinPackageVersionCode(value: String): Self = StObject.set(x, "androidMinPackageVersionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidLink(value: String): Self = this.set("androidLink", value.asInstanceOf[js.Any])
+    def setAndroidMinPackageVersionCodeUndefined: Self = StObject.set(x, "androidMinPackageVersionCode", js.undefined)
     
     @scala.inline
-    def deleteAndroidLink: Self = this.set("androidLink", js.undefined)
+    def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroidMinPackageVersionCode(value: String): Self = this.set("androidMinPackageVersionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroidMinPackageVersionCode: Self = this.set("androidMinPackageVersionCode", js.undefined)
-    
-    @scala.inline
-    def setAndroidPackageName(value: String): Self = this.set("androidPackageName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroidPackageName: Self = this.set("androidPackageName", js.undefined)
+    def setAndroidPackageNameUndefined: Self = StObject.set(x, "androidPackageName", js.undefined)
   }
 }

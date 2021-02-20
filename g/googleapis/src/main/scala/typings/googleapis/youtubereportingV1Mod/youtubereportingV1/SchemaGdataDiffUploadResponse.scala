@@ -1,5 +1,6 @@
 package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * gdata
   */
 @js.native
-trait SchemaGdataDiffUploadResponse extends js.Object {
+trait SchemaGdataDiffUploadResponse extends StObject {
   
   /**
     * gdata
@@ -29,30 +30,18 @@ object SchemaGdataDiffUploadResponse {
   }
   
   @scala.inline
-  implicit class SchemaGdataDiffUploadResponseOps[Self <: SchemaGdataDiffUploadResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaGdataDiffUploadResponseMutableBuilder[Self <: SchemaGdataDiffUploadResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOriginalObject(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
-    
-    @scala.inline
-    def setOriginalObject(value: SchemaGdataCompositeMedia): Self = this.set("originalObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalObject: Self = this.set("originalObject", js.undefined)
+    def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
   }
 }

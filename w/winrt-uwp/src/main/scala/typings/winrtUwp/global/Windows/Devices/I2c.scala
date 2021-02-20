@@ -3,18 +3,18 @@ package typings.winrtUwp.global.Windows.Devices
 import typings.winrtUwp.Windows.Devices.I2c.Provider.II2cProvider
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains types that you can use to communicate with peripheral devices connected through a inter-integrated circuit (I²C) bus from an application. */
-@JSGlobal("Windows.Devices.I2c")
-@js.native
-object I2c extends js.Object {
+object I2c {
   
   /** Describes the bus speeds that are available for connecting to an inter-integrated circuit (I²C) device. The bus speed is the frequency at which to clock the I²C bus when accessing the device. */
+  @JSGlobal("Windows.Devices.I2c.I2cBusSpeed")
   @js.native
-  object I2cBusSpeed extends js.Object {
+  object I2cBusSpeed extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.I2c.I2cBusSpeed with Double] = js.native
@@ -25,6 +25,7 @@ object I2c extends js.Object {
   }
   
   /** Represents the connection settings you want to use for an inter-integrated circuit (I²C) device. */
+  @JSGlobal("Windows.Devices.I2c.I2cConnectionSettings")
   @js.native
   class I2cConnectionSettings protected ()
     extends typings.winrtUwp.Windows.Devices.I2c.I2cConnectionSettings {
@@ -36,34 +37,38 @@ object I2c extends js.Object {
   }
   
   /** Represents the I²C controller for the system. */
+  @JSGlobal("Windows.Devices.I2c.I2cController")
   @js.native
   abstract class I2cController ()
     extends typings.winrtUwp.Windows.Devices.I2c.I2cController
-  /* static members */
-  @js.native
-  object I2cController extends js.Object {
+  object I2cController {
     
     /**
       * Gets all the I²C controllers that are on the system.
       * @param provider The I²C provider for the controllers on the system.
       * @return When the method completes successfully, it returns a list of values that represent the available I²C controllers on the system.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.I2c.I2cController.getControllersAsync")
+    @js.native
     def getControllersAsync(provider: II2cProvider): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
     
     /**
       * Gets the default I²C controller on the system.
       * @return The default I²C controller on the system, or null if the system has no I²C controller.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.I2c.I2cController.getDefaultAsync")
+    @js.native
     def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.I2c.I2cController] = js.native
   }
   
   /** Represents a communications channel to a device on an inter-integrated circuit (I²C) bus. */
+  @JSGlobal("Windows.Devices.I2c.I2cDevice")
   @js.native
   abstract class I2cDevice ()
     extends typings.winrtUwp.Windows.Devices.I2c.I2cDevice
-  /* static members */
-  @js.native
-  object I2cDevice extends js.Object {
+  object I2cDevice {
     
     /**
       * Retrieves an I2cDevice object asynchronously for the inter-integrated circuit (I²C) bus controller that has the specified plug and play device identifier, using the specified connection settings.
@@ -71,24 +76,34 @@ object I2c extends js.Object {
       * @param settings The connection settings to use for communication with the I²C bus controller that deviceId specifies.
       * @return An asynchronous operation that returns the I2cDevice object.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.I2c.I2cDevice.fromIdAsync")
+    @js.native
     def fromIdAsync(deviceId: String, settings: typings.winrtUwp.Windows.Devices.I2c.I2cConnectionSettings): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.I2c.I2cDevice] = js.native
     
     /**
       * Retrieves an Advanced Query Syntax (AQS) string for all of the inter-integrated circuit (I²C) bus controllers on the system. You can use this string with the DeviceInformation.FindAllAsync method to get DeviceInformation objects for those bus controllers.
       * @return An AQS string for all of the I²C bus controllers on the system, which you can use with the DeviceInformation.FindAllAsync method to get DeviceInformation objects for those bus controllers.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.I2c.I2cDevice.getDeviceSelector")
+    @js.native
     def getDeviceSelector(): String = js.native
     /**
       * Retrieves an Advanced Query Syntax (AQS) string for the inter-integrated circuit (I²C) bus that has the specified friendly name. You can use this string with the DeviceInformation.FindAllAsync method to get a DeviceInformation object for that bus.
       * @param friendlyName A friendly name for the particular I²C bus on a particular hardware platform for which you want to get the AQS string.
       * @return An AQS string for the I²C bus that friendlyName specifies, which you can use with the DeviceInformation.FindAllAsync method to get a DeviceInformation object for that bus.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.I2c.I2cDevice.getDeviceSelector")
+    @js.native
     def getDeviceSelector(friendlyName: String): String = js.native
   }
   
   /** Describes the modes in which you can connect to an inter-integrated circuit (I²C) bus address. These modes determine whether other connections to the I²C bus address can be opened while you are connected to the I²C bus address. */
+  @JSGlobal("Windows.Devices.I2c.I2cSharingMode")
   @js.native
-  object I2cSharingMode extends js.Object {
+  object I2cSharingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.I2c.I2cSharingMode with Double] = js.native
@@ -99,8 +114,9 @@ object I2c extends js.Object {
   }
   
   /** Describes whether the data transfers that the ReadPartial , WritePartial , or WriteReadPartial method performed succeeded, or provides the reason that the transfers did not succeed. */
+  @JSGlobal("Windows.Devices.I2c.I2cTransferStatus")
   @js.native
-  object I2cTransferStatus extends js.Object {
+  object I2cTransferStatus extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.I2c.I2cTransferStatus with Double] = js.native
@@ -113,37 +129,78 @@ object I2c extends js.Object {
   }
   
   /** This API exposes a Provider interface and associated classes for the user to implement for a specific controller. The I2C API needs a I²C Provider implementation to talk to the I²C controller. */
-  @js.native
-  object Provider extends js.Object {
+  object Provider {
     
-    @js.native
-    object ProviderI2cBusSpeed extends js.Object {
+    object ProviderI2cBusSpeed {
       
-      var fastMode: js.Any = js.native
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cBusSpeed")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var standardMode: js.Any = js.native
+      /* unmapped type */
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cBusSpeed.fastMode")
+      @js.native
+      def fastMode: js.Any = js.native
+      @scala.inline
+      def fastMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fastMode")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cBusSpeed.standardMode")
+      @js.native
+      def standardMode: js.Any = js.native
+      @scala.inline
+      def standardMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standardMode")(x.asInstanceOf[js.Any])
     }
     
+    @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings")
     @js.native
     abstract class ProviderI2cConnectionSettings ()
       extends typings.winrtUwp.Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings
     
-    @js.native
-    object ProviderI2cSharingMode extends js.Object {
+    object ProviderI2cSharingMode {
       
-      var exclusive: js.Any = js.native
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cSharingMode")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var shared: js.Any = js.native
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cSharingMode.exclusive")
+      @js.native
+      def exclusive: js.Any = js.native
+      @scala.inline
+      def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
+      
+      /* unmapped type */
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cSharingMode.shared")
+      @js.native
+      def shared: js.Any = js.native
+      @scala.inline
+      def shared_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
     }
     
-    @js.native
-    object ProviderI2cTransferStatus extends js.Object {
+    object ProviderI2cTransferStatus {
       
-      var fullTransfer: js.Any = js.native
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus")
+      @js.native
+      val ^ : js.Any = js.native
       
-      var partialTransfer: js.Any = js.native
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.fullTransfer")
+      @js.native
+      def fullTransfer: js.Any = js.native
+      @scala.inline
+      def fullTransfer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullTransfer")(x.asInstanceOf[js.Any])
       
-      var slaveAddressNotAcknowledged: js.Any = js.native
+      /* unmapped type */
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.partialTransfer")
+      @js.native
+      def partialTransfer: js.Any = js.native
+      @scala.inline
+      def partialTransfer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("partialTransfer")(x.asInstanceOf[js.Any])
+      
+      /* unmapped type */
+      @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.slaveAddressNotAcknowledged")
+      @js.native
+      def slaveAddressNotAcknowledged: js.Any = js.native
+      @scala.inline
+      def slaveAddressNotAcknowledged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slaveAddressNotAcknowledged")(x.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.daxMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterGroupStatus extends js.Object {
+trait ParameterGroupStatus extends StObject {
   
   /**
     * The node IDs of one or more nodes to be rebooted.
@@ -31,39 +32,27 @@ object ParameterGroupStatus {
   }
   
   @scala.inline
-  implicit class ParameterGroupStatusOps[Self <: ParameterGroupStatus] (val x: Self) extends AnyVal {
+  implicit class ParameterGroupStatusMutableBuilder[Self <: ParameterGroupStatus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNodeIdsToReboot(value: NodeIdentifierList): Self = StObject.set(x, "NodeIdsToReboot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNodeIdsToRebootUndefined: Self = StObject.set(x, "NodeIdsToReboot", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeIdsToRebootVarargs(value: String*): Self = StObject.set(x, "NodeIdsToReboot", js.Array(value :_*))
     
     @scala.inline
-    def setNodeIdsToRebootVarargs(value: String*): Self = this.set("NodeIdsToReboot", js.Array(value :_*))
+    def setParameterApplyStatus(value: String): Self = StObject.set(x, "ParameterApplyStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIdsToReboot(value: NodeIdentifierList): Self = this.set("NodeIdsToReboot", value.asInstanceOf[js.Any])
+    def setParameterApplyStatusUndefined: Self = StObject.set(x, "ParameterApplyStatus", js.undefined)
     
     @scala.inline
-    def deleteNodeIdsToReboot: Self = this.set("NodeIdsToReboot", js.undefined)
+    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterApplyStatus(value: String): Self = this.set("ParameterApplyStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterApplyStatus: Self = this.set("ParameterApplyStatus", js.undefined)
-    
-    @scala.inline
-    def setParameterGroupName(value: String): Self = this.set("ParameterGroupName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParameterGroupName: Self = this.set("ParameterGroupName", js.undefined)
+    def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
   }
 }

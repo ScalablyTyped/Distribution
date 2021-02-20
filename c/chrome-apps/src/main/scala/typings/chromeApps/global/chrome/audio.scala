@@ -6,6 +6,7 @@ import typings.chromeApps.chrome.audio.Filter
 import typings.chromeApps.chrome.audio.SetDeviceProperties
 import typings.chromeApps.chrome.audio.StreamType
 import typings.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +24,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * about and control the audio devices attached to the system.
   * This API is currently only available in kiosk mode for ChromeOS.
   */
-@JSGlobal("chrome.audio")
-@js.native
-object audio extends js.Object {
+object audio {
   
+  @JSGlobal("chrome.audio.getDevices")
+  @js.native
   def getDevices(callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = js.native
   /**
     * Gets a list of audio devices filtered based on |filter|.
     */
+  @JSGlobal("chrome.audio.getDevices")
+  @js.native
   def getDevices(filter: Filter, callback: js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]): Unit = js.native
   
   /**
@@ -38,6 +41,8 @@ object audio extends js.Object {
     * @param streamType Stream type for which mute state should be fetched.
     * @param callback Callback reporting whether mute is set or not for specified stream type.
     */
+  @JSGlobal("chrome.audio.getMute")
+  @js.native
   def getMute(streamType: StreamType, callback: js.Function1[/* value */ Boolean, Unit]): Unit = js.native
   
   /**
@@ -45,9 +50,13 @@ object audio extends js.Object {
     * or existing devices being removed.
     * callback `devices` contains a list of all present audio devices after the change.
     */
+  @JSGlobal("chrome.audio.onDeviceListChanged")
+  @js.native
   val onDeviceListChanged: typings.chromeApps.chrome.events.Event[js.Function1[/* devices */ js.Array[AudioDeviceInfo], Unit]] = js.native
   
   /** Fired when sound level changes for an active audio device. */
+  @JSGlobal("chrome.audio.onLevelChanged")
+  @js.native
   val onLevelChanged: typings.chromeApps.chrome.events.Event[js.Function2[/* deviceId */ String, /* level */ integer, Unit]] = js.native
   
   /**
@@ -55,9 +64,13 @@ object audio extends js.Object {
     * Note that mute state is system-wide and the new value applies to
     * every audio device with specified stream type.
     */
+  @JSGlobal("chrome.audio.onMuteChanged")
+  @js.native
   val onMuteChanged: typings.chromeApps.chrome.events.Event[js.Function2[/* streamType */ js.Array[StreamType], /* isMuted */ Boolean, Unit]] = js.native
   
   /** Sets lists of active input and/or output devices. */
+  @JSGlobal("chrome.audio.setDevices")
+  @js.native
   def setDevices(ids: js.Array[DeviceIdLists | String], callback: js.Function0[Unit]): Unit = js.native
   
   /**
@@ -66,9 +79,15 @@ object audio extends js.Object {
     * @param isMuted New mute value.
     * @param [callback] If you specify the callback parameter, it should be a function that looks like this: function() {...};
     */
+  @JSGlobal("chrome.audio.setMute")
+  @js.native
   def setMute(streamType: StreamType, isMuted: Boolean): Unit = js.native
+  @JSGlobal("chrome.audio.setMute")
+  @js.native
   def setMute(streamType: StreamType, isMuted: Boolean, callback: js.Function0[Unit]): Unit = js.native
   
   /** Sets the properties for the input or output device. */
+  @JSGlobal("chrome.audio.setProperties")
+  @js.native
   def setProperties(id: String, properties: SetDeviceProperties, callback: js.Function0[Unit]): Unit = js.native
 }

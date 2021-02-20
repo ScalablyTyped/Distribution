@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,27 +51,15 @@ object LiteralType {
   }
   
   @scala.inline
-  implicit class LiteralTypeOps[Self <: LiteralType] (val x: Self) extends AnyVal {
+  implicit class LiteralTypeMutableBuilder[Self <: LiteralType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFreshType(value: LiteralType): Self = StObject.set(x, "freshType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRegularType(value: LiteralType): Self = StObject.set(x, "regularType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFreshType(value: LiteralType): Self = this.set("freshType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegularType(value: LiteralType): Self = this.set("regularType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: java.lang.String | Double | PseudoBigInt): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setValue(value: java.lang.String | Double | PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

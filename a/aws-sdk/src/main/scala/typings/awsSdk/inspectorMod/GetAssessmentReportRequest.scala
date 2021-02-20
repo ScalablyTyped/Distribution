@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAssessmentReportRequest extends js.Object {
+trait GetAssessmentReportRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment run for which you want to generate a report.
@@ -31,27 +32,15 @@ object GetAssessmentReportRequest {
   }
   
   @scala.inline
-  implicit class GetAssessmentReportRequestOps[Self <: GetAssessmentReportRequest] (val x: Self) extends AnyVal {
+  implicit class GetAssessmentReportRequestMutableBuilder[Self <: GetAssessmentReportRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReportFileFormat(value: ReportFileFormat): Self = StObject.set(x, "reportFileFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = this.set("assessmentRunArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportFileFormat(value: ReportFileFormat): Self = this.set("reportFileFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReportType(value: ReportType): Self = this.set("reportType", value.asInstanceOf[js.Any])
+    def setReportType(value: ReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddOnUpdateRequest extends js.Object {
+trait AddOnUpdateRequest extends StObject {
   
   var amount: js.UndefOr[String] = js.native
   
@@ -26,45 +27,33 @@ object AddOnUpdateRequest {
   }
   
   @scala.inline
-  implicit class AddOnUpdateRequestOps[Self <: AddOnUpdateRequest] (val x: Self) extends AnyVal {
+  implicit class AddOnUpdateRequestMutableBuilder[Self <: AddOnUpdateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExistingId(value: String): Self = StObject.set(x, "existingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExistingId(value: String): Self = this.set("existingId", value.asInstanceOf[js.Any])
+    def setNeverExpires(value: Boolean): Self = StObject.set(x, "neverExpires", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setNeverExpiresUndefined: Self = StObject.set(x, "neverExpires", js.undefined)
     
     @scala.inline
-    def deleteAmount: Self = this.set("amount", js.undefined)
+    def setNumberOfBillingCycles(value: Double): Self = StObject.set(x, "numberOfBillingCycles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeverExpires(value: Boolean): Self = this.set("neverExpires", value.asInstanceOf[js.Any])
+    def setNumberOfBillingCyclesUndefined: Self = StObject.set(x, "numberOfBillingCycles", js.undefined)
     
     @scala.inline
-    def deleteNeverExpires: Self = this.set("neverExpires", js.undefined)
+    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfBillingCycles(value: Double): Self = this.set("numberOfBillingCycles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfBillingCycles: Self = this.set("numberOfBillingCycles", js.undefined)
-    
-    @scala.inline
-    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

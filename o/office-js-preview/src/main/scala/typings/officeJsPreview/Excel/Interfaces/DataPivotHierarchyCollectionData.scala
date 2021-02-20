@@ -1,12 +1,13 @@
 package typings.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `dataPivotHierarchyCollection.toJSON()`. */
 @js.native
-trait DataPivotHierarchyCollectionData extends js.Object {
+trait DataPivotHierarchyCollectionData extends StObject {
   
   var items: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.native
 }
@@ -19,27 +20,15 @@ object DataPivotHierarchyCollectionData {
   }
   
   @scala.inline
-  implicit class DataPivotHierarchyCollectionDataOps[Self <: DataPivotHierarchyCollectionData] (val x: Self) extends AnyVal {
+  implicit class DataPivotHierarchyCollectionDataMutableBuilder[Self <: DataPivotHierarchyCollectionData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[DataPivotHierarchyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: DataPivotHierarchyData*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[DataPivotHierarchyData]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setItemsVarargs(value: DataPivotHierarchyData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

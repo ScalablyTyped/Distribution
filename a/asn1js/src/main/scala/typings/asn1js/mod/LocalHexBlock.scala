@@ -1,5 +1,6 @@
 package typings.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class LocalHexBlock protected () extends ILocalHexBlock {
   def this(params: js.Any) = this()
 }
-/* static members */
-@JSImport("asn1js", "LocalHexBlock")
-@js.native
-object LocalHexBlock extends js.Object {
+object LocalHexBlock {
   
   /**
     * Aux function, need to get a block name. Need to have it here for inhiritence
@@ -22,5 +20,8 @@ object LocalHexBlock extends js.Object {
     * 
     * @memberOf LocalHexBlockMixin
     */
+  /* static member */
+  @JSImport("asn1js", "LocalHexBlock.blockName")
+  @js.native
   def blockName(): String = js.native
 }

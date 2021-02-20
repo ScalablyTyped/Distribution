@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class Debug ()
   extends typings.microsoftAjax.Sys.Debug
-/* static members */
-@JSGlobal("Sys.Debug")
-@js.native
-object Debug extends js.Object {
+object Debug {
   
   //#endregion
   //#region Methods
@@ -36,14 +34,26 @@ object Debug extends js.Object {
     * @param displayCaller
     *      (Optional) true to indicate that the name of the function that is calling assert should be displayed in the message. The default is false.
     */
+  /* static member */
+  @JSGlobal("Sys.Debug.assert")
+  @js.native
   def assert(condition: Boolean): Unit = js.native
+  @JSGlobal("Sys.Debug.assert")
+  @js.native
   def assert(condition: Boolean, message: js.UndefOr[scala.Nothing], displayCaller: Boolean): Unit = js.native
+  @JSGlobal("Sys.Debug.assert")
+  @js.native
   def assert(condition: Boolean, message: String): Unit = js.native
+  @JSGlobal("Sys.Debug.assert")
+  @js.native
   def assert(condition: Boolean, message: String, displayCaller: Boolean): Unit = js.native
   
   /**
     * Clears all trace messages from the trace console.
     */
+  /* static member */
+  @JSGlobal("Sys.Debug.clearTrace")
+  @js.native
   def clearTrace(): Unit = js.native
   
   /**
@@ -51,6 +61,9 @@ object Debug extends js.Object {
     * @param message
     *           The message to display.
     */
+  /* static member */
+  @JSGlobal("Sys.Debug.fail")
+  @js.native
   def fail(message: String): Unit = js.native
   
   /**
@@ -58,6 +71,9 @@ object Debug extends js.Object {
     * @param text
     *       The text to display.
     */
+  /* static member */
+  @JSGlobal("Sys.Debug.trace")
+  @js.native
   def trace(text: String): Unit = js.native
   
   /**
@@ -67,6 +83,11 @@ object Debug extends js.Object {
     * @param name
     *      (Optional) The name of the object.
     */
+  /* static member */
+  @JSGlobal("Sys.Debug.traceDump")
+  @js.native
   def traceDump(`object`: js.Any): Unit = js.native
+  @JSGlobal("Sys.Debug.traceDump")
+  @js.native
   def traceDump(`object`: js.Any, name: String): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.mapsjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeometryFieldName extends js.Object {
+trait GeometryFieldName extends StObject {
   
   var bleedRatio: js.UndefOr[Double] = js.native
   
@@ -22,33 +23,21 @@ object GeometryFieldName {
   }
   
   @scala.inline
-  implicit class GeometryFieldNameOps[Self <: GeometryFieldName] (val x: Self) extends AnyVal {
+  implicit class GeometryFieldNameMutableBuilder[Self <: GeometryFieldName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBleedRatio(value: Double): Self = StObject.set(x, "bleedRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBleedRatioUndefined: Self = StObject.set(x, "bleedRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGeometryFieldName(value: String): Self = StObject.set(x, "geometryFieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryFieldName(value: String): Self = this.set("geometryFieldName", value.asInstanceOf[js.Any])
+    def setValueFieldNames(value: js.Array[String]): Self = StObject.set(x, "valueFieldNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueFieldNamesVarargs(value: String*): Self = this.set("valueFieldNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueFieldNames(value: js.Array[String]): Self = this.set("valueFieldNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBleedRatio(value: Double): Self = this.set("bleedRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBleedRatio: Self = this.set("bleedRatio", js.undefined)
+    def setValueFieldNamesVarargs(value: String*): Self = StObject.set(x, "valueFieldNames", js.Array(value :_*))
   }
 }

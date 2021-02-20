@@ -1,12 +1,13 @@
 package typings.googleapis.anon
 
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaJsonObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertId extends js.Object {
+trait InsertId extends StObject {
   
   var insertId: js.UndefOr[String] = js.native
   
@@ -21,30 +22,18 @@ object InsertId {
   }
   
   @scala.inline
-  implicit class InsertIdOps[Self <: InsertId] (val x: Self) extends AnyVal {
+  implicit class InsertIdMutableBuilder[Self <: InsertId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertId(value: String): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJson(value: SchemaJsonObject): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertId(value: String): Self = this.set("insertId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertId: Self = this.set("insertId", js.undefined)
-    
-    @scala.inline
-    def setJson(value: SchemaJsonObject): Self = this.set("json", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJson: Self = this.set("json", js.undefined)
+    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
   }
 }

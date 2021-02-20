@@ -1,6 +1,7 @@
 package typings.speedtestNet.mod
 
 import typings.speedtestNet.speedtestNetStrings.config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,36 +37,24 @@ object ConfigEvent {
   }
   
   @scala.inline
-  implicit class ConfigEventOps[Self <: ConfigEvent] (val x: Self) extends AnyVal {
+  implicit class ConfigEventMutableBuilder[Self <: ConfigEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: AppData): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServers(value: js.Array[ServerData]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApp(value: AppData): Self = this.set("app", value.asInstanceOf[js.Any])
+    def setServersVarargs(value: ServerData*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
     @scala.inline
-    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    def setSuite(value: SuiteData): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServersVarargs(value: ServerData*): Self = this.set("servers", js.Array(value :_*))
-    
-    @scala.inline
-    def setServers(value: js.Array[ServerData]): Self = this.set("servers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuite(value: SuiteData): Self = this.set("suite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: config): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: config): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

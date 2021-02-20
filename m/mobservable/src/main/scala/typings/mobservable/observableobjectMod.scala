@@ -6,16 +6,16 @@ import typings.mobservable.dnodeMod.DataNode
 import typings.mobservable.interfacesMod.IContextInfoStruct
 import typings.mobservable.interfacesMod.IObjectChange
 import typings.mobservable.interfacesMod.Lambda
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobservable/lib/observableobject", JSImport.Namespace)
-@js.native
-object observableobjectMod extends js.Object {
+object observableobjectMod {
   
+  @JSImport("mobservable/lib/observableobject", "ObservableObject")
   @js.native
-  class ObservableObject protected () extends js.Object {
+  class ObservableObject protected () extends StObject {
     def this(target: js.Any, context: IContextInfoStruct, mode: ValueMode) = this()
     
     var _events: js.Any = js.native
@@ -35,9 +35,10 @@ object observableobjectMod extends js.Object {
     var values: StringDictionary[DataNode] = js.native
   }
   /* static members */
-  @js.native
-  object ObservableObject extends js.Object {
+  object ObservableObject {
     
+    @JSImport("mobservable/lib/observableobject", "ObservableObject.asReactive")
+    @js.native
     def asReactive(target: js.Any, context: IContextInfoStruct, mode: ValueMode): ObservableObject = js.native
   }
 }

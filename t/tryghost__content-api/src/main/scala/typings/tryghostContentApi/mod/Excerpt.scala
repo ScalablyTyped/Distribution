@@ -1,11 +1,12 @@
 package typings.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Excerpt extends js.Object {
+trait Excerpt extends StObject {
   
   var custom_excerpt: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Excerpt {
   }
   
   @scala.inline
-  implicit class ExcerptOps[Self <: Excerpt] (val x: Self) extends AnyVal {
+  implicit class ExcerptMutableBuilder[Self <: Excerpt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustom_excerpt(value: String): Self = StObject.set(x, "custom_excerpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustom_excerptUndefined: Self = StObject.set(x, "custom_excerpt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcerpt(value: String): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom_excerpt(value: String): Self = this.set("custom_excerpt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustom_excerpt: Self = this.set("custom_excerpt", js.undefined)
-    
-    @scala.inline
-    def setExcerpt(value: String): Self = this.set("excerpt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExcerpt: Self = this.set("excerpt", js.undefined)
+    def setExcerptUndefined: Self = StObject.set(x, "excerpt", js.undefined)
   }
 }

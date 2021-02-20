@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyObject extends js.Object {
+trait KeyObject extends StObject {
   
   var passphrase: js.UndefOr[String] = js.native
   
@@ -21,27 +22,15 @@ object KeyObject {
   }
   
   @scala.inline
-  implicit class KeyObjectOps[Self <: KeyObject] (val x: Self) extends AnyVal {
+  implicit class KeyObjectMutableBuilder[Self <: KeyObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPem(value: String | Buffer): Self = this.set("pem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    def setPem(value: String | Buffer): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
   }
 }

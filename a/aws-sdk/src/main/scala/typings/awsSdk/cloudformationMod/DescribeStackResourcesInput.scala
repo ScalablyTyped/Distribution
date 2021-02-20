@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeStackResourcesInput extends js.Object {
+trait DescribeStackResourcesInput extends StObject {
   
   /**
     * The logical name of the resource as specified in the template. Default: There is no default value.
@@ -31,36 +32,24 @@ object DescribeStackResourcesInput {
   }
   
   @scala.inline
-  implicit class DescribeStackResourcesInputOps[Self <: DescribeStackResourcesInput] (val x: Self) extends AnyVal {
+  implicit class DescribeStackResourcesInputMutableBuilder[Self <: DescribeStackResourcesInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogicalResourceIdUndefined: Self = StObject.set(x, "LogicalResourceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = this.set("LogicalResourceId", value.asInstanceOf[js.Any])
+    def setPhysicalResourceIdUndefined: Self = StObject.set(x, "PhysicalResourceId", js.undefined)
     
     @scala.inline
-    def deleteLogicalResourceId: Self = this.set("LogicalResourceId", js.undefined)
+    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhysicalResourceId(value: PhysicalResourceId): Self = this.set("PhysicalResourceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhysicalResourceId: Self = this.set("PhysicalResourceId", js.undefined)
-    
-    @scala.inline
-    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackName: Self = this.set("StackName", js.undefined)
+    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
   }
 }

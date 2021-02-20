@@ -1,11 +1,12 @@
 package typings.knockoutPreRendered
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutMemoization extends js.Object {
+trait KnockoutMemoization extends StObject {
   
   def memoize(callback: js.Function0[String]): String = js.native
   
@@ -29,30 +30,18 @@ object KnockoutMemoization {
   }
   
   @scala.inline
-  implicit class KnockoutMemoizationOps[Self <: KnockoutMemoization] (val x: Self) extends AnyVal {
+  implicit class KnockoutMemoizationMutableBuilder[Self <: KnockoutMemoization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMemoize(value: js.Function0[String] => String): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParseMemoText(value: String => String): Self = StObject.set(x, "parseMemoText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUnmemoize(value: (String, js.Array[_]) => Boolean): Self = StObject.set(x, "unmemoize", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMemoize(value: js.Function0[String] => String): Self = this.set("memoize", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParseMemoText(value: String => String): Self = this.set("parseMemoText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnmemoize(value: (String, js.Array[_]) => Boolean): Self = this.set("unmemoize", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUnmemoizeDomNodeAndDescendants(value: (js.Any, js.Array[_]) => Boolean): Self = this.set("unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
+    def setUnmemoizeDomNodeAndDescendants(value: (js.Any, js.Array[_]) => Boolean): Self = StObject.set(x, "unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
   }
 }

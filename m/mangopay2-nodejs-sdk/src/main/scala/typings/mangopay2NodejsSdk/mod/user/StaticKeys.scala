@@ -1,6 +1,7 @@
 package typings.mangopay2NodejsSdk.mod.user
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Id_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ShareholderDeclaration
   - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.Statute
 */
-trait StaticKeys extends js.Object
+trait StaticKeys extends StObject
 object StaticKeys {
   
   @scala.inline

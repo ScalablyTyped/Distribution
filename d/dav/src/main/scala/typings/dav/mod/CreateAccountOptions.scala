@@ -3,12 +3,13 @@ package typings.dav.mod
 import typings.dav.davStrings.caldav
 import typings.dav.davStrings.carddav
 import typings.dav.mod.transport.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAccountOptions extends js.Object {
+trait CreateAccountOptions extends StObject {
   
   /**
     * one of 'caldav' or 'carddav'. Defaults to 'caldav'.
@@ -59,66 +60,54 @@ object CreateAccountOptions {
   }
   
   @scala.inline
-  implicit class CreateAccountOptionsOps[Self <: CreateAccountOptions] (val x: Self) extends AnyVal {
+  implicit class CreateAccountOptionsMutableBuilder[Self <: CreateAccountOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountType(value: caldav | carddav): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
     @scala.inline
-    def setAccountType(value: caldav | carddav): Self = this.set("accountType", value.asInstanceOf[js.Any])
+    def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
     @scala.inline
-    def deleteAccountType: Self = this.set("accountType", js.undefined)
+    def setLoadCollections(value: Boolean): Self = StObject.set(x, "loadCollections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltersVarargs(value: js.Object*): Self = this.set("filters", js.Array(value :_*))
+    def setLoadCollectionsUndefined: Self = StObject.set(x, "loadCollections", js.undefined)
     
     @scala.inline
-    def setFilters(value: js.Array[js.Object]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    def setLoadObjects(value: Boolean): Self = StObject.set(x, "loadObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilters: Self = this.set("filters", js.undefined)
+    def setLoadObjectsUndefined: Self = StObject.set(x, "loadObjects", js.undefined)
     
     @scala.inline
-    def setLoadCollections(value: Boolean): Self = this.set("loadCollections", value.asInstanceOf[js.Any])
+    def setSandbox(value: Sandbox | js.Object): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadCollections: Self = this.set("loadCollections", js.undefined)
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def setLoadObjects(value: Boolean): Self = this.set("loadObjects", value.asInstanceOf[js.Any])
+    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLoadObjects: Self = this.set("loadObjects", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Sandbox | js.Object): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
-    
-    @scala.inline
-    def setXhr(value: Transport): Self = this.set("xhr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXhr: Self = this.set("xhr", js.undefined)
+    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

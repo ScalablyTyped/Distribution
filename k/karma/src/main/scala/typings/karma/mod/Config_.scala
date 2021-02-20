@@ -1,11 +1,12 @@
 package typings.karma.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Config_ extends js.Object {
+trait Config_ extends StObject {
   
   var LOG_DEBUG: String = js.native
   
@@ -35,36 +36,24 @@ object Config_ {
   }
   
   @scala.inline
-  implicit class Config_Ops[Self <: Config_] (val x: Self) extends AnyVal {
+  implicit class Config_MutableBuilder[Self <: Config_] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLOG_DEBUG(value: String): Self = StObject.set(x, "LOG_DEBUG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLOG_DISABLE(value: String): Self = StObject.set(x, "LOG_DISABLE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLOG_ERROR(value: String): Self = StObject.set(x, "LOG_ERROR", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_DEBUG(value: String): Self = this.set("LOG_DEBUG", value.asInstanceOf[js.Any])
+    def setLOG_INFO(value: String): Self = StObject.set(x, "LOG_INFO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_DISABLE(value: String): Self = this.set("LOG_DISABLE", value.asInstanceOf[js.Any])
+    def setLOG_WARN(value: String): Self = StObject.set(x, "LOG_WARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLOG_ERROR(value: String): Self = this.set("LOG_ERROR", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLOG_INFO(value: String): Self = this.set("LOG_INFO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLOG_WARN(value: String): Self = this.set("LOG_WARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSet(value: ConfigOptions => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setSet(value: ConfigOptions => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

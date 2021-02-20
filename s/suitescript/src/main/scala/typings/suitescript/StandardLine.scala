@@ -1,11 +1,12 @@
 package typings.suitescript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardLine extends js.Object {
+trait StandardLine extends StObject {
   
   def getEntityId(): Double = js.native
   
@@ -44,45 +45,33 @@ object StandardLine {
   }
   
   @scala.inline
-  implicit class StandardLineOps[Self <: StandardLine] (val x: Self) extends AnyVal {
+  implicit class StandardLineMutableBuilder[Self <: StandardLine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetEntityId(value: () => Double): Self = StObject.set(x, "getEntityId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSubsidiaryId(value: () => Double): Self = StObject.set(x, "getSubsidiaryId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetEntityId(value: () => Double): Self = this.set("getEntityId", js.Any.fromFunction0(value))
+    def setGetTaxAmount(value: () => String): Self = StObject.set(x, "getTaxAmount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetId(value: () => Double): Self = this.set("getId", js.Any.fromFunction0(value))
+    def setGetTaxItemId(value: () => Double): Self = StObject.set(x, "getTaxItemId", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSubsidiaryId(value: () => Double): Self = this.set("getSubsidiaryId", js.Any.fromFunction0(value))
+    def setGetTaxType(value: () => String): Self = StObject.set(x, "getTaxType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTaxAmount(value: () => String): Self = this.set("getTaxAmount", js.Any.fromFunction0(value))
+    def setGetTaxableAmount(value: () => String): Self = StObject.set(x, "getTaxableAmount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTaxItemId(value: () => Double): Self = this.set("getTaxItemId", js.Any.fromFunction0(value))
+    def setIsPosting(value: () => Boolean): Self = StObject.set(x, "isPosting", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetTaxType(value: () => String): Self = this.set("getTaxType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTaxableAmount(value: () => String): Self = this.set("getTaxableAmount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsPosting(value: () => Boolean): Self = this.set("isPosting", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsTaxable(value: () => Boolean): Self = this.set("isTaxable", js.Any.fromFunction0(value))
+    def setIsTaxable(value: () => Boolean): Self = StObject.set(x, "isTaxable", js.Any.fromFunction0(value))
   }
 }

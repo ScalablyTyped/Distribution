@@ -1,11 +1,12 @@
 package typings.flexmonster.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintOptions extends js.Object {
+trait PrintOptions extends StObject {
   
   var footer: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object PrintOptions {
   }
   
   @scala.inline
-  implicit class PrintOptionsOps[Self <: PrintOptions] (val x: Self) extends AnyVal {
+  implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFooter(value: String): Self = this.set("footer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFooter: Self = this.set("footer", js.undefined)
-    
-    @scala.inline
-    def setHeader(value: String): Self = this.set("header", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeader: Self = this.set("header", js.undefined)
+    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

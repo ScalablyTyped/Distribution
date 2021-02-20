@@ -1,5 +1,6 @@
 package typings.nodeMysqlWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,11 +23,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @returnTye {U}
   * @return {U}
   */
-class Helper () extends js.Object
-/* static members */
-@JSImport("node-mysql-wrapper", "Helper")
-@js.native
-object Helper extends js.Object {
+class Helper () extends StObject
+object Helper {
   
   /**
     * Create and return a copy of an object.
@@ -34,6 +32,9 @@ object Helper extends js.Object {
     * @returnType {T}
     * @return {T}
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.copyObject")
+  @js.native
   def copyObject[T](`object`: T): T = js.native
   
   /**
@@ -43,6 +44,9 @@ object Helper extends js.Object {
     * @returnType {U}
     * @return {U}
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.forEachKey")
+  @js.native
   def forEachKey[T, U](map: Map[T], callback: js.Function1[/* key */ String, U]): U = js.native
   
   /**
@@ -52,6 +56,9 @@ object Helper extends js.Object {
     * @returnType {U}
     * @return {U}
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.forEachValue")
+  @js.native
   def forEachValue[T, U](map: T, callback: js.Function1[/* value */ T, U]): U = js.native
   
   /**
@@ -59,6 +66,9 @@ object Helper extends js.Object {
     * @param {obj} the object to pass
     * @return boolean
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.hasRules")
+  @js.native
   def hasRules(obj: js.Any): Boolean = js.native
   
   /**
@@ -66,6 +76,9 @@ object Helper extends js.Object {
     * @param {functionToCheck} the object or function to pass
     * @return boolean
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.isFunction")
+  @js.native
   def isFunction(functionToCheck: js.Any): Boolean = js.native
   
   /**
@@ -74,6 +87,9 @@ object Helper extends js.Object {
     * @returnType {string}
     * @return {string}
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.toObjectProperty")
+  @js.native
   def toObjectProperty(columnKey: String): String = js.native
   
   /**
@@ -82,5 +98,8 @@ object Helper extends js.Object {
     * @returnType {string}
     * @return {string}
     */
+  /* static member */
+  @JSImport("node-mysql-wrapper", "Helper.toRowProperty")
+  @js.native
   def toRowProperty(objectKey: String): String = js.native
 }

@@ -2,16 +2,16 @@ package typings.imageQ
 
 import typings.imageQ.anon.G
 import typings.imageQ.pointMod.Point
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("image-q/dist/distance/abstractDistanceCalculator", JSImport.Namespace)
-@js.native
-object abstractDistanceCalculatorMod extends js.Object {
+object abstractDistanceCalculatorMod {
   
+  @JSImport("image-q/dist/distance/abstractDistanceCalculator", "AbstractDistanceCalculator")
   @js.native
-  abstract class AbstractDistanceCalculator () extends js.Object {
+  abstract class AbstractDistanceCalculator () extends StObject {
     
     var _maxDistance: Double = js.native
     

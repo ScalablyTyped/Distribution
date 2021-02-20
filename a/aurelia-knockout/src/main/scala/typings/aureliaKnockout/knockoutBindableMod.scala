@@ -2,16 +2,16 @@ package typings.aureliaKnockout
 
 import typings.aureliaBinding.mod.InternalPropertyObserver
 import typings.aureliaBinding.mod.ObserverLocator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aurelia-knockout/dist/commonjs/knockout-bindable", JSImport.Namespace)
-@js.native
-object knockoutBindableMod extends js.Object {
+object knockoutBindableMod {
   
+  @JSImport("aurelia-knockout/dist/commonjs/knockout-bindable", "KnockoutBindable")
   @js.native
-  class KnockoutBindable protected () extends js.Object {
+  class KnockoutBindable protected () extends StObject {
     def this(observerLocator: ObserverLocator) = this()
     
     /**

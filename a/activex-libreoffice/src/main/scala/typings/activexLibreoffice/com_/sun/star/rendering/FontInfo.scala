@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.rendering
 
 import typings.activexLibreoffice.com_.sun.star.util.TriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @since OOo 2.0
   */
 @js.native
-trait FontInfo extends js.Object {
+trait FontInfo extends StObject {
   
   /**
     * The name of the font family.
@@ -88,45 +89,33 @@ object FontInfo {
   }
   
   @scala.inline
-  implicit class FontInfoOps[Self <: FontInfo] (val x: Self) extends AnyVal {
+  implicit class FontInfoMutableBuilder[Self <: FontInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFamilyName(value: String): Self = StObject.set(x, "FamilyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFontDescription(value: Panose): Self = StObject.set(x, "FontDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsSymbolFont(value: TriState): Self = StObject.set(x, "IsSymbolFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("FamilyName", value.asInstanceOf[js.Any])
+    def setIsVertical(value: TriState): Self = StObject.set(x, "IsVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescription(value: Panose): Self = this.set("FontDescription", value.asInstanceOf[js.Any])
+    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSymbolFont(value: TriState): Self = this.set("IsSymbolFont", value.asInstanceOf[js.Any])
+    def setUnicodeRanges0(value: Double): Self = StObject.set(x, "UnicodeRanges0", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsVertical(value: TriState): Self = this.set("IsVertical", value.asInstanceOf[js.Any])
+    def setUnicodeRanges1(value: Double): Self = StObject.set(x, "UnicodeRanges1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyleName(value: String): Self = this.set("StyleName", value.asInstanceOf[js.Any])
+    def setUnicodeRanges2(value: Double): Self = StObject.set(x, "UnicodeRanges2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnicodeRanges0(value: Double): Self = this.set("UnicodeRanges0", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnicodeRanges1(value: Double): Self = this.set("UnicodeRanges1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnicodeRanges2(value: Double): Self = this.set("UnicodeRanges2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnicodeRanges3(value: Double): Self = this.set("UnicodeRanges3", value.asInstanceOf[js.Any])
+    def setUnicodeRanges3(value: Double): Self = StObject.set(x, "UnicodeRanges3", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class Engine
   */
 @js.native
-trait Engine extends js.Object {
+trait Engine extends StObject {
   
   /**
     * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
@@ -112,45 +113,33 @@ object Engine {
   }
   
   @scala.inline
-  implicit class EngineOps[Self <: Engine] (val x: Self) extends AnyVal {
+  implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBroadphase(value: Grid): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConstraintIterations(value: Double): Self = StObject.set(x, "constraintIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableSleeping(value: Boolean): Self = StObject.set(x, "enableSleeping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBroadphase(value: Grid): Self = this.set("broadphase", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConstraintIterations(value: Double): Self = this.set("constraintIterations", value.asInstanceOf[js.Any])
+    def setPairs(value: js.Any): Self = StObject.set(x, "pairs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableSleeping(value: Boolean): Self = this.set("enableSleeping", value.asInstanceOf[js.Any])
+    def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setTiming(value: IEngineTimingOptions): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPairs(value: js.Any): Self = this.set("pairs", value.asInstanceOf[js.Any])
+    def setVelocityIterations(value: Double): Self = StObject.set(x, "velocityIterations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionIterations(value: Double): Self = this.set("positionIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTiming(value: IEngineTimingOptions): Self = this.set("timing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVelocityIterations(value: Double): Self = this.set("velocityIterations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorld(value: World): Self = this.set("world", value.asInstanceOf[js.Any])
+    def setWorld(value: World): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
   }
 }

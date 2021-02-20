@@ -1,11 +1,12 @@
 package typings.jsrsasign.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Micros extends js.Object {
+trait Micros extends StObject {
   
   var micros: Double = js.native
   
@@ -22,27 +23,15 @@ object Micros {
   }
   
   @scala.inline
-  implicit class MicrosOps[Self <: Micros] (val x: Self) extends AnyVal {
+  implicit class MicrosMutableBuilder[Self <: Micros] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMicros(value: Double): Self = StObject.set(x, "micros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMillis(value: Double): Self = StObject.set(x, "millis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMicros(value: Double): Self = this.set("micros", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMillis(value: Double): Self = this.set("millis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
   }
 }

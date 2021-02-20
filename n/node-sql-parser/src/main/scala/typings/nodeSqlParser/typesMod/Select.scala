@@ -3,6 +3,7 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.Asterisk
 import typings.nodeSqlParser.nodeSqlParserStrings.DISTINCT
 import typings.nodeSqlParser.nodeSqlParserStrings.select
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,93 +43,81 @@ object Select {
   }
   
   @scala.inline
-  implicit class SelectOps[Self <: Select] (val x: Self) extends AnyVal {
+  implicit class SelectMutableBuilder[Self <: Select] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: (js.Array[_ | Column]) | Asterisk): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsVarargs(value: (js.Any | Column)*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistinct(value: DISTINCT): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: (js.Any | Column)*): Self = this.set("columns", js.Array(value :_*))
+    def setDistinctNull: Self = StObject.set(x, "distinct", null)
     
     @scala.inline
-    def setColumns(value: (js.Array[_ | Column]) | Asterisk): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setFrom(value: js.Array[From | Dual]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: select): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFromNull: Self = StObject.set(x, "from", null)
     
     @scala.inline
-    def setWhere(value: js.Any): Self = this.set("where", value.asInstanceOf[js.Any])
+    def setFromVarargs(value: (From | Dual)*): Self = StObject.set(x, "from", js.Array(value :_*))
     
     @scala.inline
-    def setDistinct(value: DISTINCT): Self = this.set("distinct", value.asInstanceOf[js.Any])
+    def setGroupby(value: js.Array[ColumnRef]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistinctNull: Self = this.set("distinct", null)
+    def setGroupbyNull: Self = StObject.set(x, "groupby", null)
     
     @scala.inline
-    def setFromVarargs(value: (From | Dual)*): Self = this.set("from", js.Array(value :_*))
+    def setGroupbyVarargs(value: ColumnRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def setFrom(value: js.Array[From | Dual]): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setHaving(value: js.Array[_]): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromNull: Self = this.set("from", null)
+    def setHavingNull: Self = StObject.set(x, "having", null)
     
     @scala.inline
-    def setGroupbyVarargs(value: ColumnRef*): Self = this.set("groupby", js.Array(value :_*))
+    def setHavingVarargs(value: js.Any*): Self = StObject.set(x, "having", js.Array(value :_*))
     
     @scala.inline
-    def setGroupby(value: js.Array[ColumnRef]): Self = this.set("groupby", value.asInstanceOf[js.Any])
+    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupbyNull: Self = this.set("groupby", null)
+    def setLimitNull: Self = StObject.set(x, "limit", null)
     
     @scala.inline
-    def setHavingVarargs(value: js.Any*): Self = this.set("having", js.Array(value :_*))
+    def setOptions(value: js.Array[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHaving(value: js.Array[_]): Self = this.set("having", value.asInstanceOf[js.Any])
+    def setOptionsNull: Self = StObject.set(x, "options", null)
     
     @scala.inline
-    def setHavingNull: Self = this.set("having", null)
+    def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
     
     @scala.inline
-    def setLimit(value: Limit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setOrderby(value: js.Array[OrderBy]): Self = StObject.set(x, "orderby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimitNull: Self = this.set("limit", null)
+    def setOrderbyNull: Self = StObject.set(x, "orderby", null)
     
     @scala.inline
-    def setOptionsVarargs(value: js.Any*): Self = this.set("options", js.Array(value :_*))
+    def setOrderbyVarargs(value: OrderBy*): Self = StObject.set(x, "orderby", js.Array(value :_*))
     
     @scala.inline
-    def setOptions(value: js.Array[_]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptionsNull: Self = this.set("options", null)
+    def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderbyVarargs(value: OrderBy*): Self = this.set("orderby", js.Array(value :_*))
+    def setWith(value: With): Self = StObject.set(x, "with", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderby(value: js.Array[OrderBy]): Self = this.set("orderby", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOrderbyNull: Self = this.set("orderby", null)
-    
-    @scala.inline
-    def setWith(value: With): Self = this.set("with", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWithNull: Self = this.set("with", null)
+    def setWithNull: Self = StObject.set(x, "with", null)
   }
 }

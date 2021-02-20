@@ -1,6 +1,7 @@
 package typings.titanium.Titanium.UI.Android
 
 import typings.titanium.ProxyEventMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,78 +79,66 @@ object DrawerLayoutEventMap {
   }
   
   @scala.inline
-  implicit class DrawerLayoutEventMapOps[Self <: DrawerLayoutEventMap] (val x: Self) extends AnyVal {
+  implicit class DrawerLayoutEventMapMutableBuilder[Self <: DrawerLayoutEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChange(value: DrawerLayoutChangeEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClick(value: DrawerLayoutClickEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClose(value: DrawerLayoutCloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChange(value: DrawerLayoutChangeEvent): Self = this.set("change", value.asInstanceOf[js.Any])
+    def setDblclick(value: DrawerLayoutDblclickEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick(value: DrawerLayoutClickEvent): Self = this.set("click", value.asInstanceOf[js.Any])
+    def setDoubletap(value: DrawerLayoutDoubletapEvent): Self = StObject.set(x, "doubletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose(value: DrawerLayoutCloseEvent): Self = this.set("close", value.asInstanceOf[js.Any])
+    def setFocus(value: DrawerLayoutFocusEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDblclick(value: DrawerLayoutDblclickEvent): Self = this.set("dblclick", value.asInstanceOf[js.Any])
+    def setKeypressed(value: DrawerLayoutKeypressedEvent): Self = StObject.set(x, "keypressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoubletap(value: DrawerLayoutDoubletapEvent): Self = this.set("doubletap", value.asInstanceOf[js.Any])
+    def setLongclick(value: DrawerLayoutLongclickEvent): Self = StObject.set(x, "longclick", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocus(value: DrawerLayoutFocusEvent): Self = this.set("focus", value.asInstanceOf[js.Any])
+    def setLongpress(value: DrawerLayoutLongpressEvent): Self = StObject.set(x, "longpress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeypressed(value: DrawerLayoutKeypressedEvent): Self = this.set("keypressed", value.asInstanceOf[js.Any])
+    def setOpen(value: DrawerLayoutOpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongclick(value: DrawerLayoutLongclickEvent): Self = this.set("longclick", value.asInstanceOf[js.Any])
+    def setPinch(value: DrawerLayoutPinchEvent): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpress(value: DrawerLayoutLongpressEvent): Self = this.set("longpress", value.asInstanceOf[js.Any])
+    def setPostlayout(value: DrawerLayoutPostlayoutEvent): Self = StObject.set(x, "postlayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: DrawerLayoutOpenEvent): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setSingletap(value: DrawerLayoutSingletapEvent): Self = StObject.set(x, "singletap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPinch(value: DrawerLayoutPinchEvent): Self = this.set("pinch", value.asInstanceOf[js.Any])
+    def setSlide(value: DrawerLayoutSlideEvent): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostlayout(value: DrawerLayoutPostlayoutEvent): Self = this.set("postlayout", value.asInstanceOf[js.Any])
+    def setSwipe(value: DrawerLayoutSwipeEvent): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingletap(value: DrawerLayoutSingletapEvent): Self = this.set("singletap", value.asInstanceOf[js.Any])
+    def setTouchcancel(value: DrawerLayoutTouchcancelEvent): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSlide(value: DrawerLayoutSlideEvent): Self = this.set("slide", value.asInstanceOf[js.Any])
+    def setTouchend(value: DrawerLayoutTouchendEvent): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSwipe(value: DrawerLayoutSwipeEvent): Self = this.set("swipe", value.asInstanceOf[js.Any])
+    def setTouchmove(value: DrawerLayoutTouchmoveEvent): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchcancel(value: DrawerLayoutTouchcancelEvent): Self = this.set("touchcancel", value.asInstanceOf[js.Any])
+    def setTouchstart(value: DrawerLayoutTouchstartEvent): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTouchend(value: DrawerLayoutTouchendEvent): Self = this.set("touchend", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchmove(value: DrawerLayoutTouchmoveEvent): Self = this.set("touchmove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTouchstart(value: DrawerLayoutTouchstartEvent): Self = this.set("touchstart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwofingertap(value: DrawerLayoutTwofingertapEvent): Self = this.set("twofingertap", value.asInstanceOf[js.Any])
+    def setTwofingertap(value: DrawerLayoutTwofingertapEvent): Self = StObject.set(x, "twofingertap", value.asInstanceOf[js.Any])
   }
 }

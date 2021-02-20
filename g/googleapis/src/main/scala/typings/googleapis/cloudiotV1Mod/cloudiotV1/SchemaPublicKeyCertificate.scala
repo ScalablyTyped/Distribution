@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A public key certificate format and data.
   */
 @js.native
-trait SchemaPublicKeyCertificate extends js.Object {
+trait SchemaPublicKeyCertificate extends StObject {
   
   /**
     * The certificate data.
@@ -34,36 +35,24 @@ object SchemaPublicKeyCertificate {
   }
   
   @scala.inline
-  implicit class SchemaPublicKeyCertificateOps[Self <: SchemaPublicKeyCertificate] (val x: Self) extends AnyVal {
+  implicit class SchemaPublicKeyCertificateMutableBuilder[Self <: SchemaPublicKeyCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    def setX509Details(value: SchemaX509CertificateDetails): Self = StObject.set(x, "x509Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
-    
-    @scala.inline
-    def setX509Details(value: SchemaX509CertificateDetails): Self = this.set("x509Details", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX509Details: Self = this.set("x509Details", js.undefined)
+    def setX509DetailsUndefined: Self = StObject.set(x, "x509Details", js.undefined)
   }
 }

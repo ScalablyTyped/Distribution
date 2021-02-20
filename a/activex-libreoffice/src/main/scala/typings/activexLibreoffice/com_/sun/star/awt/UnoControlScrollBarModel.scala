@@ -12,6 +12,7 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -170,72 +171,60 @@ object UnoControlScrollBarModel {
   }
   
   @scala.inline
-  implicit class UnoControlScrollBarModelOps[Self <: UnoControlScrollBarModel] (val x: Self) extends AnyVal {
+  implicit class UnoControlScrollBarModelMutableBuilder[Self <: UnoControlScrollBarModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockIncrement(value: Double): Self = StObject.set(x, "BlockIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: Color): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlockIncrement(value: Double): Self = this.set("BlockIncrement", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Double): Self = this.set("Border", value.asInstanceOf[js.Any])
+    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: Double): Self = this.set("BorderColor", value.asInstanceOf[js.Any])
+    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setLineIncrement(value: Double): Self = StObject.set(x, "LineIncrement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpText(value: String): Self = this.set("HelpText", value.asInstanceOf[js.Any])
+    def setLiveScroll(value: Boolean): Self = StObject.set(x, "LiveScroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHelpURL(value: String): Self = this.set("HelpURL", value.asInstanceOf[js.Any])
+    def setOrientation(value: Double): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineIncrement(value: Double): Self = this.set("LineIncrement", value.asInstanceOf[js.Any])
+    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLiveScroll(value: Boolean): Self = this.set("LiveScroll", value.asInstanceOf[js.Any])
+    def setRepeatDelay(value: Double): Self = StObject.set(x, "RepeatDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Double): Self = this.set("Orientation", value.asInstanceOf[js.Any])
+    def setScrollValue(value: Double): Self = StObject.set(x, "ScrollValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrintable(value: Boolean): Self = this.set("Printable", value.asInstanceOf[js.Any])
+    def setScrollValueMax(value: Double): Self = StObject.set(x, "ScrollValueMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatDelay(value: Double): Self = this.set("RepeatDelay", value.asInstanceOf[js.Any])
+    def setScrollValueMin(value: Double): Self = StObject.set(x, "ScrollValueMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollValue(value: Double): Self = this.set("ScrollValue", value.asInstanceOf[js.Any])
+    def setSymbolColor(value: Color): Self = StObject.set(x, "SymbolColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollValueMax(value: Double): Self = this.set("ScrollValueMax", value.asInstanceOf[js.Any])
+    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollValueMin(value: Double): Self = this.set("ScrollValueMin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSymbolColor(value: Color): Self = this.set("SymbolColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabstop(value: Boolean): Self = this.set("Tabstop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleSize(value: Double): Self = this.set("VisibleSize", value.asInstanceOf[js.Any])
+    def setVisibleSize(value: Double): Self = StObject.set(x, "VisibleSize", value.asInstanceOf[js.Any])
   }
 }

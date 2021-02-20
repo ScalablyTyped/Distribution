@@ -1,6 +1,7 @@
 package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Carries information about a Compute Engine VM resource.
   */
 @js.native
-trait SchemaVirtualMachine extends js.Object {
+trait SchemaVirtualMachine extends StObject {
   
   /**
     * The list of accelerators to attach to the VM.
@@ -108,90 +109,78 @@ object SchemaVirtualMachine {
   }
   
   @scala.inline
-  implicit class SchemaVirtualMachineOps[Self <: SchemaVirtualMachine] (val x: Self) extends AnyVal {
+  implicit class SchemaVirtualMachineMutableBuilder[Self <: SchemaVirtualMachine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerators(value: js.Array[SchemaAccelerator]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceleratorsVarargs(value: SchemaAccelerator*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
     
     @scala.inline
-    def setAcceleratorsVarargs(value: SchemaAccelerator*): Self = this.set("accelerators", js.Array(value :_*))
+    def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerators(value: js.Array[SchemaAccelerator]): Self = this.set("accelerators", value.asInstanceOf[js.Any])
+    def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
     
     @scala.inline
-    def deleteAccelerators: Self = this.set("accelerators", js.undefined)
+    def setBootImage(value: String): Self = StObject.set(x, "bootImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootDiskSizeGb(value: Double): Self = this.set("bootDiskSizeGb", value.asInstanceOf[js.Any])
+    def setBootImageUndefined: Self = StObject.set(x, "bootImage", js.undefined)
     
     @scala.inline
-    def deleteBootDiskSizeGb: Self = this.set("bootDiskSizeGb", js.undefined)
+    def setCpuPlatform(value: String): Self = StObject.set(x, "cpuPlatform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootImage(value: String): Self = this.set("bootImage", value.asInstanceOf[js.Any])
+    def setCpuPlatformUndefined: Self = StObject.set(x, "cpuPlatform", js.undefined)
     
     @scala.inline
-    def deleteBootImage: Self = this.set("bootImage", js.undefined)
+    def setDisks(value: js.Array[SchemaDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpuPlatform(value: String): Self = this.set("cpuPlatform", value.asInstanceOf[js.Any])
+    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
     @scala.inline
-    def deleteCpuPlatform: Self = this.set("cpuPlatform", js.undefined)
+    def setDisksVarargs(value: SchemaDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
     @scala.inline
-    def setDisksVarargs(value: SchemaDisk*): Self = this.set("disks", js.Array(value :_*))
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisks(value: js.Array[SchemaDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteDisks: Self = this.set("disks", js.undefined)
+    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setNetwork(value: SchemaNetwork): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    def setNvidiaDriverVersion(value: String): Self = StObject.set(x, "nvidiaDriverVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetwork(value: SchemaNetwork): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNvidiaDriverVersionUndefined: Self = StObject.set(x, "nvidiaDriverVersion", js.undefined)
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNvidiaDriverVersion(value: String): Self = this.set("nvidiaDriverVersion", value.asInstanceOf[js.Any])
+    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
     
     @scala.inline
-    def deleteNvidiaDriverVersion: Self = this.set("nvidiaDriverVersion", js.undefined)
+    def setServiceAccount(value: SchemaServiceAccount): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreemptible: Self = this.set("preemptible", js.undefined)
-    
-    @scala.inline
-    def setServiceAccount(value: SchemaServiceAccount): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
   }
 }

@@ -9,18 +9,14 @@ import typings.uirouterCore.mod.ResolveContext
 import typings.uirouterCore.mod.StateObject
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import typings.uirouterCore.viewViewMod.ViewConfigFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/angularjs/lib/statebuilders/views", JSImport.Namespace)
-@js.native
-object viewsMod extends js.Object {
+object viewsMod {
   
-  def getNg1ViewConfigFactory(): ViewConfigFactory = js.native
-  
-  def ng1ViewsBuilder(state: StateObject): StringDictionary[Ng1ViewDeclaration] = js.native
-  
+  @JSImport("@uirouter/angularjs/lib/statebuilders/views", "Ng1ViewConfig")
   @js.native
   class Ng1ViewConfig protected () extends ViewConfig {
     def this(path: js.Array[PathNode], viewDecl: Ng1ViewDeclaration, factory: TemplateFactory) = this()
@@ -50,4 +46,12 @@ object viewsMod extends js.Object {
     @JSName("viewDecl")
     var viewDecl_Ng1ViewConfig: Ng1ViewDeclaration = js.native
   }
+  
+  @JSImport("@uirouter/angularjs/lib/statebuilders/views", "getNg1ViewConfigFactory")
+  @js.native
+  def getNg1ViewConfigFactory(): ViewConfigFactory = js.native
+  
+  @JSImport("@uirouter/angularjs/lib/statebuilders/views", "ng1ViewsBuilder")
+  @js.native
+  def ng1ViewsBuilder(state: StateObject): StringDictionary[Ng1ViewDeclaration] = js.native
 }

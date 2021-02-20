@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLFrameBase extends js.Object {
+trait IHTMLFrameBase extends StObject {
   
   @JSName("MSHTML.IHTMLFrameBase_typekey")
   var MSHTMLDotIHTMLFrameBase_typekey: IHTMLFrameBase = js.native
@@ -49,48 +50,36 @@ object IHTMLFrameBase {
   }
   
   @scala.inline
-  implicit class IHTMLFrameBaseOps[Self <: IHTMLFrameBase] (val x: Self) extends AnyVal {
+  implicit class IHTMLFrameBaseMutableBuilder[Self <: IHTMLFrameBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: js.Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameBorder(value: String): Self = StObject.set(x, "frameBorder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrameSpacing(value: js.Any): Self = StObject.set(x, "frameSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMSHTMLDotIHTMLFrameBase_typekey(value: IHTMLFrameBase): Self = this.set("MSHTML.IHTMLFrameBase_typekey", value.asInstanceOf[js.Any])
+    def setMSHTMLDotIHTMLFrameBase_typekey(value: IHTMLFrameBase): Self = StObject.set(x, "MSHTML.IHTMLFrameBase_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: js.Any): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setMarginHeight(value: js.Any): Self = StObject.set(x, "marginHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameBorder(value: String): Self = this.set("frameBorder", value.asInstanceOf[js.Any])
+    def setMarginWidth(value: js.Any): Self = StObject.set(x, "marginWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameSpacing(value: js.Any): Self = this.set("frameSpacing", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginHeight(value: js.Any): Self = this.set("marginHeight", value.asInstanceOf[js.Any])
+    def setNoResize(value: Boolean): Self = StObject.set(x, "noResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginWidth(value: js.Any): Self = this.set("marginWidth", value.asInstanceOf[js.Any])
+    def setScrolling(value: String): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoResize(value: Boolean): Self = this.set("noResize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrolling(value: String): Self = this.set("scrolling", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

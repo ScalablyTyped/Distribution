@@ -9,6 +9,7 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPagesSupplier
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiServiceFactory
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -217,72 +218,60 @@ object XSlideShow {
   }
   
   @scala.inline
-  implicit class XSlideShowOps[Self <: XSlideShow] (val x: Self) extends AnyVal {
+  implicit class XSlideShowMutableBuilder[Self <: XSlideShow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddShapeEventListener(value: (XShapeEventListener, XShape) => Unit): Self = StObject.set(x, "addShapeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSlideShowListener(value: XSlideShowListener => Unit): Self = StObject.set(x, "addSlideShowListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddView(value: XSlideShowView => Boolean): Self = StObject.set(x, "addView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCurrentSlide(value: XDrawPage): Self = this.set("CurrentSlide", value.asInstanceOf[js.Any])
+    def setCurrentSlide(value: XDrawPage): Self = StObject.set(x, "CurrentSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddShapeEventListener(value: (XShapeEventListener, XShape) => Unit): Self = this.set("addShapeEventListener", js.Any.fromFunction2(value))
+    def setDisplaySlide(value: (XDrawPage, XDrawPagesSupplier, XAnimationNode, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "displaySlide", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAddSlideShowListener(value: XSlideShowListener => Unit): Self = this.set("addSlideShowListener", js.Any.fromFunction1(value))
+    def setGetCurrentSlide(value: () => XDrawPage): Self = StObject.set(x, "getCurrentSlide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddView(value: XSlideShowView => Boolean): Self = this.set("addView", js.Any.fromFunction1(value))
+    def setNextEffect(value: () => Boolean): Self = StObject.set(x, "nextEffect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisplaySlide(value: (XDrawPage, XDrawPagesSupplier, XAnimationNode, SeqEquiv[PropertyValue]) => Unit): Self = this.set("displaySlide", js.Any.fromFunction4(value))
+    def setPause(value: Boolean => Boolean): Self = StObject.set(x, "pause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentSlide(value: () => XDrawPage): Self = this.set("getCurrentSlide", js.Any.fromFunction0(value))
+    def setPreviousEffect(value: () => Boolean): Self = StObject.set(x, "previousEffect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNextEffect(value: () => Boolean): Self = this.set("nextEffect", js.Any.fromFunction0(value))
+    def setRegisterUserPaintPolygons(value: XMultiServiceFactory => Unit): Self = StObject.set(x, "registerUserPaintPolygons", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPause(value: Boolean => Boolean): Self = this.set("pause", js.Any.fromFunction1(value))
+    def setRemoveShapeEventListener(value: (XShapeEventListener, XShape) => Unit): Self = StObject.set(x, "removeShapeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPreviousEffect(value: () => Boolean): Self = this.set("previousEffect", js.Any.fromFunction0(value))
+    def setRemoveSlideShowListener(value: XSlideShowListener => Unit): Self = StObject.set(x, "removeSlideShowListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterUserPaintPolygons(value: XMultiServiceFactory => Unit): Self = this.set("registerUserPaintPolygons", js.Any.fromFunction1(value))
+    def setRemoveView(value: XSlideShowView => Boolean): Self = StObject.set(x, "removeView", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveShapeEventListener(value: (XShapeEventListener, XShape) => Unit): Self = this.set("removeShapeEventListener", js.Any.fromFunction2(value))
+    def setSetProperty(value: PropertyValue => Boolean): Self = StObject.set(x, "setProperty", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveSlideShowListener(value: XSlideShowListener => Unit): Self = this.set("removeSlideShowListener", js.Any.fromFunction1(value))
+    def setSetShapeCursor(value: (XShape, Double) => Unit): Self = StObject.set(x, "setShapeCursor", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRemoveView(value: XSlideShowView => Boolean): Self = this.set("removeView", js.Any.fromFunction1(value))
+    def setStartShapeActivity(value: XShape => Boolean): Self = StObject.set(x, "startShapeActivity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetProperty(value: PropertyValue => Boolean): Self = this.set("setProperty", js.Any.fromFunction1(value))
+    def setStopShapeActivity(value: XShape => Boolean): Self = StObject.set(x, "stopShapeActivity", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetShapeCursor(value: (XShape, Double) => Unit): Self = this.set("setShapeCursor", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setStartShapeActivity(value: XShape => Boolean): Self = this.set("startShapeActivity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setStopShapeActivity(value: XShape => Boolean): Self = this.set("stopShapeActivity", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdate(value: js.Array[Double] => Boolean): Self = this.set("update", js.Any.fromFunction1(value))
+    def setUpdate(value: js.Array[Double] => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerMessagesEditor extends js.Object {
+trait SchedulerMessagesEditor extends StObject {
   
   var allDayEvent: js.UndefOr[String] = js.native
   
@@ -42,96 +43,84 @@ object SchedulerMessagesEditor {
   }
   
   @scala.inline
-  implicit class SchedulerMessagesEditorOps[Self <: SchedulerMessagesEditor] (val x: Self) extends AnyVal {
+  implicit class SchedulerMessagesEditorMutableBuilder[Self <: SchedulerMessagesEditor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllDayEvent(value: String): Self = StObject.set(x, "allDayEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllDayEventUndefined: Self = StObject.set(x, "allDayEvent", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllDayEvent(value: String): Self = this.set("allDayEvent", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteAllDayEvent: Self = this.set("allDayEvent", js.undefined)
+    def setEditorTitle(value: String): Self = StObject.set(x, "editorTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEditorTitleUndefined: Self = StObject.set(x, "editorTitle", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditorTitle(value: String): Self = this.set("editorTitle", value.asInstanceOf[js.Any])
+    def setEndTimezone(value: String): Self = StObject.set(x, "endTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEditorTitle: Self = this.set("editorTitle", js.undefined)
+    def setEndTimezoneUndefined: Self = StObject.set(x, "endTimezone", js.undefined)
     
     @scala.inline
-    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     @scala.inline
-    def deleteEnd: Self = this.set("end", js.undefined)
+    def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTimezone(value: String): Self = this.set("endTimezone", value.asInstanceOf[js.Any])
+    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
     @scala.inline
-    def deleteEndTimezone: Self = this.set("endTimezone", js.undefined)
+    def setSeparateTimezones(value: String): Self = StObject.set(x, "separateTimezones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeat(value: String): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    def setSeparateTimezonesUndefined: Self = StObject.set(x, "separateTimezones", js.undefined)
     
     @scala.inline
-    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeparateTimezones(value: String): Self = this.set("separateTimezones", value.asInstanceOf[js.Any])
+    def setStartTimezone(value: String): Self = StObject.set(x, "startTimezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeparateTimezones: Self = this.set("separateTimezones", js.undefined)
+    def setStartTimezoneUndefined: Self = StObject.set(x, "startTimezone", js.undefined)
     
     @scala.inline
-    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTimezone(value: String): Self = this.set("startTimezone", value.asInstanceOf[js.Any])
+    def setTimezoneEditorButton(value: String): Self = StObject.set(x, "timezoneEditorButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTimezone: Self = this.set("startTimezone", js.undefined)
+    def setTimezoneEditorButtonUndefined: Self = StObject.set(x, "timezoneEditorButton", js.undefined)
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setTimezoneEditorTitle(value: String): Self = StObject.set(x, "timezoneEditorTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setTimezoneEditorTitleUndefined: Self = StObject.set(x, "timezoneEditorTitle", js.undefined)
     
     @scala.inline
-    def setTimezoneEditorButton(value: String): Self = this.set("timezoneEditorButton", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteTimezoneEditorButton: Self = this.set("timezoneEditorButton", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezoneEditorTitle(value: String): Self = this.set("timezoneEditorTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezoneEditorTitle: Self = this.set("timezoneEditorTitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

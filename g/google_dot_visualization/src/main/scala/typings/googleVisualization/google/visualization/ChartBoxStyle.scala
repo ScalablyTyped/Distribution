@@ -1,12 +1,13 @@
 package typings.googleVisualization.google.visualization
 
 import typings.googleVisualization.anon.Color1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartBoxStyle extends js.Object {
+trait ChartBoxStyle extends StObject {
   
   var gradient: js.UndefOr[Color1] = js.native
   
@@ -27,48 +28,36 @@ object ChartBoxStyle {
   }
   
   @scala.inline
-  implicit class ChartBoxStyleOps[Self <: ChartBoxStyle] (val x: Self) extends AnyVal {
+  implicit class ChartBoxStyleMutableBuilder[Self <: ChartBoxStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGradient(value: Color1): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradient(value: Color1): Self = this.set("gradient", value.asInstanceOf[js.Any])
+    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
     @scala.inline
-    def deleteGradient: Self = this.set("gradient", js.undefined)
+    def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRx(value: Double): Self = this.set("rx", value.asInstanceOf[js.Any])
+    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     
     @scala.inline
-    def deleteRx: Self = this.set("rx", js.undefined)
+    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRy(value: Double): Self = this.set("ry", value.asInstanceOf[js.Any])
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
     @scala.inline
-    def deleteRy: Self = this.set("ry", js.undefined)
+    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
-    
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

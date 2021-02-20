@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait BorderWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
     * The border-bottom-width CSS property sets the width of the bottom border of an element.
@@ -51,78 +52,66 @@ object BorderWidthProps {
   }
   
   @scala.inline
-  implicit class BorderWidthPropsOps[Self <: BorderWidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderWidthProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderWidthPropsMutableBuilder[Self <: BorderWidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderWidthProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorderBottomWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderBottomWidthNull: Self = StObject.set(x, "borderBottomWidth", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
     
     @scala.inline
-    def setBorderBottomWidthVarargs(value: (TVal | Null)*): Self = this.set("borderBottomWidth", js.Array(value :_*))
+    def setBorderBottomWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderBottomWidth", js.Array(value :_*))
     
     @scala.inline
-    def setBorderBottomWidth(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderBottomWidth", value.asInstanceOf[js.Any])
+    def setBorderLeftWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottomWidth: Self = this.set("borderBottomWidth", js.undefined)
+    def setBorderLeftWidthNull: Self = StObject.set(x, "borderLeftWidth", null)
     
     @scala.inline
-    def setBorderBottomWidthNull: Self = this.set("borderBottomWidth", null)
+    def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
     
     @scala.inline
-    def setBorderLeftWidthVarargs(value: (TVal | Null)*): Self = this.set("borderLeftWidth", js.Array(value :_*))
+    def setBorderLeftWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderLeftWidth", js.Array(value :_*))
     
     @scala.inline
-    def setBorderLeftWidth(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderLeftWidth", value.asInstanceOf[js.Any])
+    def setBorderRightWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderLeftWidth: Self = this.set("borderLeftWidth", js.undefined)
+    def setBorderRightWidthNull: Self = StObject.set(x, "borderRightWidth", null)
     
     @scala.inline
-    def setBorderLeftWidthNull: Self = this.set("borderLeftWidth", null)
+    def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
     
     @scala.inline
-    def setBorderRightWidthVarargs(value: (TVal | Null)*): Self = this.set("borderRightWidth", js.Array(value :_*))
+    def setBorderRightWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderRightWidth", js.Array(value :_*))
     
     @scala.inline
-    def setBorderRightWidth(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderRightWidth", value.asInstanceOf[js.Any])
+    def setBorderTopWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderRightWidth: Self = this.set("borderRightWidth", js.undefined)
+    def setBorderTopWidthNull: Self = StObject.set(x, "borderTopWidth", null)
     
     @scala.inline
-    def setBorderRightWidthNull: Self = this.set("borderRightWidth", null)
+    def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
     @scala.inline
-    def setBorderTopWidthVarargs(value: (TVal | Null)*): Self = this.set("borderTopWidth", js.Array(value :_*))
+    def setBorderTopWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderTopWidth", js.Array(value :_*))
     
     @scala.inline
-    def setBorderTopWidth(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderTopWidth", value.asInstanceOf[js.Any])
+    def setBorderWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderTopWidth: Self = this.set("borderTopWidth", js.undefined)
+    def setBorderWidthNull: Self = StObject.set(x, "borderWidth", null)
     
     @scala.inline
-    def setBorderTopWidthNull: Self = this.set("borderTopWidth", null)
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def setBorderWidthVarargs(value: (TVal | Null)*): Self = this.set("borderWidth", js.Array(value :_*))
-    
-    @scala.inline
-    def setBorderWidth(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
-    
-    @scala.inline
-    def setBorderWidthNull: Self = this.set("borderWidth", null)
+    def setBorderWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
   }
 }

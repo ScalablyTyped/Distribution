@@ -3,6 +3,24 @@
 
 Typings are for version 1.5
 
+## Library description:
+Renders an SVG slider
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | d3-simple-slider |
+| Keywords           | d3, d3-module, slider, visualization |
+| # releases         | 23 |
+| # dependents       | 1 |
+| # downloads        | 29389 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/johnwalley/d3-simple-slider)
+- [Bugs](https://github.com/johnwalley/d3-simple-slider/issues)
+- [Repository](https://github.com/johnwalley/d3-simple-slider)
+- [Npm](https://www.npmjs.com/package/d3-simple-slider)
+    
 
 
 ## Note

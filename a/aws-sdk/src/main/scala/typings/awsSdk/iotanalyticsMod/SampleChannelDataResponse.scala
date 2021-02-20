@@ -1,11 +1,12 @@
 package typings.awsSdk.iotanalyticsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SampleChannelDataResponse extends js.Object {
+trait SampleChannelDataResponse extends StObject {
   
   /**
     * The list of message samples. Each sample message is returned as a base64-encoded string.
@@ -21,27 +22,15 @@ object SampleChannelDataResponse {
   }
   
   @scala.inline
-  implicit class SampleChannelDataResponseOps[Self <: SampleChannelDataResponse] (val x: Self) extends AnyVal {
+  implicit class SampleChannelDataResponseMutableBuilder[Self <: SampleChannelDataResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPayloadsVarargs(value: MessagePayload*): Self = this.set("payloads", js.Array(value :_*))
-    
-    @scala.inline
-    def setPayloads(value: MessagePayloads): Self = this.set("payloads", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePayloads: Self = this.set("payloads", js.undefined)
+    def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
   }
 }

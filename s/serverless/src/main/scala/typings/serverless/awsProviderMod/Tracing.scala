@@ -1,11 +1,12 @@
 package typings.serverless.awsProviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tracing extends js.Object {
+trait Tracing extends StObject {
   
   var apiGateway: Boolean = js.native
   
@@ -20,27 +21,15 @@ object Tracing {
   }
   
   @scala.inline
-  implicit class TracingOps[Self <: Tracing] (val x: Self) extends AnyVal {
+  implicit class TracingMutableBuilder[Self <: Tracing] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiGateway(value: Boolean): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLambda(value: Boolean): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApiGateway(value: Boolean): Self = this.set("apiGateway", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLambda(value: Boolean): Self = this.set("lambda", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLambda: Self = this.set("lambda", js.undefined)
+    def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
   }
 }

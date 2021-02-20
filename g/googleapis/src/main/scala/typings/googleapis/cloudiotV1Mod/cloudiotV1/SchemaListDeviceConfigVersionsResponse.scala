@@ -1,5 +1,6 @@
 package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Response for `ListDeviceConfigVersions`.
   */
 @js.native
-trait SchemaListDeviceConfigVersionsResponse extends js.Object {
+trait SchemaListDeviceConfigVersionsResponse extends StObject {
   
   /**
     * The device configuration for the last few versions. Versions are listed
@@ -25,27 +26,15 @@ object SchemaListDeviceConfigVersionsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListDeviceConfigVersionsResponseOps[Self <: SchemaListDeviceConfigVersionsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListDeviceConfigVersionsResponseMutableBuilder[Self <: SchemaListDeviceConfigVersionsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceConfigs(value: js.Array[SchemaDeviceConfig]): Self = StObject.set(x, "deviceConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceConfigsUndefined: Self = StObject.set(x, "deviceConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceConfigsVarargs(value: SchemaDeviceConfig*): Self = this.set("deviceConfigs", js.Array(value :_*))
-    
-    @scala.inline
-    def setDeviceConfigs(value: js.Array[SchemaDeviceConfig]): Self = this.set("deviceConfigs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceConfigs: Self = this.set("deviceConfigs", js.undefined)
+    def setDeviceConfigsVarargs(value: SchemaDeviceConfig*): Self = StObject.set(x, "deviceConfigs", js.Array(value :_*))
   }
 }

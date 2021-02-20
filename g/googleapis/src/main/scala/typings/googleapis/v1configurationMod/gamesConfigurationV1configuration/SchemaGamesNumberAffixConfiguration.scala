@@ -1,5 +1,6 @@
 package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is a JSON template for a number affix resource.
   */
 @js.native
-trait SchemaGamesNumberAffixConfiguration extends js.Object {
+trait SchemaGamesNumberAffixConfiguration extends StObject {
   
   /**
     * When the language requires special treatment of &quot;small&quot; numbers
@@ -57,54 +58,42 @@ object SchemaGamesNumberAffixConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaGamesNumberAffixConfigurationOps[Self <: SchemaGamesNumberAffixConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaGamesNumberAffixConfigurationMutableBuilder[Self <: SchemaGamesNumberAffixConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFew(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMany(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFew(value: SchemaLocalizedStringBundle): Self = this.set("few", value.asInstanceOf[js.Any])
+    def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
     
     @scala.inline
-    def deleteFew: Self = this.set("few", js.undefined)
+    def setOne(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMany(value: SchemaLocalizedStringBundle): Self = this.set("many", value.asInstanceOf[js.Any])
+    def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
     
     @scala.inline
-    def deleteMany: Self = this.set("many", js.undefined)
+    def setOther(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOne(value: SchemaLocalizedStringBundle): Self = this.set("one", value.asInstanceOf[js.Any])
+    def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
     
     @scala.inline
-    def deleteOne: Self = this.set("one", js.undefined)
+    def setTwo(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: SchemaLocalizedStringBundle): Self = this.set("other", value.asInstanceOf[js.Any])
+    def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
     
     @scala.inline
-    def deleteOther: Self = this.set("other", js.undefined)
+    def setZero(value: SchemaLocalizedStringBundle): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTwo(value: SchemaLocalizedStringBundle): Self = this.set("two", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTwo: Self = this.set("two", js.undefined)
-    
-    @scala.inline
-    def setZero(value: SchemaLocalizedStringBundle): Self = this.set("zero", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZero: Self = this.set("zero", js.undefined)
+    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

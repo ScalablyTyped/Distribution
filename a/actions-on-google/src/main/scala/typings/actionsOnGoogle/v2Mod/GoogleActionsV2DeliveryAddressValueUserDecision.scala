@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ACCEPTED
   - typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED
 */
-trait GoogleActionsV2DeliveryAddressValueUserDecision extends js.Object
+trait GoogleActionsV2DeliveryAddressValueUserDecision extends StObject
 object GoogleActionsV2DeliveryAddressValueUserDecision {
   
   @scala.inline

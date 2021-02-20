@@ -1,12 +1,13 @@
 package typings.box2d.Box2D.Collision
 
 import typings.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait b2Segment extends js.Object {
+trait b2Segment extends StObject {
   
   /**
     * Extends or clips the segment so that it's ends lie on the boundary of the AABB.
@@ -61,36 +62,24 @@ object b2Segment {
   }
   
   @scala.inline
-  implicit class b2SegmentOps[Self <: b2Segment] (val x: Self) extends AnyVal {
+  implicit class b2SegmentMutableBuilder[Self <: b2Segment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExtend(value: b2AABB => Unit): Self = StObject.set(x, "Extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExtendBackward(value: b2AABB => Unit): Self = StObject.set(x, "ExtendBackward", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendForward(value: b2AABB => Unit): Self = StObject.set(x, "ExtendForward", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExtend(value: b2AABB => Unit): Self = this.set("Extend", js.Any.fromFunction1(value))
+    def setP1(value: b2Vec2): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendBackward(value: b2AABB => Unit): Self = this.set("ExtendBackward", js.Any.fromFunction1(value))
+    def setP2(value: b2Vec2): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendForward(value: b2AABB => Unit): Self = this.set("ExtendForward", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTestSegment(value: (js.Array[Double], b2Vec2, b2Segment, Double) => Boolean): Self = this.set("TestSegment", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setP1(value: b2Vec2): Self = this.set("p1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP2(value: b2Vec2): Self = this.set("p2", value.asInstanceOf[js.Any])
+    def setTestSegment(value: (js.Array[Double], b2Vec2, b2Segment, Double) => Boolean): Self = StObject.set(x, "TestSegment", js.Any.fromFunction4(value))
   }
 }

@@ -1,12 +1,15 @@
 package typings.each
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var each: EachStatic = js.native
+  @JSGlobal("each")
+  @js.native
+  def each: EachStatic = js.native
+  @scala.inline
+  def each_=(x: EachStatic): Unit = js.Dynamic.global.updateDynamic("each")(x.asInstanceOf[js.Any])
 }

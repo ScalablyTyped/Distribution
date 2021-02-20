@@ -1,21 +1,28 @@
 package typings.antdMobileRn
 
 import typings.antdMobileRn.anon.Cols
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/picker-view/index.native", JSImport.Namespace)
-@js.native
-object pickerViewIndexNativeMod extends js.Object {
+object pickerViewIndexNativeMod {
   
+  @JSImport("antd-mobile-rn/lib/picker-view/index.native", JSImport.Default)
   @js.native
   class default ()
     extends typings.antdMobileRn.pickerViewMod.default
   /* static members */
-  @js.native
-  object default extends js.Object {
+  object default {
     
-    var defaultProps: Cols = js.native
+    @JSImport("antd-mobile-rn/lib/picker-view/index.native", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("antd-mobile-rn/lib/picker-view/index.native", "default.defaultProps")
+    @js.native
+    def defaultProps: Cols = js.native
+    @scala.inline
+    def defaultProps_=(x: Cols): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

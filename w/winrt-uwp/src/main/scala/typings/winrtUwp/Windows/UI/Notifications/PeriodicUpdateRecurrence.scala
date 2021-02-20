@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeriodicUpdateRecurrence extends js.Object
+sealed trait PeriodicUpdateRecurrence extends StObject
 /** Specifies the time period for subsequent polls of the tile or badge data source for new content. Used by BadgeUpdater.StartPeriodicUpdate , TileUpdater.StartPeriodicUpdate , and TileUpdater.StartPeriodicUpdateBatch . */
 @JSGlobal("Windows.UI.Notifications.PeriodicUpdateRecurrence")
 @js.native
-object PeriodicUpdateRecurrence extends js.Object {
+object PeriodicUpdateRecurrence extends StObject {
   
   /** Poll once a day. */
   @js.native

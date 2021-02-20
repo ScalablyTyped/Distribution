@@ -4,12 +4,13 @@ import typings.epiceditor.anon.AutoSave
 import typings.epiceditor.anon.Base
 import typings.epiceditor.anon.Fullscreen
 import typings.epiceditor.anon.ToggleEdit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EpicEditorOptions extends js.Object {
+trait EpicEditorOptions extends StObject {
   
   var basePath: js.UndefOr[String] = js.native
   
@@ -44,90 +45,78 @@ object EpicEditorOptions {
   }
   
   @scala.inline
-  implicit class EpicEditorOptionsOps[Self <: EpicEditorOptions] (val x: Self) extends AnyVal {
+  implicit class EpicEditorOptionsMutableBuilder[Self <: EpicEditorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientSideStorage(value: Boolean): Self = StObject.set(x, "clientSideStorage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasePath(value: String): Self = this.set("basePath", value.asInstanceOf[js.Any])
+    def setClientSideStorageUndefined: Self = StObject.set(x, "clientSideStorage", js.undefined)
     
     @scala.inline
-    def deleteBasePath: Self = this.set("basePath", js.undefined)
+    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientSideStorage(value: Boolean): Self = this.set("clientSideStorage", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteClientSideStorage: Self = this.set("clientSideStorage", js.undefined)
+    def setFile(value: AutoSave): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: js.Any): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setFocusOnLoad(value: Boolean): Self = StObject.set(x, "focusOnLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFile(value: AutoSave): Self = this.set("file", value.asInstanceOf[js.Any])
+    def setFocusOnLoadUndefined: Self = StObject.set(x, "focusOnLoad", js.undefined)
     
     @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setLocalStorageName(value: String): Self = StObject.set(x, "localStorageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFocusOnLoad(value: Boolean): Self = this.set("focusOnLoad", value.asInstanceOf[js.Any])
+    def setLocalStorageNameUndefined: Self = StObject.set(x, "localStorageName", js.undefined)
     
     @scala.inline
-    def deleteFocusOnLoad: Self = this.set("focusOnLoad", js.undefined)
+    def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalStorageName(value: String): Self = this.set("localStorageName", value.asInstanceOf[js.Any])
+    def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
     @scala.inline
-    def deleteLocalStorageName: Self = this.set("localStorageName", js.undefined)
+    def setShortcut(value: Fullscreen): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParser(value: js.Any): Self = this.set("parser", value.asInstanceOf[js.Any])
+    def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
     
     @scala.inline
-    def deleteParser: Self = this.set("parser", js.undefined)
+    def setString(value: ToggleEdit): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortcut(value: Fullscreen): Self = this.set("shortcut", value.asInstanceOf[js.Any])
+    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
     @scala.inline
-    def deleteShortcut: Self = this.set("shortcut", js.undefined)
+    def setTextarea(value: js.Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setString(value: ToggleEdit): Self = this.set("string", value.asInstanceOf[js.Any])
+    def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     
     @scala.inline
-    def deleteString: Self = this.set("string", js.undefined)
+    def setTheme(value: Base): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextarea(value: js.Any): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteTextarea: Self = this.set("textarea", js.undefined)
+    def setUseNativeFullsreen(value: Boolean): Self = StObject.set(x, "useNativeFullsreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: Base): Self = this.set("theme", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
-    
-    @scala.inline
-    def setUseNativeFullsreen(value: Boolean): Self = this.set("useNativeFullsreen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseNativeFullsreen: Self = this.set("useNativeFullsreen", js.undefined)
+    def setUseNativeFullsreenUndefined: Self = StObject.set(x, "useNativeFullsreen", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import typings.sendgrid.anon.Clicktracking
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TrackingSettings extends js.Object {
+trait TrackingSettings extends StObject {
   
   def getClickTracking(): ClickTracking = js.native
   
@@ -45,45 +46,33 @@ object TrackingSettings {
   }
   
   @scala.inline
-  implicit class TrackingSettingsOps[Self <: TrackingSettings] (val x: Self) extends AnyVal {
+  implicit class TrackingSettingsMutableBuilder[Self <: TrackingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClickTracking(value: () => ClickTracking): Self = StObject.set(x, "getClickTracking", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetGanalytics(value: () => Ganalytics): Self = StObject.set(x, "getGanalytics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOpenTracking(value: () => OpenTracking): Self = StObject.set(x, "getOpenTracking", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClickTracking(value: () => ClickTracking): Self = this.set("getClickTracking", js.Any.fromFunction0(value))
+    def setGetSubscriptionTracking(value: () => SubscriptionTracking): Self = StObject.set(x, "getSubscriptionTracking", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGanalytics(value: () => Ganalytics): Self = this.set("getGanalytics", js.Any.fromFunction0(value))
+    def setSetClickTracking(value: ClickTracking => Unit): Self = StObject.set(x, "setClickTracking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOpenTracking(value: () => OpenTracking): Self = this.set("getOpenTracking", js.Any.fromFunction0(value))
+    def setSetGanalytics(value: Ganalytics => Unit): Self = StObject.set(x, "setGanalytics", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSubscriptionTracking(value: () => SubscriptionTracking): Self = this.set("getSubscriptionTracking", js.Any.fromFunction0(value))
+    def setSetOpenTracking(value: OpenTracking => Unit): Self = StObject.set(x, "setOpenTracking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetClickTracking(value: ClickTracking => Unit): Self = this.set("setClickTracking", js.Any.fromFunction1(value))
+    def setSetSubscriptionTracking(value: SubscriptionTracking => Unit): Self = StObject.set(x, "setSubscriptionTracking", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetGanalytics(value: Ganalytics => Unit): Self = this.set("setGanalytics", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOpenTracking(value: OpenTracking => Unit): Self = this.set("setOpenTracking", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetSubscriptionTracking(value: SubscriptionTracking => Unit): Self = this.set("setSubscriptionTracking", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setToJSON(value: () => Clicktracking): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => Clicktracking): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

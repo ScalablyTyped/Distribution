@@ -1,11 +1,12 @@
 package typings.fineUploader.coreMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationOptions extends js.Object {
+trait ValidationOptions extends StObject {
   
   /**
     * Used by the file selection dialog.
@@ -67,63 +68,51 @@ object ValidationOptions {
   }
   
   @scala.inline
-  implicit class ValidationOptionsOps[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+  implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptFiles(value: js.Any): Self = StObject.set(x, "acceptFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptFilesUndefined: Self = StObject.set(x, "acceptFiles", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllowedExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcceptFiles(value: js.Any): Self = this.set("acceptFiles", value.asInstanceOf[js.Any])
+    def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
     
     @scala.inline
-    def deleteAcceptFiles: Self = this.set("acceptFiles", js.undefined)
+    def setAllowedExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedExtensions", js.Array(value :_*))
     
     @scala.inline
-    def setAllowedExtensionsVarargs(value: String*): Self = this.set("allowedExtensions", js.Array(value :_*))
+    def setImage(value: ImageOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowedExtensions(value: js.Array[String]): Self = this.set("allowedExtensions", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteAllowedExtensions: Self = this.set("allowedExtensions", js.undefined)
+    def setItemLimit(value: Double): Self = StObject.set(x, "itemLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: ImageOptions): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setItemLimitUndefined: Self = StObject.set(x, "itemLimit", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setMinSizeLimit(value: Double): Self = StObject.set(x, "minSizeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemLimit(value: Double): Self = this.set("itemLimit", value.asInstanceOf[js.Any])
+    def setMinSizeLimitUndefined: Self = StObject.set(x, "minSizeLimit", js.undefined)
     
     @scala.inline
-    def deleteItemLimit: Self = this.set("itemLimit", js.undefined)
+    def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSizeLimit(value: Double): Self = this.set("minSizeLimit", value.asInstanceOf[js.Any])
+    def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
     
     @scala.inline
-    def deleteMinSizeLimit: Self = this.set("minSizeLimit", js.undefined)
+    def setStopOnFirstInvalidFile(value: Boolean): Self = StObject.set(x, "stopOnFirstInvalidFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeLimit(value: Double): Self = this.set("sizeLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSizeLimit: Self = this.set("sizeLimit", js.undefined)
-    
-    @scala.inline
-    def setStopOnFirstInvalidFile(value: Boolean): Self = this.set("stopOnFirstInvalidFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopOnFirstInvalidFile: Self = this.set("stopOnFirstInvalidFile", js.undefined)
+    def setStopOnFirstInvalidFileUndefined: Self = StObject.set(x, "stopOnFirstInvalidFile", js.undefined)
   }
 }

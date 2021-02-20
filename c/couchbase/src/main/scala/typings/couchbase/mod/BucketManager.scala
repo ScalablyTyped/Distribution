@@ -1,6 +1,7 @@
 package typings.couchbase.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A class for performing management operations against a bucket. This class should not be instantiated directly, but instead through the use of the Bucket#manager method instead.
   */
 @js.native
-trait BucketManager extends js.Object {
+trait BucketManager extends StObject {
   
   /**
     * Builds any indexes that were previously created with the deferred attribute.

@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * concepts in other standards.
   */
 @js.native
-trait SchemaAuth extends js.Object {
+trait SchemaAuth extends StObject {
   
   /**
     * A list of access level resource names that allow resources to be accessed
@@ -78,54 +79,42 @@ object SchemaAuth {
   }
   
   @scala.inline
-  implicit class SchemaAuthOps[Self <: SchemaAuth] (val x: Self) extends AnyVal {
+  implicit class SchemaAuthMutableBuilder[Self <: SchemaAuth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessLevels(value: js.Array[String]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
     @scala.inline
-    def setAccessLevelsVarargs(value: String*): Self = this.set("accessLevels", js.Array(value :_*))
+    def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessLevels(value: js.Array[String]): Self = this.set("accessLevels", value.asInstanceOf[js.Any])
+    def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
     @scala.inline
-    def deleteAccessLevels: Self = this.set("accessLevels", js.undefined)
+    def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
     
     @scala.inline
-    def setAudiencesVarargs(value: String*): Self = this.set("audiences", js.Array(value :_*))
+    def setClaims(value: StringDictionary[js.Any]): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudiences(value: js.Array[String]): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
     @scala.inline
-    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    def setPresenter(value: String): Self = StObject.set(x, "presenter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClaims(value: StringDictionary[js.Any]): Self = this.set("claims", value.asInstanceOf[js.Any])
+    def setPresenterUndefined: Self = StObject.set(x, "presenter", js.undefined)
     
     @scala.inline
-    def deleteClaims: Self = this.set("claims", js.undefined)
+    def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPresenter(value: String): Self = this.set("presenter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePresenter: Self = this.set("presenter", js.undefined)
-    
-    @scala.inline
-    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipal: Self = this.set("principal", js.undefined)
+    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
   }
 }

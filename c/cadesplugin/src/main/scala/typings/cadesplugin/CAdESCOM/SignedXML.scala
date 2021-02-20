@@ -1,12 +1,13 @@
 package typings.cadesplugin.CAdESCOM
 
 import typings.cadesplugin.CADESCommon.ValuesOf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SignedXML extends js.Object {
+trait SignedXML extends StObject {
   
   var Content: String = js.native
   

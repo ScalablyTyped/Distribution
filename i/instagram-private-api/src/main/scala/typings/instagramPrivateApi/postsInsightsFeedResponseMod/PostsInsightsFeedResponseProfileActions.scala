@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.postsInsightsFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostsInsightsFeedResponseProfileActions extends js.Object {
+trait PostsInsightsFeedResponseProfileActions extends StObject {
   
   var actions: PostsInsightsFeedResponseActions = js.native
 }
@@ -18,21 +19,9 @@ object PostsInsightsFeedResponseProfileActions {
   }
   
   @scala.inline
-  implicit class PostsInsightsFeedResponseProfileActionsOps[Self <: PostsInsightsFeedResponseProfileActions] (val x: Self) extends AnyVal {
+  implicit class PostsInsightsFeedResponseProfileActionsMutableBuilder[Self <: PostsInsightsFeedResponseProfileActions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setActions(value: PostsInsightsFeedResponseActions): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setActions(value: PostsInsightsFeedResponseActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
   }
 }

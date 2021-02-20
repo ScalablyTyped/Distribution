@@ -2,12 +2,13 @@ package typings.ipp.anon
 
 import typings.ipp.mod.JobState
 import typings.ipp.mod.JobStateReasons
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Jobstate extends js.Object {
+trait Jobstate extends StObject {
   
   var `job-id`: Double = js.native
   
@@ -39,45 +40,33 @@ object Jobstate {
   }
   
   @scala.inline
-  implicit class JobstateOps[Self <: Jobstate] (val x: Self) extends AnyVal {
+  implicit class JobstateMutableBuilder[Self <: Jobstate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setJob-id`(value: Double): Self = StObject.set(x, "job-id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setJob-state`(value: JobState): Self = StObject.set(x, "job-state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setJob-state-message`(value: String): Self = StObject.set(x, "job-state-message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-id`(value: Double): Self = this.set("job-id", value.asInstanceOf[js.Any])
+    def `setJob-state-messageUndefined`: Self = StObject.set(x, "job-state-message", js.undefined)
     
     @scala.inline
-    def `setJob-state`(value: JobState): Self = this.set("job-state", value.asInstanceOf[js.Any])
+    def `setJob-state-reasons`(value: js.Array[JobStateReasons]): Self = StObject.set(x, "job-state-reasons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-state-reasonsVarargs`(value: JobStateReasons*): Self = this.set("job-state-reasons", js.Array(value :_*))
+    def `setJob-state-reasonsVarargs`(value: JobStateReasons*): Self = StObject.set(x, "job-state-reasons", js.Array(value :_*))
     
     @scala.inline
-    def `setJob-state-reasons`(value: js.Array[JobStateReasons]): Self = this.set("job-state-reasons", value.asInstanceOf[js.Any])
+    def `setJob-uri`(value: String): Self = StObject.set(x, "job-uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-uri`(value: String): Self = this.set("job-uri", value.asInstanceOf[js.Any])
+    def `setNumber-of-intervening-jobs`(value: Double): Self = StObject.set(x, "number-of-intervening-jobs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setJob-state-message`(value: String): Self = this.set("job-state-message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteJob-state-message`: Self = this.set("job-state-message", js.undefined)
-    
-    @scala.inline
-    def `setNumber-of-intervening-jobs`(value: Double): Self = this.set("number-of-intervening-jobs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteNumber-of-intervening-jobs`: Self = this.set("number-of-intervening-jobs", js.undefined)
+    def `setNumber-of-intervening-jobsUndefined`: Self = StObject.set(x, "number-of-intervening-jobs", js.undefined)
   }
 }

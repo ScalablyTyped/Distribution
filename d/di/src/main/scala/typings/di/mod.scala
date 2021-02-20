@@ -1,15 +1,15 @@
 package typings.di
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("di", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("di", "Injector")
   @js.native
-  class Injector () extends js.Object {
+  class Injector () extends StObject {
     def this(modules: js.Array[js.Object]) = this()
     def this(modules: js.UndefOr[scala.Nothing], parent: Injector) = this()
     def this(modules: js.Array[js.Object], parent: Injector) = this()

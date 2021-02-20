@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListStreamProcessorsResponse extends js.Object {
+trait ListStreamProcessorsResponse extends StObject {
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of stream processors. 
@@ -26,33 +27,21 @@ object ListStreamProcessorsResponse {
   }
   
   @scala.inline
-  implicit class ListStreamProcessorsResponseOps[Self <: ListStreamProcessorsResponse] (val x: Self) extends AnyVal {
+  implicit class ListStreamProcessorsResponseMutableBuilder[Self <: ListStreamProcessorsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStreamProcessors(value: StreamProcessorList): Self = StObject.set(x, "StreamProcessors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setStreamProcessorsUndefined: Self = StObject.set(x, "StreamProcessors", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setStreamProcessorsVarargs(value: StreamProcessor*): Self = this.set("StreamProcessors", js.Array(value :_*))
-    
-    @scala.inline
-    def setStreamProcessors(value: StreamProcessorList): Self = this.set("StreamProcessors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamProcessors: Self = this.set("StreamProcessors", js.undefined)
+    def setStreamProcessorsVarargs(value: StreamProcessor*): Self = StObject.set(x, "StreamProcessors", js.Array(value :_*))
   }
 }

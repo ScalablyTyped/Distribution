@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Midi
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a MIDI message that specifies a control change. */
 @js.native
-trait MidiControlChangeMessage extends js.Object {
+trait MidiControlChangeMessage extends StObject {
   
   /** Gets the channel from 0-15 that this message applies to. */
   var channel: Double = js.native
@@ -44,36 +45,24 @@ object MidiControlChangeMessage {
   }
   
   @scala.inline
-  implicit class MidiControlChangeMessageOps[Self <: MidiControlChangeMessage] (val x: Self) extends AnyVal {
+  implicit class MidiControlChangeMessageMutableBuilder[Self <: MidiControlChangeMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setControlValue(value: Double): Self = StObject.set(x, "controlValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setController(value: Double): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannel(value: Double): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlValue(value: Double): Self = this.set("controlValue", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setController(value: Double): Self = this.set("controller", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRawData(value: IBuffer): Self = this.set("rawData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: MidiMessageType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

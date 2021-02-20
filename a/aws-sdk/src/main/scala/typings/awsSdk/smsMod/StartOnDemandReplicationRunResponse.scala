@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StartOnDemandReplicationRunResponse extends js.Object {
+trait StartOnDemandReplicationRunResponse extends StObject {
   
   /**
     * The ID of the replication run.
@@ -21,24 +22,12 @@ object StartOnDemandReplicationRunResponse {
   }
   
   @scala.inline
-  implicit class StartOnDemandReplicationRunResponseOps[Self <: StartOnDemandReplicationRunResponse] (val x: Self) extends AnyVal {
+  implicit class StartOnDemandReplicationRunResponseMutableBuilder[Self <: StartOnDemandReplicationRunResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplicationRunId(value: ReplicationRunId): Self = StObject.set(x, "replicationRunId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplicationRunId(value: ReplicationRunId): Self = this.set("replicationRunId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationRunId: Self = this.set("replicationRunId", js.undefined)
+    def setReplicationRunIdUndefined: Self = StObject.set(x, "replicationRunId", js.undefined)
   }
 }

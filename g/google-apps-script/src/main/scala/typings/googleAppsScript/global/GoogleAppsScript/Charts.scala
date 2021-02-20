@@ -1,18 +1,18 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Charts")
-@js.native
-object Charts extends js.Object {
+object Charts {
   
   /**
     * An enumeration of how hidden dimensions in a source are expressed in a chart.
     */
+  @JSGlobal("GoogleAppsScript.Charts.ChartHiddenDimensionStrategy")
   @js.native
-  object ChartHiddenDimensionStrategy extends js.Object {
+  object ChartHiddenDimensionStrategy extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
@@ -31,8 +31,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of how multiple ranges in the source are expressed in a chart.
     */
+  @JSGlobal("GoogleAppsScript.Charts.ChartMergeStrategy")
   @js.native
-  object ChartMergeStrategy extends js.Object {
+  object ChartMergeStrategy extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.ChartMergeStrategy with Double] = js.native
@@ -45,8 +46,9 @@ object Charts extends js.Object {
   /**
     * Chart types supported by the Charts service.
     */
+  @JSGlobal("GoogleAppsScript.Charts.ChartType")
   @js.native
-  object ChartType extends js.Object {
+  object ChartType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.ChartType with Double] = js.native
@@ -95,8 +97,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of the valid data types for columns in a DataTable.
     */
+  @JSGlobal("GoogleAppsScript.Charts.ColumnType")
   @js.native
-  object ColumnType extends js.Object {
+  object ColumnType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.ColumnType with Double] = js.native
@@ -111,8 +114,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of the styles for curves in a chart.
     */
+  @JSGlobal("GoogleAppsScript.Charts.CurveStyle")
   @js.native
-  object CurveStyle extends js.Object {
+  object CurveStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.CurveStyle with Double] = js.native
@@ -137,8 +141,9 @@ object Charts extends js.Object {
     * of the data table. Given a column to filter on, leave only the rows that match the value entered
     * in the filter input box, using one of the above matching types.
     */
+  @JSGlobal("GoogleAppsScript.Charts.MatchType")
   @js.native
-  object MatchType extends js.Object {
+  object MatchType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.MatchType with Double] = js.native
@@ -153,8 +158,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of the orientation of an object.
     */
+  @JSGlobal("GoogleAppsScript.Charts.Orientation")
   @js.native
-  object Orientation extends js.Object {
+  object Orientation extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.Orientation with Double] = js.native
@@ -167,8 +173,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of how to display selected values in picker widget.
     */
+  @JSGlobal("GoogleAppsScript.Charts.PickerValuesLayout")
   @js.native
-  object PickerValuesLayout extends js.Object {
+  object PickerValuesLayout extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.PickerValuesLayout with Double] = js.native
@@ -185,8 +192,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of the styles of points in a line.
     */
+  @JSGlobal("GoogleAppsScript.Charts.PointStyle")
   @js.native
-  object PointStyle extends js.Object {
+  object PointStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.PointStyle with Double] = js.native
@@ -205,8 +213,9 @@ object Charts extends js.Object {
   /**
     * An enumeration of legend positions within a chart.
     */
+  @JSGlobal("GoogleAppsScript.Charts.Position")
   @js.native
-  object Position extends js.Object {
+  object Position extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Charts.Position with Double] = js.native

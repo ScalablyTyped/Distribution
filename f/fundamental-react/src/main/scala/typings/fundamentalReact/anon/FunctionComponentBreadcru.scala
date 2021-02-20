@@ -5,13 +5,14 @@ import typings.fundamentalReact.fundamentalReactStrings.BreadcrumbDotItem
 import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Breadcrumb/Breadcrumb.BreadcrumbItemProps> & {  displayName :'Breadcrumb.Item'} */
 @js.native
-trait FunctionComponentBreadcru extends js.Object {
+trait FunctionComponentBreadcru extends StObject {
   
   def apply(props: PropsWithChildren[BreadcrumbItemProps]): ReactElement | Null = js.native
   def apply(props: PropsWithChildren[BreadcrumbItemProps], context: js.Any): ReactElement | Null = js.native

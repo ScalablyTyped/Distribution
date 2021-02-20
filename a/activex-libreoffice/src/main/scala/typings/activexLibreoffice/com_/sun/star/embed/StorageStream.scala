@@ -11,6 +11,7 @@ import typings.activexLibreoffice.com_.sun.star.io.XSeekable
 import typings.activexLibreoffice.com_.sun.star.io.XStream
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -105,33 +106,21 @@ object StorageStream {
   }
   
   @scala.inline
-  implicit class StorageStreamOps[Self <: StorageStream] (val x: Self) extends AnyVal {
+  implicit class StorageStreamMutableBuilder[Self <: StorageStream] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsCompressed(value: Boolean): Self = StObject.set(x, "IsCompressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEncrypted(value: Boolean): Self = StObject.set(x, "IsEncrypted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsCompressed(value: Boolean): Self = this.set("IsCompressed", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsEncrypted(value: Boolean): Self = this.set("IsEncrypted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: String): Self = this.set("MediaType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseCommonStoragePasswordEncryption(value: Boolean): Self = this.set("UseCommonStoragePasswordEncryption", value.asInstanceOf[js.Any])
+    def setUseCommonStoragePasswordEncryption(value: Boolean): Self = StObject.set(x, "UseCommonStoragePasswordEncryption", value.asInstanceOf[js.Any])
   }
 }

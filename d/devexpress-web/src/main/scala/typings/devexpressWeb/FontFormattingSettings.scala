@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings to define the font formatting.
   */
 @js.native
-trait FontFormattingSettings extends js.Object {
+trait FontFormattingSettings extends StObject {
   
   /**
     * Gets or sets a value indicating whether all characters are capital letters.
@@ -98,57 +99,45 @@ object FontFormattingSettings {
   }
   
   @scala.inline
-  implicit class FontFormattingSettingsOps[Self <: FontFormattingSettings] (val x: Self) extends AnyVal {
+  implicit class FontFormattingSettingsMutableBuilder[Self <: FontFormattingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllCaps(value: Boolean): Self = StObject.set(x, "allCaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllCaps(value: Boolean): Self = this.set("allCaps", value.asInstanceOf[js.Any])
+    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: String): Self = this.set("backColor", value.asInstanceOf[js.Any])
+    def setForeColor(value: String): Self = StObject.set(x, "foreColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: String): Self = this.set("foreColor", value.asInstanceOf[js.Any])
+    def setScript(value: CharacterFormattingScript): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    def setStrikeout(value: Boolean): Self = StObject.set(x, "strikeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScript(value: CharacterFormattingScript): Self = this.set("script", value.asInstanceOf[js.Any])
+    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    def setUnderlineColor(value: String): Self = StObject.set(x, "underlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStrikeout(value: Boolean): Self = this.set("strikeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineColor(value: String): Self = this.set("underlineColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnderlineWordsOnly(value: Boolean): Self = this.set("underlineWordsOnly", value.asInstanceOf[js.Any])
+    def setUnderlineWordsOnly(value: Boolean): Self = StObject.set(x, "underlineWordsOnly", value.asInstanceOf[js.Any])
   }
 }

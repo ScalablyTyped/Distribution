@@ -2,12 +2,13 @@ package typings.electron.Electron
 
 import typings.electron.electronStrings.`prevent-app-suspension`
 import typings.electron.electronStrings.`prevent-display-sleep`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PowerSaveBlocker extends js.Object {
+trait PowerSaveBlocker extends StObject {
   
   // Docs: https://electronjs.org/docs/api/power-save-blocker
   /**

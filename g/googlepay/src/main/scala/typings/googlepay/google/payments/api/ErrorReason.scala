@@ -1,5 +1,6 @@
 package typings.googlepay.google.payments.api
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.PAYMENT_DATA_INVALID
   - typings.googlepay.googlepayStrings.OTHER_ERROR
 */
-trait ErrorReason extends js.Object
+trait ErrorReason extends StObject
 object ErrorReason {
   
   @scala.inline

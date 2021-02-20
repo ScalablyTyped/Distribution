@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.BodyPartConstant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Boost[T /* <: BodyPartConstant */] extends js.Object {
+trait Boost[T /* <: BodyPartConstant */] extends StObject {
   
   /**
     * One of the `RESOURCE_*` constants.
@@ -37,32 +38,20 @@ object Boost {
   }
   
   @scala.inline
-  implicit class BoostOps[Self <: Boost[_], T /* <: BodyPartConstant */] (val x: Self with Boost[T]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHits(value: Double): Self = this.set("hits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: T): Self = this.set("type", value.asInstanceOf[js.Any])
+  implicit class BoostMutableBuilder[Self <: Boost[_], T /* <: BodyPartConstant */] (val x: Self with Boost[T]) extends AnyVal {
     
     @scala.inline
     def setBoost(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof screeps.anon.Dictpart[T] */ js.Any
-    ): Self = this.set("boost", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBoost: Self = this.set("boost", js.undefined)
+    def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
+    
+    @scala.inline
+    def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

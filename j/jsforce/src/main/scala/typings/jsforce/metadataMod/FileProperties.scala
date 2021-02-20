@@ -1,11 +1,12 @@
 package typings.jsforce.metadataMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileProperties extends js.Object {
+trait FileProperties extends StObject {
   
   var createdById: String = js.native
   
@@ -52,60 +53,48 @@ object FileProperties {
   }
   
   @scala.inline
-  implicit class FilePropertiesOps[Self <: FileProperties] (val x: Self) extends AnyVal {
+  implicit class FilePropertiesMutableBuilder[Self <: FileProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedByName(value: String): Self = StObject.set(x, "createdByName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedById(value: String): Self = this.set("createdById", value.asInstanceOf[js.Any])
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedByName(value: String): Self = this.set("createdByName", value.asInstanceOf[js.Any])
+    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setLastModifiedById(value: String): Self = StObject.set(x, "lastModifiedById", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    def setLastModifiedByName(value: String): Self = StObject.set(x, "lastModifiedByName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: String): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedById(value: String): Self = this.set("lastModifiedById", value.asInstanceOf[js.Any])
+    def setManageableState(value: String): Self = StObject.set(x, "manageableState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastModifiedByName(value: String): Self = this.set("lastModifiedByName", value.asInstanceOf[js.Any])
+    def setManageableStateUndefined: Self = StObject.set(x, "manageableState", js.undefined)
     
     @scala.inline
-    def setLastModifiedDate(value: String): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    def setNamespacePrefix(value: String): Self = StObject.set(x, "namespacePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setNamespacePrefixUndefined: Self = StObject.set(x, "namespacePrefix", js.undefined)
     
     @scala.inline
-    def setManageableState(value: String): Self = this.set("manageableState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManageableState: Self = this.set("manageableState", js.undefined)
-    
-    @scala.inline
-    def setNamespacePrefix(value: String): Self = this.set("namespacePrefix", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespacePrefix: Self = this.set("namespacePrefix", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

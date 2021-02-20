@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.PlayTo
 
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamWithContentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the SourceSelected event. */
 @js.native
-trait PlayToSourceSelectedEventArgs extends js.Object {
+trait PlayToSourceSelectedEventArgs extends StObject {
   
   /** Gets the display name of the selected Play To source. */
   var friendlyName: String = js.native
@@ -39,33 +40,21 @@ object PlayToSourceSelectedEventArgs {
   }
   
   @scala.inline
-  implicit class PlayToSourceSelectedEventArgsOps[Self <: PlayToSourceSelectedEventArgs] (val x: Self) extends AnyVal {
+  implicit class PlayToSourceSelectedEventArgsMutableBuilder[Self <: PlayToSourceSelectedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIcon(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSupportsAudio(value: Boolean): Self = StObject.set(x, "supportsAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    def setSupportsImage(value: Boolean): Self = StObject.set(x, "supportsImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: IRandomAccessStreamWithContentType): Self = this.set("icon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsAudio(value: Boolean): Self = this.set("supportsAudio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsImage(value: Boolean): Self = this.set("supportsImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupportsVideo(value: Boolean): Self = this.set("supportsVideo", value.asInstanceOf[js.Any])
+    def setSupportsVideo(value: Boolean): Self = StObject.set(x, "supportsVideo", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Declares client constants that specify the task title position.
   */
 @js.native
-trait ASPxClientGanttTaskTitlePosition extends js.Object {
+trait ASPxClientGanttTaskTitlePosition extends StObject {
   
   /**
     * Displays the title inside the task.
@@ -34,27 +35,15 @@ object ASPxClientGanttTaskTitlePosition {
   }
   
   @scala.inline
-  implicit class ASPxClientGanttTaskTitlePositionOps[Self <: ASPxClientGanttTaskTitlePosition] (val x: Self) extends AnyVal {
+  implicit class ASPxClientGanttTaskTitlePositionMutableBuilder[Self <: ASPxClientGanttTaskTitlePosition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInside(value: Double): Self = StObject.set(x, "Inside", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInside(value: Double): Self = this.set("Inside", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: Double): Self = this.set("None", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOutside(value: Double): Self = this.set("Outside", value.asInstanceOf[js.Any])
+    def setOutside(value: Double): Self = StObject.set(x, "Outside", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Options for an Earcon.
   */
 @js.native
-trait EarconOptionsObject extends js.Object {
+trait EarconOptionsObject extends StObject {
   
   /**
     * The unique ID of the Earcon. Generated if not supplied.
@@ -49,48 +50,36 @@ object EarconOptionsObject {
   }
   
   @scala.inline
-  implicit class EarconOptionsObjectOps[Self <: EarconOptionsObject] (val x: Self) extends AnyVal {
+  implicit class EarconOptionsObjectMutableBuilder[Self <: EarconOptionsObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstruments(value: js.Array[EarconInstrument]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstrumentsVarargs(value: EarconInstrument*): Self = this.set("instruments", js.Array(value :_*))
+    def setInstrumentsVarargs(value: EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value :_*))
     
     @scala.inline
-    def setInstruments(value: js.Array[EarconInstrument]): Self = this.set("instruments", value.asInstanceOf[js.Any])
+    def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnEnd(value: js.Function): Self = this.set("onEnd", value.asInstanceOf[js.Any])
+    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
     
     @scala.inline
-    def deleteOnEnd: Self = this.set("onEnd", js.undefined)
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPan(value: Double): Self = this.set("pan", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePan: Self = this.set("pan", js.undefined)
-    
-    @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

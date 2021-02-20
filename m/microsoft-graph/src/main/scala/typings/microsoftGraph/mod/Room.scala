@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,135 +55,123 @@ object Room {
   }
   
   @scala.inline
-  implicit class RoomOps[Self <: Room] (val x: Self) extends AnyVal {
+  implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioDeviceName(value: NullableOption[String]): Self = StObject.set(x, "audioDeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioDeviceNameNull: Self = StObject.set(x, "audioDeviceName", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioDeviceNameUndefined: Self = StObject.set(x, "audioDeviceName", js.undefined)
     
     @scala.inline
-    def setAudioDeviceName(value: NullableOption[String]): Self = this.set("audioDeviceName", value.asInstanceOf[js.Any])
+    def setBookingType(value: NullableOption[BookingType]): Self = StObject.set(x, "bookingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudioDeviceName: Self = this.set("audioDeviceName", js.undefined)
+    def setBookingTypeNull: Self = StObject.set(x, "bookingType", null)
     
     @scala.inline
-    def setAudioDeviceNameNull: Self = this.set("audioDeviceName", null)
+    def setBookingTypeUndefined: Self = StObject.set(x, "bookingType", js.undefined)
     
     @scala.inline
-    def setBookingType(value: NullableOption[BookingType]): Self = this.set("bookingType", value.asInstanceOf[js.Any])
+    def setBuilding(value: NullableOption[String]): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBookingType: Self = this.set("bookingType", js.undefined)
+    def setBuildingNull: Self = StObject.set(x, "building", null)
     
     @scala.inline
-    def setBookingTypeNull: Self = this.set("bookingType", null)
+    def setBuildingUndefined: Self = StObject.set(x, "building", js.undefined)
     
     @scala.inline
-    def setBuilding(value: NullableOption[String]): Self = this.set("building", value.asInstanceOf[js.Any])
+    def setCapacity(value: NullableOption[Double]): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBuilding: Self = this.set("building", js.undefined)
+    def setCapacityNull: Self = StObject.set(x, "capacity", null)
     
     @scala.inline
-    def setBuildingNull: Self = this.set("building", null)
+    def setCapacityUndefined: Self = StObject.set(x, "capacity", js.undefined)
     
     @scala.inline
-    def setCapacity(value: NullableOption[Double]): Self = this.set("capacity", value.asInstanceOf[js.Any])
+    def setDisplayDeviceName(value: NullableOption[String]): Self = StObject.set(x, "displayDeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCapacity: Self = this.set("capacity", js.undefined)
+    def setDisplayDeviceNameNull: Self = StObject.set(x, "displayDeviceName", null)
     
     @scala.inline
-    def setCapacityNull: Self = this.set("capacity", null)
+    def setDisplayDeviceNameUndefined: Self = StObject.set(x, "displayDeviceName", js.undefined)
     
     @scala.inline
-    def setDisplayDeviceName(value: NullableOption[String]): Self = this.set("displayDeviceName", value.asInstanceOf[js.Any])
+    def setEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayDeviceName: Self = this.set("displayDeviceName", js.undefined)
+    def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
     @scala.inline
-    def setDisplayDeviceNameNull: Self = this.set("displayDeviceName", null)
+    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     @scala.inline
-    def setEmailAddress(value: NullableOption[String]): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    def setFloorLabel(value: NullableOption[String]): Self = StObject.set(x, "floorLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    def setFloorLabelNull: Self = StObject.set(x, "floorLabel", null)
     
     @scala.inline
-    def setEmailAddressNull: Self = this.set("emailAddress", null)
+    def setFloorLabelUndefined: Self = StObject.set(x, "floorLabel", js.undefined)
     
     @scala.inline
-    def setFloorLabel(value: NullableOption[String]): Self = this.set("floorLabel", value.asInstanceOf[js.Any])
+    def setFloorNumber(value: NullableOption[Double]): Self = StObject.set(x, "floorNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloorLabel: Self = this.set("floorLabel", js.undefined)
+    def setFloorNumberNull: Self = StObject.set(x, "floorNumber", null)
     
     @scala.inline
-    def setFloorLabelNull: Self = this.set("floorLabel", null)
+    def setFloorNumberUndefined: Self = StObject.set(x, "floorNumber", js.undefined)
     
     @scala.inline
-    def setFloorNumber(value: NullableOption[Double]): Self = this.set("floorNumber", value.asInstanceOf[js.Any])
+    def setIsWheelChairAccessible(value: NullableOption[Boolean]): Self = StObject.set(x, "isWheelChairAccessible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFloorNumber: Self = this.set("floorNumber", js.undefined)
+    def setIsWheelChairAccessibleNull: Self = StObject.set(x, "isWheelChairAccessible", null)
     
     @scala.inline
-    def setFloorNumberNull: Self = this.set("floorNumber", null)
+    def setIsWheelChairAccessibleUndefined: Self = StObject.set(x, "isWheelChairAccessible", js.undefined)
     
     @scala.inline
-    def setIsWheelChairAccessible(value: NullableOption[Boolean]): Self = this.set("isWheelChairAccessible", value.asInstanceOf[js.Any])
+    def setLabel(value: NullableOption[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsWheelChairAccessible: Self = this.set("isWheelChairAccessible", js.undefined)
+    def setLabelNull: Self = StObject.set(x, "label", null)
     
     @scala.inline
-    def setIsWheelChairAccessibleNull: Self = this.set("isWheelChairAccessible", null)
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def setLabel(value: NullableOption[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
     @scala.inline
-    def setLabelNull: Self = this.set("label", null)
+    def setTags(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    def setTagsNull: Self = StObject.set(x, "tags", null)
     
     @scala.inline
-    def deleteNickname: Self = this.set("nickname", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTags(value: NullableOption[js.Array[String]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setVideoDeviceName(value: NullableOption[String]): Self = StObject.set(x, "videoDeviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setVideoDeviceNameNull: Self = StObject.set(x, "videoDeviceName", null)
     
     @scala.inline
-    def setTagsNull: Self = this.set("tags", null)
-    
-    @scala.inline
-    def setVideoDeviceName(value: NullableOption[String]): Self = this.set("videoDeviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoDeviceName: Self = this.set("videoDeviceName", js.undefined)
-    
-    @scala.inline
-    def setVideoDeviceNameNull: Self = this.set("videoDeviceName", null)
+    def setVideoDeviceNameUndefined: Self = StObject.set(x, "videoDeviceName", js.undefined)
   }
 }

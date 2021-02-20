@@ -1,12 +1,11 @@
 package typings.pTime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-time", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
   	Measure the time a promise takes to resolve.
@@ -24,16 +23,28 @@ object mod extends js.Object {
   	})();
   	```
   	*/
+  @JSImport("p-time", JSImport.Namespace)
+  @js.native
   def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = js.native
   
+  @JSImport("p-time", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   // TODO: Remove this for the next major release
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTime */ js.Any = js.native
+  @JSImport("p-time", "default")
+  @js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTime */ js.Any = js.native
+  @scala.inline
+  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pTime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Measure the time a promise takes to resolve. Logs the elapsed time.
   	@param asyncFunction - Promise-returning/async function.
   	@returns A decorated version of `asyncFunction`.
   	*/
+  @JSImport("p-time", "log")
+  @js.native
   def log[ArgumentsType /* <: js.Array[_] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = js.native
   
   @js.native

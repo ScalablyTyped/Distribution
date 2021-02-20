@@ -11,6 +11,7 @@ import typings.storybookClientApi.storybookClientApiStrings.number
 import typings.storybookClientApi.storybookClientApiStrings.other
 import typings.storybookClientApi.storybookClientApiStrings.string
 import typings.storybookClientApi.storybookClientApiStrings.union
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,48 +25,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.storybookClientApi.typesMod.SBUnionType
   - typings.storybookClientApi.typesMod.SBOtherType
 */
-trait SBType extends js.Object
+trait SBType extends StObject
 object SBType {
   
   @scala.inline
-  def SBEnumType(name: enum, value: js.Array[String | Double]): SBType = {
+  def SBArrayType(name: array, value: SBType): typings.storybookClientApi.typesMod.SBArrayType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBArrayType]
   }
   
   @scala.inline
-  def SBIntersectionType(name: intersection, value: js.Array[SBType]): SBType = {
+  def SBEnumType(name: enum, value: js.Array[String | Double]): typings.storybookClientApi.typesMod.SBEnumType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBEnumType]
   }
   
   @scala.inline
-  def SBObjectType(name: `object`, value: Record[String, SBType]): SBType = {
+  def SBIntersectionType(name: intersection, value: js.Array[SBType]): typings.storybookClientApi.typesMod.SBIntersectionType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBIntersectionType]
   }
   
   @scala.inline
-  def SBArrayType(name: array, value: SBType): SBType = {
+  def SBObjectType(name: `object`, value: Record[String, SBType]): typings.storybookClientApi.typesMod.SBObjectType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBObjectType]
   }
   
   @scala.inline
-  def SBUnionType(name: union, value: js.Array[SBType]): SBType = {
+  def SBOtherType(name: other, value: String): typings.storybookClientApi.typesMod.SBOtherType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBOtherType]
   }
   
   @scala.inline
-  def SBOtherType(name: other, value: String): SBType = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
-  }
-  
-  @scala.inline
-  def SBScalarType(name: boolean | string | number | function): SBType = {
+  def SBScalarType(name: boolean | string | number | function): typings.storybookClientApi.typesMod.SBScalarType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SBType]
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBScalarType]
+  }
+  
+  @scala.inline
+  def SBUnionType(name: union, value: js.Array[SBType]): typings.storybookClientApi.typesMod.SBUnionType = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.storybookClientApi.typesMod.SBUnionType]
   }
 }

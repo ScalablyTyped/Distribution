@@ -1,12 +1,13 @@
 package typings.antvPathUtil
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/path-util/lib/parse-path-string", JSImport.Namespace)
-@js.native
-object parsePathStringMod extends js.Object {
+object parsePathStringMod {
   
+  @JSImport("@antv/path-util/lib/parse-path-string", JSImport.Default)
+  @js.native
   def default(pathString: String): js.Array[_] = js.native
 }

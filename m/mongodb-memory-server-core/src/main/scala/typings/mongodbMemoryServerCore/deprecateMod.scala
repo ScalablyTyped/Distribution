@@ -1,12 +1,13 @@
 package typings.mongodbMemoryServerCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongodb-memory-server-core/lib/util/deprecate", JSImport.Namespace)
-@js.native
-object deprecateMod extends js.Object {
+object deprecateMod {
   
+  @JSImport("mongodb-memory-server-core/lib/util/deprecate", "deprecate")
+  @js.native
   def deprecate(msg: String): Unit = js.native
 }

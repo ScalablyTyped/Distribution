@@ -2,13 +2,16 @@ package typings.nodelibFsWalk
 
 import typings.nodelibFsScandir.settingsMod.Options
 import typings.nodelibFsScandir.typesMod.Entry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nodelib/fs.walk/out/readers/sync", JSImport.Namespace)
-@js.native
-object readersSyncMod extends js.Object {
+object readersSyncMod {
+  
+  @JSImport("@nodelib/fs.walk/out/readers/sync", JSImport.Default)
+  @js.native
+  class default () extends SyncReader
   
   @js.native
   trait SyncReader
@@ -36,7 +39,4 @@ object readersSyncMod extends js.Object {
     
     def read(): js.Array[typings.nodelibFsWalk.typesMod.Entry] = js.native
   }
-  
-  @js.native
-  class default () extends SyncReader
 }

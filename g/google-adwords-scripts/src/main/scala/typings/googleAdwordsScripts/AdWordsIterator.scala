@@ -1,11 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdWordsIterator[E] extends js.Object {
+trait AdWordsIterator[E] extends StObject {
   
   def hasNext(): Boolean = js.native
   
@@ -22,27 +23,15 @@ object AdWordsIterator {
   }
   
   @scala.inline
-  implicit class AdWordsIteratorOps[Self <: AdWordsIterator[_], E] (val x: Self with AdWordsIterator[E]) extends AnyVal {
+  implicit class AdWordsIteratorMutableBuilder[Self <: AdWordsIterator[_], E] (val x: Self with AdWordsIterator[E]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNext(value: () => E): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasNext(value: () => Boolean): Self = this.set("hasNext", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setNext(value: () => E): Self = this.set("next", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTotalNumEntities(value: () => Double): Self = this.set("totalNumEntities", js.Any.fromFunction0(value))
+    def setTotalNumEntities(value: () => Double): Self = StObject.set(x, "totalNumEntities", js.Any.fromFunction0(value))
   }
 }

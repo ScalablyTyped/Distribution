@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,27 +45,15 @@ object XProgressMonitor {
   }
   
   @scala.inline
-  implicit class XProgressMonitorOps[Self <: XProgressMonitor] (val x: Self) extends AnyVal {
+  implicit class XProgressMonitorMutableBuilder[Self <: XProgressMonitor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemoveText(value: (String, Boolean) => Unit): Self = StObject.set(x, "removeText", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddText(value: (String, String, Boolean) => Unit): Self = this.set("addText", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setRemoveText(value: (String, Boolean) => Unit): Self = this.set("removeText", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setUpdateText(value: (String, String, Boolean) => Unit): Self = this.set("updateText", js.Any.fromFunction3(value))
+    def setUpdateText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "updateText", js.Any.fromFunction3(value))
   }
 }

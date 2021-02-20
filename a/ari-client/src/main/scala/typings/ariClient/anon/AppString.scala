@@ -1,11 +1,12 @@
 package typings.ariClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppString extends js.Object {
+trait AppString extends StObject {
   
   var app: String = js.native
   
@@ -20,27 +21,15 @@ object AppString {
   }
   
   @scala.inline
-  implicit class AppStringOps[Self <: AppString] (val x: Self) extends AnyVal {
+  implicit class AppStringMutableBuilder[Self <: AppString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setApp(value: String): Self = this.set("app", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAppArgs(value: String): Self = this.set("appArgs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppArgs: Self = this.set("appArgs", js.undefined)
+    def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
   }
 }

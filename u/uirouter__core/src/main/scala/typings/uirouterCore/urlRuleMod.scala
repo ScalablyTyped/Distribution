@@ -11,22 +11,23 @@ import typings.uirouterCore.urlInterfaceMod.UrlRule
 import typings.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
 import typings.uirouterCore.urlInterfaceMod.UrlRuleMatchFn
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/url/urlRule", JSImport.Namespace)
-@js.native
-object urlRuleMod extends js.Object {
+object urlRuleMod {
   
+  @JSImport("@uirouter/core/lib/url/urlRule", "BaseUrlRule")
   @js.native
   class BaseUrlRule protected () extends UrlRule {
     def this(`match`: UrlRuleMatchFn) = this()
     def this(`match`: UrlRuleMatchFn, handler: UrlRuleHandlerFn) = this()
   }
   
+  @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory")
   @js.native
-  class UrlRuleFactory protected () extends js.Object {
+  class UrlRuleFactory protected () extends StObject {
     def this(router: UIRouter) = this()
     
     def compile(str: String): UrlMatcher = js.native
@@ -142,9 +143,10 @@ object urlRuleMod extends js.Object {
     var router: UIRouter = js.native
   }
   /* static members */
-  @js.native
-  object UrlRuleFactory extends js.Object {
+  object UrlRuleFactory {
     
+    @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory.isUrlRule")
+    @js.native
     def isUrlRule(obj: js.Any): Boolean = js.native
   }
 }

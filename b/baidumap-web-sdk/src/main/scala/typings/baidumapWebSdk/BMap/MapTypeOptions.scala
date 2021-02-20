@@ -1,11 +1,12 @@
 package typings.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapTypeOptions extends js.Object {
+trait MapTypeOptions extends StObject {
   
   var errorImageUrl: js.UndefOr[String] = js.native
   
@@ -26,48 +27,36 @@ object MapTypeOptions {
   }
   
   @scala.inline
-  implicit class MapTypeOptionsOps[Self <: MapTypeOptions] (val x: Self) extends AnyVal {
+  implicit class MapTypeOptionsMutableBuilder[Self <: MapTypeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorImageUrl(value: String): Self = StObject.set(x, "errorImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorImageUrlUndefined: Self = StObject.set(x, "errorImageUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorImageUrl(value: String): Self = this.set("errorImageUrl", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteErrorImageUrl: Self = this.set("errorImageUrl", js.undefined)
+    def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setTextColor(value: Double): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    def setTips(value: String): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextColor(value: Double): Self = this.set("textColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextColor: Self = this.set("textColor", js.undefined)
-    
-    @scala.inline
-    def setTips(value: String): Self = this.set("tips", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTips: Self = this.set("tips", js.undefined)
+    def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
   }
 }

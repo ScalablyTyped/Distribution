@@ -1,11 +1,12 @@
 package typings.octokitTypes.endpointsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionsCreateWorkflowDispatchEndpoint extends js.Object {
+trait ActionsCreateWorkflowDispatchEndpoint extends StObject {
   
   /**
     * Input keys and values configured in the workflow file. The maximum number of properties is 10.
@@ -32,36 +33,24 @@ object ActionsCreateWorkflowDispatchEndpoint {
   }
   
   @scala.inline
-  implicit class ActionsCreateWorkflowDispatchEndpointOps[Self <: ActionsCreateWorkflowDispatchEndpoint] (val x: Self) extends AnyVal {
+  implicit class ActionsCreateWorkflowDispatchEndpointMutableBuilder[Self <: ActionsCreateWorkflowDispatchEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInputs(value: ActionsCreateWorkflowDispatchParamsInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRef(value: String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkflow_id(value: Double): Self = this.set("workflow_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInputs(value: ActionsCreateWorkflowDispatchParamsInputs): Self = this.set("inputs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInputs: Self = this.set("inputs", js.undefined)
+    def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
   }
 }

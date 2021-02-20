@@ -1,11 +1,12 @@
 package typings.asana.mod.resources
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Params extends js.Object {
+trait Params extends StObject {
   
   var opt_expand: js.UndefOr[String] = js.native
   
@@ -20,30 +21,18 @@ object Params {
   }
   
   @scala.inline
-  implicit class ParamsOps[Self <: Params] (val x: Self) extends AnyVal {
+  implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOpt_expand(value: String): Self = StObject.set(x, "opt_expand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpt_expandUndefined: Self = StObject.set(x, "opt_expand", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOpt_fields(value: String): Self = StObject.set(x, "opt_fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpt_expand(value: String): Self = this.set("opt_expand", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpt_expand: Self = this.set("opt_expand", js.undefined)
-    
-    @scala.inline
-    def setOpt_fields(value: String): Self = this.set("opt_fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOpt_fields: Self = this.set("opt_fields", js.undefined)
+    def setOpt_fieldsUndefined: Self = StObject.set(x, "opt_fields", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v4Mod.analyticsreportingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A segment sequence definition.
   */
 @js.native
-trait SchemaSegmentSequenceStep extends js.Object {
+trait SchemaSegmentSequenceStep extends StObject {
   
   /**
     * Specifies if the step immediately precedes or can be any time before the
@@ -31,33 +32,21 @@ object SchemaSegmentSequenceStep {
   }
   
   @scala.inline
-  implicit class SchemaSegmentSequenceStepOps[Self <: SchemaSegmentSequenceStep] (val x: Self) extends AnyVal {
+  implicit class SchemaSegmentSequenceStepMutableBuilder[Self <: SchemaSegmentSequenceStep] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchType(value: String): Self = StObject.set(x, "matchType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchTypeUndefined: Self = StObject.set(x, "matchType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = StObject.set(x, "orFiltersForSegment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
+    def setOrFiltersForSegmentUndefined: Self = StObject.set(x, "orFiltersForSegment", js.undefined)
     
     @scala.inline
-    def deleteMatchType: Self = this.set("matchType", js.undefined)
-    
-    @scala.inline
-    def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = this.set("orFiltersForSegment", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrFiltersForSegment(value: js.Array[SchemaOrFiltersForSegment]): Self = this.set("orFiltersForSegment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrFiltersForSegment: Self = this.set("orFiltersForSegment", js.undefined)
+    def setOrFiltersForSegmentVarargs(value: SchemaOrFiltersForSegment*): Self = StObject.set(x, "orFiltersForSegment", js.Array(value :_*))
   }
 }

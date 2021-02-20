@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends js.Object {
+trait Response extends StObject {
   
   /** The result of creating a footer. */
   var createFooter: js.UndefOr[CreateFooterResponse] = js.native
@@ -37,60 +38,48 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseOps[Self <: Response] (val x: Self) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateFooter(value: CreateFooterResponse): Self = StObject.set(x, "createFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateFooterUndefined: Self = StObject.set(x, "createFooter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateFootnote(value: CreateFootnoteResponse): Self = StObject.set(x, "createFootnote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFooter(value: CreateFooterResponse): Self = this.set("createFooter", value.asInstanceOf[js.Any])
+    def setCreateFootnoteUndefined: Self = StObject.set(x, "createFootnote", js.undefined)
     
     @scala.inline
-    def deleteCreateFooter: Self = this.set("createFooter", js.undefined)
+    def setCreateHeader(value: CreateHeaderResponse): Self = StObject.set(x, "createHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateFootnote(value: CreateFootnoteResponse): Self = this.set("createFootnote", value.asInstanceOf[js.Any])
+    def setCreateHeaderUndefined: Self = StObject.set(x, "createHeader", js.undefined)
     
     @scala.inline
-    def deleteCreateFootnote: Self = this.set("createFootnote", js.undefined)
+    def setCreateNamedRange(value: CreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateHeader(value: CreateHeaderResponse): Self = this.set("createHeader", value.asInstanceOf[js.Any])
+    def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
     
     @scala.inline
-    def deleteCreateHeader: Self = this.set("createHeader", js.undefined)
+    def setInsertInlineImage(value: InsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateNamedRange(value: CreateNamedRangeResponse): Self = this.set("createNamedRange", value.asInstanceOf[js.Any])
+    def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
     
     @scala.inline
-    def deleteCreateNamedRange: Self = this.set("createNamedRange", js.undefined)
+    def setInsertInlineSheetsChart(value: InsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertInlineImage(value: InsertInlineImageResponse): Self = this.set("insertInlineImage", value.asInstanceOf[js.Any])
+    def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
     
     @scala.inline
-    def deleteInsertInlineImage: Self = this.set("insertInlineImage", js.undefined)
+    def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertInlineSheetsChart(value: InsertInlineSheetsChartResponse): Self = this.set("insertInlineSheetsChart", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertInlineSheetsChart: Self = this.set("insertInlineSheetsChart", js.undefined)
-    
-    @scala.inline
-    def setReplaceAllText(value: ReplaceAllTextResponse): Self = this.set("replaceAllText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceAllText: Self = this.set("replaceAllText", js.undefined)
+    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
   }
 }

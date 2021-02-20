@@ -4,6 +4,7 @@ import typings.grammarkdown.tokensMod.BooleanKind
 import typings.grammarkdown.tokensMod.SyntaxKind.AtToken
 import typings.grammarkdown.tokensMod.SyntaxKind.DefaultKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.DefineKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

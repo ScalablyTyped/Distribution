@@ -4,12 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.DataView
 import typings.std.WebAssembly.Imports
 import typings.std.WebAssembly.Instance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Go extends js.Object {
+trait Go extends StObject {
   
   var argv: js.Array[String] = js.native
   
@@ -42,42 +43,30 @@ object Go {
   }
   
   @scala.inline
-  implicit class GoOps[Self <: Go] (val x: Self) extends AnyVal {
+  implicit class GoMutableBuilder[Self <: Go] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgvVarargs(value: String*): Self = this.set("argv", js.Array(value :_*))
+    def setExit(value: Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArgv(value: js.Array[String]): Self = this.set("argv", value.asInstanceOf[js.Any])
+    def setExited(value: Boolean): Self = StObject.set(x, "exited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    def setImportObject(value: Imports): Self = StObject.set(x, "importObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit(value: Double => Unit): Self = this.set("exit", js.Any.fromFunction1(value))
+    def setMem(value: DataView): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExited(value: Boolean): Self = this.set("exited", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setImportObject(value: Imports): Self = this.set("importObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMem(value: DataView): Self = this.set("mem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRun(value: Instance => js.Promise[Unit]): Self = this.set("run", js.Any.fromFunction1(value))
+    def setRun(value: Instance => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

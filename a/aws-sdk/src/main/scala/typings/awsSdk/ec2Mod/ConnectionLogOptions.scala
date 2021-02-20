@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectionLogOptions extends js.Object {
+trait ConnectionLogOptions extends StObject {
   
   /**
     * The name of the CloudWatch Logs log group. Required if connection logging is enabled.
@@ -31,36 +32,24 @@ object ConnectionLogOptions {
   }
   
   @scala.inline
-  implicit class ConnectionLogOptionsOps[Self <: ConnectionLogOptions] (val x: Self) extends AnyVal {
+  implicit class ConnectionLogOptionsMutableBuilder[Self <: ConnectionLogOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCloudwatchLogGroup(value: String): Self = StObject.set(x, "CloudwatchLogGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCloudwatchLogGroupUndefined: Self = StObject.set(x, "CloudwatchLogGroup", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloudwatchLogStream(value: String): Self = StObject.set(x, "CloudwatchLogStream", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchLogGroup(value: String): Self = this.set("CloudwatchLogGroup", value.asInstanceOf[js.Any])
+    def setCloudwatchLogStreamUndefined: Self = StObject.set(x, "CloudwatchLogStream", js.undefined)
     
     @scala.inline
-    def deleteCloudwatchLogGroup: Self = this.set("CloudwatchLogGroup", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloudwatchLogStream(value: String): Self = this.set("CloudwatchLogStream", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCloudwatchLogStream: Self = this.set("CloudwatchLogStream", js.undefined)
-    
-    @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

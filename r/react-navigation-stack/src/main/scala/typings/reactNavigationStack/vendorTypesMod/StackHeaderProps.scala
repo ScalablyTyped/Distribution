@@ -5,12 +5,13 @@ import typings.reactNavigation.mod.NavigationParams
 import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigationStack.reactNavigationStackStrings.float
 import typings.reactNavigationStack.reactNavigationStackStrings.screen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StackHeaderProps extends js.Object {
+trait StackHeaderProps extends StObject {
   
   /**
     * Safe area insets to use in the header, e.g. to apply extra spacing for statusbar and notch.
@@ -64,42 +65,30 @@ object StackHeaderProps {
   }
   
   @scala.inline
-  implicit class StackHeaderPropsOps[Self <: StackHeaderProps] (val x: Self) extends AnyVal {
+  implicit class StackHeaderPropsMutableBuilder[Self <: StackHeaderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: float | screen): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsets(value: EdgeInsets): Self = this.set("insets", value.asInstanceOf[js.Any])
+    def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: Layout): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setPrevious(value: Scene[Route[String]]): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: float | screen): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
     @scala.inline
-    def setNavigation(value: StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    def setScene(value: Scene[Route[String]]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScene(value: Scene[Route[String]]): Self = this.set("scene", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = this.set("styleInterpolator", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPrevious(value: Scene[Route[String]]): Self = this.set("previous", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrevious: Self = this.set("previous", js.undefined)
+    def setStyleInterpolator(value: /* props */ StackHeaderInterpolationProps => StackHeaderInterpolatedStyle): Self = StObject.set(x, "styleInterpolator", js.Any.fromFunction1(value))
   }
 }

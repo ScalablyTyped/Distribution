@@ -1,11 +1,12 @@
 package typings.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartStemAndStyle extends js.Object {
+trait ChartStemAndStyle extends StObject {
   
   var stem: js.UndefOr[ChartStem] = js.native
   
@@ -20,30 +21,18 @@ object ChartStemAndStyle {
   }
   
   @scala.inline
-  implicit class ChartStemAndStyleOps[Self <: ChartStemAndStyle] (val x: Self) extends AnyVal {
+  implicit class ChartStemAndStyleMutableBuilder[Self <: ChartStemAndStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStem(value: ChartStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStem(value: ChartStem): Self = this.set("stem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStem: Self = this.set("stem", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

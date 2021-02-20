@@ -1,13 +1,14 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.iskeletonviewerMod.ISkeletonViewerDisplayOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<babylonjs.babylonjs/Debug/ISkeletonViewer.ISkeletonViewerOptions> */
 @js.native
-trait PartialISkeletonViewerOpt extends js.Object {
+trait PartialISkeletonViewerOpt extends StObject {
   
   var computeBonesUsingShaders: js.UndefOr[Boolean] = js.native
   
@@ -30,54 +31,42 @@ object PartialISkeletonViewerOpt {
   }
   
   @scala.inline
-  implicit class PartialISkeletonViewerOptOps[Self <: PartialISkeletonViewerOpt] (val x: Self) extends AnyVal {
+  implicit class PartialISkeletonViewerOptMutableBuilder[Self <: PartialISkeletonViewerOpt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "computeBonesUsingShaders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeBonesUsingShadersUndefined: Self = StObject.set(x, "computeBonesUsingShaders", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayMode(value: Double): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeBonesUsingShaders(value: Boolean): Self = this.set("computeBonesUsingShaders", value.asInstanceOf[js.Any])
+    def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
     @scala.inline
-    def deleteComputeBonesUsingShaders: Self = this.set("computeBonesUsingShaders", js.undefined)
+    def setDisplayOptions(value: ISkeletonViewerDisplayOptions): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayMode(value: Double): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
     @scala.inline
-    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    def setPauseAnimations(value: Boolean): Self = StObject.set(x, "pauseAnimations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayOptions(value: ISkeletonViewerDisplayOptions): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
+    def setPauseAnimationsUndefined: Self = StObject.set(x, "pauseAnimations", js.undefined)
     
     @scala.inline
-    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
+    def setReturnToRest(value: Boolean): Self = StObject.set(x, "returnToRest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPauseAnimations(value: Boolean): Self = this.set("pauseAnimations", value.asInstanceOf[js.Any])
+    def setReturnToRestUndefined: Self = StObject.set(x, "returnToRest", js.undefined)
     
     @scala.inline
-    def deletePauseAnimations: Self = this.set("pauseAnimations", js.undefined)
+    def setUseAllBones(value: Boolean): Self = StObject.set(x, "useAllBones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturnToRest(value: Boolean): Self = this.set("returnToRest", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReturnToRest: Self = this.set("returnToRest", js.undefined)
-    
-    @scala.inline
-    def setUseAllBones(value: Boolean): Self = this.set("useAllBones", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseAllBones: Self = this.set("useAllBones", js.undefined)
+    def setUseAllBonesUndefined: Self = StObject.set(x, "useAllBones", js.undefined)
   }
 }

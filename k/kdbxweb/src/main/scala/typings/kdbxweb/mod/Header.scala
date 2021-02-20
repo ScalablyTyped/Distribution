@@ -1,13 +1,14 @@
 package typings.kdbxweb.mod
 
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Header")
 @js.native
-class Header () extends js.Object {
+class Header () extends StObject {
   
   var compression: Double = js.native
   
@@ -48,11 +49,13 @@ class Header () extends js.Object {
   def writeInnerHeader(stm: BinaryStream, ctx: Context): Unit = js.native
 }
 /* static members */
-@JSImport("kdbxweb", "Header")
-@js.native
-object Header extends js.Object {
+object Header {
   
+  @JSImport("kdbxweb", "Header.create")
+  @js.native
   def create(): Header = js.native
   
+  @JSImport("kdbxweb", "Header.read")
+  @js.native
   def read(stm: BinaryStream, ctx: Context): Header = js.native
 }

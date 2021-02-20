@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderTargetCreationOptions extends js.Object {
+trait RenderTargetCreationOptions extends StObject {
   
   /** Defines format (RGBA by default) */
   var format: js.UndefOr[Double] = js.native
@@ -36,54 +37,42 @@ object RenderTargetCreationOptions {
   }
   
   @scala.inline
-  implicit class RenderTargetCreationOptionsOps[Self <: RenderTargetCreationOptions] (val x: Self) extends AnyVal {
+  implicit class RenderTargetCreationOptionsMutableBuilder[Self <: RenderTargetCreationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: Double): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setGenerateDepthBufferUndefined: Self = StObject.set(x, "generateDepthBuffer", js.undefined)
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateDepthBuffer(value: Boolean): Self = this.set("generateDepthBuffer", value.asInstanceOf[js.Any])
+    def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
     
     @scala.inline
-    def deleteGenerateDepthBuffer: Self = this.set("generateDepthBuffer", js.undefined)
+    def setGenerateStencilBuffer(value: Boolean): Self = StObject.set(x, "generateStencilBuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateMipMaps(value: Boolean): Self = this.set("generateMipMaps", value.asInstanceOf[js.Any])
+    def setGenerateStencilBufferUndefined: Self = StObject.set(x, "generateStencilBuffer", js.undefined)
     
     @scala.inline
-    def deleteGenerateMipMaps: Self = this.set("generateMipMaps", js.undefined)
+    def setSamplingMode(value: Double): Self = StObject.set(x, "samplingMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGenerateStencilBuffer(value: Boolean): Self = this.set("generateStencilBuffer", value.asInstanceOf[js.Any])
+    def setSamplingModeUndefined: Self = StObject.set(x, "samplingMode", js.undefined)
     
     @scala.inline
-    def deleteGenerateStencilBuffer: Self = this.set("generateStencilBuffer", js.undefined)
+    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSamplingMode(value: Double): Self = this.set("samplingMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSamplingMode: Self = this.set("samplingMode", js.undefined)
-    
-    @scala.inline
-    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

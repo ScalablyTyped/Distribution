@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MVCArrayHandlerMap[C /* <: MVCArray[T] */, T] extends js.Object {
+trait MVCArrayHandlerMap[C /* <: MVCArray[T] */, T] extends StObject {
   
   /**
     * This event is fired when {@link MVCArray.insertAt insertAt}() is called. The event passes the index that was
@@ -37,27 +38,15 @@ object MVCArrayHandlerMap {
   }
   
   @scala.inline
-  implicit class MVCArrayHandlerMapOps[Self <: MVCArrayHandlerMap[_, _], C /* <: MVCArray[T] */, T] (val x: Self with (MVCArrayHandlerMap[C, T])) extends AnyVal {
+  implicit class MVCArrayHandlerMapMutableBuilder[Self <: MVCArrayHandlerMap[_, _], C /* <: MVCArray[T] */, T] (val x: Self with (MVCArrayHandlerMap[C, T])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsert_at(value: Double => Unit): Self = StObject.set(x, "insert_at", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRemove_at(value: (Double, T) => Unit): Self = StObject.set(x, "remove_at", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInsert_at(value: Double => Unit): Self = this.set("insert_at", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemove_at(value: (Double, T) => Unit): Self = this.set("remove_at", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSet_at(value: (Double, T) => Unit): Self = this.set("set_at", js.Any.fromFunction2(value))
+    def setSet_at(value: (Double, T) => Unit): Self = StObject.set(x, "set_at", js.Any.fromFunction2(value))
   }
 }

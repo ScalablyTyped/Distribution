@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,39 +83,27 @@ object ASPxClientLoadingPanel {
   }
   
   @scala.inline
-  implicit class ASPxClientLoadingPanelOps[Self <: ASPxClientLoadingPanel] (val x: Self) extends AnyVal {
+  implicit class ASPxClientLoadingPanelMutableBuilder[Self <: ASPxClientLoadingPanel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHide(value: () => Unit): Self = StObject.set(x, "Hide", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetText(value: () => String): Self = this.set("GetText", js.Any.fromFunction0(value))
+    def setShow(value: () => Unit): Self = StObject.set(x, "Show", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHide(value: () => Unit): Self = this.set("Hide", js.Any.fromFunction0(value))
+    def setShowAtPos(value: (Double, Double) => Unit): Self = StObject.set(x, "ShowAtPos", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetText(value: String => Unit): Self = this.set("SetText", js.Any.fromFunction1(value))
+    def setShowInElement(value: js.Any => Unit): Self = StObject.set(x, "ShowInElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setShow(value: () => Unit): Self = this.set("Show", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setShowAtPos(value: (Double, Double) => Unit): Self = this.set("ShowAtPos", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setShowInElement(value: js.Any => Unit): Self = this.set("ShowInElement", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setShowInElementByID(value: String => Unit): Self = this.set("ShowInElementByID", js.Any.fromFunction1(value))
+    def setShowInElementByID(value: String => Unit): Self = StObject.set(x, "ShowInElementByID", js.Any.fromFunction1(value))
   }
 }

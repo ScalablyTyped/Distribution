@@ -1,5 +1,6 @@
 package typings.googleapis.polyV1Mod.polyV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * asset was uploaded.
   */
 @js.native
-trait SchemaPresentationParams extends js.Object {
+trait SchemaPresentationParams extends StObject {
   
   /**
     * A background color which could be used for displaying the 3D asset in a
@@ -52,36 +53,24 @@ object SchemaPresentationParams {
   }
   
   @scala.inline
-  implicit class SchemaPresentationParamsOps[Self <: SchemaPresentationParams] (val x: Self) extends AnyVal {
+  implicit class SchemaPresentationParamsMutableBuilder[Self <: SchemaPresentationParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setOrientingRotation(value: SchemaQuaternion): Self = StObject.set(x, "orientingRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorSpace(value: String): Self = this.set("colorSpace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColorSpace: Self = this.set("colorSpace", js.undefined)
-    
-    @scala.inline
-    def setOrientingRotation(value: SchemaQuaternion): Self = this.set("orientingRotation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientingRotation: Self = this.set("orientingRotation", js.undefined)
+    def setOrientingRotationUndefined: Self = StObject.set(x, "orientingRotation", js.undefined)
   }
 }

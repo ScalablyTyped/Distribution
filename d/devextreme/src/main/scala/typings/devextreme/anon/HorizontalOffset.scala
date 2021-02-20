@@ -4,12 +4,13 @@ import typings.devextreme.devextremeStrings.ellipsis
 import typings.devextreme.devextremeStrings.hide
 import typings.devextreme.devextremeStrings.none
 import typings.devextreme.mod.DevExpress.viz.dxSankeyNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HorizontalOffset extends js.Object {
+trait HorizontalOffset extends StObject {
   
   var border: js.UndefOr[ColorVisible] = js.native
   
@@ -38,72 +39,60 @@ object HorizontalOffset {
   }
   
   @scala.inline
-  implicit class HorizontalOffsetOps[Self <: HorizontalOffset] (val x: Self) extends AnyVal {
+  implicit class HorizontalOffsetMutableBuilder[Self <: HorizontalOffset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomizeText(value: /* itemInfo */ dxSankeyNode => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBorder(value: ColorVisible): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeText(value: /* itemInfo */ dxSankeyNode => String): Self = this.set("customizeText", js.Any.fromFunction1(value))
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCustomizeText: Self = this.set("customizeText", js.undefined)
+    def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setOverlappingBehavior(value: ellipsis | hide | none): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalOffset(value: Double): Self = this.set("horizontalOffset", value.asInstanceOf[js.Any])
+    def setOverlappingBehaviorUndefined: Self = StObject.set(x, "overlappingBehavior", js.undefined)
     
     @scala.inline
-    def deleteHorizontalOffset: Self = this.set("horizontalOffset", js.undefined)
+    def setShadow(value: Blur): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverlappingBehavior(value: ellipsis | hide | none): Self = this.set("overlappingBehavior", value.asInstanceOf[js.Any])
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     @scala.inline
-    def deleteOverlappingBehavior: Self = this.set("overlappingBehavior", js.undefined)
+    def setUseNodeColors(value: Boolean): Self = StObject.set(x, "useNodeColors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadow(value: Blur): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setUseNodeColorsUndefined: Self = StObject.set(x, "useNodeColors", js.undefined)
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setVerticalOffset(value: Double): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseNodeColors(value: Boolean): Self = this.set("useNodeColors", value.asInstanceOf[js.Any])
+    def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
     
     @scala.inline
-    def deleteUseNodeColors: Self = this.set("useNodeColors", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalOffset(value: Double): Self = this.set("verticalOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalOffset: Self = this.set("verticalOffset", js.undefined)
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

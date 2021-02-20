@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableFastSnapshotRestoresResult extends js.Object {
+trait DisableFastSnapshotRestoresResult extends StObject {
   
   /**
     * Information about the snapshots for which fast snapshot restores were successfully disabled.
@@ -26,36 +27,24 @@ object DisableFastSnapshotRestoresResult {
   }
   
   @scala.inline
-  implicit class DisableFastSnapshotRestoresResultOps[Self <: DisableFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
+  implicit class DisableFastSnapshotRestoresResultMutableBuilder[Self <: DisableFastSnapshotRestoresResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSuccessful(value: DisableFastSnapshotRestoreSuccessSet): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuccessfulVarargs(value: DisableFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "Successful", js.Array(value :_*))
     
     @scala.inline
-    def setSuccessfulVarargs(value: DisableFastSnapshotRestoreSuccessItem*): Self = this.set("Successful", js.Array(value :_*))
+    def setUnsuccessful(value: DisableFastSnapshotRestoreErrorSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccessful(value: DisableFastSnapshotRestoreSuccessSet): Self = this.set("Successful", value.asInstanceOf[js.Any])
+    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
     @scala.inline
-    def deleteSuccessful: Self = this.set("Successful", js.undefined)
-    
-    @scala.inline
-    def setUnsuccessfulVarargs(value: DisableFastSnapshotRestoreErrorItem*): Self = this.set("Unsuccessful", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnsuccessful(value: DisableFastSnapshotRestoreErrorSet): Self = this.set("Unsuccessful", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnsuccessful: Self = this.set("Unsuccessful", js.undefined)
+    def setUnsuccessfulVarargs(value: DisableFastSnapshotRestoreErrorItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

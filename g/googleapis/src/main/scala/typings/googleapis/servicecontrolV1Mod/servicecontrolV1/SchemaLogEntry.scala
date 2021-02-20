@@ -1,6 +1,7 @@
 package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An individual log entry.
   */
 @js.native
-trait SchemaLogEntry extends js.Object {
+trait SchemaLogEntry extends StObject {
   
   /**
     * Optional. Information about the HTTP request associated with this log
@@ -87,84 +88,72 @@ object SchemaLogEntry {
   }
   
   @scala.inline
-  implicit class SchemaLogEntryOps[Self <: SchemaLogEntry] (val x: Self) extends AnyVal {
+  implicit class SchemaLogEntryMutableBuilder[Self <: SchemaLogEntry] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpRequest(value: SchemaHttpRequest): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInsertId(value: String): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequest(value: SchemaHttpRequest): Self = this.set("httpRequest", value.asInstanceOf[js.Any])
+    def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
     
     @scala.inline
-    def deleteHttpRequest: Self = this.set("httpRequest", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertId(value: String): Self = this.set("insertId", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def deleteInsertId: Self = this.set("insertId", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setOperation(value: SchemaLogEntryOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProtoPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperation(value: SchemaLogEntryOperation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)
     
     @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtoPayload(value: StringDictionary[js.Any]): Self = this.set("protoPayload", value.asInstanceOf[js.Any])
+    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
     @scala.inline
-    def deleteProtoPayload: Self = this.set("protoPayload", js.undefined)
+    def setStructPayload(value: StringDictionary[js.Any]): Self = StObject.set(x, "structPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
+    def setStructPayloadUndefined: Self = StObject.set(x, "structPayload", js.undefined)
     
     @scala.inline
-    def deleteSeverity: Self = this.set("severity", js.undefined)
+    def setTextPayload(value: String): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructPayload(value: StringDictionary[js.Any]): Self = this.set("structPayload", value.asInstanceOf[js.Any])
+    def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
     
     @scala.inline
-    def deleteStructPayload: Self = this.set("structPayload", js.undefined)
+    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextPayload(value: String): Self = this.set("textPayload", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
     @scala.inline
-    def deleteTextPayload: Self = this.set("textPayload", js.undefined)
+    def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
-    
-    @scala.inline
-    def setTrace(value: String): Self = this.set("trace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrace: Self = this.set("trace", js.undefined)
+    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
   }
 }

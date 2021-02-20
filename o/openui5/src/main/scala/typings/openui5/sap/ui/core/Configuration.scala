@@ -2,6 +2,7 @@ package typings.openui5.sap.ui.core
 
 import typings.openui5.sap.ui.base.Object
 import typings.openui5.sap.ui.core.Configuration.FormatSettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -300,9 +301,7 @@ trait Configuration extends Object {
     */
   def setRTL(bRTL: Boolean): Configuration = js.native
 }
-@JSGlobal("sap.ui.core.Configuration")
-@js.native
-object Configuration extends js.Object {
+object Configuration {
   
   @js.native
   trait FormatSettings extends Object {

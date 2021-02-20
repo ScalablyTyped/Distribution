@@ -2,16 +2,16 @@ package typings.angularHttp
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/http/src/headers", JSImport.Namespace)
-@js.native
-object headersMod extends js.Object {
+object headersMod {
   
+  @JSImport("@angular/http/src/headers", "Headers")
   @js.native
-  class Headers () extends js.Object {
+  class Headers () extends StObject {
     def this(headers: StringDictionary[js.Any]) = this()
     def this(headers: Headers) = this()
     
@@ -78,12 +78,13 @@ object headersMod extends js.Object {
     def values(): js.Array[js.Array[String]] = js.native
   }
   /* static members */
-  @js.native
-  object Headers extends js.Object {
+  object Headers {
     
     /**
       * Returns a new Headers instance from the given DOMString of Response Headers
       */
+    @JSImport("@angular/http/src/headers", "Headers.fromResponseHeaderString")
+    @js.native
     def fromResponseHeaderString(headersString: String): Headers = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statistics extends js.Object {
+trait Statistics extends StObject {
   
   /**
     * The average of the aggregated field values.
@@ -56,66 +57,54 @@ object Statistics {
   }
   
   @scala.inline
-  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+  implicit class StatisticsMutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: Average): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: Average): Self = this.set("average", value.asInstanceOf[js.Any])
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("average", js.undefined)
+    def setMaximum(value: Maximum): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Count): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setMinimum(value: Minimum): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: Maximum): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setStdDeviation(value: StdDeviation): Self = StObject.set(x, "stdDeviation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: Minimum): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setStdDeviationUndefined: Self = StObject.set(x, "stdDeviation", js.undefined)
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setSum(value: Sum): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStdDeviation(value: StdDeviation): Self = this.set("stdDeviation", value.asInstanceOf[js.Any])
+    def setSumOfSquares(value: SumOfSquares): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStdDeviation: Self = this.set("stdDeviation", js.undefined)
+    def setSumOfSquaresUndefined: Self = StObject.set(x, "sumOfSquares", js.undefined)
     
     @scala.inline
-    def setSum(value: Sum): Self = this.set("sum", value.asInstanceOf[js.Any])
+    def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
     
     @scala.inline
-    def deleteSum: Self = this.set("sum", js.undefined)
+    def setVariance(value: Variance): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSumOfSquares(value: SumOfSquares): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
-    
-    @scala.inline
-    def setVariance(value: Variance): Self = this.set("variance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariance: Self = this.set("variance", js.undefined)
+    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

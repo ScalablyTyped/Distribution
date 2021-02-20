@@ -1,12 +1,11 @@
 package typings.makerJs.global.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MakerJs.solvers")
-@js.native
-object solvers extends js.Object {
+object solvers {
   
   /**
     * Solves for the length of a side of a triangle when you know length of one side and 2 angles.
@@ -16,6 +15,8 @@ object solvers extends js.Object {
     * @param otherAngleInDegrees An other angle of the triangle.
     * @returns Length of the side of the triangle which is opposite of the first angle parameter.
     */
+  @JSGlobal("MakerJs.solvers.solveTriangleASA")
+  @js.native
   def solveTriangleASA(oppositeAngleInDegrees: Double, lengthOfSideBetweenAngles: Double, otherAngleInDegrees: Double): Double = js.native
   
   /**
@@ -26,5 +27,7 @@ object solvers extends js.Object {
     * @param lengthC Length of the remaining side of the triangle.
     * @returns Angle opposite of the side represented by the first parameter.
     */
+  @JSGlobal("MakerJs.solvers.solveTriangleSSS")
+  @js.native
   def solveTriangleSSS(lengthA: Double, lengthB: Double, lengthC: Double): Double = js.native
 }

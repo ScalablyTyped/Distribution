@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`left-inner-join`
 import typings.arcgisJsApi.arcgisJsApiStrings.`left-outer-join`
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,36 +75,24 @@ object JoinTableDataSource {
   }
   
   @scala.inline
-  implicit class JoinTableDataSourceOps[Self <: JoinTableDataSource] (val x: Self) extends AnyVal {
+  implicit class JoinTableDataSourceMutableBuilder[Self <: JoinTableDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJoinType(value: `left-outer-join` | `left-inner-join`): Self = StObject.set(x, "joinType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftTableKey(value: String): Self = StObject.set(x, "leftTableKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeftTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "leftTableSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJoinType(value: `left-outer-join` | `left-inner-join`): Self = this.set("joinType", value.asInstanceOf[js.Any])
+    def setRightTableKey(value: String): Self = StObject.set(x, "rightTableKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftTableKey(value: String): Self = this.set("leftTableKey", value.asInstanceOf[js.Any])
+    def setRightTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = StObject.set(x, "rightTableSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = this.set("leftTableSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightTableKey(value: String): Self = this.set("rightTableKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRightTableSource(value: DynamicMapLayer | DynamicDataLayer): Self = this.set("rightTableSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `join-table`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `join-table`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.knuddelsUserappsApi.mod.global
 
 import typings.knuddelsUserappsApi.anon.OnEnd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 	 */
 @JSGlobal("UserAccess")
 @js.native
-class UserAccess () extends js.Object {
+class UserAccess () extends StObject {
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_eachAccessibleUser

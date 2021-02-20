@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AlertPolicy extends js.Object {
+trait AlertPolicy extends StObject {
   
   /** How to combine the results of multiple conditions to determine if an incident should be opened. If condition_time_series_query_language is present, this must be COMBINE_UNSPECIFIED. */
   var combiner: js.UndefOr[String] = js.native
@@ -76,94 +77,82 @@ object AlertPolicy {
   }
   
   @scala.inline
-  implicit class AlertPolicyOps[Self <: AlertPolicy] (val x: Self) extends AnyVal {
+  implicit class AlertPolicyMutableBuilder[Self <: AlertPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCombiner(value: String): Self = StObject.set(x, "combiner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCombinerUndefined: Self = StObject.set(x, "combiner", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditions(value: js.Array[Condition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCombiner(value: String): Self = this.set("combiner", value.asInstanceOf[js.Any])
+    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
     @scala.inline
-    def deleteCombiner: Self = this.set("combiner", js.undefined)
+    def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
     
     @scala.inline
-    def setConditionsVarargs(value: Condition*): Self = this.set("conditions", js.Array(value :_*))
+    def setCreationRecord(value: MutationRecord): Self = StObject.set(x, "creationRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditions(value: js.Array[Condition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    def setCreationRecordUndefined: Self = StObject.set(x, "creationRecord", js.undefined)
     
     @scala.inline
-    def deleteConditions: Self = this.set("conditions", js.undefined)
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationRecord(value: MutationRecord): Self = this.set("creationRecord", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteCreationRecord: Self = this.set("creationRecord", js.undefined)
+    def setDocumentation(value: Documentation): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentation(value: Documentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setMutationRecord(value: MutationRecord): Self = StObject.set(x, "mutationRecord", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setMutationRecordUndefined: Self = StObject.set(x, "mutationRecord", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutationRecord(value: MutationRecord): Self = this.set("mutationRecord", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMutationRecord: Self = this.set("mutationRecord", js.undefined)
+    def setNotificationChannels(value: js.Array[String]): Self = StObject.set(x, "notificationChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNotificationChannelsUndefined: Self = StObject.set(x, "notificationChannels", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNotificationChannelsVarargs(value: String*): Self = this.set("notificationChannels", js.Array(value :_*))
-    
-    @scala.inline
-    def setNotificationChannels(value: js.Array[String]): Self = this.set("notificationChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationChannels: Self = this.set("notificationChannels", js.undefined)
+    def setNotificationChannelsVarargs(value: String*): Self = StObject.set(x, "notificationChannels", js.Array(value :_*))
     
     @scala.inline
     def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.AlertPolicy with TopLevel[js.Any]
-    ): Self = this.set("userLabels", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUserLabels: Self = this.set("userLabels", js.undefined)
+    def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
     
     @scala.inline
-    def setValidity(value: Status): Self = this.set("validity", value.asInstanceOf[js.Any])
+    def setValidity(value: Status): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteValidity: Self = this.set("validity", js.undefined)
+    def setValidityUndefined: Self = StObject.set(x, "validity", js.undefined)
   }
 }

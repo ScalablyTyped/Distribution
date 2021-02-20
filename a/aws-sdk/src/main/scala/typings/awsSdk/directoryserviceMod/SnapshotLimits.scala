@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SnapshotLimits extends js.Object {
+trait SnapshotLimits extends StObject {
   
   /**
     * The current number of manual snapshots of the directory.
@@ -31,36 +32,24 @@ object SnapshotLimits {
   }
   
   @scala.inline
-  implicit class SnapshotLimitsOps[Self <: SnapshotLimits] (val x: Self) extends AnyVal {
+  implicit class SnapshotLimitsMutableBuilder[Self <: SnapshotLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManualSnapshotsCurrentCount(value: Limit): Self = StObject.set(x, "ManualSnapshotsCurrentCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManualSnapshotsCurrentCountUndefined: Self = StObject.set(x, "ManualSnapshotsCurrentCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManualSnapshotsLimit(value: Limit): Self = StObject.set(x, "ManualSnapshotsLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualSnapshotsCurrentCount(value: Limit): Self = this.set("ManualSnapshotsCurrentCount", value.asInstanceOf[js.Any])
+    def setManualSnapshotsLimitReached(value: ManualSnapshotsLimitReached): Self = StObject.set(x, "ManualSnapshotsLimitReached", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteManualSnapshotsCurrentCount: Self = this.set("ManualSnapshotsCurrentCount", js.undefined)
+    def setManualSnapshotsLimitReachedUndefined: Self = StObject.set(x, "ManualSnapshotsLimitReached", js.undefined)
     
     @scala.inline
-    def setManualSnapshotsLimit(value: Limit): Self = this.set("ManualSnapshotsLimit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualSnapshotsLimit: Self = this.set("ManualSnapshotsLimit", js.undefined)
-    
-    @scala.inline
-    def setManualSnapshotsLimitReached(value: ManualSnapshotsLimitReached): Self = this.set("ManualSnapshotsLimitReached", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManualSnapshotsLimitReached: Self = this.set("ManualSnapshotsLimitReached", js.undefined)
+    def setManualSnapshotsLimitUndefined: Self = StObject.set(x, "ManualSnapshotsLimit", js.undefined)
   }
 }

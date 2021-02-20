@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IspPlacement extends js.Object {
+trait IspPlacement extends StObject {
   
   /**
     * The name of the email provider that the inbox placement data applies to.
@@ -26,30 +27,18 @@ object IspPlacement {
   }
   
   @scala.inline
-  implicit class IspPlacementOps[Self <: IspPlacement] (val x: Self) extends AnyVal {
+  implicit class IspPlacementMutableBuilder[Self <: IspPlacement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIspName(value: IspName): Self = StObject.set(x, "IspName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIspNameUndefined: Self = StObject.set(x, "IspName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlacementStatistics(value: PlacementStatistics): Self = StObject.set(x, "PlacementStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIspName(value: IspName): Self = this.set("IspName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIspName: Self = this.set("IspName", js.undefined)
-    
-    @scala.inline
-    def setPlacementStatistics(value: PlacementStatistics): Self = this.set("PlacementStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlacementStatistics: Self = this.set("PlacementStatistics", js.undefined)
+    def setPlacementStatisticsUndefined: Self = StObject.set(x, "PlacementStatistics", js.undefined)
   }
 }

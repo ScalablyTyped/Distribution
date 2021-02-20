@@ -1,11 +1,12 @@
 package typings.winrt.Windows.Data.Xml.Dom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IXmlLoadSettings extends js.Object {
+trait IXmlLoadSettings extends StObject {
   
   var elementContentWhiteSpace: Boolean = js.native
   
@@ -32,33 +33,21 @@ object IXmlLoadSettings {
   }
   
   @scala.inline
-  implicit class IXmlLoadSettingsOps[Self <: IXmlLoadSettings] (val x: Self) extends AnyVal {
+  implicit class IXmlLoadSettingsMutableBuilder[Self <: IXmlLoadSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxElementDepth(value: Double): Self = StObject.set(x, "maxElementDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProhibitDtd(value: Boolean): Self = StObject.set(x, "prohibitDtd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementContentWhiteSpace(value: Boolean): Self = this.set("elementContentWhiteSpace", value.asInstanceOf[js.Any])
+    def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxElementDepth(value: Double): Self = this.set("maxElementDepth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProhibitDtd(value: Boolean): Self = this.set("prohibitDtd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolveExternals(value: Boolean): Self = this.set("resolveExternals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValidateOnParse(value: Boolean): Self = this.set("validateOnParse", value.asInstanceOf[js.Any])
+    def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
   }
 }

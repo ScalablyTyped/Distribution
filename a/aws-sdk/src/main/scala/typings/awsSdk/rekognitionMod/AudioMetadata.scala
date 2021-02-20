@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioMetadata extends js.Object {
+trait AudioMetadata extends StObject {
   
   /**
     * The audio codec used to encode or decode the audio stream. 
@@ -36,42 +37,30 @@ object AudioMetadata {
   }
   
   @scala.inline
-  implicit class AudioMetadataOps[Self <: AudioMetadata] (val x: Self) extends AnyVal {
+  implicit class AudioMetadataMutableBuilder[Self <: AudioMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCodec(value: String): Self = StObject.set(x, "Codec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCodecUndefined: Self = StObject.set(x, "Codec", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDurationMillis(value: ULong): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCodec(value: String): Self = this.set("Codec", value.asInstanceOf[js.Any])
+    def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
     @scala.inline
-    def deleteCodec: Self = this.set("Codec", js.undefined)
+    def setNumberOfChannels(value: ULong): Self = StObject.set(x, "NumberOfChannels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDurationMillis(value: ULong): Self = this.set("DurationMillis", value.asInstanceOf[js.Any])
+    def setNumberOfChannelsUndefined: Self = StObject.set(x, "NumberOfChannels", js.undefined)
     
     @scala.inline
-    def deleteDurationMillis: Self = this.set("DurationMillis", js.undefined)
+    def setSampleRate(value: ULong): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfChannels(value: ULong): Self = this.set("NumberOfChannels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfChannels: Self = this.set("NumberOfChannels", js.undefined)
-    
-    @scala.inline
-    def setSampleRate(value: ULong): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

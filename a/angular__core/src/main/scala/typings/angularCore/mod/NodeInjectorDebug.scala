@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeInjectorDebug extends js.Object {
+trait NodeInjectorDebug extends StObject {
   
   /**
     * Instance bloom. Does the current injector have a provider with a given bloom mask.
@@ -25,12 +26,12 @@ trait NodeInjectorDebug extends js.Object {
   /**
     * A list of providers associated with this injector.
     */
-  var providers: js.Array[Type[_] | ɵDirectiveDef[_] | ɵComponentDef[_]] = js.native
+  var providers: js.Array[typings.angularCore.mod.Type[_] | ɵDirectiveDef[_] | ɵComponentDef[_]] = js.native
   
   /**
     * A list of providers associated with this injector visible to the view of the component only.
     */
-  var viewProviders: js.Array[Type[_]] = js.native
+  var viewProviders: js.Array[typings.angularCore.mod.Type[_]] = js.native
 }
 object NodeInjectorDebug {
   
@@ -39,47 +40,35 @@ object NodeInjectorDebug {
     bloom: String,
     cumulativeBloom: String,
     parentInjectorIndex: Double,
-    providers: js.Array[Type[_] | ɵDirectiveDef[_] | ɵComponentDef[_]],
-    viewProviders: js.Array[Type[_]]
+    providers: js.Array[typings.angularCore.mod.Type[_] | ɵDirectiveDef[_] | ɵComponentDef[_]],
+    viewProviders: js.Array[typings.angularCore.mod.Type[_]]
   ): NodeInjectorDebug = {
     val __obj = js.Dynamic.literal(bloom = bloom.asInstanceOf[js.Any], cumulativeBloom = cumulativeBloom.asInstanceOf[js.Any], parentInjectorIndex = parentInjectorIndex.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], viewProviders = viewProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeInjectorDebug]
   }
   
   @scala.inline
-  implicit class NodeInjectorDebugOps[Self <: NodeInjectorDebug] (val x: Self) extends AnyVal {
+  implicit class NodeInjectorDebugMutableBuilder[Self <: NodeInjectorDebug] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBloom(value: String): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCumulativeBloom(value: String): Self = StObject.set(x, "cumulativeBloom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParentInjectorIndex(value: Double): Self = StObject.set(x, "parentInjectorIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBloom(value: String): Self = this.set("bloom", value.asInstanceOf[js.Any])
+    def setProviders(value: js.Array[typings.angularCore.mod.Type[_] | ɵDirectiveDef[_] | ɵComponentDef[_]]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulativeBloom(value: String): Self = this.set("cumulativeBloom", value.asInstanceOf[js.Any])
+    def setProvidersVarargs(value: (typings.angularCore.mod.Type[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any])*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setParentInjectorIndex(value: Double): Self = this.set("parentInjectorIndex", value.asInstanceOf[js.Any])
+    def setViewProviders(value: js.Array[typings.angularCore.mod.Type[_]]): Self = StObject.set(x, "viewProviders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvidersVarargs(value: (Type[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any])*): Self = this.set("providers", js.Array(value :_*))
-    
-    @scala.inline
-    def setProviders(value: js.Array[Type[_] | ɵDirectiveDef[_] | ɵComponentDef[_]]): Self = this.set("providers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setViewProvidersVarargs(value: Type[js.Any]*): Self = this.set("viewProviders", js.Array(value :_*))
-    
-    @scala.inline
-    def setViewProviders(value: js.Array[Type[_]]): Self = this.set("viewProviders", value.asInstanceOf[js.Any])
+    def setViewProvidersVarargs(value: typings.angularCore.mod.Type[js.Any]*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
   }
 }

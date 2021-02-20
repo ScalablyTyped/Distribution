@@ -1,12 +1,12 @@
 package typings.aceBuilds.mod
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("ace-builds", "VirtualRenderer")
 @js.native
 class VirtualRenderer protected ()
@@ -14,12 +14,3 @@ class VirtualRenderer protected ()
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, theme: String) = this()
 }
-@JSImport("ace-builds", "VirtualRenderer")
-@js.native
-object VirtualRenderer
-  extends Instantiable1[/* container */ HTMLElement, typings.aceBuilds.mod.Ace.VirtualRenderer]
-     with Instantiable2[
-      /* container */ HTMLElement, 
-      /* theme */ String, 
-      typings.aceBuilds.mod.Ace.VirtualRenderer
-    ]

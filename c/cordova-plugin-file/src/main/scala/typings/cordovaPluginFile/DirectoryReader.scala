@@ -1,5 +1,6 @@
 package typings.cordovaPluginFile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     The entries produced by readEntries must not include the directory itself ["."] or its parent [".."].
   */
 @js.native
-trait DirectoryReader extends js.Object {
+trait DirectoryReader extends StObject {
   
   /**
     * Read the next block of entries from this directory.

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatement extends js.Object {
+trait RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatement extends StObject {
   
   /**
     * An array of two-character country codes, for example, [ "US", "CN" ], from the alpha-2 country ISO codes of the `ISO 3166` international standard. See the [documentation](https://docs.aws.amazon.com/waf/latest/APIReference/API_GeoMatchStatement.html) for valid values.
@@ -31,34 +32,22 @@ object RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchS
   }
   
   @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementOps[Self <: RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatement] (val x: Self) extends AnyVal {
+  implicit class RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountryCodes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountryCodesVarargs(value: Input[String]*): Self = this.set("countryCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setCountryCodes(value: Input[js.Array[Input[String]]]): Self = this.set("countryCodes", value.asInstanceOf[js.Any])
+    def setCountryCodesVarargs(value: Input[String]*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
     
     @scala.inline
     def setForwardedIpConfig(
       value: Input[
           RuleGroupRuleStatementNotStatementStatementAndStatementStatementGeoMatchStatementForwardedIpConfig
         ]
-    ): Self = this.set("forwardedIpConfig", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForwardedIpConfig: Self = this.set("forwardedIpConfig", js.undefined)
+    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
   }
 }

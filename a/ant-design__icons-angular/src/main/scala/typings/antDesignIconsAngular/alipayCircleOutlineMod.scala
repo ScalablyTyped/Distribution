@@ -1,13 +1,14 @@
 package typings.antDesignIconsAngular
 
 import typings.antDesignIconsAngular.typesMod.IconDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/icons/outline/AlipayCircleOutline", JSImport.Namespace)
-@js.native
-object alipayCircleOutlineMod extends js.Object {
+object alipayCircleOutlineMod {
   
+  @JSImport("@ant-design/icons-angular/icons/outline/AlipayCircleOutline", "AlipayCircleOutline")
+  @js.native
   val AlipayCircleOutline: IconDefinition = js.native
 }

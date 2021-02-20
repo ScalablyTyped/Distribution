@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ListEmployeeWagesRequest")
 @js.native
-class ListEmployeeWagesRequest () extends js.Object {
+class ListEmployeeWagesRequest () extends StObject {
   
   /**
     * Pointer to the next page of Employee Wage results to fetch.

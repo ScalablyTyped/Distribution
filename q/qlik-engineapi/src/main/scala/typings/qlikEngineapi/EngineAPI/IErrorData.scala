@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ErrorData...
   */
 @js.native
-trait IErrorData extends js.Object {
+trait IErrorData extends StObject {
   
   /**
     * Type of the error messages.
@@ -39,30 +40,18 @@ object IErrorData {
   }
   
   @scala.inline
-  implicit class IErrorDataOps[Self <: IErrorData] (val x: Self) extends AnyVal {
+  implicit class IErrorDataMutableBuilder[Self <: IErrorData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQErrorDataCode(value: ErrorDataCodeType): Self = StObject.set(x, "qErrorDataCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQErrorString(value: String): Self = StObject.set(x, "qErrorString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQLine(value: String): Self = StObject.set(x, "qLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQErrorDataCode(value: ErrorDataCodeType): Self = this.set("qErrorDataCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQErrorString(value: String): Self = this.set("qErrorString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLine(value: String): Self = this.set("qLine", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLineEnd(value: String): Self = this.set("qLineEnd", value.asInstanceOf[js.Any])
+    def setQLineEnd(value: String): Self = StObject.set(x, "qLineEnd", value.asInstanceOf[js.Any])
   }
 }

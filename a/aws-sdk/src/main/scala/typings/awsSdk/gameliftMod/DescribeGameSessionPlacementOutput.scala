@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeGameSessionPlacementOutput extends js.Object {
+trait DescribeGameSessionPlacementOutput extends StObject {
   
   /**
     * Object that describes the requested game session placement.
@@ -21,24 +22,12 @@ object DescribeGameSessionPlacementOutput {
   }
   
   @scala.inline
-  implicit class DescribeGameSessionPlacementOutputOps[Self <: DescribeGameSessionPlacementOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeGameSessionPlacementOutputMutableBuilder[Self <: DescribeGameSessionPlacementOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGameSessionPlacement(value: GameSessionPlacement): Self = StObject.set(x, "GameSessionPlacement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGameSessionPlacement(value: GameSessionPlacement): Self = this.set("GameSessionPlacement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGameSessionPlacement: Self = this.set("GameSessionPlacement", js.undefined)
+    def setGameSessionPlacementUndefined: Self = StObject.set(x, "GameSessionPlacement", js.undefined)
   }
 }

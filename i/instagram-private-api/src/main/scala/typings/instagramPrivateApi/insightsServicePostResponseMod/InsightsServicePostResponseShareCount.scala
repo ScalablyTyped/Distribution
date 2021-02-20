@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.insightsServicePostResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsightsServicePostResponseShareCount extends js.Object {
+trait InsightsServicePostResponseShareCount extends StObject {
   
   var post: InsightsServicePostResponsePost = js.native
   
@@ -20,24 +21,12 @@ object InsightsServicePostResponseShareCount {
   }
   
   @scala.inline
-  implicit class InsightsServicePostResponseShareCountOps[Self <: InsightsServicePostResponseShareCount] (val x: Self) extends AnyVal {
+  implicit class InsightsServicePostResponseShareCountMutableBuilder[Self <: InsightsServicePostResponseShareCount] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPost(value: InsightsServicePostResponsePost): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPost(value: InsightsServicePostResponsePost): Self = this.set("post", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTray(value: InsightsServicePostResponseTray): Self = this.set("tray", value.asInstanceOf[js.Any])
+    def setTray(value: InsightsServicePostResponseTray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
   }
 }

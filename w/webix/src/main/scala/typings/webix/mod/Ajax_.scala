@@ -1,11 +1,12 @@
 package typings.webix.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Ajax_ extends js.Object {
+trait Ajax_ extends StObject {
   
   def bind(master: js.Any): Ajax_ = js.native
   

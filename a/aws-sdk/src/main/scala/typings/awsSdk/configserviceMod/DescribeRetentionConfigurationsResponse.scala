@@ -1,11 +1,12 @@
 package typings.awsSdk.configserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeRetentionConfigurationsResponse extends js.Object {
+trait DescribeRetentionConfigurationsResponse extends StObject {
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
@@ -26,33 +27,21 @@ object DescribeRetentionConfigurationsResponse {
   }
   
   @scala.inline
-  implicit class DescribeRetentionConfigurationsResponseOps[Self <: DescribeRetentionConfigurationsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeRetentionConfigurationsResponseMutableBuilder[Self <: DescribeRetentionConfigurationsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetentionConfigurations(value: RetentionConfigurationList): Self = StObject.set(x, "RetentionConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setRetentionConfigurationsUndefined: Self = StObject.set(x, "RetentionConfigurations", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setRetentionConfigurationsVarargs(value: RetentionConfiguration*): Self = this.set("RetentionConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setRetentionConfigurations(value: RetentionConfigurationList): Self = this.set("RetentionConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetentionConfigurations: Self = this.set("RetentionConfigurations", js.undefined)
+    def setRetentionConfigurationsVarargs(value: RetentionConfiguration*): Self = StObject.set(x, "RetentionConfigurations", js.Array(value :_*))
   }
 }

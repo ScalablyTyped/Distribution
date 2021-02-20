@@ -19,106 +19,180 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
 import typings.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/components/Tooltip", JSImport.Namespace)
-@js.native
-object tooltipMod extends js.Object {
+object tooltipMod {
   
-  val Tooltip: FunctionComponent[ITooltipProps] = js.native
-  
-  val TooltipHost: FunctionComponent[ITooltipHostProps] = js.native
-  
-  @js.native
-  object DirectionalHint extends js.Object {
+  object DirectionalHint {
+    
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Appear below the target element, aligning with the target element such that the callout tends toward
       * the center of the screen.
       */
-    var bottomAutoEdge: `7` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.bottomAutoEdge")
+    @js.native
+    def bottomAutoEdge: `7` = js.native
+    @scala.inline
+    def bottomAutoEdge_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomAutoEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear below the target element, with the centers of the callout and target aligning.
       */
-    var bottomCenter: `5` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.bottomCenter")
+    @js.native
+    def bottomCenter: `5` = js.native
+    @scala.inline
+    def bottomCenter_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomCenter")(x.asInstanceOf[js.Any])
     
     /**
       * Appear below the target element, with the left edges of the callout and target aligning.
       */
-    var bottomLeftEdge: `4` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.bottomLeftEdge")
+    @js.native
+    def bottomLeftEdge: `4` = js.native
+    @scala.inline
+    def bottomLeftEdge_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomLeftEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear below the target element, with the right edges of the callout and target aligning.
       */
-    var bottomRightEdge: `6` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.bottomRightEdge")
+    @js.native
+    def bottomRightEdge: `6` = js.native
+    @scala.inline
+    def bottomRightEdge_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomRightEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear to the left of the target element, with the bottom edges of the callout and target aligning.
       */
-    var leftBottomEdge: `10` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.leftBottomEdge")
+    @js.native
+    def leftBottomEdge: `10` = js.native
+    @scala.inline
+    def leftBottomEdge_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftBottomEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear to the left of the target element, with the centers of the callout and target aligning.
       */
-    var leftCenter: `9` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.leftCenter")
+    @js.native
+    def leftCenter: `9` = js.native
+    @scala.inline
+    def leftCenter_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftCenter")(x.asInstanceOf[js.Any])
     
     /**
       * Appear to the left of the target element, with the top edges of the callout and target aligning.
       */
-    var leftTopEdge: `8` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.leftTopEdge")
+    @js.native
+    def leftTopEdge: `8` = js.native
+    @scala.inline
+    def leftTopEdge_=(x: `8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftTopEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear to the right of the target element, with the bottom edges of the callout and target aligning.
       */
-    var rightBottomEdge: `13` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.rightBottomEdge")
+    @js.native
+    def rightBottomEdge: `13` = js.native
+    @scala.inline
+    def rightBottomEdge_=(x: `13`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightBottomEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear to the right of the target element, with the centers of the callout and target aligning.
       */
-    var rightCenter: `12` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.rightCenter")
+    @js.native
+    def rightCenter: `12` = js.native
+    @scala.inline
+    def rightCenter_=(x: `12`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightCenter")(x.asInstanceOf[js.Any])
     
     /**
       * Appear to the right of the target element, with the top edges of the callout and target aligning.
       */
-    var rightTopEdge: `11` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.rightTopEdge")
+    @js.native
+    def rightTopEdge: `11` = js.native
+    @scala.inline
+    def rightTopEdge_=(x: `11`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightTopEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear above the target element, aligning with the target element such that the callout tends toward
       * the center of the screen.
       */
-    var topAutoEdge: `3` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.topAutoEdge")
+    @js.native
+    def topAutoEdge: `3` = js.native
+    @scala.inline
+    def topAutoEdge_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topAutoEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear above the target element, with the centers of the callout and target aligning.
       */
-    var topCenter: `1` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.topCenter")
+    @js.native
+    def topCenter: `1` = js.native
+    @scala.inline
+    def topCenter_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topCenter")(x.asInstanceOf[js.Any])
     
     /**
       * Appear above the target element, with the left edges of the callout and target aligning.
       */
-    var topLeftEdge: `0` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.topLeftEdge")
+    @js.native
+    def topLeftEdge: `0` = js.native
+    @scala.inline
+    def topLeftEdge_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topLeftEdge")(x.asInstanceOf[js.Any])
     
     /**
       * Appear above the target element, with the right edges of the callout and target aligning.
       */
-    var topRightEdge: `2` = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "DirectionalHint.topRightEdge")
+    @js.native
+    def topRightEdge: `2` = js.native
+    @scala.inline
+    def topRightEdge_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRightEdge")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Tooltip", "Tooltip")
   @js.native
-  class TooltipBase ()
-    extends typings.officeUiFabricReact.tooltipBaseMod.TooltipBase
+  val Tooltip: FunctionComponent[ITooltipProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipBase")
+  @js.native
+  class TooltipBase protected ()
+    extends typings.officeUiFabricReact.tooltipBaseMod.TooltipBase {
+    def this(props: ITooltipProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ITooltipProps, context: js.Any) = this()
+  }
   /* static members */
-  @js.native
-  object TooltipBase extends js.Object {
+  object TooltipBase {
     
-    var defaultProps: PartialITooltipProps = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipBase.defaultProps")
+    @js.native
+    def defaultProps: PartialITooltipProps = js.native
+    @scala.inline
+    def defaultProps_=(x: PartialITooltipProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipDelay")
   @js.native
-  object TooltipDelay extends js.Object {
+  object TooltipDelay extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay with Double] = js.native
@@ -130,22 +204,39 @@ object tooltipMod extends js.Object {
     /* 0 */ val zero: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.zero with Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHost")
+  @js.native
+  val TooltipHost: FunctionComponent[ITooltipHostProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase")
   @js.native
   class TooltipHostBase protected ()
     extends typings.officeUiFabricReact.tooltipHostBaseMod.TooltipHostBase {
     def this(props: ITooltipHostProps) = this()
   }
   /* static members */
-  @js.native
-  object TooltipHostBase extends js.Object {
+  object TooltipHostBase {
     
-    var _currentVisibleTooltip: js.Any = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var defaultProps: Delay = js.native
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase._currentVisibleTooltip")
+    @js.native
+    def _currentVisibleTooltip: js.Any = js.native
+    @scala.inline
+    def _currentVisibleTooltip_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
+    
+    @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase.defaultProps")
+    @js.native
+    def defaultProps: Delay = js.native
+    @scala.inline
+    def defaultProps_=(x: Delay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipOverflowMode")
   @js.native
-  object TooltipOverflowMode extends js.Object {
+  object TooltipOverflowMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode with Double] = js.native

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RendererFormattedStrings extends js.Object {
+trait RendererFormattedStrings extends StObject {
   
   /** The tooltip text on an expandable chevron icon. */
   var auditGroupExpandTooltip: js.UndefOr[String] = js.native
@@ -64,114 +65,102 @@ object RendererFormattedStrings {
   }
   
   @scala.inline
-  implicit class RendererFormattedStringsOps[Self <: RendererFormattedStrings] (val x: Self) extends AnyVal {
+  implicit class RendererFormattedStringsMutableBuilder[Self <: RendererFormattedStrings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuditGroupExpandTooltip(value: String): Self = StObject.set(x, "auditGroupExpandTooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuditGroupExpandTooltipUndefined: Self = StObject.set(x, "auditGroupExpandTooltip", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrcInitialNavigation(value: String): Self = StObject.set(x, "crcInitialNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuditGroupExpandTooltip(value: String): Self = this.set("auditGroupExpandTooltip", value.asInstanceOf[js.Any])
+    def setCrcInitialNavigationUndefined: Self = StObject.set(x, "crcInitialNavigation", js.undefined)
     
     @scala.inline
-    def deleteAuditGroupExpandTooltip: Self = this.set("auditGroupExpandTooltip", js.undefined)
+    def setCrcLongestDurationLabel(value: String): Self = StObject.set(x, "crcLongestDurationLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrcInitialNavigation(value: String): Self = this.set("crcInitialNavigation", value.asInstanceOf[js.Any])
+    def setCrcLongestDurationLabelUndefined: Self = StObject.set(x, "crcLongestDurationLabel", js.undefined)
     
     @scala.inline
-    def deleteCrcInitialNavigation: Self = this.set("crcInitialNavigation", js.undefined)
+    def setErrorLabel(value: String): Self = StObject.set(x, "errorLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrcLongestDurationLabel(value: String): Self = this.set("crcLongestDurationLabel", value.asInstanceOf[js.Any])
+    def setErrorLabelUndefined: Self = StObject.set(x, "errorLabel", js.undefined)
     
     @scala.inline
-    def deleteCrcLongestDurationLabel: Self = this.set("crcLongestDurationLabel", js.undefined)
+    def setErrorMissingAuditInfo(value: String): Self = StObject.set(x, "errorMissingAuditInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorLabel(value: String): Self = this.set("errorLabel", value.asInstanceOf[js.Any])
+    def setErrorMissingAuditInfoUndefined: Self = StObject.set(x, "errorMissingAuditInfo", js.undefined)
     
     @scala.inline
-    def deleteErrorLabel: Self = this.set("errorLabel", js.undefined)
+    def setLabDataTitle(value: String): Self = StObject.set(x, "labDataTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorMissingAuditInfo(value: String): Self = this.set("errorMissingAuditInfo", value.asInstanceOf[js.Any])
+    def setLabDataTitleUndefined: Self = StObject.set(x, "labDataTitle", js.undefined)
     
     @scala.inline
-    def deleteErrorMissingAuditInfo: Self = this.set("errorMissingAuditInfo", js.undefined)
+    def setLsPerformanceCategoryDescription(value: String): Self = StObject.set(x, "lsPerformanceCategoryDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabDataTitle(value: String): Self = this.set("labDataTitle", value.asInstanceOf[js.Any])
+    def setLsPerformanceCategoryDescriptionUndefined: Self = StObject.set(x, "lsPerformanceCategoryDescription", js.undefined)
     
     @scala.inline
-    def deleteLabDataTitle: Self = this.set("labDataTitle", js.undefined)
+    def setManualAuditsGroupTitle(value: String): Self = StObject.set(x, "manualAuditsGroupTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLsPerformanceCategoryDescription(value: String): Self = this.set("lsPerformanceCategoryDescription", value.asInstanceOf[js.Any])
+    def setManualAuditsGroupTitleUndefined: Self = StObject.set(x, "manualAuditsGroupTitle", js.undefined)
     
     @scala.inline
-    def deleteLsPerformanceCategoryDescription: Self = this.set("lsPerformanceCategoryDescription", js.undefined)
+    def setNotApplicableAuditsGroupTitle(value: String): Self = StObject.set(x, "notApplicableAuditsGroupTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManualAuditsGroupTitle(value: String): Self = this.set("manualAuditsGroupTitle", value.asInstanceOf[js.Any])
+    def setNotApplicableAuditsGroupTitleUndefined: Self = StObject.set(x, "notApplicableAuditsGroupTitle", js.undefined)
     
     @scala.inline
-    def deleteManualAuditsGroupTitle: Self = this.set("manualAuditsGroupTitle", js.undefined)
+    def setOpportunityResourceColumnLabel(value: String): Self = StObject.set(x, "opportunityResourceColumnLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotApplicableAuditsGroupTitle(value: String): Self = this.set("notApplicableAuditsGroupTitle", value.asInstanceOf[js.Any])
+    def setOpportunityResourceColumnLabelUndefined: Self = StObject.set(x, "opportunityResourceColumnLabel", js.undefined)
     
     @scala.inline
-    def deleteNotApplicableAuditsGroupTitle: Self = this.set("notApplicableAuditsGroupTitle", js.undefined)
+    def setOpportunitySavingsColumnLabel(value: String): Self = StObject.set(x, "opportunitySavingsColumnLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpportunityResourceColumnLabel(value: String): Self = this.set("opportunityResourceColumnLabel", value.asInstanceOf[js.Any])
+    def setOpportunitySavingsColumnLabelUndefined: Self = StObject.set(x, "opportunitySavingsColumnLabel", js.undefined)
     
     @scala.inline
-    def deleteOpportunityResourceColumnLabel: Self = this.set("opportunityResourceColumnLabel", js.undefined)
+    def setPassedAuditsGroupTitle(value: String): Self = StObject.set(x, "passedAuditsGroupTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpportunitySavingsColumnLabel(value: String): Self = this.set("opportunitySavingsColumnLabel", value.asInstanceOf[js.Any])
+    def setPassedAuditsGroupTitleUndefined: Self = StObject.set(x, "passedAuditsGroupTitle", js.undefined)
     
     @scala.inline
-    def deleteOpportunitySavingsColumnLabel: Self = this.set("opportunitySavingsColumnLabel", js.undefined)
+    def setScorescaleLabel(value: String): Self = StObject.set(x, "scorescaleLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassedAuditsGroupTitle(value: String): Self = this.set("passedAuditsGroupTitle", value.asInstanceOf[js.Any])
+    def setScorescaleLabelUndefined: Self = StObject.set(x, "scorescaleLabel", js.undefined)
     
     @scala.inline
-    def deletePassedAuditsGroupTitle: Self = this.set("passedAuditsGroupTitle", js.undefined)
+    def setToplevelWarningsMessage(value: String): Self = StObject.set(x, "toplevelWarningsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScorescaleLabel(value: String): Self = this.set("scorescaleLabel", value.asInstanceOf[js.Any])
+    def setToplevelWarningsMessageUndefined: Self = StObject.set(x, "toplevelWarningsMessage", js.undefined)
     
     @scala.inline
-    def deleteScorescaleLabel: Self = this.set("scorescaleLabel", js.undefined)
+    def setVarianceDisclaimer(value: String): Self = StObject.set(x, "varianceDisclaimer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToplevelWarningsMessage(value: String): Self = this.set("toplevelWarningsMessage", value.asInstanceOf[js.Any])
+    def setVarianceDisclaimerUndefined: Self = StObject.set(x, "varianceDisclaimer", js.undefined)
     
     @scala.inline
-    def deleteToplevelWarningsMessage: Self = this.set("toplevelWarningsMessage", js.undefined)
+    def setWarningHeader(value: String): Self = StObject.set(x, "warningHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVarianceDisclaimer(value: String): Self = this.set("varianceDisclaimer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVarianceDisclaimer: Self = this.set("varianceDisclaimer", js.undefined)
-    
-    @scala.inline
-    def setWarningHeader(value: String): Self = this.set("warningHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningHeader: Self = this.set("warningHeader", js.undefined)
+    def setWarningHeaderUndefined: Self = StObject.set(x, "warningHeader", js.undefined)
   }
 }

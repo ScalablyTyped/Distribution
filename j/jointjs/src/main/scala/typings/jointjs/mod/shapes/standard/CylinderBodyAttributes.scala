@@ -1,6 +1,7 @@
 package typings.jointjs.mod.shapes.standard
 
 import typings.jointjs.mod.attributes.SVGPathAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,24 +20,12 @@ object CylinderBodyAttributes {
   }
   
   @scala.inline
-  implicit class CylinderBodyAttributesOps[Self <: CylinderBodyAttributes] (val x: Self) extends AnyVal {
+  implicit class CylinderBodyAttributesMutableBuilder[Self <: CylinderBodyAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLateralArea(value: String | Double): Self = StObject.set(x, "lateralArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLateralArea(value: String | Double): Self = this.set("lateralArea", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLateralArea: Self = this.set("lateralArea", js.undefined)
+    def setLateralAreaUndefined: Self = StObject.set(x, "lateralArea", js.undefined)
   }
 }

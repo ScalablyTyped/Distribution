@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.events.event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FromData extends js.Object {
+trait FromData extends StObject {
   
   var cancel: js.UndefOr[Boolean] = js.native
   
@@ -30,54 +31,42 @@ object FromData {
   }
   
   @scala.inline
-  implicit class FromDataOps[Self <: FromData] (val x: Self) extends AnyVal {
+  implicit class FromDataMutableBuilder[Self <: FromData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def deleteCancel: Self = this.set("cancel", js.undefined)
+    def setFromData(value: js.Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: event): Self = this.set("event", value.asInstanceOf[js.Any])
+    def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
     
     @scala.inline
-    def deleteEvent: Self = this.set("event", js.undefined)
+    def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromData(value: js.Any): Self = this.set("fromData", value.asInstanceOf[js.Any])
+    def setFromIndexUndefined: Self = StObject.set(x, "fromIndex", js.undefined)
     
     @scala.inline
-    def deleteFromData: Self = this.set("fromData", js.undefined)
+    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFromIndex(value: Double): Self = this.set("fromIndex", value.asInstanceOf[js.Any])
+    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
     @scala.inline
-    def deleteFromIndex: Self = this.set("fromIndex", js.undefined)
+    def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemData(value: js.Any): Self = this.set("itemData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemData: Self = this.set("itemData", js.undefined)
-    
-    @scala.inline
-    def setItemElement(value: dxElement): Self = this.set("itemElement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemElement: Self = this.set("itemElement", js.undefined)
+    def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
   }
 }

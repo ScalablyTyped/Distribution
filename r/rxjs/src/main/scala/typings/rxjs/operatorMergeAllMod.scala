@@ -1,17 +1,22 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operator/mergeAll", JSImport.Namespace)
-@js.native
-object operatorMergeAllMod extends js.Object {
+object operatorMergeAllMod {
   
+  @JSImport("rxjs/operator/mergeAll", "mergeAll")
+  @js.native
   def mergeAll[T](): js.Any = js.native
+  @JSImport("rxjs/operator/mergeAll", "mergeAll")
+  @js.native
   def mergeAll[T](concurrent: Double): js.Any = js.native
-  @JSName("mergeAll")
+  @JSImport("rxjs/operator/mergeAll", "mergeAll")
+  @js.native
   def mergeAll_TR[T, R](): js.Any = js.native
-  @JSName("mergeAll")
+  @JSImport("rxjs/operator/mergeAll", "mergeAll")
+  @js.native
   def mergeAll_TR[T, R](concurrent: Double): js.Any = js.native
 }

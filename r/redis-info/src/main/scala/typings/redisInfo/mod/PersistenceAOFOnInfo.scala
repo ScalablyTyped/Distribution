@@ -1,12 +1,13 @@
 package typings.redisInfo.mod
 
 import typings.redisInfo.mod.Flag.ON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PersistenceAOFOnInfo extends js.Object {
+trait PersistenceAOFOnInfo extends StObject {
   
   var aof_base_size: String = js.native
   
@@ -42,42 +43,30 @@ object PersistenceAOFOnInfo {
   }
   
   @scala.inline
-  implicit class PersistenceAOFOnInfoOps[Self <: PersistenceAOFOnInfo] (val x: Self) extends AnyVal {
+  implicit class PersistenceAOFOnInfoMutableBuilder[Self <: PersistenceAOFOnInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAof_base_size(value: String): Self = StObject.set(x, "aof_base_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAof_buffer_length(value: String): Self = StObject.set(x, "aof_buffer_length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAof_current_size(value: String): Self = StObject.set(x, "aof_current_size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAof_base_size(value: String): Self = this.set("aof_base_size", value.asInstanceOf[js.Any])
+    def setAof_delayed_fsync(value: String): Self = StObject.set(x, "aof_delayed_fsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAof_buffer_length(value: String): Self = this.set("aof_buffer_length", value.asInstanceOf[js.Any])
+    def setAof_enabled(value: ON): Self = StObject.set(x, "aof_enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAof_current_size(value: String): Self = this.set("aof_current_size", value.asInstanceOf[js.Any])
+    def setAof_pending_bio_fsync(value: String): Self = StObject.set(x, "aof_pending_bio_fsync", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAof_delayed_fsync(value: String): Self = this.set("aof_delayed_fsync", value.asInstanceOf[js.Any])
+    def setAof_pending_rewrite(value: Flag): Self = StObject.set(x, "aof_pending_rewrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAof_enabled(value: ON): Self = this.set("aof_enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAof_pending_bio_fsync(value: String): Self = this.set("aof_pending_bio_fsync", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAof_pending_rewrite(value: Flag): Self = this.set("aof_pending_rewrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAof_rewrite_buffer_length(value: String): Self = this.set("aof_rewrite_buffer_length", value.asInstanceOf[js.Any])
+    def setAof_rewrite_buffer_length(value: String): Self = StObject.set(x, "aof_rewrite_buffer_length", value.asInstanceOf[js.Any])
   }
 }

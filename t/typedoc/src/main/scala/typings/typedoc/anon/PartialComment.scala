@@ -3,13 +3,14 @@ package typings.typedoc.anon
 import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import typings.typedoc.tagMod.CommentTag
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.Comment> */
 @js.native
-trait PartialComment extends js.Object {
+trait PartialComment extends StObject {
   
   var returns: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.native
   
@@ -28,54 +29,42 @@ object PartialComment {
   }
   
   @scala.inline
-  implicit class PartialCommentOps[Self <: PartialComment] (val x: Self) extends AnyVal {
+  implicit class PartialCommentMutableBuilder[Self <: PartialComment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReturns(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReturnsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "returns", js.Array(value :_*))
     
     @scala.inline
-    def setReturnsVarargs(value: _ModelToObject[js.Any]*): Self = this.set("returns", js.Array(value :_*))
+    def setShortText(value: ModelToObject[String] | String): Self = StObject.set(x, "shortText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReturns(value: ModelToObject[js.UndefOr[String]] | String): Self = this.set("returns", value.asInstanceOf[js.Any])
+    def setShortTextUndefined: Self = StObject.set(x, "shortText", js.undefined)
     
     @scala.inline
-    def deleteReturns: Self = this.set("returns", js.undefined)
+    def setShortTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "shortText", js.Array(value :_*))
     
     @scala.inline
-    def setShortTextVarargs(value: _ModelToObject[js.Any]*): Self = this.set("shortText", js.Array(value :_*))
+    def setTags(value: ModelToObject[js.UndefOr[js.Array[CommentTag]]] | js.Array[CommentTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShortText(value: ModelToObject[String] | String): Self = this.set("shortText", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteShortText: Self = this.set("shortText", js.undefined)
+    def setTagsVarargs(value: (CommentTag | _ModelToObject[js.Any])*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: (CommentTag | _ModelToObject[js.Any])*): Self = this.set("tags", js.Array(value :_*))
+    def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: ModelToObject[js.UndefOr[js.Array[CommentTag]]] | js.Array[CommentTag]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTextVarargs(value: _ModelToObject[js.Any]*): Self = this.set("text", js.Array(value :_*))
-    
-    @scala.inline
-    def setText(value: ModelToObject[String] | String): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

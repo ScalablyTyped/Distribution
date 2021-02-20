@@ -97,27 +97,34 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.waiting
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.wheel
 import typings.fluentuiReactComponentEventListener.typesMod.EventListenerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@fluentui/react-component-event-listener/dist/es/EventListener", JSImport.Namespace)
-@js.native
-object eventListenerMod extends js.Object {
+object eventListenerMod {
   
-  @js.native
-  object EventListener extends js.Object {
+  object EventListener {
     
+    @JSImport("@fluentui/react-component-event-listener/dist/es/EventListener", "EventListener")
+    @js.native
     def apply(
       props: EventListenerOptions[
           abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | wheel
         ]
     ): Null = js.native
     
-    @js.native
-    object defaultProps extends js.Object {
+    object defaultProps {
       
-      var capture: Boolean = js.native
+      @JSImport("@fluentui/react-component-event-listener/dist/es/EventListener", "EventListener.defaultProps")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("@fluentui/react-component-event-listener/dist/es/EventListener", "EventListener.defaultProps.capture")
+      @js.native
+      def capture: Boolean = js.native
+      @scala.inline
+      def capture_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("capture")(x.asInstanceOf[js.Any])
     }
   }
 }

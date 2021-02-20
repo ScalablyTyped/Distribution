@@ -1,27 +1,50 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SpeechContext. */
-trait ISpeechContext extends js.Object {
+@js.native
+trait ISpeechContext extends StObject {
+  
   /** SpeechContext boost */
-  var boost: js.UndefOr[Double | Null] = js.undefined
+  var boost: js.UndefOr[Double | Null] = js.native
+  
   /** SpeechContext phrases */
-  var phrases: js.UndefOr[js.Array[String] | Null] = js.undefined
+  var phrases: js.UndefOr[js.Array[String] | Null] = js.native
 }
-
 object ISpeechContext {
+  
   @scala.inline
-  def apply(
-    boost: js.UndefOr[Null | Double] = js.undefined,
-    phrases: js.UndefOr[Null | js.Array[String]] = js.undefined
-  ): ISpeechContext = {
+  def apply(): ISpeechContext = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boost)) __obj.updateDynamic("boost")(boost.asInstanceOf[js.Any])
-    if (!js.isUndefined(phrases)) __obj.updateDynamic("phrases")(phrases.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeechContext]
   }
+  
+  @scala.inline
+  implicit class ISpeechContextMutableBuilder[Self <: ISpeechContext] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBoostNull: Self = StObject.set(x, "boost", null)
+    
+    @scala.inline
+    def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
+    
+    @scala.inline
+    def setPhrases(value: js.Array[String]): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPhrasesNull: Self = StObject.set(x, "phrases", null)
+    
+    @scala.inline
+    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
+    
+    @scala.inline
+    def setPhrasesVarargs(value: String*): Self = StObject.set(x, "phrases", js.Array(value :_*))
+  }
 }
-

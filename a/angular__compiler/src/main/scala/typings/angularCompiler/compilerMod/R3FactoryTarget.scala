@@ -1,12 +1,13 @@
 package typings.angularCompiler.compilerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "R3FactoryTarget")
 @js.native
-object R3FactoryTarget extends js.Object {
+object R3FactoryTarget extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.angularCompiler.r3FactoryMod.R3FactoryTarget with Double] = js.native

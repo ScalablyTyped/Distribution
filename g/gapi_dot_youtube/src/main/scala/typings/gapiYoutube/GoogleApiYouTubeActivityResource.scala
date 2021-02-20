@@ -2,12 +2,13 @@ package typings.gapiYoutube
 
 import typings.gapiYoutube.anon.Bulletin
 import typings.gapiYoutube.anon.ChannelId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleApiYouTubeActivityResource extends js.Object {
+trait GoogleApiYouTubeActivityResource extends StObject {
   
   /**
     * The contentDetails object contains information about the content associated with the activity.
@@ -43,33 +44,21 @@ object GoogleApiYouTubeActivityResource {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubeActivityResourceOps[Self <: GoogleApiYouTubeActivityResource] (val x: Self) extends AnyVal {
+  implicit class GoogleApiYouTubeActivityResourceMutableBuilder[Self <: GoogleApiYouTubeActivityResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentDetails(value: Bulletin): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentDetails(value: Bulletin): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSnippet(value: ChannelId): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSnippet(value: ChannelId): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.knuddelsUserappsApi.anon
 
 import typings.knuddelsUserappsApi.mod.global.KnuddelTransferDisplayType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayReasonText extends js.Object {
+trait DisplayReasonText extends StObject {
   
   var displayReasonText: js.UndefOr[String] = js.native
   
@@ -25,42 +26,30 @@ object DisplayReasonText {
   }
   
   @scala.inline
-  implicit class DisplayReasonTextOps[Self <: DisplayReasonText] (val x: Self) extends AnyVal {
+  implicit class DisplayReasonTextMutableBuilder[Self <: DisplayReasonText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayReasonText(value: String): Self = StObject.set(x, "displayReasonText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayReasonTextUndefined: Self = StObject.set(x, "displayReasonText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDisplayReasonText(value: String): Self = this.set("displayReasonText", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteDisplayReasonText: Self = this.set("displayReasonText", js.undefined)
+    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnError(value: /* message */ String => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
     @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
+    def setTransferDisplayType(value: KnuddelTransferDisplayType): Self = StObject.set(x, "transferDisplayType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSuccess(value: () => Unit): Self = this.set("onSuccess", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
-    
-    @scala.inline
-    def setTransferDisplayType(value: KnuddelTransferDisplayType): Self = this.set("transferDisplayType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferDisplayType: Self = this.set("transferDisplayType", js.undefined)
+    def setTransferDisplayTypeUndefined: Self = StObject.set(x, "transferDisplayType", js.undefined)
   }
 }

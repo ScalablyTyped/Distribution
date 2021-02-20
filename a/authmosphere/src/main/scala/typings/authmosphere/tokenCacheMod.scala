@@ -6,15 +6,12 @@ import typings.authmosphere.tokenCacheConfigMod.CacheConfig
 import typings.authmosphere.tokenCacheConfigMod.TokenCacheOptions
 import typings.authmosphere.tokenMod.Token
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("authmosphere/lib/src/token-cache", JSImport.Namespace)
-@js.native
-object tokenCacheMod extends js.Object {
-  
-  val defaultCacheConfig: CacheConfig = js.native
+object tokenCacheMod {
   
   /**
     * Class to request and cache tokens on client-side.
@@ -30,8 +27,9 @@ object tokenCacheMod extends js.Object {
     *  });
     *
     */
+  @JSImport("authmosphere/lib/src/token-cache", "TokenCache")
   @js.native
-  class TokenCache protected () extends js.Object {
+  class TokenCache protected () extends StObject {
     /**
       * @param tokenConfig
       * @param oauthConfig
@@ -102,6 +100,10 @@ object tokenCacheMod extends js.Object {
     
     var tokenMap: js.Any = js.native
   }
+  
+  @JSImport("authmosphere/lib/src/token-cache", "defaultCacheConfig")
+  @js.native
+  val defaultCacheConfig: CacheConfig = js.native
   
   type TokenMap = StringDictionary[js.UndefOr[Token[Record[String, js.Any]]]]
 }

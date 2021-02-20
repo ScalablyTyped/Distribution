@@ -2,6 +2,7 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 
 import typings.voximplantWebsdk.mod.ChatRoom
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,24 +27,12 @@ object ChatRoomsDataReceived {
   }
   
   @scala.inline
-  implicit class ChatRoomsDataReceivedOps[Self <: ChatRoomsDataReceived] (val x: Self) extends AnyVal {
+  implicit class ChatRoomsDataReceivedMutableBuilder[Self <: ChatRoomsDataReceived] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRooms(value: js.Array[ChatRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRoomsVarargs(value: ChatRoom*): Self = this.set("rooms", js.Array(value :_*))
-    
-    @scala.inline
-    def setRooms(value: js.Array[ChatRoom]): Self = this.set("rooms", value.asInstanceOf[js.Any])
+    def setRoomsVarargs(value: ChatRoom*): Self = StObject.set(x, "rooms", js.Array(value :_*))
   }
 }

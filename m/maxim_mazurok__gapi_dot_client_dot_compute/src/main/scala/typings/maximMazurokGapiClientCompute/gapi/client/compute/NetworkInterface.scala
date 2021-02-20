@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkInterface extends js.Object {
+trait NetworkInterface extends StObject {
   
   /**
     * An array of configurations for this interface. Currently, only one access config, ONE_TO_ONE_NAT, is supported. If there are no accessConfigs specified, then this instance will have
@@ -63,78 +64,66 @@ object NetworkInterface {
   }
   
   @scala.inline
-  implicit class NetworkInterfaceOps[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+  implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessConfigs(value: js.Array[AccessConfig]): Self = StObject.set(x, "accessConfigs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessConfigsUndefined: Self = StObject.set(x, "accessConfigs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessConfigsVarargs(value: AccessConfig*): Self = StObject.set(x, "accessConfigs", js.Array(value :_*))
     
     @scala.inline
-    def setAccessConfigsVarargs(value: AccessConfig*): Self = this.set("accessConfigs", js.Array(value :_*))
+    def setAliasIpRanges(value: js.Array[AliasIpRange]): Self = StObject.set(x, "aliasIpRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessConfigs(value: js.Array[AccessConfig]): Self = this.set("accessConfigs", value.asInstanceOf[js.Any])
+    def setAliasIpRangesUndefined: Self = StObject.set(x, "aliasIpRanges", js.undefined)
     
     @scala.inline
-    def deleteAccessConfigs: Self = this.set("accessConfigs", js.undefined)
+    def setAliasIpRangesVarargs(value: AliasIpRange*): Self = StObject.set(x, "aliasIpRanges", js.Array(value :_*))
     
     @scala.inline
-    def setAliasIpRangesVarargs(value: AliasIpRange*): Self = this.set("aliasIpRanges", js.Array(value :_*))
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliasIpRanges(value: js.Array[AliasIpRange]): Self = this.set("aliasIpRanges", value.asInstanceOf[js.Any])
+    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
     @scala.inline
-    def deleteAliasIpRanges: Self = this.set("aliasIpRanges", js.undefined)
+    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
     
     @scala.inline
-    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpv6Address(value: String): Self = this.set("ipv6Address", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIpv6Address: Self = this.set("ipv6Address", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNetworkIP(value: String): Self = StObject.set(x, "networkIP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNetworkIPUndefined: Self = StObject.set(x, "networkIP", js.undefined)
     
     @scala.inline
-    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
     @scala.inline
-    def deleteNetwork: Self = this.set("network", js.undefined)
+    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkIP(value: String): Self = this.set("networkIP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNetworkIP: Self = this.set("networkIP", js.undefined)
-    
-    @scala.inline
-    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
   }
 }

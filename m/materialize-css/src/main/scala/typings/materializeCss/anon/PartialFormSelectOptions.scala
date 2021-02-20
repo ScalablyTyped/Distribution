@@ -1,16 +1,17 @@
 package typings.materializeCss.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.FormSelectOptions> */
 @js.native
-trait PartialFormSelectOptions extends js.Object {
+trait PartialFormSelectOptions extends StObject {
   
   var classes: js.UndefOr[String] = js.native
   
-  var dropdownOptions: js.UndefOr[PartialDropdownOptionsAlignment] = js.native
+  var dropdownOptions: js.UndefOr[PartialDropdownOptions] = js.native
 }
 object PartialFormSelectOptions {
   
@@ -21,30 +22,18 @@ object PartialFormSelectOptions {
   }
   
   @scala.inline
-  implicit class PartialFormSelectOptionsOps[Self <: PartialFormSelectOptions] (val x: Self) extends AnyVal {
+  implicit class PartialFormSelectOptionsMutableBuilder[Self <: PartialFormSelectOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDropdownOptions(value: PartialDropdownOptions): Self = StObject.set(x, "dropdownOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: String): Self = this.set("classes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClasses: Self = this.set("classes", js.undefined)
-    
-    @scala.inline
-    def setDropdownOptions(value: PartialDropdownOptionsAlignment): Self = this.set("dropdownOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDropdownOptions: Self = this.set("dropdownOptions", js.undefined)
+    def setDropdownOptionsUndefined: Self = StObject.set(x, "dropdownOptions", js.undefined)
   }
 }

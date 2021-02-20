@@ -4,14 +4,14 @@ import typings.plottable.interactionMod.Interaction
 import typings.plottable.interfacesMod.Point
 import typings.std.MouseEvent
 import typings.std.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/interactions/clickInteraction", JSImport.Namespace)
-@js.native
-object clickInteractionMod extends js.Object {
+object clickInteractionMod {
   
+  @JSImport("plottable/build/src/interactions/clickInteraction", "Click")
   @js.native
   class Click () extends Interaction {
     
@@ -84,10 +84,11 @@ object clickInteractionMod extends js.Object {
     def onDoubleClick(callback: ClickCallback): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Click extends js.Object {
+  object Click {
     
-    /* private */ def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
+    @JSImport("plottable/build/src/interactions/clickInteraction", "Click._pointsEqual")
+    @js.native
+    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
   }
   
   type ClickCallback = js.Function2[/* point */ Point, /* event */ MouseEvent | TouchEvent, Unit]

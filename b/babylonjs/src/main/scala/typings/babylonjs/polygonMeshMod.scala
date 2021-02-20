@@ -5,19 +5,18 @@ import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.meshVertexDataMod.VertexData
 import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/polygonMesh", JSImport.Namespace)
-@js.native
-object polygonMeshMod extends js.Object {
+object polygonMeshMod {
   
+  @JSImport("babylonjs/Meshes/polygonMesh", "Polygon")
   @js.native
-  class Polygon () extends js.Object
+  class Polygon () extends StObject
   /* static members */
-  @js.native
-  object Polygon extends js.Object {
+  object Polygon {
     
     /**
       * Creates a circle
@@ -27,18 +26,34 @@ object polygonMeshMod extends js.Object {
       * @param numberOfSides number of sides that make up the circle
       * @returns points that make the resulting circle
       */
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(
       radius: Double,
       cx: js.UndefOr[scala.Nothing],
       cy: js.UndefOr[scala.Nothing],
       numberOfSides: Double
     ): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double, cx: js.UndefOr[scala.Nothing], cy: Double): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double, cx: js.UndefOr[scala.Nothing], cy: Double, numberOfSides: Double): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double, cx: Double): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double, cx: Double, cy: js.UndefOr[scala.Nothing], numberOfSides: Double): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double, cx: Double, cy: Double): js.Array[Vector2] = js.native
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Circle")
+    @js.native
     def Circle(radius: Double, cx: Double, cy: Double, numberOfSides: Double): js.Array[Vector2] = js.native
     
     /**
@@ -46,6 +61,8 @@ object polygonMeshMod extends js.Object {
       * @param input Input polygon data
       * @returns the parsed points
       */
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Parse")
+    @js.native
     def Parse(input: String): js.Array[Vector2] = js.native
     
     /**
@@ -56,6 +73,8 @@ object polygonMeshMod extends js.Object {
       * @param ymax top Y coord
       * @returns points that make the resulting rectation
       */
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.Rectangle")
+    @js.native
     def Rectangle(xmin: Double, ymin: Double, xmax: Double, ymax: Double): js.Array[Vector2] = js.native
     
     /**
@@ -64,11 +83,14 @@ object polygonMeshMod extends js.Object {
       * @param y y coordinate
       * @returns the started path2
       */
+    @JSImport("babylonjs/Meshes/polygonMesh", "Polygon.StartingAt")
+    @js.native
     def StartingAt(x: Double, y: Double): Path2 = js.native
   }
   
+  @JSImport("babylonjs/Meshes/polygonMesh", "PolygonMeshBuilder")
   @js.native
-  class PolygonMeshBuilder protected () extends js.Object {
+  class PolygonMeshBuilder protected () extends StObject {
     def this(name: String, contours: js.Any) = this()
     def this(name: String, contours: js.Array[Vector2]) = this()
     /**

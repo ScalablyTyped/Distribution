@@ -4,13 +4,14 @@ import typings.squareConnect.squareConnectStrings.CREATED_AT
 import typings.squareConnect.squareConnectStrings.END_AT
 import typings.squareConnect.squareConnectStrings.START_AT
 import typings.squareConnect.squareConnectStrings.UPDATED_AT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "ShiftSort")
 @js.native
-class ShiftSort () extends js.Object {
+class ShiftSort () extends StObject {
   
   /**
     * The field to sort on. See [ShiftSortField](#type-shiftsortfield) for possible values.

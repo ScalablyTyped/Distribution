@@ -2,13 +2,14 @@ package typings.tizenCommonWeb.applicationMod
 
 import typings.tizenCommonWeb.tizenCommonWebStrings.GROUP
 import typings.tizenCommonWeb.tizenCommonWebStrings.SINGLE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/application", "ApplicationControl")
 @js.native
-class ApplicationControl protected () extends js.Object {
+class ApplicationControl protected () extends StObject {
   def this(
     operation: String,
     uri: js.UndefOr[String],

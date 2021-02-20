@@ -2,12 +2,13 @@ package typings.breeze.breeze
 
 import typings.breeze.anon.Name
 import typings.breeze.breeze.core.ErrorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetadataStore extends js.Object {
+trait MetadataStore extends StObject {
   
   def addDataService(dataService: DataService): Unit = js.native
   def addDataService(dataService: DataService, shouldOverwrite: Boolean): Unit = js.native

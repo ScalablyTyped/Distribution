@@ -1,15 +1,15 @@
 package typings.three.constantsMod
 
+import typings.three.constantsMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TrianglesDrawModes extends js.Object
-@JSImport("three/src/constants", "TrianglesDrawModes")
-@js.native
-object TrianglesDrawModes extends js.Object {
+sealed trait TrianglesDrawModes extends StObject
+object TrianglesDrawModes {
   
-  @JSBracketAccess
-  def apply(value: scala.Nothing): js.UndefOr[TrianglesDrawModes with scala.Nothing] = js.native
+  @scala.inline
+  def apply(value: scala.Nothing): js.UndefOr[TrianglesDrawModes with scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("TrianglesDrawModes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TrianglesDrawModes with scala.Nothing]]
 }

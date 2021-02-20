@@ -20,12 +20,13 @@ import typings.nodeRedRuntime.anon.Resolutions
 import typings.nodeRedRuntime.anon.Sha
 import typings.nodeRedRuntime.anon.Track
 import typings.nodeRedRuntime.anon.Tree
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProjectsModule extends js.Object {
+trait ProjectsModule extends StObject {
   
   /**
     * Abort an in-progress merge
@@ -400,111 +401,99 @@ object ProjectsModule {
   }
   
   @scala.inline
-  implicit class ProjectsModuleOps[Self <: ProjectsModule] (val x: Self) extends AnyVal {
+  implicit class ProjectsModuleMutableBuilder[Self <: ProjectsModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbortMerge(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "abortMerge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddRemote(value: IdRemote => js.Promise[js.Object]): Self = StObject.set(x, "addRemote", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAbortMerge(value: ReqUser => js.Promise[js.Object]): Self = this.set("abortMerge", js.Any.fromFunction1(value))
+    def setCommit(value: Message => js.Promise[js.Object]): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddRemote(value: IdRemote => js.Promise[js.Object]): Self = this.set("addRemote", js.Any.fromFunction1(value))
+    def setCreateProject(value: Project => js.Promise[js.Object]): Self = StObject.set(x, "createProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvailable(value: () => js.Promise[Boolean]): Self = this.set("available", js.Any.fromFunction0(value))
+    def setDeleteBranch(value: Force => js.Promise[js.Object]): Self = StObject.set(x, "deleteBranch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCommit(value: Message => js.Promise[js.Object]): Self = this.set("commit", js.Any.fromFunction1(value))
+    def setDeleteProject(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "deleteProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateProject(value: Project => js.Promise[js.Object]): Self = this.set("createProject", js.Any.fromFunction1(value))
+    def setGetActiveProject(value: typings.nodeRedRuntime.anon.User => js.Promise[js.Object]): Self = StObject.set(x, "getActiveProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteBranch(value: Force => js.Promise[js.Object]): Self = this.set("deleteBranch", js.Any.fromFunction1(value))
+    def setGetBranchStatus(value: Branch => js.Promise[js.Object]): Self = StObject.set(x, "getBranchStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDeleteProject(value: ReqUser => js.Promise[js.Object]): Self = this.set("deleteProject", js.Any.fromFunction1(value))
+    def setGetBranches(value: Remote => js.Promise[js.Object]): Self = StObject.set(x, "getBranches", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetActiveProject(value: typings.nodeRedRuntime.anon.User => js.Promise[js.Object]): Self = this.set("getActiveProject", js.Any.fromFunction1(value))
+    def setGetCommit(value: Sha => js.Promise[js.Object]): Self = StObject.set(x, "getCommit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBranchStatus(value: Branch => js.Promise[js.Object]): Self = this.set("getBranchStatus", js.Any.fromFunction1(value))
+    def setGetCommits(value: Before => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "getCommits", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetBranches(value: Remote => js.Promise[js.Object]): Self = this.set("getBranches", js.Any.fromFunction1(value))
+    def setGetFile(value: Tree => js.Promise[String]): Self = StObject.set(x, "getFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCommit(value: Sha => js.Promise[js.Object]): Self = this.set("getCommit", js.Any.fromFunction1(value))
+    def setGetFileDiff(value: ReqType => js.Promise[js.Object]): Self = StObject.set(x, "getFileDiff", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCommits(value: Before => js.Promise[js.Array[js.Object]]): Self = this.set("getCommits", js.Any.fromFunction1(value))
+    def setGetFiles(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "getFiles", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFile(value: Tree => js.Promise[String]): Self = this.set("getFile", js.Any.fromFunction1(value))
+    def setGetProject(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "getProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFileDiff(value: ReqType => js.Promise[js.Object]): Self = this.set("getFileDiff", js.Any.fromFunction1(value))
+    def setGetRemotes(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "getRemotes", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFiles(value: ReqUser => js.Promise[js.Object]): Self = this.set("getFiles", js.Any.fromFunction1(value))
+    def setGetStatus(value: Remote => js.Promise[js.Object]): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetProject(value: ReqUser => js.Promise[js.Object]): Self = this.set("getProject", js.Any.fromFunction1(value))
+    def setInitialiseProject(value: IdProject => js.Promise[js.Object]): Self = StObject.set(x, "initialiseProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRemotes(value: ReqUser => js.Promise[js.Object]): Self = this.set("getRemotes", js.Any.fromFunction1(value))
+    def setListProjects(value: typings.nodeRedRuntime.anon.User => js.Promise[Unit]): Self = StObject.set(x, "listProjects", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStatus(value: Remote => js.Promise[js.Object]): Self = this.set("getStatus", js.Any.fromFunction1(value))
+    def setPull(value: AllowUnrelatedHistories => js.Promise[js.Object]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInitialiseProject(value: IdProject => js.Promise[js.Object]): Self = this.set("initialiseProject", js.Any.fromFunction1(value))
+    def setPush(value: Track => js.Promise[js.Object]): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setListProjects(value: typings.nodeRedRuntime.anon.User => js.Promise[Unit]): Self = this.set("listProjects", js.Any.fromFunction1(value))
+    def setRemoveRemote(value: RemoteReq => js.Promise[js.Object]): Self = StObject.set(x, "removeRemote", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPull(value: AllowUnrelatedHistories => js.Promise[js.Object]): Self = this.set("pull", js.Any.fromFunction1(value))
+    def setResolveMerge(value: Resolutions => js.Promise[js.Object]): Self = StObject.set(x, "resolveMerge", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPush(value: Track => js.Promise[js.Object]): Self = this.set("push", js.Any.fromFunction1(value))
+    def setRevertFile(value: PathReq => js.Promise[js.Object]): Self = StObject.set(x, "revertFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveRemote(value: RemoteReq => js.Promise[js.Object]): Self = this.set("removeRemote", js.Any.fromFunction1(value))
+    def setSetActiveProject(value: ReqUser => js.Promise[js.Object]): Self = StObject.set(x, "setActiveProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResolveMerge(value: Resolutions => js.Promise[js.Object]): Self = this.set("resolveMerge", js.Any.fromFunction1(value))
+    def setSetBranch(value: Create => js.Promise[js.Object]): Self = StObject.set(x, "setBranch", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRevertFile(value: PathReq => js.Promise[js.Object]): Self = this.set("revertFile", js.Any.fromFunction1(value))
+    def setStageFile(value: IdPath => js.Promise[js.Object]): Self = StObject.set(x, "stageFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetActiveProject(value: ReqUser => js.Promise[js.Object]): Self = this.set("setActiveProject", js.Any.fromFunction1(value))
+    def setUnstageFile(value: PathReq => js.Promise[js.Object]): Self = StObject.set(x, "unstageFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBranch(value: Create => js.Promise[js.Object]): Self = this.set("setBranch", js.Any.fromFunction1(value))
+    def setUpdateProject(value: IdProject => js.Promise[js.Object]): Self = StObject.set(x, "updateProject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStageFile(value: IdPath => js.Promise[js.Object]): Self = this.set("stageFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUnstageFile(value: PathReq => js.Promise[js.Object]): Self = this.set("unstageFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateProject(value: IdProject => js.Promise[js.Object]): Self = this.set("updateProject", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateRemote(value: IdRemoteReq => js.Promise[js.Object]): Self = this.set("updateRemote", js.Any.fromFunction1(value))
+    def setUpdateRemote(value: IdRemoteReq => js.Promise[js.Object]): Self = StObject.set(x, "updateRemote", js.Any.fromFunction1(value))
   }
 }

@@ -5,6 +5,7 @@ import typings.activexLibreoffice.com_.sun.star.geometry.AffineMatrix2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealPoint2D
 import typings.activexLibreoffice.com_.sun.star.geometry.RealRectangle2D
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -221,108 +222,96 @@ object XSimpleCanvas {
   }
   
   @scala.inline
-  implicit class XSimpleCanvasOps[Self <: XSimpleCanvas] (val x: Self) extends AnyVal {
+  implicit class XSimpleCanvasMutableBuilder[Self <: XSimpleCanvas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanvas(value: XCanvas): Self = StObject.set(x, "Canvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentClipRect(value: RealRectangle2D): Self = StObject.set(x, "CurrentClipRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentFillColor(value: typings.activexLibreoffice.com_.sun.star.util.Color): Self = StObject.set(x, "CurrentFillColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanvas(value: XCanvas): Self = this.set("Canvas", value.asInstanceOf[js.Any])
+    def setCurrentFont(value: XCanvasFont): Self = StObject.set(x, "CurrentFont", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentClipRect(value: RealRectangle2D): Self = this.set("CurrentClipRect", value.asInstanceOf[js.Any])
+    def setCurrentPenColor(value: typings.activexLibreoffice.com_.sun.star.util.Color): Self = StObject.set(x, "CurrentPenColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFillColor(value: typings.activexLibreoffice.com_.sun.star.util.Color): Self = this.set("CurrentFillColor", value.asInstanceOf[js.Any])
+    def setCurrentTransformation(value: AffineMatrix2D): Self = StObject.set(x, "CurrentTransformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentFont(value: XCanvasFont): Self = this.set("CurrentFont", value.asInstanceOf[js.Any])
+    def setCurrentViewState(value: ViewState): Self = StObject.set(x, "CurrentViewState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPenColor(value: typings.activexLibreoffice.com_.sun.star.util.Color): Self = this.set("CurrentPenColor", value.asInstanceOf[js.Any])
+    def setDevice(value: XGraphicDevice): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentTransformation(value: AffineMatrix2D): Self = this.set("CurrentTransformation", value.asInstanceOf[js.Any])
+    def setDrawBitmap(value: (XBitmap, RealPoint2D) => Unit): Self = StObject.set(x, "drawBitmap", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCurrentViewState(value: ViewState): Self = this.set("CurrentViewState", value.asInstanceOf[js.Any])
+    def setDrawLine(value: (RealPoint2D, RealPoint2D) => Unit): Self = StObject.set(x, "drawLine", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDevice(value: XGraphicDevice): Self = this.set("Device", value.asInstanceOf[js.Any])
+    def setDrawPixel(value: RealPoint2D => Unit): Self = StObject.set(x, "drawPixel", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFontMetrics(value: FontMetrics): Self = this.set("FontMetrics", value.asInstanceOf[js.Any])
+    def setDrawPolyPolygon(value: XPolyPolygon2D => Unit): Self = StObject.set(x, "drawPolyPolygon", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrawBitmap(value: (XBitmap, RealPoint2D) => Unit): Self = this.set("drawBitmap", js.Any.fromFunction2(value))
+    def setDrawRect(value: RealRectangle2D => Unit): Self = StObject.set(x, "drawRect", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDrawLine(value: (RealPoint2D, RealPoint2D) => Unit): Self = this.set("drawLine", js.Any.fromFunction2(value))
+    def setDrawText(value: (StringContext, RealPoint2D, Double) => Unit): Self = StObject.set(x, "drawText", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDrawPixel(value: RealPoint2D => Unit): Self = this.set("drawPixel", js.Any.fromFunction1(value))
+    def setFontMetrics(value: FontMetrics): Self = StObject.set(x, "FontMetrics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDrawPolyPolygon(value: XPolyPolygon2D => Unit): Self = this.set("drawPolyPolygon", js.Any.fromFunction1(value))
+    def setGetCanvas(value: () => XCanvas): Self = StObject.set(x, "getCanvas", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrawRect(value: RealRectangle2D => Unit): Self = this.set("drawRect", js.Any.fromFunction1(value))
+    def setGetCurrentClipRect(value: () => RealRectangle2D): Self = StObject.set(x, "getCurrentClipRect", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDrawText(value: (StringContext, RealPoint2D, Double) => Unit): Self = this.set("drawText", js.Any.fromFunction3(value))
+    def setGetCurrentFillColor(value: () => typings.activexLibreoffice.com_.sun.star.util.Color): Self = StObject.set(x, "getCurrentFillColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCanvas(value: () => XCanvas): Self = this.set("getCanvas", js.Any.fromFunction0(value))
+    def setGetCurrentFont(value: () => XCanvasFont): Self = StObject.set(x, "getCurrentFont", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentClipRect(value: () => RealRectangle2D): Self = this.set("getCurrentClipRect", js.Any.fromFunction0(value))
+    def setGetCurrentPenColor(value: () => typings.activexLibreoffice.com_.sun.star.util.Color): Self = StObject.set(x, "getCurrentPenColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentFillColor(value: () => typings.activexLibreoffice.com_.sun.star.util.Color): Self = this.set("getCurrentFillColor", js.Any.fromFunction0(value))
+    def setGetCurrentRenderState(value: Boolean => RenderState): Self = StObject.set(x, "getCurrentRenderState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetCurrentFont(value: () => XCanvasFont): Self = this.set("getCurrentFont", js.Any.fromFunction0(value))
+    def setGetCurrentTransformation(value: () => AffineMatrix2D): Self = StObject.set(x, "getCurrentTransformation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentPenColor(value: () => typings.activexLibreoffice.com_.sun.star.util.Color): Self = this.set("getCurrentPenColor", js.Any.fromFunction0(value))
+    def setGetCurrentViewState(value: () => ViewState): Self = StObject.set(x, "getCurrentViewState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentRenderState(value: Boolean => RenderState): Self = this.set("getCurrentRenderState", js.Any.fromFunction1(value))
+    def setGetDevice(value: () => XGraphicDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentTransformation(value: () => AffineMatrix2D): Self = this.set("getCurrentTransformation", js.Any.fromFunction0(value))
+    def setGetFontMetrics(value: () => FontMetrics): Self = StObject.set(x, "getFontMetrics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentViewState(value: () => ViewState): Self = this.set("getCurrentViewState", js.Any.fromFunction0(value))
+    def setSelectFont(value: (String, Double, Boolean, Boolean) => Unit): Self = StObject.set(x, "selectFont", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setGetDevice(value: () => XGraphicDevice): Self = this.set("getDevice", js.Any.fromFunction0(value))
+    def setSetFillColor(value: typings.activexLibreoffice.com_.sun.star.util.Color => Unit): Self = StObject.set(x, "setFillColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFontMetrics(value: () => FontMetrics): Self = this.set("getFontMetrics", js.Any.fromFunction0(value))
+    def setSetPenColor(value: typings.activexLibreoffice.com_.sun.star.util.Color => Unit): Self = StObject.set(x, "setPenColor", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectFont(value: (String, Double, Boolean, Boolean) => Unit): Self = this.set("selectFont", js.Any.fromFunction4(value))
+    def setSetRectClip(value: RealRectangle2D => Unit): Self = StObject.set(x, "setRectClip", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFillColor(value: typings.activexLibreoffice.com_.sun.star.util.Color => Unit): Self = this.set("setFillColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPenColor(value: typings.activexLibreoffice.com_.sun.star.util.Color => Unit): Self = this.set("setPenColor", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRectClip(value: RealRectangle2D => Unit): Self = this.set("setRectClip", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetTransformation(value: AffineMatrix2D => Unit): Self = this.set("setTransformation", js.Any.fromFunction1(value))
+    def setSetTransformation(value: AffineMatrix2D => Unit): Self = StObject.set(x, "setTransformation", js.Any.fromFunction1(value))
   }
 }

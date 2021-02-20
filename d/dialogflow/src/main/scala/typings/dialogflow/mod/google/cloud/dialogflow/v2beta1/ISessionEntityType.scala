@@ -2,36 +2,67 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.IEntity
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SessionEntityType. */
-trait ISessionEntityType extends js.Object {
+@js.native
+trait ISessionEntityType extends StObject {
+  
   /** SessionEntityType entities */
-  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
+  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.native
+  
   /** SessionEntityType entityOverrideMode */
   var entityOverrideMode: js.UndefOr[
     EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode * / any */ String) | Null
-  ] = js.undefined
+  ] = js.native
+  
   /** SessionEntityType name */
-  var name: js.UndefOr[String | Null] = js.undefined
+  var name: js.UndefOr[String | Null] = js.native
 }
-
 object ISessionEntityType {
+  
   @scala.inline
-  def apply(
-    entities: js.UndefOr[Null | js.Array[IEntity]] = js.undefined,
-    entityOverrideMode: js.UndefOr[
-      Null | EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode * / any */ String)
-    ] = js.undefined,
-    name: js.UndefOr[Null | String] = js.undefined
-  ): ISessionEntityType = {
+  def apply(): ISessionEntityType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(entities)) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (!js.isUndefined(entityOverrideMode)) __obj.updateDynamic("entityOverrideMode")(entityOverrideMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISessionEntityType]
   }
+  
+  @scala.inline
+  implicit class ISessionEntityTypeMutableBuilder[Self <: ISessionEntityType] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setEntities(value: js.Array[IEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEntitiesNull: Self = StObject.set(x, "entities", null)
+    
+    @scala.inline
+    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    
+    @scala.inline
+    def setEntitiesVarargs(value: IEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    
+    @scala.inline
+    def setEntityOverrideMode(
+      value: EntityOverrideMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.SessionEntityType.EntityOverrideMode * / any */ String)
+    ): Self = StObject.set(x, "entityOverrideMode", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEntityOverrideModeNull: Self = StObject.set(x, "entityOverrideMode", null)
+    
+    @scala.inline
+    def setEntityOverrideModeUndefined: Self = StObject.set(x, "entityOverrideMode", js.undefined)
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNameNull: Self = StObject.set(x, "name", null)
+    
+    @scala.inline
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

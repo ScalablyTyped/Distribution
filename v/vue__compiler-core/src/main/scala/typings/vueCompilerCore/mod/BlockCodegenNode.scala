@@ -3,6 +3,7 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`13`
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
 import typings.vueCompilerCore.vueCompilerCoreStrings.LeftcurlybracketRightcurlybracket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,21 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.mod.VNodeCall
   - typings.vueCompilerCore.mod.RenderSlotCall
 */
-trait BlockCodegenNode extends js.Object
+trait BlockCodegenNode extends StObject
 object BlockCodegenNode {
-  
-  @scala.inline
-  def VNodeCall(
-    disableTracking: Boolean,
-    isBlock: Boolean,
-    loc: SourceLocation,
-    tag: String | js.Symbol | CallExpression,
-    `type`: `13`
-  ): BlockCodegenNode = {
-    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockCodegenNode]
-  }
   
   @scala.inline
   def RenderSlotCall(
@@ -38,9 +26,22 @@ object BlockCodegenNode {
     callee: js.Symbol,
     loc: SourceLocation,
     `type`: `14`
-  ): BlockCodegenNode = {
+  ): typings.vueCompilerCore.mod.RenderSlotCall = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BlockCodegenNode]
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.RenderSlotCall]
+  }
+  
+  @scala.inline
+  def VNodeCall(
+    disableTracking: Boolean,
+    isBlock: Boolean,
+    loc: SourceLocation,
+    tag: String | js.Symbol | CallExpression,
+    `type`: `13`
+  ): typings.vueCompilerCore.mod.VNodeCall = {
+    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.vueCompilerCore.mod.VNodeCall]
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListJobsFilterCriteria extends js.Object {
+trait ListJobsFilterCriteria extends StObject {
   
   /**
     * An array of objects, one for each condition that determines which jobs to exclude from the results.
@@ -26,36 +27,24 @@ object ListJobsFilterCriteria {
   }
   
   @scala.inline
-  implicit class ListJobsFilterCriteriaOps[Self <: ListJobsFilterCriteria] (val x: Self) extends AnyVal {
+  implicit class ListJobsFilterCriteriaMutableBuilder[Self <: ListJobsFilterCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
     @scala.inline
-    def setExcludesVarargs(value: ListJobsFilterTerm*): Self = this.set("excludes", js.Array(value :_*))
+    def setIncludes(value: listOfListJobsFilterTerm): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludes(value: listOfListJobsFilterTerm): Self = this.set("excludes", value.asInstanceOf[js.Any])
+    def setIncludesUndefined: Self = StObject.set(x, "includes", js.undefined)
     
     @scala.inline
-    def deleteExcludes: Self = this.set("excludes", js.undefined)
-    
-    @scala.inline
-    def setIncludesVarargs(value: ListJobsFilterTerm*): Self = this.set("includes", js.Array(value :_*))
-    
-    @scala.inline
-    def setIncludes(value: listOfListJobsFilterTerm): Self = this.set("includes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludes: Self = this.set("includes", js.undefined)
+    def setIncludesVarargs(value: ListJobsFilterTerm*): Self = StObject.set(x, "includes", js.Array(value :_*))
   }
 }

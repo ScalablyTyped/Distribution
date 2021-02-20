@@ -1,12 +1,13 @@
 package typings.reactNativeGoby.mod
 
 import typings.reactNativeGoby.mod.Goby.InstallMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SyncOptions extends js.Object {
+trait SyncOptions extends StObject {
   
   /**
     * Specifies the deployment key you want to query for an update against. By default, this value is derived from the Info.plist
@@ -52,48 +53,36 @@ object SyncOptions {
   }
   
   @scala.inline
-  implicit class SyncOptionsOps[Self <: SyncOptions] (val x: Self) extends AnyVal {
+  implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentKeyUndefined: Self = StObject.set(x, "deploymentKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstallMode(value: InstallMode): Self = StObject.set(x, "installMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentKey(value: String): Self = this.set("deploymentKey", value.asInstanceOf[js.Any])
+    def setInstallModeUndefined: Self = StObject.set(x, "installMode", js.undefined)
     
     @scala.inline
-    def deleteDeploymentKey: Self = this.set("deploymentKey", js.undefined)
+    def setMandatoryInstallMode(value: InstallMode): Self = StObject.set(x, "mandatoryInstallMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstallMode(value: InstallMode): Self = this.set("installMode", value.asInstanceOf[js.Any])
+    def setMandatoryInstallModeUndefined: Self = StObject.set(x, "mandatoryInstallMode", js.undefined)
     
     @scala.inline
-    def deleteInstallMode: Self = this.set("installMode", js.undefined)
+    def setMinimumBackgroundDuration(value: Double): Self = StObject.set(x, "minimumBackgroundDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMandatoryInstallMode(value: InstallMode): Self = this.set("mandatoryInstallMode", value.asInstanceOf[js.Any])
+    def setMinimumBackgroundDurationUndefined: Self = StObject.set(x, "minimumBackgroundDuration", js.undefined)
     
     @scala.inline
-    def deleteMandatoryInstallMode: Self = this.set("mandatoryInstallMode", js.undefined)
+    def setUpdateDialog(value: UpdateDialog): Self = StObject.set(x, "updateDialog", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumBackgroundDuration(value: Double): Self = this.set("minimumBackgroundDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinimumBackgroundDuration: Self = this.set("minimumBackgroundDuration", js.undefined)
-    
-    @scala.inline
-    def setUpdateDialog(value: UpdateDialog): Self = this.set("updateDialog", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateDialog: Self = this.set("updateDialog", js.undefined)
+    def setUpdateDialogUndefined: Self = StObject.set(x, "updateDialog", js.undefined)
   }
 }

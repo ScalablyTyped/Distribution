@@ -3,6 +3,7 @@ package typings.babylonjs.miscIndexMod
 import typings.babylonjs.engineMod.Engine
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.videoRecorderMod.VideoRecorderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,16 +21,18 @@ class VideoRecorder protected ()
   def this(engine: Engine, options: Nullable[VideoRecorderOptions]) = this()
 }
 /* static members */
-@JSImport("babylonjs/Misc/index", "VideoRecorder")
-@js.native
-object VideoRecorder extends js.Object {
+object VideoRecorder {
   
   /**
     * Returns whether or not the VideoRecorder is available in your browser.
     * @param engine Defines the Babylon Engine.
     * @returns true if supported otherwise false.
     */
+  @JSImport("babylonjs/Misc/index", "VideoRecorder.IsSupported")
+  @js.native
   def IsSupported(engine: Engine): Boolean = js.native
   
+  @JSImport("babylonjs/Misc/index", "VideoRecorder._defaultOptions")
+  @js.native
   val _defaultOptions: js.Any = js.native
 }

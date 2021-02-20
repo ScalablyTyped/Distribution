@@ -1,5 +1,6 @@
 package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A CloudWorkspaceSourceContext denotes a workspace at a particular snapshot.
   */
 @js.native
-trait SchemaCloudWorkspaceSourceContext extends js.Object {
+trait SchemaCloudWorkspaceSourceContext extends StObject {
   
   /**
     * The ID of the snapshot. An empty snapshot_id refers to the most recent
@@ -30,30 +31,18 @@ object SchemaCloudWorkspaceSourceContext {
   }
   
   @scala.inline
-  implicit class SchemaCloudWorkspaceSourceContextOps[Self <: SchemaCloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
+  implicit class SchemaCloudWorkspaceSourceContextMutableBuilder[Self <: SchemaCloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWorkspaceId(value: SchemaCloudWorkspaceId): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnapshotId(value: String): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
-    
-    @scala.inline
-    def setWorkspaceId(value: SchemaCloudWorkspaceId): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkspaceId: Self = this.set("workspaceId", js.undefined)
+    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
   }
 }

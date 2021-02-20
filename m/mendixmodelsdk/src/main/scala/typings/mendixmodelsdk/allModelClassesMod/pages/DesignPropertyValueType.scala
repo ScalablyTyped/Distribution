@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.allModelClassesMod.pages
 
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DesignPropertyValueType")
 @js.native
-class DesignPropertyValueType ()
-  extends typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DesignPropertyValueType")
-@js.native
-object DesignPropertyValueType extends js.Object {
+class DesignPropertyValueType protected ()
+  extends typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object DesignPropertyValueType {
   
-  var DropDown: typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType = js.native
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DesignPropertyValueType")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Toggle: typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DesignPropertyValueType.DropDown")
+  @js.native
+  def DropDown: typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType = js.native
+  @scala.inline
+  def DropDown_=(x: typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DropDown")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DesignPropertyValueType.Toggle")
+  @js.native
+  def Toggle: typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType = js.native
+  @scala.inline
+  def Toggle_=(x: typings.mendixmodelsdk.pagesMod.pages.DesignPropertyValueType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
 }

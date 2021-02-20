@@ -1,14 +1,15 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait STATUS extends js.Object
+sealed trait STATUS extends StObject
 @JSGlobal("STATUS")
 @js.native
-object STATUS extends js.Object {
+object STATUS extends StObject {
   
   @js.native
   sealed trait DONE extends STATUS

@@ -10,6 +10,7 @@ import typings.babelTypes.babelTypesStrings.constructor
 import typings.babelTypes.babelTypesStrings.get
 import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,19 +27,17 @@ trait Function extends _Node
 object Function {
   
   @scala.inline
-  def ObjectMethod_(
+  def ArrowFunctionExpression_(
     async: Boolean,
-    body: BlockStatement_,
-    computed: Boolean,
+    body: BlockStatement_ | Expression,
+    expression: Boolean,
     generator: Boolean,
-    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
-    kind: method | get | set,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: ObjectMethod
-  ): Function = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    `type`: ArrowFunctionExpression
+  ): typings.babelTypes.indexTs37Mod.ArrowFunctionExpression_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Function]
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ArrowFunctionExpression_]
   }
   
   @scala.inline
@@ -52,37 +51,10 @@ object Function {
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean,
     `type`: ClassMethod
-  ): Function = {
+  ): typings.babelTypes.indexTs37Mod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Function]
-  }
-  
-  @scala.inline
-  def FunctionDeclaration_(
-    async: Boolean,
-    body: BlockStatement_,
-    generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: FunctionDeclaration
-  ): Function = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Function]
-  }
-  
-  @scala.inline
-  def ArrowFunctionExpression_(
-    async: Boolean,
-    body: BlockStatement_ | Expression,
-    expression: Boolean,
-    generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: ArrowFunctionExpression
-  ): Function = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Function]
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassMethod_]
   }
   
   @scala.inline
@@ -96,10 +68,23 @@ object Function {
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean,
     `type`: ClassPrivateMethod
-  ): Function = {
+  ): typings.babelTypes.indexTs37Mod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Function]
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassPrivateMethod_]
+  }
+  
+  @scala.inline
+  def FunctionDeclaration_(
+    async: Boolean,
+    body: BlockStatement_,
+    generator: Boolean,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    `type`: FunctionDeclaration
+  ): typings.babelTypes.indexTs37Mod.FunctionDeclaration_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.FunctionDeclaration_]
   }
   
   @scala.inline
@@ -109,9 +94,25 @@ object Function {
     generator: Boolean,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     `type`: FunctionExpression
-  ): Function = {
+  ): typings.babelTypes.indexTs37Mod.FunctionExpression_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Function]
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.FunctionExpression_]
+  }
+  
+  @scala.inline
+  def ObjectMethod_(
+    async: Boolean,
+    body: BlockStatement_,
+    computed: Boolean,
+    generator: Boolean,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    kind: method | get | set,
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
+    `type`: ObjectMethod
+  ): typings.babelTypes.indexTs37Mod.ObjectMethod_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ObjectMethod_]
   }
 }

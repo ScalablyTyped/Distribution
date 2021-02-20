@@ -9,17 +9,22 @@ import typings.xstate.typesMod.SCXML.Event
 import typings.xstate.typesMod.Spawnable
 import typings.xstate.typesMod.StateMachine
 import typings.xstate.typesMod.Subscribable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstate/lib/Actor", JSImport.Namespace)
-@js.native
-object actorMod extends js.Object {
+object actorMod {
   
+  @JSImport("xstate/lib/Actor", "createDeferredActor")
+  @js.native
   def createDeferredActor(entity: Spawnable, id: String): Actor[_, AnyEventObject] = js.native
+  @JSImport("xstate/lib/Actor", "createDeferredActor")
+  @js.native
   def createDeferredActor(entity: Spawnable, id: String, data: js.Any): Actor[_, AnyEventObject] = js.native
   
+  @JSImport("xstate/lib/Actor", "createInvocableActor")
+  @js.native
   def createInvocableActor[TC, TE /* <: EventObject */](
     invokeDefinition: InvokeDefinition[TC, TE],
     machine: StateMachine[TC, _, TE, Context[TC]],
@@ -27,8 +32,12 @@ object actorMod extends js.Object {
     _event: Event[TE]
   ): Actor[_, AnyEventObject] = js.native
   
+  @JSImport("xstate/lib/Actor", "createNullActor")
+  @js.native
   def createNullActor(id: String): Actor[_, AnyEventObject] = js.native
   
+  @JSImport("xstate/lib/Actor", "isActor")
+  @js.native
   def isActor(item: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = js.native
   
   @js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchImportFindingsResponse extends js.Object {
+trait BatchImportFindingsResponse extends StObject {
   
   /**
     * The number of findings that failed to import.
@@ -31,33 +32,21 @@ object BatchImportFindingsResponse {
   }
   
   @scala.inline
-  implicit class BatchImportFindingsResponseOps[Self <: BatchImportFindingsResponse] (val x: Self) extends AnyVal {
+  implicit class BatchImportFindingsResponseMutableBuilder[Self <: BatchImportFindingsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailedCount(value: Integer): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailedFindings(value: ImportFindingsErrorList): Self = StObject.set(x, "FailedFindings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailedFindingsUndefined: Self = StObject.set(x, "FailedFindings", js.undefined)
     
     @scala.inline
-    def setFailedCount(value: Integer): Self = this.set("FailedCount", value.asInstanceOf[js.Any])
+    def setFailedFindingsVarargs(value: ImportFindingsError*): Self = StObject.set(x, "FailedFindings", js.Array(value :_*))
     
     @scala.inline
-    def setSuccessCount(value: Integer): Self = this.set("SuccessCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFailedFindingsVarargs(value: ImportFindingsError*): Self = this.set("FailedFindings", js.Array(value :_*))
-    
-    @scala.inline
-    def setFailedFindings(value: ImportFindingsErrorList): Self = this.set("FailedFindings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailedFindings: Self = this.set("FailedFindings", js.undefined)
+    def setSuccessCount(value: Integer): Self = StObject.set(x, "SuccessCount", value.asInstanceOf[js.Any])
   }
 }

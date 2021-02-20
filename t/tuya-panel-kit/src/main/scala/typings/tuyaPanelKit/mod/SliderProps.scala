@@ -9,12 +9,13 @@ import typings.tuyaPanelKit.anon.Height
 import typings.tuyaPanelKit.anon.MaximumTrackTintColor
 import typings.tuyaPanelKit.tuyaPanelKitStrings.spring
 import typings.tuyaPanelKit.tuyaPanelKitStrings.timing
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SliderProps extends js.Object {
+trait SliderProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.native
   
@@ -87,213 +88,201 @@ object SliderProps {
   }
   
   @scala.inline
-  implicit class SliderPropsOps[Self <: SliderProps] (val x: Self) extends AnyVal {
+  implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimateTransitions(value: Boolean): Self = StObject.set(x, "animateTransitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    def setAnimateTransitionsUndefined: Self = StObject.set(x, "animateTransitions", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    def setAnimationConfig(value: Duration): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimateTransitions(value: Boolean): Self = this.set("animateTransitions", value.asInstanceOf[js.Any])
+    def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
     
     @scala.inline
-    def deleteAnimateTransitions: Self = this.set("animateTransitions", js.undefined)
+    def setAnimationType(value: spring | timing): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationConfig(value: Duration): Self = this.set("animationConfig", value.asInstanceOf[js.Any])
+    def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
     
     @scala.inline
-    def deleteAnimationConfig: Self = this.set("animationConfig", js.undefined)
+    def setCanTouchTrack(value: Boolean): Self = StObject.set(x, "canTouchTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimationType(value: spring | timing): Self = this.set("animationType", value.asInstanceOf[js.Any])
+    def setCanTouchTrackUndefined: Self = StObject.set(x, "canTouchTrack", js.undefined)
     
     @scala.inline
-    def deleteAnimationType: Self = this.set("animationType", js.undefined)
+    def setDebugTouchArea(value: Boolean): Self = StObject.set(x, "debugTouchArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanTouchTrack(value: Boolean): Self = this.set("canTouchTrack", value.asInstanceOf[js.Any])
+    def setDebugTouchAreaUndefined: Self = StObject.set(x, "debugTouchArea", js.undefined)
     
     @scala.inline
-    def deleteCanTouchTrack: Self = this.set("canTouchTrack", js.undefined)
+    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugTouchArea(value: Boolean): Self = this.set("debugTouchArea", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteDebugTouchArea: Self = this.set("debugTouchArea", js.undefined)
+    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumTrackTintColor(value: String): Self = this.set("maximumTrackTintColor", value.asInstanceOf[js.Any])
+    def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
     
     @scala.inline
-    def deleteMaximumTrackTintColor: Self = this.set("maximumTrackTintColor", js.undefined)
+    def setMinimumTrackTintColor(value: String): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumValue(value: Double): Self = this.set("maximumValue", value.asInstanceOf[js.Any])
+    def setMinimumTrackTintColorUndefined: Self = StObject.set(x, "minimumTrackTintColor", js.undefined)
     
     @scala.inline
-    def deleteMaximumValue: Self = this.set("maximumValue", js.undefined)
+    def setMinimumValue(value: Double): Self = StObject.set(x, "minimumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumTrackTintColor(value: String): Self = this.set("minimumTrackTintColor", value.asInstanceOf[js.Any])
+    def setMinimumValueUndefined: Self = StObject.set(x, "minimumValue", js.undefined)
     
     @scala.inline
-    def deleteMinimumTrackTintColor: Self = this.set("minimumTrackTintColor", js.undefined)
+    def setOnLayout(value: /* x */ Double => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setMinimumValue(value: Double): Self = this.set("minimumValue", value.asInstanceOf[js.Any])
+    def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
     @scala.inline
-    def deleteMinimumValue: Self = this.set("minimumValue", js.undefined)
+    def setOnScrollEvent(value: /* value */ Double => Unit): Self = StObject.set(x, "onScrollEvent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnLayout(value: /* x */ Double => Unit): Self = this.set("onLayout", js.Any.fromFunction1(value))
+    def setOnScrollEventUndefined: Self = StObject.set(x, "onScrollEvent", js.undefined)
     
     @scala.inline
-    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    def setOnSlidingComplete(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onSlidingComplete", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnScrollEvent(value: /* value */ Double => Unit): Self = this.set("onScrollEvent", js.Any.fromFunction1(value))
+    def setOnSlidingCompleteUndefined: Self = StObject.set(x, "onSlidingComplete", js.undefined)
     
     @scala.inline
-    def deleteOnScrollEvent: Self = this.set("onScrollEvent", js.undefined)
+    def setOnSlidingStart(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onSlidingStart", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSlidingComplete(value: /* newValue */ Double => Unit): Self = this.set("onSlidingComplete", js.Any.fromFunction1(value))
+    def setOnSlidingStartUndefined: Self = StObject.set(x, "onSlidingStart", js.undefined)
     
     @scala.inline
-    def deleteOnSlidingComplete: Self = this.set("onSlidingComplete", js.undefined)
+    def setOnValueChange(value: /* newValue */ Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnSlidingStart(value: /* newValue */ Double => Unit): Self = this.set("onSlidingStart", js.Any.fromFunction1(value))
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def deleteOnSlidingStart: Self = this.set("onSlidingStart", js.undefined)
+    def setOnlyMaximumTrack(value: Boolean): Self = StObject.set(x, "onlyMaximumTrack", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: /* newValue */ Double => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
+    def setOnlyMaximumTrackUndefined: Self = StObject.set(x, "onlyMaximumTrack", js.undefined)
     
     @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
+    def setRenderMaximumTrack(value: () => ReactNode): Self = StObject.set(x, "renderMaximumTrack", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnlyMaximumTrack(value: Boolean): Self = this.set("onlyMaximumTrack", value.asInstanceOf[js.Any])
+    def setRenderMaximumTrackUndefined: Self = StObject.set(x, "renderMaximumTrack", js.undefined)
     
     @scala.inline
-    def deleteOnlyMaximumTrack: Self = this.set("onlyMaximumTrack", js.undefined)
+    def setRenderMinimumTrack(value: () => ReactNode): Self = StObject.set(x, "renderMinimumTrack", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderMaximumTrack(value: () => ReactNode): Self = this.set("renderMaximumTrack", js.Any.fromFunction0(value))
+    def setRenderMinimumTrackUndefined: Self = StObject.set(x, "renderMinimumTrack", js.undefined)
     
     @scala.inline
-    def deleteRenderMaximumTrack: Self = this.set("renderMaximumTrack", js.undefined)
+    def setRenderThumb(value: () => ReactNode): Self = StObject.set(x, "renderThumb", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRenderMinimumTrack(value: () => ReactNode): Self = this.set("renderMinimumTrack", js.Any.fromFunction0(value))
+    def setRenderThumbUndefined: Self = StObject.set(x, "renderThumb", js.undefined)
     
     @scala.inline
-    def deleteRenderMinimumTrack: Self = this.set("renderMinimumTrack", js.undefined)
+    def setReverseValue(value: Boolean): Self = StObject.set(x, "reverseValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderThumb(value: () => ReactNode): Self = this.set("renderThumb", js.Any.fromFunction0(value))
+    def setReverseValueUndefined: Self = StObject.set(x, "reverseValue", js.undefined)
     
     @scala.inline
-    def deleteRenderThumb: Self = this.set("renderThumb", js.undefined)
+    def setStepValue(value: Double): Self = StObject.set(x, "stepValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReverseValue(value: Boolean): Self = this.set("reverseValue", value.asInstanceOf[js.Any])
+    def setStepValueUndefined: Self = StObject.set(x, "stepValue", js.undefined)
     
     @scala.inline
-    def deleteReverseValue: Self = this.set("reverseValue", js.undefined)
+    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepValue(value: Double): Self = this.set("stepValue", value.asInstanceOf[js.Any])
+    def setStyleNull: Self = StObject.set(x, "style", null)
     
     @scala.inline
-    def deleteStepValue: Self = this.set("stepValue", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setStyles(value: DebugThumbTouchArea): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setStyleNull: Self = this.set("style", null)
+    def setTheme(value: MaximumTrackTintColor): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: DebugThumbTouchArea): Self = this.set("styles", value.asInstanceOf[js.Any])
+    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
     @scala.inline
-    def deleteStyles: Self = this.set("styles", js.undefined)
+    def setThumbStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "thumbStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTheme(value: MaximumTrackTintColor): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setThumbStyleNull: Self = StObject.set(x, "thumbStyle", null)
     
     @scala.inline
-    def deleteTheme: Self = this.set("theme", js.undefined)
+    def setThumbStyleUndefined: Self = StObject.set(x, "thumbStyle", js.undefined)
     
     @scala.inline
-    def setThumbStyle(value: StyleProp[ViewStyle]): Self = this.set("thumbStyle", value.asInstanceOf[js.Any])
+    def setThumbTintColor(value: String): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteThumbStyle: Self = this.set("thumbStyle", js.undefined)
+    def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
     @scala.inline
-    def setThumbStyleNull: Self = this.set("thumbStyle", null)
+    def setThumbTouchSize(value: Height): Self = StObject.set(x, "thumbTouchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTintColor(value: String): Self = this.set("thumbTintColor", value.asInstanceOf[js.Any])
+    def setThumbTouchSizeUndefined: Self = StObject.set(x, "thumbTouchSize", js.undefined)
     
     @scala.inline
-    def deleteThumbTintColor: Self = this.set("thumbTintColor", js.undefined)
+    def setTrackStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbTouchSize(value: Height): Self = this.set("thumbTouchSize", value.asInstanceOf[js.Any])
+    def setTrackStyleNull: Self = StObject.set(x, "trackStyle", null)
     
     @scala.inline
-    def deleteThumbTouchSize: Self = this.set("thumbTouchSize", js.undefined)
+    def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
     
     @scala.inline
-    def setTrackStyle(value: StyleProp[ViewStyle]): Self = this.set("trackStyle", value.asInstanceOf[js.Any])
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTrackStyle: Self = this.set("trackStyle", js.undefined)
-    
-    @scala.inline
-    def setTrackStyleNull: Self = this.set("trackStyle", null)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

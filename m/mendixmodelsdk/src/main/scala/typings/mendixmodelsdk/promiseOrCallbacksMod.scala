@@ -2,14 +2,15 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.commonMod.common.ICallback
 import typings.mendixmodelsdk.commonMod.common.IErrorCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", JSImport.Namespace)
-@js.native
-object promiseOrCallbacksMod extends js.Object {
+object promiseOrCallbacksMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
+  @js.native
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
@@ -17,6 +18,8 @@ object promiseOrCallbacksMod extends js.Object {
       Unit
     ]
   ): js.Promise[T] | Unit = js.native
+  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
+  @js.native
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
@@ -26,6 +29,8 @@ object promiseOrCallbacksMod extends js.Object {
     callback: js.UndefOr[scala.Nothing],
     errorCallback: IErrorCallback
   ): js.Promise[T] | Unit = js.native
+  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
+  @js.native
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 
@@ -34,6 +39,8 @@ object promiseOrCallbacksMod extends js.Object {
     ],
     callback: ICallback[T]
   ): js.Promise[T] | Unit = js.native
+  @JSImport("mendixmodelsdk/dist/sdk/internal/promiseOrCallbacks", "promiseOrCallbacks")
+  @js.native
   def promiseOrCallbacks[T](
     action: js.Function2[
       /* resolve */ js.Function1[/* result */ js.UndefOr[T], Unit], 

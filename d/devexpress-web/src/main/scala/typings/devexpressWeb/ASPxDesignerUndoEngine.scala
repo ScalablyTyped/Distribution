@@ -1,11 +1,12 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxDesignerUndoEngine extends js.Object {
+trait ASPxDesignerUndoEngine extends StObject {
   
   def clearHistory(): Unit = js.native
   
@@ -38,45 +39,33 @@ object ASPxDesignerUndoEngine {
   }
   
   @scala.inline
-  implicit class ASPxDesignerUndoEngineOps[Self <: ASPxDesignerUndoEngine] (val x: Self) extends AnyVal {
+  implicit class ASPxDesignerUndoEngineMutableBuilder[Self <: ASPxDesignerUndoEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClearHistory(value: () => Unit): Self = this.set("clearHistory", js.Any.fromFunction0(value))
+    def setClearHistory(value: () => Unit): Self = StObject.set(x, "clearHistory", js.Any.fromFunction0(value))
     
     @scala.inline
     def setIsDirty(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("isDirty", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRedo(value: () => Unit): Self = this.set("redo", js.Any.fromFunction0(value))
+    def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRedoEnabled(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("redoEnabled", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "redoEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUndo(value: () => Unit): Self = this.set("undo", js.Any.fromFunction0(value))
+    def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setUndoAll(value: () => Unit): Self = this.set("undoAll", js.Any.fromFunction0(value))
+    def setUndoAll(value: () => Unit): Self = StObject.set(x, "undoAll", js.Any.fromFunction0(value))
     
     @scala.inline
     def setUndoEnabled(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
-    ): Self = this.set("undoEnabled", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "undoEnabled", value.asInstanceOf[js.Any])
   }
 }

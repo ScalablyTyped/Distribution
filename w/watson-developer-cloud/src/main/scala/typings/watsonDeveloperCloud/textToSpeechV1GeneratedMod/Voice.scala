@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Voice. */
 @js.native
-trait Voice extends js.Object {
+trait Voice extends StObject {
   
   /** If `true`, the voice can be customized; if `false`, the voice cannot be customized. (Same as `custom_pronunciation`; maintained for backward compatibility.). */
   var customizable: Boolean = js.native
@@ -49,45 +50,33 @@ object Voice {
   }
   
   @scala.inline
-  implicit class VoiceOps[Self <: Voice] (val x: Self) extends AnyVal {
+  implicit class VoiceMutableBuilder[Self <: Voice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomizable(value: Boolean): Self = StObject.set(x, "customizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomization(value: VoiceModel): Self = StObject.set(x, "customization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomizationUndefined: Self = StObject.set(x, "customization", js.undefined)
     
     @scala.inline
-    def setCustomizable(value: Boolean): Self = this.set("customizable", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSupported_features(value: SupportedFeatures): Self = StObject.set(x, "supported_features", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSupported_features(value: SupportedFeatures): Self = this.set("supported_features", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomization(value: VoiceModel): Self = this.set("customization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCustomization: Self = this.set("customization", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

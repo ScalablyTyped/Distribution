@@ -5,6 +5,7 @@ import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionSta
 import typings.winrt.Windows.ApplicationModel.Activation.IFileSavePickerActivatedEventArgs
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Storage.Pickers.Provider.FileSavePickerUI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

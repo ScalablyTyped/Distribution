@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,39 +23,27 @@ object PickerIOSProps {
   }
   
   @scala.inline
-  implicit class PickerIOSPropsOps[Self <: PickerIOSProps] (val x: Self) extends AnyVal {
+  implicit class PickerIOSPropsMutableBuilder[Self <: PickerIOSProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def setItemStyle(value: StyleProp[TextStyle]): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setOnValueChange(value: /* value */ String | Double => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
     
     @scala.inline
-    def setItemStyleNull: Self = this.set("itemStyle", null)
+    def setSelectedValue(value: String | Double): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnValueChange(value: /* value */ String | Double => Unit): Self = this.set("onValueChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnValueChange: Self = this.set("onValueChange", js.undefined)
-    
-    @scala.inline
-    def setSelectedValue(value: String | Double): Self = this.set("selectedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedValue: Self = this.set("selectedValue", js.undefined)
+    def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
   }
 }

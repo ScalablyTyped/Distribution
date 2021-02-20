@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Task extends js.Object {
+trait Task extends StObject {
   
   /** HTTP request that is sent to the App Engine app handler. An App Engine task is a task that has AppEngineHttpRequest set. */
   var appEngineHttpRequest: js.UndefOr[AppEngineHttpRequest] = js.native
@@ -67,84 +68,72 @@ object Task {
   }
   
   @scala.inline
-  implicit class TaskOps[Self <: Task] (val x: Self) extends AnyVal {
+  implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppEngineHttpRequest(value: AppEngineHttpRequest): Self = StObject.set(x, "appEngineHttpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppEngineHttpRequestUndefined: Self = StObject.set(x, "appEngineHttpRequest", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppEngineHttpRequest(value: AppEngineHttpRequest): Self = this.set("appEngineHttpRequest", value.asInstanceOf[js.Any])
+    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     @scala.inline
-    def deleteAppEngineHttpRequest: Self = this.set("appEngineHttpRequest", js.undefined)
+    def setDispatchCount(value: Double): Self = StObject.set(x, "dispatchCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    def setDispatchCountUndefined: Self = StObject.set(x, "dispatchCount", js.undefined)
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    def setDispatchDeadline(value: String): Self = StObject.set(x, "dispatchDeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatchCount(value: Double): Self = this.set("dispatchCount", value.asInstanceOf[js.Any])
+    def setDispatchDeadlineUndefined: Self = StObject.set(x, "dispatchDeadline", js.undefined)
     
     @scala.inline
-    def deleteDispatchCount: Self = this.set("dispatchCount", js.undefined)
+    def setFirstAttempt(value: Attempt): Self = StObject.set(x, "firstAttempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispatchDeadline(value: String): Self = this.set("dispatchDeadline", value.asInstanceOf[js.Any])
+    def setFirstAttemptUndefined: Self = StObject.set(x, "firstAttempt", js.undefined)
     
     @scala.inline
-    def deleteDispatchDeadline: Self = this.set("dispatchDeadline", js.undefined)
+    def setHttpRequest(value: HttpRequest): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstAttempt(value: Attempt): Self = this.set("firstAttempt", value.asInstanceOf[js.Any])
+    def setHttpRequestUndefined: Self = StObject.set(x, "httpRequest", js.undefined)
     
     @scala.inline
-    def deleteFirstAttempt: Self = this.set("firstAttempt", js.undefined)
+    def setLastAttempt(value: Attempt): Self = StObject.set(x, "lastAttempt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRequest(value: HttpRequest): Self = this.set("httpRequest", value.asInstanceOf[js.Any])
+    def setLastAttemptUndefined: Self = StObject.set(x, "lastAttempt", js.undefined)
     
     @scala.inline
-    def deleteHttpRequest: Self = this.set("httpRequest", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAttempt(value: Attempt): Self = this.set("lastAttempt", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLastAttempt: Self = this.set("lastAttempt", js.undefined)
+    def setResponseCount(value: Double): Self = StObject.set(x, "responseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResponseCountUndefined: Self = StObject.set(x, "responseCount", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseCount(value: Double): Self = this.set("responseCount", value.asInstanceOf[js.Any])
+    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
     
     @scala.inline
-    def deleteResponseCount: Self = this.set("responseCount", js.undefined)
+    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
-    
-    @scala.inline
-    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoostOptions extends js.Object {
+trait BoostOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) If set to true, the whole chart
@@ -75,57 +76,45 @@ object BoostOptions {
   }
   
   @scala.inline
-  implicit class BoostOptionsOps[Self <: BoostOptions] (val x: Self) extends AnyVal {
+  implicit class BoostOptionsMutableBuilder[Self <: BoostOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowForce(value: Boolean): Self = StObject.set(x, "allowForce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowForceUndefined: Self = StObject.set(x, "allowForce", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDebug(value: BoostDebugOptions): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowForce(value: Boolean): Self = this.set("allowForce", value.asInstanceOf[js.Any])
+    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def deleteAllowForce: Self = this.set("allowForce", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebug(value: BoostDebugOptions): Self = this.set("debug", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDebug: Self = this.set("debug", js.undefined)
+    def setSeriesThreshold(value: Double): Self = StObject.set(x, "seriesThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setSeriesThresholdNull: Self = StObject.set(x, "seriesThreshold", null)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setSeriesThresholdUndefined: Self = StObject.set(x, "seriesThreshold", js.undefined)
     
     @scala.inline
-    def setSeriesThreshold(value: Double): Self = this.set("seriesThreshold", value.asInstanceOf[js.Any])
+    def setUseGPUTranslations(value: Boolean): Self = StObject.set(x, "useGPUTranslations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSeriesThreshold: Self = this.set("seriesThreshold", js.undefined)
+    def setUseGPUTranslationsUndefined: Self = StObject.set(x, "useGPUTranslations", js.undefined)
     
     @scala.inline
-    def setSeriesThresholdNull: Self = this.set("seriesThreshold", null)
+    def setUsePreallocated(value: Boolean): Self = StObject.set(x, "usePreallocated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseGPUTranslations(value: Boolean): Self = this.set("useGPUTranslations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseGPUTranslations: Self = this.set("useGPUTranslations", js.undefined)
-    
-    @scala.inline
-    def setUsePreallocated(value: Boolean): Self = this.set("usePreallocated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsePreallocated: Self = this.set("usePreallocated", js.undefined)
+    def setUsePreallocatedUndefined: Self = StObject.set(x, "usePreallocated", js.undefined)
   }
 }

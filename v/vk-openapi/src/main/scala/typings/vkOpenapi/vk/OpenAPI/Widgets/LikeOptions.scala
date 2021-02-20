@@ -10,12 +10,13 @@ import typings.vkOpenapi.vkOpenapiStrings.button
 import typings.vkOpenapi.vkOpenapiStrings.full
 import typings.vkOpenapi.vkOpenapiStrings.mini
 import typings.vkOpenapi.vkOpenapiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LikeOptions extends js.Object {
+trait LikeOptions extends StObject {
   
   var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.native
   
@@ -40,60 +41,48 @@ object LikeOptions {
   }
   
   @scala.inline
-  implicit class LikeOptionsOps[Self <: LikeOptions] (val x: Self) extends AnyVal {
+  implicit class LikeOptionsMutableBuilder[Self <: LikeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageImage(value: String): Self = StObject.set(x, "pageImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setPageImageUndefined: Self = StObject.set(x, "pageImage", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPageTitle(value: String): Self = StObject.set(x, "pageTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageImage(value: String): Self = this.set("pageImage", value.asInstanceOf[js.Any])
+    def setPageTitleUndefined: Self = StObject.set(x, "pageTitle", js.undefined)
     
     @scala.inline
-    def deletePageImage: Self = this.set("pageImage", js.undefined)
+    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageTitle(value: String): Self = this.set("pageTitle", value.asInstanceOf[js.Any])
+    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
     @scala.inline
-    def deletePageTitle: Self = this.set("pageTitle", js.undefined)
+    def setType(value: button | mini | vertical | full): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageUrl(value: String): Self = this.set("pageUrl", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deletePageUrl: Self = this.set("pageUrl", js.undefined)
+    def setVerb(value: NumericBoolean): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: button | mini | vertical | full): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerb(value: NumericBoolean): Self = this.set("verb", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerb: Self = this.set("verb", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

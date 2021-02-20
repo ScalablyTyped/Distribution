@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriveRecipient extends js.Object {
+trait DriveRecipient extends StObject {
   
   // The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   var alias: js.UndefOr[NullableOption[String]] = js.native
@@ -25,45 +26,33 @@ object DriveRecipient {
   }
   
   @scala.inline
-  implicit class DriveRecipientOps[Self <: DriveRecipient] (val x: Self) extends AnyVal {
+  implicit class DriveRecipientMutableBuilder[Self <: DriveRecipient] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasNull: Self = StObject.set(x, "alias", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def setAlias(value: NullableOption[String]): Self = this.set("alias", value.asInstanceOf[js.Any])
+    def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlias: Self = this.set("alias", js.undefined)
+    def setEmailNull: Self = StObject.set(x, "email", null)
     
     @scala.inline
-    def setAliasNull: Self = this.set("alias", null)
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def setEmail(value: NullableOption[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setObjectId(value: NullableOption[String]): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setObjectIdNull: Self = StObject.set(x, "objectId", null)
     
     @scala.inline
-    def setEmailNull: Self = this.set("email", null)
-    
-    @scala.inline
-    def setObjectId(value: NullableOption[String]): Self = this.set("objectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectId: Self = this.set("objectId", js.undefined)
-    
-    @scala.inline
-    def setObjectIdNull: Self = this.set("objectId", null)
+    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

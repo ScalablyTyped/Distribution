@@ -1,12 +1,13 @@
 package typings.chartJs.mod
 
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartOptions extends js.Object {
+trait ChartOptions extends StObject {
   
   var animation: js.UndefOr[ChartAnimationOptions] = js.native
   
@@ -30,7 +31,7 @@ trait ChartOptions extends js.Object {
   
   var legend: js.UndefOr[ChartLegendOptions] = js.native
   
-  var legendCallback: js.UndefOr[js.Function1[/* chart */ Chart, String]] = js.native
+  var legendCallback: js.UndefOr[js.Function1[/* chart */ typings.chartJs.mod.Chart, String]] = js.native
   
   var maintainAspectRatio: js.UndefOr[Boolean] = js.native
   
@@ -43,10 +44,17 @@ trait ChartOptions extends js.Object {
   ] = js.native
   
   var onHover: js.UndefOr[
-    js.ThisFunction2[/* this */ Chart, /* event */ MouseEvent, /* activeElements */ js.Array[js.Object], _]
+    js.ThisFunction2[
+      /* this */ typings.chartJs.mod.Chart, 
+      /* event */ MouseEvent, 
+      /* activeElements */ js.Array[js.Object], 
+      _
+    ]
   ] = js.native
   
-  var onResize: js.UndefOr[js.ThisFunction1[/* this */ Chart, /* newSize */ ChartSize, Unit]] = js.native
+  var onResize: js.UndefOr[
+    js.ThisFunction1[/* this */ typings.chartJs.mod.Chart, /* newSize */ ChartSize, Unit]
+  ] = js.native
   
   var plugins: js.UndefOr[ChartPluginsOptions] = js.native
   
@@ -77,184 +85,177 @@ object ChartOptions {
   }
   
   @scala.inline
-  implicit class ChartOptionsOps[Self <: ChartOptions] (val x: Self) extends AnyVal {
+  implicit class ChartOptionsMutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: ChartAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnimation(value: ChartAnimationOptions): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCircumference(value: Double): Self = StObject.set(x, "circumference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: Double): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setCircumferenceUndefined: Self = StObject.set(x, "circumference", js.undefined)
     
     @scala.inline
-    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    def setCutoutPercentage(value: Double): Self = StObject.set(x, "cutoutPercentage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCircumference(value: Double): Self = this.set("circumference", value.asInstanceOf[js.Any])
+    def setCutoutPercentageUndefined: Self = StObject.set(x, "cutoutPercentage", js.undefined)
     
     @scala.inline
-    def deleteCircumference: Self = this.set("circumference", js.undefined)
+    def setDefaultColor(value: ChartColor): Self = StObject.set(x, "defaultColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCutoutPercentage(value: Double): Self = this.set("cutoutPercentage", value.asInstanceOf[js.Any])
+    def setDefaultColorUndefined: Self = StObject.set(x, "defaultColor", js.undefined)
     
     @scala.inline
-    def deleteCutoutPercentage: Self = this.set("cutoutPercentage", js.undefined)
+    def setDefaultColorVarargs(value: String*): Self = StObject.set(x, "defaultColor", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultColorVarargs(value: String*): Self = this.set("defaultColor", js.Array(value :_*))
+    def setDevicePixelRatio(value: Double): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultColor(value: ChartColor): Self = this.set("defaultColor", value.asInstanceOf[js.Any])
+    def setDevicePixelRatioUndefined: Self = StObject.set(x, "devicePixelRatio", js.undefined)
     
     @scala.inline
-    def deleteDefaultColor: Self = this.set("defaultColor", js.undefined)
+    def setElements(value: ChartElementsOptions): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevicePixelRatio(value: Double): Self = this.set("devicePixelRatio", value.asInstanceOf[js.Any])
+    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
     @scala.inline
-    def deleteDevicePixelRatio: Self = this.set("devicePixelRatio", js.undefined)
+    def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElements(value: ChartElementsOptions): Self = this.set("elements", value.asInstanceOf[js.Any])
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def deleteElements: Self = this.set("elements", js.undefined)
+    def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    def setHover(value: ChartHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setLayout(value: ChartLayoutOptions): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHover(value: ChartHoverOptions): Self = this.set("hover", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteHover: Self = this.set("hover", js.undefined)
+    def setLegend(value: ChartLegendOptions): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: ChartLayoutOptions): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setLegendCallback(value: /* chart */ typings.chartJs.mod.Chart => String): Self = StObject.set(x, "legendCallback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setLegendCallbackUndefined: Self = StObject.set(x, "legendCallback", js.undefined)
     
     @scala.inline
-    def setLegend(value: ChartLegendOptions): Self = this.set("legend", value.asInstanceOf[js.Any])
+    def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
     @scala.inline
-    def deleteLegend: Self = this.set("legend", js.undefined)
+    def setMaintainAspectRatio(value: Boolean): Self = StObject.set(x, "maintainAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendCallback(value: /* chart */ Chart => String): Self = this.set("legendCallback", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteLegendCallback: Self = this.set("legendCallback", js.undefined)
-    
-    @scala.inline
-    def setMaintainAspectRatio(value: Boolean): Self = this.set("maintainAspectRatio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaintainAspectRatio: Self = this.set("maintainAspectRatio", js.undefined)
+    def setMaintainAspectRatioUndefined: Self = StObject.set(x, "maintainAspectRatio", js.undefined)
     
     @scala.inline
     def setOnClick(
       value: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => _
-    ): Self = this.set("onClick", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
     def setOnHover(
-      value: js.ThisFunction2[/* this */ Chart, /* event */ MouseEvent, /* activeElements */ js.Array[js.Object], _]
-    ): Self = this.set("onHover", value.asInstanceOf[js.Any])
+      value: js.ThisFunction2[
+          /* this */ typings.chartJs.mod.Chart, 
+          /* event */ MouseEvent, 
+          /* activeElements */ js.Array[js.Object], 
+          _
+        ]
+    ): Self = StObject.set(x, "onHover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnHover: Self = this.set("onHover", js.undefined)
+    def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
     
     @scala.inline
-    def setOnResize(value: js.ThisFunction1[/* this */ Chart, /* newSize */ ChartSize, Unit]): Self = this.set("onResize", value.asInstanceOf[js.Any])
+    def setOnResize(value: js.ThisFunction1[/* this */ typings.chartJs.mod.Chart, /* newSize */ ChartSize, Unit]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnResize: Self = this.set("onResize", js.undefined)
+    def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
     @scala.inline
-    def setPlugins(value: ChartPluginsOptions): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPlugins(value: ChartPluginsOptions): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    def setResponsiveAnimationDuration(value: Double): Self = StObject.set(x, "responsiveAnimationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponsiveAnimationDuration(value: Double): Self = this.set("responsiveAnimationDuration", value.asInstanceOf[js.Any])
+    def setResponsiveAnimationDurationUndefined: Self = StObject.set(x, "responsiveAnimationDuration", js.undefined)
     
     @scala.inline
-    def deleteResponsiveAnimationDuration: Self = this.set("responsiveAnimationDuration", js.undefined)
+    def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRotation: Self = this.set("rotation", js.undefined)
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
     @scala.inline
-    def setScale(value: RadialLinearScale): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setScale(value: RadialLinearScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setScales(value: ChartScales | LinearScale | LogarithmicScale | TimeScale): Self = this.set("scales", value.asInstanceOf[js.Any])
+    def setScales(value: ChartScales | LinearScale | LogarithmicScale | TimeScale): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScales: Self = this.set("scales", js.undefined)
+    def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
     @scala.inline
-    def setShowLines(value: Boolean): Self = this.set("showLines", value.asInstanceOf[js.Any])
+    def setShowLines(value: Boolean): Self = StObject.set(x, "showLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowLines: Self = this.set("showLines", js.undefined)
+    def setShowLinesUndefined: Self = StObject.set(x, "showLines", js.undefined)
     
     @scala.inline
-    def setSpanGaps(value: Boolean): Self = this.set("spanGaps", value.asInstanceOf[js.Any])
+    def setSpanGaps(value: Boolean): Self = StObject.set(x, "spanGaps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSpanGaps: Self = this.set("spanGaps", js.undefined)
+    def setSpanGapsUndefined: Self = StObject.set(x, "spanGaps", js.undefined)
     
     @scala.inline
-    def setTitle(value: ChartTitleOptions): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: ChartTitleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setTooltips(value: ChartTooltipOptions): Self = this.set("tooltips", value.asInstanceOf[js.Any])
+    def setTooltips(value: ChartTooltipOptions): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTooltips: Self = this.set("tooltips", js.undefined)
+    def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
   }
 }

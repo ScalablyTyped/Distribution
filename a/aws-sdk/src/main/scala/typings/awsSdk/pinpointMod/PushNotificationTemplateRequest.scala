@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushNotificationTemplateRequest extends js.Object {
+trait PushNotificationTemplateRequest extends StObject {
   
   /**
     * The message template to use for the ADM (Amazon Device Messaging) channel. This message template overrides the default template for push notification channels (DefaultPushNotificationTemplate).
@@ -61,72 +62,60 @@ object PushNotificationTemplateRequest {
   }
   
   @scala.inline
-  implicit class PushNotificationTemplateRequestOps[Self <: PushNotificationTemplateRequest] (val x: Self) extends AnyVal {
+  implicit class PushNotificationTemplateRequestMutableBuilder[Self <: PushNotificationTemplateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setADM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "ADM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setADMUndefined: Self = StObject.set(x, "ADM", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAPNS(value: APNSPushNotificationTemplate): Self = StObject.set(x, "APNS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setADM(value: AndroidPushNotificationTemplate): Self = this.set("ADM", value.asInstanceOf[js.Any])
+    def setAPNSUndefined: Self = StObject.set(x, "APNS", js.undefined)
     
     @scala.inline
-    def deleteADM: Self = this.set("ADM", js.undefined)
+    def setBaidu(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "Baidu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAPNS(value: APNSPushNotificationTemplate): Self = this.set("APNS", value.asInstanceOf[js.Any])
+    def setBaiduUndefined: Self = StObject.set(x, "Baidu", js.undefined)
     
     @scala.inline
-    def deleteAPNS: Self = this.set("APNS", js.undefined)
+    def setDefault(value: DefaultPushNotificationTemplate): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaidu(value: AndroidPushNotificationTemplate): Self = this.set("Baidu", value.asInstanceOf[js.Any])
+    def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaidu: Self = this.set("Baidu", js.undefined)
+    def setDefaultSubstitutionsUndefined: Self = StObject.set(x, "DefaultSubstitutions", js.undefined)
     
     @scala.inline
-    def setDefault(value: DefaultPushNotificationTemplate): Self = this.set("Default", value.asInstanceOf[js.Any])
+    def setDefaultUndefined: Self = StObject.set(x, "Default", js.undefined)
     
     @scala.inline
-    def deleteDefault: Self = this.set("Default", js.undefined)
+    def setGCM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "GCM", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSubstitutions(value: string): Self = this.set("DefaultSubstitutions", value.asInstanceOf[js.Any])
+    def setGCMUndefined: Self = StObject.set(x, "GCM", js.undefined)
     
     @scala.inline
-    def deleteDefaultSubstitutions: Self = this.set("DefaultSubstitutions", js.undefined)
+    def setRecommenderId(value: string): Self = StObject.set(x, "RecommenderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGCM(value: AndroidPushNotificationTemplate): Self = this.set("GCM", value.asInstanceOf[js.Any])
+    def setRecommenderIdUndefined: Self = StObject.set(x, "RecommenderId", js.undefined)
     
     @scala.inline
-    def deleteGCM: Self = this.set("GCM", js.undefined)
+    def setTags(value: MapOfString): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecommenderId(value: string): Self = this.set("RecommenderId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteRecommenderId: Self = this.set("RecommenderId", js.undefined)
+    def setTemplateDescription(value: string): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateDescription(value: string): Self = this.set("TemplateDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateDescription: Self = this.set("TemplateDescription", js.undefined)
-    
-    @scala.inline
-    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
   }
 }

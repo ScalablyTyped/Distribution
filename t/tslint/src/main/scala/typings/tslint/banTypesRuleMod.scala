@@ -1,24 +1,38 @@
 package typings.tslint
 
 import typings.tslint.mod.Rules.AbstractRule
+import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/rules/banTypesRule", JSImport.Namespace)
-@js.native
-object banTypesRuleMod extends js.Object {
+object banTypesRuleMod {
   
+  @JSImport("tslint/lib/rules/banTypesRule", "Rule")
   @js.native
-  class Rule () extends AbstractRule
+  class Rule protected () extends AbstractRule {
+    def this(options: IOptions) = this()
+  }
   /* static members */
-  @js.native
-  object Rule extends js.Object {
+  object Rule {
     
+    @JSImport("tslint/lib/rules/banTypesRule", "Rule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/rules/banTypesRule", "Rule.FAILURE_STRING_FACTORY")
+    @js.native
     def FAILURE_STRING_FACTORY(typeName: String): String = js.native
+    @JSImport("tslint/lib/rules/banTypesRule", "Rule.FAILURE_STRING_FACTORY")
+    @js.native
     def FAILURE_STRING_FACTORY(typeName: String, messageAddition: String): String = js.native
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/rules/banTypesRule", "Rule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

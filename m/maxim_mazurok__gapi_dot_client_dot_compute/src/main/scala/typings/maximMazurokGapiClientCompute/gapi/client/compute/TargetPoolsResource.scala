@@ -12,12 +12,13 @@ import typings.maximMazurokGapiClientCompute.anon.RequestIdTargetPool
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetPool
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetPoolUserIp
 import typings.maximMazurokGapiClientCompute.anon.TargetPoolUserIp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetPoolsResource extends js.Object {
+trait TargetPoolsResource extends StObject {
   
   def addHealthCheck(request: RequestIdTargetPool, body: TargetPoolsAddHealthCheckRequest): Request[Operation] = js.native
   /** Adds health check URLs to a target pool. */

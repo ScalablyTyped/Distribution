@@ -1,11 +1,12 @@
 package typings.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IAxes extends js.Object {
+trait IAxes extends StObject {
   
   def add(horizontal: Boolean, otherSide: Boolean): IAxis = js.native
   
@@ -41,45 +42,33 @@ object IAxes {
   }
   
   @scala.inline
-  implicit class IAxesOps[Self <: IAxes] (val x: Self) extends AnyVal {
+  implicit class IAxesMutableBuilder[Self <: IAxes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: (Boolean, Boolean) => IAxis): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBottom(value: IAxis): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: (Boolean, Boolean) => IAxis): Self = this.set("add", js.Any.fromFunction2(value))
+    def setItems(value: js.Array[IAxis]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottom(value: IAxis): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: IAxis*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setChart(value: IChart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    def setLeft(value: IAxis): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: IAxis*): Self = this.set("items", js.Array(value :_*))
+    def setRight(value: IAxis): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[IAxis]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setTop(value: IAxis): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: IAxis): Self = this.set("left", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRight(value: IAxis): Self = this.set("right", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTop(value: IAxis): Self = this.set("top", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

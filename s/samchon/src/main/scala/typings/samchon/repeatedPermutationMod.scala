@@ -1,14 +1,14 @@
 package typings.samchon
 
 import typings.samchon.icasegeneratorMod.ICaseGenerator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/library/case_generators/RepeatedPermutation", JSImport.Namespace)
-@js.native
-object repeatedPermutationMod extends js.Object {
+object repeatedPermutationMod {
   
+  @JSImport("samchon/library/case_generators/RepeatedPermutation", "RepeatedPermutation")
   @js.native
   class RepeatedPermutation protected () extends ICaseGenerator {
     /**

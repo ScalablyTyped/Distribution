@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackendRule extends js.Object {
+trait BackendRule extends StObject {
   
   /**
     * The address of the API backend. The scheme is used to determine the backend protocol and security. The following schemes are accepted: SCHEME PROTOCOL SECURITY http:// HTTP None
@@ -54,72 +55,60 @@ object BackendRule {
   }
   
   @scala.inline
-  implicit class BackendRuleOps[Self <: BackendRule] (val x: Self) extends AnyVal {
+  implicit class BackendRuleMutableBuilder[Self <: BackendRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setDisableAuth(value: Boolean): Self = StObject.set(x, "disableAuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeadline(value: Double): Self = this.set("deadline", value.asInstanceOf[js.Any])
+    def setDisableAuthUndefined: Self = StObject.set(x, "disableAuth", js.undefined)
     
     @scala.inline
-    def deleteDeadline: Self = this.set("deadline", js.undefined)
+    def setJwtAudience(value: String): Self = StObject.set(x, "jwtAudience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAuth(value: Boolean): Self = this.set("disableAuth", value.asInstanceOf[js.Any])
+    def setJwtAudienceUndefined: Self = StObject.set(x, "jwtAudience", js.undefined)
     
     @scala.inline
-    def deleteDisableAuth: Self = this.set("disableAuth", js.undefined)
+    def setMinDeadline(value: Double): Self = StObject.set(x, "minDeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJwtAudience(value: String): Self = this.set("jwtAudience", value.asInstanceOf[js.Any])
+    def setMinDeadlineUndefined: Self = StObject.set(x, "minDeadline", js.undefined)
     
     @scala.inline
-    def deleteJwtAudience: Self = this.set("jwtAudience", js.undefined)
+    def setOperationDeadline(value: Double): Self = StObject.set(x, "operationDeadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinDeadline(value: Double): Self = this.set("minDeadline", value.asInstanceOf[js.Any])
+    def setOperationDeadlineUndefined: Self = StObject.set(x, "operationDeadline", js.undefined)
     
     @scala.inline
-    def deleteMinDeadline: Self = this.set("minDeadline", js.undefined)
+    def setPathTranslation(value: String): Self = StObject.set(x, "pathTranslation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperationDeadline(value: Double): Self = this.set("operationDeadline", value.asInstanceOf[js.Any])
+    def setPathTranslationUndefined: Self = StObject.set(x, "pathTranslation", js.undefined)
     
     @scala.inline
-    def deleteOperationDeadline: Self = this.set("operationDeadline", js.undefined)
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathTranslation(value: String): Self = this.set("pathTranslation", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deletePathTranslation: Self = this.set("pathTranslation", js.undefined)
+    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
-    
-    @scala.inline
-    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

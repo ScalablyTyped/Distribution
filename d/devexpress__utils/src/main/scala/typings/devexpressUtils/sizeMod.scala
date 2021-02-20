@@ -5,14 +5,14 @@ import typings.devexpressUtils.typesMod.ICloneable
 import typings.devexpressUtils.typesMod.IEquatable
 import typings.devexpressUtils.typesMod.ISupportCopyFrom
 import typings.devexpressUtils.typesMod.SimpleConverter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@devexpress/utils/lib/geometry/size", JSImport.Namespace)
-@js.native
-object sizeMod extends js.Object {
+object sizeMod {
   
+  @JSImport("@devexpress/utils/lib/geometry/size", "Size")
   @js.native
   class Size protected ()
     extends ISize
@@ -32,15 +32,22 @@ object sizeMod extends js.Object {
     def offset(offsetWidth: Double, offsetHeight: Double): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Size extends js.Object {
+  object Size {
     
+    @JSImport("@devexpress/utils/lib/geometry/size", "Size.empty")
+    @js.native
     def empty(): Size = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/size", "Size.equals")
+    @js.native
     def equals(a: ISize, b: ISize): Boolean = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/size", "Size.fromNumber")
+    @js.native
     def fromNumber(num: Double): Size = js.native
     
+    @JSImport("@devexpress/utils/lib/geometry/size", "Size.initByCommonAction")
+    @js.native
     def initByCommonAction(
       action: js.Function2[
           /* directAdp */ js.Function1[/* s */ ISize, Double], 

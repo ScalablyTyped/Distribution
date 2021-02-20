@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientContent.gapi.client.content
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProductProductDetail extends js.Object {
+trait ProductProductDetail extends StObject {
   
   /** The name of the product detail. */
   var attributeName: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object ProductProductDetail {
   }
   
   @scala.inline
-  implicit class ProductProductDetailOps[Self <: ProductProductDetail] (val x: Self) extends AnyVal {
+  implicit class ProductProductDetailMutableBuilder[Self <: ProductProductDetail] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
     
     @scala.inline
-    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
+    def setSectionName(value: String): Self = StObject.set(x, "sectionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributeValue(value: String): Self = this.set("attributeValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAttributeValue: Self = this.set("attributeValue", js.undefined)
-    
-    @scala.inline
-    def setSectionName(value: String): Self = this.set("sectionName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSectionName: Self = this.set("sectionName", js.undefined)
+    def setSectionNameUndefined: Self = StObject.set(x, "sectionName", js.undefined)
   }
 }

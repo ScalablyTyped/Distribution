@@ -1,11 +1,12 @@
 package typings.workerbApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
   
   /**
     *  A number number which specifies how many times the script runner will try to find the target element. The default value is 10.
@@ -26,30 +27,18 @@ object QueryOptions {
   }
   
   @scala.inline
-  implicit class QueryOptionsOps[Self <: QueryOptions] (val x: Self) extends AnyVal {
+  implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNumberOfTries(value: Double): Self = StObject.set(x, "numberOfTries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberOfTriesUndefined: Self = StObject.set(x, "numberOfTries", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberOfTries(value: Double): Self = this.set("numberOfTries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberOfTries: Self = this.set("numberOfTries", js.undefined)
-    
-    @scala.inline
-    def setRetryDuration(value: Double): Self = this.set("retryDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryDuration: Self = this.set("retryDuration", js.undefined)
+    def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
   }
 }

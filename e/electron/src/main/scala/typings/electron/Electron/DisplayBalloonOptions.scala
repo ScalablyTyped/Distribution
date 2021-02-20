@@ -5,12 +5,13 @@ import typings.electron.electronStrings.error
 import typings.electron.electronStrings.info
 import typings.electron.electronStrings.none
 import typings.electron.electronStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayBalloonOptions extends js.Object {
+trait DisplayBalloonOptions extends StObject {
   
   var content: String = js.native
   
@@ -52,54 +53,42 @@ object DisplayBalloonOptions {
   }
   
   @scala.inline
-  implicit class DisplayBalloonOptionsOps[Self <: DisplayBalloonOptions] (val x: Self) extends AnyVal {
+  implicit class DisplayBalloonOptionsMutableBuilder[Self <: DisplayBalloonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconType(value: none | info | warning | error | custom): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setIcon(value: NativeImage_ | String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setLargeIcon(value: Boolean): Self = StObject.set(x, "largeIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setLargeIconUndefined: Self = StObject.set(x, "largeIcon", js.undefined)
     
     @scala.inline
-    def setIconType(value: none | info | warning | error | custom): Self = this.set("iconType", value.asInstanceOf[js.Any])
+    def setNoSound(value: Boolean): Self = StObject.set(x, "noSound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIconType: Self = this.set("iconType", js.undefined)
+    def setNoSoundUndefined: Self = StObject.set(x, "noSound", js.undefined)
     
     @scala.inline
-    def setLargeIcon(value: Boolean): Self = this.set("largeIcon", value.asInstanceOf[js.Any])
+    def setRespectQuietTime(value: Boolean): Self = StObject.set(x, "respectQuietTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLargeIcon: Self = this.set("largeIcon", js.undefined)
+    def setRespectQuietTimeUndefined: Self = StObject.set(x, "respectQuietTime", js.undefined)
     
     @scala.inline
-    def setNoSound(value: Boolean): Self = this.set("noSound", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoSound: Self = this.set("noSound", js.undefined)
-    
-    @scala.inline
-    def setRespectQuietTime(value: Boolean): Self = this.set("respectQuietTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRespectQuietTime: Self = this.set("respectQuietTime", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

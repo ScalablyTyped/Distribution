@@ -1,11 +1,12 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashMatrix extends js.Object {
+trait FlashMatrix extends StObject {
   
   var a: Double = js.native
   
@@ -28,36 +29,24 @@ object FlashMatrix {
   }
   
   @scala.inline
-  implicit class FlashMatrixOps[Self <: FlashMatrix] (val x: Self) extends AnyVal {
+  implicit class FlashMatrixMutableBuilder[Self <: FlashMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setA(value: Double): Self = this.set("a", value.asInstanceOf[js.Any])
+    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setB(value: Double): Self = this.set("b", value.asInstanceOf[js.Any])
+    def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: Double): Self = this.set("c", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setD(value: Double): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTx(value: Double): Self = this.set("tx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTy(value: Double): Self = this.set("ty", value.asInstanceOf[js.Any])
+    def setTy(value: Double): Self = StObject.set(x, "ty", value.asInstanceOf[js.Any])
   }
 }

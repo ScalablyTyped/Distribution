@@ -8,14 +8,14 @@ import typings.tslint.ruleMod.RuleFailure
 import typings.tslint.ruleMod.RuleSeverity
 import typings.tslint.walkerMod.WalkContext
 import typings.typescript.mod.SourceFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint/lib/language/rule/abstractRule", JSImport.Namespace)
-@js.native
-object abstractRuleMod extends js.Object {
+object abstractRuleMod {
   
+  @JSImport("tslint/lib/language/rule/abstractRule", "AbstractRule")
   @js.native
   abstract class AbstractRule protected () extends IRule {
     def this(options: IOptions) = this()
@@ -48,10 +48,17 @@ object abstractRuleMod extends js.Object {
     val ruleSeverity: RuleSeverity = js.native
   }
   /* static members */
-  @js.native
-  object AbstractRule extends js.Object {
+  object AbstractRule {
     
-    var metadata: IRuleMetadata = js.native
+    @JSImport("tslint/lib/language/rule/abstractRule", "AbstractRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("tslint/lib/language/rule/abstractRule", "AbstractRule.metadata")
+    @js.native
+    def metadata: IRuleMetadata = js.native
+    @scala.inline
+    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   type NoInfer[T] = T with typings.tslint.tslintStrings.NoInfer with TopLevel[T]

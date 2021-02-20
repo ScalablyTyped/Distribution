@@ -1,13 +1,14 @@
 package typings.konva
 
 import typings.konva.nodeMod.Filter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("konva/types/filters/Brighten", JSImport.Namespace)
-@js.native
-object brightenMod extends js.Object {
+object brightenMod {
   
+  @JSImport("konva/types/filters/Brighten", "Brighten")
+  @js.native
   val Brighten: Filter = js.native
 }

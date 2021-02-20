@@ -1,6 +1,7 @@
 package typings.agGrid.mainMod
 
 import typings.agGrid.beansMod.Beans
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,15 @@ class CellComp protected ()
   ) = this()
 }
 /* static members */
-@JSImport("ag-grid/dist/lib/main", "CellComp")
-@js.native
-object CellComp extends js.Object {
+object CellComp {
   
-  var DOM_DATA_KEY_CELL_COMP: String = js.native
+  @JSImport("ag-grid/dist/lib/main", "CellComp")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ag-grid/dist/lib/main", "CellComp.DOM_DATA_KEY_CELL_COMP")
+  @js.native
+  def DOM_DATA_KEY_CELL_COMP: String = js.native
+  @scala.inline
+  def DOM_DATA_KEY_CELL_COMP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_DATA_KEY_CELL_COMP")(x.asInstanceOf[js.Any])
 }

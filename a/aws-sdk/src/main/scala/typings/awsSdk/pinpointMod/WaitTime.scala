@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaitTime extends js.Object {
+trait WaitTime extends StObject {
   
   /**
     * The amount of time to wait, as a duration in ISO 8601 format, before determining whether the activity's conditions have been met or moving participants to the next activity in the journey.
@@ -26,30 +27,18 @@ object WaitTime {
   }
   
   @scala.inline
-  implicit class WaitTimeOps[Self <: WaitTime] (val x: Self) extends AnyVal {
+  implicit class WaitTimeMutableBuilder[Self <: WaitTime] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWaitFor(value: string): Self = StObject.set(x, "WaitFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWaitForUndefined: Self = StObject.set(x, "WaitFor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWaitUntil(value: string): Self = StObject.set(x, "WaitUntil", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitFor(value: string): Self = this.set("WaitFor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitFor: Self = this.set("WaitFor", js.undefined)
-    
-    @scala.inline
-    def setWaitUntil(value: string): Self = this.set("WaitUntil", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaitUntil: Self = this.set("WaitUntil", js.undefined)
+    def setWaitUntilUndefined: Self = StObject.set(x, "WaitUntil", js.undefined)
   }
 }

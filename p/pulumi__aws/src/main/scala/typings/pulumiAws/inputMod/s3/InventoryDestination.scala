@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryDestination extends js.Object {
+trait InventoryDestination extends StObject {
   
   /**
     * The S3 bucket configuration where inventory results are published (documented below).
@@ -22,21 +23,9 @@ object InventoryDestination {
   }
   
   @scala.inline
-  implicit class InventoryDestinationOps[Self <: InventoryDestination] (val x: Self) extends AnyVal {
+  implicit class InventoryDestinationMutableBuilder[Self <: InventoryDestination] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBucket(value: Input[InventoryDestinationBucket]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    def setBucket(value: Input[InventoryDestinationBucket]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
   }
 }

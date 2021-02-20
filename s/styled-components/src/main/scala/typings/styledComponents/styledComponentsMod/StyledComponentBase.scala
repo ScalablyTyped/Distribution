@@ -183,13 +183,14 @@ import typings.styledComponents.styledComponentsStrings.video
 import typings.styledComponents.styledComponentsStrings.view
 import typings.styledComponents.styledComponentsStrings.wbr
 import typings.styledComponents.styledComponentsStrings.webview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent styled-components.styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
 @js.native
-trait StyledComponentBase[C /* <: String | ComponentType[_] */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ String */] extends js.Object {
+trait StyledComponentBase[C /* <: String | ComponentType[_] */, T /* <: js.Object */, O /* <: js.Object */, A /* <: /* keyof any */ String */] extends StObject {
   
   // add our own fake call signature to implement the polymorphic 'as' prop
   def apply(props: (StyledComponentProps[C, T, O, A]) with ForwardedAs): ReactElement = js.native

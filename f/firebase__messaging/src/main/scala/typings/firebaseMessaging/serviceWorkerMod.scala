@@ -4,18 +4,14 @@ import typings.std.EventInit
 import typings.std.PushManager
 import typings.std.PushSubscription
 import typings.std.ServiceWorkerRegistration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/messaging/dist/testing/fakes/service-worker", JSImport.Namespace)
-@js.native
-object serviceWorkerMod extends js.Object {
+object serviceWorkerMod {
   
-  def mockServiceWorker(): Unit = js.native
-  
-  def restoreServiceWorker(): Unit = js.native
-  
+  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakeEvent")
   @js.native
   class FakeEvent protected () extends ExtendableEvent {
     def this(`type`: String) = this()
@@ -35,12 +31,7 @@ object serviceWorkerMod extends js.Object {
     def waitUntil(): Unit = js.native
   }
   
-  @js.native
-  trait FakePushManager extends PushManager {
-    
-    var subscription: js.Any = js.native
-  }
-  
+  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakePushSubscription")
   @js.native
   class FakePushSubscription () extends PushSubscription {
     
@@ -52,6 +43,7 @@ object serviceWorkerMod extends js.Object {
     var p256: String = js.native
   }
   
+  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "FakeServiceWorkerRegistration")
   @js.native
   class FakeServiceWorkerRegistration () extends ServiceWorkerRegistration {
     
@@ -77,5 +69,19 @@ object serviceWorkerMod extends js.Object {
     
     @JSName("waiting")
     var waiting_FakeServiceWorkerRegistration: Null = js.native
+  }
+  
+  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "mockServiceWorker")
+  @js.native
+  def mockServiceWorker(): Unit = js.native
+  
+  @JSImport("@firebase/messaging/dist/testing/fakes/service-worker", "restoreServiceWorker")
+  @js.native
+  def restoreServiceWorker(): Unit = js.native
+  
+  @js.native
+  trait FakePushManager extends PushManager {
+    
+    var subscription: js.Any = js.native
   }
 }

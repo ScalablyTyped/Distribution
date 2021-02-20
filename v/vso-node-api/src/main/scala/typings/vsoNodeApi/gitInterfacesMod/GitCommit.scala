@@ -1,6 +1,7 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
 import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,24 +38,12 @@ object GitCommit {
   }
   
   @scala.inline
-  implicit class GitCommitOps[Self <: GitCommit] (val x: Self) extends AnyVal {
+  implicit class GitCommitMutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPush(value: GitPushRef): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPush(value: GitPushRef): Self = this.set("push", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTreeId(value: String): Self = this.set("treeId", value.asInstanceOf[js.Any])
+    def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
   }
 }

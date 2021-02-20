@@ -1,12 +1,13 @@
 package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DimensionMemberSetRequest extends js.Object {
+trait DimensionMemberSetRequest extends StObject {
   
   /**
     * Get the filter expression for this request.Expressions are represented by separate objects. If none
@@ -114,51 +115,39 @@ object DimensionMemberSetRequest {
   }
   
   @scala.inline
-  implicit class DimensionMemberSetRequestOps[Self <: DimensionMemberSetRequest] (val x: Self) extends AnyVal {
+  implicit class DimensionMemberSetRequestMutableBuilder[Self <: DimensionMemberSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetResultPageBoundaries(value: () => js.Any): Self = StObject.set(x, "getResultPageBoundaries", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFilterExpression(value: () => FilterExpression): Self = this.set("getFilterExpression", js.Any.fromFunction0(value))
+    def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetResultPageBoundaries(value: () => js.Any): Self = this.set("getResultPageBoundaries", js.Any.fromFunction0(value))
+    def setGetURIToDimensionMemberEntitySet(value: String => String): Self = StObject.set(x, "getURIToDimensionMemberEntitySet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSortExpression(value: () => SortExpression): Self = this.set("getSortExpression", js.Any.fromFunction0(value))
+    def setGetURIToDimensionMemberEntries(value: String => String): Self = StObject.set(x, "getURIToDimensionMemberEntries", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURIQueryOptionValue(value: String => String): Self = this.set("getURIQueryOptionValue", js.Any.fromFunction1(value))
+    def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURIToDimensionMemberEntitySet(value: String => String): Self = this.set("getURIToDimensionMemberEntitySet", js.Any.fromFunction1(value))
+    def setSetParameterizationRequest(value: js.Any => Unit): Self = StObject.set(x, "setParameterizationRequest", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetURIToDimensionMemberEntries(value: String => String): Self = this.set("getURIToDimensionMemberEntries", js.Any.fromFunction1(value))
+    def setSetRequestOptions(value: Boolean => Unit): Self = StObject.set(x, "setRequestOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetFilterExpression(value: FilterExpression => Unit): Self = this.set("setFilterExpression", js.Any.fromFunction1(value))
+    def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = StObject.set(x, "setResultPageBoundaries", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetParameterizationRequest(value: js.Any => Unit): Self = this.set("setParameterizationRequest", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetRequestOptions(value: Boolean => Unit): Self = this.set("setRequestOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = this.set("setResultPageBoundaries", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetSortExpression(value: SortExpression => Unit): Self = this.set("setSortExpression", js.Any.fromFunction1(value))
+    def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
   }
 }

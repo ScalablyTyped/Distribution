@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Featurization extends js.Object {
+trait Featurization extends StObject {
   
   /**
     * The name of the schema attribute that specifies the data field to be featurized. Amazon Forecast supports the target field of the TARGET_TIME_SERIES and the RELATED_TIME_SERIES datasets. For example, for the RETAIL domain, the target is demand, and for the CUSTOM domain, the target is target_value. For more information, see howitworks-missing-values.
@@ -26,30 +27,18 @@ object Featurization {
   }
   
   @scala.inline
-  implicit class FeaturizationOps[Self <: Featurization] (val x: Self) extends AnyVal {
+  implicit class FeaturizationMutableBuilder[Self <: Featurization] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributeName(value: Name): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFeaturizationPipeline(value: FeaturizationPipeline): Self = StObject.set(x, "FeaturizationPipeline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeaturizationPipelineUndefined: Self = StObject.set(x, "FeaturizationPipeline", js.undefined)
     
     @scala.inline
-    def setAttributeName(value: Name): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFeaturizationPipelineVarargs(value: FeaturizationMethod*): Self = this.set("FeaturizationPipeline", js.Array(value :_*))
-    
-    @scala.inline
-    def setFeaturizationPipeline(value: FeaturizationPipeline): Self = this.set("FeaturizationPipeline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFeaturizationPipeline: Self = this.set("FeaturizationPipeline", js.undefined)
+    def setFeaturizationPipelineVarargs(value: FeaturizationMethod*): Self = StObject.set(x, "FeaturizationPipeline", js.Array(value :_*))
   }
 }

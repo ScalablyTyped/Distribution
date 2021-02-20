@@ -1,11 +1,12 @@
 package typings.atom.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeProcessOptions extends js.Object {
+trait NodeProcessOptions extends StObject {
   
   /** The array of arguments to pass to the command. */
   var args: js.UndefOr[js.Array[String]] = js.native
@@ -40,54 +41,42 @@ object NodeProcessOptions {
   }
   
   @scala.inline
-  implicit class NodeProcessOptionsOps[Self <: NodeProcessOptions] (val x: Self) extends AnyVal {
+  implicit class NodeProcessOptionsMutableBuilder[Self <: NodeProcessOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
     @scala.inline
-    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    def setExit(value: /* code */ Double => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("args", js.undefined)
+    def setOptions(value: SpawnProcessOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExit(value: /* code */ Double => Unit): Self = this.set("exit", js.Any.fromFunction1(value))
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def deleteExit: Self = this.set("exit", js.undefined)
+    def setStderr(value: /* data */ String => Unit): Self = StObject.set(x, "stderr", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOptions(value: SpawnProcessOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
+    def setStdout(value: /* data */ String => Unit): Self = StObject.set(x, "stdout", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStderr(value: /* data */ String => Unit): Self = this.set("stderr", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStderr: Self = this.set("stderr", js.undefined)
-    
-    @scala.inline
-    def setStdout(value: /* data */ String => Unit): Self = this.set("stdout", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteStdout: Self = this.set("stdout", js.undefined)
+    def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
   }
 }

@@ -5,6 +5,7 @@ import typings.stripe.stripeStrings.jcb_
 import typings.stripe.stripeStrings.mastercard_
 import typings.stripe.stripeStrings.unknown_
 import typings.stripe.stripeStrings.visa_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.stripe.stripeStrings.visa_
   - typings.stripe.stripeStrings.unknown_
 */
-trait CardBrand extends js.Object
+trait CardBrand extends StObject
 object CardBrand {
   
   @scala.inline

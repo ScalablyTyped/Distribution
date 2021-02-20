@@ -1,11 +1,12 @@
 package typings.awsSdk.xrayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SamplingRule extends js.Object {
+trait SamplingRule extends StObject {
   
   /**
     * Matches attributes derived from the request.
@@ -92,66 +93,54 @@ object SamplingRule {
   }
   
   @scala.inline
-  implicit class SamplingRuleOps[Self <: SamplingRule] (val x: Self) extends AnyVal {
+  implicit class SamplingRuleMutableBuilder[Self <: SamplingRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFixedRate(value: FixedRate): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFixedRate(value: FixedRate): Self = this.set("FixedRate", value.asInstanceOf[js.Any])
+    def setHTTPMethod(value: HTTPMethod): Self = StObject.set(x, "HTTPMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHTTPMethod(value: HTTPMethod): Self = this.set("HTTPMethod", value.asInstanceOf[js.Any])
+    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: Host): Self = this.set("Host", value.asInstanceOf[js.Any])
+    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: Priority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setReservoirSize(value: ReservoirSize): Self = StObject.set(x, "ReservoirSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReservoirSize(value: ReservoirSize): Self = this.set("ReservoirSize", value.asInstanceOf[js.Any])
+    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
+    def setRuleARN(value: String): Self = StObject.set(x, "RuleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    def setRuleARNUndefined: Self = StObject.set(x, "RuleARN", js.undefined)
     
     @scala.inline
-    def setServiceType(value: ServiceType): Self = this.set("ServiceType", value.asInstanceOf[js.Any])
+    def setRuleName(value: RuleName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setURLPath(value: URLPath): Self = this.set("URLPath", value.asInstanceOf[js.Any])
+    def setRuleNameUndefined: Self = StObject.set(x, "RuleName", js.undefined)
     
     @scala.inline
-    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
+    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: AttributeMap): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    def setServiceType(value: ServiceType): Self = StObject.set(x, "ServiceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    def setURLPath(value: URLPath): Self = StObject.set(x, "URLPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleARN(value: String): Self = this.set("RuleARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleARN: Self = this.set("RuleARN", js.undefined)
-    
-    @scala.inline
-    def setRuleName(value: RuleName): Self = this.set("RuleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRuleName: Self = this.set("RuleName", js.undefined)
+    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.moment.momentMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MomentParsingFlags extends js.Object {
+trait MomentParsingFlags extends StObject {
   
   var charsLeftOver: Double = js.native
   
@@ -51,69 +52,57 @@ object MomentParsingFlags {
   }
   
   @scala.inline
-  implicit class MomentParsingFlagsOps[Self <: MomentParsingFlags] (val x: Self) extends AnyVal {
+  implicit class MomentParsingFlagsMutableBuilder[Self <: MomentParsingFlags] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharsLeftOver(value: Double): Self = StObject.set(x, "charsLeftOver", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInvalidFormat(value: Boolean): Self = StObject.set(x, "invalidFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharsLeftOver(value: Double): Self = this.set("charsLeftOver", value.asInstanceOf[js.Any])
+    def setInvalidMonth(value: String): Self = StObject.set(x, "invalidMonth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setInvalidMonthNull: Self = StObject.set(x, "invalidMonth", null)
     
     @scala.inline
-    def setInvalidFormat(value: Boolean): Self = this.set("invalidFormat", value.asInstanceOf[js.Any])
+    def setIso(value: Boolean): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIso(value: Boolean): Self = this.set("iso", value.asInstanceOf[js.Any])
+    def setMeridiem(value: String): Self = StObject.set(x, "meridiem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNullInput(value: Boolean): Self = this.set("nullInput", value.asInstanceOf[js.Any])
+    def setMeridiemNull: Self = StObject.set(x, "meridiem", null)
     
     @scala.inline
-    def setOverflow(value: Double): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    def setNullInput(value: Boolean): Self = StObject.set(x, "nullInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedDatePartsVarargs(value: js.Any*): Self = this.set("parsedDateParts", js.Array(value :_*))
+    def setOverflow(value: Double): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsedDateParts(value: js.Array[_]): Self = this.set("parsedDateParts", value.asInstanceOf[js.Any])
+    def setParsedDateParts(value: js.Array[_]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusedInputVarargs(value: String*): Self = this.set("unusedInput", js.Array(value :_*))
+    def setParsedDatePartsVarargs(value: js.Any*): Self = StObject.set(x, "parsedDateParts", js.Array(value :_*))
     
     @scala.inline
-    def setUnusedInput(value: js.Array[String]): Self = this.set("unusedInput", value.asInstanceOf[js.Any])
+    def setUnusedInput(value: js.Array[String]): Self = StObject.set(x, "unusedInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnusedTokensVarargs(value: String*): Self = this.set("unusedTokens", js.Array(value :_*))
+    def setUnusedInputVarargs(value: String*): Self = StObject.set(x, "unusedInput", js.Array(value :_*))
     
     @scala.inline
-    def setUnusedTokens(value: js.Array[String]): Self = this.set("unusedTokens", value.asInstanceOf[js.Any])
+    def setUnusedTokens(value: js.Array[String]): Self = StObject.set(x, "unusedTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUserInvalidated(value: Boolean): Self = this.set("userInvalidated", value.asInstanceOf[js.Any])
+    def setUnusedTokensVarargs(value: String*): Self = StObject.set(x, "unusedTokens", js.Array(value :_*))
     
     @scala.inline
-    def setInvalidMonth(value: String): Self = this.set("invalidMonth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInvalidMonthNull: Self = this.set("invalidMonth", null)
-    
-    @scala.inline
-    def setMeridiem(value: String): Self = this.set("meridiem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeridiemNull: Self = this.set("meridiem", null)
+    def setUserInvalidated(value: Boolean): Self = StObject.set(x, "userInvalidated", value.asInstanceOf[js.Any])
   }
 }

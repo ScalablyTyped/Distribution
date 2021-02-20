@@ -1,5 +1,6 @@
 package typings.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.web
   - typings.reactNativeFbsdk.reactNativeFbsdkStrings.feed
 */
-trait ShareDialogMode extends js.Object
+trait ShareDialogMode extends StObject
 object ShareDialogMode {
   
   @scala.inline

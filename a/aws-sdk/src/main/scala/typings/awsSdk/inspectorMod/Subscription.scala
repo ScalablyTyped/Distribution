@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Subscription extends js.Object {
+trait Subscription extends StObject {
   
   /**
     * The list of existing event subscriptions.
@@ -31,30 +32,18 @@ object Subscription {
   }
   
   @scala.inline
-  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventSubscriptions(value: EventSubscriptionList): Self = StObject.set(x, "eventSubscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventSubscriptionsVarargs(value: EventSubscription*): Self = StObject.set(x, "eventSubscriptions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventSubscriptionsVarargs(value: EventSubscription*): Self = this.set("eventSubscriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setEventSubscriptions(value: EventSubscriptionList): Self = this.set("eventSubscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceArn(value: Arn): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopicArn(value: Arn): Self = this.set("topicArn", value.asInstanceOf[js.Any])
+    def setTopicArn(value: Arn): Self = StObject.set(x, "topicArn", value.asInstanceOf[js.Any])
   }
 }

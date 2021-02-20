@@ -1,12 +1,13 @@
 package typings.jpm.anon
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentScriptOptions extends js.Object {
+trait ContentScriptOptions extends StObject {
   
   var contentScript: js.UndefOr[String | js.Array[String]] = js.native
   
@@ -27,54 +28,42 @@ object ContentScriptOptions {
   }
   
   @scala.inline
-  implicit class ContentScriptOptionsOps[Self <: ContentScriptOptions] (val x: Self) extends AnyVal {
+  implicit class ContentScriptOptionsMutableBuilder[Self <: ContentScriptOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentScript(value: String | js.Array[String]): Self = StObject.set(x, "contentScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentScriptFile(value: String | js.Array[String]): Self = StObject.set(x, "contentScriptFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentScriptFileUndefined: Self = StObject.set(x, "contentScriptFile", js.undefined)
     
     @scala.inline
-    def setContentScriptVarargs(value: String*): Self = this.set("contentScript", js.Array(value :_*))
+    def setContentScriptFileVarargs(value: String*): Self = StObject.set(x, "contentScriptFile", js.Array(value :_*))
     
     @scala.inline
-    def setContentScript(value: String | js.Array[String]): Self = this.set("contentScript", value.asInstanceOf[js.Any])
+    def setContentScriptOptions(value: js.Object): Self = StObject.set(x, "contentScriptOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentScript: Self = this.set("contentScript", js.undefined)
+    def setContentScriptOptionsUndefined: Self = StObject.set(x, "contentScriptOptions", js.undefined)
     
     @scala.inline
-    def setContentScriptFileVarargs(value: String*): Self = this.set("contentScriptFile", js.Array(value :_*))
+    def setContentScriptUndefined: Self = StObject.set(x, "contentScript", js.undefined)
     
     @scala.inline
-    def setContentScriptFile(value: String | js.Array[String]): Self = this.set("contentScriptFile", value.asInstanceOf[js.Any])
+    def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
     
     @scala.inline
-    def deleteContentScriptFile: Self = this.set("contentScriptFile", js.undefined)
+    def setOnError(value: /* error */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setContentScriptOptions(value: js.Object): Self = this.set("contentScriptOptions", value.asInstanceOf[js.Any])
+    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def deleteContentScriptOptions: Self = this.set("contentScriptOptions", js.undefined)
+    def setOnMessage(value: /* message */ String => _): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnError(value: /* error */ Error => _): Self = this.set("onError", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnError: Self = this.set("onError", js.undefined)
-    
-    @scala.inline
-    def setOnMessage(value: /* message */ String => _): Self = this.set("onMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+    def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
   }
 }

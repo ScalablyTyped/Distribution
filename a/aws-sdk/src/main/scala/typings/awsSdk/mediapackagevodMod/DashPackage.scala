@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashPackage extends js.Object {
+trait DashPackage extends StObject {
   
   /**
     * A list of DASH manifest configurations.
@@ -42,51 +43,39 @@ object DashPackage {
   }
   
   @scala.inline
-  implicit class DashPackageOps[Self <: DashPackage] (val x: Self) extends AnyVal {
+  implicit class DashPackageMutableBuilder[Self <: DashPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashManifests(value: listOfDashManifest): Self = StObject.set(x, "DashManifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashManifestsVarargs(value: DashManifest*): Self = StObject.set(x, "DashManifests", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryption(value: DashEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashManifestsVarargs(value: DashManifest*): Self = this.set("DashManifests", js.Array(value :_*))
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def setDashManifests(value: listOfDashManifest): Self = this.set("DashManifests", value.asInstanceOf[js.Any])
+    def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = StObject.set(x, "PeriodTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: DashEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setPeriodTriggersUndefined: Self = StObject.set(x, "PeriodTriggers", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value :_*))
     
     @scala.inline
-    def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = this.set("PeriodTriggers", js.Array(value :_*))
+    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = this.set("PeriodTriggers", value.asInstanceOf[js.Any])
+    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
     @scala.inline
-    def deletePeriodTriggers: Self = this.set("PeriodTriggers", js.undefined)
+    def setSegmentTemplateFormat(value: SegmentTemplateFormat): Self = StObject.set(x, "SegmentTemplateFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
-    
-    @scala.inline
-    def setSegmentTemplateFormat(value: SegmentTemplateFormat): Self = this.set("SegmentTemplateFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentTemplateFormat: Self = this.set("SegmentTemplateFormat", js.undefined)
+    def setSegmentTemplateFormatUndefined: Self = StObject.set(x, "SegmentTemplateFormat", js.undefined)
   }
 }

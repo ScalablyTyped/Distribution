@@ -1,11 +1,12 @@
 package typings.braintree.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chargeback extends js.Object {
+trait Chargeback extends StObject {
   
   var Chargeback: String = js.native
 }
@@ -18,21 +19,9 @@ object Chargeback {
   }
   
   @scala.inline
-  implicit class ChargebackOps[Self <: Chargeback] (val x: Self) extends AnyVal {
+  implicit class ChargebackMutableBuilder[Self <: Chargeback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setChargeback(value: String): Self = this.set("Chargeback", value.asInstanceOf[js.Any])
+    def setChargeback(value: String): Self = StObject.set(x, "Chargeback", value.asInstanceOf[js.Any])
   }
 }

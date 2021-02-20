@@ -1,11 +1,12 @@
 package typings.durandal
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalNavigationOptions extends js.Object {
+trait DurandalNavigationOptions extends StObject {
   
   var replace: Boolean = js.native
   
@@ -20,24 +21,12 @@ object DurandalNavigationOptions {
   }
   
   @scala.inline
-  implicit class DurandalNavigationOptionsOps[Self <: DurandalNavigationOptions] (val x: Self) extends AnyVal {
+  implicit class DurandalNavigationOptionsMutableBuilder[Self <: DurandalNavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReplace(value: Boolean): Self = this.set("replace", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrigger(value: Boolean): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    def setTrigger(value: Boolean): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
   }
 }

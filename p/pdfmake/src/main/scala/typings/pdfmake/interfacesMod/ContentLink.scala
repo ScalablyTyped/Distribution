@@ -1,11 +1,12 @@
 package typings.pdfmake.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContentLink extends js.Object {
+trait ContentLink extends StObject {
   
   var link: js.UndefOr[String] = js.native
   
@@ -22,36 +23,24 @@ object ContentLink {
   }
   
   @scala.inline
-  implicit class ContentLinkOps[Self <: ContentLink] (val x: Self) extends AnyVal {
+  implicit class ContentLinkMutableBuilder[Self <: ContentLink] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLinkToDestination(value: String): Self = StObject.set(x, "linkToDestination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkToDestinationUndefined: Self = StObject.set(x, "linkToDestination", js.undefined)
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setLinkToPage(value: Double): Self = StObject.set(x, "linkToPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkToPageUndefined: Self = StObject.set(x, "linkToPage", js.undefined)
     
     @scala.inline
-    def setLinkToDestination(value: String): Self = this.set("linkToDestination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkToDestination: Self = this.set("linkToDestination", js.undefined)
-    
-    @scala.inline
-    def setLinkToPage(value: Double): Self = this.set("linkToPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLinkToPage: Self = this.set("linkToPage", js.undefined)
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
   }
 }

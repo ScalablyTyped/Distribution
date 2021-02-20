@@ -1,18 +1,19 @@
 package typings.azureArmResource.mod
 
 import typings.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "FeatureModels")
-@js.native
-object FeatureModels extends js.Object {
+object FeatureModels {
   
+  @JSImport("azure-arm-resource", "FeatureModels.BaseResource")
   @js.native
   class BaseResource ()
-    extends typings.msRestAzure.mod.BaseResource
+    extends typings.azureArmResource.modelsMod.BaseResource
   
+  @JSImport("azure-arm-resource", "FeatureModels.CloudError")
   @js.native
   class CloudError protected ()
     extends typings.azureArmResource.modelsMod.CloudError {

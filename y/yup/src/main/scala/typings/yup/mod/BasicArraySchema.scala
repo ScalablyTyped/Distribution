@@ -4,6 +4,7 @@ import typings.std.Record
 import typings.yup.anon.Max
 import typings.yup.anon.Min
 import typings.yup.anon.Values
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

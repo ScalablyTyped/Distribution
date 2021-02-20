@@ -1,21 +1,38 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ValidationResult. */
-trait IValidationResult extends js.Object {
+@js.native
+trait IValidationResult extends StObject {
+  
   /** ValidationResult validationErrors */
-  var validationErrors: js.UndefOr[js.Array[IValidationError] | Null] = js.undefined
+  var validationErrors: js.UndefOr[js.Array[IValidationError] | Null] = js.native
 }
-
 object IValidationResult {
+  
   @scala.inline
-  def apply(validationErrors: js.UndefOr[Null | js.Array[IValidationError]] = js.undefined): IValidationResult = {
+  def apply(): IValidationResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validationErrors)) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidationResult]
   }
+  
+  @scala.inline
+  implicit class IValidationResultMutableBuilder[Self <: IValidationResult] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setValidationErrors(value: js.Array[IValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValidationErrorsNull: Self = StObject.set(x, "validationErrors", null)
+    
+    @scala.inline
+    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+    
+    @scala.inline
+    def setValidationErrorsVarargs(value: IValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+  }
 }
-

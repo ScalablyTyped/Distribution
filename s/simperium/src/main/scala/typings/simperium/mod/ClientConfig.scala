@@ -1,12 +1,13 @@
 package typings.simperium.mod
 
 import typings.std.WebSocket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientConfig[Buckets] extends js.Object {
+trait ClientConfig[Buckets] extends StObject {
   
   def ghostStoreProvider[Name /* <: /* keyof Buckets */ String */](
     bucket: Bucket[
@@ -60,19 +61,7 @@ object ClientConfig {
   }
   
   @scala.inline
-  implicit class ClientConfigOps[Self <: ClientConfig[_], Buckets] (val x: Self with ClientConfig[Buckets]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ClientConfigMutableBuilder[Self <: ClientConfig[_], Buckets] (val x: Self with ClientConfig[Buckets]) extends AnyVal {
     
     @scala.inline
     def setGhostStoreProvider(
@@ -83,10 +72,10 @@ object ClientConfig {
         ] => GhostStore[
           /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any
         ]
-    ): Self = this.set("ghostStoreProvider", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "ghostStoreProvider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHeartbeatInterval(value: Double): Self = this.set("heartbeatInterval", value.asInstanceOf[js.Any])
+    def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setObjectStoreProvider(
@@ -98,9 +87,9 @@ object ClientConfig {
           /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
           js.Object
         ]
-    ): Self = this.set("objectStoreProvider", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "objectStoreProvider", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWebsocketClientProvider(value: String => WebSocket): Self = this.set("websocketClientProvider", js.Any.fromFunction1(value))
+    def setWebsocketClientProvider(value: String => WebSocket): Self = StObject.set(x, "websocketClientProvider", js.Any.fromFunction1(value))
   }
 }

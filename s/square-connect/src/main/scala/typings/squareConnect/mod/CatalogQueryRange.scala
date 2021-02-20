@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogQueryRange")
 @js.native
-class CatalogQueryRange () extends js.Object {
+class CatalogQueryRange () extends StObject {
   
   /**
     * The desired maximum value for the search attribute (inclusive).

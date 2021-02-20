@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message defining a custom regular expression.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2Regex extends js.Object {
+trait SchemaGooglePrivacyDlpV2Regex extends StObject {
   
   /**
     * The index of the submatch to extract as findings. When not specified, the
@@ -32,33 +33,21 @@ object SchemaGooglePrivacyDlpV2Regex {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RegexOps[Self <: SchemaGooglePrivacyDlpV2Regex] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2RegexMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Regex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupIndexes(value: js.Array[Double]): Self = StObject.set(x, "groupIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupIndexesUndefined: Self = StObject.set(x, "groupIndexes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupIndexesVarargs(value: Double*): Self = StObject.set(x, "groupIndexes", js.Array(value :_*))
     
     @scala.inline
-    def setGroupIndexesVarargs(value: Double*): Self = this.set("groupIndexes", js.Array(value :_*))
+    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupIndexes(value: js.Array[Double]): Self = this.set("groupIndexes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroupIndexes: Self = this.set("groupIndexes", js.undefined)
-    
-    @scala.inline
-    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePattern: Self = this.set("pattern", js.undefined)
+    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
   }
 }

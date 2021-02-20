@@ -8,12 +8,13 @@ import typings.mongodb.mongodbNumbers.`-1`
 import typings.mongodb.mongodbNumbers.`1`
 import typings.mongodb.mongodbStrings._empty
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateQuery[TSchema] extends js.Object {
+trait UpdateQuery[TSchema] extends StObject {
   
   /** https://docs.mongodb.com/manual/reference/operator/update-array/ */
   @JSName("$addToSet")
@@ -74,108 +75,96 @@ object UpdateQuery {
   }
   
   @scala.inline
-  implicit class UpdateQueryOps[Self <: UpdateQuery[_], TSchema] (val x: Self with UpdateQuery[TSchema]) extends AnyVal {
+  implicit class UpdateQueryMutableBuilder[Self <: UpdateQuery[_], TSchema] (val x: Self with UpdateQuery[TSchema]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$addToSet(value: SetFields[TSchema]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$addToSetUndefined: Self = StObject.set(x, "$addToSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$bit(value: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]]): Self = StObject.set(x, "$bit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$addToSet(value: SetFields[TSchema]): Self = this.set("$addToSet", value.asInstanceOf[js.Any])
+    def set$bitUndefined: Self = StObject.set(x, "$bit", js.undefined)
     
     @scala.inline
-    def delete$addToSet: Self = this.set("$addToSet", js.undefined)
+    def set$currentDate(value: OnlyFieldsOfType[TSchema, Date, `true` | Type]): Self = StObject.set(x, "$currentDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$bit(value: StringDictionary[typings.mongodb.mongodbStrings.UpdateQuery with TopLevel[js.Any]]): Self = this.set("$bit", value.asInstanceOf[js.Any])
+    def set$currentDateUndefined: Self = StObject.set(x, "$currentDate", js.undefined)
     
     @scala.inline
-    def delete$bit: Self = this.set("$bit", js.undefined)
+    def set$inc(value: OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]): Self = StObject.set(x, "$inc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$currentDate(value: OnlyFieldsOfType[TSchema, Date, `true` | Type]): Self = this.set("$currentDate", value.asInstanceOf[js.Any])
+    def set$incUndefined: Self = StObject.set(x, "$inc", js.undefined)
     
     @scala.inline
-    def delete$currentDate: Self = this.set("$currentDate", js.undefined)
+    def set$max(value: MatchKeysAndValues[TSchema]): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$inc(value: OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]): Self = this.set("$inc", value.asInstanceOf[js.Any])
+    def set$maxUndefined: Self = StObject.set(x, "$max", js.undefined)
     
     @scala.inline
-    def delete$inc: Self = this.set("$inc", js.undefined)
+    def set$min(value: MatchKeysAndValues[TSchema]): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$max(value: MatchKeysAndValues[TSchema]): Self = this.set("$max", value.asInstanceOf[js.Any])
+    def set$minUndefined: Self = StObject.set(x, "$min", js.undefined)
     
     @scala.inline
-    def delete$max: Self = this.set("$max", js.undefined)
+    def set$mul(value: OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]): Self = StObject.set(x, "$mul", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$min(value: MatchKeysAndValues[TSchema]): Self = this.set("$min", value.asInstanceOf[js.Any])
+    def set$mulUndefined: Self = StObject.set(x, "$mul", js.undefined)
     
     @scala.inline
-    def delete$min: Self = this.set("$min", js.undefined)
+    def set$pop(value: OnlyFieldsOfType[TSchema, js.Array[_], `1` | `-1`]): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$mul(value: OnlyFieldsOfType[TSchema, js.UndefOr[NumericTypes], js.UndefOr[NumericTypes]]): Self = this.set("$mul", value.asInstanceOf[js.Any])
+    def set$popUndefined: Self = StObject.set(x, "$pop", js.undefined)
     
     @scala.inline
-    def delete$mul: Self = this.set("$mul", js.undefined)
+    def set$pull(value: PullOperator[TSchema]): Self = StObject.set(x, "$pull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$pop(value: OnlyFieldsOfType[TSchema, js.Array[_], `1` | `-1`]): Self = this.set("$pop", value.asInstanceOf[js.Any])
+    def set$pullAll(value: PullAllOperator[TSchema]): Self = StObject.set(x, "$pullAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$pop: Self = this.set("$pop", js.undefined)
+    def set$pullAllUndefined: Self = StObject.set(x, "$pullAll", js.undefined)
     
     @scala.inline
-    def set$pull(value: PullOperator[TSchema]): Self = this.set("$pull", value.asInstanceOf[js.Any])
+    def set$pullUndefined: Self = StObject.set(x, "$pull", js.undefined)
     
     @scala.inline
-    def delete$pull: Self = this.set("$pull", js.undefined)
+    def set$push(value: PushOperator[TSchema]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$pullAll(value: PullAllOperator[TSchema]): Self = this.set("$pullAll", value.asInstanceOf[js.Any])
+    def set$pushUndefined: Self = StObject.set(x, "$push", js.undefined)
     
     @scala.inline
-    def delete$pullAll: Self = this.set("$pullAll", js.undefined)
+    def set$rename(value: StringDictionary[String]): Self = StObject.set(x, "$rename", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$push(value: PushOperator[TSchema]): Self = this.set("$push", value.asInstanceOf[js.Any])
+    def set$renameUndefined: Self = StObject.set(x, "$rename", js.undefined)
     
     @scala.inline
-    def delete$push: Self = this.set("$push", js.undefined)
+    def set$set(value: MatchKeysAndValues[TSchema]): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$rename(value: StringDictionary[String]): Self = this.set("$rename", value.asInstanceOf[js.Any])
+    def set$setOnInsert(value: MatchKeysAndValues[TSchema]): Self = StObject.set(x, "$setOnInsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete$rename: Self = this.set("$rename", js.undefined)
+    def set$setOnInsertUndefined: Self = StObject.set(x, "$setOnInsert", js.undefined)
     
     @scala.inline
-    def set$set(value: MatchKeysAndValues[TSchema]): Self = this.set("$set", value.asInstanceOf[js.Any])
+    def set$setUndefined: Self = StObject.set(x, "$set", js.undefined)
     
     @scala.inline
-    def delete$set: Self = this.set("$set", js.undefined)
+    def set$unset(value: OnlyFieldsOfType[TSchema, _, _empty | `1` | `true`]): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$setOnInsert(value: MatchKeysAndValues[TSchema]): Self = this.set("$setOnInsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$setOnInsert: Self = this.set("$setOnInsert", js.undefined)
-    
-    @scala.inline
-    def set$unset(value: OnlyFieldsOfType[TSchema, _, _empty | `1` | `true`]): Self = this.set("$unset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$unset: Self = this.set("$unset", js.undefined)
+    def set$unsetUndefined: Self = StObject.set(x, "$unset", js.undefined)
   }
 }

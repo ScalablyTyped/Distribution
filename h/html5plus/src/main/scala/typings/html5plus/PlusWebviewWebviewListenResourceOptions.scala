@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
 @js.native
-trait PlusWebviewWebviewListenResourceOptions extends js.Object {
+trait PlusWebviewWebviewListenResourceOptions extends StObject {
   
   /**
     * 区配是否需要处理的URL资源
@@ -30,24 +31,12 @@ object PlusWebviewWebviewListenResourceOptions {
   }
   
   @scala.inline
-  implicit class PlusWebviewWebviewListenResourceOptionsOps[Self <: PlusWebviewWebviewListenResourceOptions] (val x: Self) extends AnyVal {
+  implicit class PlusWebviewWebviewListenResourceOptionsMutableBuilder[Self <: PlusWebviewWebviewListenResourceOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMatch(value: String): Self = this.set("match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMatch: Self = this.set("match", js.undefined)
+    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

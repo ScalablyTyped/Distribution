@@ -2,16 +2,15 @@ package typings.typeorm
 
 import typings.typeorm.anon.Left
 import typings.typeorm.tableTableMod.Table
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/naming-strategy/NamingStrategyInterface", JSImport.Namespace)
-@js.native
-object namingStrategyNamingStrategyInterfaceMod extends js.Object {
+object namingStrategyNamingStrategyInterfaceMod {
   
   @js.native
-  trait NamingStrategyInterface extends js.Object {
+  trait NamingStrategyInterface extends StObject {
     
     def checkConstraintName(tableOrName: String, expression: String): String = js.native
     /**

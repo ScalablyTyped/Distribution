@@ -2,12 +2,13 @@ package typings.athenajs.mod
 
 import typings.athenajs.anon.CTRL
 import typings.athenajs.anon.`32`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait _InputManager extends js.Object {
+trait _InputManager extends StObject {
   
   /**
     * A list of common keyCodes

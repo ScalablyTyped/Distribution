@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Signal extends js.Object {
+trait Signal extends StObject {
   
   /*This causes the history of past messages to be cleared so new listeners will not receive them. Note that since
     * the signal may be operating asynchronously, the Clear() may be queued for later. In this way, the Post() and

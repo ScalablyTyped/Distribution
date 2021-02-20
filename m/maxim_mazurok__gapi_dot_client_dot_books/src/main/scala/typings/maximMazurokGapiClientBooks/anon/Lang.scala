@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Lang extends js.Object {
+trait Lang extends StObject {
   
   /** The language of the information url and description. */
   var lang: js.UndefOr[String] = js.native
@@ -31,48 +32,36 @@ object Lang {
   }
   
   @scala.inline
-  implicit class LangOps[Self <: Lang] (val x: Self) extends AnyVal {
+  implicit class LangMutableBuilder[Self <: Lang] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreviewImageUrl(value: String): Self = StObject.set(x, "previewImageUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    def setPreviewImageUrlUndefined: Self = StObject.set(x, "previewImageUrl", js.undefined)
     
     @scala.inline
-    def deleteLang: Self = this.set("lang", js.undefined)
+    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreviewImageUrl(value: String): Self = this.set("previewImageUrl", value.asInstanceOf[js.Any])
+    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
     @scala.inline
-    def deletePreviewImageUrl: Self = this.set("previewImageUrl", js.undefined)
+    def setSnippetUrl(value: String): Self = StObject.set(x, "snippetUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippet(value: String): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    def setSnippetUrlUndefined: Self = StObject.set(x, "snippetUrl", js.undefined)
     
     @scala.inline
-    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnippetUrl(value: String): Self = this.set("snippetUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnippetUrl: Self = this.set("snippetUrl", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

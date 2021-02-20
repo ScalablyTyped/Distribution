@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminateProvisionedProductInput extends js.Object {
+trait TerminateProvisionedProductInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -46,51 +47,39 @@ object TerminateProvisionedProductInput {
   }
   
   @scala.inline
-  implicit class TerminateProvisionedProductInputOps[Self <: TerminateProvisionedProductInput] (val x: Self) extends AnyVal {
+  implicit class TerminateProvisionedProductInputMutableBuilder[Self <: TerminateProvisionedProductInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreErrors(value: IgnoreErrors): Self = StObject.set(x, "IgnoreErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTerminateToken(value: IdempotencyToken): Self = this.set("TerminateToken", value.asInstanceOf[js.Any])
+    def setIgnoreErrorsUndefined: Self = StObject.set(x, "IgnoreErrors", js.undefined)
     
     @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
     @scala.inline
-    def setIgnoreErrors(value: IgnoreErrors): Self = this.set("IgnoreErrors", value.asInstanceOf[js.Any])
+    def setProvisionedProductName(value: ProvisionedProductNameOrArn): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIgnoreErrors: Self = this.set("IgnoreErrors", js.undefined)
+    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
     
     @scala.inline
-    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
+    def setRetainPhysicalResources(value: RetainPhysicalResources): Self = StObject.set(x, "RetainPhysicalResources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProvisionedProductId: Self = this.set("ProvisionedProductId", js.undefined)
+    def setRetainPhysicalResourcesUndefined: Self = StObject.set(x, "RetainPhysicalResources", js.undefined)
     
     @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductNameOrArn): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProvisionedProductName: Self = this.set("ProvisionedProductName", js.undefined)
-    
-    @scala.inline
-    def setRetainPhysicalResources(value: RetainPhysicalResources): Self = this.set("RetainPhysicalResources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetainPhysicalResources: Self = this.set("RetainPhysicalResources", js.undefined)
+    def setTerminateToken(value: IdempotencyToken): Self = StObject.set(x, "TerminateToken", value.asInstanceOf[js.Any])
   }
 }

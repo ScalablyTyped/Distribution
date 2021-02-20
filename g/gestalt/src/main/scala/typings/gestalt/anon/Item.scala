@@ -3,12 +3,13 @@ package typings.gestalt.anon
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Item extends js.Object {
+trait Item extends StObject {
   
   var event: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement] = js.native
   
@@ -23,30 +24,18 @@ object Item {
   }
   
   @scala.inline
-  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEvent(value: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItem(value: Label): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemNull: Self = StObject.set(x, "item", null)
     
     @scala.inline
-    def setEvent(value: FocusEvent[HTMLInputElement] | KeyboardEvent[HTMLInputElement]): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Label): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setItemNull: Self = this.set("item", null)
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

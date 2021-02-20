@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParameterObject extends js.Object {
+trait ParameterObject extends StObject {
   
   /**
     * The attributes of the parameter object.
@@ -26,27 +27,15 @@ object ParameterObject {
   }
   
   @scala.inline
-  implicit class ParameterObjectOps[Self <: ParameterObject] (val x: Self) extends AnyVal {
+  implicit class ParameterObjectMutableBuilder[Self <: ParameterObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: ParameterAttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesVarargs(value: ParameterAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAttributesVarargs(value: ParameterAttribute*): Self = this.set("attributes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAttributes(value: ParameterAttributeList): Self = this.set("attributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setId(value: fieldNameString): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setId(value: fieldNameString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

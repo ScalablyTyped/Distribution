@@ -1,11 +1,12 @@
 package typings.agGrid.iExcelCreatorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExcelStyle extends js.Object {
+trait ExcelStyle extends StObject {
   
   var alignment: js.UndefOr[ExcelAlignment] = js.native
   
@@ -34,72 +35,60 @@ object ExcelStyle {
   }
   
   @scala.inline
-  implicit class ExcelStyleOps[Self <: ExcelStyle] (val x: Self) extends AnyVal {
+  implicit class ExcelStyleMutableBuilder[Self <: ExcelStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: ExcelAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorders(value: ExcelBorders): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: ExcelAlignment): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: ExcelBorders): Self = this.set("borders", value.asInstanceOf[js.Any])
+    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
     @scala.inline
-    def deleteBorders: Self = this.set("borders", js.undefined)
+    def setFont(value: ExcelFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteDataType: Self = this.set("dataType", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: ExcelFont): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setInterior(value: ExcelInterior): Self = StObject.set(x, "interior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setInteriorUndefined: Self = StObject.set(x, "interior", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterior(value: ExcelInterior): Self = this.set("interior", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteInterior: Self = this.set("interior", js.undefined)
+    def setNumberFormat(value: ExcelNumberFormat): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProtection(value: ExcelProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumberFormat(value: ExcelNumberFormat): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
-    
-    @scala.inline
-    def setProtection(value: ExcelProtection): Self = this.set("protection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtection: Self = this.set("protection", js.undefined)
+    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
   }
 }

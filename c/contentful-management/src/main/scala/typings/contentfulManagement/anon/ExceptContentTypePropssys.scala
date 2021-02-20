@@ -1,13 +1,14 @@
 package typings.contentfulManagement.anon
 
 import typings.contentfulManagement.contentTypeFieldsMod.ContentFields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined type-fest.type-fest.Except<contentful-management.contentful-management/dist/typings/entities/content-type.ContentTypeProps, 'sys'> */
 @js.native
-trait ExceptContentTypePropssys extends js.Object {
+trait ExceptContentTypePropssys extends StObject {
   
   var description: String = js.native
   
@@ -26,33 +27,21 @@ object ExceptContentTypePropssys {
   }
   
   @scala.inline
-  implicit class ExceptContentTypePropssysOps[Self <: ExceptContentTypePropssys] (val x: Self) extends AnyVal {
+  implicit class ExceptContentTypePropssysMutableBuilder[Self <: ExceptContentTypePropssys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFields(value: js.Array[ContentFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: ContentFields*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setDisplayField(value: String): Self = this.set("displayField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldsVarargs(value: ContentFields*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[ContentFields]): Self = this.set("fields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

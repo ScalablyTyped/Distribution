@@ -1,13 +1,14 @@
 package typings.twilio.mod
 
 import typings.q.mod.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "Client")
 @js.native
-class Client () extends js.Object {
+class Client () extends StObject {
   def this(sid: String) = this()
   def this(sid: js.UndefOr[scala.Nothing], tkn: String) = this()
   def this(sid: String, tkn: String) = this()

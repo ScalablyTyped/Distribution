@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkEncryptionType extends js.Object
+sealed trait NetworkEncryptionType extends StObject
 @JSGlobal("Windows.Networking.Connectivity.NetworkEncryptionType")
 @js.native
-object NetworkEncryptionType extends js.Object {
+object NetworkEncryptionType extends StObject {
   
   @js.native
   sealed trait ccmp extends NetworkEncryptionType

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,72 +65,60 @@ object QuestionnaireItemOption {
   }
   
   @scala.inline
-  implicit class QuestionnaireItemOptionOps[Self <: QuestionnaireItemOption] (val x: Self) extends AnyVal {
+  implicit class QuestionnaireItemOptionMutableBuilder[Self <: QuestionnaireItemOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValueCoding(value: Coding): Self = StObject.set(x, "valueCoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueCodingUndefined: Self = StObject.set(x, "valueCoding", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueDate(value: date): Self = StObject.set(x, "valueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueDate(value: Element): Self = this.set("_valueDate", value.asInstanceOf[js.Any])
+    def setValueDateUndefined: Self = StObject.set(x, "valueDate", js.undefined)
     
     @scala.inline
-    def delete_valueDate: Self = this.set("_valueDate", js.undefined)
+    def setValueInteger(value: integer): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueInteger(value: Element): Self = this.set("_valueInteger", value.asInstanceOf[js.Any])
+    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
     @scala.inline
-    def delete_valueInteger: Self = this.set("_valueInteger", js.undefined)
+    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueString(value: Element): Self = this.set("_valueString", value.asInstanceOf[js.Any])
+    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     
     @scala.inline
-    def delete_valueString: Self = this.set("_valueString", js.undefined)
+    def setValueTime(value: time): Self = StObject.set(x, "valueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueTime(value: Element): Self = this.set("_valueTime", value.asInstanceOf[js.Any])
+    def setValueTimeUndefined: Self = StObject.set(x, "valueTime", js.undefined)
     
     @scala.inline
-    def delete_valueTime: Self = this.set("_valueTime", js.undefined)
+    def set_valueDate(value: Element): Self = StObject.set(x, "_valueDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCoding(value: Coding): Self = this.set("valueCoding", value.asInstanceOf[js.Any])
+    def set_valueDateUndefined: Self = StObject.set(x, "_valueDate", js.undefined)
     
     @scala.inline
-    def deleteValueCoding: Self = this.set("valueCoding", js.undefined)
+    def set_valueInteger(value: Element): Self = StObject.set(x, "_valueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDate(value: date): Self = this.set("valueDate", value.asInstanceOf[js.Any])
+    def set_valueIntegerUndefined: Self = StObject.set(x, "_valueInteger", js.undefined)
     
     @scala.inline
-    def deleteValueDate: Self = this.set("valueDate", js.undefined)
+    def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueInteger(value: integer): Self = this.set("valueInteger", value.asInstanceOf[js.Any])
+    def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
     
     @scala.inline
-    def deleteValueInteger: Self = this.set("valueInteger", js.undefined)
+    def set_valueTime(value: Element): Self = StObject.set(x, "_valueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueString: Self = this.set("valueString", js.undefined)
-    
-    @scala.inline
-    def setValueTime(value: time): Self = this.set("valueTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueTime: Self = this.set("valueTime", js.undefined)
+    def set_valueTimeUndefined: Self = StObject.set(x, "_valueTime", js.undefined)
   }
 }

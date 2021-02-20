@@ -3,12 +3,13 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.Range
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMouseTarget extends js.Object {
+trait IMouseTarget extends StObject {
   
   /**
     * Some extra detail.
@@ -50,45 +51,33 @@ object IMouseTarget {
   }
   
   @scala.inline
-  implicit class IMouseTargetOps[Self <: IMouseTarget] (val x: Self) extends AnyVal {
+  implicit class IMouseTargetMutableBuilder[Self <: IMouseTarget] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetail(value: js.Any): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElementNull: Self = StObject.set(x, "element", null)
     
     @scala.inline
-    def setDetail(value: js.Any): Self = this.set("detail", value.asInstanceOf[js.Any])
+    def setMouseColumn(value: Double): Self = StObject.set(x, "mouseColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMouseColumn(value: Double): Self = this.set("mouseColumn", value.asInstanceOf[js.Any])
+    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: MouseTargetType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setPositionNull: Self = StObject.set(x, "position", null)
     
     @scala.inline
-    def setElement(value: Element): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElementNull: Self = this.set("element", null)
+    def setRangeNull: Self = StObject.set(x, "range", null)
     
     @scala.inline
-    def setPosition(value: Position): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionNull: Self = this.set("position", null)
-    
-    @scala.inline
-    def setRange(value: Range): Self = this.set("range", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRangeNull: Self = this.set("range", null)
+    def setType(value: MouseTargetType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

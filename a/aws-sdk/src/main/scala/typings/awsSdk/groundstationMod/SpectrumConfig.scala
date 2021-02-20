@@ -1,11 +1,12 @@
 package typings.awsSdk.groundstationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpectrumConfig extends js.Object {
+trait SpectrumConfig extends StObject {
   
   /**
     * Bandwidth of a spectral Config. AWS Ground Station currently has the following bandwidth limitations:   For AntennaDownlinkDemodDecodeconfig, valid values are between 125 kHz to 650 MHz.   For AntennaDownlinkconfig valid values are between 10 kHz to 54 MHz.   For AntennaUplinkConfig, valid values are between 10 kHz to 54 MHz.  
@@ -31,30 +32,18 @@ object SpectrumConfig {
   }
   
   @scala.inline
-  implicit class SpectrumConfigOps[Self <: SpectrumConfig] (val x: Self) extends AnyVal {
+  implicit class SpectrumConfigMutableBuilder[Self <: SpectrumConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidth(value: FrequencyBandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterFrequency(value: Frequency): Self = StObject.set(x, "centerFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolarization(value: Polarization): Self = StObject.set(x, "polarization", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: FrequencyBandwidth): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCenterFrequency(value: Frequency): Self = this.set("centerFrequency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolarization(value: Polarization): Self = this.set("polarization", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolarization: Self = this.set("polarization", js.undefined)
+    def setPolarizationUndefined: Self = StObject.set(x, "polarization", js.undefined)
   }
 }

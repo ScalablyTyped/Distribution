@@ -2,12 +2,13 @@ package typings.agoraRtcSdk.anon
 
 import typings.agoraRtcSdk.agoraRtcSdkStrings.contain
 import typings.agoraRtcSdk.agoraRtcSdkStrings.cover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fit extends js.Object {
+trait Fit extends StObject {
   
   /**
     * Video display mode:
@@ -43,30 +44,18 @@ object Fit {
   }
   
   @scala.inline
-  implicit class FitOps[Self <: Fit] (val x: Self) extends AnyVal {
+  implicit class FitMutableBuilder[Self <: Fit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFit(value: cover | contain): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFit(value: cover | contain): Self = this.set("fit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFit: Self = this.set("fit", js.undefined)
-    
-    @scala.inline
-    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMuted: Self = this.set("muted", js.undefined)
+    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
   }
 }

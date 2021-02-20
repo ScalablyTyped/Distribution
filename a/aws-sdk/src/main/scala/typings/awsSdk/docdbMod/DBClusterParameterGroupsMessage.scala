@@ -1,11 +1,12 @@
 package typings.awsSdk.docdbMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBClusterParameterGroupsMessage extends js.Object {
+trait DBClusterParameterGroupsMessage extends StObject {
   
   /**
     * A list of cluster parameter groups.
@@ -26,33 +27,21 @@ object DBClusterParameterGroupsMessage {
   }
   
   @scala.inline
-  implicit class DBClusterParameterGroupsMessageOps[Self <: DBClusterParameterGroupsMessage] (val x: Self) extends AnyVal {
+  implicit class DBClusterParameterGroupsMessageMutableBuilder[Self <: DBClusterParameterGroupsMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBClusterParameterGroups(value: DBClusterParameterGroupList): Self = StObject.set(x, "DBClusterParameterGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBClusterParameterGroupsUndefined: Self = StObject.set(x, "DBClusterParameterGroups", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value :_*))
     
     @scala.inline
-    def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = this.set("DBClusterParameterGroups", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBClusterParameterGroups(value: DBClusterParameterGroupList): Self = this.set("DBClusterParameterGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBClusterParameterGroups: Self = this.set("DBClusterParameterGroups", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

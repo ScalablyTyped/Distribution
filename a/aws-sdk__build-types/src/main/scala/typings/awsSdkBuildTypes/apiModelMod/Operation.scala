@@ -1,11 +1,12 @@
 package typings.awsSdkBuildTypes.apiModelMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Operation extends js.Object {
+trait Operation extends StObject {
   
   var authtype: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
@@ -39,73 +40,61 @@ object Operation {
   }
   
   @scala.inline
-  implicit class OperationOps[Self <: Operation] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHttp(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ js.Any
-    ): Self = this.set("http", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: java.lang.String): Self = this.set("name", value.asInstanceOf[js.Any])
+  implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setAuthtype(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportedSignatureVersion */ js.Any
-    ): Self = this.set("authtype", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "authtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthtype: Self = this.set("authtype", js.undefined)
+    def setAuthtypeUndefined: Self = StObject.set(x, "authtype", js.undefined)
     
     @scala.inline
-    def setDeprecated(value: scala.Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    def setDeprecated(value: scala.Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
     @scala.inline
-    def setDocumentation(value: java.lang.String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    def setDocumentation(value: java.lang.String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
     @scala.inline
-    def setDocumentationUrl(value: java.lang.String): Self = this.set("documentationUrl", value.asInstanceOf[js.Any])
+    def setDocumentationUrl(value: java.lang.String): Self = StObject.set(x, "documentationUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentationUrl: Self = this.set("documentationUrl", js.undefined)
+    def setDocumentationUrlUndefined: Self = StObject.set(x, "documentationUrl", js.undefined)
     
     @scala.inline
-    def setErrorsVarargs(value: StructureMember*): Self = this.set("errors", js.Array(value :_*))
+    def setErrors(value: js.Array[StructureMember]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrors(value: js.Array[StructureMember]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
     @scala.inline
-    def deleteErrors: Self = this.set("errors", js.undefined)
+    def setErrorsVarargs(value: StructureMember*): Self = StObject.set(x, "errors", js.Array(value :_*))
     
     @scala.inline
-    def setInput(value: StructureMember): Self = this.set("input", value.asInstanceOf[js.Any])
+    def setHttp(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait */ js.Any
+    ): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
+    def setInput(value: StructureMember): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: StructureMember): Self = this.set("output", value.asInstanceOf[js.Any])
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def deleteOutput: Self = this.set("output", js.undefined)
+    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOutput(value: StructureMember): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

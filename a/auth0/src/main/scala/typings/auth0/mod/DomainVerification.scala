@@ -1,6 +1,7 @@
 package typings.auth0.mod
 
 import typings.auth0.anon.Methods
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,24 +28,12 @@ object DomainVerification {
   }
   
   @scala.inline
-  implicit class DomainVerificationOps[Self <: DomainVerification] (val x: Self) extends AnyVal {
+  implicit class DomainVerificationMutableBuilder[Self <: DomainVerification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCname_api_key(value: String): Self = StObject.set(x, "cname_api_key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCname_api_key(value: String): Self = this.set("cname_api_key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCname_api_key: Self = this.set("cname_api_key", js.undefined)
+    def setCname_api_keyUndefined: Self = StObject.set(x, "cname_api_key", js.undefined)
   }
 }

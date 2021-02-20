@@ -3,180 +3,16 @@ package typings.usb
 import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("usb", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  val LIBUSB_CLASS_APPLICATION: Double = js.native
-  
-  val LIBUSB_CLASS_AUDIO: Double = js.native
-  
-  val LIBUSB_CLASS_COMM: Double = js.native
-  
-  val LIBUSB_CLASS_DATA: Double = js.native
-  
-  val LIBUSB_CLASS_HID: Double = js.native
-  
-  val LIBUSB_CLASS_HUB: Double = js.native
-  
-  val LIBUSB_CLASS_MASS_STORAGE: Double = js.native
-  
-  val LIBUSB_CLASS_PER_INTERFACE: Double = js.native
-  
-  val LIBUSB_CLASS_PRINTER: Double = js.native
-  
-  val LIBUSB_CLASS_PTP: Double = js.native
-  
-  val LIBUSB_CLASS_VENDOR_SPEC: Double = js.native
-  
-  val LIBUSB_CLASS_WIRELESS: Double = js.native
-  
-  val LIBUSB_CONTROL_SETUP_SIZE: Double = js.native
-  
-  val LIBUSB_DT_CONFIG: Double = js.native
-  
-  val LIBUSB_DT_DEVICE: Double = js.native
-  
-  val LIBUSB_DT_ENDPOINT: Double = js.native
-  
-  val LIBUSB_DT_HID: Double = js.native
-  
-  val LIBUSB_DT_HUB: Double = js.native
-  
-  val LIBUSB_DT_INTERFACE: Double = js.native
-  
-  val LIBUSB_DT_PHYSICAL: Double = js.native
-  
-  val LIBUSB_DT_REPORT: Double = js.native
-  
-  val LIBUSB_DT_STRING: Double = js.native
-  
-  val LIBUSB_ENDPOINT_IN: Double = js.native
-  
-  val LIBUSB_ENDPOINT_OUT: Double = js.native
-  
-  val LIBUSB_ERROR_ACCESS: Double = js.native
-  
-  val LIBUSB_ERROR_BUSY: Double = js.native
-  
-  val LIBUSB_ERROR_INTERRUPTED: Double = js.native
-  
-  val LIBUSB_ERROR_INVALID_PARAM: Double = js.native
-  
-  val LIBUSB_ERROR_IO: Double = js.native
-  
-  val LIBUSB_ERROR_NOT_FOUND: Double = js.native
-  
-  val LIBUSB_ERROR_NOT_SUPPORTED: Double = js.native
-  
-  val LIBUSB_ERROR_NO_DEVICE: Double = js.native
-  
-  val LIBUSB_ERROR_NO_MEM: Double = js.native
-  
-  val LIBUSB_ERROR_OTHER: Double = js.native
-  
-  val LIBUSB_ERROR_OVERFLOW: Double = js.native
-  
-  val LIBUSB_ERROR_PIPE: Double = js.native
-  
-  val LIBUSB_ERROR_TIMEOUT: Double = js.native
-  
-  val LIBUSB_ISO_SYNC_TYPE_ADAPTIVE: Double = js.native
-  
-  val LIBUSB_ISO_SYNC_TYPE_ASYNC: Double = js.native
-  
-  val LIBUSB_ISO_SYNC_TYPE_NONE: Double = js.native
-  
-  val LIBUSB_ISO_SYNC_TYPE_SYNC: Double = js.native
-  
-  val LIBUSB_ISO_USAGE_TYPE_DATA: Double = js.native
-  
-  val LIBUSB_ISO_USAGE_TYPE_FEEDBACK: Double = js.native
-  
-  val LIBUSB_ISO_USAGE_TYPE_IMPLICIT: Double = js.native
-  
-  val LIBUSB_RECIPIENT_DEVICE: Double = js.native
-  
-  val LIBUSB_RECIPIENT_ENDPOINT: Double = js.native
-  
-  val LIBUSB_RECIPIENT_INTERFACE: Double = js.native
-  
-  val LIBUSB_RECIPIENT_OTHER: Double = js.native
-  
-  val LIBUSB_REQUEST_CLEAR_FEATURE: Double = js.native
-  
-  val LIBUSB_REQUEST_GET_CONFIGURATION: Double = js.native
-  
-  val LIBUSB_REQUEST_GET_DESCRIPTOR: Double = js.native
-  
-  val LIBUSB_REQUEST_GET_INTERFACE: Double = js.native
-  
-  val LIBUSB_REQUEST_GET_STATUS: Double = js.native
-  
-  val LIBUSB_REQUEST_SET_ADDRESS: Double = js.native
-  
-  val LIBUSB_REQUEST_SET_CONFIGURATION: Double = js.native
-  
-  val LIBUSB_REQUEST_SET_DESCRIPTOR: Double = js.native
-  
-  val LIBUSB_REQUEST_SET_FEATURE: Double = js.native
-  
-  val LIBUSB_REQUEST_SET_INTERFACE: Double = js.native
-  
-  val LIBUSB_REQUEST_SYNCH_FRAME: Double = js.native
-  
-  val LIBUSB_REQUEST_TYPE_CLASS: Double = js.native
-  
-  val LIBUSB_REQUEST_TYPE_RESERVED: Double = js.native
-  
-  val LIBUSB_REQUEST_TYPE_STANDARD: Double = js.native
-  
-  val LIBUSB_REQUEST_TYPE_VENDOR: Double = js.native
-  
-  val LIBUSB_TRANSFER_CANCELLED: Double = js.native
-  
-  val LIBUSB_TRANSFER_COMPLETED: Double = js.native
-  
-  val LIBUSB_TRANSFER_ERROR: Double = js.native
-  
-  val LIBUSB_TRANSFER_FREE_BUFFER: Double = js.native
-  
-  val LIBUSB_TRANSFER_FREE_TRANSFER: Double = js.native
-  
-  val LIBUSB_TRANSFER_NO_DEVICE: Double = js.native
-  
-  val LIBUSB_TRANSFER_OVERFLOW: Double = js.native
-  
-  val LIBUSB_TRANSFER_SHORT_NOT_OK: Double = js.native
-  
-  val LIBUSB_TRANSFER_STALL: Double = js.native
-  
-  val LIBUSB_TRANSFER_TIMED_OUT: Double = js.native
-  
-  val LIBUSB_TRANSFER_TYPE_BULK: Double = js.native
-  
-  val LIBUSB_TRANSFER_TYPE_CONTROL: Double = js.native
-  
-  val LIBUSB_TRANSFER_TYPE_INTERRUPT: Double = js.native
-  
-  val LIBUSB_TRANSFER_TYPE_ISOCHRONOUS: Double = js.native
-  
-  def findByIds(vid: Double, pid: Double): Device = js.native
-  
-  def getDeviceList(): js.Array[Device] = js.native
-  
-  def on(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = js.native
-  
-  def removeListener(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = js.native
-  
-  def setDebugLevel(level: Double): Unit = js.native
-  
+  @JSImport("usb", "BosDescriptor")
   @js.native
-  class BosDescriptor () extends js.Object {
+  class BosDescriptor () extends StObject {
     
     /** Descriptor type. */
     var bDescriptorType: Double = js.native
@@ -194,8 +30,9 @@ object mod extends js.Object {
     var wTotalLength: Double = js.native
   }
   
+  @JSImport("usb", "Capability")
   @js.native
-  class Capability () extends js.Object {
+  class Capability () extends StObject {
     
     /** Buffer capability data. */
     var data: Buffer = js.native
@@ -207,8 +44,9 @@ object mod extends js.Object {
     var `type`: Double = js.native
   }
   
+  @JSImport("usb", "CapabilityDescriptor")
   @js.native
-  class CapabilityDescriptor () extends js.Object {
+  class CapabilityDescriptor () extends StObject {
     
     /** Descriptor type. */
     var bDescriptorType: Double = js.native
@@ -223,8 +61,9 @@ object mod extends js.Object {
     var dev_capability_data: Buffer = js.native
   }
   
+  @JSImport("usb", "ConfigDescriptor")
   @js.native
-  class ConfigDescriptor () extends js.Object {
+  class ConfigDescriptor () extends StObject {
     
     /** Identifier value for this configuration. */
     var bConfigurationValue: Double = js.native
@@ -257,8 +96,9 @@ object mod extends js.Object {
     var wTotalLength: Double = js.native
   }
   
+  @JSImport("usb", "Device")
   @js.native
-  class Device () extends js.Object {
+  class Device () extends StObject {
     
     def __attachKernelDriver(addr: Double): Unit = js.native
     
@@ -412,8 +252,9 @@ object mod extends js.Object {
     var timeout: Double = js.native
   }
   
+  @JSImport("usb", "DeviceDescriptor")
   @js.native
-  class DeviceDescriptor () extends js.Object {
+  class DeviceDescriptor () extends StObject {
     
     /** Descriptor type. */
     var bDescriptorType: Double = js.native
@@ -458,46 +299,9 @@ object mod extends js.Object {
     var idVendor: Double = js.native
   }
   
+  @JSImport("usb", "EndpointDescriptor")
   @js.native
-  trait Endpoint extends EventEmitter {
-    
-    /** Clear the halt/stall condition for this endpoint. */
-    def clearHalt(callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
-    
-    /** Object with fields from the endpoint descriptor -- see libusb documentation or USB spec. */
-    var descriptor: EndpointDescriptor = js.native
-    
-    /** Endpoint direction: `"in"` or `"out"`. */
-    var direction: String = js.native
-    
-    /**
-      * Create a new `Transfer` object for this endpoint.
-      *
-      * The passed callback will be called when the transfer is submitted and finishes. Its arguments are the error (if any), the submitted buffer, and the amount of data actually written (for
-      * OUT transfers) or read (for IN transfers).
-      *
-      * @param timeout Timeout for the transfer (0 means unlimited).
-      * @param callback Transfer completion callback.
-      */
-    def makeTransfer(
-      timeout: Double,
-      callback: js.Function3[
-          /* error */ js.UndefOr[LibUSBException], 
-          /* buffer */ js.UndefOr[Buffer], 
-          /* actualLength */ js.UndefOr[Double], 
-          Unit
-        ]
-    ): Transfer = js.native
-    
-    /** Sets the timeout in milliseconds for transfers on this endpoint. The default, `0`, is infinite timeout. */
-    var timeout: Double = js.native
-    
-    /** Endpoint type: `usb.LIBUSB_TRANSFER_TYPE_BULK`, `usb.LIBUSB_TRANSFER_TYPE_INTERRUPT`, or `usb.LIBUSB_TRANSFER_TYPE_ISOCHRONOUS`. */
-    var transferType: Double = js.native
-  }
-  
-  @js.native
-  class EndpointDescriptor () extends js.Object {
+  class EndpointDescriptor () extends StObject {
     
     /** Descriptor type. */
     var bDescriptorType: Double = js.native
@@ -531,6 +335,7 @@ object mod extends js.Object {
     var wMaxPacketSize: Double = js.native
   }
   
+  @JSImport("usb", "InEndpoint")
   @js.native
   class InEndpoint protected () extends Endpoint {
     def this(device: Device, descriptor: EndpointDescriptor) = this()
@@ -578,8 +383,9 @@ object mod extends js.Object {
     ): InEndpoint = js.native
   }
   
+  @JSImport("usb", "Interface")
   @js.native
-  class Interface protected () extends js.Object {
+  class Interface protected () extends StObject {
     def this(device: Device, id: Double) = this()
     
     /** Integer alternate setting number. */
@@ -657,8 +463,9 @@ object mod extends js.Object {
     def setAltSetting(altSetting: Double, callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
   }
   
+  @JSImport("usb", "InterfaceDescriptor")
   @js.native
-  class InterfaceDescriptor () extends js.Object {
+  class InterfaceDescriptor () extends StObject {
     
     /** Value used to select this alternate setting for this interface. */
     var bAlternateSetting: Double = js.native
@@ -694,12 +501,322 @@ object mod extends js.Object {
     var iInterface: Double = js.native
   }
   
+  @JSImport("usb", "LIBUSB_CLASS_APPLICATION")
+  @js.native
+  val LIBUSB_CLASS_APPLICATION: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_AUDIO")
+  @js.native
+  val LIBUSB_CLASS_AUDIO: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_COMM")
+  @js.native
+  val LIBUSB_CLASS_COMM: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_DATA")
+  @js.native
+  val LIBUSB_CLASS_DATA: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_HID")
+  @js.native
+  val LIBUSB_CLASS_HID: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_HUB")
+  @js.native
+  val LIBUSB_CLASS_HUB: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_MASS_STORAGE")
+  @js.native
+  val LIBUSB_CLASS_MASS_STORAGE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_PER_INTERFACE")
+  @js.native
+  val LIBUSB_CLASS_PER_INTERFACE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_PRINTER")
+  @js.native
+  val LIBUSB_CLASS_PRINTER: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_PTP")
+  @js.native
+  val LIBUSB_CLASS_PTP: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_VENDOR_SPEC")
+  @js.native
+  val LIBUSB_CLASS_VENDOR_SPEC: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CLASS_WIRELESS")
+  @js.native
+  val LIBUSB_CLASS_WIRELESS: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_CONTROL_SETUP_SIZE")
+  @js.native
+  val LIBUSB_CONTROL_SETUP_SIZE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_CONFIG")
+  @js.native
+  val LIBUSB_DT_CONFIG: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_DEVICE")
+  @js.native
+  val LIBUSB_DT_DEVICE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_ENDPOINT")
+  @js.native
+  val LIBUSB_DT_ENDPOINT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_HID")
+  @js.native
+  val LIBUSB_DT_HID: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_HUB")
+  @js.native
+  val LIBUSB_DT_HUB: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_INTERFACE")
+  @js.native
+  val LIBUSB_DT_INTERFACE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_PHYSICAL")
+  @js.native
+  val LIBUSB_DT_PHYSICAL: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_REPORT")
+  @js.native
+  val LIBUSB_DT_REPORT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_DT_STRING")
+  @js.native
+  val LIBUSB_DT_STRING: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ENDPOINT_IN")
+  @js.native
+  val LIBUSB_ENDPOINT_IN: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ENDPOINT_OUT")
+  @js.native
+  val LIBUSB_ENDPOINT_OUT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_ACCESS")
+  @js.native
+  val LIBUSB_ERROR_ACCESS: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_BUSY")
+  @js.native
+  val LIBUSB_ERROR_BUSY: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_INTERRUPTED")
+  @js.native
+  val LIBUSB_ERROR_INTERRUPTED: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_INVALID_PARAM")
+  @js.native
+  val LIBUSB_ERROR_INVALID_PARAM: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_IO")
+  @js.native
+  val LIBUSB_ERROR_IO: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_NOT_FOUND")
+  @js.native
+  val LIBUSB_ERROR_NOT_FOUND: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_NOT_SUPPORTED")
+  @js.native
+  val LIBUSB_ERROR_NOT_SUPPORTED: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_NO_DEVICE")
+  @js.native
+  val LIBUSB_ERROR_NO_DEVICE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_NO_MEM")
+  @js.native
+  val LIBUSB_ERROR_NO_MEM: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_OTHER")
+  @js.native
+  val LIBUSB_ERROR_OTHER: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_OVERFLOW")
+  @js.native
+  val LIBUSB_ERROR_OVERFLOW: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_PIPE")
+  @js.native
+  val LIBUSB_ERROR_PIPE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ERROR_TIMEOUT")
+  @js.native
+  val LIBUSB_ERROR_TIMEOUT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_SYNC_TYPE_ADAPTIVE")
+  @js.native
+  val LIBUSB_ISO_SYNC_TYPE_ADAPTIVE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_SYNC_TYPE_ASYNC")
+  @js.native
+  val LIBUSB_ISO_SYNC_TYPE_ASYNC: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_SYNC_TYPE_NONE")
+  @js.native
+  val LIBUSB_ISO_SYNC_TYPE_NONE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_SYNC_TYPE_SYNC")
+  @js.native
+  val LIBUSB_ISO_SYNC_TYPE_SYNC: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_USAGE_TYPE_DATA")
+  @js.native
+  val LIBUSB_ISO_USAGE_TYPE_DATA: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_USAGE_TYPE_FEEDBACK")
+  @js.native
+  val LIBUSB_ISO_USAGE_TYPE_FEEDBACK: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_ISO_USAGE_TYPE_IMPLICIT")
+  @js.native
+  val LIBUSB_ISO_USAGE_TYPE_IMPLICIT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_RECIPIENT_DEVICE")
+  @js.native
+  val LIBUSB_RECIPIENT_DEVICE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_RECIPIENT_ENDPOINT")
+  @js.native
+  val LIBUSB_RECIPIENT_ENDPOINT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_RECIPIENT_INTERFACE")
+  @js.native
+  val LIBUSB_RECIPIENT_INTERFACE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_RECIPIENT_OTHER")
+  @js.native
+  val LIBUSB_RECIPIENT_OTHER: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_CLEAR_FEATURE")
+  @js.native
+  val LIBUSB_REQUEST_CLEAR_FEATURE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_GET_CONFIGURATION")
+  @js.native
+  val LIBUSB_REQUEST_GET_CONFIGURATION: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_GET_DESCRIPTOR")
+  @js.native
+  val LIBUSB_REQUEST_GET_DESCRIPTOR: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_GET_INTERFACE")
+  @js.native
+  val LIBUSB_REQUEST_GET_INTERFACE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_GET_STATUS")
+  @js.native
+  val LIBUSB_REQUEST_GET_STATUS: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_SET_ADDRESS")
+  @js.native
+  val LIBUSB_REQUEST_SET_ADDRESS: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_SET_CONFIGURATION")
+  @js.native
+  val LIBUSB_REQUEST_SET_CONFIGURATION: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_SET_DESCRIPTOR")
+  @js.native
+  val LIBUSB_REQUEST_SET_DESCRIPTOR: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_SET_FEATURE")
+  @js.native
+  val LIBUSB_REQUEST_SET_FEATURE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_SET_INTERFACE")
+  @js.native
+  val LIBUSB_REQUEST_SET_INTERFACE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_SYNCH_FRAME")
+  @js.native
+  val LIBUSB_REQUEST_SYNCH_FRAME: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_TYPE_CLASS")
+  @js.native
+  val LIBUSB_REQUEST_TYPE_CLASS: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_TYPE_RESERVED")
+  @js.native
+  val LIBUSB_REQUEST_TYPE_RESERVED: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_TYPE_STANDARD")
+  @js.native
+  val LIBUSB_REQUEST_TYPE_STANDARD: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_REQUEST_TYPE_VENDOR")
+  @js.native
+  val LIBUSB_REQUEST_TYPE_VENDOR: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_CANCELLED")
+  @js.native
+  val LIBUSB_TRANSFER_CANCELLED: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_COMPLETED")
+  @js.native
+  val LIBUSB_TRANSFER_COMPLETED: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_ERROR")
+  @js.native
+  val LIBUSB_TRANSFER_ERROR: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_FREE_BUFFER")
+  @js.native
+  val LIBUSB_TRANSFER_FREE_BUFFER: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_FREE_TRANSFER")
+  @js.native
+  val LIBUSB_TRANSFER_FREE_TRANSFER: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_NO_DEVICE")
+  @js.native
+  val LIBUSB_TRANSFER_NO_DEVICE: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_OVERFLOW")
+  @js.native
+  val LIBUSB_TRANSFER_OVERFLOW: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_SHORT_NOT_OK")
+  @js.native
+  val LIBUSB_TRANSFER_SHORT_NOT_OK: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_STALL")
+  @js.native
+  val LIBUSB_TRANSFER_STALL: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_TIMED_OUT")
+  @js.native
+  val LIBUSB_TRANSFER_TIMED_OUT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_TYPE_BULK")
+  @js.native
+  val LIBUSB_TRANSFER_TYPE_BULK: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_TYPE_CONTROL")
+  @js.native
+  val LIBUSB_TRANSFER_TYPE_CONTROL: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_TYPE_INTERRUPT")
+  @js.native
+  val LIBUSB_TRANSFER_TYPE_INTERRUPT: Double = js.native
+  
+  @JSImport("usb", "LIBUSB_TRANSFER_TYPE_ISOCHRONOUS")
+  @js.native
+  val LIBUSB_TRANSFER_TYPE_ISOCHRONOUS: Double = js.native
+  
+  @JSImport("usb", "LibUSBException")
   @js.native
   class LibUSBException () extends Error {
     
     var errno: Double = js.native
   }
   
+  @JSImport("usb", "OutEndpoint")
   @js.native
   class OutEndpoint protected () extends Endpoint {
     def this(device: Device, descriptor: EndpointDescriptor) = this()
@@ -720,8 +837,9 @@ object mod extends js.Object {
     def transferWithZLP(buffer: Buffer, callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
   }
   
+  @JSImport("usb", "Transfer")
   @js.native
-  class Transfer () extends js.Object {
+  class Transfer () extends StObject {
     
     /**
       * Cancel the transfer.
@@ -736,5 +854,63 @@ object mod extends js.Object {
       * @param buffer Buffer where data will be written (for IN transfers) or read from (for OUT transfers).
       */
     def submit(buffer: Buffer): Transfer = js.native
+  }
+  
+  @JSImport("usb", "findByIds")
+  @js.native
+  def findByIds(vid: Double, pid: Double): Device = js.native
+  
+  @JSImport("usb", "getDeviceList")
+  @js.native
+  def getDeviceList(): js.Array[Device] = js.native
+  
+  @JSImport("usb", "on")
+  @js.native
+  def on(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = js.native
+  
+  @JSImport("usb", "removeListener")
+  @js.native
+  def removeListener(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = js.native
+  
+  @JSImport("usb", "setDebugLevel")
+  @js.native
+  def setDebugLevel(level: Double): Unit = js.native
+  
+  @js.native
+  trait Endpoint extends EventEmitter {
+    
+    /** Clear the halt/stall condition for this endpoint. */
+    def clearHalt(callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
+    
+    /** Object with fields from the endpoint descriptor -- see libusb documentation or USB spec. */
+    var descriptor: EndpointDescriptor = js.native
+    
+    /** Endpoint direction: `"in"` or `"out"`. */
+    var direction: String = js.native
+    
+    /**
+      * Create a new `Transfer` object for this endpoint.
+      *
+      * The passed callback will be called when the transfer is submitted and finishes. Its arguments are the error (if any), the submitted buffer, and the amount of data actually written (for
+      * OUT transfers) or read (for IN transfers).
+      *
+      * @param timeout Timeout for the transfer (0 means unlimited).
+      * @param callback Transfer completion callback.
+      */
+    def makeTransfer(
+      timeout: Double,
+      callback: js.Function3[
+          /* error */ js.UndefOr[LibUSBException], 
+          /* buffer */ js.UndefOr[Buffer], 
+          /* actualLength */ js.UndefOr[Double], 
+          Unit
+        ]
+    ): Transfer = js.native
+    
+    /** Sets the timeout in milliseconds for transfers on this endpoint. The default, `0`, is infinite timeout. */
+    var timeout: Double = js.native
+    
+    /** Endpoint type: `usb.LIBUSB_TRANSFER_TYPE_BULK`, `usb.LIBUSB_TRANSFER_TYPE_INTERRUPT`, or `usb.LIBUSB_TRANSFER_TYPE_ISOCHRONOUS`. */
+    var transferType: Double = js.native
   }
 }

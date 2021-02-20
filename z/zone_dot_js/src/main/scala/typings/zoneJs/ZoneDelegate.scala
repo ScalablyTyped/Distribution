@@ -1,5 +1,6 @@
 package typings.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  store internal state.
   */
 @js.native
-trait ZoneDelegate extends js.Object {
+trait ZoneDelegate extends StObject {
   
   def cancelTask(targetZone: Zone, task: Task): js.Any = js.native
   

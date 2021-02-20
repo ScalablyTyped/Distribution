@@ -1,5 +1,6 @@
 package typings.googleapis.scriptV1Mod.scriptV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * project.
   */
 @js.native
-trait SchemaListDeploymentsResponse extends js.Object {
+trait SchemaListDeploymentsResponse extends StObject {
   
   /**
     * The list of deployments.
@@ -31,33 +32,21 @@ object SchemaListDeploymentsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListDeploymentsResponseOps[Self <: SchemaListDeploymentsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListDeploymentsResponseMutableBuilder[Self <: SchemaListDeploymentsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployments(value: js.Array[SchemaDeployment]): Self = StObject.set(x, "deployments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentsUndefined: Self = StObject.set(x, "deployments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentsVarargs(value: SchemaDeployment*): Self = StObject.set(x, "deployments", js.Array(value :_*))
     
     @scala.inline
-    def setDeploymentsVarargs(value: SchemaDeployment*): Self = this.set("deployments", js.Array(value :_*))
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployments(value: js.Array[SchemaDeployment]): Self = this.set("deployments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeployments: Self = this.set("deployments", js.undefined)
-    
-    @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

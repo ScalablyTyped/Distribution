@@ -1,12 +1,13 @@
 package typings.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "TargetLocator")
 @js.native
-class TargetLocator protected () extends js.Object {
+class TargetLocator protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.

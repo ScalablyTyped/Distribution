@@ -1,11 +1,12 @@
 package typings.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParagraphFormat extends js.Object {
+trait ParagraphFormat extends StObject {
   
   var AddSpaceBetweenFarEastAndAlpha: Double = js.native
   
@@ -181,180 +182,168 @@ object ParagraphFormat {
   }
   
   @scala.inline
-  implicit class ParagraphFormatOps[Self <: ParagraphFormat] (val x: Self) extends AnyVal {
+  implicit class ParagraphFormatMutableBuilder[Self <: ParagraphFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddSpaceBetweenFarEastAndAlpha(value: Double): Self = StObject.set(x, "AddSpaceBetweenFarEastAndAlpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddSpaceBetweenFarEastAndDigit(value: Double): Self = StObject.set(x, "AddSpaceBetweenFarEastAndDigit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlignment(value: WdParagraphAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSpaceBetweenFarEastAndAlpha(value: Double): Self = this.set("AddSpaceBetweenFarEastAndAlpha", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddSpaceBetweenFarEastAndDigit(value: Double): Self = this.set("AddSpaceBetweenFarEastAndDigit", value.asInstanceOf[js.Any])
+    def setAutoAdjustRightIndent(value: Double): Self = StObject.set(x, "AutoAdjustRightIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: WdParagraphAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    def setBaseLineAlignment(value: WdBaselineAlignment): Self = StObject.set(x, "BaseLineAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoAdjustRightIndent(value: Double): Self = this.set("AutoAdjustRightIndent", value.asInstanceOf[js.Any])
+    def setCharacterUnitFirstLineIndent(value: Double): Self = StObject.set(x, "CharacterUnitFirstLineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseLineAlignment(value: WdBaselineAlignment): Self = this.set("BaseLineAlignment", value.asInstanceOf[js.Any])
+    def setCharacterUnitLeftIndent(value: Double): Self = StObject.set(x, "CharacterUnitLeftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorders(value: Borders): Self = this.set("Borders", value.asInstanceOf[js.Any])
+    def setCharacterUnitRightIndent(value: Double): Self = StObject.set(x, "CharacterUnitRightIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterUnitFirstLineIndent(value: Double): Self = this.set("CharacterUnitFirstLineIndent", value.asInstanceOf[js.Any])
+    def setCloseUp(value: () => Unit): Self = StObject.set(x, "CloseUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCharacterUnitLeftIndent(value: Double): Self = this.set("CharacterUnitLeftIndent", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacterUnitRightIndent(value: Double): Self = this.set("CharacterUnitRightIndent", value.asInstanceOf[js.Any])
+    def setDisableLineHeightGrid(value: Double): Self = StObject.set(x, "DisableLineHeightGrid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseUp(value: () => Unit): Self = this.set("CloseUp", js.Any.fromFunction0(value))
+    def setDuplicate(value: ParagraphFormat): Self = StObject.set(x, "Duplicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setFarEastLineBreakControl(value: Double): Self = StObject.set(x, "FarEastLineBreakControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableLineHeightGrid(value: Double): Self = this.set("DisableLineHeightGrid", value.asInstanceOf[js.Any])
+    def setFirstLineIndent(value: Double): Self = StObject.set(x, "FirstLineIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuplicate(value: ParagraphFormat): Self = this.set("Duplicate", value.asInstanceOf[js.Any])
+    def setHalfWidthPunctuationOnTopOfLine(value: Double): Self = StObject.set(x, "HalfWidthPunctuationOnTopOfLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFarEastLineBreakControl(value: Double): Self = this.set("FarEastLineBreakControl", value.asInstanceOf[js.Any])
+    def setHangingPunctuation(value: Double): Self = StObject.set(x, "HangingPunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstLineIndent(value: Double): Self = this.set("FirstLineIndent", value.asInstanceOf[js.Any])
+    def setHyphenation(value: Double): Self = StObject.set(x, "Hyphenation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHalfWidthPunctuationOnTopOfLine(value: Double): Self = this.set("HalfWidthPunctuationOnTopOfLine", value.asInstanceOf[js.Any])
+    def setIndentCharWidth(value: Double => Unit): Self = StObject.set(x, "IndentCharWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHangingPunctuation(value: Double): Self = this.set("HangingPunctuation", value.asInstanceOf[js.Any])
+    def setIndentFirstLineCharWidth(value: Double => Unit): Self = StObject.set(x, "IndentFirstLineCharWidth", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHyphenation(value: Double): Self = this.set("Hyphenation", value.asInstanceOf[js.Any])
+    def setKeepTogether(value: Double): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentCharWidth(value: Double => Unit): Self = this.set("IndentCharWidth", js.Any.fromFunction1(value))
+    def setKeepWithNext(value: Double): Self = StObject.set(x, "KeepWithNext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentFirstLineCharWidth(value: Double => Unit): Self = this.set("IndentFirstLineCharWidth", js.Any.fromFunction1(value))
+    def setLeftIndent(value: Double): Self = StObject.set(x, "LeftIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepTogether(value: Double): Self = this.set("KeepTogether", value.asInstanceOf[js.Any])
+    def setLineSpacing(value: Double): Self = StObject.set(x, "LineSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepWithNext(value: Double): Self = this.set("KeepWithNext", value.asInstanceOf[js.Any])
+    def setLineSpacingRule(value: WdLineSpacing): Self = StObject.set(x, "LineSpacingRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIndent(value: Double): Self = this.set("LeftIndent", value.asInstanceOf[js.Any])
+    def setLineUnitAfter(value: Double): Self = StObject.set(x, "LineUnitAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacing(value: Double): Self = this.set("LineSpacing", value.asInstanceOf[js.Any])
+    def setLineUnitBefore(value: Double): Self = StObject.set(x, "LineUnitBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineSpacingRule(value: WdLineSpacing): Self = this.set("LineSpacingRule", value.asInstanceOf[js.Any])
+    def setMirrorIndents(value: Double): Self = StObject.set(x, "MirrorIndents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineUnitAfter(value: Double): Self = this.set("LineUnitAfter", value.asInstanceOf[js.Any])
+    def setNoLineNumber(value: Double): Self = StObject.set(x, "NoLineNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineUnitBefore(value: Double): Self = this.set("LineUnitBefore", value.asInstanceOf[js.Any])
+    def setOpenOrCloseUp(value: () => Unit): Self = StObject.set(x, "OpenOrCloseUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMirrorIndents(value: Double): Self = this.set("MirrorIndents", value.asInstanceOf[js.Any])
+    def setOpenUp(value: () => Unit): Self = StObject.set(x, "OpenUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNoLineNumber(value: Double): Self = this.set("NoLineNumber", value.asInstanceOf[js.Any])
+    def setOutlineLevel(value: WdOutlineLevel): Self = StObject.set(x, "OutlineLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenOrCloseUp(value: () => Unit): Self = this.set("OpenOrCloseUp", js.Any.fromFunction0(value))
+    def setPageBreakBefore(value: Double): Self = StObject.set(x, "PageBreakBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenUp(value: () => Unit): Self = this.set("OpenUp", js.Any.fromFunction0(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlineLevel(value: WdOutlineLevel): Self = this.set("OutlineLevel", value.asInstanceOf[js.Any])
+    def setReadingOrder(value: WdReadingOrder): Self = StObject.set(x, "ReadingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageBreakBefore(value: Double): Self = this.set("PageBreakBefore", value.asInstanceOf[js.Any])
+    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRightIndent(value: Double): Self = StObject.set(x, "RightIndent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingOrder(value: WdReadingOrder): Self = this.set("ReadingOrder", value.asInstanceOf[js.Any])
+    def setShading(value: Shading): Self = StObject.set(x, "Shading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReset(value: () => Unit): Self = this.set("Reset", js.Any.fromFunction0(value))
+    def setSpace1(value: () => Unit): Self = StObject.set(x, "Space1", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRightIndent(value: Double): Self = this.set("RightIndent", value.asInstanceOf[js.Any])
+    def setSpace15(value: () => Unit): Self = StObject.set(x, "Space15", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShading(value: Shading): Self = this.set("Shading", value.asInstanceOf[js.Any])
+    def setSpace2(value: () => Unit): Self = StObject.set(x, "Space2", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSpace1(value: () => Unit): Self = this.set("Space1", js.Any.fromFunction0(value))
+    def setSpaceAfter(value: Double): Self = StObject.set(x, "SpaceAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace15(value: () => Unit): Self = this.set("Space15", js.Any.fromFunction0(value))
+    def setSpaceAfterAuto(value: Double): Self = StObject.set(x, "SpaceAfterAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpace2(value: () => Unit): Self = this.set("Space2", js.Any.fromFunction0(value))
+    def setSpaceBefore(value: Double): Self = StObject.set(x, "SpaceBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfter(value: Double): Self = this.set("SpaceAfter", value.asInstanceOf[js.Any])
+    def setSpaceBeforeAuto(value: Double): Self = StObject.set(x, "SpaceBeforeAuto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceAfterAuto(value: Double): Self = this.set("SpaceAfterAuto", value.asInstanceOf[js.Any])
+    def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpaceBefore(value: Double): Self = this.set("SpaceBefore", value.asInstanceOf[js.Any])
+    def setTabHangingIndent(value: Double => Unit): Self = StObject.set(x, "TabHangingIndent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSpaceBeforeAuto(value: Double): Self = this.set("SpaceBeforeAuto", value.asInstanceOf[js.Any])
+    def setTabIndent(value: Double => Unit): Self = StObject.set(x, "TabIndent", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("Style", value.asInstanceOf[js.Any])
+    def setTabStops(value: TabStops): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabHangingIndent(value: Double => Unit): Self = this.set("TabHangingIndent", js.Any.fromFunction1(value))
+    def setTextboxTightWrap(value: WdTextboxTightWrap): Self = StObject.set(x, "TextboxTightWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabIndent(value: Double => Unit): Self = this.set("TabIndent", js.Any.fromFunction1(value))
+    def setWidowControl(value: Double): Self = StObject.set(x, "WidowControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabStops(value: TabStops): Self = this.set("TabStops", value.asInstanceOf[js.Any])
+    def setWordDotParagraphFormat_typekey(value: ParagraphFormat): Self = StObject.set(x, "Word.ParagraphFormat_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextboxTightWrap(value: WdTextboxTightWrap): Self = this.set("TextboxTightWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidowControl(value: Double): Self = this.set("WidowControl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotParagraphFormat_typekey(value: ParagraphFormat): Self = this.set("Word.ParagraphFormat_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordWrap(value: Double): Self = this.set("WordWrap", value.asInstanceOf[js.Any])
+    def setWordWrap(value: Double): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

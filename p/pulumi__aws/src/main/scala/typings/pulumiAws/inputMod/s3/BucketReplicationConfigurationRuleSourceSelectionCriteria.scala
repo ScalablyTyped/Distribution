@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.s3
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends js.Object {
+trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends StObject {
   
   /**
     * Match SSE-KMS encrypted objects (documented below). If specified, `replicaKmsKeyId`
@@ -25,24 +26,12 @@ object BucketReplicationConfigurationRuleSourceSelectionCriteria {
   }
   
   @scala.inline
-  implicit class BucketReplicationConfigurationRuleSourceSelectionCriteriaOps[Self <: BucketReplicationConfigurationRuleSourceSelectionCriteria] (val x: Self) extends AnyVal {
+  implicit class BucketReplicationConfigurationRuleSourceSelectionCriteriaMutableBuilder[Self <: BucketReplicationConfigurationRuleSourceSelectionCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSseKmsEncryptedObjects(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]): Self = StObject.set(x, "sseKmsEncryptedObjects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSseKmsEncryptedObjects(value: Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]): Self = this.set("sseKmsEncryptedObjects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSseKmsEncryptedObjects: Self = this.set("sseKmsEncryptedObjects", js.undefined)
+    def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "sseKmsEncryptedObjects", js.undefined)
   }
 }

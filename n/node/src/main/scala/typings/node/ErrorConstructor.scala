@@ -2,12 +2,13 @@ package typings.node
 
 import typings.node.NodeJS.CallSite
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ErrorConstructor extends js.Object {
+trait ErrorConstructor extends StObject {
   
   /** Create .stack property on a target object */
   def captureStackTrace(targetObject: js.Object): Unit = js.native

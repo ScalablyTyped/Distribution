@@ -4,12 +4,13 @@ import typings.node.Buffer
 import typings.stellarBase.stellarBaseStrings.base64
 import typings.stellarBase.stellarBaseStrings.hex
 import typings.stellarBase.stellarBaseStrings.raw
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionV0Envelope extends js.Object {
+trait TransactionV0Envelope extends StObject {
   
   def signatures(): js.Array[DecoratedSignature] = js.native
   def signatures(value: js.Array[DecoratedSignature]): js.Array[DecoratedSignature] = js.native

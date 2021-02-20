@@ -1,20 +1,13 @@
 package typings.semaphoreAsyncAwait
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("semaphore-async-await", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  /**
-    * Creates a lock.
-    */
-  class Lock ()
-    extends typings.semaphoreAsyncAwait.lockMod.Lock
-  
+  @JSImport("semaphore-async-await", JSImport.Default)
   @js.native
   class default protected ()
     extends typings.semaphoreAsyncAwait.semaphoreMod.default {
@@ -26,4 +19,12 @@ object mod extends js.Object {
       */
     def this(permits: Double) = this()
   }
+  
+  @JSImport("semaphore-async-await", "Lock")
+  @js.native
+  /**
+    * Creates a lock.
+    */
+  class Lock ()
+    extends typings.semaphoreAsyncAwait.lockMod.Lock
 }

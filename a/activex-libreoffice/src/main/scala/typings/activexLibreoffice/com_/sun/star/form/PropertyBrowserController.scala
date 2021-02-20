@@ -14,6 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.frame.XFrame
 import typings.activexLibreoffice.com_.sun.star.frame.XModel
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,30 +116,18 @@ object PropertyBrowserController {
   }
   
   @scala.inline
-  implicit class PropertyBrowserControllerOps[Self <: PropertyBrowserController] (val x: Self) extends AnyVal {
+  implicit class PropertyBrowserControllerMutableBuilder[Self <: PropertyBrowserController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentPage(value: String): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIntrospectedObject(value: XPropertySet): Self = StObject.set(x, "IntrospectedObject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentPage(value: String): Self = this.set("CurrentPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIntrospectedObject(value: XPropertySet): Self = this.set("IntrospectedObject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPropertySetInfo(value: XPropertySetInfo): Self = this.set("PropertySetInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = this.set("getPropertySetInfo", js.Any.fromFunction0(value))
+    def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
   }
 }

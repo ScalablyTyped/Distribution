@@ -1,11 +1,12 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollatorOptions extends js.Object {
+trait CollatorOptions extends StObject {
   
   var caseFirst: js.UndefOr[String] = js.native
   
@@ -28,54 +29,42 @@ object CollatorOptions {
   }
   
   @scala.inline
-  implicit class CollatorOptionsOps[Self <: CollatorOptions] (val x: Self) extends AnyVal {
+  implicit class CollatorOptionsMutableBuilder[Self <: CollatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseFirst(value: String): Self = StObject.set(x, "caseFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaseFirstUndefined: Self = StObject.set(x, "caseFirst", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnorePunctuation(value: Boolean): Self = StObject.set(x, "ignorePunctuation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseFirst(value: String): Self = this.set("caseFirst", value.asInstanceOf[js.Any])
+    def setIgnorePunctuationUndefined: Self = StObject.set(x, "ignorePunctuation", js.undefined)
     
     @scala.inline
-    def deleteCaseFirst: Self = this.set("caseFirst", js.undefined)
+    def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnorePunctuation(value: Boolean): Self = this.set("ignorePunctuation", value.asInstanceOf[js.Any])
+    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     @scala.inline
-    def deleteIgnorePunctuation: Self = this.set("ignorePunctuation", js.undefined)
+    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleMatcher(value: String): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
+    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
     @scala.inline
-    def deleteLocaleMatcher: Self = this.set("localeMatcher", js.undefined)
+    def setSensitivity(value: String): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumeric(value: Boolean): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
     
     @scala.inline
-    def deleteNumeric: Self = this.set("numeric", js.undefined)
+    def setUsage(value: String): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSensitivity(value: String): Self = this.set("sensitivity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSensitivity: Self = this.set("sensitivity", js.undefined)
-    
-    @scala.inline
-    def setUsage(value: String): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
   }
 }

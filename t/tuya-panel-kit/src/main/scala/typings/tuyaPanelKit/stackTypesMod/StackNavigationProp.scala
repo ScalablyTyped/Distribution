@@ -22,13 +22,14 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionEnd
 import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionStart
 import typings.tuyaPanelKit.typesMod.EventListenerCallback
 import typings.tuyaPanelKit.typesMod.EventMapCore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/native.NavigationProp<ParamList, RouteName, tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackNavigationState<ParamList>, tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationOptions, tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap> & tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackActionHelpers<ParamList> */
 @js.native
-trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends js.Object {
+trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] extends StObject {
   
   /**
     * UGLY HACK! DO NOT USE THE TYPE!!!

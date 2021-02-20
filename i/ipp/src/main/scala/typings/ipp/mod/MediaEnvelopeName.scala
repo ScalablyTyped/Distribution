@@ -1,5 +1,6 @@
 package typings.ipp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ipp.ippStrings.`na-number-9-envelope`
   - typings.ipp.ippStrings.`na-number-10-envelope`
 */
-trait MediaEnvelopeName extends js.Object
+trait MediaEnvelopeName extends StObject
 object MediaEnvelopeName {
   
   @scala.inline

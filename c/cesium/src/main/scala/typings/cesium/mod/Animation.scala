@@ -1,13 +1,14 @@
 package typings.cesium.mod
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Animation")
 @js.native
-class Animation protected () extends js.Object {
+class Animation protected () extends StObject {
   def this(container: String, viewModel: AnimationViewModel) = this()
   def this(container: Element, viewModel: AnimationViewModel) = this()
   

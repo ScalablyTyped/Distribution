@@ -1,11 +1,12 @@
 package typings.ejWebAll.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Typeofdevice extends js.Object {
+trait Typeofdevice extends StObject {
   
   def isAndroid(): Boolean = js.native
   
@@ -32,33 +33,21 @@ object Typeofdevice {
   }
   
   @scala.inline
-  implicit class TypeofdeviceOps[Self <: Typeofdevice] (val x: Self) extends AnyVal {
+  implicit class TypeofdeviceMutableBuilder[Self <: Typeofdevice] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsAndroid(value: () => Boolean): Self = StObject.set(x, "isAndroid", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsFlat(value: () => Boolean): Self = StObject.set(x, "isFlat", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsIOS(value: () => Boolean): Self = StObject.set(x, "isIOS", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsAndroid(value: () => Boolean): Self = this.set("isAndroid", js.Any.fromFunction0(value))
+    def setIsIOS7(value: () => Boolean): Self = StObject.set(x, "isIOS7", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFlat(value: () => Boolean): Self = this.set("isFlat", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsIOS(value: () => Boolean): Self = this.set("isIOS", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsIOS7(value: () => Boolean): Self = this.set("isIOS7", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsWindows(value: () => Boolean): Self = this.set("isWindows", js.Any.fromFunction0(value))
+    def setIsWindows(value: () => Boolean): Self = StObject.set(x, "isWindows", js.Any.fromFunction0(value))
   }
 }

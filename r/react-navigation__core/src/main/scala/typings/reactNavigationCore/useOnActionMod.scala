@@ -12,14 +12,15 @@ import typings.reactNavigationRouters.typesMod.Router
 import typings.reactNavigationRouters.typesMod.RouterConfigOptions
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-navigation/core/lib/typescript/src/useOnAction", JSImport.Namespace)
-@js.native
-object useOnActionMod extends js.Object {
+object useOnActionMod {
   
+  @JSImport("@react-navigation/core/lib/typescript/src/useOnAction", JSImport.Default)
+  @js.native
   def default(
     hasRouterGetStateSetStateKeyActionListenersBeforeRemoveListenersRouterConfigOptionsEmitter: Options
   ): js.Function2[
@@ -29,7 +30,7 @@ object useOnActionMod extends js.Object {
   ] = js.native
   
   @js.native
-  trait Options extends js.Object {
+  trait Options extends StObject {
     
     var actionListeners: js.Array[ChildActionListener] = js.native
     

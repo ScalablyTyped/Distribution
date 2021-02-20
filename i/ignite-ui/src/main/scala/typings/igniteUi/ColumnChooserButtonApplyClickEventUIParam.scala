@@ -1,11 +1,12 @@
 package typings.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnChooserButtonApplyClickEventUIParam extends js.Object {
+trait ColumnChooserButtonApplyClickEventUIParam extends StObject {
   
   /**
     * Gets a reference to the Column Chooser element. This is a jQuery object.
@@ -36,48 +37,36 @@ object ColumnChooserButtonApplyClickEventUIParam {
   }
   
   @scala.inline
-  implicit class ColumnChooserButtonApplyClickEventUIParamOps[Self <: ColumnChooserButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
+  implicit class ColumnChooserButtonApplyClickEventUIParamMutableBuilder[Self <: ColumnChooserButtonApplyClickEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsToHide(value: js.Array[_]): Self = StObject.set(x, "columnsToHide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnChooserElement(value: String): Self = this.set("columnChooserElement", value.asInstanceOf[js.Any])
+    def setColumnsToHideUndefined: Self = StObject.set(x, "columnsToHide", js.undefined)
     
     @scala.inline
-    def deleteColumnChooserElement: Self = this.set("columnChooserElement", js.undefined)
+    def setColumnsToHideVarargs(value: js.Any*): Self = StObject.set(x, "columnsToHide", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsToHideVarargs(value: js.Any*): Self = this.set("columnsToHide", js.Array(value :_*))
+    def setColumnsToShow(value: js.Array[_]): Self = StObject.set(x, "columnsToShow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsToHide(value: js.Array[_]): Self = this.set("columnsToHide", value.asInstanceOf[js.Any])
+    def setColumnsToShowUndefined: Self = StObject.set(x, "columnsToShow", js.undefined)
     
     @scala.inline
-    def deleteColumnsToHide: Self = this.set("columnsToHide", js.undefined)
+    def setColumnsToShowVarargs(value: js.Any*): Self = StObject.set(x, "columnsToShow", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsToShowVarargs(value: js.Any*): Self = this.set("columnsToShow", js.Array(value :_*))
+    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsToShow(value: js.Array[_]): Self = this.set("columnsToShow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteColumnsToShow: Self = this.set("columnsToShow", js.undefined)
-    
-    @scala.inline
-    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

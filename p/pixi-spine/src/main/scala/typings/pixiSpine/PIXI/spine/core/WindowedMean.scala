@@ -1,11 +1,12 @@
 package typings.pixiSpine.PIXI.spine.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowedMean extends js.Object {
+trait WindowedMean extends StObject {
   
   def addValue(value: Double): Unit = js.native
   
@@ -41,45 +42,33 @@ object WindowedMean {
   }
   
   @scala.inline
-  implicit class WindowedMeanOps[Self <: WindowedMean] (val x: Self) extends AnyVal {
+  implicit class WindowedMeanMutableBuilder[Self <: WindowedMean] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddValue(value: Double => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddedValues(value: Double): Self = StObject.set(x, "addedValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddValue(value: Double => Unit): Self = this.set("addValue", js.Any.fromFunction1(value))
+    def setGetMean(value: () => Double): Self = StObject.set(x, "getMean", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddedValues(value: Double): Self = this.set("addedValues", value.asInstanceOf[js.Any])
+    def setHasEnoughData(value: () => Boolean): Self = StObject.set(x, "hasEnoughData", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirty(value: Boolean): Self = this.set("dirty", value.asInstanceOf[js.Any])
+    def setLastValue(value: Double): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetMean(value: () => Double): Self = this.set("getMean", js.Any.fromFunction0(value))
+    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasEnoughData(value: () => Boolean): Self = this.set("hasEnoughData", js.Any.fromFunction0(value))
+    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastValue(value: Double): Self = this.set("lastValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMean(value: Double): Self = this.set("mean", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

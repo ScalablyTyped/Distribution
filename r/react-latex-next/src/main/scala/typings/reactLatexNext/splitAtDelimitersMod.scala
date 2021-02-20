@@ -1,14 +1,15 @@
 package typings.reactLatexNext
 
 import typings.reactLatexNext.typesMod.KatexData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-latex-next/dist/splitAtDelimiters", JSImport.Namespace)
-@js.native
-object splitAtDelimitersMod extends js.Object {
+object splitAtDelimitersMod {
   
+  @JSImport("react-latex-next/dist/splitAtDelimiters", JSImport.Default)
+  @js.native
   def default(
     startData: js.Array[KatexData],
     leftDelimiterValue: String,

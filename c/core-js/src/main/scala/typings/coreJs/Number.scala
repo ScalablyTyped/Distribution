@@ -1,6 +1,7 @@
 package typings.coreJs
 
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Modules: core.number.iterator
 // #############################################################################################
 @js.native
-trait Number extends js.Object {
+trait Number extends StObject {
   
   /**
     * Non-standard.

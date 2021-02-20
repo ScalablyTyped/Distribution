@@ -1,14 +1,15 @@
 package typings.winrt.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontStretch extends js.Object
+sealed trait FontStretch extends StObject
 @JSGlobal("Windows.UI.Text.FontStretch")
 @js.native
-object FontStretch extends js.Object {
+object FontStretch extends StObject {
   
   @js.native
   sealed trait condensed extends FontStretch

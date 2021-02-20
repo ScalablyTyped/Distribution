@@ -2,16 +2,16 @@ package typings.nodeJsonDb
 
 import typings.nodeJsonDb.mod.JsonDB
 import typings.nodeJsonDb.utilsMod.KeyValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-json-db/dist/lib/DBParentData", JSImport.Namespace)
-@js.native
-object dbparentdataMod extends js.Object {
+object dbparentdataMod {
   
+  @JSImport("node-json-db/dist/lib/DBParentData", "DBParentData")
   @js.native
-  class DBParentData protected () extends js.Object {
+  class DBParentData protected () extends StObject {
     def this(data: js.Any, db: JsonDB, dataPath: String) = this()
     def this(data: js.Any, db: JsonDB, dataPath: String, parent: String) = this()
     

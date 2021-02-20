@@ -1,5 +1,6 @@
 package typings.rascal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,30 +21,18 @@ object ConnectionConfig {
   }
   
   @scala.inline
-  implicit class ConnectionConfigOps[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
+  implicit class ConnectionConfigMutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManagement(value: ConnectionAttributes): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManagementUndefined: Self = StObject.set(x, "management", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetry(value: RetryConfig): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagement(value: ConnectionAttributes): Self = this.set("management", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteManagement: Self = this.set("management", js.undefined)
-    
-    @scala.inline
-    def setRetry(value: RetryConfig): Self = this.set("retry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetry: Self = this.set("retry", js.undefined)
+    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

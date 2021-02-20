@@ -8,14 +8,14 @@ import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.planeDragGizmoMod.PlaneDragGizmo
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/positionGizmo", JSImport.Namespace)
-@js.native
-object positionGizmoMod extends js.Object {
+object positionGizmoMod {
   
+  @JSImport("babylonjs/Gizmos/positionGizmo", "PositionGizmo")
   @js.native
   /**
     * Creates a PositionGizmo

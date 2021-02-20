@@ -1,11 +1,12 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Filter extends js.Object {
+trait Filter extends StObject {
   
   /** Gets the field that is currently being filtered. */
   def getFieldAsync(): js.Promise[Field] = js.native
@@ -33,30 +34,18 @@ object Filter {
   }
   
   @scala.inline
-  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetFieldAsync(value: () => js.Promise[Field]): Self = StObject.set(x, "getFieldAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFilterType(value: () => FilterType): Self = StObject.set(x, "getFilterType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetFieldAsync(value: () => js.Promise[Field]): Self = this.set("getFieldAsync", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFieldName(value: () => String): Self = this.set("getFieldName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetFilterType(value: () => FilterType): Self = this.set("getFilterType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetWorksheet(value: () => Worksheet): Self = this.set("getWorksheet", js.Any.fromFunction0(value))
+    def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
   }
 }

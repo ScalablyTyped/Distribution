@@ -1,16 +1,16 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumDWTCapFeederAlignment extends js.Object
+sealed trait EnumDWTCapFeederAlignment extends StObject
 /** CAP_FEEDERALIGNMENT values. */
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumDWT_CapFeederAlignment")
 @js.native
-object EnumDWTCapFeederAlignment extends js.Object {
+object EnumDWTCapFeederAlignment extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumDWTCapFeederAlignment with Double] = js.native
@@ -22,24 +22,20 @@ object EnumDWTCapFeederAlignment extends js.Object {
     */
   @js.native
   sealed trait TWFA_CENTER extends EnumDWTCapFeederAlignment
-  /* 2 */ @js.native
-  object TWFA_CENTER extends TopLevel[TWFA_CENTER with Double]
+  /* 2 */ val TWFA_CENTER: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapFeederAlignment.TWFA_CENTER with Double = js.native
   
   /** The alignment is to the left. */
   @js.native
   sealed trait TWFA_LEFT extends EnumDWTCapFeederAlignment
-  /* 1 */ @js.native
-  object TWFA_LEFT extends TopLevel[TWFA_LEFT with Double]
+  /* 1 */ val TWFA_LEFT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapFeederAlignment.TWFA_LEFT with Double = js.native
   
   /** The alignment is free-floating. Applications should assume that the origin for frames is on the left. */
   @js.native
   sealed trait TWFA_NONE extends EnumDWTCapFeederAlignment
-  /* 0 */ @js.native
-  object TWFA_NONE extends TopLevel[TWFA_NONE with Double]
+  /* 0 */ val TWFA_NONE: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapFeederAlignment.TWFA_NONE with Double = js.native
   
   /** The alignment is to the right. */
   @js.native
   sealed trait TWFA_RIGHT extends EnumDWTCapFeederAlignment
-  /* 3 */ @js.native
-  object TWFA_RIGHT extends TopLevel[TWFA_RIGHT with Double]
+  /* 3 */ val TWFA_RIGHT: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapFeederAlignment.TWFA_RIGHT with Double = js.native
 }

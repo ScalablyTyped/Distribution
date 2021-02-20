@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
 import typings.devtoolsProtocol.mod.Protocol.Security.CertificateId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurityDetails extends js.Object {
+trait SecurityDetails extends StObject {
   
   /**
     * Certificate ID value.
@@ -94,69 +95,57 @@ object SecurityDetails {
   }
   
   @scala.inline
-  implicit class SecurityDetailsOps[Self <: SecurityDetails] (val x: Self) extends AnyVal {
+  implicit class SecurityDetailsMutableBuilder[Self <: SecurityDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateTransparencyCompliance(value: CertificateTransparencyCompliance): Self = StObject.set(x, "certificateTransparencyCompliance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateTransparencyCompliance(value: CertificateTransparencyCompliance): Self = this.set("certificateTransparencyCompliance", value.asInstanceOf[js.Any])
+    def setKeyExchange(value: String): Self = StObject.set(x, "keyExchange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCipher(value: String): Self = this.set("cipher", value.asInstanceOf[js.Any])
+    def setKeyExchangeGroup(value: String): Self = StObject.set(x, "keyExchangeGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    def setKeyExchangeGroupUndefined: Self = StObject.set(x, "keyExchangeGroup", js.undefined)
     
     @scala.inline
-    def setKeyExchange(value: String): Self = this.set("keyExchange", value.asInstanceOf[js.Any])
+    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
     @scala.inline
-    def setSanListVarargs(value: String*): Self = this.set("sanList", js.Array(value :_*))
+    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSanList(value: js.Array[String]): Self = this.set("sanList", value.asInstanceOf[js.Any])
+    def setSanList(value: js.Array[String]): Self = StObject.set(x, "sanList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignedCertificateTimestampListVarargs(value: SignedCertificateTimestamp*): Self = this.set("signedCertificateTimestampList", js.Array(value :_*))
+    def setSanListVarargs(value: String*): Self = StObject.set(x, "sanList", js.Array(value :_*))
     
     @scala.inline
-    def setSignedCertificateTimestampList(value: js.Array[SignedCertificateTimestamp]): Self = this.set("signedCertificateTimestampList", value.asInstanceOf[js.Any])
+    def setSignedCertificateTimestampList(value: js.Array[SignedCertificateTimestamp]): Self = StObject.set(x, "signedCertificateTimestampList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectName(value: String): Self = this.set("subjectName", value.asInstanceOf[js.Any])
+    def setSignedCertificateTimestampListVarargs(value: SignedCertificateTimestamp*): Self = StObject.set(x, "signedCertificateTimestampList", js.Array(value :_*))
     
     @scala.inline
-    def setValidFrom(value: TimeSinceEpoch): Self = this.set("validFrom", value.asInstanceOf[js.Any])
+    def setSubjectName(value: String): Self = StObject.set(x, "subjectName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidTo(value: TimeSinceEpoch): Self = this.set("validTo", value.asInstanceOf[js.Any])
+    def setValidFrom(value: TimeSinceEpoch): Self = StObject.set(x, "validFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyExchangeGroup(value: String): Self = this.set("keyExchangeGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyExchangeGroup: Self = this.set("keyExchangeGroup", js.undefined)
-    
-    @scala.inline
-    def setMac(value: String): Self = this.set("mac", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMac: Self = this.set("mac", js.undefined)
+    def setValidTo(value: TimeSinceEpoch): Self = StObject.set(x, "validTo", value.asInstanceOf[js.Any])
   }
 }

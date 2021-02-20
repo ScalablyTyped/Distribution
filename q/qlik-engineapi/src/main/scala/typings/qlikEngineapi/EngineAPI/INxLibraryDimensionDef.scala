@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NxLibraryDimensionDef
   */
 @js.native
-trait INxLibraryDimensionDef extends js.Object {
+trait INxLibraryDimensionDef extends StObject {
   
   /**
     * Array of dimension names.
@@ -44,36 +45,24 @@ object INxLibraryDimensionDef {
   }
   
   @scala.inline
-  implicit class INxLibraryDimensionDefOps[Self <: INxLibraryDimensionDef] (val x: Self) extends AnyVal {
+  implicit class INxLibraryDimensionDefMutableBuilder[Self <: INxLibraryDimensionDef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQFieldLabels(value: js.Array[String]): Self = StObject.set(x, "qFieldLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldDefsVarargs(value: String*): Self = this.set("qFieldDefs", js.Array(value :_*))
+    def setQFieldLabelsVarargs(value: String*): Self = StObject.set(x, "qFieldLabels", js.Array(value :_*))
     
     @scala.inline
-    def setQFieldDefs(value: js.Array[String]): Self = this.set("qFieldDefs", value.asInstanceOf[js.Any])
+    def setQGrouping(value: NxGrpType): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQFieldLabelsVarargs(value: String*): Self = this.set("qFieldLabels", js.Array(value :_*))
-    
-    @scala.inline
-    def setQFieldLabels(value: js.Array[String]): Self = this.set("qFieldLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQGrouping(value: NxGrpType): Self = this.set("qGrouping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQLabelExpression(value: String): Self = this.set("qLabelExpression", value.asInstanceOf[js.Any])
+    def setQLabelExpression(value: String): Self = StObject.set(x, "qLabelExpression", value.asInstanceOf[js.Any])
   }
 }

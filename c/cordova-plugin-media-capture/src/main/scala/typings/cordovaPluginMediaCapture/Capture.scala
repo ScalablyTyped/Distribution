@@ -1,12 +1,13 @@
 package typings.cordovaPluginMediaCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This plugin provides access to the device's audio, image, and video capture capabilities. */
 @js.native
-trait Capture extends js.Object {
+trait Capture extends StObject {
   
   /**
     * Start the audio recorder application and return information about captured audio clip files.

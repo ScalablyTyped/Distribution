@@ -2,6 +2,7 @@ package typings.chrome.global.chrome
 
 import typings.chrome.chrome.proxy.ProxyErrorEvent
 import typings.chrome.chrome.types.ChromeSetting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  "proxy"
   * @since Chrome 13.
   */
-@JSGlobal("chrome.proxy")
-@js.native
-object proxy extends js.Object {
+object proxy {
   
-  var onProxyError: ProxyErrorEvent = js.native
+  @JSGlobal("chrome.proxy")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var settings: ChromeSetting = js.native
+  @JSGlobal("chrome.proxy.onProxyError")
+  @js.native
+  def onProxyError: ProxyErrorEvent = js.native
+  @scala.inline
+  def onProxyError_=(x: ProxyErrorEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onProxyError")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("chrome.proxy.settings")
+  @js.native
+  def settings: ChromeSetting = js.native
+  @scala.inline
+  def settings_=(x: ChromeSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
 }

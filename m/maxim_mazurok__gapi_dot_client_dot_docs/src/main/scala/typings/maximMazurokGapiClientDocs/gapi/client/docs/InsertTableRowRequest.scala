@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InsertTableRowRequest extends js.Object {
+trait InsertTableRowRequest extends StObject {
   
   /** Whether to insert new row below the reference cell location. - `True`: insert below the cell. - `False`: insert above the cell. */
   var insertBelow: js.UndefOr[Boolean] = js.native
@@ -25,30 +26,18 @@ object InsertTableRowRequest {
   }
   
   @scala.inline
-  implicit class InsertTableRowRequestOps[Self <: InsertTableRowRequest] (val x: Self) extends AnyVal {
+  implicit class InsertTableRowRequestMutableBuilder[Self <: InsertTableRowRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInsertBelowUndefined: Self = StObject.set(x, "insertBelow", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInsertBelow(value: Boolean): Self = this.set("insertBelow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInsertBelow: Self = this.set("insertBelow", js.undefined)
-    
-    @scala.inline
-    def setTableCellLocation(value: TableCellLocation): Self = this.set("tableCellLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableCellLocation: Self = this.set("tableCellLocation", js.undefined)
+    def setTableCellLocationUndefined: Self = StObject.set(x, "tableCellLocation", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.jobsV3Mod.jobsV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Compensation range.
   */
 @js.native
-trait SchemaCompensationRange extends js.Object {
+trait SchemaCompensationRange extends StObject {
   
   /**
     * Optional.  The maximum amount of compensation. If left empty, the value
@@ -33,30 +34,18 @@ object SchemaCompensationRange {
   }
   
   @scala.inline
-  implicit class SchemaCompensationRangeOps[Self <: SchemaCompensationRange] (val x: Self) extends AnyVal {
+  implicit class SchemaCompensationRangeMutableBuilder[Self <: SchemaCompensationRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxCompensation(value: SchemaMoney): Self = StObject.set(x, "maxCompensation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxCompensationUndefined: Self = StObject.set(x, "maxCompensation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinCompensation(value: SchemaMoney): Self = StObject.set(x, "minCompensation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxCompensation(value: SchemaMoney): Self = this.set("maxCompensation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxCompensation: Self = this.set("maxCompensation", js.undefined)
-    
-    @scala.inline
-    def setMinCompensation(value: SchemaMoney): Self = this.set("minCompensation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMinCompensation: Self = this.set("minCompensation", js.undefined)
+    def setMinCompensationUndefined: Self = StObject.set(x, "minCompensation", js.undefined)
   }
 }

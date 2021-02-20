@@ -1,5 +1,6 @@
 package typings.azure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -163,15 +164,33 @@ class TableService () extends BatchServiceClient {
   ): Unit = js.native
 }
 /* static members */
-@JSImport("azure", "TableService")
-@js.native
-object TableService extends js.Object {
+object TableService {
   
-  var incorrectCallbackErr: String = js.native
+  @JSImport("azure", "TableService")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var incorrectPartitionErr: String = js.native
+  @JSImport("azure", "TableService.incorrectCallbackErr")
+  @js.native
+  def incorrectCallbackErr: String = js.native
+  @scala.inline
+  def incorrectCallbackErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectCallbackErr")(x.asInstanceOf[js.Any])
   
-  var incorrectTableNameErr: String = js.native
+  @JSImport("azure", "TableService.incorrectPartitionErr")
+  @js.native
+  def incorrectPartitionErr: String = js.native
+  @scala.inline
+  def incorrectPartitionErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectPartitionErr")(x.asInstanceOf[js.Any])
   
-  var incorrectTableQuery: String = js.native
+  @JSImport("azure", "TableService.incorrectTableNameErr")
+  @js.native
+  def incorrectTableNameErr: String = js.native
+  @scala.inline
+  def incorrectTableNameErr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectTableNameErr")(x.asInstanceOf[js.Any])
+  
+  @JSImport("azure", "TableService.incorrectTableQuery")
+  @js.native
+  def incorrectTableQuery: String = js.native
+  @scala.inline
+  def incorrectTableQuery_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incorrectTableQuery")(x.asInstanceOf[js.Any])
 }

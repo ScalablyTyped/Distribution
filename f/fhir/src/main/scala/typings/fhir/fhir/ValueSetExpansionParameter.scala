@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -89,99 +90,87 @@ object ValueSetExpansionParameter {
   }
   
   @scala.inline
-  implicit class ValueSetExpansionParameterOps[Self <: ValueSetExpansionParameter] (val x: Self) extends AnyVal {
+  implicit class ValueSetExpansionParameterMutableBuilder[Self <: ValueSetExpansionParameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setValueCode(value: code): Self = StObject.set(x, "valueCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    def setValueCodeUndefined: Self = StObject.set(x, "valueCode", js.undefined)
     
     @scala.inline
-    def delete_name: Self = this.set("_name", js.undefined)
+    def setValueDecimal(value: decimal): Self = StObject.set(x, "valueDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueBoolean(value: Element): Self = this.set("_valueBoolean", value.asInstanceOf[js.Any])
+    def setValueDecimalUndefined: Self = StObject.set(x, "valueDecimal", js.undefined)
     
     @scala.inline
-    def delete_valueBoolean: Self = this.set("_valueBoolean", js.undefined)
+    def setValueInteger(value: integer): Self = StObject.set(x, "valueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueCode(value: Element): Self = this.set("_valueCode", value.asInstanceOf[js.Any])
+    def setValueIntegerUndefined: Self = StObject.set(x, "valueInteger", js.undefined)
     
     @scala.inline
-    def delete_valueCode: Self = this.set("_valueCode", js.undefined)
+    def setValueString(value: String): Self = StObject.set(x, "valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueDecimal(value: Element): Self = this.set("_valueDecimal", value.asInstanceOf[js.Any])
+    def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
     
     @scala.inline
-    def delete_valueDecimal: Self = this.set("_valueDecimal", js.undefined)
+    def setValueUri(value: uri): Self = StObject.set(x, "valueUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueInteger(value: Element): Self = this.set("_valueInteger", value.asInstanceOf[js.Any])
+    def setValueUriUndefined: Self = StObject.set(x, "valueUri", js.undefined)
     
     @scala.inline
-    def delete_valueInteger: Self = this.set("_valueInteger", js.undefined)
+    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueString(value: Element): Self = this.set("_valueString", value.asInstanceOf[js.Any])
+    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
     @scala.inline
-    def delete_valueString: Self = this.set("_valueString", js.undefined)
+    def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_valueUri(value: Element): Self = this.set("_valueUri", value.asInstanceOf[js.Any])
+    def set_valueBooleanUndefined: Self = StObject.set(x, "_valueBoolean", js.undefined)
     
     @scala.inline
-    def delete_valueUri: Self = this.set("_valueUri", js.undefined)
+    def set_valueCode(value: Element): Self = StObject.set(x, "_valueCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueBoolean(value: Boolean): Self = this.set("valueBoolean", value.asInstanceOf[js.Any])
+    def set_valueCodeUndefined: Self = StObject.set(x, "_valueCode", js.undefined)
     
     @scala.inline
-    def deleteValueBoolean: Self = this.set("valueBoolean", js.undefined)
+    def set_valueDecimal(value: Element): Self = StObject.set(x, "_valueDecimal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueCode(value: code): Self = this.set("valueCode", value.asInstanceOf[js.Any])
+    def set_valueDecimalUndefined: Self = StObject.set(x, "_valueDecimal", js.undefined)
     
     @scala.inline
-    def deleteValueCode: Self = this.set("valueCode", js.undefined)
+    def set_valueInteger(value: Element): Self = StObject.set(x, "_valueInteger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueDecimal(value: decimal): Self = this.set("valueDecimal", value.asInstanceOf[js.Any])
+    def set_valueIntegerUndefined: Self = StObject.set(x, "_valueInteger", js.undefined)
     
     @scala.inline
-    def deleteValueDecimal: Self = this.set("valueDecimal", js.undefined)
+    def set_valueString(value: Element): Self = StObject.set(x, "_valueString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueInteger(value: integer): Self = this.set("valueInteger", value.asInstanceOf[js.Any])
+    def set_valueStringUndefined: Self = StObject.set(x, "_valueString", js.undefined)
     
     @scala.inline
-    def deleteValueInteger: Self = this.set("valueInteger", js.undefined)
+    def set_valueUri(value: Element): Self = StObject.set(x, "_valueUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueString: Self = this.set("valueString", js.undefined)
-    
-    @scala.inline
-    def setValueUri(value: uri): Self = this.set("valueUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueUri: Self = this.set("valueUri", js.undefined)
+    def set_valueUriUndefined: Self = StObject.set(x, "_valueUri", js.undefined)
   }
 }

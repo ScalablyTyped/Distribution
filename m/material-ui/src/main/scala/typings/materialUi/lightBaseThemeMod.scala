@@ -1,15 +1,26 @@
 package typings.materialUi
 
 import typings.materialUi.MaterialUI.Styles.RawTheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/styles/baseThemes/lightBaseTheme", JSImport.Namespace)
-@js.native
-object lightBaseThemeMod extends js.Object {
+object lightBaseThemeMod {
   
-  var default: RawTheme = js.native
+  @JSImport("material-ui/styles/baseThemes/lightBaseTheme", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  var lightBaseTheme: RawTheme = js.native
+  @JSImport("material-ui/styles/baseThemes/lightBaseTheme", JSImport.Default)
+  @js.native
+  def default: RawTheme = js.native
+  @scala.inline
+  def default_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  
+  @JSImport("material-ui/styles/baseThemes/lightBaseTheme", "lightBaseTheme")
+  @js.native
+  def lightBaseTheme: RawTheme = js.native
+  @scala.inline
+  def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
 }

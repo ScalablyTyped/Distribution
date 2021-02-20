@@ -1,11 +1,12 @@
 package typings.phaser.Phaser.Types.Physics.Matter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatterRunnerConfig extends js.Object {
+trait MatterRunnerConfig extends StObject {
   
   /**
     * A number that specifies the time correction factor to apply to the update. This can help improve the accuracy of the simulation in cases where delta is changing between updates.
@@ -51,60 +52,48 @@ object MatterRunnerConfig {
   }
   
   @scala.inline
-  implicit class MatterRunnerConfigOps[Self <: MatterRunnerConfig] (val x: Self) extends AnyVal {
+  implicit class MatterRunnerConfigMutableBuilder[Self <: MatterRunnerConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCorrection(value: Double): Self = StObject.set(x, "correction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCorrectionUndefined: Self = StObject.set(x, "correction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCorrection(value: Double): Self = this.set("correction", value.asInstanceOf[js.Any])
+    def setDeltaMax(value: Double): Self = StObject.set(x, "deltaMax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCorrection: Self = this.set("correction", js.undefined)
+    def setDeltaMaxUndefined: Self = StObject.set(x, "deltaMax", js.undefined)
     
     @scala.inline
-    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    def setDeltaMin(value: Double): Self = StObject.set(x, "deltaMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDelta: Self = this.set("delta", js.undefined)
+    def setDeltaMinUndefined: Self = StObject.set(x, "deltaMin", js.undefined)
     
     @scala.inline
-    def setDeltaMax(value: Double): Self = this.set("deltaMax", value.asInstanceOf[js.Any])
+    def setDeltaSampleSize(value: Double): Self = StObject.set(x, "deltaSampleSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeltaMax: Self = this.set("deltaMax", js.undefined)
+    def setDeltaSampleSizeUndefined: Self = StObject.set(x, "deltaSampleSize", js.undefined)
     
     @scala.inline
-    def setDeltaMin(value: Double): Self = this.set("deltaMin", value.asInstanceOf[js.Any])
+    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
     @scala.inline
-    def deleteDeltaMin: Self = this.set("deltaMin", js.undefined)
+    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeltaSampleSize(value: Double): Self = this.set("deltaSampleSize", value.asInstanceOf[js.Any])
+    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
     @scala.inline
-    def deleteDeltaSampleSize: Self = this.set("deltaSampleSize", js.undefined)
+    def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFps(value: Double): Self = this.set("fps", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFps: Self = this.set("fps", js.undefined)
-    
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = this.set("isFixed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFixed: Self = this.set("isFixed", js.undefined)
+    def setIsFixedUndefined: Self = StObject.set(x, "isFixed", js.undefined)
   }
 }

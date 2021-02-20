@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StorePreviewProductPurchaseStatus extends js.Object
+sealed trait StorePreviewProductPurchaseStatus extends StObject
 /** Defines values that are used to indicate the transaction status when purchasing an in-app product SKU by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
 @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus")
 @js.native
-object StorePreviewProductPurchaseStatus extends js.Object {
+object StorePreviewProductPurchaseStatus extends StObject {
   
   /** The transaction did not complete because this in-app product SKU has already been purchased by the user, and it cannot be purchased again. This value only applies to durable in-app products. */
   @js.native

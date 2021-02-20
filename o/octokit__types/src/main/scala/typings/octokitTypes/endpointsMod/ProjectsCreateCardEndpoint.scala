@@ -1,13 +1,14 @@
 package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.anon.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  column_id :number,   note :string | undefined,   content_id :number | undefined,   content_type :string | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'inertia'> */
 @js.native
-trait ProjectsCreateCardEndpoint extends js.Object {
+trait ProjectsCreateCardEndpoint extends StObject {
   
   var column_id: Double = js.native
   
@@ -38,42 +39,30 @@ object ProjectsCreateCardEndpoint {
   }
   
   @scala.inline
-  implicit class ProjectsCreateCardEndpointOps[Self <: ProjectsCreateCardEndpoint] (val x: Self) extends AnyVal {
+  implicit class ProjectsCreateCardEndpointMutableBuilder[Self <: ProjectsCreateCardEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn_id(value: Double): Self = StObject.set(x, "column_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContent_id(value: Double): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
     
     @scala.inline
-    def setColumn_id(value: Double): Self = this.set("column_id", value.asInstanceOf[js.Any])
+    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMediaType(value: `7`): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
     @scala.inline
-    def setContent_id(value: Double): Self = this.set("content_id", value.asInstanceOf[js.Any])
+    def setMediaType(value: `7`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent_id: Self = this.set("content_id", js.undefined)
+    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent_type(value: String): Self = this.set("content_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContent_type: Self = this.set("content_type", js.undefined)
-    
-    @scala.inline
-    def setNote(value: String): Self = this.set("note", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNote: Self = this.set("note", js.undefined)
+    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
   }
 }

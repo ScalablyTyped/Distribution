@@ -1,11 +1,12 @@
 package typings.jsrsasign.jsrsasign
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PKCS8Info extends js.Object {
+trait PKCS8Info extends StObject {
   
   /** hexadecimal string of encrypted private key */
   var ciphertext: String = js.native
@@ -37,33 +38,21 @@ object PKCS8Info {
   }
   
   @scala.inline
-  implicit class PKCS8InfoOps[Self <: PKCS8Info] (val x: Self) extends AnyVal {
+  implicit class PKCS8InfoMutableBuilder[Self <: PKCS8Info] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEncryptionSchemeAlg(value: String): Self = StObject.set(x, "encryptionSchemeAlg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEncryptionSchemeIV(value: String): Self = StObject.set(x, "encryptionSchemeIV", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCiphertext(value: String): Self = this.set("ciphertext", value.asInstanceOf[js.Any])
+    def setPbkdf2Salt(value: String): Self = StObject.set(x, "pbkdf2Salt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionSchemeAlg(value: String): Self = this.set("encryptionSchemeAlg", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEncryptionSchemeIV(value: String): Self = this.set("encryptionSchemeIV", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPbkdf2Salt(value: String): Self = this.set("pbkdf2Salt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPkbdf2Iter(value: String): Self = this.set("pkbdf2Iter", value.asInstanceOf[js.Any])
+    def setPkbdf2Iter(value: String): Self = StObject.set(x, "pkbdf2Iter", value.asInstanceOf[js.Any])
   }
 }

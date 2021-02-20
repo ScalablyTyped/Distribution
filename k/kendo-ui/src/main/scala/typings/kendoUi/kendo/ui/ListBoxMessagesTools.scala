@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListBoxMessagesTools extends js.Object {
+trait ListBoxMessagesTools extends StObject {
   
   var moveDown: js.UndefOr[String] = js.native
   
@@ -30,60 +31,48 @@ object ListBoxMessagesTools {
   }
   
   @scala.inline
-  implicit class ListBoxMessagesToolsOps[Self <: ListBoxMessagesTools] (val x: Self) extends AnyVal {
+  implicit class ListBoxMessagesToolsMutableBuilder[Self <: ListBoxMessagesTools] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMoveDown(value: String): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMoveDownUndefined: Self = StObject.set(x, "moveDown", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMoveUp(value: String): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveDown(value: String): Self = this.set("moveDown", value.asInstanceOf[js.Any])
+    def setMoveUpUndefined: Self = StObject.set(x, "moveUp", js.undefined)
     
     @scala.inline
-    def deleteMoveDown: Self = this.set("moveDown", js.undefined)
+    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoveUp(value: String): Self = this.set("moveUp", value.asInstanceOf[js.Any])
+    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def deleteMoveUp: Self = this.set("moveUp", js.undefined)
+    def setTransferAllFrom(value: String): Self = StObject.set(x, "transferAllFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemove(value: String): Self = this.set("remove", value.asInstanceOf[js.Any])
+    def setTransferAllFromUndefined: Self = StObject.set(x, "transferAllFrom", js.undefined)
     
     @scala.inline
-    def deleteRemove: Self = this.set("remove", js.undefined)
+    def setTransferAllTo(value: String): Self = StObject.set(x, "transferAllTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferAllFrom(value: String): Self = this.set("transferAllFrom", value.asInstanceOf[js.Any])
+    def setTransferAllToUndefined: Self = StObject.set(x, "transferAllTo", js.undefined)
     
     @scala.inline
-    def deleteTransferAllFrom: Self = this.set("transferAllFrom", js.undefined)
+    def setTransferFrom(value: String): Self = StObject.set(x, "transferFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferAllTo(value: String): Self = this.set("transferAllTo", value.asInstanceOf[js.Any])
+    def setTransferFromUndefined: Self = StObject.set(x, "transferFrom", js.undefined)
     
     @scala.inline
-    def deleteTransferAllTo: Self = this.set("transferAllTo", js.undefined)
+    def setTransferTo(value: String): Self = StObject.set(x, "transferTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferFrom(value: String): Self = this.set("transferFrom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferFrom: Self = this.set("transferFrom", js.undefined)
-    
-    @scala.inline
-    def setTransferTo(value: String): Self = this.set("transferTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferTo: Self = this.set("transferTo", js.undefined)
+    def setTransferToUndefined: Self = StObject.set(x, "transferTo", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.forecastserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetAccuracyMetricsResponse extends js.Object {
+trait GetAccuracyMetricsResponse extends StObject {
   
   /**
     * An array of results from evaluating the predictor.
@@ -21,27 +22,15 @@ object GetAccuracyMetricsResponse {
   }
   
   @scala.inline
-  implicit class GetAccuracyMetricsResponseOps[Self <: GetAccuracyMetricsResponse] (val x: Self) extends AnyVal {
+  implicit class GetAccuracyMetricsResponseMutableBuilder[Self <: GetAccuracyMetricsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPredictorEvaluationResults(value: PredictorEvaluationResults): Self = StObject.set(x, "PredictorEvaluationResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPredictorEvaluationResultsUndefined: Self = StObject.set(x, "PredictorEvaluationResults", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPredictorEvaluationResultsVarargs(value: EvaluationResult*): Self = this.set("PredictorEvaluationResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setPredictorEvaluationResults(value: PredictorEvaluationResults): Self = this.set("PredictorEvaluationResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePredictorEvaluationResults: Self = this.set("PredictorEvaluationResults", js.undefined)
+    def setPredictorEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "PredictorEvaluationResults", js.Array(value :_*))
   }
 }

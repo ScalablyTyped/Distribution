@@ -1,12 +1,11 @@
 package typings.awsSdkClientS3Browser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-browser/types/GetBucketWebsiteExceptionsUnion", JSImport.Namespace)
-@js.native
-object getBucketWebsiteExceptionsUnionMod extends js.Object {
+object getBucketWebsiteExceptionsUnionMod {
   
   type GetBucketWebsiteExceptionsUnion = scala.Nothing
 }

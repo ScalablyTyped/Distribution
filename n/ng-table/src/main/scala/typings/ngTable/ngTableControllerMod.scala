@@ -20,46 +20,16 @@ import typings.ngTable.publicInterfacesMod.IDynamicTableColDef
 import typings.ngTable.publicInterfacesMod.ITableInputAttributes
 import typings.ngTable.resultsMod.DataResults
 import typings.ngTable.resultsMod.GroupedDataResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/browser/ngTableController", JSImport.Namespace)
-@js.native
-object ngTableControllerMod extends js.Object {
+object ngTableControllerMod {
   
+  @JSImport("ng-table/src/browser/ngTableController", "NgTableController")
   @js.native
-  trait ITableScope[T] extends IRootScopeService {
-    
-    @JSName("$columns")
-    var $columns: js.Array[IColumnDef] = js.native
-    
-    @JSName("$data")
-    var $data: js.UndefOr[DataResults[T]] = js.native
-    
-    @JSName("$filterRow")
-    var $filterRow: Disabled = js.native
-    
-    @JSName("$groupRow")
-    var $groupRow: Show = js.native
-    
-    @JSName("$groups")
-    var $groups: js.UndefOr[GroupedDataResults[T]] = js.native
-    
-    @JSName("$loading")
-    var $loading: Boolean = js.native
-    
-    var pages: js.Array[IPageButton] = js.native
-    
-    var params: NgTableParams[T] = js.native
-    
-    var show_filter: Boolean = js.native
-    
-    var templates: Header = js.native
-  }
-  
-  @js.native
-  class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected () extends js.Object {
+  class NgTableController[TParams, TCol /* <: IColumnDef | IDynamicTableColDef */] protected () extends StObject {
     def this(
       $scope: ITableScope[TParams],
       $timeout: ITimeoutService,
@@ -121,10 +91,46 @@ object ngTableControllerMod extends js.Object {
     /* private */ def subscribeToTableEvents(): js.Any = js.native
   }
   /* static members */
-  @js.native
-  object NgTableController extends js.Object {
+  object NgTableController {
     
-    @JSName("$inject")
-    var $inject: js.Array[String] = js.native
+    @JSImport("ng-table/src/browser/ngTableController", "NgTableController")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("ng-table/src/browser/ngTableController", "NgTableController.$inject")
+    @js.native
+    def $inject: js.Array[String] = js.native
+    @scala.inline
+    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+  }
+  
+  @js.native
+  trait ITableScope[T] extends IRootScopeService {
+    
+    @JSName("$columns")
+    var $columns: js.Array[IColumnDef] = js.native
+    
+    @JSName("$data")
+    var $data: js.UndefOr[DataResults[T]] = js.native
+    
+    @JSName("$filterRow")
+    var $filterRow: Disabled = js.native
+    
+    @JSName("$groupRow")
+    var $groupRow: Show = js.native
+    
+    @JSName("$groups")
+    var $groups: js.UndefOr[GroupedDataResults[T]] = js.native
+    
+    @JSName("$loading")
+    var $loading: Boolean = js.native
+    
+    var pages: js.Array[IPageButton] = js.native
+    
+    var params: NgTableParams[T] = js.native
+    
+    var show_filter: Boolean = js.native
+    
+    var templates: Header = js.native
   }
 }

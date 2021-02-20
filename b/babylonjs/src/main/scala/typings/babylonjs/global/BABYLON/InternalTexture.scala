@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,11 +28,11 @@ class InternalTexture protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.InternalTexture")
-@js.native
-object InternalTexture extends js.Object {
+object InternalTexture {
   
   /** @hidden */
+  @JSGlobal("BABYLON.InternalTexture._UpdateRGBDAsync")
+  @js.native
   def _UpdateRGBDAsync(
     internalTexture: typings.babylonjs.BABYLON.InternalTexture,
     data: js.Array[js.Array[ArrayBufferView]],

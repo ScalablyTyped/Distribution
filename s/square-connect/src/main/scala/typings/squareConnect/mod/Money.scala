@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "Money")
 @js.native
-class Money () extends js.Object {
+class Money () extends StObject {
   
   /**
     * The amount of money, in the smallest denomination of the currency indicated by `currency`.

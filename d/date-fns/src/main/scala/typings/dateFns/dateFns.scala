@@ -21,13 +21,14 @@ import typings.dateFns.dateFnsNumbers.`4`
 import typings.dateFns.dateFnsNumbers.`5`
 import typings.dateFns.dateFnsNumbers.`6`
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // dateFns Global Interface
 @js.native
-trait dateFns extends js.Object {
+trait dateFns extends StObject {
   
   def add(date: Double, duration: Duration): Date = js.native
   def add(date: Date, duration: Duration): Date = js.native

@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Animation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KeyframeStyle extends js.Object {
+trait KeyframeStyle extends StObject {
   
   /**
     * `AnimationEffect`'s timing function.
@@ -26,24 +27,12 @@ object KeyframeStyle {
   }
   
   @scala.inline
-  implicit class KeyframeStyleOps[Self <: KeyframeStyle] (val x: Self) extends AnyVal {
+  implicit class KeyframeStyleMutableBuilder[Self <: KeyframeStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOffset(value: String): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

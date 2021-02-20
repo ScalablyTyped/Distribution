@@ -1,11 +1,12 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SymbolConstructor extends js.Object {
+trait SymbolConstructor extends StObject {
   
   /**
     * Returns a new unique Symbol value.

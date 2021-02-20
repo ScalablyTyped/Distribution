@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBooks.gapi.client.books
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Notification extends js.Object {
+trait Notification extends StObject {
   
   var body: js.UndefOr[String] = js.native
   
@@ -50,117 +51,105 @@ object Notification {
   }
   
   @scala.inline
-  implicit class NotificationOps[Self <: Notification] (val x: Self) extends AnyVal {
+  implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrmExperimentIds(value: js.Array[String]): Self = StObject.set(x, "crmExperimentIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    def setCrmExperimentIdsUndefined: Self = StObject.set(x, "crmExperimentIds", js.undefined)
     
     @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
+    def setCrmExperimentIdsVarargs(value: String*): Self = StObject.set(x, "crmExperimentIds", js.Array(value :_*))
     
     @scala.inline
-    def setCrmExperimentIdsVarargs(value: String*): Self = this.set("crmExperimentIds", js.Array(value :_*))
+    def setDoc_id(value: String): Self = StObject.set(x, "doc_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrmExperimentIds(value: js.Array[String]): Self = this.set("crmExperimentIds", value.asInstanceOf[js.Any])
+    def setDoc_idUndefined: Self = StObject.set(x, "doc_id", js.undefined)
     
     @scala.inline
-    def deleteCrmExperimentIds: Self = this.set("crmExperimentIds", js.undefined)
+    def setDoc_type(value: String): Self = StObject.set(x, "doc_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_id(value: String): Self = this.set("doc_id", value.asInstanceOf[js.Any])
+    def setDoc_typeUndefined: Self = StObject.set(x, "doc_type", js.undefined)
     
     @scala.inline
-    def deleteDoc_id: Self = this.set("doc_id", js.undefined)
+    def setDont_show_notification(value: Boolean): Self = StObject.set(x, "dont_show_notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoc_type(value: String): Self = this.set("doc_type", value.asInstanceOf[js.Any])
+    def setDont_show_notificationUndefined: Self = StObject.set(x, "dont_show_notification", js.undefined)
     
     @scala.inline
-    def deleteDoc_type: Self = this.set("doc_type", js.undefined)
+    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDont_show_notification(value: Boolean): Self = this.set("dont_show_notification", value.asInstanceOf[js.Any])
+    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
     @scala.inline
-    def deleteDont_show_notification: Self = this.set("dont_show_notification", js.undefined)
+    def setIs_document_mature(value: Boolean): Self = StObject.set(x, "is_document_mature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    def setIs_document_matureUndefined: Self = StObject.set(x, "is_document_mature", js.undefined)
     
     @scala.inline
-    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIs_document_mature(value: Boolean): Self = this.set("is_document_mature", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIs_document_mature: Self = this.set("is_document_mature", js.undefined)
+    def setNotificationGroup(value: String): Self = StObject.set(x, "notificationGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNotificationGroupUndefined: Self = StObject.set(x, "notificationGroup", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNotification_type(value: String): Self = StObject.set(x, "notification_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotificationGroup(value: String): Self = this.set("notificationGroup", value.asInstanceOf[js.Any])
+    def setNotification_typeUndefined: Self = StObject.set(x, "notification_type", js.undefined)
     
     @scala.inline
-    def deleteNotificationGroup: Self = this.set("notificationGroup", js.undefined)
+    def setPcampaign_id(value: String): Self = StObject.set(x, "pcampaign_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotification_type(value: String): Self = this.set("notification_type", value.asInstanceOf[js.Any])
+    def setPcampaign_idUndefined: Self = StObject.set(x, "pcampaign_id", js.undefined)
     
     @scala.inline
-    def deleteNotification_type: Self = this.set("notification_type", js.undefined)
+    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPcampaign_id(value: String): Self = this.set("pcampaign_id", value.asInstanceOf[js.Any])
+    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     @scala.inline
-    def deletePcampaign_id: Self = this.set("pcampaign_id", js.undefined)
+    def setShow_notification_settings_action(value: Boolean): Self = StObject.set(x, "show_notification_settings_action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    def setShow_notification_settings_actionUndefined: Self = StObject.set(x, "show_notification_settings_action", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("reason", js.undefined)
+    def setTargetUrl(value: String): Self = StObject.set(x, "targetUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShow_notification_settings_action(value: Boolean): Self = this.set("show_notification_settings_action", value.asInstanceOf[js.Any])
+    def setTargetUrlUndefined: Self = StObject.set(x, "targetUrl", js.undefined)
     
     @scala.inline
-    def deleteShow_notification_settings_action: Self = this.set("show_notification_settings_action", js.undefined)
+    def setTimeToExpireMs(value: String): Self = StObject.set(x, "timeToExpireMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetUrl(value: String): Self = this.set("targetUrl", value.asInstanceOf[js.Any])
+    def setTimeToExpireMsUndefined: Self = StObject.set(x, "timeToExpireMs", js.undefined)
     
     @scala.inline
-    def deleteTargetUrl: Self = this.set("targetUrl", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeToExpireMs(value: String): Self = this.set("timeToExpireMs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeToExpireMs: Self = this.set("timeToExpireMs", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

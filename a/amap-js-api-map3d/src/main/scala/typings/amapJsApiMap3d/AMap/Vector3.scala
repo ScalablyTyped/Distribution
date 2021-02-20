@@ -1,11 +1,12 @@
 package typings.amapJsApiMap3d.AMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Vector3 extends js.Object {
+trait Vector3 extends StObject {
   
   def add(elements: js.Tuple3[Double, Double, Double]): this.type = js.native
   def add(elements: Vector3): this.type = js.native

@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource extends js.Object {
+trait ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource extends StObject {
   
   var referenceId: String = js.native
   
@@ -38,34 +39,22 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDa
   }
   
   @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceOps[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource] (val x: Self) extends AnyVal {
+  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setReferenceId(value: String): Self = this.set("referenceId", value.asInstanceOf[js.Any])
+    def setReferenceId(value: String): Self = StObject.set(x, "referenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReferenceSchema(
       value: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
-    ): Self = this.set("referenceSchema", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "referenceSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setS3ReferenceDataSource(
       value: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource
-    ): Self = this.set("s3ReferenceDataSource", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "s3ReferenceDataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTableName(value: String): Self = this.set("tableName", value.asInstanceOf[js.Any])
+    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

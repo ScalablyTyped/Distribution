@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotGroup extends js.Object {
+trait PivotGroup extends StObject {
   
   /** The reference to the data source column this grouping is based on. */
   var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.native
@@ -60,81 +61,69 @@ object PivotGroup {
   }
   
   @scala.inline
-  implicit class PivotGroupOps[Self <: PivotGroup] (val x: Self) extends AnyVal {
+  implicit class PivotGroupMutableBuilder[Self <: PivotGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupLimit(value: PivotGroupLimit): Self = StObject.set(x, "groupLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = this.set("dataSourceColumnReference", value.asInstanceOf[js.Any])
+    def setGroupLimitUndefined: Self = StObject.set(x, "groupLimit", js.undefined)
     
     @scala.inline
-    def deleteDataSourceColumnReference: Self = this.set("dataSourceColumnReference", js.undefined)
+    def setGroupRule(value: PivotGroupRule): Self = StObject.set(x, "groupRule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupLimit(value: PivotGroupLimit): Self = this.set("groupLimit", value.asInstanceOf[js.Any])
+    def setGroupRuleUndefined: Self = StObject.set(x, "groupRule", js.undefined)
     
     @scala.inline
-    def deleteGroupLimit: Self = this.set("groupLimit", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupRule(value: PivotGroupRule): Self = this.set("groupRule", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteGroupRule: Self = this.set("groupRule", js.undefined)
+    def setRepeatHeadings(value: Boolean): Self = StObject.set(x, "repeatHeadings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setRepeatHeadingsUndefined: Self = StObject.set(x, "repeatHeadings", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRepeatHeadings(value: Boolean): Self = this.set("repeatHeadings", value.asInstanceOf[js.Any])
+    def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
     
     @scala.inline
-    def deleteRepeatHeadings: Self = this.set("repeatHeadings", js.undefined)
+    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowTotals(value: Boolean): Self = this.set("showTotals", value.asInstanceOf[js.Any])
+    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
     @scala.inline
-    def deleteShowTotals: Self = this.set("showTotals", js.undefined)
+    def setSourceColumnOffset(value: Double): Self = StObject.set(x, "sourceColumnOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    def setSourceColumnOffsetUndefined: Self = StObject.set(x, "sourceColumnOffset", js.undefined)
     
     @scala.inline
-    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    def setValueBucket(value: PivotGroupSortValueBucket): Self = StObject.set(x, "valueBucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceColumnOffset(value: Double): Self = this.set("sourceColumnOffset", value.asInstanceOf[js.Any])
+    def setValueBucketUndefined: Self = StObject.set(x, "valueBucket", js.undefined)
     
     @scala.inline
-    def deleteSourceColumnOffset: Self = this.set("sourceColumnOffset", js.undefined)
+    def setValueMetadata(value: js.Array[PivotGroupValueMetadata]): Self = StObject.set(x, "valueMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValueBucket(value: PivotGroupSortValueBucket): Self = this.set("valueBucket", value.asInstanceOf[js.Any])
+    def setValueMetadataUndefined: Self = StObject.set(x, "valueMetadata", js.undefined)
     
     @scala.inline
-    def deleteValueBucket: Self = this.set("valueBucket", js.undefined)
-    
-    @scala.inline
-    def setValueMetadataVarargs(value: PivotGroupValueMetadata*): Self = this.set("valueMetadata", js.Array(value :_*))
-    
-    @scala.inline
-    def setValueMetadata(value: js.Array[PivotGroupValueMetadata]): Self = this.set("valueMetadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueMetadata: Self = this.set("valueMetadata", js.undefined)
+    def setValueMetadataVarargs(value: PivotGroupValueMetadata*): Self = StObject.set(x, "valueMetadata", js.Array(value :_*))
   }
 }

@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientDlp.anon.Key
 import typings.maximMazurokGapiClientDlp.anon.LocationId
 import typings.maximMazurokGapiClientDlp.anon.Oauthtoken
 import typings.maximMazurokGapiClientDlp.anon.PrettyPrint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InspectTemplatesResource extends js.Object {
+trait InspectTemplatesResource extends StObject {
   
   def create(request: Fields, body: GooglePrivacyDlpV2CreateInspectTemplateRequest): Request[GooglePrivacyDlpV2InspectTemplate] = js.native
   /**

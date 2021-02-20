@@ -1,5 +1,6 @@
 package typings.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.token
   - typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code
 */
-trait AuthorizeResponseType extends js.Object
+trait AuthorizeResponseType extends StObject
 object AuthorizeResponseType {
   
   @scala.inline

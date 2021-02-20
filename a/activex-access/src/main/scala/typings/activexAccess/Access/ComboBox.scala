@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComboBox extends js.Object {
+trait ComboBox extends StObject {
   
   @JSName("Access.ComboBox_typekey")
   var AccessDotComboBox_typekey: ComboBox = js.native

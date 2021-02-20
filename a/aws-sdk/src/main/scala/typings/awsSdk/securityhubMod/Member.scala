@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Member extends js.Object {
+trait Member extends StObject {
   
   /**
     * The AWS account ID of the member account.
@@ -46,54 +47,42 @@ object Member {
   }
   
   @scala.inline
-  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+  implicit class MemberMutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmail(value: NonEmptyString): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    def setInvitedAt(value: Timestamp): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: NonEmptyString): Self = this.set("Email", value.asInstanceOf[js.Any])
+    def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("Email", js.undefined)
+    def setMasterId(value: NonEmptyString): Self = StObject.set(x, "MasterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvitedAt(value: Timestamp): Self = this.set("InvitedAt", value.asInstanceOf[js.Any])
+    def setMasterIdUndefined: Self = StObject.set(x, "MasterId", js.undefined)
     
     @scala.inline
-    def deleteInvitedAt: Self = this.set("InvitedAt", js.undefined)
+    def setMemberStatus(value: NonEmptyString): Self = StObject.set(x, "MemberStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterId(value: NonEmptyString): Self = this.set("MasterId", value.asInstanceOf[js.Any])
+    def setMemberStatusUndefined: Self = StObject.set(x, "MemberStatus", js.undefined)
     
     @scala.inline
-    def deleteMasterId: Self = this.set("MasterId", js.undefined)
+    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemberStatus(value: NonEmptyString): Self = this.set("MemberStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMemberStatus: Self = this.set("MemberStatus", js.undefined)
-    
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }
 }

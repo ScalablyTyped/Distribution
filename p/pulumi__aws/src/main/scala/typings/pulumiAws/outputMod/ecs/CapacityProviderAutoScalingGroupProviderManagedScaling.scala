@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.ecs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CapacityProviderAutoScalingGroupProviderManagedScaling extends js.Object {
+trait CapacityProviderAutoScalingGroupProviderManagedScaling extends StObject {
   
   /**
     * The maximum step adjustment size. A number between 1 and 10,000.
@@ -41,30 +42,18 @@ object CapacityProviderAutoScalingGroupProviderManagedScaling {
   }
   
   @scala.inline
-  implicit class CapacityProviderAutoScalingGroupProviderManagedScalingOps[Self <: CapacityProviderAutoScalingGroupProviderManagedScaling] (val x: Self) extends AnyVal {
+  implicit class CapacityProviderAutoScalingGroupProviderManagedScalingMutableBuilder[Self <: CapacityProviderAutoScalingGroupProviderManagedScaling] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaximumScalingStepSize(value: Double): Self = StObject.set(x, "maximumScalingStepSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinimumScalingStepSize(value: Double): Self = StObject.set(x, "minimumScalingStepSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumScalingStepSize(value: Double): Self = this.set("maximumScalingStepSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimumScalingStepSize(value: Double): Self = this.set("minimumScalingStepSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetCapacity(value: Double): Self = this.set("targetCapacity", value.asInstanceOf[js.Any])
+    def setTargetCapacity(value: Double): Self = StObject.set(x, "targetCapacity", value.asInstanceOf[js.Any])
   }
 }

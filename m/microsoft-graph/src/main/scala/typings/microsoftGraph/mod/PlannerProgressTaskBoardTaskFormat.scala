@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,27 +20,15 @@ object PlannerProgressTaskBoardTaskFormat {
   }
   
   @scala.inline
-  implicit class PlannerProgressTaskBoardTaskFormatOps[Self <: PlannerProgressTaskBoardTaskFormat] (val x: Self) extends AnyVal {
+  implicit class PlannerProgressTaskBoardTaskFormatMutableBuilder[Self <: PlannerProgressTaskBoardTaskFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrderHint(value: NullableOption[String]): Self = this.set("orderHint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderHint: Self = this.set("orderHint", js.undefined)
-    
-    @scala.inline
-    def setOrderHintNull: Self = this.set("orderHint", null)
+    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
   }
 }

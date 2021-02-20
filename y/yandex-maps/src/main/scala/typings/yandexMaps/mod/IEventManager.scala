@@ -2,6 +2,7 @@ package typings.yandexMaps.mod
 
 import typings.std.MouseEvent
 import typings.yandexMaps.yandexMapsStrings.mousedown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

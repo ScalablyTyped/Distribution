@@ -1,11 +1,12 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashIsoGroupSettings extends js.Object {
+trait DashIsoGroupSettings extends StObject {
   
   /**
     * By default, the service creates one .mpd DASH manifest for each DASH ISO output group in your job. This default manifest references every output in the output group. To create additional DASH manifests that reference a subset of the outputs in the output group, specify a list of them here.
@@ -76,93 +77,81 @@ object DashIsoGroupSettings {
   }
   
   @scala.inline
-  implicit class DashIsoGroupSettingsOps[Self <: DashIsoGroupSettings] (val x: Self) extends AnyVal {
+  implicit class DashIsoGroupSettingsMutableBuilder[Self <: DashIsoGroupSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalManifests(value: listOfDashAdditionalManifest): Self = StObject.set(x, "AdditionalManifests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalManifestsVarargs(value: DashAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalManifestsVarargs(value: DashAdditionalManifest*): Self = this.set("AdditionalManifests", js.Array(value :_*))
+    def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalManifests(value: listOfDashAdditionalManifest): Self = this.set("AdditionalManifests", value.asInstanceOf[js.Any])
+    def setBaseUrlUndefined: Self = StObject.set(x, "BaseUrl", js.undefined)
     
     @scala.inline
-    def deleteAdditionalManifests: Self = this.set("AdditionalManifests", js.undefined)
+    def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseUrl(value: string): Self = this.set("BaseUrl", value.asInstanceOf[js.Any])
+    def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBaseUrl: Self = this.set("BaseUrl", js.undefined)
+    def setDestinationSettingsUndefined: Self = StObject.set(x, "DestinationSettings", js.undefined)
     
     @scala.inline
-    def setDestination(value: stringPatternS3): Self = this.set("Destination", value.asInstanceOf[js.Any])
+    def setDestinationUndefined: Self = StObject.set(x, "Destination", js.undefined)
     
     @scala.inline
-    def deleteDestination: Self = this.set("Destination", js.undefined)
+    def setEncryption(value: DashIsoEncryptionSettings): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationSettings(value: DestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
+    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     @scala.inline
-    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    def setFragmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryption(value: DashIsoEncryptionSettings): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
     
     @scala.inline
-    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    def setHbbtvCompliance(value: DashIsoHbbtvCompliance): Self = StObject.set(x, "HbbtvCompliance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFragmentLength(value: integerMin1Max2147483647): Self = this.set("FragmentLength", value.asInstanceOf[js.Any])
+    def setHbbtvComplianceUndefined: Self = StObject.set(x, "HbbtvCompliance", js.undefined)
     
     @scala.inline
-    def deleteFragmentLength: Self = this.set("FragmentLength", js.undefined)
+    def setMinBufferTime(value: integerMin0Max2147483647): Self = StObject.set(x, "MinBufferTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHbbtvCompliance(value: DashIsoHbbtvCompliance): Self = this.set("HbbtvCompliance", value.asInstanceOf[js.Any])
+    def setMinBufferTimeUndefined: Self = StObject.set(x, "MinBufferTime", js.undefined)
     
     @scala.inline
-    def deleteHbbtvCompliance: Self = this.set("HbbtvCompliance", js.undefined)
+    def setMpdProfile(value: DashIsoMpdProfile): Self = StObject.set(x, "MpdProfile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBufferTime(value: integerMin0Max2147483647): Self = this.set("MinBufferTime", value.asInstanceOf[js.Any])
+    def setMpdProfileUndefined: Self = StObject.set(x, "MpdProfile", js.undefined)
     
     @scala.inline
-    def deleteMinBufferTime: Self = this.set("MinBufferTime", js.undefined)
+    def setSegmentControl(value: DashIsoSegmentControl): Self = StObject.set(x, "SegmentControl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMpdProfile(value: DashIsoMpdProfile): Self = this.set("MpdProfile", value.asInstanceOf[js.Any])
+    def setSegmentControlUndefined: Self = StObject.set(x, "SegmentControl", js.undefined)
     
     @scala.inline
-    def deleteMpdProfile: Self = this.set("MpdProfile", js.undefined)
+    def setSegmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "SegmentLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentControl(value: DashIsoSegmentControl): Self = this.set("SegmentControl", value.asInstanceOf[js.Any])
+    def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
     
     @scala.inline
-    def deleteSegmentControl: Self = this.set("SegmentControl", js.undefined)
+    def setWriteSegmentTimelineInRepresentation(value: DashIsoWriteSegmentTimelineInRepresentation): Self = StObject.set(x, "WriteSegmentTimelineInRepresentation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSegmentLength(value: integerMin1Max2147483647): Self = this.set("SegmentLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSegmentLength: Self = this.set("SegmentLength", js.undefined)
-    
-    @scala.inline
-    def setWriteSegmentTimelineInRepresentation(value: DashIsoWriteSegmentTimelineInRepresentation): Self = this.set("WriteSegmentTimelineInRepresentation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWriteSegmentTimelineInRepresentation: Self = this.set("WriteSegmentTimelineInRepresentation", js.undefined)
+    def setWriteSegmentTimelineInRepresentationUndefined: Self = StObject.set(x, "WriteSegmentTimelineInRepresentation", js.undefined)
   }
 }

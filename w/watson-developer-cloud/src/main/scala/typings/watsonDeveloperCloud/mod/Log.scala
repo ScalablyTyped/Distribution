@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Log. */
 @js.native
-trait Log extends js.Object {
+trait Log extends StObject {
   
   /** The language of the workspace where the message request was made. */
   var language: String = js.native
@@ -46,39 +47,27 @@ object Log {
   }
   
   @scala.inline
-  implicit class LogOps[Self <: Log] (val x: Self) extends AnyVal {
+  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLog_id(value: String): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRequest(value: MessageRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setRequest_timestamp(value: String): Self = StObject.set(x, "request_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLog_id(value: String): Self = this.set("log_id", value.asInstanceOf[js.Any])
+    def setResponse(value: MessageResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest(value: MessageRequest): Self = this.set("request", value.asInstanceOf[js.Any])
+    def setResponse_timestamp(value: String): Self = StObject.set(x, "response_timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequest_timestamp(value: String): Self = this.set("request_timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: MessageResponse): Self = this.set("response", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse_timestamp(value: String): Self = this.set("response_timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

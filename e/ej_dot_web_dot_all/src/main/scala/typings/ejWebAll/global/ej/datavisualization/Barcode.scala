@@ -3,6 +3,7 @@ package typings.ejWebAll.global.ej.datavisualization
 import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Model
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +17,22 @@ class Barcode protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-/* static members */
-@JSGlobal("ej.datavisualization.Barcode")
-@js.native
-object Barcode extends js.Object {
+object Barcode {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.datavisualization.Barcode = js.native
-  
+  @JSGlobal("ej.datavisualization.Barcode")
   @js.native
-  object SymbologyType extends js.Object {
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("ej.datavisualization.Barcode.Locale")
+  @js.native
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.datavisualization.Barcode.SymbologyType")
+  @js.native
+  object SymbologyType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Barcode.SymbologyType with Double] = js.native
@@ -55,4 +61,11 @@ object Barcode extends js.Object {
     
     /* 0 */ val QRBarcode: typings.ejWebAll.ej.datavisualization.Barcode.SymbologyType.QRBarcode with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.datavisualization.Barcode.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.datavisualization.Barcode = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.datavisualization.Barcode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

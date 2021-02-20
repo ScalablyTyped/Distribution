@@ -1,5 +1,6 @@
 package typings.pgTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,7 +67,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pgTypes.pgTypesStrings.REGNAMESPACE
   - typings.pgTypes.pgTypesStrings.REGROLE
 */
-trait builtinsTypes extends js.Object
+trait builtinsTypes extends StObject
 object builtinsTypes {
   
   @scala.inline

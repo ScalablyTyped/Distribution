@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the sensor reading type. */
 @JSGlobal("Windows.Devices.Sensors.SensorReadingType")
 @js.native
-object SensorReadingType extends js.Object {
+object SensorReadingType extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Sensors.SensorReadingType with Double] = js.native

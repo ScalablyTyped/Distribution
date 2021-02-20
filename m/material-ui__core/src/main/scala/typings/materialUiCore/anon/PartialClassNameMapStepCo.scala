@@ -1,12 +1,13 @@
 package typings.materialUiCore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/StepConnector/StepConnector.StepConnectorClasskey>> */
 @js.native
-trait PartialClassNameMapStepCo extends js.Object {
+trait PartialClassNameMapStepCo extends StObject {
   
   var active: js.UndefOr[String] = js.native
   
@@ -37,78 +38,66 @@ object PartialClassNameMapStepCo {
   }
   
   @scala.inline
-  implicit class PartialClassNameMapStepCoOps[Self <: PartialClassNameMapStepCo] (val x: Self) extends AnyVal {
+  implicit class PartialClassNameMapStepCoMutableBuilder[Self <: PartialClassNameMapStepCo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlternativeLabel(value: String): Self = StObject.set(x, "alternativeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAlternativeLabelUndefined: Self = StObject.set(x, "alternativeLabel", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlternativeLabel(value: String): Self = this.set("alternativeLabel", value.asInstanceOf[js.Any])
+    def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
     @scala.inline
-    def deleteAlternativeLabel: Self = this.set("alternativeLabel", js.undefined)
+    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompleted(value: String): Self = this.set("completed", value.asInstanceOf[js.Any])
+    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def deleteCompleted: Self = this.set("completed", js.undefined)
+    def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
     @scala.inline
-    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontal(value: String): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    def setLineHorizontal(value: String): Self = StObject.set(x, "lineHorizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    def setLineHorizontalUndefined: Self = StObject.set(x, "lineHorizontal", js.undefined)
     
     @scala.inline
-    def setLine(value: String): Self = this.set("line", value.asInstanceOf[js.Any])
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineVertical(value: String): Self = StObject.set(x, "lineVertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHorizontal(value: String): Self = this.set("lineHorizontal", value.asInstanceOf[js.Any])
+    def setLineVerticalUndefined: Self = StObject.set(x, "lineVertical", js.undefined)
     
     @scala.inline
-    def deleteLineHorizontal: Self = this.set("lineHorizontal", js.undefined)
+    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineVertical(value: String): Self = this.set("lineVertical", value.asInstanceOf[js.Any])
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def deleteLineVertical: Self = this.set("lineVertical", js.undefined)
+    def setVertical(value: String): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
-    
-    @scala.inline
-    def setVertical(value: String): Self = this.set("vertical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertical: Self = this.set("vertical", js.undefined)
+    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

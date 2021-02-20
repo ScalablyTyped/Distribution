@@ -1,11 +1,12 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetKeyPolicyResponse extends js.Object {
+trait GetKeyPolicyResponse extends StObject {
   
   /**
     * A key policy document in JSON format.
@@ -21,24 +22,12 @@ object GetKeyPolicyResponse {
   }
   
   @scala.inline
-  implicit class GetKeyPolicyResponseOps[Self <: GetKeyPolicyResponse] (val x: Self) extends AnyVal {
+  implicit class GetKeyPolicyResponseMutableBuilder[Self <: GetKeyPolicyResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPolicy(value: PolicyType): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPolicy(value: PolicyType): Self = this.set("Policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

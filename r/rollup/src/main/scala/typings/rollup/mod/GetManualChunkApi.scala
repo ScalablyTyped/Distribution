@@ -1,12 +1,13 @@
 package typings.rollup.mod
 
 import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetManualChunkApi extends js.Object {
+trait GetManualChunkApi extends StObject {
   
   def getModuleIds(): IterableIterator[String] = js.native
   

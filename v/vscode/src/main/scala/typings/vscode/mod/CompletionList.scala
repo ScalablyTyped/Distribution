@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param items The completion items.
   * @param isIncomplete The list is not complete.
   */
-class CompletionList[T /* <: CompletionItem */] () extends js.Object {
+class CompletionList[T /* <: CompletionItem */] () extends StObject {
   def this(items: js.Array[T]) = this()
   def this(items: js.UndefOr[scala.Nothing], isIncomplete: Boolean) = this()
   def this(items: js.Array[T], isIncomplete: Boolean) = this()

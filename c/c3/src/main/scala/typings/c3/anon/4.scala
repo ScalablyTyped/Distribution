@@ -1,12 +1,13 @@
 package typings.c3.anon
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait `4` extends js.Object {
+trait `4` extends StObject {
   
   var max: js.UndefOr[
     Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -29,38 +30,26 @@ object `4` {
   }
   
   @scala.inline
-  implicit class `4Ops`[Self <: `4`] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setMax(
       value: Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]:? number}
       */ typings.c3.c3Strings.`4` with TopLevel[js.Any])
-    ): Self = this.set("max", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
     def setMin(
       value: Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]:? number}
       */ typings.c3.c3Strings.`4` with TopLevel[js.Any])
-    ): Self = this.set("min", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

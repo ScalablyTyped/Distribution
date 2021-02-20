@@ -2,12 +2,13 @@ package typings.androiduix.android.graphics
 
 import typings.androiduix.android.graphics.Matrix.ScaleToFit
 import typings.androiduix.java_.lang.StringBuilder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Matrix extends js.Object {
+trait Matrix extends StObject {
   
   /* private */ def computeTypeMask(): js.Any = js.native
   
@@ -248,14 +249,13 @@ trait Matrix extends js.Object {
   
   def toShortString(sb: StringBuilder): Unit = js.native
 }
-@JSGlobal("android.graphics.Matrix")
-@js.native
-object Matrix extends js.Object {
+object Matrix {
   
   @js.native
-  sealed trait ScaleToFit extends js.Object
+  sealed trait ScaleToFit extends StObject
+  @JSGlobal("android.graphics.Matrix.ScaleToFit")
   @js.native
-  object ScaleToFit extends js.Object {
+  object ScaleToFit extends StObject {
     
     @js.native
     sealed trait CENTER extends ScaleToFit

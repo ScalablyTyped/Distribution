@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetworking
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateConsumerConfigRequest extends js.Object {
+trait UpdateConsumerConfigRequest extends StObject {
   
   /** Required. The updated peering config. */
   var consumerConfig: js.UndefOr[ConsumerConfig] = js.native
@@ -19,24 +20,12 @@ object UpdateConsumerConfigRequest {
   }
   
   @scala.inline
-  implicit class UpdateConsumerConfigRequestOps[Self <: UpdateConsumerConfigRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateConsumerConfigRequestMutableBuilder[Self <: UpdateConsumerConfigRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConsumerConfig(value: ConsumerConfig): Self = StObject.set(x, "consumerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConsumerConfig(value: ConsumerConfig): Self = this.set("consumerConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConsumerConfig: Self = this.set("consumerConfig", js.undefined)
+    def setConsumerConfigUndefined: Self = StObject.set(x, "consumerConfig", js.undefined)
   }
 }

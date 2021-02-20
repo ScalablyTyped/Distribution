@@ -1,11 +1,12 @@
 package typings.awsSdk.datapipelineMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportTaskRunnerHeartbeatInput extends js.Object {
+trait ReportTaskRunnerHeartbeatInput extends StObject {
   
   /**
     * The public DNS name of the task runner.
@@ -31,33 +32,21 @@ object ReportTaskRunnerHeartbeatInput {
   }
   
   @scala.inline
-  implicit class ReportTaskRunnerHeartbeatInputOps[Self <: ReportTaskRunnerHeartbeatInput] (val x: Self) extends AnyVal {
+  implicit class ReportTaskRunnerHeartbeatInputMutableBuilder[Self <: ReportTaskRunnerHeartbeatInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTaskrunnerId(value: id): Self = StObject.set(x, "taskrunnerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTaskrunnerId(value: id): Self = this.set("taskrunnerId", value.asInstanceOf[js.Any])
+    def setWorkerGroup(value: String): Self = StObject.set(x, "workerGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: id): Self = this.set("hostname", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHostname: Self = this.set("hostname", js.undefined)
-    
-    @scala.inline
-    def setWorkerGroup(value: String): Self = this.set("workerGroup", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerGroup: Self = this.set("workerGroup", js.undefined)
+    def setWorkerGroupUndefined: Self = StObject.set(x, "workerGroup", js.undefined)
   }
 }

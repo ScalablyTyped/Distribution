@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminResponseForReview extends js.Object {
+trait AdminResponseForReview extends StObject {
   
   var adminResponseForReview: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object AdminResponseForReview {
   }
   
   @scala.inline
-  implicit class AdminResponseForReviewOps[Self <: AdminResponseForReview] (val x: Self) extends AnyVal {
+  implicit class AdminResponseForReviewMutableBuilder[Self <: AdminResponseForReview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdminResponseForReview(value: scala.Double): Self = StObject.set(x, "adminResponseForReview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAdminReply(value: scala.Double): Self = StObject.set(x, "deleteAdminReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeletePublisherReply(value: scala.Double): Self = StObject.set(x, "deletePublisherReply", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdminResponseForReview(value: scala.Double): Self = this.set("adminResponseForReview", value.asInstanceOf[js.Any])
+    def setFlagReview(value: scala.Double): Self = StObject.set(x, "flagReview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteAdminReply(value: scala.Double): Self = this.set("deleteAdminReply", value.asInstanceOf[js.Any])
+    def setReplyToReview(value: scala.Double): Self = StObject.set(x, "replyToReview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletePublisherReply(value: scala.Double): Self = this.set("deletePublisherReply", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlagReview(value: scala.Double): Self = this.set("flagReview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReplyToReview(value: scala.Double): Self = this.set("replyToReview", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUpdateReview(value: scala.Double): Self = this.set("updateReview", value.asInstanceOf[js.Any])
+    def setUpdateReview(value: scala.Double): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
   }
 }

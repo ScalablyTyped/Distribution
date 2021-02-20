@@ -1,5 +1,6 @@
 package typings.googleMaps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,4 +42,9 @@ package object mod {
   ]
   
   type ReverseGeocodingResponse = typings.googleMaps.mod.GeocodingResponse[typings.googleMaps.mod.ReverseGeocodingResponseStatus]
+  
+  @scala.inline
+  def createClient(options: typings.googleMaps.mod.CreateClientOptions): typings.googleMaps.mod.GoogleMapsClient = typings.googleMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleMaps.mod.GoogleMapsClient]
+  @scala.inline
+  def createClient(options: typings.googleMaps.mod.CreateClientOptionsWithPromise): typings.googleMaps.mod.GoogleMapsClientWithPromise = typings.googleMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleMaps.mod.GoogleMapsClientWithPromise]
 }

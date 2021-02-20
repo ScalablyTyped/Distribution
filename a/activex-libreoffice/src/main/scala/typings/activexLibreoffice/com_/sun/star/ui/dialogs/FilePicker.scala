@@ -3,11 +3,10 @@ package typings.activexLibreoffice.com_.sun.star.ui.dialogs
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.StringPair
-import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
-import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XFilePicker
   */
 @js.native
-trait FilePicker
-  extends XFilePicker2
-     with XFilePickerNotifier
-     with XFilterManager
-     with XFilePreview
-     with XFilterGroupManager
-     with XCancellable
-     with XComponent {
+trait FilePicker extends XFilePicker3 {
   
   /**
     * Provides the ability to choose between different custom templates that do extend the subset of common controls a {@link FilePicker} usually supports.
@@ -89,21 +81,9 @@ object FilePicker {
   }
   
   @scala.inline
-  implicit class FilePickerOps[Self <: FilePicker] (val x: Self) extends AnyVal {
+  implicit class FilePickerMutableBuilder[Self <: FilePicker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateWithMode(value: Double => Unit): Self = this.set("createWithMode", js.Any.fromFunction1(value))
+    def setCreateWithMode(value: Double => Unit): Self = StObject.set(x, "createWithMode", js.Any.fromFunction1(value))
   }
 }

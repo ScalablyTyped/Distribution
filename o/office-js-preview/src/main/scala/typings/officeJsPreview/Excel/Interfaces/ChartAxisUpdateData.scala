@@ -38,13 +38,14 @@ import typings.officeJsPreview.officeJsPreviewStrings.TextAxis
 import typings.officeJsPreview.officeJsPreviewStrings.Thousands
 import typings.officeJsPreview.officeJsPreviewStrings.Trillions
 import typings.officeJsPreview.officeJsPreviewStrings.Years
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`. */
 @js.native
-trait ChartAxisUpdateData extends js.Object {
+trait ChartAxisUpdateData extends StObject {
   
   /**
     *
@@ -305,206 +306,194 @@ object ChartAxisUpdateData {
   }
   
   @scala.inline
-  implicit class ChartAxisUpdateDataOps[Self <: ChartAxisUpdateData] (val x: Self) extends AnyVal {
+  implicit class ChartAxisUpdateDataMutableBuilder[Self <: ChartAxisUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignment(value: ChartTickLabelAlignment | Center | Left | Right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBaseTimeUnit(value: ChartAxisTimeUnit | Days | Months | Years): Self = StObject.set(x, "baseTimeUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignment(value: ChartTickLabelAlignment | Center | Left | Right): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    def setBaseTimeUnitUndefined: Self = StObject.set(x, "baseTimeUnit", js.undefined)
     
     @scala.inline
-    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    def setCategoryType(value: ChartAxisCategoryType | Automatic | TextAxis | DateAxis): Self = StObject.set(x, "categoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTimeUnit(value: ChartAxisTimeUnit | Days | Months | Years): Self = this.set("baseTimeUnit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBaseTimeUnit: Self = this.set("baseTimeUnit", js.undefined)
-    
-    @scala.inline
-    def setCategoryType(value: ChartAxisCategoryType | Automatic | TextAxis | DateAxis): Self = this.set("categoryType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryType: Self = this.set("categoryType", js.undefined)
+    def setCategoryTypeUndefined: Self = StObject.set(x, "categoryType", js.undefined)
     
     @scala.inline
     def setDisplayUnit(
       value: ChartAxisDisplayUnit | None | Hundreds | Thousands | TenThousands | HundredThousands | Millions | TenMillions | HundredMillions | Billions | Trillions | Custom
-    ): Self = this.set("displayUnit", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "displayUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDisplayUnit: Self = this.set("displayUnit", js.undefined)
+    def setDisplayUnitUndefined: Self = StObject.set(x, "displayUnit", js.undefined)
     
     @scala.inline
-    def setFormat(value: ChartAxisFormatUpdateData): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFormat(value: ChartAxisFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFormat: Self = this.set("format", js.undefined)
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     @scala.inline
-    def setIsBetweenCategories(value: Boolean): Self = this.set("isBetweenCategories", value.asInstanceOf[js.Any])
+    def setIsBetweenCategories(value: Boolean): Self = StObject.set(x, "isBetweenCategories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsBetweenCategories: Self = this.set("isBetweenCategories", js.undefined)
+    def setIsBetweenCategoriesUndefined: Self = StObject.set(x, "isBetweenCategories", js.undefined)
     
     @scala.inline
-    def setLinkNumberFormat(value: Boolean): Self = this.set("linkNumberFormat", value.asInstanceOf[js.Any])
+    def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinkNumberFormat: Self = this.set("linkNumberFormat", js.undefined)
+    def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
     
     @scala.inline
-    def setLogBase(value: Double): Self = this.set("logBase", value.asInstanceOf[js.Any])
+    def setLogBase(value: Double): Self = StObject.set(x, "logBase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogBase: Self = this.set("logBase", js.undefined)
+    def setLogBaseUndefined: Self = StObject.set(x, "logBase", js.undefined)
     
     @scala.inline
-    def setMajorGridlines(value: ChartGridlinesUpdateData): Self = this.set("majorGridlines", value.asInstanceOf[js.Any])
+    def setMajorGridlines(value: ChartGridlinesUpdateData): Self = StObject.set(x, "majorGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMajorGridlines: Self = this.set("majorGridlines", js.undefined)
+    def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
     
     @scala.inline
-    def setMajorTickMark(value: ChartAxisTickMark | None | Cross | Inside | Outside): Self = this.set("majorTickMark", value.asInstanceOf[js.Any])
+    def setMajorTickMark(value: ChartAxisTickMark | None | Cross | Inside | Outside): Self = StObject.set(x, "majorTickMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMajorTickMark: Self = this.set("majorTickMark", js.undefined)
+    def setMajorTickMarkUndefined: Self = StObject.set(x, "majorTickMark", js.undefined)
     
     @scala.inline
-    def setMajorTimeUnitScale(value: ChartAxisTimeUnit | Days | Months | Years): Self = this.set("majorTimeUnitScale", value.asInstanceOf[js.Any])
+    def setMajorTimeUnitScale(value: ChartAxisTimeUnit | Days | Months | Years): Self = StObject.set(x, "majorTimeUnitScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMajorTimeUnitScale: Self = this.set("majorTimeUnitScale", js.undefined)
+    def setMajorTimeUnitScaleUndefined: Self = StObject.set(x, "majorTimeUnitScale", js.undefined)
     
     @scala.inline
-    def setMajorUnit(value: js.Any): Self = this.set("majorUnit", value.asInstanceOf[js.Any])
+    def setMajorUnit(value: js.Any): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMajorUnit: Self = this.set("majorUnit", js.undefined)
+    def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
     @scala.inline
-    def setMaximum(value: js.Any): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    def setMaximum(value: js.Any): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
     @scala.inline
-    def setMinimum(value: js.Any): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setMinimum(value: js.Any): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
     @scala.inline
-    def setMinorGridlines(value: ChartGridlinesUpdateData): Self = this.set("minorGridlines", value.asInstanceOf[js.Any])
+    def setMinorGridlines(value: ChartGridlinesUpdateData): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinorGridlines: Self = this.set("minorGridlines", js.undefined)
+    def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
     
     @scala.inline
-    def setMinorTickMark(value: ChartAxisTickMark | None | Cross | Inside | Outside): Self = this.set("minorTickMark", value.asInstanceOf[js.Any])
+    def setMinorTickMark(value: ChartAxisTickMark | None | Cross | Inside | Outside): Self = StObject.set(x, "minorTickMark", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinorTickMark: Self = this.set("minorTickMark", js.undefined)
+    def setMinorTickMarkUndefined: Self = StObject.set(x, "minorTickMark", js.undefined)
     
     @scala.inline
-    def setMinorTimeUnitScale(value: ChartAxisTimeUnit | Days | Months | Years): Self = this.set("minorTimeUnitScale", value.asInstanceOf[js.Any])
+    def setMinorTimeUnitScale(value: ChartAxisTimeUnit | Days | Months | Years): Self = StObject.set(x, "minorTimeUnitScale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinorTimeUnitScale: Self = this.set("minorTimeUnitScale", js.undefined)
+    def setMinorTimeUnitScaleUndefined: Self = StObject.set(x, "minorTimeUnitScale", js.undefined)
     
     @scala.inline
-    def setMinorUnit(value: js.Any): Self = this.set("minorUnit", value.asInstanceOf[js.Any])
+    def setMinorUnit(value: js.Any): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinorUnit: Self = this.set("minorUnit", js.undefined)
+    def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
     
     @scala.inline
-    def setMultiLevel(value: Boolean): Self = this.set("multiLevel", value.asInstanceOf[js.Any])
+    def setMultiLevel(value: Boolean): Self = StObject.set(x, "multiLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMultiLevel: Self = this.set("multiLevel", js.undefined)
+    def setMultiLevelUndefined: Self = StObject.set(x, "multiLevel", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: String): Self = this.set("numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNumberFormat: Self = this.set("numberFormat", js.undefined)
+    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
     @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setPosition(value: ChartAxisPosition | Automatic | Maximum | Minimum | Custom): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: ChartAxisPosition | Automatic | Maximum | Minimum | Custom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setReversePlotOrder(value: Boolean): Self = this.set("reversePlotOrder", value.asInstanceOf[js.Any])
+    def setReversePlotOrder(value: Boolean): Self = StObject.set(x, "reversePlotOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReversePlotOrder: Self = this.set("reversePlotOrder", js.undefined)
+    def setReversePlotOrderUndefined: Self = StObject.set(x, "reversePlotOrder", js.undefined)
     
     @scala.inline
-    def setScaleType(value: ChartAxisScaleType | Linear | Logarithmic): Self = this.set("scaleType", value.asInstanceOf[js.Any])
+    def setScaleType(value: ChartAxisScaleType | Linear | Logarithmic): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteScaleType: Self = this.set("scaleType", js.undefined)
+    def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
     
     @scala.inline
-    def setShowDisplayUnitLabel(value: Boolean): Self = this.set("showDisplayUnitLabel", value.asInstanceOf[js.Any])
+    def setShowDisplayUnitLabel(value: Boolean): Self = StObject.set(x, "showDisplayUnitLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowDisplayUnitLabel: Self = this.set("showDisplayUnitLabel", js.undefined)
+    def setShowDisplayUnitLabelUndefined: Self = StObject.set(x, "showDisplayUnitLabel", js.undefined)
     
     @scala.inline
-    def setTextOrientation(value: js.Any): Self = this.set("textOrientation", value.asInstanceOf[js.Any])
+    def setTextOrientation(value: js.Any): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTextOrientation: Self = this.set("textOrientation", js.undefined)
+    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
     @scala.inline
-    def setTickLabelPosition(value: ChartAxisTickLabelPosition | NextToAxis | High | Low | None): Self = this.set("tickLabelPosition", value.asInstanceOf[js.Any])
+    def setTickLabelPosition(value: ChartAxisTickLabelPosition | NextToAxis | High | Low | None): Self = StObject.set(x, "tickLabelPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTickLabelPosition: Self = this.set("tickLabelPosition", js.undefined)
+    def setTickLabelPositionUndefined: Self = StObject.set(x, "tickLabelPosition", js.undefined)
     
     @scala.inline
-    def setTickLabelSpacing(value: js.Any): Self = this.set("tickLabelSpacing", value.asInstanceOf[js.Any])
+    def setTickLabelSpacing(value: js.Any): Self = StObject.set(x, "tickLabelSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTickLabelSpacing: Self = this.set("tickLabelSpacing", js.undefined)
+    def setTickLabelSpacingUndefined: Self = StObject.set(x, "tickLabelSpacing", js.undefined)
     
     @scala.inline
-    def setTickMarkSpacing(value: Double): Self = this.set("tickMarkSpacing", value.asInstanceOf[js.Any])
+    def setTickMarkSpacing(value: Double): Self = StObject.set(x, "tickMarkSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTickMarkSpacing: Self = this.set("tickMarkSpacing", js.undefined)
+    def setTickMarkSpacingUndefined: Self = StObject.set(x, "tickMarkSpacing", js.undefined)
     
     @scala.inline
-    def setTitle(value: ChartAxisTitleUpdateData): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: ChartAxisTitleUpdateData): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

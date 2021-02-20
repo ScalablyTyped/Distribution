@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileLayoutStyle extends js.Object {
+trait TileLayoutStyle extends StObject {
   
   /**
     * The gutter settings that apply between tiles. 
@@ -26,30 +27,18 @@ object TileLayoutStyle {
   }
   
   @scala.inline
-  implicit class TileLayoutStyleOps[Self <: TileLayoutStyle] (val x: Self) extends AnyVal {
+  implicit class TileLayoutStyleMutableBuilder[Self <: TileLayoutStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGutter(value: GutterStyle): Self = StObject.set(x, "Gutter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGutterUndefined: Self = StObject.set(x, "Gutter", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMargin(value: MarginStyle): Self = StObject.set(x, "Margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGutter(value: GutterStyle): Self = this.set("Gutter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGutter: Self = this.set("Gutter", js.undefined)
-    
-    @scala.inline
-    def setMargin(value: MarginStyle): Self = this.set("Margin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMargin: Self = this.set("Margin", js.undefined)
+    def setMarginUndefined: Self = StObject.set(x, "Margin", js.undefined)
   }
 }

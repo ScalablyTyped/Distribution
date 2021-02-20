@@ -1,13 +1,13 @@
 package typings.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIManager extends js.Object {
+trait UIManager extends StObject {
   
   def addHotKey(key: String, handler: WebixCallback): Unit = js.native
   def addHotKey(key: String, handler: WebixCallback, obj: js.Any): Unit = js.native
@@ -43,6 +43,3 @@ trait UIManager extends js.Object {
   
   def setState(state: js.Any): Unit = js.native
 }
-@JSImport("webix", "UIManager")
-@js.native
-object UIManager extends TopLevel[UIManager]

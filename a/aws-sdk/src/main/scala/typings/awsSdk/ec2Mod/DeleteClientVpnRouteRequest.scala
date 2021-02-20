@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteClientVpnRouteRequest extends js.Object {
+trait DeleteClientVpnRouteRequest extends StObject {
   
   /**
     * The ID of the Client VPN endpoint from which the route is to be deleted.
@@ -36,36 +37,24 @@ object DeleteClientVpnRouteRequest {
   }
   
   @scala.inline
-  implicit class DeleteClientVpnRouteRequestOps[Self <: DeleteClientVpnRouteRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteClientVpnRouteRequestMutableBuilder[Self <: DeleteClientVpnRouteRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = this.set("ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setDestinationCidrBlock(value: String): Self = this.set("DestinationCidrBlock", value.asInstanceOf[js.Any])
+    def setTargetVpcSubnetId(value: SubnetId): Self = StObject.set(x, "TargetVpcSubnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
-    
-    @scala.inline
-    def setTargetVpcSubnetId(value: SubnetId): Self = this.set("TargetVpcSubnetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetVpcSubnetId: Self = this.set("TargetVpcSubnetId", js.undefined)
+    def setTargetVpcSubnetIdUndefined: Self = StObject.set(x, "TargetVpcSubnetId", js.undefined)
   }
 }

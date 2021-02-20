@@ -15,12 +15,13 @@ import typings.glaze.glazeStrings.paddingRight
 import typings.glaze.glazeStrings.paddingTop
 import typings.glaze.glazeStrings.paddingX
 import typings.glaze.glazeStrings.paddingY
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bg extends js.Object {
+trait Bg extends StObject {
   
   val bg: background = js.native
   
@@ -77,63 +78,51 @@ object Bg {
   }
   
   @scala.inline
-  implicit class BgOps[Self <: Bg] (val x: Self) extends AnyVal {
+  implicit class BgMutableBuilder[Self <: Bg] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: background): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setM(value: margin): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMb(value: marginBottom): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: background): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def setMl(value: marginLeft): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setM(value: margin): Self = this.set("m", value.asInstanceOf[js.Any])
+    def setMr(value: marginRight): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMb(value: marginBottom): Self = this.set("mb", value.asInstanceOf[js.Any])
+    def setMt(value: marginTop): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMl(value: marginLeft): Self = this.set("ml", value.asInstanceOf[js.Any])
+    def setMx(value: marginX): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMr(value: marginRight): Self = this.set("mr", value.asInstanceOf[js.Any])
+    def setMy(value: marginY): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMt(value: marginTop): Self = this.set("mt", value.asInstanceOf[js.Any])
+    def setP(value: padding): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMx(value: marginX): Self = this.set("mx", value.asInstanceOf[js.Any])
+    def setPb(value: paddingBottom): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMy(value: marginY): Self = this.set("my", value.asInstanceOf[js.Any])
+    def setPl(value: paddingLeft): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: padding): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setPr(value: paddingRight): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPb(value: paddingBottom): Self = this.set("pb", value.asInstanceOf[js.Any])
+    def setPt(value: paddingTop): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPl(value: paddingLeft): Self = this.set("pl", value.asInstanceOf[js.Any])
+    def setPx(value: paddingX): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPr(value: paddingRight): Self = this.set("pr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPt(value: paddingTop): Self = this.set("pt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPx(value: paddingX): Self = this.set("px", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPy(value: paddingY): Self = this.set("py", value.asInstanceOf[js.Any])
+    def setPy(value: paddingY): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
   }
 }

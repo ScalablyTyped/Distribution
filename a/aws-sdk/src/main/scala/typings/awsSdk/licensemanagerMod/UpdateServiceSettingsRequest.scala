@@ -1,11 +1,12 @@
 package typings.awsSdk.licensemanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateServiceSettingsRequest extends js.Object {
+trait UpdateServiceSettingsRequest extends StObject {
   
   /**
     * Activates cross-account discovery.
@@ -36,42 +37,30 @@ object UpdateServiceSettingsRequest {
   }
   
   @scala.inline
-  implicit class UpdateServiceSettingsRequestOps[Self <: UpdateServiceSettingsRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateServiceSettingsRequestMutableBuilder[Self <: UpdateServiceSettingsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableCrossAccountsDiscovery(value: BoxBoolean): Self = StObject.set(x, "EnableCrossAccountsDiscovery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableCrossAccountsDiscoveryUndefined: Self = StObject.set(x, "EnableCrossAccountsDiscovery", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrganizationConfiguration(value: OrganizationConfiguration): Self = StObject.set(x, "OrganizationConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableCrossAccountsDiscovery(value: BoxBoolean): Self = this.set("EnableCrossAccountsDiscovery", value.asInstanceOf[js.Any])
+    def setOrganizationConfigurationUndefined: Self = StObject.set(x, "OrganizationConfiguration", js.undefined)
     
     @scala.inline
-    def deleteEnableCrossAccountsDiscovery: Self = this.set("EnableCrossAccountsDiscovery", js.undefined)
+    def setS3BucketArn(value: String): Self = StObject.set(x, "S3BucketArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationConfiguration(value: OrganizationConfiguration): Self = this.set("OrganizationConfiguration", value.asInstanceOf[js.Any])
+    def setS3BucketArnUndefined: Self = StObject.set(x, "S3BucketArn", js.undefined)
     
     @scala.inline
-    def deleteOrganizationConfiguration: Self = this.set("OrganizationConfiguration", js.undefined)
+    def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setS3BucketArn(value: String): Self = this.set("S3BucketArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteS3BucketArn: Self = this.set("S3BucketArn", js.undefined)
-    
-    @scala.inline
-    def setSnsTopicArn(value: String): Self = this.set("SnsTopicArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSnsTopicArn: Self = this.set("SnsTopicArn", js.undefined)
+    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
   }
 }

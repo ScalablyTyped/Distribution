@@ -4,13 +4,14 @@ import typings.msRestAzure.anon.ActiveDirectoryEndpointUrl
 import typings.msRestAzure.anon.ActiveDirectoryGraphApiVersion
 import typings.msRestAzure.anon.ActiveDirectoryGraphResourceId
 import typings.msRestAzure.anon.ActiveDirectoryResourceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "AzureEnvironment")
 @js.native
-class AzureEnvironment protected () extends js.Object {
+class AzureEnvironment protected () extends StObject {
   /**
     * Initializes a new instance of the AzureEnvironment class.
     * @param {string} parameters.name - The Environment name
@@ -121,15 +122,21 @@ class AzureEnvironment protected () extends js.Object {
   var validateAuthority: Boolean = js.native
 }
 /* static members */
-@JSImport("ms-rest-azure", "AzureEnvironment")
-@js.native
-object AzureEnvironment extends js.Object {
+object AzureEnvironment {
   
+  @JSImport("ms-rest-azure", "AzureEnvironment.Azure")
+  @js.native
   val Azure: ActiveDirectoryEndpointUrl = js.native
   
+  @JSImport("ms-rest-azure", "AzureEnvironment.AzureChina")
+  @js.native
   val AzureChina: ActiveDirectoryGraphApiVersion = js.native
   
+  @JSImport("ms-rest-azure", "AzureEnvironment.AzureGermanCloud")
+  @js.native
   val AzureGermanCloud: ActiveDirectoryResourceId = js.native
   
+  @JSImport("ms-rest-azure", "AzureEnvironment.AzureUSGovernment")
+  @js.native
   val AzureUSGovernment: ActiveDirectoryGraphResourceId = js.native
 }

@@ -1,5 +1,6 @@
 package typings.umbraco.umbraco.services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Tracks the various application state variables when working in the back office, raises events when state changes.
   */
 @js.native
-trait IAppState extends js.Object {
+trait IAppState extends StObject {
   
   /**
     * @ngdoc function
@@ -133,48 +134,36 @@ object IAppState {
   }
   
   @scala.inline
-  implicit class IAppStateOps[Self <: IAppState] (val x: Self) extends AnyVal {
+  implicit class IAppStateMutableBuilder[Self <: IAppState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGlobalState(value: String => IGlobalState): Self = StObject.set(x, "getGlobalState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetMenuState(value: String => IStateObject): Self = StObject.set(x, "getMenuState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetSectionState(value: String => ISectionState): Self = StObject.set(x, "getSectionState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetGlobalState(value: String => IGlobalState): Self = this.set("getGlobalState", js.Any.fromFunction1(value))
+    def setGetState(value: (IStateObject, String, String) => IStateObject): Self = StObject.set(x, "getState", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGetMenuState(value: String => IStateObject): Self = this.set("getMenuState", js.Any.fromFunction1(value))
+    def setGetTreeState(value: String => ITreeState): Self = StObject.set(x, "getTreeState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetSectionState(value: String => ISectionState): Self = this.set("getSectionState", js.Any.fromFunction1(value))
+    def setSetGlobalState(value: (String, Boolean) => Unit): Self = StObject.set(x, "setGlobalState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetState(value: (IStateObject, String, String) => IStateObject): Self = this.set("getState", js.Any.fromFunction3(value))
+    def setSetMenuState(value: (String, IMenuState) => Unit): Self = StObject.set(x, "setMenuState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetTreeState(value: String => ITreeState): Self = this.set("getTreeState", js.Any.fromFunction1(value))
+    def setSetSectionState(value: (String, ISectionState) => Unit): Self = StObject.set(x, "setSectionState", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setSetGlobalState(value: (String, Boolean) => Unit): Self = this.set("setGlobalState", js.Any.fromFunction2(value))
+    def setSetState(value: (IStateObject, String, js.Any, String) => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setSetMenuState(value: (String, IMenuState) => Unit): Self = this.set("setMenuState", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetSectionState(value: (String, ISectionState) => Unit): Self = this.set("setSectionState", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetState(value: (IStateObject, String, js.Any, String) => Unit): Self = this.set("setState", js.Any.fromFunction4(value))
-    
-    @scala.inline
-    def setSetTreeState(value: (String, ITreeState) => Unit): Self = this.set("setTreeState", js.Any.fromFunction2(value))
+    def setSetTreeState(value: (String, ITreeState) => Unit): Self = StObject.set(x, "setTreeState", js.Any.fromFunction2(value))
   }
 }

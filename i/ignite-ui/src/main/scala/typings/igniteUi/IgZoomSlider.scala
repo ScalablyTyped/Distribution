@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -140,330 +141,318 @@ object IgZoomSlider {
   }
   
   @scala.inline
-  implicit class IgZoomSliderOps[Self <: IgZoomSlider] (val x: Self) extends AnyVal {
+  implicit class IgZoomSliderMutableBuilder[Self <: IgZoomSlider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualPixelScalingRatio(value: Double): Self = StObject.set(x, "actualPixelScalingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualPixelScalingRatioUndefined: Self = StObject.set(x, "actualPixelScalingRatio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAreThumbCalloutsEnabled(value: Boolean): Self = StObject.set(x, "areThumbCalloutsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualPixelScalingRatio(value: Double): Self = this.set("actualPixelScalingRatio", value.asInstanceOf[js.Any])
+    def setAreThumbCalloutsEnabledUndefined: Self = StObject.set(x, "areThumbCalloutsEnabled", js.undefined)
     
     @scala.inline
-    def deleteActualPixelScalingRatio: Self = this.set("actualPixelScalingRatio", js.undefined)
+    def setBarBrush(value: js.Any): Self = StObject.set(x, "barBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreThumbCalloutsEnabled(value: Boolean): Self = this.set("areThumbCalloutsEnabled", value.asInstanceOf[js.Any])
+    def setBarBrushUndefined: Self = StObject.set(x, "barBrush", js.undefined)
     
     @scala.inline
-    def deleteAreThumbCalloutsEnabled: Self = this.set("areThumbCalloutsEnabled", js.undefined)
+    def setBarExtent(value: Double): Self = StObject.set(x, "barExtent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarBrush(value: js.Any): Self = this.set("barBrush", value.asInstanceOf[js.Any])
+    def setBarExtentUndefined: Self = StObject.set(x, "barExtent", js.undefined)
     
     @scala.inline
-    def deleteBarBrush: Self = this.set("barBrush", js.undefined)
+    def setBarOutline(value: js.Any): Self = StObject.set(x, "barOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarExtent(value: Double): Self = this.set("barExtent", value.asInstanceOf[js.Any])
+    def setBarOutlineUndefined: Self = StObject.set(x, "barOutline", js.undefined)
     
     @scala.inline
-    def deleteBarExtent: Self = this.set("barExtent", js.undefined)
+    def setBarStrokeThickness(value: Double): Self = StObject.set(x, "barStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarOutline(value: js.Any): Self = this.set("barOutline", value.asInstanceOf[js.Any])
+    def setBarStrokeThicknessUndefined: Self = StObject.set(x, "barStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteBarOutline: Self = this.set("barOutline", js.undefined)
+    def setEndInset(value: Double): Self = StObject.set(x, "endInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarStrokeThickness(value: Double): Self = this.set("barStrokeThickness", value.asInstanceOf[js.Any])
+    def setEndInsetUndefined: Self = StObject.set(x, "endInset", js.undefined)
     
     @scala.inline
-    def deleteBarStrokeThickness: Self = this.set("barStrokeThickness", js.undefined)
+    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndInset(value: Double): Self = this.set("endInset", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteEndInset: Self = this.set("endInset", js.undefined)
+    def setHigherCalloutBrush(value: js.Any): Self = StObject.set(x, "higherCalloutBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHigherCalloutBrushUndefined: Self = StObject.set(x, "higherCalloutBrush", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHigherCalloutOutline(value: js.Any): Self = StObject.set(x, "higherCalloutOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherCalloutBrush(value: js.Any): Self = this.set("higherCalloutBrush", value.asInstanceOf[js.Any])
+    def setHigherCalloutOutlineUndefined: Self = StObject.set(x, "higherCalloutOutline", js.undefined)
     
     @scala.inline
-    def deleteHigherCalloutBrush: Self = this.set("higherCalloutBrush", js.undefined)
+    def setHigherCalloutStrokeThickness(value: Double): Self = StObject.set(x, "higherCalloutStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherCalloutOutline(value: js.Any): Self = this.set("higherCalloutOutline", value.asInstanceOf[js.Any])
+    def setHigherCalloutStrokeThicknessUndefined: Self = StObject.set(x, "higherCalloutStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteHigherCalloutOutline: Self = this.set("higherCalloutOutline", js.undefined)
+    def setHigherCalloutTextColor(value: js.Any): Self = StObject.set(x, "higherCalloutTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherCalloutStrokeThickness(value: Double): Self = this.set("higherCalloutStrokeThickness", value.asInstanceOf[js.Any])
+    def setHigherCalloutTextColorUndefined: Self = StObject.set(x, "higherCalloutTextColor", js.undefined)
     
     @scala.inline
-    def deleteHigherCalloutStrokeThickness: Self = this.set("higherCalloutStrokeThickness", js.undefined)
+    def setHigherShadeBrush(value: js.Any): Self = StObject.set(x, "higherShadeBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherCalloutTextColor(value: js.Any): Self = this.set("higherCalloutTextColor", value.asInstanceOf[js.Any])
+    def setHigherShadeBrushUndefined: Self = StObject.set(x, "higherShadeBrush", js.undefined)
     
     @scala.inline
-    def deleteHigherCalloutTextColor: Self = this.set("higherCalloutTextColor", js.undefined)
+    def setHigherShadeOutline(value: js.Any): Self = StObject.set(x, "higherShadeOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherShadeBrush(value: js.Any): Self = this.set("higherShadeBrush", value.asInstanceOf[js.Any])
+    def setHigherShadeOutlineUndefined: Self = StObject.set(x, "higherShadeOutline", js.undefined)
     
     @scala.inline
-    def deleteHigherShadeBrush: Self = this.set("higherShadeBrush", js.undefined)
+    def setHigherShadeStrokeThickness(value: Double): Self = StObject.set(x, "higherShadeStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherShadeOutline(value: js.Any): Self = this.set("higherShadeOutline", value.asInstanceOf[js.Any])
+    def setHigherShadeStrokeThicknessUndefined: Self = StObject.set(x, "higherShadeStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteHigherShadeOutline: Self = this.set("higherShadeOutline", js.undefined)
+    def setHigherThumbBrush(value: js.Any): Self = StObject.set(x, "higherThumbBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherShadeStrokeThickness(value: Double): Self = this.set("higherShadeStrokeThickness", value.asInstanceOf[js.Any])
+    def setHigherThumbBrushUndefined: Self = StObject.set(x, "higherThumbBrush", js.undefined)
     
     @scala.inline
-    def deleteHigherShadeStrokeThickness: Self = this.set("higherShadeStrokeThickness", js.undefined)
+    def setHigherThumbHeight(value: Double): Self = StObject.set(x, "higherThumbHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherThumbBrush(value: js.Any): Self = this.set("higherThumbBrush", value.asInstanceOf[js.Any])
+    def setHigherThumbHeightUndefined: Self = StObject.set(x, "higherThumbHeight", js.undefined)
     
     @scala.inline
-    def deleteHigherThumbBrush: Self = this.set("higherThumbBrush", js.undefined)
+    def setHigherThumbOutline(value: js.Any): Self = StObject.set(x, "higherThumbOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherThumbHeight(value: Double): Self = this.set("higherThumbHeight", value.asInstanceOf[js.Any])
+    def setHigherThumbOutlineUndefined: Self = StObject.set(x, "higherThumbOutline", js.undefined)
     
     @scala.inline
-    def deleteHigherThumbHeight: Self = this.set("higherThumbHeight", js.undefined)
+    def setHigherThumbRidgesBrush(value: js.Any): Self = StObject.set(x, "higherThumbRidgesBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherThumbOutline(value: js.Any): Self = this.set("higherThumbOutline", value.asInstanceOf[js.Any])
+    def setHigherThumbRidgesBrushUndefined: Self = StObject.set(x, "higherThumbRidgesBrush", js.undefined)
     
     @scala.inline
-    def deleteHigherThumbOutline: Self = this.set("higherThumbOutline", js.undefined)
+    def setHigherThumbStrokeThickness(value: Double): Self = StObject.set(x, "higherThumbStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherThumbRidgesBrush(value: js.Any): Self = this.set("higherThumbRidgesBrush", value.asInstanceOf[js.Any])
+    def setHigherThumbStrokeThicknessUndefined: Self = StObject.set(x, "higherThumbStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteHigherThumbRidgesBrush: Self = this.set("higherThumbRidgesBrush", js.undefined)
+    def setHigherThumbWidth(value: Double): Self = StObject.set(x, "higherThumbWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherThumbStrokeThickness(value: Double): Self = this.set("higherThumbStrokeThickness", value.asInstanceOf[js.Any])
+    def setHigherThumbWidthUndefined: Self = StObject.set(x, "higherThumbWidth", js.undefined)
     
     @scala.inline
-    def deleteHigherThumbStrokeThickness: Self = this.set("higherThumbStrokeThickness", js.undefined)
+    def setLowerCalloutBrush(value: js.Any): Self = StObject.set(x, "lowerCalloutBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHigherThumbWidth(value: Double): Self = this.set("higherThumbWidth", value.asInstanceOf[js.Any])
+    def setLowerCalloutBrushUndefined: Self = StObject.set(x, "lowerCalloutBrush", js.undefined)
     
     @scala.inline
-    def deleteHigherThumbWidth: Self = this.set("higherThumbWidth", js.undefined)
+    def setLowerCalloutOutline(value: js.Any): Self = StObject.set(x, "lowerCalloutOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerCalloutBrush(value: js.Any): Self = this.set("lowerCalloutBrush", value.asInstanceOf[js.Any])
+    def setLowerCalloutOutlineUndefined: Self = StObject.set(x, "lowerCalloutOutline", js.undefined)
     
     @scala.inline
-    def deleteLowerCalloutBrush: Self = this.set("lowerCalloutBrush", js.undefined)
+    def setLowerCalloutStrokeThickness(value: Double): Self = StObject.set(x, "lowerCalloutStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerCalloutOutline(value: js.Any): Self = this.set("lowerCalloutOutline", value.asInstanceOf[js.Any])
+    def setLowerCalloutStrokeThicknessUndefined: Self = StObject.set(x, "lowerCalloutStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteLowerCalloutOutline: Self = this.set("lowerCalloutOutline", js.undefined)
+    def setLowerCalloutTextColor(value: js.Any): Self = StObject.set(x, "lowerCalloutTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerCalloutStrokeThickness(value: Double): Self = this.set("lowerCalloutStrokeThickness", value.asInstanceOf[js.Any])
+    def setLowerCalloutTextColorUndefined: Self = StObject.set(x, "lowerCalloutTextColor", js.undefined)
     
     @scala.inline
-    def deleteLowerCalloutStrokeThickness: Self = this.set("lowerCalloutStrokeThickness", js.undefined)
+    def setLowerShadeBrush(value: js.Any): Self = StObject.set(x, "lowerShadeBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerCalloutTextColor(value: js.Any): Self = this.set("lowerCalloutTextColor", value.asInstanceOf[js.Any])
+    def setLowerShadeBrushUndefined: Self = StObject.set(x, "lowerShadeBrush", js.undefined)
     
     @scala.inline
-    def deleteLowerCalloutTextColor: Self = this.set("lowerCalloutTextColor", js.undefined)
+    def setLowerShadeOutline(value: js.Any): Self = StObject.set(x, "lowerShadeOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerShadeBrush(value: js.Any): Self = this.set("lowerShadeBrush", value.asInstanceOf[js.Any])
+    def setLowerShadeOutlineUndefined: Self = StObject.set(x, "lowerShadeOutline", js.undefined)
     
     @scala.inline
-    def deleteLowerShadeBrush: Self = this.set("lowerShadeBrush", js.undefined)
+    def setLowerShadeStrokeThickness(value: Double): Self = StObject.set(x, "lowerShadeStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerShadeOutline(value: js.Any): Self = this.set("lowerShadeOutline", value.asInstanceOf[js.Any])
+    def setLowerShadeStrokeThicknessUndefined: Self = StObject.set(x, "lowerShadeStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteLowerShadeOutline: Self = this.set("lowerShadeOutline", js.undefined)
+    def setLowerThumbBrush(value: js.Any): Self = StObject.set(x, "lowerThumbBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerShadeStrokeThickness(value: Double): Self = this.set("lowerShadeStrokeThickness", value.asInstanceOf[js.Any])
+    def setLowerThumbBrushUndefined: Self = StObject.set(x, "lowerThumbBrush", js.undefined)
     
     @scala.inline
-    def deleteLowerShadeStrokeThickness: Self = this.set("lowerShadeStrokeThickness", js.undefined)
+    def setLowerThumbHeight(value: Double): Self = StObject.set(x, "lowerThumbHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerThumbBrush(value: js.Any): Self = this.set("lowerThumbBrush", value.asInstanceOf[js.Any])
+    def setLowerThumbHeightUndefined: Self = StObject.set(x, "lowerThumbHeight", js.undefined)
     
     @scala.inline
-    def deleteLowerThumbBrush: Self = this.set("lowerThumbBrush", js.undefined)
+    def setLowerThumbOutline(value: js.Any): Self = StObject.set(x, "lowerThumbOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerThumbHeight(value: Double): Self = this.set("lowerThumbHeight", value.asInstanceOf[js.Any])
+    def setLowerThumbOutlineUndefined: Self = StObject.set(x, "lowerThumbOutline", js.undefined)
     
     @scala.inline
-    def deleteLowerThumbHeight: Self = this.set("lowerThumbHeight", js.undefined)
+    def setLowerThumbRidgesBrush(value: js.Any): Self = StObject.set(x, "lowerThumbRidgesBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerThumbOutline(value: js.Any): Self = this.set("lowerThumbOutline", value.asInstanceOf[js.Any])
+    def setLowerThumbRidgesBrushUndefined: Self = StObject.set(x, "lowerThumbRidgesBrush", js.undefined)
     
     @scala.inline
-    def deleteLowerThumbOutline: Self = this.set("lowerThumbOutline", js.undefined)
+    def setLowerThumbStrokeThickness(value: Double): Self = StObject.set(x, "lowerThumbStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerThumbRidgesBrush(value: js.Any): Self = this.set("lowerThumbRidgesBrush", value.asInstanceOf[js.Any])
+    def setLowerThumbStrokeThicknessUndefined: Self = StObject.set(x, "lowerThumbStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteLowerThumbRidgesBrush: Self = this.set("lowerThumbRidgesBrush", js.undefined)
+    def setLowerThumbWidth(value: Double): Self = StObject.set(x, "lowerThumbWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerThumbStrokeThickness(value: Double): Self = this.set("lowerThumbStrokeThickness", value.asInstanceOf[js.Any])
+    def setLowerThumbWidthUndefined: Self = StObject.set(x, "lowerThumbWidth", js.undefined)
     
     @scala.inline
-    def deleteLowerThumbStrokeThickness: Self = this.set("lowerThumbStrokeThickness", js.undefined)
+    def setMaxZoomWidth(value: Double): Self = StObject.set(x, "maxZoomWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowerThumbWidth(value: Double): Self = this.set("lowerThumbWidth", value.asInstanceOf[js.Any])
+    def setMaxZoomWidthUndefined: Self = StObject.set(x, "maxZoomWidth", js.undefined)
     
     @scala.inline
-    def deleteLowerThumbWidth: Self = this.set("lowerThumbWidth", js.undefined)
+    def setMinZoomWidth(value: Double): Self = StObject.set(x, "minZoomWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoomWidth(value: Double): Self = this.set("maxZoomWidth", value.asInstanceOf[js.Any])
+    def setMinZoomWidthUndefined: Self = StObject.set(x, "minZoomWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxZoomWidth: Self = this.set("maxZoomWidth", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinZoomWidth(value: Double): Self = this.set("minZoomWidth", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMinZoomWidth: Self = this.set("minZoomWidth", js.undefined)
+    def setPanTransitionDuration(value: Double): Self = StObject.set(x, "panTransitionDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setPanTransitionDurationUndefined: Self = StObject.set(x, "panTransitionDuration", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setPixelScalingRatio(value: Double): Self = StObject.set(x, "pixelScalingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanTransitionDuration(value: Double): Self = this.set("panTransitionDuration", value.asInstanceOf[js.Any])
+    def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
     @scala.inline
-    def deletePanTransitionDuration: Self = this.set("panTransitionDuration", js.undefined)
+    def setPropertyChanged(value: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit): Self = StObject.set(x, "propertyChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    def setPropertyChangedUndefined: Self = StObject.set(x, "propertyChanged", js.undefined)
     
     @scala.inline
-    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    def setRangeThumbBrush(value: js.Any): Self = StObject.set(x, "rangeThumbBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyChanged(value: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit): Self = this.set("propertyChanged", js.Any.fromFunction2(value))
+    def setRangeThumbBrushUndefined: Self = StObject.set(x, "rangeThumbBrush", js.undefined)
     
     @scala.inline
-    def deletePropertyChanged: Self = this.set("propertyChanged", js.undefined)
+    def setRangeThumbOutline(value: js.Any): Self = StObject.set(x, "rangeThumbOutline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeThumbBrush(value: js.Any): Self = this.set("rangeThumbBrush", value.asInstanceOf[js.Any])
+    def setRangeThumbOutlineUndefined: Self = StObject.set(x, "rangeThumbOutline", js.undefined)
     
     @scala.inline
-    def deleteRangeThumbBrush: Self = this.set("rangeThumbBrush", js.undefined)
+    def setRangeThumbRidgesBrush(value: js.Any): Self = StObject.set(x, "rangeThumbRidgesBrush", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeThumbOutline(value: js.Any): Self = this.set("rangeThumbOutline", value.asInstanceOf[js.Any])
+    def setRangeThumbRidgesBrushUndefined: Self = StObject.set(x, "rangeThumbRidgesBrush", js.undefined)
     
     @scala.inline
-    def deleteRangeThumbOutline: Self = this.set("rangeThumbOutline", js.undefined)
+    def setRangeThumbStrokeThickness(value: Double): Self = StObject.set(x, "rangeThumbStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRangeThumbRidgesBrush(value: js.Any): Self = this.set("rangeThumbRidgesBrush", value.asInstanceOf[js.Any])
+    def setRangeThumbStrokeThicknessUndefined: Self = StObject.set(x, "rangeThumbStrokeThickness", js.undefined)
     
     @scala.inline
-    def deleteRangeThumbRidgesBrush: Self = this.set("rangeThumbRidgesBrush", js.undefined)
+    def setResolvingAxisValue(value: (/* event */ Event, /* ui */ ResolvingAxisValueEventUIParam) => Unit): Self = StObject.set(x, "resolvingAxisValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRangeThumbStrokeThickness(value: Double): Self = this.set("rangeThumbStrokeThickness", value.asInstanceOf[js.Any])
+    def setResolvingAxisValueUndefined: Self = StObject.set(x, "resolvingAxisValue", js.undefined)
     
     @scala.inline
-    def deleteRangeThumbStrokeThickness: Self = this.set("rangeThumbStrokeThickness", js.undefined)
+    def setStartInset(value: Double): Self = StObject.set(x, "startInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResolvingAxisValue(value: (/* event */ Event, /* ui */ ResolvingAxisValueEventUIParam) => Unit): Self = this.set("resolvingAxisValue", js.Any.fromFunction2(value))
+    def setStartInsetUndefined: Self = StObject.set(x, "startInset", js.undefined)
     
     @scala.inline
-    def deleteResolvingAxisValue: Self = this.set("resolvingAxisValue", js.undefined)
+    def setThumbCalloutTextStyle(value: js.Any): Self = StObject.set(x, "thumbCalloutTextStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartInset(value: Double): Self = this.set("startInset", value.asInstanceOf[js.Any])
+    def setThumbCalloutTextStyleUndefined: Self = StObject.set(x, "thumbCalloutTextStyle", js.undefined)
     
     @scala.inline
-    def deleteStartInset: Self = this.set("startInset", js.undefined)
+    def setTrackEndInset(value: Double): Self = StObject.set(x, "trackEndInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThumbCalloutTextStyle(value: js.Any): Self = this.set("thumbCalloutTextStyle", value.asInstanceOf[js.Any])
+    def setTrackEndInsetUndefined: Self = StObject.set(x, "trackEndInset", js.undefined)
     
     @scala.inline
-    def deleteThumbCalloutTextStyle: Self = this.set("thumbCalloutTextStyle", js.undefined)
+    def setTrackStartInset(value: Double): Self = StObject.set(x, "trackStartInset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackEndInset(value: Double): Self = this.set("trackEndInset", value.asInstanceOf[js.Any])
+    def setTrackStartInsetUndefined: Self = StObject.set(x, "trackStartInset", js.undefined)
     
     @scala.inline
-    def deleteTrackEndInset: Self = this.set("trackEndInset", js.undefined)
+    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackStartInset(value: Double): Self = this.set("trackStartInset", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteTrackStartInset: Self = this.set("trackStartInset", js.undefined)
+    def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = StObject.set(x, "windowRectChanged", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWindowRectChangedUndefined: Self = StObject.set(x, "windowRectChanged", js.undefined)
     
     @scala.inline
-    def setWindowRect(value: js.Any): Self = this.set("windowRect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowRect: Self = this.set("windowRect", js.undefined)
-    
-    @scala.inline
-    def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = this.set("windowRectChanged", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteWindowRectChanged: Self = this.set("windowRectChanged", js.undefined)
+    def setWindowRectUndefined: Self = StObject.set(x, "windowRect", js.undefined)
   }
 }

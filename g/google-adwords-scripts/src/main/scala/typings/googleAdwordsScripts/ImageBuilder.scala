@@ -1,6 +1,7 @@
 package typings.googleAdwordsScripts
 
 import typings.googleAppsScript.GoogleAppsScript.Base.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,24 +26,12 @@ object ImageBuilder {
   }
   
   @scala.inline
-  implicit class ImageBuilderOps[Self <: ImageBuilder[_], Media] (val x: Self with ImageBuilder[Media]) extends AnyVal {
+  implicit class ImageBuilderMutableBuilder[Self <: ImageBuilder[_], Media] (val x: Self with ImageBuilder[Media]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithData(value: Blob => ImageBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWithData(value: Blob => ImageBuilder[Media]): Self = this.set("withData", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithName(value: String => ImageBuilder[Media]): Self = this.set("withName", js.Any.fromFunction1(value))
+    def setWithName(value: String => ImageBuilder[Media]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

@@ -6,19 +6,22 @@ import typings.std.Blob
 import typings.std.ReadableStream
 import typings.std.Set
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("file-type/browser", JSImport.Namespace)
-@js.native
-object browserMod extends js.Object {
+object browserMod {
   
   /**
   	Supported file extensions.
   	*/
+  @JSImport("file-type/browser", "extensions")
+  @js.native
   val extensions: Set[typings.fileType.coreMod.FileExtension] = js.native
   
+  @JSImport("file-type/browser", "fromBlob")
+  @js.native
   def fromBlob(blob: Blob): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = js.native
   
   /**
@@ -28,15 +31,25 @@ object browserMod extends js.Object {
   	@param buffer - A buffer representing file data. It works best if the buffer contains the entire file, it may work with a smaller portion as well.
   	@returns The detected file type and MIME type, or `undefined` when there is no match.
   	*/
+  @JSImport("file-type/browser", "fromBuffer")
+  @js.native
   def fromBuffer(buffer: Buffer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = js.native
+  @JSImport("file-type/browser", "fromBuffer")
+  @js.native
   def fromBuffer(buffer: ArrayBuffer): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = js.native
+  @JSImport("file-type/browser", "fromBuffer")
+  @js.native
   def fromBuffer(buffer: Uint8Array): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = js.native
   
+  @JSImport("file-type/browser", "fromStream")
+  @js.native
   def fromStream(stream: ReadableStream[_]): js.Promise[js.UndefOr[typings.fileType.coreMod.FileTypeResult]] = js.native
   
   /**
   	Supported MIME types.
   	*/
+  @JSImport("file-type/browser", "mimeTypes")
+  @js.native
   val mimeTypes: js.Array[typings.fileType.coreMod.MimeType] = js.native
   
   type FileExtension = typings.fileType.coreMod.FileExtension

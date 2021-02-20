@@ -1,12 +1,13 @@
 package typings.winrt.Windows.Storage
 
 import typings.winrt.Windows.Foundation.IAsyncAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IApplicationData extends js.Object {
+trait IApplicationData extends StObject {
   
   def clearAsync(): IAsyncAction = js.native
   def clearAsync(locality: ApplicationDataLocality): IAsyncAction = js.native

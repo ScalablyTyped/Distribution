@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creative Settings
   */
 @js.native
-trait SchemaCreativeSettings extends js.Object {
+trait SchemaCreativeSettings extends StObject {
   
   /**
     * Header text for iFrames for this site. Must be less than or equal to 2000
@@ -31,30 +32,18 @@ object SchemaCreativeSettings {
   }
   
   @scala.inline
-  implicit class SchemaCreativeSettingsOps[Self <: SchemaCreativeSettings] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeSettingsMutableBuilder[Self <: SchemaCreativeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIFrameFooter(value: String): Self = StObject.set(x, "iFrameFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIFrameFooterUndefined: Self = StObject.set(x, "iFrameFooter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIFrameHeader(value: String): Self = StObject.set(x, "iFrameHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIFrameFooter(value: String): Self = this.set("iFrameFooter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIFrameFooter: Self = this.set("iFrameFooter", js.undefined)
-    
-    @scala.inline
-    def setIFrameHeader(value: String): Self = this.set("iFrameHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIFrameHeader: Self = this.set("iFrameHeader", js.undefined)
+    def setIFrameHeaderUndefined: Self = StObject.set(x, "iFrameHeader", js.undefined)
   }
 }

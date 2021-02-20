@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InventoryDeletionSummaryItem extends js.Object {
+trait InventoryDeletionSummaryItem extends StObject {
   
   /**
     * A count of the number of deleted items.
@@ -31,36 +32,24 @@ object InventoryDeletionSummaryItem {
   }
   
   @scala.inline
-  implicit class InventoryDeletionSummaryItemOps[Self <: InventoryDeletionSummaryItem] (val x: Self) extends AnyVal {
+  implicit class InventoryDeletionSummaryItemMutableBuilder[Self <: InventoryDeletionSummaryItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: ResourceCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRemainingCount(value: RemainingCount): Self = StObject.set(x, "RemainingCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: ResourceCount): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setRemainingCountUndefined: Self = StObject.set(x, "RemainingCount", js.undefined)
     
     @scala.inline
-    def deleteCount: Self = this.set("Count", js.undefined)
+    def setVersion(value: InventoryItemSchemaVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemainingCount(value: RemainingCount): Self = this.set("RemainingCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemainingCount: Self = this.set("RemainingCount", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: InventoryItemSchemaVersion): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("Version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

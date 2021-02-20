@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TuningJobCompletionCriteria extends js.Object {
+trait TuningJobCompletionCriteria extends StObject {
   
   /**
     * The value of the objective metric.
@@ -21,21 +22,9 @@ object TuningJobCompletionCriteria {
   }
   
   @scala.inline
-  implicit class TuningJobCompletionCriteriaOps[Self <: TuningJobCompletionCriteria] (val x: Self) extends AnyVal {
+  implicit class TuningJobCompletionCriteriaMutableBuilder[Self <: TuningJobCompletionCriteria] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTargetObjectiveMetricValue(value: TargetObjectiveMetricValue): Self = this.set("TargetObjectiveMetricValue", value.asInstanceOf[js.Any])
+    def setTargetObjectiveMetricValue(value: TargetObjectiveMetricValue): Self = StObject.set(x, "TargetObjectiveMetricValue", value.asInstanceOf[js.Any])
   }
 }

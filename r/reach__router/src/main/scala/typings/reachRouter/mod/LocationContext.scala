@@ -1,12 +1,13 @@
 package typings.reachRouter.mod
 
 import typings.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocationContext extends js.Object {
+trait LocationContext extends StObject {
   
   var location: WindowLocation[LocationState] = js.native
   
@@ -21,24 +22,12 @@ object LocationContext {
   }
   
   @scala.inline
-  implicit class LocationContextOps[Self <: LocationContext] (val x: Self) extends AnyVal {
+  implicit class LocationContextMutableBuilder[Self <: LocationContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocation(value: WindowLocation[LocationState]): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNavigate(value: NavigateFn): Self = this.set("navigate", value.asInstanceOf[js.Any])
+    def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
   }
 }

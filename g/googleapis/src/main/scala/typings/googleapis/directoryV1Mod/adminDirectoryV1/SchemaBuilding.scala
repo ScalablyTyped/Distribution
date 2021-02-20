@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for Building object in Directory API.
   */
 @js.native
-trait SchemaBuilding extends js.Object {
+trait SchemaBuilding extends StObject {
   
   /**
     * The postal address of the building. See PostalAddress for details. Note
@@ -68,69 +69,57 @@ object SchemaBuilding {
   }
   
   @scala.inline
-  implicit class SchemaBuildingOps[Self <: SchemaBuilding] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildingMutableBuilder[Self <: SchemaBuilding] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: SchemaBuildingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: SchemaBuildingAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
     
     @scala.inline
-    def deleteAddress: Self = this.set("address", js.undefined)
+    def setBuildingName(value: String): Self = StObject.set(x, "buildingName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildingId(value: String): Self = this.set("buildingId", value.asInstanceOf[js.Any])
+    def setBuildingNameUndefined: Self = StObject.set(x, "buildingName", js.undefined)
     
     @scala.inline
-    def deleteBuildingId: Self = this.set("buildingId", js.undefined)
+    def setCoordinates(value: SchemaBuildingCoordinates): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildingName(value: String): Self = this.set("buildingName", value.asInstanceOf[js.Any])
+    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
     @scala.inline
-    def deleteBuildingName: Self = this.set("buildingName", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoordinates(value: SchemaBuildingCoordinates): Self = this.set("coordinates", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCoordinates: Self = this.set("coordinates", js.undefined)
+    def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFloorNames(value: js.Array[String]): Self = StObject.set(x, "floorNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtags(value: String): Self = this.set("etags", value.asInstanceOf[js.Any])
+    def setFloorNamesUndefined: Self = StObject.set(x, "floorNames", js.undefined)
     
     @scala.inline
-    def deleteEtags: Self = this.set("etags", js.undefined)
+    def setFloorNamesVarargs(value: String*): Self = StObject.set(x, "floorNames", js.Array(value :_*))
     
     @scala.inline
-    def setFloorNamesVarargs(value: String*): Self = this.set("floorNames", js.Array(value :_*))
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloorNames(value: js.Array[String]): Self = this.set("floorNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFloorNames: Self = this.set("floorNames", js.undefined)
-    
-    @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

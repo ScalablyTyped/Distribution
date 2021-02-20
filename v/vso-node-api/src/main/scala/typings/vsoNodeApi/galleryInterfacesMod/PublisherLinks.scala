@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PublisherLinks extends js.Object {
+trait PublisherLinks extends StObject {
   
   /**
     * URL for company website
@@ -65,42 +66,30 @@ object PublisherLinks {
   }
   
   @scala.inline
-  implicit class PublisherLinksOps[Self <: PublisherLinks] (val x: Self) extends AnyVal {
+  implicit class PublisherLinksMutableBuilder[Self <: PublisherLinks] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompany(value: Link): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackLogo(value: Link): Self = StObject.set(x, "fallbackLogo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinkedIn(value: Link): Self = StObject.set(x, "linkedIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: Link): Self = this.set("company", value.asInstanceOf[js.Any])
+    def setLogo(value: Link): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackLogo(value: Link): Self = this.set("fallbackLogo", value.asInstanceOf[js.Any])
+    def setProfile(value: Link): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedIn(value: Link): Self = this.set("linkedIn", value.asInstanceOf[js.Any])
+    def setSourceCode(value: Link): Self = StObject.set(x, "sourceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: Link): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setSupport(value: Link): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: Link): Self = this.set("profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceCode(value: Link): Self = this.set("sourceCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSupport(value: Link): Self = this.set("support", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTwitter(value: Link): Self = this.set("twitter", value.asInstanceOf[js.Any])
+    def setTwitter(value: Link): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
   }
 }

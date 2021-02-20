@@ -1,11 +1,12 @@
 package typings.openseadragon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavImagesValues extends js.Object {
+trait NavImagesValues extends StObject {
   
   var DOWN: String = js.native
   
@@ -24,30 +25,18 @@ object NavImagesValues {
   }
   
   @scala.inline
-  implicit class NavImagesValuesOps[Self <: NavImagesValues] (val x: Self) extends AnyVal {
+  implicit class NavImagesValuesMutableBuilder[Self <: NavImagesValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDOWN(value: String): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGROUP(value: String): Self = StObject.set(x, "GROUP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHOVER(value: String): Self = StObject.set(x, "HOVER", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDOWN(value: String): Self = this.set("DOWN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGROUP(value: String): Self = this.set("GROUP", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHOVER(value: String): Self = this.set("HOVER", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setREST(value: String): Self = this.set("REST", value.asInstanceOf[js.Any])
+    def setREST(value: String): Self = StObject.set(x, "REST", value.asInstanceOf[js.Any])
   }
 }

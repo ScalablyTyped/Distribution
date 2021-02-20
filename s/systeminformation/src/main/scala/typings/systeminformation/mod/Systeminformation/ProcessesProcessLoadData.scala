@@ -1,11 +1,12 @@
 package typings.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProcessesProcessLoadData extends js.Object {
+trait ProcessesProcessLoadData extends StObject {
   
   var cpu: Double = js.native
   
@@ -26,36 +27,24 @@ object ProcessesProcessLoadData {
   }
   
   @scala.inline
-  implicit class ProcessesProcessLoadDataOps[Self <: ProcessesProcessLoadData] (val x: Self) extends AnyVal {
+  implicit class ProcessesProcessLoadDataMutableBuilder[Self <: ProcessesProcessLoadData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMem(value: Double): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCpu(value: Double): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMem(value: Double): Self = this.set("mem", value.asInstanceOf[js.Any])
+    def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
     
     @scala.inline
-    def setPid(value: Double): Self = this.set("pid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPidsVarargs(value: Double*): Self = this.set("pids", js.Array(value :_*))
-    
-    @scala.inline
-    def setPids(value: js.Array[Double]): Self = this.set("pids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProc(value: String): Self = this.set("proc", value.asInstanceOf[js.Any])
+    def setProc(value: String): Self = StObject.set(x, "proc", value.asInstanceOf[js.Any])
   }
 }

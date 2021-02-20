@@ -1,11 +1,12 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait initPtsFoundData extends js.Object {
+trait initPtsFoundData extends StObject {
   
   var d: String = js.native
   
@@ -22,27 +23,15 @@ object initPtsFoundData {
   }
   
   @scala.inline
-  implicit class initPtsFoundDataOps[Self <: initPtsFoundData] (val x: Self) extends AnyVal {
+  implicit class initPtsFoundDataMutableBuilder[Self <: initPtsFoundData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFrag(value: Fragment): Self = this.set("frag", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setInitPTS(value: Double): Self = this.set("initPTS", value.asInstanceOf[js.Any])
+    def setInitPTS(value: Double): Self = StObject.set(x, "initPTS", value.asInstanceOf[js.Any])
   }
 }

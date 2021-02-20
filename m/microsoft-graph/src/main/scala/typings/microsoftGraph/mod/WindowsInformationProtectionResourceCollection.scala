@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowsInformationProtectionResourceCollection extends js.Object {
+trait WindowsInformationProtectionResourceCollection extends StObject {
   
   // Display name
   var displayName: js.UndefOr[String] = js.native
@@ -22,36 +23,24 @@ object WindowsInformationProtectionResourceCollection {
   }
   
   @scala.inline
-  implicit class WindowsInformationProtectionResourceCollectionOps[Self <: WindowsInformationProtectionResourceCollection] (val x: Self) extends AnyVal {
+  implicit class WindowsInformationProtectionResourceCollectionMutableBuilder[Self <: WindowsInformationProtectionResourceCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResources(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setResourcesNull: Self = StObject.set(x, "resources", null)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
     @scala.inline
-    def setResourcesVarargs(value: String*): Self = this.set("resources", js.Array(value :_*))
-    
-    @scala.inline
-    def setResources(value: NullableOption[js.Array[String]]): Self = this.set("resources", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResources: Self = this.set("resources", js.undefined)
-    
-    @scala.inline
-    def setResourcesNull: Self = this.set("resources", null)
+    def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

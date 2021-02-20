@@ -1,11 +1,12 @@
 package typings.awsSdk.devicefarmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetDeviceInstanceResult extends js.Object {
+trait GetDeviceInstanceResult extends StObject {
   
   /**
     * An object that contains information about your device instance.
@@ -21,24 +22,12 @@ object GetDeviceInstanceResult {
   }
   
   @scala.inline
-  implicit class GetDeviceInstanceResultOps[Self <: GetDeviceInstanceResult] (val x: Self) extends AnyVal {
+  implicit class GetDeviceInstanceResultMutableBuilder[Self <: GetDeviceInstanceResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceInstance(value: DeviceInstance): Self = StObject.set(x, "deviceInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDeviceInstance(value: DeviceInstance): Self = this.set("deviceInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeviceInstance: Self = this.set("deviceInstance", js.undefined)
+    def setDeviceInstanceUndefined: Self = StObject.set(x, "deviceInstance", js.undefined)
   }
 }

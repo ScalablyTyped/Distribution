@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scrollable extends js.Object {
+trait Scrollable extends StObject {
   
   // Used for comparision with dynamic recollecting
   var frameClient: BoxModel = js.native
@@ -37,33 +38,21 @@ object Scrollable {
   }
   
   @scala.inline
-  implicit class ScrollableOps[Self <: Scrollable] (val x: Self) extends AnyVal {
+  implicit class ScrollableMutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameClient(value: BoxModel): Self = StObject.set(x, "frameClient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPageMarginBox(value: Rect): Self = StObject.set(x, "pageMarginBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setScroll(value: ScrollDetails): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameClient(value: BoxModel): Self = this.set("frameClient", value.asInstanceOf[js.Any])
+    def setScrollSize(value: ScrollSize): Self = StObject.set(x, "scrollSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageMarginBox(value: Rect): Self = this.set("pageMarginBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScroll(value: ScrollDetails): Self = this.set("scroll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollSize(value: ScrollSize): Self = this.set("scrollSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldClipSubject(value: Boolean): Self = this.set("shouldClipSubject", value.asInstanceOf[js.Any])
+    def setShouldClipSubject(value: Boolean): Self = StObject.set(x, "shouldClipSubject", value.asInstanceOf[js.Any])
   }
 }

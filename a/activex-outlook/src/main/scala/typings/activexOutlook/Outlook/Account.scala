@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Account extends js.Object {
+trait Account extends StObject {
   
   val AccountType: OlAccountType = js.native
   
@@ -73,72 +74,60 @@ object Account {
   }
   
   @scala.inline
-  implicit class AccountOps[Self <: Account] (val x: Self) extends AnyVal {
+  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountType(value: OlAccountType): Self = StObject.set(x, "AccountType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoDiscoverConnectionMode(value: OlAutoDiscoverConnectionMode): Self = StObject.set(x, "AutoDiscoverConnectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountType(value: OlAccountType): Self = this.set("AccountType", value.asInstanceOf[js.Any])
+    def setAutoDiscoverXml(value: String): Self = StObject.set(x, "AutoDiscoverXml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDiscoverConnectionMode(value: OlAutoDiscoverConnectionMode): Self = this.set("AutoDiscoverConnectionMode", value.asInstanceOf[js.Any])
+    def setCurrentUser(value: Recipient): Self = StObject.set(x, "CurrentUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoDiscoverXml(value: String): Self = this.set("AutoDiscoverXml", value.asInstanceOf[js.Any])
+    def setDeliveryStore(value: Store): Self = StObject.set(x, "DeliveryStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentUser(value: Recipient): Self = this.set("CurrentUser", value.asInstanceOf[js.Any])
+    def setExchangeConnectionMode(value: OlExchangeConnectionMode): Self = StObject.set(x, "ExchangeConnectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryStore(value: Store): Self = this.set("DeliveryStore", value.asInstanceOf[js.Any])
+    def setExchangeMailboxServerName(value: String): Self = StObject.set(x, "ExchangeMailboxServerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    def setExchangeMailboxServerVersion(value: String): Self = StObject.set(x, "ExchangeMailboxServerVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExchangeConnectionMode(value: OlExchangeConnectionMode): Self = this.set("ExchangeConnectionMode", value.asInstanceOf[js.Any])
+    def setGetAddressEntryFromID(value: String => AddressEntry): Self = StObject.set(x, "GetAddressEntryFromID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExchangeMailboxServerName(value: String): Self = this.set("ExchangeMailboxServerName", value.asInstanceOf[js.Any])
+    def setGetRecipientFromID(value: String => Recipient): Self = StObject.set(x, "GetRecipientFromID", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setExchangeMailboxServerVersion(value: String): Self = this.set("ExchangeMailboxServerVersion", value.asInstanceOf[js.Any])
+    def setOutlookDotAccount_typekey(value: Account): Self = StObject.set(x, "Outlook.Account_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetAddressEntryFromID(value: String => AddressEntry): Self = this.set("GetAddressEntryFromID", js.Any.fromFunction1(value))
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetRecipientFromID(value: String => Recipient): Self = this.set("GetRecipientFromID", js.Any.fromFunction1(value))
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotAccount_typekey(value: Account): Self = this.set("Outlook.Account_typekey", value.asInstanceOf[js.Any])
+    def setSmtpAddress(value: String): Self = StObject.set(x, "SmtpAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmtpAddress(value: String): Self = this.set("SmtpAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: String): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

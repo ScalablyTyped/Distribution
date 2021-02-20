@@ -3,6 +3,7 @@ package typings.fabric.fabricImplMod
 import typings.fabric.anon.Top
 import typings.fabric.anon.X
 import typings.std.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,26 +41,38 @@ class Polyline protected () extends Object {
   var points: js.UndefOr[js.Array[Point]] = js.native
 }
 /* static members */
-@JSImport("fabric/fabric-impl", "Polyline")
-@js.native
-object Polyline extends js.Object {
+object Polyline {
+  
+  @JSImport("fabric/fabric-impl", "Polyline")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
     */
-  var ATTRIBUTE_NAMES: js.Array[String] = js.native
+  @JSImport("fabric/fabric-impl", "Polyline.ATTRIBUTE_NAMES")
+  @js.native
+  def ATTRIBUTE_NAMES: js.Array[String] = js.native
+  @scala.inline
+  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Returns Polyline  instance from an SVG element
     * @param element Element to parse
     * @param [options] Options object
     */
+  @JSImport("fabric/fabric-impl", "Polyline.fromElement")
+  @js.native
   def fromElement(element: SVGElement): Polyline = js.native
+  @JSImport("fabric/fabric-impl", "Polyline.fromElement")
+  @js.native
   def fromElement(element: SVGElement, options: IPolylineOptions): Polyline = js.native
   
   /**
     * Returns fabric.Polyline instance from an object representation
     * @param object Object to create an instance from
     */
+  @JSImport("fabric/fabric-impl", "Polyline.fromObject")
+  @js.native
   def fromObject(`object`: js.Any): Polyline = js.native
 }

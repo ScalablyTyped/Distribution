@@ -4,12 +4,13 @@ import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import typings.nodePgMigrate.tablesTypesMod.CreateTableFn
 import typings.nodePgMigrate.tablesTypesMod.TableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseCreateTableFn extends js.Object {
+trait ReverseCreateTableFn extends StObject {
   
   def reverse(tableName: typings.nodePgMigrate.generalTypesMod.Name, columns: ColumnDefinitions): String | js.Array[String] = js.native
   def reverse(

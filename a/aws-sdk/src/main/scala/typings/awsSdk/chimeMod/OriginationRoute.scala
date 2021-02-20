@@ -1,11 +1,12 @@
 package typings.awsSdk.chimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginationRoute extends js.Object {
+trait OriginationRoute extends StObject {
   
   /**
     * The FQDN or IP address to contact for origination traffic.
@@ -41,48 +42,36 @@ object OriginationRoute {
   }
   
   @scala.inline
-  implicit class OriginationRouteOps[Self <: OriginationRoute] (val x: Self) extends AnyVal {
+  implicit class OriginationRouteMutableBuilder[Self <: OriginationRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("Host", value.asInstanceOf[js.Any])
+    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("Host", js.undefined)
+    def setPriority(value: OriginationRoutePriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPort(value: Port): Self = this.set("Port", value.asInstanceOf[js.Any])
+    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
     @scala.inline
-    def deletePort: Self = this.set("Port", js.undefined)
+    def setProtocol(value: OriginationRouteProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPriority(value: OriginationRoutePriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
     @scala.inline
-    def deletePriority: Self = this.set("Priority", js.undefined)
+    def setWeight(value: OriginationRouteWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: OriginationRouteProtocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("Protocol", js.undefined)
-    
-    @scala.inline
-    def setWeight(value: OriginationRouteWeight): Self = this.set("Weight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeight: Self = this.set("Weight", js.undefined)
+    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

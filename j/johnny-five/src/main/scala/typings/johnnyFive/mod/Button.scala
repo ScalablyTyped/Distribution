@@ -5,13 +5,14 @@ import typings.johnnyFive.johnnyFiveStrings.hold
 import typings.johnnyFive.johnnyFiveStrings.press
 import typings.johnnyFive.johnnyFiveStrings.release
 import typings.johnnyFive.johnnyFiveStrings.up
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Button")
 @js.native
-class Button protected () extends js.Object {
+class Button protected () extends StObject {
   def this(pin: String) = this()
   def this(pin: Double) = this()
   def this(pin: ButtonOption) = this()

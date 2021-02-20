@@ -2,12 +2,13 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IFileOpenPickerUI extends js.Object {
+trait IFileOpenPickerUI extends StObject {
   
   def addFile(id: String, file: IStorageFile): AddFileResult = js.native
   
@@ -49,48 +50,36 @@ object IFileOpenPickerUI {
   }
   
   @scala.inline
-  implicit class IFileOpenPickerUIOps[Self <: IFileOpenPickerUI] (val x: Self) extends AnyVal {
+  implicit class IFileOpenPickerUIMutableBuilder[Self <: IFileOpenPickerUI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddFile(value: (String, IStorageFile) => AddFileResult): Self = StObject.set(x, "addFile", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowedFileTypes(value: IVectorView[String]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanAddFile(value: IStorageFile => Boolean): Self = StObject.set(x, "canAddFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddFile(value: (String, IStorageFile) => AddFileResult): Self = this.set("addFile", js.Any.fromFunction2(value))
+    def setContainsFile(value: String => Boolean): Self = StObject.set(x, "containsFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAllowedFileTypes(value: IVectorView[String]): Self = this.set("allowedFileTypes", value.asInstanceOf[js.Any])
+    def setOnclosing(value: js.Any): Self = StObject.set(x, "onclosing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanAddFile(value: IStorageFile => Boolean): Self = this.set("canAddFile", js.Any.fromFunction1(value))
+    def setOnfileremoved(value: js.Any): Self = StObject.set(x, "onfileremoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsFile(value: String => Boolean): Self = this.set("containsFile", js.Any.fromFunction1(value))
+    def setRemoveFile(value: String => Unit): Self = StObject.set(x, "removeFile", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnclosing(value: js.Any): Self = this.set("onclosing", value.asInstanceOf[js.Any])
+    def setSelectionMode(value: FileSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnfileremoved(value: js.Any): Self = this.set("onfileremoved", value.asInstanceOf[js.Any])
+    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoveFile(value: String => Unit): Self = this.set("removeFile", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSelectionMode(value: FileSelectionMode): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = this.set("settingsIdentifier", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

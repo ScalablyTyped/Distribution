@@ -2,6 +2,7 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -186,213 +187,201 @@ object IgRadialMenu {
   }
   
   @scala.inline
-  implicit class IgRadialMenuOps[Self <: IgRadialMenu] (val x: Self) extends AnyVal {
+  implicit class IgRadialMenuMutableBuilder[Self <: IgRadialMenu] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCenterButtonClosedFill(value: String): Self = StObject.set(x, "centerButtonClosedFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCenterButtonClosedFillUndefined: Self = StObject.set(x, "centerButtonClosedFill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCenterButtonClosedStroke(value: String): Self = StObject.set(x, "centerButtonClosedStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonClosedFill(value: String): Self = this.set("centerButtonClosedFill", value.asInstanceOf[js.Any])
+    def setCenterButtonClosedStrokeUndefined: Self = StObject.set(x, "centerButtonClosedStroke", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonClosedFill: Self = this.set("centerButtonClosedFill", js.undefined)
+    def setCenterButtonContentHeight(value: Double): Self = StObject.set(x, "centerButtonContentHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonClosedStroke(value: String): Self = this.set("centerButtonClosedStroke", value.asInstanceOf[js.Any])
+    def setCenterButtonContentHeightUndefined: Self = StObject.set(x, "centerButtonContentHeight", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonClosedStroke: Self = this.set("centerButtonClosedStroke", js.undefined)
+    def setCenterButtonContentWidth(value: Double): Self = StObject.set(x, "centerButtonContentWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonContentHeight(value: Double): Self = this.set("centerButtonContentHeight", value.asInstanceOf[js.Any])
+    def setCenterButtonContentWidthUndefined: Self = StObject.set(x, "centerButtonContentWidth", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonContentHeight: Self = this.set("centerButtonContentHeight", js.undefined)
+    def setCenterButtonFill(value: String): Self = StObject.set(x, "centerButtonFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonContentWidth(value: Double): Self = this.set("centerButtonContentWidth", value.asInstanceOf[js.Any])
+    def setCenterButtonFillUndefined: Self = StObject.set(x, "centerButtonFill", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonContentWidth: Self = this.set("centerButtonContentWidth", js.undefined)
+    def setCenterButtonHotTrackFill(value: String): Self = StObject.set(x, "centerButtonHotTrackFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonFill(value: String): Self = this.set("centerButtonFill", value.asInstanceOf[js.Any])
+    def setCenterButtonHotTrackFillUndefined: Self = StObject.set(x, "centerButtonHotTrackFill", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonFill: Self = this.set("centerButtonFill", js.undefined)
+    def setCenterButtonHotTrackStroke(value: String): Self = StObject.set(x, "centerButtonHotTrackStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonHotTrackFill(value: String): Self = this.set("centerButtonHotTrackFill", value.asInstanceOf[js.Any])
+    def setCenterButtonHotTrackStrokeUndefined: Self = StObject.set(x, "centerButtonHotTrackStroke", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonHotTrackFill: Self = this.set("centerButtonHotTrackFill", js.undefined)
+    def setCenterButtonStroke(value: String): Self = StObject.set(x, "centerButtonStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCenterButtonHotTrackStroke(value: String): Self = this.set("centerButtonHotTrackStroke", value.asInstanceOf[js.Any])
+    def setCenterButtonStrokeThickness(value: Double): Self = StObject.set(x, "centerButtonStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCenterButtonHotTrackStroke: Self = this.set("centerButtonHotTrackStroke", js.undefined)
+    def setCenterButtonStrokeThicknessUndefined: Self = StObject.set(x, "centerButtonStrokeThickness", js.undefined)
     
     @scala.inline
-    def setCenterButtonStroke(value: String): Self = this.set("centerButtonStroke", value.asInstanceOf[js.Any])
+    def setCenterButtonStrokeUndefined: Self = StObject.set(x, "centerButtonStroke", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonStroke: Self = this.set("centerButtonStroke", js.undefined)
+    def setClosed(value: (/* event */ Event, /* ui */ ClosedEventUIParam) => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCenterButtonStrokeThickness(value: Double): Self = this.set("centerButtonStrokeThickness", value.asInstanceOf[js.Any])
+    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
     @scala.inline
-    def deleteCenterButtonStrokeThickness: Self = this.set("centerButtonStrokeThickness", js.undefined)
+    def setCurrentOpenMenuItemName(value: String): Self = StObject.set(x, "currentOpenMenuItemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosed(value: (/* event */ Event, /* ui */ ClosedEventUIParam) => Unit): Self = this.set("closed", js.Any.fromFunction2(value))
+    def setCurrentOpenMenuItemNameUndefined: Self = StObject.set(x, "currentOpenMenuItemName", js.undefined)
     
     @scala.inline
-    def deleteClosed: Self = this.set("closed", js.undefined)
+    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentOpenMenuItemName(value: String): Self = this.set("currentOpenMenuItemName", value.asInstanceOf[js.Any])
+    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
     @scala.inline
-    def deleteCurrentOpenMenuItemName: Self = this.set("currentOpenMenuItemName", js.undefined)
+    def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
     
     @scala.inline
-    def deleteFont: Self = this.set("font", js.undefined)
+    def setItems(value: js.Array[IgRadialMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
     @scala.inline
-    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    def setItemsVarargs(value: IgRadialMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setItemsVarargs(value: IgRadialMenuItem*): Self = this.set("items", js.Array(value :_*))
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[IgRadialMenuItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteItems: Self = this.set("items", js.undefined)
+    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setMenuBackground(value: String): Self = StObject.set(x, "menuBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    def setMenuBackgroundUndefined: Self = StObject.set(x, "menuBackground", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("locale", js.undefined)
+    def setMenuItemOpenCloseAnimationDuration(value: Double): Self = StObject.set(x, "menuItemOpenCloseAnimationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuBackground(value: String): Self = this.set("menuBackground", value.asInstanceOf[js.Any])
+    def setMenuItemOpenCloseAnimationDurationUndefined: Self = StObject.set(x, "menuItemOpenCloseAnimationDuration", js.undefined)
     
     @scala.inline
-    def deleteMenuBackground: Self = this.set("menuBackground", js.undefined)
+    def setMenuItemOpenCloseAnimationEasingFunction(value: js.Any): Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItemOpenCloseAnimationDuration(value: Double): Self = this.set("menuItemOpenCloseAnimationDuration", value.asInstanceOf[js.Any])
+    def setMenuItemOpenCloseAnimationEasingFunctionUndefined: Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", js.undefined)
     
     @scala.inline
-    def deleteMenuItemOpenCloseAnimationDuration: Self = this.set("menuItemOpenCloseAnimationDuration", js.undefined)
+    def setMenuOpenCloseAnimationDuration(value: Double): Self = StObject.set(x, "menuOpenCloseAnimationDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuItemOpenCloseAnimationEasingFunction(value: js.Any): Self = this.set("menuItemOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
+    def setMenuOpenCloseAnimationDurationUndefined: Self = StObject.set(x, "menuOpenCloseAnimationDuration", js.undefined)
     
     @scala.inline
-    def deleteMenuItemOpenCloseAnimationEasingFunction: Self = this.set("menuItemOpenCloseAnimationEasingFunction", js.undefined)
+    def setMenuOpenCloseAnimationEasingFunction(value: js.Any): Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuOpenCloseAnimationDuration(value: Double): Self = this.set("menuOpenCloseAnimationDuration", value.asInstanceOf[js.Any])
+    def setMenuOpenCloseAnimationEasingFunctionUndefined: Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", js.undefined)
     
     @scala.inline
-    def deleteMenuOpenCloseAnimationDuration: Self = this.set("menuOpenCloseAnimationDuration", js.undefined)
+    def setMinWedgeCount(value: Double): Self = StObject.set(x, "minWedgeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenuOpenCloseAnimationEasingFunction(value: js.Any): Self = this.set("menuOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
+    def setMinWedgeCountUndefined: Self = StObject.set(x, "minWedgeCount", js.undefined)
     
     @scala.inline
-    def deleteMenuOpenCloseAnimationEasingFunction: Self = this.set("menuOpenCloseAnimationEasingFunction", js.undefined)
+    def setOpened(value: (/* event */ Event, /* ui */ OpenedEventUIParam) => Unit): Self = StObject.set(x, "opened", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMinWedgeCount(value: Double): Self = this.set("minWedgeCount", value.asInstanceOf[js.Any])
+    def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
     
     @scala.inline
-    def deleteMinWedgeCount: Self = this.set("minWedgeCount", js.undefined)
+    def setOuterRingFill(value: String): Self = StObject.set(x, "outerRingFill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpened(value: (/* event */ Event, /* ui */ OpenedEventUIParam) => Unit): Self = this.set("opened", js.Any.fromFunction2(value))
+    def setOuterRingFillUndefined: Self = StObject.set(x, "outerRingFill", js.undefined)
     
     @scala.inline
-    def deleteOpened: Self = this.set("opened", js.undefined)
+    def setOuterRingStroke(value: String): Self = StObject.set(x, "outerRingStroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRingFill(value: String): Self = this.set("outerRingFill", value.asInstanceOf[js.Any])
+    def setOuterRingStrokeThickness(value: Double): Self = StObject.set(x, "outerRingStrokeThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOuterRingFill: Self = this.set("outerRingFill", js.undefined)
+    def setOuterRingStrokeThicknessUndefined: Self = StObject.set(x, "outerRingStrokeThickness", js.undefined)
     
     @scala.inline
-    def setOuterRingStroke(value: String): Self = this.set("outerRingStroke", value.asInstanceOf[js.Any])
+    def setOuterRingStrokeUndefined: Self = StObject.set(x, "outerRingStroke", js.undefined)
     
     @scala.inline
-    def deleteOuterRingStroke: Self = this.set("outerRingStroke", js.undefined)
+    def setOuterRingThickness(value: Double): Self = StObject.set(x, "outerRingThickness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRingStrokeThickness(value: Double): Self = this.set("outerRingStrokeThickness", value.asInstanceOf[js.Any])
+    def setOuterRingThicknessUndefined: Self = StObject.set(x, "outerRingThickness", js.undefined)
     
     @scala.inline
-    def deleteOuterRingStrokeThickness: Self = this.set("outerRingStrokeThickness", js.undefined)
+    def setPixelScalingRatio(value: Double): Self = StObject.set(x, "pixelScalingRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOuterRingThickness(value: Double): Self = this.set("outerRingThickness", value.asInstanceOf[js.Any])
+    def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
     @scala.inline
-    def deleteOuterRingThickness: Self = this.set("outerRingThickness", js.undefined)
+    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
     @scala.inline
-    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    def setRotationAsPercentageOfWedge(value: Double): Self = StObject.set(x, "rotationAsPercentageOfWedge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    def setRotationAsPercentageOfWedgeUndefined: Self = StObject.set(x, "rotationAsPercentageOfWedge", js.undefined)
     
     @scala.inline
-    def deleteRegional: Self = this.set("regional", js.undefined)
+    def setRotationInDegrees(value: Double): Self = StObject.set(x, "rotationInDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationAsPercentageOfWedge(value: Double): Self = this.set("rotationAsPercentageOfWedge", value.asInstanceOf[js.Any])
+    def setRotationInDegreesUndefined: Self = StObject.set(x, "rotationInDegrees", js.undefined)
     
     @scala.inline
-    def deleteRotationAsPercentageOfWedge: Self = this.set("rotationAsPercentageOfWedge", js.undefined)
+    def setWedgePaddingInDegrees(value: Double): Self = StObject.set(x, "wedgePaddingInDegrees", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRotationInDegrees(value: Double): Self = this.set("rotationInDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRotationInDegrees: Self = this.set("rotationInDegrees", js.undefined)
-    
-    @scala.inline
-    def setWedgePaddingInDegrees(value: Double): Self = this.set("wedgePaddingInDegrees", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWedgePaddingInDegrees: Self = this.set("wedgePaddingInDegrees", js.undefined)
+    def setWedgePaddingInDegreesUndefined: Self = StObject.set(x, "wedgePaddingInDegrees", js.undefined)
   }
 }

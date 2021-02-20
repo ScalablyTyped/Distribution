@@ -1,5 +1,6 @@
 package typings.blocks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // App.Property
 /////////////////////////////////////////
 @js.native
-trait PropertyPrototype extends js.Object {
+trait PropertyPrototype extends StObject {
   
   var creditcard: js.UndefOr[Validator] = js.native
   
@@ -63,144 +64,132 @@ object PropertyPrototype {
   }
   
   @scala.inline
-  implicit class PropertyPrototypeOps[Self <: PropertyPrototype] (val x: Self) extends AnyVal {
+  implicit class PropertyPrototypeMutableBuilder[Self <: PropertyPrototype] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreditcard(value: Validator): Self = StObject.set(x, "creditcard", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreditcardUndefined: Self = StObject.set(x, "creditcard", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDate(value: Validator): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreditcard(value: Validator): Self = this.set("creditcard", value.asInstanceOf[js.Any])
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def deleteCreditcard: Self = this.set("creditcard", js.undefined)
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: Validator): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
+    def setDigits(value: Validator): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
     @scala.inline
-    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    def setEmail(value: Validator): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDigits(value: Validator): Self = this.set("digits", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDigits: Self = this.set("digits", js.undefined)
+    def setEquals_(value: Validator): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: Validator): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEquals(value: Validator): Self = this.set("equals", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def deleteEquals: Self = this.set("equals", js.undefined)
+    def setIsObservable(value: Boolean): Self = StObject.set(x, "isObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setIsObservableUndefined: Self = StObject.set(x, "isObservable", js.undefined)
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setLetters(value: Validator): Self = StObject.set(x, "letters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsObservable(value: Boolean): Self = this.set("isObservable", value.asInstanceOf[js.Any])
+    def setLettersUndefined: Self = StObject.set(x, "letters", js.undefined)
     
     @scala.inline
-    def deleteIsObservable: Self = this.set("isObservable", js.undefined)
+    def setMax(value: Validator): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLetters(value: Validator): Self = this.set("letters", value.asInstanceOf[js.Any])
+    def setMaxErrors(value: Double): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLetters: Self = this.set("letters", js.undefined)
+    def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
     
     @scala.inline
-    def setMax(value: Validator): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setMaxlength(value: Validator): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxErrors(value: Double): Self = this.set("maxErrors", value.asInstanceOf[js.Any])
+    def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
     
     @scala.inline
-    def deleteMaxErrors: Self = this.set("maxErrors", js.undefined)
+    def setMin(value: Validator): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxlength(value: Validator): Self = this.set("maxlength", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMaxlength: Self = this.set("maxlength", js.undefined)
+    def setMinlength(value: Validator): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Validator): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setMinlengthUndefined: Self = StObject.set(x, "minlength", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setNumber(value: Validator): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinlength(value: Validator): Self = this.set("minlength", value.asInstanceOf[js.Any])
+    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
     @scala.inline
-    def deleteMinlength: Self = this.set("minlength", js.undefined)
+    def setRegexp(value: Validator): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumber(value: Validator): Self = this.set("number", value.asInstanceOf[js.Any])
+    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     
     @scala.inline
-    def deleteNumber: Self = this.set("number", js.undefined)
+    def setRequired(value: Validator): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegexp(value: Validator): Self = this.set("regexp", value.asInstanceOf[js.Any])
+    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
     @scala.inline
-    def deleteRegexp: Self = this.set("regexp", js.undefined)
+    def setUrl(value: Validator): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequired(value: Validator): Self = this.set("required", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteRequired: Self = this.set("required", js.undefined)
+    def setValidateInitially(value: Boolean): Self = StObject.set(x, "validateInitially", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: Validator): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setValidateInitiallyUndefined: Self = StObject.set(x, "validateInitially", js.undefined)
     
     @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
+    def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateInitially(value: Boolean): Self = this.set("validateInitially", value.asInstanceOf[js.Any])
+    def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
     
     @scala.inline
-    def deleteValidateInitially: Self = this.set("validateInitially", js.undefined)
+    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidateOnChange(value: Boolean): Self = this.set("validateOnChange", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidateOnChange: Self = this.set("validateOnChange", js.undefined)
-    
-    @scala.inline
-    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsWafWebAclDetails extends js.Object {
+trait AwsWafWebAclDetails extends StObject {
   
   /**
     * The action to perform if none of the rules contained in the WebACL match.
@@ -36,45 +37,33 @@ object AwsWafWebAclDetails {
   }
   
   @scala.inline
-  implicit class AwsWafWebAclDetailsOps[Self <: AwsWafWebAclDetails] (val x: Self) extends AnyVal {
+  implicit class AwsWafWebAclDetailsMutableBuilder[Self <: AwsWafWebAclDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultAction(value: NonEmptyString): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultActionUndefined: Self = StObject.set(x, "DefaultAction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultAction(value: NonEmptyString): Self = this.set("DefaultAction", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteDefaultAction: Self = this.set("DefaultAction", js.undefined)
+    def setRules(value: AwsWafWebAclRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setRulesVarargs(value: AwsWafWebAclRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
     @scala.inline
-    def setRulesVarargs(value: AwsWafWebAclRule*): Self = this.set("Rules", js.Array(value :_*))
+    def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRules(value: AwsWafWebAclRuleList): Self = this.set("Rules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRules: Self = this.set("Rules", js.undefined)
-    
-    @scala.inline
-    def setWebAclId(value: NonEmptyString): Self = this.set("WebAclId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebAclId: Self = this.set("WebAclId", js.undefined)
+    def setWebAclIdUndefined: Self = StObject.set(x, "WebAclId", js.undefined)
   }
 }

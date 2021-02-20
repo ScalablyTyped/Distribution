@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatalabelingV1beta1VideoPayload extends js.Object {
+trait GoogleCloudDatalabelingV1beta1VideoPayload extends StObject {
   
   /** FPS of the video. */
   var frameRate: js.UndefOr[Double] = js.native
@@ -31,51 +32,39 @@ object GoogleCloudDatalabelingV1beta1VideoPayload {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1VideoPayloadOps[Self <: GoogleCloudDatalabelingV1beta1VideoPayload] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatalabelingV1beta1VideoPayloadMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1VideoPayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setSignedUri(value: String): Self = StObject.set(x, "signedUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    def setSignedUriUndefined: Self = StObject.set(x, "signedUri", js.undefined)
     
     @scala.inline
-    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    def setVideoThumbnails(value: js.Array[GoogleCloudDatalabelingV1beta1VideoThumbnail]): Self = StObject.set(x, "videoThumbnails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignedUri(value: String): Self = this.set("signedUri", value.asInstanceOf[js.Any])
+    def setVideoThumbnailsUndefined: Self = StObject.set(x, "videoThumbnails", js.undefined)
     
     @scala.inline
-    def deleteSignedUri: Self = this.set("signedUri", js.undefined)
+    def setVideoThumbnailsVarargs(value: GoogleCloudDatalabelingV1beta1VideoThumbnail*): Self = StObject.set(x, "videoThumbnails", js.Array(value :_*))
     
     @scala.inline
-    def setVideoThumbnailsVarargs(value: GoogleCloudDatalabelingV1beta1VideoThumbnail*): Self = this.set("videoThumbnails", js.Array(value :_*))
+    def setVideoUri(value: String): Self = StObject.set(x, "videoUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoThumbnails(value: js.Array[GoogleCloudDatalabelingV1beta1VideoThumbnail]): Self = this.set("videoThumbnails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoThumbnails: Self = this.set("videoThumbnails", js.undefined)
-    
-    @scala.inline
-    def setVideoUri(value: String): Self = this.set("videoUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoUri: Self = this.set("videoUri", js.undefined)
+    def setVideoUriUndefined: Self = StObject.set(x, "videoUri", js.undefined)
   }
 }

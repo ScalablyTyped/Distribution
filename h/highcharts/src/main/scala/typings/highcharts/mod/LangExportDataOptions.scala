@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangExportDataOptions extends js.Object {
+trait LangExportDataOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The annotation column title.
@@ -32,36 +33,24 @@ object LangExportDataOptions {
   }
   
   @scala.inline
-  implicit class LangExportDataOptionsOps[Self <: LangExportDataOptions] (val x: Self) extends AnyVal {
+  implicit class LangExportDataOptionsMutableBuilder[Self <: LangExportDataOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnotationHeader(value: String): Self = StObject.set(x, "annotationHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnotationHeaderUndefined: Self = StObject.set(x, "annotationHeader", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryDatetimeHeader(value: String): Self = StObject.set(x, "categoryDatetimeHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnotationHeader(value: String): Self = this.set("annotationHeader", value.asInstanceOf[js.Any])
+    def setCategoryDatetimeHeaderUndefined: Self = StObject.set(x, "categoryDatetimeHeader", js.undefined)
     
     @scala.inline
-    def deleteAnnotationHeader: Self = this.set("annotationHeader", js.undefined)
+    def setCategoryHeader(value: String): Self = StObject.set(x, "categoryHeader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryDatetimeHeader(value: String): Self = this.set("categoryDatetimeHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryDatetimeHeader: Self = this.set("categoryDatetimeHeader", js.undefined)
-    
-    @scala.inline
-    def setCategoryHeader(value: String): Self = this.set("categoryHeader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryHeader: Self = this.set("categoryHeader", js.undefined)
+    def setCategoryHeaderUndefined: Self = StObject.set(x, "categoryHeader", js.undefined)
   }
 }

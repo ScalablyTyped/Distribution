@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,36 +61,24 @@ object Story {
   }
   
   @scala.inline
-  implicit class StoryOps[Self <: Story] (val x: Self) extends AnyVal {
+  implicit class StoryMutableBuilder[Self <: Story] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivateNextStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activateNextStoryPointAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivatePreviousStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = StObject.set(x, "activatePreviousStoryPointAsync", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivateStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = StObject.set(x, "activateStoryPointAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setActivateNextStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = this.set("activateNextStoryPointAsync", js.Any.fromFunction0(value))
+    def setGetActiveStoryPoint(value: () => StoryPoint): Self = StObject.set(x, "getActiveStoryPoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivatePreviousStoryPointAsync(value: () => js.Promise[StoryPoint]): Self = this.set("activatePreviousStoryPointAsync", js.Any.fromFunction0(value))
+    def setGetStoryPointsInfo(value: () => js.Array[StoryPointInfo]): Self = StObject.set(x, "getStoryPointsInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setActivateStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = this.set("activateStoryPointAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetActiveStoryPoint(value: () => StoryPoint): Self = this.set("getActiveStoryPoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStoryPointsInfo(value: () => js.Array[StoryPointInfo]): Self = this.set("getStoryPointsInfo", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRevertStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = this.set("revertStoryPointAsync", js.Any.fromFunction1(value))
+    def setRevertStoryPointAsync(value: Double => js.Promise[StoryPoint]): Self = StObject.set(x, "revertStoryPointAsync", js.Any.fromFunction1(value))
   }
 }

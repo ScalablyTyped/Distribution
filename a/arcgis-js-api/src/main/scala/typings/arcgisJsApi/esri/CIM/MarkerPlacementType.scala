@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarkerPlacementType extends js.Object
+sealed trait MarkerPlacementType extends StObject
 @JSGlobal("__esri.CIM.MarkerPlacementType")
 @js.native
-object MarkerPlacementType extends js.Object {
+object MarkerPlacementType extends StObject {
   
   /**
     * Place inside the polygon.

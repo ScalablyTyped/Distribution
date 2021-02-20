@@ -1,5 +1,6 @@
 package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Product data.
   */
 @js.native
-trait SchemaProduct extends js.Object {
+trait SchemaProduct extends StObject {
   
   /**
     * Attributes of the product uploaded to the Manufacturer Center. Manually
@@ -70,72 +71,60 @@ object SchemaProduct {
   }
   
   @scala.inline
-  implicit class SchemaProductOps[Self <: SchemaProduct] (val x: Self) extends AnyVal {
+  implicit class SchemaProductMutableBuilder[Self <: SchemaProduct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: SchemaAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: SchemaAttributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setDestinationStatuses(value: js.Array[SchemaDestinationStatus]): Self = StObject.set(x, "destinationStatuses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    def setDestinationStatusesUndefined: Self = StObject.set(x, "destinationStatuses", js.undefined)
     
     @scala.inline
-    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    def setDestinationStatusesVarargs(value: SchemaDestinationStatus*): Self = StObject.set(x, "destinationStatuses", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationStatusesVarargs(value: SchemaDestinationStatus*): Self = this.set("destinationStatuses", js.Array(value :_*))
+    def setIssues(value: js.Array[SchemaIssue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinationStatuses(value: js.Array[SchemaDestinationStatus]): Self = this.set("destinationStatuses", value.asInstanceOf[js.Any])
+    def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
     @scala.inline
-    def deleteDestinationStatuses: Self = this.set("destinationStatuses", js.undefined)
+    def setIssuesVarargs(value: SchemaIssue*): Self = StObject.set(x, "issues", js.Array(value :_*))
     
     @scala.inline
-    def setIssuesVarargs(value: SchemaIssue*): Self = this.set("issues", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIssues(value: js.Array[SchemaIssue]): Self = this.set("issues", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIssues: Self = this.set("issues", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setTargetCountry(value: String): Self = StObject.set(x, "targetCountry", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductId: Self = this.set("productId", js.undefined)
-    
-    @scala.inline
-    def setTargetCountry(value: String): Self = this.set("targetCountry", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCountry: Self = this.set("targetCountry", js.undefined)
+    def setTargetCountryUndefined: Self = StObject.set(x, "targetCountry", js.undefined)
   }
 }

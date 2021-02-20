@@ -1,11 +1,12 @@
 package typings.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextureAtlasPage extends js.Object {
+trait TextureAtlasPage extends StObject {
   
   var height: Double = js.native
   
@@ -41,42 +42,30 @@ object TextureAtlasPage {
   }
   
   @scala.inline
-  implicit class TextureAtlasPageOps[Self <: TextureAtlasPage] (val x: Self) extends AnyVal {
+  implicit class TextureAtlasPageMutableBuilder[Self <: TextureAtlasPage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMagFilter(value: TextureFilter): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinFilter(value: TextureFilter): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMagFilter(value: TextureFilter): Self = this.set("magFilter", value.asInstanceOf[js.Any])
+    def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinFilter(value: TextureFilter): Self = this.set("minFilter", value.asInstanceOf[js.Any])
+    def setUWrap(value: TextureWrap): Self = StObject.set(x, "uWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setVWrap(value: TextureWrap): Self = StObject.set(x, "vWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexture(value: Texture): Self = this.set("texture", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUWrap(value: TextureWrap): Self = this.set("uWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVWrap(value: TextureWrap): Self = this.set("vWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

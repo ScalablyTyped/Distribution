@@ -5,12 +5,13 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.QualifiedTypeIdentifierKind
 import typings.astTypes.kindsMod.TypeParameterInstantiationKind
 import typings.astTypes.namedTypesMod.namedTypes.GenericTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenericTypeAnnotationBuilder extends js.Object {
+trait GenericTypeAnnotationBuilder extends StObject {
   
   def apply(id: IdentifierKind): GenericTypeAnnotation = js.native
   def apply(id: IdentifierKind, typeParameters: TypeParameterInstantiationKind): GenericTypeAnnotation = js.native

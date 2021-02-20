@@ -6,6 +6,7 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.IConsensusSummarizeBlockRequest
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,16 +22,18 @@ class ConsensusSummarizeBlockRequest ()
   def this(properties: IConsensusSummarizeBlockRequest) = this()
 }
 /* static members */
-@JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest")
-@js.native
-object ConsensusSummarizeBlockRequest extends js.Object {
+object ConsensusSummarizeBlockRequest {
   
   /**
     * Creates a new ConsensusSummarizeBlockRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusSummarizeBlockRequest instance
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.create")
+  @js.native
   def create(): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.create")
+  @js.native
   def create(properties: IConsensusSummarizeBlockRequest): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
   
   /**
@@ -41,9 +44,17 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.decode")
+  @js.native
   def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
   
   /**
@@ -53,7 +64,11 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
   
   /**
@@ -62,7 +77,11 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.encode")
+  @js.native
   def encode(message: IConsensusSummarizeBlockRequest): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.encode")
+  @js.native
   def encode(message: IConsensusSummarizeBlockRequest, writer: Writer): Writer = js.native
   
   /**
@@ -71,7 +90,11 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusSummarizeBlockRequest): Writer = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IConsensusSummarizeBlockRequest, writer: Writer): Writer = js.native
   
   /**
@@ -79,6 +102,8 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @param object Plain object
     * @returns ConsensusSummarizeBlockRequest
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest = js.native
   
   /**
@@ -87,7 +112,11 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.toObject")
+  @js.native
   def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.toObject")
+  @js.native
   def toObject(
     message: typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockRequest,
     options: IConversionOptions
@@ -98,5 +127,7 @@ object ConsensusSummarizeBlockRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusSummarizeBlockRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

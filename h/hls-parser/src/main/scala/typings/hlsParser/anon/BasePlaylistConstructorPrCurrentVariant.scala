@@ -3,13 +3,14 @@ package typings.hlsParser.anon
 import typings.hlsParser.mod.types.Key
 import typings.hlsParser.mod.types.SessionData
 import typings.hlsParser.mod.types.Variant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined hls-parser.hls-parser.types.BasePlaylistConstructorProperties & {  variants :std.Array<hls-parser.hls-parser.types.Variant> | undefined,   currentVariant :number | undefined,   sessionDataList :std.Array<hls-parser.hls-parser.types.SessionData> | undefined,   sessionKeyList :std.Array<hls-parser.hls-parser.types.Key> | undefined,   source :string | undefined} */
 @js.native
-trait BasePlaylistConstructorPrCurrentVariant extends js.Object {
+trait BasePlaylistConstructorPrCurrentVariant extends StObject {
   
   var currentVariant: js.UndefOr[Double] = js.native
   
@@ -38,81 +39,69 @@ object BasePlaylistConstructorPrCurrentVariant {
   }
   
   @scala.inline
-  implicit class BasePlaylistConstructorPrCurrentVariantOps[Self <: BasePlaylistConstructorPrCurrentVariant] (val x: Self) extends AnyVal {
+  implicit class BasePlaylistConstructorPrCurrentVariantMutableBuilder[Self <: BasePlaylistConstructorPrCurrentVariant] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCurrentVariant(value: Double): Self = StObject.set(x, "currentVariant", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCurrentVariantUndefined: Self = StObject.set(x, "currentVariant", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentVariant(value: Double): Self = this.set("currentVariant", value.asInstanceOf[js.Any])
+    def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
     
     @scala.inline
-    def deleteCurrentVariant: Self = this.set("currentVariant", js.undefined)
+    def setSessionDataList(value: js.Array[SessionData]): Self = StObject.set(x, "sessionDataList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndependentSegments(value: Boolean): Self = this.set("independentSegments", value.asInstanceOf[js.Any])
+    def setSessionDataListUndefined: Self = StObject.set(x, "sessionDataList", js.undefined)
     
     @scala.inline
-    def deleteIndependentSegments: Self = this.set("independentSegments", js.undefined)
+    def setSessionDataListVarargs(value: SessionData*): Self = StObject.set(x, "sessionDataList", js.Array(value :_*))
     
     @scala.inline
-    def setSessionDataListVarargs(value: SessionData*): Self = this.set("sessionDataList", js.Array(value :_*))
+    def setSessionKeyList(value: js.Array[Key]): Self = StObject.set(x, "sessionKeyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionDataList(value: js.Array[SessionData]): Self = this.set("sessionDataList", value.asInstanceOf[js.Any])
+    def setSessionKeyListUndefined: Self = StObject.set(x, "sessionKeyList", js.undefined)
     
     @scala.inline
-    def deleteSessionDataList: Self = this.set("sessionDataList", js.undefined)
+    def setSessionKeyListVarargs(value: Key*): Self = StObject.set(x, "sessionKeyList", js.Array(value :_*))
     
     @scala.inline
-    def setSessionKeyListVarargs(value: Key*): Self = this.set("sessionKeyList", js.Array(value :_*))
+    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSessionKeyList(value: js.Array[Key]): Self = this.set("sessionKeyList", value.asInstanceOf[js.Any])
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def deleteSessionKeyList: Self = this.set("sessionKeyList", js.undefined)
+    def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: Offset): Self = this.set("start", value.asInstanceOf[js.Any])
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
     @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setVariants(value: js.Array[Variant]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
     @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setVariantsVarargs(value: Variant*): Self = StObject.set(x, "variants", js.Array(value :_*))
     
     @scala.inline
-    def setVariantsVarargs(value: Variant*): Self = this.set("variants", js.Array(value :_*))
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVariants(value: js.Array[Variant]): Self = this.set("variants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVariants: Self = this.set("variants", js.undefined)
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

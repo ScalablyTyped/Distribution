@@ -1,5 +1,6 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pixiJs.pixiJsStrings.mouseover
   - typings.pixiJs.pixiJsStrings.mouseout
 */
-trait InteractionMouseEvents extends js.Object
+trait InteractionMouseEvents extends StObject
 object InteractionMouseEvents {
   
   @scala.inline

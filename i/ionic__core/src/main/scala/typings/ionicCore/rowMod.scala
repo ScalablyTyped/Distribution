@@ -1,14 +1,14 @@
 package typings.ionicCore
 
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/row/row", JSImport.Namespace)
-@js.native
-object rowMod extends js.Object {
+object rowMod {
   
+  @JSImport("@ionic/core/dist/types/components/row/row", "Row")
   @js.native
   class Row () extends ComponentInterface {
     

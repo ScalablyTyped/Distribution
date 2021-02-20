@@ -1,19 +1,18 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.particleSystemMod.ParticleSystem
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Particles/subEmitter", JSImport.Namespace)
-@js.native
-object subEmitterMod extends js.Object {
+object subEmitterMod {
   
+  @JSImport("babylonjs/Particles/subEmitter", "SubEmitter")
   @js.native
-  class SubEmitter protected () extends js.Object {
+  class SubEmitter protected () extends StObject {
     /**
       * Creates a sub emitter
       * @param particleSystem the particle system to be used by the sub emitter
@@ -54,8 +53,7 @@ object subEmitterMod extends js.Object {
     var `type`: SubEmitterType = js.native
   }
   /* static members */
-  @js.native
-  object SubEmitter extends js.Object {
+  object SubEmitter {
     
     /**
       * Creates a new SubEmitter from a serialized JSON version
@@ -64,18 +62,27 @@ object subEmitterMod extends js.Object {
       * @param rootUrl defines the rootUrl for data loading
       * @returns a new SubEmitter
       */
+    @JSImport("babylonjs/Particles/subEmitter", "SubEmitter.Parse")
+    @js.native
     def Parse(serializationObject: js.Any, sceneOrEngine: Scene, rootUrl: String): SubEmitter = js.native
+    @JSImport("babylonjs/Particles/subEmitter", "SubEmitter.Parse")
+    @js.native
     def Parse(serializationObject: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): SubEmitter = js.native
     
     /** @hidden */
+    @JSImport("babylonjs/Particles/subEmitter", "SubEmitter._ParseParticleSystem")
+    @js.native
     def _ParseParticleSystem(system: js.Any, sceneOrEngine: Scene, rootUrl: String): ParticleSystem = js.native
+    @JSImport("babylonjs/Particles/subEmitter", "SubEmitter._ParseParticleSystem")
+    @js.native
     def _ParseParticleSystem(system: js.Any, sceneOrEngine: ThinEngine, rootUrl: String): ParticleSystem = js.native
   }
   
   @js.native
-  sealed trait SubEmitterType extends js.Object
+  sealed trait SubEmitterType extends StObject
+  @JSImport("babylonjs/Particles/subEmitter", "SubEmitterType")
   @js.native
-  object SubEmitterType extends js.Object {
+  object SubEmitterType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[SubEmitterType with Double] = js.native
@@ -85,15 +92,13 @@ object subEmitterMod extends js.Object {
       */
     @js.native
     sealed trait ATTACHED extends SubEmitterType
-    /* 0 */ @js.native
-    object ATTACHED extends TopLevel[ATTACHED with Double]
+    /* 0 */ val ATTACHED: typings.babylonjs.subEmitterMod.SubEmitterType.ATTACHED with Double = js.native
     
     /**
       * Created when the particle dies
       */
     @js.native
     sealed trait END extends SubEmitterType
-    /* 1 */ @js.native
-    object END extends TopLevel[END with Double]
+    /* 1 */ val END: typings.babylonjs.subEmitterMod.SubEmitterType.END with Double = js.native
   }
 }

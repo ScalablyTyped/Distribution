@@ -1,12 +1,13 @@
 package typings.fineUploader.coreMod
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtraButtonsOptions extends js.Object {
+trait ExtraButtonsOptions extends StObject {
   
   /**
     * The container element for the upload button
@@ -56,45 +57,33 @@ object ExtraButtonsOptions {
   }
   
   @scala.inline
-  implicit class ExtraButtonsOptionsOps[Self <: ExtraButtonsOptions] (val x: Self) extends AnyVal {
+  implicit class ExtraButtonsOptionsMutableBuilder[Self <: ExtraButtonsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileInputTitle(value: String): Self = StObject.set(x, "fileInputTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFileInputTitleUndefined: Self = StObject.set(x, "fileInputTitle", js.undefined)
     
     @scala.inline
-    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setFolders(value: Boolean): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileInputTitle(value: String): Self = this.set("fileInputTitle", value.asInstanceOf[js.Any])
+    def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
     @scala.inline
-    def deleteFileInputTitle: Self = this.set("fileInputTitle", js.undefined)
+    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolders(value: Boolean): Self = this.set("folders", value.asInstanceOf[js.Any])
+    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
     @scala.inline
-    def deleteFolders: Self = this.set("folders", js.undefined)
+    def setValidation(value: js.Any): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMultiple: Self = this.set("multiple", js.undefined)
-    
-    @scala.inline
-    def setValidation(value: js.Any): Self = this.set("validation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidation: Self = this.set("validation", js.undefined)
+    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

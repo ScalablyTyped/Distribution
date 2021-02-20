@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,102 +45,90 @@ object PannerOptions {
   }
   
   @scala.inline
-  implicit class PannerOptionsOps[Self <: PannerOptions] (val x: Self) extends AnyVal {
+  implicit class PannerOptionsMutableBuilder[Self <: PannerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConeInnerAngle(value: Double): Self = StObject.set(x, "coneInnerAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConeInnerAngleUndefined: Self = StObject.set(x, "coneInnerAngle", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConeOuterAngle(value: Double): Self = StObject.set(x, "coneOuterAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConeInnerAngle(value: Double): Self = this.set("coneInnerAngle", value.asInstanceOf[js.Any])
+    def setConeOuterAngleUndefined: Self = StObject.set(x, "coneOuterAngle", js.undefined)
     
     @scala.inline
-    def deleteConeInnerAngle: Self = this.set("coneInnerAngle", js.undefined)
+    def setConeOuterGain(value: Double): Self = StObject.set(x, "coneOuterGain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConeOuterAngle(value: Double): Self = this.set("coneOuterAngle", value.asInstanceOf[js.Any])
+    def setConeOuterGainUndefined: Self = StObject.set(x, "coneOuterGain", js.undefined)
     
     @scala.inline
-    def deleteConeOuterAngle: Self = this.set("coneOuterAngle", js.undefined)
+    def setDistanceModel(value: DistanceModelType): Self = StObject.set(x, "distanceModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConeOuterGain(value: Double): Self = this.set("coneOuterGain", value.asInstanceOf[js.Any])
+    def setDistanceModelUndefined: Self = StObject.set(x, "distanceModel", js.undefined)
     
     @scala.inline
-    def deleteConeOuterGain: Self = this.set("coneOuterGain", js.undefined)
+    def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistanceModel(value: DistanceModelType): Self = this.set("distanceModel", value.asInstanceOf[js.Any])
+    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
     @scala.inline
-    def deleteDistanceModel: Self = this.set("distanceModel", js.undefined)
+    def setOrientationX(value: Double): Self = StObject.set(x, "orientationX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDistance(value: Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    def setOrientationXUndefined: Self = StObject.set(x, "orientationX", js.undefined)
     
     @scala.inline
-    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    def setOrientationY(value: Double): Self = StObject.set(x, "orientationY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientationX(value: Double): Self = this.set("orientationX", value.asInstanceOf[js.Any])
+    def setOrientationYUndefined: Self = StObject.set(x, "orientationY", js.undefined)
     
     @scala.inline
-    def deleteOrientationX: Self = this.set("orientationX", js.undefined)
+    def setOrientationZ(value: Double): Self = StObject.set(x, "orientationZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientationY(value: Double): Self = this.set("orientationY", value.asInstanceOf[js.Any])
+    def setOrientationZUndefined: Self = StObject.set(x, "orientationZ", js.undefined)
     
     @scala.inline
-    def deleteOrientationY: Self = this.set("orientationY", js.undefined)
+    def setPanningModel(value: PanningModelType): Self = StObject.set(x, "panningModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientationZ(value: Double): Self = this.set("orientationZ", value.asInstanceOf[js.Any])
+    def setPanningModelUndefined: Self = StObject.set(x, "panningModel", js.undefined)
     
     @scala.inline
-    def deleteOrientationZ: Self = this.set("orientationZ", js.undefined)
+    def setPositionX(value: Double): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanningModel(value: PanningModelType): Self = this.set("panningModel", value.asInstanceOf[js.Any])
+    def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
     
     @scala.inline
-    def deletePanningModel: Self = this.set("panningModel", js.undefined)
+    def setPositionY(value: Double): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionX(value: Double): Self = this.set("positionX", value.asInstanceOf[js.Any])
+    def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
     
     @scala.inline
-    def deletePositionX: Self = this.set("positionX", js.undefined)
+    def setPositionZ(value: Double): Self = StObject.set(x, "positionZ", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionY(value: Double): Self = this.set("positionY", value.asInstanceOf[js.Any])
+    def setPositionZUndefined: Self = StObject.set(x, "positionZ", js.undefined)
     
     @scala.inline
-    def deletePositionY: Self = this.set("positionY", js.undefined)
+    def setRefDistance(value: Double): Self = StObject.set(x, "refDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionZ(value: Double): Self = this.set("positionZ", value.asInstanceOf[js.Any])
+    def setRefDistanceUndefined: Self = StObject.set(x, "refDistance", js.undefined)
     
     @scala.inline
-    def deletePositionZ: Self = this.set("positionZ", js.undefined)
+    def setRolloffFactor(value: Double): Self = StObject.set(x, "rolloffFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefDistance(value: Double): Self = this.set("refDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRefDistance: Self = this.set("refDistance", js.undefined)
-    
-    @scala.inline
-    def setRolloffFactor(value: Double): Self = this.set("rolloffFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRolloffFactor: Self = this.set("rolloffFactor", js.undefined)
+    def setRolloffFactorUndefined: Self = StObject.set(x, "rolloffFactor", js.undefined)
   }
 }

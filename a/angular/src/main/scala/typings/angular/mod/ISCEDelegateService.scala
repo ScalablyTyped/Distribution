@@ -1,5 +1,6 @@
 package typings.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api/ng/service/$sceDelegate
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait ISCEDelegateService extends js.Object {
+trait ISCEDelegateService extends StObject {
   
   def getTrusted(`type`: String, mayBeTrusted: js.Any): js.Any = js.native
   
@@ -30,27 +31,15 @@ object ISCEDelegateService {
   }
   
   @scala.inline
-  implicit class ISCEDelegateServiceOps[Self <: ISCEDelegateService] (val x: Self) extends AnyVal {
+  implicit class ISCEDelegateServiceMutableBuilder[Self <: ISCEDelegateService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetTrusted(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetTrusted(value: (String, js.Any) => js.Any): Self = this.set("getTrusted", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTrustAs(value: (String, js.Any) => js.Any): Self = this.set("trustAs", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setValueOf(value: js.Any => js.Any): Self = this.set("valueOf", js.Any.fromFunction1(value))
+    def setValueOf(value: js.Any => js.Any): Self = StObject.set(x, "valueOf", js.Any.fromFunction1(value))
   }
 }

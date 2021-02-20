@@ -1,6 +1,7 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and their sharded locations.
   */
 @js.native
-trait SchemaTopologyConfig extends js.Object {
+trait SchemaTopologyConfig extends StObject {
   
   /**
     * The computations associated with a streaming Dataflow job.
@@ -46,54 +47,42 @@ object SchemaTopologyConfig {
   }
   
   @scala.inline
-  implicit class SchemaTopologyConfigOps[Self <: SchemaTopologyConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaTopologyConfigMutableBuilder[Self <: SchemaTopologyConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputations(value: js.Array[SchemaComputationTopology]): Self = StObject.set(x, "computations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputationsUndefined: Self = StObject.set(x, "computations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputationsVarargs(value: SchemaComputationTopology*): Self = StObject.set(x, "computations", js.Array(value :_*))
     
     @scala.inline
-    def setComputationsVarargs(value: SchemaComputationTopology*): Self = this.set("computations", js.Array(value :_*))
+    def setDataDiskAssignments(value: js.Array[SchemaDataDiskAssignment]): Self = StObject.set(x, "dataDiskAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputations(value: js.Array[SchemaComputationTopology]): Self = this.set("computations", value.asInstanceOf[js.Any])
+    def setDataDiskAssignmentsUndefined: Self = StObject.set(x, "dataDiskAssignments", js.undefined)
     
     @scala.inline
-    def deleteComputations: Self = this.set("computations", js.undefined)
+    def setDataDiskAssignmentsVarargs(value: SchemaDataDiskAssignment*): Self = StObject.set(x, "dataDiskAssignments", js.Array(value :_*))
     
     @scala.inline
-    def setDataDiskAssignmentsVarargs(value: SchemaDataDiskAssignment*): Self = this.set("dataDiskAssignments", js.Array(value :_*))
+    def setForwardingKeyBits(value: Double): Self = StObject.set(x, "forwardingKeyBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataDiskAssignments(value: js.Array[SchemaDataDiskAssignment]): Self = this.set("dataDiskAssignments", value.asInstanceOf[js.Any])
+    def setForwardingKeyBitsUndefined: Self = StObject.set(x, "forwardingKeyBits", js.undefined)
     
     @scala.inline
-    def deleteDataDiskAssignments: Self = this.set("dataDiskAssignments", js.undefined)
+    def setPersistentStateVersion(value: Double): Self = StObject.set(x, "persistentStateVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardingKeyBits(value: Double): Self = this.set("forwardingKeyBits", value.asInstanceOf[js.Any])
+    def setPersistentStateVersionUndefined: Self = StObject.set(x, "persistentStateVersion", js.undefined)
     
     @scala.inline
-    def deleteForwardingKeyBits: Self = this.set("forwardingKeyBits", js.undefined)
+    def setUserStageToComputationNameMap(value: StringDictionary[String]): Self = StObject.set(x, "userStageToComputationNameMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistentStateVersion(value: Double): Self = this.set("persistentStateVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersistentStateVersion: Self = this.set("persistentStateVersion", js.undefined)
-    
-    @scala.inline
-    def setUserStageToComputationNameMap(value: StringDictionary[String]): Self = this.set("userStageToComputationNameMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserStageToComputationNameMap: Self = this.set("userStageToComputationNameMap", js.undefined)
+    def setUserStageToComputationNameMapUndefined: Self = StObject.set(x, "userStageToComputationNameMap", js.undefined)
   }
 }

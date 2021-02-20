@@ -1,11 +1,12 @@
 package typings.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableTextLabelsSelectedRows extends js.Object {
+trait MUIDataTableTextLabelsSelectedRows extends StObject {
   
   var delete: String = js.native
   
@@ -22,27 +23,15 @@ object MUIDataTableTextLabelsSelectedRows {
   }
   
   @scala.inline
-  implicit class MUIDataTableTextLabelsSelectedRowsOps[Self <: MUIDataTableTextLabelsSelectedRows] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableTextLabelsSelectedRowsMutableBuilder[Self <: MUIDataTableTextLabelsSelectedRows] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteAria(value: String): Self = StObject.set(x, "deleteAria", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDelete(value: String): Self = this.set("delete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDeleteAria(value: String): Self = this.set("deleteAria", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

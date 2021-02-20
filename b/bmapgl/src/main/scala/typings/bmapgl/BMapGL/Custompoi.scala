@@ -1,11 +1,12 @@
 package typings.bmapgl.BMapGL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Custompoi extends js.Object {
+trait Custompoi extends StObject {
   
   var address: String = js.native
   
@@ -65,69 +66,57 @@ object Custompoi {
   }
   
   @scala.inline
-  implicit class CustompoiOps[Self <: Custompoi] (val x: Self) extends AnyVal {
+  implicit class CustompoiMutableBuilder[Self <: Custompoi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCityCode(value: Double): Self = StObject.set(x, "cityCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    def setDataboxId(value: String): Self = StObject.set(x, "databoxId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCityCode(value: Double): Self = this.set("cityCode", value.asInstanceOf[js.Any])
+    def setDistrictCode(value: Double): Self = StObject.set(x, "districtCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataboxId(value: String): Self = this.set("databoxId", value.asInstanceOf[js.Any])
+    def setExtendedData(value: js.Any): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistrict(value: String): Self = this.set("district", value.asInstanceOf[js.Any])
+    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistrictCode(value: Double): Self = this.set("districtCode", value.asInstanceOf[js.Any])
+    def setPoiId(value: String): Self = StObject.set(x, "poiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedData(value: js.Any): Self = this.set("extendedData", value.asInstanceOf[js.Any])
+    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoiId(value: String): Self = this.set("poiId", value.asInstanceOf[js.Any])
+    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: Point): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setProvinceCode(value: Double): Self = StObject.set(x, "provinceCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPostcode(value: String): Self = this.set("postcode", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvince(value: String): Self = this.set("province", value.asInstanceOf[js.Any])
+    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
     @scala.inline
-    def setProvinceCode(value: Double): Self = this.set("provinceCode", value.asInstanceOf[js.Any])
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypeId(value: Double): Self = this.set("typeId", value.asInstanceOf[js.Any])
+    def setTypeId(value: Double): Self = StObject.set(x, "typeId", value.asInstanceOf[js.Any])
   }
 }

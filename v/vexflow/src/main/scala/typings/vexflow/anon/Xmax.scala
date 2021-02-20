@@ -1,11 +1,12 @@
 package typings.vexflow.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Xmax extends js.Object {
+trait Xmax extends StObject {
   
   var height: Double = js.native
   
@@ -24,30 +25,18 @@ object Xmax {
   }
   
   @scala.inline
-  implicit class XmaxOps[Self <: Xmax] (val x: Self) extends AnyVal {
+  implicit class XmaxMutableBuilder[Self <: Xmax] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setX_max(value: Double): Self = StObject.set(x, "x_max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX_max(value: Double): Self = this.set("x_max", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setX_min(value: Double): Self = this.set("x_min", value.asInstanceOf[js.Any])
+    def setX_min(value: Double): Self = StObject.set(x, "x_min", value.asInstanceOf[js.Any])
   }
 }

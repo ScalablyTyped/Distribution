@@ -1,11 +1,12 @@
 package typings.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeSettings extends js.Object {
+trait TreeSettings extends StObject {
   
   var autoLoad: js.UndefOr[Boolean] = js.native
   
@@ -93,234 +94,222 @@ object TreeSettings {
   }
   
   @scala.inline
-  implicit class TreeSettingsOps[Self <: TreeSettings] (val x: Self) extends AnyVal {
+  implicit class TreeSettingsMutableBuilder[Self <: TreeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoLoad(value: Boolean): Self = this.set("autoLoad", value.asInstanceOf[js.Any])
+    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
     @scala.inline
-    def deleteAutoLoad: Self = this.set("autoLoad", js.undefined)
+    def setCascadeCheck(value: Boolean): Self = StObject.set(x, "cascadeCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorder(value: Boolean): Self = this.set("border", value.asInstanceOf[js.Any])
+    def setCascadeCheckUndefined: Self = StObject.set(x, "cascadeCheck", js.undefined)
     
     @scala.inline
-    def deleteBorder: Self = this.set("border", js.undefined)
+    def setCascadeSelection(value: Boolean): Self = StObject.set(x, "cascadeSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCascadeCheck(value: Boolean): Self = this.set("cascadeCheck", value.asInstanceOf[js.Any])
+    def setCascadeSelectionUndefined: Self = StObject.set(x, "cascadeSelection", js.undefined)
     
     @scala.inline
-    def deleteCascadeCheck: Self = this.set("cascadeCheck", js.undefined)
+    def setCheckboxChange(value: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => _): Self = StObject.set(x, "checkboxChange", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setCascadeSelection(value: Boolean): Self = this.set("cascadeSelection", value.asInstanceOf[js.Any])
+    def setCheckboxChangeUndefined: Self = StObject.set(x, "checkboxChange", js.undefined)
     
     @scala.inline
-    def deleteCascadeSelection: Self = this.set("cascadeSelection", js.undefined)
+    def setCheckboxes(value: Boolean): Self = StObject.set(x, "checkboxes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxChange(value: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => _): Self = this.set("checkboxChange", js.Any.fromFunction4(value))
+    def setCheckboxesUndefined: Self = StObject.set(x, "checkboxes", js.undefined)
     
     @scala.inline
-    def deleteCheckboxChange: Self = this.set("checkboxChange", js.undefined)
+    def setCheckedField(value: String): Self = StObject.set(x, "checkedField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckboxes(value: Boolean): Self = this.set("checkboxes", value.asInstanceOf[js.Any])
+    def setCheckedFieldUndefined: Self = StObject.set(x, "checkedField", js.undefined)
     
     @scala.inline
-    def deleteCheckboxes: Self = this.set("checkboxes", js.undefined)
+    def setChildrenField(value: String): Self = StObject.set(x, "childrenField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckedField(value: String): Self = this.set("checkedField", value.asInstanceOf[js.Any])
+    def setChildrenFieldUndefined: Self = StObject.set(x, "childrenField", js.undefined)
     
     @scala.inline
-    def deleteCheckedField: Self = this.set("checkedField", js.undefined)
+    def setCollapse(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setChildrenField(value: String): Self = this.set("childrenField", value.asInstanceOf[js.Any])
+    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
     @scala.inline
-    def deleteChildrenField: Self = this.set("childrenField", js.undefined)
+    def setDataBinding(value: /* e */ js.Any => _): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCollapse(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("collapse", js.Any.fromFunction3(value))
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    def setDataBound(value: /* e */ js.Any => _): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataBinding(value: /* e */ js.Any => _): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBound(value: /* e */ js.Any => _): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDestroying(value: /* e */ js.Any => _): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDestroyingUndefined: Self = StObject.set(x, "destroying", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setDisable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "disable", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDestroying(value: /* e */ js.Any => _): Self = this.set("destroying", js.Any.fromFunction1(value))
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteDestroying: Self = this.set("destroying", js.undefined)
+    def setDisabledField(value: String): Self = StObject.set(x, "disabledField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("disable", js.Any.fromFunction3(value))
+    def setDisabledFieldUndefined: Self = StObject.set(x, "disabledField", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setDragAndDrop(value: Boolean): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledField(value: String): Self = this.set("disabledField", value.asInstanceOf[js.Any])
+    def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
     
     @scala.inline
-    def deleteDisabledField: Self = this.set("disabledField", js.undefined)
+    def setEnable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "enable", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setDragAndDrop(value: Boolean): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteDragAndDrop: Self = this.set("dragAndDrop", js.undefined)
+    def setExpand(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setEnable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("enable", js.Any.fromFunction3(value))
+    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setHasChildrenField(value: String): Self = StObject.set(x, "hasChildrenField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpand(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("expand", js.Any.fromFunction3(value))
+    def setHasChildrenFieldUndefined: Self = StObject.set(x, "hasChildrenField", js.undefined)
     
     @scala.inline
-    def deleteExpand: Self = this.set("expand", js.undefined)
+    def setIcons(value: TreeIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasChildrenField(value: String): Self = this.set("hasChildrenField", value.asInstanceOf[js.Any])
+    def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasChildrenField: Self = this.set("hasChildrenField", js.undefined)
+    def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
     
     @scala.inline
-    def setIcons(value: TreeIcons): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setImageCssClassField(value: String): Self = StObject.set(x, "imageCssClassField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconsLibrary(value: String): Self = this.set("iconsLibrary", value.asInstanceOf[js.Any])
+    def setImageCssClassFieldUndefined: Self = StObject.set(x, "imageCssClassField", js.undefined)
     
     @scala.inline
-    def deleteIconsLibrary: Self = this.set("iconsLibrary", js.undefined)
+    def setImageHtmlField(value: String): Self = StObject.set(x, "imageHtmlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageCssClassField(value: String): Self = this.set("imageCssClassField", value.asInstanceOf[js.Any])
+    def setImageHtmlFieldUndefined: Self = StObject.set(x, "imageHtmlField", js.undefined)
     
     @scala.inline
-    def deleteImageCssClassField: Self = this.set("imageCssClassField", js.undefined)
+    def setImageUrlField(value: String): Self = StObject.set(x, "imageUrlField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageHtmlField(value: String): Self = this.set("imageHtmlField", value.asInstanceOf[js.Any])
+    def setImageUrlFieldUndefined: Self = StObject.set(x, "imageUrlField", js.undefined)
     
     @scala.inline
-    def deleteImageHtmlField: Self = this.set("imageHtmlField", js.undefined)
+    def setInitialized(value: /* e */ js.Any => _): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setImageUrlField(value: String): Self = this.set("imageUrlField", value.asInstanceOf[js.Any])
+    def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
     
     @scala.inline
-    def deleteImageUrlField: Self = this.set("imageUrlField", js.undefined)
+    def setLazyLoading(value: Boolean): Self = StObject.set(x, "lazyLoading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialized(value: /* e */ js.Any => _): Self = this.set("initialized", js.Any.fromFunction1(value))
+    def setLazyLoadingUndefined: Self = StObject.set(x, "lazyLoading", js.undefined)
     
     @scala.inline
-    def deleteInitialized: Self = this.set("initialized", js.undefined)
+    def setNodeDataBound(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "nodeDataBound", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setLazyLoading(value: Boolean): Self = this.set("lazyLoading", value.asInstanceOf[js.Any])
+    def setNodeDataBoundUndefined: Self = StObject.set(x, "nodeDataBound", js.undefined)
     
     @scala.inline
-    def deleteLazyLoading: Self = this.set("lazyLoading", js.undefined)
+    def setNodeDrop(value: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => _): Self = StObject.set(x, "nodeDrop", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setNodeDataBound(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("nodeDataBound", js.Any.fromFunction3(value))
+    def setNodeDropUndefined: Self = StObject.set(x, "nodeDrop", js.undefined)
     
     @scala.inline
-    def deleteNodeDataBound: Self = this.set("nodeDataBound", js.undefined)
+    def setParamNames(value: TreeParamNames): Self = StObject.set(x, "paramNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeDrop(value: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => _): Self = this.set("nodeDrop", js.Any.fromFunction4(value))
+    def setParamNamesUndefined: Self = StObject.set(x, "paramNames", js.undefined)
     
     @scala.inline
-    def deleteNodeDrop: Self = this.set("nodeDrop", js.undefined)
+    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamNames(value: TreeParamNames): Self = this.set("paramNames", value.asInstanceOf[js.Any])
+    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
     @scala.inline
-    def deleteParamNames: Self = this.set("paramNames", js.undefined)
+    def setSelect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setPrimaryKey(value: String): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     @scala.inline
-    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    def setSelectionType(value: String): Self = StObject.set(x, "selectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("select", js.Any.fromFunction3(value))
+    def setSelectionTypeUndefined: Self = StObject.set(x, "selectionType", js.undefined)
     
     @scala.inline
-    def deleteSelect: Self = this.set("select", js.undefined)
+    def setTextField(value: String): Self = StObject.set(x, "textField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectionType(value: String): Self = this.set("selectionType", value.asInstanceOf[js.Any])
+    def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
     
     @scala.inline
-    def deleteSelectionType: Self = this.set("selectionType", js.undefined)
+    def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextField(value: String): Self = this.set("textField", value.asInstanceOf[js.Any])
+    def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
     
     @scala.inline
-    def deleteTextField: Self = this.set("textField", js.undefined)
+    def setUnselect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = StObject.set(x, "unselect", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUiLibrary(value: String): Self = this.set("uiLibrary", value.asInstanceOf[js.Any])
+    def setUnselectUndefined: Self = StObject.set(x, "unselect", js.undefined)
     
     @scala.inline
-    def deleteUiLibrary: Self = this.set("uiLibrary", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnselect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("unselect", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteUnselect: Self = this.set("unselect", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

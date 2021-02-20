@@ -1,14 +1,15 @@
 package typings.promiseRetry
 
 import typings.retry.mod.OperationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-retry", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("promise-retry", JSImport.Namespace)
+  @js.native
   def apply[ResolutionType](options: OperationOptions, retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
   /**
     * Wrap all functions of the object with retry. The params can be entered in either order, just like in the original library.
@@ -17,7 +18,11 @@ object mod extends js.Object {
     * @param options The options for how long/often to retry the function for.
     * @returns The Promise resolved by the input retryableFn, or rejected (if not retried) from its catch block.
     */
+  @JSImport("promise-retry", JSImport.Namespace)
+  @js.native
   def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
+  @JSImport("promise-retry", JSImport.Namespace)
+  @js.native
   def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType], options: OperationOptions): js.Promise[ResolutionType] = js.native
   
   /**

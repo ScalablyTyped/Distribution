@@ -1,11 +1,12 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchDeleteImportDataRequest extends js.Object {
+trait BatchDeleteImportDataRequest extends StObject {
   
   /**
     * The IDs for the import tasks that you want to delete.
@@ -21,24 +22,12 @@ object BatchDeleteImportDataRequest {
   }
   
   @scala.inline
-  implicit class BatchDeleteImportDataRequestOps[Self <: BatchDeleteImportDataRequest] (val x: Self) extends AnyVal {
+  implicit class BatchDeleteImportDataRequestMutableBuilder[Self <: BatchDeleteImportDataRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImportTaskIds(value: ToDeleteIdentifierList): Self = StObject.set(x, "importTaskIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setImportTaskIdsVarargs(value: ImportTaskIdentifier*): Self = this.set("importTaskIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setImportTaskIds(value: ToDeleteIdentifierList): Self = this.set("importTaskIds", value.asInstanceOf[js.Any])
+    def setImportTaskIdsVarargs(value: ImportTaskIdentifier*): Self = StObject.set(x, "importTaskIds", js.Array(value :_*))
   }
 }

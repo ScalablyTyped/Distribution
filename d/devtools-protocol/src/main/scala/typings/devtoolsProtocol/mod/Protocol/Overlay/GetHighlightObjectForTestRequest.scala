@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetHighlightObjectForTestRequest extends js.Object {
+trait GetHighlightObjectForTestRequest extends StObject {
   
   /**
     * The color format to get config with (default: hex).
@@ -42,45 +43,33 @@ object GetHighlightObjectForTestRequest {
   }
   
   @scala.inline
-  implicit class GetHighlightObjectForTestRequestOps[Self <: GetHighlightObjectForTestRequest] (val x: Self) extends AnyVal {
+  implicit class GetHighlightObjectForTestRequestMutableBuilder[Self <: GetHighlightObjectForTestRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColorFormat(value: ColorFormat): Self = StObject.set(x, "colorFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorFormatUndefined: Self = StObject.set(x, "colorFormat", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeDistance(value: Boolean): Self = StObject.set(x, "includeDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeId(value: NodeId): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    def setIncludeDistanceUndefined: Self = StObject.set(x, "includeDistance", js.undefined)
     
     @scala.inline
-    def setColorFormat(value: ColorFormat): Self = this.set("colorFormat", value.asInstanceOf[js.Any])
+    def setIncludeStyle(value: Boolean): Self = StObject.set(x, "includeStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColorFormat: Self = this.set("colorFormat", js.undefined)
+    def setIncludeStyleUndefined: Self = StObject.set(x, "includeStyle", js.undefined)
     
     @scala.inline
-    def setIncludeDistance(value: Boolean): Self = this.set("includeDistance", value.asInstanceOf[js.Any])
+    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncludeDistance: Self = this.set("includeDistance", js.undefined)
+    def setShowAccessibilityInfo(value: Boolean): Self = StObject.set(x, "showAccessibilityInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeStyle(value: Boolean): Self = this.set("includeStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeStyle: Self = this.set("includeStyle", js.undefined)
-    
-    @scala.inline
-    def setShowAccessibilityInfo(value: Boolean): Self = this.set("showAccessibilityInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowAccessibilityInfo: Self = this.set("showAccessibilityInfo", js.undefined)
+    def setShowAccessibilityInfoUndefined: Self = StObject.set(x, "showAccessibilityInfo", js.undefined)
   }
 }

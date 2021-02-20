@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A worker pool resource in the Remote Build Execution API.
   */
 @js.native
-trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends js.Object {
+trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends StObject {
   
   /**
     * WorkerPool resource name formatted as:
@@ -44,42 +45,30 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
   }
   
   @scala.inline
-  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPoolOps[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPoolMutableBuilder[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setWorkerConfig(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setWorkerConfigUndefined: Self = StObject.set(x, "workerConfig", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setWorkerCount(value: String): Self = StObject.set(x, "workerCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkerConfig(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig): Self = this.set("workerConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerConfig: Self = this.set("workerConfig", js.undefined)
-    
-    @scala.inline
-    def setWorkerCount(value: String): Self = this.set("workerCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorkerCount: Self = this.set("workerCount", js.undefined)
+    def setWorkerCountUndefined: Self = StObject.set(x, "workerCount", js.undefined)
   }
 }

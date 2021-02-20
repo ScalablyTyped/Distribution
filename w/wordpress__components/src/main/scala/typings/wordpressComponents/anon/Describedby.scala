@@ -1,11 +1,12 @@
 package typings.wordpressComponents.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Describedby extends js.Object {
+trait Describedby extends StObject {
   
   /**
     * If this property is added, it will be added to the modal content
@@ -30,30 +31,18 @@ object Describedby {
   }
   
   @scala.inline
-  implicit class DescribedbyOps[Self <: Describedby] (val x: Self) extends AnyVal {
+  implicit class DescribedbyMutableBuilder[Self <: Describedby] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescribedby(value: String): Self = StObject.set(x, "describedby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescribedbyUndefined: Self = StObject.set(x, "describedby", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelledby(value: String): Self = StObject.set(x, "labelledby", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescribedby(value: String): Self = this.set("describedby", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescribedby: Self = this.set("describedby", js.undefined)
-    
-    @scala.inline
-    def setLabelledby(value: String): Self = this.set("labelledby", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelledby: Self = this.set("labelledby", js.undefined)
+    def setLabelledbyUndefined: Self = StObject.set(x, "labelledby", js.undefined)
   }
 }

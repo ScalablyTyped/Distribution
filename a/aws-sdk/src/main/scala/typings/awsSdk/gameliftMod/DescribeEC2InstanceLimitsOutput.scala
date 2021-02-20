@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeEC2InstanceLimitsOutput extends js.Object {
+trait DescribeEC2InstanceLimitsOutput extends StObject {
   
   /**
     * The maximum number of instances for the specified instance type.
@@ -21,27 +22,15 @@ object DescribeEC2InstanceLimitsOutput {
   }
   
   @scala.inline
-  implicit class DescribeEC2InstanceLimitsOutputOps[Self <: DescribeEC2InstanceLimitsOutput] (val x: Self) extends AnyVal {
+  implicit class DescribeEC2InstanceLimitsOutputMutableBuilder[Self <: DescribeEC2InstanceLimitsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEC2InstanceLimits(value: EC2InstanceLimitList): Self = StObject.set(x, "EC2InstanceLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEC2InstanceLimitsUndefined: Self = StObject.set(x, "EC2InstanceLimits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEC2InstanceLimitsVarargs(value: EC2InstanceLimit*): Self = this.set("EC2InstanceLimits", js.Array(value :_*))
-    
-    @scala.inline
-    def setEC2InstanceLimits(value: EC2InstanceLimitList): Self = this.set("EC2InstanceLimits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEC2InstanceLimits: Self = this.set("EC2InstanceLimits", js.undefined)
+    def setEC2InstanceLimitsVarargs(value: EC2InstanceLimit*): Self = StObject.set(x, "EC2InstanceLimits", js.Array(value :_*))
   }
 }

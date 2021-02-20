@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataIndex extends js.Object {
+trait DataIndex extends StObject {
   
   var dataIndex: js.UndefOr[Double] = js.native
   
@@ -26,45 +27,33 @@ object DataIndex {
   }
   
   @scala.inline
-  implicit class DataIndexOps[Self <: DataIndex] (val x: Self) extends AnyVal {
+  implicit class DataIndexMutableBuilder[Self <: DataIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataSetIndex(value: Double): Self = StObject.set(x, "dataSetIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setDataSetIndexUndefined: Self = StObject.set(x, "dataSetIndex", js.undefined)
     
     @scala.inline
-    def setDataIndex(value: Double): Self = this.set("dataIndex", value.asInstanceOf[js.Any])
+    def setStackIndex(value: Double): Self = StObject.set(x, "stackIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataIndex: Self = this.set("dataIndex", js.undefined)
+    def setStackIndexUndefined: Self = StObject.set(x, "stackIndex", js.undefined)
     
     @scala.inline
-    def setDataSetIndex(value: Double): Self = this.set("dataSetIndex", value.asInstanceOf[js.Any])
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataSetIndex: Self = this.set("dataSetIndex", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackIndex(value: Double): Self = this.set("stackIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackIndex: Self = this.set("stackIndex", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientXElement extends js.Object {
+trait ClientXElement extends StObject {
   
   def get_element(): XElement = js.native
   
@@ -20,24 +21,12 @@ object ClientXElement {
   }
   
   @scala.inline
-  implicit class ClientXElementOps[Self <: ClientXElement] (val x: Self) extends AnyVal {
+  implicit class ClientXElementMutableBuilder[Self <: ClientXElement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGet_element(value: () => XElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGet_element(value: () => XElement): Self = this.set("get_element", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet_element(value: XElement => Unit): Self = this.set("set_element", js.Any.fromFunction1(value))
+    def setSet_element(value: XElement => Unit): Self = StObject.set(x, "set_element", js.Any.fromFunction1(value))
   }
 }

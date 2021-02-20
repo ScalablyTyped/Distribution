@@ -1,19 +1,34 @@
 package typings.mendixmodelsdk.codeactionsMod.codeactions
 
 import typings.mendixmodelsdk.internalMod.AbstractEnum
+import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterGrammar")
 @js.native
-class StringTemplateParameterGrammar () extends AbstractEnum
-/* static members */
-@JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterGrammar")
-@js.native
-object StringTemplateParameterGrammar extends js.Object {
+class StringTemplateParameterGrammar protected () extends AbstractEnum {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+}
+object StringTemplateParameterGrammar {
   
-  var Sql: StringTemplateParameterGrammar = js.native
+  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterGrammar")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var Text: StringTemplateParameterGrammar = js.native
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterGrammar.Sql")
+  @js.native
+  def Sql: StringTemplateParameterGrammar = js.native
+  @scala.inline
+  def Sql_=(x: StringTemplateParameterGrammar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sql")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.StringTemplateParameterGrammar.Text")
+  @js.native
+  def Text: StringTemplateParameterGrammar = js.native
+  @scala.inline
+  def Text_=(x: StringTemplateParameterGrammar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Text")(x.asInstanceOf[js.Any])
 }

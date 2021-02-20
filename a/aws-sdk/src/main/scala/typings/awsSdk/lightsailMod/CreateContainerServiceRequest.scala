@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateContainerServiceRequest extends js.Object {
+trait CreateContainerServiceRequest extends StObject {
   
   /**
     * An object that describes a deployment for the container service. A deployment specifies the containers that will be launched on the container service and their settings, such as the ports to open, the environment variables to apply, and the launch command to run. It also specifies the container that will serve as the public endpoint of the deployment and its settings, such as the HTTP or HTTPS port to use, and the health check configuration.
@@ -46,48 +47,36 @@ object CreateContainerServiceRequest {
   }
   
   @scala.inline
-  implicit class CreateContainerServiceRequestOps[Self <: CreateContainerServiceRequest] (val x: Self) extends AnyVal {
+  implicit class CreateContainerServiceRequestMutableBuilder[Self <: CreateContainerServiceRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeployment(value: ContainerServiceDeploymentRequest): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPower(value: ContainerServicePowerName): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPower(value: ContainerServicePowerName): Self = this.set("power", value.asInstanceOf[js.Any])
+    def setPublicDomainNames(value: ContainerServicePublicDomains): Self = StObject.set(x, "publicDomainNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: ContainerServiceScale): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setPublicDomainNamesUndefined: Self = StObject.set(x, "publicDomainNames", js.undefined)
     
     @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    def setScale(value: ContainerServiceScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeployment(value: ContainerServiceDeploymentRequest): Self = this.set("deployment", value.asInstanceOf[js.Any])
+    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeployment: Self = this.set("deployment", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPublicDomainNames(value: ContainerServicePublicDomains): Self = this.set("publicDomainNames", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deletePublicDomainNames: Self = this.set("publicDomainNames", js.undefined)
-    
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
-    
-    @scala.inline
-    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

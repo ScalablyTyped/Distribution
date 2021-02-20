@@ -1,11 +1,12 @@
 package typings.uikit.mod.UIkit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIkitSortableOptions extends js.Object {
+trait UIkitSortableOptions extends StObject {
   
   var animation: js.UndefOr[Double] = js.native
   
@@ -41,87 +42,75 @@ object UIkitSortableOptions {
   }
   
   @scala.inline
-  implicit class UIkitSortableOptionsOps[Self <: UIkitSortableOptions] (val x: Self) extends AnyVal {
+  implicit class UIkitSortableOptionsMutableBuilder[Self <: UIkitSortableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: Double): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setCls-base`(value: String): Self = StObject.set(x, "cls-base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-custom`(value: String): Self = this.set("cls-custom", value.asInstanceOf[js.Any])
+    def `setCls-baseUndefined`: Self = StObject.set(x, "cls-base", js.undefined)
     
     @scala.inline
-    def setAnimation(value: Double): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def `setCls-custom`(value: String): Self = StObject.set(x, "cls-custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def `setCls-drag`(value: String): Self = StObject.set(x, "cls-drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-base`(value: String): Self = this.set("cls-base", value.asInstanceOf[js.Any])
+    def `setCls-drag-state`(value: String): Self = StObject.set(x, "cls-drag-state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `deleteCls-base`: Self = this.set("cls-base", js.undefined)
+    def `setCls-drag-stateUndefined`: Self = StObject.set(x, "cls-drag-state", js.undefined)
     
     @scala.inline
-    def `setCls-drag`(value: String): Self = this.set("cls-drag", value.asInstanceOf[js.Any])
+    def `setCls-dragUndefined`: Self = StObject.set(x, "cls-drag", js.undefined)
     
     @scala.inline
-    def `deleteCls-drag`: Self = this.set("cls-drag", js.undefined)
+    def `setCls-empty`(value: String): Self = StObject.set(x, "cls-empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-drag-state`(value: String): Self = this.set("cls-drag-state", value.asInstanceOf[js.Any])
+    def `setCls-emptyUndefined`: Self = StObject.set(x, "cls-empty", js.undefined)
     
     @scala.inline
-    def `deleteCls-drag-state`: Self = this.set("cls-drag-state", js.undefined)
+    def `setCls-item`(value: String): Self = StObject.set(x, "cls-item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-empty`(value: String): Self = this.set("cls-empty", value.asInstanceOf[js.Any])
+    def `setCls-itemUndefined`: Self = StObject.set(x, "cls-item", js.undefined)
     
     @scala.inline
-    def `deleteCls-empty`: Self = this.set("cls-empty", js.undefined)
+    def `setCls-no-drag`(value: String): Self = StObject.set(x, "cls-no-drag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-item`(value: String): Self = this.set("cls-item", value.asInstanceOf[js.Any])
+    def `setCls-no-dragUndefined`: Self = StObject.set(x, "cls-no-drag", js.undefined)
     
     @scala.inline
-    def `deleteCls-item`: Self = this.set("cls-item", js.undefined)
+    def `setCls-placeholder`(value: String): Self = StObject.set(x, "cls-placeholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-no-drag`(value: String): Self = this.set("cls-no-drag", value.asInstanceOf[js.Any])
+    def `setCls-placeholderUndefined`: Self = StObject.set(x, "cls-placeholder", js.undefined)
     
     @scala.inline
-    def `deleteCls-no-drag`: Self = this.set("cls-no-drag", js.undefined)
+    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCls-placeholder`(value: String): Self = this.set("cls-placeholder", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     @scala.inline
-    def `deleteCls-placeholder`: Self = this.set("cls-placeholder", js.undefined)
+    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandle(value: String): Self = this.set("handle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandle: Self = this.set("handle", js.undefined)
-    
-    @scala.inline
-    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreshold: Self = this.set("threshold", js.undefined)
+    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

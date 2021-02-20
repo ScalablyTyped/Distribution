@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetOpsSummaryRequest extends js.Object {
+trait GetOpsSummaryRequest extends StObject {
   
   /**
     * Optional aggregators that return counts of OpsItems based on one or more expressions.
@@ -46,63 +47,51 @@ object GetOpsSummaryRequest {
   }
   
   @scala.inline
-  implicit class GetOpsSummaryRequestOps[Self <: GetOpsSummaryRequest] (val x: Self) extends AnyVal {
+  implicit class GetOpsSummaryRequestMutableBuilder[Self <: GetOpsSummaryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregators(value: OpsAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
     
     @scala.inline
-    def setAggregatorsVarargs(value: OpsAggregator*): Self = this.set("Aggregators", js.Array(value :_*))
+    def setFilters(value: OpsFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAggregators(value: OpsAggregatorList): Self = this.set("Aggregators", value.asInstanceOf[js.Any])
+    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
     @scala.inline
-    def deleteAggregators: Self = this.set("Aggregators", js.undefined)
+    def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
     @scala.inline
-    def setFiltersVarargs(value: OpsFilter*): Self = this.set("Filters", js.Array(value :_*))
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilters(value: OpsFilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteFilters: Self = this.set("Filters", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    def setResultAttributes(value: OpsResultAttributeList): Self = StObject.set(x, "ResultAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setResultAttributesUndefined: Self = StObject.set(x, "ResultAttributes", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setResultAttributesVarargs(value: OpsResultAttribute*): Self = StObject.set(x, "ResultAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setResultAttributesVarargs(value: OpsResultAttribute*): Self = this.set("ResultAttributes", js.Array(value :_*))
+    def setSyncName(value: ResourceDataSyncName): Self = StObject.set(x, "SyncName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultAttributes(value: OpsResultAttributeList): Self = this.set("ResultAttributes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResultAttributes: Self = this.set("ResultAttributes", js.undefined)
-    
-    @scala.inline
-    def setSyncName(value: ResourceDataSyncName): Self = this.set("SyncName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSyncName: Self = this.set("SyncName", js.undefined)
+    def setSyncNameUndefined: Self = StObject.set(x, "SyncName", js.undefined)
   }
 }

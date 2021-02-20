@@ -7,27 +7,42 @@ import typings.reduxPersist.reduxPersistStrings.persistSlashPERSIST
 import typings.reduxPersist.reduxPersistStrings.persistSlashPURGE
 import typings.reduxPersist.reduxPersistStrings.persistSlashREGISTER
 import typings.reduxPersist.reduxPersistStrings.persistSlashREHYDRATE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/lib/constants", JSImport.Namespace)
-@js.native
-object libConstantsMod extends js.Object {
+object libConstantsMod {
   
+  @JSImport("redux-persist/lib/constants", "DEFAULT_VERSION")
+  @js.native
   val DEFAULT_VERSION: Double = js.native
   
+  @JSImport("redux-persist/lib/constants", "FLUSH")
+  @js.native
   val FLUSH: persistSlashFLUSH = js.native
   
+  @JSImport("redux-persist/lib/constants", "KEY_PREFIX")
+  @js.native
   val KEY_PREFIX: persistColon = js.native
   
+  @JSImport("redux-persist/lib/constants", "PAUSE")
+  @js.native
   val PAUSE: persistSlashPAUSE = js.native
   
+  @JSImport("redux-persist/lib/constants", "PERSIST")
+  @js.native
   val PERSIST: persistSlashPERSIST = js.native
   
+  @JSImport("redux-persist/lib/constants", "PURGE")
+  @js.native
   val PURGE: persistSlashPURGE = js.native
   
+  @JSImport("redux-persist/lib/constants", "REGISTER")
+  @js.native
   val REGISTER: persistSlashREGISTER = js.native
   
+  @JSImport("redux-persist/lib/constants", "REHYDRATE")
+  @js.native
   val REHYDRATE: persistSlashREHYDRATE = js.native
 }

@@ -7,12 +7,13 @@ import typings.nodeRedRuntime.nodeRedRuntimeStrings.info
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.off
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.trace
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Audit extends js.Object {
+trait Audit extends StObject {
   
   /**
     * Whether or not to include audit events in the log output
@@ -45,27 +46,15 @@ object Audit {
   }
   
   @scala.inline
-  implicit class AuditOps[Self <: Audit] (val x: Self) extends AnyVal {
+  implicit class AuditMutableBuilder[Self <: Audit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudit(value: Boolean): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevel(value: fatal | error | warn | info | debug | trace | off): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAudit(value: Boolean): Self = this.set("audit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLevel(value: fatal | error | warn | info | debug | trace | off): Self = this.set("level", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMetrics(value: Boolean): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    def setMetrics(value: Boolean): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.wxJsSdkDt.wx
 
 import typings.wxJsSdkDt.anon.LocalIds
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseImageConfig extends js.Object {
+trait ChooseImageConfig extends StObject {
   
   /**
     * 照片数，默认9
@@ -37,45 +38,33 @@ object ChooseImageConfig {
   }
   
   @scala.inline
-  implicit class ChooseImageConfigOps[Self <: ChooseImageConfig] (val x: Self) extends AnyVal {
+  implicit class ChooseImageConfigMutableBuilder[Self <: ChooseImageConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSizeType(value: js.Array[String]): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuccess(value: LocalIds => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setSizeTypeVarargs(value: String*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
     
     @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
+    def setSourceType(value: js.Array[String]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSizeTypeVarargs(value: String*): Self = this.set("sizeType", js.Array(value :_*))
+    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
     @scala.inline
-    def setSizeType(value: js.Array[String]): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    def setSourceTypeVarargs(value: String*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
     
     @scala.inline
-    def deleteSizeType: Self = this.set("sizeType", js.undefined)
-    
-    @scala.inline
-    def setSourceTypeVarargs(value: String*): Self = this.set("sourceType", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceType(value: js.Array[String]): Self = this.set("sourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    def setSuccess(value: LocalIds => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

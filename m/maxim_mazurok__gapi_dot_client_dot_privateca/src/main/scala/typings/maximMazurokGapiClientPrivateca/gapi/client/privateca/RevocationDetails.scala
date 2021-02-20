@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RevocationDetails extends js.Object {
+trait RevocationDetails extends StObject {
   
   /** Indicates why a Certificate was revoked. */
   var revocationState: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object RevocationDetails {
   }
   
   @scala.inline
-  implicit class RevocationDetailsOps[Self <: RevocationDetails] (val x: Self) extends AnyVal {
+  implicit class RevocationDetailsMutableBuilder[Self <: RevocationDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRevocationState(value: String): Self = StObject.set(x, "revocationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRevocationStateUndefined: Self = StObject.set(x, "revocationState", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRevocationTime(value: String): Self = StObject.set(x, "revocationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevocationState(value: String): Self = this.set("revocationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevocationState: Self = this.set("revocationState", js.undefined)
-    
-    @scala.inline
-    def setRevocationTime(value: String): Self = this.set("revocationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevocationTime: Self = this.set("revocationTime", js.undefined)
+    def setRevocationTimeUndefined: Self = StObject.set(x, "revocationTime", js.undefined)
   }
 }

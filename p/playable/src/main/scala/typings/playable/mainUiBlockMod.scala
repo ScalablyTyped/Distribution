@@ -1,16 +1,48 @@
 package typings.playable
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.playable.anon.Screen
 import typings.playable.mainUiBlockTypesMod.IMainUIBlock
 import typings.playable.mainUiBlockTypesMod.IMainUIBlockViewConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", JSImport.Namespace)
-@js.native
-object mainUiBlockMod extends js.Object {
+object mainUiBlockMod {
+  
+  @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", JSImport.Default)
+  @js.native
+  class default protected () extends MainUIBlock {
+    def this(dependencies: Screen) = this()
+  }
+  object default {
+    
+    @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* was `typeof MainUIBlockView` */
+    @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", "default.View")
+    @js.native
+    class View protected ()
+      extends typings.playable.mainUiBlockViewMod.default {
+      def this(config: IMainUIBlockViewConfig) = this()
+    }
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", "default.dependencies")
+    @js.native
+    def dependencies: js.Array[String] = js.native
+    @scala.inline
+    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", "default.moduleName")
+    @js.native
+    def moduleName: String = js.native
+    @scala.inline
+    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait MainUIBlock extends IMainUIBlock {
@@ -69,19 +101,9 @@ object mainUiBlockMod extends js.Object {
     
     var view: typings.playable.mainUiBlockViewMod.default = js.native
   }
-  
-  @js.native
-  class default protected () extends MainUIBlock {
-    def this(dependencies: Screen) = this()
-  }
-  /* static members */
-  @js.native
-  object default extends js.Object {
+  object MainUIBlock {
     
-    var View: Instantiable1[/* config */ IMainUIBlockViewConfig, typings.playable.mainUiBlockViewMod.default] = js.native
-    
-    var dependencies: js.Array[String] = js.native
-    
-    var moduleName: String = js.native
+    /* was `typeof MainUIBlockView` */
+    type View = typings.playable.mainUiBlockViewMod.default
   }
 }

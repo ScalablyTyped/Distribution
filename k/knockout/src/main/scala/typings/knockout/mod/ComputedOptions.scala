@@ -1,12 +1,13 @@
 package typings.knockout.mod
 
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComputedOptions[T, TTarget] extends js.Object {
+trait ComputedOptions[T, TTarget] extends StObject {
   
   var deferEvaluation: js.UndefOr[Boolean] = js.native
   
@@ -31,60 +32,48 @@ object ComputedOptions {
   }
   
   @scala.inline
-  implicit class ComputedOptionsOps[Self <: ComputedOptions[_, _], T, TTarget] (val x: Self with (ComputedOptions[T, TTarget])) extends AnyVal {
+  implicit class ComputedOptionsMutableBuilder[Self <: ComputedOptions[_, _], T, TTarget] (val x: Self with (ComputedOptions[T, TTarget])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeferEvaluation(value: Boolean): Self = StObject.set(x, "deferEvaluation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeferEvaluationUndefined: Self = StObject.set(x, "deferEvaluation", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisposeWhen(value: () => Boolean): Self = StObject.set(x, "disposeWhen", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeferEvaluation(value: Boolean): Self = this.set("deferEvaluation", value.asInstanceOf[js.Any])
+    def setDisposeWhenNodeIsRemoved(value: Node): Self = StObject.set(x, "disposeWhenNodeIsRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDeferEvaluation: Self = this.set("deferEvaluation", js.undefined)
+    def setDisposeWhenNodeIsRemovedUndefined: Self = StObject.set(x, "disposeWhenNodeIsRemoved", js.undefined)
     
     @scala.inline
-    def setDisposeWhen(value: () => Boolean): Self = this.set("disposeWhen", js.Any.fromFunction0(value))
+    def setDisposeWhenUndefined: Self = StObject.set(x, "disposeWhen", js.undefined)
     
     @scala.inline
-    def deleteDisposeWhen: Self = this.set("disposeWhen", js.undefined)
+    def setOwner(value: TTarget): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisposeWhenNodeIsRemoved(value: Node): Self = this.set("disposeWhenNodeIsRemoved", value.asInstanceOf[js.Any])
+    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def deleteDisposeWhenNodeIsRemoved: Self = this.set("disposeWhenNodeIsRemoved", js.undefined)
+    def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: TTarget): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
     
     @scala.inline
-    def deleteOwner: Self = this.set("owner", js.undefined)
+    def setRead(value: ComputedReadFunction[T, TTarget]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPure(value: Boolean): Self = this.set("pure", value.asInstanceOf[js.Any])
+    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
     @scala.inline
-    def deletePure: Self = this.set("pure", js.undefined)
+    def setWrite(value: ComputedWriteFunction[T, TTarget]): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: ComputedReadFunction[T, TTarget]): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRead: Self = this.set("read", js.undefined)
-    
-    @scala.inline
-    def setWrite(value: ComputedWriteFunction[T, TTarget]): Self = this.set("write", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWrite: Self = this.set("write", js.undefined)
+    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

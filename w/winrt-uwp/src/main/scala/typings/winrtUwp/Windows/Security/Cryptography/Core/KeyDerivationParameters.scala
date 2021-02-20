@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Core
 
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents parameters used when deriving a key. */
 @js.native
-trait KeyDerivationParameters extends js.Object {
+trait KeyDerivationParameters extends StObject {
   
   /** Gets or sets the Capi1KdfTargetAlgorithm . */
   var capi1KdfTargetAlgorithm: Capi1KdfTargetAlgorithm = js.native
@@ -31,27 +32,15 @@ object KeyDerivationParameters {
   }
   
   @scala.inline
-  implicit class KeyDerivationParametersOps[Self <: KeyDerivationParameters] (val x: Self) extends AnyVal {
+  implicit class KeyDerivationParametersMutableBuilder[Self <: KeyDerivationParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapi1KdfTargetAlgorithm(value: Capi1KdfTargetAlgorithm): Self = StObject.set(x, "capi1KdfTargetAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCapi1KdfTargetAlgorithm(value: Capi1KdfTargetAlgorithm): Self = this.set("capi1KdfTargetAlgorithm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIterationCount(value: Double): Self = this.set("iterationCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKdfGenericBinary(value: IBuffer): Self = this.set("kdfGenericBinary", value.asInstanceOf[js.Any])
+    def setKdfGenericBinary(value: IBuffer): Self = StObject.set(x, "kdfGenericBinary", value.asInstanceOf[js.Any])
   }
 }

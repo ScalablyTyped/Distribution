@@ -7,12 +7,13 @@ import typings.maximMazurokGapiClientBooks.anon.LicenseTypes
 import typings.maximMazurokGapiClientBooks.anon.Locale
 import typings.maximMazurokGapiClientBooks.anon.Uploadprotocol
 import typings.maximMazurokGapiClientBooks.anon.Xgafv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MyconfigResource extends js.Object {
+trait MyconfigResource extends StObject {
   
   /** Gets the current settings for the user. */
   def getUserSettings(): Request[Usersettings] = js.native

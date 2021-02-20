@@ -1,12 +1,13 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "AABB")
 @js.native
-class AABB () extends js.Object {
+class AABB () extends StObject {
   def this(options: AABBOptions) = this()
   
   def containsPoint(point: js.Tuple2[Double, Double]): Boolean = js.native

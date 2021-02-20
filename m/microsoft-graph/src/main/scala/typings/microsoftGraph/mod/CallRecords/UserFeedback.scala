@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod.CallRecords
 
 import typings.microsoftGraph.mod.NullableOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserFeedback extends js.Object {
+trait UserFeedback extends StObject {
   
   /**
     * The rating provided by the user of this endpoint about the quality of this Session. Possible values are: notRated, bad,
@@ -32,42 +33,30 @@ object UserFeedback {
   }
   
   @scala.inline
-  implicit class UserFeedbackOps[Self <: UserFeedback] (val x: Self) extends AnyVal {
+  implicit class UserFeedbackMutableBuilder[Self <: UserFeedback] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRating(value: UserFeedbackRating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: NullableOption[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRating(value: UserFeedbackRating): Self = this.set("rating", value.asInstanceOf[js.Any])
+    def setTextNull: Self = StObject.set(x, "text", null)
     
     @scala.inline
-    def deleteRating: Self = this.set("rating", js.undefined)
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def setText(value: NullableOption[String]): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTokens(value: NullableOption[FeedbackTokenSet]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTokensNull: Self = StObject.set(x, "tokens", null)
     
     @scala.inline
-    def setTextNull: Self = this.set("text", null)
-    
-    @scala.inline
-    def setTokens(value: NullableOption[FeedbackTokenSet]): Self = this.set("tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokens: Self = this.set("tokens", js.undefined)
-    
-    @scala.inline
-    def setTokensNull: Self = this.set("tokens", null)
+    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
   }
 }

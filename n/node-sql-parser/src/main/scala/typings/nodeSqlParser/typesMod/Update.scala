@@ -1,6 +1,7 @@
 package typings.nodeSqlParser.typesMod
 
 import typings.nodeSqlParser.nodeSqlParserStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,45 +29,33 @@ object Update {
   }
   
   @scala.inline
-  implicit class UpdateOps[Self <: Update] (val x: Self) extends AnyVal {
+  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDbNull: Self = StObject.set(x, "db", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSet(value: js.Array[SetList]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetVarargs(value: SetList*): Self = this.set("set", js.Array(value :_*))
+    def setSetVarargs(value: SetList*): Self = StObject.set(x, "set", js.Array(value :_*))
     
     @scala.inline
-    def setSet(value: js.Array[SetList]): Self = this.set("set", value.asInstanceOf[js.Any])
+    def setTable(value: js.Array[From | Dual]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: update): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setTableNull: Self = StObject.set(x, "table", null)
     
     @scala.inline
-    def setWhere(value: js.Any): Self = this.set("where", value.asInstanceOf[js.Any])
+    def setTableVarargs(value: (From | Dual)*): Self = StObject.set(x, "table", js.Array(value :_*))
     
     @scala.inline
-    def setDb(value: String): Self = this.set("db", value.asInstanceOf[js.Any])
+    def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDbNull: Self = this.set("db", null)
-    
-    @scala.inline
-    def setTableVarargs(value: (From | Dual)*): Self = this.set("table", js.Array(value :_*))
-    
-    @scala.inline
-    def setTable(value: js.Array[From | Dual]): Self = this.set("table", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTableNull: Self = this.set("table", null)
+    def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

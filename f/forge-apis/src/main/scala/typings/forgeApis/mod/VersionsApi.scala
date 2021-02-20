@@ -2,13 +2,14 @@ package typings.forgeApis.mod
 
 import typings.forgeApis.anon.FilterDirection
 import typings.forgeApis.anon.FilterId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "VersionsApi")
 @js.native
-class VersionsApi () extends js.Object {
+class VersionsApi () extends StObject {
   
   /**
     * Returns the version with the given `version_id`.

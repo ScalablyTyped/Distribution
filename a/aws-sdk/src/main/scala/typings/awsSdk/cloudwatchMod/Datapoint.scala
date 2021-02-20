@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Datapoint extends js.Object {
+trait Datapoint extends StObject {
   
   /**
     * The average of the metric values that correspond to the data point.
@@ -56,66 +57,54 @@ object Datapoint {
   }
   
   @scala.inline
-  implicit class DatapointOps[Self <: Datapoint] (val x: Self) extends AnyVal {
+  implicit class DatapointMutableBuilder[Self <: Datapoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAverage(value: DatapointValue): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAverageUndefined: Self = StObject.set(x, "Average", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExtendedStatistics(value: DatapointValueMap): Self = StObject.set(x, "ExtendedStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAverage(value: DatapointValue): Self = this.set("Average", value.asInstanceOf[js.Any])
+    def setExtendedStatisticsUndefined: Self = StObject.set(x, "ExtendedStatistics", js.undefined)
     
     @scala.inline
-    def deleteAverage: Self = this.set("Average", js.undefined)
+    def setMaximum(value: DatapointValue): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendedStatistics(value: DatapointValueMap): Self = this.set("ExtendedStatistics", value.asInstanceOf[js.Any])
+    def setMaximumUndefined: Self = StObject.set(x, "Maximum", js.undefined)
     
     @scala.inline
-    def deleteExtendedStatistics: Self = this.set("ExtendedStatistics", js.undefined)
+    def setMinimum(value: DatapointValue): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximum(value: DatapointValue): Self = this.set("Maximum", value.asInstanceOf[js.Any])
+    def setMinimumUndefined: Self = StObject.set(x, "Minimum", js.undefined)
     
     @scala.inline
-    def deleteMaximum: Self = this.set("Maximum", js.undefined)
+    def setSampleCount(value: DatapointValue): Self = StObject.set(x, "SampleCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimum(value: DatapointValue): Self = this.set("Minimum", value.asInstanceOf[js.Any])
+    def setSampleCountUndefined: Self = StObject.set(x, "SampleCount", js.undefined)
     
     @scala.inline
-    def deleteMinimum: Self = this.set("Minimum", js.undefined)
+    def setSum(value: DatapointValue): Self = StObject.set(x, "Sum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleCount(value: DatapointValue): Self = this.set("SampleCount", value.asInstanceOf[js.Any])
+    def setSumUndefined: Self = StObject.set(x, "Sum", js.undefined)
     
     @scala.inline
-    def deleteSampleCount: Self = this.set("SampleCount", js.undefined)
+    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSum(value: DatapointValue): Self = this.set("Sum", value.asInstanceOf[js.Any])
+    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
     @scala.inline
-    def deleteSum: Self = this.set("Sum", js.undefined)
+    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
-    
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("Unit", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

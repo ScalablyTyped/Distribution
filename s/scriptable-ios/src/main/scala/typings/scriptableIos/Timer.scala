@@ -1,5 +1,6 @@
 package typings.scriptableIos
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/timer/#-new-timer
   */
 @js.native
-trait Timer extends js.Object {
+trait Timer extends StObject {
   
   /**
     * _Stops the timer from firing._
@@ -60,30 +61,18 @@ object Timer {
   }
   
   @scala.inline
-  implicit class TimerOps[Self <: Timer] (val x: Self) extends AnyVal {
+  implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepeats(value: Boolean): Self = StObject.set(x, "repeats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSchedule(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setInvalidate(value: () => Unit): Self = this.set("invalidate", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRepeats(value: Boolean): Self = this.set("repeats", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSchedule(value: js.Function0[Unit] => Unit): Self = this.set("schedule", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTimeInterval(value: Double): Self = this.set("timeInterval", value.asInstanceOf[js.Any])
+    def setTimeInterval(value: Double): Self = StObject.set(x, "timeInterval", value.asInstanceOf[js.Any])
   }
 }

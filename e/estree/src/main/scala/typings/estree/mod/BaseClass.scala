@@ -1,5 +1,6 @@
 package typings.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +22,18 @@ object BaseClass {
   }
   
   @scala.inline
-  implicit class BaseClassOps[Self <: BaseClass] (val x: Self) extends AnyVal {
+  implicit class BaseClassMutableBuilder[Self <: BaseClass] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBody(value: ClassBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSuperClass(value: Expression): Self = StObject.set(x, "superClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSuperClassNull: Self = StObject.set(x, "superClass", null)
     
     @scala.inline
-    def setBody(value: ClassBody): Self = this.set("body", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSuperClass(value: Expression): Self = this.set("superClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuperClass: Self = this.set("superClass", js.undefined)
-    
-    @scala.inline
-    def setSuperClassNull: Self = this.set("superClass", null)
+    def setSuperClassUndefined: Self = StObject.set(x, "superClass", js.undefined)
   }
 }

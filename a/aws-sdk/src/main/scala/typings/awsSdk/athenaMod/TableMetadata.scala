@@ -1,11 +1,12 @@
 package typings.awsSdk.athenaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TableMetadata extends js.Object {
+trait TableMetadata extends StObject {
   
   /**
     * A list of the columns in the table.
@@ -51,63 +52,51 @@ object TableMetadata {
   }
   
   @scala.inline
-  implicit class TableMetadataOps[Self <: TableMetadata] (val x: Self) extends AnyVal {
+  implicit class TableMetadataMutableBuilder[Self <: TableMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnsUndefined: Self = StObject.set(x, "Columns", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnsVarargs(value: Column*): Self = this.set("Columns", js.Array(value :_*))
+    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
     @scala.inline
-    def setColumns(value: ColumnList): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColumns: Self = this.set("Columns", js.undefined)
+    def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
     
     @scala.inline
-    def setCreateTime(value: Timestamp): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAccessTime(value: Timestamp): Self = this.set("LastAccessTime", value.asInstanceOf[js.Any])
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def deleteLastAccessTime: Self = this.set("LastAccessTime", js.undefined)
+    def setPartitionKeys(value: ColumnList): Self = StObject.set(x, "PartitionKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
     
     @scala.inline
-    def setPartitionKeysVarargs(value: Column*): Self = this.set("PartitionKeys", js.Array(value :_*))
+    def setTableType(value: TableTypeString): Self = StObject.set(x, "TableType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionKeys(value: ColumnList): Self = this.set("PartitionKeys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionKeys: Self = this.set("PartitionKeys", js.undefined)
-    
-    @scala.inline
-    def setTableType(value: TableTypeString): Self = this.set("TableType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableType: Self = this.set("TableType", js.undefined)
+    def setTableTypeUndefined: Self = StObject.set(x, "TableType", js.undefined)
   }
 }

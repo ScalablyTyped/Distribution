@@ -1,5 +1,6 @@
 package typings.googleapis.webmastersV3Mod.webmastersV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * platform.
   */
 @js.native
-trait SchemaUrlCrawlErrorsCountsQueryResponse extends js.Object {
+trait SchemaUrlCrawlErrorsCountsQueryResponse extends StObject {
   
   /**
     * The time series of the number of URL crawl errors per error category and
@@ -26,27 +27,15 @@ object SchemaUrlCrawlErrorsCountsQueryResponse {
   }
   
   @scala.inline
-  implicit class SchemaUrlCrawlErrorsCountsQueryResponseOps[Self <: SchemaUrlCrawlErrorsCountsQueryResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaUrlCrawlErrorsCountsQueryResponseMutableBuilder[Self <: SchemaUrlCrawlErrorsCountsQueryResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCountPerTypes(value: js.Array[SchemaUrlCrawlErrorCountsPerType]): Self = StObject.set(x, "countPerTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCountPerTypesUndefined: Self = StObject.set(x, "countPerTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCountPerTypesVarargs(value: SchemaUrlCrawlErrorCountsPerType*): Self = this.set("countPerTypes", js.Array(value :_*))
-    
-    @scala.inline
-    def setCountPerTypes(value: js.Array[SchemaUrlCrawlErrorCountsPerType]): Self = this.set("countPerTypes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCountPerTypes: Self = this.set("countPerTypes", js.undefined)
+    def setCountPerTypesVarargs(value: SchemaUrlCrawlErrorCountsPerType*): Self = StObject.set(x, "countPerTypes", js.Array(value :_*))
   }
 }

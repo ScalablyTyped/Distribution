@@ -1,6 +1,7 @@
 package typings.screeps
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * RawMemory object allows to implement your own memory stringifier instead of built-in serializer based on JSON.stringify.
   */
 @js.native
-trait RawMemory extends js.Object {
+trait RawMemory extends StObject {
   
   /**
     * An object with a memory segment of another player available on this tick. Use `setActiveForeignSegment` to fetch segments on the next tick.

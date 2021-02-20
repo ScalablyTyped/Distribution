@@ -7,13 +7,14 @@ import typings.react.mod.ReactNode
 import typings.reactDates.mod.CalendarDayPhrases
 import typings.reactDates.mod.ModifiersShape
 import typings.std.HTMLTableDataCellElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-dates.react-dates.CalendarDayShape, 'daySize' | 'onDayClick' | 'onDayMouseEnter' | 'onDayMouseLeave' | 'renderDayContents' | 'isFocused' | 'phrases'> */
 @js.native
-trait PickCalendarDayShapedaySi extends js.Object {
+trait PickCalendarDayShapedaySi extends StObject {
   
   var daySize: js.UndefOr[Double] = js.native
   
@@ -58,69 +59,57 @@ object PickCalendarDayShapedaySi {
   }
   
   @scala.inline
-  implicit class PickCalendarDayShapedaySiOps[Self <: PickCalendarDayShapedaySi] (val x: Self) extends AnyVal {
+  implicit class PickCalendarDayShapedaySiMutableBuilder[Self <: PickCalendarDayShapedaySi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDaySize(value: Double): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDaySizeUndefined: Self = StObject.set(x, "daySize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaySize(value: Double): Self = this.set("daySize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDaySize: Self = this.set("daySize", js.undefined)
-    
-    @scala.inline
-    def setIsFocused(value: Boolean): Self = this.set("isFocused", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsFocused: Self = this.set("isFocused", js.undefined)
+    def setIsFocusedUndefined: Self = StObject.set(x, "isFocused", js.undefined)
     
     @scala.inline
     def setOnDayClick(
       value: (/* day */ Moment, /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent]) => Unit
-    ): Self = this.set("onDayClick", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onDayClick", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDayClick: Self = this.set("onDayClick", js.undefined)
+    def setOnDayClickUndefined: Self = StObject.set(x, "onDayClick", js.undefined)
     
     @scala.inline
     def setOnDayMouseEnter(
       value: (/* day */ Moment, /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent]) => Unit
-    ): Self = this.set("onDayMouseEnter", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onDayMouseEnter", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDayMouseEnter: Self = this.set("onDayMouseEnter", js.undefined)
+    def setOnDayMouseEnterUndefined: Self = StObject.set(x, "onDayMouseEnter", js.undefined)
     
     @scala.inline
     def setOnDayMouseLeave(
       value: (/* day */ Moment, /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent]) => Unit
-    ): Self = this.set("onDayMouseLeave", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "onDayMouseLeave", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteOnDayMouseLeave: Self = this.set("onDayMouseLeave", js.undefined)
+    def setOnDayMouseLeaveUndefined: Self = StObject.set(x, "onDayMouseLeave", js.undefined)
     
     @scala.inline
-    def setPhrases(value: CalendarDayPhrases): Self = this.set("phrases", value.asInstanceOf[js.Any])
+    def setPhrases(value: CalendarDayPhrases): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePhrases: Self = this.set("phrases", js.undefined)
+    def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
     
     @scala.inline
-    def setRenderDayContents(value: (/* day */ Moment, /* modifiers */ ModifiersShape) => ReactNode): Self = this.set("renderDayContents", js.Any.fromFunction2(value))
+    def setRenderDayContents(value: (/* day */ Moment, /* modifiers */ ModifiersShape) => ReactNode): Self = StObject.set(x, "renderDayContents", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteRenderDayContents: Self = this.set("renderDayContents", js.undefined)
+    def setRenderDayContentsNull: Self = StObject.set(x, "renderDayContents", null)
     
     @scala.inline
-    def setRenderDayContentsNull: Self = this.set("renderDayContents", null)
+    def setRenderDayContentsUndefined: Self = StObject.set(x, "renderDayContents", js.undefined)
   }
 }

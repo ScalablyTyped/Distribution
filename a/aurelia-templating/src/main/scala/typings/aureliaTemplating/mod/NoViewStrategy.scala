@@ -1,5 +1,6 @@
 package typings.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param dependencies A list of view resource dependencies of this view.
   * @param dependencyBaseUrl The base url for the view dependencies.
   */
-class NoViewStrategy () extends js.Object {
+class NoViewStrategy () extends StObject {
   def this(dependencies: js.Array[String | js.Function | js.Object]) = this()
   def this(dependencies: js.UndefOr[scala.Nothing], dependencyBaseUrl: String) = this()
   def this(dependencies: js.Array[String | js.Function | js.Object], dependencyBaseUrl: String) = this()

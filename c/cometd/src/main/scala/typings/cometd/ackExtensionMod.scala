@@ -4,13 +4,16 @@ import typings.cometd.mod.CometD
 import typings.cometd.mod.Extension
 import typings.cometd.mod.Listener
 import typings.cometd.mod.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cometd/AckExtension", JSImport.Namespace)
-@js.native
-object ackExtensionMod extends js.Object {
+object ackExtensionMod {
+  
+  @JSImport("cometd/AckExtension", JSImport.Default)
+  @js.native
+  class default () extends AckExtension
   
   @js.native
   trait AckExtension extends Extension {
@@ -31,7 +34,4 @@ object ackExtensionMod extends js.Object {
     @JSName("unregistered")
     def unregistered_MAckExtension(): Unit = js.native
   }
-  
-  @js.native
-  class default () extends AckExtension
 }

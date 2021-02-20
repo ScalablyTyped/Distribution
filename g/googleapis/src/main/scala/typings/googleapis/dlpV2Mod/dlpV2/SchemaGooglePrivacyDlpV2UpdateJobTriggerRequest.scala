@@ -1,5 +1,6 @@
 package typings.googleapis.dlpV2Mod.dlpV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for UpdateJobTrigger.
   */
 @js.native
-trait SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest extends js.Object {
+trait SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest extends StObject {
   
   /**
     * New JobTrigger value.
@@ -29,30 +30,18 @@ object SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest {
   }
   
   @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2UpdateJobTriggerRequestOps[Self <: SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGooglePrivacyDlpV2UpdateJobTriggerRequestMutableBuilder[Self <: SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = this.set("jobTrigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJobTrigger: Self = this.set("jobTrigger", js.undefined)
-    
-    @scala.inline
-    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

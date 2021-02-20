@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TargetLocation extends js.Object {
+trait TargetLocation extends StObject {
   
   /**
     * The AWS accounts targeted by the current Automation execution.
@@ -41,54 +42,42 @@ object TargetLocation {
   }
   
   @scala.inline
-  implicit class TargetLocationOps[Self <: TargetLocation] (val x: Self) extends AnyVal {
+  implicit class TargetLocationMutableBuilder[Self <: TargetLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccounts(value: Accounts): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
     @scala.inline
-    def setAccountsVarargs(value: Account*): Self = this.set("Accounts", js.Array(value :_*))
+    def setExecutionRoleName(value: ExecutionRoleName): Self = StObject.set(x, "ExecutionRoleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounts(value: Accounts): Self = this.set("Accounts", value.asInstanceOf[js.Any])
+    def setExecutionRoleNameUndefined: Self = StObject.set(x, "ExecutionRoleName", js.undefined)
     
     @scala.inline
-    def deleteAccounts: Self = this.set("Accounts", js.undefined)
+    def setRegions(value: Regions): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExecutionRoleName(value: ExecutionRoleName): Self = this.set("ExecutionRoleName", value.asInstanceOf[js.Any])
+    def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
     
     @scala.inline
-    def deleteExecutionRoleName: Self = this.set("ExecutionRoleName", js.undefined)
+    def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value :_*))
     
     @scala.inline
-    def setRegionsVarargs(value: Region*): Self = this.set("Regions", js.Array(value :_*))
+    def setTargetLocationMaxConcurrency(value: MaxConcurrency): Self = StObject.set(x, "TargetLocationMaxConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegions(value: Regions): Self = this.set("Regions", value.asInstanceOf[js.Any])
+    def setTargetLocationMaxConcurrencyUndefined: Self = StObject.set(x, "TargetLocationMaxConcurrency", js.undefined)
     
     @scala.inline
-    def deleteRegions: Self = this.set("Regions", js.undefined)
+    def setTargetLocationMaxErrors(value: MaxErrors): Self = StObject.set(x, "TargetLocationMaxErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetLocationMaxConcurrency(value: MaxConcurrency): Self = this.set("TargetLocationMaxConcurrency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLocationMaxConcurrency: Self = this.set("TargetLocationMaxConcurrency", js.undefined)
-    
-    @scala.inline
-    def setTargetLocationMaxErrors(value: MaxErrors): Self = this.set("TargetLocationMaxErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetLocationMaxErrors: Self = this.set("TargetLocationMaxErrors", js.undefined)
+    def setTargetLocationMaxErrorsUndefined: Self = StObject.set(x, "TargetLocationMaxErrors", js.undefined)
   }
 }

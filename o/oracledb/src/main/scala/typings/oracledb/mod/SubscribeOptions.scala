@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Used with connection.subscribe() to control a subscription.
   */
 @js.native
-trait SubscribeOptions extends js.Object {
+trait SubscribeOptions extends StObject {
   
   /** An array (bind by position) or object (bind by name) containing the bind values to use in the sql property. */
   var binds: js.UndefOr[BindParameters] = js.native
@@ -88,93 +89,81 @@ object SubscribeOptions {
   }
   
   @scala.inline
-  implicit class SubscribeOptionsOps[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+  implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinds(value: BindParameters): Self = StObject.set(x, "binds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindsUndefined: Self = StObject.set(x, "binds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindsVarargs(value: (js.Any | BindParameter)*): Self = StObject.set(x, "binds", js.Array(value :_*))
     
     @scala.inline
-    def setCallback(value: SubscriptionMessage => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    def setCallback(value: SubscriptionMessage => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
+    def setClientInitiated(value: Boolean): Self = StObject.set(x, "clientInitiated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindsVarargs(value: (js.Any | BindParameter)*): Self = this.set("binds", js.Array(value :_*))
+    def setClientInitiatedUndefined: Self = StObject.set(x, "clientInitiated", js.undefined)
     
     @scala.inline
-    def setBinds(value: BindParameters): Self = this.set("binds", value.asInstanceOf[js.Any])
+    def setGroupingClass(value: Double): Self = StObject.set(x, "groupingClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinds: Self = this.set("binds", js.undefined)
+    def setGroupingClassUndefined: Self = StObject.set(x, "groupingClass", js.undefined)
     
     @scala.inline
-    def setClientInitiated(value: Boolean): Self = this.set("clientInitiated", value.asInstanceOf[js.Any])
+    def setGroupingType(value: Double): Self = StObject.set(x, "groupingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientInitiated: Self = this.set("clientInitiated", js.undefined)
+    def setGroupingTypeUndefined: Self = StObject.set(x, "groupingType", js.undefined)
     
     @scala.inline
-    def setGroupingClass(value: Double): Self = this.set("groupingClass", value.asInstanceOf[js.Any])
+    def setGroupingValue(value: Double): Self = StObject.set(x, "groupingValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupingClass: Self = this.set("groupingClass", js.undefined)
+    def setGroupingValueUndefined: Self = StObject.set(x, "groupingValue", js.undefined)
     
     @scala.inline
-    def setGroupingType(value: Double): Self = this.set("groupingType", value.asInstanceOf[js.Any])
+    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupingType: Self = this.set("groupingType", js.undefined)
+    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     @scala.inline
-    def setGroupingValue(value: Double): Self = this.set("groupingValue", value.asInstanceOf[js.Any])
+    def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGroupingValue: Self = this.set("groupingValue", js.undefined)
+    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
     @scala.inline
-    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    def setOperations(value: Double): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
     @scala.inline
-    def setNamespace(value: Double): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     @scala.inline
-    def setOperations(value: Double): Self = this.set("operations", value.asInstanceOf[js.Any])
+    def setQos(value: Double): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperations: Self = this.set("operations", js.undefined)
+    def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
     
     @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQos(value: Double): Self = this.set("qos", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQos: Self = this.set("qos", js.undefined)
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

@@ -1,15 +1,15 @@
 package typings.reactDndHtml5Backend
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd-html5-backend/lib/MonotonicInterpolant", JSImport.Namespace)
-@js.native
-object monotonicInterpolantMod extends js.Object {
+object monotonicInterpolantMod {
   
+  @JSImport("react-dnd-html5-backend/lib/MonotonicInterpolant", "MonotonicInterpolant")
   @js.native
-  class MonotonicInterpolant protected () extends js.Object {
+  class MonotonicInterpolant protected () extends StObject {
     def this(xs: js.Array[Double], ys: js.Array[Double]) = this()
     
     var c1s: js.Any = js.native

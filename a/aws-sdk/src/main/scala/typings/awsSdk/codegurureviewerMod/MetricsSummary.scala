@@ -1,11 +1,12 @@
 package typings.awsSdk.codegurureviewerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricsSummary extends js.Object {
+trait MetricsSummary extends StObject {
   
   /**
     *  Total number of recommendations found in the code review. 
@@ -26,30 +27,18 @@ object MetricsSummary {
   }
   
   @scala.inline
-  implicit class MetricsSummaryOps[Self <: MetricsSummary] (val x: Self) extends AnyVal {
+  implicit class MetricsSummaryMutableBuilder[Self <: MetricsSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFindingsCount(value: FindingsCount): Self = StObject.set(x, "FindingsCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFindingsCountUndefined: Self = StObject.set(x, "FindingsCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeteredLinesOfCodeCount(value: MeteredLinesOfCodeCount): Self = StObject.set(x, "MeteredLinesOfCodeCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFindingsCount(value: FindingsCount): Self = this.set("FindingsCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFindingsCount: Self = this.set("FindingsCount", js.undefined)
-    
-    @scala.inline
-    def setMeteredLinesOfCodeCount(value: MeteredLinesOfCodeCount): Self = this.set("MeteredLinesOfCodeCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeteredLinesOfCodeCount: Self = this.set("MeteredLinesOfCodeCount", js.undefined)
+    def setMeteredLinesOfCodeCountUndefined: Self = StObject.set(x, "MeteredLinesOfCodeCount", js.undefined)
   }
 }

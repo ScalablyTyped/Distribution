@@ -1,11 +1,12 @@
 package typings.awsSdk.braketMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetQuantumTaskResponse extends js.Object {
+trait GetQuantumTaskResponse extends StObject {
   
   /**
     * The time at which the task was created.
@@ -80,60 +81,48 @@ object GetQuantumTaskResponse {
   }
   
   @scala.inline
-  implicit class GetQuantumTaskResponseOps[Self <: GetQuantumTaskResponse] (val x: Self) extends AnyVal {
+  implicit class GetQuantumTaskResponseMutableBuilder[Self <: GetQuantumTaskResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceParameters(value: JsonValue): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedAt(value: SyntheticTimestampDateTime): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    def setEndedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceArn(value: DeviceArn): Self = this.set("deviceArn", value.asInstanceOf[js.Any])
+    def setEndedAtUndefined: Self = StObject.set(x, "endedAt", js.undefined)
     
     @scala.inline
-    def setDeviceParameters(value: JsonValue): Self = this.set("deviceParameters", value.asInstanceOf[js.Any])
+    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputS3Bucket(value: String): Self = this.set("outputS3Bucket", value.asInstanceOf[js.Any])
+    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
     @scala.inline
-    def setOutputS3Directory(value: String): Self = this.set("outputS3Directory", value.asInstanceOf[js.Any])
+    def setOutputS3Bucket(value: String): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuantumTaskArn(value: QuantumTaskArn): Self = this.set("quantumTaskArn", value.asInstanceOf[js.Any])
+    def setOutputS3Directory(value: String): Self = StObject.set(x, "outputS3Directory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShots(value: Long): Self = this.set("shots", value.asInstanceOf[js.Any])
+    def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: QuantumTaskStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setShots(value: Long): Self = StObject.set(x, "shots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndedAt(value: SyntheticTimestampDateTime): Self = this.set("endedAt", value.asInstanceOf[js.Any])
+    def setStatus(value: QuantumTaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndedAt: Self = this.set("endedAt", js.undefined)
+    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
-    
-    @scala.inline
-    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

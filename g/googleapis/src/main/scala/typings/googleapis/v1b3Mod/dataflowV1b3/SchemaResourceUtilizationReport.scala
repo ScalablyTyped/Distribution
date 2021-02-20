@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * go/df-resource-signals.
   */
 @js.native
-trait SchemaResourceUtilizationReport extends js.Object {
+trait SchemaResourceUtilizationReport extends StObject {
   
   /**
     * CPU utilization samples.
@@ -26,27 +27,15 @@ object SchemaResourceUtilizationReport {
   }
   
   @scala.inline
-  implicit class SchemaResourceUtilizationReportOps[Self <: SchemaResourceUtilizationReport] (val x: Self) extends AnyVal {
+  implicit class SchemaResourceUtilizationReportMutableBuilder[Self <: SchemaResourceUtilizationReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCpuTime(value: js.Array[SchemaCPUTime]): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCpuTimeUndefined: Self = StObject.set(x, "cpuTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCpuTimeVarargs(value: SchemaCPUTime*): Self = this.set("cpuTime", js.Array(value :_*))
-    
-    @scala.inline
-    def setCpuTime(value: js.Array[SchemaCPUTime]): Self = this.set("cpuTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCpuTime: Self = this.set("cpuTime", js.undefined)
+    def setCpuTimeVarargs(value: SchemaCPUTime*): Self = StObject.set(x, "cpuTime", js.Array(value :_*))
   }
 }

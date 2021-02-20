@@ -1,11 +1,12 @@
 package typings.awsSdk.connectparticipantMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateParticipantConnectionResponse extends js.Object {
+trait CreateParticipantConnectionResponse extends StObject {
   
   /**
     * Creates the participant's connection credentials. The authentication token associated with the participant's connection.
@@ -26,30 +27,18 @@ object CreateParticipantConnectionResponse {
   }
   
   @scala.inline
-  implicit class CreateParticipantConnectionResponseOps[Self <: CreateParticipantConnectionResponse] (val x: Self) extends AnyVal {
+  implicit class CreateParticipantConnectionResponseMutableBuilder[Self <: CreateParticipantConnectionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectionCredentials(value: ConnectionCredentials): Self = StObject.set(x, "ConnectionCredentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionCredentialsUndefined: Self = StObject.set(x, "ConnectionCredentials", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWebsocket(value: Websocket): Self = StObject.set(x, "Websocket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionCredentials(value: ConnectionCredentials): Self = this.set("ConnectionCredentials", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConnectionCredentials: Self = this.set("ConnectionCredentials", js.undefined)
-    
-    @scala.inline
-    def setWebsocket(value: Websocket): Self = this.set("Websocket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebsocket: Self = this.set("Websocket", js.undefined)
+    def setWebsocketUndefined: Self = StObject.set(x, "Websocket", js.undefined)
   }
 }

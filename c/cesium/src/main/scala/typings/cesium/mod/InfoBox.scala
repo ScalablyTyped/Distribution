@@ -2,13 +2,14 @@ package typings.cesium.mod
 
 import typings.std.Element
 import typings.std.HTMLIFrameElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "InfoBox")
 @js.native
-class InfoBox protected () extends js.Object {
+class InfoBox protected () extends StObject {
   def this(container: String) = this()
   def this(container: Element) = this()
   

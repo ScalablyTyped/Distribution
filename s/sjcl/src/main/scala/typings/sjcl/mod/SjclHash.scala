@@ -1,12 +1,13 @@
 package typings.sjcl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
 @js.native
-trait SjclHash extends js.Object {
+trait SjclHash extends StObject {
   
   def reset(): SjclHash = js.native
   

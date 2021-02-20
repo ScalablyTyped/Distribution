@@ -1,12 +1,13 @@
 package typings.dc.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Units extends js.Object {
+trait Units extends StObject {
   
   var fp: FloatPointUnits = js.native
   

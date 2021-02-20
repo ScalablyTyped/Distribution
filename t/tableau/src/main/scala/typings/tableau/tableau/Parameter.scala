@@ -1,5 +1,6 @@
 package typings.tableau.tableau
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#endregion
 //#region Parameter Classes
 @js.native
-trait Parameter extends js.Object {
+trait Parameter extends StObject {
   
   /**
     * If the parameter is restricted to a list of allowable values, this property contains the array of those values.
@@ -62,45 +63,33 @@ object Parameter {
   }
   
   @scala.inline
-  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+  implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetAllowableValues(value: () => js.Array[DataValue]): Self = StObject.set(x, "getAllowableValues", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetAllowableValuesType(value: () => ParameterAllowableValuesType): Self = StObject.set(x, "getAllowableValuesType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCurrentValue(value: () => DataValue): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowableValues(value: () => js.Array[DataValue]): Self = this.set("getAllowableValues", js.Any.fromFunction0(value))
+    def setGetDataType(value: () => ParameterDataType): Self = StObject.set(x, "getDataType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAllowableValuesType(value: () => ParameterAllowableValuesType): Self = this.set("getAllowableValuesType", js.Any.fromFunction0(value))
+    def setGetDateStepPeriod(value: () => PeriodType): Self = StObject.set(x, "getDateStepPeriod", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCurrentValue(value: () => DataValue): Self = this.set("getCurrentValue", js.Any.fromFunction0(value))
+    def setGetMaxValue(value: () => DataValue): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDataType(value: () => ParameterDataType): Self = this.set("getDataType", js.Any.fromFunction0(value))
+    def setGetMinValue(value: () => DataValue): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDateStepPeriod(value: () => PeriodType): Self = this.set("getDateStepPeriod", js.Any.fromFunction0(value))
+    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMaxValue(value: () => DataValue): Self = this.set("getMaxValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetMinValue(value: () => DataValue): Self = this.set("getMinValue", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStepSize(value: () => Double): Self = this.set("getStepSize", js.Any.fromFunction0(value))
+    def setGetStepSize(value: () => Double): Self = StObject.set(x, "getStepSize", js.Any.fromFunction0(value))
   }
 }

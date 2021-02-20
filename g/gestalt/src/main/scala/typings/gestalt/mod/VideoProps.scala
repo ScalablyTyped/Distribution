@@ -22,12 +22,13 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLVideoElement
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VideoProps extends js.Object {
+trait VideoProps extends StObject {
   
   var accessibilityMaximizeLabel: js.UndefOr[String] = js.native
   
@@ -102,226 +103,214 @@ object VideoProps {
   }
   
   @scala.inline
-  implicit class VideoPropsOps[Self <: VideoProps] (val x: Self) extends AnyVal {
+  implicit class VideoPropsMutableBuilder[Self <: VideoProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityMaximizeLabel(value: String): Self = StObject.set(x, "accessibilityMaximizeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityMaximizeLabelUndefined: Self = StObject.set(x, "accessibilityMaximizeLabel", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccessibilityMinimizeLabel(value: String): Self = StObject.set(x, "accessibilityMinimizeLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAspectRatio(value: Double): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    def setAccessibilityMinimizeLabelUndefined: Self = StObject.set(x, "accessibilityMinimizeLabel", js.undefined)
     
     @scala.inline
-    def setCaptions(value: String): Self = this.set("captions", value.asInstanceOf[js.Any])
+    def setAccessibilityMuteLabel(value: String): Self = StObject.set(x, "accessibilityMuteLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSrcVarargs(value: Src*): Self = this.set("src", js.Array(value :_*))
+    def setAccessibilityMuteLabelUndefined: Self = StObject.set(x, "accessibilityMuteLabel", js.undefined)
     
     @scala.inline
-    def setSrc(value: String | js.Array[Src]): Self = this.set("src", value.asInstanceOf[js.Any])
+    def setAccessibilityPauseLabel(value: String): Self = StObject.set(x, "accessibilityPauseLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityMaximizeLabel(value: String): Self = this.set("accessibilityMaximizeLabel", value.asInstanceOf[js.Any])
+    def setAccessibilityPauseLabelUndefined: Self = StObject.set(x, "accessibilityPauseLabel", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityMaximizeLabel: Self = this.set("accessibilityMaximizeLabel", js.undefined)
+    def setAccessibilityPlayLabel(value: String): Self = StObject.set(x, "accessibilityPlayLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityMinimizeLabel(value: String): Self = this.set("accessibilityMinimizeLabel", value.asInstanceOf[js.Any])
+    def setAccessibilityPlayLabelUndefined: Self = StObject.set(x, "accessibilityPlayLabel", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityMinimizeLabel: Self = this.set("accessibilityMinimizeLabel", js.undefined)
+    def setAccessibilityUnmuteLabel(value: String): Self = StObject.set(x, "accessibilityUnmuteLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityMuteLabel(value: String): Self = this.set("accessibilityMuteLabel", value.asInstanceOf[js.Any])
+    def setAccessibilityUnmuteLabelUndefined: Self = StObject.set(x, "accessibilityUnmuteLabel", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityMuteLabel: Self = this.set("accessibilityMuteLabel", js.undefined)
+    def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityPauseLabel(value: String): Self = this.set("accessibilityPauseLabel", value.asInstanceOf[js.Any])
+    def setCaptions(value: String): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccessibilityPauseLabel: Self = this.set("accessibilityPauseLabel", js.undefined)
+    def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityPlayLabel(value: String): Self = this.set("accessibilityPlayLabel", value.asInstanceOf[js.Any])
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityPlayLabel: Self = this.set("accessibilityPlayLabel", js.undefined)
+    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityUnmuteLabel(value: String): Self = this.set("accessibilityUnmuteLabel", value.asInstanceOf[js.Any])
+    def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
     @scala.inline
-    def deleteAccessibilityUnmuteLabel: Self = this.set("accessibilityUnmuteLabel", js.undefined)
+    def setCrossOrigin(value: anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Node): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
     @scala.inline
-    def deleteControls: Self = this.set("controls", js.undefined)
+    def setObjectFit(value: fill | contain | cover | none | `scale-down`): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrossOrigin(value: anonymous | `use-credentials`): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
     @scala.inline
-    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    def setOnDurationChange(value: /* args */ Duration => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLoop: Self = this.set("loop", js.undefined)
-    
-    @scala.inline
-    def setObjectFit(value: fill | contain | cover | none | `scale-down`): Self = this.set("objectFit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObjectFit: Self = this.set("objectFit", js.undefined)
-    
-    @scala.inline
-    def setOnDurationChange(value: /* args */ Duration => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
     @scala.inline
     def setOnEnded(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
-    ): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
     @scala.inline
     def setOnFullscreenChange(
       value: /* arg */ Fullscreen with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
-    ): Self = this.set("onFullscreenChange", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onFullscreenChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnFullscreenChange: Self = this.set("onFullscreenChange", js.undefined)
+    def setOnFullscreenChangeUndefined: Self = StObject.set(x, "onFullscreenChange", js.undefined)
     
     @scala.inline
     def setOnLoadedChange(
       value: /* arg */ Loaded with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
-    ): Self = this.set("onLoadedChange", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onLoadedChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnLoadedChange: Self = this.set("onLoadedChange", js.undefined)
+    def setOnLoadedChangeUndefined: Self = StObject.set(x, "onLoadedChange", js.undefined)
     
     @scala.inline
     def setOnPause(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
-    ): Self = this.set("onPause", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
     @scala.inline
     def setOnPlay(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
-    ): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
     @scala.inline
     def setOnPlayheadDown(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit
-    ): Self = this.set("onPlayheadDown", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onPlayheadDown", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPlayheadDown: Self = this.set("onPlayheadDown", js.undefined)
+    def setOnPlayheadDownUndefined: Self = StObject.set(x, "onPlayheadDown", js.undefined)
     
     @scala.inline
     def setOnPlayheadUp(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit
-    ): Self = this.set("onPlayheadUp", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onPlayheadUp", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnPlayheadUp: Self = this.set("onPlayheadUp", js.undefined)
+    def setOnPlayheadUpUndefined: Self = StObject.set(x, "onPlayheadUp", js.undefined)
     
     @scala.inline
     def setOnReady(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
-    ): Self = this.set("onReady", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     @scala.inline
     def setOnSeek(
       value: /* arg */ js.Object with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
-    ): Self = this.set("onSeek", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onSeek", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnSeek: Self = this.set("onSeek", js.undefined)
+    def setOnSeekUndefined: Self = StObject.set(x, "onSeek", js.undefined)
     
     @scala.inline
     def setOnTimeChange(
       value: /* arg */ Time with (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
-    ): Self = this.set("onTimeChange", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onTimeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnTimeChange: Self = this.set("onTimeChange", js.undefined)
+    def setOnTimeChangeUndefined: Self = StObject.set(x, "onTimeChange", js.undefined)
     
     @scala.inline
     def setOnVolumeChange(
       value: /* arg */ Volume with (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
-    ): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "onVolumeChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
     @scala.inline
-    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    def setPlaybackRateUndefined: Self = StObject.set(x, "playbackRate", js.undefined)
     
     @scala.inline
-    def setPlaying(value: Boolean): Self = this.set("playing", value.asInstanceOf[js.Any])
+    def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaying: Self = this.set("playing", js.undefined)
+    def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
     
     @scala.inline
-    def setPlaysInline(value: Boolean): Self = this.set("playsInline", value.asInstanceOf[js.Any])
+    def setPlaysInline(value: Boolean): Self = StObject.set(x, "playsInline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePlaysInline: Self = this.set("playsInline", js.undefined)
+    def setPlaysInlineUndefined: Self = StObject.set(x, "playsInline", js.undefined)
     
     @scala.inline
-    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePoster: Self = this.set("poster", js.undefined)
+    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
     @scala.inline
-    def setPreload(value: auto | metadata | none): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setPreload(value: auto | metadata | none): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    def setSrc(value: String | js.Array[Src]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVolume: Self = this.set("volume", js.undefined)
+    def setSrcVarargs(value: Src*): Self = StObject.set(x, "src", js.Array(value :_*))
+    
+    @scala.inline
+    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
   }
 }

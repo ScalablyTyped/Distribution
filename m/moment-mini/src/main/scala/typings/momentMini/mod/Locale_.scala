@@ -1,12 +1,13 @@
 package typings.momentMini.mod
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locale_ extends js.Object {
+trait Locale_ extends StObject {
   
   def calendar(): String = js.native
   def calendar(key: js.UndefOr[CalendarKey], m: js.UndefOr[scala.Nothing], now: Moment): String = js.native

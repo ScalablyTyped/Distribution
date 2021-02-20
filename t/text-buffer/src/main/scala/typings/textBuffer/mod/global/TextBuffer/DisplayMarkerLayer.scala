@@ -6,6 +6,7 @@ import typings.textBuffer.anon.ClipDirectionExclusiveInvalidate
 import typings.textBuffer.anon.ExclusiveInvalidate
 import typings.textBuffer.anon.Invalidate
 import typings.textBuffer.mod.global.TextBuffer.Options.FindDisplayMarker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  This API is experimental and subject to change on any release.
   */
 @js.native
-trait DisplayMarkerLayer extends js.Object {
+trait DisplayMarkerLayer extends StObject {
   
   /** Destroy all markers in this layer. */
   def clear(): Unit = js.native

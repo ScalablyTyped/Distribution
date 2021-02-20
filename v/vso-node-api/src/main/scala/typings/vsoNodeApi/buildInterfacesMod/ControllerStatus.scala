@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ControllerStatus extends js.Object
+sealed trait ControllerStatus extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "ControllerStatus")
 @js.native
-object ControllerStatus extends js.Object {
+object ControllerStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ControllerStatus with Double] = js.native
@@ -19,22 +19,19 @@ object ControllerStatus extends js.Object {
     */
   @js.native
   sealed trait Available extends ControllerStatus
-  /* 1 */ @js.native
-  object Available extends TopLevel[Available with Double]
+  /* 1 */ val Available: typings.vsoNodeApi.buildInterfacesMod.ControllerStatus.Available with Double = js.native
   
   /**
     * Indicates that the build controller has taken itself offline.
     */
   @js.native
   sealed trait Offline extends ControllerStatus
-  /* 2 */ @js.native
-  object Offline extends TopLevel[Offline with Double]
+  /* 2 */ val Offline: typings.vsoNodeApi.buildInterfacesMod.ControllerStatus.Offline with Double = js.native
   
   /**
     * Indicates that the build controller cannot be contacted.
     */
   @js.native
   sealed trait Unavailable extends ControllerStatus
-  /* 0 */ @js.native
-  object Unavailable extends TopLevel[Unavailable with Double]
+  /* 0 */ val Unavailable: typings.vsoNodeApi.buildInterfacesMod.ControllerStatus.Unavailable with Double = js.native
 }

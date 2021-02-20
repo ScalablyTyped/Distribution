@@ -1,11 +1,12 @@
 package typings.awsSdk.securityhubMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StandardsSubscriptionRequest extends js.Object {
+trait StandardsSubscriptionRequest extends StObject {
   
   /**
     * The ARN of the standard that you want to enable. To view the list of available standards and their ARNs, use the  DescribeStandards  operation.
@@ -26,27 +27,15 @@ object StandardsSubscriptionRequest {
   }
   
   @scala.inline
-  implicit class StandardsSubscriptionRequestOps[Self <: StandardsSubscriptionRequest] (val x: Self) extends AnyVal {
+  implicit class StandardsSubscriptionRequestMutableBuilder[Self <: StandardsSubscriptionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStandardsInput(value: StandardsInputParameterMap): Self = StObject.set(x, "StandardsInput", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStandardsArn(value: NonEmptyString): Self = this.set("StandardsArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardsInput(value: StandardsInputParameterMap): Self = this.set("StandardsInput", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStandardsInput: Self = this.set("StandardsInput", js.undefined)
+    def setStandardsInputUndefined: Self = StObject.set(x, "StandardsInput", js.undefined)
   }
 }

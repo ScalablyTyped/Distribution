@@ -1,13 +1,14 @@
 package typings.reactNativeElements.anon
 
 import typings.reactNativeElements.mod.RecursivePartial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<{  ios :{  primary :string,   secondary :string,   success :string,   error :string,   warning :string},   android :{  primary :string,   secondary :string,   success :string,   error :string,   warning :string}}> */
 @js.native
-trait RecursivePartialiosprimarAndroid extends js.Object {
+trait RecursivePartialiosprimarAndroid extends StObject {
   
   var android: js.UndefOr[RecursivePartial[Error]] = js.native
   
@@ -22,30 +23,18 @@ object RecursivePartialiosprimarAndroid {
   }
   
   @scala.inline
-  implicit class RecursivePartialiosprimarAndroidOps[Self <: RecursivePartialiosprimarAndroid] (val x: Self) extends AnyVal {
+  implicit class RecursivePartialiosprimarAndroidMutableBuilder[Self <: RecursivePartialiosprimarAndroid] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: RecursivePartial[Error]): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIos(value: RecursivePartial[Error]): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndroid(value: RecursivePartial[Error]): Self = this.set("android", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAndroid: Self = this.set("android", js.undefined)
-    
-    @scala.inline
-    def setIos(value: RecursivePartial[Error]): Self = this.set("ios", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIos: Self = this.set("ios", js.undefined)
+    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

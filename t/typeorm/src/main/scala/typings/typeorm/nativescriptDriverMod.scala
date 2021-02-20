@@ -3,14 +3,14 @@ package typings.typeorm
 import typings.typeorm.abstractSqliteDriverMod.AbstractSqliteDriver
 import typings.typeorm.connectionMod.Connection
 import typings.typeorm.nativescriptConnectionOptionsMod.NativescriptConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/driver/nativescript/NativescriptDriver", JSImport.Namespace)
-@js.native
-object nativescriptDriverMod extends js.Object {
+object nativescriptDriverMod {
   
+  @JSImport("typeorm/browser/driver/nativescript/NativescriptDriver", "NativescriptDriver")
   @js.native
   class NativescriptDriver protected () extends AbstractSqliteDriver {
     def this(connection: Connection) = this()

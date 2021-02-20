@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.galleryInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExtensionCategory extends js.Object {
+trait ExtensionCategory extends StObject {
   
   /**
     * The name of the products with which this category is associated to.
@@ -50,42 +51,30 @@ object ExtensionCategory {
   }
   
   @scala.inline
-  implicit class ExtensionCategoryOps[Self <: ExtensionCategory] (val x: Self) extends AnyVal {
+  implicit class ExtensionCategoryMutableBuilder[Self <: ExtensionCategory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociatedProducts(value: js.Array[String]): Self = StObject.set(x, "associatedProducts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssociatedProductsVarargs(value: String*): Self = StObject.set(x, "associatedProducts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryId(value: Double): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedProductsVarargs(value: String*): Self = this.set("associatedProducts", js.Array(value :_*))
+    def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssociatedProducts(value: js.Array[String]): Self = this.set("associatedProducts", value.asInstanceOf[js.Any])
+    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryId(value: Double): Self = this.set("categoryId", value.asInstanceOf[js.Any])
+    def setLanguageTitles(value: js.Array[CategoryLanguageTitle]): Self = StObject.set(x, "languageTitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryName(value: String): Self = this.set("categoryName", value.asInstanceOf[js.Any])
+    def setLanguageTitlesVarargs(value: CategoryLanguageTitle*): Self = StObject.set(x, "languageTitles", js.Array(value :_*))
     
     @scala.inline
-    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguageTitlesVarargs(value: CategoryLanguageTitle*): Self = this.set("languageTitles", js.Array(value :_*))
-    
-    @scala.inline
-    def setLanguageTitles(value: js.Array[CategoryLanguageTitle]): Self = this.set("languageTitles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setParentCategoryName(value: String): Self = this.set("parentCategoryName", value.asInstanceOf[js.Any])
+    def setParentCategoryName(value: String): Self = StObject.set(x, "parentCategoryName", value.asInstanceOf[js.Any])
   }
 }

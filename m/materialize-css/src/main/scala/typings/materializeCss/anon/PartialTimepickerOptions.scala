@@ -3,13 +3,14 @@ package typings.materializeCss.anon
 import typings.materializeCss.M.Modal
 import typings.std.Element
 import typings.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.TimepickerOptions> */
 @js.native
-trait PartialTimepickerOptions extends js.Object {
+trait PartialTimepickerOptions extends StObject {
   
   var autoClose: js.UndefOr[Boolean] = js.native
   
@@ -52,106 +53,94 @@ object PartialTimepickerOptions {
   }
   
   @scala.inline
-  implicit class PartialTimepickerOptionsOps[Self <: PartialTimepickerOptions] (val x: Self) extends AnyVal {
+  implicit class PartialTimepickerOptionsMutableBuilder[Self <: PartialTimepickerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    def setDefaultTime(value: String): Self = StObject.set(x, "defaultTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setDefaultTimeUndefined: Self = StObject.set(x, "defaultTime", js.undefined)
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTime(value: String): Self = this.set("defaultTime", value.asInstanceOf[js.Any])
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def deleteDefaultTime: Self = this.set("defaultTime", js.undefined)
+    def setFromNow(value: Double): Self = StObject.set(x, "fromNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setFromNow(value: Double): Self = this.set("fromNow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFromNow: Self = this.set("fromNow", js.undefined)
+    def setFromNowUndefined: Self = StObject.set(x, "fromNow", js.undefined)
     
     @scala.inline
     def setI18n(
       value: Partial[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ _
         ]
-    ): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteI18n: Self = this.set("i18n", js.undefined)
+    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
     @scala.inline
-    def setOnCloseEnd(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = this.set("onCloseEnd", value.asInstanceOf[js.Any])
+    def setOnCloseEnd(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = StObject.set(x, "onCloseEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnCloseEnd: Self = this.set("onCloseEnd", js.undefined)
+    def setOnCloseEndUndefined: Self = StObject.set(x, "onCloseEnd", js.undefined)
     
     @scala.inline
-    def setOnCloseStart(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = this.set("onCloseStart", value.asInstanceOf[js.Any])
+    def setOnCloseStart(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = StObject.set(x, "onCloseStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnCloseStart: Self = this.set("onCloseStart", js.undefined)
+    def setOnCloseStartUndefined: Self = StObject.set(x, "onCloseStart", js.undefined)
     
     @scala.inline
-    def setOnOpenEnd(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = this.set("onOpenEnd", value.asInstanceOf[js.Any])
+    def setOnOpenEnd(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = StObject.set(x, "onOpenEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOpenEnd: Self = this.set("onOpenEnd", js.undefined)
+    def setOnOpenEndUndefined: Self = StObject.set(x, "onOpenEnd", js.undefined)
     
     @scala.inline
-    def setOnOpenStart(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = this.set("onOpenStart", value.asInstanceOf[js.Any])
+    def setOnOpenStart(value: js.ThisFunction1[/* this */ Modal, /* el */ Element, Unit]): Self = StObject.set(x, "onOpenStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnOpenStart: Self = this.set("onOpenStart", js.undefined)
+    def setOnOpenStartUndefined: Self = StObject.set(x, "onOpenStart", js.undefined)
     
     @scala.inline
-    def setOnSelect(value: js.ThisFunction2[/* this */ Modal, /* hour */ Double, /* minute */ Double, Unit]): Self = this.set("onSelect", value.asInstanceOf[js.Any])
+    def setOnSelect(value: js.ThisFunction2[/* this */ Modal, /* hour */ Double, /* minute */ Double, Unit]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     @scala.inline
-    def setShowClearBtn(value: Boolean): Self = this.set("showClearBtn", value.asInstanceOf[js.Any])
+    def setShowClearBtn(value: Boolean): Self = StObject.set(x, "showClearBtn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShowClearBtn: Self = this.set("showClearBtn", js.undefined)
+    def setShowClearBtnUndefined: Self = StObject.set(x, "showClearBtn", js.undefined)
     
     @scala.inline
-    def setTwelveHour(value: Boolean): Self = this.set("twelveHour", value.asInstanceOf[js.Any])
+    def setTwelveHour(value: Boolean): Self = StObject.set(x, "twelveHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTwelveHour: Self = this.set("twelveHour", js.undefined)
+    def setTwelveHourUndefined: Self = StObject.set(x, "twelveHour", js.undefined)
     
     @scala.inline
-    def setVibrate(value: Boolean): Self = this.set("vibrate", value.asInstanceOf[js.Any])
+    def setVibrate(value: Boolean): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteVibrate: Self = this.set("vibrate", js.undefined)
+    def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
   }
 }

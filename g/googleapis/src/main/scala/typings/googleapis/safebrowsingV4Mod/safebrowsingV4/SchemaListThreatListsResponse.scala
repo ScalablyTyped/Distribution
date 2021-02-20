@@ -1,11 +1,12 @@
 package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaListThreatListsResponse extends js.Object {
+trait SchemaListThreatListsResponse extends StObject {
   
   /**
     * The lists available for download by the client.
@@ -21,27 +22,15 @@ object SchemaListThreatListsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListThreatListsResponseOps[Self <: SchemaListThreatListsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListThreatListsResponseMutableBuilder[Self <: SchemaListThreatListsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setThreatLists(value: js.Array[SchemaThreatListDescriptor]): Self = StObject.set(x, "threatLists", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setThreatListsUndefined: Self = StObject.set(x, "threatLists", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setThreatListsVarargs(value: SchemaThreatListDescriptor*): Self = this.set("threatLists", js.Array(value :_*))
-    
-    @scala.inline
-    def setThreatLists(value: js.Array[SchemaThreatListDescriptor]): Self = this.set("threatLists", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteThreatLists: Self = this.set("threatLists", js.undefined)
+    def setThreatListsVarargs(value: SchemaThreatListDescriptor*): Self = StObject.set(x, "threatLists", js.Array(value :_*))
   }
 }

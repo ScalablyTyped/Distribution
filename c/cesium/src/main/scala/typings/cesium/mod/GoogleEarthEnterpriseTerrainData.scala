@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.ChildTileMask
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

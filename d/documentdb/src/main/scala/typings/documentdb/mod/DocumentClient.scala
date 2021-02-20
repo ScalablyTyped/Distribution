@@ -2,13 +2,14 @@ package typings.documentdb.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("documentdb", "DocumentClient")
 @js.native
-class DocumentClient protected () extends js.Object {
+class DocumentClient protected () extends StObject {
   /**
     * Constructs a DocumentClient.
     * @param urlConnection           - The service endpoint to use to create the client.

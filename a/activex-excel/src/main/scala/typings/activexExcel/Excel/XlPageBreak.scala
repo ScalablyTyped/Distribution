@@ -3,6 +3,7 @@ package typings.activexExcel.Excel
 import typings.activexExcel.activexExcelNumbers.`-4105`
 import typings.activexExcel.activexExcelNumbers.`-4135`
 import typings.activexExcel.activexExcelNumbers.`-4142`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`-4135`
   - typings.activexExcel.activexExcelNumbers.`-4142`
 */
-trait XlPageBreak extends js.Object
+trait XlPageBreak extends StObject
 object XlPageBreak {
   
   @scala.inline

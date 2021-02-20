@@ -3,12 +3,13 @@ package typings.std
 import typings.std.stdStrings.`not-equal`
 import typings.std.stdStrings.`timed-out`
 import typings.std.stdStrings.ok
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Atomics extends js.Object {
+trait Atomics extends StObject {
   
   /**
     * Adds a value to the value at the given position in the array, returning the original value.

@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains settings that specify parameters affecting how the Grid dashboard item is exported.
   */
 @js.native
-trait GridExportOptions extends js.Object {
+trait GridExportOptions extends StObject {
   
   /** @deprecated The GridExportOptions.FitToPageWidth property is obsolete now. Use the DashboardPdfExportOptions.GridFitToPageWidth property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
   /**
@@ -31,24 +32,12 @@ object GridExportOptions {
   }
   
   @scala.inline
-  implicit class GridExportOptionsOps[Self <: GridExportOptions] (val x: Self) extends AnyVal {
+  implicit class GridExportOptionsMutableBuilder[Self <: GridExportOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFitToPageWidth(value: Boolean): Self = StObject.set(x, "FitToPageWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFitToPageWidth(value: Boolean): Self = this.set("FitToPageWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrintHeadersOnEveryPage(value: Boolean): Self = this.set("PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
+    def setPrintHeadersOnEveryPage(value: Boolean): Self = StObject.set(x, "PrintHeadersOnEveryPage", value.asInstanceOf[js.Any])
   }
 }

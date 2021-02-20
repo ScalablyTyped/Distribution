@@ -1,19 +1,18 @@
 package typings.siesta.Siesta.Test
 
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Siesta.Test.BDD")
-@js.native
-object BDD extends js.Object {
+object BDD {
   
   /**
     @class
     */
   @js.native
-  trait Expectation extends js.Object {
+  trait Expectation extends StObject {
     
     var not: Expectation = js.native
     

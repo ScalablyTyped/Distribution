@@ -1,6 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.task
 
 import typings.activexLibreoffice.`type`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,27 +48,15 @@ object XInteractionPassword {
   }
   
   @scala.inline
-  implicit class XInteractionPasswordOps[Self <: XInteractionPassword] (val x: Self) extends AnyVal {
+  implicit class XInteractionPasswordMutableBuilder[Self <: XInteractionPassword] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPassword(value: () => String): Self = this.set("getPassword", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetPassword(value: String => Unit): Self = this.set("setPassword", js.Any.fromFunction1(value))
+    def setSetPassword(value: String => Unit): Self = StObject.set(x, "setPassword", js.Any.fromFunction1(value))
   }
 }

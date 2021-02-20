@@ -11,6 +11,7 @@ import typings.std.stdStrings.soundstart
 import typings.std.stdStrings.speechend
 import typings.std.stdStrings.speechstart
 import typings.std.stdStrings.start
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

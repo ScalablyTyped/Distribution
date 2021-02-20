@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.beans
 import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * like {@link XPropertySet.getPropertyValue()} .
   */
 @js.native
-trait PropertyBag
-  extends XPropertySet
-     with XPropertyContainer
-     with XPropertyAccess {
+trait PropertyBag extends XPropertyBag {
   
   def createDefault(): Unit = js.native
   
@@ -52,24 +50,12 @@ object PropertyBag {
   }
   
   @scala.inline
-  implicit class PropertyBagOps[Self <: PropertyBag] (val x: Self) extends AnyVal {
+  implicit class PropertyBagMutableBuilder[Self <: PropertyBag] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = this.set("createDefault", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCreateWithTypes(value: (SeqEquiv[`type`], Boolean, Boolean) => Unit): Self = this.set("createWithTypes", js.Any.fromFunction3(value))
+    def setCreateWithTypes(value: (SeqEquiv[`type`], Boolean, Boolean) => Unit): Self = StObject.set(x, "createWithTypes", js.Any.fromFunction3(value))
   }
 }

@@ -3,12 +3,13 @@ package typings.handsontable.mod.Handsontable
 import typings.handsontable.handsontableStrings.all
 import typings.handsontable.handsontableStrings.last
 import typings.handsontable.handsontableStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewportColumnsCalculator extends js.Object {
+trait ViewportColumnsCalculator extends StObject {
   
   def calculate(): Unit = js.native
   
@@ -60,81 +61,69 @@ object ViewportColumnsCalculator {
   }
   
   @scala.inline
-  implicit class ViewportColumnsCalculatorOps[Self <: ViewportColumnsCalculator] (val x: Self) extends AnyVal {
+  implicit class ViewportColumnsCalculatorMutableBuilder[Self <: ViewportColumnsCalculator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculate(value: () => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculate(value: () => Unit): Self = this.set("calculate", js.Any.fromFunction0(value))
+    def setEndColumnNull: Self = StObject.set(x, "endColumn", null)
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetStretchedColumnWidth(value: (Double, Double) => Double | Null): Self = this.set("getStretchedColumnWidth", js.Any.fromFunction2(value))
+    def setEndRowUndefined: Self = StObject.set(x, "endRow", js.undefined)
     
     @scala.inline
-    def setNeedVerifyLastColumnWidth(value: Boolean): Self = this.set("needVerifyLastColumnWidth", value.asInstanceOf[js.Any])
+    def setGetStretchedColumnWidth(value: (Double, Double) => Double | Null): Self = StObject.set(x, "getStretchedColumnWidth", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRefreshStretching(value: Double => Unit): Self = this.set("refreshStretching", js.Any.fromFunction1(value))
+    def setNeedVerifyLastColumnWidth(value: Boolean): Self = StObject.set(x, "needVerifyLastColumnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretch(value: none | all | last): Self = this.set("stretch", value.asInstanceOf[js.Any])
+    def setRefreshStretching(value: Double => Unit): Self = StObject.set(x, "refreshStretching", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStretchAllColumnsWidthVarargs(value: Double*): Self = this.set("stretchAllColumnsWidth", js.Array(value :_*))
+    def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretchAllColumnsWidth(value: js.Array[Double]): Self = this.set("stretchAllColumnsWidth", value.asInstanceOf[js.Any])
+    def setStartColumnNull: Self = StObject.set(x, "startColumn", null)
     
     @scala.inline
-    def setStretchAllRatio(value: Double): Self = this.set("stretchAllRatio", value.asInstanceOf[js.Any])
+    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStretchLastWidth(value: Double): Self = this.set("stretchLastWidth", value.asInstanceOf[js.Any])
+    def setStartPositionNull: Self = StObject.set(x, "startPosition", null)
     
     @scala.inline
-    def setTotalTargetWidth(value: Double): Self = this.set("totalTargetWidth", value.asInstanceOf[js.Any])
+    def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndColumn(value: Double): Self = this.set("endColumn", value.asInstanceOf[js.Any])
+    def setStartRowUndefined: Self = StObject.set(x, "startRow", js.undefined)
     
     @scala.inline
-    def setEndColumnNull: Self = this.set("endColumn", null)
+    def setStretch(value: none | all | last): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndRow(value: Double): Self = this.set("endRow", value.asInstanceOf[js.Any])
+    def setStretchAllColumnsWidth(value: js.Array[Double]): Self = StObject.set(x, "stretchAllColumnsWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndRow: Self = this.set("endRow", js.undefined)
+    def setStretchAllColumnsWidthVarargs(value: Double*): Self = StObject.set(x, "stretchAllColumnsWidth", js.Array(value :_*))
     
     @scala.inline
-    def setStartColumn(value: Double): Self = this.set("startColumn", value.asInstanceOf[js.Any])
+    def setStretchAllRatio(value: Double): Self = StObject.set(x, "stretchAllRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartColumnNull: Self = this.set("startColumn", null)
+    def setStretchLastWidth(value: Double): Self = StObject.set(x, "stretchLastWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPosition(value: Double): Self = this.set("startPosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPositionNull: Self = this.set("startPosition", null)
-    
-    @scala.inline
-    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartRow: Self = this.set("startRow", js.undefined)
+    def setTotalTargetWidth(value: Double): Self = StObject.set(x, "totalTargetWidth", value.asInstanceOf[js.Any])
   }
 }

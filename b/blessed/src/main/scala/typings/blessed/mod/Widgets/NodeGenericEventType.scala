@@ -1,5 +1,6 @@
 package typings.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.blessed.blessedStrings.`set content`
   - typings.blessed.blessedStrings.`parsed content`
 */
-trait NodeGenericEventType extends js.Object
+trait NodeGenericEventType extends StObject
 object NodeGenericEventType {
   
   @scala.inline

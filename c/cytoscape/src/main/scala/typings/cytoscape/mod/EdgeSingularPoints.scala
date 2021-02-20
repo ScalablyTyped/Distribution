@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * http://js.cytoscape.org/#collection/edge-points
   */
 @js.native
-trait EdgeSingularPoints extends js.Object {
+trait EdgeSingularPoints extends StObject {
   
   /**
     * Get an array of control point model positions for a {@code curve-style: bezier) or {@code curve-style: unbundled-bezier} edge.
@@ -66,33 +67,21 @@ object EdgeSingularPoints {
   }
   
   @scala.inline
-  implicit class EdgeSingularPointsOps[Self <: EdgeSingularPoints] (val x: Self) extends AnyVal {
+  implicit class EdgeSingularPointsMutableBuilder[Self <: EdgeSingularPoints] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlPoints(value: () => js.Array[Position]): Self = StObject.set(x, "controlPoints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMidpoint(value: () => Position): Self = StObject.set(x, "midpoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSegmentPoints(value: () => js.Array[Position]): Self = StObject.set(x, "segmentPoints", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setControlPoints(value: () => js.Array[Position]): Self = this.set("controlPoints", js.Any.fromFunction0(value))
+    def setSourceEndpoint(value: () => Position): Self = StObject.set(x, "sourceEndpoint", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMidpoint(value: () => Position): Self = this.set("midpoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSegmentPoints(value: () => js.Array[Position]): Self = this.set("segmentPoints", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSourceEndpoint(value: () => Position): Self = this.set("sourceEndpoint", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setTargetEndpoint(value: () => Position): Self = this.set("targetEndpoint", js.Any.fromFunction0(value))
+    def setTargetEndpoint(value: () => Position): Self = StObject.set(x, "targetEndpoint", js.Any.fromFunction0(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.jose.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jose.joseStrings.`P-384`
   - typings.jose.joseStrings.`P-521`
 */
-trait Curves extends js.Object
+trait Curves extends StObject
 object Curves {
   
   @scala.inline

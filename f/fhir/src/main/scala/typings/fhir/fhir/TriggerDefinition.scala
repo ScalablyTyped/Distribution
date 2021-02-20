@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -75,81 +76,69 @@ object TriggerDefinition {
   }
   
   @scala.inline
-  implicit class TriggerDefinitionOps[Self <: TriggerDefinition] (val x: Self) extends AnyVal {
+  implicit class TriggerDefinitionMutableBuilder[Self <: TriggerDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEventData(value: DataRequirement): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
     @scala.inline
-    def set_eventName(value: Element): Self = this.set("_eventName", value.asInstanceOf[js.Any])
+    def setEventTimingDate(value: date): Self = StObject.set(x, "eventTimingDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_eventName: Self = this.set("_eventName", js.undefined)
+    def setEventTimingDateTime(value: dateTime): Self = StObject.set(x, "eventTimingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_eventTimingDate(value: Element): Self = this.set("_eventTimingDate", value.asInstanceOf[js.Any])
+    def setEventTimingDateTimeUndefined: Self = StObject.set(x, "eventTimingDateTime", js.undefined)
     
     @scala.inline
-    def delete_eventTimingDate: Self = this.set("_eventTimingDate", js.undefined)
+    def setEventTimingDateUndefined: Self = StObject.set(x, "eventTimingDate", js.undefined)
     
     @scala.inline
-    def set_eventTimingDateTime(value: Element): Self = this.set("_eventTimingDateTime", value.asInstanceOf[js.Any])
+    def setEventTimingReference(value: Reference): Self = StObject.set(x, "eventTimingReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_eventTimingDateTime: Self = this.set("_eventTimingDateTime", js.undefined)
+    def setEventTimingReferenceUndefined: Self = StObject.set(x, "eventTimingReference", js.undefined)
     
     @scala.inline
-    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    def setEventTimingTiming(value: Timing): Self = StObject.set(x, "eventTimingTiming", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_type: Self = this.set("_type", js.undefined)
+    def setEventTimingTimingUndefined: Self = StObject.set(x, "eventTimingTiming", js.undefined)
     
     @scala.inline
-    def setEventData(value: DataRequirement): Self = this.set("eventData", value.asInstanceOf[js.Any])
+    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventData: Self = this.set("eventData", js.undefined)
+    def set_eventName(value: Element): Self = StObject.set(x, "_eventName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    def set_eventNameUndefined: Self = StObject.set(x, "_eventName", js.undefined)
     
     @scala.inline
-    def deleteEventName: Self = this.set("eventName", js.undefined)
+    def set_eventTimingDate(value: Element): Self = StObject.set(x, "_eventTimingDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTimingDate(value: date): Self = this.set("eventTimingDate", value.asInstanceOf[js.Any])
+    def set_eventTimingDateTime(value: Element): Self = StObject.set(x, "_eventTimingDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventTimingDate: Self = this.set("eventTimingDate", js.undefined)
+    def set_eventTimingDateTimeUndefined: Self = StObject.set(x, "_eventTimingDateTime", js.undefined)
     
     @scala.inline
-    def setEventTimingDateTime(value: dateTime): Self = this.set("eventTimingDateTime", value.asInstanceOf[js.Any])
+    def set_eventTimingDateUndefined: Self = StObject.set(x, "_eventTimingDate", js.undefined)
     
     @scala.inline
-    def deleteEventTimingDateTime: Self = this.set("eventTimingDateTime", js.undefined)
+    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventTimingReference(value: Reference): Self = this.set("eventTimingReference", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTimingReference: Self = this.set("eventTimingReference", js.undefined)
-    
-    @scala.inline
-    def setEventTimingTiming(value: Timing): Self = this.set("eventTimingTiming", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEventTimingTiming: Self = this.set("eventTimingTiming", js.undefined)
+    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

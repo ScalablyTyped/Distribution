@@ -4,12 +4,13 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.cellNav.navigateHandler
 import typings.uiGrid.mod.cellNav.viewportKeyDownHandler
 import typings.uiGrid.mod.cellNav.viewportKeyPressHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Navigate[TEntity] extends js.Object {
+trait Navigate[TEntity] extends StObject {
   
   /**
     * raised when the active cell is changed
@@ -49,27 +50,15 @@ object Navigate {
   }
   
   @scala.inline
-  implicit class NavigateOps[Self <: Navigate[_], TEntity] (val x: Self with Navigate[TEntity]) extends AnyVal {
+  implicit class NavigateMutableBuilder[Self <: Navigate[_], TEntity] (val x: Self with Navigate[TEntity]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNavigate(value: (IScope, navigateHandler[TEntity]) => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setViewPortKeyDown(value: (IScope, viewportKeyDownHandler[TEntity]) => Unit): Self = StObject.set(x, "viewPortKeyDown", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNavigate(value: (IScope, navigateHandler[TEntity]) => Unit): Self = this.set("navigate", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setViewPortKeyDown(value: (IScope, viewportKeyDownHandler[TEntity]) => Unit): Self = this.set("viewPortKeyDown", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setViewPortKeyPress(value: (IScope, viewportKeyPressHandler[TEntity]) => Unit): Self = this.set("viewPortKeyPress", js.Any.fromFunction2(value))
+    def setViewPortKeyPress(value: (IScope, viewportKeyPressHandler[TEntity]) => Unit): Self = StObject.set(x, "viewPortKeyPress", js.Any.fromFunction2(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDatacatalogV1beta1ColumnSchema extends js.Object {
+trait GoogleCloudDatacatalogV1beta1ColumnSchema extends StObject {
   
   /** Required. Name of the column. */
   var column: js.UndefOr[String] = js.native
@@ -34,51 +35,39 @@ object GoogleCloudDatacatalogV1beta1ColumnSchema {
   }
   
   @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1ColumnSchemaOps[Self <: GoogleCloudDatacatalogV1beta1ColumnSchema] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDatacatalogV1beta1ColumnSchemaMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1ColumnSchema] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: String): Self = this.set("column", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteColumn: Self = this.set("column", js.undefined)
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setSubcolumns(value: js.Array[GoogleCloudDatacatalogV1beta1ColumnSchema]): Self = StObject.set(x, "subcolumns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setSubcolumnsUndefined: Self = StObject.set(x, "subcolumns", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setSubcolumnsVarargs(value: GoogleCloudDatacatalogV1beta1ColumnSchema*): Self = StObject.set(x, "subcolumns", js.Array(value :_*))
     
     @scala.inline
-    def setSubcolumnsVarargs(value: GoogleCloudDatacatalogV1beta1ColumnSchema*): Self = this.set("subcolumns", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubcolumns(value: js.Array[GoogleCloudDatacatalogV1beta1ColumnSchema]): Self = this.set("subcolumns", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubcolumns: Self = this.set("subcolumns", js.undefined)
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

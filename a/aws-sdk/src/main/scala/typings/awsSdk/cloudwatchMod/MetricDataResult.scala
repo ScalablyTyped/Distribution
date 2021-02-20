@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudwatchMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricDataResult extends js.Object {
+trait MetricDataResult extends StObject {
   
   /**
     * The short name you specified to represent this metric.
@@ -46,63 +47,51 @@ object MetricDataResult {
   }
   
   @scala.inline
-  implicit class MetricDataResultOps[Self <: MetricDataResult] (val x: Self) extends AnyVal {
+  implicit class MetricDataResultMutableBuilder[Self <: MetricDataResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: MetricId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabel(value: MetricLabel): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: MetricId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setMessages(value: MetricDataResultMessages): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: MetricLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
+    def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesVarargs(value: MessageData*): Self = this.set("Messages", js.Array(value :_*))
+    def setStatusCode(value: StatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessages(value: MetricDataResultMessages): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     
     @scala.inline
-    def deleteMessages: Self = this.set("Messages", js.undefined)
+    def setTimestamps(value: Timestamps): Self = StObject.set(x, "Timestamps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatusCode(value: StatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    def setTimestampsUndefined: Self = StObject.set(x, "Timestamps", js.undefined)
     
     @scala.inline
-    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    def setTimestampsVarargs(value: Timestamp*): Self = StObject.set(x, "Timestamps", js.Array(value :_*))
     
     @scala.inline
-    def setTimestampsVarargs(value: Timestamp*): Self = this.set("Timestamps", js.Array(value :_*))
+    def setValues(value: DatapointValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamps(value: Timestamps): Self = this.set("Timestamps", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteTimestamps: Self = this.set("Timestamps", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: DatapointValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: DatapointValues): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

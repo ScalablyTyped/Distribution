@@ -1,14 +1,14 @@
 package typings.sipJs
 
 import typings.sipJs.parametersMod.Parameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/grammar/uri", JSImport.Namespace)
-@js.native
-object uriMod extends js.Object {
+object uriMod {
   
+  @JSImport("sip.js/lib/grammar/uri", "URI")
   @js.native
   class URI protected () extends Parameters {
     /**

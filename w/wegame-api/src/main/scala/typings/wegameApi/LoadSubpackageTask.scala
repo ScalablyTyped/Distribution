@@ -1,12 +1,13 @@
 package typings.wegameApi
 
 import typings.wegameApi.anon.Progress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadSubpackageTask extends js.Object {
+trait LoadSubpackageTask extends StObject {
   
   /**
     * 监听分包加载进度变化事件
@@ -25,21 +26,9 @@ object LoadSubpackageTask {
   }
   
   @scala.inline
-  implicit class LoadSubpackageTaskOps[Self <: LoadSubpackageTask] (val x: Self) extends AnyVal {
+  implicit class LoadSubpackageTaskMutableBuilder[Self <: LoadSubpackageTask] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = this.set("onProgressUpdate", js.Any.fromFunction1(value))
+    def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

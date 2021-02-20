@@ -11,16 +11,16 @@ import typings.reactNativeNavigation.optionsMod.Options
 import typings.reactNativeNavigation.optionsProcessorMod.OptionsProcessor
 import typings.reactNativeNavigation.storeMod.Store
 import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-navigation/lib/dist/commands/Commands", JSImport.Namespace)
-@js.native
-object commandsMod extends js.Object {
+object commandsMod {
   
+  @JSImport("react-native-navigation/lib/dist/commands/Commands", "Commands")
   @js.native
-  class Commands protected () extends js.Object {
+  class Commands protected () extends StObject {
     def this(
       store: Store,
       nativeCommandsSender: NativeCommandsSender,

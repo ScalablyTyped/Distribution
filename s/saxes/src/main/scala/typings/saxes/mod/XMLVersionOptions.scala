@@ -2,12 +2,13 @@ package typings.saxes.mod
 
 import typings.saxes.saxesStrings.`1Dot0`
 import typings.saxes.saxesStrings.`1Dot1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLVersionOptions extends js.Object {
+trait XMLVersionOptions extends StObject {
   
   /**
     * The default XML version to use. If unspecified, and there is no XML
@@ -32,30 +33,18 @@ object XMLVersionOptions {
   }
   
   @scala.inline
-  implicit class XMLVersionOptionsOps[Self <: XMLVersionOptions] (val x: Self) extends AnyVal {
+  implicit class XMLVersionOptionsMutableBuilder[Self <: XMLVersionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultXMLVersion(value: `1Dot0` | `1Dot1`): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultXMLVersionUndefined: Self = StObject.set(x, "defaultXMLVersion", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForceXMLVersion(value: Boolean): Self = StObject.set(x, "forceXMLVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultXMLVersion(value: `1Dot0` | `1Dot1`): Self = this.set("defaultXMLVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultXMLVersion: Self = this.set("defaultXMLVersion", js.undefined)
-    
-    @scala.inline
-    def setForceXMLVersion(value: Boolean): Self = this.set("forceXMLVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceXMLVersion: Self = this.set("forceXMLVersion", js.undefined)
+    def setForceXMLVersionUndefined: Self = StObject.set(x, "forceXMLVersion", js.undefined)
   }
 }

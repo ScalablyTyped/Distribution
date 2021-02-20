@@ -3,14 +3,14 @@ package typings.plottable
 import typings.plottable.interactionMod.Interaction
 import typings.plottable.interfacesMod.Point
 import typings.std.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("plottable/build/src/interactions/dragInteraction", JSImport.Namespace)
-@js.native
-object dragInteractionMod extends js.Object {
+object dragInteractionMod {
   
+  @JSImport("plottable/build/src/interactions/dragInteraction", "Drag")
   @js.native
   class Drag () extends Interaction {
     def this(mouseButton: Double) = this()
@@ -150,10 +150,17 @@ object dragInteractionMod extends js.Object {
     def onDragStart(callback: DragCallback): this.type = js.native
   }
   /* static members */
-  @js.native
-  object Drag extends js.Object {
+  object Drag {
     
-    var _DEFAULT_MOUSE_FILTER: js.Any = js.native
+    @JSImport("plottable/build/src/interactions/dragInteraction", "Drag")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable/build/src/interactions/dragInteraction", "Drag._DEFAULT_MOUSE_FILTER")
+    @js.native
+    def _DEFAULT_MOUSE_FILTER: js.Any = js.native
+    @scala.inline
+    def _DEFAULT_MOUSE_FILTER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MOUSE_FILTER")(x.asInstanceOf[js.Any])
   }
   
   type DragCallback = js.Function2[/* start */ Point, /* end */ Point, Unit]

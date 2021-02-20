@@ -1,5 +1,6 @@
 package typings.extjs.Ext.util
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,78 +51,66 @@ object IClickRepeater {
   }
   
   @scala.inline
-  implicit class IClickRepeaterOps[Self <: IClickRepeater] (val x: Self) extends AnyVal {
+  implicit class IClickRepeaterMutableBuilder[Self <: IClickRepeater] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccelerate(value: Boolean): Self = StObject.set(x, "accelerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccelerateUndefined: Self = StObject.set(x, "accelerate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccelerate(value: Boolean): Self = this.set("accelerate", value.asInstanceOf[js.Any])
+    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     @scala.inline
-    def deleteAccelerate: Self = this.set("accelerate", js.undefined)
+    def setDisable(value: /* force */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
     @scala.inline
-    def deleteDelay: Self = this.set("delay", js.undefined)
+    def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisable(value: /* force */ js.UndefOr[js.Any] => Unit): Self = this.set("disable", js.Any.fromFunction1(value))
+    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
     @scala.inline
-    def deleteDisable: Self = this.set("disable", js.undefined)
+    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEl(value: js.Any): Self = this.set("el", value.asInstanceOf[js.Any])
+    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
     @scala.inline
-    def deleteEl: Self = this.set("el", js.undefined)
+    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def deleteEnable: Self = this.set("enable", js.undefined)
+    def setPressedCls(value: String): Self = StObject.set(x, "pressedCls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    def setPressedClsUndefined: Self = StObject.set(x, "pressedCls", js.undefined)
     
     @scala.inline
-    def deleteInterval: Self = this.set("interval", js.undefined)
+    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPressedCls(value: String): Self = this.set("pressedCls", value.asInstanceOf[js.Any])
+    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
     @scala.inline
-    def deletePressedCls: Self = this.set("pressedCls", js.undefined)
+    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreventDefault(value: Boolean): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
+    def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
     @scala.inline
-    def deletePreventDefault: Self = this.set("preventDefault", js.undefined)
+    def setStopDefault(value: Boolean): Self = StObject.set(x, "stopDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = this.set("setDisabled", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetDisabled: Self = this.set("setDisabled", js.undefined)
-    
-    @scala.inline
-    def setStopDefault(value: Boolean): Self = this.set("stopDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStopDefault: Self = this.set("stopDefault", js.undefined)
+    def setStopDefaultUndefined: Self = StObject.set(x, "stopDefault", js.undefined)
   }
 }

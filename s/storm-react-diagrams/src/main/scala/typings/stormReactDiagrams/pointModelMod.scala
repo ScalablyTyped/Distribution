@@ -5,14 +5,14 @@ import typings.stormReactDiagrams.baseModelMod.BaseModel
 import typings.stormReactDiagrams.baseModelMod.BaseModelListener
 import typings.stormReactDiagrams.linkModelMod.LinkModel
 import typings.stormReactDiagrams.linkModelMod.LinkModelListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("storm-react-diagrams/dist/src/models/PointModel", JSImport.Namespace)
-@js.native
-object pointModelMod extends js.Object {
+object pointModelMod {
   
+  @JSImport("storm-react-diagrams/dist/src/models/PointModel", "PointModel")
   @js.native
   class PointModel protected () extends BaseModel[LinkModel[LinkModelListener], BaseModelListener] {
     def this(link: LinkModel[LinkModelListener], points: X) = this()

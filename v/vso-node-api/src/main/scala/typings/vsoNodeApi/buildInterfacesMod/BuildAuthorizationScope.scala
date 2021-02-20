@@ -1,15 +1,15 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BuildAuthorizationScope extends js.Object
+sealed trait BuildAuthorizationScope extends StObject
 @JSImport("vso-node-api/interfaces/BuildInterfaces", "BuildAuthorizationScope")
 @js.native
-object BuildAuthorizationScope extends js.Object {
+object BuildAuthorizationScope extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[BuildAuthorizationScope with Double] = js.native
@@ -19,14 +19,12 @@ object BuildAuthorizationScope extends js.Object {
     */
   @js.native
   sealed trait Project extends BuildAuthorizationScope
-  /* 2 */ @js.native
-  object Project extends TopLevel[Project with Double]
+  /* 2 */ val Project: typings.vsoNodeApi.buildInterfacesMod.BuildAuthorizationScope.Project with Double = js.native
   
   /**
     * The identity used should have build service account permissions scoped to the project collection. This is useful when resources for a single build are spread across multiple projects.
     */
   @js.native
   sealed trait ProjectCollection extends BuildAuthorizationScope
-  /* 1 */ @js.native
-  object ProjectCollection extends TopLevel[ProjectCollection with Double]
+  /* 1 */ val ProjectCollection: typings.vsoNodeApi.buildInterfacesMod.BuildAuthorizationScope.ProjectCollection with Double = js.native
 }

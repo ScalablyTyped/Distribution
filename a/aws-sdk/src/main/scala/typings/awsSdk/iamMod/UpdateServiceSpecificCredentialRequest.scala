@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateServiceSpecificCredentialRequest extends js.Object {
+trait UpdateServiceSpecificCredentialRequest extends StObject {
   
   /**
     * The unique identifier of the service-specific credential. This parameter allows (through its regex pattern) a string of characters that can consist of any upper or lowercased letter or digit.
@@ -31,30 +32,18 @@ object UpdateServiceSpecificCredentialRequest {
   }
   
   @scala.inline
-  implicit class UpdateServiceSpecificCredentialRequestOps[Self <: UpdateServiceSpecificCredentialRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateServiceSpecificCredentialRequestMutableBuilder[Self <: UpdateServiceSpecificCredentialRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = this.set("ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: statusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserName: Self = this.set("UserName", js.undefined)
+    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

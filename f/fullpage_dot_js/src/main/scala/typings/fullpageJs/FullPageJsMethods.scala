@@ -2,12 +2,13 @@ package typings.fullpageJs
 
 import typings.fullpageJs.anon.ToSections
 import typings.fullpageJs.fullpageJsStrings.all
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullPageJsMethods extends js.Object {
+trait FullPageJsMethods extends StObject {
   
   def apply(): js.Any = js.native
   def apply(options: FullPageJsOptions): js.Any = js.native

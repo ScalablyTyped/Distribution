@@ -1,11 +1,12 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnBeforeRequestDetails extends js.Object {
+trait OnBeforeRequestDetails extends StObject {
   
   /** The cookie store ID of the contextual identity. */
   var cookieStoreId: js.UndefOr[String] = js.native
@@ -75,81 +76,69 @@ object OnBeforeRequestDetails {
   }
   
   @scala.inline
-  implicit class OnBeforeRequestDetailsOps[Self <: OnBeforeRequestDetails] (val x: Self) extends AnyVal {
+  implicit class OnBeforeRequestDetailsMutableBuilder[Self <: OnBeforeRequestDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocumentUrl(value: String): Self = StObject.set(x, "documentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameId(value: Double): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    def setDocumentUrlUndefined: Self = StObject.set(x, "documentUrl", js.undefined)
     
     @scala.inline
-    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentFrameId(value: Double): Self = this.set("parentFrameId", value.asInstanceOf[js.Any])
+    def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     
     @scala.inline
-    def setTabId(value: Double): Self = this.set("tabId", value.asInstanceOf[js.Any])
+    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThirdParty(value: Boolean): Self = this.set("thirdParty", value.asInstanceOf[js.Any])
+    def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeStamp(value: Double): Self = this.set("timeStamp", value.asInstanceOf[js.Any])
+    def setOriginUrlUndefined: Self = StObject.set(x, "originUrl", js.undefined)
     
     @scala.inline
-    def setType(value: ResourceType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setRequestBody(value: OnBeforeRequestDetailsRequestBody): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCookieStoreId(value: String): Self = this.set("cookieStoreId", value.asInstanceOf[js.Any])
+    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     @scala.inline
-    def deleteCookieStoreId: Self = this.set("cookieStoreId", js.undefined)
+    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentUrl(value: String): Self = this.set("documentUrl", value.asInstanceOf[js.Any])
+    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDocumentUrl: Self = this.set("documentUrl", js.undefined)
+    def setThirdParty(value: Boolean): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncognito(value: Boolean): Self = this.set("incognito", value.asInstanceOf[js.Any])
+    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIncognito: Self = this.set("incognito", js.undefined)
+    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginUrl(value: String): Self = this.set("originUrl", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOriginUrl: Self = this.set("originUrl", js.undefined)
+    def setUrlClassification(value: UrlClassification): Self = StObject.set(x, "urlClassification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestBody(value: OnBeforeRequestDetailsRequestBody): Self = this.set("requestBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
-    
-    @scala.inline
-    def setUrlClassification(value: UrlClassification): Self = this.set("urlClassification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlClassification: Self = this.set("urlClassification", js.undefined)
+    def setUrlClassificationUndefined: Self = StObject.set(x, "urlClassification", js.undefined)
   }
 }

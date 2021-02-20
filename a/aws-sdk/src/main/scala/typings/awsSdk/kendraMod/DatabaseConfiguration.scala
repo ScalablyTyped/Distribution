@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatabaseConfiguration extends js.Object {
+trait DatabaseConfiguration extends StObject {
   
   /**
     * Information about the database column that provides information for user context filtering.
@@ -47,45 +48,33 @@ object DatabaseConfiguration {
   }
   
   @scala.inline
-  implicit class DatabaseConfigurationOps[Self <: DatabaseConfiguration] (val x: Self) extends AnyVal {
+  implicit class DatabaseConfigurationMutableBuilder[Self <: DatabaseConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAclConfiguration(value: AclConfiguration): Self = StObject.set(x, "AclConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAclConfigurationUndefined: Self = StObject.set(x, "AclConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColumnConfiguration(value: ColumnConfiguration): Self = StObject.set(x, "ColumnConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnConfiguration(value: ColumnConfiguration): Self = this.set("ColumnConfiguration", value.asInstanceOf[js.Any])
+    def setConnectionConfiguration(value: ConnectionConfiguration): Self = StObject.set(x, "ConnectionConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionConfiguration(value: ConnectionConfiguration): Self = this.set("ConnectionConfiguration", value.asInstanceOf[js.Any])
+    def setDatabaseEngineType(value: DatabaseEngineType): Self = StObject.set(x, "DatabaseEngineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatabaseEngineType(value: DatabaseEngineType): Self = this.set("DatabaseEngineType", value.asInstanceOf[js.Any])
+    def setSqlConfiguration(value: SqlConfiguration): Self = StObject.set(x, "SqlConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAclConfiguration(value: AclConfiguration): Self = this.set("AclConfiguration", value.asInstanceOf[js.Any])
+    def setSqlConfigurationUndefined: Self = StObject.set(x, "SqlConfiguration", js.undefined)
     
     @scala.inline
-    def deleteAclConfiguration: Self = this.set("AclConfiguration", js.undefined)
+    def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSqlConfiguration(value: SqlConfiguration): Self = this.set("SqlConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSqlConfiguration: Self = this.set("SqlConfiguration", js.undefined)
-    
-    @scala.inline
-    def setVpcConfiguration(value: DataSourceVpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

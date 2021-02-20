@@ -1,11 +1,12 @@
 package typings.chrome.chrome.fileSystemProvider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetActionsRequestedOptions extends js.Object {
+trait GetActionsRequestedOptions extends StObject {
   
   /** The path of the entry to return the list of actions for. */
   var entryPath: String = js.native
@@ -25,27 +26,15 @@ object GetActionsRequestedOptions {
   }
   
   @scala.inline
-  implicit class GetActionsRequestedOptionsOps[Self <: GetActionsRequestedOptions] (val x: Self) extends AnyVal {
+  implicit class GetActionsRequestedOptionsMutableBuilder[Self <: GetActionsRequestedOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setEntryPath(value: String): Self = this.set("entryPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFileSystemId(value: String): Self = this.set("fileSystemId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequestId(value: Double): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

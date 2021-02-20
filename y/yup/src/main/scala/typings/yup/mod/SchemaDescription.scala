@@ -2,6 +2,7 @@ package typings.yup.mod
 
 import typings.std.Record
 import typings.yup.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,36 +36,24 @@ object SchemaDescription {
   }
   
   @scala.inline
-  implicit class SchemaDescriptionOps[Self <: SchemaDescription] (val x: Self) extends AnyVal {
+  implicit class SchemaDescriptionMutableBuilder[Self <: SchemaDescription] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: Record[String, SchemaFieldDescription]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: Record[String, SchemaFieldDescription]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setTests(value: js.Array[Name]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setTestsVarargs(value: Name*): Self = StObject.set(x, "tests", js.Array(value :_*))
     
     @scala.inline
-    def setMeta(value: js.Object): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestsVarargs(value: Name*): Self = this.set("tests", js.Array(value :_*))
-    
-    @scala.inline
-    def setTests(value: js.Array[Name]): Self = this.set("tests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

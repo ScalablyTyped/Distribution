@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DriveInfo...
   */
 @js.native
-trait IDriveInfo extends js.Object {
+trait IDriveInfo extends StObject {
   
   /**
     * Value of the drive
@@ -43,30 +44,18 @@ object IDriveInfo {
   }
   
   @scala.inline
-  implicit class IDriveInfoOps[Self <: IDriveInfo] (val x: Self) extends AnyVal {
+  implicit class IDriveInfoMutableBuilder[Self <: IDriveInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQDrive(value: String): Self = StObject.set(x, "qDrive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQDrive(value: String): Self = this.set("qDrive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQName(value: String): Self = this.set("qName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQType(value: String): Self = this.set("qType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQTypeIdentifier(value: DriveType): Self = this.set("qTypeIdentifier", value.asInstanceOf[js.Any])
+    def setQTypeIdentifier(value: DriveType): Self = StObject.set(x, "qTypeIdentifier", value.asInstanceOf[js.Any])
   }
 }

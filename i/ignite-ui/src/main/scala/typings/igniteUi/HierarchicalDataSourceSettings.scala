@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,153 +73,141 @@ object HierarchicalDataSourceSettings {
   }
   
   @scala.inline
-  implicit class HierarchicalDataSourceSettingsOps[Self <: HierarchicalDataSourceSettings] (val x: Self) extends AnyVal {
+  implicit class HierarchicalDataSourceSettingsMutableBuilder[Self <: HierarchicalDataSourceSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutogenerate(value: Boolean): Self = StObject.set(x, "autogenerate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutogenerateUndefined: Self = StObject.set(x, "autogenerate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutogenerate(value: Boolean): Self = this.set("autogenerate", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteAutogenerate: Self = this.set("autogenerate", js.undefined)
+    def setCallee(value: js.Any): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: js.Any): Self = this.set("callback", value.asInstanceOf[js.Any])
+    def setCalleeUndefined: Self = StObject.set(x, "callee", js.undefined)
     
     @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
+    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallee(value: js.Any): Self = this.set("callee", value.asInstanceOf[js.Any])
+    def setDataBinding(value: js.Any): Self = StObject.set(x, "dataBinding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallee: Self = this.set("callee", js.undefined)
+    def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    def setDataBound(value: js.Any): Self = StObject.set(x, "dataBound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataBinding(value: js.Any): Self = this.set("dataBinding", value.asInstanceOf[js.Any])
+    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
     @scala.inline
-    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setDataBound(value: js.Any): Self = this.set("dataBound", value.asInstanceOf[js.Any])
+    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline
-    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    def setDefaultChildrenDataProperty(value: String): Self = StObject.set(x, "defaultChildrenDataProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    def setDefaultChildrenDataPropertyUndefined: Self = StObject.set(x, "defaultChildrenDataProperty", js.undefined)
     
     @scala.inline
-    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    def setFiltering(value: HierarchicalDataSourceSettingsFiltering): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultChildrenDataProperty(value: String): Self = this.set("defaultChildrenDataProperty", value.asInstanceOf[js.Any])
+    def setFilteringUndefined: Self = StObject.set(x, "filtering", js.undefined)
     
     @scala.inline
-    def deleteDefaultChildrenDataProperty: Self = this.set("defaultChildrenDataProperty", js.undefined)
+    def setInitialDataBindDepth(value: Double): Self = StObject.set(x, "initialDataBindDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltering(value: HierarchicalDataSourceSettingsFiltering): Self = this.set("filtering", value.asInstanceOf[js.Any])
+    def setInitialDataBindDepthUndefined: Self = StObject.set(x, "initialDataBindDepth", js.undefined)
     
     @scala.inline
-    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    def setLocalSchemaTransform(value: Boolean): Self = StObject.set(x, "localSchemaTransform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialDataBindDepth(value: Double): Self = this.set("initialDataBindDepth", value.asInstanceOf[js.Any])
+    def setLocalSchemaTransformUndefined: Self = StObject.set(x, "localSchemaTransform", js.undefined)
     
     @scala.inline
-    def deleteInitialDataBindDepth: Self = this.set("initialDataBindDepth", js.undefined)
+    def setMaxDataBindDepth(value: Double): Self = StObject.set(x, "maxDataBindDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalSchemaTransform(value: Boolean): Self = this.set("localSchemaTransform", value.asInstanceOf[js.Any])
+    def setMaxDataBindDepthUndefined: Self = StObject.set(x, "maxDataBindDepth", js.undefined)
     
     @scala.inline
-    def deleteLocalSchemaTransform: Self = this.set("localSchemaTransform", js.undefined)
+    def setOdata(value: Boolean): Self = StObject.set(x, "odata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxDataBindDepth(value: Double): Self = this.set("maxDataBindDepth", value.asInstanceOf[js.Any])
+    def setOdataUndefined: Self = StObject.set(x, "odata", js.undefined)
     
     @scala.inline
-    def deleteMaxDataBindDepth: Self = this.set("maxDataBindDepth", js.undefined)
+    def setPaging(value: HierarchicalDataSourceSettingsPaging): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOdata(value: Boolean): Self = this.set("odata", value.asInstanceOf[js.Any])
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def deleteOdata: Self = this.set("odata", js.undefined)
+    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging(value: HierarchicalDataSourceSettingsPaging): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setResponseContentType(value: js.Any): Self = StObject.set(x, "responseContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    def setResponseContentTypeUndefined: Self = StObject.set(x, "responseContentType", js.undefined)
     
     @scala.inline
-    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    def setResponseDataType(value: js.Any): Self = StObject.set(x, "responseDataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseContentType(value: js.Any): Self = this.set("responseContentType", value.asInstanceOf[js.Any])
+    def setResponseDataTypeUndefined: Self = StObject.set(x, "responseDataType", js.undefined)
     
     @scala.inline
-    def deleteResponseContentType: Self = this.set("responseContentType", js.undefined)
+    def setSchema(value: HierarchicalDataSourceSettingsSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponseDataType(value: js.Any): Self = this.set("responseDataType", value.asInstanceOf[js.Any])
+    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def deleteResponseDataType: Self = this.set("responseDataType", js.undefined)
+    def setSorting(value: HierarchicalDataSourceSettingsSorting): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchema(value: HierarchicalDataSourceSettingsSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
     @scala.inline
-    def deleteSchema: Self = this.set("schema", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSorting(value: HierarchicalDataSourceSettingsSorting): Self = this.set("sorting", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
+    def setUrlParamsEncoded(value: js.Any): Self = StObject.set(x, "urlParamsEncoded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUrlParamsEncodedUndefined: Self = StObject.set(x, "urlParamsEncoded", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setUrlParamsEncoding(value: js.Any): Self = StObject.set(x, "urlParamsEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrlParamsEncoded(value: js.Any): Self = this.set("urlParamsEncoded", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlParamsEncoded: Self = this.set("urlParamsEncoded", js.undefined)
-    
-    @scala.inline
-    def setUrlParamsEncoding(value: js.Any): Self = this.set("urlParamsEncoding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlParamsEncoding: Self = this.set("urlParamsEncoding", js.undefined)
+    def setUrlParamsEncodingUndefined: Self = StObject.set(x, "urlParamsEncoding", js.undefined)
   }
 }

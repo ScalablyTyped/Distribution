@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConfigurationManagerClientEnabledFeatures extends js.Object {
+trait ConfigurationManagerClientEnabledFeatures extends StObject {
   
   // Whether compliance policy is managed by Intune
   var compliancePolicy: js.UndefOr[Boolean] = js.native
@@ -34,54 +35,42 @@ object ConfigurationManagerClientEnabledFeatures {
   }
   
   @scala.inline
-  implicit class ConfigurationManagerClientEnabledFeaturesOps[Self <: ConfigurationManagerClientEnabledFeatures] (val x: Self) extends AnyVal {
+  implicit class ConfigurationManagerClientEnabledFeaturesMutableBuilder[Self <: ConfigurationManagerClientEnabledFeatures] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompliancePolicy(value: Boolean): Self = StObject.set(x, "compliancePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompliancePolicyUndefined: Self = StObject.set(x, "compliancePolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeviceConfiguration(value: Boolean): Self = StObject.set(x, "deviceConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompliancePolicy(value: Boolean): Self = this.set("compliancePolicy", value.asInstanceOf[js.Any])
+    def setDeviceConfigurationUndefined: Self = StObject.set(x, "deviceConfiguration", js.undefined)
     
     @scala.inline
-    def deleteCompliancePolicy: Self = this.set("compliancePolicy", js.undefined)
+    def setInventory(value: Boolean): Self = StObject.set(x, "inventory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceConfiguration(value: Boolean): Self = this.set("deviceConfiguration", value.asInstanceOf[js.Any])
+    def setInventoryUndefined: Self = StObject.set(x, "inventory", js.undefined)
     
     @scala.inline
-    def deleteDeviceConfiguration: Self = this.set("deviceConfiguration", js.undefined)
+    def setModernApps(value: Boolean): Self = StObject.set(x, "modernApps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventory(value: Boolean): Self = this.set("inventory", value.asInstanceOf[js.Any])
+    def setModernAppsUndefined: Self = StObject.set(x, "modernApps", js.undefined)
     
     @scala.inline
-    def deleteInventory: Self = this.set("inventory", js.undefined)
+    def setResourceAccess(value: Boolean): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModernApps(value: Boolean): Self = this.set("modernApps", value.asInstanceOf[js.Any])
+    def setResourceAccessUndefined: Self = StObject.set(x, "resourceAccess", js.undefined)
     
     @scala.inline
-    def deleteModernApps: Self = this.set("modernApps", js.undefined)
+    def setWindowsUpdateForBusiness(value: Boolean): Self = StObject.set(x, "windowsUpdateForBusiness", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceAccess(value: Boolean): Self = this.set("resourceAccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceAccess: Self = this.set("resourceAccess", js.undefined)
-    
-    @scala.inline
-    def setWindowsUpdateForBusiness(value: Boolean): Self = this.set("windowsUpdateForBusiness", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWindowsUpdateForBusiness: Self = this.set("windowsUpdateForBusiness", js.undefined)
+    def setWindowsUpdateForBusinessUndefined: Self = StObject.set(x, "windowsUpdateForBusiness", js.undefined)
   }
 }

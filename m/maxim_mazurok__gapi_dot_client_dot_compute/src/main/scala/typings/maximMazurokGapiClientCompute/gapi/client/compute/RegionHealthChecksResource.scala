@@ -6,12 +6,13 @@ import typings.maximMazurokGapiClientCompute.anon.FieldsHealthCheckKey
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import typings.maximMazurokGapiClientCompute.anon.HealthCheckKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRegion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RegionHealthChecksResource extends js.Object {
+trait RegionHealthChecksResource extends StObject {
   
   /** Deletes the specified HealthCheck resource. */
   def delete(): Request[Operation] = js.native

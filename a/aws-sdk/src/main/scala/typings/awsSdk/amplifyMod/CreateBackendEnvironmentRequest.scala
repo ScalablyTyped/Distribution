@@ -1,11 +1,12 @@
 package typings.awsSdk.amplifyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBackendEnvironmentRequest extends js.Object {
+trait CreateBackendEnvironmentRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
@@ -36,36 +37,24 @@ object CreateBackendEnvironmentRequest {
   }
   
   @scala.inline
-  implicit class CreateBackendEnvironmentRequestOps[Self <: CreateBackendEnvironmentRequest] (val x: Self) extends AnyVal {
+  implicit class CreateBackendEnvironmentRequestMutableBuilder[Self <: CreateBackendEnvironmentRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeploymentArtifacts(value: DeploymentArtifacts): Self = StObject.set(x, "deploymentArtifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDeploymentArtifactsUndefined: Self = StObject.set(x, "deploymentArtifacts", js.undefined)
     
     @scala.inline
-    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = this.set("environmentName", value.asInstanceOf[js.Any])
+    def setStackName(value: StackName): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeploymentArtifacts(value: DeploymentArtifacts): Self = this.set("deploymentArtifacts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeploymentArtifacts: Self = this.set("deploymentArtifacts", js.undefined)
-    
-    @scala.inline
-    def setStackName(value: StackName): Self = this.set("stackName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackName: Self = this.set("stackName", js.undefined)
+    def setStackNameUndefined: Self = StObject.set(x, "stackName", js.undefined)
   }
 }

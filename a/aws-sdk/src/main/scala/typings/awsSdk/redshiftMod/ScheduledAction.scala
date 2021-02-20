@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScheduledAction extends js.Object {
+trait ScheduledAction extends StObject {
   
   /**
     * The end time in UTC when the schedule is no longer active. After this time, the scheduled action does not trigger. 
@@ -61,75 +62,63 @@ object ScheduledAction {
   }
   
   @scala.inline
-  implicit class ScheduledActionOps[Self <: ScheduledAction] (val x: Self) extends AnyVal {
+  implicit class ScheduledActionMutableBuilder[Self <: ScheduledAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIamRole(value: String): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: TStamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setIamRoleUndefined: Self = StObject.set(x, "IamRole", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setNextInvocations(value: ScheduledActionTimeList): Self = StObject.set(x, "NextInvocations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIamRole(value: String): Self = this.set("IamRole", value.asInstanceOf[js.Any])
+    def setNextInvocationsUndefined: Self = StObject.set(x, "NextInvocations", js.undefined)
     
     @scala.inline
-    def deleteIamRole: Self = this.set("IamRole", js.undefined)
+    def setNextInvocationsVarargs(value: TStamp*): Self = StObject.set(x, "NextInvocations", js.Array(value :_*))
     
     @scala.inline
-    def setNextInvocationsVarargs(value: TStamp*): Self = this.set("NextInvocations", js.Array(value :_*))
+    def setSchedule(value: String): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextInvocations(value: ScheduledActionTimeList): Self = this.set("NextInvocations", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteNextInvocations: Self = this.set("NextInvocations", js.undefined)
+    def setScheduledActionDescription(value: String): Self = StObject.set(x, "ScheduledActionDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: String): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setScheduledActionDescriptionUndefined: Self = StObject.set(x, "ScheduledActionDescription", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setScheduledActionName(value: String): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledActionDescription(value: String): Self = this.set("ScheduledActionDescription", value.asInstanceOf[js.Any])
+    def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
     
     @scala.inline
-    def deleteScheduledActionDescription: Self = this.set("ScheduledActionDescription", js.undefined)
+    def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScheduledActionName(value: String): Self = this.set("ScheduledActionName", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
     @scala.inline
-    def deleteScheduledActionName: Self = this.set("ScheduledActionName", js.undefined)
+    def setState(value: ScheduledActionState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: TStamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    def setTargetAction(value: ScheduledActionType): Self = StObject.set(x, "TargetAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: ScheduledActionState): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
-    
-    @scala.inline
-    def setTargetAction(value: ScheduledActionType): Self = this.set("TargetAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetAction: Self = this.set("TargetAction", js.undefined)
+    def setTargetActionUndefined: Self = StObject.set(x, "TargetAction", js.undefined)
   }
 }

@@ -1,13 +1,16 @@
 package typings.rotJs
 
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rot-js/lib/display/tile", JSImport.Namespace)
-@js.native
-object tileMod extends js.Object {
+object tileMod {
+  
+  @JSImport("rot-js/lib/display/tile", JSImport.Default)
+  @js.native
+  class default () extends Tile
   
   @js.native
   trait Tile
@@ -17,7 +20,4 @@ object tileMod extends js.Object {
     
     def computeFontSize(): Double = js.native
   }
-  
-  @js.native
-  class default () extends Tile
 }

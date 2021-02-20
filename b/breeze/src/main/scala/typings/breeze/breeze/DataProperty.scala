@@ -1,5 +1,6 @@
 package typings.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,51 +58,39 @@ object DataProperty {
   }
   
   @scala.inline
-  implicit class DataPropertyOps[Self <: DataProperty] (val x: Self) extends AnyVal {
+  implicit class DataPropertyMutableBuilder[Self <: DataProperty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComplexTypeName(value: String): Self = StObject.set(x, "complexTypeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConcurrencyMode(value: String): Self = StObject.set(x, "concurrencyMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataType(value: DataTypeSymbol): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComplexTypeName(value: String): Self = this.set("complexTypeName", value.asInstanceOf[js.Any])
+    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConcurrencyMode(value: String): Self = this.set("concurrencyMode", value.asInstanceOf[js.Any])
+    def setIsComplexProperty(value: Boolean): Self = StObject.set(x, "isComplexProperty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataType(value: DataTypeSymbol): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    def setIsInherited(value: Boolean): Self = StObject.set(x, "isInherited", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    def setIsNullable(value: Boolean): Self = StObject.set(x, "isNullable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsComplexProperty(value: Boolean): Self = this.set("isComplexProperty", value.asInstanceOf[js.Any])
+    def setIsPartOfKey(value: Boolean): Self = StObject.set(x, "isPartOfKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsInherited(value: Boolean): Self = this.set("isInherited", value.asInstanceOf[js.Any])
+    def setIsUnmapped(value: Boolean): Self = StObject.set(x, "isUnmapped", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNullable(value: Boolean): Self = this.set("isNullable", value.asInstanceOf[js.Any])
+    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPartOfKey(value: Boolean): Self = this.set("isPartOfKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsUnmapped(value: Boolean): Self = this.set("isUnmapped", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelatedNavigationProperty(value: NavigationProperty): Self = this.set("relatedNavigationProperty", value.asInstanceOf[js.Any])
+    def setRelatedNavigationProperty(value: NavigationProperty): Self = StObject.set(x, "relatedNavigationProperty", value.asInstanceOf[js.Any])
   }
 }

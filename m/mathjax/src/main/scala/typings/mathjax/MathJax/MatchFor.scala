@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MatchFor extends js.Object {
+trait MatchFor extends StObject {
   
   /*Whether to match the font size for the HTML-CSS output.*/
   var `HTML-CSS`: js.UndefOr[Boolean] = js.native
@@ -25,36 +26,24 @@ object MatchFor {
   }
   
   @scala.inline
-  implicit class MatchForOps[Self <: MatchFor] (val x: Self) extends AnyVal {
+  implicit class MatchForMutableBuilder[Self <: MatchFor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setHTML-CSS`(value: Boolean): Self = StObject.set(x, "HTML-CSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setHTML-CSSUndefined`: Self = StObject.set(x, "HTML-CSS", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNativeMML(value: Boolean): Self = StObject.set(x, "NativeMML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setHTML-CSS`(value: Boolean): Self = this.set("HTML-CSS", value.asInstanceOf[js.Any])
+    def setNativeMMLUndefined: Self = StObject.set(x, "NativeMML", js.undefined)
     
     @scala.inline
-    def `deleteHTML-CSS`: Self = this.set("HTML-CSS", js.undefined)
+    def setSVG(value: Boolean): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeMML(value: Boolean): Self = this.set("NativeMML", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNativeMML: Self = this.set("NativeMML", js.undefined)
-    
-    @scala.inline
-    def setSVG(value: Boolean): Self = this.set("SVG", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSVG: Self = this.set("SVG", js.undefined)
+    def setSVGUndefined: Self = StObject.set(x, "SVG", js.undefined)
   }
 }

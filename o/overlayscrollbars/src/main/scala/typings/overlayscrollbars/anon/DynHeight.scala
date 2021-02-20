@@ -1,11 +1,12 @@
 package typings.overlayscrollbars.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DynHeight extends js.Object {
+trait DynHeight extends StObject {
   
   var dynHeight: js.UndefOr[Boolean] = js.native
   
@@ -22,42 +23,30 @@ object DynHeight {
   }
   
   @scala.inline
-  implicit class DynHeightOps[Self <: DynHeight] (val x: Self) extends AnyVal {
+  implicit class DynHeightMutableBuilder[Self <: DynHeight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDynHeight(value: Boolean): Self = StObject.set(x, "dynHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDynHeightUndefined: Self = StObject.set(x, "dynHeight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynWidth(value: Boolean): Self = StObject.set(x, "dynWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynHeight(value: Boolean): Self = this.set("dynHeight", value.asInstanceOf[js.Any])
+    def setDynWidthUndefined: Self = StObject.set(x, "dynWidth", js.undefined)
     
     @scala.inline
-    def deleteDynHeight: Self = this.set("dynHeight", js.undefined)
+    def setInheritedAttrs(value: String | js.Array[String]): Self = StObject.set(x, "inheritedAttrs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDynWidth(value: Boolean): Self = this.set("dynWidth", value.asInstanceOf[js.Any])
+    def setInheritedAttrsNull: Self = StObject.set(x, "inheritedAttrs", null)
     
     @scala.inline
-    def deleteDynWidth: Self = this.set("dynWidth", js.undefined)
+    def setInheritedAttrsUndefined: Self = StObject.set(x, "inheritedAttrs", js.undefined)
     
     @scala.inline
-    def setInheritedAttrsVarargs(value: String*): Self = this.set("inheritedAttrs", js.Array(value :_*))
-    
-    @scala.inline
-    def setInheritedAttrs(value: String | js.Array[String]): Self = this.set("inheritedAttrs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInheritedAttrs: Self = this.set("inheritedAttrs", js.undefined)
-    
-    @scala.inline
-    def setInheritedAttrsNull: Self = this.set("inheritedAttrs", null)
+    def setInheritedAttrsVarargs(value: String*): Self = StObject.set(x, "inheritedAttrs", js.Array(value :_*))
   }
 }

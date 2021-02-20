@@ -4,13 +4,14 @@ import typings.squareConnect.squareConnectStrings.COMPLETED
 import typings.squareConnect.squareConnectStrings.FAILED
 import typings.squareConnect.squareConnectStrings.PENDING
 import typings.squareConnect.squareConnectStrings.REJECTED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "PaymentRefund")
 @js.native
-class PaymentRefund () extends js.Object {
+class PaymentRefund () extends StObject {
   
   /**
     * The amount of money refunded, specified in the smallest denomination of the applicable currency.

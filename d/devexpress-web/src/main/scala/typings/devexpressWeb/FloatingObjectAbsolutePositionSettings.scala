@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains page margin settings.
   */
 @js.native
-trait FloatingObjectAbsolutePositionSettings extends js.Object {
+trait FloatingObjectAbsolutePositionSettings extends StObject {
   
   /**
     * Gets or sets a floating object's horizontal position relative to an element specified by the FloatingObjectAbsolutePositionSettings.horizontalPositionType property.
@@ -44,30 +45,18 @@ object FloatingObjectAbsolutePositionSettings {
   }
   
   @scala.inline
-  implicit class FloatingObjectAbsolutePositionSettingsOps[Self <: FloatingObjectAbsolutePositionSettings] (val x: Self) extends AnyVal {
+  implicit class FloatingObjectAbsolutePositionSettingsMutableBuilder[Self <: FloatingObjectAbsolutePositionSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHorizontalAbsolutePosition(value: Double): Self = StObject.set(x, "horizontalAbsolutePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setVerticalAbsolutePosition(value: Double): Self = StObject.set(x, "verticalAbsolutePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAbsolutePosition(value: Double): Self = this.set("horizontalAbsolutePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = this.set("horizontalPositionType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAbsolutePosition(value: Double): Self = this.set("verticalAbsolutePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = this.set("verticalPositionType", value.asInstanceOf[js.Any])
+    def setVerticalPositionType(value: FloatingObjectVerticalPositionType): Self = StObject.set(x, "verticalPositionType", value.asInstanceOf[js.Any])
   }
 }

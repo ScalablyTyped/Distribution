@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveLayerInfoProperties extends js.Object {
+trait ActiveLayerInfoProperties extends StObject {
   
   /**
     * A collection of child activeLayerInfos.
@@ -93,90 +94,78 @@ object ActiveLayerInfoProperties {
   }
   
   @scala.inline
-  implicit class ActiveLayerInfoPropertiesOps[Self <: ActiveLayerInfoProperties] (val x: Self) extends AnyVal {
+  implicit class ActiveLayerInfoPropertiesMutableBuilder[Self <: ActiveLayerInfoProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildrenVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setChildrenVarargs(value: ActiveLayerInfoProperties*): Self = this.set("children", js.Array(value :_*))
+    def setIsScaleDriven(value: Boolean): Self = StObject.set(x, "isScaleDriven", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: CollectionProperties[ActiveLayerInfoProperties]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setIsScaleDrivenUndefined: Self = StObject.set(x, "isScaleDriven", js.undefined)
     
     @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
+    def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsScaleDriven(value: Boolean): Self = this.set("isScaleDriven", value.asInstanceOf[js.Any])
+    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
     @scala.inline
-    def deleteIsScaleDriven: Self = this.set("isScaleDriven", js.undefined)
+    def setLayerView(value: LayerViewProperties): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayer(value: LayerProperties): Self = this.set("layer", value.asInstanceOf[js.Any])
+    def setLayerViewUndefined: Self = StObject.set(x, "layerView", js.undefined)
     
     @scala.inline
-    def deleteLayer: Self = this.set("layer", js.undefined)
+    def setLegendElements(value: js.Array[LegendElement]): Self = StObject.set(x, "legendElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayerView(value: LayerViewProperties): Self = this.set("layerView", value.asInstanceOf[js.Any])
+    def setLegendElementsUndefined: Self = StObject.set(x, "legendElements", js.undefined)
     
     @scala.inline
-    def deleteLayerView: Self = this.set("layerView", js.undefined)
+    def setLegendElementsVarargs(value: LegendElement*): Self = StObject.set(x, "legendElements", js.Array(value :_*))
     
     @scala.inline
-    def setLegendElementsVarargs(value: LegendElement*): Self = this.set("legendElements", js.Array(value :_*))
+    def setParent(value: ActiveLayerInfoProperties): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendElements(value: js.Array[LegendElement]): Self = this.set("legendElements", value.asInstanceOf[js.Any])
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def deleteLegendElements: Self = this.set("legendElements", js.undefined)
+    def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: ActiveLayerInfoProperties): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
     @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReady(value: Boolean): Self = this.set("ready", value.asInstanceOf[js.Any])
+    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def deleteReady: Self = this.set("ready", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteScale: Self = this.set("scale", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setView(value: ViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersion: Self = this.set("version", js.undefined)
-    
-    @scala.inline
-    def setView(value: ViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

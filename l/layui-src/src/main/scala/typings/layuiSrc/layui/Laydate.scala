@@ -1,6 +1,7 @@
 package typings.layuiSrc.layui
 
 import typings.layuiSrc.anon.Config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://www.layui.com/doc/modules/laydate.html
   */
 @js.native
-trait Laydate extends js.Object {
+trait Laydate extends StObject {
   
   // 获取指定年月的最后一天是 1-31
   def getEndDate(): Double = js.native

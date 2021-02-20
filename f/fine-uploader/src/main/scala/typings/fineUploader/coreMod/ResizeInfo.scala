@@ -4,12 +4,13 @@ import typings.std.Blob
 import typings.std.File
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResizeInfo extends js.Object {
+trait ResizeInfo extends StObject {
   
   /**
     * The original `File` or `Blob` object, if available.
@@ -50,54 +51,42 @@ object ResizeInfo {
   }
   
   @scala.inline
-  implicit class ResizeInfoOps[Self <: ResizeInfo] (val x: Self) extends AnyVal {
+  implicit class ResizeInfoMutableBuilder[Self <: ResizeInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: File | Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlob(value: File | Blob): Self = this.set("blob", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteBlob: Self = this.set("blob", js.undefined)
+    def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setSourceCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "sourceCanvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: HTMLImageElement): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setSourceCanvasUndefined: Self = StObject.set(x, "sourceCanvas", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setTargetCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "targetCanvas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceCanvas(value: HTMLCanvasElement): Self = this.set("sourceCanvas", value.asInstanceOf[js.Any])
+    def setTargetCanvasUndefined: Self = StObject.set(x, "targetCanvas", js.undefined)
     
     @scala.inline
-    def deleteSourceCanvas: Self = this.set("sourceCanvas", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetCanvas(value: HTMLCanvasElement): Self = this.set("targetCanvas", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTargetCanvas: Self = this.set("targetCanvas", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyContactGroupMembersRequest extends js.Object {
+trait ModifyContactGroupMembersRequest extends StObject {
   
   /**
     * Optional. The resource names of the contact people to add in the form of `people/{person_id}`. The total number of resource names in `resource_names_to_add` and
@@ -28,36 +29,24 @@ object ModifyContactGroupMembersRequest {
   }
   
   @scala.inline
-  implicit class ModifyContactGroupMembersRequestOps[Self <: ModifyContactGroupMembersRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyContactGroupMembersRequestMutableBuilder[Self <: ModifyContactGroupMembersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResourceNamesToAdd(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceNamesToAddUndefined: Self = StObject.set(x, "resourceNamesToAdd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourceNamesToAddVarargs(value: String*): Self = StObject.set(x, "resourceNamesToAdd", js.Array(value :_*))
     
     @scala.inline
-    def setResourceNamesToAddVarargs(value: String*): Self = this.set("resourceNamesToAdd", js.Array(value :_*))
+    def setResourceNamesToRemove(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToRemove", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceNamesToAdd(value: js.Array[String]): Self = this.set("resourceNamesToAdd", value.asInstanceOf[js.Any])
+    def setResourceNamesToRemoveUndefined: Self = StObject.set(x, "resourceNamesToRemove", js.undefined)
     
     @scala.inline
-    def deleteResourceNamesToAdd: Self = this.set("resourceNamesToAdd", js.undefined)
-    
-    @scala.inline
-    def setResourceNamesToRemoveVarargs(value: String*): Self = this.set("resourceNamesToRemove", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceNamesToRemove(value: js.Array[String]): Self = this.set("resourceNamesToRemove", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceNamesToRemove: Self = this.set("resourceNamesToRemove", js.undefined)
+    def setResourceNamesToRemoveVarargs(value: String*): Self = StObject.set(x, "resourceNamesToRemove", js.Array(value :_*))
   }
 }

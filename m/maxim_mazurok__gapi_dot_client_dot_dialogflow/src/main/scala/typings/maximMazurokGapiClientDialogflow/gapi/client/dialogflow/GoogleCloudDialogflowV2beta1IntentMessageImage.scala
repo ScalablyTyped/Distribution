@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2beta1IntentMessageImage extends js.Object {
+trait GoogleCloudDialogflowV2beta1IntentMessageImage extends StObject {
   
   /** A text description of the image to be used for accessibility, e.g., screen readers. Required if image_uri is set for CarouselSelect. */
   var accessibilityText: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GoogleCloudDialogflowV2beta1IntentMessageImage {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageImageOps[Self <: GoogleCloudDialogflowV2beta1IntentMessageImage] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2beta1IntentMessageImageMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageImage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibilityText(value: String): Self = StObject.set(x, "accessibilityText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibilityTextUndefined: Self = StObject.set(x, "accessibilityText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibilityText(value: String): Self = this.set("accessibilityText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAccessibilityText: Self = this.set("accessibilityText", js.undefined)
-    
-    @scala.inline
-    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
   }
 }

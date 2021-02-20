@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param event - The original browser TouchEvent.
   */
 @js.native
-trait TouchEvent extends js.Object {
+trait TouchEvent extends StObject {
   
   /**
     * A list of touches that have changed since the last event.
@@ -61,39 +62,27 @@ object TouchEvent {
   }
   
   @scala.inline
-  implicit class TouchEventOps[Self <: TouchEvent] (val x: Self) extends AnyVal {
+  implicit class TouchEventMutableBuilder[Self <: TouchEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChangedTouchesVarargs(value: Touch*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedTouchesVarargs(value: Touch*): Self = this.set("changedTouches", js.Array(value :_*))
+    def setEvent(value: TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangedTouches(value: js.Array[Touch]): Self = this.set("changedTouches", value.asInstanceOf[js.Any])
+    def setGetTouchById(value: (Double, js.Array[Touch]) => Touch): Self = StObject.set(x, "getTouchById", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setElement(value: Element): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setTouches(value: js.Array[Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: TouchEvent): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetTouchById(value: (Double, js.Array[Touch]) => Touch): Self = this.set("getTouchById", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setTouchesVarargs(value: Touch*): Self = this.set("touches", js.Array(value :_*))
-    
-    @scala.inline
-    def setTouches(value: js.Array[Touch]): Self = this.set("touches", value.asInstanceOf[js.Any])
+    def setTouchesVarargs(value: Touch*): Self = StObject.set(x, "touches", js.Array(value :_*))
   }
 }

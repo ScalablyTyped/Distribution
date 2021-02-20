@@ -3,13 +3,12 @@ package typings.marko
 import typings.marko.domElementMod.DomElement
 import typings.node.eventsMod.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("marko/src/components/Component", JSImport.Namespace)
-@js.native
-object componentMod extends js.Object {
+object componentMod {
   
   @js.native
   trait Component

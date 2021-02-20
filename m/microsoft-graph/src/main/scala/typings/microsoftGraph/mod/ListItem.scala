@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,75 +35,63 @@ object ListItem {
   }
   
   @scala.inline
-  implicit class ListItemOps[Self <: ListItem] (val x: Self) extends AnyVal {
+  implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnalytics(value: NullableOption[ItemAnalytics]): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnalyticsNull: Self = StObject.set(x, "analytics", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
     
     @scala.inline
-    def setAnalytics(value: NullableOption[ItemAnalytics]): Self = this.set("analytics", value.asInstanceOf[js.Any])
+    def setContentType(value: NullableOption[ContentTypeInfo]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnalytics: Self = this.set("analytics", js.undefined)
+    def setContentTypeNull: Self = StObject.set(x, "contentType", null)
     
     @scala.inline
-    def setAnalyticsNull: Self = this.set("analytics", null)
+    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
     @scala.inline
-    def setContentType(value: NullableOption[ContentTypeInfo]): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
+    def setDriveItemNull: Self = StObject.set(x, "driveItem", null)
     
     @scala.inline
-    def setContentTypeNull: Self = this.set("contentType", null)
+    def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
     
     @scala.inline
-    def setDriveItem(value: NullableOption[DriveItem]): Self = this.set("driveItem", value.asInstanceOf[js.Any])
+    def setFields(value: NullableOption[FieldValueSet]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDriveItem: Self = this.set("driveItem", js.undefined)
+    def setFieldsNull: Self = StObject.set(x, "fields", null)
     
     @scala.inline
-    def setDriveItemNull: Self = this.set("driveItem", null)
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def setFields(value: NullableOption[FieldValueSet]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setSharepointIds(value: NullableOption[SharepointIds]): Self = StObject.set(x, "sharepointIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setSharepointIdsNull: Self = StObject.set(x, "sharepointIds", null)
     
     @scala.inline
-    def setFieldsNull: Self = this.set("fields", null)
+    def setSharepointIdsUndefined: Self = StObject.set(x, "sharepointIds", js.undefined)
     
     @scala.inline
-    def setSharepointIds(value: NullableOption[SharepointIds]): Self = this.set("sharepointIds", value.asInstanceOf[js.Any])
+    def setVersions(value: NullableOption[js.Array[ListItemVersion]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSharepointIds: Self = this.set("sharepointIds", js.undefined)
+    def setVersionsNull: Self = StObject.set(x, "versions", null)
     
     @scala.inline
-    def setSharepointIdsNull: Self = this.set("sharepointIds", null)
+    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
     @scala.inline
-    def setVersionsVarargs(value: ListItemVersion*): Self = this.set("versions", js.Array(value :_*))
-    
-    @scala.inline
-    def setVersions(value: NullableOption[js.Array[ListItemVersion]]): Self = this.set("versions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersions: Self = this.set("versions", js.undefined)
-    
-    @scala.inline
-    def setVersionsNull: Self = this.set("versions", null)
+    def setVersionsVarargs(value: ListItemVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

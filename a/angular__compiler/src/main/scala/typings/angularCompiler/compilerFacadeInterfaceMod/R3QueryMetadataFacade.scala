@@ -1,11 +1,12 @@
 package typings.angularCompiler.compilerFacadeInterfaceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait R3QueryMetadataFacade extends js.Object {
+trait R3QueryMetadataFacade extends StObject {
   
   var descendants: Boolean = js.native
   
@@ -34,42 +35,30 @@ object R3QueryMetadataFacade {
   }
   
   @scala.inline
-  implicit class R3QueryMetadataFacadeOps[Self <: R3QueryMetadataFacade] (val x: Self) extends AnyVal {
+  implicit class R3QueryMetadataFacadeMutableBuilder[Self <: R3QueryMetadataFacade] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPredicate(value: js.Any | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescendants(value: Boolean): Self = this.set("descendants", value.asInstanceOf[js.Any])
+    def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
     
     @scala.inline
-    def setFirst(value: Boolean): Self = this.set("first", value.asInstanceOf[js.Any])
+    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredicateVarargs(value: String*): Self = this.set("predicate", js.Array(value :_*))
+    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredicate(value: js.Any | js.Array[String]): Self = this.set("predicate", value.asInstanceOf[js.Any])
+    def setReadNull: Self = StObject.set(x, "read", null)
     
     @scala.inline
-    def setPropertyName(value: String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRead(value: js.Any): Self = this.set("read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadNull: Self = this.set("read", null)
+    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
   }
 }

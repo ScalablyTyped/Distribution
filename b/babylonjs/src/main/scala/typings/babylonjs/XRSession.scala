@@ -4,6 +4,7 @@ import typings.babylonjs.anon.PlaneDetectionState
 import typings.std.AddEventListenerOptions
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventListenerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // They are intended for use with either Babylon Native https://github.com/BabylonJS/BabylonNative or
 // Babylon React Native: https://github.com/BabylonJS/BabylonReactNative
 @js.native
-trait XRSession extends js.Object {
+trait XRSession extends StObject {
   
   def addEventListener(`type`: XREventType, listener: XREventHandler): Unit = js.native
   def addEventListener(`type`: XREventType, listener: XREventHandler, options: Boolean): Unit = js.native

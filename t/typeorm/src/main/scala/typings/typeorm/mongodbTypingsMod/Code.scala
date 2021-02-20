@@ -1,12 +1,13 @@
 package typings.typeorm.mongodbTypingsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "Code")
 @js.native
-class Code protected () extends js.Object {
+class Code protected () extends StObject {
   /**
     *
     * @param code a string or function.

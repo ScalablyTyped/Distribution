@@ -3,12 +3,13 @@ package typings.linq4js
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.linq4js.anon.GroupValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Array[T] extends js.Object {
+trait Array[T] extends StObject {
   
   /**
     * Adds an object to the array

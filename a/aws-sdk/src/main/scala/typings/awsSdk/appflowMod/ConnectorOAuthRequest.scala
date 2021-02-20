@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorOAuthRequest extends js.Object {
+trait ConnectorOAuthRequest extends StObject {
   
   /**
     *  The code provided by the connector when it has been authenticated via the connected app. 
@@ -26,30 +27,18 @@ object ConnectorOAuthRequest {
   }
   
   @scala.inline
-  implicit class ConnectorOAuthRequestOps[Self <: ConnectorOAuthRequest] (val x: Self) extends AnyVal {
+  implicit class ConnectorOAuthRequestMutableBuilder[Self <: ConnectorOAuthRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthCode(value: AuthCode): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRedirectUri(value: RedirectUri): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthCode(value: AuthCode): Self = this.set("authCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAuthCode: Self = this.set("authCode", js.undefined)
-    
-    @scala.inline
-    def setRedirectUri(value: RedirectUri): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeTextTranslationJobResponse extends js.Object {
+trait DescribeTextTranslationJobResponse extends StObject {
   
   /**
     * An object that contains the properties associated with an asynchronous batch translation job.
@@ -21,24 +22,12 @@ object DescribeTextTranslationJobResponse {
   }
   
   @scala.inline
-  implicit class DescribeTextTranslationJobResponseOps[Self <: DescribeTextTranslationJobResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeTextTranslationJobResponseMutableBuilder[Self <: DescribeTextTranslationJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTextTranslationJobProperties(value: TextTranslationJobProperties): Self = StObject.set(x, "TextTranslationJobProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextTranslationJobProperties(value: TextTranslationJobProperties): Self = this.set("TextTranslationJobProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextTranslationJobProperties: Self = this.set("TextTranslationJobProperties", js.undefined)
+    def setTextTranslationJobPropertiesUndefined: Self = StObject.set(x, "TextTranslationJobProperties", js.undefined)
   }
 }

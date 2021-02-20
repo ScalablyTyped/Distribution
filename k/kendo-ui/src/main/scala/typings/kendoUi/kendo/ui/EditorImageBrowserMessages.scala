@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EditorImageBrowserMessages extends js.Object {
+trait EditorImageBrowserMessages extends StObject {
   
   var deleteFile: js.UndefOr[String] = js.native
   
@@ -36,78 +37,66 @@ object EditorImageBrowserMessages {
   }
   
   @scala.inline
-  implicit class EditorImageBrowserMessagesOps[Self <: EditorImageBrowserMessages] (val x: Self) extends AnyVal {
+  implicit class EditorImageBrowserMessagesMutableBuilder[Self <: EditorImageBrowserMessages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeleteFile(value: String): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeleteFileUndefined: Self = StObject.set(x, "deleteFile", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDirectoryNotFound(value: String): Self = StObject.set(x, "directoryNotFound", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteFile(value: String): Self = this.set("deleteFile", value.asInstanceOf[js.Any])
+    def setDirectoryNotFoundUndefined: Self = StObject.set(x, "directoryNotFound", js.undefined)
     
     @scala.inline
-    def deleteDeleteFile: Self = this.set("deleteFile", js.undefined)
+    def setEmptyFolder(value: String): Self = StObject.set(x, "emptyFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectoryNotFound(value: String): Self = this.set("directoryNotFound", value.asInstanceOf[js.Any])
+    def setEmptyFolderUndefined: Self = StObject.set(x, "emptyFolder", js.undefined)
     
     @scala.inline
-    def deleteDirectoryNotFound: Self = this.set("directoryNotFound", js.undefined)
+    def setInvalidFileType(value: String): Self = StObject.set(x, "invalidFileType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmptyFolder(value: String): Self = this.set("emptyFolder", value.asInstanceOf[js.Any])
+    def setInvalidFileTypeUndefined: Self = StObject.set(x, "invalidFileType", js.undefined)
     
     @scala.inline
-    def deleteEmptyFolder: Self = this.set("emptyFolder", js.undefined)
+    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvalidFileType(value: String): Self = this.set("invalidFileType", value.asInstanceOf[js.Any])
+    def setOrderByName(value: String): Self = StObject.set(x, "orderByName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvalidFileType: Self = this.set("invalidFileType", js.undefined)
+    def setOrderByNameUndefined: Self = StObject.set(x, "orderByName", js.undefined)
     
     @scala.inline
-    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    def setOrderBySize(value: String): Self = StObject.set(x, "orderBySize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    def setOrderBySizeUndefined: Self = StObject.set(x, "orderBySize", js.undefined)
     
     @scala.inline
-    def setOrderByName(value: String): Self = this.set("orderByName", value.asInstanceOf[js.Any])
+    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     @scala.inline
-    def deleteOrderByName: Self = this.set("orderByName", js.undefined)
+    def setOverwriteFile(value: String): Self = StObject.set(x, "overwriteFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderBySize(value: String): Self = this.set("orderBySize", value.asInstanceOf[js.Any])
+    def setOverwriteFileUndefined: Self = StObject.set(x, "overwriteFile", js.undefined)
     
     @scala.inline
-    def deleteOrderBySize: Self = this.set("orderBySize", js.undefined)
+    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverwriteFile(value: String): Self = this.set("overwriteFile", value.asInstanceOf[js.Any])
+    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     @scala.inline
-    def deleteOverwriteFile: Self = this.set("overwriteFile", js.undefined)
+    def setUploadFile(value: String): Self = StObject.set(x, "uploadFile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSearch: Self = this.set("search", js.undefined)
-    
-    @scala.inline
-    def setUploadFile(value: String): Self = this.set("uploadFile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUploadFile: Self = this.set("uploadFile", js.undefined)
+    def setUploadFileUndefined: Self = StObject.set(x, "uploadFile", js.undefined)
   }
 }

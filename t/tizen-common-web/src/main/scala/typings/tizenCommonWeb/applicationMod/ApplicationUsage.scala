@@ -1,12 +1,13 @@
 package typings.tizenCommonWeb.applicationMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationUsage extends js.Object {
+trait ApplicationUsage extends StObject {
   
   /**
     * An attribute to store the ID of an application.
@@ -37,30 +38,18 @@ object ApplicationUsage {
   }
   
   @scala.inline
-  implicit class ApplicationUsageOps[Self <: ApplicationUsage] (val x: Self) extends AnyVal {
+  implicit class ApplicationUsageMutableBuilder[Self <: ApplicationUsage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLastTime(value: Date): Self = StObject.set(x, "lastTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppId(value: ApplicationId): Self = this.set("appId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLastTime(value: Date): Self = this.set("lastTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalCount(value: Double): Self = this.set("totalCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalDuration(value: Double): Self = this.set("totalDuration", value.asInstanceOf[js.Any])
+    def setTotalDuration(value: Double): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
   }
 }

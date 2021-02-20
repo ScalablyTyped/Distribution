@@ -9,6 +9,7 @@ import typings.openlayers.mod.proj.Projection
 import typings.std.ArrayBuffer
 import typings.std.Document
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

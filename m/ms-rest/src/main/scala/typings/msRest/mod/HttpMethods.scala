@@ -1,5 +1,6 @@
 package typings.msRest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.msRest.msRestStrings.OPTIONS
   - typings.msRest.msRestStrings.TRACE
 */
-trait HttpMethods extends js.Object
+trait HttpMethods extends StObject
 object HttpMethods {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.reactNativeMaterialUi.anon
 
 import typings.reactNativeMaterialUi.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StrokeContainer extends js.Object {
+trait StrokeContainer extends StObject {
   
   var container: js.UndefOr[ViewStyle] = js.native
   
@@ -23,45 +24,33 @@ object StrokeContainer {
   }
   
   @scala.inline
-  implicit class StrokeContainerOps[Self <: StrokeContainer] (val x: Self) extends AnyVal {
+  implicit class StrokeContainerMutableBuilder[Self <: StrokeContainer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainerNull: Self = StObject.set(x, "container", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     @scala.inline
-    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    def setContent(value: ViewStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContainer: Self = this.set("container", js.undefined)
+    def setContentNull: Self = StObject.set(x, "content", null)
     
     @scala.inline
-    def setContainerNull: Self = this.set("container", null)
+    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     @scala.inline
-    def setContent(value: ViewStyle): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setStrokeContainer(value: ViewStyle): Self = StObject.set(x, "strokeContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContent: Self = this.set("content", js.undefined)
+    def setStrokeContainerNull: Self = StObject.set(x, "strokeContainer", null)
     
     @scala.inline
-    def setContentNull: Self = this.set("content", null)
-    
-    @scala.inline
-    def setStrokeContainer(value: ViewStyle): Self = this.set("strokeContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrokeContainer: Self = this.set("strokeContainer", js.undefined)
-    
-    @scala.inline
-    def setStrokeContainerNull: Self = this.set("strokeContainer", null)
+    def setStrokeContainerUndefined: Self = StObject.set(x, "strokeContainer", js.undefined)
   }
 }

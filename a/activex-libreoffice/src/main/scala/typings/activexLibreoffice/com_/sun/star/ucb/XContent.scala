@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,36 +74,24 @@ object XContent {
   }
   
   @scala.inline
-  implicit class XContentOps[Self <: XContent] (val x: Self) extends AnyVal {
+  implicit class XContentMutableBuilder[Self <: XContent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddContentEventListener(value: XContentEventListener => Unit): Self = StObject.set(x, "addContentEventListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetContentType(value: () => String): Self = StObject.set(x, "getContentType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContentType(value: String): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    def setGetIdentifier(value: () => XContentIdentifier): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIdentifier(value: XContentIdentifier): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    def setIdentifier(value: XContentIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddContentEventListener(value: XContentEventListener => Unit): Self = this.set("addContentEventListener", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetContentType(value: () => String): Self = this.set("getContentType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetIdentifier(value: () => XContentIdentifier): Self = this.set("getIdentifier", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setRemoveContentEventListener(value: XContentEventListener => Unit): Self = this.set("removeContentEventListener", js.Any.fromFunction1(value))
+    def setRemoveContentEventListener(value: XContentEventListener => Unit): Self = StObject.set(x, "removeContentEventListener", js.Any.fromFunction1(value))
   }
 }

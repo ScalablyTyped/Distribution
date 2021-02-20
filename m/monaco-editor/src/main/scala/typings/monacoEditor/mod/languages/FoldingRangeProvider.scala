@@ -2,12 +2,13 @@ package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.mod.CancellationToken
 import typings.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FoldingRangeProvider extends js.Object {
+trait FoldingRangeProvider extends StObject {
   
   /**
     * Provides the folding ranges for a specific model.
@@ -25,21 +26,9 @@ object FoldingRangeProvider {
   }
   
   @scala.inline
-  implicit class FoldingRangeProviderOps[Self <: FoldingRangeProvider] (val x: Self) extends AnyVal {
+  implicit class FoldingRangeProviderMutableBuilder[Self <: FoldingRangeProvider] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setProvideFoldingRanges(value: (ITextModel, FoldingContext, CancellationToken) => ProviderResult[js.Array[FoldingRange]]): Self = this.set("provideFoldingRanges", js.Any.fromFunction3(value))
+    def setProvideFoldingRanges(value: (ITextModel, FoldingContext, CancellationToken) => ProviderResult[js.Array[FoldingRange]]): Self = StObject.set(x, "provideFoldingRanges", js.Any.fromFunction3(value))
   }
 }

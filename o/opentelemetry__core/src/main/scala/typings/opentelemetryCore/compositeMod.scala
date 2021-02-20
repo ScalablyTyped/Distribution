@@ -5,14 +5,14 @@ import typings.opentelemetryApi.mod.Context_
 import typings.opentelemetryApi.setterMod.SetterFunction
 import typings.opentelemetryApi.textMapPropagatorMod.TextMapPropagator
 import typings.opentelemetryCore.propagationTypesMod.CompositePropagatorConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/core/build/src/context/propagation/composite", JSImport.Namespace)
-@js.native
-object compositeMod extends js.Object {
+object compositeMod {
   
+  @JSImport("@opentelemetry/core/build/src/context/propagation/composite", "CompositePropagator")
   @js.native
   /**
     * Construct a composite propagator from a list of propagators.

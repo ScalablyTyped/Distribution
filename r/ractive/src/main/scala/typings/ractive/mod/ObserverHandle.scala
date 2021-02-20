@@ -1,11 +1,12 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObserverHandle extends js.Object {
+trait ObserverHandle extends StObject {
   
   /**
   	 * Removes the listener or observer.j
@@ -36,30 +37,18 @@ object ObserverHandle {
   }
   
   @scala.inline
-  implicit class ObserverHandleOps[Self <: ObserverHandle] (val x: Self) extends AnyVal {
+  implicit class ObserverHandleMutableBuilder[Self <: ObserverHandle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsSilenced(value: () => Boolean): Self = StObject.set(x, "isSilenced", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCancel(value: () => Unit): Self = this.set("cancel", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setIsSilenced(value: () => Boolean): Self = this.set("isSilenced", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setResume(value: () => Unit): Self = this.set("resume", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSilence(value: () => Unit): Self = this.set("silence", js.Any.fromFunction0(value))
+    def setSilence(value: () => Unit): Self = StObject.set(x, "silence", js.Any.fromFunction0(value))
   }
 }

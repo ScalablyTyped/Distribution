@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,60 +60,48 @@ object ConceptMapGroupElementTargetDependsOn {
   }
   
   @scala.inline
-  implicit class ConceptMapGroupElementTargetDependsOnOps[Self <: ConceptMapGroupElementTargetDependsOn] (val x: Self) extends AnyVal {
+  implicit class ConceptMapGroupElementTargetDependsOnMutableBuilder[Self <: ConceptMapGroupElementTargetDependsOn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    def setProperty(value: uri): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperty(value: uri): Self = this.set("property", value.asInstanceOf[js.Any])
+    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
     @scala.inline
-    def delete_code: Self = this.set("_code", js.undefined)
+    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
     @scala.inline
-    def delete_display: Self = this.set("_display", js.undefined)
+    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_property(value: Element): Self = this.set("_property", value.asInstanceOf[js.Any])
+    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
     @scala.inline
-    def delete_property: Self = this.set("_property", js.undefined)
+    def set_property(value: Element): Self = StObject.set(x, "_property", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    def set_propertyUndefined: Self = StObject.set(x, "_property", js.undefined)
     
     @scala.inline
-    def delete_system: Self = this.set("_system", js.undefined)
+    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplay: Self = this.set("display", js.undefined)
-    
-    @scala.inline
-    def setSystem(value: uri): Self = this.set("system", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystem: Self = this.set("system", js.undefined)
+    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
   }
 }

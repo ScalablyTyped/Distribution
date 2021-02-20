@@ -1,11 +1,12 @@
 package typings.awsSdk.workdocsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait User extends js.Object {
+trait User extends StObject {
   
   /**
     * The time when the user was created.
@@ -91,108 +92,96 @@ object User {
   }
   
   @scala.inline
-  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEmailAddress(value: EmailAddressType): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
     @scala.inline
-    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    def setGivenName(value: UserAttributeValueType): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailAddress(value: EmailAddressType): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
     
     @scala.inline
-    def deleteEmailAddress: Self = this.set("EmailAddress", js.undefined)
+    def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: UserAttributeValueType): Self = this.set("GivenName", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
     @scala.inline
-    def deleteGivenName: Self = this.set("GivenName", js.undefined)
+    def setLocale(value: LocaleType): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: IdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("Id", js.undefined)
+    def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocale(value: LocaleType): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     
     @scala.inline
-    def deleteLocale: Self = this.set("Locale", js.undefined)
+    def setOrganizationId(value: IdType): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModifiedTimestamp(value: TimestampType): Self = this.set("ModifiedTimestamp", value.asInstanceOf[js.Any])
+    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
     @scala.inline
-    def deleteModifiedTimestamp: Self = this.set("ModifiedTimestamp", js.undefined)
+    def setRecycleBinFolderId(value: ResourceIdType): Self = StObject.set(x, "RecycleBinFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizationId(value: IdType): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
+    def setRecycleBinFolderIdUndefined: Self = StObject.set(x, "RecycleBinFolderId", js.undefined)
     
     @scala.inline
-    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
+    def setRootFolderId(value: ResourceIdType): Self = StObject.set(x, "RootFolderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecycleBinFolderId(value: ResourceIdType): Self = this.set("RecycleBinFolderId", value.asInstanceOf[js.Any])
+    def setRootFolderIdUndefined: Self = StObject.set(x, "RootFolderId", js.undefined)
     
     @scala.inline
-    def deleteRecycleBinFolderId: Self = this.set("RecycleBinFolderId", js.undefined)
+    def setStatus(value: UserStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootFolderId(value: ResourceIdType): Self = this.set("RootFolderId", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteRootFolderId: Self = this.set("RootFolderId", js.undefined)
+    def setStorage(value: UserStorageMetadata): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: UserStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setSurname(value: UserAttributeValueType): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: UserStorageMetadata): Self = this.set("Storage", value.asInstanceOf[js.Any])
+    def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
     
     @scala.inline
-    def deleteStorage: Self = this.set("Storage", js.undefined)
+    def setTimeZoneId(value: TimeZoneIdType): Self = StObject.set(x, "TimeZoneId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurname(value: UserAttributeValueType): Self = this.set("Surname", value.asInstanceOf[js.Any])
+    def setTimeZoneIdUndefined: Self = StObject.set(x, "TimeZoneId", js.undefined)
     
     @scala.inline
-    def deleteSurname: Self = this.set("Surname", js.undefined)
+    def setType(value: UserType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZoneId(value: TimeZoneIdType): Self = this.set("TimeZoneId", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTimeZoneId: Self = this.set("TimeZoneId", js.undefined)
+    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: UserType): Self = this.set("Type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("Username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

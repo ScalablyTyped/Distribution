@@ -1,11 +1,12 @@
 package typings.vscodeLanguageserverProtocol.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SemanticTokens extends js.Object {
+trait SemanticTokens extends StObject {
   
   /**
     * Capabilities specific to the `textDocument/semanticTokens`
@@ -23,24 +24,12 @@ object SemanticTokens {
   }
   
   @scala.inline
-  implicit class SemanticTokensOps[Self <: SemanticTokens] (val x: Self) extends AnyVal {
+  implicit class SemanticTokensMutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSemanticTokens(value: TokenModifiers): Self = StObject.set(x, "semanticTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setSemanticTokens(value: TokenModifiers): Self = this.set("semanticTokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSemanticTokens: Self = this.set("semanticTokens", js.undefined)
+    def setSemanticTokensUndefined: Self = StObject.set(x, "semanticTokens", js.undefined)
   }
 }

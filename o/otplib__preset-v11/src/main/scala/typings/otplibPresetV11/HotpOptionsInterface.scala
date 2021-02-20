@@ -1,6 +1,7 @@
 package typings.otplibPresetV11
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,36 +24,24 @@ object HotpOptionsInterface {
   }
   
   @scala.inline
-  implicit class HotpOptionsInterfaceOps[Self <: HotpOptionsInterface] (val x: Self) extends AnyVal {
+  implicit class HotpOptionsInterfaceMutableBuilder[Self <: HotpOptionsInterface] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateHmacSecret(value: (/* secret */ String, /* options */ HmacOptions) => Buffer): Self = StObject.set(x, "createHmacSecret", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateHmacSecretUndefined: Self = StObject.set(x, "createHmacSecret", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrypto(value: js.Any): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateHmacSecret(value: (/* secret */ String, /* options */ HmacOptions) => Buffer): Self = this.set("createHmacSecret", js.Any.fromFunction2(value))
+    def setCryptoUndefined: Self = StObject.set(x, "crypto", js.undefined)
     
     @scala.inline
-    def deleteCreateHmacSecret: Self = this.set("createHmacSecret", js.undefined)
+    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrypto(value: js.Any): Self = this.set("crypto", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCrypto: Self = this.set("crypto", js.undefined)
-    
-    @scala.inline
-    def setDigits(value: Double): Self = this.set("digits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDigits: Self = this.set("digits", js.undefined)
+    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
   }
 }

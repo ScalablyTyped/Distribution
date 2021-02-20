@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NetworkAttachmentConfig extends js.Object {
+trait NetworkAttachmentConfig extends StObject {
   
   var Aliases: js.UndefOr[js.Array[String]] = js.native
   
@@ -23,39 +24,27 @@ object NetworkAttachmentConfig {
   }
   
   @scala.inline
-  implicit class NetworkAttachmentConfigOps[Self <: NetworkAttachmentConfig] (val x: Self) extends AnyVal {
+  implicit class NetworkAttachmentConfigMutableBuilder[Self <: NetworkAttachmentConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAliases(value: js.Array[String]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAliasesVarargs(value: String*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
     
     @scala.inline
-    def setAliasesVarargs(value: String*): Self = this.set("Aliases", js.Array(value :_*))
+    def setDriverOpts(value: StringDictionary[String]): Self = StObject.set(x, "DriverOpts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAliases(value: js.Array[String]): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    def setDriverOptsUndefined: Self = StObject.set(x, "DriverOpts", js.undefined)
     
     @scala.inline
-    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriverOpts(value: StringDictionary[String]): Self = this.set("DriverOpts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDriverOpts: Self = this.set("DriverOpts", js.undefined)
-    
-    @scala.inline
-    def setTarget(value: String): Self = this.set("Target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTarget: Self = this.set("Target", js.undefined)
+    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
   }
 }

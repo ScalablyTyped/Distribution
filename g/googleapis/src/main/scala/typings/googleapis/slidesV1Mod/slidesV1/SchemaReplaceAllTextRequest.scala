@@ -1,5 +1,6 @@
 package typings.googleapis.slidesV1Mod.slidesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Replaces all instances of text matching a criteria with replace text.
   */
 @js.native
-trait SchemaReplaceAllTextRequest extends js.Object {
+trait SchemaReplaceAllTextRequest extends StObject {
   
   /**
     * Finds text in a shape matching this substring.
@@ -37,39 +38,27 @@ object SchemaReplaceAllTextRequest {
   }
   
   @scala.inline
-  implicit class SchemaReplaceAllTextRequestOps[Self <: SchemaReplaceAllTextRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaReplaceAllTextRequestMutableBuilder[Self <: SchemaReplaceAllTextRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContainsText(value: SchemaSubstringMatchCriteria): Self = this.set("containsText", value.asInstanceOf[js.Any])
+    def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
     @scala.inline
-    def deleteContainsText: Self = this.set("containsText", js.undefined)
+    def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
     
     @scala.inline
-    def setPageObjectIdsVarargs(value: String*): Self = this.set("pageObjectIds", js.Array(value :_*))
+    def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageObjectIds(value: js.Array[String]): Self = this.set("pageObjectIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageObjectIds: Self = this.set("pageObjectIds", js.undefined)
-    
-    @scala.inline
-    def setReplaceText(value: String): Self = this.set("replaceText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplaceText: Self = this.set("replaceText", js.undefined)
+    def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
   }
 }

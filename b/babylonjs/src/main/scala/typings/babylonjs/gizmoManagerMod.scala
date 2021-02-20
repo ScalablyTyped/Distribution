@@ -12,14 +12,14 @@ import typings.babylonjs.sixDofDragBehaviorMod.SixDofDragBehavior
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.utilityLayerRendererMod.UtilityLayerRenderer
 import typings.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Gizmos/gizmoManager", JSImport.Namespace)
-@js.native
-object gizmoManagerMod extends js.Object {
+object gizmoManagerMod {
   
+  @JSImport("babylonjs/Gizmos/gizmoManager", "GizmoManager")
   @js.native
   class GizmoManager protected () extends IDisposable {
     /**

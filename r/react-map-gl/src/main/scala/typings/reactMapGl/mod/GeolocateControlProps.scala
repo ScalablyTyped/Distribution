@@ -2,6 +2,7 @@ package typings.reactMapGl.mod
 
 import typings.mapboxGl.mod.FitBoundsOptions
 import typings.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,84 +41,72 @@ object GeolocateControlProps {
   }
   
   @scala.inline
-  implicit class GeolocateControlPropsOps[Self <: GeolocateControlProps] (val x: Self) extends AnyVal {
+  implicit class GeolocateControlPropsMutableBuilder[Self <: GeolocateControlProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteAuto: Self = this.set("auto", js.undefined)
+    def setFitBoundsOptions(value: FitBoundsOptions): Self = StObject.set(x, "fitBoundsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setFitBoundsOptionsUndefined: Self = StObject.set(x, "fitBoundsOptions", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFitBoundsOptions(value: FitBoundsOptions): Self = this.set("fitBoundsOptions", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteFitBoundsOptions: Self = this.set("fitBoundsOptions", js.undefined)
+    def setOnGeolocate(value: /* options */ PositionOptions => Unit): Self = StObject.set(x, "onGeolocate", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    def setOnGeolocateUndefined: Self = StObject.set(x, "onGeolocate", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
+    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnGeolocate(value: /* options */ PositionOptions => Unit): Self = this.set("onGeolocate", js.Any.fromFunction1(value))
+    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
     @scala.inline
-    def deleteOnGeolocate: Self = this.set("onGeolocate", js.undefined)
+    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = this.set("onViewStateChange", js.Any.fromFunction1(value))
+    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
     @scala.inline
-    def deleteOnViewStateChange: Self = this.set("onViewStateChange", js.undefined)
+    def setPositionOptions(value: typings.mapboxGl.mod.PositionOptions): Self = StObject.set(x, "positionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = this.set("onViewportChange", js.Any.fromFunction1(value))
+    def setPositionOptionsUndefined: Self = StObject.set(x, "positionOptions", js.undefined)
     
     @scala.inline
-    def deleteOnViewportChange: Self = this.set("onViewportChange", js.undefined)
+    def setShowUserLocation(value: Boolean): Self = StObject.set(x, "showUserLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionOptions(value: typings.mapboxGl.mod.PositionOptions): Self = this.set("positionOptions", value.asInstanceOf[js.Any])
+    def setShowUserLocationUndefined: Self = StObject.set(x, "showUserLocation", js.undefined)
     
     @scala.inline
-    def deletePositionOptions: Self = this.set("positionOptions", js.undefined)
+    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowUserLocation(value: Boolean): Self = this.set("showUserLocation", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShowUserLocation: Self = this.set("showUserLocation", js.undefined)
+    def setTrackUserLocation(value: Boolean): Self = StObject.set(x, "trackUserLocation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTrackUserLocation(value: Boolean): Self = this.set("trackUserLocation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrackUserLocation: Self = this.set("trackUserLocation", js.undefined)
+    def setTrackUserLocationUndefined: Self = StObject.set(x, "trackUserLocation", js.undefined)
   }
 }

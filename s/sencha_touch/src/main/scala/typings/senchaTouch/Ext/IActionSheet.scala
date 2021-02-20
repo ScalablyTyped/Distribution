@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,66 +65,54 @@ object IActionSheet {
   }
   
   @scala.inline
-  implicit class IActionSheetOps[Self <: IActionSheet] (val x: Self) extends AnyVal {
+  implicit class IActionSheetMutableBuilder[Self <: IActionSheet] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetBottom(value: () => Double): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetHeight(value: () => java.lang.String): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBottom(value: () => Double): Self = this.set("getBottom", js.Any.fromFunction0(value))
+    def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
     
     @scala.inline
-    def deleteGetBottom: Self = this.set("getBottom", js.undefined)
+    def setGetLeft(value: () => Double): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetHeight(value: () => java.lang.String): Self = this.set("getHeight", js.Any.fromFunction0(value))
+    def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
     
     @scala.inline
-    def deleteGetHeight: Self = this.set("getHeight", js.undefined)
+    def setGetRight(value: () => Double): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLeft(value: () => Double): Self = this.set("getLeft", js.Any.fromFunction0(value))
+    def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
     
     @scala.inline
-    def deleteGetLeft: Self = this.set("getLeft", js.undefined)
+    def setSetBottom(value: /* bottom */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRight(value: () => Double): Self = this.set("getRight", js.Any.fromFunction0(value))
+    def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
     @scala.inline
-    def deleteGetRight: Self = this.set("getRight", js.undefined)
+    def setSetHeight(value: /* height */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBottom(value: /* bottom */ js.UndefOr[Double] => Unit): Self = this.set("setBottom", js.Any.fromFunction1(value))
+    def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
     @scala.inline
-    def deleteSetBottom: Self = this.set("setBottom", js.undefined)
+    def setSetLeft(value: /* left */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLeft", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetHeight(value: /* height */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setHeight", js.Any.fromFunction1(value))
+    def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
     @scala.inline
-    def deleteSetHeight: Self = this.set("setHeight", js.undefined)
+    def setSetRight(value: /* right */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setRight", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetLeft(value: /* left */ js.UndefOr[Double] => Unit): Self = this.set("setLeft", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetLeft: Self = this.set("setLeft", js.undefined)
-    
-    @scala.inline
-    def setSetRight(value: /* right */ js.UndefOr[Double] => Unit): Self = this.set("setRight", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetRight: Self = this.set("setRight", js.undefined)
+    def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
   }
 }

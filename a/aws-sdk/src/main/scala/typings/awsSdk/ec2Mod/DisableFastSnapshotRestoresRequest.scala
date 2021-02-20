@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisableFastSnapshotRestoresRequest extends js.Object {
+trait DisableFastSnapshotRestoresRequest extends StObject {
   
   /**
     * One or more Availability Zones. For example, us-east-2a.
@@ -31,36 +32,24 @@ object DisableFastSnapshotRestoresRequest {
   }
   
   @scala.inline
-  implicit class DisableFastSnapshotRestoresRequestOps[Self <: DisableFastSnapshotRestoresRequest] (val x: Self) extends AnyVal {
+  implicit class DisableFastSnapshotRestoresRequestMutableBuilder[Self <: DisableFastSnapshotRestoresRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailabilityZones(value: AvailabilityZoneStringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZonesVarargs(value: String*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
     @scala.inline
-    def setAvailabilityZones(value: AvailabilityZoneStringList): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    def setSourceSnapshotIds(value: SnapshotIdStringList): Self = StObject.set(x, "SourceSnapshotIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceSnapshotIdsVarargs(value: SnapshotId*): Self = this.set("SourceSnapshotIds", js.Array(value :_*))
-    
-    @scala.inline
-    def setSourceSnapshotIds(value: SnapshotIdStringList): Self = this.set("SourceSnapshotIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    def setSourceSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SourceSnapshotIds", js.Array(value :_*))
   }
 }

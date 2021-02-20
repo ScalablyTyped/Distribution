@@ -13,6 +13,7 @@ import typings.deezerSdk.deezerSdkStrings.shuffle_changed
 import typings.deezerSdk.deezerSdkStrings.track_end
 import typings.deezerSdk.deezerSdkStrings.tracklist_changed
 import typings.deezerSdk.deezerSdkStrings.volume_changed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link https://developers.deezer.com/sdk/javascript/events-subscribe | Subscribe to an event}
   */
 @js.native
-trait Event extends js.Object {
+trait Event extends StObject {
   
   @JSName("subscribe")
   def subscribe_currenttrack(event: current_track, callback: js.Function1[/* currentTrackInfo */ Index, Unit]): Unit = js.native

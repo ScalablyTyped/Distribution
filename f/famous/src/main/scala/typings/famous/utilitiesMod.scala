@@ -1,15 +1,15 @@
 package typings.famous
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("famous/utilities", JSImport.Namespace)
-@js.native
-object utilitiesMod extends js.Object {
+object utilitiesMod {
   
+  @JSImport("famous/utilities", "CallbackStore")
   @js.native
-  class CallbackStore () extends js.Object {
+  class CallbackStore () extends StObject {
     
     def on(event: String, callback: js.Function1[/* payload */ js.Any, Unit]): Unit = js.native
     

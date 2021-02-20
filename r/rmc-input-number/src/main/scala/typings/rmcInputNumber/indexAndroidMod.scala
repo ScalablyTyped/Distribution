@@ -1,14 +1,14 @@
 package typings.rmcInputNumber
 
-import typings.rmcInputNumber.indexIosMod.InputNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-input-number/lib/index.android", JSImport.Namespace)
-@js.native
-object indexAndroidMod extends js.Object {
+object indexAndroidMod {
   
+  @JSImport("rmc-input-number/lib/index.android", JSImport.Default)
   @js.native
-  class default () extends InputNumber
+  class default ()
+    extends typings.rmcInputNumber.indexIosMod.default
 }

@@ -1,13 +1,14 @@
 package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "MarkType")
 @js.native
-class MarkType[S /* <: Schema[_, _] */] () extends js.Object {
+class MarkType[S /* <: Schema[_, _] */] () extends StObject {
   
   /**
     * Create a mark of this type. `attrs` may be `null` or an object

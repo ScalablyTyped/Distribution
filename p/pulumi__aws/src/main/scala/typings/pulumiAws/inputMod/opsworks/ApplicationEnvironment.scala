@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.opsworks
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationEnvironment extends js.Object {
+trait ApplicationEnvironment extends StObject {
   
   /**
     * Variable name.
@@ -32,30 +33,18 @@ object ApplicationEnvironment {
   }
   
   @scala.inline
-  implicit class ApplicationEnvironmentOps[Self <: ApplicationEnvironment] (val x: Self) extends AnyVal {
+  implicit class ApplicationEnvironmentMutableBuilder[Self <: ApplicationEnvironment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSecure(value: Input[Boolean]): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     
     @scala.inline
-    def setKey(value: Input[String]): Self = this.set("key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: Input[String]): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecure(value: Input[Boolean]): Self = this.set("secure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecure: Self = this.set("secure", js.undefined)
+    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

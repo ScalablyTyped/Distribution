@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ToneInfo extends js.Object {
+trait ToneInfo extends StObject {
   
   // An incremental identifier used for ordering DTMF events.
   var sequenceId: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object ToneInfo {
   }
   
   @scala.inline
-  implicit class ToneInfoOps[Self <: ToneInfo] (val x: Self) extends AnyVal {
+  implicit class ToneInfoMutableBuilder[Self <: ToneInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSequenceId(value: Double): Self = StObject.set(x, "sequenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSequenceIdUndefined: Self = StObject.set(x, "sequenceId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTone(value: Tone): Self = StObject.set(x, "tone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSequenceId(value: Double): Self = this.set("sequenceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSequenceId: Self = this.set("sequenceId", js.undefined)
-    
-    @scala.inline
-    def setTone(value: Tone): Self = this.set("tone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTone: Self = this.set("tone", js.undefined)
+    def setToneUndefined: Self = StObject.set(x, "tone", js.undefined)
   }
 }

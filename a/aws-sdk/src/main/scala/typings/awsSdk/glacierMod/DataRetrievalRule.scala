@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataRetrievalRule extends js.Object {
+trait DataRetrievalRule extends StObject {
   
   /**
     * The maximum number of bytes that can be retrieved in an hour. This field is required only if the value of the Strategy field is BytesPerHour. Your PUT operation will be rejected if the Strategy field is not set to BytesPerHour and you set this field.
@@ -26,30 +27,18 @@ object DataRetrievalRule {
   }
   
   @scala.inline
-  implicit class DataRetrievalRuleOps[Self <: DataRetrievalRule] (val x: Self) extends AnyVal {
+  implicit class DataRetrievalRuleMutableBuilder[Self <: DataRetrievalRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesPerHour(value: NullableLong): Self = StObject.set(x, "BytesPerHour", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesPerHourUndefined: Self = StObject.set(x, "BytesPerHour", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStrategy(value: String): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesPerHour(value: NullableLong): Self = this.set("BytesPerHour", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBytesPerHour: Self = this.set("BytesPerHour", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: String): Self = this.set("Strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("Strategy", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
   }
 }

@@ -10,12 +10,13 @@ import typings.maximMazurokGapiClientBigquerydatatransfer.anon.Parent
 import typings.maximMazurokGapiClientBigquerydatatransfer.anon.PrettyPrint
 import typings.maximMazurokGapiClientBigquerydatatransfer.anon.QuotaUser
 import typings.maximMazurokGapiClientBigquerydatatransfer.anon.Resource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransferConfigsResource extends js.Object {
+trait TransferConfigsResource extends StObject {
   
   /** Creates a new data transfer configuration. */
   def create(request: AuthorizationCode): Request[TransferConfig] = js.native

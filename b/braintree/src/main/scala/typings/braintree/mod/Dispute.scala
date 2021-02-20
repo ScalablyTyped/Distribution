@@ -2,13 +2,14 @@ package typings.braintree.mod
 
 import typings.braintree.anon.Amount
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Dispute")
 @js.native
-class Dispute () extends js.Object {
+class Dispute () extends StObject {
   
   var amountDisputed: String = js.native
   

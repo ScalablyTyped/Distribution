@@ -1,6 +1,5 @@
 package typings.ssh2Streams.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typings.node.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
@@ -29,6 +28,7 @@ import typings.ssh2Streams.ssh2StreamsStrings.end
 import typings.ssh2Streams.ssh2StreamsStrings.error
 import typings.ssh2Streams.ssh2StreamsStrings.ready
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -681,9 +681,87 @@ class SFTPStream () extends Transform {
   ): Boolean = js.native
 }
 /* static members */
-@JSImport("ssh2-streams", "SFTPStream")
-@js.native
-object SFTPStream extends js.Object {
+object SFTPStream {
+  
+  @js.native
+  sealed trait OPEN_MODE extends StObject
+  @JSImport("ssh2-streams", "SFTPStream.OPEN_MODE")
+  @js.native
+  object OPEN_MODE extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[OPEN_MODE with Double] = js.native
+    
+    @js.native
+    sealed trait APPEND extends OPEN_MODE
+    /* 0x00000004 */ val APPEND: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.APPEND with Double = js.native
+    
+    @js.native
+    sealed trait CREAT extends OPEN_MODE
+    /* 0x00000008 */ val CREAT: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.CREAT with Double = js.native
+    
+    @js.native
+    sealed trait EXCL extends OPEN_MODE
+    /* 0x00000020 */ val EXCL: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.EXCL with Double = js.native
+    
+    @js.native
+    sealed trait READ extends OPEN_MODE
+    /* 0x00000001 */ val READ: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.READ with Double = js.native
+    
+    @js.native
+    sealed trait TRUNC extends OPEN_MODE
+    /* 0x00000010 */ val TRUNC: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.TRUNC with Double = js.native
+    
+    @js.native
+    sealed trait WRITE extends OPEN_MODE
+    /* 0x00000002 */ val WRITE: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.WRITE with Double = js.native
+  }
+  
+  @js.native
+  sealed trait STATUS_CODE extends StObject
+  @JSImport("ssh2-streams", "SFTPStream.STATUS_CODE")
+  @js.native
+  object STATUS_CODE extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[STATUS_CODE with Double] = js.native
+    
+    @js.native
+    sealed trait BAD_MESSAGE extends STATUS_CODE
+    /* 5 */ val BAD_MESSAGE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.BAD_MESSAGE with Double = js.native
+    
+    @js.native
+    sealed trait CONNECTION_LOST extends STATUS_CODE
+    /* 7 */ val CONNECTION_LOST: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.CONNECTION_LOST with Double = js.native
+    
+    @js.native
+    sealed trait EOF extends STATUS_CODE
+    /* 1 */ val EOF: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.EOF with Double = js.native
+    
+    @js.native
+    sealed trait FAILURE extends STATUS_CODE
+    /* 4 */ val FAILURE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.FAILURE with Double = js.native
+    
+    @js.native
+    sealed trait NO_CONNECTION extends STATUS_CODE
+    /* 6 */ val NO_CONNECTION: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.NO_CONNECTION with Double = js.native
+    
+    @js.native
+    sealed trait NO_SUCH_FILE extends STATUS_CODE
+    /* 2 */ val NO_SUCH_FILE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.NO_SUCH_FILE with Double = js.native
+    
+    @js.native
+    sealed trait OK extends STATUS_CODE
+    /* 0 */ val OK: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.OK with Double = js.native
+    
+    @js.native
+    sealed trait OP_UNSUPPORTED extends STATUS_CODE
+    /* 8 */ val OP_UNSUPPORTED: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.OP_UNSUPPORTED with Double = js.native
+    
+    @js.native
+    sealed trait PERMISSION_DENIED extends STATUS_CODE
+    /* 3 */ val PERMISSION_DENIED: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.PERMISSION_DENIED with Double = js.native
+  }
   
   /**
     * Converts flag mask (e.g. number containing `SFTPStream.OPEN_MODE` values) to the
@@ -691,6 +769,8 @@ object SFTPStream extends js.Object {
     *
     * Returns `null` if conversion failed.
     */
+  @JSImport("ssh2-streams", "SFTPStream.flagsToString")
+  @js.native
   def flagsToString(flagsMask: Double): String = js.native
   
   /**
@@ -699,100 +779,7 @@ object SFTPStream extends js.Object {
     *
     * Returns `null` if conversion failed.
     */
+  @JSImport("ssh2-streams", "SFTPStream.stringToFlags")
+  @js.native
   def stringToFlags(flagsStr: String): Double = js.native
-  
-  @js.native
-  sealed trait OPEN_MODE extends js.Object
-  @js.native
-  object OPEN_MODE extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OPEN_MODE with Double] = js.native
-    
-    @js.native
-    sealed trait APPEND extends OPEN_MODE
-    /* 0x00000004 */ @js.native
-    object APPEND extends TopLevel[APPEND with Double]
-    
-    @js.native
-    sealed trait CREAT extends OPEN_MODE
-    /* 0x00000008 */ @js.native
-    object CREAT extends TopLevel[CREAT with Double]
-    
-    @js.native
-    sealed trait EXCL extends OPEN_MODE
-    /* 0x00000020 */ @js.native
-    object EXCL extends TopLevel[EXCL with Double]
-    
-    @js.native
-    sealed trait READ extends OPEN_MODE
-    /* 0x00000001 */ @js.native
-    object READ
-      extends TopLevel[typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.READ with Double]
-    
-    @js.native
-    sealed trait TRUNC extends OPEN_MODE
-    /* 0x00000010 */ @js.native
-    object TRUNC extends TopLevel[TRUNC with Double]
-    
-    @js.native
-    sealed trait WRITE extends OPEN_MODE
-    /* 0x00000002 */ @js.native
-    object WRITE
-      extends TopLevel[typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.WRITE with Double]
-  }
-  
-  @js.native
-  sealed trait STATUS_CODE extends js.Object
-  @js.native
-  object STATUS_CODE extends js.Object {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[STATUS_CODE with Double] = js.native
-    
-    @js.native
-    sealed trait BAD_MESSAGE extends STATUS_CODE
-    /* 5 */ @js.native
-    object BAD_MESSAGE extends TopLevel[BAD_MESSAGE with Double]
-    
-    @js.native
-    sealed trait CONNECTION_LOST extends STATUS_CODE
-    /* 7 */ @js.native
-    object CONNECTION_LOST extends TopLevel[CONNECTION_LOST with Double]
-    
-    @js.native
-    sealed trait EOF extends STATUS_CODE
-    /* 1 */ @js.native
-    object EOF extends TopLevel[EOF with Double]
-    
-    @js.native
-    sealed trait FAILURE extends STATUS_CODE
-    /* 4 */ @js.native
-    object FAILURE extends TopLevel[FAILURE with Double]
-    
-    @js.native
-    sealed trait NO_CONNECTION extends STATUS_CODE
-    /* 6 */ @js.native
-    object NO_CONNECTION extends TopLevel[NO_CONNECTION with Double]
-    
-    @js.native
-    sealed trait NO_SUCH_FILE extends STATUS_CODE
-    /* 2 */ @js.native
-    object NO_SUCH_FILE extends TopLevel[NO_SUCH_FILE with Double]
-    
-    @js.native
-    sealed trait OK extends STATUS_CODE
-    /* 0 */ @js.native
-    object OK extends TopLevel[OK with Double]
-    
-    @js.native
-    sealed trait OP_UNSUPPORTED extends STATUS_CODE
-    /* 8 */ @js.native
-    object OP_UNSUPPORTED extends TopLevel[OP_UNSUPPORTED with Double]
-    
-    @js.native
-    sealed trait PERMISSION_DENIED extends STATUS_CODE
-    /* 3 */ @js.native
-    object PERMISSION_DENIED extends TopLevel[PERMISSION_DENIED with Double]
-  }
 }

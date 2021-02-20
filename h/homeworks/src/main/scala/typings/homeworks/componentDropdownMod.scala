@@ -3,14 +3,14 @@ package typings.homeworks
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import typings.homeworks.managerMod.HomeworksManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("homeworks/lib/ng2-homeworks/src/components/dropdown/component.dropdown", JSImport.Namespace)
-@js.native
-object componentDropdownMod extends js.Object {
+object componentDropdownMod {
   
+  @JSImport("homeworks/lib/ng2-homeworks/src/components/dropdown/component.dropdown", "WorksDropdown")
   @js.native
   class WorksDropdown protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()

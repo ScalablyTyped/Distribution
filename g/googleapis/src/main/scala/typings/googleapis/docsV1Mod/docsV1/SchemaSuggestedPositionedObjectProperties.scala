@@ -1,5 +1,6 @@
 package typings.googleapis.docsV1Mod.docsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A suggested change to PositionedObjectProperties.
   */
 @js.native
-trait SchemaSuggestedPositionedObjectProperties extends js.Object {
+trait SchemaSuggestedPositionedObjectProperties extends StObject {
   
   /**
     * A PositionedObjectProperties that only includes the changes made in this
@@ -33,30 +34,18 @@ object SchemaSuggestedPositionedObjectProperties {
   }
   
   @scala.inline
-  implicit class SchemaSuggestedPositionedObjectPropertiesOps[Self <: SchemaSuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaSuggestedPositionedObjectPropertiesMutableBuilder[Self <: SchemaSuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPositionedObjectProperties(value: SchemaPositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionedObjectPropertiesSuggestionState(value: SchemaPositionedObjectPropertiesSuggestionState): Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositionedObjectPropertiesSuggestionStateUndefined: Self = StObject.set(x, "positionedObjectPropertiesSuggestionState", js.undefined)
     
     @scala.inline
-    def setPositionedObjectProperties(value: SchemaPositionedObjectProperties): Self = this.set("positionedObjectProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositionedObjectProperties: Self = this.set("positionedObjectProperties", js.undefined)
-    
-    @scala.inline
-    def setPositionedObjectPropertiesSuggestionState(value: SchemaPositionedObjectPropertiesSuggestionState): Self = this.set("positionedObjectPropertiesSuggestionState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositionedObjectPropertiesSuggestionState: Self = this.set("positionedObjectPropertiesSuggestionState", js.undefined)
+    def setPositionedObjectPropertiesUndefined: Self = StObject.set(x, "positionedObjectProperties", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataSourceConfig extends js.Object {
+trait DataSourceConfig extends StObject {
   
   /**
     * The name of the data source.
@@ -31,30 +32,18 @@ object DataSourceConfig {
   }
   
   @scala.inline
-  implicit class DataSourceConfigOps[Self <: DataSourceConfig] (val x: Self) extends AnyVal {
+  implicit class DataSourceConfigMutableBuilder[Self <: DataSourceConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setS3Keys(value: S3Keys): Self = StObject.set(x, "s3Keys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setS3KeysVarargs(value: S3Key*): Self = this.set("s3Keys", js.Array(value :_*))
-    
-    @scala.inline
-    def setS3Keys(value: S3Keys): Self = this.set("s3Keys", value.asInstanceOf[js.Any])
+    def setS3KeysVarargs(value: S3Key*): Self = StObject.set(x, "s3Keys", js.Array(value :_*))
   }
 }

@@ -1,14 +1,12 @@
 package typings.node.http2Mod
 
-import typings.node.tlsMod.TlsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecureServerOptions
-  extends TlsOptions
-     with ServerSessionOptions {
+trait SecureServerOptions extends SecureServerSessionOptions {
   
   var allowHTTP1: js.UndefOr[Boolean] = js.native
   
@@ -23,33 +21,21 @@ object SecureServerOptions {
   }
   
   @scala.inline
-  implicit class SecureServerOptionsOps[Self <: SecureServerOptions] (val x: Self) extends AnyVal {
+  implicit class SecureServerOptionsMutableBuilder[Self <: SecureServerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowHTTP1(value: Boolean): Self = StObject.set(x, "allowHTTP1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllowHTTP1Undefined: Self = StObject.set(x, "allowHTTP1", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOrigins(value: js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowHTTP1(value: Boolean): Self = this.set("allowHTTP1", value.asInstanceOf[js.Any])
+    def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
     @scala.inline
-    def deleteAllowHTTP1: Self = this.set("allowHTTP1", js.undefined)
-    
-    @scala.inline
-    def setOriginsVarargs(value: String*): Self = this.set("origins", js.Array(value :_*))
-    
-    @scala.inline
-    def setOrigins(value: js.Array[String]): Self = this.set("origins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrigins: Self = this.set("origins", js.undefined)
+    def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
   }
 }

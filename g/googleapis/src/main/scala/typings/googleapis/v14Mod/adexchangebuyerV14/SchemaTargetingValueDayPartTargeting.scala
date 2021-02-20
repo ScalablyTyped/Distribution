@@ -1,11 +1,12 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTargetingValueDayPartTargeting extends js.Object {
+trait SchemaTargetingValueDayPartTargeting extends StObject {
   
   var dayParts: js.UndefOr[js.Array[SchemaTargetingValueDayPartTargetingDayPart]] = js.native
   
@@ -20,33 +21,21 @@ object SchemaTargetingValueDayPartTargeting {
   }
   
   @scala.inline
-  implicit class SchemaTargetingValueDayPartTargetingOps[Self <: SchemaTargetingValueDayPartTargeting] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetingValueDayPartTargetingMutableBuilder[Self <: SchemaTargetingValueDayPartTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDayParts(value: js.Array[SchemaTargetingValueDayPartTargetingDayPart]): Self = StObject.set(x, "dayParts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDayPartsUndefined: Self = StObject.set(x, "dayParts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDayPartsVarargs(value: SchemaTargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value :_*))
     
     @scala.inline
-    def setDayPartsVarargs(value: SchemaTargetingValueDayPartTargetingDayPart*): Self = this.set("dayParts", js.Array(value :_*))
+    def setTimeZoneType(value: String): Self = StObject.set(x, "timeZoneType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDayParts(value: js.Array[SchemaTargetingValueDayPartTargetingDayPart]): Self = this.set("dayParts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDayParts: Self = this.set("dayParts", js.undefined)
-    
-    @scala.inline
-    def setTimeZoneType(value: String): Self = this.set("timeZoneType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZoneType: Self = this.set("timeZoneType", js.undefined)
+    def setTimeZoneTypeUndefined: Self = StObject.set(x, "timeZoneType", js.undefined)
   }
 }

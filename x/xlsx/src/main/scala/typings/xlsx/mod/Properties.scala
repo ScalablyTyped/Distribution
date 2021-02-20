@@ -1,12 +1,13 @@
 package typings.xlsx.mod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Properties extends js.Object {
+trait Properties extends StObject {
   
   /** Summary tab "Author" */
   var Author: js.UndefOr[String] = js.native
@@ -47,78 +48,66 @@ object Properties {
   }
   
   @scala.inline
-  implicit class PropertiesOps[Self <: Properties] (val x: Self) extends AnyVal {
+  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthorUndefined: Self = StObject.set(x, "Author", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthor(value: String): Self = this.set("Author", value.asInstanceOf[js.Any])
+    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
     @scala.inline
-    def deleteAuthor: Self = this.set("Author", js.undefined)
+    def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("Category", value.asInstanceOf[js.Any])
+    def setCommentsUndefined: Self = StObject.set(x, "Comments", js.undefined)
     
     @scala.inline
-    def deleteCategory: Self = this.set("Category", js.undefined)
+    def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComments(value: String): Self = this.set("Comments", value.asInstanceOf[js.Any])
+    def setCompanyUndefined: Self = StObject.set(x, "Company", js.undefined)
     
     @scala.inline
-    def deleteComments: Self = this.set("Comments", js.undefined)
+    def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompany(value: String): Self = this.set("Company", value.asInstanceOf[js.Any])
+    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
     @scala.inline
-    def deleteCompany: Self = this.set("Company", js.undefined)
+    def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatedDate(value: Date): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    def setKeywordsUndefined: Self = StObject.set(x, "Keywords", js.undefined)
     
     @scala.inline
-    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    def setLastAuthor(value: String): Self = StObject.set(x, "LastAuthor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeywords(value: String): Self = this.set("Keywords", value.asInstanceOf[js.Any])
+    def setLastAuthorUndefined: Self = StObject.set(x, "LastAuthor", js.undefined)
     
     @scala.inline
-    def deleteKeywords: Self = this.set("Keywords", js.undefined)
+    def setManager(value: String): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAuthor(value: String): Self = this.set("LastAuthor", value.asInstanceOf[js.Any])
+    def setManagerUndefined: Self = StObject.set(x, "Manager", js.undefined)
     
     @scala.inline
-    def deleteLastAuthor: Self = this.set("LastAuthor", js.undefined)
+    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManager(value: String): Self = this.set("Manager", value.asInstanceOf[js.Any])
+    def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     
     @scala.inline
-    def deleteManager: Self = this.set("Manager", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubject: Self = this.set("Subject", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("Title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("Title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
   }
 }

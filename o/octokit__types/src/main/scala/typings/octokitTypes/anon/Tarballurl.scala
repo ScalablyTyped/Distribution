@@ -1,11 +1,12 @@
 package typings.octokitTypes.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tarballurl extends js.Object {
+trait Tarballurl extends StObject {
   
   var commit: ShaUrl = js.native
   
@@ -24,30 +25,18 @@ object Tarballurl {
   }
   
   @scala.inline
-  implicit class TarballurlOps[Self <: Tarballurl] (val x: Self) extends AnyVal {
+  implicit class TarballurlMutableBuilder[Self <: Tarballurl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommit(value: ShaUrl): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarball_url(value: String): Self = StObject.set(x, "tarball_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommit(value: ShaUrl): Self = this.set("commit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarball_url(value: String): Self = this.set("tarball_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZipball_url(value: String): Self = this.set("zipball_url", value.asInstanceOf[js.Any])
+    def setZipball_url(value: String): Self = StObject.set(x, "zipball_url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.mturkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateAdditionalAssignmentsForHITRequest extends js.Object {
+trait CreateAdditionalAssignmentsForHITRequest extends StObject {
   
   /**
     * The ID of the HIT to extend.
@@ -31,30 +32,18 @@ object CreateAdditionalAssignmentsForHITRequest {
   }
   
   @scala.inline
-  implicit class CreateAdditionalAssignmentsForHITRequestOps[Self <: CreateAdditionalAssignmentsForHITRequest] (val x: Self) extends AnyVal {
+  implicit class CreateAdditionalAssignmentsForHITRequestMutableBuilder[Self <: CreateAdditionalAssignmentsForHITRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNumberOfAdditionalAssignments(value: Integer): Self = StObject.set(x, "NumberOfAdditionalAssignments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setUniqueRequestToken(value: IdempotencyToken): Self = StObject.set(x, "UniqueRequestToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHITId(value: EntityId): Self = this.set("HITId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNumberOfAdditionalAssignments(value: Integer): Self = this.set("NumberOfAdditionalAssignments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUniqueRequestToken(value: IdempotencyToken): Self = this.set("UniqueRequestToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUniqueRequestToken: Self = this.set("UniqueRequestToken", js.undefined)
+    def setUniqueRequestTokenUndefined: Self = StObject.set(x, "UniqueRequestToken", js.undefined)
   }
 }

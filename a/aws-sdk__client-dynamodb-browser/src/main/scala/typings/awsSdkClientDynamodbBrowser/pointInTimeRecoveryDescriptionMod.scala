@@ -1,13 +1,13 @@
 package typings.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-browser/model/_PointInTimeRecoveryDescription", JSImport.Namespace)
-@js.native
-object pointInTimeRecoveryDescriptionMod extends js.Object {
+object pointInTimeRecoveryDescriptionMod {
   
-  @JSName("_PointInTimeRecoveryDescription")
+  @JSImport("@aws-sdk/client-dynamodb-browser/model/_PointInTimeRecoveryDescription", "_PointInTimeRecoveryDescription")
+  @js.native
   val PointInTimeRecoveryDescription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeDashboardResponse extends js.Object {
+trait DescribeDashboardResponse extends StObject {
   
   /**
     * The ARN of the dashboard, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId} 
@@ -64,45 +65,33 @@ object DescribeDashboardResponse {
   }
   
   @scala.inline
-  implicit class DescribeDashboardResponseOps[Self <: DescribeDashboardResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeDashboardResponseMutableBuilder[Self <: DescribeDashboardResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDashboardArn(value: ARN): Self = StObject.set(x, "dashboardArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashboardCreationDate(value: Timestamp): Self = StObject.set(x, "dashboardCreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDashboardDefinition(value: DashboardDefinition): Self = StObject.set(x, "dashboardDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardArn(value: ARN): Self = this.set("dashboardArn", value.asInstanceOf[js.Any])
+    def setDashboardDescription(value: Description): Self = StObject.set(x, "dashboardDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardCreationDate(value: Timestamp): Self = this.set("dashboardCreationDate", value.asInstanceOf[js.Any])
+    def setDashboardDescriptionUndefined: Self = StObject.set(x, "dashboardDescription", js.undefined)
     
     @scala.inline
-    def setDashboardDefinition(value: DashboardDefinition): Self = this.set("dashboardDefinition", value.asInstanceOf[js.Any])
+    def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardId(value: ID): Self = this.set("dashboardId", value.asInstanceOf[js.Any])
+    def setDashboardLastUpdateDate(value: Timestamp): Self = StObject.set(x, "dashboardLastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardLastUpdateDate(value: Timestamp): Self = this.set("dashboardLastUpdateDate", value.asInstanceOf[js.Any])
+    def setDashboardName(value: Name): Self = StObject.set(x, "dashboardName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDashboardName(value: Name): Self = this.set("dashboardName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setProjectId(value: ID): Self = this.set("projectId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDashboardDescription(value: Description): Self = this.set("dashboardDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDashboardDescription: Self = this.set("dashboardDescription", js.undefined)
+    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }
 }

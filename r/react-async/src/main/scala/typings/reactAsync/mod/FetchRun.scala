@@ -4,13 +4,14 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Error
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<react-async.react-async.AbstractState<T>, 'run'> */
 @js.native
-trait FetchRun[T] extends js.Object {
+trait FetchRun[T] extends StObject {
   
   var cancel: js.Function0[Unit] = js.native
   

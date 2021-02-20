@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserDefinedFunctionInput extends js.Object {
+trait UserDefinedFunctionInput extends StObject {
   
   /**
     * The Java class that contains the function code.
@@ -41,51 +42,39 @@ object UserDefinedFunctionInput {
   }
   
   @scala.inline
-  implicit class UserDefinedFunctionInputOps[Self <: UserDefinedFunctionInput] (val x: Self) extends AnyVal {
+  implicit class UserDefinedFunctionInputMutableBuilder[Self <: UserDefinedFunctionInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClassName(value: NameString): Self = StObject.set(x, "ClassName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClassNameUndefined: Self = StObject.set(x, "ClassName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: NameString): Self = this.set("ClassName", value.asInstanceOf[js.Any])
+    def setFunctionNameUndefined: Self = StObject.set(x, "FunctionName", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("ClassName", js.undefined)
+    def setOwnerName(value: NameString): Self = StObject.set(x, "OwnerName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionName(value: NameString): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    def setOwnerNameUndefined: Self = StObject.set(x, "OwnerName", js.undefined)
     
     @scala.inline
-    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    def setOwnerType(value: PrincipalType): Self = StObject.set(x, "OwnerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerName(value: NameString): Self = this.set("OwnerName", value.asInstanceOf[js.Any])
+    def setOwnerTypeUndefined: Self = StObject.set(x, "OwnerType", js.undefined)
     
     @scala.inline
-    def deleteOwnerName: Self = this.set("OwnerName", js.undefined)
+    def setResourceUris(value: ResourceUriList): Self = StObject.set(x, "ResourceUris", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwnerType(value: PrincipalType): Self = this.set("OwnerType", value.asInstanceOf[js.Any])
+    def setResourceUrisUndefined: Self = StObject.set(x, "ResourceUris", js.undefined)
     
     @scala.inline
-    def deleteOwnerType: Self = this.set("OwnerType", js.undefined)
-    
-    @scala.inline
-    def setResourceUrisVarargs(value: ResourceUri*): Self = this.set("ResourceUris", js.Array(value :_*))
-    
-    @scala.inline
-    def setResourceUris(value: ResourceUriList): Self = this.set("ResourceUris", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceUris: Self = this.set("ResourceUris", js.undefined)
+    def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value :_*))
   }
 }

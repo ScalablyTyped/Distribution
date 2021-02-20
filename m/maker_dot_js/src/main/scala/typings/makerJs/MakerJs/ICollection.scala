@@ -1,5 +1,6 @@
 package typings.makerJs.MakerJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A collection for items that share a common key.
   */
 @js.native
-trait ICollection[K, T] extends js.Object {
+trait ICollection[K, T] extends StObject {
   
   var items: js.Array[T] = js.native
   
@@ -23,27 +24,15 @@ object ICollection {
   }
   
   @scala.inline
-  implicit class ICollectionOps[Self <: ICollection[_, _], K, T] (val x: Self with (ICollection[K, T])) extends AnyVal {
+  implicit class ICollectionMutableBuilder[Self <: ICollection[_, _], K, T] (val x: Self with (ICollection[K, T])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = this.set("items", js.Array(value :_*))
-    
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKey(value: K): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

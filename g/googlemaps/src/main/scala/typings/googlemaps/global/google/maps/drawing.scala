@@ -1,14 +1,14 @@
 package typings.googlemaps.global.google.maps
 
 import typings.googlemaps.google.maps.drawing.DrawingManagerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.maps.drawing")
-@js.native
-object drawing extends js.Object {
+object drawing {
   
+  @JSGlobal("google.maps.drawing.DrawingManager")
   @js.native
   class DrawingManager ()
     extends typings.googlemaps.google.maps.drawing.DrawingManager {
@@ -20,8 +20,9 @@ object drawing extends js.Object {
     * these by value, or by using the constant's name. For example, 'polygon'
     * or google.maps.drawing.OverlayType.POLYGON.
     */
+  @JSGlobal("google.maps.drawing.OverlayType")
   @js.native
-  object OverlayType extends js.Object {
+  object OverlayType extends StObject {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[typings.googlemaps.google.maps.drawing.OverlayType with String] = js.native

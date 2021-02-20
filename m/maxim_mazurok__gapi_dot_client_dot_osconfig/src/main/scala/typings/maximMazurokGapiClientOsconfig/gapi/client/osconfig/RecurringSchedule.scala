@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecurringSchedule extends js.Object {
+trait RecurringSchedule extends StObject {
   
   /** Optional. The end time at which a recurring patch deployment schedule is no longer active. */
   var endTime: js.UndefOr[String] = js.native
@@ -43,72 +44,60 @@ object RecurringSchedule {
   }
   
   @scala.inline
-  implicit class RecurringScheduleOps[Self <: RecurringSchedule] (val x: Self) extends AnyVal {
+  implicit class RecurringScheduleMutableBuilder[Self <: RecurringSchedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setLastExecuteTime(value: String): Self = StObject.set(x, "lastExecuteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrequency(value: String): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    def setLastExecuteTimeUndefined: Self = StObject.set(x, "lastExecuteTime", js.undefined)
     
     @scala.inline
-    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    def setMonthly(value: MonthlySchedule): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastExecuteTime(value: String): Self = this.set("lastExecuteTime", value.asInstanceOf[js.Any])
+    def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
     
     @scala.inline
-    def deleteLastExecuteTime: Self = this.set("lastExecuteTime", js.undefined)
+    def setNextExecuteTime(value: String): Self = StObject.set(x, "nextExecuteTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonthly(value: MonthlySchedule): Self = this.set("monthly", value.asInstanceOf[js.Any])
+    def setNextExecuteTimeUndefined: Self = StObject.set(x, "nextExecuteTime", js.undefined)
     
     @scala.inline
-    def deleteMonthly: Self = this.set("monthly", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextExecuteTime(value: String): Self = this.set("nextExecuteTime", value.asInstanceOf[js.Any])
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def deleteNextExecuteTime: Self = this.set("nextExecuteTime", js.undefined)
+    def setTimeOfDay(value: TimeOfDay): Self = StObject.set(x, "timeOfDay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setTimeOfDayUndefined: Self = StObject.set(x, "timeOfDay", js.undefined)
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setTimeZone(value: TimeZone): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeOfDay(value: TimeOfDay): Self = this.set("timeOfDay", value.asInstanceOf[js.Any])
+    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
     @scala.inline
-    def deleteTimeOfDay: Self = this.set("timeOfDay", js.undefined)
+    def setWeekly(value: WeeklySchedule): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeZone(value: TimeZone): Self = this.set("timeZone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
-    
-    @scala.inline
-    def setWeekly(value: WeeklySchedule): Self = this.set("weekly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWeekly: Self = this.set("weekly", js.undefined)
+    def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
   }
 }

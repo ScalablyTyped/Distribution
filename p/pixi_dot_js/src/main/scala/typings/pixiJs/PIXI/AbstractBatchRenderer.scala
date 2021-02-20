@@ -1,6 +1,7 @@
 package typings.pixiJs.PIXI
 
 import typings.std.Uint16Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -190,57 +191,45 @@ object AbstractBatchRenderer {
   }
   
   @scala.inline
-  implicit class AbstractBatchRendererOps[Self <: AbstractBatchRenderer] (val x: Self) extends AnyVal {
+  implicit class AbstractBatchRendererMutableBuilder[Self <: AbstractBatchRenderer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindAndClearTexArray(value: BatchTextureArray => Unit): Self = StObject.set(x, "bindAndClearTexArray", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBuildDrawCalls(value: (BatchTextureArray, Double, Double) => Unit): Self = StObject.set(x, "buildDrawCalls", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextChange(value: () => Unit): Self = StObject.set(x, "contextChange", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMAX_TEXTURES(value: Double): Self = this.set("MAX_TEXTURES", value.asInstanceOf[js.Any])
+    def setGeometryClass(value: js.Any): Self = StObject.set(x, "geometryClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_shader(value: Shader): Self = this.set("_shader", value.asInstanceOf[js.Any])
+    def setInitFlushBuffers(value: () => Unit): Self = StObject.set(x, "initFlushBuffers", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBindAndClearTexArray(value: BatchTextureArray => Unit): Self = this.set("bindAndClearTexArray", js.Any.fromFunction1(value))
+    def setMAX_TEXTURES(value: Double): Self = StObject.set(x, "MAX_TEXTURES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildDrawCalls(value: (BatchTextureArray, Double, Double) => Unit): Self = this.set("buildDrawCalls", js.Any.fromFunction3(value))
+    def setOnPrerender(value: () => Unit): Self = StObject.set(x, "onPrerender", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setContextChange(value: () => Unit): Self = this.set("contextChange", js.Any.fromFunction0(value))
+    def setPackInterleavedGeometry(value: (Sprite, ViewableBuffer, Uint16Array, Double, Double) => Unit): Self = StObject.set(x, "packInterleavedGeometry", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGeometryClass(value: js.Any): Self = this.set("geometryClass", value.asInstanceOf[js.Any])
+    def setShaderGenerator(value: BatchShaderGenerator): Self = StObject.set(x, "shaderGenerator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitFlushBuffers(value: () => Unit): Self = this.set("initFlushBuffers", js.Any.fromFunction0(value))
+    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnPrerender(value: () => Unit): Self = this.set("onPrerender", js.Any.fromFunction0(value))
+    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPackInterleavedGeometry(value: (Sprite, ViewableBuffer, Uint16Array, Double, Double) => Unit): Self = this.set("packInterleavedGeometry", js.Any.fromFunction5(value))
+    def setVertexSize(value: Double): Self = StObject.set(x, "vertexSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShaderGenerator(value: BatchShaderGenerator): Self = this.set("shaderGenerator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: State): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVertexSize(value: Double): Self = this.set("vertexSize", value.asInstanceOf[js.Any])
+    def set_shader(value: Shader): Self = StObject.set(x, "_shader", value.asInstanceOf[js.Any])
   }
 }

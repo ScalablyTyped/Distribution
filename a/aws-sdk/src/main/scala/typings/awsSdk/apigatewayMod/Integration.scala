@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Integration extends js.Object {
+trait Integration extends StObject {
   
   /**
     * A list of request parameters whose values API Gateway caches. To be valid values for cacheKeyParameters, these parameters must also be specified for Method requestParameters.
@@ -91,111 +92,99 @@ object Integration {
   }
   
   @scala.inline
-  implicit class IntegrationOps[Self <: Integration] (val x: Self) extends AnyVal {
+  implicit class IntegrationMutableBuilder[Self <: Integration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCacheKeyParameters(value: ListOfString): Self = StObject.set(x, "cacheKeyParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCacheKeyParametersUndefined: Self = StObject.set(x, "cacheKeyParameters", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCacheKeyParametersVarargs(value: String*): Self = StObject.set(x, "cacheKeyParameters", js.Array(value :_*))
     
     @scala.inline
-    def setCacheKeyParametersVarargs(value: String*): Self = this.set("cacheKeyParameters", js.Array(value :_*))
+    def setCacheNamespace(value: String): Self = StObject.set(x, "cacheNamespace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheKeyParameters(value: ListOfString): Self = this.set("cacheKeyParameters", value.asInstanceOf[js.Any])
+    def setCacheNamespaceUndefined: Self = StObject.set(x, "cacheNamespace", js.undefined)
     
     @scala.inline
-    def deleteCacheKeyParameters: Self = this.set("cacheKeyParameters", js.undefined)
+    def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCacheNamespace(value: String): Self = this.set("cacheNamespace", value.asInstanceOf[js.Any])
+    def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
     
     @scala.inline
-    def deleteCacheNamespace: Self = this.set("cacheNamespace", js.undefined)
+    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionId(value: String): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    def setConnectionTypeUndefined: Self = StObject.set(x, "connectionType", js.undefined)
     
     @scala.inline
-    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    def setContentHandling(value: ContentHandlingStrategy): Self = StObject.set(x, "contentHandling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectionType(value: ConnectionType): Self = this.set("connectionType", value.asInstanceOf[js.Any])
+    def setContentHandlingUndefined: Self = StObject.set(x, "contentHandling", js.undefined)
     
     @scala.inline
-    def deleteConnectionType: Self = this.set("connectionType", js.undefined)
+    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentHandling(value: ContentHandlingStrategy): Self = this.set("contentHandling", value.asInstanceOf[js.Any])
+    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
     @scala.inline
-    def deleteContentHandling: Self = this.set("contentHandling", js.undefined)
+    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: String): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setHttpMethodUndefined: Self = StObject.set(x, "httpMethod", js.undefined)
     
     @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    def setIntegrationResponses(value: MapOfIntegrationResponse): Self = StObject.set(x, "integrationResponses", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    def setIntegrationResponsesUndefined: Self = StObject.set(x, "integrationResponses", js.undefined)
     
     @scala.inline
-    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    def setPassthroughBehavior(value: String): Self = StObject.set(x, "passthroughBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationResponses(value: MapOfIntegrationResponse): Self = this.set("integrationResponses", value.asInstanceOf[js.Any])
+    def setPassthroughBehaviorUndefined: Self = StObject.set(x, "passthroughBehavior", js.undefined)
     
     @scala.inline
-    def deleteIntegrationResponses: Self = this.set("integrationResponses", js.undefined)
+    def setRequestParameters(value: MapOfStringToString): Self = StObject.set(x, "requestParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassthroughBehavior(value: String): Self = this.set("passthroughBehavior", value.asInstanceOf[js.Any])
+    def setRequestParametersUndefined: Self = StObject.set(x, "requestParameters", js.undefined)
     
     @scala.inline
-    def deletePassthroughBehavior: Self = this.set("passthroughBehavior", js.undefined)
+    def setRequestTemplates(value: MapOfStringToString): Self = StObject.set(x, "requestTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestParameters(value: MapOfStringToString): Self = this.set("requestParameters", value.asInstanceOf[js.Any])
+    def setRequestTemplatesUndefined: Self = StObject.set(x, "requestTemplates", js.undefined)
     
     @scala.inline
-    def deleteRequestParameters: Self = this.set("requestParameters", js.undefined)
+    def setTimeoutInMillis(value: Integer): Self = StObject.set(x, "timeoutInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTemplates(value: MapOfStringToString): Self = this.set("requestTemplates", value.asInstanceOf[js.Any])
+    def setTimeoutInMillisUndefined: Self = StObject.set(x, "timeoutInMillis", js.undefined)
     
     @scala.inline
-    def deleteRequestTemplates: Self = this.set("requestTemplates", js.undefined)
+    def setTlsConfig(value: TlsConfig): Self = StObject.set(x, "tlsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutInMillis(value: Integer): Self = this.set("timeoutInMillis", value.asInstanceOf[js.Any])
+    def setTlsConfigUndefined: Self = StObject.set(x, "tlsConfig", js.undefined)
     
     @scala.inline
-    def deleteTimeoutInMillis: Self = this.set("timeoutInMillis", js.undefined)
+    def setType(value: IntegrationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTlsConfig(value: TlsConfig): Self = this.set("tlsConfig", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteTlsConfig: Self = this.set("tlsConfig", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: IntegrationType): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUri: Self = this.set("uri", js.undefined)
+    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

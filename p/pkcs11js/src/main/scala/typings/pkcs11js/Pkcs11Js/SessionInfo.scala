@@ -1,12 +1,13 @@
 package typings.pkcs11js.Pkcs11Js
 
 import typings.node.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SessionInfo extends js.Object {
+trait SessionInfo extends StObject {
   
   var deviceError: Double = js.native
   
@@ -25,30 +26,18 @@ object SessionInfo {
   }
   
   @scala.inline
-  implicit class SessionInfoOps[Self <: SessionInfo] (val x: Self) extends AnyVal {
+  implicit class SessionInfoMutableBuilder[Self <: SessionInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeviceError(value: Double): Self = StObject.set(x, "deviceError", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSlotID(value: Buffer): Self = StObject.set(x, "slotID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceError(value: Double): Self = this.set("deviceError", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFlags(value: Double): Self = this.set("flags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlotID(value: Buffer): Self = this.set("slotID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setState(value: Double): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

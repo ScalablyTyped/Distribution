@@ -2,12 +2,13 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialCommentMargins
 import typings.exceljs.anon.PartialCommentProtection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Comment extends js.Object {
+trait Comment extends StObject {
   
   var editAs: js.UndefOr[CommentEditAs] = js.native
   
@@ -26,45 +27,33 @@ object Comment {
   }
   
   @scala.inline
-  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEditAs(value: CommentEditAs): Self = StObject.set(x, "editAs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEditAsUndefined: Self = StObject.set(x, "editAs", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMargins(value: PartialCommentMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditAs(value: CommentEditAs): Self = this.set("editAs", value.asInstanceOf[js.Any])
+    def setMarginsUndefined: Self = StObject.set(x, "margins", js.undefined)
     
     @scala.inline
-    def deleteEditAs: Self = this.set("editAs", js.undefined)
+    def setProtection(value: PartialCommentProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargins(value: PartialCommentMargins): Self = this.set("margins", value.asInstanceOf[js.Any])
+    def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
     
     @scala.inline
-    def deleteMargins: Self = this.set("margins", js.undefined)
+    def setTexts(value: js.Array[RichText]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtection(value: PartialCommentProtection): Self = this.set("protection", value.asInstanceOf[js.Any])
+    def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
     @scala.inline
-    def deleteProtection: Self = this.set("protection", js.undefined)
-    
-    @scala.inline
-    def setTextsVarargs(value: RichText*): Self = this.set("texts", js.Array(value :_*))
-    
-    @scala.inline
-    def setTexts(value: js.Array[RichText]): Self = this.set("texts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTexts: Self = this.set("texts", js.undefined)
+    def setTextsVarargs(value: RichText*): Self = StObject.set(x, "texts", js.Array(value :_*))
   }
 }

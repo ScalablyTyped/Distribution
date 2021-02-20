@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudDialogflowV2ValidationResult extends js.Object {
+trait GoogleCloudDialogflowV2ValidationResult extends StObject {
   
   /** Contains all validation errors. */
   var validationErrors: js.UndefOr[js.Array[GoogleCloudDialogflowV2ValidationError]] = js.native
@@ -19,27 +20,15 @@ object GoogleCloudDialogflowV2ValidationResult {
   }
   
   @scala.inline
-  implicit class GoogleCloudDialogflowV2ValidationResultOps[Self <: GoogleCloudDialogflowV2ValidationResult] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudDialogflowV2ValidationResultMutableBuilder[Self <: GoogleCloudDialogflowV2ValidationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValidationErrors(value: js.Array[GoogleCloudDialogflowV2ValidationError]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValidationErrorsVarargs(value: GoogleCloudDialogflowV2ValidationError*): Self = this.set("validationErrors", js.Array(value :_*))
-    
-    @scala.inline
-    def setValidationErrors(value: js.Array[GoogleCloudDialogflowV2ValidationError]): Self = this.set("validationErrors", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationErrors: Self = this.set("validationErrors", js.undefined)
+    def setValidationErrorsVarargs(value: GoogleCloudDialogflowV2ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
   }
 }

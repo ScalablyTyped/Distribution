@@ -1,11 +1,12 @@
 package typings.jsonEditor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSONEditor[TValue] extends js.Object {
+trait JSONEditor[TValue] extends StObject {
   
   def destroy(): Unit = js.native
   

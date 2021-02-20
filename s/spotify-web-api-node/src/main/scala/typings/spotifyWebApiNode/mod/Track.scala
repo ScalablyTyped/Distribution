@@ -1,11 +1,12 @@
 package typings.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Track extends js.Object {
+trait Track extends StObject {
   
   var positions: js.UndefOr[js.Array[Double]] = js.native
   
@@ -20,30 +21,18 @@ object Track {
   }
   
   @scala.inline
-  implicit class TrackOps[Self <: Track] (val x: Self) extends AnyVal {
+  implicit class TrackMutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPositionsVarargs(value: Double*): Self = this.set("positions", js.Array(value :_*))
-    
-    @scala.inline
-    def setPositions(value: js.Array[Double]): Self = this.set("positions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePositions: Self = this.set("positions", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

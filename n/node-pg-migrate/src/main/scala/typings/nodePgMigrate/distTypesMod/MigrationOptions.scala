@@ -2,12 +2,13 @@ package typings.nodePgMigrate.distTypesMod
 
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MigrationOptions extends js.Object {
+trait MigrationOptions extends StObject {
   
   def literal(v: Name): String = js.native
   @JSName("literal")

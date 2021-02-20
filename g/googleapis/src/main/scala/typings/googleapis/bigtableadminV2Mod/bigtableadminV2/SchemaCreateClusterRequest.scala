@@ -1,5 +1,6 @@
 package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Request message for BigtableInstanceAdmin.CreateCluster.
   */
 @js.native
-trait SchemaCreateClusterRequest extends js.Object {
+trait SchemaCreateClusterRequest extends StObject {
   
   /**
     * The cluster to be created. Fields marked `OutputOnly` must be left blank.
@@ -38,36 +39,24 @@ object SchemaCreateClusterRequest {
   }
   
   @scala.inline
-  implicit class SchemaCreateClusterRequestOps[Self <: SchemaCreateClusterRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaCreateClusterRequestMutableBuilder[Self <: SchemaCreateClusterRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCluster(value: SchemaCluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     @scala.inline
-    def setCluster(value: SchemaCluster): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
     @scala.inline
-    def deleteCluster: Self = this.set("cluster", js.undefined)
+    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClusterId: Self = this.set("clusterId", js.undefined)
-    
-    @scala.inline
-    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParent: Self = this.set("parent", js.undefined)
+    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

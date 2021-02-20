@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains data from the recently swiped card. */
 @js.native
-trait MagneticStripeReaderReport extends js.Object {
+trait MagneticStripeReaderReport extends StObject {
   
   /** Gets the additional security or encryption information for the recently swiped card. */
   var additionalSecurityInformation: IBuffer = js.native
@@ -56,45 +57,33 @@ object MagneticStripeReaderReport {
   }
   
   @scala.inline
-  implicit class MagneticStripeReaderReportOps[Self <: MagneticStripeReaderReport] (val x: Self) extends AnyVal {
+  implicit class MagneticStripeReaderReportMutableBuilder[Self <: MagneticStripeReaderReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalSecurityInformation(value: IBuffer): Self = StObject.set(x, "additionalSecurityInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardAuthenticationData(value: IBuffer): Self = StObject.set(x, "cardAuthenticationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardAuthenticationDataLength(value: Double): Self = StObject.set(x, "cardAuthenticationDataLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalSecurityInformation(value: IBuffer): Self = this.set("additionalSecurityInformation", value.asInstanceOf[js.Any])
+    def setCardType(value: Double): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardAuthenticationData(value: IBuffer): Self = this.set("cardAuthenticationData", value.asInstanceOf[js.Any])
+    def setProperties(value: IMapView[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardAuthenticationDataLength(value: Double): Self = this.set("cardAuthenticationDataLength", value.asInstanceOf[js.Any])
+    def setTrack1(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardType(value: Double): Self = this.set("cardType", value.asInstanceOf[js.Any])
+    def setTrack2(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: IMapView[String, String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    def setTrack3(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track3", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrack1(value: MagneticStripeReaderTrackData): Self = this.set("track1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrack2(value: MagneticStripeReaderTrackData): Self = this.set("track2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrack3(value: MagneticStripeReaderTrackData): Self = this.set("track3", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTrack4(value: MagneticStripeReaderTrackData): Self = this.set("track4", value.asInstanceOf[js.Any])
+    def setTrack4(value: MagneticStripeReaderTrackData): Self = StObject.set(x, "track4", value.asInstanceOf[js.Any])
   }
 }

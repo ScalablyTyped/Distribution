@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceBufferListEventMap extends js.Object {
+trait SourceBufferListEventMap extends StObject {
   
   var addsourcebuffer: Event = js.native
   
@@ -20,24 +21,12 @@ object SourceBufferListEventMap {
   }
   
   @scala.inline
-  implicit class SourceBufferListEventMapOps[Self <: SourceBufferListEventMap] (val x: Self) extends AnyVal {
+  implicit class SourceBufferListEventMapMutableBuilder[Self <: SourceBufferListEventMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddsourcebuffer(value: Event): Self = StObject.set(x, "addsourcebuffer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddsourcebuffer(value: Event): Self = this.set("addsourcebuffer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemovesourcebuffer(value: Event): Self = this.set("removesourcebuffer", value.asInstanceOf[js.Any])
+    def setRemovesourcebuffer(value: Event): Self = StObject.set(x, "removesourcebuffer", value.asInstanceOf[js.Any])
   }
 }

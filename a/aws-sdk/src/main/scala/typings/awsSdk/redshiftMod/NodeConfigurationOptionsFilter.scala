@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NodeConfigurationOptionsFilter extends js.Object {
+trait NodeConfigurationOptionsFilter extends StObject {
   
   /**
     * The name of the element to filter.
@@ -31,39 +32,27 @@ object NodeConfigurationOptionsFilter {
   }
   
   @scala.inline
-  implicit class NodeConfigurationOptionsFilterOps[Self <: NodeConfigurationOptionsFilter] (val x: Self) extends AnyVal {
+  implicit class NodeConfigurationOptionsFilterMutableBuilder[Self <: NodeConfigurationOptionsFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: NodeConfigurationOptionsFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperator(value: OperatorType): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: NodeConfigurationOptionsFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setOperatorUndefined: Self = StObject.set(x, "Operator", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setValues(value: ValueStringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperator(value: OperatorType): Self = this.set("Operator", value.asInstanceOf[js.Any])
+    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
     @scala.inline
-    def deleteOperator: Self = this.set("Operator", js.undefined)
-    
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: ValueStringList): Self = this.set("Values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("Values", js.undefined)
+    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

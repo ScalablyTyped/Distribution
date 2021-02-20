@@ -2,6 +2,7 @@ package typings.titanium.Titanium.UI
 
 import typings.titanium.Point
 import typings.titanium.Size
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,36 +62,24 @@ object TableViewScrollEvent {
   }
   
   @scala.inline
-  implicit class TableViewScrollEventOps[Self <: TableViewScrollEvent] (val x: Self) extends AnyVal {
+  implicit class TableViewScrollEventMutableBuilder[Self <: TableViewScrollEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContentOffset(value: Point): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContentSize(value: Size): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFirstVisibleItem(value: Double): Self = StObject.set(x, "firstVisibleItem", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentOffset(value: Point): Self = this.set("contentOffset", value.asInstanceOf[js.Any])
+    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentSize(value: Size): Self = this.set("contentSize", value.asInstanceOf[js.Any])
+    def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstVisibleItem(value: Double): Self = this.set("firstVisibleItem", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: Size): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalItemCount(value: Double): Self = this.set("totalItemCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisibleItemCount(value: Double): Self = this.set("visibleItemCount", value.asInstanceOf[js.Any])
+    def setVisibleItemCount(value: Double): Self = StObject.set(x, "visibleItemCount", value.asInstanceOf[js.Any])
   }
 }

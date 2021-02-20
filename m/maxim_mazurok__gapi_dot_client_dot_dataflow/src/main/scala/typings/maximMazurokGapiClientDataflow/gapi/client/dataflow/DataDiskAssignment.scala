@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataDiskAssignment extends js.Object {
+trait DataDiskAssignment extends StObject {
   
   /**
     * Mounted data disks. The order is important a data disk's 0-based index in this list defines which persistent directory the disk is mounted to, for example the list of {
@@ -25,33 +26,21 @@ object DataDiskAssignment {
   }
   
   @scala.inline
-  implicit class DataDiskAssignmentOps[Self <: DataDiskAssignment] (val x: Self) extends AnyVal {
+  implicit class DataDiskAssignmentMutableBuilder[Self <: DataDiskAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataDisks(value: js.Array[String]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDataDisksVarargs(value: String*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
     
     @scala.inline
-    def setDataDisksVarargs(value: String*): Self = this.set("dataDisks", js.Array(value :_*))
+    def setVmInstance(value: String): Self = StObject.set(x, "vmInstance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataDisks(value: js.Array[String]): Self = this.set("dataDisks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDataDisks: Self = this.set("dataDisks", js.undefined)
-    
-    @scala.inline
-    def setVmInstance(value: String): Self = this.set("vmInstance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmInstance: Self = this.set("vmInstance", js.undefined)
+    def setVmInstanceUndefined: Self = StObject.set(x, "vmInstance", js.undefined)
   }
 }

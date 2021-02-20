@@ -3,12 +3,13 @@ package typings.winrt.Windows.UI.Input.Inking
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.UI.Input.PointerPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInkStrokeBuilder extends js.Object {
+trait IInkStrokeBuilder extends StObject {
   
   def appendToStroke(pointerPoint: PointerPoint): PointerPoint = js.native
   
@@ -35,33 +36,21 @@ object IInkStrokeBuilder {
   }
   
   @scala.inline
-  implicit class IInkStrokeBuilderOps[Self <: IInkStrokeBuilder] (val x: Self) extends AnyVal {
+  implicit class IInkStrokeBuilderMutableBuilder[Self <: IInkStrokeBuilder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeginStroke(value: PointerPoint => Unit): Self = StObject.set(x, "beginStroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreateStroke(value: IIterable[Point] => InkStroke): Self = StObject.set(x, "createStroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAppendToStroke(value: PointerPoint => PointerPoint): Self = this.set("appendToStroke", js.Any.fromFunction1(value))
+    def setEndStroke(value: PointerPoint => InkStroke): Self = StObject.set(x, "endStroke", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setBeginStroke(value: PointerPoint => Unit): Self = this.set("beginStroke", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCreateStroke(value: IIterable[Point] => InkStroke): Self = this.set("createStroke", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEndStroke(value: PointerPoint => InkStroke): Self = this.set("endStroke", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetDefaultDrawingAttributes(value: InkDrawingAttributes => Unit): Self = this.set("setDefaultDrawingAttributes", js.Any.fromFunction1(value))
+    def setSetDefaultDrawingAttributes(value: InkDrawingAttributes => Unit): Self = StObject.set(x, "setDefaultDrawingAttributes", js.Any.fromFunction1(value))
   }
 }

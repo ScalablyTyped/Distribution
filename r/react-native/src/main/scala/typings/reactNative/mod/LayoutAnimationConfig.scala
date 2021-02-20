@@ -1,11 +1,12 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayoutAnimationConfig extends js.Object {
+trait LayoutAnimationConfig extends StObject {
   
   var create: js.UndefOr[LayoutAnimationAnim] = js.native
   
@@ -24,39 +25,27 @@ object LayoutAnimationConfig {
   }
   
   @scala.inline
-  implicit class LayoutAnimationConfigOps[Self <: LayoutAnimationConfig] (val x: Self) extends AnyVal {
+  implicit class LayoutAnimationConfigMutableBuilder[Self <: LayoutAnimationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreate(value: LayoutAnimationAnim): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelete(value: LayoutAnimationAnim): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     @scala.inline
-    def setCreate(value: LayoutAnimationAnim): Self = this.set("create", value.asInstanceOf[js.Any])
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreate: Self = this.set("create", js.undefined)
+    def setUpdate(value: LayoutAnimationAnim): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: LayoutAnimationAnim): Self = this.set("delete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDelete: Self = this.set("delete", js.undefined)
-    
-    @scala.inline
-    def setUpdate(value: LayoutAnimationAnim): Self = this.set("update", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.redshiftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyUsageLimitMessage extends js.Object {
+trait ModifyUsageLimitMessage extends StObject {
   
   /**
     * The new limit amount. For more information about this parameter, see UsageLimit. 
@@ -31,33 +32,21 @@ object ModifyUsageLimitMessage {
   }
   
   @scala.inline
-  implicit class ModifyUsageLimitMessageOps[Self <: ModifyUsageLimitMessage] (val x: Self) extends AnyVal {
+  implicit class ModifyUsageLimitMessageMutableBuilder[Self <: ModifyUsageLimitMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: LongOptional): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmountUndefined: Self = StObject.set(x, "Amount", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBreachAction(value: UsageLimitBreachAction): Self = StObject.set(x, "BreachAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUsageLimitId(value: String): Self = this.set("UsageLimitId", value.asInstanceOf[js.Any])
+    def setBreachActionUndefined: Self = StObject.set(x, "BreachAction", js.undefined)
     
     @scala.inline
-    def setAmount(value: LongOptional): Self = this.set("Amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAmount: Self = this.set("Amount", js.undefined)
-    
-    @scala.inline
-    def setBreachAction(value: UsageLimitBreachAction): Self = this.set("BreachAction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBreachAction: Self = this.set("BreachAction", js.undefined)
+    def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
   }
 }

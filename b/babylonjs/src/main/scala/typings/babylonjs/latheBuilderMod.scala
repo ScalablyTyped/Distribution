@@ -4,19 +4,18 @@ import typings.babylonjs.anon.Clip
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/Builders/latheBuilder", JSImport.Namespace)
-@js.native
-object latheBuilderMod extends js.Object {
+object latheBuilderMod {
   
+  @JSImport("babylonjs/Meshes/Builders/latheBuilder", "LatheBuilder")
   @js.native
-  class LatheBuilder () extends js.Object
+  class LatheBuilder () extends StObject
   /* static members */
-  @js.native
-  object LatheBuilder extends js.Object {
+  object LatheBuilder {
     
     /**
       * Creates lathe mesh.
@@ -38,7 +37,11 @@ object latheBuilderMod extends js.Object {
       * @returns the lathe mesh
       * @see https://doc.babylonjs.com/how_to/parametric_shapes#lathe
       */
+    @JSImport("babylonjs/Meshes/Builders/latheBuilder", "LatheBuilder.CreateLathe")
+    @js.native
     def CreateLathe(name: String, options: Clip): Mesh = js.native
+    @JSImport("babylonjs/Meshes/Builders/latheBuilder", "LatheBuilder.CreateLathe")
+    @js.native
     def CreateLathe(name: String, options: Clip, scene: Nullable[Scene]): Mesh = js.native
   }
 }

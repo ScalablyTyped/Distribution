@@ -1,5 +1,6 @@
 package typings.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object ArtistSearchParams {
   }
   
   @scala.inline
-  implicit class ArtistSearchParamsOps[Self <: ArtistSearchParams] (val x: Self) extends AnyVal {
+  implicit class ArtistSearchParamsMutableBuilder[Self <: ArtistSearchParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setF_artist_id(value: Double): Self = StObject.set(x, "f_artist_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setF_artist_idUndefined: Self = StObject.set(x, "f_artist_id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF_artist_mbid(value: Double): Self = StObject.set(x, "f_artist_mbid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_artist_id(value: Double): Self = this.set("f_artist_id", value.asInstanceOf[js.Any])
+    def setF_artist_mbidUndefined: Self = StObject.set(x, "f_artist_mbid", js.undefined)
     
     @scala.inline
-    def deleteF_artist_id: Self = this.set("f_artist_id", js.undefined)
+    def setQ_artist(value: String): Self = StObject.set(x, "q_artist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF_artist_mbid(value: Double): Self = this.set("f_artist_mbid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteF_artist_mbid: Self = this.set("f_artist_mbid", js.undefined)
-    
-    @scala.inline
-    def setQ_artist(value: String): Self = this.set("q_artist", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQ_artist: Self = this.set("q_artist", js.undefined)
+    def setQ_artistUndefined: Self = StObject.set(x, "q_artist", js.undefined)
   }
 }

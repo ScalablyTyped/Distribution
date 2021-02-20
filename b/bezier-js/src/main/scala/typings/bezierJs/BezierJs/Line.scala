@@ -1,11 +1,12 @@
 package typings.bezierJs.BezierJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Line extends js.Object {
+trait Line extends StObject {
   
   var p1: Point = js.native
   
@@ -20,24 +21,12 @@ object Line {
   }
   
   @scala.inline
-  implicit class LineOps[Self <: Line] (val x: Self) extends AnyVal {
+  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setP1(value: Point): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setP1(value: Point): Self = this.set("p1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setP2(value: Point): Self = this.set("p2", value.asInstanceOf[js.Any])
+    def setP2(value: Point): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.pubnub.mod
 
 import typings.pubnub.anon.FreeSocketKeepAliveTimeout
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PubnubConfig extends js.Object {
+trait PubnubConfig extends StObject {
   
   var authKey: js.UndefOr[String] = js.native
   
@@ -53,123 +54,111 @@ object PubnubConfig {
   }
   
   @scala.inline
-  implicit class PubnubConfigOps[Self <: PubnubConfig] (val x: Self) extends AnyVal {
+  implicit class PubnubConfigMutableBuilder[Self <: PubnubConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthKey(value: String): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoNetworkDetection(value: Boolean): Self = StObject.set(x, "autoNetworkDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscribeKey(value: String): Self = this.set("subscribeKey", value.asInstanceOf[js.Any])
+    def setAutoNetworkDetectionUndefined: Self = StObject.set(x, "autoNetworkDetection", js.undefined)
     
     @scala.inline
-    def setAuthKey(value: String): Self = this.set("authKey", value.asInstanceOf[js.Any])
+    def setCipherKey(value: String): Self = StObject.set(x, "cipherKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAuthKey: Self = this.set("authKey", js.undefined)
+    def setCipherKeyUndefined: Self = StObject.set(x, "cipherKey", js.undefined)
     
     @scala.inline
-    def setAutoNetworkDetection(value: Boolean): Self = this.set("autoNetworkDetection", value.asInstanceOf[js.Any])
+    def setHeartbeatInterval(value: Double): Self = StObject.set(x, "heartbeatInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoNetworkDetection: Self = this.set("autoNetworkDetection", js.undefined)
+    def setHeartbeatIntervalUndefined: Self = StObject.set(x, "heartbeatInterval", js.undefined)
     
     @scala.inline
-    def setCipherKey(value: String): Self = this.set("cipherKey", value.asInstanceOf[js.Any])
+    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCipherKey: Self = this.set("cipherKey", js.undefined)
+    def setKeepAliveSettings(value: FreeSocketKeepAliveTimeout): Self = StObject.set(x, "keepAliveSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeartbeatInterval(value: Double): Self = this.set("heartbeatInterval", value.asInstanceOf[js.Any])
+    def setKeepAliveSettingsUndefined: Self = StObject.set(x, "keepAliveSettings", js.undefined)
     
     @scala.inline
-    def deleteHeartbeatInterval: Self = this.set("heartbeatInterval", js.undefined)
+    def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
     @scala.inline
-    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    def setListenToBrowserNetworkEvents(value: Boolean): Self = StObject.set(x, "listenToBrowserNetworkEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    def setListenToBrowserNetworkEventsUndefined: Self = StObject.set(x, "listenToBrowserNetworkEvents", js.undefined)
     
     @scala.inline
-    def setKeepAliveSettings(value: FreeSocketKeepAliveTimeout): Self = this.set("keepAliveSettings", value.asInstanceOf[js.Any])
+    def setLogVerbosity(value: Boolean): Self = StObject.set(x, "logVerbosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKeepAliveSettings: Self = this.set("keepAliveSettings", js.undefined)
+    def setLogVerbosityUndefined: Self = StObject.set(x, "logVerbosity", js.undefined)
     
     @scala.inline
-    def setListenToBrowserNetworkEvents(value: Boolean): Self = this.set("listenToBrowserNetworkEvents", value.asInstanceOf[js.Any])
+    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteListenToBrowserNetworkEvents: Self = this.set("listenToBrowserNetworkEvents", js.undefined)
+    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     @scala.inline
-    def setLogVerbosity(value: Boolean): Self = this.set("logVerbosity", value.asInstanceOf[js.Any])
+    def setPresenceTimeout(value: Double): Self = StObject.set(x, "presenceTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLogVerbosity: Self = this.set("logVerbosity", js.undefined)
+    def setPresenceTimeoutUndefined: Self = StObject.set(x, "presenceTimeout", js.undefined)
     
     @scala.inline
-    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    def setPublishKey(value: String): Self = StObject.set(x, "publishKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOrigin: Self = this.set("origin", js.undefined)
+    def setPublishKeyUndefined: Self = StObject.set(x, "publishKey", js.undefined)
     
     @scala.inline
-    def setPresenceTimeout(value: Double): Self = this.set("presenceTimeout", value.asInstanceOf[js.Any])
+    def setRequestMessageCountThreshold(value: Double): Self = StObject.set(x, "requestMessageCountThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePresenceTimeout: Self = this.set("presenceTimeout", js.undefined)
+    def setRequestMessageCountThresholdUndefined: Self = StObject.set(x, "requestMessageCountThreshold", js.undefined)
     
     @scala.inline
-    def setPublishKey(value: String): Self = this.set("publishKey", value.asInstanceOf[js.Any])
+    def setRestore(value: Boolean): Self = StObject.set(x, "restore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePublishKey: Self = this.set("publishKey", js.undefined)
+    def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
     @scala.inline
-    def setRequestMessageCountThreshold(value: Double): Self = this.set("requestMessageCountThreshold", value.asInstanceOf[js.Any])
+    def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRequestMessageCountThreshold: Self = this.set("requestMessageCountThreshold", js.undefined)
+    def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
     
     @scala.inline
-    def setRestore(value: Boolean): Self = this.set("restore", value.asInstanceOf[js.Any])
+    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestore: Self = this.set("restore", js.undefined)
+    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
     @scala.inline
-    def setSecretKey(value: String): Self = this.set("secretKey", value.asInstanceOf[js.Any])
+    def setSubscribeKey(value: String): Self = StObject.set(x, "subscribeKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSecretKey: Self = this.set("secretKey", js.undefined)
+    def setSuppressLeaveEvents(value: Boolean): Self = StObject.set(x, "suppressLeaveEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    def setSuppressLeaveEventsUndefined: Self = StObject.set(x, "suppressLeaveEvents", js.undefined)
     
     @scala.inline
-    def deleteSsl: Self = this.set("ssl", js.undefined)
+    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuppressLeaveEvents(value: Boolean): Self = this.set("suppressLeaveEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuppressLeaveEvents: Self = this.set("suppressLeaveEvents", js.undefined)
-    
-    @scala.inline
-    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUuid: Self = this.set("uuid", js.undefined)
+    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

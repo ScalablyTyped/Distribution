@@ -3,12 +3,13 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.ExceptionDetails
 import typings.node.inspectorMod.Runtime.StackTrace
 import typings.node.inspectorMod.Runtime.StackTraceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SetScriptSourceReturnType extends js.Object {
+trait SetScriptSourceReturnType extends StObject {
   
   /**
     * Async stack trace, if any.
@@ -45,51 +46,39 @@ object SetScriptSourceReturnType {
   }
   
   @scala.inline
-  implicit class SetScriptSourceReturnTypeOps[Self <: SetScriptSourceReturnType] (val x: Self) extends AnyVal {
+  implicit class SetScriptSourceReturnTypeMutableBuilder[Self <: SetScriptSourceReturnType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsyncStackTraceId(value: StackTraceId): Self = StObject.set(x, "asyncStackTraceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAsyncStackTraceIdUndefined: Self = StObject.set(x, "asyncStackTraceId", js.undefined)
     
     @scala.inline
-    def setAsyncStackTrace(value: StackTrace): Self = this.set("asyncStackTrace", value.asInstanceOf[js.Any])
+    def setAsyncStackTraceUndefined: Self = StObject.set(x, "asyncStackTrace", js.undefined)
     
     @scala.inline
-    def deleteAsyncStackTrace: Self = this.set("asyncStackTrace", js.undefined)
+    def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsyncStackTraceId(value: StackTraceId): Self = this.set("asyncStackTraceId", value.asInstanceOf[js.Any])
+    def setCallFramesUndefined: Self = StObject.set(x, "callFrames", js.undefined)
     
     @scala.inline
-    def deleteAsyncStackTraceId: Self = this.set("asyncStackTraceId", js.undefined)
+    def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
     
     @scala.inline
-    def setCallFramesVarargs(value: CallFrame*): Self = this.set("callFrames", js.Array(value :_*))
+    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallFrames(value: js.Array[CallFrame]): Self = this.set("callFrames", value.asInstanceOf[js.Any])
+    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
     @scala.inline
-    def deleteCallFrames: Self = this.set("callFrames", js.undefined)
+    def setStackChanged(value: Boolean): Self = StObject.set(x, "stackChanged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = this.set("exceptionDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExceptionDetails: Self = this.set("exceptionDetails", js.undefined)
-    
-    @scala.inline
-    def setStackChanged(value: Boolean): Self = this.set("stackChanged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStackChanged: Self = this.set("stackChanged", js.undefined)
+    def setStackChangedUndefined: Self = StObject.set(x, "stackChanged", js.undefined)
   }
 }

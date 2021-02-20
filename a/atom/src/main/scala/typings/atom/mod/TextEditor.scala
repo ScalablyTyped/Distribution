@@ -17,6 +17,7 @@ import typings.atom.anon.`29`
 import typings.atom.anon.`30`
 import typings.atom.atomBooleans.`false`
 import typings.std.RegExp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("atom", "TextEditor")
 @js.native
 // NOTE: undocumented within the public API. Don't go down the rabbit hole.
-class TextEditor () extends js.Object {
+class TextEditor () extends StObject {
   def this(options: js.Object) = this()
   
   /**

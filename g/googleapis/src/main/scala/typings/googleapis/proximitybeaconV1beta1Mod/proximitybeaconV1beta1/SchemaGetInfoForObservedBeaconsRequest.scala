@@ -1,5 +1,6 @@
 package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * client has encountered &quot;in the wild&quot;.
   */
 @js.native
-trait SchemaGetInfoForObservedBeaconsRequest extends js.Object {
+trait SchemaGetInfoForObservedBeaconsRequest extends StObject {
   
   /**
     * Specifies what kind of attachments to include in the response. When
@@ -34,36 +35,24 @@ object SchemaGetInfoForObservedBeaconsRequest {
   }
   
   @scala.inline
-  implicit class SchemaGetInfoForObservedBeaconsRequestOps[Self <: SchemaGetInfoForObservedBeaconsRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGetInfoForObservedBeaconsRequestMutableBuilder[Self <: SchemaGetInfoForObservedBeaconsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNamespacedTypes(value: js.Array[String]): Self = StObject.set(x, "namespacedTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNamespacedTypesUndefined: Self = StObject.set(x, "namespacedTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespacedTypesVarargs(value: String*): Self = StObject.set(x, "namespacedTypes", js.Array(value :_*))
     
     @scala.inline
-    def setNamespacedTypesVarargs(value: String*): Self = this.set("namespacedTypes", js.Array(value :_*))
+    def setObservations(value: js.Array[SchemaObservation]): Self = StObject.set(x, "observations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespacedTypes(value: js.Array[String]): Self = this.set("namespacedTypes", value.asInstanceOf[js.Any])
+    def setObservationsUndefined: Self = StObject.set(x, "observations", js.undefined)
     
     @scala.inline
-    def deleteNamespacedTypes: Self = this.set("namespacedTypes", js.undefined)
-    
-    @scala.inline
-    def setObservationsVarargs(value: SchemaObservation*): Self = this.set("observations", js.Array(value :_*))
-    
-    @scala.inline
-    def setObservations(value: js.Array[SchemaObservation]): Self = this.set("observations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteObservations: Self = this.set("observations", js.undefined)
+    def setObservationsVarargs(value: SchemaObservation*): Self = StObject.set(x, "observations", js.Array(value :_*))
   }
 }

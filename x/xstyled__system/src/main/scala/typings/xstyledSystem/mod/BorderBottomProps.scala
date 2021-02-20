@@ -1,11 +1,12 @@
 package typings.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BorderBottomProps[TLength] extends js.Object {
+trait BorderBottomProps[TLength] extends StObject {
   
   val borderBottom: js.UndefOr[
     ResponsiveValue[
@@ -22,31 +23,19 @@ object BorderBottomProps {
   }
   
   @scala.inline
-  implicit class BorderBottomPropsOps[Self <: BorderBottomProps[_], TLength] (val x: Self with BorderBottomProps[TLength]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBorderBottomVarargs(value: js.Any*): Self = this.set("borderBottom", js.Array(value :_*))
+  implicit class BorderBottomPropsMutableBuilder[Self <: BorderBottomProps[_], TLength] (val x: Self with BorderBottomProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setBorderBottom(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ _
         ]
-    ): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
+    def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    
+    @scala.inline
+    def setBorderBottomVarargs(value: js.Any*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
   }
 }

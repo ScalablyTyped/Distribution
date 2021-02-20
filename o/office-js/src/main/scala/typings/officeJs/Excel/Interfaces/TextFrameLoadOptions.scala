@@ -1,5 +1,6 @@
 package typings.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait TextFrameLoadOptions extends js.Object {
+trait TextFrameLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
@@ -132,102 +133,90 @@ object TextFrameLoadOptions {
   }
   
   @scala.inline
-  implicit class TextFrameLoadOptionsOps[Self <: TextFrameLoadOptions] (val x: Self) extends AnyVal {
+  implicit class TextFrameLoadOptionsMutableBuilder[Self <: TextFrameLoadOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoSizeSetting(value: Boolean): Self = StObject.set(x, "autoSizeSetting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    def setAutoSizeSettingUndefined: Self = StObject.set(x, "autoSizeSetting", js.undefined)
     
     @scala.inline
-    def delete$all: Self = this.set("$all", js.undefined)
+    def setBottomMargin(value: Boolean): Self = StObject.set(x, "bottomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSizeSetting(value: Boolean): Self = this.set("autoSizeSetting", value.asInstanceOf[js.Any])
+    def setBottomMarginUndefined: Self = StObject.set(x, "bottomMargin", js.undefined)
     
     @scala.inline
-    def deleteAutoSizeSetting: Self = this.set("autoSizeSetting", js.undefined)
+    def setHasText(value: Boolean): Self = StObject.set(x, "hasText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBottomMargin(value: Boolean): Self = this.set("bottomMargin", value.asInstanceOf[js.Any])
+    def setHasTextUndefined: Self = StObject.set(x, "hasText", js.undefined)
     
     @scala.inline
-    def deleteBottomMargin: Self = this.set("bottomMargin", js.undefined)
+    def setHorizontalAlignment(value: Boolean): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasText(value: Boolean): Self = this.set("hasText", value.asInstanceOf[js.Any])
+    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
     @scala.inline
-    def deleteHasText: Self = this.set("hasText", js.undefined)
+    def setHorizontalOverflow(value: Boolean): Self = StObject.set(x, "horizontalOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalAlignment(value: Boolean): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    def setHorizontalOverflowUndefined: Self = StObject.set(x, "horizontalOverflow", js.undefined)
     
     @scala.inline
-    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    def setLeftMargin(value: Boolean): Self = StObject.set(x, "leftMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHorizontalOverflow(value: Boolean): Self = this.set("horizontalOverflow", value.asInstanceOf[js.Any])
+    def setLeftMarginUndefined: Self = StObject.set(x, "leftMargin", js.undefined)
     
     @scala.inline
-    def deleteHorizontalOverflow: Self = this.set("horizontalOverflow", js.undefined)
+    def setOrientation(value: Boolean): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftMargin(value: Boolean): Self = this.set("leftMargin", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteLeftMargin: Self = this.set("leftMargin", js.undefined)
+    def setReadingOrder(value: Boolean): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: Boolean): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setReadingOrderUndefined: Self = StObject.set(x, "readingOrder", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setRightMargin(value: Boolean): Self = StObject.set(x, "rightMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadingOrder(value: Boolean): Self = this.set("readingOrder", value.asInstanceOf[js.Any])
+    def setRightMarginUndefined: Self = StObject.set(x, "rightMargin", js.undefined)
     
     @scala.inline
-    def deleteReadingOrder: Self = this.set("readingOrder", js.undefined)
+    def setTextRange(value: TextRangeLoadOptions): Self = StObject.set(x, "textRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightMargin(value: Boolean): Self = this.set("rightMargin", value.asInstanceOf[js.Any])
+    def setTextRangeUndefined: Self = StObject.set(x, "textRange", js.undefined)
     
     @scala.inline
-    def deleteRightMargin: Self = this.set("rightMargin", js.undefined)
+    def setTopMargin(value: Boolean): Self = StObject.set(x, "topMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextRange(value: TextRangeLoadOptions): Self = this.set("textRange", value.asInstanceOf[js.Any])
+    def setTopMarginUndefined: Self = StObject.set(x, "topMargin", js.undefined)
     
     @scala.inline
-    def deleteTextRange: Self = this.set("textRange", js.undefined)
+    def setVerticalAlignment(value: Boolean): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTopMargin(value: Boolean): Self = this.set("topMargin", value.asInstanceOf[js.Any])
+    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
     @scala.inline
-    def deleteTopMargin: Self = this.set("topMargin", js.undefined)
+    def setVerticalOverflow(value: Boolean): Self = StObject.set(x, "verticalOverflow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlignment(value: Boolean): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
-    
-    @scala.inline
-    def setVerticalOverflow(value: Boolean): Self = this.set("verticalOverflow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalOverflow: Self = this.set("verticalOverflow", js.undefined)
+    def setVerticalOverflowUndefined: Self = StObject.set(x, "verticalOverflow", js.undefined)
   }
 }

@@ -5,13 +5,14 @@ import typings.activexLibreoffice.com_.sun.star.awt.FontSlant
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.style.VerticalAlignment
 import typings.activexLibreoffice.com_.sun.star.util.Color
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a format condition for a control. */
 @js.native
-trait XReportControlFormat extends js.Object {
+trait XReportControlFormat extends StObject {
   
   /**
     * optional property to determine whether the kerning tables from the current font are used.
@@ -358,201 +359,189 @@ object XReportControlFormat {
   }
   
   @scala.inline
-  implicit class XReportControlFormatOps[Self <: XReportControlFormat] (val x: Self) extends AnyVal {
+  implicit class XReportControlFormatMutableBuilder[Self <: XReportControlFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharAutoKerning(value: Boolean): Self = StObject.set(x, "CharAutoKerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharCaseMap(value: Double): Self = StObject.set(x, "CharCaseMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharColor(value: Color): Self = StObject.set(x, "CharColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharAutoKerning(value: Boolean): Self = this.set("CharAutoKerning", value.asInstanceOf[js.Any])
+    def setCharCombineIsOn(value: Boolean): Self = StObject.set(x, "CharCombineIsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharCaseMap(value: Double): Self = this.set("CharCaseMap", value.asInstanceOf[js.Any])
+    def setCharCombinePrefix(value: String): Self = StObject.set(x, "CharCombinePrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharColor(value: Color): Self = this.set("CharColor", value.asInstanceOf[js.Any])
+    def setCharCombineSuffix(value: String): Self = StObject.set(x, "CharCombineSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharCombineIsOn(value: Boolean): Self = this.set("CharCombineIsOn", value.asInstanceOf[js.Any])
+    def setCharContoured(value: Boolean): Self = StObject.set(x, "CharContoured", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharCombinePrefix(value: String): Self = this.set("CharCombinePrefix", value.asInstanceOf[js.Any])
+    def setCharEmphasis(value: Double): Self = StObject.set(x, "CharEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharCombineSuffix(value: String): Self = this.set("CharCombineSuffix", value.asInstanceOf[js.Any])
+    def setCharEscapement(value: Double): Self = StObject.set(x, "CharEscapement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharContoured(value: Boolean): Self = this.set("CharContoured", value.asInstanceOf[js.Any])
+    def setCharEscapementHeight(value: Double): Self = StObject.set(x, "CharEscapementHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharEmphasis(value: Double): Self = this.set("CharEmphasis", value.asInstanceOf[js.Any])
+    def setCharFlash(value: Boolean): Self = StObject.set(x, "CharFlash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharEscapement(value: Double): Self = this.set("CharEscapement", value.asInstanceOf[js.Any])
+    def setCharFontCharSet(value: Double): Self = StObject.set(x, "CharFontCharSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharEscapementHeight(value: Double): Self = this.set("CharEscapementHeight", value.asInstanceOf[js.Any])
+    def setCharFontCharSetAsian(value: Double): Self = StObject.set(x, "CharFontCharSetAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFlash(value: Boolean): Self = this.set("CharFlash", value.asInstanceOf[js.Any])
+    def setCharFontCharSetComplex(value: Double): Self = StObject.set(x, "CharFontCharSetComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontCharSet(value: Double): Self = this.set("CharFontCharSet", value.asInstanceOf[js.Any])
+    def setCharFontFamily(value: Double): Self = StObject.set(x, "CharFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontCharSetAsian(value: Double): Self = this.set("CharFontCharSetAsian", value.asInstanceOf[js.Any])
+    def setCharFontFamilyAsian(value: Double): Self = StObject.set(x, "CharFontFamilyAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontCharSetComplex(value: Double): Self = this.set("CharFontCharSetComplex", value.asInstanceOf[js.Any])
+    def setCharFontFamilyComplex(value: Double): Self = StObject.set(x, "CharFontFamilyComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontFamily(value: Double): Self = this.set("CharFontFamily", value.asInstanceOf[js.Any])
+    def setCharFontName(value: String): Self = StObject.set(x, "CharFontName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontFamilyAsian(value: Double): Self = this.set("CharFontFamilyAsian", value.asInstanceOf[js.Any])
+    def setCharFontNameAsian(value: String): Self = StObject.set(x, "CharFontNameAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontFamilyComplex(value: Double): Self = this.set("CharFontFamilyComplex", value.asInstanceOf[js.Any])
+    def setCharFontNameComplex(value: String): Self = StObject.set(x, "CharFontNameComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontName(value: String): Self = this.set("CharFontName", value.asInstanceOf[js.Any])
+    def setCharFontPitch(value: Double): Self = StObject.set(x, "CharFontPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontNameAsian(value: String): Self = this.set("CharFontNameAsian", value.asInstanceOf[js.Any])
+    def setCharFontPitchAsian(value: Double): Self = StObject.set(x, "CharFontPitchAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontNameComplex(value: String): Self = this.set("CharFontNameComplex", value.asInstanceOf[js.Any])
+    def setCharFontPitchComplex(value: Double): Self = StObject.set(x, "CharFontPitchComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontPitch(value: Double): Self = this.set("CharFontPitch", value.asInstanceOf[js.Any])
+    def setCharFontStyleName(value: String): Self = StObject.set(x, "CharFontStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontPitchAsian(value: Double): Self = this.set("CharFontPitchAsian", value.asInstanceOf[js.Any])
+    def setCharFontStyleNameAsian(value: String): Self = StObject.set(x, "CharFontStyleNameAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontPitchComplex(value: Double): Self = this.set("CharFontPitchComplex", value.asInstanceOf[js.Any])
+    def setCharFontStyleNameComplex(value: String): Self = StObject.set(x, "CharFontStyleNameComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontStyleName(value: String): Self = this.set("CharFontStyleName", value.asInstanceOf[js.Any])
+    def setCharHeight(value: Double): Self = StObject.set(x, "CharHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontStyleNameAsian(value: String): Self = this.set("CharFontStyleNameAsian", value.asInstanceOf[js.Any])
+    def setCharHeightAsian(value: Double): Self = StObject.set(x, "CharHeightAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharFontStyleNameComplex(value: String): Self = this.set("CharFontStyleNameComplex", value.asInstanceOf[js.Any])
+    def setCharHeightComplex(value: Double): Self = StObject.set(x, "CharHeightComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHeight(value: Double): Self = this.set("CharHeight", value.asInstanceOf[js.Any])
+    def setCharHidden(value: Boolean): Self = StObject.set(x, "CharHidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHeightAsian(value: Double): Self = this.set("CharHeightAsian", value.asInstanceOf[js.Any])
+    def setCharKerning(value: Double): Self = StObject.set(x, "CharKerning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHeightComplex(value: Double): Self = this.set("CharHeightComplex", value.asInstanceOf[js.Any])
+    def setCharLocale(value: Locale): Self = StObject.set(x, "CharLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharHidden(value: Boolean): Self = this.set("CharHidden", value.asInstanceOf[js.Any])
+    def setCharLocaleAsian(value: Locale): Self = StObject.set(x, "CharLocaleAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharKerning(value: Double): Self = this.set("CharKerning", value.asInstanceOf[js.Any])
+    def setCharLocaleComplex(value: Locale): Self = StObject.set(x, "CharLocaleComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLocale(value: Locale): Self = this.set("CharLocale", value.asInstanceOf[js.Any])
+    def setCharPosture(value: FontSlant): Self = StObject.set(x, "CharPosture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLocaleAsian(value: Locale): Self = this.set("CharLocaleAsian", value.asInstanceOf[js.Any])
+    def setCharPostureAsian(value: FontSlant): Self = StObject.set(x, "CharPostureAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharLocaleComplex(value: Locale): Self = this.set("CharLocaleComplex", value.asInstanceOf[js.Any])
+    def setCharPostureComplex(value: FontSlant): Self = StObject.set(x, "CharPostureComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharPosture(value: FontSlant): Self = this.set("CharPosture", value.asInstanceOf[js.Any])
+    def setCharRelief(value: Double): Self = StObject.set(x, "CharRelief", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharPostureAsian(value: FontSlant): Self = this.set("CharPostureAsian", value.asInstanceOf[js.Any])
+    def setCharRotation(value: Double): Self = StObject.set(x, "CharRotation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharPostureComplex(value: FontSlant): Self = this.set("CharPostureComplex", value.asInstanceOf[js.Any])
+    def setCharScaleWidth(value: Double): Self = StObject.set(x, "CharScaleWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharRelief(value: Double): Self = this.set("CharRelief", value.asInstanceOf[js.Any])
+    def setCharShadowed(value: Boolean): Self = StObject.set(x, "CharShadowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharRotation(value: Double): Self = this.set("CharRotation", value.asInstanceOf[js.Any])
+    def setCharStrikeout(value: Double): Self = StObject.set(x, "CharStrikeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharScaleWidth(value: Double): Self = this.set("CharScaleWidth", value.asInstanceOf[js.Any])
+    def setCharUnderline(value: Double): Self = StObject.set(x, "CharUnderline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharShadowed(value: Boolean): Self = this.set("CharShadowed", value.asInstanceOf[js.Any])
+    def setCharUnderlineColor(value: Color): Self = StObject.set(x, "CharUnderlineColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharStrikeout(value: Double): Self = this.set("CharStrikeout", value.asInstanceOf[js.Any])
+    def setCharWeight(value: Double): Self = StObject.set(x, "CharWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharUnderline(value: Double): Self = this.set("CharUnderline", value.asInstanceOf[js.Any])
+    def setCharWeightAsian(value: Double): Self = StObject.set(x, "CharWeightAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharUnderlineColor(value: Color): Self = this.set("CharUnderlineColor", value.asInstanceOf[js.Any])
+    def setCharWeightComplex(value: Double): Self = StObject.set(x, "CharWeightComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharWeight(value: Double): Self = this.set("CharWeight", value.asInstanceOf[js.Any])
+    def setCharWordMode(value: Boolean): Self = StObject.set(x, "CharWordMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharWeightAsian(value: Double): Self = this.set("CharWeightAsian", value.asInstanceOf[js.Any])
+    def setControlBackground(value: Color): Self = StObject.set(x, "ControlBackground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharWeightComplex(value: Double): Self = this.set("CharWeightComplex", value.asInstanceOf[js.Any])
+    def setControlBackgroundTransparent(value: Boolean): Self = StObject.set(x, "ControlBackgroundTransparent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharWordMode(value: Boolean): Self = this.set("CharWordMode", value.asInstanceOf[js.Any])
+    def setControlTextEmphasis(value: Double): Self = StObject.set(x, "ControlTextEmphasis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlBackground(value: Color): Self = this.set("ControlBackground", value.asInstanceOf[js.Any])
+    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlBackgroundTransparent(value: Boolean): Self = this.set("ControlBackgroundTransparent", value.asInstanceOf[js.Any])
+    def setFontDescriptorAsian(value: FontDescriptor): Self = StObject.set(x, "FontDescriptorAsian", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlTextEmphasis(value: Double): Self = this.set("ControlTextEmphasis", value.asInstanceOf[js.Any])
+    def setFontDescriptorComplex(value: FontDescriptor): Self = StObject.set(x, "FontDescriptorComplex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = this.set("FontDescriptor", value.asInstanceOf[js.Any])
+    def setHyperLinkName(value: String): Self = StObject.set(x, "HyperLinkName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescriptorAsian(value: FontDescriptor): Self = this.set("FontDescriptorAsian", value.asInstanceOf[js.Any])
+    def setHyperLinkTarget(value: String): Self = StObject.set(x, "HyperLinkTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontDescriptorComplex(value: FontDescriptor): Self = this.set("FontDescriptorComplex", value.asInstanceOf[js.Any])
+    def setHyperLinkURL(value: String): Self = StObject.set(x, "HyperLinkURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperLinkName(value: String): Self = this.set("HyperLinkName", value.asInstanceOf[js.Any])
+    def setParaAdjust(value: Double): Self = StObject.set(x, "ParaAdjust", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperLinkTarget(value: String): Self = this.set("HyperLinkTarget", value.asInstanceOf[js.Any])
+    def setUnvisitedCharStyleName(value: String): Self = StObject.set(x, "UnvisitedCharStyleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHyperLinkURL(value: String): Self = this.set("HyperLinkURL", value.asInstanceOf[js.Any])
+    def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParaAdjust(value: Double): Self = this.set("ParaAdjust", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnvisitedCharStyleName(value: String): Self = this.set("UnvisitedCharStyleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignment): Self = this.set("VerticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVisitedCharStyleName(value: String): Self = this.set("VisitedCharStyleName", value.asInstanceOf[js.Any])
+    def setVisitedCharStyleName(value: String): Self = StObject.set(x, "VisitedCharStyleName", value.asInstanceOf[js.Any])
   }
 }

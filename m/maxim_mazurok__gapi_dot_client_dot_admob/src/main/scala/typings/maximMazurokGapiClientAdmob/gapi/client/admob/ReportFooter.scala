@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportFooter extends js.Object {
+trait ReportFooter extends StObject {
   
   /**
     * Total number of rows that matched the request. Warning: This count does NOT always match the number of rows in the response. Do not make that assumption when processing the
@@ -25,33 +26,21 @@ object ReportFooter {
   }
   
   @scala.inline
-  implicit class ReportFooterOps[Self <: ReportFooter] (val x: Self) extends AnyVal {
+  implicit class ReportFooterMutableBuilder[Self <: ReportFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMatchingRowCount(value: String): Self = StObject.set(x, "matchingRowCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatchingRowCountUndefined: Self = StObject.set(x, "matchingRowCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWarnings(value: js.Array[ReportWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatchingRowCount(value: String): Self = this.set("matchingRowCount", value.asInstanceOf[js.Any])
+    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
     @scala.inline
-    def deleteMatchingRowCount: Self = this.set("matchingRowCount", js.undefined)
-    
-    @scala.inline
-    def setWarningsVarargs(value: ReportWarning*): Self = this.set("warnings", js.Array(value :_*))
-    
-    @scala.inline
-    def setWarnings(value: js.Array[ReportWarning]): Self = this.set("warnings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarnings: Self = this.set("warnings", js.undefined)
+    def setWarningsVarargs(value: ReportWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

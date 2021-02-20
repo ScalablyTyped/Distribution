@@ -1,11 +1,12 @@
 package typings.reactNativeChartsWrapper.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BarWidth extends js.Object {
+trait BarWidth extends StObject {
   
   var barWidth: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object BarWidth {
   }
   
   @scala.inline
-  implicit class BarWidthOps[Self <: BarWidth] (val x: Self) extends AnyVal {
+  implicit class BarWidthMutableBuilder[Self <: BarWidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroup(value: BarSpace): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBarWidth(value: Double): Self = this.set("barWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBarWidth: Self = this.set("barWidth", js.undefined)
-    
-    @scala.inline
-    def setGroup(value: BarSpace): Self = this.set("group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGroup: Self = this.set("group", js.undefined)
+    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }
 }

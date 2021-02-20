@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyDBProxyRequest extends js.Object {
+trait ModifyDBProxyRequest extends StObject {
   
   /**
     * The new authentication settings for the DBProxy.
@@ -56,69 +57,57 @@ object ModifyDBProxyRequest {
   }
   
   @scala.inline
-  implicit class ModifyDBProxyRequestOps[Self <: ModifyDBProxyRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyDBProxyRequestMutableBuilder[Self <: ModifyDBProxyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: UserAuthConfigList): Self = StObject.set(x, "Auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAuthUndefined: Self = StObject.set(x, "Auth", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAuthVarargs(value: UserAuthConfig*): Self = StObject.set(x, "Auth", js.Array(value :_*))
     
     @scala.inline
-    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthVarargs(value: UserAuthConfig*): Self = this.set("Auth", js.Array(value :_*))
+    def setDebugLogging(value: BooleanOptional): Self = StObject.set(x, "DebugLogging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: UserAuthConfigList): Self = this.set("Auth", value.asInstanceOf[js.Any])
+    def setDebugLoggingUndefined: Self = StObject.set(x, "DebugLogging", js.undefined)
     
     @scala.inline
-    def deleteAuth: Self = this.set("Auth", js.undefined)
+    def setIdleClientTimeout(value: IntegerOptional): Self = StObject.set(x, "IdleClientTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDebugLogging(value: BooleanOptional): Self = this.set("DebugLogging", value.asInstanceOf[js.Any])
+    def setIdleClientTimeoutUndefined: Self = StObject.set(x, "IdleClientTimeout", js.undefined)
     
     @scala.inline
-    def deleteDebugLogging: Self = this.set("DebugLogging", js.undefined)
+    def setNewDBProxyName(value: String): Self = StObject.set(x, "NewDBProxyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdleClientTimeout(value: IntegerOptional): Self = this.set("IdleClientTimeout", value.asInstanceOf[js.Any])
+    def setNewDBProxyNameUndefined: Self = StObject.set(x, "NewDBProxyName", js.undefined)
     
     @scala.inline
-    def deleteIdleClientTimeout: Self = this.set("IdleClientTimeout", js.undefined)
+    def setRequireTLS(value: BooleanOptional): Self = StObject.set(x, "RequireTLS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNewDBProxyName(value: String): Self = this.set("NewDBProxyName", value.asInstanceOf[js.Any])
+    def setRequireTLSUndefined: Self = StObject.set(x, "RequireTLS", js.undefined)
     
     @scala.inline
-    def deleteNewDBProxyName: Self = this.set("NewDBProxyName", js.undefined)
+    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequireTLS(value: BooleanOptional): Self = this.set("RequireTLS", value.asInstanceOf[js.Any])
+    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
     @scala.inline
-    def deleteRequireTLS: Self = this.set("RequireTLS", js.undefined)
+    def setSecurityGroups(value: StringList): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleArn(value: String): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
     @scala.inline
-    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
-    
-    @scala.inline
-    def setSecurityGroupsVarargs(value: String*): Self = this.set("SecurityGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setSecurityGroups(value: StringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
   }
 }

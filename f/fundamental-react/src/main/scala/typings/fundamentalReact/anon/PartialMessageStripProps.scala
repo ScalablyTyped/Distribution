@@ -1,12 +1,13 @@
 package typings.fundamentalReact.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/MessageStrip/MessageStrip.MessageStripProps> */
 @js.native
-trait PartialMessageStripProps extends js.Object {
+trait PartialMessageStripProps extends StObject {
   
   var buttonProps: js.UndefOr[js.Any] = js.native
   
@@ -39,84 +40,72 @@ object PartialMessageStripProps {
   }
   
   @scala.inline
-  implicit class PartialMessageStripPropsOps[Self <: PartialMessageStripProps] (val x: Self) extends AnyVal {
+  implicit class PartialMessageStripPropsMutableBuilder[Self <: PartialMessageStripProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButtonProps(value: js.Any): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButtonProps(value: js.Any): Self = this.set("buttonProps", value.asInstanceOf[js.Any])
+    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def deleteButtonProps: Self = this.set("buttonProps", js.undefined)
+    def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     
     @scala.inline
-    def deleteClassName: Self = this.set("className", js.undefined)
+    def setDismissible(value: Boolean): Self = StObject.set(x, "dismissible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    def setDismissibleUndefined: Self = StObject.set(x, "dismissible", js.undefined)
     
     @scala.inline
-    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDismissible(value: Boolean): Self = this.set("dismissible", value.asInstanceOf[js.Any])
+    def setLinkProps(value: js.Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDismissible: Self = this.set("dismissible", js.undefined)
+    def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
     
     @scala.inline
-    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setLinkText(value: String): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
     
     @scala.inline
-    def setLinkProps(value: js.Any): Self = this.set("linkProps", value.asInstanceOf[js.Any])
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def deleteLinkProps: Self = this.set("linkProps", js.undefined)
+    def setLocalizedText(value: js.Any): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkText(value: String): Self = this.set("linkText", value.asInstanceOf[js.Any])
+    def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
     
     @scala.inline
-    def deleteLinkText: Self = this.set("linkText", js.undefined)
+    def setNoGlyph(value: Boolean): Self = StObject.set(x, "noGlyph", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedText(value: js.Any): Self = this.set("localizedText", value.asInstanceOf[js.Any])
+    def setNoGlyphUndefined: Self = StObject.set(x, "noGlyph", js.undefined)
     
     @scala.inline
-    def deleteLocalizedText: Self = this.set("localizedText", js.undefined)
+    def setOnCloseClicked(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onCloseClicked", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNoGlyph(value: Boolean): Self = this.set("noGlyph", value.asInstanceOf[js.Any])
+    def setOnCloseClickedUndefined: Self = StObject.set(x, "onCloseClicked", js.undefined)
     
     @scala.inline
-    def deleteNoGlyph: Self = this.set("noGlyph", js.undefined)
+    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnCloseClicked(value: /* repeated */ js.Any => _): Self = this.set("onCloseClicked", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnCloseClicked: Self = this.set("onCloseClicked", js.undefined)
-    
-    @scala.inline
-    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

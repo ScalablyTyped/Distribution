@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteConnectorProfileRequest extends js.Object {
+trait DeleteConnectorProfileRequest extends StObject {
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in your account. 
@@ -26,27 +27,15 @@ object DeleteConnectorProfileRequest {
   }
   
   @scala.inline
-  implicit class DeleteConnectorProfileRequestOps[Self <: DeleteConnectorProfileRequest] (val x: Self) extends AnyVal {
+  implicit class DeleteConnectorProfileRequestMutableBuilder[Self <: DeleteConnectorProfileRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForceDelete(value: Boolean): Self = StObject.set(x, "forceDelete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = this.set("connectorProfileName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setForceDelete(value: Boolean): Self = this.set("forceDelete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForceDelete: Self = this.set("forceDelete", js.undefined)
+    def setForceDeleteUndefined: Self = StObject.set(x, "forceDelete", js.undefined)
   }
 }

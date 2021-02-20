@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsApiCallAction extends js.Object {
+trait AwsApiCallAction extends StObject {
   
   /**
     * The AWS API name.
@@ -46,54 +47,42 @@ object AwsApiCallAction {
   }
   
   @scala.inline
-  implicit class AwsApiCallActionOps[Self <: AwsApiCallAction] (val x: Self) extends AnyVal {
+  implicit class AwsApiCallActionMutableBuilder[Self <: AwsApiCallAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApi(value: String): Self = StObject.set(x, "Api", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiUndefined: Self = StObject.set(x, "Api", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallerType(value: String): Self = StObject.set(x, "CallerType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApi(value: String): Self = this.set("Api", value.asInstanceOf[js.Any])
+    def setCallerTypeUndefined: Self = StObject.set(x, "CallerType", js.undefined)
     
     @scala.inline
-    def deleteApi: Self = this.set("Api", js.undefined)
+    def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "DomainDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallerType(value: String): Self = this.set("CallerType", value.asInstanceOf[js.Any])
+    def setDomainDetailsUndefined: Self = StObject.set(x, "DomainDetails", js.undefined)
     
     @scala.inline
-    def deleteCallerType: Self = this.set("CallerType", js.undefined)
+    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainDetails(value: DomainDetails): Self = this.set("DomainDetails", value.asInstanceOf[js.Any])
+    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
     @scala.inline
-    def deleteDomainDetails: Self = this.set("DomainDetails", js.undefined)
+    def setRemoteIpDetails(value: RemoteIpDetails): Self = StObject.set(x, "RemoteIpDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    def setRemoteIpDetailsUndefined: Self = StObject.set(x, "RemoteIpDetails", js.undefined)
     
     @scala.inline
-    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRemoteIpDetails(value: RemoteIpDetails): Self = this.set("RemoteIpDetails", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoteIpDetails: Self = this.set("RemoteIpDetails", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
   }
 }

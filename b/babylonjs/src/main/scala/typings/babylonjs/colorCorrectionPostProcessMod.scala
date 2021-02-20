@@ -6,14 +6,14 @@ import typings.babylonjs.postProcessMod.PostProcess
 import typings.babylonjs.postProcessMod.PostProcessOptions
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/PostProcesses/colorCorrectionPostProcess", JSImport.Namespace)
-@js.native
-object colorCorrectionPostProcessMod extends js.Object {
+object colorCorrectionPostProcessMod {
   
+  @JSImport("babylonjs/PostProcesses/colorCorrectionPostProcess", "ColorCorrectionPostProcess")
   @js.native
   class ColorCorrectionPostProcess protected () extends PostProcess {
     def this(name: String, colorTableUrl: String, options: Double, camera: Camera) = this()
@@ -139,10 +139,11 @@ object colorCorrectionPostProcessMod extends js.Object {
     var colorTableUrl: String = js.native
   }
   /* static members */
-  @js.native
-  object ColorCorrectionPostProcess extends js.Object {
+  object ColorCorrectionPostProcess {
     
     /** @hidden */
+    @JSImport("babylonjs/PostProcesses/colorCorrectionPostProcess", "ColorCorrectionPostProcess._Parse")
+    @js.native
     def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ColorCorrectionPostProcess] = js.native
   }
 }

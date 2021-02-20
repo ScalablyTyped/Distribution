@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientDatalabeling.anon.Accesstoken
 import typings.maximMazurokGapiClientDatalabeling.anon.Alt
 import typings.maximMazurokGapiClientDatalabeling.anon.Callback
 import typings.maximMazurokGapiClientDatalabeling.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnnotationSpecSetsResource extends js.Object {
+trait AnnotationSpecSetsResource extends StObject {
   
   /** Creates an annotation spec set by providing a set of labels. */
   def create(request: Accesstoken): Request[GoogleCloudDatalabelingV1beta1AnnotationSpecSet] = js.native

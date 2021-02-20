@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The result of the request to trigger a background task. The RequestAsync method returns a value of this enumeration type. */
 @JSGlobal("Windows.ApplicationModel.Background.ApplicationTriggerResult")
 @js.native
-object ApplicationTriggerResult extends js.Object {
+object ApplicationTriggerResult extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

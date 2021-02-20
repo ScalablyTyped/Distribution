@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2NewSurfaceValueSpec extends js.Object {
+trait GoogleActionsV2NewSurfaceValueSpec extends StObject {
   
   /**
     * The list of capabilities required from the surface. Eg,
@@ -35,39 +36,27 @@ object GoogleActionsV2NewSurfaceValueSpec {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2NewSurfaceValueSpecOps[Self <: GoogleActionsV2NewSurfaceValueSpec] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2NewSurfaceValueSpecMutableBuilder[Self <: GoogleActionsV2NewSurfaceValueSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setCapabilitiesVarargs(value: String*): Self = this.set("capabilities", js.Array(value :_*))
+    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: js.Array[String]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    def setNotificationTitle(value: String): Self = StObject.set(x, "notificationTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
-    
-    @scala.inline
-    def setNotificationTitle(value: String): Self = this.set("notificationTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNotificationTitle: Self = this.set("notificationTitle", js.undefined)
+    def setNotificationTitleUndefined: Self = StObject.set(x, "notificationTitle", js.undefined)
   }
 }

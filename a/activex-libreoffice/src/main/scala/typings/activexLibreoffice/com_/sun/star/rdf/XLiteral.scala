@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.rdf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,27 +31,15 @@ object XLiteral {
   }
   
   @scala.inline
-  implicit class XLiteralOps[Self <: XLiteral] (val x: Self) extends AnyVal {
+  implicit class XLiteralMutableBuilder[Self <: XLiteral] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDatatype(value: XURI): Self = StObject.set(x, "Datatype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDatatype(value: XURI): Self = this.set("Datatype", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLanguage(value: String): Self = this.set("Language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("Value", value.asInstanceOf[js.Any])
+    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

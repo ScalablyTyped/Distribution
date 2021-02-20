@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RetentionConfig extends js.Object {
+trait RetentionConfig extends StObject {
   
   /**
     * The provisioned storage, in bytes, per partition. If the number of bytes stored in any of the topic's partitions grows beyond this value, older messages will be dropped to make room
@@ -25,30 +26,18 @@ object RetentionConfig {
   }
   
   @scala.inline
-  implicit class RetentionConfigOps[Self <: RetentionConfig] (val x: Self) extends AnyVal {
+  implicit class RetentionConfigMutableBuilder[Self <: RetentionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPerPartitionBytes(value: String): Self = StObject.set(x, "perPartitionBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPerPartitionBytesUndefined: Self = StObject.set(x, "perPartitionBytes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerPartitionBytes(value: String): Self = this.set("perPartitionBytes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerPartitionBytes: Self = this.set("perPartitionBytes", js.undefined)
-    
-    @scala.inline
-    def setPeriod(value: String): Self = this.set("period", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePeriod: Self = this.set("period", js.undefined)
+    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

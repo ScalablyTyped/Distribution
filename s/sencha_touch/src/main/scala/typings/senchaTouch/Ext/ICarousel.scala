@@ -1,5 +1,6 @@
 package typings.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -122,150 +123,138 @@ object ICarousel {
   }
   
   @scala.inline
-  implicit class ICarouselOps[Self <: ICarousel] (val x: Self) extends AnyVal {
+  implicit class ICarouselMutableBuilder[Self <: ICarousel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirection(value: java.lang.String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetActiveIndex(value: () => Double): Self = StObject.set(x, "getActiveIndex", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDirection(value: java.lang.String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
     
     @scala.inline
-    def deleteDirection: Self = this.set("direction", js.undefined)
+    def setGetAnimation(value: () => _): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetActiveIndex(value: () => Double): Self = this.set("getActiveIndex", js.Any.fromFunction0(value))
+    def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
     
     @scala.inline
-    def deleteGetActiveIndex: Self = this.set("getActiveIndex", js.undefined)
+    def setGetBufferSize(value: () => Double): Self = StObject.set(x, "getBufferSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetAnimation(value: () => _): Self = this.set("getAnimation", js.Any.fromFunction0(value))
+    def setGetBufferSizeUndefined: Self = StObject.set(x, "getBufferSize", js.undefined)
     
     @scala.inline
-    def deleteGetAnimation: Self = this.set("getAnimation", js.undefined)
+    def setGetDirection(value: () => java.lang.String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetBufferSize(value: () => Double): Self = this.set("getBufferSize", js.Any.fromFunction0(value))
+    def setGetDirectionLock(value: () => Boolean): Self = StObject.set(x, "getDirectionLock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def deleteGetBufferSize: Self = this.set("getBufferSize", js.undefined)
+    def setGetDirectionLockUndefined: Self = StObject.set(x, "getDirectionLock", js.undefined)
     
     @scala.inline
-    def setGetDirection(value: () => java.lang.String): Self = this.set("getDirection", js.Any.fromFunction0(value))
+    def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
     @scala.inline
-    def deleteGetDirection: Self = this.set("getDirection", js.undefined)
+    def setGetIndicator(value: () => _): Self = StObject.set(x, "getIndicator", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDirectionLock(value: () => Boolean): Self = this.set("getDirectionLock", js.Any.fromFunction0(value))
+    def setGetIndicatorUndefined: Self = StObject.set(x, "getIndicator", js.undefined)
     
     @scala.inline
-    def deleteGetDirectionLock: Self = this.set("getDirectionLock", js.undefined)
+    def setGetItemConfig(value: () => _): Self = StObject.set(x, "getItemConfig", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIndicator(value: () => _): Self = this.set("getIndicator", js.Any.fromFunction0(value))
+    def setGetItemConfigUndefined: Self = StObject.set(x, "getItemConfig", js.undefined)
     
     @scala.inline
-    def deleteGetIndicator: Self = this.set("getIndicator", js.undefined)
+    def setGetItemLength(value: () => _): Self = StObject.set(x, "getItemLength", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetItemConfig(value: () => _): Self = this.set("getItemConfig", js.Any.fromFunction0(value))
+    def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)
     
     @scala.inline
-    def deleteGetItemConfig: Self = this.set("getItemConfig", js.undefined)
+    def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetItemLength(value: () => _): Self = this.set("getItemLength", js.Any.fromFunction0(value))
+    def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
     
     @scala.inline
-    def deleteGetItemLength: Self = this.set("getItemLength", js.undefined)
+    def setIsHorizontal(value: () => Boolean): Self = StObject.set(x, "isHorizontal", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIndicator(value: Boolean): Self = this.set("indicator", value.asInstanceOf[js.Any])
+    def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
     
     @scala.inline
-    def deleteIndicator: Self = this.set("indicator", js.undefined)
+    def setIsVertical(value: () => Boolean): Self = StObject.set(x, "isVertical", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsHorizontal(value: () => Boolean): Self = this.set("isHorizontal", js.Any.fromFunction0(value))
+    def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     
     @scala.inline
-    def deleteIsHorizontal: Self = this.set("isHorizontal", js.undefined)
+    def setNext(value: () => ICarousel): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsVertical(value: () => Boolean): Self = this.set("isVertical", js.Any.fromFunction0(value))
+    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
     @scala.inline
-    def deleteIsVertical: Self = this.set("isVertical", js.undefined)
+    def setPrev(value: () => ICarousel): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => ICarousel): Self = this.set("next", js.Any.fromFunction0(value))
+    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
     @scala.inline
-    def deleteNext: Self = this.set("next", js.undefined)
+    def setPrevious(value: () => ICarousel): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setPrev(value: () => ICarousel): Self = this.set("prev", js.Any.fromFunction0(value))
+    def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     
     @scala.inline
-    def deletePrev: Self = this.set("prev", js.undefined)
+    def setSetAnimation(value: /* animation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPrevious(value: () => ICarousel): Self = this.set("previous", js.Any.fromFunction0(value))
+    def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
     
     @scala.inline
-    def deletePrevious: Self = this.set("previous", js.undefined)
+    def setSetBufferSize(value: /* bufferSize */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setBufferSize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetAnimation(value: /* animation */ js.UndefOr[js.Any] => Unit): Self = this.set("setAnimation", js.Any.fromFunction1(value))
+    def setSetBufferSizeUndefined: Self = StObject.set(x, "setBufferSize", js.undefined)
     
     @scala.inline
-    def deleteSetAnimation: Self = this.set("setAnimation", js.undefined)
+    def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetBufferSize(value: /* bufferSize */ js.UndefOr[Double] => Unit): Self = this.set("setBufferSize", js.Any.fromFunction1(value))
+    def setSetDirectionLock(value: /* directionLock */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDirectionLock", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteSetBufferSize: Self = this.set("setBufferSize", js.undefined)
+    def setSetDirectionLockUndefined: Self = StObject.set(x, "setDirectionLock", js.undefined)
     
     @scala.inline
-    def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Unit): Self = this.set("setDirection", js.Any.fromFunction1(value))
+    def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     
     @scala.inline
-    def deleteSetDirection: Self = this.set("setDirection", js.undefined)
+    def setSetIndicator(value: /* indicator */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setIndicator", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetDirectionLock(value: /* directionLock */ js.UndefOr[Boolean] => Unit): Self = this.set("setDirectionLock", js.Any.fromFunction1(value))
+    def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
     
     @scala.inline
-    def deleteSetDirectionLock: Self = this.set("setDirectionLock", js.undefined)
+    def setSetItemConfig(value: /* itemConfig */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetIndicator(value: /* indicator */ js.UndefOr[Boolean] => Unit): Self = this.set("setIndicator", js.Any.fromFunction1(value))
+    def setSetItemConfigUndefined: Self = StObject.set(x, "setItemConfig", js.undefined)
     
     @scala.inline
-    def deleteSetIndicator: Self = this.set("setIndicator", js.undefined)
+    def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetItemConfig(value: /* itemConfig */ js.UndefOr[js.Any] => Unit): Self = this.set("setItemConfig", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetItemConfig: Self = this.set("setItemConfig", js.undefined)
-    
-    @scala.inline
-    def setSetItemLength(value: /* itemLength */ js.UndefOr[js.Any] => Unit): Self = this.set("setItemLength", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteSetItemLength: Self = this.set("setItemLength", js.undefined)
+    def setSetItemLengthUndefined: Self = StObject.set(x, "setItemLength", js.undefined)
   }
 }

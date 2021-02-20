@@ -1,12 +1,13 @@
 package typings.evernote.anon
 
 import typings.evernote.mod.Types.LazyMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationData extends js.Object {
+trait ApplicationData extends StObject {
   
   var altitude: js.UndefOr[Double] = js.native
   
@@ -41,90 +42,78 @@ object ApplicationData {
   }
   
   @scala.inline
-  implicit class ApplicationDataOps[Self <: ApplicationData] (val x: Self) extends AnyVal {
+  implicit class ApplicationDataMutableBuilder[Self <: ApplicationData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApplicationData(value: LazyMap): Self = StObject.set(x, "applicationData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setApplicationDataUndefined: Self = StObject.set(x, "applicationData", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setAttachment(value: Boolean): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplicationData(value: LazyMap): Self = this.set("applicationData", value.asInstanceOf[js.Any])
+    def setAttachmentUndefined: Self = StObject.set(x, "attachment", js.undefined)
     
     @scala.inline
-    def deleteApplicationData: Self = this.set("applicationData", js.undefined)
+    def setCameraMake(value: String): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachment(value: Boolean): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    def setCameraMakeUndefined: Self = StObject.set(x, "cameraMake", js.undefined)
     
     @scala.inline
-    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraMake(value: String): Self = this.set("cameraMake", value.asInstanceOf[js.Any])
+    def setCameraModelUndefined: Self = StObject.set(x, "cameraModel", js.undefined)
     
     @scala.inline
-    def deleteCameraMake: Self = this.set("cameraMake", js.undefined)
+    def setClientWillIndex(value: Boolean): Self = StObject.set(x, "clientWillIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCameraModel(value: String): Self = this.set("cameraModel", value.asInstanceOf[js.Any])
+    def setClientWillIndexUndefined: Self = StObject.set(x, "clientWillIndex", js.undefined)
     
     @scala.inline
-    def deleteCameraModel: Self = this.set("cameraModel", js.undefined)
+    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientWillIndex(value: Boolean): Self = this.set("clientWillIndex", value.asInstanceOf[js.Any])
+    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
     @scala.inline
-    def deleteClientWillIndex: Self = this.set("clientWillIndex", js.undefined)
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
     @scala.inline
-    def deleteFileName: Self = this.set("fileName", js.undefined)
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
     
     @scala.inline
-    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    def setRecoType(value: String): Self = StObject.set(x, "recoType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setRecoTypeUndefined: Self = StObject.set(x, "recoType", js.undefined)
     
     @scala.inline
-    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecoType(value: String): Self = this.set("recoType", value.asInstanceOf[js.Any])
+    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
     
     @scala.inline
-    def deleteRecoType: Self = this.set("recoType", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSourceURL: Self = this.set("sourceURL", js.undefined)
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

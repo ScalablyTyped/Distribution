@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CaseSensitive extends js.Object {
+trait CaseSensitive extends StObject {
   
   var caseSensitive: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object CaseSensitive {
   }
   
   @scala.inline
-  implicit class CaseSensitiveOps[Self <: CaseSensitive] (val x: Self) extends AnyVal {
+  implicit class CaseSensitiveMutableBuilder[Self <: CaseSensitive] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaseSensitive(value: scala.Double): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjectTooLarge(value: scala.Double): Self = StObject.set(x, "objectTooLarge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseSensitive(value: scala.Double): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNone(value: scala.Double): Self = this.set("none", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setObjectTooLarge(value: scala.Double): Self = this.set("objectTooLarge", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnknown(value: scala.Double): Self = this.set("unknown", value.asInstanceOf[js.Any])
+    def setUnknown(value: scala.Double): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
   }
 }

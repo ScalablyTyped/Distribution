@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GeoshapeType extends js.Object
+sealed trait GeoshapeType extends StObject
 /** Indicates the shape of a geographic region. */
 @JSGlobal("Windows.Devices.Geolocation.GeoshapeType")
 @js.native
-object GeoshapeType extends js.Object {
+object GeoshapeType extends StObject {
   
   /** The geographic region is a rectangular region. */
   @js.native

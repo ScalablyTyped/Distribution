@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,141 +159,129 @@ object SearchViewModelProperties {
   }
   
   @scala.inline
-  implicit class SearchViewModelPropertiesOps[Self <: SearchViewModelProperties] (val x: Self) extends AnyVal {
+  implicit class SearchViewModelPropertiesMutableBuilder[Self <: SearchViewModelProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActiveSourceIndexUndefined: Self = StObject.set(x, "activeSourceIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllPlaceholder(value: String): Self = StObject.set(x, "allPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActiveSourceIndex(value: Double): Self = this.set("activeSourceIndex", value.asInstanceOf[js.Any])
+    def setAllPlaceholderUndefined: Self = StObject.set(x, "allPlaceholder", js.undefined)
     
     @scala.inline
-    def deleteActiveSourceIndex: Self = this.set("activeSourceIndex", js.undefined)
+    def setAutoSelect(value: Boolean): Self = StObject.set(x, "autoSelect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllPlaceholder(value: String): Self = this.set("allPlaceholder", value.asInstanceOf[js.Any])
+    def setAutoSelectUndefined: Self = StObject.set(x, "autoSelect", js.undefined)
     
     @scala.inline
-    def deleteAllPlaceholder: Self = this.set("allPlaceholder", js.undefined)
+    def setDefaultSymbol(value: SymbolProperties): Self = StObject.set(x, "defaultSymbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoSelect(value: Boolean): Self = this.set("autoSelect", value.asInstanceOf[js.Any])
+    def setDefaultSymbolUndefined: Self = StObject.set(x, "defaultSymbol", js.undefined)
     
     @scala.inline
-    def deleteAutoSelect: Self = this.set("autoSelect", js.undefined)
+    def setIncludeDefaultSources(value: Boolean | js.Function): Self = StObject.set(x, "includeDefaultSources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultSymbol(value: SymbolProperties): Self = this.set("defaultSymbol", value.asInstanceOf[js.Any])
+    def setIncludeDefaultSourcesUndefined: Self = StObject.set(x, "includeDefaultSources", js.undefined)
     
     @scala.inline
-    def deleteDefaultSymbol: Self = this.set("defaultSymbol", js.undefined)
+    def setLocationEnabled(value: Boolean): Self = StObject.set(x, "locationEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeDefaultSources(value: Boolean | js.Function): Self = this.set("includeDefaultSources", value.asInstanceOf[js.Any])
+    def setLocationEnabledUndefined: Self = StObject.set(x, "locationEnabled", js.undefined)
     
     @scala.inline
-    def deleteIncludeDefaultSources: Self = this.set("includeDefaultSources", js.undefined)
+    def setMaxInputLength(value: Double): Self = StObject.set(x, "maxInputLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocationEnabled(value: Boolean): Self = this.set("locationEnabled", value.asInstanceOf[js.Any])
+    def setMaxInputLengthUndefined: Self = StObject.set(x, "maxInputLength", js.undefined)
     
     @scala.inline
-    def deleteLocationEnabled: Self = this.set("locationEnabled", js.undefined)
+    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxInputLength(value: Double): Self = this.set("maxInputLength", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteMaxInputLength: Self = this.set("maxInputLength", js.undefined)
+    def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setMinSuggestCharacters(value: Double): Self = StObject.set(x, "minSuggestCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxSuggestions(value: Double): Self = this.set("maxSuggestions", value.asInstanceOf[js.Any])
+    def setMinSuggestCharactersUndefined: Self = StObject.set(x, "minSuggestCharacters", js.undefined)
     
     @scala.inline
-    def deleteMaxSuggestions: Self = this.set("maxSuggestions", js.undefined)
+    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinSuggestCharacters(value: Double): Self = this.set("minSuggestCharacters", value.asInstanceOf[js.Any])
+    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     @scala.inline
-    def deleteMinSuggestCharacters: Self = this.set("minSuggestCharacters", js.undefined)
+    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
     @scala.inline
-    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
+    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
     @scala.inline
-    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
+    def setResultGraphicEnabled(value: Boolean): Self = StObject.set(x, "resultGraphicEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortal(value: PortalProperties): Self = this.set("portal", value.asInstanceOf[js.Any])
+    def setResultGraphicEnabledUndefined: Self = StObject.set(x, "resultGraphicEnabled", js.undefined)
     
     @scala.inline
-    def deletePortal: Self = this.set("portal", js.undefined)
+    def setSearchAllEnabled(value: Boolean): Self = StObject.set(x, "searchAllEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResultGraphicEnabled(value: Boolean): Self = this.set("resultGraphicEnabled", value.asInstanceOf[js.Any])
+    def setSearchAllEnabledUndefined: Self = StObject.set(x, "searchAllEnabled", js.undefined)
     
     @scala.inline
-    def deleteResultGraphicEnabled: Self = this.set("resultGraphicEnabled", js.undefined)
+    def setSearchTerm(value: String): Self = StObject.set(x, "searchTerm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchAllEnabled(value: Boolean): Self = this.set("searchAllEnabled", value.asInstanceOf[js.Any])
+    def setSearchTermUndefined: Self = StObject.set(x, "searchTerm", js.undefined)
     
     @scala.inline
-    def deleteSearchAllEnabled: Self = this.set("searchAllEnabled", js.undefined)
+    def setSources(value: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchTerm(value: String): Self = this.set("searchTerm", value.asInstanceOf[js.Any])
+    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
     @scala.inline
-    def deleteSearchTerm: Self = this.set("searchTerm", js.undefined)
+    def setSourcesVarargs(value: (LayerSearchSourceProperties | LocatorSearchSourceProperties)*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
     @scala.inline
-    def setSourcesVarargs(value: (LayerSearchSourceProperties | LocatorSearchSourceProperties)*): Self = this.set("sources", js.Array(value :_*))
+    def setSuggestionDelay(value: Double): Self = StObject.set(x, "suggestionDelay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSources(value: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    def setSuggestionDelayUndefined: Self = StObject.set(x, "suggestionDelay", js.undefined)
     
     @scala.inline
-    def deleteSources: Self = this.set("sources", js.undefined)
+    def setSuggestionsEnabled(value: Boolean): Self = StObject.set(x, "suggestionsEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestionDelay(value: Double): Self = this.set("suggestionDelay", value.asInstanceOf[js.Any])
+    def setSuggestionsEnabledUndefined: Self = StObject.set(x, "suggestionsEnabled", js.undefined)
     
     @scala.inline
-    def deleteSuggestionDelay: Self = this.set("suggestionDelay", js.undefined)
+    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuggestionsEnabled(value: Boolean): Self = this.set("suggestionsEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSuggestionsEnabled: Self = this.set("suggestionsEnabled", js.undefined)
-    
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

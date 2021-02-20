@@ -3,6 +3,7 @@ package typings.stripe.mod.charges
 import typings.stripe.anon.Userreport
 import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.IShippingInformation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,48 +52,36 @@ object IChargeUpdateOptions {
   }
   
   @scala.inline
-  implicit class IChargeUpdateOptionsOps[Self <: IChargeUpdateOptions] (val x: Self) extends AnyVal {
+  implicit class IChargeUpdateOptionsMutableBuilder[Self <: IChargeUpdateOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFraud_details(value: Userreport): Self = StObject.set(x, "fraud_details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFraud_detailsUndefined: Self = StObject.set(x, "fraud_details", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setReceipt_email(value: String): Self = StObject.set(x, "receipt_email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFraud_details(value: Userreport): Self = this.set("fraud_details", value.asInstanceOf[js.Any])
+    def setReceipt_emailUndefined: Self = StObject.set(x, "receipt_email", js.undefined)
     
     @scala.inline
-    def deleteFraud_details: Self = this.set("fraud_details", js.undefined)
+    def setShipping(value: IShippingInformation): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReceipt_email(value: String): Self = this.set("receipt_email", value.asInstanceOf[js.Any])
+    def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
     
     @scala.inline
-    def deleteReceipt_email: Self = this.set("receipt_email", js.undefined)
+    def setTransfer_group(value: String): Self = StObject.set(x, "transfer_group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipping(value: IShippingInformation): Self = this.set("shipping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipping: Self = this.set("shipping", js.undefined)
-    
-    @scala.inline
-    def setTransfer_group(value: String): Self = this.set("transfer_group", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransfer_group: Self = this.set("transfer_group", js.undefined)
+    def setTransfer_groupUndefined: Self = StObject.set(x, "transfer_group", js.undefined)
   }
 }

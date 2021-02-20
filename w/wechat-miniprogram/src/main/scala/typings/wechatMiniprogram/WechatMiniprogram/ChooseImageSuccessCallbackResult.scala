@@ -1,11 +1,12 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChooseImageSuccessCallbackResult extends js.Object {
+trait ChooseImageSuccessCallbackResult extends StObject {
   
   var errMsg: String = js.native
   
@@ -26,33 +27,21 @@ object ChooseImageSuccessCallbackResult {
   }
   
   @scala.inline
-  implicit class ChooseImageSuccessCallbackResultOps[Self <: ChooseImageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  implicit class ChooseImageSuccessCallbackResultMutableBuilder[Self <: ChooseImageSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTempFilePaths(value: js.Array[String]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTempFilePathsVarargs(value: String*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
     
     @scala.inline
-    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    def setTempFiles(value: js.Array[ImageFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTempFilePathsVarargs(value: String*): Self = this.set("tempFilePaths", js.Array(value :_*))
-    
-    @scala.inline
-    def setTempFilePaths(value: js.Array[String]): Self = this.set("tempFilePaths", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTempFilesVarargs(value: ImageFile*): Self = this.set("tempFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTempFiles(value: js.Array[ImageFile]): Self = this.set("tempFiles", value.asInstanceOf[js.Any])
+    def setTempFilesVarargs(value: ImageFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
   }
 }

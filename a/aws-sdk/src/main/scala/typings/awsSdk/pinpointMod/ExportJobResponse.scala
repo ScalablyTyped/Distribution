@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportJobResponse extends js.Object {
+trait ExportJobResponse extends StObject {
   
   /**
     * The unique identifier for the application that's associated with the export job.
@@ -88,81 +89,69 @@ object ExportJobResponse {
   }
   
   @scala.inline
-  implicit class ExportJobResponseOps[Self <: ExportJobResponse] (val x: Self) extends AnyVal {
+  implicit class ExportJobResponseMutableBuilder[Self <: ExportJobResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompletedPieces(value: integer): Self = StObject.set(x, "CompletedPieces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCompletedPiecesUndefined: Self = StObject.set(x, "CompletedPieces", js.undefined)
     
     @scala.inline
-    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    def setCompletionDate(value: string): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
     @scala.inline
-    def setDefinition(value: ExportJobResource): Self = this.set("Definition", value.asInstanceOf[js.Any])
+    def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    def setDefinition(value: ExportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    def setFailedPieces(value: integer): Self = StObject.set(x, "FailedPieces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setFailedPiecesUndefined: Self = StObject.set(x, "FailedPieces", js.undefined)
     
     @scala.inline
-    def setCompletedPieces(value: integer): Self = this.set("CompletedPieces", value.asInstanceOf[js.Any])
+    def setFailures(value: ListOfString): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompletedPieces: Self = this.set("CompletedPieces", js.undefined)
+    def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
     @scala.inline
-    def setCompletionDate(value: string): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    def setFailuresVarargs(value: string*): Self = StObject.set(x, "Failures", js.Array(value :_*))
     
     @scala.inline
-    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailedPieces(value: integer): Self = this.set("FailedPieces", value.asInstanceOf[js.Any])
+    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailedPieces: Self = this.set("FailedPieces", js.undefined)
+    def setTotalFailures(value: integer): Self = StObject.set(x, "TotalFailures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailuresVarargs(value: string*): Self = this.set("Failures", js.Array(value :_*))
+    def setTotalFailuresUndefined: Self = StObject.set(x, "TotalFailures", js.undefined)
     
     @scala.inline
-    def setFailures(value: ListOfString): Self = this.set("Failures", value.asInstanceOf[js.Any])
+    def setTotalPieces(value: integer): Self = StObject.set(x, "TotalPieces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFailures: Self = this.set("Failures", js.undefined)
+    def setTotalPiecesUndefined: Self = StObject.set(x, "TotalPieces", js.undefined)
     
     @scala.inline
-    def setTotalFailures(value: integer): Self = this.set("TotalFailures", value.asInstanceOf[js.Any])
+    def setTotalProcessed(value: integer): Self = StObject.set(x, "TotalProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTotalFailures: Self = this.set("TotalFailures", js.undefined)
+    def setTotalProcessedUndefined: Self = StObject.set(x, "TotalProcessed", js.undefined)
     
     @scala.inline
-    def setTotalPieces(value: integer): Self = this.set("TotalPieces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalPieces: Self = this.set("TotalPieces", js.undefined)
-    
-    @scala.inline
-    def setTotalProcessed(value: integer): Self = this.set("TotalProcessed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotalProcessed: Self = this.set("TotalProcessed", js.undefined)
+    def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

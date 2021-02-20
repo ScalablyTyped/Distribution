@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExportClientVpnClientCertificateRevocationListResult extends js.Object {
+trait ExportClientVpnClientCertificateRevocationListResult extends StObject {
   
   /**
     * Information about the client certificate revocation list.
@@ -26,30 +27,18 @@ object ExportClientVpnClientCertificateRevocationListResult {
   }
   
   @scala.inline
-  implicit class ExportClientVpnClientCertificateRevocationListResultOps[Self <: ExportClientVpnClientCertificateRevocationListResult] (val x: Self) extends AnyVal {
+  implicit class ExportClientVpnClientCertificateRevocationListResultMutableBuilder[Self <: ExportClientVpnClientCertificateRevocationListResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateRevocationList(value: String): Self = StObject.set(x, "CertificateRevocationList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateRevocationListUndefined: Self = StObject.set(x, "CertificateRevocationList", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: ClientCertificateRevocationListStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateRevocationList(value: String): Self = this.set("CertificateRevocationList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateRevocationList: Self = this.set("CertificateRevocationList", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: ClientCertificateRevocationListStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

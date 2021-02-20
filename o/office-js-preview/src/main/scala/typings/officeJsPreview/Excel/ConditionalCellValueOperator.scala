@@ -1,11 +1,12 @@
 package typings.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalCellValueOperator extends js.Object
+sealed trait ConditionalCellValueOperator extends StObject
 /**
   *
   * Represents the operator of the text conditional format type.
@@ -14,7 +15,7 @@ sealed trait ConditionalCellValueOperator extends js.Object
   */
 @JSGlobal("Excel.ConditionalCellValueOperator")
 @js.native
-object ConditionalCellValueOperator extends js.Object {
+object ConditionalCellValueOperator extends StObject {
   
   @js.native
   sealed trait between extends ConditionalCellValueOperator

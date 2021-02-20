@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetEmailIdentityResponse extends js.Object {
+trait GetEmailIdentityResponse extends StObject {
   
   /**
     * An object that contains information about the DKIM attributes for the identity. This object includes the tokens that you use to create the CNAME records that are required to complete the DKIM verification process.
@@ -46,57 +47,45 @@ object GetEmailIdentityResponse {
   }
   
   @scala.inline
-  implicit class GetEmailIdentityResponseOps[Self <: GetEmailIdentityResponse] (val x: Self) extends AnyVal {
+  implicit class GetEmailIdentityResponseMutableBuilder[Self <: GetEmailIdentityResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFeedbackForwardingStatus(value: Enabled): Self = StObject.set(x, "FeedbackForwardingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDkimAttributes(value: DkimAttributes): Self = this.set("DkimAttributes", value.asInstanceOf[js.Any])
+    def setFeedbackForwardingStatusUndefined: Self = StObject.set(x, "FeedbackForwardingStatus", js.undefined)
     
     @scala.inline
-    def deleteDkimAttributes: Self = this.set("DkimAttributes", js.undefined)
+    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeedbackForwardingStatus(value: Enabled): Self = this.set("FeedbackForwardingStatus", value.asInstanceOf[js.Any])
+    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
     @scala.inline
-    def deleteFeedbackForwardingStatus: Self = this.set("FeedbackForwardingStatus", js.undefined)
+    def setMailFromAttributes(value: MailFromAttributes): Self = StObject.set(x, "MailFromAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    def setMailFromAttributesUndefined: Self = StObject.set(x, "MailFromAttributes", js.undefined)
     
     @scala.inline
-    def deleteIdentityType: Self = this.set("IdentityType", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMailFromAttributes(value: MailFromAttributes): Self = this.set("MailFromAttributes", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteMailFromAttributes: Self = this.set("MailFromAttributes", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setVerifiedForSendingStatus(value: Enabled): Self = this.set("VerifiedForSendingStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerifiedForSendingStatus: Self = this.set("VerifiedForSendingStatus", js.undefined)
+    def setVerifiedForSendingStatusUndefined: Self = StObject.set(x, "VerifiedForSendingStatus", js.undefined)
   }
 }

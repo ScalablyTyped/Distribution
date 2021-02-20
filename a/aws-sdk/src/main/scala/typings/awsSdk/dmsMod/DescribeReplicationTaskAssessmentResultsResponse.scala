@@ -1,11 +1,12 @@
 package typings.awsSdk.dmsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeReplicationTaskAssessmentResultsResponse extends js.Object {
+trait DescribeReplicationTaskAssessmentResultsResponse extends StObject {
   
   /**
     * - The Amazon S3 bucket where the task assessment report is located. 
@@ -31,39 +32,27 @@ object DescribeReplicationTaskAssessmentResultsResponse {
   }
   
   @scala.inline
-  implicit class DescribeReplicationTaskAssessmentResultsResponseOps[Self <: DescribeReplicationTaskAssessmentResultsResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeReplicationTaskAssessmentResultsResponseMutableBuilder[Self <: DescribeReplicationTaskAssessmentResultsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBucketNameUndefined: Self = StObject.set(x, "BucketName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBucketName(value: String): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteBucketName: Self = this.set("BucketName", js.undefined)
+    def setReplicationTaskAssessmentResults(value: ReplicationTaskAssessmentResultList): Self = StObject.set(x, "ReplicationTaskAssessmentResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setReplicationTaskAssessmentResultsUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentResults", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
-    
-    @scala.inline
-    def setReplicationTaskAssessmentResultsVarargs(value: ReplicationTaskAssessmentResult*): Self = this.set("ReplicationTaskAssessmentResults", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplicationTaskAssessmentResults(value: ReplicationTaskAssessmentResultList): Self = this.set("ReplicationTaskAssessmentResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicationTaskAssessmentResults: Self = this.set("ReplicationTaskAssessmentResults", js.undefined)
+    def setReplicationTaskAssessmentResultsVarargs(value: ReplicationTaskAssessmentResult*): Self = StObject.set(x, "ReplicationTaskAssessmentResults", js.Array(value :_*))
   }
 }

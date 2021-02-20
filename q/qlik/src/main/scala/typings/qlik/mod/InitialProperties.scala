@@ -1,5 +1,6 @@
 package typings.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.qlik.mod.InitialPropertiesHyperCube
   - typings.qlik.mod.InitialPropertiesListobject
 */
-trait InitialProperties extends js.Object
+trait InitialProperties extends StObject
 object InitialProperties {
   
   @scala.inline
-  def InitialPropertiesHyperCube(qHyperCubeDef: HyperCubeDef): InitialProperties = {
+  def InitialPropertiesHyperCube(qHyperCubeDef: HyperCubeDef): typings.qlik.mod.InitialPropertiesHyperCube = {
     val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InitialProperties]
+    __obj.asInstanceOf[typings.qlik.mod.InitialPropertiesHyperCube]
   }
   
   @scala.inline
-  def InitialPropertiesListobject(qListobjectDef: ListobjectDef): InitialProperties = {
+  def InitialPropertiesListobject(qListobjectDef: ListobjectDef): typings.qlik.mod.InitialPropertiesListobject = {
     val __obj = js.Dynamic.literal(qListobjectDef = qListobjectDef.asInstanceOf[js.Any])
-    __obj.asInstanceOf[InitialProperties]
+    __obj.asInstanceOf[typings.qlik.mod.InitialPropertiesListobject]
   }
 }

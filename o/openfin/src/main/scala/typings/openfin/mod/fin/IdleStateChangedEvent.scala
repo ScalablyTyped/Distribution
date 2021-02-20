@@ -2,12 +2,13 @@ package typings.openfin.mod.fin
 
 import typings.openfin.openfinStrings.`idle-state-changed`
 import typings.openfin.openfinStrings.system
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IdleStateChangedEvent extends js.Object {
+trait IdleStateChangedEvent extends StObject {
   
   /**
     * How long in milliseconds since the user has been idle.
@@ -33,30 +34,18 @@ object IdleStateChangedEvent {
   }
   
   @scala.inline
-  implicit class IdleStateChangedEventOps[Self <: IdleStateChangedEvent] (val x: Self) extends AnyVal {
+  implicit class IdleStateChangedEventMutableBuilder[Self <: IdleStateChangedEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsIdle(value: Boolean): Self = StObject.set(x, "isIdle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElapsedTime(value: Double): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsIdle(value: Boolean): Self = this.set("isIdle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopic(value: system): Self = this.set("topic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `idle-state-changed`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `idle-state-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

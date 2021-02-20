@@ -3,16 +3,16 @@ package typings.optimism
 import typings.optimism.depMod.Dep_
 import typings.std.Map
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("optimism/lib/entry", JSImport.Namespace)
-@js.native
-object entryMod extends js.Object {
+object entryMod {
   
+  @JSImport("optimism/lib/entry", "Entry")
   @js.native
-  class Entry[TArgs /* <: js.Array[_] */, TValue] protected () extends js.Object {
+  class Entry[TArgs /* <: js.Array[_] */, TValue] protected () extends StObject {
     def this(fn: js.Function1[/* args */ TArgs, TValue]) = this()
     
     val childValues: Map[AnyEntry, Value[_]] = js.native
@@ -50,10 +50,17 @@ object entryMod extends js.Object {
     val value: Value[TValue] = js.native
   }
   /* static members */
-  @js.native
-  object Entry extends js.Object {
+  object Entry {
     
-    var count: Double = js.native
+    @JSImport("optimism/lib/entry", "Entry")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("optimism/lib/entry", "Entry.count")
+    @js.native
+    def count: Double = js.native
+    @scala.inline
+    def count_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("count")(x.asInstanceOf[js.Any])
   }
   
   type AnyEntry = Entry[js.Any, js.Any]

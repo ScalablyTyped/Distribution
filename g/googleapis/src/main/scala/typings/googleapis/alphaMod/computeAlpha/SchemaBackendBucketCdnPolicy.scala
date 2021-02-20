@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message containing Cloud CDN configuration for a backend bucket.
   */
 @js.native
-trait SchemaBackendBucketCdnPolicy extends js.Object {
+trait SchemaBackendBucketCdnPolicy extends StObject {
   
   /**
     * Maximum number of seconds the response to a signed URL request will be
@@ -35,33 +36,21 @@ object SchemaBackendBucketCdnPolicy {
   }
   
   @scala.inline
-  implicit class SchemaBackendBucketCdnPolicyOps[Self <: SchemaBackendBucketCdnPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaBackendBucketCdnPolicyMutableBuilder[Self <: SchemaBackendBucketCdnPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSignedUrlCacheMaxAgeSec(value: String): Self = StObject.set(x, "signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSignedUrlCacheMaxAgeSecUndefined: Self = StObject.set(x, "signedUrlCacheMaxAgeSec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSignedUrlKeyNames(value: js.Array[String]): Self = StObject.set(x, "signedUrlKeyNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignedUrlCacheMaxAgeSec(value: String): Self = this.set("signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
+    def setSignedUrlKeyNamesUndefined: Self = StObject.set(x, "signedUrlKeyNames", js.undefined)
     
     @scala.inline
-    def deleteSignedUrlCacheMaxAgeSec: Self = this.set("signedUrlCacheMaxAgeSec", js.undefined)
-    
-    @scala.inline
-    def setSignedUrlKeyNamesVarargs(value: String*): Self = this.set("signedUrlKeyNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setSignedUrlKeyNames(value: js.Array[String]): Self = this.set("signedUrlKeyNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSignedUrlKeyNames: Self = this.set("signedUrlKeyNames", js.undefined)
+    def setSignedUrlKeyNamesVarargs(value: String*): Self = StObject.set(x, "signedUrlKeyNames", js.Array(value :_*))
   }
 }

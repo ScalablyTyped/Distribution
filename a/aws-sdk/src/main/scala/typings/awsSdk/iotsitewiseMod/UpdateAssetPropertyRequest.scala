@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAssetPropertyRequest extends js.Object {
+trait UpdateAssetPropertyRequest extends StObject {
   
   /**
     * The ID of the asset to be updated.
@@ -41,42 +42,30 @@ object UpdateAssetPropertyRequest {
   }
   
   @scala.inline
-  implicit class UpdateAssetPropertyRequestOps[Self <: UpdateAssetPropertyRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAssetPropertyRequestMutableBuilder[Self <: UpdateAssetPropertyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
     @scala.inline
-    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    def setPropertyAlias(value: PropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyId(value: ID): Self = this.set("propertyId", value.asInstanceOf[js.Any])
+    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
     @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setPropertyNotificationState(value: PropertyNotificationState): Self = StObject.set(x, "propertyNotificationState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyAlias(value: PropertyAlias): Self = this.set("propertyAlias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyAlias: Self = this.set("propertyAlias", js.undefined)
-    
-    @scala.inline
-    def setPropertyNotificationState(value: PropertyNotificationState): Self = this.set("propertyNotificationState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePropertyNotificationState: Self = this.set("propertyNotificationState", js.undefined)
+    def setPropertyNotificationStateUndefined: Self = StObject.set(x, "propertyNotificationState", js.undefined)
   }
 }

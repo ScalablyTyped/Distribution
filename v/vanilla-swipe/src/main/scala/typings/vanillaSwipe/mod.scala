@@ -5,16 +5,21 @@ import typings.std.TouchEvent
 import typings.vanillaSwipe.typesMod.ConstructorProps
 import typings.vanillaSwipe.typesMod.EventData
 import typings.vanillaSwipe.typesMod.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vanilla-swipe", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("vanilla-swipe", JSImport.Default)
+  @js.native
+  class default protected () extends VanillaSwipe {
+    def this(props: ConstructorProps) = this()
+  }
   
   @js.native
-  trait VanillaSwipe extends js.Object {
+  trait VanillaSwipe extends StObject {
     
     def cleanupMouseListeners(): Unit = js.native
     
@@ -50,10 +55,5 @@ object mod extends js.Object {
     var state: State = js.native
     
     def update(props: ConstructorProps): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends VanillaSwipe {
-    def this(props: ConstructorProps) = this()
   }
 }

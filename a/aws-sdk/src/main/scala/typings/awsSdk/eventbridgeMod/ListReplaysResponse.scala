@@ -1,11 +1,12 @@
 package typings.awsSdk.eventbridgeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListReplaysResponse extends js.Object {
+trait ListReplaysResponse extends StObject {
   
   /**
     * The token returned by a previous call to retrieve the next set of results.
@@ -26,33 +27,21 @@ object ListReplaysResponse {
   }
   
   @scala.inline
-  implicit class ListReplaysResponseOps[Self <: ListReplaysResponse] (val x: Self) extends AnyVal {
+  implicit class ListReplaysResponseMutableBuilder[Self <: ListReplaysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReplays(value: ReplayList): Self = StObject.set(x, "Replays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setReplaysUndefined: Self = StObject.set(x, "Replays", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setReplaysVarargs(value: Replay*): Self = this.set("Replays", js.Array(value :_*))
-    
-    @scala.inline
-    def setReplays(value: ReplayList): Self = this.set("Replays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplays: Self = this.set("Replays", js.undefined)
+    def setReplaysVarargs(value: Replay*): Self = StObject.set(x, "Replays", js.Array(value :_*))
   }
 }

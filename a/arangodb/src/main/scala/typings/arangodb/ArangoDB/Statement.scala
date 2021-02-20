@@ -1,11 +1,12 @@
 package typings.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Statement[T] extends js.Object {
+trait Statement[T] extends StObject {
   
   def bind(name: String, value: js.Any): Unit = js.native
   
@@ -29,30 +30,18 @@ object Statement {
   }
   
   @scala.inline
-  implicit class StatementOps[Self <: Statement[_], T] (val x: Self with Statement[T]) extends AnyVal {
+  implicit class StatementMutableBuilder[Self <: Statement[_], T] (val x: Self with Statement[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBind(value: (String, js.Any) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecute(value: () => Cursor[T]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetBatchSize(value: () => Double): Self = StObject.set(x, "getBatchSize", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setBind(value: (String, js.Any) => Unit): Self = this.set("bind", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setExecute(value: () => Cursor[T]): Self = this.set("execute", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetBatchSize(value: () => Double): Self = this.set("getBatchSize", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetBatchSize(value: Double => Unit): Self = this.set("setBatchSize", js.Any.fromFunction1(value))
+    def setSetBatchSize(value: Double => Unit): Self = StObject.set(x, "setBatchSize", js.Any.fromFunction1(value))
   }
 }

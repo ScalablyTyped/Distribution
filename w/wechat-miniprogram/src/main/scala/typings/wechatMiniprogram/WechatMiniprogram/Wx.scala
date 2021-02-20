@@ -4,12 +4,13 @@ import typings.std.ArrayBuffer
 import typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialInstance
 import typings.wechatMiniprogram.WxCloud
 import typings.wechatMiniprogram.anon.USERDATAPATH
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Wx extends js.Object {
+trait Wx extends StObject {
   
   /** [wx.addCard(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/card/wx.addCard.html)
   *

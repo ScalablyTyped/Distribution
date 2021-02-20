@@ -11,12 +11,13 @@ import typings.mfiles.MFiles.MFParentChildBehavior
 import typings.mfiles.MFiles.MFPermissionsExpressionType
 import typings.mfiles.MFiles.MFStatusType
 import typings.mfiles.MFiles.MFValueListItemPropertyDef
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IExpression extends js.Object {
+trait IExpression extends StObject {
   
   def Clone(): IExpression = js.native
   

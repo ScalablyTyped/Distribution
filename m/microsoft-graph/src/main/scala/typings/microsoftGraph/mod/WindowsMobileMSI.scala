@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,51 +32,39 @@ object WindowsMobileMSI {
   }
   
   @scala.inline
-  implicit class WindowsMobileMSIOps[Self <: WindowsMobileMSI] (val x: Self) extends AnyVal {
+  implicit class WindowsMobileMSIMutableBuilder[Self <: WindowsMobileMSI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommandLine(value: NullableOption[String]): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandLineNull: Self = StObject.set(x, "commandLine", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
     
     @scala.inline
-    def setCommandLine(value: NullableOption[String]): Self = this.set("commandLine", value.asInstanceOf[js.Any])
+    def setIgnoreVersionDetection(value: Boolean): Self = StObject.set(x, "ignoreVersionDetection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommandLine: Self = this.set("commandLine", js.undefined)
+    def setIgnoreVersionDetectionUndefined: Self = StObject.set(x, "ignoreVersionDetection", js.undefined)
     
     @scala.inline
-    def setCommandLineNull: Self = this.set("commandLine", null)
+    def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreVersionDetection(value: Boolean): Self = this.set("ignoreVersionDetection", value.asInstanceOf[js.Any])
+    def setProductCodeNull: Self = StObject.set(x, "productCode", null)
     
     @scala.inline
-    def deleteIgnoreVersionDetection: Self = this.set("ignoreVersionDetection", js.undefined)
+    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
     @scala.inline
-    def setProductCode(value: NullableOption[String]): Self = this.set("productCode", value.asInstanceOf[js.Any])
+    def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProductCode: Self = this.set("productCode", js.undefined)
+    def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
     
     @scala.inline
-    def setProductCodeNull: Self = this.set("productCode", null)
-    
-    @scala.inline
-    def setProductVersion(value: NullableOption[String]): Self = this.set("productVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProductVersion: Self = this.set("productVersion", js.undefined)
-    
-    @scala.inline
-    def setProductVersionNull: Self = this.set("productVersion", null)
+    def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
   }
 }

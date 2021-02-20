@@ -4,6 +4,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -119,54 +120,42 @@ object XFilePreview {
   }
   
   @scala.inline
-  implicit class XFilePreviewOps[Self <: XFilePreview] (val x: Self) extends AnyVal {
+  implicit class XFilePreviewMutableBuilder[Self <: XFilePreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableHeight(value: Double): Self = StObject.set(x, "AvailableHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAvailableWidth(value: Double): Self = StObject.set(x, "AvailableWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetAvailableHeight(value: () => Double): Self = StObject.set(x, "getAvailableHeight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAvailableHeight(value: Double): Self = this.set("AvailableHeight", value.asInstanceOf[js.Any])
+    def setGetAvailableWidth(value: () => Double): Self = StObject.set(x, "getAvailableWidth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAvailableWidth(value: Double): Self = this.set("AvailableWidth", value.asInstanceOf[js.Any])
+    def setGetShowState(value: () => Boolean): Self = StObject.set(x, "getShowState", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setShowState(value: Boolean): Self = this.set("ShowState", value.asInstanceOf[js.Any])
+    def setGetSupportedImageFormats(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedImageFormats", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSupportedImageFormats(value: SafeArray[Double]): Self = this.set("SupportedImageFormats", value.asInstanceOf[js.Any])
+    def setGetTargetColorDepth(value: () => Color): Self = StObject.set(x, "getTargetColorDepth", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setTargetColorDepth(value: Color): Self = this.set("TargetColorDepth", value.asInstanceOf[js.Any])
+    def setSetImage(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetAvailableHeight(value: () => Double): Self = this.set("getAvailableHeight", js.Any.fromFunction0(value))
+    def setSetShowState(value: Boolean => Boolean): Self = StObject.set(x, "setShowState", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetAvailableWidth(value: () => Double): Self = this.set("getAvailableWidth", js.Any.fromFunction0(value))
+    def setShowState(value: Boolean): Self = StObject.set(x, "ShowState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetShowState(value: () => Boolean): Self = this.set("getShowState", js.Any.fromFunction0(value))
+    def setSupportedImageFormats(value: SafeArray[Double]): Self = StObject.set(x, "SupportedImageFormats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSupportedImageFormats(value: () => SafeArray[Double]): Self = this.set("getSupportedImageFormats", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetTargetColorDepth(value: () => Color): Self = this.set("getTargetColorDepth", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetImage(value: (Double, js.Any) => Unit): Self = this.set("setImage", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetShowState(value: Boolean => Boolean): Self = this.set("setShowState", js.Any.fromFunction1(value))
+    def setTargetColorDepth(value: Color): Self = StObject.set(x, "TargetColorDepth", value.asInstanceOf[js.Any])
   }
 }

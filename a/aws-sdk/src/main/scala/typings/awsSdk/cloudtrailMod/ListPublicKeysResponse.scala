@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudtrailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPublicKeysResponse extends js.Object {
+trait ListPublicKeysResponse extends StObject {
   
   /**
     * Reserved for future use.
@@ -26,33 +27,21 @@ object ListPublicKeysResponse {
   }
   
   @scala.inline
-  implicit class ListPublicKeysResponseOps[Self <: ListPublicKeysResponse] (val x: Self) extends AnyVal {
+  implicit class ListPublicKeysResponseMutableBuilder[Self <: ListPublicKeysResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPublicKeyList(value: PublicKeyList): Self = StObject.set(x, "PublicKeyList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setPublicKeyListUndefined: Self = StObject.set(x, "PublicKeyList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setPublicKeyListVarargs(value: PublicKey*): Self = this.set("PublicKeyList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPublicKeyList(value: PublicKeyList): Self = this.set("PublicKeyList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePublicKeyList: Self = this.set("PublicKeyList", js.undefined)
+    def setPublicKeyListVarargs(value: PublicKey*): Self = StObject.set(x, "PublicKeyList", js.Array(value :_*))
   }
 }

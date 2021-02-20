@@ -2,12 +2,13 @@ package typings.sdpTransform.anon
 
 import typings.sdpTransform.sdpTransformStrings.excl
 import typings.sdpTransform.sdpTransformStrings.incl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddressTypes extends js.Object {
+trait AddressTypes extends StObject {
   
   var addressTypes: String = js.native
   
@@ -34,33 +35,21 @@ object AddressTypes {
   }
   
   @scala.inline
-  implicit class AddressTypesOps[Self <: AddressTypes] (val x: Self) extends AnyVal {
+  implicit class AddressTypesMutableBuilder[Self <: AddressTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddressTypes(value: String): Self = StObject.set(x, "addressTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestAddress(value: String): Self = StObject.set(x, "destAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFilterMode(value: excl | incl): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAddressTypes(value: String): Self = this.set("addressTypes", value.asInstanceOf[js.Any])
+    def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestAddress(value: String): Self = this.set("destAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFilterMode(value: excl | incl): Self = this.set("filterMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNetType(value: String): Self = this.set("netType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrcList(value: String): Self = this.set("srcList", value.asInstanceOf[js.Any])
+    def setSrcList(value: String): Self = StObject.set(x, "srcList", value.asInstanceOf[js.Any])
   }
 }

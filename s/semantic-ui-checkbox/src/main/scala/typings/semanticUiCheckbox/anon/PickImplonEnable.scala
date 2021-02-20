@@ -1,13 +1,14 @@
 package typings.semanticUiCheckbox.anon
 
 import typings.std.HTMLInputElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, 'onEnable'> */
 @js.native
-trait PickImplonEnable extends js.Object {
+trait PickImplonEnable extends StObject {
   
   def onEnable(): Unit = js.native
   @JSName("onEnable")

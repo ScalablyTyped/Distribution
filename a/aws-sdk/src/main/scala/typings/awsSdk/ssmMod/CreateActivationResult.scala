@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateActivationResult extends js.Object {
+trait CreateActivationResult extends StObject {
   
   /**
     * The code the system generates when it processes the activation. The activation code functions like a password to validate the activation ID. 
@@ -26,30 +27,18 @@ object CreateActivationResult {
   }
   
   @scala.inline
-  implicit class CreateActivationResultOps[Self <: CreateActivationResult] (val x: Self) extends AnyVal {
+  implicit class CreateActivationResultMutableBuilder[Self <: CreateActivationResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivationCode(value: ActivationCode): Self = StObject.set(x, "ActivationCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivationCodeUndefined: Self = StObject.set(x, "ActivationCode", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActivationId(value: ActivationId): Self = StObject.set(x, "ActivationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActivationCode(value: ActivationCode): Self = this.set("ActivationCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivationCode: Self = this.set("ActivationCode", js.undefined)
-    
-    @scala.inline
-    def setActivationId(value: ActivationId): Self = this.set("ActivationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteActivationId: Self = this.set("ActivationId", js.undefined)
+    def setActivationIdUndefined: Self = StObject.set(x, "ActivationId", js.undefined)
   }
 }

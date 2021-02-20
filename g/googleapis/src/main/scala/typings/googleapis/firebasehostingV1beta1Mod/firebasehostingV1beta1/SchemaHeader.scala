@@ -1,6 +1,7 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * add to a response should the request URL path match the pattern.
   */
 @js.native
-trait SchemaHeader extends js.Object {
+trait SchemaHeader extends StObject {
   
   /**
     * Required. The user-supplied [glob
@@ -33,30 +34,18 @@ object SchemaHeader {
   }
   
   @scala.inline
-  implicit class SchemaHeaderOps[Self <: SchemaHeader] (val x: Self) extends AnyVal {
+  implicit class SchemaHeaderMutableBuilder[Self <: SchemaHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlob(value: String): Self = this.set("glob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlob: Self = this.set("glob", js.undefined)
-    
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
+    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.handsontable.mod.Handsontable.plugins
 
 import typings.handsontable.mod._Handsontable.Core
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,51 +67,39 @@ object Formulas {
   }
   
   @scala.inline
-  implicit class FormulasOps[Self <: Formulas] (val x: Self) extends AnyVal {
+  implicit class FormulasMutableBuilder[Self <: Formulas] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataProvider(value: DataProvider): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetCellValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setDataProvider(value: DataProvider): Self = this.set("dataProvider", value.asInstanceOf[js.Any])
+    def setGetVariable(value: String => js.Any): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEventManager(value: EventManager): Self = this.set("eventManager", value.asInstanceOf[js.Any])
+    def setHasComputedCellValue(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasComputedCellValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCellValue(value: (Double, Double) => js.Any): Self = this.set("getCellValue", js.Any.fromFunction2(value))
+    def setRecalculate(value: () => Unit): Self = StObject.set(x, "recalculate", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetVariable(value: String => js.Any): Self = this.set("getVariable", js.Any.fromFunction1(value))
+    def setRecalculateFull(value: () => Unit): Self = StObject.set(x, "recalculateFull", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setHasComputedCellValue(value: (Double, Double) => Boolean): Self = this.set("hasComputedCellValue", js.Any.fromFunction2(value))
+    def setRecalculateOptimized(value: () => Unit): Self = StObject.set(x, "recalculateOptimized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRecalculate(value: () => Unit): Self = this.set("recalculate", js.Any.fromFunction0(value))
+    def setSetVariable(value: (String, js.Any) => Unit): Self = StObject.set(x, "setVariable", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setRecalculateFull(value: () => Unit): Self = this.set("recalculateFull", js.Any.fromFunction0(value))
+    def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecalculateOptimized(value: () => Unit): Self = this.set("recalculateOptimized", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetVariable(value: (String, js.Any) => Unit): Self = this.set("setVariable", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSheet(value: Sheet): Self = this.set("sheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndoRedoSnapshot(value: UndoRedoSnapshot): Self = this.set("undoRedoSnapshot", value.asInstanceOf[js.Any])
+    def setUndoRedoSnapshot(value: UndoRedoSnapshot): Self = StObject.set(x, "undoRedoSnapshot", value.asInstanceOf[js.Any])
   }
 }

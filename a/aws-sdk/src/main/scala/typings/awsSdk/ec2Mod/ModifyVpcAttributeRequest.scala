@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyVpcAttributeRequest extends js.Object {
+trait ModifyVpcAttributeRequest extends StObject {
   
   /**
     * Indicates whether the instances launched in the VPC get DNS hostnames. If enabled, instances in the VPC get DNS hostnames; otherwise, they do not. You cannot modify the DNS resolution and DNS hostnames attributes in the same request. Use separate requests for each attribute. You can only enable DNS hostnames if you've enabled DNS support.
@@ -31,33 +32,21 @@ object ModifyVpcAttributeRequest {
   }
   
   @scala.inline
-  implicit class ModifyVpcAttributeRequestOps[Self <: ModifyVpcAttributeRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyVpcAttributeRequestMutableBuilder[Self <: ModifyVpcAttributeRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnableDnsHostnames(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsHostnames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableDnsHostnamesUndefined: Self = StObject.set(x, "EnableDnsHostnames", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnableDnsSupport(value: AttributeBooleanValue): Self = StObject.set(x, "EnableDnsSupport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    def setEnableDnsSupportUndefined: Self = StObject.set(x, "EnableDnsSupport", js.undefined)
     
     @scala.inline
-    def setEnableDnsHostnames(value: AttributeBooleanValue): Self = this.set("EnableDnsHostnames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableDnsHostnames: Self = this.set("EnableDnsHostnames", js.undefined)
-    
-    @scala.inline
-    def setEnableDnsSupport(value: AttributeBooleanValue): Self = this.set("EnableDnsSupport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEnableDnsSupport: Self = this.set("EnableDnsSupport", js.undefined)
+    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

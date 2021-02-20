@@ -20,14 +20,14 @@ import typings.babylonjs.typesMod.DeepImmutable
 import typings.babylonjs.typesMod.FloatArray
 import typings.babylonjs.typesMod.IndicesArray
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Meshes/subMesh", JSImport.Namespace)
-@js.native
-object subMeshMod extends js.Object {
+object subMeshMod {
   
+  @JSImport("babylonjs/Meshes/subMesh", "SubMesh")
   @js.native
   class SubMesh protected () extends ICullable {
     /**
@@ -394,8 +394,7 @@ object subMeshMod extends js.Object {
     var verticesStart: Double = js.native
   }
   /* static members */
-  @js.native
-  object SubMesh extends js.Object {
+  object SubMesh {
     
     /**
       * Add a new submesh to a mesh
@@ -409,6 +408,8 @@ object subMeshMod extends js.Object {
       * @param createBoundingBox defines if bounding box should be created for this submesh
       * @returns the new submesh
       */
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
+    @js.native
     def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
@@ -417,6 +418,8 @@ object subMeshMod extends js.Object {
       indexCount: Double,
       mesh: AbstractMesh
     ): SubMesh = js.native
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
+    @js.native
     def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
@@ -427,6 +430,8 @@ object subMeshMod extends js.Object {
       renderingMesh: js.UndefOr[scala.Nothing],
       createBoundingBox: Boolean
     ): SubMesh = js.native
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
+    @js.native
     def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
@@ -436,6 +441,8 @@ object subMeshMod extends js.Object {
       mesh: AbstractMesh,
       renderingMesh: Mesh
     ): SubMesh = js.native
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.AddToMesh")
+    @js.native
     def AddToMesh(
       materialIndex: Double,
       verticesStart: Double,
@@ -456,7 +463,11 @@ object subMeshMod extends js.Object {
       * @param renderingMesh the optional rendering mesh
       * @returns a new submesh
       */
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.CreateFromIndices")
+    @js.native
     def CreateFromIndices(materialIndex: Double, startIndex: Double, indexCount: Double, mesh: AbstractMesh): SubMesh = js.native
+    @JSImport("babylonjs/Meshes/subMesh", "SubMesh.CreateFromIndices")
+    @js.native
     def CreateFromIndices(
       materialIndex: Double,
       startIndex: Double,

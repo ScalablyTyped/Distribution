@@ -1,13 +1,14 @@
 package typings.materialUiCore.anon
 
 import typings.materialUiCore.withStylesMod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/MobileStepper.MobileStepperClassKey>> */
 @js.native
-trait PartialStyleRulesMobileSt extends js.Object {
+trait PartialStyleRulesMobileSt extends StObject {
   
   var dot: js.UndefOr[CSSProperties] = js.native
   
@@ -34,66 +35,54 @@ object PartialStyleRulesMobileSt {
   }
   
   @scala.inline
-  implicit class PartialStyleRulesMobileStOps[Self <: PartialStyleRulesMobileSt] (val x: Self) extends AnyVal {
+  implicit class PartialStyleRulesMobileStMutableBuilder[Self <: PartialStyleRulesMobileSt] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDot(value: CSSProperties): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDotActive(value: CSSProperties): Self = StObject.set(x, "dotActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDotActiveUndefined: Self = StObject.set(x, "dotActive", js.undefined)
     
     @scala.inline
-    def setDot(value: CSSProperties): Self = this.set("dot", value.asInstanceOf[js.Any])
+    def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
     
     @scala.inline
-    def deleteDot: Self = this.set("dot", js.undefined)
+    def setDots(value: CSSProperties): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDotActive(value: CSSProperties): Self = this.set("dotActive", value.asInstanceOf[js.Any])
+    def setDotsUndefined: Self = StObject.set(x, "dots", js.undefined)
     
     @scala.inline
-    def deleteDotActive: Self = this.set("dotActive", js.undefined)
+    def setPositionBottom(value: CSSProperties): Self = StObject.set(x, "positionBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDots(value: CSSProperties): Self = this.set("dots", value.asInstanceOf[js.Any])
+    def setPositionBottomUndefined: Self = StObject.set(x, "positionBottom", js.undefined)
     
     @scala.inline
-    def deleteDots: Self = this.set("dots", js.undefined)
+    def setPositionStatic(value: CSSProperties): Self = StObject.set(x, "positionStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionBottom(value: CSSProperties): Self = this.set("positionBottom", value.asInstanceOf[js.Any])
+    def setPositionStaticUndefined: Self = StObject.set(x, "positionStatic", js.undefined)
     
     @scala.inline
-    def deletePositionBottom: Self = this.set("positionBottom", js.undefined)
+    def setPositionTop(value: CSSProperties): Self = StObject.set(x, "positionTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionStatic(value: CSSProperties): Self = this.set("positionStatic", value.asInstanceOf[js.Any])
+    def setPositionTopUndefined: Self = StObject.set(x, "positionTop", js.undefined)
     
     @scala.inline
-    def deletePositionStatic: Self = this.set("positionStatic", js.undefined)
+    def setProgress(value: CSSProperties): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionTop(value: CSSProperties): Self = this.set("positionTop", value.asInstanceOf[js.Any])
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def deletePositionTop: Self = this.set("positionTop", js.undefined)
+    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: CSSProperties): Self = this.set("progress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
-    
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

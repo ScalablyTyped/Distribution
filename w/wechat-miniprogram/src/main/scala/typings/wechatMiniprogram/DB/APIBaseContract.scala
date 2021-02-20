@@ -1,6 +1,7 @@
 package typings.wechatMiniprogram.DB
 
 import typings.wechatMiniprogram.IAPIParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A contract that all API provider must adhere to
   */
 @js.native
-trait APIBaseContract[PromiseReturn, CallbackReturn, Param /* <: IAPIParam[_] */, Context] extends js.Object {
+trait APIBaseContract[PromiseReturn, CallbackReturn, Param /* <: IAPIParam[_] */, Context] extends StObject {
   
   /**
     * In case of callback-style invocation, this function will be called
@@ -36,30 +37,18 @@ object APIBaseContract {
   }
   
   @scala.inline
-  implicit class APIBaseContractOps[Self <: APIBaseContract[_, _, _, _], PromiseReturn, CallbackReturn, Param /* <: IAPIParam[_] */, Context] (val x: Self with (APIBaseContract[PromiseReturn, CallbackReturn, Param, Context])) extends AnyVal {
+  implicit class APIBaseContractMutableBuilder[Self <: APIBaseContract[_, _, _, _], PromiseReturn, CallbackReturn, Param /* <: IAPIParam[_] */, Context] (val x: Self with (APIBaseContract[PromiseReturn, CallbackReturn, Param, Context])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetCallbackReturn(value: (Param, Context) => CallbackReturn): Self = StObject.set(x, "getCallbackReturn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetContext(value: Param => Context): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFinalParam(value: (Param, Context) => js.Any): Self = StObject.set(x, "getFinalParam", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetCallbackReturn(value: (Param, Context) => CallbackReturn): Self = this.set("getCallbackReturn", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetContext(value: Param => Context): Self = this.set("getContext", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetFinalParam(value: (Param, Context) => js.Any): Self = this.set("getFinalParam", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRun(value: js.Any => js.Promise[PromiseReturn]): Self = this.set("run", js.Any.fromFunction1(value))
+    def setRun(value: js.Any => js.Promise[PromiseReturn]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
   }
 }

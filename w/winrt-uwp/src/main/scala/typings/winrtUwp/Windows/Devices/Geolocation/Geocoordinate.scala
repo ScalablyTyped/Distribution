@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information for identifying a geographic location. */
 @js.native
-trait Geocoordinate extends js.Object {
+trait Geocoordinate extends StObject {
   
   /** The accuracy of the location in meters. */
   var accuracy: Double = js.native
@@ -67,54 +68,42 @@ object Geocoordinate {
   }
   
   @scala.inline
-  implicit class GeocoordinateOps[Self <: Geocoordinate] (val x: Self) extends AnyVal {
+  implicit class GeocoordinateMutableBuilder[Self <: Geocoordinate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitudeAccuracy(value: Double): Self = this.set("altitudeAccuracy", value.asInstanceOf[js.Any])
+    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setPoint(value: Geopoint): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    def setPositionSource(value: PositionSource): Self = StObject.set(x, "positionSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    def setPositionSourceTimestamp(value: Date): Self = StObject.set(x, "positionSourceTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: Geopoint): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setSatelliteData(value: GeocoordinateSatelliteData): Self = StObject.set(x, "satelliteData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionSource(value: PositionSource): Self = this.set("positionSource", value.asInstanceOf[js.Any])
+    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositionSourceTimestamp(value: Date): Self = this.set("positionSourceTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSatelliteData(value: GeocoordinateSatelliteData): Self = this.set("satelliteData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

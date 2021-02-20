@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,42 +40,30 @@ object ImagingManifestStudySeries {
   }
   
   @scala.inline
-  implicit class ImagingManifestStudySeriesOps[Self <: ImagingManifestStudySeries] (val x: Self) extends AnyVal {
+  implicit class ImagingManifestStudySeriesMutableBuilder[Self <: ImagingManifestStudySeries] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceVarargs(value: ImagingManifestStudySeriesInstance*): Self = this.set("instance", js.Array(value :_*))
+    def setInstance(value: js.Array[ImagingManifestStudySeriesInstance]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: js.Array[ImagingManifestStudySeriesInstance]): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setInstanceVarargs(value: ImagingManifestStudySeriesInstance*): Self = StObject.set(x, "instance", js.Array(value :_*))
     
     @scala.inline
-    def setUid(value: oid): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: oid): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_uid(value: Element): Self = this.set("_uid", value.asInstanceOf[js.Any])
+    def set_uid(value: Element): Self = StObject.set(x, "_uid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_uid: Self = this.set("_uid", js.undefined)
-    
-    @scala.inline
-    def setEndpointVarargs(value: Reference*): Self = this.set("endpoint", js.Array(value :_*))
-    
-    @scala.inline
-    def setEndpoint(value: js.Array[Reference]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    def set_uidUndefined: Self = StObject.set(x, "_uid", js.undefined)
   }
 }

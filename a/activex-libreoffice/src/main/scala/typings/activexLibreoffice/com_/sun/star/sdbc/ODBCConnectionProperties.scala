@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.sdbc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,39 +65,27 @@ object ODBCConnectionProperties {
   }
   
   @scala.inline
-  implicit class ODBCConnectionPropertiesOps[Self <: ODBCConnectionProperties] (val x: Self) extends AnyVal {
+  implicit class ODBCConnectionPropertiesMutableBuilder[Self <: ODBCConnectionProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRetrievingStatement(value: String): Self = StObject.set(x, "AutoRetrievingStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharSet(value: String): Self = StObject.set(x, "CharSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAutoRetrievingEnabled(value: Boolean): Self = StObject.set(x, "IsAutoRetrievingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoRetrievingStatement(value: String): Self = this.set("AutoRetrievingStatement", value.asInstanceOf[js.Any])
+    def setParameterNameSubstitution(value: Boolean): Self = StObject.set(x, "ParameterNameSubstitution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharSet(value: String): Self = this.set("CharSet", value.asInstanceOf[js.Any])
+    def setSilent(value: Boolean): Self = StObject.set(x, "Silent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoRetrievingEnabled(value: Boolean): Self = this.set("IsAutoRetrievingEnabled", value.asInstanceOf[js.Any])
+    def setTimeout(value: Double): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameterNameSubstitution(value: Boolean): Self = this.set("ParameterNameSubstitution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSilent(value: Boolean): Self = this.set("Silent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("Timeout", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseCatalog(value: Boolean): Self = this.set("UseCatalog", value.asInstanceOf[js.Any])
+    def setUseCatalog(value: Boolean): Self = StObject.set(x, "UseCatalog", value.asInstanceOf[js.Any])
   }
 }

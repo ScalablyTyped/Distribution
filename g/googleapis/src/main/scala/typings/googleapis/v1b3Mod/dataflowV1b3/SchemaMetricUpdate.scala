@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Describes the state of a metric.
   */
 @js.native
-trait SchemaMetricUpdate extends js.Object {
+trait SchemaMetricUpdate extends StObject {
   
   /**
     * True if this metric is reported as the total cumulative aggregate value
@@ -97,84 +98,72 @@ object SchemaMetricUpdate {
   }
   
   @scala.inline
-  implicit class SchemaMetricUpdateOps[Self <: SchemaMetricUpdate] (val x: Self) extends AnyVal {
+  implicit class SchemaMetricUpdateMutableBuilder[Self <: SchemaMetricUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDistribution(value: js.Any): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCumulative(value: Boolean): Self = this.set("cumulative", value.asInstanceOf[js.Any])
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def deleteCumulative: Self = this.set("cumulative", js.undefined)
+    def setGauge(value: js.Any): Self = StObject.set(x, "gauge", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: js.Any): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    def setGaugeUndefined: Self = StObject.set(x, "gauge", js.undefined)
     
     @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGauge(value: js.Any): Self = this.set("gauge", value.asInstanceOf[js.Any])
+    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
     @scala.inline
-    def deleteGauge: Self = this.set("gauge", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInternal(value: js.Any): Self = this.set("internal", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInternal: Self = this.set("internal", js.undefined)
+    def setMeanCount(value: js.Any): Self = StObject.set(x, "meanCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setMeanCountUndefined: Self = StObject.set(x, "meanCount", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setMeanSum(value: js.Any): Self = StObject.set(x, "meanSum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanCount(value: js.Any): Self = this.set("meanCount", value.asInstanceOf[js.Any])
+    def setMeanSumUndefined: Self = StObject.set(x, "meanSum", js.undefined)
     
     @scala.inline
-    def deleteMeanCount: Self = this.set("meanCount", js.undefined)
+    def setName(value: SchemaMetricStructuredName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeanSum(value: js.Any): Self = this.set("meanSum", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteMeanSum: Self = this.set("meanSum", js.undefined)
+    def setScalar(value: js.Any): Self = StObject.set(x, "scalar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: SchemaMetricStructuredName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setScalarUndefined: Self = StObject.set(x, "scalar", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalar(value: js.Any): Self = this.set("scalar", value.asInstanceOf[js.Any])
+    def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
     @scala.inline
-    def deleteScalar: Self = this.set("scalar", js.undefined)
+    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: js.Any): Self = this.set("set", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSet: Self = this.set("set", js.undefined)
-    
-    @scala.inline
-    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

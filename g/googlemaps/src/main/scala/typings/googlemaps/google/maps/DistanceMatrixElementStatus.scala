@@ -1,11 +1,12 @@
 package typings.googlemaps.google.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DistanceMatrixElementStatus extends js.Object
+sealed trait DistanceMatrixElementStatus extends StObject
 /**
   * The element-level status about a particular origin-destination pairing returned by the
   * {@link DistanceMatrixService} upon completion of a distance matrix request.
@@ -13,7 +14,7 @@ sealed trait DistanceMatrixElementStatus extends js.Object
   */
 @JSGlobal("google.maps.DistanceMatrixElementStatus")
 @js.native
-object DistanceMatrixElementStatus extends js.Object {
+object DistanceMatrixElementStatus extends StObject {
   
   /**
     * The origin and/or destination of this pairing could not be geocoded.

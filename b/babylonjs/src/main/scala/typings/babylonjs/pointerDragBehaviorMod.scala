@@ -8,14 +8,14 @@ import typings.babylonjs.behaviorMod.Behavior
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.rayMod.Ray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", JSImport.Namespace)
-@js.native
-object pointerDragBehaviorMod extends js.Object {
+object pointerDragBehaviorMod {
   
+  @JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", "PointerDragBehavior")
   @js.native
   /**
     * Creates a pointer drag behavior that can be attached to a mesh
@@ -206,11 +206,22 @@ object pointerDragBehaviorMod extends js.Object {
     def validateDrag(targetPosition: Vector3): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object PointerDragBehavior extends js.Object {
+  object PointerDragBehavior {
     
-    var _AnyMouseID: js.Any = js.native
+    @JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", "PointerDragBehavior")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _planeScene: js.Any = js.native
+    @JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", "PointerDragBehavior._AnyMouseID")
+    @js.native
+    def _AnyMouseID: js.Any = js.native
+    @scala.inline
+    def _AnyMouseID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AnyMouseID")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Behaviors/Meshes/pointerDragBehavior", "PointerDragBehavior._planeScene")
+    @js.native
+    def _planeScene: js.Any = js.native
+    @scala.inline
+    def _planeScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_planeScene")(x.asInstanceOf[js.Any])
   }
 }

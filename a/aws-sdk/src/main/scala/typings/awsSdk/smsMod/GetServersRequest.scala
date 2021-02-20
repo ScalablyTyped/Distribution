@@ -1,11 +1,12 @@
 package typings.awsSdk.smsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetServersRequest extends js.Object {
+trait GetServersRequest extends StObject {
   
   /**
     * The maximum number of results to return in a single call. The default value is 50. To retrieve the remaining results, make another call with the returned NextToken value.
@@ -31,39 +32,27 @@ object GetServersRequest {
   }
   
   @scala.inline
-  implicit class GetServersRequestOps[Self <: GetServersRequest] (val x: Self) extends AnyVal {
+  implicit class GetServersRequestMutableBuilder[Self <: GetServersRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    def setVmServerAddressList(value: VmServerAddressList): Self = StObject.set(x, "vmServerAddressList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    def setVmServerAddressListUndefined: Self = StObject.set(x, "vmServerAddressList", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
-    
-    @scala.inline
-    def setVmServerAddressListVarargs(value: VmServerAddress*): Self = this.set("vmServerAddressList", js.Array(value :_*))
-    
-    @scala.inline
-    def setVmServerAddressList(value: VmServerAddressList): Self = this.set("vmServerAddressList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVmServerAddressList: Self = this.set("vmServerAddressList", js.undefined)
+    def setVmServerAddressListVarargs(value: VmServerAddress*): Self = StObject.set(x, "vmServerAddressList", js.Array(value :_*))
   }
 }

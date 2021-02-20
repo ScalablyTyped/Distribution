@@ -1,5 +1,6 @@
 package typings.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * SearchAttribute...
   */
 @js.native
-trait ISearchAttribute extends js.Object {
+trait ISearchAttribute extends StObject {
   
   /**
     * String corresponding to
@@ -32,24 +33,12 @@ object ISearchAttribute {
   }
   
   @scala.inline
-  implicit class ISearchAttributeOps[Self <: ISearchAttribute] (val x: Self) extends AnyVal {
+  implicit class ISearchAttributeMutableBuilder[Self <: ISearchAttribute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setQKey(value: String): Self = StObject.set(x, "qKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setQKey(value: String): Self = this.set("qKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQValue(value: String): Self = this.set("qValue", value.asInstanceOf[js.Any])
+    def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

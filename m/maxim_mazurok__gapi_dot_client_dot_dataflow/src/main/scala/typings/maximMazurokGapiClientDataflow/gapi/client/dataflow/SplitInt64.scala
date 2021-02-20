@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SplitInt64 extends js.Object {
+trait SplitInt64 extends StObject {
   
   /** The high order bits, including the sign: n >> 32. */
   var highBits: js.UndefOr[Double] = js.native
@@ -22,30 +23,18 @@ object SplitInt64 {
   }
   
   @scala.inline
-  implicit class SplitInt64Ops[Self <: SplitInt64] (val x: Self) extends AnyVal {
+  implicit class SplitInt64MutableBuilder[Self <: SplitInt64] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHighBits(value: Double): Self = StObject.set(x, "highBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHighBitsUndefined: Self = StObject.set(x, "highBits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLowBits(value: Double): Self = StObject.set(x, "lowBits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighBits(value: Double): Self = this.set("highBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHighBits: Self = this.set("highBits", js.undefined)
-    
-    @scala.inline
-    def setLowBits(value: Double): Self = this.set("lowBits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLowBits: Self = this.set("lowBits", js.undefined)
+    def setLowBitsUndefined: Self = StObject.set(x, "lowBits", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.imagebuilderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfrastructureConfiguration extends js.Object {
+trait InfrastructureConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration.
@@ -91,114 +92,102 @@ object InfrastructureConfiguration {
   }
   
   @scala.inline
-  implicit class InfrastructureConfigurationOps[Self <: InfrastructureConfiguration] (val x: Self) extends AnyVal {
+  implicit class InfrastructureConfigurationMutableBuilder[Self <: InfrastructureConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArn(value: ImageBuilderArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
     
     @scala.inline
-    def deleteArn: Self = this.set("arn", js.undefined)
+    def setDateUpdated(value: DateTime): Self = StObject.set(x, "dateUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateCreated(value: DateTime): Self = this.set("dateCreated", value.asInstanceOf[js.Any])
+    def setDateUpdatedUndefined: Self = StObject.set(x, "dateUpdated", js.undefined)
     
     @scala.inline
-    def deleteDateCreated: Self = this.set("dateCreated", js.undefined)
+    def setDescription(value: NonEmptyString): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateUpdated(value: DateTime): Self = this.set("dateUpdated", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteDateUpdated: Self = this.set("dateUpdated", js.undefined)
+    def setInstanceProfileName(value: NonEmptyString): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: NonEmptyString): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setInstanceProfileNameUndefined: Self = StObject.set(x, "instanceProfileName", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setInstanceTypes(value: InstanceTypeList): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceProfileName(value: NonEmptyString): Self = this.set("instanceProfileName", value.asInstanceOf[js.Any])
+    def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
     
     @scala.inline
-    def deleteInstanceProfileName: Self = this.set("instanceProfileName", js.undefined)
+    def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
     
     @scala.inline
-    def setInstanceTypesVarargs(value: InstanceType*): Self = this.set("instanceTypes", js.Array(value :_*))
+    def setKeyPair(value: NonEmptyString): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceTypes(value: InstanceTypeList): Self = this.set("instanceTypes", value.asInstanceOf[js.Any])
+    def setKeyPairUndefined: Self = StObject.set(x, "keyPair", js.undefined)
     
     @scala.inline
-    def deleteInstanceTypes: Self = this.set("instanceTypes", js.undefined)
+    def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyPair(value: NonEmptyString): Self = this.set("keyPair", value.asInstanceOf[js.Any])
+    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
     @scala.inline
-    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogging(value: Logging): Self = this.set("logging", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteLogging: Self = this.set("logging", js.undefined)
+    def setResourceTags(value: ResourceTagMap): Self = StObject.set(x, "resourceTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: ResourceName): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setResourceTagsUndefined: Self = StObject.set(x, "resourceTags", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTags(value: ResourceTagMap): Self = this.set("resourceTags", value.asInstanceOf[js.Any])
+    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
     
     @scala.inline
-    def deleteResourceTags: Self = this.set("resourceTags", js.undefined)
+    def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
     
     @scala.inline
-    def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    def setSnsTopicArn(value: NonEmptyString): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
     
     @scala.inline
-    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    def setSubnetId(value: NonEmptyString): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSnsTopicArn(value: NonEmptyString): Self = this.set("snsTopicArn", value.asInstanceOf[js.Any])
+    def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     
     @scala.inline
-    def deleteSnsTopicArn: Self = this.set("snsTopicArn", js.undefined)
+    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubnetId(value: NonEmptyString): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     @scala.inline
-    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    def setTerminateInstanceOnFailure(value: NullableBoolean): Self = StObject.set(x, "terminateInstanceOnFailure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("tags", js.undefined)
-    
-    @scala.inline
-    def setTerminateInstanceOnFailure(value: NullableBoolean): Self = this.set("terminateInstanceOnFailure", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTerminateInstanceOnFailure: Self = this.set("terminateInstanceOnFailure", js.undefined)
+    def setTerminateInstanceOnFailureUndefined: Self = StObject.set(x, "terminateInstanceOnFailure", js.undefined)
   }
 }

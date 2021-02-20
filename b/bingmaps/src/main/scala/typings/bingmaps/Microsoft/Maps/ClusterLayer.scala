@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,39 +70,27 @@ object ClusterLayer {
   }
   
   @scala.inline
-  implicit class ClusterLayerOps[Self <: ClusterLayer] (val x: Self) extends AnyVal {
+  implicit class ClusterLayerMutableBuilder[Self <: ClusterLayer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetClusterPushpinByGridKey(value: Double => ClusterPushpin | Pushpin): Self = StObject.set(x, "getClusterPushpinByGridKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDisplayedPushpins(value: () => js.Array[Pushpin]): Self = StObject.set(x, "getDisplayedPushpins", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetOptions(value: () => IClusterLayerOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClusterPushpinByGridKey(value: Double => ClusterPushpin | Pushpin): Self = this.set("getClusterPushpinByGridKey", js.Any.fromFunction1(value))
+    def setGetPushpins(value: () => js.Array[Pushpin]): Self = StObject.set(x, "getPushpins", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetDisplayedPushpins(value: () => js.Array[Pushpin]): Self = this.set("getDisplayedPushpins", js.Any.fromFunction0(value))
+    def setGetPushpinsByGridKey(value: Double => js.Array[Pushpin]): Self = StObject.set(x, "getPushpinsByGridKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetOptions(value: () => IClusterLayerOptions): Self = this.set("getOptions", js.Any.fromFunction0(value))
+    def setSetOptions(value: IClusterLayerOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetPushpins(value: () => js.Array[Pushpin]): Self = this.set("getPushpins", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetPushpinsByGridKey(value: Double => js.Array[Pushpin]): Self = this.set("getPushpinsByGridKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: IClusterLayerOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPushpins(value: js.Array[Pushpin] => Unit): Self = this.set("setPushpins", js.Any.fromFunction1(value))
+    def setSetPushpins(value: js.Array[Pushpin] => Unit): Self = StObject.set(x, "setPushpins", js.Any.fromFunction1(value))
   }
 }

@@ -1,11 +1,12 @@
 package typings.mongodb.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncludeArrayIndex extends js.Object {
+trait IncludeArrayIndex extends StObject {
   
   var includeArrayIndex: js.UndefOr[String] = js.native
   
@@ -22,33 +23,21 @@ object IncludeArrayIndex {
   }
   
   @scala.inline
-  implicit class IncludeArrayIndexOps[Self <: IncludeArrayIndex] (val x: Self) extends AnyVal {
+  implicit class IncludeArrayIndexMutableBuilder[Self <: IncludeArrayIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIncludeArrayIndex(value: String): Self = StObject.set(x, "includeArrayIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncludeArrayIndexUndefined: Self = StObject.set(x, "includeArrayIndex", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setPreserveNullAndEmptyArrays(value: Boolean): Self = StObject.set(x, "preserveNullAndEmptyArrays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeArrayIndex(value: String): Self = this.set("includeArrayIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeArrayIndex: Self = this.set("includeArrayIndex", js.undefined)
-    
-    @scala.inline
-    def setPreserveNullAndEmptyArrays(value: Boolean): Self = this.set("preserveNullAndEmptyArrays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePreserveNullAndEmptyArrays: Self = this.set("preserveNullAndEmptyArrays", js.undefined)
+    def setPreserveNullAndEmptyArraysUndefined: Self = StObject.set(x, "preserveNullAndEmptyArrays", js.undefined)
   }
 }

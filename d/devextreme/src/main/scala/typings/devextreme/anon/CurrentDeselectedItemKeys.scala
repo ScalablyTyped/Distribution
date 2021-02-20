@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxFileManager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CurrentDeselectedItemKeys extends js.Object {
+trait CurrentDeselectedItemKeys extends StObject {
   
   var component: js.UndefOr[dxFileManager] = js.native
   
@@ -32,72 +33,60 @@ object CurrentDeselectedItemKeys {
   }
   
   @scala.inline
-  implicit class CurrentDeselectedItemKeysOps[Self <: CurrentDeselectedItemKeys] (val x: Self) extends AnyVal {
+  implicit class CurrentDeselectedItemKeysMutableBuilder[Self <: CurrentDeselectedItemKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComponent(value: dxFileManager): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrentDeselectedItemKeys(value: js.Array[String]): Self = StObject.set(x, "currentDeselectedItemKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponent(value: dxFileManager): Self = this.set("component", value.asInstanceOf[js.Any])
+    def setCurrentDeselectedItemKeysUndefined: Self = StObject.set(x, "currentDeselectedItemKeys", js.undefined)
     
     @scala.inline
-    def deleteComponent: Self = this.set("component", js.undefined)
+    def setCurrentDeselectedItemKeysVarargs(value: String*): Self = StObject.set(x, "currentDeselectedItemKeys", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentDeselectedItemKeysVarargs(value: String*): Self = this.set("currentDeselectedItemKeys", js.Array(value :_*))
+    def setCurrentSelectedItemKeys(value: js.Array[String]): Self = StObject.set(x, "currentSelectedItemKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentDeselectedItemKeys(value: js.Array[String]): Self = this.set("currentDeselectedItemKeys", value.asInstanceOf[js.Any])
+    def setCurrentSelectedItemKeysUndefined: Self = StObject.set(x, "currentSelectedItemKeys", js.undefined)
     
     @scala.inline
-    def deleteCurrentDeselectedItemKeys: Self = this.set("currentDeselectedItemKeys", js.undefined)
+    def setCurrentSelectedItemKeysVarargs(value: String*): Self = StObject.set(x, "currentSelectedItemKeys", js.Array(value :_*))
     
     @scala.inline
-    def setCurrentSelectedItemKeysVarargs(value: String*): Self = this.set("currentSelectedItemKeys", js.Array(value :_*))
+    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentSelectedItemKeys(value: js.Array[String]): Self = this.set("currentSelectedItemKeys", value.asInstanceOf[js.Any])
+    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
     @scala.inline
-    def deleteCurrentSelectedItemKeys: Self = this.set("currentSelectedItemKeys", js.undefined)
+    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElement(value: dxElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def deleteElement: Self = this.set("element", js.undefined)
+    def setSelectedItemKeys(value: js.Array[String]): Self = StObject.set(x, "selectedItemKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    def setSelectedItemKeysUndefined: Self = StObject.set(x, "selectedItemKeys", js.undefined)
     
     @scala.inline
-    def deleteModel: Self = this.set("model", js.undefined)
+    def setSelectedItemKeysVarargs(value: String*): Self = StObject.set(x, "selectedItemKeys", js.Array(value :_*))
     
     @scala.inline
-    def setSelectedItemKeysVarargs(value: String*): Self = this.set("selectedItemKeys", js.Array(value :_*))
+    def setSelectedItems(value: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelectedItemKeys(value: js.Array[String]): Self = this.set("selectedItemKeys", value.asInstanceOf[js.Any])
+    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
     @scala.inline
-    def deleteSelectedItemKeys: Self = this.set("selectedItemKeys", js.undefined)
-    
-    @scala.inline
-    def setSelectedItemsVarargs(value: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem*): Self = this.set("selectedItems", js.Array(value :_*))
-    
-    @scala.inline
-    def setSelectedItems(value: js.Array[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem]): Self = this.set("selectedItems", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelectedItems: Self = this.set("selectedItems", js.undefined)
+    def setSelectedItemsVarargs(value: typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
   }
 }

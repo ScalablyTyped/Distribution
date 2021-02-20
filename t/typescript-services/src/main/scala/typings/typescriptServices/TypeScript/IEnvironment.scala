@@ -3,12 +3,13 @@ package typings.typescriptServices.TypeScript
 import typings.std.ITextWriter
 import typings.std.RegExp
 import typings.typescriptServices.anon.Recursive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEnvironment extends js.Object {
+trait IEnvironment extends StObject {
   
   var arguments: js.Array[String] = js.native
   

@@ -1,12 +1,15 @@
 package typings.iban
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var IBAN: IBANStatic = js.native
+  @JSGlobal("IBAN")
+  @js.native
+  def IBAN: IBANStatic = js.native
+  @scala.inline
+  def IBAN_=(x: IBANStatic): Unit = js.Dynamic.global.updateDynamic("IBAN")(x.asInstanceOf[js.Any])
 }

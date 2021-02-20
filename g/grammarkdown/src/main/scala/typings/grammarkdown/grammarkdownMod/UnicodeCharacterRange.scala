@@ -1,6 +1,7 @@
 package typings.grammarkdown.grammarkdownMod
 
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.ThroughKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("grammarkdown/dist/grammarkdown", "UnicodeCharacterRange")
 @js.native
 class UnicodeCharacterRange protected ()
-  extends Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.UnicodeCharacterRange] {
+  extends LexicalSymbolBase[typings.grammarkdown.grammarkdownMod.SyntaxKind.UnicodeCharacterRange] {
   def this(
     left: UnicodeCharacterLiteral,
     throughKeyword: Token[ThroughKeyword],

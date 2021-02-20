@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessPolicySummary extends js.Object {
+trait AccessPolicySummary extends StObject {
   
   /**
     * The date the access policy was created, in Unix epoch time.
@@ -46,42 +47,30 @@ object AccessPolicySummary {
   }
   
   @scala.inline
-  implicit class AccessPolicySummaryOps[Self <: AccessPolicySummary] (val x: Self) extends AnyVal {
+  implicit class AccessPolicySummaryMutableBuilder[Self <: AccessPolicySummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: ID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentity(value: Identity): Self = this.set("identity", value.asInstanceOf[js.Any])
+    def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPermission(value: Permission): Self = this.set("permission", value.asInstanceOf[js.Any])
+    def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     
     @scala.inline
-    def setResource(value: Resource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setPermission(value: Permission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: Timestamp): Self = this.set("creationDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
-    
-    @scala.inline
-    def setLastUpdateDate(value: Timestamp): Self = this.set("lastUpdateDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastUpdateDate: Self = this.set("lastUpdateDate", js.undefined)
+    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

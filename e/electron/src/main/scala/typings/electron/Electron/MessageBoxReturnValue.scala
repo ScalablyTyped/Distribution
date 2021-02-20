@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageBoxReturnValue extends js.Object {
+trait MessageBoxReturnValue extends StObject {
   
   /**
     * The checked state of the checkbox if `checkboxLabel` was set. Otherwise `false`.
@@ -26,24 +27,12 @@ object MessageBoxReturnValue {
   }
   
   @scala.inline
-  implicit class MessageBoxReturnValueOps[Self <: MessageBoxReturnValue] (val x: Self) extends AnyVal {
+  implicit class MessageBoxReturnValueMutableBuilder[Self <: MessageBoxReturnValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCheckboxChecked(value: Boolean): Self = this.set("checkboxChecked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: Double): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -2,12 +2,13 @@ package typings.firebaseAuthTypes.mod
 
 import typings.firebaseAuthTypes.anon.BundleId
 import typings.firebaseAuthTypes.anon.InstallApp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionCodeSettings extends js.Object {
+trait ActionCodeSettings extends StObject {
   
   var android: js.UndefOr[InstallApp] = js.native
   
@@ -28,45 +29,33 @@ object ActionCodeSettings {
   }
   
   @scala.inline
-  implicit class ActionCodeSettingsOps[Self <: ActionCodeSettings] (val x: Self) extends AnyVal {
+  implicit class ActionCodeSettingsMutableBuilder[Self <: ActionCodeSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndroid(value: InstallApp): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDynamicLinkDomain(value: String): Self = StObject.set(x, "dynamicLinkDomain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setDynamicLinkDomainUndefined: Self = StObject.set(x, "dynamicLinkDomain", js.undefined)
     
     @scala.inline
-    def setAndroid(value: InstallApp): Self = this.set("android", value.asInstanceOf[js.Any])
+    def setHandleCodeInApp(value: Boolean): Self = StObject.set(x, "handleCodeInApp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAndroid: Self = this.set("android", js.undefined)
+    def setHandleCodeInAppUndefined: Self = StObject.set(x, "handleCodeInApp", js.undefined)
     
     @scala.inline
-    def setDynamicLinkDomain(value: String): Self = this.set("dynamicLinkDomain", value.asInstanceOf[js.Any])
+    def setIOS(value: BundleId): Self = StObject.set(x, "iOS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDynamicLinkDomain: Self = this.set("dynamicLinkDomain", js.undefined)
+    def setIOSUndefined: Self = StObject.set(x, "iOS", js.undefined)
     
     @scala.inline
-    def setHandleCodeInApp(value: Boolean): Self = this.set("handleCodeInApp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHandleCodeInApp: Self = this.set("handleCodeInApp", js.undefined)
-    
-    @scala.inline
-    def setIOS(value: BundleId): Self = this.set("iOS", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIOS: Self = this.set("iOS", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
 import typings.vsoNodeApi.formInputInterfacesMod.InputValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValueDefinition extends js.Object {
+trait ValueDefinition extends StObject {
   
   /**
     * Gets or sets the data source.
@@ -32,30 +33,18 @@ object ValueDefinition {
   }
   
   @scala.inline
-  implicit class ValueDefinitionOps[Self <: ValueDefinition] (val x: Self) extends AnyVal {
+  implicit class ValueDefinitionMutableBuilder[Self <: ValueDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataSource(value: js.Array[InputValue]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataSourceVarargs(value: InputValue*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceVarargs(value: InputValue*): Self = this.set("dataSource", js.Array(value :_*))
-    
-    @scala.inline
-    def setDataSource(value: js.Array[InputValue]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndPoint(value: String): Self = this.set("endPoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultTemplate(value: String): Self = this.set("resultTemplate", value.asInstanceOf[js.Any])
+    def setResultTemplate(value: String): Self = StObject.set(x, "resultTemplate", value.asInstanceOf[js.Any])
   }
 }

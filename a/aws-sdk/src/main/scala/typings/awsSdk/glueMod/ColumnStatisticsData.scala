@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ColumnStatisticsData extends js.Object {
+trait ColumnStatisticsData extends StObject {
   
   /**
     * Binary column statistics data.
@@ -56,63 +57,51 @@ object ColumnStatisticsData {
   }
   
   @scala.inline
-  implicit class ColumnStatisticsDataOps[Self <: ColumnStatisticsData] (val x: Self) extends AnyVal {
+  implicit class ColumnStatisticsDataMutableBuilder[Self <: ColumnStatisticsData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinaryColumnStatisticsData(value: BinaryColumnStatisticsData): Self = StObject.set(x, "BinaryColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBinaryColumnStatisticsDataUndefined: Self = StObject.set(x, "BinaryColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBooleanColumnStatisticsData(value: BooleanColumnStatisticsData): Self = StObject.set(x, "BooleanColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ColumnStatisticsType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setBooleanColumnStatisticsDataUndefined: Self = StObject.set(x, "BooleanColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def setBinaryColumnStatisticsData(value: BinaryColumnStatisticsData): Self = this.set("BinaryColumnStatisticsData", value.asInstanceOf[js.Any])
+    def setDateColumnStatisticsData(value: DateColumnStatisticsData): Self = StObject.set(x, "DateColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBinaryColumnStatisticsData: Self = this.set("BinaryColumnStatisticsData", js.undefined)
+    def setDateColumnStatisticsDataUndefined: Self = StObject.set(x, "DateColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def setBooleanColumnStatisticsData(value: BooleanColumnStatisticsData): Self = this.set("BooleanColumnStatisticsData", value.asInstanceOf[js.Any])
+    def setDecimalColumnStatisticsData(value: DecimalColumnStatisticsData): Self = StObject.set(x, "DecimalColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBooleanColumnStatisticsData: Self = this.set("BooleanColumnStatisticsData", js.undefined)
+    def setDecimalColumnStatisticsDataUndefined: Self = StObject.set(x, "DecimalColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def setDateColumnStatisticsData(value: DateColumnStatisticsData): Self = this.set("DateColumnStatisticsData", value.asInstanceOf[js.Any])
+    def setDoubleColumnStatisticsData(value: DoubleColumnStatisticsData): Self = StObject.set(x, "DoubleColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDateColumnStatisticsData: Self = this.set("DateColumnStatisticsData", js.undefined)
+    def setDoubleColumnStatisticsDataUndefined: Self = StObject.set(x, "DoubleColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def setDecimalColumnStatisticsData(value: DecimalColumnStatisticsData): Self = this.set("DecimalColumnStatisticsData", value.asInstanceOf[js.Any])
+    def setLongColumnStatisticsData(value: LongColumnStatisticsData): Self = StObject.set(x, "LongColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDecimalColumnStatisticsData: Self = this.set("DecimalColumnStatisticsData", js.undefined)
+    def setLongColumnStatisticsDataUndefined: Self = StObject.set(x, "LongColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def setDoubleColumnStatisticsData(value: DoubleColumnStatisticsData): Self = this.set("DoubleColumnStatisticsData", value.asInstanceOf[js.Any])
+    def setStringColumnStatisticsData(value: StringColumnStatisticsData): Self = StObject.set(x, "StringColumnStatisticsData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDoubleColumnStatisticsData: Self = this.set("DoubleColumnStatisticsData", js.undefined)
+    def setStringColumnStatisticsDataUndefined: Self = StObject.set(x, "StringColumnStatisticsData", js.undefined)
     
     @scala.inline
-    def setLongColumnStatisticsData(value: LongColumnStatisticsData): Self = this.set("LongColumnStatisticsData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLongColumnStatisticsData: Self = this.set("LongColumnStatisticsData", js.undefined)
-    
-    @scala.inline
-    def setStringColumnStatisticsData(value: StringColumnStatisticsData): Self = this.set("StringColumnStatisticsData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringColumnStatisticsData: Self = this.set("StringColumnStatisticsData", js.undefined)
+    def setType(value: ColumnStatisticsType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

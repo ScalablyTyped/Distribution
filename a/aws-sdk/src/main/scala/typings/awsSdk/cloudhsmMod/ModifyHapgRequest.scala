@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ModifyHapgRequest extends js.Object {
+trait ModifyHapgRequest extends StObject {
   
   /**
     * The ARN of the high-availability partition group to modify.
@@ -31,36 +32,24 @@ object ModifyHapgRequest {
   }
   
   @scala.inline
-  implicit class ModifyHapgRequestOps[Self <: ModifyHapgRequest] (val x: Self) extends AnyVal {
+  implicit class ModifyHapgRequestMutableBuilder[Self <: ModifyHapgRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHapgArn(value: HapgArn): Self = StObject.set(x, "HapgArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def setHapgArn(value: HapgArn): Self = this.set("HapgArn", value.asInstanceOf[js.Any])
+    def setPartitionSerialList(value: PartitionSerialList): Self = StObject.set(x, "PartitionSerialList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Label): Self = this.set("Label", value.asInstanceOf[js.Any])
+    def setPartitionSerialListUndefined: Self = StObject.set(x, "PartitionSerialList", js.undefined)
     
     @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
-    
-    @scala.inline
-    def setPartitionSerialListVarargs(value: PartitionSerial*): Self = this.set("PartitionSerialList", js.Array(value :_*))
-    
-    @scala.inline
-    def setPartitionSerialList(value: PartitionSerialList): Self = this.set("PartitionSerialList", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePartitionSerialList: Self = this.set("PartitionSerialList", js.undefined)
+    def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value :_*))
   }
 }

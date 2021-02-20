@@ -1,14 +1,12 @@
 package typings.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GmailImageAdBuilder[GmailImageAd]
-  extends AdWordsBuilder[GmailImageAdBuilder[GmailImageAd]]
-     with hasFinalUrlBuilder[GmailImageAdBuilder[GmailImageAd]]
-     with hasTrackingTemplateBuilder[GmailImageAdBuilder[GmailImageAd]] {
+trait GmailImageAdBuilder[GmailImageAd] extends AdBuilder[GmailImageAdBuilder[GmailImageAd]] {
   
   def withAdvertiser(advertiser: String): GmailImageAdBuilder[GmailImageAd] = js.native
   
@@ -46,39 +44,27 @@ object GmailImageAdBuilder {
   }
   
   @scala.inline
-  implicit class GmailImageAdBuilderOps[Self <: GmailImageAdBuilder[_], GmailImageAd] (val x: Self with GmailImageAdBuilder[GmailImageAd]) extends AnyVal {
+  implicit class GmailImageAdBuilderMutableBuilder[Self <: GmailImageAdBuilder[_], GmailImageAd] (val x: Self with GmailImageAdBuilder[GmailImageAd]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWithAdvertiser(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setWithDescription(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWithDisplayUrl(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithAdvertiser(value: String => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withAdvertiser", js.Any.fromFunction1(value))
+    def setWithImage(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withImage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDescription(value: String => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withDescription", js.Any.fromFunction1(value))
+    def setWithLogo(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withLogo", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithDisplayUrl(value: String => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withDisplayUrl", js.Any.fromFunction1(value))
+    def setWithName(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setWithImage(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withImage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithLogo(value: Media => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withLogo", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithName(value: String => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withName", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWithSubject(value: String => GmailImageAdBuilder[GmailImageAd]): Self = this.set("withSubject", js.Any.fromFunction1(value))
+    def setWithSubject(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withSubject", js.Any.fromFunction1(value))
   }
 }

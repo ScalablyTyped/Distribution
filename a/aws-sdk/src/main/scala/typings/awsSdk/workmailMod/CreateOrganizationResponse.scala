@@ -1,11 +1,12 @@
 package typings.awsSdk.workmailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateOrganizationResponse extends js.Object {
+trait CreateOrganizationResponse extends StObject {
   
   /**
     * The organization ID.
@@ -21,24 +22,12 @@ object CreateOrganizationResponse {
   }
   
   @scala.inline
-  implicit class CreateOrganizationResponseOps[Self <: CreateOrganizationResponse] (val x: Self) extends AnyVal {
+  implicit class CreateOrganizationResponseMutableBuilder[Self <: CreateOrganizationResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = this.set("OrganizationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrganizationId: Self = this.set("OrganizationId", js.undefined)
+    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
   }
 }

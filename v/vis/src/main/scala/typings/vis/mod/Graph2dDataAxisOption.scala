@@ -1,11 +1,12 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Graph2dDataAxisOption extends js.Object {
+trait Graph2dDataAxisOption extends StObject {
   
   var alignZeros: js.UndefOr[Boolean] = js.native
   
@@ -44,102 +45,90 @@ object Graph2dDataAxisOption {
   }
   
   @scala.inline
-  implicit class Graph2dDataAxisOptionOps[Self <: Graph2dDataAxisOption] (val x: Self) extends AnyVal {
+  implicit class Graph2dDataAxisOptionMutableBuilder[Self <: Graph2dDataAxisOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlignZeros(value: Boolean): Self = StObject.set(x, "alignZeros", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignZerosUndefined: Self = StObject.set(x, "alignZeros", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIconWidth(value: Double): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlignZeros(value: Boolean): Self = this.set("alignZeros", value.asInstanceOf[js.Any])
+    def setIconWidthUndefined: Self = StObject.set(x, "iconWidth", js.undefined)
     
     @scala.inline
-    def deleteAlignZeros: Self = this.set("alignZeros", js.undefined)
+    def setIcons(value: Boolean): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIconWidth(value: Double): Self = this.set("iconWidth", value.asInstanceOf[js.Any])
+    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def deleteIconWidth: Self = this.set("iconWidth", js.undefined)
+    def setLabelOffsetX(value: Double): Self = StObject.set(x, "labelOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcons(value: Boolean): Self = this.set("icons", value.asInstanceOf[js.Any])
+    def setLabelOffsetXUndefined: Self = StObject.set(x, "labelOffsetX", js.undefined)
     
     @scala.inline
-    def deleteIcons: Self = this.set("icons", js.undefined)
+    def setLabelOffsetY(value: Double): Self = StObject.set(x, "labelOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOffsetX(value: Double): Self = this.set("labelOffsetX", value.asInstanceOf[js.Any])
+    def setLabelOffsetYUndefined: Self = StObject.set(x, "labelOffsetY", js.undefined)
     
     @scala.inline
-    def deleteLabelOffsetX: Self = this.set("labelOffsetX", js.undefined)
+    def setLeft(value: DataAxisSideOption): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelOffsetY(value: Double): Self = this.set("labelOffsetY", value.asInstanceOf[js.Any])
+    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     @scala.inline
-    def deleteLabelOffsetY: Self = this.set("labelOffsetY", js.undefined)
+    def setMajorLinesOffset(value: Double): Self = StObject.set(x, "majorLinesOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeft(value: DataAxisSideOption): Self = this.set("left", value.asInstanceOf[js.Any])
+    def setMajorLinesOffsetUndefined: Self = StObject.set(x, "majorLinesOffset", js.undefined)
     
     @scala.inline
-    def deleteLeft: Self = this.set("left", js.undefined)
+    def setMinorLinesOffset(value: Double): Self = StObject.set(x, "minorLinesOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMajorLinesOffset(value: Double): Self = this.set("majorLinesOffset", value.asInstanceOf[js.Any])
+    def setMinorLinesOffsetUndefined: Self = StObject.set(x, "minorLinesOffset", js.undefined)
     
     @scala.inline
-    def deleteMajorLinesOffset: Self = this.set("majorLinesOffset", js.undefined)
+    def setOrientation(value: TimelineOptionsOrientationType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinorLinesOffset(value: Double): Self = this.set("minorLinesOffset", value.asInstanceOf[js.Any])
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def deleteMinorLinesOffset: Self = this.set("minorLinesOffset", js.undefined)
+    def setRight(value: DataAxisSideOption): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrientation(value: TimelineOptionsOrientationType): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
     @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setShowMajorLabels(value: Boolean): Self = StObject.set(x, "showMajorLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRight(value: DataAxisSideOption): Self = this.set("right", value.asInstanceOf[js.Any])
+    def setShowMajorLabelsUndefined: Self = StObject.set(x, "showMajorLabels", js.undefined)
     
     @scala.inline
-    def deleteRight: Self = this.set("right", js.undefined)
+    def setShowMinorLabels(value: Boolean): Self = StObject.set(x, "showMinorLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMajorLabels(value: Boolean): Self = this.set("showMajorLabels", value.asInstanceOf[js.Any])
+    def setShowMinorLabelsUndefined: Self = StObject.set(x, "showMinorLabels", js.undefined)
     
     @scala.inline
-    def deleteShowMajorLabels: Self = this.set("showMajorLabels", js.undefined)
+    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowMinorLabels(value: Boolean): Self = this.set("showMinorLabels", value.asInstanceOf[js.Any])
+    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
     @scala.inline
-    def deleteShowMinorLabels: Self = this.set("showMinorLabels", js.undefined)
+    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisible: Self = this.set("visible", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

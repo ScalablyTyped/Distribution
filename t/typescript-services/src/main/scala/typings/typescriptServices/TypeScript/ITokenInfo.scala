@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITokenInfo extends js.Object {
+trait ITokenInfo extends StObject {
   
   var leadingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.native
   
@@ -22,42 +23,30 @@ object ITokenInfo {
   }
   
   @scala.inline
-  implicit class ITokenInfoOps[Self <: ITokenInfo] (val x: Self) extends AnyVal {
+  implicit class ITokenInfoMutableBuilder[Self <: ITokenInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeadingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "leadingTrivia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeadingTriviaUndefined: Self = StObject.set(x, "leadingTrivia", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "leadingTrivia", js.Array(value :_*))
     
     @scala.inline
-    def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = this.set("leadingTrivia", js.Array(value :_*))
+    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeadingTrivia(value: js.Array[ISyntaxTrivia]): Self = this.set("leadingTrivia", value.asInstanceOf[js.Any])
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def deleteLeadingTrivia: Self = this.set("leadingTrivia", js.undefined)
+    def setTrailingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "trailingTrivia", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    def setTrailingTriviaUndefined: Self = StObject.set(x, "trailingTrivia", js.undefined)
     
     @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
-    
-    @scala.inline
-    def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = this.set("trailingTrivia", js.Array(value :_*))
-    
-    @scala.inline
-    def setTrailingTrivia(value: js.Array[ISyntaxTrivia]): Self = this.set("trailingTrivia", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrailingTrivia: Self = this.set("trailingTrivia", js.undefined)
+    def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "trailingTrivia", js.Array(value :_*))
   }
 }

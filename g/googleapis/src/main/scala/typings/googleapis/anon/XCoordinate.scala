@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XCoordinate extends js.Object {
+trait XCoordinate extends StObject {
   
   var id: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object XCoordinate {
   }
   
   @scala.inline
-  implicit class XCoordinateOps[Self <: XCoordinate] (val x: Self) extends AnyVal {
+  implicit class XCoordinateMutableBuilder[Self <: XCoordinate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setXCoordinate(value: Double): Self = StObject.set(x, "xCoordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXCoordinateUndefined: Self = StObject.set(x, "xCoordinate", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setYCoordinate(value: Double): Self = StObject.set(x, "yCoordinate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXCoordinate(value: Double): Self = this.set("xCoordinate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXCoordinate: Self = this.set("xCoordinate", js.undefined)
-    
-    @scala.inline
-    def setYCoordinate(value: Double): Self = this.set("yCoordinate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYCoordinate: Self = this.set("yCoordinate", js.undefined)
+    def setYCoordinateUndefined: Self = StObject.set(x, "yCoordinate", js.undefined)
   }
 }

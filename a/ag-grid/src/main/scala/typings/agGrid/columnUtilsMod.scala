@@ -4,16 +4,16 @@ import typings.agGrid.columnGroupChildMod.ColumnGroupChild
 import typings.agGrid.columnMod.Column
 import typings.agGrid.originalColumnGroupChildMod.OriginalColumnGroupChild
 import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/columnController/columnUtils", JSImport.Namespace)
-@js.native
-object columnUtilsMod extends js.Object {
+object columnUtilsMod {
   
+  @JSImport("ag-grid/dist/lib/columnController/columnUtils", "ColumnUtils")
   @js.native
-  class ColumnUtils () extends js.Object {
+  class ColumnUtils () extends StObject {
     
     def calculateColInitialWidth(colDef: js.Any): Double = js.native
     

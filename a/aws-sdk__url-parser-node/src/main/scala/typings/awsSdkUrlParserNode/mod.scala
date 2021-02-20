@@ -1,13 +1,14 @@
 package typings.awsSdkUrlParserNode
 
 import typings.awsSdkTypes.utilMod.UrlParser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/url-parser-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("@aws-sdk/url-parser-node", "parseUrl")
+  @js.native
   val parseUrl: UrlParser = js.native
 }

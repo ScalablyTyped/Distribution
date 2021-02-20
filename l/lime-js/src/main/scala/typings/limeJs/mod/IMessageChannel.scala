@@ -1,11 +1,12 @@
 package typings.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IMessageChannel extends js.Object {
+trait IMessageChannel extends StObject {
   
   def onMessage(message: Message): js.Any = js.native
   
@@ -20,24 +21,12 @@ object IMessageChannel {
   }
   
   @scala.inline
-  implicit class IMessageChannelOps[Self <: IMessageChannel] (val x: Self) extends AnyVal {
+  implicit class IMessageChannelMutableBuilder[Self <: IMessageChannel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnMessage(value: Message => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOnMessage(value: Message => js.Any): Self = this.set("onMessage", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSendMessage(value: Message => Unit): Self = this.set("sendMessage", js.Any.fromFunction1(value))
+    def setSendMessage(value: Message => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }
 }

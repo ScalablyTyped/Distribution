@@ -1,11 +1,12 @@
 package typings.materialUi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LeftIconColor extends js.Object {
+trait LeftIconColor extends StObject {
   
   var leftIconColor: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object LeftIconColor {
   }
   
   @scala.inline
-  implicit class LeftIconColorOps[Self <: LeftIconColor] (val x: Self) extends AnyVal {
+  implicit class LeftIconColorMutableBuilder[Self <: LeftIconColor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLeftIconColor(value: String): Self = StObject.set(x, "leftIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeftIconColorUndefined: Self = StObject.set(x, "leftIconColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNestedLevelDepth(value: Double): Self = StObject.set(x, "nestedLevelDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLeftIconColor(value: String): Self = this.set("leftIconColor", value.asInstanceOf[js.Any])
+    def setNestedLevelDepthUndefined: Self = StObject.set(x, "nestedLevelDepth", js.undefined)
     
     @scala.inline
-    def deleteLeftIconColor: Self = this.set("leftIconColor", js.undefined)
+    def setRightIconColor(value: String): Self = StObject.set(x, "rightIconColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNestedLevelDepth(value: Double): Self = this.set("nestedLevelDepth", value.asInstanceOf[js.Any])
+    def setRightIconColorUndefined: Self = StObject.set(x, "rightIconColor", js.undefined)
     
     @scala.inline
-    def deleteNestedLevelDepth: Self = this.set("nestedLevelDepth", js.undefined)
+    def setSecondaryTextColor(value: String): Self = StObject.set(x, "secondaryTextColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightIconColor(value: String): Self = this.set("rightIconColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightIconColor: Self = this.set("rightIconColor", js.undefined)
-    
-    @scala.inline
-    def setSecondaryTextColor(value: String): Self = this.set("secondaryTextColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecondaryTextColor: Self = this.set("secondaryTextColor", js.undefined)
+    def setSecondaryTextColorUndefined: Self = StObject.set(x, "secondaryTextColor", js.undefined)
   }
 }

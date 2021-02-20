@@ -1,12 +1,13 @@
 package typings.node.fsMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StatsBase[T] extends js.Object {
+trait StatsBase[T] extends StObject {
   
   var atime: Date = js.native
   
@@ -93,93 +94,81 @@ object StatsBase {
   }
   
   @scala.inline
-  implicit class StatsBaseOps[Self <: StatsBase[_], T] (val x: Self with StatsBase[T]) extends AnyVal {
+  implicit class StatsBaseMutableBuilder[Self <: StatsBase[_], T] (val x: Self with StatsBase[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAtimeMs(value: T): Self = StObject.set(x, "atimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBirthtime(value: Date): Self = StObject.set(x, "birthtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtime(value: Date): Self = this.set("atime", value.asInstanceOf[js.Any])
+    def setBirthtimeMs(value: T): Self = StObject.set(x, "birthtimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAtimeMs(value: T): Self = this.set("atimeMs", value.asInstanceOf[js.Any])
+    def setBlksize(value: T): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirthtime(value: Date): Self = this.set("birthtime", value.asInstanceOf[js.Any])
+    def setBlocks(value: T): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBirthtimeMs(value: T): Self = this.set("birthtimeMs", value.asInstanceOf[js.Any])
+    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlksize(value: T): Self = this.set("blksize", value.asInstanceOf[js.Any])
+    def setCtimeMs(value: T): Self = StObject.set(x, "ctimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlocks(value: T): Self = this.set("blocks", value.asInstanceOf[js.Any])
+    def setDev(value: T): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtime(value: Date): Self = this.set("ctime", value.asInstanceOf[js.Any])
+    def setGid(value: T): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCtimeMs(value: T): Self = this.set("ctimeMs", value.asInstanceOf[js.Any])
+    def setIno(value: T): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDev(value: T): Self = this.set("dev", value.asInstanceOf[js.Any])
+    def setIsBlockDevice(value: () => Boolean): Self = StObject.set(x, "isBlockDevice", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGid(value: T): Self = this.set("gid", value.asInstanceOf[js.Any])
+    def setIsCharacterDevice(value: () => Boolean): Self = StObject.set(x, "isCharacterDevice", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIno(value: T): Self = this.set("ino", value.asInstanceOf[js.Any])
+    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsBlockDevice(value: () => Boolean): Self = this.set("isBlockDevice", js.Any.fromFunction0(value))
+    def setIsFIFO(value: () => Boolean): Self = StObject.set(x, "isFIFO", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsCharacterDevice(value: () => Boolean): Self = this.set("isCharacterDevice", js.Any.fromFunction0(value))
+    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = this.set("isDirectory", js.Any.fromFunction0(value))
+    def setIsSocket(value: () => Boolean): Self = StObject.set(x, "isSocket", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFIFO(value: () => Boolean): Self = this.set("isFIFO", js.Any.fromFunction0(value))
+    def setIsSymbolicLink(value: () => Boolean): Self = StObject.set(x, "isSymbolicLink", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsFile(value: () => Boolean): Self = this.set("isFile", js.Any.fromFunction0(value))
+    def setMode(value: T): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSocket(value: () => Boolean): Self = this.set("isSocket", js.Any.fromFunction0(value))
+    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSymbolicLink(value: () => Boolean): Self = this.set("isSymbolicLink", js.Any.fromFunction0(value))
+    def setMtimeMs(value: T): Self = StObject.set(x, "mtimeMs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: T): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNlink(value: T): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtime(value: Date): Self = this.set("mtime", value.asInstanceOf[js.Any])
+    def setRdev(value: T): Self = StObject.set(x, "rdev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMtimeMs(value: T): Self = this.set("mtimeMs", value.asInstanceOf[js.Any])
+    def setSize(value: T): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNlink(value: T): Self = this.set("nlink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRdev(value: T): Self = this.set("rdev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSize(value: T): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUid(value: T): Self = this.set("uid", value.asInstanceOf[js.Any])
+    def setUid(value: T): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

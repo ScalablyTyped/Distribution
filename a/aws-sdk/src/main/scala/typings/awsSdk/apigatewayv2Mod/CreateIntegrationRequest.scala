@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateIntegrationRequest extends js.Object {
+trait CreateIntegrationRequest extends StObject {
   
   /**
     * The API identifier.
@@ -102,114 +103,102 @@ object CreateIntegrationRequest {
   }
   
   @scala.inline
-  implicit class CreateIntegrationRequestOps[Self <: CreateIntegrationRequest] (val x: Self) extends AnyVal {
+  implicit class CreateIntegrationRequestMutableBuilder[Self <: CreateIntegrationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionId(value: StringWithLengthBetween1And1024): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
     
     @scala.inline
-    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "ConnectionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationType(value: IntegrationType): Self = this.set("IntegrationType", value.asInstanceOf[js.Any])
+    def setConnectionTypeUndefined: Self = StObject.set(x, "ConnectionType", js.undefined)
     
     @scala.inline
-    def setConnectionId(value: StringWithLengthBetween1And1024): Self = this.set("ConnectionId", value.asInstanceOf[js.Any])
+    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = StObject.set(x, "ContentHandlingStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectionId: Self = this.set("ConnectionId", js.undefined)
+    def setContentHandlingStrategyUndefined: Self = StObject.set(x, "ContentHandlingStrategy", js.undefined)
     
     @scala.inline
-    def setConnectionType(value: ConnectionType): Self = this.set("ConnectionType", value.asInstanceOf[js.Any])
+    def setCredentialsArn(value: Arn): Self = StObject.set(x, "CredentialsArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteConnectionType: Self = this.set("ConnectionType", js.undefined)
+    def setCredentialsArnUndefined: Self = StObject.set(x, "CredentialsArn", js.undefined)
     
     @scala.inline
-    def setContentHandlingStrategy(value: ContentHandlingStrategy): Self = this.set("ContentHandlingStrategy", value.asInstanceOf[js.Any])
+    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContentHandlingStrategy: Self = this.set("ContentHandlingStrategy", js.undefined)
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def setCredentialsArn(value: Arn): Self = this.set("CredentialsArn", value.asInstanceOf[js.Any])
+    def setIntegrationMethod(value: StringWithLengthBetween1And64): Self = StObject.set(x, "IntegrationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCredentialsArn: Self = this.set("CredentialsArn", js.undefined)
+    def setIntegrationMethodUndefined: Self = StObject.set(x, "IntegrationMethod", js.undefined)
     
     @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setIntegrationSubtype(value: StringWithLengthBetween1And128): Self = StObject.set(x, "IntegrationSubtype", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setIntegrationSubtypeUndefined: Self = StObject.set(x, "IntegrationSubtype", js.undefined)
     
     @scala.inline
-    def setIntegrationMethod(value: StringWithLengthBetween1And64): Self = this.set("IntegrationMethod", value.asInstanceOf[js.Any])
+    def setIntegrationType(value: IntegrationType): Self = StObject.set(x, "IntegrationType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIntegrationMethod: Self = this.set("IntegrationMethod", js.undefined)
+    def setIntegrationUri(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "IntegrationUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationSubtype(value: StringWithLengthBetween1And128): Self = this.set("IntegrationSubtype", value.asInstanceOf[js.Any])
+    def setIntegrationUriUndefined: Self = StObject.set(x, "IntegrationUri", js.undefined)
     
     @scala.inline
-    def deleteIntegrationSubtype: Self = this.set("IntegrationSubtype", js.undefined)
+    def setPassthroughBehavior(value: PassthroughBehavior): Self = StObject.set(x, "PassthroughBehavior", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntegrationUri(value: UriWithLengthBetween1And2048): Self = this.set("IntegrationUri", value.asInstanceOf[js.Any])
+    def setPassthroughBehaviorUndefined: Self = StObject.set(x, "PassthroughBehavior", js.undefined)
     
     @scala.inline
-    def deleteIntegrationUri: Self = this.set("IntegrationUri", js.undefined)
+    def setPayloadFormatVersion(value: StringWithLengthBetween1And64): Self = StObject.set(x, "PayloadFormatVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassthroughBehavior(value: PassthroughBehavior): Self = this.set("PassthroughBehavior", value.asInstanceOf[js.Any])
+    def setPayloadFormatVersionUndefined: Self = StObject.set(x, "PayloadFormatVersion", js.undefined)
     
     @scala.inline
-    def deletePassthroughBehavior: Self = this.set("PassthroughBehavior", js.undefined)
+    def setRequestParameters(value: IntegrationParameters): Self = StObject.set(x, "RequestParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPayloadFormatVersion(value: StringWithLengthBetween1And64): Self = this.set("PayloadFormatVersion", value.asInstanceOf[js.Any])
+    def setRequestParametersUndefined: Self = StObject.set(x, "RequestParameters", js.undefined)
     
     @scala.inline
-    def deletePayloadFormatVersion: Self = this.set("PayloadFormatVersion", js.undefined)
+    def setRequestTemplates(value: TemplateMap): Self = StObject.set(x, "RequestTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestParameters(value: IntegrationParameters): Self = this.set("RequestParameters", value.asInstanceOf[js.Any])
+    def setRequestTemplatesUndefined: Self = StObject.set(x, "RequestTemplates", js.undefined)
     
     @scala.inline
-    def deleteRequestParameters: Self = this.set("RequestParameters", js.undefined)
+    def setTemplateSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "TemplateSelectionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestTemplates(value: TemplateMap): Self = this.set("RequestTemplates", value.asInstanceOf[js.Any])
+    def setTemplateSelectionExpressionUndefined: Self = StObject.set(x, "TemplateSelectionExpression", js.undefined)
     
     @scala.inline
-    def deleteRequestTemplates: Self = this.set("RequestTemplates", js.undefined)
+    def setTimeoutInMillis(value: IntegerWithLengthBetween50And30000): Self = StObject.set(x, "TimeoutInMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateSelectionExpression(value: SelectionExpression): Self = this.set("TemplateSelectionExpression", value.asInstanceOf[js.Any])
+    def setTimeoutInMillisUndefined: Self = StObject.set(x, "TimeoutInMillis", js.undefined)
     
     @scala.inline
-    def deleteTemplateSelectionExpression: Self = this.set("TemplateSelectionExpression", js.undefined)
+    def setTlsConfig(value: TlsConfigInput): Self = StObject.set(x, "TlsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimeoutInMillis(value: IntegerWithLengthBetween50And30000): Self = this.set("TimeoutInMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInMillis: Self = this.set("TimeoutInMillis", js.undefined)
-    
-    @scala.inline
-    def setTlsConfig(value: TlsConfigInput): Self = this.set("TlsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsConfig: Self = this.set("TlsConfig", js.undefined)
+    def setTlsConfigUndefined: Self = StObject.set(x, "TlsConfig", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Snapshot extends js.Object {
+trait Snapshot extends StObject {
   
   /** The time this snapshot was created. */
   var creationTime: js.UndefOr[String] = js.native
@@ -43,75 +44,63 @@ object Snapshot {
   }
   
   @scala.inline
-  implicit class SnapshotOps[Self <: Snapshot] (val x: Self) extends AnyVal {
+  implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    def setDiskSizeBytes(value: String): Self = StObject.set(x, "diskSizeBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setDiskSizeBytesUndefined: Self = StObject.set(x, "diskSizeBytes", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiskSizeBytes(value: String): Self = this.set("diskSizeBytes", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDiskSizeBytes: Self = this.set("diskSizeBytes", js.undefined)
+    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPubsubMetadata(value: js.Array[PubsubSnapshotMetadata]): Self = StObject.set(x, "pubsubMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    def setPubsubMetadataUndefined: Self = StObject.set(x, "pubsubMetadata", js.undefined)
     
     @scala.inline
-    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    def setPubsubMetadataVarargs(value: PubsubSnapshotMetadata*): Self = StObject.set(x, "pubsubMetadata", js.Array(value :_*))
     
     @scala.inline
-    def setPubsubMetadataVarargs(value: PubsubSnapshotMetadata*): Self = this.set("pubsubMetadata", js.Array(value :_*))
+    def setSourceJobId(value: String): Self = StObject.set(x, "sourceJobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPubsubMetadata(value: js.Array[PubsubSnapshotMetadata]): Self = this.set("pubsubMetadata", value.asInstanceOf[js.Any])
+    def setSourceJobIdUndefined: Self = StObject.set(x, "sourceJobId", js.undefined)
     
     @scala.inline
-    def deletePubsubMetadata: Self = this.set("pubsubMetadata", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJobId(value: String): Self = this.set("sourceJobId", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteSourceJobId: Self = this.set("sourceJobId", js.undefined)
+    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
-    
-    @scala.inline
-    def setTtl(value: String): Self = this.set("ttl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

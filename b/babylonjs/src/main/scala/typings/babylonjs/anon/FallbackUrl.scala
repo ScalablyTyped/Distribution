@@ -1,11 +1,12 @@
 package typings.babylonjs.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FallbackUrl extends js.Object {
+trait FallbackUrl extends StObject {
   
   /**
     * The url to the fallback JavaScript module.
@@ -31,36 +32,24 @@ object FallbackUrl {
   }
   
   @scala.inline
-  implicit class FallbackUrlOps[Self <: FallbackUrl] (val x: Self) extends AnyVal {
+  implicit class FallbackUrlMutableBuilder[Self <: FallbackUrl] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFallbackUrl(value: String): Self = StObject.set(x, "fallbackUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFallbackUrlUndefined: Self = StObject.set(x, "fallbackUrl", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setWasmBinaryUrl(value: String): Self = StObject.set(x, "wasmBinaryUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFallbackUrl(value: String): Self = this.set("fallbackUrl", value.asInstanceOf[js.Any])
+    def setWasmBinaryUrlUndefined: Self = StObject.set(x, "wasmBinaryUrl", js.undefined)
     
     @scala.inline
-    def deleteFallbackUrl: Self = this.set("fallbackUrl", js.undefined)
+    def setWasmUrl(value: String): Self = StObject.set(x, "wasmUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWasmBinaryUrl(value: String): Self = this.set("wasmBinaryUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWasmBinaryUrl: Self = this.set("wasmBinaryUrl", js.undefined)
-    
-    @scala.inline
-    def setWasmUrl(value: String): Self = this.set("wasmUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWasmUrl: Self = this.set("wasmUrl", js.undefined)
+    def setWasmUrlUndefined: Self = StObject.set(x, "wasmUrl", js.undefined)
   }
 }

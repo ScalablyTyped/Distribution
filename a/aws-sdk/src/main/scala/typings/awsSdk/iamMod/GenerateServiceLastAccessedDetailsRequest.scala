@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GenerateServiceLastAccessedDetailsRequest extends js.Object {
+trait GenerateServiceLastAccessedDetailsRequest extends StObject {
   
   /**
     * The ARN of the IAM resource (user, group, role, or managed policy) used to generate information about when the resource was last used in an attempt to access an AWS service.
@@ -26,27 +27,15 @@ object GenerateServiceLastAccessedDetailsRequest {
   }
   
   @scala.inline
-  implicit class GenerateServiceLastAccessedDetailsRequestOps[Self <: GenerateServiceLastAccessedDetailsRequest] (val x: Self) extends AnyVal {
+  implicit class GenerateServiceLastAccessedDetailsRequestMutableBuilder[Self <: GenerateServiceLastAccessedDetailsRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGranularity(value: AccessAdvisorUsageGranularityType): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGranularity(value: AccessAdvisorUsageGranularityType): Self = this.set("Granularity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGranularity: Self = this.set("Granularity", js.undefined)
+    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
   }
 }

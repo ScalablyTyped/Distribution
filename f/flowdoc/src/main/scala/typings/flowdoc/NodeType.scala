@@ -1,5 +1,6 @@
 package typings.flowdoc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.flowdoc.flowdocStrings.HOTSPOT
   - typings.flowdoc.flowdocStrings.LAYER
 */
-trait NodeType extends js.Object
+trait NodeType extends StObject
 object NodeType {
   
   @scala.inline

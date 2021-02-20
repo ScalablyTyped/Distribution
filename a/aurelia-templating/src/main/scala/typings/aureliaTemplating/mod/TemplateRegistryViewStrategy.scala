@@ -1,13 +1,14 @@
 package typings.aureliaTemplating.mod
 
 import typings.aureliaLoader.mod.TemplateRegistryEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TemplateRegistryViewStrategy")
 @js.native
-class TemplateRegistryViewStrategy protected () extends js.Object {
+class TemplateRegistryViewStrategy protected () extends StObject {
   /**
     * Creates an instance of TemplateRegistryViewStrategy.
     * @param moduleId The associated moduleId of the view to be loaded.

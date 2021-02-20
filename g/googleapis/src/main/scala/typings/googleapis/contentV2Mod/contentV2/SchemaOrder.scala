@@ -1,5 +1,6 @@
 package typings.googleapis.contentV2Mod.contentV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Order. All methods require the order manager role.
   */
 @js.native
-trait SchemaOrder extends js.Object {
+trait SchemaOrder extends StObject {
   
   /**
     * Whether the order was acknowledged.
@@ -125,156 +126,144 @@ object SchemaOrder {
   }
   
   @scala.inline
-  implicit class SchemaOrderOps[Self <: SchemaOrder] (val x: Self) extends AnyVal {
+  implicit class SchemaOrderMutableBuilder[Self <: SchemaOrder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcknowledgedUndefined: Self = StObject.set(x, "acknowledged", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannelType(value: String): Self = StObject.set(x, "channelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcknowledged(value: Boolean): Self = this.set("acknowledged", value.asInstanceOf[js.Any])
+    def setChannelTypeUndefined: Self = StObject.set(x, "channelType", js.undefined)
     
     @scala.inline
-    def deleteAcknowledged: Self = this.set("acknowledged", js.undefined)
+    def setCustomer(value: SchemaOrderCustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelType(value: String): Self = this.set("channelType", value.asInstanceOf[js.Any])
+    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
     @scala.inline
-    def deleteChannelType: Self = this.set("channelType", js.undefined)
+    def setDeliveryDetails(value: SchemaOrderDeliveryDetails): Self = StObject.set(x, "deliveryDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomer(value: SchemaOrderCustomer): Self = this.set("customer", value.asInstanceOf[js.Any])
+    def setDeliveryDetailsUndefined: Self = StObject.set(x, "deliveryDetails", js.undefined)
     
     @scala.inline
-    def deleteCustomer: Self = this.set("customer", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeliveryDetails(value: SchemaOrderDeliveryDetails): Self = this.set("deliveryDetails", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDeliveryDetails: Self = this.set("deliveryDetails", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLineItems(value: js.Array[SchemaOrderLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setLineItemsVarargs(value: SchemaOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
     @scala.inline
-    def setLineItemsVarargs(value: SchemaOrderLineItem*): Self = this.set("lineItems", js.Array(value :_*))
+    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineItems(value: js.Array[SchemaOrderLineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     @scala.inline
-    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
     @scala.inline
-    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    def setNetAmount(value: SchemaPrice): Self = StObject.set(x, "netAmount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMerchantOrderId(value: String): Self = this.set("merchantOrderId", value.asInstanceOf[js.Any])
+    def setNetAmountUndefined: Self = StObject.set(x, "netAmount", js.undefined)
     
     @scala.inline
-    def deleteMerchantOrderId: Self = this.set("merchantOrderId", js.undefined)
+    def setPaymentMethod(value: SchemaOrderPaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetAmount(value: SchemaPrice): Self = this.set("netAmount", value.asInstanceOf[js.Any])
+    def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
     
     @scala.inline
-    def deleteNetAmount: Self = this.set("netAmount", js.undefined)
+    def setPaymentStatus(value: String): Self = StObject.set(x, "paymentStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentMethod(value: SchemaOrderPaymentMethod): Self = this.set("paymentMethod", value.asInstanceOf[js.Any])
+    def setPaymentStatusUndefined: Self = StObject.set(x, "paymentStatus", js.undefined)
     
     @scala.inline
-    def deletePaymentMethod: Self = this.set("paymentMethod", js.undefined)
+    def setPlacedDate(value: String): Self = StObject.set(x, "placedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentStatus(value: String): Self = this.set("paymentStatus", value.asInstanceOf[js.Any])
+    def setPlacedDateUndefined: Self = StObject.set(x, "placedDate", js.undefined)
     
     @scala.inline
-    def deletePaymentStatus: Self = this.set("paymentStatus", js.undefined)
+    def setPromotions(value: js.Array[SchemaOrderLegacyPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacedDate(value: String): Self = this.set("placedDate", value.asInstanceOf[js.Any])
+    def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
     @scala.inline
-    def deletePlacedDate: Self = this.set("placedDate", js.undefined)
+    def setPromotionsVarargs(value: SchemaOrderLegacyPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
     
     @scala.inline
-    def setPromotionsVarargs(value: SchemaOrderLegacyPromotion*): Self = this.set("promotions", js.Array(value :_*))
+    def setRefunds(value: js.Array[SchemaOrderRefund]): Self = StObject.set(x, "refunds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPromotions(value: js.Array[SchemaOrderLegacyPromotion]): Self = this.set("promotions", value.asInstanceOf[js.Any])
+    def setRefundsUndefined: Self = StObject.set(x, "refunds", js.undefined)
     
     @scala.inline
-    def deletePromotions: Self = this.set("promotions", js.undefined)
+    def setRefundsVarargs(value: SchemaOrderRefund*): Self = StObject.set(x, "refunds", js.Array(value :_*))
     
     @scala.inline
-    def setRefundsVarargs(value: SchemaOrderRefund*): Self = this.set("refunds", js.Array(value :_*))
+    def setShipments(value: js.Array[SchemaOrderShipment]): Self = StObject.set(x, "shipments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefunds(value: js.Array[SchemaOrderRefund]): Self = this.set("refunds", value.asInstanceOf[js.Any])
+    def setShipmentsUndefined: Self = StObject.set(x, "shipments", js.undefined)
     
     @scala.inline
-    def deleteRefunds: Self = this.set("refunds", js.undefined)
+    def setShipmentsVarargs(value: SchemaOrderShipment*): Self = StObject.set(x, "shipments", js.Array(value :_*))
     
     @scala.inline
-    def setShipmentsVarargs(value: SchemaOrderShipment*): Self = this.set("shipments", js.Array(value :_*))
+    def setShippingCost(value: SchemaPrice): Self = StObject.set(x, "shippingCost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShipments(value: js.Array[SchemaOrderShipment]): Self = this.set("shipments", value.asInstanceOf[js.Any])
+    def setShippingCostTax(value: SchemaPrice): Self = StObject.set(x, "shippingCostTax", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShipments: Self = this.set("shipments", js.undefined)
+    def setShippingCostTaxUndefined: Self = StObject.set(x, "shippingCostTax", js.undefined)
     
     @scala.inline
-    def setShippingCost(value: SchemaPrice): Self = this.set("shippingCost", value.asInstanceOf[js.Any])
+    def setShippingCostUndefined: Self = StObject.set(x, "shippingCost", js.undefined)
     
     @scala.inline
-    def deleteShippingCost: Self = this.set("shippingCost", js.undefined)
+    def setShippingOption(value: String): Self = StObject.set(x, "shippingOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingCostTax(value: SchemaPrice): Self = this.set("shippingCostTax", value.asInstanceOf[js.Any])
+    def setShippingOptionUndefined: Self = StObject.set(x, "shippingOption", js.undefined)
     
     @scala.inline
-    def deleteShippingCostTax: Self = this.set("shippingCostTax", js.undefined)
+    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShippingOption(value: String): Self = this.set("shippingOption", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteShippingOption: Self = this.set("shippingOption", js.undefined)
+    def setTaxCollector(value: String): Self = StObject.set(x, "taxCollector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
-    
-    @scala.inline
-    def setTaxCollector(value: String): Self = this.set("taxCollector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTaxCollector: Self = this.set("taxCollector", js.undefined)
+    def setTaxCollectorUndefined: Self = StObject.set(x, "taxCollector", js.undefined)
   }
 }

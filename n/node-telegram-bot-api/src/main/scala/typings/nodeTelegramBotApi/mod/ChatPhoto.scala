@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChatPhoto extends js.Object {
+trait ChatPhoto extends StObject {
   
   var big_file_id: String = js.native
   
@@ -20,24 +21,12 @@ object ChatPhoto {
   }
   
   @scala.inline
-  implicit class ChatPhotoOps[Self <: ChatPhoto] (val x: Self) extends AnyVal {
+  implicit class ChatPhotoMutableBuilder[Self <: ChatPhoto] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBig_file_id(value: String): Self = StObject.set(x, "big_file_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBig_file_id(value: String): Self = this.set("big_file_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSmall_file_id(value: String): Self = this.set("small_file_id", value.asInstanceOf[js.Any])
+    def setSmall_file_id(value: String): Self = StObject.set(x, "small_file_id", value.asInstanceOf[js.Any])
   }
 }

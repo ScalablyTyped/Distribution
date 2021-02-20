@@ -1,12 +1,13 @@
 package typings.twineSugarcube.anon
 
 import typings.twineSugarcube.saveMod.SaveObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Get extends js.Object {
+trait Get extends StObject {
   
   /**
     * Deletes the autosave.

@@ -1,11 +1,12 @@
 package typings.awsSdk.secretsmanagerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutResourcePolicyRequest extends js.Object {
+trait PutResourcePolicyRequest extends StObject {
   
   /**
     * Makes an optional API call to Zelkova to validate the Resource Policy to prevent broad access to your secret.
@@ -31,30 +32,18 @@ object PutResourcePolicyRequest {
   }
   
   @scala.inline
-  implicit class PutResourcePolicyRequestOps[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
+  implicit class PutResourcePolicyRequestMutableBuilder[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlockPublicPolicy(value: BooleanType): Self = StObject.set(x, "BlockPublicPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlockPublicPolicyUndefined: Self = StObject.set(x, "BlockPublicPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = StObject.set(x, "ResourcePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourcePolicy(value: NonEmptyResourcePolicyType): Self = this.set("ResourcePolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = this.set("SecretId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBlockPublicPolicy(value: BooleanType): Self = this.set("BlockPublicPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBlockPublicPolicy: Self = this.set("BlockPublicPolicy", js.undefined)
+    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

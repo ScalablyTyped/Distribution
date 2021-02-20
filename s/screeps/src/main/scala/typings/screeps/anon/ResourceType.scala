@@ -1,12 +1,13 @@
 package typings.screeps.anon
 
 import typings.screeps.ResourceConstant
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceType extends js.Object {
+trait ResourceType extends StObject {
   
   var amount: Double = js.native
   
@@ -23,27 +24,15 @@ object ResourceType {
   }
   
   @scala.inline
-  implicit class ResourceTypeOps[Self <: ResourceType] (val x: Self) extends AnyVal {
+  implicit class ResourceTypeMutableBuilder[Self <: ResourceType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceType(value: ResourceConstant): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceType(value: ResourceConstant): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTargetId(value: String): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

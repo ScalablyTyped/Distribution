@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dockerode", "Volume")
 @js.native
-class Volume protected () extends js.Object {
+class Volume protected () extends StObject {
   def this(modem: js.Any, name: String) = this()
   
   def inspect(): js.Promise[VolumeInspectInfo] = js.native

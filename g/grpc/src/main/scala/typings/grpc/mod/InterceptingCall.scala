@@ -1,5 +1,6 @@
 package typings.grpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param next_Call The next call in the chain
   * @param requester Interceptor methods to handle request
   */
-class InterceptingCall () extends js.Object {
+class InterceptingCall () extends StObject {
   def this(nextCall: InterceptingCall) = this()
   def this(nextCall: Null, requester: Requester) = this()
   def this(nextCall: InterceptingCall, requester: Requester) = this()

@@ -1,11 +1,12 @@
 package typings.pixiJs.PIXI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GC_MODES extends js.Object
+sealed trait GC_MODES extends StObject
 /**
   * The gc modes that are supported by pixi.
   *
@@ -27,7 +28,7 @@ sealed trait GC_MODES extends js.Object
   */
 @JSGlobal("PIXI.GC_MODES")
 @js.native
-object GC_MODES extends js.Object {
+object GC_MODES extends StObject {
   
   @js.native
   sealed trait AUTO extends GC_MODES

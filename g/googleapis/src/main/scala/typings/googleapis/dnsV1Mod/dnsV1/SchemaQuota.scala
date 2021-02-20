@@ -1,11 +1,12 @@
 package typings.googleapis.dnsV1Mod.dnsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaQuota extends js.Object {
+trait SchemaQuota extends StObject {
   
   var dnsKeysPerManagedZone: js.UndefOr[Double] = js.native
   
@@ -42,87 +43,75 @@ object SchemaQuota {
   }
   
   @scala.inline
-  implicit class SchemaQuotaOps[Self <: SchemaQuota] (val x: Self) extends AnyVal {
+  implicit class SchemaQuotaMutableBuilder[Self <: SchemaQuota] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDnsKeysPerManagedZone(value: Double): Self = StObject.set(x, "dnsKeysPerManagedZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDnsKeysPerManagedZoneUndefined: Self = StObject.set(x, "dnsKeysPerManagedZone", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsKeysPerManagedZone(value: Double): Self = this.set("dnsKeysPerManagedZone", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteDnsKeysPerManagedZone: Self = this.set("dnsKeysPerManagedZone", js.undefined)
+    def setManagedZones(value: Double): Self = StObject.set(x, "managedZones", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setManagedZonesPerNetwork(value: Double): Self = StObject.set(x, "managedZonesPerNetwork", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setManagedZonesPerNetworkUndefined: Self = StObject.set(x, "managedZonesPerNetwork", js.undefined)
     
     @scala.inline
-    def setManagedZones(value: Double): Self = this.set("managedZones", value.asInstanceOf[js.Any])
+    def setManagedZonesUndefined: Self = StObject.set(x, "managedZones", js.undefined)
     
     @scala.inline
-    def deleteManagedZones: Self = this.set("managedZones", js.undefined)
+    def setNetworksPerManagedZone(value: Double): Self = StObject.set(x, "networksPerManagedZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManagedZonesPerNetwork(value: Double): Self = this.set("managedZonesPerNetwork", value.asInstanceOf[js.Any])
+    def setNetworksPerManagedZoneUndefined: Self = StObject.set(x, "networksPerManagedZone", js.undefined)
     
     @scala.inline
-    def deleteManagedZonesPerNetwork: Self = this.set("managedZonesPerNetwork", js.undefined)
+    def setResourceRecordsPerRrset(value: Double): Self = StObject.set(x, "resourceRecordsPerRrset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworksPerManagedZone(value: Double): Self = this.set("networksPerManagedZone", value.asInstanceOf[js.Any])
+    def setResourceRecordsPerRrsetUndefined: Self = StObject.set(x, "resourceRecordsPerRrset", js.undefined)
     
     @scala.inline
-    def deleteNetworksPerManagedZone: Self = this.set("networksPerManagedZone", js.undefined)
+    def setRrsetAdditionsPerChange(value: Double): Self = StObject.set(x, "rrsetAdditionsPerChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceRecordsPerRrset(value: Double): Self = this.set("resourceRecordsPerRrset", value.asInstanceOf[js.Any])
+    def setRrsetAdditionsPerChangeUndefined: Self = StObject.set(x, "rrsetAdditionsPerChange", js.undefined)
     
     @scala.inline
-    def deleteResourceRecordsPerRrset: Self = this.set("resourceRecordsPerRrset", js.undefined)
+    def setRrsetDeletionsPerChange(value: Double): Self = StObject.set(x, "rrsetDeletionsPerChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRrsetAdditionsPerChange(value: Double): Self = this.set("rrsetAdditionsPerChange", value.asInstanceOf[js.Any])
+    def setRrsetDeletionsPerChangeUndefined: Self = StObject.set(x, "rrsetDeletionsPerChange", js.undefined)
     
     @scala.inline
-    def deleteRrsetAdditionsPerChange: Self = this.set("rrsetAdditionsPerChange", js.undefined)
+    def setRrsetsPerManagedZone(value: Double): Self = StObject.set(x, "rrsetsPerManagedZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRrsetDeletionsPerChange(value: Double): Self = this.set("rrsetDeletionsPerChange", value.asInstanceOf[js.Any])
+    def setRrsetsPerManagedZoneUndefined: Self = StObject.set(x, "rrsetsPerManagedZone", js.undefined)
     
     @scala.inline
-    def deleteRrsetDeletionsPerChange: Self = this.set("rrsetDeletionsPerChange", js.undefined)
+    def setTotalRrdataSizePerChange(value: Double): Self = StObject.set(x, "totalRrdataSizePerChange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRrsetsPerManagedZone(value: Double): Self = this.set("rrsetsPerManagedZone", value.asInstanceOf[js.Any])
+    def setTotalRrdataSizePerChangeUndefined: Self = StObject.set(x, "totalRrdataSizePerChange", js.undefined)
     
     @scala.inline
-    def deleteRrsetsPerManagedZone: Self = this.set("rrsetsPerManagedZone", js.undefined)
+    def setWhitelistedKeySpecs(value: js.Array[SchemaDnsKeySpec]): Self = StObject.set(x, "whitelistedKeySpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalRrdataSizePerChange(value: Double): Self = this.set("totalRrdataSizePerChange", value.asInstanceOf[js.Any])
+    def setWhitelistedKeySpecsUndefined: Self = StObject.set(x, "whitelistedKeySpecs", js.undefined)
     
     @scala.inline
-    def deleteTotalRrdataSizePerChange: Self = this.set("totalRrdataSizePerChange", js.undefined)
-    
-    @scala.inline
-    def setWhitelistedKeySpecsVarargs(value: SchemaDnsKeySpec*): Self = this.set("whitelistedKeySpecs", js.Array(value :_*))
-    
-    @scala.inline
-    def setWhitelistedKeySpecs(value: js.Array[SchemaDnsKeySpec]): Self = this.set("whitelistedKeySpecs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWhitelistedKeySpecs: Self = this.set("whitelistedKeySpecs", js.undefined)
+    def setWhitelistedKeySpecsVarargs(value: SchemaDnsKeySpec*): Self = StObject.set(x, "whitelistedKeySpecs", js.Array(value :_*))
   }
 }

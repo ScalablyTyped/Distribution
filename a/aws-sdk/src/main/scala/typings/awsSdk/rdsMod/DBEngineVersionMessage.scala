@@ -1,11 +1,12 @@
 package typings.awsSdk.rdsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DBEngineVersionMessage extends js.Object {
+trait DBEngineVersionMessage extends StObject {
   
   /**
     *  A list of DBEngineVersion elements. 
@@ -26,33 +27,21 @@ object DBEngineVersionMessage {
   }
   
   @scala.inline
-  implicit class DBEngineVersionMessageOps[Self <: DBEngineVersionMessage] (val x: Self) extends AnyVal {
+  implicit class DBEngineVersionMessageMutableBuilder[Self <: DBEngineVersionMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDBEngineVersions(value: DBEngineVersionList): Self = StObject.set(x, "DBEngineVersions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDBEngineVersionsUndefined: Self = StObject.set(x, "DBEngineVersions", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDBEngineVersionsVarargs(value: DBEngineVersion*): Self = StObject.set(x, "DBEngineVersions", js.Array(value :_*))
     
     @scala.inline
-    def setDBEngineVersionsVarargs(value: DBEngineVersion*): Self = this.set("DBEngineVersions", js.Array(value :_*))
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDBEngineVersions(value: DBEngineVersionList): Self = this.set("DBEngineVersions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDBEngineVersions: Self = this.set("DBEngineVersions", js.undefined)
-    
-    @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

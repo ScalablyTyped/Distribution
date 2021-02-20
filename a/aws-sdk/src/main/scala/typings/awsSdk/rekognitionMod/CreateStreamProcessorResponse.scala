@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateStreamProcessorResponse extends js.Object {
+trait CreateStreamProcessorResponse extends StObject {
   
   /**
     * ARN for the newly create stream processor.
@@ -21,24 +22,12 @@ object CreateStreamProcessorResponse {
   }
   
   @scala.inline
-  implicit class CreateStreamProcessorResponseOps[Self <: CreateStreamProcessorResponse] (val x: Self) extends AnyVal {
+  implicit class CreateStreamProcessorResponseMutableBuilder[Self <: CreateStreamProcessorResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStreamProcessorArn(value: StreamProcessorArn): Self = StObject.set(x, "StreamProcessorArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStreamProcessorArn(value: StreamProcessorArn): Self = this.set("StreamProcessorArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamProcessorArn: Self = this.set("StreamProcessorArn", js.undefined)
+    def setStreamProcessorArnUndefined: Self = StObject.set(x, "StreamProcessorArn", js.undefined)
   }
 }

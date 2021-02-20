@@ -1,11 +1,12 @@
 package typings.antDesignPro.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddTab extends js.Object {
+trait AddTab extends StObject {
   
   def addTab(id: js.Any): Unit = js.native
   
@@ -20,24 +21,12 @@ object AddTab {
   }
   
   @scala.inline
-  implicit class AddTabOps[Self <: AddTab] (val x: Self) extends AnyVal {
+  implicit class AddTabMutableBuilder[Self <: AddTab] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddTab(value: js.Any => Unit): Self = StObject.set(x, "addTab", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAddTab(value: js.Any => Unit): Self = this.set("addTab", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveTab(value: js.Any => Unit): Self = this.set("removeTab", js.Any.fromFunction1(value))
+    def setRemoveTab(value: js.Any => Unit): Self = StObject.set(x, "removeTab", js.Any.fromFunction1(value))
   }
 }

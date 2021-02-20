@@ -1,16 +1,17 @@
 package typings.novaEditorNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/tree-item/
 @js.native
-trait TreeItem extends js.Object {
+trait TreeItem extends StObject {
   
   var collapsibleState: TreeItemCollapsibleState = js.native
   
-   // https://dev.panic.com/panic/nova-issues/-/issues/909
+  // https://dev.panic.com/panic/nova-issues/-/issues/909
   var color: js.UndefOr[Color] = js.native
   
   var command: js.UndefOr[js.Any] = js.native
@@ -38,72 +39,60 @@ object TreeItem {
   }
   
   @scala.inline
-  implicit class TreeItemOps[Self <: TreeItem] (val x: Self) extends AnyVal {
+  implicit class TreeItemMutableBuilder[Self <: TreeItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapsibleState(value: TreeItemCollapsibleState): Self = StObject.set(x, "collapsibleState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setCollapsibleState(value: TreeItemCollapsibleState): Self = this.set("collapsibleState", value.asInstanceOf[js.Any])
+    def setCommand(value: js.Any): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
     @scala.inline
-    def setCommand(value: js.Any): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setDescriptiveText(value: String): Self = StObject.set(x, "descriptiveText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setDescriptiveTextUndefined: Self = StObject.set(x, "descriptiveText", js.undefined)
     
     @scala.inline
-    def setContextValue(value: String): Self = this.set("contextValue", value.asInstanceOf[js.Any])
+    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContextValue: Self = this.set("contextValue", js.undefined)
+    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     @scala.inline
-    def setDescriptiveText(value: String): Self = this.set("descriptiveText", value.asInstanceOf[js.Any])
+    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescriptiveText: Self = this.set("descriptiveText", js.undefined)
+    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
     @scala.inline
-    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("image", js.undefined)
+    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
-    
-    @scala.inline
-    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

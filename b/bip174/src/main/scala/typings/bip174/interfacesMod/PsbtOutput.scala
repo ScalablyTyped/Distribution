@@ -1,5 +1,6 @@
 package typings.bip174.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,27 +19,15 @@ object PsbtOutput {
   }
   
   @scala.inline
-  implicit class PsbtOutputOps[Self <: PsbtOutput] (val x: Self) extends AnyVal {
+  implicit class PsbtOutputMutableBuilder[Self <: PsbtOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setUnknownKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "unknownKeyVals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setUnknownKeyValsUndefined: Self = StObject.set(x, "unknownKeyVals", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUnknownKeyValsVarargs(value: KeyValue*): Self = this.set("unknownKeyVals", js.Array(value :_*))
-    
-    @scala.inline
-    def setUnknownKeyVals(value: js.Array[KeyValue]): Self = this.set("unknownKeyVals", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknownKeyVals: Self = this.set("unknownKeyVals", js.undefined)
+    def setUnknownKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "unknownKeyVals", js.Array(value :_*))
   }
 }

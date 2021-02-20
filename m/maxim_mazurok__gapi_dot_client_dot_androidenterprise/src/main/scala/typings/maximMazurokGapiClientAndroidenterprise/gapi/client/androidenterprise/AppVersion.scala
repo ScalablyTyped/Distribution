@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenterprise
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppVersion extends js.Object {
+trait AppVersion extends StObject {
   
   /** True if this version is a production APK. */
   var isProduction: js.UndefOr[Boolean] = js.native
@@ -31,51 +32,39 @@ object AppVersion {
   }
   
   @scala.inline
-  implicit class AppVersionOps[Self <: AppVersion] (val x: Self) extends AnyVal {
+  implicit class AppVersionMutableBuilder[Self <: AppVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsProduction(value: Boolean): Self = StObject.set(x, "isProduction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsProductionUndefined: Self = StObject.set(x, "isProduction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsProduction(value: Boolean): Self = this.set("isProduction", value.asInstanceOf[js.Any])
+    def setTrackId(value: js.Array[String]): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsProduction: Self = this.set("isProduction", js.undefined)
+    def setTrackIdUndefined: Self = StObject.set(x, "trackId", js.undefined)
     
     @scala.inline
-    def setTrack(value: String): Self = this.set("track", value.asInstanceOf[js.Any])
+    def setTrackIdVarargs(value: String*): Self = StObject.set(x, "trackId", js.Array(value :_*))
     
     @scala.inline
-    def deleteTrack: Self = this.set("track", js.undefined)
+    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     
     @scala.inline
-    def setTrackIdVarargs(value: String*): Self = this.set("trackId", js.Array(value :_*))
+    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrackId(value: js.Array[String]): Self = this.set("trackId", value.asInstanceOf[js.Any])
+    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
     @scala.inline
-    def deleteTrackId: Self = this.set("trackId", js.undefined)
+    def setVersionString(value: String): Self = StObject.set(x, "versionString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersionCode(value: Double): Self = this.set("versionCode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionCode: Self = this.set("versionCode", js.undefined)
-    
-    @scala.inline
-    def setVersionString(value: String): Self = this.set("versionString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVersionString: Self = this.set("versionString", js.undefined)
+    def setVersionStringUndefined: Self = StObject.set(x, "versionString", js.undefined)
   }
 }

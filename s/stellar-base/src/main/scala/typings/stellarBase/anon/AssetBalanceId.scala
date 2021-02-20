@@ -4,12 +4,13 @@ import typings.stellarBase.xdrMod.xdr.ClaimableBalanceEntryExt
 import typings.stellarBase.xdrMod.xdr.ClaimableBalanceId
 import typings.stellarBase.xdrMod.xdr.Claimant
 import typings.stellarBase.xdrMod.xdr.Int64
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AssetBalanceId extends js.Object {
+trait AssetBalanceId extends StObject {
   
   var amount: Int64 = js.native
   
@@ -36,36 +37,24 @@ object AssetBalanceId {
   }
   
   @scala.inline
-  implicit class AssetBalanceIdOps[Self <: AssetBalanceId] (val x: Self) extends AnyVal {
+  implicit class AssetBalanceIdMutableBuilder[Self <: AssetBalanceId] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: Int64): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsset(value: typings.stellarBase.xdrMod.xdr.Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBalanceId(value: ClaimableBalanceId): Self = StObject.set(x, "balanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: Int64): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setClaimants(value: js.Array[Claimant]): Self = StObject.set(x, "claimants", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAsset(value: typings.stellarBase.xdrMod.xdr.Asset): Self = this.set("asset", value.asInstanceOf[js.Any])
+    def setClaimantsVarargs(value: Claimant*): Self = StObject.set(x, "claimants", js.Array(value :_*))
     
     @scala.inline
-    def setBalanceId(value: ClaimableBalanceId): Self = this.set("balanceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClaimantsVarargs(value: Claimant*): Self = this.set("claimants", js.Array(value :_*))
-    
-    @scala.inline
-    def setClaimants(value: js.Array[Claimant]): Self = this.set("claimants", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExt(value: ClaimableBalanceEntryExt): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setExt(value: ClaimableBalanceEntryExt): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
   }
 }

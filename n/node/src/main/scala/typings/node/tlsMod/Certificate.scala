@@ -1,11 +1,12 @@
 package typings.node.tlsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Certificate extends js.Object {
+trait Certificate extends StObject {
   
   /**
     * Country code.
@@ -46,36 +47,24 @@ object Certificate {
   }
   
   @scala.inline
-  implicit class CertificateOps[Self <: Certificate] (val x: Self) extends AnyVal {
+  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCN(value: String): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setC(value: String): Self = this.set("C", value.asInstanceOf[js.Any])
+    def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCN(value: String): Self = this.set("CN", value.asInstanceOf[js.Any])
+    def setOU(value: String): Self = StObject.set(x, "OU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setL(value: String): Self = this.set("L", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setO(value: String): Self = this.set("O", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOU(value: String): Self = this.set("OU", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setST(value: String): Self = this.set("ST", value.asInstanceOf[js.Any])
+    def setST(value: String): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
   }
 }

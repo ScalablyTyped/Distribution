@@ -1,11 +1,12 @@
 package typings.fancybox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FancyBoxSlideShow extends js.Object {
+trait FancyBoxSlideShow extends StObject {
   
   @JSName("$button")
   var $button: js.UndefOr[JQuery] = js.native
@@ -50,57 +51,45 @@ object FancyBoxSlideShow {
   }
   
   @scala.inline
-  implicit class FancyBoxSlideShowOps[Self <: FancyBoxSlideShow] (val x: Self) extends AnyVal {
+  implicit class FancyBoxSlideShowMutableBuilder[Self <: FancyBoxSlideShow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$button(value: JQuery): Self = StObject.set(x, "$button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$buttonUndefined: Self = StObject.set(x, "$button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$progress(value: JQuery): Self = StObject.set(x, "$progress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$progress(value: JQuery): Self = this.set("$progress", value.asInstanceOf[js.Any])
+    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClear(value: () => Unit): Self = this.set("clear", js.Any.fromFunction0(value))
+    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInit(value: () => Unit): Self = this.set("init", js.Any.fromFunction0(value))
+    def setInstance(value: FancyBoxInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstance(value: FancyBoxInstance): Self = this.set("instance", value.asInstanceOf[js.Any])
+    def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    def setSet(value: Boolean => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSet(value: Boolean => Unit): Self = this.set("set", js.Any.fromFunction1(value))
+    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStart(value: () => Unit): Self = this.set("start", js.Any.fromFunction0(value))
+    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
     
     @scala.inline
-    def set$button(value: JQuery): Self = this.set("$button", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$button: Self = this.set("$button", js.undefined)
-    
-    @scala.inline
-    def setTimer(value: Double): Self = this.set("timer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimer: Self = this.set("timer", js.undefined)
+    def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
   }
 }

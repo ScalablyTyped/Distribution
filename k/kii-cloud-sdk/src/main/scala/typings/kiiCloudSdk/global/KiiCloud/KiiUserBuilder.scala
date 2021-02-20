@@ -1,5 +1,6 @@
 package typings.kiiCloudSdk.global.KiiCloud
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class KiiUserBuilder ()
   extends typings.kiiCloudSdk.KiiCloud.KiiUserBuilder
-/* static members */
-@JSGlobal("KiiCloud.KiiUserBuilder")
-@js.native
-object KiiUserBuilder extends js.Object {
+object KiiUserBuilder {
   
   /**
     * Create KiiUser builder with email address
@@ -31,6 +29,9 @@ object KiiUserBuilder extends js.Object {
     * @throws If the password is not in the
     *     proper format
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUserBuilder.builderWithEmailAddress")
+  @js.native
   def builderWithEmailAddress(emailAddress: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
   
   /**
@@ -44,6 +45,9 @@ object KiiUserBuilder extends js.Object {
     *
     * @throws If the phone number is not in the proper format
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUserBuilder.builderWithGlobalPhoneNumber")
+  @js.native
   def builderWithGlobalPhoneNumber(phoneNumber: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
   
   /**
@@ -72,6 +76,9 @@ object KiiUserBuilder extends js.Object {
     * @throws If the password is not in the
     *     proper format
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUserBuilder.builderWithIdentifier")
+  @js.native
   def builderWithIdentifier(identifier: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
   
   /**
@@ -91,6 +98,9 @@ object KiiUserBuilder extends js.Object {
     * @throws If the password is not in the
     *     proper format
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUserBuilder.builderWithLocalPhoneNumber")
+  @js.native
   def builderWithLocalPhoneNumber(phoneNumber: String, country: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
   
   /**
@@ -108,5 +118,8 @@ object KiiUserBuilder extends js.Object {
     * @throws If the password is not in the
     *     proper format
     */
+  /* static member */
+  @JSGlobal("KiiCloud.KiiUserBuilder.builderWithUsername")
+  @js.native
   def builderWithUsername(username: String, password: String): typings.kiiCloudSdk.KiiCloud.KiiUserBuilder = js.native
 }

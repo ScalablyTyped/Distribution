@@ -1,11 +1,12 @@
 package typings.reactNative.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Cancel extends js.Object {
+trait Cancel extends StObject {
   
   def cancel(): Unit = js.native
   

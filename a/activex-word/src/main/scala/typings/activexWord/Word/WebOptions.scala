@@ -3,12 +3,13 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoEncoding
 import typings.activexOffice.Office.MsoScreenSize
 import typings.activexOffice.Office.MsoTargetBrowser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebOptions extends js.Object {
+trait WebOptions extends StObject {
   
   var AllowPNG: Boolean = js.native
   
@@ -73,69 +74,57 @@ object WebOptions {
   }
   
   @scala.inline
-  implicit class WebOptionsOps[Self <: WebOptions] (val x: Self) extends AnyVal {
+  implicit class WebOptionsMutableBuilder[Self <: WebOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllowPNG(value: Boolean): Self = StObject.set(x, "AllowPNG", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBrowserLevel(value: WdBrowserLevel): Self = StObject.set(x, "BrowserLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowPNG(value: Boolean): Self = this.set("AllowPNG", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setEncoding(value: MsoEncoding): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBrowserLevel(value: WdBrowserLevel): Self = this.set("BrowserLevel", value.asInstanceOf[js.Any])
+    def setFolderSuffix(value: String): Self = StObject.set(x, "FolderSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setOptimizeForBrowser(value: Boolean): Self = StObject.set(x, "OptimizeForBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncoding(value: MsoEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    def setOrganizeInFolder(value: Boolean): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFolderSuffix(value: String): Self = this.set("FolderSuffix", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptimizeForBrowser(value: Boolean): Self = this.set("OptimizeForBrowser", value.asInstanceOf[js.Any])
+    def setPixelsPerInch(value: Double): Self = StObject.set(x, "PixelsPerInch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrganizeInFolder(value: Boolean): Self = this.set("OrganizeInFolder", value.asInstanceOf[js.Any])
+    def setRelyOnCSS(value: Boolean): Self = StObject.set(x, "RelyOnCSS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setRelyOnVML(value: Boolean): Self = StObject.set(x, "RelyOnVML", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelsPerInch(value: Double): Self = this.set("PixelsPerInch", value.asInstanceOf[js.Any])
+    def setScreenSize(value: MsoScreenSize): Self = StObject.set(x, "ScreenSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelyOnCSS(value: Boolean): Self = this.set("RelyOnCSS", value.asInstanceOf[js.Any])
+    def setTargetBrowser(value: MsoTargetBrowser): Self = StObject.set(x, "TargetBrowser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRelyOnVML(value: Boolean): Self = this.set("RelyOnVML", value.asInstanceOf[js.Any])
+    def setUseDefaultFolderSuffix(value: () => Unit): Self = StObject.set(x, "UseDefaultFolderSuffix", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setScreenSize(value: MsoScreenSize): Self = this.set("ScreenSize", value.asInstanceOf[js.Any])
+    def setUseLongFileNames(value: Boolean): Self = StObject.set(x, "UseLongFileNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTargetBrowser(value: MsoTargetBrowser): Self = this.set("TargetBrowser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseDefaultFolderSuffix(value: () => Unit): Self = this.set("UseDefaultFolderSuffix", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setUseLongFileNames(value: Boolean): Self = this.set("UseLongFileNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWordDotWebOptions_typekey(value: WebOptions): Self = this.set("Word.WebOptions_typekey", value.asInstanceOf[js.Any])
+    def setWordDotWebOptions_typekey(value: WebOptions): Self = StObject.set(x, "Word.WebOptions_typekey", value.asInstanceOf[js.Any])
   }
 }

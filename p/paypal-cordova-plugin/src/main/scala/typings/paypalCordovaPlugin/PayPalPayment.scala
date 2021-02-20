@@ -1,5 +1,6 @@
 package typings.paypalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Convenience constructor. Returns a PayPalPayment with the specified amount, currency code, and short description.
   */
 @js.native
-trait PayPalPayment extends js.Object {
+trait PayPalPayment extends StObject {
   
   /**
     * The amount of the payment.
@@ -91,54 +92,42 @@ object PayPalPayment {
   }
   
   @scala.inline
-  implicit class PayPalPaymentOps[Self <: PayPalPayment] (val x: Self) extends AnyVal {
+  implicit class PayPalPaymentMutableBuilder[Self <: PayPalPayment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBnCode(value: String): Self = StObject.set(x, "bnCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    def setCustom(value: String): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBnCode(value: String): Self = this.set("bnCode", value.asInstanceOf[js.Any])
+    def setDetails(value: PayPalPaymentDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustom(value: String): Self = this.set("custom", value.asInstanceOf[js.Any])
+    def setInvoiceNumber(value: String): Self = StObject.set(x, "invoiceNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: PayPalPaymentDetails): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[PayPalItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    def setItemsVarargs(value: PayPalItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setInvoiceNumber(value: String): Self = this.set("invoiceNumber", value.asInstanceOf[js.Any])
+    def setShippingAddress(value: PayPalShippingAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemsVarargs(value: PayPalItem*): Self = this.set("items", js.Array(value :_*))
+    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[PayPalItem]): Self = this.set("items", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShippingAddress(value: PayPalShippingAddress): Self = this.set("shippingAddress", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShortDescription(value: String): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSoftDescriptor(value: String): Self = this.set("softDescriptor", value.asInstanceOf[js.Any])
+    def setSoftDescriptor(value: String): Self = StObject.set(x, "softDescriptor", value.asInstanceOf[js.Any])
   }
 }

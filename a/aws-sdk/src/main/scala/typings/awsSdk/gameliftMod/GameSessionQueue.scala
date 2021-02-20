@@ -1,11 +1,12 @@
 package typings.awsSdk.gameliftMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GameSessionQueue extends js.Object {
+trait GameSessionQueue extends StObject {
   
   /**
     * A list of fleets that can be used to fulfill game session placement requests in the queue. Fleets are identified by either a fleet ARN or a fleet alias ARN. Destinations are listed in default preference order.
@@ -41,54 +42,42 @@ object GameSessionQueue {
   }
   
   @scala.inline
-  implicit class GameSessionQueueOps[Self <: GameSessionQueue] (val x: Self) extends AnyVal {
+  implicit class GameSessionQueueMutableBuilder[Self <: GameSessionQueue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinations(value: GameSessionQueueDestinationList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationsVarargs(value: GameSessionQueueDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
     
     @scala.inline
-    def setDestinationsVarargs(value: GameSessionQueueDestination*): Self = this.set("Destinations", js.Array(value :_*))
+    def setGameSessionQueueArn(value: GameSessionQueueArn): Self = StObject.set(x, "GameSessionQueueArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestinations(value: GameSessionQueueDestinationList): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    def setGameSessionQueueArnUndefined: Self = StObject.set(x, "GameSessionQueueArn", js.undefined)
     
     @scala.inline
-    def deleteDestinations: Self = this.set("Destinations", js.undefined)
+    def setName(value: GameSessionQueueName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGameSessionQueueArn(value: GameSessionQueueArn): Self = this.set("GameSessionQueueArn", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
     @scala.inline
-    def deleteGameSessionQueueArn: Self = this.set("GameSessionQueueArn", js.undefined)
+    def setPlayerLatencyPolicies(value: PlayerLatencyPolicyList): Self = StObject.set(x, "PlayerLatencyPolicies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: GameSessionQueueName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setPlayerLatencyPoliciesUndefined: Self = StObject.set(x, "PlayerLatencyPolicies", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("Name", js.undefined)
+    def setPlayerLatencyPoliciesVarargs(value: PlayerLatencyPolicy*): Self = StObject.set(x, "PlayerLatencyPolicies", js.Array(value :_*))
     
     @scala.inline
-    def setPlayerLatencyPoliciesVarargs(value: PlayerLatencyPolicy*): Self = this.set("PlayerLatencyPolicies", js.Array(value :_*))
+    def setTimeoutInSeconds(value: WholeNumber): Self = StObject.set(x, "TimeoutInSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlayerLatencyPolicies(value: PlayerLatencyPolicyList): Self = this.set("PlayerLatencyPolicies", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlayerLatencyPolicies: Self = this.set("PlayerLatencyPolicies", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInSeconds(value: WholeNumber): Self = this.set("TimeoutInSeconds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInSeconds: Self = this.set("TimeoutInSeconds", js.undefined)
+    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "TimeoutInSeconds", js.undefined)
   }
 }

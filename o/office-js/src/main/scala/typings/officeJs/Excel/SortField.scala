@@ -5,6 +5,7 @@ import typings.officeJs.officeJsStrings.FontColor
 import typings.officeJs.officeJsStrings.Normal
 import typings.officeJs.officeJsStrings.TextAsNumber
 import typings.officeJs.officeJsStrings.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.2]
   */
 @js.native
-trait SortField extends js.Object {
+trait SortField extends StObject {
   
   /**
     *
@@ -83,57 +84,45 @@ object SortField {
   }
   
   @scala.inline
-  implicit class SortFieldOps[Self <: SortField] (val x: Self) extends AnyVal {
+  implicit class SortFieldMutableBuilder[Self <: SortField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: Double): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setAscending(value: Boolean): Self = this.set("ascending", value.asInstanceOf[js.Any])
+    def setDataOption(value: SortDataOption | Normal | TextAsNumber): Self = StObject.set(x, "dataOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAscending: Self = this.set("ascending", js.undefined)
+    def setDataOptionUndefined: Self = StObject.set(x, "dataOption", js.undefined)
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     @scala.inline
-    def setDataOption(value: SortDataOption | Normal | TextAsNumber): Self = this.set("dataOption", value.asInstanceOf[js.Any])
+    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDataOption: Self = this.set("dataOption", js.undefined)
+    def setSortOn(value: SortOn | Value | CellColor | FontColor | typings.officeJs.officeJsStrings.Icon): Self = StObject.set(x, "sortOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIcon(value: Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    def setSortOnUndefined: Self = StObject.set(x, "sortOn", js.undefined)
     
     @scala.inline
-    def deleteIcon: Self = this.set("icon", js.undefined)
+    def setSubField(value: String): Self = StObject.set(x, "subField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSortOn(value: SortOn | Value | CellColor | FontColor | typings.officeJs.officeJsStrings.Icon): Self = this.set("sortOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSortOn: Self = this.set("sortOn", js.undefined)
-    
-    @scala.inline
-    def setSubField(value: String): Self = this.set("subField", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubField: Self = this.set("subField", js.undefined)
+    def setSubFieldUndefined: Self = StObject.set(x, "subField", js.undefined)
   }
 }

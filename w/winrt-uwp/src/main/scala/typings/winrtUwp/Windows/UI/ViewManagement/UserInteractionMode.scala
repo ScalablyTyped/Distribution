@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.ViewManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserInteractionMode extends js.Object
+sealed trait UserInteractionMode extends StObject
 /** Specifies the UI view, optimized for input device type. */
 @JSGlobal("Windows.UI.ViewManagement.UserInteractionMode")
 @js.native
-object UserInteractionMode extends js.Object {
+object UserInteractionMode extends StObject {
   
   /** The device UI is optimized for mouse input. */
   @js.native

@@ -1,6 +1,7 @@
 package typings.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,126 +117,114 @@ object TreeHierarchicalDataSourceSettingsTreeDS {
   }
   
   @scala.inline
-  implicit class TreeHierarchicalDataSourceSettingsTreeDSOps[Self <: TreeHierarchicalDataSourceSettingsTreeDS] (val x: Self) extends AnyVal {
+  implicit class TreeHierarchicalDataSourceSettingsTreeDSMutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildDataKey(value: String): Self = StObject.set(x, "childDataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildDataKeyUndefined: Self = StObject.set(x, "childDataKey", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomEncodeUrlFunc(value: js.Function): Self = StObject.set(x, "customEncodeUrlFunc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildDataKey(value: String): Self = this.set("childDataKey", value.asInstanceOf[js.Any])
+    def setCustomEncodeUrlFuncUndefined: Self = StObject.set(x, "customEncodeUrlFunc", js.undefined)
     
     @scala.inline
-    def deleteChildDataKey: Self = this.set("childDataKey", js.undefined)
+    def setDataLevelKey(value: String): Self = StObject.set(x, "dataLevelKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomEncodeUrlFunc(value: js.Function): Self = this.set("customEncodeUrlFunc", value.asInstanceOf[js.Any])
+    def setDataLevelKeyUndefined: Self = StObject.set(x, "dataLevelKey", js.undefined)
     
     @scala.inline
-    def deleteCustomEncodeUrlFunc: Self = this.set("customEncodeUrlFunc", js.undefined)
+    def setDataSourceUrl(value: String): Self = StObject.set(x, "dataSourceUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataLevelKey(value: String): Self = this.set("dataLevelKey", value.asInstanceOf[js.Any])
+    def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
     @scala.inline
-    def deleteDataLevelKey: Self = this.set("dataLevelKey", js.undefined)
+    def setEnableRemoteLoadOnDemand(value: Boolean): Self = StObject.set(x, "enableRemoteLoadOnDemand", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceUrl(value: String): Self = this.set("dataSourceUrl", value.asInstanceOf[js.Any])
+    def setEnableRemoteLoadOnDemandUndefined: Self = StObject.set(x, "enableRemoteLoadOnDemand", js.undefined)
     
     @scala.inline
-    def deleteDataSourceUrl: Self = this.set("dataSourceUrl", js.undefined)
+    def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRemoteLoadOnDemand(value: Boolean): Self = this.set("enableRemoteLoadOnDemand", value.asInstanceOf[js.Any])
+    def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
     
     @scala.inline
-    def deleteEnableRemoteLoadOnDemand: Self = this.set("enableRemoteLoadOnDemand", js.undefined)
+    def setFiltering(value: TreeHierarchicalDataSourceSettingsTreeDSFiltering): Self = StObject.set(x, "filtering", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpandedKey(value: String): Self = this.set("expandedKey", value.asInstanceOf[js.Any])
+    def setFilteringUndefined: Self = StObject.set(x, "filtering", js.undefined)
     
     @scala.inline
-    def deleteExpandedKey: Self = this.set("expandedKey", js.undefined)
+    def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFiltering(value: TreeHierarchicalDataSourceSettingsTreeDSFiltering): Self = this.set("filtering", value.asInstanceOf[js.Any])
+    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
     @scala.inline
-    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    def setInitialExpandDepth(value: Double): Self = StObject.set(x, "initialExpandDepth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeignKey(value: String): Self = this.set("foreignKey", value.asInstanceOf[js.Any])
+    def setInitialExpandDepthUndefined: Self = StObject.set(x, "initialExpandDepth", js.undefined)
     
     @scala.inline
-    def deleteForeignKey: Self = this.set("foreignKey", js.undefined)
+    def setInitialFlatDataView(value: Boolean): Self = StObject.set(x, "initialFlatDataView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialExpandDepth(value: Double): Self = this.set("initialExpandDepth", value.asInstanceOf[js.Any])
+    def setInitialFlatDataViewUndefined: Self = StObject.set(x, "initialFlatDataView", js.undefined)
     
     @scala.inline
-    def deleteInitialExpandDepth: Self = this.set("initialExpandDepth", js.undefined)
+    def setPaging(value: TreeHierarchicalDataSourceSettingsTreeDSPaging): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialFlatDataView(value: Boolean): Self = this.set("initialFlatDataView", value.asInstanceOf[js.Any])
+    def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
     
     @scala.inline
-    def deleteInitialFlatDataView: Self = this.set("initialFlatDataView", js.undefined)
+    def setPersistExpansionStates(value: Boolean): Self = StObject.set(x, "persistExpansionStates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaging(value: TreeHierarchicalDataSourceSettingsTreeDSPaging): Self = this.set("paging", value.asInstanceOf[js.Any])
+    def setPersistExpansionStatesUndefined: Self = StObject.set(x, "persistExpansionStates", js.undefined)
     
     @scala.inline
-    def deletePaging: Self = this.set("paging", js.undefined)
+    def setPropertyDataLevel(value: String): Self = StObject.set(x, "propertyDataLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersistExpansionStates(value: Boolean): Self = this.set("persistExpansionStates", value.asInstanceOf[js.Any])
+    def setPropertyDataLevelUndefined: Self = StObject.set(x, "propertyDataLevel", js.undefined)
     
     @scala.inline
-    def deletePersistExpansionStates: Self = this.set("persistExpansionStates", js.undefined)
+    def setPropertyExpanded(value: String): Self = StObject.set(x, "propertyExpanded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyDataLevel(value: String): Self = this.set("propertyDataLevel", value.asInstanceOf[js.Any])
+    def setPropertyExpandedUndefined: Self = StObject.set(x, "propertyExpanded", js.undefined)
     
     @scala.inline
-    def deletePropertyDataLevel: Self = this.set("propertyDataLevel", js.undefined)
+    def setRequestDataCallback(value: js.Function): Self = StObject.set(x, "requestDataCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropertyExpanded(value: String): Self = this.set("propertyExpanded", value.asInstanceOf[js.Any])
+    def setRequestDataCallbackUndefined: Self = StObject.set(x, "requestDataCallback", js.undefined)
     
     @scala.inline
-    def deletePropertyExpanded: Self = this.set("propertyExpanded", js.undefined)
+    def setRequestDataErrorCallback(value: js.Function): Self = StObject.set(x, "requestDataErrorCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDataCallback(value: js.Function): Self = this.set("requestDataCallback", value.asInstanceOf[js.Any])
+    def setRequestDataErrorCallbackUndefined: Self = StObject.set(x, "requestDataErrorCallback", js.undefined)
     
     @scala.inline
-    def deleteRequestDataCallback: Self = this.set("requestDataCallback", js.undefined)
+    def setRequestDataSuccessCallback(value: js.Function): Self = StObject.set(x, "requestDataSuccessCallback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDataErrorCallback(value: js.Function): Self = this.set("requestDataErrorCallback", value.asInstanceOf[js.Any])
+    def setRequestDataSuccessCallbackUndefined: Self = StObject.set(x, "requestDataSuccessCallback", js.undefined)
     
     @scala.inline
-    def deleteRequestDataErrorCallback: Self = this.set("requestDataErrorCallback", js.undefined)
+    def setSorting(value: TreeHierarchicalDataSourceSettingsTreeDSSorting): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestDataSuccessCallback(value: js.Function): Self = this.set("requestDataSuccessCallback", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestDataSuccessCallback: Self = this.set("requestDataSuccessCallback", js.undefined)
-    
-    @scala.inline
-    def setSorting(value: TreeHierarchicalDataSourceSettingsTreeDSSorting): Self = this.set("sorting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSorting: Self = this.set("sorting", js.undefined)
+    def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
   }
 }

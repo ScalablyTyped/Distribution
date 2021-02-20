@@ -1,11 +1,12 @@
 package typings.awsSdk.frauddetectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchGetVariableRequest extends js.Object {
+trait BatchGetVariableRequest extends StObject {
   
   /**
     * The list of variable names to get.
@@ -21,24 +22,12 @@ object BatchGetVariableRequest {
   }
   
   @scala.inline
-  implicit class BatchGetVariableRequestOps[Self <: BatchGetVariableRequest] (val x: Self) extends AnyVal {
+  implicit class BatchGetVariableRequestMutableBuilder[Self <: BatchGetVariableRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNames(value: NameList): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = this.set("names", js.Array(value :_*))
-    
-    @scala.inline
-    def setNames(value: NameList): Self = this.set("names", value.asInstanceOf[js.Any])
+    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

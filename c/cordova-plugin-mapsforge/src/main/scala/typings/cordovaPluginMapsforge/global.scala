@@ -1,12 +1,15 @@
 package typings.cordovaPluginMapsforge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var mapsforge: MapsforgePlugin = js.native
+  @JSGlobal("mapsforge")
+  @js.native
+  def mapsforge: MapsforgePlugin = js.native
+  @scala.inline
+  def mapsforge_=(x: MapsforgePlugin): Unit = js.Dynamic.global.updateDynamic("mapsforge")(x.asInstanceOf[js.Any])
 }

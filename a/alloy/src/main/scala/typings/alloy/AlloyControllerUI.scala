@@ -1,5 +1,6 @@
 package typings.alloy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides convenience methods for working with Titanium Views in Alloy
   */
 @js.native
-trait AlloyControllerUI extends js.Object {
+trait AlloyControllerUI extends StObject {
   
   /**
     * Creates a Titanium UI element with the specified options.

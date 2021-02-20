@@ -5,12 +5,13 @@ import typings.jointjs.mod.dia.Paper.ProgressCallback
 import typings.jointjs.mod.dia.Paper.UpdateStats
 import typings.jointjs.mod.dia.Paper.ViewportCallback
 import typings.jointjs.mod.mvc.View
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchSize extends js.Object {
+trait BatchSize extends StObject {
   
   var batchSize: js.UndefOr[Double] = js.native
   
@@ -31,50 +32,38 @@ object BatchSize {
   }
   
   @scala.inline
-  implicit class BatchSizeOps[Self <: BatchSize] (val x: Self) extends AnyVal {
+  implicit class BatchSizeMutableBuilder[Self <: BatchSize] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMountBatchSize(value: Double): Self = StObject.set(x, "mountBatchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBatchSize(value: Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
-    
-    @scala.inline
-    def setMountBatchSize(value: Double): Self = this.set("mountBatchSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMountBatchSize: Self = this.set("mountBatchSize", js.undefined)
+    def setMountBatchSizeUndefined: Self = StObject.set(x, "mountBatchSize", js.undefined)
     
     @scala.inline
     def setProgress(
       value: (/* done */ Boolean, /* processed */ Double, /* total */ Double, /* stats */ UpdateStats, /* paper */ Paper) => scala.Unit
-    ): Self = this.set("progress", js.Any.fromFunction5(value))
+    ): Self = StObject.set(x, "progress", js.Any.fromFunction5(value))
     
     @scala.inline
-    def deleteProgress: Self = this.set("progress", js.undefined)
+    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
     @scala.inline
-    def setUnmountBatchSize(value: Double): Self = this.set("unmountBatchSize", value.asInstanceOf[js.Any])
+    def setUnmountBatchSize(value: Double): Self = StObject.set(x, "unmountBatchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnmountBatchSize: Self = this.set("unmountBatchSize", js.undefined)
+    def setUnmountBatchSizeUndefined: Self = StObject.set(x, "unmountBatchSize", js.undefined)
     
     @scala.inline
-    def setViewport(value: (/* view */ View[js.Any], /* isMounted */ Boolean, /* paper */ Paper) => Boolean): Self = this.set("viewport", js.Any.fromFunction3(value))
+    def setViewport(value: (/* view */ View[js.Any], /* isMounted */ Boolean, /* paper */ Paper) => Boolean): Self = StObject.set(x, "viewport", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteViewport: Self = this.set("viewport", js.undefined)
+    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

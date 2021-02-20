@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,33 +23,21 @@ object WorkbookWorksheetProtection {
   }
   
   @scala.inline
-  implicit class WorkbookWorksheetProtectionOps[Self <: WorkbookWorksheetProtection] (val x: Self) extends AnyVal {
+  implicit class WorkbookWorksheetProtectionMutableBuilder[Self <: WorkbookWorksheetProtection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: NullableOption[WorkbookWorksheetProtectionOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOptionsNull: Self = StObject.set(x, "options", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setOptions(value: NullableOption[WorkbookWorksheetProtectionOptions]): Self = this.set("options", value.asInstanceOf[js.Any])
+    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOptions: Self = this.set("options", js.undefined)
-    
-    @scala.inline
-    def setOptionsNull: Self = this.set("options", null)
-    
-    @scala.inline
-    def setProtected(value: Boolean): Self = this.set("protected", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtected: Self = this.set("protected", js.undefined)
+    def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
   }
 }

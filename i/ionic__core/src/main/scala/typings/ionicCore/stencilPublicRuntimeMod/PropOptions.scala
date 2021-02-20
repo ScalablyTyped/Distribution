@@ -1,11 +1,12 @@
 package typings.ionicCore.stencilPublicRuntimeMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropOptions extends js.Object {
+trait PropOptions extends StObject {
   
   /**
     * The name of the associated DOM attribute.
@@ -37,39 +38,27 @@ object PropOptions {
   }
   
   @scala.inline
-  implicit class PropOptionsOps[Self <: PropOptions] (val x: Self) extends AnyVal {
+  implicit class PropOptionsMutableBuilder[Self <: PropOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributeNull: Self = StObject.set(x, "attribute", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
     @scala.inline
-    def setAttribute(value: String): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    def setMutable(value: Boolean): Self = StObject.set(x, "mutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    def setMutableUndefined: Self = StObject.set(x, "mutable", js.undefined)
     
     @scala.inline
-    def setAttributeNull: Self = this.set("attribute", null)
+    def setReflect(value: Boolean): Self = StObject.set(x, "reflect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMutable(value: Boolean): Self = this.set("mutable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMutable: Self = this.set("mutable", js.undefined)
-    
-    @scala.inline
-    def setReflect(value: Boolean): Self = this.set("reflect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReflect: Self = this.set("reflect", js.undefined)
+    def setReflectUndefined: Self = StObject.set(x, "reflect", js.undefined)
   }
 }

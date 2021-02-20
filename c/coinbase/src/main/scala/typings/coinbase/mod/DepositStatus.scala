@@ -1,5 +1,6 @@
 package typings.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.coinbase.coinbaseStrings.completed
   - typings.coinbase.coinbaseStrings.canceled
 */
-trait DepositStatus extends js.Object
+trait DepositStatus extends StObject
 object DepositStatus {
   
   @scala.inline

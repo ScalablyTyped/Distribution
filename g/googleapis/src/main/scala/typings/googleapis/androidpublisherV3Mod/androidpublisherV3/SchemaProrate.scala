@@ -1,11 +1,12 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaProrate extends js.Object {
+trait SchemaProrate extends StObject {
   
   /**
     * Default price cannot be zero and must be less than the full subscription
@@ -29,30 +30,18 @@ object SchemaProrate {
   }
   
   @scala.inline
-  implicit class SchemaProrateOps[Self <: SchemaProrate] (val x: Self) extends AnyVal {
+  implicit class SchemaProrateMutableBuilder[Self <: SchemaProrate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultPrice(value: SchemaPrice): Self = StObject.set(x, "defaultPrice", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultPriceUndefined: Self = StObject.set(x, "defaultPrice", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: SchemaMonthDay): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultPrice(value: SchemaPrice): Self = this.set("defaultPrice", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDefaultPrice: Self = this.set("defaultPrice", js.undefined)
-    
-    @scala.inline
-    def setStart(value: SchemaMonthDay): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

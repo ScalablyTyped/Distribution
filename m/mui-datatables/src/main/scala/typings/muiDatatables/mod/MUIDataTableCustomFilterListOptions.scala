@@ -1,12 +1,13 @@
 package typings.muiDatatables.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MUIDataTableCustomFilterListOptions extends js.Object {
+trait MUIDataTableCustomFilterListOptions extends StObject {
   
   /**
     * Function that return a string or array of strings use as the chip label(s).
@@ -39,32 +40,20 @@ object MUIDataTableCustomFilterListOptions {
   }
   
   @scala.inline
-  implicit class MUIDataTableCustomFilterListOptionsOps[Self <: MUIDataTableCustomFilterListOptions] (val x: Self) extends AnyVal {
+  implicit class MUIDataTableCustomFilterListOptionsMutableBuilder[Self <: MUIDataTableCustomFilterListOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRender(value: /* value */ js.Any => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRender(value: /* value */ js.Any => ReactNode): Self = this.set("render", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteRender: Self = this.set("render", js.undefined)
+    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
     @scala.inline
     def setUpdate(
       value: (/* filterList */ js.Array[js.Array[String]], /* filterPos */ Double, /* index */ Double) => js.Array[js.Array[String]]
-    ): Self = this.set("update", js.Any.fromFunction3(value))
+    ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     @scala.inline
-    def deleteUpdate: Self = this.set("update", js.undefined)
+    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

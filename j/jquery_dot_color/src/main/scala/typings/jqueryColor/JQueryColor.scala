@@ -1,11 +1,12 @@
 package typings.jqueryColor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryColor extends js.Object {
+trait JQueryColor extends StObject {
   
   /**
     * Returns the alpha value of this color (float from 0.0 - 1.0).

@@ -1,11 +1,12 @@
 package typings.awsSdk.budgetsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateSubscriberRequest extends js.Object {
+trait UpdateSubscriberRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget whose subscriber you want to update.
@@ -47,33 +48,21 @@ object UpdateSubscriberRequest {
   }
   
   @scala.inline
-  implicit class UpdateSubscriberRequestOps[Self <: UpdateSubscriberRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateSubscriberRequestMutableBuilder[Self <: UpdateSubscriberRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNewSubscriber(value: Subscriber): Self = StObject.set(x, "NewSubscriber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNewSubscriber(value: Subscriber): Self = this.set("NewSubscriber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNotification(value: Notification): Self = this.set("Notification", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOldSubscriber(value: Subscriber): Self = this.set("OldSubscriber", value.asInstanceOf[js.Any])
+    def setOldSubscriber(value: Subscriber): Self = StObject.set(x, "OldSubscriber", value.asInstanceOf[js.Any])
   }
 }

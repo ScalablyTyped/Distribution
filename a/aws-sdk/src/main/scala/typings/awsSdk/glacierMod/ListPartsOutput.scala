@@ -1,11 +1,12 @@
 package typings.awsSdk.glacierMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPartsOutput extends js.Object {
+trait ListPartsOutput extends StObject {
   
   /**
     * The description of the archive that was specified in the Initiate Multipart Upload request.
@@ -51,63 +52,51 @@ object ListPartsOutput {
   }
   
   @scala.inline
-  implicit class ListPartsOutputOps[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
+  implicit class ListPartsOutputMutableBuilder[Self <: ListPartsOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArchiveDescription(value: String): Self = StObject.set(x, "ArchiveDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArchiveDescriptionUndefined: Self = StObject.set(x, "ArchiveDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArchiveDescription(value: String): Self = this.set("ArchiveDescription", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def deleteArchiveDescription: Self = this.set("ArchiveDescription", js.undefined)
+    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: String): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setMultipartUploadId(value: String): Self = StObject.set(x, "MultipartUploadId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    def setMultipartUploadIdUndefined: Self = StObject.set(x, "MultipartUploadId", js.undefined)
     
     @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setPartSizeInBytes(value: long): Self = StObject.set(x, "PartSizeInBytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMultipartUploadId(value: String): Self = this.set("MultipartUploadId", value.asInstanceOf[js.Any])
+    def setPartSizeInBytesUndefined: Self = StObject.set(x, "PartSizeInBytes", js.undefined)
     
     @scala.inline
-    def deleteMultipartUploadId: Self = this.set("MultipartUploadId", js.undefined)
+    def setParts(value: PartList): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartSizeInBytes(value: long): Self = this.set("PartSizeInBytes", value.asInstanceOf[js.Any])
+    def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
     @scala.inline
-    def deletePartSizeInBytes: Self = this.set("PartSizeInBytes", js.undefined)
+    def setPartsVarargs(value: PartListElement*): Self = StObject.set(x, "Parts", js.Array(value :_*))
     
     @scala.inline
-    def setPartsVarargs(value: PartListElement*): Self = this.set("Parts", js.Array(value :_*))
+    def setVaultARN(value: String): Self = StObject.set(x, "VaultARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParts(value: PartList): Self = this.set("Parts", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParts: Self = this.set("Parts", js.undefined)
-    
-    @scala.inline
-    def setVaultARN(value: String): Self = this.set("VaultARN", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVaultARN: Self = this.set("VaultARN", js.undefined)
+    def setVaultARNUndefined: Self = StObject.set(x, "VaultARN", js.undefined)
   }
 }

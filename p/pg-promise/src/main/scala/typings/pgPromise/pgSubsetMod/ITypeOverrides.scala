@@ -1,5 +1,6 @@
 package typings.pgPromise.pgSubsetMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Interface for TypeOverrides;
 // See: https://github.com/brianc/node-postgres/blob/master/packages/pg/lib/type-overrides.js
 @js.native
-trait ITypeOverrides extends js.Object {
+trait ITypeOverrides extends StObject {
   
   def getTypeParser(id: TypeId): js.Any = js.native
   def getTypeParser(id: TypeId, format: ParserFormat): js.Any = js.native

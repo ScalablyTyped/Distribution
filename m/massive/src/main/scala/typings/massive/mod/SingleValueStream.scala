@@ -1,13 +1,14 @@
 package typings.massive.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("massive", "SingleValueStream")
 @js.native
-class SingleValueStream protected () extends js.Object {
+class SingleValueStream protected () extends StObject {
   /** A stream which processes single-key results objects into their values for convenience on the client side. */
   def this(options: AnyObject[_]) = this()
   

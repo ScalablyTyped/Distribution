@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Customitems extends js.Object {
+trait Customitems extends StObject {
   
   var button: js.UndefOr[Maxchars] = js.native
   
@@ -39,63 +40,51 @@ object Customitems {
   }
   
   @scala.inline
-  implicit class CustomitemsOps[Self <: Customitems] (val x: Self) extends AnyVal {
+  implicit class CustomitemsMutableBuilder[Self <: Customitems] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setButton(value: Maxchars): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setCustom-items`(value: js.Array[Function]): Self = StObject.set(x, "custom-items", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setButton(value: Maxchars): Self = this.set("button", value.asInstanceOf[js.Any])
+    def `setCustom-itemsUndefined`: Self = StObject.set(x, "custom-items", js.undefined)
     
     @scala.inline
-    def deleteButton: Self = this.set("button", js.undefined)
+    def `setCustom-itemsVarargs`(value: Function*): Self = StObject.set(x, "custom-items", js.Array(value :_*))
     
     @scala.inline
-    def `setCustom-itemsVarargs`(value: Function*): Self = this.set("custom-items", js.Array(value :_*))
+    def setDocked(value: Boolean): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setCustom-items`(value: js.Array[Function]): Self = this.set("custom-items", value.asInstanceOf[js.Any])
+    def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
     
     @scala.inline
-    def `deleteCustom-items`: Self = this.set("custom-items", js.undefined)
+    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocked(value: Boolean): Self = this.set("docked", value.asInstanceOf[js.Any])
+    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
     @scala.inline
-    def deleteDocked: Self = this.set("docked", js.undefined)
+    def setGear(value: Offsety): Self = StObject.set(x, "gear", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmpty(value: Boolean): Self = this.set("empty", value.asInstanceOf[js.Any])
+    def setGearUndefined: Self = StObject.set(x, "gear", js.undefined)
     
     @scala.inline
-    def deleteEmpty: Self = this.set("empty", js.undefined)
+    def setItem(value: FontcolorHoverstate): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGear(value: Offsety): Self = this.set("gear", value.asInstanceOf[js.Any])
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def deleteGear: Self = this.set("gear", js.undefined)
+    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: FontcolorHoverstate): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
-    
-    @scala.inline
-    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

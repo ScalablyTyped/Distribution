@@ -6,12 +6,13 @@ import typings.dbJs.dbJsStrings.versionchange
 import typings.std.Error
 import typings.std.Event
 import typings.std.EventListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectStoreServer extends js.Object {
+trait ObjectStoreServer extends StObject {
   
   def abort(listener: js.Function1[/* ev */ Event, _]): ObjectStoreServer = js.native
   

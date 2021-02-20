@@ -1,16 +1,15 @@
 package typings.rxLiteAggregates
 
 import typings.rxCore.Rx.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
   
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
     
     def aggregate(accumulator: js.Function2[/* acc */ T, /* value */ T, T]): Observable[T] = js.native
     def aggregate[TAcc](seed: TAcc, accumulator: js.Function2[/* acc */ TAcc, /* value */ T, TAcc]): Observable[TAcc] = js.native
@@ -36,7 +35,7 @@ object Rx extends js.Object {
       thisArg: js.Any
     ): Observable[Double] = js.native
     
-        // alias for all
+    // alias for all
     def contains(value: T): Observable[Boolean] = js.native
     def contains[TOther](value: TOther, comparer: js.Function2[/* value1 */ T, /* value2 */ TOther, Boolean]): Observable[Boolean] = js.native
     
@@ -77,7 +76,7 @@ object Rx extends js.Object {
       thisArg: js.Any
     ): Observable[T] = js.native
     
-        // alias for any
+    // alias for any
     def isEmpty(): Observable[Boolean] = js.native
     
     def last(): Observable[T] = js.native

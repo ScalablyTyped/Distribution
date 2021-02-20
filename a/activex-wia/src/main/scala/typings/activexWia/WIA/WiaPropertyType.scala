@@ -37,6 +37,7 @@ import typings.activexWia.activexWiaNumbers.`6`
 import typings.activexWia.activexWiaNumbers.`7`
 import typings.activexWia.activexWiaNumbers.`8`
 import typings.activexWia.activexWiaNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,7 +85,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexWia.activexWiaNumbers.`106`
   - typings.activexWia.activexWiaNumbers.`119`
 */
-trait WiaPropertyType extends js.Object
+trait WiaPropertyType extends StObject
 object WiaPropertyType {
   
   @scala.inline

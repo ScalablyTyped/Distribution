@@ -1,11 +1,12 @@
 package typings.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RadioMixin extends js.Object {
+trait RadioMixin extends StObject {
   
   var bindEvents: js.Any = js.native
   
@@ -32,33 +33,21 @@ object RadioMixin {
   }
   
   @scala.inline
-  implicit class RadioMixinOps[Self <: RadioMixin] (val x: Self) extends AnyVal {
+  implicit class RadioMixinMutableBuilder[Self <: RadioMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindEvents(value: js.Any): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindRequests(value: js.Any): Self = StObject.set(x, "bindRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetChannel(value: js.Any): Self = StObject.set(x, "getChannel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindEvents(value: js.Any): Self = this.set("bindEvents", value.asInstanceOf[js.Any])
+    def setUnbindEvents(value: js.Any): Self = StObject.set(x, "unbindEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindRequests(value: js.Any): Self = this.set("bindRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetChannel(value: js.Any): Self = this.set("getChannel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnbindEvents(value: js.Any): Self = this.set("unbindEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUnbindRequests(value: js.Any): Self = this.set("unbindRequests", value.asInstanceOf[js.Any])
+    def setUnbindRequests(value: js.Any): Self = StObject.set(x, "unbindRequests", value.asInstanceOf[js.Any])
   }
 }

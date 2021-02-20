@@ -1,5 +1,6 @@
 package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * page.
   */
 @js.native
-trait SchemaListProjectsResponse extends js.Object {
+trait SchemaListProjectsResponse extends StObject {
   
   /**
     * Pagination token.  If the result set is too large to fit in a single
@@ -39,33 +40,21 @@ object SchemaListProjectsResponse {
   }
   
   @scala.inline
-  implicit class SchemaListProjectsResponseOps[Self <: SchemaListProjectsResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaListProjectsResponseMutableBuilder[Self <: SchemaListProjectsResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProjects(value: js.Array[SchemaProject]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
     @scala.inline
-    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
-    
-    @scala.inline
-    def setProjectsVarargs(value: SchemaProject*): Self = this.set("projects", js.Array(value :_*))
-    
-    @scala.inline
-    def setProjects(value: js.Array[SchemaProject]): Self = this.set("projects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProjects: Self = this.set("projects", js.undefined)
+    def setProjectsVarargs(value: SchemaProject*): Self = StObject.set(x, "projects", js.Array(value :_*))
   }
 }

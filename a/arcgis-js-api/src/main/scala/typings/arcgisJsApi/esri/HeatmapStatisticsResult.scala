@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,42 +69,30 @@ object HeatmapStatisticsResult {
   }
   
   @scala.inline
-  implicit class HeatmapStatisticsResultOps[Self <: HeatmapStatisticsResult] (val x: Self) extends AnyVal {
+  implicit class HeatmapStatisticsResultMutableBuilder[Self <: HeatmapStatisticsResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
     @scala.inline
-    def setAvg(value: Double): Self = this.set("avg", value.asInstanceOf[js.Any])
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStddev(value: Double): Self = this.set("stddev", value.asInstanceOf[js.Any])
+    def setSummaryStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "summaryStatistics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCount: Self = this.set("count", js.undefined)
-    
-    @scala.inline
-    def setSummaryStatistics(value: SummaryStatisticsResult): Self = this.set("summaryStatistics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSummaryStatistics: Self = this.set("summaryStatistics", js.undefined)
+    def setSummaryStatisticsUndefined: Self = StObject.set(x, "summaryStatistics", js.undefined)
   }
 }

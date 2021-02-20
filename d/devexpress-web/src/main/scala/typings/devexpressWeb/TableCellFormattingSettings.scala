@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains the settings to define the table cell formatting.
   */
 @js.native
-trait TableCellFormattingSettings extends js.Object {
+trait TableCellFormattingSettings extends StObject {
   
   /**
     * Gets or sets a table cell's bottom margin in twips.
@@ -68,42 +69,30 @@ object TableCellFormattingSettings {
   }
   
   @scala.inline
-  implicit class TableCellFormattingSettingsOps[Self <: TableCellFormattingSettings] (val x: Self) extends AnyVal {
+  implicit class TableCellFormattingSettingsMutableBuilder[Self <: TableCellFormattingSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginBottom(value: Double): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginsSameAsTable(value: Boolean): Self = StObject.set(x, "marginsSameAsTable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRight(value: Double): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setPreferredWidth(value: TableWidthUnit): Self = StObject.set(x, "preferredWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginsSameAsTable(value: Boolean): Self = this.set("marginsSameAsTable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setNoWrap(value: Boolean): Self = this.set("noWrap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreferredWidth(value: TableWidthUnit): Self = this.set("preferredWidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalAlignment(value: TableCellVerticalAlignment): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    def setVerticalAlignment(value: TableCellVerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
   }
 }

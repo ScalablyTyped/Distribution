@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IClustererOptions extends js.Object {
+trait IClustererOptions extends StObject {
   
   var gridSize: js.UndefOr[Double] = js.native
   
@@ -40,102 +41,90 @@ object IClustererOptions {
   }
   
   @scala.inline
-  implicit class IClustererOptionsOps[Self <: IClustererOptions] (val x: Self) extends AnyVal {
+  implicit class IClustererOptionsMutableBuilder[Self <: IClustererOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupByCoordinates(value: Boolean): Self = StObject.set(x, "groupByCoordinates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridSize(value: Double): Self = this.set("gridSize", value.asInstanceOf[js.Any])
+    def setGroupByCoordinatesUndefined: Self = StObject.set(x, "groupByCoordinates", js.undefined)
     
     @scala.inline
-    def deleteGridSize: Self = this.set("gridSize", js.undefined)
+    def setHasBalloon(value: Boolean): Self = StObject.set(x, "hasBalloon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupByCoordinates(value: Boolean): Self = this.set("groupByCoordinates", value.asInstanceOf[js.Any])
+    def setHasBalloonUndefined: Self = StObject.set(x, "hasBalloon", js.undefined)
     
     @scala.inline
-    def deleteGroupByCoordinates: Self = this.set("groupByCoordinates", js.undefined)
+    def setHasHint(value: Boolean): Self = StObject.set(x, "hasHint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasBalloon(value: Boolean): Self = this.set("hasBalloon", value.asInstanceOf[js.Any])
+    def setHasHintUndefined: Self = StObject.set(x, "hasHint", js.undefined)
     
     @scala.inline
-    def deleteHasBalloon: Self = this.set("hasBalloon", js.undefined)
+    def setMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasHint(value: Boolean): Self = this.set("hasHint", value.asInstanceOf[js.Any])
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def deleteHasHint: Self = this.set("hasHint", js.undefined)
+    def setMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("margin", js.Array(value :_*))
+    def setMaxZoom(value: js.Array[Double] | Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setMaxZoomVarargs(value: Double*): Self = StObject.set(x, "maxZoom", js.Array(value :_*))
     
     @scala.inline
-    def setMaxZoomVarargs(value: Double*): Self = this.set("maxZoom", js.Array(value :_*))
+    def setMinClusterSize(value: Double): Self = StObject.set(x, "minClusterSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxZoom(value: js.Array[Double] | Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    def setMinClusterSizeUndefined: Self = StObject.set(x, "minClusterSize", js.undefined)
     
     @scala.inline
-    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    def setPreset(value: PresetKey): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinClusterSize(value: Double): Self = this.set("minClusterSize", value.asInstanceOf[js.Any])
+    def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
     
     @scala.inline
-    def deleteMinClusterSize: Self = this.set("minClusterSize", js.undefined)
+    def setShowInAlphabeticalOrder(value: Boolean): Self = StObject.set(x, "showInAlphabeticalOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreset(value: PresetKey): Self = this.set("preset", value.asInstanceOf[js.Any])
+    def setShowInAlphabeticalOrderUndefined: Self = StObject.set(x, "showInAlphabeticalOrder", js.undefined)
     
     @scala.inline
-    def deletePreset: Self = this.set("preset", js.undefined)
+    def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowInAlphabeticalOrder(value: Boolean): Self = this.set("showInAlphabeticalOrder", value.asInstanceOf[js.Any])
+    def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
     
     @scala.inline
-    def deleteShowInAlphabeticalOrder: Self = this.set("showInAlphabeticalOrder", js.undefined)
+    def setViewportMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "viewportMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseMapMargin(value: Boolean): Self = this.set("useMapMargin", value.asInstanceOf[js.Any])
+    def setViewportMarginUndefined: Self = StObject.set(x, "viewportMargin", js.undefined)
     
     @scala.inline
-    def deleteUseMapMargin: Self = this.set("useMapMargin", js.undefined)
+    def setViewportMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "viewportMargin", js.Array(value :_*))
     
     @scala.inline
-    def setViewportMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("viewportMargin", js.Array(value :_*))
+    def setZoomMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewportMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("viewportMargin", value.asInstanceOf[js.Any])
+    def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     
     @scala.inline
-    def deleteViewportMargin: Self = this.set("viewportMargin", js.undefined)
-    
-    @scala.inline
-    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("zoomMargin", js.Array(value :_*))
-    
-    @scala.inline
-    def setZoomMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("zoomMargin", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomMargin: Self = this.set("zoomMargin", js.undefined)
+    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
   }
 }

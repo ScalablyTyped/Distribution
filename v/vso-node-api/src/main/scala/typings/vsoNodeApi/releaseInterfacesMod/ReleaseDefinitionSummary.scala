@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReleaseDefinitionSummary extends js.Object {
+trait ReleaseDefinitionSummary extends StObject {
   
   var environments: js.Array[ReleaseDefinitionEnvironmentSummary] = js.native
   
@@ -26,33 +27,21 @@ object ReleaseDefinitionSummary {
   }
   
   @scala.inline
-  implicit class ReleaseDefinitionSummaryOps[Self <: ReleaseDefinitionSummary] (val x: Self) extends AnyVal {
+  implicit class ReleaseDefinitionSummaryMutableBuilder[Self <: ReleaseDefinitionSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnvironments(value: js.Array[ReleaseDefinitionEnvironmentSummary]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentsVarargs(value: ReleaseDefinitionEnvironmentSummary*): Self = StObject.set(x, "environments", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironmentsVarargs(value: ReleaseDefinitionEnvironmentSummary*): Self = this.set("environments", js.Array(value :_*))
+    def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnvironments(value: js.Array[ReleaseDefinitionEnvironmentSummary]): Self = this.set("environments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = this.set("releaseDefinition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReleasesVarargs(value: Release*): Self = this.set("releases", js.Array(value :_*))
-    
-    @scala.inline
-    def setReleases(value: js.Array[Release]): Self = this.set("releases", value.asInstanceOf[js.Any])
+    def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
   }
 }

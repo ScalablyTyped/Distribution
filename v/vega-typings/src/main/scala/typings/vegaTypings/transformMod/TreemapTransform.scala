@@ -5,6 +5,7 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.utilMod.Vector6
 import typings.vegaTypings.vegaTypingsStrings.treemap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,105 +53,93 @@ object TreemapTransform {
   }
   
   @scala.inline
-  implicit class TreemapTransformOps[Self <: TreemapTransform] (val x: Self) extends AnyVal {
+  implicit class TreemapTransformMutableBuilder[Self <: TreemapTransform] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAs(value: (Vector6[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setField(value: FieldRef): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: treemap): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setAs(value: (Vector6[String | SignalRef]) | SignalRef): Self = this.set("as", value.asInstanceOf[js.Any])
+    def setMethod(value: TreemapMethod | SignalRef): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAs: Self = this.set("as", js.undefined)
+    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setField(value: FieldRef): Self = this.set("field", value.asInstanceOf[js.Any])
+    def setPadding(value: Double | SignalRef): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteField: Self = this.set("field", js.undefined)
+    def setPaddingBottom(value: Double | SignalRef): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: TreemapMethod | SignalRef): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
+    def setPaddingInner(value: Double | SignalRef): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: Double | SignalRef): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingLeft(value: Double | SignalRef): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingBottom(value: Double | SignalRef): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
     @scala.inline
-    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    def setPaddingOuter(value: Double | SignalRef): Self = StObject.set(x, "paddingOuter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingInner(value: Double | SignalRef): Self = this.set("paddingInner", value.asInstanceOf[js.Any])
+    def setPaddingOuterUndefined: Self = StObject.set(x, "paddingOuter", js.undefined)
     
     @scala.inline
-    def deletePaddingInner: Self = this.set("paddingInner", js.undefined)
+    def setPaddingRight(value: Double | SignalRef): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingLeft(value: Double | SignalRef): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
     @scala.inline
-    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    def setPaddingTop(value: Double | SignalRef): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingOuter(value: Double | SignalRef): Self = this.set("paddingOuter", value.asInstanceOf[js.Any])
+    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     @scala.inline
-    def deletePaddingOuter: Self = this.set("paddingOuter", js.undefined)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setPaddingRight(value: Double | SignalRef): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    def setRatio(value: Double | SignalRef): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
     @scala.inline
-    def setPaddingTop(value: Double | SignalRef): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    def setRound(value: Boolean | SignalRef): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
+    def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
     
     @scala.inline
-    def setRatio(value: Double | SignalRef): Self = this.set("ratio", value.asInstanceOf[js.Any])
+    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRatio: Self = this.set("ratio", js.undefined)
+    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     @scala.inline
-    def setRound(value: Boolean | SignalRef): Self = this.set("round", value.asInstanceOf[js.Any])
+    def setSort(value: Compare): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRound: Self = this.set("round", js.undefined)
+    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     @scala.inline
-    def setSize(value: (Vector2[Double | SignalRef]) | SignalRef): Self = this.set("size", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSize: Self = this.set("size", js.undefined)
-    
-    @scala.inline
-    def setSort(value: Compare): Self = this.set("sort", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSort: Self = this.set("sort", js.undefined)
+    def setType(value: treemap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

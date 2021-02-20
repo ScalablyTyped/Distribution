@@ -1,5 +1,6 @@
 package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Details for the tool used to call the API.
   */
 @js.native
-trait SchemaBuildBazelRemoteExecutionV2ToolDetails extends js.Object {
+trait SchemaBuildBazelRemoteExecutionV2ToolDetails extends StObject {
   
   /**
     * Name of the tool, e.g. bazel.
@@ -29,30 +30,18 @@ object SchemaBuildBazelRemoteExecutionV2ToolDetails {
   }
   
   @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2ToolDetailsOps[Self <: SchemaBuildBazelRemoteExecutionV2ToolDetails] (val x: Self) extends AnyVal {
+  implicit class SchemaBuildBazelRemoteExecutionV2ToolDetailsMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2ToolDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setToolName(value: String): Self = StObject.set(x, "toolName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setToolNameUndefined: Self = StObject.set(x, "toolName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setToolVersion(value: String): Self = StObject.set(x, "toolVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolName(value: String): Self = this.set("toolName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolName: Self = this.set("toolName", js.undefined)
-    
-    @scala.inline
-    def setToolVersion(value: String): Self = this.set("toolVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteToolVersion: Self = this.set("toolVersion", js.undefined)
+    def setToolVersionUndefined: Self = StObject.set(x, "toolVersion", js.undefined)
   }
 }

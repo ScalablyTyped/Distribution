@@ -10,6 +10,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,59 +68,47 @@ object DistanceMeasurement2DProperties {
   }
   
   @scala.inline
-  implicit class DistanceMeasurement2DPropertiesOps[Self <: DistanceMeasurement2DProperties] (val x: Self) extends AnyVal {
+  implicit class DistanceMeasurement2DPropertiesMutableBuilder[Self <: DistanceMeasurement2DProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     @scala.inline
     def setUnit(
       value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-    ): Self = this.set("unit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
-    
-    @scala.inline
-    def setUnitOptionsVarargs(
-      value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
-    ): Self = this.set("unitOptions", js.Array(value :_*))
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUnitOptions(
       value: js.Array[
           metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
         ]
-    ): Self = this.set("unitOptions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnitOptions: Self = this.set("unitOptions", js.undefined)
+    def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
     
     @scala.inline
-    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    def setUnitOptionsVarargs(
+      value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
     
     @scala.inline
-    def deleteView: Self = this.set("view", js.undefined)
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def setViewModel(value: DistanceMeasurement2DViewModelProperties): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+    def setViewModel(value: DistanceMeasurement2DViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    @scala.inline
+    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -10,12 +10,13 @@ import typings.hafasClient.hafasClientStrings.taxi
 import typings.hafasClient.hafasClientStrings.train
 import typings.hafasClient.hafasClientStrings.walking
 import typings.hafasClient.hafasClientStrings.watercraft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Line extends js.Object {
+trait Line extends StObject {
   
   var additionalName: js.UndefOr[String] = js.native
   
@@ -60,114 +61,102 @@ object Line {
   }
   
   @scala.inline
-  implicit class LineOps[Self <: Line] (val x: Self) extends AnyVal {
+  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalName(value: String): Self = StObject.set(x, "additionalName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalNameUndefined: Self = StObject.set(x, "additionalName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdminCode(value: String): Self = StObject.set(x, "adminCode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: line): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setAdminCodeUndefined: Self = StObject.set(x, "adminCode", js.undefined)
     
     @scala.inline
-    def setAdditionalName(value: String): Self = this.set("additionalName", value.asInstanceOf[js.Any])
+    def setExpress(value: Boolean): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdditionalName: Self = this.set("additionalName", js.undefined)
+    def setExpressUndefined: Self = StObject.set(x, "express", js.undefined)
     
     @scala.inline
-    def setAdminCode(value: String): Self = this.set("adminCode", value.asInstanceOf[js.Any])
+    def setFahrtNr(value: String): Self = StObject.set(x, "fahrtNr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAdminCode: Self = this.set("adminCode", js.undefined)
+    def setFahrtNrUndefined: Self = StObject.set(x, "fahrtNr", js.undefined)
     
     @scala.inline
-    def setExpress(value: Boolean): Self = this.set("express", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpress: Self = this.set("express", js.undefined)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setFahrtNr(value: String): Self = this.set("fahrtNr", value.asInstanceOf[js.Any])
+    def setMetro(value: Boolean): Self = StObject.set(x, "metro", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFahrtNr: Self = this.set("fahrtNr", js.undefined)
+    def setMetroUndefined: Self = StObject.set(x, "metro", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setMetro(value: Boolean): Self = this.set("metro", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMetro: Self = this.set("metro", js.undefined)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setNight(value: Boolean): Self = StObject.set(x, "night", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setNightUndefined: Self = StObject.set(x, "night", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNr(value: Double): Self = StObject.set(x, "nr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setNrUndefined: Self = StObject.set(x, "nr", js.undefined)
     
     @scala.inline
-    def setNight(value: Boolean): Self = this.set("night", value.asInstanceOf[js.Any])
+    def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNight: Self = this.set("night", js.undefined)
+    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
     @scala.inline
-    def setNr(value: Double): Self = this.set("nr", value.asInstanceOf[js.Any])
+    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNr: Self = this.set("nr", js.undefined)
+    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
     @scala.inline
-    def setOperator(value: Operator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOperator: Self = this.set("operator", js.undefined)
+    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
     @scala.inline
-    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    def setRoutes(value: js.Array[String]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProduct: Self = this.set("product", js.undefined)
+    def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
     @scala.inline
-    def setPublic(value: Boolean): Self = this.set("public", value.asInstanceOf[js.Any])
+    def setRoutesVarargs(value: String*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
-    def deletePublic: Self = this.set("public", js.undefined)
+    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutesVarargs(value: String*): Self = this.set("routes", js.Array(value :_*))
+    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
     @scala.inline
-    def setRoutes(value: js.Array[String]): Self = this.set("routes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRoutes: Self = this.set("routes", js.undefined)
-    
-    @scala.inline
-    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

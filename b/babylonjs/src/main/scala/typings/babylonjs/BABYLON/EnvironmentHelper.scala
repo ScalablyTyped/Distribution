@@ -2,12 +2,13 @@ package typings.babylonjs.BABYLON
 
 import typings.babylonjs.anon.Exception
 import typings.babylonjs.anon.PartialIEnvironmentHelperBackgroundYRotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnvironmentHelper extends js.Object {
+trait EnvironmentHelper extends StObject {
   
   var _errorHandler: js.Any = js.native
   

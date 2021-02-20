@@ -14,20 +14,14 @@ import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/aws", "eks")
-@js.native
-object eks extends js.Object {
+object eks {
   
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
-  
-  def getClusterAuth(args: GetClusterAuthArgs): js.Promise[GetClusterAuthResult] = js.native
-  def getClusterAuth(args: GetClusterAuthArgs, opts: InvokeOptions): js.Promise[GetClusterAuthResult] = js.native
-  
+  @JSImport("@pulumi/aws", "eks.Cluster")
   @js.native
   class Cluster protected ()
     extends typings.pulumiAws.eksMod.Cluster {
@@ -42,8 +36,7 @@ object eks extends js.Object {
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object Cluster extends js.Object {
+  object Cluster {
     
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
@@ -54,18 +47,29 @@ object eks extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "eks.Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.eksClusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws", "eks.Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.eksClusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws", "eks.Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.eksClusterMod.Cluster = js.native
+    @JSImport("@pulumi/aws", "eks.Cluster.get")
+    @js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.eksClusterMod.Cluster = js.native
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "eks.Cluster.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/cluster.Cluster */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "eks.FargateProfile")
   @js.native
   class FargateProfile protected ()
     extends typings.pulumiAws.eksMod.FargateProfile {
@@ -80,8 +84,7 @@ object eks extends js.Object {
     def this(name: String, args: FargateProfileArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object FargateProfile extends js.Object {
+  object FargateProfile {
     
     /**
       * Get an existing FargateProfile resource's state with the given name, ID, and optional extra
@@ -92,18 +95,29 @@ object eks extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "eks.FargateProfile.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.fargateProfileMod.FargateProfile = js.native
+    @JSImport("@pulumi/aws", "eks.FargateProfile.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.fargateProfileMod.FargateProfile = js.native
+    @JSImport("@pulumi/aws", "eks.FargateProfile.get")
+    @js.native
     def get(name: String, id: Input[ID], state: FargateProfileState): typings.pulumiAws.fargateProfileMod.FargateProfile = js.native
+    @JSImport("@pulumi/aws", "eks.FargateProfile.get")
+    @js.native
     def get(name: String, id: Input[ID], state: FargateProfileState, opts: CustomResourceOptions): typings.pulumiAws.fargateProfileMod.FargateProfile = js.native
     
     /**
       * Returns true if the given object is an instance of FargateProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "eks.FargateProfile.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/fargateProfile.FargateProfile */ Boolean = js.native
   }
   
+  @JSImport("@pulumi/aws", "eks.NodeGroup")
   @js.native
   class NodeGroup protected ()
     extends typings.pulumiAws.eksMod.NodeGroup {
@@ -118,8 +132,7 @@ object eks extends js.Object {
     def this(name: String, args: NodeGroupArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
-  @js.native
-  object NodeGroup extends js.Object {
+  object NodeGroup {
     
     /**
       * Get an existing NodeGroup resource's state with the given name, ID, and optional extra
@@ -130,15 +143,39 @@ object eks extends js.Object {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
+    @JSImport("@pulumi/aws", "eks.NodeGroup.get")
+    @js.native
     def get(name: String, id: Input[ID]): typings.pulumiAws.nodeGroupMod.NodeGroup = js.native
+    @JSImport("@pulumi/aws", "eks.NodeGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.nodeGroupMod.NodeGroup = js.native
+    @JSImport("@pulumi/aws", "eks.NodeGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: NodeGroupState): typings.pulumiAws.nodeGroupMod.NodeGroup = js.native
+    @JSImport("@pulumi/aws", "eks.NodeGroup.get")
+    @js.native
     def get(name: String, id: Input[ID], state: NodeGroupState, opts: CustomResourceOptions): typings.pulumiAws.nodeGroupMod.NodeGroup = js.native
     
     /**
       * Returns true if the given object is an instance of NodeGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
+    @JSImport("@pulumi/aws", "eks.NodeGroup.isInstance")
+    @js.native
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean = js.native
   }
+  
+  @JSImport("@pulumi/aws", "eks.getCluster")
+  @js.native
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  @JSImport("@pulumi/aws", "eks.getCluster")
+  @js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  
+  @JSImport("@pulumi/aws", "eks.getClusterAuth")
+  @js.native
+  def getClusterAuth(args: GetClusterAuthArgs): js.Promise[GetClusterAuthResult] = js.native
+  @JSImport("@pulumi/aws", "eks.getClusterAuth")
+  @js.native
+  def getClusterAuth(args: GetClusterAuthArgs, opts: InvokeOptions): js.Promise[GetClusterAuthResult] = js.native
 }

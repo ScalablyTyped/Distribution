@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** LogCollection. */
 @js.native
-trait LogCollection extends js.Object {
+trait LogCollection extends StObject {
   
   /** An array of objects describing log events. */
   var logs: js.Array[Log] = js.native
@@ -23,27 +24,15 @@ object LogCollection {
   }
   
   @scala.inline
-  implicit class LogCollectionOps[Self <: LogCollection] (val x: Self) extends AnyVal {
+  implicit class LogCollectionMutableBuilder[Self <: LogCollection] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLogs(value: js.Array[Log]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLogsVarargs(value: Log*): Self = StObject.set(x, "logs", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLogsVarargs(value: Log*): Self = this.set("logs", js.Array(value :_*))
-    
-    @scala.inline
-    def setLogs(value: js.Array[Log]): Self = this.set("logs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPagination(value: LogPagination): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    def setPagination(value: LogPagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

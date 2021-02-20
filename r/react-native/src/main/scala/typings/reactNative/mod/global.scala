@@ -1,17 +1,22 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
+  @JSGlobal("ErrorUtils")
+  @js.native
   val ErrorUtils: typings.reactNative.mod.ErrorUtils = js.native
   
+  @JSGlobal("HermesInternal")
+  @js.native
   val HermesInternal: Null | js.Object = js.native
   
+  @JSGlobal("__BUNDLE_START_TIME__")
+  @js.native
   val __BUNDLE_START_TIME__ : Double = js.native
   
   /**
@@ -19,9 +24,15 @@ object global extends js.Object {
     * Typical usage:
     * <code> if (__DEV__) console.log('Running in dev mode')</code>
     */
+  @JSGlobal("__DEV__")
+  @js.native
   val __DEV__ : Boolean = js.native
   
-  var console: Console_ = js.native
+  @JSGlobal("console")
+  @js.native
+  def console: Console_ = js.native
+  @scala.inline
+  def console_=(x: Console_): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
   
   /**
     * This contains the non-native `XMLHttpRequest` object, which you can use if you want to route network requests
@@ -31,16 +42,22 @@ object global extends js.Object {
     *
     * @see https://github.com/facebook/react-native/issues/934
     */
+  @JSGlobal("originalXMLHttpRequest")
+  @js.native
   val originalXMLHttpRequest: js.Any = js.native
   
-  var require: NodeRequire = js.native
+  @JSGlobal("require")
+  @js.native
+  def require: NodeRequire = js.native
+  @scala.inline
+  def require_=(x: NodeRequire): Unit = js.Dynamic.global.updateDynamic("require")(x.asInstanceOf[js.Any])
   
   /**
     * Console polyfill
     * @see https://reactnative.dev/docs/javascript-environment#polyfills
     */
   @js.native
-  trait Console_ extends js.Object {
+  trait Console_ extends StObject {
     
     def debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DkimAttributes extends js.Object {
+trait DkimAttributes extends StObject {
   
   /**
     * A string that indicates how DKIM was configured for the identity. There are two possible values:    AWS_SES – Indicates that DKIM was configured for the identity by using Easy DKIM.    EXTERNAL – Indicates that DKIM was configured for the identity by using Bring Your Own DKIM (BYODKIM).  
@@ -36,45 +37,33 @@ object DkimAttributes {
   }
   
   @scala.inline
-  implicit class DkimAttributesOps[Self <: DkimAttributes] (val x: Self) extends AnyVal {
+  implicit class DkimAttributesMutableBuilder[Self <: DkimAttributes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = StObject.set(x, "SigningAttributesOrigin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSigningAttributesOriginUndefined: Self = StObject.set(x, "SigningAttributesOrigin", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSigningEnabled(value: Enabled): Self = StObject.set(x, "SigningEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = this.set("SigningAttributesOrigin", value.asInstanceOf[js.Any])
+    def setSigningEnabledUndefined: Self = StObject.set(x, "SigningEnabled", js.undefined)
     
     @scala.inline
-    def deleteSigningAttributesOrigin: Self = this.set("SigningAttributesOrigin", js.undefined)
+    def setStatus(value: DkimStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSigningEnabled(value: Enabled): Self = this.set("SigningEnabled", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteSigningEnabled: Self = this.set("SigningEnabled", js.undefined)
+    def setTokens(value: DnsTokenList): Self = StObject.set(x, "Tokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: DkimStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    def setTokensUndefined: Self = StObject.set(x, "Tokens", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setTokensVarargs(value: DnsToken*): Self = this.set("Tokens", js.Array(value :_*))
-    
-    @scala.inline
-    def setTokens(value: DnsTokenList): Self = this.set("Tokens", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTokens: Self = this.set("Tokens", js.undefined)
+    def setTokensVarargs(value: DnsToken*): Self = StObject.set(x, "Tokens", js.Array(value :_*))
   }
 }

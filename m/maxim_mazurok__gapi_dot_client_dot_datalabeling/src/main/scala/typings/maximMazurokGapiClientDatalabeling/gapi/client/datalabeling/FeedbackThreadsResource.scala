@@ -3,12 +3,13 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDatalabeling.anon.Callback
 import typings.maximMazurokGapiClientDatalabeling.anon.Oauthtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeedbackThreadsResource extends js.Object {
+trait FeedbackThreadsResource extends StObject {
   
   /** Delete a FeedbackThread. */
   def delete(): Request[js.Object] = js.native

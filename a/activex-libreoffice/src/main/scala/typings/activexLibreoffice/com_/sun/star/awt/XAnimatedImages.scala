@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XContainer
 import typings.activexLibreoffice.com_.sun.star.container.XContainerListener
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,45 +101,33 @@ object XAnimatedImages {
   }
   
   @scala.inline
-  implicit class XAnimatedImagesOps[Self <: XAnimatedImages] (val x: Self) extends AnyVal {
+  implicit class XAnimatedImagesMutableBuilder[Self <: XAnimatedImages] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoRepeat(value: Boolean): Self = StObject.set(x, "AutoRepeat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetImageSet(value: Double => SafeArray[String]): Self = StObject.set(x, "getImageSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetImageSetCount(value: () => Double): Self = StObject.set(x, "getImageSetCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAutoRepeat(value: Boolean): Self = this.set("AutoRepeat", value.asInstanceOf[js.Any])
+    def setImageSetCount(value: Double): Self = StObject.set(x, "ImageSetCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImageSetCount(value: Double): Self = this.set("ImageSetCount", value.asInstanceOf[js.Any])
+    def setInsertImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "insertImageSet", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setScaleMode(value: Double): Self = this.set("ScaleMode", value.asInstanceOf[js.Any])
+    def setRemoveImageSet(value: Double => Unit): Self = StObject.set(x, "removeImageSet", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setStepTime(value: Double): Self = this.set("StepTime", value.asInstanceOf[js.Any])
+    def setReplaceImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = StObject.set(x, "replaceImageSet", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setGetImageSet(value: Double => SafeArray[String]): Self = this.set("getImageSet", js.Any.fromFunction1(value))
+    def setScaleMode(value: Double): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetImageSetCount(value: () => Double): Self = this.set("getImageSetCount", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setInsertImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = this.set("insertImageSet", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setRemoveImageSet(value: Double => Unit): Self = this.set("removeImageSet", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setReplaceImageSet(value: (Double, SeqEquiv[String]) => Unit): Self = this.set("replaceImageSet", js.Any.fromFunction2(value))
+    def setStepTime(value: Double): Self = StObject.set(x, "StepTime", value.asInstanceOf[js.Any])
   }
 }

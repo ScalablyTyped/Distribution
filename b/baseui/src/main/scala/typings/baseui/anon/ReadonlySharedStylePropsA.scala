@@ -6,13 +6,14 @@ import typings.baseui.baseuiStrings.negative
 import typings.baseui.baseuiStrings.positive
 import typings.baseui.baseuiStrings.toast
 import typings.baseui.baseuiStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<baseui.baseui/toast.SharedStylePropsArg> */
 @js.native
-trait ReadonlySharedStylePropsA extends js.Object {
+trait ReadonlySharedStylePropsA extends StObject {
   
   @JSName("$closeable")
   val $closeable: js.UndefOr[Boolean] = js.native
@@ -38,48 +39,36 @@ object ReadonlySharedStylePropsA {
   }
   
   @scala.inline
-  implicit class ReadonlySharedStylePropsAOps[Self <: ReadonlySharedStylePropsA] (val x: Self) extends AnyVal {
+  implicit class ReadonlySharedStylePropsAMutableBuilder[Self <: ReadonlySharedStylePropsA] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set$isRendered(value: Boolean): Self = StObject.set(x, "$isRendered", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$closeable(value: Boolean): Self = this.set("$closeable", value.asInstanceOf[js.Any])
+    def set$isRenderedUndefined: Self = StObject.set(x, "$isRendered", js.undefined)
     
     @scala.inline
-    def delete$closeable: Self = this.set("$closeable", js.undefined)
+    def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isRendered(value: Boolean): Self = this.set("$isRendered", value.asInstanceOf[js.Any])
+    def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
     
     @scala.inline
-    def delete$isRendered: Self = this.set("$isRendered", js.undefined)
+    def set$kind(value: info | positive | warning | negative): Self = StObject.set(x, "$kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$isVisible(value: Boolean): Self = this.set("$isVisible", value.asInstanceOf[js.Any])
+    def set$kindUndefined: Self = StObject.set(x, "$kind", js.undefined)
     
     @scala.inline
-    def delete$isVisible: Self = this.set("$isVisible", js.undefined)
+    def set$type(value: `inline` | toast): Self = StObject.set(x, "$type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$kind(value: info | positive | warning | negative): Self = this.set("$kind", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$kind: Self = this.set("$kind", js.undefined)
-    
-    @scala.inline
-    def set$type(value: `inline` | toast): Self = this.set("$type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$type: Self = this.set("$type", js.undefined)
+    def set$typeUndefined: Self = StObject.set(x, "$type", js.undefined)
   }
 }

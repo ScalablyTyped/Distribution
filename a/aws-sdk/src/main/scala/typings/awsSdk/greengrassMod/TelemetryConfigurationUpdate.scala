@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TelemetryConfigurationUpdate extends js.Object {
+trait TelemetryConfigurationUpdate extends StObject {
   
   /**
     * Configure telemetry to be on or off.
@@ -21,21 +22,9 @@ object TelemetryConfigurationUpdate {
   }
   
   @scala.inline
-  implicit class TelemetryConfigurationUpdateOps[Self <: TelemetryConfigurationUpdate] (val x: Self) extends AnyVal {
+  implicit class TelemetryConfigurationUpdateMutableBuilder[Self <: TelemetryConfigurationUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTelemetry(value: Telemetry): Self = this.set("Telemetry", value.asInstanceOf[js.Any])
+    def setTelemetry(value: Telemetry): Self = StObject.set(x, "Telemetry", value.asInstanceOf[js.Any])
   }
 }

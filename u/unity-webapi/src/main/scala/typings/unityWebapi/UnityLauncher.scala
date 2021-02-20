@@ -1,11 +1,12 @@
 package typings.unityWebapi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnityLauncher extends js.Object {
+trait UnityLauncher extends StObject {
   
   def addAction(name: String, onActionInvoked: js.Function): js.Any = js.native
   
@@ -41,42 +42,30 @@ object UnityLauncher {
   }
   
   @scala.inline
-  implicit class UnityLauncherOps[Self <: UnityLauncher] (val x: Self) extends AnyVal {
+  implicit class UnityLauncherMutableBuilder[Self <: UnityLauncher] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddAction(value: (String, js.Function) => js.Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClearCount(value: () => js.Any): Self = StObject.set(x, "clearCount", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClearProgress(value: () => js.Any): Self = StObject.set(x, "clearProgress", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAddAction(value: (String, js.Function) => js.Any): Self = this.set("addAction", js.Any.fromFunction2(value))
+    def setRemoveAction(value: String => js.Any): Self = StObject.set(x, "removeAction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setClearCount(value: () => js.Any): Self = this.set("clearCount", js.Any.fromFunction0(value))
+    def setRemoveActions(value: () => js.Any): Self = StObject.set(x, "removeActions", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClearProgress(value: () => js.Any): Self = this.set("clearProgress", js.Any.fromFunction0(value))
+    def setSetCount(value: Double => js.Any): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveAction(value: String => js.Any): Self = this.set("removeAction", js.Any.fromFunction1(value))
+    def setSetProgress(value: Double => js.Any): Self = StObject.set(x, "setProgress", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRemoveActions(value: () => js.Any): Self = this.set("removeActions", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetCount(value: Double => js.Any): Self = this.set("setCount", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetProgress(value: Double => js.Any): Self = this.set("setProgress", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetUrgent(value: Boolean => js.Any): Self = this.set("setUrgent", js.Any.fromFunction1(value))
+    def setSetUrgent(value: Boolean => js.Any): Self = StObject.set(x, "setUrgent", js.Any.fromFunction1(value))
   }
 }

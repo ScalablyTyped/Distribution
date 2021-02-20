@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterAction extends js.Object {
+trait EnterAction extends StObject {
   
   /**
     * Describes text to be appended after the new line and after the indentation.
@@ -31,33 +32,21 @@ object EnterAction {
   }
   
   @scala.inline
-  implicit class EnterActionOps[Self <: EnterAction] (val x: Self) extends AnyVal {
+  implicit class EnterActionMutableBuilder[Self <: EnterAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndentAction(value: IndentAction): Self = StObject.set(x, "indentAction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndentAction(value: IndentAction): Self = this.set("indentAction", value.asInstanceOf[js.Any])
+    def setRemoveText(value: Double): Self = StObject.set(x, "removeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAppendText(value: String): Self = this.set("appendText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAppendText: Self = this.set("appendText", js.undefined)
-    
-    @scala.inline
-    def setRemoveText(value: Double): Self = this.set("removeText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRemoveText: Self = this.set("removeText", js.undefined)
+    def setRemoveTextUndefined: Self = StObject.set(x, "removeText", js.undefined)
   }
 }

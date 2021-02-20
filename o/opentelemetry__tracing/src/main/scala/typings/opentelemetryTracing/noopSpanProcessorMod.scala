@@ -1,14 +1,14 @@
 package typings.opentelemetryTracing
 
 import typings.opentelemetryTracing.spanProcessorMod.SpanProcessor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/tracing/build/src/NoopSpanProcessor", JSImport.Namespace)
-@js.native
-object noopSpanProcessorMod extends js.Object {
+object noopSpanProcessorMod {
   
+  @JSImport("@opentelemetry/tracing/build/src/NoopSpanProcessor", "NoopSpanProcessor")
   @js.native
   class NoopSpanProcessor () extends SpanProcessor {
     

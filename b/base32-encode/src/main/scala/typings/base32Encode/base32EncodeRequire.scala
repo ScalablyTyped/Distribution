@@ -1,5 +1,6 @@
 package typings.base32Encode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("base32-encode", JSImport.Namespace)
 @js.native
-object base32EncodeRequire extends js.Object
+object base32EncodeRequire extends StObject

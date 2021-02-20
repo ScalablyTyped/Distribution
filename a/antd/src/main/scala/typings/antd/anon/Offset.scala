@@ -2,12 +2,13 @@ package typings.antd.anon
 
 import typings.antd.antdStrings.down
 import typings.antd.antdStrings.up
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Offset extends js.Object {
+trait Offset extends StObject {
   
   var offset: Double = js.native
   
@@ -23,24 +24,12 @@ object Offset {
   }
   
   @scala.inline
-  implicit class OffsetOps[Self <: Offset] (val x: Self) extends AnyVal {
+  implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: up | down): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: up | down): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

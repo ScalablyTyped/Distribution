@@ -1,12 +1,13 @@
 package typings.kolite
 
 import typings.kolite.anon.Opacity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KoLiteActivity extends js.Object {
+trait KoLiteActivity extends StObject {
   
   def apply(options: KoLiteActivityOptions): JQuery = js.native
   

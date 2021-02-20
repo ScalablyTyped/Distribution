@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AndroidConfig extends js.Object {
+trait AndroidConfig extends StObject {
   
   /**
     * An identifier of a group of messages that can be collapsed, so that only the last message gets sent when delivery can be resumed. A maximum of 4 different collapse keys is allowed
@@ -56,70 +57,58 @@ object AndroidConfig {
   }
   
   @scala.inline
-  implicit class AndroidConfigOps[Self <: AndroidConfig] (val x: Self) extends AnyVal {
+  implicit class AndroidConfigMutableBuilder[Self <: AndroidConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCollapseKey(value: String): Self = this.set("collapseKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCollapseKey: Self = this.set("collapseKey", js.undefined)
+    def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
     
     @scala.inline
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.AndroidConfig with TopLevel[js.Any]
-    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setDirectBootOk(value: Boolean): Self = this.set("directBootOk", value.asInstanceOf[js.Any])
+    def setDirectBootOk(value: Boolean): Self = StObject.set(x, "directBootOk", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDirectBootOk: Self = this.set("directBootOk", js.undefined)
+    def setDirectBootOkUndefined: Self = StObject.set(x, "directBootOk", js.undefined)
     
     @scala.inline
-    def setFcmOptions(value: AndroidFcmOptions): Self = this.set("fcmOptions", value.asInstanceOf[js.Any])
+    def setFcmOptions(value: AndroidFcmOptions): Self = StObject.set(x, "fcmOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFcmOptions: Self = this.set("fcmOptions", js.undefined)
+    def setFcmOptionsUndefined: Self = StObject.set(x, "fcmOptions", js.undefined)
     
     @scala.inline
-    def setNotification(value: AndroidNotification): Self = this.set("notification", value.asInstanceOf[js.Any])
+    def setNotification(value: AndroidNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotification: Self = this.set("notification", js.undefined)
+    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
     @scala.inline
-    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePriority: Self = this.set("priority", js.undefined)
+    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
     @scala.inline
-    def setRestrictedPackageName(value: String): Self = this.set("restrictedPackageName", value.asInstanceOf[js.Any])
+    def setRestrictedPackageName(value: String): Self = StObject.set(x, "restrictedPackageName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRestrictedPackageName: Self = this.set("restrictedPackageName", js.undefined)
+    def setRestrictedPackageNameUndefined: Self = StObject.set(x, "restrictedPackageName", js.undefined)
     
     @scala.inline
-    def setTtl(value: String): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteTtl: Self = this.set("ttl", js.undefined)
+    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

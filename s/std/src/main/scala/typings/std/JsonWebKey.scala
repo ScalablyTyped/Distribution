@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsonWebKey extends js.Object {
+trait JsonWebKey extends StObject {
   
   var alg: js.UndefOr[java.lang.String] = js.native
   
@@ -52,132 +53,120 @@ object JsonWebKey {
   }
   
   @scala.inline
-  implicit class JsonWebKeyOps[Self <: JsonWebKey] (val x: Self) extends AnyVal {
+  implicit class JsonWebKeyMutableBuilder[Self <: JsonWebKey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlg(value: java.lang.String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCrv(value: java.lang.String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlg(value: java.lang.String): Self = this.set("alg", value.asInstanceOf[js.Any])
+    def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
     
     @scala.inline
-    def deleteAlg: Self = this.set("alg", js.undefined)
+    def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCrv(value: java.lang.String): Self = this.set("crv", value.asInstanceOf[js.Any])
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def deleteCrv: Self = this.set("crv", js.undefined)
+    def setDp(value: java.lang.String): Self = StObject.set(x, "dp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: java.lang.String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setDpUndefined: Self = StObject.set(x, "dp", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setDq(value: java.lang.String): Self = StObject.set(x, "dq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDp(value: java.lang.String): Self = this.set("dp", value.asInstanceOf[js.Any])
+    def setDqUndefined: Self = StObject.set(x, "dq", js.undefined)
     
     @scala.inline
-    def deleteDp: Self = this.set("dp", js.undefined)
+    def setE(value: java.lang.String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDq(value: java.lang.String): Self = this.set("dq", value.asInstanceOf[js.Any])
+    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
     @scala.inline
-    def deleteDq: Self = this.set("dq", js.undefined)
+    def setExt(value: scala.Boolean): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setE(value: java.lang.String): Self = this.set("e", value.asInstanceOf[js.Any])
+    def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     
     @scala.inline
-    def deleteE: Self = this.set("e", js.undefined)
+    def setK(value: java.lang.String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExt(value: scala.Boolean): Self = this.set("ext", value.asInstanceOf[js.Any])
+    def setKUndefined: Self = StObject.set(x, "k", js.undefined)
     
     @scala.inline
-    def deleteExt: Self = this.set("ext", js.undefined)
+    def setKey_ops(value: js.Array[java.lang.String]): Self = StObject.set(x, "key_ops", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setK(value: java.lang.String): Self = this.set("k", value.asInstanceOf[js.Any])
+    def setKey_opsUndefined: Self = StObject.set(x, "key_ops", js.undefined)
     
     @scala.inline
-    def deleteK: Self = this.set("k", js.undefined)
+    def setKey_opsVarargs(value: java.lang.String*): Self = StObject.set(x, "key_ops", js.Array(value :_*))
     
     @scala.inline
-    def setKey_opsVarargs(value: java.lang.String*): Self = this.set("key_ops", js.Array(value :_*))
+    def setKty(value: java.lang.String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey_ops(value: js.Array[java.lang.String]): Self = this.set("key_ops", value.asInstanceOf[js.Any])
+    def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
     
     @scala.inline
-    def deleteKey_ops: Self = this.set("key_ops", js.undefined)
+    def setN(value: java.lang.String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKty(value: java.lang.String): Self = this.set("kty", value.asInstanceOf[js.Any])
+    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
     @scala.inline
-    def deleteKty: Self = this.set("kty", js.undefined)
+    def setOth(value: js.Array[RsaOtherPrimesInfo]): Self = StObject.set(x, "oth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setN(value: java.lang.String): Self = this.set("n", value.asInstanceOf[js.Any])
+    def setOthUndefined: Self = StObject.set(x, "oth", js.undefined)
     
     @scala.inline
-    def deleteN: Self = this.set("n", js.undefined)
+    def setOthVarargs(value: RsaOtherPrimesInfo*): Self = StObject.set(x, "oth", js.Array(value :_*))
     
     @scala.inline
-    def setOthVarargs(value: RsaOtherPrimesInfo*): Self = this.set("oth", js.Array(value :_*))
+    def setP(value: java.lang.String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOth(value: js.Array[RsaOtherPrimesInfo]): Self = this.set("oth", value.asInstanceOf[js.Any])
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def deleteOth: Self = this.set("oth", js.undefined)
+    def setQ(value: java.lang.String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setP(value: java.lang.String): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setQi(value: java.lang.String): Self = StObject.set(x, "qi", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQ(value: java.lang.String): Self = this.set("q", value.asInstanceOf[js.Any])
+    def setQiUndefined: Self = StObject.set(x, "qi", js.undefined)
     
     @scala.inline
-    def deleteQ: Self = this.set("q", js.undefined)
+    def setUse(value: java.lang.String): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQi(value: java.lang.String): Self = this.set("qi", value.asInstanceOf[js.Any])
+    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
     @scala.inline
-    def deleteQi: Self = this.set("qi", js.undefined)
+    def setX(value: java.lang.String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUse(value: java.lang.String): Self = this.set("use", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteUse: Self = this.set("use", js.undefined)
+    def setY(value: java.lang.String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: java.lang.String): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: java.lang.String): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

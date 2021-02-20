@@ -1,11 +1,12 @@
 package typings.reactTouch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SwipeableProps extends js.Object {
+trait SwipeableProps extends StObject {
   
   /** @see defineSwipe */
   var config: js.UndefOr[SwipeableConfig] = js.native
@@ -31,60 +32,48 @@ object SwipeableProps {
   }
   
   @scala.inline
-  implicit class SwipeablePropsOps[Self <: SwipeableProps] (val x: Self) extends AnyVal {
+  implicit class SwipeablePropsMutableBuilder[Self <: SwipeableProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: SwipeableConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnMouseDown(value: () => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConfig(value: SwipeableConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def deleteConfig: Self = this.set("config", js.undefined)
+    def setOnSwipeDown(value: () => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnMouseDown(value: () => Unit): Self = this.set("onMouseDown", js.Any.fromFunction0(value))
+    def setOnSwipeDownUndefined: Self = StObject.set(x, "onSwipeDown", js.undefined)
     
     @scala.inline
-    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    def setOnSwipeLeft(value: () => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSwipeDown(value: () => Unit): Self = this.set("onSwipeDown", js.Any.fromFunction0(value))
+    def setOnSwipeLeftUndefined: Self = StObject.set(x, "onSwipeLeft", js.undefined)
     
     @scala.inline
-    def deleteOnSwipeDown: Self = this.set("onSwipeDown", js.undefined)
+    def setOnSwipeRight(value: () => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSwipeLeft(value: () => Unit): Self = this.set("onSwipeLeft", js.Any.fromFunction0(value))
+    def setOnSwipeRightUndefined: Self = StObject.set(x, "onSwipeRight", js.undefined)
     
     @scala.inline
-    def deleteOnSwipeLeft: Self = this.set("onSwipeLeft", js.undefined)
+    def setOnSwipeUp(value: () => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSwipeRight(value: () => Unit): Self = this.set("onSwipeRight", js.Any.fromFunction0(value))
+    def setOnSwipeUpUndefined: Self = StObject.set(x, "onSwipeUp", js.undefined)
     
     @scala.inline
-    def deleteOnSwipeRight: Self = this.set("onSwipeRight", js.undefined)
+    def setOnTouchStart(value: () => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSwipeUp(value: () => Unit): Self = this.set("onSwipeUp", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnSwipeUp: Self = this.set("onSwipeUp", js.undefined)
-    
-    @scala.inline
-    def setOnTouchStart(value: () => Unit): Self = this.set("onTouchStart", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WaterfallOptions extends js.Object {
+trait WaterfallOptions extends StObject {
   
   /** set the chart type: waterfall or connection [waterfall] */
   var chartType: js.UndefOr[String] = js.native
@@ -43,72 +44,60 @@ object WaterfallOptions {
   }
   
   @scala.inline
-  implicit class WaterfallOptionsOps[Self <: WaterfallOptions] (val x: Self) extends AnyVal {
+  implicit class WaterfallOptionsMutableBuilder[Self <: WaterfallOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChartWidth(value: Double): Self = StObject.set(x, "chartWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartType(value: String): Self = this.set("chartType", value.asInstanceOf[js.Any])
+    def setChartWidthUndefined: Self = StObject.set(x, "chartWidth", js.undefined)
     
     @scala.inline
-    def deleteChartType: Self = this.set("chartType", js.undefined)
+    def setColorByMime(value: Boolean): Self = StObject.set(x, "colorByMime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChartWidth(value: Double): Self = this.set("chartWidth", value.asInstanceOf[js.Any])
+    def setColorByMimeUndefined: Self = StObject.set(x, "colorByMime", js.undefined)
     
     @scala.inline
-    def deleteChartWidth: Self = this.set("chartWidth", js.undefined)
+    def setMaxTime(value: Double): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorByMime(value: Boolean): Self = this.set("colorByMime", value.asInstanceOf[js.Any])
+    def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
     
     @scala.inline
-    def deleteColorByMime: Self = this.set("colorByMime", js.undefined)
+    def setNoBandwidth(value: Boolean): Self = StObject.set(x, "noBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxTime(value: Double): Self = this.set("maxTime", value.asInstanceOf[js.Any])
+    def setNoBandwidthUndefined: Self = StObject.set(x, "noBandwidth", js.undefined)
     
     @scala.inline
-    def deleteMaxTime: Self = this.set("maxTime", js.undefined)
+    def setNoCPU(value: Boolean): Self = StObject.set(x, "noCPU", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoBandwidth(value: Boolean): Self = this.set("noBandwidth", value.asInstanceOf[js.Any])
+    def setNoCPUUndefined: Self = StObject.set(x, "noCPU", js.undefined)
     
     @scala.inline
-    def deleteNoBandwidth: Self = this.set("noBandwidth", js.undefined)
+    def setNoEllipsis(value: Boolean): Self = StObject.set(x, "noEllipsis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoCPU(value: Boolean): Self = this.set("noCPU", value.asInstanceOf[js.Any])
+    def setNoEllipsisUndefined: Self = StObject.set(x, "noEllipsis", js.undefined)
     
     @scala.inline
-    def deleteNoCPU: Self = this.set("noCPU", js.undefined)
+    def setNoLabels(value: Boolean): Self = StObject.set(x, "noLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoEllipsis(value: Boolean): Self = this.set("noEllipsis", value.asInstanceOf[js.Any])
+    def setNoLabelsUndefined: Self = StObject.set(x, "noLabels", js.undefined)
     
     @scala.inline
-    def deleteNoEllipsis: Self = this.set("noEllipsis", js.undefined)
+    def setRequests(value: String): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoLabels(value: Boolean): Self = this.set("noLabels", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNoLabels: Self = this.set("noLabels", js.undefined)
-    
-    @scala.inline
-    def setRequests(value: String): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
   }
 }

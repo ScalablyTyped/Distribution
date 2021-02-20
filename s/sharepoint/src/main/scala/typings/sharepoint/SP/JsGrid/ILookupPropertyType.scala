@@ -2,6 +2,7 @@ package typings.sharepoint.SP.JsGrid
 
 import typings.sharepoint.anon.BLimitToList
 import typings.sharepoint.anon.DataValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,39 +43,27 @@ object ILookupPropertyType {
   }
   
   @scala.inline
-  implicit class ILookupPropertyTypeOps[Self <: ILookupPropertyType] (val x: Self) extends AnyVal {
+  implicit class ILookupPropertyTypeMutableBuilder[Self <: ILookupPropertyType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataToLocalized(value: js.Any => String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetImageSource(value: (IRecord, js.Any) => String): Self = StObject.set(x, "GetImageSource", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetIsLimitedToList(value: () => Boolean): Self = StObject.set(x, "GetIsLimitedToList", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDataToLocalized(value: js.Any => String): Self = this.set("DataToLocalized", js.Any.fromFunction1(value))
+    def setGetItems(value: js.Any => Unit): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetImageSource(value: (IRecord, js.Any) => String): Self = this.set("GetImageSource", js.Any.fromFunction2(value))
+    def setGetSerializableLookupPropType(value: () => BLimitToList): Self = StObject.set(x, "GetSerializableLookupPropType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetIsLimitedToList(value: () => Boolean): Self = this.set("GetIsLimitedToList", js.Any.fromFunction0(value))
+    def setGetStyleId(value: js.Any => String): Self = StObject.set(x, "GetStyleId", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetItems(value: js.Any => Unit): Self = this.set("GetItems", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetSerializableLookupPropType(value: () => BLimitToList): Self = this.set("GetSerializableLookupPropType", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStyleId(value: js.Any => String): Self = this.set("GetStyleId", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocalizedToData(value: String => js.Any): Self = this.set("LocalizedToData", js.Any.fromFunction1(value))
+    def setLocalizedToData(value: String => js.Any): Self = StObject.set(x, "LocalizedToData", js.Any.fromFunction1(value))
   }
 }

@@ -1,18 +1,17 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/Enums/nodeMaterialBlockConnectionPointTypes", JSImport.Namespace)
-@js.native
-object nodeMaterialBlockConnectionPointTypesMod extends js.Object {
+object nodeMaterialBlockConnectionPointTypesMod {
   
   @js.native
-  sealed trait NodeMaterialBlockConnectionPointTypes extends js.Object
+  sealed trait NodeMaterialBlockConnectionPointTypes extends StObject
+  @JSImport("babylonjs/Materials/Node/Enums/nodeMaterialBlockConnectionPointTypes", "NodeMaterialBlockConnectionPointTypes")
   @js.native
-  object NodeMaterialBlockConnectionPointTypes extends js.Object {
+  object NodeMaterialBlockConnectionPointTypes extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeMaterialBlockConnectionPointTypes with Double] = js.native
@@ -20,67 +19,56 @@ object nodeMaterialBlockConnectionPointTypesMod extends js.Object {
     /** Detect type based on connection */
     @js.native
     sealed trait AutoDetect extends NodeMaterialBlockConnectionPointTypes
-    /* 1024 */ @js.native
-    object AutoDetect extends TopLevel[AutoDetect with Double]
+    /* 1024 */ val AutoDetect: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.AutoDetect with Double = js.native
     
     /** Output type that will be defined by input type */
     @js.native
     sealed trait BasedOnInput extends NodeMaterialBlockConnectionPointTypes
-    /* 2048 */ @js.native
-    object BasedOnInput extends TopLevel[BasedOnInput with Double]
+    /* 2048 */ val BasedOnInput: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.BasedOnInput with Double = js.native
     
     /** Color3 */
     @js.native
     sealed trait Color3 extends NodeMaterialBlockConnectionPointTypes
-    /* 32 */ @js.native
-    object Color3 extends TopLevel[Color3 with Double]
+    /* 32 */ val Color3: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Color3 with Double = js.native
     
     /** Color4 */
     @js.native
     sealed trait Color4 extends NodeMaterialBlockConnectionPointTypes
-    /* 64 */ @js.native
-    object Color4 extends TopLevel[Color4 with Double]
+    /* 64 */ val Color4: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Color4 with Double = js.native
     
     /** Float */
     @js.native
     sealed trait Float extends NodeMaterialBlockConnectionPointTypes
-    /* 1 */ @js.native
-    object Float extends TopLevel[Float with Double]
+    /* 1 */ val Float: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Float with Double = js.native
     
     /** Int */
     @js.native
     sealed trait Int extends NodeMaterialBlockConnectionPointTypes
-    /* 2 */ @js.native
-    object Int extends TopLevel[Int with Double]
+    /* 2 */ val Int: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Int with Double = js.native
     
     /** Matrix */
     @js.native
     sealed trait Matrix extends NodeMaterialBlockConnectionPointTypes
-    /* 128 */ @js.native
-    object Matrix extends TopLevel[Matrix with Double]
+    /* 128 */ val Matrix: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Matrix with Double = js.native
     
     /** Custom object */
     @js.native
     sealed trait Object extends NodeMaterialBlockConnectionPointTypes
-    /* 256 */ @js.native
-    object Object extends TopLevel[Object with Double]
+    /* 256 */ val Object: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Object with Double = js.native
     
     /** Vector2 */
     @js.native
     sealed trait Vector2 extends NodeMaterialBlockConnectionPointTypes
-    /* 4 */ @js.native
-    object Vector2 extends TopLevel[Vector2 with Double]
+    /* 4 */ val Vector2: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Vector2 with Double = js.native
     
     /** Vector3 */
     @js.native
     sealed trait Vector3 extends NodeMaterialBlockConnectionPointTypes
-    /* 8 */ @js.native
-    object Vector3 extends TopLevel[Vector3 with Double]
+    /* 8 */ val Vector3: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Vector3 with Double = js.native
     
     /** Vector4 */
     @js.native
     sealed trait Vector4 extends NodeMaterialBlockConnectionPointTypes
-    /* 16 */ @js.native
-    object Vector4 extends TopLevel[Vector4 with Double]
+    /* 16 */ val Vector4: typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.Vector4 with Double = js.native
   }
 }

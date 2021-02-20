@@ -1,5 +1,6 @@
 package typings.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNativeFirebase.reactNativeFirebaseStrings.system
   - typings.reactNativeFirebase.reactNativeFirebaseStrings.transport
 */
-trait Category extends js.Object
+trait Category extends StObject
 object Category {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZoomStruct extends js.Object {
+trait ZoomStruct extends StObject {
   
   /*The vertical offset from the top of the span to the baseline of the mathematics*/
   var Y: Double = js.native
@@ -31,33 +32,21 @@ object ZoomStruct {
   }
   
   @scala.inline
-  implicit class ZoomStructOps[Self <: ZoomStruct] (val x: Self) extends AnyVal {
+  implicit class ZoomStructMutableBuilder[Self <: ZoomStruct] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMH(value: Double): Self = StObject.set(x, "mH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMW(value: Double): Self = StObject.set(x, "mW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY(value: Double): Self = this.set("Y", value.asInstanceOf[js.Any])
+    def setZH(value: Double): Self = StObject.set(x, "zH", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMH(value: Double): Self = this.set("mH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMW(value: Double): Self = this.set("mW", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZH(value: Double): Self = this.set("zH", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setZW(value: Double): Self = this.set("zW", value.asInstanceOf[js.Any])
+    def setZW(value: Double): Self = StObject.set(x, "zW", value.asInstanceOf[js.Any])
   }
 }

@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.center
 import typings.arcgisJsApi.arcgisJsApiStrings.origin
 import typings.arcgisJsApi.arcgisJsApiStrings.relative
 import typings.arcgisJsApi.arcgisJsApiStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,84 +99,72 @@ object ObjectSymbol3DLayerProperties {
   }
   
   @scala.inline
-  implicit class ObjectSymbol3DLayerPropertiesOps[Self <: ObjectSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  implicit class ObjectSymbol3DLayerPropertiesMutableBuilder[Self <: ObjectSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchor(value: center | top | bottom | origin | relative): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorPosition(value: ObjectSymbol3DLayerAnchorPosition): Self = StObject.set(x, "anchorPosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorPositionUndefined: Self = StObject.set(x, "anchorPosition", js.undefined)
     
     @scala.inline
-    def setAnchor(value: center | top | bottom | origin | relative): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
     @scala.inline
-    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    def setCastShadows(value: Boolean): Self = StObject.set(x, "castShadows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnchorPosition(value: ObjectSymbol3DLayerAnchorPosition): Self = this.set("anchorPosition", value.asInstanceOf[js.Any])
+    def setCastShadowsUndefined: Self = StObject.set(x, "castShadows", js.undefined)
     
     @scala.inline
-    def deleteAnchorPosition: Self = this.set("anchorPosition", js.undefined)
+    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCastShadows(value: Boolean): Self = this.set("castShadows", value.asInstanceOf[js.Any])
+    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
     @scala.inline
-    def deleteCastShadows: Self = this.set("castShadows", js.undefined)
+    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
     @scala.inline
-    def deleteDepth: Self = this.set("depth", js.undefined)
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteHeading: Self = this.set("heading", js.undefined)
+    def setMaterial(value: ObjectSymbol3DLayerMaterialProperties): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setResource(value: ObjectSymbol3DLayerResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaterial(value: ObjectSymbol3DLayerMaterialProperties): Self = this.set("material", value.asInstanceOf[js.Any])
+    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     @scala.inline
-    def deleteMaterial: Self = this.set("material", js.undefined)
+    def setRoll(value: Double): Self = StObject.set(x, "roll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResource(value: ObjectSymbol3DLayerResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setRollUndefined: Self = StObject.set(x, "roll", js.undefined)
     
     @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
+    def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoll(value: Double): Self = this.set("roll", value.asInstanceOf[js.Any])
+    def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
     
     @scala.inline
-    def deleteRoll: Self = this.set("roll", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTilt(value: Double): Self = this.set("tilt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTilt: Self = this.set("tilt", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

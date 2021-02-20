@@ -1,12 +1,13 @@
 package typings.durandal
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalSystemModule extends js.Object {
+trait DurandalSystemModule extends StObject {
   
   /**
     * Uses require.js to obtain a module. This function returns a promise which resolves with the module instance.

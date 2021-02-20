@@ -1,11 +1,12 @@
 package typings.flexmonster.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Charts extends js.Object {
+trait Charts extends StObject {
   
   var charts: String = js.native
   
@@ -110,111 +111,99 @@ object Charts {
   }
   
   @scala.inline
-  implicit class ChartsOps[Self <: Charts] (val x: Self) extends AnyVal {
+  implicit class ChartsMutableBuilder[Self <: Charts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharts(value: String): Self = StObject.set(x, "charts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharts_bar(value: String): Self = StObject.set(x, "charts_bar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCharts_column_line(value: String): Self = StObject.set(x, "charts_column_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts(value: String): Self = this.set("charts", value.asInstanceOf[js.Any])
+    def setCharts_line(value: String): Self = StObject.set(x, "charts_line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts_bar(value: String): Self = this.set("charts_bar", value.asInstanceOf[js.Any])
+    def setCharts_pie(value: String): Self = StObject.set(x, "charts_pie", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts_column_line(value: String): Self = this.set("charts_column_line", value.asInstanceOf[js.Any])
+    def setCharts_scatter(value: String): Self = StObject.set(x, "charts_scatter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts_line(value: String): Self = this.set("charts_line", value.asInstanceOf[js.Any])
+    def setCharts_stacked_column(value: String): Self = StObject.set(x, "charts_stacked_column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts_pie(value: String): Self = this.set("charts_pie", value.asInstanceOf[js.Any])
+    def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts_scatter(value: String): Self = this.set("charts_scatter", value.asInstanceOf[js.Any])
+    def setConnect_csv(value: String): Self = StObject.set(x, "connect_csv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharts_stacked_column(value: String): Self = this.set("charts_stacked_column", value.asInstanceOf[js.Any])
+    def setConnect_csv_remote(value: String): Self = StObject.set(x, "connect_csv_remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect(value: String): Self = this.set("connect", value.asInstanceOf[js.Any])
+    def setConnect_json_remote(value: String): Self = StObject.set(x, "connect_json_remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect_csv(value: String): Self = this.set("connect_csv", value.asInstanceOf[js.Any])
+    def setConnect_olap(value: String): Self = StObject.set(x, "connect_olap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect_csv_remote(value: String): Self = this.set("connect_csv_remote", value.asInstanceOf[js.Any])
+    def setExport(value: String): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect_json_remote(value: String): Self = this.set("connect_json_remote", value.asInstanceOf[js.Any])
+    def setExport_csv(value: String): Self = StObject.set(x, "export_csv", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnect_olap(value: String): Self = this.set("connect_olap", value.asInstanceOf[js.Any])
+    def setExport_excel(value: String): Self = StObject.set(x, "export_excel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport(value: String): Self = this.set("export", value.asInstanceOf[js.Any])
+    def setExport_html(value: String): Self = StObject.set(x, "export_html", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport_csv(value: String): Self = this.set("export_csv", value.asInstanceOf[js.Any])
+    def setExport_image(value: String): Self = StObject.set(x, "export_image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport_excel(value: String): Self = this.set("export_excel", value.asInstanceOf[js.Any])
+    def setExport_pdf(value: String): Self = StObject.set(x, "export_pdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport_html(value: String): Self = this.set("export_html", value.asInstanceOf[js.Any])
+    def setExport_print(value: String): Self = StObject.set(x, "export_print", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport_image(value: String): Self = this.set("export_image", value.asInstanceOf[js.Any])
+    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport_pdf(value: String): Self = this.set("export_pdf", value.asInstanceOf[js.Any])
+    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExport_print(value: String): Self = this.set("export_print", value.asInstanceOf[js.Any])
+    def setFormat_conditional(value: String): Self = StObject.set(x, "format_conditional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFormat_number(value: String): Self = StObject.set(x, "format_number", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    def setFullscreen(value: String): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat_conditional(value: String): Self = this.set("format_conditional", value.asInstanceOf[js.Any])
+    def setGrid(value: String): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat_number(value: String): Self = this.set("format_number", value.asInstanceOf[js.Any])
+    def setMinimize(value: String): Self = StObject.set(x, "minimize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullscreen(value: String): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGrid(value: String): Self = this.set("grid", value.asInstanceOf[js.Any])
+    def setOpen_local(value: String): Self = StObject.set(x, "open_local", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimize(value: String): Self = this.set("minimize", value.asInstanceOf[js.Any])
+    def setOpen_remote(value: String): Self = StObject.set(x, "open_remote", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen(value: String): Self = this.set("open", value.asInstanceOf[js.Any])
+    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen_local(value: String): Self = this.set("open_local", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpen_remote(value: String): Self = this.set("open_remote", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOptions(value: String): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSave(value: String): Self = this.set("save", value.asInstanceOf[js.Any])
+    def setSave(value: String): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
   }
 }

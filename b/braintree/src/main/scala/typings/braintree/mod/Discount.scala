@@ -1,12 +1,13 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Discount")
 @js.native
-class Discount () extends js.Object {
+class Discount () extends StObject {
   
   var amount: js.UndefOr[String] = js.native
   

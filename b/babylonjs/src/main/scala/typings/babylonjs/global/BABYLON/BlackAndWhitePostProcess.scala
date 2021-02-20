@@ -2,6 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.BABYLON.PostProcessOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -123,11 +124,11 @@ class BlackAndWhitePostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.BlackAndWhitePostProcess")
-@js.native
-object BlackAndWhitePostProcess extends js.Object {
+object BlackAndWhitePostProcess {
   
   /** @hidden */
+  @JSGlobal("BABYLON.BlackAndWhitePostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,

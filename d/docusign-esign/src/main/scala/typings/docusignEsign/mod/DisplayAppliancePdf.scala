@@ -1,11 +1,12 @@
 package typings.docusignEsign.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DisplayAppliancePdf extends js.Object {
+trait DisplayAppliancePdf extends StObject {
   
   var attachmentInfo: js.UndefOr[DisplayApplianceSignerAttachment] = js.native
   
@@ -34,72 +35,60 @@ object DisplayAppliancePdf {
   }
   
   @scala.inline
-  implicit class DisplayAppliancePdfOps[Self <: DisplayAppliancePdf] (val x: Self) extends AnyVal {
+  implicit class DisplayAppliancePdfMutableBuilder[Self <: DisplayAppliancePdf] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachmentInfo(value: DisplayApplianceSignerAttachment): Self = StObject.set(x, "attachmentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentInfoUndefined: Self = StObject.set(x, "attachmentInfo", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDocName(value: String): Self = StObject.set(x, "docName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachmentInfo(value: DisplayApplianceSignerAttachment): Self = this.set("attachmentInfo", value.asInstanceOf[js.Any])
+    def setDocNameUndefined: Self = StObject.set(x, "docName", js.undefined)
     
     @scala.inline
-    def deleteAttachmentInfo: Self = this.set("attachmentInfo", js.undefined)
+    def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocName(value: String): Self = this.set("docName", value.asInstanceOf[js.Any])
+    def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
     
     @scala.inline
-    def deleteDocName: Self = this.set("docName", js.undefined)
+    def setLatestPDFId(value: String): Self = StObject.set(x, "latestPDFId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentId(value: String): Self = this.set("documentId", value.asInstanceOf[js.Any])
+    def setLatestPDFIdUndefined: Self = StObject.set(x, "latestPDFId", js.undefined)
     
     @scala.inline
-    def deleteDocumentId: Self = this.set("documentId", js.undefined)
+    def setLatestPdf(value: String): Self = StObject.set(x, "latestPdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestPDFId(value: String): Self = this.set("latestPDFId", value.asInstanceOf[js.Any])
+    def setLatestPdfUndefined: Self = StObject.set(x, "latestPdf", js.undefined)
     
     @scala.inline
-    def deleteLatestPDFId: Self = this.set("latestPDFId", js.undefined)
+    def setOriginalPDFId(value: String): Self = StObject.set(x, "originalPDFId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatestPdf(value: String): Self = this.set("latestPdf", value.asInstanceOf[js.Any])
+    def setOriginalPDFIdUndefined: Self = StObject.set(x, "originalPDFId", js.undefined)
     
     @scala.inline
-    def deleteLatestPdf: Self = this.set("latestPdf", js.undefined)
+    def setOriginalPdf(value: String): Self = StObject.set(x, "originalPdf", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPDFId(value: String): Self = this.set("originalPDFId", value.asInstanceOf[js.Any])
+    def setOriginalPdfUndefined: Self = StObject.set(x, "originalPdf", js.undefined)
     
     @scala.inline
-    def deleteOriginalPDFId: Self = this.set("originalPDFId", js.undefined)
+    def setPageCount(value: Double): Self = StObject.set(x, "pageCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOriginalPdf(value: String): Self = this.set("originalPdf", value.asInstanceOf[js.Any])
+    def setPageCountUndefined: Self = StObject.set(x, "pageCount", js.undefined)
     
     @scala.inline
-    def deleteOriginalPdf: Self = this.set("originalPdf", js.undefined)
+    def setPdfType(value: String): Self = StObject.set(x, "pdfType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPageCount(value: Double): Self = this.set("pageCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePageCount: Self = this.set("pageCount", js.undefined)
-    
-    @scala.inline
-    def setPdfType(value: String): Self = this.set("pdfType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePdfType: Self = this.set("pdfType", js.undefined)
+    def setPdfTypeUndefined: Self = StObject.set(x, "pdfType", js.undefined)
   }
 }

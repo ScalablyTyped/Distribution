@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateSubscriptionDefinitionVersionRequest extends js.Object {
+trait CreateSubscriptionDefinitionVersionRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
@@ -31,36 +32,24 @@ object CreateSubscriptionDefinitionVersionRequest {
   }
   
   @scala.inline
-  implicit class CreateSubscriptionDefinitionVersionRequestOps[Self <: CreateSubscriptionDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  implicit class CreateSubscriptionDefinitionVersionRequestMutableBuilder[Self <: CreateSubscriptionDefinitionVersionRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSubscriptionDefinitionId(value: string): Self = StObject.set(x, "SubscriptionDefinitionId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubscriptionDefinitionId(value: string): Self = this.set("SubscriptionDefinitionId", value.asInstanceOf[js.Any])
+    def setSubscriptions(value: listOfSubscription): Self = StObject.set(x, "Subscriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    def setSubscriptionsUndefined: Self = StObject.set(x, "Subscriptions", js.undefined)
     
     @scala.inline
-    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionsVarargs(value: Subscription*): Self = this.set("Subscriptions", js.Array(value :_*))
-    
-    @scala.inline
-    def setSubscriptions(value: listOfSubscription): Self = this.set("Subscriptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptions: Self = this.set("Subscriptions", js.undefined)
+    def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "Subscriptions", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,24 +19,12 @@ object RotationalSpringOptions {
   }
   
   @scala.inline
-  implicit class RotationalSpringOptionsOps[Self <: RotationalSpringOptions] (val x: Self) extends AnyVal {
+  implicit class RotationalSpringOptionsMutableBuilder[Self <: RotationalSpringOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRestAngle(value: Double): Self = StObject.set(x, "restAngle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRestAngle(value: Double): Self = this.set("restAngle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRestAngle: Self = this.set("restAngle", js.undefined)
+    def setRestAngleUndefined: Self = StObject.set(x, "restAngle", js.undefined)
   }
 }

@@ -1,16 +1,22 @@
 package typings.primereact
 
 import typings.primereact.tooltipMod.TooltipProps
-import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("primereact/tooltip", JSImport.Namespace)
-@js.native
-object primereactTooltipMod extends js.Object {
+object primereactTooltipMod {
   
+  @JSImport("primereact/tooltip", "Tooltip")
   @js.native
-  class Tooltip ()
-    extends Component[TooltipProps, js.Any, js.Any]
+  class Tooltip protected ()
+    extends typings.primereact.tooltipMod.Tooltip {
+    def this(props: TooltipProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: TooltipProps, context: js.Any) = this()
+  }
 }

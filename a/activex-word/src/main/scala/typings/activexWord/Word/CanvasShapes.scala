@@ -6,12 +6,13 @@ import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoPresetTextEffect
 import typings.activexOffice.Office.MsoTextOrientation
 import typings.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanvasShapes extends js.Object {
+trait CanvasShapes extends StObject {
   
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   
@@ -99,79 +100,67 @@ object CanvasShapes {
   }
   
   @scala.inline
-  implicit class CanvasShapesOps[Self <: CanvasShapes] (val x: Self) extends AnyVal {
+  implicit class CanvasShapesMutableBuilder[Self <: CanvasShapes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddCallout(value: (MsoCalloutType, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddCallout", js.Any.fromFunction5(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAddConnector(value: (MsoConnectorType, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddConnector", js.Any.fromFunction5(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAddCurve(value: js.Any => Shape): Self = StObject.set(x, "AddCurve", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddCallout(value: (MsoCalloutType, Double, Double, Double, Double) => Shape): Self = this.set("AddCallout", js.Any.fromFunction5(value))
+    def setAddLabel(value: (MsoTextOrientation, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddLabel", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setAddConnector(value: (MsoConnectorType, Double, Double, Double, Double) => Shape): Self = this.set("AddConnector", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setAddCurve(value: js.Any => Shape): Self = this.set("AddCurve", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setAddLabel(value: (MsoTextOrientation, Double, Double, Double, Double) => Shape): Self = this.set("AddLabel", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setAddLine(value: (Double, Double, Double, Double) => Shape): Self = this.set("AddLine", js.Any.fromFunction4(value))
+    def setAddLine(value: (Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddLine", js.Any.fromFunction4(value))
     
     @scala.inline
     def setAddPicture(
       value: (String, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Shape
-    ): Self = this.set("AddPicture", js.Any.fromFunction7(value))
+    ): Self = StObject.set(x, "AddPicture", js.Any.fromFunction7(value))
     
     @scala.inline
-    def setAddPolyline(value: js.Any => Shape): Self = this.set("AddPolyline", js.Any.fromFunction1(value))
+    def setAddPolyline(value: js.Any => Shape): Self = StObject.set(x, "AddPolyline", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAddShape(value: (Double, Double, Double, Double, Double) => Shape): Self = this.set("AddShape", js.Any.fromFunction5(value))
+    def setAddShape(value: (Double, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddShape", js.Any.fromFunction5(value))
     
     @scala.inline
     def setAddTextEffect(
       value: (MsoPresetTextEffect, String, String, Double, MsoTriState, MsoTriState, Double, Double) => Shape
-    ): Self = this.set("AddTextEffect", js.Any.fromFunction8(value))
+    ): Self = StObject.set(x, "AddTextEffect", js.Any.fromFunction8(value))
     
     @scala.inline
-    def setAddTextbox(value: (MsoTextOrientation, Double, Double, Double, Double) => Shape): Self = this.set("AddTextbox", js.Any.fromFunction5(value))
+    def setAddTextbox(value: (MsoTextOrientation, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddTextbox", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBuildFreeform(value: (MsoEditingType, Double, Double) => FreeformBuilder): Self = this.set("BuildFreeform", js.Any.fromFunction3(value))
+    def setBuildFreeform(value: (MsoEditingType, Double, Double) => FreeformBuilder): Self = StObject.set(x, "BuildFreeform", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => Shape): Self = this.set("Item", js.Any.fromFunction1(value))
+    def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Any => ShapeRange): Self = this.set("Range", js.Any.fromFunction1(value))
+    def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSelectAll(value: () => Unit): Self = this.set("SelectAll", js.Any.fromFunction0(value))
+    def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setWordDotCanvasShapes_typekey(value: CanvasShapes): Self = this.set("Word.CanvasShapes_typekey", value.asInstanceOf[js.Any])
+    def setWordDotCanvasShapes_typekey(value: CanvasShapes): Self = StObject.set(x, "Word.CanvasShapes_typekey", value.asInstanceOf[js.Any])
   }
 }

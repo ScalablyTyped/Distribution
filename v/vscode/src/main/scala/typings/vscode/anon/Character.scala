@@ -1,11 +1,12 @@
 package typings.vscode.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Character extends js.Object {
+trait Character extends StObject {
   
   var character: js.UndefOr[Double] = js.native
   
@@ -20,30 +21,18 @@ object Character {
   }
   
   @scala.inline
-  implicit class CharacterOps[Self <: Character] (val x: Self) extends AnyVal {
+  implicit class CharacterMutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharacter(value: Double): Self = this.set("character", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCharacter: Self = this.set("character", js.undefined)
-    
-    @scala.inline
-    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLine: Self = this.set("line", js.undefined)
+    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

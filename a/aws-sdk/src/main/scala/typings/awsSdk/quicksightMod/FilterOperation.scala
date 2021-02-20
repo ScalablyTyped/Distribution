@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FilterOperation extends js.Object {
+trait FilterOperation extends StObject {
   
   /**
     * An expression that must evaluate to a Boolean value. Rows for which the expression evaluates to true are kept in the dataset.
@@ -21,21 +22,9 @@ object FilterOperation {
   }
   
   @scala.inline
-  implicit class FilterOperationOps[Self <: FilterOperation] (val x: Self) extends AnyVal {
+  implicit class FilterOperationMutableBuilder[Self <: FilterOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setConditionExpression(value: Expression): Self = this.set("ConditionExpression", value.asInstanceOf[js.Any])
+    def setConditionExpression(value: Expression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
   }
 }

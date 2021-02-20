@@ -10,13 +10,14 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.dialdevicepickerdismissed
 import typings.winrtUwp.winrtUwpStrings.dialdeviceselected
 import typings.winrtUwp.winrtUwpStrings.disconnectbuttonclicked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a picker flyout that contains a list of remote devices for the user to choose from. */
 @js.native
-trait DialDevicePicker extends js.Object {
+trait DialDevicePicker extends StObject {
   
   def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
   @JSName("addEventListener")

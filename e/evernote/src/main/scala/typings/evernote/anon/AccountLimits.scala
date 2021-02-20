@@ -7,12 +7,13 @@ import typings.evernote.mod.Types.ServiceLevel
 import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserAttributes
 import typings.evernote.mod.Types.UserID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccountLimits extends js.Object {
+trait AccountLimits extends StObject {
   
   var accountLimits: js.UndefOr[typings.evernote.mod.Types.AccountLimits] = js.native
   
@@ -59,126 +60,114 @@ object AccountLimits {
   }
   
   @scala.inline
-  implicit class AccountLimitsOps[Self <: AccountLimits] (val x: Self) extends AnyVal {
+  implicit class AccountLimitsMutableBuilder[Self <: AccountLimits] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountLimits(value: typings.evernote.mod.Types.AccountLimits): Self = StObject.set(x, "accountLimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountLimitsUndefined: Self = StObject.set(x, "accountLimits", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAccounting(value: Accounting): Self = StObject.set(x, "accounting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountLimits(value: typings.evernote.mod.Types.AccountLimits): Self = this.set("accountLimits", value.asInstanceOf[js.Any])
+    def setAccountingUndefined: Self = StObject.set(x, "accounting", js.undefined)
     
     @scala.inline
-    def deleteAccountLimits: Self = this.set("accountLimits", js.undefined)
+    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccounting(value: Accounting): Self = this.set("accounting", value.asInstanceOf[js.Any])
+    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     @scala.inline
-    def deleteAccounting: Self = this.set("accounting", js.undefined)
+    def setAttributes(value: UserAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def deleteActive: Self = this.set("active", js.undefined)
+    def setBusinessUserInfo(value: BusinessUserInfo): Self = StObject.set(x, "businessUserInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: UserAttributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setBusinessUserInfoUndefined: Self = StObject.set(x, "businessUserInfo", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBusinessUserInfo(value: BusinessUserInfo): Self = this.set("businessUserInfo", value.asInstanceOf[js.Any])
+    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
     @scala.inline
-    def deleteBusinessUserInfo: Self = this.set("businessUserInfo", js.undefined)
+    def setDeleted(value: Timestamp): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     @scala.inline
-    def deleteCreated: Self = this.set("created", js.undefined)
+    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleted(value: Timestamp): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     @scala.inline
-    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    def setId(value: UserID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteEmail: Self = this.set("email", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: UserID): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPhotoLastUpdated(value: Timestamp): Self = StObject.set(x, "photoLastUpdated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPhotoLastUpdatedUndefined: Self = StObject.set(x, "photoLastUpdated", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setPhotoUrl(value: String): Self = StObject.set(x, "photoUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoLastUpdated(value: Timestamp): Self = this.set("photoLastUpdated", value.asInstanceOf[js.Any])
+    def setPhotoUrlUndefined: Self = StObject.set(x, "photoUrl", js.undefined)
     
     @scala.inline
-    def deletePhotoLastUpdated: Self = this.set("photoLastUpdated", js.undefined)
+    def setPrivilege(value: PrivilegeLevel): Self = StObject.set(x, "privilege", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    def setPrivilegeUndefined: Self = StObject.set(x, "privilege", js.undefined)
     
     @scala.inline
-    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    def setServiceLevel(value: ServiceLevel): Self = StObject.set(x, "serviceLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilege(value: PrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    def setServiceLevelUndefined: Self = StObject.set(x, "serviceLevel", js.undefined)
     
     @scala.inline
-    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    def setShardId(value: String): Self = StObject.set(x, "shardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceLevel(value: ServiceLevel): Self = this.set("serviceLevel", value.asInstanceOf[js.Any])
+    def setShardIdUndefined: Self = StObject.set(x, "shardId", js.undefined)
     
     @scala.inline
-    def deleteServiceLevel: Self = this.set("serviceLevel", js.undefined)
+    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShardId(value: String): Self = this.set("shardId", value.asInstanceOf[js.Any])
+    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
     @scala.inline
-    def deleteShardId: Self = this.set("shardId", js.undefined)
+    def setUpdated(value: Timestamp): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     @scala.inline
-    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdated: Self = this.set("updated", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

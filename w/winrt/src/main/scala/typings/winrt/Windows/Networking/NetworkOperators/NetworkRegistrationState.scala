@@ -1,14 +1,15 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkRegistrationState extends js.Object
+sealed trait NetworkRegistrationState extends StObject
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkRegistrationState")
 @js.native
-object NetworkRegistrationState extends js.Object {
+object NetworkRegistrationState extends StObject {
   
   @js.native
   sealed trait denied extends NetworkRegistrationState

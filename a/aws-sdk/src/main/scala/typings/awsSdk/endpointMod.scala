@@ -1,15 +1,15 @@
 package typings.awsSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/lib/endpoint", JSImport.Namespace)
-@js.native
-object endpointMod extends js.Object {
+object endpointMod {
   
+  @JSImport("aws-sdk/lib/endpoint", "Endpoint")
   @js.native
-  class Endpoint protected () extends js.Object {
+  class Endpoint protected () extends StObject {
     /**
       * Constructs a new endpoint given an endpoint URL.
       */

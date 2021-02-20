@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Update extends js.Object {
+trait Update extends StObject {
   
   var callback_query: js.UndefOr[CallbackQuery] = js.native
   
@@ -36,75 +37,63 @@ object Update {
   }
   
   @scala.inline
-  implicit class UpdateOps[Self <: Update] (val x: Self) extends AnyVal {
+  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCallback_query(value: CallbackQuery): Self = StObject.set(x, "callback_query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCallback_queryUndefined: Self = StObject.set(x, "callback_query", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChannel_post(value: Message): Self = StObject.set(x, "channel_post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpdate_id(value: Double): Self = this.set("update_id", value.asInstanceOf[js.Any])
+    def setChannel_postUndefined: Self = StObject.set(x, "channel_post", js.undefined)
     
     @scala.inline
-    def setCallback_query(value: CallbackQuery): Self = this.set("callback_query", value.asInstanceOf[js.Any])
+    def setChosen_inline_result(value: ChosenInlineResult): Self = StObject.set(x, "chosen_inline_result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCallback_query: Self = this.set("callback_query", js.undefined)
+    def setChosen_inline_resultUndefined: Self = StObject.set(x, "chosen_inline_result", js.undefined)
     
     @scala.inline
-    def setChannel_post(value: Message): Self = this.set("channel_post", value.asInstanceOf[js.Any])
+    def setEdited_channel_post(value: Message): Self = StObject.set(x, "edited_channel_post", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChannel_post: Self = this.set("channel_post", js.undefined)
+    def setEdited_channel_postUndefined: Self = StObject.set(x, "edited_channel_post", js.undefined)
     
     @scala.inline
-    def setChosen_inline_result(value: ChosenInlineResult): Self = this.set("chosen_inline_result", value.asInstanceOf[js.Any])
+    def setEdited_message(value: Message): Self = StObject.set(x, "edited_message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChosen_inline_result: Self = this.set("chosen_inline_result", js.undefined)
+    def setEdited_messageUndefined: Self = StObject.set(x, "edited_message", js.undefined)
     
     @scala.inline
-    def setEdited_channel_post(value: Message): Self = this.set("edited_channel_post", value.asInstanceOf[js.Any])
+    def setInline_query(value: InlineQuery): Self = StObject.set(x, "inline_query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEdited_channel_post: Self = this.set("edited_channel_post", js.undefined)
+    def setInline_queryUndefined: Self = StObject.set(x, "inline_query", js.undefined)
     
     @scala.inline
-    def setEdited_message(value: Message): Self = this.set("edited_message", value.asInstanceOf[js.Any])
+    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEdited_message: Self = this.set("edited_message", js.undefined)
+    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
     @scala.inline
-    def setInline_query(value: InlineQuery): Self = this.set("inline_query", value.asInstanceOf[js.Any])
+    def setPre_checkout_query(value: PreCheckoutQuery): Self = StObject.set(x, "pre_checkout_query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInline_query: Self = this.set("inline_query", js.undefined)
+    def setPre_checkout_queryUndefined: Self = StObject.set(x, "pre_checkout_query", js.undefined)
     
     @scala.inline
-    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setShipping_query(value: ShippingQuery): Self = StObject.set(x, "shipping_query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessage: Self = this.set("message", js.undefined)
+    def setShipping_queryUndefined: Self = StObject.set(x, "shipping_query", js.undefined)
     
     @scala.inline
-    def setPre_checkout_query(value: PreCheckoutQuery): Self = this.set("pre_checkout_query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePre_checkout_query: Self = this.set("pre_checkout_query", js.undefined)
-    
-    @scala.inline
-    def setShipping_query(value: ShippingQuery): Self = this.set("shipping_query", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShipping_query: Self = this.set("shipping_query", js.undefined)
+    def setUpdate_id(value: Double): Self = StObject.set(x, "update_id", value.asInstanceOf[js.Any])
   }
 }

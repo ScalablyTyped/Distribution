@@ -1,13 +1,13 @@
 package typings.sipJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/api/notifier", JSImport.Namespace)
-@js.native
-object notifierMod extends js.Object {
+object notifierMod {
   
+  @JSImport("sip.js/lib/api/notifier", "Notifier")
   @js.native
-  class Notifier () extends js.Object
+  class Notifier () extends StObject
 }

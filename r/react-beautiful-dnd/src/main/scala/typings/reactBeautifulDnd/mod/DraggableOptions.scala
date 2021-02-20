@@ -1,11 +1,12 @@
 package typings.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DraggableOptions extends js.Object {
+trait DraggableOptions extends StObject {
   
   var canDragInteractiveElements: Boolean = js.native
   
@@ -22,27 +23,15 @@ object DraggableOptions {
   }
   
   @scala.inline
-  implicit class DraggableOptionsOps[Self <: DraggableOptions] (val x: Self) extends AnyVal {
+  implicit class DraggableOptionsMutableBuilder[Self <: DraggableOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanDragInteractiveElements(value: Boolean): Self = StObject.set(x, "canDragInteractiveElements", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCanDragInteractiveElements(value: Boolean): Self = this.set("canDragInteractiveElements", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShouldRespectForcePress(value: Boolean): Self = this.set("shouldRespectForcePress", value.asInstanceOf[js.Any])
+    def setShouldRespectForcePress(value: Boolean): Self = StObject.set(x, "shouldRespectForcePress", value.asInstanceOf[js.Any])
   }
 }

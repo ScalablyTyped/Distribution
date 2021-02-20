@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EncoderSettings extends js.Object {
+trait EncoderSettings extends StObject {
   
   var AudioDescriptions: listOfAudioDescription = js.native
   
@@ -67,84 +68,72 @@ object EncoderSettings {
   }
   
   @scala.inline
-  implicit class EncoderSettingsOps[Self <: EncoderSettings] (val x: Self) extends AnyVal {
+  implicit class EncoderSettingsMutableBuilder[Self <: EncoderSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioDescriptions(value: listOfAudioDescription): Self = StObject.set(x, "AudioDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioDescriptionsVarargs(value: AudioDescription*): Self = StObject.set(x, "AudioDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailBlanking(value: AvailBlanking): Self = StObject.set(x, "AvailBlanking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudioDescriptionsVarargs(value: AudioDescription*): Self = this.set("AudioDescriptions", js.Array(value :_*))
+    def setAvailBlankingUndefined: Self = StObject.set(x, "AvailBlanking", js.undefined)
     
     @scala.inline
-    def setAudioDescriptions(value: listOfAudioDescription): Self = this.set("AudioDescriptions", value.asInstanceOf[js.Any])
+    def setAvailConfiguration(value: AvailConfiguration): Self = StObject.set(x, "AvailConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutputGroupsVarargs(value: OutputGroup*): Self = this.set("OutputGroups", js.Array(value :_*))
+    def setAvailConfigurationUndefined: Self = StObject.set(x, "AvailConfiguration", js.undefined)
     
     @scala.inline
-    def setOutputGroups(value: listOfOutputGroup): Self = this.set("OutputGroups", value.asInstanceOf[js.Any])
+    def setBlackoutSlate(value: BlackoutSlate): Self = StObject.set(x, "BlackoutSlate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimecodeConfig(value: TimecodeConfig): Self = this.set("TimecodeConfig", value.asInstanceOf[js.Any])
+    def setBlackoutSlateUndefined: Self = StObject.set(x, "BlackoutSlate", js.undefined)
     
     @scala.inline
-    def setVideoDescriptionsVarargs(value: VideoDescription*): Self = this.set("VideoDescriptions", js.Array(value :_*))
+    def setCaptionDescriptions(value: listOfCaptionDescription): Self = StObject.set(x, "CaptionDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVideoDescriptions(value: listOfVideoDescription): Self = this.set("VideoDescriptions", value.asInstanceOf[js.Any])
+    def setCaptionDescriptionsUndefined: Self = StObject.set(x, "CaptionDescriptions", js.undefined)
     
     @scala.inline
-    def setAvailBlanking(value: AvailBlanking): Self = this.set("AvailBlanking", value.asInstanceOf[js.Any])
+    def setCaptionDescriptionsVarargs(value: CaptionDescription*): Self = StObject.set(x, "CaptionDescriptions", js.Array(value :_*))
     
     @scala.inline
-    def deleteAvailBlanking: Self = this.set("AvailBlanking", js.undefined)
+    def setFeatureActivations(value: FeatureActivations): Self = StObject.set(x, "FeatureActivations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailConfiguration(value: AvailConfiguration): Self = this.set("AvailConfiguration", value.asInstanceOf[js.Any])
+    def setFeatureActivationsUndefined: Self = StObject.set(x, "FeatureActivations", js.undefined)
     
     @scala.inline
-    def deleteAvailConfiguration: Self = this.set("AvailConfiguration", js.undefined)
+    def setGlobalConfiguration(value: GlobalConfiguration): Self = StObject.set(x, "GlobalConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBlackoutSlate(value: BlackoutSlate): Self = this.set("BlackoutSlate", value.asInstanceOf[js.Any])
+    def setGlobalConfigurationUndefined: Self = StObject.set(x, "GlobalConfiguration", js.undefined)
     
     @scala.inline
-    def deleteBlackoutSlate: Self = this.set("BlackoutSlate", js.undefined)
+    def setNielsenConfiguration(value: NielsenConfiguration): Self = StObject.set(x, "NielsenConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaptionDescriptionsVarargs(value: CaptionDescription*): Self = this.set("CaptionDescriptions", js.Array(value :_*))
+    def setNielsenConfigurationUndefined: Self = StObject.set(x, "NielsenConfiguration", js.undefined)
     
     @scala.inline
-    def setCaptionDescriptions(value: listOfCaptionDescription): Self = this.set("CaptionDescriptions", value.asInstanceOf[js.Any])
+    def setOutputGroups(value: listOfOutputGroup): Self = StObject.set(x, "OutputGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCaptionDescriptions: Self = this.set("CaptionDescriptions", js.undefined)
+    def setOutputGroupsVarargs(value: OutputGroup*): Self = StObject.set(x, "OutputGroups", js.Array(value :_*))
     
     @scala.inline
-    def setFeatureActivations(value: FeatureActivations): Self = this.set("FeatureActivations", value.asInstanceOf[js.Any])
+    def setTimecodeConfig(value: TimecodeConfig): Self = StObject.set(x, "TimecodeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFeatureActivations: Self = this.set("FeatureActivations", js.undefined)
+    def setVideoDescriptions(value: listOfVideoDescription): Self = StObject.set(x, "VideoDescriptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGlobalConfiguration(value: GlobalConfiguration): Self = this.set("GlobalConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGlobalConfiguration: Self = this.set("GlobalConfiguration", js.undefined)
-    
-    @scala.inline
-    def setNielsenConfiguration(value: NielsenConfiguration): Self = this.set("NielsenConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNielsenConfiguration: Self = this.set("NielsenConfiguration", js.undefined)
+    def setVideoDescriptionsVarargs(value: VideoDescription*): Self = StObject.set(x, "VideoDescriptions", js.Array(value :_*))
   }
 }

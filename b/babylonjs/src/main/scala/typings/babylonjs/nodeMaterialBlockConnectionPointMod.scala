@@ -1,22 +1,21 @@
 package typings.babylonjs
 
-import org.scalablytyped.runtime.TopLevel
 import typings.babylonjs.inputBlockMod.InputBlock
 import typings.babylonjs.nodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.nodeMaterialBlockTargetsMod.NodeMaterialBlockTargets
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Materials/Node/nodeMaterialBlockConnectionPoint", JSImport.Namespace)
-@js.native
-object nodeMaterialBlockConnectionPointMod extends js.Object {
+object nodeMaterialBlockConnectionPointMod {
   
+  @JSImport("babylonjs/Materials/Node/nodeMaterialBlockConnectionPoint", "NodeMaterialConnectionPoint")
   @js.native
-  class NodeMaterialConnectionPoint protected () extends js.Object {
+  class NodeMaterialConnectionPoint protected () extends StObject {
     /**
       * Creates a new connection point
       * @param name defines the connection point name
@@ -222,8 +221,7 @@ object nodeMaterialBlockConnectionPointMod extends js.Object {
     def type_=(value: NodeMaterialBlockConnectionPointTypes): Unit = js.native
   }
   /* static members */
-  @js.native
-  object NodeMaterialConnectionPoint extends js.Object {
+  object NodeMaterialConnectionPoint {
     
     /**
       * Checks if two types are equivalent
@@ -231,13 +229,16 @@ object nodeMaterialBlockConnectionPointMod extends js.Object {
       * @param type2 type 2 to check
       * @returns true if both types are equivalent, else false
       */
+    @JSImport("babylonjs/Materials/Node/nodeMaterialBlockConnectionPoint", "NodeMaterialConnectionPoint.AreEquivalentTypes")
+    @js.native
     def AreEquivalentTypes(type1: Double, type2: Double): Boolean = js.native
   }
   
   @js.native
-  sealed trait NodeMaterialConnectionPointCompatibilityStates extends js.Object
+  sealed trait NodeMaterialConnectionPointCompatibilityStates extends StObject
+  @JSImport("babylonjs/Materials/Node/nodeMaterialBlockConnectionPoint", "NodeMaterialConnectionPointCompatibilityStates")
   @js.native
-  object NodeMaterialConnectionPointCompatibilityStates extends js.Object {
+  object NodeMaterialConnectionPointCompatibilityStates extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeMaterialConnectionPointCompatibilityStates with Double] = js.native
@@ -245,26 +246,24 @@ object nodeMaterialBlockConnectionPointMod extends js.Object {
     /** Points are compatibles */
     @js.native
     sealed trait Compatible extends NodeMaterialConnectionPointCompatibilityStates
-    /* 0 */ @js.native
-    object Compatible extends TopLevel[Compatible with Double]
+    /* 0 */ val Compatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.Compatible with Double = js.native
     
     /** Points are incompatible because of their targets (vertex vs fragment) */
     @js.native
     sealed trait TargetIncompatible extends NodeMaterialConnectionPointCompatibilityStates
-    /* 2 */ @js.native
-    object TargetIncompatible extends TopLevel[TargetIncompatible with Double]
+    /* 2 */ val TargetIncompatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.TargetIncompatible with Double = js.native
     
     /** Points are incompatible because of their types */
     @js.native
     sealed trait TypeIncompatible extends NodeMaterialConnectionPointCompatibilityStates
-    /* 1 */ @js.native
-    object TypeIncompatible extends TopLevel[TypeIncompatible with Double]
+    /* 1 */ val TypeIncompatible: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointCompatibilityStates.TypeIncompatible with Double = js.native
   }
   
   @js.native
-  sealed trait NodeMaterialConnectionPointDirection extends js.Object
+  sealed trait NodeMaterialConnectionPointDirection extends StObject
+  @JSImport("babylonjs/Materials/Node/nodeMaterialBlockConnectionPoint", "NodeMaterialConnectionPointDirection")
   @js.native
-  object NodeMaterialConnectionPointDirection extends js.Object {
+  object NodeMaterialConnectionPointDirection extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeMaterialConnectionPointDirection with Double] = js.native
@@ -272,13 +271,11 @@ object nodeMaterialBlockConnectionPointMod extends js.Object {
     /** Input */
     @js.native
     sealed trait Input extends NodeMaterialConnectionPointDirection
-    /* 0 */ @js.native
-    object Input extends TopLevel[Input with Double]
+    /* 0 */ val Input: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection.Input with Double = js.native
     
     /** Output */
     @js.native
     sealed trait Output extends NodeMaterialConnectionPointDirection
-    /* 1 */ @js.native
-    object Output extends TopLevel[Output with Double]
+    /* 1 */ val Output: typings.babylonjs.nodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPointDirection.Output with Double = js.native
   }
 }

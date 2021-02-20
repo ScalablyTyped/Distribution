@@ -5,12 +5,13 @@ import typings.hlsParser.hlsParserStrings.SUBTITLES
 import typings.hlsParser.hlsParserStrings.VIDEO
 import typings.hlsParser.hlsParserStrings.`CLOSED-CAPTIONS`
 import typings.hlsParser.mod.types.Rendition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AverageBandwidth extends js.Object {
+trait AverageBandwidth extends StObject {
   
   var audio: js.UndefOr[js.Array[Rendition[AUDIO]]] = js.native
   
@@ -47,102 +48,90 @@ object AverageBandwidth {
   }
   
   @scala.inline
-  implicit class AverageBandwidthOps[Self <: AverageBandwidth] (val x: Self) extends AnyVal {
+  implicit class AverageBandwidthMutableBuilder[Self <: AverageBandwidth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudio(value: js.Array[Rendition[AUDIO]]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAudioVarargs(value: Rendition[AUDIO]*): Self = StObject.set(x, "audio", js.Array(value :_*))
     
     @scala.inline
-    def setBandwidth(value: Double): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    def setAverageBandwidth(value: Double): Self = StObject.set(x, "averageBandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    def setAverageBandwidthUndefined: Self = StObject.set(x, "averageBandwidth", js.undefined)
     
     @scala.inline
-    def setAudioVarargs(value: Rendition[AUDIO]*): Self = this.set("audio", js.Array(value :_*))
+    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudio(value: js.Array[Rendition[AUDIO]]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    def setClosedCaptions(value: js.Array[Rendition[`CLOSED-CAPTIONS`]]): Self = StObject.set(x, "closedCaptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAudio: Self = this.set("audio", js.undefined)
+    def setClosedCaptionsUndefined: Self = StObject.set(x, "closedCaptions", js.undefined)
     
     @scala.inline
-    def setAverageBandwidth(value: Double): Self = this.set("averageBandwidth", value.asInstanceOf[js.Any])
+    def setClosedCaptionsVarargs(value: Rendition[`CLOSED-CAPTIONS`]*): Self = StObject.set(x, "closedCaptions", js.Array(value :_*))
     
     @scala.inline
-    def deleteAverageBandwidth: Self = this.set("averageBandwidth", js.undefined)
+    def setCodecs(value: String): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClosedCaptionsVarargs(value: Rendition[`CLOSED-CAPTIONS`]*): Self = this.set("closedCaptions", js.Array(value :_*))
+    def setCodecsUndefined: Self = StObject.set(x, "codecs", js.undefined)
     
     @scala.inline
-    def setClosedCaptions(value: js.Array[Rendition[`CLOSED-CAPTIONS`]]): Self = this.set("closedCaptions", value.asInstanceOf[js.Any])
+    def setCurrentRenditions(value: Audio): Self = StObject.set(x, "currentRenditions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClosedCaptions: Self = this.set("closedCaptions", js.undefined)
+    def setCurrentRenditionsUndefined: Self = StObject.set(x, "currentRenditions", js.undefined)
     
     @scala.inline
-    def setCodecs(value: String): Self = this.set("codecs", value.asInstanceOf[js.Any])
+    def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCodecs: Self = this.set("codecs", js.undefined)
+    def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
     
     @scala.inline
-    def setCurrentRenditions(value: Audio): Self = this.set("currentRenditions", value.asInstanceOf[js.Any])
+    def setHdcpLevel(value: String): Self = StObject.set(x, "hdcpLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrentRenditions: Self = this.set("currentRenditions", js.undefined)
+    def setHdcpLevelUndefined: Self = StObject.set(x, "hdcpLevel", js.undefined)
     
     @scala.inline
-    def setFrameRate(value: Double): Self = this.set("frameRate", value.asInstanceOf[js.Any])
+    def setIsIFrameOnly(value: Boolean): Self = StObject.set(x, "isIFrameOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrameRate: Self = this.set("frameRate", js.undefined)
+    def setIsIFrameOnlyUndefined: Self = StObject.set(x, "isIFrameOnly", js.undefined)
     
     @scala.inline
-    def setHdcpLevel(value: String): Self = this.set("hdcpLevel", value.asInstanceOf[js.Any])
+    def setResolution(value: Height): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHdcpLevel: Self = this.set("hdcpLevel", js.undefined)
+    def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     @scala.inline
-    def setIsIFrameOnly(value: Boolean): Self = this.set("isIFrameOnly", value.asInstanceOf[js.Any])
+    def setSubtitles(value: js.Array[Rendition[SUBTITLES]]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsIFrameOnly: Self = this.set("isIFrameOnly", js.undefined)
+    def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
     
     @scala.inline
-    def setResolution(value: Height): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    def setSubtitlesVarargs(value: Rendition[SUBTITLES]*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
     
     @scala.inline
-    def deleteResolution: Self = this.set("resolution", js.undefined)
+    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitlesVarargs(value: Rendition[SUBTITLES]*): Self = this.set("subtitles", js.Array(value :_*))
+    def setVideo(value: js.Array[Rendition[VIDEO]]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubtitles(value: js.Array[Rendition[SUBTITLES]]): Self = this.set("subtitles", value.asInstanceOf[js.Any])
+    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
     @scala.inline
-    def deleteSubtitles: Self = this.set("subtitles", js.undefined)
-    
-    @scala.inline
-    def setVideoVarargs(value: Rendition[VIDEO]*): Self = this.set("video", js.Array(value :_*))
-    
-    @scala.inline
-    def setVideo(value: js.Array[Rendition[VIDEO]]): Self = this.set("video", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideo: Self = this.set("video", js.undefined)
+    def setVideoVarargs(value: Rendition[VIDEO]*): Self = StObject.set(x, "video", js.Array(value :_*))
   }
 }

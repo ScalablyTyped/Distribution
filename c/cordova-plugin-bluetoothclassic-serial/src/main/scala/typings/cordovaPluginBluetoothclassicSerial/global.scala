@@ -1,12 +1,15 @@
 package typings.cordovaPluginBluetoothclassicSerial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var bluetoothClassicSerial: BluetoothClassicSerial = js.native
+  @JSGlobal("bluetoothClassicSerial")
+  @js.native
+  def bluetoothClassicSerial: BluetoothClassicSerial = js.native
+  @scala.inline
+  def bluetoothClassicSerial_=(x: BluetoothClassicSerial): Unit = js.Dynamic.global.updateDynamic("bluetoothClassicSerial")(x.asInstanceOf[js.Any])
 }

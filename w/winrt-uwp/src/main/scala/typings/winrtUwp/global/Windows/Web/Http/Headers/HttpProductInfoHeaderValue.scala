@@ -1,6 +1,7 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
 import typings.winrtUwp.anon.ProductInfoHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,21 +23,24 @@ class HttpProductInfoHeaderValue protected ()
     */
   def this(productName: String, productVersion: String) = this()
 }
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpProductInfoHeaderValue")
-@js.native
-object HttpProductInfoHeaderValue extends js.Object {
+object HttpProductInfoHeaderValue {
   
   /**
     * Converts a string to an HttpProductInfoHeaderValue instance.
     * @param input A string that represents the product information.
     * @return An HttpProductInfoHeaderValue instance.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpProductInfoHeaderValue.parse")
+  @js.native
   def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpProductInfoHeaderValue = js.native
   
   /**
     * Determines whether a string is valid HttpProductInfoHeaderValue information.
     * @param input The string to validate.
     */
+  /* static member */
+  @JSGlobal("Windows.Web.Http.Headers.HttpProductInfoHeaderValue.tryParse")
+  @js.native
   def tryParse(input: String): ProductInfoHeaderValue = js.native
 }

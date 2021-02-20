@@ -1,11 +1,12 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ILockData extends js.Object {
+trait ILockData extends StObject {
   
   var duration: js.UndefOr[Double] = js.native
   
@@ -26,39 +27,27 @@ object ILockData {
   }
   
   @scala.inline
-  implicit class ILockDataOps[Self <: ILockData] (val x: Self) extends AnyVal {
+  implicit class ILockDataMutableBuilder[Self <: ILockData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLockType(value: LockType): Self = this.set("lockType", value.asInstanceOf[js.Any])
+    def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
     
     @scala.inline
-    def setRequestedBy(value: String): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
+    def setLockType(value: LockType): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setRequestedBy(value: String): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDuration: Self = this.set("duration", js.undefined)
-    
-    @scala.inline
-    def setLockId(value: String): Self = this.set("lockId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLockId: Self = this.set("lockId", js.undefined)
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

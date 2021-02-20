@@ -2,6 +2,7 @@ package typings.reactNativeSvg.mod
 
 import typings.reactNative.mod.ImageSourcePropType
 import typings.reactNative.mod.ImageURISource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,78 +41,66 @@ object ImageProps {
   }
   
   @scala.inline
-  implicit class ImagePropsOps[Self <: ImageProps] (val x: Self) extends AnyVal {
+  implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHeight(value: NumberProp): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHref(value: ImageSourcePropType): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: NumberProp): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setHrefVarargs(value: ImageURISource*): Self = StObject.set(x, "href", js.Array(value :_*))
     
     @scala.inline
-    def setHrefVarargs(value: ImageURISource*): Self = this.set("href", js.Array(value :_*))
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHref(value: ImageSourcePropType): Self = this.set("href", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteHref: Self = this.set("href", js.undefined)
+    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpacity(value: NumberProp): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
     @scala.inline
-    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    def setWidth(value: NumberProp): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveAspectRatio(value: String): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deletePreserveAspectRatio: Self = this.set("preserveAspectRatio", js.undefined)
+    def setX(value: NumberProp): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: NumberProp): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setXlinkHref(value: ImageSourcePropType): Self = StObject.set(x, "xlinkHref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: NumberProp): Self = this.set("x", value.asInstanceOf[js.Any])
+    def setXlinkHrefUndefined: Self = StObject.set(x, "xlinkHref", js.undefined)
     
     @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
+    def setXlinkHrefVarargs(value: ImageURISource*): Self = StObject.set(x, "xlinkHref", js.Array(value :_*))
     
     @scala.inline
-    def setXlinkHrefVarargs(value: ImageURISource*): Self = this.set("xlinkHref", js.Array(value :_*))
+    def setY(value: NumberProp): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setXlinkHref(value: ImageSourcePropType): Self = this.set("xlinkHref", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteXlinkHref: Self = this.set("xlinkHref", js.undefined)
-    
-    @scala.inline
-    def setY(value: NumberProp): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

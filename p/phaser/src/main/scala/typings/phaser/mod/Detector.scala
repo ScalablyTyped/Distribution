@@ -3,6 +3,7 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.ICollisionData
 import typings.phaser.MatterJS.ICollisionFilter
 import typings.phaser.MatterJS.IPair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Detector ()
   extends typings.phaser.MatterJS.Detector
-/* static members */
-@JSImport("matter", "Detector")
-@js.native
-object Detector extends js.Object {
+object Detector {
   
   /**
     * Returns `true` if both supplied collision filters will allow a collision to occur.
@@ -29,6 +27,9 @@ object Detector extends js.Object {
     * @param {} filterB
     * @return {bool} `true` if collision can occur
     */
+  /* static member */
+  @JSImport("matter", "Detector.canCollide")
+  @js.native
   def canCollide(filterA: ICollisionFilter, filterB: ICollisionFilter): Boolean = js.native
   
   /**
@@ -38,5 +39,8 @@ object Detector extends js.Object {
     * @param {engine} engine
     * @return {ICollisionData[]} collisions
     */
+  /* static member */
+  @JSImport("matter", "Detector.collisions")
+  @js.native
   def collisions(broadphasePairs: js.Array[IPair], engine: typings.phaser.MatterJS.Engine): js.Array[ICollisionData] = js.native
 }

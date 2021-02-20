@@ -4,12 +4,13 @@ import typings.handsontable.mod.Handsontable.GridSettings
 import typings.handsontable.mod._Handsontable.Core
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GhostTable extends js.Object {
+trait GhostTable extends StObject {
   
   def addColumn(column: Double, samples: js.Object): Unit = js.native
   

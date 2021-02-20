@@ -5,22 +5,20 @@ import typings.winrtUwp.Windows.Devices.Custom.DeviceSharingMode
 import typings.winrtUwp.Windows.Devices.Custom.IOControlAccessMode
 import typings.winrtUwp.Windows.Devices.Custom.IOControlBufferingMethod
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Opens a custom device asynchronously, and with the object returned from the open operation send asynchronous IOCTLs to the device. */
-@JSGlobal("Windows.Devices.Custom")
-@js.native
-object Custom extends js.Object {
+object Custom {
   
   /** Represents a custom device. */
+  @JSGlobal("Windows.Devices.Custom.CustomDevice")
   @js.native
   abstract class CustomDevice ()
     extends typings.winrtUwp.Windows.Devices.Custom.CustomDevice
-  /* static members */
-  @js.native
-  object CustomDevice extends js.Object {
+  object CustomDevice {
     
     /**
       * Creates a CustomDevice object asynchronously for the specified DeviceInformation.Id .
@@ -29,6 +27,9 @@ object Custom extends js.Object {
       * @param sharingMode The sharing mode.
       * @return Returns a custom device.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.Custom.CustomDevice.fromIdAsync")
+    @js.native
     def fromIdAsync(deviceId: String, desiredAccess: DeviceAccessMode, sharingMode: DeviceSharingMode): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Custom.CustomDevice] = js.native
     
     /**
@@ -36,12 +37,16 @@ object Custom extends js.Object {
       * @param classGuid The Device Interface Class GUID of the device interface to create a device selector for.
       * @return The device selector.
       */
+    /* static member */
+    @JSGlobal("Windows.Devices.Custom.CustomDevice.getDeviceSelector")
+    @js.native
     def getDeviceSelector(classGuid: String): String = js.native
   }
   
   /** The device access mode. */
+  @JSGlobal("Windows.Devices.Custom.DeviceAccessMode")
   @js.native
-  object DeviceAccessMode extends js.Object {
+  object DeviceAccessMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Custom.DeviceAccessMode with Double] = js.native
@@ -54,8 +59,9 @@ object Custom extends js.Object {
   }
   
   /** The device sharing mode. */
+  @JSGlobal("Windows.Devices.Custom.DeviceSharingMode")
   @js.native
-  object DeviceSharingMode extends js.Object {
+  object DeviceSharingMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Custom.DeviceSharingMode with Double] = js.native
@@ -66,8 +72,9 @@ object Custom extends js.Object {
   }
   
   /** Identifies the access mode. */
+  @JSGlobal("Windows.Devices.Custom.IOControlAccessMode")
   @js.native
-  object IOControlAccessMode extends js.Object {
+  object IOControlAccessMode extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Custom.IOControlAccessMode with Double] = js.native
@@ -82,8 +89,9 @@ object Custom extends js.Object {
   }
   
   /** Identifies the buffering method. */
+  @JSGlobal("Windows.Devices.Custom.IOControlBufferingMethod")
   @js.native
-  object IOControlBufferingMethod extends js.Object {
+  object IOControlBufferingMethod extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Devices.Custom.IOControlBufferingMethod with Double] = js.native
@@ -98,6 +106,7 @@ object Custom extends js.Object {
   }
   
   /** Represents the control code. */
+  @JSGlobal("Windows.Devices.Custom.IOControlCode")
   @js.native
   class IOControlCode protected ()
     extends typings.winrtUwp.Windows.Devices.Custom.IOControlCode {
@@ -117,14 +126,22 @@ object Custom extends js.Object {
   }
   
   /** Represents know device types. */
+  @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes")
   @js.native
   abstract class KnownDeviceTypes ()
     extends typings.winrtUwp.Windows.Devices.Custom.KnownDeviceTypes
-  /* static members */
-  @js.native
-  object KnownDeviceTypes extends js.Object {
+  object KnownDeviceTypes {
+    
+    @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** Defined by the device vendor. */
-    var unknown: Double = js.native
+    /* static member */
+    @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes.unknown")
+    @js.native
+    def unknown: Double = js.native
+    @scala.inline
+    def unknown_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unknown")(x.asInstanceOf[js.Any])
   }
 }

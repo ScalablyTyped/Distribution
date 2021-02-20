@@ -5,12 +5,13 @@ import typings.googleapis.googleapisStrings.v1alpha2
 import typings.googleapis.googleapisStrings.v1beta1
 import typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare
 import typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn81 extends js.Object {
+trait Fn81 extends StObject {
   
   def apply(options: Options): Healthcare = js.native
   def apply(options: typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Options): typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Healthcare = js.native

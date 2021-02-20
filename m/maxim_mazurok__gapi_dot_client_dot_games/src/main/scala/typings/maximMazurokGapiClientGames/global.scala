@@ -14,51 +14,75 @@ import typings.maximMazurokGapiClientGames.gapi.client.games.SnapshotsResource
 import typings.maximMazurokGapiClientGames.gapi.client.games.StatsResource
 import typings.maximMazurokGapiClientGames.maximMazurokGapiClientGamesStrings.games
 import typings.maximMazurokGapiClientGames.maximMazurokGapiClientGamesStrings.v1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  @js.native
-  object gapi extends js.Object {
+  object gapi {
     
-    @js.native
-    object client extends js.Object {
+    object client {
       
-      /** Load Google Play Game Services v1 */
-      def load(name: games, version: v1): js.Thenable[Unit] = js.native
-      def load(name: games, version: v1, callback: js.Function0[_]): Unit = js.native
-      
-      @js.native
-      object games extends js.Object {
+      object games {
         
+        @JSGlobal("gapi.client.games.achievementDefinitions")
+        @js.native
         val achievementDefinitions: AchievementDefinitionsResource = js.native
         
+        @JSGlobal("gapi.client.games.achievements")
+        @js.native
         val achievements: AchievementsResource = js.native
         
+        @JSGlobal("gapi.client.games.applications")
+        @js.native
         val applications: ApplicationsResource = js.native
         
+        @JSGlobal("gapi.client.games.events")
+        @js.native
         val events: EventsResource = js.native
         
+        @JSGlobal("gapi.client.games.leaderboards")
+        @js.native
         val leaderboards: LeaderboardsResource = js.native
         
+        @JSGlobal("gapi.client.games.metagame")
+        @js.native
         val metagame: MetagameResource = js.native
         
+        @JSGlobal("gapi.client.games.players")
+        @js.native
         val players: PlayersResource = js.native
         
+        @JSGlobal("gapi.client.games.revisions")
+        @js.native
         val revisions: RevisionsResource = js.native
         
+        @JSGlobal("gapi.client.games.scores")
+        @js.native
         val scores: ScoresResource = js.native
         
+        @JSGlobal("gapi.client.games.snapshots")
+        @js.native
         val snapshots: SnapshotsResource = js.native
         
+        @JSGlobal("gapi.client.games.snapshotsExtended")
+        @js.native
         val snapshotsExtended: SnapshotsExtendedResource = js.native
         
+        @JSGlobal("gapi.client.games.stats")
+        @js.native
         val stats: StatsResource = js.native
       }
+      
+      /** Load Google Play Game Services v1 */
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: games, version: v1): js.Thenable[Unit] = js.native
+      @JSGlobal("gapi.client.load")
+      @js.native
+      def load(name: games, version: v1, callback: js.Function0[_]): Unit = js.native
     }
   }
 }

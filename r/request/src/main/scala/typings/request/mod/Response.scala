@@ -4,6 +4,7 @@ import typings.caseless.mod.Caseless
 import typings.node.httpMod.IncomingMessage
 import typings.request.anon.Connect
 import typings.request.anon.Dns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait Response extends IncomingMessage {
   
   var body: js.Any = js.native
   
-   // Buffer, string, stream.Readable, or a plain object if `json` was truthy
+  // Buffer, string, stream.Readable, or a plain object if `json` was truthy
   var caseless: Caseless = js.native
   
   var elapsedTime: js.UndefOr[Double] = js.native
@@ -32,6 +33,6 @@ trait Response extends IncomingMessage {
   
   var timings: js.UndefOr[Connect] = js.native
   
-   // case-insensitive access to headers
+  // case-insensitive access to headers
   def toJSON(): ResponseAsJSON = js.native
 }

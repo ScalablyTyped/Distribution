@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientServiceconsumermanagement.gapi.client.serviceconsumermanagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceAccountConfig extends js.Object {
+trait ServiceAccountConfig extends StObject {
   
   /**
     * ID of the IAM service account to be created in tenant project. The email format of the service account is "@.iam.gserviceaccount.com". This account ID must be unique within tenant
@@ -25,33 +26,21 @@ object ServiceAccountConfig {
   }
   
   @scala.inline
-  implicit class ServiceAccountConfigOps[Self <: ServiceAccountConfig] (val x: Self) extends AnyVal {
+  implicit class ServiceAccountConfigMutableBuilder[Self <: ServiceAccountConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTenantProjectRoles(value: js.Array[String]): Self = StObject.set(x, "tenantProjectRoles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setTenantProjectRolesUndefined: Self = StObject.set(x, "tenantProjectRoles", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
-    
-    @scala.inline
-    def setTenantProjectRolesVarargs(value: String*): Self = this.set("tenantProjectRoles", js.Array(value :_*))
-    
-    @scala.inline
-    def setTenantProjectRoles(value: js.Array[String]): Self = this.set("tenantProjectRoles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTenantProjectRoles: Self = this.set("tenantProjectRoles", js.undefined)
+    def setTenantProjectRolesVarargs(value: String*): Self = StObject.set(x, "tenantProjectRoles", js.Array(value :_*))
   }
 }

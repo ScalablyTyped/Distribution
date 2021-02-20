@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResultRow extends js.Object {
+trait ResultRow extends StObject {
   
   /**
     * An array of objects that defines the field and field values that were used to group data in a result set that contains multiple results. This value is null if the data in a result set isn’t grouped.
@@ -26,30 +27,18 @@ object ResultRow {
   }
   
   @scala.inline
-  implicit class ResultRowOps[Self <: ResultRow] (val x: Self) extends AnyVal {
+  implicit class ResultRowMutableBuilder[Self <: ResultRow] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupedBys(value: ListOfResultRowValue): Self = StObject.set(x, "GroupedBys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupedBysVarargs(value: ResultRowValue*): Self = StObject.set(x, "GroupedBys", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValues(value: ListOfResultRowValue): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupedBysVarargs(value: ResultRowValue*): Self = this.set("GroupedBys", js.Array(value :_*))
-    
-    @scala.inline
-    def setGroupedBys(value: ListOfResultRowValue): Self = this.set("GroupedBys", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: ResultRowValue*): Self = this.set("Values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: ListOfResultRowValue): Self = this.set("Values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: ResultRowValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

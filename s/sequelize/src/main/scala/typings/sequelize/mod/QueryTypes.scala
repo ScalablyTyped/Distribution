@@ -1,5 +1,6 @@
 package typings.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,44 +12,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //  https://github.com/sequelize/sequelize/blob/v3.4.1/lib/query-types.js
 //
 @js.native
-trait QueryTypes extends js.Object {
+trait QueryTypes extends StObject {
   
-   // 'BULKUPDATE'
+  // 'BULKUPDATE'
   var BULKDELETE: String = js.native
   
-   // 'UPDATE'
+  // 'UPDATE'
   var BULKUPDATE: String = js.native
   
-   // 'BULKDELETE'
+  // 'BULKDELETE'
   var DELETE: String = js.native
   
-   // 'SHOWINDEXES'
+  // 'SHOWINDEXES'
   var DESCRIBE: String = js.native
   
-   // 'RAW'
+  // 'RAW'
   var FOREIGNKEYS: String = js.native
   
-   // 'SELECT'
+  // 'SELECT'
   var INSERT: String = js.native
   
-   // 'DESCRIBE'
+  // 'DESCRIBE'
   var RAW: String = js.native
   
   var SELECT: String = js.native
   
-   // 'SHOWTABLES'
+  // 'SHOWTABLES'
   var SHOWINDEXES: String = js.native
   
-   // 'VERSION'
+  // 'VERSION'
   var SHOWTABLES: String = js.native
   
-   // 'INSERT'
+  // 'INSERT'
   var UPDATE: String = js.native
   
-   // 'DELETE'
+  // 'DELETE'
   var UPSERT: String = js.native
   
-   // 'UPSERT'
+  // 'UPSERT'
   var VERSION: String = js.native
 }
 object QueryTypes {
@@ -74,57 +75,45 @@ object QueryTypes {
   }
   
   @scala.inline
-  implicit class QueryTypesOps[Self <: QueryTypes] (val x: Self) extends AnyVal {
+  implicit class QueryTypesMutableBuilder[Self <: QueryTypes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBULKDELETE(value: String): Self = StObject.set(x, "BULKDELETE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBULKUPDATE(value: String): Self = StObject.set(x, "BULKUPDATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBULKDELETE(value: String): Self = this.set("BULKDELETE", value.asInstanceOf[js.Any])
+    def setDESCRIBE(value: String): Self = StObject.set(x, "DESCRIBE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBULKUPDATE(value: String): Self = this.set("BULKUPDATE", value.asInstanceOf[js.Any])
+    def setFOREIGNKEYS(value: String): Self = StObject.set(x, "FOREIGNKEYS", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDELETE(value: String): Self = this.set("DELETE", value.asInstanceOf[js.Any])
+    def setINSERT(value: String): Self = StObject.set(x, "INSERT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDESCRIBE(value: String): Self = this.set("DESCRIBE", value.asInstanceOf[js.Any])
+    def setRAW(value: String): Self = StObject.set(x, "RAW", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFOREIGNKEYS(value: String): Self = this.set("FOREIGNKEYS", value.asInstanceOf[js.Any])
+    def setSELECT(value: String): Self = StObject.set(x, "SELECT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setINSERT(value: String): Self = this.set("INSERT", value.asInstanceOf[js.Any])
+    def setSHOWINDEXES(value: String): Self = StObject.set(x, "SHOWINDEXES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRAW(value: String): Self = this.set("RAW", value.asInstanceOf[js.Any])
+    def setSHOWTABLES(value: String): Self = StObject.set(x, "SHOWTABLES", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSELECT(value: String): Self = this.set("SELECT", value.asInstanceOf[js.Any])
+    def setUPDATE(value: String): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHOWINDEXES(value: String): Self = this.set("SHOWINDEXES", value.asInstanceOf[js.Any])
+    def setUPSERT(value: String): Self = StObject.set(x, "UPSERT", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSHOWTABLES(value: String): Self = this.set("SHOWTABLES", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUPDATE(value: String): Self = this.set("UPDATE", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUPSERT(value: String): Self = this.set("UPSERT", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVERSION(value: String): Self = this.set("VERSION", value.asInstanceOf[js.Any])
+    def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
   }
 }

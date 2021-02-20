@@ -1,13 +1,18 @@
 package typings.antdMobileRn
 
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd-mobile-rn/lib/picker/demo/basic.native", JSImport.Namespace)
-@js.native
-object pickerDemoBasicNativeMod extends js.Object {
+object pickerDemoBasicNativeMod {
+  
+  @JSImport("antd-mobile-rn/lib/picker/demo/basic.native", JSImport.Default)
+  @js.native
+  class default protected () extends PopupExample {
+    def this(props: js.Any) = this()
+  }
   
   @js.native
   trait PopupExample
@@ -16,10 +21,5 @@ object pickerDemoBasicNativeMod extends js.Object {
     def onChange(value: js.Any): Unit = js.native
     
     def onClick(): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends PopupExample {
-    def this(props: js.Any) = this()
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stack extends js.Object {
+trait Stack extends StObject {
   
   /**
     * The capabilities allowed in the stack.
@@ -126,156 +127,144 @@ object Stack {
   }
   
   @scala.inline
-  implicit class StackOps[Self <: Stack] (val x: Self) extends AnyVal {
+  implicit class StackMutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
     
     @scala.inline
-    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    def setChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
     
     @scala.inline
-    def setStackStatus(value: StackStatus): Self = this.set("StackStatus", value.asInstanceOf[js.Any])
+    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    def setDeletionTime(value: DeletionTime): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    def setDeletionTimeUndefined: Self = StObject.set(x, "DeletionTime", js.undefined)
     
     @scala.inline
-    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChangeSetId(value: ChangeSetId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     @scala.inline
-    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+    def setDisableRollback(value: DisableRollback): Self = StObject.set(x, "DisableRollback", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionTime(value: DeletionTime): Self = this.set("DeletionTime", value.asInstanceOf[js.Any])
+    def setDisableRollbackUndefined: Self = StObject.set(x, "DisableRollback", js.undefined)
     
     @scala.inline
-    def deleteDeletionTime: Self = this.set("DeletionTime", js.undefined)
+    def setDriftInformation(value: StackDriftInformation): Self = StObject.set(x, "DriftInformation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("Description", js.undefined)
+    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = StObject.set(x, "EnableTerminationProtection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableRollback(value: DisableRollback): Self = this.set("DisableRollback", value.asInstanceOf[js.Any])
+    def setEnableTerminationProtectionUndefined: Self = StObject.set(x, "EnableTerminationProtection", js.undefined)
     
     @scala.inline
-    def deleteDisableRollback: Self = this.set("DisableRollback", js.undefined)
+    def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDriftInformation(value: StackDriftInformation): Self = this.set("DriftInformation", value.asInstanceOf[js.Any])
+    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
     @scala.inline
-    def deleteDriftInformation: Self = this.set("DriftInformation", js.undefined)
+    def setNotificationARNs(value: NotificationARNs): Self = StObject.set(x, "NotificationARNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = this.set("EnableTerminationProtection", value.asInstanceOf[js.Any])
+    def setNotificationARNsUndefined: Self = StObject.set(x, "NotificationARNs", js.undefined)
     
     @scala.inline
-    def deleteEnableTerminationProtection: Self = this.set("EnableTerminationProtection", js.undefined)
+    def setNotificationARNsVarargs(value: NotificationARN*): Self = StObject.set(x, "NotificationARNs", js.Array(value :_*))
     
     @scala.inline
-    def setLastUpdatedTime(value: LastUpdatedTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    def setOutputs(value: Outputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
     @scala.inline
-    def setNotificationARNsVarargs(value: NotificationARN*): Self = this.set("NotificationARNs", js.Array(value :_*))
+    def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
     
     @scala.inline
-    def setNotificationARNs(value: NotificationARNs): Self = this.set("NotificationARNs", value.asInstanceOf[js.Any])
+    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNotificationARNs: Self = this.set("NotificationARNs", js.undefined)
+    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
     @scala.inline
-    def setOutputsVarargs(value: Output*): Self = this.set("Outputs", js.Array(value :_*))
+    def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
     
     @scala.inline
-    def setOutputs(value: Outputs): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    def setParentId(value: StackId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
     @scala.inline
-    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    def setRoleARN(value: RoleARN_): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
     @scala.inline
-    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = StObject.set(x, "RollbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentId(value: StackId): Self = this.set("ParentId", value.asInstanceOf[js.Any])
+    def setRollbackConfigurationUndefined: Self = StObject.set(x, "RollbackConfiguration", js.undefined)
     
     @scala.inline
-    def deleteParentId: Self = this.set("ParentId", js.undefined)
+    def setRootId(value: StackId): Self = StObject.set(x, "RootId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    def setRootIdUndefined: Self = StObject.set(x, "RootId", js.undefined)
     
     @scala.inline
-    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
     @scala.inline
-    def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRootId(value: StackId): Self = this.set("RootId", value.asInstanceOf[js.Any])
+    def setStackStatus(value: StackStatus): Self = StObject.set(x, "StackStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRootId: Self = this.set("RootId", js.undefined)
+    def setStackStatusReason(value: StackStatusReason): Self = StObject.set(x, "StackStatusReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    def setStackStatusReasonUndefined: Self = StObject.set(x, "StackStatusReason", js.undefined)
     
     @scala.inline
-    def deleteStackId: Self = this.set("StackId", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStackStatusReason(value: StackStatusReason): Self = this.set("StackStatusReason", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteStackStatusReason: Self = this.set("StackStatusReason", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setTimeoutInMinutes(value: TimeoutMinutes): Self = StObject.set(x, "TimeoutInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setTimeoutInMinutes(value: TimeoutMinutes): Self = this.set("TimeoutInMinutes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeoutInMinutes: Self = this.set("TimeoutInMinutes", js.undefined)
+    def setTimeoutInMinutesUndefined: Self = StObject.set(x, "TimeoutInMinutes", js.undefined)
   }
 }

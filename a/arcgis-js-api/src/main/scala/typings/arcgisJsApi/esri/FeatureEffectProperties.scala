@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureEffectProperties extends js.Object {
+trait FeatureEffectProperties extends StObject {
   
   /**
     * The graphical [css filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) operation applied to the features that do not meet the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter) requirements.
@@ -44,42 +45,30 @@ object FeatureEffectProperties {
   }
   
   @scala.inline
-  implicit class FeatureEffectPropertiesOps[Self <: FeatureEffectProperties] (val x: Self) extends AnyVal {
+  implicit class FeatureEffectPropertiesMutableBuilder[Self <: FeatureEffectProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedEffect(value: String): Self = StObject.set(x, "excludedEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedEffectUndefined: Self = StObject.set(x, "excludedEffect", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedLabelsVisible(value: Boolean): Self = StObject.set(x, "excludedLabelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedEffect(value: String): Self = this.set("excludedEffect", value.asInstanceOf[js.Any])
+    def setExcludedLabelsVisibleUndefined: Self = StObject.set(x, "excludedLabelsVisible", js.undefined)
     
     @scala.inline
-    def deleteExcludedEffect: Self = this.set("excludedEffect", js.undefined)
+    def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedLabelsVisible(value: Boolean): Self = this.set("excludedLabelsVisible", value.asInstanceOf[js.Any])
+    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     @scala.inline
-    def deleteExcludedLabelsVisible: Self = this.set("excludedLabelsVisible", js.undefined)
+    def setIncludedEffect(value: String): Self = StObject.set(x, "includedEffect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFilter(value: FeatureFilterProperties): Self = this.set("filter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFilter: Self = this.set("filter", js.undefined)
-    
-    @scala.inline
-    def setIncludedEffect(value: String): Self = this.set("includedEffect", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludedEffect: Self = this.set("includedEffect", js.undefined)
+    def setIncludedEffectUndefined: Self = StObject.set(x, "includedEffect", js.undefined)
   }
 }

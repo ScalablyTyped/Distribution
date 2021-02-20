@@ -1,11 +1,12 @@
 package typings.zingchart.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sizefactor extends js.Object {
+trait Sizefactor extends StObject {
   
   /**
     * To modify the size of the chart. Provide a value in relation to 1.0 or 100%. 0.3 | 0.9 | "30%" | "90%" | ...
@@ -21,24 +22,12 @@ object Sizefactor {
   }
   
   @scala.inline
-  implicit class SizefactorOps[Self <: Sizefactor] (val x: Self) extends AnyVal {
+  implicit class SizefactorMutableBuilder[Self <: Sizefactor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setSize-factor`(value: Double): Self = StObject.set(x, "size-factor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def `setSize-factor`(value: Double): Self = this.set("size-factor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteSize-factor`: Self = this.set("size-factor", js.undefined)
+    def `setSize-factorUndefined`: Self = StObject.set(x, "size-factor", js.undefined)
   }
 }

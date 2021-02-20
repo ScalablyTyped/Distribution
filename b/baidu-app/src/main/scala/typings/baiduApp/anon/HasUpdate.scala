@@ -1,11 +1,12 @@
 package typings.baiduApp.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HasUpdate extends js.Object {
+trait HasUpdate extends StObject {
   
   var hasUpdate: Boolean = js.native
 }
@@ -18,21 +19,9 @@ object HasUpdate {
   }
   
   @scala.inline
-  implicit class HasUpdateOps[Self <: HasUpdate] (val x: Self) extends AnyVal {
+  implicit class HasUpdateMutableBuilder[Self <: HasUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHasUpdate(value: Boolean): Self = this.set("hasUpdate", value.asInstanceOf[js.Any])
+    def setHasUpdate(value: Boolean): Self = StObject.set(x, "hasUpdate", value.asInstanceOf[js.Any])
   }
 }

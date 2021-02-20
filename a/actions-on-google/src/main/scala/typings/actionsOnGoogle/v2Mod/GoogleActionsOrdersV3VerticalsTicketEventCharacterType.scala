@@ -1,5 +1,6 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.actionsOnGoogle.actionsOnGoogleStrings.DIRECTOR
   - typings.actionsOnGoogle.actionsOnGoogleStrings.ORGANIZER
 */
-trait GoogleActionsOrdersV3VerticalsTicketEventCharacterType extends js.Object
+trait GoogleActionsOrdersV3VerticalsTicketEventCharacterType extends StObject
 object GoogleActionsOrdersV3VerticalsTicketEventCharacterType {
   
   @scala.inline

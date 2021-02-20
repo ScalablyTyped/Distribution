@@ -1,12 +1,13 @@
 package typings.googlemaps.google.maps
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MapHandlerMap[T /* <: Map[Element] */] extends js.Object {
+trait MapHandlerMap[T /* <: Map[Element] */] extends StObject {
   
   /**
     * This event is fired when the viewport bounds have changed.

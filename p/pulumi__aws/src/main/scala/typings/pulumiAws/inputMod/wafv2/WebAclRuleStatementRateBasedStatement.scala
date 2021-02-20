@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.wafv2
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAclRuleStatementRateBasedStatement extends js.Object {
+trait WebAclRuleStatementRateBasedStatement extends StObject {
   
   /**
     * Setting that indicates how to aggregate the request counts. Valid values include: `FORWARDED_IP` or `IP`. Default: `IP`.
@@ -37,39 +38,27 @@ object WebAclRuleStatementRateBasedStatement {
   }
   
   @scala.inline
-  implicit class WebAclRuleStatementRateBasedStatementOps[Self <: WebAclRuleStatementRateBasedStatement] (val x: Self) extends AnyVal {
+  implicit class WebAclRuleStatementRateBasedStatementMutableBuilder[Self <: WebAclRuleStatementRateBasedStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAggregateKeyType(value: Input[String]): Self = StObject.set(x, "aggregateKeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAggregateKeyTypeUndefined: Self = StObject.set(x, "aggregateKeyType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForwardedIpConfig(value: Input[WebAclRuleStatementRateBasedStatementForwardedIpConfig]): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Input[Double]): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
     
     @scala.inline
-    def setAggregateKeyType(value: Input[String]): Self = this.set("aggregateKeyType", value.asInstanceOf[js.Any])
+    def setLimit(value: Input[Double]): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAggregateKeyType: Self = this.set("aggregateKeyType", js.undefined)
+    def setScopeDownStatement(value: Input[WebAclRuleStatementRateBasedStatementScopeDownStatement]): Self = StObject.set(x, "scopeDownStatement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForwardedIpConfig(value: Input[WebAclRuleStatementRateBasedStatementForwardedIpConfig]): Self = this.set("forwardedIpConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForwardedIpConfig: Self = this.set("forwardedIpConfig", js.undefined)
-    
-    @scala.inline
-    def setScopeDownStatement(value: Input[WebAclRuleStatementRateBasedStatementScopeDownStatement]): Self = this.set("scopeDownStatement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScopeDownStatement: Self = this.set("scopeDownStatement", js.undefined)
+    def setScopeDownStatementUndefined: Self = StObject.set(x, "scopeDownStatement", js.undefined)
   }
 }

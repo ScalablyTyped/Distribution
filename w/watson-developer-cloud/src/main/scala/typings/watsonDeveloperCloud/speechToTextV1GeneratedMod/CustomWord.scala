@@ -1,12 +1,13 @@
 package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** CustomWord. */
 @js.native
-trait CustomWord extends js.Object {
+trait CustomWord extends StObject {
   
   /** An alternative spelling for the custom word when it appears in a transcript. Use the parameter when you want the word to have a spelling that is different from its usual representation or from its spelling in corpora training data. */
   var display_as: js.UndefOr[String] = js.native
@@ -26,39 +27,27 @@ object CustomWord {
   }
   
   @scala.inline
-  implicit class CustomWordOps[Self <: CustomWord] (val x: Self) extends AnyVal {
+  implicit class CustomWordMutableBuilder[Self <: CustomWord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplay_as(value: String): Self = StObject.set(x, "display_as", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplay_asUndefined: Self = StObject.set(x, "display_as", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSounds_like(value: js.Array[String]): Self = StObject.set(x, "sounds_like", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplay_as(value: String): Self = this.set("display_as", value.asInstanceOf[js.Any])
+    def setSounds_likeUndefined: Self = StObject.set(x, "sounds_like", js.undefined)
     
     @scala.inline
-    def deleteDisplay_as: Self = this.set("display_as", js.undefined)
+    def setSounds_likeVarargs(value: String*): Self = StObject.set(x, "sounds_like", js.Array(value :_*))
     
     @scala.inline
-    def setSounds_likeVarargs(value: String*): Self = this.set("sounds_like", js.Array(value :_*))
+    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSounds_like(value: js.Array[String]): Self = this.set("sounds_like", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSounds_like: Self = this.set("sounds_like", js.undefined)
-    
-    @scala.inline
-    def setWord(value: String): Self = this.set("word", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWord: Self = this.set("word", js.undefined)
+    def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LangAccessibilitySeriesTypeDescriptionsOptions extends js.Object {
+trait LangAccessibilitySeriesTypeDescriptionsOptions extends StObject {
   
   var arearange: js.UndefOr[String] = js.native
   
@@ -34,72 +35,60 @@ object LangAccessibilitySeriesTypeDescriptionsOptions {
   }
   
   @scala.inline
-  implicit class LangAccessibilitySeriesTypeDescriptionsOptionsOps[Self <: LangAccessibilitySeriesTypeDescriptionsOptions] (val x: Self) extends AnyVal {
+  implicit class LangAccessibilitySeriesTypeDescriptionsOptionsMutableBuilder[Self <: LangAccessibilitySeriesTypeDescriptionsOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArearange(value: String): Self = StObject.set(x, "arearange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArearangeUndefined: Self = StObject.set(x, "arearange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAreasplinerange(value: String): Self = StObject.set(x, "areasplinerange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArearange(value: String): Self = this.set("arearange", value.asInstanceOf[js.Any])
+    def setAreasplinerangeUndefined: Self = StObject.set(x, "areasplinerange", js.undefined)
     
     @scala.inline
-    def deleteArearange: Self = this.set("arearange", js.undefined)
+    def setBoxplot(value: String): Self = StObject.set(x, "boxplot", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreasplinerange(value: String): Self = this.set("areasplinerange", value.asInstanceOf[js.Any])
+    def setBoxplotUndefined: Self = StObject.set(x, "boxplot", js.undefined)
     
     @scala.inline
-    def deleteAreasplinerange: Self = this.set("areasplinerange", js.undefined)
+    def setBubble(value: String): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoxplot(value: String): Self = this.set("boxplot", value.asInstanceOf[js.Any])
+    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
     @scala.inline
-    def deleteBoxplot: Self = this.set("boxplot", js.undefined)
+    def setColumnrange(value: String): Self = StObject.set(x, "columnrange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBubble(value: String): Self = this.set("bubble", value.asInstanceOf[js.Any])
+    def setColumnrangeUndefined: Self = StObject.set(x, "columnrange", js.undefined)
     
     @scala.inline
-    def deleteBubble: Self = this.set("bubble", js.undefined)
+    def setErrorbar(value: String): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnrange(value: String): Self = this.set("columnrange", value.asInstanceOf[js.Any])
+    def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
     
     @scala.inline
-    def deleteColumnrange: Self = this.set("columnrange", js.undefined)
+    def setFunnel(value: String): Self = StObject.set(x, "funnel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorbar(value: String): Self = this.set("errorbar", value.asInstanceOf[js.Any])
+    def setFunnelUndefined: Self = StObject.set(x, "funnel", js.undefined)
     
     @scala.inline
-    def deleteErrorbar: Self = this.set("errorbar", js.undefined)
+    def setPyramid(value: String): Self = StObject.set(x, "pyramid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunnel(value: String): Self = this.set("funnel", value.asInstanceOf[js.Any])
+    def setPyramidUndefined: Self = StObject.set(x, "pyramid", js.undefined)
     
     @scala.inline
-    def deleteFunnel: Self = this.set("funnel", js.undefined)
+    def setWaterfall(value: String): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPyramid(value: String): Self = this.set("pyramid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePyramid: Self = this.set("pyramid", js.undefined)
-    
-    @scala.inline
-    def setWaterfall(value: String): Self = this.set("waterfall", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWaterfall: Self = this.set("waterfall", js.undefined)
+    def setWaterfallUndefined: Self = StObject.set(x, "waterfall", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.winrt.anon
 
 import typings.winrt.Windows.UI.Text.TabAlignment
 import typings.winrt.Windows.UI.Text.TabLeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Align extends js.Object {
+trait Align extends StObject {
   
   var align: TabAlignment = js.native
   
@@ -24,27 +25,15 @@ object Align {
   }
   
   @scala.inline
-  implicit class AlignOps[Self <: Align] (val x: Self) extends AnyVal {
+  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: TabAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLeader(value: TabLeader): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAlign(value: TabAlignment): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLeader(value: TabLeader): Self = this.set("leader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPosition(value: Double): Self = this.set("position", value.asInstanceOf[js.Any])
+    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

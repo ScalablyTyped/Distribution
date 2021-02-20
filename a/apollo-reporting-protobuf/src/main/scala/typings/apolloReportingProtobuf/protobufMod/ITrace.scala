@@ -6,12 +6,13 @@ import typings.apolloReportingProtobuf.protobufMod.Trace.IHTTP
 import typings.apolloReportingProtobuf.protobufMod.Trace.INode
 import typings.apolloReportingProtobuf.protobufMod.Trace.IQueryPlanNode
 import typings.apolloReportingProtobuf.protobufMod.google.protobuf.ITimestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITrace extends js.Object {
+trait ITrace extends StObject {
   
   /** Trace cachePolicy */
   var cachePolicy: js.UndefOr[ICachePolicy | Null] = js.native
@@ -85,207 +86,195 @@ object ITrace {
   }
   
   @scala.inline
-  implicit class ITraceOps[Self <: ITrace] (val x: Self) extends AnyVal {
+  implicit class ITraceMutableBuilder[Self <: ITrace] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCachePolicy(value: ICachePolicy): Self = StObject.set(x, "cachePolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCachePolicyNull: Self = StObject.set(x, "cachePolicy", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCachePolicyUndefined: Self = StObject.set(x, "cachePolicy", js.undefined)
     
     @scala.inline
-    def setCachePolicy(value: ICachePolicy): Self = this.set("cachePolicy", value.asInstanceOf[js.Any])
+    def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCachePolicy: Self = this.set("cachePolicy", js.undefined)
+    def setClientAddressNull: Self = StObject.set(x, "clientAddress", null)
     
     @scala.inline
-    def setCachePolicyNull: Self = this.set("cachePolicy", null)
+    def setClientAddressUndefined: Self = StObject.set(x, "clientAddress", js.undefined)
     
     @scala.inline
-    def setClientAddress(value: String): Self = this.set("clientAddress", value.asInstanceOf[js.Any])
+    def setClientName(value: String): Self = StObject.set(x, "clientName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientAddress: Self = this.set("clientAddress", js.undefined)
+    def setClientNameNull: Self = StObject.set(x, "clientName", null)
     
     @scala.inline
-    def setClientAddressNull: Self = this.set("clientAddress", null)
+    def setClientNameUndefined: Self = StObject.set(x, "clientName", js.undefined)
     
     @scala.inline
-    def setClientName(value: String): Self = this.set("clientName", value.asInstanceOf[js.Any])
+    def setClientReferenceId(value: String): Self = StObject.set(x, "clientReferenceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientName: Self = this.set("clientName", js.undefined)
+    def setClientReferenceIdNull: Self = StObject.set(x, "clientReferenceId", null)
     
     @scala.inline
-    def setClientNameNull: Self = this.set("clientName", null)
+    def setClientReferenceIdUndefined: Self = StObject.set(x, "clientReferenceId", js.undefined)
     
     @scala.inline
-    def setClientReferenceId(value: String): Self = this.set("clientReferenceId", value.asInstanceOf[js.Any])
+    def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientReferenceId: Self = this.set("clientReferenceId", js.undefined)
+    def setClientVersionNull: Self = StObject.set(x, "clientVersion", null)
     
     @scala.inline
-    def setClientReferenceIdNull: Self = this.set("clientReferenceId", null)
+    def setClientVersionUndefined: Self = StObject.set(x, "clientVersion", js.undefined)
     
     @scala.inline
-    def setClientVersion(value: String): Self = this.set("clientVersion", value.asInstanceOf[js.Any])
+    def setDetails(value: IDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteClientVersion: Self = this.set("clientVersion", js.undefined)
+    def setDetailsNull: Self = StObject.set(x, "details", null)
     
     @scala.inline
-    def setClientVersionNull: Self = this.set("clientVersion", null)
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def setDetails(value: IDetails): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setDurationNs(value: Double): Self = StObject.set(x, "durationNs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setDurationNsNull: Self = StObject.set(x, "durationNs", null)
     
     @scala.inline
-    def setDetailsNull: Self = this.set("details", null)
+    def setDurationNsUndefined: Self = StObject.set(x, "durationNs", js.undefined)
     
     @scala.inline
-    def setDurationNs(value: Double): Self = this.set("durationNs", value.asInstanceOf[js.Any])
+    def setEndTime(value: ITimestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDurationNs: Self = this.set("durationNs", js.undefined)
+    def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
     @scala.inline
-    def setDurationNsNull: Self = this.set("durationNs", null)
+    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     @scala.inline
-    def setEndTime(value: ITimestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    def setForbiddenOperation(value: Boolean): Self = StObject.set(x, "forbiddenOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    def setForbiddenOperationNull: Self = StObject.set(x, "forbiddenOperation", null)
     
     @scala.inline
-    def setEndTimeNull: Self = this.set("endTime", null)
+    def setForbiddenOperationUndefined: Self = StObject.set(x, "forbiddenOperation", js.undefined)
     
     @scala.inline
-    def setForbiddenOperation(value: Boolean): Self = this.set("forbiddenOperation", value.asInstanceOf[js.Any])
+    def setFullQueryCacheHit(value: Boolean): Self = StObject.set(x, "fullQueryCacheHit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteForbiddenOperation: Self = this.set("forbiddenOperation", js.undefined)
+    def setFullQueryCacheHitNull: Self = StObject.set(x, "fullQueryCacheHit", null)
     
     @scala.inline
-    def setForbiddenOperationNull: Self = this.set("forbiddenOperation", null)
+    def setFullQueryCacheHitUndefined: Self = StObject.set(x, "fullQueryCacheHit", js.undefined)
     
     @scala.inline
-    def setFullQueryCacheHit(value: Boolean): Self = this.set("fullQueryCacheHit", value.asInstanceOf[js.Any])
+    def setHttp(value: IHTTP): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFullQueryCacheHit: Self = this.set("fullQueryCacheHit", js.undefined)
+    def setHttpNull: Self = StObject.set(x, "http", null)
     
     @scala.inline
-    def setFullQueryCacheHitNull: Self = this.set("fullQueryCacheHit", null)
+    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     @scala.inline
-    def setHttp(value: IHTTP): Self = this.set("http", value.asInstanceOf[js.Any])
+    def setLegacySignatureNeedsResigning(value: String): Self = StObject.set(x, "legacySignatureNeedsResigning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHttp: Self = this.set("http", js.undefined)
+    def setLegacySignatureNeedsResigningNull: Self = StObject.set(x, "legacySignatureNeedsResigning", null)
     
     @scala.inline
-    def setHttpNull: Self = this.set("http", null)
+    def setLegacySignatureNeedsResigningUndefined: Self = StObject.set(x, "legacySignatureNeedsResigning", js.undefined)
     
     @scala.inline
-    def setLegacySignatureNeedsResigning(value: String): Self = this.set("legacySignatureNeedsResigning", value.asInstanceOf[js.Any])
+    def setPersistedQueryHit(value: Boolean): Self = StObject.set(x, "persistedQueryHit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLegacySignatureNeedsResigning: Self = this.set("legacySignatureNeedsResigning", js.undefined)
+    def setPersistedQueryHitNull: Self = StObject.set(x, "persistedQueryHit", null)
     
     @scala.inline
-    def setLegacySignatureNeedsResigningNull: Self = this.set("legacySignatureNeedsResigning", null)
+    def setPersistedQueryHitUndefined: Self = StObject.set(x, "persistedQueryHit", js.undefined)
     
     @scala.inline
-    def setPersistedQueryHit(value: Boolean): Self = this.set("persistedQueryHit", value.asInstanceOf[js.Any])
+    def setPersistedQueryRegister(value: Boolean): Self = StObject.set(x, "persistedQueryRegister", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistedQueryHit: Self = this.set("persistedQueryHit", js.undefined)
+    def setPersistedQueryRegisterNull: Self = StObject.set(x, "persistedQueryRegister", null)
     
     @scala.inline
-    def setPersistedQueryHitNull: Self = this.set("persistedQueryHit", null)
+    def setPersistedQueryRegisterUndefined: Self = StObject.set(x, "persistedQueryRegister", js.undefined)
     
     @scala.inline
-    def setPersistedQueryRegister(value: Boolean): Self = this.set("persistedQueryRegister", value.asInstanceOf[js.Any])
+    def setQueryPlan(value: IQueryPlanNode): Self = StObject.set(x, "queryPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePersistedQueryRegister: Self = this.set("persistedQueryRegister", js.undefined)
+    def setQueryPlanNull: Self = StObject.set(x, "queryPlan", null)
     
     @scala.inline
-    def setPersistedQueryRegisterNull: Self = this.set("persistedQueryRegister", null)
+    def setQueryPlanUndefined: Self = StObject.set(x, "queryPlan", js.undefined)
     
     @scala.inline
-    def setQueryPlan(value: IQueryPlanNode): Self = this.set("queryPlan", value.asInstanceOf[js.Any])
+    def setRegisteredOperation(value: Boolean): Self = StObject.set(x, "registeredOperation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteQueryPlan: Self = this.set("queryPlan", js.undefined)
+    def setRegisteredOperationNull: Self = StObject.set(x, "registeredOperation", null)
     
     @scala.inline
-    def setQueryPlanNull: Self = this.set("queryPlan", null)
+    def setRegisteredOperationUndefined: Self = StObject.set(x, "registeredOperation", js.undefined)
     
     @scala.inline
-    def setRegisteredOperation(value: Boolean): Self = this.set("registeredOperation", value.asInstanceOf[js.Any])
+    def setRoot(value: INode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRegisteredOperation: Self = this.set("registeredOperation", js.undefined)
+    def setRootNull: Self = StObject.set(x, "root", null)
     
     @scala.inline
-    def setRegisteredOperationNull: Self = this.set("registeredOperation", null)
+    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
     @scala.inline
-    def setRoot(value: INode): Self = this.set("root", value.asInstanceOf[js.Any])
+    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoot: Self = this.set("root", js.undefined)
+    def setSignatureNull: Self = StObject.set(x, "signature", null)
     
     @scala.inline
-    def setRootNull: Self = this.set("root", null)
+    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
     @scala.inline
-    def setSignature(value: String): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setStartTime(value: ITimestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSignature: Self = this.set("signature", js.undefined)
+    def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     @scala.inline
-    def setSignatureNull: Self = this.set("signature", null)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     @scala.inline
-    def setStartTime(value: ITimestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    def setUnexecutedOperationBody(value: String): Self = StObject.set(x, "unexecutedOperationBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setUnexecutedOperationBodyNull: Self = StObject.set(x, "unexecutedOperationBody", null)
     
     @scala.inline
-    def setStartTimeNull: Self = this.set("startTime", null)
+    def setUnexecutedOperationBodyUndefined: Self = StObject.set(x, "unexecutedOperationBody", js.undefined)
     
     @scala.inline
-    def setUnexecutedOperationBody(value: String): Self = this.set("unexecutedOperationBody", value.asInstanceOf[js.Any])
+    def setUnexecutedOperationName(value: String): Self = StObject.set(x, "unexecutedOperationName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUnexecutedOperationBody: Self = this.set("unexecutedOperationBody", js.undefined)
+    def setUnexecutedOperationNameNull: Self = StObject.set(x, "unexecutedOperationName", null)
     
     @scala.inline
-    def setUnexecutedOperationBodyNull: Self = this.set("unexecutedOperationBody", null)
-    
-    @scala.inline
-    def setUnexecutedOperationName(value: String): Self = this.set("unexecutedOperationName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnexecutedOperationName: Self = this.set("unexecutedOperationName", js.undefined)
-    
-    @scala.inline
-    def setUnexecutedOperationNameNull: Self = this.set("unexecutedOperationName", null)
+    def setUnexecutedOperationNameUndefined: Self = StObject.set(x, "unexecutedOperationName", js.undefined)
   }
 }

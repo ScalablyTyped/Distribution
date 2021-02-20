@@ -1,12 +1,13 @@
 package typings.reactCalendarTimeline.mod
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimelineGroupBase extends js.Object {
+trait TimelineGroupBase extends StObject {
   
   var id: Id = js.native
   
@@ -23,33 +24,21 @@ object TimelineGroupBase {
   }
   
   @scala.inline
-  implicit class TimelineGroupBaseOps[Self <: TimelineGroupBase] (val x: Self) extends AnyVal {
+  implicit class TimelineGroupBaseMutableBuilder[Self <: TimelineGroupBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRightTitle(value: ReactNode): Self = StObject.set(x, "rightTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRightTitleUndefined: Self = StObject.set(x, "rightTitle", js.undefined)
     
     @scala.inline
-    def setId(value: Id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightTitle(value: ReactNode): Self = this.set("rightTitle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRightTitle: Self = this.set("rightTitle", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

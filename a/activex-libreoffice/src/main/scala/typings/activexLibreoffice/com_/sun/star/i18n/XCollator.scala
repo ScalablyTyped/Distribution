@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,39 +93,27 @@ object XCollator {
   }
   
   @scala.inline
-  implicit class XCollatorOps[Self <: XCollator] (val x: Self) extends AnyVal {
+  implicit class XCollatorMutableBuilder[Self <: XCollator] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompareString(value: (String, String) => Double): Self = StObject.set(x, "compareString", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompareSubstring(value: (String, Double, Double, String, Double, Double) => Double): Self = StObject.set(x, "compareSubstring", js.Any.fromFunction6(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListCollatorAlgorithms(value: Locale => SafeArray[String]): Self = StObject.set(x, "listCollatorAlgorithms", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompareString(value: (String, String) => Double): Self = this.set("compareString", js.Any.fromFunction2(value))
+    def setListCollatorOptions(value: String => SafeArray[Double]): Self = StObject.set(x, "listCollatorOptions", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCompareSubstring(value: (String, Double, Double, String, Double, Double) => Double): Self = this.set("compareSubstring", js.Any.fromFunction6(value))
+    def setLoadCollatorAlgorithm(value: (String, Locale, Double) => Double): Self = StObject.set(x, "loadCollatorAlgorithm", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setListCollatorAlgorithms(value: Locale => SafeArray[String]): Self = this.set("listCollatorAlgorithms", js.Any.fromFunction1(value))
+    def setLoadCollatorAlgorithmWithEndUserOption(value: (String, Locale, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "loadCollatorAlgorithmWithEndUserOption", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setListCollatorOptions(value: String => SafeArray[Double]): Self = this.set("listCollatorOptions", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLoadCollatorAlgorithm(value: (String, Locale, Double) => Double): Self = this.set("loadCollatorAlgorithm", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setLoadCollatorAlgorithmWithEndUserOption(value: (String, Locale, SeqEquiv[Double]) => Unit): Self = this.set("loadCollatorAlgorithmWithEndUserOption", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setLoadDefaultCollator(value: (Locale, Double) => Double): Self = this.set("loadDefaultCollator", js.Any.fromFunction2(value))
+    def setLoadDefaultCollator(value: (Locale, Double) => Double): Self = StObject.set(x, "loadDefaultCollator", js.Any.fromFunction2(value))
   }
 }

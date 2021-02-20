@@ -1,6 +1,7 @@
 package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The request for PartitionQuery
   */
 @js.native
-trait SchemaPartitionQueryRequest extends js.Object {
+trait SchemaPartitionQueryRequest extends StObject {
   
   /**
     * It is not always possible for Cloud Spanner to infer the right SQL type
@@ -67,48 +68,36 @@ object SchemaPartitionQueryRequest {
   }
   
   @scala.inline
-  implicit class SchemaPartitionQueryRequestOps[Self <: SchemaPartitionQueryRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaPartitionQueryRequestMutableBuilder[Self <: SchemaPartitionQueryRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParamTypes(value: StringDictionary[SchemaType]): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParamTypes(value: StringDictionary[SchemaType]): Self = this.set("paramTypes", value.asInstanceOf[js.Any])
+    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
     @scala.inline
-    def deleteParamTypes: Self = this.set("paramTypes", js.undefined)
+    def setPartitionOptions(value: SchemaPartitionOptions): Self = StObject.set(x, "partitionOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    def setPartitionOptionsUndefined: Self = StObject.set(x, "partitionOptions", js.undefined)
     
     @scala.inline
-    def deleteParams: Self = this.set("params", js.undefined)
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartitionOptions(value: SchemaPartitionOptions): Self = this.set("partitionOptions", value.asInstanceOf[js.Any])
+    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
     
     @scala.inline
-    def deletePartitionOptions: Self = this.set("partitionOptions", js.undefined)
+    def setTransaction(value: SchemaTransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSql: Self = this.set("sql", js.undefined)
-    
-    @scala.inline
-    def setTransaction(value: SchemaTransactionSelector): Self = this.set("transaction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransaction: Self = this.set("transaction", js.undefined)
+    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

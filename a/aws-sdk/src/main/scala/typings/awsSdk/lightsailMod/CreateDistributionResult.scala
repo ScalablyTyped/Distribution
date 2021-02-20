@@ -1,11 +1,12 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateDistributionResult extends js.Object {
+trait CreateDistributionResult extends StObject {
   
   /**
     * An object that describes the distribution created.
@@ -26,30 +27,18 @@ object CreateDistributionResult {
   }
   
   @scala.inline
-  implicit class CreateDistributionResultOps[Self <: CreateDistributionResult] (val x: Self) extends AnyVal {
+  implicit class CreateDistributionResultMutableBuilder[Self <: CreateDistributionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDistribution(value: LightsailDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDistribution(value: LightsailDistribution): Self = this.set("distribution", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDistribution: Self = this.set("distribution", js.undefined)
-    
-    @scala.inline
-    def setOperation(value: Operation): Self = this.set("operation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperation: Self = this.set("operation", js.undefined)
+    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

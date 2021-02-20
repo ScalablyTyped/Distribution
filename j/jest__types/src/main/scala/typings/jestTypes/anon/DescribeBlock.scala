@@ -3,6 +3,7 @@ package typings.jestTypes.anon
 import typings.jestTypes.circusMod.AsyncEvent
 import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.hook_success
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,36 +28,24 @@ object DescribeBlock {
   }
   
   @scala.inline
-  implicit class DescribeBlockOps[Self <: DescribeBlock] (val x: Self) extends AnyVal {
+  implicit class DescribeBlockMutableBuilder[Self <: DescribeBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescribeBlock(value: typings.jestTypes.circusMod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescribeBlockUndefined: Self = StObject.set(x, "describeBlock", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHook(value: typings.jestTypes.circusMod.Hook): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHook(value: typings.jestTypes.circusMod.Hook): Self = this.set("hook", value.asInstanceOf[js.Any])
+    def setName(value: hook_success): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: hook_success): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setTest(value: TestEntry): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescribeBlock(value: typings.jestTypes.circusMod.DescribeBlock): Self = this.set("describeBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDescribeBlock: Self = this.set("describeBlock", js.undefined)
-    
-    @scala.inline
-    def setTest(value: TestEntry): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTest: Self = this.set("test", js.undefined)
+    def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
   }
 }

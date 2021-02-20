@@ -1,23 +1,25 @@
 package typings.antvComponent
 
-import typings.antvComponent.gridBaseMod.GridBase
+import typings.antvComponent.gridBaseMod.default
 import typings.antvComponent.typesMod.GroupComponentCfg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/component/lib/grid", JSImport.Namespace)
-@js.native
-object gridMod extends js.Object {
+object gridMod {
   
+  @JSImport("@antv/component/lib/grid", "Base")
   @js.native
-  abstract class Base[T /* <: GroupComponentCfg */] () extends GridBase[T]
+  abstract class Base[T /* <: GroupComponentCfg */] () extends default[T]
   
+  @JSImport("@antv/component/lib/grid", "Circle")
   @js.native
   class Circle ()
-    extends typings.antvComponent.gridCircleMod.Circle
+    extends typings.antvComponent.gridCircleMod.default
   
+  @JSImport("@antv/component/lib/grid", "Line")
   @js.native
   class Line ()
-    extends typings.antvComponent.gridLineMod.Line
+    extends typings.antvComponent.gridLineMod.default
 }

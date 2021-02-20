@@ -1,5 +1,6 @@
 package typings.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,20 +17,40 @@ trait VersionedTextDocumentIdentifier extends TextDocumentIdentifier {
     */
   var version: Double | Null = js.native
 }
-@JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier")
-@js.native
-object VersionedTextDocumentIdentifier extends js.Object {
+object VersionedTextDocumentIdentifier {
+  
+  @scala.inline
+  def apply(uri: DocumentUri): VersionedTextDocumentIdentifier = {
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VersionedTextDocumentIdentifier]
+  }
   
   /**
     * Creates a new VersionedTextDocumentIdentifier literal.
     * @param uri The document's uri.
     * @param uri The document's text.
     */
+  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier.create")
+  @js.native
   def create(uri: DocumentUri): VersionedTextDocumentIdentifier = js.native
+  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier.create")
+  @js.native
   def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = js.native
   
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */
+  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier.is")
+  @js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = js.native
+  
+  @scala.inline
+  implicit class VersionedTextDocumentIdentifierMutableBuilder[Self <: VersionedTextDocumentIdentifier] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVersionNull: Self = StObject.set(x, "version", null)
+  }
 }

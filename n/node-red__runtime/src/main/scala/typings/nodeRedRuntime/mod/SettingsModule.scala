@@ -4,12 +4,13 @@ import typings.nodeRedRuntime.anon.Comment
 import typings.nodeRedRuntime.anon.IdReqUser
 import typings.nodeRedRuntime.anon.Settings
 import typings.nodeRedRuntime.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SettingsModule extends js.Object {
+trait SettingsModule extends StObject {
   
   /**
     * Generates a new ssh key pair
@@ -98,39 +99,27 @@ object SettingsModule {
   }
   
   @scala.inline
-  implicit class SettingsModuleOps[Self <: SettingsModule] (val x: Self) extends AnyVal {
+  implicit class SettingsModuleMutableBuilder[Self <: SettingsModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGenerateUserKey(value: Comment => js.Promise[String]): Self = StObject.set(x, "generateUserKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetRuntimeSettings(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getRuntimeSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetUserKey(value: IdReqUser => js.Promise[String]): Self = StObject.set(x, "getUserKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGenerateUserKey(value: Comment => js.Promise[String]): Self = this.set("generateUserKey", js.Any.fromFunction1(value))
+    def setGetUserKeys(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getUserKeys", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetRuntimeSettings(value: `1` => js.Promise[js.Object]): Self = this.set("getRuntimeSettings", js.Any.fromFunction1(value))
+    def setGetUserSettings(value: `1` => js.Promise[js.Object]): Self = StObject.set(x, "getUserSettings", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserKey(value: IdReqUser => js.Promise[String]): Self = this.set("getUserKey", js.Any.fromFunction1(value))
+    def setRemoveUserKey(value: IdReqUser => js.Promise[Unit]): Self = StObject.set(x, "removeUserKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetUserKeys(value: `1` => js.Promise[js.Object]): Self = this.set("getUserKeys", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetUserSettings(value: `1` => js.Promise[js.Object]): Self = this.set("getUserSettings", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setRemoveUserKey(value: IdReqUser => js.Promise[Unit]): Self = this.set("removeUserKey", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setUpdateUserSettings(value: Settings => js.Promise[js.Object]): Self = this.set("updateUserSettings", js.Any.fromFunction1(value))
+    def setUpdateUserSettings(value: Settings => js.Promise[js.Object]): Self = StObject.set(x, "updateUserSettings", js.Any.fromFunction1(value))
   }
 }

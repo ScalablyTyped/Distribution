@@ -1,5 +1,6 @@
 package typings.miniprogram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object TradePayArgs {
   }
   
   @scala.inline
-  implicit class TradePayArgsOps[Self <: TradePayArgs] (val x: Self) extends AnyVal {
+  implicit class TradePayArgsMutableBuilder[Self <: TradePayArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOrderStr(value: String): Self = StObject.set(x, "orderStr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOrderStrUndefined: Self = StObject.set(x, "orderStr", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaymentUrl(value: String): Self = StObject.set(x, "paymentUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderStr(value: String): Self = this.set("orderStr", value.asInstanceOf[js.Any])
+    def setPaymentUrlUndefined: Self = StObject.set(x, "paymentUrl", js.undefined)
     
     @scala.inline
-    def deleteOrderStr: Self = this.set("orderStr", js.undefined)
+    def setTradeNO(value: String): Self = StObject.set(x, "tradeNO", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaymentUrl(value: String): Self = this.set("paymentUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentUrl: Self = this.set("paymentUrl", js.undefined)
-    
-    @scala.inline
-    def setTradeNO(value: String): Self = this.set("tradeNO", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTradeNO: Self = this.set("tradeNO", js.undefined)
+    def setTradeNOUndefined: Self = StObject.set(x, "tradeNO", js.undefined)
   }
 }

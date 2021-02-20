@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BinaryConfusionMatrix extends js.Object {
+trait BinaryConfusionMatrix extends StObject {
   
   /** The fraction of predictions given the correct label. */
   var accuracy: js.UndefOr[Double] = js.native
@@ -43,72 +44,60 @@ object BinaryConfusionMatrix {
   }
   
   @scala.inline
-  implicit class BinaryConfusionMatrixOps[Self <: BinaryConfusionMatrix] (val x: Self) extends AnyVal {
+  implicit class BinaryConfusionMatrixMutableBuilder[Self <: BinaryConfusionMatrix] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setF1Score(value: Double): Self = StObject.set(x, "f1Score", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    def setF1ScoreUndefined: Self = StObject.set(x, "f1Score", js.undefined)
     
     @scala.inline
-    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    def setFalseNegatives(value: String): Self = StObject.set(x, "falseNegatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setF1Score(value: Double): Self = this.set("f1Score", value.asInstanceOf[js.Any])
+    def setFalseNegativesUndefined: Self = StObject.set(x, "falseNegatives", js.undefined)
     
     @scala.inline
-    def deleteF1Score: Self = this.set("f1Score", js.undefined)
+    def setFalsePositives(value: String): Self = StObject.set(x, "falsePositives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalseNegatives(value: String): Self = this.set("falseNegatives", value.asInstanceOf[js.Any])
+    def setFalsePositivesUndefined: Self = StObject.set(x, "falsePositives", js.undefined)
     
     @scala.inline
-    def deleteFalseNegatives: Self = this.set("falseNegatives", js.undefined)
+    def setPositiveClassThreshold(value: Double): Self = StObject.set(x, "positiveClassThreshold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFalsePositives(value: String): Self = this.set("falsePositives", value.asInstanceOf[js.Any])
+    def setPositiveClassThresholdUndefined: Self = StObject.set(x, "positiveClassThreshold", js.undefined)
     
     @scala.inline
-    def deleteFalsePositives: Self = this.set("falsePositives", js.undefined)
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPositiveClassThreshold(value: Double): Self = this.set("positiveClassThreshold", value.asInstanceOf[js.Any])
+    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     @scala.inline
-    def deletePositiveClassThreshold: Self = this.set("positiveClassThreshold", js.undefined)
+    def setRecall(value: Double): Self = StObject.set(x, "recall", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    def setRecallUndefined: Self = StObject.set(x, "recall", js.undefined)
     
     @scala.inline
-    def deletePrecision: Self = this.set("precision", js.undefined)
+    def setTrueNegatives(value: String): Self = StObject.set(x, "trueNegatives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecall(value: Double): Self = this.set("recall", value.asInstanceOf[js.Any])
+    def setTrueNegativesUndefined: Self = StObject.set(x, "trueNegatives", js.undefined)
     
     @scala.inline
-    def deleteRecall: Self = this.set("recall", js.undefined)
+    def setTruePositives(value: String): Self = StObject.set(x, "truePositives", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTrueNegatives(value: String): Self = this.set("trueNegatives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTrueNegatives: Self = this.set("trueNegatives", js.undefined)
-    
-    @scala.inline
-    def setTruePositives(value: String): Self = this.set("truePositives", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTruePositives: Self = this.set("truePositives", js.undefined)
+    def setTruePositivesUndefined: Self = StObject.set(x, "truePositives", js.undefined)
   }
 }

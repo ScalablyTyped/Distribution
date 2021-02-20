@@ -20,13 +20,19 @@ import typings.vsoNodeApi.notificationInterfacesMod.SubscriptionUserSettings
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vssinterfacesMod.VssNotificationEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/NotificationApi", JSImport.Namespace)
-@js.native
-object notificationApiMod extends js.Object {
+object notificationApiMod {
+  
+  @JSImport("vso-node-api/NotificationApi", "NotificationApi")
+  @js.native
+  class NotificationApi protected () extends INotificationApi {
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
+  }
   
   @js.native
   trait INotificationApi extends ClientApiBase {
@@ -82,11 +88,5 @@ object notificationApiMod extends js.Object {
     def updateSubscription(updateParameters: NotificationSubscriptionUpdateParameters, subscriptionId: String): js.Promise[NotificationSubscription] = js.native
     
     def updateSubscriptionUserSettings(userSettings: SubscriptionUserSettings, subscriptionId: String, userId: String): js.Promise[SubscriptionUserSettings] = js.native
-  }
-  
-  @js.native
-  class NotificationApi protected () extends INotificationApi {
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
-    def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
 }

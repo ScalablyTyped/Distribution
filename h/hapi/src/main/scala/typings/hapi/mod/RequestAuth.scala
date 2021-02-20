@@ -1,12 +1,13 @@
 package typings.hapi.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestAuth extends js.Object {
+trait RequestAuth extends StObject {
   
   /** an artifact object received from the authentication strategy and used in authentication-related actions. */
   var artifacts: js.Object = js.native
@@ -49,39 +50,27 @@ object RequestAuth {
   }
   
   @scala.inline
-  implicit class RequestAuthOps[Self <: RequestAuth] (val x: Self) extends AnyVal {
+  implicit class RequestAuthMutableBuilder[Self <: RequestAuth] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifacts(value: js.Object): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCredentials(value: AuthCredentials): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    def setIsAuthorized(value: Boolean): Self = StObject.set(x, "isAuthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAuthenticated(value: Boolean): Self = this.set("isAuthenticated", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsAuthorized(value: Boolean): Self = this.set("isAuthorized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStrategy(value: String): Self = this.set("strategy", value.asInstanceOf[js.Any])
+    def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
   }
 }

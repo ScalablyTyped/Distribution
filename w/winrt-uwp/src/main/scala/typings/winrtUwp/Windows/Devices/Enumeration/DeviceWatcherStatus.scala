@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.Devices.Enumeration
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceWatcherStatus extends js.Object
+sealed trait DeviceWatcherStatus extends StObject
 /** Describes the state of a DeviceWatcher object. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceWatcherStatus")
 @js.native
-object DeviceWatcherStatus extends js.Object {
+object DeviceWatcherStatus extends StObject {
   
   /** The watcher has aborted operation. No subsequent events will be raised. */
   @js.native

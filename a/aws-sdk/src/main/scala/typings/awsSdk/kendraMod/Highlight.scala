@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Highlight extends js.Object {
+trait Highlight extends StObject {
   
   /**
     * The zero-based location in the response string where the highlight starts.
@@ -31,30 +32,18 @@ object Highlight {
   }
   
   @scala.inline
-  implicit class HighlightOps[Self <: Highlight] (val x: Self) extends AnyVal {
+  implicit class HighlightMutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTopAnswer(value: Boolean): Self = StObject.set(x, "TopAnswer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeginOffset(value: Integer): Self = this.set("BeginOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEndOffset(value: Integer): Self = this.set("EndOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTopAnswer(value: Boolean): Self = this.set("TopAnswer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTopAnswer: Self = this.set("TopAnswer", js.undefined)
+    def setTopAnswerUndefined: Self = StObject.set(x, "TopAnswer", js.undefined)
   }
 }

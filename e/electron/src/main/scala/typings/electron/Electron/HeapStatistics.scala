@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HeapStatistics extends js.Object {
+trait HeapStatistics extends StObject {
   
   var doesZapGarbage: Boolean = js.native
   
@@ -44,45 +45,33 @@ object HeapStatistics {
   }
   
   @scala.inline
-  implicit class HeapStatisticsOps[Self <: HeapStatistics] (val x: Self) extends AnyVal {
+  implicit class HeapStatisticsMutableBuilder[Self <: HeapStatistics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDoesZapGarbage(value: Boolean): Self = StObject.set(x, "doesZapGarbage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHeapSizeLimit(value: Double): Self = StObject.set(x, "heapSizeLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMallocedMemory(value: Double): Self = StObject.set(x, "mallocedMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDoesZapGarbage(value: Boolean): Self = this.set("doesZapGarbage", value.asInstanceOf[js.Any])
+    def setPeakMallocedMemory(value: Double): Self = StObject.set(x, "peakMallocedMemory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeapSizeLimit(value: Double): Self = this.set("heapSizeLimit", value.asInstanceOf[js.Any])
+    def setTotalAvailableSize(value: Double): Self = StObject.set(x, "totalAvailableSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMallocedMemory(value: Double): Self = this.set("mallocedMemory", value.asInstanceOf[js.Any])
+    def setTotalHeapSize(value: Double): Self = StObject.set(x, "totalHeapSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPeakMallocedMemory(value: Double): Self = this.set("peakMallocedMemory", value.asInstanceOf[js.Any])
+    def setTotalHeapSizeExecutable(value: Double): Self = StObject.set(x, "totalHeapSizeExecutable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalAvailableSize(value: Double): Self = this.set("totalAvailableSize", value.asInstanceOf[js.Any])
+    def setTotalPhysicalSize(value: Double): Self = StObject.set(x, "totalPhysicalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTotalHeapSize(value: Double): Self = this.set("totalHeapSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalHeapSizeExecutable(value: Double): Self = this.set("totalHeapSizeExecutable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTotalPhysicalSize(value: Double): Self = this.set("totalPhysicalSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUsedHeapSize(value: Double): Self = this.set("usedHeapSize", value.asInstanceOf[js.Any])
+    def setUsedHeapSize(value: Double): Self = StObject.set(x, "usedHeapSize", value.asInstanceOf[js.Any])
   }
 }

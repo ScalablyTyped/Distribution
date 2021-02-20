@@ -1,5 +1,6 @@
 package typings.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -68,39 +69,27 @@ object Polyline {
   }
   
   @scala.inline
-  implicit class PolylineOps[Self <: Polyline] (val x: Self) extends AnyVal {
+  implicit class PolylineMutableBuilder[Self <: Polyline] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetGeneralizable(value: () => Boolean): Self = StObject.set(x, "getGeneralizable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetLocations(value: () => js.Array[Location]): Self = StObject.set(x, "getLocations", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetStrokeColor(value: () => String | Color): Self = StObject.set(x, "getStrokeColor", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetGeneralizable(value: () => Boolean): Self = this.set("getGeneralizable", js.Any.fromFunction0(value))
+    def setGetStrokeDashArray(value: () => js.Array[Double] | String): Self = StObject.set(x, "getStrokeDashArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetLocations(value: () => js.Array[Location]): Self = this.set("getLocations", js.Any.fromFunction0(value))
+    def setGetStrokeThickness(value: () => Double): Self = StObject.set(x, "getStrokeThickness", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetStrokeColor(value: () => String | Color): Self = this.set("getStrokeColor", js.Any.fromFunction0(value))
+    def setSetLocations(value: js.Array[Location] => Unit): Self = StObject.set(x, "setLocations", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetStrokeDashArray(value: () => js.Array[Double] | String): Self = this.set("getStrokeDashArray", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setGetStrokeThickness(value: () => Double): Self = this.set("getStrokeThickness", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetLocations(value: js.Array[Location] => Unit): Self = this.set("setLocations", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetOptions(value: IPolylineOptions => Unit): Self = this.set("setOptions", js.Any.fromFunction1(value))
+    def setSetOptions(value: IPolylineOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

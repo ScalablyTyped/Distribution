@@ -4,22 +4,18 @@ import typings.greasemonkey.GM.Request
 import typings.greasemonkey.GM.Value
 import typings.greasemonkey.anon.Script
 import typings.std.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  /**
-    * Window object of the content page where the user script is running on.
-    * @see {@link http://wiki.greasespot.net/UnsafeWindow}
-    */
-  var unsafeWindow: Window = js.native
-  
-  @js.native
-  object GM extends js.Object {
+  object GM {
+    
+    @JSGlobal("GM")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Deletes an existing name / value pair from storage.
@@ -28,6 +24,8 @@ object global extends js.Object {
       * @returns A Promise, resolved successfully with no value on success,
       * rejected with no value on failure.
       */
+    @JSGlobal("GM.deleteValue")
+    @js.native
     def deleteValue(name: String): js.Promise[Unit] = js.native
     
     // Resources
@@ -40,6 +38,8 @@ object global extends js.Object {
       * Treat the result as opaque string. It will work where you need a URL
       * (for a `<link>` or `<style>` for CSS, for an `<img>` tag, or similar).
       */
+    @JSGlobal("GM.getResourceUrl")
+    @js.native
     def getResourceUrl(resourceName: String): js.Promise[String] = js.native
     
     /**
@@ -62,7 +62,11 @@ object global extends js.Object {
       * // For structured data used `JSON.stringify()` to place an object into storage and then `JSON.parse()` to convert it back
       * const storedObject = JSON.parse(await GM.getValue('foo', '{}'));
       */
+    @JSGlobal("GM.getValue")
+    @js.native
     def getValue[TValue](name: String): js.Promise[js.UndefOr[TValue]] = js.native
+    @JSGlobal("GM.getValue")
+    @js.native
     def getValue[TValue](name: String, defaultValue: TValue): js.Promise[js.UndefOr[TValue]] = js.native
     
     // Headers
@@ -70,7 +74,11 @@ object global extends js.Object {
       * Meta data about the running user script.
       * @see {@link https://wiki.greasespot.net/GM.info}
       */
-    var info: Script = js.native
+    @JSGlobal("GM.info")
+    @js.native
+    def info: Script = js.native
+    @scala.inline
+    def info_=(x: Script): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
     
     /**
       * Retrieves an array of preference names that this script has stored
@@ -78,6 +86,8 @@ object global extends js.Object {
       * @returns A Promise, rejected in case of error and otherwise resolved with
       * an string[] for previously set values
       */
+    @JSGlobal("GM.listValues")
+    @js.native
     def listValues(): js.Promise[js.Array[String]] = js.native
     
     // Other
@@ -92,9 +102,17 @@ object global extends js.Object {
       * @param onClick Callback, triggered when the notification's button is
       * clicked.
       */
+    @JSGlobal("GM.notification")
+    @js.native
     def notification(text: String, title: String): Unit = js.native
+    @JSGlobal("GM.notification")
+    @js.native
     def notification(text: String, title: String, image: js.UndefOr[scala.Nothing], onClick: js.Function0[Unit]): Unit = js.native
+    @JSGlobal("GM.notification")
+    @js.native
     def notification(text: String, title: String, image: String): Unit = js.native
+    @JSGlobal("GM.notification")
+    @js.native
     def notification(text: String, title: String, image: String, onClick: js.Function0[Unit]): Unit = js.native
     
     /**
@@ -104,13 +122,19 @@ object global extends js.Object {
       * @param openInBackground Force tab to/to not open in a background tab.
       * Default (unspecified) behavior honors Firefox configuration.
       */
+    @JSGlobal("GM.openInTab")
+    @js.native
     def openInTab(url: String): Unit = js.native
+    @JSGlobal("GM.openInTab")
+    @js.native
     def openInTab(url: String, openInBackground: Boolean): Unit = js.native
     
     /**
       * Sets the current contents of the operating system's clipboard
       * @see {@link https://wiki.greasespot.net/GM.setClipboard}
       */
+    @JSGlobal("GM.setClipboard")
+    @js.native
     def setClipboard(text: String): Unit = js.native
     
     // Values
@@ -126,6 +150,8 @@ object global extends js.Object {
       * @returns A Promise, resolved successfully with no value on success,
       * rejected with no value on failure
       */
+    @JSGlobal("GM.setValue")
+    @js.native
     def setValue(name: String, value: Value): js.Promise[Unit] = js.native
     
     /**
@@ -133,6 +159,18 @@ object global extends js.Object {
       * allows these requests to cross the [same origin policy]{@link https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy} boundaries.
       * @see {@link https://wiki.greasespot.net/GM.xmlHttpRequest}
       */
+    @JSGlobal("GM.xmlHttpRequest")
+    @js.native
     def xmlHttpRequest(details: Request[_]): Unit = js.native
   }
+  
+  /**
+    * Window object of the content page where the user script is running on.
+    * @see {@link http://wiki.greasespot.net/UnsafeWindow}
+    */
+  @JSGlobal("unsafeWindow")
+  @js.native
+  def unsafeWindow: Window = js.native
+  @scala.inline
+  def unsafeWindow_=(x: Window): Unit = js.Dynamic.global.updateDynamic("unsafeWindow")(x.asInstanceOf[js.Any])
 }

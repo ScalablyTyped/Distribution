@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OriginUri extends js.Object {
+trait OriginUri extends StObject {
   
   /** Dash manifest URI. If multiple Dash manifests are created, only the first one is listed. */
   var dash: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object OriginUri {
   }
   
   @scala.inline
-  implicit class OriginUriOps[Self <: OriginUri] (val x: Self) extends AnyVal {
+  implicit class OriginUriMutableBuilder[Self <: OriginUri] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDash(value: String): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHls(value: String): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDash(value: String): Self = this.set("dash", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDash: Self = this.set("dash", js.undefined)
-    
-    @scala.inline
-    def setHls(value: String): Self = this.set("hls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHls: Self = this.set("hls", js.undefined)
+    def setHlsUndefined: Self = StObject.set(x, "hls", js.undefined)
   }
 }

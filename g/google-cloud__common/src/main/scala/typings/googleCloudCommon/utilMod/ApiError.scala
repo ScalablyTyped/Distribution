@@ -2,6 +2,7 @@ package typings.googleCloudCommon.utilMod
 
 import typings.std.Error
 import typings.teenyRequest.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +20,7 @@ class ApiError protected () extends Error {
   var response: js.UndefOr[Response[_]] = js.native
 }
 /* static members */
-@JSImport("@google-cloud/common/build/src/util", "ApiError")
-@js.native
-object ApiError extends js.Object {
+object ApiError {
   
   /**
     * Pieces together an error message by combining all unique error messages
@@ -33,6 +32,10 @@ object ApiError extends js.Object {
     * @param {GoogleInnerError[]} [errors] Inner errors, if any.
     * @returns {string}
     */
+  @JSImport("@google-cloud/common/build/src/util", "ApiError.createMultiErrorMessage")
+  @js.native
   def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
+  @JSImport("@google-cloud/common/build/src/util", "ApiError.createMultiErrorMessage")
+  @js.native
   def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeIndexRequest extends js.Object {
+trait DescribeIndexRequest extends StObject {
   
   /**
     * The index name.
@@ -21,21 +22,9 @@ object DescribeIndexRequest {
   }
   
   @scala.inline
-  implicit class DescribeIndexRequestOps[Self <: DescribeIndexRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeIndexRequestMutableBuilder[Self <: DescribeIndexRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setIndexName(value: IndexName): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
   }
 }

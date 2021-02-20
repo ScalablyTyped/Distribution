@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BackgroundImageProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+trait BackgroundImageProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
     * The background-image CSS property sets one or more background images on an element.
@@ -28,22 +29,7 @@ object BackgroundImageProps {
   }
   
   @scala.inline
-  implicit class BackgroundImagePropsOps[Self <: BackgroundImageProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with BackgroundImageProps[ThemeType]) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackgroundImageVarargs(value: (js.Any | Null)*): Self = this.set("backgroundImage", js.Array(value :_*))
+  implicit class BackgroundImagePropsMutableBuilder[Self <: BackgroundImageProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with BackgroundImageProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setBackgroundImage(
@@ -51,12 +37,15 @@ object BackgroundImageProps {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundImage */ _, 
           ThemeType
         ]
-    ): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    def setBackgroundImageNull: Self = StObject.set(x, "backgroundImage", null)
     
     @scala.inline
-    def setBackgroundImageNull: Self = this.set("backgroundImage", null)
+    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    
+    @scala.inline
+    def setBackgroundImageVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "backgroundImage", js.Array(value :_*))
   }
 }

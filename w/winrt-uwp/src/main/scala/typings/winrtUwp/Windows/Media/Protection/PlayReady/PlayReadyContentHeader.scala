@@ -1,13 +1,14 @@
 package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typings.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the information in a PlayReady content header. */
 @js.native
-trait PlayReadyContentHeader extends js.Object {
+trait PlayReadyContentHeader extends StObject {
   
   /** Gets the custom data used by the content provider. */
   var customAttributes: String = js.native
@@ -70,54 +71,42 @@ object PlayReadyContentHeader {
   }
   
   @scala.inline
-  implicit class PlayReadyContentHeaderOps[Self <: PlayReadyContentHeader] (val x: Self) extends AnyVal {
+  implicit class PlayReadyContentHeaderMutableBuilder[Self <: PlayReadyContentHeader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCustomAttributes(value: String): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDecryptorSetup(value: PlayReadyDecryptorSetup): Self = StObject.set(x, "decryptorSetup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainServiceId(value: String): Self = StObject.set(x, "domainServiceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomAttributes(value: String): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    def setEncryptionType(value: PlayReadyEncryptionAlgorithm): Self = StObject.set(x, "encryptionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDecryptorSetup(value: PlayReadyDecryptorSetup): Self = this.set("decryptorSetup", value.asInstanceOf[js.Any])
+    def setGetSerializedHeader(value: () => js.Array[Double]): Self = StObject.set(x, "getSerializedHeader", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDomainServiceId(value: String): Self = this.set("domainServiceId", value.asInstanceOf[js.Any])
+    def setHeaderWithEmbeddedUpdates(value: PlayReadyContentHeader): Self = StObject.set(x, "headerWithEmbeddedUpdates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEncryptionType(value: PlayReadyEncryptionAlgorithm): Self = this.set("encryptionType", value.asInstanceOf[js.Any])
+    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetSerializedHeader(value: () => js.Array[Double]): Self = this.set("getSerializedHeader", js.Any.fromFunction0(value))
+    def setKeyIdString(value: String): Self = StObject.set(x, "keyIdString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeaderWithEmbeddedUpdates(value: PlayReadyContentHeader): Self = this.set("headerWithEmbeddedUpdates", value.asInstanceOf[js.Any])
+    def setKeyIdStrings(value: String): Self = StObject.set(x, "keyIdStrings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyId(value: String): Self = this.set("keyId", value.asInstanceOf[js.Any])
+    def setKeyIds(value: String): Self = StObject.set(x, "keyIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyIdString(value: String): Self = this.set("keyIdString", value.asInstanceOf[js.Any])
+    def setLicenseAcquisitionUrl(value: Uri): Self = StObject.set(x, "licenseAcquisitionUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyIdStrings(value: String): Self = this.set("keyIdStrings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setKeyIds(value: String): Self = this.set("keyIds", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLicenseAcquisitionUrl(value: Uri): Self = this.set("licenseAcquisitionUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLicenseAcquisitionUserInterfaceUrl(value: Uri): Self = this.set("licenseAcquisitionUserInterfaceUrl", value.asInstanceOf[js.Any])
+    def setLicenseAcquisitionUserInterfaceUrl(value: Uri): Self = StObject.set(x, "licenseAcquisitionUserInterfaceUrl", value.asInstanceOf[js.Any])
   }
 }

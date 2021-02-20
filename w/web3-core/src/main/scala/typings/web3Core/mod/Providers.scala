@@ -3,12 +3,13 @@ package typings.web3Core.mod
 import org.scalablytyped.runtime.Instantiable2
 import typings.web3CoreHelpers.mod.HttpProviderOptions
 import typings.web3CoreHelpers.mod.WebsocketProviderOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Providers extends js.Object {
+trait Providers extends StObject {
   
   var HttpProvider: Instantiable2[
     /* host */ String, 
@@ -41,27 +42,15 @@ object Providers {
   }
   
   @scala.inline
-  implicit class ProvidersOps[Self <: Providers] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+  implicit class ProvidersMutableBuilder[Self <: Providers] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setHttpProvider(
       value: Instantiable2[/* host */ String, /* options */ js.UndefOr[HttpProviderOptions], HttpProvider]
-    ): Self = this.set("HttpProvider", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "HttpProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpcProvider(value: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider]): Self = this.set("IpcProvider", value.asInstanceOf[js.Any])
+    def setIpcProvider(value: Instantiable2[/* path */ String, /* net */ js.Any, IpcProvider]): Self = StObject.set(x, "IpcProvider", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWebsocketProvider(
@@ -70,6 +59,6 @@ object Providers {
           /* options */ js.UndefOr[WebsocketProviderOptions], 
           WebsocketProvider
         ]
-    ): Self = this.set("WebsocketProvider", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "WebsocketProvider", value.asInstanceOf[js.Any])
   }
 }

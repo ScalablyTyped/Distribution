@@ -1,11 +1,12 @@
 package typings.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IColumnInfo extends js.Object {
+trait IColumnInfo extends StObject {
   
   /** Column identifier */
   var columnKey: String = js.native
@@ -54,78 +55,66 @@ object IColumnInfo {
   }
   
   @scala.inline
-  implicit class IColumnInfoOps[Self <: IColumnInfo] (val x: Self) extends AnyVal {
+  implicit class IColumnInfoMutableBuilder[Self <: IColumnInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFieldKeys(value: js.Array[String]): Self = StObject.set(x, "fieldKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value :_*))
     
     @scala.inline
-    def setFieldKey(value: String): Self = this.set("fieldKey", value.asInstanceOf[js.Any])
+    def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldKeysVarargs(value: String*): Self = this.set("fieldKeys", js.Array(value :_*))
+    def setImgSrcUndefined: Self = StObject.set(x, "imgSrc", js.undefined)
     
     @scala.inline
-    def setFieldKeys(value: js.Array[String]): Self = this.set("fieldKeys", value.asInstanceOf[js.Any])
+    def setIsAutoFilterable(value: Boolean): Self = StObject.set(x, "isAutoFilterable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setIsAutoFilterableUndefined: Self = StObject.set(x, "isAutoFilterable", js.undefined)
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setIsFooter(value: Boolean): Self = StObject.set(x, "isFooter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImgSrc(value: String): Self = this.set("imgSrc", value.asInstanceOf[js.Any])
+    def setIsFooterUndefined: Self = StObject.set(x, "isFooter", js.undefined)
     
     @scala.inline
-    def deleteImgSrc: Self = this.set("imgSrc", js.undefined)
+    def setIsHidable(value: Boolean): Self = StObject.set(x, "isHidable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAutoFilterable(value: Boolean): Self = this.set("isAutoFilterable", value.asInstanceOf[js.Any])
+    def setIsHidableUndefined: Self = StObject.set(x, "isHidable", js.undefined)
     
     @scala.inline
-    def deleteIsAutoFilterable: Self = this.set("isAutoFilterable", js.undefined)
+    def setIsResizable(value: Boolean): Self = StObject.set(x, "isResizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsFooter(value: Boolean): Self = this.set("isFooter", value.asInstanceOf[js.Any])
+    def setIsResizableUndefined: Self = StObject.set(x, "isResizable", js.undefined)
     
     @scala.inline
-    def deleteIsFooter: Self = this.set("isFooter", js.undefined)
+    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsHidable(value: Boolean): Self = this.set("isHidable", value.asInstanceOf[js.Any])
+    def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
     @scala.inline
-    def deleteIsHidable: Self = this.set("isHidable", js.undefined)
+    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsResizable(value: Boolean): Self = this.set("isResizable", value.asInstanceOf[js.Any])
+    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
     @scala.inline
-    def deleteIsResizable: Self = this.set("isResizable", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSortable(value: Boolean): Self = this.set("isSortable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSortable: Self = this.set("isSortable", js.undefined)
-    
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = this.set("isVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsVisible: Self = this.set("isVisible", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

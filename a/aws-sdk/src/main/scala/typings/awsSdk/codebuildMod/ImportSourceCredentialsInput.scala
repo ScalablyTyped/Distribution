@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportSourceCredentialsInput extends js.Object {
+trait ImportSourceCredentialsInput extends StObject {
   
   /**
     *  The type of authentication used to connect to a GitHub, GitHub Enterprise, or Bitbucket repository. An OAUTH connection is not supported by the API and must be created using the AWS CodeBuild console. 
@@ -41,39 +42,27 @@ object ImportSourceCredentialsInput {
   }
   
   @scala.inline
-  implicit class ImportSourceCredentialsInputOps[Self <: ImportSourceCredentialsInput] (val x: Self) extends AnyVal {
+  implicit class ImportSourceCredentialsInputMutableBuilder[Self <: ImportSourceCredentialsInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthType(value: AuthType): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServerType(value: ServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShouldOverwrite(value: WrapperBoolean): Self = StObject.set(x, "shouldOverwrite", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthType(value: AuthType): Self = this.set("authType", value.asInstanceOf[js.Any])
+    def setShouldOverwriteUndefined: Self = StObject.set(x, "shouldOverwrite", js.undefined)
     
     @scala.inline
-    def setServerType(value: ServerType): Self = this.set("serverType", value.asInstanceOf[js.Any])
+    def setToken(value: SensitiveNonEmptyString): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToken(value: SensitiveNonEmptyString): Self = this.set("token", value.asInstanceOf[js.Any])
+    def setUsername(value: NonEmptyString): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShouldOverwrite(value: WrapperBoolean): Self = this.set("shouldOverwrite", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShouldOverwrite: Self = this.set("shouldOverwrite", js.undefined)
-    
-    @scala.inline
-    def setUsername(value: NonEmptyString): Self = this.set("username", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsername: Self = this.set("username", js.undefined)
+    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

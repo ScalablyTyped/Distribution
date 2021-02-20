@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The result of adding a group.
   */
 @js.native
-trait SchemaAddDimensionGroupResponse extends js.Object {
+trait SchemaAddDimensionGroupResponse extends StObject {
   
   /**
     * All groups of a dimension after adding a group to that dimension.
@@ -24,27 +25,15 @@ object SchemaAddDimensionGroupResponse {
   }
   
   @scala.inline
-  implicit class SchemaAddDimensionGroupResponseOps[Self <: SchemaAddDimensionGroupResponse] (val x: Self) extends AnyVal {
+  implicit class SchemaAddDimensionGroupResponseMutableBuilder[Self <: SchemaAddDimensionGroupResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDimensionGroups(value: js.Array[SchemaDimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDimensionGroupsUndefined: Self = StObject.set(x, "dimensionGroups", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = this.set("dimensionGroups", js.Array(value :_*))
-    
-    @scala.inline
-    def setDimensionGroups(value: js.Array[SchemaDimensionGroup]): Self = this.set("dimensionGroups", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDimensionGroups: Self = this.set("dimensionGroups", js.undefined)
+    def setDimensionGroupsVarargs(value: SchemaDimensionGroup*): Self = StObject.set(x, "dimensionGroups", js.Array(value :_*))
   }
 }

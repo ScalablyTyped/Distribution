@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Network
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.UnsafeNone
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SameOriginPlusCoep
 */
-trait CrossOriginOpenerPolicyValue extends js.Object
+trait CrossOriginOpenerPolicyValue extends StObject
 object CrossOriginOpenerPolicyValue {
   
   @scala.inline

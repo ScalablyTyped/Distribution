@@ -2,6 +2,7 @@ package typings.typeorm.browserMod
 
 import typings.typeorm.typingsMod.MongoCallback
 import typings.typeorm.typingsMod.MongoClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +15,7 @@ class MongoClient protected ()
   def this(uri: String, options: MongoClientOptions) = this()
 }
 /* static members */
-@JSImport("typeorm/browser", "MongoClient")
-@js.native
-object MongoClient extends js.Object {
+object MongoClient {
   
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -25,6 +24,8 @@ object MongoClient extends js.Object {
     * @param url The connection URI string.
     * @param options Optional settings.
     */
+  @JSImport("typeorm/browser", "MongoClient.connect")
+  @js.native
   def connect(url: String): js.Promise[typings.typeorm.typingsMod.Db] = js.native
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -33,7 +34,11 @@ object MongoClient extends js.Object {
     * @param url The connection URI string.
     * @param callback The command result callback.
     */
+  @JSImport("typeorm/browser", "MongoClient.connect")
+  @js.native
   def connect(url: String, callback: MongoCallback[typings.typeorm.typingsMod.Db]): Unit = js.native
+  @JSImport("typeorm/browser", "MongoClient.connect")
+  @js.native
   def connect(url: String, options: MongoClientOptions): js.Promise[typings.typeorm.typingsMod.Db] = js.native
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -43,5 +48,7 @@ object MongoClient extends js.Object {
     * @param options Optional settings.
     * @param callback The command result callback.
     */
+  @JSImport("typeorm/browser", "MongoClient.connect")
+  @js.native
   def connect(url: String, options: MongoClientOptions, callback: MongoCallback[typings.typeorm.typingsMod.Db]): Unit = js.native
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PutBackupVaultAccessPolicyInput extends js.Object {
+trait PutBackupVaultAccessPolicyInput extends StObject {
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
@@ -26,27 +27,15 @@ object PutBackupVaultAccessPolicyInput {
   }
   
   @scala.inline
-  implicit class PutBackupVaultAccessPolicyInputOps[Self <: PutBackupVaultAccessPolicyInput] (val x: Self) extends AnyVal {
+  implicit class PutBackupVaultAccessPolicyInputMutableBuilder[Self <: PutBackupVaultAccessPolicyInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPolicy(value: IAMPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPolicy(value: IAMPolicy): Self = this.set("Policy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicy: Self = this.set("Policy", js.undefined)
+    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

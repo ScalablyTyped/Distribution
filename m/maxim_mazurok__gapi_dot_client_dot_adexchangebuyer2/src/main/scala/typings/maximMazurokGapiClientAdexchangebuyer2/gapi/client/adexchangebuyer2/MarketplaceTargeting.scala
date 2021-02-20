@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MarketplaceTargeting extends js.Object {
+trait MarketplaceTargeting extends StObject {
   
   /** Geo criteria IDs to be included/excluded. */
   var geoTargeting: js.UndefOr[CriteriaTargeting] = js.native
@@ -31,48 +32,36 @@ object MarketplaceTargeting {
   }
   
   @scala.inline
-  implicit class MarketplaceTargetingOps[Self <: MarketplaceTargeting] (val x: Self) extends AnyVal {
+  implicit class MarketplaceTargetingMutableBuilder[Self <: MarketplaceTargeting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeoTargeting(value: CriteriaTargeting): Self = StObject.set(x, "geoTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGeoTargetingUndefined: Self = StObject.set(x, "geoTargeting", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInventorySizeTargeting(value: InventorySizeTargeting): Self = StObject.set(x, "inventorySizeTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeoTargeting(value: CriteriaTargeting): Self = this.set("geoTargeting", value.asInstanceOf[js.Any])
+    def setInventorySizeTargetingUndefined: Self = StObject.set(x, "inventorySizeTargeting", js.undefined)
     
     @scala.inline
-    def deleteGeoTargeting: Self = this.set("geoTargeting", js.undefined)
+    def setPlacementTargeting(value: PlacementTargeting): Self = StObject.set(x, "placementTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInventorySizeTargeting(value: InventorySizeTargeting): Self = this.set("inventorySizeTargeting", value.asInstanceOf[js.Any])
+    def setPlacementTargetingUndefined: Self = StObject.set(x, "placementTargeting", js.undefined)
     
     @scala.inline
-    def deleteInventorySizeTargeting: Self = this.set("inventorySizeTargeting", js.undefined)
+    def setTechnologyTargeting(value: TechnologyTargeting): Self = StObject.set(x, "technologyTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacementTargeting(value: PlacementTargeting): Self = this.set("placementTargeting", value.asInstanceOf[js.Any])
+    def setTechnologyTargetingUndefined: Self = StObject.set(x, "technologyTargeting", js.undefined)
     
     @scala.inline
-    def deletePlacementTargeting: Self = this.set("placementTargeting", js.undefined)
+    def setVideoTargeting(value: VideoTargeting): Self = StObject.set(x, "videoTargeting", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTechnologyTargeting(value: TechnologyTargeting): Self = this.set("technologyTargeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTechnologyTargeting: Self = this.set("technologyTargeting", js.undefined)
-    
-    @scala.inline
-    def setVideoTargeting(value: VideoTargeting): Self = this.set("videoTargeting", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoTargeting: Self = this.set("videoTargeting", js.undefined)
+    def setVideoTargetingUndefined: Self = StObject.set(x, "videoTargeting", js.undefined)
   }
 }

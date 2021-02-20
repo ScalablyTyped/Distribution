@@ -9,16 +9,16 @@ import typings.typesettable.measurersMod.CacheMeasurer
 import typings.typesettable.wrappersMod.Wrapper
 import typings.typesettable.writerMod.IWriteOptions
 import typings.typesettable.writersMod.Writer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typesettable/build/src/typesetter", JSImport.Namespace)
-@js.native
-object typesetterMod extends js.Object {
+object typesetterMod {
   
+  @JSImport("typesettable/build/src/typesetter", "Typesetter")
   @js.native
-  class Typesetter protected () extends js.Object {
+  class Typesetter protected () extends StObject {
     def this(context: ITypesetterContext[_]) = this()
     
     /**
@@ -48,22 +48,45 @@ object typesetterMod extends js.Object {
     var writer: Writer = js.native
   }
   /* static members */
-  @js.native
-  object Typesetter extends js.Object {
+  object Typesetter {
     
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
+    @js.native
     def canvas(ctx: CanvasRenderingContext2D): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
+    @js.native
     def canvas(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
+    @js.native
     def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.canvas")
+    @js.native
     def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): Typesetter = js.native
     
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
+    @js.native
     def html(element: HTMLElement): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
+    @js.native
     def html(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
+    @js.native
     def html(element: HTMLElement, className: String): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.html")
+    @js.native
     def html(element: HTMLElement, className: String, addTitle: Boolean): Typesetter = js.native
     
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
+    @js.native
     def svg(element: SVGElement): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
+    @js.native
     def svg(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
+    @js.native
     def svg(element: SVGElement, className: String): Typesetter = js.native
+    @JSImport("typesettable/build/src/typesetter", "Typesetter.svg")
+    @js.native
     def svg(element: SVGElement, className: String, addTitleElement: Boolean): Typesetter = js.native
   }
 }

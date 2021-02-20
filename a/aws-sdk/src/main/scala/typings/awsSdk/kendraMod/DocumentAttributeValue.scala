@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DocumentAttributeValue extends js.Object {
+trait DocumentAttributeValue extends StObject {
   
   /**
     * A date expressed as an ISO 8601 string.
@@ -36,45 +37,33 @@ object DocumentAttributeValue {
   }
   
   @scala.inline
-  implicit class DocumentAttributeValueOps[Self <: DocumentAttributeValue] (val x: Self) extends AnyVal {
+  implicit class DocumentAttributeValueMutableBuilder[Self <: DocumentAttributeValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDateValue(value: Timestamp): Self = StObject.set(x, "DateValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateValueUndefined: Self = StObject.set(x, "DateValue", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLongValue(value: Long): Self = StObject.set(x, "LongValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDateValue(value: Timestamp): Self = this.set("DateValue", value.asInstanceOf[js.Any])
+    def setLongValueUndefined: Self = StObject.set(x, "LongValue", js.undefined)
     
     @scala.inline
-    def deleteDateValue: Self = this.set("DateValue", js.undefined)
+    def setStringListValue(value: DocumentAttributeStringListValue): Self = StObject.set(x, "StringListValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongValue(value: Long): Self = this.set("LongValue", value.asInstanceOf[js.Any])
+    def setStringListValueUndefined: Self = StObject.set(x, "StringListValue", js.undefined)
     
     @scala.inline
-    def deleteLongValue: Self = this.set("LongValue", js.undefined)
+    def setStringListValueVarargs(value: String*): Self = StObject.set(x, "StringListValue", js.Array(value :_*))
     
     @scala.inline
-    def setStringListValueVarargs(value: String*): Self = this.set("StringListValue", js.Array(value :_*))
+    def setStringValue(value: DocumentAttributeStringValue): Self = StObject.set(x, "StringValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStringListValue(value: DocumentAttributeStringListValue): Self = this.set("StringListValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringListValue: Self = this.set("StringListValue", js.undefined)
-    
-    @scala.inline
-    def setStringValue(value: DocumentAttributeStringValue): Self = this.set("StringValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStringValue: Self = this.set("StringValue", js.undefined)
+    def setStringValueUndefined: Self = StObject.set(x, "StringValue", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Base Resource
   */
 @js.native
-trait ResourceBase extends js.Object {
+trait ResourceBase extends StObject {
   
   /**
     * Contains extended information for property 'id'.
@@ -64,72 +65,60 @@ object ResourceBase {
   }
   
   @scala.inline
-  implicit class ResourceBaseOps[Self <: ResourceBase] (val x: Self) extends AnyVal {
+  implicit class ResourceBaseMutableBuilder[Self <: ResourceBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setImplicitRules(value: uri): Self = StObject.set(x, "implicitRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_id(value: Element): Self = this.set("_id", value.asInstanceOf[js.Any])
+    def setImplicitRulesUndefined: Self = StObject.set(x, "implicitRules", js.undefined)
     
     @scala.inline
-    def delete_id: Self = this.set("_id", js.undefined)
+    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_implicitRules(value: Element): Self = this.set("_implicitRules", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def delete_implicitRules: Self = this.set("_implicitRules", js.undefined)
+    def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_language(value: Element): Self = this.set("_language", value.asInstanceOf[js.Any])
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def delete_language: Self = this.set("_language", js.undefined)
+    def setResourceType(value: code): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_resourceType(value: Element): Self = this.set("_resourceType", value.asInstanceOf[js.Any])
+    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     @scala.inline
-    def delete_resourceType: Self = this.set("_resourceType", js.undefined)
+    def set_id(value: Element): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: id): Self = this.set("id", value.asInstanceOf[js.Any])
+    def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def set_implicitRules(value: Element): Self = StObject.set(x, "_implicitRules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImplicitRules(value: uri): Self = this.set("implicitRules", value.asInstanceOf[js.Any])
+    def set_implicitRulesUndefined: Self = StObject.set(x, "_implicitRules", js.undefined)
     
     @scala.inline
-    def deleteImplicitRules: Self = this.set("implicitRules", js.undefined)
+    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: code): Self = this.set("language", value.asInstanceOf[js.Any])
+    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def set_resourceType(value: Element): Self = StObject.set(x, "_resourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMeta(value: Meta): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
-    
-    @scala.inline
-    def setResourceType(value: code): Self = this.set("resourceType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    def set_resourceTypeUndefined: Self = StObject.set(x, "_resourceType", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeliveryStreamEncryptionConfiguration extends js.Object {
+trait DeliveryStreamEncryptionConfiguration extends StObject {
   
   /**
     * Provides details in case one of the following operations fails due to an error related to KMS: CreateDeliveryStream, DeleteDeliveryStream, StartDeliveryStreamEncryption, StopDeliveryStreamEncryption.
@@ -36,42 +37,30 @@ object DeliveryStreamEncryptionConfiguration {
   }
   
   @scala.inline
-  implicit class DeliveryStreamEncryptionConfigurationOps[Self <: DeliveryStreamEncryptionConfiguration] (val x: Self) extends AnyVal {
+  implicit class DeliveryStreamEncryptionConfigurationMutableBuilder[Self <: DeliveryStreamEncryptionConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailureDescription(value: FailureDescription): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureDescription(value: FailureDescription): Self = this.set("FailureDescription", value.asInstanceOf[js.Any])
+    def setKeyARNUndefined: Self = StObject.set(x, "KeyARN", js.undefined)
     
     @scala.inline
-    def deleteFailureDescription: Self = this.set("FailureDescription", js.undefined)
+    def setKeyType(value: KeyType): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyARN(value: AWSKMSKeyARN): Self = this.set("KeyARN", value.asInstanceOf[js.Any])
+    def setKeyTypeUndefined: Self = StObject.set(x, "KeyType", js.undefined)
     
     @scala.inline
-    def deleteKeyARN: Self = this.set("KeyARN", js.undefined)
+    def setStatus(value: DeliveryStreamEncryptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyType(value: KeyType): Self = this.set("KeyType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeyType: Self = this.set("KeyType", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: DeliveryStreamEncryptionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

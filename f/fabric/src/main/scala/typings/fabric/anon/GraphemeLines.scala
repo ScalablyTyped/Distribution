@@ -1,11 +1,12 @@
 package typings.fabric.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphemeLines extends js.Object {
+trait GraphemeLines extends StObject {
   
   var _unwrappedLines: js.Array[String] = js.native
   
@@ -29,42 +30,30 @@ object GraphemeLines {
   }
   
   @scala.inline
-  implicit class GraphemeLinesOps[Self <: GraphemeLines] (val x: Self) extends AnyVal {
+  implicit class GraphemeLinesMutableBuilder[Self <: GraphemeLines] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGraphemeLines(value: js.Array[String]): Self = StObject.set(x, "graphemeLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGraphemeLinesVarargs(value: String*): Self = StObject.set(x, "graphemeLines", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGraphemeText(value: js.Array[String]): Self = StObject.set(x, "graphemeText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_unwrappedLinesVarargs(value: String*): Self = this.set("_unwrappedLines", js.Array(value :_*))
+    def setGraphemeTextVarargs(value: String*): Self = StObject.set(x, "graphemeText", js.Array(value :_*))
     
     @scala.inline
-    def set_unwrappedLines(value: js.Array[String]): Self = this.set("_unwrappedLines", value.asInstanceOf[js.Any])
+    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphemeLinesVarargs(value: String*): Self = this.set("graphemeLines", js.Array(value :_*))
+    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
     @scala.inline
-    def setGraphemeLines(value: js.Array[String]): Self = this.set("graphemeLines", value.asInstanceOf[js.Any])
+    def set_unwrappedLines(value: js.Array[String]): Self = StObject.set(x, "_unwrappedLines", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGraphemeTextVarargs(value: String*): Self = this.set("graphemeText", js.Array(value :_*))
-    
-    @scala.inline
-    def setGraphemeText(value: js.Array[String]): Self = this.set("graphemeText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = this.set("lines", js.Array(value :_*))
-    
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = this.set("lines", value.asInstanceOf[js.Any])
+    def set_unwrappedLinesVarargs(value: String*): Self = StObject.set(x, "_unwrappedLines", js.Array(value :_*))
   }
 }

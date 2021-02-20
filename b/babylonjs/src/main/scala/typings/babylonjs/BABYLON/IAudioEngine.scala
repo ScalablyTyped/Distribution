@@ -2,6 +2,7 @@ package typings.babylonjs.BABYLON
 
 import typings.std.AudioContext
 import typings.std.GainNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -118,66 +119,54 @@ object IAudioEngine {
   }
   
   @scala.inline
-  implicit class IAudioEngineOps[Self <: IAudioEngine] (val x: Self) extends AnyVal {
+  implicit class IAudioEngineMutableBuilder[Self <: IAudioEngine] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudioContext(value: Nullable[AudioContext]): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudioContextNull: Self = StObject.set(x, "audioContext", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanUseWebAudio(value: Boolean): Self = StObject.set(x, "canUseWebAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWarnedWebAudioUnsupported(value: Boolean): Self = this.set("WarnedWebAudioUnsupported", value.asInstanceOf[js.Any])
+    def setConnectToAnalyser(value: Analyser => Unit): Self = StObject.set(x, "connectToAnalyser", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanUseWebAudio(value: Boolean): Self = this.set("canUseWebAudio", value.asInstanceOf[js.Any])
+    def setGetGlobalVolume(value: () => Double): Self = StObject.set(x, "getGlobalVolume", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setConnectToAnalyser(value: Analyser => Unit): Self = this.set("connectToAnalyser", js.Any.fromFunction1(value))
+    def setIsMP3supported(value: Boolean): Self = StObject.set(x, "isMP3supported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetGlobalVolume(value: () => Double): Self = this.set("getGlobalVolume", js.Any.fromFunction0(value))
+    def setIsOGGsupported(value: Boolean): Self = StObject.set(x, "isOGGsupported", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsMP3supported(value: Boolean): Self = this.set("isMP3supported", value.asInstanceOf[js.Any])
+    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setIsOGGsupported(value: Boolean): Self = this.set("isOGGsupported", value.asInstanceOf[js.Any])
+    def setMasterGain(value: GainNode): Self = StObject.set(x, "masterGain", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLock(value: () => Unit): Self = this.set("lock", js.Any.fromFunction0(value))
+    def setOnAudioLockedObservable(value: Observable[IAudioEngine]): Self = StObject.set(x, "onAudioLockedObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMasterGain(value: GainNode): Self = this.set("masterGain", value.asInstanceOf[js.Any])
+    def setOnAudioUnlockedObservable(value: Observable[IAudioEngine]): Self = StObject.set(x, "onAudioUnlockedObservable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnAudioLockedObservable(value: Observable[IAudioEngine]): Self = this.set("onAudioLockedObservable", value.asInstanceOf[js.Any])
+    def setSetGlobalVolume(value: Double => Unit): Self = StObject.set(x, "setGlobalVolume", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnAudioUnlockedObservable(value: Observable[IAudioEngine]): Self = this.set("onAudioUnlockedObservable", value.asInstanceOf[js.Any])
+    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSetGlobalVolume(value: Double => Unit): Self = this.set("setGlobalVolume", js.Any.fromFunction1(value))
+    def setUnlocked(value: Boolean): Self = StObject.set(x, "unlocked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
+    def setUseCustomUnlockedButton(value: Boolean): Self = StObject.set(x, "useCustomUnlockedButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnlocked(value: Boolean): Self = this.set("unlocked", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUseCustomUnlockedButton(value: Boolean): Self = this.set("useCustomUnlockedButton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAudioContext(value: Nullable[AudioContext]): Self = this.set("audioContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAudioContextNull: Self = this.set("audioContext", null)
+    def setWarnedWebAudioUnsupported(value: Boolean): Self = StObject.set(x, "WarnedWebAudioUnsupported", value.asInstanceOf[js.Any])
   }
 }

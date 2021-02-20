@@ -2,6 +2,7 @@ package typings.watsonDeveloperCloud.sdkMod
 
 import typings.watsonDeveloperCloud.v3Mod.Options
 import typings.watsonDeveloperCloud.v3Mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,10 +33,16 @@ class LanguageTranslatorV3 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3")
-@js.native
-object LanguageTranslatorV3 extends js.Object {
+object LanguageTranslatorV3 {
   
-  var URL: String = js.native
+  @JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "LanguageTranslatorV3.URL")
+  @js.native
+  def URL: String = js.native
+  @scala.inline
+  def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }

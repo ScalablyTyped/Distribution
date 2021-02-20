@@ -1,5 +1,6 @@
 package typings.resolvePath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("resolve-path", JSImport.Namespace)
 @js.native
-object resolvePathRequire extends js.Object
+object resolvePathRequire extends StObject

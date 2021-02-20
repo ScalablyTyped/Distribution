@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GetUsageForecastResponse extends js.Object {
+trait GetUsageForecastResponse extends StObject {
   
   /**
     * The forecasts for your query, in order. For DAILY forecasts, this is a list of days. For MONTHLY forecasts, this is a list of months.
@@ -26,33 +27,21 @@ object GetUsageForecastResponse {
   }
   
   @scala.inline
-  implicit class GetUsageForecastResponseOps[Self <: GetUsageForecastResponse] (val x: Self) extends AnyVal {
+  implicit class GetUsageForecastResponseMutableBuilder[Self <: GetUsageForecastResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setForecastResultsByTime(value: ForecastResultsByTime): Self = StObject.set(x, "ForecastResultsByTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setForecastResultsByTimeUndefined: Self = StObject.set(x, "ForecastResultsByTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setForecastResultsByTimeVarargs(value: ForecastResult*): Self = StObject.set(x, "ForecastResultsByTime", js.Array(value :_*))
     
     @scala.inline
-    def setForecastResultsByTimeVarargs(value: ForecastResult*): Self = this.set("ForecastResultsByTime", js.Array(value :_*))
+    def setTotal(value: MetricValue): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForecastResultsByTime(value: ForecastResultsByTime): Self = this.set("ForecastResultsByTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteForecastResultsByTime: Self = this.set("ForecastResultsByTime", js.undefined)
-    
-    @scala.inline
-    def setTotal(value: MetricValue): Self = this.set("Total", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTotal: Self = this.set("Total", js.undefined)
+    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

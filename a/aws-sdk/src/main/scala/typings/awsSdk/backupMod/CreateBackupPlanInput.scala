@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateBackupPlanInput extends js.Object {
+trait CreateBackupPlanInput extends StObject {
   
   /**
     * Specifies the body of a backup plan. Includes a BackupPlanName and one or more sets of Rules.
@@ -31,33 +32,21 @@ object CreateBackupPlanInput {
   }
   
   @scala.inline
-  implicit class CreateBackupPlanInputOps[Self <: CreateBackupPlanInput] (val x: Self) extends AnyVal {
+  implicit class CreateBackupPlanInputMutableBuilder[Self <: CreateBackupPlanInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupPlan(value: BackupPlanInput): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackupPlanTags(value: Tags): Self = StObject.set(x, "BackupPlanTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackupPlanTagsUndefined: Self = StObject.set(x, "BackupPlanTags", js.undefined)
     
     @scala.inline
-    def setBackupPlan(value: BackupPlanInput): Self = this.set("BackupPlan", value.asInstanceOf[js.Any])
+    def setCreatorRequestId(value: String): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackupPlanTags(value: Tags): Self = this.set("BackupPlanTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBackupPlanTags: Self = this.set("BackupPlanTags", js.undefined)
-    
-    @scala.inline
-    def setCreatorRequestId(value: String): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    def setCreatorRequestIdUndefined: Self = StObject.set(x, "CreatorRequestId", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Resource representing a single performance measure or data point
   */
 @js.native
-trait SchemaPerfSample extends js.Object {
+trait SchemaPerfSample extends StObject {
   
   /**
     * Timestamp of collection
@@ -29,30 +30,18 @@ object SchemaPerfSample {
   }
   
   @scala.inline
-  implicit class SchemaPerfSampleOps[Self <: SchemaPerfSample] (val x: Self) extends AnyVal {
+  implicit class SchemaPerfSampleMutableBuilder[Self <: SchemaPerfSample] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setSampleTime(value: SchemaTimestamp): Self = StObject.set(x, "sampleTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSampleTimeUndefined: Self = StObject.set(x, "sampleTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSampleTime(value: SchemaTimestamp): Self = this.set("sampleTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSampleTime: Self = this.set("sampleTime", js.undefined)
-    
-    @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

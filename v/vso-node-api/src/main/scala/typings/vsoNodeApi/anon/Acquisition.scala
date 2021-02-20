@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Acquisition extends js.Object {
+trait Acquisition extends StObject {
   
   var acquisition: scala.Double = js.native
   
@@ -35,36 +36,24 @@ object Acquisition {
   }
   
   @scala.inline
-  implicit class AcquisitionOps[Self <: Acquisition] (val x: Self) extends AnyVal {
+  implicit class AcquisitionMutableBuilder[Self <: Acquisition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcquisition(value: scala.Double): Self = StObject.set(x, "acquisition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInstall(value: scala.Double): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOther(value: scala.Double): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcquisition(value: scala.Double): Self = this.set("acquisition", value.asInstanceOf[js.Any])
+    def setReview(value: scala.Double): Self = StObject.set(x, "review", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstall(value: scala.Double): Self = this.set("install", value.asInstanceOf[js.Any])
+    def setSales(value: scala.Double): Self = StObject.set(x, "sales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOther(value: scala.Double): Self = this.set("other", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReview(value: scala.Double): Self = this.set("review", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSales(value: scala.Double): Self = this.set("sales", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUninstall(value: scala.Double): Self = this.set("uninstall", value.asInstanceOf[js.Any])
+    def setUninstall(value: scala.Double): Self = StObject.set(x, "uninstall", value.asInstanceOf[js.Any])
   }
 }

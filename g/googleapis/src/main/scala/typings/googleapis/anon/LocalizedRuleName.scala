@@ -1,11 +1,12 @@
 package typings.googleapis.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LocalizedRuleName extends js.Object {
+trait LocalizedRuleName extends StObject {
   
   var localizedRuleName: js.UndefOr[String] = js.native
   
@@ -22,39 +23,27 @@ object LocalizedRuleName {
   }
   
   @scala.inline
-  implicit class LocalizedRuleNameOps[Self <: LocalizedRuleName] (val x: Self) extends AnyVal {
+  implicit class LocalizedRuleNameMutableBuilder[Self <: LocalizedRuleName] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalizedRuleName(value: String): Self = StObject.set(x, "localizedRuleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocalizedRuleNameUndefined: Self = StObject.set(x, "localizedRuleName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRuleImpact(value: Double): Self = StObject.set(x, "ruleImpact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalizedRuleName(value: String): Self = this.set("localizedRuleName", value.asInstanceOf[js.Any])
+    def setRuleImpactUndefined: Self = StObject.set(x, "ruleImpact", js.undefined)
     
     @scala.inline
-    def deleteLocalizedRuleName: Self = this.set("localizedRuleName", js.undefined)
+    def setUrlBlocks(value: js.Array[Header]): Self = StObject.set(x, "urlBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRuleImpact(value: Double): Self = this.set("ruleImpact", value.asInstanceOf[js.Any])
+    def setUrlBlocksUndefined: Self = StObject.set(x, "urlBlocks", js.undefined)
     
     @scala.inline
-    def deleteRuleImpact: Self = this.set("ruleImpact", js.undefined)
-    
-    @scala.inline
-    def setUrlBlocksVarargs(value: Header*): Self = this.set("urlBlocks", js.Array(value :_*))
-    
-    @scala.inline
-    def setUrlBlocks(value: js.Array[Header]): Self = this.set("urlBlocks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrlBlocks: Self = this.set("urlBlocks", js.undefined)
+    def setUrlBlocksVarargs(value: Header*): Self = StObject.set(x, "urlBlocks", js.Array(value :_*))
   }
 }

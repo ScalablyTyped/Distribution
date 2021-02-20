@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ sealed trait PointerInput
   extends _DeviceInput[js.Any]
 @JSGlobal("BABYLON.PointerInput")
 @js.native
-object PointerInput extends js.Object {
+object PointerInput extends StObject {
   
   /** Browser Back */
   @js.native

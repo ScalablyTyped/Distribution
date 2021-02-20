@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Aggregation of items by status code as of the specified date.
   */
 @js.native
-trait SchemaCustomerIndexStats extends js.Object {
+trait SchemaCustomerIndexStats extends StObject {
   
   /**
     * Date for which statistics were calculated.
@@ -29,33 +30,21 @@ object SchemaCustomerIndexStats {
   }
   
   @scala.inline
-  implicit class SchemaCustomerIndexStatsOps[Self <: SchemaCustomerIndexStats] (val x: Self) extends AnyVal {
+  implicit class SchemaCustomerIndexStatsMutableBuilder[Self <: SchemaCustomerIndexStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDate(value: SchemaDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemCountByStatus(value: js.Array[SchemaItemCountByStatus]): Self = StObject.set(x, "itemCountByStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDate(value: SchemaDate): Self = this.set("date", value.asInstanceOf[js.Any])
+    def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
     
     @scala.inline
-    def deleteDate: Self = this.set("date", js.undefined)
-    
-    @scala.inline
-    def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = this.set("itemCountByStatus", js.Array(value :_*))
-    
-    @scala.inline
-    def setItemCountByStatus(value: js.Array[SchemaItemCountByStatus]): Self = this.set("itemCountByStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteItemCountByStatus: Self = this.set("itemCountByStatus", js.undefined)
+    def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
   }
 }

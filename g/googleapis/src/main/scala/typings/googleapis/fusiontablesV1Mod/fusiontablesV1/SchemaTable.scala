@@ -1,5 +1,6 @@
 package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * description, attribution, and attribution link.
   */
 @js.native
-trait SchemaTable extends js.Object {
+trait SchemaTable extends StObject {
   
   /**
     * Optional attribution assigned to the table.
@@ -70,84 +71,72 @@ object SchemaTable {
   }
   
   @scala.inline
-  implicit class SchemaTableOps[Self <: SchemaTable] (val x: Self) extends AnyVal {
+  implicit class SchemaTableMutableBuilder[Self <: SchemaTable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributionLink(value: String): Self = StObject.set(x, "attributionLink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributionLinkUndefined: Self = StObject.set(x, "attributionLink", js.undefined)
     
     @scala.inline
-    def setAttribution(value: String): Self = this.set("attribution", value.asInstanceOf[js.Any])
+    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
     @scala.inline
-    def deleteAttribution: Self = this.set("attribution", js.undefined)
+    def setBaseTableIds(value: js.Array[String]): Self = StObject.set(x, "baseTableIds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributionLink(value: String): Self = this.set("attributionLink", value.asInstanceOf[js.Any])
+    def setBaseTableIdsUndefined: Self = StObject.set(x, "baseTableIds", js.undefined)
     
     @scala.inline
-    def deleteAttributionLink: Self = this.set("attributionLink", js.undefined)
+    def setBaseTableIdsVarargs(value: String*): Self = StObject.set(x, "baseTableIds", js.Array(value :_*))
     
     @scala.inline
-    def setBaseTableIdsVarargs(value: String*): Self = this.set("baseTableIds", js.Array(value :_*))
+    def setColumns(value: js.Array[SchemaColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBaseTableIds(value: js.Array[String]): Self = this.set("baseTableIds", value.asInstanceOf[js.Any])
+    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
     @scala.inline
-    def deleteBaseTableIds: Self = this.set("baseTableIds", js.undefined)
+    def setColumnsVarargs(value: SchemaColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setColumnsVarargs(value: SchemaColumn*): Self = this.set("columns", js.Array(value :_*))
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[SchemaColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteColumns: Self = this.set("columns", js.undefined)
+    def setIsExportable(value: Boolean): Self = StObject.set(x, "isExportable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setIsExportableUndefined: Self = StObject.set(x, "isExportable", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsExportable(value: Boolean): Self = this.set("isExportable", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsExportable: Self = this.set("isExportable", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSql(value: String): Self = this.set("sql", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSql: Self = this.set("sql", js.undefined)
-    
-    @scala.inline
-    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTableId: Self = this.set("tableId", js.undefined)
+    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

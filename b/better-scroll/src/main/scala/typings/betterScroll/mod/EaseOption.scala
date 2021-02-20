@@ -1,12 +1,13 @@
 package typings.betterScroll.mod
 
 import typings.betterScroll.anon.Fn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EaseOption extends js.Object {
+trait EaseOption extends StObject {
   
   var bounce: js.UndefOr[Fn] = js.native
   
@@ -23,36 +24,24 @@ object EaseOption {
   }
   
   @scala.inline
-  implicit class EaseOptionOps[Self <: EaseOption] (val x: Self) extends AnyVal {
+  implicit class EaseOptionMutableBuilder[Self <: EaseOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounce(value: Fn): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSwipe(value: Fn): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounce(value: Fn): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    def setSwipeBounce(value: Fn): Self = StObject.set(x, "swipeBounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBounce: Self = this.set("bounce", js.undefined)
+    def setSwipeBounceUndefined: Self = StObject.set(x, "swipeBounce", js.undefined)
     
     @scala.inline
-    def setSwipe(value: Fn): Self = this.set("swipe", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwipe: Self = this.set("swipe", js.undefined)
-    
-    @scala.inline
-    def setSwipeBounce(value: Fn): Self = this.set("swipeBounce", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSwipeBounce: Self = this.set("swipeBounce", js.undefined)
+    def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
   }
 }

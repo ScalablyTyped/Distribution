@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * We support only non-relative module names because resolution of relative module names is usually more deterministic and thus less expensive.
   */
 @js.native
-trait NonRelativeModuleNameResolutionCache extends js.Object {
+trait NonRelativeModuleNameResolutionCache extends StObject {
   
   def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String): PerModuleNameCache = js.native
   def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String, redirectedReference: ResolvedProjectReference): PerModuleNameCache = js.native

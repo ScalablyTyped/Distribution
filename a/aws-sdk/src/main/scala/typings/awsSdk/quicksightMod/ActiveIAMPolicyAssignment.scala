@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveIAMPolicyAssignment extends js.Object {
+trait ActiveIAMPolicyAssignment extends StObject {
   
   /**
     * A name for the IAM policy assignment.
@@ -26,30 +27,18 @@ object ActiveIAMPolicyAssignment {
   }
   
   @scala.inline
-  implicit class ActiveIAMPolicyAssignmentOps[Self <: ActiveIAMPolicyAssignment] (val x: Self) extends AnyVal {
+  implicit class ActiveIAMPolicyAssignmentMutableBuilder[Self <: ActiveIAMPolicyAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssignmentNameUndefined: Self = StObject.set(x, "AssignmentName", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssignmentName: Self = this.set("AssignmentName", js.undefined)
-    
-    @scala.inline
-    def setPolicyArn(value: Arn): Self = this.set("PolicyArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePolicyArn: Self = this.set("PolicyArn", js.undefined)
+    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
   }
 }

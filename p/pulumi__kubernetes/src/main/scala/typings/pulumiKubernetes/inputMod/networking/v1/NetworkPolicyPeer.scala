@@ -2,6 +2,7 @@ package typings.pulumiKubernetes.inputMod.networking.v1
 
 import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NetworkPolicyPeer describes a peer to allow traffic to/from. Only certain combinations of fields are allowed
   */
 @js.native
-trait NetworkPolicyPeer extends js.Object {
+trait NetworkPolicyPeer extends StObject {
   
   /**
     * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the other fields can be.
@@ -40,36 +41,24 @@ object NetworkPolicyPeer {
   }
   
   @scala.inline
-  implicit class NetworkPolicyPeerOps[Self <: NetworkPolicyPeer] (val x: Self) extends AnyVal {
+  implicit class NetworkPolicyPeerMutableBuilder[Self <: NetworkPolicyPeer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpBlock(value: Input[IPBlock]): Self = StObject.set(x, "ipBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpBlockUndefined: Self = StObject.set(x, "ipBlock", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpBlock(value: Input[IPBlock]): Self = this.set("ipBlock", value.asInstanceOf[js.Any])
+    def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
     
     @scala.inline
-    def deleteIpBlock: Self = this.set("ipBlock", js.undefined)
+    def setPodSelector(value: Input[LabelSelector]): Self = StObject.set(x, "podSelector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamespaceSelector(value: Input[LabelSelector]): Self = this.set("namespaceSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNamespaceSelector: Self = this.set("namespaceSelector", js.undefined)
-    
-    @scala.inline
-    def setPodSelector(value: Input[LabelSelector]): Self = this.set("podSelector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePodSelector: Self = this.set("podSelector", js.undefined)
+    def setPodSelectorUndefined: Self = StObject.set(x, "podSelector", js.undefined)
   }
 }

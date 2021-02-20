@@ -2,6 +2,7 @@ package typings.playcanvas.pc
 
 import typings.playcanvas.pc.callbacks.FilterAsset
 import typings.playcanvas.pc.callbacks.LoadAsset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

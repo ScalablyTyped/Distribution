@@ -1,11 +1,12 @@
 package typings.awsSdk.appflowMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ExecutionResult extends js.Object {
+trait ExecutionResult extends StObject {
   
   /**
     *  The total number of bytes processed by the flow run. 
@@ -36,42 +37,30 @@ object ExecutionResult {
   }
   
   @scala.inline
-  implicit class ExecutionResultOps[Self <: ExecutionResult] (val x: Self) extends AnyVal {
+  implicit class ExecutionResultMutableBuilder[Self <: ExecutionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBytesProcessed(value: Long): Self = StObject.set(x, "bytesProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBytesProcessedUndefined: Self = StObject.set(x, "bytesProcessed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytesWritten(value: Long): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesProcessed(value: Long): Self = this.set("bytesProcessed", value.asInstanceOf[js.Any])
+    def setBytesWrittenUndefined: Self = StObject.set(x, "bytesWritten", js.undefined)
     
     @scala.inline
-    def deleteBytesProcessed: Self = this.set("bytesProcessed", js.undefined)
+    def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBytesWritten(value: Long): Self = this.set("bytesWritten", value.asInstanceOf[js.Any])
+    def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
     
     @scala.inline
-    def deleteBytesWritten: Self = this.set("bytesWritten", js.undefined)
+    def setRecordsProcessed(value: Long): Self = StObject.set(x, "recordsProcessed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setErrorInfo(value: ErrorInfo): Self = this.set("errorInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorInfo: Self = this.set("errorInfo", js.undefined)
-    
-    @scala.inline
-    def setRecordsProcessed(value: Long): Self = this.set("recordsProcessed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordsProcessed: Self = this.set("recordsProcessed", js.undefined)
+    def setRecordsProcessedUndefined: Self = StObject.set(x, "recordsProcessed", js.undefined)
   }
 }

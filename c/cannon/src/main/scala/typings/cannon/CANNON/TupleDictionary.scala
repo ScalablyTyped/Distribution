@@ -1,12 +1,13 @@
 package typings.cannon.CANNON
 
 import typings.cannon.anon.Keys
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TupleDictionary extends js.Object {
+trait TupleDictionary extends StObject {
   
   var data: Keys = js.native
   
@@ -30,30 +31,18 @@ object TupleDictionary {
   }
   
   @scala.inline
-  implicit class TupleDictionaryOps[Self <: TupleDictionary] (val x: Self) extends AnyVal {
+  implicit class TupleDictionaryMutableBuilder[Self <: TupleDictionary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: Keys): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setData(value: Keys): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGet(value: (Double, Double) => Double): Self = this.set("get", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSet(value: (Double, Double, Double) => Unit): Self = this.set("set", js.Any.fromFunction3(value))
+    def setSet(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
   }
 }

@@ -1,12 +1,13 @@
 package typings.rcSelect.anon
 
 import typings.rcSelect.generatorMod.RawValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RemovedValue[P /* <: RawValueType | js.Object */] extends js.Object {
+trait RemovedValue[P /* <: RawValueType | js.Object */] extends StObject {
   
   var removedValue: P = js.native
   
@@ -21,27 +22,15 @@ object RemovedValue {
   }
   
   @scala.inline
-  implicit class RemovedValueOps[Self <: RemovedValue[_], P /* <: RawValueType | js.Object */] (val x: Self with RemovedValue[P]) extends AnyVal {
+  implicit class RemovedValueMutableBuilder[Self <: RemovedValue[_], P /* <: RawValueType | js.Object */] (val x: Self with RemovedValue[P]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setRemovedValue(value: P): Self = StObject.set(x, "removedValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValues(value: js.Array[P]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setRemovedValue(value: P): Self = this.set("removedValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValuesVarargs(value: P*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[P]): Self = this.set("values", value.asInstanceOf[js.Any])
+    def setValuesVarargs(value: P*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

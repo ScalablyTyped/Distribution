@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeViewOptions[T] extends js.Object {
+trait TreeViewOptions[T] extends StObject {
   
   /**
     * Whether the tree supports multi-select. When the tree supports multi-select and a command is executed from the tree,
@@ -33,33 +34,21 @@ object TreeViewOptions {
   }
   
   @scala.inline
-  implicit class TreeViewOptionsOps[Self <: TreeViewOptions[_], T] (val x: Self with TreeViewOptions[T]) extends AnyVal {
+  implicit class TreeViewOptionsMutableBuilder[Self <: TreeViewOptions[_], T] (val x: Self with TreeViewOptions[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanSelectMany(value: Boolean): Self = StObject.set(x, "canSelectMany", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanSelectManyUndefined: Self = StObject.set(x, "canSelectMany", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowCollapseAll(value: Boolean): Self = StObject.set(x, "showCollapseAll", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTreeDataProvider(value: TreeDataProvider[T]): Self = this.set("treeDataProvider", value.asInstanceOf[js.Any])
+    def setShowCollapseAllUndefined: Self = StObject.set(x, "showCollapseAll", js.undefined)
     
     @scala.inline
-    def setCanSelectMany(value: Boolean): Self = this.set("canSelectMany", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanSelectMany: Self = this.set("canSelectMany", js.undefined)
-    
-    @scala.inline
-    def setShowCollapseAll(value: Boolean): Self = this.set("showCollapseAll", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowCollapseAll: Self = this.set("showCollapseAll", js.undefined)
+    def setTreeDataProvider(value: TreeDataProvider[T]): Self = StObject.set(x, "treeDataProvider", value.asInstanceOf[js.Any])
   }
 }

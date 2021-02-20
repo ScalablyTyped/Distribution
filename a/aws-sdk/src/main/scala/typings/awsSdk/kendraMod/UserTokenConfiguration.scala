@@ -1,11 +1,12 @@
 package typings.awsSdk.kendraMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UserTokenConfiguration extends js.Object {
+trait UserTokenConfiguration extends StObject {
   
   /**
     * Information about the JSON token type configuration.
@@ -26,30 +27,18 @@ object UserTokenConfiguration {
   }
   
   @scala.inline
-  implicit class UserTokenConfigurationOps[Self <: UserTokenConfiguration] (val x: Self) extends AnyVal {
+  implicit class UserTokenConfigurationMutableBuilder[Self <: UserTokenConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJsonTokenTypeConfiguration(value: JsonTokenTypeConfiguration): Self = StObject.set(x, "JsonTokenTypeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJsonTokenTypeConfigurationUndefined: Self = StObject.set(x, "JsonTokenTypeConfiguration", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setJwtTokenTypeConfiguration(value: JwtTokenTypeConfiguration): Self = StObject.set(x, "JwtTokenTypeConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJsonTokenTypeConfiguration(value: JsonTokenTypeConfiguration): Self = this.set("JsonTokenTypeConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJsonTokenTypeConfiguration: Self = this.set("JsonTokenTypeConfiguration", js.undefined)
-    
-    @scala.inline
-    def setJwtTokenTypeConfiguration(value: JwtTokenTypeConfiguration): Self = this.set("JwtTokenTypeConfiguration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJwtTokenTypeConfiguration: Self = this.set("JwtTokenTypeConfiguration", js.undefined)
+    def setJwtTokenTypeConfigurationUndefined: Self = StObject.set(x, "JwtTokenTypeConfiguration", js.undefined)
   }
 }

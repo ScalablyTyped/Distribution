@@ -11,17 +11,19 @@ import typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperTextFa
 import typings.materialTextfield.iconComponentMod.MDCTextFieldIconFactory
 import typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/textfield/component", JSImport.Namespace)
-@js.native
-object materialTextfieldMod extends js.Object {
+object materialTextfieldMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @js.native
-  class MDCTextField () extends MDCComponent[MDCTextFieldFoundation] {
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/textfield/component", "MDCTextField")
+  @js.native
+  class MDCTextField protected () extends MDCComponent[MDCTextFieldFoundation] {
+    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: MDCTextFieldFoundation, args: js.Any*) = this()
     
     def disabled: Boolean = js.native
     /**
@@ -161,9 +163,10 @@ object materialTextfieldMod extends js.Object {
     def value_=(value: String): Unit = js.native
   }
   /* static members */
-  @js.native
-  object MDCTextField extends js.Object {
+  object MDCTextField {
     
+    @JSImport("@material/textfield/component", "MDCTextField.attachTo")
+    @js.native
     def attachTo(root: Element): MDCTextField = js.native
   }
 }

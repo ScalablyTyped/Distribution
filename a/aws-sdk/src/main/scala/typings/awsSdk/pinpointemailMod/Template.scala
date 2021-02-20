@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointemailMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Template extends js.Object {
+trait Template extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the template.
@@ -26,30 +27,18 @@ object Template {
   }
   
   @scala.inline
-  implicit class TemplateOps[Self <: Template] (val x: Self) extends AnyVal {
+  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setTemplateArn(value: TemplateArn): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTemplateData(value: TemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateArn(value: TemplateArn): Self = this.set("TemplateArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateArn: Self = this.set("TemplateArn", js.undefined)
-    
-    @scala.inline
-    def setTemplateData(value: TemplateData): Self = this.set("TemplateData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplateData: Self = this.set("TemplateData", js.undefined)
+    def setTemplateDataUndefined: Self = StObject.set(x, "TemplateData", js.undefined)
   }
 }

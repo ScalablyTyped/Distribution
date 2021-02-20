@@ -1,12 +1,13 @@
 package typings.spectacle.anon
 
 import typings.react.mod.ReactNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainsSlides extends js.Object {
+trait ContainsSlides extends StObject {
   
   var children: ReactNode = js.native
   
@@ -21,30 +22,18 @@ object ContainsSlides {
   }
   
   @scala.inline
-  implicit class ContainsSlidesOps[Self <: ContainsSlides] (val x: Self) extends AnyVal {
+  implicit class ContainsSlidesMutableBuilder[Self <: ContainsSlides] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContainsSlides(value: Boolean): Self = StObject.set(x, "containsSlides", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteChildren: Self = this.set("children", js.undefined)
-    
-    @scala.inline
-    def setContainsSlides(value: Boolean): Self = this.set("containsSlides", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContainsSlides: Self = this.set("containsSlides", js.undefined)
+    def setContainsSlidesUndefined: Self = StObject.set(x, "containsSlides", js.undefined)
   }
 }

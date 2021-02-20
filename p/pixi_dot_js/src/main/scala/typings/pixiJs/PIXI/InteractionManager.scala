@@ -3,6 +3,7 @@ package typings.pixiJs.PIXI
 import org.scalablytyped.runtime.StringDictionary
 import typings.pixiJs.PIXI.utils.EventEmitter
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

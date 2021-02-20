@@ -1,12 +1,13 @@
 package typings.materializeCss.M
 
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CarouselOptions extends js.Object {
+trait CarouselOptions extends StObject {
   
   /**
     * Perspective zoom. If 0, all items are the same size
@@ -81,45 +82,33 @@ object CarouselOptions {
   }
   
   @scala.inline
-  implicit class CarouselOptionsOps[Self <: CarouselOptions] (val x: Self) extends AnyVal {
+  implicit class CarouselOptionsMutableBuilder[Self <: CarouselOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDist(value: Double): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDist(value: Double): Self = this.set("dist", value.asInstanceOf[js.Any])
+    def setIndicators(value: Boolean): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    def setNumVisible(value: Double): Self = StObject.set(x, "numVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndicators(value: Boolean): Self = this.set("indicators", value.asInstanceOf[js.Any])
+    def setOnCycleTo(value: (Element, Boolean) => Unit): Self = StObject.set(x, "onCycleTo", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setNoWrap(value: Boolean): Self = this.set("noWrap", value.asInstanceOf[js.Any])
+    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumVisible(value: Double): Self = this.set("numVisible", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOnCycleTo(value: (Element, Boolean) => Unit): Self = this.set("onCycleTo", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShift(value: Double): Self = this.set("shift", value.asInstanceOf[js.Any])
+    def setShift(value: Double): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
   }
 }

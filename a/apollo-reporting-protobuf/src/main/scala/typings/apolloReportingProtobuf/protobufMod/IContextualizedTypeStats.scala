@@ -1,12 +1,13 @@
 package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IContextualizedTypeStats extends js.Object {
+trait IContextualizedTypeStats extends StObject {
   
   /** ContextualizedTypeStats context */
   var context: js.UndefOr[IStatsContext | Null] = js.native
@@ -23,36 +24,24 @@ object IContextualizedTypeStats {
   }
   
   @scala.inline
-  implicit class IContextualizedTypeStatsOps[Self <: IContextualizedTypeStats] (val x: Self) extends AnyVal {
+  implicit class IContextualizedTypeStatsMutableBuilder[Self <: IContextualizedTypeStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setContext(value: IStatsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setContextNull: Self = StObject.set(x, "context", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setContext(value: IStatsContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setPerTypeStat(value: StringDictionary[ITypeStat]): Self = StObject.set(x, "perTypeStat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteContext: Self = this.set("context", js.undefined)
+    def setPerTypeStatNull: Self = StObject.set(x, "perTypeStat", null)
     
     @scala.inline
-    def setContextNull: Self = this.set("context", null)
-    
-    @scala.inline
-    def setPerTypeStat(value: StringDictionary[ITypeStat]): Self = this.set("perTypeStat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePerTypeStat: Self = this.set("perTypeStat", js.undefined)
-    
-    @scala.inline
-    def setPerTypeStatNull: Self = this.set("perTypeStat", null)
+    def setPerTypeStatUndefined: Self = StObject.set(x, "perTypeStat", js.undefined)
   }
 }

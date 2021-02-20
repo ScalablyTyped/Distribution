@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextDocumentShowOptions extends js.Object {
+trait TextDocumentShowOptions extends StObject {
   
   /**
     * An optional flag that when `true` will stop the [editor](#TextEditor) from taking focus.
@@ -41,42 +42,30 @@ object TextDocumentShowOptions {
   }
   
   @scala.inline
-  implicit class TextDocumentShowOptionsOps[Self <: TextDocumentShowOptions] (val x: Self) extends AnyVal {
+  implicit class TextDocumentShowOptionsMutableBuilder[Self <: TextDocumentShowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreserveFocus(value: Boolean): Self = this.set("preserveFocus", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deletePreserveFocus: Self = this.set("preserveFocus", js.undefined)
+    def setSelection(value: Range): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: Boolean): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: Range): Self = this.set("selection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelection: Self = this.set("selection", js.undefined)
-    
-    @scala.inline
-    def setViewColumn(value: ViewColumn): Self = this.set("viewColumn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewColumn: Self = this.set("viewColumn", js.undefined)
+    def setViewColumnUndefined: Self = StObject.set(x, "viewColumn", js.undefined)
   }
 }

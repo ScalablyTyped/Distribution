@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to the type of item being searched.
   */
 @js.native
-trait SchemaIntegerOperatorOptions extends js.Object {
+trait SchemaIntegerOperatorOptions extends StObject {
   
   /**
     * Indicates the operator name required in the query in order to isolate the
@@ -59,36 +60,24 @@ object SchemaIntegerOperatorOptions {
   }
   
   @scala.inline
-  implicit class SchemaIntegerOperatorOptionsOps[Self <: SchemaIntegerOperatorOptions] (val x: Self) extends AnyVal {
+  implicit class SchemaIntegerOperatorOptionsMutableBuilder[Self <: SchemaIntegerOperatorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGreaterThanOperatorNameUndefined: Self = StObject.set(x, "greaterThanOperatorName", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLessThanOperatorName(value: String): Self = StObject.set(x, "lessThanOperatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGreaterThanOperatorName(value: String): Self = this.set("greaterThanOperatorName", value.asInstanceOf[js.Any])
+    def setLessThanOperatorNameUndefined: Self = StObject.set(x, "lessThanOperatorName", js.undefined)
     
     @scala.inline
-    def deleteGreaterThanOperatorName: Self = this.set("greaterThanOperatorName", js.undefined)
+    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLessThanOperatorName(value: String): Self = this.set("lessThanOperatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLessThanOperatorName: Self = this.set("lessThanOperatorName", js.undefined)
-    
-    @scala.inline
-    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

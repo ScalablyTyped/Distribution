@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VpnGateway extends js.Object {
+trait VpnGateway extends StObject {
   
   /**
     * The private Autonomous System Number (ASN) for the Amazon side of a BGP session.
@@ -51,66 +52,54 @@ object VpnGateway {
   }
   
   @scala.inline
-  implicit class VpnGatewayOps[Self <: VpnGateway] (val x: Self) extends AnyVal {
+  implicit class VpnGatewayMutableBuilder[Self <: VpnGateway] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAmazonSideAsn(value: Long): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAmazonSideAsnUndefined: Self = StObject.set(x, "AmazonSideAsn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAmazonSideAsn(value: Long): Self = this.set("AmazonSideAsn", value.asInstanceOf[js.Any])
+    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
     @scala.inline
-    def deleteAmazonSideAsn: Self = this.set("AmazonSideAsn", js.undefined)
+    def setState(value: VpnState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: VpnState): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setType(value: GatewayType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
     @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setVpcAttachments(value: VpcAttachmentList): Self = StObject.set(x, "VpcAttachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: GatewayType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setVpcAttachmentsUndefined: Self = StObject.set(x, "VpcAttachments", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("Type", js.undefined)
+    def setVpcAttachmentsVarargs(value: VpcAttachment*): Self = StObject.set(x, "VpcAttachments", js.Array(value :_*))
     
     @scala.inline
-    def setVpcAttachmentsVarargs(value: VpcAttachment*): Self = this.set("VpcAttachments", js.Array(value :_*))
+    def setVpnGatewayId(value: String): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVpcAttachments(value: VpcAttachmentList): Self = this.set("VpcAttachments", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpcAttachments: Self = this.set("VpcAttachments", js.undefined)
-    
-    @scala.inline
-    def setVpnGatewayId(value: String): Self = this.set("VpnGatewayId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVpnGatewayId: Self = this.set("VpnGatewayId", js.undefined)
+    def setVpnGatewayIdUndefined: Self = StObject.set(x, "VpnGatewayId", js.undefined)
   }
 }

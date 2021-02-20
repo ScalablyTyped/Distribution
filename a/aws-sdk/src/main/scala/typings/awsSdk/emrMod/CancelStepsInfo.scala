@@ -1,11 +1,12 @@
 package typings.awsSdk.emrMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CancelStepsInfo extends js.Object {
+trait CancelStepsInfo extends StObject {
   
   /**
     * The reason for the failure if the CancelSteps request fails.
@@ -31,36 +32,24 @@ object CancelStepsInfo {
   }
   
   @scala.inline
-  implicit class CancelStepsInfoOps[Self <: CancelStepsInfo] (val x: Self) extends AnyVal {
+  implicit class CancelStepsInfoMutableBuilder[Self <: CancelStepsInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStatus(value: CancelStepsRequestStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReason(value: String): Self = this.set("Reason", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
     @scala.inline
-    def deleteReason: Self = this.set("Reason", js.undefined)
+    def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: CancelStepsRequestStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
-    
-    @scala.inline
-    def setStepId(value: StepId): Self = this.set("StepId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStepId: Self = this.set("StepId", js.undefined)
+    def setStepIdUndefined: Self = StObject.set(x, "StepId", js.undefined)
   }
 }

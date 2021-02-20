@@ -5,16 +5,16 @@ import typings.three.animationMixerMod.AnimationMixer
 import typings.three.constantsMod.AnimationActionLoopStyles
 import typings.three.constantsMod.AnimationBlendMode
 import typings.three.object3DMod.Object3D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/animation/AnimationAction", JSImport.Namespace)
-@js.native
-object animationActionMod extends js.Object {
+object animationActionMod {
   
+  @JSImport("three/src/animation/AnimationAction", "AnimationAction")
   @js.native
-  class AnimationAction protected () extends js.Object {
+  class AnimationAction protected () extends StObject {
     def this(mixer: AnimationMixer, clip: AnimationClip) = this()
     def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D) = this()
     def this(

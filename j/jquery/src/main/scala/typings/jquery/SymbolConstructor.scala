@@ -1,11 +1,12 @@
 package typings.jquery
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SymbolConstructor extends js.Object {
+trait SymbolConstructor extends StObject {
   
   /**
     * A String value that is used in the creation of the default string description of an object.
@@ -22,21 +23,9 @@ object SymbolConstructor {
   }
   
   @scala.inline
-  implicit class SymbolConstructorOps[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
+  implicit class SymbolConstructorMutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setToStringTag(value: js.Symbol): Self = this.set("toStringTag", value.asInstanceOf[js.Any])
+    def setToStringTag(value: js.Symbol): Self = StObject.set(x, "toStringTag", value.asInstanceOf[js.Any])
   }
 }

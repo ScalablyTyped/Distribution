@@ -1,52 +1,65 @@
 package typings.typeorm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", JSImport.Namespace)
-@js.native
-object browserDisabledDriversDummyMod extends js.Object {
+object browserDisabledDriversDummyMod {
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "AuroraDataApiDriver")
   @js.native
-  class AuroraDataApiDriver () extends js.Object
+  class AuroraDataApiDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "AuroraDataApiPostgresDriver")
   @js.native
-  class AuroraDataApiPostgresDriver () extends js.Object
+  class AuroraDataApiPostgresDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "BetterSqlite3Driver")
   @js.native
-  class BetterSqlite3Driver () extends js.Object
+  class BetterSqlite3Driver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "CockroachDriver")
   @js.native
-  class CockroachDriver () extends js.Object
+  class CockroachDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "MongoDriver")
   @js.native
-  class MongoDriver () extends js.Object
+  class MongoDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "MongoEntityManager")
   @js.native
-  class MongoEntityManager () extends js.Object
+  class MongoEntityManager () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "MongoQueryRunner")
   @js.native
-  class MongoQueryRunner () extends js.Object
+  class MongoQueryRunner () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "MongoRepository")
   @js.native
-  class MongoRepository () extends js.Object
+  class MongoRepository () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "MysqlDriver")
   @js.native
-  class MysqlDriver () extends js.Object
+  class MysqlDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "OracleDriver")
   @js.native
-  class OracleDriver () extends js.Object
+  class OracleDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "PostgresDriver")
   @js.native
-  class PostgresDriver () extends js.Object
+  class PostgresDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "SapDriver")
   @js.native
-  class SapDriver () extends js.Object
+  class SapDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "SqlServerDriver")
   @js.native
-  class SqlServerDriver () extends js.Object
+  class SqlServerDriver () extends StObject
   
+  @JSImport("typeorm/browser/platform/BrowserDisabledDriversDummy", "SqliteDriver")
   @js.native
-  class SqliteDriver () extends js.Object
+  class SqliteDriver () extends StObject
 }

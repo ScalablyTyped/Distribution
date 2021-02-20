@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PropertyNameQuery extends js.Object {
+trait PropertyNameQuery extends StObject {
   
   /**
     * Text that begins a property's name.
@@ -21,21 +22,9 @@ object PropertyNameQuery {
   }
   
   @scala.inline
-  implicit class PropertyNameQueryOps[Self <: PropertyNameQuery] (val x: Self) extends AnyVal {
+  implicit class PropertyNameQueryMutableBuilder[Self <: PropertyNameQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPropertyNameHint(value: PropertyNameHint): Self = this.set("PropertyNameHint", value.asInstanceOf[js.Any])
+    def setPropertyNameHint(value: PropertyNameHint): Self = StObject.set(x, "PropertyNameHint", value.asInstanceOf[js.Any])
   }
 }

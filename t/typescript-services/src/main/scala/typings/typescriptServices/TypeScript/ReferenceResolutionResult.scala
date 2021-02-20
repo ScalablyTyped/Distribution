@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReferenceResolutionResult extends js.Object {
+trait ReferenceResolutionResult extends StObject {
   
   var diagnostics: js.Array[Diagnostic] = js.native
   
@@ -26,33 +27,21 @@ object ReferenceResolutionResult {
   }
   
   @scala.inline
-  implicit class ReferenceResolutionResultOps[Self <: ReferenceResolutionResult] (val x: Self) extends AnyVal {
+  implicit class ReferenceResolutionResultMutableBuilder[Self <: ReferenceResolutionResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setResolvedFiles(value: js.Array[IResolvedFile]): Self = StObject.set(x, "resolvedFiles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDiagnosticsVarargs(value: Diagnostic*): Self = this.set("diagnostics", js.Array(value :_*))
+    def setResolvedFilesVarargs(value: IResolvedFile*): Self = StObject.set(x, "resolvedFiles", js.Array(value :_*))
     
     @scala.inline
-    def setDiagnostics(value: js.Array[Diagnostic]): Self = this.set("diagnostics", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResolvedFilesVarargs(value: IResolvedFile*): Self = this.set("resolvedFiles", js.Array(value :_*))
-    
-    @scala.inline
-    def setResolvedFiles(value: js.Array[IResolvedFile]): Self = this.set("resolvedFiles", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSeenNoDefaultLibTag(value: Boolean): Self = this.set("seenNoDefaultLibTag", value.asInstanceOf[js.Any])
+    def setSeenNoDefaultLibTag(value: Boolean): Self = StObject.set(x, "seenNoDefaultLibTag", value.asInstanceOf[js.Any])
   }
 }

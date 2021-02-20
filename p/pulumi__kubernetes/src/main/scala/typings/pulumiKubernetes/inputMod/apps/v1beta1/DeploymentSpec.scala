@@ -3,6 +3,7 @@ package typings.pulumiKubernetes.inputMod.apps.v1beta1
 import typings.pulumiKubernetes.inputMod.core.v1.PodTemplateSpec
 import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * DeploymentSpec is the specification of the desired behavior of the Deployment.
   */
 @js.native
-trait DeploymentSpec extends js.Object {
+trait DeploymentSpec extends StObject {
   
   /**
     * Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
@@ -67,69 +68,57 @@ object DeploymentSpec {
   }
   
   @scala.inline
-  implicit class DeploymentSpecOps[Self <: DeploymentSpec] (val x: Self) extends AnyVal {
+  implicit class DeploymentSpecMutableBuilder[Self <: DeploymentSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMinReadySeconds(value: Input[Double]): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMinReadySecondsUndefined: Self = StObject.set(x, "minReadySeconds", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPaused(value: Input[Boolean]): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: Input[PodTemplateSpec]): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
     @scala.inline
-    def setMinReadySeconds(value: Input[Double]): Self = this.set("minReadySeconds", value.asInstanceOf[js.Any])
+    def setProgressDeadlineSeconds(value: Input[Double]): Self = StObject.set(x, "progressDeadlineSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMinReadySeconds: Self = this.set("minReadySeconds", js.undefined)
+    def setProgressDeadlineSecondsUndefined: Self = StObject.set(x, "progressDeadlineSeconds", js.undefined)
     
     @scala.inline
-    def setPaused(value: Input[Boolean]): Self = this.set("paused", value.asInstanceOf[js.Any])
+    def setReplicas(value: Input[Double]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaused: Self = this.set("paused", js.undefined)
+    def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
     @scala.inline
-    def setProgressDeadlineSeconds(value: Input[Double]): Self = this.set("progressDeadlineSeconds", value.asInstanceOf[js.Any])
+    def setRevisionHistoryLimit(value: Input[Double]): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteProgressDeadlineSeconds: Self = this.set("progressDeadlineSeconds", js.undefined)
+    def setRevisionHistoryLimitUndefined: Self = StObject.set(x, "revisionHistoryLimit", js.undefined)
     
     @scala.inline
-    def setReplicas(value: Input[Double]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    def setRollbackTo(value: Input[RollbackConfig]): Self = StObject.set(x, "rollbackTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteReplicas: Self = this.set("replicas", js.undefined)
+    def setRollbackToUndefined: Self = StObject.set(x, "rollbackTo", js.undefined)
     
     @scala.inline
-    def setRevisionHistoryLimit(value: Input[Double]): Self = this.set("revisionHistoryLimit", value.asInstanceOf[js.Any])
+    def setSelector(value: Input[LabelSelector]): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRevisionHistoryLimit: Self = this.set("revisionHistoryLimit", js.undefined)
+    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def setRollbackTo(value: Input[RollbackConfig]): Self = this.set("rollbackTo", value.asInstanceOf[js.Any])
+    def setStrategy(value: Input[DeploymentStrategy]): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRollbackTo: Self = this.set("rollbackTo", js.undefined)
+    def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     
     @scala.inline
-    def setSelector(value: Input[LabelSelector]): Self = this.set("selector", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelector: Self = this.set("selector", js.undefined)
-    
-    @scala.inline
-    def setStrategy(value: Input[DeploymentStrategy]): Self = this.set("strategy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    def setTemplate(value: Input[PodTemplateSpec]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

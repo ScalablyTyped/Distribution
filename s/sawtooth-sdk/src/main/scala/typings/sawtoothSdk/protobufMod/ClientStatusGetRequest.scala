@@ -5,6 +5,7 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,16 +26,18 @@ class ClientStatusGetRequest () extends IClientStatusGetRequest {
   def toJSON(): StringDictionary[js.Any] = js.native
 }
 /* static members */
-@JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest")
-@js.native
-object ClientStatusGetRequest extends js.Object {
+object ClientStatusGetRequest {
   
   /**
     * Creates a new ClientStatusGetRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientStatusGetRequest instance
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.create")
+  @js.native
   def create(): ClientStatusGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.create")
+  @js.native
   def create(properties: IClientStatusGetRequest): ClientStatusGetRequest = js.native
   
   /**
@@ -45,9 +48,17 @@ object ClientStatusGetRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.decode")
+  @js.native
   def decode(reader: Reader): ClientStatusGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.decode")
+  @js.native
   def decode(reader: Reader, length: Double): ClientStatusGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.decode")
+  @js.native
   def decode(reader: Uint8Array): ClientStatusGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.decode")
+  @js.native
   def decode(reader: Uint8Array, length: Double): ClientStatusGetRequest = js.native
   
   /**
@@ -57,7 +68,11 @@ object ClientStatusGetRequest extends js.Object {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Reader): ClientStatusGetRequest = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.decodeDelimited")
+  @js.native
   def decodeDelimited(reader: Uint8Array): ClientStatusGetRequest = js.native
   
   /**
@@ -66,7 +81,11 @@ object ClientStatusGetRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.encode")
+  @js.native
   def encode(message: IClientStatusGetRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.encode")
+  @js.native
   def encode(message: IClientStatusGetRequest, writer: Writer): Writer = js.native
   
   /**
@@ -75,7 +94,11 @@ object ClientStatusGetRequest extends js.Object {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientStatusGetRequest): Writer = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.encodeDelimited")
+  @js.native
   def encodeDelimited(message: IClientStatusGetRequest, writer: Writer): Writer = js.native
   
   /**
@@ -83,6 +106,8 @@ object ClientStatusGetRequest extends js.Object {
     * @param object Plain object
     * @returns ClientStatusGetRequest
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.fromObject")
+  @js.native
   def fromObject(`object`: StringDictionary[js.Any]): ClientStatusGetRequest = js.native
   
   /**
@@ -91,7 +116,11 @@ object ClientStatusGetRequest extends js.Object {
     * @param [options] Conversion options
     * @returns Plain object
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.toObject")
+  @js.native
   def toObject(message: ClientStatusGetRequest): StringDictionary[js.Any] = js.native
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.toObject")
+  @js.native
   def toObject(message: ClientStatusGetRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
   
   /**
@@ -99,5 +128,7 @@ object ClientStatusGetRequest extends js.Object {
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
+  @JSImport("sawtooth-sdk/protobuf", "ClientStatusGetRequest.verify")
+  @js.native
   def verify(message: StringDictionary[js.Any]): String | Null = js.native
 }

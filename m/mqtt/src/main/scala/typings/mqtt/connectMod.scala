@@ -2,27 +2,14 @@ package typings.mqtt
 
 import typings.mqtt.clientMod.IStream
 import typings.mqtt.clientOptionsMod.IClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mqtt/types/lib/connect", JSImport.Namespace)
-@js.native
-object connectMod extends js.Object {
+object connectMod {
   
-  /**
-    * connect - connect to an MQTT broker.
-    *
-    * @param {String} [brokerUrl] - url of the broker, optional
-    * @param {Object} opts - see MqttClient#constructor
-    */
-  def connect(): typings.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: js.UndefOr[scala.Nothing], opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: js.Any, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
-  
+  @JSImport("mqtt/types/lib/connect", "MqttClient")
   @js.native
   class MqttClient protected ()
     extends typings.mqtt.clientMod.MqttClient {
@@ -31,4 +18,29 @@ object connectMod extends js.Object {
       options: IClientOptions
     ) = this()
   }
+  
+  /**
+    * connect - connect to an MQTT broker.
+    *
+    * @param {String} [brokerUrl] - url of the broker, optional
+    * @param {Object} opts - see MqttClient#constructor
+    */
+  @JSImport("mqtt/types/lib/connect", "connect")
+  @js.native
+  def connect(): typings.mqtt.clientMod.MqttClient = js.native
+  @JSImport("mqtt/types/lib/connect", "connect")
+  @js.native
+  def connect(brokerUrl: js.UndefOr[scala.Nothing], opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
+  @JSImport("mqtt/types/lib/connect", "connect")
+  @js.native
+  def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = js.native
+  @JSImport("mqtt/types/lib/connect", "connect")
+  @js.native
+  def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
+  @JSImport("mqtt/types/lib/connect", "connect")
+  @js.native
+  def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = js.native
+  @JSImport("mqtt/types/lib/connect", "connect")
+  @js.native
+  def connect(brokerUrl: js.Any, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
 }

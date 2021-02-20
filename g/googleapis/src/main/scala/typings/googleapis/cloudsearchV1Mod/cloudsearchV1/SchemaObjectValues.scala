@@ -1,5 +1,6 @@
 package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * List of object values.
   */
 @js.native
-trait SchemaObjectValues extends js.Object {
+trait SchemaObjectValues extends StObject {
   
   var values: js.UndefOr[js.Array[SchemaStructuredDataObject]] = js.native
 }
@@ -21,27 +22,15 @@ object SchemaObjectValues {
   }
   
   @scala.inline
-  implicit class SchemaObjectValuesOps[Self <: SchemaObjectValues] (val x: Self) extends AnyVal {
+  implicit class SchemaObjectValuesMutableBuilder[Self <: SchemaObjectValues] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setValues(value: js.Array[SchemaStructuredDataObject]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setValuesVarargs(value: SchemaStructuredDataObject*): Self = this.set("values", js.Array(value :_*))
-    
-    @scala.inline
-    def setValues(value: js.Array[SchemaStructuredDataObject]): Self = this.set("values", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValues: Self = this.set("values", js.undefined)
+    def setValuesVarargs(value: SchemaStructuredDataObject*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

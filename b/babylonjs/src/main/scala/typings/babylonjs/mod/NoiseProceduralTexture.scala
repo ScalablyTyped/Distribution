@@ -1,6 +1,7 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,9 +64,7 @@ class NoiseProceduralTexture protected ()
   ) = this()
 }
 /* static members */
-@JSImport("babylonjs", "NoiseProceduralTexture")
-@js.native
-object NoiseProceduralTexture extends js.Object {
+object NoiseProceduralTexture {
   
   /**
     * Creates a NoiseProceduralTexture from parsed noise procedural texture data
@@ -74,5 +73,7 @@ object NoiseProceduralTexture extends js.Object {
     * @param rootUrl defines the root URL containing noise procedural texture information
     * @returns a parsed NoiseProceduralTexture
     */
+  @JSImport("babylonjs", "NoiseProceduralTexture.Parse")
+  @js.native
   def Parse(parsedTexture: js.Any, scene: typings.babylonjs.sceneMod.Scene): typings.babylonjs.noiseProceduralTextureMod.NoiseProceduralTexture = js.native
 }

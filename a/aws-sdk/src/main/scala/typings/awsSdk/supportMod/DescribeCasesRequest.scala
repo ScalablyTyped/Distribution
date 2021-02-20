@@ -1,11 +1,12 @@
 package typings.awsSdk.supportMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCasesRequest extends js.Object {
+trait DescribeCasesRequest extends StObject {
   
   /**
     * The start date for a filtered date search on support case communications. Case communications are available for 12 months after creation.
@@ -61,75 +62,63 @@ object DescribeCasesRequest {
   }
   
   @scala.inline
-  implicit class DescribeCasesRequestOps[Self <: DescribeCasesRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeCasesRequestMutableBuilder[Self <: DescribeCasesRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterTime(value: AfterTime): Self = StObject.set(x, "afterTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfterTimeUndefined: Self = StObject.set(x, "afterTime", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBeforeTime(value: BeforeTime): Self = StObject.set(x, "beforeTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfterTime(value: AfterTime): Self = this.set("afterTime", value.asInstanceOf[js.Any])
+    def setBeforeTimeUndefined: Self = StObject.set(x, "beforeTime", js.undefined)
     
     @scala.inline
-    def deleteAfterTime: Self = this.set("afterTime", js.undefined)
+    def setCaseIdList(value: CaseIdList): Self = StObject.set(x, "caseIdList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeTime(value: BeforeTime): Self = this.set("beforeTime", value.asInstanceOf[js.Any])
+    def setCaseIdListUndefined: Self = StObject.set(x, "caseIdList", js.undefined)
     
     @scala.inline
-    def deleteBeforeTime: Self = this.set("beforeTime", js.undefined)
+    def setCaseIdListVarargs(value: CaseId*): Self = StObject.set(x, "caseIdList", js.Array(value :_*))
     
     @scala.inline
-    def setCaseIdListVarargs(value: CaseId*): Self = this.set("caseIdList", js.Array(value :_*))
+    def setDisplayId(value: DisplayId): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCaseIdList(value: CaseIdList): Self = this.set("caseIdList", value.asInstanceOf[js.Any])
+    def setDisplayIdUndefined: Self = StObject.set(x, "displayId", js.undefined)
     
     @scala.inline
-    def deleteCaseIdList: Self = this.set("caseIdList", js.undefined)
+    def setIncludeCommunications(value: IncludeCommunications): Self = StObject.set(x, "includeCommunications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayId(value: DisplayId): Self = this.set("displayId", value.asInstanceOf[js.Any])
+    def setIncludeCommunicationsUndefined: Self = StObject.set(x, "includeCommunications", js.undefined)
     
     @scala.inline
-    def deleteDisplayId: Self = this.set("displayId", js.undefined)
+    def setIncludeResolvedCases(value: IncludeResolvedCases): Self = StObject.set(x, "includeResolvedCases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeCommunications(value: IncludeCommunications): Self = this.set("includeCommunications", value.asInstanceOf[js.Any])
+    def setIncludeResolvedCasesUndefined: Self = StObject.set(x, "includeResolvedCases", js.undefined)
     
     @scala.inline
-    def deleteIncludeCommunications: Self = this.set("includeCommunications", js.undefined)
+    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeResolvedCases(value: IncludeResolvedCases): Self = this.set("includeResolvedCases", value.asInstanceOf[js.Any])
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def deleteIncludeResolvedCases: Self = this.set("includeResolvedCases", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

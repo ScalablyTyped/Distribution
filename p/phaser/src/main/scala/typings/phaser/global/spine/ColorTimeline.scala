@@ -1,5 +1,6 @@
 package typings.phaser.global.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,28 +11,79 @@ class ColorTimeline protected ()
   extends typings.phaser.spine.ColorTimeline {
   def this(frameCount: Double) = this()
 }
-/* static members */
-@JSGlobal("spine.ColorTimeline")
-@js.native
-object ColorTimeline extends js.Object {
+object ColorTimeline {
   
-  var A: Double = js.native
+  @JSGlobal("spine.ColorTimeline")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var B: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.A")
+  @js.native
+  def A: Double = js.native
+  @scala.inline
+  def A_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A")(x.asInstanceOf[js.Any])
   
-  var ENTRIES: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.B")
+  @js.native
+  def B: Double = js.native
+  @scala.inline
+  def B_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("B")(x.asInstanceOf[js.Any])
   
-  var G: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.ENTRIES")
+  @js.native
+  def ENTRIES: Double = js.native
+  @scala.inline
+  def ENTRIES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTRIES")(x.asInstanceOf[js.Any])
   
-  var PREV_A: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.G")
+  @js.native
+  def G: Double = js.native
+  @scala.inline
+  def G_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("G")(x.asInstanceOf[js.Any])
   
-  var PREV_B: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.PREV_A")
+  @js.native
+  def PREV_A: Double = js.native
+  @scala.inline
+  def PREV_A_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_A")(x.asInstanceOf[js.Any])
   
-  var PREV_G: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.PREV_B")
+  @js.native
+  def PREV_B: Double = js.native
+  @scala.inline
+  def PREV_B_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_B")(x.asInstanceOf[js.Any])
   
-  var PREV_R: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.PREV_G")
+  @js.native
+  def PREV_G: Double = js.native
+  @scala.inline
+  def PREV_G_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_G")(x.asInstanceOf[js.Any])
   
-  var PREV_TIME: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.PREV_R")
+  @js.native
+  def PREV_R: Double = js.native
+  @scala.inline
+  def PREV_R_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_R")(x.asInstanceOf[js.Any])
   
-  var R: Double = js.native
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.PREV_TIME")
+  @js.native
+  def PREV_TIME: Double = js.native
+  @scala.inline
+  def PREV_TIME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREV_TIME")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("spine.ColorTimeline.R")
+  @js.native
+  def R: Double = js.native
+  @scala.inline
+  def R_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("R")(x.asInstanceOf[js.Any])
 }

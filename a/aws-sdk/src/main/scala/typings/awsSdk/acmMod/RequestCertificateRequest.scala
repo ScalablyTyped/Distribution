@@ -1,11 +1,12 @@
 package typings.awsSdk.acmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestCertificateRequest extends js.Object {
+trait RequestCertificateRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the private certificate authority (CA) that will be used to issue the certificate. If you do not provide an ARN and you are trying to request a private certificate, ACM will attempt to issue a public certificate. For more information about private CAs, see the AWS Certificate Manager Private Certificate Authority (PCA) user guide. The ARN must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 
@@ -56,72 +57,60 @@ object RequestCertificateRequest {
   }
   
   @scala.inline
-  implicit class RequestCertificateRequestOps[Self <: RequestCertificateRequest] (val x: Self) extends AnyVal {
+  implicit class RequestCertificateRequestMutableBuilder[Self <: RequestCertificateRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    def setDomainValidationOptions(value: DomainValidationOptionList): Self = StObject.set(x, "DomainValidationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
     
     @scala.inline
-    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    def setDomainValidationOptionsVarargs(value: DomainValidationOption*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDomainValidationOptionsVarargs(value: DomainValidationOption*): Self = this.set("DomainValidationOptions", js.Array(value :_*))
+    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainValidationOptions(value: DomainValidationOptionList): Self = this.set("DomainValidationOptions", value.asInstanceOf[js.Any])
+    def setIdempotencyTokenUndefined: Self = StObject.set(x, "IdempotencyToken", js.undefined)
     
     @scala.inline
-    def deleteDomainValidationOptions: Self = this.set("DomainValidationOptions", js.undefined)
+    def setOptions(value: CertificateOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
     @scala.inline
-    def deleteIdempotencyToken: Self = this.set("IdempotencyToken", js.undefined)
+    def setSubjectAlternativeNames(value: DomainList): Self = StObject.set(x, "SubjectAlternativeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: CertificateOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "SubjectAlternativeNames", js.undefined)
     
     @scala.inline
-    def deleteOptions: Self = this.set("Options", js.undefined)
+    def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = StObject.set(x, "SubjectAlternativeNames", js.Array(value :_*))
     
     @scala.inline
-    def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = this.set("SubjectAlternativeNames", js.Array(value :_*))
+    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubjectAlternativeNames(value: DomainList): Self = this.set("SubjectAlternativeNames", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteSubjectAlternativeNames: Self = this.set("SubjectAlternativeNames", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setValidationMethod(value: ValidationMethod): Self = StObject.set(x, "ValidationMethod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setValidationMethod(value: ValidationMethod): Self = this.set("ValidationMethod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValidationMethod: Self = this.set("ValidationMethod", js.undefined)
+    def setValidationMethodUndefined: Self = StObject.set(x, "ValidationMethod", js.undefined)
   }
 }

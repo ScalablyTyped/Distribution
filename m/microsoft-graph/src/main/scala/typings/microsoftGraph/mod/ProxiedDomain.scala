@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ProxiedDomain extends js.Object {
+trait ProxiedDomain extends StObject {
   
   // The IP address or FQDN
   var ipAddressOrFQDN: js.UndefOr[String] = js.native
@@ -22,33 +23,21 @@ object ProxiedDomain {
   }
   
   @scala.inline
-  implicit class ProxiedDomainOps[Self <: ProxiedDomain] (val x: Self) extends AnyVal {
+  implicit class ProxiedDomainMutableBuilder[Self <: ProxiedDomain] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIpAddressOrFQDN(value: String): Self = StObject.set(x, "ipAddressOrFQDN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIpAddressOrFQDNUndefined: Self = StObject.set(x, "ipAddressOrFQDN", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProxy(value: NullableOption[String]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIpAddressOrFQDN(value: String): Self = this.set("ipAddressOrFQDN", value.asInstanceOf[js.Any])
+    def setProxyNull: Self = StObject.set(x, "proxy", null)
     
     @scala.inline
-    def deleteIpAddressOrFQDN: Self = this.set("ipAddressOrFQDN", js.undefined)
-    
-    @scala.inline
-    def setProxy(value: NullableOption[String]): Self = this.set("proxy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProxy: Self = this.set("proxy", js.undefined)
-    
-    @scala.inline
-    def setProxyNull: Self = this.set("proxy", null)
+    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceSpecificCredential extends js.Object {
+trait ServiceSpecificCredential extends StObject {
   
   /**
     * The date and time, in ISO 8601 date-time format, when the service-specific credential were created.
@@ -59,39 +60,27 @@ object ServiceSpecificCredential {
   }
   
   @scala.inline
-  implicit class ServiceSpecificCredentialOps[Self <: ServiceSpecificCredential] (val x: Self) extends AnyVal {
+  implicit class ServiceSpecificCredentialMutableBuilder[Self <: ServiceSpecificCredential] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setServiceName(value: serviceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setServicePassword(value: servicePassword): Self = StObject.set(x, "ServicePassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreateDate(value: dateType): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = StObject.set(x, "ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceName(value: serviceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    def setServiceUserName(value: serviceUserName): Self = StObject.set(x, "ServiceUserName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServicePassword(value: servicePassword): Self = this.set("ServicePassword", value.asInstanceOf[js.Any])
+    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceSpecificCredentialId(value: serviceSpecificCredentialId): Self = this.set("ServiceSpecificCredentialId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServiceUserName(value: serviceUserName): Self = this.set("ServiceUserName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatus(value: statusType): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

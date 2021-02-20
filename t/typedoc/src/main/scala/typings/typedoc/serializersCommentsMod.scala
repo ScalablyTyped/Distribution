@@ -1,30 +1,50 @@
 package typings.typedoc
 
+import typings.typedoc.serializerMod.Serializer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/serialization/serializers/comments", JSImport.Namespace)
-@js.native
-object serializersCommentsMod extends js.Object {
+object serializersCommentsMod {
   
+  @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentSerializer")
   @js.native
-  class CommentSerializer ()
-    extends typings.typedoc.serializersCommentsCommentMod.CommentSerializer
+  class CommentSerializer protected ()
+    extends typings.typedoc.serializersCommentsCommentMod.CommentSerializer {
+    def this(owner: Serializer) = this()
+  }
   /* static members */
-  @js.native
-  object CommentSerializer extends js.Object {
+  object CommentSerializer {
     
-    var PRIORITY: Double = js.native
+    @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentSerializer.PRIORITY")
+    @js.native
+    def PRIORITY: Double = js.native
+    @scala.inline
+    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentTagSerializer")
   @js.native
-  class CommentTagSerializer ()
-    extends typings.typedoc.commentTagMod.CommentTagSerializer
+  class CommentTagSerializer protected ()
+    extends typings.typedoc.commentTagMod.CommentTagSerializer {
+    def this(owner: Serializer) = this()
+  }
   /* static members */
-  @js.native
-  object CommentTagSerializer extends js.Object {
+  object CommentTagSerializer {
     
-    var PRIORITY: Double = js.native
+    @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentTagSerializer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentTagSerializer.PRIORITY")
+    @js.native
+    def PRIORITY: Double = js.native
+    @scala.inline
+    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
 }

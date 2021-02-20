@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,51 +45,39 @@ object CompositionAttester {
   }
   
   @scala.inline
-  implicit class CompositionAttesterOps[Self <: CompositionAttester] (val x: Self) extends AnyVal {
+  implicit class CompositionAttesterMutableBuilder[Self <: CompositionAttester] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMode(value: js.Array[code]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setModeVarargs(value: code*): Self = StObject.set(x, "mode", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setParty(value: Reference): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setModeVarargs(value: code*): Self = this.set("mode", js.Array(value :_*))
+    def setPartyUndefined: Self = StObject.set(x, "party", js.undefined)
     
     @scala.inline
-    def setMode(value: js.Array[code]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setTime(value: dateTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_modeVarargs(value: Element*): Self = this.set("_mode", js.Array(value :_*))
+    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
     @scala.inline
-    def set_mode(value: js.Array[Element]): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    def set_mode(value: js.Array[Element]): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def delete_mode: Self = this.set("_mode", js.undefined)
+    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
     @scala.inline
-    def set_time(value: Element): Self = this.set("_time", value.asInstanceOf[js.Any])
+    def set_modeVarargs(value: Element*): Self = StObject.set(x, "_mode", js.Array(value :_*))
     
     @scala.inline
-    def delete_time: Self = this.set("_time", js.undefined)
+    def set_time(value: Element): Self = StObject.set(x, "_time", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParty(value: Reference): Self = this.set("party", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteParty: Self = this.set("party", js.undefined)
-    
-    @scala.inline
-    def setTime(value: dateTime): Self = this.set("time", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTime: Self = this.set("time", js.undefined)
+    def set_timeUndefined: Self = StObject.set(x, "_time", js.undefined)
   }
 }

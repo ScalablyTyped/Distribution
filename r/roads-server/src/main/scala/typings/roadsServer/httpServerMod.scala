@@ -6,16 +6,32 @@ import typings.node.httpsMod.ServerOptions
 import typings.roads.mod.Response
 import typings.roads.mod.Road
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("roads-server/types/httpServer", JSImport.Namespace)
-@js.native
-object httpServerMod extends js.Object {
+object httpServerMod {
+  
+  @JSImport("roads-server/types/httpServer", JSImport.Default)
+  @js.native
+  class default protected () extends Server {
+    /**
+      * Constructs a new Server object that helps create Roads servers.
+      *
+      * @todo  tests
+      * @param {Roads} road The Road that handles all the routes
+      * @param {Function} error_handler An overwrite to the standard error handler. Accepts a single parameter (the error) and should return a Roads.Response object.
+      * @param {Object} httpsOptions HTTPS servers require additional data. You can pass all of those parameters here. Valid values can be found in the node docs: https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
+      */
+    def this(road: Road) = this()
+    def this(road: Road, error_handler: js.Function) = this()
+    def this(road: Road, error_handler: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions) = this()
+    def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
+  }
   
   @js.native
-  trait Server extends js.Object {
+  trait Server extends StObject {
     
     /**
       * If set, this holds the custom error handler defined by the user in the constructor
@@ -76,21 +92,5 @@ object httpServerMod extends js.Object {
       * @type HTTPServer
       */
     var server: typings.node.httpMod.Server = js.native
-  }
-  
-  @js.native
-  class default protected () extends Server {
-    /**
-      * Constructs a new Server object that helps create Roads servers.
-      *
-      * @todo  tests
-      * @param {Roads} road The Road that handles all the routes
-      * @param {Function} error_handler An overwrite to the standard error handler. Accepts a single parameter (the error) and should return a Roads.Response object.
-      * @param {Object} httpsOptions HTTPS servers require additional data. You can pass all of those parameters here. Valid values can be found in the node docs: https://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
-      */
-    def this(road: Road) = this()
-    def this(road: Road, error_handler: js.Function) = this()
-    def this(road: Road, error_handler: js.UndefOr[scala.Nothing], httpsOptions: ServerOptions) = this()
-    def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
   }
 }

@@ -2,6 +2,7 @@ package typings.guacamoleClient.mod
 
 import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.std.MimeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class VideoPlayer ()
   extends typings.guacamoleClient.videoPlayerMod.VideoPlayer
 /* static members */
-@JSImport("guacamole-client", "VideoPlayer")
-@js.native
-object VideoPlayer extends js.Object {
+object VideoPlayer {
   
   /**
     * Returns an instance of Guacamole.VideoPlayer providing support for the given
@@ -29,6 +28,8 @@ object VideoPlayer extends js.Object {
     * reading from the given stream, or null if support for the given mimetype
     * is absent.
     */
+  @JSImport("guacamole-client", "VideoPlayer.getInstance")
+  @js.native
   def getInstance(
     stream: typings.guacamoleClient.inputStreamMod.InputStream,
     layer: typings.guacamoleClient.visibleLayerMod.VisibleLayer,
@@ -44,6 +45,8 @@ object VideoPlayer extends js.Object {
     * @returns A list of all mimetypes supported by any built-in Guacamole.VideoPlayer,
     * excluding any parameters.
     */
+  @JSImport("guacamole-client", "VideoPlayer.getSupportedTypes")
+  @js.native
   def getSupportedTypes(): js.Array[Mimetype] = js.native
   
   /**
@@ -53,5 +56,7 @@ object VideoPlayer extends js.Object {
     * @param mimetype The mimetype to check.
     * @returns true if the given mimetype is supported by any built-in Guacamole.VideoPlayer, false otherwise.
     */
+  @JSImport("guacamole-client", "VideoPlayer.isSupportedType")
+  @js.native
   def isSupportedType(mimetype: MimeType): Boolean = js.native
 }

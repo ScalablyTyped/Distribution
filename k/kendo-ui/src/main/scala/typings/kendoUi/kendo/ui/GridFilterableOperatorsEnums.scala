@@ -1,11 +1,12 @@
 package typings.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridFilterableOperatorsEnums extends js.Object {
+trait GridFilterableOperatorsEnums extends StObject {
   
   @JSName("eq")
   var eq_FGridFilterableOperatorsEnums: js.UndefOr[String] = js.native
@@ -25,42 +26,30 @@ object GridFilterableOperatorsEnums {
   }
   
   @scala.inline
-  implicit class GridFilterableOperatorsEnumsOps[Self <: GridFilterableOperatorsEnums] (val x: Self) extends AnyVal {
+  implicit class GridFilterableOperatorsEnumsMutableBuilder[Self <: GridFilterableOperatorsEnums] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsnotnull(value: String): Self = StObject.set(x, "isnotnull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEq(value: String): Self = this.set("eq", value.asInstanceOf[js.Any])
+    def setIsnotnullUndefined: Self = StObject.set(x, "isnotnull", js.undefined)
     
     @scala.inline
-    def deleteEq: Self = this.set("eq", js.undefined)
+    def setIsnull(value: String): Self = StObject.set(x, "isnull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsnotnull(value: String): Self = this.set("isnotnull", value.asInstanceOf[js.Any])
+    def setIsnullUndefined: Self = StObject.set(x, "isnull", js.undefined)
     
     @scala.inline
-    def deleteIsnotnull: Self = this.set("isnotnull", js.undefined)
+    def setNeq(value: String): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsnull(value: String): Self = this.set("isnull", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsnull: Self = this.set("isnull", js.undefined)
-    
-    @scala.inline
-    def setNeq(value: String): Self = this.set("neq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNeq: Self = this.set("neq", js.undefined)
+    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
   }
 }

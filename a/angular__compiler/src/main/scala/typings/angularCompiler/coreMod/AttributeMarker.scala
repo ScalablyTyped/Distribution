@@ -7,6 +7,7 @@ import typings.angularCompiler.angularCompilerNumbers.`3`
 import typings.angularCompiler.angularCompilerNumbers.`4`
 import typings.angularCompiler.angularCompilerNumbers.`5`
 import typings.angularCompiler.angularCompilerNumbers.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.angularCompiler.angularCompilerNumbers.`5`
   - typings.angularCompiler.angularCompilerNumbers.`6`
 */
-trait AttributeMarker extends js.Object
+trait AttributeMarker extends StObject
 object AttributeMarker {
   
   /**

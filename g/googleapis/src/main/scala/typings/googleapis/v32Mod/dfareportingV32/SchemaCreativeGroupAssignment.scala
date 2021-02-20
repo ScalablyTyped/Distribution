@@ -1,5 +1,6 @@
 package typings.googleapis.v32Mod.dfareportingV32
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creative Group Assignment.
   */
 @js.native
-trait SchemaCreativeGroupAssignment extends js.Object {
+trait SchemaCreativeGroupAssignment extends StObject {
   
   /**
     * ID of the creative group to be assigned.
@@ -29,30 +30,18 @@ object SchemaCreativeGroupAssignment {
   }
   
   @scala.inline
-  implicit class SchemaCreativeGroupAssignmentOps[Self <: SchemaCreativeGroupAssignment] (val x: Self) extends AnyVal {
+  implicit class SchemaCreativeGroupAssignmentMutableBuilder[Self <: SchemaCreativeGroupAssignment] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreativeGroupId(value: String): Self = StObject.set(x, "creativeGroupId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreativeGroupIdUndefined: Self = StObject.set(x, "creativeGroupId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreativeGroupNumber(value: String): Self = StObject.set(x, "creativeGroupNumber", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeGroupId(value: String): Self = this.set("creativeGroupId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreativeGroupId: Self = this.set("creativeGroupId", js.undefined)
-    
-    @scala.inline
-    def setCreativeGroupNumber(value: String): Self = this.set("creativeGroupNumber", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCreativeGroupNumber: Self = this.set("creativeGroupNumber", js.undefined)
+    def setCreativeGroupNumberUndefined: Self = StObject.set(x, "creativeGroupNumber", js.undefined)
   }
 }

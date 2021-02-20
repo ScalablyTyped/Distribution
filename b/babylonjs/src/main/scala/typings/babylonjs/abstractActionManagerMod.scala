@@ -5,14 +5,14 @@ import typings.babylonjs.actionEventMod.IActionEvent
 import typings.babylonjs.actionMod.IAction
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Actions/abstractActionManager", JSImport.Namespace)
-@js.native
-object abstractActionManagerMod extends js.Object {
+object abstractActionManagerMod {
   
+  @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager")
   @js.native
   abstract class AbstractActionManager () extends IDisposable {
     
@@ -92,27 +92,26 @@ object abstractActionManagerMod extends js.Object {
     def unregisterAction(action: IAction): Boolean = js.native
   }
   /* static members */
-  @js.native
-  object AbstractActionManager extends js.Object {
+  object AbstractActionManager {
     
-    /**
-      * Does exist one action manager with at least one pick trigger
-      **/
-    def HasPickTriggers: Boolean = js.native
+    @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Does exist one action manager that handles actions of a given trigger
       * @param trigger defines the trigger to be tested
       * @return a boolean indicating whether the trigger is handeled by at least one action manager
       **/
+    @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager.HasSpecificTrigger")
+    @js.native
     def HasSpecificTrigger(trigger: Double): Boolean = js.native
     
-    /**
-      * Does exist one action manager with at least one trigger
-      **/
-    def HasTriggers: Boolean = js.native
-    
     /** Gets the list of active triggers */
-    var Triggers: StringDictionary[Double] = js.native
+    @JSImport("babylonjs/Actions/abstractActionManager", "AbstractActionManager.Triggers")
+    @js.native
+    def Triggers: StringDictionary[Double] = js.native
+    @scala.inline
+    def Triggers_=(x: StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Triggers")(x.asInstanceOf[js.Any])
   }
 }

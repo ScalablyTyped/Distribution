@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IObjOrFileVer extends js.Object {
+trait IObjOrFileVer extends StObject {
   
   def Clone(): IObjOrFileVer = js.native
   
@@ -24,30 +25,18 @@ object IObjOrFileVer {
   }
   
   @scala.inline
-  implicit class IObjOrFileVerOps[Self <: IObjOrFileVer] (val x: Self) extends AnyVal {
+  implicit class IObjOrFileVerMutableBuilder[Self <: IObjOrFileVer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClone(value: () => IObjOrFileVer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFileVer(value: IFileVer): Self = StObject.set(x, "FileVer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsFile(value: () => Boolean): Self = StObject.set(x, "IsFile", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: () => IObjOrFileVer): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setFileVer(value: IFileVer): Self = this.set("FileVer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsFile(value: () => Boolean): Self = this.set("IsFile", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = this.set("ObjVer", value.asInstanceOf[js.Any])
+    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
   }
 }

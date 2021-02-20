@@ -1,31 +1,32 @@
 package typings.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FlashDocument extends js.Object {
+trait FlashDocument extends StObject {
   
-   // Posts a XMLUI dialog box.
+  // Posts a XMLUI dialog box.
   var accName: String = js.native
   
   // "integer", "integerArray", "double", "doubleArray", "string", and "byteArray"
   def addDataToDocument(name: String, `type`: String, data: js.Any): Unit = js.native
   
-   // Stores specified data with a document.
+  // Stores specified data with a document.
   def addDataToSelection(name: String, `type`: String, data: js.Any): Unit = js.native
   
-   // Stores specified data with the selected object(s).
+  // Stores specified data with the selected object(s).
   def addFilter(filterName: String): Unit = js.native
   
-   // Applies a filter to the selected objects.
+  // Applies a filter to the selected objects.
   def addItem(position: FlashPoint, item: FlashItem): Boolean = js.native
   
-   // Adds an item from any open document or library
+  // Adds an item from any open document or library
   def addNewLine(startPoint: FlashPoint, endpoint: FlashPoint): Unit = js.native
   
-   // Adds a new path between two points.
+  // Adds a new path between two points.
   def addNewOval(boundingRectangle: FlashRectangle): Unit = js.native
   def addNewOval(
     boundingRectangle: FlashRectangle,
@@ -35,7 +36,7 @@ trait FlashDocument extends js.Object {
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Boolean): Unit = js.native
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Boolean, bSuppressStroke: Boolean): Unit = js.native
   
-   // Adds a new Oval object in the specified
+  // Adds a new Oval object in the specified
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle): Unit = js.native
   def addNewPrimitiveOval(
     boundingRectangle: FlashRectangle,
@@ -45,7 +46,7 @@ trait FlashDocument extends js.Object {
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Boolean): Unit = js.native
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Boolean, bSuppressStroke: Boolean): Unit = js.native
   
-   // Adds a new rectangle or rounded rectangle,
+  // Adds a new rectangle or rounded rectangle,
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
   def addNewPrimitiveRectangle(
     boundingRectangle: FlashRectangle,
@@ -61,7 +62,7 @@ trait FlashDocument extends js.Object {
     bSuppressStroke: Boolean
   ): js.Any = js.native
   
-   // Adds a new rectangle or rounded rectangle,
+  // Adds a new rectangle or rounded rectangle,
   def addNewPublishProfile(): Unit = js.native
   def addNewPublishProfile(profileName: String): Unit = js.native
   
@@ -82,43 +83,43 @@ trait FlashDocument extends js.Object {
   
   def addNewScene(name: String): Boolean = js.native
   
-   // Adds a new scene (Timeline object) as the next
+  // Adds a new scene (Timeline object) as the next
   def addNewText(boundingRectangle: FlashRectangle): Unit = js.native
   def addNewText(boundingRectangle: FlashRectangle, text: String): Unit = js.native
   
-   // Inserts a new empty text field.
+  // Inserts a new empty text field.
   def align(alignmode: String): js.Any = js.native
   def align(alignmode: String, bUseDocumentBounds: Boolean): js.Any = js.native
   
-   // Aligns the selection.
+  // Aligns the selection.
   def allowScreens(): Unit = js.native
   
-   // Use this method before using the
+  // Use this method before using the
   /** Arranges the selection on the Stage. "back", "backward", "forward", and "front" */
   def arrange(arrangeMode: String): Unit = js.native
   
-   // A string that is equivalent to the Name field in the
+  // A string that is equivalent to the Name field in the
   var as3AutoDeclare: Boolean = js.native
   
-   // A Boolean value that describes whether the
+  // A Boolean value that describes whether the
   var as3Dialect: String = js.native
   
-   // A string that describes the ActionScript 3.0
+  // A string that describes the ActionScript 3.0
   var as3ExportFrame: Double = js.native
   
-   // An integer that specifies in which frame to export
+  // An integer that specifies in which frame to export
   var as3StrictMode: Boolean = js.native
   
-   // A Boolean value that specifies whether the
+  // A Boolean value that specifies whether the
   var as3WarningsMode: Boolean = js.native
   
-   // A Boolean value that specifies whether the
+  // A Boolean value that specifies whether the
   var asVersion: Double = js.native
   
-   // An integer that specifies which version of
+  // An integer that specifies which version of
   var autoLabel: Boolean = js.native
   
-   // A Boolean value that is equivalent to the Auto
+  // A Boolean value that is equivalent to the Auto
   var backgroundColor: js.Any = js.native
   
   /** Performs a break-apart operation on the current */
@@ -164,10 +165,10 @@ trait FlashDocument extends js.Object {
   /** Uses the top selected drawing object to crop all */
   def crop(): Unit = js.native
   
-   // A string, hexadecimal value, or integer that
+  // A string, hexadecimal value, or integer that
   var currentPublishProfile: String = js.native
   
-   // A string that specifies the name of the active
+  // A string that specifies the name of the active
   var currentTimeline: FlashTimeline = js.native
   
   /** Method; Invokes the Debug Movie command on the document. */
@@ -186,7 +187,7 @@ trait FlashDocument extends js.Object {
   /** Deletes the current selection on the Stage. */
   def deleteSelection(): Unit = js.native
   
-   // An integer that specifies the index of the active
+  // An integer that specifies the index of the active
   var description: String = js.native
   
   /** Disables all filters on the selected objects. */
@@ -204,6 +205,9 @@ trait FlashDocument extends js.Object {
   
   /** Performs a distribute-to-layers operation on the */
   def distributeToLayers(): Unit = js.native
+  
+  // A string that is equivalent to the Description field in
+  var docClass: js.Any = js.native
   
   /** Checks the document for persistent data with the */
   def documentHasData(name: String): Boolean = js.native
@@ -251,10 +255,10 @@ trait FlashDocument extends js.Object {
   def exportSWF(fileURI: String): Unit = js.native
   def exportSWF(fileURI: String, bCurrentSettings: Boolean): Unit = js.native
   
-   // A string that is equivalent to the Description field in
+  // Specifies the top-level ActionScript 3.0 class
   var forceSimple: Boolean = js.native
   
-   // A Boolean value that specifies whether the children
+  // A Boolean value that specifies whether the children
   var frameRate: Double = js.native
   
   /** Identical to retrieving the value of the To Stage */
@@ -313,10 +317,10 @@ trait FlashDocument extends js.Object {
   /** Converts the current selection to a group.*/
   def group(): Unit = js.native
   
-   // A float value that specifies the number of frames
+  // A float value that specifies the number of frames
   var height: Double = js.native
   
-   // An integer that specifies the height of the
+  // An integer that specifies the height of the
   var id: Double = js.native
   
   /** Imports a file into the document. */
@@ -335,10 +339,10 @@ trait FlashDocument extends js.Object {
   /** creates an intersection drawing object from all selected drawing objects. This method returns false if there are no drawing objects selected, or if any of the selected items are not drawing objects. */
   def intersect(): Boolean = js.native
   
-   // A unique integer (assigned automatically) that
+  // A unique integer (assigned automatically) that
   var library: FlashLibrary = js.native
   
-   // Read-only; the library object for a document.
+  // Read-only; the library object for a document.
   var livePreview: Boolean = js.native
   
   /** loads a cue point XML file. The format and DTD of the XML file is the same as the one imported and exported by the Cue Points Property inspector. The return value is the same as the string serialized in the Cue Point property of the object containing the instance of an FLVPlayback Component. */
@@ -360,22 +364,22 @@ trait FlashDocument extends js.Object {
   /** Moves selected objects by a specified distance. */
   def moveSelectionBy(distanceToMove: FlashPoint): Unit = js.native
   
-   // A Boolean value that specifies if Live Preview is
+  // A Boolean value that specifies if Live Preview is
   var name: String = js.native
   
   /** Optimizes smoothing for the current selection, */
   def optimizeCurves(smoothing: Double, bUseMultiplePasses: Boolean): Unit = js.native
   
-   // Read-only; a string that represents the name of a
+  // Read-only; a string that represents the name of a
   var path: String = js.native
   
-   // Read-only; a string that represents the path of the
+  // Read-only; a string that represents the path of the
   var pathURI: String = js.native
   
   /** Publishes the document according to the active */
   def publish(): Unit = js.native
   
-   // Read-only property; a string that represents the path of the document, expressed as a file:/// URI. If the document has never been saved, this property is undefined.
+  // Read-only property; a string that represents the path of the document, expressed as a file:/// URI. If the document has never been saved, this property is undefined.
   var publishProfiles: js.Array[String] = js.native
   
   /** uses the top selected drawing object to punch through all selected drawing objects underneath it. This method returns false if there are no drawing objects selected or if any of the selected items are not drawing objects.  */
@@ -443,7 +447,7 @@ trait FlashDocument extends js.Object {
   /** Deselects any selected items. */
   def selectNone(): Unit = js.native
   
-   // Read-only; an array of the publish profile names for
+  // Read-only; an array of the publish profile names for
   /** Read-only; the current ScreenOutline object for the */
   // Not available in CS5
   //screenOutline: FlashScreenOutline;
@@ -594,13 +598,13 @@ trait FlashDocument extends js.Object {
   
   def transformSelection(a: Double, b: Double, c: Double, d: Double): Unit = js.native
   
-   // Performs a general transformation on the current
+  // Performs a general transformation on the current
   def unGroup(): Unit = js.native
   
-   // Ungroups the current selection.
+  // Ungroups the current selection.
   def union(): Unit = js.native
   
-   // Combines all selected shapes into a drawing
+  // Combines all selected shapes into a drawing
   def unlockAllElements(): Unit = js.native
   
   /** Read-only; a Matrix object. */
@@ -609,7 +613,7 @@ trait FlashDocument extends js.Object {
   /** An integer that specifies the width of the document */
   var width: Double = js.native
   
-   // Unlocks all locked elements on the currently
+  // Unlocks all locked elements on the currently
   def xmlPanel(fileURI: String): js.Any = js.native
   
   /** Specifies the zoom percent of the Stage at author */

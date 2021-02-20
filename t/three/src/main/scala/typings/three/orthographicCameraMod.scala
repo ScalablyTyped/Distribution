@@ -3,14 +3,14 @@ package typings.three
 import typings.three.anon.Enabled
 import typings.three.cameraMod.Camera
 import typings.three.threeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/cameras/OrthographicCamera", JSImport.Namespace)
-@js.native
-object orthographicCameraMod extends js.Object {
+object orthographicCameraMod {
   
+  @JSImport("three/src/cameras/OrthographicCamera", "OrthographicCamera")
   @js.native
   class OrthographicCamera protected () extends Camera {
     /**

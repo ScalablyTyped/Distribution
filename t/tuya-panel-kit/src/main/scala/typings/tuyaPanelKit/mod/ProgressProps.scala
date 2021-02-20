@@ -3,6 +3,7 @@ package typings.tuyaPanelKit.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import typings.tuyaPanelKit.themeMod.StopsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,117 +52,105 @@ object ProgressProps {
   }
   
   @scala.inline
-  implicit class ProgressPropsOps[Self <: ProgressProps] (val x: Self) extends AnyVal {
+  implicit class ProgressPropsMutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAndDegree(value: Double): Self = StObject.set(x, "andDegree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAndDegreeUndefined: Self = StObject.set(x, "andDegree", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAndDegree(value: Double): Self = this.set("andDegree", value.asInstanceOf[js.Any])
+    def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
     
     @scala.inline
-    def deleteAndDegree: Self = this.set("andDegree", js.undefined)
+    def setBackStrokeOpacity(value: Double): Self = StObject.set(x, "backStrokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackColor(value: String): Self = this.set("backColor", value.asInstanceOf[js.Any])
+    def setBackStrokeOpacityUndefined: Self = StObject.set(x, "backStrokeOpacity", js.undefined)
     
     @scala.inline
-    def deleteBackColor: Self = this.set("backColor", js.undefined)
+    def setForeColor(value: String | js.Array[StopsProps] | StringDictionary[String]): Self = StObject.set(x, "foreColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackStrokeOpacity(value: Double): Self = this.set("backStrokeOpacity", value.asInstanceOf[js.Any])
+    def setForeColorUndefined: Self = StObject.set(x, "foreColor", js.undefined)
     
     @scala.inline
-    def deleteBackStrokeOpacity: Self = this.set("backStrokeOpacity", js.undefined)
+    def setForeColorVarargs(value: StopsProps*): Self = StObject.set(x, "foreColor", js.Array(value :_*))
     
     @scala.inline
-    def setForeColorVarargs(value: StopsProps*): Self = this.set("foreColor", js.Array(value :_*))
+    def setForeStrokeOpacity(value: Double): Self = StObject.set(x, "foreStrokeOpacity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeColor(value: String | js.Array[StopsProps] | StringDictionary[String]): Self = this.set("foreColor", value.asInstanceOf[js.Any])
+    def setForeStrokeOpacityUndefined: Self = StObject.set(x, "foreStrokeOpacity", js.undefined)
     
     @scala.inline
-    def deleteForeColor: Self = this.set("foreColor", js.undefined)
+    def setGradientId(value: String): Self = StObject.set(x, "gradientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setForeStrokeOpacity(value: Double): Self = this.set("foreStrokeOpacity", value.asInstanceOf[js.Any])
+    def setGradientIdUndefined: Self = StObject.set(x, "gradientId", js.undefined)
     
     @scala.inline
-    def deleteForeStrokeOpacity: Self = this.set("foreStrokeOpacity", js.undefined)
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGradientId(value: String): Self = this.set("gradientId", value.asInstanceOf[js.Any])
+    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def deleteGradientId: Self = this.set("gradientId", js.undefined)
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     @scala.inline
-    def deleteMax: Self = this.set("max", js.undefined)
+    def setRenderCenterView(value: ReactNode): Self = StObject.set(x, "renderCenterView", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setRenderCenterViewUndefined: Self = StObject.set(x, "renderCenterView", js.undefined)
     
     @scala.inline
-    def deleteMin: Self = this.set("min", js.undefined)
+    def setScaleHeight(value: Double): Self = StObject.set(x, "scaleHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderCenterView(value: ReactNode): Self = this.set("renderCenterView", value.asInstanceOf[js.Any])
+    def setScaleHeightUndefined: Self = StObject.set(x, "scaleHeight", js.undefined)
     
     @scala.inline
-    def deleteRenderCenterView: Self = this.set("renderCenterView", js.undefined)
+    def setStartDegree(value: Double): Self = StObject.set(x, "startDegree", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScaleHeight(value: Double): Self = this.set("scaleHeight", value.asInstanceOf[js.Any])
+    def setStartDegreeUndefined: Self = StObject.set(x, "startDegree", js.undefined)
     
     @scala.inline
-    def deleteScaleHeight: Self = this.set("scaleHeight", js.undefined)
+    def setStepValue(value: Double): Self = StObject.set(x, "stepValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartDegree(value: Double): Self = this.set("startDegree", value.asInstanceOf[js.Any])
+    def setStepValueUndefined: Self = StObject.set(x, "stepValue", js.undefined)
     
     @scala.inline
-    def deleteStartDegree: Self = this.set("startDegree", js.undefined)
+    def setX1(value: String): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStepValue(value: Double): Self = this.set("stepValue", value.asInstanceOf[js.Any])
+    def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
     
     @scala.inline
-    def deleteStepValue: Self = this.set("stepValue", js.undefined)
+    def setX2(value: String): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX1(value: String): Self = this.set("x1", value.asInstanceOf[js.Any])
+    def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
     
     @scala.inline
-    def deleteX1: Self = this.set("x1", js.undefined)
+    def setY1(value: String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX2(value: String): Self = this.set("x2", value.asInstanceOf[js.Any])
+    def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     
     @scala.inline
-    def deleteX2: Self = this.set("x2", js.undefined)
+    def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setY1(value: String): Self = this.set("y1", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY1: Self = this.set("y1", js.undefined)
-    
-    @scala.inline
-    def setY2(value: String): Self = this.set("y2", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY2: Self = this.set("y2", js.undefined)
+    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

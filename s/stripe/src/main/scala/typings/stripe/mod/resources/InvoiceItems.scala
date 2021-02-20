@@ -5,18 +5,21 @@ import typings.stripe.mod.IDeleteConfirmation
 import typings.stripe.mod.IList
 import typings.stripe.mod.IListPromise
 import typings.stripe.mod.IResponseFn
+import typings.stripe.mod.Stripe
 import typings.stripe.mod.StripeResource
 import typings.stripe.mod.invoiceItems.InvoiceItem
 import typings.stripe.mod.invoiceItems.InvoiceItemCreationOptions
 import typings.stripe.mod.invoiceItems.InvoiceItemListOptions
 import typings.stripe.mod.invoiceItems.InvoiceItemUpdateOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.InvoiceItems")
 @js.native
-class InvoiceItems () extends StripeResource {
+class InvoiceItems protected () extends StripeResource {
+  def this(stripe: Stripe, urlData: js.Any) = this()
   
   def create(data: InvoiceItemCreationOptions): js.Promise[InvoiceItem] = js.native
   /**

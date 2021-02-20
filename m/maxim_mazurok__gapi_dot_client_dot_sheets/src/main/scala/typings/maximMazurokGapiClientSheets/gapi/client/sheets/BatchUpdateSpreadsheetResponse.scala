@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchUpdateSpreadsheetResponse extends js.Object {
+trait BatchUpdateSpreadsheetResponse extends StObject {
   
   /** The reply of the updates. This maps 1:1 with the updates, although replies to some requests may be empty. */
   var replies: js.UndefOr[js.Array[Response]] = js.native
@@ -25,39 +26,27 @@ object BatchUpdateSpreadsheetResponse {
   }
   
   @scala.inline
-  implicit class BatchUpdateSpreadsheetResponseOps[Self <: BatchUpdateSpreadsheetResponse] (val x: Self) extends AnyVal {
+  implicit class BatchUpdateSpreadsheetResponseMutableBuilder[Self <: BatchUpdateSpreadsheetResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setReplies(value: js.Array[Response]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
     @scala.inline
-    def setRepliesVarargs(value: Response*): Self = this.set("replies", js.Array(value :_*))
+    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReplies(value: js.Array[Response]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
     @scala.inline
-    def deleteReplies: Self = this.set("replies", js.undefined)
+    def setUpdatedSpreadsheet(value: Spreadsheet): Self = StObject.set(x, "updatedSpreadsheet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
-    
-    @scala.inline
-    def setUpdatedSpreadsheet(value: Spreadsheet): Self = this.set("updatedSpreadsheet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpdatedSpreadsheet: Self = this.set("updatedSpreadsheet", js.undefined)
+    def setUpdatedSpreadsheetUndefined: Self = StObject.set(x, "updatedSpreadsheet", js.undefined)
   }
 }

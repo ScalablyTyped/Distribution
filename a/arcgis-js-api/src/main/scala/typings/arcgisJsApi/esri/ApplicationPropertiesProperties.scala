@@ -1,11 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationPropertiesProperties extends js.Object {
+trait ApplicationPropertiesProperties extends StObject {
   
   /**
     * View-specific properties of application and UI elements for the web map.
@@ -23,24 +24,12 @@ object ApplicationPropertiesProperties {
   }
   
   @scala.inline
-  implicit class ApplicationPropertiesPropertiesOps[Self <: ApplicationPropertiesProperties] (val x: Self) extends AnyVal {
+  implicit class ApplicationPropertiesPropertiesMutableBuilder[Self <: ApplicationPropertiesProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setViewing(value: ViewingProperties): Self = StObject.set(x, "viewing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setViewing(value: ViewingProperties): Self = this.set("viewing", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteViewing: Self = this.set("viewing", js.undefined)
+    def setViewingUndefined: Self = StObject.set(x, "viewing", js.undefined)
   }
 }

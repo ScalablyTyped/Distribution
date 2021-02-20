@@ -1,26 +1,24 @@
 package typings.vsoNodeApi.formInputInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InputFilterOperator extends js.Object
+sealed trait InputFilterOperator extends StObject
 @JSImport("vso-node-api/interfaces/common/FormInputInterfaces", "InputFilterOperator")
 @js.native
-object InputFilterOperator extends js.Object {
+object InputFilterOperator extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[InputFilterOperator with Double] = js.native
   
   @js.native
   sealed trait Equals extends InputFilterOperator
-  /* 0 */ @js.native
-  object Equals extends TopLevel[Equals with Double]
+  /* 0 */ val Equals: typings.vsoNodeApi.formInputInterfacesMod.InputFilterOperator.Equals with Double = js.native
   
   @js.native
   sealed trait NotEquals extends InputFilterOperator
-  /* 1 */ @js.native
-  object NotEquals extends TopLevel[NotEquals with Double]
+  /* 1 */ val NotEquals: typings.vsoNodeApi.formInputInterfacesMod.InputFilterOperator.NotEquals with Double = js.native
 }

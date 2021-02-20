@@ -1,15 +1,12 @@
 package typings.typeorm
 
 import typings.typeorm.commonObjectTypeMod.ObjectType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/common/EntityTarget", JSImport.Namespace)
-@js.native
-object commonEntityTargetMod extends js.Object {
-  
-  trait _EntityTarget[Entity] extends js.Object
+object commonEntityTargetMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.typeorm.commonObjectTypeMod.ObjectType[Entity]
@@ -18,4 +15,6 @@ object commonEntityTargetMod extends js.Object {
     - typings.typeorm.anon.Name[Entity]
   */
   type EntityTarget[Entity] = _EntityTarget[Entity] | ObjectType[Entity] | String
+  
+  trait _EntityTarget[Entity] extends StObject
 }

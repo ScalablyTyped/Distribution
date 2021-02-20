@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeConfigurationSetRequest extends js.Object {
+trait DescribeConfigurationSetRequest extends StObject {
   
   /**
     * A list of configuration set attributes to return.
@@ -26,30 +27,18 @@ object DescribeConfigurationSetRequest {
   }
   
   @scala.inline
-  implicit class DescribeConfigurationSetRequestOps[Self <: DescribeConfigurationSetRequest] (val x: Self) extends AnyVal {
+  implicit class DescribeConfigurationSetRequestMutableBuilder[Self <: DescribeConfigurationSetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfigurationSetAttributeNames(value: ConfigurationSetAttributeList): Self = StObject.set(x, "ConfigurationSetAttributeNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConfigurationSetAttributeNamesUndefined: Self = StObject.set(x, "ConfigurationSetAttributeNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConfigurationSetAttributeNamesVarargs(value: ConfigurationSetAttribute*): Self = StObject.set(x, "ConfigurationSetAttributeNames", js.Array(value :_*))
     
     @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setConfigurationSetAttributeNamesVarargs(value: ConfigurationSetAttribute*): Self = this.set("ConfigurationSetAttributeNames", js.Array(value :_*))
-    
-    @scala.inline
-    def setConfigurationSetAttributeNames(value: ConfigurationSetAttributeList): Self = this.set("ConfigurationSetAttributeNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteConfigurationSetAttributeNames: Self = this.set("ConfigurationSetAttributeNames", js.undefined)
+    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }
 }

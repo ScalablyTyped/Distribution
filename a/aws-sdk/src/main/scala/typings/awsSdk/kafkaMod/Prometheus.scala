@@ -1,11 +1,12 @@
 package typings.awsSdk.kafkaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Prometheus extends js.Object {
+trait Prometheus extends StObject {
   
   /**
     * 
@@ -30,30 +31,18 @@ object Prometheus {
   }
   
   @scala.inline
-  implicit class PrometheusOps[Self <: Prometheus] (val x: Self) extends AnyVal {
+  implicit class PrometheusMutableBuilder[Self <: Prometheus] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJmxExporter(value: JmxExporter): Self = StObject.set(x, "JmxExporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJmxExporterUndefined: Self = StObject.set(x, "JmxExporter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNodeExporter(value: NodeExporter): Self = StObject.set(x, "NodeExporter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJmxExporter(value: JmxExporter): Self = this.set("JmxExporter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteJmxExporter: Self = this.set("JmxExporter", js.undefined)
-    
-    @scala.inline
-    def setNodeExporter(value: NodeExporter): Self = this.set("NodeExporter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNodeExporter: Self = this.set("NodeExporter", js.undefined)
+    def setNodeExporterUndefined: Self = StObject.set(x, "NodeExporter", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientAdsense.anon.Alt
 import typings.maximMazurokGapiClientAdsense.anon.Fields
 import typings.maximMazurokGapiClientAdsense.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientAdsense.anon.SavedAdStyleId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SavedadstylesResource extends js.Object {
+trait SavedadstylesResource extends StObject {
   
   /** List a specific saved ad style for the specified account. */
   def get(): Request[SavedAdStyle] = js.native

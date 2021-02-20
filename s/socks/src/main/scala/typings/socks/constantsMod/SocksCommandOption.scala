@@ -1,5 +1,6 @@
 package typings.socks.constantsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.socks.socksStrings.bind
   - typings.socks.socksStrings.associate
 */
-trait SocksCommandOption extends js.Object
+trait SocksCommandOption extends StObject
 object SocksCommandOption {
   
   @scala.inline

@@ -1,12 +1,13 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IDataProviderRequest extends js.Object {
+trait IDataProviderRequest extends StObject {
   
   var deadline: Date = js.native
   
@@ -25,30 +26,18 @@ object IDataProviderRequest {
   }
   
   @scala.inline
-  implicit class IDataProviderRequestOps[Self <: IDataProviderRequest] (val x: Self) extends AnyVal {
+  implicit class IDataProviderRequestMutableBuilder[Self <: IDataProviderRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFormatId(value: String): Self = StObject.set(x, "formatId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDeferral(value: () => DataProviderDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDeadline(value: Date): Self = this.set("deadline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFormatId(value: String): Self = this.set("formatId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetDeferral(value: () => DataProviderDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setSetData(value: js.Any => Unit): Self = this.set("setData", js.Any.fromFunction1(value))
+    def setSetData(value: js.Any => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
   }
 }

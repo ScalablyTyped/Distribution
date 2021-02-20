@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WiFiItem extends js.Object {
+trait WiFiItem extends StObject {
   
   /**
     * Wi-Fi 的BSSID
@@ -31,36 +32,24 @@ object WiFiItem {
   }
   
   @scala.inline
-  implicit class WiFiItemOps[Self <: WiFiItem] (val x: Self) extends AnyVal {
+  implicit class WiFiItemMutableBuilder[Self <: WiFiItem] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBSSID(value: String): Self = this.set("BSSID", value.asInstanceOf[js.Any])
+    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
     @scala.inline
-    def deleteBSSID: Self = this.set("BSSID", js.undefined)
+    def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSSID(value: String): Self = this.set("SSID", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSSID: Self = this.set("SSID", js.undefined)
-    
-    @scala.inline
-    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePassword: Self = this.set("password", js.undefined)
+    def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
   }
 }

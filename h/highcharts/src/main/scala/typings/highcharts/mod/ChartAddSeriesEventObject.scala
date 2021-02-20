@@ -1,12 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.highchartsStrings.addSeries
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartAddSeriesEventObject extends js.Object {
+trait ChartAddSeriesEventObject extends StObject {
   
   /**
     * The series options that were passed to the `addSeries` method.
@@ -38,30 +39,18 @@ object ChartAddSeriesEventObject {
   }
   
   @scala.inline
-  implicit class ChartAddSeriesEventObjectOps[Self <: ChartAddSeriesEventObject] (val x: Self) extends AnyVal {
+  implicit class ChartAddSeriesEventObjectMutableBuilder[Self <: ChartAddSeriesEventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOptions(value: SeriesOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTarget(value: Chart_): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOptions(value: SeriesOptionsType): Self = this.set("options", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = this.set("preventDefault", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTarget(value: Chart_): Self = this.set("target", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: addSeries): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: addSeries): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

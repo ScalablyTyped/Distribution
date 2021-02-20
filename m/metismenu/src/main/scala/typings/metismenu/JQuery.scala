@@ -2,12 +2,13 @@ package typings.metismenu
 
 import typings.jquery.JQueryEventObject
 import typings.metismenu.metismenuStrings.dispose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
   
   def metisMenu(): JQuery = js.native
   def metisMenu(options: MetisMenuOptions): JQuery = js.native

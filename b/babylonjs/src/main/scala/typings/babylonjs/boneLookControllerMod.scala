@@ -5,16 +5,16 @@ import typings.babylonjs.anon.AdjustPitch
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathAxisMod.Space
 import typings.babylonjs.mathVectorMod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Bones/boneLookController", JSImport.Namespace)
-@js.native
-object boneLookControllerMod extends js.Object {
+object boneLookControllerMod {
   
+  @JSImport("babylonjs/Bones/boneLookController", "BoneLookController")
   @js.native
-  class BoneLookController protected () extends js.Object {
+  class BoneLookController protected () extends StObject {
     /**
       * Create a BoneLookController
       * @param mesh the mesh that the bone belongs to
@@ -154,13 +154,28 @@ object boneLookControllerMod extends js.Object {
     def update(): Unit = js.native
   }
   /* static members */
-  @js.native
-  object BoneLookController extends js.Object {
+  object BoneLookController {
     
-    var _tmpMats: js.Any = js.native
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpMats")
+    @js.native
+    def _tmpMats: js.Any = js.native
+    @scala.inline
+    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
-    var _tmpVecs: js.Any = js.native
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpQuat")
+    @js.native
+    def _tmpQuat: js.Any = js.native
+    @scala.inline
+    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpVecs")
+    @js.native
+    def _tmpVecs: js.Any = js.native
+    @scala.inline
+    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
 }

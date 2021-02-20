@@ -1,11 +1,12 @@
 package typings.awsSdk.transferMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribedServer extends js.Object {
+trait DescribedServer extends StObject {
   
   /**
     * Specifies the unique Amazon Resource Name (ARN) of the server.
@@ -86,105 +87,93 @@ object DescribedServer {
   }
   
   @scala.inline
-  implicit class DescribedServerOps[Self <: DescribedServer] (val x: Self) extends AnyVal {
+  implicit class DescribedServerMutableBuilder[Self <: DescribedServer] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
     @scala.inline
-    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setEndpointDetails(value: EndpointDetails): Self = StObject.set(x, "EndpointDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificate(value: Certificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setEndpointDetailsUndefined: Self = StObject.set(x, "EndpointDetails", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointDetails(value: EndpointDetails): Self = this.set("EndpointDetails", value.asInstanceOf[js.Any])
+    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
     @scala.inline
-    def deleteEndpointDetails: Self = this.set("EndpointDetails", js.undefined)
+    def setHostKeyFingerprint(value: HostKeyFingerprint): Self = StObject.set(x, "HostKeyFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    def setHostKeyFingerprintUndefined: Self = StObject.set(x, "HostKeyFingerprint", js.undefined)
     
     @scala.inline
-    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    def setIdentityProviderDetails(value: IdentityProviderDetails): Self = StObject.set(x, "IdentityProviderDetails", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostKeyFingerprint(value: HostKeyFingerprint): Self = this.set("HostKeyFingerprint", value.asInstanceOf[js.Any])
+    def setIdentityProviderDetailsUndefined: Self = StObject.set(x, "IdentityProviderDetails", js.undefined)
     
     @scala.inline
-    def deleteHostKeyFingerprint: Self = this.set("HostKeyFingerprint", js.undefined)
+    def setIdentityProviderType(value: IdentityProviderType): Self = StObject.set(x, "IdentityProviderType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityProviderDetails(value: IdentityProviderDetails): Self = this.set("IdentityProviderDetails", value.asInstanceOf[js.Any])
+    def setIdentityProviderTypeUndefined: Self = StObject.set(x, "IdentityProviderType", js.undefined)
     
     @scala.inline
-    def deleteIdentityProviderDetails: Self = this.set("IdentityProviderDetails", js.undefined)
+    def setLoggingRole(value: Role): Self = StObject.set(x, "LoggingRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdentityProviderType(value: IdentityProviderType): Self = this.set("IdentityProviderType", value.asInstanceOf[js.Any])
+    def setLoggingRoleUndefined: Self = StObject.set(x, "LoggingRole", js.undefined)
     
     @scala.inline
-    def deleteIdentityProviderType: Self = this.set("IdentityProviderType", js.undefined)
+    def setProtocols(value: Protocols): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggingRole(value: Role): Self = this.set("LoggingRole", value.asInstanceOf[js.Any])
+    def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
     @scala.inline
-    def deleteLoggingRole: Self = this.set("LoggingRole", js.undefined)
+    def setProtocolsVarargs(value: Protocol*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
     
     @scala.inline
-    def setProtocolsVarargs(value: Protocol*): Self = this.set("Protocols", js.Array(value :_*))
+    def setSecurityPolicyName(value: SecurityPolicyName): Self = StObject.set(x, "SecurityPolicyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocols(value: Protocols): Self = this.set("Protocols", value.asInstanceOf[js.Any])
+    def setSecurityPolicyNameUndefined: Self = StObject.set(x, "SecurityPolicyName", js.undefined)
     
     @scala.inline
-    def deleteProtocols: Self = this.set("Protocols", js.undefined)
+    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecurityPolicyName(value: SecurityPolicyName): Self = this.set("SecurityPolicyName", value.asInstanceOf[js.Any])
+    def setServerIdUndefined: Self = StObject.set(x, "ServerId", js.undefined)
     
     @scala.inline
-    def deleteSecurityPolicyName: Self = this.set("SecurityPolicyName", js.undefined)
+    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServerId(value: ServerId): Self = this.set("ServerId", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
     @scala.inline
-    def deleteServerId: Self = this.set("ServerId", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
     @scala.inline
-    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    def setUserCount(value: UserCount): Self = StObject.set(x, "UserCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
-    
-    @scala.inline
-    def setUserCount(value: UserCount): Self = this.set("UserCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserCount: Self = this.set("UserCount", js.undefined)
+    def setUserCountUndefined: Self = StObject.set(x, "UserCount", js.undefined)
   }
 }

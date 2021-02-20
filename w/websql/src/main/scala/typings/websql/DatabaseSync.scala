@@ -1,5 +1,6 @@
 package typings.websql
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** 4.4 Synchronous database API
   */
 @js.native
-trait DatabaseSync extends js.Object {
+trait DatabaseSync extends StObject {
   
   def changeVersion(oldVersion: DOMString, newVersion: DOMString, callback: SQLTransactionSyncCallback): Unit = js.native
   
@@ -31,30 +32,18 @@ object DatabaseSync {
   }
   
   @scala.inline
-  implicit class DatabaseSyncOps[Self <: DatabaseSync] (val x: Self) extends AnyVal {
+  implicit class DatabaseSyncMutableBuilder[Self <: DatabaseSync] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChangeVersion(value: (DOMString, DOMString, SQLTransactionSyncCallback) => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setReadTransaction(value: SQLTransactionSyncCallback => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setTransaction(value: SQLTransactionSyncCallback => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setChangeVersion(value: (DOMString, DOMString, SQLTransactionSyncCallback) => Unit): Self = this.set("changeVersion", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setReadTransaction(value: SQLTransactionSyncCallback => Unit): Self = this.set("readTransaction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setTransaction(value: SQLTransactionSyncCallback => Unit): Self = this.set("transaction", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setVersion(value: DOMString): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: DOMString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

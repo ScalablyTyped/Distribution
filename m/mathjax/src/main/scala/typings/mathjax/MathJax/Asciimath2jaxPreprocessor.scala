@@ -1,11 +1,12 @@
 package typings.mathjax.MathJax
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Asciimath2jaxPreprocessor extends js.Object {
+trait Asciimath2jaxPreprocessor extends StObject {
   
   /*Array of pairs of strings that are to be used as math delimiters. The first in each pair is the initial
     * delimiter and the second is the terminal delimiter. You can have as many pairs as you want. For example,
@@ -71,51 +72,39 @@ object Asciimath2jaxPreprocessor {
   }
   
   @scala.inline
-  implicit class Asciimath2jaxPreprocessorOps[Self <: Asciimath2jaxPreprocessor] (val x: Self) extends AnyVal {
+  implicit class Asciimath2jaxPreprocessorMutableBuilder[Self <: Asciimath2jaxPreprocessor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelimiters(value: js.Any): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIgnoreClass(value: String): Self = StObject.set(x, "ignoreClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelimiters(value: js.Any): Self = this.set("delimiters", value.asInstanceOf[js.Any])
+    def setIgnoreClassUndefined: Self = StObject.set(x, "ignoreClass", js.undefined)
     
     @scala.inline
-    def deleteDelimiters: Self = this.set("delimiters", js.undefined)
+    def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreClass(value: String): Self = this.set("ignoreClass", value.asInstanceOf[js.Any])
+    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
     @scala.inline
-    def deleteIgnoreClass: Self = this.set("ignoreClass", js.undefined)
+    def setProcessClass(value: String): Self = StObject.set(x, "processClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreview(value: js.Any): Self = this.set("preview", value.asInstanceOf[js.Any])
+    def setProcessClassUndefined: Self = StObject.set(x, "processClass", js.undefined)
     
     @scala.inline
-    def deletePreview: Self = this.set("preview", js.undefined)
+    def setSkipTags(value: js.Array[String]): Self = StObject.set(x, "skipTags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessClass(value: String): Self = this.set("processClass", value.asInstanceOf[js.Any])
+    def setSkipTagsUndefined: Self = StObject.set(x, "skipTags", js.undefined)
     
     @scala.inline
-    def deleteProcessClass: Self = this.set("processClass", js.undefined)
-    
-    @scala.inline
-    def setSkipTagsVarargs(value: String*): Self = this.set("skipTags", js.Array(value :_*))
-    
-    @scala.inline
-    def setSkipTags(value: js.Array[String]): Self = this.set("skipTags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSkipTags: Self = this.set("skipTags", js.undefined)
+    def setSkipTagsVarargs(value: String*): Self = StObject.set(x, "skipTags", js.Array(value :_*))
   }
 }

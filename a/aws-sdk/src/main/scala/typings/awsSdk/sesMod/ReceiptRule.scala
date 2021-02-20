@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReceiptRule extends js.Object {
+trait ReceiptRule extends StObject {
   
   /**
     * An ordered list of actions to perform on messages that match at least one of the recipient email addresses or domains specified in the receipt rule.
@@ -46,57 +47,45 @@ object ReceiptRule {
   }
   
   @scala.inline
-  implicit class ReceiptRuleOps[Self <: ReceiptRule] (val x: Self) extends AnyVal {
+  implicit class ReceiptRuleMutableBuilder[Self <: ReceiptRule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: ReceiptActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: ReceiptAction*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: ReceiptRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: ReceiptAction*): Self = this.set("Actions", js.Array(value :_*))
+    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
     @scala.inline
-    def setActions(value: ReceiptActionsList): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setName(value: ReceiptRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActions: Self = this.set("Actions", js.undefined)
+    def setRecipients(value: RecipientsList): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Enabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    def setRecipientsUndefined: Self = StObject.set(x, "Recipients", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "Recipients", js.Array(value :_*))
     
     @scala.inline
-    def setRecipientsVarargs(value: Recipient*): Self = this.set("Recipients", js.Array(value :_*))
+    def setScanEnabled(value: Enabled): Self = StObject.set(x, "ScanEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipients(value: RecipientsList): Self = this.set("Recipients", value.asInstanceOf[js.Any])
+    def setScanEnabledUndefined: Self = StObject.set(x, "ScanEnabled", js.undefined)
     
     @scala.inline
-    def deleteRecipients: Self = this.set("Recipients", js.undefined)
+    def setTlsPolicy(value: TlsPolicy): Self = StObject.set(x, "TlsPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScanEnabled(value: Enabled): Self = this.set("ScanEnabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanEnabled: Self = this.set("ScanEnabled", js.undefined)
-    
-    @scala.inline
-    def setTlsPolicy(value: TlsPolicy): Self = this.set("TlsPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTlsPolicy: Self = this.set("TlsPolicy", js.undefined)
+    def setTlsPolicyUndefined: Self = StObject.set(x, "TlsPolicy", js.undefined)
   }
 }

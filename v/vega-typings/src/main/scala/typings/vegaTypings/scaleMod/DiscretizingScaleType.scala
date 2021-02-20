@@ -1,5 +1,6 @@
 package typings.vegaTypings.scaleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.threshold
   - typings.vegaTypings.vegaTypingsStrings.`bin-ordinal`
 */
-trait DiscretizingScaleType extends js.Object
+trait DiscretizingScaleType extends StObject
 object DiscretizingScaleType {
   
   @scala.inline

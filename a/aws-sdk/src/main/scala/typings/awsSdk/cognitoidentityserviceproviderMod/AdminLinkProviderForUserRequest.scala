@@ -1,11 +1,12 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AdminLinkProviderForUserRequest extends js.Object {
+trait AdminLinkProviderForUserRequest extends StObject {
   
   /**
     * The existing user in the user pool to be linked to the external identity provider user account. Can be a native (Username + Password) Cognito User Pools user or a federated user (for example, a SAML or Facebook user). If the user doesn't exist, an exception is thrown. This is the user that is returned when the new user (with the linked identity provider attribute) signs in. For a native username + password user, the ProviderAttributeValue for the DestinationUser should be the username in the user pool. For a federated user, it should be the provider-specific user_id. The ProviderAttributeName of the DestinationUser is ignored. The ProviderName should be set to Cognito for users in Cognito user pools.
@@ -35,27 +36,15 @@ object AdminLinkProviderForUserRequest {
   }
   
   @scala.inline
-  implicit class AdminLinkProviderForUserRequestOps[Self <: AdminLinkProviderForUserRequest] (val x: Self) extends AnyVal {
+  implicit class AdminLinkProviderForUserRequestMutableBuilder[Self <: AdminLinkProviderForUserRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "DestinationUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSourceUser(value: ProviderUserIdentifierType): Self = StObject.set(x, "SourceUser", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setDestinationUser(value: ProviderUserIdentifierType): Self = this.set("DestinationUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSourceUser(value: ProviderUserIdentifierType): Self = this.set("SourceUser", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserPoolId(value: StringType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    def setUserPoolId(value: StringType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

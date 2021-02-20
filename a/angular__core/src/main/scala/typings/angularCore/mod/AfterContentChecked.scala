@@ -1,11 +1,12 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AfterContentChecked extends js.Object {
+trait AfterContentChecked extends StObject {
   
   /**
     * A callback method that is invoked immediately after the
@@ -23,21 +24,9 @@ object AfterContentChecked {
   }
   
   @scala.inline
-  implicit class AfterContentCheckedOps[Self <: AfterContentChecked] (val x: Self) extends AnyVal {
+  implicit class AfterContentCheckedMutableBuilder[Self <: AfterContentChecked] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setNgAfterContentChecked(value: () => Unit): Self = this.set("ngAfterContentChecked", js.Any.fromFunction0(value))
+    def setNgAfterContentChecked(value: () => Unit): Self = StObject.set(x, "ngAfterContentChecked", js.Any.fromFunction0(value))
   }
 }

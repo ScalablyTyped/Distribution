@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaInstanceGroupManagerAutoHealingPolicy extends js.Object {
+trait SchemaInstanceGroupManagerAutoHealingPolicy extends StObject {
   
   /**
     * The URL for the health check that signals autohealing.
@@ -31,30 +32,18 @@ object SchemaInstanceGroupManagerAutoHealingPolicy {
   }
   
   @scala.inline
-  implicit class SchemaInstanceGroupManagerAutoHealingPolicyOps[Self <: SchemaInstanceGroupManagerAutoHealingPolicy] (val x: Self) extends AnyVal {
+  implicit class SchemaInstanceGroupManagerAutoHealingPolicyMutableBuilder[Self <: SchemaInstanceGroupManagerAutoHealingPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitialDelaySec(value: Double): Self = StObject.set(x, "initialDelaySec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: String): Self = this.set("healthCheck", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthCheck: Self = this.set("healthCheck", js.undefined)
-    
-    @scala.inline
-    def setInitialDelaySec(value: Double): Self = this.set("initialDelaySec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialDelaySec: Self = this.set("initialDelaySec", js.undefined)
+    def setInitialDelaySecUndefined: Self = StObject.set(x, "initialDelaySec", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/adsdi/soda-index-specifications-reference.html#GUID-00C06941-6FFD-4CEB-81B6-9A7FBD577A2C
   */
 @js.native
-trait BTreeIndex extends js.Object {
+trait BTreeIndex extends StObject {
   
   /** Each object targets a field in the indexed documents that has a scalar JSON value. */
   var fields: js.Array[BTreeIndexField] = js.native
@@ -41,39 +42,27 @@ object BTreeIndex {
   }
   
   @scala.inline
-  implicit class BTreeIndexOps[Self <: BTreeIndex] (val x: Self) extends AnyVal {
+  implicit class BTreeIndexMutableBuilder[Self <: BTreeIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFields(value: js.Array[BTreeIndexField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFieldsVarargs(value: BTreeIndexField*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndexNulls(value: Boolean): Self = StObject.set(x, "indexNulls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldsVarargs(value: BTreeIndexField*): Self = this.set("fields", js.Array(value :_*))
+    def setIndexNullsUndefined: Self = StObject.set(x, "indexNulls", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[BTreeIndexField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndexNulls(value: Boolean): Self = this.set("indexNulls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexNulls: Self = this.set("indexNulls", js.undefined)
-    
-    @scala.inline
-    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnique: Self = this.set("unique", js.undefined)
+    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

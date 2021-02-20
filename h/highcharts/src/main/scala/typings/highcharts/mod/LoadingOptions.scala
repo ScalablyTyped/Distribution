@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LoadingOptions extends js.Object {
+trait LoadingOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The duration in milliseconds of
@@ -43,42 +44,30 @@ object LoadingOptions {
   }
   
   @scala.inline
-  implicit class LoadingOptionsOps[Self <: LoadingOptions] (val x: Self) extends AnyVal {
+  implicit class LoadingOptionsMutableBuilder[Self <: LoadingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelStyle(value: CSSObject): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHideDuration(value: Double): Self = this.set("hideDuration", value.asInstanceOf[js.Any])
+    def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
     
     @scala.inline
-    def deleteHideDuration: Self = this.set("hideDuration", js.undefined)
+    def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelStyle(value: CSSObject): Self = this.set("labelStyle", value.asInstanceOf[js.Any])
+    def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
     
     @scala.inline
-    def deleteLabelStyle: Self = this.set("labelStyle", js.undefined)
+    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowDuration(value: Double): Self = this.set("showDuration", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowDuration: Self = this.set("showDuration", js.undefined)
-    
-    @scala.inline
-    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

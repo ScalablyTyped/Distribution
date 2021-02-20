@@ -1,5 +1,6 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,45 +27,33 @@ object TextComponentProperties {
   }
   
   @scala.inline
-  implicit class TextComponentPropertiesOps[Self <: TextComponentProperties] (val x: Self) extends AnyVal {
+  implicit class TextComponentPropertiesMutableBuilder[Self <: TextComponentProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLinks(value: js.Array[LinkArea]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setLinksVarargs(value: LinkArea*): Self = StObject.set(x, "links", js.Array(value :_*))
     
     @scala.inline
-    def setLinksVarargs(value: LinkArea*): Self = this.set("links", js.Array(value :_*))
+    def setRequiredIndicator(value: Boolean): Self = StObject.set(x, "requiredIndicator", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinks(value: js.Array[LinkArea]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setRequiredIndicatorUndefined: Self = StObject.set(x, "requiredIndicator", js.undefined)
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredIndicator(value: Boolean): Self = this.set("requiredIndicator", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequiredIndicator: Self = this.set("requiredIndicator", js.undefined)
-    
-    @scala.inline
-    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

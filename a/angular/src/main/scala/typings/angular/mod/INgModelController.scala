@@ -1,6 +1,7 @@
 package typings.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api/ng/type/ngModel.NgModelController
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait INgModelController extends js.Object {
+trait INgModelController extends StObject {
   
   @JSName("$asyncValidators")
   var $asyncValidators: IAsyncModelValidators = js.native

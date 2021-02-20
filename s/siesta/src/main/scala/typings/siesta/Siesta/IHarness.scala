@@ -2,6 +2,7 @@ package typings.siesta.Siesta
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @abstract
   */
 @js.native
-trait IHarness extends js.Object {
+trait IHarness extends StObject {
   
   var alsoPreload: js.Array[_] = js.native
   
@@ -91,96 +92,84 @@ object IHarness {
   }
   
   @scala.inline
-  implicit class IHarnessOps[Self <: IHarness] (val x: Self) extends AnyVal {
+  implicit class IHarnessMutableBuilder[Self <: IHarness] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlsoPreload(value: js.Array[_]): Self = StObject.set(x, "alsoPreload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlsoPreloadVarargs(value: js.Any*): Self = StObject.set(x, "alsoPreload", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoCheckGlobals(value: Boolean): Self = StObject.set(x, "autoCheckGlobals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlsoPreloadVarargs(value: js.Any*): Self = this.set("alsoPreload", js.Array(value :_*))
+    def setCachePreload(value: Boolean): Self = StObject.set(x, "cachePreload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlsoPreload(value: js.Array[_]): Self = this.set("alsoPreload", value.asInstanceOf[js.Any])
+    def setConfigure(value: js.Any => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAutoCheckGlobals(value: Boolean): Self = this.set("autoCheckGlobals", value.asInstanceOf[js.Any])
+    def setDefaultTimeout(value: Boolean): Self = StObject.set(x, "defaultTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCachePreload(value: Boolean): Self = this.set("cachePreload", value.asInstanceOf[js.Any])
+    def setDisableColoring(value: Boolean): Self = StObject.set(x, "disableColoring", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfigure(value: js.Any => Unit): Self = this.set("configure", js.Any.fromFunction1(value))
+    def setExpectedGlobals(value: js.Array[String]): Self = StObject.set(x, "expectedGlobals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultTimeout(value: Boolean): Self = this.set("defaultTimeout", value.asInstanceOf[js.Any])
+    def setExpectedGlobalsVarargs(value: String*): Self = StObject.set(x, "expectedGlobals", js.Array(value :_*))
     
     @scala.inline
-    def setDisableColoring(value: Boolean): Self = this.set("disableColoring", value.asInstanceOf[js.Any])
+    def setIsReadyTimeout(value: Double): Self = StObject.set(x, "isReadyTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedGlobalsVarargs(value: String*): Self = this.set("expectedGlobals", js.Array(value :_*))
+    def setKeepNLastResults(value: Double): Self = StObject.set(x, "keepNLastResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpectedGlobals(value: js.Array[String]): Self = this.set("expectedGlobals", value.asInstanceOf[js.Any])
+    def setKeepResults(value: Boolean): Self = StObject.set(x, "keepResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsReadyTimeout(value: Double): Self = this.set("isReadyTimeout", value.asInstanceOf[js.Any])
+    def setListenters(value: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listenters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepNLastResults(value: Double): Self = this.set("keepNLastResults", value.asInstanceOf[js.Any])
+    def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeepResults(value: Boolean): Self = this.set("keepResults", value.asInstanceOf[js.Any])
+    def setNeedDone(value: Boolean): Self = StObject.set(x, "needDone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListenters(value: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]]): Self = this.set("listenters", value.asInstanceOf[js.Any])
+    def setOverrideSetTimeout(value: Boolean): Self = StObject.set(x, "overrideSetTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxThreads(value: Double): Self = this.set("maxThreads", value.asInstanceOf[js.Any])
+    def setPauseBetweenTests(value: Double): Self = StObject.set(x, "pauseBetweenTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNeedDone(value: Boolean): Self = this.set("needDone", value.asInstanceOf[js.Any])
+    def setPreload(value: js.Array[_]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideSetTimeout(value: Boolean): Self = this.set("overrideSetTimeout", value.asInstanceOf[js.Any])
+    def setPreloadVarargs(value: js.Any*): Self = StObject.set(x, "preload", js.Array(value :_*))
     
     @scala.inline
-    def setPauseBetweenTests(value: Double): Self = this.set("pauseBetweenTests", value.asInstanceOf[js.Any])
+    def setRunCore(value: String): Self = StObject.set(x, "runCore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreloadVarargs(value: js.Any*): Self = this.set("preload", js.Array(value :_*))
+    def setStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setPreload(value: js.Array[_]): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setSubTestTimeout(value: Double): Self = StObject.set(x, "subTestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunCore(value: String): Self = this.set("runCore", value.asInstanceOf[js.Any])
+    def setTestClass(value: ITest): Self = StObject.set(x, "testClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStart(value: /* repeated */ js.Any => Unit): Self = this.set("start", js.Any.fromFunction1(value))
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubTestTimeout(value: Double): Self = this.set("subTestTimeout", value.asInstanceOf[js.Any])
+    def setTransparentEx(value: Boolean): Self = StObject.set(x, "transparentEx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTestClass(value: ITest): Self = this.set("testClass", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTransparentEx(value: Boolean): Self = this.set("transparentEx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWaitForTimeout(value: Double): Self = this.set("waitForTimeout", value.asInstanceOf[js.Any])
+    def setWaitForTimeout(value: Double): Self = StObject.set(x, "waitForTimeout", value.asInstanceOf[js.Any])
   }
 }

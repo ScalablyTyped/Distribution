@@ -1,11 +1,12 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateProvisionedProductPropertiesOutput extends js.Object {
+trait UpdateProvisionedProductPropertiesOutput extends StObject {
   
   /**
     * The provisioned product identifier.
@@ -36,42 +37,30 @@ object UpdateProvisionedProductPropertiesOutput {
   }
   
   @scala.inline
-  implicit class UpdateProvisionedProductPropertiesOutputOps[Self <: UpdateProvisionedProductPropertiesOutput] (val x: Self) extends AnyVal {
+  implicit class UpdateProvisionedProductPropertiesOutputMutableBuilder[Self <: UpdateProvisionedProductPropertiesOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setProvisionedProductIdUndefined: Self = StObject.set(x, "ProvisionedProductId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = StObject.set(x, "ProvisionedProductProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
+    def setProvisionedProductPropertiesUndefined: Self = StObject.set(x, "ProvisionedProductProperties", js.undefined)
     
     @scala.inline
-    def deleteProvisionedProductId: Self = this.set("ProvisionedProductId", js.undefined)
+    def setRecordId(value: Id): Self = StObject.set(x, "RecordId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProvisionedProductProperties(value: ProvisionedProductProperties): Self = this.set("ProvisionedProductProperties", value.asInstanceOf[js.Any])
+    def setRecordIdUndefined: Self = StObject.set(x, "RecordId", js.undefined)
     
     @scala.inline
-    def deleteProvisionedProductProperties: Self = this.set("ProvisionedProductProperties", js.undefined)
+    def setStatus(value: RecordStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecordId(value: Id): Self = this.set("RecordId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecordId: Self = this.set("RecordId", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: RecordStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("Status", js.undefined)
+    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

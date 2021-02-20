@@ -1,15 +1,16 @@
 package typings.winrtUwp.Windows.UI.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextRangeUnit extends js.Object
+sealed trait TextRangeUnit extends StObject
 /** Specifies the units to use when navigating a text range. */
 @JSGlobal("Windows.UI.Text.TextRangeUnit")
 @js.native
-object TextRangeUnit extends js.Object {
+object TextRangeUnit extends StObject {
   
   /** Text in all uppercase. */
   @js.native

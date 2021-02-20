@@ -1,11 +1,12 @@
 package typings.knockstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockstrapCarouselDefaults extends js.Object {
+trait KnockstrapCarouselDefaults extends StObject {
   
   var controlsTemplate: KnockstrapCarouselDefaultsControlsTemplate = js.native
   
@@ -29,30 +30,18 @@ object KnockstrapCarouselDefaults {
   }
   
   @scala.inline
-  implicit class KnockstrapCarouselDefaultsOps[Self <: KnockstrapCarouselDefaults] (val x: Self) extends AnyVal {
+  implicit class KnockstrapCarouselDefaultsMutableBuilder[Self <: KnockstrapCarouselDefaults] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setControlsTemplate(value: KnockstrapCarouselDefaultsControlsTemplate): Self = StObject.set(x, "controlsTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIndicatorsTemplate(value: KnockstrapCarouselDefaultsIndicatorsTemplate): Self = StObject.set(x, "indicatorsTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setControlsTemplate(value: KnockstrapCarouselDefaultsControlsTemplate): Self = this.set("controlsTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCss(value: String): Self = this.set("css", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIndicatorsTemplate(value: KnockstrapCarouselDefaultsIndicatorsTemplate): Self = this.set("indicatorsTemplate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemTemplate(value: KnockstrapCarouselDefaultsItemTemplate): Self = this.set("itemTemplate", value.asInstanceOf[js.Any])
+    def setItemTemplate(value: KnockstrapCarouselDefaultsItemTemplate): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
   }
 }

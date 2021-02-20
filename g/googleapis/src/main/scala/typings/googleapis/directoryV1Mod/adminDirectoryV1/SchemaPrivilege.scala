@@ -1,5 +1,6 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * JSON template for privilege resource in Directory API.
   */
 @js.native
-trait SchemaPrivilege extends js.Object {
+trait SchemaPrivilege extends StObject {
   
   /**
     * A list of child privileges. Privileges for a service form a tree. Each
@@ -56,63 +57,51 @@ object SchemaPrivilege {
   }
   
   @scala.inline
-  implicit class SchemaPrivilegeOps[Self <: SchemaPrivilege] (val x: Self) extends AnyVal {
+  implicit class SchemaPrivilegeMutableBuilder[Self <: SchemaPrivilege] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setChildPrivileges(value: js.Array[SchemaPrivilege]): Self = StObject.set(x, "childPrivileges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChildPrivilegesUndefined: Self = StObject.set(x, "childPrivileges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChildPrivilegesVarargs(value: SchemaPrivilege*): Self = StObject.set(x, "childPrivileges", js.Array(value :_*))
     
     @scala.inline
-    def setChildPrivilegesVarargs(value: SchemaPrivilege*): Self = this.set("childPrivileges", js.Array(value :_*))
+    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildPrivileges(value: js.Array[SchemaPrivilege]): Self = this.set("childPrivileges", value.asInstanceOf[js.Any])
+    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     @scala.inline
-    def deleteChildPrivileges: Self = this.set("childPrivileges", js.undefined)
+    def setIsOuScopable(value: Boolean): Self = StObject.set(x, "isOuScopable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    def setIsOuScopableUndefined: Self = StObject.set(x, "isOuScopable", js.undefined)
     
     @scala.inline
-    def deleteEtag: Self = this.set("etag", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsOuScopable(value: Boolean): Self = this.set("isOuScopable", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteIsOuScopable: Self = this.set("isOuScopable", js.undefined)
+    def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setPrivilegeNameUndefined: Self = StObject.set(x, "privilegeName", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivilegeName(value: String): Self = this.set("privilegeName", value.asInstanceOf[js.Any])
+    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
     @scala.inline
-    def deletePrivilegeName: Self = this.set("privilegeName", js.undefined)
+    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceId(value: String): Self = this.set("serviceId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceId: Self = this.set("serviceId", js.undefined)
-    
-    @scala.inline
-    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

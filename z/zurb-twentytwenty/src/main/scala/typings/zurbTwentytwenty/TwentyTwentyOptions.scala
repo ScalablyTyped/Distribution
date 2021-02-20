@@ -1,11 +1,12 @@
 package typings.zurbTwentytwenty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TwentyTwentyOptions extends js.Object {
+trait TwentyTwentyOptions extends StObject {
   
   var after_label: js.UndefOr[String] = js.native
   
@@ -32,66 +33,54 @@ object TwentyTwentyOptions {
   }
   
   @scala.inline
-  implicit class TwentyTwentyOptionsOps[Self <: TwentyTwentyOptions] (val x: Self) extends AnyVal {
+  implicit class TwentyTwentyOptionsMutableBuilder[Self <: TwentyTwentyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfter_label(value: String): Self = StObject.set(x, "after_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAfter_labelUndefined: Self = StObject.set(x, "after_label", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBefore_label(value: String): Self = StObject.set(x, "before_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAfter_label(value: String): Self = this.set("after_label", value.asInstanceOf[js.Any])
+    def setBefore_labelUndefined: Self = StObject.set(x, "before_label", js.undefined)
     
     @scala.inline
-    def deleteAfter_label: Self = this.set("after_label", js.undefined)
+    def setClick_to_move(value: Boolean): Self = StObject.set(x, "click_to_move", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBefore_label(value: String): Self = this.set("before_label", value.asInstanceOf[js.Any])
+    def setClick_to_moveUndefined: Self = StObject.set(x, "click_to_move", js.undefined)
     
     @scala.inline
-    def deleteBefore_label: Self = this.set("before_label", js.undefined)
+    def setDefault_offset_pct(value: Double): Self = StObject.set(x, "default_offset_pct", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClick_to_move(value: Boolean): Self = this.set("click_to_move", value.asInstanceOf[js.Any])
+    def setDefault_offset_pctUndefined: Self = StObject.set(x, "default_offset_pct", js.undefined)
     
     @scala.inline
-    def deleteClick_to_move: Self = this.set("click_to_move", js.undefined)
+    def setMove_slider_on_hover(value: Boolean): Self = StObject.set(x, "move_slider_on_hover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefault_offset_pct(value: Double): Self = this.set("default_offset_pct", value.asInstanceOf[js.Any])
+    def setMove_slider_on_hoverUndefined: Self = StObject.set(x, "move_slider_on_hover", js.undefined)
     
     @scala.inline
-    def deleteDefault_offset_pct: Self = this.set("default_offset_pct", js.undefined)
+    def setMove_with_handle_only(value: Boolean): Self = StObject.set(x, "move_with_handle_only", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove_slider_on_hover(value: Boolean): Self = this.set("move_slider_on_hover", value.asInstanceOf[js.Any])
+    def setMove_with_handle_onlyUndefined: Self = StObject.set(x, "move_with_handle_only", js.undefined)
     
     @scala.inline
-    def deleteMove_slider_on_hover: Self = this.set("move_slider_on_hover", js.undefined)
+    def setNo_overlay(value: Boolean): Self = StObject.set(x, "no_overlay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMove_with_handle_only(value: Boolean): Self = this.set("move_with_handle_only", value.asInstanceOf[js.Any])
+    def setNo_overlayUndefined: Self = StObject.set(x, "no_overlay", js.undefined)
     
     @scala.inline
-    def deleteMove_with_handle_only: Self = this.set("move_with_handle_only", js.undefined)
+    def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNo_overlay(value: Boolean): Self = this.set("no_overlay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNo_overlay: Self = this.set("no_overlay", js.undefined)
-    
-    @scala.inline
-    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

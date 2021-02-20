@@ -1,11 +1,12 @@
 package typings.awsSdk.quicksightMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateColumnsOperation extends js.Object {
+trait CreateColumnsOperation extends StObject {
   
   /**
     * Calculated columns to create.
@@ -21,24 +22,12 @@ object CreateColumnsOperation {
   }
   
   @scala.inline
-  implicit class CreateColumnsOperationOps[Self <: CreateColumnsOperation] (val x: Self) extends AnyVal {
+  implicit class CreateColumnsOperationMutableBuilder[Self <: CreateColumnsOperation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: CalculatedColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setColumnsVarargs(value: CalculatedColumn*): Self = this.set("Columns", js.Array(value :_*))
-    
-    @scala.inline
-    def setColumns(value: CalculatedColumnList): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    def setColumnsVarargs(value: CalculatedColumn*): Self = StObject.set(x, "Columns", js.Array(value :_*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A protected range.
   */
 @js.native
-trait SchemaProtectedRange extends js.Object {
+trait SchemaProtectedRange extends StObject {
   
   /**
     * The description of this protected range.
@@ -72,69 +73,57 @@ object SchemaProtectedRange {
   }
   
   @scala.inline
-  implicit class SchemaProtectedRangeOps[Self <: SchemaProtectedRange] (val x: Self) extends AnyVal {
+  implicit class SchemaProtectedRangeMutableBuilder[Self <: SchemaProtectedRange] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEditors(value: SchemaEditors): Self = StObject.set(x, "editors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEditorsUndefined: Self = StObject.set(x, "editors", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEditors(value: SchemaEditors): Self = this.set("editors", value.asInstanceOf[js.Any])
+    def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
     
     @scala.inline
-    def deleteEditors: Self = this.set("editors", js.undefined)
+    def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    def setProtectedRangeIdUndefined: Self = StObject.set(x, "protectedRangeId", js.undefined)
     
     @scala.inline
-    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtectedRangeId(value: Double): Self = this.set("protectedRangeId", value.asInstanceOf[js.Any])
+    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     @scala.inline
-    def deleteProtectedRangeId: Self = this.set("protectedRangeId", js.undefined)
+    def setRequestingUserCanEdit(value: Boolean): Self = StObject.set(x, "requestingUserCanEdit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    def setRequestingUserCanEditUndefined: Self = StObject.set(x, "requestingUserCanEdit", js.undefined)
     
     @scala.inline
-    def deleteRange: Self = this.set("range", js.undefined)
+    def setUnprotectedRanges(value: js.Array[SchemaGridRange]): Self = StObject.set(x, "unprotectedRanges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequestingUserCanEdit(value: Boolean): Self = this.set("requestingUserCanEdit", value.asInstanceOf[js.Any])
+    def setUnprotectedRangesUndefined: Self = StObject.set(x, "unprotectedRanges", js.undefined)
     
     @scala.inline
-    def deleteRequestingUserCanEdit: Self = this.set("requestingUserCanEdit", js.undefined)
+    def setUnprotectedRangesVarargs(value: SchemaGridRange*): Self = StObject.set(x, "unprotectedRanges", js.Array(value :_*))
     
     @scala.inline
-    def setUnprotectedRangesVarargs(value: SchemaGridRange*): Self = this.set("unprotectedRanges", js.Array(value :_*))
+    def setWarningOnly(value: Boolean): Self = StObject.set(x, "warningOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnprotectedRanges(value: js.Array[SchemaGridRange]): Self = this.set("unprotectedRanges", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnprotectedRanges: Self = this.set("unprotectedRanges", js.undefined)
-    
-    @scala.inline
-    def setWarningOnly(value: Boolean): Self = this.set("warningOnly", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarningOnly: Self = this.set("warningOnly", js.undefined)
+    def setWarningOnlyUndefined: Self = StObject.set(x, "warningOnly", js.undefined)
   }
 }

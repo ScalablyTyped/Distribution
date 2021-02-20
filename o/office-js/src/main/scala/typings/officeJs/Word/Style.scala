@@ -1,17 +1,18 @@
 package typings.officeJs.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Style extends js.Object
+sealed trait Style extends StObject
 /**
   * [Api set: WordApi]
   */
 @JSGlobal("Word.Style")
 @js.native
-object Style extends js.Object {
+object Style extends StObject {
   
   @js.native
   sealed trait bibliography extends Style

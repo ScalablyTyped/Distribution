@@ -1,11 +1,12 @@
 package typings.awsSdk.resourcegroupsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateGroupOutput extends js.Object {
+trait CreateGroupOutput extends StObject {
   
   /**
     * The description of the resource group.
@@ -36,42 +37,30 @@ object CreateGroupOutput {
   }
   
   @scala.inline
-  implicit class CreateGroupOutputOps[Self <: CreateGroupOutput] (val x: Self) extends AnyVal {
+  implicit class CreateGroupOutputMutableBuilder[Self <: CreateGroupOutput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroup(value: Group): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGroupConfiguration(value: GroupConfiguration): Self = StObject.set(x, "GroupConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGroupConfigurationUndefined: Self = StObject.set(x, "GroupConfiguration", js.undefined)
     
     @scala.inline
-    def setGroup(value: Group): Self = this.set("Group", value.asInstanceOf[js.Any])
+    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
     @scala.inline
-    def deleteGroup: Self = this.set("Group", js.undefined)
+    def setResourceQuery(value: ResourceQuery): Self = StObject.set(x, "ResourceQuery", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupConfiguration(value: GroupConfiguration): Self = this.set("GroupConfiguration", value.asInstanceOf[js.Any])
+    def setResourceQueryUndefined: Self = StObject.set(x, "ResourceQuery", js.undefined)
     
     @scala.inline
-    def deleteGroupConfiguration: Self = this.set("GroupConfiguration", js.undefined)
+    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceQuery(value: ResourceQuery): Self = this.set("ResourceQuery", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceQuery: Self = this.set("ResourceQuery", js.undefined)
-    
-    @scala.inline
-    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTags: Self = this.set("Tags", js.undefined)
+    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

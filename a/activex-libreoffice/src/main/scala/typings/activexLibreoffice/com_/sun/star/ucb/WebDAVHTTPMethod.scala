@@ -16,6 +16,7 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`6`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexLibreoffice.activexLibreofficeNumbers.`5`
   - typings.activexLibreoffice.activexLibreofficeNumbers.`15`
 */
-trait WebDAVHTTPMethod extends js.Object
+trait WebDAVHTTPMethod extends StObject
 object WebDAVHTTPMethod {
   
   /** HTTP request method as defined in [RFC 2616: Hypertext Transfer Protocol  -  HTTP/1.1]{@link url="http://tools.ietf.org/html/rfc2616#section-9.9"} */

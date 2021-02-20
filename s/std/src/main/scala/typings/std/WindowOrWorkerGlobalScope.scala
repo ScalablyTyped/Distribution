@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WindowOrWorkerGlobalScope extends js.Object {
+trait WindowOrWorkerGlobalScope extends StObject {
   
   def atob(data: java.lang.String): java.lang.String = js.native
   

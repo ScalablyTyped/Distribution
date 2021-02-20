@@ -4,12 +4,13 @@ import typings.angularForms.angularFormsStrings.blur
 import typings.angularForms.angularFormsStrings.change
 import typings.angularForms.angularFormsStrings.submit
 import typings.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbstractControlOptions extends js.Object {
+trait AbstractControlOptions extends StObject {
   
   /**
     * @description
@@ -38,56 +39,44 @@ object AbstractControlOptions {
   }
   
   @scala.inline
-  implicit class AbstractControlOptionsOps[Self <: AbstractControlOptions] (val x: Self) extends AnyVal {
+  implicit class AbstractControlOptionsMutableBuilder[Self <: AbstractControlOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = this.set("asyncValidators", js.Array(value :_*))
+    def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAsyncValidatorsFunction1(
       value: /* control */ AbstractControl => (js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null])
-    ): Self = this.set("asyncValidators", js.Any.fromFunction1(value))
+    ): Self = StObject.set(x, "asyncValidators", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAsyncValidators(value: AsyncValidatorFn | js.Array[AsyncValidatorFn]): Self = this.set("asyncValidators", value.asInstanceOf[js.Any])
+    def setAsyncValidatorsNull: Self = StObject.set(x, "asyncValidators", null)
     
     @scala.inline
-    def deleteAsyncValidators: Self = this.set("asyncValidators", js.undefined)
+    def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
     @scala.inline
-    def setAsyncValidatorsNull: Self = this.set("asyncValidators", null)
+    def setAsyncValidatorsVarargs(value: AsyncValidatorFn*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
     
     @scala.inline
-    def setUpdateOn(value: change | blur | submit): Self = this.set("updateOn", value.asInstanceOf[js.Any])
+    def setUpdateOn(value: change | blur | submit): Self = StObject.set(x, "updateOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteUpdateOn: Self = this.set("updateOn", js.undefined)
+    def setUpdateOnUndefined: Self = StObject.set(x, "updateOn", js.undefined)
     
     @scala.inline
-    def setValidatorsVarargs(value: ValidatorFn*): Self = this.set("validators", js.Array(value :_*))
+    def setValidators(value: ValidatorFn | js.Array[ValidatorFn]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidatorsFunction1(value: /* control */ AbstractControl => ValidationErrors | Null): Self = this.set("validators", js.Any.fromFunction1(value))
+    def setValidatorsFunction1(value: /* control */ AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validators", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setValidators(value: ValidatorFn | js.Array[ValidatorFn]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
     @scala.inline
-    def deleteValidators: Self = this.set("validators", js.undefined)
+    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
     @scala.inline
-    def setValidatorsNull: Self = this.set("validators", null)
+    def setValidatorsVarargs(value: ValidatorFn*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

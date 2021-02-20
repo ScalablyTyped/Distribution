@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelingJobAlgorithmsConfig extends js.Object {
+trait LabelingJobAlgorithmsConfig extends StObject {
   
   /**
     * At the end of an auto-label job Ground Truth sends the Amazon Resource Name (ARN) of the final model used for auto-labeling. You can use this model as the starting point for subsequent similar jobs by providing the ARN of the model here. 
@@ -31,33 +32,21 @@ object LabelingJobAlgorithmsConfig {
   }
   
   @scala.inline
-  implicit class LabelingJobAlgorithmsConfigOps[Self <: LabelingJobAlgorithmsConfig] (val x: Self) extends AnyVal {
+  implicit class LabelingJobAlgorithmsConfigMutableBuilder[Self <: LabelingJobAlgorithmsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "InitialActiveLearningModelArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInitialActiveLearningModelArnUndefined: Self = StObject.set(x, "InitialActiveLearningModelArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelingJobAlgorithmSpecificationArn(value: LabelingJobAlgorithmSpecificationArn): Self = StObject.set(x, "LabelingJobAlgorithmSpecificationArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingJobAlgorithmSpecificationArn(value: LabelingJobAlgorithmSpecificationArn): Self = this.set("LabelingJobAlgorithmSpecificationArn", value.asInstanceOf[js.Any])
+    def setLabelingJobResourceConfig(value: LabelingJobResourceConfig): Self = StObject.set(x, "LabelingJobResourceConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInitialActiveLearningModelArn(value: ModelArn): Self = this.set("InitialActiveLearningModelArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInitialActiveLearningModelArn: Self = this.set("InitialActiveLearningModelArn", js.undefined)
-    
-    @scala.inline
-    def setLabelingJobResourceConfig(value: LabelingJobResourceConfig): Self = this.set("LabelingJobResourceConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabelingJobResourceConfig: Self = this.set("LabelingJobResourceConfig", js.undefined)
+    def setLabelingJobResourceConfigUndefined: Self = StObject.set(x, "LabelingJobResourceConfig", js.undefined)
   }
 }

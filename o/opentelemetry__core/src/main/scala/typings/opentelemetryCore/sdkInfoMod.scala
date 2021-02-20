@@ -1,22 +1,40 @@
 package typings.opentelemetryCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@opentelemetry/core/build/src/platform/browser/sdk-info", JSImport.Namespace)
-@js.native
-object sdkInfoMod extends js.Object {
+object sdkInfoMod {
   
-  @js.native
-  object SDK_INFO extends js.Object {
+  object SDK_INFO {
     
-    var LANGUAGE: String = js.native
+    @JSImport("@opentelemetry/core/build/src/platform/browser/sdk-info", "SDK_INFO")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var NAME: String = js.native
+    @JSImport("@opentelemetry/core/build/src/platform/browser/sdk-info", "SDK_INFO.LANGUAGE")
+    @js.native
+    def LANGUAGE: String = js.native
+    @scala.inline
+    def LANGUAGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LANGUAGE")(x.asInstanceOf[js.Any])
     
-    var RUNTIME: String = js.native
+    @JSImport("@opentelemetry/core/build/src/platform/browser/sdk-info", "SDK_INFO.NAME")
+    @js.native
+    def NAME: String = js.native
+    @scala.inline
+    def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
     
-    var VERSION: String = js.native
+    @JSImport("@opentelemetry/core/build/src/platform/browser/sdk-info", "SDK_INFO.RUNTIME")
+    @js.native
+    def RUNTIME: String = js.native
+    @scala.inline
+    def RUNTIME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNTIME")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@opentelemetry/core/build/src/platform/browser/sdk-info", "SDK_INFO.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    @scala.inline
+    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
 }

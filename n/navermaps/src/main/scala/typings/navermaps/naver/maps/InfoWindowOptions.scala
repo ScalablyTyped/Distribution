@@ -1,12 +1,13 @@
 package typings.navermaps.naver.maps
 
 import typings.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InfoWindowOptions extends js.Object {
+trait InfoWindowOptions extends StObject {
   
   var anchorColor: js.UndefOr[String] = js.native
   
@@ -43,93 +44,81 @@ object InfoWindowOptions {
   }
   
   @scala.inline
-  implicit class InfoWindowOptionsOps[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
+  implicit class InfoWindowOptionsMutableBuilder[Self <: InfoWindowOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnchorColor(value: String): Self = StObject.set(x, "anchorColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnchorColorUndefined: Self = StObject.set(x, "anchorColor", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnchorSize(value: Size | SizeLiteral): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: String | HTMLElement): Self = this.set("content", value.asInstanceOf[js.Any])
+    def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
     
     @scala.inline
-    def setAnchorColor(value: String): Self = this.set("anchorColor", value.asInstanceOf[js.Any])
+    def setAnchorSkew(value: Boolean): Self = StObject.set(x, "anchorSkew", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorColor: Self = this.set("anchorColor", js.undefined)
+    def setAnchorSkewUndefined: Self = StObject.set(x, "anchorSkew", js.undefined)
     
     @scala.inline
-    def setAnchorSize(value: Size | SizeLiteral): Self = this.set("anchorSize", value.asInstanceOf[js.Any])
+    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorSize: Self = this.set("anchorSize", js.undefined)
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def setAnchorSkew(value: Boolean): Self = this.set("anchorSkew", value.asInstanceOf[js.Any])
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAnchorSkew: Self = this.set("anchorSkew", js.undefined)
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setDisableAnchor(value: Boolean): Self = StObject.set(x, "disableAnchor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setDisableAnchorUndefined: Self = StObject.set(x, "disableAnchor", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setDisableAutoPan(value: Boolean): Self = StObject.set(x, "disableAutoPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAnchor(value: Boolean): Self = this.set("disableAnchor", value.asInstanceOf[js.Any])
+    def setDisableAutoPanUndefined: Self = StObject.set(x, "disableAutoPan", js.undefined)
     
     @scala.inline
-    def deleteDisableAnchor: Self = this.set("disableAnchor", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableAutoPan(value: Boolean): Self = this.set("disableAutoPan", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteDisableAutoPan: Self = this.set("disableAutoPan", js.undefined)
+    def setPixelOffset(value: Point | PointLiteral): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setPosition(value: Coord | CoordLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelOffset(value: Point | PointLiteral): Self = this.set("pixelOffset", value.asInstanceOf[js.Any])
+    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def deletePixelOffset: Self = this.set("pixelOffset", js.undefined)
+    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPosition(value: Coord | CoordLiteral): Self = this.set("position", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosition: Self = this.set("position", js.undefined)
-    
-    @scala.inline
-    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

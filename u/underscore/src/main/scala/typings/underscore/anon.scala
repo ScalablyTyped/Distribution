@@ -11,16 +11,15 @@ import typings.underscore.mod.List
 import typings.underscore.mod.MemoCollectionIterator
 import typings.underscore.mod.TypeOfCollection
 import typings.underscore.mod.TypeOfList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Fn0[T, V] extends js.Object {
+  trait Fn0[T, V] extends StObject {
     
     def apply(): Chain[IterateeResult[Null, T], js.Array[IterateeResult[Null, T]]] = js.native
     def apply(iteratee: js.UndefOr[scala.Nothing], context: js.Any): Chain[
@@ -49,7 +48,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Fn1[V] extends js.Object {
+  trait Fn1[V] extends StObject {
     
     def apply[TResult](
       iteratee: MemoCollectionIterator[
@@ -67,14 +66,14 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait Fn2[T] extends js.Object {
+  trait Fn2[T] extends StObject {
     
     def apply(): ChainSingle[js.UndefOr[T]] = js.native
     def apply(n: Double): Chain[T, js.Array[T]] = js.native
   }
   
   @js.native
-  trait FnCall extends js.Object {
+  trait FnCall extends StObject {
     
     def apply[V /* <: Collection[_] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V, scala.Nothing]]] = js.native
     def apply[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], TypeOfCollection[V, scala.Nothing]]] = js.native
@@ -94,7 +93,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallCollectionIterateeMemoContext extends js.Object {
+  trait FnCallCollectionIterateeMemoContext extends StObject {
     
     def apply[V /* <: Collection[_] */, TResult](
       collection: V,
@@ -118,7 +117,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallIsSortedIterateeContext[V, T] extends js.Object {
+  trait FnCallIsSortedIterateeContext[V, T] extends StObject {
     
     def apply(): Chain[T, js.Array[T]] = js.native
     def apply(
@@ -139,7 +138,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallIsSortedIterateeCotext[V, T] extends js.Object {
+  trait FnCallIsSortedIterateeCotext[V, T] extends StObject {
     
     def apply(): js.Array[T] = js.native
     def apply(
@@ -160,7 +159,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallIterateeContext[T, V] extends js.Object {
+  trait FnCallIterateeContext[T, V] extends StObject {
     
     def apply(): js.Array[IterateeResult[Null, T]] = js.native
     def apply(iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], T]] = js.native
@@ -180,7 +179,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallIterateeMemoContext[V] extends js.Object {
+  trait FnCallIterateeMemoContext[V] extends StObject {
     
     def apply[TResult](
       iteratee: MemoCollectionIterator[
@@ -198,7 +197,7 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallListIsSortedIterateeContext extends js.Object {
+  trait FnCallListIsSortedIterateeContext extends StObject {
     
     def apply[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
     def apply[V /* <: List[_] */](
@@ -225,14 +224,14 @@ object anon extends js.Object {
   }
   
   @js.native
-  trait FnCallListN extends js.Object {
+  trait FnCallListN extends StObject {
     
     def apply[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
     def apply[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   }
   
   @js.native
-  trait FnCallN[T] extends js.Object {
+  trait FnCallN[T] extends StObject {
     
     def apply(): js.UndefOr[T] = js.native
     def apply(n: Double): js.Array[T] = js.native

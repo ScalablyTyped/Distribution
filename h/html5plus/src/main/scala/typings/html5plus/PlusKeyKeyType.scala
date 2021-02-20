@@ -1,5 +1,6 @@
 package typings.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 参考: [http://www.html5plus.org/doc/zh_cn/key.html](http://www.html5plus.org/doc/zh_cn/key.html)
   */
 @js.native
-trait PlusKeyKeyType extends js.Object {
+trait PlusKeyKeyType extends StObject {
   
   /**
     * 设备“返回”按钮按键事件
@@ -88,66 +89,54 @@ object PlusKeyKeyType {
   }
   
   @scala.inline
-  implicit class PlusKeyKeyTypeOps[Self <: PlusKeyKeyType] (val x: Self) extends AnyVal {
+  implicit class PlusKeyKeyTypeMutableBuilder[Self <: PlusKeyKeyType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackbutton(value: String): Self = StObject.set(x, "backbutton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackbuttonUndefined: Self = StObject.set(x, "backbutton", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setKeydown(value: String): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackbutton(value: String): Self = this.set("backbutton", value.asInstanceOf[js.Any])
+    def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
     
     @scala.inline
-    def deleteBackbutton: Self = this.set("backbutton", js.undefined)
+    def setKeyup(value: String): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeydown(value: String): Self = this.set("keydown", value.asInstanceOf[js.Any])
+    def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
     
     @scala.inline
-    def deleteKeydown: Self = this.set("keydown", js.undefined)
+    def setLongpressed(value: String): Self = StObject.set(x, "longpressed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyup(value: String): Self = this.set("keyup", value.asInstanceOf[js.Any])
+    def setLongpressedUndefined: Self = StObject.set(x, "longpressed", js.undefined)
     
     @scala.inline
-    def deleteKeyup: Self = this.set("keyup", js.undefined)
+    def setMenubutton(value: String): Self = StObject.set(x, "menubutton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLongpressed(value: String): Self = this.set("longpressed", value.asInstanceOf[js.Any])
+    def setMenubuttonUndefined: Self = StObject.set(x, "menubutton", js.undefined)
     
     @scala.inline
-    def deleteLongpressed: Self = this.set("longpressed", js.undefined)
+    def setSearchbutton(value: String): Self = StObject.set(x, "searchbutton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMenubutton(value: String): Self = this.set("menubutton", value.asInstanceOf[js.Any])
+    def setSearchbuttonUndefined: Self = StObject.set(x, "searchbutton", js.undefined)
     
     @scala.inline
-    def deleteMenubutton: Self = this.set("menubutton", js.undefined)
+    def setVolumedownbutton(value: String): Self = StObject.set(x, "volumedownbutton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSearchbutton(value: String): Self = this.set("searchbutton", value.asInstanceOf[js.Any])
+    def setVolumedownbuttonUndefined: Self = StObject.set(x, "volumedownbutton", js.undefined)
     
     @scala.inline
-    def deleteSearchbutton: Self = this.set("searchbutton", js.undefined)
+    def setVolumeupbutton(value: String): Self = StObject.set(x, "volumeupbutton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVolumedownbutton(value: String): Self = this.set("volumedownbutton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumedownbutton: Self = this.set("volumedownbutton", js.undefined)
-    
-    @scala.inline
-    def setVolumeupbutton(value: String): Self = this.set("volumeupbutton", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVolumeupbutton: Self = this.set("volumeupbutton", js.undefined)
+    def setVolumeupbuttonUndefined: Self = StObject.set(x, "volumeupbutton", js.undefined)
   }
 }

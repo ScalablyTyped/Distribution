@@ -1,12 +1,13 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.viz.dxFunnelItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Percent extends js.Object {
+trait Percent extends StObject {
   
   var item: js.UndefOr[dxFunnelItem] = js.native
   
@@ -27,48 +28,36 @@ object Percent {
   }
   
   @scala.inline
-  implicit class PercentOps[Self <: Percent] (val x: Self) extends AnyVal {
+  implicit class PercentMutableBuilder[Self <: Percent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setItem(value: dxFunnelItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: dxFunnelItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    def setPercentText(value: String): Self = StObject.set(x, "percentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItem: Self = this.set("item", js.undefined)
+    def setPercentTextUndefined: Self = StObject.set(x, "percentText", js.undefined)
     
     @scala.inline
-    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
     @scala.inline
-    def deletePercent: Self = this.set("percent", js.undefined)
+    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPercentText(value: String): Self = this.set("percentText", value.asInstanceOf[js.Any])
+    def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePercentText: Self = this.set("percentText", js.undefined)
+    def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
     @scala.inline
-    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValue: Self = this.set("value", js.undefined)
-    
-    @scala.inline
-    def setValueText(value: String): Self = this.set("valueText", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteValueText: Self = this.set("valueText", js.undefined)
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

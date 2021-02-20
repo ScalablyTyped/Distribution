@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WriteJourneyRequest extends js.Object {
+trait WriteJourneyRequest extends StObject {
   
   /**
     * A map that contains a set of Activity objects, one object for each activity in the journey. For each Activity object, the key is the unique identifier (string) for an activity and the value is the settings for the activity. An activity identifier can contain a maximum of 100 characters. The characters must be alphanumeric characters.
@@ -76,87 +77,75 @@ object WriteJourneyRequest {
   }
   
   @scala.inline
-  implicit class WriteJourneyRequestOps[Self <: WriteJourneyRequest] (val x: Self) extends AnyVal {
+  implicit class WriteJourneyRequestMutableBuilder[Self <: WriteJourneyRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActivities(value: MapOfActivity): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationDate(value: string): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
     @scala.inline
-    def setActivities(value: MapOfActivity): Self = this.set("Activities", value.asInstanceOf[js.Any])
+    def setLastModifiedDate(value: string): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivities: Self = this.set("Activities", js.undefined)
+    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     @scala.inline
-    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    def setLimits(value: JourneyLimits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    def setLimitsUndefined: Self = StObject.set(x, "Limits", js.undefined)
     
     @scala.inline
-    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    def setLocalTime(value: boolean): Self = StObject.set(x, "LocalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    def setLocalTimeUndefined: Self = StObject.set(x, "LocalTime", js.undefined)
     
     @scala.inline
-    def setLimits(value: JourneyLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLimits: Self = this.set("Limits", js.undefined)
+    def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocalTime(value: boolean): Self = this.set("LocalTime", value.asInstanceOf[js.Any])
+    def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     
     @scala.inline
-    def deleteLocalTime: Self = this.set("LocalTime", js.undefined)
+    def setRefreshFrequency(value: string): Self = StObject.set(x, "RefreshFrequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
+    def setRefreshFrequencyUndefined: Self = StObject.set(x, "RefreshFrequency", js.undefined)
     
     @scala.inline
-    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+    def setSchedule(value: JourneySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefreshFrequency(value: string): Self = this.set("RefreshFrequency", value.asInstanceOf[js.Any])
+    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
     @scala.inline
-    def deleteRefreshFrequency: Self = this.set("RefreshFrequency", js.undefined)
+    def setStartActivity(value: string): Self = StObject.set(x, "StartActivity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSchedule(value: JourneySchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    def setStartActivityUndefined: Self = StObject.set(x, "StartActivity", js.undefined)
     
     @scala.inline
-    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    def setStartCondition(value: StartCondition): Self = StObject.set(x, "StartCondition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartActivity(value: string): Self = this.set("StartActivity", value.asInstanceOf[js.Any])
+    def setStartConditionUndefined: Self = StObject.set(x, "StartCondition", js.undefined)
     
     @scala.inline
-    def deleteStartActivity: Self = this.set("StartActivity", js.undefined)
+    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartCondition(value: StartCondition): Self = this.set("StartCondition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartCondition: Self = this.set("StartCondition", js.undefined)
-    
-    @scala.inline
-    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteState: Self = this.set("State", js.undefined)
+    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

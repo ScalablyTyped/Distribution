@@ -5,16 +5,16 @@ import typings.mendixmodelsdk.anon.HandleError
 import typings.mendixmodelsdk.imodeleventMod.IDeltaEvent
 import typings.mendixmodelsdk.imodeleventMod.IFileEvent
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk/dist/sdk/internal/model-events/ModelEventReceiver", JSImport.Namespace)
-@js.native
-object modelEventReceiverMod extends js.Object {
+object modelEventReceiverMod {
   
+  @JSImport("mendixmodelsdk/dist/sdk/internal/model-events/ModelEventReceiver", "ModelEventReceiver")
   @js.native
-  class ModelEventReceiver protected () extends js.Object {
+  class ModelEventReceiver protected () extends StObject {
     def this(workingCopyId: String, client: IModelServerClient, errorHandler: HandleError) = this()
     
     var client: js.Any = js.native
@@ -23,7 +23,7 @@ object modelEventReceiverMod extends js.Object {
     
     var errorHandler: js.Any = js.native
     
-    var eventSource: ^  | Null = js.native
+    var eventSource: ^ | Null = js.native
     
     var fileEventEmitter: js.Any = js.native
     

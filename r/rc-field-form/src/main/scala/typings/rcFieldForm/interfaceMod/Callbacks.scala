@@ -1,11 +1,12 @@
 package typings.rcFieldForm.interfaceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Callbacks[Values] extends js.Object {
+trait Callbacks[Values] extends StObject {
   
   var onFieldsChange: js.UndefOr[
     js.Function2[/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData], Unit]
@@ -26,42 +27,30 @@ object Callbacks {
   }
   
   @scala.inline
-  implicit class CallbacksOps[Self <: Callbacks[_], Values] (val x: Self with Callbacks[Values]) extends AnyVal {
+  implicit class CallbacksMutableBuilder[Self <: Callbacks[_], Values] (val x: Self with Callbacks[Values]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnFieldsChange(value: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit): Self = StObject.set(x, "onFieldsChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnFieldsChangeUndefined: Self = StObject.set(x, "onFieldsChange", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnFinish(value: /* values */ Values => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setOnFieldsChange(value: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Unit): Self = this.set("onFieldsChange", js.Any.fromFunction2(value))
+    def setOnFinishFailed(value: /* errorInfo */ ValidateErrorEntity[Values] => Unit): Self = StObject.set(x, "onFinishFailed", js.Any.fromFunction1(value))
     
     @scala.inline
-    def deleteOnFieldsChange: Self = this.set("onFieldsChange", js.undefined)
+    def setOnFinishFailedUndefined: Self = StObject.set(x, "onFinishFailed", js.undefined)
     
     @scala.inline
-    def setOnFinish(value: /* values */ Values => Unit): Self = this.set("onFinish", js.Any.fromFunction1(value))
+    def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
     
     @scala.inline
-    def deleteOnFinish: Self = this.set("onFinish", js.undefined)
+    def setOnValuesChange(value: (/* changedValues */ js.Any, /* values */ Values) => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setOnFinishFailed(value: /* errorInfo */ ValidateErrorEntity[Values] => Unit): Self = this.set("onFinishFailed", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def deleteOnFinishFailed: Self = this.set("onFinishFailed", js.undefined)
-    
-    @scala.inline
-    def setOnValuesChange(value: (/* changedValues */ js.Any, /* values */ Values) => Unit): Self = this.set("onValuesChange", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def deleteOnValuesChange: Self = this.set("onValuesChange", js.undefined)
+    def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
   }
 }

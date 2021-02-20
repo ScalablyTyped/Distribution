@@ -4,14 +4,14 @@ import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager
 import typings.babylonjs.webXRTypesMod.WebXRRenderTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/XR/webXRManagedOutputCanvas", JSImport.Namespace)
-@js.native
-object webXRManagedOutputCanvasMod extends js.Object {
+object webXRManagedOutputCanvasMod {
   
+  @JSImport("babylonjs/XR/webXRManagedOutputCanvas", "WebXRManagedOutputCanvas")
   @js.native
   class WebXRManagedOutputCanvas protected () extends WebXRRenderTarget {
     /**
@@ -44,8 +44,9 @@ object webXRManagedOutputCanvasMod extends js.Object {
     var onXRLayerInitObservable: Observable[XRWebGLLayer] = js.native
   }
   
+  @JSImport("babylonjs/XR/webXRManagedOutputCanvas", "WebXRManagedOutputCanvasOptions")
   @js.native
-  class WebXRManagedOutputCanvasOptions () extends js.Object {
+  class WebXRManagedOutputCanvasOptions () extends StObject {
     
     /**
       * An optional canvas in case you wish to create it yourself and provide it here.
@@ -64,15 +65,18 @@ object webXRManagedOutputCanvasMod extends js.Object {
     var newCanvasCssStyle: js.UndefOr[String] = js.native
   }
   /* static members */
-  @js.native
-  object WebXRManagedOutputCanvasOptions extends js.Object {
+  object WebXRManagedOutputCanvasOptions {
     
     /**
       * Get the default values of the configuration object
       * @param engine defines the engine to use (can be null)
       * @returns default values of this configuration object
       */
+    @JSImport("babylonjs/XR/webXRManagedOutputCanvas", "WebXRManagedOutputCanvasOptions.GetDefaults")
+    @js.native
     def GetDefaults(): WebXRManagedOutputCanvasOptions = js.native
+    @JSImport("babylonjs/XR/webXRManagedOutputCanvas", "WebXRManagedOutputCanvasOptions.GetDefaults")
+    @js.native
     def GetDefaults(engine: ThinEngine): WebXRManagedOutputCanvasOptions = js.native
   }
 }

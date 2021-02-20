@@ -1,5 +1,6 @@
 package typings.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Attr ()
   extends typings.nodegit.attrMod.Attr
 /* static members */
-@JSImport("nodegit", "Attr")
-@js.native
-object Attr extends js.Object {
+object Attr {
   
+  @JSImport("nodegit", "Attr.addMacro")
+  @js.native
   def addMacro(repo: typings.nodegit.repositoryMod.Repository, name: String, values: String): Double = js.native
   
+  @JSImport("nodegit", "Attr.cacheFlush")
+  @js.native
   def cacheFlush(repo: typings.nodegit.repositoryMod.Repository): Unit = js.native
   
   /**
@@ -25,6 +28,8 @@ object Attr extends js.Object {
     * @param name - The name of the attribute to look up.
     * @returns - Output of the value of the attribute. Use the GIT_ATTR_...
     */
+  @JSImport("nodegit", "Attr.get")
+  @js.native
   def get(repo: typings.nodegit.repositoryMod.Repository, flags: Double, path: String, name: String): js.Promise[String] = js.native
   
   /**
@@ -35,6 +40,8 @@ object Attr extends js.Object {
     * @param numAttr - The number of attributes being looked up
     * @param names - An array of num_attr strings containing attribute names.
     */
+  @JSImport("nodegit", "Attr.getMany")
+  @js.native
   def getMany(
     repo: typings.nodegit.repositoryMod.Repository,
     flags: Double,
@@ -47,5 +54,7 @@ object Attr extends js.Object {
     * @param attr - The attribute
     * @returns - the value type for the attribute
     */
+  @JSImport("nodegit", "Attr.value")
+  @js.native
   def value(attr: String): Double = js.native
 }

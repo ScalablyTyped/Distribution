@@ -4,6 +4,7 @@ import typings.firmata.firmataNumbers.`0`
 import typings.firmata.firmataNumbers.`1`
 import typings.firmata.firmataNumbers.`2`
 import typings.firmata.firmataNumbers.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firmata.firmataNumbers.`2`
   - typings.firmata.firmataNumbers.`3`
 */
-trait I2C_MODE extends js.Object
+trait I2C_MODE extends StObject
 object I2C_MODE {
   
   @scala.inline

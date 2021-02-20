@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.node.tlsMod.PeerCertificate
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // For property types and documentation see:
 // http://nodejs.org/api/tls.html#tls_tls_connect_options_callback
 @js.native
-trait ISSLConfig extends js.Object {
+trait ISSLConfig extends StObject {
   
   var NPNProtocols: js.UndefOr[(js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array] = js.native
   
@@ -41,87 +42,75 @@ object ISSLConfig {
   }
   
   @scala.inline
-  implicit class ISSLConfigOps[Self <: ISSLConfig] (val x: Self) extends AnyVal {
+  implicit class ISSLConfigMutableBuilder[Self <: ISSLConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
     
     @scala.inline
-    def setNPNProtocolsVarargs(value: (Buffer | String | Uint8Array)*): Self = this.set("NPNProtocols", js.Array(value :_*))
+    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNPNProtocols(value: (js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array): Self = this.set("NPNProtocols", value.asInstanceOf[js.Any])
+    def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     @scala.inline
-    def deleteNPNProtocols: Self = this.set("NPNProtocols", js.undefined)
+    def setCertVarargs(value: (String | Buffer)*): Self = StObject.set(x, "cert", js.Array(value :_*))
     
     @scala.inline
-    def setCaVarargs(value: (String | Buffer)*): Self = this.set("ca", js.Array(value :_*))
+    def setCheckServerIdentity(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("ca", value.asInstanceOf[js.Any])
+    def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     
     @scala.inline
-    def deleteCa: Self = this.set("ca", js.undefined)
+    def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertVarargs(value: (String | Buffer)*): Self = this.set("cert", js.Array(value :_*))
+    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("cert", value.asInstanceOf[js.Any])
+    def setKeyVarargs(value: (Buffer | js.Object)*): Self = StObject.set(x, "key", js.Array(value :_*))
     
     @scala.inline
-    def deleteCert: Self = this.set("cert", js.undefined)
+    def setNPNProtocols(value: (js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCheckServerIdentity(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = this.set("checkServerIdentity", js.Any.fromFunction2(value))
+    def setNPNProtocolsUndefined: Self = StObject.set(x, "NPNProtocols", js.undefined)
     
     @scala.inline
-    def deleteCheckServerIdentity: Self = this.set("checkServerIdentity", js.undefined)
+    def setNPNProtocolsVarargs(value: (Buffer | String | Uint8Array)*): Self = StObject.set(x, "NPNProtocols", js.Array(value :_*))
     
     @scala.inline
-    def setKeyVarargs(value: (Buffer | js.Object)*): Self = this.set("key", js.Array(value :_*))
+    def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = this.set("key", value.asInstanceOf[js.Any])
+    def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
     
     @scala.inline
-    def deleteKey: Self = this.set("key", js.undefined)
+    def setPfx(value: String | Buffer | (js.Array[String | Buffer | js.Object])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
     
     @scala.inline
-    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = StObject.set(x, "pfx", js.Array(value :_*))
     
     @scala.inline
-    def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = this.set("pfx", js.Array(value :_*))
+    def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPfx(value: String | Buffer | (js.Array[String | Buffer | js.Object])): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     
     @scala.inline
-    def deletePfx: Self = this.set("pfx", js.undefined)
+    def setSecureOptions(value: Double): Self = StObject.set(x, "secureOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
-    
-    @scala.inline
-    def setSecureOptions(value: Double): Self = this.set("secureOptions", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecureOptions: Self = this.set("secureOptions", js.undefined)
+    def setSecureOptionsUndefined: Self = StObject.set(x, "secureOptions", js.undefined)
   }
 }

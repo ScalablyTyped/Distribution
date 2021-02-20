@@ -2,12 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint extends js.Object {
+trait EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
@@ -43,48 +44,36 @@ object EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint {
   }
   
   @scala.inline
-  implicit class EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpointOps[Self <: EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  implicit class EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRunners(value: js.Array[Double]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnterprise(value: String): Self = this.set("enterprise", value.asInstanceOf[js.Any])
+    def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setRunnersVarargs(value: Double*): Self = StObject.set(x, "runners", js.Array(value :_*))
     
     @scala.inline
-    def setRunnersVarargs(value: Double*): Self = this.set("runners", js.Array(value :_*))
+    def setSelected_organization_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_organization_ids", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRunners(value: js.Array[Double]): Self = this.set("runners", value.asInstanceOf[js.Any])
+    def setSelected_organization_idsUndefined: Self = StObject.set(x, "selected_organization_ids", js.undefined)
     
     @scala.inline
-    def deleteRunners: Self = this.set("runners", js.undefined)
+    def setSelected_organization_idsVarargs(value: Double*): Self = StObject.set(x, "selected_organization_ids", js.Array(value :_*))
     
     @scala.inline
-    def setSelected_organization_idsVarargs(value: Double*): Self = this.set("selected_organization_ids", js.Array(value :_*))
+    def setVisibility(value: selected | all): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelected_organization_ids(value: js.Array[Double]): Self = this.set("selected_organization_ids", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSelected_organization_ids: Self = this.set("selected_organization_ids", js.undefined)
-    
-    @scala.inline
-    def setVisibility(value: selected | all): Self = this.set("visibility", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

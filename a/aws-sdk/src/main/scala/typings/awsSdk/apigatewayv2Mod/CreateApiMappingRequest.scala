@@ -1,11 +1,12 @@
 package typings.awsSdk.apigatewayv2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateApiMappingRequest extends js.Object {
+trait CreateApiMappingRequest extends StObject {
   
   /**
     * The API identifier.
@@ -36,33 +37,21 @@ object CreateApiMappingRequest {
   }
   
   @scala.inline
-  implicit class CreateApiMappingRequestOps[Self <: CreateApiMappingRequest] (val x: Self) extends AnyVal {
+  implicit class CreateApiMappingRequestMutableBuilder[Self <: CreateApiMappingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApiMappingKey(value: SelectionKey): Self = StObject.set(x, "ApiMappingKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setApiMappingKeyUndefined: Self = StObject.set(x, "ApiMappingKey", js.undefined)
     
     @scala.inline
-    def setApiId(value: Id): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDomainName(value: string): Self = this.set("DomainName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStage(value: StringWithLengthBetween1And128): Self = this.set("Stage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setApiMappingKey(value: SelectionKey): Self = this.set("ApiMappingKey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteApiMappingKey: Self = this.set("ApiMappingKey", js.undefined)
+    def setStage(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
   }
 }

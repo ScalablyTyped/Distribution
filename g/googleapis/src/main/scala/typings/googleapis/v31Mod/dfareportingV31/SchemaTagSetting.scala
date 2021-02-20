@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Tag Settings
   */
 @js.native
-trait SchemaTagSetting extends js.Object {
+trait SchemaTagSetting extends StObject {
   
   /**
     * Additional key-values to be included in tags. Each key-value pair must be
@@ -46,42 +47,30 @@ object SchemaTagSetting {
   }
   
   @scala.inline
-  implicit class SchemaTagSettingOps[Self <: SchemaTagSetting] (val x: Self) extends AnyVal {
+  implicit class SchemaTagSettingMutableBuilder[Self <: SchemaTagSetting] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditionalKeyValues(value: String): Self = StObject.set(x, "additionalKeyValues", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalKeyValuesUndefined: Self = StObject.set(x, "additionalKeyValues", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIncludeClickThroughUrls(value: Boolean): Self = StObject.set(x, "includeClickThroughUrls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalKeyValues(value: String): Self = this.set("additionalKeyValues", value.asInstanceOf[js.Any])
+    def setIncludeClickThroughUrlsUndefined: Self = StObject.set(x, "includeClickThroughUrls", js.undefined)
     
     @scala.inline
-    def deleteAdditionalKeyValues: Self = this.set("additionalKeyValues", js.undefined)
+    def setIncludeClickTracking(value: Boolean): Self = StObject.set(x, "includeClickTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeClickThroughUrls(value: Boolean): Self = this.set("includeClickThroughUrls", value.asInstanceOf[js.Any])
+    def setIncludeClickTrackingUndefined: Self = StObject.set(x, "includeClickTracking", js.undefined)
     
     @scala.inline
-    def deleteIncludeClickThroughUrls: Self = this.set("includeClickThroughUrls", js.undefined)
+    def setKeywordOption(value: String): Self = StObject.set(x, "keywordOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncludeClickTracking(value: Boolean): Self = this.set("includeClickTracking", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIncludeClickTracking: Self = this.set("includeClickTracking", js.undefined)
-    
-    @scala.inline
-    def setKeywordOption(value: String): Self = this.set("keywordOption", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKeywordOption: Self = this.set("keywordOption", js.undefined)
+    def setKeywordOptionUndefined: Self = StObject.set(x, "keywordOption", js.undefined)
   }
 }

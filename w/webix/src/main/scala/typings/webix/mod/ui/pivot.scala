@@ -3,6 +3,7 @@ package typings.webix.mod.ui
 import typings.webix.mod.DataStore
 import typings.webix.mod.WebixCallback
 import typings.webix.mod.WebixTemplate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

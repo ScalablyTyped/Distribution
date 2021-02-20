@@ -1,11 +1,12 @@
 package typings.antd.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentStackString extends js.Object {
+trait ComponentStackString extends StObject {
   
   var componentStack: String = js.native
 }
@@ -18,21 +19,9 @@ object ComponentStackString {
   }
   
   @scala.inline
-  implicit class ComponentStackStringOps[Self <: ComponentStackString] (val x: Self) extends AnyVal {
+  implicit class ComponentStackStringMutableBuilder[Self <: ComponentStackString] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setComponentStack(value: String): Self = this.set("componentStack", value.asInstanceOf[js.Any])
+    def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
   }
 }

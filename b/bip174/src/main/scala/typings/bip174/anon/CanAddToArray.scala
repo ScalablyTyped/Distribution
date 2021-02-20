@@ -3,12 +3,13 @@ package typings.bip174.anon
 import typings.bip174.interfacesMod.Bip32Derivation
 import typings.bip174.interfacesMod.KeyValue
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CanAddToArray extends js.Object {
+trait CanAddToArray extends StObject {
   
   def canAddToArray(array: js.Array[Bip32Derivation], item: Bip32Derivation, dupeSet: Set[String]): Boolean = js.native
   
@@ -35,33 +36,21 @@ object CanAddToArray {
   }
   
   @scala.inline
-  implicit class CanAddToArrayOps[Self <: CanAddToArray] (val x: Self) extends AnyVal {
+  implicit class CanAddToArrayMutableBuilder[Self <: CanAddToArray] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanAddToArray(value: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDecode(value: KeyValue => Bip32Derivation): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCanAddToArray(value: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean): Self = this.set("canAddToArray", js.Any.fromFunction3(value))
+    def setEncode(value: Bip32Derivation => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean): Self = this.set("check", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setDecode(value: KeyValue => Bip32Derivation): Self = this.set("decode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setEncode(value: Bip32Derivation => KeyValue): Self = this.set("encode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setExpected(value: String): Self = this.set("expected", value.asInstanceOf[js.Any])
+    def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

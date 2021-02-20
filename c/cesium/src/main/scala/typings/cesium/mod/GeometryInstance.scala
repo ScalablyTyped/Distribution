@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GeometryInstance")
 @js.native
-class GeometryInstance protected () extends js.Object {
+class GeometryInstance protected () extends StObject {
   def this(options: typings.cesium.anon.Geometry) = this()
   
   var attributes: js.Any = js.native

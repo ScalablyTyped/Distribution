@@ -1,12 +1,13 @@
 package typings.mochaPhantomjs
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MochaPhantomJS extends js.Object {
+trait MochaPhantomJS extends StObject {
   
   var columns: Double = js.native
   
@@ -39,39 +40,27 @@ object MochaPhantomJS {
   }
   
   @scala.inline
-  implicit class MochaPhantomJSOps[Self <: MochaPhantomJS] (val x: Self) extends AnyVal {
+  implicit class MochaPhantomJSMutableBuilder[Self <: MochaPhantomJS] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCustomizeMocha(value: MochaPhantomJSOptions => Unit): Self = StObject.set(x, "customizeMocha", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMochaStartWait(value: Double): Self = StObject.set(x, "mochaStartWait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomizeMocha(value: MochaPhantomJSOptions => Unit): Self = this.set("customizeMocha", js.Any.fromFunction1(value))
+    def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setMochaStartWait(value: Double): Self = this.set("mochaStartWait", value.asInstanceOf[js.Any])
+    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutput(value: js.Any): Self = this.set("output", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRun(value: () => Unit): Self = this.set("run", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setStartTime(value: Date): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,7 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.activexLibreoffice.com_.sun.star.util.XCancellable
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -190,42 +191,30 @@ object PreparedStatement {
   }
   
   @scala.inline
-  implicit class PreparedStatementOps[Self <: PreparedStatement] (val x: Self) extends AnyVal {
+  implicit class PreparedStatementMutableBuilder[Self <: PreparedStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCursorName(value: String): Self = StObject.set(x, "CursorName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFetchDirection(value: Double): Self = StObject.set(x, "FetchDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFetchSize(value: Double): Self = StObject.set(x, "FetchSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCursorName(value: String): Self = this.set("CursorName", value.asInstanceOf[js.Any])
+    def setMaxFieldSize(value: Double): Self = StObject.set(x, "MaxFieldSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchDirection(value: Double): Self = this.set("FetchDirection", value.asInstanceOf[js.Any])
+    def setMaxRows(value: Double): Self = StObject.set(x, "MaxRows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFetchSize(value: Double): Self = this.set("FetchSize", value.asInstanceOf[js.Any])
+    def setQueryTimeOut(value: Double): Self = StObject.set(x, "QueryTimeOut", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxFieldSize(value: Double): Self = this.set("MaxFieldSize", value.asInstanceOf[js.Any])
+    def setResultSetConcurrency(value: Double): Self = StObject.set(x, "ResultSetConcurrency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxRows(value: Double): Self = this.set("MaxRows", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueryTimeOut(value: Double): Self = this.set("QueryTimeOut", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultSetConcurrency(value: Double): Self = this.set("ResultSetConcurrency", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResultSetType(value: Double): Self = this.set("ResultSetType", value.asInstanceOf[js.Any])
+    def setResultSetType(value: Double): Self = StObject.set(x, "ResultSetType", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.knockoutEs5
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutEs5 extends js.Object {
+trait KnockoutEs5 extends StObject {
   
   def getAllObservablesForObject[T](obj: T): T = js.native
   def getAllObservablesForObject[T](obj: T, createIfNotDefined: Boolean): T = js.native

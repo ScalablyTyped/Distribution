@@ -1,6 +1,7 @@
 package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,16 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A definition module for collection interface declarations.
   */
-@JSGlobal("Xrm.Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
+  
+  /**
+    * Defines collections that are index-able by string
+    * @param Generic type parameter.
+    */
+  type Dictionary[T] = StringDictionary[T]
   
   /**
     * Collections are structures to provide access to data that represent an array, but without the ability to modify the data in the array.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   @js.native
-  trait ItemCollection[T] extends js.Object {
+  trait ItemCollection[T] extends StObject {
     
     /**
       * Applies an operation to all items in this collection.
@@ -73,12 +78,6 @@ object Collection extends js.Object {
     @JSName("get")
     def get_TSubType_T_TSubType[TSubType /* <: T */](itemNumber: Double): TSubType = js.native
   }
-  
-  /**
-    * Defines collections that are index-able by string
-    * @param Generic type parameter.
-    */
-  type Dictionary[T] = StringDictionary[T]
   
   /**
     * Called for each item in an array

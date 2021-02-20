@@ -2,12 +2,13 @@ package typings.node.tlsMod
 
 import typings.std.Error
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommonConnectionOptions extends js.Object {
+trait CommonConnectionOptions extends StObject {
   
   /**
     * An array of strings or a Buffer naming possible ALPN protocols.
@@ -68,59 +69,47 @@ object CommonConnectionOptions {
   }
   
   @scala.inline
-  implicit class CommonConnectionOptionsOps[Self <: CommonConnectionOptions] (val x: Self) extends AnyVal {
+  implicit class CommonConnectionOptionsMutableBuilder[Self <: CommonConnectionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setALPNProtocols(value: (js.Array[String | Uint8Array]) | Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setALPNProtocolsUndefined: Self = StObject.set(x, "ALPNProtocols", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setALPNProtocolsVarargs(value: (String | Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value :_*))
     
     @scala.inline
-    def setALPNProtocolsVarargs(value: (String | Uint8Array)*): Self = this.set("ALPNProtocols", js.Array(value :_*))
+    def setEnableTrace(value: Boolean): Self = StObject.set(x, "enableTrace", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setALPNProtocols(value: (js.Array[String | Uint8Array]) | Uint8Array): Self = this.set("ALPNProtocols", value.asInstanceOf[js.Any])
+    def setEnableTraceUndefined: Self = StObject.set(x, "enableTrace", js.undefined)
     
     @scala.inline
-    def deleteALPNProtocols: Self = this.set("ALPNProtocols", js.undefined)
+    def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+    
+    @scala.inline
+    def setRequestCert(value: Boolean): Self = StObject.set(x, "requestCert", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
     
     @scala.inline
     def setSNICallback(
       value: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit
-    ): Self = this.set("SNICallback", js.Any.fromFunction2(value))
+    ): Self = StObject.set(x, "SNICallback", js.Any.fromFunction2(value))
     
     @scala.inline
-    def deleteSNICallback: Self = this.set("SNICallback", js.undefined)
+    def setSNICallbackUndefined: Self = StObject.set(x, "SNICallback", js.undefined)
     
     @scala.inline
-    def setEnableTrace(value: Boolean): Self = this.set("enableTrace", value.asInstanceOf[js.Any])
+    def setSecureContext(value: SecureContext): Self = StObject.set(x, "secureContext", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEnableTrace: Self = this.set("enableTrace", js.undefined)
-    
-    @scala.inline
-    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
-    
-    @scala.inline
-    def setRequestCert(value: Boolean): Self = this.set("requestCert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestCert: Self = this.set("requestCert", js.undefined)
-    
-    @scala.inline
-    def setSecureContext(value: SecureContext): Self = this.set("secureContext", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSecureContext: Self = this.set("secureContext", js.undefined)
+    def setSecureContextUndefined: Self = StObject.set(x, "secureContext", js.undefined)
   }
 }

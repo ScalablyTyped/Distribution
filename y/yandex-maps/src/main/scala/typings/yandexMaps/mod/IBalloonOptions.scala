@@ -1,11 +1,12 @@
 package typings.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IBalloonOptions extends js.Object {
+trait IBalloonOptions extends StObject {
   
   var autoPan: js.UndefOr[Boolean] = js.native
   
@@ -56,147 +57,135 @@ object IBalloonOptions {
   }
   
   @scala.inline
-  implicit class IBalloonOptionsOps[Self <: IBalloonOptions] (val x: Self) extends AnyVal {
+  implicit class IBalloonOptionsMutableBuilder[Self <: IBalloonOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAutoPanCheckZoomRange(value: Boolean): Self = StObject.set(x, "autoPanCheckZoomRange", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAutoPanCheckZoomRangeUndefined: Self = StObject.set(x, "autoPanCheckZoomRange", js.undefined)
     
     @scala.inline
-    def setAutoPan(value: Boolean): Self = this.set("autoPan", value.asInstanceOf[js.Any])
+    def setAutoPanDuration(value: Double): Self = StObject.set(x, "autoPanDuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoPan: Self = this.set("autoPan", js.undefined)
+    def setAutoPanDurationUndefined: Self = StObject.set(x, "autoPanDuration", js.undefined)
     
     @scala.inline
-    def setAutoPanCheckZoomRange(value: Boolean): Self = this.set("autoPanCheckZoomRange", value.asInstanceOf[js.Any])
+    def setAutoPanMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "autoPanMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAutoPanCheckZoomRange: Self = this.set("autoPanCheckZoomRange", js.undefined)
+    def setAutoPanMarginUndefined: Self = StObject.set(x, "autoPanMargin", js.undefined)
     
     @scala.inline
-    def setAutoPanDuration(value: Double): Self = this.set("autoPanDuration", value.asInstanceOf[js.Any])
+    def setAutoPanMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "autoPanMargin", js.Array(value :_*))
     
     @scala.inline
-    def deleteAutoPanDuration: Self = this.set("autoPanDuration", js.undefined)
+    def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
     
     @scala.inline
-    def setAutoPanMarginVarargs(value: (js.Array[Double] | Double)*): Self = this.set("autoPanMargin", js.Array(value :_*))
+    def setAutoPanUseMapMargin(value: Boolean): Self = StObject.set(x, "autoPanUseMapMargin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPanMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = this.set("autoPanMargin", value.asInstanceOf[js.Any])
+    def setAutoPanUseMapMarginUndefined: Self = StObject.set(x, "autoPanUseMapMargin", js.undefined)
     
     @scala.inline
-    def deleteAutoPanMargin: Self = this.set("autoPanMargin", js.undefined)
+    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoPanUseMapMargin(value: Boolean): Self = this.set("autoPanUseMapMargin", value.asInstanceOf[js.Any])
+    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
     @scala.inline
-    def deleteAutoPanUseMapMargin: Self = this.set("autoPanUseMapMargin", js.undefined)
+    def setContentLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "contentLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    def setContentLayoutUndefined: Self = StObject.set(x, "contentLayout", js.undefined)
     
     @scala.inline
-    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    def setLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContentLayout(value: IClassConstructor[ILayout] | String): Self = this.set("contentLayout", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteContentLayout: Self = this.set("contentLayout", js.undefined)
+    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: IClassConstructor[ILayout] | String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     @scala.inline
-    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
     
     @scala.inline
-    def setOffsetVarargs(value: Double*): Self = this.set("offset", js.Array(value :_*))
+    def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffset(value: js.Array[Double]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
     @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setPanelContentLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "panelContentLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPane(value: String): Self = this.set("pane", value.asInstanceOf[js.Any])
+    def setPanelContentLayoutUndefined: Self = StObject.set(x, "panelContentLayout", js.undefined)
     
     @scala.inline
-    def deletePane: Self = this.set("pane", js.undefined)
+    def setPanelMaxHeightRatio(value: Double): Self = StObject.set(x, "panelMaxHeightRatio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelContentLayout(value: IClassConstructor[ILayout] | String): Self = this.set("panelContentLayout", value.asInstanceOf[js.Any])
+    def setPanelMaxHeightRatioUndefined: Self = StObject.set(x, "panelMaxHeightRatio", js.undefined)
     
     @scala.inline
-    def deletePanelContentLayout: Self = this.set("panelContentLayout", js.undefined)
+    def setPanelMaxMapArea(value: Double): Self = StObject.set(x, "panelMaxMapArea", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelMaxHeightRatio(value: Double): Self = this.set("panelMaxHeightRatio", value.asInstanceOf[js.Any])
+    def setPanelMaxMapAreaUndefined: Self = StObject.set(x, "panelMaxMapArea", js.undefined)
     
     @scala.inline
-    def deletePanelMaxHeightRatio: Self = this.set("panelMaxHeightRatio", js.undefined)
+    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPanelMaxMapArea(value: Double): Self = this.set("panelMaxMapArea", value.asInstanceOf[js.Any])
+    def setShadowLayout(value: IClassConstructor[ILayout] | String): Self = StObject.set(x, "shadowLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePanelMaxMapArea: Self = this.set("panelMaxMapArea", js.undefined)
+    def setShadowLayoutUndefined: Self = StObject.set(x, "shadowLayout", js.undefined)
     
     @scala.inline
-    def setShadow(value: Boolean): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    def setShadowOffset(value: js.Array[Double]): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteShadow: Self = this.set("shadow", js.undefined)
+    def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
     
     @scala.inline
-    def setShadowLayout(value: IClassConstructor[ILayout] | String): Self = this.set("shadowLayout", value.asInstanceOf[js.Any])
+    def setShadowOffsetVarargs(value: Double*): Self = StObject.set(x, "shadowOffset", js.Array(value :_*))
     
     @scala.inline
-    def deleteShadowLayout: Self = this.set("shadowLayout", js.undefined)
-    
-    @scala.inline
-    def setShadowOffsetVarargs(value: Double*): Self = this.set("shadowOffset", js.Array(value :_*))
-    
-    @scala.inline
-    def setShadowOffset(value: js.Array[Double]): Self = this.set("shadowOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowOffset: Self = this.set("shadowOffset", js.undefined)
+    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
   }
 }

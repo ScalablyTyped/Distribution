@@ -2,16 +2,16 @@ package typings.agGrid
 
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.agGrid.rowNodeMod.RowNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/rendering/autoHeightCalculator", JSImport.Namespace)
-@js.native
-object autoHeightCalculatorMod extends js.Object {
+object autoHeightCalculatorMod {
   
+  @JSImport("ag-grid/dist/lib/rendering/autoHeightCalculator", "AutoHeightCalculator")
   @js.native
-  class AutoHeightCalculator () extends js.Object {
+  class AutoHeightCalculator () extends StObject {
     
     @JSName("$scope")
     var $scope: js.Any = js.native

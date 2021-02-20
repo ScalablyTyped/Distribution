@@ -1,41 +1,36 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IterationReason extends js.Object
+sealed trait IterationReason extends StObject
 @JSImport("vso-node-api/interfaces/GitInterfaces", "IterationReason")
 @js.native
-object IterationReason extends js.Object {
+object IterationReason extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[IterationReason with Double] = js.native
   
   @js.native
   sealed trait Create extends IterationReason
-  /* 2 */ @js.native
-  object Create extends TopLevel[Create with Double]
+  /* 2 */ val Create: typings.vsoNodeApi.gitInterfacesMod.IterationReason.Create with Double = js.native
   
   @js.native
   sealed trait ForcePush extends IterationReason
-  /* 1 */ @js.native
-  object ForcePush extends TopLevel[ForcePush with Double]
+  /* 1 */ val ForcePush: typings.vsoNodeApi.gitInterfacesMod.IterationReason.ForcePush with Double = js.native
   
   @js.native
   sealed trait Push extends IterationReason
-  /* 0 */ @js.native
-  object Push extends TopLevel[Push with Double]
+  /* 0 */ val Push: typings.vsoNodeApi.gitInterfacesMod.IterationReason.Push with Double = js.native
   
   @js.native
   sealed trait Rebase extends IterationReason
-  /* 4 */ @js.native
-  object Rebase extends TopLevel[Rebase with Double]
+  /* 4 */ val Rebase: typings.vsoNodeApi.gitInterfacesMod.IterationReason.Rebase with Double = js.native
   
   @js.native
   sealed trait Unknown extends IterationReason
-  /* 8 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
+  /* 8 */ val Unknown: typings.vsoNodeApi.gitInterfacesMod.IterationReason.Unknown with Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CardData extends js.Object {
+trait CardData extends StObject {
   
   /**
     * 用户领取到卡券的扩展参数，与调用时传入的参数相同
@@ -36,42 +37,30 @@ object CardData {
   }
   
   @scala.inline
-  implicit class CardDataOps[Self <: CardData] (val x: Self) extends AnyVal {
+  implicit class CardDataMutableBuilder[Self <: CardData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCardExtUndefined: Self = StObject.set(x, "cardExt", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardExt(value: String): Self = this.set("cardExt", value.asInstanceOf[js.Any])
+    def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
     
     @scala.inline
-    def deleteCardExt: Self = this.set("cardExt", js.undefined)
+    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCardId(value: String): Self = this.set("cardId", value.asInstanceOf[js.Any])
+    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     @scala.inline
-    def deleteCardId: Self = this.set("cardId", js.undefined)
+    def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCode: Self = this.set("code", js.undefined)
-    
-    @scala.inline
-    def setIsSuccess(value: Boolean): Self = this.set("isSuccess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsSuccess: Self = this.set("isSuccess", js.undefined)
+    def setIsSuccessUndefined: Self = StObject.set(x, "isSuccess", js.undefined)
   }
 }

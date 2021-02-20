@@ -2,12 +2,13 @@ package typings.i18next.mod
 
 import typings.i18next.i18nextBooleans.`false`
 import typings.i18next.i18nextStrings.fallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReactOptions extends js.Object {
+trait ReactOptions extends StObject {
   
   /**
     * Set which events trigger a re-render, can be set to false or string of events
@@ -83,81 +84,69 @@ object ReactOptions {
   }
   
   @scala.inline
-  implicit class ReactOptionsOps[Self <: ReactOptions] (val x: Self) extends AnyVal {
+  implicit class ReactOptionsMutableBuilder[Self <: ReactOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBindI18n(value: String | `false`): Self = StObject.set(x, "bindI18n", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBindI18nStore(value: String | `false`): Self = StObject.set(x, "bindI18nStore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBindI18nStoreUndefined: Self = StObject.set(x, "bindI18nStore", js.undefined)
     
     @scala.inline
-    def setBindI18n(value: String | `false`): Self = this.set("bindI18n", value.asInstanceOf[js.Any])
+    def setBindI18nUndefined: Self = StObject.set(x, "bindI18n", js.undefined)
     
     @scala.inline
-    def deleteBindI18n: Self = this.set("bindI18n", js.undefined)
+    def setDefaultTransParent(value: String): Self = StObject.set(x, "defaultTransParent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBindI18nStore(value: String | `false`): Self = this.set("bindI18nStore", value.asInstanceOf[js.Any])
+    def setDefaultTransParentUndefined: Self = StObject.set(x, "defaultTransParent", js.undefined)
     
     @scala.inline
-    def deleteBindI18nStore: Self = this.set("bindI18nStore", js.undefined)
+    def setHashTransKey(value: /* defaultValue */ js.UndefOr[js.Any] => js.UndefOr[_]): Self = StObject.set(x, "hashTransKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setDefaultTransParent(value: String): Self = this.set("defaultTransParent", value.asInstanceOf[js.Any])
+    def setHashTransKeyUndefined: Self = StObject.set(x, "hashTransKey", js.undefined)
     
     @scala.inline
-    def deleteDefaultTransParent: Self = this.set("defaultTransParent", js.undefined)
+    def setNsMode(value: typings.i18next.i18nextStrings.default | fallback): Self = StObject.set(x, "nsMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHashTransKey(value: /* defaultValue */ js.UndefOr[js.Any] => js.UndefOr[_]): Self = this.set("hashTransKey", js.Any.fromFunction1(value))
+    def setNsModeUndefined: Self = StObject.set(x, "nsMode", js.undefined)
     
     @scala.inline
-    def deleteHashTransKey: Self = this.set("hashTransKey", js.undefined)
+    def setTransEmptyNodeValue(value: String): Self = StObject.set(x, "transEmptyNodeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNsMode(value: typings.i18next.i18nextStrings.default | fallback): Self = this.set("nsMode", value.asInstanceOf[js.Any])
+    def setTransEmptyNodeValueUndefined: Self = StObject.set(x, "transEmptyNodeValue", js.undefined)
     
     @scala.inline
-    def deleteNsMode: Self = this.set("nsMode", js.undefined)
+    def setTransKeepBasicHtmlNodesFor(value: js.Array[String]): Self = StObject.set(x, "transKeepBasicHtmlNodesFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransEmptyNodeValue(value: String): Self = this.set("transEmptyNodeValue", value.asInstanceOf[js.Any])
+    def setTransKeepBasicHtmlNodesForUndefined: Self = StObject.set(x, "transKeepBasicHtmlNodesFor", js.undefined)
     
     @scala.inline
-    def deleteTransEmptyNodeValue: Self = this.set("transEmptyNodeValue", js.undefined)
+    def setTransKeepBasicHtmlNodesForVarargs(value: String*): Self = StObject.set(x, "transKeepBasicHtmlNodesFor", js.Array(value :_*))
     
     @scala.inline
-    def setTransKeepBasicHtmlNodesForVarargs(value: String*): Self = this.set("transKeepBasicHtmlNodesFor", js.Array(value :_*))
+    def setTransSupportBasicHtmlNodes(value: Boolean): Self = StObject.set(x, "transSupportBasicHtmlNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransKeepBasicHtmlNodesFor(value: js.Array[String]): Self = this.set("transKeepBasicHtmlNodesFor", value.asInstanceOf[js.Any])
+    def setTransSupportBasicHtmlNodesUndefined: Self = StObject.set(x, "transSupportBasicHtmlNodes", js.undefined)
     
     @scala.inline
-    def deleteTransKeepBasicHtmlNodesFor: Self = this.set("transKeepBasicHtmlNodesFor", js.undefined)
+    def setUseSuspense(value: Boolean): Self = StObject.set(x, "useSuspense", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransSupportBasicHtmlNodes(value: Boolean): Self = this.set("transSupportBasicHtmlNodes", value.asInstanceOf[js.Any])
+    def setUseSuspenseUndefined: Self = StObject.set(x, "useSuspense", js.undefined)
     
     @scala.inline
-    def deleteTransSupportBasicHtmlNodes: Self = this.set("transSupportBasicHtmlNodes", js.undefined)
+    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUseSuspense(value: Boolean): Self = this.set("useSuspense", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseSuspense: Self = this.set("useSuspense", js.undefined)
-    
-    @scala.inline
-    def setWait(value: Boolean): Self = this.set("wait", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWait: Self = this.set("wait", js.undefined)
+    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

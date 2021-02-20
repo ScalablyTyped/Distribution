@@ -1,11 +1,12 @@
 package typings.awsSdk.serverlessapplicationrepositoryMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApplicationPolicyStatement extends js.Object {
+trait ApplicationPolicyStatement extends StObject {
   
   /**
     * For the list of actions supported for this operation, see Application 
@@ -37,45 +38,33 @@ object ApplicationPolicyStatement {
   }
   
   @scala.inline
-  implicit class ApplicationPolicyStatementOps[Self <: ApplicationPolicyStatement] (val x: Self) extends AnyVal {
+  implicit class ApplicationPolicyStatementMutableBuilder[Self <: ApplicationPolicyStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: listOfString): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsVarargs(value: string*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrincipalOrgIDs(value: listOfString): Self = StObject.set(x, "PrincipalOrgIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionsVarargs(value: string*): Self = this.set("Actions", js.Array(value :_*))
+    def setPrincipalOrgIDsUndefined: Self = StObject.set(x, "PrincipalOrgIDs", js.undefined)
     
     @scala.inline
-    def setActions(value: listOfString): Self = this.set("Actions", value.asInstanceOf[js.Any])
+    def setPrincipalOrgIDsVarargs(value: string*): Self = StObject.set(x, "PrincipalOrgIDs", js.Array(value :_*))
     
     @scala.inline
-    def setPrincipalsVarargs(value: string*): Self = this.set("Principals", js.Array(value :_*))
+    def setPrincipals(value: listOfString): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipals(value: listOfString): Self = this.set("Principals", value.asInstanceOf[js.Any])
+    def setPrincipalsVarargs(value: string*): Self = StObject.set(x, "Principals", js.Array(value :_*))
     
     @scala.inline
-    def setPrincipalOrgIDsVarargs(value: string*): Self = this.set("PrincipalOrgIDs", js.Array(value :_*))
+    def setStatementId(value: string): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrincipalOrgIDs(value: listOfString): Self = this.set("PrincipalOrgIDs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePrincipalOrgIDs: Self = this.set("PrincipalOrgIDs", js.undefined)
-    
-    @scala.inline
-    def setStatementId(value: string): Self = this.set("StatementId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatementId: Self = this.set("StatementId", js.undefined)
+    def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
   }
 }

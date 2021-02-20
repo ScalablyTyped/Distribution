@@ -2,16 +2,15 @@ package typings.progressbarJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object anon extends js.Object {
+object anon {
   
   @js.native
-  trait Typeofutils extends js.Object {
+  trait Typeofutils extends StObject {
     
     def capitalize(text: String): String = js.native
     

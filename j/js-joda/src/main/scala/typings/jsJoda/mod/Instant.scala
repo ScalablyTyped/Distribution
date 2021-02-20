@@ -1,12 +1,13 @@
 package typings.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Instant")
 @js.native
-class Instant protected () extends TemporalAccessor {
+class Instant protected () extends Temporal {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   
@@ -60,30 +61,75 @@ class Instant protected () extends TemporalAccessor {
   
   def withTemporalAdjuster(adjuster: TemporalAdjuster): Instant = js.native
 }
-/* static members */
-@JSImport("js-joda", "Instant")
-@js.native
-object Instant extends js.Object {
+object Instant {
   
-  var EPOCH: Instant = js.native
+  @JSImport("js-joda", "Instant")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var MAX: Instant = js.native
+  /* static member */
+  @JSImport("js-joda", "Instant.EPOCH")
+  @js.native
+  def EPOCH: Instant = js.native
+  @scala.inline
+  def EPOCH_=(x: Instant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPOCH")(x.asInstanceOf[js.Any])
   
-  var MAX_SECONDS: Instant = js.native
+  /* static member */
+  @JSImport("js-joda", "Instant.MAX")
+  @js.native
+  def MAX: Instant = js.native
+  @scala.inline
+  def MAX_=(x: Instant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
   
-  var MIN: Instant = js.native
+  /* static member */
+  @JSImport("js-joda", "Instant.MAX_SECONDS")
+  @js.native
+  def MAX_SECONDS: Instant = js.native
+  @scala.inline
+  def MAX_SECONDS_=(x: Instant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SECONDS")(x.asInstanceOf[js.Any])
   
-  var MIN_SECONDS: Instant = js.native
+  /* static member */
+  @JSImport("js-joda", "Instant.MIN")
+  @js.native
+  def MIN: Instant = js.native
+  @scala.inline
+  def MIN_=(x: Instant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("js-joda", "Instant.MIN_SECONDS")
+  @js.native
+  def MIN_SECONDS: Instant = js.native
+  @scala.inline
+  def MIN_SECONDS_=(x: Instant): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SECONDS")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "Instant.from")
+  @js.native
   def from(temporal: TemporalAccessor): Instant = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Instant.now")
+  @js.native
   def now(): Instant = js.native
+  @JSImport("js-joda", "Instant.now")
+  @js.native
   def now(clock: Clock): Instant = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Instant.ofEpochMilli")
+  @js.native
   def ofEpochMilli(epochMilli: Double): Instant = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Instant.ofEpochSecond")
+  @js.native
   def ofEpochSecond(epochSecond: Double): Instant = js.native
+  @JSImport("js-joda", "Instant.ofEpochSecond")
+  @js.native
   def ofEpochSecond(epochSecond: Double, nanoAdjustment: Double): Instant = js.native
   
+  /* static member */
+  @JSImport("js-joda", "Instant.parse")
+  @js.native
   def parse(text: String): Instant = js.native
 }

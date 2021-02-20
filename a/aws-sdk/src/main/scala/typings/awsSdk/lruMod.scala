@@ -1,15 +1,15 @@
 package typings.awsSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("aws-sdk/vendor/endpoint-cache/utils/LRU", JSImport.Namespace)
-@js.native
-object lruMod extends js.Object {
+object lruMod {
   
+  @JSImport("aws-sdk/vendor/endpoint-cache/utils/LRU", "LRUCache")
   @js.native
-  class LRUCache[T] protected () extends js.Object {
+  class LRUCache[T] protected () extends StObject {
     def this(size: Double) = this()
     
     var detachFromList: js.Any = js.native

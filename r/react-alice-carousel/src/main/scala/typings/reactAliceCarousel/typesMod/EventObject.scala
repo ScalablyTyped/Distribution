@@ -1,11 +1,12 @@
 package typings.reactAliceCarousel.typesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EventObject extends js.Object {
+trait EventObject extends StObject {
   
   var isNextSlideDisabled: Boolean = js.native
   
@@ -32,33 +33,21 @@ object EventObject {
   }
   
   @scala.inline
-  implicit class EventObjectOps[Self <: EventObject] (val x: Self) extends AnyVal {
+  implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsNextSlideDisabled(value: Boolean): Self = StObject.set(x, "isNextSlideDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsPrevSlideDisabled(value: Boolean): Self = StObject.set(x, "isPrevSlideDisabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItem(value: Double): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsNextSlideDisabled(value: Boolean): Self = this.set("isNextSlideDisabled", value.asInstanceOf[js.Any])
+    def setItemsInSlide(value: Double): Self = StObject.set(x, "itemsInSlide", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsPrevSlideDisabled(value: Boolean): Self = this.set("isPrevSlideDisabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItem(value: Double): Self = this.set("item", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setItemsInSlide(value: Double): Self = this.set("itemsInSlide", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSlide(value: Double): Self = this.set("slide", value.asInstanceOf[js.Any])
+    def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
   }
 }

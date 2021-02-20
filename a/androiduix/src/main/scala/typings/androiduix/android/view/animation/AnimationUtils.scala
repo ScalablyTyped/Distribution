@@ -1,8 +1,9 @@
 package typings.androiduix.android.view.animation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationUtils extends js.Object
+trait AnimationUtils extends StObject

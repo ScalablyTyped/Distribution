@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,105 +50,93 @@ object Permission {
   }
   
   @scala.inline
-  implicit class PermissionOps[Self <: Permission] (val x: Self) extends AnyVal {
+  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExpirationDateTimeNull: Self = StObject.set(x, "expirationDateTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
     @scala.inline
-    def setExpirationDateTime(value: NullableOption[String]): Self = this.set("expirationDateTime", value.asInstanceOf[js.Any])
+    def setGrantedTo(value: NullableOption[IdentitySet]): Self = StObject.set(x, "grantedTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteExpirationDateTime: Self = this.set("expirationDateTime", js.undefined)
+    def setGrantedToIdentities(value: NullableOption[js.Array[IdentitySet]]): Self = StObject.set(x, "grantedToIdentities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExpirationDateTimeNull: Self = this.set("expirationDateTime", null)
+    def setGrantedToIdentitiesNull: Self = StObject.set(x, "grantedToIdentities", null)
     
     @scala.inline
-    def setGrantedTo(value: NullableOption[IdentitySet]): Self = this.set("grantedTo", value.asInstanceOf[js.Any])
+    def setGrantedToIdentitiesUndefined: Self = StObject.set(x, "grantedToIdentities", js.undefined)
     
     @scala.inline
-    def deleteGrantedTo: Self = this.set("grantedTo", js.undefined)
+    def setGrantedToIdentitiesVarargs(value: IdentitySet*): Self = StObject.set(x, "grantedToIdentities", js.Array(value :_*))
     
     @scala.inline
-    def setGrantedToNull: Self = this.set("grantedTo", null)
+    def setGrantedToNull: Self = StObject.set(x, "grantedTo", null)
     
     @scala.inline
-    def setGrantedToIdentitiesVarargs(value: IdentitySet*): Self = this.set("grantedToIdentities", js.Array(value :_*))
+    def setGrantedToUndefined: Self = StObject.set(x, "grantedTo", js.undefined)
     
     @scala.inline
-    def setGrantedToIdentities(value: NullableOption[js.Array[IdentitySet]]): Self = this.set("grantedToIdentities", value.asInstanceOf[js.Any])
+    def setHasPassword(value: NullableOption[Boolean]): Self = StObject.set(x, "hasPassword", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGrantedToIdentities: Self = this.set("grantedToIdentities", js.undefined)
+    def setHasPasswordNull: Self = StObject.set(x, "hasPassword", null)
     
     @scala.inline
-    def setGrantedToIdentitiesNull: Self = this.set("grantedToIdentities", null)
+    def setHasPasswordUndefined: Self = StObject.set(x, "hasPassword", js.undefined)
     
     @scala.inline
-    def setHasPassword(value: NullableOption[Boolean]): Self = this.set("hasPassword", value.asInstanceOf[js.Any])
+    def setInheritedFrom(value: NullableOption[ItemReference]): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHasPassword: Self = this.set("hasPassword", js.undefined)
+    def setInheritedFromNull: Self = StObject.set(x, "inheritedFrom", null)
     
     @scala.inline
-    def setHasPasswordNull: Self = this.set("hasPassword", null)
+    def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
     @scala.inline
-    def setInheritedFrom(value: NullableOption[ItemReference]): Self = this.set("inheritedFrom", value.asInstanceOf[js.Any])
+    def setInvitation(value: NullableOption[SharingInvitation]): Self = StObject.set(x, "invitation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInheritedFrom: Self = this.set("inheritedFrom", js.undefined)
+    def setInvitationNull: Self = StObject.set(x, "invitation", null)
     
     @scala.inline
-    def setInheritedFromNull: Self = this.set("inheritedFrom", null)
+    def setInvitationUndefined: Self = StObject.set(x, "invitation", js.undefined)
     
     @scala.inline
-    def setInvitation(value: NullableOption[SharingInvitation]): Self = this.set("invitation", value.asInstanceOf[js.Any])
+    def setLink(value: NullableOption[SharingLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteInvitation: Self = this.set("invitation", js.undefined)
+    def setLinkNull: Self = StObject.set(x, "link", null)
     
     @scala.inline
-    def setInvitationNull: Self = this.set("invitation", null)
+    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
     @scala.inline
-    def setLink(value: NullableOption[SharingLink]): Self = this.set("link", value.asInstanceOf[js.Any])
+    def setRoles(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLink: Self = this.set("link", js.undefined)
+    def setRolesNull: Self = StObject.set(x, "roles", null)
     
     @scala.inline
-    def setLinkNull: Self = this.set("link", null)
+    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
     @scala.inline
-    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
+    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
     @scala.inline
-    def setRoles(value: NullableOption[js.Array[String]]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    def setShareId(value: NullableOption[String]): Self = StObject.set(x, "shareId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteRoles: Self = this.set("roles", js.undefined)
+    def setShareIdNull: Self = StObject.set(x, "shareId", null)
     
     @scala.inline
-    def setRolesNull: Self = this.set("roles", null)
-    
-    @scala.inline
-    def setShareId(value: NullableOption[String]): Self = this.set("shareId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShareId: Self = this.set("shareId", js.undefined)
-    
-    @scala.inline
-    def setShareIdNull: Self = this.set("shareId", null)
+    def setShareIdUndefined: Self = StObject.set(x, "shareId", js.undefined)
   }
 }

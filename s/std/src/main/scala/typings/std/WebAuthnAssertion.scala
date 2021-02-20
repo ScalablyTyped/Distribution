@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebAuthnAssertion extends js.Object {
+trait WebAuthnAssertion extends StObject {
   
   val authenticatorData: ArrayBuffer = js.native
   
@@ -29,30 +30,18 @@ object WebAuthnAssertion {
   }
   
   @scala.inline
-  implicit class WebAuthnAssertionOps[Self <: WebAuthnAssertion] (val x: Self) extends AnyVal {
+  implicit class WebAuthnAssertionMutableBuilder[Self <: WebAuthnAssertion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuthenticatorData(value: ArrayBuffer): Self = StObject.set(x, "authenticatorData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientData(value: ArrayBuffer): Self = StObject.set(x, "clientData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCredential(value: ScopedCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuthenticatorData(value: ArrayBuffer): Self = this.set("authenticatorData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientData(value: ArrayBuffer): Self = this.set("clientData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCredential(value: ScopedCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSignature(value: ArrayBuffer): Self = this.set("signature", value.asInstanceOf[js.Any])
+    def setSignature(value: ArrayBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

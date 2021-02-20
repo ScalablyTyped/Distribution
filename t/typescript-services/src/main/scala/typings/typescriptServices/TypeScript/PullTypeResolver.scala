@@ -1,11 +1,12 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullTypeResolver extends js.Object {
+trait PullTypeResolver extends StObject {
   
   def _addUnhiddenSignaturesFromBaseType(
     derivedTypeSignatures: js.Array[PullSignatureSymbol],

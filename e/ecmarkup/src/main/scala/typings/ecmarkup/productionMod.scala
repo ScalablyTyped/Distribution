@@ -1,9 +1,8 @@
 package typings.ecmarkup
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ecmarkup/lib/Production", JSImport.Namespace)
-@js.native
-object productionMod extends js.Object
+object productionMod

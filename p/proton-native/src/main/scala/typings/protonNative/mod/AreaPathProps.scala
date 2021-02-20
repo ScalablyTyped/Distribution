@@ -2,6 +2,7 @@ package typings.protonNative.mod
 
 import typings.protonNative.protonNativeStrings.evenodd
 import typings.protonNative.protonNativeStrings.nonzero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,24 +31,12 @@ object AreaPathProps {
   }
   
   @scala.inline
-  implicit class AreaPathPropsOps[Self <: AreaPathProps] (val x: Self) extends AnyVal {
+  implicit class AreaPathPropsMutableBuilder[Self <: AreaPathProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFillMode(value: nonzero | evenodd): Self = this.set("fillMode", value.asInstanceOf[js.Any])
+    def setFillMode(value: nonzero | evenodd): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
   }
 }

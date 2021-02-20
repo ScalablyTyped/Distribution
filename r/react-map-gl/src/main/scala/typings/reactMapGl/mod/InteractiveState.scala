@@ -1,11 +1,12 @@
 package typings.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InteractiveState extends js.Object {
+trait InteractiveState extends StObject {
   
   var startBearing: js.UndefOr[Double] = js.native
   
@@ -26,48 +27,36 @@ object InteractiveState {
   }
   
   @scala.inline
-  implicit class InteractiveStateOps[Self <: InteractiveState] (val x: Self) extends AnyVal {
+  implicit class InteractiveStateMutableBuilder[Self <: InteractiveState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStartBearingUndefined: Self = StObject.set(x, "startBearing", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startPanLngLat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartBearing(value: Double): Self = this.set("startBearing", value.asInstanceOf[js.Any])
+    def setStartPanLngLatUndefined: Self = StObject.set(x, "startPanLngLat", js.undefined)
     
     @scala.inline
-    def deleteStartBearing: Self = this.set("startBearing", js.undefined)
+    def setStartPitch(value: Double): Self = StObject.set(x, "startPitch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = this.set("startPanLngLat", value.asInstanceOf[js.Any])
+    def setStartPitchUndefined: Self = StObject.set(x, "startPitch", js.undefined)
     
     @scala.inline
-    def deleteStartPanLngLat: Self = this.set("startPanLngLat", js.undefined)
+    def setStartZoom(value: Double): Self = StObject.set(x, "startZoom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartPitch(value: Double): Self = this.set("startPitch", value.asInstanceOf[js.Any])
+    def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startZoomLngLat", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStartPitch: Self = this.set("startPitch", js.undefined)
+    def setStartZoomLngLatUndefined: Self = StObject.set(x, "startZoomLngLat", js.undefined)
     
     @scala.inline
-    def setStartZoom(value: Double): Self = this.set("startZoom", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartZoom: Self = this.set("startZoom", js.undefined)
-    
-    @scala.inline
-    def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = this.set("startZoomLngLat", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartZoomLngLat: Self = this.set("startZoomLngLat", js.undefined)
+    def setStartZoomUndefined: Self = StObject.set(x, "startZoom", js.undefined)
   }
 }

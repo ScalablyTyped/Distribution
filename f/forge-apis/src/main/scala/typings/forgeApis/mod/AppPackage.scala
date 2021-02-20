@@ -1,11 +1,12 @@
 package typings.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppPackage extends js.Object {
+trait AppPackage extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -38,54 +39,42 @@ object AppPackage {
   }
   
   @scala.inline
-  implicit class AppPackageOps[Self <: AppPackage] (val x: Self) extends AnyVal {
+  implicit class AppPackageMutableBuilder[Self <: AppPackage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsObjectEnabler(value: Boolean): Self = StObject.set(x, "isObjectEnabler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReferencesVarargs(value: String*): Self = this.set("references", js.Array(value :_*))
+    def setIsObjectEnablerUndefined: Self = StObject.set(x, "isObjectEnabler", js.undefined)
     
     @scala.inline
-    def setReferences(value: js.Array[String]): Self = this.set("references", value.asInstanceOf[js.Any])
+    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRequiredEngineVersion(value: String): Self = this.set("requiredEngineVersion", value.asInstanceOf[js.Any])
+    def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
     
     @scala.inline
-    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setRequiredEngineVersion(value: String): Self = StObject.set(x, "requiredEngineVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsObjectEnabler(value: Boolean): Self = this.set("isObjectEnabler", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsObjectEnabler: Self = this.set("isObjectEnabler", js.undefined)
-    
-    @scala.inline
-    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

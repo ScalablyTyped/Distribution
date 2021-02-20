@@ -1,11 +1,12 @@
 package typings.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XMLDocument2 extends js.Object {
+trait XMLDocument2 extends StObject {
   
   def createElement(name: String): XMLNode = js.native
   
@@ -44,45 +45,33 @@ object XMLDocument2 {
   }
   
   @scala.inline
-  implicit class XMLDocument2Ops[Self <: XMLDocument2] (val x: Self) extends AnyVal {
+  implicit class XMLDocument2MutableBuilder[Self <: XMLDocument2] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreateElement(value: String => XMLNode): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreateElementWithTextValue(value: (String, String) => XMLNode): Self = StObject.set(x, "createElementWithTextValue", js.Any.fromFunction2(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetDocumentElement(value: () => XMLNode): Self = StObject.set(x, "getDocumentElement", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setCreateElement(value: String => XMLNode): Self = this.set("createElement", js.Any.fromFunction1(value))
+    def setGetFirstNode(value: String => XMLNode): Self = StObject.set(x, "getFirstNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCreateElementWithTextValue(value: (String, String) => XMLNode): Self = this.set("createElementWithTextValue", js.Any.fromFunction2(value))
+    def setGetNextNode(value: js.Object => XMLNode): Self = StObject.set(x, "getNextNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetDocumentElement(value: () => XMLNode): Self = this.set("getDocumentElement", js.Any.fromFunction0(value))
+    def setGetNode(value: String => XMLNode): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetFirstNode(value: String => XMLNode): Self = this.set("getFirstNode", js.Any.fromFunction1(value))
+    def setGetNodeText(value: String => String): Self = StObject.set(x, "getNodeText", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNextNode(value: js.Object => XMLNode): Self = this.set("getNextNode", js.Any.fromFunction1(value))
+    def setParseXML(value: String => Unit): Self = StObject.set(x, "parseXML", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetNode(value: String => XMLNode): Self = this.set("getNode", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetNodeText(value: String => String): Self = this.set("getNodeText", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParseXML(value: String => Unit): Self = this.set("parseXML", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetCurrentElement(value: XMLNode => Unit): Self = this.set("setCurrentElement", js.Any.fromFunction1(value))
+    def setSetCurrentElement(value: XMLNode => Unit): Self = StObject.set(x, "setCurrentElement", js.Any.fromFunction1(value))
   }
 }

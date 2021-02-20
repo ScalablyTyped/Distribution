@@ -1,11 +1,12 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChosenInlineResult extends js.Object {
+trait ChosenInlineResult extends StObject {
   
   var from: User = js.native
   
@@ -26,39 +27,27 @@ object ChosenInlineResult {
   }
   
   @scala.inline
-  implicit class ChosenInlineResultOps[Self <: ChosenInlineResult] (val x: Self) extends AnyVal {
+  implicit class ChosenInlineResultMutableBuilder[Self <: ChosenInlineResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
     
     @scala.inline
-    def setFrom(value: User): Self = this.set("from", value.asInstanceOf[js.Any])
+    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setResult_id(value: String): Self = this.set("result_id", value.asInstanceOf[js.Any])
+    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInline_message_id(value: String): Self = this.set("inline_message_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInline_message_id: Self = this.set("inline_message_id", js.undefined)
-    
-    @scala.inline
-    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLocation: Self = this.set("location", js.undefined)
+    def setResult_id(value: String): Self = StObject.set(x, "result_id", value.asInstanceOf[js.Any])
   }
 }

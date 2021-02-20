@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.euclidean
 import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,30 +57,18 @@ object DirectLineMeasurement3DViewModelMeasurement {
   }
   
   @scala.inline
-  implicit class DirectLineMeasurement3DViewModelMeasurementOps[Self <: DirectLineMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
+  implicit class DirectLineMeasurement3DViewModelMeasurementMutableBuilder[Self <: DirectLineMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDirectDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "directDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHorizontalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "horizontalDistance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMeasurementMode(value: euclidean | geodesic): Self = StObject.set(x, "measurementMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDirectDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = this.set("directDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHorizontalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = this.set("horizontalDistance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMeasurementMode(value: euclidean | geodesic): Self = this.set("measurementMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVerticalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = this.set("verticalDistance", value.asInstanceOf[js.Any])
+    def setVerticalDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "verticalDistance", value.asInstanceOf[js.Any])
   }
 }

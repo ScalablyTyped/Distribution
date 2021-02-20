@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies whether to access a file in read-only mode or in read/write mode. */
 @JSGlobal("Windows.Storage.FileAccessMode")
 @js.native
-object FileAccessMode extends js.Object {
+object FileAccessMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Storage.FileAccessMode with Double] = js.native

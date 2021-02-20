@@ -2,6 +2,7 @@ package typings.rcEasyui.mod
 
 import typings.rcEasyui.anon.Invalid
 import typings.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,133 +25,176 @@ class FieldBase protected ()
   def getFieldName(): js.Any = js.native
 }
 /* static members */
-@JSImport("rc-easyui", "FieldBase")
-@js.native
-object FieldBase extends js.Object {
+object FieldBase {
   
-  var defaultProps: Invalid = js.native
-  
+  @JSImport("rc-easyui", "FieldBase")
   @js.native
-  object contextTypes extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object contextTypes {
     
-    @js.native
-    object fieldAdd extends js.Object {
+    object fieldAdd {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldAdd")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.fieldAdd
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldAdd.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldBlur extends js.Object {
+    object fieldBlur {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldBlur")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.fieldBlur
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldBlur.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldChange extends js.Object {
+    object fieldChange {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.fieldChange
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldFocus extends js.Object {
+    object fieldFocus {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldFocus")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.fieldFocus
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldFocus.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldName extends js.Object {
+    object fieldName {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldName")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.fieldName
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldName.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object fieldRemove extends js.Object {
+    object fieldRemove {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldRemove")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.fieldRemove
+      @JSImport("rc-easyui", "FieldBase.contextTypes.fieldRemove.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object locale extends js.Object {
+    object locale {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.locale")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.locale
+      @JSImport("rc-easyui", "FieldBase.contextTypes.locale.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object t extends js.Object {
+    object t {
       
+      @JSImport("rc-easyui", "FieldBase.contextTypes.t")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.contextTypes.t
+      @JSImport("rc-easyui", "FieldBase.contextTypes.t.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }
   
+  @JSImport("rc-easyui", "FieldBase.defaultProps")
   @js.native
-  object propTypes extends js.Object {
+  def defaultProps: Invalid = js.native
+  @scala.inline
+  def defaultProps_=(x: Invalid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  object propTypes {
     
-    @js.native
-    object invalid extends js.Object {
+    object invalid {
       
+      @JSImport("rc-easyui", "FieldBase.propTypes.invalid")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.propTypes.invalid
+      @JSImport("rc-easyui", "FieldBase.propTypes.invalid.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object name extends js.Object {
+    object name {
       
+      @JSImport("rc-easyui", "FieldBase.propTypes.name")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.propTypes.name
+      @JSImport("rc-easyui", "FieldBase.propTypes.name.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateOnBlur extends js.Object {
+    object validateOnBlur {
       
+      @JSImport("rc-easyui", "FieldBase.propTypes.validateOnBlur")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.propTypes.validateOnBlur
+      @JSImport("rc-easyui", "FieldBase.propTypes.validateOnBlur.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateOnChange extends js.Object {
+    object validateOnChange {
       
+      @JSImport("rc-easyui", "FieldBase.propTypes.validateOnChange")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.propTypes.validateOnChange
+      @JSImport("rc-easyui", "FieldBase.propTypes.validateOnChange.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
     
-    @js.native
-    object validateOnCreate extends js.Object {
+    object validateOnCreate {
       
+      @JSImport("rc-easyui", "FieldBase.propTypes.validateOnCreate")
+      @js.native
       def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
       
       // Circular reference from rc_easyui.FieldBase.propTypes.validateOnCreate
+      @JSImport("rc-easyui", "FieldBase.propTypes.validateOnCreate.isRequired")
+      @js.native
       val isRequired: js.Any = js.native
     }
   }

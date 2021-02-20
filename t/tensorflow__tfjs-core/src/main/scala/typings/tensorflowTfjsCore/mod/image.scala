@@ -12,14 +12,15 @@ import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bilinear
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.nearest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core", "image")
-@js.native
-object image extends js.Object {
+object image {
   
+  @JSImport("@tensorflow/tfjs-core", "image.cropAndResize")
+  @js.native
   def cropAndResize(
     image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -35,20 +36,40 @@ object image extends js.Object {
     extrapolationValue: js.UndefOr[Double]
   ): Tensor[R4] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: String): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: js.Array[Uint8Array]): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: Boolean): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: Double): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: Float32Array): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: Int32Array): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: Uint8Array): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(image: Tensor[R4]): Tensor[R4] = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.flipLeftRight")
+  @js.native
   def flipLeftRight(
     image: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ]
   ): Tensor[R4] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.nonMaxSuppression")
+  @js.native
   def nonMaxSuppression(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -61,6 +82,8 @@ object image extends js.Object {
     scoreThreshold: js.UndefOr[Double]
   ): Tensor[R1] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.nonMaxSuppressionAsync")
+  @js.native
   def nonMaxSuppressionAsync(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -73,6 +96,8 @@ object image extends js.Object {
     scoreThreshold: js.UndefOr[Double]
   ): js.Promise[Tensor[R1]] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.nonMaxSuppressionPadded")
+  @js.native
   def nonMaxSuppressionPadded(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -86,6 +111,8 @@ object image extends js.Object {
     padToMaxOutputSize: js.UndefOr[Boolean]
   ): NamedTensorMap = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.nonMaxSuppressionPaddedAsync")
+  @js.native
   def nonMaxSuppressionPaddedAsync(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -99,6 +126,8 @@ object image extends js.Object {
     padToMaxOutputSize: js.UndefOr[Boolean]
   ): js.Promise[NamedTensorMap] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.nonMaxSuppressionWithScore")
+  @js.native
   def nonMaxSuppressionWithScore(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -112,6 +141,8 @@ object image extends js.Object {
     softNmsSigma: js.UndefOr[Double]
   ): NamedTensorMap = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.nonMaxSuppressionWithScoreAsync")
+  @js.native
   def nonMaxSuppressionWithScoreAsync(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -125,28 +156,64 @@ object image extends js.Object {
     softNmsSigma: js.UndefOr[Double]
   ): js.Promise[NamedTensorMap] = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ],
     size: js.Tuple2[Double, Double]
   ): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeBilinear")
+  @js.native
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -155,28 +222,64 @@ object image extends js.Object {
     alignCorners: Boolean
   ): T = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ],
     size: js.Tuple2[Double, Double]
   ): T = js.native
+  @JSImport("@tensorflow/tfjs-core", "image.resizeNearestNeighbor")
+  @js.native
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -185,6 +288,8 @@ object image extends js.Object {
     alignCorners: Boolean
   ): T = js.native
   
+  @JSImport("@tensorflow/tfjs-core", "image.rotateWithOffset")
+  @js.native
   def rotateWithOffset(
     image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array

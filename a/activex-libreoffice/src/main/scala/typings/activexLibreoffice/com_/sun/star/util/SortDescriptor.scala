@@ -6,6 +6,7 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,33 +77,21 @@ object SortDescriptor {
   }
   
   @scala.inline
-  implicit class SortDescriptorOps[Self <: SortDescriptor] (val x: Self) extends AnyVal {
+  implicit class SortDescriptorMutableBuilder[Self <: SortDescriptor] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollatorLocale(value: Locale): Self = StObject.set(x, "CollatorLocale", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollatorAlgorithm(value: String): Self = this.set("CollatorAlgorithm", value.asInstanceOf[js.Any])
+    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollatorLocale(value: Locale): Self = this.set("CollatorLocale", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = this.set("IsCaseSensitive", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = this.set("SortAscending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSortColumns(value: Boolean): Self = this.set("SortColumns", value.asInstanceOf[js.Any])
+    def setSortColumns(value: Boolean): Self = StObject.set(x, "SortColumns", value.asInstanceOf[js.Any])
   }
 }

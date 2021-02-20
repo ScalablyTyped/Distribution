@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/operators/ignoreElements", JSImport.Namespace)
-@js.native
-object operatorsIgnoreElementsMod extends js.Object {
+object operatorsIgnoreElementsMod {
   
+  @JSImport("rxjs/operators/ignoreElements", "ignoreElements")
+  @js.native
   def ignoreElements(): js.Any = js.native
 }

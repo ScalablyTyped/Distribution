@@ -1,12 +1,13 @@
 package typings.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/clearing.html#optional-javascript-configuration
 @js.native
-trait ClearingOptions extends js.Object {
+trait ClearingOptions extends StObject {
   
   var close_selectors: js.UndefOr[String] = js.native
   
@@ -31,60 +32,48 @@ object ClearingOptions {
   }
   
   @scala.inline
-  implicit class ClearingOptionsOps[Self <: ClearingOptions] (val x: Self) extends AnyVal {
+  implicit class ClearingOptionsMutableBuilder[Self <: ClearingOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClose_selectors(value: String): Self = StObject.set(x, "close_selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClose_selectorsUndefined: Self = StObject.set(x, "close_selectors", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClose_selectors(value: String): Self = this.set("close_selectors", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
     @scala.inline
-    def deleteClose_selectors: Self = this.set("close_selectors", js.undefined)
+    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: Boolean): Self = this.set("init", value.asInstanceOf[js.Any])
+    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("init", js.undefined)
+    def setOpen_selectors(value: String): Self = StObject.set(x, "open_selectors", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    def setOpen_selectorsUndefined: Self = StObject.set(x, "open_selectors", js.undefined)
     
     @scala.inline
-    def deleteLocked: Self = this.set("locked", js.undefined)
+    def setSkip_selector(value: String): Self = StObject.set(x, "skip_selector", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpen_selectors(value: String): Self = this.set("open_selectors", value.asInstanceOf[js.Any])
+    def setSkip_selectorUndefined: Self = StObject.set(x, "skip_selector", js.undefined)
     
     @scala.inline
-    def deleteOpen_selectors: Self = this.set("open_selectors", js.undefined)
+    def setTemplates(value: js.Object): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSkip_selector(value: String): Self = this.set("skip_selector", value.asInstanceOf[js.Any])
+    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
     @scala.inline
-    def deleteSkip_selector: Self = this.set("skip_selector", js.undefined)
+    def setTouch_label(value: String): Self = StObject.set(x, "touch_label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplates(value: js.Object): Self = this.set("templates", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTemplates: Self = this.set("templates", js.undefined)
-    
-    @scala.inline
-    def setTouch_label(value: String): Self = this.set("touch_label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTouch_label: Self = this.set("touch_label", js.undefined)
+    def setTouch_labelUndefined: Self = StObject.set(x, "touch_label", js.undefined)
   }
 }

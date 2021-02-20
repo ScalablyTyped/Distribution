@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MappingDetails extends js.Object {
+trait MappingDetails extends StObject {
   
   /**
     * The local path.
@@ -31,27 +32,15 @@ object MappingDetails {
   }
   
   @scala.inline
-  implicit class MappingDetailsOps[Self <: MappingDetails] (val x: Self) extends AnyVal {
+  implicit class MappingDetailsMutableBuilder[Self <: MappingDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMappingType(value: String): Self = StObject.set(x, "mappingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocalPath(value: String): Self = this.set("localPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMappingType(value: String): Self = this.set("mappingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setServerPath(value: String): Self = this.set("serverPath", value.asInstanceOf[js.Any])
+    def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
   }
 }

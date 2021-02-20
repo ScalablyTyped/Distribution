@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudformationMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RollbackConfiguration extends js.Object {
+trait RollbackConfiguration extends StObject {
   
   /**
     * The amount of time, in minutes, during which CloudFormation should monitor all the rollback triggers after the stack creation or update operation deploys all necessary resources. The default is 0 minutes. If you specify a monitoring period but do not specify any rollback triggers, CloudFormation still waits the specified period of time before cleaning up old resources after update operations. You can use this monitoring period to perform any manual stack validation desired, and manually cancel the stack creation or update (using CancelUpdateStack, for example) as necessary. If you specify 0 for this parameter, CloudFormation still monitors the specified rollback triggers during stack creation and update operations. Then, for update operations, it begins disposing of old resources immediately once the operation completes.
@@ -26,33 +27,21 @@ object RollbackConfiguration {
   }
   
   @scala.inline
-  implicit class RollbackConfigurationOps[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
+  implicit class RollbackConfigurationMutableBuilder[Self <: RollbackConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMonitoringTimeInMinutes(value: MonitoringTimeInMinutes): Self = StObject.set(x, "MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMonitoringTimeInMinutesUndefined: Self = StObject.set(x, "MonitoringTimeInMinutes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRollbackTriggers(value: RollbackTriggers): Self = StObject.set(x, "RollbackTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMonitoringTimeInMinutes(value: MonitoringTimeInMinutes): Self = this.set("MonitoringTimeInMinutes", value.asInstanceOf[js.Any])
+    def setRollbackTriggersUndefined: Self = StObject.set(x, "RollbackTriggers", js.undefined)
     
     @scala.inline
-    def deleteMonitoringTimeInMinutes: Self = this.set("MonitoringTimeInMinutes", js.undefined)
-    
-    @scala.inline
-    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = this.set("RollbackTriggers", js.Array(value :_*))
-    
-    @scala.inline
-    def setRollbackTriggers(value: RollbackTriggers): Self = this.set("RollbackTriggers", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRollbackTriggers: Self = this.set("RollbackTriggers", js.undefined)
+    def setRollbackTriggersVarargs(value: RollbackTrigger*): Self = StObject.set(x, "RollbackTriggers", js.Array(value :_*))
   }
 }

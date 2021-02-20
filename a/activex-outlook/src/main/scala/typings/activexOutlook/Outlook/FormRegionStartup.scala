@@ -1,11 +1,12 @@
 package typings.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormRegionStartup extends js.Object {
+trait FormRegionStartup extends StObject {
   
   def BeforeFormRegionShow(FormRegion: FormRegion): Unit = js.native
   
@@ -40,33 +41,21 @@ object FormRegionStartup {
   }
   
   @scala.inline
-  implicit class FormRegionStartupOps[Self <: FormRegionStartup] (val x: Self) extends AnyVal {
+  implicit class FormRegionStartupMutableBuilder[Self <: FormRegionStartup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBeforeFormRegionShow(value: FormRegion => Unit): Self = StObject.set(x, "BeforeFormRegionShow", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetFormRegionIcon(value: (String, Double, OlFormRegionIcon) => js.Any): Self = StObject.set(x, "GetFormRegionIcon", js.Any.fromFunction3(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetFormRegionManifest(value: (String, Double) => js.Any): Self = StObject.set(x, "GetFormRegionManifest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setBeforeFormRegionShow(value: FormRegion => Unit): Self = this.set("BeforeFormRegionShow", js.Any.fromFunction1(value))
+    def setGetFormRegionStorage(value: (String, js.Any, Double, OlFormRegionMode, OlFormRegionSize) => js.Any): Self = StObject.set(x, "GetFormRegionStorage", js.Any.fromFunction5(value))
     
     @scala.inline
-    def setGetFormRegionIcon(value: (String, Double, OlFormRegionIcon) => js.Any): Self = this.set("GetFormRegionIcon", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def setGetFormRegionManifest(value: (String, Double) => js.Any): Self = this.set("GetFormRegionManifest", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setGetFormRegionStorage(value: (String, js.Any, Double, OlFormRegionMode, OlFormRegionSize) => js.Any): Self = this.set("GetFormRegionStorage", js.Any.fromFunction5(value))
-    
-    @scala.inline
-    def setOutlookDotFormRegionStartup_typekey(value: FormRegionStartup): Self = this.set("Outlook.FormRegionStartup_typekey", value.asInstanceOf[js.Any])
+    def setOutlookDotFormRegionStartup_typekey(value: FormRegionStartup): Self = StObject.set(x, "Outlook.FormRegionStartup_typekey", value.asInstanceOf[js.Any])
   }
 }

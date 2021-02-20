@@ -5,6 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`move-stop`
 import typings.arcgisJsApi.arcgisJsApiStrings.move
 import typings.std.Object
 import typings.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,30 +61,18 @@ object MoveEventInfo {
   }
   
   @scala.inline
-  implicit class MoveEventInfoOps[Self <: MoveEventInfo] (val x: Self) extends AnyVal {
+  implicit class MoveEventInfoMutableBuilder[Self <: MoveEventInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMover(value: Graphic): Self = StObject.set(x, "mover", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMover(value: Graphic): Self = this.set("mover", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: `move-start` | move | `move-stop`): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: `move-start` | move | `move-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

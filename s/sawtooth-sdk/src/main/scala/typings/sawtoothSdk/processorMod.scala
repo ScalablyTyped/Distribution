@@ -1,16 +1,16 @@
 package typings.sawtoothSdk
 
 import typings.sawtoothSdk.handlerMod.TransactionHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sawtooth-sdk/processor", JSImport.Namespace)
-@js.native
-object processorMod extends js.Object {
+object processorMod {
   
+  @JSImport("sawtooth-sdk/processor", "TransactionProcessor")
   @js.native
-  class TransactionProcessor protected () extends js.Object {
+  class TransactionProcessor protected () extends StObject {
     /** Constructs a new TransactionProcessor */
     def this(url: String) = this()
     

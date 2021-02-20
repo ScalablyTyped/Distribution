@@ -2,22 +2,22 @@ package typings.sipJs
 
 import typings.sipJs.nameAddrHeaderMod.NameAddrHeader
 import typings.sipJs.uriMod.URI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/grammar/grammar", JSImport.Namespace)
-@js.native
-object grammarGrammarMod extends js.Object {
+object grammarGrammarMod {
   
-  @js.native
-  object Grammar extends js.Object {
+  object Grammar {
     
     /**
       * Parse the given string and returns a SIP.URI instance or undefined if
       * it is an invalid URI.
       * @param uri -
       */
+    @JSImport("sip.js/lib/grammar/grammar", "Grammar.URIParse")
+    @js.native
     def URIParse(uri: String): js.UndefOr[URI] = js.native
     
     /**
@@ -25,6 +25,8 @@ object grammarGrammarMod extends js.Object {
       * it is an invalid NameAddrHeader.
       * @param name_addr_header -
       */
+    @JSImport("sip.js/lib/grammar/grammar", "Grammar.nameAddrHeaderParse")
+    @js.native
     def nameAddrHeaderParse(nameAddrHeader: String): js.UndefOr[NameAddrHeader] = js.native
     
     /**
@@ -32,6 +34,8 @@ object grammarGrammarMod extends js.Object {
       * @param input -
       * @param startRule -
       */
+    @JSImport("sip.js/lib/grammar/grammar", "Grammar.parse")
+    @js.native
     def parse(input: String, startRule: String): js.Any = js.native
   }
 }

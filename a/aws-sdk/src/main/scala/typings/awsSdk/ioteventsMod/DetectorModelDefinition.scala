@@ -1,11 +1,12 @@
 package typings.awsSdk.ioteventsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DetectorModelDefinition extends js.Object {
+trait DetectorModelDefinition extends StObject {
   
   /**
     * The state that is entered at the creation of each detector (instance).
@@ -26,27 +27,15 @@ object DetectorModelDefinition {
   }
   
   @scala.inline
-  implicit class DetectorModelDefinitionOps[Self <: DetectorModelDefinition] (val x: Self) extends AnyVal {
+  implicit class DetectorModelDefinitionMutableBuilder[Self <: DetectorModelDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInitialStateName(value: StateName): Self = StObject.set(x, "initialStateName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setStates(value: States): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInitialStateName(value: StateName): Self = this.set("initialStateName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatesVarargs(value: State*): Self = this.set("states", js.Array(value :_*))
-    
-    @scala.inline
-    def setStates(value: States): Self = this.set("states", value.asInstanceOf[js.Any])
+    def setStatesVarargs(value: State*): Self = StObject.set(x, "states", js.Array(value :_*))
   }
 }

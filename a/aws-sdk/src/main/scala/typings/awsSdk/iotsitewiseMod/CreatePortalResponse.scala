@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreatePortalResponse extends js.Object {
+trait CreatePortalResponse extends StObject {
   
   /**
     * The ARN of the portal, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId} 
@@ -47,33 +48,21 @@ object CreatePortalResponse {
   }
   
   @scala.inline
-  implicit class CreatePortalResponseOps[Self <: CreatePortalResponse] (val x: Self) extends AnyVal {
+  implicit class CreatePortalResponseMutableBuilder[Self <: CreatePortalResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPortalStartUrl(value: Url): Self = StObject.set(x, "portalStartUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalArn(value: ARN): Self = this.set("portalArn", value.asInstanceOf[js.Any])
+    def setPortalStatus(value: PortalStatus): Self = StObject.set(x, "portalStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPortalId(value: ID): Self = this.set("portalId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortalStartUrl(value: Url): Self = this.set("portalStartUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPortalStatus(value: PortalStatus): Self = this.set("portalStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSsoApplicationId(value: SSOApplicationId): Self = this.set("ssoApplicationId", value.asInstanceOf[js.Any])
+    def setSsoApplicationId(value: SSOApplicationId): Self = StObject.set(x, "ssoApplicationId", value.asInstanceOf[js.Any])
   }
 }

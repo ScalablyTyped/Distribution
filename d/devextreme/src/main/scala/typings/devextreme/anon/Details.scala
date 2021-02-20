@@ -2,12 +2,13 @@ package typings.devextreme.anon
 
 import typings.devextreme.devextremeStrings.details
 import typings.devextreme.devextremeStrings.thumbnails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Details extends js.Object {
+trait Details extends StObject {
   
   var details: js.UndefOr[`3`] = js.native
   
@@ -26,42 +27,30 @@ object Details {
   }
   
   @scala.inline
-  implicit class DetailsOps[Self <: Details] (val x: Self) extends AnyVal {
+  implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: `3`): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMode(value: details | thumbnails): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: `3`): Self = this.set("details", value.asInstanceOf[js.Any])
+    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("details", js.undefined)
+    def setShowFolders(value: Boolean): Self = StObject.set(x, "showFolders", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMode(value: details | thumbnails): Self = this.set("mode", value.asInstanceOf[js.Any])
+    def setShowFoldersUndefined: Self = StObject.set(x, "showFolders", js.undefined)
     
     @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
+    def setShowParentFolder(value: Boolean): Self = StObject.set(x, "showParentFolder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShowFolders(value: Boolean): Self = this.set("showFolders", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowFolders: Self = this.set("showFolders", js.undefined)
-    
-    @scala.inline
-    def setShowParentFolder(value: Boolean): Self = this.set("showParentFolder", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShowParentFolder: Self = this.set("showParentFolder", js.undefined)
+    def setShowParentFolderUndefined: Self = StObject.set(x, "showParentFolder", js.undefined)
   }
 }

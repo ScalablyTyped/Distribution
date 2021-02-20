@@ -1,11 +1,12 @@
 package typings.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SampleNotification extends js.Object {
+trait SampleNotification extends StObject {
   
   var bt_payload: String = js.native
   
@@ -20,24 +21,12 @@ object SampleNotification {
   }
   
   @scala.inline
-  implicit class SampleNotificationOps[Self <: SampleNotification] (val x: Self) extends AnyVal {
+  implicit class SampleNotificationMutableBuilder[Self <: SampleNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBt_payload(value: String): Self = StObject.set(x, "bt_payload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBt_payload(value: String): Self = this.set("bt_payload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setBt_signature(value: String): Self = this.set("bt_signature", value.asInstanceOf[js.Any])
+    def setBt_signature(value: String): Self = StObject.set(x, "bt_signature", value.asInstanceOf[js.Any])
   }
 }

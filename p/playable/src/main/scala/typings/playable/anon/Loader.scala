@@ -7,12 +7,13 @@ import typings.playable.mainUiBlockTypesMod.IMainUIBlock
 import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import typings.playable.rootContainerTypesMod.IRootContainer
 import typings.playable.themeTypesMod.IThemeService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Loader extends js.Object {
+trait Loader extends StObject {
   
   var config: IPlayerConfig = js.native
   
@@ -45,39 +46,27 @@ object Loader {
   }
   
   @scala.inline
-  implicit class LoaderOps[Self <: Loader] (val x: Self) extends AnyVal {
+  implicit class LoaderMutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfig(value: IPlayerConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    def setLoader(value: ILoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = this.set("engine", value.asInstanceOf[js.Any])
+    def setMainUIBlock(value: IMainUIBlock): Self = StObject.set(x, "mainUIBlock", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = this.set("eventEmitter", value.asInstanceOf[js.Any])
+    def setRootContainer(value: IRootContainer): Self = StObject.set(x, "rootContainer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoader(value: ILoader): Self = this.set("loader", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMainUIBlock(value: IMainUIBlock): Self = this.set("mainUIBlock", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRootContainer(value: IRootContainer): Self = this.set("rootContainer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTheme(value: IThemeService): Self = this.set("theme", value.asInstanceOf[js.Any])
+    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

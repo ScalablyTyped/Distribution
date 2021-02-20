@@ -4,12 +4,13 @@ import typings.googleCloudCommon.anon.ContentType
 import typings.googleCloudCommon.anon.OnAuthenticated
 import typings.teenyRequest.mod.Options
 import typings.teenyRequest.mod.OptionsWithUri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MakeWritableStreamOptions extends js.Object {
+trait MakeWritableStreamOptions extends StObject {
   
   /**
     * A connection instance used to get a token with and send the request
@@ -38,39 +39,27 @@ object MakeWritableStreamOptions {
   }
   
   @scala.inline
-  implicit class MakeWritableStreamOptionsOps[Self <: MakeWritableStreamOptions] (val x: Self) extends AnyVal {
+  implicit class MakeWritableStreamOptionsMutableBuilder[Self <: MakeWritableStreamOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMakeAuthenticatedRequest(value: (OptionsWithUri, OnAuthenticated) => Unit): Self = StObject.set(x, "makeAuthenticatedRequest", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setMakeAuthenticatedRequest(value: (OptionsWithUri, OnAuthenticated) => Unit): Self = this.set("makeAuthenticatedRequest", js.Any.fromFunction2(value))
+    def setMetadata(value: ContentType): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnection(value: js.Object): Self = this.set("connection", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteConnection: Self = this.set("connection", js.undefined)
+    def setRequest(value: Options): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: ContentType): Self = this.set("metadata", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
-    
-    @scala.inline
-    def setRequest(value: Options): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequest: Self = this.set("request", js.undefined)
+    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

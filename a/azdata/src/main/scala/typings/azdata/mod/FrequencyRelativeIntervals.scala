@@ -1,41 +1,36 @@
 package typings.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FrequencyRelativeIntervals extends js.Object
+sealed trait FrequencyRelativeIntervals extends StObject
 @JSImport("azdata", "FrequencyRelativeIntervals")
 @js.native
-object FrequencyRelativeIntervals extends js.Object {
+object FrequencyRelativeIntervals extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[FrequencyRelativeIntervals with Double] = js.native
   
   @js.native
   sealed trait First extends FrequencyRelativeIntervals
-  /* 1 */ @js.native
-  object First extends TopLevel[First with Double]
+  /* 1 */ val First: typings.azdata.mod.FrequencyRelativeIntervals.First with Double = js.native
   
   @js.native
   sealed trait Fourth extends FrequencyRelativeIntervals
-  /* 8 */ @js.native
-  object Fourth extends TopLevel[Fourth with Double]
+  /* 8 */ val Fourth: typings.azdata.mod.FrequencyRelativeIntervals.Fourth with Double = js.native
   
   @js.native
   sealed trait Last extends FrequencyRelativeIntervals
-  /* 16 */ @js.native
-  object Last extends TopLevel[Last with Double]
+  /* 16 */ val Last: typings.azdata.mod.FrequencyRelativeIntervals.Last with Double = js.native
   
   @js.native
   sealed trait Second extends FrequencyRelativeIntervals
-  /* 2 */ @js.native
-  object Second extends TopLevel[Second with Double]
+  /* 2 */ val Second: typings.azdata.mod.FrequencyRelativeIntervals.Second with Double = js.native
   
   @js.native
   sealed trait Third extends FrequencyRelativeIntervals
-  /* 4 */ @js.native
-  object Third extends TopLevel[Third with Double]
+  /* 4 */ val Third: typings.azdata.mod.FrequencyRelativeIntervals.Third with Double = js.native
 }

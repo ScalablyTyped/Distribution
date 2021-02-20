@@ -1,14 +1,12 @@
 package typings.mfiles.global.MFiles
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.mfiles.IObjectFileAndObjVer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.ObjectFileAndObjVer")
 @js.native
 class ObjectFileAndObjVer () extends IObjectFileAndObjVer
-@JSGlobal("MFiles.ObjectFileAndObjVer")
-@js.native
-object ObjectFileAndObjVer extends Instantiable0[IObjectFileAndObjVer]

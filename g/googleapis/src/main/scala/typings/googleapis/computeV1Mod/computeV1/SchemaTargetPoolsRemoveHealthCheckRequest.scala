@@ -1,11 +1,12 @@
 package typings.googleapis.computeV1Mod.computeV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaTargetPoolsRemoveHealthCheckRequest extends js.Object {
+trait SchemaTargetPoolsRemoveHealthCheckRequest extends StObject {
   
   /**
     * Health check URL to be removed. This can be a full or valid partial URL.
@@ -25,27 +26,15 @@ object SchemaTargetPoolsRemoveHealthCheckRequest {
   }
   
   @scala.inline
-  implicit class SchemaTargetPoolsRemoveHealthCheckRequestOps[Self <: SchemaTargetPoolsRemoveHealthCheckRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaTargetPoolsRemoveHealthCheckRequestMutableBuilder[Self <: SchemaTargetPoolsRemoveHealthCheckRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHealthChecks(value: js.Array[SchemaHealthCheckReference]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setHealthChecksVarargs(value: SchemaHealthCheckReference*): Self = this.set("healthChecks", js.Array(value :_*))
-    
-    @scala.inline
-    def setHealthChecks(value: js.Array[SchemaHealthCheckReference]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    def setHealthChecksVarargs(value: SchemaHealthCheckReference*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
   }
 }

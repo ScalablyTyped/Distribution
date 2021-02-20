@@ -1,13 +1,14 @@
 package typings.webrtc
 
 import typings.std.RTCDtxStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpencodingparameters
 @js.native
-trait RTCRtpEncodingParameters extends js.Object {
+trait RTCRtpEncodingParameters extends StObject {
   
   //ssrc: number;
   //rtx: RTCRtpRtxParameters;
@@ -30,33 +31,21 @@ object RTCRtpEncodingParameters {
   }
   
   @scala.inline
-  implicit class RTCRtpEncodingParametersOps[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
+  implicit class RTCRtpEncodingParametersMutableBuilder[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDtx(value: RTCDtxStatus): Self = StObject.set(x, "dtx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDtxUndefined: Self = StObject.set(x, "dtx", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRid(value: String): Self = StObject.set(x, "rid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRid(value: String): Self = this.set("rid", value.asInstanceOf[js.Any])
+    def setScaleResolutionDownBy(value: Double): Self = StObject.set(x, "scaleResolutionDownBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDtx(value: RTCDtxStatus): Self = this.set("dtx", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDtx: Self = this.set("dtx", js.undefined)
-    
-    @scala.inline
-    def setScaleResolutionDownBy(value: Double): Self = this.set("scaleResolutionDownBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScaleResolutionDownBy: Self = this.set("scaleResolutionDownBy", js.undefined)
+    def setScaleResolutionDownByUndefined: Self = StObject.set(x, "scaleResolutionDownBy", js.undefined)
   }
 }

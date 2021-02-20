@@ -9,12 +9,13 @@ import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.proj.Projection
 import typings.openlayers.mod.source.State
 import typings.std.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageCanvasOptions extends js.Object {
+trait ImageCanvasOptions extends StObject {
   
   var attributions: js.UndefOr[AttributionLike] = js.native
   

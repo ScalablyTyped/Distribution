@@ -1,5 +1,6 @@
 package typings.atom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,4 +28,11 @@ package object mod {
   ])
   
   type TestRunner = js.Function1[/* params */ typings.atom.mod.TestRunnerParams, js.Promise[scala.Double]]
+  
+  @scala.inline
+  def watchPath(
+    rootPath: java.lang.String,
+    options: js.Object,
+    eventCallback: js.Function1[/* events */ typings.atom.mod.FilesystemChangeEvent, scala.Unit]
+  ): js.Promise[typings.atom.mod.PathWatcher] = (typings.atom.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watchPath")(rootPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], eventCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.atom.mod.PathWatcher]]
 }

@@ -1,13 +1,13 @@
 package typings.antDesignIconsAngular
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/icons-angular/component/icon.module", JSImport.Namespace)
-@js.native
-object iconModuleMod extends js.Object {
+object iconModuleMod {
   
+  @JSImport("@ant-design/icons-angular/component/icon.module", "IconModule")
   @js.native
-  class IconModule () extends js.Object
+  class IconModule () extends StObject
 }

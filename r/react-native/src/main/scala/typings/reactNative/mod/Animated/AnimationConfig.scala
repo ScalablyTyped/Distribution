@@ -1,11 +1,12 @@
 package typings.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationConfig extends js.Object {
+trait AnimationConfig extends StObject {
   
   var isInteraction: js.UndefOr[Boolean] = js.native
   
@@ -20,27 +21,15 @@ object AnimationConfig {
   }
   
   @scala.inline
-  implicit class AnimationConfigOps[Self <: AnimationConfig] (val x: Self) extends AnyVal {
+  implicit class AnimationConfigMutableBuilder[Self <: AnimationConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsInteraction(value: Boolean): Self = StObject.set(x, "isInteraction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIsInteractionUndefined: Self = StObject.set(x, "isInteraction", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setUseNativeDriver(value: Boolean): Self = this.set("useNativeDriver", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIsInteraction(value: Boolean): Self = this.set("isInteraction", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIsInteraction: Self = this.set("isInteraction", js.undefined)
+    def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
   }
 }

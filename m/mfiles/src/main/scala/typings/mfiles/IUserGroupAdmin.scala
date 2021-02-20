@@ -1,11 +1,12 @@
 package typings.mfiles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IUserGroupAdmin extends js.Object {
+trait IUserGroupAdmin extends StObject {
   
   var AccessControlList: IAccessControlList = js.native
   
@@ -32,33 +33,21 @@ object IUserGroupAdmin {
   }
   
   @scala.inline
-  implicit class IUserGroupAdminOps[Self <: IUserGroupAdmin] (val x: Self) extends AnyVal {
+  implicit class IUserGroupAdminMutableBuilder[Self <: IUserGroupAdmin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone(value: () => IUserGroupAdmin): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCloneFrom(value: IUserGroupAdmin => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    def setSemanticAliases(value: ISemanticAliases): Self = StObject.set(x, "SemanticAliases", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClone(value: () => IUserGroupAdmin): Self = this.set("Clone", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setCloneFrom(value: IUserGroupAdmin => Unit): Self = this.set("CloneFrom", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSemanticAliases(value: ISemanticAliases): Self = this.set("SemanticAliases", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUserGroup(value: IUserGroup): Self = this.set("UserGroup", value.asInstanceOf[js.Any])
+    def setUserGroup(value: IUserGroup): Self = StObject.set(x, "UserGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Configuration for a push delivery endpoint.
   */
 @js.native
-trait SchemaPushConfig extends js.Object {
+trait SchemaPushConfig extends StObject {
   
   /**
     * A URL locating the endpoint to which messages should be pushed. For
@@ -26,24 +27,12 @@ object SchemaPushConfig {
   }
   
   @scala.inline
-  implicit class SchemaPushConfigOps[Self <: SchemaPushConfig] (val x: Self) extends AnyVal {
+  implicit class SchemaPushConfigMutableBuilder[Self <: SchemaPushConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPushEndpoint(value: String): Self = StObject.set(x, "pushEndpoint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPushEndpoint(value: String): Self = this.set("pushEndpoint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePushEndpoint: Self = this.set("pushEndpoint", js.undefined)
+    def setPushEndpointUndefined: Self = StObject.set(x, "pushEndpoint", js.undefined)
   }
 }

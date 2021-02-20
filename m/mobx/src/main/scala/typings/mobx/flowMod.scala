@@ -3,21 +3,40 @@ package typings.mobx
 import typings.std.AsyncGenerator
 import typings.std.Error
 import typings.std.Generator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx/lib/api/flow", JSImport.Namespace)
-@js.native
-object flowMod extends js.Object {
+object flowMod {
   
+  object FlowCancellationError {
+    
+    @JSImport("mobx/lib/api/flow", "FlowCancellationError")
+    @js.native
+    def apply(): Unit = js.native
+    @JSImport("mobx/lib/api/flow", "FlowCancellationError")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("mobx/lib/api/flow", "FlowCancellationError.prototype")
+    @js.native
+    def prototype: js.Any = js.native
+    @scala.inline
+    def prototype_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prototype")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("mobx/lib/api/flow", "flow")
+  @js.native
   def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, (Generator[_, R, _]) | (AsyncGenerator[_, R, _])]): js.Function1[/* args */ Args, CancellablePromise[R]] = js.native
   
+  @JSImport("mobx/lib/api/flow", "isFlowCancellationError")
+  @js.native
   def isFlowCancellationError(error: Error): Boolean = js.native
   
   /* Inlined std.Promise<T> & {cancel (): void} */
   @js.native
-  trait CancellablePromise[T] extends js.Object {
+  trait CancellablePromise[T] extends StObject {
     
     def cancel(): Unit = js.native
     
@@ -58,13 +77,5 @@ object flowMod extends js.Object {
     
     @JSName(js.Symbol.toStringTag)
     val toStringTag: String = js.native
-  }
-  
-  @js.native
-  object FlowCancellationError extends js.Object {
-    
-    def apply(): Unit = js.native
-    
-    var prototype: js.Any = js.native
   }
 }

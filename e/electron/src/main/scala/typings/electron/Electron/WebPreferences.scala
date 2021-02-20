@@ -7,12 +7,13 @@ import typings.electron.electronStrings.bypassHeatCheck
 import typings.electron.electronStrings.bypassHeatCheckAndEagerCompile
 import typings.electron.electronStrings.code
 import typings.electron.electronStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebPreferences extends js.Object {
+trait WebPreferences extends StObject {
   
   /**
     * An alternative title string provided only to accessibility tools such as screen
@@ -310,285 +311,273 @@ object WebPreferences {
   }
   
   @scala.inline
-  implicit class WebPreferencesOps[Self <: WebPreferences] (val x: Self) extends AnyVal {
+  implicit class WebPreferencesMutableBuilder[Self <: WebPreferences] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccessibleTitle(value: String): Self = StObject.set(x, "accessibleTitle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccessibleTitleUndefined: Self = StObject.set(x, "accessibleTitle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdditionalArguments(value: js.Array[String]): Self = StObject.set(x, "additionalArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccessibleTitle(value: String): Self = this.set("accessibleTitle", value.asInstanceOf[js.Any])
+    def setAdditionalArgumentsUndefined: Self = StObject.set(x, "additionalArguments", js.undefined)
     
     @scala.inline
-    def deleteAccessibleTitle: Self = this.set("accessibleTitle", js.undefined)
+    def setAdditionalArgumentsVarargs(value: String*): Self = StObject.set(x, "additionalArguments", js.Array(value :_*))
     
     @scala.inline
-    def setAdditionalArgumentsVarargs(value: String*): Self = this.set("additionalArguments", js.Array(value :_*))
+    def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalArguments(value: js.Array[String]): Self = this.set("additionalArguments", value.asInstanceOf[js.Any])
+    def setAffinityUndefined: Self = StObject.set(x, "affinity", js.undefined)
     
     @scala.inline
-    def deleteAdditionalArguments: Self = this.set("additionalArguments", js.undefined)
+    def setAllowRunningInsecureContent(value: Boolean): Self = StObject.set(x, "allowRunningInsecureContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAffinity(value: String): Self = this.set("affinity", value.asInstanceOf[js.Any])
+    def setAllowRunningInsecureContentUndefined: Self = StObject.set(x, "allowRunningInsecureContent", js.undefined)
     
     @scala.inline
-    def deleteAffinity: Self = this.set("affinity", js.undefined)
+    def setAutoplayPolicy(value: `no-user-gesture-required` | `user-gesture-required` | `document-user-activation-required`): Self = StObject.set(x, "autoplayPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAllowRunningInsecureContent(value: Boolean): Self = this.set("allowRunningInsecureContent", value.asInstanceOf[js.Any])
+    def setAutoplayPolicyUndefined: Self = StObject.set(x, "autoplayPolicy", js.undefined)
     
     @scala.inline
-    def deleteAllowRunningInsecureContent: Self = this.set("allowRunningInsecureContent", js.undefined)
+    def setBackgroundThrottling(value: Boolean): Self = StObject.set(x, "backgroundThrottling", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAutoplayPolicy(value: `no-user-gesture-required` | `user-gesture-required` | `document-user-activation-required`): Self = this.set("autoplayPolicy", value.asInstanceOf[js.Any])
+    def setBackgroundThrottlingUndefined: Self = StObject.set(x, "backgroundThrottling", js.undefined)
     
     @scala.inline
-    def deleteAutoplayPolicy: Self = this.set("autoplayPolicy", js.undefined)
+    def setContextIsolation(value: Boolean): Self = StObject.set(x, "contextIsolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundThrottling(value: Boolean): Self = this.set("backgroundThrottling", value.asInstanceOf[js.Any])
+    def setContextIsolationUndefined: Self = StObject.set(x, "contextIsolation", js.undefined)
     
     @scala.inline
-    def deleteBackgroundThrottling: Self = this.set("backgroundThrottling", js.undefined)
+    def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContextIsolation(value: Boolean): Self = this.set("contextIsolation", value.asInstanceOf[js.Any])
+    def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
     
     @scala.inline
-    def deleteContextIsolation: Self = this.set("contextIsolation", js.undefined)
+    def setDefaultFontFamily(value: DefaultFontFamily): Self = StObject.set(x, "defaultFontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultEncoding(value: String): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
+    def setDefaultFontFamilyUndefined: Self = StObject.set(x, "defaultFontFamily", js.undefined)
     
     @scala.inline
-    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    def setDefaultFontSize(value: Double): Self = StObject.set(x, "defaultFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFontFamily(value: DefaultFontFamily): Self = this.set("defaultFontFamily", value.asInstanceOf[js.Any])
+    def setDefaultFontSizeUndefined: Self = StObject.set(x, "defaultFontSize", js.undefined)
     
     @scala.inline
-    def deleteDefaultFontFamily: Self = this.set("defaultFontFamily", js.undefined)
+    def setDefaultMonospaceFontSize(value: Double): Self = StObject.set(x, "defaultMonospaceFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultFontSize(value: Double): Self = this.set("defaultFontSize", value.asInstanceOf[js.Any])
+    def setDefaultMonospaceFontSizeUndefined: Self = StObject.set(x, "defaultMonospaceFontSize", js.undefined)
     
     @scala.inline
-    def deleteDefaultFontSize: Self = this.set("defaultFontSize", js.undefined)
+    def setDevTools(value: Boolean): Self = StObject.set(x, "devTools", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultMonospaceFontSize(value: Double): Self = this.set("defaultMonospaceFontSize", value.asInstanceOf[js.Any])
+    def setDevToolsUndefined: Self = StObject.set(x, "devTools", js.undefined)
     
     @scala.inline
-    def deleteDefaultMonospaceFontSize: Self = this.set("defaultMonospaceFontSize", js.undefined)
+    def setDisableBlinkFeatures(value: String): Self = StObject.set(x, "disableBlinkFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDevTools(value: Boolean): Self = this.set("devTools", value.asInstanceOf[js.Any])
+    def setDisableBlinkFeaturesUndefined: Self = StObject.set(x, "disableBlinkFeatures", js.undefined)
     
     @scala.inline
-    def deleteDevTools: Self = this.set("devTools", js.undefined)
+    def setDisableDialogs(value: Boolean): Self = StObject.set(x, "disableDialogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableBlinkFeatures(value: String): Self = this.set("disableBlinkFeatures", value.asInstanceOf[js.Any])
+    def setDisableDialogsUndefined: Self = StObject.set(x, "disableDialogs", js.undefined)
     
     @scala.inline
-    def deleteDisableBlinkFeatures: Self = this.set("disableBlinkFeatures", js.undefined)
+    def setDisableHtmlFullscreenWindowResize(value: Boolean): Self = StObject.set(x, "disableHtmlFullscreenWindowResize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableDialogs(value: Boolean): Self = this.set("disableDialogs", value.asInstanceOf[js.Any])
+    def setDisableHtmlFullscreenWindowResizeUndefined: Self = StObject.set(x, "disableHtmlFullscreenWindowResize", js.undefined)
     
     @scala.inline
-    def deleteDisableDialogs: Self = this.set("disableDialogs", js.undefined)
+    def setEnableBlinkFeatures(value: String): Self = StObject.set(x, "enableBlinkFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisableHtmlFullscreenWindowResize(value: Boolean): Self = this.set("disableHtmlFullscreenWindowResize", value.asInstanceOf[js.Any])
+    def setEnableBlinkFeaturesUndefined: Self = StObject.set(x, "enableBlinkFeatures", js.undefined)
     
     @scala.inline
-    def deleteDisableHtmlFullscreenWindowResize: Self = this.set("disableHtmlFullscreenWindowResize", js.undefined)
+    def setEnableRemoteModule(value: Boolean): Self = StObject.set(x, "enableRemoteModule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableBlinkFeatures(value: String): Self = this.set("enableBlinkFeatures", value.asInstanceOf[js.Any])
+    def setEnableRemoteModuleUndefined: Self = StObject.set(x, "enableRemoteModule", js.undefined)
     
     @scala.inline
-    def deleteEnableBlinkFeatures: Self = this.set("enableBlinkFeatures", js.undefined)
+    def setEnableWebSQL(value: Boolean): Self = StObject.set(x, "enableWebSQL", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableRemoteModule(value: Boolean): Self = this.set("enableRemoteModule", value.asInstanceOf[js.Any])
+    def setEnableWebSQLUndefined: Self = StObject.set(x, "enableWebSQL", js.undefined)
     
     @scala.inline
-    def deleteEnableRemoteModule: Self = this.set("enableRemoteModule", js.undefined)
+    def setExperimentalFeatures(value: Boolean): Self = StObject.set(x, "experimentalFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnableWebSQL(value: Boolean): Self = this.set("enableWebSQL", value.asInstanceOf[js.Any])
+    def setExperimentalFeaturesUndefined: Self = StObject.set(x, "experimentalFeatures", js.undefined)
     
     @scala.inline
-    def deleteEnableWebSQL: Self = this.set("enableWebSQL", js.undefined)
+    def setImages(value: Boolean): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExperimentalFeatures(value: Boolean): Self = this.set("experimentalFeatures", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteExperimentalFeatures: Self = this.set("experimentalFeatures", js.undefined)
+    def setJavascript(value: Boolean): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: Boolean): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setJavascriptUndefined: Self = StObject.set(x, "javascript", js.undefined)
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setMinimumFontSize(value: Double): Self = StObject.set(x, "minimumFontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJavascript(value: Boolean): Self = this.set("javascript", value.asInstanceOf[js.Any])
+    def setMinimumFontSizeUndefined: Self = StObject.set(x, "minimumFontSize", js.undefined)
     
     @scala.inline
-    def deleteJavascript: Self = this.set("javascript", js.undefined)
+    def setNativeWindowOpen(value: Boolean): Self = StObject.set(x, "nativeWindowOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumFontSize(value: Double): Self = this.set("minimumFontSize", value.asInstanceOf[js.Any])
+    def setNativeWindowOpenUndefined: Self = StObject.set(x, "nativeWindowOpen", js.undefined)
     
     @scala.inline
-    def deleteMinimumFontSize: Self = this.set("minimumFontSize", js.undefined)
+    def setNavigateOnDragDrop(value: Boolean): Self = StObject.set(x, "navigateOnDragDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNativeWindowOpen(value: Boolean): Self = this.set("nativeWindowOpen", value.asInstanceOf[js.Any])
+    def setNavigateOnDragDropUndefined: Self = StObject.set(x, "navigateOnDragDrop", js.undefined)
     
     @scala.inline
-    def deleteNativeWindowOpen: Self = this.set("nativeWindowOpen", js.undefined)
+    def setNodeIntegration(value: Boolean): Self = StObject.set(x, "nodeIntegration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNavigateOnDragDrop(value: Boolean): Self = this.set("navigateOnDragDrop", value.asInstanceOf[js.Any])
+    def setNodeIntegrationInSubFrames(value: Boolean): Self = StObject.set(x, "nodeIntegrationInSubFrames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNavigateOnDragDrop: Self = this.set("navigateOnDragDrop", js.undefined)
+    def setNodeIntegrationInSubFramesUndefined: Self = StObject.set(x, "nodeIntegrationInSubFrames", js.undefined)
     
     @scala.inline
-    def setNodeIntegration(value: Boolean): Self = this.set("nodeIntegration", value.asInstanceOf[js.Any])
+    def setNodeIntegrationInWorker(value: Boolean): Self = StObject.set(x, "nodeIntegrationInWorker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteNodeIntegration: Self = this.set("nodeIntegration", js.undefined)
+    def setNodeIntegrationInWorkerUndefined: Self = StObject.set(x, "nodeIntegrationInWorker", js.undefined)
     
     @scala.inline
-    def setNodeIntegrationInSubFrames(value: Boolean): Self = this.set("nodeIntegrationInSubFrames", value.asInstanceOf[js.Any])
+    def setNodeIntegrationUndefined: Self = StObject.set(x, "nodeIntegration", js.undefined)
     
     @scala.inline
-    def deleteNodeIntegrationInSubFrames: Self = this.set("nodeIntegrationInSubFrames", js.undefined)
+    def setOffscreen(value: Boolean): Self = StObject.set(x, "offscreen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNodeIntegrationInWorker(value: Boolean): Self = this.set("nodeIntegrationInWorker", value.asInstanceOf[js.Any])
+    def setOffscreenUndefined: Self = StObject.set(x, "offscreen", js.undefined)
     
     @scala.inline
-    def deleteNodeIntegrationInWorker: Self = this.set("nodeIntegrationInWorker", js.undefined)
+    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOffscreen(value: Boolean): Self = this.set("offscreen", value.asInstanceOf[js.Any])
+    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
     @scala.inline
-    def deleteOffscreen: Self = this.set("offscreen", js.undefined)
+    def setPlugins(value: Boolean): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartition(value: String): Self = this.set("partition", value.asInstanceOf[js.Any])
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def deletePartition: Self = this.set("partition", js.undefined)
+    def setPreload(value: String): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: Boolean): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
     @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
+    def setSafeDialogs(value: Boolean): Self = StObject.set(x, "safeDialogs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreload(value: String): Self = this.set("preload", value.asInstanceOf[js.Any])
+    def setSafeDialogsMessage(value: String): Self = StObject.set(x, "safeDialogsMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreload: Self = this.set("preload", js.undefined)
+    def setSafeDialogsMessageUndefined: Self = StObject.set(x, "safeDialogsMessage", js.undefined)
     
     @scala.inline
-    def setSafeDialogs(value: Boolean): Self = this.set("safeDialogs", value.asInstanceOf[js.Any])
+    def setSafeDialogsUndefined: Self = StObject.set(x, "safeDialogs", js.undefined)
     
     @scala.inline
-    def deleteSafeDialogs: Self = this.set("safeDialogs", js.undefined)
+    def setSandbox(value: Boolean): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSafeDialogsMessage(value: String): Self = this.set("safeDialogsMessage", value.asInstanceOf[js.Any])
+    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
     @scala.inline
-    def deleteSafeDialogsMessage: Self = this.set("safeDialogsMessage", js.undefined)
+    def setScrollBounce(value: Boolean): Self = StObject.set(x, "scrollBounce", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSandbox(value: Boolean): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    def setScrollBounceUndefined: Self = StObject.set(x, "scrollBounce", js.undefined)
     
     @scala.inline
-    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    def setSession(value: Session_): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScrollBounce(value: Boolean): Self = this.set("scrollBounce", value.asInstanceOf[js.Any])
+    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
     @scala.inline
-    def deleteScrollBounce: Self = this.set("scrollBounce", js.undefined)
+    def setSpellcheck(value: Boolean): Self = StObject.set(x, "spellcheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: Session_): Self = this.set("session", value.asInstanceOf[js.Any])
+    def setSpellcheckUndefined: Self = StObject.set(x, "spellcheck", js.undefined)
     
     @scala.inline
-    def deleteSession: Self = this.set("session", js.undefined)
+    def setTextAreasAreResizable(value: Boolean): Self = StObject.set(x, "textAreasAreResizable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpellcheck(value: Boolean): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    def setTextAreasAreResizableUndefined: Self = StObject.set(x, "textAreasAreResizable", js.undefined)
     
     @scala.inline
-    def deleteSpellcheck: Self = this.set("spellcheck", js.undefined)
+    def setV8CacheOptions(value: none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile): Self = StObject.set(x, "v8CacheOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextAreasAreResizable(value: Boolean): Self = this.set("textAreasAreResizable", value.asInstanceOf[js.Any])
+    def setV8CacheOptionsUndefined: Self = StObject.set(x, "v8CacheOptions", js.undefined)
     
     @scala.inline
-    def deleteTextAreasAreResizable: Self = this.set("textAreasAreResizable", js.undefined)
+    def setWebSecurity(value: Boolean): Self = StObject.set(x, "webSecurity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setV8CacheOptions(value: none | code | bypassHeatCheck | bypassHeatCheckAndEagerCompile): Self = this.set("v8CacheOptions", value.asInstanceOf[js.Any])
+    def setWebSecurityUndefined: Self = StObject.set(x, "webSecurity", js.undefined)
     
     @scala.inline
-    def deleteV8CacheOptions: Self = this.set("v8CacheOptions", js.undefined)
+    def setWebgl(value: Boolean): Self = StObject.set(x, "webgl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebSecurity(value: Boolean): Self = this.set("webSecurity", value.asInstanceOf[js.Any])
+    def setWebglUndefined: Self = StObject.set(x, "webgl", js.undefined)
     
     @scala.inline
-    def deleteWebSecurity: Self = this.set("webSecurity", js.undefined)
+    def setWebviewTag(value: Boolean): Self = StObject.set(x, "webviewTag", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebgl(value: Boolean): Self = this.set("webgl", value.asInstanceOf[js.Any])
+    def setWebviewTagUndefined: Self = StObject.set(x, "webviewTag", js.undefined)
     
     @scala.inline
-    def deleteWebgl: Self = this.set("webgl", js.undefined)
+    def setWorldSafeExecuteJavaScript(value: Boolean): Self = StObject.set(x, "worldSafeExecuteJavaScript", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWebviewTag(value: Boolean): Self = this.set("webviewTag", value.asInstanceOf[js.Any])
+    def setWorldSafeExecuteJavaScriptUndefined: Self = StObject.set(x, "worldSafeExecuteJavaScript", js.undefined)
     
     @scala.inline
-    def deleteWebviewTag: Self = this.set("webviewTag", js.undefined)
+    def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorldSafeExecuteJavaScript(value: Boolean): Self = this.set("worldSafeExecuteJavaScript", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWorldSafeExecuteJavaScript: Self = this.set("worldSafeExecuteJavaScript", js.undefined)
-    
-    @scala.inline
-    def setZoomFactor(value: Double): Self = this.set("zoomFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZoomFactor: Self = this.set("zoomFactor", js.undefined)
+    def setZoomFactorUndefined: Self = StObject.set(x, "zoomFactor", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientHomegraph.gapi.client.homegraph
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceNames extends js.Object {
+trait DeviceNames extends StObject {
   
   /** List of names provided by the manufacturer rather than the user, such as serial numbers, SKUs, etc. */
   var defaultNames: js.UndefOr[js.Array[String]] = js.native
@@ -25,42 +26,30 @@ object DeviceNames {
   }
   
   @scala.inline
-  implicit class DeviceNamesOps[Self <: DeviceNames] (val x: Self) extends AnyVal {
+  implicit class DeviceNamesMutableBuilder[Self <: DeviceNames] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDefaultNames(value: js.Array[String]): Self = StObject.set(x, "defaultNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefaultNamesUndefined: Self = StObject.set(x, "defaultNames", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefaultNamesVarargs(value: String*): Self = StObject.set(x, "defaultNames", js.Array(value :_*))
     
     @scala.inline
-    def setDefaultNamesVarargs(value: String*): Self = this.set("defaultNames", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefaultNames(value: js.Array[String]): Self = this.set("defaultNames", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDefaultNames: Self = this.set("defaultNames", js.undefined)
+    def setNicknames(value: js.Array[String]): Self = StObject.set(x, "nicknames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setNicknamesUndefined: Self = StObject.set(x, "nicknames", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNicknamesVarargs(value: String*): Self = this.set("nicknames", js.Array(value :_*))
-    
-    @scala.inline
-    def setNicknames(value: js.Array[String]): Self = this.set("nicknames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNicknames: Self = this.set("nicknames", js.undefined)
+    def setNicknamesVarargs(value: String*): Self = StObject.set(x, "nicknames", js.Array(value :_*))
   }
 }

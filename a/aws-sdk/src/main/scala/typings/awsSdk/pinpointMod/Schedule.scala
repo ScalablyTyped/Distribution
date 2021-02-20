@@ -1,11 +1,12 @@
 package typings.awsSdk.pinpointMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schedule extends js.Object {
+trait Schedule extends StObject {
   
   /**
     * The scheduled time, in ISO 8601 format, when the campaign ended or will end.
@@ -54,57 +55,45 @@ object Schedule {
   }
   
   @scala.inline
-  implicit class ScheduleOps[Self <: Schedule] (val x: Self) extends AnyVal {
+  implicit class ScheduleMutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEndTime(value: string): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEventFilter(value: CampaignEventFilter): Self = StObject.set(x, "EventFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStartTime(value: string): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
     @scala.inline
-    def setEndTime(value: string): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    def setFrequency(value: Frequency): Self = StObject.set(x, "Frequency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    def setFrequencyUndefined: Self = StObject.set(x, "Frequency", js.undefined)
     
     @scala.inline
-    def setEventFilter(value: CampaignEventFilter): Self = this.set("EventFilter", value.asInstanceOf[js.Any])
+    def setIsLocalTime(value: boolean): Self = StObject.set(x, "IsLocalTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteEventFilter: Self = this.set("EventFilter", js.undefined)
+    def setIsLocalTimeUndefined: Self = StObject.set(x, "IsLocalTime", js.undefined)
     
     @scala.inline
-    def setFrequency(value: Frequency): Self = this.set("Frequency", value.asInstanceOf[js.Any])
+    def setQuietTime(value: QuietTime): Self = StObject.set(x, "QuietTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFrequency: Self = this.set("Frequency", js.undefined)
+    def setQuietTimeUndefined: Self = StObject.set(x, "QuietTime", js.undefined)
     
     @scala.inline
-    def setIsLocalTime(value: boolean): Self = this.set("IsLocalTime", value.asInstanceOf[js.Any])
+    def setStartTime(value: string): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsLocalTime: Self = this.set("IsLocalTime", js.undefined)
+    def setTimezone(value: string): Self = StObject.set(x, "Timezone", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
-    
-    @scala.inline
-    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    def setTimezoneUndefined: Self = StObject.set(x, "Timezone", js.undefined)
   }
 }

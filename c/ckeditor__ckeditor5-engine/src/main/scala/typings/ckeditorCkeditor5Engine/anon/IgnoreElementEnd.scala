@@ -1,12 +1,13 @@
 package typings.ckeditorCkeditor5Engine.anon
 
 import typings.ckeditorCkeditor5Engine.mod.model.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IgnoreElementEnd extends js.Object {
+trait IgnoreElementEnd extends StObject {
   
   var ignoreElementEnd: Boolean = js.native
   
@@ -25,30 +26,18 @@ object IgnoreElementEnd {
   }
   
   @scala.inline
-  implicit class IgnoreElementEndOps[Self <: IgnoreElementEnd] (val x: Self) extends AnyVal {
+  implicit class IgnoreElementEndMutableBuilder[Self <: IgnoreElementEnd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIgnoreElementEnd(value: Boolean): Self = StObject.set(x, "ignoreElementEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSingleCharacters(value: Boolean): Self = StObject.set(x, "singleCharacters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIgnoreElementEnd(value: Boolean): Self = this.set("ignoreElementEnd", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShallow(value: Boolean): Self = this.set("shallow", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSingleCharacters(value: Boolean): Self = this.set("singleCharacters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartPosition(value: Position): Self = this.set("startPosition", value.asInstanceOf[js.Any])
+    def setStartPosition(value: Position): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
   }
 }

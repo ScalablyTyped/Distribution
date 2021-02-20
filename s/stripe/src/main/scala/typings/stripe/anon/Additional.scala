@@ -1,11 +1,12 @@
 package typings.stripe.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Additional extends js.Object {
+trait Additional extends StObject {
   
   var additional: js.Array[String] = js.native
   
@@ -20,30 +21,18 @@ object Additional {
   }
   
   @scala.inline
-  implicit class AdditionalOps[Self <: Additional] (val x: Self) extends AnyVal {
+  implicit class AdditionalMutableBuilder[Self <: Additional] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdditional(value: js.Array[String]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMinimum(value: js.Array[String]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdditionalVarargs(value: String*): Self = this.set("additional", js.Array(value :_*))
-    
-    @scala.inline
-    def setAdditional(value: js.Array[String]): Self = this.set("additional", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMinimumVarargs(value: String*): Self = this.set("minimum", js.Array(value :_*))
-    
-    @scala.inline
-    def setMinimum(value: js.Array[String]): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    def setMinimumVarargs(value: String*): Self = StObject.set(x, "minimum", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexOutlook.Outlook
 
 import typings.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeZone extends js.Object {
+trait TimeZone extends StObject {
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -62,60 +63,48 @@ object TimeZone {
   }
   
   @scala.inline
-  implicit class TimeZoneOps[Self <: TimeZone] (val x: Self) extends AnyVal {
+  implicit class TimeZoneMutableBuilder[Self <: TimeZone] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBias(value: Double): Self = StObject.set(x, "Bias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setDaylightBias(value: Double): Self = StObject.set(x, "DaylightBias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBias(value: Double): Self = this.set("Bias", value.asInstanceOf[js.Any])
+    def setDaylightDate(value: VarDate): Self = StObject.set(x, "DaylightDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    def setDaylightDesignation(value: String): Self = StObject.set(x, "DaylightDesignation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaylightBias(value: Double): Self = this.set("DaylightBias", value.asInstanceOf[js.Any])
+    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaylightDate(value: VarDate): Self = this.set("DaylightDate", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDaylightDesignation(value: String): Self = this.set("DaylightDesignation", value.asInstanceOf[js.Any])
+    def setOutlookDotTimeZone_typekey(value: TimeZone): Self = StObject.set(x, "Outlook.TimeZone_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOutlookDotTimeZone_typekey(value: TimeZone): Self = this.set("Outlook.TimeZone_typekey", value.asInstanceOf[js.Any])
+    def setStandardBias(value: Double): Self = StObject.set(x, "StandardBias", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    def setStandardDate(value: VarDate): Self = StObject.set(x, "StandardDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardBias(value: Double): Self = this.set("StandardBias", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardDate(value: VarDate): Self = this.set("StandardDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStandardDesignation(value: String): Self = this.set("StandardDesignation", value.asInstanceOf[js.Any])
+    def setStandardDesignation(value: String): Self = StObject.set(x, "StandardDesignation", value.asInstanceOf[js.Any])
   }
 }

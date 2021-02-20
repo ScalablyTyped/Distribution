@@ -1,11 +1,12 @@
 package typings.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AccessibilityOptions extends js.Object {
+trait AccessibilityOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for announcing new data
@@ -148,90 +149,78 @@ object AccessibilityOptions {
   }
   
   @scala.inline
-  implicit class AccessibilityOptionsOps[Self <: AccessibilityOptions] (val x: Self) extends AnyVal {
+  implicit class AccessibilityOptionsMutableBuilder[Self <: AccessibilityOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnnounceNewData(value: AccessibilityAnnounceNewDataOptionsObject): Self = StObject.set(x, "announceNewData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnnounceNewDataUndefined: Self = StObject.set(x, "announceNewData", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomComponents(value: js.Any): Self = StObject.set(x, "customComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnnounceNewData(value: AccessibilityAnnounceNewDataOptionsObject): Self = this.set("announceNewData", value.asInstanceOf[js.Any])
+    def setCustomComponentsUndefined: Self = StObject.set(x, "customComponents", js.undefined)
     
     @scala.inline
-    def deleteAnnounceNewData: Self = this.set("announceNewData", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomComponents(value: js.Any): Self = this.set("customComponents", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomComponents: Self = this.set("customComponents", js.undefined)
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setHighContrastTheme(value: js.Any): Self = StObject.set(x, "highContrastTheme", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHighContrastThemeUndefined: Self = StObject.set(x, "highContrastTheme", js.undefined)
     
     @scala.inline
-    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    def setKeyboardNavigation(value: KeyboardNavigationOptionsObject): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighContrastTheme(value: js.Any): Self = this.set("highContrastTheme", value.asInstanceOf[js.Any])
+    def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
     @scala.inline
-    def deleteHighContrastTheme: Self = this.set("highContrastTheme", js.undefined)
+    def setLandmarkVerbosity(value: OptionsLandmarkVerbosityValue): Self = StObject.set(x, "landmarkVerbosity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardNavigation(value: KeyboardNavigationOptionsObject): Self = this.set("keyboardNavigation", value.asInstanceOf[js.Any])
+    def setLandmarkVerbosityUndefined: Self = StObject.set(x, "landmarkVerbosity", js.undefined)
     
     @scala.inline
-    def deleteKeyboardNavigation: Self = this.set("keyboardNavigation", js.undefined)
+    def setLinkedDescription(value: String | HTMLDOMElement): Self = StObject.set(x, "linkedDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarkVerbosity(value: OptionsLandmarkVerbosityValue): Self = this.set("landmarkVerbosity", value.asInstanceOf[js.Any])
+    def setLinkedDescriptionUndefined: Self = StObject.set(x, "linkedDescription", js.undefined)
     
     @scala.inline
-    def deleteLandmarkVerbosity: Self = this.set("landmarkVerbosity", js.undefined)
+    def setPoint(value: AccessibilityPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLinkedDescription(value: String | HTMLDOMElement): Self = this.set("linkedDescription", value.asInstanceOf[js.Any])
+    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
     @scala.inline
-    def deleteLinkedDescription: Self = this.set("linkedDescription", js.undefined)
+    def setScreenReaderSection(value: AccessibilityScreenReaderSectionOptions): Self = StObject.set(x, "screenReaderSection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoint(value: AccessibilityPointOptions): Self = this.set("point", value.asInstanceOf[js.Any])
+    def setScreenReaderSectionUndefined: Self = StObject.set(x, "screenReaderSection", js.undefined)
     
     @scala.inline
-    def deletePoint: Self = this.set("point", js.undefined)
+    def setSeries(value: AccessibilitySeriesOptions): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenReaderSection(value: AccessibilityScreenReaderSectionOptions): Self = this.set("screenReaderSection", value.asInstanceOf[js.Any])
+    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
     @scala.inline
-    def deleteScreenReaderSection: Self = this.set("screenReaderSection", js.undefined)
+    def setTypeDescription(value: String): Self = StObject.set(x, "typeDescription", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSeries(value: AccessibilitySeriesOptions): Self = this.set("series", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSeries: Self = this.set("series", js.undefined)
-    
-    @scala.inline
-    def setTypeDescription(value: String): Self = this.set("typeDescription", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTypeDescription: Self = this.set("typeDescription", js.undefined)
+    def setTypeDescriptionUndefined: Self = StObject.set(x, "typeDescription", js.undefined)
   }
 }

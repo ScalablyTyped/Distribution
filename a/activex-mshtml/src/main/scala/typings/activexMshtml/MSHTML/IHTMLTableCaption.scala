@@ -1,11 +1,12 @@
 package typings.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IHTMLTableCaption extends js.Object {
+trait IHTMLTableCaption extends StObject {
   
   @JSName("MSHTML.IHTMLTableCaption_typekey")
   var MSHTMLDotIHTMLTableCaption_typekey: IHTMLTableCaption = js.native
@@ -24,27 +25,15 @@ object IHTMLTableCaption {
   }
   
   @scala.inline
-  implicit class IHTMLTableCaptionOps[Self <: IHTMLTableCaption] (val x: Self) extends AnyVal {
+  implicit class IHTMLTableCaptionMutableBuilder[Self <: IHTMLTableCaption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMSHTMLDotIHTMLTableCaption_typekey(value: IHTMLTableCaption): Self = StObject.set(x, "MSHTML.IHTMLTableCaption_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setMSHTMLDotIHTMLTableCaption_typekey(value: IHTMLTableCaption): Self = this.set("MSHTML.IHTMLTableCaption_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVAlign(value: String): Self = this.set("vAlign", value.asInstanceOf[js.Any])
+    def setVAlign(value: String): Self = StObject.set(x, "vAlign", value.asInstanceOf[js.Any])
   }
 }

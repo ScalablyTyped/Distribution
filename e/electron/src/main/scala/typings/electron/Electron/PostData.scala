@@ -3,12 +3,13 @@ package typings.electron.Electron
 import typings.electron.electronStrings.blob
 import typings.electron.electronStrings.file
 import typings.electron.electronStrings.rawData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PostData extends js.Object {
+trait PostData extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/post-data
   /**
@@ -59,57 +60,45 @@ object PostData {
   }
   
   @scala.inline
-  implicit class PostDataOps[Self <: PostData] (val x: Self) extends AnyVal {
+  implicit class PostDataMutableBuilder[Self <: PostData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBlobUUIDUndefined: Self = StObject.set(x, "blobUUID", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: rawData | file | blob): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
     @scala.inline
-    def setBlobUUID(value: String): Self = this.set("blobUUID", value.asInstanceOf[js.Any])
+    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBlobUUID: Self = this.set("blobUUID", js.undefined)
+    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
     @scala.inline
-    def setBytes(value: String): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBytes: Self = this.set("bytes", js.undefined)
+    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     @scala.inline
-    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    def setModificationTime(value: Double): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
     
     @scala.inline
-    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLength: Self = this.set("length", js.undefined)
+    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
     @scala.inline
-    def setModificationTime(value: Double): Self = this.set("modificationTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModificationTime: Self = this.set("modificationTime", js.undefined)
-    
-    @scala.inline
-    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOffset: Self = this.set("offset", js.undefined)
+    def setType(value: rawData | file | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

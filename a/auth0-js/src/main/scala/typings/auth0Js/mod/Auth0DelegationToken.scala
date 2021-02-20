@@ -1,11 +1,12 @@
 package typings.auth0Js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Auth0DelegationToken extends js.Object {
+trait Auth0DelegationToken extends StObject {
   
   /** The length of time in seconds the token is valid for. */
   var expiresIn: Double = js.native
@@ -25,27 +26,15 @@ object Auth0DelegationToken {
   }
   
   @scala.inline
-  implicit class Auth0DelegationTokenOps[Self <: Auth0DelegationToken] (val x: Self) extends AnyVal {
+  implicit class Auth0DelegationTokenMutableBuilder[Self <: Auth0DelegationToken] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setExpiresIn(value: Double): Self = this.set("expiresIn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTokenType(value: String): Self = this.set("tokenType", value.asInstanceOf[js.Any])
+    def setTokenType(value: String): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
   }
 }

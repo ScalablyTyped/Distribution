@@ -1,11 +1,12 @@
 package typings.awsSdk.costexplorerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EC2ResourceDetails extends js.Object {
+trait EC2ResourceDetails extends StObject {
   
   /**
     *  Hourly public On-Demand rate for the instance type.
@@ -61,72 +62,60 @@ object EC2ResourceDetails {
   }
   
   @scala.inline
-  implicit class EC2ResourceDetailsOps[Self <: EC2ResourceDetails] (val x: Self) extends AnyVal {
+  implicit class EC2ResourceDetailsMutableBuilder[Self <: EC2ResourceDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHourlyOnDemandRate(value: GenericString): Self = StObject.set(x, "HourlyOnDemandRate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHourlyOnDemandRateUndefined: Self = StObject.set(x, "HourlyOnDemandRate", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInstanceType(value: GenericString): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHourlyOnDemandRate(value: GenericString): Self = this.set("HourlyOnDemandRate", value.asInstanceOf[js.Any])
+    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
     @scala.inline
-    def deleteHourlyOnDemandRate: Self = this.set("HourlyOnDemandRate", js.undefined)
+    def setMemory(value: GenericString): Self = StObject.set(x, "Memory", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceType(value: GenericString): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    def setMemoryUndefined: Self = StObject.set(x, "Memory", js.undefined)
     
     @scala.inline
-    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    def setNetworkPerformance(value: GenericString): Self = StObject.set(x, "NetworkPerformance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMemory(value: GenericString): Self = this.set("Memory", value.asInstanceOf[js.Any])
+    def setNetworkPerformanceUndefined: Self = StObject.set(x, "NetworkPerformance", js.undefined)
     
     @scala.inline
-    def deleteMemory: Self = this.set("Memory", js.undefined)
+    def setPlatform(value: GenericString): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNetworkPerformance(value: GenericString): Self = this.set("NetworkPerformance", value.asInstanceOf[js.Any])
+    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
     @scala.inline
-    def deleteNetworkPerformance: Self = this.set("NetworkPerformance", js.undefined)
+    def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlatform(value: GenericString): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
     @scala.inline
-    def deletePlatform: Self = this.set("Platform", js.undefined)
+    def setSku(value: GenericString): Self = StObject.set(x, "Sku", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRegion(value: GenericString): Self = this.set("Region", value.asInstanceOf[js.Any])
+    def setSkuUndefined: Self = StObject.set(x, "Sku", js.undefined)
     
     @scala.inline
-    def deleteRegion: Self = this.set("Region", js.undefined)
+    def setStorage(value: GenericString): Self = StObject.set(x, "Storage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSku(value: GenericString): Self = this.set("Sku", value.asInstanceOf[js.Any])
+    def setStorageUndefined: Self = StObject.set(x, "Storage", js.undefined)
     
     @scala.inline
-    def deleteSku: Self = this.set("Sku", js.undefined)
+    def setVcpu(value: GenericString): Self = StObject.set(x, "Vcpu", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStorage(value: GenericString): Self = this.set("Storage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStorage: Self = this.set("Storage", js.undefined)
-    
-    @scala.inline
-    def setVcpu(value: GenericString): Self = this.set("Vcpu", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVcpu: Self = this.set("Vcpu", js.undefined)
+    def setVcpuUndefined: Self = StObject.set(x, "Vcpu", js.undefined)
   }
 }

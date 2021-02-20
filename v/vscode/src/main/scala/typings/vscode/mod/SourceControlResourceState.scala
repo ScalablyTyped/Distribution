@@ -1,11 +1,12 @@
 package typings.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SourceControlResourceState extends js.Object {
+trait SourceControlResourceState extends StObject {
   
   /**
     * The [command](#Command) which should be run when the resource
@@ -53,39 +54,27 @@ object SourceControlResourceState {
   }
   
   @scala.inline
-  implicit class SourceControlResourceStateOps[Self <: SourceControlResourceState] (val x: Self) extends AnyVal {
+  implicit class SourceControlResourceStateMutableBuilder[Self <: SourceControlResourceState] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setContextValue(value: String): Self = StObject.set(x, "contextValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceUri(value: Uri): Self = this.set("resourceUri", value.asInstanceOf[js.Any])
+    def setContextValueUndefined: Self = StObject.set(x, "contextValue", js.undefined)
     
     @scala.inline
-    def setCommand(value: Command): Self = this.set("command", value.asInstanceOf[js.Any])
+    def setDecorations(value: SourceControlResourceDecorations): Self = StObject.set(x, "decorations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCommand: Self = this.set("command", js.undefined)
+    def setDecorationsUndefined: Self = StObject.set(x, "decorations", js.undefined)
     
     @scala.inline
-    def setContextValue(value: String): Self = this.set("contextValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteContextValue: Self = this.set("contextValue", js.undefined)
-    
-    @scala.inline
-    def setDecorations(value: SourceControlResourceDecorations): Self = this.set("decorations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDecorations: Self = this.set("decorations", js.undefined)
+    def setResourceUri(value: Uri): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
   }
 }

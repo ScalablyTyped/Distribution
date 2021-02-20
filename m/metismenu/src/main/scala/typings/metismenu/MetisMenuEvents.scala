@@ -1,5 +1,6 @@
 package typings.metismenu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.metismenu.metismenuStrings.hideDotmetisMenu
   - typings.metismenu.metismenuStrings.hiddenDotmetisMenu
 */
-trait MetisMenuEvents extends js.Object
+trait MetisMenuEvents extends StObject
 object MetisMenuEvents {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.awsSdk.translateMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TerminologyDataLocation extends js.Object {
+trait TerminologyDataLocation extends StObject {
   
   /**
     * The location of the custom terminology data.
@@ -26,24 +27,12 @@ object TerminologyDataLocation {
   }
   
   @scala.inline
-  implicit class TerminologyDataLocationOps[Self <: TerminologyDataLocation] (val x: Self) extends AnyVal {
+  implicit class TerminologyDataLocationMutableBuilder[Self <: TerminologyDataLocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLocation(value: String): Self = this.set("Location", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRepositoryType(value: String): Self = this.set("RepositoryType", value.asInstanceOf[js.Any])
+    def setRepositoryType(value: String): Self = StObject.set(x, "RepositoryType", value.asInstanceOf[js.Any])
   }
 }

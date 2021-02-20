@@ -1,36 +1,32 @@
 package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EnumTextAssistedCorrectionMode extends js.Object
+sealed trait EnumTextAssistedCorrectionMode extends StObject
 @JSImport("dwt/Dynamsoft.Enum", "DynamsoftEnums.EnumTextAssistedCorrectionMode")
 @js.native
-object EnumTextAssistedCorrectionMode extends js.Object {
+object EnumTextAssistedCorrectionMode extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[EnumTextAssistedCorrectionMode with Double] = js.native
   
   @js.native
   sealed trait TACM_AUTO extends EnumTextAssistedCorrectionMode
-  /* 1 */ @js.native
-  object TACM_AUTO extends TopLevel[TACM_AUTO with Double]
+  /* 1 */ val TACM_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextAssistedCorrectionMode.TACM_AUTO with Double = js.native
   
   @js.native
   sealed trait TACM_SKIP extends EnumTextAssistedCorrectionMode
-  /* 0 */ @js.native
-  object TACM_SKIP extends TopLevel[TACM_SKIP with Double]
+  /* 0 */ val TACM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextAssistedCorrectionMode.TACM_SKIP with Double = js.native
   
   @js.native
   sealed trait TACM_VERIFYING extends EnumTextAssistedCorrectionMode
-  /* 2 */ @js.native
-  object TACM_VERIFYING extends TopLevel[TACM_VERIFYING with Double]
+  /* 2 */ val TACM_VERIFYING: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextAssistedCorrectionMode.TACM_VERIFYING with Double = js.native
   
   @js.native
   sealed trait TACM_VERIFYING_PATCHING extends EnumTextAssistedCorrectionMode
-  /* 4 */ @js.native
-  object TACM_VERIFYING_PATCHING extends TopLevel[TACM_VERIFYING_PATCHING with Double]
+  /* 4 */ val TACM_VERIFYING_PATCHING: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumTextAssistedCorrectionMode.TACM_VERIFYING_PATCHING with Double = js.native
 }

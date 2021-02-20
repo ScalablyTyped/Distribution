@@ -1,5 +1,6 @@
 package typings.googleapis.v31Mod.dfareportingV31
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains properties of a Floodlight configuration.
   */
 @js.native
-trait SchemaFloodlightConfiguration extends js.Object {
+trait SchemaFloodlightConfiguration extends StObject {
   
   /**
     * Account ID of this floodlight configuration. This is a read-only field
@@ -113,126 +114,114 @@ object SchemaFloodlightConfiguration {
   }
   
   @scala.inline
-  implicit class SchemaFloodlightConfigurationOps[Self <: SchemaFloodlightConfiguration] (val x: Self) extends AnyVal {
+  implicit class SchemaFloodlightConfigurationMutableBuilder[Self <: SchemaFloodlightConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "advertiserIdDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
     @scala.inline
-    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    def setAnalyticsDataSharingEnabled(value: Boolean): Self = StObject.set(x, "analyticsDataSharingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdvertiserIdDimensionValue(value: SchemaDimensionValue): Self = this.set("advertiserIdDimensionValue", value.asInstanceOf[js.Any])
+    def setAnalyticsDataSharingEnabledUndefined: Self = StObject.set(x, "analyticsDataSharingEnabled", js.undefined)
     
     @scala.inline
-    def deleteAdvertiserIdDimensionValue: Self = this.set("advertiserIdDimensionValue", js.undefined)
+    def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnalyticsDataSharingEnabled(value: Boolean): Self = this.set("analyticsDataSharingEnabled", value.asInstanceOf[js.Any])
+    def setExposureToConversionEnabledUndefined: Self = StObject.set(x, "exposureToConversionEnabled", js.undefined)
     
     @scala.inline
-    def deleteAnalyticsDataSharingEnabled: Self = this.set("analyticsDataSharingEnabled", js.undefined)
+    def setFirstDayOfWeek(value: String): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExposureToConversionEnabled(value: Boolean): Self = this.set("exposureToConversionEnabled", value.asInstanceOf[js.Any])
+    def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
     
     @scala.inline
-    def deleteExposureToConversionEnabled: Self = this.set("exposureToConversionEnabled", js.undefined)
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFirstDayOfWeek(value: String): Self = this.set("firstDayOfWeek", value.asInstanceOf[js.Any])
+    def setIdDimensionValue(value: SchemaDimensionValue): Self = StObject.set(x, "idDimensionValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFirstDayOfWeek: Self = this.set("firstDayOfWeek", js.undefined)
+    def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setInAppAttributionTrackingEnabled(value: Boolean): Self = StObject.set(x, "inAppAttributionTrackingEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdDimensionValue(value: SchemaDimensionValue): Self = this.set("idDimensionValue", value.asInstanceOf[js.Any])
+    def setInAppAttributionTrackingEnabledUndefined: Self = StObject.set(x, "inAppAttributionTrackingEnabled", js.undefined)
     
     @scala.inline
-    def deleteIdDimensionValue: Self = this.set("idDimensionValue", js.undefined)
+    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInAppAttributionTrackingEnabled(value: Boolean): Self = this.set("inAppAttributionTrackingEnabled", value.asInstanceOf[js.Any])
+    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def deleteInAppAttributionTrackingEnabled: Self = this.set("inAppAttributionTrackingEnabled", js.undefined)
+    def setLookbackConfiguration(value: SchemaLookbackConfiguration): Self = StObject.set(x, "lookbackConfiguration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    def setLookbackConfigurationUndefined: Self = StObject.set(x, "lookbackConfiguration", js.undefined)
     
     @scala.inline
-    def deleteKind: Self = this.set("kind", js.undefined)
+    def setNaturalSearchConversionAttributionOption(value: String): Self = StObject.set(x, "naturalSearchConversionAttributionOption", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLookbackConfiguration(value: SchemaLookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
+    def setNaturalSearchConversionAttributionOptionUndefined: Self = StObject.set(x, "naturalSearchConversionAttributionOption", js.undefined)
     
     @scala.inline
-    def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
+    def setOmnitureSettings(value: SchemaOmnitureSettings): Self = StObject.set(x, "omnitureSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNaturalSearchConversionAttributionOption(value: String): Self = this.set("naturalSearchConversionAttributionOption", value.asInstanceOf[js.Any])
+    def setOmnitureSettingsUndefined: Self = StObject.set(x, "omnitureSettings", js.undefined)
     
     @scala.inline
-    def deleteNaturalSearchConversionAttributionOption: Self = this.set("naturalSearchConversionAttributionOption", js.undefined)
+    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOmnitureSettings(value: SchemaOmnitureSettings): Self = this.set("omnitureSettings", value.asInstanceOf[js.Any])
+    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     @scala.inline
-    def deleteOmnitureSettings: Self = this.set("omnitureSettings", js.undefined)
+    def setTagSettings(value: SchemaTagSettings): Self = StObject.set(x, "tagSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    def setTagSettingsUndefined: Self = StObject.set(x, "tagSettings", js.undefined)
     
     @scala.inline
-    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    def setThirdPartyAuthenticationTokens(value: js.Array[SchemaThirdPartyAuthenticationToken]): Self = StObject.set(x, "thirdPartyAuthenticationTokens", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTagSettings(value: SchemaTagSettings): Self = this.set("tagSettings", value.asInstanceOf[js.Any])
+    def setThirdPartyAuthenticationTokensUndefined: Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.undefined)
     
     @scala.inline
-    def deleteTagSettings: Self = this.set("tagSettings", js.undefined)
+    def setThirdPartyAuthenticationTokensVarargs(value: SchemaThirdPartyAuthenticationToken*): Self = StObject.set(x, "thirdPartyAuthenticationTokens", js.Array(value :_*))
     
     @scala.inline
-    def setThirdPartyAuthenticationTokensVarargs(value: SchemaThirdPartyAuthenticationToken*): Self = this.set("thirdPartyAuthenticationTokens", js.Array(value :_*))
+    def setUserDefinedVariableConfigurations(value: js.Array[SchemaUserDefinedVariableConfiguration]): Self = StObject.set(x, "userDefinedVariableConfigurations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThirdPartyAuthenticationTokens(value: js.Array[SchemaThirdPartyAuthenticationToken]): Self = this.set("thirdPartyAuthenticationTokens", value.asInstanceOf[js.Any])
+    def setUserDefinedVariableConfigurationsUndefined: Self = StObject.set(x, "userDefinedVariableConfigurations", js.undefined)
     
     @scala.inline
-    def deleteThirdPartyAuthenticationTokens: Self = this.set("thirdPartyAuthenticationTokens", js.undefined)
-    
-    @scala.inline
-    def setUserDefinedVariableConfigurationsVarargs(value: SchemaUserDefinedVariableConfiguration*): Self = this.set("userDefinedVariableConfigurations", js.Array(value :_*))
-    
-    @scala.inline
-    def setUserDefinedVariableConfigurations(value: js.Array[SchemaUserDefinedVariableConfiguration]): Self = this.set("userDefinedVariableConfigurations", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserDefinedVariableConfigurations: Self = this.set("userDefinedVariableConfigurations", js.undefined)
+    def setUserDefinedVariableConfigurationsVarargs(value: SchemaUserDefinedVariableConfiguration*): Self = StObject.set(x, "userDefinedVariableConfigurations", js.Array(value :_*))
   }
 }

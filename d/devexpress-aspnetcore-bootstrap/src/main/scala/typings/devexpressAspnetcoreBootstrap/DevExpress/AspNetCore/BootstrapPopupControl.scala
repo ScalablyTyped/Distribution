@@ -11,6 +11,7 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.popUp
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.resize
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.shown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -313,18 +314,18 @@ trait BootstrapPopupControl extends Control {
   def setAdaptiveMaxHeight(maxHeight: Double): Unit = js.native
   
   def setAdaptiveMaxWidth(maxWidth: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setAdaptiveMaxWidth(maxWidth: Double): Unit = js.native
   
   def setAdaptiveMinHeight(minHeight: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setAdaptiveMinHeight(minHeight: Double): Unit = js.native
   
   def setAdaptiveMinWidth(minWidth: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setAdaptiveMinWidth(minWidth: Double): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setCollapsed(value: Boolean): Unit = js.native
   
   def setContentHtml(html: String): Unit = js.native
@@ -357,18 +358,18 @@ trait BootstrapPopupControl extends Control {
   def setWindowAdaptiveMaxHeight(window: BootstrapPopupWindow, maxHeight: Double): Unit = js.native
   
   def setWindowAdaptiveMaxWidth(window: BootstrapPopupWindow, maxWidth: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setWindowAdaptiveMaxWidth(window: BootstrapPopupWindow, maxWidth: Double): Unit = js.native
   
   def setWindowAdaptiveMinHeight(window: BootstrapPopupWindow, minHeight: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setWindowAdaptiveMinHeight(window: BootstrapPopupWindow, minHeight: Double): Unit = js.native
   
   def setWindowAdaptiveMinWidth(window: BootstrapPopupWindow, minWidth: String): Unit = js.native
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setWindowAdaptiveMinWidth(window: BootstrapPopupWindow, minWidth: Double): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def setWindowCollapsed(window: BootstrapPopupWindow, value: Boolean): Unit = js.native
   
   def setWindowContentHtml(window: BootstrapPopupWindow, html: String): Unit = js.native
@@ -394,7 +395,7 @@ trait BootstrapPopupControl extends Control {
   def showWindow(window: BootstrapPopupWindow): Unit = js.native
   def showWindow(window: BootstrapPopupWindow, popupElementIndex: Double): Unit = js.native
   
-   // tslint:disable-line:unified-signatures
+  // tslint:disable-line:unified-signatures
   def showWindowAtElement(window: BootstrapPopupWindow, htmlElement: js.Any): Unit = js.native
   
   def showWindowAtElementByID(window: BootstrapPopupWindow, id: String): Unit = js.native

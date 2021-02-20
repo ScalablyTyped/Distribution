@@ -1,11 +1,12 @@
 package typings.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListObjectResult extends js.Object {
+trait ListObjectResult extends StObject {
   
   var isTruncated: Boolean = js.native
   
@@ -32,39 +33,27 @@ object ListObjectResult {
   }
   
   @scala.inline
-  implicit class ListObjectResultOps[Self <: ListObjectResult] (val x: Self) extends AnyVal {
+  implicit class ListObjectResultMutableBuilder[Self <: ListObjectResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextMarker(value: String): Self = StObject.set(x, "nextMarker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setObjects(value: js.Array[ObjectMeta]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsTruncated(value: Boolean): Self = this.set("isTruncated", value.asInstanceOf[js.Any])
+    def setObjectsVarargs(value: ObjectMeta*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
     @scala.inline
-    def setNextMarker(value: String): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
+    def setPrefixes(value: js.Array[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectsVarargs(value: ObjectMeta*): Self = this.set("objects", js.Array(value :_*))
+    def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
     
     @scala.inline
-    def setObjects(value: js.Array[ObjectMeta]): Self = this.set("objects", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPrefixesVarargs(value: String*): Self = this.set("prefixes", js.Array(value :_*))
-    
-    @scala.inline
-    def setPrefixes(value: js.Array[String]): Self = this.set("prefixes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = this.set("res", value.asInstanceOf[js.Any])
+    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

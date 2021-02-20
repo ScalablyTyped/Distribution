@@ -1,5 +1,6 @@
 package typings.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,11 +29,19 @@ class Trigger () extends Base {
   var value: js.Any = js.native
 }
 /* static members */
-@JSImport("survey-knockout", "Trigger")
-@js.native
-object Trigger extends js.Object {
+object Trigger {
   
+  @JSImport("survey-knockout", "Trigger")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("survey-knockout", "Trigger.operators")
+  @js.native
   val operators: HashTable[js.Function] = js.native
   
-  var operatorsValue: HashTable[js.Function] = js.native
+  @JSImport("survey-knockout", "Trigger.operatorsValue")
+  @js.native
+  def operatorsValue: HashTable[js.Function] = js.native
+  @scala.inline
+  def operatorsValue_=(x: HashTable[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operatorsValue")(x.asInstanceOf[js.Any])
 }

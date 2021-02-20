@@ -1,11 +1,12 @@
 package typings.awsSdk.mediapackagevodMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DashManifest extends js.Object {
+trait DashManifest extends StObject {
   
   /**
     * Determines the position of some tags in the Media Presentation Description (MPD).  When set to FULL, elements like SegmentTemplate and ContentProtection are included in each Representation.  When set to COMPACT, duplicate elements are combined and presented at the AdaptationSet level.
@@ -38,48 +39,36 @@ object DashManifest {
   }
   
   @scala.inline
-  implicit class DashManifestOps[Self <: DashManifest] (val x: Self) extends AnyVal {
+  implicit class DashManifestMutableBuilder[Self <: DashManifest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setManifestLayoutUndefined: Self = StObject.set(x, "ManifestLayout", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestLayout(value: ManifestLayout): Self = this.set("ManifestLayout", value.asInstanceOf[js.Any])
+    def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
     
     @scala.inline
-    def deleteManifestLayout: Self = this.set("ManifestLayout", js.undefined)
+    def setMinBufferTimeSeconds(value: integer): Self = StObject.set(x, "MinBufferTimeSeconds", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setManifestName(value: string): Self = this.set("ManifestName", value.asInstanceOf[js.Any])
+    def setMinBufferTimeSecondsUndefined: Self = StObject.set(x, "MinBufferTimeSeconds", js.undefined)
     
     @scala.inline
-    def deleteManifestName: Self = this.set("ManifestName", js.undefined)
+    def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinBufferTimeSeconds(value: integer): Self = this.set("MinBufferTimeSeconds", value.asInstanceOf[js.Any])
+    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
     
     @scala.inline
-    def deleteMinBufferTimeSeconds: Self = this.set("MinBufferTimeSeconds", js.undefined)
+    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProfile(value: Profile): Self = this.set("Profile", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProfile: Self = this.set("Profile", js.undefined)
-    
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.iotMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OutgoingCertificate extends js.Object {
+trait OutgoingCertificate extends StObject {
   
   /**
     * The certificate ARN.
@@ -46,54 +47,42 @@ object OutgoingCertificate {
   }
   
   @scala.inline
-  implicit class OutgoingCertificateOps[Self <: OutgoingCertificate] (val x: Self) extends AnyVal {
+  implicit class OutgoingCertificateMutableBuilder[Self <: OutgoingCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateArnUndefined: Self = StObject.set(x, "certificateArn", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
     @scala.inline
-    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
     @scala.inline
-    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    def setTransferDate(value: DateType): Self = StObject.set(x, "transferDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    def setTransferDateUndefined: Self = StObject.set(x, "transferDate", js.undefined)
     
     @scala.inline
-    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    def setTransferMessage(value: Message): Self = StObject.set(x, "transferMessage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferDate(value: DateType): Self = this.set("transferDate", value.asInstanceOf[js.Any])
+    def setTransferMessageUndefined: Self = StObject.set(x, "transferMessage", js.undefined)
     
     @scala.inline
-    def deleteTransferDate: Self = this.set("transferDate", js.undefined)
+    def setTransferredTo(value: AwsAccountId): Self = StObject.set(x, "transferredTo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransferMessage(value: Message): Self = this.set("transferMessage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferMessage: Self = this.set("transferMessage", js.undefined)
-    
-    @scala.inline
-    def setTransferredTo(value: AwsAccountId): Self = this.set("transferredTo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransferredTo: Self = this.set("transferredTo", js.undefined)
+    def setTransferredToUndefined: Self = StObject.set(x, "transferredTo", js.undefined)
   }
 }

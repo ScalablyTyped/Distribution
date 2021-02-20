@@ -127,6 +127,7 @@ import typings.activexAccess.activexAccessStrings.`PDF Format LeftparenthesisAst
 import typings.activexAccess.activexAccessStrings.`Rich Text Format LeftparenthesisAsteriskDotrtfRightparenthesis`
 import typings.activexAccess.activexAccessStrings.`Snapshot Format LeftparenthesisAsteriskDotsnpRightparenthesis`
 import typings.activexAccess.activexAccessStrings.`XPS Format LeftparenthesisAsteriskDotxpsRightparenthesis`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -261,7 +262,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexAccess.activexAccessNumbers.`89`
   - typings.activexAccess.activexAccessNumbers.`90`
 */
-trait Constants extends js.Object
+trait Constants extends StObject
 object Constants {
   
   @scala.inline

@@ -1,11 +1,12 @@
 package typings.sendcloud.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListMemberAddOptions extends js.Object {
+trait ListMemberAddOptions extends StObject {
   
   var description: js.UndefOr[String] = js.native
   
@@ -24,42 +25,30 @@ object ListMemberAddOptions {
   }
   
   @scala.inline
-  implicit class ListMemberAddOptionsOps[Self <: ListMemberAddOptions] (val x: Self) extends AnyVal {
+  implicit class ListMemberAddOptionsMutableBuilder[Self <: ListMemberAddOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setUpsert(value: String): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setVars(value: String): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUpsert(value: String): Self = this.set("upsert", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUpsert: Self = this.set("upsert", js.undefined)
-    
-    @scala.inline
-    def setVars(value: String): Self = this.set("vars", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVars: Self = this.set("vars", js.undefined)
+    def setVarsUndefined: Self = StObject.set(x, "vars", js.undefined)
   }
 }

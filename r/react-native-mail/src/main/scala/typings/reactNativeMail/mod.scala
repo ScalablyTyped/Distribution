@@ -1,23 +1,24 @@
 package typings.reactNativeMail
 
 import typings.reactNativeMail.anon.Attachment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-mail", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
-  @js.native
-  object Mailer extends js.Object {
+  object default {
     
+    @JSImport("react-native-mail", "default.mail")
+    @js.native
     def mail(options: Attachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = js.native
   }
   
-  @js.native
-  object default extends js.Object {
+  object Mailer {
     
+    @JSImport("react-native-mail", "Mailer.mail")
+    @js.native
     def mail(options: Attachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = js.native
   }
 }

@@ -1,11 +1,12 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentJobInfo extends js.Object {
+trait AgentJobInfo extends StObject {
   
   var alerts: js.Array[AgentAlertInfo] = js.native
   
@@ -98,108 +99,96 @@ object AgentJobInfo {
   }
   
   @scala.inline
-  implicit class AgentJobInfoOps[Self <: AgentJobInfo] (val x: Self) extends AnyVal {
+  implicit class AgentJobInfoMutableBuilder[Self <: AgentJobInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlerts(value: js.Array[AgentAlertInfo]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlertsVarargs(value: AgentAlertInfo*): Self = StObject.set(x, "alerts", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlertsVarargs(value: AgentAlertInfo*): Self = this.set("alerts", js.Array(value :_*))
+    def setCategoryId(value: Double): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlerts(value: js.Array[AgentAlertInfo]): Self = this.set("alerts", value.asInstanceOf[js.Any])
+    def setCategoryType(value: Double): Self = StObject.set(x, "categoryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    def setCurrentExecutionStatus(value: Double): Self = StObject.set(x, "currentExecutionStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryId(value: Double): Self = this.set("categoryId", value.asInstanceOf[js.Any])
+    def setCurrentExecutionStep(value: String): Self = StObject.set(x, "currentExecutionStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCategoryType(value: Double): Self = this.set("categoryType", value.asInstanceOf[js.Any])
+    def setDeleteLevel(value: JobCompletionActionCondition): Self = StObject.set(x, "deleteLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentExecutionStatus(value: Double): Self = this.set("currentExecutionStatus", value.asInstanceOf[js.Any])
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrentExecutionStep(value: String): Self = this.set("currentExecutionStep", value.asInstanceOf[js.Any])
+    def setEmailLevel(value: JobCompletionActionCondition): Self = StObject.set(x, "emailLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeleteLevel(value: JobCompletionActionCondition): Self = this.set("deleteLevel", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setEventLogLevel(value: JobCompletionActionCondition): Self = StObject.set(x, "eventLogLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmailLevel(value: JobCompletionActionCondition): Self = this.set("emailLevel", value.asInstanceOf[js.Any])
+    def setHasSchedule(value: Boolean): Self = StObject.set(x, "hasSchedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setHasStep(value: Boolean): Self = StObject.set(x, "hasStep", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEventLogLevel(value: JobCompletionActionCondition): Self = this.set("eventLogLevel", value.asInstanceOf[js.Any])
+    def setHasTarget(value: Boolean): Self = StObject.set(x, "hasTarget", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasSchedule(value: Boolean): Self = this.set("hasSchedule", value.asInstanceOf[js.Any])
+    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasStep(value: Boolean): Self = this.set("hasStep", value.asInstanceOf[js.Any])
+    def setJobSchedules(value: js.Array[AgentJobScheduleInfo]): Self = StObject.set(x, "jobSchedules", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasTarget(value: Boolean): Self = this.set("hasTarget", value.asInstanceOf[js.Any])
+    def setJobSchedulesVarargs(value: AgentJobScheduleInfo*): Self = StObject.set(x, "jobSchedules", js.Array(value :_*))
     
     @scala.inline
-    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    def setJobSteps(value: js.Array[AgentJobStepInfo]): Self = StObject.set(x, "jobSteps", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobSchedulesVarargs(value: AgentJobScheduleInfo*): Self = this.set("jobSchedules", js.Array(value :_*))
+    def setJobStepsVarargs(value: AgentJobStepInfo*): Self = StObject.set(x, "jobSteps", js.Array(value :_*))
     
     @scala.inline
-    def setJobSchedules(value: js.Array[AgentJobScheduleInfo]): Self = this.set("jobSchedules", value.asInstanceOf[js.Any])
+    def setLastRun(value: String): Self = StObject.set(x, "lastRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobStepsVarargs(value: AgentJobStepInfo*): Self = this.set("jobSteps", js.Array(value :_*))
+    def setLastRunOutcome(value: Double): Self = StObject.set(x, "lastRunOutcome", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setJobSteps(value: js.Array[AgentJobStepInfo]): Self = this.set("jobSteps", value.asInstanceOf[js.Any])
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRun(value: String): Self = this.set("lastRun", value.asInstanceOf[js.Any])
+    def setNextRun(value: String): Self = StObject.set(x, "nextRun", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastRunOutcome(value: Double): Self = this.set("lastRunOutcome", value.asInstanceOf[js.Any])
+    def setOperatorToEmail(value: String): Self = StObject.set(x, "operatorToEmail", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setOperatorToPage(value: String): Self = StObject.set(x, "operatorToPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextRun(value: String): Self = this.set("nextRun", value.asInstanceOf[js.Any])
+    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorToEmail(value: String): Self = this.set("operatorToEmail", value.asInstanceOf[js.Any])
+    def setPageLevel(value: JobCompletionActionCondition): Self = StObject.set(x, "pageLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperatorToPage(value: String): Self = this.set("operatorToPage", value.asInstanceOf[js.Any])
+    def setRunnable(value: Boolean): Self = StObject.set(x, "runnable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPageLevel(value: JobCompletionActionCondition): Self = this.set("pageLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRunnable(value: Boolean): Self = this.set("runnable", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStartStepId(value: Double): Self = this.set("startStepId", value.asInstanceOf[js.Any])
+    def setStartStepId(value: Double): Self = StObject.set(x, "startStepId", value.asInstanceOf[js.Any])
   }
 }

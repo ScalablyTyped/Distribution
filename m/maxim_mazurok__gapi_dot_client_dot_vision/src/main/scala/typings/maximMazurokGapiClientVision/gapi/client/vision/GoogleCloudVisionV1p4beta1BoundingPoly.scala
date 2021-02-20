@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVision.gapi.client.vision
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVisionV1p4beta1BoundingPoly extends js.Object {
+trait GoogleCloudVisionV1p4beta1BoundingPoly extends StObject {
   
   /** The bounding polygon normalized vertices. */
   var normalizedVertices: js.UndefOr[js.Array[GoogleCloudVisionV1p4beta1NormalizedVertex]] = js.native
@@ -22,36 +23,24 @@ object GoogleCloudVisionV1p4beta1BoundingPoly {
   }
   
   @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1BoundingPolyOps[Self <: GoogleCloudVisionV1p4beta1BoundingPoly] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVisionV1p4beta1BoundingPolyMutableBuilder[Self <: GoogleCloudVisionV1p4beta1BoundingPoly] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNormalizedVertices(value: js.Array[GoogleCloudVisionV1p4beta1NormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNormalizedVerticesUndefined: Self = StObject.set(x, "normalizedVertices", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalizedVerticesVarargs(value: GoogleCloudVisionV1p4beta1NormalizedVertex*): Self = StObject.set(x, "normalizedVertices", js.Array(value :_*))
     
     @scala.inline
-    def setNormalizedVerticesVarargs(value: GoogleCloudVisionV1p4beta1NormalizedVertex*): Self = this.set("normalizedVertices", js.Array(value :_*))
+    def setVertices(value: js.Array[GoogleCloudVisionV1p4beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizedVertices(value: js.Array[GoogleCloudVisionV1p4beta1NormalizedVertex]): Self = this.set("normalizedVertices", value.asInstanceOf[js.Any])
+    def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
     @scala.inline
-    def deleteNormalizedVertices: Self = this.set("normalizedVertices", js.undefined)
-    
-    @scala.inline
-    def setVerticesVarargs(value: GoogleCloudVisionV1p4beta1Vertex*): Self = this.set("vertices", js.Array(value :_*))
-    
-    @scala.inline
-    def setVertices(value: js.Array[GoogleCloudVisionV1p4beta1Vertex]): Self = this.set("vertices", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVertices: Self = this.set("vertices", js.undefined)
+    def setVerticesVarargs(value: GoogleCloudVisionV1p4beta1Vertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

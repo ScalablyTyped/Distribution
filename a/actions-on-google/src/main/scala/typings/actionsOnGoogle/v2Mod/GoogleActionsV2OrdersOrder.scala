@@ -1,11 +1,12 @@
 package typings.actionsOnGoogle.v2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2OrdersOrder extends js.Object {
+trait GoogleActionsV2OrdersOrder extends StObject {
   
   /**
     * Required: Merchant assigned internal order id. This id must be unique, and
@@ -50,54 +51,42 @@ object GoogleActionsV2OrdersOrder {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2OrdersOrderOps[Self <: GoogleActionsV2OrdersOrder] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2OrdersOrderMutableBuilder[Self <: GoogleActionsV2OrdersOrder] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActionOrderId(value: String): Self = StObject.set(x, "actionOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionOrderIdUndefined: Self = StObject.set(x, "actionOrderId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCustomerInfo(value: GoogleActionsV2OrdersCustomerInfo): Self = StObject.set(x, "customerInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActionOrderId(value: String): Self = this.set("actionOrderId", value.asInstanceOf[js.Any])
+    def setCustomerInfoUndefined: Self = StObject.set(x, "customerInfo", js.undefined)
     
     @scala.inline
-    def deleteActionOrderId: Self = this.set("actionOrderId", js.undefined)
+    def setFinalOrder(value: GoogleActionsV2OrdersProposedOrder): Self = StObject.set(x, "finalOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerInfo(value: GoogleActionsV2OrdersCustomerInfo): Self = this.set("customerInfo", value.asInstanceOf[js.Any])
+    def setFinalOrderUndefined: Self = StObject.set(x, "finalOrder", js.undefined)
     
     @scala.inline
-    def deleteCustomerInfo: Self = this.set("customerInfo", js.undefined)
+    def setGoogleOrderId(value: String): Self = StObject.set(x, "googleOrderId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFinalOrder(value: GoogleActionsV2OrdersProposedOrder): Self = this.set("finalOrder", value.asInstanceOf[js.Any])
+    def setGoogleOrderIdUndefined: Self = StObject.set(x, "googleOrderId", js.undefined)
     
     @scala.inline
-    def deleteFinalOrder: Self = this.set("finalOrder", js.undefined)
+    def setOrderDate(value: String): Self = StObject.set(x, "orderDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGoogleOrderId(value: String): Self = this.set("googleOrderId", value.asInstanceOf[js.Any])
+    def setOrderDateUndefined: Self = StObject.set(x, "orderDate", js.undefined)
     
     @scala.inline
-    def deleteGoogleOrderId: Self = this.set("googleOrderId", js.undefined)
+    def setPaymentInfo(value: GoogleActionsV2OrdersPaymentInfo): Self = StObject.set(x, "paymentInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrderDate(value: String): Self = this.set("orderDate", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOrderDate: Self = this.set("orderDate", js.undefined)
-    
-    @scala.inline
-    def setPaymentInfo(value: GoogleActionsV2OrdersPaymentInfo): Self = this.set("paymentInfo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePaymentInfo: Self = this.set("paymentInfo", js.undefined)
+    def setPaymentInfoUndefined: Self = StObject.set(x, "paymentInfo", js.undefined)
   }
 }

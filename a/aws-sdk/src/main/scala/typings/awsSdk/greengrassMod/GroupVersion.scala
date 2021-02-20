@@ -1,11 +1,12 @@
 package typings.awsSdk.greengrassMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GroupVersion extends js.Object {
+trait GroupVersion extends StObject {
   
   /**
     * The ARN of the connector definition version for this group.
@@ -51,60 +52,48 @@ object GroupVersion {
   }
   
   @scala.inline
-  implicit class GroupVersionOps[Self <: GroupVersion] (val x: Self) extends AnyVal {
+  implicit class GroupVersionMutableBuilder[Self <: GroupVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorDefinitionVersionArn(value: string): Self = StObject.set(x, "ConnectorDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorDefinitionVersionArnUndefined: Self = StObject.set(x, "ConnectorDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCoreDefinitionVersionArn(value: string): Self = StObject.set(x, "CoreDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorDefinitionVersionArn(value: string): Self = this.set("ConnectorDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setCoreDefinitionVersionArnUndefined: Self = StObject.set(x, "CoreDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteConnectorDefinitionVersionArn: Self = this.set("ConnectorDefinitionVersionArn", js.undefined)
+    def setDeviceDefinitionVersionArn(value: string): Self = StObject.set(x, "DeviceDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCoreDefinitionVersionArn(value: string): Self = this.set("CoreDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setDeviceDefinitionVersionArnUndefined: Self = StObject.set(x, "DeviceDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteCoreDefinitionVersionArn: Self = this.set("CoreDefinitionVersionArn", js.undefined)
+    def setFunctionDefinitionVersionArn(value: string): Self = StObject.set(x, "FunctionDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeviceDefinitionVersionArn(value: string): Self = this.set("DeviceDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setFunctionDefinitionVersionArnUndefined: Self = StObject.set(x, "FunctionDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteDeviceDefinitionVersionArn: Self = this.set("DeviceDefinitionVersionArn", js.undefined)
+    def setLoggerDefinitionVersionArn(value: string): Self = StObject.set(x, "LoggerDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFunctionDefinitionVersionArn(value: string): Self = this.set("FunctionDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setLoggerDefinitionVersionArnUndefined: Self = StObject.set(x, "LoggerDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteFunctionDefinitionVersionArn: Self = this.set("FunctionDefinitionVersionArn", js.undefined)
+    def setResourceDefinitionVersionArn(value: string): Self = StObject.set(x, "ResourceDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLoggerDefinitionVersionArn(value: string): Self = this.set("LoggerDefinitionVersionArn", value.asInstanceOf[js.Any])
+    def setResourceDefinitionVersionArnUndefined: Self = StObject.set(x, "ResourceDefinitionVersionArn", js.undefined)
     
     @scala.inline
-    def deleteLoggerDefinitionVersionArn: Self = this.set("LoggerDefinitionVersionArn", js.undefined)
+    def setSubscriptionDefinitionVersionArn(value: string): Self = StObject.set(x, "SubscriptionDefinitionVersionArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceDefinitionVersionArn(value: string): Self = this.set("ResourceDefinitionVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceDefinitionVersionArn: Self = this.set("ResourceDefinitionVersionArn", js.undefined)
-    
-    @scala.inline
-    def setSubscriptionDefinitionVersionArn(value: string): Self = this.set("SubscriptionDefinitionVersionArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSubscriptionDefinitionVersionArn: Self = this.set("SubscriptionDefinitionVersionArn", js.undefined)
+    def setSubscriptionDefinitionVersionArnUndefined: Self = StObject.set(x, "SubscriptionDefinitionVersionArn", js.undefined)
   }
 }

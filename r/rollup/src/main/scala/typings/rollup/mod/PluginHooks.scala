@@ -3,6 +3,7 @@ package typings.rollup.mod
 import typings.rollup.anon.Event
 import typings.rollup.anon.`1`
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

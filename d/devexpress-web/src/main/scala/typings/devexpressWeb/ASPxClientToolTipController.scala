@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,30 +46,18 @@ object ASPxClientToolTipController {
   }
   
   @scala.inline
-  implicit class ASPxClientToolTipControllerOps[Self <: ASPxClientToolTipController] (val x: Self) extends AnyVal {
+  implicit class ASPxClientToolTipControllerMutableBuilder[Self <: ASPxClientToolTipController] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setImagePosition(value: String): Self = StObject.set(x, "imagePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOpenMode(value: String): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setShowImage(value: Boolean): Self = StObject.set(x, "showImage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImagePosition(value: String): Self = this.set("imagePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOpenMode(value: String): Self = this.set("openMode", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowImage(value: Boolean): Self = this.set("showImage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setShowText(value: Boolean): Self = this.set("showText", value.asInstanceOf[js.Any])
+    def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureScheme
   - typings.devtoolsProtocol.devtoolsProtocolStrings.InsecureAncestor
 */
-trait SecureContextType extends js.Object
+trait SecureContextType extends StObject
 object SecureContextType {
   
   @scala.inline

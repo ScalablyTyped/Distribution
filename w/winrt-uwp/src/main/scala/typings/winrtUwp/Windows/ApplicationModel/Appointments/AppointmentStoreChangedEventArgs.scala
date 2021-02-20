@@ -1,12 +1,13 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a StoreChanged event. */
 @js.native
-trait AppointmentStoreChangedEventArgs extends js.Object {
+trait AppointmentStoreChangedEventArgs extends StObject {
   
   /**
     * Gets the deferral object for the StoreChanged event.
@@ -23,21 +24,9 @@ object AppointmentStoreChangedEventArgs {
   }
   
   @scala.inline
-  implicit class AppointmentStoreChangedEventArgsOps[Self <: AppointmentStoreChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class AppointmentStoreChangedEventArgsMutableBuilder[Self <: AppointmentStoreChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setGetDeferral(value: () => AppointmentStoreChangedDeferral): Self = this.set("getDeferral", js.Any.fromFunction0(value))
+    def setGetDeferral(value: () => AppointmentStoreChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

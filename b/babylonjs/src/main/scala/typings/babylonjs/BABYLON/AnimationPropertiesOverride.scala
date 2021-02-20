@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnimationPropertiesOverride extends js.Object {
+trait AnimationPropertiesOverride extends StObject {
   
   /**
     * Gets or sets the blending speed to use when enableBlending is true
@@ -31,27 +32,15 @@ object AnimationPropertiesOverride {
   }
   
   @scala.inline
-  implicit class AnimationPropertiesOverrideOps[Self <: AnimationPropertiesOverride] (val x: Self) extends AnyVal {
+  implicit class AnimationPropertiesOverrideMutableBuilder[Self <: AnimationPropertiesOverride] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlendingSpeed(value: Double): Self = StObject.set(x, "blendingSpeed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnableBlending(value: Boolean): Self = StObject.set(x, "enableBlending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlendingSpeed(value: Double): Self = this.set("blendingSpeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnableBlending(value: Boolean): Self = this.set("enableBlending", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLoopMode(value: Double): Self = this.set("loopMode", value.asInstanceOf[js.Any])
+    def setLoopMode(value: Double): Self = StObject.set(x, "loopMode", value.asInstanceOf[js.Any])
   }
 }

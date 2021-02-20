@@ -1,11 +1,12 @@
 package typings.jsqrcode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormatInformation extends js.Object {
+trait FormatInformation extends StObject {
   
   val DataMask: Double = js.native
   
@@ -35,30 +36,18 @@ object FormatInformation {
   }
   
   @scala.inline
-  implicit class FormatInformationOps[Self <: FormatInformation] (val x: Self) extends AnyVal {
+  implicit class FormatInformationMutableBuilder[Self <: FormatInformation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDataMask(value: Double): Self = StObject.set(x, "DataMask", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEquals(value: FormatInformation => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setErrorCorrectionLevel(value: ErrorCorrectionLevel): Self = StObject.set(x, "ErrorCorrectionLevel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataMask(value: Double): Self = this.set("DataMask", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEquals(value: FormatInformation => Boolean): Self = this.set("Equals", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setErrorCorrectionLevel(value: ErrorCorrectionLevel): Self = this.set("ErrorCorrectionLevel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetHashCode(value: () => Double): Self = this.set("GetHashCode", js.Any.fromFunction0(value))
+    def setGetHashCode(value: () => Double): Self = StObject.set(x, "GetHashCode", js.Any.fromFunction0(value))
   }
 }

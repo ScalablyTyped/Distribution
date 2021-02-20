@@ -1,11 +1,12 @@
 package typings.vueMarkdown.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Add extends js.Object {
+trait Add extends StObject {
   
   var add: js.Any = js.native
   
@@ -45,45 +46,33 @@ object Add {
   }
   
   @scala.inline
-  implicit class AddOps[Self <: Add] (val x: Self) extends AnyVal {
+  implicit class AddMutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: js.Any): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setNormalize(value: js.Any): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: js.Any): Self = this.set("add", value.asInstanceOf[js.Any])
+    def setPretest(value: js.Any): Self = StObject.set(x, "pretest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMatch(value: js.Any): Self = this.set("match", value.asInstanceOf[js.Any])
+    def setRe(value: Emailfuzzy): Self = StObject.set(x, "re", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalize(value: js.Any): Self = this.set("normalize", value.asInstanceOf[js.Any])
+    def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPretest(value: js.Any): Self = this.set("pretest", value.asInstanceOf[js.Any])
+    def setTest(value: js.Any): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRe(value: Emailfuzzy): Self = this.set("re", value.asInstanceOf[js.Any])
+    def setTestSchemaAt(value: js.Any): Self = StObject.set(x, "testSchemaAt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSet(value: js.Any): Self = this.set("set", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTest(value: js.Any): Self = this.set("test", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTestSchemaAt(value: js.Any): Self = this.set("testSchemaAt", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTlds(value: js.Any): Self = this.set("tlds", value.asInstanceOf[js.Any])
+    def setTlds(value: js.Any): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
   }
 }

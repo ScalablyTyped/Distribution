@@ -1,6 +1,7 @@
 package typings.playcanvas.pc
 
 import typings.playcanvas.pc.callbacks.HandleEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * obj.fire('hello', 'world');
   */
 @js.native
-trait EventHandler extends js.Object {
+trait EventHandler extends StObject {
   
   /**
     * Fire an event, all additional arguments are passed on to the event listener.

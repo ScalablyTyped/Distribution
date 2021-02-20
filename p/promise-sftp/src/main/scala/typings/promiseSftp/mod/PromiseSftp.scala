@@ -10,12 +10,13 @@ import typings.ssh2Streams.mod.Attributes
 import typings.ssh2Streams.mod.InputAttributes
 import typings.ssh2Streams.mod.Stats
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromiseSftp extends js.Object {
+trait PromiseSftp extends StObject {
   
   def append(input: String, destPath: String): typings.bluebird.mod.^[Unit] = js.native
   def append(input: Buffer, destPath: String): typings.bluebird.mod.^[Unit] = js.native

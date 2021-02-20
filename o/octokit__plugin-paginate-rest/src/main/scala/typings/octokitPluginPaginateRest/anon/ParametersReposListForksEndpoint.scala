@@ -3,12 +3,13 @@ package typings.octokitPluginPaginateRest.anon
 import typings.octokitTypes.endpointsMod.ReposListForksEndpoint
 import typings.octokitTypes.endpointsMod.ReposListForksResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersReposListForksEndpoint extends js.Object {
+trait ParametersReposListForksEndpoint extends StObject {
   
   var parameters: ReposListForksEndpoint = js.native
   
@@ -23,24 +24,12 @@ object ParametersReposListForksEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersReposListForksEndpointOps[Self <: ParametersReposListForksEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersReposListForksEndpointMutableBuilder[Self <: ParametersReposListForksEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ReposListForksEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ReposListForksEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListForksResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ReposListForksResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

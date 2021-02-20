@@ -1,11 +1,12 @@
 package typings.azure.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delete extends js.Object {
+trait Delete extends StObject {
   
   var Delete: Boolean = js.native
   
@@ -26,33 +27,21 @@ object Delete {
   }
   
   @scala.inline
-  implicit class DeleteOps[Self <: Delete] (val x: Self) extends AnyVal {
+  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelete(value: Boolean): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRead(value: Boolean): Self = StObject.set(x, "Read", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRetentionPolicy(value: Days): Self = StObject.set(x, "RetentionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelete(value: Boolean): Self = this.set("Delete", value.asInstanceOf[js.Any])
+    def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRead(value: Boolean): Self = this.set("Read", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRetentionPolicy(value: Days): Self = this.set("RetentionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: Double): Self = this.set("Version", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWrite(value: Boolean): Self = this.set("Write", value.asInstanceOf[js.Any])
+    def setWrite(value: Boolean): Self = StObject.set(x, "Write", value.asInstanceOf[js.Any])
   }
 }

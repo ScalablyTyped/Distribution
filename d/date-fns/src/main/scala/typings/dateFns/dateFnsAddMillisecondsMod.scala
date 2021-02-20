@@ -1,15 +1,23 @@
 package typings.dateFns
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/fp/addMilliseconds", JSImport.Namespace)
-@js.native
-object dateFnsAddMillisecondsMod extends js.Object {
+object dateFnsAddMillisecondsMod {
   
-  @js.native
-  object default extends TopLevel[CurriedFn2[Double, Date | Double, Date]]
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/fp/addMilliseconds", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn2[Double, Date | Double, Date] = js.native
+    
+    type _To = CurriedFn2[Double, Date | Double, Date]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn2[Double, Date | Double, Date] = ^
+  }
 }

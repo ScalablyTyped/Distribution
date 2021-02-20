@@ -2,12 +2,13 @@ package typings.smartFoxServer.SFS2X
 
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPUBLIC_MESSAGE extends js.Object {
+trait IPUBLIC_MESSAGE extends StObject {
   
   var data: js.Object = js.native
   
@@ -26,30 +27,18 @@ object IPUBLIC_MESSAGE {
   }
   
   @scala.inline
-  implicit class IPUBLIC_MESSAGEOps[Self <: IPUBLIC_MESSAGE] (val x: Self) extends AnyVal {
+  implicit class IPUBLIC_MESSAGEMutableBuilder[Self <: IPUBLIC_MESSAGE] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: js.Object): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = this.set("room", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSender(value: SFSUser): Self = this.set("sender", value.asInstanceOf[js.Any])
+    def setSender(value: SFSUser): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

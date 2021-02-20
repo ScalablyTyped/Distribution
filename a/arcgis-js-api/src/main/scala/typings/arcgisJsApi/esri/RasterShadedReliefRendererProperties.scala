@@ -4,12 +4,13 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`multi-directional`
 import typings.arcgisJsApi.arcgisJsApiStrings.adjusted
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import typings.arcgisJsApi.arcgisJsApiStrings.traditional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RasterShadedReliefRendererProperties extends js.Object {
+trait RasterShadedReliefRendererProperties extends StObject {
   
   /**
     * The sun's angle of elevation above the horizon, ranging from 0 to 90 degrees.
@@ -76,66 +77,54 @@ object RasterShadedReliefRendererProperties {
   }
   
   @scala.inline
-  implicit class RasterShadedReliefRendererPropertiesOps[Self <: RasterShadedReliefRendererProperties] (val x: Self) extends AnyVal {
+  implicit class RasterShadedReliefRendererPropertiesMutableBuilder[Self <: RasterShadedReliefRendererProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
     
     @scala.inline
-    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    def setColorRamp(value: ColorRampProperties): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAzimuth(value: Double): Self = this.set("azimuth", value.asInstanceOf[js.Any])
+    def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     
     @scala.inline
-    def deleteAzimuth: Self = this.set("azimuth", js.undefined)
+    def setHillshadeType(value: traditional | `multi-directional`): Self = StObject.set(x, "hillshadeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorRamp(value: ColorRampProperties): Self = this.set("colorRamp", value.asInstanceOf[js.Any])
+    def setHillshadeTypeUndefined: Self = StObject.set(x, "hillshadeType", js.undefined)
     
     @scala.inline
-    def deleteColorRamp: Self = this.set("colorRamp", js.undefined)
+    def setPixelSizeFactor(value: Double): Self = StObject.set(x, "pixelSizeFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHillshadeType(value: traditional | `multi-directional`): Self = this.set("hillshadeType", value.asInstanceOf[js.Any])
+    def setPixelSizeFactorUndefined: Self = StObject.set(x, "pixelSizeFactor", js.undefined)
     
     @scala.inline
-    def deleteHillshadeType: Self = this.set("hillshadeType", js.undefined)
+    def setPixelSizePower(value: Double): Self = StObject.set(x, "pixelSizePower", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelSizeFactor(value: Double): Self = this.set("pixelSizeFactor", value.asInstanceOf[js.Any])
+    def setPixelSizePowerUndefined: Self = StObject.set(x, "pixelSizePower", js.undefined)
     
     @scala.inline
-    def deletePixelSizeFactor: Self = this.set("pixelSizeFactor", js.undefined)
+    def setScalingType(value: none | adjusted): Self = StObject.set(x, "scalingType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPixelSizePower(value: Double): Self = this.set("pixelSizePower", value.asInstanceOf[js.Any])
+    def setScalingTypeUndefined: Self = StObject.set(x, "scalingType", js.undefined)
     
     @scala.inline
-    def deletePixelSizePower: Self = this.set("pixelSizePower", js.undefined)
+    def setZFactor(value: Double): Self = StObject.set(x, "zFactor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScalingType(value: none | adjusted): Self = this.set("scalingType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScalingType: Self = this.set("scalingType", js.undefined)
-    
-    @scala.inline
-    def setZFactor(value: Double): Self = this.set("zFactor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteZFactor: Self = this.set("zFactor", js.undefined)
+    def setZFactorUndefined: Self = StObject.set(x, "zFactor", js.undefined)
   }
 }

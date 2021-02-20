@@ -1,12 +1,13 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import typings.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TaskOrchestrationQueuedPlan extends js.Object {
+trait TaskOrchestrationQueuedPlan extends StObject {
   
   var assignTime: Date = js.native
   
@@ -45,45 +46,33 @@ object TaskOrchestrationQueuedPlan {
   }
   
   @scala.inline
-  implicit class TaskOrchestrationQueuedPlanOps[Self <: TaskOrchestrationQueuedPlan] (val x: Self) extends AnyVal {
+  implicit class TaskOrchestrationQueuedPlanMutableBuilder[Self <: TaskOrchestrationQueuedPlan] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssignTime(value: Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssignTime(value: Date): Self = this.set("assignTime", value.asInstanceOf[js.Any])
+    def setPlanGroup(value: String): Self = StObject.set(x, "planGroup", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinition(value: TaskOrchestrationOwner): Self = this.set("definition", value.asInstanceOf[js.Any])
+    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwner(value: TaskOrchestrationOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    def setPoolId(value: Double): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanGroup(value: String): Self = this.set("planGroup", value.asInstanceOf[js.Any])
+    def setQueuePosition(value: Double): Self = StObject.set(x, "queuePosition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlanId(value: String): Self = this.set("planId", value.asInstanceOf[js.Any])
+    def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoolId(value: Double): Self = this.set("poolId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueuePosition(value: Double): Self = this.set("queuePosition", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQueueTime(value: Date): Self = this.set("queueTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScopeIdentifier(value: String): Self = this.set("scopeIdentifier", value.asInstanceOf[js.Any])
+    def setScopeIdentifier(value: String): Self = StObject.set(x, "scopeIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.babylonjs.BABYLON
 
 import typings.std.ArrayBufferView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointsGroup extends js.Object {
+trait PointsGroup extends StObject {
   
   /**
     * density per facet for surface points
@@ -72,48 +73,36 @@ object PointsGroup {
   }
   
   @scala.inline
-  implicit class PointsGroupOps[Self <: PointsGroup] (val x: Self) extends AnyVal {
+  implicit class PointsGroupMutableBuilder[Self <: PointsGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGroupID(value: Double): Self = StObject.set(x, "groupID", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set_groupDensity(value: js.Array[Double]): Self = StObject.set(x, "_groupDensity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_groupDensityVarargs(value: Double*): Self = StObject.set(x, "_groupDensity", js.Array(value :_*))
     
     @scala.inline
-    def set_groupDensityVarargs(value: Double*): Self = this.set("_groupDensity", js.Array(value :_*))
+    def set_groupImageData(value: Nullable[ArrayBufferView]): Self = StObject.set(x, "_groupImageData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_groupDensity(value: js.Array[Double]): Self = this.set("_groupDensity", value.asInstanceOf[js.Any])
+    def set_groupImageDataNull: Self = StObject.set(x, "_groupImageData", null)
     
     @scala.inline
-    def set_groupImgHeight(value: Double): Self = this.set("_groupImgHeight", value.asInstanceOf[js.Any])
+    def set_groupImgHeight(value: Double): Self = StObject.set(x, "_groupImgHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_groupImgWidth(value: Double): Self = this.set("_groupImgWidth", value.asInstanceOf[js.Any])
+    def set_groupImgWidth(value: Double): Self = StObject.set(x, "_groupImgWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_textureNb(value: Double): Self = this.set("_textureNb", value.asInstanceOf[js.Any])
+    def set_positionFunction(value: (/* particle */ CloudPoint, /* i */ js.UndefOr[Double], /* s */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "_positionFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setGroupID(value: Double): Self = this.set("groupID", value.asInstanceOf[js.Any])
+    def set_positionFunctionNull: Self = StObject.set(x, "_positionFunction", null)
     
     @scala.inline
-    def set_groupImageData(value: Nullable[ArrayBufferView]): Self = this.set("_groupImageData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_groupImageDataNull: Self = this.set("_groupImageData", null)
-    
-    @scala.inline
-    def set_positionFunction(value: (/* particle */ CloudPoint, /* i */ js.UndefOr[Double], /* s */ js.UndefOr[Double]) => Unit): Self = this.set("_positionFunction", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def set_positionFunctionNull: Self = this.set("_positionFunction", null)
+    def set_textureNb(value: Double): Self = StObject.set(x, "_textureNb", value.asInstanceOf[js.Any])
   }
 }

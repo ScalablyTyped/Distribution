@@ -2,26 +2,37 @@ package typings.continuationLocalStorage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("continuation-local-storage", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("continuation-local-storage", "createNamespace")
+  @js.native
   def createNamespace(name: String): Namespace = js.native
   
+  @JSImport("continuation-local-storage", "destroyNamespace")
+  @js.native
   def destroyNamespace(name: String): Unit = js.native
   
+  @JSImport("continuation-local-storage", "getNamespace")
+  @js.native
   def getNamespace(name: String): Namespace = js.native
   
+  @JSImport("continuation-local-storage", "reset")
+  @js.native
   def reset(): Unit = js.native
   
+  type Context = StringDictionary[js.Any]
+  
+  type Func[T] = js.Function1[/* repeated */ js.Any, T]
+  
   @js.native
-  trait Namespace extends js.Object {
+  trait Namespace extends StObject {
     
-     // Note: this is readonly because changing it does not actually rename it
+    // Note: this is readonly because changing it does not actually rename it
     val active: Context = js.native
     
     def bind(callback: Func[Unit]): Func[Unit] = js.native
@@ -34,7 +45,7 @@ object mod extends js.Object {
     @JSName("bind")
     def bind_T[T](callback: Func[T], context: Context): Func[T] = js.native
     
-     // Note: this is readonly because changing it manually will break functionality
+    // Note: this is readonly because changing it manually will break functionality
     def createContext(): Context = js.native
     
     def enter(context: Context): Unit = js.native
@@ -54,8 +65,4 @@ object mod extends js.Object {
     
     def set[T](key: String, value: T): T = js.native
   }
-  
-  type Context = StringDictionary[js.Any]
-  
-  type Func[T] = js.Function1[/* repeated */ js.Any, T]
 }

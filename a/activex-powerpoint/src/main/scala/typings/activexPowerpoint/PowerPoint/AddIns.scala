@@ -1,11 +1,12 @@
 package typings.activexPowerpoint.PowerPoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AddIns extends js.Object {
+trait AddIns extends StObject {
   
   def Add(FileName: String): AddIn = js.native
   
@@ -40,39 +41,27 @@ object AddIns {
   }
   
   @scala.inline
-  implicit class AddInsOps[Self <: AddIns] (val x: Self) extends AnyVal {
+  implicit class AddInsMutableBuilder[Self <: AddIns] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAdd(value: String => AddIn): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAdd(value: String => AddIn): Self = this.set("Add", js.Any.fromFunction1(value))
+    def setItem(value: js.Any => AddIn): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    def setPowerPointDotAddIns_typekey(value: AddIns): Self = StObject.set(x, "PowerPoint.AddIns_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItem(value: js.Any => AddIn): Self = this.set("Item", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPowerPointDotAddIns_typekey(value: AddIns): Self = this.set("PowerPoint.AddIns_typekey", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = this.set("Remove", js.Any.fromFunction1(value))
+    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

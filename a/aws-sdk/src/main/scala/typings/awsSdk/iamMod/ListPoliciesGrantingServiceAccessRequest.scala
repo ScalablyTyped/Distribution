@@ -1,11 +1,12 @@
 package typings.awsSdk.iamMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListPoliciesGrantingServiceAccessRequest extends js.Object {
+trait ListPoliciesGrantingServiceAccessRequest extends StObject {
   
   /**
     * The ARN of the IAM identity (user, group, or role) whose policies you want to list.
@@ -31,33 +32,21 @@ object ListPoliciesGrantingServiceAccessRequest {
   }
   
   @scala.inline
-  implicit class ListPoliciesGrantingServiceAccessRequestOps[Self <: ListPoliciesGrantingServiceAccessRequest] (val x: Self) extends AnyVal {
+  implicit class ListPoliciesGrantingServiceAccessRequestMutableBuilder[Self <: ListPoliciesGrantingServiceAccessRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
     @scala.inline
-    def setArn(value: arnType): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    def setServiceNamespaces(value: serviceNamespaceListType): Self = StObject.set(x, "ServiceNamespaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setServiceNamespacesVarargs(value: serviceNamespaceType*): Self = this.set("ServiceNamespaces", js.Array(value :_*))
-    
-    @scala.inline
-    def setServiceNamespaces(value: serviceNamespaceListType): Self = this.set("ServiceNamespaces", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMarker: Self = this.set("Marker", js.undefined)
+    def setServiceNamespacesVarargs(value: serviceNamespaceType*): Self = StObject.set(x, "ServiceNamespaces", js.Array(value :_*))
   }
 }

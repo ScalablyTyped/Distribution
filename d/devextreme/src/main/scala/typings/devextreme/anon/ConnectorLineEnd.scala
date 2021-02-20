@@ -6,12 +6,13 @@ import typings.devextreme.devextremeStrings.none
 import typings.devextreme.devextremeStrings.orthogonal
 import typings.devextreme.devextremeStrings.outlinedTriangle
 import typings.devextreme.devextremeStrings.straight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConnectorLineEnd extends js.Object {
+trait ConnectorLineEnd extends StObject {
   
   var connectorLineEnd: js.UndefOr[none | arrow | outlinedTriangle | filledTriangle] = js.native
   
@@ -40,72 +41,60 @@ object ConnectorLineEnd {
   }
   
   @scala.inline
-  implicit class ConnectorLineEndOps[Self <: ConnectorLineEnd] (val x: Self) extends AnyVal {
+  implicit class ConnectorLineEndMutableBuilder[Self <: ConnectorLineEnd] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setConnectorLineEnd(value: none | arrow | outlinedTriangle | filledTriangle): Self = StObject.set(x, "connectorLineEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConnectorLineEndUndefined: Self = StObject.set(x, "connectorLineEnd", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConnectorLineStart(value: none | arrow | outlinedTriangle | filledTriangle): Self = StObject.set(x, "connectorLineStart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorLineEnd(value: none | arrow | outlinedTriangle | filledTriangle): Self = this.set("connectorLineEnd", value.asInstanceOf[js.Any])
+    def setConnectorLineStartUndefined: Self = StObject.set(x, "connectorLineStart", js.undefined)
     
     @scala.inline
-    def deleteConnectorLineEnd: Self = this.set("connectorLineEnd", js.undefined)
+    def setConnectorLineType(value: straight | orthogonal): Self = StObject.set(x, "connectorLineType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorLineStart(value: none | arrow | outlinedTriangle | filledTriangle): Self = this.set("connectorLineStart", value.asInstanceOf[js.Any])
+    def setConnectorLineTypeUndefined: Self = StObject.set(x, "connectorLineType", js.undefined)
     
     @scala.inline
-    def deleteConnectorLineStart: Self = this.set("connectorLineStart", js.undefined)
+    def setShapeMaxHeight(value: Double): Self = StObject.set(x, "shapeMaxHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConnectorLineType(value: straight | orthogonal): Self = this.set("connectorLineType", value.asInstanceOf[js.Any])
+    def setShapeMaxHeightUndefined: Self = StObject.set(x, "shapeMaxHeight", js.undefined)
     
     @scala.inline
-    def deleteConnectorLineType: Self = this.set("connectorLineType", js.undefined)
+    def setShapeMaxWidth(value: Double): Self = StObject.set(x, "shapeMaxWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMaxHeight(value: Double): Self = this.set("shapeMaxHeight", value.asInstanceOf[js.Any])
+    def setShapeMaxWidthUndefined: Self = StObject.set(x, "shapeMaxWidth", js.undefined)
     
     @scala.inline
-    def deleteShapeMaxHeight: Self = this.set("shapeMaxHeight", js.undefined)
+    def setShapeMinHeight(value: Double): Self = StObject.set(x, "shapeMinHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMaxWidth(value: Double): Self = this.set("shapeMaxWidth", value.asInstanceOf[js.Any])
+    def setShapeMinHeightUndefined: Self = StObject.set(x, "shapeMinHeight", js.undefined)
     
     @scala.inline
-    def deleteShapeMaxWidth: Self = this.set("shapeMaxWidth", js.undefined)
+    def setShapeMinWidth(value: Double): Self = StObject.set(x, "shapeMinWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMinHeight(value: Double): Self = this.set("shapeMinHeight", value.asInstanceOf[js.Any])
+    def setShapeMinWidthUndefined: Self = StObject.set(x, "shapeMinWidth", js.undefined)
     
     @scala.inline
-    def deleteShapeMinHeight: Self = this.set("shapeMinHeight", js.undefined)
+    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShapeMinWidth(value: Double): Self = this.set("shapeMinWidth", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteShapeMinWidth: Self = this.set("shapeMinWidth", js.undefined)
+    def setTextStyle(value: js.Any): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
-    
-    @scala.inline
-    def setTextStyle(value: js.Any): Self = this.set("textStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

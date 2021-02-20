@@ -1,13 +1,14 @@
 package typings.squareConnect.mod
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchLoyaltyAccountsResponse")
 @js.native
-class SearchLoyaltyAccountsResponse () extends js.Object {
+class SearchLoyaltyAccountsResponse () extends StObject {
   
   /**
     * The pagination cursor to use in a subsequent request. If empty, this is the final response.

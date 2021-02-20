@@ -1,12 +1,13 @@
 package typings.awsSdkClientDynamodbNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-dynamodb-node/model/UpdateContinuousBackupsOutput", JSImport.Namespace)
-@js.native
-object updateContinuousBackupsOutputMod extends js.Object {
+object updateContinuousBackupsOutputMod {
   
+  @JSImport("@aws-sdk/client-dynamodb-node/model/UpdateContinuousBackupsOutput", "UpdateContinuousBackupsOutput")
+  @js.native
   val UpdateContinuousBackupsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
 }

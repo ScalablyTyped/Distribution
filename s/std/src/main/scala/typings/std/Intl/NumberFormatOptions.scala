@@ -1,11 +1,12 @@
 package typings.std.Intl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NumberFormatOptions extends js.Object {
+trait NumberFormatOptions extends StObject {
   
   var compactDisplay: js.UndefOr[String] = js.native
   
@@ -48,114 +49,102 @@ object NumberFormatOptions {
   }
   
   @scala.inline
-  implicit class NumberFormatOptionsOps[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
+  implicit class NumberFormatOptionsMutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCompactDisplay(value: String): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCompactDisplayUndefined: Self = StObject.set(x, "compactDisplay", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCompactDisplay(value: String): Self = this.set("compactDisplay", value.asInstanceOf[js.Any])
+    def setCurrencyDisplay(value: String): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCompactDisplay: Self = this.set("compactDisplay", js.undefined)
+    def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
     
     @scala.inline
-    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    def setCurrencySign(value: String): Self = StObject.set(x, "currencySign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCurrency: Self = this.set("currency", js.undefined)
+    def setCurrencySignUndefined: Self = StObject.set(x, "currencySign", js.undefined)
     
     @scala.inline
-    def setCurrencyDisplay(value: String): Self = this.set("currencyDisplay", value.asInstanceOf[js.Any])
+    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
     @scala.inline
-    def deleteCurrencyDisplay: Self = this.set("currencyDisplay", js.undefined)
+    def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurrencySign(value: String): Self = this.set("currencySign", value.asInstanceOf[js.Any])
+    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
     @scala.inline
-    def deleteCurrencySign: Self = this.set("currencySign", js.undefined)
+    def setMaximumFractionDigits(value: Double): Self = StObject.set(x, "maximumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocaleMatcher(value: String): Self = this.set("localeMatcher", value.asInstanceOf[js.Any])
+    def setMaximumFractionDigitsUndefined: Self = StObject.set(x, "maximumFractionDigits", js.undefined)
     
     @scala.inline
-    def deleteLocaleMatcher: Self = this.set("localeMatcher", js.undefined)
+    def setMaximumSignificantDigits(value: Double): Self = StObject.set(x, "maximumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumFractionDigits(value: Double): Self = this.set("maximumFractionDigits", value.asInstanceOf[js.Any])
+    def setMaximumSignificantDigitsUndefined: Self = StObject.set(x, "maximumSignificantDigits", js.undefined)
     
     @scala.inline
-    def deleteMaximumFractionDigits: Self = this.set("maximumFractionDigits", js.undefined)
+    def setMinimumFractionDigits(value: Double): Self = StObject.set(x, "minimumFractionDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaximumSignificantDigits(value: Double): Self = this.set("maximumSignificantDigits", value.asInstanceOf[js.Any])
+    def setMinimumFractionDigitsUndefined: Self = StObject.set(x, "minimumFractionDigits", js.undefined)
     
     @scala.inline
-    def deleteMaximumSignificantDigits: Self = this.set("maximumSignificantDigits", js.undefined)
+    def setMinimumIntegerDigits(value: Double): Self = StObject.set(x, "minimumIntegerDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumFractionDigits(value: Double): Self = this.set("minimumFractionDigits", value.asInstanceOf[js.Any])
+    def setMinimumIntegerDigitsUndefined: Self = StObject.set(x, "minimumIntegerDigits", js.undefined)
     
     @scala.inline
-    def deleteMinimumFractionDigits: Self = this.set("minimumFractionDigits", js.undefined)
+    def setMinimumSignificantDigits(value: Double): Self = StObject.set(x, "minimumSignificantDigits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumIntegerDigits(value: Double): Self = this.set("minimumIntegerDigits", value.asInstanceOf[js.Any])
+    def setMinimumSignificantDigitsUndefined: Self = StObject.set(x, "minimumSignificantDigits", js.undefined)
     
     @scala.inline
-    def deleteMinimumIntegerDigits: Self = this.set("minimumIntegerDigits", js.undefined)
+    def setNotation(value: String): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinimumSignificantDigits(value: Double): Self = this.set("minimumSignificantDigits", value.asInstanceOf[js.Any])
+    def setNotationUndefined: Self = StObject.set(x, "notation", js.undefined)
     
     @scala.inline
-    def deleteMinimumSignificantDigits: Self = this.set("minimumSignificantDigits", js.undefined)
+    def setSignDisplay(value: String): Self = StObject.set(x, "signDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNotation(value: String): Self = this.set("notation", value.asInstanceOf[js.Any])
+    def setSignDisplayUndefined: Self = StObject.set(x, "signDisplay", js.undefined)
     
     @scala.inline
-    def deleteNotation: Self = this.set("notation", js.undefined)
+    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSignDisplay(value: String): Self = this.set("signDisplay", value.asInstanceOf[js.Any])
+    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
     @scala.inline
-    def deleteSignDisplay: Self = this.set("signDisplay", js.undefined)
+    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    def setUnitDisplay(value: String): Self = StObject.set(x, "unitDisplay", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteStyle: Self = this.set("style", js.undefined)
+    def setUnitDisplayUndefined: Self = StObject.set(x, "unitDisplay", js.undefined)
     
     @scala.inline
-    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
     @scala.inline
-    def deleteUnit: Self = this.set("unit", js.undefined)
+    def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitDisplay(value: String): Self = this.set("unitDisplay", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitDisplay: Self = this.set("unitDisplay", js.undefined)
-    
-    @scala.inline
-    def setUseGrouping(value: Boolean): Self = this.set("useGrouping", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUseGrouping: Self = this.set("useGrouping", js.undefined)
+    def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
   }
 }

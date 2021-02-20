@@ -1,6 +1,7 @@
 package typings.vscode.mod
 
 import typings.vscode.anon.Dark
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A panel that contains a webview.
   */
 @js.native
-trait WebviewPanel extends js.Object {
+trait WebviewPanel extends StObject {
   
   /**
     * Whether the panel is active (focused by the user).

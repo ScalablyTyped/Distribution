@@ -1,6 +1,7 @@
 package typings.googleMaps.mod
 
 import typings.googleMaps.googleMapsStrings.ferry_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googleMaps.googleMapsStrings.`roundabout-left`
   - typings.googleMaps.googleMapsStrings.`roundabout-right`
 */
-trait Maneuver extends js.Object
+trait Maneuver extends StObject
 object Maneuver {
   
   @scala.inline

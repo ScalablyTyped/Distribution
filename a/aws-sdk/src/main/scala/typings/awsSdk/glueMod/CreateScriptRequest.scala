@@ -1,11 +1,12 @@
 package typings.awsSdk.glueMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreateScriptRequest extends js.Object {
+trait CreateScriptRequest extends StObject {
   
   /**
     * A list of the edges in the DAG.
@@ -31,42 +32,30 @@ object CreateScriptRequest {
   }
   
   @scala.inline
-  implicit class CreateScriptRequestOps[Self <: CreateScriptRequest] (val x: Self) extends AnyVal {
+  implicit class CreateScriptRequestMutableBuilder[Self <: CreateScriptRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDagEdges(value: DagEdges): Self = StObject.set(x, "DagEdges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDagEdgesUndefined: Self = StObject.set(x, "DagEdges", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value :_*))
     
     @scala.inline
-    def setDagEdgesVarargs(value: CodeGenEdge*): Self = this.set("DagEdges", js.Array(value :_*))
+    def setDagNodes(value: DagNodes): Self = StObject.set(x, "DagNodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDagEdges(value: DagEdges): Self = this.set("DagEdges", value.asInstanceOf[js.Any])
+    def setDagNodesUndefined: Self = StObject.set(x, "DagNodes", js.undefined)
     
     @scala.inline
-    def deleteDagEdges: Self = this.set("DagEdges", js.undefined)
+    def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value :_*))
     
     @scala.inline
-    def setDagNodesVarargs(value: CodeGenNode*): Self = this.set("DagNodes", js.Array(value :_*))
+    def setLanguage(value: Language): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDagNodes(value: DagNodes): Self = this.set("DagNodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDagNodes: Self = this.set("DagNodes", js.undefined)
-    
-    @scala.inline
-    def setLanguage(value: Language): Self = this.set("Language", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage: Self = this.set("Language", js.undefined)
+    def setLanguageUndefined: Self = StObject.set(x, "Language", js.undefined)
   }
 }

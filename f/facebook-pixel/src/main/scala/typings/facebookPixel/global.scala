@@ -1,25 +1,25 @@
 package typings.facebookPixel
 
 import typings.facebookPixel.facebook.Pixel.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobalScope
-@js.native
-object global extends js.Object {
+object global {
   
-  var fbq: Event = js.native
-  
+  @JSGlobal("fbq")
   @js.native
-  object facebook extends js.Object {
+  def fbq: Event = js.native
+  @scala.inline
+  def fbq_=(x: Event): Unit = js.Dynamic.global.updateDynamic("fbq")(x.asInstanceOf[js.Any])
+  
+  object facebook {
     
-    @js.native
-    object Pixel extends js.Object {
+    object Pixel {
       
       // For Facebook Tag API using Dynamic Product Ads
-      @js.native
-      object DPA extends js.Object
+      object DPA
     }
   }
 }

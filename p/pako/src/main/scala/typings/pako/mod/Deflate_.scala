@@ -2,6 +2,7 @@ package typings.pako.mod
 
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // https://github.com/nodeca/pako/blob/893381abcafa10fa2081ce60dae7d4d8e873a658/lib/deflate.js
 @JSImport("pako", "Deflate")
 @js.native
-class Deflate_ () extends js.Object {
+class Deflate_ () extends StObject {
   def this(options: DeflateOptions) = this()
   
   var err: ReturnCodes = js.native

@@ -1,12 +1,13 @@
 package typings.ethereumCryptography
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ethereum-cryptography/bip39/wordlists/traditional-chinese", JSImport.Namespace)
-@js.native
-object traditionalChineseMod extends js.Object {
+object traditionalChineseMod {
   
+  @JSImport("ethereum-cryptography/bip39/wordlists/traditional-chinese", "wordlist")
+  @js.native
   val wordlist: js.Array[String] = js.native
 }

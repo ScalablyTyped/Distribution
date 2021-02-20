@@ -1,15 +1,16 @@
 package typings.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("validator/lib/isJWT", JSImport.Namespace)
-@js.native
-object isJWTMod extends js.Object {
+object isJWTMod {
   
   /**
     * Check if the string is valid JWT token.
     */
+  @JSImport("validator/lib/isJWT", JSImport.Default)
+  @js.native
   def default(str: String): Boolean = js.native
 }

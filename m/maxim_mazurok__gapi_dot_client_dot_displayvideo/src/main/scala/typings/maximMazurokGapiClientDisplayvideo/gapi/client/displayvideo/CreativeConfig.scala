@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CreativeConfig extends js.Object {
+trait CreativeConfig extends StObject {
   
   /** The type of creative that can be assigned to the inventory source. */
   var creativeType: js.UndefOr[String] = js.native
@@ -25,36 +26,24 @@ object CreativeConfig {
   }
   
   @scala.inline
-  implicit class CreativeConfigOps[Self <: CreativeConfig] (val x: Self) extends AnyVal {
+  implicit class CreativeConfigMutableBuilder[Self <: CreativeConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreativeType(value: String): Self = StObject.set(x, "creativeType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreativeTypeUndefined: Self = StObject.set(x, "creativeType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayCreativeConfig(value: InventorySourceDisplayCreativeConfig): Self = StObject.set(x, "displayCreativeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreativeType(value: String): Self = this.set("creativeType", value.asInstanceOf[js.Any])
+    def setDisplayCreativeConfigUndefined: Self = StObject.set(x, "displayCreativeConfig", js.undefined)
     
     @scala.inline
-    def deleteCreativeType: Self = this.set("creativeType", js.undefined)
+    def setVideoCreativeConfig(value: InventorySourceVideoCreativeConfig): Self = StObject.set(x, "videoCreativeConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayCreativeConfig(value: InventorySourceDisplayCreativeConfig): Self = this.set("displayCreativeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDisplayCreativeConfig: Self = this.set("displayCreativeConfig", js.undefined)
-    
-    @scala.inline
-    def setVideoCreativeConfig(value: InventorySourceVideoCreativeConfig): Self = this.set("videoCreativeConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoCreativeConfig: Self = this.set("videoCreativeConfig", js.undefined)
+    def setVideoCreativeConfigUndefined: Self = StObject.set(x, "videoCreativeConfig", js.undefined)
   }
 }

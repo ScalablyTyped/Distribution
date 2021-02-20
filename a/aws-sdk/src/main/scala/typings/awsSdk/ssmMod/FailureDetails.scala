@@ -1,11 +1,12 @@
 package typings.awsSdk.ssmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailureDetails extends js.Object {
+trait FailureDetails extends StObject {
   
   /**
     * Detailed information about the Automation step failure.
@@ -31,36 +32,24 @@ object FailureDetails {
   }
   
   @scala.inline
-  implicit class FailureDetailsOps[Self <: FailureDetails] (val x: Self) extends AnyVal {
+  implicit class FailureDetailsMutableBuilder[Self <: FailureDetails] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDetails(value: AutomationParameterMap): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFailureStage(value: String): Self = StObject.set(x, "FailureStage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDetails(value: AutomationParameterMap): Self = this.set("Details", value.asInstanceOf[js.Any])
+    def setFailureStageUndefined: Self = StObject.set(x, "FailureStage", js.undefined)
     
     @scala.inline
-    def deleteDetails: Self = this.set("Details", js.undefined)
+    def setFailureType(value: String): Self = StObject.set(x, "FailureType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFailureStage(value: String): Self = this.set("FailureStage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureStage: Self = this.set("FailureStage", js.undefined)
-    
-    @scala.inline
-    def setFailureType(value: String): Self = this.set("FailureType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFailureType: Self = this.set("FailureType", js.undefined)
+    def setFailureTypeUndefined: Self = StObject.set(x, "FailureType", js.undefined)
   }
 }

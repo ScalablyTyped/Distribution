@@ -1,11 +1,12 @@
 package typings.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChannelStats extends js.Object {
+trait ChannelStats extends StObject {
   
   /** maximum value in the channel */
   var max: Double = js.native
@@ -57,48 +58,36 @@ object ChannelStats {
   }
   
   @scala.inline
-  implicit class ChannelStatsOps[Self <: ChannelStats] (val x: Self) extends AnyVal {
+  implicit class ChannelStatsMutableBuilder[Self <: ChannelStats] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxX(value: Double): Self = this.set("maxX", value.asInstanceOf[js.Any])
+    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxY(value: Double): Self = this.set("maxY", value.asInstanceOf[js.Any])
+    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMean(value: Double): Self = this.set("mean", value.asInstanceOf[js.Any])
+    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    def setSquaresSum(value: Double): Self = StObject.set(x, "squaresSum", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinX(value: Double): Self = this.set("minX", value.asInstanceOf[js.Any])
+    def setStdev(value: Double): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinY(value: Double): Self = this.set("minY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSquaresSum(value: Double): Self = this.set("squaresSum", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStdev(value: Double): Self = this.set("stdev", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSum(value: Double): Self = this.set("sum", value.asInstanceOf[js.Any])
+    def setSum(value: Double): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
   }
 }

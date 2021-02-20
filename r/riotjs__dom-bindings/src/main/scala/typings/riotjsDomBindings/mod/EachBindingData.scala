@@ -1,5 +1,6 @@
 package typings.riotjsDomBindings.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,48 +29,36 @@ object EachBindingData {
   }
   
   @scala.inline
-  implicit class EachBindingDataOps[Self <: EachBindingData] (val x: Self) extends AnyVal {
+  implicit class EachBindingDataMutableBuilder[Self <: EachBindingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: /* scope */ js.Any => _): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setConditionNull: Self = StObject.set(x, "condition", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
     @scala.inline
-    def setItemName(value: String): Self = this.set("itemName", value.asInstanceOf[js.Any])
+    def setGetKey(value: /* scope */ js.Any => _): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setTemplate(value: TemplateChunk[_, _]): Self = this.set("template", value.asInstanceOf[js.Any])
+    def setGetKeyNull: Self = StObject.set(x, "getKey", null)
     
     @scala.inline
-    def setCondition(value: /* scope */ js.Any => _): Self = this.set("condition", js.Any.fromFunction1(value))
+    def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
     
     @scala.inline
-    def deleteCondition: Self = this.set("condition", js.undefined)
+    def setIndexName(value: Double): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConditionNull: Self = this.set("condition", null)
+    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
     @scala.inline
-    def setGetKey(value: /* scope */ js.Any => _): Self = this.set("getKey", js.Any.fromFunction1(value))
+    def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGetKey: Self = this.set("getKey", js.undefined)
-    
-    @scala.inline
-    def setGetKeyNull: Self = this.set("getKey", null)
-    
-    @scala.inline
-    def setIndexName(value: Double): Self = this.set("indexName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    def setTemplate(value: TemplateChunk[_, _]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,13 @@
 package typings.thrift.mod
 
 import typings.thrift.anon.Instantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceOptions[TProcessor, THandler] extends js.Object {
+trait ServiceOptions[TProcessor, THandler] extends StObject {
   
   var handler: js.UndefOr[THandler] = js.native
   
@@ -25,42 +26,30 @@ object ServiceOptions {
   }
   
   @scala.inline
-  implicit class ServiceOptionsOps[Self <: ServiceOptions[_, _], TProcessor, THandler] (val x: Self with (ServiceOptions[TProcessor, THandler])) extends AnyVal {
+  implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions[_, _], TProcessor, THandler] (val x: Self with (ServiceOptions[TProcessor, THandler])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setProcessor(value: Instantiable[THandler, TProcessor]): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHandler(value: THandler): Self = this.set("handler", value.asInstanceOf[js.Any])
+    def setProcessorUndefined: Self = StObject.set(x, "processor", js.undefined)
     
     @scala.inline
-    def deleteHandler: Self = this.set("handler", js.undefined)
+    def setProtocol(value: TProtocolConstructor): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProcessor(value: Instantiable[THandler, TProcessor]): Self = this.set("processor", value.asInstanceOf[js.Any])
+    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
     @scala.inline
-    def deleteProcessor: Self = this.set("processor", js.undefined)
+    def setTransport(value: TTransportConstructor): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProtocol(value: TProtocolConstructor): Self = this.set("protocol", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteProtocol: Self = this.set("protocol", js.undefined)
-    
-    @scala.inline
-    def setTransport(value: TTransportConstructor): Self = this.set("transport", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTransport: Self = this.set("transport", js.undefined)
+    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

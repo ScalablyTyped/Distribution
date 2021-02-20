@@ -1,14 +1,14 @@
 package typings.agGrid
 
 import typings.agGrid.bodyDropTargetMod.DropListener
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ag-grid/dist/lib/headerRendering/bodyDropPivotTarget", JSImport.Namespace)
-@js.native
-object bodyDropPivotTargetMod extends js.Object {
+object bodyDropPivotTargetMod {
   
+  @JSImport("ag-grid/dist/lib/headerRendering/bodyDropPivotTarget", "BodyDropPivotTarget")
   @js.native
   class BodyDropPivotTarget protected () extends DropListener {
     def this(pinned: String) = this()

@@ -1,11 +1,12 @@
 package typings.awsSdk.sesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BouncedRecipientInfo extends js.Object {
+trait BouncedRecipientInfo extends StObject {
   
   /**
     * The reason for the bounce. You must provide either this parameter or RecipientDsnFields.
@@ -36,39 +37,27 @@ object BouncedRecipientInfo {
   }
   
   @scala.inline
-  implicit class BouncedRecipientInfoOps[Self <: BouncedRecipientInfo] (val x: Self) extends AnyVal {
+  implicit class BouncedRecipientInfoMutableBuilder[Self <: BouncedRecipientInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBounceType(value: BounceType): Self = StObject.set(x, "BounceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBounceTypeUndefined: Self = StObject.set(x, "BounceType", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRecipient(value: Address): Self = StObject.set(x, "Recipient", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipient(value: Address): Self = this.set("Recipient", value.asInstanceOf[js.Any])
+    def setRecipientArn(value: AmazonResourceName): Self = StObject.set(x, "RecipientArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBounceType(value: BounceType): Self = this.set("BounceType", value.asInstanceOf[js.Any])
+    def setRecipientArnUndefined: Self = StObject.set(x, "RecipientArn", js.undefined)
     
     @scala.inline
-    def deleteBounceType: Self = this.set("BounceType", js.undefined)
+    def setRecipientDsnFields(value: RecipientDsnFields): Self = StObject.set(x, "RecipientDsnFields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRecipientArn(value: AmazonResourceName): Self = this.set("RecipientArn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientArn: Self = this.set("RecipientArn", js.undefined)
-    
-    @scala.inline
-    def setRecipientDsnFields(value: RecipientDsnFields): Self = this.set("RecipientDsnFields", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRecipientDsnFields: Self = this.set("RecipientDsnFields", js.undefined)
+    def setRecipientDsnFieldsUndefined: Self = StObject.set(x, "RecipientDsnFields", js.undefined)
   }
 }

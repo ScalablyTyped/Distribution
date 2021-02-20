@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DriveItemUploadableProperties extends js.Object {
+trait DriveItemUploadableProperties extends StObject {
   
   // Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
   var description: js.UndefOr[NullableOption[String]] = js.native
@@ -28,54 +29,42 @@ object DriveItemUploadableProperties {
   }
   
   @scala.inline
-  implicit class DriveItemUploadablePropertiesOps[Self <: DriveItemUploadableProperties] (val x: Self) extends AnyVal {
+  implicit class DriveItemUploadablePropertiesMutableBuilder[Self <: DriveItemUploadableProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setDescription(value: NullableOption[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setFileSize(value: NullableOption[Double]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setFileSizeNull: Self = StObject.set(x, "fileSize", null)
     
     @scala.inline
-    def setDescriptionNull: Self = this.set("description", null)
+    def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
     
     @scala.inline
-    def setFileSize(value: NullableOption[Double]): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = StObject.set(x, "fileSystemInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileSize: Self = this.set("fileSize", js.undefined)
+    def setFileSystemInfoNull: Self = StObject.set(x, "fileSystemInfo", null)
     
     @scala.inline
-    def setFileSizeNull: Self = this.set("fileSize", null)
+    def setFileSystemInfoUndefined: Self = StObject.set(x, "fileSystemInfo", js.undefined)
     
     @scala.inline
-    def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = this.set("fileSystemInfo", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteFileSystemInfo: Self = this.set("fileSystemInfo", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setFileSystemInfoNull: Self = this.set("fileSystemInfo", null)
-    
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

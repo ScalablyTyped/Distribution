@@ -1,11 +1,12 @@
 package typings.styledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpaceProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+trait SpaceProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /** Margin on top, left, bottom and right */
   var m: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
@@ -100,354 +101,342 @@ object SpaceProps {
   }
   
   @scala.inline
-  implicit class SpacePropsOps[Self <: SpaceProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (SpaceProps[ThemeType, TVal])) extends AnyVal {
+  implicit class SpacePropsMutableBuilder[Self <: SpaceProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (SpaceProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setM(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMNull: Self = StObject.set(x, "m", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
     @scala.inline
-    def setMVarargs(value: (TVal | Null)*): Self = this.set("m", js.Array(value :_*))
+    def setMVarargs(value: (TVal | Null)*): Self = StObject.set(x, "m", js.Array(value :_*))
     
     @scala.inline
-    def setM(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("m", value.asInstanceOf[js.Any])
+    def setMargin(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteM: Self = this.set("m", js.undefined)
+    def setMarginBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMNull: Self = this.set("m", null)
+    def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
     
     @scala.inline
-    def setMarginVarargs(value: (TVal | Null)*): Self = this.set("margin", js.Array(value :_*))
+    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
     @scala.inline
-    def setMargin(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    def setMarginBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginBottom", js.Array(value :_*))
     
     @scala.inline
-    def deleteMargin: Self = this.set("margin", js.undefined)
+    def setMarginLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginNull: Self = this.set("margin", null)
+    def setMarginLeftNull: Self = StObject.set(x, "marginLeft", null)
     
     @scala.inline
-    def setMarginBottomVarargs(value: (TVal | Null)*): Self = this.set("marginBottom", js.Array(value :_*))
+    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
     @scala.inline
-    def setMarginBottom(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    def setMarginLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
     
     @scala.inline
-    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    def setMarginNull: Self = StObject.set(x, "margin", null)
     
     @scala.inline
-    def setMarginBottomNull: Self = this.set("marginBottom", null)
+    def setMarginRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginLeftVarargs(value: (TVal | Null)*): Self = this.set("marginLeft", js.Array(value :_*))
+    def setMarginRightNull: Self = StObject.set(x, "marginRight", null)
     
     @scala.inline
-    def setMarginLeft(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
     @scala.inline
-    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    def setMarginRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginRight", js.Array(value :_*))
     
     @scala.inline
-    def setMarginLeftNull: Self = this.set("marginLeft", null)
+    def setMarginTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarginRightVarargs(value: (TVal | Null)*): Self = this.set("marginRight", js.Array(value :_*))
+    def setMarginTopNull: Self = StObject.set(x, "marginTop", null)
     
     @scala.inline
-    def setMarginRight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
     @scala.inline
-    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    def setMarginTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginTop", js.Array(value :_*))
     
     @scala.inline
-    def setMarginRightNull: Self = this.set("marginRight", null)
+    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
     @scala.inline
-    def setMarginTopVarargs(value: (TVal | Null)*): Self = this.set("marginTop", js.Array(value :_*))
+    def setMarginVarargs(value: (TVal | Null)*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
     @scala.inline
-    def setMarginTop(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    def setMarginX(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    def setMarginXNull: Self = StObject.set(x, "marginX", null)
     
     @scala.inline
-    def setMarginTopNull: Self = this.set("marginTop", null)
+    def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
     @scala.inline
-    def setMarginXVarargs(value: (TVal | Null)*): Self = this.set("marginX", js.Array(value :_*))
+    def setMarginXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginX", js.Array(value :_*))
     
     @scala.inline
-    def setMarginX(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("marginX", value.asInstanceOf[js.Any])
+    def setMarginY(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginX: Self = this.set("marginX", js.undefined)
+    def setMarginYNull: Self = StObject.set(x, "marginY", null)
     
     @scala.inline
-    def setMarginXNull: Self = this.set("marginX", null)
+    def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
     @scala.inline
-    def setMarginYVarargs(value: (TVal | Null)*): Self = this.set("marginY", js.Array(value :_*))
+    def setMarginYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "marginY", js.Array(value :_*))
     
     @scala.inline
-    def setMarginY(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("marginY", value.asInstanceOf[js.Any])
+    def setMb(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMarginY: Self = this.set("marginY", js.undefined)
+    def setMbNull: Self = StObject.set(x, "mb", null)
     
     @scala.inline
-    def setMarginYNull: Self = this.set("marginY", null)
+    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
     @scala.inline
-    def setMbVarargs(value: (TVal | Null)*): Self = this.set("mb", js.Array(value :_*))
+    def setMbVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mb", js.Array(value :_*))
     
     @scala.inline
-    def setMb(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("mb", value.asInstanceOf[js.Any])
+    def setMl(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMb: Self = this.set("mb", js.undefined)
+    def setMlNull: Self = StObject.set(x, "ml", null)
     
     @scala.inline
-    def setMbNull: Self = this.set("mb", null)
+    def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
     @scala.inline
-    def setMlVarargs(value: (TVal | Null)*): Self = this.set("ml", js.Array(value :_*))
+    def setMlVarargs(value: (TVal | Null)*): Self = StObject.set(x, "ml", js.Array(value :_*))
     
     @scala.inline
-    def setMl(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("ml", value.asInstanceOf[js.Any])
+    def setMr(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMl: Self = this.set("ml", js.undefined)
+    def setMrNull: Self = StObject.set(x, "mr", null)
     
     @scala.inline
-    def setMlNull: Self = this.set("ml", null)
+    def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
     @scala.inline
-    def setMrVarargs(value: (TVal | Null)*): Self = this.set("mr", js.Array(value :_*))
+    def setMrVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mr", js.Array(value :_*))
     
     @scala.inline
-    def setMr(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("mr", value.asInstanceOf[js.Any])
+    def setMt(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMr: Self = this.set("mr", js.undefined)
+    def setMtNull: Self = StObject.set(x, "mt", null)
     
     @scala.inline
-    def setMrNull: Self = this.set("mr", null)
+    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
     @scala.inline
-    def setMtVarargs(value: (TVal | Null)*): Self = this.set("mt", js.Array(value :_*))
+    def setMtVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mt", js.Array(value :_*))
     
     @scala.inline
-    def setMt(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("mt", value.asInstanceOf[js.Any])
+    def setMx(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMt: Self = this.set("mt", js.undefined)
+    def setMxNull: Self = StObject.set(x, "mx", null)
     
     @scala.inline
-    def setMtNull: Self = this.set("mt", null)
+    def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
     @scala.inline
-    def setMxVarargs(value: (TVal | Null)*): Self = this.set("mx", js.Array(value :_*))
+    def setMxVarargs(value: (TVal | Null)*): Self = StObject.set(x, "mx", js.Array(value :_*))
     
     @scala.inline
-    def setMx(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("mx", value.asInstanceOf[js.Any])
+    def setMy(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMx: Self = this.set("mx", js.undefined)
+    def setMyNull: Self = StObject.set(x, "my", null)
     
     @scala.inline
-    def setMxNull: Self = this.set("mx", null)
+    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
     @scala.inline
-    def setMyVarargs(value: (TVal | Null)*): Self = this.set("my", js.Array(value :_*))
+    def setMyVarargs(value: (TVal | Null)*): Self = StObject.set(x, "my", js.Array(value :_*))
     
     @scala.inline
-    def setMy(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("my", value.asInstanceOf[js.Any])
+    def setP(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMy: Self = this.set("my", js.undefined)
+    def setPNull: Self = StObject.set(x, "p", null)
     
     @scala.inline
-    def setMyNull: Self = this.set("my", null)
+    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
     @scala.inline
-    def setPVarargs(value: (TVal | Null)*): Self = this.set("p", js.Array(value :_*))
+    def setPVarargs(value: (TVal | Null)*): Self = StObject.set(x, "p", js.Array(value :_*))
     
     @scala.inline
-    def setP(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("p", value.asInstanceOf[js.Any])
+    def setPadding(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteP: Self = this.set("p", js.undefined)
+    def setPaddingBottom(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPNull: Self = this.set("p", null)
+    def setPaddingBottomNull: Self = StObject.set(x, "paddingBottom", null)
     
     @scala.inline
-    def setPaddingVarargs(value: (TVal | Null)*): Self = this.set("padding", js.Array(value :_*))
+    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
     @scala.inline
-    def setPadding(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setPaddingBottomVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingBottom", js.Array(value :_*))
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setPaddingLeft(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingNull: Self = this.set("padding", null)
+    def setPaddingLeftNull: Self = StObject.set(x, "paddingLeft", null)
     
     @scala.inline
-    def setPaddingBottomVarargs(value: (TVal | Null)*): Self = this.set("paddingBottom", js.Array(value :_*))
+    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
     @scala.inline
-    def setPaddingBottom(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    def setPaddingLeftVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingLeft", js.Array(value :_*))
     
     @scala.inline
-    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    def setPaddingNull: Self = StObject.set(x, "padding", null)
     
     @scala.inline
-    def setPaddingBottomNull: Self = this.set("paddingBottom", null)
+    def setPaddingRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingLeftVarargs(value: (TVal | Null)*): Self = this.set("paddingLeft", js.Array(value :_*))
+    def setPaddingRightNull: Self = StObject.set(x, "paddingRight", null)
     
     @scala.inline
-    def setPaddingLeft(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
     @scala.inline
-    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    def setPaddingRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingRight", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingLeftNull: Self = this.set("paddingLeft", null)
+    def setPaddingTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPaddingRightVarargs(value: (TVal | Null)*): Self = this.set("paddingRight", js.Array(value :_*))
+    def setPaddingTopNull: Self = StObject.set(x, "paddingTop", null)
     
     @scala.inline
-    def setPaddingRight(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     @scala.inline
-    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    def setPaddingTopVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingTop", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingRightNull: Self = this.set("paddingRight", null)
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def setPaddingTopVarargs(value: (TVal | Null)*): Self = this.set("paddingTop", js.Array(value :_*))
+    def setPaddingVarargs(value: (TVal | Null)*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingTop(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    def setPaddingX(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
+    def setPaddingXNull: Self = StObject.set(x, "paddingX", null)
     
     @scala.inline
-    def setPaddingTopNull: Self = this.set("paddingTop", null)
+    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
     @scala.inline
-    def setPaddingXVarargs(value: (TVal | Null)*): Self = this.set("paddingX", js.Array(value :_*))
+    def setPaddingXVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingX(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("paddingX", value.asInstanceOf[js.Any])
+    def setPaddingY(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingX: Self = this.set("paddingX", js.undefined)
+    def setPaddingYNull: Self = StObject.set(x, "paddingY", null)
     
     @scala.inline
-    def setPaddingXNull: Self = this.set("paddingX", null)
+    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
     @scala.inline
-    def setPaddingYVarargs(value: (TVal | Null)*): Self = this.set("paddingY", js.Array(value :_*))
+    def setPaddingYVarargs(value: (TVal | Null)*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingY(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("paddingY", value.asInstanceOf[js.Any])
+    def setPb(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePaddingY: Self = this.set("paddingY", js.undefined)
+    def setPbNull: Self = StObject.set(x, "pb", null)
     
     @scala.inline
-    def setPaddingYNull: Self = this.set("paddingY", null)
+    def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
     @scala.inline
-    def setPbVarargs(value: (TVal | Null)*): Self = this.set("pb", js.Array(value :_*))
+    def setPbVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pb", js.Array(value :_*))
     
     @scala.inline
-    def setPb(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("pb", value.asInstanceOf[js.Any])
+    def setPl(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePb: Self = this.set("pb", js.undefined)
+    def setPlNull: Self = StObject.set(x, "pl", null)
     
     @scala.inline
-    def setPbNull: Self = this.set("pb", null)
+    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
     @scala.inline
-    def setPlVarargs(value: (TVal | Null)*): Self = this.set("pl", js.Array(value :_*))
+    def setPlVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pl", js.Array(value :_*))
     
     @scala.inline
-    def setPl(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("pl", value.asInstanceOf[js.Any])
+    def setPr(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePl: Self = this.set("pl", js.undefined)
+    def setPrNull: Self = StObject.set(x, "pr", null)
     
     @scala.inline
-    def setPlNull: Self = this.set("pl", null)
+    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
     @scala.inline
-    def setPrVarargs(value: (TVal | Null)*): Self = this.set("pr", js.Array(value :_*))
+    def setPrVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pr", js.Array(value :_*))
     
     @scala.inline
-    def setPr(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("pr", value.asInstanceOf[js.Any])
+    def setPt(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePr: Self = this.set("pr", js.undefined)
+    def setPtNull: Self = StObject.set(x, "pt", null)
     
     @scala.inline
-    def setPrNull: Self = this.set("pr", null)
+    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
     @scala.inline
-    def setPtVarargs(value: (TVal | Null)*): Self = this.set("pt", js.Array(value :_*))
+    def setPtVarargs(value: (TVal | Null)*): Self = StObject.set(x, "pt", js.Array(value :_*))
     
     @scala.inline
-    def setPt(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("pt", value.asInstanceOf[js.Any])
+    def setPx(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePt: Self = this.set("pt", js.undefined)
+    def setPxNull: Self = StObject.set(x, "px", null)
     
     @scala.inline
-    def setPtNull: Self = this.set("pt", null)
+    def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
     @scala.inline
-    def setPxVarargs(value: (TVal | Null)*): Self = this.set("px", js.Array(value :_*))
+    def setPxVarargs(value: (TVal | Null)*): Self = StObject.set(x, "px", js.Array(value :_*))
     
     @scala.inline
-    def setPx(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("px", value.asInstanceOf[js.Any])
+    def setPy(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePx: Self = this.set("px", js.undefined)
+    def setPyNull: Self = StObject.set(x, "py", null)
     
     @scala.inline
-    def setPxNull: Self = this.set("px", null)
+    def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
     
     @scala.inline
-    def setPyVarargs(value: (TVal | Null)*): Self = this.set("py", js.Array(value :_*))
-    
-    @scala.inline
-    def setPy(value: ResponsiveValue[TVal, ThemeType]): Self = this.set("py", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePy: Self = this.set("py", js.undefined)
-    
-    @scala.inline
-    def setPyNull: Self = this.set("py", null)
+    def setPyVarargs(value: (TVal | Null)*): Self = StObject.set(x, "py", js.Array(value :_*))
   }
 }

@@ -1,12 +1,13 @@
 package typings.activexLibreoffice.com_.sun.star.style
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This struct describes drop caps at a paragraph object. */
 @js.native
-trait DropCapFormat extends js.Object {
+trait DropCapFormat extends StObject {
   
   /** This is the number of characters in the drop cap. */
   var Count: Double = js.native
@@ -26,27 +27,15 @@ object DropCapFormat {
   }
   
   @scala.inline
-  implicit class DropCapFormatOps[Self <: DropCapFormat] (val x: Self) extends AnyVal {
+  implicit class DropCapFormatMutableBuilder[Self <: DropCapFormat] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDistance(value: Double): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDistance(value: Double): Self = this.set("Distance", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLines(value: Double): Self = this.set("Lines", value.asInstanceOf[js.Any])
+    def setLines(value: Double): Self = StObject.set(x, "Lines", value.asInstanceOf[js.Any])
   }
 }

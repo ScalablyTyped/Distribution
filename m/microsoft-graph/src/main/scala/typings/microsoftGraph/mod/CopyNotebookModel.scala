@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CopyNotebookModel extends js.Object {
+trait CopyNotebookModel extends StObject {
   
   var createdBy: js.UndefOr[NullableOption[String]] = js.native
   
@@ -46,153 +47,141 @@ object CopyNotebookModel {
   }
   
   @scala.inline
-  implicit class CopyNotebookModelOps[Self <: CopyNotebookModel] (val x: Self) extends AnyVal {
+  implicit class CopyNotebookModelMutableBuilder[Self <: CopyNotebookModel] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatedBy(value: NullableOption[String]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatedByIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreatedByIdentityNull: Self = StObject.set(x, "createdByIdentity", null)
     
     @scala.inline
-    def setCreatedBy(value: NullableOption[String]): Self = this.set("createdBy", value.asInstanceOf[js.Any])
+    def setCreatedByIdentityUndefined: Self = StObject.set(x, "createdByIdentity", js.undefined)
     
     @scala.inline
-    def deleteCreatedBy: Self = this.set("createdBy", js.undefined)
+    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
     @scala.inline
-    def setCreatedByNull: Self = this.set("createdBy", null)
+    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     @scala.inline
-    def setCreatedByIdentity(value: NullableOption[IdentitySet]): Self = this.set("createdByIdentity", value.asInstanceOf[js.Any])
+    def setCreatedTime(value: NullableOption[String]): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedByIdentity: Self = this.set("createdByIdentity", js.undefined)
+    def setCreatedTimeNull: Self = StObject.set(x, "createdTime", null)
     
     @scala.inline
-    def setCreatedByIdentityNull: Self = this.set("createdByIdentity", null)
+    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
     @scala.inline
-    def setCreatedTime(value: NullableOption[String]): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    def setIdNull: Self = StObject.set(x, "id", null)
     
     @scala.inline
-    def setCreatedTimeNull: Self = this.set("createdTime", null)
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setId(value: NullableOption[String]): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
     
     @scala.inline
-    def setIdNull: Self = this.set("id", null)
+    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
     @scala.inline
-    def setIsDefault(value: NullableOption[Boolean]): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    def setIsShared(value: NullableOption[Boolean]): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    def setIsSharedNull: Self = StObject.set(x, "isShared", null)
     
     @scala.inline
-    def setIsDefaultNull: Self = this.set("isDefault", null)
+    def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
     
     @scala.inline
-    def setIsShared(value: NullableOption[Boolean]): Self = this.set("isShared", value.asInstanceOf[js.Any])
+    def setLastModifiedBy(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteIsShared: Self = this.set("isShared", js.undefined)
+    def setLastModifiedByIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedByIdentity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsSharedNull: Self = this.set("isShared", null)
+    def setLastModifiedByIdentityNull: Self = StObject.set(x, "lastModifiedByIdentity", null)
     
     @scala.inline
-    def setLastModifiedBy(value: NullableOption[String]): Self = this.set("lastModifiedBy", value.asInstanceOf[js.Any])
+    def setLastModifiedByIdentityUndefined: Self = StObject.set(x, "lastModifiedByIdentity", js.undefined)
     
     @scala.inline
-    def deleteLastModifiedBy: Self = this.set("lastModifiedBy", js.undefined)
+    def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
     
     @scala.inline
-    def setLastModifiedByNull: Self = this.set("lastModifiedBy", null)
+    def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
     
     @scala.inline
-    def setLastModifiedByIdentity(value: NullableOption[IdentitySet]): Self = this.set("lastModifiedByIdentity", value.asInstanceOf[js.Any])
+    def setLastModifiedTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedByIdentity: Self = this.set("lastModifiedByIdentity", js.undefined)
+    def setLastModifiedTimeNull: Self = StObject.set(x, "lastModifiedTime", null)
     
     @scala.inline
-    def setLastModifiedByIdentityNull: Self = this.set("lastModifiedByIdentity", null)
+    def setLastModifiedTimeUndefined: Self = StObject.set(x, "lastModifiedTime", js.undefined)
     
     @scala.inline
-    def setLastModifiedTime(value: NullableOption[String]): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    def setLinks(value: NullableOption[NotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    def setLinksNull: Self = StObject.set(x, "links", null)
     
     @scala.inline
-    def setLastModifiedTimeNull: Self = this.set("lastModifiedTime", null)
+    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
     @scala.inline
-    def setLinks(value: NullableOption[NotebookLinks]): Self = this.set("links", value.asInstanceOf[js.Any])
+    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLinks: Self = this.set("links", js.undefined)
+    def setNameNull: Self = StObject.set(x, "name", null)
     
     @scala.inline
-    def setLinksNull: Self = this.set("links", null)
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setName(value: NullableOption[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setSectionGroupsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionGroupsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setSectionGroupsUrlNull: Self = StObject.set(x, "sectionGroupsUrl", null)
     
     @scala.inline
-    def setNameNull: Self = this.set("name", null)
+    def setSectionGroupsUrlUndefined: Self = StObject.set(x, "sectionGroupsUrl", js.undefined)
     
     @scala.inline
-    def setSectionGroupsUrl(value: NullableOption[String]): Self = this.set("sectionGroupsUrl", value.asInstanceOf[js.Any])
+    def setSectionsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionsUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSectionGroupsUrl: Self = this.set("sectionGroupsUrl", js.undefined)
+    def setSectionsUrlNull: Self = StObject.set(x, "sectionsUrl", null)
     
     @scala.inline
-    def setSectionGroupsUrlNull: Self = this.set("sectionGroupsUrl", null)
+    def setSectionsUrlUndefined: Self = StObject.set(x, "sectionsUrl", js.undefined)
     
     @scala.inline
-    def setSectionsUrl(value: NullableOption[String]): Self = this.set("sectionsUrl", value.asInstanceOf[js.Any])
+    def setSelf(value: NullableOption[String]): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSectionsUrl: Self = this.set("sectionsUrl", js.undefined)
+    def setSelfNull: Self = StObject.set(x, "self", null)
     
     @scala.inline
-    def setSectionsUrlNull: Self = this.set("sectionsUrl", null)
+    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
     
     @scala.inline
-    def setSelf(value: NullableOption[String]): Self = this.set("self", value.asInstanceOf[js.Any])
+    def setUserRole(value: NullableOption[OnenoteUserRole]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteSelf: Self = this.set("self", js.undefined)
+    def setUserRoleNull: Self = StObject.set(x, "userRole", null)
     
     @scala.inline
-    def setSelfNull: Self = this.set("self", null)
-    
-    @scala.inline
-    def setUserRole(value: NullableOption[OnenoteUserRole]): Self = this.set("userRole", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUserRole: Self = this.set("userRole", js.undefined)
-    
-    @scala.inline
-    def setUserRoleNull: Self = this.set("userRole", null)
+    def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
   }
 }

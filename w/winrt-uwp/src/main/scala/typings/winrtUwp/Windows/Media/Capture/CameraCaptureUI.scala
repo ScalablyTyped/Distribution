@@ -2,13 +2,14 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a full window UI for capturing audio, video, and photos from a camera. As well as controls for trimming video, time delayed capture, and camera settings. */
 @js.native
-trait CameraCaptureUI extends js.Object {
+trait CameraCaptureUI extends StObject {
   
   /**
     * Launches the CameraCaptureUI user interface.
@@ -36,27 +37,15 @@ object CameraCaptureUI {
   }
   
   @scala.inline
-  implicit class CameraCaptureUIOps[Self <: CameraCaptureUI] (val x: Self) extends AnyVal {
+  implicit class CameraCaptureUIMutableBuilder[Self <: CameraCaptureUI] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCaptureFileAsync(value: CameraCaptureUIMode => IPromiseWithIAsyncOperation[StorageFile]): Self = StObject.set(x, "captureFileAsync", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPhotoSettings(value: CameraCaptureUIPhotoCaptureSettings): Self = StObject.set(x, "photoSettings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCaptureFileAsync(value: CameraCaptureUIMode => IPromiseWithIAsyncOperation[StorageFile]): Self = this.set("captureFileAsync", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setPhotoSettings(value: CameraCaptureUIPhotoCaptureSettings): Self = this.set("photoSettings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVideoSettings(value: CameraCaptureUIVideoCaptureSettings): Self = this.set("videoSettings", value.asInstanceOf[js.Any])
+    def setVideoSettings(value: CameraCaptureUIVideoCaptureSettings): Self = StObject.set(x, "videoSettings", value.asInstanceOf[js.Any])
   }
 }

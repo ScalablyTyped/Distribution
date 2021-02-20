@@ -1,5 +1,6 @@
 package typings.scriptableIos.global
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class UITableCell ()
   extends typings.scriptableIos.UITableCell
-/* static members */
-@JSGlobal("UITableCell")
-@js.native
-object UITableCell extends js.Object {
+object UITableCell {
   
   /**
     * _Constructs a button cell._
@@ -24,6 +22,9 @@ object UITableCell extends js.Object {
     * @param title - Title of the button.
     * @see https://docs.scriptable.app/uitablecell/#button
     */
+  /* static member */
+  @JSGlobal("UITableCell.button")
+  @js.native
   def button(title: String): typings.scriptableIos.UITableCell = js.native
   
   /**
@@ -33,6 +34,9 @@ object UITableCell extends js.Object {
     * @param image - Image to show in the cell.
     * @see https://docs.scriptable.app/uitablecell/#image
     */
+  /* static member */
+  @JSGlobal("UITableCell.image")
+  @js.native
   def image(image: typings.scriptableIos.Image): typings.scriptableIos.UITableCell = js.native
   
   /**
@@ -42,6 +46,9 @@ object UITableCell extends js.Object {
     * @param url - URL to image.
     * @see https://docs.scriptable.app/uitablecell/#imageaturl
     */
+  /* static member */
+  @JSGlobal("UITableCell.imageAtURL")
+  @js.native
   def imageAtURL(url: String): typings.scriptableIos.UITableCell = js.native
   
   /**
@@ -52,8 +59,17 @@ object UITableCell extends js.Object {
     * @param subtitle - Optional subtitle shown below the title.
     * @see https://docs.scriptable.app/uitablecell/#text
     */
+  /* static member */
+  @JSGlobal("UITableCell.text")
+  @js.native
   def text(): typings.scriptableIos.UITableCell = js.native
+  @JSGlobal("UITableCell.text")
+  @js.native
   def text(title: js.UndefOr[scala.Nothing], subtitle: String): typings.scriptableIos.UITableCell = js.native
+  @JSGlobal("UITableCell.text")
+  @js.native
   def text(title: String): typings.scriptableIos.UITableCell = js.native
+  @JSGlobal("UITableCell.text")
+  @js.native
   def text(title: String, subtitle: String): typings.scriptableIos.UITableCell = js.native
 }

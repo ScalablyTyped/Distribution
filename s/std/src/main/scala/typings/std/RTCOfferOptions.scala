@@ -1,5 +1,6 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,36 +23,24 @@ object RTCOfferOptions {
   }
   
   @scala.inline
-  implicit class RTCOfferOptionsOps[Self <: RTCOfferOptions] (val x: Self) extends AnyVal {
+  implicit class RTCOfferOptionsMutableBuilder[Self <: RTCOfferOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setIceRestart(value: scala.Boolean): Self = StObject.set(x, "iceRestart", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIceRestartUndefined: Self = StObject.set(x, "iceRestart", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOfferToReceiveAudio(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveAudio", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIceRestart(value: scala.Boolean): Self = this.set("iceRestart", value.asInstanceOf[js.Any])
+    def setOfferToReceiveAudioUndefined: Self = StObject.set(x, "offerToReceiveAudio", js.undefined)
     
     @scala.inline
-    def deleteIceRestart: Self = this.set("iceRestart", js.undefined)
+    def setOfferToReceiveVideo(value: scala.Boolean): Self = StObject.set(x, "offerToReceiveVideo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOfferToReceiveAudio(value: scala.Boolean): Self = this.set("offerToReceiveAudio", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferToReceiveAudio: Self = this.set("offerToReceiveAudio", js.undefined)
-    
-    @scala.inline
-    def setOfferToReceiveVideo(value: scala.Boolean): Self = this.set("offerToReceiveVideo", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOfferToReceiveVideo: Self = this.set("offerToReceiveVideo", js.undefined)
+    def setOfferToReceiveVideoUndefined: Self = StObject.set(x, "offerToReceiveVideo", js.undefined)
   }
 }

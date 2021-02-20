@@ -2,12 +2,13 @@ package typings.blessed.mod.Widgets
 
 import typings.blessed.blessedStrings.bg
 import typings.blessed.blessedStrings.line
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Border extends js.Object {
+trait Border extends StObject {
   
   /**
     * Border foreground and background, must be numbers (-1 for default).
@@ -42,54 +43,42 @@ object Border {
   }
   
   @scala.inline
-  implicit class BorderOps[Self <: Border] (val x: Self) extends AnyVal {
+  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBg(value: Double): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBold(value: String): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBg(value: Double): Self = this.set("bg", value.asInstanceOf[js.Any])
+    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
     @scala.inline
-    def deleteBg: Self = this.set("bg", js.undefined)
+    def setCh(value: String): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBold(value: String): Self = this.set("bold", value.asInstanceOf[js.Any])
+    def setChUndefined: Self = StObject.set(x, "ch", js.undefined)
     
     @scala.inline
-    def deleteBold: Self = this.set("bold", js.undefined)
+    def setFg(value: Double): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCh(value: String): Self = this.set("ch", value.asInstanceOf[js.Any])
+    def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
     
     @scala.inline
-    def deleteCh: Self = this.set("ch", js.undefined)
+    def setType(value: line | bg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFg(value: Double): Self = this.set("fg", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteFg: Self = this.set("fg", js.undefined)
+    def setUnderline(value: String): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: line | bg): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
-    
-    @scala.inline
-    def setUnderline(value: String): Self = this.set("underline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnderline: Self = this.set("underline", js.undefined)
+    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

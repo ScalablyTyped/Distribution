@@ -1,5 +1,6 @@
 package typings.googleapis.sheetsV4Mod.sheetsV4
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Properties of a sheet.
   */
 @js.native
-trait SchemaSheetProperties extends js.Object {
+trait SchemaSheetProperties extends StObject {
   
   /**
     * Additional properties of the sheet if this sheet is a grid. (If the sheet
@@ -72,66 +73,54 @@ object SchemaSheetProperties {
   }
   
   @scala.inline
-  implicit class SchemaSheetPropertiesOps[Self <: SchemaSheetProperties] (val x: Self) extends AnyVal {
+  implicit class SchemaSheetPropertiesMutableBuilder[Self <: SchemaSheetProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGridProperties(value: SchemaGridProperties): Self = StObject.set(x, "gridProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGridPropertiesUndefined: Self = StObject.set(x, "gridProperties", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGridProperties(value: SchemaGridProperties): Self = this.set("gridProperties", value.asInstanceOf[js.Any])
+    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     @scala.inline
-    def deleteGridProperties: Self = this.set("gridProperties", js.undefined)
+    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def deleteHidden: Self = this.set("hidden", js.undefined)
+    def setRightToLeft(value: Boolean): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    def setRightToLeftUndefined: Self = StObject.set(x, "rightToLeft", js.undefined)
     
     @scala.inline
-    def deleteIndex: Self = this.set("index", js.undefined)
+    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRightToLeft(value: Boolean): Self = this.set("rightToLeft", value.asInstanceOf[js.Any])
+    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
     
     @scala.inline
-    def deleteRightToLeft: Self = this.set("rightToLeft", js.undefined)
+    def setSheetType(value: String): Self = StObject.set(x, "sheetType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
+    def setSheetTypeUndefined: Self = StObject.set(x, "sheetType", js.undefined)
     
     @scala.inline
-    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    def setTabColor(value: SchemaColor): Self = StObject.set(x, "tabColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSheetType(value: String): Self = this.set("sheetType", value.asInstanceOf[js.Any])
+    def setTabColorUndefined: Self = StObject.set(x, "tabColor", js.undefined)
     
     @scala.inline
-    def deleteSheetType: Self = this.set("sheetType", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTabColor(value: SchemaColor): Self = this.set("tabColor", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTabColor: Self = this.set("tabColor", js.undefined)
-    
-    @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

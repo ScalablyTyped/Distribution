@@ -1,5 +1,6 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The text response message.
   */
 @js.native
-trait SchemaGoogleCloudDialogflowV2beta1IntentMessageText extends js.Object {
+trait SchemaGoogleCloudDialogflowV2beta1IntentMessageText extends StObject {
   
   /**
     * Optional. The collection of the agent&#39;s responses.
@@ -24,27 +25,15 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageText {
   }
   
   @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageTextOps[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageText] (val x: Self) extends AnyVal {
+  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageTextMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageText] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setText(value: js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
-    
-    @scala.inline
-    def setText(value: js.Array[String]): Self = this.set("text", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteText: Self = this.set("text", js.undefined)
+    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

@@ -1,11 +1,12 @@
 package typings.vegaTypings.scaleMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleMultiFieldsRef extends js.Object {
+trait ScaleMultiFieldsRef extends StObject {
   
   var data: String = js.native
   
@@ -20,27 +21,15 @@ object ScaleMultiFieldsRef {
   }
   
   @scala.inline
-  implicit class ScaleMultiFieldsRefOps[Self <: ScaleMultiFieldsRef] (val x: Self) extends AnyVal {
+  implicit class ScaleMultiFieldsRefMutableBuilder[Self <: ScaleMultiFieldsRef] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setFieldsVarargs(value: ScaleField*): Self = this.set("fields", js.Array(value :_*))
-    
-    @scala.inline
-    def setFields(value: js.Array[ScaleField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

@@ -6,6 +6,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -265,10 +266,11 @@ class Texture protected ()
     anchor: IPointData
   ) = this()
 }
-/* static members */
-@JSGlobal("PIXI.Texture")
-@js.native
-object Texture extends js.Object {
+object Texture {
+  
+  @JSGlobal("PIXI.Texture")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * An empty texture, used often to not have to create multiple empty textures.
@@ -278,7 +280,12 @@ object Texture extends js.Object {
     * @constant
     * @member {PIXI.Texture}
     */
-  var EMPTY: typings.pixiJs.PIXI.Texture = js.native
+  /* static member */
+  @JSGlobal("PIXI.Texture.EMPTY")
+  @js.native
+  def EMPTY: typings.pixiJs.PIXI.Texture = js.native
+  @scala.inline
+  def EMPTY_=(x: typings.pixiJs.PIXI.Texture): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMPTY")(x.asInstanceOf[js.Any])
   
   /**
     * A white texture of 16x16 size, used for graphics and other things
@@ -288,7 +295,12 @@ object Texture extends js.Object {
     * @constant
     * @member {PIXI.Texture}
     */
-  var WHITE: typings.pixiJs.PIXI.Texture = js.native
+  /* static member */
+  @JSGlobal("PIXI.Texture.WHITE")
+  @js.native
+  def WHITE: typings.pixiJs.PIXI.Texture = js.native
+  @scala.inline
+  def WHITE_=(x: typings.pixiJs.PIXI.Texture): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
   
   /**
     * Adds a Texture to the global TextureCache. This cache is shared across the whole PIXI object.
@@ -297,6 +309,9 @@ object Texture extends js.Object {
     * @param {PIXI.Texture} texture - The Texture to add to the cache.
     * @param {string} id - The id that the Texture will be stored against.
     */
+  /* static member */
+  @JSGlobal("PIXI.Texture.addToCache")
+  @js.native
   def addToCache(texture: typings.pixiJs.PIXI.Texture, id: String): Unit = js.native
   
   /**
@@ -310,25 +325,66 @@ object Texture extends js.Object {
     * @param {boolean} [strict] - Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
     * @return {PIXI.Texture} The newly created texture
     */
+  /* static member */
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: String): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: String, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: String, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: String, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: typings.pixiJs.PIXI.BaseTexture, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLCanvasElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLImageElement): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLImageElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLImageElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLImageElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLVideoElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.from")
+  @js.native
   def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.Texture = js.native
   
   /**
@@ -342,12 +398,25 @@ object Texture extends js.Object {
     * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
     * @return {PIXI.Texture} The resulting new BaseTexture
     */
+  /* static member */
+  @JSGlobal("PIXI.Texture.fromBuffer")
+  @js.native
   def fromBuffer(buffer: Float32Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.fromBuffer")
+  @js.native
   def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.fromBuffer")
+  @js.native
   def fromBuffer(buffer: Uint8Array, width: Double, height: Double): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.fromBuffer")
+  @js.native
   def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): typings.pixiJs.PIXI.Texture = js.native
   
+  @JSGlobal("PIXI.Texture.fromLoader")
+  @js.native
   def fromLoader(source: HTMLCanvasElement, imageUrl: String): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.fromLoader")
+  @js.native
   def fromLoader(source: HTMLCanvasElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = js.native
   /**
     * Create a texture from a source and add to the cache.
@@ -359,7 +428,12 @@ object Texture extends js.Object {
     *        specified, only `imageUrl` will be used as the cache ID.
     * @return {PIXI.Texture} Output texture
     */
+  /* static member */
+  @JSGlobal("PIXI.Texture.fromLoader")
+  @js.native
   def fromLoader(source: HTMLImageElement, imageUrl: String): typings.pixiJs.PIXI.Texture = js.native
+  @JSGlobal("PIXI.Texture.fromLoader")
+  @js.native
   def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): typings.pixiJs.PIXI.Texture = js.native
   
   /**
@@ -370,7 +444,12 @@ object Texture extends js.Object {
     * @param {object} [options] Optional options to include
     * @return {Promise<PIXI.Texture>} A Promise that resolves to a Texture.
     */
+  /* static member */
+  @JSGlobal("PIXI.Texture.fromURL")
+  @js.native
   def fromURL(url: String): js.Promise[typings.pixiJs.PIXI.Texture] = js.native
+  @JSGlobal("PIXI.Texture.fromURL")
+  @js.native
   def fromURL(url: String, options: js.Any): js.Promise[typings.pixiJs.PIXI.Texture] = js.native
   
   /**
@@ -380,6 +459,11 @@ object Texture extends js.Object {
     * @param {string|PIXI.Texture} texture - id of a Texture to be removed, or a Texture instance itself
     * @return {PIXI.Texture|null} The Texture that was removed
     */
+  /* static member */
+  @JSGlobal("PIXI.Texture.removeFromCache")
+  @js.native
   def removeFromCache(texture: String): typings.pixiJs.PIXI.Texture | Null = js.native
+  @JSGlobal("PIXI.Texture.removeFromCache")
+  @js.native
   def removeFromCache(texture: typings.pixiJs.PIXI.Texture): typings.pixiJs.PIXI.Texture | Null = js.native
 }

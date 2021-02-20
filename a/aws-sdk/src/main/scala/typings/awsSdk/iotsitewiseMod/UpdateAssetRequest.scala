@@ -1,11 +1,12 @@
 package typings.awsSdk.iotsitewiseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdateAssetRequest extends js.Object {
+trait UpdateAssetRequest extends StObject {
   
   /**
     * The ID of the asset to update.
@@ -31,30 +32,18 @@ object UpdateAssetRequest {
   }
   
   @scala.inline
-  implicit class UpdateAssetRequestOps[Self <: UpdateAssetRequest] (val x: Self) extends AnyVal {
+  implicit class UpdateAssetRequestMutableBuilder[Self <: UpdateAssetRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAssetName(value: Name): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAssetId(value: ID): Self = this.set("assetId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAssetName(value: Name): Self = this.set("assetName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

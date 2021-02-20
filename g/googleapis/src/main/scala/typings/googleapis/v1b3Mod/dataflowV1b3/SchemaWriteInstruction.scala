@@ -1,5 +1,6 @@
 package typings.googleapis.v1b3Mod.dataflowV1b3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An instruction that writes records. Takes one input, produces no outputs.
   */
 @js.native
-trait SchemaWriteInstruction extends js.Object {
+trait SchemaWriteInstruction extends StObject {
   
   /**
     * The input.
@@ -29,30 +30,18 @@ object SchemaWriteInstruction {
   }
   
   @scala.inline
-  implicit class SchemaWriteInstructionOps[Self <: SchemaWriteInstruction] (val x: Self) extends AnyVal {
+  implicit class SchemaWriteInstructionMutableBuilder[Self <: SchemaWriteInstruction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInput(value: SchemaInstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSink(value: SchemaSink): Self = StObject.set(x, "sink", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInput(value: SchemaInstructionInput): Self = this.set("input", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInput: Self = this.set("input", js.undefined)
-    
-    @scala.inline
-    def setSink(value: SchemaSink): Self = this.set("sink", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSink: Self = this.set("sink", js.undefined)
+    def setSinkUndefined: Self = StObject.set(x, "sink", js.undefined)
   }
 }

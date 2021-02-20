@@ -1,16 +1,20 @@
 package typings.typedoc
 
 import typings.typedoc.componentsMod.TypeNodeConverter
+import typings.typedoc.converterConverterMod.Converter
 import typings.typescript.mod.ThisTypeNode
 import typings.typescript.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc/dist/lib/converter/types/this", JSImport.Namespace)
-@js.native
-object thisMod extends js.Object {
+object thisMod {
   
+  @JSImport("typedoc/dist/lib/converter/types/this", "ThisConverter")
   @js.native
-  class ThisConverter () extends TypeNodeConverter[Type, ThisTypeNode]
+  class ThisConverter protected () extends TypeNodeConverter[Type, ThisTypeNode] {
+    def this(owner: js.Symbol) = this()
+    def this(owner: Converter) = this()
+  }
 }

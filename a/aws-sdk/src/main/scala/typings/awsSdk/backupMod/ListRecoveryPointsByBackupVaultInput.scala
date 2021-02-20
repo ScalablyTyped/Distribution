@@ -1,11 +1,12 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListRecoveryPointsByBackupVaultInput extends js.Object {
+trait ListRecoveryPointsByBackupVaultInput extends StObject {
   
   /**
     * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
@@ -56,63 +57,51 @@ object ListRecoveryPointsByBackupVaultInput {
   }
   
   @scala.inline
-  implicit class ListRecoveryPointsByBackupVaultInputOps[Self <: ListRecoveryPointsByBackupVaultInput] (val x: Self) extends AnyVal {
+  implicit class ListRecoveryPointsByBackupVaultInputMutableBuilder[Self <: ListRecoveryPointsByBackupVaultInput] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setByBackupPlanId(value: String): Self = StObject.set(x, "ByBackupPlanId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setByBackupPlanIdUndefined: Self = StObject.set(x, "ByBackupPlanId", js.undefined)
     
     @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
+    def setByCreatedAfter(value: timestamp): Self = StObject.set(x, "ByCreatedAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByBackupPlanId(value: String): Self = this.set("ByBackupPlanId", value.asInstanceOf[js.Any])
+    def setByCreatedAfterUndefined: Self = StObject.set(x, "ByCreatedAfter", js.undefined)
     
     @scala.inline
-    def deleteByBackupPlanId: Self = this.set("ByBackupPlanId", js.undefined)
+    def setByCreatedBefore(value: timestamp): Self = StObject.set(x, "ByCreatedBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByCreatedAfter(value: timestamp): Self = this.set("ByCreatedAfter", value.asInstanceOf[js.Any])
+    def setByCreatedBeforeUndefined: Self = StObject.set(x, "ByCreatedBefore", js.undefined)
     
     @scala.inline
-    def deleteByCreatedAfter: Self = this.set("ByCreatedAfter", js.undefined)
+    def setByResourceArn(value: ARN): Self = StObject.set(x, "ByResourceArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByCreatedBefore(value: timestamp): Self = this.set("ByCreatedBefore", value.asInstanceOf[js.Any])
+    def setByResourceArnUndefined: Self = StObject.set(x, "ByResourceArn", js.undefined)
     
     @scala.inline
-    def deleteByCreatedBefore: Self = this.set("ByCreatedBefore", js.undefined)
+    def setByResourceType(value: ResourceType): Self = StObject.set(x, "ByResourceType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByResourceArn(value: ARN): Self = this.set("ByResourceArn", value.asInstanceOf[js.Any])
+    def setByResourceTypeUndefined: Self = StObject.set(x, "ByResourceType", js.undefined)
     
     @scala.inline
-    def deleteByResourceArn: Self = this.set("ByResourceArn", js.undefined)
+    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setByResourceType(value: ResourceType): Self = this.set("ByResourceType", value.asInstanceOf[js.Any])
+    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
     @scala.inline
-    def deleteByResourceType: Self = this.set("ByResourceType", js.undefined)
+    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
-    
-    @scala.inline
-    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -1,19 +1,18 @@
 package typings.angularRouter.mod
 
 import typings.angularCore.mod.ModuleWithProviders
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "RouterModule")
 @js.native
-class RouterModule protected () extends js.Object {
+class RouterModule protected () extends StObject {
   def this(guard: js.Any, router: Router) = this()
 }
 /* static members */
-@JSImport("@angular/router", "RouterModule")
-@js.native
-object RouterModule extends js.Object {
+object RouterModule {
   
   /**
     * Creates a module with all the router directives and a provider registering routes,
@@ -31,6 +30,8 @@ object RouterModule extends js.Object {
     * @return The new NgModule.
     *
     */
+  @JSImport("@angular/router", "RouterModule.forChild")
+  @js.native
   def forChild(routes: Routes): ModuleWithProviders[RouterModule] = js.native
   
   /**
@@ -51,6 +52,10 @@ object RouterModule extends js.Object {
     * @return The new `NgModule`.
     *
     */
+  @JSImport("@angular/router", "RouterModule.forRoot")
+  @js.native
   def forRoot(routes: Routes): ModuleWithProviders[RouterModule] = js.native
+  @JSImport("@angular/router", "RouterModule.forRoot")
+  @js.native
   def forRoot(routes: Routes, config: ExtraOptions): ModuleWithProviders[RouterModule] = js.native
 }

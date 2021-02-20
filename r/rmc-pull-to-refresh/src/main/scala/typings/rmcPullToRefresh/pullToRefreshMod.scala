@@ -3,13 +3,29 @@ package typings.rmcPullToRefresh
 import typings.react.mod.Component
 import typings.rmcPullToRefresh.anon.CurrSt
 import typings.rmcPullToRefresh.propsTypeMod.PropsType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-pull-to-refresh/es/PullToRefresh", JSImport.Namespace)
-@js.native
-object pullToRefreshMod extends js.Object {
+object pullToRefreshMod {
+  
+  @JSImport("rmc-pull-to-refresh/es/PullToRefresh", JSImport.Default)
+  @js.native
+  class default () extends PullToRefresh
+  /* static members */
+  object default {
+    
+    @JSImport("rmc-pull-to-refresh/es/PullToRefresh", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-pull-to-refresh/es/PullToRefresh", "default.defaultProps")
+    @js.native
+    def defaultProps: PropsType = js.native
+    @scala.inline
+    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
   
   @js.native
   trait PullToRefresh
@@ -69,14 +85,5 @@ object pullToRefreshMod extends js.Object {
     var state_PullToRefresh: CurrSt = js.native
     
     def triggerPullToRefresh(): Unit = js.native
-  }
-  
-  @js.native
-  class default () extends PullToRefresh
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    
-    var defaultProps: PropsType = js.native
   }
 }

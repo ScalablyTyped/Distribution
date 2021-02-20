@@ -1,12 +1,13 @@
 package typings.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticsearch", "Client")
 @js.native
-class Client protected () extends js.Object {
+class Client protected () extends StObject {
   def this(params: ConfigOptions) = this()
   
   def bulk(params: BulkIndexDocumentsParams): js.Promise[_] = js.native

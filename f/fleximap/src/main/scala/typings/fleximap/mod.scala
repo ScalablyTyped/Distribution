@@ -1,15 +1,15 @@
 package typings.fleximap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fleximap", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("fleximap", "FlexiMap")
   @js.native
-  class FlexiMap () extends js.Object {
+  class FlexiMap () extends StObject {
     def this(`object`: js.Array[_]) = this()
     def this(`object`: js.Object) = this()
     

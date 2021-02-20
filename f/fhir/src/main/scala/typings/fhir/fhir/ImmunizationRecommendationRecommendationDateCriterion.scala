@@ -1,5 +1,6 @@
 package typings.fhir.fhir
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,30 +35,18 @@ object ImmunizationRecommendationRecommendationDateCriterion {
   }
   
   @scala.inline
-  implicit class ImmunizationRecommendationRecommendationDateCriterionOps[Self <: ImmunizationRecommendationRecommendationDateCriterion] (val x: Self) extends AnyVal {
+  implicit class ImmunizationRecommendationRecommendationDateCriterionMutableBuilder[Self <: ImmunizationRecommendationRecommendationDateCriterion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setValue(value: dateTime): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setValue(value: dateTime): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def set_value(value: Element): Self = this.set("_value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete_value: Self = this.set("_value", js.undefined)
+    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Animation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CSSAnimation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.WebAnimation
 */
-trait AnimationType extends js.Object
+trait AnimationType extends StObject
 object AnimationType {
   
   @scala.inline

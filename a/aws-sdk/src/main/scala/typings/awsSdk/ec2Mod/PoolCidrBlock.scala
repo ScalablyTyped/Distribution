@@ -1,11 +1,12 @@
 package typings.awsSdk.ec2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoolCidrBlock extends js.Object {
+trait PoolCidrBlock extends StObject {
   
   /**
     * The CIDR block.
@@ -21,24 +22,12 @@ object PoolCidrBlock {
   }
   
   @scala.inline
-  implicit class PoolCidrBlockOps[Self <: PoolCidrBlock] (val x: Self) extends AnyVal {
+  implicit class PoolCidrBlockMutableBuilder[Self <: PoolCidrBlock] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCidr(value: String): Self = this.set("Cidr", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCidr: Self = this.set("Cidr", js.undefined)
+    def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
   }
 }

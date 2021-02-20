@@ -1,5 +1,6 @@
 package typings.googleapis.surveysV2Mod.surveysV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Message defining the question specifications.
   */
 @js.native
-trait SchemaSurveyQuestion extends js.Object {
+trait SchemaSurveyQuestion extends StObject {
   
   /**
     * The randomization option for multiple choice and multi-select questions.
@@ -123,138 +124,126 @@ object SchemaSurveyQuestion {
   }
   
   @scala.inline
-  implicit class SchemaSurveyQuestionOps[Self <: SchemaSurveyQuestion] (val x: Self) extends AnyVal {
+  implicit class SchemaSurveyQuestionMutableBuilder[Self <: SchemaSurveyQuestion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnswerOrder(value: String): Self = StObject.set(x, "answerOrder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnswerOrderUndefined: Self = StObject.set(x, "answerOrder", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnswers(value: js.Array[String]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswerOrder(value: String): Self = this.set("answerOrder", value.asInstanceOf[js.Any])
+    def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
     
     @scala.inline
-    def deleteAnswerOrder: Self = this.set("answerOrder", js.undefined)
+    def setAnswersVarargs(value: String*): Self = StObject.set(x, "answers", js.Array(value :_*))
     
     @scala.inline
-    def setAnswersVarargs(value: String*): Self = this.set("answers", js.Array(value :_*))
+    def setHasOther(value: Boolean): Self = StObject.set(x, "hasOther", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAnswers(value: js.Array[String]): Self = this.set("answers", value.asInstanceOf[js.Any])
+    def setHasOtherUndefined: Self = StObject.set(x, "hasOther", js.undefined)
     
     @scala.inline
-    def deleteAnswers: Self = this.set("answers", js.undefined)
+    def setHighValueLabel(value: String): Self = StObject.set(x, "highValueLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHasOther(value: Boolean): Self = this.set("hasOther", value.asInstanceOf[js.Any])
+    def setHighValueLabelUndefined: Self = StObject.set(x, "highValueLabel", js.undefined)
     
     @scala.inline
-    def deleteHasOther: Self = this.set("hasOther", js.undefined)
+    def setImages(value: js.Array[SchemaSurveyQuestionImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHighValueLabel(value: String): Self = this.set("highValueLabel", value.asInstanceOf[js.Any])
+    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
     @scala.inline
-    def deleteHighValueLabel: Self = this.set("highValueLabel", js.undefined)
+    def setImagesVarargs(value: SchemaSurveyQuestionImage*): Self = StObject.set(x, "images", js.Array(value :_*))
     
     @scala.inline
-    def setImagesVarargs(value: SchemaSurveyQuestionImage*): Self = this.set("images", js.Array(value :_*))
+    def setLastAnswerPositionPinned(value: Boolean): Self = StObject.set(x, "lastAnswerPositionPinned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImages(value: js.Array[SchemaSurveyQuestionImage]): Self = this.set("images", value.asInstanceOf[js.Any])
+    def setLastAnswerPositionPinnedUndefined: Self = StObject.set(x, "lastAnswerPositionPinned", js.undefined)
     
     @scala.inline
-    def deleteImages: Self = this.set("images", js.undefined)
+    def setLowValueLabel(value: String): Self = StObject.set(x, "lowValueLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLastAnswerPositionPinned(value: Boolean): Self = this.set("lastAnswerPositionPinned", value.asInstanceOf[js.Any])
+    def setLowValueLabelUndefined: Self = StObject.set(x, "lowValueLabel", js.undefined)
     
     @scala.inline
-    def deleteLastAnswerPositionPinned: Self = this.set("lastAnswerPositionPinned", js.undefined)
+    def setMustPickSuggestion(value: Boolean): Self = StObject.set(x, "mustPickSuggestion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLowValueLabel(value: String): Self = this.set("lowValueLabel", value.asInstanceOf[js.Any])
+    def setMustPickSuggestionUndefined: Self = StObject.set(x, "mustPickSuggestion", js.undefined)
     
     @scala.inline
-    def deleteLowValueLabel: Self = this.set("lowValueLabel", js.undefined)
+    def setNumStars(value: String): Self = StObject.set(x, "numStars", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMustPickSuggestion(value: Boolean): Self = this.set("mustPickSuggestion", value.asInstanceOf[js.Any])
+    def setNumStarsUndefined: Self = StObject.set(x, "numStars", js.undefined)
     
     @scala.inline
-    def deleteMustPickSuggestion: Self = this.set("mustPickSuggestion", js.undefined)
+    def setOpenTextPlaceholder(value: String): Self = StObject.set(x, "openTextPlaceholder", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNumStars(value: String): Self = this.set("numStars", value.asInstanceOf[js.Any])
+    def setOpenTextPlaceholderUndefined: Self = StObject.set(x, "openTextPlaceholder", js.undefined)
     
     @scala.inline
-    def deleteNumStars: Self = this.set("numStars", js.undefined)
+    def setOpenTextSuggestions(value: js.Array[String]): Self = StObject.set(x, "openTextSuggestions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenTextPlaceholder(value: String): Self = this.set("openTextPlaceholder", value.asInstanceOf[js.Any])
+    def setOpenTextSuggestionsUndefined: Self = StObject.set(x, "openTextSuggestions", js.undefined)
     
     @scala.inline
-    def deleteOpenTextPlaceholder: Self = this.set("openTextPlaceholder", js.undefined)
+    def setOpenTextSuggestionsVarargs(value: String*): Self = StObject.set(x, "openTextSuggestions", js.Array(value :_*))
     
     @scala.inline
-    def setOpenTextSuggestionsVarargs(value: String*): Self = this.set("openTextSuggestions", js.Array(value :_*))
+    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenTextSuggestions(value: js.Array[String]): Self = this.set("openTextSuggestions", value.asInstanceOf[js.Any])
+    def setQuestionUndefined: Self = StObject.set(x, "question", js.undefined)
     
     @scala.inline
-    def deleteOpenTextSuggestions: Self = this.set("openTextSuggestions", js.undefined)
+    def setSentimentText(value: String): Self = StObject.set(x, "sentimentText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    def setSentimentTextUndefined: Self = StObject.set(x, "sentimentText", js.undefined)
     
     @scala.inline
-    def deleteQuestion: Self = this.set("question", js.undefined)
+    def setSingleLineResponse(value: Boolean): Self = StObject.set(x, "singleLineResponse", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSentimentText(value: String): Self = this.set("sentimentText", value.asInstanceOf[js.Any])
+    def setSingleLineResponseUndefined: Self = StObject.set(x, "singleLineResponse", js.undefined)
     
     @scala.inline
-    def deleteSentimentText: Self = this.set("sentimentText", js.undefined)
+    def setThresholdAnswers(value: js.Array[String]): Self = StObject.set(x, "thresholdAnswers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSingleLineResponse(value: Boolean): Self = this.set("singleLineResponse", value.asInstanceOf[js.Any])
+    def setThresholdAnswersUndefined: Self = StObject.set(x, "thresholdAnswers", js.undefined)
     
     @scala.inline
-    def deleteSingleLineResponse: Self = this.set("singleLineResponse", js.undefined)
+    def setThresholdAnswersVarargs(value: String*): Self = StObject.set(x, "thresholdAnswers", js.Array(value :_*))
     
     @scala.inline
-    def setThresholdAnswersVarargs(value: String*): Self = this.set("thresholdAnswers", js.Array(value :_*))
+    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setThresholdAnswers(value: js.Array[String]): Self = this.set("thresholdAnswers", value.asInstanceOf[js.Any])
+    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
-    def deleteThresholdAnswers: Self = this.set("thresholdAnswers", js.undefined)
+    def setUnitOfMeasurementLabel(value: String): Self = StObject.set(x, "unitOfMeasurementLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setUnitOfMeasurementLabelUndefined: Self = StObject.set(x, "unitOfMeasurementLabel", js.undefined)
     
     @scala.inline
-    def deleteType: Self = this.set("type", js.undefined)
+    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnitOfMeasurementLabel(value: String): Self = this.set("unitOfMeasurementLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnitOfMeasurementLabel: Self = this.set("unitOfMeasurementLabel", js.undefined)
-    
-    @scala.inline
-    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVideoId: Self = this.set("videoId", js.undefined)
+    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

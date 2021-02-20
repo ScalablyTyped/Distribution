@@ -1,5 +1,6 @@
 package typings.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cssTree.cssTreeStrings.AmpersandAmpersand
   - typings.cssTree.cssTreeStrings.Space
 */
-trait DSNodeCombinator extends js.Object
+trait DSNodeCombinator extends StObject
 object DSNodeCombinator {
   
   @scala.inline

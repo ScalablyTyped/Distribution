@@ -1,14 +1,14 @@
 package typings.typeorm
 
 import typings.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typeorm/browser/error/TransactionAlreadyStartedError", JSImport.Namespace)
-@js.native
-object transactionAlreadyStartedErrorMod extends js.Object {
+object transactionAlreadyStartedErrorMod {
   
+  @JSImport("typeorm/browser/error/TransactionAlreadyStartedError", "TransactionAlreadyStartedError")
   @js.native
   class TransactionAlreadyStartedError () extends Error
 }

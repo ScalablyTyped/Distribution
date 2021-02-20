@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Artifact extends js.Object {
+trait Artifact extends StObject {
   
   var artifact: scala.Double = js.native
   
@@ -29,30 +30,18 @@ object Artifact {
   }
   
   @scala.inline
-  implicit class ArtifactOps[Self <: Artifact] (val x: Self) extends AnyVal {
+  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArtifact(value: scala.Double): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnvironmentState(value: scala.Double): Self = StObject.set(x, "environmentState", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEvent(value: scala.Double): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArtifact(value: scala.Double): Self = this.set("artifact", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEnvironmentState(value: scala.Double): Self = this.set("environmentState", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setEvent(value: scala.Double): Self = this.set("event", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = this.set("undefined", value.asInstanceOf[js.Any])
+    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "dialogflow"
-version := "1.2.0-a21db2"
-scalaVersion := "2.13.2"
+version := "1.2.0-86caf4"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20200515Z-104b3d",
-  "org.scalablytyped" %%% "protobufjs" % "6.9.0-8bd81a",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20201002Z-599bb2",
+  "org.scalablytyped" %%% "protobufjs" % "6.10.2-e0a6c7",
+  "org.scalablytyped" %%% "std" % "4.1-40053c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

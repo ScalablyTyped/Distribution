@@ -8,14 +8,14 @@ import typings.awsSdkClientLambdaNode.typesInvokeAsyncOutputMod.InvokeAsyncOutpu
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
 import typings.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/commands/InvokeAsyncCommand", JSImport.Namespace)
-@js.native
-object invokeAsyncCommandMod extends js.Object {
+object invokeAsyncCommandMod {
   
+  @JSImport("@aws-sdk/client-lambda-node/commands/InvokeAsyncCommand", "InvokeAsyncCommand")
   @js.native
   class InvokeAsyncCommand protected () extends Command[
           InputTypesUnion, 

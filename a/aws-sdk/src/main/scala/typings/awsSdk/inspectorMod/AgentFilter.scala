@@ -1,11 +1,12 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AgentFilter extends js.Object {
+trait AgentFilter extends StObject {
   
   /**
     * The detailed health state of the agent. Values can be set to IDLE, RUNNING, SHUTDOWN, UNHEALTHY, THROTTLED, and UNKNOWN. 
@@ -26,30 +27,18 @@ object AgentFilter {
   }
   
   @scala.inline
-  implicit class AgentFilterOps[Self <: AgentFilter] (val x: Self) extends AnyVal {
+  implicit class AgentFilterMutableBuilder[Self <: AgentFilter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAgentHealthCodes(value: AgentHealthCodeList): Self = StObject.set(x, "agentHealthCodes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAgentHealthCodesVarargs(value: AgentHealthCode*): Self = StObject.set(x, "agentHealthCodes", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAgentHealths(value: AgentHealthList): Self = StObject.set(x, "agentHealths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAgentHealthCodesVarargs(value: AgentHealthCode*): Self = this.set("agentHealthCodes", js.Array(value :_*))
-    
-    @scala.inline
-    def setAgentHealthCodes(value: AgentHealthCodeList): Self = this.set("agentHealthCodes", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAgentHealthsVarargs(value: AgentHealth*): Self = this.set("agentHealths", js.Array(value :_*))
-    
-    @scala.inline
-    def setAgentHealths(value: AgentHealthList): Self = this.set("agentHealths", value.asInstanceOf[js.Any])
+    def setAgentHealthsVarargs(value: AgentHealth*): Self = StObject.set(x, "agentHealths", js.Array(value :_*))
   }
 }

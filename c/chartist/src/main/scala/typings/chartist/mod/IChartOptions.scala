@@ -1,11 +1,12 @@
 package typings.chartist.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IChartOptions extends js.Object {
+trait IChartOptions extends StObject {
   
   var plugins: js.UndefOr[js.Array[_]] = js.native
   
@@ -23,33 +24,21 @@ object IChartOptions {
   }
   
   @scala.inline
-  implicit class IChartOptionsOps[Self <: IChartOptions] (val x: Self) extends AnyVal {
+  implicit class IChartOptionsMutableBuilder[Self <: IChartOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
     @scala.inline
-    def setPluginsVarargs(value: js.Any*): Self = this.set("plugins", js.Array(value :_*))
+    def setReverseData(value: Boolean): Self = StObject.set(x, "reverseData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlugins(value: js.Array[_]): Self = this.set("plugins", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlugins: Self = this.set("plugins", js.undefined)
-    
-    @scala.inline
-    def setReverseData(value: Boolean): Self = this.set("reverseData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReverseData: Self = this.set("reverseData", js.undefined)
+    def setReverseDataUndefined: Self = StObject.set(x, "reverseData", js.undefined)
   }
 }

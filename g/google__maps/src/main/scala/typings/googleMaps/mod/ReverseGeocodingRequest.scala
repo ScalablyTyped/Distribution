@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReverseGeocodingRequest extends js.Object {
+trait ReverseGeocodingRequest extends StObject {
   
   /**
     * The language in which to return results.
@@ -60,48 +61,36 @@ object ReverseGeocodingRequest {
   }
   
   @scala.inline
-  implicit class ReverseGeocodingRequestOps[Self <: ReverseGeocodingRequest] (val x: Self) extends AnyVal {
+  implicit class ReverseGeocodingRequestMutableBuilder[Self <: ReverseGeocodingRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLatlng(value: LatLng): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLanguage(value: Language): Self = this.set("language", value.asInstanceOf[js.Any])
+    def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
     
     @scala.inline
-    def deleteLanguage: Self = this.set("language", js.undefined)
+    def setLocation_type(value: ReverseGeocodingLocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatlng(value: LatLng): Self = this.set("latlng", value.asInstanceOf[js.Any])
+    def setLocation_typeUndefined: Self = StObject.set(x, "location_type", js.undefined)
     
     @scala.inline
-    def deleteLatlng: Self = this.set("latlng", js.undefined)
+    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLocation_type(value: ReverseGeocodingLocationType): Self = this.set("location_type", value.asInstanceOf[js.Any])
+    def setPlace_idUndefined: Self = StObject.set(x, "place_id", js.undefined)
     
     @scala.inline
-    def deleteLocation_type: Self = this.set("location_type", js.undefined)
+    def setResult_type(value: AddressType): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePlace_id: Self = this.set("place_id", js.undefined)
-    
-    @scala.inline
-    def setResult_type(value: AddressType): Self = this.set("result_type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult_type: Self = this.set("result_type", js.undefined)
+    def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
   }
 }

@@ -1,11 +1,12 @@
 package typings.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListOnScrollProps extends js.Object {
+trait ListOnScrollProps extends StObject {
   
   var scrollDirection: ScrollDirection = js.native
   
@@ -22,27 +23,15 @@ object ListOnScrollProps {
   }
   
   @scala.inline
-  implicit class ListOnScrollPropsOps[Self <: ListOnScrollProps] (val x: Self) extends AnyVal {
+  implicit class ListOnScrollPropsMutableBuilder[Self <: ListOnScrollProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setScrollDirection(value: ScrollDirection): Self = StObject.set(x, "scrollDirection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setScrollOffset(value: Double): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setScrollDirection(value: ScrollDirection): Self = this.set("scrollDirection", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollOffset(value: Double): Self = this.set("scrollOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setScrollUpdateWasRequested(value: Boolean): Self = this.set("scrollUpdateWasRequested", value.asInstanceOf[js.Any])
+    def setScrollUpdateWasRequested(value: Boolean): Self = StObject.set(x, "scrollUpdateWasRequested", value.asInstanceOf[js.Any])
   }
 }

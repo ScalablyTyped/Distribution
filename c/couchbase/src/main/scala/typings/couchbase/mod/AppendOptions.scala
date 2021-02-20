@@ -1,12 +1,13 @@
 package typings.couchbase.mod
 
 import typings.couchbase.mod.Bucket.CAS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppendOptions extends js.Object {
+trait AppendOptions extends StObject {
   
   /**
     * The CAS value to check. If the item on the server contains a different CAS value, the operation will fail. Note that if this option is undefined, no comparison will be performed.
@@ -32,36 +33,24 @@ object AppendOptions {
   }
   
   @scala.inline
-  implicit class AppendOptionsOps[Self <: AppendOptions] (val x: Self) extends AnyVal {
+  implicit class AppendOptionsMutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCas(value: CAS): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCasUndefined: Self = StObject.set(x, "cas", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPersist_to(value: Double): Self = StObject.set(x, "persist_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCas(value: CAS): Self = this.set("cas", value.asInstanceOf[js.Any])
+    def setPersist_toUndefined: Self = StObject.set(x, "persist_to", js.undefined)
     
     @scala.inline
-    def deleteCas: Self = this.set("cas", js.undefined)
+    def setReplicate_to(value: Double): Self = StObject.set(x, "replicate_to", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPersist_to(value: Double): Self = this.set("persist_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePersist_to: Self = this.set("persist_to", js.undefined)
-    
-    @scala.inline
-    def setReplicate_to(value: Double): Self = this.set("replicate_to", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteReplicate_to: Self = this.set("replicate_to", js.undefined)
+    def setReplicate_toUndefined: Self = StObject.set(x, "replicate_to", js.undefined)
   }
 }

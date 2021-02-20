@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JobEventsConfig extends js.Object {
+trait JobEventsConfig extends StObject {
   
   var jobAssigned: JobEventConfig = js.native
   
@@ -22,27 +23,15 @@ object JobEventsConfig {
   }
   
   @scala.inline
-  implicit class JobEventsConfigOps[Self <: JobEventsConfig] (val x: Self) extends AnyVal {
+  implicit class JobEventsConfigMutableBuilder[Self <: JobEventsConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setJobAssigned(value: JobEventConfig): Self = StObject.set(x, "jobAssigned", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setJobCompleted(value: JobEventConfig): Self = StObject.set(x, "jobCompleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setJobAssigned(value: JobEventConfig): Self = this.set("jobAssigned", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobCompleted(value: JobEventConfig): Self = this.set("jobCompleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setJobStarted(value: JobEventConfig): Self = this.set("jobStarted", value.asInstanceOf[js.Any])
+    def setJobStarted(value: JobEventConfig): Self = StObject.set(x, "jobStarted", value.asInstanceOf[js.Any])
   }
 }

@@ -2,6 +2,7 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,21 +36,9 @@ object XMessageBoxFactory {
   }
   
   @scala.inline
-  implicit class XMessageBoxFactoryOps[Self <: XMessageBoxFactory] (val x: Self) extends AnyVal {
+  implicit class XMessageBoxFactoryMutableBuilder[Self <: XMessageBoxFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setCreateMessageBox(value: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox): Self = this.set("createMessageBox", js.Any.fromFunction5(value))
+    def setCreateMessageBox(value: (XWindowPeer, MessageBoxType, Double, String, String) => XMessageBox): Self = StObject.set(x, "createMessageBox", js.Any.fromFunction5(value))
   }
 }

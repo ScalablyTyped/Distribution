@@ -1,12 +1,11 @@
 package typings.concaveman
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("concaveman", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * A very fast 2D concave hull algorithm in JavaScript (generates a general outline of a point set).
@@ -22,8 +21,16 @@ object mod extends js.Object {
     *
     * //=hull
     */
+  @JSImport("concaveman", JSImport.Namespace)
+  @js.native
   def apply(points: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
+  @JSImport("concaveman", JSImport.Namespace)
+  @js.native
   def apply(points: js.Array[js.Array[Double]], concavity: js.UndefOr[scala.Nothing], lengthThreshold: Double): js.Array[js.Array[Double]] = js.native
+  @JSImport("concaveman", JSImport.Namespace)
+  @js.native
   def apply(points: js.Array[js.Array[Double]], concavity: Double): js.Array[js.Array[Double]] = js.native
+  @JSImport("concaveman", JSImport.Namespace)
+  @js.native
   def apply(points: js.Array[js.Array[Double]], concavity: Double, lengthThreshold: Double): js.Array[js.Array[Double]] = js.native
 }

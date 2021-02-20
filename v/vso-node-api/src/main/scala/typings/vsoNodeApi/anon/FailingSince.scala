@@ -1,11 +1,12 @@
 package typings.vsoNodeApi.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FailingSince extends js.Object {
+trait FailingSince extends StObject {
   
   var failingSince: scala.Double = js.native
   
@@ -20,24 +21,12 @@ object FailingSince {
   }
   
   @scala.inline
-  implicit class FailingSinceOps[Self <: FailingSince] (val x: Self) extends AnyVal {
+  implicit class FailingSinceMutableBuilder[Self <: FailingSince] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFailingSince(value: scala.Double): Self = StObject.set(x, "failingSince", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFailingSince(value: scala.Double): Self = this.set("failingSince", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegular(value: scala.Double): Self = this.set("regular", value.asInstanceOf[js.Any])
+    def setRegular(value: scala.Double): Self = StObject.set(x, "regular", value.asInstanceOf[js.Any])
   }
 }

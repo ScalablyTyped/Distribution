@@ -1,14 +1,15 @@
 package typings.easyXHeaders
 
 import typings.easyXHeaders.netMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tty", JSImport.Namespace)
-@js.native
-object ttyMod extends js.Object {
+object ttyMod {
   
+  @JSImport("tty", "isatty")
+  @js.native
   def isatty(fd: Double): Boolean = js.native
   
   @js.native

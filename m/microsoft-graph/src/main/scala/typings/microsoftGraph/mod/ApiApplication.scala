@@ -1,11 +1,12 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ApiApplication extends js.Object {
+trait ApiApplication extends StObject {
   
   // When true, allows an application to use claims mapping without specifying a custom signing key.
   var acceptMappedClaims: js.UndefOr[NullableOption[Boolean]] = js.native
@@ -53,69 +54,57 @@ object ApiApplication {
   }
   
   @scala.inline
-  implicit class ApiApplicationOps[Self <: ApiApplication] (val x: Self) extends AnyVal {
+  implicit class ApiApplicationMutableBuilder[Self <: ApiApplication] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcceptMappedClaims(value: NullableOption[Boolean]): Self = StObject.set(x, "acceptMappedClaims", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcceptMappedClaimsNull: Self = StObject.set(x, "acceptMappedClaims", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAcceptMappedClaimsUndefined: Self = StObject.set(x, "acceptMappedClaims", js.undefined)
     
     @scala.inline
-    def setAcceptMappedClaims(value: NullableOption[Boolean]): Self = this.set("acceptMappedClaims", value.asInstanceOf[js.Any])
+    def setKnownClientApplications(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "knownClientApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAcceptMappedClaims: Self = this.set("acceptMappedClaims", js.undefined)
+    def setKnownClientApplicationsNull: Self = StObject.set(x, "knownClientApplications", null)
     
     @scala.inline
-    def setAcceptMappedClaimsNull: Self = this.set("acceptMappedClaims", null)
+    def setKnownClientApplicationsUndefined: Self = StObject.set(x, "knownClientApplications", js.undefined)
     
     @scala.inline
-    def setKnownClientApplicationsVarargs(value: String*): Self = this.set("knownClientApplications", js.Array(value :_*))
+    def setKnownClientApplicationsVarargs(value: String*): Self = StObject.set(x, "knownClientApplications", js.Array(value :_*))
     
     @scala.inline
-    def setKnownClientApplications(value: NullableOption[js.Array[String]]): Self = this.set("knownClientApplications", value.asInstanceOf[js.Any])
+    def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteKnownClientApplications: Self = this.set("knownClientApplications", js.undefined)
+    def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
     
     @scala.inline
-    def setKnownClientApplicationsNull: Self = this.set("knownClientApplications", null)
+    def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
     
     @scala.inline
-    def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = this.set("oauth2PermissionScopes", js.Array(value :_*))
+    def setPreAuthorizedApplications(value: NullableOption[js.Array[PreAuthorizedApplication]]): Self = StObject.set(x, "preAuthorizedApplications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = this.set("oauth2PermissionScopes", value.asInstanceOf[js.Any])
+    def setPreAuthorizedApplicationsNull: Self = StObject.set(x, "preAuthorizedApplications", null)
     
     @scala.inline
-    def deleteOauth2PermissionScopes: Self = this.set("oauth2PermissionScopes", js.undefined)
+    def setPreAuthorizedApplicationsUndefined: Self = StObject.set(x, "preAuthorizedApplications", js.undefined)
     
     @scala.inline
-    def setPreAuthorizedApplicationsVarargs(value: PreAuthorizedApplication*): Self = this.set("preAuthorizedApplications", js.Array(value :_*))
+    def setPreAuthorizedApplicationsVarargs(value: PreAuthorizedApplication*): Self = StObject.set(x, "preAuthorizedApplications", js.Array(value :_*))
     
     @scala.inline
-    def setPreAuthorizedApplications(value: NullableOption[js.Array[PreAuthorizedApplication]]): Self = this.set("preAuthorizedApplications", value.asInstanceOf[js.Any])
+    def setRequestedAccessTokenVersion(value: NullableOption[Double]): Self = StObject.set(x, "requestedAccessTokenVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePreAuthorizedApplications: Self = this.set("preAuthorizedApplications", js.undefined)
+    def setRequestedAccessTokenVersionNull: Self = StObject.set(x, "requestedAccessTokenVersion", null)
     
     @scala.inline
-    def setPreAuthorizedApplicationsNull: Self = this.set("preAuthorizedApplications", null)
-    
-    @scala.inline
-    def setRequestedAccessTokenVersion(value: NullableOption[Double]): Self = this.set("requestedAccessTokenVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequestedAccessTokenVersion: Self = this.set("requestedAccessTokenVersion", js.undefined)
-    
-    @scala.inline
-    def setRequestedAccessTokenVersionNull: Self = this.set("requestedAccessTokenVersion", null)
+    def setRequestedAccessTokenVersionUndefined: Self = StObject.set(x, "requestedAccessTokenVersion", js.undefined)
   }
 }

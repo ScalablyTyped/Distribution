@@ -2,12 +2,13 @@ package typings.postcssSelectorParser.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] extends js.Object {
+trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] extends StObject {
   
   /**
     * Some non-standard syntax doesn't follow normal escaping rules for css.
@@ -78,7 +79,7 @@ object Base {
   @scala.inline
   def apply[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](
     appendToPropertyAndEscape: (String, js.Any, String) => Unit,
-    clone: StringDictionary[js.Any] => Node,
+    clone_ : StringDictionary[js.Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
     next: () => Node,
     parent: ParentType,
@@ -94,80 +95,69 @@ object Base {
     `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal,
     value: Value
   ): Base[Value, ParentType] = {
-    val __obj = js.Dynamic.literal(appendToPropertyAndEscape = js.Any.fromFunction3(appendToPropertyAndEscape), clone = js.Any.fromFunction1(clone), isAtPosition = js.Any.fromFunction2(isAtPosition), next = js.Any.fromFunction0(next), parent = parent.asInstanceOf[js.Any], prev = js.Any.fromFunction0(prev), rawSpaceAfter = rawSpaceAfter.asInstanceOf[js.Any], rawSpaceBefore = rawSpaceBefore.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), replaceWith = js.Any.fromFunction1(replaceWith), setPropertyAndEscape = js.Any.fromFunction3(setPropertyAndEscape), setPropertyWithoutEscape = js.Any.fromFunction2(setPropertyWithoutEscape), sourceIndex = sourceIndex.asInstanceOf[js.Any], spaces = spaces.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appendToPropertyAndEscape = js.Any.fromFunction3(appendToPropertyAndEscape), isAtPosition = js.Any.fromFunction2(isAtPosition), next = js.Any.fromFunction0(next), parent = parent.asInstanceOf[js.Any], prev = js.Any.fromFunction0(prev), rawSpaceAfter = rawSpaceAfter.asInstanceOf[js.Any], rawSpaceBefore = rawSpaceBefore.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), replaceWith = js.Any.fromFunction1(replaceWith), setPropertyAndEscape = js.Any.fromFunction3(setPropertyAndEscape), setPropertyWithoutEscape = js.Any.fromFunction2(setPropertyWithoutEscape), sourceIndex = sourceIndex.asInstanceOf[js.Any], spaces = spaces.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base[Value, ParentType]]
   }
   
   @scala.inline
-  implicit class BaseOps[Self <: Base[_, _], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self with (Base[Value, ParentType])) extends AnyVal {
+  implicit class BaseMutableBuilder[Self <: Base[_, _], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self with (Base[Value, ParentType])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClone_(value: StringDictionary[js.Any] => Node): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setIsAtPosition(value: (Double, Double) => js.UndefOr[Boolean]): Self = StObject.set(x, "isAtPosition", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = this.set("appendToPropertyAndEscape", js.Any.fromFunction3(value))
+    def setNext(value: () => Node): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setClone(value: StringDictionary[js.Any] => Node): Self = this.set("clone", js.Any.fromFunction1(value))
+    def setParent(value: ParentType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAtPosition(value: (Double, Double) => js.UndefOr[Boolean]): Self = this.set("isAtPosition", js.Any.fromFunction2(value))
+    def setPrev(value: () => Node): Self = StObject.set(x, "prev", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setNext(value: () => Node): Self = this.set("next", js.Any.fromFunction0(value))
+    def setRawSpaceAfter(value: String): Self = StObject.set(x, "rawSpaceAfter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: ParentType): Self = this.set("parent", value.asInstanceOf[js.Any])
+    def setRawSpaceBefore(value: String): Self = StObject.set(x, "rawSpaceBefore", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrev(value: () => Node): Self = this.set("prev", js.Any.fromFunction0(value))
+    def setRemove(value: () => Node): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setRawSpaceAfter(value: String): Self = this.set("rawSpaceAfter", value.asInstanceOf[js.Any])
+    def setReplaceWith(value: /* repeated */ Node => Node): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRawSpaceBefore(value: String): Self = this.set("rawSpaceBefore", value.asInstanceOf[js.Any])
+    def setSetPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "setPropertyAndEscape", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRemove(value: () => Node): Self = this.set("remove", js.Any.fromFunction0(value))
+    def setSetPropertyWithoutEscape(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyWithoutEscape", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setReplaceWith(value: /* repeated */ Node => Node): Self = this.set("replaceWith", js.Any.fromFunction1(value))
+    def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = this.set("setPropertyAndEscape", js.Any.fromFunction3(value))
+    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetPropertyWithoutEscape(value: (String, js.Any) => Unit): Self = this.set("setPropertyWithoutEscape", js.Any.fromFunction2(value))
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
     @scala.inline
-    def setSourceIndex(value: Double): Self = this.set("sourceIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSpaces(value: Spaces): Self = this.set("spaces", value.asInstanceOf[js.Any])
+    def setSpaces(value: Spaces): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(
       value: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal
-    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: Value): Self = this.set("value", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSource(value: NodeSource): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

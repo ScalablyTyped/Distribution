@@ -1,12 +1,11 @@
 package typings.googleAppsScript.global.GoogleAppsScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GoogleAppsScript.Sites")
-@js.native
-object Sites extends js.Object {
+object Sites {
   
   /**
     * A typesafe enum for sites attachment type.
@@ -15,8 +14,9 @@ object Sites extends js.Object {
     * modify Sites made with this version, but script can still access
     * classic Sites.
     */
+  @JSGlobal("GoogleAppsScript.Sites.AttachmentType")
   @js.native
-  object AttachmentType extends js.Object {
+  object AttachmentType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Sites.AttachmentType with Double] = js.native
@@ -33,8 +33,9 @@ object Sites extends js.Object {
     * modify Sites made with this version, but script can still access
     * classic Sites.
     */
+  @JSGlobal("GoogleAppsScript.Sites.PageType")
   @js.native
-  object PageType extends js.Object {
+  object PageType extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Sites.PageType with Double] = js.native

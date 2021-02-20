@@ -1,11 +1,12 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrePassEffectConfiguration extends js.Object {
+trait PrePassEffectConfiguration extends StObject {
   
   /**
     * Creates the associated post process
@@ -46,48 +47,36 @@ object PrePassEffectConfiguration {
   }
   
   @scala.inline
-  implicit class PrePassEffectConfigurationOps[Self <: PrePassEffectConfiguration] (val x: Self) extends AnyVal {
+  implicit class PrePassEffectConfigurationMutableBuilder[Self <: PrePassEffectConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCreatePostProcess(value: () => PostProcess): Self = StObject.set(x, "createPostProcess", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCreatePostProcessUndefined: Self = StObject.set(x, "createPostProcess", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexturesRequiredVarargs(value: Double*): Self = this.set("texturesRequired", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTexturesRequired(value: js.Array[Double]): Self = this.set("texturesRequired", value.asInstanceOf[js.Any])
+    def setPostProcess(value: PostProcess): Self = StObject.set(x, "postProcess", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreatePostProcess(value: () => PostProcess): Self = this.set("createPostProcess", js.Any.fromFunction0(value))
+    def setPostProcessUndefined: Self = StObject.set(x, "postProcess", js.undefined)
     
     @scala.inline
-    def deleteCreatePostProcess: Self = this.set("createPostProcess", js.undefined)
+    def setTexturesRequired(value: js.Array[Double]): Self = StObject.set(x, "texturesRequired", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDispose(value: () => Unit): Self = this.set("dispose", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteDispose: Self = this.set("dispose", js.undefined)
-    
-    @scala.inline
-    def setPostProcess(value: PostProcess): Self = this.set("postProcess", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePostProcess: Self = this.set("postProcess", js.undefined)
+    def setTexturesRequiredVarargs(value: Double*): Self = StObject.set(x, "texturesRequired", js.Array(value :_*))
   }
 }

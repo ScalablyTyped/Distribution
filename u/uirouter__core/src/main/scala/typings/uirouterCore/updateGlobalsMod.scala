@@ -1,13 +1,14 @@
 package typings.uirouterCore
 
 import typings.uirouterCore.transitionServiceMod.TransitionService
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/hooks/updateGlobals", JSImport.Namespace)
-@js.native
-object updateGlobalsMod extends js.Object {
+object updateGlobalsMod {
   
+  @JSImport("@uirouter/core/lib/hooks/updateGlobals", "registerUpdateGlobalState")
+  @js.native
   def registerUpdateGlobalState(transitionService: TransitionService): js.Function = js.native
 }

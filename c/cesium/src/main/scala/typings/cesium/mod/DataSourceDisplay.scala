@@ -1,12 +1,13 @@
 package typings.cesium.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "DataSourceDisplay")
 @js.native
-class DataSourceDisplay protected () extends js.Object {
+class DataSourceDisplay protected () extends StObject {
   def this(options: typings.cesium.anon.DataSourceCollection) = this()
   
   var dataSources: DataSourceCollection = js.native
@@ -21,14 +22,18 @@ class DataSourceDisplay protected () extends js.Object {
   
   def update(time: JulianDate): Boolean = js.native
 }
-/* static members */
-@JSImport("cesium", "DataSourceDisplay")
-@js.native
-object DataSourceDisplay extends js.Object {
+object DataSourceDisplay {
   
-  def defaultVisualizersCallback(scene: Scene, dataSource: DataSource): js.Array[Visualizer] = js.native
-  @JSName("defaultVisualizersCallback")
-  var defaultVisualizersCallback_Original: VisualizersCallback = js.native
+  @JSImport("cesium", "DataSourceDisplay")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("cesium", "DataSourceDisplay.defaultVisualizersCallback")
+  @js.native
+  def defaultVisualizersCallback: VisualizersCallback = js.native
+  @scala.inline
+  def defaultVisualizersCallback_=(x: VisualizersCallback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVisualizersCallback")(x.asInstanceOf[js.Any])
   
   type VisualizersCallback = js.Function2[/* scene */ Scene, /* dataSource */ DataSource, js.Array[Visualizer]]
 }

@@ -1,11 +1,12 @@
 package typings.awsSdk.codebuildMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BatchRestrictions extends js.Object {
+trait BatchRestrictions extends StObject {
   
   /**
     * An array of strings that specify the compute types that are allowed for the batch build. See Build environment compute types in the AWS CodeBuild User Guide for these values. 
@@ -26,33 +27,21 @@ object BatchRestrictions {
   }
   
   @scala.inline
-  implicit class BatchRestrictionsOps[Self <: BatchRestrictions] (val x: Self) extends AnyVal {
+  implicit class BatchRestrictionsMutableBuilder[Self <: BatchRestrictions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setComputeTypesAllowed(value: ComputeTypesAllowed): Self = StObject.set(x, "computeTypesAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setComputeTypesAllowedUndefined: Self = StObject.set(x, "computeTypesAllowed", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setComputeTypesAllowedVarargs(value: NonEmptyString*): Self = StObject.set(x, "computeTypesAllowed", js.Array(value :_*))
     
     @scala.inline
-    def setComputeTypesAllowedVarargs(value: NonEmptyString*): Self = this.set("computeTypesAllowed", js.Array(value :_*))
+    def setMaximumBuildsAllowed(value: WrapperInt): Self = StObject.set(x, "maximumBuildsAllowed", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComputeTypesAllowed(value: ComputeTypesAllowed): Self = this.set("computeTypesAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteComputeTypesAllowed: Self = this.set("computeTypesAllowed", js.undefined)
-    
-    @scala.inline
-    def setMaximumBuildsAllowed(value: WrapperInt): Self = this.set("maximumBuildsAllowed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaximumBuildsAllowed: Self = this.set("maximumBuildsAllowed", js.undefined)
+    def setMaximumBuildsAllowedUndefined: Self = StObject.set(x, "maximumBuildsAllowed", js.undefined)
   }
 }

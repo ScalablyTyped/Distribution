@@ -6,12 +6,13 @@ import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1Dot1
 import typings.googleapis.googleapisStrings.v2
 import typings.googleapis.googleapisStrings.v3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fn13 extends js.Object {
+trait Fn13 extends StObject {
   
   def apply(options: Options): Androidpublisher = js.native
   def apply(options: typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Options): typings.googleapis.androidpublisherV3Mod.androidpublisherV3.Androidpublisher = js.native

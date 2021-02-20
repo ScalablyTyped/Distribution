@@ -4,6 +4,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -185,162 +186,150 @@ object StreamLayerProperties {
   }
   
   @scala.inline
-  implicit class StreamLayerPropertiesOps[Self <: StreamLayerProperties] (val x: Self) extends AnyVal {
+  implicit class StreamLayerPropertiesMutableBuilder[Self <: StreamLayerProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCopyright(value: String): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
     @scala.inline
-    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDefinitionExpression(value: String): Self = this.set("definitionExpression", value.asInstanceOf[js.Any])
+    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
     @scala.inline
-    def deleteDefinitionExpression: Self = this.set("definitionExpression", js.undefined)
+    def setElevationInfo(value: StreamLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayField(value: String): Self = this.set("displayField", value.asInstanceOf[js.Any])
+    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
     @scala.inline
-    def deleteDisplayField: Self = this.set("displayField", js.undefined)
+    def setFeatureReduction(value: FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setElevationInfo(value: StreamLayerElevationInfo): Self = this.set("elevationInfo", value.asInstanceOf[js.Any])
+    def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
     @scala.inline
-    def deleteElevationInfo: Self = this.set("elevationInfo", js.undefined)
+    def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFeatureReduction(value: FeatureReductionSelectionProperties): Self = this.set("featureReduction", value.asInstanceOf[js.Any])
+    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     @scala.inline
-    def deleteFeatureReduction: Self = this.set("featureReduction", js.undefined)
+    def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setFieldsVarargs(value: FieldProperties*): Self = this.set("fields", js.Array(value :_*))
+    def setGeometryDefinition(value: ExtentProperties): Self = StObject.set(x, "geometryDefinition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFields(value: js.Array[FieldProperties]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    def setGeometryDefinitionUndefined: Self = StObject.set(x, "geometryDefinition", js.undefined)
     
     @scala.inline
-    def deleteFields: Self = this.set("fields", js.undefined)
+    def setGeometryType(value: point | polygon | polyline | multipoint): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryDefinition(value: ExtentProperties): Self = this.set("geometryDefinition", value.asInstanceOf[js.Any])
+    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
     @scala.inline
-    def deleteGeometryDefinition: Self = this.set("geometryDefinition", js.undefined)
+    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeometryType(value: point | polygon | polyline | multipoint): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
     @scala.inline
-    def deleteGeometryType: Self = this.set("geometryType", js.undefined)
+    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
     @scala.inline
-    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = this.set("labelingInfo", js.Array(value :_*))
+    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = this.set("labelingInfo", value.asInstanceOf[js.Any])
+    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
     @scala.inline
-    def deleteLabelingInfo: Self = this.set("labelingInfo", js.undefined)
+    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsVisible(value: Boolean): Self = this.set("labelsVisible", value.asInstanceOf[js.Any])
+    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     @scala.inline
-    def deleteLabelsVisible: Self = this.set("labelsVisible", js.undefined)
+    def setMaxReconnectionAttempts(value: Double): Self = StObject.set(x, "maxReconnectionAttempts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLegendEnabled(value: Boolean): Self = this.set("legendEnabled", value.asInstanceOf[js.Any])
+    def setMaxReconnectionAttemptsUndefined: Self = StObject.set(x, "maxReconnectionAttempts", js.undefined)
     
     @scala.inline
-    def deleteLegendEnabled: Self = this.set("legendEnabled", js.undefined)
+    def setMaxReconnectionInterval(value: Double): Self = StObject.set(x, "maxReconnectionInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxReconnectionAttempts(value: Double): Self = this.set("maxReconnectionAttempts", value.asInstanceOf[js.Any])
+    def setMaxReconnectionIntervalUndefined: Self = StObject.set(x, "maxReconnectionInterval", js.undefined)
     
     @scala.inline
-    def deleteMaxReconnectionAttempts: Self = this.set("maxReconnectionAttempts", js.undefined)
+    def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMaxReconnectionInterval(value: Double): Self = this.set("maxReconnectionInterval", value.asInstanceOf[js.Any])
+    def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
     
     @scala.inline
-    def deleteMaxReconnectionInterval: Self = this.set("maxReconnectionInterval", js.undefined)
+    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setObjectIdField(value: String): Self = this.set("objectIdField", value.asInstanceOf[js.Any])
+    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
     @scala.inline
-    def deleteObjectIdField: Self = this.set("objectIdField", js.undefined)
+    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupEnabled(value: Boolean): Self = this.set("popupEnabled", value.asInstanceOf[js.Any])
+    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
     @scala.inline
-    def deletePopupEnabled: Self = this.set("popupEnabled", js.undefined)
+    def setPurgeOptions(value: StreamLayerPurgeOptions): Self = StObject.set(x, "purgeOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = this.set("popupTemplate", value.asInstanceOf[js.Any])
+    def setPurgeOptionsUndefined: Self = StObject.set(x, "purgeOptions", js.undefined)
     
     @scala.inline
-    def deletePopupTemplate: Self = this.set("popupTemplate", js.undefined)
+    def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPurgeOptions(value: StreamLayerPurgeOptions): Self = this.set("purgeOptions", value.asInstanceOf[js.Any])
+    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
     @scala.inline
-    def deletePurgeOptions: Self = this.set("purgeOptions", js.undefined)
+    def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRenderer(value: RendererProperties): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
     
     @scala.inline
-    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenSizePerspectiveEnabled(value: Boolean): Self = this.set("screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
+    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
     @scala.inline
-    def deleteScreenSizePerspectiveEnabled: Self = this.set("screenSizePerspectiveEnabled", js.undefined)
+    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSourceJSON(value: js.Any): Self = this.set("sourceJSON", value.asInstanceOf[js.Any])
+    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
     @scala.inline
-    def deleteSourceJSON: Self = this.set("sourceJSON", js.undefined)
+    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = this.set("spatialReference", value.asInstanceOf[js.Any])
+    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def deleteSpatialReference: Self = this.set("spatialReference", js.undefined)
+    def setWebSocketUrl(value: String): Self = StObject.set(x, "webSocketUrl", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUrl: Self = this.set("url", js.undefined)
-    
-    @scala.inline
-    def setWebSocketUrl(value: String): Self = this.set("webSocketUrl", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebSocketUrl: Self = this.set("webSocketUrl", js.undefined)
+    def setWebSocketUrlUndefined: Self = StObject.set(x, "webSocketUrl", js.undefined)
   }
 }

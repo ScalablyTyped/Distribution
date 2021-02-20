@@ -2,13 +2,12 @@ package typings.itBatch
 
 import typings.std.AsyncIterable
 import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("it-batch/dist", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
   /**
     * Takes an (async) iterable that emits things and returns an async iterable that
@@ -19,10 +18,22 @@ object mod extends js.Object {
     * @param {number|string} [size=1]
     * @returns {AsyncIterable<T[]>}
     */
+  @JSImport("it-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: AsyncIterable[T]): AsyncIterable[js.Array[T]] = js.native
+  @JSImport("it-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: AsyncIterable[T], size: String): AsyncIterable[js.Array[T]] = js.native
+  @JSImport("it-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: AsyncIterable[T], size: Double): AsyncIterable[js.Array[T]] = js.native
+  @JSImport("it-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: Iterable[T]): AsyncIterable[js.Array[T]] = js.native
+  @JSImport("it-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: Iterable[T], size: String): AsyncIterable[js.Array[T]] = js.native
+  @JSImport("it-batch/dist", JSImport.Namespace)
+  @js.native
   def apply[T](source: Iterable[T], size: Double): AsyncIterable[js.Array[T]] = js.native
 }

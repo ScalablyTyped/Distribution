@@ -12,16 +12,16 @@ import typings.ionicCore.virtualScrollInterfaceMod.FooterHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.HeaderFn
 import typings.ionicCore.virtualScrollInterfaceMod.HeaderHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.ItemHeightFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/angular/directives/virtual-scroll/virtual-scroll", JSImport.Namespace)
-@js.native
-object virtualScrollMod extends js.Object {
+object virtualScrollMod {
   
+  @JSImport("@ionic/angular/directives/virtual-scroll/virtual-scroll", "IonVirtualScroll")
   @js.native
-  class IonVirtualScroll protected () extends js.Object {
+  class IonVirtualScroll protected () extends StObject {
     def this(z: NgZone, iterableDiffers: IterableDiffers, elementRef: ElementRef[_]) = this()
     
     /**

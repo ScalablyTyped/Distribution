@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Name extends js.Object {
+trait Name extends StObject {
   
   /** Output only. The display name formatted according to the locale specified by the viewer's account or the `Accept-Language` HTTP header. */
   var displayName: js.UndefOr[String] = js.native
@@ -61,108 +62,96 @@ object Name {
   }
   
   @scala.inline
-  implicit class NameOps[Self <: Name] (val x: Self) extends AnyVal {
+  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisplayNameLastFirst(value: String): Self = StObject.set(x, "displayNameLastFirst", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDisplayNameLastFirstUndefined: Self = StObject.set(x, "displayNameLastFirst", js.undefined)
     
     @scala.inline
-    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     @scala.inline
-    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisplayNameLastFirst(value: String): Self = this.set("displayNameLastFirst", value.asInstanceOf[js.Any])
+    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
     @scala.inline
-    def deleteDisplayNameLastFirst: Self = this.set("displayNameLastFirst", js.undefined)
+    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
     
     @scala.inline
-    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    def setHonorificPrefix(value: String): Self = StObject.set(x, "honorificPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    def setHonorificPrefixUndefined: Self = StObject.set(x, "honorificPrefix", js.undefined)
     
     @scala.inline
-    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    def setHonorificSuffix(value: String): Self = StObject.set(x, "honorificSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHonorificPrefix(value: String): Self = this.set("honorificPrefix", value.asInstanceOf[js.Any])
+    def setHonorificSuffixUndefined: Self = StObject.set(x, "honorificSuffix", js.undefined)
     
     @scala.inline
-    def deleteHonorificPrefix: Self = this.set("honorificPrefix", js.undefined)
+    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHonorificSuffix(value: String): Self = this.set("honorificSuffix", value.asInstanceOf[js.Any])
+    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     @scala.inline
-    def deleteHonorificSuffix: Self = this.set("honorificSuffix", js.undefined)
+    def setMiddleName(value: String): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetadata(value: FieldMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    def setMiddleNameUndefined: Self = StObject.set(x, "middleName", js.undefined)
     
     @scala.inline
-    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    def setPhoneticFamilyName(value: String): Self = StObject.set(x, "phoneticFamilyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
+    def setPhoneticFamilyNameUndefined: Self = StObject.set(x, "phoneticFamilyName", js.undefined)
     
     @scala.inline
-    def deleteMiddleName: Self = this.set("middleName", js.undefined)
+    def setPhoneticFullName(value: String): Self = StObject.set(x, "phoneticFullName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneticFamilyName(value: String): Self = this.set("phoneticFamilyName", value.asInstanceOf[js.Any])
+    def setPhoneticFullNameUndefined: Self = StObject.set(x, "phoneticFullName", js.undefined)
     
     @scala.inline
-    def deletePhoneticFamilyName: Self = this.set("phoneticFamilyName", js.undefined)
+    def setPhoneticGivenName(value: String): Self = StObject.set(x, "phoneticGivenName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneticFullName(value: String): Self = this.set("phoneticFullName", value.asInstanceOf[js.Any])
+    def setPhoneticGivenNameUndefined: Self = StObject.set(x, "phoneticGivenName", js.undefined)
     
     @scala.inline
-    def deletePhoneticFullName: Self = this.set("phoneticFullName", js.undefined)
+    def setPhoneticHonorificPrefix(value: String): Self = StObject.set(x, "phoneticHonorificPrefix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneticGivenName(value: String): Self = this.set("phoneticGivenName", value.asInstanceOf[js.Any])
+    def setPhoneticHonorificPrefixUndefined: Self = StObject.set(x, "phoneticHonorificPrefix", js.undefined)
     
     @scala.inline
-    def deletePhoneticGivenName: Self = this.set("phoneticGivenName", js.undefined)
+    def setPhoneticHonorificSuffix(value: String): Self = StObject.set(x, "phoneticHonorificSuffix", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneticHonorificPrefix(value: String): Self = this.set("phoneticHonorificPrefix", value.asInstanceOf[js.Any])
+    def setPhoneticHonorificSuffixUndefined: Self = StObject.set(x, "phoneticHonorificSuffix", js.undefined)
     
     @scala.inline
-    def deletePhoneticHonorificPrefix: Self = this.set("phoneticHonorificPrefix", js.undefined)
+    def setPhoneticMiddleName(value: String): Self = StObject.set(x, "phoneticMiddleName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneticHonorificSuffix(value: String): Self = this.set("phoneticHonorificSuffix", value.asInstanceOf[js.Any])
+    def setPhoneticMiddleNameUndefined: Self = StObject.set(x, "phoneticMiddleName", js.undefined)
     
     @scala.inline
-    def deletePhoneticHonorificSuffix: Self = this.set("phoneticHonorificSuffix", js.undefined)
+    def setUnstructuredName(value: String): Self = StObject.set(x, "unstructuredName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhoneticMiddleName(value: String): Self = this.set("phoneticMiddleName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePhoneticMiddleName: Self = this.set("phoneticMiddleName", js.undefined)
-    
-    @scala.inline
-    def setUnstructuredName(value: String): Self = this.set("unstructuredName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnstructuredName: Self = this.set("unstructuredName", js.undefined)
+    def setUnstructuredNameUndefined: Self = StObject.set(x, "unstructuredName", js.undefined)
   }
 }

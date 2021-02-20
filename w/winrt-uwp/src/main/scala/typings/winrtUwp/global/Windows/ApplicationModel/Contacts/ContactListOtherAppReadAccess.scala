@@ -1,5 +1,6 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies the level of contact read access granted to other apps. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactListOtherAppReadAccess")
 @js.native
-object ContactListOtherAppReadAccess extends js.Object {
+object ContactListOtherAppReadAccess extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[

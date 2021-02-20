@@ -9,14 +9,14 @@ import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.skeletonMod.Skeleton
 import typings.babylonjs.transformNodeMod.TransformNode
 import typings.babylonjs.typesMod.Nullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Bones/bone", JSImport.Namespace)
-@js.native
-object boneMod extends js.Object {
+object boneMod {
   
+  @JSImport("babylonjs/Bones/bone", "Bone")
   @js.native
   class Bone protected () extends Node {
     /**
@@ -597,13 +597,28 @@ object boneMod extends js.Object {
     def updateMatrix(matrix: Matrix, updateDifferenceMatrix: Boolean, updateLocalMatrix: Boolean): Unit = js.native
   }
   /* static members */
-  @js.native
-  object Bone extends js.Object {
+  object Bone {
     
-    var _tmpMats: js.Any = js.native
+    @JSImport("babylonjs/Bones/bone", "Bone")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var _tmpQuat: js.Any = js.native
+    @JSImport("babylonjs/Bones/bone", "Bone._tmpMats")
+    @js.native
+    def _tmpMats: js.Any = js.native
+    @scala.inline
+    def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
     
-    var _tmpVecs: js.Any = js.native
+    @JSImport("babylonjs/Bones/bone", "Bone._tmpQuat")
+    @js.native
+    def _tmpQuat: js.Any = js.native
+    @scala.inline
+    def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Bones/bone", "Bone._tmpVecs")
+    @js.native
+    def _tmpVecs: js.Any = js.native
+    @scala.inline
+    def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.std.Float32Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html)
   */
 @js.native
-trait externalRenderers extends js.Object {
+trait externalRenderers extends StObject {
   
   /**
     * Adds an external renderer to the view.

@@ -1,11 +1,12 @@
 package typings.ariClient.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AbsorbDTMF extends js.Object {
+trait AbsorbDTMF extends StObject {
   
   var absorbDTMF: js.UndefOr[Boolean] = js.native
   
@@ -26,45 +27,33 @@ object AbsorbDTMF {
   }
   
   @scala.inline
-  implicit class AbsorbDTMFOps[Self <: AbsorbDTMF] (val x: Self) extends AnyVal {
+  implicit class AbsorbDTMFMutableBuilder[Self <: AbsorbDTMF] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAbsorbDTMF(value: Boolean): Self = StObject.set(x, "absorbDTMF", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAbsorbDTMFUndefined: Self = StObject.set(x, "absorbDTMF", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBridgeId(value: String): Self = this.set("bridgeId", value.asInstanceOf[js.Any])
+    def setChannel(value: String | js.Array[String]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChannelVarargs(value: String*): Self = this.set("channel", js.Array(value :_*))
+    def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value :_*))
     
     @scala.inline
-    def setChannel(value: String | js.Array[String]): Self = this.set("channel", value.asInstanceOf[js.Any])
+    def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAbsorbDTMF(value: Boolean): Self = this.set("absorbDTMF", value.asInstanceOf[js.Any])
+    def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
     
     @scala.inline
-    def deleteAbsorbDTMF: Self = this.set("absorbDTMF", js.undefined)
+    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMute(value: Boolean): Self = this.set("mute", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMute: Self = this.set("mute", js.undefined)
-    
-    @scala.inline
-    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRole: Self = this.set("role", js.undefined)
+    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

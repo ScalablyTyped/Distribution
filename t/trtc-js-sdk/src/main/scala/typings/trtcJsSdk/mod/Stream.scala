@@ -5,12 +5,13 @@ import typings.std.MediaStreamTrack
 import typings.trtcJsSdk.anon.State
 import typings.trtcJsSdk.trtcJsSdkStrings.`player-state-changed`
 import typings.trtcJsSdk.trtcJsSdkStrings.`screen-sharing-stopped`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Stream extends js.Object {
+trait Stream extends StObject {
   
   /** 关闭音视频流,对于本地流，该方法会关闭摄像头并释放摄像头和麦克风访问权限。 */
   def close(): Unit = js.native

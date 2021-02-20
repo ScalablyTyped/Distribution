@@ -1,5 +1,6 @@
 package typings.bizcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.bizcharts.bizchartsStrings.y
   - typings.bizcharts.bizchartsStrings.cross
 */
-trait CrosshairsType extends js.Object
+trait CrosshairsType extends StObject
 object CrosshairsType {
   
   @scala.inline

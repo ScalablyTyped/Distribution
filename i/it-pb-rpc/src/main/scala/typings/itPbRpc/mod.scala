@@ -7,19 +7,22 @@ import typings.itPbRpc.anon.DecodeEncode
 import typings.itPbRpc.anon.Encode
 import typings.itPbRpc.anon.PartialOpts
 import typings.itPbRpc.anon.Read
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("it-pb-rpc", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
   
+  @JSImport("it-pb-rpc", JSImport.Namespace)
+  @js.native
   def apply(duplex: js.Any): WrappedDuplex = js.native
+  @JSImport("it-pb-rpc", JSImport.Namespace)
+  @js.native
   def apply(duplex: js.Any, opts: PartialOpts): WrappedDuplex = js.native
   
   @js.native
-  trait LengthDecoderFunction extends js.Object {
+  trait LengthDecoderFunction extends StObject {
     
     def apply(data: ^): Double = js.native
     def apply(data: Buffer): Double = js.native
@@ -28,7 +31,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait LengthEncoderFunction extends js.Object {
+  trait LengthEncoderFunction extends StObject {
     
     def apply(value: Double, target: Buffer, offset: Double): Double | Buffer = js.native
     
@@ -36,7 +39,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait Opts extends js.Object {
+  trait Opts extends StObject {
     
     def lengthDecoder(data: ^): Double = js.native
     //decoding opts
@@ -60,7 +63,7 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait WrappedDuplex extends js.Object {
+  trait WrappedDuplex extends StObject {
     
     def pb[Return](proto: DecodeEncode[Return]): Read[Return] = js.native
     

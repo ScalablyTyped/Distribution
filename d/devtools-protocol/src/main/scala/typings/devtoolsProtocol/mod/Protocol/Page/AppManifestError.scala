@@ -1,12 +1,13 @@
 package typings.devtoolsProtocol.mod.Protocol.Page
 
 import typings.devtoolsProtocol.mod.Protocol.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AppManifestError extends js.Object {
+trait AppManifestError extends StObject {
   
   /**
     * Error column.
@@ -37,30 +38,18 @@ object AppManifestError {
   }
   
   @scala.inline
-  implicit class AppManifestErrorOps[Self <: AppManifestError] (val x: Self) extends AnyVal {
+  implicit class AppManifestErrorMutableBuilder[Self <: AppManifestError] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColumn(value: integer): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCritical(value: integer): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLine(value: integer): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumn(value: integer): Self = this.set("column", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCritical(value: integer): Self = this.set("critical", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLine(value: integer): Self = this.set("line", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

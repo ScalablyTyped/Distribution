@@ -3,12 +3,13 @@ package typings.node.anon
 import typings.node.cryptoMod.KeyFormat
 import typings.node.nodeStrings.pkcs1
 import typings.node.nodeStrings.spki
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Format[PubF /* <: KeyFormat */] extends js.Object {
+trait Format[PubF /* <: KeyFormat */] extends StObject {
   
   var format: PubF = js.native
   
@@ -24,24 +25,12 @@ object Format {
   }
   
   @scala.inline
-  implicit class FormatOps[Self <: Format[_], PubF /* <: KeyFormat */] (val x: Self with Format[PubF]) extends AnyVal {
+  implicit class FormatMutableBuilder[Self <: Format[_], PubF /* <: KeyFormat */] (val x: Self with Format[PubF]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFormat(value: PubF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setFormat(value: PubF): Self = this.set("format", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: pkcs1 | spki): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setType(value: pkcs1 | spki): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

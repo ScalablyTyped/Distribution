@@ -1,5 +1,6 @@
 package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A request for removing the association between a deal and a creative.
   */
 @js.native
-trait SchemaRemoveDealAssociationRequest extends js.Object {
+trait SchemaRemoveDealAssociationRequest extends StObject {
   
   /**
     * The association between a creative and a deal that should be removed.
@@ -24,24 +25,12 @@ object SchemaRemoveDealAssociationRequest {
   }
   
   @scala.inline
-  implicit class SchemaRemoveDealAssociationRequestOps[Self <: SchemaRemoveDealAssociationRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaRemoveDealAssociationRequestMutableBuilder[Self <: SchemaRemoveDealAssociationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAssociation(value: SchemaCreativeDealAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAssociation(value: SchemaCreativeDealAssociation): Self = this.set("association", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAssociation: Self = this.set("association", js.undefined)
+    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
   }
 }

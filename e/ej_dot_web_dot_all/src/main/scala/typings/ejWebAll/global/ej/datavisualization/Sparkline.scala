@@ -3,6 +3,7 @@ package typings.ejWebAll.global.ej.datavisualization
 import typings.ejWebAll.JQuery
 import typings.ejWebAll.ej.Sparkline.Model
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +17,15 @@ class Sparkline protected ()
   def this(element: JQuery, options: Model) = this()
   def this(element: Element, options: Model) = this()
 }
-/* static members */
-@JSGlobal("ej.datavisualization.Sparkline")
-@js.native
-object Sparkline extends js.Object {
+object Sparkline {
   
-  var Locale: js.Any = js.native
-  
-  var fn: typings.ejWebAll.ej.datavisualization.Sparkline = js.native
-  
+  @JSGlobal("ej.datavisualization.Sparkline")
   @js.native
-  object FontStyle extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("ej.datavisualization.Sparkline.FontStyle")
+  @js.native
+  object FontStyle extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sparkline.FontStyle with Double] = js.native
@@ -36,8 +35,9 @@ object Sparkline extends js.Object {
     /* 0 */ val Normal: typings.ejWebAll.ej.datavisualization.Sparkline.FontStyle.Normal with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sparkline.FontWeight")
   @js.native
-  object FontWeight extends js.Object {
+  object FontWeight extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sparkline.FontWeight with Double] = js.native
@@ -49,8 +49,16 @@ object Sparkline extends js.Object {
     /* 0 */ val Regular: typings.ejWebAll.ej.datavisualization.Sparkline.FontWeight.Regular with Double = js.native
   }
   
+  /* static member */
+  @JSGlobal("ej.datavisualization.Sparkline.Locale")
   @js.native
-  object Theme extends js.Object {
+  def Locale: js.Any = js.native
+  @scala.inline
+  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("ej.datavisualization.Sparkline.Theme")
+  @js.native
+  object Theme extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sparkline.Theme with Double] = js.native
@@ -76,8 +84,9 @@ object Sparkline extends js.Object {
     /* 7 */ val SaffronDark: typings.ejWebAll.ej.datavisualization.Sparkline.Theme.SaffronDark with Double = js.native
   }
   
+  @JSGlobal("ej.datavisualization.Sparkline.Type")
   @js.native
-  object Type extends js.Object {
+  object Type extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.datavisualization.Sparkline.Type with Double] = js.native
@@ -92,4 +101,11 @@ object Sparkline extends js.Object {
     
     /* 4 */ val WinLoss: typings.ejWebAll.ej.datavisualization.Sparkline.Type.WinLoss with Double = js.native
   }
+  
+  /* static member */
+  @JSGlobal("ej.datavisualization.Sparkline.fn")
+  @js.native
+  def fn: typings.ejWebAll.ej.datavisualization.Sparkline = js.native
+  @scala.inline
+  def fn_=(x: typings.ejWebAll.ej.datavisualization.Sparkline): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -4,20 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.srcSummaryResolverMod.SummaryResolver
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/aot/static_symbol_resolver", JSImport.Namespace)
-@js.native
-object staticSymbolResolverMod extends js.Object {
+object staticSymbolResolverMod {
   
-  def unescapeIdentifier(identifier: String): String = js.native
-  
-  def unwrapResolvedMetadata(metadata: js.Any): js.Any = js.native
-  
+  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "ResolvedStaticSymbol")
   @js.native
-  class ResolvedStaticSymbol protected () extends js.Object {
+  class ResolvedStaticSymbol protected () extends StObject {
     def this(symbol: StaticSymbol, metadata: js.Any) = this()
     
     var metadata: js.Any = js.native
@@ -25,8 +21,9 @@ object staticSymbolResolverMod extends js.Object {
     var symbol: StaticSymbol = js.native
   }
   
+  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "StaticSymbolResolver")
   @js.native
-  class StaticSymbolResolver protected () extends js.Object {
+  class StaticSymbolResolver protected () extends StObject {
     def this(
       host: StaticSymbolResolverHost,
       staticSymbolCache: StaticSymbolCache,
@@ -145,8 +142,16 @@ object staticSymbolResolverMod extends js.Object {
     var symbolResourcePaths: js.Any = js.native
   }
   
+  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "unescapeIdentifier")
   @js.native
-  trait StaticSymbolResolverHost extends js.Object {
+  def unescapeIdentifier(identifier: String): String = js.native
+  
+  @JSImport("@angular/compiler/src/aot/static_symbol_resolver", "unwrapResolvedMetadata")
+  @js.native
+  def unwrapResolvedMetadata(metadata: js.Any): js.Any = js.native
+  
+  @js.native
+  trait StaticSymbolResolverHost extends StObject {
     
     /**
       * Return a ModuleMetadata for the given module.

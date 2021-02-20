@@ -1,11 +1,12 @@
 package typings.devextreme.mod.DevExpress
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Component extends js.Object {
+trait Component extends StObject {
   
   /**
     * [descr:Component.beginUpdate()]

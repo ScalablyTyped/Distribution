@@ -1,11 +1,12 @@
 package typings.apolloProtobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITokenizerHandle extends js.Object {
+trait ITokenizerHandle extends StObject {
   
   /** Gets the comment on the previous line or the line comment on the specified line, if any */
   def cmnt(): String | Null = js.native

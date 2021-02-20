@@ -4,16 +4,21 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.antvAttr.interfaceMod.AttributeCfg
 import typings.antvAttr.interfaceMod.CallbackType
 import typings.antvAttr.interfaceMod.Scale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@antv/attr/lib/attributes/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
+object baseMod {
+  
+  @JSImport("@antv/attr/lib/attributes/base", JSImport.Default)
+  @js.native
+  class default protected () extends Attribute {
+    def this(cfg: AttributeCfg) = this()
+  }
   
   @js.native
-  trait Attribute extends js.Object {
+  trait Attribute extends StObject {
     
     var _getAttributeValue: js.Any = js.native
     
@@ -74,11 +79,6 @@ object baseMod extends js.Object {
     var `type`: String = js.native
     
     var values: js.Array[_] = js.native
-  }
-  
-  @js.native
-  class default protected () extends Attribute {
-    def this(cfg: AttributeCfg) = this()
   }
   
   type AttributeConstructor = Instantiable1[/* cfg */ js.Any, Attribute]

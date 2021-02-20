@@ -1,6 +1,7 @@
 package typings.jupyterlabNbformat.mod
 
 import typings.luminoCoreutils.jsonMod.PartialJSONObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,33 +24,21 @@ object INotebookMetadata {
   }
   
   @scala.inline
-  implicit class INotebookMetadataOps[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
+  implicit class INotebookMetadataMutableBuilder[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setKernelspec(value: IKernelspecMetadata): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setKernelspecUndefined: Self = StObject.set(x, "kernelspec", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLanguage_info(value: ILanguageInfoMetadata): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOrig_nbformat(value: Double): Self = this.set("orig_nbformat", value.asInstanceOf[js.Any])
+    def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
     
     @scala.inline
-    def setKernelspec(value: IKernelspecMetadata): Self = this.set("kernelspec", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteKernelspec: Self = this.set("kernelspec", js.undefined)
-    
-    @scala.inline
-    def setLanguage_info(value: ILanguageInfoMetadata): Self = this.set("language_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLanguage_info: Self = this.set("language_info", js.undefined)
+    def setOrig_nbformat(value: Double): Self = StObject.set(x, "orig_nbformat", value.asInstanceOf[js.Any])
   }
 }

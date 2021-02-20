@@ -1,13 +1,14 @@
 package typings.bitwise
 
 import typings.bitwise.typesMod.Bit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/bits/reduce-xor", JSImport.Namespace)
-@js.native
-object bitsReduceXorMod extends js.Object {
+object bitsReduceXorMod {
   
+  @JSImport("bitwise/esm/bits/reduce-xor", JSImport.Default)
+  @js.native
   def default(bits: js.Array[Bit]): Bit = js.native
 }

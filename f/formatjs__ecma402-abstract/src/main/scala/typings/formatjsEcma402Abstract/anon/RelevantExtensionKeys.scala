@@ -5,12 +5,13 @@ import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormat
 import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatInternal
 import typings.std.Record
 import typings.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RelevantExtensionKeys extends js.Object {
+trait RelevantExtensionKeys extends StObject {
   
   var availableLocales: Set[String] = js.native
   
@@ -37,36 +38,24 @@ object RelevantExtensionKeys {
   }
   
   @scala.inline
-  implicit class RelevantExtensionKeysOps[Self <: RelevantExtensionKeys] (val x: Self) extends AnyVal {
+  implicit class RelevantExtensionKeysMutableBuilder[Self <: RelevantExtensionKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAvailableLocales(value: Set[String]): Self = StObject.set(x, "availableLocales", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setGetDefaultLocale(value: () => String): Self = StObject.set(x, "getDefaultLocale", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetInternalSlots(value: RelativeTimeFormat => RelativeTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setAvailableLocales(value: Set[String]): Self = this.set("availableLocales", value.asInstanceOf[js.Any])
+    def setLocaleData(value: Record[String, js.UndefOr[LocaleFieldsData]]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDefaultLocale(value: () => String): Self = this.set("getDefaultLocale", js.Any.fromFunction0(value))
+    def setRelevantExtensionKeys(value: js.Array[String]): Self = StObject.set(x, "relevantExtensionKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetInternalSlots(value: RelativeTimeFormat => RelativeTimeFormatInternal): Self = this.set("getInternalSlots", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setLocaleData(value: Record[String, js.UndefOr[LocaleFieldsData]]): Self = this.set("localeData", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRelevantExtensionKeysVarargs(value: String*): Self = this.set("relevantExtensionKeys", js.Array(value :_*))
-    
-    @scala.inline
-    def setRelevantExtensionKeys(value: js.Array[String]): Self = this.set("relevantExtensionKeys", value.asInstanceOf[js.Any])
+    def setRelevantExtensionKeysVarargs(value: String*): Self = StObject.set(x, "relevantExtensionKeys", js.Array(value :_*))
   }
 }

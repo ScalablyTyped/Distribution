@@ -1,5 +1,6 @@
 package typings.googleapis.surveysV2Mod.surveysV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Representation of an individual survey object.
   */
 @js.native
-trait SchemaSurvey extends js.Object {
+trait SchemaSurvey extends StObject {
   
   /**
     * Targeting-criteria message containing demographic information
@@ -78,90 +79,78 @@ object SchemaSurvey {
   }
   
   @scala.inline
-  implicit class SchemaSurveyOps[Self <: SchemaSurvey] (val x: Self) extends AnyVal {
+  implicit class SchemaSurveyMutableBuilder[Self <: SchemaSurvey] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAudience(value: SchemaSurveyAudience): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCost(value: SchemaSurveyCost): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAudience(value: SchemaSurveyAudience): Self = this.set("audience", value.asInstanceOf[js.Any])
+    def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
     
     @scala.inline
-    def deleteAudience: Self = this.set("audience", js.undefined)
+    def setCustomerData(value: String): Self = StObject.set(x, "customerData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCost(value: SchemaSurveyCost): Self = this.set("cost", value.asInstanceOf[js.Any])
+    def setCustomerDataUndefined: Self = StObject.set(x, "customerData", js.undefined)
     
     @scala.inline
-    def deleteCost: Self = this.set("cost", js.undefined)
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomerData(value: String): Self = this.set("customerData", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def deleteCustomerData: Self = this.set("customerData", js.undefined)
+    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
     @scala.inline
-    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    def setQuestions(value: js.Array[SchemaSurveyQuestion]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    def setQuestionsUndefined: Self = StObject.set(x, "questions", js.undefined)
     
     @scala.inline
-    def deleteOwners: Self = this.set("owners", js.undefined)
+    def setQuestionsVarargs(value: SchemaSurveyQuestion*): Self = StObject.set(x, "questions", js.Array(value :_*))
     
     @scala.inline
-    def setQuestionsVarargs(value: SchemaSurveyQuestion*): Self = this.set("questions", js.Array(value :_*))
+    def setRejectionReason(value: SchemaSurveyRejection): Self = StObject.set(x, "rejectionReason", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQuestions(value: js.Array[SchemaSurveyQuestion]): Self = this.set("questions", value.asInstanceOf[js.Any])
+    def setRejectionReasonUndefined: Self = StObject.set(x, "rejectionReason", js.undefined)
     
     @scala.inline
-    def deleteQuestions: Self = this.set("questions", js.undefined)
+    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRejectionReason(value: SchemaSurveyRejection): Self = this.set("rejectionReason", value.asInstanceOf[js.Any])
+    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     @scala.inline
-    def deleteRejectionReason: Self = this.set("rejectionReason", js.undefined)
+    def setSurveyUrlId(value: String): Self = StObject.set(x, "surveyUrlId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    def setSurveyUrlIdUndefined: Self = StObject.set(x, "surveyUrlId", js.undefined)
     
     @scala.inline
-    def deleteState: Self = this.set("state", js.undefined)
+    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSurveyUrlId(value: String): Self = this.set("surveyUrlId", value.asInstanceOf[js.Any])
+    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def deleteSurveyUrlId: Self = this.set("surveyUrlId", js.undefined)
+    def setWantedResponseCount(value: Double): Self = StObject.set(x, "wantedResponseCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTitle: Self = this.set("title", js.undefined)
-    
-    @scala.inline
-    def setWantedResponseCount(value: Double): Self = this.set("wantedResponseCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWantedResponseCount: Self = this.set("wantedResponseCount", js.undefined)
+    def setWantedResponseCountUndefined: Self = StObject.set(x, "wantedResponseCount", js.undefined)
   }
 }

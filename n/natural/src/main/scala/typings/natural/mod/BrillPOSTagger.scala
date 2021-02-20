@@ -1,11 +1,12 @@
 package typings.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrillPOSTagger extends js.Object {
+trait BrillPOSTagger extends StObject {
   
   var lexicon: Lexicon = js.native
   
@@ -22,27 +23,15 @@ object BrillPOSTagger {
   }
   
   @scala.inline
-  implicit class BrillPOSTaggerOps[Self <: BrillPOSTagger] (val x: Self) extends AnyVal {
+  implicit class BrillPOSTaggerMutableBuilder[Self <: BrillPOSTagger] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLexicon(value: Lexicon): Self = StObject.set(x, "lexicon", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRuleSet(value: RuleSet): Self = StObject.set(x, "ruleSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setLexicon(value: Lexicon): Self = this.set("lexicon", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRuleSet(value: RuleSet): Self = this.set("ruleSet", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTag(value: js.Array[String] => js.Array[js.Array[String]]): Self = this.set("tag", js.Any.fromFunction1(value))
+    def setTag(value: js.Array[String] => js.Array[js.Array[String]]): Self = StObject.set(x, "tag", js.Any.fromFunction1(value))
   }
 }

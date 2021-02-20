@@ -5,6 +5,7 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,30 +58,18 @@ object XPrintable {
   }
   
   @scala.inline
-  implicit class XPrintableOps[Self <: XPrintable] (val x: Self) extends AnyVal {
+  implicit class XPrintableMutableBuilder[Self <: XPrintable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPrint(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPrinter(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrinter(value: SafeArray[PropertyValue]): Self = this.set("Printer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = this.set("getPrinter", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setPrint(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("print", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setSetPrinter(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("setPrinter", js.Any.fromFunction1(value))
+    def setSetPrinter(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setPrinter", js.Any.fromFunction1(value))
   }
 }

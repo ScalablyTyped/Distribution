@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlScheduledMaintenance extends js.Object {
+trait SqlScheduledMaintenance extends StObject {
   
   var canDefer: js.UndefOr[Boolean] = js.native
   
@@ -24,36 +25,24 @@ object SqlScheduledMaintenance {
   }
   
   @scala.inline
-  implicit class SqlScheduledMaintenanceOps[Self <: SqlScheduledMaintenance] (val x: Self) extends AnyVal {
+  implicit class SqlScheduledMaintenanceMutableBuilder[Self <: SqlScheduledMaintenance] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCanDefer(value: Boolean): Self = StObject.set(x, "canDefer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCanDeferUndefined: Self = StObject.set(x, "canDefer", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCanReschedule(value: Boolean): Self = StObject.set(x, "canReschedule", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanDefer(value: Boolean): Self = this.set("canDefer", value.asInstanceOf[js.Any])
+    def setCanRescheduleUndefined: Self = StObject.set(x, "canReschedule", js.undefined)
     
     @scala.inline
-    def deleteCanDefer: Self = this.set("canDefer", js.undefined)
+    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanReschedule(value: Boolean): Self = this.set("canReschedule", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCanReschedule: Self = this.set("canReschedule", js.undefined)
-    
-    @scala.inline
-    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

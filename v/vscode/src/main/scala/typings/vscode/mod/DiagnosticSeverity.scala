@@ -1,15 +1,15 @@
 package typings.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DiagnosticSeverity extends js.Object
+sealed trait DiagnosticSeverity extends StObject
 @JSImport("vscode", "DiagnosticSeverity")
 @js.native
-object DiagnosticSeverity extends js.Object {
+object DiagnosticSeverity extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DiagnosticSeverity with Double] = js.native
@@ -19,8 +19,7 @@ object DiagnosticSeverity extends js.Object {
     */
   @js.native
   sealed trait Error extends DiagnosticSeverity
-  /* 0 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  /* 0 */ val Error: typings.vscode.mod.DiagnosticSeverity.Error with Double = js.native
   
   /**
     * Something to hint to a better way of doing it, like proposing
@@ -28,22 +27,19 @@ object DiagnosticSeverity extends js.Object {
     */
   @js.native
   sealed trait Hint extends DiagnosticSeverity
-  /* 3 */ @js.native
-  object Hint extends TopLevel[Hint with Double]
+  /* 3 */ val Hint: typings.vscode.mod.DiagnosticSeverity.Hint with Double = js.native
   
   /**
     * Something to inform about but not a problem.
     */
   @js.native
   sealed trait Information extends DiagnosticSeverity
-  /* 2 */ @js.native
-  object Information extends TopLevel[Information with Double]
+  /* 2 */ val Information: typings.vscode.mod.DiagnosticSeverity.Information with Double = js.native
   
   /**
     * Something suspicious but allowed.
     */
   @js.native
   sealed trait Warning extends DiagnosticSeverity
-  /* 1 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
+  /* 1 */ val Warning: typings.vscode.mod.DiagnosticSeverity.Warning with Double = js.native
 }

@@ -1,11 +1,12 @@
 package typings.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScanCodeSuccessRes extends js.Object {
+trait ScanCodeSuccessRes extends StObject {
   
   /**
     * 所扫码的字符集
@@ -36,42 +37,30 @@ object ScanCodeSuccessRes {
   }
   
   @scala.inline
-  implicit class ScanCodeSuccessResOps[Self <: ScanCodeSuccessRes] (val x: Self) extends AnyVal {
+  implicit class ScanCodeSuccessResMutableBuilder[Self <: ScanCodeSuccessRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCharSet(value: String): Self = this.set("charSet", value.asInstanceOf[js.Any])
+    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     @scala.inline
-    def deleteCharSet: Self = this.set("charSet", js.undefined)
+    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
     @scala.inline
-    def deletePath: Self = this.set("path", js.undefined)
+    def setScanType(value: String): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResult: Self = this.set("result", js.undefined)
-    
-    @scala.inline
-    def setScanType(value: String): Self = this.set("scanType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScanType: Self = this.set("scanType", js.undefined)
+    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
   }
 }

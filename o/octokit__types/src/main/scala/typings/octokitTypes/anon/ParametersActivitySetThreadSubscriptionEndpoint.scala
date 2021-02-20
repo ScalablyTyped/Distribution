@@ -4,12 +4,13 @@ import typings.octokitTypes.endpointsMod.ActivitySetThreadSubscriptionEndpoint
 import typings.octokitTypes.endpointsMod.ActivitySetThreadSubscriptionRequestOptions
 import typings.octokitTypes.endpointsMod.ActivitySetThreadSubscriptionResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParametersActivitySetThreadSubscriptionEndpoint extends js.Object {
+trait ParametersActivitySetThreadSubscriptionEndpoint extends StObject {
   
   var parameters: ActivitySetThreadSubscriptionEndpoint = js.native
   
@@ -30,27 +31,15 @@ object ParametersActivitySetThreadSubscriptionEndpoint {
   }
   
   @scala.inline
-  implicit class ParametersActivitySetThreadSubscriptionEndpointOps[Self <: ParametersActivitySetThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  implicit class ParametersActivitySetThreadSubscriptionEndpointMutableBuilder[Self <: ParametersActivitySetThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setParameters(value: ActivitySetThreadSubscriptionEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setRequest(value: ActivitySetThreadSubscriptionRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setParameters(value: ActivitySetThreadSubscriptionEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRequest(value: ActivitySetThreadSubscriptionRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivitySetThreadSubscriptionResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[ActivitySetThreadSubscriptionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -35,28 +35,36 @@ import typings.vexdb.vexdbStrings.rankings
 import typings.vexdb.vexdbStrings.season_rankings
 import typings.vexdb.vexdbStrings.skills
 import typings.vexdb.vexdbStrings.teams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vexdb/out/methods/live", JSImport.Namespace)
-@js.native
-object liveMod extends js.Object {
+object liveMod {
   
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default(endpoint: String, params: LiveRequestObject[RequestObject]): LiveEventEmitter[RequestObject, ResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_awards(endpoint: awards, params: LiveRequestObjectAwardsRe): LiveEventEmitter[AwardsRequestObject, AwardsResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_events(endpoint: events, params: LiveRequestObjectEventsRe): LiveEventEmitter[EventsRequestObject, EventsResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_matches(endpoint: matches, params: LiveRequestObjectMatchesR): LiveEventEmitter[MatchesRequestObject, MatchesResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_rankings(endpoint: rankings, params: LiveRequestObjectRankings): LiveEventEmitter[RankingsRequestObject, RankingsResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_seasonrankings(endpoint: season_rankings, params: LiveRequestObjectSeasonRa): LiveEventEmitter[SeasonRankingsRequestObject, SeasonRankingsResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_skills(endpoint: skills, params: LiveRequestObjectSkillsRe): LiveEventEmitter[SkillsRequestObject, SkillsResponseObject] = js.native
-  @JSName("default")
+  @JSImport("vexdb/out/methods/live", JSImport.Default)
+  @js.native
   def default_teams(endpoint: teams, params: LiveRequestObjectTeamsReq): LiveEventEmitter[TeamsRequestObject, TeamsResponseObject] = js.native
   
   @js.native

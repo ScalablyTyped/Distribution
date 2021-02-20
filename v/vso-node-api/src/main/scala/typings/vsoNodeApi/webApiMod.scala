@@ -27,29 +27,16 @@ import typings.vsoNodeApi.workApiMod.IWorkApi
 import typings.vsoNodeApi.workItemTrackingApiMod.IWorkItemTrackingApi
 import typings.vsoNodeApi.workItemTrackingProcessApiMod.IWorkItemTrackingProcessApi
 import typings.vsoNodeApi.workItemTrackingProcessDefinitionsApiMod.IWorkItemTrackingProcessDefinitionsApi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vso-node-api/WebApi", JSImport.Namespace)
-@js.native
-object webApiMod extends js.Object {
+object webApiMod {
   
-  def getBasicHandler(username: String, password: String): IRequestHandler = js.native
-  
-  def getBearerHandler(token: String): IRequestHandler = js.native
-  
-  def getHandlerFromToken(token: String): IRequestHandler = js.native
-  
-  def getNtlmHandler(username: String, password: String): IRequestHandler = js.native
-  def getNtlmHandler(username: String, password: String, workstation: js.UndefOr[scala.Nothing], domain: String): IRequestHandler = js.native
-  def getNtlmHandler(username: String, password: String, workstation: String): IRequestHandler = js.native
-  def getNtlmHandler(username: String, password: String, workstation: String, domain: String): IRequestHandler = js.native
-  
-  def getPersonalAccessTokenHandler(token: String): IRequestHandler = js.native
-  
+  @JSImport("vso-node-api/WebApi", "WebApi")
   @js.native
-  class WebApi protected () extends js.Object {
+  class WebApi protected () extends StObject {
     def this(defaultUrl: String, authHandler: IRequestHandler) = this()
     def this(defaultUrl: String, authHandler: IRequestHandler, options: IRequestOptions) = this()
     
@@ -188,15 +175,47 @@ object webApiMod extends js.Object {
     var vsoClient: VsoClient = js.native
   }
   /* static members */
-  @js.native
-  object WebApi extends js.Object {
+  object WebApi {
     
     /**
       *  Convenience factory to create with a bearer token.
       * @param defaultServerUrl default server url to use when creating new apis from factory methods
       * @param defaultAuthHandler default authentication credentials to use when creating new apis from factory methods
       */
+    @JSImport("vso-node-api/WebApi", "WebApi.createWithBearerToken")
+    @js.native
     def createWithBearerToken(defaultUrl: String, token: String): WebApi = js.native
+    @JSImport("vso-node-api/WebApi", "WebApi.createWithBearerToken")
+    @js.native
     def createWithBearerToken(defaultUrl: String, token: String, options: IRequestOptions): WebApi = js.native
   }
+  
+  @JSImport("vso-node-api/WebApi", "getBasicHandler")
+  @js.native
+  def getBasicHandler(username: String, password: String): IRequestHandler = js.native
+  
+  @JSImport("vso-node-api/WebApi", "getBearerHandler")
+  @js.native
+  def getBearerHandler(token: String): IRequestHandler = js.native
+  
+  @JSImport("vso-node-api/WebApi", "getHandlerFromToken")
+  @js.native
+  def getHandlerFromToken(token: String): IRequestHandler = js.native
+  
+  @JSImport("vso-node-api/WebApi", "getNtlmHandler")
+  @js.native
+  def getNtlmHandler(username: String, password: String): IRequestHandler = js.native
+  @JSImport("vso-node-api/WebApi", "getNtlmHandler")
+  @js.native
+  def getNtlmHandler(username: String, password: String, workstation: js.UndefOr[scala.Nothing], domain: String): IRequestHandler = js.native
+  @JSImport("vso-node-api/WebApi", "getNtlmHandler")
+  @js.native
+  def getNtlmHandler(username: String, password: String, workstation: String): IRequestHandler = js.native
+  @JSImport("vso-node-api/WebApi", "getNtlmHandler")
+  @js.native
+  def getNtlmHandler(username: String, password: String, workstation: String, domain: String): IRequestHandler = js.native
+  
+  @JSImport("vso-node-api/WebApi", "getPersonalAccessTokenHandler")
+  @js.native
+  def getPersonalAccessTokenHandler(token: String): IRequestHandler = js.native
 }

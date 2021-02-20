@@ -2,13 +2,12 @@ package typings.ngTable
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ngTable.filterComparatorMod.FilterComparator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ng-table/src/core/filtering/filterFunc", JSImport.Namespace)
-@js.native
-object filterFuncMod extends js.Object {
+object filterFuncMod {
   
   type IFilterFunc[T] = js.Function3[
     /* data */ js.Array[T], 

@@ -1,13 +1,15 @@
 package typings.materializeCss.anon
 
+import typings.materializeCss.M.Autocomplete
 import typings.materializeCss.M.AutocompleteData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.AutocompleteOptions> */
 @js.native
-trait PartialAutocompleteOption extends js.Object {
+trait PartialAutocompleteOption extends StObject {
   
   var data: js.UndefOr[AutocompleteData] = js.native
   
@@ -15,7 +17,7 @@ trait PartialAutocompleteOption extends js.Object {
   
   var minLength: js.UndefOr[Double] = js.native
   
-  var onAutocomplete: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* text */ String, Unit]] = js.native
+  var onAutocomplete: js.UndefOr[js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]] = js.native
   
   var sortFunction: js.UndefOr[js.Function3[/* a */ String, /* b */ String, /* inputText */ String, Double]] = js.native
 }
@@ -28,48 +30,36 @@ object PartialAutocompleteOption {
   }
   
   @scala.inline
-  implicit class PartialAutocompleteOptionOps[Self <: PartialAutocompleteOption] (val x: Self) extends AnyVal {
+  implicit class PartialAutocompleteOptionMutableBuilder[Self <: PartialAutocompleteOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setData(value: AutocompleteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setData(value: AutocompleteData): Self = this.set("data", value.asInstanceOf[js.Any])
+    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
     @scala.inline
-    def deleteLimit: Self = this.set("limit", js.undefined)
+    def setOnAutocomplete(value: js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]): Self = StObject.set(x, "onAutocomplete", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    def setOnAutocompleteUndefined: Self = StObject.set(x, "onAutocomplete", js.undefined)
     
     @scala.inline
-    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    def setSortFunction(value: (/* a */ String, /* b */ String, /* inputText */ String) => Double): Self = StObject.set(x, "sortFunction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setOnAutocomplete(value: js.ThisFunction1[PartialAutocompleteOption, /* text */ String, Unit]): Self = this.set("onAutocomplete", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnAutocomplete: Self = this.set("onAutocomplete", js.undefined)
-    
-    @scala.inline
-    def setSortFunction(value: (/* a */ String, /* b */ String, /* inputText */ String) => Double): Self = this.set("sortFunction", js.Any.fromFunction3(value))
-    
-    @scala.inline
-    def deleteSortFunction: Self = this.set("sortFunction", js.undefined)
+    def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
   }
 }

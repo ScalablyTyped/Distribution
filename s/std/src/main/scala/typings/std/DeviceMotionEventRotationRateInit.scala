@@ -1,11 +1,12 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeviceMotionEventRotationRateInit extends js.Object {
+trait DeviceMotionEventRotationRateInit extends StObject {
   
   var alpha: js.UndefOr[Double | Null] = js.native
   
@@ -22,45 +23,33 @@ object DeviceMotionEventRotationRateInit {
   }
   
   @scala.inline
-  implicit class DeviceMotionEventRotationRateInitOps[Self <: DeviceMotionEventRotationRateInit] (val x: Self) extends AnyVal {
+  implicit class DeviceMotionEventRotationRateInitMutableBuilder[Self <: DeviceMotionEventRotationRateInit] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlphaNull: Self = StObject.set(x, "alpha", null)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
     @scala.inline
-    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    def setBetaNull: Self = StObject.set(x, "beta", null)
     
     @scala.inline
-    def setAlphaNull: Self = this.set("alpha", null)
+    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
     @scala.inline
-    def setBeta(value: Double): Self = this.set("beta", value.asInstanceOf[js.Any])
+    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteBeta: Self = this.set("beta", js.undefined)
+    def setGammaNull: Self = StObject.set(x, "gamma", null)
     
     @scala.inline
-    def setBetaNull: Self = this.set("beta", null)
-    
-    @scala.inline
-    def setGamma(value: Double): Self = this.set("gamma", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGamma: Self = this.set("gamma", js.undefined)
-    
-    @scala.inline
-    def setGammaNull: Self = this.set("gamma", null)
+    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
   }
 }

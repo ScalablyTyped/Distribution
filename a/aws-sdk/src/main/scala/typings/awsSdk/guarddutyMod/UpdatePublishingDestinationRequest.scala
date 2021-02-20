@@ -1,11 +1,12 @@
 package typings.awsSdk.guarddutyMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UpdatePublishingDestinationRequest extends js.Object {
+trait UpdatePublishingDestinationRequest extends StObject {
   
   /**
     * The ID of the publishing destination to update.
@@ -31,30 +32,18 @@ object UpdatePublishingDestinationRequest {
   }
   
   @scala.inline
-  implicit class UpdatePublishingDestinationRequestOps[Self <: UpdatePublishingDestinationRequest] (val x: Self) extends AnyVal {
+  implicit class UpdatePublishingDestinationRequestMutableBuilder[Self <: UpdatePublishingDestinationRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationProperties(value: DestinationProperties): Self = StObject.set(x, "DestinationProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDestinationPropertiesUndefined: Self = StObject.set(x, "DestinationProperties", js.undefined)
     
     @scala.inline
-    def setDestinationId(value: String): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDestinationProperties(value: DestinationProperties): Self = this.set("DestinationProperties", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestinationProperties: Self = this.set("DestinationProperties", js.undefined)
+    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
   }
 }

@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlacePhotoRequest extends js.Object {
+trait PlacePhotoRequest extends StObject {
   
   /**
     * Specifies the maximum desired height or width, in pixels, of the image returned by the Place Photos service.
@@ -38,33 +39,21 @@ object PlacePhotoRequest {
   }
   
   @scala.inline
-  implicit class PlacePhotoRequestOps[Self <: PlacePhotoRequest] (val x: Self) extends AnyVal {
+  implicit class PlacePhotoRequestMutableBuilder[Self <: PlacePhotoRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setMaxheight(value: Double): Self = StObject.set(x, "maxheight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setMaxheightUndefined: Self = StObject.set(x, "maxheight", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMaxwidth(value: Double): Self = StObject.set(x, "maxwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPhotoreference(value: String): Self = this.set("photoreference", value.asInstanceOf[js.Any])
+    def setMaxwidthUndefined: Self = StObject.set(x, "maxwidth", js.undefined)
     
     @scala.inline
-    def setMaxheight(value: Double): Self = this.set("maxheight", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxheight: Self = this.set("maxheight", js.undefined)
-    
-    @scala.inline
-    def setMaxwidth(value: Double): Self = this.set("maxwidth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMaxwidth: Self = this.set("maxwidth", js.undefined)
+    def setPhotoreference(value: String): Self = StObject.set(x, "photoreference", value.asInstanceOf[js.Any])
   }
 }

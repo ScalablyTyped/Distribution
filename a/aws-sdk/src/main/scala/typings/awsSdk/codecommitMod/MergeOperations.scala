@@ -1,11 +1,12 @@
 package typings.awsSdk.codecommitMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MergeOperations extends js.Object {
+trait MergeOperations extends StObject {
   
   /**
     * The operation on a file in the destination of a merge or pull request.
@@ -26,30 +27,18 @@ object MergeOperations {
   }
   
   @scala.inline
-  implicit class MergeOperationsOps[Self <: MergeOperations] (val x: Self) extends AnyVal {
+  implicit class MergeOperationsMutableBuilder[Self <: MergeOperations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDestination(value: ChangeTypeEnum): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSource(value: ChangeTypeEnum): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDestination(value: ChangeTypeEnum): Self = this.set("destination", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDestination: Self = this.set("destination", js.undefined)
-    
-    @scala.inline
-    def setSource(value: ChangeTypeEnum): Self = this.set("source", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSource: Self = this.set("source", js.undefined)
+    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

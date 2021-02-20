@@ -4,14 +4,14 @@ import typings.ionicCore.componentsMod.global.HTMLIonSegmentElement
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/core/dist/types/components/menu-button/menu-button", JSImport.Namespace)
-@js.native
-object menuButtonMod extends js.Object {
+object menuButtonMod {
   
+  @JSImport("@ionic/core/dist/types/components/menu-button/menu-button", "MenuButton")
   @js.native
   class MenuButton ()
     extends ComponentInterface

@@ -1,12 +1,13 @@
 package typings.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The dimensions of a piece of text in the canvas, as created by the CanvasRenderingContext2D.measureText() method. */
 @js.native
-trait TextMetrics extends js.Object {
+trait TextMetrics extends StObject {
   
   /**
     * Returns the measurement described below.
@@ -90,54 +91,42 @@ object TextMetrics {
   }
   
   @scala.inline
-  implicit class TextMetricsOps[Self <: TextMetrics] (val x: Self) extends AnyVal {
+  implicit class TextMetricsMutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActualBoundingBoxAscent(value: Double): Self = StObject.set(x, "actualBoundingBoxAscent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActualBoundingBoxDescent(value: Double): Self = StObject.set(x, "actualBoundingBoxDescent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActualBoundingBoxLeft(value: Double): Self = StObject.set(x, "actualBoundingBoxLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualBoundingBoxAscent(value: Double): Self = this.set("actualBoundingBoxAscent", value.asInstanceOf[js.Any])
+    def setActualBoundingBoxRight(value: Double): Self = StObject.set(x, "actualBoundingBoxRight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualBoundingBoxDescent(value: Double): Self = this.set("actualBoundingBoxDescent", value.asInstanceOf[js.Any])
+    def setAlphabeticBaseline(value: Double): Self = StObject.set(x, "alphabeticBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualBoundingBoxLeft(value: Double): Self = this.set("actualBoundingBoxLeft", value.asInstanceOf[js.Any])
+    def setEmHeightAscent(value: Double): Self = StObject.set(x, "emHeightAscent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setActualBoundingBoxRight(value: Double): Self = this.set("actualBoundingBoxRight", value.asInstanceOf[js.Any])
+    def setEmHeightDescent(value: Double): Self = StObject.set(x, "emHeightDescent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlphabeticBaseline(value: Double): Self = this.set("alphabeticBaseline", value.asInstanceOf[js.Any])
+    def setFontBoundingBoxAscent(value: Double): Self = StObject.set(x, "fontBoundingBoxAscent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmHeightAscent(value: Double): Self = this.set("emHeightAscent", value.asInstanceOf[js.Any])
+    def setFontBoundingBoxDescent(value: Double): Self = StObject.set(x, "fontBoundingBoxDescent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEmHeightDescent(value: Double): Self = this.set("emHeightDescent", value.asInstanceOf[js.Any])
+    def setHangingBaseline(value: Double): Self = StObject.set(x, "hangingBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontBoundingBoxAscent(value: Double): Self = this.set("fontBoundingBoxAscent", value.asInstanceOf[js.Any])
+    def setIdeographicBaseline(value: Double): Self = StObject.set(x, "ideographicBaseline", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontBoundingBoxDescent(value: Double): Self = this.set("fontBoundingBoxDescent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setHangingBaseline(value: Double): Self = this.set("hangingBaseline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setIdeographicBaseline(value: Double): Self = this.set("ideographicBaseline", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

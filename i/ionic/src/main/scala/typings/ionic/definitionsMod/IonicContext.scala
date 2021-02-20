@@ -1,11 +1,12 @@
 package typings.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IonicContext extends js.Object {
+trait IonicContext extends StObject {
   
   val binPath: String = js.native
   
@@ -24,30 +25,18 @@ object IonicContext {
   }
   
   @scala.inline
-  implicit class IonicContextOps[Self <: IonicContext] (val x: Self) extends AnyVal {
+  implicit class IonicContextMutableBuilder[Self <: IonicContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBinPath(value: String): Self = StObject.set(x, "binPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLibPath(value: String): Self = StObject.set(x, "libPath", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinPath(value: String): Self = this.set("binPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setExecPath(value: String): Self = this.set("execPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLibPath(value: String): Self = this.set("libPath", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

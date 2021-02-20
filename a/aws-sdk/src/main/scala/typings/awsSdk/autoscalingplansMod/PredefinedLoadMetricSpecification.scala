@@ -1,11 +1,12 @@
 package typings.awsSdk.autoscalingplansMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PredefinedLoadMetricSpecification extends js.Object {
+trait PredefinedLoadMetricSpecification extends StObject {
   
   /**
     * The metric type.
@@ -26,27 +27,15 @@ object PredefinedLoadMetricSpecification {
   }
   
   @scala.inline
-  implicit class PredefinedLoadMetricSpecificationOps[Self <: PredefinedLoadMetricSpecification] (val x: Self) extends AnyVal {
+  implicit class PredefinedLoadMetricSpecificationMutableBuilder[Self <: PredefinedLoadMetricSpecification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPredefinedLoadMetricType(value: LoadMetricType): Self = StObject.set(x, "PredefinedLoadMetricType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResourceLabel(value: ResourceLabel): Self = StObject.set(x, "ResourceLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPredefinedLoadMetricType(value: LoadMetricType): Self = this.set("PredefinedLoadMetricType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setResourceLabel(value: ResourceLabel): Self = this.set("ResourceLabel", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteResourceLabel: Self = this.set("ResourceLabel", js.undefined)
+    def setResourceLabelUndefined: Self = StObject.set(x, "ResourceLabel", js.undefined)
   }
 }

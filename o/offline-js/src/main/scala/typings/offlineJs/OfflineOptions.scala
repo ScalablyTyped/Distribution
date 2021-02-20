@@ -1,12 +1,13 @@
 package typings.offlineJs
 
 import typings.offlineJs.anon.Delay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OfflineOptions extends js.Object {
+trait OfflineOptions extends StObject {
   
   // TODO Should these types be `boolean|Function`?
   // The project documentation is not clear here.
@@ -31,51 +32,39 @@ object OfflineOptions {
   }
   
   @scala.inline
-  implicit class OfflineOptionsOps[Self <: OfflineOptions] (val x: Self) extends AnyVal {
+  implicit class OfflineOptionsMutableBuilder[Self <: OfflineOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCheckOnLoad(value: Boolean): Self = StObject.set(x, "checkOnLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCheckOnLoadUndefined: Self = StObject.set(x, "checkOnLoad", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setChecks(value: OfflineChecks): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReconnect(value: Delay): Self = this.set("reconnect", value.asInstanceOf[js.Any])
+    def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
     
     @scala.inline
-    def setCheckOnLoad(value: Boolean): Self = this.set("checkOnLoad", value.asInstanceOf[js.Any])
+    def setGame(value: Boolean): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCheckOnLoad: Self = this.set("checkOnLoad", js.undefined)
+    def setGameUndefined: Self = StObject.set(x, "game", js.undefined)
     
     @scala.inline
-    def setChecks(value: OfflineChecks): Self = this.set("checks", value.asInstanceOf[js.Any])
+    def setInterceptRequests(value: Boolean): Self = StObject.set(x, "interceptRequests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteChecks: Self = this.set("checks", js.undefined)
+    def setInterceptRequestsUndefined: Self = StObject.set(x, "interceptRequests", js.undefined)
     
     @scala.inline
-    def setGame(value: Boolean): Self = this.set("game", value.asInstanceOf[js.Any])
+    def setReconnect(value: Delay): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteGame: Self = this.set("game", js.undefined)
+    def setRequests(value: Boolean): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInterceptRequests(value: Boolean): Self = this.set("interceptRequests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInterceptRequests: Self = this.set("interceptRequests", js.undefined)
-    
-    @scala.inline
-    def setRequests(value: Boolean): Self = this.set("requests", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRequests: Self = this.set("requests", js.undefined)
+    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
   }
 }

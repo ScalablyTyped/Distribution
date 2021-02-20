@@ -1,5 +1,6 @@
 package typings.microsoftAjax.global.Sys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Observer ()
   extends typings.microsoftAjax.Sys.Observer
-/* static members */
-@JSGlobal("Sys.Observer")
-@js.native
-object Observer extends js.Object {
+object Observer {
   
   //#region Methods
   /**
@@ -28,6 +26,9 @@ object Observer extends js.Object {
     * @param item
     *           The item to add.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.add")
+  @js.native
   def add(target: js.Array[_], item: js.Any): Unit = js.native
   
   /**
@@ -35,6 +36,9 @@ object Observer extends js.Object {
     * @param target The array to which an event handler will be added.
     * @param handler The event handler.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.addCollectionChanged")
+  @js.native
   def addCollectionChanged(target: js.Any, handler: js.Function): Unit = js.native
   
   /**
@@ -42,6 +46,9 @@ object Observer extends js.Object {
     * @param eventName A string that contains the event name.
     * @param handler The added function.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.addEventHandler")
+  @js.native
   def addEventHandler(target: js.Any, eventName: String, handler: js.Function): Unit = js.native
   
   /**
@@ -49,6 +56,9 @@ object Observer extends js.Object {
     * @param target The object to observe.
     * @param handler The function handler to add.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.addPropertyChanged")
+  @js.native
   def addPropertyChanged(target: js.Any, handler: js.Function): Unit = js.native
   
   /**
@@ -56,24 +66,36 @@ object Observer extends js.Object {
     * @param target The array to which items will be added.
     * @param items The array of items to add.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.addRange")
+  @js.native
   def addRange(target: js.Array[_], items: js.Array[_]): Unit = js.native
   
   /**
     * Begins the process of updating the target object.
     * @param target The object to update.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.beginUpdate")
+  @js.native
   def beginUpdate(target: js.Any): Unit = js.native
   
   /**
     * Clears the array of its elements in an observable manner.
     * @param target The array to clear.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.clear")
+  @js.native
   def clear(target: js.Any): Unit = js.native
   
   /**
     * Ends the process of updating the target object.
     * @param target The object being updated.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.endUpdate")
+  @js.native
   def endUpdate(target: js.Any): Unit = js.native
   
   /**
@@ -82,6 +104,9 @@ object Observer extends js.Object {
     * @param index A number that represents the index where the item will be inserted.
     * @param item The item to insert.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.insert")
+  @js.native
   def insert(target: js.Any, index: Double, item: js.Any): Unit = js.native
   
   //#endregion
@@ -91,6 +116,9 @@ object Observer extends js.Object {
     * @param target The target object to update.
     * @return true if given target argument is currently updating; otherwise false.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.isUpdating")
+  @js.native
   def isUpdating(target: js.Any): Boolean = js.native
   
   /**
@@ -99,6 +127,9 @@ object Observer extends js.Object {
     * @return The observable object.
     * @see {@link http://msdn.microsoft.com/en-us/library/dd393633(v=vs.100).aspx}
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.makeObservable")
+  @js.native
   def makeObservable(target: js.Any): js.Any = js.native
   
   /**
@@ -106,6 +137,9 @@ object Observer extends js.Object {
     * @param target The collection to which an event is raised.
     * @param changes A Sys.CollectionChange object that contains the list of changes that were performed on the collection since the last event.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.raiseCollectionChanged")
+  @js.native
   def raiseCollectionChanged(target: js.Array[_], changes: typings.microsoftAjax.Sys.CollectionChange): Unit = js.native
   
   /**
@@ -114,6 +148,9 @@ object Observer extends js.Object {
     * @param eventName A string that contains the event name.
     * @param eventArgs A Sys.EventArgs object used to pass event argument information.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.raiseEvent")
+  @js.native
   def raiseEvent(target: js.Any, eventName: String, eventArgs: typings.microsoftAjax.Sys.EventArgs): Unit = js.native
   
   /**
@@ -121,6 +158,9 @@ object Observer extends js.Object {
     * @param target The object to which an event is raised.
     * @param propertyName The name of the property that changed.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.raisePropertyChanged")
+  @js.native
   def raisePropertyChanged(target: js.Any, propertyName: String): Unit = js.native
   
   /**
@@ -129,6 +169,9 @@ object Observer extends js.Object {
     * @param item The item to remove.
     * @return true if the item is found in the array. Otherwise false.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.remove")
+  @js.native
   def remove(target: js.Array[_], item: js.Any): Boolean = js.native
   
   /**
@@ -136,6 +179,9 @@ object Observer extends js.Object {
     * @param target The array to which an item is removed.
     * @param index A number that represents the index of the item to remove.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.removeAt")
+  @js.native
   def removeAt(target: js.Array[_], index: Double): Unit = js.native
   
   /**
@@ -143,6 +189,9 @@ object Observer extends js.Object {
     * @param target The array from which the collectionChanged event handler is removed.
     * @param handler The function to remove.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.removeCollectionChanged")
+  @js.native
   def removeCollectionChanged(target: js.Any, handler: js.Function): Unit = js.native
   
   /**
@@ -150,6 +199,9 @@ object Observer extends js.Object {
     * @param target The object to observe.
     * @param handler The event handler to remove.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.removeEventHandler")
+  @js.native
   def removeEventHandler(target: js.Any, handler: js.Function): Unit = js.native
   
   /**
@@ -159,5 +211,8 @@ object Observer extends js.Object {
     * @param propertyName A string that contains the name of the property or field to set.
     * @param value The value to set.
     */
+  /* static member */
+  @JSGlobal("Sys.Observer.setValue")
+  @js.native
   def setValue(target: js.Any, propertyName: String, value: js.Any): Unit = js.native
 }

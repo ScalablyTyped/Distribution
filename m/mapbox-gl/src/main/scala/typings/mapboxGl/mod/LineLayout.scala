@@ -5,6 +5,7 @@ import typings.mapboxGl.mapboxGlStrings.butt
 import typings.mapboxGl.mapboxGlStrings.miter
 import typings.mapboxGl.mapboxGlStrings.round
 import typings.mapboxGl.mapboxGlStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,48 +34,36 @@ object LineLayout {
   }
   
   @scala.inline
-  implicit class LineLayoutOps[Self <: LineLayout] (val x: Self) extends AnyVal {
+  implicit class LineLayoutMutableBuilder[Self <: LineLayout] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def `setLine-cap`(value: butt | round | square): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def `setLine-capUndefined`: Self = StObject.set(x, "line-cap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def `setLine-join`(value: bevel | round | miter | Expression): Self = StObject.set(x, "line-join", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-cap`(value: butt | round | square): Self = this.set("line-cap", value.asInstanceOf[js.Any])
+    def `setLine-joinUndefined`: Self = StObject.set(x, "line-join", js.undefined)
     
     @scala.inline
-    def `deleteLine-cap`: Self = this.set("line-cap", js.undefined)
+    def `setLine-miter-limit`(value: Double | Expression): Self = StObject.set(x, "line-miter-limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-join`(value: bevel | round | miter | Expression): Self = this.set("line-join", value.asInstanceOf[js.Any])
+    def `setLine-miter-limitUndefined`: Self = StObject.set(x, "line-miter-limit", js.undefined)
     
     @scala.inline
-    def `deleteLine-join`: Self = this.set("line-join", js.undefined)
+    def `setLine-round-limit`(value: Double | Expression): Self = StObject.set(x, "line-round-limit", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-miter-limit`(value: Double | Expression): Self = this.set("line-miter-limit", value.asInstanceOf[js.Any])
+    def `setLine-round-limitUndefined`: Self = StObject.set(x, "line-round-limit", js.undefined)
     
     @scala.inline
-    def `deleteLine-miter-limit`: Self = this.set("line-miter-limit", js.undefined)
+    def `setLine-sort-key`(value: Double | Expression): Self = StObject.set(x, "line-sort-key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setLine-round-limit`(value: Double | Expression): Self = this.set("line-round-limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteLine-round-limit`: Self = this.set("line-round-limit", js.undefined)
-    
-    @scala.inline
-    def `setLine-sort-key`(value: Double | Expression): Self = this.set("line-sort-key", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def `deleteLine-sort-key`: Self = this.set("line-sort-key", js.undefined)
+    def `setLine-sort-keyUndefined`: Self = StObject.set(x, "line-sort-key", js.undefined)
   }
 }

@@ -2,6 +2,7 @@ package typings.jqueryFileupload
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,27 +36,15 @@ object JQueryFileUploadChunkObject {
   }
   
   @scala.inline
-  implicit class JQueryFileUploadChunkObjectOps[Self <: JQueryFileUploadChunkObject] (val x: Self) extends AnyVal {
+  implicit class JQueryFileUploadChunkObjectMutableBuilder[Self <: JQueryFileUploadChunkObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBlob(value: js.Any): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBlob(value: js.Any): Self = this.set("blob", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setContentRange(value: String): Self = this.set("contentRange", value.asInstanceOf[js.Any])
+    def setContentRange(value: String): Self = StObject.set(x, "contentRange", value.asInstanceOf[js.Any])
   }
 }

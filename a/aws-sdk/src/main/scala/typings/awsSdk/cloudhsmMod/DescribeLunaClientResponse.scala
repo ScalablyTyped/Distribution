@@ -1,11 +1,12 @@
 package typings.awsSdk.cloudhsmMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeLunaClientResponse extends js.Object {
+trait DescribeLunaClientResponse extends StObject {
   
   /**
     * The certificate installed on the HSMs used by this client.
@@ -41,48 +42,36 @@ object DescribeLunaClientResponse {
   }
   
   @scala.inline
-  implicit class DescribeLunaClientResponseOps[Self <: DescribeLunaClientResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeLunaClientResponseMutableBuilder[Self <: DescribeLunaClientResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificateFingerprint(value: CertificateFingerprint): Self = StObject.set(x, "CertificateFingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateFingerprintUndefined: Self = StObject.set(x, "CertificateFingerprint", js.undefined)
     
     @scala.inline
-    def setCertificate(value: Certificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
     @scala.inline
-    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateFingerprint(value: CertificateFingerprint): Self = this.set("CertificateFingerprint", value.asInstanceOf[js.Any])
+    def setClientArnUndefined: Self = StObject.set(x, "ClientArn", js.undefined)
     
     @scala.inline
-    def deleteCertificateFingerprint: Self = this.set("CertificateFingerprint", js.undefined)
+    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientArn(value: ClientArn): Self = this.set("ClientArn", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
     @scala.inline
-    def deleteClientArn: Self = this.set("ClientArn", js.undefined)
+    def setLastModifiedTimestamp(value: Timestamp): Self = StObject.set(x, "LastModifiedTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Label): Self = this.set("Label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("Label", js.undefined)
-    
-    @scala.inline
-    def setLastModifiedTimestamp(value: Timestamp): Self = this.set("LastModifiedTimestamp", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastModifiedTimestamp: Self = this.set("LastModifiedTimestamp", js.undefined)
+    def setLastModifiedTimestampUndefined: Self = StObject.set(x, "LastModifiedTimestamp", js.undefined)
   }
 }

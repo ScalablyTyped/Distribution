@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientStorage.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entity extends js.Object {
+trait Entity extends StObject {
   
   /** The entity, in the form user-userId. */
   var entity: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object Entity {
   }
   
   @scala.inline
-  implicit class EntityOps[Self <: Entity] (val x: Self) extends AnyVal {
+  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
     @scala.inline
-    def setEntity(value: String): Self = this.set("entity", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntity: Self = this.set("entity", js.undefined)
-    
-    @scala.inline
-    def setEntityId(value: String): Self = this.set("entityId", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteEntityId: Self = this.set("entityId", js.undefined)
+    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
   }
 }

@@ -5,12 +5,13 @@ import typings.maximMazurokGapiClientFitness.anon.CurrentTimeMillis
 import typings.maximMazurokGapiClientFitness.anon.DataSourceId
 import typings.maximMazurokGapiClientFitness.anon.DatasetId
 import typings.maximMazurokGapiClientFitness.anon.Fields
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DatasetsResource extends js.Object {
+trait DatasetsResource extends StObject {
   
   /**
     * Performs an inclusive delete of all data points whose start and end times have any overlap with the time range specified by the dataset ID. For most data types, the entire data

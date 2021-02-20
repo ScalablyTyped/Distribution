@@ -2,12 +2,13 @@ package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Access
 import typings.hapiHapi.mod.Util.HTTP_METHODS_PARTIAL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RequestRoute extends js.Object {
+trait RequestRoute extends StObject {
   
   var auth: Access = js.native
   
@@ -45,45 +46,33 @@ object RequestRoute {
   }
   
   @scala.inline
-  implicit class RequestRouteOps[Self <: RequestRoute] (val x: Self) extends AnyVal {
+  implicit class RequestRouteMutableBuilder[Self <: RequestRoute] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAuth(value: Access): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMethod(value: HTTP_METHODS_PARTIAL): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAuth(value: Access): Self = this.set("auth", value.asInstanceOf[js.Any])
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    def setRealm(value: ServerRealm): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethod(value: HTTP_METHODS_PARTIAL): Self = this.set("method", value.asInstanceOf[js.Any])
+    def setSettings(value: RouteSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRealm(value: ServerRealm): Self = this.set("realm", value.asInstanceOf[js.Any])
+    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
     @scala.inline
-    def setSettings(value: RouteSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setVhostVarargs(value: String*): Self = this.set("vhost", js.Array(value :_*))
-    
-    @scala.inline
-    def setVhost(value: String | js.Array[String]): Self = this.set("vhost", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVhost: Self = this.set("vhost", js.undefined)
+    def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
   }
 }

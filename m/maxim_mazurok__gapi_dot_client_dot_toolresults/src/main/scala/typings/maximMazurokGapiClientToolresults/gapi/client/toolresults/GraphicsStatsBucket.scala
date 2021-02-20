@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GraphicsStatsBucket extends js.Object {
+trait GraphicsStatsBucket extends StObject {
   
   /** Number of frames in the bucket. */
   var frameCount: js.UndefOr[String] = js.native
@@ -22,30 +23,18 @@ object GraphicsStatsBucket {
   }
   
   @scala.inline
-  implicit class GraphicsStatsBucketOps[Self <: GraphicsStatsBucket] (val x: Self) extends AnyVal {
+  implicit class GraphicsStatsBucketMutableBuilder[Self <: GraphicsStatsBucket] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFrameCount(value: String): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFrameCountUndefined: Self = StObject.set(x, "frameCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setRenderMillis(value: String): Self = StObject.set(x, "renderMillis", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFrameCount(value: String): Self = this.set("frameCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFrameCount: Self = this.set("frameCount", js.undefined)
-    
-    @scala.inline
-    def setRenderMillis(value: String): Self = this.set("renderMillis", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRenderMillis: Self = this.set("renderMillis", js.undefined)
+    def setRenderMillisUndefined: Self = StObject.set(x, "renderMillis", js.undefined)
   }
 }

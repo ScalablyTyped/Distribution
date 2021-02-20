@@ -1,12 +1,13 @@
 package typings.three.anon
 
 import typings.three.uniformsLibMod.IUniform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AoMap extends js.Object {
+trait AoMap extends StObject {
   
   var aoMap: IUniform = js.native
   
@@ -21,24 +22,12 @@ object AoMap {
   }
   
   @scala.inline
-  implicit class AoMapOps[Self <: AoMap] (val x: Self) extends AnyVal {
+  implicit class AoMapMutableBuilder[Self <: AoMap] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAoMap(value: IUniform): Self = StObject.set(x, "aoMap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setAoMap(value: IUniform): Self = this.set("aoMap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setAoMapIntensity(value: IUniform): Self = this.set("aoMapIntensity", value.asInstanceOf[js.Any])
+    def setAoMapIntensity(value: IUniform): Self = StObject.set(x, "aoMapIntensity", value.asInstanceOf[js.Any])
   }
 }

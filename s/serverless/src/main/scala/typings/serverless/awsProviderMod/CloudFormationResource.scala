@@ -1,12 +1,13 @@
 package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CloudFormationResource extends js.Object {
+trait CloudFormationResource extends StObject {
   
   var DeletionPolicy: js.UndefOr[String] = js.native
   
@@ -25,36 +26,24 @@ object CloudFormationResource {
   }
   
   @scala.inline
-  implicit class CloudFormationResourceOps[Self <: CloudFormationResource] (val x: Self) extends AnyVal {
+  implicit class CloudFormationResourceMutableBuilder[Self <: CloudFormationResource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeletionPolicy(value: String): Self = StObject.set(x, "DeletionPolicy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeletionPolicyUndefined: Self = StObject.set(x, "DeletionPolicy", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDependsOn(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "DependsOn", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    def setDependsOnUndefined: Self = StObject.set(x, "DependsOn", js.undefined)
     
     @scala.inline
-    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeletionPolicy(value: String): Self = this.set("DeletionPolicy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDeletionPolicy: Self = this.set("DeletionPolicy", js.undefined)
-    
-    @scala.inline
-    def setDependsOn(value: String | StringDictionary[js.Any]): Self = this.set("DependsOn", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteDependsOn: Self = this.set("DependsOn", js.undefined)
+    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

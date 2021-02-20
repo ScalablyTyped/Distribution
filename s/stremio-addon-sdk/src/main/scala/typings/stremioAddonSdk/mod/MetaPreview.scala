@@ -3,6 +3,7 @@ package typings.stremioAddonSdk.mod
 import typings.stremioAddonSdk.stremioAddonSdkStrings.landscape
 import typings.stremioAddonSdk.stremioAddonSdkStrings.regular
 import typings.stremioAddonSdk.stremioAddonSdkStrings.square
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Catalogs are displayed on the Stremio's Board, Discover and Search.
   */
 @js.native
-trait MetaPreview extends js.Object {
+trait MetaPreview extends StObject {
   
   /**
     * The background shown on the stremio detail page.
@@ -83,57 +84,45 @@ object MetaPreview {
   }
   
   @scala.inline
-  implicit class MetaPreviewOps[Self <: MetaPreview] (val x: Self) extends AnyVal {
+  implicit class MetaPreviewMutableBuilder[Self <: MetaPreview] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: ContentType): Self = this.set("type", value.asInstanceOf[js.Any])
+    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
     @scala.inline
-    def deleteBackground: Self = this.set("background", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDescription: Self = this.set("description", js.undefined)
+    def setPosterShape(value: square | regular | landscape): Self = StObject.set(x, "posterShape", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLogo(value: String): Self = this.set("logo", value.asInstanceOf[js.Any])
+    def setPosterShapeUndefined: Self = StObject.set(x, "posterShape", js.undefined)
     
     @scala.inline
-    def deleteLogo: Self = this.set("logo", js.undefined)
+    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
     @scala.inline
-    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePoster: Self = this.set("poster", js.undefined)
-    
-    @scala.inline
-    def setPosterShape(value: square | regular | landscape): Self = this.set("posterShape", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePosterShape: Self = this.set("posterShape", js.undefined)
+    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

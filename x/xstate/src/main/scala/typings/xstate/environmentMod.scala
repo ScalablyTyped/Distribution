@@ -1,12 +1,13 @@
 package typings.xstate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xstate/lib/environment", JSImport.Namespace)
-@js.native
-object environmentMod extends js.Object {
+object environmentMod {
   
+  @JSImport("xstate/lib/environment", "IS_PRODUCTION")
+  @js.native
   val IS_PRODUCTION: Boolean = js.native
 }

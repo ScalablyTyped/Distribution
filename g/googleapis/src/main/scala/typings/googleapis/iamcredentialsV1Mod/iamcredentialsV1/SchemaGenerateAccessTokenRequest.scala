@@ -1,11 +1,12 @@
 package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchemaGenerateAccessTokenRequest extends js.Object {
+trait SchemaGenerateAccessTokenRequest extends StObject {
   
   /**
     * The sequence of service accounts in a delegation chain. Each service
@@ -44,42 +45,30 @@ object SchemaGenerateAccessTokenRequest {
   }
   
   @scala.inline
-  implicit class SchemaGenerateAccessTokenRequestOps[Self <: SchemaGenerateAccessTokenRequest] (val x: Self) extends AnyVal {
+  implicit class SchemaGenerateAccessTokenRequestMutableBuilder[Self <: SchemaGenerateAccessTokenRequest] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
     
     @scala.inline
-    def setDelegatesVarargs(value: String*): Self = this.set("delegates", js.Array(value :_*))
+    def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDelegates(value: js.Array[String]): Self = this.set("delegates", value.asInstanceOf[js.Any])
+    def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
     
     @scala.inline
-    def deleteDelegates: Self = this.set("delegates", js.undefined)
+    def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLifetime(value: String): Self = this.set("lifetime", value.asInstanceOf[js.Any])
+    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     @scala.inline
-    def deleteLifetime: Self = this.set("lifetime", js.undefined)
-    
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
-    
-    @scala.inline
-    def setScope(value: js.Array[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteScope: Self = this.set("scope", js.undefined)
+    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

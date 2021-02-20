@@ -1,11 +1,12 @@
 package typings.awsSdk.medialiveMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HlsInputSettings extends js.Object {
+trait HlsInputSettings extends StObject {
   
   /**
     * When specified the HLS stream with the m3u8 BANDWIDTH that most closely matches this value will be chosen, otherwise the highest bandwidth stream in the m3u8 will be chosen.  The bitrate is specified in bits per second, as in an HLS manifest.
@@ -36,42 +37,30 @@ object HlsInputSettings {
   }
   
   @scala.inline
-  implicit class HlsInputSettingsOps[Self <: HlsInputSettings] (val x: Self) extends AnyVal {
+  implicit class HlsInputSettingsMutableBuilder[Self <: HlsInputSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBandwidth(value: integerMin0): Self = StObject.set(x, "Bandwidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBandwidthUndefined: Self = StObject.set(x, "Bandwidth", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBufferSegments(value: integerMin0): Self = StObject.set(x, "BufferSegments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBandwidth(value: integerMin0): Self = this.set("Bandwidth", value.asInstanceOf[js.Any])
+    def setBufferSegmentsUndefined: Self = StObject.set(x, "BufferSegments", js.undefined)
     
     @scala.inline
-    def deleteBandwidth: Self = this.set("Bandwidth", js.undefined)
+    def setRetries(value: integerMin0): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBufferSegments(value: integerMin0): Self = this.set("BufferSegments", value.asInstanceOf[js.Any])
+    def setRetriesUndefined: Self = StObject.set(x, "Retries", js.undefined)
     
     @scala.inline
-    def deleteBufferSegments: Self = this.set("BufferSegments", js.undefined)
+    def setRetryInterval(value: integerMin0): Self = StObject.set(x, "RetryInterval", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRetries(value: integerMin0): Self = this.set("Retries", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetries: Self = this.set("Retries", js.undefined)
-    
-    @scala.inline
-    def setRetryInterval(value: integerMin0): Self = this.set("RetryInterval", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRetryInterval: Self = this.set("RetryInterval", js.undefined)
+    def setRetryIntervalUndefined: Self = StObject.set(x, "RetryInterval", js.undefined)
   }
 }

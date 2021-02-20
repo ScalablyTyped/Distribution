@@ -1,11 +1,12 @@
 package typings.devtoolsProtocol.mod.Protocol.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TakePreciseCoverageResponse extends js.Object {
+trait TakePreciseCoverageResponse extends StObject {
   
   /**
     * Coverage data for the current isolate.
@@ -26,27 +27,15 @@ object TakePreciseCoverageResponse {
   }
   
   @scala.inline
-  implicit class TakePreciseCoverageResponseOps[Self <: TakePreciseCoverageResponse] (val x: Self) extends AnyVal {
+  implicit class TakePreciseCoverageResponseMutableBuilder[Self <: TakePreciseCoverageResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setResultVarargs(value: ScriptCoverage*): Self = StObject.set(x, "result", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setResultVarargs(value: ScriptCoverage*): Self = this.set("result", js.Array(value :_*))
-    
-    @scala.inline
-    def setResult(value: js.Array[ScriptCoverage]): Self = this.set("result", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

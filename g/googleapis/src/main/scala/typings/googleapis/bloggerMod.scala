@@ -1,8 +1,9 @@
 package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
+import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.bloggerV2Mod.bloggerV2.Blogger
 import typings.googleapis.bloggerV2Mod.bloggerV2.Options
 import typings.googleapis.googleapisStrings.v2
@@ -10,55 +11,67 @@ import typings.googleapis.googleapisStrings.v3
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("googleapis/build/src/apis/blogger", JSImport.Namespace)
-@js.native
-object bloggerMod extends js.Object {
+object bloggerMod {
   
-  def blogger(options: Options): Blogger = js.native
-  def blogger(options: typings.googleapis.bloggerV3Mod.bloggerV3.Options): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
-  @JSName("blogger")
-  def blogger_v2(version: v2): Blogger = js.native
-  @JSName("blogger")
-  def blogger_v3(version: v3): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
-  
-  @js.native
-  object VERSIONS extends js.Object {
+  object VERSIONS {
     
+    @JSImport("googleapis/build/src/apis/blogger", "VERSIONS")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/blogger", "VERSIONS.v2")
     @js.native
     class v2 protected () extends Blogger {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/blogger", "VERSIONS.v2")
     @js.native
-    object v2
-      extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Blogger]
-            ]
+    def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Blogger] = js.native
+    @scala.inline
+    def v2_=(
+      x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Blogger]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/blogger", "VERSIONS.v3")
     @js.native
     class v3 protected ()
       extends typings.googleapis.bloggerV3Mod.bloggerV3.Blogger {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
+    @JSImport("googleapis/build/src/apis/blogger", "VERSIONS.v3")
     @js.native
-    object v3
-      extends TopLevel[
-              Instantiable2[
-                /* options */ GlobalOptions, 
-                /* google */ js.UndefOr[GoogleConfigurable], 
-                typings.googleapis.bloggerV3Mod.bloggerV3.Blogger
-              ]
-            ]
+    def v3: Instantiable2[
+        /* options */ GlobalOptions, 
+        /* google */ js.UndefOr[GoogleConfigurable], 
+        typings.googleapis.bloggerV3Mod.bloggerV3.Blogger
+      ] = js.native
+    @scala.inline
+    def v3_=(
+      x: Instantiable2[
+          /* options */ GlobalOptions, 
+          /* google */ js.UndefOr[GoogleConfigurable], 
+          typings.googleapis.bloggerV3Mod.bloggerV3.Blogger
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  object auth extends TopLevel[AuthPlus] {
+  object auth extends Shortcut {
     
+    @JSImport("googleapis/build/src/apis/blogger", "auth")
+    @js.native
+    val ^ : AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/blogger", "auth.Compute")
     @js.native
     /**
       * Google Compute Engine service account credentials.
@@ -69,6 +82,24 @@ object bloggerMod extends js.Object {
     class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
+    /**
+      * Export DefaultTransporter as a static property of the class.
+      */
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/blogger", "auth.DefaultTransporter")
+    @js.native
+    class DefaultTransporter ()
+      extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
+    /* static members */
+    object DefaultTransporter {
+      
+      @JSImport("googleapis/build/src/apis/blogger", "auth.DefaultTransporter.constructor")
+      @js.native
+      def constructor(): js.Any = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/blogger", "auth.JWT")
     @js.native
     class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
@@ -86,5 +117,38 @@ object bloggerMod extends js.Object {
         */
       def this(options: JWTOptions) = this()
     }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/blogger", "auth.OAuth2")
+    @js.native
+    /**
+      * Handles OAuth2 flow for Google APIs.
+      *
+      * @param clientId The authentication client ID.
+      * @param clientSecret The authentication client secret.
+      * @param redirectUri The URI to redirect to after completing the auth
+      * request.
+      * @param opts optional options for overriding the given parameters.
+      * @constructor
+      */
+    class OAuth2 () extends OAuth2Client
+    
+    type _To = AuthPlus
+    
+    /* This means you don't have to write `^`, but can instead just say `auth.foo` */
+    override def _to: AuthPlus = ^
   }
+  
+  @JSImport("googleapis/build/src/apis/blogger", "blogger")
+  @js.native
+  def blogger(options: Options): Blogger = js.native
+  @JSImport("googleapis/build/src/apis/blogger", "blogger")
+  @js.native
+  def blogger(options: typings.googleapis.bloggerV3Mod.bloggerV3.Options): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
+  @JSImport("googleapis/build/src/apis/blogger", "blogger")
+  @js.native
+  def blogger_v2(version: v2): Blogger = js.native
+  @JSImport("googleapis/build/src/apis/blogger", "blogger")
+  @js.native
+  def blogger_v3(version: v3): typings.googleapis.bloggerV3Mod.bloggerV3.Blogger = js.native
 }

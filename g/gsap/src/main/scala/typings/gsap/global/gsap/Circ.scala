@@ -1,5 +1,6 @@
 package typings.gsap.global.gsap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class Circ ()
   extends typings.gsap.gsap.Ease
-/* static members */
-@JSGlobal("gsap.Circ")
-@js.native
-object Circ extends js.Object {
+object Circ {
   
-  var easeIn: typings.gsap.gsap.Circ = js.native
+  @JSGlobal("gsap.Circ")
+  @js.native
+  val ^ : js.Any = js.native
   
-  var easeInOut: typings.gsap.gsap.Circ = js.native
+  /* static member */
+  @JSGlobal("gsap.Circ.easeIn")
+  @js.native
+  def easeIn: typings.gsap.gsap.Circ = js.native
   
-  var easeOut: typings.gsap.gsap.Circ = js.native
+  /* static member */
+  @JSGlobal("gsap.Circ.easeInOut")
+  @js.native
+  def easeInOut: typings.gsap.gsap.Circ = js.native
+  @scala.inline
+  def easeInOut_=(x: typings.gsap.gsap.Circ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeInOut")(x.asInstanceOf[js.Any])
+  
+  @scala.inline
+  def easeIn_=(x: typings.gsap.gsap.Circ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeIn")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("gsap.Circ.easeOut")
+  @js.native
+  def easeOut: typings.gsap.gsap.Circ = js.native
+  @scala.inline
+  def easeOut_=(x: typings.gsap.gsap.Circ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easeOut")(x.asInstanceOf[js.Any])
 }

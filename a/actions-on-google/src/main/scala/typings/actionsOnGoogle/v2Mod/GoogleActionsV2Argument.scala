@@ -1,12 +1,13 @@
 package typings.actionsOnGoogle.v2Mod
 
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleActionsV2Argument extends js.Object {
+trait GoogleActionsV2Argument extends StObject {
   
   /**
     * Specified when query pattern includes a `$org.schema.type.YesNo` type or
@@ -85,84 +86,72 @@ object GoogleActionsV2Argument {
   }
   
   @scala.inline
-  implicit class GoogleActionsV2ArgumentOps[Self <: GoogleActionsV2Argument] (val x: Self) extends AnyVal {
+  implicit class GoogleActionsV2ArgumentMutableBuilder[Self <: GoogleActionsV2Argument] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDatetimeValue(value: GoogleActionsV2DateTime): Self = StObject.set(x, "datetimeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    def setDatetimeValueUndefined: Self = StObject.set(x, "datetimeValue", js.undefined)
     
     @scala.inline
-    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDatetimeValue(value: GoogleActionsV2DateTime): Self = this.set("datetimeValue", value.asInstanceOf[js.Any])
+    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
     @scala.inline
-    def deleteDatetimeValue: Self = this.set("datetimeValue", js.undefined)
+    def setFloatValue(value: Double): Self = StObject.set(x, "floatValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = this.set("extension", value.asInstanceOf[js.Any])
+    def setFloatValueUndefined: Self = StObject.set(x, "floatValue", js.undefined)
     
     @scala.inline
-    def deleteExtension: Self = this.set("extension", js.undefined)
+    def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFloatValue(value: Double): Self = this.set("floatValue", value.asInstanceOf[js.Any])
+    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
     @scala.inline
-    def deleteFloatValue: Self = this.set("floatValue", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIntValue(value: String): Self = this.set("intValue", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteIntValue: Self = this.set("intValue", js.undefined)
+    def setPlaceValue(value: GoogleActionsV2Location): Self = StObject.set(x, "placeValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    def setPlaceValueUndefined: Self = StObject.set(x, "placeValue", js.undefined)
     
     @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
+    def setRawText(value: String): Self = StObject.set(x, "rawText", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlaceValue(value: GoogleActionsV2Location): Self = this.set("placeValue", value.asInstanceOf[js.Any])
+    def setRawTextUndefined: Self = StObject.set(x, "rawText", js.undefined)
     
     @scala.inline
-    def deletePlaceValue: Self = this.set("placeValue", js.undefined)
+    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRawText(value: String): Self = this.set("rawText", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def deleteRawText: Self = this.set("rawText", js.undefined)
+    def setStructuredValue(value: ApiClientObjectMap[_]): Self = StObject.set(x, "structuredValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    def setStructuredValueUndefined: Self = StObject.set(x, "structuredValue", js.undefined)
     
     @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setTextValue(value: String): Self = StObject.set(x, "textValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStructuredValue(value: ApiClientObjectMap[_]): Self = this.set("structuredValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStructuredValue: Self = this.set("structuredValue", js.undefined)
-    
-    @scala.inline
-    def setTextValue(value: String): Self = this.set("textValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTextValue: Self = this.set("textValue", js.undefined)
+    def setTextValueUndefined: Self = StObject.set(x, "textValue", js.undefined)
   }
 }

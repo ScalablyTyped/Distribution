@@ -1,11 +1,12 @@
 package typings.instagramPrivateApi.directInboxFeedResponseMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DirectInboxFeedResponseLinkContext extends js.Object {
+trait DirectInboxFeedResponseLinkContext extends StObject {
   
   var link_image_url: String = js.native
   
@@ -24,30 +25,18 @@ object DirectInboxFeedResponseLinkContext {
   }
   
   @scala.inline
-  implicit class DirectInboxFeedResponseLinkContextOps[Self <: DirectInboxFeedResponseLinkContext] (val x: Self) extends AnyVal {
+  implicit class DirectInboxFeedResponseLinkContextMutableBuilder[Self <: DirectInboxFeedResponseLinkContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLink_image_url(value: String): Self = StObject.set(x, "link_image_url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLink_summary(value: String): Self = StObject.set(x, "link_summary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLink_title(value: String): Self = StObject.set(x, "link_title", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLink_image_url(value: String): Self = this.set("link_image_url", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLink_summary(value: String): Self = this.set("link_summary", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLink_title(value: String): Self = this.set("link_title", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setLink_url(value: String): Self = this.set("link_url", value.asInstanceOf[js.Any])
+    def setLink_url(value: String): Self = StObject.set(x, "link_url", value.asInstanceOf[js.Any])
   }
 }

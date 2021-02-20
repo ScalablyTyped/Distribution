@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelligence
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GoogleCloudVideointelligenceV1beta2TimestampedObject extends js.Object {
+trait GoogleCloudVideointelligenceV1beta2TimestampedObject extends StObject {
   
   /** Optional. The attributes of the object in the bounding box. */
   var attributes: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta2DetectedAttribute]] = js.native
@@ -28,48 +29,36 @@ object GoogleCloudVideointelligenceV1beta2TimestampedObject {
   }
   
   @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2TimestampedObjectOps[Self <: GoogleCloudVideointelligenceV1beta2TimestampedObject] (val x: Self) extends AnyVal {
+  implicit class GoogleCloudVideointelligenceV1beta2TimestampedObjectMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2TimestampedObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: js.Array[GoogleCloudVideointelligenceV1beta2DetectedAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAttributesVarargs(value: GoogleCloudVideointelligenceV1beta2DetectedAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributesVarargs(value: GoogleCloudVideointelligenceV1beta2DetectedAttribute*): Self = this.set("attributes", js.Array(value :_*))
+    def setLandmarks(value: js.Array[GoogleCloudVideointelligenceV1beta2DetectedLandmark]): Self = StObject.set(x, "landmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: js.Array[GoogleCloudVideointelligenceV1beta2DetectedAttribute]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setLandmarksUndefined: Self = StObject.set(x, "landmarks", js.undefined)
     
     @scala.inline
-    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    def setLandmarksVarargs(value: GoogleCloudVideointelligenceV1beta2DetectedLandmark*): Self = StObject.set(x, "landmarks", js.Array(value :_*))
     
     @scala.inline
-    def setLandmarksVarargs(value: GoogleCloudVideointelligenceV1beta2DetectedLandmark*): Self = this.set("landmarks", js.Array(value :_*))
+    def setNormalizedBoundingBox(value: GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox): Self = StObject.set(x, "normalizedBoundingBox", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLandmarks(value: js.Array[GoogleCloudVideointelligenceV1beta2DetectedLandmark]): Self = this.set("landmarks", value.asInstanceOf[js.Any])
+    def setNormalizedBoundingBoxUndefined: Self = StObject.set(x, "normalizedBoundingBox", js.undefined)
     
     @scala.inline
-    def deleteLandmarks: Self = this.set("landmarks", js.undefined)
+    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNormalizedBoundingBox(value: GoogleCloudVideointelligenceV1beta2NormalizedBoundingBox): Self = this.set("normalizedBoundingBox", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteNormalizedBoundingBox: Self = this.set("normalizedBoundingBox", js.undefined)
-    
-    @scala.inline
-    def setTimeOffset(value: String): Self = this.set("timeOffset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTimeOffset: Self = this.set("timeOffset", js.undefined)
+    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.pulumiAws.inputMod.networkfirewall
 
 import typings.pulumiPulumi.outputMod.Input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions extends js.Object {
+trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions extends StObject {
   
   /**
     * Set of configuration blocks containing custom action definitions that are available for use by the set of `stateless rule`. See Custom Action below for details.
@@ -37,41 +38,29 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions {
   }
   
   @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsOps[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setStatelessRulesVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]*): Self = this.set("statelessRules", js.Array(value :_*))
-    
-    @scala.inline
-    def setStatelessRules(
-      value: Input[
-          js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]]
-        ]
-    ): Self = this.set("statelessRules", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setCustomActionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]*): Self = this.set("customActions", js.Array(value :_*))
+  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
     
     @scala.inline
     def setCustomActions(
       value: Input[
           js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]]
         ]
-    ): Self = this.set("customActions", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "customActions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteCustomActions: Self = this.set("customActions", js.undefined)
+    def setCustomActionsUndefined: Self = StObject.set(x, "customActions", js.undefined)
+    
+    @scala.inline
+    def setCustomActionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]*): Self = StObject.set(x, "customActions", js.Array(value :_*))
+    
+    @scala.inline
+    def setStatelessRules(
+      value: Input[
+          js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]]
+        ]
+    ): Self = StObject.set(x, "statelessRules", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatelessRulesVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]*): Self = StObject.set(x, "statelessRules", js.Array(value :_*))
   }
 }

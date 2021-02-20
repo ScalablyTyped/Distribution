@@ -5,12 +5,13 @@ import typings.xstate.actorMod.Actor
 import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
 import typings.xstate.stateNodeMod.StateNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StateConfig[TContext, TEvent /* <: EventObject */] extends js.Object {
+trait StateConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var _event: typings.xstate.typesMod.SCXML.Event[TEvent] = js.native
   
@@ -56,96 +57,84 @@ object StateConfig {
   }
   
   @scala.inline
-  implicit class StateConfigOps[Self <: StateConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (StateConfig[TContext, TEvent])) extends AnyVal {
+  implicit class StateConfigMutableBuilder[Self <: StateConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (StateConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
     @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = this.set("_event", value.asInstanceOf[js.Any])
+    def setActivities(value: ActivityMap): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setChildren(value: Record[String, Actor[_, AnyEventObject]]): Self = this.set("children", value.asInstanceOf[js.Any])
+    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
     @scala.inline
-    def setConfigurationVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = this.set("configuration", js.Array(value :_*))
+    def setChildren(value: Record[String, Actor[_, AnyEventObject]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConfiguration(value: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]]): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    def setConfiguration(value: js.Array[StateNode[TContext, _, TEvent, ContextTContext[TContext]]]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContext(value: TContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    def setConfigurationVarargs(value: (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])*): Self = StObject.set(x, "configuration", js.Array(value :_*))
     
     @scala.inline
-    def setTransitionsVarargs(value: (TransitionDefinition[TContext, TEvent])*): Self = this.set("transitions", js.Array(value :_*))
+    def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTransitions(value: js.Array[TransitionDefinition[TContext, TEvent]]): Self = this.set("transitions", value.asInstanceOf[js.Any])
+    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValue(value: StateValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
     @scala.inline
-    def set_sessionid(value: String): Self = this.set("_sessionid", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[TEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set_sessionidNull: Self = this.set("_sessionid", null)
+    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     @scala.inline
-    def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = this.set("actions", js.Array(value :_*))
+    def setEventsVarargs(value: TEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
     
     @scala.inline
-    def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    def setHistory(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActions: Self = this.set("actions", js.undefined)
+    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
     @scala.inline
-    def setActivities(value: ActivityMap): Self = this.set("activities", value.asInstanceOf[js.Any])
+    def setHistoryValue(value: HistoryValue): Self = StObject.set(x, "historyValue", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteActivities: Self = this.set("activities", js.undefined)
+    def setHistoryValueUndefined: Self = StObject.set(x, "historyValue", js.undefined)
     
     @scala.inline
-    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteDone: Self = this.set("done", js.undefined)
+    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
     @scala.inline
-    def setEventsVarargs(value: TEvent*): Self = this.set("events", js.Array(value :_*))
+    def setTransitions(value: js.Array[TransitionDefinition[TContext, TEvent]]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[TEvent]): Self = this.set("events", value.asInstanceOf[js.Any])
+    def setTransitionsVarargs(value: (TransitionDefinition[TContext, TEvent])*): Self = StObject.set(x, "transitions", js.Array(value :_*))
     
     @scala.inline
-    def deleteEvents: Self = this.set("events", js.undefined)
+    def setValue(value: StateValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistory(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = this.set("history", value.asInstanceOf[js.Any])
+    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteHistory: Self = this.set("history", js.undefined)
+    def set_sessionid(value: String): Self = StObject.set(x, "_sessionid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHistoryValue(value: HistoryValue): Self = this.set("historyValue", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteHistoryValue: Self = this.set("historyValue", js.undefined)
-    
-    @scala.inline
-    def setMeta(value: js.Any): Self = this.set("meta", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMeta: Self = this.set("meta", js.undefined)
+    def set_sessionidNull: Self = StObject.set(x, "_sessionid", null)
   }
 }

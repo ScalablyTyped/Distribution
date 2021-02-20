@@ -1,6 +1,7 @@
 package typings.go.mod
 
 import typings.std.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor produces a CommandHandler with the default key bindings.
   */
-class CommandHandler () extends js.Object {
+class CommandHandler () extends StObject {
   
   /**
     * Make sure all of the unnested Parts in the given collection are removed from any containing Groups.

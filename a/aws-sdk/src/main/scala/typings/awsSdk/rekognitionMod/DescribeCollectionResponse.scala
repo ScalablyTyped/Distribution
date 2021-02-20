@@ -1,11 +1,12 @@
 package typings.awsSdk.rekognitionMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeCollectionResponse extends js.Object {
+trait DescribeCollectionResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the collection.
@@ -36,42 +37,30 @@ object DescribeCollectionResponse {
   }
   
   @scala.inline
-  implicit class DescribeCollectionResponseOps[Self <: DescribeCollectionResponse] (val x: Self) extends AnyVal {
+  implicit class DescribeCollectionResponseMutableBuilder[Self <: DescribeCollectionResponse] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCollectionARN(value: String): Self = StObject.set(x, "CollectionARN", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCollectionARNUndefined: Self = StObject.set(x, "CollectionARN", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCollectionARN(value: String): Self = this.set("CollectionARN", value.asInstanceOf[js.Any])
+    def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
     @scala.inline
-    def deleteCollectionARN: Self = this.set("CollectionARN", js.undefined)
+    def setFaceCount(value: ULong): Self = StObject.set(x, "FaceCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCreationTimestamp(value: DateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    def setFaceCountUndefined: Self = StObject.set(x, "FaceCount", js.undefined)
     
     @scala.inline
-    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFaceCount(value: ULong): Self = this.set("FaceCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceCount: Self = this.set("FaceCount", js.undefined)
-    
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
+    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
   }
 }

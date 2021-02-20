@@ -1,12 +1,13 @@
 package typings.activexShdocvw.SHDocVw
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WebBrowser Control */
 @js.native
-trait WebBrowserV1 extends js.Object {
+trait WebBrowserV1 extends StObject {
   
   /** Returns the application automation object if accessible, this automation object otherwise.. */
   val Application: js.Any = js.native

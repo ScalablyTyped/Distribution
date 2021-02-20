@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AwsService extends js.Object {
+trait AwsService extends StObject {
   
   /**
     * The name of the AWS service that performed the action.
@@ -21,24 +22,12 @@ object AwsService {
   }
   
   @scala.inline
-  implicit class AwsServiceOps[Self <: AwsService] (val x: Self) extends AnyVal {
+  implicit class AwsServiceMutableBuilder[Self <: AwsService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setInvokedBy(value: string): Self = StObject.set(x, "invokedBy", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setInvokedBy(value: string): Self = this.set("invokedBy", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteInvokedBy: Self = this.set("invokedBy", js.undefined)
+    def setInvokedByUndefined: Self = StObject.set(x, "invokedBy", js.undefined)
   }
 }

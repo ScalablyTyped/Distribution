@@ -1,5 +1,6 @@
 package typings.protractor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,12 +153,18 @@ class ProtractorBrowser protected ()
   ) = this()
 }
 /* static members */
-@JSImport("protractor", "ProtractorBrowser")
-@js.native
-object ProtractorBrowser extends js.Object {
+object ProtractorBrowser {
+  
+  @JSImport("protractor", "ProtractorBrowser")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @type {ProtractorBy}
     */
-  var By: typings.protractor.locatorsMod.ProtractorBy = js.native
+  @JSImport("protractor", "ProtractorBrowser.By")
+  @js.native
+  def By: typings.protractor.locatorsMod.ProtractorBy = js.native
+  @scala.inline
+  def By_=(x: typings.protractor.locatorsMod.ProtractorBy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("By")(x.asInstanceOf[js.Any])
 }

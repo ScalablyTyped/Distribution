@@ -1,5 +1,6 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,36 +55,24 @@ object ForStatement {
   }
   
   @scala.inline
-  implicit class ForStatementOps[Self <: ForStatement] (val x: Self) extends AnyVal {
+  implicit class ForStatementMutableBuilder[Self <: ForStatement] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIncrementor(value: AST): Self = StObject.set(x, "incrementor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInitializer(value: AST): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCondition(value: AST): Self = this.set("condition", value.asInstanceOf[js.Any])
+    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIncrementor(value: AST): Self = this.set("incrementor", value.asInstanceOf[js.Any])
+    def setStructuralEquals(value: (ForStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setInitializer(value: AST): Self = this.set("initializer", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStatement(value: AST): Self = this.set("statement", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStructuralEquals(value: (ForStatement, Boolean) => Boolean): Self = this.set("structuralEquals", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setVariableDeclaration(value: VariableDeclaration): Self = this.set("variableDeclaration", value.asInstanceOf[js.Any])
+    def setVariableDeclaration(value: VariableDeclaration): Self = StObject.set(x, "variableDeclaration", value.asInstanceOf[js.Any])
   }
 }

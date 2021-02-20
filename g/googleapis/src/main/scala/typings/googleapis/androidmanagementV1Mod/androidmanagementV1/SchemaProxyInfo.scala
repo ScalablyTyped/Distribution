@@ -1,5 +1,6 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * field.
   */
 @js.native
-trait SchemaProxyInfo extends js.Object {
+trait SchemaProxyInfo extends StObject {
   
   /**
     * For a direct proxy, the hosts for which the proxy is bypassed. The host
@@ -42,45 +43,33 @@ object SchemaProxyInfo {
   }
   
   @scala.inline
-  implicit class SchemaProxyInfoOps[Self <: SchemaProxyInfo] (val x: Self) extends AnyVal {
+  implicit class SchemaProxyInfoMutableBuilder[Self <: SchemaProxyInfo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setExcludedHosts(value: js.Array[String]): Self = StObject.set(x, "excludedHosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setExcludedHostsUndefined: Self = StObject.set(x, "excludedHosts", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setExcludedHostsVarargs(value: String*): Self = StObject.set(x, "excludedHosts", js.Array(value :_*))
     
     @scala.inline
-    def setExcludedHostsVarargs(value: String*): Self = this.set("excludedHosts", js.Array(value :_*))
+    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExcludedHosts(value: js.Array[String]): Self = this.set("excludedHosts", value.asInstanceOf[js.Any])
+    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     @scala.inline
-    def deleteExcludedHosts: Self = this.set("excludedHosts", js.undefined)
+    def setPacUri(value: String): Self = StObject.set(x, "pacUri", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    def setPacUriUndefined: Self = StObject.set(x, "pacUri", js.undefined)
     
     @scala.inline
-    def deleteHost: Self = this.set("host", js.undefined)
+    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPacUri(value: String): Self = this.set("pacUri", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePacUri: Self = this.set("pacUri", js.undefined)
-    
-    @scala.inline
-    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePort: Self = this.set("port", js.undefined)
+    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

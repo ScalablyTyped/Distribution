@@ -1,6 +1,7 @@
 package typings.codemirror.mod
 
 import typings.std.HTMLTextAreaElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

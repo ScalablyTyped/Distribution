@@ -1,11 +1,12 @@
 package typings.awsSdk.directoryserviceMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DescribeSharedDirectoriesResult extends js.Object {
+trait DescribeSharedDirectoriesResult extends StObject {
   
   /**
     * If not null, token that indicates that more results are available. Pass this value for the NextToken parameter in a subsequent call to DescribeSharedDirectories to retrieve the next set of items.
@@ -26,33 +27,21 @@ object DescribeSharedDirectoriesResult {
   }
   
   @scala.inline
-  implicit class DescribeSharedDirectoriesResultOps[Self <: DescribeSharedDirectoriesResult] (val x: Self) extends AnyVal {
+  implicit class DescribeSharedDirectoriesResultMutableBuilder[Self <: DescribeSharedDirectoriesResult] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setSharedDirectories(value: SharedDirectories): Self = StObject.set(x, "SharedDirectories", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    def setSharedDirectoriesUndefined: Self = StObject.set(x, "SharedDirectories", js.undefined)
     
     @scala.inline
-    def deleteNextToken: Self = this.set("NextToken", js.undefined)
-    
-    @scala.inline
-    def setSharedDirectoriesVarargs(value: SharedDirectory*): Self = this.set("SharedDirectories", js.Array(value :_*))
-    
-    @scala.inline
-    def setSharedDirectories(value: SharedDirectories): Self = this.set("SharedDirectories", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSharedDirectories: Self = this.set("SharedDirectories", js.undefined)
+    def setSharedDirectoriesVarargs(value: SharedDirectory*): Self = StObject.set(x, "SharedDirectories", js.Array(value :_*))
   }
 }

@@ -1,37 +1,56 @@
 package typings.openui5.global.sap.ui.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("sap.ui.core.ws")
-@js.native
-object ws extends js.Object {
+object ws {
   
-  @js.native
-  object ReadyState extends js.Object {
+  object ReadyState {
+    
+    @JSGlobal("sap.ui.core.ws.ReadyState")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * The connection has been closed or could not be opened.
       */
-    var CLOSED: js.Any = js.native
+    @JSGlobal("sap.ui.core.ws.ReadyState.CLOSED")
+    @js.native
+    def CLOSED: js.Any = js.native
+    @scala.inline
+    def CLOSED_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
     
     /**
       * The connection is going through the closing handshake.
       */
-    var CLOSING: js.Any = js.native
+    @JSGlobal("sap.ui.core.ws.ReadyState.CLOSING")
+    @js.native
+    def CLOSING: js.Any = js.native
+    @scala.inline
+    def CLOSING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
     /**
       * The connection has not yet been established.
       */
-    var CONNECTING: js.Any = js.native
+    @JSGlobal("sap.ui.core.ws.ReadyState.CONNECTING")
+    @js.native
+    def CONNECTING: js.Any = js.native
+    @scala.inline
+    def CONNECTING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
     
     /**
       * The WebSocket connection is established and communication is possible.
       */
-    var OPEN: js.Any = js.native
+    @JSGlobal("sap.ui.core.ws.ReadyState.OPEN")
+    @js.native
+    def OPEN: js.Any = js.native
+    @scala.inline
+    def OPEN_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   }
   
+  @JSGlobal("sap.ui.core.ws.SapPcpWebSocket")
   @js.native
   class SapPcpWebSocket protected ()
     extends typings.openui5.sap.ui.core.ws.SapPcpWebSocket {
@@ -44,19 +63,26 @@ object ws extends js.Object {
     def this(sUrl: String) = this()
     def this(sUrl: String, aProtocols: js.Array[_]) = this()
   }
-  @js.native
-  object SapPcpWebSocket extends js.Object {
+  object SapPcpWebSocket {
     
-    @js.native
-    object SUPPORTED_PROTOCOLS extends js.Object {
+    object SUPPORTED_PROTOCOLS {
+      
+      @JSGlobal("sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Protocol v10.pcp.sap.com
         */
-      var v10: js.Any = js.native
+      @JSGlobal("sap.ui.core.ws.SapPcpWebSocket.SUPPORTED_PROTOCOLS.v10")
+      @js.native
+      def v10: js.Any = js.native
+      @scala.inline
+      def v10_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v10")(x.asInstanceOf[js.Any])
     }
   }
   
+  @JSGlobal("sap.ui.core.ws.WebSocket")
   @js.native
   class WebSocket protected ()
     extends typings.openui5.sap.ui.core.ws.WebSocket {

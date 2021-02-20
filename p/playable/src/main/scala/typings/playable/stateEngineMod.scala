@@ -4,16 +4,21 @@ import typings.chromecastCafSender.cast.framework.RemotePlayerController
 import typings.playable.engineStateMod.EngineState
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.IVideoOutput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("playable/dist/src/modules/playback-engine/output/chromecast/state-engine", JSImport.Namespace)
-@js.native
-object stateEngineMod extends js.Object {
+object stateEngineMod {
+  
+  @JSImport("playable/dist/src/modules/playback-engine/output/chromecast/state-engine", JSImport.Default)
+  @js.native
+  class default protected () extends StateEngine {
+    def this(eventEmitter: IEventEmitter, output: IVideoOutput, controller: RemotePlayerController) = this()
+  }
   
   @js.native
-  trait StateEngine extends js.Object {
+  trait StateEngine extends StObject {
     
     var _bindCallbacks: js.Any = js.native
     
@@ -44,10 +49,5 @@ object stateEngineMod extends js.Object {
     def setState(state: EngineState): Unit = js.native
     
     def state: EngineState = js.native
-  }
-  
-  @js.native
-  class default protected () extends StateEngine {
-    def this(eventEmitter: IEventEmitter, output: IVideoOutput, controller: RemotePlayerController) = this()
   }
 }

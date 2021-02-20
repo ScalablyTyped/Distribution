@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait History extends js.Object {
+trait History extends StObject {
   
   /** The mailbox sequence ID. */
   var id: js.UndefOr[String] = js.native
@@ -37,69 +38,57 @@ object History {
   }
   
   @scala.inline
-  implicit class HistoryOps[Self <: History] (val x: Self) extends AnyVal {
+  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelsAdded(value: js.Array[HistoryLabelAdded]): Self = StObject.set(x, "labelsAdded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setLabelsAddedUndefined: Self = StObject.set(x, "labelsAdded", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = StObject.set(x, "labelsAdded", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsAddedVarargs(value: HistoryLabelAdded*): Self = this.set("labelsAdded", js.Array(value :_*))
+    def setLabelsRemoved(value: js.Array[HistoryLabelRemoved]): Self = StObject.set(x, "labelsRemoved", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsAdded(value: js.Array[HistoryLabelAdded]): Self = this.set("labelsAdded", value.asInstanceOf[js.Any])
+    def setLabelsRemovedUndefined: Self = StObject.set(x, "labelsRemoved", js.undefined)
     
     @scala.inline
-    def deleteLabelsAdded: Self = this.set("labelsAdded", js.undefined)
+    def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = StObject.set(x, "labelsRemoved", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsRemovedVarargs(value: HistoryLabelRemoved*): Self = this.set("labelsRemoved", js.Array(value :_*))
+    def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabelsRemoved(value: js.Array[HistoryLabelRemoved]): Self = this.set("labelsRemoved", value.asInstanceOf[js.Any])
+    def setMessagesAdded(value: js.Array[HistoryMessageAdded]): Self = StObject.set(x, "messagesAdded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteLabelsRemoved: Self = this.set("labelsRemoved", js.undefined)
+    def setMessagesAddedUndefined: Self = StObject.set(x, "messagesAdded", js.undefined)
     
     @scala.inline
-    def setMessagesVarargs(value: Message*): Self = this.set("messages", js.Array(value :_*))
+    def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = StObject.set(x, "messagesAdded", js.Array(value :_*))
     
     @scala.inline
-    def setMessages(value: js.Array[Message]): Self = this.set("messages", value.asInstanceOf[js.Any])
+    def setMessagesDeleted(value: js.Array[HistoryMessageDeleted]): Self = StObject.set(x, "messagesDeleted", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteMessages: Self = this.set("messages", js.undefined)
+    def setMessagesDeletedUndefined: Self = StObject.set(x, "messagesDeleted", js.undefined)
     
     @scala.inline
-    def setMessagesAddedVarargs(value: HistoryMessageAdded*): Self = this.set("messagesAdded", js.Array(value :_*))
+    def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = StObject.set(x, "messagesDeleted", js.Array(value :_*))
     
     @scala.inline
-    def setMessagesAdded(value: js.Array[HistoryMessageAdded]): Self = this.set("messagesAdded", value.asInstanceOf[js.Any])
+    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     @scala.inline
-    def deleteMessagesAdded: Self = this.set("messagesAdded", js.undefined)
-    
-    @scala.inline
-    def setMessagesDeletedVarargs(value: HistoryMessageDeleted*): Self = this.set("messagesDeleted", js.Array(value :_*))
-    
-    @scala.inline
-    def setMessagesDeleted(value: js.Array[HistoryMessageDeleted]): Self = this.set("messagesDeleted", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteMessagesDeleted: Self = this.set("messagesDeleted", js.undefined)
+    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

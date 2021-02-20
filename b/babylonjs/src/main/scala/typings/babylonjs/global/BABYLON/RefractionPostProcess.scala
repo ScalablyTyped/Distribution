@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.PostProcessOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -203,11 +204,11 @@ class RefractionPostProcess protected ()
   ) = this()
 }
 /* static members */
-@JSGlobal("BABYLON.RefractionPostProcess")
-@js.native
-object RefractionPostProcess extends js.Object {
+object RefractionPostProcess {
   
   /** @hidden */
+  @JSGlobal("BABYLON.RefractionPostProcess._Parse")
+  @js.native
   def _Parse(
     parsedPostProcess: js.Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,

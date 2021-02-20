@@ -1,11 +1,12 @@
 package typings.openidClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RefreshExtras extends js.Object {
+trait RefreshExtras extends StObject {
   
   /**
     * Private key to sign the DPoP Proof JWT with. This can be a crypto.KeyObject, crypto.createPrivateKey valid
@@ -33,36 +34,24 @@ object RefreshExtras {
   }
   
   @scala.inline
-  implicit class RefreshExtrasOps[Self <: RefreshExtras] (val x: Self) extends AnyVal {
+  implicit class RefreshExtrasMutableBuilder[Self <: RefreshExtras] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientAssertionPayloadUndefined: Self = StObject.set(x, "clientAssertionPayload", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setDPoP(value: DPoPInput): Self = StObject.set(x, "DPoP", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDPoP(value: DPoPInput): Self = this.set("DPoP", value.asInstanceOf[js.Any])
+    def setDPoPUndefined: Self = StObject.set(x, "DPoP", js.undefined)
     
     @scala.inline
-    def deleteDPoP: Self = this.set("DPoP", js.undefined)
+    def setExchangeBody(value: js.Object): Self = StObject.set(x, "exchangeBody", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClientAssertionPayload(value: js.Object): Self = this.set("clientAssertionPayload", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteClientAssertionPayload: Self = this.set("clientAssertionPayload", js.undefined)
-    
-    @scala.inline
-    def setExchangeBody(value: js.Object): Self = this.set("exchangeBody", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteExchangeBody: Self = this.set("exchangeBody", js.undefined)
+    def setExchangeBodyUndefined: Self = StObject.set(x, "exchangeBody", js.undefined)
   }
 }

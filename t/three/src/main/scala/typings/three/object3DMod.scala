@@ -19,14 +19,14 @@ import typings.three.sceneMod.Scene
 import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import typings.three.webGLRendererMod.WebGLRenderer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three/src/core/Object3D", JSImport.Namespace)
-@js.native
-object object3DMod extends js.Object {
+object object3DMod {
   
+  @JSImport("three/src/core/Object3D", "Object3D")
   @js.native
   class Object3D () extends EventDispatcher {
     
@@ -412,11 +412,22 @@ object object3DMod extends js.Object {
     def worldToLocal(vector: Vector3): Vector3 = js.native
   }
   /* static members */
-  @js.native
-  object Object3D extends js.Object {
+  object Object3D {
     
-    var DefaultMatrixAutoUpdate: Boolean = js.native
+    @JSImport("three/src/core/Object3D", "Object3D")
+    @js.native
+    val ^ : js.Any = js.native
     
-    var DefaultUp: Vector3 = js.native
+    @JSImport("three/src/core/Object3D", "Object3D.DefaultMatrixAutoUpdate")
+    @js.native
+    def DefaultMatrixAutoUpdate: Boolean = js.native
+    @scala.inline
+    def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
+    
+    @JSImport("three/src/core/Object3D", "Object3D.DefaultUp")
+    @js.native
+    def DefaultUp: Vector3 = js.native
+    @scala.inline
+    def DefaultUp_=(x: Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
   }
 }

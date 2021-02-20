@@ -1,11 +1,12 @@
 package typings.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebService extends js.Object {
+trait WebService extends StObject {
   
   @JSName("Access.WebService_typekey")
   var AccessDotWebService_typekey: WebService = js.native

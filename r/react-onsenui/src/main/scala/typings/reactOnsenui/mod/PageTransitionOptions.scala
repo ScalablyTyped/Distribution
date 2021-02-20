@@ -1,11 +1,12 @@
 package typings.reactOnsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PageTransitionOptions extends js.Object {
+trait PageTransitionOptions extends StObject {
   
   var animation: js.UndefOr[NavigatorAnimationTypes] = js.native
   
@@ -24,42 +25,30 @@ object PageTransitionOptions {
   }
   
   @scala.inline
-  implicit class PageTransitionOptionsOps[Self <: PageTransitionOptions] (val x: Self) extends AnyVal {
+  implicit class PageTransitionOptionsMutableBuilder[Self <: PageTransitionOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAnimation(value: NavigatorAnimationTypes): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAnimationOptions(value: AnimationOptions): Self = StObject.set(x, "animationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAnimationOptionsUndefined: Self = StObject.set(x, "animationOptions", js.undefined)
     
     @scala.inline
-    def setAnimation(value: NavigatorAnimationTypes): Self = this.set("animation", value.asInstanceOf[js.Any])
+    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
     @scala.inline
-    def deleteAnimation: Self = this.set("animation", js.undefined)
+    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAnimationOptions(value: AnimationOptions): Self = this.set("animationOptions", value.asInstanceOf[js.Any])
+    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     @scala.inline
-    def deleteAnimationOptions: Self = this.set("animationOptions", js.undefined)
+    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallback(value: () => Unit): Self = this.set("callback", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def deleteCallback: Self = this.set("callback", js.undefined)
-    
-    @scala.inline
-    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

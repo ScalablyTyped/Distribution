@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,30 +33,18 @@ object MapProperties {
   }
   
   @scala.inline
-  implicit class MapPropertiesOps[Self <: MapProperties] (val x: Self) extends AnyVal {
+  implicit class MapPropertiesMutableBuilder[Self <: MapProperties] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBasemap(value: BasemapProperties | String): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGround(value: GroundProperties | String): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBasemap(value: BasemapProperties | String): Self = this.set("basemap", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteBasemap: Self = this.set("basemap", js.undefined)
-    
-    @scala.inline
-    def setGround(value: GroundProperties | String): Self = this.set("ground", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteGround: Self = this.set("ground", js.undefined)
+    def setGroundUndefined: Self = StObject.set(x, "ground", js.undefined)
   }
 }

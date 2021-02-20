@@ -1,5 +1,6 @@
 package typings.stellarSdk.mod.xdr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class PublicKeyType ()
   extends typings.stellarBase.mod.xdr.PublicKeyType
-/* static members */
-@JSImport("stellar-sdk", "xdr.PublicKeyType")
-@js.native
-object PublicKeyType extends js.Object {
+object PublicKeyType {
   
+  /* static member */
+  @JSImport("stellar-sdk", "xdr.PublicKeyType.publicKeyTypeEd25519")
+  @js.native
   def publicKeyTypeEd25519(): typings.stellarBase.xdrMod.xdr.PublicKeyType = js.native
 }

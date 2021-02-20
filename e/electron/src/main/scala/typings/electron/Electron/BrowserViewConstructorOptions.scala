@@ -1,11 +1,12 @@
 package typings.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowserViewConstructorOptions extends js.Object {
+trait BrowserViewConstructorOptions extends StObject {
   
   /**
     * See BrowserWindow.
@@ -21,24 +22,12 @@ object BrowserViewConstructorOptions {
   }
   
   @scala.inline
-  implicit class BrowserViewConstructorOptionsOps[Self <: BrowserViewConstructorOptions] (val x: Self) extends AnyVal {
+  implicit class BrowserViewConstructorOptionsMutableBuilder[Self <: BrowserViewConstructorOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setWebPreferences(value: WebPreferences): Self = StObject.set(x, "webPreferences", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setWebPreferences(value: WebPreferences): Self = this.set("webPreferences", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWebPreferences: Self = this.set("webPreferences", js.undefined)
+    def setWebPreferencesUndefined: Self = StObject.set(x, "webPreferences", js.undefined)
   }
 }

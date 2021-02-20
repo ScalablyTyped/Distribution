@@ -1,12 +1,13 @@
 package typings.rxjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/util/not", JSImport.Namespace)
-@js.native
-object notMod extends js.Object {
+object notMod {
   
+  @JSImport("rxjs/internal/util/not", "not")
+  @js.native
   def not(pred: js.Function, thisArg: js.Any): js.Function = js.native
 }

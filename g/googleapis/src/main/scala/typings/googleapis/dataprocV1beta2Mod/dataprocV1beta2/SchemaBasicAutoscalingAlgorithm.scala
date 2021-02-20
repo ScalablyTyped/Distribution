@@ -1,5 +1,6 @@
 package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Basic algorithm for autoscaling.
   */
 @js.native
-trait SchemaBasicAutoscalingAlgorithm extends js.Object {
+trait SchemaBasicAutoscalingAlgorithm extends StObject {
   
   /**
     * Optional. Duration between scaling events. A scaling period starts after
@@ -31,30 +32,18 @@ object SchemaBasicAutoscalingAlgorithm {
   }
   
   @scala.inline
-  implicit class SchemaBasicAutoscalingAlgorithmOps[Self <: SchemaBasicAutoscalingAlgorithm] (val x: Self) extends AnyVal {
+  implicit class SchemaBasicAutoscalingAlgorithmMutableBuilder[Self <: SchemaBasicAutoscalingAlgorithm] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCooldownPeriod(value: String): Self = StObject.set(x, "cooldownPeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCooldownPeriodUndefined: Self = StObject.set(x, "cooldownPeriod", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setYarnConfig(value: SchemaBasicYarnAutoscalingConfig): Self = StObject.set(x, "yarnConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCooldownPeriod(value: String): Self = this.set("cooldownPeriod", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCooldownPeriod: Self = this.set("cooldownPeriod", js.undefined)
-    
-    @scala.inline
-    def setYarnConfig(value: SchemaBasicYarnAutoscalingConfig): Self = this.set("yarnConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteYarnConfig: Self = this.set("yarnConfig", js.undefined)
+    def setYarnConfigUndefined: Self = StObject.set(x, "yarnConfig", js.undefined)
   }
 }

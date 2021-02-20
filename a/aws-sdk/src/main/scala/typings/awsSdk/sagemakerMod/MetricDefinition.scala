@@ -1,11 +1,12 @@
 package typings.awsSdk.sagemakerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MetricDefinition extends js.Object {
+trait MetricDefinition extends StObject {
   
   /**
     * The name of the metric.
@@ -26,24 +27,12 @@ object MetricDefinition {
   }
   
   @scala.inline
-  implicit class MetricDefinitionOps[Self <: MetricDefinition] (val x: Self) extends AnyVal {
+  implicit class MetricDefinitionMutableBuilder[Self <: MetricDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setName(value: MetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setName(value: MetricName): Self = this.set("Name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setRegex(value: MetricRegex): Self = this.set("Regex", value.asInstanceOf[js.Any])
+    def setRegex(value: MetricRegex): Self = StObject.set(x, "Regex", value.asInstanceOf[js.Any])
   }
 }

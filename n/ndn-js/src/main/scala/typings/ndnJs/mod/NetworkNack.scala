@@ -1,5 +1,6 @@
 package typings.ndnJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class NetworkNack ()
   extends typings.ndnJs.networkNackMod.NetworkNack
-@JSImport("ndn-js", "NetworkNack")
-@js.native
-object NetworkNack extends js.Object {
+object NetworkNack {
   
+  @JSImport("ndn-js", "NetworkNack.Reason")
   @js.native
-  object Reason extends js.Object {
+  object Reason extends StObject {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.ndnJs.networkNackMod.NetworkNack.Reason with Double] = js.native

@@ -1,13 +1,14 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Mean", JSImport.Namespace)
-@js.native
-object meanMod extends js.Object {
+object meanMod {
   
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernels/Mean", "meanConfig")
+  @js.native
   val meanConfig: KernelConfig = js.native
 }

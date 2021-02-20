@@ -1,5 +1,6 @@
 package typings.googleapis.alphaMod.computeAlpha
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Defines the mechanism to obtain the client or server certificate.
   */
 @js.native
-trait SchemaTlsCertificateContext extends js.Object {
+trait SchemaTlsCertificateContext extends StObject {
   
   /**
     * Specifies the certificate and private key paths. This field is applicable
@@ -36,36 +37,24 @@ object SchemaTlsCertificateContext {
   }
   
   @scala.inline
-  implicit class SchemaTlsCertificateContextOps[Self <: SchemaTlsCertificateContext] (val x: Self) extends AnyVal {
+  implicit class SchemaTlsCertificateContextMutableBuilder[Self <: SchemaTlsCertificateContext] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCertificatePaths(value: SchemaTlsCertificatePaths): Self = StObject.set(x, "certificatePaths", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCertificatePathsUndefined: Self = StObject.set(x, "certificatePaths", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCertificateSource(value: String): Self = StObject.set(x, "certificateSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificatePaths(value: SchemaTlsCertificatePaths): Self = this.set("certificatePaths", value.asInstanceOf[js.Any])
+    def setCertificateSourceUndefined: Self = StObject.set(x, "certificateSource", js.undefined)
     
     @scala.inline
-    def deleteCertificatePaths: Self = this.set("certificatePaths", js.undefined)
+    def setSdsConfig(value: SchemaSdsConfig): Self = StObject.set(x, "sdsConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCertificateSource(value: String): Self = this.set("certificateSource", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCertificateSource: Self = this.set("certificateSource", js.undefined)
-    
-    @scala.inline
-    def setSdsConfig(value: SchemaSdsConfig): Self = this.set("sdsConfig", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSdsConfig: Self = this.set("sdsConfig", js.undefined)
+    def setSdsConfigUndefined: Self = StObject.set(x, "sdsConfig", js.undefined)
   }
 }

@@ -1,6 +1,7 @@
 package typings.tern.ternMod
 
 import typings.tern.ternStrings.rename
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,33 +34,21 @@ object RenameQuery {
   }
   
   @scala.inline
-  implicit class RenameQueryOps[Self <: RenameQuery] (val x: Self) extends AnyVal {
+  implicit class RenameQueryMutableBuilder[Self <: RenameQuery] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnd(value: Double | Position): Self = this.set("end", value.asInstanceOf[js.Any])
+    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setNewName(value: String): Self = this.set("newName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setType(value: rename): Self = this.set("type", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStart(value: Double | Position): Self = this.set("start", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStart: Self = this.set("start", js.undefined)
+    def setType(value: rename): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

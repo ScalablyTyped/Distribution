@@ -1,12 +1,13 @@
 package typings.storybookUi.anon
 
 import typings.emotionSerialize.mod.CSSObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClearNotification extends js.Object {
+trait ClearNotification extends StObject {
   
   def clearNotification(id: String): Unit = js.native
   
@@ -27,29 +28,17 @@ object ClearNotification {
   }
   
   @scala.inline
-  implicit class ClearNotificationOps[Self <: ClearNotification] (val x: Self) extends AnyVal {
+  implicit class ClearNotificationMutableBuilder[Self <: ClearNotification] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setClearNotification(value: String => Unit): Self = this.set("clearNotification", js.Any.fromFunction1(value))
+    def setClearNotification(value: String => Unit): Self = StObject.set(x, "clearNotification", js.Any.fromFunction1(value))
     
     @scala.inline
     def setNotifications(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'] */ js.Any
-    ): Self = this.set("notifications", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPlacement(value: CSSObject): Self = this.set("placement", value.asInstanceOf[js.Any])
+    def setPlacement(value: CSSObject): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
   }
 }

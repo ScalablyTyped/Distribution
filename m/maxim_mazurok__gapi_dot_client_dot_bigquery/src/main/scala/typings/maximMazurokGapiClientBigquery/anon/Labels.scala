@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientBigquery.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Labels extends js.Object {
+trait Labels extends StObject {
   
   var labels: js.UndefOr[js.Array[String]] = js.native
   
@@ -22,39 +23,27 @@ object Labels {
   }
   
   @scala.inline
-  implicit class LabelsOps[Self <: Labels] (val x: Self) extends AnyVal {
+  implicit class LabelsMutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
     @scala.inline
-    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    def setLossType(value: String): Self = StObject.set(x, "lossType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: js.Array[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    def setLossTypeUndefined: Self = StObject.set(x, "lossType", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("labels", js.undefined)
+    def setModelType(value: String): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLossType(value: String): Self = this.set("lossType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLossType: Self = this.set("lossType", js.undefined)
-    
-    @scala.inline
-    def setModelType(value: String): Self = this.set("modelType", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteModelType: Self = this.set("modelType", js.undefined)
+    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
   }
 }

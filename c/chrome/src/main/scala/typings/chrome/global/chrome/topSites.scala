@@ -1,6 +1,7 @@
 package typings.chrome.global.chrome
 
 import typings.chrome.chrome.topSites.MostVisitedURL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Permissions:  "topSites"
   * @since Chrome 19.
   */
-@JSGlobal("chrome.topSites")
-@js.native
-object topSites extends js.Object {
+object topSites {
   
+  @JSGlobal("chrome.topSites.get")
+  @js.native
   def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = js.native
 }

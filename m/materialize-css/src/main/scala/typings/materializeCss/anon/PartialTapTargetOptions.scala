@@ -1,17 +1,19 @@
 package typings.materializeCss.anon
 
+import typings.materializeCss.M.TapTarget
 import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.TapTargetOptions> */
 @js.native
-trait PartialTapTargetOptions extends js.Object {
+trait PartialTapTargetOptions extends StObject {
   
-  var onClose: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* origin */ Element, Unit]] = js.native
+  var onClose: js.UndefOr[js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]] = js.native
   
-  var onOpen: js.UndefOr[js.ThisFunction1[/* this */ this.type, /* origin */ Element, Unit]] = js.native
+  var onOpen: js.UndefOr[js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]] = js.native
 }
 object PartialTapTargetOptions {
   
@@ -22,30 +24,18 @@ object PartialTapTargetOptions {
   }
   
   @scala.inline
-  implicit class PartialTapTargetOptionsOps[Self <: PartialTapTargetOptions] (val x: Self) extends AnyVal {
+  implicit class PartialTapTargetOptionsMutableBuilder[Self <: PartialTapTargetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOnClose(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setOnOpen(value: js.ThisFunction1[/* this */ TapTarget, /* origin */ Element, Unit]): Self = StObject.set(x, "onOpen", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClose(value: js.ThisFunction1[PartialTapTargetOptions, /* origin */ Element, Unit]): Self = this.set("onClose", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnClose: Self = this.set("onClose", js.undefined)
-    
-    @scala.inline
-    def setOnOpen(value: js.ThisFunction1[PartialTapTargetOptions, /* origin */ Element, Unit]): Self = this.set("onOpen", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOnOpen: Self = this.set("onOpen", js.undefined)
+    def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
   }
 }

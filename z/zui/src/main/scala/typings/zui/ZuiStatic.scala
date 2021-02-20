@@ -1,11 +1,12 @@
 package typings.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ZuiStatic extends js.Object {
+trait ZuiStatic extends StObject {
   
   var Color: ColorStatic = js.native
   
@@ -39,33 +40,21 @@ object ZuiStatic {
   }
   
   @scala.inline
-  implicit class ZuiStaticOps[Self <: ZuiStatic] (val x: Self) extends AnyVal {
+  implicit class ZuiStaticMutableBuilder[Self <: ZuiStatic] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setColor(value: ColorStatic): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setColorset(value: ColorSet): Self = StObject.set(x, "colorset", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setMessager(value: MessagerStatic): Self = StObject.set(x, "Messager", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: ColorStatic): Self = this.set("Color", value.asInstanceOf[js.Any])
+    def setModalTrigger(value: ModalTriggerStatic): Self = StObject.set(x, "ModalTrigger", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessager(value: MessagerStatic): Self = this.set("Messager", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setModalTrigger(value: ModalTriggerStatic): Self = this.set("ModalTrigger", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setColorset(value: ColorSet): Self = this.set("colorset", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setStore(value: StoreStatic): Self = this.set("store", value.asInstanceOf[js.Any])
+    def setStore(value: StoreStatic): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

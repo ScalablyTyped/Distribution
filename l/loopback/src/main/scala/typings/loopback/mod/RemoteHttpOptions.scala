@@ -6,6 +6,7 @@ import typings.loopback.loopbackStrings.get
 import typings.loopback.loopbackStrings.patch
 import typings.loopback.loopbackStrings.post
 import typings.loopback.loopbackStrings.put
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} errorStatus    Default HTTP status set when the callback is called with an error.
   */
 @js.native
-trait RemoteHttpOptions extends js.Object {
+trait RemoteHttpOptions extends StObject {
   
   /**
     * errorStatus    Default HTTP status set when the callback is called with an error.
@@ -62,36 +63,24 @@ object RemoteHttpOptions {
   }
   
   @scala.inline
-  implicit class RemoteHttpOptionsOps[Self <: RemoteHttpOptions] (val x: Self) extends AnyVal {
+  implicit class RemoteHttpOptionsMutableBuilder[Self <: RemoteHttpOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setErrorStatus(value: Double): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setErrorStatusUndefined: Self = StObject.set(x, "errorStatus", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerb(value: get | post | patch | put | del | all): Self = this.set("verb", value.asInstanceOf[js.Any])
+    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     @scala.inline
-    def setErrorStatus(value: Double): Self = this.set("errorStatus", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteErrorStatus: Self = this.set("errorStatus", js.undefined)
-    
-    @scala.inline
-    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStatus: Self = this.set("status", js.undefined)
+    def setVerb(value: get | post | patch | put | del | all): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
   }
 }

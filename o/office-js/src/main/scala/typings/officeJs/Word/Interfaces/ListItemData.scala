@@ -1,12 +1,13 @@
 package typings.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `listItem.toJSON()`. */
 @js.native
-trait ListItemData extends js.Object {
+trait ListItemData extends StObject {
   
   /**
     *
@@ -41,36 +42,24 @@ object ListItemData {
   }
   
   @scala.inline
-  implicit class ListItemDataOps[Self <: ListItemData] (val x: Self) extends AnyVal {
+  implicit class ListItemDataMutableBuilder[Self <: ListItemData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setListString(value: String): Self = StObject.set(x, "listString", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    def setListStringUndefined: Self = StObject.set(x, "listString", js.undefined)
     
     @scala.inline
-    def deleteLevel: Self = this.set("level", js.undefined)
+    def setSiblingIndex(value: Double): Self = StObject.set(x, "siblingIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setListString(value: String): Self = this.set("listString", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteListString: Self = this.set("listString", js.undefined)
-    
-    @scala.inline
-    def setSiblingIndex(value: Double): Self = this.set("siblingIndex", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSiblingIndex: Self = this.set("siblingIndex", js.undefined)
+    def setSiblingIndexUndefined: Self = StObject.set(x, "siblingIndex", js.undefined)
   }
 }

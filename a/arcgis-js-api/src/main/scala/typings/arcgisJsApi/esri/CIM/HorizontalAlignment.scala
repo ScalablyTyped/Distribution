@@ -1,14 +1,15 @@
 package typings.arcgisJsApi.esri.CIM
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HorizontalAlignment extends js.Object
+sealed trait HorizontalAlignment extends StObject
 @JSGlobal("__esri.CIM.HorizontalAlignment")
 @js.native
-object HorizontalAlignment extends js.Object {
+object HorizontalAlignment extends StObject {
   
   /**
     * Centered.

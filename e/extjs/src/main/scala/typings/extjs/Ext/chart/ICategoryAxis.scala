@@ -1,5 +1,6 @@
 package typings.extjs.Ext.chart
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,30 +24,18 @@ object ICategoryAxis {
   }
   
   @scala.inline
-  implicit class ICategoryAxisOps[Self <: ICategoryAxis] (val x: Self) extends AnyVal {
+  implicit class ICategoryAxisMutableBuilder[Self <: ICategoryAxis] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setCalculateCategoryCount(value: Boolean): Self = StObject.set(x, "calculateCategoryCount", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalculateCategoryCountUndefined: Self = StObject.set(x, "calculateCategoryCount", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCategoryNames(value: String): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCalculateCategoryCount(value: Boolean): Self = this.set("calculateCategoryCount", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCalculateCategoryCount: Self = this.set("calculateCategoryCount", js.undefined)
-    
-    @scala.inline
-    def setCategoryNames(value: String): Self = this.set("categoryNames", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteCategoryNames: Self = this.set("categoryNames", js.undefined)
+    def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
   }
 }

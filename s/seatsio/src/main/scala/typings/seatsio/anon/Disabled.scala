@@ -1,11 +1,12 @@
 package typings.seatsio.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Disabled extends js.Object {
+trait Disabled extends StObject {
   
   var disabled: js.Array[String] = js.native
   
@@ -22,36 +23,24 @@ object Disabled {
   }
   
   @scala.inline
-  implicit class DisabledOps[Self <: Disabled] (val x: Self) extends AnyVal {
+  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisabled(value: js.Array[String]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDisabledVarargs(value: String*): Self = StObject.set(x, "disabled", js.Array(value :_*))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setEnabled(value: js.Array[String]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDisabledVarargs(value: String*): Self = this.set("disabled", js.Array(value :_*))
+    def setEnabledVarargs(value: String*): Self = StObject.set(x, "enabled", js.Array(value :_*))
     
     @scala.inline
-    def setDisabled(value: js.Array[String]): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    def setReadOnly(value: js.Array[String]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnabledVarargs(value: String*): Self = this.set("enabled", js.Array(value :_*))
-    
-    @scala.inline
-    def setEnabled(value: js.Array[String]): Self = this.set("enabled", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReadOnlyVarargs(value: String*): Self = this.set("readOnly", js.Array(value :_*))
-    
-    @scala.inline
-    def setReadOnly(value: js.Array[String]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    def setReadOnlyVarargs(value: String*): Self = StObject.set(x, "readOnly", js.Array(value :_*))
   }
 }

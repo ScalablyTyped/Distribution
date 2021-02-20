@@ -4,17 +4,17 @@ import typings.sipJs.dialogsMod.SubscriptionDialog
 import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
 import typings.sipJs.userAgentClientMod.UserAgentClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js/lib/core/user-agents/re-subscribe-user-agent-client", JSImport.Namespace)
-@js.native
-object reSubscribeUserAgentClientMod extends js.Object {
+object reSubscribeUserAgentClientMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
-  - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @js.native
+  - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @JSImport("sip.js/lib/core/user-agents/re-subscribe-user-agent-client", "ReSubscribeUserAgentClient")
+  @js.native
   class ReSubscribeUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SubscriptionDialog) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()

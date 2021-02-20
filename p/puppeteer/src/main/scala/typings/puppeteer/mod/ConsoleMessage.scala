@@ -1,11 +1,12 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConsoleMessage extends js.Object {
+trait ConsoleMessage extends StObject {
   
   /** The message arguments. */
   def args(): js.Array[JSHandle[_]] = js.native
@@ -33,30 +34,18 @@ object ConsoleMessage {
   }
   
   @scala.inline
-  implicit class ConsoleMessageOps[Self <: ConsoleMessage] (val x: Self) extends AnyVal {
+  implicit class ConsoleMessageMutableBuilder[Self <: ConsoleMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: () => js.Array[JSHandle[_]]): Self = StObject.set(x, "args", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setLocation(value: () => ConsoleMessageLocation): Self = StObject.set(x, "location", js.Any.fromFunction0(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArgs(value: () => js.Array[JSHandle[_]]): Self = this.set("args", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setLocation(value: () => ConsoleMessageLocation): Self = this.set("location", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setText(value: () => String): Self = this.set("text", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setType(value: () => ConsoleMessageType): Self = this.set("type", js.Any.fromFunction0(value))
+    def setType(value: () => ConsoleMessageType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
   }
 }

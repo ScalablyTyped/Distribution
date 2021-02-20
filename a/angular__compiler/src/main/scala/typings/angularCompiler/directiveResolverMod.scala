@@ -4,18 +4,16 @@ import typings.angularCompiler.angularCompilerBooleans.`true`
 import typings.angularCompiler.compileReflectorMod.CompileReflector
 import typings.angularCompiler.coreMod.Directive
 import typings.angularCompiler.coreMod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/compiler/src/directive_resolver", JSImport.Namespace)
-@js.native
-object directiveResolverMod extends js.Object {
+object directiveResolverMod {
   
-  def findLast[T](arr: js.Array[T], condition: js.Function1[/* value */ T, Boolean]): T | Null = js.native
-  
+  @JSImport("@angular/compiler/src/directive_resolver", "DirectiveResolver")
   @js.native
-  class DirectiveResolver protected () extends js.Object {
+  class DirectiveResolver protected () extends StObject {
     def this(_reflector: CompileReflector) = this()
     
     var _dedupeBindings: js.Any = js.native
@@ -38,4 +36,8 @@ object directiveResolverMod extends js.Object {
     @JSName("resolve")
     def resolve_true(`type`: Type, throwIfNotFound: `true`): Directive = js.native
   }
+  
+  @JSImport("@angular/compiler/src/directive_resolver", "findLast")
+  @js.native
+  def findLast[T](arr: js.Array[T], condition: js.Function1[/* value */ T, Boolean]): T | Null = js.native
 }

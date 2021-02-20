@@ -1,11 +1,12 @@
 package typings.awsSdk.appmeshMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HttpRetryPolicy extends js.Object {
+trait HttpRetryPolicy extends StObject {
   
   /**
     * Specify at least one of the following values.    server-error – HTTP status codes 500, 501, 502, 503, 504, 505, 506, 507, 508, 510, and 511    gateway-error – HTTP status codes 502, 503, and 504    client-error – HTTP status code 409    stream-error – Retry on refused stream  
@@ -36,42 +37,30 @@ object HttpRetryPolicy {
   }
   
   @scala.inline
-  implicit class HttpRetryPolicyOps[Self <: HttpRetryPolicy] (val x: Self) extends AnyVal {
+  implicit class HttpRetryPolicyMutableBuilder[Self <: HttpRetryPolicy] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setHttpRetryEvents(value: HttpRetryPolicyEvents): Self = StObject.set(x, "httpRetryEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setHttpRetryEventsUndefined: Self = StObject.set(x, "httpRetryEvents", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHttpRetryEventsVarargs(value: HttpRetryPolicyEvent*): Self = StObject.set(x, "httpRetryEvents", js.Array(value :_*))
     
     @scala.inline
-    def setMaxRetries(value: MaxRetries): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    def setMaxRetries(value: MaxRetries): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPerRetryTimeout(value: Duration): Self = this.set("perRetryTimeout", value.asInstanceOf[js.Any])
+    def setPerRetryTimeout(value: Duration): Self = StObject.set(x, "perRetryTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRetryEventsVarargs(value: HttpRetryPolicyEvent*): Self = this.set("httpRetryEvents", js.Array(value :_*))
+    def setTcpRetryEvents(value: TcpRetryPolicyEvents): Self = StObject.set(x, "tcpRetryEvents", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHttpRetryEvents(value: HttpRetryPolicyEvents): Self = this.set("httpRetryEvents", value.asInstanceOf[js.Any])
+    def setTcpRetryEventsUndefined: Self = StObject.set(x, "tcpRetryEvents", js.undefined)
     
     @scala.inline
-    def deleteHttpRetryEvents: Self = this.set("httpRetryEvents", js.undefined)
-    
-    @scala.inline
-    def setTcpRetryEventsVarargs(value: TcpRetryPolicyEvent*): Self = this.set("tcpRetryEvents", js.Array(value :_*))
-    
-    @scala.inline
-    def setTcpRetryEvents(value: TcpRetryPolicyEvents): Self = this.set("tcpRetryEvents", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteTcpRetryEvents: Self = this.set("tcpRetryEvents", js.undefined)
+    def setTcpRetryEventsVarargs(value: TcpRetryPolicyEvent*): Self = StObject.set(x, "tcpRetryEvents", js.Array(value :_*))
   }
 }

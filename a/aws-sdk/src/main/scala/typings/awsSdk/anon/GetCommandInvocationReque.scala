@@ -4,13 +4,14 @@ import typings.awsSdk.serviceMod.WaiterConfiguration
 import typings.awsSdk.ssmMod.CommandId
 import typings.awsSdk.ssmMod.CommandPluginName
 import typings.awsSdk.ssmMod.InstanceId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/ssm.GetCommandInvocationRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
-trait GetCommandInvocationReque extends js.Object {
+trait GetCommandInvocationReque extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.native
@@ -39,36 +40,24 @@ object GetCommandInvocationReque {
   }
   
   @scala.inline
-  implicit class GetCommandInvocationRequeOps[Self <: GetCommandInvocationReque] (val x: Self) extends AnyVal {
+  implicit class GetCommandInvocationRequeMutableBuilder[Self <: GetCommandInvocationReque] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommandId(value: CommandId): Self = this.set("CommandId", value.asInstanceOf[js.Any])
+    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    def setPluginName(value: CommandPluginName): Self = StObject.set(x, "PluginName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def delete$waiter: Self = this.set("$waiter", js.undefined)
-    
-    @scala.inline
-    def setPluginName(value: CommandPluginName): Self = this.set("PluginName", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deletePluginName: Self = this.set("PluginName", js.undefined)
+    def setPluginNameUndefined: Self = StObject.set(x, "PluginName", js.undefined)
   }
 }

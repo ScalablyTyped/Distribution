@@ -1,6 +1,6 @@
 package typings.parse.mod.global.Parse
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +36,3 @@ trait Installation[T /* <: Attributes */] extends Object[T] {
   
   var timeZone: js.Any = js.native
 }
-@JSGlobal("Parse.Installation")
-@js.native
-object Installation extends TopLevel[InstallationConstructor]

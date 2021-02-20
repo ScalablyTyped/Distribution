@@ -1,12 +1,13 @@
 package typings.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "TeamMemberAssignedLocations")
 @js.native
-class TeamMemberAssignedLocations () extends js.Object {
+class TeamMemberAssignedLocations () extends StObject {
   
   /**
     * The current assignment type of the team member.

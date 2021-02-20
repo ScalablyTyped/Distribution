@@ -1,11 +1,12 @@
 package typings.awsSdk.macie2Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UsageRecord extends js.Object {
+trait UsageRecord extends StObject {
   
   /**
     * The unique identifier for the AWS account that the data applies to.
@@ -31,39 +32,27 @@ object UsageRecord {
   }
   
   @scala.inline
-  implicit class UsageRecordOps[Self <: UsageRecord] (val x: Self) extends AnyVal {
+  implicit class UsageRecordMutableBuilder[Self <: UsageRecord] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFreeTrialStartDate(value: timestampIso8601): Self = StObject.set(x, "freeTrialStartDate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    def setFreeTrialStartDateUndefined: Self = StObject.set(x, "freeTrialStartDate", js.undefined)
     
     @scala.inline
-    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    def setUsage(value: listOfUsageByAccount): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFreeTrialStartDate(value: timestampIso8601): Self = this.set("freeTrialStartDate", value.asInstanceOf[js.Any])
+    def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     
     @scala.inline
-    def deleteFreeTrialStartDate: Self = this.set("freeTrialStartDate", js.undefined)
-    
-    @scala.inline
-    def setUsageVarargs(value: UsageByAccount*): Self = this.set("usage", js.Array(value :_*))
-    
-    @scala.inline
-    def setUsage(value: listOfUsageByAccount): Self = this.set("usage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUsage: Self = this.set("usage", js.undefined)
+    def setUsageVarargs(value: UsageByAccount*): Self = StObject.set(x, "usage", js.Array(value :_*))
   }
 }

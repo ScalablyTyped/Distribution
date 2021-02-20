@@ -5,17 +5,16 @@ import typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSignin
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "certificates")
-@js.native
-object certificates extends js.Object {
+object certificates {
   
-  @js.native
-  object v1 extends js.Object {
+  object v1 {
     
+    @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequest")
     @js.native
     class CertificateSigningRequest protected ()
       extends typings.pulumiKubernetes.certificatesMod.v1.CertificateSigningRequest {
@@ -32,8 +31,7 @@ object certificates extends js.Object {
       def this(name: String, args: CertificateSigningRequestArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object CertificateSigningRequest extends js.Object {
+    object CertificateSigningRequest {
       
       /**
         * Get an existing CertificateSigningRequest resource's state with the given name, ID, and optional extra
@@ -43,16 +41,23 @@ object certificates extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequest.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest = js.native
+      @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequest.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CertificateSigningRequestMod.CertificateSigningRequest = js.native
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequest.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequest.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequest.CertificateSigningRequest */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequestList")
     @js.native
     class CertificateSigningRequestList protected ()
       extends typings.pulumiKubernetes.certificatesMod.v1.CertificateSigningRequestList {
@@ -69,8 +74,7 @@ object certificates extends js.Object {
       def this(name: String, args: CertificateSigningRequestListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
-    @js.native
-    object CertificateSigningRequestList extends js.Object {
+    object CertificateSigningRequestList {
       
       /**
         * Get an existing CertificateSigningRequestList resource's state with the given name, ID, and optional extra
@@ -80,20 +84,26 @@ object certificates extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequestList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList = js.native
+      @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequestList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1CertificateSigningRequestListMod.CertificateSigningRequestList = js.native
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1.CertificateSigningRequestList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = js.native
     }
   }
   
-  @js.native
-  object v1beta1 extends js.Object {
+  object v1beta1 {
     
+    @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequest")
     @js.native
     class CertificateSigningRequest protected ()
       extends typings.pulumiKubernetes.certificatesMod.v1beta1.CertificateSigningRequest {
@@ -117,8 +127,7 @@ object certificates extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object CertificateSigningRequest extends js.Object {
+    object CertificateSigningRequest {
       
       /**
         * Get an existing CertificateSigningRequest resource's state with the given name, ID, and optional extra
@@ -128,16 +137,23 @@ object certificates extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequest.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest = js.native
+      @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequest.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.certificateSigningRequestMod.CertificateSigningRequest = js.native
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequest.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequest.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequest.CertificateSigningRequest */ Boolean = js.native
     }
     
+    @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequestList")
     @js.native
     class CertificateSigningRequestList protected ()
       extends typings.pulumiKubernetes.certificatesMod.v1beta1.CertificateSigningRequestList {
@@ -161,8 +177,7 @@ object certificates extends js.Object {
       ) = this()
     }
     /* static members */
-    @js.native
-    object CertificateSigningRequestList extends js.Object {
+    object CertificateSigningRequestList {
       
       /**
         * Get an existing CertificateSigningRequestList resource's state with the given name, ID, and optional extra
@@ -172,13 +187,19 @@ object certificates extends js.Object {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequestList.get")
+      @js.native
       def get(name: String, id: Input[ID]): typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList = js.native
+      @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequestList.get")
+      @js.native
       def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.certificateSigningRequestListMod.CertificateSigningRequestList = js.native
       
       /**
         * Returns true if the given object is an instance of CertificateSigningRequestList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
+      @JSImport("@pulumi/kubernetes", "certificates.v1beta1.CertificateSigningRequestList.isInstance")
+      @js.native
       def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/certificates/v1beta1/certificateSigningRequestList.CertificateSigningRequestList */ Boolean = js.native
     }
   }

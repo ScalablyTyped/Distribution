@@ -1,11 +1,12 @@
 package typings.pulumiAws.outputMod.appmesh
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualGatewaySpecListenerTlsCertificate extends js.Object {
+trait VirtualGatewaySpecListenerTlsCertificate extends StObject {
   
   /**
     * An AWS Certificate Manager (ACM) certificate.
@@ -26,30 +27,18 @@ object VirtualGatewaySpecListenerTlsCertificate {
   }
   
   @scala.inline
-  implicit class VirtualGatewaySpecListenerTlsCertificateOps[Self <: VirtualGatewaySpecListenerTlsCertificate] (val x: Self) extends AnyVal {
+  implicit class VirtualGatewaySpecListenerTlsCertificateMutableBuilder[Self <: VirtualGatewaySpecListenerTlsCertificate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAcm(value: VirtualGatewaySpecListenerTlsCertificateAcm): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setFile(value: VirtualGatewaySpecListenerTlsCertificateFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAcm(value: VirtualGatewaySpecListenerTlsCertificateAcm): Self = this.set("acm", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteAcm: Self = this.set("acm", js.undefined)
-    
-    @scala.inline
-    def setFile(value: VirtualGatewaySpecListenerTlsCertificateFile): Self = this.set("file", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteFile: Self = this.set("file", js.undefined)
+    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

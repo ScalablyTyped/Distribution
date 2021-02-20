@@ -5,12 +5,13 @@ import typings.devtoolsProtocol.mod.Protocol.Performance.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.Performance.GetMetricsResponse
 import typings.devtoolsProtocol.mod.Protocol.Performance.MetricsEvent
 import typings.devtoolsProtocol.mod.Protocol.Performance.SetTimeDomainRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PerformanceApi extends js.Object {
+trait PerformanceApi extends StObject {
   
   /**
     * Disable collecting and reporting metrics.
@@ -55,33 +56,21 @@ object PerformanceApi {
   }
   
   @scala.inline
-  implicit class PerformanceApiOps[Self <: PerformanceApi] (val x: Self) extends AnyVal {
+  implicit class PerformanceApiMutableBuilder[Self <: PerformanceApi] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setEnable(value: EnableRequest => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setGetMetrics(value: () => js.Promise[GetMetricsResponse]): Self = StObject.set(x, "getMetrics", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = this.set("disable", js.Any.fromFunction0(value))
+    def setOn(value: (metrics, js.Function1[/* params */ MetricsEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setEnable(value: EnableRequest => js.Promise[Unit]): Self = this.set("enable", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setGetMetrics(value: () => js.Promise[GetMetricsResponse]): Self = this.set("getMetrics", js.Any.fromFunction0(value))
-    
-    @scala.inline
-    def setOn(value: (metrics, js.Function1[/* params */ MetricsEvent, Unit]) => Unit): Self = this.set("on", js.Any.fromFunction2(value))
-    
-    @scala.inline
-    def setSetTimeDomain(value: SetTimeDomainRequest => js.Promise[Unit]): Self = this.set("setTimeDomain", js.Any.fromFunction1(value))
+    def setSetTimeDomain(value: SetTimeDomainRequest => js.Promise[Unit]): Self = StObject.set(x, "setTimeDomain", js.Any.fromFunction1(value))
   }
 }

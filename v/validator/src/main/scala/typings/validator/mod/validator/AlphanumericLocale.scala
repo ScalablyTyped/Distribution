@@ -1,6 +1,7 @@
 package typings.validator.mod.validator
 
 import typings.validator.validatorStrings.`pl-Pl_`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.validator.validatorStrings.`pt-BR`
   - typings.validator.validatorStrings.`pl-Pl_`
 */
-trait AlphanumericLocale extends js.Object
+trait AlphanumericLocale extends StObject
 object AlphanumericLocale {
   
   @scala.inline

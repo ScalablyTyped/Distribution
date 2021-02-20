@@ -2,13 +2,14 @@ package typings.vscode.mod
 
 import typings.vscode.mod.TaskScope.Global
 import typings.vscode.mod.TaskScope.Workspace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Task")
 @js.native
-class Task protected () extends js.Object {
+class Task protected () extends StObject {
   /**
     * Creates a new task.
     *

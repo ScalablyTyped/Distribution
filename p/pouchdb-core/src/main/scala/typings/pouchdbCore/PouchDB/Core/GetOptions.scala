@@ -1,5 +1,6 @@
 package typings.pouchdbCore.PouchDB.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,60 +41,48 @@ object GetOptions {
   }
   
   @scala.inline
-  implicit class GetOptionsOps[Self <: GetOptions] (val x: Self) extends AnyVal {
+  implicit class GetOptionsMutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttachments(value: Boolean): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
     @scala.inline
-    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    def setConflicts(value: Boolean): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBinary(value: Boolean): Self = this.set("binary", value.asInstanceOf[js.Any])
+    def setConflictsUndefined: Self = StObject.set(x, "conflicts", js.undefined)
     
     @scala.inline
-    def deleteBinary: Self = this.set("binary", js.undefined)
+    def setLatest(value: Boolean): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflicts(value: Boolean): Self = this.set("conflicts", value.asInstanceOf[js.Any])
+    def setLatestUndefined: Self = StObject.set(x, "latest", js.undefined)
     
     @scala.inline
-    def deleteConflicts: Self = this.set("conflicts", js.undefined)
+    def setRev(value: RevisionId): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLatest(value: Boolean): Self = this.set("latest", value.asInstanceOf[js.Any])
+    def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     @scala.inline
-    def deleteLatest: Self = this.set("latest", js.undefined)
+    def setRevs(value: Boolean): Self = StObject.set(x, "revs", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRev(value: RevisionId): Self = this.set("rev", value.asInstanceOf[js.Any])
+    def setRevsUndefined: Self = StObject.set(x, "revs", js.undefined)
     
     @scala.inline
-    def deleteRev: Self = this.set("rev", js.undefined)
+    def setRevs_info(value: Boolean): Self = StObject.set(x, "revs_info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRevs(value: Boolean): Self = this.set("revs", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevs: Self = this.set("revs", js.undefined)
-    
-    @scala.inline
-    def setRevs_info(value: Boolean): Self = this.set("revs_info", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteRevs_info: Self = this.set("revs_info", js.undefined)
+    def setRevs_infoUndefined: Self = StObject.set(x, "revs_info", js.undefined)
   }
 }

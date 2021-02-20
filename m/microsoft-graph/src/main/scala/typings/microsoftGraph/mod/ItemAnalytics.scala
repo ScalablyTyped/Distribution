@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,48 +23,36 @@ object ItemAnalytics {
   }
   
   @scala.inline
-  implicit class ItemAnalyticsOps[Self <: ItemAnalytics] (val x: Self) extends AnyVal {
+  implicit class ItemAnalyticsMutableBuilder[Self <: ItemAnalytics] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAllTime(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAllTimeNull: Self = StObject.set(x, "allTime", null)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setAllTimeUndefined: Self = StObject.set(x, "allTime", js.undefined)
     
     @scala.inline
-    def setAllTime(value: NullableOption[ItemActivityStat]): Self = this.set("allTime", value.asInstanceOf[js.Any])
+    def setItemActivityStats(value: NullableOption[js.Array[ItemActivityStat]]): Self = StObject.set(x, "itemActivityStats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteAllTime: Self = this.set("allTime", js.undefined)
+    def setItemActivityStatsNull: Self = StObject.set(x, "itemActivityStats", null)
     
     @scala.inline
-    def setAllTimeNull: Self = this.set("allTime", null)
+    def setItemActivityStatsUndefined: Self = StObject.set(x, "itemActivityStats", js.undefined)
     
     @scala.inline
-    def setItemActivityStatsVarargs(value: ItemActivityStat*): Self = this.set("itemActivityStats", js.Array(value :_*))
+    def setItemActivityStatsVarargs(value: ItemActivityStat*): Self = StObject.set(x, "itemActivityStats", js.Array(value :_*))
     
     @scala.inline
-    def setItemActivityStats(value: NullableOption[js.Array[ItemActivityStat]]): Self = this.set("itemActivityStats", value.asInstanceOf[js.Any])
+    def setLastSevenDays(value: NullableOption[ItemActivityStat]): Self = StObject.set(x, "lastSevenDays", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deleteItemActivityStats: Self = this.set("itemActivityStats", js.undefined)
+    def setLastSevenDaysNull: Self = StObject.set(x, "lastSevenDays", null)
     
     @scala.inline
-    def setItemActivityStatsNull: Self = this.set("itemActivityStats", null)
-    
-    @scala.inline
-    def setLastSevenDays(value: NullableOption[ItemActivityStat]): Self = this.set("lastSevenDays", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLastSevenDays: Self = this.set("lastSevenDays", js.undefined)
-    
-    @scala.inline
-    def setLastSevenDaysNull: Self = this.set("lastSevenDays", null)
+    def setLastSevenDaysUndefined: Self = StObject.set(x, "lastSevenDays", js.undefined)
   }
 }

@@ -2,12 +2,13 @@ package typings.wordpressBlocks.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BlockInstance[T /* <: Record[String, _] */] extends js.Object {
+trait BlockInstance[T /* <: Record[String, _] */] extends StObject {
   
   /**
     * Attributes for the block.
@@ -54,42 +55,30 @@ object BlockInstance {
   }
   
   @scala.inline
-  implicit class BlockInstanceOps[Self <: BlockInstance[_], T /* <: Record[String, _] */] (val x: Self with BlockInstance[T]) extends AnyVal {
+  implicit class BlockInstanceMutableBuilder[Self <: BlockInstance[_], T /* <: Record[String, _] */] (val x: Self with BlockInstance[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAttributes(value: T): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = StObject.set(x, "innerBlocks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAttributes(value: T): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = StObject.set(x, "innerBlocks", js.Array(value :_*))
     
     @scala.inline
-    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerBlocksVarargs(value: BlockInstance[StringDictionary[js.Any]]*): Self = this.set("innerBlocks", js.Array(value :_*))
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerBlocks(value: js.Array[BlockInstance[StringDictionary[_]]]): Self = this.set("innerBlocks", value.asInstanceOf[js.Any])
+    def setOriginalContent(value: String): Self = StObject.set(x, "originalContent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setOriginalContent(value: String): Self = this.set("originalContent", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteOriginalContent: Self = this.set("originalContent", js.undefined)
+    def setOriginalContentUndefined: Self = StObject.set(x, "originalContent", js.undefined)
   }
 }

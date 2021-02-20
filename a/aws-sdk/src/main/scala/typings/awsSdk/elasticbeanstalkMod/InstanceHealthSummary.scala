@@ -1,11 +1,12 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InstanceHealthSummary extends js.Object {
+trait InstanceHealthSummary extends StObject {
   
   /**
     *  Red. The health agent is reporting a high number of request failures or other issues for an instance or environment.
@@ -56,66 +57,54 @@ object InstanceHealthSummary {
   }
   
   @scala.inline
-  implicit class InstanceHealthSummaryOps[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
+  implicit class InstanceHealthSummaryMutableBuilder[Self <: InstanceHealthSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDegraded(value: NullableInteger): Self = StObject.set(x, "Degraded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDegradedUndefined: Self = StObject.set(x, "Degraded", js.undefined)
     
     @scala.inline
-    def set(key: java.lang.String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setInfo(value: NullableInteger): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDegraded(value: NullableInteger): Self = this.set("Degraded", value.asInstanceOf[js.Any])
+    def setInfoUndefined: Self = StObject.set(x, "Info", js.undefined)
     
     @scala.inline
-    def deleteDegraded: Self = this.set("Degraded", js.undefined)
+    def setNoData(value: NullableInteger): Self = StObject.set(x, "NoData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfo(value: NullableInteger): Self = this.set("Info", value.asInstanceOf[js.Any])
+    def setNoDataUndefined: Self = StObject.set(x, "NoData", js.undefined)
     
     @scala.inline
-    def deleteInfo: Self = this.set("Info", js.undefined)
+    def setOk(value: NullableInteger): Self = StObject.set(x, "Ok", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setNoData(value: NullableInteger): Self = this.set("NoData", value.asInstanceOf[js.Any])
+    def setOkUndefined: Self = StObject.set(x, "Ok", js.undefined)
     
     @scala.inline
-    def deleteNoData: Self = this.set("NoData", js.undefined)
+    def setPending(value: NullableInteger): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOk(value: NullableInteger): Self = this.set("Ok", value.asInstanceOf[js.Any])
+    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
     
     @scala.inline
-    def deleteOk: Self = this.set("Ok", js.undefined)
+    def setSevere(value: NullableInteger): Self = StObject.set(x, "Severe", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPending(value: NullableInteger): Self = this.set("Pending", value.asInstanceOf[js.Any])
+    def setSevereUndefined: Self = StObject.set(x, "Severe", js.undefined)
     
     @scala.inline
-    def deletePending: Self = this.set("Pending", js.undefined)
+    def setUnknown(value: NullableInteger): Self = StObject.set(x, "Unknown", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSevere(value: NullableInteger): Self = this.set("Severe", value.asInstanceOf[js.Any])
+    def setUnknownUndefined: Self = StObject.set(x, "Unknown", js.undefined)
     
     @scala.inline
-    def deleteSevere: Self = this.set("Severe", js.undefined)
+    def setWarning(value: NullableInteger): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUnknown(value: NullableInteger): Self = this.set("Unknown", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUnknown: Self = this.set("Unknown", js.undefined)
-    
-    @scala.inline
-    def setWarning(value: NullableInteger): Self = this.set("Warning", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWarning: Self = this.set("Warning", js.undefined)
+    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

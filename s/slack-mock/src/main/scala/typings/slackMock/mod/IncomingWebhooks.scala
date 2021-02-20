@@ -1,11 +1,12 @@
 package typings.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IncomingWebhooks[T] extends js.Object {
+trait IncomingWebhooks[T] extends StObject {
   
   def addResponse(opts: IncomingWebhookOptions[T]): Unit = js.native
   
@@ -26,30 +27,18 @@ object IncomingWebhooks {
   }
   
   @scala.inline
-  implicit class IncomingWebhooksOps[Self <: IncomingWebhooks[_], T] (val x: Self with IncomingWebhooks[T]) extends AnyVal {
+  implicit class IncomingWebhooksMutableBuilder[Self <: IncomingWebhooks[_], T] (val x: Self with IncomingWebhooks[T]) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAddResponse(value: IncomingWebhookOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setCalls(value: js.Array[IncomingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCallsVarargs(value: IncomingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
     @scala.inline
-    def setAddResponse(value: IncomingWebhookOptions[T] => Unit): Self = this.set("addResponse", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCallsVarargs(value: IncomingWebhookCall[T]*): Self = this.set("calls", js.Array(value :_*))
-    
-    @scala.inline
-    def setCalls(value: js.Array[IncomingWebhookCall[T]]): Self = this.set("calls", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setReset(value: () => Unit): Self = this.set("reset", js.Any.fromFunction0(value))
+    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

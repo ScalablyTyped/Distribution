@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,45 +94,33 @@ object ASPxClientSpellChecker {
   }
   
   @scala.inline
-  implicit class ASPxClientSpellCheckerOps[Self <: ASPxClientSpellChecker] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSpellCheckerMutableBuilder[Self <: ASPxClientSpellChecker] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAfterCheck(value: ASPxClientEvent[ASPxClientAfterCheckEventHandler[ASPxClientSpellChecker]]): Self = StObject.set(x, "AfterCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setBeforeCheck(value: ASPxClientEvent[ASPxClientBeforeCheckEventHandler[ASPxClientSpellChecker]]): Self = StObject.set(x, "BeforeCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setCheck(value: () => Unit): Self = StObject.set(x, "Check", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAfterCheck(value: ASPxClientEvent[ASPxClientAfterCheckEventHandler[ASPxClientSpellChecker]]): Self = this.set("AfterCheck", value.asInstanceOf[js.Any])
+    def setCheckCompleteFormShowing(value: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpellChecker]]): Self = StObject.set(x, "CheckCompleteFormShowing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBeforeCheck(value: ASPxClientEvent[ASPxClientBeforeCheckEventHandler[ASPxClientSpellChecker]]): Self = this.set("BeforeCheck", value.asInstanceOf[js.Any])
+    def setCheckElement(value: js.Any => Unit): Self = StObject.set(x, "CheckElement", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheck(value: () => Unit): Self = this.set("Check", js.Any.fromFunction0(value))
+    def setCheckElementById(value: String => Unit): Self = StObject.set(x, "CheckElementById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckCompleteFormShowing(value: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpellChecker]]): Self = this.set("CheckCompleteFormShowing", value.asInstanceOf[js.Any])
+    def setCheckElementsInContainer(value: js.Any => Unit): Self = StObject.set(x, "CheckElementsInContainer", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckElement(value: js.Any => Unit): Self = this.set("CheckElement", js.Any.fromFunction1(value))
+    def setCheckElementsInContainerById(value: String => Unit): Self = StObject.set(x, "CheckElementsInContainerById", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setCheckElementById(value: String => Unit): Self = this.set("CheckElementById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCheckElementsInContainer(value: js.Any => Unit): Self = this.set("CheckElementsInContainer", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setCheckElementsInContainerById(value: String => Unit): Self = this.set("CheckElementsInContainerById", js.Any.fromFunction1(value))
-    
-    @scala.inline
-    def setWordChanged(value: ASPxClientEvent[ASPxClientWordChangedEventHandler[ASPxClientSpellChecker]]): Self = this.set("WordChanged", value.asInstanceOf[js.Any])
+    def setWordChanged(value: ASPxClientEvent[ASPxClientWordChangedEventHandler[ASPxClientSpellChecker]]): Self = StObject.set(x, "WordChanged", value.asInstanceOf[js.Any])
   }
 }

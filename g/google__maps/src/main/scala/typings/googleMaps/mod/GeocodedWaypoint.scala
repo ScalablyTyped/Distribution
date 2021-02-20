@@ -1,11 +1,12 @@
 package typings.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeocodedWaypoint extends js.Object {
+trait GeocodedWaypoint extends StObject {
   
   /** indicates the status code resulting from the geocoding operation. */
   var geocoder_status: GeocodedWaypointStatus = js.native
@@ -46,33 +47,21 @@ object GeocodedWaypoint {
   }
   
   @scala.inline
-  implicit class GeocodedWaypointOps[Self <: GeocodedWaypoint] (val x: Self) extends AnyVal {
+  implicit class GeocodedWaypointMutableBuilder[Self <: GeocodedWaypoint] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setGeocoder_status(value: GeocodedWaypointStatus): Self = StObject.set(x, "geocoder_status", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGeocoder_status(value: GeocodedWaypointStatus): Self = this.set("geocoder_status", value.asInstanceOf[js.Any])
+    def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPartial_match(value: Boolean): Self = this.set("partial_match", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setPlace_id(value: String): Self = this.set("place_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTypesVarargs(value: AddressType*): Self = this.set("types", js.Array(value :_*))
-    
-    @scala.inline
-    def setTypes(value: js.Array[AddressType]): Self = this.set("types", value.asInstanceOf[js.Any])
+    def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

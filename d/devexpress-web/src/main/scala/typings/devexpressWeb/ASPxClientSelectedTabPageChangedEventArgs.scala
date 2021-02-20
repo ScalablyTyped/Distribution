@@ -1,5 +1,6 @@
 package typings.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,27 +35,15 @@ object ASPxClientSelectedTabPageChangedEventArgs {
   }
   
   @scala.inline
-  implicit class ASPxClientSelectedTabPageChangedEventArgsOps[Self <: ASPxClientSelectedTabPageChangedEventArgs] (val x: Self) extends AnyVal {
+  implicit class ASPxClientSelectedTabPageChangedEventArgsMutableBuilder[Self <: ASPxClientSelectedTabPageChangedEventArgs] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPreviousPage(value: String): Self = StObject.set(x, "PreviousPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setSelectedPage(value: String): Self = StObject.set(x, "SelectedPage", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setPreviousPage(value: String): Self = this.set("PreviousPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSelectedPage(value: String): Self = this.set("SelectedPage", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setTabContainerName(value: String): Self = this.set("TabContainerName", value.asInstanceOf[js.Any])
+    def setTabContainerName(value: String): Self = StObject.set(x, "TabContainerName", value.asInstanceOf[js.Any])
   }
 }

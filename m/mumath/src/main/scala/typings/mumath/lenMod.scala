@@ -1,12 +1,13 @@
 package typings.mumath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mumath/len", JSImport.Namespace)
-@js.native
-object lenMod extends js.Object {
+object lenMod {
   
+  @JSImport("mumath/len", JSImport.Namespace)
+  @js.native
   def apply(a: Double, b: Double): Double = js.native
 }

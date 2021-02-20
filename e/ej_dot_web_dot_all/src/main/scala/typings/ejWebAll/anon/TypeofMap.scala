@@ -1,21 +1,35 @@
 package typings.ejWebAll.anon
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import typings.ejWebAll.JQuery
-import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.datavisualization.Map
-import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofMap
-  extends Instantiable1[(/* element */ Element) | (/* element */ JQuery), Map]
-     with Instantiable2[(/* element */ Element) | (/* element */ JQuery), /* options */ Model, Map] {
+trait TypeofMap extends StObject {
   
+  /* static member */
   var Locale: js.Any = js.native
   
+  /* static member */
   var fn: Map = js.native
+}
+object TypeofMap {
+  
+  @scala.inline
+  def apply(Locale: js.Any, fn: Map): TypeofMap = {
+    val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofMap]
+  }
+  
+  @scala.inline
+  implicit class TypeofMapMutableBuilder[Self <: TypeofMap] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setFn(value: Map): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+  }
 }

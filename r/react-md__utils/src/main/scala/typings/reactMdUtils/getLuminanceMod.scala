@@ -1,13 +1,14 @@
 package typings.reactMdUtils
 
 import typings.reactMdUtils.hexToRGBMod.HexString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@react-md/utils/types/colors/getLuminance", JSImport.Namespace)
-@js.native
-object getLuminanceMod extends js.Object {
+object getLuminanceMod {
   
+  @JSImport("@react-md/utils/types/colors/getLuminance", "getLuminance")
+  @js.native
   def getLuminance(color: HexString): Double = js.native
 }

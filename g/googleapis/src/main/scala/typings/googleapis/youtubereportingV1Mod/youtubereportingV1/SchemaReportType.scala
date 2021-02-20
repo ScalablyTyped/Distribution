@@ -1,5 +1,6 @@
 package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A report type.
   */
 @js.native
-trait SchemaReportType extends js.Object {
+trait SchemaReportType extends StObject {
   
   /**
     * The date/time when this report type was/will be deprecated.
@@ -41,42 +42,30 @@ object SchemaReportType {
   }
   
   @scala.inline
-  implicit class SchemaReportTypeOps[Self <: SchemaReportType] (val x: Self) extends AnyVal {
+  implicit class SchemaReportTypeMutableBuilder[Self <: SchemaReportType] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setDeprecateTime(value: String): Self = StObject.set(x, "deprecateTime", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDeprecateTimeUndefined: Self = StObject.set(x, "deprecateTime", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeprecateTime(value: String): Self = this.set("deprecateTime", value.asInstanceOf[js.Any])
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def deleteDeprecateTime: Self = this.set("deprecateTime", js.undefined)
+    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def deleteId: Self = this.set("id", js.undefined)
+    def setSystemManaged(value: Boolean): Self = StObject.set(x, "systemManaged", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteName: Self = this.set("name", js.undefined)
-    
-    @scala.inline
-    def setSystemManaged(value: Boolean): Self = this.set("systemManaged", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSystemManaged: Self = this.set("systemManaged", js.undefined)
+    def setSystemManagedUndefined: Self = StObject.set(x, "systemManaged", js.undefined)
   }
 }

@@ -1,12 +1,13 @@
 package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ContainerSpec extends js.Object {
+trait ContainerSpec extends StObject {
   
   var Args: js.UndefOr[js.Array[String]] = js.native
   
@@ -69,204 +70,192 @@ object ContainerSpec {
   }
   
   @scala.inline
-  implicit class ContainerSpecOps[Self <: ContainerSpec] (val x: Self) extends AnyVal {
+  implicit class ContainerSpecMutableBuilder[Self <: ContainerSpec] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setArgs(value: js.Array[String]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
     @scala.inline
-    def setArgsVarargs(value: String*): Self = this.set("Args", js.Array(value :_*))
+    def setCapabilityAdd(value: js.Array[String]): Self = StObject.set(x, "CapabilityAdd", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setArgs(value: js.Array[String]): Self = this.set("Args", value.asInstanceOf[js.Any])
+    def setCapabilityAddUndefined: Self = StObject.set(x, "CapabilityAdd", js.undefined)
     
     @scala.inline
-    def deleteArgs: Self = this.set("Args", js.undefined)
+    def setCapabilityAddVarargs(value: String*): Self = StObject.set(x, "CapabilityAdd", js.Array(value :_*))
     
     @scala.inline
-    def setCapabilityAddVarargs(value: String*): Self = this.set("CapabilityAdd", js.Array(value :_*))
+    def setCapabilityDrop(value: js.Array[String]): Self = StObject.set(x, "CapabilityDrop", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilityAdd(value: js.Array[String]): Self = this.set("CapabilityAdd", value.asInstanceOf[js.Any])
+    def setCapabilityDropUndefined: Self = StObject.set(x, "CapabilityDrop", js.undefined)
     
     @scala.inline
-    def deleteCapabilityAdd: Self = this.set("CapabilityAdd", js.undefined)
+    def setCapabilityDropVarargs(value: String*): Self = StObject.set(x, "CapabilityDrop", js.Array(value :_*))
     
     @scala.inline
-    def setCapabilityDropVarargs(value: String*): Self = this.set("CapabilityDrop", js.Array(value :_*))
+    def setCommand(value: js.Array[String]): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCapabilityDrop(value: js.Array[String]): Self = this.set("CapabilityDrop", value.asInstanceOf[js.Any])
+    def setCommandUndefined: Self = StObject.set(x, "Command", js.undefined)
     
     @scala.inline
-    def deleteCapabilityDrop: Self = this.set("CapabilityDrop", js.undefined)
+    def setCommandVarargs(value: String*): Self = StObject.set(x, "Command", js.Array(value :_*))
     
     @scala.inline
-    def setCommandVarargs(value: String*): Self = this.set("Command", js.Array(value :_*))
+    def setDNSConfig(value: DNSConfig): Self = StObject.set(x, "DNSConfig", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCommand(value: js.Array[String]): Self = this.set("Command", value.asInstanceOf[js.Any])
+    def setDNSConfigUndefined: Self = StObject.set(x, "DNSConfig", js.undefined)
     
     @scala.inline
-    def deleteCommand: Self = this.set("Command", js.undefined)
+    def setDir(value: String): Self = StObject.set(x, "Dir", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDNSConfig(value: DNSConfig): Self = this.set("DNSConfig", value.asInstanceOf[js.Any])
+    def setDirUndefined: Self = StObject.set(x, "Dir", js.undefined)
     
     @scala.inline
-    def deleteDNSConfig: Self = this.set("DNSConfig", js.undefined)
+    def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDir(value: String): Self = this.set("Dir", value.asInstanceOf[js.Any])
+    def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
     @scala.inline
-    def deleteDir: Self = this.set("Dir", js.undefined)
+    def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
     
     @scala.inline
-    def setEnvVarargs(value: String*): Self = this.set("Env", js.Array(value :_*))
+    def setGroups(value: js.Array[String]): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEnv(value: js.Array[String]): Self = this.set("Env", value.asInstanceOf[js.Any])
+    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
     @scala.inline
-    def deleteEnv: Self = this.set("Env", js.undefined)
+    def setGroupsVarargs(value: String*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
     @scala.inline
-    def setGroupsVarargs(value: String*): Self = this.set("Groups", js.Array(value :_*))
+    def setHealthCheck(value: HealthConfig): Self = StObject.set(x, "HealthCheck", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroups(value: js.Array[String]): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    def setHealthCheckUndefined: Self = StObject.set(x, "HealthCheck", js.undefined)
     
     @scala.inline
-    def deleteGroups: Self = this.set("Groups", js.undefined)
+    def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHealthCheck(value: HealthConfig): Self = this.set("HealthCheck", value.asInstanceOf[js.Any])
+    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
     @scala.inline
-    def deleteHealthCheck: Self = this.set("HealthCheck", js.undefined)
+    def setHosts(value: js.Array[String]): Self = StObject.set(x, "Hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHostname(value: String): Self = this.set("Hostname", value.asInstanceOf[js.Any])
+    def setHostsUndefined: Self = StObject.set(x, "Hosts", js.undefined)
     
     @scala.inline
-    def deleteHostname: Self = this.set("Hostname", js.undefined)
+    def setHostsVarargs(value: String*): Self = StObject.set(x, "Hosts", js.Array(value :_*))
     
     @scala.inline
-    def setHostsVarargs(value: String*): Self = this.set("Hosts", js.Array(value :_*))
+    def setImage(value: String): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHosts(value: js.Array[String]): Self = this.set("Hosts", value.asInstanceOf[js.Any])
+    def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
     @scala.inline
-    def deleteHosts: Self = this.set("Hosts", js.undefined)
+    def setInit(value: Boolean): Self = StObject.set(x, "Init", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImage(value: String): Self = this.set("Image", value.asInstanceOf[js.Any])
+    def setInitUndefined: Self = StObject.set(x, "Init", js.undefined)
     
     @scala.inline
-    def deleteImage: Self = this.set("Image", js.undefined)
+    def setIsolation(value: String): Self = StObject.set(x, "Isolation", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInit(value: Boolean): Self = this.set("Init", value.asInstanceOf[js.Any])
+    def setIsolationUndefined: Self = StObject.set(x, "Isolation", js.undefined)
     
     @scala.inline
-    def deleteInit: Self = this.set("Init", js.undefined)
+    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsolation(value: String): Self = this.set("Isolation", value.asInstanceOf[js.Any])
+    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
     @scala.inline
-    def deleteIsolation: Self = this.set("Isolation", js.undefined)
+    def setMounts(value: js.Array[MountSettings]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    def setMountsUndefined: Self = StObject.set(x, "Mounts", js.undefined)
     
     @scala.inline
-    def deleteLabels: Self = this.set("Labels", js.undefined)
+    def setMountsVarargs(value: MountSettings*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
     
     @scala.inline
-    def setMountsVarargs(value: MountSettings*): Self = this.set("Mounts", js.Array(value :_*))
+    def setOpenStdin(value: Boolean): Self = StObject.set(x, "OpenStdin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMounts(value: js.Array[MountSettings]): Self = this.set("Mounts", value.asInstanceOf[js.Any])
+    def setOpenStdinUndefined: Self = StObject.set(x, "OpenStdin", js.undefined)
     
     @scala.inline
-    def deleteMounts: Self = this.set("Mounts", js.undefined)
+    def setPrivileges(value: Privileges): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOpenStdin(value: Boolean): Self = this.set("OpenStdin", value.asInstanceOf[js.Any])
+    def setPrivilegesUndefined: Self = StObject.set(x, "Privileges", js.undefined)
     
     @scala.inline
-    def deleteOpenStdin: Self = this.set("OpenStdin", js.undefined)
+    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivileges(value: Privileges): Self = this.set("Privileges", value.asInstanceOf[js.Any])
+    def setReadOnlyUndefined: Self = StObject.set(x, "ReadOnly", js.undefined)
     
     @scala.inline
-    def deletePrivileges: Self = this.set("Privileges", js.undefined)
+    def setSecrets(value: js.Array[SecretReference]): Self = StObject.set(x, "Secrets", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    def setSecretsUndefined: Self = StObject.set(x, "Secrets", js.undefined)
     
     @scala.inline
-    def deleteReadOnly: Self = this.set("ReadOnly", js.undefined)
+    def setSecretsVarargs(value: SecretReference*): Self = StObject.set(x, "Secrets", js.Array(value :_*))
     
     @scala.inline
-    def setSecretsVarargs(value: SecretReference*): Self = this.set("Secrets", js.Array(value :_*))
+    def setStopGracePeriod(value: Double): Self = StObject.set(x, "StopGracePeriod", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSecrets(value: js.Array[SecretReference]): Self = this.set("Secrets", value.asInstanceOf[js.Any])
+    def setStopGracePeriodUndefined: Self = StObject.set(x, "StopGracePeriod", js.undefined)
     
     @scala.inline
-    def deleteSecrets: Self = this.set("Secrets", js.undefined)
+    def setStopSignal(value: String): Self = StObject.set(x, "StopSignal", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopGracePeriod(value: Double): Self = this.set("StopGracePeriod", value.asInstanceOf[js.Any])
+    def setStopSignalUndefined: Self = StObject.set(x, "StopSignal", js.undefined)
     
     @scala.inline
-    def deleteStopGracePeriod: Self = this.set("StopGracePeriod", js.undefined)
+    def setSysctls(value: StringDictionary[String]): Self = StObject.set(x, "Sysctls", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStopSignal(value: String): Self = this.set("StopSignal", value.asInstanceOf[js.Any])
+    def setSysctlsUndefined: Self = StObject.set(x, "Sysctls", js.undefined)
     
     @scala.inline
-    def deleteStopSignal: Self = this.set("StopSignal", js.undefined)
+    def setTTY(value: Boolean): Self = StObject.set(x, "TTY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSysctls(value: StringDictionary[String]): Self = this.set("Sysctls", value.asInstanceOf[js.Any])
+    def setTTYUndefined: Self = StObject.set(x, "TTY", js.undefined)
     
     @scala.inline
-    def deleteSysctls: Self = this.set("Sysctls", js.undefined)
+    def setUlimits(value: js.Array[Ulimit]): Self = StObject.set(x, "Ulimits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTTY(value: Boolean): Self = this.set("TTY", value.asInstanceOf[js.Any])
+    def setUlimitsUndefined: Self = StObject.set(x, "Ulimits", js.undefined)
     
     @scala.inline
-    def deleteTTY: Self = this.set("TTY", js.undefined)
+    def setUlimitsVarargs(value: Ulimit*): Self = StObject.set(x, "Ulimits", js.Array(value :_*))
     
     @scala.inline
-    def setUlimitsVarargs(value: Ulimit*): Self = this.set("Ulimits", js.Array(value :_*))
+    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setUlimits(value: js.Array[Ulimit]): Self = this.set("Ulimits", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUlimits: Self = this.set("Ulimits", js.undefined)
-    
-    @scala.inline
-    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteUser: Self = this.set("User", js.undefined)
+    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

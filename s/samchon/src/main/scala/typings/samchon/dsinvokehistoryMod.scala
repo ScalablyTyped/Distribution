@@ -4,14 +4,14 @@ import typings.samchon.distributedProcessMod.DistributedProcess
 import typings.samchon.distributedSystemMod.DistributedSystem
 import typings.samchon.invokeHistoryMod.InvokeHistory
 import typings.samchon.invokeMod.Invoke
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates/distributed/DSInvokeHistory", JSImport.Namespace)
-@js.native
-object dsinvokehistoryMod extends js.Object {
+object dsinvokehistoryMod {
   
+  @JSImport("samchon/templates/distributed/DSInvokeHistory", "DSInvokeHistory")
   @js.native
   class DSInvokeHistory protected () extends InvokeHistory {
     /**

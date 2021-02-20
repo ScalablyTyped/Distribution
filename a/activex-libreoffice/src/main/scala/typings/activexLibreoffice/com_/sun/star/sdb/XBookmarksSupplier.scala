@@ -3,6 +3,7 @@ package typings.activexLibreoffice.com_.sun.star.sdb
 import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,24 +33,12 @@ object XBookmarksSupplier {
   }
   
   @scala.inline
-  implicit class XBookmarksSupplierOps[Self <: XBookmarksSupplier] (val x: Self) extends AnyVal {
+  implicit class XBookmarksSupplierMutableBuilder[Self <: XBookmarksSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setBookmarks(value: XNameAccess): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setBookmarks(value: XNameAccess): Self = this.set("Bookmarks", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setGetBookmarks(value: () => XNameAccess): Self = this.set("getBookmarks", js.Any.fromFunction0(value))
+    def setGetBookmarks(value: () => XNameAccess): Self = StObject.set(x, "getBookmarks", js.Any.fromFunction0(value))
   }
 }
